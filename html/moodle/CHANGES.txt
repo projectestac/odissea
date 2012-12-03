@@ -1,0 +1,180 @@
+Release notes for Odissea (http://odissea.xtec.cat)
+
+More information on each of the fixes can be found in the project 
+development home at http://projectes.lafarga.cat/projects/odissea/
+
+Changes in progress
+---------------------------------------------------------------------------------------
+
+
+
+Changes 12.11.08
+---------------------------------------------------------------------------------------
+MOODLE
+- Fixed some Oracle bugs in GeoGebra module related with ` character
+- Fixed bug related with sending email during users signup adding $CFG->noreplyaddress to config.php
+- Reviewed coursequotes to make it works with single installations (like Odissea)
+- Added is_agora() check to backup_agora.php to enable Moodle to import when is not Àgora 
+- Fixed bug with database activities to avoid problem with data visualization when entrieslefttoadd parameter is defined
+- Updated synchronizer.php from GTAF block to improve the code to fix problem with city codification
+
+MOODLE 2
+- Initial version based on version 12.10.24 of Àgora
+- Fixed bug when restoring directly big courses from Moodle 1.9 (the course filename was different because the creation took more than one minute).
+- Fixed hardcoded prefixes in import19
+- Added is_agora() checks to import19 to enable Moodle to import when is not Àgora
+- Fixed bug related with guest viewing folders (http://tracker.moodle.org/browse/MDL-34338)
+- Added some restrictions to disable specific modules, like eoicampus
+
+
+Changes 12.08.27
+---------------------------------------------------------------------------------------
+- Included apc.php file
+
+- Installed GeoGebra module (http://moodle.org/plugins/pluginversions.php?plugin=mod_geogebra)
+
+- Updated Moodle from 1.9.12 to 1.9.19+
+
+- Adapted admin/replace.php to replace also content in label, forum, resources, quizzes...
+
+- Reviewed style for dimmed links
+- Changed ldap/auth.php to connect to OID LDAP server (instead of SUN LDAP server)
+
+- Fixed bug with user export to CSV: added empty fields also to the file
+- Added password field to bulk download
+
+- Fixed bug to get aplication name and replyTo address from configuration (instead of having the "AGORA" default values directly in the source code)
+- Updated marsupial to v1.5.2
+- Added marsupial_rgrade block (developed by Text-La Galera)
+
+
+Changes 12.04.02
+---------------------------------------------------------------------------------------
+- Added patch for MSA-11-0031 (http://moodle.org/mod/forum/discuss.php?d=188313)
+- Added patch for MSA-11-0036 (http://moodle.org/mod/forum/discuss.php?d=188318)
+- Added patch for MSA-11-0038 (http://moodle.org/mod/forum/discuss.php?d=188320)
+- Added patch for MSA-11-0045 (http://moodle.org/mod/forum/discuss.php?d=191754)
+- Added patch for MSA-11-0007 (http://moodle.org/mod/forum/discuss.php?d=194015)
+
+- $CFG->iseoi moved to database from settings.php
+- Updated marsupial version to 1.5.2 (beta) to fix some bugs in rcontent and rscorm modules from Marsupial (related with wsSeguimiento, the monitoring web service)
+
+- Added links to courses and categories in the coursequotes report page.
+
+- Reviewed questiontype bug to replace "temporary" solution by the "oficial" one (http://tracker.moodle.org/browse/MDL-29294)
+
+- Updated Wiris CAS and Editor to 2.3.5 and installed Wiris Quizzes (v1.4.5.39)
+- Fixed "ORA-00932: inconsistent datatypes: expected - got CLOB" error with HotPot Quiz activity
+- Fixed bug when there is no rscorm_scoes (in this case it's not necessary to return false)
+
+- Fixed "ORA-00932: inconsistent datatypes: expected - got CLOB" error with HotPot Quiz activity
+- Updated marsupial version to 1.5.1 (final release)
+
+- Added stream_context parameter to SoapClient calls from marsupial-atria module to void problems with HTTPS connection and updated Atria URL from HTTP to HTTPS
+- Added CURLOPT_CAINFO to validate certificates for all the HTTPS connections (like recaptcha when loginhttps=true)
+- Applied patch to update new recaptcha domains (http://tracker.moodle.org/browse/MDL-27328)
+- Updated marsupial version to 1.5.1 (beta release)
+
+- Fixed bug in Marsupial users viewer
+- Updated Marsupial module version to 1.5
+- Added CURLOPT_SSL_VERIFYHOST=FALSE to avoid problems with CA when the connection is HTTPS (it can be tested, for instance, with the recaptcha if loginhttps=true)
+- Changed temporally Atria URL from HTTPS to HTTP until problems with CA in some of the servers will be fixed
+
+- Fixed bug in marsupial state page when getting users with and without credentials
+- Reviewed code to remove mlXXXX references and optimize SQL queries
+- Fixed little bugs in marsupial block
+- Hidden "Manage publishers" if there isn't any publisher and useAtria!=false
+- Hidden "Syncronize with Atria" button when there is some publisher
+- Fixed "ORA-00932: inconsistent datatypes: expected - got CLOB" error with assignments when ordering by comments
+
+- Fixed bug in data searches
+- Rush hour don't affect to xtecadmin
+- index_iw.php: Changed zikula login URL
+- Reviewed rcontent to save view action into the Moodle log 
+- Updated rcommon to fix some minor problems related with publishers with only one book
+- Added report option to check Marsupial service state
+
+- Home of the diskquote viewer shows real data instead of stored data
+- Updated marsupial module to version 1.4-beta
+- Updated marsupial-atria module to version 1.5
+
+- Fixed some bugs related with images of the "senzill" format course
+- In "disk space viewer" categories contains subcategories size too
+- Removed extra security checks in index_iw.php to avoid problems with SSO and marsupial
+
+- Fixed problem when importing quizzes activities
+
+- Fixed problems with the top menu size
+- Added function to remove old backups remotely
+- Added menu to view disk usage quotes
+- Added menu to manage Marsupial options
+- Created page to show all the books from a publisher. Modified default option in the Marsupial main menu to show this page instead of update the book structure directly.
+- rscorm lang files: Replaced ISBN string for "Book"
+- rcommon lang files: Revised some strings to add HTML entities
+
+- Added functionality to block upload forms if there isn't free disk space
+- Added functionality to remove old copies when backup succed
+- Fixed problems with special characters in top menu
+- Added option to remove old backups
+- Modified XTEC2 theme (decoration and color of links)
+
+
+Changes 11.07.08
+---------------------------------------------------------------------------------------
+- Updated version to 1.9.12
+- Updated marsupial modules to last version and revised the code to hide them for non-marsupial schools.
+- Installed atria module.
+- Installed my_books block.
+- Revised site-config.php to move location when the school domain is not correct.
+- Added code to avoid upload files if the disk quota is exceeded.
+- Enabled grouping experimental feature.
+
+- Added e-mail format validation
+- New improvements in the management of Senzill format icons
+- Removed old config files no longer used: personal_config.php and personal_config-dist.php
+- Fixed problem with load balancing (BIGIP) HTTPS is enabled
+- Moved CFG->enable_hour_restrictions param to database to change it easily
+- Moved CFG->loginhttps param to database to change it easily
+
+- Fixed error in forum's index appearance
+- Fixed error in forum's summary sent via webservice
+
+- Added top menu in XTEC2 theme
+- Added handwrite font
+- Added possibility to send messages via apligest system
+- Appearance modifications
+- Fixed error of multiple file fields in the same database form
+- Fixed errors between versions with UPCnet in "Senzill per temes" format
+- Icon can't be chosen for "label" resource type in "Senzill per temes" format
+
+- Added log for ADODB connection error. Log file is stored in usu1 site files.
+- Removed warnings messages in format "Senzill per temes".
+- Several improvements in management of format "Senzill per temes".
+- Fixed invalid DNS showing database error instead of "not a valid school".
+- Label resource is now enabled in format "Senzill per temes".
+
+ - Added Senzill course format, including big icons. GIF icons allowed. By defaul uses png icons.
+ - New options to configure navigation bar in the top of the courses
+ - Slideshow module upgraded to last version and edit_form.php addded
+ - In personal messages sent from school account, the name of the autor appears on "subject" and "replyto" fields only
+
+
+Changes in 11.01.24
+---------------------------------------------------------------------------------------
+- Using new system to get database connection information
+- Added patch to change special chars in CSV user upload files  (only for the username field)
+- Updated marsupial module (rcommon, rcontent and rscorm) to last version (1.2)
+
+PORTAL
+- Using new system to get database connection information
+
+ZIKULA
+- Using new system to get database connection information
+- Fixed wrong width attributes in <img> tags
+- Fixed false-positive errors shown related to Moodle DB Connection
+
+- Warning of "Advices block" removed
+- Edu3 videos now available in tasks
+- Changed logos according to new brandname
+- Updated marsupial module (rcommon, rcontent and rscorm) to last version (1.1)
+
