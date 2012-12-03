@@ -1,0 +1,72 @@
+Versió nova d'ODISSEA - MOODLE 1.9
+----------------------------------------------------------------------
+
+1. Copiar del repositori (repoapp) el contingut de la darrera versió del directori següent:
+      * repoapp/AGORA/AGORAvx.xx.xx/PHP/html/moodle/
+
+  al directori següent:
+      * repoapp/ODISSEA/ODISSEAvx.xx.xx/PHP/html/moodle/
+
+
+2. Com que la configuració dels dos entorns Moodle (Àgora i Odissea) és diferent, cal:
+
+2.1. Substituir els fitxers següents utilitzant els de la versió anterior d'Odissea:
+		* html/moodle/config.php 
+		* html/moodle/config-restricted.php 
+		* html/moodle/works.php
+		* html/moodle/theme/xtec2/favicon.ico
+		* html/moodle/theme/xtec2/footer.html
+
+2.2. Afegir el directori/fitxer següents:
+		* html/moodle/apc.php
+		* html/moodle/blocks/odissea_gtaf_synchronization
+		* html/moodle/theme/xtec2/images/logo_odissea.gif
+
+2.3. Eliminar els fitxers següents:
+		* html/moodle/index_iw.php
+		* html/moodle/settings.php
+		* html/moodle/site-config.php
+		* html/moodle/config-multi.php
+		* html/moodle/config-multi.php
+		* html/moodle/config_mysql.php
+		* html/moodle/config_oracle.php
+
+
+3. Actualitzar el fitxer html/moodle/CHANGES.txt amb els canvis incorporats des de la darrera versió
+
+
+
+Versió nova d'ODISSEA - MOODLE 2
+----------------------------------------------------------------------
+
+1. Copiar del repositori (repoapp) el contingut de la darrera versió del directori següent:
+      * repoapp/AGORA/AGORAvx.xx.xx/PHP/html/moodle2/
+
+  al directori següent:
+      * repoapp/ODISSEA/ODISSEAvx.xx.xx/PHP/html/moodle2/
+
+
+2. Com que la configuració dels dos entorns Moodle (Àgora i Odissea) és diferent, cal:
+
+2.1. Substituir els fitxers següents utilitzant els de la versió anterior d'Odissea:
+		* html/moodle2/config.php 
+		* html/moodle2/config-restricted.php 
+		* html/moodle2/theme/xtec2/pix/favicon.ico
+		* html/moodle2/theme/xtec2/pix/theme/logo_main.png
+
+2.2. Afegir el directori/fitxer següents:
+		* html/moodle2/apc.php
+
+2.3. Eliminar els fitxers següents:
+		* html/moodle2/index_iw.php
+		* html/moodle2/settings.php
+		* html/moodle2/site-config.php
+		* html/moodle2/config-multi.php
+		* html/moodle2/config-multi.php
+		* html/moodle2/config_mysql.php
+		* html/moodle2/config_oracle.php
+
+
+3. Actualitzar el fitxer html/moodle/CHANGES.txt amb els canvis incorporats des de la darrera versió
+
+
