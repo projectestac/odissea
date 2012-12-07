@@ -5,8 +5,20 @@ development home at http://projectes.lafarga.cat/projects/odissea/
 
 Changes in progress
 ---------------------------------------------------------------------------------------
+
+Changes 12.12.12
+---------------------------------------------------------------------------------------
+MOODLE
+- Added server name to adodberror log to know which web server was implied
+- Fixed database ordering problems notified by Odissea team (http://tracker.moodle.org/browse/MDL-33603)
+- Fixed problem when deleting some of the user responses in a choice activity (only affects to multi-site instances)
+
 MOODLE 2
 - Added Odissea images (logo_main.png and favicon.ico)
+- Fixed course order in courses tab of coursequotas. Units were not being considered when ordering.
+- Added missign Catalan translation files to questionnaire module
+- Added support for https authentication using BigIP
+- Adapted source to rename logo_agora to logo_main in xtec2 theme (to make it more generic)
 
 
 Changes 12.11.08
