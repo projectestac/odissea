@@ -6,6 +6,18 @@ development home at http://projectes.lafarga.cat/projects/odissea/
 Changes in progress
 ---------------------------------------------------------------------------------------
 
+
+
+Changes 13.01.14
+---------------------------------------------------------------------------------------
+MOODLE
+- Fixed bug with sessions_summary initialization at JClic module
+
+
+Changes 12.12.28
+---------------------------------------------------------------------------------------
+
+
 Changes 12.12.12
 ---------------------------------------------------------------------------------------
 MOODLE
@@ -13,15 +25,6 @@ MOODLE
 - Fixed database ordering problems notified by Odissea team (http://tracker.moodle.org/browse/MDL-33603)
 - Fixed problem when deleting some of the user responses in a choice activity (only affects to multi-site instances)
 - Showed $CFG->dataroot/climaintenance.html file when exists (at the moment, it will be used in demo site but, if necessary, it can be used in the remaining multi-sites)
-
-MOODLE 2
-- Added Odissea images (logo_main.png and favicon.ico)
-- Fixed course order in courses tab of coursequotas. Units were not being considered when ordering.
-- Added missign Catalan translation files to questionnaire module
-- Added support for https authentication using BigIP
-- Adapted source to rename logo_agora to logo_main in xtec2 theme (to make it more generic)
-- Added user bulk function to capitalize names and surnames
-- Reviewed function create_user_record in lib/moodlelib.php to capitalize user name and surname
 
 
 Changes 12.11.08
@@ -34,31 +37,17 @@ MOODLE
 - Fixed bug with database activities to avoid problem with data visualization when entrieslefttoadd parameter is defined
 - Updated synchronizer.php from GTAF block to improve the code to fix problem with city codification
 
-MOODLE 2
-- Initial version based on version 12.10.24 of Àgora
-- Fixed bug when restoring directly big courses from Moodle 1.9 (the course filename was different because the creation took more than one minute).
-- Fixed hardcoded prefixes in import19
-- Added is_agora() checks to import19 to enable Moodle to import when is not Àgora
-- Fixed bug related with guest viewing folders (http://tracker.moodle.org/browse/MDL-34338)
-- Added some restrictions to disable specific modules, like eoicampus
-
 
 Changes 12.08.27
 ---------------------------------------------------------------------------------------
 - Included apc.php file
-
 - Installed GeoGebra module (http://moodle.org/plugins/pluginversions.php?plugin=mod_geogebra)
-
 - Updated Moodle from 1.9.12 to 1.9.19+
-
 - Adapted admin/replace.php to replace also content in label, forum, resources, quizzes...
-
 - Reviewed style for dimmed links
 - Changed ldap/auth.php to connect to OID LDAP server (instead of SUN LDAP server)
-
 - Fixed bug with user export to CSV: added empty fields also to the file
 - Added password field to bulk download
-
 - Fixed bug to get aplication name and replyTo address from configuration (instead of having the "AGORA" default values directly in the source code)
 - Updated marsupial to v1.5.2
 - Added marsupial_rgrade block (developed by Text-La Galera)
