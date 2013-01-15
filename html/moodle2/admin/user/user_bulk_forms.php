@@ -9,7 +9,7 @@ class user_bulk_action_form extends moodleform {
 
         $mform =& $this->_form;
 
-        $syscontext = get_context_instance(CONTEXT_SYSTEM);
+        $syscontext = context_system::instance();
         $actions = array(0=>get_string('choose').'...');
         if (has_capability('moodle/user:update', $syscontext)) {
             $actions[1] = get_string('confirm');
@@ -34,6 +34,13 @@ class user_bulk_action_form extends moodleform {
         if (has_capability('moodle/cohort:assign', $syscontext)) {
             $actions[8] = get_string('bulkadd', 'core_cohort');
         }
+        //XTEC ************ AFEGIT - To allow capitalize user names
+        //2012.12.07  @sarjona
+        if (has_capability('moodle/user:editprofile', $syscontext)) {
+            $actions[9] = get_string('capitalize','local_agora');
+        }
+        //************ FI            
+        
         $objs = array();
         $objs[] =& $mform->createElement('select', 'action', null, $actions);
         $objs[] =& $mform->createElement('submit', 'doaction', get_string('go'));
