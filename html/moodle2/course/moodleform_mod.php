@@ -683,6 +683,24 @@ abstract class moodleform_mod extends moodleform {
             $mform->disabledIf('completionexpected', 'completion', 'eq', COMPLETION_TRACKING_NONE);
         }
 
+//XTEC ************ AFEGIT - Added patch for course format "Simple"
+//2010.07.12 @aginard (patch provided by UPCnet)
+
+		//@PATCH SIMPLE: Codi del formulari
+      	if($COURSE->format == 'simple'){
+       		require_once($CFG->dirroot.'/course/format/simple/lib.php');
+       		if (empty($this->_cm)) {
+				$cm = new StdClass();
+				$cm->course = $COURSE->id;
+				$cm->modname = $this->_modname;
+				simple_coursemodule_elements($this->_form, $cm);
+			} else {
+				simple_coursemodule_elements($this->_form, $this->_cm);
+			}
+		}
+
+//************ FI                                                        
+
         $this->standard_hidden_coursemodule_elements();
     }
 

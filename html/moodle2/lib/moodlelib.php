@@ -5428,7 +5428,7 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml='', $a
         //XTEC ************ AFEGIT - Avoid replying to SMTP address when sending using Gmail
         //2012.03.13  @aginard
         if (empty($replyto)) {
-            $tempreplyto[] = array($CFG->noreplyaddress);
+            $tempreplyto[] = array($CFG->noreplyaddress, get_string('noreplyname'));
         }
         //************ FI     
     } else if ($usetrueaddress and $from->maildisplay) {
@@ -5437,7 +5437,7 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml='', $a
         //XTEC ************ AFEGIT - Avoid replying to SMTP address when sending using Gmail
         //2012.03.13  @aginard
         if (empty($replyto)) {
-            $tempreplyto[] = array($CFG->noreplyaddress);
+            $tempreplyto[] = array($CFG->noreplyaddress, get_string('noreplyname'));
         }
         //************ FI     
     } else {
@@ -5545,6 +5545,9 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml='', $a
     //XTEC ************ MODIFICAT - Use apligest system to send mails if it's configured
     //28.04.2011 @fcasanel
     //14.03.2012 @aginard
+    //17.01.2013 @aginard: added global $FULLME;
+    global $FULLME;
+    
     if ($CFG->apligestmail) {
         require_once ($CFG->dirroot.'/local/agora/mailer/message.class.php');
         require_once ($CFG->dirroot.'/local/agora/mailer/mailsender.class.php');

@@ -3,9 +3,21 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
-Changes in progress
+Changes 13.02.12
 ---------------------------------------------------------------------------------------
+MOODLE
+- Changed value to backup_sche_users parameter to avoid Odissea problems when restoring courses directly from Moodle 1.9 to Moodle 2
 
+MOODLE 2
+- Fixed sending e-mail using XTEC Web Service
+- Added course format "Senzill per temes"
+- Performance improvements to coursequotas report plus code organizational changes
+- Added SVG icon for hotpot, questionnaire and journal activities
+- Fixed bug in db authentication related with Intraweb users integration
+- Added a restriction to avoid admin user changes its own username (admin has to be always admin!)
+- Fixed bug to let edit user profile from participants page of a course (https://tracker.moodle.org/browse/MDL-36674)
+- Updated translation for Moodle 2.4 (version date: 11-feb-2013)
+- Fixed bug when openning URL in new window (https://tracker.moodle.org/browse/MDL-37015)
 
 
 Changes 13.01.14
@@ -13,9 +25,20 @@ Changes 13.01.14
 MOODLE
 - Fixed bug with sessions_summary initialization at JClic module
 
+MOODLE 2
+- Updated Wiris version for Moodle 2.4
+- Fixed bug in hotpot module: https://tracker.moodle.org/browse/CONTRIB-3896
+- Fixed hand-write font family (aka 'lletra lligada') in Moodle 2.4
+- Fixed YIU problems in EOICampus module (for Àgora-EOI)
+
 
 Changes 12.12.28
 ---------------------------------------------------------------------------------------
+MOODLE 2
+- Updated Moodle version to 2.4.0
+- Updated hotpot module to 3.0.52
+- Updated questionnaire to 2.3.3
+- Updated Wiris CAS and Editor to 3.19.2 (this version isn't yet adapted for Moodle 2.4)
 
 
 Changes 12.12.12
@@ -25,6 +48,15 @@ MOODLE
 - Fixed database ordering problems notified by Odissea team (http://tracker.moodle.org/browse/MDL-33603)
 - Fixed problem when deleting some of the user responses in a choice activity (only affects to multi-site instances)
 - Showed $CFG->dataroot/climaintenance.html file when exists (at the moment, it will be used in demo site but, if necessary, it can be used in the remaining multi-sites)
+
+MOODLE 2
+- Fixed course order in courses tab of coursequotas. Units were not being considered when ordering.
+- Added missign Catalan translation files to questionnaire module
+- Added support for https authentication using BigIP
+- Adapted source to rename logo_agora to logo_main in xtec2 theme (to make it more generic)
+- Added user bulk function to capitalize names and surnames
+- Reviewed function create_user_record in lib/moodlelib.php to capitalize user name and surname
+- Added CFG->userquota = 0 to avoid the private files area
 
 
 Changes 12.11.08
@@ -36,6 +68,9 @@ MOODLE
 - Added is_agora() check to backup_agora.php to enable Moodle to import when is not Àgora 
 - Fixed bug with database activities to avoid problem with data visualization when entrieslefttoadd parameter is defined
 - Updated synchronizer.php from GTAF block to improve the code to fix problem with city codification
+
+MOODLE 2
+- First installation of Odissea-Moodle 2 at http://odissea.xtec.cat/m2
 
 
 Changes 12.08.27

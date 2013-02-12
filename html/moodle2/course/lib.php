@@ -1523,8 +1523,17 @@ function print_section($course, $section, $mods, $modnamesused, $absolute=false,
                     $textcss = '';
                 }
 
+                //XTEC ************ MODIFICAT - To fix bug when openning URL in new window 
+                //2013.02.12  @sarjona - https://tracker.moodle.org/browse/MDL-37015
+                // Get on-click attribute value if specified and decode the onclick - it
+                // has already been encoded for display (puke).
+                $onclick = htmlspecialchars_decode($mod->get_on_click(), ENT_QUOTES);
+                //************ ORIGINAL
+                /*
                 // Get on-click attribute value if specified
                 $onclick = $mod->get_on_click();
+                 */
+                //************ FI    
 
                 $groupinglabel = '';
                 if (!empty($mod->groupingid) && has_capability('moodle/course:managegroups', context_course::instance($course->id))) {
@@ -2929,6 +2938,15 @@ function delete_course_module($id) {
     $DB->delete_records('course_modules_avail_fields', array('coursemoduleid' => $cm->id));
     $DB->delete_records('course_completion_criteria', array('moduleinstance' => $cm->id,
                                                             'criteriatype' => COMPLETION_CRITERIA_TYPE_ACTIVITY));
+
+//XTEC ************ AFEGIT - Added patch for course format "Simple"
+//2010.07.12 @aginard (patch provided by UPCnet)
+
+	//@PATCH SIMPLE: Eliminar la imatge si existeix
+	require_once($CFG->dirroot.'/course/format/simple/lib.php');
+	simple_delete_module_image($id);
+
+//************ FI                                                        
 
     delete_context(CONTEXT_MODULE, $cm->id);
     $DB->delete_records('course_modules', array('id'=>$cm->id));
