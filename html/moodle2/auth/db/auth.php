@@ -96,6 +96,7 @@ class auth_plugin_db extends auth_plugin_base {
 
         } else {
             // normal case: use external db for both usernames and passwords
+
             $authdb = $this->db_init();
 
             if ($this->config->passtype === 'md5') {   // Re-format password accordingly
@@ -103,6 +104,7 @@ class auth_plugin_db extends auth_plugin_base {
             } else if ($this->config->passtype === 'sha1') {
                 $extpassword = sha1($extpassword);
             }
+
             $rs = $authdb->Execute("SELECT * FROM {$this->config->table}
                                 WHERE {$this->config->fielduser} = '".$this->ext_addslashes($extusername)."'
                                   AND {$this->config->fieldpass} = '".$this->ext_addslashes($extpassword)."' ");
@@ -133,7 +135,7 @@ class auth_plugin_db extends auth_plugin_base {
             if (array_key_exists('id_intranet', $school_info)) {
 //            if (empty($this->config->host) && array_key_exists('id_intranet', $school_info)) {
                 $this->config->type = $agora['intranet']['dbtype'];
-                $this->config->host = $agora['intranet']['host'];
+                $this->config->host = $school_info['dbhost_intranet'];
                 $this->config->user = $agora['intranet']['username'];
                 $this->config->pass = $agora['intranet']['userpwd'];
                 $this->config->name = $agora['intranet']['userprefix'] . $school_info['id_intranet'];
