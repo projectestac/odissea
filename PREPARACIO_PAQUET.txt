@@ -13,13 +13,13 @@ Versió nova d'ODISSEA - MOODLE 1.9
 2.1. Substituir els fitxers següents utilitzant els de la versió anterior d'Odissea:
 		* html/moodle/config.php 
 		* html/moodle/config-restricted.php 
-		* html/moodle/works.php
 		* html/moodle/theme/xtec2/favicon.ico
 		* html/moodle/theme/xtec2/footer.html
 
 2.2. Afegir el directori/fitxer següents:
+		* html/moodle/works.php
 		* html/moodle/apc.php
-		* html/moodle/blocks/odissea_gtaf_synchronization
+		* html/moodle/blocks/odissea_gtaf_synchronization/
 		* html/moodle/theme/xtec2/images/logo_odissea.gif
 
 2.3. Eliminar els fitxers següents:
@@ -27,12 +27,12 @@ Versió nova d'ODISSEA - MOODLE 1.9
 		* html/moodle/settings.php
 		* html/moodle/site-config.php
 		* html/moodle/config-multi.php
-		* html/moodle/config-multi.php
 		* html/moodle/config_mysql.php
 		* html/moodle/config_oracle.php
+		* html/moodle/AFEGIT_XTEC
 
 
-3. Actualitzar el fitxer html/moodle/CHANGES.txt amb els canvis incorporats des de la darrera versió
+3. Actualitzar el fitxer html/moodle/CHANGES.txt amb els canvis incorporats des de la darrera versió i copiar-lo a repoapp/ODISSEA/ODISSEAvx.xx.xx/PHP/html/moodle/
 
 
 
@@ -54,7 +54,7 @@ Versió nova d'ODISSEA - MOODLE 2
 		* html/moodle2/theme/xtec2/pix/favicon.ico
 		* html/moodle2/theme/xtec2/pix/theme/logo_main.png
 
-2.2. Afegir el directori/fitxer següents:
+2.2. Afegir el fitxer següent:
 		* html/moodle2/apc.php
 
 2.3. Eliminar els fitxers següents:
@@ -62,9 +62,9 @@ Versió nova d'ODISSEA - MOODLE 2
 		* html/moodle2/settings.php
 		* html/moodle2/site-config.php
 		* html/moodle2/config-multi.php
-		* html/moodle2/config-multi.php
 		* html/moodle2/config_mysql.php
 		* html/moodle2/config_oracle.php
+		* html/moodle2/theme/xtec2/pix/theme/logo_main.gif
 
 
 3. Actualitzar el fitxer html/moodle/CHANGES.txt amb els canvis incorporats des de la darrera versió

@@ -3,6 +3,22 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+
+Changes 13.03.15
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Added CSS style for "Defined in config" params and improved styles for input fields
+- Released 0.2.3 JClic version and updated version.php file (changes has been included some weeks ago)
+- Fixed bug when deleting jclic activities and enableajax is enabled
+- Fixed bug with assign files when submitting a file with the same name but different content (https://tracker.moodle.org/browse/MDL-38091)
+- Improved efficiency of coursequotas report
+- Fixed bug with import19 tool to let Moodle 2 admins restore all Moodle 1.9 courses (even if they aren't admins in Moodle 1.9)
+- Improvements to CSS of theme xtec2 to improve usability of GradeBook and in calendar selector in "New assign"
+- Updated Journal module to 1.8.1 version
+- Fixed bug when deleting group (https://tracker.moodle.org/browse/MDL-37098)
+- Updated catalan translation (13-mar-2013)
+
+
 Changes 13.02.12
 ---------------------------------------------------------------------------------------
 MOODLE
