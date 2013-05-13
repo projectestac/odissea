@@ -3,5 +3,6 @@ html/moodle/config.php
 html/moodle/config-restricted.php
 html/moodle2/config.php
 html/moodle2/config-restricted.php
+html/moodle2/local/agora/muc/cacheconfig.php
 moodledata*/*
 .Trash*/*
