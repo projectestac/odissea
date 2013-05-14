@@ -6,3 +6,4 @@ html/moodle2/config-restricted.php
 html/moodle2/local/agora/muc/cacheconfig.php
 moodledata*/*
 .Trash*/*
+/nbproject/private/
