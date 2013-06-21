@@ -3,6 +3,13 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 13.06.21
+---------------------------------------------------------------------------------------
+MOODLE
+- Fixed "inconsistent datatypes: expected - got CLOB" bug when creating questionnaire backup.
+- Revised procedure to create a backup of the specified course without user information (1.9 -> 2 import tool).
+
+
 Changes 13.06.14
 ---------------------------------------------------------------------------------------
 MOODLE
