@@ -3,6 +3,25 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 13.06.14
+---------------------------------------------------------------------------------------
+MOODLE
+- Added permision to xtecadmin to access to scheduled backup parameters
+
+MOODLE2
+- Fixed font face "lletra lligada", which only worked in theme design mode
+- Fixed course import when category names in Moodle 1.9 have some special chars
+- Fixed javascript interference from theme xtec2 to other themes. Credits to mTorres for the fix (https://github.com/projectestac/agora/issues/14)
+- Added Single Sign On with IWmoodle for Zikula 1.3
+- Reviewed import19 tool to load Moodle 1.9 courses only when the user has the capability to create courses in some category
+- Added link to Àgora and Moodle portal from XTEC2 footer
+- Updated GeoGebra module
+- Grant access to langimport subpackage only to xtecadmin user
+- Updated catalan translation files (11-06-2013)
+- Added translations files for Arabic, Greek, Basque, Galician, Italian, Japanese, Korean, Dutch, Portuguese, Russian, Swedish, Urdu and Chinese
+- Fix for style in module quiz which is incorrectly overriden by style in rcommon block
+
+
 Changes 13.05.13
 ---------------------------------------------------------------------------------------
 MOODLE2
@@ -14,6 +33,7 @@ MOODLE2
 - Reviewed MUC configuration to avoid use agora_store for questiondata cache
 - Installed alpha version of the GeoGebra module
 - Forced default timezone to Server's local time (to avoid problems with quizzes)
+- Fixed course import when category names in Moodle 1.9 have some special chars
 
 
 Changes 13.04.25

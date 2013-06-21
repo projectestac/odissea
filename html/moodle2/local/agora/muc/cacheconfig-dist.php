@@ -48,7 +48,7 @@
       'plugin' => 'file',
       'configuration' => 
       array (
-        'path' => '/srv/www/agora/cache_ins',
+        'path' => '/srv/www/agora/moodledata/moodle2/agora_store',
       ),
       'features' => 6,
       'modes' => 3,
@@ -62,20 +62,20 @@
   array (
     0 => 
     array (
-      'store' => 'default_request',
-      'mode' => 4,
+      'store' => 'agora_store',
+      'mode' => 1,
       'sort' => 0,
     ),
     1 => 
     array (
-      'store' => 'agora_store',
+      'store' => 'default_session',
       'mode' => 2,
       'sort' => 0,
     ),
     2 => 
     array (
-      'store' => 'default_application',
-      'mode' => 1,
+      'store' => 'default_request',
+      'mode' => 4,
       'sort' => 0,
     ),
   ),
@@ -131,30 +131,6 @@
   ),
   'definitionmappings' => 
   array (
-    0 => 
-    array (
-      'store' => 'agora_store',
-      'definition' => 'core/htmlpurifier',
-      'sort' => 1,
-    ),
-    1 => 
-    array (
-      'store' => 'agora_store',
-      'definition' => 'core/string',
-      'sort' => 1,
-    ),
-    2 => 
-    array (
-      'store' => 'agora_store',
-      'definition' => 'core/databasemeta',
-      'sort' => 1,
-    ),
-    3 => 
-    array (
-      'store' => 'agora_store',
-      'definition' => 'core/eventinvalidation',
-      'sort' => 1,
-    ),
   ),
   'locks' => 
   array (

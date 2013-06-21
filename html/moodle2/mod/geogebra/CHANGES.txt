@@ -10,7 +10,11 @@ Changes in progress (Moodle 2 version)
   * View GGB activities with students mode recovering status
   * Save/Update attempts (from students view)
   * Backup/Restory activities (even from Moodle 1.9)
-  * View current student attempts (pending adapt function to show all students when current user can grade)
+  * View current student attempts
+  * Teacher can grade and comment
+
+- Pending:
+  * Pending review behaviour with groups
 
 
 Changes in progress (Moodle 1.9 version)

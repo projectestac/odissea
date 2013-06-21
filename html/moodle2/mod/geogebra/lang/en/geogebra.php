@@ -142,9 +142,16 @@ $string['geogebrafile_help'] = 'The .ggb file.';
 $string['urledit'] = 'GeoGebra file';
 $string['urledit_help'] = 'The ".ggb" file where you will find the GeoGebra activity.';
 
-$string['lastaccess']='Last visited';
 $string['datestudent'] = 'Last modified (submission)';
 $string['dateteacher']= 'Last modified (grade)';
 $string['status'] = 'Estat';
 $string['viewattempt'] = 'View';
 $string['previewtab'] = 'Preview';
+
+
+$string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
+$string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
+$string['msg_noattempts']= 'You have done this activity the maximum number of times';
+$string['lastmodifiedsubmission'] = 'Last modified (submission)';
+$string['lastmodifiedgrade'] = 'Last modified (grade)';
+$string['viewattempttab'] = 'View attempt';

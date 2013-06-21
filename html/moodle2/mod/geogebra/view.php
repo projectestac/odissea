@@ -46,7 +46,7 @@ if ($id) {
     $course     = $DB->get_record('course', array('id' => $geogebra->course), '*', MUST_EXIST);
     $cm         = get_coursemodule_from_instance('geogebra', $geogebra->id, $course->id, false, MUST_EXIST);
 } else {
-    error('You must specify a course_module ID or an instance ID');
+    print_error('You must specify a course_module ID or an instance ID');
 }
 
 require_login($course, true, $cm);
@@ -73,31 +73,43 @@ $completion->set_module_viewed($cm);
 //$PAGE->add_body_class('geogebra-'.$somevar);
 
 $action = optional_param('action', '', PARAM_TEXT);
-$ispreview = ($action == 'preview');
 geogebra_view_header($geogebra, $cm, $course);
-$cangrade = has_capability('mod/geogebra:grade', $context, $USER->id, false);
+$cangrade = is_siteadmin() || has_capability('mod/geogebra:grade', $context, $USER->id, false);
 geogebra_view_intro($geogebra, $cm, $cangrade, $action);
 
 if (!empty($action)){
     switch ($action){
         case 'preview':
-            geogebra_view_applet($geogebra, $context, null, true);
+            geogebra_view_applet($geogebra, $cm, $context, null, $action);
+            break;
+        case 'view':
+            if (!empty($attemptid)){
+                $attempt = geogebra_get_attempt($attemptid);
+                if ($cangrade || $attempt->userid == $USER->id) {
+                    geogebra_view_applet($geogebra, $cm, $context, $attempt, $action);
+                } else{
+                    print_error(get_string('accessdenied', 'admin'));
+                }
+            }
             break;
         case 'result':
-            geogebra_view_userid_results($geogebra, $USER, $context, $cm, $course, $action);
+        case 'submitgrade':
+            if ($cangrade){
+                geogebra_view_results($geogebra, $context, $cm, $course, $action);
+            } else {
+                geogebra_view_userid_results($geogebra, $USER, $cm, $context, $action);
+            }
             break;
     }
 } else{
-    if (!empty($attemptid)){
-        geogebra_view_applet($geogebra, $context, $attemptid);    
-    } else if ($cangrade){
+    if ($cangrade){
         // User can grade (probably is a teacher) so, by default, show results page
         // TODO: Review if it's necessary to show dates
         //geogebra_view_dates($geogebra, $cm);
         geogebra_view_results($geogebra, $context, $cm, $course, $action);
     } else{
         // Show GGB applet with last attempt
-        geogebra_view_applet($geogebra, $context);    
+        geogebra_view_applet($geogebra, $cm, $context);    
     }
 }
 
