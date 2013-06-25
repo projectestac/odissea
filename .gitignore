@@ -12,5 +12,5 @@ html/moodle2/local/agora/muc/cacheconfig_pro.php
 html/moodle2/local/agora/muc/cacheconfig_pro_odissea.php
 moodledata*/*
 .Trash*/*
-/nbproject/private/
+nbproject
 
