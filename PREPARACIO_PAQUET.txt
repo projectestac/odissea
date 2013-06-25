@@ -54,10 +54,14 @@ Versió nova d'ODISSEA - MOODLE 2
 		* html/moodle2/theme/xtec2/pix/favicon.ico
 		* html/moodle2/theme/xtec2/pix/theme/logo_main.png
 
-2.2. Afegir el fitxer següent:
+2.2. Afegir el directori/fitxer següent:
 		* html/moodle2/apc.php
+		* html/moodle/auth/odissea
 
-2.3. Eliminar els fitxers següents:
+2.3. Afegir el contingut del directori següent
+		* html/moodle2/local/agora/muc
+
+2.4. Eliminar els fitxers següents:
 		* html/moodle2/index_iw.php
 		* html/moodle2/settings.php
 		* html/moodle2/site-config.php
@@ -65,8 +69,4 @@ Versió nova d'ODISSEA - MOODLE 2
 		* html/moodle2/config_mysql.php
 		* html/moodle2/config_oracle.php
 		* html/moodle2/theme/xtec2/pix/theme/logo_main.gif
-
-
-3. Actualitzar el fitxer html/moodle/CHANGES.txt amb els canvis incorporats des de la darrera versió
-
 
