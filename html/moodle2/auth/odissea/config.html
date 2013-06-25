@@ -1,0 +1,176 @@
+<?php
+
+// Set to defaults if undefined
+if (!isset($config->host_url)) {
+    $config->host_url = '';
+}
+if (empty($config->ldapencoding)) {
+    $config->ldapencoding = 'utf-8';
+}
+if (!isset($config->contexts)) {
+    $config->contexts = '';
+}
+if (!isset($config->user_attribute)) {
+    $config->user_attribute = 'cn';
+}
+if (!isset($config->nif_attribute)) {
+    $config->nif_attribute = 'nif';
+}
+if (!isset($config->bind_dn)) {
+    $config->bind_dn = '';
+}
+if (!isset($config->bind_pw)) {
+    $config->bind_pw = '';
+}
+if (!isset($config->ldap_version)) {
+    $config->ldap_version = '3';
+}
+
+$yesno = array(get_string('no'), get_string('yes'));
+
+$disabled = '';
+if (!ldap_paged_results_supported($config->ldap_version)) {
+    $disabled = ' disabled="disabled"';
+    echo $OUTPUT->notification(get_string('pagedresultsnotsupp', 'auth_ldap'));
+}
+
+?>
+<table cellspacing="0" cellpadding="5" border="0">
+<tr>
+   <td colspan="2">
+       <h4><?php print_string('auth_ldap_server_settings', 'auth_ldap') ?></h4>
+   </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="host_url"><?php print_string('auth_ldap_host_url_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="host_url" id="host_url" type="text" size="30" value="<?php echo $config->host_url?>" />
+        <?php if (isset($err['host_url'])) { echo $OUTPUT->error_text($err['host_url']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_host_url', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="menuldap_version"><?php print_string('auth_ldap_version_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <?php
+           $versions = array();
+           $versions[2] = '2';
+           $versions[3] = '3';
+           echo html_writer::select($versions, 'ldap_version', $config->ldap_version, false);
+           if (isset($err['ldap_version'])) { echo $OUTPUT->error_text($err['ldap_version']); }
+        ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_version', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="ldapencoding"><?php print_string('auth_ldap_ldap_encoding_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input id="ldapencoding" name="ldapencoding" type="text" value="<?php echo $config->ldapencoding ?>" />
+        <?php if (isset($err['ldapencoding'])) { echo $OUTPUT->error_text($err['ldapencoding']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_ldap_encoding', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="bind_dn"><?php print_string('auth_ldap_bind_dn_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="bind_dn" id="bind_dn" type="text" size="30" value="<?php echo $config->bind_dn?>" />
+        <?php if (isset($err['bind_dn'])) { echo $OUTPUT->error_text($err['bind_dn']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_bind_dn', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="bind_pw"><?php print_string('auth_ldap_bind_pw_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="bind_pw" id="bind_pw" type="password" size="30" value="<?php echo $config->bind_pw?>" />
+        <?php if (isset($err['bind_pw'])) { echo $OUTPUT->error_text($err['bind_pw']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_bind_pw', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="contexts"><?php print_string('auth_ldap_contexts_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="contexts" id="contexts" type="text" size="30" value="<?php echo $config->contexts?>" />
+        <?php if (isset($err['contexts'])) { echo $OUTPUT->error_text($err['contexts']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_contexts', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="user_attribute"><?php print_string('auth_ldap_user_attribute_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="user_attribute" id="user_attribute" type="text" size="30" value="<?php echo $config->user_attribute?>" />
+        <?php if (isset($err['user_attribute'])) { echo $OUTPUT->error_text($err['user_attribute']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_user_attribute', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="nif_attribute"><?php print_string('auth_odissea_nif_attribute_key', 'auth_odissea') ?></label>
+    </td>
+    <td>
+        <input name="nif_attribute" id="nif_attribute" type="text" size="30" value="<?php echo $config->nif_attribute?>" />
+        <?php if (isset($err['nif_attribute'])) { echo $OUTPUT->error_text($err['nif_attribute']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_odissea_nif_attribute', 'auth_odissea') ?>
+    </td>
+</tr>
+
+<!-- @TODO: Pending for future versions
+<tr valign="top">
+    <td align="right">
+        <label for="menuremoveuser"><?php print_string('auth_remove_user_key', 'auth') ?></label>
+    </td>
+    <td>
+        <?php
+            $deleteopt = array();
+            $deleteopt[AUTH_REMOVEUSER_KEEP] = get_string('auth_remove_keep', 'auth');
+            $deleteopt[AUTH_REMOVEUSER_SUSPEND] = get_string('auth_remove_suspend', 'auth');
+            $deleteopt[AUTH_REMOVEUSER_FULLDELETE] = get_string('auth_remove_delete', 'auth');
+            echo html_writer::select($deleteopt, 'removeuser', $config->removeuser, false);
+        ?>
+    </td>
+    <td>
+        <?php print_string('auth_remove_user', 'auth') ?>
+    </td>
+</tr>
+-->
+
+<?php
+$help  = get_string('auth_ldapextrafields', 'auth_ldap');
+$help .= get_string('auth_updatelocal_expl', 'auth');
+$help .= get_string('auth_fieldlock_expl', 'auth');
+$help .= get_string('auth_updateremote_expl', 'auth');
+$help .= '<hr />';
+$help .= get_string('auth_updateremote_ldap', 'auth');
+
+print_auth_lock_options($this->authtype, $user_fields, $help, true, true);
+?>
+</table>
