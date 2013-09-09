@@ -3,6 +3,22 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 13.07.10
+---------------------------------------------------------------------------------------
+MOODLE
+- Fixed backup copies not being automatically removed when moving to Moodle 2
+
+MOODLE2
+- Changed lib/moodlelib.php to add odissea auth method
+- Fixed whitespaces in langlist
+- Added support for SSO from Zikula 1.3
+- Added removal of temp files to local/agora/cron.php
+- Fixed course format 'Senzill per temes' not being able to go to next topic
+- Updated catalan translation files (05-07-2013)
+- Fixed theme selector to let select a theme when !is_agora
+- Fix for style in module page which is incorrectly overriden by style in rcommon block
+
+
 Changes 13.06.21
 ---------------------------------------------------------------------------------------
 MOODLE
