@@ -31,3 +31,6 @@ $string['auth_odisseadescription'] = 'Aquest mètode proporciona autenticació c
 $string['pluginname'] = 'Odissea';
 $string['auth_odissea_nif_attribute'] = 'Opcional: substitueix l\'atribut utilitzat pel NIF o equivalent dels usuaris. Generalment \'nif\'.';
 $string['auth_odissea_nif_attribute_key'] = 'NIF';
+
+$string['auth_xtec_server_settings'] = 'Paràmetres del servidor LDAP-XTEC';
+$string['auth_gicar_server_settings'] = 'Paràmetres del servidor LDAP-GICAR';

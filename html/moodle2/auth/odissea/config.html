@@ -1,6 +1,7 @@
 <?php
 
 // Set to defaults if undefined
+// XTEC
 if (!isset($config->host_url)) {
     $config->host_url = '';
 }
@@ -26,19 +27,39 @@ if (!isset($config->ldap_version)) {
     $config->ldap_version = '3';
 }
 
-$yesno = array(get_string('no'), get_string('yes'));
-
-$disabled = '';
-if (!ldap_paged_results_supported($config->ldap_version)) {
-    $disabled = ' disabled="disabled"';
-    echo $OUTPUT->notification(get_string('pagedresultsnotsupp', 'auth_ldap'));
+// GICAR
+if (!isset($config->gicar_host_url)) {
+    $config->gicar_host_url = '';
+}
+if (empty($config->gicar_ldapencoding)) {
+    $config->gicar_ldapencoding = 'utf-8';
+}
+if (!isset($config->gicar_contexts)) {
+    $config->gicar_contexts = '';
+}
+if (!isset($config->gicar_user_attribute)) {
+    $config->gicar_user_attribute = 'sAMAccountName';
+}
+if (!isset($config->gicar_nif_attribute)) {
+    $config->gicar_nif_attribute = 'employeeID';
+}
+if (!isset($config->gicar_bind_dn)) {
+    $config->gicar_bind_dn = '';
+}
+if (!isset($config->gicar_bind_pw)) {
+    $config->gicar_bind_pw = '';
+}
+if (!isset($config->gicar_ldap_version)) {
+    $config->gicar_ldap_version = '3';
 }
 
 ?>
 <table cellspacing="0" cellpadding="5" border="0">
+<!-- XTEC PARAMS -->    
 <tr>
    <td colspan="2">
-       <h4><?php print_string('auth_ldap_server_settings', 'auth_ldap') ?></h4>
+       <br/>
+       <h4><?php print_string('auth_xtec_server_settings', 'auth_odissea') ?></h4>
    </td>
 </tr>
 <tr valign="top" class="required">
@@ -137,6 +158,115 @@ if (!ldap_paged_results_supported($config->ldap_version)) {
     <td>
         <input name="nif_attribute" id="nif_attribute" type="text" size="30" value="<?php echo $config->nif_attribute?>" />
         <?php if (isset($err['nif_attribute'])) { echo $OUTPUT->error_text($err['nif_attribute']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_odissea_nif_attribute', 'auth_odissea') ?>
+    </td>
+</tr>
+
+<!-- GICAR PARAMS -->
+<tr>
+   <td colspan="2">
+       <br/><br/>
+       <h4><?php print_string('auth_gicar_server_settings', 'auth_odissea') ?></h4>
+   </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_host_url"><?php print_string('auth_ldap_host_url_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="gicar_host_url" id="gicar_host_url" type="text" size="30" value="<?php echo $config->gicar_host_url?>" />
+        <?php if (isset($err['gicar_host_url'])) { echo $OUTPUT->error_text($err['gicar_host_url']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_host_url', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_menuldap_version"><?php print_string('auth_ldap_version_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <?php
+           $versions = array();
+           $versions[2] = '2';
+           $versions[3] = '3';
+           echo html_writer::select($versions, 'gicar_ldap_version', $config->gicar_ldap_version, false);
+           if (isset($err['gicar_ldap_version'])) { echo $OUTPUT->error_text($err['gicar_ldap_version']); }
+        ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_version', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_ldapencoding"><?php print_string('auth_ldap_ldap_encoding_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input id="gicar_ldapencoding" name="gicar_ldapencoding" type="text" value="<?php echo $config->gicar_ldapencoding ?>" />
+        <?php if (isset($err['gicar_ldapencoding'])) { echo $OUTPUT->error_text($err['gicar_ldapencoding']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_ldap_encoding', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_bind_dn"><?php print_string('auth_ldap_bind_dn_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="gicar_bind_dn" id="gicar_bind_dn" type="text" size="30" value="<?php echo $config->gicar_bind_dn?>" />
+        <?php if (isset($err['gicar_bind_dn'])) { echo $OUTPUT->error_text($err['gicar_bind_dn']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_bind_dn', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_bind_pw"><?php print_string('auth_ldap_bind_pw_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="gicar_bind_pw" id="gicar_bind_pw" type="password" size="30" value="<?php echo $config->gicar_bind_pw?>" />
+        <?php if (isset($err['gicar_bind_pw'])) { echo $OUTPUT->error_text($err['gicar_bind_pw']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_bind_pw', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_contexts"><?php print_string('auth_ldap_contexts_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="gicar_contexts" id="gicar_contexts" type="text" size="30" value="<?php echo $config->gicar_contexts?>" />
+        <?php if (isset($err['gicar_contexts'])) { echo $OUTPUT->error_text($err['gicar_contexts']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_contexts', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_user_attribute"><?php print_string('auth_ldap_user_attribute_key', 'auth_ldap') ?></label>
+    </td>
+    <td>
+        <input name="gicar_user_attribute" id="gicar_user_attribute" type="text" size="30" value="<?php echo $config->gicar_user_attribute?>" />
+        <?php if (isset($err['gicar_user_attribute'])) { echo $OUTPUT->error_text($err['gicar_user_attribute']); } ?>
+    </td>
+    <td>
+        <?php print_string('auth_ldap_user_attribute', 'auth_ldap') ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right">
+        <label for="gicar_nif_attribute"><?php print_string('auth_odissea_nif_attribute_key', 'auth_odissea') ?></label>
+    </td>
+    <td>
+        <input name="gicar_nif_attribute" id="gicar_nif_attribute" type="text" size="30" value="<?php echo $config->gicar_nif_attribute?>" />
+        <?php if (isset($err['gicar_nif_attribute'])) { echo $OUTPUT->error_text($err['gicar_nif_attribute']); } ?>
     </td>
     <td>
         <?php print_string('auth_odissea_nif_attribute', 'auth_odissea') ?>

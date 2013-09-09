@@ -3,6 +3,13 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 13.09.04
+---------------------------------------------------------------------------------------
+MOODLE2
+- Reviewed Odissea authentication module to validate also users with GICAR
+- Upgrade odissea authentication module. The new version lets validate also users with GICAR and fixes a bug with NIE users
+
+
 Changes 13.08.27
 ---------------------------------------------------------------------------------------
 MOODLE2
@@ -31,6 +38,7 @@ Changes 13.06.21
 MOODLE
 - Fixed "inconsistent datatypes: expected - got CLOB" bug when creating questionnaire backup.
 - Revised procedure to create a backup of the specified course without user information (1.9 -> 2 import tool).
+- Added first version of the odissea auth method (at the moment only uses XTEC-LDAP validation)
 
 
 Changes 13.06.14

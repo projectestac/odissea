@@ -30,3 +30,6 @@ $string['auth_odisseadescription'] = 'This method provides authentication agains
 $string['pluginname'] = 'Odissea';
 $string['auth_odissea_nif_attribute'] = 'Optional: Overrides the attribute used for identity number of users (NIF or equivalent). Usually \'nif\'.';
 $string['auth_odissea_nif_attribute_key'] = 'NIF';
+
+$string['auth_xtec_server_settings'] = 'LDAP-XTEC server settings';
+$string['auth_gicar_server_settings'] = 'LDAP-GICAR server settings';
