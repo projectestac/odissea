@@ -27,10 +27,13 @@ $string['auth_odisseadescription'] = 'Aquest mètode proporciona autenticació c
                                       a l\'usuari/ària nou a la seva base de dades. Aquest mòdul llegeix atributs de
                                       l\'usuari/ària LDAP, omple els camps corresponents de Moodle i modifica el nom
                                       d\'usuari/ària pel NIF o equivalent. 
-                                      En connexions successives només es comproven el nom d\'usuari/ària i la contrasenya.';
+                                      En connexions successives només es comproven el nom d\'usuari/ària i la contrasenya.
+                                      Els codi de centre (del tipus a80xxxxx, b7xxxxxx, etc.) no poden entrar.';
 $string['pluginname'] = 'Odissea';
 $string['auth_odissea_nif_attribute'] = 'Opcional: substitueix l\'atribut utilitzat pel NIF o equivalent dels usuaris. Generalment \'nif\'.';
 $string['auth_odissea_nif_attribute_key'] = 'NIF';
 
 $string['auth_xtec_server_settings'] = 'Paràmetres del servidor LDAP-XTEC';
 $string['auth_gicar_server_settings'] = 'Paràmetres del servidor LDAP-GICAR';
+
+$string['auth_odissea_no_schoolcode'] = 'Els codis de centre no es poden utilitzar per entrar';

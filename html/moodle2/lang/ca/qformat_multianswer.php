@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Respostes incrustades (Cloze)';
-$string['pluginname_help'] = 'El format de respostes incrustades (Cloze) permet importar un fragment de text amb preguntes del tipus resposta múltiple o resposta curta imbricades dins del text.';
+$string['pluginname_help'] = 'El format de respostes incrustades (Cloze) permet importar un fragment de text amb preguntes del tipus resposta múltiple o resposta curta incrustades dins del text.';

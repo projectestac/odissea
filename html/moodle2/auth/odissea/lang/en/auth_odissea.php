@@ -26,10 +26,13 @@ $string['auth_odisseadescription'] = 'This method provides authentication agains
                                   If the given username and password are valid, Moodle creates a new user
                                   entry in its database. This module can read user attributes from LDAP, prefill
                                   wanted fields in Moodle and change username for NIF or equivalent.
-                                  For following logins, only the username and password are checked.';
+                                  For following logins, only the username and password are checked.
+                                  School codes (like a80xxxxx, b7xxxxxx, etc.) cannot log in.';
 $string['pluginname'] = 'Odissea';
 $string['auth_odissea_nif_attribute'] = 'Optional: Overrides the attribute used for identity number of users (NIF or equivalent). Usually \'nif\'.';
 $string['auth_odissea_nif_attribute_key'] = 'NIF';
 
 $string['auth_xtec_server_settings'] = 'LDAP-XTEC server settings';
 $string['auth_gicar_server_settings'] = 'LDAP-GICAR server settings';
+
+$string['auth_odissea_no_schoolcode'] = 'School codes cannot be used to log in';

@@ -4,6 +4,20 @@ More information on each of the fixes can be found in the project
 development home at http://projectes.lafarga.cat/projects/odissea/
 
 
+Changes 13.10.16
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Fixed bug when reseting assign grades (https://tracker.moodle.org/browse/MDL-41877)
+- Installed Wiris Quizzes (version 3.23.0.0749)
+- Participants count correction shown in Grading summary page (https://tracker.moodle.org/browse/MDL-38128)
+- Added tool uploadcourse for bulk courses creation
+- Added tool uploadcoursecategory for bulk course categories creation
+- Updated Marsupial modules to v2.0.3
+- Odisseagtafsync: Enrolments from file are now done with 'Manual' plugin
+- Updated catalan language pack (15-10-2013)
+- Updated spanish language pack (15-10-2013) and fix for https://tracker.moodle.org/browse/MDL-30788
+
+
 Changes 13.09.23
 ---------------------------------------------------------------------------------------
 MOODLE2
