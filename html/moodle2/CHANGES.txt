@@ -3,6 +3,23 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+
+Changes 13.09.23
+---------------------------------------------------------------------------------------
+MOODLE2
+- Changed cron order to delete files from temp before uppgrading assignments (to avoid problems with course sections) and reviewed code to avoid warning when trying to delete '.' folder
+- Fixed bug for JClic activities when upgrading from Moodle 1.9 empty maxgrade (reported by Ferran Recio - UPCnet)
+- Fixed bug related with SMART Board incompatibility with Drag&Drop AJAX (https://tracker.moodle.org/browse/MDL-37528)
+- Added first version of the replacextec tool
+- Added first version of the odisseagtafsync tool
+- Added Marsupial rgrade block (developed by Text-La Galera)
+- Added ForzarGuardar parameter to rcontent module
+- Fixed bug with rscorm to let update the launch when it has been changed (patch reported by Santillana)
+- Upgraded qformat_hotpot from v2.0.8 to v.2.0.13 to fix some importing problems
+- Upgraded geogebra module to v0.2.4 RC version
+- Updated catalan translation (19-09-2013)
+
+
 Changes 13.09.04
 ---------------------------------------------------------------------------------------
 MOODLE2
