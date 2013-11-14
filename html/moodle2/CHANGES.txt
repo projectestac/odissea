@@ -3,6 +3,24 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 13.11.13
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Fixed bug on submissions count shown in My Moodle summary page
+- Coursequotas: Duplicated files in a course are only counted once
+- Coursequotas: Added usage info of temp and trashdir directories
+- Forums: Fixed error in My profile > Forum Posts > Discussions (https://tracker.moodle.org/browse/MDL-39788)
+- Fixed bug on simple course format related with save images when editing
+- Fixed bug with modinfo corruption (Fix for https://tracker.moodle.org/browse/MDL-36789)
+- Reviewed rcommon (Marsupial) code to avoid some problems with PostgreSQL (patch reported by UPCnet)
+- Enabled enablegroupmembersonly experimental parameter
+- Fixed Moodle footer appearing over "New activity or resource" popup Window
+- Fixed bug on overviewnumpostssince count shown in My Moodle Page
+- Hidden Alfresco repository (only visible for xtecadmin or when it's enabled)
+- Showed again Appearance | Default My home page parameters page
+- Hidden delete button for admins on Plugins | Filters | Manage filters page 
+- Updated catalan translation (13-11-2013)
+
 
 Changes 13.10.16
 ---------------------------------------------------------------------------------------
