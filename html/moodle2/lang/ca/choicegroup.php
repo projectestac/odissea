@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completionsubmit'] = 'Mostra com a complet quan l\'usuari trie una opció';
+$string['hidedescription'] = 'Amaga les descripcions';
+$string['showdescription'] = 'Mostra les descripcions';

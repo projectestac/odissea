@@ -45,10 +45,18 @@ $renderer = $PAGE->get_renderer('format_weeks');
 
 //XTEC ************ AFEGIT - To show current section if none is selected
 //2012.08.20  @sarjona
+//2013.11.26 @mespinosa - Fixed for weeks format
 if ($course->coursedisplay == COURSE_DISPLAY_MULTIPAGE){
     $notifyeditingon = optional_param('notifyeditingon', -1, PARAM_BOOL);
     if ($edit < 0 && $notifyeditingon < 0 && empty($displaysection)) {
-        $displaysection = $course->marker;
+	$format = course_get_format($course);
+	$sections = $DB->get_records('course_sections',array('course' => $course->id));
+	foreach($sections as $section) {
+		if($format->is_section_current($section)) {
+			$displaysection = $section->section;
+			break;
+		}
+	}
     } else if ($displaysection == -1){
         $displaysection = 0;
     }

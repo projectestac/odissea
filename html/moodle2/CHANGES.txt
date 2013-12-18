@@ -3,6 +3,22 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 13.12.16
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Reviewed code for reseting assign grades to include also recovergradesdefault parameter (https://tracker.moodle.org/browse/MDL-41877)
+- Coursequotas: Added temp and trashdir info for non-Agora installs and minor text format changes
+- Coursequotas: Fixed error when counting used space in course and in front page
+- Question: Modified to prevent Google Chrome from translating the question identifier (a,b,c..)
+- Modified patch in email_to_user function to prevent moodle to generate notices when $CFG->apligestmail is not set
+- Fixed upgrade assignment code section. Now it catches exceptions and removes unused duplicated sections that probably caused the exception in the first place.
+- Updated Marsupial modules to v2.0.4
+- site-config.php: Added prefix exception for usu1 (PRO)
+- Fixed bug with EOICampus module (pathway selection when editing)
+- Updated catalan translation (11-12-2013)
+- Blocked access to install functions
+
+
 Changes 13.11.13
 ---------------------------------------------------------------------------------------
 MOODLE 2
