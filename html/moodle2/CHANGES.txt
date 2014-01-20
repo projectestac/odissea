@@ -3,6 +3,15 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 14.01.15
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Coursequotas: Fixed error in temp and trashdir info for non-Agora installs
+- GeoGebra: updated module to last version (0.2.5rc)
+- Bug correct: MDL-27071 Oracle cannot cope withan IN operator with more than 1000 conditions in it
+- Added .htaccess to block install.php
+
+
 Changes 13.12.16
 ---------------------------------------------------------------------------------------
 MOODLE 2

@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteBase /
+
+# Block access to install.php
+RewriteCond %{REQUEST_URI} ([^/]*)/install.php
+RewriteRule ^([^.]*)/install.php(.*)$ $1/siteoff.html [QSA,L]
+
