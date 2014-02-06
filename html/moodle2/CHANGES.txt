@@ -3,6 +3,15 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 14.02.05
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Repairing of course_section duplicates
+- Instaled some questiontypes of the Open University (gapselect, ddimageortext, ddmarker and ddwtos)
+- Updated Questionnaire from version 2.3.3 to version 2.4.2
+- Bug repair: MDL-43511 do not cache the MUC cache in question code
+
+
 Changes 14.01.15
 ---------------------------------------------------------------------------------------
 MOODLE 2
