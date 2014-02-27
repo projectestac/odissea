@@ -47,7 +47,7 @@
 	margin:3px 23.5px 12px;
 }
 
-.course-content ul.simple .activity a{	
+.course-content ul.simple .activity a{
 	font-size: 1.2em;
 }
 
@@ -65,3 +65,14 @@
 	height:128px;
 	border: 1px;
 }
+
+.simple-mod-list li {
+    float: none!important;
+    display: inline-block;
+}
+
+.simple-mod-list li span {
+    display: inline-table;
+    width: 100%;
+}
+

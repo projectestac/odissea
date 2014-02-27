@@ -18,8 +18,8 @@
  * Renderer for outputting the Simple topics course format.
  *
  * @package format_simple
- * @copyright 2012 UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat
+ * @copyright 2012-2014 UPCnet
+ * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es (Moodle 2.4)
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since Moodle 2.0
  */
@@ -36,20 +36,19 @@ require_once($CFG->dirroot.'/course/format/topics/renderer.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class format_simple_renderer extends format_topics_renderer {
-    
+
+
+    const DEFAULTICONSIZE = 128;
+
     /**
      * Generate the starting container html for a list of sections
      * @param type $addclass boolean to indicate if add or not class attribute
      * @return string HTML to output.
      */
     protected function start_section_list($addclass = false) {
-        if ($addclass) {
-            return html_writer::start_tag('ul', array('class' => 'simple'));
-        } else {
-            return html_writer::start_tag('ul', array('style' => 'list-style: none'));
-        }
+        return html_writer::start_tag('ul', array('class' => 'simple'));
     }
-    
+
     /**
      * Output the html for a single section page .
      *
@@ -62,7 +61,11 @@ class format_simple_renderer extends format_topics_renderer {
      */
     public function print_single_section_page($course, $sections, $mods, $modnames, $modnamesused, $displaysection) {
         global $PAGE;
-
+		$context = context_course::instance($course->id);
+		if (has_capability('moodle/course:update',$context)) {
+			parent::print_single_section_page($course, $sections, $mods, $modnames, $modnamesused, $displaysection);
+			return;
+		}
         $modinfo = get_fast_modinfo($course);
         $course = course_get_format($course)->get_course();
 
@@ -73,33 +76,34 @@ class format_simple_renderer extends format_topics_renderer {
             	print_error('unknowncoursesection', 'error', null, $course->fullname);
             	return;
         	}
-        	
+
         	if (!$sectioninfo->uservisible) {
 				if (!$course->hiddensections) {
-					echo $this->start_section_list(true);
+					echo $this->start_section_list();
 					echo $this->section_hidden($displaysection);
 					echo $this->end_section_list();
 				}
 				// Can't view this section.
 				return;
 			}
-			
+
 			// Copy activity clipboard..
         	echo $this->course_activity_clipboard($course, $displaysection);
-		}       
+		}
 
-        
-        $thissection = $modinfo->get_section_info(0);
-        if ($thissection->summary or !empty($modinfo->sections[0])) {
-            echo $this->start_section_list(true);
-            echo $this->section_header($thissection, $course, true, $displaysection);
-            $this->print_simple_section($course, $thissection, null, null, true, "100%", false, $displaysection);
-            echo $this->section_footer();
-            echo $this->end_section_list();
-        }
+       		if (!empty($course->showtopiczero)) {
+	        	$thissection = $modinfo->get_section_info(0);
+		        if ($thissection->summary or !empty($modinfo->sections[0])) {
+        		    echo $this->start_section_list();
+		            echo $this->section_header($thissection, $course, true, $displaysection);
+		            $this->print_simple_section($course, $thissection, null, null, true, "100%", false, $displaysection);
+        		    echo $this->section_footer();
+		            echo $this->end_section_list();
+        		}
+		}
 
 
-		
+
 		// Start single-section div
 		echo html_writer::start_tag('div', array('class' => 'single-section'));
 
@@ -110,7 +114,7 @@ class format_simple_renderer extends format_topics_renderer {
 		$sectiontitle .= html_writer::tag('span', $sectionnavlinks['previous'], array('class' => 'mdl-left'));
 		$sectiontitle .= html_writer::tag('span', $sectionnavlinks['next'], array('class' => 'mdl-right'));
 		// Title attributes
-		
+
 		if($displaysection){
 			// The requested section page.
 			$thissection = $modinfo->get_section_info($displaysection);
@@ -123,29 +127,28 @@ class format_simple_renderer extends format_topics_renderer {
 			echo $sectiontitle;
 
 			// Now the list of sections..
-			echo $this->start_section_list(true);
+			echo $this->start_section_list();
 
 			echo $this->section_header($thissection, $course, true, $displaysection);
 
 			$this->print_simple_section($course, $thissection, null, null, true, '100%', false, $displaysection);
 			echo $this->section_footer();
 			echo $this->end_section_list();
-			
+
 		}
 
 		// Display section bottom navigation.
-		$courselink = html_writer::link(course_get_url($course), get_string('returntomaincoursepage'));
 		$sectionbottomnav = '';
 		$sectionbottomnav .= html_writer::start_tag('div', array('class' => 'section-navigation mdl-bottom'));
 		$sectionbottomnav .= html_writer::tag('span', $sectionnavlinks['previous'], array('class' => 'mdl-left'));
 		$sectionbottomnav .= html_writer::tag('span', $sectionnavlinks['next'], array('class' => 'mdl-right'));
-		$sectionbottomnav .= html_writer::tag('div', $courselink, array('class' => 'mdl-align'));
+		$sectionbottomnav .= html_writer::tag('div', '', array('class' => 'mdl-align'));
 		$sectionbottomnav .= html_writer::end_tag('div');
 		echo $sectionbottomnav;
 
 		// close single-section div.
 		echo html_writer::end_tag('div');
-		
+
     }
 
 	/**
@@ -170,11 +173,11 @@ class format_simple_renderer extends format_topics_renderer {
 		if (!empty($modinfo->sections[$section->section])) {
 
 			// Fix bug #5027, don't want style=\"width:$width\".
-			echo "<ul class=\"section img-text\">\n";
+			echo "<ul class=\"section img-text simple-mod-list\">\n";
 
 			foreach ($modinfo->sections[$section->section] as $modnumber) {
 				$mod = $modinfo->cms[$modnumber];
-				
+
 				// We can continue (because it will not be displayed at all)
 				// if The activity is not visible
 				if (!$mod->visible) {
@@ -183,7 +186,7 @@ class format_simple_renderer extends format_topics_renderer {
 				}
 
 				$modcontext = context_module::instance($mod->id);
-				
+
 				$liclasses = array();
 				$liclasses[] = 'activity';
 				$liclasses[] = $mod->modname;
@@ -221,17 +224,28 @@ class format_simple_renderer extends format_topics_renderer {
 				// We may be displaying this just in order to show information
 				// about visibility, without the actual link
 				$contentpart = '';
-				
+
 				// Get on-click attribute value if specified
 				$onclick = $mod->get_on_click();
 
 				if ($url = $mod->get_url()) {
 					// Display link itself.
-					$activitylink = html_writer::empty_tag('img', array('src' => simple_get_icon_url($mod, $modnumber),
-							'class' => 'iconlarge activityicon', 'alt' => $mod->modfullname)) .
-							html_writer::tag('span', $instancename . $altname, array('class' => 'instancename'));
-					echo html_writer::link($url, $activitylink, array('onclick' => $onclick));
 
+					// resize mimetype icons to a proper size
+					$iconurl = simple_get_icon_url($mod, $modnumber);
+					$pattern = '/f\/[a-zA-Z0-9]*-(\d+)\D*$/';
+					preg_match($pattern, $iconurl, $matches);
+					$iconsize = !empty($course->simpleiconsize)?$course->simpleiconsize:self::DEFAULTICONSIZE;
+					if ($matches) {
+						$baseiconurl = str_replace($matches[0],'',$iconurl);
+						$relativeiconurl = str_replace($matches[1],$iconsize,$matches[0]);
+						$iconurl = $baseiconurl.$relativeiconurl;
+					}
+					$html = '<div style="background-image: url(\''.$iconurl.'\'); background-size: contain; background-position: center; background-repeat: no-repeat; height: '.$iconsize.'px; display: block;"></div>';
+					$activitylink = $html .html_writer::start_tag('div').
+						html_writer::tag('span', $instancename . $altname, array('class' => 'instancename'))
+						.html_writer::end_tag('div');
+					echo html_writer::link($url, $activitylink, array('onclick' => $onclick));
 					// If specified, display extra content after link.
 					if ($content) {
 						$contentpart = html_writer::tag('div', $content, array('class' =>
@@ -268,6 +282,5 @@ class format_simple_renderer extends format_topics_renderer {
 			echo "</ul><!--class='section'-->\n\n";
 		}
 	}
-
 
 }
