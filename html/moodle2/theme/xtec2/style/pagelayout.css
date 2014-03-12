@@ -86,8 +86,14 @@ table {
     border-radius: 5px;
 }
 
-tr, th, td { 
-    border: none !important; 
+table.flexible tr, table.generaltable tr, table.generalbox tr,
+table.flexible th, table.generaltable th, table.generalbox th,
+table.flexible td, table.generaltable td, table.generalbox td {
+    border: none !important;
+}
+
+tr, th, td {
+    border: none;
 }
 
 th {
@@ -96,27 +102,49 @@ th {
     font-weight: bold;
 }
 
+
+table.flexible tbody th, table.generaltable tbody th, table.generalbox tbody th {
+    background-color: #FFF !important;
+}
+
 tbody th {
     color: #555555;
-    background-color:#FFF!important;
+    background-color: #FFF;
     font-weight: bold;
 }
 
+table.flexible tbody tr, table.generaltable tbody tr, table.generalbox tbody tr {
+    border-bottom: 1px solid #DDDDDD !important;
+}
+
 tbody tr {
-    border-bottom:1px solid #DDDDDD!important;
+    border-bottom:1px solid #DDDDDD;
+}
+
+table.flexible tr.header, table.generaltable tr.header, table.generalbox tr.header {
+    background-color:#DDDDDD !important;
 }
 
 tr.header {
-    background-color:#DDDDDD!important;
+    background-color:#DDDDDD;
+}
+
+table.flexible th.header a, table.generaltable th.header a, table.generalbox th.header a {
+    color: [[setting:color5]] !important;
 }
 
 th.header a {
-    color: [[setting:color5]]!important;
+    color: [[setting:color5]];
+}
+
+table.flexible th.header, table.generaltable th.header, table.generalbox th.header {
+    background-color: [[setting:color6]] !important;
+    color:[[setting:color4]] !important;
 }
 
 th.header {
-    background-color: [[setting:color6]]!important;
-    color:[[setting:color4]]!important;
+    background-color: [[setting:color6]];
+    color:[[setting:color4]];
 }
 
 #page {
@@ -143,7 +171,7 @@ th.header {
 .flexible th a,
 .flexible td a,
 .path-grade-report-grader .heading_name_row th {
-    white-space: normal!important;
+    white-space: normal !important;
     min-width: 60px;
 }
 
@@ -154,16 +182,16 @@ th.header {
 .path-grade-report-grader div.right_scroller td,
 .path-grade-report-grader div.left_scroller th,
 .path-grade-report-grader div.right_scroller th {
-    padding-top: 0px!important;
-    padding-bottom: 0px!important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .path-grade-report-grader div.left_scroller tr.heading,
 .path-grade-report-grader div.right_scroller tr.heading_name_row,
 .path-grade-report-grader div.left_scroller td.fixedcolumn {
-    height: 70px!important;
-    min-height: 70px!important;
-    max-height: 70px!important;
+    height: 70px !important;
+    min-height: 70px !important;
+    max-height: 70px !important;
 }
 
 
@@ -178,7 +206,7 @@ th.header {
     margin-top: 10px;
     background-position: bottom;
     background-repeat: repeat-x;
-    background-image: none!important;
+    background-image: none !important;
     background-color: #fff;
     border-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -224,10 +252,11 @@ th.header {
     height: 34px;
     width: 100%;
     padding-top: 10px;
-    clear: both; 
+    clear: both;
     margin: 0px;
     border-bottom: 2px solid #ad2114;
     text-align: left;
+    background-color: white;
 }
 
 .headermenu .logininfo a:hover {
@@ -324,9 +353,9 @@ h2.main {
     color: [[setting:color2]];
 }
 
-.custom_menu_submenu, 
-.yui3-menu, 
-.first-of-type, 
+.custom_menu_submenu,
+.yui3-menu,
+.first-of-type,
 .yui3-menuitem-active {
     /*background-color: #ddd;*/
     font-weight: bold;
@@ -344,7 +373,7 @@ li a.yui3-menu-label {
     /*background: url(../theme/xtec2/pix/theme/ralla_menu.png) no-repeat right!important; */
 }
 
-ul li a.yui3-menuitem-content {  
+ul li a.yui3-menuitem-content {
     padding-bottom: 5px ! important;
     padding-top: 5px ! important;
 }
@@ -430,7 +459,7 @@ ul li a.yui3-menuitem-content {
 
 .weeks #section-0,
 .topics #section-0 {
-    background-color: #fff;    
+    background-color: #fff;
 }
 
 .weeks #section-0 .left,
@@ -616,7 +645,7 @@ div.content div.coursebox:only-of-type {
 
 .initialbar a { margin-left: 5px; }
 
-.capsula-footer { 
+.capsula-footer {
     display: block;
     overflow: auto;
     width: 100%;
@@ -714,8 +743,8 @@ li.yui3-menuitem:hover{
     width: 88%;
 }
 
-#page-content #region-main ul.weeks, 
-#page-content #region-main ul.unlist, 
+#page-content #region-main ul.weeks,
+#page-content #region-main ul.unlist,
 #page-content #region-main ul.topics {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -909,7 +938,7 @@ li.yui3-menuitem:hover{
 fieldset div {margin-top:5px }
 
 .yui3-menu li {
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 .yui3-menu li:hover {
@@ -947,7 +976,7 @@ fieldset div {margin-top:5px }
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;   
+    -moz-border-radius-topright: 5px;
 }
 /* Additional styles for selected tab */
 .yui3-tab-selected .yui3-tab-content {
@@ -955,11 +984,11 @@ fieldset div {margin-top:5px }
     background: none!important;
     background-color: [[setting:color2]]!important;
     border-color: [[setting:color2]]!important;
-    color: #fff!important;   
+    color: #fff!important;
 }
 /* Additional styles when mouse is over the tab */
 .yui3-tab .yui3-tab-content:hover {
-    color: #fff!important;   
+    color: #fff!important;
     background: [[setting:color2]]!important;
 }
 

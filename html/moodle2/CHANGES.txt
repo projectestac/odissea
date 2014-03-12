@@ -3,6 +3,15 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 14.03.12
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Fix for correct index detection when there's more than 1 Moodle in an Oracle instance
+- Hotpot report solved CONTRIB-4910
+- Repaired the display of hidden sections on simple course format
+- Debug feature enabled for all siteadmins outside agora
+- Re-added Catalonia to countries list
+
 Changes 14.02.26
 ---------------------------------------------------------------------------------------
 MOODLE 2
