@@ -96,12 +96,11 @@ tr, th, td {
     border: none;
 }
 
-th {
+th, th.header{
     color: #fff;
     background-color: [[setting:color2]];
     font-weight: bold;
 }
-
 
 table.flexible tbody th, table.generaltable tbody th, table.generalbox tbody th {
     background-color: #FFF !important;
@@ -118,15 +117,15 @@ table.flexible tbody tr, table.generaltable tbody tr, table.generalbox tbody tr 
 }
 
 tbody tr {
-    border-bottom:1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 table.flexible tr.header, table.generaltable tr.header, table.generalbox tr.header {
-    background-color:#DDDDDD !important;
+    background-color: #DDDDDD !important;
 }
 
 tr.header {
-    background-color:#DDDDDD;
+    background-color: #DDDDDD;
 }
 
 table.flexible th.header a, table.generaltable th.header a, table.generalbox th.header a {
@@ -140,11 +139,6 @@ th.header a {
 table.flexible th.header, table.generaltable th.header, table.generalbox th.header {
     background-color: [[setting:color6]] !important;
     color:[[setting:color4]] !important;
-}
-
-th.header {
-    background-color: [[setting:color6]];
-    color:[[setting:color4]];
 }
 
 #page {
@@ -206,15 +200,14 @@ th.header {
     margin-top: 10px;
     background-position: bottom;
     background-repeat: repeat-x;
-    background-image: none !important;
     background-color: #fff;
     border-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    /*  box-shadow: 3px 3px 3px #bbb;*/
-    -moz-border-radius-bottomleft: 5px;
-    -moz-border-radius-bottomright: 5px;
-    /*  -moz-box-shadow: 3px 3px 3px #bbb;*/
+    box-shadow: 3px 3px 3px #bbb;
+    background-image: url([[pix:theme|theme/borderbottom]]);
+    background-position: bottom;
+    background-repeat: repeat-x;
     border-color: #ddd;
 }
 
@@ -568,6 +561,16 @@ ul li a.yui3-menuitem-content {
     border-top: 0px;
 }
 
+.path-mod-forum .forumheaderlist tr,
+.path-mod-forum .forumheaderlist td {
+    border: 0;
+}
+
+.path-mod-forum table.forumheaderlist {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
 div.forumheaderlist:last-of-type, div.forumpost:last-of-type {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -578,8 +581,36 @@ div.forumheaderlist:last-of-type, div.forumpost:last-of-type {
    	border-top: 0px;
 }
 
+.forumheaderlist .discussion .author {
+    white-space: nowrap;
+}
+
+.forumheaderlist .discussion .starter {
+    background-color: #EEEEEE;
+}
+
+.discussion td {
+    border-color: #DDDDDD;
+}
+
+.forumheaderlist .discussion .starter, .discussion td {
+    border-width: 0 0 1px 0;
+    background-image: url([[pix:theme|theme/borderbottom]]);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.forumheaderlist td {
+    padding: 10px !important;
+}
+
+.forumheaderlist .replies {
+    text-align: center;
+    white-space: nowrap;
+}
+
 div.content div.coursebox:only-of-type {
-    border-bottom: white solid 0px!important;
+    border-bottom: white solid 0px !important;
 }
 
 .subscribelink {
@@ -1014,6 +1045,12 @@ input#username, input#password {
     color: [[setting:color3]]!important;
 }
 
+.generalbox#intro {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
 
 /* Must be at the end in order to override any previous style */
 [[setting:customcss]]
