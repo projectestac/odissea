@@ -3,13 +3,26 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+
+Changes 14.05.28
+---------------------------------------------------------------------------------------
+MOODLE 2
+- Solved MDL-39740 Updating grade_item idnumber doesn't update course_module idnumber
+- Solved MDL-45480 Mod completion cannot be changed on certain cases
+- Jclic module updated to the lastest version (0.2.3+)
+- Geogebra module updated to the lastest version (0.2.5+)
+- Format simple improvements showing custom images and solving duplicity of topic zero
+- Marsupial modules updated to the lastest version (2.0.5+)
+- Updated catalan translation (27-05-2014)
+
+
 Changes 14.04.09
 ---------------------------------------------------------------------------------------
 MOODLE 2
 - Tiny_MCE Wiris Replaced wrong ampersand
 - added TreeMenu.js
 - Solved error with activities that lasts more than 99 seconds saving total_time in seconds instead of miliseconds. Now the limit is about 27 hours per activity
-- Updated Jclicplugin.js to the last version
+- Updated Jclicplugin.js to the lastest version
 - Solved duplicity of topic zero in Simple course format
 - Fixes and improvements in table styles
 
@@ -37,7 +50,7 @@ Changes 14.01.15
 ---------------------------------------------------------------------------------------
 MOODLE 2
 - Coursequotas: Fixed error in temp and trashdir info for non-Agora installs
-- GeoGebra: updated module to last version (0.2.5rc)
+- GeoGebra: updated module to lastest version (0.2.5rc)
 - Bug correct: MDL-27071 Oracle cannot cope withan IN operator with more than 1000 conditions in it
 - Added .htaccess to block install.php
 
