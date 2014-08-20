@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'fr', branch 'MOODLE_24_STABLE'
+ * Strings for component 'tag', language 'fr', branch 'MOODLE_26_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['errordeleting'] = 'Erreur lors de la suppression du tag d\'identifiant 
 $string['errortagfrontpage'] = 'Il n\'est pas permis de placer des tags sur la page principale du site';
 $string['errorupdatingrecord'] = 'Erreur lors de la modification de l\'enregistrement du tag';
 $string['flag'] = 'Fanion';
-$string['flagasinappropriate'] = 'Marquer comme inapproprié';
+$string['flagasinappropriate'] = 'Signaler comme inapproprié';
 $string['helprelatedtags'] = 'Tags reliés, séparés par des virgules';
 $string['id'] = 'id';
 $string['manageofficialtags'] = 'Gérer les tags officiels';

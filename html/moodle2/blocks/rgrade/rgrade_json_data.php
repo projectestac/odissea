@@ -31,11 +31,11 @@ $data['students'] = array();
 $students = rgrade_get_all_students($courseid);
 foreach ($students as $student) {
 	$sid = (int) $student->id;
-	
+
 	$data['students'][] = array(
 		'id' => $sid,
 		'lastname' => $student->lastname,
-		'firstname' => $student->firstname);	
+		'firstname' => $student->firstname);
 }
 
 $data['groups'] = array();

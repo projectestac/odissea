@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'assignment', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -136,7 +136,7 @@ $string['late'] = '{$a} tard';
 $string['maximumgrade'] = 'Nota màxima';
 $string['maximumsize'] = 'Mida màxima';
 $string['maxpublishstate'] = 'Màxima visibilitat de la entrada del blog abans de la data de venciment';
-$string['messageprovider:assignment_updates'] = 'Notificacions de tasques';
+$string['messageprovider:assignment_updates'] = 'Notificacions de tasques (2.2)';
 $string['modulename'] = 'Tasca (2.2)';
 $string['modulename_help'] = '<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod/assignment/icon.gif" />&nbsp;<b>Tasques</b></p>
 

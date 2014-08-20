@@ -40,6 +40,7 @@ class tool_odisseagtafsync_sync_form extends moodleform {
         $mform->addElement('header', 'settingsheader', get_string('manualsyncheader', 'tool_odisseagtafsync'));
         $mform->addElement('html', get_string('manualsyncdesc', 'tool_odisseagtafsync'));
         $mform->addElement('hidden', 'run', '1');
+        $mform->setType('run', PARAM_INT);
         $mform->addElement('submit', 'manualsync',
                 get_string('manualsync', 'tool_odisseagtafsync'));
 /*        $mform->addElement('button', 'manualsync',

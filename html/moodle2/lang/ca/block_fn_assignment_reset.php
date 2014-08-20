@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_fn_assignment_reset', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'block_fn_assignment_reset', language 'ca', branch 'MOODLE_25_STABLE'
  *
  * @package   block_fn_assignment_reset
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['assignfeedback_comments_enabled'] = 'Comentaris de la retroacció';
 $string['assignfeedback_file_enabled'] = 'Fitxers de la retroacció';
 $string['assignsubmission_comments_enabled'] = 'Comentaris de la tramesa';

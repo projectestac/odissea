@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'fr', branch 'MOODLE_24_STABLE'
+ * Strings for component 'cachestore_memcached', language 'fr', branch 'MOODLE_26_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ url.serveur.fr
 adresse_ip:port
 nom_serveur:port:pondération
 </pre>';
+$string['sessionhandlerconflict'] = 'Attention ! Une instance de memcached ({$a}) a été configurée de sorte à utiliser le même serveur memcached pour les sessions. La suppression de tous les caches aura pour conséquence que les sessions seront également effacées.';
 $string['testservers'] = 'Serveurs de test';
 $string['testservers_desc'] = 'Les serveurs de test sont utilisés pour des tests unitaires et des tests de performance. Les serveurs doivent être indiqués un par ligne et consistent de l\'adresse du serveur et optionnellement d\'un port et d\'une pondération.
 Si aucun port n\'est indiqué, le port par défaut (11211) est utilisé.';

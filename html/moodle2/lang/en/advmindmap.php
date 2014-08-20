@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'advmindmap', language 'en', branch 'MOODLE_24_STABLE'
+ * Strings for component 'advmindmap', language 'en', branch 'MOODLE_26_STABLE'
  *
  * @package   advmindmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advmindmap'] = 'Advance Mindmap';
+$string['advmindmap:addinstance'] = 'Add an advance mindmap instance';
 $string['advmindmapfieldset'] = 'Custom example fieldset';
 $string['advmindmap:givecomment'] = 'Give comment';
 $string['advmindmapintro'] = 'Advance Mindmap Intro';
@@ -81,6 +82,8 @@ $string['errorinvalidauthor'] = 'Mindmap author is not a valid user.';
 $string['errornostudentincourse'] = 'No students in the course.';
 $string['errornotingroup'] = 'This is a group mind map but you are not in any group nor you have permission to view other groups\' mind map.';
 $string['errornouseringroup'] = 'No users are in this group.';
+$string['eventmindmapunlocked'] = 'A mindmap has been unlocked.';
+$string['eventmindmapupdated'] = 'A mindmap has been updated.';
 $string['groupmembers'] = 'Group members';
 $string['groupname'] = 'Group name';
 $string['instances'] = 'Advance Mindmap Instances';
@@ -97,6 +100,7 @@ $string['numdummygroups'] = 'Number of dummy groups';
 $string['pluginadministration'] = 'Advance Mindmap administration';
 $string['pluginname'] = 'Advance Mindmap';
 $string['print'] = 'Print:';
+$string['removeinstances'] = 'Remove all mindmap instances';
 $string['smallconvas'] = 'Shrink Edit Area';
 $string['uneditable'] = 'Mindmap is not editable now!';
 $string['uniquelink'] = 'Link to this mindmap';

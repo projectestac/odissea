@@ -22,7 +22,7 @@ $PAGE->set_url(new moodle_url('/blocks/rgrade/rgrade_table.php', array('courseid
 
 $tshourly = "";
 
-// Init params 
+// Init params
 $groupid = optional_param('groupid', '', PARAM_NUMBER);
 
 $unitid = rgrade_last_units_with_grades($courseid, $bookid, $groupid);
@@ -44,7 +44,7 @@ $jspath = $CFG->wwwroot.'/blocks/rgrade/js';
 $PAGE->requires->js(new moodle_url($jspath.'/jquery-1.7.1.min.js'));
 $PAGE->requires->js(new moodle_url($jspath.'/jquery.ba-bbq.js'));
 $PAGE->requires->js(new moodle_url($jspath.'/handlebars-1.0.0.beta.6.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/i18n.js')); 
+$PAGE->requires->js(new moodle_url($jspath.'/i18n.js'));
 $PAGE->requires->js(new moodle_url($jspath.'/css.js'));
 $PAGE->requires->js(new moodle_url($jspath.'/jquery.cookie.js'));
 $PAGE->requires->js(new moodle_url($jspath.'/jquery.simplemodal.1.4.2.min.js'));
@@ -160,7 +160,7 @@ echo $OUTPUT->header();
 <div id="back_print_excel">
 <input id="submit_print" type="button" name="print" value="{{I18n "Print"}}" class="button print"/>
 <input id="submit_excel" type="button" name="export" value="{{I18n "Excel Export"}}" class="button excel"/>
-<a id="button_book" href="#view=book" title=""  class="button">{{I18n "Book data"}}</a>
+<a id="button_book" href="#view=book" title=""  class="button btn btn-info">{{I18n "Book data"}}</a>
 <input id="submit_back" type="button" name="back" value="{{I18n "Back"}}" class="button back"/>
 </div>
 
@@ -170,12 +170,12 @@ echo $OUTPUT->header();
 
 <script type="text/javascript">
 	var language = "<?php echo current_language();?>";
-	
+
 	var courseid = "<?php echo $courseid; ?>";
 	var bookid = "<?php echo $bookid; ?>";
 
 	var unitid = <?php echo json_encode($unitid); ?>;
-	var studentid = "<?php echo $studentid; ?>";  
+	var studentid = "<?php echo $studentid; ?>";
 </script>
 
 <div id="layer-grades"></div>
@@ -224,7 +224,7 @@ echo $OUTPUT->header();
 				<tr class="secondline">
 					<td class="icon">&nbsp;</td>
 					<td colspan="5" class="comments"><textarea name="comments">{{comments}}</textarea></td>
-				</tr>				
+				</tr>
 				</table>
 				</form>
 				{{/if}}
@@ -285,7 +285,7 @@ echo $OUTPUT->header();
 			<em>{{#if unit}}<span class="activity {{activityType content.code}}">{{I18n "Activity"}}</span>{{else}}{{I18n "Unit"}}{{/if}}</em>
 			<span class="title">{{content.name}}</span>
 		</div>
-	{{/if}}	
+	{{/if}}
 	<hr/>
 	{{#if content}}<div class="code">{{content.code}}</div>{{/if}}
 </div>
@@ -313,7 +313,7 @@ echo $OUTPUT->header();
 		{{/if}}
 		{{#if content}}
 			<div class="content"><em>{{I18n "Unit"}}</em> <span class="title">{{content.name}}</span></div>
-		{{/if}}		
+		{{/if}}
 	</div>
 
 	{{#if contentUserData}}
@@ -325,7 +325,7 @@ echo $OUTPUT->header();
 		<div class="grades-unit-{{content.id}}">{{> contentGrades}}</div>
 	{{/if}}
 
-	
+
 	{{#if activities}}
 	<div class="subtitle activities"><em>{{I18n "Activities"}}</em></div>
 	<div class="grades">
@@ -422,7 +422,7 @@ echo $OUTPUT->header();
 				<div class="unit-activity">
 					<div class="titol-code clearfix">
 						<h2><span class="activity {{activityType code}}">{{name}}</h2>
-						{{#if grades.score}}<div class="aggregate"><em>{{I18n ../../../../scoreid}}</em> <strong>{{formatScore grades.score}}</strong></div>{{/if}}			
+						{{#if grades.score}}<div class="aggregate"><em>{{I18n ../../../../scoreid}}</em> <strong>{{formatScore grades.score}}</strong></div>{{/if}}
 					</div>
 					<em class="code">{{code}}</em>
 					{{> grades}}
@@ -473,7 +473,7 @@ echo $OUTPUT->header();
 
 <div id="layer-unit_message">
 <span><?php echo rgrade_get_string('alert_units_table');?></span>
-<form id="form_hide_unit_msg" action="#"> 
+<form id="form_hide_unit_msg" action="#">
 	<input type="checkbox" id="hide_msg" value="1" name="hide_msg"/>
 	<label for="hide_msg"><strong><?php echo rgrade_get_string('alert_units_table_hide');?></strong></label>
 	<div class="container-button">

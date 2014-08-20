@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ru', branch 'MOODLE_24_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'ru', branch 'MOODLE_26_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,4 +41,4 @@ $string['pluginname'] = 'Краткий ответ';
 $string['pluginnameadding'] = 'Добавление вопроса «Короткий ответ»';
 $string['pluginnameediting'] = 'Редактирование вопроса «Короткий ответ».';
 $string['pluginname_help'] = 'В качестве ответа на вопрос (который может включать изображение) студент впечатывает одно слово или короткую фразу. Можно указать несколько возможных правильных вариантов ответа, причем каждый с разной оценкой. Если выбран параметр «Учитывать регистр», то студент получит разное количество баллов за ответы типа «Слово» и типа «слово».';
-$string['pluginnamesummary'] = 'Позволяет впечатывать в качестве ответа одно или несколько слов. Ответы оцениваются путем сравнения с разными образцами ответов, в которых могут использоваться подстановочные знаки.';
+$string['pluginnamesummary'] = 'Позволяет вводить в качестве ответа одно или несколько слов. Ответы оцениваются путем сравнения с разными образцами ответов, в которых могут использоваться подстановочные знаки.';

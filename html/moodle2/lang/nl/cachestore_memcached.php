@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'nl', branch 'MOODLE_24_STABLE'
+ * Strings for component 'cachestore_memcached', language 'nl', branch 'MOODLE_26_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,9 +48,11 @@ $string['serialiser_php'] = 'De standaard PHP serialiser.';
 $string['servers'] = 'Servers';
 $string['servers_help'] = 'Dit stelt de servers in die door de memcached adaptor gebruikt zouden moeten worden. Servers moeten één per lijn gedefinieerd worden en moeten bestaan uit een serveradres en optioneel een poort en een weging.
 Indien er geen poort wordt opgegeven, dan wordt de standaardpoort (11211) gebruikt.';
+$string['sessionhandlerconflict'] = 'Waarschuwing: een memcache instantie ({$a}) is geconfigureerd om dezelfde memcached server te gebruiken voor sessies. Het leegmaken van alle caches zal er voor zorgen dat ook sessies worden verwijderd.';
 $string['testservers'] = 'Testservers';
 $string['testservers_desc'] = 'De testservers worden gebruikt voor unit tests en voor performantietests. Het is volledig optioneel om testservers op te zetten. Servers moeten éé per regel gedefinieerd worden en bestaan uit een serveradres en optioneel een poort en een weging.
 Als er geen poort wordt opgegeven, dan wordt de standaardpoort (11211) gebruikt.';
 $string['usecompression'] = 'Gebruik compressie';
 $string['usecompression_help'] = 'Schakelt compressie in of uit. Indien ingeschakeld worden waarden groter dan een bepaalde drempelwaarde (op dit moment 100 bytes) gecomprimeerd tijdens de opslag en transparant gedecomprimeerd wanneer ze opgevraagd worden.';
 $string['useserialiser'] = 'Gebruik serialiser';
+$string['useserialiser_help'] = 'Specificeert de serializer te gebruiken om niet-scalaire waarden te serialiseren. De geldige serializers zijn Memcached :: SERIALIZER_PHP of Memcached :: SERIALIZER_IGBINARY. Deze laatste wordt alleen ondersteund als memcached is geconfigureerd met - enable-memcached-igbinary optie en als de igbinary extensie is geladen.';

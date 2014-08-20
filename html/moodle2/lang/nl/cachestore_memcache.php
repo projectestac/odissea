@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'nl', branch 'MOODLE_24_STABLE'
+ * Strings for component 'cachestore_memcache', language 'nl', branch 'MOODLE_26_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ server.url.com
 ipadres:poort
 servernaam:poort:weging
 </pre>';
+$string['sessionhandlerconflict'] = 'Waarschuwing: een memcache instantie ({$a}) is geconfigureerd om dezelfde memcached server te gebruiken voor sessies. Het leegmaken van alle caches zal er voor zorgen dat ook sessies worden verwijderd.';
 $string['testservers'] = 'Testservers';
 $string['testservers_desc'] = 'De testservers worden gebruikt voor unit tests en voor performatietests. Het opstellen van testservers is helemaal optioneel. Servers moeten één per regel gedefiniëerd worden en moeten een serveradres en optioneel een poort en weging bevatten.
 Als er geen poort opgegeven wordt, dan wordt de standaardpoort (11211) gebruikt.';

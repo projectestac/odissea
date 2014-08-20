@@ -38,14 +38,16 @@ class tool_odisseagtafsync_move_form extends moodleform {
         $mform = $this->_form;
 
         $mform->disable_form_change_checker();
-        
+
         $mform->addElement('header', 'settingsheader', get_string('movefileheader', 'tool_odisseagtafsync'));
         $mform->addElement('html', get_string('movefiledesc', 'tool_odisseagtafsync'));
         $mform->addElement('hidden', 'run', '2');
+        $mform->setType('run', PARAM_INT);
         $mform->addElement('text', 'f',
                 get_string('movefilename', 'tool_odisseagtafsync'));
+        $mform->setType('f', PARAM_TEXT);
         $mform->addElement('submit', 'movefile',
-                get_string('movefile', 'tool_odisseagtafsync')); /*, 
+                get_string('movefile', 'tool_odisseagtafsync')); /*,
                 array('onclick'=>'javascript:document.location="synchronizer.php?run=2&f="+document.getElementById("id_movefilename").value;'));*/
     }
 }

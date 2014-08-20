@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_cmanager', language 'fr', branch 'MOODLE_24_STABLE'
+ * Strings for component 'block_cmanager', language 'fr', branch 'MOODLE_26_STABLE'
  *
  * @package   block_cmanager
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -265,7 +265,6 @@ $string['sureDeleteAll'] = 'Voulez-vous vraiment supprimer l\'historique au comp
 $string['totalRequests'] = 'Nombre total de demandes';
 $string['update'] = 'Mettre à jour';
 $string['view'] = 'Voir';
-$string['viewMore'] = 'Voir plus';
 $string['viewsummary'] = 'Voir le résumé';
 $string['withselectedrequests'] = 'avec les demandes selectionnées';
 $string['yesDeleteRecords'] = 'Oui, effacer';

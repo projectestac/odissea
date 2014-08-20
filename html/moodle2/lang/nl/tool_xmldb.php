@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_24_STABLE'
+ * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_26_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,6 +121,8 @@ $string['fieldsusedinindex'] = 'Dit veld wordt gebruikt als index';
 $string['fieldsusedinkey'] = 'Dit veld wordt als sleutel gebruikt.';
 $string['filemodifiedoutfromeditor'] = 'Waarschuwing: het bestand is lokaal gewijzigd met de XMLDB Editor. Bewaren zal locale wijzigingen overschrijven';
 $string['filenotwriteable'] = 'Bestand niet beschrijfbaar';
+$string['fkunknownfield'] = 'Foreign key {$a->keyname} op tabel {$a->tablename} wijst op een niet-bestaand veld {$a->reffield} in tabel waarnaar wordt verwezen {$a->reftable}.';
+$string['fkunknowntable'] = 'Foreign key {$a->keyname} op tabel {$a->tablename} wijst op een niet-bestaande tabel {$a->reftable}.';
 $string['fkviolationdetails'] = 'Foreign key {$a->keyname} op tabel {$a->tablename} is geschonden door {$a->numviolations} van {$a->numrows} rijen.';
 $string['float2numbernote'] = 'Opmerking: hoewel "float"-velden volledig ondersteund worden door XMLDB, is het aanbevolen om in de plaats daarvan te migreren naar "number"-velden';
 $string['floatincorrectdecimals'] = 'Fout aantal decimalen voor float veld';
@@ -210,8 +212,8 @@ $string['wronglengthforenum'] = 'Lengte van enum veld fout';
 $string['wrongnumberofreffields'] = 'Fout aantal referentievelden';
 $string['wrongoraclesemantics'] = 'Verkeerde Oracle BYTE semantiek gevonden';
 $string['wrongreservedwords'] = 'Gebruikte gereserveerde woorden<br />(merk op dat tabelnamen niet belangrijk zijn als je *CFG->prefix gebruikt)';
-$string['yesmissingindexesfound'] = 'Er zijn ontbrekende indexen gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface om de indexen aan te maken. <br /><br />Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer ontbrekende indexen gevonden kunnen worden.';
-$string['yeswrongdefaultsfound'] = 'Er zijn inconsistenties gevonden in je databank. Hier zijn de juiste standaardwaarden en de nodige SQL-expressies om uit te voeren in je favoriete SQL-interface om ze allemaal te herstellen (vergeet niet je databank te back-uppen voor je dddat doet).<br /><br />
-Daarna is het ten zeerste aangeraden om dit script nogmaals te laten lopen om te zoeken naar meer inconsistenties.';
-$string['yeswrongintsfound'] = 'Er zijn foute integers gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface ze te herstellen. <br /><br />Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer foute integers gevonden kunnen worden.';
-$string['yeswrongoraclesemanticsfound'] = 'Er zijn Oracle kolommen die BYTE semantics gebruiken gevonden in je databank. Hier zijn de details en de nodige SQL om uit te voeren met je favoriete SQL interface om ze allemaal te herstellen. <br /><br />Nadat je dit gedaan hebt, kun je dit best nog eens uitvoeren om te controleren of er niet meer foute semantics gevonden kunnen worden.';
+$string['yesmissingindexesfound'] = '<p>Er zijn ontbrekende indexen gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface om de indexen aan te maken.</p><p>Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer ontbrekende indexen gevonden kunnen worden.</p>';
+$string['yeswrongdefaultsfound'] = '<p>Er zijn inconsistenties gevonden in je databank. Hier zijn de juiste standaardwaarden en de nodige SQL-expressies om uit te voeren in je favoriete SQL-interface om ze allemaal te herstellen (vergeet niet je databank te back-uppen voor je dddat doet).</p><p>
+Daarna is het ten zeerste aangeraden om dit script nogmaals te laten lopen om te zoeken naar meer inconsistenties.<p>';
+$string['yeswrongintsfound'] = '<p>Er zijn foute integers gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface ze te herstellen.</p><p>Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer foute integers gevonden kunnen worden.<p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>Er zijn Oracle kolommen die BYTE semantics gebruiken gevonden in je databank. Hier zijn de details en de nodige SQL om uit te voeren met je favoriete SQL interface om ze allemaal te herstellen. </p><p>Nadat je dit gedaan hebt, kun je dit best nog eens uitvoeren om te controleren of er niet meer foute semantics gevonden kunnen worden.<p>';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'sv', branch 'MOODLE_24_STABLE'
+ * Strings for component 'checklist', language 'sv', branch 'MOODLE_26_STABLE'
  *
  * @package   checklist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,6 +80,11 @@ $string['emailoncompletebodyown'] = 'Du har slutfört checklista &quot;{$a->chec
 $string['emailoncomplete_help'] = 'När en checklista är slutfört skickas ett meddelande till alla lärare i kursen. En administratör kan kontrollera vem som får detta e-post med möjligheten "mod:checklista/emailoncomplete\' -. Även "lärare" och icke-redigerinlärarna har möjlighet till detta.';
 $string['emailoncompletesubject'] = 'Användaren har slutfört checklista';
 $string['emailoncompletesubjectown'] = 'Du har slutfört checklista &quot;{$a->checklist}';
+$string['eventchecklistcomplete'] = 'Checklista komplett';
+$string['eventeditpageviewed'] = 'Redigeringsläge visas';
+$string['eventreportviewed'] = 'Rapport visas';
+$string['eventstudentchecksupdated'] = 'Studentmarkeringar uppdaterad';
+$string['eventteacherchecksupdated'] = 'Lärarmarkeringar uppdaterad';
 $string['export'] = 'Exportera element';
 $string['forceupdate'] = 'Uppdatera markeringar för all automatiska element';
 $string['gradetocomplete'] = 'Betyg för slutförandet';
@@ -132,7 +137,9 @@ $string['teachermarkyes'] = 'Lärare påstår att du har slutfört detta';
 $string['teachernoteditcheck'] = 'Endast student';
 $string['teacheroverwritecheck'] = 'Endast lärare';
 $string['theme'] = 'Checklist visningstema';
+$string['togglecolumn'] = 'Markera kolumn';
 $string['toggledates'] = 'Växla namn och datum';
+$string['togglerow'] = 'Markera rad';
 $string['unindentitem'] = 'Unindent item';
 $string['updatecompletescore'] = 'Spara betyg när slutfört';
 $string['updateitem'] = 'Uppdatera/Redigera';

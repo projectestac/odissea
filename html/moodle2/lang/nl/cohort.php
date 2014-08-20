@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'nl', branch 'MOODLE_24_STABLE'
+ * Strings for component 'cohort', language 'nl', branch 'MOODLE_26_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,7 @@ $string['potusers'] = 'Mogelijke gebruikers';
 $string['potusersmatching'] = 'Mogelijk overeenkomende gebruikers';
 $string['removeuserwarning'] = 'Het verwijderen van gebruikers van een site groep kan gebruikers afmelden van meerdere cursussen waarbij gebruikersinstellingen, cijfers, groepslidmaatschap en andere gebruikersinformatie van de betreffende cursussen verwijderd wordt';
 $string['search'] = 'Zoek';
-$string['searchcohort'] = 'Zoek site groep';
+$string['searchcohort'] = 'Zoek site-groep';
 $string['selectfromcohort'] = 'Selecteer site groepsleden';
 $string['unknowncohort'] = 'Onbekende site groep ({$a})';
 $string['useradded'] = 'Gebruiker toegevoegd aan cohort "{$a}"';

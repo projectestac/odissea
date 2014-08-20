@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_description', language 'ru', branch 'MOODLE_24_STABLE'
+ * Strings for component 'qtype_description', language 'ru', branch 'MOODLE_26_STABLE'
  *
  * @package   qtype_description
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,4 @@ $string['pluginname_help'] = 'Тип вопроса Описание на сам
 
 Текст отображается и при прохождении теста, и на странице просмотра. Может использоваться общий отзыв, который  отображается только на странице просмотра. ';
 $string['pluginnamesummary'] = 'Это на самом деле не вопрос.
-Используется для добавления инструкций, рубрик или другой информации к элементу курса, подобно элементу «Пояснение» на странице курса.';
+Используется для добавления инструкций, рубрик или другого содержимого в тесте. Подобен ресурсу «Пояснение» на странице курса.';

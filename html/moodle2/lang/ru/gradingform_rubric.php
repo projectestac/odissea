@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ru', branch 'MOODLE_24_STABLE'
+ * Strings for component 'gradingform_rubric', language 'ru', branch 'MOODLE_26_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['criteriondelete'] = 'Удалить критерий';
 $string['criterionempty'] = 'Редактировать критерий';
 $string['criterionmovedown'] = 'Переместить вниз';
 $string['criterionmoveup'] = 'Переместить вверх';
-$string['definerubric'] = 'Определить рубрики';
+$string['definerubric'] = 'Определить рубрику';
 $string['description'] = 'Описание';
 $string['enableremarks'] = 'Разрешить оценивающему добавлять текстовые примечания к каждому критерию';
 $string['err_mintwolevels'] = 'Каждый критерий  должен содержать не менее двух уровней';

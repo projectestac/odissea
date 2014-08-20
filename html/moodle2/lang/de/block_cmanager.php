@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_cmanager', language 'de', branch 'MOODLE_24_STABLE'
+ * Strings for component 'block_cmanager', language 'de', branch 'MOODLE_26_STABLE'
  *
  * @package   block_cmanager
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -291,7 +291,6 @@ $string['sureOnlyArch'] = 'Sind Sie sicher, dass Sie nur alle archivierten Eintr
 $string['totalRequests'] = 'Gesamte Anzahl von Anfragen';
 $string['update'] = 'Aktualisieren';
 $string['view'] = 'Ansicht';
-$string['viewMore'] = 'Mehr ansehen';
 $string['viewsummary'] = 'Zusammenfassung ansehen';
 $string['withselectedrequests'] = 'mit ausgewählten Anfragen';
 $string['yesDeleteRecords'] = 'Ja, löschen!';
