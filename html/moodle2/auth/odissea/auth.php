@@ -53,7 +53,7 @@ class auth_plugin_odissea extends auth_plugin_base {
             print_error('auth_odissea_no_schoolcode', 'auth_odissea');
             return false;
         }
-        
+
         if (!function_exists('ldap_bind')) {
             print_error('auth_ldapnotinstalled', 'auth_ldap');
             return false;
@@ -75,9 +75,14 @@ class auth_plugin_odissea extends auth_plugin_base {
      *
      * @param type $username
      * @param type $password
-     * @return array($ldapconnection, $userdn, $nif_attribute) or FALSE if the user is not found 
+     * @return array($ldapconnection, $userdn, $nif_attribute) or FALSE if the user is not found
      */
-    function get_userdn($username, $password) {
+    function get_userdn($username, $password = false) {
+        // Hack to solve the lack of password on get_userinfo
+        global $auth_odissea_pass;
+        if($password) $auth_odissea_pass = $password;
+        else $password = $auth_odissea_pass;
+
         $ldapconnection = $this->get_xtecconnection($username, $password);
         $user_dn = $this->ldap_find_userdn($ldapconnection, $username);
 
@@ -92,7 +97,7 @@ class auth_plugin_odissea extends auth_plugin_base {
             }
             $user_dn = $this->ldap_find_userdn($ldapconnection, $gicar_id, $this->config->gicar_contexts, $this->config->gicar_user_attribute);
             if (!$user_dn) {
-                // If user_dn is empty, user does not exist 
+                // If user_dn is empty, user does not exist
                 $this->ldap_close();
                 return false;
             } else {
@@ -106,7 +111,7 @@ class auth_plugin_odissea extends auth_plugin_base {
 
     /**
      * Get ldapconnection using specified username and password as bind settings
-     * @return resource LDAP-XTEC connection 
+     * @return resource LDAP-XTEC connection
      */
     function get_xtecconnection($username, $password) {
         $bind_dn = $this->config->user_attribute . '=' . $username . ',' . $this->config->bind_dn;
@@ -117,7 +122,7 @@ class auth_plugin_odissea extends auth_plugin_base {
 
     /**
      * Get ldapconnection using GICAR bind settings
-     * @return resource LDAP-GICAR connection 
+     * @return resource LDAP-GICAR connection
      */
     function get_gicarconnection() {
         $ldapconnection = $this->ldap_connect($this->config->gicar_host_url, $this->config->gicar_ldap_version, $this->config->gicar_bind_dn, $this->config->gicar_bind_pw);
@@ -127,16 +132,15 @@ class auth_plugin_odissea extends auth_plugin_base {
 
     /**
      * Reads user information from external authentication server and returns it in array()
-     * Function should return all information available. 
+     * Function should return all information available.
      *
      * @param string $username username
      *
      * @return mixed array with no magic quotes or false on error
      */
-    function get_userinfo($username, $password = '') {
+    function get_userinfo($username, $notused = false) {
         // Trying to find specified user in LDAP-XTEC and LDAP-GICAR
-        list($ldapconnection, $ldapuserdn, $nif_attribute) = $this->get_userdn($username, $password);
-
+        list($ldapconnection, $ldapuserdn, $nif_attribute) = $this->get_userdn($username);
         $search_attribs = array();
         $attrmap = $this->odissea_attributes($nif_attribute);
         foreach ($attrmap as $key => $values) {
@@ -428,8 +432,8 @@ class auth_plugin_odissea extends auth_plugin_base {
      *
      * @param resource $ldapconnection a valid LDAP connection
      * @param string $extusername the username to search (in external LDAP encoding, no db slashes)
-     * @param string $contexts 
-     * @param string $user_attribute 
+     * @param string $contexts
+     * @param string $user_attribute
      * @return mixed the user dn (external LDAP encoding) or false
      */
     function ldap_find_userdn($ldapconnection, $extusername, $contexts, $user_attribute) {
