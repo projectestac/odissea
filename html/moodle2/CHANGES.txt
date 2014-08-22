@@ -3,6 +3,22 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 14.08.19-14.08.26 codename mgrau
+---------------------------------------------------------------------------------------
+
+MOODLE 2
+- Moodle 2 Updated to 2.6.4 version
+- Fixed CLOB error with events when restoring courses with events
+- Updated version of all thirdparty modules
+- Deleted support for rscorm activities
+- Renewed XTEC2 theme with layout settings, configuration menus and bootstrap support
+- Added Google Auth2 Auth method
+
+
+Time to say Goodbyes...
+-----------------------
+MOODLE Deleted 1.9 version.
+A memory lasts forever, never will it die... true friends stay together and never say goodbye...
 
 Changes 14.07.04
 ---------------------------------------------------------------------------------------
