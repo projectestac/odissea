@@ -36,14 +36,30 @@ $string['top_menus_description'] = 'Mostra els menús de Navegació i Configurac
 
 $string['disabled'] = 'Desactivat';
 
-$string['layout_settings'] = 'Paàmetres de disposició';
-$string['footnote'] = 'Nota a peu de pàgina';
-$string['footnotedesc'] = 'Qualsevol cosa que escriviu en aquesta àrea de text es mostrarà al peu de pàgina al vostre lloc Moodle.';
+$string['layout_settings'] = 'Paràmetres de disposició';
 $string['block_layout'] = 'Disposició dels blocs';
 $string['without_blocks'] = 'Sense blocs';
 $string['blocks_left'] = 'Tots els blocs a l\'esquerra';
 $string['blocks_right'] = 'Tots els blocs a la dreta';
 $string['blocks_both'] = 'Blocs als dos laterals (No aplica a tot el lloc)';
+$string['showhideblocks'] = 'Mostra/Amaga blocs';
+
+$string['footer_settings'] = 'Paràmetres del peu de pàgina';
+$string['footnote'] = 'Nota a peu de pàgina';
+$string['footnotedesc'] = 'Qualsevol cosa que escriviu en aquesta àrea de text es mostrarà al peu de pàgina al vostre lloc Moodle.';
+$string['nodes'] = 'Mostra l\'enllaç a Nodes';
+$string['nodesdesc'] = 'Mostra una icona enllaçada a la vostra plataforma Nodes al peu.';
+$string['intranet'] = 'Mostra l\'enllaç a Intranet';
+$string['intranetdesc'] = 'Mostra una icona enllaçada a la vostra plataforma Intranet al peu.';
+$string['facebook'] = 'Facebook URL';
+$string['twitter'] = 'Twitter URL';
+$string['googleplus'] = 'Google Plus URL';
+$string['instagram'] = 'Instagram URL';
+$string['flickr'] = 'Flickr URL';
+$string['linkedin'] = 'LinkedIn URL';
+$string['pinterest'] = 'Pinterest URL';
+$string['youtube'] = 'Youtube URL';
+$string['urldesc'] = 'Si el camp no està buit, es mostra una icona enllaçada a la URL escrita al peu.';
 
 $string['color_settings'] = 'Paràmetres de color';
 $string['colorset'] = 'Combinació de colors';
@@ -59,9 +75,9 @@ $string['nostalgia'] = 'Nostàlgia'; //'Nostàlgia'
 
 
 $string['color2'] = 'Fons de les capçaleres dels blocs';
-$string['color3'] = 'Color de la lletra de les capçaleres dels blocs';
 $string['color4'] = 'Color de la lletra dels títols';
 $string['color5'] = 'Color de la lletra dels enllaços';
+$string['color_warning'] = 'La luminància del color actual és de {$a}.<br> Per raons d\'accessibilitat, aquest valor cal que sigui inferior a 135, en cas contrari es farà servir el color negre.';
 
 $string['font_settings'] = 'Paràmetres de font';
 $string['fontsize'] = 'Mida de la lletra';

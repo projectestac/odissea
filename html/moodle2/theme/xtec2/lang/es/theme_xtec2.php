@@ -37,13 +37,29 @@ $string['top_menus_description'] = 'Mostrar los menús de Navegación y Parámet
 $string['disabled'] = 'Desactivado';
 
 $string['layout_settings'] = 'Parámetros de disposición';
-$string['footnote'] = 'Nota a pie de página';
-$string['footnotedesc'] = 'Lo que añada en esta área de texto se mostrará en el pie de página de todo su sitio Moodle.';
 $string['block_layout'] = 'Disposición de los bloques';
 $string['without_blocks'] = 'Sin bloques';
 $string['blocks_left'] = 'Todos los bloques a la izquierda';
 $string['blocks_right'] = 'Todos los bloques a la derecha';
 $string['blocks_both'] = 'Bloques en los dos laterales (no aplica a ltodo el sitio)';
+$string['showhideblocks'] = 'Mostrar/Ocultar bloques';
+
+$string['footer_settings'] = 'Parámetros del pie de página';
+$string['footnote'] = 'Nota a pie de página';
+$string['footnotedesc'] = 'Lo que añada en esta área de texto se mostrará en el pie de página de todo su sitio Moodle.';
+$string['nodes'] = 'Mostrar enlace a Nodes';
+$string['nodesdesc'] = 'Muestra un icono con un enlace a su plataforma Nodes en el pie.';
+$string['intranet'] = 'Mostrar enlace a Intranet';
+$string['intranetdesc'] = 'Muestra un icono con un enlace a su plataforma Intranet en el pie.';
+$string['facebook'] = 'Facebook URL';
+$string['twitter'] = 'Twitter URL';
+$string['googleplus'] = 'Google Plus URL';
+$string['instagram'] = 'Instagram URL';
+$string['flickr'] = 'Flickr URL';
+$string['linkedin'] = 'LinkedIn URL';
+$string['pinterest'] = 'Pinterest URL';
+$string['youtube'] = 'Youtube URL';
+$string['urldesc'] = 'Si este campo no está vacío, muestra un icono enlazando a la URL escrita en el pie.';
 
 $string['color_settings'] = 'Parámetros de color';
 $string['colorset'] = 'Combinación de colores';
@@ -59,9 +75,9 @@ $string['nostalgia'] = 'Nostálgia'; //'Nostàlgia'
 
 
 $string['color2'] = 'Fondo de la cabecera de los bloques';
-$string['color3'] = 'Color de la fuente de la cabecera de los bloques';
 $string['color4'] = 'Color de la fuente delos títulos';
 $string['color5'] = 'Color de los enlaces';
+$string['color_warning'] = 'La luminancia del color actual es de {$a}.<br> Por razones de accesibilidad, este valor debe ser inferior a 135, en caso contrario se usará el color negro.';
 
 $string['font_settings'] = 'Parámetros de fuente';
 $string['fontsize'] = 'Tamaño de la fuente';

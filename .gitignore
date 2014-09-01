@@ -11,6 +11,7 @@ html/moodle2/local/agora/muc/cacheconfig_form.php
 html/moodle2/local/agora/muc/cacheconfig_int.php
 html/moodle2/local/agora/muc/cacheconfig_pro.php
 html/moodle2/local/agora/muc/cacheconfig_pro_odissea.php
+html/moodle2/sftp-config.json
 moodledata*/*
 .Trash*/*
 nbproject

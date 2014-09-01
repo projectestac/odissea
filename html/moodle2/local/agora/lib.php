@@ -217,7 +217,7 @@ function is_rush_hour() {
  **/
 function is_enabled_in_agora ($mod){
     if (is_agora()){
-		
+
         // Only enabled in marsupial Moodles
         if (!is_marsupial() && ($mod=='rcontent' || $mod=='rscorm' || $mod=='atria' || $mod=='rcommon' || $mod=='my_books' || $mod=='rgrade')){
             return false;
@@ -242,16 +242,18 @@ function agora_course_print_navlinks($course, $section = 0){
     echo '<div class="agora_navbar">';
     //Show reports
     $reportavailable = false;
-    if (has_capability('moodle/grade:viewall', $context)) {
-        $reportavailable = true;
-    } else if (!empty($course->showgrades)) {
-        if ($reports = core_component::get_plugin_list('gradereport')) {     // Get all installed reports
-            arsort($reports); // user is last, we want to test it first
-            foreach ($reports as $plugin => $pluginname) {
-                if (has_capability('gradereport/' . $plugin . ':view', $context)) {
-                    //stop when the first visible plugin is found
-                    $reportavailable = true;
-                    break;
+    if(!empty($course->showgrades)){
+        if (has_capability('moodle/grade:viewall', $context)) {
+            $reportavailable = true;
+        } else {
+            if ($reports = core_component::get_plugin_list('gradereport')) {     // Get all installed reports
+                arsort($reports); // user is last, we want to test it first
+                foreach ($reports as $plugin => $pluginname) {
+                    if (has_capability('gradereport/' . $plugin . ':view', $context)) {
+                        //stop when the first visible plugin is found
+                        $reportavailable = true;
+                        break;
+                    }
                 }
             }
         }
@@ -261,4 +263,29 @@ function agora_course_print_navlinks($course, $section = 0){
         echo html_writer::link($CFG->wwwroot.'/grade/report/index.php?id=' . $course->id ,$icon.get_string('grades'));
     }
     echo '</div>';
+}
+
+function local_agora_extends_navigation(global_navigation $navigation){
+    global $DB, $CFG;
+    if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', array('client_id'=>'nodes'))) {
+        $nodes_url = $CFG->wwwroot.'/local/agora/login_service?service=nodes';
+        $navigation->add(get_string('login_nodes','local_agora'), $nodes_url, navigation_node::TYPE_SETTING, null, get_string('login_nodes','local_agora'));
+        //$message->icon = 'i/email';
+
+    }
+}
+
+function is_service_enabled($service){
+    if(!is_agora()) return false;
+
+    global $school_info;
+    return isset($school_info['id_'.$service]) && !empty($school_info['id_'.$service]);
+}
+
+function get_service_url($service){
+    global $CFG;
+    if(is_service_enabled($service)){
+        return $CFG->wwwroot.'/'.$service.'/';
+    }
+    return false;
 }
