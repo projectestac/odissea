@@ -3,10 +3,29 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
-Changes 14.08.19-14.08.26 codename mgrau
+Changes 14.09.08
 ---------------------------------------------------------------------------------------
 
-MOODLE 2
+- Some errors solved in marsupial, theme and jclic
+- Google Oauth2 module translated
+- Enabled cron CLI for testing
+
+Changes 14.09.03
+---------------------------------------------------------------------------------------
+
+- Font awesome icons
+- New button to toggle block visibility
+- Now submit buttons uses main background color
+- Deleted foreground color over navigation chooser to avoid accessibility problems
+- Now text colors must have a correct luminancy to avoid accessibility problems
+- New footer settings to put social icons and links
+- Added brand icons to footer for mobile layout
+- Improved Xtec2 styles
+- Updated Wiris Quizzes and Wiris
+
+Changes 14.08.19 codename mgrau
+---------------------------------------------------------------------------------------
+
 - Moodle 2 Updated to 2.6.4 version
 - Fixed CLOB error with events when restoring courses with events
 - Updated version of all thirdparty modules
