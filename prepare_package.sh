@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2
+#Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2/
 
 version=14.08.20
 
 if [ $# == 0 ]; then
 	echo "Script per actualitzar els espais Moodle d'Agora"
 	echo "Forma d'ús: ./prepare_package.sh [path_origen]"
-	echo "Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2"
+	echo "Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2/"
 	exit
 fi
 
@@ -16,6 +16,8 @@ cp -Rp $1 html/moodle2
 
 cp html/moodle2_old/config.php html/moodle2/config.php
 cp html/moodle2_old/.htaccess html/moodle2/.htaccess
+cp html/moodle2_old/config-works-dist.php html/moodle2/config-works-dist.php
+cp html/moodle2_old/works.php html/moodle2/works.php
 cp html/moodle2_old/config-restricted.php html/moodle2/config-restricted.php
 cp html/moodle2_old/theme/xtec2/pix/favicon.ico html/moodle2/theme/xtec2/pix/favicon.ico
 cp html/moodle2_old/theme/xtec2/pix/logo_main.png html/moodle2/theme/xtec2/pix/logo_main.png
@@ -35,3 +37,4 @@ rm html/moodle2/config_oracle.php
 rm html/moodle2/theme/xtec2/pix/logo_main.gif
 
 rm -Rf html/moodle2_old
+

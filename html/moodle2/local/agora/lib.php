@@ -129,17 +129,18 @@ function run_cli($command, $output_file = false, $append = true, $background = t
 
 //Executes a cron via CLI
 function run_cli_cron($background = true){
-    global $CFG;
+    global $CFG, $DB;
 
     $command = $CFG->admin.'/cli/cron.php';
 
     $output_file = false;
+    $savecronlog = $DB->get_field('config', 'value', array('name'=>'savecronlog'));
     // $CFG->savecronlog must be saved on DB
-    if(isset($CFG->savecronlog) && !empty($CFG->savecronlog)) {
+    if(isset($savecronlog) && !empty($savecronlog)) {
         if(isset($CFG->usu1repofiles) && !empty($CFG->usu1repofiles)) {
             $output_dir = $CFG->usu1repofiles.'/crons';
         } else {
-            $output_dir = $CFG->dataroot.'/crons';
+            $output_dir = $CFG->dataroot.'/repository/files/crons';
         }
         $result = make_writable_directory($output_dir, false);
         if($result){
@@ -268,7 +269,7 @@ function agora_course_print_navlinks($course, $section = 0){
 function local_agora_extends_navigation(global_navigation $navigation){
     global $DB, $CFG;
     if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', array('client_id'=>'nodes'))) {
-        $nodes_url = $CFG->wwwroot.'/local/agora/login_service?service=nodes';
+        $nodes_url = $CFG->wwwroot.'/local/agora/login_service.php?service=nodes';
         $navigation->add(get_string('login_nodes','local_agora'), $nodes_url, navigation_node::TYPE_SETTING, null, get_string('login_nodes','local_agora'));
         //$message->icon = 'i/email';
 
@@ -285,7 +286,7 @@ function is_service_enabled($service){
 function get_service_url($service){
     global $CFG;
     if(is_service_enabled($service)){
-        return $CFG->wwwroot.'/'.$service.'/';
+        return $CFG->wwwroot.'/../'.$service.'/';
     }
     return false;
 }
