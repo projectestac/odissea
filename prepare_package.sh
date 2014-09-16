@@ -2,7 +2,7 @@
 
 #Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2/
 
-version=14.08.20
+version=14.09.16
 
 if [ $# == 0 ]; then
 	echo "Script per actualitzar els espais Moodle d'Agora"
@@ -32,8 +32,8 @@ rm html/moodle2/index_iw.php
 rm html/moodle2/settings.php
 rm html/moodle2/site-config.php
 rm html/moodle2/config-multi.php
-rm html/moodle2/config_mysql.php
-rm html/moodle2/config_oracle.php
+rm html/moodle2/config-mysql.php
+rm html/moodle2/config-oracle.php
 rm html/moodle2/theme/xtec2/pix/logo_main.gif
 
 rm -Rf html/moodle2_old
