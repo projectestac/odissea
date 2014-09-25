@@ -15,6 +15,7 @@ mv html/moodle2 html/moodle2_old
 cp -Rp $1 html/moodle2
 
 cp html/moodle2_old/config.php html/moodle2/config.php
+cp html/moodle2_old/settings.php html/moodle2/settings.php
 cp html/moodle2_old/.htaccess html/moodle2/.htaccess
 cp html/moodle2_old/config-works-dist.php html/moodle2/config-works-dist.php
 cp html/moodle2_old/works.php html/moodle2/works.php
