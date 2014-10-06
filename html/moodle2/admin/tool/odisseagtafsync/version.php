@@ -27,7 +27,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013082700;
+$plugin->version   = 2014100603;
 $plugin->requires  = 2012112900;
 $plugin->component = 'tool_odisseagtafsync';
-$plugin->cron      = 8*60*60;  // Period for cron to check this module (secs)
+$plugin->cron      = 4*60*60;  // Period for cron to check this module (secs)

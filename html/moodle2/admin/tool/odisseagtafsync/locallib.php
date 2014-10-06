@@ -85,7 +85,7 @@ class odissea_gtaf_synchronizer {
     const SYNCHRO_MAILADMINS = 1;   //0: No
                                     //1: Yes
 
-    function odissea_gtaf_synchronizer($iscron = false) {
+    function __construct($iscron = false) {
 
         //set system configuration
         @set_time_limit(1800); // 30 minuts should be enough
@@ -146,7 +146,7 @@ class odissea_gtaf_synchronizer {
         if (!$this->isfolders) {
             if (!$this->iscron) {
                 //error(implode(', ', $this->errors), $this->returnurl);
-                return;
+                return "";
             } else {
                 return implode(', ', $this->errors);
             }
@@ -166,7 +166,13 @@ class odissea_gtaf_synchronizer {
                         || $prefixfname == self::SYNCHRO_TEACHERS
 //                        || $prefixfname == self::SYNCHRO_ENROLMENTS   // Commented to avoid unenrolments - Request of Odissea team (20131014)
                         ) {
+                    if ($this->iscron) {
+                        mtrace(' Retrieving file: '.$fname);
+                    }
                     if (!$this->ftp->get_file($file, $this->outputtmppath . '/' . $fname, false)) {
+                        if ($this->iscron) {
+                            mtrace('  Cannot get file!');
+                        }
                         continue;
                     }
                     // Delete from FTP server the downloaded files
@@ -182,7 +188,11 @@ class odissea_gtaf_synchronizer {
                 if (is_file($this->outputtmppath . '/' . $file)) {
                     // Check files type to call the appropriate function
                     switch (substr($file, 0, strlen($file) - 16)) {
-                        case self::SYNCHRO_STUDENT: case self::SYNCHRO_TEACHERS:
+                        case self::SYNCHRO_STUDENT:
+                        case self::SYNCHRO_TEACHERS:
+                            if ($this->iscron) {
+                                mtrace(' Processing ...'.$file);
+                            }
                             $results[$file] = $this->synchro_users($file);
                             break;
 /* Commented to avoid unenrolments - Request of Odissea team (20131014)
@@ -199,7 +209,7 @@ class odissea_gtaf_synchronizer {
     }
 
     function synchro_users($file) {
-        global $CFG, $DB, $STD_FIELDS, $PRF_FIELDS, $PAGE;
+        global $SESSION, $CFG, $DB, $STD_FIELDS, $PRF_FIELDS, $PAGE;
 
         $settings = get_config('tool_odisseagtafsync');
 

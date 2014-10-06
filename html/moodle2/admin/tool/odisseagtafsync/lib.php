@@ -37,8 +37,10 @@ function tool_odisseagtafsync_cron() {
         return;
     }
 
+    mtrace('odisseagtafsync: tool_odisseagtafsync_cron() started at '. date('H:i:s'));
     try {
        	require_once ('locallib.php');
+
     	$synchro = new odissea_gtaf_synchronizer(true);
     	//call synchro
         $results = $synchro->synchro();
@@ -51,5 +53,7 @@ function tool_odisseagtafsync_cron() {
     } catch (Exception $e) {
         mtrace('odisseagtafsync: tool_odisseagtafsync_cron() failed with an exception:');
         mtrace($e->getMessage());
+        mtrace($e->debuginfo);
     }
+    mtrace('odisseagtafsync: tool_odisseagtafsync_cron() finished at ' . date('H:i:s'));
 }
