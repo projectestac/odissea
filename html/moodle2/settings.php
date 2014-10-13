@@ -1,5 +1,9 @@
 <?php
 
+require_once(dirname(__FILE__) . '/local/agora/lib.php');
+
+get_debug();
+
 $dirroot = dirname(dirname(dirname(__FILE__)));
 
 $CFG->altcacheconfigpath = $dirroot.'/html/moodle2/local/agora/muc/';
