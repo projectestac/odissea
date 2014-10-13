@@ -68,7 +68,10 @@ h3{
 
 #title-header h1 {
 	margin-top: 26px;
+	margin-bottom: 0;
 	float: left;
+	height: 67px;
+	overflow: hidden;
 }
 
 #title-header h1 a {
@@ -607,6 +610,26 @@ table#permissions tbody tr.selectedrow:hover>th {
 	font-size: 1.6em;
 }
 
+#dndupload-status {
+	position: absolute;
+}
+
+.path-grade-report-grader .right_scroller td select {
+	padding: 0;
+	margin: 0;
+	height: 22px;
+	line-height: 22px;
+}
+
+/** MDL-31679 gradereport_grader: Add a horizontal scroll bar to the top of the grader report */
+#page-grade-report-grader-index .topscrollcontent {
+    height: 1px;
+}
+
+body.path-grade-report-grader #user-grades {
+    margin-top: 4px;
+}
+
 
 /* Phones and tablets */
 @media (max-width: 979px) {
@@ -681,6 +704,12 @@ table#permissions tbody tr.selectedrow:hover>th {
 		display: none;
 	}
 
+	body.blocks_collapsed.path-grade-report-grader #page{
+		max-width: none;
+		padding: 0;
+		margin-top: 36px;
+	}
+
 	body.blocks_collapsed#page-mod-assign-view table,
 	/*body.blocks_collapsed.path-grade-report-grader div.gradeparent,*/
 	body.blocks_collapsed.path-grade-report-grader div.gradeparent>table#user-grades {
@@ -689,6 +718,7 @@ table#permissions tbody tr.selectedrow:hover>th {
 		left: 0;
 		position: absolute;
 		width: 100%;
+		height: 100%;
 		max-height: 100%;
 		background-color: white;
 		font-size: 12px;

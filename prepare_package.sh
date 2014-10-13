@@ -30,7 +30,6 @@ cp -Rp html/moodle2_old/auth/odissea html/moodle2/auth/odissea
 cp -Rp html/moodle2_old/admin/tool/odisseagtafsync html/moodle2/admin/tool/odisseagtafsync
 
 rm html/moodle2/index_iw.php
-rm html/moodle2/settings.php
 rm html/moodle2/site-config.php
 rm html/moodle2/config-multi.php
 rm html/moodle2/config-mysql.php

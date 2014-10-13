@@ -7,9 +7,10 @@ class script_repair_duplicated_assign extends agora_script_base{
 	public $title = 'Repair duplicated Assignments';
 	public $info = "Deletes duplicate assignments merging into one";
 	public $cron = false;
+	public $cli = true;
 	protected $test = true;
 
-	protected function params(){
+	public function params(){
 		$params = array();
 		$params['courseid'] = optional_param('courseid', false, PARAM_INT);
 		return $params;
@@ -67,7 +68,7 @@ class script_repair_duplicated_assign extends agora_script_base{
 		require_once($CFG->libdir.'/completionlib.php');
 
 		$params = array('name'=>$name, 'course' => $courseid, 'section' => $section);
-		$sql = "SELECT a.*
+		$sql = "SELECT a.*, cm.id as coursemoduleid
 				FROM {course_modules} cm, {modules} m, {assign} a
 				WHERE m.name = 'assign' AND m.id = cm.module AND a.id = cm.instance
 					AND cm.course = :course AND cm.section = :section AND a.name = :name
@@ -77,7 +78,7 @@ class script_repair_duplicated_assign extends agora_script_base{
 		$count = count($assigns);
 		mtrace("Course {$courseid}  section {$section} name '{$name}' duplicats {$count}", '<br/>');
 		$first_assign = array_shift($assigns);
-		mtrace("--> First assign {$first_assign->id}", '<br/>');
+		mtrace("--> First assign {$first_assign->id} ({$first_assign->coursemoduleid})", '<br/>');
 
 		$original_assign = (array) $first_assign;
 		unset($original_assign['id']);

@@ -7,9 +7,10 @@ class script_replace_database_text extends agora_script_base{
 	public $title = 'Replace database texts';
 	public $info = "Eina XTEC de cerca i substitució a la base de dades [Només Oracle]";
 	public $cron = false;
+	public $cli = true;
 	protected $test = false;
 
-	protected function params(){
+	public function params(){
 		global $CFG;
 		$params = array();
 		$params['origintext'] = optional_param('origintext',$CFG->wwwroot . '/', PARAM_TEXT);
@@ -19,12 +20,12 @@ class script_replace_database_text extends agora_script_base{
 
 	protected function _execute($params = array(), $execute = true){
 		global $CFG, $OUTPUT;
-		
+
 		$textOrig = $params['origintext'];
 		$textTarg = $params['targettext'];
-		
+
 		echo "Reemplaçant '<strong>$textOrig</strong>' per '<strong>$textTarg</strong>'<br />";
-		
+
         $result = $this->replaceMoodle($textOrig, $textTarg);
 
         if ($result) {
