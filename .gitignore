@@ -4,7 +4,6 @@ html/moodle/config-restricted.php
 html/moodle2/config.php
 html/moodle2/config-restricted.php
 html/moodle2/config-works.php
-html/moodle2/local/agora/muc/cacheconfig.php
 html/moodle2/local/agora/muc/cacheconfig_acc_eoi.php
 html/moodle2/local/agora/muc/cacheconfig_acc_odissea.php
 html/moodle2/local/agora/muc/cacheconfig_form.php
