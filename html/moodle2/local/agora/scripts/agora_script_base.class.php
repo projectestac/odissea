@@ -6,6 +6,7 @@ class agora_script_base{
 	public $info = "";
 	public $cron = false;
 	public $cli = false;
+	public $api = true;
 	protected $test = true;
 
 	public function params() {
@@ -23,9 +24,11 @@ class agora_script_base{
 		$this->form($params);
 		if ($action == 'test') {
 			echo $OUTPUT->notification('Testing...');
+			\core\session\manager::write_close();
 			return $this->_execute($params, false);
 		} else if ($action == 'execute' && $this->can_be_executed($params)) {
 			echo $OUTPUT->notification('Executing!!');
+			\core\session\manager::write_close();
 			return $this->_execute($params);
 		}
 		return false;
@@ -111,6 +114,7 @@ class agora_script_base{
 	}
 
 	function is_visible() {
+		global $USER;
 		if (is_agora() && !is_xtecadmin()) {
 			return false;
         }

@@ -3,6 +3,16 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 14.11.05
+---------------------------------------------------------------------------------------
+- MDL-47581 Force box.net repository work with https
+- Updated marsupial modules
+- Bigdata exporter to json
+- Mobile panel colors repaired
+- Scripting module
+- Enable webservice mobile settings for all admins
+- More intelligent purge cache
+
 Changes 14.10.15
 ---------------------------------------------------------------------------------------
 - Updated translations
