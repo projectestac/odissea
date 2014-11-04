@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -38,6 +37,7 @@ $string['ftphost'] = 'Servidor FTP';
 $string['inputpath'] = 'Directori FTP';
 $string['inputpath_help'] = 'Directori del servidor FTP on s\'ubicaran els fitxers d\'entrada que es descarregaran i processaran al Moodle';
 $string['mailerror'] = 'S\'ha  produït algun error en la sincronització entre Odissea i GTAF durant el procesament del fitxer <b>{$a->filename}</b><br/><br/>Alertes: {$a->warnings}<br/>Errors: {$a->errors}<br/><br/><br/>';
+$string['mailerrorfile'] = 'S\'ha  produït algun error en la sincronització entre Odissea i GTAF durant el procesament del fitxer {$a->filename}\nError: {$a->error}';
 $string['mailsubject'] = 'Error a la sincronització Odissea-GTAF';
 $string['manualnotenabled'] = 'El connector d\'inscripció \'Manual\' no està activat. Per poder processar els fitxers pendents cal habilitar-ho i tornar a executar el procés de sincronització.';
 $string['manualsyncheader'] = 'Sincronització manual';

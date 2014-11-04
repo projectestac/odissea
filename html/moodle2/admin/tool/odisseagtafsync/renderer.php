@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -36,25 +35,25 @@ class tool_odisseagtafsync_renderer extends plugin_renderer_base {
         $output = '';
         $output .= $this->header();
         $output .= $this->heading(get_string('pluginname', 'tool_odisseagtafsync'));
-        if (!empty($errors)){
+        if (!empty($errors)) {
             $strerror = implode('<br/><br/>', $errors);
             $output .= '<br/>';
             $output .= $this->notification($strerror);
         }
-        if (!empty($results)){
-            foreach ($results as $result){
+        if (!empty($results)) {
+            foreach ($results as $result) {
                 if (!empty($result)) {
                     $output .= $this->box($result);
                 }
             }
-        } else{
+        } else {
             if ($run == 1) { // Synchronize
-                $output .=  '<p><br/>';
+                $output .= '<p><br/>';
                 $output .= get_string('nosyncfiles', 'tool_odisseagtafsync');
-                $output .=  '</p>';
+                $output .= '</p>';
             }
         }
-        
+
         $output .= $this->back_to_index();
         $output .= $this->footer();
         return $output;
@@ -62,7 +61,7 @@ class tool_odisseagtafsync_renderer extends plugin_renderer_base {
 
     public function process_csv_page($file, $response, $params) {
         extract($params);
-        
+
         $output = '';
         $output .= $this->heading($file);
         if (!empty($response)) $output .= '<br/>'.$this->container($response[1]);
@@ -91,10 +90,10 @@ class tool_odisseagtafsync_renderer extends plugin_renderer_base {
         $output .= $this->box_end();
         return $output;
     }
-    
+
     public function prepare_enrolments_page($params) {
         extract($params);
-        
+
         $output = '';
         $output .= $this->heading($file);
         $output .=  '<p><br/>';
@@ -102,10 +101,10 @@ class tool_odisseagtafsync_renderer extends plugin_renderer_base {
         $output .=  '</p>';
         return $output;
     }
-    
+
     public function process_restore_file_page($params) {
         extract($params);
-        
+
         $output = '';
         $output .= $this->heading($file);
         $output .=  '<p><br/>';
@@ -113,8 +112,8 @@ class tool_odisseagtafsync_renderer extends plugin_renderer_base {
         $output .=  '<br/><br/></p>';
         return $output;
     }
-    
-    
+
+
     /**
      * Render a link in a div, such as the 'Back to plugin main page' link.
      * @param $url the link URL.
@@ -132,9 +131,9 @@ class tool_odisseagtafsync_renderer extends plugin_renderer_base {
      */
     public function back_to_index() {
         global $CFG;
-        
+
         return $this->end_of_page_link(new moodle_url('/'. $CFG->admin . '/tool/odisseagtafsync/index.php'),
                 get_string('backtoindex', 'tool_odisseagtafsync'));
     }
-    
+
 }

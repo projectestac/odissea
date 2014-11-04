@@ -51,6 +51,7 @@ class odissea_gtaf_synchronizer {
 
     const SYNCHRO_CSVIMPORT_TYPE = 'gtafsync';
     const SYNCHRO_BACKUPFOLDER = 'backup';  //Folder inside outpath to put backup files
+    const SYNCHRO_BACKUP_ERRORFOLDER = 'backup_error';  //Folder inside outpath to put backup files with errors
     const SYNCHRO_TEMPFOLDER = 'pending';   //Folder inside outpath to put FTP downloaded files until there are processed
     const SYNCHRO_RESULTSFOLDER = 'results';   //Folder inside outpath to put FTP downloaded files until there are processed
 
@@ -126,6 +127,8 @@ class odissea_gtaf_synchronizer {
         // Folder where to leave results
         $this->outputresultspath = $this->outputpath . '/' . self::SYNCHRO_RESULTSFOLDER;   // Temporaly folder where to download FTP content
         $this->prepare_folder($this->outputresultspath);
+
+        make_writable_directory($this->outputpath . '/' . self::SYNCHRO_BACKUP_ERRORFOLDER);
     }
 
     function prepare_folder($folder){
@@ -193,15 +196,40 @@ class odissea_gtaf_synchronizer {
                             if ($this->iscron) {
                                 mtrace(' Processing ...'.$file);
                             }
-                            $results[$file] = $this->synchro_users($file);
+                            try {
+                                $result = $this->synchro_users($file);
+                                $results[$file] = $result;
+                            } catch(Exception $e) {
+                                $result = $file.': '.$e->getMessage();
+                                $results[$file] = false;
+                                $this->errors[$file] = $result;
+                            }
+                            if ($this->iscron) {
+                                mtrace($result);
+                            }
                             break;
-/* Commented to avoid unenrolments - Request of Odissea team (20131014)
+                    /* Commented to avoid unenrolments - Request of Odissea team (20131014)
                         case self::SYNCHRO_ENROLMENTS:
                             $results[$file] = $this->synchro_enrolments($file);
                             break;
- */
+                    */
                     }
                 }
+            }
+        }
+
+        if ($this->iscron && !empty($this->errors)) {
+            // Send errors
+            if (self::SYNCHRO_MAILADMINS == 1) {
+                $admin = get_admin();
+                mtrace('Sending errors to '.$admin->email.'...');
+                $mailtext = "";
+                foreach ($this->errors as $filename => $error) {
+                    $a->filename = $filename;
+                    $a->error = $error;
+                    $mailtext .= get_string('mailerrorfile', 'tool_odisseagtafsync', $a)."\n";
+                }
+                email_to_user($admin, $admin, get_string('mailsubject', 'tool_odisseagtafsync'), $mailtext);
             }
         }
 
@@ -216,15 +244,13 @@ class odissea_gtaf_synchronizer {
         // Copy specified file to csvimport folder
         $this->prepare_folder($this->outputcsvimportpath);
         if (!copy($this->outputtmppath . '/' . $file, $this->outputcsvimportpath. '/' . $file)) {
-            $this->errors[] = 'Error copying file to csvimport folder: '.$this->outputcsvimportpath. '/' . $file;
-            return;
+            throw new Exception('Error copying file to csvimport folder: '.$this->outputcsvimportpath. '/' . $file);
         }
 
         // Create a backup of downloaded file
         $filename = get_filename_withoutrepeat($file, $this->outputpath . '/' . self::SYNCHRO_BACKUPFOLDER);
         if (!copy($this->outputtmppath . '/' . $file, $this->outputpath . '/' . self::SYNCHRO_BACKUPFOLDER . '/' . $filename)) {
-            $this->errors[] = 'Error doing file backup: '.$file;
-            return;
+            throw new Exception('Error doing file backup: '.$file);
         }
 
         //ODISSEAGTAFSYNC-XTEC ************ AFEGIT - Code adapted from admin/tool/uploaduser/index.php
@@ -324,15 +350,16 @@ class odissea_gtaf_synchronizer {
         $cir = new csv_import_reader($file, self::SYNCHRO_CSVIMPORT_TYPE);
         $content = file_get_contents($this->outputcsvimportpath. '/' . $file);
         $readcount = $cir->load_csv_content($content, self::SYNCHRO_ENCODING, self::SYNCHRO_DELIMETERNAME, 'validate_user_upload_columns');
+        $csvloaderror = $cir->get_error();
         unset($content);
 
-        if ($readcount === false) {
-            $this->errors[] = get_string('csvloaderror', 'error', $cir->get_error());
-            return;
-        } else if ($readcount == 0) {
-            $this->errors[] = get_string('csvemptyfile', 'error', $cir->get_error());
-            return;
+        if (!is_null($csvloaderror)) {
+            $filename = get_filename_withoutrepeat($file, $this->outputpath . '/' . self::SYNCHRO_BACKUP_ERRORFOLDER);
+            rename($this->outputtmppath . '/' . $file, $this->outputpath . '/' . self::SYNCHRO_BACKUP_ERRORFOLDER . '/' . $filename);
+            throw new Exception(get_string('csvloaderror', 'error', $csvloaderror));
         }
+
+
         // test if columns ok
         $filecolumns = uu_validate_user_upload_columns($cir, $STD_FIELDS, $PRF_FIELDS, $returnurl);
 
@@ -348,21 +375,6 @@ class odissea_gtaf_synchronizer {
         $noemailduplicates = $formdata->uunoemailduplicates;
         $standardusernames = $formdata->uustandardusernames;
         $resetpasswords    = isset($formdata->uuforcepasswordchange) ? $formdata->uuforcepasswordchange : UU_PWRESET_NONE;
-
-/*
-        $optype = self::SYNCHRO_UUTYPE;
-
-        $updatetype        = self::SYNCHRO_UUUPDATETYPE;
-        $createpasswords   = (self::SYNCHRO_UUPASSWORDNEW and $optype != UU_USER_UPDATE);
-        $updatepasswords   = (self::SYNCHRO_UUPASSWORDOLD and $optype != UU_USER_ADDNEW and $optype != UU_USER_ADDINC and ($updatetype == UU_UPDATE_FILEOVERRIDE or $updatetype == UU_UPDATE_ALLOVERRIDE));
-        $allowrenames      = (self::SYNCHRO_UUALLOWRENAMES and $optype != UU_USER_ADDNEW and $optype != UU_USER_ADDINC);
-        $allowdeletes      = (self::SYNCHRO_UUALLOWDELETES and $optype != UU_USER_ADDNEW and $optype != UU_USER_ADDINC);
-        $allowsuspends     = (self::SYNCHRO_UUALLOWSUSPENDS);
-        $bulk              = self::SYNCHRO_UUBULK;
-        $noemailduplicates = self::SYNCHRO_UUNOEMAILDUPLICATES;
-        $standardusernames = self::SYNCHRO_UUSTANDARDUSERNAMES;
-        $resetpasswords    = self::SYNCHRO_UURESETPASSWORDS;
-*/
 
         // verification moved to two places: after upload and into form2
         $usersnew      = 0;
@@ -384,28 +396,13 @@ class odissea_gtaf_synchronizer {
         $supportedauths = odissea_uu_supported_auths();
 
 
-        //XTEC ************ MODIFICAT - Enrolments must be set to 'manual' in order to be edited from Moodle
+        //Enrolments must be set to 'manual' in order to be edited from Moodle
         //2013.10.14 @aginard
         if (enrol_is_enabled('manual')) {
             $manual = enrol_get_plugin('manual');
         } else {
-            $manual = NULL;
-            $this->errors[] = get_string('manualnotenabled', 'tool_odisseagtafsync');
-            return;
+            throw new Exception(get_string('manualnotenabled', 'tool_odisseagtafsync'));
         }
-        //************ ORIGINAL
-        /*
-        // We use flatfile plugin to unenrol users throught the cron
-        if (enrol_is_enabled('flatfile')) {
-            $manual = enrol_get_plugin('flatfile');
-        } else {
-            $manual = NULL;
-            $this->errors[] = get_string('flatfilenotenabled', 'tool_odisseagtafsync');
-            return;
-        }
-        */
-        //************ FI
-
 
         // clear bulk selection
         if ($bulk) {
@@ -434,6 +431,8 @@ class odissea_gtaf_synchronizer {
                     // this should not happen
                     continue;
                 }
+                // Trim values to avoid whitespaces
+                $value = trim($value);
                 $key = $filecolumns[$keynum];
                 if (strpos($key, 'profile_field_') === 0) {
                     //NOTE: bloody mega hack alert!!
@@ -1222,8 +1221,7 @@ class odissea_gtaf_synchronizer {
         // Create a backup of downloaded file
         $filename = get_filename_withoutrepeat($file, $this->outputpath . '/' . self::SYNCHRO_BACKUPFOLDER);
         if (!copy($this->outputtmppath . '/' . $file, $this->outputpath . '/' . self::SYNCHRO_BACKUPFOLDER . '/' . $filename)) {
-            $this->errors[] = 'Error doing file backup: '.$file;
-            return;
+            throw new Exception('Error doing file backup: '.$file);
         }
 
         $flatfilelocation = get_config('enrol_flatfile', 'location');
@@ -1234,12 +1232,11 @@ class odissea_gtaf_synchronizer {
         if (file_exists($flatfilelocation)){
             $content = file_get_contents($this->outputtmppath. '/' . $file);
             if (!file_put_contents($flatfilelocation, $content, FILE_APPEND)) {
-                $this->errors[] = 'Error putting content from '.$file.' to '.$flatfilelocation;
-                return;
+                throw new Exception('Error putting content from '.$file.' to '.$flatfilelocation);
             }
         } else{
             if (!copy($this->outputtmppath . '/' . $file, $flatfilelocation)) {
-                $this->errors[] = 'Error copying file '.$file.' to '.$flatfilelocation;
+                throw new Exception('Error copying file '.$file.' to '.$flatfilelocation);
                 return;
             }
         }
@@ -1274,19 +1271,16 @@ class odissea_gtaf_synchronizer {
             $filename = get_filename_withoutrepeat($filename, $this->outputresultspath);
 
             if (!$f = fopen($this->outputresultspath . '/' . $filename, 'w')) {
-                $this->errors[] = 'KO! Imposible to create the output file';
-                return;
+                throw new Exception('KO! Imposible to create the output file');
             }
 
             if (!fputs($f, utf8_decode($str))) {
-                $this->errors[] = 'KO! Imposible to write in the output file';
-                return;
+                throw new Exception('KO! Imposible to write in the output file');
             }
 
             return;
         } else {
-            $this->errors[] = 'KO! Empty string result';
-            return;
+            throw new Exception('KO! Empty string result');
         }
     }
 
@@ -1298,7 +1292,6 @@ class odissea_gtaf_synchronizer {
      * @return string|false Returns full path to directory if successful, false if not
      */
     function create_upload_directory($directory) {
-
         global $CFG;
 
         umask(0000);

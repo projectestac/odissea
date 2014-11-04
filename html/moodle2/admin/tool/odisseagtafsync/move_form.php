@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -47,8 +46,7 @@ class tool_odisseagtafsync_move_form extends moodleform {
                 get_string('movefilename', 'tool_odisseagtafsync'));
         $mform->setType('f', PARAM_TEXT);
         $mform->addElement('submit', 'movefile',
-                get_string('movefile', 'tool_odisseagtafsync')); /*,
-                array('onclick'=>'javascript:document.location="synchronizer.php?run=2&f="+document.getElementById("id_movefilename").value;'));*/
+                get_string('movefile', 'tool_odisseagtafsync'));
     }
 }
 

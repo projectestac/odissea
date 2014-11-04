@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -43,7 +42,5 @@ class tool_odisseagtafsync_sync_form extends moodleform {
         $mform->setType('run', PARAM_INT);
         $mform->addElement('submit', 'manualsync',
                 get_string('manualsync', 'tool_odisseagtafsync'));
-/*        $mform->addElement('button', 'manualsync',
-                get_string('manualsync', 'tool_odisseagtafsync'), array('onclick'=>'javascript:document.location="synchronizer.php?run=1";'));*/
     }
 }

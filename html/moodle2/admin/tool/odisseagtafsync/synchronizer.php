@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -36,18 +35,20 @@ require_once('locallib.php');
 admin_externalpage_setup('odisseagtafsync');
 $renderer = $PAGE->get_renderer('tool_odisseagtafsync');
 
-if (empty($_REQUEST['run'])) {
-    $result = get_string('norunspecified', 'tool_odisseagtafsync');
-} else {
-    //@TODO: Review renderer for cron
-    $synchro = new odissea_gtaf_synchronizer();
+$run = required_param('run', PARAM_INT);
 
-    if ($_REQUEST['run'] == 1) {
-        $result = $synchro->synchro();
-    } else if ($_REQUEST['run'] == 2) {
-        $result = $synchro->restore_file($_REQUEST['f']);
-    }
+// TODO: Review renderer for cron
+$synchro = new odissea_gtaf_synchronizer();
+
+switch($run) {
+	case 1:
+		$result = $synchro->synchro();
+		break;
+	case 2:
+		$f = required_param('f', PARAM_RAW);
+		$result = $synchro->restore_file($f);
+		break;
 }
 
-echo $renderer->sync_page($_REQUEST['run'], $result, $synchro->errors);
+echo $renderer->sync_page($run, $result, $synchro->errors);
 

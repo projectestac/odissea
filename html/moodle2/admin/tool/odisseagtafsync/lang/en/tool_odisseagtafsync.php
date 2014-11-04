@@ -38,6 +38,7 @@ $string['ftphost'] = 'FTP server';
 $string['inputpath'] = 'FTP folder';
 $string['inputpath_help'] = 'FTP server folder where to place input data files which will be downloaded and processed in Moodle';
 $string['mailerror'] = 'There was an error during the synchronization between Odissea and GTAF while the file <b>{$a->filename}</b> was processing<br/><br/>Warnings: {$a->warnings}<br/>Errors: {$a->errors}<br/><br/><br/>';
+$string['mailerrorfile'] = 'There was an error during the synchronization between Odissea and GTAF while the file {$a->filename} was processing\nError: {$a->error}';
 $string['mailsubject'] = 'Error during the Odissea-GTAF synchronization';
 $string['manualnotenabled'] = 'The \'Manual\' enrol plugin is not enabled. It\'s necessary to enable it to process pending files.';
 $string['manualsyncheader'] = 'Manual synchronization';
