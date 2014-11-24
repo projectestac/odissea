@@ -72,15 +72,17 @@ function rcommon_get_wsdl($urlwdsl, $timeout = 20) {
     curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, $timeout);
 
 
-	if (!empty($CFG->proxytype) && $CFG->proxytype == 'HTTP' && !empty($CFG->proxyhost)) {
-		curl_setopt($curl, CURLOPT_PROXY, $CFG->proxyhost);
-		if (!empty($CFG->proxyport)) {
-			curl_setopt($curl, CURLOPT_PROXYPORT, $CFG->proxyport);
-		}
-		if (!empty($CFG->proxyuser)) {
-			curl_setopt($curl, CURLOPT_PROXYUSERPWD, $CFG->proxyuser . ':' . $CFG->proxypassword);
-		}
-	}
+    if (!is_proxybypass($urlwdsl)) {
+    	if (!empty($CFG->proxytype) && $CFG->proxytype == 'HTTP' && !empty($CFG->proxyhost)) {
+    		curl_setopt($curl, CURLOPT_PROXY, $CFG->proxyhost);
+    		if (!empty($CFG->proxyport)) {
+    			curl_setopt($curl, CURLOPT_PROXYPORT, $CFG->proxyport);
+    		}
+    		if (!empty($CFG->proxyuser)) {
+    			curl_setopt($curl, CURLOPT_PROXYUSERPWD, $CFG->proxyuser . ':' . $CFG->proxypassword);
+    		}
+    	}
+    }
 
     $contents = curl_exec($curl);
     curl_close($curl);
@@ -117,7 +119,7 @@ function rcommon_object_to_array_lower($value, $recursive = false) {
         $anyxml = simplexml_load_string ($array['any']);
         $array = array($anyxml->getName() =>$anyxml);
     }
-	
+
 	$array_ret = array();
     foreach ($array as $key => $value) {
         if ($recursive) {
@@ -146,21 +148,12 @@ function test_ws_url($url) {
 /** ERROR HANDLING **/
 function log_to_file($info, $notused = null) {
     try {
-        $data_store_log = get_config('rcommon', 'data_store_log');
+        $logdir = get_config('rcommon', 'data_store_log');
         $tracer = get_config('rcommon', 'tracer');
-        if  ($tracer == 'checked' && !empty($data_store_log)) {
-        	$data_store_log .= "/1";
+        if ($tracer == 'checked' && !empty($logdir)) {
+            $logdir = make_writable_directory($logdir.'/log_rcommon', false);
 
-        	//Escribimos en un fichero de texto los mensajes de errores
-        	if (!is_dir($data_store_log)) {
-        		mkdir($data_store_log);
-        	}
-        	$data_store_log .= "/log_rcommon";
-        	if (!is_dir($data_store_log)) {
-        		mkdir($data_store_log);
-        	}
-
-            if ($handle = @fopen($data_store_log."/LogRcommon.log", "a")) {
+            if ($handle = @fopen($logdir."/LogRcommon.log", "a")) {
                 $content = "\r\n".date("Y-m-d H:i:s")." - Data: ".$info;
                 @fwrite($handle, $content);
                 @fclose($handle);

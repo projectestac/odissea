@@ -4035,7 +4035,7 @@ function create_user_record($username, $password, $auth = 'manual') {
     if ($auth == 'odissea' && !empty($newinfo['username'])){
         $newuser->username = mb_convert_case($newinfo['username'], MB_CASE_LOWER, 'UTF-8');
     } else {
-    	$newuser->username = $username;
+        $newuser->username = $username;
     }
     //************ ORIGINAL
     /*
@@ -4058,7 +4058,7 @@ function create_user_record($username, $password, $auth = 'manual') {
     //XTEC ************ AFEGIT - To change username if auth method has another different (for Odissea)
     //2013.06.21 @sarjona
     if ($auth == 'odissea' && $newuser->username != $username){
-		if ($user = get_complete_user_data('username', $newuser->username, $CFG->mnet_localhost_id)) {
+        if ($user = get_complete_user_data('username', $newuser->username, $CFG->mnet_localhost_id)) {
             // User exists, so it's not necessary create it (because the username is not the one specified for the user in the form)
             return $user;
         }
@@ -5785,6 +5785,19 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
         return false;
     }
 
+    // XTEC ************ AFEGIT - Avoid sending to invalid domains
+    // 2014.11.05  @pferre22
+    if (substr($user->email, -8) == '.invalid') {
+        // We can not send emails to invalid addresses - it might create security issue or confuse the mailer.
+        $invalidemail = "User $user->id (".fullname($user).") domain ($user->email) is invalid! Not sending.";
+        error_log($invalidemail);
+        if (CLI_SCRIPT) {
+            mtrace('Warning: lib/moodlelib.php email_to_user(): '.$invalidemail);
+        }
+        return true;
+    }
+    // ************ FI
+
     // If the user is a remote mnet user, parse the email text for URL to the
     // wwwroot and modify the url to direct the user's browser to login at their
     // home site (identity provider - idp) before hitting the link itself.
@@ -5869,9 +5882,9 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
         $mail->Subject = substr($subject, 0, 900);
     }
     //************ ORIGINAL
-	/*
+    /*
     $mail->Subject = substr($subject, 0, 900);
-	*/
+    */
     //************ FI
 
     $temprecipients[] = array($user->email, fullname($user));
@@ -5961,109 +5974,43 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
     global $FULLME;
 
     if (!empty($CFG->apligestmail)) {
-    	try{
-	        require_once ($CFG->dirroot.'/local/agora/mailer/message.class.php');
-	        require_once ($CFG->dirroot.'/local/agora/mailer/mailsender.class.php');
-
-	        $log = $CFG->apligestlog;
-	        $logdebug = $CFG->apligestlogdebug;
-	        $logpath = $CFG->apligestlogpath;
-
-	        //load the message
-	        $message = new message(TEXTHTML, $log, $logdebug, $logpath);
-
-	        //set $to
-	        $to_array = array();
-	        foreach ($mail->to as $to){
-	            $to_array[] = $to[0];
-	        }
-	        $message->set_to($to_array);
-
-	        //set $cc
-	        $cc_array = array();
-	        foreach ($mail->cc as $cc){
-	            $cc_array[] = $cc[0];
-	        }
-	        if (!empty($cc_array)) $message->set_cc($cc_array);
-
-	        //set $bcc
-	        $bcc_array = array();
-	        foreach ($mail->bcc as $bcc){
-	            $bcc_array[] = $bcc[0];
-	        }
-	        if (!empty($bcc_array)) $message->set_bcc($bcc_array);
-
-	        //set $subject
-	        $message->set_subject($mail->Subject);
-
-	        //set $bodyContent
-	        $message->set_bodyContent($mail->Body);
-
-	        //load the mailsender
-	        $environment = $CFG->apligestenv;
-	        $application = $CFG->apligestaplic;
-	        $replyto = $CFG->noreplyaddress;
-
-	        $sender = new mailsender($application, $replyto, 'educacio', $environment, $log, $logdebug, $logpath);
-
-	        //add message to mailsender
-	        if (!$sender->add($message)){
-	                mtrace('ERROR: '.' Impossible to add message to mailsender');
-	                add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. ' Impossible to add message to mailsender');
-	                return false;
-	        }
-	        //send messages
-	        if (!$sender->send_mail()){
-	                mtrace('ERROR: '.' Impossible to send messages');
-	                add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. ' Impossible to send messages');
-
-	                return false;
-	        } else {
-	            set_send_count($user);
-	            return true;
-	        }
-	    } catch (Exception $e){
-	    	mtrace('ERROR: Something terrible happened during the mailing and might be repaired');
-	    	mtrace($e->getMessage());
-	    	mtrace('The execution must go on!');
-	    	return false;
-	    }
+        return send_apligest_mail($mail, $user);
     } else {
-		if ($mail->send()) {
-		    set_send_count($user);
-		    if (!empty($mail->SMTPDebug)) {
-		        echo '</pre>';
-		    }
-		    return true;
-		} else {
-		    add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. $mail->ErrorInfo);
-		    if (CLI_SCRIPT) {
-		        mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
-		    }
-		    if (!empty($mail->SMTPDebug)) {
-		        echo '</pre>';
-		    }
-		    return false;
-		}
-	}
-	//****************** ORIGINAL
-	/*
-	if ($mail->send()) {
-	    set_send_count($user);
-	    if (!empty($mail->SMTPDebug)) {
-	        echo '</pre>';
-	    }
-	    return true;
-	} else {
-	    add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. $mail->ErrorInfo);
-	    if (CLI_SCRIPT) {
-	        mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
-	    }
-	    if (!empty($mail->SMTPDebug)) {
-	        echo '</pre>';
-	    }
-	    return false;
-	}
+        if ($mail->send()) {
+            set_send_count($user);
+            if (!empty($mail->SMTPDebug)) {
+                echo '</pre>';
+            }
+            return true;
+        } else {
+            add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. $mail->ErrorInfo);
+            if (CLI_SCRIPT) {
+                mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
+            }
+            if (!empty($mail->SMTPDebug)) {
+                echo '</pre>';
+            }
+            return false;
+        }
+    }
+    //****************** ORIGINAL
+    /*
+    if ($mail->send()) {
+        set_send_count($user);
+        if (!empty($mail->SMTPDebug)) {
+            echo '</pre>';
+        }
+        return true;
+    } else {
+        add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. $mail->ErrorInfo);
+        if (CLI_SCRIPT) {
+            mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
+        }
+        if (!empty($mail->SMTPDebug)) {
+            echo '</pre>';
+        }
+        return false;
+    }
     */
     //************ FI
 }

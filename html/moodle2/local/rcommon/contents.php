@@ -3,6 +3,7 @@
 //2011.08.30 @sarjona
 require_once('../../config.php');
 require_once($CFG->dirroot.'/course/lib.php');
+require_once($CFG->dirroot.'/local/rcommon/locallib.php');
 
 require_login();
 
@@ -36,10 +37,41 @@ if ($action == 'update') {
     } catch(Exception $fault) {
         echo $OUTPUT->notification($fault->getMessage());
     }
+} else if ($action == 'delete') {
+    $bookid = required_param('bookid', PARAM_INT);
+    $book = $DB->get_record('rcommon_books', array('id' => $bookid, 'publisherid' => $id));
+    if ($book) {
+        $success = true;
+        switch ($book->format) {
+            case 'scorm':
+                if ($DB->get_manager()->table_exists('rscorm') && $DB->record_exists_select('rscorm', 'bookid = :bookid AND course != :course', array('bookid' => $bookid, 'course' => SITEID))) {
+                    $success = false;
+                }
+                break;
+            case 'webcontent':
+            default:
+                if ($DB->record_exists_select('rcontent', 'bookid = :bookid AND course != :course', array('bookid' => $bookid, 'course' => SITEID))) {
+                    $success = false;
+                }
+                break;
+        }
+        if (!$success) {
+            echo $OUTPUT->notification(get_string('book_deleted_act_error', 'local_rcommon', $bookid));
+        } else {
+            $sql = 'SELECT * FROM {rcommon_user_credentials} RUC INNER JOIN {rcommon_books} RB ON RB.isbn = RUC.isbn WHERE RUC.euserid != 0 AND RB.id = :bookid';
+            if ($DB->record_exists_sql($sql, array('bookid' => $bookid))) {
+                echo $OUTPUT->notification(get_string('book_deleted_cred_error', 'local_rcommon', $bookid));
+            } else {
+                if (rcommon_book::delete($bookid, $id)) {
+                    echo $OUTPUT->notification(get_string('book_deleted', 'local_rcommon', $bookid));
+                }
+            }
+        }
+    }
 }
 
 
-$params = array('publisher'=>$id);
+$params = array('publisher' => $id);
 
 $sql = 'SELECT b.id, b.name, b.levelid, b.isbn, b.format, l.name AS levelname, count(uc.isbn) as total, SUM(case when uc.euserid > 0 THEN 1 ELSE 0 END) as assig
     FROM {rcommon_books} b
@@ -53,7 +85,7 @@ $sql = 'SELECT b.id, b.name, b.levelid, b.isbn, b.format, l.name AS levelname, c
 
 $books = $DB->get_records_sql($sql, $params);
 
-if (!empty($books)){
+if (!empty($books)) {
 
     $levelid = null;
     $table = new html_table();
@@ -66,36 +98,56 @@ if (!empty($books)){
                         get_string('actions', 'local_rcommon'));
     $table->align = array('left', 'center', 'center', 'center', 'center', 'center');
 
-    $formats = array('scorm'=>get_string('scorm', "local_rcommon"), 'webcontent' => get_string('webcontent', "local_rcommon"));
+    $formats = array('scorm' => get_string('scorm', "local_rcommon"), 'webcontent' => get_string('webcontent', 'local_rcommon'));
+    $showall = optional_param('showall', false, PARAM_BOOL);
+    $hiddenbooks = false;
+    foreach ($books as $book) {
+        if (!$showall && !in_array(textlib::strtolower($book->format), rcommon_book::$allowedformats)) {
+            $hiddenbooks = true;
+            continue;
+        }
 
-    foreach($books as $book) {
         if ($levelid != $book->levelid) {
-            if(!empty($table->data)){
+            if (!empty($table->data)) {
                 echo html_writer::table($table);
 
                 $table->data = array();
                 $table->align = array('left', 'center', 'center', 'center', 'center', 'center');
             }
 
-            echo $OUTPUT->heading($book->levelname,4);
+            echo $OUTPUT->heading($book->levelname, 4);
             $levelid = $book->levelid;
         }
         $row = array();
-        if($book->format == 'scorm'){
-            $name = '<img src="'.$OUTPUT->pix_url('icon', 'rscorm').'" class="icon" title="'.$formats[$book->format].'" alt="'.$formats[$book->format].'" />'.$book->name;
-        } else {
+        if ($book->format == 'webcontent') {
             $name = '<img src="'.$OUTPUT->pix_url('icon', 'rcontent').'" class="icon" title="'.$formats[$book->format].'" alt="'.$formats[$book->format].'" />'.$book->name;
+        } else {
+            $name = $book->name;
         }
         $row[] = $name;
         $row[] = $book->isbn;
         $row[] = $book->assig;
         $row[] = $book->total;
-        $row[] =  '<a href="books.php?id=' . $book->id .'" title="' . get_string('see_details_atitle', 'local_rcommon') . '">' . get_string('see_details', 'local_rcommon') . '</a>';
+        if($showall) {
+            $deletelink = 'contents.php?id='.$id.'&action=delete&showall=1&bookid='.$book->id;
+        } else {
+            $deletelink = 'contents.php?id='.$id.'&action=delete&bookid='.$book->id;
+        }
+        $actions = array();
+        $actions[] = '<a href="books.php?id=' . $book->id .'" title="' . get_string('see_details_atitle', 'local_rcommon') . '">' . get_string('see_details', 'local_rcommon') . '</a>';
+        $actions[] = $OUTPUT->action_link($deletelink, get_string('delete'), new confirm_action(get_string('delete_book_confirm', 'local_rcommon', $name)));
+        $row[] = implode(' | ', $actions);
+
         $table->data[] = $row;
         $levelid = $book->levelid;
     }
     echo html_writer::table($table);
-} else{
+    if ($hiddenbooks) {
+        echo '<a href="contents.php?showall=1&id='.$id.'"><button>'.get_string('show_all_books', 'local_rcommon').'</button></a>';
+    } else if ($showall) {
+            echo '<a href="contents.php?id='.$id.'"><button>'.get_string('show_valid_books', 'local_rcommon').'</button></a>';
+    }
+} else {
     echo $OUTPUT->notification(get_string("nobooks", "local_rcommon"));
 }
 

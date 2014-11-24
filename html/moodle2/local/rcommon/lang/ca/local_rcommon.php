@@ -5,7 +5,6 @@ $string['rcommon:authenticate'] = 'Autentica contingut Marsupial';
 $string['rcommon:exportcredentials'] = 'Exporta credencials de Marsupial';
 $string['rcommon:importcredentials'] = 'Importa credencials de Marsupial';
 $string['rcommon:managecredentials'] = 'Gestiona credencials de Marsupial';
-$string['rcommon:manageowncredentials'] = 'Gestiona credencials de Marsupial pròpies';
 $string['rcommon:managepublishers'] = 'Gestiona proveïdors de Marsupial';
 
 $string['addnewpublisher'] = 'Afegeix nou proveïdor';
@@ -32,12 +31,10 @@ $string['error_code_-7'] = 'Rol incorrecte';
 $string['error_code_-101'] = 'Autenticació incorrecta. L\'usuari que sol&middot;licitat accés a aquest m&egrave;tode del servei web no es correcte.';
 $string['error_code_-102'] = 'Autenticació incorrecta. L\'usuari que sol&middot;licita accés a aquest m&egrave;tode del servei web no te permisos suficients.';
 
-$string['exit'] = 'Surt';
-$string['insertkeybtn'] = 'Afegeix credencial';
 $string['insertkeymsg'] = 'Introdueix una credencial per aquest recurs';
 $string['key'] = 'Credencial';
 $string['keyadd'] = 'Afegeix credencial';
-$string['keyaddingforuser'] = 'CredeGncial nova per a l\'usuari/ària <strong>{$a}</strong>';
+$string['keyaddingforuser'] = 'Credencial nova per a l\'usuari/ària <strong>{$a}</strong>';
 $string['keyeditingforuser'] = 'Edita la credencial per a l\'usuari/ària <strong>{$a}</strong>';
 $string['keyconfirmdelete'] = 'Segur que vols eliminar aquesta credencial?';
 $string['keydelbtn'] = 'Elimina';
@@ -45,7 +42,6 @@ $string['keymanager'] = 'Administració de les credencials dels usuaris';
 $string['keysadminsearchuserbtn'] = 'Gestiona les credencials';
 $string['keyslookupusertext'] = 'Escull un usuari/ària per gestionar les seves credencials';
 $string['keysshowingfor'] = 'Credencials de l\'usuari/ària';
-$string['loading'] = 'Descarregant. Si us plau esperi...';
 $string['manage'] = 'Gestionar';
 $string['noactivity'] = 'Activitat no trobada';
 $string['nobooks'] = 'No s\'ha rebut cap llibre';
@@ -59,10 +55,15 @@ $string['rcommon'] = 'Recursos remots';
 $string['save'] = 'Desa';
 $string['saveok'] = 'Dades desades correctament';
 $string['saveko'] = 'No ha estat possible desar les dades, si us plau torni a intentar-ho';
+$string['show_all_books'] = 'Mostra tots els llibres';
+$string['show_valid_books'] = 'Mostra només els llibres vàlids';
+$string['delete_book_confirm'] = 'Estàs segur que vols eliminar el llibre {$a}?<br> Totes les dades i activitats relacionades s\'eliminaran';
+$string['book_deleted'] = 'Llibre {$a} eliminat';
+$string['book_deleted_act_error'] = 'El llibre {$a} no es pot eliminar, ja que s\'està fent servir en alguna activitat. Cal que elimineu les activitats manualment abans.';
+$string['book_deleted_cred_error'] = 'El llibre {$a} no es pot eliminar, ja que té credencials assignades. Cal que les desassigneu manualment abans.';
+$string['deleted_book'] = 'Llibre eliminat';
+$string['used_modules'] = 'Mòduls on es fa servir aquest llibre';
 $string['savekoemptyvalues'] = 'No ha estat possible desar les dades, almenys el camp codi s\'ha d\'omplir.';
-$string['selectpublisher'] = 'Seleccioneu un proveïdor de continguts...';
-$string['selectpublisheredit'] = 'Seleccioneu un proveïdor de continguts per editar les seves dades';
-$string['selectpublisherdescription'] = 'Per descarregar totes les estructures de llibre és necessari seleccionar un editor';
 $string['teacherroles'] = 'Rols del professorat';
 $string['teacherrolesinfo'] = 'Rols que s\'autenticaran a les editorials com a usuari professor/a. La resta s\'autenticaran com a estudiants';
 $string['urlmoreinfo'] = '<a href="{$a}" target="_blank">Més informació de l\'error</a>';
@@ -71,12 +72,8 @@ $string['urlwsbookstructure'] = 'Adreça del servei web d\'estructura de llibre'
 $string['userhasnokeys'] = 'Aquest usuari/ària no te cap credencial assignada';
 $string['usernotfound'] = 'Usuari/ària invàlid o inexistent';
 $string['marsupialcontent'] = 'Continguts';
-$string['marsupialusersync'] = 'Sincronitza amb àtria';
-$string['marsupialupdate_publisher'] = 'Actualitza proveïdors';
 $string['marsupialmanage_publisher'] = 'Administra proveïdors';
-$string['marsupialpublisher'] = 'Proveïdors';
 $string['marsupialcredentials'] = 'Credencials';
-$string['marsupialget_credentials'] = 'Actualitza credencials';
 $string['marsupialmanage_credentials'] = 'Administra usuaris';
 $string['scorm'] = 'SCORM remot';
 $string['webcontent'] = 'Contingut remot';
@@ -89,7 +86,6 @@ $string['publishers'] 			= 'Proveïdors de continguts';
 $string['no_publishers'] 		= 'No hi ha proveïdors de continguts disponibles';
 $string['without_credentials'] 		= 'Usuaris sense credencials';
 $string['with_credentials'] 		= 'Usuaris amb credencials';
-$string['back_to_stats'] 		= 'Torna';
 $string['good_connection'] 		= 'Connexió correcta';
 $string['bad_connection'] 		= 'S\'ha produït un problema en intentar connectar';
 $string['bad_wsdl_connection']          = 'Comprova l\'adreça del servei web d\'autenticació';
@@ -198,7 +194,8 @@ $string['rcommon_data_store_log_desc'] = 'Indiqui el directori per guardar el se
 $string['units_and_activities'] = 'Unitats i activitats del llibre';
 $string['no_units'] = 'El llibre no conté unitats';
 $string['no_activities'] = 'La unitat no conté activitats';
-
+$string['unit'] = 'Unitat';
+$string['activity'] = 'Activitat';
 
 $string['importcsv'] = 'Importa des d\'un fitxer CSV';
 $string['importcsv_help'] = "<p>El fitxer d'importació ha de ser un CSV codificat amb UTF-8 i amb els camps seg&uuml;ents separats per punts i comes (;):</p>
@@ -225,3 +222,4 @@ Els possibles missatges d'error que es poden produir són:</p>
     <li>Fitxer buit</li>
 </ul>
 <p>Cal tenir en compte que si hi ha errors, caldrà revisar-los i reparar-los per poder continuar amb el procés d'importació.</p>";
+$string['addeddate']        = 'Afegit';

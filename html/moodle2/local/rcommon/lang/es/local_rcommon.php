@@ -5,7 +5,6 @@ $string['rcommon:authenticate'] = 'Autenticar contenido Marsupial';
 $string['rcommon:exportcredentials'] = 'Exportar credenciales de Marsupial';
 $string['rcommon:importcredentials'] = 'Importar credenciales de Marsupial';
 $string['rcommon:managecredentials'] = 'Gestionar credenciales de Marsupial';
-$string['rcommon:manageowncredentials'] = 'Gestionar credenciales de Marsupial propias';
 $string['rcommon:managepublishers'] = 'Gestionar proveedores de Marsupial';
 
 $string['addnewpublisher'] = 'Añadir nuevo proveedor';
@@ -32,19 +31,17 @@ $string['error_code_-7'] = 'Rol incorrecto';
 $string['error_code_-101'] = 'Autenticación incorrecta. El usuario que solicita acceso a este método del servicio Web no es correcto.';
 $string['error_code_-102'] = 'Autenticación incorrecta. El usuario que solicita acceso a este método del servicio Web no tiene permisos suficientes.';
 
-$string['exit'] = 'Salir';
-$string['insertkeybtn'] = 'Añade la clave';
 $string['insertkeymsg'] = 'Introduce una clave para este recurso';
 $string['key'] = 'Clave';
-$string['keyadd'] = 'Añadir la clave';
-$string['keyaddingforuser'] = 'Añadiendo una clave para el usuario/a';
+$string['keyadd'] = 'Añadir clave';
+$string['keyaddingforuser'] = 'Añadiendo una clave para el usuario/a <strong>{$a}</strong>';
+$string['keyeditingforuser'] = 'Editando una clave para el usuario/a <strong>{$a}</strong>';
 $string['keyconfirmdelete'] = 'Seguro que quieres eliminar esta clave?';
 $string['keydelbtn'] = 'Eliminar';
 $string['keymanager'] = 'Administración de claves de los usuarios';
 $string['keysadminsearchuserbtn'] = 'Gestionar las claves';
 $string['keyslookupusertext'] = 'Escoge un usuario/a para gestionar sus claves';
 $string['keysshowingfor'] = 'Gestiona las claves del usuario/a';
-$string['loading'] = 'Descargando, por favor espere...';
 $string['nokeybtn'] = 'No tengo ninguna clave';
 $string['manage'] = 'Gestionar';
 $string['noactivity'] = 'Actividad no encontrada';
@@ -58,10 +55,15 @@ $string['rcommon'] = 'Recursos remotos';
 $string['save'] = 'Guardar';
 $string['saveok'] = 'Saved correctly';
 $string['saveko'] = 'No ha estat possible desar les dades, si us plau torni a intentar-ho';
+$string['show_all_books'] = 'Mostrar todos los libros';
+$string['show_valid_books'] = 'Mostrar solo los libros válidos';
+$string['delete_book_confirm'] = '¿Estas seguro que quieres eliminar el libro {$a}?<br> Todos los datos y actividades se eliminrán';
+$string['book_deleted'] = 'Libro {$a} eliminado';
+$string['book_deleted_act_error'] = 'El libro {$a} no se puede eliminar, ya que se está usando en alguna actividad y deben ser eliminadas antes manualmente.';
+$string['book_deleted_cred_error'] = 'El libro {$a} no se puede eliminar, ya que tiene credenciales asignadas y deben ser desasignadas antes manualmente.';
+$string['deleted_book'] = 'Libro eliminado';
+$string['used_modules'] = 'Módulos donde se usa este libro';
 $string['savekoemptyvalues'] = 'No ha estat possible desar les dades, almenys el camp codi s\'ha d\'omplir.';
-$string['selectpublisher'] = 'Seleccione un proveedor de contenidos...';
-$string['selectpublisherdescription'] = 'To download all the book structures it is necessary to select a publisher';
-$string['selectpublisheredit'] = 'Seleccione un proveedor de contenidos para editar sus datos';
 $string['teacherroles'] = 'Roles profesor';
 $string['teacherrolesinfo'] = 'Roles que se autenticar&aacute;n en las editoriales como usuario profesor. El resto se autenticar&aacute;n como estudiante';
 $string['urlmoreinfo'] = '<a href="{$a}" target="_blank">Más información del error</a>';
@@ -70,12 +72,8 @@ $string['urlwsbookstructure'] = 'Dirección del servicio web de estructura de li
 $string['userhasnokeys'] = 'Este usuario/a no tiene claves registradas';
 $string['usernotfound'] = 'Usuario/a inv&acute;lido o inexistente';
 $string['marsupialcontent'] = 'Contenidos';
-$string['marsupialusersync'] = 'Sincronizar con &Agrave;tria';
-$string['marsupialupdate_publisher'] = 'Actualizar proveedores';
 $string['marsupialmanage_publisher'] = 'Gestionar proveedores';
-$string['marsupialpublisher'] = 'Proveedores';
 $string['marsupialcredentials'] = 'Credenciales';
-$string['marsupialget_credentials'] = 'Actualizar credenciales';
 $string['marsupialmanage_credentials'] = 'Gestionar por usuarios';
 $string['scorm'] = 'SCORM remoto';
 $string['webcontent'] = 'Contenido remoto';
@@ -87,7 +85,6 @@ $string['publishers'] 			= 'Proveedores';
 $string['no_publishers'] 		= 'No existen proveedores disponibles';
 $string['without_credentials'] 		= 'Usuarios sin credenciales';
 $string['with_credentials'] 		= 'Usuarios con credenciales';
-$string['back_to_stats'] 		= 'Vuelve a la portada';
 $string['good_connection'] 		= 'Conexión correcta';
 $string['bad_connection'] 		= 'Se ha producido un problema con la conexión';
 $string['bad_wsdl_connection']          = 'Comprueba dirección del servicio web de autenticación';
@@ -193,6 +190,8 @@ $string['rcommon_data_store_log_desc'] = 'Indique el directoro para guardar el s
 $string['units_and_activities'] = 'Unidades y actividades del libro';
 $string['no_units'] = 'El libro no contiene unidades';
 $string['no_activities'] = 'La unidad no contiene actividades';
+$string['unit'] = 'Unidad';
+$string['activity'] = 'Actividad';
 
 $string['importcsv'] = 'Importa des de un archivo CSV';
 $string['importcsv_help'] = "<p>El fitxer d'importació ha de ser un CSV codificat amb UTF-8 i amb els camps seg&uuml;ents separats per punts i comes (;):</p>
@@ -219,3 +218,4 @@ Els possibles missatges d'error que es poden produir són:</p>
     <li>Fitxer buit</li>
 </ul>
 <p>Cal tenir en compte que si hi ha errors, caldr&agrave; revisar-los i reparar-los per poder continuar amb el procés d'importació.</p>";
+$string['addeddate']        = 'Añadido';
