@@ -1,20 +1,23 @@
 #!/bin/bash
 
-#Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2/
+#Exemple invocació: ./prepare_package.sh
 
-version=14.09.16
+version=14.11.27
 
-if [ $# == 0 ]; then
-	echo "Script per actualitzar els espais Moodle d'Agora"
-	echo "Forma d'ús: ./prepare_package.sh [path_origen]"
-	echo "Exemple invocació: ./prepare_package.sh ~/git/agora/html/moodle2/"
-	exit
-fi
+git clone https://github.com/projectestac/agora_moodle2.git moodle_new
+cd moodle_new
+
+git submodule init
+sed -i 's/http:\/\/github\.com\//git@github\.com\:/g' .git/config
+git submodule update --recursive
+echo 'Submòduls actualitzats'
+find . -name '\.git*' -exec rm -rf {} \;
+cd ..
+
 
 mv html/moodle2 html/moodle2_old
-cp -Rp $1 html/moodle2
+mv moodle_new html/moodle2
 
-cp html/moodle2_old/config.php html/moodle2/config.php
 cp html/moodle2_old/settings.php html/moodle2/settings.php
 cp html/moodle2_old/.htaccess html/moodle2/.htaccess
 cp html/moodle2_old/config-works-dist.php html/moodle2/config-works-dist.php
@@ -29,6 +32,7 @@ cp html/moodle2_old/CHANGES.txt html/moodle2/CHANGES.txt
 cp -Rp html/moodle2_old/auth/odissea html/moodle2/auth/odissea
 cp -Rp html/moodle2_old/admin/tool/odisseagtafsync html/moodle2/admin/tool/odisseagtafsync
 
+rm html/moodle2/config.php
 rm html/moodle2/index_iw.php
 rm html/moodle2/site-config.php
 rm html/moodle2/config-multi.php
