@@ -222,7 +222,9 @@ foreach ($sortedqtypes as $qtypename => $localname) {
     //2012.08.20 @sarjona
     if ($needed[$qtypename] || !get_protected_agora()) {
     //************ ORIGINAL
-    //if ($needed[$qtypename]) {
+    /*
+    if ($needed[$qtypename]) {
+     */
     //************ FI
         $row[] = '';
     } else {

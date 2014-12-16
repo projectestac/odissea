@@ -52,6 +52,13 @@ function get_protected_agora() {
     return !is_agora() || is_xtecadmin();
 }
 
+function require_not_rush_hour() {
+    global $CFG;
+    if (!get_protected_agora() && is_rush_hour()) {
+         print_error('rush_hour', 'local_agora', $CFG->wwwroot);
+    }
+}
+
 function get_debug() {
     global $CFG;
 

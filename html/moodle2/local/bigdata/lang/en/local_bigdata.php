@@ -1,20 +1,19 @@
 <?php
 
-$string['pluginname'] = 'Big Data Export';
+$string['pluginname'] = 'Analytics data Export';
 $string['enabled'] = 'Enabled';
-$string['enabled_desc'] = 'Enables big data export for this site';
+$string['enabled_desc'] = 'Enables analytics export for this site';
 
 $string['courses'] = 'Courses to export';
-$string['courses_help'] = 'Select the courses to export in big data, if none selected, all courses will be exported';
+$string['courses_help'] = 'The selected courses will be exported for analytics, if none selected, all courses will be exported.';
 $string['roles'] = 'Roles to export';
-$string['roles_help'] = 'Select the roles which users will be exported in big data, if none selected, all roles will be exported';
+$string['roles_help'] = 'The users with the selected roles will be exported for analytics, if none selected, all roles will be exported.';
 $string['excludedusers'] = 'Excluded users';
-$string['excludedusers_help'] = 'Users to be excluded while exporting data, separated by commas';
+$string['excludedusers_help'] = 'List of User IDs separated by commas to be excluded from the export for analytics.';
 $string['periodicity'] = 'Periodicity';
-$string['periodicity_help'] = 'Periodicity for the cron execution';
+$string['periodicity_help'] = 'Periodicity for the export cron execution.';
 $string['tablefields'] = 'Table fields';
-$string['tablefields_help'] = 'Table and fields to export';
-
+$string['tablefields_help'] = 'Table and fields to export.';
 
 $string['add_profile'] = 'Add profile';
 $string['edit_profile'] = 'Edit profile {$a}';

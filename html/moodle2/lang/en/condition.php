@@ -16,14 +16,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'condition', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'condition', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package   condition
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
 
 $string['addcompletions'] = 'Add {no} activity conditions to form';
 $string['addgrades'] = 'Add {no} grade conditions to form';
@@ -63,11 +61,10 @@ $string['gradeconditionsection'] = 'Grade condition';
 $string['gradeconditionsection_help'] = 'This setting determines any grade conditions which must be met in order to access the section.
 
 Multiple grade conditions may be set if desired. If so, the section will only allow access when ALL grade conditions are met.';
+$string['grade_upto'] = 'and less than';
 $string['gradeitembutnolimits'] = 'You must enter an upper or lower limit, or both.';
 $string['gradelimitsbutnoitem'] = 'You must choose a grade item.';
 $string['gradesmustbenumeric'] = 'The minimum and maximum grades must be numeric (or blank).';
-$string['grade_upto'] = 'and less than';
-$string['groupingnoaccess'] = 'You do not currently belong to a group which has access to this section.';
 $string['isempty'] = 'is empty';
 $string['isequalto'] = 'is equal to';
 $string['isnotempty'] = 'is not empty';
@@ -94,13 +91,14 @@ $string['requires_user_field_isequalto'] = 'Not available unless your <strong>{$
 $string['requires_user_field_isnotempty'] = 'Not available if your <strong>{$a->field}</strong> is empty.';
 $string['requires_user_field_startswith'] = 'Not available unless your <strong>{$a->field}</strong> starts withs <strong>{$a->value}</strong>.';
 $string['showavailability'] = 'While access is prevented';
-$string['showavailability_hide'] = 'Hide activity entirely in the course and gradebook';
 $string['showavailabilitysection'] = 'Before section can be accessed';
+$string['showavailability_hide'] = 'Hide activity entirely in the course and gradebook';
+$string['showavailability_show'] = 'Show activity greyed-out, with restriction information';
 $string['showavailabilitysection_hide'] = 'Hide section entirely';
 $string['showavailabilitysection_show'] = 'Show section greyed-out, with restriction information';
-$string['showavailability_show'] = 'Show activity greyed-out, with restriction information';
 $string['startswith'] = 'starts with';
 $string['userfield'] = 'User field';
 $string['userfield_help'] = 'You can restrict access based on any field from the users profile.';
 $string['userrestriction_hidden'] = 'Restricted (completely hidden, no message): {$a}';
 $string['userrestriction_visible'] = 'Restricted: {$a}';
+$string['groupingnoaccess'] = 'You do not currently belong to a group which has access to this section. ';

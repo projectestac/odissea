@@ -70,19 +70,32 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	public function getGrammarUrl($studentAnswer) {
 		$prefix = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL);
 		$prefix .= "/grammar/";
-		$i = null;
+		$url = null;
 		if($this->assertions !== null) {
-			$_g1 = 0; $_g = $this->assertions->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$a = $this->assertions[$i1];
-				if($a->getAnswer() === $studentAnswer && $a->isSyntactic()) {
-					return $prefix . com_wiris_quizzes_impl_QuestionImpl::syntacticAssertionToURL($a);
+			$i = null;
+			{
+				$_g1 = 0; $_g = $this->assertions->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$a = $this->assertions[$i1];
+					if($a->isSyntactic()) {
+						if($a->hasAnswer($studentAnswer)) {
+							$url = $prefix . com_wiris_quizzes_impl_QuestionImpl::syntacticAssertionToURL($a);
+							break;
+						} else {
+							if($url === null) {
+								$url = $prefix . com_wiris_quizzes_impl_QuestionImpl::syntacticAssertionToURL($a);
+							}
+						}
+					}
+					unset($i1,$a);
 				}
-				unset($i1,$a);
 			}
 		}
-		return $prefix . "Expression";
+		if($url === null) {
+			$url = $prefix . "Expression";
+		}
+		return $url;
 	}
 	public function addAssertion($name, $correctAnswer, $studentAnswer, $parameters) {
 		$this->setParametrizedAssertion($name, $correctAnswer, $studentAnswer, $parameters);

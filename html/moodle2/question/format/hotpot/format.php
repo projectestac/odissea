@@ -316,7 +316,7 @@ class qformat_hotpot extends qformat_default {
                 $text = $source->xml_value($tags,  $answer."['text'][0]['#']");
                 $correct = $source->xml_value($tags, $answer."['correct'][0]['#']");
                 if (strlen($text) && intval($correct)) {
-                    $wordlist[] = $text;
+                    $wordlist[] = $this->hotpot_prepare_str($text);
                     $aa++;
                 }
                 $a++;
@@ -671,12 +671,18 @@ class qformat_hotpot extends qformat_default {
     function hotpot_prepare_str($str)  {
         // convert html entities to unicode
 
+        if (class_exists('core_text')) {
+            // Moodle >= 2.6
+            return core_text::entities_to_utf8($str, true);
+        }
+
         if (method_exists('textlib', 'textlib')) {
             // Moodle 2.0 and 2.1
             $textlib = textlib_get_instance();
             return $textlib->entities_to_utf8($str, true);
         }
 
+        // Moodle 2.2 - 2.5
         return textlib::entities_to_utf8($str, true);
     }
 } // end class

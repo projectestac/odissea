@@ -8,6 +8,9 @@ class com_wiris_plugin_impl_CustomConfigurationUpdater implements com_wiris_plug
 	public function updateConfiguration(&$configuration) {
 		$configuration = $configuration;
 		$confClass = com_wiris_system_PropertiesTools::getProperty($configuration, com_wiris_plugin_api_ConfigurationKeys::$CONFIGURATION_CLASS, null);
+		if($confClass !== null && _hx_index_of($confClass, "com.wiris.plugin.servlets.configuration.ParameterServletConfigurationUpdater", null) !== -1) {
+			return;
+		}
 		if($confClass !== null) {
 			$cls = Type::resolveClass($confClass);
 			if($cls === null) {

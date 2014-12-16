@@ -17,9 +17,22 @@ class com_wiris_plugin_impl_CasImpl implements com_wiris_plugin_api_Cas{
 	}
 	public function printCASContainer($config, $availableLanguages, $lang) {
 		$output = new StringBuf();
-		$output->add("<html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/><script type=\"text/javascript\" src=\"../lang/");
+		$output->add("<html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/><script>");
+		$output->add("var lang ='");
 		$output->add($lang);
-		$output->add("/strings.js\"></script><script type=\"text/javascript\" src=\"../core/cas.js\"></script><title>WIRIS CAS</title><style type=\"text/css\">");
+		$output->add("/strings.js';");
+		$output->add(" ");
+		$output->add(" var scriptsrc =  window.opener._wrs_conf_path + '/lang/' + lang;");
+		$output->add(" var script = document.createElement('script'); ");
+		$output->add(" script.src = scriptsrc;");
+		$output->add(" document.head.appendChild(script);");
+		$output->add("</script><script>");
+		$output->add("var scriptsrc = window.opener._wrs_conf_path + '/core/cas.js'; ");
+		$output->add(" var script = document.createElement('script'); ");
+		$output->add(" script.src = scriptsrc;");
+		$output->add(" document.head.appendChild(script);");
+		$output->add("</script>");
+		$output->add("<title>WIRIS CAS</title><style type=\"text/css\">");
 		$output->add("/*<!--*/ html, body, #optionForm { height: 100%; } body { overflow: hidden; margin: 0; } #controls { width: 100%; } /*-->*/</style></head>");
 		$output->add("<body><form id=\"optionForm\"><div id=\"appletContainer\"></div><table id=\"controls\"><tr><td>Width</td><td><input name=\"width\" type=\"text\" value=\"");
 		$output->add($config->getProperty(com_wiris_plugin_api_ConfigurationKeys::$CAS_WIDTH, null));

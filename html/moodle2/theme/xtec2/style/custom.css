@@ -101,8 +101,8 @@ h3{
 	text-shadow: 0 1px 0 [[setting:color3a]];
 }
 
-.block .header a,  #dockeditempanel .dockeditempanel_hd a,
-.block .header a i.fa,  #dockeditempanel .dockeditempanel_hd a  i.fa{
+.block .header .menubar a,  #dockeditempanel .dockeditempanel_hd .menubar  a,
+.block .header .menubar a  i.fa,  #dockeditempanel .dockeditempanel_hd .menubar a  i.fa{
 	color: [[setting:color3]];
 }
 
@@ -114,6 +114,7 @@ h3{
 	filter: brightness(0) [[setting:color3b]];
 }
 
+#dockeditempanel .dockeditempanel_hd  .menu img,
 .block .header .moodle-actionmenu[data-enhanced] .menu img{
 	-webkit-filter: none;
 	-moz-filter: none;
@@ -638,16 +639,6 @@ body.path-grade-report-grader #user-grades {
 	color: black;
 }
 
- /* MDL-43462 Landscape PDFs are not shown correctly in EditPDF */
-.assignfeedback_editpdf_widget {
-	min-width: 840px;
-	width: auto !important;
- }
-.assignfeedback_editpdf_widget .drawingcanvas {
-    min-width: 1200px;
-    min-height: 800px;
-}
-
 
 /* Phones and tablets */
 @media (max-width: 979px) {
@@ -706,45 +697,40 @@ body.path-grade-report-grader #user-grades {
 
 @media (min-width: 979px) {
 	/* Better grader */
-	body.blocks_collapsed#page-mod-assign-view,
-	body.blocks_collapsed.path-grade-report-grader{
+	body.blocks_collapsed.super_collapse{
 		height: 100%;
 	}
 
-	body.blocks_collapsed#page-mod-assign-view #page-footer,
-	body.blocks_collapsed#page-mod-assign-view #title-header,
-	body.blocks_collapsed.path-grade-report-grader #page-footer,
-	body.blocks_collapsed.path-grade-report-grader #title-header,
-	body.blocks_collapsed.path-grade-report-grader #page-header,
-	body.blocks_collapsed.path-grade-report-grader .urlselect,
-	body.blocks_collapsed.path-grade-report-grader .paging,
-	body.blocks_collapsed.path-grade-report-grader h2{
+	body.blocks_collapsed.super_collapse #page-footer,
+	body.blocks_collapsed.super_collapse #title-header,
+	body.blocks_collapsed.super_collapse #page-header,
+	body.blocks_collapsed.super_collapse .urlselect,
+	body.blocks_collapsed.super_collapse .paging,
+	body.blocks_collapsed.super_collapse h2{
 		display: none;
 	}
 
-	body.blocks_collapsed.path-grade-report-grader #page{
+	body.blocks_collapsed.super_collapse #page{
 		max-width: none;
 		padding: 0;
 		margin-top: 36px;
 	}
 
-	body.blocks_collapsed#page-mod-assign-view table,
-	/*body.blocks_collapsed.path-grade-report-grader div.gradeparent,*/
-	body.blocks_collapsed.path-grade-report-grader div.gradeparent>table#user-grades {
+	body.blocks_collapsed.super_collapse table.generaltable,
+	body.blocks_collapsed.super_collapse div.gradeparent>table#user-grades {
 		margin-top: 77px;
 		top: 0;
 		left: 0;
 		position: absolute;
 		width: 100%;
-		height: 100%;
+        /*height: 100%;*/
 		max-height: 100%;
 		background-color: white;
 		font-size: 12px;
 	}
 
 
-	body.blocks_collapsed#page-mod-assign-view #main_navigation,
-	body.blocks_collapsed.path-grade-report-grader #main_navigation{
+	body.blocks_collapsed.super_collapse #main_navigation {
 		position: fixed;
 		z-index: 4030;
 		top: 41px;

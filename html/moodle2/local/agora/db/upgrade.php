@@ -25,13 +25,15 @@ function xmldb_local_agora_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-
-
     if ($oldversion < 2014022400) {
-    	$DB->set_field('course','format','simple',array('format'=>'senzill'));
+    	$DB->set_field('course', 'format', 'simple', array('format' => 'senzill'));
         upgrade_plugin_savepoint(true, 2014022400, 'local', 'agora');
     }
 
+    if ($oldversion < 2014121100) {
+        $DB->delete_records('events_handlers', array('eventname' => 'user_logout', 'component' => 'mod_chat'));
+        upgrade_plugin_savepoint(true, 2014121100, 'local', 'agora');
+    }
 
     return true;
 }

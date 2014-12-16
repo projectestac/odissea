@@ -14,6 +14,8 @@ class script_upgrade_moodle extends agora_script_base{
 	protected function _execute($params = array(), $execute = true){
 		global $CFG, $DB, $OUTPUT, $agora;
 
+		define('IGNORE_COMPONENT_CACHE', true);
+
 		$interactive = false;
 		$allow_unstable = false;
 

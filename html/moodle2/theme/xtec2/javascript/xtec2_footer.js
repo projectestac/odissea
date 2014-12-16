@@ -86,6 +86,12 @@ function showhideblocks(){
         if(main_pre == null) main_pre = Y.one('#region-bs-main-and-post');
         var main_post = Y.one('#region-main');
 
+        if (!Y.one('body').hasClass('super_collapse')) {
+            if (Y.one('.gradeparent') || Y.one('.gradingtable') || Y.one('#page-grade-report-user-index') || Y.one('#page-report-progress-index')) {
+                Y.one('body').addClass('super_collapse');
+            }
+        }
+
         if(blocks_shown){
             //Hide
             Y.one('#block-region-side-post').hide();

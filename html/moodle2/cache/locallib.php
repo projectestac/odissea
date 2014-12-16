@@ -727,7 +727,8 @@ abstract class cache_administration_helper extends cache_helper {
                     'nativelocking' => ($store instanceof cache_is_lockable),
                     'keyawareness' => ($store instanceof cache_is_key_aware),
                     'searchable' => ($store instanceof cache_is_searchable)
-                )
+                ),
+                'warnings' => $store->get_warnings()
             );
             if (empty($details['default'])) {
                 $return[$name] = $record;

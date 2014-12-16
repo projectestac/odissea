@@ -54,7 +54,7 @@ function hotpot_supports($feature) {
         'FEATURE_ADVANCED_GRADING' => true, // default=false
         'FEATURE_BACKUP_MOODLE2'   => true, // default=false
         'FEATURE_COMMENT'          => true,
-        'FEATURE_COMPLETION_HAS_RULES' => true,
+        'FEATURE_COMPLETION_HAS_RULES' => false, // requires "hotpot_get_completion_state()"
         'FEATURE_COMPLETION_TRACKS_VIEWS' => true,
         'FEATURE_CONTROLS_GRADE_VISIBILITY' => true,
         'FEATURE_GRADE_HAS_GRADE'  => true, // default=false
@@ -227,7 +227,7 @@ function hotpot_process_formdata(stdclass &$data, $mform) {
 
         // default activity name is simply "HotPot"
         if ($textfield=='name' && $data->$textfield=='') {
-            $data->$textfield = get_string('modulename', 'hotpot');
+            $data->$textfield = get_string('modulename', 'mod_hotpot');
         }
     }
 
@@ -430,9 +430,9 @@ function hotpot_user_outline($course, $user, $mod, $hotpot) {
         $scores[] = hotpot::format_score($attempt);
     }
     if (count($scores)) {
-        $info = get_string('score', 'hotpot').': '.implode(', ', $scores);
+        $info = get_string('score', 'mod_hotpot').': '.implode(', ', $scores);
     } else {
-        $info = get_string('noactivity', 'hotpot');
+        $info = get_string('noactivity', 'mod_hotpot');
     }
 
     return (object)array('time'=>$time, 'info'=>$info);
@@ -447,7 +447,7 @@ function hotpot_user_outline($course, $user, $mod, $hotpot) {
 function hotpot_user_complete($course, $user, $mod, $hotpot) {
     $report = hotpot_user_outline($course, $user, $mod, $hotpot);
     if (empty($report)) {
-        echo get_string("noactivity", 'hotpot');
+        echo get_string("noactivity", 'mod_hotpot');
     } else {
         $date = userdate($report->time, get_string('strftimerecentfull'));
         echo $report->info.' '.get_string('mostrecently').': '.$date;
@@ -549,11 +549,11 @@ function hotpot_print_recent_activity($course, $viewfullnames, $timestart) {
         }
 
         $strusers     = get_string('users');
-        $stradded     = get_string('added',    'hotpot');
-        $strupdated   = get_string('updated',  'hotpot');
-        $strviews     = get_string('views',    'hotpot');
-        $strattempts  = get_string('attempts', 'hotpot');
-        $strsubmits   = get_string('submits',  'hotpot');
+        $stradded     = get_string('added',    'mod_hotpot');
+        $strupdated   = get_string('updated',  'mod_hotpot');
+        $strviews     = get_string('views',    'mod_hotpot');
+        $strattempts  = get_string('attempts', 'mod_hotpot');
+        $strsubmits   = get_string('submits',  'mod_hotpot');
 
         $print_headline = true;
         ksort($stats);
@@ -587,7 +587,7 @@ function hotpot_print_recent_activity($course, $viewfullnames, $timestart) {
             if (count($li)) {
                 if ($print_headline) {
                     $print_headline = false;
-                    echo $OUTPUT->heading(get_string('modulenameplural', 'hotpot').':', 3);
+                    echo $OUTPUT->heading(get_string('modulenameplural', 'mod_hotpot').':', 3);
                 }
 
                 $url = new moodle_url('/mod/hotpot/view.php', array('id'=>$stat->cmid));
@@ -881,7 +881,7 @@ function hotpot_print_recent_mod_activity($activity, $courseid, $detail, $modnam
 * @return array(string) of text strings used to log HotPot view actions
 */
 function hotpot_get_view_actions() {
-    return array('view', 'viewindex', 'report', 'review');
+    return array('view', 'index', 'report', 'review');
 }
 
 /*
@@ -1034,7 +1034,7 @@ function hotpot_update_grades($hotpot=null, $userid=0, $nullifnone=true) {
         // update/create grades for all hotpots
 
         // set up sql strings
-        $strupdating = get_string('updatinggrades', 'hotpot');
+        $strupdating = get_string('updatinggrades', 'mod_hotpot');
         $select = 'h.*, cm.idnumber AS cmidnumber';
         $from   = '{hotpot} h, {course_modules} cm, {modules} m';
         $where  = 'h.id = cm.instance AND cm.module = m.id AND m.name = ?';
@@ -1169,9 +1169,9 @@ function hotpot_update_grades($hotpot=null, $userid=0, $nullifnone=true) {
  */
 function hotpot_get_file_areas($course, $cm, $context) {
     return array(
-        'entry'      => get_string('entrytext',  'hotpot'),
-        'exit'       => get_string('exittext',   'hotpot'),
-        'sourcefile' => get_string('sourcefile', 'hotpot')
+        'entry'      => get_string('entrytext',  'mod_hotpot'),
+        'exit'       => get_string('exittext',   'mod_hotpot'),
+        'sourcefile' => get_string('sourcefile', 'mod_hotpot')
     );
 }
 
@@ -1286,10 +1286,9 @@ function hotpot_pluginfile($course, $cm, $context, $filearea, $args, $forcedownl
  * @param string $filearea  'sourcefile', 'entrytext' or 'exittext'
  * @param string $filepath  despite the name, this is a dir path with leading and trailing "/"
  * @param string $filename
- * @param array $file_record
  * @return stdclass if external file found, false otherwise
  */
-function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepath, $filename, $file_record) {
+function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepath, $filename) {
 
     // get file storage
     $fs = get_file_storage();
@@ -1406,41 +1405,73 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
     $params = array();
     if ($encodepath) {
         $listing = $repository->get_listing();
-        if (isset($listing['list'][0]['path'])) {
-            $params = file_storage::unpack_reference($listing['list'][0]['path'], true);
+        switch (true) {
+            case isset($listing['list'][0]['source']): $param = 'source'; break; // file
+            case isset($listing['list'][0]['path']):   $param = 'path';   break; // dir
+            default: return false; // shouldn't happen !!
+        }
+        $params = $listing['list'][0][$param];
+        switch ($type) {
+            case 'user':
+                $params = json_decode(base64_decode($params), true);
+                break;
+            case 'coursefiles':
+                $params = file_storage::unpack_reference($params, true);
+                break;
         }
     }
 
     foreach ($paths as $path => $source) {
 
-        if (! hotpot_pluginfile_dirpath_exists($path, $repository, $encodepath, $params)) {
+        if (! hotpot_pluginfile_dirpath_exists($path, $repository, $type, $encodepath, $params)) {
             continue;
         }
 
         if ($encodepath) {
             $params['filepath'] = '/'.$path.($path=='' ? '' : '/');
             $params['filename'] = '.'; // "." signifies a directory
-            $path = file_storage::pack_reference($params);
+            switch ($type) {
+                case 'user':
+                    $path = base64_encode(json_encode($params));
+                    break;
+                case 'coursefiles':
+                    $path = file_storage::pack_reference($params);
+                    break;
+            }
         }
 
         $listing = $repository->get_listing($path);
         foreach ($listing['list'] as $file) {
 
-            if (empty($file['source'])) {
-                continue; // a directory - shouldn't happen !!
+            switch (true) {
+                case isset($file['source']): $param = 'source'; break; // file
+                case isset($file['path']):   $param = 'path';   break; // dir
+                default: continue; // shouldn't happen !!
             }
 
             if ($encodepath) {
-                $file['source'] = file_storage::unpack_reference($file['source']);
-                $file['source'] = trim($file['source']['filepath'], '/').'/'.$file['source']['filename'];
+                switch ($type) {
+                    case 'user':
+                        $file[$param] = json_decode(base64_decode($file[$param]), true);
+                        break;
+                    case 'coursefiles':
+                        $file[$param] = file_storage::unpack_reference($file[$param]);
+                        break;
+                }
+                $file[$param] = trim($file[$param]['filepath'], '/').'/'.$file[$param]['filename'];
             }
 
-            if ($file['source']==$source) {
+            if ($file[$param]==$source) {
 
                 if ($encodepath) {
                     $params['filename'] = $filename;
                     $source = file_storage::pack_reference($params);
                 }
+
+                $file_record = array(
+                    'contextid' => $context->id, 'component' => $component, 'filearea' => $filearea,
+                    'sortorder' => 0, 'itemid' => 0, 'filepath' => $filepath, 'filename' => $filename
+                );
 
                 if ($file = $fs->create_file_from_reference($file_record, $repositoryid, $source)) {
                     return $file;
@@ -1459,11 +1490,12 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
  *
  * @param string   $dirpath
  * @param stdclass $repository
+ * @param string   $type ("user" or "coursefiles")
  * @param boolean  $encodepath
  * @param array    $params
  * @return boolean true if dir path exists in repository, false otherwise
  */
-function hotpot_pluginfile_dirpath_exists($dirpath, $repository, $encodepath, $params) {
+function hotpot_pluginfile_dirpath_exists($dirpath, $repository, $type, $encodepath, $params) {
     $dirs = explode('/', $dirpath);
     foreach ($dirs as $i => $dir) {
         $dirpath = implode('/', array_slice($dirs, 0, $i));
@@ -1471,17 +1503,22 @@ function hotpot_pluginfile_dirpath_exists($dirpath, $repository, $encodepath, $p
         if ($encodepath) {
             $params['filepath'] = '/'.$dirpath.($dirpath=='' ? '' : '/');
             $params['filename'] = '.'; // "." signifies a directory
-            $dirpath = file_storage::pack_reference($params);
+            switch ($type) {
+                case 'user':
+                    $dirpath = base64_encode(json_encode($params));
+                    break;
+                case 'coursefiles':
+                    $dirpath = file_storage::pack_reference($params);
+                    break;
+            }
         }
 
         $exists = false;
         $listing = $repository->get_listing($dirpath);
         foreach ($listing['list'] as $file) {
-            if (empty($file['source'])) {
-                if ($file['title']==$dir) {
-                    $exists = true;
-                    break;
-                }
+            if (empty($file['source']) && $file['title']==$dir) {
+                $exists = true;
+                break;
             }
         }
         if (! $exists) {
@@ -1598,7 +1635,7 @@ function hotpot_extend_navigation(navigation_node $hotpotnode, stdclass $course,
         $type = navigation_node::TYPE_SETTING;
         foreach ($hotpot->get_report_modes() as $mode) {
             $url = $hotpot->report_url($mode);
-            $label = get_string($mode.'report', 'hotpot');
+            $label = get_string($mode.'report', 'mod_hotpot');
             $hotpotnode->add($label, $url, $type, null, null, $icon);
         }
     }
@@ -1626,8 +1663,8 @@ function hotpot_extend_settings_navigation(settings_navigation $settingsnav, nav
  * @param xxx $mform (passed by reference)
  */
 function hotpot_reset_course_form_definition(&$mform) {
-    $mform->addElement('header', 'hotpotheader', get_string('modulenameplural', 'hotpot'));
-    $mform->addElement('checkbox', 'reset_hotpot_deleteallattempts', get_string('deleteallattempts', 'hotpot'));
+    $mform->addElement('header', 'hotpotheader', get_string('modulenameplural', 'mod_hotpot'));
+    $mform->addElement('checkbox', 'reset_hotpot_deleteallattempts', get_string('deleteallattempts', 'mod_hotpot'));
 }
 
 /**
@@ -1685,8 +1722,8 @@ function hotpot_reset_userdata($data) {
     }
 
     return array(array(
-        'component' => get_string('modulenameplural', 'hotpot'),
-        'item' => get_string('deleteallattempts', 'hotpot'),
+        'component' => get_string('modulenameplural', 'mod_hotpot'),
+        'item' => get_string('deleteallattempts', 'mod_hotpot'),
         'error' => false
     ));
 }
@@ -1794,8 +1831,8 @@ function hotpot_update_events(&$hotpot, &$eventids, $delete) {
         // set $maxduration (secs) from $maxeventlength (days)
         $maxduration = $maxeventlength * 24 * 60 * 60;
 
-        $stropens = get_string('activityopens', 'hotpot');
-        $strcloses = get_string('activitycloses', 'hotpot');
+        $stropens = get_string('activityopens', 'mod_hotpot');
+        $strcloses = get_string('activitycloses', 'mod_hotpot');
     }
 
     // array to hold events for this hotpot
@@ -1958,13 +1995,89 @@ function hotpot_textlib() {
 
 /**
  * hotpot_add_to_log
+ *
+ * @param integer $courseid
+ * @param string  $module name e.g. "hotpot"
+ * @param string  $action
+ * @param string  $url (optional, default='')
+ * @param string  $info (optional, default='') often a hotpot id
+ * @param string  $cmid (optional, default=0)
+ * @param integer $userid (optional, default=0)
  */
-function hotpot_add_to_log($courseid, $module, $action, $url='', $info='', $cm=0, $user=0) {
+function hotpot_add_to_log($courseid, $module, $action, $url='', $info='', $cmid=0, $userid=0) {
+    global $DB, $PAGE;
+
+    // detect new event API (Moodle >= 2.6)
     if (function_exists('get_log_manager')) {
-        $manager = get_log_manager();
-        $manager->legacy_add_to_log($courseid, $module, $action, $url, $info, $cm, $user);
+
+        // map old $action to new $eventname
+        switch ($action) {
+            case 'attempt': $eventname = 'attempt_started';      break;
+            case 'index':   $eventname = 'course_module_instance_list_viewed'; break;
+            case 'report':  $eventname = 'report_viewed';        break;
+            case 'review':  $eventname = 'attempt_reviewed';     break;
+            case 'submit':  $eventname = 'attempt_submitted';    break;
+            case 'view':    $eventname = 'course_module_viewed'; break;
+            default: $eventname = $action;
+        }
+
+        $classname = '\\mod_hotpot\\event\\'.$eventname;
+        if (class_exists($classname)) {
+
+            if ($action=='index') {
+                // course context
+                if ($PAGE->course && $PAGE->course->id==$courseid) {
+                    // normal Moodle use
+                    $objectid = $PAGE->course->id;
+                    $context  = $PAGE->context;
+                    $course   = $PAGE->course;
+                } else if ($courseid) {
+                    // Moodle upgrade
+                    $objectid = $courseid;
+                    $context  = hotpot_get_context(CONTEXT_COURSE, $courseid);
+                    $course   = $DB->get_record('course', array('id' => $courseid));
+                } else {
+                    $objectid = 0; // shouldn't happen !!
+                }
+                $hotpot = null;
+            } else {
+                // course module context
+                if ($PAGE->cm && $PAGE->cm->id==$cmid) {
+                    // normal Moodle use
+                    $objectid = $PAGE->cm->instance;
+                    $context  = $PAGE->context;
+                    $course   = $PAGE->course;
+                    $hotpot   = $PAGE->activityrecord;
+                } else if ($cmid) {
+                    // Moodle upgrade
+                    $objectid = $DB->get_field('course_modules', 'instance', array('id' => $cmid));
+                    $context  = hotpot_get_context(CONTEXT_MODULE, $cmid);
+                    $course   = $DB->get_record('course', array('id' => $courseid));
+                    $hotpot   = $DB->get_record('hotpot', array('id' => $objectid));
+                } else {
+                    $objectid = 0; // shouldn't happen !!
+                }
+            }
+
+            if ($objectid) {
+                // use call_user_func() to prevent syntax error in PHP 5.2.x
+                $params = array('context'  => $context,
+                                'objectid' => $objectid,
+                                'relateduserid' => $userid);
+                $event = call_user_func(array($classname, 'create'), $params);
+                if ($course) {
+                    $event->add_record_snapshot('course', $course);
+                }
+                if ($hotpot) {
+                    $event->add_record_snapshot('hotpot', $hotpot);
+                }
+                $event->trigger();
+            }
+        }
+
     } else if (function_exists('add_to_log')) {
-        add_to_log($courseid, $module, $action, $url, $info, $cm, $user);
+        // Moodle <= 2.5
+        add_to_log($courseid, $module, $action, $url, $info, $cmid, $userid);
     }
 }
 

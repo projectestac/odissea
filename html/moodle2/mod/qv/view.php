@@ -55,7 +55,13 @@ require_login($course, true, $cm);
 
 require_capability('mod/qv:view', $qv->context);
 
-add_to_log($course->id, 'qv', 'view', "view.php?id={$cm->id}", $qv->name, $cm->id);
+$params = array(
+    'context' => $qv->context,
+    'objectid' => $qv->id
+);
+$event = \mod_qv\event\course_module_viewed::create($params);
+$event->add_record_snapshot('qv', $qv);
+
 
 /// Print the page header
 $PAGE->set_title(format_string($qv->name));

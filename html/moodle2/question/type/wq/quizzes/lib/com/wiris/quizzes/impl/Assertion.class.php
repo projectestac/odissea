@@ -197,6 +197,9 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 			$this->setCorrectAnswers($newca);
 		}
 	}
+	public function hasAnswer($a) {
+		return $this->inIntArray($a, $this->getAnswers());
+	}
 	public function hasCorrectAnswer($ca) {
 		return $this->inIntArray($ca, $this->getCorrectAnswers());
 	}
@@ -277,16 +280,23 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 	static $CHECK_UNIT_LITERAL = "check_unit_literal";
 	static $CHECK_NO_MORE_DECIMALS = "check_no_more_decimals";
 	static $CHECK_NO_MORE_DIGITS = "check_no_more_digits";
+	static $CHECK_RATIONALIZED = "check_rationalized";
+	static $CHECK_MINIMAL_RADICANDS = "check_minimal_radicands";
 	static $EQUIVALENT_SET = "equivalent_set";
 	static $syntactic;
 	static $equivalent;
 	static $structure;
 	static $checks;
+	static $BASIC_UNITS_LIST;
+	static $CURRENCY_UNITS_LIST;
+	static $ANGLE_UNITS_LIST;
+	static $PERCENT_UNITS_LIST;
+	static $ALL_UNITS_LIST;
 	static $paramdefault;
 	static $paramnames;
 	static function initParams() {
 		com_wiris_quizzes_impl_Assertion::$paramnames = new Hash();
-		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_expression", new _hx_array(array("constants", "functions", "listoperators", "groupoperators", "itemseparators", "nobracketslist")));
+		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_expression", new _hx_array(array("constants", "functions", "listoperators", "groupoperators", "itemseparators", "nobracketslist", "intervals")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_list", new _hx_array(array("constants", "functions")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_quantity", new _hx_array(array("constants", "units", "unitprefixes", "groupoperators", "mixedfractions", "itemseparators", "nobracketslist")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("check_divisible", new _hx_array(array("value")));
@@ -310,8 +320,11 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		$paramvalues->set("functions", $functions);
 		$paramvalues->set("groupoperators", $groupoperators);
 		$paramvalues->set("listoperators", $listoperators);
-		$paramvalues->set("itemseparators", "\\,,\\n");
+		$paramvalues->set("itemseparators", ";, \\n, \\,");
+		$paramvalues->set("decimalseparators", ".");
+		$paramvalues->set("digitgroupseparators", "");
 		$paramvalues->set("nobracketslist", "false");
+		$paramvalues->set("intervals", "false");
 		com_wiris_quizzes_impl_Assertion::$paramdefault->set("syntax_expression", $paramvalues);
 		$paramvalues = new Hash();
 		$paramvalues->set("constants", $constants);
@@ -321,10 +334,12 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		$paramvalues->set("constants", $constants);
 		$paramvalues->set("groupoperators", $groupoperators);
 		$paramvalues->set("listoperators", $listoperators);
-		$paramvalues->set("units", com_wiris_quizzes_impl_Assertion_1($constants, $functions, $groupoperators, $listoperators, $paramvalues) . ", ', \", sr, m, g, s, E, K, mol, cd, rad, h, min, l, N, Pa, Hz, W,J, C, V, " . com_wiris_quizzes_impl_Assertion_2($constants, $functions, $groupoperators, $listoperators, $paramvalues) . ", F, S, Wb, b, H, T, lx, lm, Gy, Bq, Sv, kat");
+		$paramvalues->set("units", com_wiris_quizzes_impl_Assertion::$ALL_UNITS_LIST);
 		$paramvalues->set("unitprefixes", "m, c, k, M");
 		$paramvalues->set("mixedfractions", "false");
-		$paramvalues->set("itemseparators", "\\n");
+		$paramvalues->set("itemseparators", ";, \\n");
+		$paramvalues->set("decimalseparators", "', " . com_wiris_quizzes_impl_Assertion_1($constants, $functions, $groupoperators, $listoperators, $paramvalues) . ", ., \\,");
+		$paramvalues->set("digitgroupseparators", "");
 		$paramvalues->set("nobracketslist", "false");
 		com_wiris_quizzes_impl_Assertion::$paramdefault->set("syntax_quantity", $paramvalues);
 		$paramvalues = new Hash();
@@ -377,7 +392,12 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 com_wiris_quizzes_impl_Assertion::$syntactic = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$SYNTAX_EXPRESSION, com_wiris_quizzes_impl_Assertion::$SYNTAX_QUANTITY, com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING));
 com_wiris_quizzes_impl_Assertion::$equivalent = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_ALL, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION));
 com_wiris_quizzes_impl_Assertion::$structure = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$CHECK_INTEGER_FORM, com_wiris_quizzes_impl_Assertion::$CHECK_FRACTION_FORM, com_wiris_quizzes_impl_Assertion::$CHECK_POLYNOMIAL_FORM, com_wiris_quizzes_impl_Assertion::$CHECK_RATIONAL_FUNCTION_FORM, com_wiris_quizzes_impl_Assertion::$CHECK_ELEMENTAL_FUNCTION_FORM, com_wiris_quizzes_impl_Assertion::$CHECK_SCIENTIFIC_NOTATION));
-com_wiris_quizzes_impl_Assertion::$checks = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$CHECK_SIMPLIFIED, com_wiris_quizzes_impl_Assertion::$CHECK_EXPANDED, com_wiris_quizzes_impl_Assertion::$CHECK_FACTORIZED, com_wiris_quizzes_impl_Assertion::$CHECK_NO_COMMON_FACTOR, com_wiris_quizzes_impl_Assertion::$CHECK_DIVISIBLE, com_wiris_quizzes_impl_Assertion::$CHECK_COMMON_DENOMINATOR, com_wiris_quizzes_impl_Assertion::$CHECK_UNIT, com_wiris_quizzes_impl_Assertion::$CHECK_UNIT_LITERAL, com_wiris_quizzes_impl_Assertion::$CHECK_NO_MORE_DECIMALS, com_wiris_quizzes_impl_Assertion::$CHECK_NO_MORE_DIGITS));
+com_wiris_quizzes_impl_Assertion::$checks = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$CHECK_SIMPLIFIED, com_wiris_quizzes_impl_Assertion::$CHECK_EXPANDED, com_wiris_quizzes_impl_Assertion::$CHECK_FACTORIZED, com_wiris_quizzes_impl_Assertion::$CHECK_RATIONALIZED, com_wiris_quizzes_impl_Assertion::$CHECK_NO_COMMON_FACTOR, com_wiris_quizzes_impl_Assertion::$CHECK_MINIMAL_RADICANDS, com_wiris_quizzes_impl_Assertion::$CHECK_DIVISIBLE, com_wiris_quizzes_impl_Assertion::$CHECK_COMMON_DENOMINATOR, com_wiris_quizzes_impl_Assertion::$CHECK_UNIT, com_wiris_quizzes_impl_Assertion::$CHECK_UNIT_LITERAL, com_wiris_quizzes_impl_Assertion::$CHECK_NO_MORE_DECIMALS, com_wiris_quizzes_impl_Assertion::$CHECK_NO_MORE_DIGITS));
+com_wiris_quizzes_impl_Assertion::$BASIC_UNITS_LIST = "m, s, g, A, K, mol, cd, rad, sr, h, min, l, N, Pa, Hz, W, J, C, V, " . com_wiris_quizzes_impl_Assertion_2() . ", F, S, Wb, b, H, T, lx, lm, Gy, Bq, Sv, kat";
+com_wiris_quizzes_impl_Assertion::$CURRENCY_UNITS_LIST = "\$, " . com_wiris_quizzes_impl_Assertion_3() . ", " . com_wiris_quizzes_impl_Assertion_4() . ", " . com_wiris_quizzes_impl_Assertion_5() . ", kr, Fr, " . com_wiris_quizzes_impl_Assertion_6() . ", " . com_wiris_quizzes_impl_Assertion_7() . ", BTC";
+com_wiris_quizzes_impl_Assertion::$ANGLE_UNITS_LIST = com_wiris_quizzes_impl_Assertion_8() . ", ', \"";
+com_wiris_quizzes_impl_Assertion::$PERCENT_UNITS_LIST = "%, " . com_wiris_quizzes_impl_Assertion_9();
+com_wiris_quizzes_impl_Assertion::$ALL_UNITS_LIST = com_wiris_quizzes_impl_Assertion::$ANGLE_UNITS_LIST . ", " . com_wiris_quizzes_impl_Assertion::$BASIC_UNITS_LIST . ", " . com_wiris_quizzes_impl_Assertion::$PERCENT_UNITS_LIST . ", " . com_wiris_quizzes_impl_Assertion::$CURRENCY_UNITS_LIST;
 function com_wiris_quizzes_impl_Assertion_0(&$paramvalues) {
 	{
 		$s = new haxe_Utf8(null);
@@ -388,14 +408,63 @@ function com_wiris_quizzes_impl_Assertion_0(&$paramvalues) {
 function com_wiris_quizzes_impl_Assertion_1(&$constants, &$functions, &$groupoperators, &$listoperators, &$paramvalues) {
 	{
 		$s = new haxe_Utf8(null);
+		$s->addChar(180);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_2() {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(937);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_3() {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(165);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_4() {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(8364);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_5() {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(163);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_6() {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(8361);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_7() {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(8377);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_Assertion_8() {
+	{
+		$s = new haxe_Utf8(null);
 		$s->addChar(176);
 		return $s->toString();
 	}
 }
-function com_wiris_quizzes_impl_Assertion_2(&$constants, &$functions, &$groupoperators, &$listoperators, &$paramvalues) {
+function com_wiris_quizzes_impl_Assertion_9() {
 	{
 		$s = new haxe_Utf8(null);
-		$s->addChar(937);
+		$s->addChar(8240);
 		return $s->toString();
 	}
 }

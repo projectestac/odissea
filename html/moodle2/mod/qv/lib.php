@@ -726,35 +726,6 @@ function mod_qv_pluginfile($course, $cm, $context, $filearea, $args, $forcedownl
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// Navigation API                                                             //
-////////////////////////////////////////////////////////////////////////////////
-
-/**
- * Extends the global navigation tree by adding qv nodes if there is a relevant content
- *
- * This can be called by an AJAX request so do not rely on $PAGE as it might not be set up properly.
- *
- * @param navigation_node $navref An object representing the navigation tree node of the qv module instance
- * @param stdClass $course
- * @param stdClass $module
- * @param cm_info $cm
- */
-function qv_extend_navigation(navigation_node $navref, stdclass $course, stdclass $module, cm_info $cm) {
-}
-
-/**
- * Extends the settings navigation with the qv settings
- *
- * This function is called when the context for the page is a qv module. This is not called by AJAX
- * so it is safe to rely on the $PAGE.
- *
- * @param settings_navigation $settingsnav {@link settings_navigation}
- * @param navigation_node $qvnode {@link navigation_node}
- */
-function qv_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $qvnode=null) {
-}
-
-////////////////////////////////////////////////////////////////////////////////
 // Reset                                                                      //
 ////////////////////////////////////////////////////////////////////////////////
 

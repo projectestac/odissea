@@ -21,7 +21,7 @@ echo $OUTPUT->heading($book->name . ' (' . $book->isbn . ')',2);
 
 // print content
 echo $OUTPUT->heading(get_string('manage_credentials', 'local_rcommon'),3);
-$credentials = $DB->get_records_sql("SELECT ruc.id, ruc.credentials, ruc.euserid, u.lastname, u.firstname FROM {rcommon_user_credentials} ruc LEFT JOIN {user} u ON ruc.euserid = u.id WHERE isbn = '{$book->isbn}' ORDER BY u.lastname, u.firstname");
+$credentials = $DB->get_records_sql("SELECT ruc.id, ruc.credentials, ruc.euserid, u.lastname, u.firstname FROM {rcommon_user_credentials} ruc LEFT JOIN {user} u ON ruc.euserid = u.id WHERE isbn = '{$book->isbn}' ORDER BY u.lastname, u.firstname, ruc.credentials");
 
 $validbook = in_array(textlib::strtolower($book->format), rcommon_book::$allowedformats);
 if ($validbook) {
@@ -31,7 +31,11 @@ if ($validbook) {
 if (empty($credentials)){
 	echo $OUTPUT->notification(get_string('keymanager_nocredentialsfound', 'local_rcommon') );
 } else {
-	echo '<form action="credentials_bulk.php?id=' . $id . '" id="frm" name="frm" method="post">';
+	$canmanage = has_capability('local/rcommon:managecredentials', context_system::instance());
+	if ($canmanage) {
+		echo '<form action="credentials_bulk.php?id=' . $id . '" id="frm" name="frm" method="post">';
+	}
+
 	$table = new html_table();
 	$table->class = 'generaltable';
 	$table->head = array('', get_string('credential', 'local_rcommon'), get_string('user', 'local_rcommon'), get_string('actions', 'local_rcommon'),"");
@@ -40,7 +44,11 @@ if (empty($credentials)){
 		$name = (!empty($credential->lastname) && $credential->lastname != ' ')? $credential->firstname . ' ' . $credential->lastname: ($credential->euserid != 0? get_string('keymanager_usernotfound', 'local_rcommon'): ' - ');
 
 		$row = array();
-		$row[] = '<input type="checkbox" name="ids[]" value="' . $credential->id . '" onChange="allow_actions();">';
+		if ($canmanage) {
+			$row[] = '<input type="checkbox" name="ids[]" value="' . $credential->id . '" onChange="allow_actions();">';
+		} else {
+			$row[] = "";
+		}
 		$row[] = '<span title="' . $credential->credentials . '">' . (textlib::strlen($credential->credentials) > 30? textlib::substr($credential->credentials, 0, 30) . '...': $credential->credentials);
 		$row[] = $name;
 		$actions = array();
@@ -53,15 +61,17 @@ if (empty($credentials)){
 		$table->data[] = $row;
 	}
 	echo html_writer::table($table);
-	echo '<select id="action" name="action" onchange="confirm_actions(this);" disabled>
-		<option value="">' . get_string('keymanager_selectaction', 'local_rcommon') . '</option>';
-	if ($validbook) {
-		echo '<option value="assign">' . get_string('keymanager_assignaction', 'local_rcommon') . '</option>';
+	if ($canmanage) {
+		echo '<select id="action" name="action" onchange="confirm_actions(this);" disabled>
+			<option value="">' . get_string('keymanager_selectaction', 'local_rcommon') . '</option>';
+		if ($validbook) {
+			echo '<option value="assign">' . get_string('keymanager_assignaction', 'local_rcommon') . '</option>';
+		}
+		echo '<option value="unassign">' . get_string('keymanager_unassignaction', 'local_rcommon') . '</option>
+			<option value="delete">' . get_string('keymanager_deleteaction', 'local_rcommon') . '</option>
+		</select> <input type="button" onclick="select_all();" value = "' . get_string('keymanager_selectall', 'local_rcommon') . '"> <input type="button" onclick="unselect_all();" value="' . get_string('keymanager_unselectall', 'local_rcommon') . '">
+		</form>';
 	}
-	echo '<option value="unassign">' . get_string('keymanager_unassignaction', 'local_rcommon') . '</option>
-		<option value="delete">' . get_string('keymanager_deleteaction', 'local_rcommon') . '</option>
-	</select> <input type="button" onclick="select_all();" value = "' . get_string('keymanager_selectall', 'local_rcommon') . '"> <input type="button" onclick="unselect_all();" value="' . get_string('keymanager_unselectall', 'local_rcommon') . '">
-	</form>';
 	$jsmodule = array(
 		'name'     => 'local_rcommon',
 		'fullpath' => '/local/rcommon/javascript.js',

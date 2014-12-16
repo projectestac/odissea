@@ -79,7 +79,16 @@ class com_wiris_plugin_impl_RenderImpl implements com_wiris_plugin_api_Render{
 	}
 	public function getMetrics($digest, &$output) {
 		$output = $output;
-		$bs = $this->showImage($digest, null, null);
+		$bs = null;
+		try {
+			$bs = $this->showImage($digest, null, null);
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				return "";
+			}
+		}
 		return $this->getMetricsFromBytes($bs, $output);
 	}
 	public function getEditorParametersList() {

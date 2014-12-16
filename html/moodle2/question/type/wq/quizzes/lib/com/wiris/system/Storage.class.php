@@ -88,12 +88,14 @@ class com_wiris_system_Storage {
 		$thisfile = "";
 		
 		$trace = debug_backtrace();
-		$thisfile = $trace[0]['file'];
 		foreach ($trace as $item) {
-			if ($item['file'] != $thisfile) {
+			if (!isset($item['class']) || (strpos($item['class'], 'com_wiris_system_') === FALSE && 
+                strpos($item['class'], 'com_wiris_std_') === FALSE && 
+                strpos($item['class'], 'com_wiris_util_') === FALSE)) {
 				return $item['file'];
 			}
 		}
+		$thisfile = $trace[0]['file'];
 		;
 		return $thisfile;
 	}

@@ -37,14 +37,19 @@ require_login($course);
 $PAGE->set_url('/mod/qv/index.php', array('id' => $id));
 $PAGE->set_pagelayout('incourse');
 
-add_to_log($course->id, 'qv', 'view all', "index.php?id={$course->id}", "");
+$context = context_course::instance($course->id);
+$params = array(
+    'context' => $context,
+);
+$event = \mod_qv\event\instances_list_viewed::create($params);
+$event->trigger();
 
 // Print the header
 $strplural = get_string('modulenameplural', 'qv');
 $PAGE->navbar->add($strplural);
 $PAGE->set_title($strplural);
 $PAGE->set_heading($course->fullname);
-$context = context_course::instance($course->id);
+
 $PAGE->set_context($context);
 
 echo $OUTPUT->header();

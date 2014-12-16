@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -16,34 +15,38 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', branch 'MOODLE_26_STABLE'
+ * Cache language strings
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * This file is part of Moodle's cache API, affectionately called MUC.
+ * It contains the components that are requried in order to use caching.
+ *
+ * @package    core
+ * @category   cache
+ * @copyright  2012 Sam Hemelryk
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Actions';
 $string['addinstance'] = 'Add instance';
-$string['addlocksuccess'] = 'Successfully added a new lock instance.';
 $string['addnewlockinstance'] = 'Add a new lock instance';
+$string['addlocksuccess'] = 'Successfully added a new lock instance.';
 $string['addstore'] = 'Add {$a} store';
 $string['addstoresuccess'] = 'Successfully added a new {$a} store.';
 $string['area'] = 'Area';
+$string['caching'] = 'Caching';
 $string['cacheadmin'] = 'Cache administration';
 $string['cacheconfig'] = 'Configuration';
 $string['cachedef_calendar_subscriptions'] = 'Calendar subscriptions';
 $string['cachedef_config'] = 'Config settings';
 $string['cachedef_coursecat'] = 'Course categories lists for particular user';
 $string['cachedef_coursecatrecords'] = 'Course categories records';
-$string['cachedef_coursecattree'] = 'Course categories tree';
 $string['cachedef_coursecontacts'] = 'List of course contacts';
+$string['cachedef_coursecattree'] = 'Course categories tree';
 $string['cachedef_coursemodinfo'] = 'Accumulated information about modules and sections for each course';
 $string['cachedef_databasemeta'] = 'Database meta information';
 $string['cachedef_eventinvalidation'] = 'Event invalidation';
 $string['cachedef_externalbadges'] = 'External badges for particular user';
+$string['cachedef_suspended_userids'] = 'List of suspended users per course';
 $string['cachedef_gradecondition'] = 'User grades cached for evaluating conditional availability';
 $string['cachedef_groupdata'] = 'Course group information';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - cleaned content';
@@ -55,21 +58,19 @@ $string['cachedef_plugin_manager'] = 'Plugin info manager';
 $string['cachedef_questiondata'] = 'Question definitions';
 $string['cachedef_repositories'] = 'Repositories instances data';
 $string['cachedef_string'] = 'Language string cache';
-$string['cachedef_suspended_userids'] = 'List of suspended users per course';
 $string['cachedef_userselections'] = 'Data used to persist user selections throughout Moodle';
 $string['cachedef_yuimodules'] = 'YUI Module definitions';
 $string['cachelock_file_default'] = 'Default file locking';
 $string['cachestores'] = 'Cache stores';
-$string['caching'] = 'Caching';
 $string['component'] = 'Component';
 $string['confirmlockdeletion'] = 'Confirm lock deletion';
 $string['confirmstoredeletion'] = 'Confirm store deletion';
-$string['default_application'] = 'Default application store';
 $string['defaultmappings'] = 'Stores used when no mapping is present';
 $string['defaultmappings_help'] = 'These are the default stores that will be used if you don\'t map one or more stores to the cache definition.';
+$string['defaultstoreactions'] = 'Default stores cannot be modified';
+$string['default_application'] = 'Default application store';
 $string['default_request'] = 'Default request store';
 $string['default_session'] = 'Default session store';
-$string['defaultstoreactions'] = 'Default stores cannot be modified';
 $string['definition'] = 'Definition';
 $string['definitionsummaries'] = 'Known cache definitions';
 $string['delete'] = 'Delete';
@@ -81,12 +82,12 @@ $string['deletestore'] = 'Delete store';
 $string['deletestoreconfirmation'] = 'Are you sure you want to delete the "{$a}" store?';
 $string['deletestorehasmappings'] = 'You cannot delete this store because it has mappings. Please delete all mappings before deleting the store';
 $string['deletestoresuccess'] = 'Successfully deleted the cache store';
-$string['editdefinitionmappings'] = '{$a} definition store mappings';
-$string['editdefinitionsharing'] = 'Edit definition sharing for {$a}';
 $string['editmappings'] = 'Edit mappings';
 $string['editsharing'] = 'Edit sharing';
 $string['editstore'] = 'Edit store';
 $string['editstoresuccess'] = 'Succesfully edited the cache store.';
+$string['editdefinitionmappings'] = '{$a} definition store mappings';
+$string['editdefinitionsharing'] =  'Edit definition sharing for {$a}';
 $string['ex_configcannotsave'] = 'Unable to save the cache config to file.';
 $string['ex_nodefaultlock'] = 'Unable to find a default lock instance.';
 $string['ex_unabletolock'] = 'Unable to acquire a lock for caching.';
@@ -107,15 +108,15 @@ $string['locknamenotunique'] = 'The name you have selected is not unique. Please
 $string['locksummary'] = 'Summary of cache lock instances.';
 $string['locktype'] = 'Type';
 $string['lockuses'] = 'Uses';
-$string['mappingdefault'] = '(default)';
-$string['mappingfinal'] = 'Final store';
-$string['mappingprimary'] = 'Primary store';
 $string['mappings'] = 'Store mappings';
+$string['mappingdefault'] = '(default)';
+$string['mappingprimary'] = 'Primary store';
+$string['mappingfinal'] = 'Final store';
 $string['mode'] = 'Mode';
+$string['modes'] = 'Modes';
 $string['mode_1'] = 'Application';
 $string['mode_2'] = 'Session';
 $string['mode_4'] = 'Request';
-$string['modes'] = 'Modes';
 $string['nativelocking'] = 'This plugin handles its own locking.';
 $string['none'] = 'None';
 $string['plugin'] = 'Plugin';
@@ -129,39 +130,39 @@ $string['result'] = 'Result';
 $string['set'] = 'Set';
 $string['sharing'] = 'Sharing';
 $string['sharing_all'] = 'Everyone.';
-$string['sharing_help'] = 'This allows you to determine how the cache data can be shared if you have a clustered setup, or if you have multiple sites all set up with the same store and wish to share the data. This is an advanced setting please make sure you understand its purpose before changing it.';
 $string['sharing_input'] = 'Custom key (entered below)';
+$string['sharing_help'] = 'This allows you to determine how the cache data can be shared if you have a clustered setup, or if you have multiple sites all set up with the same store and wish to share the data. This is an advanced setting please make sure you understand its purpose before changing it.';
+$string['sharing_siteid'] = 'Sites with the same site id.';
+$string['sharing_version'] = 'Sites running the same version.';
 $string['sharingrequired'] = 'You must select at least one sharing option.';
 $string['sharingselected_all'] = 'Everyone';
 $string['sharingselected_input'] = 'Custom key';
 $string['sharingselected_siteid'] = 'Site identifier';
 $string['sharingselected_version'] = 'Version';
-$string['sharing_siteid'] = 'Sites with the same site id.';
-$string['sharing_version'] = 'Sites running the same version.';
 $string['storeconfiguration'] = 'Store configuration';
-$string['store_default_application'] = 'Default file store for application caches';
-$string['store_default_request'] = 'Default static store for request caches';
-$string['store_default_session'] = 'Default session store for session caches';
 $string['storename'] = 'Store name';
-$string['storenamealreadyused'] = 'You must choose a unique name for this store.';
 $string['storename_help'] = 'This sets the store name. It is used to identify the store within the system and can only consist of a-z A-Z 0-9 -_ and spaces. It also must be unique. If you attempt to use a name that has already been used you will receive an error.';
+$string['storenamealreadyused'] = 'You must choose a unique name for this store.';
 $string['storenameinvalid'] = 'Invalid store name. You can only use a-z A-Z 0-9 -_ and spaces.';
-$string['storenotready'] = 'Store not ready';
 $string['storeperformance'] = 'Cache store performance reporting - {$a} unique requests per operation.';
 $string['storeready'] = 'Ready';
+$string['storenotready'] = 'Store not ready';
 $string['storerequiresattention'] = 'Requires attention.';
 $string['storerequiresattention_help'] = 'This store instance is not ready to be used but has mappings. Fixing this issue will improve performance on your system. Please check that the store backend is ready to be used and that any PHP requirements are met.';
 $string['storeresults_application'] = 'Store requests when used as an application cache.';
 $string['storeresults_request'] = 'Store requests when used as a request cache.';
 $string['storeresults_session'] = 'Store requests when used as a session cache.';
 $string['stores'] = 'Stores';
+$string['store_default_application'] = 'Default file store for application caches';
+$string['store_default_request'] = 'Default static store for request caches';
+$string['store_default_session'] = 'Default session store for session caches';
 $string['storesummaries'] = 'Configured store instances';
 $string['supports'] = 'Supports';
-$string['supports_dataguarantee'] = 'data guarantee';
-$string['supports_keyawareness'] = 'key awareness';
 $string['supports_multipleidentifiers'] = 'multiple identifiers';
-$string['supports_nativelocking'] = 'locking';
+$string['supports_dataguarantee'] = 'data guarantee';
 $string['supports_nativettl'] = 'ttl';
+$string['supports_nativelocking'] = 'locking';
+$string['supports_keyawareness'] = 'key awareness';
 $string['supports_searchable'] = 'searching by key';
 $string['tested'] = 'Tested';
 $string['testperformance'] = 'Test performance';

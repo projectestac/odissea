@@ -107,3 +107,7 @@ $string['timing'] = 'Timing';
 $string['unlimited'] = '﻿Unlimited';
 $string['unread'] = 'Unread messages';
 $string['width'] = 'Width';
+
+/* Revision Moodle 2.6 */
+$string['event_course_module_viewed'] = 'Course module viewed';
+$string['event_instances_list_viewed'] = 'Instances list viewed';

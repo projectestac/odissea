@@ -36,7 +36,7 @@ class com_wiris_plugin_api_ConfigurationKeys {
 	static $HTTPPROXY_HOST = "wirisproxy_host";
 	static $HTTPPROXY_PORT = "wirisproxy_port";
 	static $HTTPPROXY_USER = "wirisproxy_user";
-	static $HTTPPROXY_PASS = "wirisproxy_pass";
+	static $HTTPPROXY_PASS = "wirisproxy_password";
 	static $REFERER = "wirisreferer";
 	static $imageConfigProperties;
 	static $imageConfigPropertiesInv;

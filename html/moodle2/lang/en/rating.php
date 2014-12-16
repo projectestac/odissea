@@ -16,22 +16,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'rating', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
+$string['aggregatetype'] = 'Aggregate type';
 $string['aggregateavg'] = 'Average of ratings';
 $string['aggregatecount'] = 'Count of ratings';
 $string['aggregatemax'] = 'Maximum rating';
 $string['aggregatemin'] = 'Minimum rating';
 $string['aggregatenone'] = 'No ratings';
 $string['aggregatesum'] = 'Sum of ratings';
-$string['aggregatetype'] = 'Aggregate type';
 $string['aggregatetype_help'] = 'The aggregate type defines how ratings are combined to form the final grade in the gradebook.
 
 * Average of ratings - The mean of all ratings
@@ -53,8 +51,8 @@ $string['rate'] = 'Rate';
 $string['ratepermissiondenied'] = 'You do not have permission to rate this item';
 $string['rating'] = 'Rating';
 $string['ratinginvalid'] = 'Rating is invalid';
-$string['ratings'] = 'Ratings';
 $string['ratingtime'] = 'Restrict ratings to items with dates in this range:';
+$string['ratings'] = 'Ratings';
 $string['rolewarning'] = 'Roles with permission to rate';
 $string['rolewarning_help'] = 'To submit ratings users require the moodle/rating:rate capability and any module specific capabilities. Users assigned the following roles should be able to rate items. The list of roles may be amended via the permissions link in the administration block.';
 $string['scaleselectionrequired'] = 'When selecting a ratings aggregate type you must also select to use either a scale or set a maximum points.';

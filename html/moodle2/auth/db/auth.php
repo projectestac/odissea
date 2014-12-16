@@ -180,7 +180,6 @@ class auth_plugin_db extends auth_plugin_base {
         }
 
         // ************ FI
-
         // Connect to the external database (forcing new connection).
         $authdb = ADONewConnection($this->config->type);
         if (!empty($this->config->debugauthdb)) {
@@ -912,4 +911,5 @@ class auth_plugin_db extends auth_plugin_base {
         ob_end_flush();
     }
 }
+
 

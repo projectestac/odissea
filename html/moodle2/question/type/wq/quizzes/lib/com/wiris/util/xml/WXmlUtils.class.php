@@ -276,6 +276,14 @@ class com_wiris_util_xml_WXmlUtils {
 		}
 		return false;
 	}
+	static function resolveMathMLEntity($name) {
+		com_wiris_util_xml_WXmlUtils::initEntities();
+		if(com_wiris_util_xml_WXmlUtils::$entities->exists($name)) {
+			$code = com_wiris_util_xml_WXmlUtils::$entities->get($name);
+			return Std::parseInt($code);
+		}
+		return -1;
+	}
 	static function initEntities() {
 		if(com_wiris_util_xml_WXmlUtils::$entities === null) {
 			$e = com_wiris_util_xml_WEntities::$MATHML_ENTITIES;
@@ -407,7 +415,7 @@ class com_wiris_util_xml_WXmlUtils {
 						}
 						$res->add($aux);
 					} else {
-						haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 498, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+						haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 515, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
 						$res->add($aux);
 					}
 				}

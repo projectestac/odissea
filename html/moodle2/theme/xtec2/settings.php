@@ -32,6 +32,8 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
 
+    require_once($CFG->dirroot.'/theme/xtec2/lib.php');
+
 	global $PAGE;
 	$PAGE->requires->js_init_code('xtec2_theme_onload();');
 
@@ -123,7 +125,7 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_xtec2_clean_cache');
     $settings->add($setting);
 
-    if(is_service_enabled('nodes')){
+    if(theme_xtec2_is_service_enabled('nodes')){
         $name = 'theme_xtec2/nodes';
         $title = get_string('nodes', 'theme_xtec2');
         $description = get_string('nodesdesc', 'theme_xtec2');
@@ -133,7 +135,7 @@ if ($ADMIN->fulltree) {
         $settings->add($setting);
     }
 
-    if(is_service_enabled('intranet')){
+    if(theme_xtec2_is_service_enabled('intranet')){
         $name = 'theme_xtec2/intranet';
         $title = get_string('intranet', 'theme_xtec2');
         $description = get_string('intranetdesc', 'theme_xtec2');
@@ -208,8 +210,6 @@ if ($ADMIN->fulltree) {
                     'nostalgia' => get_string('nostalgia', 'theme_xtec2'));
     $setting = new admin_setting_configselect($name, $title, "", $default, $choices);
     $settings->add($setting);
-
-    require_once($CFG->dirroot.'/theme/xtec2/lib.php');
 
     $name = 'theme_xtec2/color2';
     $title = get_string('color2', 'theme_xtec2');

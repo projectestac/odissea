@@ -37,43 +37,41 @@ $string['avaluation'] = 'Evaluation criteria';
 $string['avaluation_score'] = 'Achieving this global score';
 $string['avaluation_solved'] = 'Solving this number of different activities';
 $string['description'] = 'Description';
-$string['height']='Height';
-$string['hideall']='Show only summaries';
-$string['lastaccess']='Last visited';
+$string['height'] = 'Height';
+$string['lastaccess'] = 'Last visited';
 $string['maxattempts'] = 'Maximum number of trials';
 $string['maxgrade'] = 'Score/activities that must be achieved';
 $string['modulename'] = 'JClic';
 $string['modulenameplural'] = 'JClic';
 $string['msg_noattempts']= 'You have tried this activity the maximum number of times';
-$string['score']='Score';
-$string['sessions']='Sessions';
-$string['showall']='Show the details of all the sessions';
-$string['size']='Size';
+$string['score'] = 'Score';
+$string['sessions'] = 'Sessions';
+$string['size'] = 'Size';
 $string['starttime']= 'Date started';
 $string['skin'] = 'Skin';
 $string['totals']= 'Totals';
 $string['totaltime']= 'Total time';
 $string['unlimited'] = 'Unlimited';
 $string['url'] = 'URL';
-$string['width']='Width';
+$string['width'] = 'Width';
 
 /* Revision 20070305 */
-$string['actions']='Actions';
-$string['activity']='Activity';
-$string['msg_nosessions']='This JClic activity hasn\'t yet any session';
-$string['solved']='Correct';
-$string['time']='Time';
+$string['actions'] = 'Actions';
+$string['activity'] = 'Activity';
+$string['msg_nosessions'] = 'This JClic activity hasn\'t yet any session';
+$string['solved'] = 'Correct';
+$string['time'] = 'Time';
 
 /* Revision 20071002 */
-$string['header_jclic']='JClic Settings';
-$string['header_score']='Avaluation Settings';
+$string['header_jclic'] = 'JClic Settings';
+$string['header_score'] = 'Avaluation Settings';
 
 /* Revision 20091023 */
 $string['deleteallsessions'] = 'Delete all sessions';
 
 /* Revision 20110119  - version 0.1.0.11 */
-$string['lang']='Language';
-$string['exiturl']='Exit URL';
+$string['lang'] = 'Language';
+$string['exiturl'] = 'Exit URL';
 
 
 /* Revision Moodle 2.X */
@@ -94,14 +92,14 @@ $string['filetypelocal'] = 'Uploaded JClic';
 $string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic.zip" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" file.';
 $string['jclic'] = 'JClic';
-$string['jclicjarbase']='Jar base';
-$string['jclicjarbase_help']='Web address where to locate all the JClic jar files';
+$string['jclicjarbase'] = 'Jar base';
+$string['jclicjarbase_help'] = 'Web address where to locate all the JClic jar files';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'This setting enables a URL for the JClic package to be specified, rather than choosing a file via the file picker.';
 $string['jclicfile'] = 'JClic file';
 $string['jclicfile_help'] = 'The .jclic.zip file containing the JClic files.';
-$string['lap']='Lap';
-$string['lap_help']='Time between client-server transactions (in seconds)';
+$string['lap'] = 'Lap';
+$string['lap_help'] = 'Time between client-server transactions (in seconds)';
 $string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> is a project of the Catalan Ministry of Education.
     It consists of a set of open source software applications that allow the creation of several types of multimedia educational activities: puzzles, association games, text activities, crosswords, wordsearch games and more.
     Besides, the <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">ClicZone</a> offers a repository where more than a thousand activities are displayed.
@@ -111,9 +109,9 @@ This module allows teachers to add JClick activities to any course and to track 
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
 $string['pluginadministration'] = 'JClic administration';
 $string['pluginname'] = 'JClic';
-$string['preview_jclic']='Preview JClic activity';
-$string['return_results']='Return to results';
-$string['show_my_results']='Show my results';
+$string['preview_jclic'] = 'Preview JClic activity';
+$string['return_results'] = 'Return to results';
+$string['show_my_results'] = 'Show my results';
 $string['solveddone'] = 'Activities solved / done';
 $string['urledit'] = 'JClic activity file';
 $string['urledit_help'] = 'The "jclic.zip" file where you will find the JClic activity package.';
@@ -127,3 +125,10 @@ $string['jclic:addinstance'] = 'Add JClic';
 $string['pluginjs'] = 'JClic plugin js file url';
 $string['pluginjs_help'] = 'URL where to find jclicplugin.js needed to work. If empty, it will use the file on the module.';
 
+
+/* Revision Moodle 2.6 */
+$string['event_course_module_viewed'] = 'Course module viewed';
+$string['event_instances_list_viewed'] = 'Instances list viewed';
+$string['results'] = 'Results';
+$string['report_details'] = 'Detailed results with all the sessions';
+$string['report_normal'] = 'Summary results';

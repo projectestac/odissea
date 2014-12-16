@@ -40,7 +40,11 @@ if (! $course = $DB->get_record('course', array('id' => $id))) {
 require_course_login($course);
 $context = context_course::instance($course->id);
 
-add_to_log($course->id, 'jclic', 'view all', "index.php?id={$course->id}", '');
+$params = array(
+    'context' => $context,
+);
+$event = \mod_jclic\event\instances_list_viewed::create($params);
+$event->trigger();
 
 /// Print the header
 

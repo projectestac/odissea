@@ -469,6 +469,38 @@ DRAWABLE = function(editor) {
         }
     };
 
+    /**
+     * Update the positions of all absolutely positioned nodes, when the drawing canvas is scrolled
+     * @param scrollx int
+     * @param scrolly int
+     */
+    this.scroll_update = function(scrollx, scrolly) {
+        var i, x, y;
+        for (i = 0; i < this.nodes.length; i++) {
+            x = this.nodes[i].getData('x');
+            y = this.nodes[i].getData('y');
+            if (x !== undefined && y !== undefined) {
+                this.nodes[i].setX(parseInt(x, 10) - scrollx);
+                this.nodes[i].setY(parseInt(y, 10) - scrolly);
+            }
+        }
+    };
+
+    /**
+     * Store the initial position of the node, so it can be updated when the drawing canvas is scrolled
+     * @param container
+     * @param x
+     * @param y
+     */
+    this.store_position = function(container, x, y) {
+        var drawingregion, scrollx, scrolly;
+
+        drawingregion = Y.one(SELECTOR.DRAWINGREGION);
+        scrollx = parseInt(drawingregion.get('scrollLeft'), 10);
+        scrolly = parseInt(drawingregion.get('scrollTop'), 10);
+        container.setData('x', x + scrollx);
+        container.setData('y', y + scrolly);
+    };
 };
 
 M.assignfeedback_editpdf = M.assignfeedback_editpdf || {};
@@ -1495,6 +1527,7 @@ Y.extend(ANNOTATIONSTAMP, M.assignfeedback_editpdf.annotation, {
         drawingregion.append(node);
         node.setX(position.x);
         node.setY(position.y);
+        drawable.store_position(node, position.x, position.y);
 
         // Pass throught the event handlers on the div.
         node.on('gesturemovestart', this.editor.edit_start, null, this.editor);
@@ -1538,6 +1571,7 @@ Y.extend(ANNOTATIONSTAMP, M.assignfeedback_editpdf.annotation, {
         drawingregion.append(node);
         node.setX(position.x);
         node.setY(position.y);
+        drawable.store_position(node, position.x, position.y);
 
         drawable.nodes.push(node);
 
@@ -2396,6 +2430,7 @@ COMMENT = function(editor, gradeid, pageno, x, y, width, colour, rawtext) {
         container.setStyle('position', 'absolute');
         container.setX(position.x);
         container.setY(position.y);
+        drawable.store_position(container, position.x, position.y);
         drawable.nodes.push(container);
         node.set('value', this.rawtext);
         scrollheight = node.get('scrollHeight'),
@@ -2503,6 +2538,7 @@ COMMENT = function(editor, gradeid, pageno, x, y, width, colour, rawtext) {
             windowlocation = this.editor.get_window_coordinates(newlocation);
             node.ancestor().setX(windowlocation.x);
             node.ancestor().setY(windowlocation.y);
+            this.drawable.store_position(node.ancestor(), windowlocation.x, windowlocation.y);
         }, null, this);
 
         this.menu = new M.assignfeedback_editpdf.commentmenu({
@@ -3190,7 +3226,7 @@ EDITOR.prototype = {
      * @method link_handler
      */
     link_handler : function(e) {
-        var drawingcanvas;
+        var drawingcanvas, drawingregion, resize = true;
         e.preventDefault();
 
         if (!this.dialogue) {
@@ -3212,6 +3248,9 @@ EDITOR.prototype = {
             drawingcanvas = Y.one(SELECTOR.DRAWINGCANVAS);
             this.graphic = new Y.Graphic({render : SELECTOR.DRAWINGCANVAS});
 
+            drawingregion = Y.one(SELECTOR.DRAWINGREGION);
+            drawingregion.on('scroll', this.move_canvas, this);
+
             if (!this.get('readonly')) {
                 drawingcanvas.on('gesturemovestart', this.edit_start, null, this);
                 drawingcanvas.on('gesturemove', this.edit_move, null, this);
@@ -3221,9 +3260,18 @@ EDITOR.prototype = {
             }
 
             this.load_all_pages();
+            drawingcanvas.on('windowresize', this.resize, this);
+
+            resize = false;
         }
         this.dialogue.centerDialogue();
         this.dialogue.show();
+
+        // Redraw when the dialogue is moved, to ensure the absolute elements are all positioned correctly.
+        this.dialogue.dd.on('drag:end', this.redraw, this);
+        if (resize) {
+            this.resize(); // When re-opening the dialog call redraw, to make sure the size + layout is correct.
+        }
     },
 
     /**
@@ -3579,6 +3627,7 @@ EDITOR.prototype = {
      * @method edit_start
      */
     edit_start : function(e) {
+        e.preventDefault();
         var canvas = Y.one(SELECTOR.DRAWINGCANVAS),
             offset = canvas.getXY(),
             scrolltop = canvas.get('docScrollY'),
@@ -3648,6 +3697,7 @@ EDITOR.prototype = {
      * @method edit_move
      */
     edit_move : function(e) {
+        e.preventDefault();
         var bounds = this.get_canvas_bounds(),
             canvas = Y.one(SELECTOR.DRAWINGCANVAS),
             clientpoint = new M.assignfeedback_editpdf.point(e.clientX + canvas.get('docScrollX'),
@@ -3726,6 +3776,30 @@ EDITOR.prototype = {
         this.currentedit.start = false;
         this.currentedit.end = false;
         this.currentedit.path = [];
+    },
+
+    /**
+     * Resize the dialogue window when the browser is resized.
+     * @public
+     * @method resize
+     */
+    resize : function() {
+        var drawingregion, drawregionheight;
+
+        if (!this.dialogue.get('visible')) {
+            return;
+        }
+        this.dialogue.centerDialogue();
+
+        // Make sure the dialogue box is not bigger than the max height of the viewport.
+        drawregionheight = Y.one('body').get('winHeight') - 120; // Space for toolbar + titlebar.
+        if (drawregionheight < 100) {
+            drawregionheight = 100;
+        }
+        drawingregion = Y.one(SELECTOR.DRAWINGREGION);
+        drawingregion.setStyle('maxHeight', drawregionheight +'px');
+        this.redraw();
+        return true;
     },
 
     /**
@@ -3825,6 +3899,9 @@ EDITOR.prototype = {
             page;
 
         page = this.pages[this.currentpage];
+        if (page === undefined) {
+            return; // Can happen if a redraw is triggered by an event, before the page has been selected.
+        }
         while (this.drawables.length > 0) {
             this.drawables.pop().erase();
         }
@@ -3865,11 +3942,13 @@ EDITOR.prototype = {
         page = this.pages[this.currentpage];
         this.loadingicon.hide();
         drawingcanvas.setStyle('backgroundImage', 'url("' + page.url + '")');
+        drawingcanvas.setStyle('width', page.width + 'px');
+        drawingcanvas.setStyle('height', page.height + 'px');
 
         // Update page select.
         Y.one(SELECTOR.PAGESELECT).set('value', this.currentpage);
 
-        this.redraw();
+        this.resize(); // Internally will call 'redraw', after checking the dialogue size.
     },
 
     /**
@@ -3937,9 +4016,22 @@ EDITOR.prototype = {
             this.currentpage = this.pages.length - 1;
         }
         this.change_page();
+    },
+
+    /**
+     * Update any absolutely positioned nodes, within each drawable, when the drawing canvas is scrolled
+     */
+    move_canvas: function() {
+        var drawingregion, x, y, i;
+
+        drawingregion = Y.one(SELECTOR.DRAWINGREGION);
+        x = parseInt(drawingregion.get('scrollLeft'), 10);
+        y = parseInt(drawingregion.get('scrollTop'), 10);
+
+        for (i = 0; i < this.drawables.length; i++) {
+            this.drawables[i].scroll_update(x, y);
+        }
     }
-
-
 
 };
 
@@ -4028,6 +4120,7 @@ M.assignfeedback_editpdf.editor.init = M.assignfeedback_editpdf.editor.init || f
         "graphics",
         "json",
         "event-move",
+        "event-resize",
         "querystring-stringify-simple",
         "moodle-core-notification-dialog",
         "moodle-core-notification-exception",

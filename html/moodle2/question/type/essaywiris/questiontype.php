@@ -15,8 +15,45 @@ class qtype_essaywiris extends qtype_wq {
         require_once($CFG->dirroot . '/question/type/essaywiris/edit_essaywiris_form.php');
         $wform = $this->base->create_editing_form($submiturl, $question, $category, $contexts, $formeditable);
         return new qtype_essaywiris_edit_form($wform, $submiturl, $question, $category, $contexts, $formeditable);
-    }    
-   
+    }
+
+    public function save_question_options($formdata) {
+        global $DB;
+
+        // For Moodle 2.6 updates: essay_options must be saved
+        // moodle essay updates deletes essayiris records)
+        // qtype_essaywiris_backups not exists in 2.6 and upwards.
+        if ($DB->get_manager()->table_exists('qtype_essaywiris_backup')) {
+            $context = $formdata->context;
+
+            $options = $DB->get_record('qtype_essaywiris_backup', array('questionid' => $formdata->id));
+            if (!$options) {
+                $options = new stdClass();
+                $options->questionid = $formdata->id;
+                $options->id = $DB->insert_record('qtype_essaywiris_backup', $options);
+            }
+
+            $options->responseformat = $formdata->responseformat;
+            $options->responsefieldlines = $formdata->responsefieldlines;
+            $options->attachments = $formdata->attachments;
+            $options->graderinfo = $this->import_or_save_files($formdata->graderinfo,
+                    $context, 'qtype_essay', 'graderinfo', $formdata->id);
+            $options->graderinfoformat = $formdata->graderinfo['format'];
+            $DB->update_record('qtype_essaywiris_backup', $options);
+        }
+        parent::save_question_options($formdata);
+    }
+
+    public function delete_question($questionid, $contextid) {
+        global $DB;
+
+        if ($DB->get_manager()->table_exists('qtype_essaywiris_backup')) {
+            $DB->delete_records('qtype_essaywiris_backup', array('questionid' => $questionid));
+        }
+        parent::delete_question($questionid, $contextid);
+    }
+
+
     public function initialise_question_instance(question_definition $question, $questiondata) {
         parent::initialise_question_instance($question, $questiondata);
         $question->responseformat = &$question->base->responseformat;

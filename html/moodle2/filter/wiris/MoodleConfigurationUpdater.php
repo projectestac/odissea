@@ -105,11 +105,12 @@ class com_wiris_plugin_configuration_MoodleConfigurationUpdater implements com_w
         // Encoded XML
         $configuration['wiriseditorsavemode'] = 'safeXml';
         // Moodle version.
-        if ($CFG->version >= 2012120300) { // Moodle 2.4 or superior
-            $configuration['wirishostplatform'] = 'moodle2_4';
-        } else {
-            $configuration['wirishostplatform'] = 'moodle2';
-        }
+        // if ($CFG->version >= 2012120300) { // Moodle 2.4 or superior
+        //     $configuration['wirishostplatform'] = 'moodle2_4';
+        // } else {
+        //     $configuration['wirishostplatform'] = 'moodle2';
+        // }
+        $configuration['wirishostplatform'] = isset($CFG->release) ? $CFG->release : $CFG->version;
         // Referer.
         global $COURSE;
         $query = '';
@@ -134,7 +135,7 @@ class com_wiris_plugin_configuration_MoodleConfigurationUpdater implements com_w
             $configuration['wirisproxy_host'] = $CFG->proxyhost;
             $configuration['wirisproxy_port'] = $proxyportenabled ? $CFG->proxyport : null;
             $configuration['wirisproxy_user'] = $proxyuserenabled ? $CFG->proxyuser : null;
-            $configuration['wirisproxy_pass'] = $proxypassenabled ? $CFG->proxypassword : null;
+            $configuration['wirisproxy_password'] = $proxypassenabled ? $CFG->proxypassword : null;
         }
     }
 }

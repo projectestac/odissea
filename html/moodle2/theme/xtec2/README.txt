@@ -1,106 +1,74 @@
+##
+# XTEC2 theme for Moodle 2
+#
+# @copyright 2008 onwards Departament d'Ensenyament de la Generalitat de Catalunya
+# @source https://github.com/projectestac/agora/
+# @license http://www.gnu.org/licenses/gpl-2.0.txt
+##
 
-/* How to copy and customise this theme.
-----------------------------------------*/
+This theme is based on Clean theme and has been developed for Àgora:
+Àgora [1] is a multi-instance system with services like Moodle, Wordpress and Zikula. 
+It's developed by the Ministry of Education of the Government of Catalonia [2].
 
-This document describes how to copy and customise the Clean (bootstrapbase) theme so that
-you can build on this to create a theme of your own. It assumes you have some
-understanding of how themes work within Moodle 2.5, as well as a basic understanding
-of HTML and CSS.
+The full code of agora can be found on:
+https://github.com/projectestac/agora
 
-Getting started
----------------
+-----------------------------------------------------------------------------
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation; either
+version 3 of the License, or (at your option) any later version.
 
-From your Moodle theme directory right click on clean and then copy and paste back
-into your Moodle theme directory. You should now have a folder called Copy of clean.
-If you right click this folder you are given the option to Rename it. So rename this
-folder to your chosen theme name, using only lower case letters, and if needed,
-underscores. For the purpose of this tutorial we will call the theme 'cleantheme'.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
 
-On opening 'cleantheme' your you will find several files and sub-directories which have
-files within them.
+You should have received a copy of the GNU General Public License
+along with this program (in a file called COPYING); if not, go
+to http://www.gnu.org/copyleft/gpl.html or write to 
 
-These are:
+  Free Software Foundation, Inc.
+  59 Temple Place - Suite 330
+  Boston, MA 02111-1307 USA
 
-config.php
-    Where all the theme configurations are made.
-    (Contains some elements that require renaming).
-lib.php
-    Where all the functions for the themes settings are found.
-    (Contains some elements that require renaming).
-settings.php
-    Where all the setting for this theme are created.
-    (Contains some elements that require renaming).
-version.php
-    Where the version number and plugin component information is kept.
-    (Contains some elements that require renaming).
-/lang/
-    This directory contains all language sub-directories for other languages
-    if and when you want to add them.
-/lang/en/
-    This sub-directory contains your language files, in this case English.
-/lang/en/theme_clean.php
-    This file contains all the language strings for your theme.
-    (Contains some elements that require renaming as well as the filename itself).
-/layout/
-    This directory contains all the layout files for this theme.
-/layout/columns1.php
-    Layout file for a one column layout (content only).
-    (Contains some elements that require renaming).
-/layout/columns2.php
-    Layout file for a two column layout (side-pre and content).
-    (Contains some elements that require renaming).
-/layout/columns3.php
-    Layout file for a three column layout (side-pre, content and side-post) and the front page.
-    (Contains some elements that require renaming).
-/layout/embedded.php
-    Embedded layout file for embeded pages, like iframe/object embeded in moodleform.
-    (Contains some elements that require renaming).
-/layout/maintenance.php
-    Maintenance layout file which does not have any blocks, links, or API calls that would lead to database or cache interaction.
-    (Contains some elements that require renaming).
-/layout/secure.php
-    Secure layout file for safebrowser and securewindow.
-    (Contains some elements that require renaming).
-/style/
-    This directory contains all the CSS files for this theme.
-/style/custom.css
-    This is where all the settings CSS is generated.
-/pix/
-    This directory contains a screen shot of this theme as well as a favicon
-    and any images used in the theme.
+-----------------------------------------------------------------------------
+REQUIREMENTS
+Moodle 2.6 of greater
 
-Renaming elements
------------------
+-----------------------------------------------------------------------------
+INSTALL
+Download the theme and unzip it on theme/xtec2 directory
 
-The problem when copying a theme is that you need to rename all those instances
-where the old theme name occurs, in this case clean. So using the above list as
-a guide, search through and change all the instances of the theme name
-'clean' to 'cleantheme'. This includes the filename of the lang/en/theme_clean.php.
-You need to change this to 'theme_cleantheme.php'.
+-----------------------------------------------------------------------------
+CREDITS
 
-Installing your theme
----------------------
+Developers:
+   Sara Arjona      (sarjona@xtec.cat)
+   Pau Ferrer       (crazyserver@gmail.com)
+   Toni Ginard      (aginard@xtec.cat)
+   Francesc Busquets
+   
+With the support of:
+   Francesc Busquets
+   Eduard Cercós
+   Mònica Grau
+   Pablo Mariña
+   Jordi Vivancos
 
-Once all the changes to the name have been made, you can safely install the theme.
-If you are already logged in just refreshing the browser should trigger your Moodle
-site to begin the install 'Plugins Check'.
+This theme is developed for:
+   - Moodle: Learning Management System (http://moodle.org/)
 
-If not then navigate to Administration > Notifications.
+This theme includes external resources like:
+   - Abecedario: True Type Font by George Williams (revised version)
+   - FontAwesome 4.2.0  (http://fortawesome.github.io/Font-Awesome/)
+   - Some code to show Fontawesome icons is based on Essential Moodle theme (https://gjb2048.github.io/moodle-theme_essential/)
 
-Once your theme is successfully installed you can select it and begin to modify
-it using the custom settings page found by navigating to...
-Administration > Site Administration > Appearance > Themes >>
-and then click on (Cleantheme) or whatever you renamed your theme to,
-from the list of theme names that appear at this point in the side block.
+Special Thanks:
+   Catalan schools involved in the project
+   UPCnet           (http://www.upcnet.es)
+   
 
-Customisation using custom theme settings
------------------------------------------
-
-The settings page for the Clean theme can be located by navigating to:
-
-Administration > Site Administration > Appearance > Themes > Clean
-
-Moodle documentation
---------------------
-
-Further information can be found on Moodle Docs: http://docs.moodle.org/dev/Clean_theme
+-----------------------------------------------------------------------------
+[1] http://agora.xtec.cat
+[2] http://www.gencat.cat/ensenyament

@@ -76,19 +76,40 @@ class com_wiris_quizzes_impl_HTML {
 		$this->close();
 	}
 	public function openFieldset($id, $legend, $classes) {
+		$this->openCollapsibleFieldset($id, $legend, $classes, false, false);
+	}
+	public function openCollapsibleFieldset($id, $legend, $classes, $collapsible, $collapsed) {
 		$className = "wirisfieldset";
 		if($classes !== null && strlen($classes) > 0) {
 			$className .= " " . $classes;
 		}
+		if($collapsible) {
+			$className .= " wiriscollapsible";
+			$className .= (($collapsed) ? " wiriscollapsed" : " wirisexpanded");
+		}
 		$this->open("fieldset", new _hx_array(array(new _hx_array(array("id", $id)), new _hx_array(array("class", $className)))));
 		$this->open("legend", new _hx_array(array(new _hx_array(array("class", $classes)))));
+		if($collapsible) {
+			$className = "wiriscollapsiblea " . ((($collapsed) ? " wiriscollapsed" : " wirisexpanded"));
+			$this->open("a", new _hx_array(array(new _hx_array(array("href", "#")), new _hx_array(array("class", $className)))));
+		}
 		$this->text($legend);
+		if($collapsible) {
+			$this->close();
+		}
+		$this->close();
+		if($collapsible) {
+			$className = "wirisfieldsetwrapper " . ((($collapsed) ? " wiriscollapsed" : " wirisexpanded"));
+			$this->openDivClass($id . "-wrapper", $className);
+		}
+	}
+	public function labelTitle($text, $id, $className, $title) {
+		$this->open("label", new _hx_array(array(new _hx_array(array("for", $id)), new _hx_array(array("class", $className)), new _hx_array(array("title", $title)))));
+		$this->text($text);
 		$this->close();
 	}
 	public function label($text, $id, $className) {
-		$this->open("label", new _hx_array(array(new _hx_array(array("for", $id)), new _hx_array(array("class", $className)))));
-		$this->text($text);
-		$this->close();
+		$this->labelTitle($text, $id, $className, null);
 	}
 	public function openLiClass($className) {
 		$this->open("li", new _hx_array(array(new _hx_array(array("class", $className)))));
@@ -113,7 +134,7 @@ class com_wiris_quizzes_impl_HTML {
 		$this->close();
 	}
 	public function input($type, $id, $name, $value, $title, $className) {
-		$this->openclose("input", new _hx_array(array(new _hx_array(array("type", $type)), new _hx_array(array("id", $id)), new _hx_array(array("name", $name)), new _hx_array(array("value", $value)), new _hx_array(array("class", $className)))));
+		$this->openclose("input", new _hx_array(array(new _hx_array(array("type", $type)), new _hx_array(array("id", $id)), new _hx_array(array("name", $name)), new _hx_array(array("value", $value)), new _hx_array(array("title", $title)), new _hx_array(array("class", $className)))));
 	}
 	public function js($code) {
 		$this->open("script", new _hx_array(array(new _hx_array(array("type", "text/javascript")))));

@@ -616,34 +616,29 @@ try{
 } catch(Exception $e){
     $logdir = get_admin_datadir_folder('adodberror', false);
     if ($logdir) {
-        $logcontrolfile = $logdir.'/logon.txt';
+        $logfile = $logdir.'/'.date("Ymd").'-error.csv';
 
-        // Check if logs are on. There's no database at this stage, so an alternative control system is mandatory.
-        if (file_exists($logcontrolfile)) {
-            $logfile = $logdir.'/'.date("Ymd").'-error.csv';
+        // Open file
+        $oldumask = umask(7);
+        $gestor = fopen($logfile, 'ab');
+        umask($oldumask);
 
-            // Open file
-            $oldumask = umask(7);
-            $gestor = fopen($logfile, 'ab');
-            umask($oldumask);
+        if ($gestor) {
+            $errorcode = isset($e->errorcode) ? $e->errorcode : "";
+            $debuginfo = isset($e->debuginfo) ? $e->debuginfo : $e->getMessage();
+            // Build log string
+            $log = '"'.date('Ymd-Hi').'","'
+                      .gethostname().'","'
+                      .$CFG->dbname.'","'
+                      .$CFG->dbuser.'","'
+                      .$errorcode.'","'
+                      .$debuginfo.'"'."\n";
 
-            if ($gestor) {
-                $errorcode = isset($e->errorcode) ? $e->errorcode : "";
-                $debuginfo = isset($e->debuginfo) ? $e->debuginfo : $e->getMessage();
-                // Build log string
-                $log = '"'.date('Ymd-Hi').'","'
-                          .gethostname().'","'
-                          .$CFG->dbname.'","'
-                          .$CFG->dbuser.'","'
-                          .$errorcode.'","'
-                          .$debuginfo.'"'."\n";
+            // Save log string
+            fwrite($gestor, $log);
 
-                // Save log string
-                fwrite($gestor, $log);
-
-                // Close file
-                fclose($gestor);
-            }
+            // Close file
+            fclose($gestor);
         }
     }
     throw $e;
@@ -848,6 +843,24 @@ if (empty($CFG->sessiontimeout)) {
     $CFG->sessiontimeout = 7200;
 }
 \core\session\manager::start();
+
+// Set default content type and encoding, developers are still required to use
+// echo $OUTPUT->header() everywhere, anything that gets set later should override these headers.
+// This is intended to mitigate some security problems.
+if (AJAX_SCRIPT) {
+    if (!core_useragent::supports_json_contenttype()) {
+        // Some bloody old IE.
+        @header('Content-type: text/plain; charset=utf-8');
+        @header('X-Content-Type-Options: nosniff');
+    } else if (!empty($_FILES)) {
+        // Some ajax code may have problems with json and file uploads.
+        @header('Content-type: text/plain; charset=utf-8');
+    } else {
+        @header('Content-type: application/json; charset=utf-8');
+    }
+} else if (!CLI_SCRIPT) {
+    @header('Content-type: text/html; charset=utf-8');
+}
 
 // Initialise some variables that are supposed to be set in config.php only.
 if (!isset($CFG->filelifetime)) {

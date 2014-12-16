@@ -376,3 +376,10 @@ function theme_xtec2_render_user_settings($node, $attrs=array(), $expansionlimit
 
 	return html_writer::tag('li', $content, array('class'=> $liclasses));
 }
+
+function theme_xtec2_is_service_enabled($service) {
+    if (function_exists('is_service_enabled')) {
+        return is_service_enabled($service);
+    }
+    return false;
+}

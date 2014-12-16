@@ -106,6 +106,12 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
     protected $setconnections = array();
 
     /**
+     * If true data going in and out will be encoded.
+     * @var bool
+     */
+    protected $encode = true;
+
+    /**
      * Default prefix for key names.
      * @var string
      */
@@ -114,6 +120,7 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
     //XTEC ************ AFEGIT - To have an instance non dependant purge action
     // 2014.10.20 @pferre22
     private $originalprefix = 0;
+    private $purgenumber_name = '';
     //************ FI
 
     /**
@@ -190,7 +197,6 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
         if (isset($CFG->memcache_prefix)) {
             $this->prefix = $CFG->memcache_prefix;
         }
-        $this->originalprefix = $this->prefix;
         //************ FI
 
         $this->connection = new Memcache;
@@ -209,6 +215,20 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
 
         // Test the connection to the pool of servers.
         $this->isready = @$this->connection->set($this->parse_key('ping'), 'ping', MEMCACHE_COMPRESSED, 1);
+
+        //XTEC ************ AFEGIT - To have an instance non dependant purge action
+        // 2014.10.20 @pferre22
+        if ($this->definition) {
+            $key = $this->definition->generate_single_key_prefix();
+        } else {
+            $key = 'nodef';
+        }
+        $this->purgenumber_name = $this->originalprefix.'_'.$key.'_purgenumber';
+        $this->originalprefix = $this->prefix.$key;
+
+        $this->prefix = $this->originalprefix.$this->get_purgenumber();
+        //************ FI
+
     }
 
     /**
@@ -224,10 +244,28 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
         }
         $this->definition = $definition;
         $this->isinitialised = true;
+        $this->encode = self::require_encoding();
         //XTEC ************ AFEGIT - To have an instance non dependant purge action
         // 2014.10.20 @pferre22
         $this->set_purgenumber($this->get_purgenumber());
         //************ FI
+    }
+
+    /**
+     * Tests if encoding is going to be required.
+     *
+     * Prior to memcache 3.0.3 scalar data types were not preserved.
+     * For earlier versions of the memcache extension we need to encode and decode scalar types
+     * to ensure that it is preserved.
+     *
+     * @param string $version The version to check, if null it is fetched from PHP.
+     * @return bool
+     */
+    public static function require_encoding($version = null) {
+        if (!$version) {
+            $version = phpversion('memcache');
+        }
+        return (version_compare($version, '3.0.3', '<'));
     }
 
     /**
@@ -314,9 +352,8 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
     //XTEC ************ AFEGIT - To have an instance non dependant purge action
     // 2014.10.20 @pferre22
     public function get_purgenumber() {
-        $name = $this->get_pagenumber_name();
-        $purgenumber = $this->connection->get($name);
-        if(!$purgenumber) {
+        $purgenumber = $this->connection->get($this->purgenumber_name);
+        if (!$purgenumber) {
             return 0;
         }
         return $purgenumber;
@@ -336,7 +373,7 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
     private function increment_purgenumber() {
         $purgenumber = $this->get_purgenumber();
         $purgenumber++;
-        if($purgenumber >= 100000){
+        if ($purgenumber >= 1000000) {
             $purgenumber = 0;
         }
         $this->set_purgenumber($purgenumber);
@@ -344,20 +381,15 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
 
     private function set_purgenumber($number) {
         if ($this->isready) {
-            $name = $this->get_pagenumber_name();
             if ($this->clustered) {
                 foreach ($this->setconnections as $connection) {
-                    $connection->set($name, $number, MEMCACHE_COMPRESSED, 0);
+                    $connection->set($this->purgenumber_name, $number, MEMCACHE_COMPRESSED, 0);
                 }
             }
 
-            $this->connection->set($name, $number, MEMCACHE_COMPRESSED, 0);
+            $this->connection->set($this->purgenumber_name, $number, MEMCACHE_COMPRESSED, 0);
         }
-        $this->prefix = $this->originalprefix.$this->definition->generate_single_key_prefix().$number;
-    }
-
-    private function get_pagenumber_name(){
-        return $this->originalprefix.'_'.$this->definition->generate_single_key_prefix().'_purgenumber';
+        $this->prefix = $this->originalprefix.$number;
     }
     //************ FI
 
@@ -368,7 +400,11 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
      * @return mixed The data that was associated with the key, or false if the key did not exist.
      */
     public function get($key) {
-        return $this->connection->get($this->parse_key($key));
+        $result = $this->connection->get($this->parse_key($key));
+        if ($this->encode && $result !== false) {
+            return @unserialize($result);
+        }
+        return $result;
     }
 
     /**
@@ -395,6 +431,9 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
                 $return[$key] = false;
             } else {
                 $return[$key] = $result[$mkey];
+                if ($this->encode && $return[$key] !== false) {
+                    $return[$key] = @unserialize($return[$key]);
+                }
             }
         }
         return $return;
@@ -408,6 +447,11 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
      * @return bool True if the operation was a success false otherwise.
      */
     public function set($key, $data) {
+        if ($this->encode) {
+            // We must serialise this data.
+            $data = serialize($data);
+        }
+
         if ($this->clustered) {
             $status = true;
             foreach ($this->setconnections as $connection) {
@@ -585,6 +629,7 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
             }
             $data['setservers'] = join("\n", $servers);
         }
+
         //XTEC ************ AFEGIT - To have MUC configured.
         // To have different prefixes and servers configured
         // 2014.09.10 @pferre22
@@ -596,7 +641,6 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
             $data['servers'] = $CFG->memcache_servers;
         }
         //************ FI
-
         $editform->set_data($data);
     }
 

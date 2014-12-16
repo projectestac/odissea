@@ -36,7 +36,7 @@ class com_wiris_plugin_web_PhpConfigurationUpdater implements com_wiris_plugin_c
 		$v = com_wiris_system_PropertiesTools::getProperty($configuration, com_wiris_plugin_api_ConfigurationKeys::$REFERER, null);
 		if($v === null) {
 			$referer = ((empty($_SERVER['HTTPS'])) ? "http://" : "https://");
-			$referer .= $_SERVER['SERVER_NAME'] + $_SERVER['SCRIPT_NAME'];
+			$referer .= $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
 			if(isset($_SERVER['QUERY_STRING'])) {
 				$referer .= "?" . $_SERVER['QUERY_STRING'];
 			}

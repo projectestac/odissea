@@ -80,7 +80,8 @@ class com_wiris_quizzes_service_ServiceRouter {
 				$http = null;
 				if($service === "url") {
 					$url = $parameters->get("url");
-					if(!$this->allowedURL($url)) {
+					$url = $this->allowedURL($url);
+					if($url === null) {
 						$res->sendError(400, "URL not allowed.");
 					}
 					$http = new com_wiris_quizzes_impl_MaxConnectionsHttpImpl($url, new com_wiris_quizzes_service_ServiceRouterListener($res));
@@ -136,11 +137,20 @@ class com_wiris_quizzes_service_ServiceRouter {
 	public function allowedURL($url) {
 		$it = com_wiris_quizzes_service_ServiceRouter::$router->keys();
 		while($it->hasNext()) {
-			if(StringTools::startsWith($url, com_wiris_quizzes_service_ServiceRouter::$router->get($it->next()))) {
-				return true;
+			$routerurl = com_wiris_quizzes_service_ServiceRouter::$router->get($it->next());
+			if(StringTools::startsWith($routerurl, "https://") && StringTools::startsWith($url, "http://")) {
+				$url = "https://" . _hx_substr($url, 7, null);
+			} else {
+				if(StringTools::startsWith($routerurl, "http://") && StringTools::startsWith($url, "https://")) {
+					$url = "http://" . _hx_substr($url, 8, null);
+				}
 			}
+			if(StringTools::startsWith($url, $routerurl)) {
+				return $url;
+			}
+			unset($routerurl);
 		}
-		return false;
+		return null;
 	}
 	public function getMimes() {
 		$mimes = new Hash();

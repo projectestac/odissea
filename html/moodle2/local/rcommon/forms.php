@@ -101,9 +101,6 @@ class local_rcommon_import_credentials_form extends moodleform {
 	function definition() {
 		global $CFG;
 		$mform    =& $this->_form;
-		$mform->addElement('hidden', 'step');
-		$mform->setDefault('step', 2);
-		$mform->setType('step',PARAM_INT);
 
 		$post_max_size = ini_get('post_max_size');
 		$post_max_size_bytes = (textlib::substr($post_max_size, 0, textlib::strlen($post_max_size) - 1) * (1024 * 1024));
@@ -111,9 +108,26 @@ class local_rcommon_import_credentials_form extends moodleform {
 		$post_max_size_bytes = ($CFG->maxbytes != 0 && $CFG->maxbytes < $post_max_size_bytes)? $CFG->maxbytes: $post_max_size_bytes;
 		$post_max_size = $post_max_size_bytes / (1024 * 1024);
 
-		$mform->addElement('filepicker', 'file', get_string('keymanager_import_explanation','local_rcommon',$post_max_size), null, array('accepted_types' => 'text/csv', 'maxbytes'=>$post_max_size_bytes));
-		$mform->addHelpButton('file', 'importcsv', 'local_rcommon');
-		$mform->addRule('file', null, 'required', null, 'client');
+		$mform->addElement('filepicker', 'import_marsupial', get_string('keymanager_import_explanation','local_rcommon',$post_max_size), null, array('accepted_types' => 'text/csv', 'maxbytes'=>$post_max_size_bytes));
+		$mform->addRule('import_marsupial', null, 'required');
+
+		$choices = csv_import_reader::get_delimiter_list();
+        $mform->addElement('select', 'delimiter_name', get_string('csvdelimiter', 'tool_uploaduser'), $choices);
+        if (array_key_exists('cfg', $choices)) {
+            $mform->setDefault('delimiter_name', 'cfg');
+        } else if (get_string('listsep', 'langconfig') == ';') {
+            $mform->setDefault('delimiter_name', 'semicolon');
+        } else {
+            $mform->setDefault('delimiter_name', 'comma');
+        }
+
+		$choices = core_text::get_encodings();
+        $mform->addElement('select', 'encoding', get_string('encoding', 'tool_uploaduser'), $choices);
+        $mform->setDefault('encoding', 'UTF-8');
+
+        // hidden fields
+        $mform->addElement('hidden', 'iid');
+        $mform->setType('iid', PARAM_INT);
 
 		//buttons
 		$this->add_action_buttons(true, get_string('keymanager_import_button', 'local_rcommon'));

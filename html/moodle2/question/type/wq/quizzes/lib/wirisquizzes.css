@@ -145,13 +145,54 @@ span.wirisloading {
   padding:0;
   margin-left: 5px;
 }
-fieldset.wirisfieldset {
+div.wiristabs fieldset.wirisfieldset {
     border: solid 1px;
     border-radius:  8px;
     border-color:  #999;
     margin-bottom: 10px;
+	padding-bottom: 5px;
 }
-
+div.wiristabs fieldset.wirisfieldset.wiriscollapsed {
+	border-radius: 0;
+	border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+	margin-bottom: 0;
+}
+div.wiristabs fieldset.wirisfieldset div.wirisfieldsetwrapper.wiriscollapsed {
+	overflow: hidden;
+	max-height: 0;
+}
+div.wiristabs fieldset.wirisfieldset div.wirisfieldsetwrapper.wirisexpanded {
+	overflow: hidden;
+	max-height: 300px;
+}
+div.wiristabs fieldset.wirisfieldset div.wirisfieldsetwrapper {
+	-webkit-transition: max-height .25s;
+    -moz-transition: max-height .25s;
+    transition: max-height .25s;
+}
+div.wiristabs fieldset.wirisfieldset legend a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+div.wiristabs fieldset.wirisfieldset legend a:hover{
+	text-decoration: underline;
+}
+div.wiristabs fieldset.wirisfieldset legend a.wiriscollapsed {
+	background: url('?service=resource&name=fieldset-collapsed.png') no-repeat 3px 50%;;
+	padding-left: 14px;
+}
+div.wiristabs fieldset.wirisfieldset legend a.wirisexpanded {
+	background: url('?service=resource&name=fieldset-expanded.png') no-repeat 3px 50%;;
+	padding-left: 14px;
+}
+div.wiristabs div.wiristolerance {
+	margin-left: 8px;
+	margin-bottom: 6px;
+	margin-top: 2px;
+}
 div.wiristabs {
 }
 div.wiristabs ul {
@@ -166,15 +207,33 @@ div.wiristabs {
     font-family: Segoe UI,Arial,Helvetica,sans-serif;
     font-size: 11pt;
 }
+div.wiristabs .wirissyntaxparam {
+	clear: both;
+}
+div.wiristabs .wirisspaceafter {
+	margin-bottom: 6px;
+}
+div.wiristabs .wirisspacebefore {
+	margin-top: 6px;
+}
 div.wiristabs span.wirissyntaxlabel {
     display: block;
     text-align: right;
     margin-right: 5px;
     float: left;
+	width: 140px;
 }
 div.wiristabs span.wirissyntaxvalues {
     display: block;
     margin-left: 150px;
+}
+div.wiristabs span.wirissyntaxchar {
+	display: inline-block;
+	text-align: left;
+}
+div.wiristabs span.wirissyntaxchar label{
+	display: block;
+	margin-left: 2px;
 }
 fieldset.wirismainfieldset legend.wirismainfieldset {
     font-weight: bold;
@@ -187,6 +246,9 @@ fieldset.wirismainfieldset legend.wirismainfieldset {
 div.wiristabs span.wirishorizontalparam{
     display: inline-block;
     min-width: 42px;
+}
+div.wiristabs span.wirishorizontalparam label{
+	margin-right: 8px;
 }
 
 div.wiristabs label.wirisleftlabel2 {
@@ -266,7 +328,6 @@ div.wiristabs ul.wirisactionslist li a {
 div.wiristabs ul.wirisactionslist li a:hover {
     background-color: #fff;
 }
-
 /**
  *  Styles for new JsComponent model HTML
  **/
@@ -377,18 +438,31 @@ div fieldset.wirisfieldsetvalidationandvariables{
     padding: 7px;
     border: solid 1px #999;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+	margin: 10px 10px 10px 0;
     max-width: 960px;
 }
 div fieldset.wirisfieldsetvalidationandvariables legend{
-    font-weight: bold;
-    color: #666;
-    padding:2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: solid 1px #999;
+	font-weight: bold;
+	color: #666;
+	padding: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: solid 1px #999;
+	width: initial;
+	line-height: initial;
+	font-size: medium;
+	display: initial;
+	margin: 0;
 }
+
+span.wirissummarywrapper {
+	display: block;
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 0;
+}
+
 dl.wirisassertionsummarydl {
   margin:0;
   padding:0;
@@ -420,17 +494,7 @@ div.wirisalgorithmlanguage {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-/* Occupy the space of absolutely positioned image. */
-span.wirisimagemathinput {
-	margin-right: 34px;
-}
-span.wirisimagemathinput img {
-	margin-left: 5px;
-}
-span.wirisimagemathinput input {
-	margin: 0;
-	padding: 0;
-}
+
 /**
 This three are used both in studio and in main page.
 **/
@@ -457,7 +521,13 @@ ul.wiristestassertionslist{
     font-weight: bold;
     background: url('?service=resource&name=warning.png') no-repeat left;
     padding-left:  18px;
-    float: right;
+}
+div.wiriswarningbox{
+    display: inline-block;
+    overflow: hidden;
+    height: 17px;
+    max-width: 317px;
+    margin-left: 10px;
 }
 .wirissmalllabel{
 	font-size: 0.9em;

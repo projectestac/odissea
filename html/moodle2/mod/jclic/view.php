@@ -52,7 +52,23 @@ require_login($course, true, $cm);
 $context = context_module::instance($cm->id);
 require_capability('mod/jclic:view', $context);
 
-add_to_log($course->id, 'jclic', 'view', "view.php?id={$cm->id}", $jclic->name, $cm->id);
+$ispreview = false;
+if (has_capability('moodle/grade:viewall', $context)) {
+    $action = optional_param('action', false, PARAM_TEXT);
+    if ($action == 'preview') {
+        $ispreview = true;
+    } else {
+        redirect('report.php?id='.$cm->id);
+    }
+}
+
+$params = array(
+    'context' => $context,
+    'objectid' => $jclic->id
+);
+$event = \mod_jclic\event\course_module_viewed::create($params);
+$event->add_record_snapshot('jclic', $jclic);
+$event->trigger();
 
 /// Print the page header
 
@@ -61,30 +77,17 @@ $PAGE->set_title(format_string($jclic->name));
 $PAGE->set_heading(format_string($course->fullname));
 $PAGE->set_context($context);
 
-
 // Mark viewed if required
 $completion = new completion_info($course);
 $completion->set_module_viewed($cm);
 
-// other things you may want to set - remove if not needed
-//$PAGE->set_cacheable(false);
-//$PAGE->set_focuscontrol('some-html-id');
-//$PAGE->add_body_class('jclic-'.$somevar);
+echo $OUTPUT->header();
 
-jclic_view_header($jclic, $cm, $course);
+groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/jclic/view.php?id=' . $cm->id);
+
+echo $OUTPUT->heading($jclic->name);
+
 jclic_view_intro($jclic, $cm);
+jclic_view_applet($jclic, $context, $ispreview);
 
-$action = optional_param('action', '', PARAM_TEXT);
-if (has_capability('moodle/grade:viewall', $context, $USER->id)){
-    if ($action == 'preview'){
-        jclic_view_applet($jclic, $context, true);
-    } else{
-        jclic_view_dates($jclic, $cm);
-        jclic_print_results_table($jclic, $context, $cm, $course, $action);
-    }
-
-} else{
-    jclic_view_applet($jclic, $context);
-}
-
-jclic_view_footer();
+echo $OUTPUT->footer();

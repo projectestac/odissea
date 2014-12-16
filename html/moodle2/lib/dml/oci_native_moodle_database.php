@@ -221,10 +221,8 @@ class oci_native_moodle_database extends moodle_database {
 
         //XTEC ************ AFEGIT - Fix for correct sorting
         //2014.11.04 @pferre22
-        $sql = "ALTER session SET NLS_COMP = LINGUISTIC";
-        $this->execute($sql);
-        $sql = "ALTER session SET NLS_SORT = BINARY_AI";
-        $this->execute($sql);
+        //$sql = "ALTER session SET NLS_COMP = LINGUISTIC SET NLS_SORT = BINARY_AI";
+        //$this->execute($sql);
         //************ FI
         return true;
     }
@@ -435,8 +433,7 @@ class oci_native_moodle_database extends moodle_database {
      */
     public function get_indexes($table) {
         $indexes = array();
-        $tablename = strtoupper($this->prefix . $table);
-
+        $tablename = strtoupper($this->prefix.$table);
 
         //XTEC ************ MODIFICAT - Fix for correct index detection when there's more than 1 Moodle in an Oracle instance
         //2014.02.27 @aginard

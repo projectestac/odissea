@@ -49,9 +49,16 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
 $tinyEditor = new tinymce_texteditor();
 $tiny_ver = $tinyEditor->version;
 
-if ($CFG->version>=2012120300) { // Moodle 2.4 or superior
-	$wiris_plugin_base = '../../lib/editor/tinymce/plugins/tiny_mce_wiris/tinymce';
-} else {
+
+$wiris_plugin_base = '../../lib/editor/tinymce/plugins/tiny_mce_wiris/tinymce';
+$wiris_plugin_base_string = 'TinyMCE';
+if ($CFG->version >= 2014051200) {
+	$editors =  array_flip(explode(',', $CFG->texteditors));
+	if (array_key_exists('atto', $editors) && ($editors['atto'] < $editors['tinymce'])) {
+		$wiris_plugin_base = '../../lib/editor/atto/plugins/wiris';
+		$wiris_plugin_base_string = 'Atto';
+	}
+} else if ($CFG->version < 2012120300) {
 	$wiris_plugin_base = '../../lib/editor/tinymce/tiny_mce/' . $tiny_ver . '/plugins/tiny_mce_wiris';
 }
 ?>
@@ -76,7 +83,7 @@ if ($CFG->version>=2012120300) { // Moodle 2.4 or superior
 </head>
 <body>
 	<h1>Moodle 2.x WIRIS plugin filter test page</h1>
-	<table>
+	<table id="wrs_filter_info_table">
 			<tr>
 				<th>Test</th>
 				<th>Report</th>
@@ -138,8 +145,8 @@ if ($CFG->version>=2012120300) { // Moodle 2.4 or superior
 			</tr>			
 			<tr>			
 				<?php
-					$test_name = 'Looking for WIRIS plugin for TinyMCE';
-					$report_text = 'WIRIS plugin for TinyMCE must be installed.';
+					$test_name = 'Looking for WIRIS plugin for ' . $wiris_plugin_base_string;
+					$report_text = 'WIRIS plugin for ' . $wiris_plugin_base_string .' must be installed.';
 					$solution_link = 'http://www.wiris.com/plugins/moodle/download';
 					$wiris_plugin = $wiris_plugin_base. '/integration';
 					$condition = file_exists($wiris_plugin);					
@@ -148,30 +155,45 @@ if ($CFG->version>=2012120300) { // Moodle 2.4 or superior
 						$condition = file_exists($wiris_plugin);    
 					}
 					echo wrs_createTableRow($test_name, $report_text, $solution_link, $condition);
-				?>			
+				?>			 
 			</tr>
 			<tr>	
 				<?php
-					@include 'version.php';				
-					$test_name = 'Matching WIRIS plugin filter and WIRIS plugin for TinyMCE versions';
+					@include 'wirispluginwrapper.php';
+					$wirisplugin = WIRISpluginWrapper::get_wiris_plugin();
+					$test_name = 'Matching WIRIS plugin filter and WIRIS plugin for '.$wiris_plugin_base_string.' versions';
 					if (isset($plugin->release)){
 						$filter_version = $plugin->release;
 					}else{
 						$report_text = '';
 					}
-					include '../../lib/editor/tinymce/version.php';
-					$file = $wiris_plugin_base . '/VERSION';
-					if (@fopen($file, 'r')){
-						$content = file($file);
-						$plugin_version = $content[0];
-					}else{
+
+					// Using version.php to check release number
+
+					if (strtolower($wiris_plugin_base_string) == 'tinymce') {
+						include $wiris_plugin_base . '/../version.php';
+					} else {
+						include $wiris_plugin_base . '/version.php';
+					}
+					if (isset($plugin->release)) {
+						$plugin_version = $plugin->release;
+					} else {
 						$plugin_version = "";
 					}
+
+
+					// $file = $wiris_plugin_base . '/VERSION';
+					// if (@fopen($file, 'r')){
+					// 	$content = file($file);
+					// 	$plugin_version = $content[0];
+					// }else{
+					// 	$plugin_version = "";
+					// }
 					if ($filter_version == $plugin_version){
-						$report_text = 'WIRIS plugin filter and WIRIS plugin for TinyMCE have the same version';
+						$report_text = 'WIRIS plugin filter and WIRIS plugin for '.$wiris_plugin_base_string.' have the same version';
 						$condition = true;
 					}else{
-						$report_text = 'WIRIS plugin filter and WIRIS plugin for TinyMCE versions don\'t match';
+						$report_text = 'WIRIS plugin filter and WIRIS plugin for '.$wiris_plugin_base_string.' versions don\'t match';
 						$condition = false;
 					}
 					$solution_link = 'http://www.wiris.com/plugins/moodle/download';
@@ -182,12 +204,22 @@ if ($CFG->version>=2012120300) { // Moodle 2.4 or superior
 
 	<p>
 	<br/>
-	Click the following button to test if the WIRIS plugin for TinyMCE is correctly installed.<br/>
+	
 	<?php
+		echo "Click the following button to test if the WIRIS plugin for ".$wiris_plugin_base_string." is correctly installed.<br/>";
 		$link = $wiris_plugin_base . '/integration/test.php';
-		echo '<input type="button" value="WIRIS plugin for TinyMCE tests" onClick="javascript:window.open(\'' . $link . '\');" /><br/>';
+		echo '<input type="button" value="WIRIS plugin for '.$wiris_plugin_base_string.' tests" onClick="javascript:window.open(\'' . $link . '\');" /><br/>';
+
+		$wqversion = get_config('qtype_wq', 'version');
+		if (!empty($wqversion)) {
+			echo "Click the following button to test if the WIRIS quizzes is correctly installed.<br/>";
+			$link = '../../question/type/wq/info.php';
+			echo '<input type="button" value="WIRIS quizzes tests" onClick="javascript:window.open(\'' . $link . '\');" /><br/>';
+		}
+
 	?>
 	</p>
 	<p><br/><span style="font-size:14px; font-weight:normal;">For more information or if you have any doubt contact WIRIS Support: (<a href="mailto:support@wiris.com">support@wiris.com</a>)</span></p>
 </body>
+<script src="info.js"></script>
 </html>

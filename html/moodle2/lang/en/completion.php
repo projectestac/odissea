@@ -16,22 +16,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for core_completion subsystem.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     core_completion
+ * @category    string
+ * @copyright   &copy; 2008 The Open University
+ * @author      Sam Marshall
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Achieving grade';
 $string['activities'] = 'Activities';
-$string['activitiescompleted'] = 'Activity completion';
-$string['activitiescompletednote'] = 'Note: Activity completion must be set for an activity to appear in the above list.';
 $string['activityaggregation'] = 'Condition requires';
 $string['activityaggregation_all'] = 'ALL selected activities to be completed';
 $string['activityaggregation_any'] = 'ANY selected activities to be completed';
+$string['activitiescompleted'] = 'Activity completion';
+$string['activitiescompletednote'] = 'Note: Activity completion must be set for an activity to appear in the above list.';
 $string['activitycompletion'] = 'Activity completion';
 $string['aggregationmethod'] = 'Aggregation method';
 $string['all'] = 'All';
@@ -44,7 +44,6 @@ $string['completedunlockedtext'] = 'When you save changes, completion state for 
 $string['completedwarning'] = 'Completion options locked';
 $string['completedwarningtext'] = 'One or more students ({$a}) has already marked this activity as completed. Changing completion options will erase their completion state and may cause confusion. Thus the options have been locked and should not be unlocked unless absolutely necessary.';
 $string['completion'] = 'Completion tracking';
-$string['completionactivitydefault'] = 'Use activity default';
 $string['completion-alt-auto-enabled'] = 'The system marks this item complete according to conditions: {$a}';
 $string['completion-alt-auto-fail'] = 'Completed: {$a} (did not achieve pass grade)';
 $string['completion-alt-auto-n'] = 'Not completed: {$a}';
@@ -53,43 +52,44 @@ $string['completion-alt-auto-y'] = 'Completed: {$a}';
 $string['completion-alt-manual-enabled'] = 'Students can manually mark this item complete: {$a}';
 $string['completion-alt-manual-n'] = 'Not completed: {$a}. Select to mark as complete.';
 $string['completion-alt-manual-y'] = 'Completed: {$a}. Select to mark as not complete.';
-$string['completion_automatic'] = 'Show activity as complete when conditions are met';
-$string['completiondefault'] = 'Default completion tracking';
-$string['completiondisabled'] = 'Disabled, not shown in activity settings';
-$string['completionduration'] = 'Enrolment';
-$string['completionenabled'] = 'Enabled, control via completion and activity settings';
-$string['completionexpected'] = 'Expect completed on';
-$string['completionexpected_help'] = 'This setting specifies the date when the activity is expected to be completed. The date is not shown to students and is only displayed in the activity completion report.';
 $string['completion-fail'] = 'Completed (did not achieve pass grade)';
+$string['completion-n'] = 'Not completed';
+$string['completion-pass'] = 'Completed (achieved pass grade)';
+$string['completion-title-manual-n'] = 'Mark as complete: {$a}';
+$string['completion-title-manual-y'] = 'Mark as not complete: {$a}';
+$string['completion-y'] = 'Completed';
+$string['completion_automatic'] = 'Show activity as complete when conditions are met';
 $string['completion_help'] = 'If enabled, activity completion is tracked, either manually or automatically, based on certain conditions. Multiple conditions may be set if desired. If so, the activity will only be considered complete when ALL conditions are met.
 
 A tick next to the activity name on the course page indicates when the activity is complete.';
+$string['completion_link'] = 'activity/completion';
+$string['completion_manual'] = 'Students can manually mark the activity as completed';
+$string['completion_none'] = 'Do not indicate activity completion';
+$string['completionactivitydefault'] = 'Use activity default';
+$string['completiondefault'] = 'Default completion tracking';
+$string['completiondisabled'] = 'Disabled, not shown in activity settings';
+$string['completionenabled'] = 'Enabled, control via completion and activity settings';
+$string['completionexpected'] = 'Expect completed on';
+$string['completionexpected_help'] = 'This setting specifies the date when the activity is expected to be completed. The date is not shown to students and is only displayed in the activity completion report.';
 $string['completionicons'] = 'Completion tick boxes';
 $string['completionicons_help'] = 'A tick next to an activity name may be used to indicate when the activity is complete.
 
 If a box with a dotted border is shown, a tick will appear automatically when you have completed the activity according to conditions set by the teacher.
 
 If a box with a solid border is shown, you can click it to tick the box when you think you have completed the activity. (Clicking it again removes the tick if you change your mind.) The tick is optional and is simply a way of tracking your progress through the course.';
-$string['completion_link'] = 'activity/completion';
-$string['completion_manual'] = 'Students can manually mark the activity as completed';
 $string['completionmenuitem'] = 'Completion';
-$string['completion-n'] = 'Not completed';
-$string['completion_none'] = 'Do not indicate activity completion';
 $string['completionnotenabled'] = 'Completion is not enabled';
 $string['completionnotenabledforcourse'] = 'Completion is not enabled for this course';
 $string['completionnotenabledforsite'] = 'Completion is not enabled for this site';
 $string['completionondate'] = 'Date';
 $string['completionondatevalue'] = 'User must remain enrolled until';
-$string['completion-pass'] = 'Completed (achieved pass grade)';
+$string['completionduration'] = 'Enrolment';
 $string['completionsettingslocked'] = 'Completion settings locked';
-$string['completion-title-manual-n'] = 'Mark as complete: {$a}';
-$string['completion-title-manual-y'] = 'Mark as not complete: {$a}';
 $string['completionusegrade'] = 'Require grade';
 $string['completionusegrade_desc'] = 'Student must receive a grade to complete this activity';
 $string['completionusegrade_help'] = 'If enabled, the activity is considered complete when a student receives a grade. Pass and fail icons may be displayed if a pass grade for the activity has been set.';
 $string['completionview'] = 'Require view';
 $string['completionview_desc'] = 'Student must view this activity to complete it';
-$string['completion-y'] = 'Completed';
 $string['configcompletiondefault'] = 'The default setting for completion tracking when creating new activities.';
 $string['configenablecompletion'] = 'When enabled, this lets you turn on completion tracking (progress) features at course level.';
 $string['confirmselfcompletion'] = 'Confirm self completion';

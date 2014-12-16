@@ -12,10 +12,16 @@ if (!has_capability('local/rcommon:managecredentials', $context)) {
     $username = $USER->username;
     $PAGE->set_url(new moodle_url('/local/local_rcommon/add_user_credential.php'));
     $PAGE->set_context($context);
-    $PAGE->set_pagelayout('frontpage');
+    $pagetitle = get_string('keymanager_add', 'local_rcommon');
+    $PAGE->set_title($pagetitle);
+    $PAGE->set_heading($pagetitle);
+    $PAGE->navbar->add(get_string('keymanager', 'local_rcommon'), '/local/rcommon/users.php?action=manage', null, navigation_node::TYPE_CUSTOM, null);
+    $PAGE->navbar->add($pagetitle, null, null, navigation_node::TYPE_CUSTOM, null);
+    $PAGE->set_pagelayout('incourse');
 } else {
     admin_externalpage_setup('marsupial_credentials_users');
     $username = required_param('username', PARAM_TEXT);
+    $pagetitle = get_string('keyaddingforuser', 'local_rcommon', $username);
 }
 
 
@@ -40,7 +46,7 @@ if ($form->is_cancelled()) {
     redirect($referer, get_string('saveok', 'local_rcommon'), 2);
 } else {
     echo $OUTPUT->header();
-    echo $OUTPUT->heading(get_string('keyaddingforuser', 'local_rcommon', $username));
+    echo $OUTPUT->heading($pagetitle);
     $credential = new StdClass();
     $credential->username = $username;
 

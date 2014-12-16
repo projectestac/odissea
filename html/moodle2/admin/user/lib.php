@@ -34,8 +34,6 @@ function get_selection_data($ufiltering) {
     $userlist['ausers'] = $DB->get_records_select_menu('user', $sqlwhere, $params, 'fullname', 'id,'.$DB->sql_fullname().' AS fullname', 0, MAX_BULK_USERS);
 
     if ($scount) {
-        //XTEC ************ MODIFICAT - MDL-47227 User bulk selection gets Orable database errors when more than 1000 are selected
-        // 2014.09.12 @pferre22
         if ($scount < MAX_BULK_USERS) {
             $bulkusers = $SESSION->bulk_users;
         } else {
@@ -43,7 +41,6 @@ function get_selection_data($ufiltering) {
         }
         list($in, $inparams) = $DB->get_in_or_equal($bulkusers);
         $userlist['susers'] = $DB->get_records_select_menu('user', "id $in", $inparams, 'fullname', 'id,'.$DB->sql_fullname().' AS fullname');
-        //********** FI PATCH
     }
 
     return $userlist;

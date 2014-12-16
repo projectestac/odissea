@@ -137,19 +137,18 @@ if (!empty($CFG->enabledevicedetection) && empty($device)) {
         $deviceurl = new moodle_url('/theme/index.php', array('device' => $thedevice, 'sesskey' => sesskey()));
         //XTEC ************ MODIFICAT - To avoid schools can change the theme
         //2013.04.22  @sarjona
-        if (get_protected_agora() || ($device!='default' && $device!='legacy') ) {
+        if (get_protected_agora() || ($thedevice!='default' && $thedevice!='legacy') ) {
 	        $select = new single_button($deviceurl, $strthemeselect, 'get');
         } else {
             $select = null; 
         }
-
         $table->data[] = array(
             $OUTPUT->heading(ucfirst($thedevice), 3),
             $screenshotcell,
             $headingthemename . (is_null($select)?'':$OUTPUT->render($select)) . $unsetthemebutton
         );
         //************ ORIGINAL
-        /* 
+        /*  
         $select = new single_button($deviceurl, $strthemeselect, 'get');
 
         $table->data[] = array(

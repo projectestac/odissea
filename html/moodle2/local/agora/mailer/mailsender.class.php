@@ -416,8 +416,8 @@ class mailsender{
 // XTEC ************ ADDED -> Test the charset to do conversions
 // 2011.03.16 @mmartinez
         //Test de subject and bodyContent subject
-        $subject = mb_convert_encoding($subject, "UTF-8");
-        $bodyContent = mb_convert_encoding($bodyContent, "UTF-8");
+        $subject = mb_convert_encoding($subject, "UTF-8", 'auto');
+        $bodyContent = mb_convert_encoding($bodyContent, "UTF-8", 'auto');
 //************ END
 
         $message .= '                     </destinationAddresses>
@@ -684,7 +684,7 @@ class mailsender{
 
         // Convert array to string
         $messagesxml = '<idApp>'.$this->idApp.'</idApp>'.implode("", $this->messages);
-        $messagesxml = mb_convert_encoding($messagesxml, "UTF-8");
+        $messagesxml = mb_convert_encoding($messagesxml, "UTF-8", 'auto');
 
         return new SoapVar('<ns1:PeticioEnviament>'.$messagesxml.'</ns1:PeticioEnviament>',XSD_ANYXML);
     }

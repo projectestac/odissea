@@ -1,5 +1,4 @@
 <?php
-
 //
 //  Copyright (c) 2011, Maths for More S.L. http://www.wiris.com
 //  This file is part of WIRIS Plugin.
@@ -18,15 +17,17 @@
 //  along with WIRIS Plugin. If not, see <http://www.gnu.org/licenses/>.
 //
 
-
 defined('MOODLE_INTERNAL') || die();
 
-// The current plugin version (Date: YYYYMMDDXX).
-$plugin->version   = 2014082600;
-$plugin->release = '3.52.2.1137';
-// Required Moodle version.
-$plugin->requires  = 2012120300;
-$plugin->component = 'tinymce_tiny_mce_wiris';
-$plugin->dependencies = array (
-	 'filter_wiris' => 2014082600
-);
+$plugin->version   = 2014120400;         	 // The current plugin version (Date: YYYYMMDDXX).
+$plugin->release = '3.53.1.1145';
+$plugin->requires  = 2012120300;        		// Requires this Moodle version.
+$plugin->component = 'tinymce_tiny_mce_wiris'; // Full name of the plugin (used for diagnostics).
+
+// If uninstall method is enabled, dependencies are disabled.
+// cyclical dependencies prevents uninstall.
+if (!get_config('tinymce_tiny_mce_wiris', 'uninstall')) {
+	$plugin->dependencies = array (
+		 'filter_wiris' => 2014120400
+	);
+}

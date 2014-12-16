@@ -16,14 +16,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
 
 $string['about'] = 'About this editor';
 $string['absbottom'] = 'Absbottom';
@@ -43,8 +41,6 @@ $string['browse'] = 'Browse';
 $string['cancel'] = 'Cancel';
 $string['cellpadding'] = 'Cellpadding';
 $string['cellspacing'] = 'Cellspacing';
-$string['choosechar'] = 'Choose Character';
-$string['chooseicon'] = 'Choose an icon to insert';
 $string['close'] = 'Close';
 $string['closeafterreplace'] = 'Close after replace';
 $string['cols'] = 'Cols';
@@ -72,6 +68,8 @@ $string['hilitecolor'] = 'Background Color';
 $string['horizontal'] = 'Horizontal';
 $string['horizontalrule'] = 'Horizontal Rule';
 $string['htmlmode'] = 'Toggle HTML Source';
+$string['choosechar'] = 'Choose Character';
+$string['chooseicon'] = 'Choose an icon to insert';
 $string['imageurl'] = 'Image URL';
 $string['indent'] = 'Increase Indent';
 $string['insertchar'] = 'Insert Special Character';

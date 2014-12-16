@@ -1152,9 +1152,9 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
         // Note: "&&" in onclick must be encoded as html-entities for strict XHTML
         return ''
             ."confirm("
-            ."'".$this->hotpot->source->js_value_safe(get_string('confirmstop', 'hotpot'), true)."'"
+            ."'".$this->hotpot->source->js_value_safe(get_string('confirmstop', 'mod_hotpot'), true)."'"
             ."+'\\n\\n'+(window.HP_beforeunload &amp;&amp; HP_beforeunload()?(HP_beforeunload()+'\\n\\n'):'')+"
-            ."'".$this->hotpot->source->js_value_safe(get_string('pressoktocontinue', 'hotpot'), true)."'"
+            ."'".$this->hotpot->source->js_value_safe(get_string('pressoktocontinue', 'mod_hotpot'), true)."'"
             .")"
         ;
     }
@@ -1387,27 +1387,31 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
      *
      * @param string $str
      * @param string $target
+     * @param string $e (optional, default="Ev")
+     * @param string $x (optional, default="x")
+     * @param string $y (optional, default="y")
      * @return string
      * @todo Finish documenting this function
      */
-     public function fix_js_clientXY($str, $target) {
+    function fix_js_clientXY($str, $target, $e='Ev', $x='x', $y='y') {
         // replace Ev.client(X|Y) with "x" and "y" variables
-        $search = array('Ev.clientX', 'Ev.clientY');
-        $replace = array('x', 'y');
+        $search = array("$e.clientX", "$e.clientY");
+        $replace = array($x, $y);
         $str = str_replace($search, $replace, $str);
 
         // set "x" and "y" for mouse or touch device
         $search = '/(\s*)'.preg_quote($target, '/').'/s';
-        $replace = '$1'.'if (Ev.changedTouches) {'.
-                   '$1'."\t".'var x = Ev.changedTouches[0].clientX;'.
-                   '$1'."\t".'var y = Ev.changedTouches[0].clientY'.
-                   '$1'.'} else {'.
-                   '$1'."\t".'var x = Ev.clientX;'.
-                   '$1'."\t".'var y = Ev.clientY;'.
+        $replace = '$1'."if ($e.changedTouches) {".
+                   '$1'."	var $x = $e.changedTouches[0].clientX;".
+                   '$1'."	var $y = $e.changedTouches[0].clientY".
+                   '$1'."} else {".
+                   '$1'."	var $x = $e.clientX;".
+                   '$1'."	var $y = $e.clientY;".
                    '$1'.'}'.
                    '$0';
+
         return preg_replace($search, $replace, $str, 1);
-     }
+    }
 
     /**
      * fix_js_if_then_else
@@ -1418,7 +1422,7 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
      * @todo Finish documenting this function
      */
     public function fix_js_if_then_else($str)  {
-        $search = '/(\s*)if *\(C.ie\) *\{(.*?);?\} *else *\{(.*?);?\}/s';
+        $search = '/(\s*)if *\(C.ie\) *\{(.*?);?\}[\n\r\t ]*else *\{(.*?);?\}/is';
         $replace = '$1if (C.ie) {$1'."\t".'$2;$1} else {$1'."\t".'$3;$1}';
         return preg_replace($search, $replace, $str);
     }
@@ -1552,9 +1556,9 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
                 $stoptext = $this->hotpot->stoptext;
             }
             if (trim($stoptext)=='') {
-                $stoptext = get_string('giveup', 'hotpot');
+                $stoptext = get_string('giveup', 'mod_hotpot');
             }
-            $confirm = get_string('confirmstop', 'hotpot');
+            $confirm = get_string('confirmstop', 'mod_hotpot');
             //$search = '/<!-- BeginTopNavButtons -->'.'.*?'.'<!-- EndTopNavButtons -->/s';
             $search = '/<(div class="Titles")>/s';
             $replace = '<$1 style="position: relative">'."\n\t"
@@ -1936,10 +1940,10 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
         } else {
             // complete remaining feedback fields
             if ($this->hotpot->studentfeedback==hotpot::FEEDBACK_MOODLEFORUM) {
-                $feedback[6] = "'".addslashes_js(get_string('feedbackdiscuss', 'hotpot'))."'";
+                $feedback[6] = "'".addslashes_js(get_string('feedbackdiscuss', 'mod_hotpot'))."'";
             } else {
                 // FEEDBACK_WEBPAGE, FEEDBACK_FORMMAIL, FEEDBACK_MOODLEMESSAGING
-                $feedback[6] = "'".addslashes_js(get_string('feedbacksendmessage', 'hotpot'))."'";
+                $feedback[6] = "'".addslashes_js(get_string('feedbacksendmessage', 'mod_hotpot'))."'";
             }
             $feedback[7] = "'".addslashes_js(get_string('feedback'))."'";
             $feedback[8] = "'".addslashes_js(get_string('defaultcourseteacher'))."'";

@@ -5,8 +5,8 @@ class com_wiris_plugin_impl_TextFilterTags {
 		;
 	}
 	public function init($tags) {
-		$tags->in_appletopen = $this->in_open . "applet";
-		$tags->in_appletclose = $this->in_open . "/applet" . $this->in_close;
+		$tags->in_appletopen = $this->in_open . "APPLET";
+		$tags->in_appletclose = $this->in_open . "/APPLET" . $this->in_close;
 		$tags->in_mathopen = $this->in_open . "math";
 		$tags->in_mathclose = $this->in_open . "/math" . $this->in_close;
 		$tags->out_open = "<";

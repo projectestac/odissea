@@ -28,7 +28,6 @@ class com_wiris_system_CallWrapper {
 	public function stop() {
 		if($this->isRunning) {
 			$this->isRunning = false;
-			com_wiris_system_Storage::$resourcesDir = null;
 			$this->phpStop();
 		}
 	}
@@ -36,6 +35,7 @@ class com_wiris_system_CallWrapper {
 		if(!$this->isRunning) {
 			$this->isRunning = true;
 			$this->phpStart();
+			com_wiris_system_Storage::$resourcesDir = null;
 		}
 	}
 	public function init($haxelib) {

@@ -39,6 +39,12 @@ function xmldb_hotpot_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
+    if (defined('STDIN') && defined('CLI_SCRIPT')) {
+        $interactive = false;
+    } else {
+        $interactive = true;
+    }
+
     //===== 1.9.0 upgrade line ======//
 
     // update hotpot grades from sites earlier than Moodle 1.9, 27th March 2008
@@ -402,7 +408,7 @@ function xmldb_hotpot_upgrade($oldversion) {
         /////////////////////////////////////
 
         // set up sql strings to select HotPots with Moodle 1.x file paths (i.e. no leading slash)
-        $strupdating = get_string('migratingfiles', 'hotpot');
+        $strupdating = get_string('migratingfiles', 'mod_hotpot');
         $select = 'h.*, cm.id AS cmid';
         $from   = '{hotpot} h, {course_modules} cm, {modules} m';
         $where  = 'm.name=? AND m.id=cm.module AND cm.instance=h.id AND h.sourcefile<>?'.
@@ -417,8 +423,10 @@ function xmldb_hotpot_upgrade($oldversion) {
             $rs = false;
         }
         if ($rs) {
-            $i = 0;
-            $bar = new progress_bar('hotpotmigratefiles', 500, true);
+            if ($interactive) {
+                $i = 0;
+                $bar = new progress_bar('hotpotmigratefiles', 500, true);
+            }
 
             // get file storage object
             $fs = get_file_storage();
@@ -541,7 +549,7 @@ function xmldb_hotpot_upgrade($oldversion) {
                     }
                     $params = array('update'=>$hotpot->cmid, 'onclick'=>'this.target="_blank"');
                     $msg = html_writer::link(new moodle_url('/course/modedit.php', $params), $msg);
-                    $msg = get_string('sourcefilenotfound', 'hotpot', $msg);
+                    $msg = get_string('sourcefilenotfound', 'mod_hotpot', $msg);
                     echo html_writer::tag('div', $msg, array('class'=>'notifyproblem'));
                 }
 
@@ -573,7 +581,7 @@ function xmldb_hotpot_upgrade($oldversion) {
                                         );
                                         $msg .= html_writer::empty_tag('br');
                                         $msg .= "filedir path=$l1/$l2/$contenthash";
-                                        $msg = get_string('sourcefilenotfound', 'hotpot', $msg);
+                                        $msg = get_string('sourcefilenotfound', 'mod_hotpot', $msg);
                                         echo html_writer::tag('div', $msg, array('class'=>'notifyproblem'));
                                     }
                                 }
@@ -600,8 +608,10 @@ function xmldb_hotpot_upgrade($oldversion) {
                 $DB->update_record('hotpot', $hotpot);
 
                 // update progress bar
-                $i++;
-                $bar->update($i, $count, $strupdating.": ($i/$count)");
+                if ($interactive) {
+                    $i++;
+                    $bar->update($i, $count, $strupdating.": ($i/$count)");
+                }
             }
             $rs->close();
         }
@@ -834,9 +844,126 @@ function xmldb_hotpot_upgrade($oldversion) {
         upgrade_mod_savepoint(true, "$newversion", 'hotpot');
     }
 
-    $newversion = 2014070225;
+    $newversion = 2014111133;
+    if ($oldversion < $newversion) {
+        // fix all hotpots with view completion
+        if (defined('COMPLETION_VIEW_REQUIRED')) {
+            $moduleid = $DB->get_field('modules', 'id', array('name' => 'hotpot'));
+            $params = array('module' => $moduleid, 'completionview' => COMPLETION_VIEW_REQUIRED);
+            if ($cms = $DB->get_records('course_modules', $params, 'course,section')) {
+                $time = time();
+                $course = null;
+                foreach ($cms as $cm) {
+                    $params = array('coursemoduleid'  => $cm->id,
+                                    'viewed'          => COMPLETION_VIEWED,
+                                    'completionstate' => COMPLETION_INCOMPLETE);
+                    if ($userids = $DB->get_records_menu('course_modules_completion', $params, '', 'id,userid')) {
+                        if ($course===null || $course->id != $cm->course) {
+                            $params = array('id' => $cm->course);
+                            $course = $DB->get_record('course', $params);
+                            $completion = new completion_info($course);
+                        }
+                        $userids = array_values($userids);
+                        $userids = array_unique($userids);
+                        foreach ($userids as $userid) {
+                            // mimic "set_module_viewed($cm, $userid)"
+                            // but without the warnings about headers
+                            $data = $completion->get_data($cm, false, $userid);
+                            $data->viewed = COMPLETION_VIEWED;
+                            $completion->internal_set_data($cm, $data);
+                            $completion->update_state($cm, COMPLETION_COMPLETE, $userid);
+                        }
+                    }
+                }
+            }
+        }
+        upgrade_mod_savepoint(true, "$newversion", 'hotpot');
+    }
+
+    $newversion = 2014112836;
     if ($oldversion < $newversion) {
         $empty_cache = true;
+        upgrade_mod_savepoint(true, "$newversion", 'hotpot');
+    }
+
+    $newversion = 2014112837;
+    if ($oldversion < $newversion) {
+        require_once($CFG->dirroot.'/mod/hotpot/lib.php');
+
+        if (function_exists('get_log_manager')) {
+
+            if ($loglegacy = get_config('loglegacy', 'logstore_legacy')) {
+                set_config('loglegacy', 0, 'logstore_legacy');
+            }
+
+            $legacy_log_tablename = 'log';
+            $legacy_log_table = new xmldb_table($legacy_log_tablename);
+
+            $standard_log_tablename = 'logstore_standard_log';
+            $standard_log_table = new xmldb_table($standard_log_tablename);
+
+            if ($dbman->table_exists($legacy_log_table) && $dbman->table_exists($standard_log_table)) {
+
+                $select = 'module = ?';
+                $params = array('hotpot');
+
+                if ($time = $DB->get_field($standard_log_tablename, 'MAX(timecreated)', array('component' => 'hotpot'))) {
+                    $select .= ' AND time > ?';
+                    $params[] = $time;
+                } else if ($time = $DB->get_field($standard_log_tablename, 'MIN(timecreated)', array())) {
+                    $select .= ' AND time > ?';
+                    $params[] = $time;
+                }
+
+                if ($count = $DB->count_records_select($legacy_log_tablename, $select, $params)) {
+                    $rs = $DB->get_recordset_select($legacy_log_tablename, $select, $params);
+                } else {
+                    $rs = false;
+                }
+
+                if ($rs) {
+                    if ($interactive) {
+                        $i = 0;
+                        $bar = new progress_bar('hotpotmigratelogs', 500, true);
+                    }
+                    $strupdating = get_string('migratinglogs', 'mod_hotpot');
+                    foreach ($rs as $log) {
+                        upgrade_set_timeout(); // 3 mins
+                        hotpot_add_to_log($log->course,
+                                          $log->module,
+                                          $log->action,
+                                          $log->url,
+                                          $log->info,
+                                          $log->cmid,
+                                          $log->userid);
+                        if ($interactive) {
+                            $i++;
+                            $bar->update($i, $count, $strupdating.": ($i/$count)");
+                        }
+                    }
+                    $rs->close();
+                }
+            }
+
+            // reset loglegacy config setting
+            if ($loglegacy) {
+                set_config('loglegacy', $loglegacy, 'logstore_legacy');
+            }
+        }
+        upgrade_mod_savepoint(true, "$newversion", 'hotpot');
+    }
+
+    $newversion = 2014121044;
+    if ($oldversion < $newversion) {
+        if (function_exists('get_log_manager')) {
+            if ($dbman->table_exists('log')) {
+                $select = 'module = ? AND '.$DB->sql_like('action', '?');
+                $DB->set_field_select('log', 'action', 'attempt', $select, array('hotpot', '%attempt_started'));
+                $DB->set_field_select('log', 'action', 'report',  $select, array('hotpot', '%report_viewed'));
+                $DB->set_field_select('log', 'action', 'review',  $select, array('hotpot', '%attempt_reviewed'));
+                $DB->set_field_select('log', 'action', 'submit',  $select, array('hotpot', '%attempt_submitted'));
+            }
+        }
         upgrade_mod_savepoint(true, "$newversion", 'hotpot');
     }
 

@@ -275,41 +275,6 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
             </tr>
             <tr>
                 <?php
-                    $test_name = 'Max server connections';
-                    $wrap = com_wiris_system_CallWrapper::getInstance();
-                    $wrap->start();
-                    try {
-                        $p = new com_wiris_quizzes_impl_FilePersistentVariables();
-                        $p->lockVariable('wiris_maxconnections');
-                        $data = $p->getVariable('wiris_maxconnections');
-                        $connections = haxe_Unserializer::run($data);
-                        $stamp = Math::floor(haxe_Timer::stamp());
-                        $maxconnections = $connections->length;
-                        $configmaxconnections = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()
-                          ->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS);
-                        $count = 0;
-                        $it = $connections->iterator();
-                        while ($it->hasNext()) {
-                            $time = $it->next();
-                            if (($stamp - $time <= com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$CONNECTION_TIMEOUT)
-                                    && ($stamp - $time >= 0)) {
-                                $count++;
-                            }
-                        }
-                        $p->unlockVariable('wiris_maxconnections');
-                        echo wrs_createTableRow($test_name, 'There are currently '
-                          . $count . ' active concurrent connections out of a maximum of '
-                          . $configmaxconnections . '. Greatest number of concurrent connections is ' . $maxconnections . '.', '', true);
-                    }
-                    catch (Exception $e) {
-                        echo wrs_createTableRow($test_name, 'Error with the maximum connections security system. See details: <br/><pre>'
-                          . $e->getTraceAsString() . '</pre>', '', false);
-                    }
-                    $wrap->stop();
-                ?>
-            </tr>
-            <tr>
-                <?php
                     include_once $CFG->dirroot . '/lib/editor/tinymce/lib.php';
                     $tinyEditor = new tinymce_texteditor();
 
@@ -356,6 +321,48 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
                             echo wrs_createTableRow($test_name, $plot, $solution_link, true);
                         ?>
                     </tr>
+            <tr>
+                <?php
+                    $test_name = 'Max server connections';
+                    $wrap = com_wiris_system_CallWrapper::getInstance();
+                    $wrap->start();
+                    try {
+                        $p = new com_wiris_quizzes_impl_FilePersistentVariables();
+                        $p->lockVariable('wiris_maxconnections');
+                        $data = $p->getVariable('wiris_maxconnections');
+
+                        if ($data == null) {
+                        	$e = new Exception("There not exists the file");
+                            $p->unlockVariable('wiris_maxconnections');
+                        	throw $e;
+                        }
+
+                        $connections = haxe_Unserializer::run($data);
+                        $stamp = Math::floor(haxe_Timer::stamp());
+                        $maxconnections = $connections->length;
+                        $configmaxconnections = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()
+                          ->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS);
+                        $count = 0;
+                        $it = $connections->iterator();
+                        while ($it->hasNext()) {
+                            $time = $it->next();
+                            if (($stamp - $time <= com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$CONNECTION_TIMEOUT)
+                                    && ($stamp - $time >= 0)) {
+                                $count++;
+                            }
+                        }
+                        $p->unlockVariable('wiris_maxconnections');
+                        echo wrs_createTableRow($test_name, 'There are currently '
+                          . $count . ' active concurrent connections out of a maximum of '
+                          . $configmaxconnections . '. Greatest number of concurrent connections is ' . $maxconnections . '.', '', true);
+                    }
+                    catch (Exception $e) {
+                        echo wrs_createTableRow($test_name, 'Error with the maximum connections security system. See details: <br/><pre>'
+                          . $e ->getMessage() . "<br/><pre>". $e->getTraceAsString() . '</pre>', '', false);
+                    }
+                    $wrap->stop();
+                ?>
+            </tr>
         </table>
 
         <br/>

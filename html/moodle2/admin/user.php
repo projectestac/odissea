@@ -256,17 +256,12 @@
         $table->colclasses = array();
         $table->head[] = $fullnamedisplay;
         $table->attributes['class'] = 'admintable generaltable';
-        $table->colclasses[] = 'leftalign';
         foreach ($extracolumns as $field) {
             $table->head[] = ${$field};
-            $table->colclasses[] = 'leftalign';
         }
         $table->head[] = $city;
-        $table->colclasses[] = 'leftalign';
         $table->head[] = $country;
-        $table->colclasses[] = 'leftalign';
         $table->head[] = $lastaccess;
-        $table->colclasses[] = 'leftalign';
         $table->head[] = get_string('edit');
         $table->colclasses[] = 'centeralign';
         $table->head[] = "";
@@ -321,7 +316,9 @@
                 //2012.07.17  @sarjona
                 if ( (is_siteadmin($USER) or !is_siteadmin($user) ) && (is_xtecadmin($USER) or !is_xtecadmin($user)) ) {
                 //************ ORIGINAL
-                // if (is_siteadmin($USER) or !is_siteadmin($user)) {
+                /*
+                if (is_siteadmin($USER) or !is_siteadmin($user)) {
+                */
                 //************ FI
                     $buttons[] = html_writer::link(new moodle_url($securewwwroot.'/user/editadvanced.php', array('id'=>$user->id, 'course'=>$site->id)), html_writer::empty_tag('img', array('src'=>$OUTPUT->pix_url('t/edit'), 'alt'=>$stredit, 'class'=>'iconsmall')), array('title'=>$stredit));
                 }

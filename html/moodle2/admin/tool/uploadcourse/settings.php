@@ -25,6 +25,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($hassiteconfig) {
+//XTEC ************ AFEGIT - Allow access only to xtecadmin user
+//2013.10.09 @aginard
+if (get_protected_agora()) { 
+//************ FI 
     $ADMIN->add('courses', new admin_externalpage('tooluploadcourse',
         get_string('uploadcourses', 'tool_uploadcourse'), "$CFG->wwwroot/$CFG->admin/tool/uploadcourse/index.php"));
+//XTEC ************ AFEGIT - Allow access only to xtecadmin user
+//2013.10.09 @aginard
+}
+//************ FI 
 }

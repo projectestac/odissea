@@ -141,16 +141,12 @@ if ($currentuser) {
     }
 
     // If groups are in use and enforced throughout the course, then make sure we can meet in at least one course level group
-    //XTEC ************ MODIFICAT - MDL-47384 Mentee cannot access to course reports of courses with separated groups
-    //2014.09.23 @pferre22
-    if (groups_get_course_groupmode($course) == SEPARATEGROUPS and $course->groupmodeforce
-      and !has_capability('moodle/site:accessallgroups', $coursecontext) and !has_capability('moodle/site:accessallgroups', $coursecontext, $user->id) and !has_capability('moodle/site:accessallgroups', $usercontext)) {
-    // ORIGINAL
-    /*
-    if (groups_get_course_groupmode($course) == SEPARATEGROUPS and $course->groupmodeforce
-      and !has_capability('moodle/site:accessallgroups', $coursecontext) and !has_capability('moodle/site:accessallgroups', $coursecontext, $user->id)) {
-     */
-    //********** FI
+    // Except when we are a parent, in which case we would not be in any group.
+    if (groups_get_course_groupmode($course) == SEPARATEGROUPS
+            and $course->groupmodeforce
+            and !has_capability('moodle/site:accessallgroups', $coursecontext)
+            and !has_capability('moodle/site:accessallgroups', $coursecontext, $user->id)
+            and !$isparent) {
         if (!isloggedin() or isguestuser()) {
             // do not use require_login() here because we might have already used require_login($course)
             redirect(get_login_url());
@@ -280,7 +276,7 @@ if (!isset($hiddenfields['lastaccess'])) {
     } else {
         $datestring = get_string("never");
     }
-    echo html_writer::tag('dt', get_string('lastaccess'));
+    echo html_writer::tag('dt', get_string('lastcourseaccess'));
     echo html_writer::tag('dd', $datestring);
 }
 
@@ -326,19 +322,19 @@ if (!isset($hiddenfields['mycourses'])) {
                 $ccontext = context_course::instance($mycourse->id);
                 $cfullname = $ccontext->get_context_name(false);
                 if ($mycourse->id != $course->id){
-                    $class = '';
+                    $linkattributes = null;
                     if ($mycourse->visible == 0) {
                         if (!has_capability('moodle/course:viewhiddencourses', $ccontext)) {
                             continue;
                         }
-                        $class = 'class="dimmed"';
+                        $linkattributes['class'] = 'dimmed';
                     }
                     $params = array('id' => $user->id, 'course' => $mycourse->id);
                     if ($showallcourses) {
                         $params['showallcourses'] = 1;
                     }
                     $url = new moodle_url('/user/view.php', $params);
-                    $courselisting .= html_writer::link($url, $ccontext->get_context_name(false), array('class' => $class));
+                    $courselisting .= html_writer::link($url, $ccontext->get_context_name(false), $linkattributes);
                     $courselisting .= ', ';
                 } else {
                     $courselisting .= $cfullname . ", ";

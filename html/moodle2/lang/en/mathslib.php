@@ -16,14 +16,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mathslib', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mathslib', language 'en', branch 'MOODLE_19_STABLE'
  *
  * @package   mathslib
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
 
 $string['anunexpectederroroccured'] = 'an unexpected error occurred';
 $string['cannotassigntoconstant'] = 'cannot assign to constant \'{$a}\'';
@@ -41,3 +39,4 @@ $string['unexpectedclosingbracket'] = 'unexpected closing bracket';
 $string['unexpectedcomma'] = 'unexpected comma';
 $string['unexpectedoperator'] = 'unexpected operator \'{$a}\'';
 $string['wrongnumberofarguments'] = 'wrong number of arguments ({$a->given} given, {$a->expected} expected)';
+

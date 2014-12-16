@@ -288,11 +288,15 @@ class credentials{
         $record->isbn 			= $isbn;
 	    $record->credentials 	= $credentials;
 
-        if(!is_numeric($username_or_id)){
-            $record->euserid = $DB->get_field('user','id',array('username'=>$username_or_id));
-            if(!$record->euserid) return false;
-        } else if($username_or_id !== false){
-            $record->euserid = $username_or_id;
+        if ($username_or_id) {
+            if(!is_numeric($username_or_id)){
+                $record->euserid = $DB->get_field('user','id',array('username'=>$username_or_id));
+                if(!$record->euserid) return false;
+            } else if($username_or_id !== false){
+                $record->euserid = $username_or_id;
+            }
+        } else {
+            $record->euserid = false;
         }
 
         $record->timemodified = time();
@@ -412,5 +416,161 @@ class credentials{
     static function delete($id){
         global $DB;
         return $DB->delete_records('rcommon_user_credentials', array('id' => $id));
+    }
+
+    /**
+     * Validation callback function - verified the column line of csv file.
+     * Converts standard column names to lowercase.
+     * @param csv_import_reader $cir
+     * @param array $fields standard user fields
+     * @param moodle_url $returnurl return url in case of any error
+     * @return array list of fields
+     */
+    static function validate_columns(csv_import_reader $cir, $fields, moodle_url $returnurl) {
+        $columns = $cir->get_columns();
+
+        $ignoredfields = $fields['ignored'];
+        $stdfields = array_merge($fields['required'], $fields['optional']);
+
+        if (empty($columns)) {
+            $cir->close();
+            $cir->cleanup();
+            print_error('cannotreadtmpfile', 'error', $returnurl);
+        }
+        if (count($columns) < 2) {
+            $cir->close();
+            $cir->cleanup();
+            print_error('csvfewcolumns', 'error', $returnurl);
+        }
+
+        // test columns
+        $processed = array();
+        foreach ($columns as $key => $unused) {
+            $field = $columns[$key];
+            $lcfield = core_text::strtolower($field);
+            if (in_array($field, $stdfields) or in_array($lcfield, $stdfields)) {
+                // standard fields are only lowercase
+                $newfield = $lcfield;
+            } else if (in_array($field, $ignoredfields) or in_array($lcfield, $ignoredfields)) {
+                continue;
+            } else {
+                $cir->close();
+                $cir->cleanup();
+                print_error('invalidfieldname', 'error', $returnurl, $field);
+            }
+            if (in_array($newfield, $processed)) {
+                $cir->close();
+                $cir->cleanup();
+
+            }
+            $processed[$key] = $newfield;
+        }
+
+        foreach ($fields['required'] as $field) {
+            $lcfield = core_text::strtolower($field);
+            if (!in_array($lcfield, $processed)) {
+                $cir->close();
+                $cir->cleanup(true);
+                print_error('fieldrequired', 'error', $returnurl, $lcfield);
+            }
+        }
+
+        return $processed;
+    }
+}
+
+class credentials_progress_tracker {
+    private $_row;
+    public $columns = array('line', 'isbn', 'credential', 'username', 'userid', 'status');
+
+    /**
+     * Print table header.
+     * @return void
+     */
+    public function start() {
+        $ci = 0;
+        echo '<table id="credentialsresults" class="generaltable boxaligncenter flexible-wrap" summary="'.get_string('keymanager_import_title', 'local_rcommon').'">';
+        echo '<tr class="heading r0">';
+        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('csvline', 'local_rcommon').'</th>';
+        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('book', 'local_rcommon').'</th>';
+        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('credential', 'local_rcommon').'</th>';
+        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('username').'</th>';
+        echo '<th class="header c'.$ci++.'" scope="col">UserID</th>';
+        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('status').'</th>';
+        echo '</tr>';
+        $this->_row = null;
+    }
+
+    /**
+     * Flush previous line and start a new one.
+     * @return void
+     */
+    public function flush() {
+        if (empty($this->_row) or empty($this->_row['line']['normal'])) {
+            // Nothing to print - each line has to have at least number
+            $this->_row = array();
+            foreach ($this->columns as $col) {
+                $this->_row[$col] = array('normal'=>'', 'info'=>'', 'warning'=>'', 'error'=>'');
+            }
+            return;
+        }
+        $ci = 0;
+        $ri = 1;
+        echo '<tr class="r'.$ri.'">';
+        foreach ($this->_row as $key=>$field) {
+            foreach ($field as $type=>$content) {
+                if ($field[$type] !== '') {
+                    $field[$type] = '<span class="credentials'.$type.'">'.$field[$type].'</span>';
+                } else {
+                    unset($field[$type]);
+                }
+            }
+            echo '<td class="cell c'.$ci++.'">';
+            if (!empty($field)) {
+                echo implode('<br />', $field);
+            } else {
+                echo '&nbsp;';
+            }
+            echo '</td>';
+        }
+        echo '</tr>';
+        foreach ($this->columns as $col) {
+            $this->_row[$col] = array('normal'=>'', 'info'=>'', 'warning'=>'', 'error'=>'');
+        }
+    }
+
+    /**
+     * Add tracking info
+     * @param string $col name of column
+     * @param string $msg message
+     * @param string $level 'normal', 'warning' or 'error'
+     * @param bool $merge true means add as new line, false means override all previous text of the same type
+     * @return void
+     */
+    public function track($col, $msg, $level = 'normal', $merge = true) {
+        if (empty($this->_row)) {
+            $this->flush(); //init arrays
+        }
+        if (!in_array($col, $this->columns)) {
+            debugging('Incorrect column:'.$col);
+            return;
+        }
+        if ($merge) {
+            if ($this->_row[$col][$level] != '') {
+                $this->_row[$col][$level] .='<br />';
+            }
+            $this->_row[$col][$level] .= $msg;
+        } else {
+            $this->_row[$col][$level] = $msg;
+        }
+    }
+
+    /**
+     * Print the table end
+     * @return void
+     */
+    public function close() {
+        $this->flush();
+        echo '</table>';
     }
 }

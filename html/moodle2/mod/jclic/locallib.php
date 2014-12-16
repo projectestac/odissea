@@ -69,34 +69,6 @@ require_once("$CFG->libdir/filelib.php");
         return $filetypes;
     }
 
-    /**
-     * Display the header and top of a page
-     *
-     * This is used by the view() method to print the header of view.php but
-     * it can be used on other pages in which case the string to denote the
-     * page in the navigation trail should be passed as an argument
-     *
-     * @global object
-     * @param string $subpage Description of subpage to be used in navigation trail
-     */
-    function jclic_view_header($jclic, $cm, $course, $subpage='') {
-        global $CFG, $PAGE, $OUTPUT;
-
-        if ($subpage) {
-            $PAGE->navbar->add($subpage);
-        }
-
-        //$PAGE->set_title($jclic->name);
-        //$PAGE->set_heading($course->fullname);
-
-        echo $OUTPUT->header();
-
-        groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/jclic/view.php?id=' . $cm->id);
-
-        echo '<div class="reportlink">'.jclic_submittedlink().'</div>';
-        echo '<div class="clearer"></div>';
-    }
-
 
     /**
      * Display the jclic intro
@@ -148,8 +120,7 @@ require_once("$CFG->libdir/filelib.php");
         $sessions = jclic_get_sessions($jclic->id,$USER->id);
         $attempts=sizeof($sessions);
         if ($ispreview) {
-            $url = new moodle_url('/mod/jclic/view.php', array('id' => $context->instanceid));
-            echo '<br><A href="'.$url.'"  >'.get_string('return_results', 'jclic').'</A>';
+            //
         } else if ( $attempts > 0 || $isopen ) {
             echo '<br><A href="#" onclick="window.open(\'action/student_results.php?id='.$context->instanceid.'\',\'JClic\',\'navigation=0,toolbar=0,resizable=1,scrollbars=1,width=700,height=400\');" >'.get_string('show_my_results', 'jclic').'</A>';
         }
@@ -207,55 +178,6 @@ require_once("$CFG->libdir/filelib.php");
 
         return $url;
     }
-
-
-    /**
-     * Display the bottom and footer of a page
-     *
-     * This default method just prints the footer.
-     * This will be suitable for most assignment types
-     */
-    function jclic_view_footer() {
-        global $OUTPUT;
-        echo $OUTPUT->footer();
-    }
-
-    /**
-     * Returns a link with info about the state of the jclic attempts
-     *
-     * This is used by view_header to put this link at the top right of the page.
-     * For teachers it gives the number of attempted jclics with a link
-     * For students it gives the time of their last attempt.
-     *
-     * @global object
-     * @global object
-     * @param bool $allgroup print all groups info if user can access all groups, suitable for index.php
-     * @return string
-     */
-    function jclic_submittedlink($allgroups=false) {
-        global $USER;
-        global $CFG;
-
-        $submitted = '';
-        $urlbase = "{$CFG->wwwroot}/mod/jclic/";
-
-/*        $context = context_module::instance($this->cm->id);
-        if (has_capability('moodle/grade:viewall', $context)) {
-            if ($allgroups and has_capability('moodle/site:accessallgroups', $context)) {
-                $group = 0;
-            } else {
-                $group = groups_get_activity_group($this->cm);
-            }
-            $submitted = 'teacher';
-        } else {
-            if (isloggedin()) {
-                $submitted = 'student';
-            }
-        }
-*/
-        return $submitted;
-    }
-
 
     /**
     * Get moodle server
@@ -395,7 +317,7 @@ require_once("$CFG->libdir/filelib.php");
     * @param string $session_id		The session id to get actitivies
     */
     function jclic_get_activities($session_id) {
-        global $CFG, $DB;
+        global $DB;
 
         $activities = array();
         if($rs = $DB->get_records('jclic_activities', array('session_id'=>$session_id), 'activity_id')){
@@ -494,7 +416,7 @@ require_once("$CFG->libdir/filelib.php");
     * @return object	session object with score, totaltime, activities done and solved and attempts information
     */
     function jclic_get_sessions_summary($jclicid, $userid) {
-        global $CFG, $DB;
+        global $DB;
 
         jclic_normalize_date();
         $sessions_summary = new stdClass();
@@ -539,216 +461,6 @@ require_once("$CFG->libdir/filelib.php");
     */
     function jclic_time2str($time){
         return round($time/60000,0)."' ".round(fmod($time,60000)/1000,0)."''";
-    }
-
-
-    function jclic_print_results_table($jclic, $context, $cm, $course, $action){
-        global $CFG, $DB, $OUTPUT, $PAGE;
-
-        $PAGE->requires->js('/mod/jclic/jclic.js');
-
-        // View all/summary sessions link
-        if (isset($action) && $action != 'showall'){
-            $url = new moodle_url('/mod/jclic/view.php', array('id' => $context->instanceid, 'action' => 'showall'));
-            $text = get_string('showall', 'jclic');
-        } else{
-            $url = new moodle_url('/mod/jclic/view.php', array('id' => $context->instanceid));
-            $text = get_string('hideall', 'jclic');
-        }
-        echo '<div id="jclic-summary-all-link" ><A href="'.$url.'" >'.$text.'</A></div>';
-
-        // Preview link to JClic activity
-        $url = new moodle_url('/mod/jclic/view.php', array('id' => $context->instanceid, 'action' => 'preview'));
-        echo '<div id="jclic-preview-link" ><A href="'.$url.'"  >'.get_string('preview_jclic', 'jclic').'</A></div>';
-
-
-        // Show students list with their results
-        require_once($CFG->libdir.'/gradelib.php');
-        $perpage = optional_param('perpage', 10, PARAM_INT);
-        $perpage = ($perpage <= 0) ? 10 : $perpage ;
-        $page    = optional_param('page', 0, PARAM_INT);
-
-
-        /// find out current groups mode
-        $groupmode = groups_get_activity_groupmode($cm);
-        $currentgroup = groups_get_activity_group($cm, true);
-
-        /// Get all ppl that are allowed to submit jclic
-        list($esql, $params) = get_enrolled_sql($context, 'mod/jclic:submit', $currentgroup);
-        $sql = "SELECT u.id FROM {user} u ".
-               "LEFT JOIN ($esql) eu ON eu.id=u.id ".
-               "WHERE u.deleted = 0 AND eu.id=u.id ";
-
-        $users = $DB->get_records_sql($sql, $params);
-        if (!empty($users)) {
-            $users = array_keys($users);
-        }
-
-        // if groupmembersonly used, remove users who are not in any group
-        if ($users and !empty($CFG->enablegroupmembersonly) and $cm->groupmembersonly) {
-            if ($groupingusers = groups_get_grouping_members($cm->groupingid, 'u.id', 'u.id')) {
-                $users = array_intersect($users, array_keys($groupingusers));
-            }
-        }
-
-        // Create results table
-        if (function_exists('get_extra_user_fields') ) {
-            $extrafields = get_extra_user_fields($context);
-        } else{
-            $extrafields = array();
-        }
-        $tablecolumns = array_merge(array('picture', 'fullname'), $extrafields,
-                array('starttime', 'attempts', 'solveddone', 'totaltime', 'grade'));
-
-        $extrafieldnames = array();
-        foreach ($extrafields as $field) {
-            $extrafieldnames[] = get_user_field_name($field);
-        }
-
-        $strstarttime = ($action=='showall')?get_string('starttime', 'jclic'):get_string('lastaccess', 'jclic');
-
-        $tableheaders = array_merge(
-                array('', get_string('fullnameuser')),
-                $extrafieldnames,
-                array(
-                    $strstarttime,
-                    get_string('attempts', 'jclic'),
-                    get_string('solveddone', 'jclic'),
-                    get_string('totaltime', 'jclic'),
-                    get_string('grade'),
-                ));
-
-        require_once($CFG->libdir.'/tablelib.php');
-        $table = new flexible_table('mod-jclic-results');
-
-        $table->define_columns($tablecolumns);
-        $table->define_headers($tableheaders);
-        $table->define_baseurl($CFG->wwwroot.'/mod/jclic/view.php?id='.$cm->id.'&amp;currentgroup='.$currentgroup.'&amp;action='.$action);
-
-        $table->sortable(true, 'lastname'); //sorted by lastname by default
-        $table->collapsible(true);
-        $table->initialbars(true);
-
-        $table->column_suppress('picture');
-        $table->column_suppress('fullname');
-
-        $table->column_class('picture', 'picture');
-        $table->column_class('fullname', 'fullname');
-        foreach ($extrafields as $field) {
-            $table->column_class($field, $field);
-        }
-
-        $table->set_attribute('cellspacing', '0');
-        $table->set_attribute('id', 'attempts');
-        $table->set_attribute('class', 'results generaltable generalbox');
-        $table->set_attribute('width', '100%');
-
-        $table->no_sorting('starttime');
-        $table->no_sorting('solveddone');
-        $table->no_sorting('totaltime');
-        $table->no_sorting('attempts');
-        $table->no_sorting('grade');
-
-        // Start working -- this is necessary as soon as the niceties are over
-        $table->setup();
-
-        /// Construct the SQL
-        list($where, $params) = $table->get_sql_where();
-        if ($where) {
-            $where .= ' AND ';
-        }
-
-        if ($sort = $table->get_sql_sort()) {
-            $sort = ' ORDER BY '.$sort;
-        }
-
-        $ufields = user_picture::fields('u', $extrafields);
-        if (!empty($users)) {
-            $select = "SELECT $ufields ";
-
-            $sql = 'FROM {user} u '.
-                   'WHERE '.$where.'u.id IN ('.implode(',',$users).') ';
-
-            $ausers = $DB->get_records_sql($select.$sql.$sort, $params, $table->get_page_start(), $table->get_page_size());
-
-            $table->pagesize($perpage, count($users));
-            $offset = $page * $perpage; //offset used to calculate index of student in that particular query, needed for the pop up to know who's next
-            if ($ausers !== false) {
-                //$grading_info = grade_get_grades($course->id, 'mod', 'jclic', $jclic->id, array_keys($ausers));
-                $endposition = $offset + $perpage;
-                $currentposition = $offset;
-                $ausersObj = new ArrayObject($ausers);
-                $iterator = $ausersObj->getIterator();
-                $iterator->seek($currentposition);
-
-                  while ($iterator->valid() && $currentposition < $endposition ) {
-                    $auser = $iterator->current();
-                    $picture = $OUTPUT->user_picture($auser);
-                    $userlink = '<a href="' . $CFG->wwwroot . '/user/view.php?id=' . $auser->id . '&amp;course=' . $course->id . '">' . fullname($auser, has_capability('moodle/site:viewfullnames', $context)) . '</a>';
-                    $extradata = array();
-                    foreach ($extrafields as $field) {
-                        $extradata[] = $auser->{$field};
-                    }
-
-                    $sessions = array();
-                    if ($action == 'showall'){
-                        // Print sessions for each student
-                        $sessions=jclic_get_sessions($jclic->id, $auser->id);
-                        if (sizeof($sessions)>0){
-                            $first_session=true;
-                            foreach($sessions as $session){
-                                // Print session information
-                                $rowclass = null;
-                                $starttime='<a href="#" onclick="showSessionActivities(\''.$session->session_id.'\');">'.date('d/m/Y H:i',strtotime($session->starttime)).'</a>';
-                                $solveddone = $session->solved. ' / '. $session->done;
-                                $grade = $session->score;
-                                $totaltime = $session->totaltime;
-                                $attempts = $session->attempts;
-                                $row = array_merge(array($picture, $userlink), $extradata,
-                                        array($starttime, $attempts, $solveddone, $totaltime, $grade));
-                                $table->add_data($row, $rowclass);
-
-                                // Print activities for each session
-                                $html='<tr class="jclic-session-activities-hidden" id="session_'.$session->session_id.'" >';
-                                $html.='<td colspan="'.(2+sizeof($extradata)).'"></td>';
-                                $html.= '<td colspan="6" >';
-                                $html.= jclic_get_session_activities_html($session->session_id);
-                                $html.= '</td></tr>';
-                                echo $html;
-
-                                // Remove user information (only showed in the first row)
-                                if ($first_session){
-                                    $first_session = false;
-                                    $picture = null;
-                                    $userlink = null;
-                                    // Remove extradata fields to show them only once
-                                    foreach ($extradata as $key=>$value){
-                                        $extradata[$key] = '';
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    // Sessions summary
-                    $sessions_summary = jclic_get_sessions_summary($jclic->id, $auser->id);
-                    $starttime = (sizeof($sessions)>0)?get_string('totals', 'jclic'):(isset($sessions_summary->starttime)?date('d/m/Y H:i',strtotime($sessions_summary->starttime)):'-');
-                    $solveddone = $sessions_summary->solved. ' / '. $sessions_summary->done;
-                    $grade = $sessions_summary->score;
-                    $totaltime = $sessions_summary->totaltime;
-                    $attempts = $sessions_summary->attempts;
-                    $row = array_merge(array($picture, $userlink), $extradata,
-                            array($starttime, $attempts, $solveddone, $totaltime, $grade));
-                    $rowclass = (sizeof($sessions)>0)?'summary-row':'';
-                    $table->add_data($row, $rowclass);
-
-                    // Forward iterator
-                    $currentposition++;
-                    $iterator->next();
-                }
-                $table->print_html();  /// Print the whole table
-            }
-        }
     }
 
     /**

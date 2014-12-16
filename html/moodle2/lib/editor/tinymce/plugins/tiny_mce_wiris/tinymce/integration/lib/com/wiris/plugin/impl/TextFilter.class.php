@@ -63,6 +63,41 @@ class com_wiris_plugin_impl_TextFilter {
 		$img .= "/>";
 		return $img;
 	}
+	public function filterApplet($tags, $text, $prop, $safeXML) {
+		$n0 = null;
+		$n1 = null;
+		$output = null;
+		$sub = null;
+		$output = new StringBuf();
+		$n0 = 0;
+		$n1 = _hx_index_of($text, $tags->in_appletopen, $n0);
+		while($n1 >= 0) {
+			$output->add(_hx_substr($text, $n0, $n1 - $n0));
+			$n0 = $n1;
+			$n1 = _hx_index_of($text, $tags->in_appletclose, $n0);
+			if($n1 >= 0) {
+				$n1 = $n1 + strlen($tags->in_appletclose);
+				$sub = _hx_substr($text, $n0, $n1 - $n0);
+				if($safeXML) {
+					if($this->fixUrl === null) {
+						$this->fixUrl = new EReg("<a href=\"[^\"]*\"[^>]*>([^<]*)<\\/a>|<a href=\"[^\"]*\">", "");
+					}
+					$sub = $this->fixUrl->replace($sub, "\$1");
+					$sub = $this->html_entity_decode($sub);
+					$sub = str_replace($tags->in_double_quote, $tags->out_double_quote, $sub);
+					$sub = str_replace($tags->in_open, $tags->out_open, $sub);
+					$sub = str_replace($tags->in_close, $tags->out_close, $sub);
+					$sub = str_replace($tags->in_entity, $tags->out_entity, $sub);
+					$sub = str_replace($tags->in_quote, $tags->out_quote, $sub);
+				}
+				$n0 = $n1;
+				$output->add($sub);
+				$n1 = _hx_index_of($text, $tags->in_appletopen, $n0);
+			}
+		}
+		$output->add(_hx_substr($text, $n0, null));
+		return $output->b;
+	}
 	public function filterMath($tags, $text, $prop, $safeXML) {
 		$n0 = null;
 		$n1 = null;
@@ -116,6 +151,7 @@ class com_wiris_plugin_impl_TextFilter {
 			$tags = com_wiris_plugin_impl_TextFilterTags::newXml();
 		}
 		$str = $this->filterMath($tags, $str, $prop, $b);
+		$str = $this->filterApplet($tags, $str, $prop, $b);
 		return $str;
 	}
 	public $fixUrl;
