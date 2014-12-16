@@ -3,6 +3,16 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 14.12.22
+---------------------------------------------------------------------------------------
+- Upgrade to Moodle 2.6.6
+- Updated all external modules
+- Moved lang files to langpacks
+- MDL-43462 assignfeedback_editpdf: fix display of landscape PDFs 
+- Bigdata translated
+- Some marsupial bug fixes including: CSV import
+
+
 Changes 14.11.27
 ---------------------------------------------------------------------------------------
 - Fixed linguistic SQL sorting for Oracle
