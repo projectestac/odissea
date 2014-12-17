@@ -8,7 +8,7 @@ $dirroot = dirname(dirname(dirname(__FILE__)));
 
 $CFG->altcacheconfigpath = $dirroot.'/html/moodle2/local/agora/muc/';
 
-$CFG->langotherroot = dirname(__FILE__) . '/lang/';
+$CFG->langotherroot = dirname(__FILE__) . '/langpacks/';
 
 $CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
 

@@ -239,27 +239,20 @@ function qv_delete_instance($id) {
     $result = true;
     qv_delete_instance_userdata($id);
 
-    if ($result && !$DB->delete_records('qv', array('id' => $id))) {
-        $result = false;
-    }
-
-    if ($result && !$DB->delete_records('event', array('modulename'=>'qv', 'instance'=>$qv->id))) {
-        $result = false;
-    }
-
-    if ($result && !qv_grade_item_delete($qv)){
+    if (!qv_grade_item_delete($qv)) {
         $result = false;
     }
 
     //Delete files
-	if ($result){
+	if ($result) {
 		$fs = get_file_storage();
-		$result = $fs->delete_area_files($context->id, 'mod_qv', 'content');
+		$fs->delete_area_files($context->id, 'mod_qv', 'content');
+		$fs->delete_area_files($context->id, 'mod_qv', 'package');
 	}
 
-	if ($result){
-		$result = $fs->delete_area_files($context->id, 'mod_qv', 'package');
-	}
+    $DB->delete_records('event', array('modulename' => 'qv', 'instance' => $qv->id));
+
+    $DB->delete_records('qv', array('id' => $id));
 
     return $result;
 }
@@ -512,7 +505,7 @@ function qv_grade_item_delete($qv) {
     global $CFG;
     require_once($CFG->libdir.'/gradelib.php');
 
-    return grade_update('mod/qv', $qv->course, 'mod', 'qv', $qv->id, 0, NULL, array('deleted'=>1));
+    return grade_update('mod/qv', $qv->course, 'mod', 'qv', $qv->id, 0, NULL, array('deleted'=>1)) == GRADE_UPDATE_OK;
 }
 
 /**

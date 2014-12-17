@@ -1,9 +1,10 @@
 Changelog
 ==========
 
-Release 1.5 (Build: 2014120000)
--------------------------------
-* compatible behat test with 2.7+
+Release 1.5 (Build: 2014111901) STABLE_26
+-----------------------------------------
+* reverse edulevel to level (event)
+* compatible behat test with 2.6
 * Do not display 'See all providers' link if there is only one provider to select.
 * add yml shippable file (compatible with travis). You need to change the secure variable with your own GITHUBTOKEN variable. See the docs of shippable or travis for secure variable.
 

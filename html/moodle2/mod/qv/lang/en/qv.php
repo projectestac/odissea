@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -45,7 +44,7 @@ $string['displayselect'] = 'Display';
 $string['displayselect_help'] = 'This setting determines how the QV is displayed. Options may include:
 
 * Embed - The QV is displayed within the page below the navigation bar together with the QV description and any blocks
-* In pop-up - The URL is displayed in a new browser window without menus or an address bar';
+* In pop-up - The URL is displayed in a new browsetir window without menus or an address bar';
 $string['duedate'] = 'Due date';
 $string['expired'] = 'Sorry, this activity was closed on {$a} and is no longer available';
 $string['filetype'] = 'Type';
@@ -59,14 +58,14 @@ $string['height'] = 'Height';
 $string['invalidqvfile'] = 'Invalid QV specified. It must have the ".zip" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s).';
 $string['msg_not_read'] = 'There are messages pending to read';
-$string['modulename'] = 'Quadern Virtual';
+$string['modulename'] = 'Virtual Notebook';
 $string['modulename_help'] = '<a href="http://clic.xtec.cat/qv_web" target="_blank">Quaderns Virtuals</a> is a project of the Catalan Ministry of Education.
     It consists of a set of open source software applications that allow the creation of several types of multimedia educational activities: puzzles, association games, text activities, crosswords, wordsearch games and more.
     Besides, the <a href="http://clic.xtec.cat/qv_biblio" target="_blank">QV database</a> offers a repository where more than hundred activities are displayed.
     It has been created by teachers and other professionals who want to share their work with others.
 
 This module allows teachers to add QV activities to any course and to track pupils\' results (time spent on each of the activities, number of tries, score...).';
-$string['modulenameplural'] = 'Quaderns Virtuals';
+$string['modulenameplural'] = 'Virtual Notebooks';
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
 $string['optionsheader'] = 'Options';
 $string['orderitems'] = 'Active random order questions'; //Albert

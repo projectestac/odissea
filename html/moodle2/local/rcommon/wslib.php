@@ -121,11 +121,21 @@ function rcommon_object_to_array_lower($value, $recursive = false) {
 
     // Solve lack of xmlns
     if(count($array) == 1 && isset($array['any'])){
-        $anyxml = simplexml_load_string ($array['any']);
+        $anyxml = simplexml_load_string ('<aux>'.$array['any'].'</aux>');
+        $anyxml = $anyxml->children();
         if (!$anyxml) {
             return false;
         }
-        $array = array($anyxml->getName() =>$anyxml);
+        $name = $anyxml->getName();
+        if (count($anyxml->$name) == 1) {
+            $array = array($name => $anyxml->$name);
+        } else {
+            $children = array();
+            foreach ($anyxml->$name as $child) {
+                $children[] = $child;
+            }
+            $array = array($name => $children);
+        }
     }
 
 	$array_ret = array();
