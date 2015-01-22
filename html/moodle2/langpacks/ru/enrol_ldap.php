@@ -129,6 +129,6 @@ $string['user_search_sub'] = 'Если членство в группе соде
 $string['user_search_sub_key'] = 'Поиск в подконтекстах';
 $string['user_settings'] = 'Настройки поиска пользователя';
 $string['user_type'] = 'Если состав группы содержит различающиеся имена, указать способ хранения пользователей в LDAP';
-$string['user_type_key'] = 'Тип пользователя';
+$string['user_type_key'] = 'Тип учетной записи пользователя';
 $string['version'] = 'Версия протокола LDAP, используемая сервером';
 $string['version_key'] = 'Версия';

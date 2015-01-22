@@ -65,6 +65,7 @@ $string['validationmsg_filenotexists'] = 'Извлеченный файл не �
 $string['validationmsg_filesnumber'] = 'В пакете не хватает файлов.';
 $string['validationmsg_filestatus'] = 'Не удалось извлечь все файлы';
 $string['validationmsg_filestatus_info'] = 'Попытка извлечения файла «{$a->file}» привела к ошибке «{$a->status}».';
+$string['validationmsg_foundlangfile'] = 'Языковой файл найден';
 $string['validationmsglevel_debug'] = 'Отладка';
 $string['validationmsglevel_error'] = 'Ошибка';
 $string['validationmsglevel_info'] = 'OK';

@@ -579,7 +579,6 @@ La notació de claudàtor té la següent sintaxi: <code>[url reproductor amb op
 : Una llista separada per comes amb opcions per passar al reproductor. Cadascuna de les opcions pot ser un simple actiu/inactiu o un parell de valor conegut.
 : **nom: valor
 : **nom="un valor amb espais"';
-$string['utilitiesindex'] = 'Índex de les utilitats Hot Potatoes';
 $string['viewreports'] = 'Visualitza els informes de {$a} usuaris';
 $string['views'] = 'Vistes';
 $string['weighting'] = 'Ponderació';

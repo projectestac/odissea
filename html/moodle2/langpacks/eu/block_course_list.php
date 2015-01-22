@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['adminview'] = 'Kudeatzaileak ikusi';
 $string['allcourses'] = 'Kudeatzaileak ikastaro guztiak ikusten ditu';
 $string['configadminview'] = 'Zer ikusi behar luke kudeatzaileak Ikastaroen zerrenda blokean?';
-$string['confighideallcourseslink'] = '"Ikastaro guztiak" esteka blokearen azpian ezkutatu. Estekak ezkutatzeak ez dio eragingo Kudeatzailearen ikusteko moduari.';
+$string['confighideallcourseslink'] = 'Ezkutatu "Ikastaro guztiak" esteka blokearen azpian. (Estekak ezkutatzeak ez dio eragingo Kudeatzailearen ikusteko moduari.)';
 $string['course_list:addinstance'] = 'Gehitu ikastaroak bloke berria';
 $string['course_list:myaddinstance'] = 'Gehitu ikastaroak bloke berria Nire hasieran';
 $string['hideallcourseslink'] = 'Ezkutatu \'Ikastaro guztiak\' esteka';

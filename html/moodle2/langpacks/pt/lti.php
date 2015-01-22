@@ -80,7 +80,7 @@ $string['custom_help'] = 'Os parâmetros personalizados são configurações uti
 
 É seguro deixar este campo inalterado, excepto se tiver instruções do fornecedor em contrário.';
 $string['custominstr'] = 'Parâmetros personalizados';
-$string['debuglaunch'] = 'Opção de Debug';
+$string['debuglaunch'] = 'Opção de debug';
 $string['debuglaunchoff'] = 'Arranque normal';
 $string['debuglaunchon'] = 'Arranque em Debug';
 $string['default'] = 'Predefinido';
@@ -233,7 +233,7 @@ As atividades ferramenta LTI diferem dos recursos URL em alguns aspetos:
 * As ferramentas LTI permitem ler, atualizar e apagar notas associadas à atividade;
 * As configurações das ferramentas LTI criam uma ligação fiável entre o seu site e o fornecedor da ferramenta, permitindo uma comunicação segura entre eles.';
 $string['modulename_link'] = 'mod/lti/view';
-$string['modulenameplural'] = 'Ferramentas Externas';
+$string['modulenameplural'] = 'Ferramentas externas';
 $string['modulenamepluralformatted'] = 'Instâncias LTI';
 $string['never'] = 'Nunca';
 $string['new_window'] = 'Nova janela';

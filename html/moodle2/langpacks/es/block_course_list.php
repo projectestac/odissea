@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['adminview'] = 'Vista del administrador';
 $string['allcourses'] = 'El administrador ve todos los cursos';
 $string['configadminview'] = '¿Qué debería ver el administrador en el bloque de listado de cursos?';
-$string['confighideallcourseslink'] = 'Ocultar el enlace "Todos los cursos" en el fondo del bloque. Ocultar los enlaces no afecta a la visión del Administrador.';
+$string['confighideallcourseslink'] = 'Ocultar el enlace "Todos los cursos" bajo el listado de cursos. (Esta opción no afecta a la vista del administrador).';
 $string['course_list:addinstance'] = 'Añadir un nuevo bloque de lista de cursos';
 $string['course_list:myaddinstance'] = 'Añadir un nuevo bloque de lista de cursos al Área personal';
 $string['hideallcourseslink'] = 'Ocultar enlace a "Todos los cursos"';

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Обратная связь';
-$string['feedback:addinstance'] = 'Добавлять новый блок обратной связи';
+$string['feedback:addinstance'] = 'Добавлять новый блок «Обратная связь»';
 $string['missing_feedback_module'] = 'Этот блок использует модуль Обратная связь, но этого модуля нет!';
 $string['pluginname'] = 'Обратная связь';

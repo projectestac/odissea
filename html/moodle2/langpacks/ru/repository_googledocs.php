@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID клиента';
 $string['configplugin'] = 'Настроить модуль «Google Drive»';
-$string['googledocs:view'] = 'Просматривать хранилище «Google Drive»';
+$string['googledocs:view'] = 'Просматривать хранилище файлов «Google Drive»';
 $string['oauth2upgrade_message_content'] = 'При обновлении до Moodle 2.3 плагин Google Drive был отключен. Чтобы снова включить его, Ваш сайт Moodle должен быть зарегистрирован в Google для получения ID клиента и ключа, как это описано в документации {$a->docsurl}. ID клиента и ключ могут быть использованы для настройки всех плагинов Google Drive и Picasa.';
 $string['oauth2upgrade_message_small'] = 'Этот плагин был отключен, так как он требует настройки, как описано в документации установки Google OAuth 2.0.';
 $string['oauth2upgrade_message_subject'] = 'Важная информация о плагине  хранилища Google Drive';

@@ -328,7 +328,6 @@ $string['useglossary_help'] = '이 설정이 활성화되면 콘텐츠는 브라
 
 이 설정은 용어집 자동 링크 필터를 활성화하거나 비활성화 하는 사이트 관리자 설정을 덮어쓰게 됨을 주목하세요.';
 $string['usemediafilter'] = '미디어 필터 사용';
-$string['utilitiesindex'] = 'HotPot 유틸리티 인덱스';
 $string['viewreports'] = '{$a} 사용자에 대한 보고서 보기';
 $string['views'] = '보기';
 $string['weighting'] = '가중치';

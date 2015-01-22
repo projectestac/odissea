@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_tags:addinstance'] = 'Добавлять новый блок тегов блога';
+$string['blog_tags:addinstance'] = 'Добавлять новый блок «Теги блога»';
 $string['pluginname'] = 'Теги блога';

@@ -33,7 +33,7 @@ $string['actionaftercorrectanswer_help'] = 'Galdera bati zuzen erantzun ondoren,
 * Erakutsi ikusi gabeko orri bat - Ausaz erakutsiko dira orriak bi aldiz erakutsi gabe
 * Erakutsi erantzun gabeko orri bat - Ausaz erakutsiko dira orriak, erantzun gabeko galderak dituzten orriak erreikatu gabe';
 $string['actions'] = 'Ekintzak';
-$string['activitylink'] = 'Hurrengo jarduerarako esteka';
+$string['activitylink'] = 'Esteka hurrengo jarduerara';
 $string['activitylink_help'] = 'Ikasgaiaren bukaeran ikastaroko beste jarduera baterako esteka eskaintzeko, aukeratu jarduera zabaltzen den menuan.';
 $string['activitylinkname'] = 'Joan hona: {$a}';
 $string['activityoverview'] = 'Egin gabeko ikasgaiak dituzu';
@@ -119,6 +119,7 @@ $string['correctresponse'] = 'Erantzun zuzena';
 $string['createaquestionpage'] = 'Sortu galdera-orria';
 $string['credit'] = 'Kreditua';
 $string['customscoring'] = 'Puntuazio pertsonalizatua';
+$string['customscoring_help'] = 'Gaituz gero, erantzun bakoitzari zenbakizko kalifikazioa eman ahal zaio (positiboa edo negatiboa).';
 $string['deadline'] = 'Amaiera-data';
 $string['defaultessayresponse'] = 'Zure entsegua irakasleak kalifikatuko du.';
 $string['deleteallattempts'] = 'Ikasgaiaren saiaketa guztiak ezabatu';
@@ -204,6 +205,7 @@ $string['jumps_help'] = 'Erantzun (galderetarako) edo deskribapen (eduki-orrieta
 $string['jumpsto'] = '<em>{$a}</em>rako jauziak';
 $string['leftduringtimed'] = 'Denbora-epe finkoko ikasgaia eten da.<br>Berriz hasteko "Jarraitu" botoia sakatu, mesedez.';
 $string['leftduringtimednoretake'] = 'Denbora-epe finkoko ikasgaia eten da eta<br>ez dago berriz hasteko edo jarraitzeko baimenik.';
+$string['leftduringtimedsession'] = 'Denbora neurtua zuen ikasgai batetik irten zara.';
 $string['lesson:addinstance'] = 'Gehitu beste ikasgai bat';
 $string['lessonattempted'] = 'Ikasgai honetan saiakera egin da';
 $string['lessonclosed'] = 'Ikasgai hau {$a} egunean itxi zen.';
@@ -228,9 +230,7 @@ $string['matchesanswer'] = 'Erantzunarekin bat dator';
 $string['matching'] = 'Lotu';
 $string['matchingpair'] = 'Lotzeko {$a}. bikotea';
 $string['maxgrade'] = 'Gehieneko kalifikazioa';
-$string['maxgrade_help'] = '<p align="center"><b>Ikasgaiaren kalifikazioa</b></p>
-
-<p>Balore honek ikasgai batean lor daitekeen gehienezko kalifikazioa adierazten du. 0tik 100era bitartekoa izan daiteke. Balore hau edozein unetan alda daiteke. Aldaketek berehalako isla izango dute kalifikazio-orrian eta zerrenda ezberdinetan ikusi ahal izando dituzte ikasleek euren kalifikazioak.</p>';
+$string['maxgrade_help'] = 'Balore honek ikasgai batean lor daitekeen gehienezko kalifikazioa adierazten du. 0 ezarriz gero, ikasgaia ez da kalifikazio-orrietan agertuko.';
 $string['maxhighscores'] = 'Erakusteko puntuazio altuenen kopurua';
 $string['maximumnumberofanswersbranches'] = 'Gehienezko erantzun-kopurua';
 $string['maximumnumberofanswersbranches_help'] = 'Ezarpen honek zehazten du ikasgaian erabiliko den gehienezko erantzun-kopurua. Egia/gezurra galderak bakarrik erabiltzen badira, 2 ezar daiteke. Edonoiz alda daiteke ezarpen hau, irakasleak ikusten duenari bakarrik eragiten diolako eta ez datuei.';
@@ -311,6 +311,7 @@ $string['numberofpagesviewednotice'] = 'Erantzundako galdera-kopurua: {$a->nques
 $string['numerical'] = 'Zenbakizkoa';
 $string['ongoing'] = 'Erakutsi metatutako puntuazioa';
 $string['ongoingcustom'] = 'Ikasgai hau gehienez {$a->score} punturekin balioesten da. Zuk {$a->score} puntu lortu duzu oraingoz posible ziren {$a->currenthigh} puntutatik.';
+$string['ongoing_help'] = 'Gaituz gero, orri bakoitzak ikasleak lor daitezkeen puntu guztietatik zenbat lortu duen erakustiko du.';
 $string['ongoingnormal'] = 'Zuk {$a->viewed} galderatik {$a->correct} ondo erantzun duzu.';
 $string['onpostperpage'] = 'Mezu bat bakarrik kalifikazioko';
 $string['options'] = 'Aukerak';

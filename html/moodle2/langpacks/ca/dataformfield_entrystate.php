@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notify'] = 'Notifica';
 $string['notify_help'] = 'Notifica';
+$string['pluginname'] = 'Estat de l\'entrada';
 $string['state'] = 'Estat';
 $string['stateicon'] = 'Icona d\'estat';
 $string['stateicon_help'] = 'Icona d\'estat';

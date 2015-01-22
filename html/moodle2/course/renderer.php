@@ -435,6 +435,11 @@ class core_course_renderer extends plugin_renderer_base {
             return '';
         }
 
+        //XTEC ************ AFEGIT - Hide old assignments from adding
+        //2015.01.14  @pferre22
+        unset($modnames['assignment']);
+        //************ FI
+
         // Retrieve all modules with associated metadata
         $modules = get_module_metadata($course, $modnames, $sectionreturn);
         $urlparams = array('section' => $section);

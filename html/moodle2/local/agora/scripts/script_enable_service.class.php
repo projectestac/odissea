@@ -84,8 +84,24 @@ fontselect,fontsizeselect,code,search,replace,wrap,cleanup,removeformat,pastetex
         set_config('maxbytes', 0, 'assignsubmission_file');
         mtrace('Límit de tramesa de tasques pujat al límit de servidor', '<br/>');
 
+        // Change rcommon log to admin datadir
+        $rcommonlogdir = get_admin_datadir_folder();
+        set_config('data_store_log', $rcommonlogdir, 'rcommon');
+
+        // Upgrade Moodle
+        require_once('script_upgrade_moodle.class.php');
+        $script = new script_upgrade_moodle();
+        $success = $script->execute(array());
+
+        if ($success) {
+            // Autoregister Moodle
+            require_once('script_moodle_register.class.php');
+            $script = new script_moodle_register();
+            $script->execute(array('disable' => 0));
+        }
+
         purge_all_caches();
-        return true;
+        return $success;
     }
 
     function is_visible() {

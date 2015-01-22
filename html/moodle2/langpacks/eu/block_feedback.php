@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Inkesta';
-$string['feedback:addinstance'] = 'Gehitu  inkesta bloke berria';
+$string['feedback:addinstance'] = 'Gehitu inkesta bloke berria';
 $string['missing_feedback_module'] = 'Bloke hau inkesta jardueran oinarritzen da baina modulua ez dago!';
 $string['pluginname'] = 'Inkesta';

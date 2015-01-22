@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['downloadfile'] = 'Скачать экспортный файл Вашего портфолио';
 $string['downloading'] = 'Загрузка...';
-$string['pluginname'] = 'Скачать фаил';
+$string['pluginname'] = 'Скачать файл';

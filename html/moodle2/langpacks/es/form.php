@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfields'] = 'Añadir {$a} campos al formulario';
+$string['addfields'] = 'Añadir {$a} campo/s al formulario';
 $string['advancedelement'] = 'Elemento avanzado';
 $string['close'] = 'Cerrar';
 $string['day'] = 'Día';
@@ -50,7 +50,7 @@ $string['modstandardels'] = 'Ajustes comunes del módulo';
 $string['month'] = 'Mes';
 $string['mustbeoverriden'] = 'El método abstracto form_definition() en la clase {$a} debe estar invalidado, por favor, fije el código.';
 $string['nomethodforaddinghelpbutton'] = 'No hay posibilidad de añadir un botón de ayuda al elemento del formulario {$a->name} (class {$a->classname})';
-$string['nonexistentformelements'] = 'Intentando añadir botones de ayuda a elementos de formulario inexistentes: {$a}';
+$string['nonexistentformelements'] = 'Tratando de añadir botones de ayuda a los elementos de formulario inexistentes: {$a}';
 $string['optional'] = 'Opcional';
 $string['othersettings'] = 'Otros ajustes';
 $string['requiredelement'] = 'Campo obligatorio';

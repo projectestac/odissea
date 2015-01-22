@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addlinklabel'] = 'Weitere Aktivität anfügen';
-$string['addlinktitle'] = 'Klicken Sie hier um eine weitere Aktivität anzufügen';
+$string['addlinktitle'] = 'Klicken Sie hier, um eine weitere Aktivität anzufügen';
 $string['areaintro'] = 'Zertifikat Einleitung';
 $string['awarded'] = 'Ausgestellt';
 $string['awardedto'] = 'Ausgestellt für';
@@ -143,7 +143,7 @@ $string['notissued'] = 'Nicht ausgestellt';
 $string['notissuedyet'] = 'Noch nicht ausgestellt';
 $string['notreceived'] = 'Sie haben dieses Zertifikat noch nicht abgerufen.';
 $string['openbrowser'] = 'In neuem Fenster öffnen';
-$string['opendownload'] = 'Klicken Sie auf den Button unten um Ihr Zertifikat auf Ihrem Rechner zu speichern.';
+$string['opendownload'] = 'Klicken Sie auf den Button unten, um Ihr Zertifikat auf Ihrem Rechner zu speichern.';
 $string['openemail'] = 'Klicken Sie auf die Taste unten, um Ihr Zertifikat in einer E-Mail zugesandt zu bekommen.';
 $string['openwindow'] = 'Klicken Sie auf die Taste unten, um Ihr Zertifikat in einem neuen Fenster zu öffnen.';
 $string['or'] = 'oder';

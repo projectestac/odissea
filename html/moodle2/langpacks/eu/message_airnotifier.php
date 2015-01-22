@@ -26,9 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['airnotifieraccesskey'] = 'Airnotifier-en sarbide-giltza';
+$string['airnotifierappname'] = 'Airnotifier-en aplikazioaren izena';
 $string['airnotifier:managedevice'] = 'Kudeatu gailuak';
+$string['airnotifiermobileappname'] = 'Aplikazio mugikorraren izena';
 $string['airnotifierport'] = 'Airnotifier-en ataka';
 $string['airnotifierurl'] = 'Airnotifier-en URLa';
+$string['configairnotifieraccesskey'] = 'Airnotifier-en zerbitzariarekin konektatzeko erabili behar den sarbide-giltza.';
+$string['configairnotifierappname'] = 'Aplikazio-izenaren identifikatzailea Airnotifier-en.';
+$string['configairnotifierport'] = 'Airnotifier-en zerbitzariarekin konektatzeko erabili behar den ataka.';
 $string['deletecheckdevicename'] = 'Ezabatu zure gailua: {$a->name}';
+$string['nopermissiontomanagedevices'] = 'Ez duzu baimenik gailuak kudeatzeko.';
 $string['showhide'] = 'Gaitu/desgaitu gailua';
 $string['unknowndevice'] = 'Gailu ezezaguna';

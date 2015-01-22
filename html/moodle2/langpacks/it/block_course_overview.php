@@ -61,5 +61,5 @@ $string['showwelcomearea'] = 'Visualizza area di benvenuto';
 $string['showwelcomeareadesc'] = 'Consente la visualizzazione dell\'area di benvenuto sopra l\'elenco dei corsi';
 $string['view_edit_profile'] = '(Visualizza e modifica il tuo profilo)';
 $string['welcome'] = 'Benvenuto {$a}';
-$string['youhavemessages'] = 'Hai {$a} messaggi da leggere';
-$string['youhavenomessages'] = 'Non ci sono messaggi da leggere';
+$string['youhavemessages'] = 'Hai {$a} messaggi da leggere&nbsp;';
+$string['youhavenomessages'] = 'Non ci sono messaggi da leggere&nbsp;';

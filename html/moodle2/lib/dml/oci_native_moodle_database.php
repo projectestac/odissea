@@ -1666,16 +1666,26 @@ class oci_native_moodle_database extends moodle_database {
         $count = count($args);
         if ($count == 1) {
             $arg = reset($args);
-            return $arg;
+            return self::clob2varchar_hack(array_shift($args));
         }
         if ($count == 2) {
             $args[] = "' '";
             // No return here intentionally.
         }
-        $first = array_shift($args);
-        $second = array_shift($args);
+        $first = self::clob2varchar_hack(array_shift($args));
+        $second = self::clob2varchar_hack(array_shift($args));
         $third = $this->recursive_concat($args);
         return "MOODLELIB.TRICONCAT($first, $second, $third)";
+    }
+
+    /**
+     * This function is used to convert to varchar any type (including clob) using substr.
+     */
+    private static function clob2varchar_hack($arg, $length = 1300) {
+        if (empty($arg) || $arg == "'*OCISP*'"|| $arg == "' '") {
+            return $arg;
+        }
+        return 'SUBSTR('.$arg.', 1, '.$length.')';
     }
 
     /**

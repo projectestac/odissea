@@ -43,7 +43,7 @@ $string['apply:edititems'] = 'Edit Items';
 $string['apply:edittemplates'] = 'Edit Templates';
 $string['apply_is_already_submitted'] = 'Application is already submitted';
 $string['apply_is_closed'] = 'Application period is closed';
-$string['apply_is_disable'] = 'You ca not use this Apply';
+$string['apply_is_disable'] = 'You ca not use this Apply.';
 $string['apply_is_not_open'] = 'Application is not opened yet';
 $string['apply_is_not_ready'] = 'Apply is not ready yet. Please edit items first.';
 $string['apply:mapcourse'] = 'Map courses to global applys';
@@ -113,15 +113,21 @@ $string['edit_entry'] = 'Edit';
 $string['edit_entry_button'] = 'Edit';
 $string['edit_item'] = 'Edit question';
 $string['edit_items'] = 'Edit Items';
-$string['email_notification'] = 'Send e-mail notifications';
-$string['email_notification_help'] = 'If enabled, administrators receive email notification of apply submissions.';
-$string['emailteachermail'] = '{$a->username} has submitted apply activity : \'{$a->apply}\'
+$string['email_confirm_html'] = ': <i>\'{$a->apply}\'</i><br /><br /> You can view it <a href="{$a->url}">here</a>.';
+$string['email_confirm_text'] = ': \'{$a->apply}\'
 
 You can view it here:
-
 {$a->url}';
-$string['emailteachermailhtml'] = '{$a->username} has submitted apply activity : <i>\'{$a->apply}\'</i><br /><br />
-You can view it <a href="{$a->url}">here</a>.';
+$string['email_entry'] = 'Send email to applicant';
+$string['email_notification'] = 'Send email notifications to admin';
+$string['email_notification_help'] = 'If enabled, administrators receive email notification of apply submissions.';
+$string['email_notification_user'] = 'send email notifications to applicants';
+$string['email_notification_user_help'] = 'If enabled, administrator can send email of apply processes to applicants.';
+$string['email_teacher'] = '{$a->username} has submitted apply activity';
+$string['email_user_accept'] = 'Your application was accepted';
+$string['email_user_done'] = 'Your application is processing has been completed';
+$string['email_user_other'] = 'The administrator has processed your application';
+$string['email_user_reject'] = 'Your application was rejected';
 $string['enable_deletemode'] = 'Delete Mode';
 $string['enable_deletemode_help'] = 'This enables a teacher to delete all applications.<br />Usually, please set to "No" for safety.';
 $string['entries_list_title'] = 'List of Entries';
@@ -265,7 +271,7 @@ $string['use_calendar'] = 'Use Calendar';
 $string['use_calendar_help'] = 'The period for submission of an application is registered into a calendar.';
 $string['use_item'] = 'use {$a}';
 $string['use_one_line_for_each_value'] = '<br />Use one line for each answer!';
-$string['username_manage'] = 'Management of Username';
+$string['username_manage'] = 'Manage of Username';
 $string['username_manage_help'] = 'You can select displied name pattern in this module.';
 $string['user_pic'] = 'Picture';
 $string['use_this_template'] = 'Use this template';

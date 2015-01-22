@@ -25,7 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['page-report-progress-index'] = 'Отчет о завершении активных элементов';
-$string['page-report-progress-user'] = 'Отчет о завершении пользователями активных элементов';
-$string['page-report-progress-x'] = 'Отчет о завершении любых активных элементов';
-$string['progress:view'] = 'Просматривать отчеты о завершении активных элементов';
+$string['page-report-progress-index'] = 'Отчет о завершении элементов курса';
+$string['page-report-progress-user'] = 'Отчет о завершении элементов курса по пользователю';
+$string['page-report-progress-x'] = 'Отчет о завершении любых элементов курса';
+$string['pluginname'] = 'Завершение элементов курса';
+$string['progress:view'] = 'Просматривать отчет «Завершение элементов курса»';

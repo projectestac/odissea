@@ -269,28 +269,7 @@ $string['overrideanotherrole'] = 'Modifica un altro ruolo';
 $string['overridecontext'] = 'Modifica un contesto';
 $string['overridepermissions'] = 'Modifica autorizzazioni';
 $string['overridepermissionsforrole'] = 'Modifica autorizzazioni per il ruolo \'{$a->role}\' nel contesto {$a->context}';
-$string['overridepermissions_help'] = '<p>
-Le modifiche dei ruoli consentono di alterare i privilegi in un determinato contesto in base ad esigenze specifiche.</p>
-
-<p>
-Ad esempio, se si desidera che in un dato forum gli studenti non abbiano il privilegio di "iniziare nuove discussioni", è possibile modificare il ruolo nel contesto dell\'attività forum negando tale privilegio al ruolo Studente.
-</p>
-
-<p>
-Le modifiche dei ruoli possono anche essere usate per concedere alcuni privilegi extra in aree del proprio sito o dei propri corsi: ad esempio si potrebbe desiderare che gli Studenti possano valutare i compiti di altri studenti.
-</p>
-
-<p>
-L\'interfaccia per la modifica dei ruoli è simile a quella per la definizione dei ruoli ma vengono visualizzati solo i privilegi rilevanti per il contesto di riferimento. L\'interfaccia visualizza anche l\'impostazione che avrebbe il privilegio in assenza di modifiche (ossia con la impostazione  ad "Eredita").
-</p>
-
-<p>
-Vedi anche
-<a href="help.php?file=roles.html">Ruoli</a>,
-<a href="help.php?file=contexts.html">Contesti</a>,
-<a href="help.php?file=assignroles.html">Assegnazione di ruoli</a> e
-<a href="help.php?file=permissions.html">Privilegi</a>.
-</p>';
+$string['overridepermissions_help'] = 'Le modifiche dei ruoli consentono di alterare i privilegi in un determinato contesto.';
 $string['overridepermissionsin'] = 'Modifica autorizzazioni nel contesto \'{$a}\'';
 $string['overrideroles'] = 'Modifica ruoli';
 $string['overriderolesin'] = 'Modifica ruoli in {$a}';

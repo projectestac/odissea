@@ -38,4 +38,4 @@ $string['webdav_port'] = 'Порт сервера WebDAV';
 $string['webdav_server'] = 'Сервер WebDAV';
 $string['webdav_type'] = 'Тип WebDAV';
 $string['webdav_user'] = 'Пользователь сервера WebDAV';
-$string['webdav:view'] = 'Просматривать хранилище WebDAV';
+$string['webdav:view'] = 'Просматривать хранилище файлов «WebDAV»';

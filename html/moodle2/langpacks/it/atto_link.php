@@ -30,5 +30,5 @@ $string['browserepositories'] = 'Sfoglia repository...';
 $string['createlink'] = 'Crea collegamento';
 $string['enterurl'] = 'Inserisci un URL';
 $string['link'] = 'Link';
-$string['openinnewwindow'] = 'Apri in una nuova finstra';
+$string['openinnewwindow'] = 'Apri in una nuova finestra';
 $string['pluginname'] = 'Collegamento';

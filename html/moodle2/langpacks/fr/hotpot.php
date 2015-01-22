@@ -543,7 +543,6 @@ La hauteur désirée pour le lecteur. Si non indiquée, la valeur sera la même 
 : Une liste d\'options passées au lecteur, séparées par des virgules. Chaque option peut être un simple interrupteur on/off ou un nom d\'option avec sa valeur correspondante.
 : **nom=valeur**
 : **nom="valeur avec des espaces"**';
-$string['utilitiesindex'] = 'Index des outils HotPotatoes';
 $string['viewreports'] = 'Voir le rapport pour {$a} utilisateur(s)';
 $string['views'] = 'Vues';
 $string['weighting'] = 'Pondération';

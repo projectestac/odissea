@@ -50,6 +50,7 @@ $string['eventstitle'] = 'أحداث';
 $string['generaldeveloperforum'] = 'منتدى المطورين العام';
 $string['graphregistrationmap'] = 'خريطة مسجلي مودل';
 $string['graphregistrationmapdesc'] = 'أفضل 10 من المواقع المسجلة في {$a} بلد';
+$string['heroslide_link_sites'] = 'المواقع المسجلة';
 $string['jobs'] = 'لمزيد من المعلومات حول وظائف لها علاقة بمودل حول العالم، قم بزيارة قاعدة بياناتنا للوظائف.';
 $string['newregistrations'] = 'تسجيلات جديدة';
 $string['noenrolledcoursesyet'] = 'لست مسجلاً بأي مقرر في هذا الموقع حتى الآن';

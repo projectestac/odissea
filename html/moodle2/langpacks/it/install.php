@@ -139,7 +139,7 @@ Questo consentirà a Moodle di impostare in autonomia il limite di memoria.</li>
 <blockquote>php_value memory_limit 40M</blockquote>
 <p>Tuttavia, su alcuni server la direttiva potrebbe impedire a <b>tutte</b> le pagine PHP di funzionare (appariranno degli errori durante la visualizzazione delle pagine), in tal caso dovrai rimuovere il file .htaccess.</li></ol>';
 $string['mssqlextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione MSSQL e non può comunicare con SQL*Server. Controlla il file php.ini o ricompila il PHP.';
-$string['mysqliextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione MySQLi e non può comunicare con MySQL. Controlla il file php.ini o ricompila il PHP. Il PHP 4 non ha estensioni per MySQLi.';
+$string['mysqliextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione MySQLi e non può comunicare con MySQL. Controlla il file php.ini o ricompila il PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
 <p>Il nome del database, il nome utente e la password sono campi obbligatori, il prefisso delle tabelle è facoltativo.</p>

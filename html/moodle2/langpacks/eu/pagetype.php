@@ -27,6 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['page-admin-current'] = 'Oraingo gunearen kudeaketako orria';
 $string['page-admin-x'] = 'Edozein gunearen kudeaketako orri';
+$string['page-course-index'] = 'Goragoko kategoriaren orria';
+$string['page-course-index-category'] = 'Oraingo kategoriaren orria';
+$string['page-course-index-x'] = 'Edozein kategoriaren orria';
 $string['page-course-report-x'] = 'Edozein ikastaro-txosten';
 $string['page-course-search'] = 'Ikastaroak bilatzeko orria';
 $string['page-course-view-x'] = 'Edozein motatako ikastaroko hasiera-orria';

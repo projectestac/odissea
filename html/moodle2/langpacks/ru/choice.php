@@ -31,10 +31,10 @@ $string['answered'] = 'Получено ответов';
 $string['atleastoneoption'] = 'Вы должны выбрать по крайней мере, один из возможных ответов.';
 $string['choice'] = 'Вариант ответа';
 $string['choice:addinstance'] = 'Добавлять новый опрос';
-$string['choice:choose'] = 'Записать вариант';
+$string['choice:choose'] = 'Записывать выбор';
 $string['choiceclose'] = 'Пока не';
-$string['choice:deleteresponses'] = 'Удалить попытки';
-$string['choice:downloadresponses'] = 'Скачать ответы';
+$string['choice:deleteresponses'] = 'Удалять ответы';
+$string['choice:downloadresponses'] = 'Скачивать ответы';
 $string['choicefull'] = 'Этот вариант заполнен и больше места нет';
 $string['choicename'] = 'Название опроса';
 $string['choiceopen'] = 'Открыть';
@@ -44,7 +44,7 @@ $string['choiceoptions_help'] = '<h2>Варианты ответа</h2>
 <P>Здесь вы можете написать варианты, из которых учеником будет выбираться ответ.
 
 <P>Вы можете заполнить любое количество вариантов (допускается оставлять поля пустыми).';
-$string['choice:readresponses'] = 'Прочитать попытки';
+$string['choice:readresponses'] = 'Просматривать ответы';
 $string['choicesaved'] = 'Ваш выбор сохранен';
 $string['choicetext'] = 'Текст опроса';
 $string['chooseaction'] = 'Выберите действие...';

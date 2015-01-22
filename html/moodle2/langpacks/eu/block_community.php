@@ -58,7 +58,11 @@ $string['downloadingcourse'] = 'Ikastaroa jaisten';
 $string['downloadingsize'] = 'Itxaron, mesedez! Ikastaroaren fitxategia jaisten ari da ({$a->total}Mb)...';
 $string['downloadtemplate'] = 'Ikastaroa sortu txantiloi batetik abiatuta';
 $string['educationallevel'] = 'Hezkuntza-maila';
+$string['educationallevel_help'] = 'Zein hezkuntza-maila bilatzen ari zara? Hezitzaileen komunitateen kasuan, maila honek zein mailatan irakasten duten adierazten du.';
 $string['enroldownload'] = 'Bilatu';
+$string['enroldownload_help'] = 'Aukeratutako bilgunean zerrendatu diren ikastaro batzuei jakinarazi zaie jatorrizko gunean parte har daitekeela horietan.
+
+Beste hainbat zure esku jarritako ikastaro-txantiloiak dira, zeuk jaitsi eta zure Moodle gunean erabil ditzazun.';
 $string['enrollable'] = 'matrikulatzen uzten didaten ikastaroak';
 $string['enrollablecourses'] = 'Matrikulatzeko ikastaroak';
 $string['errorcourselisting'] = 'Errorea gertatu da aukeratutako bilgunetik ikastaro-zerrenda berreskuratzean. Mesedez, saiatu beranduago. ({$a})';
@@ -70,6 +74,7 @@ $string['hubnottrusted'] = 'Ez da konfiantzazkoa';
 $string['hubtrusted'] = 'Bilgune honek Moodle.org-en bermea du ';
 $string['install'] = 'Jaitsi';
 $string['keywords'] = 'Hitz-gakoak';
+$string['keywords_help'] = 'Izenean, deskribapenean edo datu-basearen beste eremu batzuetan testu jakin bat duten ikastaroak bila ditzakezu.';
 $string['langdesc'] = 'Hizkuntza: {$a} -';
 $string['language'] = 'Hizkuntza';
 $string['language_help'] = 'Hizkuntza jakin batean idatzitako ikastaroak bila ditzakezu.';

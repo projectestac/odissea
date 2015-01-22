@@ -34,7 +34,7 @@ $string['cannotcreatereference'] = 'Es konnte keine Referenz erzeugt werden. Die
 $string['clientid'] = 'Client-ID';
 $string['clientsecret'] = 'Client Schlüssel';
 $string['configplugin'] = 'Einstellungen für Box';
-$string['filesourceinfo'] = 'Box({$a->fullname}): {$a->filename}';
+$string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
 $string['information'] = 'Die erhalten Ihre Client ID und den Schlüssel für Ihre Moodle-Site von: <a href="https://app.box.com/developers/services">Box Developers</a>.';
 $string['invalidpassword'] = 'Ungültiges Passwort';
 $string['migrationadvised'] = 'Eventuell nutzen Sie Box mit der API Version 1. Sie müssen das <a href="{$a}">Migrationstool</a> ausführen, um alte Referenzen zu konvertieren.';

@@ -25,22 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['access'] = '进入';
-$string['accesshelp'] = '进入帮助';
-$string['accesskey'] = '进入验证 {$a}';
-$string['accessstatement'] = '进入声明';
+$string['access'] = '访问';
+$string['accesshelp'] = '访问帮助';
+$string['accesskey'] = '访问秘钥 {$a}';
+$string['accessstatement'] = '访问声明';
 $string['activitynext'] = '下一个活动';
 $string['activityprev'] = '前一个活动';
-$string['breadcrumb'] = '网页导航';
+$string['breadcrumb'] = '导航路径';
 $string['hideblocka'] = '隐藏{$a}版块';
 $string['monthnext'] = '下月';
 $string['monthprev'] = '上月';
 $string['showblocka'] = '显示 {$a} 版块';
-$string['sitemap'] = '网站导航';
+$string['sitemap'] = '站点地图';
 $string['skipa'] = '跳过 {$a}';
 $string['skipblock'] = '跳过版块';
 $string['skipnavigation'] = '跳过导航条';
 $string['skipto'] = '跳到{$a}';
 $string['tocontent'] = '跳到主要内容';
-$string['tonavigation'] = '看导航';
+$string['tonavigation'] = '转到导航栏';
 $string['youarehere'] = '您位于';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attendance:addinstance'] = 'Add a new attendance block';
 $string['blockname'] = 'Attendance';
 $string['needactivity'] = 'This block can work only with an attendance activity. Please add the activity to this course.';
 $string['pluginname'] = 'Attendance';

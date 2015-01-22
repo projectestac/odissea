@@ -198,7 +198,7 @@ Entreprise Moodle
 $string['configdbsessions'] = 'Si ce réglage est activé, les informations sur les sessions en cours seront enregistrées dans la base de données. Attention ! si vous changez ce réglage, tous les utilisateurs seront immédiatement déconnectés, vous y compris ! Si vous utilisez une base de données MySQL, assurez-vous que la variable « max_allowed_packet » dans <em>my.cnf</em> (ou <em>my.ini</em>) ait au moins une valeur de 4M. D\'autres pilotes de sessions peuvent être configurés directement dans le fichier config.php. Veuillez consulter le fichier config-dist.php pour plus d\'information. Ce réglage n\'est plus affiché si un tel pilote de session est configuré dans le fichier config.php.';
 $string['configdebug'] = 'Si vous activez cette option, le paramètre PHP « error_reporting » sera augmenté afin que les avertissements soient affichés. Ceci est utile essentiellement pour les développeurs.';
 $string['configdebugdisplay'] = 'Une fois ce réglage activé, les rapports d\'erreur seront affichés sur la page HTML. C\'est pratique, mais cela rend non conforme le XHTML, le JS, les cookies et les entêtes HTTP en général. Si le réglage est désactivé, les rapports sont écrits dans les historiques du serveur, permettant un meilleur débogage. Le réglage error_log de PHP contrôle dans quel fichier les rapports sont écrits.';
-$string['configdebugpageinfo'] = 'Activer cette option pour afficher des informations sur la page dans le pied de page.';
+$string['configdebugpageinfo'] = 'Activer cette option pour afficher des informations concernant la page dans le pied de page.';
 $string['configdebugsmtp'] = 'Activer le débogage des informations d\'envoi des messages courriel vers le serveur SMTP.';
 $string['configdebugvalidators'] = 'Activer cette option si vous voulez que les liens vers des serveurs de validation soient visibles dans le pied de page. Il vous sera peut-être nécessaire de créer dans votre Moodle un nouvel utilisateur dont le nom d\'utilisateur est <em>w3cvalidator</em> et d\'activer l\'accès aux visiteurs anonymes. Ces modifications peuvent ouvrir l\'accès à votre serveur par des personnes non autorisées. Ne les activez pas sur des serveurs en production !';
 $string['configdefaulthomepage'] = 'Ce réglage permet de déterminer la page d\'accueil des utilisateurs connectés';
@@ -241,7 +241,7 @@ $string['configfilterall'] = 'Filtrer toutes les chaînes, y compris les entête
 $string['configfiltermatchoneperpage'] = 'Un seul lien automatique par page sera généré par les filtres de liaison automatique, pour chaque première apparition du texte. Toutes les autres occurrences seront ignorées.';
 $string['configfiltermatchonepertext'] = 'Un seul lien automatique par élément de texte (par exemple bloc, ressource, etc.) sera généré par les filtres de liaison automatique sur une page. Toutes les autres occurrences seront ignorées. Ce réglage n\'est actif que si le réglage « Filtrer une occurrence par page » est désactivé.';
 $string['configfilteruploadedfiles'] = 'Filtrer les fichiers HTML et fichiers texte déposés avant de les afficher, ne filtrer que les fichiers HTML déposés ou ne filtrer aucun fichier.';
-$string['configforcelogin'] = 'Habituellement, la page d\'accueil du site et la liste des cours (mais pas les cours eux-mêmes) peuvent être consultés sans se connecter au site. Si vous désirez forcer les visiteurs à se connecter avant de faire QUOI QUE CE SOIT dans le site, veuillez activer cette option.';
+$string['configforcelogin'] = 'Habituellement, la page d\'accueil du site et la liste des cours (mais pas les cours eux-mêmes) peuvent être consultés sans se connecter au site. Si vous désirez forcer les visiteurs à se connecter avant de faire <strong>quoi que ce soit</strong> dans le site, veuillez activer cette option.';
 $string['configforceloginforprofiles'] = 'L\'activation de ce réglage impose aux visiteurs de se connecter en tant qu\'utilisateur réel (authentifié) pour pouvoir consulter les profils des autres utilisateurs. Si vous le désactivez, il pourra arriver que certains utilisateurs utilisent leur profil pour y inclure de la publicité (spam) ou d\'autres contenus inadéquats, qui seront alors visibles par tout le monde.';
 $string['configfrontpage'] = 'Les éléments ci-dessus seront affichés sur la page d\'accueil.';
 $string['configfrontpagecourselimit'] = 'Nombre maximal de cours';
@@ -432,7 +432,7 @@ $string['debugging'] = 'Débogage';
 $string['debugminimal'] = 'Minimal : n\'afficher que les erreurs fatales';
 $string['debugnone'] = 'Aucun : n\'afficher aucune erreur, ni avertissement';
 $string['debugnormal'] = 'Normal : afficher les erreurs, avertissements et notices';
-$string['debugpageinfo'] = 'Afficher les informations sur la page';
+$string['debugpageinfo'] = 'Afficher les informations concernant la page';
 $string['debugsmtp'] = 'Débogage de l\'envoi des courriels';
 $string['debugstringids'] = 'Afficher l\'origine des chaînes de caractères';
 $string['debugstringids_desc'] = 'Ce réglage est destiné à faciliter le travail des traducteurs de Moodle. S\'il est activé, en ajoutant le paramètre « strings=1 » à une URL de Moodle, la page affichée indiquera le nom du fichier de langue ainsi que l\'identifiant de chaque chaîne de caractères.';

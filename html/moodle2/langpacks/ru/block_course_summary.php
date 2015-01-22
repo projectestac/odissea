@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['coursesummary'] = 'Описание курса';
-$string['course_summary:addinstance'] = 'Добавлять новый блок описания курса/сайта';
+$string['course_summary:addinstance'] = 'Добавлять новый блок «Описание курса/сайта»';
 $string['pluginname'] = 'Описание курса/сайта';

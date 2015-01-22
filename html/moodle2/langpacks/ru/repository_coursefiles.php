@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Конфигурация устаревшего хранилища файлов курса';
-$string['coursefiles:view'] = 'Использовать плагин устаревшего хранилища файлов курса';
+$string['coursefiles:view'] = 'Использовать плагин «Файлы курса (устаревшее хранилище)»';
 $string['emptyfilelist'] = 'Нет файлов для отображения';
 $string['notitle'] = 'без названия';
 $string['pluginname'] = 'Файлы курса (устаревшее хранилище)';

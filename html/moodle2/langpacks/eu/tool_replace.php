@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['disclaimer'] = 'Eragiketaren arriskua ulertzen dut:';
+$string['disclaimer'] = 'Eragiketaren arriskuak ulertzen ditut';
 $string['doit'] = 'Bai, egin!';
 $string['notifyfinished'] = '...amaituta';
 $string['pluginname'] = 'Bilatu eta ordezkatu datu-basean';

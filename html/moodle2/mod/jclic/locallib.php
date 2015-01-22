@@ -32,43 +32,420 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once("$CFG->libdir/filelib.php");
 
+/**
+ * Standard base class for mod_jclic
+ *
+ * @package   mod_jclic
+ * @copyright 2014 Pau Ferrer Ocaña
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class jclic {
+
+    /** @var stdClass the jclic record that contains the global settings for this jclic instance */
+    private $instance;
+
+    /** @var stdClass the course this jclic instance belongs to */
+    private $course;
+
+    /** @var context the context of the course module for this jclic instance
+     *               (or just the course if we are creating a new one)
+     */
+    private $context;
+
+    /** @var stdClass the course module for this jclic instance */
+    private $coursemodule;
+
     /**
-    * Get an array with the languages
-    *
-    * @return array   The array with each language.
-    */
-    function jclic_get_languages(){
-        $tmplanglist = get_string_manager()->get_list_of_translations();
-        $langlist = array();
-        foreach ($tmplanglist as $lang=>$langname) {
-            if (substr($lang, -5) == '_utf8') {   //Remove the _utf8 suffix from the lang to show
-                $lang = substr($lang, 0, -5);
-            }
-            $langlist[$lang]=$langname;
+     * Constructor for the base jclic class.
+     *
+     * @param mixed $coursemodulecontext context|null the course module context
+     *                                   (or the course context if the coursemodule has not been
+     *                                   created yet).
+     * @param mixed $coursemodule the current course module if it was already loaded,
+     *                            otherwise this class will load one from the context as required.
+     * @param mixed $course the current course  if it was already loaded,
+     *                      otherwise this class will load one from the context as required.
+     */
+    public function __construct($coursemodulecontext, $coursemodule, $course) {
+        global $DB;
+
+        $this->context = $coursemodulecontext;
+
+        if ($coursemodule) {
+            $this->coursemodule = $coursemodule;
+        } else if ($this->context && $this->context->contextlevel == CONTEXT_MODULE) {
+            $this->coursemodule = get_coursemodule_from_instance('jclic', $this->context->instanceid);
         }
-        return $langlist;
+
+        if ($course) {
+            $this->course = $course;
+        } else if ($this->coursemodule) {
+            $params = array('id' => $this->coursemodule->course);
+            $this->course = $DB->get_record('course', $params);
+        }
+
+        if ($this->coursemodule) {
+            $params = array('id' => $this->coursemodule->instance);
+            $this->instance = $DB->get_record('jclic', $params);
+        }
     }
 
     /**
-    * Get an array with the skins
-    *
-    * @return array   The array with each skin.
-    */
-    function jclic_get_skins(){
-      return array('@default.xml' => 'default','@blue.xml' => 'blue','@orange.xml' => 'orange','@green.xml' => 'green','@simple.xml' => 'simple', '@mini.xml' => 'mini');
+     * Set the submitted form data.
+     *
+     * @param stdClass $data The form data (instance)
+     */
+    public function set_instance(stdClass $data) {
+        global $DB;
+        $this->instance = $data;
+        // Cache some info.
+        $this->course = $DB->get_record('course', array('id' => $data->course), '*', MUST_EXIST);
+        $this->coursemodule = get_coursemodule_from_instance('jclic', $data->id, 0, false, MUST_EXIST);
+        $this->context = context_module::instance($this->coursemodule->id);
     }
 
     /**
-    * Get an array with the file types
-    *
-    * @return array   The array with each file type
-    */
-    function jclic_get_file_types(){
-        $filetypes =  array(JCLIC_FILE_TYPE_LOCAL => get_string('filetypelocal', 'jclic'));
-        $filetypes[JCLIC_FILE_TYPE_EXTERNAL] = get_string('filetypeexternal', 'jclic');
-        return $filetypes;
+     * Get the settings for the current instance of this jclic
+     *
+     * @return stdClass The settings
+     */
+    public function get_instance() {
+        global $DB;
+        if ($this->instance) {
+            return $this->instance;
+        }
+        if ($this->get_course_module()) {
+            $params = array('id' => $this->get_course_module()->instance);
+            $this->instance = $DB->get_record('jclic', $params, '*', MUST_EXIST);
+        }
+        if (!$this->instance) {
+            throw new coding_exception('Improper use of the jclic class. ' .
+                                       'Cannot load the jclic record.');
+        }
+        return $this->instance;
     }
 
+        /**
+     * Get the current course module.
+     *
+     * @return mixed stdClass|null The course module
+     */
+    public function get_course_module() {
+        if ($this->coursemodule) {
+            return $this->coursemodule;
+        }
+        if (!$this->context) {
+            return null;
+        }
+
+        if ($this->context->contextlevel == CONTEXT_MODULE) {
+            $this->coursemodule = get_coursemodule_from_id('jclic',
+                                                           $this->context->instanceid,
+                                                           0,
+                                                           false,
+                                                           MUST_EXIST);
+            return $this->coursemodule;
+        }
+        return null;
+    }
+
+    /**
+     * Add this instance to the database.
+     *
+     * @param stdClass $formdata The data submitted from the form
+     * @return mixed false if an error occurs or the int id of the new instance
+     */
+    public function add_instance(stdClass $formdata) {
+        global $DB;
+
+        // Add the database record.
+        $update = new stdClass();
+        $update->name = $formdata->name;
+        $update->timemodified = time();
+        $update->timecreated = $update->timemodified;
+        $update->course = $formdata->course;
+        $update->intro = $formdata->intro;
+        $update->introformat = $formdata->introformat;
+
+        if (isset($formdata->filetype) && $formdata->filetype == JCLIC_FILE_TYPE_LOCAL) {
+            $update->url = $formdata->jclicfile;
+        } else {
+            $formdata->filetype = JCLIC_FILE_TYPE_EXTERNAL;
+            $update->url = $formdata->url;
+        }
+        $update->skin = empty($formdata->skin) ? 'default' : $formdata->skin;
+        $update->avaluation = $formdata->avaluation;
+        $update->grade = $formdata->grade;
+        if ($update->grade >= 0 ) {
+            $update->maxgrade = $update->grade;
+        }
+
+        $update->lang = $formdata->lang;
+        $update->exiturl = $formdata->exiturl;
+        $update->timeavailable = $formdata->timeavailable;
+        $update->timedue = $formdata->timedue;
+        if (!empty($formdata->maxattempts)) {
+            $update->maxattempts = $formdata->maxattempts;
+        }
+
+        // Store the JClic and verify
+        $returnid = $DB->insert_record('jclic', $update);
+        // We need to use context now, so we need to make sure all needed info is already in db
+        $DB->set_field('course_modules', 'instance', $returnid, array('id' => $formdata->coursemodule));
+
+        $instance = $DB->get_record('jclic', array('id' => $returnid), '*', MUST_EXIST);
+        $this->set_instance($instance);
+
+        if ($formdata->filetype == JCLIC_FILE_TYPE_LOCAL) {
+            $update = new StdClass();
+            $update->id = $returnid;
+            $update->url = $this->set_mainfile();
+            $DB->update_record('jclic', $update);
+        }
+
+        // In the case of upgrades the coursemodule has not been set,
+        // so we need to wait before calling these two.
+        $this->update_calendar($formdata->coursemodule);
+        $this->update_gradebook(false, $formdata->coursemodule);
+
+        return $returnid;
+    }
+
+    /**
+     * Update this instance in the database.
+     *
+     * @param stdClass $formdata - the data submitted from the form
+     * @return bool false if an error occurs
+     */
+    public function update_instance($formdata) {
+        global $DB;
+
+        $update = new stdClass();
+        $update->id = $formdata->instance;
+        $update->name = $formdata->name;
+        $update->timemodified = time();
+        $update->course = $formdata->course;
+        $update->intro = $formdata->intro;
+        $update->introformat = $formdata->introformat;
+
+        if (isset($formdata->filetype) && $formdata->filetype == JCLIC_FILE_TYPE_LOCAL) {
+            $update->url = $formdata->jclicfile;
+        } else {
+            $formdata->filetype = JCLIC_FILE_TYPE_EXTERNAL;
+            $update->url = $formdata->url;
+        }
+        $update->skin = empty($formdata->skin) ? 'default' : $formdata->skin;
+        $update->avaluation = $formdata->avaluation;
+        $update->grade = $formdata->grade;
+        if ($update->grade >= 0 ) {
+            $update->maxgrade = $update->grade;
+        }
+
+        $update->lang = $formdata->lang;
+        $update->exiturl = $formdata->exiturl;
+        $update->timeavailable = $formdata->timeavailable;
+        $update->timedue = $formdata->timedue;
+        if (!empty($formdata->maxattempts)) {
+            $update->maxattempts = $formdata->maxattempts;
+        }
+
+        // Store the JClic and verify
+        $result = $DB->update_record('jclic', $update);
+        $instance = $DB->get_record('jclic', array('id' => $update->id), '*', MUST_EXIST);
+        $this->set_instance($instance);
+
+        $this->update_calendar($this->coursemodule->id);
+        $this->update_gradebook(false, $this->coursemodule->id);
+
+        return $result;
+    }
+
+    /**
+     * Delete this instance from the database.
+     *
+     * @return bool false if an error occurs
+     */
+    public function delete_instance() {
+        global $DB;
+        $result = true;
+
+        $id = $this->instance->id;
+
+        // Delete files associated with this jclic.
+        $fs = get_file_storage();
+        if (! $fs->delete_area_files($this->context->id) ) {
+            $result = false;
+        }
+
+        // Delete any dependent records.
+        $rs = $DB->get_records('jclic_sessions', array('jclicid' => $id));
+        foreach ($rs as $session) {
+            $DB->delete_records('jclic_activities', array('session_id' => $session->session_id));
+        }
+
+        $DB->delete_records('jclic_sessions', array('jclicid' => $id));
+
+
+        // Delete items from the gradebook.
+        if (! $this->delete_grades()) {
+            $result = false;
+        }
+
+        // Delete the instance.
+        $DB->delete_records('jclic', array('id' => $id));
+
+        return $result;
+    }
+
+    /**
+     * Delete all grades from the gradebook for this jclic.
+     *
+     * @return bool
+     */
+    protected function delete_grades() {
+        global $CFG;
+        require_once($CFG->libdir.'/gradelib.php');
+
+        $result = grade_update('mod/jclic',
+                               $this->course->id,
+                               'mod',
+                               'jclic',
+                               $this->instance->id,
+                               0,
+                               null,
+                               array('deleted' => 1));
+        return $result == GRADE_UPDATE_OK;
+    }
+
+    /**
+     * Update the gradebook information for this jclic.
+     *
+     * @param bool $reset If true, will reset all grades in the gradbook for this jclic
+     * @param int $coursemoduleid This is required because it might not exist in the database yet
+     * @return bool
+     */
+    public function update_gradebook($reset, $coursemoduleid) {
+        global $CFG;
+
+        require_once($CFG->dirroot.'/mod/jclic/lib.php');
+        $jclic = clone $this->instance;
+        $jclic->cmidnumber = $coursemoduleid;
+        $param = null;
+        if ($reset) {
+            $param = 'reset';
+        }
+
+        return jclic_grade_item_update($jclic, $param);
+    }
+
+    /**
+     * Update the calendar entries for this jclic.
+     *
+     * @param int $coursemoduleid - Required to pass this in because it might
+     *                              not exist in the database yet.
+     * @return bool
+     */
+    public function update_calendar($coursemoduleid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot.'/calendar/lib.php');
+
+        // Special case for add_instance as the coursemodule has not been set yet.
+        $instance = $this->instance;
+
+        if ($instance->timedue) {
+            $event = new stdClass();
+
+            $params = array('modulename' => 'jclic', 'instance' => $instance->id);
+            $event->id = $DB->get_field('event', 'id', $params);
+            $event->name = $instance->name;
+            $event->timestart = $instance->timedue;
+            $event->description = format_module_intro('jclic', $instance, $this->coursemodule->id);
+
+            if ($event->id) {
+                $calendarevent = calendar_event::load($event->id);
+                $calendarevent->update($event);
+            } else {
+                unset($event->id);
+                $event->courseid    = $instance->course;
+                $event->groupid     = 0;
+                $event->userid      = 0;
+                $event->modulename  = 'jclic';
+                $event->instance    = $instance->id;
+                $event->eventtype   = 'due';
+                $event->timeduration = 0;
+                calendar_event::create($event);
+            }
+        } else {
+            $DB->delete_records('event', array('modulename' => 'jclic', 'instance' => $instance->id));
+        }
+    }
+
+
+    public function set_mainfile() {
+        $fs = get_file_storage();
+        $fileid = $this->instance->url;
+
+        if ($fileid) {
+            file_save_draft_area_files($fileid, $this->context->id, 'mod_jclic', 'content', 0, self::get_filemanager_options());
+        }
+
+        $files = $fs->get_area_files($this->context->id, 'mod_jclic', 'content', 0, 'sortorder', false);
+        if (count($files) == 1) {
+            // only one file attached, set it as main file automatically
+            $file = reset($files);
+            file_set_sortorder($this->context->id, 'mod_jclic', 'content', 0, $file->get_filepath(), $file->get_filename(), 1);
+            return $file->get_filename();
+        }
+        return null;
+    }
+
+    public static function get_filemanager_options() {
+        return array('return_types' => 3,  // 3 == FILE_EXTERNAL & FILE_INTERNAL. These two constant names are defined in repository/lib.php
+                    'accepted_types' => 'archive',
+                    'maxbytes' => 0,
+                    'subdirs' => 0,
+                    'maxfiles' => 1,
+                    );
+    }
+
+    /**
+     * Get an array with the languages
+     *
+     * @return array   The array with each language.
+     */
+    public static function get_languages() {
+        return get_string_manager()->get_list_of_translations();
+    }
+
+    /**
+     * Get an array with the skins
+     *
+     * @return array   The array with each skin.
+     */
+    public static function get_skins() {
+        return array(
+            '@default.xml' => 'default',
+            '@blue.xml' => 'blue',
+            '@orange.xml' => 'orange',
+            '@green.xml' => 'green',
+            '@simple.xml' => 'simple',
+            '@mini.xml' => 'mini'
+            );
+    }
+
+    /**
+     * Get an array with the file types
+     *
+     * @return array   The array with each file type
+     */
+    public static function get_file_types() {
+        return  array(
+            JCLIC_FILE_TYPE_LOCAL => get_string('filetypelocal', 'jclic'),
+            JCLIC_FILE_TYPE_EXTERNAL => get_string('filetypeexternal', 'jclic')
+            );
+    }
+
+}
 
     /**
      * Display the jclic intro
@@ -236,35 +613,10 @@ require_once("$CFG->libdir/filelib.php");
         return $path;
     }
 
-    function jclic_get_filemanager_options(){
-        $filemanager_options = array();
-        $filemanager_options['return_types'] = 3;  // 3 == FILE_EXTERNAL & FILE_INTERNAL. These two constant names are defined in repository/lib.php
-        $filemanager_options['accepted_types'] = 'archive';
-        $filemanager_options['maxbytes'] = 0;
-        $filemanager_options['subdirs'] = 0;
-        $filemanager_options['maxfiles'] = 1;
-        return $filemanager_options;
-    }
-
     function jclic_set_mainfile($data) {
-        $filename = null;
-        $fs = get_file_storage();
-        $cmid = $data->coursemodule;
-        $draftitemid = $data->url;
-
-        $context = context_module::instance($cmid);
-        if ($draftitemid) {
-            file_save_draft_area_files($draftitemid, $context->id, 'mod_jclic', 'content', 0, jclic_get_filemanager_options());
-        }
-
-        $files = $fs->get_area_files($context->id, 'mod_jclic', 'content', 0, 'sortorder', false);
-        if (count($files) == 1) {
-            // only one file attached, set it as main file automatically
-            $file = reset($files);
-            file_set_sortorder($context->id, 'mod_jclic', 'content', 0, $file->get_filepath(), $file->get_filename(), 1);
-            $filename = $file->get_filename();
-        }
-        return $filename;
+        $jclic = new jclic();
+        $jclic->set_instance($data);
+        return $jclic->set_mainfile();
     }
 
     function jclic_is_valid_external_url($url){

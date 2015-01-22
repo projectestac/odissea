@@ -198,7 +198,7 @@ $string['hidden'] = 'Скрыть';
 $string['hintn'] = 'Подсказка {no}';
 $string['hintnoptions'] = 'Варианты подсказок {no}';
 $string['hinttext'] = 'Текст подсказки';
-$string['howquestionsbehave'] = 'Какой режим вопросов';
+$string['howquestionsbehave'] = 'Режим поведения вопросов';
 $string['howquestionsbehave_help'] = 'Студенты могут взаимодействовать с вопросами теста разными отличающимися способами.
 
 Например, студенты должны дать ответ на каждый вопрос без получения оценки и отзыва, а затем они увидят результаты всего теста. Это будет режим «Отложенного отзыва».
@@ -245,7 +245,7 @@ $string['manuallygraded'] = 'Оценено вручную на {$a->mark} со 
 $string['mark'] = 'Оценка';
 $string['markedoutof'] = 'Балл';
 $string['markedoutofmax'] = 'Балл: {$a}';
-$string['markoutofmax'] = 'Баллов: {$a->mark} от максимума {$a->max}';
+$string['markoutofmax'] = 'Баллов: {$a->mark} из {$a->max}';
 $string['marks'] = 'Оценки';
 $string['matchgrades'] = 'Сопоставление оценок';
 $string['matchgradeserror'] = 'Если оценки нет в списке, выводить сообщение об ошибке';
@@ -391,7 +391,8 @@ $string['submitandfinish'] = 'Отправить и завершить';
 $string['submitted'] = 'Отправлено: {$a}';
 $string['technicalinfo'] = 'Техническая информация';
 $string['technicalinfo_help'] = 'Эта техническая информация, вероятно, имеет смысл только для разработчиков, работающих над новыми видами вопросов. Она также может быть полезна при диагностировании проблем с вопросами.';
-$string['technicalinfominfraction'] = 'Минимальная доля: {$a}';
+$string['technicalinfomaxfraction'] = 'Максимальный балл: {$a}';
+$string['technicalinfominfraction'] = 'Минимальный балл: {$a}';
 $string['technicalinfoquestionsummary'] = 'Резюме вопроса: {$a}';
 $string['technicalinforightsummary'] = 'Резюме правильного ответа: {$a}';
 $string['technicalinfostate'] = 'Состояние вопроса: {$a}';

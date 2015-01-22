@@ -15,14 +15,13 @@ if (!$course = $DB->get_record("course", array("id" => $cm->course))) {
 
 $context = get_context_instance(CONTEXT_MODULE, $cm->id);
 
-require_login($course->id, false, $cm);
+require_login($course, false, $cm);
 
 require_capability('mod/journal:addentries', $context);
 
 if (! $journal = $DB->get_record("journal", array("id" => $cm->instance))) {
     print_error("Course module is incorrect");
 }
-
 
 // Header
 $PAGE->set_url('/mod/journal/edit.php', array('id' => $id));
@@ -48,6 +47,9 @@ $form = new mod_journal_entry_form(null, array('current' => $data));
 
 /// If data submitted, then process and store.
 if ($fromform = $form->get_data()) {
+
+    // Prevent CSFR.
+    confirm_sesskey();
 
     $timenow = time();
 

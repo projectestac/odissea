@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Конфигурация хранилища личных файлов пользователей';
 $string['emptyfilelist'] = 'Нет файлов для отображения';
-$string['pluginname'] = 'Личные файлы';
+$string['pluginname'] = 'Мои личные файлы';
 $string['pluginname_help'] = 'Файлы в личной области пользователя';
-$string['user:view'] = 'Просматривать личные файлы пользователя';
+$string['user:view'] = 'Просматривать хранилище файлов «Мои личные файлы»';

@@ -516,7 +516,6 @@ A notação de colchetes tem a seguinte sintaxe:
 : lista de opções para o player separadas por ponto e virgula. Cada opção pode ter um link para on/off ou um par de valores.
 : **nome=valor
 : **nome="valor com espaços"';
-$string['utilitiesindex'] = 'HotPot Utilities index';
 $string['viewreports'] = 'Ver relatórios de {$a} utilizador(s)';
 $string['views'] = 'Vistas';
 $string['weighting'] = 'Ponderar';

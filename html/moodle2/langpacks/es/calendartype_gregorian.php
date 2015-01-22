@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['name'] = 'Gregoriano';
 $string['pluginname'] = 'Sistema de calendario gregoriano';

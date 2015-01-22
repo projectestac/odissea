@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept_users_but'] = 'Accept';
+$string['active_plant'] = 'Plant available';
 $string['allow_remlabaccess'] = 'You were granted permission to make bookings for a new remote lab:';
 $string['already_enabled'] = 'You already have a booking system in this course.';
 $string['availability'] = 'Availability';
@@ -49,6 +50,7 @@ $string['ejsappbookingname_help'] = 'Name to be displayed for the booking system
 $string['ejsappbooking:view'] = 'View the booking system';
 $string['hour'] = 'Time';
 $string['imonth'] = 'Month';
+$string['inactive_plant'] = 'Plant not available';
 $string['iyear'] = 'Year';
 $string['makereservation'] = 'Make a reservation';
 $string['manage_access_but'] = 'Manage users access';
@@ -66,7 +68,6 @@ $string['nobooking'] = 'Not reservations';
 $string['no_labs_rem'] = 'You are not authorized to book or there is no remote laboratory set';
 $string['no_rem_labs'] = 'There are no remote labs in this course';
 $string['plant'] = 'Plant';
-$string['plantActive'] = 'Plant availability';
 $string['pluginadministration'] = 'EJSAppBooking administration';
 $string['pluginname'] = 'EJSAppBooking';
 $string['rem_lab_selection'] = 'Select a remote lab';

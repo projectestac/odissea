@@ -27,8 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allfilesok'] = 'Ez dago falta edo erabili gabeko fitxategirik';
 $string['deleteselected'] = 'Ezabatu aukeratutako fitxategiak';
+$string['hasmissingfiles'] = 'Kontuz! Testu-eremuan erreferentzia egiten zaien ondoko fitxategiak ez bide dira existitzen:';
 $string['manageareafiles'] = 'Kudeatu enbotatutako fitxategiak testu-editorean';
 $string['managefiles:desc'] = 'Kudeatu enbotatutako fitxategiak';
 $string['pluginname'] = 'Kudeatu enbotatutako fitxategiak';
 $string['refreshfiles'] = 'Freskatu falta eta erabili gabeko fitxategi-zerrenda';
+$string['unusedfilesdesc'] = 'Ondoko fitxategi enbotatuak ez dira testu-eremuan erabiltzen:';
 $string['unusedfilesheader'] = 'Erabili gabeko fitxategiak';

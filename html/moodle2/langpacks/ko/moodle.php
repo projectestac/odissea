@@ -770,6 +770,7 @@ $string['folderclosed'] = '닫힌 경로';
 $string['folderopened'] = '열린 경로';
 $string['followingoptional'] = '아래 항목은 선택사항입니다.';
 $string['followingrequired'] = '아래 항목은 필수사항입니다.';
+$string['for'] = '위해서';
 $string['force'] = '강제지정';
 $string['forcelanguage'] = '지정 언어';
 $string['forceno'] = '지정하지 않음';

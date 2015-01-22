@@ -91,14 +91,14 @@ $string['batchoperationconfirmgrantextension'] = '選択されたすべての提
 $string['batchoperationconfirmlock'] = '選択された提出すべてをロックしますか?';
 $string['batchoperationconfirmreverttodraft'] = '選択された提出を下書きに戻しますか?';
 $string['batchoperationconfirmsetmarkingallocation'] = '選択された提出すべてに対して、採点割り当てを設定しますか?';
-$string['batchoperationconfirmsetmarkingworkflowstate'] = '選択された提出すべてに対して、採点ワークフロー状況を設定しますか?';
+$string['batchoperationconfirmsetmarkingworkflowstate'] = '選択された提出すべてに対して、採点ワークフロー状態を設定しますか?';
 $string['batchoperationconfirmunlock'] = '選択された提出すべてをロック解除しますか?';
 $string['batchoperationlock'] = '提出をロックする';
 $string['batchoperationreverttodraft'] = '提出を下書きに戻す';
 $string['batchoperationsdescription'] = '選択した行に対して ...';
 $string['batchoperationunlock'] = '提出をロック解除する';
 $string['batchsetallocatedmarker'] = '選択された {$a} 名のユーザに対して、割り当て採点者を設定します。';
-$string['batchsetmarkingworkflowstateforusers'] = '選択された {$a} 名のユーザに対して、採点ワークフロー状況を設定します。';
+$string['batchsetmarkingworkflowstateforusers'] = '選択された {$a} 名のユーザに対して、採点ワークフロー状態を設定します。';
 $string['blindmarking'] = 'ブラインド評定';
 $string['blindmarking_help'] = 'ブラインド評定は評定者に対して学生の個人情報を隠します。この課題に関して提出または評定された場合、ブラインド評定設定がロックされます。';
 $string['changegradewarning'] = 'この課題は評定済みであり、評点を変更することにより、既存の提出が自動的に再計算されることはありません。評点を変更したい場合、あなたは既存のすべての提出を再評定する必要があります。';
@@ -231,7 +231,7 @@ $string['markingallocation'] = '採点割り当てを使用する';
 $string['markingallocation_help'] = 'この設定および採点ワークフローを有効にした場合、個々の学生に採点者を割り当てることができるようになります。';
 $string['markingworkflow'] = '採点ワークフローを使用する';
 $string['markingworkflow_help'] = 'この設定を有効にした場合、学生にリリースされる前に、評点はワークフローステージに入ります。これにより、採点者が一連の評点を同じタイミングで学生すべてにリリースすることができます。';
-$string['markingworkflowstate'] = '採点ワークフロー状況';
+$string['markingworkflowstate'] = '採点ワークフロー状態';
 $string['markingworkflowstate_help'] = '使用可能なワークフロー状況は下記を含みます (あなたのパーミッションに依存します):
 
 * 未採点 - まだ採点者は開始していません。
@@ -245,7 +245,7 @@ $string['markingworkflowstateinreview'] = 'レビュー中';
 $string['markingworkflowstatenotmarked'] = '未採点';
 $string['markingworkflowstatereadyforrelease'] = 'リリース準備完了';
 $string['markingworkflowstatereadyforreview'] = '採点完了';
-$string['markingworkflowstatereleased'] = 'リリース';
+$string['markingworkflowstatereleased'] = 'リリース済み';
 $string['maxattempts'] = '最大提出回数';
 $string['maxattempts_help'] = '学生が試みることのできる最大提出回数です。この提出回数に達した場合、学生の提出は再度開くことができないようになります。';
 $string['maxgrade'] = '最大評点';
@@ -325,8 +325,8 @@ $string['sendsubmissionreceipts'] = '学生に提出受領書を送信する';
 $string['sendsubmissionreceipts_help'] = 'この設定では、学生への提出受領書を有効にします。正常に課題が提出された場合、学生は毎回通知を受信します。';
 $string['setmarkerallocationforlog'] = '採点割り当てを設定する: (id={$a->id}, フルネーム={$a->fullname}, 採点者={$a->marker})';
 $string['setmarkingallocation'] = '割り当て採点者を設定する';
-$string['setmarkingworkflowstate'] = '採点ワークフロー状況を設定する';
-$string['setmarkingworkflowstateforlog'] = '採点ワークフロー状況を設定する: (id={$a->id}, フルネーム={$a->fullname}, 状況={$a->state})';
+$string['setmarkingworkflowstate'] = '採点ワークフロー状態を設定する';
+$string['setmarkingworkflowstateforlog'] = '採点ワークフロー状態を設定する: (id={$a->id}, フルネーム={$a->fullname}, 状態={$a->state})';
 $string['settings'] = '課題設定';
 $string['showrecentsubmissions'] = '最近の課題提出を表示する';
 $string['status'] = '状態';
@@ -406,9 +406,9 @@ $string['upgradenotimplemented'] = 'プラグイン ({$a->type} {$a->subtype}) �
 $string['userextensiondate'] = '次の日時まで延長が許可されました: {$a}';
 $string['usergrade'] = 'ユーザガイド';
 $string['userswhoneedtosubmit'] = '提出が必要なユーザ: {$a}';
-$string['validmarkingworkflowstates'] = '有効な採点ワークフロー状況';
+$string['validmarkingworkflowstates'] = '有効な採点ワークフロー状態';
 $string['viewbatchmarkingallocation'] = '採点割り当てページのバッチ設定を表示します。';
-$string['viewbatchsetmarkingworkflowstate'] = '採点ワークフロー状況ページのバッチ設定を表示します。';
+$string['viewbatchsetmarkingworkflowstate'] = '採点ワークフロー状態ページのバッチ設定を表示します。';
 $string['viewfeedback'] = 'フィードバックを表示する';
 $string['viewfeedbackforuser'] = 'ユーザのフィードバックを表示する: {$a}';
 $string['viewfull'] = '詳細表示';

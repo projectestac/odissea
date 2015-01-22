@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completionprogressdetails'] = 'Детали достижения завершения';
-$string['completionstatus:addinstance'] = 'Добавлять новый блок состояния завершения курса';
+$string['completionstatus:addinstance'] = 'Добавлять новый блок «Состояние завершения курса»';
 $string['criteriagroup'] = 'Критерии группы';
 $string['firstofsecond'] = '{$a->first} из {$a->second}';
-$string['pluginname'] = 'Статус завершения курса';
+$string['pluginname'] = 'Состояние завершения курса';
 $string['requirement'] = 'Необходимое условие';
 $string['returntocourse'] = 'Вернуться к курсу';

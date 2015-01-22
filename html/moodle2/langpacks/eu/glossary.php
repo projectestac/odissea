@@ -36,11 +36,7 @@ Hitz gako horiek lerro banatan sartu (komarik gabe).';
 $string['allcategories'] = 'Kategoria guztiak';
 $string['allentries'] = 'GUZTIAK';
 $string['allowcomments'] = 'Baimendu iruzkinak sarreretan';
-$string['allowcomments_help'] = '<p>Ikasleei glosategiko sarrerei iruzkinak gehitzen utzi ahal diegu.</p>
-
-<p>Zeure esku dago aukera hau gaitzea ala ez.</p>
-
-<p>Irakasleek une oro dute sarrerei iruzkinak gehitzeko modua.</p>';
+$string['allowcomments_help'] = 'Gaituz gero, iruzkinak sortzeko baimena duten partaide guztiak gai izango dira glosategiko sarrerei iruzkinak gehitzeko.';
 $string['allowduplicatedentries'] = 'Sarrerak bikoiztea baimenduta';
 $string['allowduplicatedentries_help'] = 'Aukera hau gaituz gero, kontzeptu batek nahi beste sarrera izan dezake.';
 $string['allowprintview'] = 'Erakutsi inprimatzeko bertsioa';
@@ -61,8 +57,8 @@ $string['attachment_help'] = 'Glosategi bateko sarrerari fitxategi bat edo gehia
 $string['author'] = 'egilea';
 $string['authorview'] = 'Egilearen arabera bilatu';
 $string['back'] = 'Atzera';
-$string['cantinsertcat'] = 'Ezin da kategoria gehitu';
-$string['cantinsertrec'] = 'Ezin da erregistroa gehitu';
+$string['cantinsertcat'] = 'Ezin da kategoria txertatu';
+$string['cantinsertrec'] = 'Ezin da erregistroa txertatu';
 $string['cantinsertrel'] = 'Ezin kategoria-sarrera erlaziorik ezarri';
 $string['casesensitive'] = 'Sarrera honetan letra larriak eta xeheak bereizten dira';
 $string['casesensitive_help'] = '<p>Aukera honek adierazten du letra larriak eta xeheak bere horretan bat etorri behar dutela kontzeptuen esteka automatikoa sortzeko.</p>
@@ -89,10 +85,10 @@ $string['cnfsortkey'] = 'Aukeratu berezko antolaketa-gakoa';
 $string['cnfsortorder'] = 'Aukeratu berezko ordena';
 $string['cnfstudentcanpost'] = 'Erabaki berez ikasleek sarrerak gainera ditzaketen ala ez';
 $string['comment'] = 'Iruzkina';
-$string['commentdeleted'] = 'Iruzkina ezabatuta';
+$string['commentdeleted'] = 'Iruzkina ezabatu da.';
 $string['comments'] = 'Iruzkinak';
 $string['commentson'] = 'Honen inguruko iruzkinak';
-$string['commentupdated'] = 'Iruzkina eguneratuta';
+$string['commentupdated'] = 'Iruzkina eguneratu da.';
 $string['completionentries'] = 'Ikasleak sarrerak sortu behar ditu:';
 $string['completionentriesgroup'] = 'Sarrerak behar dira';
 $string['concept'] = 'Kontzeptua';
@@ -103,9 +99,7 @@ $string['currentglossary'] = 'Oraingo glosategia';
 $string['date'] = 'data';
 $string['dateview'] = 'Dataren arabera bilatu';
 $string['defaultapproval'] = 'Aldez aurretik onartua';
-$string['defaultapproval_help'] = '<p>Aukeran duzu ikasleek sorturiko sarrerak automatikoki gaineratzea glosategira ala horren aurretik irakasleak onartu beharra izatea.</p>
-
-<p>Berezko onarpen-modua zehaztu ahal duzu ikasle batek sarrera gaineratzen duenean.</p>';
+$string['defaultapproval_help'] = 'EZ ezarriz gero, sarrerek irakaslearen onarpena behar dute gainerako guztien esku jarri aurretik.';
 $string['defaulthook'] = 'Berezko gakoa';
 $string['defaultmode'] = 'Berezko modua';
 $string['defaultsortkey'] = 'Berezko giltza-mota';
@@ -118,11 +112,7 @@ $string['deletingcomment'] = 'Iruzkina ezabatzen';
 $string['deletingnoneemptycategory'] = 'Kategoria hau ezabatuta ez dira ezabatuko dituen sarrerak. Besterik gabe, kategoria gabeko bezala agertuko dira.';
 $string['descending'] = 'goitik behera';
 $string['destination'] = 'Inportatutako sarreren helburua';
-$string['destination_help'] = '<p>Helbide-eremuan inportatutako sarrerak nora joango diren zehazten da:</p>
-<ul>
-<li><strong>Oraingo glosategira: </strong>Sarrerak une horretan zabaldik duzun glosategira gaineratuko dira.</li>
-<li><strong>Glosategi berrira: </strong>Glosategi berria sortuko da inportatuko fitxategian aurkitutako informazioan oinarrituta. Bertan sartuko dira sarrera berriak).</li>
-</ul>';
+$string['destination_help'] = 'Sarrerak inporta eta gehi daitezke oraingo glosategira edo gosategi berri batera. Glosategi berria XML fitxategian dagoen informazioan oinarrituta sortuko da.';
 $string['disapprove'] = 'Desegin onarpena';
 $string['displayformat'] = 'Erakusteko modua';
 $string['displayformatcontinuous'] = 'Jarraian eta egilerik gabe';
@@ -147,14 +137,7 @@ $string['displayformatssetup'] = 'Aukeratu erakusteko modua';
 $string['duplicatecategory'] = 'Bikoiztu kategoria';
 $string['duplicateentry'] = 'Sarrera bikoiztu';
 $string['editalways'] = 'Baimendu beti editatzea';
-$string['editalways_help'] = '<P>Aukera honi esker erabaki dezakezu ikasleek sarrerak edozein momentutan edita ditzaketen ala ez.</p>
-
-<P>Bi aukera dituzu:</p>
-
-<UL>
-<LI><B>Bai:</B> Sarrerak beti edita daitezke.</li>
-<LI><B>Ez:</B> Sarrerak epe jakin baten barruan edita daitezke.</li>
-</UL>';
+$string['editalways_help'] = 'Aukera honi esker erabaki dezakezu ikasleek sarrerak edozein momentutan edita ditzaketen ala epe jakin baten barruan (oro har, 30 minutuz).';
 $string['editcategories'] = 'Editatu kategoriak';
 $string['editentry'] = 'Editatu sarrera';
 $string['editingcomment'] = 'Iruzkina editatu';
@@ -171,13 +154,7 @@ $string['entryleveldefaultsettings'] = 'Sarreren berezko ezarpenak';
 $string['entrysaved'] = 'Sarrera gordeta';
 $string['entryupdated'] = 'Sarrera eguneratuta';
 $string['entryusedynalink'] = 'Sarrera hau automatikoki estekatu';
-$string['entryusedynalink_help'] = '<p>Aukera hau eginda, banakako sarrerak automatikoki estekatuko dira kontzeptuen hitzak eta esaldiak ikastaroan zehar agertzen direnean: foroetako mezuetan, materialetan, laburpenetan, egunerokoetan, e.a.</p>
-
-<p>Kategorien izenak ere estekatuko dira.</p>
-
-<p>Ez baduzu testu jakin bat estekatzea nahi (adibidez, foroetako mezu batean), &lt;nolink&gt; testua &lt;/nolink&gt; etiketen artean idatzi.</p>
-
-<p>Funtzionalitate hau martxan izateko, estekatze automatikoa gaituta egon behar da glosategian.</p>';
+$string['entryusedynalink_help'] = 'Glosategirako esteka automatikoa kudeatzaileak gaitu badu eta kutxatxo hau aukeratuta badago, sarrerak automatikoki estekatuko dira kontzeptuen hitz  eta esaldiekin, ikastaroan zehar agertzen direnean.';
 $string['errcannoteditothers'] = 'Ezin dituzu beste pertsonen sarrerak editatu';
 $string['errconceptalreadyexists'] = 'Kontzeptu hau dagoeneko existitzen da. Glosategi honetan ezin dira sarrerak bikoiztu.';
 $string['errdeltimeexpired'] = 'Ezin duzu hau ezabatu. Denbora amaitu egin da!';
@@ -196,13 +173,11 @@ $string['exportfile'] = 'Esportatu sarrerak fitxategi batera';
 $string['exportglossary'] = 'Esportatu glosategia';
 $string['exporttomainglossary'] = 'Esportatu glosategi nagusira';
 $string['filetoimport'] = 'Inportatu beharreko fitxategia';
-$string['filetoimport_help'] = '<P>Aukera itzazu inportatu beharreko sarrerak dituzten XML fitxategiak zeure ordenagailuan.</p>';
+$string['filetoimport_help'] = 'Aukera itzazu inportatu beharreko sarrerak dituzten XML fitxategiak zeure ordenagailuan.';
 $string['fillfields'] = 'Kontzeptua eta azalpena derrigorrezko datuak dira';
 $string['filtername'] = 'Autoestekatutako glosategia';
 $string['fullmatch'] = 'Hitz osoak bakarrik bilatu';
-$string['fullmatch_help'] = '<p>Aldagai honek esteka automatikoa hitz osoekin egingo den ala ez definitzen du.
-
-<p>Adibidez, gaituta egonez gero, "eta" ez da automatikoki "aldaketa" hitzarekin estekatuko.</p>';
+$string['fullmatch_help'] = 'Aldagai honek esteka automatikoa hitz osoekin egingo den ala ez definitzen du. Adibidez, gaituta egonez gero, "eta" ez da automatikoki "aldaketa" hitzarekin estekatuko.';
 $string['glossary:addinstance'] = 'Gehitu beste glosategi bat';
 $string['glossary:approve'] = 'Onartu eta desegin onartutako sarrerak';
 $string['glossary:comment'] = 'Sortu iruzkinak';
@@ -216,11 +191,7 @@ $string['glossary:managecomments'] = 'Kudeatu iruzkinak';
 $string['glossary:manageentries'] = 'Kudeatu sarrerak';
 $string['glossary:rate'] = 'Kalifikatu sarrerak';
 $string['glossarytype'] = 'Glosategi-mota';
-$string['glossarytype_help'] = '<P>Modulu honek bigarren mailako edozein glosategiren sarrerak ikastaroaren glosategi nagusira esportatzea ahalbidetzen du.</p>
-
-<p>Horretarako, glosategi nagusia zein den zehaztu behar duzu.</p>
-
-<p>Oharra: nahi izanez gero, glosategi nagusi bat bakarrik izan dezakezu ikastaroko eta irakasleek baino ez izan eguneratzeko modua.</p>';
+$string['glossarytype_help'] = 'Glosategi nagusira bigarren mailako edozein glosategiren sarrerak inporta daitezke. Ikastaroak glosategi nagusi bakarra izan dezake. Glosategietako sarrerak inportatzea beharrezkoa ez bada, glosategi guztiak izan daitezke bigarren mailakoak.';
 $string['glossary:view'] = 'Ikusi glosategia';
 $string['glossary:viewallratings'] = 'Erabiltzaileek emandako kalifikazio guztiak ikusi';
 $string['glossary:viewanyrating'] = 'Besteren batek denera jasotako kalifikazioak ikusi';
@@ -234,16 +205,10 @@ $string['importentries'] = 'Sarrerak inportatu';
 $string['importentriesfromxml'] = 'Sarrerak inportatu XML fitxategi batetik';
 $string['includegroupbreaks'] = 'Sartu banatutako taldeak';
 $string['isglobal'] = 'Glosategi orokorra al da hau?';
-$string['isglobal_help'] = '<P>Glosategia moduluak gune osoan eskuragarri izango diren kontzeptuak definitzea ahalbidetzen du. Glosategi orokorrak izenekoetan biltzen dira sarrera horiek.</p>
-
-<p>Horretarako, zehaztu behar duzu zein den glosategi orokorra.</p>
-
-<p>Nahi beste glosategi orokor izan dezakezu eta edozein ikastarotan koka daitezke. Glosategien gainerako aldagai guztiak berdin-berdin erabiltzen dira glosategi hauetan.</p>';
+$string['isglobal_help'] = 'Glosategi orokorrak dituen sarrerak guneko edozein tokitatik estekatuak izan daitezke, ez bakarrik glosategia duen ikastarotik. Kudeatzaileek bakarrik ezar dezakete glosategi bat orokor gisa.';
 $string['letter'] = 'letra';
 $string['linkcategory'] = 'Automatikoki estekatu nahi duzu kategoria hau?';
-$string['linkcategory_help'] = '<P>Nahi izanez gero, kategoriek estekatze automatikoa izan dezakete.</p>
-
-<P>Oharra: kategoriek kasuaren sentsibilitatean oinarritutako estekak dituzte, enuntziatuak lotzearen antzera.</p>';
+$string['linkcategory_help'] = 'Glosategiaren estekatze automatikoa gaitu bada eta ezarpen hau gaituta badago, kategoriaren izena automatikoki estekatuko da, ikastaroan azaltzen denean. Partaide batek kategoriaren izenarekin estekatzen duenean, glosategiko "Kategoriaren arabera bilatu" orrira bideratuko da.';
 $string['linking'] = 'Autoesteka';
 $string['mainglossary'] = 'Glosategi nagusia';
 $string['maxtimehaspassed'] = 'Barkatu, baina iruzkin hau ({$a}) editatzeko gehienezko denbora agortu egin duzu!';
@@ -295,9 +260,7 @@ $string['rejectionrpt'] = 'Onartu gabeko txostena';
 $string['resetglossaries'] = 'Sarrerak ezabatu ondokotik';
 $string['resetglossariesall'] = 'Glosategi guztietako sarrerak ezabatu';
 $string['rssarticles'] = 'RSS jario berrien kopurua';
-$string['rssarticles_help'] = '<p>Honekin RSS jarioan sartu beharreko artikulu-kopurua aukera dezakezu.</p>
-
-<p>Bost aukeratuta, harpidedunei azken bost artikuluak bidaliko zaizkie. Glosategi gehienetan egokia izan daiteke 5 eta 20ren artean ezartzea. Gehiago ipini behar litzateke oso glosategi erabilia bada.</p>';
+$string['rssarticles_help'] = 'Honekin RSS jarioan sartu beharreko artikulu-kopurua aukera dezakezu. Oro har, 5 eta 20ren artean ezartzea egokia izan daiteke.';
 $string['rsssubscriberss'] = 'Erakutsi RSS jarioa \'{$a}\' kontzeptuetarako';
 $string['rsstype'] = 'Jarduera honetarako RSS jarioa';
 $string['rsstype_help'] = 'Jarduera honetan RSS jarioak gaitzeko, aukeratu kontzeptuak egilea eta guzti edo egilerik gabe, jarioan gaineratzeko.';
@@ -308,13 +271,7 @@ $string['showall_help'] = 'Gaituz gero, partaideek sarrera guztiak batera ikus d
 $string['showalphabet'] = 'Erakutsi alfabetoa';
 $string['showalphabet_help'] = 'Gaituz gero, partaideek glosategia arakatu ahal dute alfabetoko letren arabera.';
 $string['showspecial'] = 'Erakutsi "Berezia" esteka';
-$string['showspecial_help'] = '<P>Erabiltzaileek glosategia ikusteko modua pertsonaliza dezakezu. Kategoriaren edo dataren araberako bilaketak egiteko aukera beti egoten da eskura baina horrez gain, beste hiru aukera dituzu:</p>
-
-<p><b>"Berezia" esteka erakutsi:</b> @ edo # bezalako karaktere bereziekin egindako bilaketak gaitzen ditu aukera honek.</p>
-
-<p><b>"Alfabetoa" esteka erakutsi:</b> Hasierako hizkien bitartezko bilaketak gaitzen ditu.</p>
-
-<p><b>"Denak" esteka erakutsi:</b> Aurreko aukera guztiak batera gaitzen ditu.</p>';
+$string['showspecial_help'] = 'Gaituz gero, partaideek glosategia araka dezakete karaktere bereziak erabilita, adibidez,  @ edo # .';
 $string['sortby'] = 'Zeren arabera ordenatu';
 $string['sortbycreation'] = 'Sortu zeneko dataren arabera';
 $string['sortbylastupdate'] = 'Orain gutxi aldaketak izan dituztenak';
@@ -324,11 +281,7 @@ $string['standardview'] = 'Alfabetikoki';
 $string['studentcanpost'] = 'Ikasleek sarrerak gehitzea daukate';
 $string['totalentries'] = 'Sarrerak guztira';
 $string['usedynalink'] = 'Estekatu automatikoki glosategiko sarrerak';
-$string['usedynalink_help'] = '<p>Aukera hau eginda, banakako sarrerak automatikoki estekatuko dira kontzeptuen hitzak eta esaldiak ikastaroan zehar agertzen direnean: foroetako mezuetan, materialetan, laburpenetan, egunerokoetan, e.a.</p>
-
-<p>Kategorien izenak ere estekatuko dira.</p>
-
-<p>Ez baduzu testu jakin bat estekatzea nahi (adibidez, foroetako mezu batean), &lt;nolink&gt; testua &lt;/nolink&gt; etiketen artean idatzi.</p>';
+$string['usedynalink_help'] = 'Glosategirako esteka automatikoa kudeatzaileak gaitu badu eta ezarpen hau gaituta badago, "Gehitu sarrera berria" aukerari esker sarrerak automatikoki estekatuko dira kontzeptuen hitz  eta esaldiekin, ikastaroan zehar agertzen direnean.';
 $string['waitingapproval'] = 'Onarpenaren zain';
 $string['warningstudentcapost'] = '(Bakarrik glosategi nagusia ez bada)';
 $string['withauthor'] = 'Kontzeptuak eta egilea';

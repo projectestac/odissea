@@ -37,4 +37,4 @@ $string['numwordsforlog'] = 'Abgabe: {$a} Worte';
 $string['onlinetext'] = 'Texteingabe online';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Texteingabe online erlauben';
-$string['pluginname'] = 'Texteingaben online';
+$string['pluginname'] = 'Texteingabe online';

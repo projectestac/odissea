@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['local_mobilesettings'] = 'Ezarpenak';
+$string['local_mobiletypeoflogin_key'] = 'Sarbide-mota';
 $string['loginintheapp'] = 'App bidez';

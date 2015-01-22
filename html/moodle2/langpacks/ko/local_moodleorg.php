@@ -63,6 +63,7 @@ $string['graphpopulation'] = '무들 인구 그래프';
 $string['graphregistrationmap'] = '무들 등록 지도';
 $string['graphregistrationmapdesc'] = '{$a} 국가의 등록된 사이트에서 최고 10';
 $string['graphusersites'] = '무들 사용자 사이트 비교';
+$string['heroslide_link_sites'] = '등록된 사이트';
 $string['jobs'] = '전세계에 무들 관련 직업에 대한 정보를 위해서는 우리들의 직업 데이터베이스를 방문하십시요.';
 $string['newregistrations'] = '새로운 등록';
 $string['noenrolledcoursesyet'] = '아직 사이트 내 어떤 강좌에도 등록되지 않았음';

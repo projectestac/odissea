@@ -21,7 +21,7 @@ if (!empty($data)) {
 	echo $OUTPUT->notification('S\'han trobat '.count($data). ' cadenes');
 	$table = new html_table();
 	$table->align = array('left','left');
-	$table->head = array('Tipus', 'URL', 'Curs');
+	$table->head = array('Recurs', 'Curs');
 	$table->data = $data;
 	echo html_writer::table($table);
 } else {

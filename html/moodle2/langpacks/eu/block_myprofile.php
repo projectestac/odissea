@@ -46,5 +46,5 @@ $string['display_un'] = 'Izena erakutsi';
 $string['display_yahoo'] = 'Yahoo erakutsi';
 $string['myprofile:addinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria';
 $string['myprofile:myaddinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria Nire hasieran';
-$string['myprofile_settings'] = 'Norberaren profilaren ezarpenak';
+$string['myprofile_settings'] = 'Erabiltzailearen informazioa ikusgai';
 $string['pluginname'] = 'Saioa hasitako erabiltzailea';

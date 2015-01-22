@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dragmath:desc'] = 'Txertatu ekuazioa';
+$string['javaneeded'] = 'Orri hau erabiltzeko, Java onartzen duen nabigatzailea behar duzu. Jaitsi hemedik ({$a}) Java pluniaren azken bertsioa.';
 $string['pluginname'] = 'Txertatu ekuazioa';
 $string['requiretex'] = 'TeX filter behar du';
+$string['requiretex_desc'] = 'Gaituz gero, Dragmath botoia bakarrik  ikusgai izango da TeX iragazkia editorearen testuinguruan gaituta dagoenean. Desgaitu TeX iragazki pertsonalizatua baduzu gaituta ingurune globalean.';
 $string['title'] = 'DragMath ekuazio-editorea';

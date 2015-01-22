@@ -29,6 +29,8 @@ $string['actions'] = 'Acciones';
 $string['availability'] = 'Disponibilidad';
 $string['checkforupdates'] = 'Compruebe actualizaciones disponibles';
 $string['checkforupdateslast'] = 'Última comprobación realizada el {$a}';
+$string['dependencyinstall'] = 'Instalar';
+$string['dependencyupload'] = 'Subir';
 $string['detectedmisplacedplugin'] = 'La extensión "{$a->component}" está instalado en la ubicación incorrecta "{$a->current}"; la ubicación prevista es "{$a->expected}"';
 $string['displayname'] = 'Nombre de la extensión';
 $string['err_response_curl'] = 'No pudo obtener actualizaciones disponibles - error cURL inesperado.';
@@ -47,9 +49,9 @@ $string['notdownloadable'] = 'No puede descargarse el paquete';
 $string['notdownloadable_help'] = 'El paquete ZIP con la actualización no se puede descargar de forma automática. Por favor, consulte la página de documentación para obtener más ayuda.';
 $string['notes'] = 'Notas';
 $string['notwritable'] = 'Los archivos de plugins (extensiones) no son escribibles';
-$string['notwritable_help'] = 'Usted ha habilitado que se implementen actualizaciones automáticas y hay una actualización disponible para este plugin (extensión). Sin embargo, los archivos del plugin no son escribibles por el servidor web, por lo que no se pudo instalar la actualización por el momento.
+$string['notwritable_help'] = 'Ha habilitado que se realicen actualizaciones automáticas y hay una actualización disponible para este plugin. Sin embargo, los archivos del plugin no son escribibles por el servidor web, por lo que no se pudo realizar la instalación automaticamente.
 
-Haga que la carpeta del plugin y todos sus contenidos sean escribibles para poder instalar automáticamente la actualización disponible.';
+Esnecesario que la carpeta del plugin y todos sus contenidos sean escribibles para poder instalar automáticamente la actualización disponible.';
 $string['numdisabled'] = 'Deshabilitado: {$a}';
 $string['numextension'] = 'Módulos externos: {$a}';
 $string['numtotal'] = 'Instalado: {$a}';
@@ -117,8 +119,8 @@ $string['type_mnetservice'] = 'Servicio MNet';
 $string['type_mnetservice_plural'] = 'Servicios MNet';
 $string['type_mod'] = 'Módulo';
 $string['type_mod_plural'] = 'Módulos de actividad';
-$string['type_plagiarism'] = 'Prevención del plagio';
-$string['type_plagiarism_plural'] = 'Extensiones (plugins) para la prevención de plagio';
+$string['type_plagiarism'] = 'Plugin de Prevención del plagio';
+$string['type_plagiarism_plural'] = 'Plugins para la prevención de plagio';
 $string['type_portfolio'] = 'Portafolio';
 $string['type_portfolio_plural'] = 'Portafolios';
 $string['type_profilefield'] = 'Tipo de campo de perfil';

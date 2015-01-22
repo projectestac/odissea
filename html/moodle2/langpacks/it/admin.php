@@ -353,7 +353,7 @@ $string['configsitedefaultlicensehelp'] = 'La licenza di default sarà quella us
 $string['configsitemaxcategorydepth'] = 'Numero max. sotto categorie';
 $string['configsitemaxcategorydepthhelp'] = 'La profondità massima di sotto categorie visualizzate aperte nelle pagine contenenti elenchi di categorie o  elenchi combinati. Le sotto categorie nidificate più profondamente del valore impostato saranno visualizzate come link e potranno essere aperte tramite richieste AJAX.';
 $string['configslasharguments'] = 'I file e le immagini vengono serviti mediante uno script che utilizza gli \'slash arguments\', impostazione che consente di migliorare la gestione dei file nella cache del browser o del proxy server.
-Sfortunatamente alcuni server PHP non consentono l\'utilizzo di tale impostazione, quindi se riscontri  problemi nel visualizzare file e/o immagini (ad esempio le immagini del profilo utente), disabilita questa imposatzione';
+Sfortunatamente alcuni server PHP non consentono l\'utilizzo di tale impostazione, quindi se riscontri  problemi nel visualizzare file e/o immagini (ad esempio le immagini del profilo utente), disabilita questa impostazione.';
 $string['configsmartpix'] = 'Con questa impostazione, le icone sono gestite tramite uno script PHP che le cerca prima nel tema grafico corrente, poi in tutti i temi a livello superiore i quindi nella cartella di Moodle /pix. Questo riduce il bisogno di duplicare le immagini all\'interno dei temi, anche se con un piccolo costo di performance.';
 $string['configstartwday'] = 'Inizio settimana';
 $string['configstatsfirstrun'] = 'Questa impostazione definisce, per la <b>prima elaborazione</b> delle statistiche dei log, da quanto indietro nel tempo devono essere elaborati i log. Se avete molto traffico e non avete un server dedicato, probabilmente non è una buona idea tornare troppo indietro nel tempo, l\'elaborazione potrebbe essere abbastanza lunga ed esosa in termini di risorse necessarie. (Notare che nell\'impostazione , 1 mese = 28 giorni. Nei grafici e nei report generati, 1 mese = 1 mese del calendario.)';
@@ -827,7 +827,7 @@ $string['plugin'] = 'Plugin';
 $string['plugins'] = 'Plugin';
 $string['pluginscheck'] = 'Controllo dipendenze plugin';
 $string['pluginscheckfailed'] = 'Il controllo delle dipendenze plugin è fallito per {$a->pluginslist}';
-$string['pluginschecktodo'] = 'Devi sistemare tutti i requisiti richiesti dai plugin prima di continuare con l\'installazione di questa versione di Moodle';
+$string['pluginschecktodo'] = 'Devi soddisfare tutti i requisiti richiesti dai plugin prima di continuare con l\'installazione di questa versione di Moodle';
 $string['pluginsoverview'] = 'Panoramica plugin';
 $string['pluginsoverviewsee'] = 'Per maggiori informazioni è disponibile la pagina <a href="{$a->url}">panoramica plugin</a>';
 $string['profilecategory'] = 'Categoria';

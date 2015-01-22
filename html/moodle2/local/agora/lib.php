@@ -324,6 +324,26 @@ function get_admin_datadir($exceptiononerror = true) {
 }
 
 /**
+ * Return the directory to store admin things
+ *
+ * @param bool $exceptiononerror throw exception if error encountered creating file
+ * @return string|false Returns full path to directory if successful, false if not; may throw exception
+ */
+function get_moodle2_admin_datadir($exceptiononerror = true) {
+    global $agora, $CFG;
+    if (isset($CFG->moodle2admindatadir)) {
+        return $CFG->moodle2admindatadir;
+    }
+    if (isset($agora['admin']['datadir'])) {
+        $dir = $agora['server']['root'].'/'.$agora['admin']['datadir'].'/data/moodle2';
+    } else {
+        $dir = $CFG->dataroot.'/repository/files';
+    }
+    $CFG->moodle2admindatadir = make_writable_directory($dir, $exceptiononerror);
+    return $CFG->moodle2admindatadir;
+}
+
+/**
  * Return the folder inside admindatadir directory to store admin things
  *
  * @param string $folder to add to the admindatadir

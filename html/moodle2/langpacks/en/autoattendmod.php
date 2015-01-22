@@ -26,10 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['autoattendmod:addinstance'] = 'Add a new auto attendance module';
-$string['autoattendmod_options'] = 'Options of Auto Attendance Module';
+$string['autoattendmod_options'] = 'Options of Auto Attendance module';
 $string['autoattendmod:view'] = 'View module';
 $string['autoattendmod:viewreports'] = 'View reports';
 $string['description'] = 'Description';
+$string['email_all'] = 'Send all reports to teachers by e-mail';
+$string['email_all_help'] = 'If e-mail is enable and you check on this, all days attendances reports are sent by e-mail. And you check off this, only one attendance report is sent';
+$string['email_all_title'] = 'Send all Reports';
+$string['email_enable'] = 'Enable e-mail notification';
+$string['email_enable_help'] = 'If you check on this, when a session ended, attendance data is sent to teachers using e-mail';
+$string['email_enable_title'] = 'E-mail';
 $string['feedback_disp'] = 'Display Feedback link';
 $string['feedback_disp_help'] = 'If you check off this, links to the Feedback are not displayed';
 $string['feedback_title'] = 'Feedback Link';
@@ -50,5 +56,5 @@ $string['pluginadministration'] = 'Auto Attendance Module Admin';
 $string['pluginname'] = 'Auto Attendance Module';
 $string['session_num'] = 'The number of sessions';
 $string['use_item'] = 'use {$a}';
-$string['username_manage'] = 'Management of Username';
+$string['username_manage'] = 'Manage of Username';
 $string['username_manage_help'] = 'You can select displied name pattern in this module.';

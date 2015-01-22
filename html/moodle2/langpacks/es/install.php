@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admindirerror'] = 'El directorio especificado para admin es incorrecto';
 $string['admindirname'] = 'Directorio Admin';
-$string['admindirsetting'] = '<p>Muy pocos servidores web usan /admin como URL especial para permitirle acceder a un panel de control o similar. Desgraciadamente, esto entra en conflicto con la ubicación estándar de las páginas de administración de Moodle Usted puede corregir esto renombrando el directorio admin en su instalación, y poniendo aquí ese nuevo nombre. Por ejemplo: <blockquote> moodleadmin</blockquote>.
-Así se corregirán los enlaces admin en Moodle.</p>';
+$string['admindirsetting'] = 'Muy pocos servidores web usan /admin como URL especial para permitirle acceder a un panel de control o similar. Desgraciadamente, esto entra en conflicto con la ubicación estándar de las páginas de administración de Moodle. Puede corregir esto renombrando el directorio admin en su instalación, y poniendo aquí ese nuevo nombre. Por ejemplo:  <br /> <br /><b>moodleadmin</b><br /> <br />
+Así se corregirán los enlaces admin en Moodle.';
 $string['admindirsettinghead'] = 'Seleccionar el directorio admin...';
 $string['admindirsettingsub'] = 'Muy pocos servidores web usan /admin como URL especial para permitirle acceder
     a un panel de control o similar. Desgraciadamente, esto entra en conflicto con la ubicación estándar
@@ -42,8 +42,8 @@ $string['chooselanguagehead'] = 'Seleccionar idioma';
 $string['chooselanguagesub'] = 'Por favor, seleccione un idioma para el proceso de instalación. Este idioma se usará también como idioma por defecto del sitio, si bien puede cambiarse más adelante.';
 $string['cliadminpassword'] = 'Nueva contraseña de usuario admin';
 $string['cliadminusername'] = 'Nombre de usuario de la cuenta del administrador';
-$string['clialreadyconfigured'] = 'El archivo config.php ya existe. Por favor, utilice admin/cli/upgrade.php si desea actualizar su sitio web.';
-$string['clialreadyinstalled'] = 'El archivo config.php ya existe. Por favor, utilice admin/cli/upgrade.php si desea actualizar su sitio web.';
+$string['clialreadyconfigured'] = 'El archivo de configuración config.php ya existe. Por favor, utilice admin/cli/install_database.php para instalar Moodle en este sitio.';
+$string['clialreadyinstalled'] = 'El archivo de configuración config.php ya existe. Por favor, utilice admin/cli/install_database.php para actualizar el Moodle en este sitio.';
 $string['cliinstallfinished'] = 'La instalación se completo exitosamente.';
 $string['cliinstallheader'] = 'Programa de instalación Moodle de línea de comando {$a}';
 $string['climustagreelicense'] = 'En modo no interactivo debe aceptar la licencia especificando la opción --agree-license';
@@ -67,9 +67,9 @@ $string['databasetypehead'] = 'Seleccione el controlador de la base de datos';
 $string['databasetypesub'] = 'Moodle soporta varios tipos de servidores de base de datos. Por favor, póngase en contacto con el administrador del servidor si no sabe qué tipo usar.';
 $string['databaseuser'] = 'Usuario de la base de datos';
 $string['dataroot'] = 'Directorio de Datos';
-$string['datarooterror'] = 'El \'Directorio de Datos\' no pudo ser encontrado o creado. Corrija la ruta o cree el directorio manualmente.';
+$string['datarooterror'] = 'El \'directorio de datos\' no pudo ser encontrado o creado. Corrija la ruta o cree el directorio manualmente.';
 $string['datarootpermission'] = 'Permiso directorios de datos';
-$string['datarootpublicerror'] = 'El \'Directorio de datos\' que ha especificado es directamente accesible vía web: debe utilizar un directorio diferente.';
+$string['datarootpublicerror'] = 'El \'directorio de datos\' que ha especificado es directamente accesible vía web, debe utilizar un directorio diferente.';
 $string['dbconnectionerror'] = 'Error de conexión con la base de datos. Por favor, compruebe los ajustes de la base de datos.';
 $string['dbcreationerror'] = 'Error al crear la base de datos. No se ha podido crear la base de datos con el nombre y ajustes suministrados';
 $string['dbhost'] = 'Servidor';
@@ -98,8 +98,8 @@ Especifique la ruta completa de esta instalación. Asegúrese de que las mayúsc
 <br />
 <b>Directorio de Datos:</b>
 Usted necesita un espacio donde Moodle puede guardar los archivos subidos. En este directorio debe poder LEER y ESCRIBIR el usuario del servidor web (por lo general \'nobody\',  \'apache\' o \'www-data\'), pero no debe poderse acceder a esta carpeta directamente a través de la web. El instalador tratará de crearla si no existe.';
-$string['dirroot'] = 'Directorio Moodle';
-$string['dirrooterror'] = 'El \'Directorio de Moodle\' parece incorrecto. No se puede encontrar una instalación de Moodle. El valor ha sido restablecido.';
+$string['dirroot'] = 'Directorio de Moodle';
+$string['dirrooterror'] = 'El \'Directorio de Moodle\' parece incorrecto, no se puede encontrar una instalación de Moodle. El valor ha sido restablecido.';
 $string['download'] = 'Descargar';
 $string['downloadlanguagebutton'] = 'Descargar el paquete de idioma "{$a}"';
 $string['downloadlanguagehead'] = 'Descargar paquete de idioma';
@@ -116,14 +116,14 @@ $string['fileuploads'] = 'Subidas de archivos';
 $string['fileuploadserror'] = 'Debe estar activado';
 $string['fileuploadshelp'] = '<p>La subida de archivos parece estar desactivada en su servidor.</p>
 
-<p>Moodle aún puede ser instalado, pero usted no podrá subir archivos a los cursos ni imágenes nuevas de perfil de usuario.</p>
+<p>Moodle aún puede ser instalado, pero sin esta funcionalidad, usted no podrá subir archivos a los cursos ni imágenes nuevas de perfil de usuario.</p>
 
-<p>Para habilitar la subida de archivos, usted (o el administrador del sistema) necesita editar el archivo php.ini principal y cambiar el ajuste de <b>file_uploads</b> a \'1\'.</p>';
-$string['inputdatadirectory'] = 'Directorio de Datos:';
+<p>Para habilitar la subida de archivos, usted (o el administrador del sistema) necesitará editar el archivo php.ini principal y cambiar el ajuste de <b>file_uploads</b> a \'1\'.</p>';
+$string['inputdatadirectory'] = 'Directorio de datos:';
 $string['inputwebadress'] = 'Dirección Web:';
 $string['inputwebdirectory'] = 'Directorio Moodle:';
 $string['installation'] = 'Instalación';
-$string['langdownloaderror'] = 'El idioma "{$a}" no pudo ser instalado. El proceso de instalación continuará en inglés.';
+$string['langdownloaderror'] = 'El idioma "{$a}" no pudo ser descargado. El proceso de instalación continuará en Inglés.';
 $string['langdownloadok'] = 'El idioma "{$a}" ha sido instalado correctamente. El proceso de instalación continuará en este idioma.';
 $string['magicquotesruntime'] = 'Magic Quotes Run Time';
 $string['magicquotesruntimeerror'] = 'Debe estar desactivado';
@@ -153,7 +153,7 @@ a, digamos, 40M. Si no lo tiene, pida a su administrador que lo haga por usted.<
 (podrá ver los errores cuando mire las páginas) de modo que tendrá que eliminar el archivo .htaccess.</p></li>
 </ol>';
 $string['mssqlextensionisnotpresentinphp'] = 'PHP no se ha configurado adecuadamente con la extensión MSSQL de modo que pueda comunicarse con el SQL*Server. Por favor, compruebe el archivo php.ini o vuelva a compilar PHP.';
-$string['mysqliextensionisnotpresentinphp'] = 'PHP no ha sido configurado adecuadamente con la extensión MySQLi de forma que se pueda comunicar con MySQL. Por favor, compruebe su archivo php.ini o recompile PHP. La extensión MySQLi no está disponible en PHP 4.';
+$string['mysqliextensionisnotpresentinphp'] = 'PHP no ha sido configurado adecuadamente con la extensión MySQLi de forma que se pueda comunicar con MySQL. Por favor, compruebe su archivo php.ini o recompile PHP.';
 $string['nativemariadb'] = 'MariaDB (nativo/mariadb)';
 $string['nativemariadbhelp'] = 'Ahora necesita configurar la base de datos donde se almacenarán la mayoría de los datos de Moodle. La base de datos se puede crear si el usuario de la base de datos tiene los permisos necesarios, el nombre de usuario y la contraseña deben existir. El prefijo de la tabla es opcional. Este controlador no es compatible con el antiguo motor MyISAM.';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
@@ -191,7 +191,7 @@ $string['phpversionhelp'] = '<p>Moodle requiere al menos una versión de PHP 4.3
 <p>¡Debe actualizar PHP o trasladarse a otro servidor con una versión más reciente de PHP!<br />
 (En caso de 5.0.x podría también revertir a la versión 4.4.x)</p>';
 $string['releasenoteslink'] = 'Para obtener información acerca de esta versión de Moodle, consulte las Notas de la Versión en {$a}';
-$string['safemode'] = 'Modo Seguro (Safe Mode)';
+$string['safemode'] = 'Modo Seguro';
 $string['safemodeerror'] = 'Moodle puede tener problemas con Modo Seguro (\'safe mode\') activado';
 $string['safemodehelp'] = '<p>Moodle puede tener varios problemas  Modo Seguro (\'safe mode\') activado, y probablemente no pueda crear nuevos archivos.</p>
 
@@ -204,7 +204,7 @@ $string['sessionautostarthelp'] = '<p>Moodle requiere apoyo de sesión y no func
 
 <p>Las sesiones deben estar activadas en el archhivo php.ini para el parámetro session.auto_start.</p>';
 $string['sqliteextensionisnotpresentinphp'] = 'PHP no ha sido adecuadamente configurado con la extensión SQLite. Por favor, compruebe su archivo php.ini o recompile PHP.';
-$string['upgradingqtypeplugin'] = 'Actualizando el Plugin Pregunta/tipo';
+$string['upgradingqtypeplugin'] = 'Actualizando el plugin pregunta/tipo';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Si está viendo esta página es porque ha podido ejecutar el paquete <strong>{$a->packname} {$a->packversion}</strong> en su ordenador. !Enhorabuena!';
 $string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> incluye las

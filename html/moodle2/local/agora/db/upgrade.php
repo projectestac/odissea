@@ -35,6 +35,13 @@ function xmldb_local_agora_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2014121100, 'local', 'agora');
     }
 
+    if ($oldversion < 2015011400) {
+        $rcommonlogdir = get_admin_datadir_folder();
+        set_config('data_store_log', $rcommonlogdir, 'rcommon');
+
+        upgrade_plugin_savepoint(true, 2015011400, 'local', 'agora');
+    }
+
     return true;
 }
 

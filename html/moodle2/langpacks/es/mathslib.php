@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['anunexpectederroroccured'] = 'se ha producido un error  inexperado';
+$string['anunexpectederroroccured'] = 'se ha producido un error inexperado';
 $string['cannotassigntoconstant'] = 'no se puede asignar a la constante \'{$a}\'';
 $string['cannotredefinebuiltinfunction'] = 'no se puede redefinir la función añadida \'{$a}{}\'';
 $string['divisionbyzero'] = 'división por cero';

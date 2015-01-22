@@ -38,6 +38,9 @@ $string['deleteconfirm'] = 'Удалить эту заметку?';
 $string['deletenotes'] = 'Удалить все заметки';
 $string['editnote'] = 'Редактирование заметки';
 $string['enablenotes'] = 'Включить заметки';
+$string['eventnotecreated'] = 'Создана заметка';
+$string['eventnotedeleted'] = 'Удалена заметка';
+$string['eventnotesviewed'] = 'Просмотрена заметка';
 $string['groupaddnewnote'] = 'Добавить общую заметку';
 $string['invalidid'] = 'Указан некорректный идентификатор заметки';
 $string['invaliduserid'] = 'Неверный идентификатор пользователя: {$a}';
@@ -59,6 +62,7 @@ $string['publishstate_help'] = 'Контекст заметки определя
 * Персональная - заметка будет видна только Вам
 * Курс - заметка будет видна преподавателям этого курса
 * Сайт - заметка будет видна преподавателям всех курсов';
+$string['selectnotestate'] = 'Выберите контекст заметки';
 $string['site'] = 'сайт';
 $string['sitenotes'] = 'Заметки сайта';
 $string['unknown'] = 'неизвестный';

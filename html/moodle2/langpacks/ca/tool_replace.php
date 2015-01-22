@@ -38,3 +38,4 @@ $string['replacewith'] = 'Reemplaceu per aquesta cadena:';
 $string['replacewithhelp'] = 'generalment el nou URL del servidor';
 $string['searchwholedb'] = 'Cerca en tota la base de dades:';
 $string['searchwholedbhelp'] = 'generalment l\'URL antic del servidor';
+$string['shortenoversized'] = 'Escurça el resultat si cal';

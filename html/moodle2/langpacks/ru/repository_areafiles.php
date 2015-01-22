@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['areafiles:view'] = 'Просмотр хранилища «Вложенные файлы»';
+$string['areafiles:view'] = 'Просматривать хранилище файлов «Вложенные файлы»';
 $string['configplugin'] = 'Настройка хранилища «Вложенные файлы»';
 $string['pluginname'] = 'Вложенные файлы';
 $string['pluginname_help'] = 'Файлы, встроенные в текущий текстовый редактор';

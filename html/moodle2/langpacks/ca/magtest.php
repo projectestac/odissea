@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'magtest', language 'ca', branch 'MOODLE_25_STABLE'
+ * Strings for component 'magtest', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   magtest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

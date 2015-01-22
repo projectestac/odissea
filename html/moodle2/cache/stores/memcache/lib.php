@@ -223,9 +223,8 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
         } else {
             $key = 'nodef';
         }
-        $this->purgenumber_name = $this->originalprefix.'_'.$key.'_purgenumber';
-        $this->originalprefix = $this->prefix.$key;
-
+        $this->originalprefix = $this->prefix.'_'.$key;
+        $this->purgenumber_name = $this->originalprefix.'_purgenumber';
         $this->prefix = $this->originalprefix.$this->get_purgenumber();
         //************ FI
 
@@ -359,7 +358,7 @@ class cachestore_memcache extends cache_store implements cache_is_configurable {
         return $purgenumber;
     }
 
-    public function get_connections(){
+    public function get_connections() {
         if ($this->isready) {
             if ($this->clustered) {
                 return $this->setconnections;

@@ -190,6 +190,7 @@ The minimum duration of attempts which must satisfy the score and count conditio
 
 **<=** (less than or equal to)
 The maximum duration of attempts which must satisfy the score and count conditions.';
+$string['attempted'] = 'Attempted';
 $string['attemptgrade'] = 'Attempt grade';
 $string['attemptgrademethod'] = 'Attempt grading method';
 $string['attemptgrademethod_help'] = 'This setting defines how the grade for a single attempt at this TaskChain activity is calculated.
@@ -271,6 +272,10 @@ $string['columnlistsingle'] = 'Column list ($a)';
 $string['columnliststask'] = 'All task column lists';
 $string['columnliststasks'] = 'Column lists for editing tasks';
 $string['completed'] = 'Completed';
+$string['completioncompleted'] = 'Require completed status';
+$string['completionmingrade'] = 'Require minimum grade';
+$string['completionpassed'] = 'Require passing grade';
+$string['completionwarning'] = 'These fields are disabled if the grade limit for this activity is "No grade" or the grade weighting is "No weighting"';
 $string['conditions'] = 'Conditions';
 $string['conditionscore'] = 'Condition score';
 $string['conditionscore_help'] = 'If enabled, this setting specifies the maximum or minimum score at which this condition is satisfied.
@@ -450,6 +455,33 @@ $string['error_setpropertydirectly'] = 'Cannot modify {$a->property} property of
 $string['error_setunknownproperty'] = 'Cannot modify unknown property, {$a->property}, of {$a->class} object.';
 $string['error_unrecognizedpageid'] = 'TaskChain pageid not recognized: {$a}';
 $string['error_updaterecord'] = 'Could not update record in database table: {$a}';
+$string['event_attempt_started'] = 'TaskChain attempt started';
+$string['event_attempt_started_description'] = 'The user with id "{$a->userid}" started an attempt at a task on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_attempt_started_explanation'] = 'A user has just started an attempt at a TaskChain activity';
+$string['event_attempt_submitted'] = 'TaskChain attempt submitted';
+$string['event_attempt_submitted_description'] = 'The user with id "{$a->userid}" submitted an attempt at a task on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_attempt_submitted_explanation'] = 'A user has just submitted an attempt at a TaskChain activity';
+$string['event_base'] = 'HotPot event detected';
+$string['event_base_description'] = 'The user with id "{$a->userid}" initiated an event in the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_base_explanation'] = 'An event was  detected by the TaskChain module';
+$string['event_chains_edited'] = 'TaskChain chains edited';
+$string['event_chains_edited_description'] = 'The user with id "{$a->userid}" edited all TaskChain chains on the course with id "{$a->courseid}"';
+$string['event_chains_edited_explanation'] = 'A user has just edited all the TaskChain chains on a course';
+$string['event_columnlists_edited'] = 'TaskChain column lists edited';
+$string['event_columnlists_edited_description'] = 'The user with id "{$a->userid}" edited column lists on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_columnlists_edited_explanation'] = 'A user has just edited the column lists for a TaskChain activity';
+$string['event_condition_edited'] = 'TaskChain condition edited';
+$string['event_condition_edited_description'] = 'The user with id "{$a->userid}" edited a condition on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_condition_edited_explanation'] = 'A user has just edited a condition on a TaskChain activity';
+$string['event_report_viewed'] = 'TaskChain report viewed';
+$string['event_report_viewed_description'] = 'The user with id "{$a->userid}" viewed a report on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_report_viewed_explanation'] = 'A user has just viewed a report on attempts at a TaskChain activity';
+$string['event_task_edited'] = 'TaskChain task edited';
+$string['event_task_edited_description'] = 'The user with id "{$a->userid}" edited a task on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_task_edited_explanation'] = 'A user has just edited a task on a TaskChain activity';
+$string['event_tasks_edited'] = 'TaskChain tasks edited';
+$string['event_tasks_edited_description'] = 'The user with id "{$a->userid}" edited all tasks on the "taskchain" activity with course module id "{$a->cmid}"';
+$string['event_tasks_edited_explanation'] = 'A user has just edited all tasks on a TaskChain activity';
 $string['exit_areyouok'] = 'Hello, are you still there?';
 $string['exit_attemptscore'] = 'Your score for that attempt was {$a}';
 $string['exitcm'] = 'Next activity';
@@ -555,7 +587,8 @@ $string['filetype'] = 'File type';
 $string['filteredchains'] = 'TaskChains matching the following filters:';
 $string['filteredtasks'] = 'Tasks matching the following filters:';
 $string['firstattempt'] = 'First attempt';
-$string['fixboms'] = 'Fix BOMs';
+$string['fix_boms'] = 'Fix BOMs';
+$string['fix_installxml'] = 'Fix db/install.xml';
 $string['forceplugins'] = 'Force media plugins';
 $string['forceplugins_help'] = 'If enabled, Moodle-compatible media players will play files such as avi, mpeg, mpg, mp3, mov and wmv. Otherwise, Moodle will not change the settings of any media players in the task.';
 $string['frameheight'] = 'Frame height';
@@ -620,7 +653,8 @@ $string['menuofalltasks'] = 'Menu of all tasks';
 $string['menuofalltasksone'] = 'Menu of all tasks (one link)';
 $string['menuofnexttasks'] = 'Menu of next tasks';
 $string['menuofnexttasksone'] = 'Menu of next tasks (one link)';
-$string['migratingfiles'] = 'Migrating Hot Potatoes task files';
+$string['migratingfiles'] = 'Migrating TaskChain task files';
+$string['migratinglogs'] = 'Migrating TaskChain logs';
 $string['minimum'] = '&gt;=';
 $string['missingsourcetype'] = 'TaskChain record is missing sourcetype';
 $string['mods_help'] = '<img src="http://localhost/24/mod/taskchain/icon.gif" alt="" /> **TaskChain**
@@ -679,7 +713,7 @@ $string['navigation_help'] = 'This setting specifies the navigation used in the 
 : the Moodle navigation bar will be displayed in a separate frame at the top of the task
 
 **Embedded web page**
-: the Moodle navigation bar will be displayed in with the Hot Potatoes task embedded within the window
+: the Moodle navigation bar will be displayed with the task embedded within the window
 
 **Original navigation aids**
 : the task will be displayed with the navigation buttons, if any, defined in the task
@@ -758,6 +792,7 @@ $string['nosourcefilesettings'] = 'TaskChain record is missing source file infor
 $string['notaskchains'] = 'No TaskChains found';
 $string['notasksforyou'] = 'Sorry, there are no tasks for you to do right now.';
 $string['notasksinchain'] = 'There are no tasks in this TaskChain chain';
+$string['notattemptedyet'] = 'Not attempted yet';
 $string['notavailable'] = 'Sorry, this activity is not currently available to you.';
 $string['notendswith'] = 'doesn\'t end with';
 $string['notisempty'] = 'isn\'t empty';
@@ -1074,6 +1109,7 @@ $string['title_help'] = 'This setting specifies the title to be displayed on the
 : the source file path, including any folder names, will be used as the web page title.';
 $string['titleprependchainname'] = 'Prepend chain name';
 $string['tnumber'] = 'Task attempt';
+$string['toolsindex'] = 'TaskChain Tools index';
 $string['totaltaskscores'] = 'Total of task scores';
 $string['unansweredtask'] = 'Unanswered task';
 $string['unseentask'] = 'Unseen task';
@@ -1122,7 +1158,6 @@ The square-bracket notation has the following syntax:
 : *name*
 : *name=value*
 : *name="some value with spaces"*';
-$string['utilitiesindex'] = 'TaskChain Utilities index';
 $string['viewreports'] = 'View reports for {$a} user(s)';
 $string['views'] = 'Views';
 $string['weighting'] = 'Weighting';

@@ -45,7 +45,7 @@ $string['autogenallforms'] = 'Gerar todos os formulários predefinidos.';
 $string['autolinkurl'] = 'Criar link para o URL';
 $string['availablefromdate'] = 'Disponível a partir de';
 $string['availabletags'] = 'Marcadores disponíveis';
-$string['availabletags_help'] = 'Marcadores são elementos posicionados no modelo que serão substituídos por dados ou outros itens quando os registos forem editados ou visualizados (ex: ícone de edição, valor de um campo, etc.).
+$string['availabletags_help'] = 'Os marcadores são espaços reservados no modelo que serão substituídos por dados ou outros itens quando os registos forem editados ou visualizados (ex: ícone de edição, valor de um campo, etc.).
 
 Os marcadores para os campos são definidos no formato <b>[[nomedocampo]]</b>. Todos os outros marcadores possuem o formato <b>##marcadorexemplo##</b>.
 

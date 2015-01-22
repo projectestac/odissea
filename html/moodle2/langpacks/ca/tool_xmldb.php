@@ -47,7 +47,7 @@ $string['confirmcheckbigints'] = 'Aquesta funció cercarà <a href="http://track
 Una vegada generades, podeu copiar les sentències i executar-les de forma segura amb la vostra interfície SQL favorita (no oblideu fer abans una còpia de seguretat de les dades).<br /><br />
 És molt recomanable estar utilitzant la darrera actualització disponible (versions +) de la vostra versió de Moodle (1.8, 1.9, 2.x...) abans d\'executar la cerca d\'enters incorrectes.<br /><br />
 Aquesta funció no realitza cap canvi en la base de dades (sols hi llegeix), així que pot executar-se de forma segura en tot moment.';
-$string['confirmcheckdefaults'] = 'Aquesta funció cercarà valors per defecte inconsistents en el vostre servidor Moodle. Generarà automàticament (però sense executar-les) les sentències SQL necessàries per a tenir tots els valors per defectament correctament definits.<br /><br />
+$string['confirmcheckdefaults'] = 'Aquesta funció cercarà valors per defecte inconsistents en el vostre servidor Moodle. Generarà automàticament (però sense executar-les) les sentències SQL necessàries per a tenir tots els valors per defecte correctament definits.<br /><br />
 Una vegada generades, podeu copiar les sentències i executar-les de forma segura amb la vostra interfície SQL favorita (no oblideu fer abans una còpia de seguretat de les dades).<br /><br />
 És molt recomanable estar utilitzant la darrera actualització disponible (versions +) de la vostra versió de Moodle (1.8, 1.9, 2.x...) abans d\'executar la cerca de valors per defecte inconsistents.<br /><br />
 Aquesta funció no realitza cap canvi en la base de dades (sols hi llegeix), així que pot executar-se de forma segura en tot moment.';

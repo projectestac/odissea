@@ -425,7 +425,6 @@ $string['usefilters'] = 'Gebruik filters';
 $string['usefilters_help'] = 'Als deze instelling ingeschakeld is, dan zal de inhoud doorgegeven worden aan de Moodle-filters voor die naar de browser gestuurd wordt.';
 $string['useglossary'] = 'Gebruik woordenlijst';
 $string['usemediafilter'] = 'Gebruik mediafilter';
-$string['utilitiesindex'] = 'HotPot index';
 $string['viewreports'] = 'Bekijk rapporten van {$a} gebruiker(s)';
 $string['views'] = 'Bekeken';
 $string['weighting'] = 'weging';

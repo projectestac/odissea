@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['outline:view'] = 'Просматривать отчеты о деятельности';
+$string['outline:view'] = 'Просматривать отчет «Отчет о деятельности»';
 $string['pluginname'] = 'Отчет о деятельности';

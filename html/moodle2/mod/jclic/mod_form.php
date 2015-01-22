@@ -71,14 +71,14 @@ class mod_jclic_mod_form extends moodleform_mod {
         // Adding the rest of jclic settings, spreeading all them into this fieldset
         $mform->addElement('header', 'header_jclic', get_string('header_jclic', 'jclic'));
 
-        $mform->addElement('select', 'filetype', get_string('filetype', 'jclic'), jclic_get_file_types());
+        $mform->addElement('select', 'filetype', get_string('filetype', 'jclic'), jclic::get_file_types());
         $mform->addHelpButton('filetype', 'filetype', 'jclic');
-        $mform->addElement('text', 'jclicurl', get_string('jclicurl', 'jclic'), array('size'=>60));
-        $mform->setType('jclicurl', PARAM_RAW);
-        $mform->addHelpButton('jclicurl', 'jclicurl', 'jclic');
-        $mform->disabledIf('jclicurl', 'filetype', 'eq', JCLIC_FILE_TYPE_LOCAL);
+        $mform->addElement('text', 'url', get_string('jclicurl', 'jclic'), array('size' => 60));
+        $mform->setType('url', PARAM_RAW);
+        $mform->addHelpButton('url', 'jclicurl', 'jclic');
+        $mform->disabledIf('url', 'filetype', 'eq', JCLIC_FILE_TYPE_LOCAL);
 
-        $mform->addElement('filemanager', 'jclicfile', get_string('jclicfile', 'jclic'), array('optional'=>false), jclic_get_filemanager_options());
+        $mform->addElement('filemanager', 'jclicfile', get_string('jclicfile', 'jclic'), array('optional'=>false), jclic::get_filemanager_options());
         $mform->addHelpButton('jclicfile', 'urledit', 'jclic');
         $mform->disabledIf('jclicfile', 'filetype', 'noteq', JCLIC_FILE_TYPE_LOCAL);
 
@@ -88,11 +88,11 @@ class mod_jclic_mod_form extends moodleform_mod {
         $mform->setDefault('exiturl', '');
         $mform->setType('exiturl', PARAM_RAW);
 
-        $options = jclic_get_languages();
+        $options = jclic::get_languages();
         $mform->addElement('select', 'lang', get_string('lang', 'jclic'), $options);
         $mform->setDefault('lang', substr($CFG->lang, 0, -5));
 
-        $options = jclic_get_skins();
+        $options = jclic::get_skins();
         $mform->addElement('select', 'skin', get_string('skin', 'jclic'), $options);
 
         $mform->addElement('text', 'width', get_string('width', 'jclic'), array('size'=>'5'));
@@ -136,7 +136,7 @@ class mod_jclic_mod_form extends moodleform_mod {
     function data_preprocessing(&$default_values) {
         if ($this->current->instance) {
             $draftitemid = file_get_submitted_draft_itemid('jclicfile');
-            file_prepare_draft_area($draftitemid, $this->context->id, 'mod_jclic', 'content', 0, jclic_get_filemanager_options());
+            file_prepare_draft_area($draftitemid, $this->context->id, 'mod_jclic', 'content', 0, jclic::get_filemanager_options());
             $default_values['jclicfile'] = $draftitemid;
         }
     }

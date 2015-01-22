@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Diese Woche';
 $string['hidefromothers'] = 'Woche verbergen';
-$string['page-course-view-weeks'] = 'Jede Kursübersicht im Wochenformat';
+$string['page-course-view-weeks'] = 'Jede Kurshauptseite im Wochenformat';
 $string['page-course-view-weeks-x'] = 'Jede Kursseite im Wochenformat';
 $string['pluginname'] = 'Wochenformat';
 $string['section0name'] = 'Allgemeines';

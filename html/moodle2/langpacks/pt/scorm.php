@@ -218,7 +218,7 @@ Existem 3 opções:
 
 * Sob o conteúdo - botões de navegação são mostrados abaixo do conteúdo do pacote SCORM;
 
- * Flutuante - os botões de navegação são mostrados no modo flutuante, sendo a posição a partir do topo e da esquerda determinada pelo pacote.';
+* Flutuante - os botões de navegação são mostrados no modo flutuante, sendo a posição a partir do topo e da esquerda determinada pelo pacote.';
 $string['navigation'] = 'Navegação';
 $string['navpositionleft'] = 'Posição dos botões de navegação a partir da esquerda em pixeis.';
 $string['navpositiontop'] = 'Posição dos botões de navegação de cima em pixeis.';

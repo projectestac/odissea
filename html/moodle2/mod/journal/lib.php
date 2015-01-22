@@ -146,34 +146,59 @@ function journal_cron () {
     if ($entries = journal_get_unmailed_graded($cutofftime)) {
         $timenow = time();
 
+        $usernamefields = get_all_user_name_fields();
+        $requireduserfields = 'id, auth, mnethostid, email, mailformat, maildisplay, lang, deleted, suspended, ' . implode(', ', $usernamefields);
+
+        // To save some db queries.
+        $users = array();
+        $courses = array();
+
         foreach ($entries as $entry) {
 
             echo "Processing journal entry $entry->id\n";
 
-            if (! $user = $DB->get_record("user", array("id" => $entry->userid))) {
-                echo "Could not find user $entry->userid\n";
-                continue;
+            if (!empty($users[$entry->userid])) {
+                $user = $users[$entry->userid];
+            } else {
+                if (!$user = $DB->get_record("user", array("id" => $entry->userid), $requireduserfields)) {
+                    echo "Could not find user $entry->userid\n";
+                    continue;
+                }
+                $users[$entry->userid] = $user;
             }
 
             $USER->lang = $user->lang;
 
-            if (! $course = $DB->get_record("course", array("id" => $entry->course))) {
-                echo "Could not find course $entry->course\n";
-                continue;
+            if (!empty($courses[$entry->course])) {
+                $course = $courses[$entry->course];
+            } else {
+                if (!$course = $DB->get_record('course', array('id' => $entry->course), 'id, shortname')) {
+                    echo "Could not find course $entry->course\n";
+                    continue;
+                }
+                $courses[$entry->course] = $course;
             }
 
-            if (! $teacher = $DB->get_record("user", array("id" => $entry->teacher))) {
-                echo "Could not find teacher $entry->teacher\n";
-                continue;
+            if (!empty($users[$entry->teacher])) {
+                $teacher = $users[$entry->teacher];
+            } else {
+                if (!$teacher = $DB->get_record("user", array("id" => $entry->teacher), $requireduserfields)) {
+                    echo "Could not find teacher $entry->teacher\n";
+                    continue;
+                }
+                $users[$entry->teacher] = $teacher;
             }
 
-
-            if (! $mod = get_coursemodule_from_instance("journal", $entry->journal, $course->id)) {
+            // All cached.
+            $coursejournals = get_fast_modinfo($course)->get_instances_of('journal');
+            if (empty($coursejournals) || empty($coursejournals[$entry->journal])) {
                 echo "Could not find course module for journal id $entry->journal\n";
                 continue;
             }
+            $mod = $coursejournals[$entry->journal];
 
-            $context = get_context_instance(CONTEXT_MODULE, $mod->id);
+            // This is already cached internally.
+            $context = context_module::instance($mod->id);
             $canadd = has_capability('mod/journal:addentries', $context, $user);
             $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
 
@@ -181,7 +206,7 @@ function journal_cron () {
                 continue;  // Not an active participant
             }
 
-            unset($journalinfo);
+            $journalinfo = new stdClass();
             $journalinfo->teacher = fullname($teacher);
             $journalinfo->journal = format_string($entry->name,true);
             $journalinfo->url = "$CFG->wwwroot/mod/journal/view.php?id=$mod->id";
@@ -395,7 +420,9 @@ function journal_print_overview($courses, &$htmlarray) {
     $timenow = time();
     foreach ($journals as $journal) {
 
-        $courses[$journal->course]->format = $DB->get_field('course', 'format', array('id' => $journal->course));
+        if (empty($courses[$journal->course]->format)) {
+            $courses[$journal->course]->format = $DB->get_field('course', 'format', array('id' => $journal->course));
+        }
 
         if ($courses[$journal->course]->format == 'weeks' AND $journal->days) {
 
@@ -592,7 +619,7 @@ function journal_get_users_done($journal, $currentgroup) {
     // remove unenrolled participants
     foreach ($journals as $key => $user) {
 
-        $context = get_context_instance(CONTEXT_MODULE, $cm->id);
+        $context = context_module::instance($cm->id);
 
         $canadd = has_capability('mod/journal:addentries', $context, $user);
         $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
@@ -611,7 +638,7 @@ function journal_count_entries($journal, $groupid = 0) {
     global $DB;
 
     $cm = journal_get_coursemodule($journal->id);
-    $context = get_context_instance(CONTEXT_MODULE, $cm->id);
+    $context = context_module::instance($cm->id);
 
     if ($groupid) {     /// How many in a particular group?
 
@@ -634,14 +661,14 @@ function journal_count_entries($journal, $groupid = 0) {
         return 0;
     }
 
+    $canadd = get_users_by_capability($context, 'mod/journal:addentries', 'u.id');
+    $entriesmanager = get_users_by_capability($context, 'mod/journal:manageentries', 'u.id');
+
     // remove unenrolled participants
-    foreach ($journals as $key => $user) {
+    foreach ($journals as $userid => $notused) {
 
-        $canadd = has_capability('mod/journal:addentries', $context, $user);
-        $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
-
-        if (!$entriesmanager && !$canadd) {
-            unset($journals[$key]);
+        if (!isset($entriesmanager[$userid]) && !isset($canadd[$userid])) {
+            unset($journals[$userid]);
         }
     }
 
@@ -733,31 +760,40 @@ function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
         $feedbackdisabledstr = '';
         $feedbacktext = $entry->entrycomment;
 
-        // If the grade was modified from the gradebook disable edition
+        // If the grade was modified from the gradebook disable edition also skip if journal is not graded.
         $grading_info = grade_get_grades($course->id, 'mod', 'journal', $entry->journal, array($user->id));
-        if ($gradingdisabled = $grading_info->items[0]->grades[$user->id]->locked || $grading_info->items[0]->grades[$user->id]->overridden) {
-            $attrs['disabled'] = 'disabled';
-            $hiddengradestr = '<input type="hidden" name="r'.$entry->id.'" value="'.$entry->rating.'"/>';
-            $gradebooklink = '<a href="'.$CFG->wwwroot.'/grade/report/grader/index.php?id='.$course->id.'">';
-            $gradebooklink.= $grading_info->items[0]->grades[$user->id]->str_long_grade.'</a>';
-            $gradebookgradestr = '<br/>'.get_string("gradeingradebook", "journal").':&nbsp;'.$gradebooklink;
+        if (!empty($grading_info->items[0]->grades[$entry->userid]->str_long_grade)) {
+            if ($gradingdisabled = $grading_info->items[0]->grades[$user->id]->locked || $grading_info->items[0]->grades[$user->id]->overridden) {
+                $attrs['disabled'] = 'disabled';
+                $hiddengradestr = '<input type="hidden" name="r'.$entry->id.'" value="'.$entry->rating.'"/>';
+                $gradebooklink = '<a href="'.$CFG->wwwroot.'/grade/report/grader/index.php?id='.$course->id.'">';
+                $gradebooklink.= $grading_info->items[0]->grades[$user->id]->str_long_grade.'</a>';
+                $gradebookgradestr = '<br/>'.get_string("gradeingradebook", "journal").':&nbsp;'.$gradebooklink;
 
-            $feedbackdisabledstr = 'disabled="disabled"';
-            $feedbacktext = $grading_info->items[0]->grades[$user->id]->str_feedback;
+                $feedbackdisabledstr = 'disabled="disabled"';
+                $feedbacktext = $grading_info->items[0]->grades[$user->id]->str_feedback;
+            }
         }
 
         // Grade selector
+        $attrs['id'] = 'r' . $entry->id;
+        echo html_writer::label(fullname($user) . " " . get_string('grade'), 'r' . $entry->id, true, array('class' => 'accesshide'));
         echo html_writer::select($grades, 'r'.$entry->id, $entry->rating, get_string("nograde").'...', $attrs);
         echo $hiddengradestr;
-        if ($entry->timemarked) {
+        // Rewrote next three lines to show entry needs to be regraded due to resubmission.
+        if (!empty($entry->timemarked) && $entry->modified > $entry->timemarked) {
+            echo " <span class=\"lastedit\">".get_string("needsregrade", "journal"). "</span>";
+        } else if ($entry->timemarked) {
             echo " <span class=\"lastedit\">".userdate($entry->timemarked)."</span>";
         }
         echo $gradebookgradestr;
 
         // Feedback text
-        echo "<p><textarea name=\"c$entry->id\" rows=\"12\" cols=\"60\" $feedbackdisabledstr>";
+        echo html_writer::label(fullname($user) . " " . get_string('feedback'), 'c' . $entry->id, true, array('class' => 'accesshide'));
+        echo "<p><textarea id=\"c$entry->id\" name=\"c$entry->id\" rows=\"12\" cols=\"60\" $feedbackdisabledstr>";
         p($feedbacktext);
         echo "</textarea></p>";
+
 
         if ($feedbackdisabledstr != '') {
             echo '<input type="hidden" name="c'.$entry->id.'" value="'.$feedbacktext.'"/>';
@@ -797,7 +833,8 @@ function journal_print_feedback($course, $entry, $grades) {
     echo '<div class="grade">';
 
     // Gradebook preference
-    if ($grading_info = grade_get_grades($course->id, 'mod', 'journal', $entry->journal, array($entry->userid))) {
+    $grading_info = grade_get_grades($course->id, 'mod', 'journal', $entry->journal, array($entry->userid));
+    if (!empty($grading_info->items[0]->grades[$entry->userid]->str_long_grade)) {
         echo get_string('grade').': ';
         echo $grading_info->items[0]->grades[$entry->userid]->str_long_grade;
     } else {
@@ -806,7 +843,7 @@ function journal_print_feedback($course, $entry, $grades) {
     echo '</div>';
 
     // Feedback text
-    echo format_text($entry->entrycomment);
+    echo format_text($entry->entrycomment, FORMAT_PLAIN);
     echo '</td></tr></table>';
 }
 

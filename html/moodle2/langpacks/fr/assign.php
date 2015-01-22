@@ -31,7 +31,7 @@ $string['addnewattempt'] = 'Ajouter une tentative';
 $string['addnewattemptfromprevious'] = 'Ajouter une tentative basée sur le travail remis précédent';
 $string['addnewattemptfromprevious_help'] = 'Ceci copiera le contenu de le travail remis précédent pour vous permettre d\'y travailler.';
 $string['addnewattempt_help'] = 'Ceci créera un travail remis vide pour vous permettre d\'y travailler.';
-$string['addsubmission'] = 'Remettre un devoir';
+$string['addsubmission'] = 'Ajouter un travail';
 $string['allocatedmarker'] = 'Évaluateur attribué';
 $string['allocatedmarker_help'] = 'L\'évaluateur attribué pour ce travail';
 $string['allowsubmissions'] = 'Autoriser l\'utilisateur à ajouter ou modifier ses travaux pour ce devoir.';
@@ -66,7 +66,7 @@ $string['assign:revealidentities'] = 'Révéler l’identité des étudiants';
 $string['assign:reviewgrades'] = 'Relire les notes';
 $string['assignsubmission'] = 'Plugin de remise';
 $string['assignsubmissionpluginname'] = 'Plugin de remise';
-$string['assign:submit'] = 'Remettre un devoir';
+$string['assign:submit'] = 'Envoyer le devoir';
 $string['assign:view'] = 'Accéder à un devoir';
 $string['attemptheading'] = 'Tentative {$a->attemptnumber}&nbsp;: {$a->submissionsummary}';
 $string['attempthistory'] = 'Tentatives précédentes';
@@ -89,14 +89,14 @@ $string['batchoperationconfirmgrantextension'] = 'Octroyer une prolongation pour
 $string['batchoperationconfirmlock'] = 'Verrouiller tous les travaux sélectionnés&nbsp;?';
 $string['batchoperationconfirmreverttodraft'] = 'Remettre tous les travaux sélectionnés dans l\'état brouillon&nbsp;?';
 $string['batchoperationconfirmsetmarkingallocation'] = 'Définir l\'attribution de l\'évaluation pour tous les devoirs remis sélectionnés&nbsp;?';
-$string['batchoperationconfirmsetmarkingworkflowstate'] = 'Définir l\'état de l\'évaluation pour tous les devoirs remis sélectionnés&nbsp;?';
+$string['batchoperationconfirmsetmarkingworkflowstate'] = 'Définir le statut de l\'évaluation pour tous les devoirs remis sélectionnés ?';
 $string['batchoperationconfirmunlock'] = 'Déverrouiller tous les travaux sélectionnés&nbsp;?';
 $string['batchoperationlock'] = 'verrouiller les travaux remis';
 $string['batchoperationreverttodraft'] = 'remettre à l\'état de brouillon les travaux remis';
 $string['batchoperationsdescription'] = 'Avec la sélection...';
 $string['batchoperationunlock'] = 'déverrouiller les travaux remis';
 $string['batchsetallocatedmarker'] = 'Évaluateur attribué pour {$a} utilisateurs sélectionnés.';
-$string['batchsetmarkingworkflowstateforusers'] = 'État d\'évaluation défini pour {$a} utilisateurs sélectionnés.';
+$string['batchsetmarkingworkflowstateforusers'] = 'Statut d\'évaluation défini pour {$a} utilisateurs sélectionnés.';
 $string['blindmarking'] = 'Évaluation à l\'aveugle';
 $string['blindmarking_help'] = 'L\'évaluation à l\'aveugle cache aux évaluateurs l\'identité des étudiants. Les réglages de l\'évaluation à l\'aveugle seront verrouillés dès qu\'un travail aura été remis ou une note donnée pour ce devoir.';
 $string['changegradewarning'] = 'Ce devoir comporte des travaux évalués. La modification de la note ne déclenchera pas automatiquement le calcul des notes existantes. Pour modifier la note, vous devez ré-évaluer tous les travaux remis.';
@@ -136,7 +136,7 @@ $string['editaction'] = 'Actions...';
 $string['editattemptfeedback'] = 'Modifier la note et le feedback pour la tentative numéro {$a}.';
 $string['editingpreviousfeedbackwarning'] = 'Vous modifiez le feedback d\'une tentative précédente. Ceci est la tentative {$a->attemptnumber} de {$a->totalattempts}.';
 $string['editingstatus'] = 'Statut d\'édition';
-$string['editsubmission'] = 'Modifier le devoir';
+$string['editsubmission'] = 'Modifier le travail';
 $string['editsubmission_help'] = 'Modifier votre travail remis';
 $string['enabled'] = 'Activé';
 $string['errornosubmissions'] = 'Il n\'y a pas de devoir remis à télécharger';
@@ -223,12 +223,12 @@ $string['markingallocation'] = 'Utiliser l\'attribution d\'évaluateurs';
 $string['markingallocation_help'] = 'Si ce réglage est activé en même temps que les flux d\'évaluation, les évaluateurs peuvent être attribués à des participants.';
 $string['markingworkflow'] = 'Utiliser les flux d\'évaluation';
 $string['markingworkflow_help'] = 'Si ce réglage est activé, l\'évaluation passera par différentes étapes d\'un flux de travail avant d\'être publiée pour les participants. Ce processus permet une évaluation en plusieurs tours, ainsi que la publication simultanée des évaluations de tous les participants.';
-$string['markingworkflowstate'] = 'État du flux d\'évaluation';
-$string['markingworkflowstate_help'] = 'La liste des états d\'évaluation à votre disposition est déterminée par vos permissions et peut comprendre&nbsp;:
+$string['markingworkflowstate'] = 'Statut du flux d\'évaluation';
+$string['markingworkflowstate_help'] = 'La liste des statuts d\'évaluation à votre disposition est déterminée par vos permissions et peut comprendre :
 
 * Non évalué - l\'évaluateur n\'a pas encore commencé l\'évaluation
 * En cours d\'évaluation - l\'évaluateur a commencé l\'évaluation, qui n\'est pas encore terminée
-* Évaluation terminée - l\'évaluateur a terminé l\'évaluation, mais  peut encore la revoir pour des vérifications ou corrections
+* Évaluation terminée - l\'évaluateur a terminé l\'évaluation, mais peut encore la revoir pour des vérifications ou corrections
 * En relecture - l\'évaluation a été transmise à l\'enseignant responsable de sa vérification
 * Prêt pour publication - l\'enseignant chargé de la relecture est satisfait de l\'évaluation, mais n\'a pas encore décidé de la publier
 * Publiée - l\'étudiant peut consulter ses notes et feedbacks';
@@ -317,8 +317,8 @@ $string['sendsubmissionreceipts'] = 'Envoyer aux étudiants un accusé de récep
 $string['sendsubmissionreceipts_help'] = 'Ce réglage permet d\'activer les accusés de réception pour les étudiants. Les étudiants recevront une notification chaque fois qu\'ils remettent un travail pour un devoir.';
 $string['setmarkerallocationforlog'] = 'Définition de l\'évaluateur&nbsp;: (id={$a->id}, nom={$a->fullname}, évaluateur={$a->marker}).';
 $string['setmarkingallocation'] = 'Définir l\'évaluateur attribué';
-$string['setmarkingworkflowstate'] = 'Définir l\'état du flux d\'évaluation';
-$string['setmarkingworkflowstateforlog'] = 'Définition de l\'état du flux d\'évaluation&nbsp;:( id={$a->id}, nom={$a->fullname}, état={$a->state}).';
+$string['setmarkingworkflowstate'] = 'Définir le statut du flux d\'évaluation';
+$string['setmarkingworkflowstateforlog'] = 'Définition du statut du flux d\'évaluation : ( id={$a->id}, nom={$a->fullname}, état={$a->state}).';
 $string['settings'] = 'Réglages du devoir';
 $string['showrecentsubmissions'] = 'Afficher les remises récentes';
 $string['status'] = 'Statut';
@@ -331,8 +331,8 @@ $string['submissioncopiedtext'] = 'Vous avez copié votre travail remis précéd
 Vous pouvez consulter l\'état de votre travail remis&nbsp;:
 
  {$a->url}';
-$string['submissiondrafts'] = 'Exiger que les étudiants cliquent sur le bouton Envoyer';
-$string['submissiondrafts_help'] = 'Si ce réglage est activé, les étudiants devront explicitement cliquer sur le bouton Envoyer pour confirmer que leur travail est terminé. Cela permet aux étudiants de conserver dans le système une version brouillon de leur travail. Si le réglage est activé après que des étudiants ont déjà remis leur travaux, ceux-ci seront considérés comme définitifs.';
+$string['submissiondrafts'] = 'Exiger que les étudiants cliquent sur le bouton « Envoyer le devoir »';
+$string['submissiondrafts_help'] = 'Si ce réglage est activé, les étudiants devront explicitement cliquer sur le bouton « Envoyer le devoir » pour confirmer que leur devoir est terminé. Cela permet aux étudiants de conserver dans le système une version brouillon de leur travail avant de l\'envoyer. Si le réglage est activé après que des étudiants ont déjà remis leur travaux, ceux-ci seront considérés comme définitifs.';
 $string['submissioneditable'] = 'L\'étudiant peut modifier ce travail remis';
 $string['submissionempty'] = 'Rien n\'a été remis';
 $string['submissionnotcopiedinvalidstatus'] = 'Le travail remis n\'a pas été copié, car il a été modifié depuis sa réouverture.';
@@ -368,8 +368,8 @@ $string['submissionsummary'] = '{$a->status}. Dernière modification le {$a->tim
 $string['submissionteam'] = 'Groupe';
 $string['submissiontypes'] = 'Types de remise';
 $string['submitaction'] = 'Envoyer';
-$string['submitassignment'] = 'Remettre un devoir';
-$string['submitassignment_help'] = 'Une fois ce travail envoyé, vous ne pourrez plus effectuer de modification.';
+$string['submitassignment'] = 'Envoyer le devoir';
+$string['submitassignment_help'] = 'Une fois ce devoir envoyé, vous ne pourrez plus y effectuer de modification.';
 $string['submitted'] = 'Devoir rendu';
 $string['submittedearly'] = 'Le travail a été remis en avance de {$a}';
 $string['submittedlate'] = 'Le travail a été remis en retard de {$a}';
@@ -396,9 +396,9 @@ $string['upgradenotimplemented'] = 'La mise à jour n\'est pas implémentée dan
 $string['userextensiondate'] = 'Prolongation accordée jusqu\'au&nbsp;: {$a}';
 $string['usergrade'] = 'Note utilisateur';
 $string['userswhoneedtosubmit'] = 'Utilisateurs devant remettre le travail&nbsp;: {$a}';
-$string['validmarkingworkflowstates'] = 'États d\'évaluation valides';
+$string['validmarkingworkflowstates'] = 'Statuts d\'évaluation valides';
 $string['viewbatchmarkingallocation'] = 'Afficher la page d\'attribution des évaluateurs.';
-$string['viewbatchsetmarkingworkflowstate'] = 'Afficher la page de définition des états d\'évaluation.';
+$string['viewbatchsetmarkingworkflowstate'] = 'Afficher la page de définition des statuts d\'évaluation.';
 $string['viewfeedback'] = 'Afficher le feedback';
 $string['viewfeedbackforuser'] = 'Afficher le feedback de l\'utilisateur {$a}';
 $string['viewfull'] = 'Afficher la vue complète';

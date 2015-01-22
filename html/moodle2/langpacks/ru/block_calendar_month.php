@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_month:addinstance'] = 'Добавлять новый блок Календарь';
+$string['calendar_month:addinstance'] = 'Добавлять новый блок «Календарь»';
 $string['calendar_month:myaddinstance'] = 'Добавлять новый блок Календарь в Мой Moodle';
 $string['pluginname'] = 'Календарь';

@@ -228,5 +228,5 @@ $string['url-about'] = 'http://docs.moodle.org/de/Was_ist_Moodle';
 $string['url-features'] = 'http://docs.moodle.org/en/Features';
 $string['url-install'] = 'http://docs.moodle.org/de/Installation';
 $string['url-standards'] = 'http://docs.moodle.org/en/Standards';
-$string['url-userdocs'] = 'ttp://docs.moodle.org/de';
+$string['url-userdocs'] = 'https://docs.moodle.org/de/';
 $string['versionsused'] = 'Verwendete Versionen';

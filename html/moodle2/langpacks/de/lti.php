@@ -42,7 +42,7 @@ $string['allowsetting'] = 'Tool erlauben 8K Einstellungen in Moodle zu speichern
 $string['always'] = 'Immer';
 $string['automatic'] = 'Automatisch, basierend auf Start URL';
 $string['baseurl'] = 'Basis URL';
-$string['basiclti'] = 'LTI';
+$string['basiclti'] = 'Externes Tool';
 $string['basicltiactivities'] = 'LTI Aktivitäten';
 $string['basiclti_base_string'] = 'LTI OAuth Base String';
 $string['basiclti_endpoint'] = 'LTI Start - Endpunkt';
@@ -114,8 +114,8 @@ $string['external_tool_types'] = 'Typen des externen Tools';
 $string['failedtoconnect'] = 'Moodle konnte nicht mit dem System \'{$a}\' kommunizieren';
 $string['filter_basiclti_configlink'] = 'Konfigurieren Sie die bevorzugte Seiten und deren Kennworte';
 $string['filter_basiclti_password'] = 'Kennwort ist erforderlich';
-$string['filterconfig'] = 'LTI Administration';
-$string['filtername'] = 'LTI';
+$string['filterconfig'] = 'Externes Tool Administration';
+$string['filtername'] = 'Externes Tool';
 $string['fixexistingconf'] = 'Verwenden Sie eine bestehende Konfiguration für die fehlerhafte Instanz';
 $string['fixnew'] = 'Neue Konfiguration';
 $string['fixnewconf'] = 'Definieren Sie eine neue Konfiguration für die fehlerhafte Instanz';
@@ -145,7 +145,7 @@ $string['launchoptions'] = 'Startoptionen';
 $string['launch_url'] = 'Start URL';
 $string['launch_url_help'] = 'Die Start-URL bezeichnet die Webadresse des externen Tools. Sie kann zusätzliche Informationen entalten, welche Ressource geanu aufgerufen werden soll. Genauere Informationen gibt der Tool-Anbieter.
 Falls ein spezieller Tool-Typ gewählt wurde, kann u.U. auf die Start URL verzichtet werden.';
-$string['lti'] = 'LTI';
+$string['lti'] = 'Externes Toool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
 $string['lti:addinstance'] = 'Aktivität Externes Tool hinzufügen';
 $string['lti_administration'] = 'LTI Administration';
@@ -211,7 +211,7 @@ Das Kennwort wird für eine Authentifizierung beim externen Tool verwandt. Es wi
 Tools die keine sichere Kommunikation mit Moodle erfordern, benötigen meist auch kein Kennwort.';
 $string['pending'] = 'Wartend';
 $string['pluginadministration'] = 'LTI-Administration';
-$string['pluginname'] = 'LTI';
+$string['pluginname'] = 'Externes Tool';
 $string['preferheight'] = 'Höhe (bevorzugt)';
 $string['preferwidget'] = 'Widget Start (bevorzugt)';
 $string['preferwidth'] = 'Breite (bevorzugt)';

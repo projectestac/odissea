@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['install'] = 'Instalar o(s) pacote(s) linguístico(s) selecionado(s)';
+$string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
 $string['langimport'] = 'Importação de pacote linguístico';
 $string['langimportdisabled'] = 'O recurso de importação de lingua foi desativado. Tem que atualizar o seu pacote linguístico manualmente no sistema de ficheiros. Não se esqueça de limpar as caches após fazê-lo.';

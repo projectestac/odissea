@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attendance:addinstance'] = 'Добавить новый блок «Посещаемость»';
 $string['blockname'] = 'Посещаемость';
 $string['needactivity'] = 'Данный блок работает только с элементом курса «Посещаемость». Пожалуйста, добавьте этот элемент курса.';
 $string['pluginname'] = 'Посещаемость';

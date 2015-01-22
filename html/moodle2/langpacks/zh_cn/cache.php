@@ -33,6 +33,7 @@ $string['cachedef_coursecat'] = '特定用户的课程列表';
 $string['cachedef_coursecontacts'] = '课程联系人列表';
 $string['cachedef_langmenu'] = '可用的语言列表';
 $string['cachedef_locking'] = '锁定中';
+$string['caching'] = '缓存';
 $string['component'] = '组件';
 $string['delete'] = '删除';
 $string['deletelock'] = '解除锁定';

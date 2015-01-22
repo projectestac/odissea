@@ -12,6 +12,7 @@ require_once('lib.php');
 
 $profiles = $DB->get_records('bigdata_profiles');
 foreach ($profiles as $profileid => $profile) {
+
     if (empty($profile->periodicity)) {
         continue;
     }
@@ -19,15 +20,18 @@ foreach ($profiles as $profileid => $profile) {
     $period = explode(' ', $profile->periodicity);
     $value = $period[0];
     $unit = $period[1];
+
+    $lastcronday = mktime(0, 0, 0,
+            date("n", $profile->lastcron), date("j", $profile->lastcron), date("Y", $profile->lastcron));
     switch ($unit) {
         case 'D':
-            $nextcron = strtotime('+'.$value.' day', $profile->lastcron);
+            $nextcron = strtotime('+'.$value.' day', $lastcronday);
             break;
         case 'W':
-            $nextcron = strtotime('+'.$value.' week', $profile->lastcron);
+            $nextcron = strtotime('+'.$value.' week', $lastcronday);
             break;
         case 'M':
-            $nextcron = strtotime('+'.$value.' month', $profile->lastcron);
+            $nextcron = strtotime('+'.$value.' month', $lastcronday);
             break;
         default:
             continue;

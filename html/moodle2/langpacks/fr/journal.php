@@ -47,6 +47,7 @@ $string['journalname'] = 'Nom du journal';
 $string['journalquestion'] = 'Question du journal';
 $string['mailsubject'] = 'Feedback du journal';
 $string['modulename'] = 'Journal';
+$string['modulename_help'] = 'L\'activité journal permet aux enseignants d\'obtenir des étudiants un feedback sur un sujet précis';
 $string['modulenameplural'] = 'Journaux';
 $string['newjournalentries'] = 'Nouvelles entrées';
 $string['noentriesmanagers'] = 'Il n\'y a pas d\'enseignants';

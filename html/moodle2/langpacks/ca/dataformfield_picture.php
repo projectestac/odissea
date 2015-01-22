@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['displaydimensions'] = 'Mostra les dimensions';
 $string['maxdimensions'] = 'Mida màxima';
+$string['pluginname'] = 'Fotografia';

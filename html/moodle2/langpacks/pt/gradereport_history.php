@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allgradeitems'] = 'Todos os itens de avaliação';
 $string['allgraders'] = 'Todos os avaliadores';
-$string['datefrom'] = 'Data a partir de';
+$string['datefrom'] = 'A partir de';
 $string['datetill'] = 'Data até';
 $string['datetime'] = 'Data e hora';
 $string['deselect'] = 'Desseleccionar';

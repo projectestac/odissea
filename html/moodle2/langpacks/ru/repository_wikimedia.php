@@ -30,4 +30,4 @@ $string['keyword'] = 'Искать';
 $string['maxheight'] = 'Максимальная высота изображения (пикселей)';
 $string['maxwidth'] = 'Максимальная ширина изображения (пикселей)';
 $string['pluginname'] = 'Wikimedia';
-$string['wikimedia:view'] = 'Просматривать хранилище Wikimedia';
+$string['wikimedia:view'] = 'Просматривать хранилище файлов «Wikimedia»';

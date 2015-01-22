@@ -34,14 +34,14 @@ $string['editingends'] = 'Период редактирования заканч
 $string['entries'] = 'Записи';
 $string['feedbackupdated'] = 'Отзыв для записей - ({$a}) обновлен';
 $string['gradeingradebook'] = 'Текущая оценка в журнале';
-$string['journal:addentries'] = 'Добавить запись в рабочую тетрадь';
+$string['journal:addentries'] = 'Добавлять записи в рабочую тетрадь';
 $string['journal:addinstance'] = 'Добавить рабочую тетрадь';
 $string['journalmail'] = 'Учителем {$a->teacher} опубликован отзыв для Вашей записи в рабочей тетради «{$a->journal}»
 
 Вы можете увидеть его в своей рабочей тетради:
 {$a->url}';
 $string['journalmailhtml'] = 'Учителем {$a->teacher} опубликован отзыв для Вашей записи в рабочей тетради <i>«{$a->journal}»</i> <br /><br /> Вы можете увидеть его в своей <a href="{$a->url}">рабочей тетради</a>.';
-$string['journal:manageentries'] = 'Управление записями рабочей тетради';
+$string['journal:manageentries'] = 'Управлять записями рабочей тетради';
 $string['journalname'] = 'Название рабочей тетради';
 $string['journalquestion'] = 'Вопрос в рабочей тетради';
 $string['mailsubject'] = 'Отзыв для рабочей тетради';

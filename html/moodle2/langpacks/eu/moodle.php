@@ -1757,6 +1757,7 @@ $string['topicoutline'] = 'Ikastaroaren edukia';
 $string['topicshow'] = 'Gai hau honi erakutsi: {$a}';
 $string['toplevelcategory'] = 'Goragoko kategoria';
 $string['total'] = 'Guztira';
+$string['totopofsection'] = '"{$a}" atalaren goiko aldean';
 $string['trackforums'] = 'Foroen jarraipena';
 $string['trackforumsno'] = 'Ez, ez egin ikusitako mezuen jarraipena';
 $string['trackforumsyes'] = 'Bai, nabarmendu mezu berriak';

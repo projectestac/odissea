@@ -57,3 +57,4 @@ $string['ratings'] = 'Valutazioni';
 $string['ratingtime'] = 'Limita valutazioni agli elementi con la data in questo intervallo:';
 $string['rolewarning'] = 'Ruoli con il privilegio di valutare';
 $string['rolewarning_help'] = 'Per valutare, gli utenti necessitano del privilegio moodle/rating:rate e degli eventuali privilegi specifici di ciascun modulo di attività. Gli utenti che hanno uno dei ruoli elencati dovrebbero essere in grado di valutare. L\'elenco dei ruoli può essere modificato tramite il link Autorizzazioni nel blocco Amministrazione.';
+$string['scaleselectionrequired'] = 'Quando si seleziona un tipo di aggregazione di valutazioni è anche necessario scegliere una scala oppure impostare il punteggio massimo.';

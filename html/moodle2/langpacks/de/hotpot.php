@@ -563,7 +563,6 @@ Die Notation mit den eckigen Klammer hat die folgende Syntax:
 : eine kommagetrennte Liste von Optionen zur Weitergabe an den Mediaplayer. Jede Option kann eine einfacher Ein-/Aus-Schalter oder ein Wertepaar sein.
 : **name = Wert
 : **name = "irgendein Wert mit Leerzeichen"';
-$string['utilitiesindex'] = 'HotPot-Werkzeuge';
 $string['viewreports'] = '{$a} Nutzerberichte';
 $string['views'] = 'Aufrufe';
 $string['weighting'] = 'Gewichtung';

@@ -25,11 +25,21 @@ class agora_script_base{
 		if ($action == 'test') {
 			echo $OUTPUT->notification('Testing...');
 			\core\session\manager::write_close();
-			return $this->_execute($params, false);
+			try {
+				return $this->_execute($params, false);
+			} catch (Exception $e) {
+				echo $e->getMessage();
+				return false;
+			}
 		} else if ($action == 'execute' && $this->can_be_executed($params)) {
 			echo $OUTPUT->notification('Executing!!');
 			\core\session\manager::write_close();
-			return $this->_execute($params);
+			try {
+				return $this->_execute($params);
+			} catch (Exception $e) {
+				echo $e->getMessage();
+				return false;
+			}
 		}
 		return false;
 	}
@@ -45,7 +55,13 @@ class agora_script_base{
 		mtrace($this->title);
 
 		list($params, $unrecognized) = cli_get_params($this->params());
-		$return  = $this->_execute($params);
+		try {
+			$return  = $this->_execute($params);
+		} catch (Exception $e) {
+			echo $e->getMessage();
+			$return = false;
+		}
+
 
 		$difftime = microtime_diff($starttime, microtime());
 		mtrace("\n"."Execution took ".$difftime." seconds");
@@ -54,7 +70,12 @@ class agora_script_base{
 
 	function execute($params) {
 		if ($this->can_be_executed($params)) {
-			return $this->_execute($params);
+			try {
+				return $this->_execute($params);
+			} catch (Exception $e) {
+				echo $e->getMessage();
+				return false;
+			}
 		}
 		return false;
 	}

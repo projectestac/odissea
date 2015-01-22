@@ -122,13 +122,6 @@ echo $OUTPUT->doctype() ?>
                         <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
                     </ul>
                 <?php } ?>
-                <?php if($hascustommenu) { ?>
-                    <a class="btn btn-navbar visible-phone" data-toggle="collapse" data-target="#custom-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                <?php } ?>
             </div>
         </div>
     </nav>
@@ -140,9 +133,14 @@ echo $OUTPUT->doctype() ?>
     </div>
 </div>
 
-<div id="main_navigation" class="clearfix">
+<div id="main_navigation" class="clearfix navbar">
     <div class="container-fluid">
         <?php if($hascustommenu) { ?>
+            <a class="btn btn-navbar visible-phone custom_menu_toggle" data-toggle="collapse" data-target="#custom-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
             <div id="custom_menu" class="pull-left">
                 <div class="nav-collapse collapse" id="custom-collapse">
                     <?php echo $custommenu; ?>
@@ -153,8 +151,8 @@ echo $OUTPUT->doctype() ?>
             <div id="showhideblocks" class="hidden-phone pull-right collapsed" title="<?php echo get_string('showhideblocks','theme_xtec2');?>" onclick="showhideblocks();"></div>
         <?php } ?>
         <?php if($hasmainmenu) { ?>
-            <div id="main_menu" class="pull-right hidden-phone">
-                <div class="nav-collapse collapse">
+            <div id="main_menu" class="pull-right">
+                <div class="nav-collapse collapse hidden-phone">
                     <?php echo $mainmenu; ?>
                 </div>
             </div>
@@ -208,8 +206,8 @@ echo $OUTPUT->doctype() ?>
         </div>
     </div>
     <div class="footerlogos clearfix container-fluid">
-        <a href="http://agora.xtec.cat" target="_blank"><img src="<?php echo $OUTPUT->pix_url('logo_main', 'theme'); ?>" alt="Àgora" title="" /></a>
-        <a href="http://moodle.org" target="_blank"><img src="<?php echo $OUTPUT->pix_url('logo_moodle', 'theme'); ?>" alt="Moodle" title="Moodle" /></a>
+        <a href="http://agora.xtec.cat" target="_blank" class="agora_footer"><img src="<?php echo $OUTPUT->pix_url('logo_main', 'theme'); ?>" alt="Àgora" title="" /></a>
+        <a href="http://moodle.org" target="_blank" class="moodle_footer"><img src="<?php echo $OUTPUT->pix_url('logo_moodle', 'theme'); ?>" alt="Moodle" title="Moodle" /></a>
         <a href="http://www20.gencat.cat/portal/site/ensenyament" class="brand ensenyament visible-phone"><img src="<?php echo $OUTPUT->pix_url('departament', 'theme'); ?>" alt="Departament d'Ensenyament" title="" /></a>
         <a href="http://www.xtec.cat" class="brand xtec visible-phone"><img src="<?php echo $OUTPUT->pix_url('xtec', 'theme'); ?>" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>
     </div>

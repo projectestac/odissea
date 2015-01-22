@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'ユーザにこのブロックのドックを許可する';
 $string['pluginname'] = '管理';
 $string['settings:addinstance'] = '新しい管理ブロックを追加する';
-$string['settings:myaddinstance'] = 'マイホームに新しい管理ブロックを追加する';
+$string['settings:myaddinstance'] = '新しい管理ブロックをマイホームに追加する';

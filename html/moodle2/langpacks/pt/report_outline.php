@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['outline:view'] = 'Ver relatório de atividades';
-$string['page-report-outline-index'] = 'Relatório da disciplina';
-$string['page-report-outline-user'] = 'Relatório do utilizador na disciplina';
-$string['page-report-outline-x'] = 'Ver qualquer relatório';
+$string['page-report-outline-index'] = 'Relatório geral da disciplina';
+$string['page-report-outline-user'] = 'Relatório geral da disciplina do utilizador';
+$string['page-report-outline-x'] = 'Qualquer relatório geral';
 $string['pluginname'] = 'Relatório de atividades';

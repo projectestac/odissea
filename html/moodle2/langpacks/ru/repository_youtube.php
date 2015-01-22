@@ -33,4 +33,4 @@ $string['sortpublished'] = 'Дате публикации';
 $string['sortrating'] = 'Рейтинг';
 $string['sortrelevance'] = 'Релевантности';
 $string['sortviewcount'] = 'Количеству просмотров';
-$string['youtube:view'] = 'Использовать Youtube в окне выбора файла';
+$string['youtube:view'] = 'Просматривать хранилище файлов «Видео YouTube»';

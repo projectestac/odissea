@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actionparams'] = 'Paràmetres d\'acció';
+$string['actionparams_help'] = 'Paràmetres d\'acció';
 $string['edit'] = 'Edita';
 $string['more'] = 'Més';
 $string['themeicon'] = 'Icona del tema';

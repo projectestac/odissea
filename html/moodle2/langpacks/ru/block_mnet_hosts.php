@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_authmnetneeded'] = 'Плагин аутентификации MNet должен быть включен,чтобы видеть список сетевых серверов MNet';
-$string['error_localusersonly'] = 'Отдаленные пользователи не могут переходить с этого хоста на другие серверы сети MNet';
-$string['error_roamcapabilityneeded'] = 'Пользователям необходимо иметь право «Подключаться к удаленному приложению через MNet», чтобы видеть список сетевых серверов MNet';
-$string['mnet_hosts:addinstance'] = 'Добавлять новый блок Сетевые серверы';
-$string['mnet_hosts:myaddinstance'] = 'Добавлять новый блок Сетевые серверы в Мой Moodle';
-$string['pluginname'] = 'Сетевые серверы';
-$string['server'] = 'Сервер';
+$string['error_authmnetneeded'] = 'Чтобы видеть список серверов сети MNet, необходимо, чтобы был включен плагин аутентификации «Аутентификация для пользователей сети MNet»';
+$string['error_localusersonly'] = 'Пользователи других сайтов не могут переходить с этого сервера на другие серверы сети MNet';
+$string['error_roamcapabilityneeded'] = 'Пользователям необходимо иметь право «Подключаться к внешнему приложению через MNet» (moodle/site:mnetlogintoremote), чтобы видеть список серверов сети MNet';
+$string['mnet_hosts:addinstance'] = 'Добавлять новый блок «Сайты сети MNet»';
+$string['mnet_hosts:myaddinstance'] = 'Добавлять новый блок «Сайты сети MNet» на домашнюю страницу';
+$string['pluginname'] = 'Сайты сети MNet';
+$string['server'] = 'Сайт';

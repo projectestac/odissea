@@ -101,7 +101,6 @@ $string['filesize'] = 'الحجم';
 $string['fileuploaded'] = 'الملف الذي تم رفعه';
 $string['fileurl'] = 'عنوان URL للملف';
 $string['forcecsssync'] = 'فرض مزامنة CSS الآن';
-$string['forcelangsync'] = 'فرض مزامنة اللغة الآن';
 $string['forceofflinemode'] = 'فرض وضع قطع الاتصال';
 $string['fullname'] = 'الاسم كاملا';
 $string['general'] = 'العام';
@@ -117,7 +116,6 @@ $string['invalidaccount'] = 'يرجى مراجعة تفاصيل تسجيل ال�
 $string['invalidmoodleversion'] = 'نسخة موودل غير صالحة. الحد الأدنى للنسخة المطلوبة هو:';
 $string['invalidscheme'] = 'يرجى تقديم عنوان موقع صالح.';
 $string['invalidsite'] = 'رابط عنوان الموقع غير صالح.';
-$string['langsynced'] = 'تم مزامنة اللغة';
 $string['language'] = 'اللغة';
 $string['license'] = 'الترخيص';
 $string['loadcordovaemulator'] = 'تحميل محاكي كوردوبا';

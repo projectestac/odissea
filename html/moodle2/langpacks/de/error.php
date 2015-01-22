@@ -40,7 +40,7 @@ $string['cannotaddcoursemodule'] = 'Das neue Kursmodul konnte nicht hinzugefügt
 $string['cannotaddcoursemoduletosection'] = 'Das neue Kursmodul konnte in dem Abschnitt nicht eingefügt werden.';
 $string['cannotaddmodule'] = 'Modul {$a} konnte nicht zur Modulliste hinzugefügt werden!';
 $string['cannotaddnewmodule'] = 'Das neue Modul {$a} konnte nicht hinzugefügt werden';
-$string['cannotaddrss'] = 'Sie dürfen keine RSS-Feeds hinzufügen';
+$string['cannotaddrss'] = 'Sie dürfen keine RSS Feeds hinzufügen';
 $string['cannotaddthisblocktype'] = 'Sie dürfen keinen Block \'{$a}\' zur Seite hinzufügen';
 $string['cannotassignrole'] = 'Die Rolle kann im Kurs nicht zugewiesen werden';
 $string['cannotassignrolehere'] = 'Sie dürfen die Rolle (id = {$a->roleid}) in diesem Kontext ({$a->context}) nicht zuweisen.';
@@ -534,7 +534,7 @@ $string['unsupportedstate'] = 'Vollständigkeitsstatus wird nicht unterstützt';
 $string['unsupportedwebserver'] = 'Die Webserver-Software ({$a}) wird nicht unterstützt';
 $string['upgraderequires19'] = 'Fehler! Es wurde eine neue Moodle-Version auf dem Server installiert. Leider wird das direkte Upgrade auf diese Version nicht unterstützt!<br/>Führen Sie zuerst eine Upgrade auf die letzte Version von 1.9.x durch. Sie haben auch die Möglichkeit, auf die zuvor installierte Version zurückzugreifen wenn Sie die ursprünglichen Dateien wieder reinstallieren.';
 $string['upgraderunning'] = 'Diese Website wird gerade aktualisiert. Bitte versuchen Sie es später nochmal.';
-$string['urlnotdefinerss'] = 'URL für RSS-Feed nicht definiert';
+$string['urlnotdefinerss'] = 'URL für RSS Feed nicht definiert';
 $string['useradmineditadmin'] = 'Nur Administratoren können andere Administratorenaccounts bearbeiten.';
 $string['useradminodelete'] = 'Administratoraccounts können nicht gelöscht werden';
 $string['userautherror'] = 'Unbekanntes Plugin zur Authentifizierung';

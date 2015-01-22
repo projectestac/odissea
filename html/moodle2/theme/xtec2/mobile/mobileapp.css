@@ -1,6 +1,6 @@
 body {
   color: [[setting:color3]];
-  background: [[setting:color2]];
+  background-color: [[setting:color2]];
 }
 a {
   color: [[setting:color5]];
@@ -9,19 +9,32 @@ h1 {
   color: [[setting:color4]];
 }
 h2 {
-  color: [[setting:color3]];
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);	/*default*/
-  background-color: [[setting:color2]];
-}
-.nav .nav-item a {
   color: [[setting:color5]];
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);	/*default*/
+  /*background-color: [[setting:color2]];*/
 }
+
+.nav .nav-item a{
+  color:  [[setting:color5]];
+}
+
+.user-menu .nav-item > a.collapse,
+.user-menu .submenu .nav-item .collapse,
+.user-menu .nav-item > a.collapse .plugin-name  {
+  background-color: [[setting:color2]];
+  color:  [[setting:color3]];
+  box-shadow: none;
+}
+
 #manage-accounts .account-details {
   color: #666666;				/*default*/
 }
 .header-main {
   color: [[setting:color3]];
   background:  [[setting:color2]];
+}
+.header-main #page-title {
+  color: [[setting:color3]];
 }
 #page-title {
   text-shadow: none;
@@ -100,4 +113,7 @@ h2 {
 #app-dialog .modalHeader{
   color:  [[setting:color3]];
 	background-color:  [[setting:color2]];
+}
+#app-dialog .modalContent {
+  color: black;
 }

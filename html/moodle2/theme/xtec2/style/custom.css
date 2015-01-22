@@ -237,6 +237,10 @@ h3{
 	padding: 0;
 }
 
+.navbar .btn-navbar {
+    margin-bottom: 6px;
+}
+
 #page-navbar{
 	margin: 0 0 8px 0;
 }
@@ -245,6 +249,7 @@ h3{
 	background-color: [[setting:color2]]; /* Color*/
 	color: [[setting:color3]];
 	height: auto;
+    margin: 0;
 }
 
 #main_navigation .nav{
@@ -271,6 +276,10 @@ h3{
 
 #main_navigation .nav>li:last-child{
 	border-right: 0;
+}
+
+#main_navigation.navbar .nav>li>a {
+    text-shadow: none;
 }
 
 .dropdown-menu{
@@ -416,7 +425,7 @@ h3{
 }
 
 #page{
-    padding: 8px 20px;
+    padding: 8px 30px;
 }
 
 .logininfo img{
@@ -631,6 +640,10 @@ body.path-grade-report-grader #user-grades {
     margin-top: 4px;
 }
 
+.path-grade-report-grader .gradeparent .left_scroller {
+    margin-top: 20px;
+}
+
 #page-footer .performanceinfo{
 	margin: 0;
 }
@@ -685,11 +698,12 @@ body.path-grade-report-grader #user-grades {
     #main_navigation {
 		margin: 0 -20px;
     }
-	.nav-collapse, .nav-collapse.collapse {
+	.navbar .nav-collapse.collapse {
 		height: 0;
 		overflow: hidden;
 	}
-	.nav-collapse.active, .nav-collapse.active{
+	.navbar .nav-collapse, .navbar .nav-collapse.active, .navbar .nav-collapse.active{
+        border: 0;
 		height: auto;
 		overflow: visible;
 	}
@@ -743,6 +757,10 @@ body.path-grade-report-grader #user-grades {
 	#page-footer-top .social-icons{
 		text-align: left;
 	}
+
+    #main_navigation.navbar .nav>li>a {
+        padding: 0;
+    }
 }
 
 /* Custom CSS Settings

@@ -533,7 +533,6 @@ Reproductor** (opcional)
 : se pasa al reproductor una lista de opciones, separada por comas. Cada opción debe ser un conector "on/off", o u par de valores
 : **nombre=valor
 : **nombre="algun valor con espacios"';
-$string['utilitiesindex'] = 'Índice de utilidades HotPot';
 $string['viewreports'] = 'Ver informes de {$a} usuarios';
 $string['views'] = 'Vistas';
 $string['weighting'] = 'Ponderación';

@@ -91,7 +91,7 @@ $string['completionentries'] = 'Teilnehmer/innen müssen Einträge anlegen:';
 $string['completionentriesgroup'] = 'Einträge notwendig';
 $string['concept'] = 'Begriff';
 $string['concepts'] = 'Begriffe';
-$string['configenablerssfeeds'] = 'Wenn diese Option aktiviert ist, sind RSS-Feeds global für alle Glossare eingeschaltet. Sie können jetzt für jedes Glossar einzeln einstellen, ob die RSS-Feeds für das jeweilige Glossar ein- oder ausgeschaltet sein sollen.';
+$string['configenablerssfeeds'] = 'Wenn diese Option aktiviert ist, sind RSS Feeds global für alle Glossare eingeschaltet. Sie können jetzt für jedes Glossar einzeln einstellen, ob die RSS-Feeds für das jeweilige Glossar ein- oder ausgeschaltet sein sollen.';
 $string['current'] = 'Aktuelle Sortierung {$a}';
 $string['currentglossary'] = 'Aktuelles Glossar';
 $string['date'] = 'Datum';
@@ -264,12 +264,9 @@ $string['resetglossaries'] = 'Einträge löschen von';
 $string['resetglossariesall'] = 'Einträge aus allen Glossaren löschen';
 $string['rssarticles'] = 'Anzahl neuer RSS-Artikel ';
 $string['rssarticles_help'] = 'Diese Option legt fest, wie viele neue Glossarbegriffe in den RSS-Feed übernommen werden. Eine Zahl zwischen 5 und 20 sollte angemessen sein. Die Zahl sollte höher sein, wenn das Glossar häufig bearbeitet wird.';
-$string['rsssubscriberss'] = 'RSS-Feed-Anzeige für \'{$a}\' Begriffe';
-$string['rsstype'] = 'RSS-Feed für dieses Glossar';
-$string['rsstype_help'] = 'Diese Option ermöglicht es, RSS-Feeds für dieses Glossar zu aktivieren, wobei im Feed die Begriffe mit Autor/in oder ohne Autor/in einbezogen werden können.
-
-Vorausgesetzt wird, dass RSS-Feeds für die Website aktiviert sind. 
-';
+$string['rsssubscriberss'] = 'RSS Feed-Anzeige für \'{$a}\' Begriffe';
+$string['rsstype'] = 'RSS Feed für dieses Glossar';
+$string['rsstype_help'] = 'Diese Option ermöglicht es, RSS Feeds für dieses Glossar zu aktivieren, wobei im Feed die Begriffe mit oder ohne Autor/in einbezogen werden können.';
 $string['searchindefinition'] = 'Volltext-Suche';
 $string['secondaryglossary'] = 'Glossar';
 $string['showall'] = 'Link \'Alle\' anzeigen';

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = '新しい最新ニュースブロックを追加する';
-$string['news_items:myaddinstance'] = 'マイホームに新しい最新ニュースブロックを追加する';
+$string['news_items:myaddinstance'] = '新しい最新ニュースブロックをマイホームに追加する';
 $string['pluginname'] = '最新ニュース';

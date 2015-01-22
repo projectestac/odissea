@@ -31,4 +31,4 @@ $string['configplugin'] = 'Настройка Microsoft OneDrive';
 $string['oauthinfo'] = '<p> Для использования этого плагина необходимо зарегистрировать свой сайт <a href="https://account.live.com/developers/applications"> в Microsoft</a>.<p> В процессе регистрации Вам нужно будет ввести следующий URL-адрес в качестве «Домена перенаправления»:</p><p>{$a->callbackurl}</p> После регистрации Вам будет предоставлен идентификатор (ID) клиента и секретный ключ, который может быть введен здесь.</p>';
 $string['pluginname'] = 'Microsoft OneDrive';
 $string['secret'] = 'Секретный ключ';
-$string['skydrive:view'] = 'Просматривать Microsoft OneDrive';
+$string['skydrive:view'] = 'Просматривать хранилище файлов «Microsoft OneDrive»';

@@ -39,7 +39,7 @@ $string['commercialuse'] = 'Я хочу иметь право использов
 $string['configplugin'] = 'Конфигурация хранилища Публичный Flickr';
 $string['creativecommonscommercial'] = 'Только Creative commons для коммерческого использования';
 $string['emailaddress'] = 'Адрес электронной почты';
-$string['flickr_public:view'] = 'Использовать публичное хранилище Flickr в окне выбора файла';
+$string['flickr_public:view'] = 'Посматривать хранилище файлов «Публичный Flickr»';
 $string['fulltext'] = 'Полный текст';
 $string['information'] = '<div>Получить <a href="http://www.flickr.com/services/api/keys/">ключ API Flickr</a> для вашего сайта Moodle. </div>';
 $string['invalidemail'] = 'Неправильная учетная запись электронной почты Flickr';

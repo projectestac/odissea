@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addentry'] = '新しいエントリを追加する';
-$string['askaddentry'] = '学生が用語集にエントリを追加できる場合、用語集へのリンクが次のテキストとともに表示されます';
+$string['askaddentry'] = '学生が用語集にエントリを追加できる場合、用語集へのリンクが次のテキストと共に表示されます';
 $string['askinvisible'] = 'オリジナル用語集を学生から隠したい場合、リンクが表示される代わりに次のテキストが表示されます';
-$string['askviewglossary'] = '学生が用語集の閲覧のみを許可されている場合、用語集へのリンクが次のテキストとともに表示されます';
+$string['askviewglossary'] = '学生が用語集の閲覧のみを許可されている場合、用語集へのリンクが次のテキストと共に表示されます';
 $string['glossary_random:addinstance'] = '新しいランダム用語集エントリブロックを追加する';
-$string['glossary_random:myaddinstance'] = 'マイホームに新しいランダム用語集エントリブロックを追加する';
+$string['glossary_random:myaddinstance'] = '新しいランダム用語集エントリブロックをマイホームに追加する';
 $string['intro'] = '少なくとも1つ以上のエントリが登録されている用語集がコースに追加される必要があります。';
 $string['invisible'] = '(続く)';
 $string['lastmodified'] = '最新の更新';

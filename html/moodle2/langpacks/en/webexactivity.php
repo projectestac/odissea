@@ -45,6 +45,10 @@ $string['deletetime'] = 'Deletion Time';
 $string['deletionin'] = '<div>{$a->time} until deletion.</div>';
 $string['deletionsoon'] = '<div>Will be deleted soon.</div>';
 $string['description'] = 'Description';
+$string['directlinks'] = 'Direct links';
+$string['directlinkstext'] = '<p>These links provide direct access to the recordings on the Moodle server. Access to them doesn\'t require a logging in, and are not logged.</p><br />
+Streaming: <a target="_blank" href="{$a->streamurl}" alt="Streaming link">{$a->streamurl}</a><br />
+Download: <a target="_blank" href="{$a->fileurl}" alt="Streaming link">{$a->fileurl}</a><br />';
 $string['duration'] = 'Expected duration';
 $string['duration_help'] = 'The anticipated duration of the meeting. It is just for informational purposes, and does not effect how long the meeting can run for.';
 $string['error_'] = '';

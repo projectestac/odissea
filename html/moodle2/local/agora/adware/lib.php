@@ -11,18 +11,18 @@ function get_adware() {
 
 	$data = array();
 	foreach ($adware->courses as $course) {
-		$data[] = array('Curs', '<a href="'.$CFG->wwwroot.'/course/edit.php?id='.$course->id.'" target="_blank">'.$course->fullname.'</a>', '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$course->id.'" target="_blank">Curs '.$course->id.'</a>');
+		$data[] = array('<a href="'.$CFG->wwwroot.'/course/edit.php?id='.$course->id.'" target="_blank">Curs: '.$course->fullname.'</a>', '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$course->id.'" target="_blank">Curs '.$course->id.'</a>');
 	}
 
 	foreach ($adware->course_sections as $section) {
-		$data[] = array('Secció', '<a href="'.$CFG->wwwroot.'/course/editsection.php?id='.$section->id.'" target="_blank">Secció '.$section->section.'</a>', '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$section->course.'" target="_blank">Curs '.$section->course.'</a>');
+		$data[] = array('<a href="'.$CFG->wwwroot.'/course/editsection.php?id='.$section->id.'" target="_blank">Secció: '.$section->section.'</a>', '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$section->course.'" target="_blank">Curs '.$section->course.'</a>');
 	}
 
 	$modules = $DB->get_records_menu('modules', array(), '', 'id,name');
 	foreach ($modules as $modulename) {
 		if (isset($adware->$modulename)) {
 			foreach ($adware->$modulename as $mod) {
-				$data[] = array(get_string('modulename', $modulename), '<a href="'.$CFG->wwwroot.'/course/modedit.php?update='.$mod->cmid.'" target="_blank">'.$mod->name.'</a>', '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$mod->course.'" target="_blank">Curs '.$mod->course.'</a>');
+				$data[] = array('<a href="'.$CFG->wwwroot.'/course/modedit.php?update='.$mod->cmid.'" target="_blank">'.get_string('modulename', $modulename).': '.$mod->name.'</a>', '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$mod->course.'" target="_blank">Curs '.$mod->course.'</a>');
 			}
 		}
 	}
@@ -32,7 +32,9 @@ function get_adware() {
 function detect_adware($notused = false) {
 	global $DB;
 
-	$searches = array('%script%cdncache%akamaihd%', '%rackcdn.com/ytplayall%');
+	$searches = array('%script%cdncache%akamaihd%',
+					  '%rackcdn.com/ytplayall%',
+					  '%.cloudfront.net/items/loaders%');
 	$modules = $DB->get_records_menu('modules', array(), '', 'id,name');
 
 	$adware = new StdClass();

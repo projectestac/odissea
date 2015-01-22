@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Автосвязывание Базы данных';
+$string['filtername'] = 'Автоматическое создание ссылок на записи модуля «База данных»';

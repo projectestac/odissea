@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_radiuschangepasswordurl_key'] = 'Адрес страницы смены пароля';
-$string['auth_radiusdescription'] = 'Этот метод использует <a href="http://en.wikipedia.org/wiki/RADIUS">RADIUS</a> сервер для проверки имени пользователя и пароля.';
+$string['auth_radiusdescription'] = 'Этот метод использует сервер <a href="http://en.wikipedia.org/wiki/RADIUS">RADIUS</a> для проверки имени пользователя и пароля.';
 $string['auth_radiushost'] = 'Адрес сервера RADIUS';
-$string['auth_radiushost_key'] = 'Хост';
+$string['auth_radiushost_key'] = 'Сервер';
 $string['auth_radiusnasport'] = 'Порт, используемый для подключения';
 $string['auth_radiusnasport_key'] = 'Порт';
-$string['auth_radiussecret'] = 'Общий пароль';
-$string['auth_radiussecret_key'] = 'Пароль';
+$string['auth_radiussecret'] = 'Общий секретный ключ';
+$string['auth_radiussecret_key'] = 'Секретный ключ';
 $string['auth_radiustype'] = 'Выберите схему аутентификации для использования с сервером RADIUS.';
 $string['auth_radiustypechapmd5'] = 'CHAP MD5';
 $string['auth_radiustype_key'] = 'Аутентификация';

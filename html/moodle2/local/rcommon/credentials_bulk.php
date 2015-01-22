@@ -36,14 +36,15 @@ if($action != 'assign') {
 	print_error('Unknown action '.$action);
 }
 
+$id = required_param('id', PARAM_INT);
+$book = $DB->get_record('rcommon_books', array('id' => $id));
+
 admin_externalpage_setup('marsupialcontent'.$book->publisherid);
 echo $OUTPUT->header();
 
 //key synchronization
 echo $OUTPUT->heading(get_string('keymanager', 'local_rcommon'));
 $referer = $CFG->wwwroot.'/local/rcommon/books.php?id='.$book->id;
-$id = required_param('id', PARAM_INT);
-$book = $DB->get_record('rcommon_books', array('id' => $id));
 
 // print content
 echo $OUTPUT->heading($book->name . ' (' . $book->isbn . ')',3);

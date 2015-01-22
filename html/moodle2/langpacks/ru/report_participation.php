@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['page-report-participation-index'] = 'Отчет об участии в курсе';
 $string['page-report-participation-x'] = 'Любой отчет об участии';
-$string['participation:view'] = 'Просматривать отчет об участии в курсе';
+$string['participation:view'] = 'Просматривать отчет «Участие в курсе»';
 $string['pluginname'] = 'Участие в курсе';

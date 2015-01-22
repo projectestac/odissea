@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Tem {$a}s que requerem atenção';
-$string['alwaysshowall'] = 'Mostrar sempre todas';
+$string['alwaysshowall'] = 'Mostrar sempre todos';
 $string['collapseall'] = 'Contrair Todas as listas de disciplinas';
 $string['configotherexpanded'] = 'Se ativar esta opção, as outras disciplinas serão expandidas por predefinição, exceto se o utilizador alterar esta configuração nas suas preferências.';
 $string['configpreservestates'] = 'Se ativar esta opção, o estado contraído/expandido definido pelo utilizador será guardado e utilizado em cada carregamento.';
@@ -60,6 +60,6 @@ $string['showchildrendesc'] = 'Listar subdisciplinas abaixo do título da discip
 $string['showwelcomearea'] = 'Mostrar área de boas-vindas';
 $string['showwelcomeareadesc'] = 'Mostrar a área de boas-vindas acima da lista de disciplinas?';
 $string['view_edit_profile'] = '(Ver e editar o seu perfil.)';
-$string['welcome'] = 'Bem-vindo {$a}';
+$string['welcome'] = 'Bem-vindo(a), {$a}!';
 $string['youhavemessages'] = 'Tem {$a} por ler';
 $string['youhavenomessages'] = 'Não tem mensagens por ler »';

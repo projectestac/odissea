@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['moodleemoticon:desc'] = 'Txertatu aurpegiera';
 $string['pluginname'] = 'Txertatu aurpegiera';
 $string['requireemoticon'] = 'Aurpegiera-iragazkia behar du';
+$string['requireemoticon_desc'] = 'Gaituz gero, emotikoien botoia bakarrik ikusgai izango da editorearen testuinguruan emotikoien iragazkia gaituta dagoenean.';

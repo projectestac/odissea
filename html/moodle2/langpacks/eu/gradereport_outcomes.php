@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addoutcome'] = 'Helburua gehitu';
+$string['addoutcome'] = 'Gehitu helburua';
 $string['courseoutcomes'] = 'Ikastaroaren helburuak';
 $string['coursespecoutcome'] = 'Ikastaroaren helburuak';
 $string['outcomes:view'] = 'Helburuen txostena ikusi';

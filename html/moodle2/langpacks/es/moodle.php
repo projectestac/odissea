@@ -34,7 +34,7 @@ $string['activeusers'] = 'Usuarios activos';
 $string['activities'] = 'Actividades';
 $string['activities_help'] = 'Las actividades (tales como foros, cuestionarios y wikis) posibilitan agregar contenidos interactivos al curso';
 $string['activity'] = 'Actividad';
-$string['activityclipboard'] = 'Moviendo la actividad: <b>{$a}</b>';
+$string['activityclipboard'] = 'Moviendo la actividad: {$a}';
 $string['activityiscurrentlyhidden'] = 'Lo sentimos, esta actividad está oculta';
 $string['activitymodule'] = 'Módulo';
 $string['activitymodules'] = 'Módulos de actividad';
@@ -361,26 +361,23 @@ $string['coursehelpforce'] = 'Forzar el modo de grupo en el curso para todas las
 $string['coursehelpformat'] = 'La portada del curso se mostrará en este formato.';
 $string['coursehelphiddensections'] = 'Cómo se mostrarán a los estudiantes las secciones ocultas del curso.';
 $string['coursehelpmaximumupload'] = 'Definir el tamaño máximo de los archivos que los estudiantes pueden subir a este curso, limitado por el ajuste general del sitio.';
-$string['coursehelpnewsitemsnumber'] = 'Número de ítems recientes que aparecen en la portada del curso, en la casilla de noticias inferior derecha </br>(0 significa que la casilla de noticias no aparecerá).';
-$string['coursehelpnumberweeks'] = 'Número de semanas/temas que se muestran en la portada del curso.';
+$string['coursehelpnewsitemsnumber'] = 'Número de ítems recientes de foro de Novedades que aparecen en el bloque de Últimas noticias en la página del curso.  Si se indica cero, el bloque no aparecerá.';
+$string['coursehelpnumberweeks'] = 'Número de secciones en el curso (aplicable solo a ciertos formatos de curso).';
 $string['coursehelpshowgrades'] = 'Activa la presentación del libro de calificaciones. No impide que las calificaciones se muestren dentro de las actividades individuales.';
 $string['coursehidden'] = 'Este curso no es accesible de momento a los estudiantes';
 $string['courseinfo'] = 'Información del curso';
 $string['courselegacyfiles'] = 'Archivos de curso heredados';
-$string['courselegacyfiles_help'] = 'El área de archivos del curso proporciona cierta compatibilidad hacia atrás con las versiones de Moodle 1.9 y anteriores. Todos los archivos de este área son siempre accesible a todos los participantes en el curso (tanto si enlaza a ellos como si no) y no hay manera de saber dónde se pueden estar usando en Moodle cualquiera de estos archivos.
+$string['courselegacyfiles_help'] = 'El área de archivos del curso proporciona cierta compatibilidad hacia atrás con las versiones de Moodle 1.9 y anteriores. Todos los archivos de este área son siempre accesibles a todos los participantes en el curso (tanto si enlaza a ellos como si no) y no hay manera de saber dónde se pueden estar usando en Moodle cualquiera de estos archivos.
 
-Si utiliza este área para almacenar archivos de curso, puede exponerse a una serie de riesgos de privacidad y de seguridad, así como a la pérdida de archivos en las copias de seguridad, en las importaciones de cursos o cada vez que el contenido del curso sea compartido o reutilizado. Por ello se recomienda que no utilice esta área a menos que realmente sepa lo que está haciendo.
-
-
-El siguiente enlace proporciona más información acerca de todo esto y le mostrará maneras mejores de gestionar archivos en Moodle 2.';
+Si utiliza este área para almacenar archivos de curso, puede exponerse a una serie de riesgos de privacidad y de seguridad, así como a la pérdida de archivos en las copias de seguridad, en las importaciones de cursos o cada vez que el contenido del curso sea compartido o reutilizado. Por ello se recomienda que no utilice esta área a menos que realmente sepa lo que está haciendo.';
 $string['courselegacyfilesofcourse'] = 'Archivos del curso heredados: {$a}';
 $string['coursemessage'] = 'Mensaje a usuarios de curso';
 $string['coursenotaccessible'] = 'Este curso no permite acceso público';
 $string['courseoverview'] = 'Vista general del curso';
 $string['courseoverviewfiles'] = 'Archivos del resumen del curso';
 $string['courseoverviewfilesext'] = 'Extensiones de los archivos de resumen del curso';
-$string['courseoverviewfiles_help'] = 'Los archivos del resumen del curso (por lo general imágenes) se muestran en la lista de cursos, junto con el resumen';
-$string['courseoverviewfileslimit'] = 'Resumen de límites de archivos';
+$string['courseoverviewfiles_help'] = 'Los archivos del resumen del curso (por lo general imágenes) se muestran en la lista de cursos, junto con el resumen.';
+$string['courseoverviewfileslimit'] = 'Límite de archivos en el resumen del curso';
 $string['courseoverviewgraph'] = 'Gráfico global del curso';
 $string['courseprofiles'] = 'Perfiles de curso';
 $string['coursereasonforrejecting'] = 'Razones para rechazar esta solicitud';
@@ -399,7 +396,7 @@ $string['courserequestdetails'] = 'Detalles del curso que solicita';
 $string['courserequestfailed'] = 'Por alguna razón desconocida, su solicitud de curso no ha podido guardarse';
 $string['courserequestintro'] = 'Utilice este formulario para solcitar la creación de un curso.<br />Suministre toda la información posible para facilitar<br />a los administradores la comprensión de las razones por las que solicita el curso.';
 $string['courserequestreason'] = 'Razones para solicitar el curso';
-$string['courserequestsuccess'] = 'La solicitud de curso se ha guardado con éxito. Dentro de unos días se le notificará el resultado por correo electrónico';
+$string['courserequestsuccess'] = 'Su solicitud de curso se ha guardado con éxito. Dentro de unos días se le notificará el resultado por correo electrónico.';
 $string['courserequestsupport'] = 'Información de apoyo para ayudar al administrador a evaluar esta solicitud';
 $string['courserestore'] = 'Restaurar curso';
 $string['courses'] = 'Cursos';
@@ -1688,7 +1685,7 @@ $string['showcategory'] = 'Mostrar {$a}';
 $string['showcomments'] = 'Mostrar/ocultar comentario';
 $string['showcommentsnonjs'] = 'Mostrar comentarios';
 $string['showdescription'] = 'Muestra la descripción en la página del curso';
-$string['showdescription_help'] = 'Si se activada, la introducción/descripción anterior se mostrará en la página del curso justo debajo del enlace a la actividad/recurso.';
+$string['showdescription_help'] = 'Si se activa, la descripción anterior se mostrará en la página del curso justo debajo del enlace a la actividad o recurso.';
 $string['showgrades'] = 'Mostrar libro de calificaciones a los estudiantes';
 $string['showgrades_help'] = '<p>Muchas de las actividades permiten otorgar calificaciones.</p>
 

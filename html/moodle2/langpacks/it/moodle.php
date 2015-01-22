@@ -1630,7 +1630,7 @@ $string['shortname'] = 'Nome abbreviato';
 $string['shortnamecollisionwarning'] = '[*] = Questo Titolo abbreviato è già utilizzato da un corso e sarà necessario modificarlo all\'approvazione';
 $string['shortnamecourse'] = 'Titolo abbreviato';
 $string['shortnamecourse_help'] = '<p>Molte istituzioni assegnano ai corsi delle sigle come
-BP102 o COMMS. E\' posisbile usare queste sigle come Titolo abbreviato, oppure utilizzare un titolo a piacere. Il Titolo abbreviato sarà usato al posto del Titolo del corso in tutte quelle situazioni dove è pratico usare stringhe di caratteri più brevi, come ad esempio nelle briciole di pane o nelle intestazioni delle email.</p>';
+BP102 o COMMS. E\' possibile usare queste sigle come Titolo abbreviato, oppure utilizzare un titolo a piacere. Il Titolo abbreviato sarà usato al posto del Titolo del corso in tutte quelle situazioni dove è pratico usare stringhe di caratteri più brevi, come ad esempio nelle briciole di pane o nelle intestazioni delle email.</p>';
 $string['shortnametaken'] = 'Titolo abbreviato già in uso in un altro corso ({$a})';
 $string['shortnameuser'] = 'Nome utente abbreviato';
 $string['shortsitename'] = 'Nome abbreviato del sito (es. singola parola)';

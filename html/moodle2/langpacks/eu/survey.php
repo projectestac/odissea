@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actual'] = 'Benetakoa';
 $string['actualclass'] = 'Benetako klasea';
 $string['actualstudent'] = '{$a} benetakoa';
-$string['allquestionrequireanswer'] = 'Galdera guztiak beharrezkoak dira eta erantzun behar zaie';
+$string['allquestionrequireanswer'] = 'Galdera guztiak beharrezkoak dira eta erantzun behar zaie.';
 $string['allquestions'] = 'Galdera guztiak ordenean, ikasle guztiak';
 $string['allscales'] = 'Eskala guztiak, ikasle guztiak';
 $string['alreadysubmitted'] = 'Hausnarketa hau bidali duzu dagoeneko';
@@ -189,7 +189,7 @@ Zure erantzunek unitate hau etorkizunean hobetzen lagunduko digute.
 
 Eskerrik asko.';
 $string['collespname'] = 'COLLES (Nahia)';
-$string['customintro'] = 'Sarrera pertsonalizatua';
+$string['customintro'] = 'Deskribapena';
 $string['deleteallanswers'] = 'Hausnarketaren erantzun guztiak ezabatu';
 $string['deleteanalysis'] = 'Ezabatu erantzunen analisiak';
 $string['done'] = 'Eginda';

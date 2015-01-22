@@ -30,7 +30,7 @@ $string['cachelimit'] = 'Лимит кэша';
 $string['cachelimit_info'] = 'Введите максимальный размер файла (в байтах) для кэширования на сервере  для псевдонимов/ярлыков Dropbox. Кэшированные файлы будут работать, когда источники уже не доступны. Пустое или нулевое значение означает кэширование всех файлов, независимо от размера.';
 $string['configplugin'] = 'Конфигурация хранилища Dropbox';
 $string['dropbox'] = 'Dropbox';
-$string['dropbox:view'] = 'Просматривать папку Dropbox';
+$string['dropbox:view'] = 'Просматривать хранилище файлов «Dropbox»';
 $string['instruction'] = 'Вы можете получить ключ API и секретный ключ у <a href="http://www.dropbox.com/developers/apps">разработчиков Dropbox</a>. При настройке ключей параметр «Access level» выберите «Full Dropbox».';
 $string['logoutdesc'] = '(Выход после завершения использования Dropbox)';
 $string['notitle'] = 'без названия';

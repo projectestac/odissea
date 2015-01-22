@@ -32,6 +32,11 @@ $string['culupcoming_events:addinstance'] = 'Add a new CUL Upcoming Events block
 $string['culupcoming_events:myaddinstance'] = 'Add a new CUL Upcoming Events block to the My Moodle page';
 $string['event'] = '{$a->name} on';
 $string['later'] = 'Later';
+$string['lookahead'] = 'Number of days in the future to look for upcoming events';
+$string['lookahead_help'] = 'This sets the (maximum) number of days in the future
+that an event has to start in in order to be displayed as an upcoming event. Events
+that start beyond this will never be displayed as upcoming.';
+$string['nomoreevents'] = 'No more events';
 $string['pluginname'] = 'CUL Upcoming events';
 $string['reload'] = 'Refresh Feed';
 $string['second'] = 'second';

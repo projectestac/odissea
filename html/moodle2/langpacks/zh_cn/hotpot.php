@@ -439,7 +439,6 @@ $string['useglossary_help'] = '如果此设置启用，内容在被发送到浏�
 
 注意此设置会覆盖网站管理设置来开启或禁用 Moodle\'s Glossary Auto-linking 过滤器。';
 $string['usemediafilter'] = '使用媒体过滤器';
-$string['utilitiesindex'] = 'HotPot 应用程序索引';
 $string['viewreports'] = '查看 {$a} 个用户的报告';
 $string['views'] = '浏览次数';
 $string['weighting'] = '加权';

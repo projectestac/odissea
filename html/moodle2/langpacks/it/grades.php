@@ -55,50 +55,13 @@ $string['aggregateweightedmean2'] = 'Media ponderale semplice dei voti';
 $string['aggregation'] = 'Aggregazione dei voti';
 $string['aggregationcoef'] = 'Coefficiente di aggregazione';
 $string['aggregationcoefextra'] = 'Credito extra';
-$string['aggregationcoefextra_help'] = '<h2>Per il tipo di aggregazione Somma dei voti</h2>
-<p>Usando la strategia di aggregazione \'Somma dei voti\' è possibile usare un elemento di valutazione come Credito Extra della categoria. In pratica l\'elemento anziché essere aggregato sarà sommato al totale della categoria.il voto dell\'elemento al posto del voto massimo. Esempio:
-<ul>
-    <li>Intervallo di voti per l\'Elemento 1: 0-100</li>
-    <li>Intervallo di voti per l\'Elemento 2: 0-75</li>
-    <li>Per l\'Elemento 1 il checkbox "Credito Extra" è stato selezionato, mentre per l\'elemento 2 no.</li>
-    <li>Entrambi gli elementi appartenegono alla Categoria 1, la cui strategia di aggregazione è "Somma dei voti.</li>
-    <li>L\'intervallo dei voti della Categoria 1 è 0-75</li>
-    <li>Uno studente riceve i voti 20 nell\'Elemento 1 e 70 nell\'Elemento 2</li>
-    <li>Il totale ottenuto dallo studente nella Categoria 1 sarà  75/75 (20+70 = 90 tuttavia l\'Elemento 1 funge solamente come Credito Extra e di conseguenza porta il totale al Voto massimo)</li>
-</ul>
-<h2>Per il tipo di aggregazione Voto medio (con crediti extra)</h2>
-<p>Con questo tipo di aggregazione impostando un valore maggiore di 0 in "Credito Extra", durante l\'aggregazione l\'elemento di valutazione sarà trattato come credito extra. Il valore impostato è il fattore moltiplicativo per il quale il voto ottenuto sarà moltiplicato prima di essere aggregato. L\'elemento di valutazione però non sarà tenuto in considerazione durante la divisione. Esempio:</p>
+$string['aggregationcoefextra_help'] = 'Se l\'aggregazione è \'Somma dei voti\' oppure \'Media pesata semplice\' e la casella credito extra è spuntata, allora il punteggio massimo dell\'elemento non sarà aggiunto al massimo punteggio della categoria. Questo comporterà la possibilità di ottenere il punteggio massimo per la categoria senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione. Se l\'amministratore del sito ha abilitato la funzionalità \'Voti privi di limiti\', potranno essere presenti punteggi superiori al punteggio massimo.
 
-<ul>
-    <li>Elemento 1: intervallo di voti 0-100 e "Credito Extra" pari a 2</li>
-    <li>Elemento 2: intervallo di voti 0-100 e "Credito Extra" lasciato a 0.0000</li>
-    <li>Elemento 2: intervallo di voti 0-100 e "Credito Extra" lasciato a 0.0000</li>
-    <li>I tre elementi appartengono alla Categoria 1, la cui strategia di aggregazione è impostata a "Voto medio (con crediti extra)"</li>
-    <li>Uno studente riceve i voti 20 nell\'Elemento 1, 40 nell\'elemento 2, on Item 2 e 70 nell\'elemento 3</li>
-    <li>Il totale ottenuto dallo studente nella Categoria 1 sarà 95/100 poiché 20*2 + (40 + 70)/2 = 95</li>
-</ul>';
+Se l\'aggregazione è \'Media dei voti (con crediti extra)\' ed il credito extra ha un valore maggiore di zero, il credito extra sarà il valore per il quale sarà moltiplicato il punteggio prima di essere aggiunto al totale e dopo il calcolo della media.';
 $string['aggregationcoefextrasum'] = 'Credito extra';
-$string['aggregationcoefextrasum_help'] = '<p>Usando la strategia di aggregazione \'Somma dei voti\' è possibile usare un elemento di valutazione come Credito Extra della categoria. In pratica l\'elemento anziché essere aggregato sarà sommato al totale della categoria.il voto dell\'elemento al posto del voto massimo. Esempio:
-<ul>
-    <li>Intervallo di voti per l\'Elemento 1: 0-100</li>
-    <li>Intervallo di voti per l\'Elemento 2: 0-75</li>
-    <li>Per l\'Elemento 1 il checkbox "Credito Extra" è stato selezionato, mentre per l\'elemento 2 no.</li>
-    <li>Entrambi gli elementi appartenegono alla Categoria 1, la cui strategia di aggregazione è "Somma dei voti.</li>
-    <li>L\'intervallo dei voti della Categoria 1 è 0-75</li>
-    <li>Uno studente riceve i voti 20 nell\'Elemento 1 e 70 nell\'Elemento 2</li>
-    <li>Il totale ottenuto dallo studente nella Categoria 1 sarà  75/75 (20+70 = 90 tuttavia l\'Elemento 1 funge solamente come Credito Extra e di conseguenza porta il totale al Voto massimo)</li>
-</ul>';
+$string['aggregationcoefextrasum_help'] = 'Selezionando "Credito extra", il punteggio massimo dell\'elemento di valutazione non sarà sommato al punteggio massimo della categoria, rendendo possibile il raggiungimento del punteggio massimo della categoria (o il voto privo di limiti se la funzione è stata abilitata dall\'amministratore) senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione.';
 $string['aggregationcoefextraweight'] = 'Peso credito extra';
-$string['aggregationcoefextraweight_help'] = '<p>Impostando un valore maggiore di 0 in "Credito Extra", durante l\'aggregazione l\'elemento di valutazione sarà trattato come credito extra. Il valore impostato è il fattore moltiplicativo per il quale il voto ottenuto sarà moltiplicato prima di essere aggregato. L\'elemento di valutazione però non sarà tenuto in considerazione durante la divisione. Esempio:</p>
-
-<ul>
-    <li>Elemento 1: intervallo di voti 0-100 e "Credito Extra" pari a 2</li>
-    <li>Elemento 2: intervallo di voti 0-100 e "Credito Extra" lasciato a 0.0000</li>
-    <li>Elemento 2: intervallo di voti 0-100 e "Credito Extra" lasciato a 0.0000</li>
-    <li>I tre elementi appartengono alla Categoria 1, la cui strategia di aggregazione è impostata a "Voto medio (con crediti extra)"</li>
-    <li>Uno studente riceve i voti 20 nell\'Elemento 1, 40 nell\'elemento 2, on Item 2 e 70 nell\'elemento 3</li>
-    <li>Il totale ottenuto dallo studente nella Categoria 1 sarà 95/100 poiché 20*2 + (40 + 70)/2 = 95</li>
-</ul>';
+$string['aggregationcoefextraweight_help'] = 'Se il credito extra è una valore maggiore di zero, la valutazione fungerà da credito extra durante l\'aggregazione. Il numero rappresenta il fattore per il quale sarà moltiplicata la valutazione prima die essere aggiunta al totale utilizzato per il calcolo della media.';
 $string['aggregationcoefweight'] = 'Peso dell\'elemento';
 $string['aggregationcoefweight_help'] = '<p>Peso applicato ai voti durante l\'aggregazione.</p>';
 $string['aggregation_help'] = 'La strategia di aggregazione da utilizzare per calcolare la valutazione complessiva per una data categoria.
@@ -503,10 +466,12 @@ $string['outcomesstandardavailable'] = 'Obiettivi standard disponibili';
 $string['outcomestandard'] = 'Obiettivo standard';
 $string['outcomestandard_help'] = '<p>E\' un obiettivo definito a livello di sito e disponibile in qualsiasi corso.</p>';
 $string['overallaverage'] = 'Media generale';
-$string['overridden'] = 'Sostituito';
-$string['overridden_help'] = '<p>L\'opzione Sostituito evita che un voto possa essere aggiornato automaticamente. Spesso l\'opzione viene impostata internamente dal registro delle valutazioni, tuttavia in questa pagina è possibile selezionare o deselezionare l\'opzione secondo necessità.</p>';
+$string['overridden'] = 'Modificato';
+$string['overridden_help'] = 'Consente di evitare l\'aggiornamento automatico del voto da parte della rispettiva attività.
+
+Quando un voto viene modificato nel registro del valutatore, la spunta viene impostata automaticamente. E\' sempre possibile deselezionarla per consentire la modifica del voto da parte dell\'attività.';
 $string['overriddennotice'] = 'La tua valutazione finale da questa attività è stata modificata manualmente.';
-$string['overridesitedefaultgradedisplaytype'] = 'Sostituisci il default del sito';
+$string['overridesitedefaultgradedisplaytype'] = 'Modifica default del sito';
 $string['overridesitedefaultgradedisplaytype_help'] = 'Consente di impostare a livello di corso graduatorie letterali e limiti diversi dai valori di default del sito.';
 $string['parentcategory'] = 'Categoria superiore';
 $string['pctoftotalgrade'] = '% del voto finale';

@@ -323,3 +323,61 @@ i.fa.icon-pre, .dir-rtl i.fa.icon-post {
 .block_rgrade .header .title h2:before{
     content:"\f0ce";
 }
+
+a.external:after{
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: [[setting:color5]];
+    margin-left: .3em;
+    margin-right: .5em;
+    font-weight: normal;
+    content: "\f08e";
+}
+
+.alert-info:before {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: .3em;
+    margin-right: .5em;
+    font-weight: normal;
+    content: "\f05a";
+}
+
+.alert-warning:before {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: .3em;
+    margin-right: .5em;
+    font-weight: normal;
+    content: "\f071";
+}
+
+.notifysuccess:before,
+.alert-success:before {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: .3em;
+    margin-right: .5em;
+    font-weight: normal;
+    content: "\f00c";
+}
+
+.notifyproblem:before,
+.alert-error:before {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: .3em;
+    margin-right: .5em;
+    font-weight: normal;
+    content: "\f057";
+}

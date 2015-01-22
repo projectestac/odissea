@@ -50,5 +50,5 @@ $string['referencerun'] = 'Referència execució/comentari';
 $string['runid'] = 'ID de l\'execució';
 $string['summaryof'] = 'Resum de {$a}';
 $string['viewdetails'] = 'Mostra els detalls del perfils';
-$string['viewdiff'] = 'Mostra les diferencies dels perfils amb la darrera execució de referencia';
+$string['viewdiff'] = 'Mostra les diferències dels perfils amb la darrera execució de referència';
 $string['viewdiffdetails'] = 'Mostra els detalls de les diferencies del perfils';

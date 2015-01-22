@@ -102,6 +102,7 @@ $string['editingassessmentform'] = 'Ebaluazio-formularioa editatzen';
 $string['editingsubmission'] = 'Bidalketa editatzen';
 $string['editsubmission'] = 'Bidalketa editatu';
 $string['err_multiplesubmissions'] = 'Formulario hau bete bitartean bidalketaren beste bertsio bat gorde da. Erabiltzaile bakoitzak bidalketa bakarra egin dezake.';
+$string['err_removegrademappings'] = 'Ezin dira ezabatu erabili gabeko kalifikazio-mapeoak';
 $string['evaluategradeswait'] = 'Mesedez, itxaron ebaluazioak ebaluatu eta kalifikazioak kalkulatu arte';
 $string['evaluation'] = 'Ebaluazioa kalifikatzen';
 $string['evaluationmethod'] = 'Ebaluazioa kalifikatzeko metodoa';
@@ -232,6 +233,7 @@ $string['someuserswosubmission'] = 'Gutxienez egileetako batek ez du lanik bidal
 $string['sortasc'] = 'Behetik gora ordenatu';
 $string['sortdesc'] = 'Goitik behera ordenatu';
 $string['strategy'] = 'Kalifikazio-estrategia';
+$string['strategyhaschanged'] = 'Tailerraren kalifikazio-estrategia aldatu da formularioa editatzeko asmoz zabaldu zenetik.';
 $string['strategy_help'] = 'Kalifikazioa estrategiak ebaluazio formularioa eta bidalketak kalifikatzeko metodoa zehazten ditu.
 
 * Metatutako kalifikazioa - Iruzkinak eta kalifikazio bat ematen dira zehaztutako arlo bakoitzean

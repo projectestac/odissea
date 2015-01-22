@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dimensiondescription'] = 'Περιγραφή';
+$string['incorrect'] = 'Λάθος';
 $string['pluginname'] = 'Αθροιστική βαθμολόγηση';

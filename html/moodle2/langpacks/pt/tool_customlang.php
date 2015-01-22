@@ -50,10 +50,10 @@ $string['markuptodate'] = 'marcar como desatualizada';
 $string['modifiedno'] = 'Não existem strings alteradas para inserir';
 $string['modifiednum'] = 'Existem {$a} strings alteradas. Deve inseri-las no disco para as guardar permanentemente.';
 $string['nostringsfound'] = 'Não foram encontradas strings, altere os seus critérios de pesquisa.';
-$string['placeholder'] = 'Expressões especiais';
-$string['placeholder_help'] = 'Expressões especiais são códigos especiais como `{$a}` ou `{$a->something}` dentro de uma string. Estas são substituidas por um valor quando a string é exibida.
+$string['placeholder'] = 'Espaços reservados';
+$string['placeholder_help'] = 'Espaços reservados (placeholders) são códigos especiais como \'{$a}\' ou \'{$a->something}\' dentro de uma string. Estes são substituídos por um valor quando a string é exibida.
 
-Como tal é importante copiá-las exatamente como estão na string original. Não os traduza, nem altere a sua orientação da direita para a esquerda.';
+Como tal, é importante copiá-los exatamente como estão na string original. Não os traduza, nem altere a sua orientação da direita para a esquerda.';
 $string['placeholderwarning'] = 'strings com expressões especiais';
 $string['pluginname'] = 'Personalização da língua';
 $string['savecheckin'] = 'Guardar e adicionar as strings nos ficheiros';

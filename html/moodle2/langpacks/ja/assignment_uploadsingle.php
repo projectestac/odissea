@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '単一ファイルのアップロード';
+$string['pluginname'] = '単一アップロード';

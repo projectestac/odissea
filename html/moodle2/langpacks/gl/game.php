@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['millionaire_info_telephone'] = 'Penso que a resposta correcta é';
+$string['timetaken'] = 'Tempo levado';

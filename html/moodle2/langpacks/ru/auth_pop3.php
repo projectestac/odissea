@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_pop3changepasswordurl_key'] = 'Адрес страницы смены пароля';
-$string['auth_pop3description'] = 'Этот метод использует POP3-сервер для определения соответствия и правильности пары логин/пароль.';
-$string['auth_pop3host'] = 'Адрес POP3-сервера. Используйте IP-адрес, не DNS-имя.';
-$string['auth_pop3host_key'] = 'Хост';
-$string['auth_pop3mailbox'] = 'Имя почтового ящика для соединения (обычно ВХОДЯЩИЕ)';
+$string['auth_pop3description'] = 'Этот метод аутентификации использует POP3-сервер для проверки пары логин/пароль.';
+$string['auth_pop3host'] = 'Адрес POP3-сервера. Используйте IP-адрес, а не DNS-имя.';
+$string['auth_pop3host_key'] = 'Сервер';
+$string['auth_pop3mailbox'] = 'Имя почтового ящика для попытки подключения (обычно «INBOX»)';
 $string['auth_pop3mailbox_key'] = 'Почтовый ящик';
 $string['auth_pop3notinstalled'] = 'Не удается использовать авторизацию POP3. Модуль PHP IMAP  не установлен.';
-$string['auth_pop3port'] = 'Номер порта сервера (обычно 110, 995 для SSL)';
+$string['auth_pop3port'] = 'Номер порта сервера (обычно используется 110, для SSL обычно используется 995)';
 $string['auth_pop3port_key'] = 'Порт';
 $string['auth_pop3type'] = 'Тип сервера. Если ваш сервер использует защиту, основанную на сертификатах, используйте pop3cert.';
 $string['auth_pop3type_key'] = 'Тип';

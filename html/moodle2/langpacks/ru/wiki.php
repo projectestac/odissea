@@ -59,7 +59,7 @@ $string['defaultformat'] = 'Формат по умолчанию';
 $string['defaultformat_help'] = 'Этот параметр определяет формат по умолчанию, используемый при редактировании страниц Вики.
 
 * HTML - доступен HTML-редактор
-* Creole - общепринятый язык разметки wiki, для которого доступна небольшая панель редактирования
+* Creole - общепринятый язык разметки вики, для которого доступна небольшая панель редактирования
 * Nwiki - язык разметки (схожий с Mediawiki), используемый в заимствованном модуле Nwiki.';
 $string['deletecomment'] = 'Удаление комментария';
 $string['deletecommentcheck'] = 'Удалить комментарий';
@@ -135,7 +135,7 @@ $string['modulename_help'] = 'Модуль Вики (Wiki) позволяет у
 * при совместном создании студентами книги по теме, заданной их наставником
 * для совместного сочинения историй или создания стихотворений, где каждый участник пишет строку или строфу
 * как личный журнал для заметок об исследованиях или исправлениях (используется индивидуальная Вики)';
-$string['modulenameplural'] = 'Wiki страницы';
+$string['modulenameplural'] = 'Вики-страницы';
 $string['navigation'] = 'Навигация';
 $string['navigationfrom'] = 'Эта страница происходит от';
 $string['navigationfrom_help'] = 'Страницы Вики, ссылающиеся на эту страницу.';
@@ -237,9 +237,9 @@ $string['wiki'] = 'Вики';
 $string['wiki:addinstance'] = 'Добавлять новую вики';
 $string['wikiattachments'] = 'Приложения';
 $string['wikiboldtext'] = 'Жирный текст';
-$string['wiki:createpage'] = 'Создать новые страницы';
-$string['wiki:editcomment'] = 'Добавить комментарии на страницу';
-$string['wiki:editpage'] = 'Сохранить страницы';
+$string['wiki:createpage'] = 'Создавать новые страницы';
+$string['wiki:editcomment'] = 'Добавлять комментарии на страницу';
+$string['wiki:editpage'] = 'Сохранять страницы';
 $string['wikiexternalurl'] = 'Внешняя ссылка';
 $string['wikifiles'] = 'Файлы Вики';
 $string['wikifiletable'] = 'Список загружаемых файлов';
@@ -260,7 +260,7 @@ $string['wikimodeindividual'] = 'Индивидуальная Вики';
 $string['wikiname'] = 'Название страницы';
 $string['wikinowikitext'] = 'Нет текста';
 $string['wikiorderedlist'] = 'Нумерованный список';
-$string['wiki:overridelock'] = 'Отвергать блокировку страниц';
+$string['wiki:overridelock'] = 'Игнорировать блокировку страниц';
 $string['wikipages'] = 'Страницы';
 $string['wikisettings'] = 'Установки';
 $string['wikiunorderedlist'] = 'Неупорядоченный список';

@@ -243,7 +243,7 @@ $string['configfullnamedisplay'] = 'Forma como os nomes completos são mostrados
 
 Para a maioria dos sites monolingues a configuração mais eficiente é "Nome Sobrenome", mas pode optar por ocultar completamente os sobrenomes.
 
-Placeholders que podem ser usados: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, e alternatename.';
+Espaços reservados que podem ser usados: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, e alternatename.';
 $string['configgeoipfile'] = 'Localização do ficheiro binário de dados do GeopIP City. Este ficheiro não faz parte da distribuição do Moodle e deverá ser obtido separadamente em <a href="http://www.maxmind.com/">MaxMind</a>.<br />É possível comprar uma versão comercial ou utilizar a versão gratuita. Pode descarregar o ficheiro em <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a> e extraí-lo para a diretoria "{$a}" no seu servidor.';
 $string['configgetremoteaddrconf'] = 'Se o acesso ao Moodle for feito através de um <em>Reverse Proxy</em> é possível especificar neste campo que cabeçalhos HTTP são mais fiávies para obter o endereço IP externo. Os cabeçalhos são lidos por ordem sendo usado o primeiro que se encontrar disponível.';
 $string['configgradebookroles'] = 'Esta opção permite controlar quem aparece na pauta. Só constarão da pauta duma disciplina os utilizadores que desempenham pelo menos um destes papéis nessa disciplina.';
@@ -890,7 +890,7 @@ $string['qtyperqpwillberemoved'] = 'Durante a atualização, as perguntas do tip
 $string['qtyperqpwillberemovedanyway'] = 'Durante a atualização, as perguntas do tipo RQP serão eliminadas. Tem algumas perguntas desse tipo na sua base de dados, que deixarão de funcionar, a menos que instale novamente o código em http://moodle.org/mod/data/view.php?d=13&amp;rid=797 antes de continuar a atualização.';
 $string['quarantinedir'] = 'Pasta de quarentena';
 $string['question'] = 'Pergunta';
-$string['questionbehaviours'] = 'Comportamentos de perguntas';
+$string['questionbehaviours'] = 'Comportamentos das perguntas';
 $string['questioncwqpfscheck'] = 'Uma ou mais perguntas \'aleatórias\' num teste foram configuradas para selecionar perguntas de uma mistura de categorias partilhadas e não partilhadas. Existe um <a href="{$a->reporturl}">relatório mais completo </a> e deve consultar
 <a href="{$a->docsurl}">esta página do Moodle Docs</a>.';
 $string['questioncwqpfsok'] = 'Bom! Não existem nos seus testes perguntas aleatórias configuradas para selecionar perguntas de uma mistura de categorias partilhadas e não partilhadas.';
@@ -1027,7 +1027,7 @@ $string['timezoneisforcedto'] = 'Forçar todos os utilizadores a usar';
 $string['timezonenotforced'] = 'Os utilizadores podem definir o seu fuso horário';
 $string['tokenizerrecommended'] = 'Para melhorar a funcionalidade da Rede Moodle é recomendada a instalação da extensão Tokenizer do PHP.';
 $string['tools'] = 'Ferramentas de administração';
-$string['toolsmanage'] = 'Gerir ferramentas de admin';
+$string['toolsmanage'] = 'Gerir ferramentas de administração';
 $string['unattendedoperation'] = 'Execução não interativa';
 $string['unbookmarkthispage'] = 'Apagar esta página dos marcadores';
 $string['unicoderecommended'] = 'Recomenda-se a armazenagem de todos os seus dados com a codificação Unicode (UTF-8). Instalações feitas de raiz devem usar bases de dados com codificação padrão Unicode. Se estiver a atualizar uma instalação, deve realizar o processo de migração para UTF-8 (ver página de administração).';

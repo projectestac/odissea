@@ -105,6 +105,7 @@ $string['hub'] = 'Bilgunea';
 $string['imageurl'] = 'Irudiaren URLa';
 $string['imageurl_help'] = 'Irudi hau bilgunean erakutsiko da. Irudia bilgunean uneoro izan behar da eskura. Irudiak gehienez ere tamaina hau izan behar du: {$a->width} X {$a->height}';
 $string['information'] = 'Informazioa';
+$string['issuedbadgesnumber'] = 'Emandako domina-kopurua ({$a})';
 $string['language'] = 'Hizkuntza';
 $string['language_help'] = 'Ikastaro honen hizkuntza nagusia';
 $string['lasttimechecked'] = 'Egiaztatu azken aldiz';

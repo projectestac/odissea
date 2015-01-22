@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['activated'] = 'Следующий словарь активирован:';
 $string['add'] = 'Добавить в словарь';
 $string['dictionary'] = 'Словарь';
+$string['dictionaryname'] = 'Название словаря';

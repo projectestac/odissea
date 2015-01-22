@@ -29,7 +29,7 @@ $string['alfresco_url'] = 'Alfresco URL';
 $string['alfrescourltext'] = 'Адрес Alfresco API для Alfresco 4.2.d или выше должен быть в виде:
 http://yoursite.com/alfresco/api или
 http://yoursite.com/alfresco/soapapi.';
-$string['alfresco:view'] = 'Посмотреть хранилище Alfresco';
+$string['alfresco:view'] = 'Посматривать хранилище файлов «Alfresco»';
 $string['configplugin'] = 'Конфигурация Alfresco';
 $string['notitle'] = 'без названия';
 $string['password'] = 'Пароль';

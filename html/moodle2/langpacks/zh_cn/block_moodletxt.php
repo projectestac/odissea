@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adminheadermiscsettings'] = '杂项设置';
 $string['nexttoken'] = '下一步';
 $string['previoustoken'] = '上一步';
 $string['sendfragnext'] = '下一步';

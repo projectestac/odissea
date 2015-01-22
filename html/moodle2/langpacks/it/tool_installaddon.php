@@ -65,6 +65,7 @@ $string['validationmsg_filenotexists'] = 'I file estratti non sono stati trovati
 $string['validationmsg_filesnumber'] = 'Nel pacchetto non è presente un numero sufficiente di file';
 $string['validationmsg_filestatus'] = 'Non è possibile estrarre tutti i file';
 $string['validationmsg_filestatus_info'] = 'Il tentativo di estrarre il file {$a->file} ha generato l\'errore \'{$a->status}\'.';
+$string['validationmsg_foundlangfile'] = 'Trovato file della lingua';
 $string['validationmsglevel_debug'] = 'Debug';
 $string['validationmsglevel_error'] = 'Errore';
 $string['validationmsglevel_info'] = 'OK';

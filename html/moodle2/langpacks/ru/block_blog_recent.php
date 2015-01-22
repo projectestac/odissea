@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_recent:addinstance'] = 'Добавлять новый блок Свежие записи блога';
+$string['blog_recent:addinstance'] = 'Добавлять новый блок «Свежие записи блога»';
 $string['norecentblogentries'] = 'Нет свежих записей';
 $string['numentriestodisplay'] = 'Сколько отображать свежий записей';
 $string['pluginname'] = 'Свежие записи блога';

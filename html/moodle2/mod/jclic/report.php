@@ -58,7 +58,7 @@ echo $OUTPUT->header();
 
 echo $OUTPUT->heading(get_string('report_'.$mode, 'jclic'));
 
-groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/jclic/view.php?id=' . $cm->id);
+groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/jclic/report.php?id=' . $cm->id);
 jclic_view_dates($jclic, $cm);
 
 // Report
@@ -245,7 +245,7 @@ if (!empty($users)) {
             $table->pagesize($perpage, $countusers);
             $table->print_html();  // Print the whole table
         } else {
-            echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'));
+            echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'), 'notifymessage');
         }
     }
 } else {
