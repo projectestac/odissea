@@ -9,6 +9,8 @@ $dirroot = dirname(dirname(dirname(__FILE__)));
 $CFG->altcacheconfigpath = $dirroot.'/html/moodle2/local/agora/muc/';
 
 $CFG->langotherroot = dirname(__FILE__) . '/langpacks/';
+$CFG->langlocalroot = dirname(__FILE__) . '/langpacks/';
+$CFG->skiplangupgrade  = true;
 
 $CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
 
@@ -27,7 +29,7 @@ $CFG->session_file_save_path = ini_get('session.save_path');
 //$CFG->apligestmail = 1;
 //$CFG->apligestlog = 1;
 //$CFG->apligestlogdebug = 1;
-$CFG->apligestlogpath = $CFG->dataroot.'/repository/files/mailsender.log';
+//$CFG->apligestlogpath = $CFG->dataroot.'/repository/files/mailsender.log';
 $CFG->apligestaplic = 'ODISSEA';
 
 $CFG->agora_muc_path = $dirroot.'/cache_ins';
