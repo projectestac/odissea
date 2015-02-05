@@ -37,3 +37,4 @@ $string['auth_xtec_server_settings'] = 'Paràmetres del servidor LDAP-XTEC';
 $string['auth_gicar_server_settings'] = 'Paràmetres del servidor LDAP-GICAR';
 
 $string['auth_odissea_no_schoolcode'] = 'Els codis de centre no es poden utilitzar per entrar';
+$string['auth_odissea_passwordnotempty'] = 'La contrasenya no pot estar buida';

@@ -59,6 +59,11 @@ class auth_plugin_odissea extends auth_plugin_base {
             return false;
         }
 
+        if (empty($password)) {
+            print_error('auth_odissea_passwordnotempty', 'auth_odissea');
+            return false;
+        }
+
         // Trying to find specified user in LDAP-XTEC and LDAP-GICAR
         list($ldapconnection, $ldapuserdn) = $this->get_userdn($username, $password);
 

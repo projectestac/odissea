@@ -36,3 +36,4 @@ $string['auth_xtec_server_settings'] = 'LDAP-XTEC server settings';
 $string['auth_gicar_server_settings'] = 'LDAP-GICAR server settings';
 
 $string['auth_odissea_no_schoolcode'] = 'School codes cannot be used to log in';
+$string['auth_odissea_passwordnotempty'] = 'Password cannot be empty';
