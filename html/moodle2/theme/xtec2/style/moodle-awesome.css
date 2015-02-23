@@ -329,7 +329,6 @@ a.external:after{
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: [[setting:color5]];
     margin-left: .3em;
     margin-right: .5em;
     font-weight: normal;

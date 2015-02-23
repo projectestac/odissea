@@ -16,30 +16,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines the version of hotpot
+ * Hotpot source version
  *
- * This code fragment is called by moodle_needs_upgrading() and
- * /admin/index.php
- *
- * @package   mod-hotpot
- * @copyright 2010 Gordon Bateson <gordon.bateson@gmail.com>
+ * @package    hotpotsource
+ * @subpackage qedoc
+ * @copyright 2015 Gordon Bateson <gordon.bateson@gmail.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-// prevent direct access to this script
-defined('MOODLE_INTERNAL') || die();
+defined('MOODLE_INTERNAL') or die();
 
-if (floatval($GLOBALS['CFG']->release) <= 2.6) {
-    $plugin = new stdClass();
-}
-
-$plugin->cron      = 0;
-$plugin->component = 'mod_hotpot';
-$plugin->maturity  = MATURITY_STABLE; // ALPHA=50, BETA=100, RC=150, STABLE=200
-$plugin->requires  = 2010112400;      // Moodle 2.0
-$plugin->release   = '2015.01.26 (59)';
-$plugin->version   = 2015012659;
-
-if (floatval($GLOBALS['CFG']->release) <= 2.6) {
-    $module = clone($plugin);
-}
+$plugin->component = 'hotpotsource_qedoc';
+$plugin->requires  = 2010112400;
+$plugin->version   = 2010112400;

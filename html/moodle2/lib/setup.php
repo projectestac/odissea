@@ -614,7 +614,7 @@ setup_validate_php_configuration();
 try{
     setup_DB();
 } catch(Exception $e){
-    $logdir = get_moodle2_admin_datadir('adodberror', false);
+    $logdir = get_moodle2_admin_datadir_folder('adodberror', false);
     if ($logdir) {
         $logfile = $logdir.'/'.date("Ymd").'-error.csv';
 

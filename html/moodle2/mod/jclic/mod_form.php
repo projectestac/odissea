@@ -166,9 +166,9 @@ class mod_jclic_mod_form extends moodleform_mod {
                 }
             }
         } else if ($type === JCLIC_FILE_TYPE_EXTERNAL) {
-            $reference = $data['jclicurl'];
+            $reference = $data['url'];
             if (!jclic_is_valid_external_url($reference)) {
-                $errors['jclicurl'] = get_string('invalidurl', 'jclic');
+                $errors['url'] = get_string('invalidurl', 'jclic');
             }
         }
 
@@ -182,10 +182,10 @@ class mod_jclic_mod_form extends moodleform_mod {
         if (isset($default_values['url'])) {
             if (jclic_is_valid_external_url($default_values['url'])) {
                 $default_values['filetype'] = JCLIC_FILE_TYPE_EXTERNAL;
-                $default_values['jclicurl'] = $default_values['url'];
+                $default_values['url'] = $default_values['url'];
             } else{
                 $default_values['filetype'] = JCLIC_FILE_TYPE_LOCAL;
-                $default_values['jclicfile'] = $default_values['url'];
+                $default_values['url'] = $default_values['url'];
             }
         }
         unset($default_values['url']);

@@ -5,6 +5,7 @@ require_once($CFG->libdir.'/formslib.php');
 require_once($CFG->libdir.'/csvlib.class.php');
 require_once($CFG->libdir.'/adminlib.php');
 require_once('forms.php');
+require_once('locallib.php');
 
 require_login();
 admin_externalpage_setup('keymanager_import');

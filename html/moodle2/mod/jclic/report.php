@@ -249,7 +249,7 @@ if (!empty($users)) {
         }
     }
 } else {
-    echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'));
+    echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'), 'notifymessage');
 }
 
 echo $OUTPUT->footer();

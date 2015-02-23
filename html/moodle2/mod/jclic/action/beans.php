@@ -39,6 +39,7 @@ if($GLOBALS["HTTP_RAW_POST_DATA"]){
 }
 
 require_once("../../../config.php");
+require_once("beans.lib.php");
 require_once("../lib.php");
 require_once("../locallib.php");
 
@@ -48,46 +49,18 @@ $elements=array();
 $oldElements=array();
 $thisElement="";
 
+$beans = array();
+$currentBean = -1;
+$params = array();
 
-$beans=array();
-$currentBean=-1;
-$params=array();
-
-function startElement($parser, $name, $attribs ) {
-   global $beans, $currentBean, $params, $thisElement, $oldElements, $elements;
-   array_push( $oldElements, $thisElement);
-   $thisElement=$name;
-   if ($name=='BEAN'){
-   	$currentBean++;
-   	$bean=array();
-   	$bean['ID']=$attribs['ID'];
-   	$bean['PARAMS']="";
-	$beans[$currentBean]=$bean;
-	$params=array();
-   }else if ($name=='PARAM'){
-   	$params[$attribs['NAME']]=$attribs['VALUE'];
-   }else if ($name=='ACTIVITY'){
-   	$beans[$currentBean]['ACTIVITY']=array('name'=>$attribs['NAME'],'start'=>$attribs['START'],'time'=>$attribs['TIME'],'solved'=>$attribs['SOLVED'],'score'=>$attribs['SCORE'],'minActions'=>$attribs['MINACTIONS'],'actions'=>$attribs['ACTIONS']);
-   }
-   $elements[ $thisElement ] = $attribs;
-}
-
-function endElement($parser, $name) {
-   global $beans, $currentBean, $params, $thisElement, $oldElements;
-   $thisElement= array_pop( $oldElements);
-   $beans[$currentBean]['PARAMS']=$params;
-}
-
-function characterData($parser, $text) {
-   global $beans, $currentBean, $params, $thisElement, $elements;
-   $elements[ $thisElement ] .= $text;
-}
 
 $xml_parser = xml_parser_create('');
 xml_set_element_handler($xml_parser, "startElement", "endElement");
-xml_set_character_data_handler($xml_parser, "characterData");
+// This function is disabled because it seems that is not needed
+// xml_set_character_data_handler($xml_parser, "characterData");
 xml_parse($xml_parser, $my_xml);
 xml_parser_free($xml_parser);
+
 
 /*$jclic_log->bean=$beans[0]['ID'];
 $jclic_log->xml=$my_xml;
@@ -101,7 +74,7 @@ switch($beans[0]['ID']){
 		echo '<?xml version="1.0" encoding="UTF-8"?'.'>';
 		echo '<bean id="get_properties">';
 		$settings = $DB->get_records('jclic_settings');
-		foreach($settings as $setting){
+		foreach ($settings as $setting) {
 			echo ' <param name="'.$setting->setting_key.'" value="'.$setting->setting_value.'"/>';
 		}
 		echo '</bean>';
@@ -186,23 +159,6 @@ switch($beans[0]['ID']){
 		echo '</bean>';
 }
 
-
-function getPrecision($minActions, $numActions, $solved, $score){
-	$precision = 0;
-	if ($minActions>0 && $numActions>0){
-		if ($solved=='true'){
-			if ($numActions<$minActions) $precision=100;
-			else $precision=($minActions*100)/$numActions;
-		}else{
-			$precision=100*($score*$score)/($minActions*$numActions);
-		}
-	}
-	return $precision;
-}
-
-function getSeconds($miliseconds){
-	return round($miliseconds/1000);
-}
 // <bean id="get_properties"><param name="TIME_LAP" value="10"/><param name="ALLOW_CREATE_GROUPS" value="false"/><param name="USER_TABLES" value="true"/><param name="ALLOW_CREATE_USERS" value="true"/><param name="SHOW_GROUP_LIST" value="true"/><param name="SHOW_USER_LIST" value="true"/></bean>
 // <bean id="multiple"><bean id="add activity"><param name="num" value="0"/><param name="session" value="test_3425234562345"/><activity name="senya-04.ass" start="12456535767" time="3212" solved="true" score="1" minActions="1" actions="11"/><bean id="add activity"><param name="num" value="1"/><param name="session" value="test_3425234562345"/><activity name="senya-05.ass" start="12456535765" time="2222" solved="false" score="0" minActions="1" actions="1"/></bean>
 // <bean id="add session"><param name="key" value="k01"/><param name="user" value="user01"/><param name="time" value="12588458"/></bean>

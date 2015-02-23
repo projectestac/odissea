@@ -199,7 +199,13 @@ class script_moodle_register extends agora_script_base{
 
         preg_match_all('/^Location:(.*)$/mi', $contents, $matches);
 
-        return !empty($matches[1]) ? trim($matches[1][0]) : false;
+        $return = !empty($matches[1]) ? trim($matches[1][0]) : false;
+        if (!$return) {
+            print_object($completeurl);
+            print_object($contents);
+        }
+
+        return $return;
     }
 
 }

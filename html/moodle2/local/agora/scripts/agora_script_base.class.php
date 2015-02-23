@@ -23,7 +23,7 @@ class agora_script_base{
 		$params = $this->params();
 		$this->form($params);
 		if ($action == 'test') {
-			echo $OUTPUT->notification('Testing...');
+			echo $OUTPUT->notification('Testing...', 'notifymessage');
 			\core\session\manager::write_close();
 			try {
 				return $this->_execute($params, false);
@@ -32,7 +32,7 @@ class agora_script_base{
 				return false;
 			}
 		} else if ($action == 'execute' && $this->can_be_executed($params)) {
-			echo $OUTPUT->notification('Executing!!');
+			echo $OUTPUT->notification('Executing!!', 'notifymessage');
 			\core\session\manager::write_close();
 			try {
 				return $this->_execute($params);

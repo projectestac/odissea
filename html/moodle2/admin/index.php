@@ -163,27 +163,23 @@ if (!core_tables_exist()) {
 
     //XTEC ************ AFEGIT - Block access to install functions. Show "site off" message instead.
     //2013.12.16 @aginard
-
-    $siteoff_file = '../siteoff.html';
-
-    $gestor = fopen($siteoff_file, 'rb');
-    if ($gestor) {
-        // Send file to screen in small chunks for efficience
-        while (!feof($gestor)) {
-            echo fread($gestor, 8192);
+    if (!isset($agora['server']['enviroment']) || $agora['server']['enviroment'] != 'LOCAL') {
+        $siteoff_file = '../siteoff.html';
+        if (file_exists($siteoff_file)) {
+            include_once($siteoff_file);
+        } else {
+            echo '<html><body>';
+            echo '<div style="text-align:center; font-size:large; border-width:1px; '.
+                 '    border-color:#CCC; border-style:solid; border-radius: 20px; border-collapse: collapse; '.
+                 '    -moz-border-radius:20px; padding:15px; margin: 200px 100px 0px 100px;">';
+            echo '<h2>Servei no disponible</h2>';
+            echo '<p>El servei a qu&egrave; intenteu accedir est&agrave; temporalment fora de servei. Estem treballant per solucionar el problema al m&eacute;s aviat possible. Si us plau proveu d\'accedir-hi m&eacute;s tard.</p>';
+            echo '<p style="font-size:medium">Disculpeu les mol&egrave;sties.</p>';
+            echo '</div></body></html>';
         }
-        fclose($gestor);
-    } else {
-        echo '<html><body>';
-        echo '<div style="text-align:center; font-size:large; border-width:1px; '.
-             '    border-color:#CCC; border-style:solid; border-radius: 20px; border-collapse: collapse; '.
-             '    -moz-border-radius:20px; padding:15px; margin: 200px 100px 0px 100px;">';
-        echo '<h2>Servei no disponible</h2>';
-        echo '<p>El servei a qu&egrave; intenteu accedir est&agrave; temporalment fora de servei. Estem treballant per solucionar el problema al m&eacute;s aviat possible. Si us plau proveu d\'accedir-hi m&eacute;s tard.</p>';
-        echo '<p style="font-size:medium">Disculpeu les mol&egrave;sties.</p>';
-        echo '</div></body></html>';
+        exit(0);
     }
-    exit(0);
+
 
     //************ FI
 

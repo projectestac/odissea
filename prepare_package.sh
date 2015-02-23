@@ -5,13 +5,13 @@
 version=14.11.27
 
 git clone https://github.com/projectestac/agora_moodle2.git moodle_new
-cd moodle_new
+pushd moodle_new
 
 git submodule update --recursive --init
-./update.sh
+git submodule foreach git pull
 echo 'Submòduls actualitzats'
 find . -name '\.git*' -exec rm -rf {} \;
-cd ..
+popd
 
 
 mv html/moodle2 html/moodle2_old

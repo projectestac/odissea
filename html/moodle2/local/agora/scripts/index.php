@@ -16,11 +16,14 @@
 	echo $OUTPUT->heading(get_string('agora_scripts','local_agora'));
 
 	if($script){
+		$action = optional_param('action', false, PARAM_TEXT);
 		$success = scripts_execute_script($script);
-		if($success){
-			echo $OUTPUT->notification('Script '.$script.' succeed', 'notifysuccess');
-		} else {
-			echo $OUTPUT->notification('Script '.$script.' failed');
+		if($action){
+			if($success){
+				echo $OUTPUT->notification('Script '.$script.' succeed', 'notifysuccess');
+			} else {
+				echo $OUTPUT->notification('Script '.$script.' failed');
+			}
 		}
 	} else {
 		echo scripts_list_scripts();

@@ -1526,7 +1526,7 @@ function forum_print_overview($courses,&$htmlarray) {
         $showunread = false;
         // either we have something from logs, or trackposts, or nothing.
         if (array_key_exists($forum->id, $forumsnewposts) && !empty($forumsnewposts[$forum->id])) {
-//XTEC ************ MODIFICAT - To fix bug on overviewnumpostssince count shown in My Moodle Page
+            //XTEC ************ MODIFICAT - To fix bug on overviewnumpostssince count shown in My Moodle Page
             //2013.11.06  @sarjona
             $cm = get_coursemodule_from_instance('forum', $forum->id, 0, false, MUST_EXIST);
             $context = context_module::instance($cm->id);
@@ -1544,7 +1544,7 @@ function forum_print_overview($courses,&$htmlarray) {
                 $params[] = $USER->id;
                 $groups = groups_get_all_groups($courses[$forum->course]->id, $USER->id);
                 foreach ($groups as $group) {
-                    $sql .= 'OR d.groupid = ?';
+                    $sql .= ' OR d.groupid = ?';
                     $params[] = $group->id;
                 }
                 $sql .= ')';
