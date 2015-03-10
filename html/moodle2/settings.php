@@ -35,3 +35,6 @@ $CFG->apligestaplic = 'ODISSEA';
 $CFG->agora_muc_path = $dirroot.'/cache_ins';
 $CFG->cachedir = $CFG->agora_muc_path.'/cache';
 $CFG->localcachedir = $CFG->agora_muc_path.'/localcache';
+
+
+$CFG->forced_plugin_settings = array('block_configurable_reports'  => array('sqlsecurity' => true));

@@ -8,7 +8,7 @@ git clone https://github.com/projectestac/agora_moodle2.git moodle_new
 pushd moodle_new
 
 git submodule update --recursive --init
-git submodule foreach git pull
+git submodule foreach --recursive git pull
 echo 'Submòduls actualitzats'
 find . -name '\.git*' -exec rm -rf {} \;
 popd
@@ -29,6 +29,7 @@ cp html/moodle2_old/apc.php html/moodle2/apc.php
 cp html/moodle2_old/CHANGES.txt html/moodle2/CHANGES.txt
 
 cp -Rp html/moodle2_old/auth/odissea html/moodle2/auth/odissea
+cp -Rp html/moodle2_old/blocks/configurable_reports html/moodle2/blocks/configurable_reports
 cp -Rp html/moodle2_old/admin/tool/odisseagtafsync html/moodle2/admin/tool/odisseagtafsync
 
 rm html/moodle2/config.php
