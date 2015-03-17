@@ -12,17 +12,29 @@ class bigdata {
     private $tablefields;
     private $possibleextrafields;
     private $profilename;
+    private $savedirectory;
 
 
-    function __construct($profileid) {
-        global $DB;
+    function __construct($profilename) {
+        global $DB, $CFG;
 
-        $profile = $DB->get_record('bigdata_profiles', array('id' => $profileid));
+        $profile = $DB->get_record('bigdata_profiles', array('name' => $profilename));
         if (!$profile) {
             throw new Exception('Profile not found');
         }
 
         $this->profilename = $profile->name;
+
+        if (empty($profile->savedirectory)) {
+            if (function_exists('get_admin_datadir_folder')) {
+                $this->savedirectory = get_admin_datadir_folder('bigdata');
+            } else {
+                $this->savedirectory = $CFG->dataroot.'/bigdata';
+            }
+        } else {
+            $this->savedirectory = $profile->savedirectory;
+        }
+        make_writable_directory($this->savedirectory);
 
         if (empty($profile->courses)) {
             $courses = $DB->get_fieldset_select('course', 'id', '1=1 ORDER BY id');
@@ -33,7 +45,9 @@ class bigdata {
         foreach ($courses as $course) {
             $this->courses[$course] = $course;
             $context = $DB->get_record('context', array('contextlevel' => '50', 'instanceid' => $course), 'id, instanceid as course, path');
-            $this->coursescontext[$context->id] = $context;
+            if ($context) {
+                $this->coursescontext[$context->id] = $context;
+            }
         }
 
         if (empty($profile->roles)) {
@@ -72,8 +86,8 @@ class bigdata {
         $this->possibleextrafields = array('course', 'courseid', 'role', 'roleid', 'context', 'contextid', 'user', 'userid');
     }
 
-    public function export($filepath, $filename, $escola) {
-        $this->file = new bigdata_filemanager($filepath, $filename.'_'.$this->profilename , $escola);
+    public function export($filename, $escola) {
+        $this->file = new bigdata_filemanager($this->savedirectory, $filename.'_'.$this->profilename , $escola);
 
         // Export Selected tables
         foreach ($this->exportfields as $table => $fields) {
@@ -337,179 +351,6 @@ class bigdata {
         }
     }
 
-    // *************** OLD **************** //
-    public function old_export($filepath, $filename, $escola) {
-
-        $this->file = new bigdata_filemanager($filepath, $filename.'_'.$this->profilename, $escola);
-
-        $success = true;
-
-        // Platform common export
-        $this->add_data_old('modules', null, 'id, name', true);
-        $this->add_data_select('role', 'id IN ('.implode(',', $this->roles).')', null, 'id, shortname');
-
-        foreach ($this->courses as $course) {
-            try {
-                $success = $success && $this->export_course($course);
-            } catch (Exception $e) {
-                echo $e->getMessage();
-                throw $e;
-                $success = false;
-            }
-        }
-
-        $this->file->close();
-
-        return $success;
-    }
-
-    public function export_course($courseid) {
-        global $CFG, $DB;
-
-        @set_time_limit(0);
-        raise_memory_limit(MEMORY_EXTRA);
-
-        $course = $DB->get_record('course', array('id' => $courseid), 'id, fullname');
-        if (!$course) {
-            throw Exception('coursenotfound');
-            return false;
-        }
-        $this->file->add($course, 'course');
-        unset($course);
-        $coursecontext = context_course::instance($courseid);
-
-        // User and roles. User only userid, it's not needed to export anything
-        $this->add_data_select('role_assignments', 'roleid IN ('.implode(',', $this->roles).') AND contextid = :contextid',
-            array('contextid' => $coursecontext->id), 'id, roleid, contextid, userid', true);
-
-        // Log
-        $this->add_data_old('log', array('course' => $courseid), 'id, time, userid, course, module, cmid, action');
-
-        // Context
-        $this->add_data_old('context', array('path' => $coursecontext->path), 'id, contextlevel, instanceid');
-        $this->add_data_select('context', "path LIKE '$coursecontext->path/%'", null, 'id, contextlevel, instanceid');
-
-        // Activities
-        $this->add_data_old('course_modules', array('course' => $courseid), 'id, course, module, instance, added');
-        $modules = $DB->get_fieldset_select('modules', 'name', "");
-        foreach ($modules as $module) {
-            switch($module){
-                case 'book':
-                case 'glossary':
-                case 'survey':
-                case 'wiki':
-                    $fields = 'id, course, name, timecreated, timemodified';
-                    break;
-                case 'assignment':
-                    $fields = 'id, course, name, timeavailable, timemodified';
-                    break;
-                case 'assign':
-                    $fields = 'id, course, name, timemodified'; // timeavailable no existeix...
-                    break;
-                case 'chat': // Not enabled in agora
-                    $fields = "";
-                    // $fields = 'id, course, name, timemodified';
-                    break;
-                case 'choice':
-                    $fields = 'id, course, name, timeopen, timeclose, timemodified';
-                    break;
-                case 'lesson':
-                    $fields = 'id, course, name, available, timemodified';
-                    break;
-                case 'quiz':
-                    $fields = 'id, course, name, timeopen, timecreated, timemodified';
-                    break;
-                case 'scorm':
-                    $fields = 'id, course, name, timeopen, timemodified';
-                    break;
-                case 'data':
-                case 'jclic':
-                case 'qv':
-                case 'eoicampus':
-                    $fields = 'id, course, name';
-                    break;
-                case 'resource':
-                case 'folder':
-                case 'page':
-                case 'url':
-                case 'forum':
-                case 'workshop':
-                default:
-                    $fields = 'id, course, name, timemodified';
-                    break;
-            }
-
-            if (!empty($fields)) {
-                $this->add_data_old($module, array('course' => $courseid), $fields);
-            }
-        }
-
-        $sql = "SELECT asub.id, asub.userid, asub.timecreated from {assignment_submissions} asub
-                JOIN {assign} a ON a.id = asub.assignment
-                WHERE a.course = :course";
-        $this->add_data_sql('assignment_submissions', $sql, array('course' => $courseid));
-
-        $sql = "SELECT asub.id, asub.userid, asub.timecreated from {assign_submission} asub
-                JOIN {assignment} a ON a.id = asub.assignment
-                WHERE a.course = :course";
-        $this->add_data_sql('assign_submission', $sql, array('course' => $courseid));
-
-        // Files
-        $sql = "SELECT f.id, f.filename, f.userid, f.status, f.timecreated, f.timemodified from {files} f
-                JOIN {context} c ON c.id = f.contextid
-                WHERE (c.path = :path OR c.path LIKE '$coursecontext->path/%') AND f.filename != '.'";
-        $this->add_data_sql('files', $sql, array('path' => $coursecontext->path));
-
-        return true;
-    }
-
-    private function add_data_old($table, $conditions = null, $fields = "", $return = false) {
-        global $DB;
-
-        $data = $DB->get_records($table, $conditions, 'id', $fields);
-        $this->add_data_array($table, $data);
-
-        if ($return) {
-            return $data;
-        }
-    }
-
-    private function add_data_select($table, $select  = "", $params = null, $fields = "", $return = false) {
-        global $DB;
-
-        $data = $DB->get_records_select($table, $select, $params, 'id', $fields);
-        $this->add_data_array($table, $data);
-
-        if ($return) {
-            return $data;
-        }
-    }
-
-    private function add_data_sql($table, $sql, $params, $return = false) {
-        global $DB;
-
-        $data = $DB->get_records_sql($sql, $params);
-        $this->add_data_array($table, $data);
-
-        if ($return) {
-            return $data;
-        }
-    }
-
-    private function add_data_array($table, $array, $return = false) {
-        foreach ($array as $data) {
-            // Do not add excluded users
-            if (!$this->check_user($data)) {
-                continue;
-            }
-            $this->file->add($data, $table);
-        }
-
-        if ($return) {
-            return $array;
-        }
-    }
-    // *************** END OLD **************** //
 }
 
 class bigdata_filemanager{

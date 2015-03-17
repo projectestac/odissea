@@ -122,7 +122,7 @@ $string['pluginnotenabled'] = 'El connector d\'autenticació \'{$a}\' no està h
 $string['pluginnotinstalled'] = 'El connector d\'autenticació \'{$a}\' no està instal·lat.';
 $string['potentialidps'] = 'Us identifiqueu usualment en algun altre lloc abans d\'arribar a aquí?<br />Escolliu-lo de la llista següent per identificar-vos al vostre lloc usual:';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'El CAPTCHA s\'usa per evitar l\'abús dels programes automàtics. Simplement introduïu les paraules al requadre, en ordre i separades per un espai.
+$string['recaptcha_help'] = 'El CAPTCHA s\'usa per evitar l\'abús dels programes automàtics. Simplement introduïu les paraules al quadre, en ordre i separades per un espai.
 
 Si no sabeu segur quines paraules són, podeu provar un altre CAPTCHA o bé un CAPTCHA sonor.';
 $string['selfregistration'] = 'Autoregistre';

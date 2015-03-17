@@ -30,6 +30,7 @@ $string['availablechoices'] = 'Eskura dauden aukerak';
 $string['blanksforxmorequestions'] = 'Zuriuneak {no} aukera gehiagotarako';
 $string['correctansweris'] = 'Erantzun zuzena {$a} da';
 $string['filloutthreeqsandtwoas'] = 'Gutxienez bi galdera eta hiru erantzun eman behar dituzu. Aparteko erantzun okerrak gainera ditzakezu, erantzun bat galdera huts batekin lotuta. Ez dira kontuan hartuko galdera eta erantzuna hutsik dituzten sarrerak.';
+$string['nomatchinganswer'] = '\'{$a}\' galderari lotutako erantzuna zehaztu behar duzu.';
 $string['nomatchinganswerforq'] = 'Galdera honentzako erantzun bat zehaztu behar duzu';
 $string['notenoughqsandas'] = 'Gutxienez {$a->q} galdera eman behar d(it)uzu eta {$a->a} erantzun.';
 $string['notenoughquestions'] = 'Gutxienez {$a} galdera eman behar d(it)uzu eta bi erantzun';
@@ -40,9 +41,4 @@ $string['pluginnameediting'] = 'Lotu galdera editatzen';
 $string['pluginname_help'] = 'Entzuntziatu lotu izeneko galderetan izen-zerrenda bat (galderak) eta izen edo enuntziatuen beste zerrenda baten (erantzunak) arteko erlazioa zuzen ezarri behar da.';
 $string['pluginnamesummary'] = 'Azpigaldera multzo bateko bakoitzeko erantzuna aukera-zerrenda batetik aukeratu behar da.';
 $string['shuffle'] = 'Nahastu';
-$string['shuffle_help'] = '<p>Ezarpen honetan &quot;Bai&quot; aukeratuta, ikasleak galdera hau duen
- galdetegiaren saiakera bat hasten duen bakoitzean galderen atalak ausaz nahastuko
- dira - Galdetegiaren ezarpenetako &quot;Galderen barruan nahastu&quot;
- ezarpena &quot;Bai&quot; ezarrita lortzen da.</p>
-
-<p>Helburua ikasleei elkarri kopiatzea zailago bihurtzea da.</p>';
+$string['shuffle_help'] = 'Gaituz gero, saiakera bakoitzean erantzunak ausaz ordenatzen dirak, betiere galdetegiaren ezarpenetako "Galderen barruan nahastu" ezarpenean "Bai" ezarrita badago.';

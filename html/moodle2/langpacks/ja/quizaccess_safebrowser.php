@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Safe Exam Browser - 小テストアクセスルール';
 $string['requiresafeexambrowser'] = 'Safe Exam Browserの使用を必要とする';
-$string['safebrowsererror'] = 'この小テストは、Safe Exam Browserを使用してのみ受験できるよう、設定してあります。あなたは、このブラウザを使用して、受験することはできません。';
+$string['safebrowsererror'] = 'この小テストは、Safe Exam Browserを使用してのみ受験できるよう、設定してあります。あなたはこのブラウザを使用して、受験することはできません。';
 $string['safebrowsernotice'] = 'この小テストは、学生がSafe Exam Browserを使用してのみ受験できるよう、設定してあります。';

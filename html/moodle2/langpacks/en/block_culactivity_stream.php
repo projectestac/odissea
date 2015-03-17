@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitystream'] = 'Activity Feed';
+$string['activitystreamcourse'] = 'Module updates';
+$string['activitystreamsite'] = 'Activity Feed';
 $string['anon'] = 'Avatar of Anon';
 $string['avatarof'] = 'Avatar of {$a}';
 $string['culactivity_stream:addinstance'] = 'Add a new Activity Feed block';
+$string['culactivity_stream:myaddinstance'] = 'Add a new Activity Feed block';
 $string['newer'] = 'newer';
 $string['older'] = 'older';
 $string['pluginname'] = 'CUL Activity Feed Block';

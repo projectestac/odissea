@@ -8,10 +8,13 @@ class local_oauth_clients_form extends moodleform {
 		$bform->addElement('hidden', 'action', 'add');
 		$bform->setType('action', PARAM_ACTION);
 
+        // Adding the "general" fieldset, where all the common settings are showed
+        $bform->addElement('header', 'general', get_string('general', 'form'));
 
 		$bform->addElement('text', 'client_id', get_string('client_id', 'local_oauth'), array('maxlength' => 80, 'size' => 45));
 		$bform->addRule('client_id', null, 'required', null, 'client');
 		$bform->setType('client_id', PARAM_TEXT);
+        $bform->addHelpButton('client_id', 'client_id', 'local_oauth');
 
 		$action = optional_param('action', false, PARAM_TEXT);
 		if ($action == 'edit') {
@@ -22,8 +25,14 @@ class local_oauth_clients_form extends moodleform {
 		}
 
 		$bform->addElement('text', 'redirect_uri', get_string('redirect_uri', 'local_oauth'), array('maxlength' => 1333, 'size' => 45));
+		$bform->addRule('redirect_uri', null, 'required', null, 'client');
 		$bform->setType('redirect_uri', PARAM_URL);
+        $bform->addHelpButton('redirect_uri', 'redirect_uri', 'local_oauth');
 
+        //-------------------------------------------------------------------------------
+        // Adding the rest of settings, spreading all them into this fieldset
+        $bform->addElement('header', 'othersettings', get_string('othersettings', 'form'));
+        $bform->setExpanded('othersettings', false);
 		$bform->addElement('text', 'grant_types', get_string('grant_types', 'local_oauth'), array('maxlength' => 80, 'size' => 45));
 		$bform->setType('grant_types', PARAM_TEXT);
 
@@ -36,6 +45,47 @@ class local_oauth_clients_form extends moodleform {
 		$this->add_action_buttons();
 
 	}
+
+	function validation($data, $files) {
+        global $DB;
+        $errors = parent::validation($data, $files);
+		if ($DB->record_exists('oauth_clients', array('client_id' => $data['client_id']))) {
+			$errors['client_id'] = get_string('client_id_existing_error', 'local_oauth');
+		}
+
+        return $errors;
+    }
+}
+
+class local_oauth_clients_wp_form extends moodleform {
+
+	function definition() {
+		global $CFG;
+		$bform    =& $this->_form;
+		$bform->addElement('hidden', 'action', 'addwordpress');
+		$bform->setType('action', PARAM_ACTION);
+
+		$bform->addElement('text', 'client_id', get_string('client_id', 'local_oauth'), array('maxlength' => 80, 'size' => 45));
+		$bform->addRule('client_id', null, 'required', null, 'client');
+		$bform->setType('client_id', PARAM_TEXT);
+        $bform->addHelpButton('client_id', 'client_id', 'local_oauth');
+
+		$bform->addElement('text', 'url', get_string('wp_url', 'local_oauth'), array('maxlength' => 1333, 'size' => 45));
+		$bform->addRule('url', null, 'required', null, 'client');
+		$bform->setType('url', PARAM_URL);
+
+		$this->add_action_buttons();
+	}
+
+	function validation($data, $files) {
+        global $DB;
+        $errors = parent::validation($data, $files);
+		if ($DB->record_exists('oauth_clients', array('client_id' => $data['client_id']))) {
+			$errors['client_id'] = get_string('client_id_existing_error', 'local_oauth');
+		}
+
+        return $errors;
+    }
 }
 
 class local_oauth_authorize_form extends moodleform {

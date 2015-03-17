@@ -26,7 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['drawtheninsert'] = 'Après avoir dessiné, appuyez sur « Enregistrer », puis « Insérer »';
-$string['poodll:allowaudiomp3'] = 'Permettre l\'enregistrement audio(MP3)';
+$string['pluginname'] = 'PoodLL partout (TinyMCE)';
+$string['poodll:allowaudiomp3'] = 'Permettre l\'enregistrement audio (MP3)';
 $string['poodll:allowaudiored5'] = 'Permettre l\'enregistrement audio(Red5)';
 $string['poodll:allowsnapshot'] = 'Permettre de prendre une photo';
 $string['poodll:allowvideo'] = 'Permettre l\'enregistrement vidéo';

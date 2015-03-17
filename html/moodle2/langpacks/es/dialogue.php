@@ -26,14 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Acciones';
+$string['ago'] = 'atrás';
 $string['attachment'] = 'Adjunto';
 $string['attachments'] = 'Adjuntos';
 $string['bulkopener'] = 'Apertura masiva';
 $string['bulkopenrule'] = 'Regla de apertura masiva';
 $string['bulkopenrulenotifymessage'] = 'Cuando utiliza la opción de apertura masiva, las conversaciones no son abiertas inmediatamente. Las conversaciones serán abiertas cuando la función programada del sistema sea ejecutada, típicamente cada 30 minutos.';
 $string['bulkopenrules'] = 'Reglas de apertura masiva';
+$string['cachedef_params'] = 'Params - interface de usuario';
+$string['cachedef_participants'] = 'Id de participantes (información básica)';
+$string['cachedef_unreadcounts'] = 'Número de mensajes no leídos';
 $string['cannotclosedraftconversation'] = 'No puede cerrar una conversación que no ha sido iniciada!';
 $string['cannotdeleteopenconversation'] = 'No puede eliminar una conversación abierta';
+$string['closeconversation'] = 'Cerrar conversación';
 $string['closed'] = 'Cerrado';
 $string['completed'] = '';
 $string['configmaxattachments'] = 'El máximo de adjuntos permitidos por defecto en cada envío.';
@@ -52,6 +57,9 @@ $string['conversationopenedwith'] = '<strong>1</strong> conversación abierta co
 $string['conversations'] = 'Conversaciones';
 $string['conversationsopenedwith'] = '<strong>{$a}</strong> conversaciones abiertas con:';
 $string['cutoffdate'] = 'Fecha de corte';
+$string['deleteconversation'] = 'Borrar conversación';
+$string['deletereply'] = 'Borrar respuesta';
+$string['dialogue:addinstance'] = 'Añadir un Diálogo';
 $string['dialogueintro'] = 'Introducción al diálogo';
 $string['dialoguename'] = 'Nombre del diálogo';
 $string['dialogueupgradehelper'] = 'Asistente de actualización de diálogos';

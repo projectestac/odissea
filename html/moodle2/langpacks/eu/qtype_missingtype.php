@@ -26,8 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerno'] = '{$a} erantzuna';
+$string['cannotchangeamissingqtype'] = 'Ezin duzu falta den mota bateko galdera bati aldaketarik egin.';
 $string['deletedquestion'] = 'Galdera falta da';
 $string['deletedquestiontext'] = 'Galdera falta da. Ezin da ezer erakutsi.';
+$string['missing'] = 'Sisteman instalaturik ez dagoen mota bateko galdera';
+$string['missingqtypewarning'] = 'Galdera hau une honetan sisteman instalaturik ez dagoen mota batekoa da. Ezingo duzu ezer egin galdera honekin.';
 $string['pluginname'] = 'Mota falta da';
+$string['pluginnameadding'] = 'Gehitzen sisteman instalaturik ez dagoen mota bateko galdera bat';
 $string['pluginnameediting'] = 'Mota ezezaguneko galdera editatzen';
 $string['warningmissingtype'] = '<b>Galdera hau zure Moodle-n oraindik ere instalatu ez den mota batekoa da.<br />Mesedez, jakinarazi zure Moodle kudeatzaileari.</b>';

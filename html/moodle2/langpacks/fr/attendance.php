@@ -114,7 +114,7 @@ Par exemple, si vous avez gagné 8 des 10 points à ce jour (80% de participatio
 $string['gridcolumns'] = 'Colonnes de la grille';
 $string['groupsession'] = 'Groupe';
 $string['hiddensessions'] = 'Sessions masquées';
-$string['hiddensessions_help'] = 'Les sessions sont masquées si la date du début du cours est postérieure à la date des sessions. Changer la date de début des cours permettra d\'afficher les sessions masquées.
+$string['hiddensessions_help'] = 'Les sessions sont masquées si la date du début du cours est postérieure à la date des sessions.
 
 Vous pouvez utiliser cette fonction pour cacher d\'anciennes sessions au lieu de les supprimer. Mais rappelez-vous que seules les sessions visibles sont prises en compte dans le carnet de notes.';
 $string['identifyby'] = 'Identifier l\'étudiant par';
@@ -126,6 +126,7 @@ $string['invalidsessionenddate'] = 'La date de fin de session ne peut être ant�
 $string['jumpto'] = 'Aller à';
 $string['Lacronym'] = 'R';
 $string['Lfull'] = 'Retard';
+$string['lowgrade'] = 'Note faible';
 $string['modulename'] = 'Présence';
 $string['modulename_help'] = 'Le module d\'activité présence permet à un enseignant d\'enregistrer les présences aux cours et permet aux étudiants de visualiser leurs présences.
 
@@ -219,6 +220,6 @@ $string['variable'] = 'Variable';
 $string['variablesupdated'] = 'Variables mises à jour';
 $string['versionforprinting'] = 'Version pour impression';
 $string['viewmode'] = 'Mode d\'affichage';
-$string['week'] = 'Ssemaine';
+$string['week'] = 'semaine(s)';
 $string['weeks'] = 'Semaines';
 $string['youcantdo'] = 'Vous ne pouvez rien faire';

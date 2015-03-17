@@ -39,10 +39,9 @@ $string['choicefull'] = 'この投票は投票可能数の上限に達してい�
 $string['choicename'] = '投票名';
 $string['choiceopen'] = '開始日時';
 $string['choiceoptions'] = '投票オプション';
-$string['choiceoptions_help'] = 'ここであなたは、参加者が選択しなければならないオプションを指定します。
+$string['choiceoptions_help'] = 'ここであなたは参加者が選択しなければならないオプションを指定します。
 
-あなたはどのような数でも入力することができます。オプションを空白にした場合、そのオプションは表示されません。あなたが8個以上のオプションを追加したい場合、「フィールド 3 個をフォームに追加する」ボタンをクリックしてください。
-';
+あなたはどのような数でも入力することができます。オプションを空白にした場合、そのオプションは表示されません。あなたが8個以上のオプションを追加したい場合、「フィールド 3 個をフォームに追加する」ボタンをクリックしてください。';
 $string['choice:readresponses'] = '投票結果を表示する';
 $string['choicesaved'] = 'あなたの投票が保存されました。';
 $string['choicetext'] = '説明文';
@@ -78,7 +77,7 @@ $string['modulename_help'] = '投票活動モジュールにおいて、教師�
 * 例えばコースの運用に関する投票を促すように、学生の意思決定を促進するため';
 $string['modulenameplural'] = '投票';
 $string['moveselectedusersto'] = '選択したユーザを ...';
-$string['mustchooseone'] = 'あなたは、保存する前に答えを選択する必要があります。投票内容は、保存されませんでした。';
+$string['mustchooseone'] = 'あなたは保存する前に答えを選択する必要があります。投票内容は、保存されませんでした。';
 $string['noguestchoose'] = '申し訳ございません、ゲストは投票することができません。';
 $string['noresultsviewable'] = '現在、投票結果は閲覧できません。';
 $string['notanswered'] = '未投票';

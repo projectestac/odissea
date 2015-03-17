@@ -41,14 +41,7 @@ $string['anyfile'] = 'Tout fichier';
 $string['areaattachment'] = 'Annexes';
 $string['areapost'] = 'Messages';
 $string['attachment'] = 'Annexe';
-$string['attachment_help'] = '<!-- $Id$ -->
-
-
-<p>Il vous est possible de joindre un ou plusieurs fichiers (le nombre dépend des réglages du forum) de votre ordinateur à chaque message que vous postez dans un forum.</p>
-
-<p>Ceci s\'avère particulièrement utile lorsque vous souhaitez partager une image ou un document avec les autres participants du cours.</p>
-
-<p>Ce fichier peut être de n\'importe quel type. Il est cependant fortement recommandé que son nom utilise la convention des 3 lettres d\'extension utilisée sur Internet, par exemple « <b>.doc</b> » pour un document Word, « <b>.jpg</b> » ou « <b>.png</b> » pour une image, « <b>.zip</b> » pour un fichier compressé, etc. Cela facilitera le téléchargement et l\'ouverture de ce document dans le navigateur des utilisateurs.</p>';
+$string['attachment_help'] = 'Il vous est possible de joindre un ou plusieurs fichiers (le nombre dépend des réglages du forum) à chaque message que vous postez dans un forum. Si vous joignez une image, elle sera affichée en fin de message.';
 $string['attachmentnopost'] = 'Vous ne pouvez pas exporter les annexes sans identifiant de message';
 $string['attachments'] = 'Annexes';
 $string['attachmentswordcount'] = 'Annexes et nombre de mots';
@@ -141,25 +134,11 @@ $string['discussionsstartedbyrecent'] = 'Discussions récentes lancées par {$a}
 $string['discussionsstartedbyuserincourse'] = 'Discussions commencées par {$a->fullname} dans {$a->coursename}';
 $string['discussthistopic'] = 'Discuter sur ce sujet';
 $string['displayend'] = 'Fin de l\'affichage';
-$string['displayend_help'] = '<!-- $Id$ -->
-
-
-<p>Vous pouvez choisir de faire afficher votre message à partir d\'une certaine date, jusqu\'à une certaine date ou durant une période déterminée.</p>
-
-<p>Décochez la case de désactivation pour faire afficher une date de début et/ou de fin.</p>
-
-<p>Veuillez remarquer que les utilisateurs avec droit d\'administration verront les messages avant la date de parution et après la date de fin de parution indiquée.</p>';
+$string['displayend_help'] = 'Ce réglage détermine si un message de forum doit être caché après une certaine date. À noter que les administrateurs peuvent  toujours voir les messages.';
 $string['displaymode'] = 'Type d\'affichage';
 $string['displayperiod'] = 'Période d\'affichage';
 $string['displaystart'] = 'Début de l\'affichage';
-$string['displaystart_help'] = '<!-- $Id$ -->
-
-
-<p>Vous pouvez choisir de faire afficher votre message à partir d\'une certaine date, jusqu\'à une certaine date ou durant une période déterminée.</p>
-
-<p>Décochez la case de désactivation pour faire afficher une date de début et/ou de fin.</p>
-
-<p>Veuillez remarquer que les utilisateurs avec droit d\'administration verront les messages avant la date de parution et après la date de fin de parution indiquée.</p>';
+$string['displaystart_help'] = 'Ce réglage détermine si un message de forum doit être affiché à partir d\'une certaine date. À noter que les administrateurs peuvent  toujours voir les messages.';
 $string['displaywordcount'] = 'Afficher le nombre de mots';
 $string['displaywordcount_help'] = 'Ce réglage détermine si le nombre de mots de chaque message est affiché ou non.';
 $string['eachuserforum'] = 'Chaque personne lance une discussion unique';
@@ -272,12 +251,7 @@ $string['markunreadbutton'] = 'Marquer comme<br />non lu';
 $string['maxattachments'] = 'Nombre maximal d\'annexes';
 $string['maxattachments_help'] = 'Ce réglage vous permet de spécifier le nombre maximal d\'annexes de chaque message de forum.';
 $string['maxattachmentsize'] = 'Taille maximale de l\'annexe';
-$string['maxattachmentsize_help'] = '<!-- $Id$ -->
-
-
-<p>Il est possible de limiter la taille des annexes. Cette limite est fixée par la personne qui met en place le forum.</p>
-
-<p>Il est cependant parfois possible de déposer un fichier de taille supérieure à cette valeur. Dans ce cas, le fichier n\'est pas enregistré sur le serveur et un message d\'erreur est affiché.</p>';
+$string['maxattachmentsize_help'] = 'Ce réglage détermine la taille maximale de chaque fichier joint à un message de forum.';
 $string['maxtimehaspassed'] = 'Le délai pour modifier ce message ({$a}) est échu';
 $string['message'] = 'Message';
 $string['messageprovider:digests'] = 'Abonnements aux courriels quotidiens de forum';
@@ -312,12 +286,7 @@ $string['movedmarker'] = '(Déplacée)';
 $string['movethisdiscussionto'] = 'Déplacer cette discussion vers...';
 $string['mustprovidediscussionorpost'] = 'Vous devez fournir l\'identifiant soit de la discussion, soit du message à exporter';
 $string['namenews'] = 'Forum des nouvelles';
-$string['namenews_help'] = '<!-- $Id$ -->
-
-
-<p>Le forum des nouvelles est un forum spécial, automatiquement créé dans chaque nouveau cours ainsi que sur la page d\'accueil de votre Moodle. Il est destiné spécifiquement aux annonces générales. Il n\'est possible d\'avoir qu\'un seul forum des nouvelles par cours.</p>
-
-<p>Le bloc « Dernières nouvelles » affiche les discussions récentes de ce forum spécial, même si vous modifiez son nom. Pour cette raison, ce forum sera recréé automatiquement par Moodle si vous l\'avez supprimé et que vous utilisez le bloc « Dernières nouvelles ».</p>';
+$string['namenews_help'] = 'Le forum des nouvelles est un forum spécial, destiné aux annonces du cours. Il est automatiquement créé dans chaque nouveau cours. Un cours ne peut avoir qu\'un seul forum des nouvelles. Seuls les enseignants peuvent poster dans ce forum. Le bloc « Dernières nouvelles » affiche les discussions récentes du forum des nouvelles.';
 $string['namesocial'] = 'Forum informel';
 $string['nameteacher'] = 'Forum des enseignants';
 $string['newforumposts'] = 'Nouveaux messages dans les forums';

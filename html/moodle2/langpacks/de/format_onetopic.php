@@ -26,9 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Dieses Thema';
+$string['disable'] = 'Deaktivieren';
+$string['disableajax'] = 'Synchron verschieben';
+$string['disableajax_help'] = 'Deaktivieren Sie das synchrone Verschieben (Ajax), um Materialien und Aktivitäten zwischen einzelnen Themenkarten austauschen zu können.';
+$string['enable'] = 'Aktivieren';
 $string['hidefromothers'] = 'Thema verbergen';
+$string['hidetabsbar'] = 'Themenleiste verbergen';
+$string['hidetabsbar_help'] = 'Themenleiste auf der Kursseite verbergen. Die Navigation erfolgt über die Navigationselemente \'Voriger Abschnitt\' bzw. \'Nächster Abschnitt\'.';
+$string['movesectionto'] = 'Thema verschieben';
+$string['movesectionto_help'] = 'Die aktuelle Themenkarte wird in der Themenleiste entsprechend der Auswahl nach links oder rechts bewegt.';
 $string['page-course-view-topics'] = 'Jede Kursübersicht im Ein-Themen-Format';
 $string['page-course-view-topics-x'] = 'Jede Kursseite im Ein-Themen-Format';
 $string['pluginname'] = 'Ein-Themen-Format';
 $string['sectionname'] = 'Thema';
 $string['showfromothers'] = 'Thema anzeigen';
+$string['utilities'] = 'Abschnittswerkzeuge';

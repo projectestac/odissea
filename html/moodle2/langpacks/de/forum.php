@@ -160,7 +160,7 @@ $string['emaildigesttype_help'] = 'Folgende Einstellungen stehen für die Benach
 * Keine Zusammenfassung - Sie erhalten für jeden Forenbeitrag eine E-Mail.
 - Zusammenfassung - vollständige Beiträge - Sie erhalten täglich eine E-Mail. Diese enthält alle Beiträge der Foren mit ihrem gesamten Inahalt.
 - Zusammenfassung - nur Überschriften - Sie erhalten tägliche eine E-Mail. Diese enthält nur die Themenüberschriften der Forenbeiträge.';
-$string['emaildigestupdated'] = 'Die E-Mail Optioon für Zusammenfassungen wurde geändert zu \'{$a->maildigesttitle}\' für das Forum \'{$a->forum}\'. {$a->maildigestdescription}';
+$string['emaildigestupdated'] = 'Die E-Mail Option für Zusammenfassungen wurde geändert zu \'{$a->maildigesttitle}\' für das Forum \'{$a->forum}\'. {$a->maildigestdescription}';
 $string['emaildigestupdated_default'] = 'Ihr Standard Profilwert von \'{$a->maildigesttitle}\' wird für das Forum \'{$a->forum}\' verwendet. {$a->maildigestdescription}';
 $string['emptymessage'] = 'Bei Ihrem Beitrag ist ein Fehler aufgetreten. Eventuell haben Sie keinen Text eingegeben oder der Anhang war zu groß. Die Änderungen wurden nicht gespeichert.';
 $string['erroremptymessage'] = 'Die Mitteilung darf nicht leer sein.';

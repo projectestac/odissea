@@ -184,9 +184,8 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 					while($_g3 < $_g2) {
 						$j1 = $_g3++;
 						$ca = new com_wiris_quizzes_impl_Answer();
-						$ca->type = $a->type;
 						$ca->id = 1000 + $a->id * 1000 + $j1;
-						$ca->content = $parts[$j1][1];
+						$ca->set($parts[$j1][1]);
 						$userAnswers->push($ca);
 						unset($j1,$ca);
 					}
@@ -355,7 +354,7 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 				if($syntax->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING) {
 					$value = $qi->expandVariablesText($value);
 				} else {
-					$value = $qi->expandVariablesMathML($value);
+					$value = $qi->expandVariablesMathMLEval($value);
 				}
 				$qq->setCorrectAnswer($i1, $value);
 				unset($value,$i1);

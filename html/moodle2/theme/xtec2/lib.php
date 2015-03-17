@@ -29,8 +29,9 @@
  */
 
 function theme_xtec2_clean_cache(){
-	$social_icons_cache = cache::make('core', 'string');
-	$social_icons_cache->delete('social_icons',true);
+	$cache = cache::make('core', 'htmlpurifier');
+	$cache->delete('social_icons',true);
+    $cache->delete('agora_alerts',true);
 }
 
 /**

@@ -123,15 +123,9 @@ $string['pluginnotenabled'] = 'Il plugin \'{$a}\' per l\'autenticazione non è a
 $string['pluginnotinstalled'] = 'Il plugin \'{$a}\' per l\'autenticazione non è installato.';
 $string['potentialidps'] = 'Autenticati su:';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = '<h2>Descrizione</h2>
-<p>Un CAPTCHA è un programma che capisce se l\'utente è una persona o un computer. I CAPTCHA sono usati da molti siti web per impedire abusi da parte dei "bots", programmi automatici scritti di solito per generare spam. Nessun programma software è in grado, infatti, di leggere come un essere umano un testo distorto, per cui i bots non possono navigare nei siti protetti dai CAPTCHA.</p>
+$string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. E\' sufficiente inserire le parole nel campo, con lo stesso ordine e separati da uno spazio.
 
-<h2>Instruzioni</h2>
-<p>Inserire nell\'apposito box le parole che appaiono, nello stesso ordine e separate da uno spazio. Questo aiuta a impedire che programmi automatici abusino di questo servizio.</p>
-
-<p>Se non si è sicuri dell\'interpretazione delle parole, si può provare con le più probabili oppure cliccare sul link "Chiedi un altro CAPTCHA". </p>
-
-<p>Chi ha problemi di vista può cliccare sul link "Chiedi un audio CAPTCHA" per sentire un insieme di cifre che possono essere inserite invece del testo distorto.</p>';
+Se non riesci a leggere le parole, chiedi un altro CAPTCHA oppure chiedi un CAPTCHA audio.';
 $string['selfregistration'] = 'Auto creazione account';
 $string['selfregistration_help'] = 'Impostando un plugin per l\'auto creazione di account, come ad esempio il plugin per la creazione di account via email, qualsiasi visitatore del sito potrà crearsi un account. Tale funzione espone il sito al rischio che spammer possano creare account per inviare post indesiderati attraverso forum, blog od altre funzioni. Per evitare questo rischio è bene disabilitare l\' Auto creazione di account  oppure limitarla attraverso l\'impostazione <em>Domini di posta autorizzati</em> oppure ancora attivando il reCAPTCHA.';
 $string['sha1'] = 'Hash SHA-1';

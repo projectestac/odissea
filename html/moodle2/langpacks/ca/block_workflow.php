@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['defaultworkflowdescription'] = 'Una descripció per a aquest flux de treball';
 $string['description'] = 'Descripció';
+$string['disabled'] = 'Inhabilitat';

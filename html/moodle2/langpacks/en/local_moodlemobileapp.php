@@ -49,7 +49,14 @@ If your Moodle site has been configured correctly, you can use this app to:
 
 Please see http://docs.moodle.org/en/Mobile_app for all the latest information.
 
-We’d really appreciate any good reviews about the functionality so far, and your suggestions on what else you want this app to do!';
+We’d really appreciate any good reviews about the functionality so far, and your suggestions on what else you want this app to do!
+
+The app requires the following permissions:
+Record audio - For recording audio to upload to Moodle
+Read and modify the contents of your SD card - Contents are downloaded to the SD Card so you can see them offline
+Network access - To be able to connect with your Moodle site and check if you are connected or not to switch to offline mode
+Run at startup - So you receive local notifications even when the app is running in the background
+Prevent phone from sleeping - So you can receive push notifications anytime';
 $string['areyousurereset'] = 'Are you sure you want to reset the application? All of your sites will be deleted.';
 $string['audionotavailable'] = 'Audio input hardware not available';
 $string['audiorecordinstructions'] = 'Press Record to start the audio recording, Stop to stop and upload the file.';
@@ -66,11 +73,15 @@ $string['cannotaddnote'] = 'Network not reachable. Your note has been saved in t
 $string['cannotconnect'] = 'Cannot connect: Verify that your have typed correctly the URL and that your site uses Moodle 2.4 or later.';
 $string['cannotconnectssl'] = 'Cannot connect: Verify that your have typed correctly the URL, your site uses Moodle 2.4 or later and the SSL certificate is valid.';
 $string['cannotsendmessage'] = 'Network not reachable. Your message has been saved in task queue; you can resend it once you are online.';
+$string['chooseaccountuploadfile'] = 'Choose an account to upload the file to';
+$string['choosefile'] = 'Choose a file';
 $string['city'] = 'City';
 $string['close'] = 'Close';
 $string['completed'] = 'Completed';
 $string['confirmcontinuedownload'] = 'Are you sure you want to continue downloading the file?';
 $string['confirmdeletetask'] = 'Are you sure you want to delete this task?';
+$string['confirmuploadfile'] = 'You are about to upload {$a}. Are you sure you want to continue?';
+$string['confirmuploadfiletosite'] = 'Are you sure you want to upload this file to the site {$a}?';
 $string['contact'] = 'Contact';
 $string['contactadd'] = 'Contact added to your phone contacts list';
 $string['contacts'] = 'Contacts';
@@ -93,6 +104,7 @@ $string['description'] = 'Description';
 $string['details'] = 'Details';
 $string['development'] = 'Development';
 $string['deviceinfo'] = 'Device info';
+$string['disabled'] = 'Disabled';
 $string['disablenotificationforevent'] = 'Disable notification for this event';
 $string['disablenotifications'] = 'Disable notifications';
 $string['disablerdebugger'] = 'Disable remote debugging';
@@ -124,21 +136,26 @@ $string['errorduringdevicetokenrequest'] = 'Error during device token request';
 $string['errorduringdevicetokenrequesttoapns'] = 'Error during device token request to APNS';
 $string['errorlistingfiles'] = 'Error retrieving files from this directory';
 $string['errornoconnectednocache'] = 'The device is not conected and there is not cached information available for the option requested';
+$string['errorreadingfile'] = 'Error reading file "{$a}"';
+$string['errorreceivefilenosites'] = 'There are no sites stored. Please add a site before trying to upload a file.';
 $string['errorregisteringdeviceinmoodle'] = 'Error registering device in Moodle';
 $string['errorretrievinggradeinformation'] = 'Error retrieving grade information';
 $string['erroruploading'] = 'Error uploading file';
 $string['estimatedfreespace'] = 'Estimated free space';
 $string['events'] = 'Calendar events';
 $string['feedback'] = 'Feedback';
+$string['file'] = 'File';
 $string['filedownloaded'] = 'File downloaded';
 $string['filename'] = 'File name';
 $string['filesize'] = 'Size';
 $string['fileuploaded'] = 'File uploaded';
+$string['fileuploadedwithname'] = 'File successfully uploaded with name {$a}.';
 $string['fileurl'] = 'File URL';
 $string['forcecsssync'] = 'Force CSS sync now';
 $string['forceofflinemode'] = 'Force offline mode';
 $string['forumnodiscussionsyet'] = 'There are no discussion topics yet in this forum';
 $string['forumnumreplies'] = 'replies';
+$string['frontpage'] = 'Front page';
 $string['fullname'] = 'Full name';
 $string['general'] = 'General';
 $string['grade'] = 'Grade';
@@ -218,6 +235,7 @@ $string['purgecaches'] = 'Purge caches';
 $string['range'] = 'Range';
 $string['rank'] = 'Rank';
 $string['rdebuggingenabledfor'] = 'Remote debugging will be enabled during the following seconds:';
+$string['readingfile'] = 'Reading file';
 $string['record'] = 'Record';
 $string['recordaudio'] = 'Audio';
 $string['recordstored'] = 'Your recording has been stored in your private area';
@@ -226,7 +244,8 @@ $string['removecontact'] = 'Remove contact';
 $string['replay'] = 'Replay';
 $string['reply'] = 'Reply';
 $string['reportabug'] = 'Report a bug';
-$string['reportbuginfo'] = 'Tap on the email button for sending a bug report via email<br /> <br /> <b>Don\'t forget to write a detailed description of the problem in the email body</b><br /> <br />Note that some debugging information will be attached (not private information)';
+$string['reportbuginfo'] = 'Tap on the report a bug button for instructions.';
+$string['reportbugurl'] = 'https://docs.moodle.org/en/Moodle_Mobile#How_to_report_a_bug';
 $string['requiredfields'] = 'All required fields must be completed.';
 $string['reset'] = 'Reset';
 $string['resetapp'] = 'Reset application';
@@ -269,10 +288,13 @@ $string['timestart'] = 'Time start';
 $string['total'] = 'Total';
 $string['totalusage'] = 'Total usage';
 $string['type'] = 'Type';
+$string['unblockcontact'] = 'Unblock contact';
 $string['unexpectederror'] = 'Unexepected error. Please close and reopen the application to try again';
 $string['update'] = 'Update';
 $string['updatesite'] = 'Update the site';
 $string['upload'] = 'Upload';
+$string['uploadfile'] = 'Upload file';
+$string['uploadfileinstructions'] = 'To upload a file, click the button below and choose the file you want to upload.';
 $string['uploading'] = 'Uploading';
 $string['uploadingtoprivatefiles'] = 'Uploading to your private files area';
 $string['uselocalmobileplugin'] = 'This page works better when the Moodle site has the optional Mobile plugin installed';

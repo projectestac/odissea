@@ -1,5 +1,49 @@
 <?php
 
+function get_profile_next_cron($profile) {
+
+    static $daynames = array('', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
+
+    if (empty($profile->periodicity)) {
+        return false;
+    }
+
+    $period = explode(' ', $profile->periodicity);
+    $value = $period[0];
+    $unit = $period[1];
+
+    if ($profile->lastcron) {
+        $lastcronday = mktime(0, 0, 0,
+                date("n", $profile->lastcron), date("j", $profile->lastcron), date("Y", $profile->lastcron));
+        switch ($unit) {
+            case 'D':
+                $nextcron = strtotime('+'.$value.' day', $lastcronday);
+                break;
+            case 'W':
+                $nextcron = strtotime('+'.$value.' week', $lastcronday);
+                break;
+            case 'M':
+                $nextcron = strtotime('+'.$value.' month', $lastcronday);
+                break;
+            default:
+                return false;
+        }
+        if ($nextcron < time()) {
+            $nextcron = time();
+        }
+    } else {
+        $nextcron = time();
+    }
+
+    $weekday = date('N', $nextcron);
+    if($profile->weekday > 0 && $profile->weekday != $weekday) {
+        $nextcron = strtotime('next '.$daynames[$profile->weekday], $nextcron);
+    }
+
+    return $nextcron;
+}
+
+
 function show_profiles() {
     global $DB, $OUTPUT, $CFG;
     $profiles = $DB->get_records('bigdata_profiles');
@@ -26,28 +70,26 @@ function show_profiles() {
             $period = explode(' ', $profile->periodicity);
             $value = $period[0];
             $unit = $period[1];
-            $lastcronday = mktime(0, 0, 0,
-                date("n", $profile->lastcron), date("j", $profile->lastcron), date("Y", $profile->lastcron));
             switch ($unit) {
                 case 'D':
                     $period = $value . ' ' . get_string('days');
-                    $nextcron = strtotime('+'.$value.' day', $lastcronday);
                     break;
                 case 'W':
                     $period = $value . ' ' . get_string('weeks');
-                    $nextcron = strtotime('+'.$value.' week', $lastcronday);
                     break;
                 case 'M':
                     $period = $value . ' ' . get_string('months');
-                    $nextcron = strtotime('+'.$value.' month', $lastcronday);
                     break;
                 default:
                     continue;
             }
-            if ($nextcron < time()) {
+
+            $nextcron = get_profile_next_cron($profile);
+
+            if ($nextcron <= time()) {
                 $nextcron = get_string('today');
             } else {
-                $nextcron = userdate($nextcron, get_string('strftimedate', 'langconfig'));
+                $nextcron = userdate($nextcron, get_string('strftimedaydate', 'langconfig'));
             }
             $row[] = $period;
             $row[] = $nextcron;
@@ -90,6 +132,8 @@ function bigdata_get_profile_from_form($data) {
     $profile->tablefields = isset($data->tablefields) ? implode(',', $data->tablefields) : '';
 
     $profile->periodicity = ($data->periodicity > 0 && $data->periodicity_unit != '') ? $data->periodicity.' '.$data->periodicity_unit : 0;
+    $profile->weekday = $data->weekday;
+    $profile->savedirectory = $data->savedirectory;
     return $profile;
 }
 
@@ -108,6 +152,8 @@ function bigdata_get_formdata_from_profile($profile) {
         $data['periodicity'] = $period[0];
         $data['periodicity_unit'] = $period[1];
     }
+    $data['weekday']  = $profile->weekday;
+    $data['savedirectory']  = $profile->savedirectory;
     return $data;
 }
 

@@ -41,10 +41,8 @@ $string['filloutanswers'] = 'Use the MarvinJS Molecular editor to create the ans
 $string['filloutoneanswer'] = '<b><ul>
 <li>Draw a complete reaction or resonance conversion with curved arrows in the MarvinJS editor below.</li>
 <li>Use multiple arrows for muti-step reactions.</li>
-<li>Choose whether you want the the products removed from the template (Only for single step reactions).</li>
-<li>Choose whether the arrow addition order is important or not.</li>
 <li>Click the "Insert from editor" button when finished.</li>
-<li>Optionally:  Add your complete incorrect reactions/resonance and incorrect arrows to the other answer fields.</li>
+<li>Optionally:  Add your incorrect reactions/resonance transforms and incorrect arrows to the other answer fields.</li>
 </ul></b>';
 $string['insert'] = 'Insert from editor';
 $string['insertfromeditor'] = 'Insert from editor';

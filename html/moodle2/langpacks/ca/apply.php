@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Descripció';
+$string['public'] = 'Públic';

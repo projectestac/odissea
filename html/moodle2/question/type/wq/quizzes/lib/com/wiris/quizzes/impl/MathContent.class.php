@@ -34,7 +34,9 @@ class com_wiris_quizzes_impl_MathContent extends com_wiris_util_xml_Serializable
 			throw new HException('Unable to call «'.$m.'»');
 	}
 	static $TYPE_TEXT = "text";
+	static $TYPE_TEXT_EVAL = "textEval";
 	static $TYPE_MATHML = "mathml";
+	static $TYPE_MATHML_EVAL = "mathmlEval";
 	static $TYPE_IMAGE = "image";
 	static $TYPE_IMAGE_REF = "imageref";
 	static $TYPE_STRING = "string";

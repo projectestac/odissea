@@ -62,7 +62,7 @@ $string['exportcomplete'] = 'ポートフォリオのエクスポートが完了
 $string['exportedpreviously'] = '前のエクスポート';
 $string['exportexceptionnoexporter'] = '活動セッションでportfolio_export_exceptionがスローされましたが、エクスポーターオブジェクトがありません。';
 $string['exportexpired'] = 'ポートフォリオエクスポート期限切れ';
-$string['exportexpireddesc'] = 'あなたは、いくつかの情報を繰り返しエクスポートしようとしているか、空のエクスポートを開始しようとしています。適切にエクスポートするには、オリジナルのロケーションに戻って、再度エクスポートを開始する必要があります。エクスポートの後、あなたがブラウザの戻るボタンを使用したか、無効なURLをブックマークした場合、この現象が時々発生します。';
+$string['exportexpireddesc'] = 'あなたはいくつかの情報を繰り返しエクスポートしようとしているか、空のエクスポートを開始しようとしています。適切にエクスポートするには、オリジナルのロケーションに戻って、再度エクスポートを開始する必要があります。エクスポートの後、あなたがブラウザの戻るボタンを使用したか、無効なURLをブックマークした場合、この現象が時々発生します。';
 $string['exporting'] = 'ポートフォリオへのエクスポート';
 $string['exportingcontentfrom'] = '{$a} からコンテンツをエクスポートする';
 $string['exportingcontentto'] = 'コンテンツの {$a} へのエクスポート';
@@ -90,7 +90,7 @@ $string['highdbsizethreshold'] = '高程度のデータベース転送サイズ'
 $string['highdbsizethresholddesc'] = 'この数を超えると高程度の転送時間が必要だと見なされるデータベースレコード数です。';
 $string['highfilesizethreshold'] = '高程度のファイル転送サイズ';
 $string['highfilesizethresholddesc'] = 'この閾値を超えると高程度の転送時間が必要だと見なされるファイルサイズです。';
-$string['insanebody'] = 'こんにちは! あなたは、このメッセージを {$a->sitename} の管理者として受信しています。
+$string['insanebody'] = 'こんにちは! あなたはこのメッセージを {$a->sitename} の管理者として受信しています。
 
 設定が正しくないため、いくつかのポートフォリオプラグインが自動的に無効にされました。これは現在のところ、ユーザがこれらのポートフォリオにコンテンツをエクスポートできないことを意味します。
 
@@ -99,7 +99,7 @@ $string['insanebody'] = 'こんにちは! あなたは、このメッセージ�
 {$a->textlist}
 
 この問題は、{$a->fixurl} にアクセスして、可能な限り早く訂正されるべきです。';
-$string['insanebodyhtml'] = 'p>こんにちは! あなたは、このメッセージを {$a->sitename} の管理者として受信しています。</p>
+$string['insanebodyhtml'] = 'p>こんにちは! あなたはこのメッセージを {$a->sitename} の管理者として受信しています。</p>
 {$a->htmllist}
 <p>この問題は、<a href="{$a->fixurl}">ポートフォリオ設定ページ</a>にアクセスして、可能な限り早く訂正されるべきです。</p>';
 $string['insanebodysmall'] = 'こんにちは! あなたはこのメッセージを {$a->sitename} の管理者として受信しています。設定が正しくないため、いくつかのポートフォリオプラグインが自動的に無効にされました。これは現在のところ、ユーザがこれらのポートフォリオにコンテンツをエクスポートできないことを意味します。この問題は、{$a->fixurl} にアクセスして、可能な限り早く訂正されるべきです。';
@@ -142,7 +142,7 @@ $string['moderatedbsizethresholddesc'] = 'この数を超えると中程度の�
 $string['moderatefilesizethreshold'] = '中程度のファイル転送サイズ';
 $string['moderatefilesizethresholddesc'] = 'この閾値を超えると中程度の転送時間が必要だと見なされるファイルサイズです。';
 $string['multipleinstancesdisallowed'] = '複数インスタンスを許可されていないプラグイン ({$a}) に別のインスタンスの作成を試みました。';
-$string['mustsetcallbackoptions'] = 'あなたは、portfolio_add_buttonコンストラクタまたはset_callback_optionsメソッドの使用に関するコールバックオプションを設定する必要があります。';
+$string['mustsetcallbackoptions'] = 'あなたはportfolio_add_buttonコンストラクタまたはset_callback_optionsメソッドの使用に関するコールバックオプションを設定する必要があります。';
 $string['noavailableplugins'] = '申し訳ございません、あなたがエクスポートできるポートフォリオはありません。';
 $string['nocallbackclass'] = '使用するコールバッククラス ({$a}) を見つけることができませんでした。';
 $string['nocallbackcomponent'] = '{$a} で指定されたコンポーネントが見つかりませんでした。';
@@ -157,7 +157,7 @@ $string['nopermissions'] = '申し訳ございません、このエリアから�
 $string['notexportable'] = '申し訳ございません、あなたがエクスポートを試みているコンテンツタイプは、エクスポートできません。';
 $string['notimplemented'] = '申し訳ございません、あなたはまだ実装されていないフォーマット ({$a}) でコンテンツのエクスポートを試みています。';
 $string['notyetselected'] = '未選択';
-$string['notyours'] = 'あなたは、自分に属していないポートフォリオエクスポートの再開を試みています!';
+$string['notyours'] = 'あなたは自分に属していないポートフォリオエクスポートの再開を試みています!';
 $string['nouploaddirectory'] = 'あなたのデータをパッケージするための一時ディレクトリを作成できませんでした。';
 $string['off'] = '有効 - 非表示';
 $string['on'] = '有効 - 表示';

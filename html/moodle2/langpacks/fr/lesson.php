@@ -34,10 +34,7 @@ $string['actionaftercorrectanswer_help'] = 'Après une réponse correcte, il y a
 * Afficher une page sans réponse : les pages sont affichées aléatoirement, certaines pages déjà vues par l\'étudiant lui étant montrée une nouvelle fois, s\'il n\'y a pas répondu ou s\'il y a répondu incorrectement';
 $string['actions'] = 'Actions';
 $string['activitylink'] = 'Lien vers l\'activité suivante';
-$string['activitylink_help'] = '<!-- $Id$ -->
-
-
-<p>Le menu déroulant présente toutes les activités de ce cours. En en choisissant une, un lien vers cette activité apparaîtra à la fin de la leçon.</p>';
+$string['activitylink_help'] = 'Afin de fournir un lien vers une autre activité de cours au terme de la leçon, choisissez une activité dans le menu déroulant.';
 $string['activitylinkname'] = 'Allez à {$a}';
 $string['activityoverview'] = 'Vous avez des leçons à terminer';
 $string['addabranchtable'] = 'Ajouter une page de contenu';
@@ -59,7 +56,7 @@ $string['and'] = 'ET';
 $string['answer'] = 'Réponse';
 $string['answeredcorrectly'] = 'répondu correctement.';
 $string['answersfornumerical'] = 'Les réponses aux questions numériques doivent être constituées d\'une valeur minimale et d\'une valeur maximale.';
-$string['arrangebuttonshorizontally'] = 'Arranger horizontalement les boutons de contenu ?';
+$string['arrangebuttonshorizontally'] = 'Arranger horizontalement les boutons de contenu&nbsp;?';
 $string['attempt'] = 'Tentative : {$a}';
 $string['attempts'] = 'Tentatives';
 $string['attemptsdeleted'] = 'Tentatives supprimées';
@@ -70,39 +67,26 @@ $string['averagetime'] = 'Durée moyenne';
 $string['branch'] = 'Contenu';
 $string['branchtable'] = 'Table de contenu';
 $string['cancel'] = 'Annuler';
-$string['cannotfindanswer'] = 'Impossible de trouver la réponse';
-$string['cannotfindattempt'] = 'Impossible de trouver la tentative';
-$string['cannotfindessay'] = 'Impossible de trouver la composition';
-$string['cannotfindfirstgrade'] = 'Impossible de trouver les évaluations';
+$string['cannotfindanswer'] = 'Erreur : impossible de trouver la réponse';
+$string['cannotfindattempt'] = 'Erreur : impossible de trouver la tentative';
+$string['cannotfindessay'] = 'Erreur : impossible de trouver la composition';
+$string['cannotfindfirstgrade'] = 'Erreur : impossible de trouver les notes';
 $string['cannotfindfirstpage'] = 'Impossible de trouver la première page';
-$string['cannotfindgrade'] = 'Impossible de trouver les notes';
-$string['cannotfindnewestgrade'] = 'Impossible de trouver la note la plus récente';
+$string['cannotfindgrade'] = 'Erreur : impossible de trouver les notes';
+$string['cannotfindnewestgrade'] = 'Erreur : impossible de trouver la note la plus récente';
 $string['cannotfindnextpage'] = 'Sauvegarde de la leçon : page suivante non trouvée !';
 $string['cannotfindpagerecord'] = 'Ajout d\'un fin de branche : enregistrement de page non trouvé';
 $string['cannotfindpages'] = 'Impossible de trouver les pages de la leçon';
 $string['cannotfindpagetitle'] = 'Confirmation de suppression : titre de page non trouvé';
 $string['cannotfindpreattempt'] = 'L\'enregistrement de la tentative précédente n\'a pas été trouvé !';
-$string['cannotfindrecords'] = 'Impossible de trouver les enregistrements de la leçon';
-$string['cannotfindtimer'] = 'Impossible de trouver les enregistrements de la table lesson_timer';
-$string['cannotfinduser'] = 'Impossible de trouver les utilisateurs';
-$string['canretake'] = 'Les étudiants peuvent refaire la leçon';
+$string['cannotfindrecords'] = 'Erreur : impossible de trouver les enregistrements de la leçon';
+$string['cannotfindtimer'] = 'Erreur : impossible de trouver les enregistrements de la table lesson_timer';
+$string['cannotfinduser'] = 'Erreur : impossible de trouver les utilisateurs';
+$string['canretake'] = '{$a} peut refaire la leçon';
 $string['casesensitive'] = 'Utiliser les expressions régulières';
-$string['casesensitive_help'] = '<!-- $Id$ -->
-
-
-<p>Quelques types de question ont une option pouvant être activée en cochant cette case. Les types de question concernés et les détails de l\'option correspondante sont décrits ci-dessous.</p>
-
-<ol>
-
-<li><p><strong>Question à choix multiples.</strong> Une variante des questions à choix multiples sont les « <strong>Questions à choix multiples et à réponses multiples</strong> ». Si l\'option est activée, l\'étudiant doit alors cocher toutes les réponses correctes par l\'ensemble proposé. La question peut indiquer ou non le <em>nombre</em> de bonnes réponses. Par exemple « Choisir deux rois de France dans la liste des personnages suivants » dans le premier cas, et « Lesquels de ces personnages ont été des rois de France ? » Le nombre des bonnes réponses peut varier de 1 au nombre de choix proposés. Une telle question avec une seule bonne réponse est <strong>différente</strong> d\'une simple question à choix multiples, car contrairement à celle-ci, elle permet à l\'étudiant de choisir plusieurs réponses.</p></li>
-
-<li><p><strong>Question à réponse courte.</strong> Par défaut, le programme compare la (ou les) réponse(s) attendue(s) avec la réponse saisie par l\'étudiant en utilisant le système d\'analyse simple. Cochez la case <strong>Utiliser les expressions régulières:</strong> si vous souhaitez utiliser cet autre système.</p></li>
-
-</ol>
-
-<p>Les autres types de questions n\'utilisent pas l\'option de question.</p>';
+$string['casesensitive_help'] = 'Si ce réglage est activé, des expressions régulières peuvent être utilisées pour l\'analyse des réponses.';
 $string['checkbranchtable'] = 'Vérifier la page de contenu';
-$string['checkedthisone'] = 'ont coché cette option.';
+$string['checkedthisone'] = 'Ont coché cette option.';
 $string['checknavigation'] = 'Vérifier la navigation';
 $string['checkquestion'] = 'Vérifier la question';
 $string['classstats'] = 'Statistique de classe';
@@ -131,17 +115,14 @@ $string['confirmdeletionofthispage'] = 'Voulez-vous vraiment supprimer cette pag
 $string['congratulations'] = 'Félicitations - la leçon est terminée';
 $string['continue'] = 'Continuer';
 $string['continuetoanswer'] = 'Continuer pour modifier les réponses.';
-$string['continuetonextpage'] = 'Continuer vers la page suivante';
+$string['continuetonextpage'] = 'Continuer vers la page suivante.';
 $string['correctanswerjump'] = 'Lien après réponse correcte';
 $string['correctanswerscore'] = 'Score des réponses correctes';
 $string['correctresponse'] = 'Feedback réponse correcte';
 $string['createaquestionpage'] = 'Créer une page question';
 $string['credit'] = 'Crédit';
 $string['customscoring'] = 'Score personnalisé';
-$string['customscoring_help'] = '<!-- $Id$ -->
-
-
-<p>Cette option vous permettra d\'affecter une valeur numérique à chaque réponse. Les réponses peuvent avoir une valeur négative ou positive. Les questions importées auront automatiquement la valeur 1 pour les réponses correctes et 0 pour les réponses incorrectes. Toutefois, vous pourrez changer ces valeurs après l\'importation.</p>';
+$string['customscoring_help'] = 'Si cette option est activée, une valeur numérique négative ou positive peut être attribuée à chaque réponse.';
 $string['deadline'] = 'À faire jusqu\'au';
 $string['defaultessayresponse'] = 'Votre composition sera évaluée par votre enseignant.';
 $string['deleteallattempts'] = 'Supprimer toutes les tentatives des leçons';
@@ -150,35 +131,13 @@ $string['deletedpage'] = 'Page supprimée';
 $string['deleting'] = 'En cours de suppression';
 $string['deletingpage'] = 'Suppression de la page ? {$a}';
 $string['dependencyon'] = 'Dépend de';
-$string['dependencyon_help'] = '<!-- $Id$ -->
-
-
-<p>Grâce à ce réglage, l\'accès à cette leçon peut dépendre des résultats de l\'étudiant à d\'autres leçons. Si les résultats attendus ne sont pas atteints, l\'étudiant n\'aura pas accès à cette leçon.</p>
-
-<p>Les conditions applicables sont les suivantes.</p>
-
-<ul>
-
-<li><b>Durée utilisée :</b> l\'étudiant doit avoir passé au moins cette durée sur la leçon considérée.</li>
-
-<li><b>Terminé :</b> l\'étudiant doit avoir terminé la leçon considérée.</li>
-
-<li><b>Note plus haute que :</b> la note obtenue à leçon considérée doit avoir été supérieure à la note définie ici.</li>
-
-</ul>
-
-<p>Autant que de besoin, il est possible de combiner ces différents critères.</p>';
+$string['dependencyon_help'] = 'Grâce à ce réglage, l\'accès à cette leçon peut dépendre des résultats de l\'étudiant à d\'autres leçons dans le même cours. Il est possible de combiner les critères « durée utilisée », « terminé » ou « note plus haute que ».';
 $string['description'] = 'Description';
 $string['detailedstats'] = 'Statistiques détaillées';
 $string['didnotanswerquestion'] = 'N\'a pas répondu à cette question';
 $string['didnotreceivecredit'] = 'N\'a pas reçu de point';
 $string['displaydefaultfeedback'] = 'Utiliser le feedback par défaut';
-$string['displaydefaultfeedback_help'] = '<!-- $Id$ -->
-
-
-<p>Réglé sur <strong>Oui</strong>, ce paramètre permet d\'afficher un feedback par défaut lorsqu\'aucun autre n\'a été défini spécifiquement. Les feedbacks par défaut sont « C\'est une réponse correcte » et « C\'est une mauvaise réponse ».</p>
-
-<p>Réglé sur <strong>Non</strong>, ce paramètre n\'affiche aucun feedback s\'il n\'a pas été défini. Dans ce cas, l\'utilisateur est directement envoyé à la question suivante.</p>';
+$string['displaydefaultfeedback_help'] = 'Si ce réglage est activé, un feedback par défaut est affiché lorsqu\'aucun autre n\'a été défini spécifiquement. Les feedbacks par défaut sont « C\'est une réponse correcte » et « C\'est une mauvaise réponse ».';
 $string['displayhighscores'] = 'Afficher les meilleurs résultats';
 $string['displayinleftmenu'] = 'Afficher dans le menu à gauche ?';
 $string['displayleftif'] = 'Note minimale pour afficher le menu';
@@ -206,10 +165,10 @@ $string['endofbranch'] = 'Fin de branchement';
 $string['endofcluster'] = 'Fin du groupe';
 $string['endofclustertitle'] = 'Fin de groupe';
 $string['endoflesson'] = 'Fin de la leçon';
-$string['enteredthis'] = 'a tapé ceci';
+$string['enteredthis'] = 'a saisi ceci.';
 $string['entername'] = 'Saississez un pseudonyme pour la liste des meilleurs résultats';
 $string['enterpassword'] = 'Veuillez saisir le mot de passe :';
-$string['eolstudentoutoftime'] = 'Attention : le temps à votre disposition pour cette leçon est échu. Votre dernière réponse ne sera pas prise en compte si elle est survenue après l\'échéance.';
+$string['eolstudentoutoftime'] = 'Attention&nbsp;: le temps à votre disposition pour cette leçon est échu. Votre dernière réponse ne sera pas prise en compte si elle est survenue après l\'échéance.';
 $string['eolstudentoutoftimenoanswers'] = 'vous n\'avez répondu à aucune question. Votre note pour cette leçon est de 0.';
 $string['essay'] = 'Composition';
 $string['essayemailmessage'] = '<p>Question ouverte :<blockquote>{$a->question}</blockquote></p><p>Votre réponse :<blockquote><em>{$a->response}</em></blockquote></p><p>Commentaire de l\'enseignant :<blockquote><em>{$a->comment}</em></blockquote></p><p>Vous avez obtenu {$a->earned} points sur un total de {$a->outof} à cette question ouverte.</p><p>Votre note pour cette leçon est maintenant {$a->newgrade} &#37;.</p>';
@@ -289,52 +248,18 @@ $string['maxtime'] = 'Durée maximale (minutes)';
 $string['maxtimewarning'] = 'Il vous reste {$a} minute(s) pour terminer la leçon.';
 $string['mediaclose'] = 'Afficher un bouton fermer :';
 $string['mediafile'] = 'Pop-up vers fichier';
-$string['mediafile_help'] = '<!-- $Id$ -->
-
-
-<p>Cette option créera au début de la leçon une fenêtre surgissante contenant un fichier (par exemple un fichier mp3) ou une page web. En outre, un lien permettant de rouvrir cette fenêtre sera affiché sur chacune des pages de la leçon.</p>
-
-<p>Un bouton « Fermer la fenêtre » peut être affiché optionnellement au bas de la fenêtre surgissante. la taille de la fenêtre (hauteur et largeur) peut également être spécifiée.</p>
-
-<p>Les types de fichiers ci-dessous peuvent être placés dans une telle fenêtre.</p>
-
-<ul>
-
-<li>MP3</li>
-
-<li>Quicktime</li>
-
-<li>Realmedia</li>
-
-<li>Windows Media Player</li>
-
-<li>HTML</li>
-
-<li>Texte</li>
-
-<li>GIF</li>
-
-<li>JPEG</li>
-
-<li>PNG</li>
-
-</ul>
-
-<p>Tous les autres types de fichiers seront indiqués par un lien pour téléchargement.</p>';
+$string['mediafile_help'] = 'Cette option créera au début de la leçon une fenêtre surgissante contenant un fichier. En outre, un lien permettant de rouvrir cette fenêtre sera affiché sur chacune des pages de la leçon.';
 $string['mediafilepopup'] = 'Cliquer ici pour afficher';
 $string['mediaheight'] = 'Hauteur fenêtre :';
 $string['mediawidth'] = 'Largeur :';
 $string['messageprovider:graded_essay'] = 'Notification d\'évaluation de composition';
 $string['minimumnumberofquestions'] = 'Nombre minimal de questions';
-$string['minimumnumberofquestions_help'] = 'Ce paramètre spécifie le nombre minimum de questions qui seront utilisées pour calculer la note de l\'activité. Si la leçon contient une ou plusieurs pages de contenu, le nombre minimum de questions doit être fixé à zéro.
+$string['minimumnumberofquestions_help'] = 'Ce réglage détermine le nombre minimum de questions qui seront utilisées pour calculer la note de l\'activité. Si la leçon contient une ou plusieurs pages de contenu, le nombre minimum de questions doit être fixé à zéro.
 
-S\'il est fixé à 20, cela signifie que le texte suivant sera ajouté à la page d\'accueil de la leçon : « Dans cette leçon, vous devez répondre à au moins 20 questions. Vous pouvez répondre répondre à plus de questions si vous le souhaitez. Quoiqu\'il en soit, si vous répondez à moins de 20 questions, votre note sera calculée comme si vous en aviez traité 20.»';
+S\'il est fixé à 20, cela signifie que le texte suivant sera ajouté à la page d\'accueil de la leçon : « Dans cette leçon, vous devez répondre à au moins 20 questions. Vous pouvez répondre répondre à plus de questions si vous le souhaitez. Quoiqu\'il en soit, si vous répondez à moins de 20 questions, votre note sera calculée comme si vous en aviez traité 20.»';
 $string['missingname'] = 'Veuillez saisir un pseudo';
 $string['modattempts'] = 'Permettre la relecture par les étudiants';
-$string['modattempts_help'] = '<!-- $Id$ -->
-
-
-<p>Ce réglage permet aux étudiants de revenir sur une leçon passée pour modifier leurs réponses.</p>';
+$string['modattempts_help'] = 'Si ce réglage est activé, les étudiants peuvent reprendre la leçon depuis le début.';
 $string['modattemptsnoteacher'] = 'La critique par les étudiants ne fonctionne que pour les étudiants.';
 $string['modulename'] = 'Leçon';
 $string['modulename_help'] = 'Le module d\'activité leçon permet à l\'enseignant de proposer des contenus et/ou des activités d\'exercice d\'une façon intéressante et flexible.
@@ -355,20 +280,7 @@ $string['movedpage'] = 'Page déplacée';
 $string['movepagehere'] = 'Déplacer la page ici';
 $string['moving'] = 'Déplacement de la page : {$a}';
 $string['multianswer'] = 'Plusieurs réponses';
-$string['multianswer_help'] = '<!-- $Id$ -->
-
-
-<p>Quelques types de question ont une option pouvant être activée en cochant cette case. Les types de question concernés et les détails de l\'option correspondante sont décrits ci-dessous.</p>
-
-<ol>
-
-<li><p><strong>Question à choix multiples.</strong> Une variante des questions à choix multiples sont les « <strong>Questions à choix multiples et à réponses multiples</strong> ». Si l\'option est activée, l\'étudiant doit alors cocher toutes les réponses correctes par l\'ensemble proposé. La question peut indiquer ou non le <em>nombre</em> de bonnes réponses. Par exemple « Choisir deux rois de France dans la liste des personnages suivants » dans le premier cas, et « Lesquels de ces personnages ont été des rois de France ? » Le nombre des bonnes réponses peut varier de 1 au nombre de choix proposés. Une telle question avec une seule bonne réponse est <strong>différente</strong> d\'une simple question à choix multiples, car contrairement à celle-ci, elle permet à l\'étudiant de choisir plusieurs réponses.</p></li>
-
-<li><p><strong>Question à réponse courte.</strong> Par défaut, le programme compare la (ou les) réponse(s) attendue(s) avec la réponse saisie par l\'étudiant en utilisant le système d\'analyse simple. Cochez la case <strong>Utiliser les expressions régulières:</strong> si vous souhaitez utiliser cet autre système.</p></li>
-
-</ol>
-
-<p>Les autres types de questions n\'utilisent pas l\'option de question.</p>';
+$string['multianswer_help'] = 'Veuillez cocher cette option si toutes les réponses correctes dans l\'ensemble proposé doivent être indiquées.';
 $string['multichoice'] = 'Choix multiples';
 $string['multipleanswer'] = 'Réponses multiples';
 $string['nameapproved'] = 'Nom approuvé';
@@ -399,21 +311,13 @@ $string['notitle'] = 'Pas de titre';
 $string['numberofcorrectanswers'] = 'Nombre de réponses correctes : {$a}';
 $string['numberofcorrectmatches'] = 'Nombre d\'appariements corrects : {$a}';
 $string['numberofpagestoshow'] = 'Nombre de pages à afficher';
-$string['numberofpagestoshow_help'] = '<!-- $Id$ -->
-
-
-<p>Ce paramètre n\'est utilisé que pour les leçons de type « cartes éclair » (flash cards). La valeur par défaut est de 0, ce qui signifie que toutes la pages (cartes) sont affichées dans une leçon. Une valeur non-nulle de ce paramètre définit le nombre de pages à afficher. La leçon est terminée après que ce nombre de pages a été affiché et la note est présentée à l\'étudiant.</p>
-
-<p>Si la valeur de ce paramètre dépasse le nombre effectif de pages de la leçon, la fin de la leçon a lieu après l\'affichage de toutes les pages.</p>';
+$string['numberofpagestoshow_help'] = 'Ce réglage détermine le nombre de pages affichées dans une leçon. Il n\'est valable que pour les leçons où les pages sont affichées en ordre aléatoire (lorsque le réglage « Action après réponse correcte » est fixé à « Afficher une page non vue » ou « Afficher une page sans réponse »). Si le nombre indiqué est 0, toutes les pages seront affichées.';
 $string['numberofpagesviewed'] = 'Nombre de questions répondues : {$a}';
 $string['numberofpagesviewednotice'] = 'Nombre de questions répondues : {$a->nquestions} ; (vous devez répondre au moins à {$a->minquestions})';
 $string['numerical'] = 'Numérique';
 $string['ongoing'] = 'Afficher le score actuel';
 $string['ongoingcustom'] = 'Vous avez jusqu\'ici reçu {$a->score} sur un maximum de {$a->currenthigh} point(s).';
-$string['ongoing_help'] = '<!-- $Id$ -->
-
-
-<p>Grâce à cette option, l\'étudiant pourra voir, sur chaque page, son nombre de points par rapport au maximum possible. Par exemple : sur quatre questions à 5 points, l\'étudiant s\'est trompé à une. Il sera affiché qu\'il a a obtenu 15 points sur 20.</p>';
+$string['ongoing_help'] = 'Si ce réglage est activé, l\'étudiant verra sur chaque page, le nombre des points qu\'il a obtenu par rapport au total possible jusqu\'ici.';
 $string['ongoingnormal'] = 'Vous avez répondu correctement à {$a->correct} tentatives sur {$a->viewed}.';
 $string['onpostperpage'] = 'Seulement un message par note';
 $string['options'] = 'Options';
@@ -493,10 +397,7 @@ $string['skip'] = 'Sauter la navigation';
 $string['slideshow'] = 'Diaporama';
 $string['slideshowbgcolor'] = 'Couleur de fond du diaporama';
 $string['slideshowheight'] = 'Hauteur du diaporama';
-$string['slideshow_help'] = '<!-- $Id$ -->
-
-
-<p>Ce réglage permet d\'afficher la leçon à la manière d\'une présentation, avec une largeur et une hauteur déterminées, et une couleur de fond personnalisée. Le cas échéant, une barre de défilement s\'affichera. Les pages de questions échapperont à ce mode, seules les pages de tables de branchements s\'afficheront par défaut comme une présentation. Des boutons avec l\'inscription (dans la langue par défaut) « Précédent » et « Suivant » apparaîtront dans le coin inférieur droit de la présentation si la page a prévu cette option. Les autres boutons seront centrés en bas de la présentation.</p>';
+$string['slideshow_help'] = 'Si ce réglage est activé, la leçon sera affichée à la manière d\'une présentation (diaporama), avec une largeur et une hauteur déterminées.';
 $string['slideshowwidth'] = 'Largeur du diaporama';
 $string['startlesson'] = 'Commencer la leçon';
 $string['studentattemptlesson'] = 'Tentative numéro {$a->attempt} de {$a->firstname} {$a->lastname}';
@@ -528,10 +429,7 @@ $string['updatefailed'] = 'Modification échouée';
 $string['usemaximum'] = 'Utiliser le maximum';
 $string['usemean'] = 'Utiliser la moyenne';
 $string['usepassword'] = 'Leçon protégée par mot de passe';
-$string['usepassword_help'] = '<!-- $Id$ -->
-
-
-<p>L\'étudiant doit saisir un mot de passe pour accéder à la leçon.</p>';
+$string['usepassword_help'] = 'Si ce réglage est activé, un mot de passe doit être saisi pour accéder à la leçon.';
 $string['viewgrades'] = 'Afficher les notes';
 $string['viewhighscores'] = 'Afficher les meilleurs résultats.';
 $string['viewreports'] = 'Afficher les {$a->attempts} tentatives terminées';

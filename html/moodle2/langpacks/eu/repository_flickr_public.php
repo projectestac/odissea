@@ -54,4 +54,4 @@ $string['secret'] = 'Sekretua';
 $string['sharealike'] = 'Bai, baldin eta gainerakoek berbera partekatzen badute';
 $string['tag'] = 'Etiketa';
 $string['username'] = 'Flickr kontuaren e-posta';
-$string['watermark'] = 'Ur-marka argazkiei gehitu';
+$string['watermark'] = 'Gehitu ur-marka argazkiei';

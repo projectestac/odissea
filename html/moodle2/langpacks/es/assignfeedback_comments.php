@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['default'] = 'Habilitado por defecto';
+$string['default'] = 'Activado por defecto';
 $string['default_help'] = 'Si se activa la opcion, este método de retroalimentación estará habilitado por omisión para todas las tareas nuevas.';
 $string['enabled'] = 'Comentarios de retroalimentación';
 $string['enabled_help'] = 'Si está habilitado, el evaluador puede dejar comentarios de retroalimentación para cada entrega.';

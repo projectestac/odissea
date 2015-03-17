@@ -41,7 +41,7 @@ $string['autonumbering_help'] = 'Habilita o deshabilita la numeració automatitz
 $string['average'] = 'Mitjana';
 $string['bold'] = 'Negreta';
 $string['cancel_moving'] = 'Cancel·la el moviment';
-$string['cannotmapfeedback'] = 'Problemes a la base de dades, impossible fer el mapa de la realimentació del curs.';
+$string['cannotmapfeedback'] = 'Hi ha un problema amb la base de dades. No es pot fer el mapatge de la retroacció al curs.';
 $string['cannotsavetempl'] = 'no es poden desar les plantilles';
 $string['cannotunmap'] = 'Problemes amb la base de dades, no es pot desfer el mapa';
 $string['captcha'] = 'Test de Turing';
@@ -50,11 +50,11 @@ $string['check'] = 'Opcions múltiples - respostes múltiples';
 $string['checkbox'] = 'Opcions múltiples - es permeten respostes múltiples (caselles de selecció)';
 $string['check_values'] = 'Respostes possibles';
 $string['choosefile'] = 'Tria un fitxer';
-$string['chosen_feedback_response'] = 's\'ha triat la resposta de la realimentació';
+$string['chosen_feedback_response'] = 'resposta de retroacció triada';
 $string['completed'] = 'completat';
 $string['completed_feedbacks'] = 'Respostes enviades';
 $string['complete_the_form'] = 'Responeu les preguntes...';
-$string['completionsubmit'] = 'Mostra com completada si s\'envia la realimentació';
+$string['completionsubmit'] = 'Mostra com a completada si s\'ha tramès la retroacció';
 $string['configallowfullanonymous'] = 'Si habiliteu aquesta opció, els usuaris podran completar una activitat de retroacció a la pàgina principal sense necessitat d\'iniciar sessió.';
 $string['confirmdeleteentry'] = 'Esteu segurs de voler suprimir aquesta entrada?';
 $string['confirmdeleteitem'] = 'Esteu segurs de voler suprimir aquest element?';
@@ -100,7 +100,7 @@ $string['edit_item'] = 'Edita la pregunta';
 $string['edit_items'] = 'Edita les preguntes';
 $string['email_notification'] = 'Habilita la notificació de les trameses';
 $string['email_notification_help'] = 'Si s\'habilita aquesta opció, el professorat rebrà notificació de les trameses de retroaccions';
-$string['emailteachermail'] = '{$a->username} ha completat l\'activitat de realimentació: \'{$a->feedback}\'
+$string['emailteachermail'] = '{$a->username} ha completat l\'activitat de retroacció: \'{$a->feedback}\'
 
 Podeu veure-la aquí:
 
@@ -114,25 +114,25 @@ $string['eventresponsedeleted'] = 'S\'ha suprimit la resposta';
 $string['eventresponsesubmitted'] = 'S\'ha enviat la resposta';
 $string['export_questions'] = 'Exporta les preguntes';
 $string['export_to_excel'] = 'Exporta a Excel';
-$string['feedback:addinstance'] = 'Afegeix una Realimentació nova';
+$string['feedback:addinstance'] = 'Afegir una nova retroacció';
 $string['feedbackclose'] = 'Permet les respostes a';
-$string['feedback:complete'] = 'Completa la realimentació';
+$string['feedback:complete'] = 'Completar una retroacció';
 $string['feedback:createprivatetemplate'] = 'Crea una plantilla privada';
 $string['feedback:createpublictemplate'] = 'Crea una plantilla pública';
 $string['feedback:deletesubmissions'] = 'Suprimeix enviaments completats';
 $string['feedback:deletetemplate'] = 'Suprimeix la plantilla';
 $string['feedback:edititems'] = 'Edita els elements';
-$string['feedback_is_not_for_anonymous'] = 'aquesta realimentació no és per a usuaris anònims';
-$string['feedback_is_not_open'] = 'La realimentació no està oberta';
-$string['feedback:mapcourse'] = 'Fes els mapes dels cursos a realimentació global';
+$string['feedback_is_not_for_anonymous'] = 'La retroacció no és per a usuaris anònims';
+$string['feedback_is_not_open'] = 'La retroacció no està oberta';
+$string['feedback:mapcourse'] = 'Mapar cursos a retroaccions globals';
 $string['feedbackopen'] = 'Permet les respostes de';
 $string['feedback:receivemail'] = 'Rep notificacions per correu electrònic';
-$string['feedback:view'] = 'Mostra la realimentació';
+$string['feedback:view'] = 'Veure una retroacció';
 $string['feedback:viewanalysepage'] = 'Mostra la pàgina d\'anàlisi després de l\'enviament';
 $string['feedback:viewreports'] = 'Mostra els informes';
 $string['file'] = 'Fitxer';
 $string['filter_by_course'] = 'Filtra per curs';
-$string['handling_error'] = 'Ha ocorregut un error al mòdul de realimentació de direcció';
+$string['handling_error'] = 'S\'ha produït un error en la gestió d\'accions del mòdul de retroacció';
 $string['hide_no_select_option'] = 'Amaga l\'opció "No seleccionat"';
 $string['horizontal'] = 'horitzontal';
 $string['importfromthisfile'] = 'importa des d\'aquest fitxer';
@@ -143,16 +143,17 @@ $string['infotype'] = 'Tipus d\'informació';
 $string['insufficient_responses'] = 'respostes insuficients';
 $string['insufficient_responses_for_this_group'] = 'No hi ha prou respostes per a aquest grup';
 $string['insufficient_responses_help'] = 'No hi ha prou respostes per a aquest grup.
-Per mantindre la realimentació anònima, cal un mínim de 2 respostes.';
+
+Per a mantenir l\'anonimat de la retroacció es necessita un mínim de dues respostes.';
 $string['item_label'] = 'Etiqueta';
 $string['item_name'] = 'Pregunta';
 $string['label'] = 'Etiqueta';
 $string['line_values'] = 'Valoració';
 $string['mapcourse'] = 'Fes el mapa de les re-alimentacions dels cursos';
-$string['mapcourse_help'] = 'Per defecte, els formularis de realimentacions creats en la vostra pàgina principal estan disponibles a tot el lloc web i apareixeran en tots els cursos utilitzant el bloc realimentació. Podeu forçar que aparegui el formulari de realimentació marcant-lo com a bloc fixe o limitant els cursos en els quals el formulari apareix per mapejar els cursos específics.';
-$string['mapcourseinfo'] = 'Aquest és un lloc amb re-alimentacions que estan disponibles per tots els cursos que utilitzin el bloc realimentació. Podeu tanmateix limitar el nombre de cursos en els quals apareixerà per fer el mapatge. Cerca el curs i fes el mapa per la realimentació.';
-$string['mapcoursenone'] = 'No hi ha cursos mapejats. La realimentació és disponible per tots els cursos.';
-$string['mapcourses'] = 'Fes el mapatge de la realimentació dels cursos.';
+$string['mapcourse_help'] = 'Per defecte, els formularis de retroacció creats en la vostra pàgina principal estan disponibles a tot el lloc web i apareixeran en tots els cursos que utilitzin el bloc de retroacció. Podeu imposar que aparegui el formulari de retroacció marcant-lo com a bloc fix o limitar els cursos en què apareix el formulari de retroacció mapant-lo a cursos específics.';
+$string['mapcourseinfo'] = 'Aquesta és una retroacció per a tot el lloc que està disponibles per a tots els cursos que utilitzin el bloc de retroacció. Podeu, tanmateix, limitar els cursos en què apareixerà fent un mapatge. Cerqueu el curs i mapeu-lo a aquesta retroacció.';
+$string['mapcoursenone'] = 'No hi ha cursos mapats. La retroacció està disponible per a tots els cursos.';
+$string['mapcourses'] = 'Mapatge de retroacció a cursos.';
 $string['mapcourses_help'] = 'Una vegada heu triat els cursos relevants de la vostra cerca, podeu associar-los amb aquesta realimentació utilitzant els mapes de curs. Podeu seleccionar múltiples cursos prement la tecla Apple o Ctrl mentre feu clic sobre els noms del cursos. Un curs pot deixar d\'estar associat a una realimentació en qualsevol moment.';
 $string['mappedcourses'] = 'Cursos mapejats';
 $string['max_args_exceeded'] = 'Es poden gestionar com a màxim sis arguments. Massa arguments per a';
@@ -160,18 +161,18 @@ $string['maximal'] = 'màxim';
 $string['messageprovider:message'] = 'Recordatori de la realimentació';
 $string['messageprovider:submission'] = 'Notificacions de la realimentació';
 $string['mode'] = 'Mode';
-$string['modulename'] = 'Realimentació';
-$string['modulename_help'] = 'L\'activitat de realimentació permet al professorat crear una enquesta personalitzada per a replegar la retroacció dels participants utilitzant diversos tipus de pregunta que inclouen opcions múltiples, de sí/no o d\'introducció de text.
+$string['modulename'] = 'Retroacció';
+$string['modulename_help'] = 'El mòdul d\'activitat de retroacció permet al professorat crear una enquesta personalitzada per a recollir la retroacció dels participants utilitzant diversos tipus de preguntes que inclouen opcions múltiples, de sí/no o d\'introducció de text.
 
-Les respostes a la realimentació poden ser anònimes, si es vol, i els resultats es poden mostrar a tots els participants o restringir només al professorat. Qualsevol activitat de realimentació en la pàgina principal del servidor pot completar-se sense necessitat d\'identificació dels usuaris.
+Les respostes de la retroacció poden ser anònimes, si es vol, i els resultats es poden mostrar a tots els participants o es poden restringir només al professorat. Qualsevol activitat de retroacció en la pàgina principal del lloc podran completar-la també els usuaris no autenticats.
 
-Les activitats del tipus realimentació es poden utilitzar
+Les activitats de retroacció es poden utilitzar:
 
-* Per a les valoracions del curs, ajudant a millorar el contingut per a posteriors participants
+* Per a valoracions del curs i ajudar a millorar el contingut per a posteriors participants.
 * Per a permetre als participants inscriure\'s a mòduls del curs, esdeveniments, etc.
-* Per a enquestes de visitants sobre eleccions de curs, polítiques de la institució educativa, etc.
-* Per a enquestes contra l\'assetjament escolar on l\'estudiantat pugui reportar incidències de manera anònima';
-$string['modulenameplural'] = 'Realimentació';
+* Per a enquestes a visitants sobre opcions de cursos, polítiques de la institució educativa, etc.
+* Per a enquestes contra l\'assetjament escolar on l\'estudiantat pugui informar sobre incidències de manera anònima.';
+$string['modulenameplural'] = 'retroacció';
 $string['movedown_item'] = 'Mou aquesta pregunta avall';
 $string['move_here'] = 'Mou aquí';
 $string['move_item'] = 'Mou aquesta pregunta';
@@ -181,7 +182,7 @@ $string['multichoicerated'] = 'Opcions múltiples (puntuades)';
 $string['multichoicetype'] = 'Tipus d\'opcions múltiples';
 $string['multichoice_values'] = 'Valors de les opcions múltiples';
 $string['multiplesubmit'] = 'Permet trameses múltiples';
-$string['multiplesubmit_help'] = 'Si s\'habilita per a enquestes anònimes, els usuaris podran enviar la realimentació una quantitat de vegades il·limitada.';
+$string['multiplesubmit_help'] = 'Si s\'habiliten les enquestes anònimes, els usuaris podran trametre la retroacció una quantitat de vegades il·limitada.';
 $string['name'] = 'Nom';
 $string['name_required'] = 'Nom (obligatori)';
 $string['next_page'] = 'Pàgina següent';
@@ -192,7 +193,7 @@ $string['no_items_available_yet'] = 'Encara no s\'han definit preguntes';
 $string['non_anonymous'] = 'El nom de l\'usuari es registrarà i es mostrarà amb les respostes';
 $string['non_anonymous_entries'] = 'entrades no anònimes';
 $string['non_respondents_students'] = 'estudiants que no han respost';
-$string['notavailable'] = 'aquesta realimentació no està disponible';
+$string['notavailable'] = 'aquesta retroacció no està disponible';
 $string['not_completed_yet'] = 'Encara no s\'ha completat';
 $string['no_templates_available_yet'] = 'Encara no hi ha plantilles';
 $string['not_selected'] = 'No s\'ha seleccionat';
@@ -203,18 +204,18 @@ $string['numeric_range_to'] = 'Interval fins';
 $string['of'] = 'de';
 $string['oldvaluespreserved'] = 'Totes les preguntes antigues i els valors assignats es mantindran';
 $string['oldvalueswillbedeleted'] = 'Les preguntes actuals i totes les respostes dels usuaris es suprimiran';
-$string['only_one_captcha_allowed'] = 'Sols es permet un test de Turing en la realimentació';
+$string['only_one_captcha_allowed'] = 'Només es permet un captcha dins d\'una retroacció';
 $string['overview'] = 'Descripció';
 $string['page'] = 'Pàgina';
 $string['page_after_submit'] = 'Missatge de compleció';
 $string['pagebreak'] = 'Salt de pàgina';
-$string['page-mod-feedback-x'] = 'Qualsevol pàgina de mòduls de realimentació';
+$string['page-mod-feedback-x'] = 'Qualsevol pàgina de mòduls de retroacció';
 $string['parameters_missing'] = 'Paràmetres perduts a';
 $string['picture'] = 'Imatge';
 $string['picture_file_list'] = 'Llista d\'imatges';
 $string['picture_values'] = 'Tria un o més <br /> fitxers d\'imatge de la llista:';
-$string['pluginadministration'] = 'Gestió de la realimentació';
-$string['pluginname'] = 'Realimentació';
+$string['pluginadministration'] = 'Administració de la retroacció';
+$string['pluginname'] = 'Retroacció';
 $string['position'] = 'Posició';
 $string['preview'] = 'Vista prèvia';
 $string['preview_help'] = 'En la vista prèvia podeu canviar l\'ordre de les preguntes';
@@ -231,7 +232,7 @@ $string['radio_values'] = 'Respostes';
 $string['ready_feedbacks'] = 'Retroaccions llestes';
 $string['relateditemsdeleted'] = 'Totes les respostes dels usuaris es suprimiran per a aquesta pregunta.';
 $string['required'] = 'Requerit';
-$string['resetting_data'] = 'Reinicia la realimentació de les respostes';
+$string['resetting_data'] = 'Reinicia les respostes de retroacció';
 $string['resetting_feedbacks'] = 'S\'estan reiniciant les realimentacions';
 $string['response_nr'] = 'Nombre de respostes';
 $string['responses'] = 'Respostes';
@@ -244,7 +245,7 @@ $string['saving_failed'] = 'No s\'ha pogut desar';
 $string['saving_failed_because_missing_or_false_values'] = 'No s\'ha pogut desar perquè s\'han perdut valors o se n\'han trobat de falsos.';
 $string['search_course'] = 'Cerca curs';
 $string['searchcourses'] = 'Cerca cursos';
-$string['searchcourses_help'] = 'Cerca el codi o el nom dels cursos que voleu associar amb aquesta realimentació.';
+$string['searchcourses_help'] = 'Cerqueu el codi o el nom del/s curs/os que voleu associar amb aquesta retroacció.';
 $string['selected_dump'] = 'A continuació es llisten els índexs seleccionats de la variable $SESSION:';
 $string['send'] = 'envia';
 $string['send_message'] = 'envia missatge';
@@ -283,5 +284,6 @@ $string['use_one_line_for_each_value'] = '<br />Usa una línia per cada resposta
 $string['use_this_template'] = 'Utilitza aquesta plantilla';
 $string['using_templates'] = 'Utilitza una plantilla';
 $string['vertical'] = 'vertical';
-$string['viewcompleted'] = 'realimentació completada';
-$string['viewcompleted_help'] = 'Podeu veure els formularis de la realimentació completats, cercables per curs o per pregunta. Les respostes de la realimentació poden exportar-se a Excel.';
+$string['viewcompleted'] = 'retroaccions completades';
+$string['viewcompleted_help'] = 'Podeu veure els formularis de retroacció completats i cercar-hi per curs o per pregunta.
+Les respostes de retroacció poden exportar-se a Excel.';

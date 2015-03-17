@@ -1195,22 +1195,7 @@ Nella maggior parte dei programmi di posta elettronica i link appaiono in blu e 
 Saluti dall\'amministratore del sito \'{$a->sitename}\',
 {$a->signoff}';
 $string['newpicture'] = 'Nuova immagine';
-$string['newpicture_help'] = '<P>Si può caricare una foto dal proprio computer a questo server:
-questa immagine verrà utilizzata in vari punti del sistema per rappresentarti.</p>
-<P>A tale scopo, il "taglio" migliore è costituito da fotografie in primo piano dove si veda bene il viso, ma si può usare qualunque immagine che si desideri.</p>
-<P>Il file dell\'immagine deve essere in formato JPG o PNG (controllare l\'estensione dopo il punto, per esempio: miafoto.jpg o miafoto.png)</p>
-<P>Si può ottenere un file immagine utilizzando uno dei seguenti metodi:</p>
-<OL>
-<LI>Utilizzando una fotocamera digitale, le immagini saranno già pronte per essere trasferite nel giusto formato (non serve usare una risoluzione esagerata!)
-<LI>Si può utilizzare uno scanner per duplicare una stampa su carta. Assicurarsi di salvare in formato JPG o PNG (non GIF)
-<LI>Si può disegnare un\'immagine utilizzando un programma di computer grafica.
-<LI>Infine, si può "rubare" un\'immagine sul Web. <A TARGET=google HREF="http://images.google.com/">http://images.google.com</A> è un ottimo motore di ricerca per cercare immagini.
-Una volta trovata una che piace, si clicca sopra col tasto destro del mouse e si salva sul proprio computer con la funzione "Salva Immagine con nome".
-</OL>
-<P>Per caricare una immagine, cliccare "Sfoglia" su questa pagina di editing e selezionare una immagine dall\'hard disk del proprio computer.</p>
-<P>NOTA: Assicurarsi che il file non superi le dimensioni indicate, altrimenti non verrà caricato.</p>
-<P>Poi cliccare su "Aggiornamento profilo" in basso - l\'immagine verrà tagliata in formato quadrato e portata ad una dimensione di 100x100 pixels.</p>
-<P>Quando si torna sulla pagina del proprio profilo, potrebbe non visualizzarsi il cambiamento: in questo caso cliccare sul pulsante di aggiornamento del browser.</p>';
+$string['newpicture_help'] = 'Per caricare una nuova immagine, scegline una (in formato JPG o PNG) e poi clicca il pulsante "Aggiornamento profilo". L\'immagine sarà prima ritagliata in forma quadrata e poi ridimensionata a 100 x 100 pixel.';
 $string['newsitem'] = 'news';
 $string['newsitems'] = 'news';
 $string['newsitemsnumber'] = 'Numero di news da visualizzare';

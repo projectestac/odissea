@@ -350,6 +350,7 @@ $string['gradessettings'] = 'Paràmetres de qualificacions';
 $string['gradetype'] = 'Tipus de qualificació';
 $string['gradetype_help'] = '<p>Especifica el tipus de qualificació utilitzat: cap (no és possible qualificar), valor (habilita els paràmetres de qualificació màxima i mínima), escala (habilita el paràmetre escala) o text (només retroacció). Únicament es poden agregar els tipus de qualificació per valor i escala. El tipus de qualificació d\'un element de qualificació basat en una activitat es defineix a la pàgina d\'actualització de l\'activitat.</p>';
 $string['gradeview'] = 'Mostra qualificació';
+$string['gradewasmodifiedduringediting'] = 'La qualificació de l\'element {$a->itemname} per a l\'usuari {$a->username} s\'ha ignorat perquè una altra persona l\'ha actualitzat més recentment.';
 $string['gradeweighthelp'] = 'Ajuda referent a la ponderació';
 $string['groupavg'] = 'Mitjana del grup';
 $string['hidden'] = 'Ocult';

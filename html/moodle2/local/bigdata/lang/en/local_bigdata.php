@@ -3,6 +3,10 @@
 $string['pluginname'] = 'Analytics data Export';
 $string['enabled'] = 'Enabled';
 $string['enabled_desc'] = 'Enables analytics export for this site';
+$string['from_time']      = 'Only execute from this hour';
+$string['from_time_desc']      = 'Restrict execution time from this hour';
+$string['to_time']      = 'Only execute until this hour';
+$string['to_time_desc']      = 'Restrict execution time to this hour';
 
 $string['courses'] = 'Courses to export';
 $string['courses_help'] = 'The selected courses will be exported for analytics, if none selected, all courses will be exported.';
@@ -14,6 +18,10 @@ $string['periodicity'] = 'Periodicity';
 $string['periodicity_help'] = 'Periodicity for the export cron execution.';
 $string['tablefields'] = 'Table fields';
 $string['tablefields_help'] = 'Table and fields to export.';
+$string['weekday']      = 'Execution weekday';
+$string['weekday_help']      = 'Choose if you want to restrict export execution to one day of the week.';
+$string['savedirectory']      = 'Save directory';
+$string['savedirectory_help']      = 'Choose where to save the exports, if empty it will be choosen by default.';
 
 $string['add_profile'] = 'Add profile';
 $string['edit_profile'] = 'Edit profile {$a}';
@@ -22,3 +30,6 @@ $string['delete_profile_confirm'] = 'Are you sure you want to delete the profile
 $string['profile_created']		= 'Profile successfully created';
 $string['profile_updated']		= 'Profile successfully updated';
 $string['profile_deleted']		= 'Profile successfully deleted';
+
+$string['export_data_settings']      = 'Export data settings';
+$string['cron_settings']      = 'Cron settings';

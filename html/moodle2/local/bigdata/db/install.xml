@@ -13,11 +13,16 @@
         <FIELD NAME="excludedusers" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Comma separated values with the users to exclude form the export."/>
         <FIELD NAME="tablefields" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Comma separated values with the tables and fields to export. Empty = default selection"/>
         <FIELD NAME="periodicity" TYPE="char" LENGTH="10" NOTNULL="false" DEFAULT="" SEQUENCE="false" COMMENT="Periodicity for the cron execution. Empty means never"/>
+        <FIELD NAME="weekday" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="lastcron" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="savedirectory" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
       </KEYS>
+      <INDEXES>
+        <INDEX NAME="name" UNIQUE="true" FIELDS="name" COMMENT="The unique name for the profiles"/>
+      </INDEXES>
     </TABLE>
   </TABLES>
 </XMLDB>

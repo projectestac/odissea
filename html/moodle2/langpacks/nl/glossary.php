@@ -30,19 +30,16 @@ $string['addentry'] = 'Voeg een item toe';
 $string['addingcomment'] = 'Commentaar toevoegen';
 $string['alias'] = 'Alias';
 $string['aliases'] = 'Alias(sen)';
-$string['aliases_help'] = '<p>Elk item in de woordenlijst kan een geassocieerde lijst aliassen of sleutelwoorden hebben.</p>
+$string['aliases_help'] = 'Elk item in de woordenlijst kan een geassocieerde lijst met sleutelwoorden (of aliassen) hebben. Als het woordenlijstitem automatisch gelinkt wordt, dan zullen ook de sleutelwoorden automatisch gelinkt worden.
 
-<p><b>Voeg elke alias toe op een nieuwe regel</b> (niet gescheiden door komma\'s).</p>
-
-<p>De aliassen kunnen gebruikt worden als een alternatieve manier om naar het woordenlijstitem te verwijzen. Als je bijvoorbeeld de autolink-filter van de woordenlijst gebruikt, dan zullen zowel het hoofdwoord als de aliassen als link naar het woord uit de woordenlijst verschijnen.</p>';
+Voeg elk sleutelwoord toe op een nieuwe regel (niet gescheiden door komma\'s).';
 $string['allcategories'] = 'Alle categorieën';
 $string['allentries'] = 'Alles';
 $string['allowcomments'] = 'Commentaar toevoegen toelaten';
 $string['allowcomments_help'] = '<p>Het is mogelijk om leerlingen commentaar te laten toevoegen bij items in de woordenlijst.</p>
 <p>Je kunt kiezen om deze optie in te schakelen of niet.</p>';
 $string['allowduplicatedentries'] = 'Woord meer keren invoegen toelaten';
-$string['allowduplicatedentries_help'] = '<p>Hiermee kun je het systeem toelaten om meerdere definities per item te accepteren.</p>
-<p>Als je wil, kun je een item meerdere keren laten voorkomen in de lijst, telkens met een andere definitie.</p>';
+$string['allowduplicatedentries_help'] = 'Indien ingeschakeld kunnen meerder items dezelfde conceptnaam hebben.';
 $string['allowprintview'] = 'Afdrukbare versie tonen toelaten';
 $string['allowprintview_help'] = '<p>Je kunt leerlingen toelaten een afdrukbare versie van de woordenlijst te zien.</p>
 
@@ -61,15 +58,7 @@ $string['areyousuredeletecomment'] = 'Wil je deze commentaar echt verwijderen ?'
 $string['areyousureexport'] = 'Weet je zeker dat je dit item wil exporteren naar';
 $string['ascending'] = 'oplopend';
 $string['attachment'] = 'Bijlage';
-$string['attachment_help'] = '<p>Je kunt optionneel één bestand uploaden als bijlage bij een woordenlijstitem. Dit bestand wordt op de server bij jouw woordenlijstitem bewaard.</p>
-
-<p>Dit kan nuttig zijn als je bijvoorbeeld een afbeelding of een Word-document wil delen.</p>
-
-<p>Dit bestand kan van gelijk welk bestandstype zijn, al is het aan te raden alleen bestanden te gebruiken die een naam hebben, gevolgd door een standaard 3 lettersuffix, zoals .doc voor Word-bestanden of .jpg voor een foto enz. Dit zal het voor je lezers gemakkelijker maken deze bestanden te downloaden en te bekijken in hun browser.</p>
-
-<p>Als je je woordenlijstitem opnieuw bewerkt en een nieuw bestand als bijlage uploadt, zal je vorige bestand vervangen worden.</p>
-
-<p>Als je een woordenlijstitem met een bijlage opnieuw bewerkt en je laat deze ruimte leeg, dan wordt de originele bijlage behouden.</p>';
+$string['attachment_help'] = 'Je kunt optionneel één of meer bestanden uploaden als bijlage bij een woordenlijstitem.';
 $string['author'] = 'Auteur';
 $string['authorview'] = 'Blader volgens auteur';
 $string['back'] = 'Terug';
@@ -77,11 +66,8 @@ $string['cantinsertcat'] = 'Kan geen categorie toevoegen';
 $string['cantinsertrec'] = 'Kan geen record toevoegen';
 $string['cantinsertrel'] = 'Kan geen relatie tussen categorie en invoer toevoegen';
 $string['casesensitive'] = 'Dit woord is hoofdlettergevoelig';
-$string['casesensitive_help'] = '<p>Met deze instelling kun je kiezen of er bij het maken van automatische links naar deze items
-rekening gehouden moet worden met hoofdletters of niet.</p>
-
-<p>Als de instelling op ja staat, dan wordt een woord als \'html\' in een forum niet gelinkt aan het item \'HTML\'
-in de woordenlijst.</p>';
+$string['casesensitive_help'] = 'Met deze instelling kun je kiezen of er bij het maken van automatische links naar deze items
+rekening gehouden moet worden met hoofdletters of niet.';
 $string['cat'] = 'cat';
 $string['categories'] = 'Categorieën';
 $string['category'] = 'Categorie';
@@ -117,10 +103,7 @@ $string['currentglossary'] = 'Huidige woordenlijst';
 $string['date'] = 'datum';
 $string['dateview'] = 'Blader op datum';
 $string['defaultapproval'] = 'Standaardinstelling goedkeuring';
-$string['defaultapproval_help'] = '<p>Je kunt kiezen of de bijdragen van de leerlingen automatisch gepubliceerd worden of dat ze eerst door de
-leraar moeten goedgekeurd worden.</p>
-
-<p>Voor nieuwe items die leerlingen toevoegen kun je de standaardstatus instellen.</p>';
+$string['defaultapproval_help'] = 'Indien ingesteld op nee, dan moeten ingevoerde items eerste goedgekeurd worden door een leraar voor ze door iedereen gezien kunnen worden.';
 $string['defaulthook'] = 'Standaard haak';
 $string['defaultmode'] = 'Standaard modus';
 $string['defaultsortkey'] = 'Standaard sorteersleutel';
@@ -133,12 +116,7 @@ $string['deletingcomment'] = 'Verwijder commentaar';
 $string['deletingnoneemptycategory'] = 'Door deze categorie te verwijderen zullen de woorden die ze bevat niet verdwijnen - ze zullen als niet-gecategoriseerd gemerkt worden';
 $string['descending'] = 'aflopend';
 $string['destination'] = 'Bestemming van geïmporteerde items';
-$string['destination_help'] = '<p>Hier kun je instellen naar waar je de invoer wil importeren
-</p>
-<ul>
-<li><strong>Huidige woordenlijst:</strong> zal de geïmporteerde invoer toevoegen aan de huidige woordenlijst.</li>
-<li><strong>Nieuwe woordenlijst:</strong> zal een nieuwe woordenlijst maken, gebaseerd op de informatie uit het gekozen XML-bestand en de woordenlijst aanvullen.</li>
-</ul>';
+$string['destination_help'] = 'Items kunnen geïmporteerd worden en toegevoegd worden aan de huidige woordenlijst of aan een nieuwe woordenlijst. In dat laatste geval  zal een nieuwe woordenlijst gemaakt worden, gebaseerd op de informatie uit het gekozen XML-bestand .';
 $string['disapprove'] = 'Goedkeuring ongedaan maken';
 $string['displayformat'] = 'Kies opmaak';
 $string['displayformatcontinuous'] = 'Volledige lijst zonder auteur';
@@ -163,15 +141,7 @@ $string['displayformatssetup'] = 'Instellingen van de opmaakmogelijkheden';
 $string['duplicatecategory'] = 'Dupliceer categorie';
 $string['duplicateentry'] = 'Dupliceer item';
 $string['editalways'] = 'Bewerken altijd toestaan';
-$string['editalways_help'] = '<p>Met deze optie kun je beslissen of je wil toelaten dat de leerlingen hun bijdragen altijd kunnen blijven bewerken.</p>
-
-<p>Je kunt kiezen voor:</p>
-
-<ul>
-<li><b>Ja:</b> De bijdragen kunnen altijd bewerkt worden.</li>
-
-<li><b>Nee:</b> De bijdragen kunnen bewerkt worden tijdens de ingestelde bewerkingstijd.</li>
-</ul>';
+$string['editalways_help'] = 'Deze instelling bepaalt of items altijd bewerkt kunnen worden of dat leerlingen ze slechts gedurende een geconfigureerde bewerktijd (gewoonlijk 30 minuten) kunnen aanpassen.';
 $string['editcategories'] = 'Bewerk categorieën';
 $string['editentry'] = 'Bewerk item';
 $string['editingcomment'] = 'Bewerk commentaar';

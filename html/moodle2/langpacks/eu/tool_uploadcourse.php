@@ -46,6 +46,7 @@ $string['courseupdated'] = 'Ikastaroa eguneratu da';
 $string['csvdelimiter'] = 'CSV bereizlea';
 $string['csvdelimiter_help'] = 'CSV fitxategiaren CSV bereizlea';
 $string['csvline'] = 'Lerroa';
+$string['defaultvalues'] = 'Berezko ikastaro-baloreak';
 $string['encoding'] = 'Kodifikazioa';
 $string['encoding_help'] = 'CSV fitxategiaren kodifikazioa';
 $string['id'] = 'ID';

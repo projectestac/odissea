@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attempts'] = 'Attempts made';
 $string['cronwarning'] = 'The <a href="../../admin/cron.php">cron.php</a> maintenance script has not been run for at least 30 min - Cron must be configured to allow URKUND to function correctly.';
 $string['defaultsdesc'] = 'The following settings are the defaults set when enabling URKUND within an Activity Module';
 $string['defaultupdated'] = 'Default values updated';

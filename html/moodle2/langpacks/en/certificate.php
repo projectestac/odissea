@@ -85,7 +85,7 @@ Email Certificate: Choosing this option sends the certificate to the student as 
 After a user receives their certificate, if they click on the certificate link from the course homepage, they will see the date they received their certificate and will be able to review their received certificate.';
 $string['designoptions'] = 'Design Options';
 $string['download'] = 'Force download';
-$string['emailcertificate'] = 'Email (Must also choose save!)';
+$string['emailcertificate'] = 'Email';
 $string['emailothers'] = 'Email Others';
 $string['emailothers_help'] = 'Enter the email addresses here, separated by a comma, of those who should be alerted with an email whenever students receive a certificate.';
 $string['emailstudenttext'] = 'Attached is your certificate for {$a->course}.';
@@ -104,6 +104,10 @@ You can review it here:
 $string['emailteachers'] = 'Email Teachers';
 $string['emailteachers_help'] = 'If enabled, then teachers are alerted with an email whenever students receive a certificate.';
 $string['entercode'] = 'Enter certificate code to verify:';
+$string['fontsans'] = 'Sans-serif font family';
+$string['fontsans_desc'] = 'Sans-serif font family for certificates with embedded fonts';
+$string['fontserif'] = 'Serif font family';
+$string['fontserif_desc'] = 'Serif font family for certificates with embedded fonts';
 $string['getcertificate'] = 'Get your certificate';
 $string['grade'] = 'Grade';
 $string['gradedate'] = 'Grade Date';
@@ -183,7 +187,7 @@ $string['seal'] = 'Seal';
 $string['sigline'] = 'line';
 $string['signature'] = 'Signature';
 $string['statement'] = 'has completed the course';
-$string['summaryofattempts'] = 'Summary of Previously Received Certificates';
+$string['summaryofattempts'] = 'Summary of previously received certificates';
 $string['textoptions'] = 'Text Options';
 $string['title'] = 'CERTIFICATE of ACHIEVEMENT';
 $string['to'] = 'Awarded to';

@@ -1,7 +1,9 @@
 <?php
 
+$config = get_config('local_bigdata');
+
 $hour = idate('H');
-if ($hour > 8 || $hour < 2) {
+if (!$config->enabled || $hour < $config->from_time || $hour > $config->to_time) {
     return;
 }
 
@@ -9,38 +11,19 @@ mtrace("Executing Bigdata cron...", "\n");
 
 $now = time();
 require_once('lib.php');
+require_once('locallib.php');
 
 $profiles = $DB->get_records('bigdata_profiles');
-foreach ($profiles as $profileid => $profile) {
+foreach ($profiles as $profile) {
 
-    if (empty($profile->periodicity)) {
+    $nextcron = get_profile_next_cron($profile) ;
+    if (empty($nextcron)) {
         continue;
     }
-
-    $period = explode(' ', $profile->periodicity);
-    $value = $period[0];
-    $unit = $period[1];
-
-    $lastcronday = mktime(0, 0, 0,
-            date("n", $profile->lastcron), date("j", $profile->lastcron), date("Y", $profile->lastcron));
-    switch ($unit) {
-        case 'D':
-            $nextcron = strtotime('+'.$value.' day', $lastcronday);
-            break;
-        case 'W':
-            $nextcron = strtotime('+'.$value.' week', $lastcronday);
-            break;
-        case 'M':
-            $nextcron = strtotime('+'.$value.' month', $lastcronday);
-            break;
-        default:
-            continue;
-    }
-
-    if ($now >= $nextcron) {
-        mtrace("Profile $profileid", "\n");
-        if ( bigdata_export($profileid)) {
-            $DB->set_field('bigdata_profiles', 'lastcron', $now);
+    if ($nextcron <= time()) {
+        mtrace("Profile $profile->name", "\n");
+        if (bigdata_export($profile->name)) {
+            $DB->set_field('bigdata_profiles', 'lastcron', $now, array('id' => $profile->id));
         }
     }
 }

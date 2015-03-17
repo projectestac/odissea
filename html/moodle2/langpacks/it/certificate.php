@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addlinklabel'] = 'Aggiungi un\'altra attività collegata';
-$string['addlinktitle'] = 'Clicl per aggiungere un\'altra attività collegata';
+$string['addlinktitle'] = 'Click per aggiungere un\'altra attività collegata';
 $string['areaintro'] = 'Introduzione del certifcato';
 $string['awarded'] = 'Conseguito';
 $string['awardedto'] = 'Conseguito da';
@@ -42,9 +42,13 @@ $string['borderlines'] = 'Linee';
 $string['borderstyle'] = 'Immagine per il bordo';
 $string['borderstyle_help'] = 'E\' possibile scegliere una immagine, presa dalla cartella certificate/pix/borders, da stampare sul bordo del certificato. Scegliendo No non verrà stampato nessun bordo.';
 $string['certificate'] = 'Verifica del codice del certificato:';
+$string['certificate:addinstance'] = 'Aggiungere certificati';
+$string['certificate:manage'] = 'Gestire certificati';
 $string['certificatename'] = 'Nome del certificato';
+$string['certificate:printteacher'] = 'Essere elencato come docente nel certificato (se la corrispondete impostazione è abilitata)';
 $string['certificatereport'] = 'Report dei certificati';
 $string['certificatesfor'] = 'Certificato di';
+$string['certificate:student'] = 'Scaricare certificati';
 $string['certificatetype'] = 'Tipo di certificato';
 $string['certificatetype_help'] = 'E\' possibile scegliere l\'impaginazione del certificato. Il foder type del modulo certificato contiene quattro certificati di default:
 A4 Embedded stamperà un certificato formato A4 con font embedded
@@ -55,12 +59,15 @@ Letter Non-Embedded stamperà un certificato formato A4 con font non-embedded
 I tipi di certificati non embedded usano i font Helvetica e Times. Se i tuoi utenti non hanno questi font sul loro computer, o se la tua lingua usa caratteri e simboli non presenti nei font Helvetica e Times, scegli i tipi embedded. I tipi embedded usano i font Dejavusans e Dejavuserif. I tipi embedded producono certificati più grandi quindi se ne sconsiglia l\'uso se non strettamente necessario.
 
 E\' possibile aggiungere font nella cartella certificate/type. Il nome della cartella ed eventuali nuove stringhe della lingua per il nuovo tipo di certificato devono essere aggiunti ai file della lingua.';
+$string['certificate:view'] = 'Visualizzare certificati';
 $string['certify'] = 'Si certifica che';
 $string['code'] = 'Codice';
 $string['completiondate'] = 'Completamento del corso';
 $string['course'] = 'Per';
 $string['coursegrade'] = 'Valutazione del corso';
 $string['coursename'] = 'Corso';
+$string['coursetimereq'] = 'Numero minimo di minuti da trascorrere nel corso';
+$string['coursetimereq_help'] = 'il numero minimo di minuti da trascorrere nel corso prima che uno stuedente possa scaricare il certificato.';
 $string['credithours'] = 'Ore di formazione';
 $string['customtext'] = 'Testo personalizzato';
 $string['customtext_help'] = 'Se si desidera stampare nomi di docenti diversi da coloro che hanno il ruolo di docente nel corso, non selezionare Stampa i nome dei docenti né la firma.
@@ -110,6 +117,7 @@ Valutazione letterale: la valutazione percentuale viene stampata in lettere.';
 $string['gradeletter'] = 'Valutazione letterale';
 $string['gradepercent'] = 'Percentuale';
 $string['gradepoints'] = 'Punteggio';
+$string['imagetype'] = 'Tipo immagine';
 $string['incompletemessage'] = 'Per scaricare il tuo certificato, devi prima completare tutte le attività richieste.';
 $string['intro'] = 'Introduzione';
 $string['issued'] = 'Emesso';
@@ -125,6 +133,7 @@ $string['mycertificates'] = 'I miei certificati';
 $string['nocertificates'] = 'Non ci sono certificati';
 $string['nocertificatesissued'] = 'Non sono stati emessi certificati';
 $string['nocertificatesreceived'] = 'non ha ottenuto nessun certificato';
+$string['nofileselected'] = 'Devi selezionare un file da caricare.';
 $string['nogrades'] = 'Non ci sono valutazioni disponibili';
 $string['notapplicable'] = 'N/A';
 $string['notfound'] = 'Non è stato possibile validare il numero del certificato';
@@ -166,10 +175,14 @@ $string['removecert'] = 'I certificati emessi sono stati eliminati';
 $string['report'] = 'Report';
 $string['reportcert'] = 'Report dei certificati';
 $string['reportcert_help'] = 'Selezionando si, la data di emissione di questo certificato, il codice ed il nome del corso saranno disponibili nel report dei certificati dell\'utente. Se hai scelto di stampare la valutazione, nel report sarà presente anche essa.';
+$string['requiredtimenotmet'] = 'Devi trascorrere almeno {$a->requiredtime} nel corso prima di poter accedere al certificato.';
+$string['requiredtimenotvalid'] = 'Il numero minimo di minuti deve essere un numero maggiore di 0.';
 $string['reviewcertificate'] = 'Rivedi i tuoi certificati';
 $string['savecert'] = 'Salva i certificati';
 $string['savecert_help'] = 'Permette di salvare i certificati emessi in formato pdf nel folder moddata del corso. Nel report dei certificati sarà disponibili un link per visualizzare i certificati salvati.';
+$string['seal'] = 'Sigillo';
 $string['sigline'] = 'linea';
+$string['signature'] = 'Firma';
 $string['statement'] = 'ha completato il corso';
 $string['summaryofattempts'] = 'Panoramica dei certificati conseguiti in precedenza';
 $string['textoptions'] = 'Opzioni testo';
@@ -179,9 +192,13 @@ $string['typeA4_embedded'] = 'A4 embedded';
 $string['typeA4_non_embedded'] = 'A4 non-embedded';
 $string['typeletter_embedded'] = 'Letter embedded';
 $string['typeletter_non_embedded'] = 'Letter non-embedded';
+$string['unsupportedfiletype'] = 'Il formato del file deve essere jpeg o png.';
+$string['uploadimage'] = 'Carica immagine';
+$string['uploadimagedesc'] = 'Questo pulsante ti porterà in un\'altra pagina dove potrai caricare immagini.';
 $string['userdateformat'] = 'Formato data secondo la lingua dell\'utente';
 $string['validate'] = 'Verifica';
 $string['verifycertificate'] = 'Verifica certificato';
 $string['viewcertificateviews'] = 'Visualizza i {$a} certificati emessi';
 $string['viewed'] = 'Hai conseguito un certificato di:';
 $string['viewtranscript'] = 'Visualizza certificati';
+$string['watermark'] = 'Filigrana';

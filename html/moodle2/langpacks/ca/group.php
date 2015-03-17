@@ -60,7 +60,9 @@ $string['editgroupingsettings'] = 'Edita paràmetres d\'agrupament';
 $string['editgroupsettings'] = 'Edita paràmetres del grup';
 $string['enrolmentkey'] = 'Clau d\'inscripció';
 $string['enrolmentkeyalreadyinuse'] = 'Aquesta clau de matrícula ja l\'utilitza un altre grup.';
-$string['enrolmentkey_help'] = 'Una clau d\'inscripció obre l\'accés al curs, que qeda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, un usuari podrà inscriure\'s al curs si la coneix, i el convertirà automàticament en membre del grup.';
+$string['enrolmentkey_help'] = 'Una clau d\'inscripció obre l\'accés al curs, que queda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, l\'usuari no només podrà inscriure\'s al curs, si la coneix, sinó que també esdevindrà automàticament membre del grup.
+
+Nota: Les claus d\'inscripció de grup s\'han d\'activar als paràmetres de l\'autoinscripció, i també s\'ha d\'especificar una clau d\'inscripció per al curs.';
 $string['erroraddremoveuser'] = 'S\'ha produït un error en afegir l\'usuari {$a} o suprimir-lo del grup.';
 $string['erroreditgroup'] = 'S\'ha produït un error en crear o actualitzar el grup {$a}';
 $string['erroreditgrouping'] = 'S\'ha produït un error en crear o actualitzar l\'agrupament {$a}';
@@ -95,7 +97,7 @@ $string['groupingname'] = 'Nom de l\'agrupament';
 $string['groupingnameexists'] = 'El nom d\'agrupament \'{$a}\' ja existeix en aquest curs. Trieu-ne un altre.';
 $string['groupings'] = 'Agrupaments';
 $string['groupingsection'] = 'Accés d\'agrupament';
-$string['groupingsection_help'] = 'Un agrupament és un conjunt de grups dins d\'un curs. Si se selecciona un agrupament ací, només l\'estudiantat assignat als grups dins d\'aquest agrupament tindrà accés a la secció.';
+$string['groupingsection_help'] = 'Un agrupament és un conjunt de grups dins d\'un curs. Si seleccioneu un agrupament aquí, només l\'estudiantat assignat als grups dins d\'aquest agrupament tindrà accés a la secció.';
 $string['groupingsonly'] = 'Només agrupaments';
 $string['groupmember'] = 'Membre del grup';
 $string['groupmemberdesc'] = 'Rol estàndard per a membres d\'un grup';

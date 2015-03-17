@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quickfindlist', language 'en', branch 'MOODLE_23_STABLE'
+ * Strings for component 'block_quickfindlist', language 'en', branch 'MOODLE_26_STABLE'
  *
  * @package   block_quickfindlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['multiplenorole'] = 'You cannot have two blocks on the same page without
 $string['nousers'] = 'ERROR: No users have that role';
 $string['pluginname'] = 'Quickfind List';
 $string['quickfindlist'] = 'Quickfind List';
+$string['quickfindlist:addinstance'] = 'Add a new quickfindlist block';
+$string['quickfindlist:myaddinstance'] = 'Add a new quickfindlist block to My home';
 $string['quickfindlist:use'] = 'Use Quickfind List';
 $string['role'] = 'Role for listed people to have';
 $string['url'] = 'Page to link to (the person\'s id will be appended to the end).<br />Leave blank for default profile';

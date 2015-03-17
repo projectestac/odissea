@@ -53,7 +53,6 @@ $string['config_orderby_due_time'] = '締め切り日時';
 $string['config_percentage'] = '生徒にパーセントを表示する';
 $string['config_title'] = '代替のタイトル';
 $string['data'] = 'データベース';
-$string['date_format'] = '%a %d %b, %I:%M %p';
 $string['feedback'] = 'フィードバック';
 $string['finished'] = '受験終了';
 $string['folder'] = 'フォルダ';

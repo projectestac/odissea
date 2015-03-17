@@ -90,20 +90,20 @@ $string['highdbsizethreshold'] = 'La mida de la base de dades implica una transf
 $string['highdbsizethresholddesc'] = 'Nombre de registres amb els que es calcularà la quantitat de temps de la transferència';
 $string['highfilesizethreshold'] = 'La mida del fitxer implica una transferència alta';
 $string['highfilesizethresholddesc'] = 'Les mides dels fitxers per sobre d\'aquest límit impliquen un alt temps de transferència';
-$string['insanebody'] = 'Esteu rebent aquest missatge com administrador de {$a->sitename}.
+$string['insanebody'] = 'Esteu rebent aquest missatge com a administrador de {$a->sitename}.
 
-Algunes instàncies dels connectors de portafolis han estat automàticament deshabilitades degut a males configuracions. Això significa que els usuaris no poden actualment exportar el contingut d\'aquests portafolis.
+Algunes instàncies dels connectors de portafolis han estat automàticament inhabilitades a causa de males configuracions. Això significa que els usuaris no poden actualment exportar el contingut d\'aquests portafolis.
 
-La llista dels connectors de portafolis que han estat deshabilitats és:
+La llista dels connectors de portafolis que han estat inhabilitats és:
 
 {$a->textlist}
 
-Això s\'hauria de corregir el més aviat possible, visiteu {$a->fixurl}.';
-$string['insanebodyhtml'] = '<p>Esteu rebent aquest missatge com administrador de {$a->sitename}.</p><p>Algunes instàncies dels connectors de portafolis han estat automàticament deshabilitades degut a males configuracions. Això significa que els usuaris no poden actualment exportar el contingut d\'aquests portafolis.</p><p>La llista dels connectors de portafolis que han estat deshabilitats és:</p>
+Això s\'hauria de corregir al més aviat possible, visiteu {$a->fixurl}.';
+$string['insanebodyhtml'] = '<p>Esteu rebent aquest missatge com a administrador de {$a->sitename}.</p><p>Algunes instàncies dels connectors de portafolis han estat automàticament inhabilitades a causa de males configuracions. Això significa que els usuaris no poden actualment exportar el contingut d\'aquests portafolis.</p><p>La llista dels connectors de portafolis que han estat inhabilitats és:</p>
 {$a->htmllist}
-<p>Això s\'hauria de corregir el més aviat possible, visiteu <a href="{$a->fixurl}"> les pàgines de configuració del portfoli</a></p>';
-$string['insanebodysmall'] = 'Esteu rebent aquest missatge com administrador de {$a->sitename}. Algunes instàncies dels connectors de portafolis han estat automàticament deshabilitades degut a males configuracions. Això significa que els usuaris no poden actualment exportar el contingut d\'aquests portafolis. Això s\'hauria de corregir el més aviat possible, visiteu {$a->fixurl}.';
-$string['insanesubject'] = 'S\'han deshabilitat automàticament algunes instàncies de portafolis';
+<p>Això s\'hauria de corregir al més aviat possible, visiteu <a href="{$a->fixurl}"> les pàgines de configuració del portafolis</a></p>';
+$string['insanebodysmall'] = 'Esteu rebent aquest missatge com a administrador de {$a->sitename}. Algunes instàncies dels connectors de portafolis han estat automàticament inhabilitades a causa de males configuracions. Això significa que els usuaris no poden actualment exportar el contingut d\'aquests portafolis. Això s\'hauria de corregir al més aviat possible, visiteu {$a->fixurl}.';
+$string['insanesubject'] = 'S\'han inhabilitat automàticament algunes instàncies de portafolis';
 $string['instancedeleted'] = 'S\'ha suprimit el portafolis amb èxit';
 $string['instanceismisconfigured'] = 'La instància del portafolis està mal configurada, ometent. L\'error ha estat: {$a}';
 $string['instancenotdelete'] = 'No s\'ha pogut suprimir el portafolis';
@@ -167,13 +167,13 @@ $string['pluginismisconfigured'] = 'El connector de portafolis està mal configu
 $string['portfolio'] = 'Portafolis';
 $string['portfolios'] = 'Portafolis';
 $string['queuesummary'] = 'Transferències actuals a la cua';
-$string['returntowhereyouwere'] = 'Retorneu on hi era';
+$string['returntowhereyouwere'] = 'Torneu on éreu';
 $string['save'] = 'Desa';
 $string['selectedformat'] = 'Trieu el format d\'exportació';
 $string['selectedwait'] = 'Triat per esperar?';
 $string['selectplugin'] = 'Trieu una destinació';
 $string['singleinstancenomultiallowed'] = 'Sols una instància del connector de portafolis està disponible, no es suporten múltiples exportacions per a cada sessió, i ja hi ha una exportació activa en la sessió d\'ús d\'aquest connector!';
-$string['somepluginsdisabled'] = 'Alguns connectors de portafolis han sigut deshabilitats completament per estar mal configurats o per aquest altre motiu:';
+$string['somepluginsdisabled'] = 'Alguns connectors de portafolis s\'han inhabilitat completament per estar mal configurats o per aquest altre motiu:';
 $string['sure'] = 'Esteu completament segurs de voler suprimir \'{$a}\'? Aquesta acció no es podrà desfer.';
 $string['thirdpartyexception'] = 'Una excepció d\'una tercera part ha sigut llançada durant l\'exportació de portafolis ({$a}). Capturada i tornada a generar, però aquesta hauria de d\'estar fixada.';
 $string['transfertime'] = 'Temps de transferència';

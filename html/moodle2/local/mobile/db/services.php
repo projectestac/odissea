@@ -26,8 +26,14 @@ defined('MOODLE_INTERNAL') || die;
 
 $functions = array(
 
-    // Cohort related functions.
-
+    'local_mobile_core_user_remove_user_device' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_user_remove_user_device',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Remove user devices.',
+        'type'          => 'write',
+        'capabilities'  => '',
+    ),
     'local_mobile_core_grades_get_grades' => array(
         'classname'     => 'local_mobile_external',
         'methodname'    => 'core_grades_get_grades',
@@ -94,7 +100,23 @@ $functions = array(
         'description' => 'Search for contacts',
         'type'        => 'read',
         'capabilities'=> '',
-    )
+    ),
+    'local_mobile_core_message_get_blocked_users' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_message_get_blocked_users',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Retrieve a list of users blocked',
+        'type'          => 'read',
+        'capabilities'  => '',
+    ),
+    'local_mobile_core_group_get_course_user_groups' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_group_get_course_user_groups',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Returns all groups in specified course for the specified user.',
+        'type'        => 'read',
+        'capabilities'=> 'moodle/course:managegroups',
+    ),
 );
 
 $services = array(
@@ -124,7 +146,6 @@ $services = array(
             'local_mobile_mod_forum_get_forum_discussions_paginated',
             'local_mobile_mod_forum_get_forum_discussion_posts',
             'local_mobile_core_files_get_files',
-            'core_message_get_messages',
             'core_message_create_contacts',
             'core_message_delete_contacts',
             'core_message_block_contacts',
@@ -132,7 +153,10 @@ $services = array(
             'core_message_get_contacts',
             'core_message_search_contacts',
             'local_mobile_core_message_search_contacts',
-            'local_mobile_gradereport_user_get_grades_table'
+            'local_mobile_gradereport_user_get_grades_table',
+            'local_mobile_core_message_get_blocked_users',
+            'local_mobile_core_group_get_course_user_groups',
+            'local_mobile_core_user_remove_user_device'
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

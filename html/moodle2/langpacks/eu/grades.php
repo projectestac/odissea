@@ -312,7 +312,7 @@ $string['gradetype_help'] = '4 kalifikazio mota daude:
 
 Balorea eta eskala motako kalifikazioak bakarrik agrega daitezke. Jarduera baten kalifikaziorako kalifikazio-mota jardueraren ezerpenek orrian aukeratzen da.';
 $string['gradeview'] = 'Ikusi kalifikazioa';
-$string['gradeweighthelp'] = 'Kalifikazioen neurketari buruzko laguntza';
+$string['gradeweighthelp'] = 'Kalifikazioen pisuari buruzko laguntza';
 $string['groupavg'] = 'Taldearen batez bestekoa';
 $string['hidden'] = 'Ezkutuan';
 $string['hiddenasdate'] = 'Ezkutuko kalifikazioetan bidalketa-data erakutsi';
@@ -342,6 +342,7 @@ $string['highgradedescending'] = 'Kalifikazioak beherantz ordenatu';
 $string['highgradeletter'] = 'Altuak';
 $string['identifier'] = 'Erabiltzailea honela identifikatu';
 $string['idnumbers'] = 'ID zenbakiak';
+$string['ignore'] = 'Baztertu';
 $string['import'] = 'Inportatu';
 $string['importcsv'] = 'inportatu CSV';
 $string['importcustom'] = 'Inportatu pertsonalizatutako helburu bezala (ikastaro honetan baino ez)';
@@ -411,7 +412,7 @@ $string['morethanmax'] = '{$a->itemname}-n {$a->username}-ri emandako kalifikazi
 $string['moveselectedto'] = 'Aukeratutako elementuak hona mugitu:';
 $string['movingelement'] = '{$a} mugitzen';
 $string['multfactor'] = 'Biderkatzailea';
-$string['multfactor_help'] = '<p>Kalifikazio-elementu honen kalifikazio guztiak zein faktorerekin biderkatuko diren.</p>';
+$string['multfactor_help'] = 'Kalifikazio-elementu honen kalifikazio guztiak zein faktorerekin biderkatuko diren, beti ere kalifikazio maximoa gainditu gabe. Adibidez, biderkatzailea 2 bada eta kalifikazio maximoa 100, 50etik beherako balioak bikoiztuko dira eta hortik gorakoak 100 baliora aldatuko dira.';
 $string['multfactorvalue'] = 'Biderkatzailearen balorea {$a}rako';
 $string['mypreferences'] = 'Nire hobespenak';
 $string['myreportpreferences'] = 'Nire txostenaren hobespenak';

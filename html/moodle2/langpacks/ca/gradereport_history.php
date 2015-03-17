@@ -25,12 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allgradeitems'] = 'Tots els elements de qualificació';
+$string['allgraders'] = 'Tots els qualificadors';
 $string['datefrom'] = 'Data a partir de';
 $string['datetill'] = 'Data fins';
 $string['datetime'] = 'Data i hora';
 $string['deselect'] = 'Desselecciona';
+$string['excluded'] = 'Exclòs dels càlculs';
+$string['feedbacktext'] = 'Text de retroacció';
+$string['finishselectingusers'] = 'Acaba la selecció d\'usuaris';
 $string['gradenew'] = 'Qualificació revisada';
 $string['gradeold'] = 'Qualificació original';
+$string['grader'] = 'Qualificador';
+$string['historyperpage'] = 'Entrades de l\'històric per pàgina';
+$string['historyperpage_help'] = 'Aquest paràmetre estableix el nombre d\'entrades de l\'històric que es mostraran a cada pàgina de l\'informe.';
+$string['history:view'] = 'Mostra l\'històric de qualificacions.';
+$string['pluginname'] = 'Històric de qualificacions';
+$string['preferences'] = 'Preferències de l\'històric de qualificacions';
+$string['revisedonly'] = 'Només qualificacions revisades';
+$string['revisedonly_help'] = 'Mostra només les qualificacions que s\'han revisat.
+
+Això significa que només es llistaran aquelles entrades amb la qualificació alterada.';
 $string['selectedusers'] = 'Usuaris seleccionats';
 $string['selectuser'] = 'Selecciona usuari';
 $string['source'] = 'Origen';

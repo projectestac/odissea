@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['assignmentcheckopt'] = 'Check if assignments are due before the course starts?';
+$string['assignments'] = 'Assignments';
+$string['bcu_course_checks:addinstance'] = 'Add a new course check block';
 $string['blocksenabledopt'] = 'What blocks would you encourage on courses?';
 $string['cachedef_coursechecksdata'] = 'Course checks caching';
 $string['cleanpermfailure'] = 'Sorry, there was an error when trying to clean this course.';

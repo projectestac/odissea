@@ -42,7 +42,7 @@ $string['adminseesall'] = 'Els administradors ho veuen tot';
 $string['adminseesallevents'] = 'Els administradors veuen tots els esdeveniments';
 $string['adminseesownevents'] = 'Els administradors són com els altres usuaris';
 $string['advancedfeatures'] = 'Característiques avançades';
-$string['allcountrycodes'] = 'Codis de país';
+$string['allcountrycodes'] = 'Tots els codis de país';
 $string['allowbeforeblock'] = 'La llista de permeses es processa inicialment';
 $string['allowbeforeblockdesc'] = 'Per defecte, les entrades de la llista d\'IP blocades es comprova primer. Si s\'activa aquesta opció, es processen abans les entrades de la llista d\'IP permeses que la llista de les blocades.';
 $string['allowblockstodock'] = 'Permet que els blocs utilitzin la barra lateral';
@@ -318,7 +318,7 @@ $string['configrequestedstudentname'] = 'Paraula per a «estudiant» en els curs
 $string['configrequestedstudentsname'] = 'Paraula per a «estudiants» en els cursos sol·licitats';
 $string['configrequestedteachername'] = 'Paraula per a «professor» en els cursos sol·licitats';
 $string['configrequestedteachersname'] = 'Paraula per a «professors» en els cursos sol·licitats';
-$string['configrequiremodintro'] = 'Deshabiliteu aquesta opció si no voleu forçar els usuaris a escriure la descripció de l\'activitat.';
+$string['configrequiremodintro'] = 'Inhabiliteu aquesta opció si no voleu forçar els usuaris a escriure la descripció de cada activitat.';
 $string['configrunclamavonupload'] = 'Si habiliteu aquest paràmetre, s\'utilitzarà clam AV per examinar tots els fitxers que es pengin.';
 $string['configrunclamonupload'] = 'Voleu executar el clam AV quan es pengin fitxers? Proporcioneu un camí correcte en pathtoclam perquè funcioni. (Clam AV és un escanejador de virus lliure que podeu obtenir en http://www.clamav.net/)';
 $string['configsectioninterface'] = 'Interfície';
@@ -385,7 +385,7 @@ $string['coursecontact'] = 'Administradors de curs';
 $string['coursecontact_desc'] = 'Aquest paràmetre us permet controlar qui apareix a la descripció dels cursos. Els usuaris que tinguin almenys un d\'aquests rols en un curs apareixeran en la descripció d\'aquest curs.';
 $string['courselistshortnames'] = 'Mostra els noms curts';
 $string['courselistshortnames_desc'] = 'Si està activat, en la llista de cursos es mostrarà el nom curt dels cursos a més a més del nom complet. Si cal, els noms de cursos perllongats poden ser personalitzats mitjançant l\'edició de la cadena de llengua \'courseextendednamedisplay\' utilitzant la funció de personalització d\'idioma.';
-$string['coursemgmt'] = 'Afegeix/edita cursos';
+$string['coursemgmt'] = 'Gestiona cursos i categories';
 $string['courseoverview'] = 'Resum del curs';
 $string['courserequestnotify'] = 'Notificació de sol·licitud de curs';
 $string['courserequestnotifyemail'] = 'L\'usuari {$a->user} ha sol·licitat un nou curs: {$a->link}';
@@ -1026,8 +1026,8 @@ $string['tablenosave'] = 'Els canvis a la taula de dalt es desen de manera autom
 $string['tablesnosave'] = 'Els canvis a les taules de dalt es desen de manera automàtica.';
 $string['tabselectedtofront'] = 'En taules amb tabulacions, la fila amb l\'etiqueta seleccionada s\'hauria de posar davant';
 $string['tabselectedtofronttext'] = 'Passa davant la fila seleccionada';
-$string['testsiteupgradewarning'] = 'Esteu utilitzant el lloc de prova {$a}. Per a actualitzar de forma correcta utilitzeu l\'eina d\'intefícia de línia d\'ordres.';
-$string['themedesignermode'] = 'Mode dissenyador de temes';
+$string['testsiteupgradewarning'] = 'Esteu utilitzant el lloc de prova {$a}. Per a actualitzar de forma correcta utilitzeu l\'eina d\'interfície de línia d\'ordres.';
+$string['themedesignermode'] = 'Mode de dissenyador de temes';
 $string['themelist'] = 'Llista de temes';
 $string['themenoselected'] = 'No hi ha cap tema seleccionat ';
 $string['themeresetcaches'] = 'Buida la memòria cau dels temes';
@@ -1051,7 +1051,7 @@ $string['unicoderecommended'] = 'Es recomana emmagatzemar totes les dades en Uni
 $string['unicoderequired'] = 'Es requereix emmagatzemar totes les dades en format Unicode (UTF-8). Les noves instal·lacions s\'han de realitzar en bases de dades que tinguin definit com a Unicode el conjunt de caràcters per defecte. Si esteu fent una actualització, hauríeu de passar el procés de migració a UTF-8 (vg. la pàgina d\'Administració).';
 $string['uninstallplugin'] = 'Desinstal·la';
 $string['unlockaccount'] = 'Desbloca el compte';
-$string['unsettheme'] = 'Deshabilita el tema';
+$string['unsettheme'] = 'Inhabilita el tema';
 $string['unsupported'] = 'No implementat';
 $string['unsuspenduser'] = 'Activeu el compte d\'usuari';
 $string['updateaccounts'] = 'Actualitza els comptes existents';
@@ -1061,7 +1061,7 @@ $string['updateautodeploy'] = 'Habilita el desplegament d\'actualitzacions';
 $string['updateautodeploy_desc'] = 'Si s\'habilita, podreu baixar i instal·lar actualitzacions disponibles directament des de les pàgines d\'administració de Moodle. Fixeu-vos que, perquè això funcioni, el procés del vostre servidor web ha de tenir permís d\'escriptura en les carpetes d\'instal·lació de Moodle. Això és un risc de seguretat en potència.';
 $string['updateavailable'] = 'Hi ha disponible una versió de Moodle més recent!';
 $string['updateavailabledetailslink'] = 'Vegeu {$a->url} per obtenir més detalls';
-$string['updateavailableforplugin'] = 'Hi ha disponible una versió d\'alguns dels vostres plugins més recent!';
+$string['updateavailableforplugin'] = 'Hi ha disponible una versió més recent d\'alguns dels vostres connectors!';
 $string['updateavailableinstall'] = 'Instal·la aquesta actualització';
 $string['updateavailable_moreinfo'] = 'Més informació...';
 $string['updateavailablenot'] = 'El codi del vostre Moodle està actualitzat!';
@@ -1074,7 +1074,7 @@ $string['updatenotificationfooter'] = 'El vostre lloc Moodle {$a->siteurl} està
 $string['updatenotifications'] = 'Notificacions d\'actualització';
 $string['updatenotificationsubject'] = 'Hi ha actualitzacions de Moodle disponibles ({$a->siteurl})';
 $string['updatenotifybuilds'] = 'Notifica\'m l\'aparició de noves compilacions';
-$string['updatenotifybuilds_desc'] = 'Si s\'habilita, s\'informarà quan hi hagi una actualització per Moodle que sigui una nova compilació de la versió actual. Les compilacions són millores continues d\'una versió de Moodle. Normalment es llancen de forma setmanal. Si es deshabilita sols s\'informarà quan una nova versió de Moodle hagi estat alliberada. La comprovació de connectors no està afectada per aquest paràmetre.';
+$string['updatenotifybuilds_desc'] = 'Si s\'habilita, s\'informarà quan hi hagi una actualització per Moodle que sigui una nova compilació de la versió actual. Les compilacions són millores contínues d\'una versió de Moodle. En general s\'alliberen setmanalment. Si s\'inhabilita sols s\'informarà quan una nova versió de Moodle hagi estat alliberada. La comprovació de connectors no està afectada per aquest paràmetre.';
 $string['upgrade197notice'] = '<p>Moodle 1.9.7 conté un nombre de millores de seguretat a les contrasenyes dels usuaris i a les còpies de seguretat per protegir les dades d\'usuari del vostre lloc web. En conseqüència han canviat alguns dels paràmetres i permisos de les còpies de seguretat. <br /> Mireu les <a href="http://docs.moodle.org/en/Moodle_1.9.7_release_notes" target="_blank">notes de llançament de Moodle 1.9.7 </a> per llegir tots els detalls.</p>
 ';
 $string['upgrade197noticesubject'] = 'Avisos d\'actualització de seguretat  de Moodle 1.9.7';
@@ -1083,33 +1083,33 @@ $string['upgradeerror'] = 'Error d\'actualització desconegut. L\'actualització
 $string['upgradeforumread'] = 'S\'ha afegit una nova característica en Moodle 1.5 per fer el seguiment dels missatges llegits/no llegits dels fòrums.<br />Per utilitzar aquesta funcionalitat necessiteu <a href="{$a}">actualitzar les taules</a>.';
 $string['upgradeforumreadinfo'] = 'S\'ha afegit una nova característica en Moodle 1.5 per fer el seguiment dels missatges llegits/no llegits dels fòrums. Per utilitzar aquesta funcionalitat necessiteu actualitzar les taules amb tota la informació de seguiment dels missatges actuals. Segons la mida del vostre lloc això pot durar una bona estona (hores) i pot carregar bastant la base de dades, així que és millor fer-ho durant un període tranquil. Tanmateix el vostre lloc continuarà funcionant durant l\'actualització i els els usuaris no es veuran afectats. Una vegada hàgiu engegat aquest procés haureu de deixar que acabi (mantenint oberta la finestra del navegador). Però si atureu el procés tancant la finestra, no cal que us amoïneu: podeu iniciar el procés una altra vegada.<br /><br />Voleu iniciar ara el procés d\'actualització?';
 $string['upgradelogs'] = 'Per a disposar de totes les funcionalitats, els vostres registres s\'han d\'actualitzar. <a href="{$a}">Més informació</a>';
-$string['upgradelogsinfo'] = 'S\'han introduït alguns canvis en la manera d\'emmagatzemar els registres. Per tal de poder veure tots els vostres registres vells per activitat, els vostres registres vells s\'han d\'actualitzar. Depenent del vostre servidor això pot trigar una bona estona (unes quantes hores) i en una instal·lació gran pot carregar una mica la base de dades. Una vegada hàgeu engegat aquest procés haureu de deixar que acabi (mantenint la finestra del navegador oberta). No us amoïneu: el vostre lloc seguirà actiu per als usuaris mentre els registres s\'actualitzen. <br /><br />Voleu actualitzar els registres ara?';
+$string['upgradelogsinfo'] = 'S\'han introduït alguns canvis en la manera d\'emmagatzemar els registres. Per tal de poder veure tots els vostres registres vells per activitat, els vostres registres vells s\'han d\'actualitzar. Depenent del vostre servidor això pot trigar una bona estona (unes quantes hores) i en una instal·lació gran pot carregar una mica la base de dades. Una vegada hàgiu engegat aquest procés haureu de deixar que acabi (mantenint la finestra del navegador oberta). No us amoïneu: el vostre lloc seguirà actiu per als usuaris mentre els registres s\'actualitzen. <br /><br />Voleu actualitzar els registres ara?';
 $string['upgradepluginsfirst'] = 'Heu de descarregar i instal·lar les actualitzacions disponibles manualment';
 $string['upgradepluginsinfo'] = 'S\'estan actualitzant els connectors';
-$string['upgradepluginsinfo_help'] = 'Hi ha actualitzacions disponibles per a alguns dels vostres connectors. Hauríeu d\'istal·lar-los tots abans d\'actualitzar la base de dades de Moodle. Si el vostre lloc no suporta el desplegament automàtic d\'actualitzacions, haureu de descarregar les noves versions dels connectors i instal·lar-les al vostre servidor de forma manual.';
+$string['upgradepluginsinfo_help'] = 'Hi ha actualitzacions disponibles per a alguns dels vostres connectors. Hauríeu d\'instal·lar-los tots abans d\'actualitzar la base de dades de Moodle. Si el vostre lloc no admet el desplegament automàtic d\'actualitzacions, haureu de descarregar les noves versions dels connectors i instal·lar-les al vostre servidor de forma manual.';
 $string['upgradesettings'] = 'Nous paràmetres';
-$string['upgradesettingsintro'] = 'Els paràmetres que es mostren a continuació han estat afegits en la darrera actualització de Moodle. Feu els canvis necessaris en els valors per defecte i tot seguit feu clic en "Desa els paràmetres" al capdavall de la pàgina.';
-$string['upgradestalefiles'] = 'S\'han detectat fitxers d\'instal·lació invàlids, l\'actualització no pot continuar.';
+$string['upgradesettingsintro'] = 'Els paràmetres que es mostren a continuació han estat afegits en la darrera actualització de Moodle. Feu els canvis necessaris en els valors per defecte i tot seguit feu clic a «Desa els paràmetres» al capdavall de la pàgina.';
+$string['upgradestalefiles'] = 'S\'han detectat fitxers d\'instal·lació no vàlids, l\'actualització no pot continuar.';
 $string['upgradestalefilesinfo'] = 'El procés d\'actualització de Moodle s\'ha aturat perquè s\'han detectat scripts PHP d\'almenys dues versions diferents de Moodle en el directori Moodle.
 
 Això pot causar problemes significatius més endavant, de manera que, abans de continuar, us heu d\'assegurar que el directori Moodle només conté fitxers d\'una sola versió de Moodle.
 
 La manera recomanada de netejar el directori Moodle és la següent:
 
-* Canvieu el nom del directori Moodle actual a "moodle_old"
+* Canvieu el nom del directori Moodle actual a «moodle_old»
 * Creeu un directori Moodle nou que contingui només els fitxers nous d\'un paquet estàndard de baixada de Moodle o dels repositoris CVS o GIT
-* Traslladeu el fitxer config.php original i qualssevol connectors no estàndard des del directori "moodle_old" al nou directori Moodle
+* Traslladeu el fitxer config.php original i qualssevol connectors no estàndard des del directori «moodle_old» al nou directori Moodle
 
 Quan tingueu un directori Moodle net, refresqueu aquesta pàgina per reprendre el procés d\'actualització de Moodle.
 
-Aquesta advertència és sovint causada per haver descomprimit un paquet estàndard de Moodle damunt d\'una versió anterior de Moodle. Per a actualitzacions menor això no té cap importància, però es desaconsella per a actualitzacions importants de Moodle.
+Aquesta advertència és sovint causada per haver descomprimit un paquet estàndard de Moodle damunt d\'una versió anterior de Moodle. Per a actualitzacions menors això no té cap importància, però es desaconsella per a actualitzacions importants de Moodle.
 
 Aquesta advertència també pot ser causada per una transacció incompleta des del repositori Git, en el qual cas és possible que simplement hàgiu d\'esperar que l\'operació es completi, o potser executar l\'ordre de neteja corresponent i tornar a intentar l\'operació.
 
 Podeu trobar més informació en la documentació d\'actualització a <a href="{$a}">{$a}</a>';
 $string['upgradestart'] = 'Actualitza la base de dades de Moodle ara';
-$string['upgradesure'] = 'Els vostres fitxers de Moodle han canviat i esteu a punt d\'actualitzar automàticament el servidor a aquesta versió:<p><b>{$a}</b></p><p>Després de fer això no podreu tornar enrere.</p><p>Esteu segur que voleu actualitzar aquest servidor a aquesta versió?</p>';
-$string['upgradetimedout'] = 'L\'actualització s\'ha excedit en temps. Si us plau reinicieu-la.';
+$string['upgradesure'] = 'Els vostres fitxers de Moodle han canviat i ara actualitzareu automàticament el servidor a aquesta versió:<p><b>{$a}</b></p><p>Després de fer això no podreu tornar enrere.</p><p>Esteu segur que voleu actualitzar aquest servidor a aquesta versió?</p>';
+$string['upgradetimedout'] = 'L\'actualització ha exhaurit el temps d\'espera. Reinicieu-la.';
 $string['upgradingdata'] = 'S\'estan actualitzant les dades';
 $string['upgradinglogs'] = 'S\'estan actualitzant els registres';
 $string['upgradingversion'] = 'S\'està actualitzant a la nova versió';
@@ -1123,15 +1123,15 @@ $string['userpolicies'] = 'Política d\'usuaris';
 $string['userpreference'] = 'Preferència d\'usuari';
 $string['userquota'] = 'Quota d\'usuari';
 $string['users'] = 'Usuaris';
-$string['usesitenameforsitepages'] = 'Utilitza el nom del lloc per les pàgines del lloc';
+$string['usesitenameforsitepages'] = 'Utilitza el nom del lloc per a les pàgines del lloc';
 $string['usetags'] = 'Habilita la funcionalitat d\'etiquetes';
 $string['validateerror'] = 'Aquest valor no és vàlid:';
-$string['verifychangedemail'] = 'Restringeix els dominis quan es canvii el correu electrònic';
+$string['verifychangedemail'] = 'Restringeix els dominis quan es canviï el correu electrònic';
 $string['warningcurrentsetting'] = 'Valor actual no vàlid: {$a}';
-$string['warningiconvbuggy'] = 'La vostra versió de la llibreria iconv no és compatible amb el modificador //IGNORE. Hauríeu d\'instal·lar l\'extensió mbstring que pot utilitzar-se en lloc de cadenes de neteja que continguin caràcters UTF-8 invàlids.';
+$string['warningiconvbuggy'] = 'La vostra versió de la llibreria iconv no és compatible amb el modificador //IGNORE. En lloc seu hauríeu d\'instal·lar l\'extensió mbstring que pot utilitzar-se per netejar cadenes que continguin caràcters UTF-8 no vàlids.';
 $string['webproxy'] = 'Intermediari web';
 $string['webproxyinfo'] = 'Empleneu les opcions següents si el vostre servidor Moodle no pot accedir directament a Internet. L\'accés a Internet és necessari per baixar dades d\'entorn, paquets d\'idioma, canals RSS, zones horàries, etc.<br /><em>Es recomana l\'extensió de PHP cURL</em>.';
-$string['xmlrpcrecommended'] = 'Us cal l\'extensió xmlrpc per les comunicacions amb el hub, i també és útil per als serveis web i les xarxes Moodle.';
+$string['xmlrpcrecommended'] = 'Us cal l\'extensió xmlrpc per a les comunicacions amb el concentrador (<em>hub</em>), i també és útil per als serveis web i les xarxes Moodle.';
 $string['yuicomboloading'] = 'Carregant el combinat YUI';
 $string['ziprequired'] = 'Us cal l\'extensió Zip de PHP a Moodle, no es poden utilitzar els binaris info-ZIP o la llibreria PclZip.';
 $string['zlibenabled'] = 'zlib habilitada';

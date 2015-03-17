@@ -78,16 +78,14 @@ $string['newenrols_desc'] = 'Permet que els usuaris s\'inscriguen ells mateixos 
 $string['newenrols_help'] = 'Aquest paràmetre determina si un usuari pot inscriure\'s en aquest curs.';
 $string['nopassword'] = 'No cal clau d\'inscripció.';
 $string['password'] = 'Clau d\'inscripció';
-$string['password_help'] = 'Una clau d\'inscripció habilita per accedir al curs que està restringit sols als qui coneixen la clau.
+$string['password_help'] = 'Una clau d\'inscripció habilita que l\'accés al curs estarà restringit només a aquelles persones que coneixen la clau.
 
 Si el camp es deixa en blanc, qualsevol usuari podrà inscriure\'s al curs.
 
-Si especifiqueu una clau d\'inscripció, qualsevol usuari que intenti inscriure\'s al curs, haurà de donar la clau. Avís: L\'usuari sols haurà de posar la clau d\'inscripció UNA sola vegada quan s\'inscrigui al curs.';
+Si especifiqueu una clau d\'inscripció, caldrà que qualsevol usuari que intenti inscriure\'s al curs proporcioni aquesta clau. Tingueu en compte que l\'usuari sols haurà de proporcionar la clau d\'inscripció UNA SOLA VEGADA, quan s\'inscrigui al curs.';
 $string['passwordinvalid'] = 'Clau d\'inscripció incorrecta, prova-ho una altre cop';
 $string['passwordinvalidhint'] = 'Aquesta clau d\'inscripció es errònia, si us plau torneu a intentar-ho<br />
-(Heus ací una pista: comença per \'{$a}\'.)
-
-(Una pista: comença per \'{$a}\'';
+(Una pista: comença per \'{$a}\'.)';
 $string['pluginname'] = 'Autoinscripció';
 $string['pluginname_desc'] = 'El connector d\'auto inscripció  habilita als usuaris per escollir els cursos en els quals volen participar. Els cursos poden estar protegits per una clau d\'inscripció. La inscripció es fa de forma interna amb el connector d\'inscripció el qual ha d\'estar habilitat al mateix curs.';
 $string['requirepassword'] = 'És necessària una clau d\'inscripció';

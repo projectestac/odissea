@@ -59,12 +59,7 @@ $string['attemptsx'] = '{$a} tentatives';
 $string['attr_error'] = 'Valeur incorrecte de l\'attribut ({$a->attr}) dans la balise {$a->tag}.';
 $string['autocontinue'] = 'Continuer automatiquement';
 $string['autocontinuedesc'] = 'Si ce réglage est activé, les objets d\'apprentissage suivants seront lancés automatiquement. Dans le cas contraire, un bouton Continuer devra être cliqué.';
-$string['autocontinue_help'] = '<!-- $Id$ -->
-
-
-<p>Si l\'option « Continuer automatiquement » est activée, l\'objet d\'apprentissage suivant est automatiquement lancé lorsque le précédent objet d\'apprentissage appelle la méthode standard « close communication.»</p>
-
-<p>Si elle n\'est pas activée, l\'apprenant doit cliquer explicitement le bouton « Continuer » pour obtenir l\'exercice ou l\'étape suivante.</p>';
+$string['autocontinue_help'] = 'Si ce réglage est activé, les objets d\'apprentissage suivants sont automatiquement lancés ; dans le cas contraire le participant doit cliquer explicitement le bouton « Continuer ».';
 $string['averageattempt'] = 'Moyenne des tentatives';
 $string['badarchive'] = 'Vous devez indiquer un fichier ZIP valide';
 $string['badimsmanifestlocation'] = 'Un fichier imsmanifest.xml a été trouvé, mais pas à la racine de votre fichier ZIP. Veuillez refaire votre paquetage SCORM.';
@@ -194,10 +189,7 @@ $string['location'] = 'Afficher la barre d\'URL';
 $string['max'] = 'Score max';
 $string['maximumattempts'] = 'Nombre de tentatives';
 $string['maximumattemptsdesc'] = 'Ce réglage détermine la valeur par défaut du nombre maximal de tentatives de l\'activité';
-$string['maximumattempts_help'] = '<!-- $Id$ -->
-
-
-<p>Ceci indique le nombre de tentatives que l\'utilisateur peut réaliser.<br />Utilisable uniquement avec les paquetages SCORM1.2 ou AICC. SCORM2004 comporte ses propres paramètres pour le nombre de tentatives.</p>';
+$string['maximumattempts_help'] = 'Ce réglage détermine le nombre de tentatives que l\'utilisateur peut réaliser. Il n\'est utilisable qu\'avec les paquetages SCORM 1.2 ou AICC.';
 $string['maximumgradedesc'] = 'Ce réglage détermine la note maximale par défaut de l\'activité';
 $string['menubar'] = 'Afficher la barre des menus';
 $string['min'] = 'Score minimum';
@@ -257,32 +249,7 @@ $string['package'] = 'Fichier paquetage';
 $string['packagedir'] = 'Erreur du système de fichier : impossible de créer le dossier du paquetage';
 $string['packagefile'] = 'Pas de paquetage spécifié';
 $string['packagehdr'] = 'Paquetage';
-$string['package_help'] = '<!-- $Id$ -->
-
-
-<p>Un paquetage est proposé sous forme d\'un seul fichier d\'extension <b>.zip</b> (ou .pif) qui contient des fichiers de description AICC ou SCORM valides.</p>
-
-<p>Un paquetage <b>SCORM</b> DOIT contenir à la racine du volume compressé, un fichier nommé <b>imsmanifest.xml</b> qui décrit la structure du cours SCORM, la situation des ressources et une foule d\'autres méta-informations.</p>
-
-<p>Un paquet <b>AICC</b> est défini par un ensemble de fichiers (de 4 à 7) avec des extensions prédéfinies. Voici les extensions et leurs signification :</p>
-
-<ul>
-
-<li>CRS - Fichier de description du cours (Course Description file - présence obligatoire)</li>
-
-<li>AU  - Fichier des éléments évaluables (Assignable Unit file - présence obligatoire)</li>
-
-<li>DES - Fichier des descripteurs (Descriptor file - présence obligatoire)</li>
-
-<li>CST - Fichier de structure du cours (Course Structure file - présence obligatoire)</li>
-
-<li>ORE - Fichier des relations entre objectifs (Objective Relationship file - optionnel)</li>
-
-<li>PRE - Fichier des prérequis (Prerequisites file - optionnel)</li>
-
-<li>CMP - Fichier des conditions de validation (Completion Requirements file - optionnel)</li>
-
-</ul>';
+$string['package_help'] = 'Un paquetage est un seul fichier d\'extension .zip (ou .pif) qui contient les fichiers de description du cours SCORM/AICC.';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Ce réglage permet de spécifier une URL pour le paquetage SCORM, au lieu de choisir un paquetage dans le sélecteur de fichiers.';
 $string['page-mod-scorm-x'] = 'Toute page du module SCORM';

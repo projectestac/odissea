@@ -194,9 +194,9 @@ $string['hintn'] = 'Pista {no}';
 $string['hintnoptions'] = 'Opcions de la pista {no}';
 $string['hinttext'] = 'Text de la pista';
 $string['howquestionsbehave'] = 'Com es comporten les preguntes';
-$string['howquestionsbehave_help'] = 'L\'estudiantat pot interactuar amb les preguntes del qüestionari de diverses maneres. Per exemple, potser vulgueu que l\'estudiantat doni una resposta a cada pregunta i després enviï el qüestionari complet, abans que sigui qualificat o rebi retroacció. Aquest mode és la \'retroacció diferida\'.
+$string['howquestionsbehave_help'] = 'Els estudiants poden interactuar amb les preguntes del qüestionari de diverses maneres. Per exemple, potser vulgueu que els estudiants donin una resposta a cada pregunta i després enviïn el qüestionari complet, abans que sigui qualificat o rebi retroacció. Aquest mode és la «retroacció diferida».
 
-Alternativament, podeu voler que l\'estudiantat respongui cada pregunta i obtingui una retroacció immediata, i si no contesta correctament de manera immediata, tingui una altra oportunitat amb menor puntuació. Aquest mode seria \'interactiu amb diversos intents\' .
+Alternativament, podeu voler que els estudiants responguin cada pregunta i obtinguin una retroacció immediata, i si no contesten correctament de manera immediata, tinguin una altra oportunitat amb menor puntuació. Aquest mode seria «interactiu amb diversos intents».
 
 Aquests probablement són els dos modes de comportament usats més comunament.';
 $string['ignorebroken'] = 'Ignora enllaços trencats';
@@ -376,7 +376,7 @@ $string['step'] = 'Pas';
 $string['stoponerror'] = 'Atura quan es produeixi un error';
 $string['stoponerror_help'] = 'Aquest paràmetre determina si el procés d\'importació s\'atura quan es detecta un error, i no s\'importa cap pregunta; o si s\'ignoren les preguntes amb errors i s\'importen les completes.';
 $string['submissionoutofsequence'] = 'Sortiu fora de la seqüència. Si us plau, no feu clic per anar enrere quan treballeu en preguntes de qüestionaris.';
-$string['submissionoutofsequencefriendlymessage'] = 'Heu introduït dades fora de la seqüència normal. Pot passar si feu servir els controls d\'avançar i recular del navegador d\'Internet; si us plau, no els feu servir mentre completeu el test. També podria passar si feu clic en algun punt quan es carrega una pàgina. Feu clic a <strong>Continua</strong> per continuar.';
+$string['submissionoutofsequencefriendlymessage'] = 'Heu introduït dades fora de la seqüència normal. Pot passar si feu servir els controls d\'avançar i recular del navegador d\'Internet; no els feu servir mentre completeu el test. També podria passar si feu clic en algun punt quan es carrega una pàgina. Feu clic a <strong>Continua</strong> per continuar.';
 $string['submit'] = 'Envia';
 $string['submitandfinish'] = 'Envia i acaba';
 $string['submitted'] = 'Envia: {$a}';

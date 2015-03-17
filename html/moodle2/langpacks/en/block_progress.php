@@ -57,7 +57,6 @@ $string['config_orderby_due_time'] = '"Expected by" date-time';
 $string['config_percentage'] = 'Show percentage to students';
 $string['config_title'] = 'Alternate title';
 $string['data'] = 'Database';
-$string['date_format'] = '%a %d %b, %I:%M %p';
 $string['feedback'] = 'Feedback';
 $string['finished'] = 'finished';
 $string['flashcardtrainer'] = 'Flashcard trainer';

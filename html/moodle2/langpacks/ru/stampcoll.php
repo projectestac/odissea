@@ -25,4 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addstamp'] = 'Добавить новый штамп';
+$string['addstampbutton'] = 'Добавить';
+$string['confirmdel'] = 'Вы действительно хотите удалить этот штамп?';
+$string['deletestamp'] = 'Удалить';
+$string['deletestampconfirm'] = 'Вы действительно хотите удалить этот штамп?';
+$string['displayzero'] = 'Показать участников, без штампов';
+$string['editstamp'] = 'Редактировать штамп';
+$string['filearea_image'] = 'Изображение штампа';
+$string['givenby'] = 'От: {$a}';
+$string['givento'] = 'До: {$a}';
+$string['managestamps'] = 'Управление штампами';
+$string['modulename'] = 'Коллекция штампов';
+$string['modulenameplural'] = 'Коллекции штампов';
+$string['numberofstamps'] = 'Штампы';
 $string['perpage'] = 'Пользователей на странице';
+$string['pluginname'] = 'Коллекция штампов';
+$string['stampcoll:collectstamps'] = 'Собирать штампы';
+$string['stampcoll:managestamps'] = 'Управлять штампами';
+$string['stampcoll:view'] = 'Просматривать штампы';
+$string['stampcoll:viewotherstamps'] = 'Просматривать чужие штампы';
+$string['stampcoll:viewownstamps'] = 'Просматривать свои штампы';
+$string['stamptext'] = 'Текст';
+$string['studentsperpage'] = 'Студентов на странице';
+$string['timemodified'] = 'Последние изменения';
+$string['updatestamps'] = 'Обновление штампов';
+$string['usernotenrolled'] = 'Пользователь  не зарегистрирован в этом курсе';

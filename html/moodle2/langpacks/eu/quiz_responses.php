@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'Ezin dira galdera-aukeraj kargatu';
+$string['include'] = 'Sartu';
+$string['mustselectcols'] = 'Zerbait sartu behar duzu.';
 $string['pagesize'] = 'Orriaren tamaina';
 $string['pluginname'] = 'Ebazpenak';
 $string['questiontext'] = 'galderaren testua';

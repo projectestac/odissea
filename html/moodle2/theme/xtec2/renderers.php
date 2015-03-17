@@ -339,8 +339,8 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
     function social_icons() {
         global $DB;
 
-		$social_icons_cache = cache::make('core', 'htmlpurifier');
-		if ($text = $social_icons_cache->get('social_icons')) {
+		$cache = cache::make('core', 'htmlpurifier');
+		if ($text = $cache->get('social_icons')) {
 			return $text;
 		}
         global $school_info, $CFG, $OUTPUT;
@@ -384,7 +384,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 		if ($url = get_config('theme_xtec2', 'youtube')) {
 			$content .= '<a href="'.$url.'" target="_blank"><i class="fa fa-youtube" title="Youtube"></i></a>';
 		}
-        $social_icons_cache->set('social_icons', $content);
+        $cache->set('social_icons', $content);
         return $content;
     }
 
@@ -501,5 +501,74 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         }
     }
 
+    public static function agora_alerts() {
+        static $renderized = false;
+
+        if ($renderized) {
+            return "";
+        }
+
+        $renderized = true;
+
+        $cache = cache::make('core', 'htmlpurifier');
+        if ($text = $cache->get('agora_alerts')) {
+            return $text;
+        }
+
+        $text = "";
+        $pluginconfig = get_config('theme_xtec2');
+        if (isloggedin() && has_capability('moodle/site:config', context_system::instance())) {
+            if ($adminmsg = self::get_alert_message($pluginconfig, 'admin_alert')) {
+                $text .= '<div class="admin_alert">'.$adminmsg;
+                $text .= '<div style="font-size:smaller">' . get_string('show_admins', 'theme_xtec2') . '</div></div>';
+            }
+        }
+
+        if ($agoramsg = self::get_alert_message($pluginconfig, 'agora_alert')) {
+            $text .= '<div class="all_alert">'.$agoramsg.'</div>';
+        }
+        if (!empty($text)) {
+            $title = get_string('advices', 'theme_xtec2');
+            $skiptitle = strip_tags($title);
+            $skipid = 'agora_alerts_skip';
+
+            $output = html_writer::tag('a', get_string('skipa', 'access', $skiptitle), array('href' => '#sb-' . $skipid, 'class' => 'skip-block'));
+            $output .= html_writer::start_tag('div' , array('id'=> 'agora-alerts', 'class' => 'block block_advices'));
+            $title = html_writer::tag('h2', $title);
+            $controlshtml =  '<i class="iconsmall closeicon fa fa-remove" alt="" title="" onclick="close_agora_alerts();"></i>';
+            $output .= html_writer::tag('div', html_writer::tag('div', html_writer::tag('div',  $controlshtml, array('class'=>'block_action')). $title, array('class' => 'title')), array('class' => 'header'));
+
+            $output .= '<div class="content">'.$text.'</div>';
+
+            $output .= html_writer::end_tag('div');
+
+            $output .= html_writer::tag('span', '', array('id' => 'sb-' . $skipid, 'class' => 'skip-block-to'));
+            $cache->set('agora_alerts', $output);
+            return $output;
+        }
+
+        $cache->set('agora_alerts', "");
+        return "";
+    }
+
+    public function blocks_for_region($region) {
+        $output = self::agora_alerts();
+        $output .= parent::blocks_for_region($region);
+        return $output;
+    }
+
+    public static function get_alert_message($pluginconfig, $configname) {
+        $msgvar = $configname.'_message';
+        if (!empty($pluginconfig->$msgvar)) {
+            $time = date("Ymd", time());
+            $startvar = $configname.'_start';
+            $endvar = $configname.'_end';
+            if ((empty($pluginconfig->$startvar) || $time >= $pluginconfig->$startvar)
+                && (empty($pluginconfig->$endvar) || $time <= $pluginconfig->$endvar)) {
+                return $pluginconfig->$msgvar;
+            }
+        }
+        return false;
+    }
 
 }

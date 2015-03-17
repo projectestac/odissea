@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_mahara', language 'fr', branch 'MOODLE_25_STABLE'
+ * Strings for component 'assignfeedback_mahara', language 'fr', branch 'MOODLE_26_STABLE'
  *
  * @package   assignfeedback_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,6 @@ $string['clicktoselect'] = 'Cliquez pour sélectionner cette page';
 $string['default'] = 'Activé par défaut';
 $string['default_help'] = 'Si activé, cette méthode de feedback sera activée par défaut pour tous les nouveaux devoirs.';
 $string['enabled'] = 'Feedback Mahara';
-$string['enabled_help'] = 'Si activé, les enseignants peuvent envoyer des notes vers Mahara';
 $string['err_mnetclient'] = 'Les échecs RPC suivants : {$a}';
 $string['err_save_setting'] = 'Echec lors de l\'enregistrement du réglage Mahara. Veuillez essayer à nouveau.';
 $string['err_selected_host'] = 'Impossible de trouver un site Mahara adéquat. Veuillez essayer à nouveau.';

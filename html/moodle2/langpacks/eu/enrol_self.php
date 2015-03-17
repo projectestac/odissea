@@ -29,6 +29,7 @@ $string['cohortonly'] = 'Kohorteko partaideak bakarrik';
 $string['customwelcomemessage'] = 'Pertsonalizatu ongi etorria emateko mezua';
 $string['defaultrole'] = 'Berezko rol-esleipena';
 $string['enrolenddate'] = 'Amaiera-data';
+$string['enrolenddate_help'] = 'Gaituz gero, erabiltzaileek matrikula egin dezakete data honetara arte bakarrik.';
 $string['enrolenddaterror'] = 'Matrikulaziorako amaiera-data ezin da hasierakoa baina lehenagokoa izan';
 $string['enrolme'] = 'Matrikula nazazu';
 $string['enrolperiod'] = 'Matrikulazioaren iraupena';
@@ -47,7 +48,7 @@ $string['newenrols'] = 'Baimendu matrikula berriak';
 $string['nopassword'] = 'Ez da matrikulazio-giltza behar.';
 $string['password'] = 'Matrikulazio-giltza';
 $string['passwordinvalid'] = 'Matrikulazio-giltza ez da zuzena, mesedez, saiatu berriz';
-$string['passwordinvalidhint'] = 'Partaide giltza hori ez da zuzena, mesedez berriro saiatu<BR>
+$string['passwordinvalidhint'] = 'Partaide giltza hori ez da zuzena, mesedez berriro saiatu<br/>
 (Laguntza txiki bat - honela hasten da: \'{$a}\')';
 $string['pluginname'] = 'Matrikulazio automatikoa';
 $string['requirepassword'] = 'Matrikulazio-giltza behar du';

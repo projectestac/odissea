@@ -93,7 +93,7 @@ $string['blindmarking'] = 'Anonyme Bewertung';
 $string['blindmarking_help'] = 'Die anonyme Bewertung verbirgt den Teilnehmernamen während der Bewertung. Die Einstelloption wird geblockt, sobald die erste Bewertung vorgenommen wurde.';
 $string['changegradewarning'] = 'In dieser Aufgabe sind bereits Lösungen bewertet worden. Bei einer Änderung der Bewertungsskala sind Neuberechnungen der Bewertungen erforderlich. Sie müssen ggfs. die Neuberechnung gesondert starten.';
 $string['choosegradingaction'] = 'Bewertungsvorgang';
-$string['choosemarker'] = 'Auwählen...';
+$string['choosemarker'] = 'Auswählen...';
 $string['chooseoperation'] = 'Operation wählen';
 $string['comment'] = 'Kommentar';
 $string['completionsubmit'] = 'Teilnehmer/in muss Lösung eingereicht haben, um Aktivität abzuschließen';
@@ -285,7 +285,7 @@ $string['requireallteammemberssubmit'] = 'Erfordert eine Abgabebestätigung durc
 $string['requireallteammemberssubmit_help'] = 'Wenn die Option aktiviert ist, müssen alle Gruppenmitglieder die eingereichte Lösung bestätigen, bevor eine Abgabe als abgegeben markiert wird.';
 $string['requiresubmissionstatement'] = 'Erklärung zur Eigenständigkeit muss bestätigt werden';
 $string['requiresubmissionstatement_help'] = 'Teilnehmer/innen müssen die Erklärung zur Eigenständigkeit bei Lösungen für diese Aufgabe abgeben.';
-$string['revealidentities'] = 'Identität der Teilnehmenden verbergen';
+$string['revealidentities'] = 'Identität der Teilnehmenden aufdecken';
 $string['revealidentitiesconfirm'] = 'Sind Sie sicher, dass die Identität der Teilnehmenden für diese Aufgabe aufgedeckt werden soll? Die Einstellung kann nicht zurückgesetzt werden. Wenn die Identität der Teilnehmenden aufgedeckt wurde, werden die Bewertungen in der Bewertungsübersicht angezeigt.';
 $string['reverttodraft'] = 'Abgabe in den Entwurfsmodus zurücksetzen';
 $string['reverttodraftforstudent'] = 'Den Status der Lösung auf Entwurf zurücksetzen für (id={$a->id}, fullname={$a->fullname}). Danach ist eine Bearbeitung wieder möglich.';

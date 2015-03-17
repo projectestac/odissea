@@ -284,6 +284,9 @@ $string['puserfield'] = 'Valeur du champ Utilisateur';
 $string['puserfield_summary'] = 'Utilisateur avec la valeur sélectionnée dans le champ sélectionné';
 $string['queryfailed'] = 'Échec de la requête';
 $string['querysql'] = 'Requête SQL';
+$string['remote'] = 'Exécution sur une base de données à distance';
+$string['remotedescription'] = 'Voulez-vous lancer la recherche dans la base de données à distance';
+$string['remote_help'] = 'Voulez-vous lancer la recherche dans la base de données à distance';
 $string['remotequerysql'] = 'Requête SQL';
 $string['report'] = 'Rapport';
 $string['reportcategories'] = '1) Choisissez une catégorie de rapports distant';
@@ -302,6 +305,7 @@ $string['reporttable'] = 'Tableau du rapport';
 $string['reporttable_help'] = '<p>Il s\'agit de la largeur du tableau qui affiche les enregistrements du rapport.</p>
 
 <p>Si vous utilisez un modèle, cette option n\'a pas d\'effet.</p>';
+$string['reporttableui'] = 'Interface du tableau des rapports';
 $string['reporttableuiinfo'] = 'Afficher le rapport comme : simple tableau HTML déroulant , jQuery avec tri de colonne ou une bibliothèque DataTables JS (tri par colonne , titre défini , recherche , pagination ... )';
 $string['report_timeline'] = 'Rapport de la ligne du temps';
 $string['report_users'] = 'Rapport sur les utilisateurs';

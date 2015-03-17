@@ -62,13 +62,13 @@ div.wiristabs div.wiristabcontent {
 }
 div.wiristabs div.wirisalgorithmlanguage {
     position: absolute;
-    bottom: 130px;
+    bottom: 135px;
     left:10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 div.wiristabs div.wiriscaswrapper {
-    bottom: 165px;
+    bottom: 170px;
     left: 10px;
     position: absolute;
     right: 10px;
@@ -131,10 +131,9 @@ a.wirishelp {
     width: 17px;
 }
 span.wirishelp {
-    float: right;
-    margin-right: 5px;
-    position: relative;
-    top: -25px;
+    position: absolute;
+    top: 3px;
+	right: 10px;
 }
 span.wirisloading {
   background: url("?service=resource&name=loading.gif") no-repeat scroll left top transparent;
@@ -151,6 +150,10 @@ div.wiristabs fieldset.wirisfieldset {
     border-color:  #999;
     margin-bottom: 10px;
 	padding-bottom: 5px;
+}
+div.wiristabs div.wirisfieldsetwrapper{
+	/*Base position for help button.*/
+	position: relative;
 }
 div.wiristabs fieldset.wirisfieldset.wiriscollapsed {
 	border-radius: 0;
@@ -254,11 +257,37 @@ div.wiristabs span.wirishorizontalparam label{
 div.wiristabs label.wirisleftlabel2 {
     margin-right: 5px;
 }
-div.wiristabs div.wirishelpwrapper {
+div.wiristabs div.wirishelpwrapper ,
+div.wiristabs div.wirismessagebox {
     font-size: 10pt;
     margin-left: 10px;
     margin-right: 5px;
 }
+div.wiristabs div.wirismessagebox {
+	position: absolute;
+	bottom: 72px;
+	margin-bottom: 5px;
+	/*Do not overlap with tab help text*/
+	z-index: 10;
+	background-color: #e0e0e0;
+}
+div.wirismessage {
+	padding-left:  18px;
+	margin: 5px 0;
+}
+div.wirismessage.wiriserror{
+    color: #701703;
+    background: url('?service=resource&name=warning.png') no-repeat left top;
+}
+div.wirismessage.wiriswarning{
+    color: #70370a;
+    background: url('?service=resource&name=warning2.png') no-repeat left top;
+}
+div.wirismessage.wirisinfo{
+    color: #265970;
+    background: url('?service=resource&name=warning3.png') no-repeat left top;
+}
+
 div.wiristabs div.wirissecondaryfieldset {
     margin-bottom: 10px;
 }
@@ -412,22 +441,48 @@ label.wirisleftlabel {
     margin-right: 5px;
 }
 
-table.wirisoutputcontrolslist{
+label.wirissecondlabel {
+	margin-left: 10px;
+}
+
+
+table.wirisoutputcontrolslist {
   padding: 0;
   margin: 0;
   border: none;
   border-spacing: 0px;
   border-collapse: collapse;
 }
+
 table.wirisoutputcontrolslist td{
-  padding: 0;
+  padding: 1px;
   margin: 0;
 }
+
+table.wirisoutputcontrolslist tr.wirisrowthinspace > td {
+	padding-top: 4px;
+}
+
 table.wirisoutputcontrolslist td.wirisleftlabellist {
   text-align: right;
 }
 div.wiristabs input.wirissmalltextfield {
   width: 60px;
+}
+div.wiristabs span.wirisfloatingexample{
+	margin-left: 20px;
+	color: #666;
+	font-size: 0.9em;
+}
+div.wiristabs span.wirisfloatingnumber{
+	margin-left: 10px;
+	font-size: 1.15em;
+}
+div.wiristabs table.wirisoutputcontrolslist{
+	overflow: hidden;
+}
+div.wiristabs table.wirisoutputcontrolslist td{
+	white-space: nowrap;
 }
 
 
@@ -515,20 +570,7 @@ ul.wiristestassertionslist{
     padding: 0;
     list-style: none outside none;
 }
-.wirisinlinewarning{
-    font-size: 0.9em;
-    color: #c02705;
-    font-weight: bold;
-    background: url('?service=resource&name=warning.png') no-repeat left;
-    padding-left:  18px;
-}
-div.wiriswarningbox{
-    display: inline-block;
-    overflow: hidden;
-    height: 17px;
-    max-width: 317px;
-    margin-left: 10px;
-}
+
 .wirissmalllabel{
 	font-size: 0.9em;
 	vertical-align: text-top;

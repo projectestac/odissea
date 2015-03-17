@@ -25,15 +25,7 @@ class com_wiris_quizzes_impl_Option extends com_wiris_quizzes_impl_MathContent {
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $OPTION_RELATIVE_TOLERANCE = "relative_tolerance";
-	static $OPTION_TOLERANCE = "tolerance";
-	static $OPTION_PRECISION = "precision";
-	static $OPTION_TIMES_OPERATOR = "times_operator";
-	static $OPTION_IMAGINARY_UNIT = "imaginary_unit";
-	static $OPTION_EXPONENTIAL_E = "exponential_e";
-	static $OPTION_NUMBER_PI = "number_pi";
-	static $OPTION_IMPLICIT_TIMES_OPERATOR = "implicit_times_operator";
 	static $options;
 	function __toString() { return 'com.wiris.quizzes.impl.Option'; }
 }
-com_wiris_quizzes_impl_Option::$options = new _hx_array(array(com_wiris_quizzes_impl_Option::$OPTION_RELATIVE_TOLERANCE, com_wiris_quizzes_impl_Option::$OPTION_TOLERANCE, com_wiris_quizzes_impl_Option::$OPTION_PRECISION, com_wiris_quizzes_impl_Option::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_impl_Option::$OPTION_IMAGINARY_UNIT, com_wiris_quizzes_impl_Option::$OPTION_EXPONENTIAL_E, com_wiris_quizzes_impl_Option::$OPTION_NUMBER_PI, com_wiris_quizzes_impl_Option::$OPTION_IMPLICIT_TIMES_OPERATOR));
+com_wiris_quizzes_impl_Option::$options = new _hx_array(array(com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE, com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE, com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION, com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_EXPONENTIAL_E, com_wiris_quizzes_api_QuizzesConstants::$OPTION_NUMBER_PI, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR));

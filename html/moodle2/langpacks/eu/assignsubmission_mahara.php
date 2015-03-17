@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_mahara', language 'eu', branch 'MOODLE_25_STABLE'
+ * Strings for component 'assignsubmission_mahara', language 'eu', branch 'MOODLE_26_STABLE'
  *
  * @package   assignsubmission_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,17 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clicktoselect'] = 'klik egin orria aukeratzeko';
-$string['default'] = 'Berez gaituta';
 $string['enabled'] = 'Mahara portfolioa';
 $string['nomaharahostsfound'] = 'Ez da Mahara ostalaririk aurkitu.';
-$string['noviewscreated'] = 'Ez duzu orririk sortu hemen: {$a}.';
-$string['pluginfile'] = 'Mahara portfolioa';
 $string['pluginname'] = 'Mahara portfolioa';
-$string['preview'] = 'Aurreikusi';
-$string['selectedview'] = 'Bidalitako orria';
-$string['site'] = 'Mahara gunea';
-$string['title'] = 'Izenburua';
-$string['typemahara'] = 'Mahara portfolioa';
-$string['views'] = 'Orriak';
 $string['viewsby'] = '{$a}-(r)en orriak';

@@ -49,7 +49,7 @@ $string['configfilenotwritten'] = 'Instalazioaren scriptak ezin izan du aukeratu
 $string['configfilewritten'] = 'config.php arrakastaz sortu da';
 $string['configurationcomplete'] = 'Ezarpen osatua';
 $string['configurationcompletehead'] = 'Ezarpen osatua';
-$string['configurationcompletesub'] = 'Moodle-k ezarpen-fitxategia sortu du';
+$string['configurationcompletesub'] = 'Moodle zure konfigurazioa instalazioaren erroan kokatutatako fitxategi batean gordetzen saiatu da.';
 $string['database'] = 'Datu-basea';
 $string['databasehead'] = 'Datu-basearen ezarpenak';
 $string['databasehost'] = 'Datu-basearen ostalaria';
@@ -156,9 +156,10 @@ $string['pathsunsecuredataroot'] = 'Dataroot-en kokapena ez da segurua';
 $string['pathswrongadmindir'] = 'Kudeaketa direktorioa ez da existitzen';
 $string['phpextension'] = '{$a} PHP luzapena';
 $string['phpversion'] = 'PHP bertsioa';
-$string['phpversionhelp'] = '<p>Moodle-k PHP 4.1.0 edo geroagoko bertsioa behar du.</p>
+$string['phpversionhelp'] = '<p>Moodle-k gutxienez PHP 4.3.0 edo 5.1.0 (5.0.x errore batzuk ditu). </p>
 <p>Zure bertsioa: {$a}</p>
-<p>PHP eguneratu edo PHP bertsio berriagoa duen zerbitzari batera jo</p>';
+<p>PHP eguneratu edo PHP bertsio berriagoa duen zerbitzari batera jo</p>
+<p>5.0.x baduzu, nahi izanez gero, 4.4.x. bertsiora jaitsi dezakezu</p>';
 $string['releasenoteslink'] = 'Moodle-ren bertsio honi buruzko informazio gehiagorako, mesedez ikus itzazu Bertsio-oharrak hemen: {$a}';
 $string['safemode'] = 'Modu segurua';
 $string['safemodeerror'] = 'Moodle-k arazoak izan ditzake \'modu segurua\' ezarriz gero';

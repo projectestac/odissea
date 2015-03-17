@@ -29,3 +29,4 @@ $string['actions'] = 'Accions';
 $string['activity'] = 'Activitat';
 $string['attempts'] = 'Intents';
 $string['description'] = 'Descripció';
+$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer «.jclic.zip» vàlid.';

@@ -184,7 +184,7 @@ $string['currentstatus'] = 'Estat actual:';
 $string['dateawarded'] = 'Data publicada';
 $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Dia (dies)';
-$string['deactivate'] = 'Deshabilita l\'accés';
+$string['deactivate'] = 'Inhabilita l\'accés';
 $string['deactivatesuccess'] = 'L\'accés a les insígnies s\'ha desactivat amb èxit.';
 $string['defaultissuercontact'] = 'Dades de contacte de l\'emissor de la insígnia per defecte';
 $string['defaultissuercontact_desc'] = 'Una adreça de correu electrònic associada a l\'entitat emissora de la insígnia.';
@@ -343,7 +343,7 @@ Una vegada una insígnia s\'ha emès almenys per a un usuari, es **BLOCA** autom
 
 Volem assegurar-nos que tots els usuaris completen els mateixos requisits per a guanyar una insígnia. Actualment, no és possible revocar insígnies. Si permetem que els requisits d\'insígnies es puguen modificar en qualsevol moment, probablement acabaríem amb usuaris amb la mateixa insígnia per satisfer completament diferents requisits.';
 $string['statusmessage_0'] = 'Actualment aquesta insígnia no està disponible per als usuaris. Habiliteu l\'accés si voleu que els usuaris la puguin guanyar.';
-$string['statusmessage_1'] = 'Actualment aquesta insígnia està disponible per als usuaris. Deshabiliteu l\'accés per fer qualsevol canvi.';
+$string['statusmessage_1'] = 'Actualment aquesta insígnia està disponible per als usuaris. Inhabiliteu l\'accés per fer qualsevol canvi.';
 $string['statusmessage_2'] = 'Actualment aquesta insígnia no està disponible per als usuaris i els criteris estan blocats. Habiliteu l\'accés si voleu que els usuaris la puguin guanyar.';
 $string['statusmessage_3'] = 'Actualment aquesta insígnia està disponible per als usuaris i els criteris estan blocats.';
 $string['statusmessage_4'] = 'Actualment aquesta insígnia està arxivada.';

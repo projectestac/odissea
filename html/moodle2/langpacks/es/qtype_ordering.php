@@ -25,10 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingordering'] = 'Agregar una pregunta de tipo Poner en orden';
 $string['correctorder'] = 'El orden correcto de estos elementos es el siguiente:';
 $string['defaultquestionname'] = 'Coloca los siguientes sucesos en el orden correcto.';
-$string['editingordering'] = 'Edición de Poner en orden';
 $string['noresponsedetails'] = 'Lo sentimos, ningún detalle está disponible para la respuesta a esta pregunta.';
 $string['ordering'] = 'Poner en orden';
 $string['orderingsummary'] = 'Resumen de Poner en orden';

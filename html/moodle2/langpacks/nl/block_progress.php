@@ -49,7 +49,6 @@ $string['config_now'] = 'Gebruik';
 $string['config_percentage'] = 'Toon percentage aan leerlingen';
 $string['config_title'] = 'Alternatieve titel';
 $string['data'] = 'Database';
-$string['date_format'] = '%a %d %b, %I:%M %p';
 $string['feedback'] = 'Feedback';
 $string['finished'] = 'klaar';
 $string['flashcardtrainer'] = 'Flashcard trainer';

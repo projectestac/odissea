@@ -31,6 +31,6 @@ $string['cc-nc'] = 'Creative Commons - EzKomertziala';
 $string['cc-nc-nd'] = 'Creative Commons - Aitortu-EzKomertziala-LanEratorririkGabe';
 $string['cc-nc-sa'] = 'Creative Commons - Aitortu-EzKomertziala-PartekatuBerdin';
 $string['cc-nd'] = 'Creative Commons - Aitortu-LanEratorririkGabe';
-$string['cc-sa'] = 'Creative Commons - ShareAlike';
+$string['cc-sa'] = 'Creative Commons - PartekatuBerdin';
 $string['public'] = 'Domeinu publikoa';
 $string['unknown'] = 'Bestelako bat';

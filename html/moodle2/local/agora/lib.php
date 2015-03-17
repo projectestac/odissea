@@ -151,6 +151,13 @@ function run_cli_cron($background = true) {
         if ($outputdir) {
             $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
         }
+
+        //Erase old files
+        $search = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ym", strtotime("-2 month"));
+        foreach (glob($search.'*.log') as $filename) {
+           unlink($filename);
+        }
+        $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
     }
     $append = true;
     return run_cli($command, $outputfile, $append, $background);
@@ -292,12 +299,12 @@ function is_service_enabled($service) {
 }
 
 function get_service_url($service) {
-    global $CFG;
-    if (is_service_enabled($service)) {
+    global $agora;
+    if (isset($agora['server']) && is_service_enabled($service)) {
         if ($service == 'nodes') {
-            return $CFG->wwwroot.'/../';
+            return $agora['server']['server'] . $agora['server']['base'];
         }
-        return $CFG->wwwroot.'/../'.$service.'/';
+        return $agora['server']['server'] . $agora['server']['base'] . $service.'/';
     }
     return false;
 }

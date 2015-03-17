@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix';
 $string['alltags'] = 'Totes les etiquetes:';
-$string['arrowtitle'] = 'Premeu aquí per entrar el text suggerit (en lletres grises)';
+$string['arrowtitle'] = 'Cliqueu aquí per introduir el text suggerit (en lletres grises)';
 $string['configtitle'] = 'Títol del bloc';
 $string['coursetags'] = 'Etiquetes del curs:';
 $string['defaultdisplay'] = 'Tipus d\'etiqueta que es mostrarà';

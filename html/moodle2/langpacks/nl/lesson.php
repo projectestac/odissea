@@ -84,15 +84,9 @@ $string['cannotfindtimer'] = 'Fout: kon records van lestimer niet vinden';
 $string['cannotfinduser'] = 'Fout: kon geen gebruikers vinden';
 $string['canretake'] = '{$a} mag de les opnieuw doen';
 $string['casesensitive'] = 'Regular expressions gebruiken';
-$string['casesensitive_help'] = '<p>Enkele vraagtypes hebben een optie die ingeschakeld kan worden door deze checkbox aan te vinken. De vraagtypes en de bedoeling van de opties worden hier in detail overlopen.</p>
-
-<ol>
-<li><p><b>Meerkeuzevragen</b> Er is een variant op de meerkeuzevragen die
-    <b>&quot;Meerkeuzevraag met meerdere antwoorden&quot;</b> genoemd wordt. Als de vraagoptie aangevinkt is, dan wordt de leerling verwacht alle juiste opties te selecteren uit de aangeboden set antwoorden. In de vraag kun je al dan niet aangeven <i>hoeveel</i> antwoorden uit de set juist zijn. Bijvoorbeeld: &quot;Welke van de volgende personen waren Amerikaanse presidenten?&quot; tegenover &quot;Kies de twee Amerikaanse presidenten uit de onderstaande lijst.&quot;. Het aantal juiste antwoorden kan van <b>één</b> tot een willekeurig aantal zijn. (Meerkeuzevragen met de mogelijkheid om meerdere antwoorden te kiezen en waar maar één antwoord juist is, dat kan ook: het geeft de leerling de mogelijkheid meerdere antwoorden aan te duiden, terwijl een gewone meerkeuzevraag die mogelijkheid niet geeft.)</p></li>
-<li><p><b>Kort antwoord</b> Standaard is hoofdlettergevoeligheid uitgeschakeld. Als de vraagoptie is aangevinkt, dan wordt er bij de verbetering met hoofdletters rekening gehouden.</p></li>
-<p>De andere vraagtypes gebruiken de vraagopties niet.</p>';
+$string['casesensitive_help'] = 'Zet een vinkje om regular expressions te gebruiken voor de analyse van de antwoorden.';
 $string['checkbranchtable'] = 'Controleer inhoudspagina';
-$string['checkedthisone'] = 'Deze is gecontroleerd';
+$string['checkedthisone'] = 'hebben dit geantwoord.';
 $string['checknavigation'] = 'Controleer de navigatie';
 $string['checkquestion'] = 'Controleer de vraag';
 $string['classstats'] = 'Statistieken van de klas';
@@ -172,7 +166,7 @@ $string['endofbranch'] = 'Einde vertakking';
 $string['endofcluster'] = 'Einde cluster';
 $string['endofclustertitle'] = 'Einde van de cluster';
 $string['endoflesson'] = 'Einde van de les';
-$string['enteredthis'] = 'dit ingegeven.';
+$string['enteredthis'] = 'hebben dit geantwoord.';
 $string['entername'] = 'Geef een schuilnaam voor de lijst met hoogste scores';
 $string['enterpassword'] = 'Geef het wachtwoord:';
 $string['eolstudentoutoftime'] = 'Opgelet: je tijd voor deze les is helemaal op. Wanneer je laatste antwoord verstuurd is nadat de tijd op was, dan telt dat niet meer mee.';
@@ -438,7 +432,7 @@ $string['nohighscores'] = 'Geen hoogste cijfer';
 $string['nolessonattempts'] = 'Niemand heeft deze les gemaakt.';
 $string['nooneansweredcorrectly'] = 'Niemand heeft juist geantwoord';
 $string['nooneansweredthisquestion'] = 'Niemand heeft deze vraag beantwoord';
-$string['noonecheckedthis'] = 'Niemand heeft dit gecontroleerd';
+$string['noonecheckedthis'] = 'Niemand heeft dit geantwoord.';
 $string['nooneenteredthis'] = 'Niemand heeft dit ingegeven';
 $string['noonehasanswered'] = 'Niemand heeft een open vraag beantwoord';
 $string['noretake'] = 'Je mag deze les niet opnieuw maken';

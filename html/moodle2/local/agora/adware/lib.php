@@ -34,7 +34,8 @@ function detect_adware($notused = false) {
 
 	$searches = array('%script%cdncache%akamaihd%',
 					  '%rackcdn.com/ytplayall%',
-					  '%.cloudfront.net/items/loaders%');
+					  '%.cloudfront.net/items/loaders%',
+					  '%http://www.video2mp3.at/_go.php%');
 	$modules = $DB->get_records_menu('modules', array(), '', 'id,name');
 
 	$adware = new StdClass();

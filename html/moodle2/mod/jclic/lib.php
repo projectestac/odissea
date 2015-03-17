@@ -33,7 +33,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-define('JCLIC_DEFAULT_JARBASE', 'http://clic.xtec.cat/dist/jclic');
+define('JCLIC_DEFAULT_JARBASE', 'https://clic.xtec.cat/dist/jclic');
 define('JCLIC_DEFAULT_LAP', 5);
 
 if (!isset($CFG->jclic_jarbase)) {
@@ -145,7 +145,7 @@ function jclic_delete_instance($id) {
     $cm = get_coursemodule_from_instance('jclic', $id, 0, false, MUST_EXIST);
     $context = context_module::instance($cm->id);
 
-    $jclic = new jclic($context, null, null);
+    $jclic = new jclic($context, $cm, null);
     return $jclic->delete_instance();
 }
 

@@ -464,21 +464,24 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					while($_g1 < $_g) {
 						$i1 = $_g1++;
 						$checks = $this->compoundChecks->get(_hx_string_rec(1000 + $studentAnswer * 1000 + $i1, "") . "")->get(_hx_string_rec(1000 + $correctAnswer * 1000 + $i1, "") . "");
-						$j = null;
-						$correct = true;
-						{
-							$_g3 = 0; $_g2 = $checks->length;
-							while($_g3 < $_g2) {
-								$j1 = $_g3++;
-								$correct = $correct && _hx_array_get($checks, $j1)->value === 1.0;
-								unset($j1);
+						if($checks !== null) {
+							$j = null;
+							$correct = true;
+							{
+								$_g3 = 0; $_g2 = $checks->length;
+								while($_g3 < $_g2) {
+									$j1 = $_g3++;
+									$correct = $correct && _hx_array_get($checks, $j1)->value === 1.0;
+									unset($j1);
+								}
+								unset($_g3,$_g2);
 							}
-							unset($_g3,$_g2);
+							if($correct) {
+								$grade += $distribution[$i1];
+							}
+							unset($j,$correct);
 						}
-						if($correct) {
-							$grade += $distribution[$i1];
-						}
-						unset($j,$i1,$correct,$checks);
+						unset($i1,$checks);
 					}
 				}
 			} else {
@@ -679,6 +682,32 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			$textvars = new Hash();
 			$textvars->set(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT, $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT));
 			return $h->expandVariables($text, $textvars);
+		}
+	}
+	public function addAllHashElements($src, $dest) {
+		if($src !== null) {
+			$it = $src->keys();
+			while($it->hasNext()) {
+				$name = $it->next();
+				$dest->set($name, $src->get($name));
+				unset($name);
+			}
+		}
+	}
+	public function expandVariablesMathMLEval($equation) {
+		$h = new com_wiris_quizzes_impl_HTMLTools();
+		if($this->variables === null || $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML_EVAL) === null) {
+			return $this->expandVariablesMathML($equation);
+		} else {
+			$vars = new Hash();
+			$newvars = new Hash();
+			$vars->set(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML, $newvars);
+			$this->addAllHashElements($this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML), $newvars);
+			$this->addAllHashElements($this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML_EVAL), $newvars);
+			if(com_wiris_quizzes_impl_MathContent::getMathType($equation) === com_wiris_quizzes_impl_MathContent::$TYPE_TEXT) {
+				$equation = $h->textToMathML($equation);
+			}
+			return $h->expandVariables($equation, $vars);
 		}
 	}
 	public function expandVariablesMathML($equation) {

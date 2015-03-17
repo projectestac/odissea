@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmquestionsaveasedited'] = 'Baieztatzen dut galdera editatu den bezala gordetzea nahi dudala';
 $string['confirmsave'] = 'Baieztatu eta gero gorde {$a}';
 $string['correctanswer'] = 'Erantzun zuzena';
 $string['correctanswerandfeedback'] = 'Erantzun zuzena eta feedbacka';
@@ -48,8 +49,12 @@ $string['questioninquiz'] = '<ul><li> gehitu edo ezabatu galderak, </li> <li> al
 $string['questionnotfound'] = 'Ezin da aurkitu #{$a} galdera-zatiaren galdera';
 $string['questionsadded'] = 'Galdera gehitu da';
 $string['questionsaveasedited'] = 'Galdera editatutakoa bezala gordeko da';
-$string['questionsmissing'] = 'Ez dago balio duen galderarik, sortu gutxienez galdera bat';
+$string['questionsless'] = 'Erantzun anitzeko galderan baino {$a} galdera gutxiago dago gordeta datu-basean.';
+$string['questionsmissing'] = 'Galderaren testuak gutxienez txertatutako erantzun bat izan behar du.';
+$string['questionsmore'] = 'Erantzun anitzeko galderan baino {$a} galdera gehiago dago gordeta datu-basean.';
 $string['questiontypechanged'] = 'Galdera-mota aldatu da';
+$string['questiontypechangedcomment'] = 'Gutxienez galdera baten mota aldatua izan da. <br>Galderaren bat gehitu, ezabatu edo mugitu duzu?<br> Aurrera begiratu.';
+$string['questionusedinquiz'] = 'Galdera hau {$a->nb_of_quiz} galdetegi(et)an erabiltzen da, saiakerak guztira: {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Gordetako galdera-mota: {$a}';
 $string['subqresponse'] = '{$a->i} zatia: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Galdera-mota ezezaguna: # {$a->sub} galdera-zatiaren {$a->type}';

@@ -652,6 +652,17 @@ body.path-grade-report-grader #user-grades {
 	color: black;
 }
 
+.block_advices .closeicon {
+    color: white;
+    text-shadow: 0;
+}
+
+.block_advices .closeicon:hover {
+    color: white;
+    cursor: pointer;
+    background: transparent;
+}
+
 
 /* Phones and tablets */
 @media (max-width: 979px) {

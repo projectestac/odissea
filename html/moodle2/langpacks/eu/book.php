@@ -63,7 +63,7 @@ $string['numbering0'] = 'Bat ere ez';
 $string['numbering1'] = 'Zenbakiak';
 $string['numbering2'] = 'Buletak';
 $string['numbering3'] = 'Koskatzea';
-$string['numbering_help'] = '* Bat ere ere - atalen eta azpiatalen izenburuek ez dute formaturik.
+$string['numbering_help'] = '* Bat ere ez - atalen eta azpiatalen izenburuek ez dute formaturik.
 * Zenbakiak - atalak eta azpiatalak zenbatuta daude  1, 1.1, 1.2, 2, ...
 * Buletak - azpiatalak koxkatuta daude eta buletak dituzte eduki-taulan.
 * Koskatuta - azpiatalak koskatuta daude eduki-taulan';

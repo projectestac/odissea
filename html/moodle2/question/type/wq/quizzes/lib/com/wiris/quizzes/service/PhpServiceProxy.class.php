@@ -23,7 +23,7 @@ class com_wiris_quizzes_service_PhpServiceProxy {
 		$conf = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
 		$conf->set(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL, $this->getReferer());
 		
-		$res = new com_wiris_quizzes_service_PhpHttpResponse();
+		$res = new com_wiris_system_service_HttpResponse();
 		
 		$parameters = new Hash();
 		// Standard post parameters.
@@ -61,32 +61,6 @@ class com_wiris_quizzes_service_PhpServiceProxy {
 		//Be comaptible with both magic_quotes on and off.
 		if(!isset($_POST[$name])) return null;
 		return get_magic_quotes_gpc() ? stripslashes($_POST[$name]) : $_POST[$name];
-	}
-}
-
-class com_wiris_quizzes_service_PhpHttpResponse implements com_wiris_quizzes_service_HttpResponse {
-	private $headers = array();
-	
-	function close() {
-		//Nothing!
-	}
-	function writeString($s) {
-		echo $s;
-	}
-	function writeBinary($data) {
-		$this->writeString($data->toString());
-	}
-	function sendError($num, $message) {
-		header($_SERVER["SERVER_PROTOCOL"] . ' ' . $num . ' ' . $message);
-		header('Status: ' . $num . ' ' . $message);
-		die();
-	}
-	function setHeader($name, $value) {
-		$headers[$name] = $value;
-		header($name . ': ' . $value);
-	}
-	function getHeader($name) {
-		isset($headers[$name]) ? $headers[$name] : null;
 	}
 }
 ?>

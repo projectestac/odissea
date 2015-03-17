@@ -13,7 +13,7 @@ class script_bigdata extends agora_script_base{
 
 	public function params(){
 		$params = array();
-		$params['profileid'] = optional_param('profileid', false, PARAM_INT);
+		$params['profilename'] = optional_param('profilename', false, PARAM_TEXT);
 		return $params;
 	}
 
@@ -24,14 +24,14 @@ class script_bigdata extends agora_script_base{
 			return false;
 		}
 
-		if (empty($params['profileid'])) {
+		if (empty($params['profilename'])) {
 			mtrace('No profile selected');
 			return false;
 		}
 
 		require_once($CFG->dirroot.'/local/bigdata/lib.php');
 
-		return bigdata_export($params['profileid']);
+		return bigdata_export($params['profilename']);
 	}
 
 	function is_visible() {

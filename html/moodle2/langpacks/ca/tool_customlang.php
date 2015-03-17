@@ -55,6 +55,6 @@ $string['placeholder_help'] = 'Els marcadors de posició són declaracions espec
 
 És important copiar-los exactament tal com són a la cadena original. No traduir-los ni canviar la seva orientació esquerra-a-dreta.';
 $string['placeholderwarning'] = 'la cadena conté un marcador de posició';
-$string['pluginname'] = 'Personalització d\'idioma.';
-$string['savecheckin'] = 'Desa els canvis al paquet d\'idioma.';
-$string['savecontinue'] = 'Aplica els canvis i continua editant.';
+$string['pluginname'] = 'Personalització d\'idioma';
+$string['savecheckin'] = 'Desa els canvis al paquet d\'idioma';
+$string['savecontinue'] = 'Aplica els canvis i continua editant';

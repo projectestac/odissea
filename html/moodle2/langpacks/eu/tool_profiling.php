@@ -34,3 +34,5 @@ $string['importok'] = '"{$a}" fitxategia ondo inportatu da';
 $string['memory'] = 'Erabilitako memoria';
 $string['summaryof'] = '{$a}(r)en laburpena';
 $string['viewdetails'] = 'Ikusi profilaren xehetasunak';
+$string['viewdiff'] = 'Ikusi profilaren ezberdinatasunen xehetasunak honekin:';
+$string['viewdiffdetails'] = 'Ikusi profilaren ezberdinatasunen xehetasunak';

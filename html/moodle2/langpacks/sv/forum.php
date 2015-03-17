@@ -115,6 +115,7 @@ $string['deletedposts'] = 'De inläggen har tagits bort';
 $string['deletesure'] = 'Är Du säker på att Du vill ta bort detta inlägg?';
 $string['deletesureplural'] = 'Är Du säker på att Du vill ta bort detta inlägg och alla svar? ({$a} inlägg)';
 $string['digestmailheader'] = 'Det här är Din dagliga sammanfattning av nya inlägg  i {$a->sitename} forum. För att ändra på Dina val a e-post från forum - gå till {$a->userprefs}';
+$string['digestmailpost'] = 'Ändra inställning för hur du får e-post från forum';
 $string['digestmailprefs'] = 'Din användarprofil';
 $string['digestmailsubject'] = '{$a}: sammanfattning av forum';
 $string['digestmailtime'] = 'Klockslag för att skicka sammanfattad e-post';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['openlinkinnewwindow'] = 'リンクを新しいウィンドウに開く';
+$string['openlinkinnewwindow'] = 'リンクを新しいウィンドウで開く';
 $string['pluginname'] = 'URL';

@@ -57,7 +57,6 @@ $string['config_orderby_due_time'] = '"Noizko osatzea espero den" dataren araber
 $string['config_percentage'] = 'Erakutsi ehunekoak ikasleei';
 $string['config_title'] = 'Ordezko izenburua';
 $string['data'] = 'Datu-basea';
-$string['date_format'] = '%a %d %b, %I:%M %p';
 $string['feedback'] = 'Feedback-a';
 $string['finished'] = 'amaituta';
 $string['flashcardtrainer'] = 'Flashcard entrenatzailea';

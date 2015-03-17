@@ -9,8 +9,8 @@ class com_wiris_quizzes_impl_HTML {
 	public function openTd($className) {
 		$this->open("td", new _hx_array(array(new _hx_array(array("class", $className)))));
 	}
-	public function openTr() {
-		$this->open("tr", null);
+	public function openTr($className) {
+		$this->open("tr", new _hx_array(array(new _hx_array(array("class", $className)))));
 	}
 	public function openTable($id, $className) {
 		$this->open("table", new _hx_array(array(new _hx_array(array("id", $id)), new _hx_array(array("class", $className)))));
@@ -154,9 +154,15 @@ class com_wiris_quizzes_impl_HTML {
 		$this->s->add($raw);
 	}
 	public function getString() {
+		if($this->tags->length > 0) {
+			throw new HException("Malformed XML: tag " . $this->tags->pop() . " is not closed.");
+		}
 		return $this->s->b;
 	}
 	public function close() {
+		if($this->tags->length === 0) {
+			throw new HException("Malformed XML. No tag to close!");
+		}
 		$this->s->add("</");
 		$this->s->add($this->tags->pop());
 		$this->s->add(">");

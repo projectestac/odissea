@@ -94,6 +94,7 @@ class com_wiris_util_xml_WXmlUtils {
 		$output = str_replace("<", "&lt;", $output);
 		$output = str_replace(">", "&gt;", $output);
 		$output = str_replace("\"", "&quot;", $output);
+		$output = str_replace("&apos;", "'", $output);
 		return $output;
 	}
 	static function htmlUnescape($input) {
@@ -129,6 +130,7 @@ class com_wiris_util_xml_WXmlUtils {
 		$output = str_replace("&lt;", "<", $output);
 		$output = str_replace("&gt;", ">", $output);
 		$output = str_replace("&quot;", "\"", $output);
+		$output = str_replace("&apos;", "'", $output);
 		$output = str_replace("&amp;", "&", $output);
 		return $output;
 	}
@@ -143,13 +145,13 @@ class com_wiris_util_xml_WXmlUtils {
 		$s = com_wiris_util_xml_WXmlUtils::filterMathMLEntities($s);
 		return $s;
 	}
-	static function filterMathMLEntities($text) {
+	static function resolveEntities($text) {
 		com_wiris_util_xml_WXmlUtils::initEntities();
 		$sb = new StringBuf();
 		$i = 0;
 		$n = strlen($text);
 		while($i < $n) {
-			$c = _hx_char_code_at($text, $i);
+			$c = com_wiris_util_xml_WXmlUtils::getUtf8Char($text, $i);
 			if($c === 60 && $i + 12 < $n && _hx_char_code_at($text, $i + 1) === 33) {
 				if(_hx_substr($text, $i, 9) === "<![CDATA[") {
 					$e = _hx_index_of($text, "]]>", $i);
@@ -162,26 +164,11 @@ class com_wiris_util_xml_WXmlUtils {
 				}
 			}
 			if($c > 127) {
-				$d = $c;
-				if(com_wiris_settings_PlatformSettings::$UTF8_CONVERSION) {
-					$j = 0;
-					$c = 128;
-					do {
-						$c = $c >> 1;
-						$j++;
-					} while(($d & $c) !== 0);
-					$d = $c - 1 & $d;
-					while(--$j > 0) {
-						$i++;
-						$c = _hx_char_code_at($text, $i);
-						$d = ($d << 6) + ($c & 63);
-					}
-					unset($j);
-				}
-				$sb->add("&#" . _hx_string_rec($d, "") . ";");
-				unset($d);
+				$special = com_wiris_util_xml_WXmlUtils_1($c, $i, $n, $sb, $text);
+				$sb->add($special);
+				$i += strlen($special) - 1;
+				unset($special);
 			} else {
-				$sb->b .= chr($c);
 				if($c === 38) {
 					$i++;
 					$c = _hx_char_code_at($text, $i);
@@ -196,18 +183,18 @@ class com_wiris_util_xml_WXmlUtils {
 							$c = _hx_char_code_at($text, $i);
 						}
 						$ent = $name->b;
-						if($c === 59 && com_wiris_util_xml_WXmlUtils::$entities->exists($ent)) {
+						if($c === 59 && com_wiris_util_xml_WXmlUtils::$entities->exists($ent) && !com_wiris_util_xml_WXmlUtils::isXmlEntity($ent)) {
 							$val = com_wiris_util_xml_WXmlUtils::$entities->get($ent);
-							$sb->add("#");
-							$sb->add($val);
+							$sb->add(com_wiris_util_xml_WXmlUtils_2($c, $ent, $i, $n, $name, $sb, $text, $val));
 							unset($val);
 						} else {
+							$sb->add("&");
 							$sb->add($name);
+							$sb->b .= chr($c);
 						}
 						unset($name,$ent);
 					} else {
 						if($c === 35) {
-							$sb->b .= chr($c);
 							$i++;
 							$c = _hx_char_code_at($text, $i);
 							if($c === 120) {
@@ -220,22 +207,88 @@ class com_wiris_util_xml_WXmlUtils {
 									$c = _hx_char_code_at($text, $i);
 								}
 								$hent = $hex->b;
-								if($c === 59) {
+								if($c === 59 && !com_wiris_util_xml_WXmlUtils::isXmlEntity("#x" . $hent)) {
 									$dec = Std::parseInt("0x" . $hent);
-									$sb->add("" . _hx_string_rec($dec, ""));
+									$sb->add(com_wiris_util_xml_WXmlUtils_3($c, $dec, $hent, $hex, $i, $n, $sb, $text));
 									unset($dec);
 								} else {
-									$sb->add("x");
+									$sb->add("&#x");
 									$sb->add($hent);
+									$sb->b .= chr($c);
 								}
 								unset($hex,$hent);
+							} else {
+								if(48 <= $c && $c <= 57) {
+									$dec = new StringBuf();
+									while(48 <= $c && $c <= 57) {
+										$dec->b .= chr($c);
+										$i++;
+										$c = _hx_char_code_at($text, $i);
+									}
+									if($c === 59 && !com_wiris_util_xml_WXmlUtils::isXmlEntity("#" . Std::string($dec))) {
+										$sb->add(com_wiris_util_xml_WXmlUtils_4($c, $dec, $i, $n, $sb, $text));
+									} else {
+										$sb->add("&#" . $dec->b);
+										$sb->b .= chr($c);
+									}
+									unset($dec);
+								}
 							}
 						}
 					}
+				} else {
 					$sb->b .= chr($c);
 				}
 			}
 			$i++;
+			unset($c);
+		}
+		return $sb->b;
+	}
+	static function filterMathMLEntities($text) {
+		$text = com_wiris_util_xml_WXmlUtils::resolveEntities($text);
+		$text = com_wiris_util_xml_WXmlUtils::nonAsciiToEntities($text);
+		return $text;
+	}
+	static function getUtf8Char($text, $i) {
+		$c = _hx_char_code_at($text, $i);
+		$d = $c;
+		if(com_wiris_settings_PlatformSettings::$UTF8_CONVERSION) {
+			if($d > 127) {
+				$j = 0;
+				$c = 128;
+				do {
+					$c = $c >> 1;
+					$j++;
+				} while(($d & $c) !== 0);
+				$d = $c - 1 & $d;
+				while(--$j > 0) {
+					$i++;
+					$c = _hx_char_code_at($text, $i);
+					$d = ($d << 6) + ($c & 63);
+				}
+			}
+		} else {
+			if($d >= 55296 && $d <= 56319) {
+				$c = _hx_char_code_at($text, $i + 1);
+				$d = ($d - 55296 << 10) + ($c - 56320) + 65536;
+			}
+		}
+		return $d;
+	}
+	static function nonAsciiToEntities($s) {
+		$sb = new StringBuf();
+		$i = 0;
+		$n = strlen($s);
+		while($i < $n) {
+			$c = com_wiris_util_xml_WXmlUtils::getUtf8Char($s, $i);
+			if($c > 127) {
+				$sb->add("&#" . _hx_string_rec($c, "") . ";");
+				$i += strlen((com_wiris_util_xml_WXmlUtils_5($c, $i, $n, $s, $sb)));
+			} else {
+				$sb->b .= chr($c);
+				$i++;
+			}
 			unset($c);
 		}
 		return $sb->b;
@@ -415,7 +468,7 @@ class com_wiris_util_xml_WXmlUtils {
 						}
 						$res->add($aux);
 					} else {
-						haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 515, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+						haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 559, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
 						$res->add($aux);
 					}
 				}
@@ -424,6 +477,19 @@ class com_wiris_util_xml_WXmlUtils {
 		}
 		return trim($res->b);
 	}
+	static function isXmlEntity($ent) {
+		if(_hx_char_code_at($ent, 0) === 35) {
+			$c = null;
+			if(_hx_char_code_at($ent, 1) === 120) {
+				$c = Std::parseInt("0x" . _hx_substr($ent, 2, null));
+			} else {
+				$c = Std::parseInt(_hx_substr($ent, 1, null));
+			}
+			return $c === 34 || $c === 38 || $c === 39 || $c === 60 || $c === 62;
+		} else {
+			return $ent === "amp" || $ent === "lt" || $ent === "gt" || $ent === "quot" || $ent === "apos";
+		}
+	}
 	function __toString() { return 'com.wiris.util.xml.WXmlUtils'; }
 }
 function com_wiris_util_xml_WXmlUtils_0(&$charCode, &$endPosition, &$input, &$number, &$output, &$position, &$start, &$startPosition) {
@@ -431,5 +497,40 @@ function com_wiris_util_xml_WXmlUtils_0(&$charCode, &$endPosition, &$input, &$nu
 		$s = new haxe_Utf8(null);
 		$s->addChar($charCode);
 		return $s->toString();
+	}
+}
+function com_wiris_util_xml_WXmlUtils_1(&$c, &$i, &$n, &$sb, &$text) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar($c);
+		return $s->toString();
+	}
+}
+function com_wiris_util_xml_WXmlUtils_2(&$c, &$ent, &$i, &$n, &$name, &$sb, &$text, &$val) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(Std::parseInt($val));
+		return $s->toString();
+	}
+}
+function com_wiris_util_xml_WXmlUtils_3(&$c, &$dec, &$hent, &$hex, &$i, &$n, &$sb, &$text) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar($dec);
+		return $s->toString();
+	}
+}
+function com_wiris_util_xml_WXmlUtils_4(&$c, &$dec, &$i, &$n, &$sb, &$text) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(Std::parseInt($dec->b));
+		return $s->toString();
+	}
+}
+function com_wiris_util_xml_WXmlUtils_5(&$c, &$i, &$n, &$s, &$sb) {
+	{
+		$s1 = new haxe_Utf8(null);
+		$s1->addChar($c);
+		return $s1->toString();
 	}
 }

@@ -43,6 +43,7 @@ $string['coursemisconfigured'] = 'Course is misconfigured';
 $string['dateerror'] = 'Registrationperiod is after the Date!';
 $string['datetext'] = 'You are signed in for date';
 $string['deleteall'] = 'Delete all';
+$string['download_results'] = 'Download results';
 $string['drop_registration'] = 'Drop this registration entirely';
 $string['duedate'] = 'Registration-Date';
 $string['early'] = '{$a} early';

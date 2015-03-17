@@ -3,6 +3,19 @@ Release notes for JClic Module for Moodle (https://projectes.lafarga.cat/project
 More information on each of the fixes can be found in the project
 development home at https://projectes.lafarga.cat/projects/jclicmoodle
 
+Changes in 0.2.5 - 2015031300 (2015/03/13)
+---------------------------------------------------------------------------------------
+- Adapt module to Moodle 2.7 and 2.8
+- Some navigation changes and added new events API classes
+- Start testing new Travis CI scripts for continous integration
+- Solved error selecting groups on results page
+- Change status of no found session message
+- Solved issue adding a jclic using a URL
+- Updated translation to catalan and spanish
+- Set JClic default settings to https
+- Add protocol recognision through wwwroot url for the applet
+- Removed support for versions before 2.6
+
 Changes in 0.2.4 - 2014052901 (2014/11/07)
 ---------------------------------------------------------------------------------------
 - Adapted module to Moodle 2.6

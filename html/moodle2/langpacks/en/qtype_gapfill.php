@@ -27,8 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['answerdisplay'] = 'Display Answers';
 $string['answerdisplay_help'] = 'Dragdrop shows a list of words that can be dragged into the gaps, gapfill shows gaps with no word options, dropdown shows the same list of correct (and possibly incorrect) answers for each field';
+$string['blank'] = 'blank';
 $string['casesensitive'] = 'Case Sensitive';
 $string['casesensitive_help'] = 'When this is checked, if the correct answer is CAT, cat will be flagged as a wrong answer';
+$string['correctanswer'] = 'Correct answer';
 $string['delimitchars'] = 'Delimit characters';
 $string['delimitchars_help'] = 'Change the characters that delimit a field from the default [ ], useful for programming language questions';
 $string['delimitset'] = 'Delimit Chars';
@@ -47,6 +49,7 @@ $string['gapfill'] = 'Gapfill.';
 $string['moreoptions'] = 'More Options.';
 $string['noduplicates'] = 'No Duplicates';
 $string['noduplicates_help'] = 'When checked, each answer must be unique, useful where each field has a | operator, i.e. what are the colours of the Olympic medals and each field has [gold|silver|bronze], if the student enters gold in every field only the first will get a mark (the others will still get a tick though). It is really more like discard duplicate answers for marking purposes';
+$string['or'] = 'or';
 $string['pleaseenterananswer'] = 'Please enter an answer.';
 $string['pluginname'] = 'Gapfill';
 $string['pluginnameadding'] = 'Adding a Gap Fill Question.';

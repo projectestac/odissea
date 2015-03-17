@@ -46,10 +46,10 @@ $string['auth_shib_instructions'] = 'Utilitzeu l\'<a href="{$a}">entrada Shibbol
 $string['auth_shib_instructions_help'] = 'Aquí podeu proporcionar instruccions per explicar Shibboleth als vostres usuaris. Es visualitzaran en la secció d\'instruccions de la pàgina d\'entrada. Les instruccions han d\'incloure un enllaç a "<b>{$a}</b>" on els usuaris faran clic quan vulguin entrar.';
 $string['auth_shib_integrated_wayf'] = 'Servei Moodle WAYF';
 $string['auth_shib_integrated_wayf_description'] = 'Si ho habiliteu, Moodle utilitzarà el seu propi servei WAYF en lloc de la primera configuració per a Shibboleth. Moodle mostrarà una llista desplegable en aquesta pàgina d\'inici on l\'usuari podrà seleccionar el seu proveïdor d\'identitats. ';
-$string['auth_shib_logout_return_url'] = 'Desconnexió alternativa i retorn a la URL';
-$string['auth_shib_logout_return_url_description'] = 'Proporciona la URL on els usuaris Shibboleth seran redirigits després de tancar la sessió.</br> Si ho deixeu buit els usuaris seran redirigits a la localització on Moodle redirigeix els usuaris.';
+$string['auth_shib_logout_return_url'] = 'Desconnexió alternativa i retorn a l\'URL';
+$string['auth_shib_logout_return_url_description'] = 'Proporciona l\'URL on els usuaris Shibboleth seran redirigits després de tancar la sessió.</br> Si ho deixeu buit els usuaris seran redirigits a la localització on Moodle redirigeix els usuaris.';
 $string['auth_shib_logout_url'] = 'Proveïdor de servei Shibboleth del gestor de desconnexió d\'URL';
-$string['auth_shib_logout_url_description'] = 'Proporciona la URL per al gestor de desconnexió del proveïdor de servei Shibboleth. Aquesta és normalment <tt>/Shibboleth.sso/Logout</tt>';
+$string['auth_shib_logout_url_description'] = 'Proporciona l\'URL per al gestor de desconnexió del proveïdor de servei Shibboleth. Aquest és normalment <tt>/Shibboleth.sso/Logout</tt>';
 $string['auth_shib_no_organizations_warning'] = 'Si voleu utilitzar el servei integrat WAYF, heu de proporcionar una llista separada per comes d\'entityIDs dels proveïdors d\'identitats, els seus noms i opcionalment un iniciador de sessió.';
 $string['auth_shib_only'] = 'Només Shibboleth';
 $string['auth_shib_only_description'] = 'Activeu aquesta opció si cal imposar l\'autenticació via Shibboleth';

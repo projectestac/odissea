@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = 'Jokaera informazio-elementuetarako';
 $string['seen'] = 'Ikusi';

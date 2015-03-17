@@ -140,7 +140,10 @@ $string['displayleftmenu'] = 'Erakutsi ezker aldeko menua';
 $string['displayleftmenu_help'] = 'Gaituz gero, orri-zerrenda erakutsiko da.';
 $string['displayofgrade'] = 'Kalifikazioa erakutsi (ikasleentzat soilik)';
 $string['displayreview'] = 'Eman aukera galderari berriz erantzuteko';
-$string['displayscorewithessays'] = 'Automatikoki kalifikatutako galderetan hau da zure puntuazioa: {$a->score} posible zen gehienezko puntuazio honetatik: {$a->tempmaxgrade}.<br> {$a->essayquestions} galdera(k) beranduago kalifikatuko dira eta zure azken emaitzari erantsiko zaizkio aurrerago.<br><br>Oraingoz, eta entsegu-galdera(k) kontuan hartu gabe, zure emaitza {$a->score} (e)koa da {$a->grade} (e)tik';
+$string['displayscorewithessays'] = '<p>Automatikoki kalifikatutako galderetan hau da zure puntuazioa: {$a->score}
+posible zen gehienezko puntuazio honetatik: {$a->tempmaxgrade}.</p>
+<p> {$a->essayquestions} galdera(k) beranduago kalifikatuko dira eta zure azken emaitzari erantsiko zaizkio aurrerago.</p>
+<p>Oraingoz, eta entsegu-galdera(k) kontuan hartu gabe, zure emaitza {$a->score} (e)koa da {$a->grade} (e)tik</p>';
 $string['displayscorewithoutessays'] = 'Zure puntuazioa hau da: {$a->score} (gehienezkoa hau zen: {$a->grade}).';
 $string['edit'] = 'Editatu';
 $string['editingquestionpage'] = '{$a} galdera-orria editatzen';
@@ -203,8 +206,8 @@ $string['jump'] = 'Jauzia';
 $string['jumps'] = 'Jauziak';
 $string['jumps_help'] = 'Erantzun (galderetarako) edo deskribapen (eduki-orrietarako) bakoitzak dagokion jauzia du. Jauzia erlatiboa izan daiteke, horri hau edo hurrengo orria, adibidez, edo erabatekoa, ikasgaiko orrietako bat zehaztuta.';
 $string['jumpsto'] = '<em>{$a}</em>rako jauziak';
-$string['leftduringtimed'] = 'Denbora-epe finkoko ikasgaia eten da.<br>Berriz hasteko "Jarraitu" botoia sakatu, mesedez.';
-$string['leftduringtimednoretake'] = 'Denbora-epe finkoko ikasgaia eten da eta<br>ez dago berriz hasteko edo jarraitzeko baimenik.';
+$string['leftduringtimed'] = 'Denbora-epe finkoko ikasgaia eten da.<br/>Berriz hasteko "Jarraitu" botoia sakatu, mesedez.';
+$string['leftduringtimednoretake'] = 'Denbora-epe finkoko ikasgaia eten da eta<br/>ez dago berriz hasteko edo jarraitzeko baimenik.';
 $string['leftduringtimedsession'] = 'Denbora neurtua zuen ikasgai batetik irten zara.';
 $string['lesson:addinstance'] = 'Gehitu beste ikasgai bat';
 $string['lessonattempted'] = 'Ikasgai honetan saiakera egin da';
@@ -273,7 +276,7 @@ $string['multianswer_help'] = 'Aukera bat baino gehiago zuzena bada, klik egin l
 $string['multichoice'] = 'Aukera anitza';
 $string['multipleanswer'] = 'Erantzun anitza';
 $string['nameapproved'] = 'Izena onartu da';
-$string['namereject'] = 'Sentitzen dugu. Iragazkiak ez du zure izena onartu.<br>Beste izen batekin saiatu, mesedez.';
+$string['namereject'] = 'Sentitzen dugu. Iragazkiak ez du zure izena onartu.<br/>Beste izen batekin saiatu, mesedez.';
 $string['new'] = 'berria';
 $string['nextpage'] = 'Hurrengo orria';
 $string['noanswer'] = 'Ez da erantzunik eman';

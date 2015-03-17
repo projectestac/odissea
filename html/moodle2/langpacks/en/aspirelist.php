@@ -30,6 +30,7 @@ $string['aspirelist:addinstance'] = 'Add a new resource list';
 $string['aspirelistname'] = 'Resource list name';
 $string['aspirelist:view'] = 'View resource list content';
 $string['aspireurl'] = 'Talis Aspire URL';
+$string['cachedef_listdata'] = 'Cached resource list data fetched from Talis Aspire';
 $string['codecolumn'] = 'Aspire code column';
 $string['coderegex'] = 'Aspire code regex';
 $string['codesource'] = 'Aspire code source';

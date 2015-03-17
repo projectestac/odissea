@@ -4,20 +4,21 @@ require_once('agora_script_base.class.php');
 
 class script_check_database extends agora_script_base{
 
-	public $title = 'Check database';
-	public $info = "Check many parameters of the database and tries to solve the errors found";
+    public $title = 'Check database';
+    public $info = "Check many parameters of the database and tries to solve the errors found";
     public $cli = true;
-	protected $test = true;
+    protected $test = true;
+    protected $handler = true;
 
-	protected function _execute($params = array(), $execute = true){
-		global $CFG, $XMLDB, $DB, $OUTPUT, $SESSION;
+    protected function _execute($params = array(), $execute = true){
+        global $CFG, $XMLDB, $DB, $OUTPUT, $SESSION;
 
-		require_once($CFG->libdir . '/xmlize.php');
-		require_once($CFG->libdir.'/ddllib.php');
+        require_once($CFG->libdir . '/xmlize.php');
+        require_once($CFG->libdir.'/ddllib.php');
 
-	    $XMLDB = new stdClass;
+        $XMLDB = new stdClass;
 
-	    if (!isset($XMLDB->dbdirs)) {
+        if (!isset($XMLDB->dbdirs)) {
             $XMLDB->dbdirs = array();
         }
 
@@ -32,103 +33,135 @@ class script_check_database extends agora_script_base{
             $XMLDB->dbdirs[$dbdir->path]->path_exists = file_exists($dbdir->path);  //Update status
         }
         // Sort by key
-    	ksort($XMLDB->dbdirs);
+        ksort($XMLDB->dbdirs);
 
-		$problemsfound = array();
+        $problemsfound = array();
 
         $lasttable = get_config('local_agora', 'lastcheckedtable');
+        $lastdir = get_config('local_agora', 'lastcheckeddir');
         $startchecking = empty($lasttable);
+        $startcheckingdir = empty($lastdir);
+
+        $folder = get_moodle2_admin_datadir_folder('checkdblog');
+        $filename = $folder.'/checkdblog-'.$CFG->siteidentifier.'.txt';
+        $this->handler = fopen($filename, "a+");
+        if (!$this->handler) {
+            throw new Exception('Cannot open file '.$filename);
+        }
+        $this->log(time());
 
         // And we nedd some ddl suff
         $dbman = $DB->get_manager();
         if ($XMLDB->dbdirs) {
-                $dbdirs = $XMLDB->dbdirs;
-            echo '<ul>';
+            $dbdirs = $XMLDB->dbdirs;
+            $this->log('<ul>');
             foreach ($dbdirs as $dbdir) {
                 // Only if the directory exists
                 if (!$dbdir->path_exists) {
                     continue;
                 }
-                // Load the XML file
-                $xmldb_file = new xmldb_file($dbdir->path . '/install.xml');
+                $checkpath = str_replace($CFG->dirroot . '/', '', $dbdir->path . '/install.xml');
+                if ($startcheckingdir) {
+                    // Load the XML file
+                    $xmldb_file = new xmldb_file($dbdir->path . '/install.xml');
 
-                // Only if the file exists
-                if (!$xmldb_file->fileExists()) {
-                    continue;
-                }
-                // Load the XML contents to structure
-                $loaded = $xmldb_file->loadXMLStructure();
-                if (!$loaded || !$xmldb_file->isLoaded()) {
-                    echo $OUTPUT->notification('Errors found in XMLDB file: '. $dbdir->path . '/install.xml');
-                    continue;
-                }
-                // Arriving here, everything is ok, get the XMLDB structure
-                $structure = $xmldb_file->getStructure();
-
-                echo '<li>' . str_replace($CFG->dirroot . '/', '', $dbdir->path . '/install.xml');
-                // Getting tables
-                if ($xmldb_tables = $structure->getTables()) {
-                    echo '<ul>';
-                    // Foreach table, process its fields
-                    foreach ($xmldb_tables as $xmldb_table) {
-                        $tablename = $xmldb_table->getName();
-
-                        if ($startchecking) {
-                            // Skip table if not exists
-                            if (!$dbman->table_exists($xmldb_table)) {
-                                continue;
-                            }
-                            // Fetch metadata from physical DB. All the columns info.
-                            if (!$metacolumns = $DB->get_columns($xmldb_table->getName(), false)) {
-                                // / Skip table if no metacolumns is available for it
-                                continue;
-                            }
-                            // Table processing starts here
-                            echo '<li>' . $tablename;
-                            // Do the specific check.
-                            list($output, $newproblems) = $this->check_table($xmldb_table, $metacolumns);
-                            if (empty($newproblems)) {
-                            	echo ' <font color="green">Ok</font>';
-                            } else {
-                            	echo $output;
-                            	$problemsfound = array_merge($problemsfound, $newproblems);
-                                if ($execute) {
-                                    $this->execute_sqls($newproblems);
-                                }
-                            }
-                            echo '</li>';
-                            // Give the script some more time (resetting to current if exists)
-                            if ($currenttl = @ini_get('max_execution_time')) {
-                                @ini_set('max_execution_time', $currenttl);
-                            }
-                            set_config('lastcheckedtable', $tablename, 'local_agora');
-                        } else {
-                            $startchecking = $tablename == $lasttable;
-                        }
+                    // Only if the file exists
+                    if (!$xmldb_file->fileExists()) {
+                        continue;
                     }
-                    echo '</ul>';
+
+                    $this->log('<li>Path: ' . $checkpath);
+                    // Load the XML contents to structure
+                    $loaded = $xmldb_file->loadXMLStructure();
+                    if (!$loaded || !$xmldb_file->isLoaded()) {
+                        $this->log($OUTPUT->notification('Errors found in XMLDB file: '. $dbdir->path . '/install.xml'));
+                        continue;
+                    }
+                    // Arriving here, everything is ok, get the XMLDB structure
+                    $structure = $xmldb_file->getStructure();
+
+                    // Getting tables
+                    if ($xmldb_tables = $structure->getTables()) {
+                        $this->log('<ul>');
+                        // Foreach table, process its fields
+                        foreach ($xmldb_tables as $xmldb_table) {
+                            $tablename = $xmldb_table->getName();
+
+                            if ($startchecking) {
+                                $this->log('<li>Tablename: ' . $tablename);
+                                $newproblems = $this->execute_table($dbman, $xmldb_table, $execute);
+                                $problemsfound = array_merge($problemsfound, $newproblems);
+                                $this->log('</li>');
+                                // Give the script some more time (resetting to current if exists)
+                                if ($currenttl = @ini_get('max_execution_time')) {
+                                    @ini_set('max_execution_time', $currenttl);
+                                }
+                                set_config('lastcheckedtable', $tablename, 'local_agora');
+                            } else {
+                                $startchecking = $tablename == $lasttable;
+                            }
+                        }
+                        $this->log('</ul>');
+                    }
+                    $this->log('</li>');
+
+                    set_config('lastcheckeddir', $checkpath, 'local_agora');
+                } else {
+                    $startcheckingdir = $checkpath == $lastdir;
                 }
-                echo '</li>';
             }
-            echo '</ul>';
+            $this->log('</ul>');
         }
 
+        fclose($this->handler);
         unset_config('lastcheckedtable', 'local_agora');
+        unset_config('lastcheckeddir', 'local_agora');
 
         $sqls = array();
         foreach ($problemsfound as $i => $problem) {
-        	if(!empty($problem)) {
-        		$sqls[] = $problem;
-        	}
+            if(!empty($problem)) {
+                $sqls[] = $problem;
+            }
         }
 
         if (!empty($sqls)) {
-        	echo $OUTPUT->notification('SQLS de reparació:');
-        	print_object($sqls);
-	    }
+            echo $OUTPUT->notification('SQLS de reparació:');
+            print_object($sqls);
+        }
 
-		return empty($problemsfound);
-	}
+        return empty($problemsfound);
+    }
+
+    protected function log($text) {
+        echo $text;
+        flush();
+        fwrite($this->handler, $text."\n");
+    }
+
+    protected function execute_table($dbman, $xmldb_table, $execute) {
+        global $DB;
+
+        // Skip table if not exists
+        if (!$dbman->table_exists($xmldb_table)) {
+            $this->log('<font color="red">Table does not exists</font>');
+            return array();
+        }
+        // Fetch metadata from physical DB. All the columns info.
+        if (!$metacolumns = $DB->get_columns($xmldb_table->getName(), false)) {
+            // / Skip table if no metacolumns is available for it
+            $this->log('<font color="red">No metacolumns avalaible</font>');
+            return array();
+        }
+        // Table processing starts here
+        // Do the specific check.
+        $newproblems = $this->check_table($xmldb_table, $metacolumns);
+        if (empty($newproblems)) {
+            $this->log('<font color="green">Ok</font>');
+        } else if ($execute) {
+            $this->execute_sqls($newproblems);
+        }
+        return $newproblems;
+    }
 
     protected function execute_sqls($sqls) {
         global $CFG, $DB, $OUTPUT;
@@ -136,46 +169,56 @@ class script_check_database extends agora_script_base{
         foreach ($sqls as $sql) {
             if(!empty($sql)) {
                 try {
-                    print_object($sql);
-                    if ($CFG->dbtype != 'oci' && $CFG->dbtype != 'oci8po') {
+                    $this->log($this->print_object($sql));
+                    if ($CFG->dbtype != 'oci' && $CFG->dbtype != 'oci8po' && $CFG->dbtype != 'mysqli') {
                         $sql = $dbman->generator->getEndedStatements($sql);
                     }
                     $DB->execute($sql);
-                    echo $OUTPUT->notification('OK', 'notifysuccess');
+                    $this->log($OUTPUT->notification('OK', 'notifysuccess'));
                 } catch(Exception $e) {
-                    echo $OUTPUT->notification($e->getMessage());
-                    print_object($e->debuginfo);
+                    $this->log($OUTPUT->notification($e->getMessage()));
+                    $this->log($this->print_object($e->debuginfo));
                 }
             }
         }
     }
 
-	protected function check_table(xmldb_table $xmldb_table, array $metacolumns) {
-		global $CFG;
-		$actions = array('check_indexes', 'check_defaults', 'check_bigints', 'check_foreign_keys');
+    protected function print_object($object) {
+        raise_memory_limit(MEMORY_EXTRA);
 
-		if ($CFG->dbtype == 'oci' || $CFG->dbtype == 'oci8po') {
-			$actions[] = 'check_oracle_semantics';
-		}
+        if (CLI_SCRIPT) {
+            return print_r($object, true) ."\n";
+        } else {
+            return html_writer::tag('pre', s(print_r($object, true)), array('class' => 'notifytiny'));
+        }
+    }
 
-		$o = "<ul>";
-		$wrong_fields = array();
-		foreach ($actions as $action) {
-			// Get the action path and invoke it
-		    list($output, $newproblems) = $this->$action($xmldb_table, $metacolumns);
-		    if (empty($newproblems)) {
-		    	$o .= '<li>'.$action. ' <font color="green">Ok</font></li>';
-		    } else {
-		    	$o .= '<li>'.$action. $output.'</li>';
-            	$wrong_fields = array_merge($wrong_fields, $newproblems);
-		    }
+    protected function check_table(xmldb_table $xmldb_table, array $metacolumns) {
+        global $CFG;
+        $actions = array('check_indexes', 'check_defaults', 'check_bigints', 'check_foreign_keys');
 
-		}
-		$o .= "</ul>";
-		return array($o, $wrong_fields);
-	}
+        if ($CFG->dbtype == 'oci' || $CFG->dbtype == 'oci8po') {
+            $actions[] = 'check_oracle_semantics';
+        }
 
-	protected function check_indexes(xmldb_table $xmldb_table, array $metacolumns) {
+        $this->log("<ul>");
+        $wrong_fields = array();
+        foreach ($actions as $action) {
+            // Get the action path and invoke it
+            list($output, $newproblems) = $this->$action($xmldb_table, $metacolumns);
+            if (empty($newproblems)) {
+                $this->log('<li>'.$action. ' <font color="green">Ok</font></li>');
+            } else {
+                $this->log('<li>'.$action. $output.'</li>');
+                $wrong_fields = array_merge($wrong_fields, $newproblems);
+            }
+
+        }
+        $this->log("</ul>");
+        return $wrong_fields;
+    }
+
+    protected function check_indexes(xmldb_table $xmldb_table, array $metacolumns) {
         global $CFG, $DB;
         $dbman = $DB->get_manager();
 
@@ -207,7 +250,7 @@ class script_check_database extends agora_script_base{
                     }
                     // Check if the index exists in DB
                     if (!$dbman->index_exists($xmldb_table, $xmldb_index)) {
-                    	$o.='<li>Key: ' . $xmldb_key->readableInfo() . ' ';
+                        $o.='<li>Key: ' . $xmldb_key->readableInfo() . ' ';
                         $o.='<font color="red">Missing</font>';
                         // Add the missing index to the list
                         $obj = new stdClass();
@@ -226,7 +269,7 @@ class script_check_database extends agora_script_base{
             foreach ($xmldb_indexes as $xmldb_index) {
                 // Check if the index exists in DB
                 if (!$dbman->index_exists($xmldb_table, $xmldb_index)) {
-                	$o.='            <li>Index: ' . $xmldb_index->readableInfo() . ' ';
+                    $o.='            <li>Index: ' . $xmldb_index->readableInfo() . ' ';
                     $o.='<font color="red">Missing</font>';
                     // Add the missing index to the list
                     $obj = new stdClass();
@@ -240,7 +283,7 @@ class script_check_database extends agora_script_base{
         }
 
         $sqls = array();
-		foreach ($missing_indexes as $obj) {
+        foreach ($missing_indexes as $obj) {
             $sqlarr = $dbman->generator->getAddIndexSQL($obj->table, $obj->index);
             if ($sqlarr) {
                 $sqls = array_merge($sqls, $sqlarr);
@@ -251,7 +294,7 @@ class script_check_database extends agora_script_base{
     }
 
     protected function check_defaults(xmldb_table $xmldb_table, array $metacolumns) {
-    	global $CFG, $DB;
+        global $CFG, $DB;
         $dbman = $DB->get_manager();
 
         $o = '';
@@ -283,7 +326,7 @@ class script_check_database extends agora_script_base{
 
                 // there *is* a default and it's wrong
                 if ($physicaldefault != $xmldbdefault) {
-                	$o.='            <li>Field ' . $xmldb_field->getName() . ' ';
+                    $o.='            <li>Field ' . $xmldb_field->getName() . ' ';
                     $info = '(Expected '.$xmldbdefault.', Actual '.$physicaldefault.')';
                     $o.='<font color="red">Wrong '.$info.'</font>';
                     $o .= $xmldb_field->getNotNull() ? ' not null' : ' null';
@@ -301,15 +344,15 @@ class script_check_database extends agora_script_base{
 
         $sqls = array();
         foreach ($wrong_fields as $obj) {
-        	$xmldbdefault = $obj->xmldbdefault;
-        	$xmldb_field = $obj->field;
-        	$xmldb_table = $obj->table;
-        	echo $xmldbdefault;
-        	if ($xmldbdefault !== '' && $xmldb_field->getNotNull()) {
-        		// Li podem posar el default
-        		//$DB->set_field_select($xmldb_table->getName(), $xmldb_field->getName(), $xmldbdefault, $xmldb_field->getName() .' IS NULL');
-        		$sqls[] = 'UPDATE '.$CFG->prefix.$xmldb_table->getName().' SET '.$xmldb_field->getName().'='.$xmldbdefault.' WHERE '.$xmldb_field->getName().' IS NULL';
-        	}
+            $xmldbdefault = $obj->xmldbdefault;
+            $xmldb_field = $obj->field;
+            $xmldb_table = $obj->table;
+            echo $xmldbdefault;
+            if ($xmldbdefault !== '' && $xmldb_field->getNotNull()) {
+                // Li podem posar el default
+                //$DB->set_field_select($xmldb_table->getName(), $xmldb_field->getName(), $xmldbdefault, $xmldb_field->getName() .' IS NULL');
+                $sqls[] = 'UPDATE '.$CFG->prefix.$xmldb_table->getName().' SET '.$xmldb_field->getName().'='.$xmldbdefault.' WHERE '.$xmldb_field->getName().' IS NULL';
+            }
             // get the alter table command
             $sqlarr = $dbman->generator->getAlterFieldSQL($obj->table, $obj->field);
 
@@ -318,11 +361,11 @@ class script_check_database extends agora_script_base{
             }
         }
 
-    	return array($o, $sqls);
+        return array($o, $sqls);
     }
 
     protected function check_bigints(xmldb_table $xmldb_table, array $metacolumns) {
-    	global $DB;
+        global $DB;
         $dbman = $DB->get_manager();
 
         $o = '';
@@ -349,7 +392,7 @@ class script_check_database extends agora_script_base{
                 $metacolumn = $metacolumns[$xmldb_field->getName()];
                 // Detect if the physical field is wrong
                 if (($metacolumn->meta_type != 'I' and $metacolumn->meta_type != 'R') or $metacolumn->max_length < $minlength) {
-                	$o.='            <li>Field: ' . $xmldb_field->getName() . ' ';
+                    $o.='            <li>Field: ' . $xmldb_field->getName() . ' ';
                     $o.='<font color="red">Wrong</font>';
                     // Add the wrong field to the list
                     $obj = new stdClass();
@@ -370,11 +413,11 @@ class script_check_database extends agora_script_base{
                 $sqls = array_merge($sqls, $sqlarr);
             }
         }
-    	return array($o, $sqls);
+        return array($o, $sqls);
     }
 
     protected function check_foreign_keys(xmldb_table $xmldb_table, array $metacolumns) {
-		global $DB;
+        global $DB;
         $dbman = $DB->get_manager();
 
         $strictchecks = optional_param('strict', false, PARAM_BOOL);
@@ -393,7 +436,7 @@ class script_check_database extends agora_script_base{
 
                 $reftable = $xmldb_key->getRefTable();
                 if (!$dbman->table_exists($reftable)) {
-                	$o.='            <li>Key: ' . $xmldb_key->readableInfo() . ' ';
+                    $o.='            <li>Key: ' . $xmldb_key->readableInfo() . ' ';
                     $o.='<font color="red">unknowntable</font>';
                     // Add the missing index to the list
                     $violation = new stdClass();
@@ -414,7 +457,7 @@ class script_check_database extends agora_script_base{
                 $params = array();
                 foreach ($keyfields as $i => $field) {
                     if (!$dbman->field_exists($reftable, $reffields[$i])) {
-                    	$o.='            <li>Key: ' . $xmldb_key->readableInfo() . ' ';
+                        $o.='            <li>Key: ' . $xmldb_key->readableInfo() . ' ';
                         $o.='<font color="red">unknownfield</font>';
                         // Add the missing index to the list
                         $violation = new stdClass();
@@ -450,7 +493,7 @@ class script_check_database extends agora_script_base{
                 // Check there are any problems in the database.
                 $violations = $DB->count_records_sql($sql, $params);
                 if ($violations != 0) {
-                	$o.='            <li>Key: ' . $xmldb_key->readableInfo() . ' ';
+                    $o.='            <li>Key: ' . $xmldb_key->readableInfo() . ' ';
                     $o.='<font color="red">violations</font>';
                     // Add the missing index to the list
                     $violation = new stdClass;
@@ -472,7 +515,7 @@ class script_check_database extends agora_script_base{
             $o.='        </ul>';
         }
 
-		$sqls = array();
+        $sqls = array();
         foreach ($violatedkeys as $violation) {
             $violation->tablename = $violation->table->getName();
             $violation->keyname = $violation->key->getName();
@@ -484,11 +527,11 @@ class script_check_database extends agora_script_base{
             }
         }
 
-    	return array($o, $sqls);
+        return array($o, $sqls);
     }
 
     protected function check_oracle_semantics(xmldb_table $xmldb_table, array $metacolumns) {
-    	global $DB;
+        global $DB;
         $dbman = $DB->get_manager();
 
         $o = '';
@@ -519,7 +562,7 @@ class script_check_database extends agora_script_base{
 
                 // If using byte semantics, we'll need to change them to char semantics
                 if ($currentsemantic == 'B') {
-                	$o.='<li>Field: ' . $xmldb_field->getName() . ' ';
+                    $o.='<li>Field: ' . $xmldb_field->getName() . ' ';
                     $o .= '<font color="red">Wrong (Expected CHAR, Actual BYTE)</font>';
                     // Add the wrong field to the list
                     $obj = new stdClass();
@@ -533,17 +576,17 @@ class script_check_database extends agora_script_base{
             $o .= '</ul>';
         }
 
-		$sqls = array();
+        $sqls = array();
         foreach ($wrong_fields as $obj) {
-	        $xmldb_table = $obj->table;
-	        $xmldb_field = $obj->field;
+            $xmldb_table = $obj->table;
+            $xmldb_field = $obj->field;
 
-	        $sql = 'ALTER TABLE ' . $DB->get_prefix() . $xmldb_table->getName() . ' MODIFY ' .
-	               $xmldb_field->getName() . ' VARCHAR2(' . $xmldb_field->getLength() . ' CHAR)';
-	        $sqls[] = $sql;
+            $sql = 'ALTER TABLE ' . $DB->get_prefix() . $xmldb_table->getName() . ' MODIFY ' .
+                   $xmldb_field->getName() . ' VARCHAR2(' . $xmldb_field->getLength() . ' CHAR)';
+            $sqls[] = $sql;
         }
 
-    	return array($o, $sqls);
+        return array($o, $sqls);
     }
 
 }

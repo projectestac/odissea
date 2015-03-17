@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Txertatutako erantzunak (Cloze)';
+$string['pluginname_help'] = 'Txertatutako erantzunak (Cloze) formatuak aukera anitzeko galderak edo galdera laburrak barruan dituen testu zati bat inportatzeko aukera ematen du.';

@@ -315,4 +315,60 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
+    if(!function_exists('is_xtecadmin') || is_xtecadmin()) {
+        $setting = new admin_setting_heading('theme_xtec2/advices_user', get_string('advices_user', 'theme_xtec2'), "");
+        $settings->add($setting);
+
+        $name = 'theme_xtec2/agora_alert_message';
+        $title = get_string('alert_message', 'theme_xtec2');
+        $description = get_string('agora_alert_message_desc', 'theme_xtec2');
+        $default = '';
+        $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+        $settings->add($setting);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+
+        $name = 'theme_xtec2/agora_alert_start';
+        $title = get_string('alert_start', 'theme_xtec2');
+        $description = get_string('alert_start_desc', 'theme_xtec2');
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $settings->add($setting);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+
+        $name = 'theme_xtec2/agora_alert_end';
+        $title = get_string('alert_end', 'theme_xtec2');
+        $description = get_string('alert_end_desc', 'theme_xtec2');
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $settings->add($setting);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+
+        $setting = new admin_setting_heading('theme_xtec2/advices_admin', get_string('advices_admin', 'theme_xtec2'), "");
+        $settings->add($setting);
+
+        $name = 'theme_xtec2/admin_alert_message';
+        $title = get_string('alert_message', 'theme_xtec2');
+        $description = get_string('admin_alert_message_desc', 'theme_xtec2');
+        $default = '';
+        $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+        $settings->add($setting);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+
+        $name = 'theme_xtec2/admin_alert_start';
+        $title = get_string('alert_start', 'theme_xtec2');
+        $description = get_string('alert_start_desc', 'theme_xtec2');
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $settings->add($setting);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+
+        $name = 'theme_xtec2/admin_alert_end';
+        $title = get_string('alert_end', 'theme_xtec2');
+        $description = get_string('alert_end_desc', 'theme_xtec2');
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $settings->add($setting);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+    }
+
 }

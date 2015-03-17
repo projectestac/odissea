@@ -127,6 +127,7 @@ $string['fieldname'] = 'Nom del camp';
 $string['fieldnew'] = 'Nou camp {$a}';
 $string['fields'] = 'Camps';
 $string['fieldsadded'] = 'Camps afegits';
+$string['invalidurl'] = 'L\'URL que heu introduït no és vàlid';
 $string['ruleadd'] = 'Afegeix una regla';
 $string['ruleenabled'] = 'Habilitat';
 $string['rules'] = 'Regles';

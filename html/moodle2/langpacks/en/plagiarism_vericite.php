@@ -25,7 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced_settings'] = 'Advanced Settings';
 $string['defaultAssignment'] = 'This setting will be the default setting when creating a new assignment.';
+$string['disable_dynamic_inline'] = 'Disable dynamic inline submissions';
+$string['disable_dynamic_inline_help'] = 'Inline submissions will only be submitted once and modifications will not be re-submitted.';
+$string['enable_debugging'] = 'Enable debugging';
+$string['enable_debugging_help'] = 'Turn debugging on for the VeriCite module. Errors will be printed to the php error log.';
 $string['pluginname'] = 'VeriCite';
 $string['savedconfigsuccess'] = 'Plagiarism Settings Saved';
 $string['similarity'] = 'Similarity';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accesCAS'] = 'CASユーザ';
 $string['accesNOCAS'] = '他のユーザ';
 $string['auth_cas_auth_user_create'] = '外部にユーザを作成する';
-$string['auth_cas_baseuri'] = 'サーバのURL (ベースURLが無い場合は空白)<br />CASサーバが host.domaine.fr/CAS/ に応答する場合、<br />cas_baseuri = CAS/';
+$string['auth_cas_baseuri'] = 'サーバのURL (ベースURLがない場合は空白)<br />CASサーバが host.domaine.fr/CAS/ に応答する場合、<br />cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'ベースURL';
 $string['auth_cas_broken_password'] = 'あなたのパスワードを変更せずに進むことはできませんが、利用できるパスワード変更ページがありません。あなたのMoodle管理者にご連絡ください。';
 $string['auth_cas_cantconnect'] = 'CASモジュールのLDAPがサーバに接続できません: {$a}';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = '\'{$a->role_shortname}\' rola esleitzen \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\'  ikastaroan (id {$a->course_id})';
 $string['assignrolefailed'] = 'Kale egin du \'{$a->role_shortname}\' rola esleitzean \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
-$string['autocreate'] = 'Era automatikoan sor daitezke ikastaroak oraindik ere Moodlen existitzen ez den ikastaro batean matrikulazioak badaude.';
+$string['autocreate'] = '<p>Era automatikoan sor daitezke ikastaroak oraindik ere Moodlen existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da baimen hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID number, shortname, fullname eta summary).</p>';
 $string['autocreate_key'] = 'Sortu automatikoki';
 $string['autocreation_settings'] = 'Ikastaroak era automatikoak sortzeko zehaztasunak';
 $string['bind_dn'] = 'Erabiltzaileak bilatzeko \'bin-user\' erabili nahi baduzu, zehaztu hemen. Horrelako zerbait \'cn=ldapuser,ou=public,o=org\'';

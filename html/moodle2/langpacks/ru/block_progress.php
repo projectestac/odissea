@@ -49,7 +49,6 @@ $string['config_now'] = 'Использовать';
 $string['config_percentage'] = 'Показывать процент студентам';
 $string['config_title'] = 'Альтернативный заголовок';
 $string['data'] = 'База данных';
-$string['date_format'] = '%a %d %b, %I:%M %p';
 $string['feedback'] = 'Обратная связь';
 $string['finished'] = 'закончено';
 $string['flashcardtrainer'] = '';

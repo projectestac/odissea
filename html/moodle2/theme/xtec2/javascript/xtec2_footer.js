@@ -7,6 +7,12 @@ var blocks_shown = true;
 var old_main_post_class = '';
 var old_main_pre_class = '';
 
+function close_agora_alerts() {
+    var element = document.getElementById("agora-alerts");
+    element.parentNode.removeChild(element);
+    return false;
+}
+
 function changeColors() {
     colorProfile = colorset.value;
 

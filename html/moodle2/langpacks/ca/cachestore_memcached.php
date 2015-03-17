@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['bufferwrites'] = 'Habilita la memòria intermèdia';
-$string['bufferwrites_help'] = 'Habilita o deshabilita la memòria intermèdia per entrada/sortida. Habilitar la memòria intermèdia d\'entrada/sortida provoca que les ordres d\'emmagatzematge vagin a la memòria intermèdia en lloc de ser enviades. Qualsevol acció que recuperi les dades fa que les dades de la memòria intermèdia s\'enviïn a la connexió remota. Abandonar la connexió o el tancament de la connexió també farà que les dades emmagatzemades  en la memòria intermèdia siguin enviades a la connexió remota.';
+$string['bufferwrites_help'] = 'Habilita o inhabilita la memòria intermèdia per entrada/sortida. Habilitar la memòria intermèdia d\'entrada/sortida provoca que les ordres d\'emmagatzematge vagin a la memòria intermèdia en lloc de ser enviades. Qualsevol acció que recuperi les dades fa que les dades de la memòria intermèdia s\'enviïn a la connexió remota. Abandonar la connexió o el tancament de la connexió també farà que les dades emmagatzemades  en la memòria intermèdia siguin enviades a la connexió remota.';
 $string['hash'] = 'Mètode resum';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Per defecte (pas a pas)';
@@ -56,7 +56,7 @@ $string['testservers'] = 'Servidors de prova';
 $string['testservers_desc'] = 'Els servidors de prova s\'utilitzen per a les proves unitàries i proves de rendiment. És totalment opcional configurar servidors de prova. Els servidors s\'han de definir un per línia i es componen d\'una adreça de servidor i, opcionalment, un port i pes.
 Si no es proporciona cap port s\'utilitza el port per defecte (11211).';
 $string['usecompression'] = 'Utilitza compressió';
-$string['usecompression_help'] = 'Habilita o deshabilita la compressió de la càrrega útil. Quan està habilitat, els elements de valor de més d\'un cert llindar (actualment 100 bytes) es comprimeixen durant l\'emmagatzematge i es descomprimeix durant la recuperació transparent.';
+$string['usecompression_help'] = 'Habilita o inhabilita la compressió de la càrrega útil. Quan està habilitat, els elements de valor de més d\'un cert llindar (actualment 100 bytes) es comprimeixen durant l\'emmagatzematge i es descomprimeixen durant la recuperació transparent.';
 $string['useserialiser'] = 'Usa serialitzador';
 $string['useserialiser_help'] = 'Especifica el serialitzador a usar per serialitzar valors no escalars.
 Els serializadores vàlids són Memcached :: SERIALIZER_PHP o Memcached :: SERIALIZER_IGBINARY. Aquest últim només s\'admet quan memcached està configurat amb l\'opció --enable-memcached-igbinary i l\'extensió igbinary és carrega.';

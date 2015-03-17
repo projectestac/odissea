@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addparticipant'] = 'Afegeix';
 $string['addpresenter'] = 'Afegeix';
 $string['adminemptyxml'] = 'No s\'ha pogut connectar al servidor d\'Adobe Connect Pro en aquest moment. Feu clic a Continua per a seguir amb la pàgina de configuració de l\'activitat i verificar la connexió';
+$string['invalidurl'] = 'L\'URL ha de començar amb una lletra (a-z)';
+$string['private'] = 'Privat';
+$string['public'] = 'Públic';

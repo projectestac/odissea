@@ -523,7 +523,13 @@ class jclic {
                 $params['jclic_user'] = $USER->id;
                 $params['jclic_jarbase'] = $CFG->jclic_jarbase;
                 $params['jclic_lap'] = $CFG->jclic_lap;
-                $params['jclic_protocol'] = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http';
+                if ( (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+                        || $_SERVER['SERVER_PORT'] == 443
+                        || substr($CFG->wwwroot, 0, strlen('https')) === 'https' ) {
+                    $params['jclic_protocol'] = 'https';
+                } else {
+                    $params['jclic_protocol'] = 'http';
+                }
                 $PAGE->requires->js_init_call('M.mod_jclic.init', array($params));
             }else{
                 echo $OUTPUT->box(get_string('msg_noattempts', 'jclic'), 'generalbox boxaligncenter');

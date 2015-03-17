@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['autoactivedescription'] = 'Escolliu si voleu fer o no còpies de seguretat automàtiques. Si escolliu \'manual\' aleshores les còpies de seguretat automàtiques només podran fer-se a través de l\'script CLI de còpies de seguretat automàtiques. aquest es pot executar bé manualment al terminal o bé a través del cron.';
-$string['autoactivedisabled'] = 'Deshabilitat';
+$string['autoactivedisabled'] = 'Inhabilitat';
 $string['autoactiveenabled'] = 'Habilitat';
 $string['autoactivemanual'] = 'Manual';
 $string['automatedbackupschedule'] = 'Planificació';
@@ -89,8 +89,8 @@ $string['configgeneralcomments'] = 'Estableix l\'omissió per incloure comentari
 $string['configgeneralfilters'] = 'Estableix l\'omissió per incloure filtres en una còpia de seguretat.';
 $string['configgeneralhistories'] = 'Estableix l\'omissió per incloure la història de l\'usuari en una còpia de seguretat.';
 $string['configgenerallogs'] = 'Si està habilitat, s\'inclouran per omissió els registres dins de la còpia de seguretat.';
-$string['configgeneralquestionbank'] = 'Si s\'habilita el banc de qüestions s\'inclourà en les copies de seguretat per defecte.
-NOTA: Deshabilitar aquest paràmetre deshabilitarà la copia de seguretat de les activitats que utilitzin el banc de qüestions, com ara el qüestionari.';
+$string['configgeneralquestionbank'] = 'Si s\'habilita el banc de qüestions s\'inclourà en les còpies de seguretat per defecte.
+NOTA: Inhabilitar aquest paràmetre inhabilitarà la còpia de seguretat de les activitats que utilitzin el banc de qüestions, com ara el qüestionari.';
 $string['configgeneralroleassignments'] = 'Si està habilitat, s\'inclouran per omissió les assignacions de rols dins de la còpia de seguretat.';
 $string['configgeneralusers'] = 'Estableix l\'omissió per incloure els usuaris en una còpia de seguretat.';
 $string['configgeneraluserscompletion'] = 'Si està habilitat, s\'inclourà per omissió la informació de progrés de l\'usuari dins de la còpia de seguretat.';
@@ -112,10 +112,10 @@ $string['currentstage2'] = 'Paràmetres de l\'esquema';
 $string['currentstage4'] = 'Confirmació i revisió';
 $string['currentstage8'] = 'Fes la còpia';
 $string['enterasearch'] = 'Introduïu una cerca';
-$string['error_block_for_module_not_found'] = 'S\'ha trobat una instància de bloc òrfena (id: {$a->bid}) per al curs (id: {$a->mid}). Aquest bloc no és copiarà a la copia de seguretat.';
+$string['error_block_for_module_not_found'] = 'S\'ha trobat una instància de bloc òrfena (id: {$a->bid}) per al curs (id: {$a->mid}). Aquest bloc no es copiarà a la còpia de seguretat.';
 $string['error_course_module_not_found'] = 'S\'ha trobat un mòdul de curs orfe (id: {$a}). Aquest mòdul no es copiarà a la còpia de seguretat.';
-$string['errorfilenamemustbezip'] = 'El nom de fitxer que introduïu ha d\'ésser un fitxer ZIP i tenir l\'extensió .mbz';
-$string['errorfilenamerequired'] = 'Cal que introduïu un nom de fitxer vàlid per aquesta còpia de seguretat';
+$string['errorfilenamemustbezip'] = 'El nom de fitxer que introduïu ha d\'ésser un fitxer ZIP i ha de tenir l\'extensió .mbz';
+$string['errorfilenamerequired'] = 'Cal que introduïu un nom de fitxer vàlid per a aquesta còpia de seguretat';
 $string['errorinvalidformat'] = 'Format de còpia de seguretat desconegut';
 $string['errorinvalidformatinfo'] = 'El fitxer seleccionat no és un fitxer de còpia de seguretat vàlid per a Moodle i no pot ser restaurat.';
 $string['errorminbackup20version'] = 'Aquest fitxer de còpia de seguretat s\'ha creat amb una versió de desenvolupament de Moodle ({$a->backup}). Com a mínim cal la {$a->min}. No es pot restaurar.';

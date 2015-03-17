@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['logodesc'] = 'logotip URL';
 $string['update_description'] = 'Actualitza la descripció';

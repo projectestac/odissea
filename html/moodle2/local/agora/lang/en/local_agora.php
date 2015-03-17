@@ -32,5 +32,11 @@ $string['agora_scripts'] = 'Àgora Scripts';
 
 $string['login_nodes'] = 'Login to Nodes';
 
-$string['environment_url'] = 'Mailsender URL';
+$string['mailer'] = 'Mailer';
+$string['apligestmail'] = 'Enable Mailer';
+$string['mailheader'] = 'Add prefix to subject';
+$string['apligestlog'] = 'Enable Log';
+$string['apligestlogdebug'] = 'Enable Debug Log';
+$string['apligestlogpath'] = 'Log path';
+$string['environment_url'] = 'WSDL URL';
 $string['environment_url_desc'] = 'If set, this WSDL Mailsender will be used, if not, the default url for {$a} environment will be used';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['assignrole'] = 'ロールを割り当てる';
 $string['businessemail'] = 'PayPalビジネスメール';
 $string['businessemail_desc'] = 'あなたのビジネスPayPalアカウントのメールアドレスです。';
-$string['cost'] = 'コストを登録する';
+$string['cost'] = '受講登録費用';
 $string['costerror'] = '登録コストが数値ではありません。';
 $string['costorkey'] = '下記の登録方法から1つを選択してください。';
 $string['currency'] = '通貨';

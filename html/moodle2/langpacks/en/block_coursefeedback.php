@@ -31,6 +31,7 @@ $string['adminpage_html_allowhidinga'] = 'Allow hiding';
 $string['adminpage_html_allowhidingb'] = 'If enabled, teachers can eidt the visibility of the block.';
 $string['adminpage_html_defaultlanguagea'] = 'Default language';
 $string['adminpage_html_defaultlanguageb'] = 'Questions in the default language will be shown, if other languages fail to load (i.e. if questions in a user-prefered language aren\'t defined). That means you must at least define all questions in the default language!';
+$string['adminpage_html_notinstalled'] = '\'{$a}\' (not installed)';
 $string['adminpage_html_setstickya'] = 'Stick it';
 $string['adminpage_html_setstickyb'] = 'If enabled, an instance of this block, which cannot be deleted by the teachers, appears in each course main page.';
 $string['adminpage_link_feedbackedit'] = 'edit/create survey';

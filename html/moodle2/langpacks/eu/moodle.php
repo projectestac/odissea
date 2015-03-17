@@ -214,6 +214,7 @@ $string['blocksetup'] = 'Blokeko taulak sortzen';
 $string['blocksuccess'] = '{$a} taulak egoki sortu dira.';
 $string['brief'] = 'Laburra';
 $string['bulkactions'] = 'Eragiketa masiboak';
+$string['bulkactionselect'] = '{$a} eragiketa masiboaren aukeraketa';
 $string['bulkmovecoursessuccess'] = '{$a->courses} ikastaroak ondo mugitu dira {$a->category} kategoriara';
 $string['bycourseorder'] = 'Ikastaro-ordenaren arabera';
 $string['byname'] = '{$a}-(r)en arabera';
@@ -460,7 +461,7 @@ $string['datechanged'] = 'Data aldatuta';
 $string['datemostrecentfirst'] = 'Data - berrienak lehenak';
 $string['datemostrecentlast'] = 'Data - berrienak azkenak';
 $string['day'] = 'egun(a)';
-$string['days'] = 'egun(ak)';
+$string['days'] = 'egun';
 $string['decodinginternallinks'] = 'Barneko estekak dekodifikatzen';
 $string['default'] = 'Lehenetsitakoa';
 $string['defaultcoursestudent'] = 'Ikaslea';
@@ -673,10 +674,10 @@ $string['emailpasswordconfirmmaybesent'] = '<p>Erabiltzaile-izen edo helbide zuz
 $string['emailpasswordconfirmsent'] = 'Zure helbidera mezu bat bidali dugu <b>{$a}</b>.
 <br />Mezu honek pasahitza-aldaketa egin eta baieztatzeko argibide errazak ditu.
 Arazorik bazenu, mesedez gunearen kudeatzailearekin harremanetan jarri.';
-$string['emailpasswordsent'] = 'Mila esker pasahitz aldaketa baieztatzeagatik.
-Zure pasahitz berria kontu honetara bidali dizugu: <br /><b>{$a->email}</b>.<br />
-Pasahitz berria automatikoki sortu da.
-Agian, zure pasahitza aldatu <a href="{$a->link}"> nahiko duzu eta gogoratzeko errazagoa den beste bat ezarri.';
+$string['emailpasswordsent'] = 'Mila esker pasahitz aldaketa baieztatzeagatik. Zure pasahitz berria kontu honetara bidali dizugu: <br /><b>{$a->email}</b>.<br />
+Pasahitz berria automatikoki sortu da. Agian, <a href="{$a->link}">zure pasahitza aldatu</a> nahiko duzu eta gogoratzeko errazagoa den beste bat ezarri.';
+$string['emailresetconfirmationsubject'] = '{$a}: pasahitza berrezartzeko eskaria';
+$string['emptydragdropregion'] = 'lurraldea hutsik dago';
 $string['enable'] = 'Gaitu';
 $string['encryptedcode'] = 'Enkriptaturiko kodea';
 $string['english'] = 'Ingelesa';
@@ -802,19 +803,17 @@ $string['general'] = 'Orokorra';
 $string['geolocation'] = 'latitudea - longitudea';
 $string['gettheselogs'] = 'Erregistro hauek lortu';
 $string['go'] = 'Joan';
-$string['gpl'] = 'Copyright (C) 1999tik aurrera  Martin Dougiamas  (http://dougiamas.com)
+$string['gpl'] = 'Copyright (C) 1999tik aurrera  Martin Dougiamas  (http://moodle.com)
 
 Programa hau doako softwarea da. Berriz banatu
-edo eta alda dezakezu, beti ere GNU General Public License lizentziaren arabera
-The Free Software Foundation-en argitalpenaren arabera; baita 2. bertsioaren
-edo ondorengo baten arabera ere.
+edo eta alda dezakezu, beti ere GNU General Public License lizentziaren arabera, The Free Software Foundation-en argitalpenaren arabera; baita 2. bertsioaren edo ondorengo baten arabera ere.
 
 Aplikazioa erabilgarria izango zaizulakoan banatzen da,
 baina INOLAKO BERMERIK GABE; ezta MERKATAL-BANAKETA
 edo ASMO PARTIKULAR BATEN EGOKITZAPENAren bermerik ere.
-Informazio zehatzagoa izateko GNU lizentzia ikusi:
 
-http://www.gnu.org/copyleft/gpl.html';
+Informazio zehatzagoa izateko Moodle Lizentziaren informazio orria ikusi:
+http://docs.moodle.org/dev/License';
 $string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
 
 Programa hau software librea da: banatu edota aldatu egin dezakezu Free Software Foundation-ek GNU Lizentzia Publiko Orokorra argitaratutako baldintzetan, edo Lizentziaren 3. bertsioaren, edo (zeuk aukeratu) beste edozein bertsioarenean.
@@ -930,7 +929,7 @@ $string['institution'] = 'Erakundea';
 $string['instudentview'] = 'ikaslearen ikuspegian';
 $string['interests'] = 'Interesguneak';
 $string['interestslist'] = 'Interesgune-zerrenda';
-$string['interestslist_help'] = 'Idatzi zure intereseko gaiak komaz banatuta';
+$string['interestslist_help'] = 'Idatzi zure intereseko gaiak komaz banatuta. Gai hauek etiketa formaz erakutsiko dira zure profil-orrian.';
 $string['invalidemail'] = 'E-posta helbide baliogabea';
 $string['invalidlogin'] = 'Saio-hasiera baliogabea, saiatu berriz, mesedez';
 $string['invalidusername'] = 'Erabiltzaile-izenak karaktere alfanumerikoak, beheko gidoia (_), gidoia (-), puntua (.) eta a bildua (@) bakarrik izan ditzake.';
@@ -983,11 +982,12 @@ $string['loginguest'] = 'Bisitari gisa sartu';
 $string['loginsite'] = 'Gunean sartu';
 $string['loginsteps'] = 'Kaixo!
 
-Edozein ikastarotara sartzeko web-gune honetako erabiltzaile izan behar duzu eta horretarako kontu bat sortu behar duzu.
+Edozein ikastarotara sartzeko web-gune honetako erabiltzaile izan behar duzu
+eta horretarako kontu bat sortu behar duzu.
 
 Nola sortu kontu berria:
 <ol>
-<li>Sakatu lotura honetan <A HREF={$a} target="_blank">KONTU BERRIA</A> eta formularioa bete zure datuekin.</li>
+<li>Sakatu lotura honetan <a href="{$a}">KONTU BERRIA</a> eta formularioa bete zure datuekin.</li>
 <li>E-posta mezu bat bidaliko dugu berehala zure e-posta helbidera.</li>
 <li>Mezua irakurri eta agertzen den loturan klik egin.</li>
 <li>Zure kontua berretsi eta barruan izango zara.</li>
@@ -995,7 +995,7 @@ Nola sortu kontu berria:
 <li>"Partaide-giltza" bat eskatzen badizu, erabili matrikulatutakoan eman zizutena</li>
 <li>Kontu berria sortutakoan, eta zenbait kasutan matrikula egindakoan, ikastarorako sarbidea izango duzu.</li>
 <li>Hemendik aurrera zure erabiltzaile-izena eta pasahitza besterik ez dituzu sartu beharko hasiera orrian zeure ikastaroan parte hartzeko.</li>
- </ol>';
+</ol>';
 $string['loginstepsnone'] = '<p>Kaixo!</p>
 <p>Ikastaroetan sarrera-eskubide osoa izateko zuretzat kontu bat sortu beharko duzu.</p>
 <p>Egin behar duzun guztia erabiltzaile izen eta pasahitz bat sortzea da eta
@@ -1313,9 +1313,8 @@ $string['passwordrecovery'] = 'Bai, laguntza behar dut saioa hasteko';
 $string['passwordsdiffer'] = 'Pasahitz hauek ez datoz bat';
 $string['passwordsent'] = 'Pasahitza bidali da';
 $string['passwordsenttext'] = '<p>E-posta mezu bat bidali da honako helbide honetara {$a->email}.</p>
-   <p><b>Mesedez begiratu zure e-posta pasahitz berria lortzeko</b></p>
-   <p>Pasahitz berria automatikoki sortu da eta agian
-   <a href={$a->link}>gogoratzeko errazagoa den batera aldatu</a> nahi duzu.</p>';
+<p><b>Mesedez begiratu zure e-posta pasahitz berria lortzeko</b></p>
+<p>Pasahitz berria automatikoki sortu da eta agian <a href="{$a->link}">gogoratzeko errazagoa den batera aldatu</a> nahi duzu.</p>';
 $string['passwordset'] = 'Zure pasahitza berrezarri da.';
 $string['path'] = 'Bidea';
 $string['pathnotexists'] = 'Zure zerbitzarian ez dago horrelako biderik!';
@@ -1618,6 +1617,7 @@ $string['sitefilesused'] = 'Ikastaro honetan erabilitako guneko fitxategiak';
 $string['sitehome'] = 'Gunearen hasiera';
 $string['sitelegacyfiles'] = 'Guneko fitxategiak';
 $string['sitelogs'] = 'Gunearen agerraldiak';
+$string['sitemessage'] = 'Mezu-erabiltzaileak';
 $string['sitenews'] = 'Gunearen berriak';
 $string['sitepages'] = 'Gunearen orriak';
 $string['sitepartlist'] = 'Ez dituzu partaide-zerrenda ikusteko behar diren baimenak';

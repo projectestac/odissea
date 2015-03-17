@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['braceerror'] = 'Ezin izan da aurkitu {...} erantzunen inguruan';
 $string['giftleftbraceerror'] = 'Ezin izan da aurkitu {';
+$string['giftmatchingformat'] = 'Lotu motako galderaren erantzunek ez dute formatu egokia';
 $string['giftnonumericalanswers'] = 'Ez da erantzunik aurkitu zenbakizko galderarako';
 $string['giftnovalidquestion'] = 'Baliagarria ez den galdera aurkitu da';
 $string['giftqtypenotset'] = 'Ez da galdera-mota ezarri';
@@ -34,3 +35,4 @@ $string['giftrightbraceerror'] = 'Ezin izan da aurkitu }';
 $string['importminerror'] = 'Errorea dago galderan. Ez dago nahikoa erantzunik galdera-mota honetarako';
 $string['nohandler'] = 'Ez dago kudeatzailerik {$a} galdera-motarako';
 $string['pluginname'] = 'Gift formatua';
+$string['pluginname_help'] = 'Gift formatuak aukera anitzeko, egia-gezurreko, erantzun laburreko, lotu motako, txertatutako, zenbakizko eta entsegu motako galderak testu-fitxategi bidez inportatzeko eta esportatzeko aukera ematen du.';

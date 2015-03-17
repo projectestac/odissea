@@ -63,6 +63,8 @@ $string['errorrepeatedlabelname'] = 'Label name already exists';
 $string['filterbydate'] = 'Date (up to the day):';
 $string['forward'] = 'Forward';
 $string['from'] = 'From';
+$string['fullmessage'] = 'Full message';
+$string['fullmessage_help'] = 'If enabled, notifications include mail content';
 $string['inbox'] = 'Inbox';
 $string['invalidlabel'] = 'Invalid label';
 $string['invalidmessage'] = 'Invalid message';
@@ -74,6 +76,7 @@ $string['mail:addinstance'] = 'Add a new mail';
 $string['mailupdater'] = 'Mail updater';
 $string['mail:usemail'] = 'Use mail';
 $string['markasread'] = 'Mark as read';
+$string['markasread_help'] = 'If enabled, and notifications are enabled too, all new messages will be marked as read';
 $string['markasstarred'] = 'Mark as starred';
 $string['markasunread'] = 'Mark as unread';
 $string['markasunstarred'] = 'Mark as unstarred';
@@ -95,9 +98,11 @@ $string['noselectedmessages'] = 'No messages selected';
 $string['nosubject'] = '(no subject)';
 $string['notificationbody'] = '- From: {$a->user}
 
-- Subject: {$a->subject}';
-$string['notificationbodyhtml'] = '<p>From: {$a->user}</p>
-<p>Subject: <a href="{$a->url}">{$a->subject}</a></p>';
+- Subject: {$a->subject}
+
+{$a->content}';
+$string['notificationbodyhtml'] = '<p>From: {$a->user}</p><p>Subject: <a href="{$a->url}">{$a->subject}</a></p><p>{$a->content}</p>';
+$string['notificationpref'] = 'Send notifications';
 $string['notificationsubject'] = 'New mail message in {$a}';
 $string['notingroup'] = 'You are not part of any group';
 $string['pagingmultiple'] = '{$a->first}-{$a->last} of {$a->total}';

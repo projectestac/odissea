@@ -30,7 +30,7 @@ $string['boxnet:view'] = 'Ikusi Box biltegia';
 $string['clientid'] = 'Bezeroaren IDa';
 $string['configplugin'] = 'Box-en ezarpenak';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
-$string['information'] = 'Lortu <a href="http://enabled.box.net/">Box.net-erako API giltza</a> zure Moodle gunerako. ';
+$string['information'] = 'Lortu <a href="https://app.box.com/developers/services">Box.net-erako API giltza</a> zure Moodle gunerako.';
 $string['invalidpassword'] = 'Pasahitzak ez du balio';
 $string['nullfilelist'] = 'Ez dago fitxategirik biltegian';
 $string['password'] = 'Pasahitza';

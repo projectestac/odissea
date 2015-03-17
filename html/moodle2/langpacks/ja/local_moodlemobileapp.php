@@ -49,7 +49,14 @@ $string['appstoredescription'] = '注意：この公式Moodle Mobileアプリは
 
 最新の情報すべては、 http://docs.moodle.org/en/Mobile_app に掲載されています。
 
-私たちは、皆さんからこれまで寄せられているよい評価に対して心より感謝します。本アプリに追加してほしい機能など、ご意見をお寄せください！';
+私たちは、皆さんからこれまで寄せられているよい評価に対して心より感謝します。本アプリに追加してほしい機能など、ご意見をお寄せください！
+
+本アプリは以下の許諾を必要とします。
+オーディオ記録 - オーディオ記録をMoodleにアップロードするため
+SDカード内容の読み取りと変更 - SDカードへコンテンツをダウンロードしてオフライン参照できるようにします
+ネットワークアクセス - Moodleサイトへの接続を可能とし、オフラインモードへ切り替わっておらず接続しているかどうかのチェックのため
+起動時に実行 - アプリがバックグラウンドで実行している間通知を受け取れるようにするため
+電話がスリープするのを防ぐ - プッシュ通知をいつでも受け取れるようにするため';
 $string['areyousurereset'] = '本当にアプリをリセットしますか？　追加したサイトの情報はすべて消去されます。';
 $string['audionotavailable'] = '音声入力装置がありません';
 $string['audiorecordinstructions'] = '記録を始めるには記録ボタンを、止めるには停止ボタンを押し、ファイルをアップロードします。';
@@ -66,11 +73,15 @@ $string['cannotaddnote'] = 'ネットワークがつながりません。ノー�
 $string['cannotconnect'] = '接続できません：正しいURLを入力しているか、サイトのMoodleが2.4以降であることを確認してください。';
 $string['cannotconnectssl'] = '接続できません：正しいURLを入力しているか、サイトのMoodleが2.4以降であること、SSL証明書が正当なものであることを確認してください。';
 $string['cannotsendmessage'] = 'ネットワークがつながりません。メッセージはタスクキューに保存されており、オンラインになったときに再送できます。';
+$string['chooseaccountuploadfile'] = 'ファイルをアップロードするアカウントの選択：';
+$string['choosefile'] = 'ファイルの選択';
 $string['city'] = '市町村';
 $string['close'] = '閉じる';
 $string['completed'] = '完了';
 $string['confirmcontinuedownload'] = '本当にファイルのダウンロードを継続しますか？';
 $string['confirmdeletetask'] = '本当にこのタスクを消去しますか？';
+$string['confirmuploadfile'] = '{$a}をアップロードしようとしています。続けますか？';
+$string['confirmuploadfiletosite'] = 'このファイルをサイト{$a}へアップロードしますか？';
 $string['contact'] = 'コンタクト';
 $string['contactadd'] = 'コンタクトがあなたの電話の連絡帳に追加されました。';
 $string['contacts'] = 'コンタクト';
@@ -93,6 +104,8 @@ $string['description'] = '説明';
 $string['details'] = '詳細';
 $string['development'] = '開発';
 $string['deviceinfo'] = 'デバイス情報';
+$string['disabled'] = '無効';
+$string['disablenotificationforevent'] = 'このイベントの通知を無効にする';
 $string['disablenotifications'] = '通知を無効にする';
 $string['disablerdebugger'] = 'リモートデバッグを無効にする';
 $string['discussions'] = 'ディスカッション';
@@ -107,6 +120,7 @@ $string['enableautosynclang'] = '言語ファイルを同期する';
 $string['enableautosyncws'] = '操作とデータを同期する';
 $string['enablecss3transitions'] = 'CSS3 Transitionsを有効にする';
 $string['enabledebugging'] = 'デバッグを有効にする';
+$string['enableeventnotifications'] = 'イベント通知を有効にする';
 $string['enablenotifications'] = '通知を有効にする';
 $string['enablenotificationscheck'] = '<p>Moodleサイトがモバイル通知をサポートしているかを確認するには、まずMoodleサイトを開いて、管理 / マイプロファイル設定 / メッセージング の項目を開いてください。モバイル通知が有効ならば、モバイル通知の項目がチェックできるようになっているはずです。</p>';
 $string['enablenotificationswarning'] = '<p>通知を有効にするため、Moodleサイトにあなたのモバイルデバイスのモデルやオペレーティングシステム等の情報を登録する必要があります。</p>';
@@ -122,21 +136,26 @@ $string['errorduringdevicetokenrequest'] = 'デバイストークン要求中の
 $string['errorduringdevicetokenrequesttoapns'] = 'APNSへのデバイストークン要求中のエラー';
 $string['errorlistingfiles'] = 'このディレクトリにあるファイル取得のエラー';
 $string['errornoconnectednocache'] = '要求されたオプションを実行するためのデバイスが接続されておらず、キャッシュされた情報もありません';
+$string['errorreadingfile'] = 'ファイル"{$a}"の読み取りエラー';
+$string['errorreceivefilenosites'] = '登録されているサイトがありません。ファイルをアップロードする前にサイトを追加してください。';
 $string['errorregisteringdeviceinmoodle'] = 'Moodleへのデバイス登録エラー';
 $string['errorretrievinggradeinformation'] = '成績情報取得エラー';
 $string['erroruploading'] = 'ファイルアップロードエラー';
 $string['estimatedfreespace'] = '概算の空き容量';
 $string['events'] = 'カレンダーイベント';
 $string['feedback'] = 'フィードバック';
+$string['file'] = 'ファイル';
 $string['filedownloaded'] = 'ダウンロードしたファイル';
 $string['filename'] = 'ファイル名';
 $string['filesize'] = '大きさ';
 $string['fileuploaded'] = 'アップロードしたファイル';
+$string['fileuploadedwithname'] = 'ファイル名{$a}としてアップロードに成功しました。';
 $string['fileurl'] = 'ファイルのURL';
 $string['forcecsssync'] = 'いますぐCSS同期する';
 $string['forceofflinemode'] = 'オフラインモードにする';
 $string['forumnodiscussionsyet'] = 'このフォーラムにはまだディスカッショントピックがありません';
 $string['forumnumreplies'] = '返信';
+$string['frontpage'] = 'フロントページ';
 $string['fullname'] = '氏名';
 $string['general'] = '一般';
 $string['grade'] = '成績';
@@ -215,6 +234,7 @@ $string['purgecaches'] = 'キャッシュの消去';
 $string['range'] = '範囲';
 $string['rank'] = 'ランク';
 $string['rdebuggingenabledfor'] = 'この秒数後にリモートデバッグが有効になります：';
+$string['readingfile'] = 'ファイル読み取り';
 $string['record'] = '記録';
 $string['recordaudio'] = '音声';
 $string['recordstored'] = '記録があなたのプライベートエリアに保存されました';
@@ -223,7 +243,8 @@ $string['removecontact'] = 'コンタクトを削除';
 $string['replay'] = '再生';
 $string['reply'] = '返信';
 $string['reportabug'] = 'バグを報告';
-$string['reportbuginfo'] = '電子メールでバグレポートを送信するにはメールボタンをタップしてください<br /><br /> <b>メール本文には問題に関する詳細な説明を記述してください</><br /><br />デバッグ情報（個人情報を含まないもの）を添付するとよいでしょう';
+$string['reportbuginfo'] = '「バグを報告」ボタンをタップして説明を表示します。';
+$string['reportbugurl'] = 'https://docs.moodle.org/en/Moodle_Mobile#How_to_report_a_bug';
 $string['requiredfields'] = '必須フィールドはすべて記入してください。';
 $string['reset'] = 'リセット';
 $string['resetapp'] = 'アプリのリセット';
@@ -266,10 +287,13 @@ $string['timestart'] = '開始時間';
 $string['total'] = '総計';
 $string['totalusage'] = '総使用量';
 $string['type'] = '種類';
+$string['unblockcontact'] = 'コンタクトのブロックを解除';
 $string['unexpectederror'] = '不明なエラー。アプリを閉じて再起動してみてください。';
 $string['update'] = 'アップデート';
 $string['updatesite'] = 'サイトをアップデート';
 $string['upload'] = 'アップロード';
+$string['uploadfile'] = 'ファイルのアップロード';
+$string['uploadfileinstructions'] = 'ファイルをアップロードするには、下のボタンをクリックしてアップロードするファイルを選択してください。';
 $string['uploading'] = 'アップロード中';
 $string['uploadingtoprivatefiles'] = 'プライベートファイルエリアへアップロード';
 $string['uselocalmobileplugin'] = 'Moodleサイトにオプションのモバイルプラグインがインストールされていればこのページはよりうまく操作できます';

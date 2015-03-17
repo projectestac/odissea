@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Retroacció';
-$string['feedback:addinstance'] = 'Afegir un bloc nou de realimentació';
+$string['feedback:addinstance'] = 'Afegir un nou bloc nou de retroacció';
 $string['missing_feedback_module'] = 'Aquest bloc es basa en el mòdul d\'activitat Retroacció, però aqueix mòdul no està present!';
 $string['pluginname'] = 'Retroacció';

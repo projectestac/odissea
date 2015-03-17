@@ -337,7 +337,7 @@ $string['reviewconfirm'] = '<p> Hiermit machen Sie Ihre Auszeichnung für Nutzer
 $string['save'] = 'Speichern';
 $string['searchname'] = 'Nach Name suchen';
 $string['selectaward'] = 'Wählen Sie die Rolle, die diese Auszeichnung verleihen darf:';
-$string['selectgroup_end'] = 'Es werden nur öffentliche Sammlungen angezeigt, <a href="http://backpack.openbadges.org">gehen Sie zu Ihrem Backapck</a> und legen Sie eine öffentliche Sammlung an.';
+$string['selectgroup_end'] = 'Es werden nur öffentliche Sammlungen angezeigt, <a href="http://backpack.openbadges.org">gehen Sie zu Ihrem Backpack</a> und legen Sie eine öffentliche Sammlung an.';
 $string['selectgroup_start'] = 'Wählen Sie Sammlungen von Auszeichnungen aus Ihrem Backpack, um sie auf dieser Seite anzuzeigen:';
 $string['selecting'] = 'Mit den gewählten Auszeichnungen...';
 $string['setup'] = 'Verbindung konfigurieren';

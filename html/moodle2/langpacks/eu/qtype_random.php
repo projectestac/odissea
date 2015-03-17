@@ -29,6 +29,7 @@ $string['configselectmanualquestions'] = 'Ausazko galdera motak aukera al dezake
 $string['includingsubcategories'] = 'azpikategoriak barne ditu';
 $string['pluginname'] = 'Ausazkoa';
 $string['pluginnameediting'] = 'Ausazko galdera editatzen';
+$string['pluginname_help'] = 'Ausazko galdera bat berez ez da galdera mota bat, kategoria zehatz batetik ausaz aukeratutako galderak jarduera batean sartzeko modua baizik.';
 $string['randomqname'] = 'Ausazkoa ({$a})';
 $string['randomqplusname'] = 'Ausazkoa ({$a} eta azpikategoriak)';
 $string['selectedby'] = '{$a->randomname}-(e)k {$a->questionname} aukeratu du';

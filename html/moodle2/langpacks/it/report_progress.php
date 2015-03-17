@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['page-report-progress-index'] = 'Report completamento attività';
 $string['page-report-progress-user'] = 'Report completamento attività dell\'utente';
-$string['page-report-progress-x'] = 'Qualsiasi report  completamento attiivtà';
+$string['page-report-progress-x'] = 'Qualsiasi report  completamento attività';
 $string['pluginname'] = 'Completamento attività';
 $string['progress:view'] = 'Visualizzare completamento attività';

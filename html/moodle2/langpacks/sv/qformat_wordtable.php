@@ -31,9 +31,6 @@ $string['conversionfailed'] = 'Frågeimporten misslyckades.';
 $string['conversionsucceeded'] = 'Frågeimporten <b>lyckades</b>, <br>klicka på<b>\'Stöng\'</b> knappen för att fortsätta.';
 $string['conversionsucceeded2'] = 'Frågeimporten <b>lyckades</b>, <br>
 klicka \'fortsätt\' knappen för att fortsätta.';
-$string['curlerror'] = 'cURL misslyckades: Wordfilen konverterades inte till XML. Nätverks/brandväggs problem?';
-$string['curlunavailable'] = 'Du behöver cURL biblioteket installerat i PHP för att importera den här Word filen. Kontakta din systemadministratör.';
-$string['docxnotsupported'] = 'Filer i Word 2007 formatet stöds ej: <b>{$a}</b>';
 $string['htmldocnotsupported'] = 'Felaktigt Wordformat: var god använd
  <i>Arkiv>Spara som...</i> för att spara <b>{$a}</b> i ursprungligt Wordformat och importera igen';
 $string['htmlnotsupported'] = 'Filer i HTML formatet stöds ej: <b>{$a}</b>';
@@ -41,17 +38,6 @@ $string['noquestions'] = 'Ingen fråga att exportera';
 $string['pluginname'] = 'Microsoft Word tabellformat (Wordtabell)';
 $string['pluginname_help'] = 'Detta är en front-end för att konvertera Microsoft Word 2003 binärt format till Moodle fråge XML-format. Importera och konvertera Moodle fråge XML-format till en förbättrad XHTML-format för att exportera till ett format lämpligt för redigering i Microsoft Word.';
 $string['preview_question_not_found'] = 'Frågan som skulle förhandsgranskas kunde inte hittas, namn / kurs ID: {$a}';
-$string['registration'] = 'Registrering';
-$string['registration_administration'] = 'Moodle2Word administration';
-$string['registrationcomplete'] = 'Registreringen lyckades, Word import är nu tillgängligt';
-$string['registrationincomplete'] = 'Registreringen misslyckades, Word import är inte tillgängligt.';
-$string['registrationinfo'] = '<p> Du måste registrera Moodle2Word för att möjliggöra import av Word-dokument. Du behöver inte registrera dig om du bara vill exportera frågor till Word-format. Registreringen är gratis och tillåter import av Word-filer som innehåller upp till 5 frågor. Men för att importera ett större antal frågor, måste du betala en årlig prenumeration. </p><p> Om du vill kan du låta din webbplats namn, land och webbadress läggas till den offentliga listan över webbplatser som använder Moodle2Word. </p>';
-$string['registrationinfotitle'] = 'Moodle2Word registreringsinformation';
-$string['registrationno'] = 'Nej, jag vill inte ta emot email';
-$string['registrationpage'] = 'Omdirigerar till registreringssidan för att aktivera Wordimport';
-$string['registrationpasswordsdonotmatch'] = 'Lösenorden matchar inte';
-$string['registrationsend'] = 'Skicka registrerings information till www.moodle2word.net';
-$string['registrationyes'] = 'Ja, vänligen meddela mig om viktiga frågor';
 $string['stylesheetunavailable'] = 'XSLT <b>{$a}</b> är inte tillgänglig';
 $string['tempfile'] = 'Temporär XML-fil: <b>{$a}</b>';
 $string['templateunavailable'] = 'Word-kompatibel XHTML-mall <b>{$a}</b> är inte tillgänglig';

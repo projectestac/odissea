@@ -79,8 +79,8 @@ $string['exiturl']='Enllaç de sortida';
 $string['availabledate'] = 'Disponible des de';
 $string['closebeforeopen'] = 'No s\'ha pogut actualitzar el JClic. Heu especificat una data de finalització anterior a la data d\'inici.';
 $string['duedate'] = 'Data de venciment';
-$string['exiturl_help'] = 'Es tracta del URL que s\'obrir&agrave; quan l\'alumnat finalitzi la darrera activitat JClic. 
-    
+$string['exiturl_help'] = 'Es tracta del URL que s\'obrir&agrave; quan l\'alumnat finalitzi la darrera activitat JClic.
+
 Per tal que aquesta redirecció funcioni cal que, a la pestanya seq&uuml;&egrave;ncies, la darrera activitat del projecte JClic, a la "Fletxa endavant", tingui associada l\'acci&oacute; "Sortir del JClic".';
 $string['expired'] = 'Ho sentim, aquesta activitat es va tancar el {$a} i ja no està disponible';
 $string['filetype'] = 'Tipus';
@@ -101,12 +101,12 @@ $string['jclicfile'] = 'Fitxer JClic';
 $string['jclicfile_help'] = 'El fitxer ".jclic.zip" que conté el paquet JClic.';
 $string['lap']='Temps entre voltes';
 $string['lap_help']='Temps que es deixa entre les transaccions client-servidor (expressat en segons)';
-$string['modulename_help'] = 'El <a href="http://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya 
-    que està format per un conjunt d\'aplicacions de programari lliure que permeten crear diversos tipus d\'activitats educatives multimèdia: puzles, associacions, 
-    exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> disposa 
+$string['modulename_help'] = 'El <a href="http://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya
+    que està format per un conjunt d\'aplicacions de programari lliure que permeten crear diversos tipus d\'activitats educatives multimèdia: puzles, associacions,
+    exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> disposa
     d\'una biblioteca d\'activitats que compta amb uns mil projectes que han creat professors i persones d\'altres col·lectius que han volgut compartir solidàriament
-    el seu treball. 
-    
+    el seu treball.
+
 Aquest mòdul permet al professorat afegir a un curs qualsevol activitat de tipus JClic i recopilar els resultats obtinguts (temps utilitzat a cada activitat, intents, encerts...) per cada alumne/a.';
 $string['notopenyet'] = 'Ho sentim, aquesta activitat no estarà disponible fins {$a}';
 $string['pluginadministration'] = 'Administració de JClic';
@@ -124,3 +124,12 @@ $string['jclic:grade'] = 'Avalua JClic';
 
 /* Revision Moodle 2.3 */
 $string['jclic:addinstance'] = 'Afegeix una activitat JClic';
+$string['pluginjs'] = 'URL del fitxer JClic plugin js';
+$string['pluginjs_help'] = 'URL on es cercarà el fitxer jclicplugin.js necessari per funcionar. Si està buit, es farà servir el fitxer del mòdul.';
+
+/* Revision Moodle 2.6 */
+$string['event_course_module_viewed'] = 'S\'ha visualitzat el mòdul del curs.';
+$string['event_instances_list_viewed'] = 'S\'ha visualitzat la llista d\'instàncies.';
+$string['results'] = 'Resultats';
+$string['report_details'] = 'Resultats detallats amb totes les sessions';
+$string['report_normal'] = 'Resum de resultats';

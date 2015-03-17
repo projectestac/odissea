@@ -42,7 +42,7 @@ $string['createnewusers_desc'] = 'La inscripció de dades IMS Enterprise descriu
 Els usuaris es cerquen primer per «número id» i després pel nom d\'usuari de Moodle. Les contrasenyes no s\'importen amb el connector IMS Enterprise. Es recomana l\'ús d\'un connector d\'autenticació  per autenticar usuaris.';
 $string['cronfrequency'] = 'Freqüència de processament';
 $string['deleteusers'] = 'Suprimeix comptes d\'usuari quan ho especifiquin les dades IMS';
-$string['deleteusers_desc'] = 'Si s\'habilita les dades d\'inscripció IMS Enterprise poden permetre la supressió de comptes d\'usuaris ( si la senyal «recstatus» és configura a l\'estat 3, que representa la supressió d\'un compte d\'usuari). Com que és un estàndard en Moodle, les dades de l\'usuari no es poden esborrar actualment de la base de dades de Moodle, però una senyal indica que el compte es pot suprimir.';
+$string['deleteusers_desc'] = 'Si s\'habilita, les dades d\'inscripció IMS Enterprise poden especificar la supressió de comptes d\'usuari (si l\'indicador «recstatus» es configura a l\'estat 3, que representa la supressió d\'un compte d\'usuari). Com és estàndard a Moodle, les dades de l\'usuari no s\'esborren realment de la base de dades, però s\'establirà un indicador que marca el compte com a esborrat.';
 $string['doitnow'] = 'executar ara una importació IMS Enterprise';
 $string['emptyattribute'] = 'Deixa-ho buit';
 $string['filelockedmail'] = 'El procés del cron no pot suprimir el fitxer que esteu utilitzant per a inscripcions basades en IMS Enterprise ({$a}). Generalment això vol dir que té permisos erronis. Arregleu els permisos de manera que Moodle pugui suprimir aquest fitxer, o en cas contrari podria processar-se repetidament.';
@@ -63,9 +63,9 @@ $string['pluginname_desc'] = 'Aquest mètode comprovarà de forma cíclica en un
 $string['processphoto'] = 'Afegeix la foto de l\'usuari al perfil';
 $string['processphotowarning'] = 'Avís: el processament d\'imatges probablement afegirà una càrrega significativa al vostre servidor. Se us recomana no activar aquesta opció si espereu que es processi un gran nombre d\'estudiants.';
 $string['restricttarget'] = 'Processa les dades només si s\'especifica l\'objectiu següent';
-$string['restricttarget_desc'] = 'Un fitxer de dades IMS Enterprise pot preveure\'s per diferents «objectius» - diferents entorns virtuals d\'aprenentatge, o diferents sistemes  dins d\'un centre educatiu/universitat. Es possible especificar al fitxer IMS Enterprise que les dades estiguen previstes per un o més sistemes posant nom a <target> etiquetes dins d\' <properties>etiquetes.
+$string['restricttarget_desc'] = 'Un fitxer de dades IMS Enterprise pot preveure\'s per diferents «objectius» —diferents entorns virtuals d\'aprenentatge, o diferents sistemes dins d\'un centre educatiu/universitat. És possible especificar al fitxer IMS Enterprise que les dades estiguin previstes per un o més sistemes amb nom posant aquest nom en etiquetes <target> contingudes dins de l\'etiqueta <properties>.
 
-En general no heu de preocupar-vos d\'això. Deixeu el paràmetre en blanc i Moodle processarà sempre les dades del fitxer, no patiu si una etiqueta està posada o no. Tanmateix, poseu el nom exacte que voleu que tingui l\'<target> etiqueta.';
+En general no heu de preocupar-vos d\'això. Deixeu el paràmetre en blanc i Moodle processarà sempre les dades del fitxer, tant si s\'especifica un <target> com si no. Altrament, poseu dins de l\'etiqueta <target> el nom exacte que s\'extraurà.';
 $string['roles'] = 'Rols';
 $string['settingfullname'] = 'Etiqueta de descripció IMS per al nom complet del curs';
 $string['settingfullnamedescription'] = 'El nom complet és un camp obligatori del curs, així que heu de definir l\'etiqueta de descripció seleccionada en el fitxer IMS Enterprise';
@@ -74,11 +74,11 @@ $string['settingshortnamedescription'] = 'El nom curt és un camp obligatori del
 $string['settingsummary'] = 'Etiqueta de descripció IMS per al resum del curs';
 $string['settingsummarydescription'] = 'És un camp opcional, seleccioneu «Deixa-ho buit» si no voleu especificar un resum del curs.';
 $string['sourcedidfallback'] = 'Utilitza el "sourcedid" com a userid si el camp "userid" no hi és';
-$string['sourcedidfallback_desc'] = 'A les dades IMS, el camp <sourcedid> representa la identificació persistent per a una persona utilitzada per la font del sistema. El camp <userid> és un camp separat que conté el codi d\'identificació utilitzat per l\'usuari quan entra al sistema. En molt casos aquests dos codis poden ser el mateix - però no sempre és així.
+$string['sourcedidfallback_desc'] = 'A les dades IMS, el camp <sourcedid> representa la identificació persistent per a una persona utilitzada per la font del sistema. El camp <userid> és un camp separat que conté el codi d\'identificació utilitzat per l\'usuari quan entra al sistema. En molt casos aquests dos codis poden ser el mateix —però no sempre és així.
 
-Alguns sistemes d\'informació d\'estudiants tenen errors obtenint el camp <userid>. Si és aquest el cas, podeu habilitar aquest paràmetre per permetre utilitzar <sourcedid> com identificació e l\'usuari en Moodle. En cas contrari deixeu aquest paràmetre deshabilitat.';
+Alguns sistemes d\'informació d\'estudiants tenen errors obtenint el camp <userid>. Si és aquest el cas, podeu habilitar aquest paràmetre per permetre utilitzar <sourcedid> com a identificació de l\'usuari a Moodle. En cas contrari deixeu aquest paràmetre inhabilitat.';
 $string['truncatecoursecodes'] = 'Trunca els codis de curs a aquesta longitud';
-$string['truncatecoursecodes_desc'] = 'En algunes situacions podeu tindre codis de cursos en els quals truncar una determinada longitud abans de processar-la. Si és aquest el cas, entreu el nombre de caràcters en aquest quadre. En cas contrari, deixeu el quadre buit i no truncarà res.';
+$string['truncatecoursecodes_desc'] = 'En algunes situacions podeu tenir codis de cursos que voleu truncar a una determinada longitud abans de processar-los. Si és aquest el cas, introduïu el nombre de caràcters en aquest quadre. En cas contrari, deixeu el quadre buit i no es truncarà res.';
 $string['usecapitafix'] = 'Activeu aquest quadre si esteu utilitzant "Capita" (el seu format XML és lleugerament erroni)';
 $string['usecapitafix_desc'] = 'El sistema de dades de l\'estudiant produïdes per Capita ha trobat un error lleu en aquesta sortida XML. Si esteu utilitzant Capita hauríeu de habilitar aquest paràmetre - en cas contrari deixeu-ho deshabilitat.';
 $string['usersettings'] = 'Opcions de les dades d\'usuari';

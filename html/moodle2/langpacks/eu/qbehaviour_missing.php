@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Jokaera falta da';
+$string['questionusedunknownmodel'] = 'Galdera honi une honetan eskuragarri ez dagoen jokaera batekin erantzun zaio. Galdera ahal bezain ondo erakusten ari da baina agian zatiren bat falta da edo gaizki egon daiteke.';

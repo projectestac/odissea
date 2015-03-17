@@ -14,6 +14,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->close();
 	}
 	public function printLocalData($h, $q, $unique, $conf) {
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wirislocaldatafieldset" . _hx_string_rec($unique, ""), $this->t->t("inputmethod"), "wirismainfieldset");
 		$anchor = (($conf->optAuxiliarCas && !$conf->optOpenAnswer) ? "#auxiliar-cas" : "");
 		$h->help("wirisinputmethodhelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/correct-answer" . $anchor, $this->t->t("manual"));
@@ -71,6 +72,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 			$h->jsComponent("wirisinitialcontentbutton" . _hx_string_rec($unique, ""), "JsInitialCasInput", $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION));
 			$h->close();
 		}
+		$h->close();
 		$h->close();
 	}
 	public function getLangFromCasSession($session) {
@@ -138,6 +140,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h = new com_wiris_quizzes_impl_HTML();
 		$hasCorrectAnswer = $q->correctAnswers !== null && $correctAnswer < $q->correctAnswers->length;
 		$h->openDivClass("wiristestresult" . _hx_string_rec($unique, ""), "wiristestresult");
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wiristestvalidationfieldset" . _hx_string_rec($unique, ""), $this->t->t("validation"), "wirismainfieldset");
 		if($q->assertions !== null && $q->assertions->length > 0 && $qi->hasEvaluation()) {
 			$h->openDivClass("wiristestgrade" . _hx_string_rec($unique, ""), "wiristestgrade");
@@ -169,7 +172,9 @@ class com_wiris_quizzes_impl_HTMLGui {
 		}
 		$h->close();
 		$h->close();
+		$h->close();
 		$h->openDivClass("wiristestcorrectanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "]", "wiristestcorrectanswer");
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wiristestcorrectanswerfieldset" . _hx_string_rec($unique, ""), $this->t->t("correctanswer"), "wirismainfieldset");
 		if($hasCorrectAnswer) {
 			$content = _hx_array_get($q->correctAnswers, $correctAnswer)->content;
@@ -185,6 +190,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 				$h->text($content);
 			}
 		}
+		$h->close();
 		$h->close();
 		$h->close();
 		return $h->getString();
@@ -212,21 +218,17 @@ class com_wiris_quizzes_impl_HTMLGui {
 	}
 	public function printAssertionsControls($h, $q, $correctAnswer, $unique, $conf) {
 		$h->openDiv("wirisassertioncontrols" . _hx_string_rec($unique, ""));
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wiriscomparisonfieldset" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "][0]", $this->t->t("comparisonwithstudentanswer"), "wirismainfieldset wiriscomparisonfieldset");
 		$h->help("wiriscomparisonhelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/validation#comparison", $this->t->t("manual"));
 		$h->openDivClass("wiristolerance" . _hx_string_rec($unique, ""), "wiristolerance");
-		$idtol = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Option::$OPTION_TOLERANCE . "]";
+		$idtol = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE . "]";
 		$h->label($this->t->t("tolerancedigits") . ":", $idtol, "wirisleftlabel2");
 		$h->text(" ");
 		$h->input("text", $idtol, "", null, null, null);
-		$idRelTol = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Option::$OPTION_RELATIVE_TOLERANCE . "]";
+		$idRelTol = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE . "]";
 		$h->input("checkbox", $idRelTol, "", null, null, null);
 		$h->label($this->t->t("relative"), $idRelTol, null);
-		$h->openDivClass("wiristolerancewarnings", "wiriswarningbox");
-		$h->openSpan("wiriswarning" . _hx_string_rec($unique, "") . "[warningtolerance]", "wirisinlinewarning");
-		$h->text($this->t->t("warningtoleranceprecision"));
-		$h->close();
-		$h->close();
 		$h->close();
 		$h->openUl("wiriscomparison" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "][0]", "wirisul");
 		$i = null;
@@ -274,6 +276,8 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->close();
 		$h->close();
 		$h->close();
+		$h->close();
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wirisadditionalchecksfieldset" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "][0]", $this->t->t("additionalproperties"), "wirismainfieldset wirisadditionalchecksfieldset");
 		$h->help("wirisadditionalcheckshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/validation#properties", $this->t->t("manual"));
 		$h->openDivClass("wirisstructurediv" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "][0]", "wirissecondaryfieldset");
@@ -330,6 +334,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->close();
 		$h->close();
 		$h->close();
+		$h->close();
 	}
 	public function printAssertionsSummary($h, $q, $index, $unique, $conf) {
 		$syntax = null;
@@ -374,13 +379,13 @@ class com_wiris_quizzes_impl_HTMLGui {
 			}
 		}
 		$options = "";
-		$tolerance = $q->getOption(com_wiris_quizzes_impl_Option::$OPTION_TOLERANCE);
-		if(!($tolerance === $q->defaultOption(com_wiris_quizzes_impl_Option::$OPTION_TOLERANCE))) {
+		$tolerance = $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE);
+		if(!($tolerance === $q->defaultOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE))) {
 			$options = $this->t->t("tolerancedigits") . ": " . _hx_substr($tolerance, 5, strlen($tolerance) - 6);
 			$showOptions = true;
 		}
-		$relative = $q->getOption(com_wiris_quizzes_impl_Option::$OPTION_RELATIVE_TOLERANCE);
-		if(!($relative === $q->defaultOption(com_wiris_quizzes_impl_Option::$OPTION_RELATIVE_TOLERANCE))) {
+		$relative = $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE);
+		if(!($relative === $q->defaultOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE))) {
 			if(strlen($options) > 0) {
 				$options .= ", ";
 			}
@@ -389,6 +394,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		}
 		$showAlgorithm = $q->wirisCasSession !== null && strlen($q->wirisCasSession) > 0;
 		if($showSyntax || $showComparison || $showProperties || $showAlgorithm || $showOptions) {
+			$h->openDivClass(null, "wirisfieldsetwrapper");
 			$h->openFieldset("validationandvariables" . _hx_string_rec($unique, ""), $this->t->t("validationandvariables"), "wirisfieldsetvalidationandvariables");
 			$h->help("wirisvalidationandvariableshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/short-answer#vav", $this->t->t("manual"));
 			$h->openDl("wirisassertionsummarydl" . _hx_string_rec($unique, ""), "wirisassertionsummarydl");
@@ -430,11 +436,12 @@ class com_wiris_quizzes_impl_HTMLGui {
 			if($showAlgorithm) {
 				$h->dt($this->t->t("variables"));
 				$variables = $this->t->t("hasalgorithm");
-				if(!($q->getOption(com_wiris_quizzes_impl_Option::$OPTION_PRECISION) === $q->defaultOption(com_wiris_quizzes_impl_Option::$OPTION_PRECISION))) {
-					$variables .= ", " . $this->t->t("precision") . ": " . $q->getOption(com_wiris_quizzes_impl_Option::$OPTION_PRECISION);
+				if(!($q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION) === $q->defaultOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION))) {
+					$variables .= ", " . $this->t->t("precision") . ": " . $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION);
 				}
 				$h->dd($variables);
 			}
+			$h->close();
 			$h->close();
 			$h->close();
 		}
@@ -528,40 +535,44 @@ class com_wiris_quizzes_impl_HTMLGui {
 	}
 	public function printOutputControls($h, $unique) {
 		$h->openDiv("wirisoutputcontrols" . _hx_string_rec($unique, ""));
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wirisoutputcontrolsfieldset" . _hx_string_rec($unique, ""), $this->t->t("outputoptions"), "wirismainfieldset");
 		$h->help("wirisoutputcontrolshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/variables", $this->t->t("manual"));
 		$h->openTable("wirisoutputcontrolslist" . _hx_string_rec($unique, ""), "wirisoutputcontrolslist");
 		$id = null;
-		$h->openTr();
+		$h->openTr(null);
 		$h->openTd("wirisleftlabellist");
-		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Option::$OPTION_PRECISION . "]";
-		$h->label($this->t->t(com_wiris_quizzes_impl_Option::$OPTION_PRECISION), $id, "wirisleftlabel");
+		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION . "]";
+		$h->label($this->t->t(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION), $id, "wirisleftlabel");
 		$h->close();
 		$h->openTd(null);
 		$h->input("text", $id, null, null, null, "wirissmalltextfield");
-		$h->openDivClass("wirisprecisionwarnings", "wiriswarningbox");
-		$h->openSpan("wiriswarning" . _hx_string_rec($unique, "") . "[warningprecision15]", "wirisinlinewarning");
-		$h->text($this->t->t("warningprecision15"));
-		$h->close();
-		$h->openSpan("wiriswarning" . _hx_string_rec($unique, "") . "[warningprecision]", "wirisinlinewarning");
-		$h->text($this->t->t("warningtoleranceprecision"));
+		$h->openSpan("wirisfloatingexample" . _hx_string_rec($unique, ""), "wirisfloatingexample");
+		$h->text($this->t->t("example") . ":");
+		$h->openSpan("wirisfloatingexamplewrapper" . _hx_string_rec($unique, ""), null);
 		$h->close();
 		$h->close();
 		$h->close();
 		$h->close();
-		$h->openTr();
+		$h->openTr(null);
 		$h->openTd("wirisleftlabellist");
-		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Option::$OPTION_IMPLICIT_TIMES_OPERATOR . "]";
-		$h->label($this->t->t(com_wiris_quizzes_impl_Option::$OPTION_IMPLICIT_TIMES_OPERATOR), $id, "wirisleftlabel wirisleftlabellist");
+		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT . "]";
+		$h->label($this->t->t("notation"), $id, "wirisleftlabel");
 		$h->close();
 		$h->openTd(null);
-		$h->input("checkbox", $id, null, "true", $this->t->t($id), null);
+		$h->select($id, null, new _hx_array(array(new _hx_array(array("mg", $this->t->t("auto"))), new _hx_array(array("mr", $this->t->t("floatingDecimal"))), new _hx_array(array("f", $this->t->t("fixedDecimal"))), new _hx_array(array("me", $this->t->t("scientific"))))));
+		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR . "]";
+		$h->label($this->t->t("decimalSeparator"), null, "wirisleftlabel wirissecondlabel");
+		$h->select($id, null, new _hx_array(array(new _hx_array(array(".", $this->t->t("point"))), new _hx_array(array(",", $this->t->t("comma"))))));
+		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR . "]";
+		$h->label($this->t->t("thousandsSeparator"), null, "wirisleftlabel wirissecondlabel");
+		$h->select($id, null, new _hx_array(array(new _hx_array(array(".", $this->t->t("point"))), new _hx_array(array(",", $this->t->t("comma"))), new _hx_array(array(" ", $this->t->t("space"))), new _hx_array(array("", $this->t->t("None"))))));
 		$h->close();
 		$h->close();
-		$h->openTr();
+		$h->openTr("wirisrowthinspace");
 		$h->openTd("wirisleftlabellist");
-		$id = "wirisoptionpart" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Option::$OPTION_TIMES_OPERATOR . "]";
-		$h->label($this->t->t(com_wiris_quizzes_impl_Option::$OPTION_TIMES_OPERATOR), null, "wirisleftlabel wirisleftlabellist");
+		$id = "wirisoptionpart" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR . "]";
+		$h->label($this->t->t(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR), null, "wirisleftlabel");
 		$h->close();
 		$h->openTd(null);
 		$h->openSpan(null, "wirishorizontalparam");
@@ -572,12 +583,15 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->input("radio", $id . "[1]", $id, com_wiris_quizzes_impl_HTMLGui_4($this, $h, $id, $unique), com_wiris_quizzes_impl_HTMLGui_5($this, $h, $id, $unique), null);
 		$h->label("a" . com_wiris_quizzes_impl_HTMLGui_6($this, $h, $id, $unique) . "b", $id . "[1]", null);
 		$h->close();
+		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR . "]";
+		$h->input("checkbox", $id, null, "true", $this->t->t(com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR), null);
+		$h->label($this->t->t("invisible"), $id, null);
 		$h->close();
 		$h->close();
-		$h->openTr();
+		$h->openTr(null);
 		$h->openTd("wirisleftlabellist");
-		$id = "wirisoptionpart" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Option::$OPTION_IMAGINARY_UNIT . "]";
-		$h->label($this->t->t(com_wiris_quizzes_impl_Option::$OPTION_IMAGINARY_UNIT), null, "wirisleftlabel wirisleftlabellist");
+		$id = "wirisoptionpart" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT . "]";
+		$h->label($this->t->t(com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT), null, "wirisleftlabel");
 		$h->close();
 		$h->openTd(null);
 		$h->openSpan(null, "wirishorizontalparam");
@@ -593,6 +607,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->close();
 		$h->close();
 		$h->close();
+		$h->close();
 	}
 	public function getWirisCasLanguages() {
 		$langs = new _hx_array(array(new _hx_array(array("ca", $this->t->t("Catalan"))), new _hx_array(array("en", $this->t->t("English"))), new _hx_array(array("es", $this->t->t("Spanish"))), new _hx_array(array("et", $this->t->t("Estonian"))), new _hx_array(array("eu", $this->t->t("Basque"))), new _hx_array(array("fr", $this->t->t("French"))), new _hx_array(array("de", $this->t->t("German"))), new _hx_array(array("it", $this->t->t("Italian"))), new _hx_array(array("nl", $this->t->t("Dutch"))), new _hx_array(array("pt", $this->t->t("Portuguese")))));
@@ -601,6 +616,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 	public function printInputControls($h, $q, $correctAnswer, $unique) {
 		$id = null;
 		$h->openDiv("wirisinputcontrols" . _hx_string_rec($unique, ""));
+		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wirisinputcontrolsfieldset" . _hx_string_rec($unique, ""), $this->t->t("allowedinput"), "wirismainfieldset");
 		$h->help("wirisinputcontrolshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/validation#allowed-input", $this->t->t("manual"));
 		$h->openDivClass("wirissyntaxassertions" . _hx_string_rec($unique, ""), "wirissyntaxassertions");
@@ -742,6 +758,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$id = $idgeneric . "[space][" . _hx_string_rec($correctAnswer, "") . "][0]";
 		$h->labelTitle($this->t->t("space") . ":", $id, "wirissyntaxcharslabel", $this->t->t("spacerole"));
 		$h->select($id, "", new _hx_array(array(new _hx_array(array("nothing", $this->t->t("nothing"))), new _hx_array(array("digitgroupseparators", $this->t->t("digitsgroup"))), new _hx_array(array("itemseparators", $this->t->t("listitems"))))));
+		$h->close();
 		$h->close();
 		$h->close();
 		$h->close();

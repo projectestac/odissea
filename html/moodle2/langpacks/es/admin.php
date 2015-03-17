@@ -1087,7 +1087,7 @@ $string['upgradepluginsfirst'] = 'Se recomienda instalar primero todas las actua
 $string['upgradepluginsinfo'] = 'Actualizando extensiones';
 $string['upgradepluginsinfo_help'] = 'Hay actualizaciones disponibles para algunas de sus extensiones. Debería instalar todas ellas antes de actualizar la base de datos de Moodle. Si su sitio no admite la distribución de actualizaciones automática, tendrá que descargar e instalar en el servidor las nuevas versiones de la extensión de forma manual.';
 $string['upgradesettings'] = 'Nuevos ajustes';
-$string['upgradesettingsintro'] = 'Los ajustes que se muestran más abajo se agregaron durante la última actualización de Moodle. Realice los cambios necesarios a los valores por defecto y luego haga clic en el botón &quot;Guardar ajustes&quot; al final de esta página.';
+$string['upgradesettingsintro'] = 'Los ajustes que se muestran más abajo se agregaron durante la última actualización de Moodle. Realice los cambios necesarios a los valores por defecto y luego haga clic en el botón "Guardar cambios" al final de esta página.';
 $string['upgradestalefiles'] = 'Se ha detectado una mezcla de versiones de Moodle . La actualización no puede continuar.';
 $string['upgradestalefilesinfo'] = 'El proceso de actualización de Moodle se ha detenido porque los scripts PHP que se han detectado en el directorio de Moodle corresponden, por lo menos, a dos versiones principales de Moodle anteriores.
 
@@ -1111,7 +1111,7 @@ Puede encontrar más información en la documentación de actualización en <a h
 $string['upgradestart'] = 'Actualizar base de datos Moodle ahora';
 $string['upgradesure'] = 'Sus archivos Moodle han sido modificados, y usted está a punto de actualizar automáticamente su servidor a esta versión:<br /><br /><strong>
 {$a}</strong><br /><br />
-Una vez que haga esto, no podrá volver atrás.<br /><br />Por favor, note que este proceso puede costar bastante tiempo.<br /><br />
+Una vez que haga esto, no podrá volver atrás.<br /><br />Por favor, tenga en cuenta que este proceso puede tardar bastante tiempo.<br /><br />
 ¿Está seguro de que quiere actualizar este servidor a esta versión?';
 $string['upgradetimedout'] = 'Se acabó el tiempo de actualización; por favor, reinicie la actualización.';
 $string['upgradingdata'] = 'Actualizando los datos';

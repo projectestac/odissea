@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['batchoperationconfirmuploadfiles'] = '¿Subir uno o más archivos de retroalimentación para todos los usuarios seleccionados?';
-$string['batchuploadfiles'] = 'Subir archivos de retroalimentación para múltiples usuarios';
-$string['batchuploadfilesforusers'] = 'Mandar archivos de retroalimentación a {$a} usuario(s) seleccionado(s).';
-$string['configmaxbytes'] = 'Tamaño máximo de archivo';
-$string['confirmuploadzip'] = 'Confirmar subida de ZIP';
-$string['countfiles'] = '{$a} archivos';
+$string['batchoperationconfirmuploadfiles'] = '¿Subir uno o más ficheros de retroalimentación para todos los usuarios seleccionados?';
+$string['batchuploadfiles'] = 'Subir ficheros de retroalimentación para varios usuarios';
+$string['batchuploadfilesforusers'] = 'Mandar ficheros de retroalimentación a {$a} usuarios seleccionados.';
+$string['configmaxbytes'] = 'Tamaño máximo de fichero';
+$string['confirmuploadzip'] = 'Confirmar subida zip';
+$string['countfiles'] = '{$a} ficheros';
 $string['default'] = 'Habilitado por defecto';
-$string['default_help'] = 'Si se activa la opción, este método de retroalimentación estará habilitado por omisión para todas las tareas nuevas.';
-$string['enabled'] = 'Archivo de retroalimentación';
+$string['default_help'] = 'Si se activa la opción, este método de retroalimentación será habilitado por defecto para todos las asignaciones nuevas.';
+$string['enabled'] = 'Fichero retroalimentación';
 $string['enabled_help'] = 'Si está habilitado, el profesor, cuando evalúe las tareas, podrá subir los comentarios de retroalimentación en archivos  Estos archivos pueden ser, sin estar limitados a estos ejemplos,  documentos de texto o archivos de audio.';
 $string['feedbackfileadded'] = 'Nuevo archivo de retroalimentación "{$a->filename}" para estudiante "{$a->student}"';
 $string['feedbackfileupdated'] = 'Archivo de retroalimentación modificado "{$a->filename}" para estudiante "{$a->student}"';

@@ -61,7 +61,7 @@ $string['rubricmapping'] = 'Puntuació per qualificar el mapatge de les regles.'
 $string['rubricmappingexplained'] = 'La puntuació mínima per aquesta rúbrica és de <b>{$a->minscore} punts</b> i es
 convertirà en la qualificació mínima disponible per aquest mòdul (la qual és zero llevat que s\'utilitzi l\'escala). <br/>
 La puntuació màxima de <b>{$a->maxscore} punts</b> es convertirà en la qualificació màxima. <br/>
-Les puntuacions intermèdies es convertiran i s\'arredoniran a la qualificació més pròxima. <br/>
+Les puntuacions intermèdies es convertiran i s\'arrodoniran a la qualificació més pròxima. <br/>
 Si una escala s\'usa com a qualificació, la puntuació es convertirà en elements de l\'escala com si fossin nombres enters consecutius.';
 $string['rubricnotcompleted'] = 'Si us plau trieu alguna cosa per cada criteri.';
 $string['rubricoptions'] = 'Opcions de rúbrica';

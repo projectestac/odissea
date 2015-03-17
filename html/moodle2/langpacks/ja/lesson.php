@@ -170,7 +170,7 @@ $string['enteredthis'] = '入力されました。';
 $string['entername'] = 'ハイスコアリストのニックネームを入力してください。';
 $string['enterpassword'] = 'パスワードを入力してください:';
 $string['eolstudentoutoftime'] = 'お知らせ: このレッスンの制限時間が終了しました。制限時間終了後に答えた場合、解答内容はカウントされません。';
-$string['eolstudentoutoftimenoanswers'] = 'あなたは、どの問題にも解答していません。このレッスンのあなたの評点は、0点です。';
+$string['eolstudentoutoftimenoanswers'] = 'あなたはどの問題にも解答していません。このレッスンのあなたの評点は、0点です。';
 $string['essay'] = '作文問題';
 $string['essayemailmessage'] = '<p>作文問題:<blockquote>{$a->question}</blockquote></p>
 <p>あなたの解答:<blockquote><em>{$a->response}</em></blockquote></p>
@@ -470,7 +470,7 @@ $string['processerror'] = '処理中にエラーが発生しました!';
 $string['progressbar'] = 'プログレスバー';
 $string['progressbar_help'] = '有効にした場合、レッスンページ最下部におおよその完了パーセンテージを表示したバーが表示されます。';
 $string['progressbarteacherwarning'] = 'プログレスバーは {$a} に表示されません。';
-$string['progressbarteacherwarning2'] = 'あなたは、このレッスンを編集できるため、プログレスバーは表示されません。';
+$string['progressbarteacherwarning2'] = 'あなたはこのレッスンを編集できるため、プログレスバーは表示されません。';
 $string['progresscompleted'] = 'あなたは {$a}% のレッスンを完了しました。';
 $string['qtype'] = 'ページタイプ';
 $string['question'] = '問題';

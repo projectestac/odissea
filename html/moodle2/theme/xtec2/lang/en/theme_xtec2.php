@@ -112,3 +112,16 @@ $string['pluginname'] = 'XTEC2';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
+
+//Advices
+$string['advices'] = 'Tips';
+$string['alert_message'] = 'Message';
+$string['advices_admin'] = 'Tip for administrators';
+$string['advices_user'] = 'Tip for everybody';
+$string['alert_start'] = 'Show message from this date';
+$string['alert_start_desc'] = 'Leave empty if you want to show it from now. Format YYYYmmdd';
+$string['alert_end'] = 'Show message until this date';
+$string['alert_end_desc'] = 'Leave empty if you want to show it forever. Format YYYYmmdd';
+$string['agora_alert_message_desc'] = 'Shows a message on the top of the block area for everybody';
+$string['admin_alert_message_desc'] = 'Shows a message on the top of the block area only for admins';
+$string['show_admins'] = 'This message is only shown to site administrators';

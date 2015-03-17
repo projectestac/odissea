@@ -99,7 +99,7 @@ $string['deleteattemptcheck'] = 'Està completament segur de que vol eliminar aq
 $string['deleteuserattemptcheck'] = 'Està completament segur de que vol eliminar tots els seus intents?';
 $string['details'] = 'Detalls de seguiment';
 $string['directories'] = 'Mostra els enllaços del directori';
-$string['disabled'] = 'Deshabilitat';
+$string['disabled'] = 'Inhabilitat';
 $string['display'] = 'Visualitza';
 $string['displayattemptstatus'] = 'Mostrar estat dels intents';
 $string['displayattemptstatusdesc'] = 'Si voleu mostrar o no les puntuacions i les qualificacions de l\'usuari al resum del curs a la Meva pàgina inicial i/o a la pàgina d\'entrada de l\'SCORM';
@@ -184,7 +184,7 @@ $string['invalidactivity'] = 'L\'activitat SCORM és incorrecta';
 $string['invalidhacpsession'] = 'Sessió HACP no vàlida';
 $string['invalidmanifestname'] = 'Només podeu seleccionar el fitxer imsmanifest.xml o fitxers .zip';
 $string['invalidmanifestresource'] = 'AVÍS: Els següents recursos són al manifest però no s\'han pogut trobar';
-$string['invalidurl'] = 'S\'ha especificat una URL no vàlida';
+$string['invalidurl'] = 'S\'ha especificat un URL no vàlid';
 $string['invalidurlhttpcheck'] = 'L\'URL especificat no és vàlid. Missatge de depuració: <pre> {$a->cmsg} </pre>';
 $string['last'] = 'Darrer accés';
 $string['lastaccess'] = 'Darrer accés';
@@ -256,22 +256,7 @@ $string['package'] = 'Fitxer del paquet';
 $string['packagedir'] = 'S\'ha produït un error del sistema de fitxers: no es pot crear el directori del paquet';
 $string['packagefile'] = 'No s\'ha especificat el fitxer del paquet';
 $string['packagehdr'] = 'Paquet';
-$string['package_help'] = '<p><b>Paquets</b></p>
-
-<p>El paquet és un fitxer amb extensió <b>zip</b> (o pif) que conté fitxers vàlids de definició de cursos AICC o SCORM.</p>
-
-<p>Un paquet <b>SCORM</b> ha de contenir en l\'arrel del zip un fitxer anomenat <b>imsmanifest.xml</b>, el qual defineix l\'estructura del curs SCORM, la ubicació dels recursos i moltes altres coses.</p>
-
-<p>Un paquet <b>AICC</b> consta de diversos fitxers (de 4 a 7) amb extensions predefinides. Ací teniu el significat d\'aquestes extensions:</p>
-   <ul>
-        <li>CRS - Course Description (obligatori)</li>
-        <li>AU  - Assignable Unit (obligatori)</li>
-        <li>DES - Descriptor (obligatori)</li>
-        <li>CST - Course Structure (obligatori)</li>
-        <li>ORE - Objective Relationship (opcional)</li>
-        <li>PRE - Prerequisites (opcional)</li>
-        <li>CMP - Completition Requirements (opcional)</li>
-   </ul>';
+$string['package_help'] = 'El fitxer de paquet és un fitxer zip (o pif) que conté fitxers de definició de curs SCORM/AICC.';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Aquest paràmetre habilita una URL per especificar un paquet SCORM en comptes de seleccionar un fitxer mitjançant el selector de fitxers.';
 $string['page-mod-scorm-x'] = 'Qualsevol plana del mòdul SCORM';
@@ -319,9 +304,9 @@ $string['scormtype'] = 'Tipus';
 $string['scormtype_help'] = 'Aquest paràmetre determina com s\'insereix el paquet en el curs. Teniu fins a 4 opcions:
 
 * Paquet pujat - Permet escollir un paquet SCORM mitjançant el selector de fitxers
-* Manifest extern SCORM - Permet especificar una URL imsmanifest.xml. Nota: Si la URL té un domini diferent al del vostre lloc, llavors "Paquet descarregat" és una millor opció, atès que sinó les qualificacions no es guarden.
-* Paquet descarregat - Permet especificar la URL d\'un paquet. El paquet es descomprimirà i es guardarà localment, i s\'actualitzarà quan s\'actualitzi el paquet SCORM extern.
-* URL AICC externa - aquesta és la URL de llançament d\'una activitat AICC. Es construirà un pseudo-paquet al seu voltant.';
+* Manifest extern SCORM - Permet especificar un URL imsmanifest.xml. Nota: Si l\'URL té un domini diferent al del vostre lloc, llavors «Paquet descarregat» és una millor opció, atès que, si no, les qualificacions no es desen.
+* Paquet descarregat - Permet especificar l\'URL d\'un paquet. El paquet es descomprimirà i es desarà localment, i s\'actualitzarà quan s\'actualitzi el paquet SCORM extern.
+* URL AICC externa - aquest és l\'URL de llançament d\'una activitat AICC. Es construirà un pseudopaquet al seu voltant.';
 $string['scorm:viewreport'] = 'Veure informes';
 $string['scorm:viewscores'] = 'Veure puntuacions';
 $string['scrollbars'] = 'Permet el desplaçament de la finestra';
@@ -398,12 +383,14 @@ $string['viewallreports'] = 'Visualitza informes de {$a} intents';
 $string['viewalluserreports'] = 'Veure els informes de {$a} usuaris';
 $string['whatgrade'] = 'Qualificació dels intents';
 $string['whatgradedesc'] = 'Si s\'enregistra en el butlletí de qualificacions la qualificació més alta, la mitjana, la del primer o la del darrer intent completat, si es permeten diversos intents.';
-$string['whatgrade_help'] = 'Si es permeten múltiples intents, aquest paràmetre especifica si s\'emmagatzemarà al llibre de qualificacions el valor més alt, el promig (la mitja), el primer intent o l\'últim.
+$string['whatgrade_help'] = 'Si es permeten intents múltiples, aquest paràmetre especifica si s\'emmagatzema al llibre de qualificacions el valor més alt, el valor mitjà (la mitjana), el primer intent completat o el darrer. L\'opció del darrer intent completat no inclou intents amb un estat «fallat».
 
-Gestió de Múltiples Intents
+Notes sobre el maneig d\'intents múltiples:
 
-* La possibilitat d\'iniciar un nou intent es troba marcant la casella que es troba a sobre del botó Enter a plana d\'estructura del contingut, així que cal assegurar-se que permet l\'accés a aquesta plana si es vol permetre més d\'un intent.
-*Alguns paquets scorm són intel·ligents sobre els nous intents, però molts altres no. Això vol dir que si l\'estudiant torna a fer un intent, si el contingut SCORM no té una lògica interna per evitar la sobre escriptura dels intents anterior, aquest es poden sobre escriure fins i tot si l\'intent consta com a "completat" o "passat".
-*La configuració de "Forçar completar","Forçar nou intent" i "Bloqueig després de l\'intent final" també milloren la gestió de múltiples intents.';
+*Una casella de selecció que es troba damunt del botó «Entra» a la pàgina de l\'estructura del contingut proporciona l\'opció de començar un nou intent; per tant, assegureu-vos que proporcioneu accés a aquesta pàgina si voleu permetre més d\'un intent.
+
+*Alguns paquets SCORM són intel·ligents pel que fa als nous intents, però molts d\'altres, no. Això vol dir que si l\'estudiant torna a introduir un intent que ja existeix, si el contingut SCORM no té una lògica interna per evitar sobreescriure intents anteriors aquests es poden sobreescriure, encara que l\'intent estigui «completat» o «passat».
+
+*Els paràmetres «Forçar completats», «Forçar nou intent» i «Bloquejar després del darrer intent» també proporcionen una gestió addicional dels intents múltiples.';
 $string['width'] = 'Amplada';
 $string['window'] = 'Finestra';

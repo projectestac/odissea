@@ -302,10 +302,9 @@ $string['partiallycorrect'] = 'Partiellement correct';
 $string['partiallycorrectfeedback'] = 'Pour toute réponse partiellement correcte';
 $string['partiallycorrectfeedbackdefault'] = 'Votre réponse est partiellement correcte.';
 $string['penaltyfactor'] = 'Facteur de pénalité';
-$string['penaltyfactor_help'] = '<!-- $Id$ -->
+$string['penaltyfactor_help'] = 'Ce réglage détermine la fraction de la note obtenue qui sera retirée pour chaque mauvaise réponse donnée. Il n\'est applicable que pour les tests en mode adaptatif.
 
-
-<p>Vous pouvez déterminer, pour chaque mauvaise réponse, quelle proportion de la note obtenue sera retirée. Cela n\'est intéressant que si le test est effectué en mode adaptatif. Ainsi, l\'étudiant peut apporter une nouvelle réponse à la question. Le facteur de pénalité doit être un nombre compris entre 0 et 1. Un facteur de pénalité de 1 signifie que l\'étudiant doit fournir la bonne réponse au premier essai, sous peine de n\'obtenir aucun point. Un facteur de pénalité de 0 indique que l\'étudiant peut réessayer autant qu\'il le veut et pourra obtenir tous les points.</p>';
+Le facteur de pénalité doit être un nombre compris entre 0 et 1. Un facteur de pénalité de 1 signifie que l\'étudiant doit fournir la bonne réponse au premier essai, sous peine de n\'obtenir aucun point. Un facteur de pénalité de 0 indique que l\'étudiant peut réessayer autant qu\'il le veut et pourra obtenir tous les points.';
 $string['penaltyforeachincorrecttry'] = 'Pénalité pour tout essai incorrect';
 $string['penaltyforeachincorrecttry_help'] = 'Lorsque des questions sont en mode « Interactif avec tentatives multiples » ou « Adaptatif », les participants ont plusieurs essais pour trouver la bonne réponse. Cette option contrôle comment ils sont pénalisés pour chaque essai incorrect.
 

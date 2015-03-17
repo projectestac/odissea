@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['background'] = 'fons';
-$string['backgrounddesc'] = 'Canvia la imatge de fons entrant la URL de la nova imatge. (ex: http://www.algunlloc/elmeu fons.jpg).';
+$string['backgrounddesc'] = 'Canvieu la imatge de fons introduint l\'URL de la nova imatge. (ex.: http://www.algunlloc/elmeu fons.jpg).';
 $string['blockcolor'] = 'color del bloc';
 $string['blockcolordesc'] = 'Aquest és el color de la capçalera del bloc.';
 $string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>Magazine</h2><img src="magazine/pix/screenshot.png" /><h3>Fòrum de discussió del tema:</h3><p><a href="http://moodle.org/mod/forum/view.php?id=46">http://moodle.org/mod/forum/view.php?id=46</a></p><h3>Crèdits del tema</h3><p><a href="http://docs.moodle.org/en/Theme_credits">http://docs.moodle.org/en/Theme_credits</a></p><h3>Documentació del tema:</h3><p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a></p><h3>Informa d\'una errada::</h3><p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p></div><div class="theme_description"><h2>En quant a</h2><p>Magazine és una tema d\'amplaria variable i tres columnes per a  Moodle 2.0. <h2>Ajusts</h2><p>Aquest tema ha sigut construït a partir de base i Canvas, dos pares inclosos al nucli de Moodle. Si voleu modificar aquest tema, us recomanem que el dupliqueu, llavors podreu canviar-li el nom abans de fer-hi canvis. Això impedirà que el vostre tema personalitzat sigui sobreescrit en futures actualitzacions. Més informació sobre modificació de temes la podeu trobar a <a href="http://docs.moodle.org/en/Theme">MoodleDocs</a>.</p><h2>Crèdits</h2><p>Aquest tema ha sigut escrit i mantingut per John Stabinger de la NewSchool Learning. Podeu trobar-lo per correu en contact@newschoollearning.com. </p><h2>Llicencia</h2><p>Aquest i tots els altres temes inclosos al nucli de de Moodle estan sota la llicència  <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>. Algunes icones utilitzades en aquest tema són de Splashy Icon i estan disponibles en  http://splashyfish.com/icons/. </div></div>';
@@ -40,7 +40,7 @@ $string['linkcolordesc'] = 'Configura el color dels enllaços al tema, utilitza 
 $string['linkhover'] = 'enllaçperdamunt';
 $string['linkhoverdesc'] = 'Configura el color dels enllaços (en estar-hi per damunt) al tema, utilitza codi html hex.';
 $string['logo'] = 'logotip';
-$string['logodesc'] = 'Canvia el logotip del tema entrant la URL del nou. (Ex: http://www.algunlloc/qualsevolimatge.png). Com a referencia el logotip per defecte té de 300px d\'ample per 80px d\'alt. Una imatge transparent .png funciona molt bé.';
+$string['logodesc'] = 'Canvieu el logotip del tema introduint l\'URL del nou (p. ex.: http://www.algunlloc/qualsevolimatge.png). Com a referència, el logotip per defecte fa 300px d\'amplària per 80px d\'alçària. Una imatge transparent .png funciona molt bé.';
 $string['maincolor'] = 'color principal';
 $string['maincoloraccent'] = 'maincoloraccent';
 $string['maincoloraccentdesc'] = 'Accentua el color de les vores de la barra lateral i la capçalera. Hauria de ser un color lleugerament més fosc que el principal.';

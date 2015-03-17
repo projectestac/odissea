@@ -185,10 +185,10 @@ class mod_jclic_mod_form extends moodleform_mod {
                 $default_values['url'] = $default_values['url'];
             } else{
                 $default_values['filetype'] = JCLIC_FILE_TYPE_LOCAL;
-                $default_values['url'] = $default_values['url'];
+                $default_values['jclicfile'] = $default_values['url'];
+                unset($default_values['url']);
             }
         }
-        unset($default_values['url']);
 
         $this->data_preprocessing($default_values);
         parent::set_data($default_values);

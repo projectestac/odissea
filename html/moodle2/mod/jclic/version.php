@@ -31,9 +31,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014052901;      // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2011033009;      // Requires this Moodle version (2.0)
+$plugin->version   = 2015031300;      // The current module version (Date: YYYYMMDDXX)
+$plugin->requires  = 2013111810;      // Requires this Moodle version (2.0)
 $plugin->cron      = 0;               // Period for cron to check this module (secs)
 $plugin->component = 'mod_jclic';     // To check on upgrade, that module sits in correct place
-$plugin->release   = 'v0.2.4';        // Human-readable version name
+$plugin->release   = 'v0.2.5';        // Human-readable version name
 $plugin->maturity = MATURITY_STABLE;      // How stable the plugin is

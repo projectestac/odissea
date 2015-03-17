@@ -710,28 +710,59 @@ M.util.init_block_hider = function(Y, config) {
                     this.set('block', '#'+this.get('id'));
                     var b = this.get('block'),
                         t = b.one('.title'),
-                        a = null;
+                        a = null,
+                        hide,
+                        show;
                     if (t && (a = t.one('.block_action'))) {
                         //XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
                         //2012.07.31 @aginard (code developed by @abachill)
-                        var hide = Y.Node.create('<span class="block-hider-hide">&#9650;</span>');
                         //************ ORIGINAL
+                        hide = Y.Node.create('<span>&#9650;</span>')
+                            .addClass('block-hider-hide')
+                            .setAttrs({
+                                alt:        config.tooltipVisible,
+                                src:        this.get('iconVisible'),
+                                tabindex:   0,
+                                'title':    config.tooltipVisible
+                            });
                         /*
-                        var hide = Y.Node.create('<img class="block-hider-hide" tabindex="0" alt="'+config.tooltipVisible+'" title="'+config.tooltipVisible+'" />');
+                        hide = Y.Node.create('<img />')
+                            .addClass('block-hider-hide')
+                            .setAttrs({
+                                alt:        config.tooltipVisible,
+                                src:        this.get('iconVisible'),
+                                tabindex:   0,
+                                'title':    config.tooltipVisible
+                            });
                         */
-                        //************ FI                
-                        hide.setAttribute('src', this.get('iconVisible')).on('click', this.updateState, this, true);
+                        //************ FI
                         hide.on('keypress', this.updateStateKey, this, true);
+                        hide.on('click', this.updateState, this, true);
                         //XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
                         //2012.07.31 @aginard (code developed by @abachill)
-                         var show = Y.Node.create('<span class="block-hider-show">&#9660;</span>');
+                        show = Y.Node.create('<span>&#9660;</span>')
+                            .addClass('block-hider-show')
+                            .setAttrs({
+                                alt:        config.tooltipHidden,
+                                src:        this.get('iconHidden'),
+                                tabindex:   0,
+                                'title':    config.tooltipHidden
+                            });
                         //************ ORIGINAL
                         /*
-                        var show = Y.Node.create('<img class="block-hider-show" tabindex="0" alt="'+config.tooltipHidden+'" title="'+config.tooltipHidden+'" />');
+                        show = Y.Node.create('<img />')
+                            .addClass('block-hider-show')
+                            .setAttrs({
+                                alt:        config.tooltipHidden,
+                                src:        this.get('iconHidden'),
+                                tabindex:   0,
+                                'title':    config.tooltipHidden
+                            });
                         */
-                        //************ FI                
-                        show.setAttribute('src', this.get('iconHidden')).on('click', this.updateState, this, false);
+                        //************ FI
                         show.on('keypress', this.updateStateKey, this, false);
+                        show.on('click', this.updateState, this, false);
+
                         a.insert(show, 0).insert(hide, 0);
                     }
                 },

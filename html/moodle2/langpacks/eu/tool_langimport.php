@@ -38,7 +38,7 @@ $string['missingcfglangotherroot'] = '$CFG->langotherroot konfigurazio-balorea f
 $string['missinglangparent'] = 'Ez dago <em>{$a->lang}</em>-ren <em>{$a->parent}</em> goragoko hizkuntzarik.';
 $string['nolangupdateneeded'] = 'Hizkuntza-pakete guztiak eguneratuta daude: ez dago eguneratu beharrik.';
 $string['pluginname'] = 'Hizkuntza-paketeak';
-$string['remotelangnotavailable'] = 'Moodle-k ezin du download.moodle.org-ekin konektatu eta beraz ezin hizkuntza-paketea automatikoki instalatu. Mesedez, jaitsi http://download.moodle.org -tik fitxategi egokiak, kopia itzazu zure {$a} direktorioan eta eskuz deskonprimatu.';
+$string['remotelangnotavailable'] = 'Moodle-k ezin du download.moodle.org-ekin konektatu eta beraz ezin hizkuntza-paketea automatikoki instalatu. Mesedez, jaitsi  <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>-tik fitxategi egokiak, kopia itzazu zure {$a} direktorioan eta eskuz deskonprimatu.';
 $string['uninstall'] = 'Aukeratutako hizkuntza-paketea desinstalatu';
 $string['uninstallconfirm'] = '{$a} hizkuntza desinstalatzera zoaz; ziur al zaude?';
 $string['updatelangs'] = 'Instalatutako hizkuntza-pakete guztiak eguneratu';

@@ -3,6 +3,7 @@ require_once('../../config.php');
 require_once("{$CFG->libdir}/formslib.php");
 require_once($CFG->libdir.'/adminlib.php');
 require_once('forms.php');
+require_once('locallib.php');
 
 require_login();
 
@@ -33,7 +34,7 @@ switch ($action) {
 		} else if ($fromform=$bform->get_data() and confirm_sesskey()) {
 			//get values
 			$record = new stdClass();
-			$record->redirect_uri = $fromform->redirect_uri;
+			$record->redirect_uri = oauth_no_ssl_url($fromform->redirect_uri);
 			$record->grant_types = $fromform->grant_types;
 			$record->scope = $fromform->scope;
 			$record->user_id = $fromform->user_id ? $fromform->user_id :'';
@@ -60,7 +61,7 @@ switch ($action) {
         //set values
 		if (isset($client_edit)) {
 		    $form->client_id           = $client_edit->client_id;
-			$form->redirect_uri        = $client_edit->redirect_uri;
+			$form->redirect_uri        = oauth_no_ssl_url($client_edit->redirect_uri);
 			$form->grant_types         = $client_edit->grant_types;
 			$form->scope 			   = $client_edit->scope;
 			$form->user_id 			   = $client_edit->user_id;
@@ -68,14 +69,36 @@ switch ($action) {
 		} else {
 			$form->client_id                = "";
 			$form->redirect_uri                = "";
-			$form->grant_types = "";
-			$form->scope  = "";
-			$form->user_id            = "";
+			$form->grant_types = "authorization_code";
+			$form->scope  = "user_info";
+			$form->user_id            = "0";
 			$form->action              = 'add';
 		}
 	    $bform->set_data($form);
 	    $bform->display();
 
+		break;
+	case 'addwordpress':
+		$bform = new local_oauth_clients_wp_form();
+		if ($bform->is_cancelled()) {
+			$view_table = true;
+			break;
+		} else if ($fromform=$bform->get_data() and confirm_sesskey()) {
+			if (!oauth_add_wordpress_client($fromform->client_id, $fromform->url)) {
+				print_error('insert_error', 'local_oauth');
+			}
+			echo $OUTPUT->notification(get_string('saveok', 'local_oauth'), 'notifysuccess');
+			$view_table = true;
+			break;
+		}
+	    $bform->display();
+		break;
+	case 'addnodes':
+		if (!oauth_add_wordpress_client('nodes', get_service_url('nodes'))) {
+			print_error('insert_error', 'local_oauth');
+		}
+		echo $OUTPUT->notification(get_string('saveok', 'local_oauth'), 'notifysuccess');
+		$view_table = true;
 		break;
 	case 'del':
 		//get values
@@ -111,7 +134,19 @@ switch ($action) {
 }
 
 if ($view_table) {
-	echo '<p><input onclick="document.location.href=\'index.php?action=add\';" type="submit" value="'.get_string('addclient', 'local_oauth').'" /></p>';
+	echo '<p>';
+	if (function_exists('is_agora') && is_agora()) {
+		if (is_service_enabled('nodes') && !$DB->record_exists('oauth_clients', array('client_id' => 'nodes'))) {
+			echo '<a href="index.php?action=addnodes" class="btn btn-primary" style="margin-right: 10px;">'.get_string('addnodesclient', 'local_oauth').'</a>';
+		}
+		echo '<a href="index.php?action=addwordpress" class="btn btn-primary" style="margin-right: 10px;">'.get_string('addwordpressclient', 'local_oauth').'</a>';
+		echo '<a href="index.php?action=add" class="btn">'.get_string('addotherclient', 'local_oauth').'</a>';
+	} else {
+		echo '<a href="index.php?action=add" class="btn">'.get_string('addclient', 'local_oauth').'</a>';
+	}
+
+
+	echo '</p>';
 
 	$clients = $DB->get_records('oauth_clients');
 

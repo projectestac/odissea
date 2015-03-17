@@ -36,7 +36,7 @@ $string['address'] = 'Adresse';
 $string['addsite'] = 'Website hinzufügen';
 $string['allcachesinvalidated'] = 'Alle Caches sind ungültig';
 $string['allcachespurged'] = 'Cache gelöscht';
-$string['appstoredescription'] = 'Die offizielle Moodle Mobile App funktioniert nur mit Moodle-Websites, wenn sie für mobile Dienste freigeschaltet wurden. Bei Problemen sprechen Sie bitte mit Ihrem Moodle-Administrator.
+$string['appstoredescription'] = 'Die offizielle Moodle Mobile App funktioniert nur mit Moodle-Websites, wenn die mobilen Dienste freigeschaltet wurden. Bei Problemen sprechen Sie bitte mit Ihrem Moodle-Administrator.
 
 Wenn Ihr Moodle richtig konfiguriert wurde, können Sie die App für folgende Aufgaben verwenden:
 
@@ -49,13 +49,24 @@ Wenn Ihr Moodle richtig konfiguriert wurde, können Sie die App für folgende Au
 
 Bitte lesen Sie aktuelle Informationen auf   http://docs.moodle.org/de/Mobile_app .
 
-Über gute Kritiken und Ihre Anregungen würden wir uns freuen.';
+Über gute Kritiken und Ihre Anregungen würden wir uns freuen.
+
+
+Die App benötigt folgende Systemrechte auf dem mobilen Gerät:
+- Audio-, Foto- und Video-Aufnahme
+- Lese- und Schreibzugriff auf die SD-Card
+- Netzwerkzugriff
+- Run at Startup, um Nachrichten im Hintergrund empfangen zu können
+- Ruhemodus verhindern, um Push-Nachrichten jederzeit empfangen zu können';
 $string['areyousurereset'] = 'Möchten Sie Moodle Mobile wirklich zurücksetzen? Alle gespeicherten Websites werden gelöscht.';
 $string['audionotavailable'] = 'Keine Hardware zur Audioeingabe vorhanden';
 $string['audiorecordinstructions'] = 'Audiodatei aufnehmen und hochladen';
 $string['authenticating'] = 'Wird authentifiziert...';
 $string['author'] = 'Autor/in';
+$string['average'] = 'Durchschnitt';
 $string['back'] = 'Zurück';
+$string['blockcontact'] = 'Kontakt blockieren';
+$string['blockedusers'] = 'Blockierte Kontakte ({$a})';
 $string['browsephotoalbums'] = 'Fotos';
 $string['cacheexpirationtime'] = 'Cache-Dauer (Millisekunden)';
 $string['cancel'] = 'Abbrechen';
@@ -70,10 +81,12 @@ $string['confirmcontinuedownload'] = 'Möchten Sie die Datei wirklich herunterla
 $string['confirmdeletetask'] = 'Möchten Sie diesen Prozess wirklich löschen?';
 $string['contact'] = 'Kontakt';
 $string['contactadd'] = 'Kontakt in die Kontaktliste hinzugefügt';
+$string['contacts'] = 'Kontakte';
 $string['content'] = 'Inhalt';
 $string['contents'] = 'Inhalte';
 $string['contentyetnotavailable'] = 'Diese Aktivität wird nicht von Moodle Mobile unterstützt.';
 $string['continue'] = 'Fortsetzen';
+$string['contributiontocoursetotal'] = 'Beitrag zum Kurs';
 $string['country'] = 'Land';
 $string['course'] = 'Kurs';
 $string['coursename'] = 'Kursname';
@@ -88,6 +101,7 @@ $string['description'] = 'Beschreibung';
 $string['details'] = 'Details';
 $string['development'] = 'Entwicklung';
 $string['deviceinfo'] = 'Geräteinformation';
+$string['disablenotificationforevent'] = 'Mitteilungen zu diesem Event deaktivieren';
 $string['disablenotifications'] = 'Mitteilungen deaktivieren';
 $string['disablerdebugger'] = 'Remote-Debugging deaktivieren';
 $string['discussions'] = 'Themen';
@@ -102,10 +116,12 @@ $string['enableautosynclang'] = 'Synchronisation von Sprachdateien';
 $string['enableautosyncws'] = 'Synchronisation von Anweisungen und Daten';
 $string['enablecss3transitions'] = 'CSS3-Transitions';
 $string['enabledebugging'] = 'Debugging';
+$string['enableeventnotifications'] = 'Mitteilungen zu Events aktivieren';
 $string['enablenotifications'] = 'Mitteilungen aktivieren';
 $string['enablenotificationscheck'] = '<p>Prüfen Sie, ob Ihre Website mobile Mitteilungen unterstützt. Melden Sie in Ihrer Website an und öffnen Sie \'Einstellungen > Mein Profil > Mitteilungen\'. Wenn die mobilen Mitteilungen aktiviert sind, sollten Sie eine entsprechende Spalte sehen.</p>';
 $string['enablenotificationswarning'] = '<p>Um die mobilen Mitteilungen zu nutzen, müssen Informationen über Ihr mobiles Endgerät in Moodle gespeichert sein. </p>';
 $string['enablerdebugger'] = 'Remote-Debugging aktivieren';
+$string['enablesyncwifi'] = 'Synchronisation nur bei Wifi erlauben';
 $string['error'] = 'Fehler';
 $string['errorcamera'] = 'Fehler beim Kamerazugriff';
 $string['errorcameramsg'] = 'Das Gerät unterstützt keine Kamera.';
@@ -149,8 +165,10 @@ $string['invalidaccount'] = 'Prüfen Sie Ihre Anmeldedaten oder wenden Sie sich 
 $string['invalidmoodleversion'] = 'Notwendig ist mindestens die Moodle-Version:';
 $string['invalidscheme'] = 'Geben Sie eine gültige URL an.';
 $string['invalidsite'] = 'Die URL der Website ist falsch.';
+$string['itemname'] = 'Bewertungselement';
 $string['keepsynchronising'] = 'Beiträge mit dem Server synchronisieren';
 $string['language'] = 'Sprache';
+$string['lettergrade'] = 'Buchstabenwertung';
 $string['license'] = 'Lizenz';
 $string['loadcordovaemulator'] = 'Cordova-Emulator laden';
 $string['loading'] = 'Wird geladen...';
@@ -161,6 +179,7 @@ $string['logout'] = 'Abmelden';
 $string['lostconnection'] = 'Verbindung unterbrochen. Ihr Token ist ungültig.';
 $string['manageaccounts'] = 'Konten verwalten';
 $string['message'] = 'Nachricht';
+$string['messages'] = 'Nachrichten';
 $string['messagesent'] = 'Nachricht gesendet';
 $string['minutes'] = 'Minuten';
 $string['mobileservicesnotenabled'] = 'Mobile Webservices sind für dieses Moodle nicht aktiviert. Bitte sprechen Sie mit Ihrem Administrator, wenn Sie den mobilen Zugriff aktiviert haben möchten.';
@@ -174,6 +193,8 @@ $string['networkerror'] = 'Kein Netzwerk';
 $string['networkerrormsg'] = 'Kein Netzwerk oder fehlerhaft';
 $string['next'] = 'Weiter';
 $string['no'] = 'Nein';
+$string['noevents'] = 'Keine Events';
+$string['nomessagesfound'] = 'Keine Nachrichten';
 $string['norefreshdisconnected'] = 'Die Option \'Aktualisieren\' erfordert eine Netzwerkverbindung.';
 $string['notaskstobesynchronized'] = 'Kein Prozess zum Synchronisieren';
 $string['noteadded'] = 'Hinweis hinzugefügt';
@@ -182,8 +203,14 @@ $string['notificationpreferencesnotconfigured'] = 'Die Einstellungen für mobile
 $string['notifications'] = 'Mitteilungen';
 $string['notificationsdisabled'] = 'Mitteilungen sind deaktiviert';
 $string['notificationsenabled'] = 'Mitteilungen für alle Ihre Moodle aktiviert';
+$string['nousersfound'] = 'Keine Nutzer/innen';
+$string['offlinecontacts'] = 'Offline Kontakte ({$a})';
 $string['offlinemode'] = 'Offline';
 $string['ok'] = 'OK';
+$string['onlinecontacts'] = 'Online Kontakte ({$a})';
+$string['openinbrowser'] = 'Im Browser öffnen';
+$string['others'] = 'Andere';
+$string['participant'] = 'Person';
 $string['participants'] = 'Personen';
 $string['password'] = 'Kennwort';
 $string['passwordlabel'] = 'Kennwort';
@@ -198,11 +225,13 @@ $string['previous'] = 'Zurück';
 $string['privatefiles'] = 'Meine Dateien';
 $string['purgecaches'] = 'Cache löschen';
 $string['range'] = 'Bandbreite';
+$string['rank'] = 'Rang';
 $string['rdebuggingenabledfor'] = 'Remote-Debugging ist für Sekunden aktiviert:';
 $string['record'] = 'Aufnahme';
 $string['recordaudio'] = 'Audio';
 $string['recordstored'] = 'Die Aufnahme wurde in \'Meine Dateien\' gesichert.';
 $string['remotesystemnotconfiguredfornotifications'] = 'Moodle ist nicht für das Senden von mobilen Mitteilungen konfiguriert. Wenden Sie sich an Ihren Administrator, falls Sie die mobilen Mitteilungen aktiviert haben möchten.';
+$string['removecontact'] = 'Kontakt entfernen';
 $string['replay'] = 'Wiederholung';
 $string['reply'] = 'Antworten';
 $string['reportabug'] = 'Fehler melden';
@@ -222,6 +251,7 @@ $string['sendnow'] = 'Senden';
 $string['settings'] = 'Einstellungen';
 $string['showall'] = 'Alles anzeigen';
 $string['showlog'] = 'Logdaten anzeigen';
+$string['showmore'] = 'Mehr anzeigen';
 $string['siteexists'] = 'Diese Website ist bereits vorhanden.';
 $string['sitefiles'] = 'Dateien';
 $string['siteinmaintenance'] = 'Die Website ist im Wartungsmodus.';
@@ -262,11 +292,13 @@ $string['usernamerequired'] = 'Anmeldename notwendig';
 $string['video'] = 'Video';
 $string['videofilenameprefix'] = 'mobile-video';
 $string['videostored'] = 'Das Video wurde in \'Meine Dateien\' gesichert.';
+$string['view'] = 'Anzeigen';
 $string['viewableonthisapp'] = 'Anzeige in der App';
 $string['warning'] = 'Warnung';
 $string['webservicesnotenabled'] = 'Webservices sind für diese Website nicht aktiviert. Bitte sprechen Sie mit Ihrem Administrator, wenn Sie den mobilen Zugriff aktiviert haben möchten.';
 $string['webservicesuccessfullyexecuted'] = 'Webservice erfolgreich ausgeführt';
 $string['website'] = 'Website';
+$string['weight'] = 'Gewichtung';
 $string['welcome'] = 'Willkommen bei Moodle Mobile';
 $string['writeherethebug'] = 'Beschreiben Sie das Problem bitte möglichst genau.';
 $string['years'] = 'Jahre';

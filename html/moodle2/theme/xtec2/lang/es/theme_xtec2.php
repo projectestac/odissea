@@ -111,3 +111,16 @@ $string['pluginname'] = 'XTEC2';
 
 $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';
+
+//Advices
+$string['advices'] = 'Avisos';
+$string['alert_message'] = 'Mensaje';
+$string['advices_admin'] = 'Aviso para administradores';
+$string['advices_user'] = 'Aviso para todos';
+$string['alert_start'] = 'Muestra el mensaje a partir de esta fecha';
+$string['alert_start_desc'] = 'Dejar en blanco si se quiere mostrar a partir de ahora. Formato YYYYmmdd';
+$string['alert_end'] = 'Muestra el mensaje hasta esta fecha';
+$string['alert_end_desc'] = 'Dejar en blanco si se quiere mostrar para siempre. Formato YYYYmmdd';
+$string['agora_alert_message_desc'] = 'Mostrar un mensaje para todos en la parte superior del area de bloques';
+$string['admin_alert_message_desc'] = 'Mostrar un mensaje a los administradores en la parte superior del area de bloquesMostra un missatge als administradors al capdamunt de l\'area de blocs';
+$string['show_admins'] = 'Este mensaje solo se muestra a los administradores del sitio';

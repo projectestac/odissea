@@ -61,8 +61,13 @@ if($COURSE->format == 'simple'){
     }
 }
 
-$showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
-$showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
+if ($PAGE->user_is_editing()) {
+    $showsidepre = $PAGE->blocks->is_known_region('side-pre');
+    $showsidepost = $PAGE->blocks->is_known_region('side-post');
+} else {
+    $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
+    $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
+}
 
 if($showsidepre && $showsidepost){
     $showhidebutton = true;
@@ -89,6 +94,8 @@ if($showsidepre && $showsidepost){
     $spanmainpost = 12;
     $spanpost = 0;
 }
+
+
 
 if (right_to_left()) {
     $regionbsid = 'region-bs-main-and-post';

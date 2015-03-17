@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['event_recording_deleted'] = 'Enregistrement supprimé';
+$string['event_recording_published'] = 'Enregistrement publié';
+$string['event_recording_unpublished'] = 'Enregistrement non publié';
+$string['event_resource_page_viewed'] = 'Page des enregistrements consultée';
 $string['modulename'] = 'Enregistrements BBB';
 $string['modulename_help'] = 'Utilisez le module « Enregistrements BBB » pour voir les enregistrements de conférences BigBlueButton';
 $string['modulename_link'] = 'BigBlueButton';

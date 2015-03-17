@@ -125,30 +125,23 @@ $string['enableemailnotification_help'] = 'Si s\'habilita, els alumnes rebran un
 $string['errormisconfig'] = 'Eina no configurada. Si us plau demaneu a l\'administrador de Moodle de fixar la configuració de l\'eina.';
 $string['extensions'] = 'Serveis d\'extensió LTI';
 $string['external_tool_type'] = 'Tipus d\'eina externa';
-$string['external_tool_type_help'] = 'El propòsit principal de la configuració de l\'eina es establir un canal de comunicació segur entre Moodle i el proveïdor de l\'eina.
+$string['external_tool_type_help'] = 'El propòsit principal de la configuració de l\'eina és establir un canal de comunicació segur entre Moodle i el proveïdor de l\'eina. També proporciona l\'oportunitat de configurar les opcions per defecte i els possibles serveis addicionals de l\'eina.
 
-Això proporciona una oportunitat per les configuracions per defecte i aixecar serveis addicionals proporcionats per l\'eina.
+* **Automàtica, basada en l\'URL de llançament** - Aquest paràmetre pot ser utilitzat en la majoria de casos. Moodle seleccionarà la configuració més adequada per a l\'eina basada en l\'URL de llançament. S\'utilitzaran tant eines configurades per un administrador com dins d\'aquest curs.
+Quan s\'especifica l\'URL de llançament, Moodle informa si el reconeix o no. Si Moodle no reconeix l\'URL de llançament, haureu d\'introduir els detalls de configuració de l\'eina de forma manual.
 
-* **Automàtica, basada en el llançament de URL** - Aquest paràmetre pot ser utilitzats en la majoria de casos. Moodle selecciona la configuració més adequada per l\'eina basada en el llançament  URL. eines configurades per un administrador o dins d\'aquest curs poden utilitzar-se.
+* **Un tipus específic d\'eina** - Si seleccioneu un tipus específic d\'eina, podeu imposar a Moodle una configuració de l\'eina quan es comuniqui amb el proveïdor extern de l\'eina. Si l\'URL de llançament no sembla pertànyer al proveïdor de l\'eina es mostrarà un missatge d\'avís. En alguns casos no cal introduir un URL de llançament quan es defineix un tipus d\'eina específic (sempre que no es llanci un recurs particular dins del proveïdor de l\'eina).
 
-Quan el llançament URL s\'especifica, Moodle proporciona realimentació. Si Moodle no reconeix el llançament URL us caldrà entrar la configuració de l\'eina de forma manual.
-
-* **Un tipus d\'eina especifica** - Si seleccioneu un tipus d\'eina especifica, podeu forçar Moodle a utilitzar la configuració de l\'eina quan es comuniqui amb el proveïdor de l\'eina externa.
-
-Si la URL de llançament no pareix pertànyer al proveïdor de l\'eina es mostrarà un missatge d\'avís. En alguns casos no cal entrar una URL de llançament quan es proporciona un tipus especific d\'eina.
-
-* **Configuració personalitzada** - Per configurar els paràmetres de configuració de l\'eina, Mostreu Opcions avançades, i entreu la clau i la contrasenya. Si no teniu una clau i contrasenya se us demanarà que ompliu un formulari del subministrador de servei.
-No tots els serveis requereixen una clau i una contrasenya, i en aquests casos els camps es deixaran sense omplir.
+* **Configuració personalitzada** - Per a una configuració personalitzada de l\'eina només en aquesta instància, visualitzeu les Opcions avançades i introduïu la clau de consumidor i el secret compartit. Si no teniu una clau de consumidor i un secret compartit, els hauríeu de poder sol·licitar al proveïdor de l\'eina.
+No totes les eines requereixen una clau de consumidor i un secret compartit, casos en els quals es poden deixar en blanc aquests camps.
 
 ### Edició de tipus d\'eina
 
-Es mostraran tres icones després del menú desplegable:
+Es mostraran tres icones després del menú desplegable de Tipus d\'eina externa:
 
-* **Afegeix** - Crea una configuració d\'eina al curs. Tots les instàncies d\'eina externa en aquest curs podran utilitzar la configuració de l\'eina.
-
- * **Edita** - Selecciona un tipus d\'eina per al curs de la llista, prem aquesta icona. Els detalls de la configuració de l\'eina es poden editar.
-
- * **Suprimeix** - Suprimeix el tipus d\'eina al curs seleccionat.';
+* **Afegeix** - Crea una configuració d\'eina al nivell del curs. Totes les instàncies d\'eina externa en aquest curs podran utilitzar la configuració de l\'eina.
+* **Edita** - Seleccioneu en la llista un tipus d\'eina del nivell del curs i després premeu aquesta icona. Els detalls de la configuració de l\'eina es poden editar.
+* **Suprimeix** - Suprimeix el tipus d\'eina del nivell del curs.';
 $string['external_tool_types'] = 'Tipus d\'eines externes';
 $string['failedtoconnect'] = 'Moodle no pot comunicar-se amb el sistema "{$a}"';
 $string['filter_basiclti_configlink'] = 'Configureu els vostres llocs favorits i les contrasenyes.';
@@ -170,7 +163,7 @@ $string['generaltool'] = 'Eina general';
 $string['global_tool_types'] = 'Tipus d\'eina globals';
 $string['grading'] = 'Encaminament de la qualificació';
 $string['icon_url'] = 'URL de l\'icona';
-$string['icon_url_help'] = 'La URL de la icona permet a la icona mostrar el llistat del curs per a aquesta activitat per a ser modificat. En lloc d\'utilitzar la icona per defecte, es mostrarà una icona que transporta el tipus d\'activitat.';
+$string['icon_url_help'] = 'L\'URL de la icona permet a la icona mostrar el llistat del curs per a aquesta activitat per a ser modificat. En lloc d\'utilitzar la icona per defecte, es mostrarà una icona que transporta el tipus d\'activitat.';
 $string['id'] = 'id';
 $string['invalidid'] = 'La identificació de LTI és incorrecta';
 $string['launch_in_moodle'] = 'Llança l\'eina en moodle';
@@ -191,11 +184,11 @@ Depenent del navegador es possible que s\'obrin finestres emergents o pestanyes.
 Es possible que alguns navegadors bloquegin l\'obertura de finestres noves.';
 $string['launchoptions'] = 'Opcions de llançament';
 $string['launch_url'] = 'URL de llançament';
-$string['launch_url_help'] = 'La URL de llançament indica l\'adreça web de l\'eina externa, i pot tindre informació addicional com algun recurs per visualitzar.
+$string['launch_url_help'] = 'L\'URL de llançament indica l\'adreça web de l\'eina externa, i pot contenir informació addicional, com ara algun recurs per mostrar.
 
-Si no esteu segurs de quina URL de llançament posar, comproveu el proveïdor de l\'eina per cercar més informació.
+Si no esteu segurs de què heu d\'introduir per a l\'URL de llançament, consulteu el proveïdor de l\'eina per a més informació.
 
-Si heu seleccionat un tipus especific d\'eina, pot ser no us cal posar la URL. Es pot donar el cas que l\'enllaç de l\'eina s\'utilitzi per llançar al sistema del proveïdor, i no a un recurs especific';
+Si heu seleccionat un tipus específic d\'eina, pot ser no us cal introduir un URL de llançament. Probablement es doni el cas que l\'enllaç de l\'eina només s\'utilitzi per executar-se en el sistema del proveïdor de l\'eina, i no per anar a un recurs específic.';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Qualifica activitats LTI';
 $string['lti:addinstance'] = 'Afegeix una activitat LTI nova';
@@ -204,13 +197,9 @@ $string['lti_errormsg'] = 'L\'eina ha retornat el següent missatge d\'error: "{
 $string['lti:grade'] = 'Qualifica activitats LTI';
 $string['lti_launch_error'] = 'Ha succeït un error quan es llançava l\'eina externa.';
 $string['lti_launch_error_tool_request'] = '<p> Per enviar una petició a un administrador completeu la configuració de l\'eina, premeu<a href="{$a->admin_request_url}" target="_top">aquí</a>. </p>';
-$string['lti_launch_error_unsigned_help'] = '<p>
-Aquest error pot ser resultat de la manca de la clau i de la contrasenya al proveïdor de l\'eina.
- </p>
-<p>
-Si teniu la clau i la contrasenya cal que l\'entreu quan s\'estigui editant l\'instància de l\'eina externa ( comproveu que les opcions avançades són visibles).<br />
-De forma alternativa, podeu crear una configuració per l\'eina del curs <a href="{$a->course_tool_editor}">aquí</a>.
- </p>';
+$string['lti_launch_error_unsigned_help'] = '<p>Aquest error pot ser resultat de la manca d\'una clau de consumidor i una contrasenya secreta compartida per al proveïdor de l\'eina.</p>
+<p>Si teniu la clau de consumidor i la contrasenya secreta compartida, cal que l\'introduïu quan editeu la instància de l\'eina externa (comproveu que les opcions avançades són visibles).</p>
+<p>De forma alternativa, podeu crear una configuració de proveïdor de l\'eina al nivell del curs <a href="{$a->course_tool_editor}">aquí</a>.</p>';
 $string['lti:manage'] = 'Esdevingues professor quan l\'eina es llanci';
 $string['lti:requesttooladd'] = 'Envia una eina als admins per configurar';
 $string['lti_tool_request_added'] = 'La petició de configuració de l\'eina ha sigut enviat amb èxit. Podeu contactar amb l\'administrador per completar la configuració de l\'eina.';
@@ -218,15 +207,15 @@ $string['lti_tool_request_existing'] = 'Una configuració d\'eina per al domini 
 $string['ltiunknownserviceapicall'] = 'Crida API a servei de LTI desconegut';
 $string['lti:view'] = 'Llança activitats d\'eines externes';
 $string['main_admin'] = 'Ajuda general';
-$string['main_admin_help'] = 'Les eines externes permeten als usuaris de Moodle interactuar de forma fluida amb recursos situats en servidors remots. Mitjançant un protocol de llançament especial, l\'eina remota té accés a informació general sobre l\'usuari que la llança. Per exemple, el nom de la institució, la ID del curs, la ID de l\'usuari, i altres informacions com el nom de l\'usuari o l\'adreça de correu electrònic.
+$string['main_admin_help'] = 'Les eines externes permeten als usuaris de Moodle interaccionar de forma fluida amb recursos d\'aprenentatge allotjats de manera remota. Mitjançant un protocol de llançament especial, l\'eina remota té accés a informació general sobre l\'usuari que l\'executa; per exemple, el nom de la institució, l\'ID del curs, l\'ID de l\'usuari, i altres informacions com el nom de l\'usuari o l\'adreça de correu electrònic.
 
-Els tipus d\'eines llistades en aquesta pàgina estan en tres categories:
+Els tipus d\'eines enumerades en aquesta pàgina es divideixen en tres categories:
 
-* **Activa** - Aquest proveïdor d\'eines ha sigut aprovat i configurat per l\'administrador. Pot utilitzar-se dins de qualsevol curs de Moodle. Si la clau i la contrasenya han sigut entrades, s\'ha establert una relació entre Moodle i l\'eina remota, proporcionant un canal segur de comunicació.
-
-* **Pendent** - Aquest proveïdor d\'eines ha enviat un paquet, però no ha sigut configurat per l\'administrador. Els professors poden utilitzar eines d\'aquests proveïdors si tenen una clau i una contrasenya, o si  no en cal.
-
-* **Rebutjat** - Aquest proveïdor d\'eines ha sigut marcat per un administrador de Moodle com no recomanable per un us global dins Moodle. Els professors poden utilitzar eines de d\'aquest proveïdor si tenen la clau i la contrasenya, o si no en cal.';
+* **Activa** —Aquests proveïdors d\'eines han estat aprovats i configurats per un administrador. Es poden utilitzar des de dins de qualsevol curs en aquesta instància de Moodle. Si s\'introdueixen una clau de consumidor i una contrasenya secreta compartida, s\'estableix una relació de confiança entre aquesta instància de Moodle i l\'eina remota, de manera que es proporciona un canal de comunicació segur.
+* **Pendent** —Aquests proveïdors d\'eines han entrat a través de la importació d\'un paquet, però no han estat configurats per un administrador.
+Amb tot, els professors poden emprar eines d\'aquests proveïdors si tenen una clau de consumidor i una contrasenya secreta compartida, o si no en cal cap.
+* **Rebutjada** —Aquests proveïdors d\'eines han estat marcats com aquells que un administrador no té intenció de posar a disposició de tota la instància Moodle.
+Amb tot, els professors poden emprar eines d\'aquests proveïdors si tenen una clau de consumidor i una contrasenya secreta compartida, o si no en cal cap.';
 $string['miscellaneous'] = 'Miscel·lania';
 $string['misconfiguredtools'] = 'S\'han detectat instàncies d\'eina sense configurar.';
 $string['missingparameterserror'] = 'Aquesta pàgina no està configurada: "{$a}"';
@@ -262,7 +251,7 @@ $string['organizationid_help'] = 'Un únic identificador per a aquesta instànci
 
 Si deixeu aquest camp en blanc s\'utilitzarà el nom del servidor del vostre lloc Moodle per defecte.';
 $string['organizationurl'] = 'URL de l\'organització';
-$string['organizationurl_help'] = 'La URL base per aquesta instància de Moodle.
+$string['organizationurl_help'] = 'L\'URL base per a aquesta instància de Moodle.
 
 Si deixeu aquest camp en blanc, s\'utilitzarà el valor per defecte en la configuració del lloc.';
 $string['pagesize'] = 'Enviaments mostrats a la pàgina';
@@ -271,13 +260,14 @@ $string['password_admin'] = 'Contrasenya (admin)';
 $string['password_admin_help'] = 'La contrasenya s\'utilitza per autenticar l\'usuari en l\'accés a l\'eina. Es sol proporcionar amb una clau pel proveïdor de l\'eina.
 
 Les eines que no demanen comunicació segura amb Moodle i no proporcionen serveis addicionals (com informes de qualificacions) poden no exigir una contrasenya.';
-$string['password_help'] = 'Per les eines preconfigurades, no cal entrar la contrasenya aquí, si la contrasenya ha sigut proporcionada com a part del procés de configuració.
+$string['password_help'] = 'Per a les eines preconfigurades, no cal introduir una contrasenya secreta compartida, ja que aquesta es proporcionarà com a part del procés de configuració.
 
-El camp hauria d\'entrar-se si la creació de l\'enllaç al proveïdor de l\'eina no ha sigut configurat realment. Si l\'eina s\'utilitza més d\'una vegada en aquest curs, es una bona idea afegir una configuració d\'eina per al curs.
+Aquest camp s\'hauria d\'introduir si es crea un enllaç a un proveïdor d\'eina que no s\'ha configurat ja.
+Si el proveïdor de l\'eina s\'ha d\'utilitzar més d\'una vegada en aquest curs, és una bona idea afegir una configuració d\'eina per al curs.
 
-La contrasenya s\'utilitza per autenticar l\'accés a l\'eina. Es sol proporcionar amb una clau pel proveïdor de l\'eina.
+Podem considerar la contrasenya secreta compartida com una contrasenya emprada per autenticar l\'accés a l\'eina. El proveïdor de l\'eina l\'hauria de proporcionar juntament amb la clau de consumidor.
 
-Les eines que no requereixen una comunicació segura amb Moodle i que no proporcionen serveis addicionals ( com els informes de qualificacions) no els cal la contrasenya.';
+Potser que a les eines que no requereixen una comunicació segura amb Moodle i que no proporcionen serveis addicionals (com els informes de qualificacions) no els calgui la contrasenya secreta compartida.';
 $string['pending'] = 'Pendent';
 $string['pluginadministration'] = 'Gestió de LTI';
 $string['pluginname'] = 'LTI';
@@ -287,7 +277,7 @@ $string['preferwidth'] = 'Amplada preferida';
 $string['press_to_submit'] = 'Prem per llaçar aquesta activitat';
 $string['privacy'] = 'Privacitat';
 $string['quickgrade'] = 'Permet la qualificació fàcil';
-$string['quickgrade_help'] = 'Si s\'habilita, eines múltiples podran qualificar en cada pàgina. Afegeix qualificacions i comentaris i llavors prem el botó "Desa tota la meva realimentació" per desar tots els canvis per aquesta pàgina.';
+$string['quickgrade_help'] = 'Si s\'habilita, es podran qualificar múltiples eines en cada pàgina. Afegiu qualificacions i comentaris i llavors premeu el botó "Desa tota la meva retroacció" per desar tots els canvis de la pàgina.';
 $string['redirect'] = 'Sereu redireccionat en pocs segons. Si no sou redireccionat, premeu el botó.';
 $string['reject'] = 'Rebutja';
 $string['rejected'] = 'Rebutjat';
@@ -299,15 +289,15 @@ $string['resourcekey_admin_help'] = 'La clau permet a l\'usuari autenticar-se pe
 La clau serà proporcionada pel proveïdor de l\'eina. El mètode d\'obtenció d\'una clau varia entre els proveïdors d\'eines. Pot ser un procés automatitzat, o pot caldre el diàleg amb el proveïdor de l\'eina.
 
 Les eines que no utilitzen la comunicació segura amb Moodle i no proporcionen serveis addicionals ( com els informes de qualificacions) no els cal l\'ús de la clau.';
-$string['resourcekey_help'] = 'A les eines preconfigurades, no serà necessari entrar la clau, si la clau ha sigut proporcionada durant el procés de configuració.
+$string['resourcekey_help'] = 'Per a les eines preconfigurades no cal introduir aquí una clau de recurs, ja que la clau de consumidor es proporcionarà com a part del procés de configuració.
 
-El camp s\'hauria de crear si la creació de l\'enllaç amb l\'eina no ha estat configurat. Si l\'eina es utilitzada més d\'una vegada al curs es una bona idea afegir la configuració de l\'eina per al curs.
+Aquest camp s\'hauria d\'introduir si es crea un enllaç a un proveïdor d\'eina que no s\'ha configurat ja. Si el proveïdor d\'eina s\'ha d\'utilitzar més d\'una vegada en aquest curs, és una bona idea afegir una configuració d\'eina per al curs.
 
-La clau s\'utilitza pels usuaris per autenticar l\'accés a l\'eina.  Pot ser utilitzada per identificar sols el lloc Moodle on els usuaris llancen l\'eina.
+Podem considerar la clau de consumidor com un nom d\'usuari emprat per autenticar l\'accés a l\'eina. El proveïdor de l\'eina el pot emprar per identificar especialment el lloc Moodle des del qual els usuaris executen l\'eina.
 
-La clau cal que sigui proporcionada pel proveïdor de l\'eina. El mètode d\'obtenció de la clau varia entre els proveïdors. Pot ser un procés automàtic, o caldre el diàleg amb el proveïdor de l\'eina.
+El proveïdor de l\'eina ha de proporcionar la clau de consumidor. El mètode d\'obtenció d\'una clau de consumidor varia entre proveïdors d\'eina. Pot ser un procés automatitzat, o pot caldre un diàleg amb el proveïdor de l\'eina.
 
-Eines que no requereixen la comunicació segura amb Moodle i que no proporcionen serveis addicionals (com els informes de qualificacions) no requeriran l\'ús de la clau.';
+És possible que les eines que no requereixen una comunicació segura amb Moodle i que no proporcionen serveis addicionals (com els informes de qualificacions) no necessitin una clau de recurs.';
 $string['resourceurl'] = 'URL del recurs';
 $string['return_to_course'] = 'Prem <a href="{$a->link}" target="_top">aquí</a> per tornar al curs.';
 $string['saveallfeedback'] = 'Desa totes les meves realimentacions';
@@ -357,10 +347,10 @@ $string['tool_config_not_found'] = 'La configuració de l\'eina no s\'ha trobat 
 $string['tool_settings'] = 'Configuració de l\'eina';
 $string['toolsetup'] = 'Configuració de l\'eina externa';
 $string['toolurl'] = 'URL base de l\'eina';
-$string['toolurl_help'] = 'La URL base de l\'eina s\'utilitza per cercar URLs de llançament de eines per configurar correctament l\'eina.
+$string['toolurl_help'] = 'L\'URL base de l\'eina s\'utilitza per cercar URL de llançament d\'eines per configurar correctament l\'eina.
 Posar el prefix amb http(s) és opcional.
 
-A més amés, la URL base s\'utilitza com URL de llançament si la URL de llançament no està especificada en la instància de l\'eina externa.
+A més a més, l\'URL base s\'utilitza com a URL de llançament si l\'URL de llançament no està especificat en la instància de l\'eina externa.
 
  <table>
 <thead>
@@ -393,9 +383,9 @@ A més amés, la URL base s\'utilitza com URL de llançament si la URL de llanç
 </tbody>
  </table>
 
-Si dos configuracions d\'eines tenen el mateix domini, s\'usarà la cerca més especifica.';
+Si dues configuracions d\'eines tenen el mateix domini, s\'usarà la cerca més específica.';
 $string['typename'] = 'Nom de l\'eina';
-$string['typename_help'] = 'El nom de l\'eina s\'utilitza per identificar el proveïdor de l\'eina dins de Moodle. Els nom entrat serà visible per als professors quan afegeixin eines noves dins dels cursos.';
+$string['typename_help'] = 'El nom de l\'eina s\'utilitza per identificar el proveïdor de l\'eina dins Moodle.  El nom introduït serà visible per als professors quan afegeixin eines externes dins els cursos.';
 $string['types'] = 'Tipus';
 $string['update'] = 'Actualitza';
 $string['using_tool_configuration'] = 'S\'està utilitzant la configuració de l\'eina:';

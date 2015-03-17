@@ -25,16 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingordering'] = 'Ajout d\'une question de type Ordonnancement';
-$string['correctorder'] = 'L\'ordre correct de ces éléments est le suivant:';
-$string['defaultquestionname'] = 'Mettez les événements suivants dans le bon ordre.';
-$string['editingordering'] = 'Edition d\'ordonnancement';
+$string['addmoreanswers'] = 'Ajouter {$a} éléments supplémentaires';
+$string['answer'] = 'Texte de l\'élément';
+$string['answerheader'] = 'Élément glissable {no}';
+$string['correctorder'] = 'L\'ordre correct de ces éléments est le suivant :';
+$string['defaultquestionname'] = 'Glissez / déposez les éléments suivants dans le bon ordre.';
 $string['noresponsedetails'] = 'Désolé, aucun détail n\'est disponible pour la réponse à cette question.';
+$string['notenoughanswers'] = 'Les questions ordonnancement doivent avoir plus de {$a} réponses.';
 $string['ordering'] = 'Ordonnancement';
-$string['ordering_help'] = 'Aide';
-$string['orderingsummary'] = 'Résumé d\'Ordonnancement';
+$string['ordering_help'] = 'Plusieurs éléments sont affichés de façon désordonnée. Les éléments peuvent être glissés / déposés dans un ordre cohérent.';
+$string['orderingsummary'] = 'Classez les éléments mélangés dans un ordre cohérent.';
 $string['pluginname'] = 'Ordonnancement';
-$string['pluginnameadding'] = 'Ajout d\'une question Ordonnancement';
-$string['pluginnameediting'] = 'Modification d\'une question d\'Ordonnancement';
-$string['pluginname_help'] = 'Plusieurs éléments sont affichés dans le désordre. Ils peuvent être glissés dans un ordre significatif.';
-$string['pluginnamesummary'] = 'Placez les éléments pêle-mêle dans un ordre significatif.';
+$string['pluginnameadding'] = 'Ajout d\'une question ordonnancement';
+$string['pluginnameediting'] = 'Modification d\'une question ordonnancement';
+$string['pluginname_help'] = 'Plusieurs éléments sont affichés de façon désordonnée. Les éléments peuvent être glissés / déposés dans un ordre cohérent.';
+$string['pluginnamesummary'] = 'Classez les éléments mélangés dans un ordre cohérent.';
+$string['selectall'] = 'Sélectionner tous les éléments';
+$string['selectcontiguous'] = 'Sélectionner un sous-ensemble d\'éléments contigus';
+$string['selectcount'] = 'Taille du sous-ensemble';
+$string['selectcount_help'] = 'Le nombre d\'éléments qui seront affichés quand la question apparaitra dans un test.';
+$string['selectrandom'] = 'Sélectionner un sous-ensemble d\'éléments aléatoirement';
+$string['selecttype'] = 'Type de sélection d\'éléments';
+$string['selecttype_help'] = 'Choisissez si vous souhaitez afficher tous les éléments ou un sous-ensemble des éléments.';

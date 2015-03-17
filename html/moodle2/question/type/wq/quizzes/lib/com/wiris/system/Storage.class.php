@@ -89,15 +89,17 @@ class com_wiris_system_Storage {
 		
 		$trace = debug_backtrace();
 		foreach ($trace as $item) {
-			if (!isset($item['class']) || (strpos($item['class'], 'com_wiris_system_') === FALSE && 
-                strpos($item['class'], 'com_wiris_std_') === FALSE && 
-                strpos($item['class'], 'com_wiris_util_') === FALSE)) {
+			if (!com_wiris_system_Storage::isSystemFile($item['file'])) {
 				return $item['file'];
 			}
 		}
 		$thisfile = $trace[0]['file'];
 		;
 		return $thisfile;
+	}
+	static function isSystemFile($file) {
+		$file = str_replace("\\", "/", $file);
+		return _hx_index_of($file, "/com/wiris/system/", null) !== -1 || _hx_index_of($file, "/com/wiris/std/", null) !== -1 || _hx_index_of($file, "/com/wiris/util/", null) !== -1;
 	}
 	static function getDirectorySeparator() {
 		if(com_wiris_system_Storage::$directorySeparator === null) {

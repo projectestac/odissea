@@ -317,9 +317,7 @@ $string['recorddisapproved'] = 'Entrada no aprovada';
 $string['recordsnotsaved'] = 'No s\'ha desat cap entrada. Comproveu el format del fitxer.';
 $string['recordssaved'] = 'entrada/es';
 $string['requireapproval'] = 'Requereix aprovació?';
-$string['requireapproval_help'] = '<p align="center"><strong>Requerir aprovació</strong></p>
-
-<p>Cal que el professorat aprovi les entrades abans que l\'estudiantat pugui visualitzar-les? Això és útil per moderar continguts potencialment ofensius o inadequats.</p>';
+$string['requireapproval_help'] = 'Si s\'habilita, caldrà que el professor aprovi les entrades abans que tothom pugui visualitzar-les.';
 $string['requiredentries'] = 'Entrades requerides per a la compleció';
 $string['requiredentries_help'] = '<p align="center"><strong>Entrades requerides</strong></p>
 

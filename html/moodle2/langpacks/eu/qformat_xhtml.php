@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTML formatua';
+$string['pluginname_help'] = 'XHTML formatuak kategoria bateko galdera guztiak XHTML zorrotzeko orri bakarrera esportatzeko aukera ematen du, beste aplikazio batean erabili ahal izateko.';

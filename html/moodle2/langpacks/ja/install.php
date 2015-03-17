@@ -48,7 +48,7 @@ $string['clitablesexist'] = 'データベーステーブルは、すでに作成
 $string['compatibilitysettings'] = 'PHP設定を確認しています ...';
 $string['compatibilitysettingshead'] = 'PHP設定を確認しています ...';
 $string['compatibilitysettingssub'] = 'Moodleを適切に動作させるためには、あなたのサーバがこれらすべてのテストに通る必要があります。';
-$string['configfilenotwritten'] = 'インストールスクリプトは、自動的にあなたの選択した設定を反映したconfig.phpファイルを作成することができませんでした。恐らく、Moodleディレクトリに書き込み権が無いためだと思われます。下記のコードをconfig.phpという名称のファイルとしてMoodleのルートディレクトリにコピーすることができます。';
+$string['configfilenotwritten'] = 'インストールスクリプトは、自動的にあなたの選択した設定を反映したconfig.phpファイルを作成することができませんでした。恐らく、Moodleディレクトリに書き込み権がないためだと思われます。下記のコードをconfig.phpという名称のファイルとしてMoodleのルートディレクトリにコピーすることができます。';
 $string['configfilewritten'] = 'config.phpが正常に作成されました。';
 $string['configurationcomplete'] = '設定が完了しました。';
 $string['configurationcompletehead'] = '設定が完了しました。';
@@ -101,7 +101,7 @@ $string['download'] = 'ダウンロード';
 $string['downloadlanguagebutton'] = '「 {$a} 」言語パックをダウンロードする';
 $string['downloadlanguagehead'] = '言語パックのダウンロード';
 $string['downloadlanguagenotneeded'] = 'デフォルトの言語パック「 {$a} 」でインストール処理を続けることができます。';
-$string['downloadlanguagesub'] = 'あなたは、言語パックをダウンロードして、この言語でインストールを継続することができます。<br /><br />もし、あなたが言語パックをダウンロードできない場合、インストールは英語で継続されます。 (インストールの完了後、さらに言語パックをダウンロードして、インストールすることができます。)';
+$string['downloadlanguagesub'] = 'あなたは言語パックをダウンロードして、この言語でインストールを継続することができます。<br /><br />もし、あなたが言語パックをダウンロードできない場合、インストールは英語で継続されます。 (インストールの完了後、さらに言語パックをダウンロードして、インストールすることができます。)';
 $string['doyouagree'] = '同意しますか ? (yes/no):';
 $string['environmenthead'] = 'あなたの環境を確認しています ...';
 $string['environmentsub'] = 'あなたのシステムに関する様々な要素が、システム要件に合致するか確認しています。';
@@ -152,11 +152,11 @@ $string['nativemssqlhelp'] = 'あなたはほとんどのMoodleデータが保�
 $string['nativemysqli'] = 'Improved MySQL (ネイティブ/mysqli)';
 $string['nativemysqlihelp'] = '<p>データベースにはほとんどのMoodle設定およびデータが保存され、ここで設定する必要があります。</p>
 <p>データベース名、ユーザ名およびパスワードは必須入力フィールドです。また、テーブル接頭辞は任意です。</p>
-<p>データベースが存在せず、あなたが指定したユーザにパーミッションがある場合、Moodleは正しいパーミッションおよび設定の新しいデータベースの作成を試みます。/p>';
+<p>データベースが存在せず、あなたが指定したユーザにパーミッションがある場合、Moodleは正しいパーミッションおよび設定の新しいデータベースの作成を試みます。</p>';
 $string['nativeoci'] = 'Oracle (ネイティブ/oci)';
 $string['nativeocihelp'] = 'あなたはほとんどのMoodleデータが保存されるデータベースを設定する必要があります。このデータベースはすでに作成され、アクセスするためのユーザ名およびパスワードが作成されている必要があります。テーブル接頭辞は必須項目です。';
 $string['nativepgsql'] = 'PostgreSQL (ネイティブ/pgsql)';
-$string['nativepgsqlhelp'] = 'あなたは、ほとんどのMoodleデータが保存されるデータベースを設定する必要があります。このデータベースは、すでに作成されている必要があります。また、データベースにアクセスするため、ユーザ名およびパスワードも作成されている必要があります。テーブル接頭辞は、任意です。';
+$string['nativepgsqlhelp'] = 'あなたはほとんどのMoodleデータが保存されるデータベースを設定する必要があります。このデータベースは、すでに作成されている必要があります。また、データベースにアクセスするため、ユーザ名およびパスワードも作成されている必要があります。テーブル接頭辞は、任意です。';
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (ネイティブ/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'あなたはほとんどのMoodleデータが保存されるデータベースを設定する必要があります。このデータベースはすでに作成され、アクセスするためのユーザ名およびパスワードが作成されている必要があります。テーブル接頭辞は必須項目です。';
 $string['nativesqlsrvnodriver'] = 'Microsoft SQL Server Driver for PHP がインストールされていない、または適切に設定されませんでした。';

@@ -108,4 +108,4 @@ $string['validnumberformats_help'] = '* 正則数 13500.67、13 500.67、13500,6
 $string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 または 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} は数字にする必要があります。';
 $string['xmustnotbenumeric'] = '{$a} を数字にすることはできません。';
-$string['youmustenteramultiplierhere'] = 'あなたは、ここに乗数を入力する必要があります。';
+$string['youmustenteramultiplierhere'] = 'あなたはここに乗数を入力する必要があります。';

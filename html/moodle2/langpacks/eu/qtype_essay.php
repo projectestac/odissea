@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowattachments'] = 'Baimendu eranskinak';
 $string['formateditor'] = 'HTML editorea';
 $string['formateditorfilepicker'] = 'HTML editorea fitxategi-hautatzailearekin';
+$string['formatmonospaced'] = 'Testu laua, espazio bakarreko letra-mota';
 $string['formatplain'] = 'Testu laua';
 $string['graderinfo'] = 'Ikasleentzako informazioa';
 $string['nlines'] = '{$a} lerro';
@@ -39,3 +40,4 @@ $string['pluginnamesummary'] = 'Pare bat esaldi edo paragrafoko erantzuna ematen
 $string['responsefieldlines'] = 'Erantzuteko koadroaren tamaina';
 $string['responseformat'] = 'Ebazpenaren formatua';
 $string['responsetemplate'] = 'Erantzunetarako txantiloia';
+$string['responsetemplate_help'] = 'Hemen sartutako edozein testu erantzunaren sarrera kutxan erakutsiko da galdetegian saiakera berri bat hasten denean.';

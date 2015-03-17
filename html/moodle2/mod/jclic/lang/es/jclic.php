@@ -84,7 +84,7 @@ $string['availabledate'] = 'Disponible desde';
 $string['closebeforeopen'] = 'No se pudo actualizar el JClic: la fecha de cierre es anterior a la de apertura.';
 $string['duedate'] = 'Fecha de entrega';
 $string['exiturl_help'] = 'Se trata del URL que se abrir&aacute; cuando el alumnado finalice la &uacute;ltima actividad JClic.
-    
+
 Para que esta redirecci&oacute;n funcione es necesario que, en la pesta&ntilde;a "Secuencias", la &uacute;ltima actividad del projecto JClic, tenga asociada, en la secci&oacute;n "Flecha adelante", la acci&oacute;n "Salir de JClic".';
 $string['expired'] = 'Lo sentimos, esta actividad se cerró en {$a} y ya no está disponible';
 $string['filetype'] = 'Tipo';
@@ -105,12 +105,12 @@ $string['jclicfile'] = 'Fichero JClic';
 $string['jclicfile_help'] = 'El fichero ".jclic.zip" que contiene el paquete JClic.';
 $string['lap']='Tiempo entre vueltas';
 $string['lap_help']='Tiempo que se deja entre las transacciones cliente-servidor (expresado en segundos)';
-$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> es un proyecto del Departament de Ensenyament de la 
+$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> es un proyecto del Departament de Ensenyament de la
     Generalitat de Cataluña que está formado por un conjunto de aplicaciones de software libre que permiten crear diversos tipos de actividades
-    educativas multimedia: puzzles, asociaciones, ejercicios de texto, crucigramas, sopas de letras y otros. Además, la 
-    <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> dispone de una biblioteca de actividades que cuenta con unos 1000 
-    proyectos que han creado profesores y personas de otros colectivos que han querido compartir solidariamente su trabajo. 
-    
+    educativas multimedia: puzzles, asociaciones, ejercicios de texto, crucigramas, sopas de letras y otros. Además, la
+    <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> dispone de una biblioteca de actividades que cuenta con unos 1000
+    proyectos que han creado profesores y personas de otros colectivos que han querido compartir solidariamente su trabajo.
+
 Este módulo permite al profesorado añadir a un curso cualquier actividad de tipo JClic y recopilar los resultados obtenidos (tiempo utilizado para cada actividad, intentos, aciertos, etc.) para cada alumno/a.';
 $string['notopenyet'] = 'Esta actividad no estará disponible hasta {$a}';
 $string['pluginadministration'] = 'Administración de JClic';
@@ -128,3 +128,12 @@ $string['jclic:grade'] = 'Evaluar JClic';
 
 /* Revision Moodle 2.3 */
 $string['jclic:addinstance'] = 'Añadir un JClic';
+$string['pluginjs'] = 'URL del archivo JClic plugin js';
+$string['pluginjs_help'] = 'URL donde se buscará el archivo jclicplugin.js necesario para funcionar. Si está vacío, se usará el archivo del módulo.';
+
+/* Revision Moodle 2.6 */
+$string['event_course_module_viewed'] = 'Módulo de curso visto';
+$string['event_instances_list_viewed'] = 'Lista instancias vista';
+$string['results'] = 'Resultados';
+$string['report_details'] = 'Resultados detallados con todas las sesiones';
+$string['report_normal'] = 'Resumen de resultados';

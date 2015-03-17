@@ -22,22 +22,6 @@ function oauth_get_server() {
     return $server;
 }
 
-function generate_secret() {
-    // Get a whole bunch of random characters from the OS
-    $fp = fopen('/dev/urandom', 'rb');
-    $entropy = fread($fp, 32);
-    fclose($fp);
-
-    // Takes our binary entropy, and concatenates a string which represents the current time to the microsecond
-    $entropy .= uniqid(mt_rand(), true);
-
-    // Hash the binary entropy
-    $hash = hash('sha512', $entropy);
-
-    // Chop and send the first 80 characters back to the client
-    return substr($hash, 0, 48);
-}
-
 function get_authorization_from_form($url, $clientid, $scope = false) {
     global $CFG, $OUTPUT, $USER;
     require_once("{$CFG->libdir}/formslib.php");
@@ -72,7 +56,7 @@ function is_scope_authorized_by_user($userid, $clientid, $scope = false) {
 
 function authorize_user_scope($userid, $clientid, $scope = false) {
     global $DB;
-    if(!$scope) {
+    if (!$scope) {
     	$scope = 'login';
     }
     $record = new StdClass();

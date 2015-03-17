@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} errore atzemanda';
+$string['missinganswer'] = 'Behar baino  :ANSWER, :Lx, :Rx erantzun gutxiago {$a} lerroko galderarentzat. Gutxienez bi erantzun posible definitu behar dira.';
+$string['missingquestion'] = 'Falta da galderaren etiketa {$a} lerroaren ondoren';
 $string['pluginname'] = 'WebCT formatua';
+$string['pluginname_help'] = 'WebCT formatuak WebCT-ko testu-bidezko formatuan gordetako erantzun anitzeko eta erantzun laburreko galderak inportatzeko aukera ematen du.';
+$string['questionnametoolong'] = 'Galderaren izen luzeegia {$a} lerroan (gehienez 255 karaktere). Moztua izan da.';
 $string['unknowntype'] = 'Galdera-mota ezezaguna {$a} lerroaren ondoren';
 $string['warningsdetected'] = '{$a} abisu atzeman dira';
 $string['wronggrade'] = 'Kalifikazio okerrak ({$a}) lerroaren ondoren):';

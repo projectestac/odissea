@@ -382,6 +382,7 @@ $string['user:editmessageprofile'] = 'Erabiltzailearen mezularitza-profila edita
 $string['user:editownmessageprofile'] = 'Norberaren mezularitzarako erabiltzaile-profila editatu';
 $string['user:editownprofile'] = 'Norberaren profila editatu';
 $string['user:editprofile'] = 'Erabiltzailearen profila editatu';
+$string['user:ignoreuserquota'] = 'Ez hartu kontuan erabiltzailearen kuota-muga';
 $string['user:loginas'] = 'Beste erabiltzaile bat bezala sartu';
 $string['user:manageblocks'] = 'Beste erabiltzaile batzuen erabiltzaile-profilean blokeak kudeatu';
 $string['user:manageownblocks'] = 'Norberaren erabiltzaile-profil publikoan blokeak kudeatu ';

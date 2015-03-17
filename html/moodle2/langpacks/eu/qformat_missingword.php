@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['beginanswernotfound'] = 'Ezin izan da beharrezkoa den "{" karakterea aurkitu inportatutako fitxategiaren edukian.';
+$string['endanswernotfound'] = 'Ezin izan da beharrezkoa den "}" karakterea aurkitu inportatutako fitxategiaren edukian.';
 $string['noanswerfound'] = 'Ez da erantzunik aurkitu galderan';
 $string['pluginname'] = 'Hitz galdua formatua';
 $string['pluginname_help'] = 'Hitz galdua motako galdera-formatua testu-fitxategi gisa inporta daiteke.';

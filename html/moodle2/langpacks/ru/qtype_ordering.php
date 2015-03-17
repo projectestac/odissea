@@ -25,10 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingordering'] = 'Добавление вопроса «Упорядочение»';
 $string['correctorder'] = 'Для этих элементов правильный порядок выглядит так:';
 $string['defaultquestionname'] = 'Расположите следующие события в правильном порядке.';
-$string['editingordering'] = 'Редактирование упорядочения';
 $string['noresponsedetails'] = 'К сожалению,  не имеется никаких деталей ответа на этот вопрос.';
 $string['ordering'] = 'Упорядочение';
 $string['ordering_help'] = 'Помощь по Упорядочению';

@@ -49,7 +49,6 @@ $string['config_now'] = 'Nutzen';
 $string['config_percentage'] = 'Prozentsatz für Teilnehmer/innen anzeigen';
 $string['config_title'] = 'Alternativer Titel';
 $string['data'] = 'Datenbank';
-$string['date_format'] = '%a, %d. %b %Y, %H:%M';
 $string['feedback'] = 'Feedback';
 $string['finished'] = 'beendet';
 $string['flashcardtrainer'] = 'Lernkartei';

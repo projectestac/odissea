@@ -1,7 +1,32 @@
 Release notes for Odissea (http://odissea.xtec.cat)
 
-More information on each of the fixes can be found in the project 
+More information on each of the fixes can be found in the project
 development home at http://projectes.lafarga.cat/projects/odissea/
+
+Changes 15.03.20
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 2.6.7 to 2.6.10
+- Added airnotifier module in order to enable push notifications
+- Enable Mobile additional features when enabling mobile webservices
+- Xtec2 Theme: Created new advices pseudo-block
+- Xtec2 Theme: Spelling revision
+- Change translation of upload courses tool title
+- Local Agora: Renewed mailer library to not depend on Moodle
+- Local Agora: Enable service script is not autoregistering Moodle anymore
+- Local Agora: Added script to edit advices pseudo-block
+- Local Agora: Added script to delete orphaned assignments
+- Mailer: Add debugging function to emmancipate from Moodle
+- Question type ddimageortext: Solve error when showing more than one question in the same page
+- Updated modules:
+  - All Language packs included
+  - Mobile
+  - Hot Potatoes
+  - Questionnaire
+  - Wiris Quizzes
+  - Jclic 0.2.5
+    - Add protocol recognision through wwwroot url for the applet
+    - Set JClic default settings to https
+    - Solved problem showing url on mod edit form
 
 Changes 15.02.20
 ---------------------------------------------------------------------------------------
@@ -64,7 +89,7 @@ Changes 14.12.22
 - Upgrade to Moodle 2.6.6
 - Updated all external modules
 - Moved lang files to langpacks
-- MDL-43462 assignfeedback_editpdf: fix display of landscape PDFs 
+- MDL-43462 assignfeedback_editpdf: fix display of landscape PDFs
 - Bigdata translated
 - Some marsupial bug fixes including: CSV import
 
@@ -134,7 +159,7 @@ Changes 14.10.15
 
 Changes 14.09.30
 ---------------------------------------------------------------------------------------
- 
+
  - Updated module Google Oauth, button on login block and some bugs repaired
  - Repaired syntaxt error on geogebra attempt
  - Workarround to solve hotpot width
@@ -294,7 +319,7 @@ MOODLE 2
 - Fixed bug on overviewnumpostssince count shown in My Moodle Page
 - Hidden Alfresco repository (only visible for xtecadmin or when it's enabled)
 - Showed again Appearance | Default My home page parameters page
-- Hidden delete button for admins on Plugins | Filters | Manage filters page 
+- Hidden delete button for admins on Plugins | Filters | Manage filters page
 - Updated catalan translation (13-11-2013)
 
 
@@ -404,11 +429,11 @@ Changes 13.04.25
 MOODLE2
 - Fixed error when building category tree
 - Import utility now removes backup copies after restoration
-- Installed QV module 
+- Installed QV module
 - Reviewed default enrol cohorts behaviour to let everybody with cohort:view capability enrol system cohorts
 - Added CFG param to settings.php to define default blocks when creating a course
 - Hidden Cache plugins section (only visible for xtecadmin)
-- Added $CFG->altcacheconfigpath to have only one cache config file for all instances (instead of having one for each site in moodledata/usuX/muc/config.php) 
+- Added $CFG->altcacheconfigpath to have only one cache config file for all instances (instead of having one for each site in moodledata/usuX/muc/config.php)
 - Hidden all themes to avoid schools to change it. Now, only xtec2 and mymobile themes are visible
 - Fixed "assignments appear at the end after upgrading them to 2.2".
 - Rush hours are now configurable
@@ -503,7 +528,7 @@ MOODLE
 - Fixed some Oracle bugs in GeoGebra module related with ` character
 - Fixed bug related with sending email during users signup adding $CFG->noreplyaddress to config.php
 - Reviewed coursequotes to make it works with single installations (like Odissea)
-- Added is_agora() check to backup_agora.php to enable Moodle to import when is not Àgora 
+- Added is_agora() check to backup_agora.php to enable Moodle to import when is not Àgora
 - Fixed bug with database activities to avoid problem with data visualization when entrieslefttoadd parameter is defined
 - Updated synchronizer.php from GTAF block to improve the code to fix problem with city codification
 
@@ -568,7 +593,7 @@ Changes 12.04.02
 - Fixed bug in data searches
 - Rush hour don't affect to xtecadmin
 - index_iw.php: Changed zikula login URL
-- Reviewed rcontent to save view action into the Moodle log 
+- Reviewed rcontent to save view action into the Moodle log
 - Updated rcommon to fix some minor problems related with publishers with only one book
 - Added report option to check Marsupial service state
 

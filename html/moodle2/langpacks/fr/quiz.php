@@ -231,16 +231,10 @@ $string['defaultgrade'] = 'Note par défaut';
 $string['defaultinfo'] = 'Catégorie par défaut pour les questions.';
 $string['delay1'] = 'Délai entre la première et la deuxième tentative';
 $string['delay1st2nd'] = 'Délai imposé entre la première et la deuxième tentative';
-$string['delay1st2nd_help'] = '<!-- $Id$ -->
-
-
-<p>Ce délai détermine la durée que devra attendre un étudiant avant sa deuxième tentative au test.</p>';
+$string['delay1st2nd_help'] = 'Si ce réglage est activé, les étudiants doivent attendre le laps de temps indiqué avant d\'entreprendre une deuxième tentative pour le test.';
 $string['delay2'] = 'Délai entre les tentatives suivantes';
 $string['delaylater'] = 'Délai imposé entre les tentatives suivantes';
-$string['delaylater_help'] = '<!-- $Id$ -->
-
-
-<p>Ce délai détermine la durée que devra attendre l\'étudiant avant sa troisième tentative, ou les suivantes.</p>';
+$string['delaylater_help'] = 'Si ce réglage est activé, ce délai détermine la durée que devra attendre l\'étudiant avant sa troisième tentative, ou les suivantes.';
 $string['deleteattemptcheck'] = 'Voulez-vous vraiment supprimer complètement ces tentatives ?';
 $string['deleteselected'] = 'Supprimer la sélection';
 $string['deletingquestionattempts'] = 'Suppression des tentatives de tests';
@@ -348,7 +342,7 @@ $string['generalfeedback_help'] = 'Le feedback général d\'une question est le 
 $string['graceperiod'] = 'Délai supplémentaire pour envoi';
 $string['graceperiod_desc'] = 'La valeur par défaut du temps supplémentaire octroyé pour envoyer le test, en secondes, lorsque le réglage déterminant le comportement après le délai offre un laps de temps supplémentaire pour envoyer le test.';
 $string['graceperiod_help'] = 'La valeur par défaut du temps supplémentaire octroyé pour envoyer le test.';
-$string['graceperiodmin'] = 'Délai supplémentaire pour dernier envoi';
+$string['graceperiodmin'] = 'Délai supplémentaire pour envoi';
 $string['graceperiodmin_desc'] = 'Il y a un problème potentiel à la fin du test. Vous voulez laisser travailler les participants jusqu\'à la dernière seconde, et laisser le chronomètre envoyer automatiquement le test lorsque le temps imparti est écoulé. Cependant, le serveur pourrait être surchargé à cet instant et prendre un peu de temps pour traiter les réponses. Pour éviter tout problème et de pénaliser certaines réponses, Moodle les acceptera pendant la durée spécifiée ici après l\'échéance du délai. Cela a pour conséquence que les participants pourraient tricher en utilisant ce laps de temps supplémentaire pour répondre.
 
 C\'est à vous de décider la durée à fixer ici, suivant la performance de votre serveur durant les tests.';
@@ -360,26 +354,12 @@ $string['gradeboundary'] = 'Limite de note';
 $string['gradeessays'] = 'Évaluer les compositions';
 $string['gradehighest'] = 'Note la plus haute';
 $string['grademethod'] = 'Méthode d\'évaluation';
-$string['grademethod_help'] = '<!-- $Id$ -->
+$string['grademethod_help'] = 'Lorsqu\'il est permis à l\'étudiant d\'effectuer plusieurs tentatives, les possibilités suivantes sont disponibles pour calculer sa note finale pour le test.
 
-
-<p>Lorsqu\'on permet à l\'étudiant d\'effectuer plusieurs tentatives pour faire un test, vous devez choisir comment sera calculée la note de l\'étudiant. Voici les choix possibles :</p>
-
-<h2>Note la plus élevée</h2>
-
-<p>La note finale est la meilleure des notes de toutes les tentatives.</p>
-
-<h2>Note moyenne</h2>
-
-<p>La note finale est la note moyenne de toutes les tentatives.</p>
-
-<h2>Première note</h2>
-
-<p>La note finale est la note obtenue à la première tentative.</p>
-
-<h2>Dernière note</h2>
-
-<p>La note finale est la note obtenue à la dernière tentative.</p>';
+* Note la plus élevée –  la meilleure des notes de toutes les tentatives
+* Note moyenne – la moyenne arithmétique de toutes les tentatives
+* Première note – la note obtenue à la première tentative (les autres tentatives sont ignorées)
+* Dernière note – la note obtenue à la dernière tentative (les autres tentatives sont ignorées)';
 $string['gradesdeleted'] = 'Notes de tests supprimées';
 $string['gradesofar'] = '{$a->method} : {$a->mygrade} / {$a->quizgrade}.';
 $string['gradingdetails'] = 'Points pour cet envoi : {$a->raw}/{$a->max}.';
@@ -582,12 +562,7 @@ $string['parsingquestions'] = 'Analyse des questions du fichier à importer.';
 $string['partiallycorrect'] = 'Partiellement correct';
 $string['penalty'] = 'Pénalité';
 $string['penaltyscheme'] = 'Appliquer les pénalités';
-$string['penaltyscheme_help'] = '<!-- $Id$ -->
-
-
-<p>Si un test est effectué en mode adaptatif, alors un étudiant peut effectuer un nouvel essai après une mauvaise réponse. Dans ce cas, vous pouvez décider d\'imposer une pénalité pour chaque mauvaise réponse, à déduire de la note finale de la question. L\'ampleur de la pénalité est choisie pour chaque question, lors du paramétrage ou de l\'édition de la question.</p>
-
-<p>Ce paramètre n\'a d\'effet que si le test est réalisé en mode adaptatif.</p>';
+$string['penaltyscheme_help'] = 'Si ce réglage est activé, une pénalité est déduite de la note finale d\'une question pour chaque mauvaise réponse donnée. L\'ampleur de la pénalité est déterminée dans les paramètres de la question. Ce réglage n\'a d\'effet que si le test est réalisé en mode adaptatif.';
 $string['percentcorrect'] = 'Pourcentage de réponses correctes';
 $string['pleaseclose'] = 'Votre requête a été traitée. Vous pouvez maintenant fermer cette fenêtre';
 $string['pluginadministration'] = 'Administration du test';
@@ -636,7 +611,7 @@ $string['quiz:attempt'] = 'Effectuer des tests';
 $string['quizavailable'] = 'Le test est disponible jusqu\'au {$a}';
 $string['quizclose'] = 'Fermer le test';
 $string['quizclosed'] = 'Ce test a été fermé le {$a}';
-$string['quizcloses'] = 'Test est fermé';
+$string['quizcloses'] = 'Le test ferme';
 $string['quizcloseson'] = 'Ce test sera fermé le {$a}';
 $string['quiz:deleteattempts'] = 'Supprimer les tentatives de tests';
 $string['quiz:emailconfirmsubmission'] = 'Recevoir un courriel de confirmation lors de l\'envoi d\'un test';
@@ -656,7 +631,7 @@ $string['quizopenclose'] = 'Dates d\'ouverture et de fermeture';
 $string['quizopenclose_help'] = 'Les étudiants ne peuvent commencer leur tentative qu\'après l\'heure d\'ouverture et doivent la terminer avant l\'heure de fermeture.';
 $string['quizopened'] = 'Ce test est ouvert.';
 $string['quizopenedon'] = 'Ce test est ouvert depuis {$a}';
-$string['quizopens'] = 'Le test est disponible';
+$string['quizopens'] = 'Le test est rendu disponible';
 $string['quizopenwillclose'] = 'Ce test est ouvert et sera fermée le {$a} à';
 $string['quizordernotrandom'] = 'L\'ordre du test n\'est pas mélangé';
 $string['quizorderrandom'] = '* L\'ordre du test est mélangé';
@@ -725,32 +700,7 @@ $string['reportwhattoinclude'] = 'Informations à inclure dans le rapport';
 $string['requirepassword'] = 'Nécessite une clef';
 $string['requirepassword_help'] = 'Si vous spécifiez ici un mot de passe, les participants devront le saisir avant de pouvoir faire le test.';
 $string['requiresubnet'] = 'Restriction par adresse IP';
-$string['requiresubnet_help'] = '<!-- $Id$ -->
-
-
-<p>Ce champ est optionnel.</p>
-
-<p>Vous pouvez restreindre l\'accès à un test à des sous-réseaux particuliers d\'un réseau local (LAN) ou de l\'internet en spécifiant ici une liste d\'adresses IP (complètes ou partielles), séparées par des virgules.</p>
-
-<p>Cela peut être spécialement utile lorsque vous désirez que seules les personnes dans une salle spécifique puissent accéder au test.</p>
-
-<p>Exemple : <strong>192.168. , 231.54.211.0/20, 231.3.56.211, 231.3.56.10-20</strong></p>
-
-<p>Vous pouvez indiquer ici quatre types d\'adresses IP (il n\'est pas possible d\'utiliser des adresses sous la forme de nom de domaine, par exemple « mon-ecole.ch ») :</p>
-
-<ol>
-
-<li>des adresses IP complètes, comme <strong>192.168.10.1</strong>, qui correspondent à un seul ordinateur (ou un serveur proxy) ;</li>
-
-<li>des adresses IP partielles, comme <strong>192.168</strong>, qui correspondent à tous les ordinateurs dont l\'adresse commence ainsi ;</li>
-
-<li>des adresses en notation CIDR, comme <strong>231.54.211.0/20</strong>, qui permettent de spécifier des sous-réseaux de manière plus détaillée.</li>
-
-<li>une plage d\'adresses IP <strong>231.3.56.10-20</strong>. La plage spécifie un intervalle sur la dernière partie de l\'adresse. L\'exemple indique ici les adresses comprises dans l\'intervalle de 231.3.56.10 à 231.3.56.20.</li>
-
-</ol>
-
-<p>Les espaces sont ignorés.</p>';
+$string['requiresubnet_help'] = 'L\'accès à un test peut être restreint à des sous-réseaux particuliers d\'un réseau local (LAN) ou d\'Internet en indiquant ici une liste d\'adresses IP complètes ou partielles, séparées par des virgules. Cela est particulièrement utile pour des tests sans surveillance, afin de s\'assurer que seules les personnes dans un lieu déterminé puissent accéder au test.';
 $string['response'] = 'Réponse du participant';
 $string['responses'] = 'Réponses du participant';
 $string['results'] = 'Résultats';

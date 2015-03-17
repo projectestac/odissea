@@ -79,25 +79,17 @@ $string['csstemplate'] = 'CSS txantiloia';
 $string['csvfailed'] = 'Ezin dira datu gordinak irakurri CSV fitxategi honetatik';
 $string['csvfile'] = 'CSV fitxategia';
 $string['csvimport'] = 'CSV fitxategia inportatu';
-$string['csvimport_help'] = '</p>
-
-<p>CSVk zera esan nahi du: Comma-Separated-Values (kakotxez banatutako baloreak) eta testu-trukaketarako ohiko formatua da.</p>
-
+$string['csvimport_help'] = '<p>CSVk zera esan nahi du: Comma-Separated-Values (kakotxez banatutako baloreak) eta testu-trukaketarako ohiko formatua da.</p>
 <p>Formatua testu laukoa da eta lehenengo lerroan eremuen izenak azaltzen dira. Ondoren datu guztiak datoz, bat lerroko.</p>
-
 <p>Kakotxek eremuak mugatzen dituzte eta eremu-bukaerako lehenetsitako karaktererik ez dago (eremu-bukaerak sarrera bakoitza mugatzen duten karaktereak dira).</p>
-
 <p>Sarrerak lerrotan banatu behar dira (normalean, zure editorearen RETURN edo ENTER sakatu beharko duzu). Tabuladoreak adierazteko t eta lerro berrietarako n erabil dezakezu. </p>
-
 <p>Adibidez:</p>
-
 <pre>
   izena,altuera,pisua
   Kai,180cm,80kg
   Kim,170cm,60kg
   Koo,190cm,20kg
 </pre>
-
 <p>Kontuz! Baliteke eremu-formatu guztiak onargarriak ez izatea.</p>';
 $string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> testua eta aukeratutako banatzailea';
 $string['data:addinstance'] = 'Gehitu beste datu-base bat';
@@ -211,7 +203,7 @@ $string['headersingletemplate'] = 'Sarrera baterako nabigazio-itxura definitzen 
 $string['importentries'] = 'Sarrerak inportatu';
 $string['importsuccess'] = 'Aurretiko ezarpena egoki aplikatu da';
 $string['includeapproval'] = 'Sartu onarpen-egoera';
-$string['includetime'] = 'Sartu denbora gehituta/aldatutaSartu denbora gehituta/aldatuta';
+$string['includetime'] = 'Sartu denbora gehituta/aldatuta';
 $string['includeuserdetails'] = 'Sartu erabiltzaile-xehetasunak';
 $string['insufficiententries'] = 'datu-base hau ikusteko sarrera gehiago beharrezkoak dira';
 $string['intro'] = 'Deskribapena';

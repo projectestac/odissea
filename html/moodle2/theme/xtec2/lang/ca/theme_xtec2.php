@@ -47,22 +47,22 @@ $string['showhideblocks'] = 'Mostra/Amaga blocs';
 $string['footer_settings'] = 'Paràmetres del peu de pàgina';
 $string['footnote'] = 'Nota a peu de pàgina';
 $string['footnotedesc'] = 'Qualsevol cosa que escriviu en aquesta àrea de text es mostrarà al peu de pàgina al vostre lloc Moodle.';
-$string['website'] = 'Web URL';
+$string['website'] = 'URL del Web';
 $string['nodes'] = 'Mostra l\'enllaç a Nodes';
 $string['nodesdesc'] = 'Mostra una icona enllaçada a la vostra plataforma Nodes al peu.';
-$string['intranet'] = 'Mostra l\'enllaç a Intranet';
+$string['intranet'] = 'Mostra l\'enllaç a la Intranet';
 $string['intranetdesc'] = 'Mostra una icona enllaçada a la vostra plataforma Intranet al peu.';
-$string['facebook'] = 'Facebook URL';
-$string['twitter'] = 'Twitter URL';
-$string['googleplus'] = 'Google Plus URL';
-$string['instagram'] = 'Instagram URL';
-$string['flickr'] = 'Flickr URL';
-$string['linkedin'] = 'LinkedIn URL';
-$string['pinterest'] = 'Pinterest URL';
-$string['youtube'] = 'Youtube URL';
+$string['facebook'] = 'URL de Facebook';
+$string['twitter'] = 'URL de Twitter';
+$string['googleplus'] = 'URL de Google Plus';
+$string['instagram'] = 'URL d\'Instagram';
+$string['flickr'] = 'URL de Flickr';
+$string['linkedin'] = 'URL de LinkedIn';
+$string['pinterest'] = 'URL de Pinterest';
+$string['youtube'] = 'URL de Youtube';
 $string['phone'] = 'Telèfon: {$a}';
 $string['email'] = 'Correu electrònic: {$a}';
-$string['urldesc'] = 'Si el camp no està buit, es mostra una icona enllaçada a la URL escrita al peu.';
+$string['urldesc'] = 'Si el camp no està buit, es mostra una icona enllaçada a l\'URL escrita al peu.';
 $string['maildesc'] = 'Si el camp no està buit, es mostra una icona enllaçada al correu electrònic escrit al peu.';
 $string['teldesc'] = 'Si el camp no està buit, es mostra una icona enllaçada al telèfon escrit al peu.';
 
@@ -105,10 +105,22 @@ $string['importcss'] = 'Full d\'estils extern';
 $string['importcssdesc'] = 'Introduïu un URL absolut d\'un fitxer de fulls d\'estils CSS. Es carregarà abans dels estils del tema';
 
 $string['customcss'] = 'Estils personalitzats';
-$string['customcssdesc'] = 'Les regles definides aquí seran les darreres que s\'aplicaran i, per tant, els seus valors haurien de prevaldre per sobre dels que puguin estar definits prèviament. Si no és així, reviseu la sintaxi o proveu afegir <code>!important</code> a la regla.';
+$string['customcssdesc'] = 'Les regles definides aquí seran les darreres que s\'aplicaran i, per tant, els seus valors haurien de prevaldre per sobre dels que puguin estar definits prèviament. Si no és així, reviseu la sintaxi o proveu a afegir <code>!important</code> a la regla.';
 
 $string['pluginname'] = 'XTEC2';
 
 $string['region-side-post'] = 'Dreta';
 $string['region-side-pre'] = 'Esquerra';
 
+//Advices
+$string['advices'] = 'Avisos';
+$string['alert_message'] = 'Missatge';
+$string['advices_admin'] = 'Avís per a administradors';
+$string['advices_user'] = 'Avís per a tothom';
+$string['alert_start'] = 'Mostra el missatge a partir d\'aquesta data';
+$string['alert_start_desc'] = 'Deixeu-ho buit si voleu que es mostri des d\'ara mateix. Format YYYYmmdd';
+$string['alert_end'] = 'Mostra el missatge fins a aquesta data';
+$string['alert_end_desc'] = 'Deixeu-ho buit si voleu que es mostri per sempre. Format YYYYmmdd';
+$string['agora_alert_message_desc'] = 'Mostra un missatge a tothom al capdamunt de l\'àrea de blocs';
+$string['admin_alert_message_desc'] = 'Mostra un missatge als administradors al capdamunt de l\'àrea de blocs';
+$string['show_admins'] = 'Aquest missatge només es mostra als administradors del lloc';

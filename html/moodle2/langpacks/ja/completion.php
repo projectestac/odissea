@@ -45,7 +45,7 @@ $string['completedwarning'] = '完了オプションがロックされました�
 $string['completedwarningtext'] = 'すでに1名またはそれ以上のユーザ ({$a}) がこの活動を完了マークしています。完了オプションを変更することにより、それらの完了状況を消去するため、混乱の原因となる可能性があります。そのため、完了オプションはロックされてます。あなたが絶対に必要な場合を除き、ロック解除しないことをお勧めします。';
 $string['completion'] = '完了トラッキング';
 $string['completionactivitydefault'] = '活動デフォルトを使用する';
-$string['completion-alt-auto-enabled'] = 'システムは状態に応じて、このアイテムに完了マークします: {$a}';
+$string['completion-alt-auto-enabled'] = '状態に応じて、システムはこのアイテムに完了マークします: {$a}';
 $string['completion-alt-auto-fail'] = '完了: {$a} (合格点未到達)';
 $string['completion-alt-auto-n'] = '未完了: {$a}';
 $string['completion-alt-auto-pass'] = '完了: {$a} (合格点到達)';
@@ -65,7 +65,7 @@ $string['completion_help'] = '有効にした場合、コンディションに�
 
 活動が完了した場合、コースページの活動名の横にチェックが表示されます。';
 $string['completionicons'] = '完了チェックボックス';
-$string['completionicons_help'] = '活動目の横にあるチェックボックスにより、活動の完了時期を指定します。
+$string['completionicons_help'] = '活動名の横にあるチェックボックスにより、活動の完了時期を指定します。
 
 ドット線のボックスが表示された場合、教師により設定されたコンディションに従ってあなたが活動を完了した時点で、チェックが自動的に表示されます。
 
@@ -123,7 +123,7 @@ $string['err_noactivities'] = 'すべての活動で完了情報が有効にさ�
 $string['err_nocourses'] = '他のどのコースでもコース完了が有効にされていないため、何も表示することはできません。あなたはコース設定内でコース完了を有効にすることができます。';
 $string['err_nograde'] = 'このコースにはコース合格点が設定されていません。このクライテリアタイプを設定するには、あなたはコースに合格点を設定する必要があります。';
 $string['err_noroles'] = 'このコースにはケイパビリティ「moodle/course:markcomplete」が割り当てられたロールがありません。';
-$string['err_nousers'] = 'このコースまたはグループには完了情報を表示するユーザはいません (デフォルトでは、完了情報は学生のみに表示されます。学生が登録されていない場合、このエラーが表示されます。管理者はこのオプションを管理画面で変更することができます)。';
+$string['err_nousers'] = 'このコースまたはグループには完了情報を表示するユーザはいません (デフォルトでは完了情報は学生のみに表示されます。学生が登録されていない場合、このエラーが表示されます。管理者はこのオプションを管理画面で変更することができます)。';
 $string['err_settingslocked'] = '1名またはそれ以上の学生がすでにクライテリアを完了しているため、設定がロックされています。完了クライテリア設定ロックを解除するには、既存のユーザデータを削除する必要があります。ユーザデータ削除により混乱が生じる恐れがあります。';
 $string['err_system'] = '完了システムで内部エラーが発生しました (詳細情報を表示するため、システム管理者はデバッグ情報の表示を有効にできます)。';
 $string['eventcoursecompleted'] = 'コースが完了しました。';
@@ -135,7 +135,7 @@ $string['graderequired'] = '必須コース評点';
 $string['gradexrequired'] = '要求評点: {$a}';
 $string['inprogress'] = '進行中';
 $string['manualcompletionby'] = '他のユーザによる手動完了';
-$string['manualcompletionbynote'] = '注意: リストに表示するには、ロールのケイパビリティ「moodle/course:markcomplete」を許可する必要があります。';
+$string['manualcompletionbynote'] = '注意: リストに表示するには、ロールのケイパビリティ「moodle/course:markcomplete」を許可にする必要があります。';
 $string['manualselfcompletion'] = '手動による自己完了';
 $string['manualselfcompletionnote'] = '注意: 手動自己完了が有効にされた場合、コースに自己完了ブロックを追加する必要があります。';
 $string['markcomplete'] = '完了マークする';
@@ -145,7 +145,7 @@ $string['moredetails'] = '詳細情報';
 $string['nocriteriaset'] = 'このコースに設定されている完了クライテリアはありません。';
 $string['notcompleted'] = '未完了';
 $string['notenroled'] = 'あなたはこのコースに登録されていません。';
-$string['nottracked'] = '現在、あなたはこのコース内で完了によって追跡されていません。';
+$string['nottracked'] = '現在、あなたはこのコース内で完了により追跡されていません。';
 $string['notyetstarted'] = '未開始';
 $string['overallaggregation'] = '完了要件';
 $string['overallaggregation_all'] = 'すべてのコンディションに合致した場合、コースが完了する';
@@ -162,8 +162,8 @@ $string['reportpage'] = '{$a->total} ユーザの　{$a->from} から {$a->to} �
 $string['requiredcriteria'] = '必須クライテリア';
 $string['restoringcompletiondata'] = '完了データの書き出し';
 $string['roleaggregation'] = 'コンディション要求';
-$string['roleaggregation_all'] = 'コンディションに合致した場合、選択したロールすべてがマークできる';
-$string['roleaggregation_any'] = 'コンディションに合致した場合、選択したロールのどれかがマークできる';
+$string['roleaggregation_all'] = 'コンディションに合致した場合、選択したロールすべてをマークできる';
+$string['roleaggregation_any'] = 'コンディションに合致した場合、選択したロールのどれかをマークできる';
 $string['saved'] = '保存完了';
 $string['seedetails'] = '詳細を表示する';
 $string['self'] = '自己';
