@@ -11,6 +11,11 @@ $CFG->altcacheconfigpath = $dirroot.'/html/moodle2/local/agora/muc/';
 $CFG->langotherroot = dirname(__FILE__) . '/langpacks/';
 $CFG->langlocalroot = dirname(__FILE__) . '/langpacks/';
 $CFG->skiplangupgrade  = true;
+$CFG->updateautocheck = false;
+$CFG->disableupdatenotifications = true;
+$CFG->disableupdateautodeploy = true;
+$CFG->disableonclickaddoninstall = true;
+
 
 $CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
 
