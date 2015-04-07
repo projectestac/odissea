@@ -42,4 +42,9 @@ $CFG->cachedir = $CFG->agora_muc_path.'/cache';
 $CFG->localcachedir = $CFG->agora_muc_path.'/localcache';
 
 
-$CFG->forced_plugin_settings = array('block_configurable_reports'  => array('sqlsecurity' => true));
+$CFG->forced_plugin_settings = array('block_configurable_reports' => array(
+                                        'sqlsecurity' => true,
+                                        'dbhost' => "",
+                                        'dbname' => "",
+                                        'dbuser' => "",
+                                        'dbpass' => ""));
