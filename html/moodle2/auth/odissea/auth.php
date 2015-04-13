@@ -85,8 +85,11 @@ class auth_plugin_odissea extends auth_plugin_base {
     function get_userdn($username, $password = false) {
         // Hack to solve the lack of password on get_userinfo
         global $auth_odissea_pass;
-        if($password) $auth_odissea_pass = $password;
-        else $password = $auth_odissea_pass;
+        if ($password) {
+            $auth_odissea_pass = $password;
+        } else {
+            $password = $auth_odissea_pass;
+        }
 
         $ldapconnection = $this->get_xtecconnection($username, $password);
         $user_dn = $this->ldap_find_userdn($ldapconnection, $username);
@@ -95,19 +98,26 @@ class auth_plugin_odissea extends auth_plugin_base {
             // If user_dn is empty, user does not exist so it's needed to search in GICAR-LDAP
             $this->ldap_close();
             $ldapconnection = $this->get_gicarconnection();
+            if (!$ldapconnection) {
+                $this->ldap_close();
+                return false;
+            }
+
             $ldap_result = ldap_search($ldapconnection, $this->config->gicar_contexts, '(' . $this->config->gicar_nif_attribute . '=' . $username . ')', array($this->config->gicar_user_attribute));
             $gicar_entry = ldap_first_entry($ldapconnection, $ldap_result);
-            if ($gicar_id_array = ldap_get_values($ldapconnection, $gicar_entry, $this->config->gicar_user_attribute)) {
-                $gicar_id = $gicar_id_array[0];
+            if ($gicar_entry) {
+                if ($gicar_id_array = ldap_get_values($ldapconnection, $gicar_entry, $this->config->gicar_user_attribute)) {
+                    $gicar_id = $gicar_id_array[0];
+                    $user_dn = $this->ldap_find_userdn($ldapconnection, $gicar_id, $this->config->gicar_contexts, $this->config->gicar_user_attribute);
+                }
             }
-            $user_dn = $this->ldap_find_userdn($ldapconnection, $gicar_id, $this->config->gicar_contexts, $this->config->gicar_user_attribute);
             if (!$user_dn) {
                 // If user_dn is empty, user does not exist
                 $this->ldap_close();
                 return false;
-            } else {
-                $nif_attribute = $this->config->gicar_nif_attribute;
             }
+            $nif_attribute = $this->config->gicar_nif_attribute;
+
         } else {
             $nif_attribute = $this->config->nif_attribute;
         }
@@ -441,7 +451,7 @@ class auth_plugin_odissea extends auth_plugin_base {
      * @param string $user_attribute
      * @return mixed the user dn (external LDAP encoding) or false
      */
-    function ldap_find_userdn($ldapconnection, $extusername, $contexts, $user_attribute) {
+    function ldap_find_userdn($ldapconnection, $extusername, $contexts = false, $user_attribute = false) {
         if (empty($contexts)) {
             $contexts = $this->config->contexts;
         }
