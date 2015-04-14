@@ -26,6 +26,7 @@ cp html/moodle2_old/theme/xtec2/pix/favicon.ico html/moodle2/theme/xtec2/pix/fav
 cp html/moodle2_old/theme/xtec2/pix/logo_main.png html/moodle2/theme/xtec2/pix/logo_main.png
 
 cp html/moodle2_old/apc.php html/moodle2/apc.php
+cp html/moodle2_old/opcache.php html/moodle2/opcache.php
 cp html/moodle2_old/CHANGES.txt html/moodle2/CHANGES.txt
 
 cp -Rp html/moodle2_old/auth/odissea html/moodle2/auth/odissea
