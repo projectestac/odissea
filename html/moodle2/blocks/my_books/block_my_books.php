@@ -78,7 +78,7 @@ class block_my_books extends block_list {
         }
 
         // Old book formats
-        $bookformat = textlib::strtolower($book->format);
+        $bookformat = core_text::strtolower($book->format);
         if (!in_array($bookformat, rcommon_book::$allowedformats)) {
             return false;
         }

@@ -13,8 +13,8 @@ class script_replace_database_text extends agora_script_base{
 	public function params(){
 		global $CFG;
 		$params = array();
-		$params['origintext'] = optional_param('origintext',$CFG->wwwroot . '/', PARAM_TEXT);
-		$params['targettext'] = optional_param('targettext',$CFG->wwwroot . '/historic/', PARAM_TEXT);
+		$params['origintext'] = optional_param('origintext', "", PARAM_TEXT);
+		$params['targettext'] = optional_param('targettext', $CFG->wwwroot, PARAM_TEXT);
 		return $params;
 	}
 
@@ -23,10 +23,25 @@ class script_replace_database_text extends agora_script_base{
 
 		$textOrig = $params['origintext'];
 		$textTarg = $params['targettext'];
+		if (empty($textOrig) || empty($textTarg)) {
+			echo $OUTPUT->notification('Falten paràmetres');
+			return false;
+		}
 
 		echo "Reemplaçant '<strong>$textOrig</strong>' per '<strong>$textTarg</strong>'<br />";
 
-        $result = $this->replaceMoodle($textOrig, $textTarg);
+		switch ($CFG->dbtype) {
+			case 'oci':
+			case 'oci8':
+				$result = $this->replaceMoodleOCI($textOrig, $textTarg);
+				break;
+			default:
+				$result = $this->replaceMoodle($textOrig, $textTarg);
+				break;
+		}
+
+		purge_all_caches();
+
 
         if ($result) {
             echo $OUTPUT->notification('S\'ha executat correctament el canvi de text al Moodle','notifysuccess');
@@ -38,13 +53,77 @@ class script_replace_database_text extends agora_script_base{
 	}
 
 	/**
+	 * Replace $search string to $new string at Moodle
+	 *
+	 * @param type $search old string to replace
+	 * @param type $replace new string
+	 * @return type Boolean
+	 */
+	private function replaceMoodle($search, $replace) {
+		global $CFG, $DB, $OUTPUT;
+
+		// TODO: this is horrible hack, we should do whitelisting and each plugin should be responsible for proper replacing...
+    	$skiptables = array('config', 'config_plugins', 'config_log', 'upgrade_log', 'log',
+                        'filter_config', 'sessions', 'events_queue', 'repository_instance_config',
+                        'block_instances', '');
+
+		// Turn off time limits, sometimes upgrades can be slow.
+	    @set_time_limit(0);
+
+	    if (!$tables = $DB->get_tables() ) {    // No tables yet at all.
+	        return false;
+	    }
+	    foreach ($tables as $table) {
+
+	        if (in_array($table, $skiptables)) {      // Don't process these
+	            continue;
+	        }
+
+	        if ($columns = $DB->get_columns($table)) {
+	            $DB->set_debug(true);
+	            foreach ($columns as $column) {
+	            	try{
+	                	$DB->replace_all_text($table, $column, $search, $replace);
+	                } catch (Exception $e) {
+	                	echo $OUTPUT->notification($e->getMessage());
+	                }
+	            }
+	            $DB->set_debug(false);
+	        }
+	    }
+
+		$blocks = core_component::get_plugin_list('block');
+	    foreach ($blocks as $blockname=>$fullblock) {
+	        if ($blockname === 'NEWBLOCK') {   // Someone has unzipped the template, ignore it
+	            continue;
+	        }
+
+	        if (!is_readable($fullblock.'/lib.php')) {
+	            continue;
+	        }
+
+	        $function = 'block_'.$blockname.'_global_db_replace';
+	        include_once($fullblock.'/lib.php');
+	        if (!function_exists($function)) {
+	            continue;
+	        }
+
+	        echo $OUTPUT->notification("Replacing in $blockname blocks...", 'notifysuccess');
+	        $function($search, $replace);
+	        echo $OUTPUT->notification("...finished", 'notifysuccess');
+	    }
+
+		return true;
+	}
+
+	/**
 	 * Replace $textOrig string to $new string at Moodle
 	 *
 	 * @param type $textOrig old string to replace
 	 * @param type $textTarg new string
 	 * @return type Boolean
 	 */
-	private function replaceMoodle($textOrig, $textTarg) {
+	private function replaceMoodleOCI($textOrig, $textTarg) {
 		global $CFG;
 
 		if (!($con = oci_pconnect($CFG->dbuser, $CFG->dbpass, $CFG->dbname))) {
@@ -99,7 +178,7 @@ class script_replace_database_text extends agora_script_base{
 		}
 
 		oci_close($con);
-		purge_all_caches();
+
 		return true;
 	}
 

@@ -6,6 +6,9 @@ var closeFunction;
 if (window.opener) {							// For popup mode
 	wrs_int_opener = window.opener;
 	closeFunction = window.close;
+} else if (window.parent._wrs_conf_modalWindow) {
+		wrs_int_opener = window.parent;
+		closeFunction = wrs_int_opener.wrs_closeModalWindow;
 }
 /* FCKeditor integration begin */
 else {											// For iframe mode
@@ -41,6 +44,8 @@ try { // Catch exception: window.opener.parent and radeditor in different domain
 	if (window.parent.InnerDialogLoaded) {			// iframe mode
 		window.parent.InnerDialogLoaded();
 		closeFunction = window.parent.Cancel;
+	}else if (window.parent._wrs_conf_modalWindow ) {
+			closeFunction =  wrs_int_opener.wrs_closeModalWindow;
 	}
 	else if (window.opener.parent.FCKeditorAPI) {	// popup mode
 		wrs_int_opener = window.opener.parent;
@@ -50,7 +55,15 @@ catch (e) {
 }
 /* FCKeditor integration end */
 
+
+
 wrs_int_opener.wrs_addEvent(window, 'load', function () {
+
+	// Class for modal dialog.
+	if (window.parent._wrs_conf_modalWindow) {
+		document.body.className += document.body.className + "wrs_modal_open";
+	}
+
 	var queryParams = wrs_int_opener.wrs_getQueryParams(window);
 	var editor;
 	
@@ -100,6 +113,10 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 	var controls = document.getElementById('controls');
 	var submitButton = document.createElement('input');
 	submitButton.type = 'button';
+	submitButton.className = 'wrs_button_accept';
+	submitButton.background = '#778e9a';
+	submitButton.color = '#ffffff'
+
 	if (strings['accept'] != null){
 		submitButton.value = strings['accept'];
 	}else{
@@ -108,13 +125,21 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 	
 	
 	wrs_int_opener.wrs_addEvent(submitButton, 'click', function () {
+		// In order to avoid n-formulas on n-clicks
+		// submit button is disabled 1 second
+		submitButton.disabled = true;
+
+		setTimeout(function()
+			{submitButton.disabled=false;
+			}, 1000);
+
 		var mathml = '';
-	
+
 		if (!editor.isFormulaEmpty()) {
 			mathml += editor.getMathML();							// If isn't empty, get mathml code to mathml variable.
 			mathml = wrs_int_opener.wrs_mathmlEntities(mathml);		// Apply a parse.
 		}
-		
+	
 		/* FCKeditor integration begin */
 		if (window.parent.InnerDialogLoaded && window.parent.FCKBrowserInfo.IsIE) {			// On IE, we must close the dialog for push the caret on the correct position.
 			closeFunction();
@@ -130,11 +155,14 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 		}
 	});
 	
-	controls.appendChild(submitButton);
+	var buttonContainer = document.getElementById('buttonContainer');
+	buttonContainer.appendChild(submitButton);
 
 	// Cancel button.
 	var cancelButton = document.createElement('input');
 	cancelButton.type = 'button';
+	cancelButton.className = 'wrs_button_cancel';
+
 	if (strings['cancel'] != null){
 		cancelButton.value = strings['cancel'];
 	}else{
@@ -146,9 +174,9 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 		closeFunction();
 	});
 	
-	controls.appendChild(cancelButton);
+	buttonContainer.appendChild(cancelButton);
 
-	var manualLink = document.getElementById('a_manual');
+	/*var manualLink = document.getElementById('a_manual');
 	if (typeof manualLink != 'undefined' && strings['manual'] != null){
 		manualLink.innerHTML = strings['manual'];
 	}
@@ -156,7 +184,7 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 	var latexLink = document.getElementById('a_latex');
 	if (typeof latexLink != 'undefined' && strings['latex'] != null){
 		latexLink.innerHTML = strings['latex'];
-	}
+	}*/
 
 	var queryLang = '';
 	if ('lang' in queryParams){
@@ -168,7 +196,7 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 		body[0].setAttribute("dir","rtl");
 		var links = document.getElementById('links');
 		links.id = 'links_rtl';
-		var controls = document.getElementById('controls');
+		var controls = document.getElementById('buttonContainer');
 		controls.id = 'controls_rtl';
 	}
 	
@@ -184,4 +212,4 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 
 wrs_int_opener.wrs_addEvent(window, 'unload', function () {
 	wrs_int_opener.wrs_int_notifyWindowClosed();
-});
+});	

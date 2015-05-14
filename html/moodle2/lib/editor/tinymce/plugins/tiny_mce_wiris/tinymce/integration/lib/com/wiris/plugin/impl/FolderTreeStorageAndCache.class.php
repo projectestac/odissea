@@ -74,7 +74,7 @@ class com_wiris_plugin_impl_FolderTreeStorageAndCache implements com_wiris_plugi
 	public function retreiveData($digest, $service) {
 		$formula = $this->getAndCheckFolder(com_wiris_plugin_api_ConfigurationKeys::$CACHE_FOLDER);
 		$store = $this->getFileStore($formula, $digest, $this->getExtension($service));
-		if(com_wiris_plugin_impl_FolderTreeStorageAndCache::$BACKWARDS_COMPAT) {
+		if(com_wiris_plugin_impl_FolderTreeStorageAndCache::$backwards_compat) {
 			if(!$store->exists()) {
 				$oldstore = com_wiris_util_sys_Store::newStore($formula . "/" . $digest . "." . $this->getExtension($service));
 				if(!$oldstore->exists()) {
@@ -94,7 +94,7 @@ class com_wiris_plugin_impl_FolderTreeStorageAndCache implements com_wiris_plugi
 	public function decodeDigest($digest) {
 		$formula = $this->getAndCheckFolder(com_wiris_plugin_api_ConfigurationKeys::$FORMULA_FOLDER);
 		$store = $this->getFileStore($formula, $digest, "ini");
-		if(com_wiris_plugin_impl_FolderTreeStorageAndCache::$BACKWARDS_COMPAT) {
+		if(com_wiris_plugin_impl_FolderTreeStorageAndCache::$backwards_compat) {
 			if(!$store->exists()) {
 				$oldstore = com_wiris_util_sys_Store::newStore($formula . "/" . $digest . ".ini");
 				$parent = $store->getParent();
@@ -126,6 +126,6 @@ class com_wiris_plugin_impl_FolderTreeStorageAndCache implements com_wiris_plugi
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $BACKWARDS_COMPAT = true;
+	static $backwards_compat = true;
 	function __toString() { return 'com.wiris.plugin.impl.FolderTreeStorageAndCache'; }
 }

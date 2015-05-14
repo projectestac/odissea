@@ -23,7 +23,7 @@ echo $OUTPUT->heading($book->name . ' (' . $book->isbn . ')',2);
 echo $OUTPUT->heading(get_string('manage_credentials', 'local_rcommon'),3);
 $credentials = $DB->get_records_sql("SELECT ruc.id, ruc.credentials, ruc.euserid, u.lastname, u.firstname FROM {rcommon_user_credentials} ruc LEFT JOIN {user} u ON ruc.euserid = u.id WHERE isbn = '{$book->isbn}' ORDER BY u.lastname, u.firstname, ruc.credentials");
 
-$validbook = in_array(textlib::strtolower($book->format), rcommon_book::$allowedformats);
+$validbook = in_array(core_text::strtolower($book->format), rcommon_book::$allowedformats);
 if ($validbook) {
 	echo '<input onclick="document.location.href=\'edit_book_credential.php?backto=books&isbn=' . $book->isbn . '\';" type="submit" value="'.get_string('keymanager_add', 'local_rcommon').'" />';
 }
@@ -49,7 +49,7 @@ if (empty($credentials)){
 		} else {
 			$row[] = "";
 		}
-		$row[] = '<span title="' . $credential->credentials . '">' . (textlib::strlen($credential->credentials) > 30? textlib::substr($credential->credentials, 0, 30) . '...': $credential->credentials);
+		$row[] = '<span title="' . $credential->credentials . '">' . (core_text::strlen($credential->credentials) > 30? core_text::substr($credential->credentials, 0, 30) . '...': $credential->credentials);
 		$row[] = $name;
 		$actions = array();
 		$actions[] = '<a href="edit_book_credential.php?backto=books&id=' . $credential->id . '" title="' . get_string('edit') .'" style="margin-left: 15px;">' . get_string('edit') . '</a>';

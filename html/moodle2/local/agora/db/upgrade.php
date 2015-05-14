@@ -42,6 +42,28 @@ function xmldb_local_agora_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2015011400, 'local', 'agora');
     }
 
+    if ($oldversion < 2015050400) {
+        // Preconfigure airnotifier
+        $config = get_config('message');
+        $providers = $DB->get_records('message_providers');
+        foreach ($providers as $provider) {
+            $componentproviderbase = $provider->component.'_'.$provider->name;
+            foreach (array('loggedin', 'loggedoff') as $state) {
+                $linepref = '';
+                $componentproviderstate = $componentproviderbase.'_'.$state;
+                $name = 'message_provider_'.$provider->component.'_'.$provider->name.'_'.$state;
+                if (isset($config->$name) && !empty($config->$name)) {
+                    $value = explode(',', $config->$name);
+                    $value[] = 'airnotifier';
+                    $value = implode(',', $value);
+                    set_config($name, $value, 'message');
+                }
+            }
+        }
+
+        upgrade_plugin_savepoint(true, 2015050400, 'local', 'agora');
+    }
+
     return true;
 }
 

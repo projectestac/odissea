@@ -16,13 +16,8 @@ class mod_rcontent_mod_form extends moodleform_mod {
         $mform    =& $this->_form;
         $update = optional_param("update", 0, PARAM_INT);
         $rcontentconfig = get_config('rcontent');
-        $frame = $rcontentconfig->frametype;
-        $popup = $rcontentconfig->popup;
         $RCONTENT_WINDOW_OPTIONS = array(
-            'resizable' => $rcontentconfig->popupresizable,
             'scrollbars' => $rcontentconfig->popupscrollbars,
-            'directories' => $rcontentconfig->popupdirectories,
-            'location' => $rcontentconfig->popuplocation,
             'menubar' => $rcontentconfig->popupmenubar,
             'toolbar' => $rcontentconfig->popuptoolbar,
             'status' => $rcontentconfig->popupstatus,
@@ -34,17 +29,16 @@ class mod_rcontent_mod_form extends moodleform_mod {
         if (!empty($update)) {
             if ($cm = get_coursemodule_from_id('rcontent', $update)) {
                 if ($rcontent = $DB->get_record('rcontent', array('id' => $cm->instance))) {
-                    $frame = $rcontent->frame;
-                    $popup = $rcontent->popup;
                     if (!empty($rcontent->popup_options)) {
-                        foreach ($RCONTENT_WINDOW_OPTIONS as $key => $value) {
-                            $RCONTENT_WINDOW_OPTIONS[$key] = 0;
-                        }
+                        $selected_options = array();
                         $popup_options_ar = explode(",", $rcontent->popup_options);
                         foreach ($popup_options_ar as $p) {
                             $pa = explode("=", $p);
-                            if(in_array($pa[0], $RCONTENT_WINDOW_OPTIONS)){
-                                $RCONTENT_WINDOW_OPTIONS[$pa[0]] = $pa[1];
+                            $selected_options[$pa[0]] = $pa[1];
+                        }
+                        foreach ($RCONTENT_WINDOW_OPTIONS as $key => $value) {
+                            if (isset($selected_options[$key])) {
+                                $RCONTENT_WINDOW_OPTIONS[$key] = $selected_options[$key];
                             }
                         }
                     }
@@ -90,11 +84,7 @@ class mod_rcontent_mod_form extends moodleform_mod {
 
         // Level
 		$levellistarray = rcontent_level_list();
-        if (ajaxenabled()) {
-            $attrs = array('onchange' => 'javascript:rcontent_load_isbn_list(this.value)');
-        } else {
-  	        $attrs = array('onchange' => 'javascript:this.form.issubmit.value=0;this.form.submit();');
-        }
+        $attrs = array('onchange' => 'javascript:rcontent_load_isbn_list(this.value)');
         $mform->addElement('select', 'level', get_string('level', 'rcontent'), $levellistarray, $attrs);
         $mform->setType('level', PARAM_INT);
         $mform->addRule('level', get_string('isbnerror', 'rcontent'), 'nonzero');
@@ -110,11 +100,7 @@ class mod_rcontent_mod_form extends moodleform_mod {
   	        $isbnlistarray = array('- '.get_string('isbn', 'rcontent').' -');
             $selecttype = 'select';
         }
-        if (ajaxenabled()) {
-            $attrs = array('onchange' => 'javascript:rcontent_load_unit_list(this.value);');
-        } else {
-  	        $attrs = array('onchange' => 'javascript:this.form.issubmit.value=0;this.form.submit();');
-        }
+        $attrs = array('onchange' => 'javascript:rcontent_load_unit_list(this.value);');
         $mform->addElement($selecttype, 'isbn', get_string('isbn', 'rcontent'), $isbnlistarray, $attrs);
         $mform->setType('isbn', PARAM_INT);
         $mform->addRule('isbn', get_string('isbnerror', 'rcontent'), 'nonzero');
@@ -129,11 +115,7 @@ class mod_rcontent_mod_form extends moodleform_mod {
   	        $unitlistarray = array('- '.get_string('unit', 'rcontent').' -');
         }
         // Set unit select onchange event width aja and without it
-        if (ajaxenabled()) {
-  	        $attrs = array('onchange' => 'javascript:rcontent_load_activity_list(document.getElementById("id_isbn").value,this.value)');
-        } else {
-  	        $attrs = array('onchange' => 'javascript:this.form.issubmit.value=0;this.form.submit()');
-        }
+        $attrs = array('onchange' => 'javascript:rcontent_load_activity_list(document.getElementById("id_isbn").value,this.value)');
         $mform->addElement('select', 'unit', get_string('unit', 'rcontent'), $unitlistarray , $attrs);
         $mform->setType('unit', PARAM_INT);
         $mform->setDefault('unit', $unit);
@@ -155,26 +137,18 @@ class mod_rcontent_mod_form extends moodleform_mod {
         $mform->addHelpButton('summary', 'summary');
 
         // Other settings
-        $mform->addElement('header', 'displaysettings', get_string('displaysettings', 'rcontent'));
-
-        // Forcedownload
-        $mform->addElement('checkbox', 'forcedownload', get_string('forcedownload', 'rcontent'));
-        $mform->addHelpButton('forcedownload', 'forcedownload', 'rcontent');
-        $mform->disabledIf('forcedownload', 'windowpopup', 'eq', 1);
+        $mform->addElement('header', 'displaysettings', get_string('appearance'));
 
         // Pagewindow
         $woptions = array(0 => get_string('pagewindow', 'rcontent'), 1 => get_string('newwindow', 'rcontent'));
-        $mform->addElement('select', 'windowpopup', get_string('display', 'rcontent'), $woptions);
-        $mform->setDefault('windowpopup', $popup);
-        $mform->disabledIf('windowpopup', 'forcedownload', 'checked');
+        $mform->addElement('select', 'popup', get_string('display', 'rcontent'), $woptions);
+        $mform->setDefault('popup', $rcontentconfig->popup);
 
         // Keepnavigationvisibleorno
-        $mform->addElement('select', 'framepage', get_string('keepnavigationvisible', 'rcontent'), rcontent_get_frame_type_array());
-        $mform->addHelpButton('framepage', 'keepnavigationvisible', 'rcontent');
-        $mform->setDefault('framepage', $frame);
-        $mform->disabledIf('framepage', 'windowpopup', 'eq', 1);
-        $mform->disabledIf('framepage', 'forcedownload', 'checked');
-        $mform->setAdvanced('framepage');
+        $mform->addElement('checkbox', 'frame', get_string('keepnavigationvisible', 'rcontent'));
+        $mform->setDefault('frame', $rcontentconfig->frame);
+        $mform->disabledIf('frame', 'popup', 'eq', 1);
+        $mform->setAdvanced('frame');
 
         // Going through all the options popup
         foreach ($RCONTENT_WINDOW_OPTIONS as $option => $o) {
@@ -182,10 +156,11 @@ class mod_rcontent_mod_form extends moodleform_mod {
                 $mform->addElement('text', $option, get_string('new'.$option, 'rcontent'), array('size' => '4'));
                 $mform->setDefault($option, $o);
                 $mform->setType($option, PARAM_INT);
+                $mform->disabledIf($option, 'popup', 'eq', 0);
             } else {
                 $mform->addElement('checkbox', $option, get_string('new'.$option, 'rcontent'));
                 $mform->setDefault($option, $o);
-                $mform->disabledIf($option, 'windowpopup', 'eq', 0);
+                $mform->disabledIf($option, 'popup', 'eq', 0);
             }
             $mform->setAdvanced($option);
         }
@@ -216,7 +191,7 @@ class mod_rcontent_mod_form extends moodleform_mod {
         $this->add_action_buttons();
     }
 
-    function validation ($data, $files){
+    function validation ($data, $files) {
 
     	$errors = array();
 

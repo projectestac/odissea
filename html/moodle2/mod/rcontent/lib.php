@@ -1,8 +1,7 @@
 <?php
 
 global $RCONTENT_WINDOW_OPTIONS; // must be global because it might be included from a function!
-$RCONTENT_WINDOW_OPTIONS = array('resizable', 'scrollbars', 'directories', 'location',
-                                 'menubar', 'toolbar', 'status', 'width', 'height');
+$RCONTENT_WINDOW_OPTIONS = array('scrollbars', 'menubar', 'toolbar', 'status', 'width', 'height');
 
 /**
  * Add new instance
@@ -14,12 +13,9 @@ function rcontent_add_instance($data){
         return false;
 
     global $DB;
-    //resizable=1,scrollbars=1,directories=1,location=1,menubar=1,toolbar=1,status=1,height=450,width=620
+    //scrollbars=1,menubar=1,toolbar=1,status=1,height=450,width=620
     $popup_options = array();
-    if(isset($data->resizable))   $popup_options[]="resizable=".$data->resizable;
     if(isset($data->scrollbars))  $popup_options[]="scrollbars=".$data->scrollbars;
-    if(isset($data->directories)) $popup_options[]="directories=".$data->directories;
-    if(isset($data->location))    $popup_options[]="location=".$data->location;
     if(isset($data->menubar))     $popup_options[]="menubar=".$data->menubar;
     if(isset($data->toolbar))     $popup_options[]="toolbar=".$data->toolbar;
     if(isset($data->status))      $popup_options[]="status=".$data->status;
@@ -37,9 +33,9 @@ function rcontent_add_instance($data){
     $tmp->unitid        = (isset($data->unit))?$data->unit:required_param('unit',PARAM_INT);
     $tmp->activityid    = (isset($data->activity))?$data->activity:required_param('activity',PARAM_INT);
     $tmp->whatgrade     = $data->whatgrade;
-    $tmp->popup         = $data->windowpopup;
+    $tmp->popup         = $data->popup;
     $tmp->popup_options = $popup_options;
-    $tmp->frame         = (isset($data->framepage))?$data->framepage:0;
+    $tmp->frame         = (isset($data->frame))?$data->frame:0;
     //MARSUPIAL ********** AFEGIT -> Bug no save frame size
     //2011.06.17 @mmartinez
     $tmp->width         = str_replace('%','',$data->width);
@@ -69,10 +65,7 @@ function rcontent_update_instance($data){
    global $DB;
 
     $popup_options = array();
-    if(isset($data->resizable))   $popup_options[]="resizable=".$data->resizable;
     if(isset($data->scrollbars))  $popup_options[]="scrollbars=".$data->scrollbars;
-    if(isset($data->directories)) $popup_options[]="directories=".$data->directories;
-    if(isset($data->location))    $popup_options[]="location=".$data->location;
     if(isset($data->menubar))     $popup_options[]="menubar=".$data->menubar;
     if(isset($data->toolbar))     $popup_options[]="toolbar=".$data->toolbar;
     if(isset($data->status))      $popup_options[]="status=".$data->status;
@@ -91,9 +84,9 @@ function rcontent_update_instance($data){
     $tmp->unitid        = (isset($data->unit))?$data->unit:required_param('unit',PARAM_INT);
     $tmp->activityid    = (isset($data->activity))?$data->activity:required_param('activity',PARAM_INT);
     $tmp->whatgrade     = $data->whatgrade;
-    $tmp->popup         = $data->windowpopup;
+    $tmp->popup         = $data->popup;
     $tmp->popup_options = $popup_options;
-    $tmp->frame         = (isset($data->framepage))?$data->framepage:0;
+    $tmp->frame         = (isset($data->frame))?$data->frame:0;
 //MARSUPIAL ********** AFEGIT -> Bug no save frame size
 //2011.06.17 @mmartinez
     $tmp->width         = $data->width;
@@ -319,20 +312,43 @@ function rcontent_supports($feature) {
 ////////////////////////////////////////////////////////////////////////////////
 
 /**
- * Extends the global navigation tree by adding qv nodes if there is a relevant content
+ * This function extends the settings navigation block for the site.
  *
- * This can be called by an AJAX request so do not rely on $PAGE as it might not be set up properly.
+ * It is safe to rely on PAGE here as we will only ever be within the module
+ * context when this is called
  *
- * @param navigation_node $navref An object representing the navigation tree node of the qv module instance
- * @param stdClass $course
- * @param stdClass $module
- * @param cm_info $cm
+ * @param settings_navigation $settings
+ * @param navigation_node $node
+ * @return void
  */
-function rcontent_extend_navigation(navigation_node $navref, stdclass $course, stdclass $module, cm_info $cm) {
-    global $CFG, $OUTPUT, $USER, $DB;
+function rcontent_extend_settings_navigation($settings, $node) {
+    global $DB, $CFG, $PAGE;
 
-    if(file_exists($CFG->dirroot.'/blocks/rgrade/rgrade_table.php')){
-        $navref->add(get_string('rgrade', 'block_rgrade'), new moodle_url('/blocks/rgrade/rgrade_table.php',
-         array('courseid'=>$course->id, 'bookid'=>$module->bookid)));
+    // We want to add these new nodes after the Edit settings node, and before the
+    // Locally assigned roles node. Of course, both of those are controlled by capabilities.
+    $keys = $node->get_children_key_list();
+    $beforekey = null;
+    $i = array_search('modedit', $keys);
+    if ($i === false and array_key_exists(0, $keys)) {
+        $beforekey = $keys[0];
+    } else if (array_key_exists($i + 1, $keys)) {
+        $beforekey = $keys[$i + 1];
+    }
+
+    if (has_any_capability(array('mod/rcontent:viewreport'), $PAGE->cm->context)) {
+        $url = new moodle_url('/mod/rcontent/report.php',
+                        array('id' => $PAGE->cm->id));
+        $reportnode = $node->add_node(navigation_node::create(get_string('results', 'rcontent'), $url,
+                navigation_node::TYPE_SETTING,
+                null, null, new pix_icon('i/report', '')), $beforekey);
+
+        if (file_exists($CFG->dirroot.'/blocks/rgrade/rgrade_table.php')) {
+            $rcontent = $DB->get_record('rcontent', array('id' => $PAGE->cm->instance));
+            if ($rcontent->bookid) {
+                $reportnode->add_node(navigation_node::create(get_string('rgrade', 'block_rgrade'),
+                    new moodle_url('/blocks/rgrade/rgrade_table.php', array('courseid' => $PAGE->course->id, 'bookid' => $rcontent->bookid)),
+                    navigation_node::TYPE_SETTING, null, 'rcontent_report_rgrade', new pix_icon('i/item', '')));
+            }
+        }
     }
 }

@@ -48,7 +48,7 @@ class backup_rcontent_activity_structure_step extends backup_activity_structure_
             'userid', 'rcontentid', /*'unitid', 'activityid',*/
             'grade', 'mingrade', 'maxgrade', 'attempt', 'maxattempts',
             'starttime', 'totaltime', 'maxtotaltime', 'status',
-            'comments', 'urlviewresults', 'sumweights', 
+            'comments', 'urlviewresults', 'sumweights',
             'timecreated', 'timemodified', 'unitcode', 'activitycode'));
 
         $grades_details = new backup_nested_element('grades_details');
@@ -80,7 +80,7 @@ class backup_rcontent_activity_structure_step extends backup_activity_structure_
               FROM {rcontent} rc
               LEFT outer JOIN {rcommon_level} rlevel on rlevel.id=rc.levelid
               LEFT outer JOIN {rcommon_books} rcb on rcb.id=rc.bookid and rcb.levelid=rc.levelid
-              LEFT outer JOIN {rcommon_books_units} unit on unit.id=rc.unitid and unit.bookid=rc.bookid 
+              LEFT outer JOIN {rcommon_books_units} unit on unit.id=rc.unitid and unit.bookid=rc.bookid
               LEFT outer JOIN {rcommon_books_activities} activity on activity.id=rc.activityid and activity.bookid=rc.bookid and activity.unitid = rc.unitid
              WHERE rc.id = ?', array(backup::VAR_ACTIVITYID));
 
@@ -90,7 +90,7 @@ class backup_rcontent_activity_structure_step extends backup_activity_structure_
                 SELECT rg.*, unit.code as unitcode, activity.code as activitycode
                 FROM {rcontent_grades} rg
                 INNER JOIN {rcontent} rc ON rc.id=rg.rcontentid
-                LEFT outer JOIN {rcommon_books_units} unit on unit.id=rc.unitid and unit.bookid=rc.bookid 
+                LEFT outer JOIN {rcommon_books_units} unit on unit.id=rc.unitid and unit.bookid=rc.bookid
                 LEFT outer JOIN {rcommon_books_activities} activity on activity.id=rc.activityid and activity.bookid=rc.bookid and activity.unitid = rc.unitid
                 WHERE rg.rcontentid = :rcontent
                 ORDER BY rg.id',
@@ -100,19 +100,19 @@ class backup_rcontent_activity_structure_step extends backup_activity_structure_
                 SELECT rc.*, unit.code as unitcode, activity.code as activitycode
                 FROM {rcontent_grades_details} rg
                 INNER JOIN {rcontent} rc ON rc.id=rg.rcontentid
-                LEFT outer JOIN {rcommon_books_units} unit on unit.id=rc.unitid and unit.bookid=rc.bookid 
-                LEFT outer JOIN {rcommon_books_activities} activity on activity.id=rc.activityid and activity.bookid=rc.bookid and activity.unitid = rc.unitid                
+                LEFT outer JOIN {rcommon_books_units} unit on unit.id=rc.unitid and unit.bookid=rc.bookid
+                LEFT outer JOIN {rcommon_books_activities} activity on activity.id=rc.activityid and activity.bookid=rc.bookid and activity.unitid = rc.unitid
                 WHERE rg.rcontentid = :rcontent
                 ORDER BY rg.id',
             array('rcontent' => backup::VAR_PARENTID));
 
-        
+
         $track_credentials->set_source_sql('
                 SELECT *
                 FROM {rcontent_track_credentials}
                 ORDER BY id',
             array());
-        
+
         // Define id annotations
         $grade->annotate_ids('user', 'userid');
         $grade_detail->annotate_ids('user', 'userid');

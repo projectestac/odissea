@@ -10,6 +10,23 @@ class com_wiris_plugin_impl_PluginBuilderImpl extends com_wiris_plugin_api_Plugi
 		$this->configuration = $ci;
 		$ci->setPluginBuilderImpl($this);
 	}}
+	public function addCorsHeaders($response, $origin) {
+		$conf = $this->getConfiguration();
+		if($conf->getProperty("wiriscorsenabled", "false") === "true") {
+			$confDir = $conf->getProperty(com_wiris_plugin_api_ConfigurationKeys::$CONFIGURATION_PATH, null);
+			$corsConfFile = $confDir . "/corsservers.ini";
+			$s = com_wiris_system_Storage::newStorage($corsConfFile);
+			if($s->exists()) {
+				$dir = $s->read();
+				$allowedHosts = _hx_explode("\x0A", $dir);
+				if(com_wiris_system_ArrayEx::contains($allowedHosts, $origin)) {
+					$response->setHeader("Access-Control-Allow-Origin", $origin);
+				}
+			} else {
+				$response->setHeader("Access-Control-Allow-Origin", "*");
+			}
+		}
+	}
 	public function addReferer($h) {
 		$conf = $this->getConfiguration();
 		$h->setHeader("Referer", $conf->getProperty(com_wiris_plugin_api_ConfigurationKeys::$REFERER, ""));

@@ -31,14 +31,14 @@ defined('MOODLE_INTERNAL') || die();
  * @return bool
  */
 function xmldb_local_rcommon_install() {
-    global $DB;
+    global $DB, $CFG;
 
     // do the install
     $record = new stdClass();
     $record->name		= '1r ESO';
     $record->code 		= '1ESO';
     $DB->insert_record('rcommon_level', $record);
-    
+
     $record = new stdClass();
     $record->name		= '2n ESO';
     $record->code 		= '2ESO';
@@ -48,7 +48,7 @@ function xmldb_local_rcommon_install() {
     $record->name		= '3r ESO';
     $record->code 		= '3ESO';
     $DB->insert_record('rcommon_level', $record);
-    
+
     $record = new stdClass();
     $record->name		= '4r ESO';
     $record->code 		= '4ESO';
@@ -58,22 +58,22 @@ function xmldb_local_rcommon_install() {
     $record->name		= '1r EP';
     $record->code 		= '1EP';
     $DB->insert_record('rcommon_level', $record);
-    
+
     $record = new stdClass();
     $record->name		= '2n EP';
     $record->code 		= '2EP';
     $DB->insert_record('rcommon_level', $record);
-    
+
     $record = new stdClass();
     $record->name		= '3r EP';
     $record->code 		= '3EP';
     $DB->insert_record('rcommon_level', $record);
-    
+
     $record = new stdClass();
     $record->name		= '4r EP';
     $record->code 		= '4EP';
     $DB->insert_record('rcommon_level', $record);
-    
+
     $record = new stdClass();
     $record->name		= '5è EP';
     $record->code 		= '5EP';
@@ -84,6 +84,18 @@ function xmldb_local_rcommon_install() {
     $record->code 		= '6EP';
     $DB->insert_record('rcommon_level', $record);
     // Should not need to modify course modinfo because this is a new install
+
+    require_once($CFG->dirroot.'/local/rcommon/locallib.php');
+    if (isset($CFG->isagora) && $CFG->isagora) {
+        if (isset($CFG->ismarsupial) && $CFG->ismarsupial) {
+            $enable = 1;
+        } else {
+            $enable = 0;
+        }
+        set_marsupial_state($enable);
+    } else {
+        set_marsupial_state(1);
+    }
 
     return true;
 }

@@ -17,6 +17,8 @@ $string['consumewait'] = 'Updating books structure. This process may take some t
 $string['delok'] = 'Data removed successfully';
 $string['delko'] = 'Unable to delete the data, please try again a few minutes later';
 $string['downloadbookstructures'] = 'Update books structures';
+$string['enabled'] = 'Enable Marsupial';
+$string['enabled_desc'] = 'Enable/disable Marsupial and all its modules';
 $string['error_authentication'] = 'Authentication error code: {$a}';
 
 $string['error_code_1'] = 'URL successfully generated';

@@ -102,7 +102,7 @@ if (!empty($books)) {
     $showall = optional_param('showall', false, PARAM_BOOL);
     $hiddenbooks = false;
     foreach ($books as $book) {
-        if (!$showall && !in_array(textlib::strtolower($book->format), rcommon_book::$allowedformats)) {
+        if (!$showall && !in_array(core_text::strtolower($book->format), rcommon_book::$allowedformats)) {
             $hiddenbooks = true;
             continue;
         }

@@ -278,12 +278,18 @@ function get_ResultadoDetalleExtendido($ResultadoExtendido, $user, $passwd) {
             return generate_error("EstadoInvalido", "", "ResultadoDetalleExtendido", $cm->id);
         }
 
-        if (!valid_user($ResultadoExtendido->idUsuario, $rcontent->course)) {
-            return generate_error("UsrNoExisteEnCurso", get_string('user', 'rcontent') . ": {$ResultadoExtendido->idUsuario} - " . get_string('course', 'rcontent') . ": {$rcontent->course}", "ResultadoDetalleExtendido",$cm->id);
-        }
+        if ($rcontent->course == SITEID) {
+            if (!$DB->record_exists('user',  array('id' => $ResultadoExtendido->idUsuario))) {
+                return generate_error("UsrNoExisteEnCurso", get_string('user', 'rcontent') . ": {$ResultadoExtendido->idUsuario} - " . get_string('course', 'rcontent') . ": {$rcontent->course}", "ResultadoDetalleExtendido",$cm->id);
+            }
+        } else {
+            if (!valid_user($ResultadoExtendido->idUsuario, $rcontent->course)) {
+                return generate_error("UsrNoExisteEnCurso", get_string('user', 'rcontent') . ": {$ResultadoExtendido->idUsuario} - " . get_string('course', 'rcontent') . ": {$rcontent->course}", "ResultadoDetalleExtendido",$cm->id);
+            }
 
-        if (!has_capability('mod/rcontent:savetrack', $contextmodule, $ResultadoExtendido->idUsuario)) {
-            return generate_error("SinPermisosGuardarSeguimiento", get_string('user', 'rcontent') . ": {$ResultadoExtendido->idUsuario}", "ResultadoDetalleExtendido",$cm->id);
+            if (!has_capability('mod/rcontent:savetrack', $contextmodule, $ResultadoExtendido->idUsuario)) {
+                return generate_error("SinPermisosGuardarSeguimiento", get_string('user', 'rcontent') . ": {$ResultadoExtendido->idUsuario}", "ResultadoDetalleExtendido",$cm->id);
+            }
         }
 
         $unidad = valid_unit($ResultadoExtendido, $book, $rcontent->unitid);
@@ -332,12 +338,6 @@ function get_ResultadoDetalleExtendido($ResultadoExtendido, $user, $passwd) {
                             'unitid' => $instance->unitid,
                             'activityid' => $instance->activityid,
                             'attempt' => $instance->attempt);
-
-            //MARSUPIAL *********** ELIMINAT -> Not check the FechaHoraInicio field
-            //2011.12.19 @abertranb
-            //if (isset($detalle->FechaHoraInicio))
-            //    $select['starttime']= $detalle->FechaHoraInicio;
-            // ********** FI
 
             if (!$rcont_gradeid = $DB->get_field('rcontent_grades', 'id', $select)) {
                 $instance->timecreated = $instance->timemodified;
@@ -394,16 +394,10 @@ function get_ResultadoDetalleExtendido($ResultadoExtendido, $user, $passwd) {
 
                 $select = array('userid' => $instance->userid,
                                 'rcontentid' => $instance->rcontentid,
-                                'unitid' => $instance->activityid,
-                                'activityid' => $actividadid,
-                                'code' => $detalle->IdDetalle,
+                                'unitid' => $instance->unitid,
+                                'activityid' => $instance->activityid ,
+                                'code' => $instance->code,
                                 'attempt' => $instance->attempt);
-
-                //MARSUPIAL *********** ELIMINAT -> Not check the FechaHoraInicio field
-                //2011.12.19 @abertranb
-                //if (isset($detalle->FechaHoraInicio))
-                //    $select = $select. ' AND starttime='. $detalle->FechaHoraInicio;
-                // ********** FI
 
                 if (!$rcont_gradeid = $DB->get_field('rcontent_grades_details', 'id', $select)) {
                     $instance->timecreated = $instance->timemodified;

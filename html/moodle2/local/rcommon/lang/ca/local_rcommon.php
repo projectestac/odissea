@@ -17,6 +17,8 @@ $string['consumewait'] = 'Descarregant l\'estructura dels llibres. Aquest procé
 $string['delok'] = 'Dades esborrades correctament';
 $string['delko'] = 'No ha estat possible esborrar les dades, torneu a intentar-ho passats uns minuts';
 $string['downloadbookstructures'] = 'Actualitza l\'estructura dels llibres';
+$string['enabled'] = 'Activa Marsupial';
+$string['enabled_desc'] = 'Activa/desactiva Marsupial i els seus mòduls';
 $string['error_authentication'] = 'Error d\'autenticació codi: {$a}';
 
 $string['error_code_1'] = 'URL generada correctament.';

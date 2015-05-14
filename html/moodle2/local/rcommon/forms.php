@@ -51,7 +51,7 @@ class local_rcommon_add_credentials_form extends moodleform {
 
 		$books = $DB->get_records_sql('SELECT b.*, p.name as publisher FROM {rcommon_books} b JOIN {rcommon_publisher} p ON b.publisherid = p.id ORDER BY p.name, b.name ');
 		foreach($books as $book) {
-			if (in_array(textlib::strtolower($book->format), rcommon_book::$allowedformats)) {
+			if (in_array(core_text::strtolower($book->format), rcommon_book::$allowedformats)) {
             	if (!isset($select_list[$book->publisher])) {
                 	$select_list[$book->publisher] = array();
             	}
@@ -103,7 +103,7 @@ class local_rcommon_import_credentials_form extends moodleform {
 		$mform    =& $this->_form;
 
 		$post_max_size = ini_get('post_max_size');
-		$post_max_size_bytes = (textlib::substr($post_max_size, 0, textlib::strlen($post_max_size) - 1) * (1024 * 1024));
+		$post_max_size_bytes = (core_text::substr($post_max_size, 0, core_text::strlen($post_max_size) - 1) * (1024 * 1024));
 
 		$post_max_size_bytes = ($CFG->maxbytes != 0 && $CFG->maxbytes < $post_max_size_bytes)? $CFG->maxbytes: $post_max_size_bytes;
 		$post_max_size = $post_max_size_bytes / (1024 * 1024);

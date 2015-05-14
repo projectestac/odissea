@@ -77,4 +77,5 @@ function xmldb_block_my_books_upgrade($oldversion=0) {
         upgrade_block_savepoint(true, 2014111100, 'my_books');
     }
 
+    return true;
 }

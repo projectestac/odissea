@@ -145,4 +145,30 @@ class agora_script_base{
         return true;
 	}
 
+	protected function output($message, $type) {
+		if (is_object($message) || is_array($message)) {
+			print_object($message);
+			return;
+		}
+
+		if (CLI_SCRIPT) {
+			if (!empty($type)) {
+				$message = $type.': '.$message;
+			}
+            mtrace($message, "\n");
+            return;
+        } else {
+        	global $OUTPUT;
+        	switch ($type) {
+				case 'ERROR':
+					echo $OUTPUT->notification($message);
+					return;
+				case 'OK':
+					echo $OUTPUT->notification($message, 'notifysuccess');
+					return;
+			}
+            echo $message;
+        }
+	}
+
 }

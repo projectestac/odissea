@@ -51,7 +51,7 @@ function get_books_structure_publisher($publisher, $isbn = false) {
             echo '<ol>';
             foreach ($books as $book) {
                 // Disable scorm import
-                $bookformat = textlib::strtolower($book['formato']);
+                $bookformat = core_text::strtolower($book['formato']);
                 if (!in_array($bookformat, rcommon_book::$allowedformats)) {
                     continue;
                 }

@@ -50,14 +50,14 @@ class filter_wiris extends moodle_text_filter {
 		$n0 = stripos($text, '«math');
 		$n1 = stripos($text, '<math');
 		$n2 = stripos($text, '«applet');
-		
+
 		if ($n0 === false && $n1 === false && $n2 === false) {
 			// Nothing to do
 			return $text;
 		}
 
 		require_once "wirispluginwrapper.php";
-		
+
 		$wirisplugin = new WIRISpluginWrapper();
 		if (!$wirisplugin->is_installed()) {
 			return $text;
@@ -65,23 +65,24 @@ class filter_wiris extends moodle_text_filter {
 
 		$wirisplugin->begin();
 		$textservice = $wirisplugin->get_instance()->newTextService();
-		
+
 		$query = '';
 
 		global $COURSE;
-        
+
         if(isset($COURSE->id)){
-            $query .= 'course=' . $COURSE->id;
+            $query .= '?course=' . $COURSE->id;
         }
         if(isset($COURSE->category)) {
-            $query .= empty($query) ? '' : '/';
+            $query .= empty($query) ? '?' : '/';
             $query .= 'category=' . $COURSE->category;
         }
 
         $prop['refererquery'] = $query;
-        
+
+        $prop['savemode'] = 'safeXml'; // safeXml filtering.
 		$text = $textservice->filter($text, $prop);
-		$prop['savemode'] = 'xml';
+		$prop['savemode'] = 'xml'; // xml filtering.
 		$text = $textservice->filter($text, $prop);
 		$wirisplugin->end();
 		return $text;

@@ -5,11 +5,6 @@ function is_agora() {
     return isset($CFG->isagora) && $CFG->isagora;
 }
 
-function is_marsupial() {
-    global $CFG;
-    return isset($CFG->ismarsupial) && $CFG->ismarsupial;
-}
-
 function is_eoi() {
     global $CFG;
     return isset($CFG->iseoi) && $CFG->iseoi;
@@ -231,10 +226,6 @@ function is_rush_hour() {
 function is_enabled_in_agora ($mod) {
     if (is_agora()) {
 
-        // Only enabled in marsupial Moodles
-        if (!is_marsupial() && ($mod == 'rcontent' || $mod == 'rscorm' || $mod == 'atria' || $mod == 'rcommon' || $mod == 'my_books' || $mod == 'rgrade')) {
-            return false;
-        }
         // Only enabled in EOI Moodles
         if (!is_eoi() && ($mod == 'eoicampus')) {
             return false;
@@ -299,12 +290,13 @@ function is_service_enabled($service) {
 }
 
 function get_service_url($service) {
-    global $agora;
+    global $agora, $CFG;
     if (isset($agora['server']) && is_service_enabled($service)) {
+        $dns = $agora['server']['server'] . $agora['server']['base'].$CFG->dnscentre.'/';
         if ($service == 'nodes') {
-            return $agora['server']['server'] . $agora['server']['base'];
+            return $dns;
         }
-        return $agora['server']['server'] . $agora['server']['base'] . $service.'/';
+        return $dns . $service.'/';
     }
     return false;
 }
@@ -385,8 +377,6 @@ function get_moodle2_admin_datadir_folder($folder = '', $exceptiononerror = true
     return $directory;
 }
 
-
-
 function get_mailsender() {
     global $mailsender, $CFG;
     require_once($CFG->dirroot.'/local/agora/mailer/mailsender.class.php');
@@ -405,10 +395,14 @@ function get_mailsender() {
             set_config('apligestlogpath', $CFG->apligestlogpath);
         }
         $mailsender = new mailsender($CFG->apligestaplic, $CFG->noreplyaddress, 'educacio', $wsdl, $CFG->apligestlog, $CFG->apligestlogdebug, $CFG->apligestlogpath);
-    } catch (Exception $e){
-        mtrace('ERROR: Cannot initialize mailsender, no mail will be sent.');
-        mtrace($e->getMessage());
-        mtrace('The execution must go on!');
+    } catch (Exception $e) {
+        if (CLI_SCRIPT) {
+            mtrace('ERROR: Cannot initialize mailsender, no mail will be sent.');
+            mtrace($e->getMessage());
+            mtrace('The execution must go on!');
+        } else {
+            debugging('ERROR: Cannot initialize mailsender, no mail will be sent. <br> '.$e->getMessage(), DEBUG_NORMAL);
+        }
         $mailsender = false;
     }
     return $mailsender;
@@ -430,7 +424,8 @@ function send_apligest_mail($mail, $user) {
         }
 
         // Load the message
-        $message = new message(TEXTHTML, $CFG->apligestlog, $CFG->apligestlogdebug, $CFG->apligestlogpath);
+        $type = $mail->ContentType == 'text/plain' ? TEXTPLAIN : TEXTHTML;
+        $message = new message($type, $CFG->apligestlog, $CFG->apligestlogdebug, $CFG->apligestlogpath);
 
         // Set $to
         $toarray = array();

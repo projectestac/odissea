@@ -3,6 +3,8 @@
 class com_wiris_plugin_api_PluginBuilder {
 	public function __construct() { 
 	}
+	public function addCorsHeaders($response, $origin) {
+	}
 	public function newEditor() {
 		return null;
 	}

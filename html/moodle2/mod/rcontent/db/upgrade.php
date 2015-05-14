@@ -72,8 +72,7 @@ function xmldb_rcontent_upgrade($oldversion=0) {
         set_config('registersperreportpage', $CFG->rcontent_registersperreportpage, 'rcontent');
         unset_config('rcontent_registersperreportpage');
 
-        $options = array('resizable', 'scrollbars', 'directories', 'location',
-                                 'menubar', 'toolbar', 'status', 'width', 'height');
+        $options = array('scrollbars', 'menubar', 'toolbar', 'status', 'width', 'height');
         foreach ($options as $optionname) {
             $oldoption = "rcontent_popup$optionname";
             $newoption = "popup$optionname";

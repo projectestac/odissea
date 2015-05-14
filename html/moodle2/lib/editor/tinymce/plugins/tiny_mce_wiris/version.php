@@ -19,15 +19,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014120400;         	 // The current plugin version (Date: YYYYMMDDXX).
-$plugin->release = '3.53.1.1145';
+$plugin->version   = 2015041000;         	 // The current plugin version (Date: YYYYMMDDXX).
+$plugin->release = '3.53.3.1155';
 $plugin->requires  = 2012120300;        		// Requires this Moodle version.
 $plugin->component = 'tinymce_tiny_mce_wiris'; // Full name of the plugin (used for diagnostics).
 
 // If uninstall method is enabled, dependencies are disabled.
 // cyclical dependencies prevents uninstall.
-if (!get_config('tinymce_tiny_mce_wiris', 'uninstall')) {
-	$plugin->dependencies = array (
-		 'filter_wiris' => 2014120400
-	);
+global $DB;
+$dbman = $DB->get_manager();
+if ($dbman->table_exists('config_plugins')) {
+	if (!get_config('tinymce_tiny_mce_wiris', 'uninstall')) {
+		$plugin->dependencies = array (
+			 'filter_wiris' => 2015041000
+		);
+	}
 }

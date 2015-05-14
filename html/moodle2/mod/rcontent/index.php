@@ -5,56 +5,26 @@ require_once('locallib.php');
 
 $id = required_param('id', PARAM_INT);        // course
 
-// MARSUPIAL ********** AFEGIT -> Filter by status, get parameter with the filterby
-// 2011.08.31 @mmartinez
+// Filter by status, get parameter with the filterby
 $filterby = optional_param('filterby', '', PARAM_RAW);
-// ********** FI
 
 if (($course = $DB->get_record('course', array('id' => $id))) === false) {
     print_error('Course ID is incorrect');
 }
 
 require_course_login($course);
+$context = context_course::instance($course->id);
+
 $PAGE->set_url(new moodle_url('/mod/rcontent/index.php', array('id' => $id)));
-// MARSUPIAL ********** MODIFICAT -> Report index make text translatable
-// 2012.01.09 @mmartinez
-$strrcontent = get_string('modulename', 'rcontent');//
-// ********** ORIGINAL
-//$strrcontent = 'Remote content';//
-// ********** FI
+// Report index make text translatable
+$strrcontent = get_string('modulename', 'rcontent');
+
 
 /// Print the header
-
-// MARSUPIAL ********** MODIFICAT -> Deprected code Moodle 2.3
-// 2012.12.12 @abertranb
 echo $PAGE->set_heading($course->fullname);
 echo $OUTPUT->header($course);
 
-// ********** ORIGINAL
-/*$navlinks = array(
-    array(
-        'name' => $strrcontent,
-        'link' => '',
-        'type' => 'activity'
-    )
-);
-
-$navigation = build_navigation($navlinks);
-
-print_header_simple(
-    $strrcontent,
-    '',
-    $navigation,
-    '',
-    '',
-    true,
-    '',
-    navmenu($course)
-);*/
-// ********** FI
-
-// MARSUPIAL ********** AFEGIT -> Filter by status, add select field
-// 2011.08.31 @mmartinez
+//  Filter by status, add select field
 $filteroptionsurl         = 'index.php?id='.$id;
 $filteroptionsparam       = '&amp;filterby=';
 $filteroptionsurlandparam = $filterselected = $filteroptionsurl.$filteroptionsparam;
@@ -68,7 +38,6 @@ if (($rcontents = get_all_instances_in_course('rcontent', $course)) === false) {
     notice('There are no rcontents', '../../course/view.php?id=' . $course->id);
     die;
 }
-//echo '<br>all_instances_in_course_response: '; print_r($rcontents); echo '<br><br>'; //just for debug purpose
 
 /// Print the list of instances (your module will probably extend this)
 
@@ -76,20 +45,11 @@ $strname = get_string('name');
 $strsummary = get_string('summary');
 $strreport = get_string('report','rcontent');
 
-// MARSUPIAL ********** MODIFICAT -> Deprected code Moodle 2.3
-// 2012.12.12 @abertranb
-
 $table = new html_table();
 $table->class = 'generaltable';
 $table->id = 'report_rcontent';
 $table->data = array();
 $table->rowclasses = array();
-// ********** ORIGINAL
-
-//$table = new stdClass();
-//$table->data = array();
-
-// ********** FI
 
 if ($course->format == 'weeks') {
     $table->head = array(get_string('week'), $strname, $strsummary,$strreport);
@@ -100,13 +60,10 @@ if ($course->format == 'weeks') {
 }
 
 
-//MARSUPIAL ********** AFEGIT -> Add pagination
-//2011.05.18 @mmartinez
 $page       = optional_param("page",0,PARAM_INT);
 $limit      = get_config('rcontent', 'registersperreportpage');
 $count      = count($rcontents);
 $startindex = ($limit*$page);
-//********** FI
 
 //MARSUPIAL ********** MODIFICAT -> Just show the registers of one page
 //2011.05.18 @mmatinez
@@ -156,8 +113,6 @@ if (!isset($context)) {
 	$context = context_course::instance($id);
 }
 
-// MARSUPIAL ********** AFEGIT -> Filter by status, add select field
-// 2011.08.31 @mmartinez
 if (has_capability('mod/rcontent:viewreport', $context)) {
 	$menu = array();
 	$menu[]                        = get_string('all', 'rcontent');
@@ -167,20 +122,11 @@ if (has_capability('mod/rcontent:viewreport', $context)) {
 	$menu['POR_CORREGIR'] = get_string('POR_CORREGIR', 'rcontent');
 	$menu['CORREGIDO']    = get_string('CORREGIDO', 'rcontent');
 
-// MARSUPIAL ********** MODIFICAT -> Deprected code Moodle 2.3
-// 2012.12.12 @abertranb
 	echo $OUTPUT->single_select(new moodle_url('/mod/rcontent/index.php?id='.$id), 'filterby', $menu, $filterby);
-// ******** ORIGINAL
-	//popup_form('', $menu, 'choosestatefilter', $filterselected, get_string('chooseaction', 'rcontent'), '', '', false, 'self');
-// ******** FI
 }
-// ********** FI
 
-//print_heading($strrcontent);
 echo $OUTPUT->heading($strrcontent);
 
-// MARSUPIAL ********** MODIFICAT -> Deprected code Moodle 2.3
-// 2012.12.12 @abertranb
 if ($count > $limit) {
 	echo $OUTPUT->paging_bar($count, $page, $limit,
 	new moodle_url('/mod/rcontent/index.php?id='.$id.$filteroptionsparam)
@@ -194,21 +140,5 @@ if ($count > $limit) {
 	new moodle_url('/mod/rcontent/index.php?id='.$id.$filteroptionsparam)
 	);
 }
-// ********** ORIGINAL
-//MARSUPIAL ********** AFEGIT -> Add pagination
-//2011.05.18 @mmartinez
-//print_paging_bar($count, $page, $limit, "index.php?id={$id}{$filteroptionsparam}&amp;", "page", false);
-//********** FI
-
-//print_table($table);
-
-//MARSUPIAL ********** AFEGIT -> Add pagination
-//2011.05.18 @mmartinez
-//print_paging_bar($count, $page, $limit, "index.php?id={$id}{$filteroptionsparam}&amp;", "page", false);
-//********** FI
-
-//********** FI (deprecated code)
-/// Finish the page
-
 
 echo $OUTPUT->footer($course);

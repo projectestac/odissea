@@ -33,7 +33,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-define('JCLIC_DEFAULT_JARBASE', 'https://clic.xtec.cat/dist/jclic');
+define('JCLIC_DEFAULT_JARBASE', 'http://clic.xtec.cat/dist/jclic');
 define('JCLIC_DEFAULT_LAP', 5);
 
 if (!isset($CFG->jclic_jarbase)) {

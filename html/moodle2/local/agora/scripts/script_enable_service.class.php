@@ -20,7 +20,6 @@ class script_enable_service extends agora_script_base{
         $params['clientAddress'] = optional_param('clientAddress', false, PARAM_TEXT);
         $params['clientCity'] = optional_param('clientCity', false, PARAM_TEXT);
         $params['clientDNS'] = optional_param('clientDNS', false, PARAM_TEXT);
-        $params['clientId'] = optional_param('clientId', false, PARAM_TEXT);
         return $params;
     }
 
@@ -60,10 +59,6 @@ class script_enable_service extends agora_script_base{
         $maincourse->summary = 'Moodle del centre ' . $params['clientName'];
         $DB->update_record('course', $maincourse);
         mtrace('Curs principal configurat', '<br/>');
-
-        // Update the cookie name
-        set_config('sessioncookie', 'moodle'.$params['clientId']);
-        mtrace('Cookie de sessió configurada', '<br/>');
 
         // Extra settings
         $value = 'wrap,formatselect,wrap,bold,italic,wrap,bullist,numlist,wrap,hr,wrap,link,unlink,wrap,anchor,wrap,image

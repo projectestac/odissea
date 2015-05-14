@@ -116,15 +116,10 @@ function rcontent_yui_async_request(url){
 }
 
 function rcontent_yui_async_request(url, callback){
-    if(typeof YAHOO != 'undefined') {
-        // Up to Moodle 2.3
-        YAHOO.util.Connect.asyncRequest('GET', url, callback);
-    } else{
-        // Moodle 2.4 or higuer
-        YUI().use('yui2-json', 'yui2-connection', 'yui2-event', function(Y) {
-            Y.YUI2.util.Connect.asyncRequest('GET', url, callback)
-        });
-    }
+    // Moodle 2.4 or higuer
+    YUI().use('yui2-json', 'yui2-connection', 'yui2-event', function(Y) {
+        Y.YUI2.util.Connect.asyncRequest('GET', url, callback)
+    });
 }
 
 function rcontent_yui_ajax_process_error (typerror){

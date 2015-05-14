@@ -117,6 +117,59 @@ $functions = array(
         'type'        => 'read',
         'capabilities'=> 'moodle/course:managegroups',
     ),
+
+    'local_mobile_core_completion_update_activity_completion_status_manually' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_completion_update_activity_completion_status_manually',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Update completion status for the current user in an activity, only for activities with manual tracking.',
+        'type'        => 'write',
+    ),
+
+    'local_mobile_core_completion_get_activities_completion_status' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_completion_get_activities_completion_status',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Return the activities completion status for a user in a course.',
+        'type'          => 'read',
+        'capabilities'  => '',
+    ),
+
+    'local_mobile_core_completion_get_course_completion_status' => array(
+        'classname'    => 'local_mobile_external',
+        'methodname'   => 'core_completion_get_course_completion_status',
+        'classpath'    => 'local/mobile/externallib.php',
+        'description'  => 'Returns course completion status.',
+        'type'         => 'read',
+        'capabilities' => 'report/completion:view',
+    ),
+
+    'local_mobile_core_rating_get_item_ratings' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_rating_get_item_ratings',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Retrieve all the ratings for an item.',
+        'type'          => 'read',
+        'capabilities'  => 'moodle/rating:view'
+    ),
+
+    'local_mobile_core_comment_get_comments' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_comment_get_comments',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Returns comments.',
+        'type'          => 'read',
+        'capabilities'  => 'moodle/comment:view',
+    ),
+
+    'local_mobile_core_notes_get_course_notes' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_notes_get_course_notes',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Returns all notes in specified course (or site) for the specified user.',
+        'type'          => 'read',
+        'capabilities'  => 'moodle/notes:view',
+    ),
 );
 
 $services = array(
@@ -156,7 +209,13 @@ $services = array(
             'local_mobile_gradereport_user_get_grades_table',
             'local_mobile_core_message_get_blocked_users',
             'local_mobile_core_group_get_course_user_groups',
-            'local_mobile_core_user_remove_user_device'
+            'local_mobile_core_user_remove_user_device',
+            'local_mobile_core_completion_update_activity_completion_status_manually',
+            'local_mobile_core_completion_get_course_completion_status',
+            'local_mobile_core_completion_get_activities_completion_status',
+            'local_mobile_core_comment_get_comments',
+            'local_mobile_core_notes_get_course_notes',
+            'local_mobile_core_rating_get_item_ratings',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

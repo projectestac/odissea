@@ -395,8 +395,6 @@ class bigdata_filemanager{
         $this->open();
         $object->table = $table;
         $text = json_encode($object);
-        return fwrite($this->handler, $text."\n");
+        return fwrite($this->handler, utf8_encode($text."\n"));
     }
-
-
 }

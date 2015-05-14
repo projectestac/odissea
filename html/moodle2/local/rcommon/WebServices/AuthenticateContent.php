@@ -9,7 +9,7 @@ require_once($CFG->dirroot.'/local/rcommon/locallib.php');
  * @return obj -> web service response
  */
 function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
-    global $CFG, $DB, $USER;
+    global $CFG, $DB, $USER, $OUTPUT;
 
         $from = optional_param('from', '', PARAM_TEXT);
 
@@ -109,7 +109,7 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
             }
             //check if the web service is prepared to receive rol parameter
             $parsed_wsdl = rcommon_get_wsdl($publisher->urlwsauthentication.'?wsdl');
-            if (textlib::strpos($parsed_wsdl, 'name="Rol"') && $rolestring == "PROFESOR") {
+            if (core_text::strpos($parsed_wsdl, 'name="Rol"') && $rolestring == "PROFESOR") {
                 $params->Rol = new SoapVar($rolestring, XSD_STRING, "string", "http://www.w3.org/2001/XMLSchema");
             }
 
@@ -137,7 +137,7 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
 
         //test the response to set parameters name to the standars
         foreach ($response->AutenticarUsuarioContenidoResult as $key => $value) {
-        	switch(textlib::strtolower($key)) {
+        	switch(core_text::strtolower($key)) {
         		case "descripcion":
         			$response->AutenticarUsuarioContenidoResult->Descripcion = $value;
         		    break;
@@ -177,7 +177,7 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
 
             //set the description to show
             $desctext = get_string('error_code_'.$response->AutenticarUsuarioContenidoResult->Codigo, 'local_rcommon');
-            if (textlib::substr($desctext, 0, 2) == '[['){
+            if (core_text::substr($desctext, 0, 2) == '[['){
             	  $desctext = $response->AutenticarUsuarioContenidoResult->Codigo;
             }
 

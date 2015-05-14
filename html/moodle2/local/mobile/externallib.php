@@ -26,6 +26,11 @@ defined('MOODLE_INTERNAL') || die;
 
 require_once("$CFG->libdir/externallib.php");
 require_once("$CFG->dirroot/local/mobile/futurelib.php");
+require_once("$CFG->dirroot/message/lib.php");
+require_once("$CFG->libdir/completionlib.php");
+require_once("$CFG->dirroot/comment/lib.php");
+require_once("$CFG->dirroot/rating/lib.php");
+require_once("$CFG->dirroot/notes/lib.php");
 
 class local_mobile_external extends external_api {
 
@@ -1007,21 +1012,28 @@ class local_mobile_external extends external_api {
                 $user->id = $discussion->userid;
                 $user = username_load_fields_from_object($user, $discussion);
                 $discussion->userfullname = fullname($user, $canviewfullname);
-                $discussion->userpictureurl = moodle_url::make_pluginfile_url(
-                    context_user::instance($user->id)->id, 'user', 'icon', null, '/', 'f1');
-                // Fix the pluginfile.php link.
-                $discussion->userpictureurl = str_replace("pluginfile.php", "webservice/pluginfile.php",
-                    $discussion->userpictureurl);
+                // We can have post written by users that are deleted. In this case, those users don't have a valid context.
+                $usercontext = context_user::instance($user->id, IGNORE_MISSING);
+                if ($usercontext) {
+                    $discussion->userpictureurl = moodle_url::make_pluginfile_url(
+                        $usercontext->id, 'user', 'icon', null, '/', 'f1')->out(false);
+                } else {
+                    $discussion->userpictureurl = '';
+                }
 
                 $usermodified = new stdclass();
                 $usermodified->id = $discussion->usermodified;
                 $usermodified = username_load_fields_from_object($usermodified, $discussion, 'um');
                 $discussion->usermodifiedfullname = fullname($usermodified, $canviewfullname);
-                $discussion->usermodifiedpictureurl = moodle_url::make_pluginfile_url(
-                    context_user::instance($usermodified->id)->id, 'user', 'icon', null, '/', 'f1');
-                // Fix the pluginfile.php link.
-                $discussion->usermodifiedpictureurl = str_replace("pluginfile.php", "webservice/pluginfile.php",
-                    $discussion->usermodifiedpictureurl);
+
+                // We can have post written by users that are deleted. In this case, those users don't have a valid context.
+                $usercontext = context_user::instance($usermodified->id, IGNORE_MISSING);
+                if ($usercontext) {
+                    $discussion->usermodifiedpictureurl = moodle_url::make_pluginfile_url(
+                        $usercontext->id, 'user', 'icon', null, '/', 'f1')->out(false);
+                } else {
+                    $discussion->usermodifiedpictureurl = '';
+                }
 
                 // Rewrite embedded images URLs.
                 list($discussion->message, $discussion->messageformat) =
@@ -1238,11 +1250,14 @@ class local_mobile_external extends external_api {
             $user->id = $post->userid;
             $user = username_load_fields_from_object($user, $post);
             $post->userfullname = fullname($user, $canviewfullname);
-            $post->userpictureurl = moodle_url::make_pluginfile_url(
-                    context_user::instance($user->id)->id, 'user', 'icon', null, '/', 'f1');
-            // Fix the pluginfile.php link.
-            $post->userpictureurl = str_replace("pluginfile.php", "webservice/pluginfile.php",
-                $post->userpictureurl);
+
+            $usercontext = context_user::instance($user->id, IGNORE_MISSING);
+            if ($usercontext) {
+                $post->userpictureurl = moodle_url::make_pluginfile_url(
+                        $usercontext->id, 'user', 'icon', null, '/', 'f1')->out(false);
+            } else {
+                $post->userpictureurl = '';
+            }
 
             // Rewrite embedded images URLs.
             list($post->message, $post->messageformat) =
@@ -1965,6 +1980,775 @@ class local_mobile_external extends external_api {
                 ),
                 'warnings' => new external_warnings(),
             )
+        );
+    }
+
+
+    /**
+     * Describes the parameters for update_activity_completion_status_manually.
+     *
+     * @return external_external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_completion_update_activity_completion_status_manually_parameters() {
+        return new external_function_parameters (
+            array(
+                'cmid' => new external_value(PARAM_INT, 'course module id'),
+                'completed' => new external_value(PARAM_BOOL, 'activity completed or not'),
+            )
+        );
+    }
+
+    /**
+     * Update completion status for the current user in an activity, only for activities with manual tracking.
+     * @param  int $cmid      Course module id
+     * @param  bool $completed Activity completed or not
+     * @return array            Result and possible warnings
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_completion_update_activity_completion_status_manually($cmid,  $completed) {
+
+        // Validate and normalize parameters.
+        $params = self::validate_parameters(self::core_completion_update_activity_completion_status_manually_parameters(),
+            array('cmid' => $cmid, 'completed' => $completed));
+        $cmid = $params['cmid'];
+        $completed = $params['completed'];
+
+        $warnings = array();
+
+        $context = context_module::instance($cmid);
+        self::validate_context($context);
+
+        list($course, $cm) = get_course_and_cm_from_cmid($cmid);
+
+        // Set up completion object and check it is enabled.
+        $completion = new completion_info($course);
+        if (!$completion->is_enabled()) {
+            throw new moodle_exception('completionnotenabled', 'completion');
+        }
+
+        // Check completion state is manual.
+        if ($cm->completion != COMPLETION_TRACKING_MANUAL) {
+            throw new moodle_exception('cannotmanualctrack', 'error');
+        }
+
+        $targetstate = ($completed) ? COMPLETION_COMPLETE : COMPLETION_INCOMPLETE;
+        $completion->update_state($cm, $targetstate);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Describes the core_completion_update_activity_completion_status_manually return value.
+     *
+     * @return external_single_structure
+     * @since Moodle 2.9
+     */
+    public static function core_completion_update_activity_completion_status_manually_returns() {
+
+        return new external_single_structure(
+            array(
+                'status'    => new external_value(PARAM_BOOL, 'status, true if success'),
+                'warnings'  => new external_warnings(),
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_completion_get_activities_completion_status_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'Course ID'),
+                'userid'   => new external_value(PARAM_INT, 'User ID'),
+            )
+        );
+    }
+
+    /**
+     * Get Activities completion status
+     *
+     * @param int $courseid ID of the Course
+     * @param int $userid ID of the User
+     * @return array of activities progress and warnings
+     * @throws moodle_exception
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_completion_get_activities_completion_status($courseid, $userid) {
+        global $CFG, $USER;
+        require_once($CFG->libdir . '/grouplib.php');
+
+        $warnings = array();
+        $arrayparams = array(
+            'courseid' => $courseid,
+            'userid'   => $userid,
+        );
+
+        $params = self::validate_parameters(self::core_completion_get_activities_completion_status_parameters(), $arrayparams);
+
+        $course = get_course($params['courseid']);
+        $user = core_user::get_user($params['userid'], 'id', MUST_EXIST);
+
+        $context = context_course::instance($course->id);
+        self::validate_context($context);
+
+        // Check that current user have permissions to see this user's activities.
+        if ($user->id != $USER->id) {
+            require_capability('report/progress:view', $context);
+            if (!groups_user_groups_visible($course, $user->id)) {
+                // We are not in the same group!
+                throw new moodle_exception('accessdenied', 'admin');
+            }
+        }
+
+        $completion = new completion_info($course);
+        $activities = $completion->get_activities();
+        $progresses = $completion->get_progress_all();
+        $userprogress = $progresses[$user->id];
+
+        $results = array();
+        foreach ($activities as $activity) {
+
+            // Check if current user has visibility on this activity.
+            if (!$activity->uservisible) {
+                continue;
+            }
+
+            // Get progress information and state.
+            if (array_key_exists($activity->id, $userprogress->progress)) {
+                $thisprogress  = $userprogress->progress[$activity->id];
+                $state         = $thisprogress->completionstate;
+                $timecompleted = $thisprogress->timemodified;
+            } else {
+                $state = COMPLETION_INCOMPLETE;
+                $timecompleted = 0;
+            }
+
+            $results[] = array(
+                       'cmid'          => $activity->id,
+                       'modname'       => $activity->modname,
+                       'instance'      => $activity->instance,
+                       'state'         => $state,
+                       'timecompleted' => $timecompleted,
+                       'tracking'      => $activity->completion
+            );
+        }
+
+        $results = array(
+            'statuses' => $results,
+            'warnings' => $warnings
+        );
+        return $results;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_completion_get_activities_completion_status_returns() {
+        return new external_single_structure(
+            array(
+                'statuses' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'cmid'          => new external_value(PARAM_INT, 'comment ID'),
+                            'modname'       => new external_value(PARAM_PLUGIN, 'activity module name'),
+                            'instance'      => new external_value(PARAM_INT, 'instance ID'),
+                            'state'         => new external_value(PARAM_INT, 'completion state value:
+                                                                    0 means incomplete, 1 complete,
+                                                                    2 complete pass, 3 complete fail'),
+                            'timecompleted' => new external_value(PARAM_INT, 'timestamp for completed activity'),
+                            'tracking'      => new external_value(PARAM_INT, 'type of tracking:
+                                                                    0 means none, 1 manual, 2 automatic'),
+                        ), 'Activity'
+                    ), 'List of activities status'
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_completion_get_course_completion_status_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'Course ID'),
+                'userid'   => new external_value(PARAM_INT, 'User ID'),
+            )
+        );
+    }
+    /**
+     * Get Course completion status
+     *
+     * @param int $courseid ID of the Course
+     * @param int $userid ID of the User
+     * @return array of course completion status and warnings
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_completion_get_course_completion_status($courseid, $userid) {
+        global $CFG, $USER;
+        require_once($CFG->libdir . '/grouplib.php');
+
+        $warnings = array();
+        $arrayparams = array(
+            'courseid' => $courseid,
+            'userid'   => $userid,
+        );
+        $params = self::validate_parameters(self::core_completion_get_course_completion_status_parameters(), $arrayparams);
+
+        $course = get_course($params['courseid']);
+        $user = core_user::get_user($params['userid'], 'id', MUST_EXIST);
+        $context = context_course::instance($course->id);
+        self::validate_context($context);
+
+        // Can current user see user's course completion status?
+        // This check verifies if completion is enabled because $course is mandatory.
+        if (!completion_can_view_data($user->id, $course)) {
+            throw new moodle_exception('cannotviewreport');
+        }
+
+        // The previous function doesn't check groups.
+        if ($user->id != $USER->id) {
+            if (!groups_user_groups_visible($course, $user->id)) {
+                // We are not in the same group!
+                throw new moodle_exception('accessdenied', 'admin');
+            }
+        }
+
+        $info = new completion_info($course);
+
+        // Check this user is enroled.
+        if (!$info->is_tracked_user($user->id)) {
+            if ($USER->id == $user->id) {
+                throw new moodle_exception('notenroled', 'completion');
+            } else {
+                throw new moodle_exception('usernotenroled', 'completion');
+            }
+        }
+
+        $completions = $info->get_completions($user->id);
+        if (empty($completions)) {
+            throw new moodle_exception('err_nocriteria', 'completion');
+        }
+
+        // Load course completion.
+        $completionparams = array(
+            'userid' => $user->id,
+            'course' => $course->id,
+        );
+        $ccompletion = new completion_completion($completionparams);
+
+        $completionrows = array();
+        // Loop through course criteria.
+        foreach ($completions as $completion) {
+            $criteria = $completion->get_criteria();
+
+            $completionrow = array();
+            $completionrow['type'] = $criteria->criteriatype;
+            $completionrow['title'] = $criteria->get_title();
+            $completionrow['status'] = $completion->get_status();
+            $completionrow['complete'] = $completion->is_complete();
+            $completionrow['timecompleted'] = $completion->timecompleted;
+            $completionrow['details'] = $criteria->get_details($completion);
+            $completionrows[] = $completionrow;
+        }
+
+        $result = array(
+                  'completed'   => $info->is_course_complete($user->id),
+                  'aggregation' => $info->get_aggregation_method(),
+                  'completions' => $completionrows
+        );
+
+        $results = array(
+            'completionstatus' => $result,
+            'warnings' => $warnings
+        );
+        return $results;
+
+    }
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_completion_get_course_completion_status_returns() {
+        return new external_single_structure(
+            array(
+                'completionstatus' => new external_single_structure(
+                    array(
+                        'completed'     => new external_value(PARAM_BOOL, 'true if the course is complete, false otherwise'),
+                        'aggregation'   => new external_value(PARAM_INT, 'aggregation method 1 means all, 2 means any'),
+                        'completions'   => new external_multiple_structure(
+                            new external_single_structure(
+                            array(
+                                 'type'          => new external_value(PARAM_INT,   'Completion criteria type'),
+                                 'title'         => new external_value(PARAM_TEXT,  'Completion criteria Title'),
+                                 'status'        => new external_value(PARAM_NOTAGS, 'Completion status (Yes/No) a % or number'),
+                                 'complete'      => new external_value(PARAM_BOOL,   'Completion status (true/false)'),
+                                 'timecompleted' => new external_value(PARAM_INT,   'Timestamp for criteria completetion'),
+                                 'details' => new external_single_structure(
+                                     array(
+                                         'type' => new external_value(PARAM_TEXT, 'Type description'),
+                                         'criteria' => new external_value(PARAM_RAW, 'Criteria description'),
+                                         'requirement' => new external_value(PARAM_TEXT, 'Requirement description'),
+                                         'status' => new external_value(PARAM_TEXT, 'Status description'),
+                                         ), 'details'),
+                                 ), 'Completions'
+                            ), ''
+                         )
+                    ), 'Course status'
+                ),
+                'warnings' => new external_warnings()
+            ), 'Course completion status'
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_comment_get_comments_parameters() {
+
+        return new external_function_parameters(
+            array(
+                'contextlevel' => new external_value(PARAM_ALPHA, 'contextlevel system, course, user...'),
+                'instanceid'   => new external_value(PARAM_INT, 'the Instance id of item associated with the context level'),
+                'component'    => new external_value(PARAM_COMPONENT, 'component'),
+                'itemid'       => new external_value(PARAM_INT, 'associated id'),
+                'area'         => new external_value(PARAM_AREA, 'string comment area', VALUE_DEFAULT, ''),
+                'page'         => new external_value(PARAM_INT, 'page number (0 based)', VALUE_DEFAULT, 0),
+            )
+        );
+    }
+
+    /**
+     * Return a list of comments
+     *
+     * @param string $contextlevel ('system, course, user', etc..)
+     * @param int $instanceid
+     * @param string $component the name of the component
+     * @param int $itemid the item id
+     * @param string $area comment area
+     * @param int $page page number
+     * @return array of comments and warnings
+     * @since Moodle 2.9
+     */
+    public static function core_comment_get_comments($contextlevel, $instanceid, $component, $itemid, $area = '', $page = 0) {
+
+        $warnings = array();
+        $arrayparams = array(
+            'contextlevel' => $contextlevel,
+            'instanceid'   => $instanceid,
+            'component'    => $component,
+            'itemid'       => $itemid,
+            'area'         => $area,
+            'page'         => $page
+        );
+        $params = self::validate_parameters(self::core_comment_get_comments_parameters(), $arrayparams);
+
+        $context = self::get_context_from_params($params);
+        self::validate_context($context);
+
+        require_capability('moodle/comment:view', $context);
+
+        $args = new stdClass;
+        $args->context   = $context;
+        $args->area      = $params['area'];
+        $args->itemid    = $params['itemid'];
+        $args->component = $params['component'];
+
+        $commentobject = new comment($args);
+        $comments = $commentobject->get_comments($params['page']);
+
+        // False means no permissions to see comments.
+        if ($comments === false) {
+            throw new moodle_exception('nopermissions', 'error', '', 'view comments');
+        }
+
+        foreach ($comments as $key => $comment) {
+
+                list($comments[$key]->content, $comments[$key]->format) = external_format_text($comment->content,
+                                                                                                 $comment->format,
+                                                                                                 $context->id,
+                                                                                                 $params['component'],
+                                                                                                 '',
+                                                                                                 0);
+        }
+
+        $results = array(
+            'comments' => $comments,
+            'warnings' => $warnings
+        );
+        return $results;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_comment_get_comments_returns() {
+        return new external_single_structure(
+            array(
+                'comments' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id'             => new external_value(PARAM_INT,  'Comment ID'),
+                            'content'        => new external_value(PARAM_RAW,  'The content text formated'),
+                            'format'         => new external_format_value('content'),
+                            'timecreated'    => new external_value(PARAM_INT,  'Time created (timestamp)'),
+                            'strftimeformat' => new external_value(PARAM_NOTAGS, 'Time format'),
+                            'profileurl'     => new external_value(PARAM_URL,  'URL profile'),
+                            'fullname'       => new external_value(PARAM_NOTAGS, 'fullname'),
+                            'time'           => new external_value(PARAM_NOTAGS, 'Time in human format'),
+                            'avatar'         => new external_value(PARAM_RAW,  'HTML user picture'),
+                            'userid'         => new external_value(PARAM_INT,  'User ID'),
+                            'delete'         => new external_value(PARAM_BOOL, 'Permission to delete=true/false', VALUE_OPTIONAL)
+                        ), 'comment'
+                    ), 'List of comments'
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of get_item_ratings parameters.
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_rating_get_item_ratings_parameters() {
+        return new external_function_parameters (
+            array(
+                'contextlevel'  => new external_value(PARAM_ALPHA, 'context level: course, module, user, etc...'),
+                'instanceid'    => new external_value(PARAM_INT, 'the instance id of item associated with the context level'),
+                'component'     => new external_value(PARAM_COMPONENT, 'component'),
+                'ratingarea'    => new external_value(PARAM_AREA, 'rating area'),
+                'itemid'        => new external_value(PARAM_INT, 'associated id'),
+                'scaleid'       => new external_value(PARAM_INT, 'scale id'),
+                'sort'          => new external_value(PARAM_ALPHA, 'sort order (firstname, rating or timemodified)')
+            )
+        );
+    }
+
+    /**
+     * Retrieve a list of ratings for a given item (forum post etc)
+     *
+     * @param string $contextlevel course, module, user...
+     * @param int $instanceid the instance if for the context element
+     * @param string $component the name of the component
+     * @param string $ratingarea rating area
+     * @param int $itemid the item id
+     * @param int $scaleid the scale id
+     * @param string $sort sql order (firstname, rating or timemodified)
+     * @return array Result and possible warnings
+     * @throws moodle_exception
+     * @since Moodle 2.9
+     */
+    public static function core_rating_get_item_ratings($contextlevel, $instanceid, $component, $ratingarea, $itemid, $scaleid, $sort) {
+        global $USER;
+
+        $warnings = array();
+
+        $arrayparams = array(
+            'contextlevel' => $contextlevel,
+            'instanceid'   => $instanceid,
+            'component'    => $component,
+            'ratingarea'   => $ratingarea,
+            'itemid'       => $itemid,
+            'scaleid'      => $scaleid,
+            'sort'         => $sort
+        );
+
+        // Validate and normalize parameters.
+        $params = self::validate_parameters(self::core_rating_get_item_ratings_parameters(), $arrayparams);
+
+        $context = self::get_context_from_params($params);
+        self::validate_context($context);
+
+        // Minimal capability required.
+        if (!has_capability('moodle/rating:view', $context)) {
+            throw new moodle_exception('noviewrate', 'rating');
+        }
+
+        list($context, $course, $cm) = get_context_info_array($context->id);
+
+        // Can we see all ratings?
+        $canviewallratings = has_capability('moodle/rating:viewall', $context);
+
+        // Create the Sql sort order string.
+        switch ($params['sort']) {
+            case 'firstname':
+                $sqlsort = "u.firstname ASC";
+                break;
+            case 'rating':
+                $sqlsort = "r.rating ASC";
+                break;
+            default:
+                $sqlsort = "r.timemodified ASC";
+        }
+
+        $ratingoptions = new stdClass;
+        $ratingoptions->context = $context;
+        $ratingoptions->component = $params['component'];
+        $ratingoptions->ratingarea = $params['ratingarea'];
+        $ratingoptions->itemid = $params['itemid'];
+        $ratingoptions->sort = $sqlsort;
+
+        $rm = new rating_manager();
+        $ratings = $rm->get_all_ratings_for_item($ratingoptions);
+        $scalemenu = make_grades_menu($params['scaleid']);
+
+        // If the scale was changed after ratings were submitted some ratings may have a value above the current maximum.
+        // We can't just do count($scalemenu) - 1 as custom scales start at index 1, not 0.
+        $maxrating = max(array_keys($scalemenu));
+
+        $results = array();
+
+        foreach ($ratings as $rating) {
+            if ($canviewallratings || $USER->id == $rating->userid) {
+                if ($rating->rating > $maxrating) {
+                    $rating->rating = $maxrating;
+                }
+
+                $profileimageurl = '';
+                // We can have ratings from deleted users. In this case, those users don't have a valid context.
+                $usercontext = context_user::instance($rating->userid, IGNORE_MISSING);
+                if ($usercontext) {
+                    $profileimageurl = moodle_url::make_pluginfile_url($usercontext->id, 'user', 'icon', null,
+                                                                                    '/', 'f1')->out(false);
+                }
+                $result = array();
+                $result['id'] = $rating->id;
+                $result['userid'] = $rating->userid;
+                $result['userpictureurl'] = $profileimageurl;
+                $result['userfullname'] = fullname($rating);
+                $result['rating'] = $scalemenu[$rating->rating];
+                $result['timemodified'] = $rating->timemodified;
+                $results[] = $result;
+            }
+        }
+
+        return array(
+            'ratings' => $results,
+            'warnings' => $warnings
+        );
+    }
+
+    /**
+     * Returns description of core_rating_get_item_ratings result values.
+     *
+     * @return external_single_structure
+     * @since Moodle 2.9
+     */
+    public static function core_rating_get_item_ratings_returns() {
+
+        return new external_single_structure(
+            array(
+                'ratings'    => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id'              => new external_value(PARAM_INT,  'rating id'),
+                            'userid'          => new external_value(PARAM_INT,  'user id'),
+                            'userpictureurl'  => new external_value(PARAM_URL,  'URL user picture'),
+                            'userfullname'    => new external_value(PARAM_NOTAGS, 'user fullname'),
+                            'rating'          => new external_value(PARAM_NOTAGS, 'rating on scale'),
+                            'timemodified'    => new external_value(PARAM_INT,  'time modified (timestamp)')
+                        ), 'Rating'
+                    ), 'list of ratings'
+                ),
+                'warnings'  => new external_warnings(),
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_notes_get_course_notes_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'course id, 0 for SITE'),
+                'userid'   => new external_value(PARAM_INT, 'user id', VALUE_OPTIONAL),
+            )
+        );
+    }
+
+    /**
+     * Create a notes list
+     *
+     * @param int $courseid ID of the Course
+     * @param stdClass $context context object
+     * @param int $userid ID of the User
+     * @param int $state
+     * @param int $author
+     * @return array of notes
+     * @since Moodle 2.9
+     */
+    protected static function create_note_list($courseid, $context, $userid, $state, $author = 0) {
+        $results = array();
+        $notes = note_list($courseid, $userid, $state, $author);
+        foreach ($notes as $key => $note) {
+            $note = (array)$note;
+            list($note['content'], $note['format']) = external_format_text($note['content'],
+                                                                           $note['format'],
+                                                                           $context->id,
+                                                                           '',
+                                                                           '',
+                                                                           0);
+            $results[$key] = $note;
+        }
+        return $results;
+    }
+
+    /**
+     * Get a list of course notes
+     *
+     * @param int $courseid ID of the Course
+     * @param int $userid ID of the User
+     * @return array of site, course and personal notes and warnings
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_notes_get_course_notes($courseid, $userid = 0) {
+        global $CFG, $USER;
+
+        if (empty($CFG->enablenotes)) {
+            throw new moodle_exception('notesdisabled', 'notes');
+        }
+
+        $warnings = array();
+        $arrayparams = array(
+            'courseid' => $courseid,
+            'userid'   => $userid,
+        );
+        $params = self::validate_parameters(self::core_notes_get_course_notes_parameters(), $arrayparams);
+
+        if (empty($params['courseid'])) {
+            $params['courseid'] = SITEID;
+        }
+        $user = null;
+        if (!empty($params['userid'])) {
+            $user = core_user::get_user($params['userid'], 'id', MUST_EXIST);
+        }
+
+        $course = get_course($params['courseid']);
+
+        if ($course->id == SITEID) {
+            $context = context_system::instance();
+        } else {
+            $context = context_course::instance($course->id);
+        }
+        self::validate_context($context);
+
+        $sitenotes = array();
+        $coursenotes = array();
+        $personalnotes = array();
+
+        if ($course->id != SITEID) {
+
+            require_capability('moodle/notes:view', $context);
+            $sitenotes = self::create_note_list($course->id, $context, $params['userid'], NOTES_STATE_SITE);
+            $coursenotes = self::create_note_list($course->id, $context, $params['userid'], NOTES_STATE_PUBLIC);
+            $personalnotes = self::create_note_list($course->id, $context, $params['userid'], NOTES_STATE_DRAFT,
+                                                        $USER->id);
+        } else {
+            if (has_capability('moodle/notes:view', $context)) {
+                $sitenotes = self::create_note_list(0, $context, $params['userid'], NOTES_STATE_SITE);
+            }
+            // It returns notes only for a specific user!
+            if (!empty($user)) {
+                $usercourses = enrol_get_users_courses($user->id, true);
+                foreach ($usercourses as $c) {
+                    // All notes at course level, only if we have capability on every course.
+                    if (has_capability('moodle/notes:view', context_course::instance($c->id))) {
+                        $coursenotes += self::create_note_list($c->id, $context, $params['userid'], NOTES_STATE_PUBLIC);
+                    }
+                }
+            }
+        }
+
+        $results = array(
+            'sitenotes'     => $sitenotes,
+            'coursenotes'   => $coursenotes,
+            'personalnotes' => $personalnotes,
+            'warnings'      => $warnings
+        );
+        return $results;
+
+    }
+
+    /**
+     * Returns array of note structure
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    protected static function get_note_structure() {
+        return array(
+                     'id'           => new external_value(PARAM_INT, 'id of this note'),
+                     'courseid'     => new external_value(PARAM_INT, 'id of the course'),
+                     'userid'       => new external_value(PARAM_INT, 'user id'),
+                     'content'      => new external_value(PARAM_RAW, 'the content text formated'),
+                     'format'       => new external_format_value('content'),
+                     'created'      => new external_value(PARAM_INT, 'time created (timestamp)'),
+                     'lastmodified' => new external_value(PARAM_INT, 'time of last modification (timestamp)'),
+                     'usermodified' => new external_value(PARAM_INT, 'user id of the creator of this note'),
+                     'publishstate' => new external_value(PARAM_ALPHA, "state of the note (i.e. draft, public, site) ")
+        );
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_notes_get_course_notes_returns() {
+        return new external_single_structure(
+            array(
+                  'sitenotes' => new external_multiple_structure(
+                      new external_single_structure(
+                          self::get_note_structure() , ''
+                      ), 'site notes', VALUE_OPTIONAL
+                   ),
+                   'coursenotes' => new external_multiple_structure(
+                      new external_single_structure(
+                          self::get_note_structure() , ''
+                      ), 'couse notes', VALUE_OPTIONAL
+                   ),
+                   'personalnotes' => new external_multiple_structure(
+                      new external_single_structure(
+                          self::get_note_structure() , ''
+                      ), 'personal notes', VALUE_OPTIONAL
+                   ),
+                 'warnings' => new external_warnings()
+            ), 'notes'
         );
     }
 }

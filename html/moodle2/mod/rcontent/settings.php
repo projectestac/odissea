@@ -7,6 +7,8 @@ if ($ADMIN->fulltree) {
 
 	global $RCONTENT_WINDOW_OPTIONS; // make sure we have the pesky global
 
+	$settings->add(new admin_setting_heading('rcontentmodeditdefaults', get_string('modeditdefaults', 'admin'), get_string('condifmodeditdefaults', 'admin')));
+
 	$settings->add(new admin_setting_configselect('rcontent/whatgrade', get_string('whatgrade', 'rcontent'),
 	    get_string('whatgradedesc', 'rcontent'), RCONTENT_HIGHESTATTEMPT, rcontent_get_what_grade_array()));
 
@@ -18,10 +20,10 @@ if ($ADMIN->fulltree) {
 	$settings->add(new admin_setting_configselect('rcontent/popup', get_string('display', 'rcontent'),
 	    get_string('configpopup', 'rcontent'), 0, $woptions));
 
-	$settings->add(new admin_setting_configselect('rcontent/frametype', get_string('frametype', 'rcontent'),
-	    get_string('frametypedesc', 'rcontent'), 2, rcontent_get_frame_type_array()));
-
 	$checkedyesno = array('' => get_string('no'), 'checked' => get_string('yes')); // not nice at all
+
+	$settings->add(new admin_setting_configselect('rcontent/frame', get_string('frametype', 'rcontent'),
+	    get_string('frametypedesc', 'rcontent'), 'checked', $checkedyesno));
 
 	foreach ($RCONTENT_WINDOW_OPTIONS as $optionname) {
 	    $popupoption = "rcontent/popup$optionname";
@@ -37,13 +39,11 @@ if ($ADMIN->fulltree) {
 	    }
 	}
 
-	$settings->add(new admin_setting_configselect('rcontent/tracer', get_string('tracer', 'rcontent'),
-	            get_string('tracerdesc', 'rcontent'), '', $checkedyesno));
+	$settings->add(new admin_setting_heading('tracerheader', get_string('tracerheader', 'rcontent'), ""));
 
-	//MARSUPIAL ********** AFEGIT -> New settings field to set the number of registers per page
-	//2011.05.19 @mmartinez
+	$settings->add(new admin_setting_configselect('rcontent/tracer', get_string('tracer', 'rcontent'), "", '', $checkedyesno));
+
+	// New settings field to set the number of registers per page
 	$settings->add(new admin_setting_configtext('rcontent/registersperreportpage', get_string('registersperreportpage', 'rcontent'),
 	    get_string('registersperreportpageinfo', 'rcontent'), 20, PARAM_INT));
-	//*********** FI
-
 }

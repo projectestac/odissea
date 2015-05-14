@@ -70,11 +70,11 @@ class com_wiris_plugin_impl_TextFilter {
 		$sub = null;
 		$output = new StringBuf();
 		$n0 = 0;
-		$n1 = _hx_index_of($text, $tags->in_appletopen, $n0);
+		$n1 = _hx_index_of(strtoupper($text), $tags->in_appletopen, $n0);
 		while($n1 >= 0) {
 			$output->add(_hx_substr($text, $n0, $n1 - $n0));
 			$n0 = $n1;
-			$n1 = _hx_index_of($text, $tags->in_appletclose, $n0);
+			$n1 = _hx_index_of(strtoupper($text), $tags->in_appletclose, $n0);
 			if($n1 >= 0) {
 				$n1 = $n1 + strlen($tags->in_appletclose);
 				$sub = _hx_substr($text, $n0, $n1 - $n0);
@@ -92,7 +92,7 @@ class com_wiris_plugin_impl_TextFilter {
 				}
 				$n0 = $n1;
 				$output->add($sub);
-				$n1 = _hx_index_of($text, $tags->in_appletopen, $n0);
+				$n1 = _hx_index_of(strtoupper($text), $tags->in_appletopen, $n0);
 			}
 		}
 		$output->add(_hx_substr($text, $n0, null));

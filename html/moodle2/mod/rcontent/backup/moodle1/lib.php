@@ -100,8 +100,9 @@ class moodle1_mod_rcontent_handler extends moodle1_mod_handler {
         if ($backupinfo['moodle_version'] < 2007110503) {
             // as we have no module version data, assume $currmodule->version <= $module->version
             // - fix data as the source 1.9 build hadn't yet at time of backing up.
-            if (isset($data['grademethod']))
+            if (isset($data['grademethod'])) {
                 $data['grademethod'] = $data['grademethod']%10;
+            }
         }
 
         // start writing rcontent.xml
@@ -111,22 +112,17 @@ class moodle1_mod_rcontent_handler extends moodle1_mod_handler {
         $this->xmlwriter->begin_tag('rcontent', array('id' => $instanceid));
 
         foreach ($data as $field => $value) {
-            /*if ($field == 'intro') {
-                //changed from intro to summary
-                $this->xmlwriter->full_tag('summary', $value);
-
-            }
-            else*/if ($field <> 'id') {
+            if ($field <> 'id') {
                 $this->xmlwriter->full_tag($field, $value);
             }
         }
-        
+
         $this->xmlwriter->begin_tag('grades');
-        
+
         return $data;
     }
-    
-    
+
+
     /**
      * This is executed when finish grades
      * data available
@@ -142,14 +138,14 @@ class moodle1_mod_rcontent_handler extends moodle1_mod_handler {
     public function process_rcontent_grades($data) {
         $this->write_xml('grade', $data, array('/grade/id'));
     }
-    
+
     /**
     * This is executed when the parser reaches the <GRADES_DETAILS> opening element
     */
     public function on_rcontent_grades_details_start() {
         $this->xmlwriter->begin_tag('grades_details');
     }
-    
+
     /**
      * This is executed when the parser reaches the closing </GRADES_DETAILS> element
      */
@@ -163,7 +159,7 @@ class moodle1_mod_rcontent_handler extends moodle1_mod_handler {
     public function process_rcontent_grades_details($data) {
         $this->write_xml('grade_detail', $data, array('/grade_detail/id'));
     }
-    
+
     /**
      * This is executed when we reach the closing </MOD> tag of our 'rcontent' path
      */

@@ -5,7 +5,7 @@ class com_wiris_util_sys_Store {
 		;
 	}
 	public function moveTo($dest) {
-		rename($this->file, $dest->file);
+		rename($this->file, $dest->getFile());
 	}
 	public function copyTo($dest) {
 		$b = $this->readBinary();

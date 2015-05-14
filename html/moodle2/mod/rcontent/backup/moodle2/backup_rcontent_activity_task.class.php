@@ -57,12 +57,12 @@ class backup_rcontent_activity_task extends backup_activity_task {
         $base = preg_quote($CFG->wwwroot, "/");
 
         // Link to the list of scorms
-        $search="/(".$base."\/mod\/rcontent\/index.php\?id\=)([0-9]+)/";
-        $content= preg_replace($search, '$@RCONTENTINDEX*$2@$', $content);
+        $search = "/(".$base."\/mod\/rcontent\/index.php\?id\=)([0-9]+)/";
+        $content = preg_replace($search, '$@RCONTENTINDEX*$2@$', $content);
 
         // Link to scorm view by moduleid
-        $search="/(".$base."\/mod\/rcontent\/view.php\?id\=)([0-9]+)/";
-        $content= preg_replace($search, '$@RCONTENTVIEWBYID*$2@$', $content);
+        $search = "/(".$base."\/mod\/rcontent\/view.php\?id\=)([0-9]+)/";
+        $content = preg_replace($search, '$@RCONTENTVIEWBYID*$2@$', $content);
 
         return $content;
     }

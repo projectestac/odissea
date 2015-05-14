@@ -1,5 +1,21 @@
 <?php
 
+function set_marsupial_state($enable) {
+    global $DB;
+    $DB->set_field('modules', 'visible', $enable, array('name' => 'rcontent'));
+    $DB->set_field('block', 'visible', $enable, array('name' => 'my_books'));
+    $DB->set_field('block', 'visible', $enable, array('name' => 'rgrade'));
+    set_config('enabled', $enable, 'rcommon');
+}
+
+function is_marsupial_enabled() {
+    if (isset($CFG->ismarsupial) && $CFG->ismarsupial) {
+        return true;
+    } else {
+        return (bool)get_config('rcommon', 'enabled');
+    }
+}
+
 class rcommon_publisher {
 
     public static function get($id) {
@@ -95,16 +111,16 @@ class rcommon_book{
         }
 
         // Check that book name isn't larger than 255 characters
-        if (textlib::strlen($record->name) > 255) {
-            $record->name = textlib::substr($record->name, 0, 255);
+        if (core_text::strlen($record->name) > 255) {
+            $record->name = core_text::substr($record->name, 0, 255);
         }
 
         // Check that book summary isn't larger than 1024 characters
-        if (textlib::strlen($record->summary) > 1024) {
-            $record->summary = textlib::substr($record->summary, 0, 1024);
+        if (core_text::strlen($record->summary) > 1024) {
+            $record->summary = core_text::substr($record->summary, 0, 1024);
         }
 
-        $record->format = textlib::strtolower($record->format);
+        $record->format = core_text::strtolower($record->format);
         $record->levelid = rcommon_level::get_create_by_code($record->levelid);
 
         // Test that de obligatory fields aren't empty
@@ -183,13 +199,13 @@ class rcommon_unit{
         }
 
         // Check that unit name isn't larger than 200 characters
-        if (textlib::strlen($record->name) > 200) {
-            $record->name = textlib::substr($record->name, 0, 200);
+        if (core_text::strlen($record->name) > 200) {
+            $record->name = core_text::substr($record->name, 0, 200);
         }
 
         // Check that unit summary isn't larger than 1024 characters
-        if (textlib::strlen($record->summary) > 1024) {
-            $record->summary = textlib::substr($record->summary, 0, 1024);
+        if (core_text::strlen($record->summary) > 1024) {
+            $record->summary = core_text::substr($record->summary, 0, 1024);
         }
 
         $record->timemodified = time();
@@ -233,13 +249,13 @@ class rcommon_activity{
         }
 
         // Check that unit activity isn't larger than 200 characters
-        if (textlib::strlen($record->name) > 200) {
-            $record->name = textlib::substr($record->name, 0, 200);
+        if (core_text::strlen($record->name) > 200) {
+            $record->name = core_text::substr($record->name, 0, 200);
         }
 
         // Check that unit summary isn't larger than 1024 characters
-        if (textlib::strlen($record->summary) > 1024) {
-            $record->summary = textlib::substr($record->summary, 0, 1024);
+        if (core_text::strlen($record->summary) > 1024) {
+            $record->summary = core_text::substr($record->summary, 0, 1024);
         }
 
         $record->timemodified = time();

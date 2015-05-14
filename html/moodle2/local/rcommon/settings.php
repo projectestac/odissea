@@ -1,8 +1,9 @@
 <?php
-//MARSUPIAL ************ FITXER AFEGIT - Marsupial menu options
+require_once($CFG->dirroot.'/local/rcommon/settingslib.php');
+require_once($CFG->dirroot.'/local/rcommon/locallib.php');
 
 // If site is allowed to use Marsupial
-if ((!isset($CFG->ismarsupial) || $CFG->ismarsupial)) {
+if (is_marsupial_enabled()) {
 	//****************** MENU ******************/
 	$ADMIN->add('root', new admin_category('rcommon', get_string('rcommon','local_rcommon')));
 
@@ -24,12 +25,18 @@ if ((!isset($CFG->ismarsupial) || $CFG->ismarsupial)) {
 
 	$ADMIN->add('marsupialimport', new admin_externalpage('keymanager_import', get_string('keymanager_import','local_rcommon'), $CFG->wwwroot . '/local/rcommon/import.php', array('local/rcommon:importcredentials')));
 	$ADMIN->add('marsupialimport', new admin_externalpage('keymanager_export', get_string('keymanager_export','local_rcommon'), $CFG->wwwroot . '/local/rcommon/export.php', array('local/rcommon:exportcredentials')));
+}
 
-	if (has_capability('moodle/site:config', context_system::instance())) {
-		//****************** SETTINGS ******************//
-		$settings = new admin_settingpage('local_rcommon', get_string('rcommon','local_rcommon'));
-		$ADMIN->add('localplugins', $settings);
+if (has_capability('moodle/site:config', context_system::instance())) {
+	//****************** SETTINGS ******************//
+	$settings = new admin_settingpage('local_rcommon', get_string('rcommon','local_rcommon'));
+	$ADMIN->add('localplugins', $settings);
 
+	$yesno = array(0 => get_string('no'), 1 => get_string('yes')); // not nice at all
+	$settings->add(new admin_setting_enablemarsupial('rcommon/enabled', get_string('enabled', 'local_rcommon'),
+			get_string('enabled_desc', 'local_rcommon'), 1, $yesno));
+
+	if (is_marsupial_enabled()) {
 		$checkedyesno = array(''=>get_string('no'), 'checked'=>get_string('yes')); // not nice at all
 		$settings->add(new admin_setting_configselect('rcommon/tracer', get_string('tracer', 'local_rcommon'),
 				get_string('tracerdesc', 'local_rcommon'), '', $checkedyesno));
@@ -56,3 +63,6 @@ if ((!isset($CFG->ismarsupial) || $CFG->ismarsupial)) {
 								  get_string('teacherrolesinfo', 'local_rcommon'), array(3,4), $allroles));
 	}
 }
+
+
+

@@ -17,6 +17,8 @@ $string['consumewait'] = 'Descargando la estructura de libros. El proceso puede 
 $string['delok'] = 'Datos borrados correctamente';
 $string['delko'] = 'No ha sido possible borrar los datos, por favor vuelva a intentarlo m&acute;s tarde';
 $string['downloadbookstructures'] = 'Actualizar la estructura de libros';
+$string['enabled'] = 'Activar Marsupial';
+$string['enabled_desc'] = 'Activar/desactivar Marsupial y sus módulos';
 $string['error_authentication'] = 'Error de autenticación código: {$a}';
 
 $string['error_code_1'] = 'URL generada correctamente.';

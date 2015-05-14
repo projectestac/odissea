@@ -50,7 +50,7 @@ $referer = $CFG->wwwroot.'/local/rcommon/books.php?id='.$book->id;
 echo $OUTPUT->heading($book->name . ' (' . $book->isbn . ')',3);
 
 echo '<div class="generalbox box contentbox">';
-if (!in_array(textlib::strtolower($book->format), rcommon_book::$allowedformats)) {
+if (!in_array(core_text::strtolower($book->format), rcommon_book::$allowedformats)) {
 	print_error('Not a valid book');
 }
 define("MAX_USERS_PER_PAGE", 5000);

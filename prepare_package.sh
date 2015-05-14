@@ -8,7 +8,6 @@ git clone https://github.com/projectestac/agora_moodle2.git moodle_new
 pushd moodle_new
 
 git submodule update --recursive --init
-git submodule foreach --recursive git pull
 echo 'Submòduls actualitzats'
 find . -name '\.git*' -exec rm -rf {} \;
 popd
@@ -21,7 +20,7 @@ cp html/moodle2_old/settings.php html/moodle2/settings.php
 cp html/moodle2_old/.htaccess html/moodle2/.htaccess
 cp html/moodle2_old/config-works-dist.php html/moodle2/config-works-dist.php
 cp html/moodle2_old/works.php html/moodle2/works.php
-cp html/moodle2_old/config-restricted.php html/moodle2/config-restricted.php
+cp html/moodle2_old/config-restricted-dist.php html/moodle2/config-restricted-dist.php
 cp html/moodle2_old/theme/xtec2/pix/favicon.ico html/moodle2/theme/xtec2/pix/favicon.ico
 cp html/moodle2_old/theme/xtec2/pix/logo_main.png html/moodle2/theme/xtec2/pix/logo_main.png
 
@@ -36,7 +35,6 @@ cp -Rp html/moodle2_old/admin/tool/odisseagtafsync html/moodle2/admin/tool/odiss
 rm html/moodle2/config.php
 rm html/moodle2/index_iw.php
 rm html/moodle2/site-config.php
-rm html/moodle2/config-multi.php
 rm html/moodle2/config-mysql.php
 rm html/moodle2/config-oracle.php
 rm html/moodle2/theme/xtec2/pix/logo_main.gif

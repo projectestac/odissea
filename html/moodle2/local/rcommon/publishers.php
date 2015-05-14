@@ -40,11 +40,11 @@ switch($action){
 			if (empty($record->name)){
 				print_error(get_string('savekoemptyvalues', 'local_rcommon'), $CFG->wwwroot.'/local/rcommon/publishers.php');
 			}
-			if (!empty($record->urlwsauthentication) && $pos = textlib::strpos(textlib::strtolower($record->urlwsauthentication), '?wsdl')){
-				$record->urlwsauthentication = textlib::substr($record->urlwsauthentication, 0, $pos);
+			if (!empty($record->urlwsauthentication) && $pos = core_text::strpos(core_text::strtolower($record->urlwsauthentication), '?wsdl')){
+				$record->urlwsauthentication = core_text::substr($record->urlwsauthentication, 0, $pos);
 			}
-			if (!empty($record->urlwsbookstructure) && $pos = textlib::strpos(textlib::strtolower($record->urlwsbookstructure), '?wsdl')){
-				$record->urlwsbookstructure  = textlib::substr($record->urlwsbookstructure, 0, $pos);
+			if (!empty($record->urlwsbookstructure) && $pos = core_text::strpos(core_text::strtolower($record->urlwsbookstructure), '?wsdl')){
+				$record->urlwsbookstructure  = core_text::substr($record->urlwsbookstructure, 0, $pos);
 			}
 
 			//do save

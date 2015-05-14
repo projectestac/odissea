@@ -16,7 +16,8 @@ class com_wiris_common_WInteger {
 	}
 	static function toHex($x, $digits) {
 		$s = "";
-		while($x !== 0 && $digits-- > 0) {
+		while($x !== 0 && $digits > 0) {
+			$digits--;
 			$d = $x & 15;
 			$s = com_wiris_common_WInteger_0($d, $digits, $s, $x) . $s;
 			$x = $x >> 4;

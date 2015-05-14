@@ -18,7 +18,7 @@
  * Version details
  *
  * @package    block
- * @subpackage marsupial
+ * @subpackage mybooks
  * @copyright  2012 xtec.cat
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -30,3 +30,8 @@ $plugin->requires  = 2011033009;        // Requires this Moodle version
 $plugin->component = 'block_my_books';  // Full name of the plugin (used for diagnostics)
 $plugin->release   = 'v2.0.5';          // Human-readable version name
 $plugin->maturity  = MATURITY_STABLE;   // How stable the plugin is
+
+$plugin->dependencies = array(
+    'local_rcommon' => ANY_VERSION,
+    'mod_rcontent' => ANY_VERSION
+);

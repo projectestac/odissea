@@ -1,187 +1,204 @@
 <?php
- /**
-  * This class takes, process, save and show log during the live of the object monitored
-  *
-  *
-  * @author IECISA @mmartinez
-  * @version 1.1
-  *
-  */
+/**
+ * This class takes, process, save and show log during the live of the object monitored
+ *
+ *
+ * @author IECISA @mmartinez
+ * @version 1.1
+ *
+ */
+final class log4p {
 
-  class log4p{
+    /**
+     * Variables to use
+     */
+    private $log = array();
+    private $savetofile;
+    private $debug;
 
-  	/**
-  	 * Variables to use
-  	 */
-  	private $log = array(), $savetofile,$savetofilepath;
+    /**
+     * Call this method to get singleton
+     *
+     * @return mailsender
+     */
+    public static function instance($savetofile = false, $savetofilepath = '', $debug = false) {
+        static $inst = null;
+        if ($inst === null) {
+            $inst = new log4p($savetofile, $savetofilepath, $debug);
+        }
+        return $inst;
+    }
 
-  	/**
-  	 * Class constructor
-  	 *
-  	 * @param bool $savetofile -> set the functionality savetofile on or off
-  	 * @param string $savetofilepath -> path and file name where the log have to be saved when $state is set to true
-  	 */
-  	function __construct($savetofile = false, $savetofilepath = ''){
-  		$this->savetofile = $this->loadsavetofile($savetofile, $savetofilepath);
-  	}
 
-  	/**
-  	 * Class destructor
-  	 *
-  	 * Used to close de file pointer
-  	 */
-  	function __destruct(){
-  		$this->add('log4p.class.php: trying to close file log pointer', 'DEBUG');
-  		if (!fclose($this->filelogpointer)){
-  			$this->add('Logger: trying to close file log pointer failed');
-  		}
+    /**
+     * Class constructor
+     *
+     * @param bool $savetofile -> set the functionality savetofile on or off
+     * @param string $savetofilepath -> path and file name where the log have to be saved when $state is set to true
+     */
+    private function __construct($savetofile = false, $savetofilepath = '', $debug = false) {
 
-  		$this->savetofile = false;
-  		$this->add('log4p.class.php: file log closed');
-  	}
+        // Set default path location
+        if (empty($savetofilepath)) {
+            // Get actuall path
+            $pwd = dirname(__FILE__);
+            $pwd = str_replace('\\', '/', $pwd);
+            // Go one folder up
+            $pwdarray = explode ('/', $pwd);
+            $pwd = "";
+            for ($i = 0; $i < count($pwdarray) - 1; $i++) {
+                $pwd .= $pwdarray[$i].'/';
+            }
+            $savetofilepath = $pwd.'log/mailsender.log';
+        }
 
-  	/**
-  	 * Add entry to the log
-  	 *
-  	 * @param string $str  -> log entry text
-   	 * @param string $type -> posible values ERROR, WARNING, INFO
-  	 */
-  	function add ($str, $type = 'INFO*'){
-  		//alowed type values
-  		$types_allowed = array('ERROR', 'WARNING', 'INFO*', 'DEBUG');
+        $this->savetofile = $this->loadsavetofile($savetofile, $savetofilepath);
+        $this->debug = $debug;
+    }
 
-  		if (!in_array($type, $types_allowed)){
-  		    $type = 'UNKNOWN';
-  		}
+    /**
+     * Class destructor
+     *
+     * Used to close de file pointer
+     */
+    function __destruct() {
+        $this->add('log4p: Closing log file', 'DEBUG');
+        if (!fclose($this->filelogpointer)) {
+            $this->add('Logger: trying to close file log pointer failed');
+        }
 
-  		//add log to our variable
-  		$this->log[] = date('[Y-m-d H:i:s] ').'   *'.$type.'*   '.$str;
+        $this->savetofile = false;
+    }
 
-  		//save log to file if its switched on
-  		if ($this->savetofile){
-  			$this->addtofile($this->log[count($this->log)-1]);
-  		}
+    /**
+     * Add entry to the log
+     *
+     * @param string $str  -> log entry text
+     * @param string $type -> posible values ERROR, WARNING, INFO
+     */
+    function add ($str, $type = 'INFO*') {
 
-  		return;
-  	}
+        if ($type == 'DEBUG' && !$this->debug) {
+            // Debug not allowed
+            return;
+        }
 
-  	/**
-  	 * Save log entry in a file
-  	 *
-  	 * @param string $str       -> log entry text
-  	 * @param string $delimiter -> characters used to diference one line from other
-  	 */
-  	private function addtofile ($str = '', $delimiter = "\n"){
+        //alowed type values
+        $types_allowed = array('ERROR', 'WARNING', 'INFO*', 'DEBUG');
 
-  		//check if parameter is not empty
-  		if (empty($str)){
-  			return false;
-  		}
+        if (!in_array($type, $types_allowed)) {
+                $type = 'UNKNOWN';
+        }
 
-  	    //save in file
-  		if (!fwrite($this->filelogpointer, $str.$delimiter)){
-  			$this->savetofile = false;
-  			$this->add('log4p.class.php: addtofile cant write in log file. Save to file has been switch to off.', 'ERROR');
-  			return false;
-  		}
+        //add log to our variable
+        $this->log[] = date('[Y-m-d H:i:s] ').' *'.$type.'*   '.$str;
 
-  		return true;
-  	}
+        //save log to file if its switched on
+        if ($this->savetofile) {
+            $this->addtofile($this->log[count($this->log) - 1]);
+        }
 
-  	/**
-  	 * Convert log array to a string using the defined delimiter
-  	 *
-  	 * @param  string $delimiter -> characters used to diference one line from other
-  	 * @return string            -> string with all the entries in log separated by the delimeter
-  	 */
-  	function get_log ($delimiter = '\n'){
+        return;
+    }
 
-  		if (empty($this->log)){
-  			return false;
-  		}
+    /**
+     * Save log entry in a file
+     *
+     * @param string $str       -> log entry text
+     * @param string $delimiter -> characters used to diference one line from other
+     */
+    private function addtofile ($str = '', $delimiter = "\n") {
 
-  		return implode($delimiter, $this->log);
+        //check if parameter is not empty
+        if (empty($str)) {
+            return false;
+        }
 
-  	}
+            //save in file
+        if (!fwrite($this->filelogpointer, $str.$delimiter)) {
+            $this->savetofile = false;
+            $this->add('log4p: addtofile cant write in log file. Save to file has been switch to off.', 'ERROR');
+            return false;
+        }
 
-  	/**
-  	 * Function that put the saver on or off if savetofilepath exits and is writable
-  	 *
-  	 * @param  bool   $state          -> set the function savetofile on or off
-  	 * @param  string $savetofilepath -> path and file name where the log have to be saved when $state is set to true
-  	 * @param  string $delimiter      -> characters used to diference one line from other
-  	 * @return bool                   -> true if saver could be switched to on or false if not
-  	 */
-  	function loadsavetofile ($state = false, $savetofilepath = '', $delimiter = "\n"){
+        return true;
+    }
 
-  		//check if parameters are set to true and are correct
-  		if ($state == false || $savetofilepath == ''){
-  			$this->add('log4p.class.php: its off becouse the parameters to switch it on sets it', 'WARNING');
-  		    return false;
-  		}
+    /**
+     * Convert log array to a string using the defined delimiter
+     *
+     * @param  string $delimiter -> characters used to diference one line from other
+     * @return string            -> string with all the entries in log separated by the delimeter
+     */
+    function get_log ($delimiter = "\n") {
+        if (empty($this->log)) {
+            return false;
+        }
+        return implode($delimiter, $this->log);
+    }
 
-  		//prepare savetofilepath parameter
-  		$savetofilepath = str_replace('\\', '/', $savetofilepath);
-  		$filepatharray = explode("/", $savetofilepath);
+    /**
+     * Print de log generated by the class
+     *
+     * @return string -> full string with the log
+     */
+    public function print_log() {
+        if ($log = $this->get_log('<br>')) {
+            echo '<br><br><b>Log generated on '.date("d-m-Y H:i:s").':</b><br>'.$log;
+        }
+    }
 
-// XTEC *********** DELETED -> Take out becouse now the receive the full path
-// 2011.04.01 @mmartinez
-		/*//get actuall path
-  		$pwd = dirname(__FILE__);
-  		$pwd = str_replace('\\', '/', $pwd);
-  		//go one folder up
-  		$pwdarray = explode ('/', $pwd);*/
-//*********** END
-  		$pwd = "";
+    /**
+     * Function that put the saver on or off if savetofilepath exits and is writable
+     *
+     * @param  bool   $state          -> set the function savetofile on or off
+     * @param  string $savetofilepath -> path and file name where the log have to be saved when $state is set to true
+     * @param  string $delimiter      -> characters used to diference one line from other
+     * @return bool                   -> true if saver could be switched to on or false if not
+     */
+    function loadsavetofile ($state = false, $savetofilepath = '', $delimiter = "\n") {
 
-// XTEC ************ MODIFIED -> Parse the new full path
-// 2011.04.01 @mmartinez
-  		for ($i=0;$i<count($filepatharray)-1;$i++){
-  			$pwd .= $filepatharray[$i].'/';
-  		}
-  	    $pwd = substr($pwd, 0, strlen($pwd)-1);
-//************ ORIGINAL
-		/*for ($i=0;$i<count($pwdarray)-1;$i++){
-  			$pwd .= $pwdarray[$i].'/';
-  		}*/
-//*********** END
+        //check if parameters are set to true and are correct
+        if ($state == false || $savetofilepath == '') {
+            $this->add('log4p: its off becouse the parameters to switch it on sets it', 'WARNING');
+                return false;
+        }
 
-  		//check if exits log folder
-// XTEC ************ MODIFIED -> Take the new full path
-// 2011.04.01 @mmartinez
-  		if (!is_dir($pwd)){
-  			if (!mkdir($pwd)){
-//*********** ORIGINAL
-		/*if (!is_dir($pwd.$filepatharray[count($filepatharray)-2])){
-  			if (!mkdir($pwd.$filepatharray[count($filepatharray)-2])){*/
-//*********** END
+        //prepare savetofilepath parameter
+        $savetofilepath = str_replace('\\', '/', $savetofilepath);
+        $filepatharray = explode("/", $savetofilepath);
 
-  				$this->add('log4p.class.php: folder not exits and its imposible to create it', 'WARNING');
-  				return false;
-  			}
-  		}
+        $pwd = "";
 
-  		//open or create log file
-// XTEC ************ MODIFIED -> Take the new full path
-// 2011.04.01 @mmartinez
-  		if (!$file = fopen($savetofilepath, "a+")){
-//*********** ORIGINAL
-		/*if (!$file = fopen($pwd.$savetofilepath, "a+")){*/
-//*********** END
-  			$this->add('log4p.class.php: file not exits and its imposible to create it', 'WARNING');
-  			return false;
-  		}
+        // Parse the full path
+        for ($i=0;$i<count($filepatharray)-1;$i++) {
+            $pwd .= $filepatharray[$i].'/';
+        }
+            $pwd = substr($pwd, 0, strlen($pwd)-1);
 
-  		//test if its posible to save in file
-  		if (!fwrite($file, $delimiter)){
-  			$this->add('log4p.class.php: imposible to write in log file. Save to file has been switch to off.', 'ERROR');
-  			return false;
-  		}
+        // Check if exits log folder
+        if (!is_dir($pwd)){
+            if (!mkdir($pwd)){
+                $this->add('log4p: folder not exits and its imposible to create it', 'WARNING');
+                return false;
+            }
+        }
 
-  		$this->filelogpointer = $file;
-  		$this->savetofile = true;
-  		$this->add('log4p.class.php: loaded correctly in '.$savetofilepath);
-  		return true;
-  	}
-  }
-?>
+        // Open or create log file
+        if (!$file = fopen($savetofilepath, "a+")) {
+            $this->add('log4p: file not exits and its imposible to create it', 'WARNING');
+            return false;
+        }
+
+        //test if its posible to save in file
+        if (!fwrite($file, $delimiter)) {
+            $this->add('log4p: imposible to write in log file. Save to file has been switch to off.', 'ERROR');
+            return false;
+        }
+
+        $this->filelogpointer = $file;
+        $this->savetofile = true;
+        $this->add('log4p: loaded correctly in '.$savetofilepath);
+        return true;
+    }
+}
