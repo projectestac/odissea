@@ -41,6 +41,22 @@ function xmldb_local_rcommon_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2015051300, 'local', 'rcommon');
     }
 
+    if ($oldversion < 2015051901) {
+        // Delete duplicated credentials
+        $creds = $DB->get_records_sql('SELECT id, isbn, euserid, credentials FROM {rcommon_user_credentials} ORDER BY isbn, euserid');
+        $lastcred = false;
+        foreach ($creds as $cred) {
+            if (!empty($cred->credentials)) {
+                if ($lastcred && $cred->isbn == $lastcred->isbn && $cred->euserid == $lastcred->euserid && $cred->credentials == $lastcred->credentials) {
+                    $DB->delete_records('rcommon_user_credentials', array('id' => $cred->id));
+                }
+                $lastcred = $cred;
+            }
+        }
+
+        upgrade_plugin_savepoint(true, 2015051901, 'local', 'rcommon');
+    }
+
     return true;
 }
 

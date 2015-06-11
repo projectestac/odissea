@@ -1,4 +1,4 @@
-@core @core_badges @_only_local @_file_upload
+@core @core_badges @_file_upload
 Feature: Add badges to the system
   In order to give badges to users for their achievements
   As an admin
@@ -10,32 +10,27 @@ Feature: Add badges to the system
 
   @javascript
   Scenario: Setting badges settings
-    Given I expand "Site administration" node
-    And I expand "Badges" node
-    And I follow "Badges settings"
-    And I fill in "Default badge issuer name" with "Test Badge Site"
-    And I fill in "Default badge issuer contact details" with "testuser@test-badge-site.com"
+    Given I navigate to "Badges settings" node in "Site administration > Badges"
+    And I set the field "Default badge issuer name" to "Test Badge Site"
+    And I set the field "Default badge issuer contact details" to "testuser@example.com"
     And I press "Save changes"
     When I follow "Add a new badge"
-    Then the "issuercontact" field should match "testuser@test-badge-site.com" value
-    And the "issuername" field should match "Test Badge Site" value
+    Then the field "issuercontact" matches value "testuser@example.com"
+    And the field "issuername" matches value "Test Badge Site"
 
   @javascript
   Scenario: Accessing the badges
-    Given I expand "Site pages" node
-    And I follow "Site badges"
+    Given I navigate to "Site badges" node in "Site pages"
     Then I should see "There are no badges available."
 
   @javascript
   Scenario: Add a badge
-    Given I expand "Site administration" node
-    And I expand "Badges" node
-    And I follow "Add a new badge"
-    And I fill the moodle form with:
+    Given I navigate to "Add a new badge" node in "Site administration > Badges"
+    And I set the following fields to these values:
       | Name | Test Badge |
       | Description | Test badge description |
       | issuername | Test Badge Site |
-      | issuercontact | testuser@test-badge-site.com |
+      | issuercontact | testuser@example.com |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     When I press "Create badge"
     Then I should see "Edit details"

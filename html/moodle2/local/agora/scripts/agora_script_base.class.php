@@ -171,4 +171,15 @@ class agora_script_base{
         }
 	}
 
+    protected function execute_suboperation($function, $params = array()) {
+        $function = 'script_'.$function;
+        $filename = $function.'.class.php';
+        if (!file_exists($filename)) {
+            return false;
+        }
+        require_once($filename);
+        $script = new $function();
+        return $script->execute($params);
+    }
+
 }

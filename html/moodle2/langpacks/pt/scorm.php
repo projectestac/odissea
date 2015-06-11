@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,9 @@ $string['attemptstatusentry'] = 'Apenas página de entrada';
 $string['attemptstatusmy'] = 'Apenas página inicial';
 $string['attemptsx'] = '{$a} tentativas';
 $string['attr_error'] = 'Valor errado para o atributo ({$a->attr}) na tag {$a->tag}';
+$string['autocommit'] = 'Guardar automaticamente';
+$string['autocommitdesc'] = 'Guardar automaticamente os dados do SCORM caso o pacote SCORM não os guarde.';
+$string['autocommit_help'] = 'Se ativar esta opção, os dados do SCORM são guardados automaticamente na base de dados. Esta opção é útil para objetos SCORM que não guardam os seus dados regularmente.';
 $string['autocontinue'] = 'Prosseguir automaticamente';
 $string['autocontinuedesc'] = 'Se ativar esta opção, os objetos de aprendizagem seguintes serão automaticamente iniciados, caso contrário, terá de ser usado o botão \'Continuar\'.';
 $string['autocontinue_help'] = 'Se ativar esta opção, os objetos de aprendizagem seguintes serão exibidos automaticamente, caso contrário deverá ser usado o botão Continuar.';
@@ -92,11 +95,14 @@ $string['defaultgradesettings'] = 'Configurações das notas predefinidas';
 $string['defaultothersettings'] = 'Outras configurações predefinidas';
 $string['deleteallattempts'] = 'Apagar todas as tentativas de realização do SCORM';
 $string['deleteattemptcheck'] = 'Tem a certeza que deseja apagar estas tentativas?';
+$string['deleteselected'] = 'Apagar as tentativas selecionadas';
 $string['deleteuserattemptcheck'] = 'Tem a certeza absoluta de que quer apagar completamente todas as suas tentativas?';
 $string['details'] = 'Detalhe do percurso';
 $string['directories'] = 'Mostrar links para pastas';
 $string['disabled'] = 'Inativa';
 $string['display'] = 'Exibir pacote de conteúdos';
+$string['displayactivityname'] = 'Exibir nome da atividade';
+$string['displayactivityname_help'] = 'Esta opção define se o nome da atividade é ou não exibida acima do player do SCORM.';
 $string['displayattemptstatus'] = 'Exibir estado da tentativa';
 $string['displayattemptstatusdesc'] = 'Esta opção define se um resumo das tentativas do utilizador é exibido na Visão geral das disciplinas na Minha página principal e/ou na página de entrada do Pacote SCORM.';
 $string['displayattemptstatus_help'] = 'Esta preferência disponibiliza um resumo das tentativas do utilizador exibido no bloco Visão geral das disciplinas na Minha página inicial e/ou de entrada do SCORM';
@@ -112,6 +118,12 @@ $string['element'] = 'Elemento';
 $string['enter'] = 'Entrar';
 $string['entercourse'] = 'Entrar';
 $string['errorlogs'] = 'Registo de erros';
+$string['eventattemptdeleted'] = 'Tentativa eliminada';
+$string['eventinteractionsviewed'] = 'Interações visualizadas';
+$string['eventreportviewed'] = 'Relatório visualizado';
+$string['eventscolaunched'] = 'Sco executado';
+$string['eventtracksviewed'] = 'Dados de percurso do pacote SCORM visualizados';
+$string['eventuserreportviewed'] = 'Relatório de utilizador visualizado';
 $string['everyday'] = 'Todos os dias';
 $string['everytime'] = 'Sempre que é usado';
 $string['exceededmaxattempts'] = 'Atingiu o número máximo de tentativas permitidas';
@@ -132,8 +144,10 @@ $string['forcejavascript'] = 'Forçar utilizadores a ativar JavaScript';
 $string['forcejavascript_desc'] = 'Se ativar esta opção (recomendado), o acesso a objetos SCORM será impedido quando o JavaScript não é suportado ou não está ativo no navegador dos utilizadores. Se esta opção estiver desativada, o utilizador pode visualizar o SCORM, mas a comunicação API irá falhar e as informações sobre a nota não serão guardadas.';
 $string['forcejavascriptmessage'] = 'É necessário ter o JavaScript ativo para ver este objeto. Ative o JavaScript no seu browser e tente de novo.';
 $string['forcenewattempt'] = 'Forçar nova tentativa';
-$string['forcenewattemptdesc'] = 'Se ativar esta opção, sempre que aceder a um Pacote SCORM será considerada uma nova tentativa.';
-$string['forcenewattempt_help'] = 'Se ativar esta opção, cada vez que se aceder ao pacote SCORM irá contar como uma nova tentativa.';
+$string['forcenewattemptdesc'] = 'Esta definição esconde a opção "Iniciar nova tentativa" e impede o modo de revisão. O SCORM permite ao aluno retornar à mesma tentativa de qualquer ponto e não permite uma nova tentativa, a menos que a anterior esteja definida como "Concluída", "Aprovado" ou "Falhou". Caso o pacote SCORM não faça isto, o aluno reentrará sempre na mesma tentativa.';
+$string['forcenewattempt_help'] = 'Esta definição esconde a opção "Iniciar nova tentativa" e impede o modo de revisão.
+
+O SCORM permite ao aluno retornar à mesma tentativa de qualquer ponto e não permite uma nova tentativa, a menos que a anterior esteja definida como "Concluída", "Aprovado" ou "Falhou". Caso o pacote SCORM não faça isto, o aluno reentrará sempre na mesma tentativa.';
 $string['found'] = 'Manifesto encontrado';
 $string['frameheight'] = 'Altura da frame ou janela.';
 $string['framewidth'] = 'Largura da frame ou janela.';
@@ -222,6 +236,8 @@ Existem 3 opções:
 $string['navigation'] = 'Navegação';
 $string['navpositionleft'] = 'Posição dos botões de navegação a partir da esquerda em pixeis.';
 $string['navpositiontop'] = 'Posição dos botões de navegação de cima em pixeis.';
+$string['networkdropped'] = 'O player do SCORM determinou que a sua ligação de Internet é insegura ou foi interrompida. Se continuar nesta atividade SCORM, o registo do seu progresso poderá não ficar gravado.<br />
+Deverá sair agora da atividade e voltar quando tiver uma ligação de Internet segura.';
 $string['newattempt'] = 'Iniciar uma nova tentativa';
 $string['next'] = 'Continuar';
 $string['noactivity'] = 'Nada a registar';
@@ -285,6 +301,8 @@ $string['reviewmode'] = 'Modo de revisão';
 $string['rightanswer'] = 'Resposta certa';
 $string['scoes'] = 'Objetos de aprendizagem';
 $string['score'] = 'Nota';
+$string['scorm12standard'] = 'Ativar o modo padrão SCORM 1.2';
+$string['scorm12standarddesc'] = 'Desativar esta configuração permite que o Moodle armazene mais dados do que a especificação do SCORM 1.2 permite. Desative esta configuração se os seus pacotes SCORM permitirem que os utilizadores insiram uma grande quantidade de texto ou se o seu pacote SCORM tentar armazenar uma grande quantidade de dados no campo \'suspend_data\'.';
 $string['scorm:addinstance'] = 'Adicionar um novo SCORM';
 $string['scormclose'] = 'Disponível até';
 $string['scormcourse'] = 'Pacote de aprendizagem';

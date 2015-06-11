@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'El número máximo de cursos que deberán se
 $string['expandall'] = 'Desplegar todas las listas del curso';
 $string['forcedefaultmaxcourses'] = 'Forzar número máximo de cursos';
 $string['forcedefaultmaxcoursesdesc'] = 'Si se activa la opción, el usuario no podrá cambiar su configuración personal';
+$string['fullpath'] = 'Todas las categorías y subcategorías';
 $string['hiddencoursecount'] = 'Usted tiene {$a} cursos(s) oculto(s)';
 $string['hiddencoursecountplural'] = 'Usted tiene {$a} cursos(s) oculto(s)';
 $string['hiddencoursecountwithshowall'] = 'Usted tiene {$a->coursecount} curso oculto ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Mover curso: {$a}';
 $string['movecoursehere'] = 'Mover curso aquí';
 $string['movetofirst'] = 'Mover curso {$a} a arriba';
 $string['movingcourse'] = 'Está moviendo: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Ninguno';
 $string['numtodisplay'] = 'Número de cursos para mostrar:';
+$string['onlyparentname'] = 'Sólo la categtoría padre';
 $string['otherexpanded'] = 'Otros cursos desplegados';
 $string['pluginname'] = 'Vista general de cursos';
 $string['preservestates'] = 'Mantener estados desplegados';
 $string['shortnameprefix'] = 'Incluye {$a}';
 $string['shortnamesufixprural'] = '(y otros {$a} )';
 $string['shortnamesufixsingular'] = '(y otro {$a} )';
+$string['showcategories'] = 'Categorías a mostrar';
+$string['showcategoriesdesc'] = '¿Deben mostrarse las categorías de cursos debajo de cada curso?';
 $string['showchildren'] = 'Ver hijos';
 $string['showchildrendesc'] = '¿Deberían listarse los cursos hijos debajo del título del curso principal?';
 $string['showwelcomearea'] = 'Mostrar área de bienvenida';

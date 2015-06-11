@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_generator', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,6 @@ $string['error_nonexistingcourse'] = 'Указанный курс не суще�
 $string['error_nopageinstances'] = 'Выбранный курс не содержит модулей «Страница»';
 $string['error_notdebugging'] = 'Не найден на сервере, так как  не установлен уровень отладки РАЗРАБОТЧИК';
 $string['error_nouserspassword'] = 'Чтобы генерировать испытательный план нужно установить $CFG->tool_generator_users_password в config.php';
-$string['firstname'] = 'Пользователь испытательного курса';
 $string['fullname'] = 'Испытательный курс: {$a->size}';
 $string['maketestcourse'] = 'Создать испытательный курс';
 $string['maketestplan'] = 'Создать испытательный план JMeter';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository_flickr_public', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['by-nc-sa'] = 'Лицензия - С указанием авторств
 $string['by-nd'] = 'Лицензия - С указанием авторства, без производных (BY-ND)';
 $string['by-sa'] = 'Лицензия - С указанием авторства, с сохранением условий (BY-SA)';
 $string['callbackurl'] = 'Callback URL';
-$string['commercialuse'] = 'Я хочу иметь право использовать изображения в коммерческих целях';
+$string['commercialuse'] = 'Я хочу использовать изображения в коммерческих целях';
 $string['configplugin'] = 'Конфигурация хранилища Публичный Flickr';
 $string['creativecommonscommercial'] = 'Только Creative commons для коммерческого использования';
 $string['emailaddress'] = 'Адрес электронной почты';

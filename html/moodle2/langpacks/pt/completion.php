@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -165,6 +165,7 @@ $string['restoringcompletiondata'] = 'A registar dados de conclusão';
 $string['roleaggregation'] = 'Condição requer';
 $string['roleaggregation_all'] = 'TODOS os papéis confirmam manualmente a conclusão';
 $string['roleaggregation_any'] = 'QUALQUER UM dos papéis confirma manualmente a conclusão';
+$string['roleidnotfound'] = 'ID do Papel do utilizador {$a} não encontrado';
 $string['saved'] = 'Guardado';
 $string['seedetails'] = 'Ver detalhes';
 $string['self'] = 'Auto';

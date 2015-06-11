@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,6 +151,7 @@ $string['course:movesections'] = 'Verplaats secties';
 $string['course:publish'] = 'Publiceer een cursus op een hub';
 $string['course:request'] = 'Nieuwe cursussen aanvragen';
 $string['course:reset'] = 'Cursus naar standaardinstellingen';
+$string['course:reviewotherusers'] = 'Beoordeel andere gebruikers';
 $string['course:sectionvisibility'] = 'Zichtbaarheid van secties beheren';
 $string['course:setcurrentsection'] = 'Huidige sectie instellen';
 $string['course:update'] = 'Cursusinstellingen wijzigen';
@@ -163,7 +164,7 @@ $string['course:viewhiddensections'] = 'Verborgen secties zien';
 $string['course:viewhiddenuserfields'] = 'Verborgen gebruikersvelden zien';
 $string['course:viewparticipants'] = 'Deelnemers bekijken';
 $string['course:viewscales'] = 'Schalen bekijken';
-$string['course:viewsuspendedusers'] = 'Geschorste gebruikers zien';
+$string['course:viewsuspendedusers'] = 'Kan geschorste gebruikers zien';
 $string['course:visibility'] = 'Cursussen verbergen/tonen';
 $string['createrolebycopying'] = 'Een nieuwe rol maken door {$a} te kopiëren';
 $string['createthisrole'] = 'Maak deze rol';
@@ -178,10 +179,10 @@ $string['defaultx'] = 'Standaard: {$a}';
 $string['defineroles'] = 'Definieer rollen';
 $string['deletecourseoverrides'] = 'Verwijder alle overschrijvingen in de cursus';
 $string['deletelocalroles'] = 'Verwijder alle toegewezen rollen';
-$string['deleterolesure'] = '<p>Ben je zeker dat je de rol "{$a->name} ({$a->shortname})" wil verwijderen?</p><p>Op dit moment is de rol aan {$a->count} gebruikers toegewezen.';
+$string['deleterolesure'] = '<p>Ben je zeker dat je de rol "{$a->name} ({$a->shortname})" wil verwijderen?</p><p>Op dit moment is de rol aan {$a->count} gebruikers toegewezen.</p>';
 $string['deletexrole'] = 'Verwijder {$a} rol';
 $string['duplicaterole'] = 'Kopieer rol';
-$string['duplicaterolesure'] = 'Ben je zeker dat je de rol "{$a->name} ({$a->shortname})" wil kopiëren?</p>';
+$string['duplicaterolesure'] = '<p>Ben je zeker dat je de rol "{$a->name} ({$a->shortname})" wil kopiëren?</p>';
 $string['editingrolex'] = 'Rol \'{$a}\' bewerken';
 $string['editrole'] = 'Bewerk rol';
 $string['editxrole'] = 'Bewerk {$a} rol';
@@ -383,6 +384,7 @@ $string['site:backup'] = 'Cursussen back-uppen';
 $string['site:config'] = 'Site configuratie wijzigen';
 $string['site:doanything'] = 'Toelaten alles te doen';
 $string['site:doclinks'] = 'Links naar documentatie buiten deze site tonen';
+$string['site:forcelanguage'] = 'Cursustaal overschrijven';
 $string['site:import'] = 'Importeren van andere cursussen in een cursus';
 $string['site:manageblocks'] = 'Beheer blokken op een pagina';
 $string['site:mnetloginfromremote'] = 'Aanmelden vanaf een externe Moodle met MNet';
@@ -420,7 +422,7 @@ $string['user:manageownblocks'] = 'Beheer blokken op eigen publiek gebruikerspro
 $string['user:manageownfiles'] = 'Beheer bestanden op eigen private bestandszone';
 $string['user:managesyspages'] = 'Configureer standaard pagina layout voor publieke gebruikersprofielen';
 $string['user:readuserblogs'] = 'Blogs van alle gebruikers bekijken';
-$string['user:readuserposts'] = 'Berichten van alle gebruikers bekijken';
+$string['user:readuserposts'] = 'Forumberichten van alle gebruikers bekijken';
 $string['usersfrom'] = 'Gebruikers van {$a}';
 $string['usersfrommatching'] = 'Gebruikers van  {$a->contextname} die overeenkomen met \'{$a->search}\'';
 $string['usersinthisx'] = 'Gebruikers in deze {$a}';
@@ -431,6 +433,7 @@ $string['user:update'] = 'Gebruikersprofielen updaten';
 $string['user:viewalldetails'] = 'Bekijk alle informatie van de gebruiker';
 $string['user:viewdetails'] = 'Gebruikersprofielen bekijken';
 $string['user:viewhiddendetails'] = 'Verborgen details van gebruikers bekijken';
+$string['user:viewlastip'] = 'Laatste IP-adres van alle gebruikers bekijken';
 $string['user:viewuseractivitiesreport'] = 'Activiteitenrapporten van gebruikers bekijken';
 $string['user:viewusergrades'] = 'Cijfers van gebruikers bekijken';
 $string['useshowadvancedtochange'] = 'GEbruik \'Toon geavanceerd\' om te wijzigen';

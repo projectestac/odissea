@@ -1,4 +1,4 @@
-<?PHP
+<?php
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -156,8 +156,6 @@ function assign_supports($feature) {
             return true;
         case FEATURE_GROUPINGS:
             return true;
-        case FEATURE_GROUPMEMBERSONLY:
-            return true;
         case FEATURE_MOD_INTRO:
             return true;
         case FEATURE_COMPLETION_TRACKS_VIEWS:
@@ -223,7 +221,7 @@ function assign_extend_settings_navigation(settings_navigation $settings, naviga
     }
 
     // Link to download all submissions.
-    if (has_capability('mod/assign:grade', $context)) {
+    if (has_any_capability(array('mod/assign:grade', 'mod/assign:viewgrades'), $context)) {
         $link = new moodle_url('/mod/assign/view.php', array('id' => $cm->id, 'action'=>'grading'));
         $node = $navref->add(get_string('viewgrading', 'assign'), $link, navigation_node::TYPE_SETTING);
 
@@ -390,14 +388,9 @@ function assign_print_overview($courses, &$htmlarray) {
         $context = context_module::instance($assignment->coursemodule);
         if (has_capability('mod/assign:grade', $context)) {
             if (!isset($unmarkedsubmissions)) {
-                $submissionmaxattempt = 'SELECT mxs.userid, MAX(mxs.attemptnumber) AS maxattempt, mxs.assignment
-                                         FROM {assign_submission} mxs
-                                         WHERE mxs.assignment ' . $sqlassignmentids . '
-                                         GROUP BY mxs.userid, mxs.assignment';
-
                 // Build up and array of unmarked submissions indexed by assignment id/ userid
                 // for use where the user has grading rights on assignment.
-                $dbparams = array_merge($assignmentidparams, array(ASSIGN_SUBMISSION_STATUS_SUBMITTED), $assignmentidparams);
+                $dbparams = array_merge(array(ASSIGN_SUBMISSION_STATUS_SUBMITTED), $assignmentidparams);
                 $rs = $DB->get_recordset_sql('SELECT
                                                   s.assignment as assignment,
                                                   s.userid as userid,
@@ -405,19 +398,17 @@ function assign_print_overview($courses, &$htmlarray) {
                                                   s.status as status,
                                                   g.timemodified as timegraded
                                               FROM {assign_submission} s
-                                              LEFT JOIN ( ' . $submissionmaxattempt . ' ) smx ON
-                                                           smx.userid = s.userid AND
-                                                           smx.assignment = s.id
                                               LEFT JOIN {assign_grades} g ON
                                                   s.userid = g.userid AND
                                                   s.assignment = g.assignment AND
-                                                  g.attemptnumber = smx.maxattempt
+                                                  g.attemptnumber = s.attemptnumber
                                               WHERE
                                                   ( g.timemodified is NULL OR
-                                                  s.timemodified > g.timemodified ) AND
+                                                  s.timemodified > g.timemodified OR
+                                                  g.grade IS NULL ) AND
                                                   s.timemodified IS NOT NULL AND
                                                   s.status = ? AND
-                                                  s.attemptnumber = smx.maxattempt AND
+                                                  s.latest = 1 AND
                                                   s.assignment ' . $sqlassignmentids, $dbparams);
 
                 $unmarkedsubmissions = array();
@@ -473,15 +464,8 @@ function assign_print_overview($courses, &$htmlarray) {
         if (has_capability('mod/assign:submit', $context)) {
             if (!isset($mysubmissions)) {
 
-                // This is nasty because we only want the last attempt.
-                $submissionmaxattempt = 'SELECT mxs.userid, MAX(mxs.attemptnumber) AS maxattempt, mxs.assignment
-                                         FROM {assign_submission} mxs
-                                         WHERE mxs.assignment ' . $sqlassignmentids . '
-                                         AND mxs.userid = ?
-                                         GROUP BY mxs.userid, mxs.assignment';
-
                 // Get all user submissions, indexed by assignment id.
-                $dbparams = array_merge($assignmentidparams, array($USER->id, $USER->id, $USER->id), $assignmentidparams);
+                $dbparams = array_merge(array($USER->id), $assignmentidparams, array($USER->id));
                 $mysubmissions = $DB->get_records_sql('SELECT
                                                            a.id AS assignment,
                                                            a.nosubmissions AS nosubmissions,
@@ -489,18 +473,15 @@ function assign_print_overview($courses, &$htmlarray) {
                                                            g.grader AS grader,
                                                            g.grade AS grade,
                                                            s.status AS status
-                                                       FROM {assign} a
-                                                       LEFT JOIN ( ' . $submissionmaxattempt . ' ) smx ON
-                                                           smx.assignment = a.id
+                                                       FROM {assign} a, {assign_submission} s
                                                        LEFT JOIN {assign_grades} g ON
-                                                           g.assignment = a.id AND
+                                                           g.assignment = s.assignment AND
                                                            g.userid = ? AND
-                                                           g.attemptnumber = smx.maxattempt
-                                                       LEFT JOIN {assign_submission} s ON
-                                                           s.attemptnumber = smx.maxattempt AND
+                                                           g.attemptnumber = s.attemptnumber
+                                                       WHERE a.id ' . $sqlassignmentids . ' AND
+                                                           s.latest = 1 AND
                                                            s.assignment = a.id AND
-                                                           s.userid = ?
-                                                       WHERE a.id ' . $sqlassignmentids, $dbparams);
+                                                           s.userid = ?', $dbparams);
             }
 
             $str .= '<div class="details">';
@@ -509,18 +490,31 @@ function assign_print_overview($courses, &$htmlarray) {
             if (isset($mysubmissions[$assignment->id])) {
                 $submission = $mysubmissions[$assignment->id];
             }
-            if (!$submission || !$submission->status || $submission->status == 'draft') {
-                $str .= $strnotsubmittedyet;
-            } else if ($submission->nosubmissions) {
+            if ($submission && $submission->nosubmissions) {
                 $str .= get_string('offline', 'assign');
+            } else if (!$submission ||
+                    !$submission->status ||
+                    $submission->status == 'draft' ||
+                    $submission->status == 'new') {
+                $str .= $strnotsubmittedyet;
             } else {
                 $str .= get_string('submissionstatus_' . $submission->status, 'assign');
             }
-            if (!$submission || !$submission->grade || $submission->grade < 0) {
-                $str .= ', ' . get_string('notgraded', 'assign');
+
+            if ($assignment->markingworkflow) {
+                $workflowstate = $DB->get_field('assign_user_flags', 'workflowstate', array('assignment' =>
+                    $assignment->id, 'userid' => $USER->id));
+                if ($workflowstate) {
+                    $gradingstatus = 'markingworkflowstate' . $workflowstate;
+                } else {
+                    $gradingstatus = 'markingworkflowstate' . ASSIGN_MARKING_WORKFLOW_STATE_NOTMARKED;
+                }
+            } else if (!empty($submission->grade) && $submission->grade !== null && $submission->grade >= 0) {
+                $gradingstatus = ASSIGN_GRADING_STATUS_GRADED;
             } else {
-                $str .= ', ' . get_string('graded', 'assign');
+                $gradingstatus = ASSIGN_GRADING_STATUS_NOT_GRADED;
             }
+            $str .= ', ' . get_string($gradingstatus, 'assign');
             $str .= '</div>';
         }
         $str .= '</div>';
@@ -543,10 +537,11 @@ function assign_print_overview($courses, &$htmlarray) {
  */
 function assign_print_recent_activity($course, $viewfullnames, $timestart) {
     global $CFG, $USER, $DB, $OUTPUT;
+    require_once($CFG->dirroot . '/mod/assign/locallib.php');
 
     // Do not use log table if possible, it may be huge.
 
-    $dbparams = array($timestart, $course->id, 'assign');
+    $dbparams = array($timestart, $course->id, 'assign', ASSIGN_SUBMISSION_STATUS_SUBMITTED);
     $namefields = user_picture::fields('u', null, 'userid');
     if (!$submissions = $DB->get_records_sql("SELECT asb.id, asb.timemodified, cm.id AS cmid,
                                                      $namefields
@@ -556,8 +551,10 @@ function assign_print_recent_activity($course, $viewfullnames, $timestart) {
                                                      JOIN {modules} md        ON md.id = cm.module
                                                      JOIN {user} u            ON u.id = asb.userid
                                                WHERE asb.timemodified > ? AND
+                                                     asb.latest = 1 AND
                                                      a.course = ? AND
-                                                     md.name = ?
+                                                     md.name = ? AND
+                                                     asb.status = ?
                                             ORDER BY asb.timemodified ASC", $dbparams)) {
          return false;
     }
@@ -659,6 +656,8 @@ function assign_get_recent_mod_activity(&$activities,
                                         $groupid=0) {
     global $CFG, $COURSE, $USER, $DB;
 
+    require_once($CFG->dirroot . '/mod/assign/locallib.php');
+
     if ($COURSE->id == $courseid) {
         $course = $COURSE;
     } else {
@@ -687,6 +686,7 @@ function assign_get_recent_mod_activity(&$activities,
 
     $params['cminstance'] = $cm->instance;
     $params['timestart'] = $timestart;
+    $params['submitted'] = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
 
     $userfields = user_picture::fields('u', null, 'userid');
 
@@ -697,6 +697,7 @@ function assign_get_recent_mod_activity(&$activities,
                                                 JOIN {user} u ON u.id = asb.userid ' .
                                           $groupjoin .
                                             '  WHERE asb.timemodified > :timestart AND
+                                                     asb.status = :submitted AND
                                                      a.id = :cminstance
                                                      ' . $userselect . ' ' . $groupselect .
                                             ' ORDER BY asb.timemodified ASC', $params)) {
@@ -876,6 +877,11 @@ function assign_scale_used_anywhere($scaleid) {
 /**
  * List the actions that correspond to a view of this module.
  * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = 'r' and edulevel = LEVEL_PARTICIPATING will
+ *       be considered as view action.
+ *
  * @return array
  */
 function assign_get_view_actions() {
@@ -885,6 +891,11 @@ function assign_get_view_actions() {
 /**
  * List the actions that correspond to a post of this module.
  * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = ('c' || 'u' || 'd') and edulevel = LEVEL_PARTICIPATING
+ *       will be considered as post action.
+ *
  * @return array
  */
 function assign_get_post_actions() {
@@ -952,6 +963,20 @@ function assign_grade_item_update($assign, $grades=null) {
 
     $params = array('itemname'=>$assign->name, 'idnumber'=>$assign->cmidnumber);
 
+    // Check if feedback plugin for gradebook is enabled, if yes then
+    // gradetype = GRADE_TYPE_TEXT else GRADE_TYPE_NONE.
+    $gradefeedbackenabled = false;
+
+    if (isset($assign->gradefeedbackenabled)) {
+        $gradefeedbackenabled = $assign->gradefeedbackenabled;
+    } else if ($assign->grade == 0) { // Grade feedback is needed only when grade == 0.
+        require_once($CFG->dirroot . '/mod/assign/locallib.php');
+        $mod = get_coursemodule_from_instance('assign', $assign->id, $assign->courseid);
+        $cm = context_module::instance($mod->id);
+        $assignment = new assign($cm, null, null);
+        $gradefeedbackenabled = $assignment->is_gradebook_feedback_enabled();
+    }
+
     if ($assign->grade > 0) {
         $params['gradetype'] = GRADE_TYPE_VALUE;
         $params['grademax']  = $assign->grade;
@@ -961,9 +986,12 @@ function assign_grade_item_update($assign, $grades=null) {
         $params['gradetype'] = GRADE_TYPE_SCALE;
         $params['scaleid']   = -$assign->grade;
 
-    } else {
-        // Allow text comments only.
+    } else if ($gradefeedbackenabled) {
+        // $assign->grade == 0 and feedback enabled.
         $params['gradetype'] = GRADE_TYPE_TEXT;
+    } else {
+        // $assign->grade == 0 and no feedback enabled.
+        $params['gradetype'] = GRADE_TYPE_NONE;
     }
 
     if ($grades  === 'reset') {
@@ -1038,7 +1066,8 @@ function assign_update_grades($assign, $userid=0, $nullifnone=true) {
 function assign_get_file_areas($course, $cm, $context) {
     global $CFG;
     require_once($CFG->dirroot . '/mod/assign/locallib.php');
-    $areas = array();
+
+    $areas = array(ASSIGN_INTROATTACHMENT_FILEAREA => get_string('introattachments', 'mod_assign'));
 
     $assignment = new assign($context, $cm, $course);
     foreach ($assignment->get_submission_plugins() as $plugin) {
@@ -1093,12 +1122,33 @@ function assign_get_file_info($browser,
         return null;
     }
 
+    $urlbase = $CFG->wwwroot.'/pluginfile.php';
     $fs = get_file_storage();
     $filepath = is_null($filepath) ? '/' : $filepath;
     $filename = is_null($filename) ? '.' : $filename;
 
-    // Need to find the plugin this belongs to.
+    // Need to find where this belongs to.
     $assignment = new assign($context, $cm, $course);
+    if ($filearea === ASSIGN_INTROATTACHMENT_FILEAREA) {
+        if (!has_capability('moodle/course:managefiles', $context)) {
+            // Students can not peak here!
+            return null;
+        }
+        if (!($storedfile = $fs->get_file($assignment->get_context()->id,
+                                          'mod_assign', $filearea, 0, $filepath, $filename))) {
+            return null;
+        }
+        return new file_info_stored($browser,
+                        $assignment->get_context(),
+                        $storedfile,
+                        $urlbase,
+                        $filearea,
+                        $itemid,
+                        true,
+                        true,
+                        false);
+    }
+
     $pluginowner = null;
     foreach ($assignment->get_submission_plugins() as $plugin) {
         if ($plugin->is_visible()) {
@@ -1209,4 +1259,60 @@ function assign_get_completion_state($course, $cm, $userid, $type) {
         // Completion option is not enabled so just return $type.
         return $type;
     }
+}
+
+/**
+ * Serves intro attachment files.
+ *
+ * @param mixed $course course or id of the course
+ * @param mixed $cm course module or id of the course module
+ * @param context $context
+ * @param string $filearea
+ * @param array $args
+ * @param bool $forcedownload
+ * @param array $options additional options affecting the file serving
+ * @return bool false if file not found, does not return if found - just send the file
+ */
+function assign_pluginfile($course,
+                $cm,
+                context $context,
+                $filearea,
+                $args,
+                $forcedownload,
+                array $options=array()) {
+    global $CFG;
+
+    if ($context->contextlevel != CONTEXT_MODULE) {
+        return false;
+    }
+
+    require_login($course, false, $cm);
+    if (!has_capability('mod/assign:view', $context)) {
+        return false;
+    }
+
+    require_once($CFG->dirroot . '/mod/assign/locallib.php');
+    $assign = new assign($context, $cm, $course);
+
+    if ($filearea !== ASSIGN_INTROATTACHMENT_FILEAREA) {
+        return false;
+    }
+    if (!$assign->show_intro()) {
+        return false;
+    }
+
+    $itemid = (int)array_shift($args);
+    if ($itemid != 0) {
+        return false;
+    }
+
+    $relativepath = implode('/', $args);
+
+    $fullpath = "/{$context->id}/mod_assign/$filearea/$itemid/$relativepath";
+
+    $fs = get_file_storage();
+    if (!$file = $fs->get_file_by_hash(sha1($fullpath)) or $file->is_directory()) {
+        return false;
+    }
+    send_stored_file($file, 0, 0, $forcedownload, $options);
 }

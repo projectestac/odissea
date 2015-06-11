@@ -38,7 +38,7 @@
                 height: 12px;
             }
             img.actionmenu {
-                width:auto;
+                width: auto;
             }
         }
     }
@@ -160,7 +160,7 @@
     .content li {
         margin-bottom: 10px;
         padding: 5px;
-        border: 1px solid #ddd;
+        border: 1px solid @tableBorder;
         .border-radius(@baseBorderRadius);
         .link {
             font-weight: inherit;
@@ -233,19 +233,19 @@
     // RTL styles for blocks in general.
     .block {
         .header {
-            text-align:right;
+            text-align: right;
             h2 {
-                text-align:right;
-            }
-            .commands {
-                text-align: left;
-                > * {
-                    margin-left:0;
-                    margin-right:3px;
-                }
+                text-align: right;
             }
             .block_action {
                 float: left;
+                > * {
+                    margin-left: 0;
+                    margin-right: 3px;
+                }
+            }
+            .commands {
+                text-align: left;
             }
         }
     }

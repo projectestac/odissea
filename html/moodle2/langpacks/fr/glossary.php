@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['attachment_help'] = 'Il est possible de joindre un ou plusieurs fichier
 $string['author'] = 'auteur';
 $string['authorview'] = 'Consulter par auteur';
 $string['back'] = 'Précédent';
+$string['cachedef_concepts'] = 'Liaison des concepts';
 $string['cantinsertcat'] = 'Impossible d\'insérer la catégorie';
 $string['cantinsertrec'] = 'Impossible d\'insérer l\'enregistrement';
 $string['cantinsertrel'] = 'Impossible d\'insérer le lien catégorie-article';
@@ -94,8 +95,8 @@ $string['current'] = 'Tri actuellement {$a}';
 $string['currentglossary'] = 'Glossaire actuel';
 $string['date'] = 'date';
 $string['dateview'] = 'Consulter par date';
-$string['defaultapproval'] = 'Approbation par défaut';
-$string['defaultapproval_help'] = 'Si ce réglage est désactivé, les articles requièrent une approbation de la part de l\'enseignant avant de pouvoir être consultés.';
+$string['defaultapproval'] = 'Approuvé automatiquement';
+$string['defaultapproval_help'] = 'Si ce réglage est défini à non, les articles requièrent une approbation de la part de l\'enseignant avant de pouvoir être consultés.';
 $string['defaulthook'] = 'Sélection affichée par défaut';
 $string['defaultmode'] = 'Mode d\'affichage par défaut';
 $string['defaultsortkey'] = 'Clef de tri par défaut';
@@ -156,6 +157,15 @@ $string['errconceptalreadyexists'] = 'Ce concept existe déjà dans le glossaire
 $string['errdeltimeexpired'] = 'Vous ne pouvez pas supprimer ceci. Le délai est échu !';
 $string['erredittimeexpired'] = 'La durée de modification de cet article est échue.';
 $string['errorparsingxml'] = 'Des erreurs sont survenues lors de l\'analyse du fichier. Veuillez vérifier que sa syntaxe XML est valide.';
+$string['eventcategorycreated'] = 'Catégorie créée';
+$string['eventcategorydeleted'] = 'Catégorie supprimée';
+$string['eventcategoryupdated'] = 'Catégorie modifiée';
+$string['evententryapproved'] = 'Article approuvé';
+$string['evententrycreated'] = 'Article créé';
+$string['evententrydeleted'] = 'Article supprimé';
+$string['evententrydisapproved'] = 'Article désapprouvé';
+$string['evententryupdated'] = 'Article modifié';
+$string['evententryviewed'] = 'Article consulté';
 $string['explainaddentry'] = 'Ajout d\'un article au glossaire actuel.<br />Les champs concept et définition doivent obligatoirement être remplis.';
 $string['explainall'] = 'Afficher TOUS les articles sur une page';
 $string['explainalphabet'] = 'Consultez le glossaire à l\'aide de cet index';

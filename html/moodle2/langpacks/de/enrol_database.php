@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_database', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Datenbankeinschreibung konfigurieren';
 $string['database:unenrol'] = 'Gesperrte Nutzer/innen abmelden';
 $string['dbencoding'] = 'Datenbankkodierung';
 $string['dbhost'] = 'Datenbankserver';
@@ -63,6 +64,8 @@ $string['remotecoursefield'] = 'Kursfeld (Remote)';
 $string['remotecoursefield_desc'] = 'Der Feldname in der Remotetabelle, das für Einträge in der Kurstabelle zugeordnet wird.';
 $string['remoteenroltable'] = 'Externe Nutzertabelle';
 $string['remoteenroltable_desc'] = 'Geben Sieden Namen derTabelel an, die die Nutzereinschreibungen enthält. Leer bedeutet, dass keine Nutzer zugeordnet werden.';
+$string['remoteotheruserfield'] = 'Entferntes Feld für \'andere Nutzer\'.';
+$string['remoteotheruserfield_desc'] = 'Name des Feldes in der entfernten Tabelle, um die Einschreibungen "Anderer Nutzer" zu verwenden.';
 $string['remoterolefield'] = 'Rollenfeld (Remote)';
 $string['remoterolefield_desc'] = 'Der Feldname in der Remotetabelle, das für Einträge in der Rollentabelle zugeordnet wird.';
 $string['remoteuserfield'] = 'Nutzerfeld (Remote)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,8 @@ $string['err_nodescription'] = 'Beschreibung für Teilnehmer/innen darf nicht le
 $string['err_nodescriptionmarkers'] = 'Das Beschreibungsfeld darf nicht leer bleiben.';
 $string['err_nomaxscore'] = 'Der Eintrag für ein Kriterium Höchstpunktzahl darf nicht leer bleiben.';
 $string['err_noshortname'] = 'Der Eintrag für einen Kriterienname darf nicht leer bleiben.';
-$string['err_scoreinvalid'] = 'Der eingegebene Wert für {$a->crterianame} ist nicht gültig. Der Höchstwert ist: {$a->maxscore}.';
+$string['err_scoreinvalid'] = 'Der eingegebene Wert für {$a->criterianame} ist nicht gültig. Der Höchstwert ist: {$a->maxscore}.';
+$string['err_shortnametoolong'] = 'Der Name darf nur maximal 255 Zeichen haben.';
 $string['gradingof'] = '{$a} Bewertung';
 $string['guidemappingexplained'] = 'Hinweis: Die Bewertungsrichtlinie sieht eine Höchstbewertung mit <b>{$a->maxscore} Punkten </b> vor. Die Höchstbewertung in den Einstellungen der Aktivität ist abweichend mit {$a->modulegrade} festgelegt. Der Höchstwert der Punkte wird an die Festlegung in der Aktivität angepasst.
 Dazwischen liegende Punktwerte werden gerundet und ggfs. dem nächstliegenden Punktwert zugewiesen werden.';

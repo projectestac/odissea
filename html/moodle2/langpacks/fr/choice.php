@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Ajouter d\'autres propositions';
+$string['allowmultiple'] = 'Permettre le choix de plusieurs réponses';
 $string['allowupdate'] = 'Permettre la modification du choix';
 $string['answered'] = 'Répondu';
 $string['atleastoneoption'] = 'Vous devez fournir au moins une proposition de réponse.';
+$string['cannotsubmit'] = 'Un problème est survenu lors de l\'envoi de votre choix.';
 $string['choice'] = 'Proposition';
 $string['choice:addinstance'] = 'Ajouter un sondage';
 $string['choice:choose'] = 'Répondre aux sondages';
@@ -51,11 +53,9 @@ $string['description'] = 'Description';
 $string['displayhorizontal'] = 'Afficher horizontalement';
 $string['displaymode'] = 'Mode d\'affichage des options';
 $string['displayvertical'] = 'Afficher verticalement';
-$string['event_answer_created'] = 'Vote effectué';
-$string['event_answer_updated'] = 'Vote modifié';
-$string['event_choice_viewed'] = 'Vote consulté';
-$string['event_instances_list_viewed'] = 'Liste d\'instances consultée';
-$string['event_report_viewed'] = 'Rapport de vote consulté';
+$string['eventanswercreated'] = 'Choix effectué';
+$string['eventanswerupdated'] = 'Choix modifié';
+$string['eventreportviewed'] = 'Rapport de sondage consulté';
 $string['expired'] = 'Désolé, cette activité s\'est terminée le {$a} et n\'est plus disponible';
 $string['full'] = '(complet)';
 $string['havetologin'] = 'Vous devez vous connecter pour pouvoir répondre à ce sondage';
@@ -77,6 +77,7 @@ Un sondage peut être utilisé pour :
 * faciliter une décision par les participants, en leur permettant par exemple de choisir une direction pour la suite du cours';
 $string['modulenameplural'] = 'Sondages';
 $string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés vers...';
+$string['multiplenotallowederror'] = 'Il n\'est pas permis de fournir plusieurs réponses à ce sondage';
 $string['mustchooseone'] = 'Vous devez sélectionner une réponse avant d\'enregistrer. L\'enregistrement n\'a pas eu lieu.';
 $string['noguestchoose'] = 'Désolé, les visiteurs anonymes ne peuvent pas participer aux sondages.';
 $string['noresultsviewable'] = 'Les résultats ne sont actuellement pas visibles.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -150,6 +150,7 @@ $string['course:movesections'] = 'セクションを移動する';
 $string['course:publish'] = 'コースをハブに公開する';
 $string['course:request'] = '新しいコースをリクエストする';
 $string['course:reset'] = 'コースをリセットする';
+$string['course:reviewotherusers'] = '他のユーザをレビューする';
 $string['course:sectionvisibility'] = 'セクションの視認性をコントロールする';
 $string['course:setcurrentsection'] = '現在のセクションを設定する';
 $string['course:update'] = 'コース設定を更新する';
@@ -180,7 +181,7 @@ $string['deletelocalroles'] = 'すべてのローカルロール割り当てを�
 $string['deleterolesure'] = '<p>本当にロール「 {$a->name} ({$a->shortname}) 」を削除してもよろしいですか?</p><p>現在、このロールは {$a->count} 名のユーザに割り当てられています。</p>';
 $string['deletexrole'] = '{$a} ロールを削除する';
 $string['duplicaterole'] = 'ロールを複製する';
-$string['duplicaterolesure'] = '本当にロール「 {$a->name} ({$a->shortname}) 」を複製してもよろしいですか?</p>';
+$string['duplicaterolesure'] = '<p>本当にロール「 {$a->name} ({$a->shortname}) 」を複製してもよろしいですか?</p>';
 $string['editingrolex'] = 'ロール「 {$a} 」を編集する';
 $string['editrole'] = 'ロールの編集';
 $string['editxrole'] = '{$a} ロールを編集する';
@@ -373,8 +374,8 @@ $string['roles_help'] = '<p>
 
 <p>
 ロールには、<strong>名称</strong>を定義してください。多言語のロールを設定したい場合、下記のような多言語シンタックスを使用することができます。</p><pre>
-  &lt;span lang="en"&gt;Teacher&lt;/span&gt;
-  &lt;span lang="es_es"&gt;Profesor&lt;/span&gt;
+  <span lang="en">Teacher</span>
+  <span lang="es_es">Profesor</span>
   </pre>
 <p>多言語シンタックスを使用する場合、あなたのMoodleの「フィルタ設定」が有効にされていることを確認してください。</p>
 
@@ -383,7 +384,7 @@ $string['roles_help'] = '<p>
 </p>
 
 <p>
-<strong>説明</strong>では、ロールに対して誰でも共通の理解ができるよう、あなたの言葉で端的にロールを説明してください。
+<strong>説明</strong>では、ロールに対して誰でも共通の理解ができるようあなたの言葉で端的にロールを説明してください。
 </p>
 
 <p>
@@ -411,6 +412,7 @@ $string['site:backup'] = 'コースをバックアップする';
 $string['site:config'] = 'サイト設定を変更する';
 $string['site:doanything'] = 'すべての動作を許可する';
 $string['site:doclinks'] = 'サイト外ドキュメントのリンクを表示する';
+$string['site:forcelanguage'] = 'コース言語をオーバーライドする';
 $string['site:import'] = '他のコースをコースにインポートする';
 $string['site:manageblocks'] = 'ページのブロックを管理する';
 $string['site:mnetloginfromremote'] = 'リモートMoodleからログインする';
@@ -459,6 +461,7 @@ $string['user:update'] = 'ユーザプロファイルを更新する';
 $string['user:viewalldetails'] = 'ユーザ情報すべてを表示する';
 $string['user:viewdetails'] = 'ユーザプロファイルを表示する';
 $string['user:viewhiddendetails'] = '非表示のユーザ詳細を表示する';
+$string['user:viewlastip'] = 'ユーザの最新IPアドレスを閲覧する';
 $string['user:viewuseractivitiesreport'] = 'ユーザの活動レポートを表示する';
 $string['user:viewusergrades'] = 'ユーザの評定を表示する';
 $string['useshowadvancedtochange'] = '変更するには「拡張要素を表示する」を使用してください。';

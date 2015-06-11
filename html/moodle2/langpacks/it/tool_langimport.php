@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_langimport', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,14 @@ $string['install'] = 'Installa i Language Pack selezionati';
 $string['installedlangs'] = 'Language pack installati';
 $string['langimport'] = 'Utility di importazione lingua';
 $string['langimportdisabled'] = 'La funzione di importazione dei language pack è stata disabilitata. I tuoi language pack devono essere aggiornati manualmente a livello di file system. Ricordare di svuotare la cache della stringhe dopo l\'aggiornamento del language pack.';
-$string['langpackinstalled'] = 'Il language pack {$a} è stato installato con successo';
-$string['langpackremoved'] = 'Rimozione Language Pack completata';
-$string['langpackupdateskipped'] = 'Aggiornamento del language pack {$a} saltato';
-$string['langpackuptodate'] = 'Il language pack {$a} è aggiornato';
+$string['langpackinstalled'] = 'Il language pack \'{$a}\' è stato installato correttamente';
+$string['langpackinstalledevent'] = 'Installato language pack';
+$string['langpackremoved'] = 'Il language pack \'{$a}\' è stato rimosso';
+$string['langpackremovedevent'] = 'Rimosso language pack';
+$string['langpackupdated'] = 'Il language pack \'{$a}\' è stato aggiornato correttamente';
+$string['langpackupdatedevent'] = 'Aggiornato language pack';
+$string['langpackupdateskipped'] = 'L\'aggiornamento del language pack \'{$a}\' è stato saltato';
+$string['langpackuptodate'] = 'Il language pack \'{$a}\' è già aggiornato';
 $string['langupdatecomplete'] = 'Aggiornamento Language pack completato';
 $string['missingcfglangotherroot'] = 'Manca il valore per la configurazione di $CFG->langotherroot';
 $string['missinglangparent'] = 'Manca il parent language <em>{$a->parent}</em> of <em>{$a->lang}</em>.';

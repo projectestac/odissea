@@ -21,8 +21,7 @@
  * All the functions neeeded by Moodle core, gradebook, file subsystem etc
  * are placed here.
  *
- * @package    mod
- * @subpackage workshop
+ * @package    mod_workshop
  * @copyright  2009 David Mudrak <david.mudrak@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -47,7 +46,6 @@ function workshop_supports($feature) {
         case FEATURE_GRADE_HAS_GRADE:   return true;
         case FEATURE_GROUPS:            return true;
         case FEATURE_GROUPINGS:         return true;
-        case FEATURE_GROUPMEMBERSONLY:  return true;
         case FEATURE_MOD_INTRO:         return true;
         case FEATURE_BACKUP_MOODLE2:    return true;
         case FEATURE_COMPLETION_TRACKS_VIEWS:
@@ -250,6 +248,35 @@ function workshop_delete_instance($id) {
 }
 
 /**
+ * List the actions that correspond to a view of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = 'r' and edulevel = LEVEL_PARTICIPATING will
+ *       be considered as view action.
+ *
+ * @return array
+ */
+function workshop_get_view_actions() {
+    return array('view', 'view all', 'view submission', 'view example');
+}
+
+/**
+ * List the actions that correspond to a post of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = ('c' || 'u' || 'd') and edulevel = LEVEL_PARTICIPATING
+ *       will be considered as post action.
+ *
+ * @return array
+ */
+function workshop_get_post_actions() {
+    return array('add', 'add assessment', 'add example', 'add submission',
+                 'update', 'update assessment', 'update example', 'update submission');
+}
+
+/**
  * Return a small object with summary information about what a
  * user has done with a given particular instance of this module
  * Used for user activity reports.
@@ -309,12 +336,6 @@ function workshop_user_complete($course, $user, $mod, $workshop) {
     global $CFG, $DB, $OUTPUT;
     require_once(dirname(__FILE__).'/locallib.php');
     require_once($CFG->libdir.'/gradelib.php');
-
-    if ($mod instanceof cm_info) {
-        // We need to degrade here as the {@link workshop} class constructor
-        // expects the plain course module record.
-        $mod = get_coursemodule_from_id('workshop', $mod->id, $mod->course);
-    }
 
     $workshop   = new workshop($workshop, $mod, $course);
     $grades     = grade_get_grades($course->id, 'mod', 'workshop', $workshop->id, $user->id);
@@ -937,7 +958,18 @@ function workshop_cron() {
             $course = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
             $workshop = new workshop($workshop, $cm, $course);
             $workshop->switch_phase(workshop::PHASE_ASSESSMENT);
-            $workshop->log('update switch phase', $workshop->view_url(), $workshop->phase);
+
+            $params = array(
+                'objectid' => $workshop->id,
+                'context' => $workshop->context,
+                'courseid' => $workshop->course->id,
+                'other' => array(
+                    'workshopphase' => $workshop->phase
+                )
+            );
+            $event = \mod_workshop\event\phase_switched::create($params);
+            $event->trigger();
+
             // disable the automatic switching now so that it is not executed again by accident
             // if the teacher changes the phase back to the submission one
             $DB->set_field('workshop', 'phaseswitchassessment', 0, array('id' => $workshop->id));
@@ -1708,8 +1740,6 @@ function workshop_calendar_update(stdClass $workshop, $cmid) {
 /**
  * Extends the course reset form with workshop specific settings.
  *
- * @since Moodle 2.6.6, 2.7.3
- *
  * @param MoodleQuickForm $mform
  */
 function workshop_reset_course_form_definition($mform) {
@@ -1730,8 +1760,6 @@ function workshop_reset_course_form_definition($mform) {
 /**
  * Provides default values for the workshop settings in the course reset form.
  *
- * @since Moodle 2.6.6, 2.7.3
- *
  * @param stdClass $course The course to be reset.
  */
 function workshop_reset_course_form_defaults(stdClass $course) {
@@ -1747,8 +1775,6 @@ function workshop_reset_course_form_defaults(stdClass $course) {
 
 /**
  * Performs the reset of all workshop instances in the course.
- *
- * @since Moodle 2.6.6, 2.7.3
  *
  * @param stdClass $data The actual course reset settings.
  * @return array List of results, each being array[(string)component, (string)item, (string)error]

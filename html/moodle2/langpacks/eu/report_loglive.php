@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_loglive', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Osagaia';
+$string['eventcontext'] = 'Testuingurua';
+$string['eventorigin'] = 'Jatorria';
 $string['livelogs'] = 'Azken orduko agerraldiak zuzenean';
 $string['loglive:view'] = 'Ikusi une honetako agerraldiak';
-$string['page'] = '{$a} orria';
+$string['nologreaderenabled'] = 'Agerraldien irakurlea gaitu da';
 $string['pluginname'] = 'Une honetako agerraldiak';
+$string['selectlogreader'] = 'Aukeratu agerraldi-irakurlea';

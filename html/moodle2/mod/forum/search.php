@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package mod-forum
+ * @package   mod_forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -112,7 +112,13 @@ if (!$course = $DB->get_record('course', array('id'=>$id))) {
 
 require_course_login($course);
 
-add_to_log($course->id, "forum", "search", "search.php?id=$course->id&amp;search=".urlencode($search), $search);
+$params = array(
+    'context' => $PAGE->context,
+    'other' => array('searchterm' => $search)
+);
+
+$event = \mod_forum\event\course_searched::create($params);
+$event->trigger();
 
 $strforums = get_string("modulenameplural", "forum");
 $strsearch = get_string("search", "forum");

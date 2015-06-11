@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'Le site distant a tenté de déchiffrer votre message av
 $string['error7024'] = 'Vous avez envoyé au site distant un message non chiffré, mais le site distant n\'accepte pas de communications non chiffrées depuis votre site. Ceci est très inhabituel. Si ceci arrive, veuillez annoncer un bogue (en fournissant autant d\'information que possible sur les versions des applications utilisées, etc.';
 $string['error7026'] = 'La clef avec laquelle votre message a été signé diffère de celle que le serveur distant connaît pour votre serveur. En outre, le serveur distant a essayé de récupérer votre clef actuelle et y a échoué. Veuillez synchroniser manuellement les clefs avec le site distant et essayer à nouveau.';
 $string['error709'] = 'Le site distant n\'a pas pu obtenir de clef SSL depuis votre serveur.';
+$string['eventaccesscontrolcreated'] = 'Contrôle d\'accès créé';
+$string['eventaccesscontrolupdated'] = 'Contrôle d\'accès modifié';
 $string['expired'] = 'Cette clef est arrivée à échéance le';
 $string['expires'] = 'Valable jusqu\'au';
 $string['expireyourkey'] = 'Supprimer cette clef';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'Fournisseur d\'identité MNet';
 $string['mnetidproviderdesc'] = 'Vous pouvez utiliser cet utilitaire pour trouver un lien où vous pouvez vous connecter, si vous pouvez fournir l\'adresse de courriel correcte correspondant au nom d\'utilisateur avec lequel vous avez essayé de vous connecter ici.';
 $string['mnetidprovidermsg'] = 'Vous devriez pouvoir vous connecter auprès de votre fournisseur {$a}.';
 $string['mnetidprovidernotfound'] = 'Aucune information supplémentaire n\'a pu être trouvée.';
-$string['mnetlog'] = 'Historiques';
 $string['mnetpeers'] = 'Pairs';
 $string['mnetservices'] = 'Services';
 $string['mnet_session_prohibited'] = 'Les utilisateurs de votre serveur ne sont actuellement pas autorisés à se connecter à {$a}.';

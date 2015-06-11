@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -180,7 +180,7 @@ $string['erroremptymessage'] = '帖子正文不能为空';
 $string['erroremptysubject'] = '帖子标题不能为空。';
 $string['errorenrolmentrequired'] = '您必须先选修此课才能访问此内容';
 $string['errorwhiledelete'] = '删除记录时发生错误。';
-$string['event_assessable_uploaded'] = '某些已经发到讨论区';
+$string['eventassessableuploaded'] = '某些已经发到讨论区';
 $string['everyonecanchoose'] = '任何人均可选择订阅';
 $string['everyonecannowchoose'] = '现在任何人均可选择订阅';
 $string['everyoneisnowsubscribed'] = '现在所有人都订阅了该讨论区';
@@ -189,7 +189,7 @@ $string['existingsubscribers'] = '个订阅者';
 $string['exportdiscussion'] = '导出整个话题';
 $string['forcedreadtracking'] = '强制阅读跟踪';
 $string['forcedreadtracking_desc'] = '允许讨论区设置为“强制阅读跟踪”，可能导致某些课程运行效能降低，特别是在含有多个讨论区和帖子的课程中。若以后关闭此选项，以前的设置为“强制的”都会更改为“自行选择”。';
-$string['forcessubscribe'] = '该讨论区强制每个人都订阅';
+$string['forcesubscribed'] = '该讨论区强制每个人都订阅';
 $string['forum'] = '讨论区';
 $string['forum:addinstance'] = '添加新讨论区';
 $string['forum:addnews'] = '发布新闻';
@@ -324,9 +324,6 @@ $string['numposts'] = '{$a} 个帖子';
 $string['olderdiscussions'] = '旧的讨论话题';
 $string['oldertopics'] = '旧话题';
 $string['oldpostdays'] = '多少天后标为已读';
-$string['openmode0'] = '不能发起新话题，也不能回帖';
-$string['openmode1'] = '不能发起新话题，但允许回复';
-$string['openmode2'] = '发起新话题和回帖均允许';
 $string['overviewnumpostssince'] = '上次登录后有 {$a} 个新帖子';
 $string['overviewnumunread'] = '共 {$a} 个未阅读';
 $string['page-mod-forum-discuss'] = '讨论区模块话题页';

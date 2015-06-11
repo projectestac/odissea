@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'portfolio', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ $string['format_plainhtml'] = 'HTML';
 $string['format_presentation'] = 'Presentation';
 $string['format_richhtml'] = 'HTML med bilagor';
 $string['format_spreadsheet'] = 'Kalkylblad';
-$string['format_text'] = 'Enkel text';
+$string['format_text'] = 'Vanlig text';
 $string['format_video'] = 'Video';
 $string['hidden'] = 'Dold';
 $string['highdbsizethreshold'] = 'Hög överföring dbstorlek';

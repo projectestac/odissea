@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Ikastaroen ikuspegi orokorra blokean gehiene
 $string['expandall'] = 'Zabaldu ikastaro-zerrenda guztiak';
 $string['forcedefaultmaxcourses'] = 'behartu gehienezko ikastaroak';
 $string['forcedefaultmaxcoursesdesc'] = 'Gaituz gero, erabiltzaileak ezin izango ditu bere ezarpenak aldatu.';
+$string['fullpath'] = 'Kategoria eta azpikategoria guztika';
 $string['hiddencoursecount'] = '{$a} ikastaro dituzu ezkutuan';
 $string['hiddencoursecountplural'] = '{$a} ikastaro dituzu ezkutuan';
 $string['hiddencoursecountwithshowall'] = '{$a->coursecount} ikastaro dituzu ezkutuan ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Mugitu ikastaroa: {$a}';
 $string['movecoursehere'] = 'Mugitu ikastaroa hona';
 $string['movetofirst'] = 'Mugitu {$a} ikastaroa gora';
 $string['movingcourse'] = 'Mugitzen ari zara: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Bat ere ez';
 $string['numtodisplay'] = 'Erakusteko ikastaro-kopurua:';
+$string['onlyparentname'] = 'Goragoko kategoria baino ez';
 $string['otherexpanded'] = 'Zabaldutako beste ikastaro batzuk';
 $string['pluginname'] = 'Ikastaroaren ikuspegi orokorra';
 $string['preservestates'] = 'Mantendu zabaldutakoak';
 $string['shortnameprefix'] = '{$a} barne';
 $string['shortnamesufixprural'] = '(eta beste {$a})';
 $string['shortnamesufixsingular'] = '(eta beste {$a})';
+$string['showcategories'] = 'Erakusteko kategoriak';
+$string['showcategoriesdesc'] = 'Ikastaro bakoitzaren azpian  ikastaro-kategoria guztiak erakutsiko dira?';
 $string['showchildren'] = 'Erakutsi beheragokoak';
 $string['showchildrendesc'] = 'Ikastaro nagusiaren izenburuaren azpian beheragoko ikastaroak zerrendatu behar dira?';
 $string['showwelcomearea'] = 'Erakutsi ongietorri eremua';

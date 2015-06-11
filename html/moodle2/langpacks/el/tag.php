@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,6 @@ $string['deletedcoursetags'] = 'Διαγράφηκαν οι ετικέτες τ�
 $string['description'] = 'Περιγραφή';
 $string['edittag'] = 'Επεξεργασία αυτής της ετικέτας';
 $string['entertags'] = 'Ετικέτες (χωρισμένες με κόμματα)';
-$string['errordeleting'] = 'Σφάλμα κατά τη διαγραφή της ετικέτας με id {$a}.';
 $string['errortagfrontpage'] = 'Δεν επιτρέπεται να προσάψετε ετικέτες στην αρχική σελίδα';
 $string['errorupdatingrecord'] = 'Σφάλμα κατά την ενημέρωση της ετικέτας';
 $string['flag'] = 'Σήμανση';

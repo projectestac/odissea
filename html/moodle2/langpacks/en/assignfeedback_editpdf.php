@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'Generate feedback PDF';
 $string['generatingpdf'] = 'Generating the PDF...';
 $string['gotopage'] = 'Go to page';
 $string['green'] = 'Green';
-$string['gspath'] = 'Ghostscript path';
-$string['gspath_help'] = 'On most Linux installs, this can be left as \'/usr/bin/gs\'. On Windows it will be something like \'c:gsbingswin32c.exe\' (make sure there are no spaces in the path - if necessary copy the files \'gswin32c.exe\' and \'gsdll32.dll\' to a new folder without a space in the path)';
+$string['gsimage'] = 'Ghostscript test image';
 $string['highlight'] = 'Highlight';
 $string['jsrequired'] = 'JavaScript is required to annotate a PDF. Please enable JavaScript in your browser to use this feature.';
 $string['launcheditor'] = 'Launch PDF editor...';
@@ -66,6 +65,7 @@ $string['output'] = 'Output:';
 $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Page {$a}';
 $string['pagexofy'] = 'Page {$a->page} of {$a->total}';
+$string['pathtogspathdesc'] = 'Please note that annotate PDF requires the path to ghostscript to be set in {$a}.';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annotate PDF';
 $string['rectangle'] = 'Rectangle';
@@ -90,4 +90,3 @@ $string['unsavedchanges'] = 'Unsaved changes';
 $string['viewfeedbackonline'] = 'View annotated PDF...';
 $string['white'] = 'White';
 $string['yellow'] = 'Yellow';
-$string['zlibnotavailable'] = 'Php extension "zlib" is not available. The annotate PDF feature relies on this php extension and will be disabled until zlib is installed and enabled.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'コース概要ブロックに表示され�
 $string['expandall'] = 'すべてのコース一覧を展開する';
 $string['forcedefaultmaxcourses'] = '最大コース数を強制する';
 $string['forcedefaultmaxcoursesdesc'] = 'この設定を有効にした場合、ユーザは個人設定を変更することはできません。';
+$string['fullpath'] = 'すべてのカテゴリおよびサブカテゴリ';
 $string['hiddencoursecount'] = 'あなたには {$a} 件の非表示コースがあります。';
 $string['hiddencoursecountplural'] = 'あなたには {$a} 件の非表示コースがあります。';
 $string['hiddencoursecountwithshowall'] = 'あなたには {$a->coursecount} 件の非表示コースがあります ({$a->showalllink})。';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'コースを移動する: {$a}';
 $string['movecoursehere'] = 'ここにコースを移動する';
 $string['movetofirst'] = '{$a} コースをトップに移動する';
 $string['movingcourse'] = 'あなたは次を移動しています: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'なし';
 $string['numtodisplay'] = '表示するコース数:';
+$string['onlyparentname'] = '親カテゴリのみ';
 $string['otherexpanded'] = '他のコースを展開する';
 $string['pluginname'] = 'コース概要';
 $string['preservestates'] = '展開された状態を保持する';
 $string['shortnameprefix'] = '{$a} を含む';
 $string['shortnamesufixprural'] = '(および他の活動 {$a} 件)';
 $string['shortnamesufixsingular'] = '(および他の活動 {$a} 件)';
+$string['showcategories'] = '表示するカテゴリ';
+$string['showcategoriesdesc'] = 'それぞれのコースの下にコースカテゴリを表示しますか?';
 $string['showchildren'] = '子を表示する';
 $string['showchildrendesc'] = 'メインコースタイトルの下に子コースを一覧表示しますか?';
 $string['showwelcomearea'] = 'ウェルカムエリアを表示する';

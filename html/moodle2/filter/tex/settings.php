@@ -30,21 +30,30 @@ if ($ADMIN->fulltree) {
     require_once($CFG->dirroot.'/filter/tex/lib.php');
 
     $items = array();
-    $items[] = new admin_setting_heading('filter_tex_latexheading', get_string('latexsettings', 'admin'), '');
-    $items[] = new admin_setting_configtextarea('filter_tex_latexpreamble', get_string('latexpreamble','admin'),
+    $items[] = new admin_setting_heading('filter_tex/latexheading', get_string('latexsettings', 'filter_tex'), '');
+    $items[] = new admin_setting_configtextarea('filter_tex/latexpreamble', get_string('latexpreamble','filter_tex'),
                    '', "\\usepackage[latin1]{inputenc}\n\\usepackage{amsmath}\n\\usepackage{amsfonts}\n\\RequirePackage{amsmath,amssymb,latexsym}\n");
-    $items[] = new admin_setting_configtext('filter_tex_latexbackground', get_string('backgroundcolour', 'admin'), '', '#FFFFFF');
-    $items[] = new admin_setting_configtext('filter_tex_density', get_string('density', 'admin'), '', '120', PARAM_INT);
+    $items[] = new admin_setting_configtext('filter_tex/latexbackground', get_string('backgroundcolour', 'admin'), '', '#FFFFFF');
+    $items[] = new admin_setting_configtext('filter_tex/density', get_string('density', 'admin'), '', '120', PARAM_INT);
 
+//XTEC ************ AFEGIT - To let access only to xtecadmin user
+//2015.06.05 @pferre22
+if (get_protected_agora()) {
+//************ FI
+    $default_filter_tex_pathlatex   = '';
+    $default_filter_tex_pathdvips   = '';
+    $default_filter_tex_pathdvisvgm = '';
+    $default_filter_tex_pathconvert = '';
     if (PHP_OS=='Linux') {
         $default_filter_tex_pathlatex   = "/usr/bin/latex";
         $default_filter_tex_pathdvips   = "/usr/bin/dvips";
+        $default_filter_tex_pathdvisvgm = "/usr/bin/dvisvgm";
         $default_filter_tex_pathconvert = "/usr/bin/convert";
-
     } else if (PHP_OS=='Darwin') {
         // most likely needs a fink install (fink.sf.net)
         $default_filter_tex_pathlatex   = "/sw/bin/latex";
         $default_filter_tex_pathdvips   = "/sw/bin/dvips";
+        $default_filter_tex_pathdvisvgm = "/usr/bin/dvisvgm";
         $default_filter_tex_pathconvert = "/sw/bin/convert";
 
     } else if (PHP_OS=='WINNT' or PHP_OS=='WIN32' or PHP_OS=='Windows') {
@@ -52,33 +61,38 @@ if ($ADMIN->fulltree) {
         // and ImageMagick (install at c:\ImageMagick)
         $default_filter_tex_pathlatex   = "c:\\texmf\\miktex\\bin\\latex.exe";
         $default_filter_tex_pathdvips   = "c:\\texmf\\miktex\\bin\\dvips.exe";
+        $default_filter_tex_pathdvisvgm   = "c:\\texmf\\miktex\\bin\\dvisvgm.exe";
         $default_filter_tex_pathconvert = "c:\\imagemagick\\convert.exe";
-
-    } else {
-        $default_filter_tex_pathlatex   = '';
-        $default_filter_tex_pathdvips   = '';
-        $default_filter_tex_pathconvert = '';
     }
 
-    $pathlatex = isset($CFG->filter_tex_pathlatex) ? $CFG->filter_tex_pathlatex : $default_filter_tex_pathlatex;
-    $pathdvips = isset($CFG->filter_tex_pathdvips) ? $CFG->filter_tex_pathdvips : $default_filter_tex_pathdvips;
-    $pathconvert = isset($CFG->filter_tex_pathconvert) ? $CFG->filter_tex_pathconvert : $default_filter_tex_pathconvert;
-    if (strrpos($pathlatex . $pathdvips . $pathconvert, '"') or
-            strrpos($pathlatex . $pathdvips . $pathconvert, "'")) {
-        set_config('filter_tex_pathlatex', trim($pathlatex, " '\""));
-        set_config('filter_tex_pathdvips', trim($pathdvips, " '\""));
-        set_config('filter_tex_pathconvert', trim($pathconvert, " '\""));
+    $pathlatex = get_config('filter_tex', 'pathlatex');
+    $pathdvips = get_config('filter_tex', 'pathdvips');
+    $pathconvert = get_config('filter_tex', 'pathconvert');
+    $pathdvisvgm = get_config('filter_tex', 'pathdvisvgm');
+    if (strrpos($pathlatex . $pathdvips . $pathconvert . $pathdvisvgm, '"') or
+            strrpos($pathlatex . $pathdvips . $pathconvert . $pathdvisvgm, "'")) {
+        set_config('pathlatex', trim($pathlatex, " '\""), 'filter_tex');
+        set_config('pathdvips', trim($pathdvips, " '\""), 'filter_tex');
+        set_config('pathconvert', trim($pathconvert, " '\""), 'filter_tex');
+        set_config('pathdvisvgm', trim($pathdvisvgm, " '\""), 'filter_tex');
     }
 
-    $items[] = new admin_setting_configexecutable('filter_tex_pathlatex', get_string('pathlatex', 'admin'), '', $default_filter_tex_pathlatex);
-    $items[] = new admin_setting_configexecutable('filter_tex_pathdvips', get_string('pathdvips', 'admin'), '', $default_filter_tex_pathdvips);
-    $items[] = new admin_setting_configexecutable('filter_tex_pathconvert', get_string('pathconvert', 'admin'), '', $default_filter_tex_pathconvert);
+    $items[] = new admin_setting_configexecutable('filter_tex/pathlatex', get_string('pathlatex', 'filter_tex'), '', $default_filter_tex_pathlatex);
+    $items[] = new admin_setting_configexecutable('filter_tex/pathdvips', get_string('pathdvips', 'filter_tex'), '', $default_filter_tex_pathdvips);
+    $items[] = new admin_setting_configexecutable('filter_tex/pathconvert', get_string('pathconvert', 'filter_tex'), '', $default_filter_tex_pathconvert);
+    $items[] = new admin_setting_configexecutable('filter_tex/pathdvisvgm', get_string('pathdvisvgm', 'filter_tex'), '', $default_filter_tex_pathdvisvgm);
+    $items[] = new admin_setting_configexecutable('filter_tex/pathmimetex', get_string('pathmimetex', 'filter_tex'), get_string('pathmimetexdesc', 'filter_tex'), '');
 
-    // Even if we offer GIF and PNG formats here, in the update callback we check whether
-    // all the paths actually point to executables. If they don't, we force the setting
+//XTEC ************ AFEGIT - To let access only to xtecadmin user
+//2015.06.05 @pferre22
+}
+//************ FI
+
+    // Even if we offer GIF, PNG and SVG formats here, in the update callback we check whether
+    // required paths actually point to executables. If they don't, we force the setting
     // to GIF, as that's the only format mimeTeX can produce.
-    $formats = array('gif' => 'GIF', 'png' => 'PNG');
-    $items[] = new admin_setting_configselect('filter_tex_convertformat', get_string('convertformat', 'admin'), get_string('configconvertformat', 'admin'), 'gif', $formats);
+    $formats = array('gif' => 'GIF', 'png' => 'PNG', 'svg' => 'SVG');
+    $items[] = new admin_setting_configselect('filter_tex/convertformat', get_string('convertformat', 'filter_tex'), get_string('configconvertformat', 'filter_tex'), 'gif', $formats);
 
     foreach ($items as $item) {
         $item->set_updatedcallback('filter_tex_updatedcallback');

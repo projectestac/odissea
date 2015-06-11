@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['default'] = 'Activado por defecto';
+$string['commentinline'] = 'Comentario en línea';
+$string['commentinlinedefault'] = 'Comentario en línea por defecto';
+$string['commentinlinedefault_help'] = 'Si está activado, esta funcionalidad de comentario en línea vendrá activada por defecto en todas las nuevas tareas.';
+$string['commentinline_help'] = 'Si se activa, el texto de la entrega será copiado en el campo de comentarios de retroalimentación durante la calificación, haciendo más sencillo realizar comentarios (usando un color diferente por ejemplo) o editar el texto original.';
+$string['default'] = 'Habilitado por defecto';
 $string['default_help'] = 'Si se activa la opcion, este método de retroalimentación estará habilitado por omisión para todas las tareas nuevas.';
 $string['enabled'] = 'Comentarios de retroalimentación';
 $string['enabled_help'] = 'Si está habilitado, el evaluador puede dejar comentarios de retroalimentación para cada entrega.';

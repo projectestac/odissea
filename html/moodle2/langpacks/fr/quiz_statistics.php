@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,31 @@ $string['actualresponse'] = 'Réponse actuelle';
 $string['allattempts'] = 'toutes les tentatives';
 $string['allattemptsavg'] = 'Note moyenne de toutes les tentatives';
 $string['allattemptscount'] = 'Nombre total des tentatives évaluées';
+$string['analysisnameonly'] = '« {$a->name} »';
+$string['analysisno'] = '({$a->number}) « {$a->name} »';
+$string['analysisnovariant'] = '({$a->number}) « {$a->name} » variante {$a->variant}';
 $string['analysisofresponses'] = 'Analyse des réponses';
-$string['analysisofresponsesfor'] = 'Analyse des réponses pour {$a}.';
+$string['analysisofresponsesfor'] = 'Analyse des réponses pour {$a}';
+$string['analysisvariant'] = '« {$a->name} » variante {$a->variant}';
 $string['attempts'] = 'Tentatives';
 $string['attemptsall'] = 'toutes les tentatives';
 $string['attemptsfirst'] = 'Première tentative';
 $string['backtoquizreport'] = 'Retour à la page du rapport de statistiques principal.';
 $string['calculatefrom'] = 'Calculer les statistiques de';
+$string['calculatingallstats'] = 'Calcul des statistiques du test, des questions et analyse des données des réponses';
 $string['cic'] = 'Coefficient de cohérence interne pour {$a}';
 $string['completestatsfilename'] = 'statistiques_completes';
 $string['count'] = 'Nombre';
+$string['counttryno'] = 'Nombre de tentatives {$a}';
 $string['coursename'] = 'Nom du cours';
 $string['detailedanalysis'] = 'Analyse plus détaillée des réponses à cette question';
+$string['detailedanalysisforvariant'] = 'Analyse plus détaillée des réponses à la variante {$a} de cette question';
 $string['discrimination_index'] = 'Indice de discrimination';
 $string['discriminative_efficiency'] = 'Efficience discriminatoire';
 $string['downloadeverything'] = 'Télécharger le rapport complet {$a->formatsmenu} {$a->downloadbutton}';
 $string['duration'] = 'Ouvert durant';
 $string['effective_weight'] = 'Coefficient effectif';
 $string['errordeleting'] = 'Erreur de suppression des anciens enregistrements de {$a}.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La question ({$a}) est présente avec des coefficients différents en des endroits différents du test. Une telle fonctionnalité n\'est pas supportée par le rapport statistique et pourrait rendre des statistiques de cette question incorrectes.';
 $string['errormedian'] = 'Erreur de récupération de la médiane';
 $string['errorpowerquestions'] = 'Erreur de récupération des données pour calculer la variance des notes de question';
 $string['errorpowers'] = 'Erreur de récupération des données pour calculer la variance des notes des tests';
@@ -66,8 +72,12 @@ $string['kurtosis'] = 'Aplatissement de la distribution des notes pour {$a}';
 $string['lastattempts'] = 'dernière tentative';
 $string['lastattemptsavg'] = 'Note moyenne des dernières tentatives';
 $string['lastcalculated'] = 'Dernier calcul il y a {$a->lastcalculated}. {$a->count} tentatives depuis.';
+$string['maximumfacility'] = 'Facilité maximale';
 $string['median'] = 'Note médiane pour {$a}';
+$string['medianfacility'] = 'Facilité moyenne';
+$string['minimumfacility'] = 'Facilité minimale';
 $string['modelresponse'] = 'Réponse modèle';
+$string['nameforvariant'] = 'Variante {$a->variant} de {$a->name}';
 $string['negcovar'] = 'Covariance négative de la note de cette question avec la note de la totalité de la tentative';
 $string['negcovar_help'] = 'La note donnée à cette question pour cet ensemble de tentatives du test varie de façon opposée à la note globale de la tentative. Cela signifie que la note de la tentative tend à être au-dessous de la moyenne lorsque la note pour cette question est au-dessus, et vice-versa.
 
@@ -95,6 +105,7 @@ $string['recalculatenow'] = 'Recalculer maintenant';
 $string['reportsettings'] = 'Réglages du calcul des statistiques';
 $string['response'] = 'Réponse';
 $string['skewness'] = 'Dissymétrie de la distribution des notes pour {$a}';
+$string['slotstructureanalysis'] = 'Analyse structurelle de la question {$a}';
 $string['standarddeviation'] = 'Écart type pour {$a}';
 $string['standarddeviationq'] = 'Écart type';
 $string['standarderror'] = 'Erreur standard pour {$a}';
@@ -104,3 +115,5 @@ $string['statisticsreport'] = 'Rapport de statistiques';
 $string['statisticsreportgraph'] = 'Statistique des positions de question';
 $string['statistics:view'] = 'Consulter le rapport de statistiques';
 $string['statsfor'] = 'Statistiques de test pour {$a}';
+$string['variant'] = 'Variante';
+$string['whichtries'] = 'Analyser les réponses de';

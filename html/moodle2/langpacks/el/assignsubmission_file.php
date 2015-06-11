@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['configmaxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['countfiles'] = '{$a} αρχεία';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['enabled'] = 'Υποβολές αρχείων';
+$string['eventassessableuploaded'] = 'Ένα αρχείο έχει φορτωθεί.';
 $string['file'] = 'Υποβολές αρχείων';
 $string['maxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['maxfilessubmission'] = 'Μέγιστος αριθμός αρχείων που έχουν αποσταλεί';

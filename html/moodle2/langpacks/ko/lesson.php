@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -181,11 +181,14 @@ $string['essayemailmessage2'] = '<p>에세이 질문:<blockquote>{$a->question}<
 $string['essayemailsubject'] = '{$a} 질문에 대한 성적';
 $string['essays'] = '에세이';
 $string['essayscore'] = '에세이 점수';
+$string['false'] = '틀림';
 $string['fileformat'] = '파일 형식';
 $string['finish'] = '종료';
 $string['firstanswershould'] = '첫 대답은 "맞음"페이지으로 이동해야 합니다.';
 $string['firstwrong'] = '답이 틀렸기 때문에 점수를 얻을 수 없습니다. 그냥 재미로 계속 해보겠습니까?(맞아도 점수 추가는 없습니다.)';
 $string['flowcontrol'] = '흐름 조절';
+$string['fractionsaddwrong'] = '당신이 선택한 점수 총계는 100% 가 아닙니다.<br /> 현재 합계가 {$a} % 입니다. <br />질문를 수정하기 위해 되돌아가겠습니까?';
+$string['fractionsnomax'] = '정답은 100%가 되어야 합니다.<br /> 그래야 이 질문에 대한 등급 처리가 가능합니다.<br /> 이 문제를 수정하기 위해 되돌아 가겠습니까?';
 $string['full'] = '내용 전체 펼침';
 $string['general'] = '일반적';
 $string['gotoendoflesson'] = '완전학습의 끝으로 가기';
@@ -300,6 +303,7 @@ $string['noretake'] = '당신은 이 학습을 다시 하도록 허가받지 못
 $string['normal'] = '정상 - 학습 과정 따라가기';
 $string['notcompleted'] = '완료하지 않았음';
 $string['notdefined'] = '정의되지 않았음';
+$string['notenoughsubquestions'] = '하위 질문이 제대로 정의되지 않았습니다. 되돌아 가서 이 질문을 고치겠습니까?';
 $string['nothighscore'] = '고득점 {$a} 목록에 등재되지 않았음';
 $string['notitle'] = '제목없음';
 $string['numberofcorrectanswers'] = '정답 수: {$a}';
@@ -412,6 +416,7 @@ $string['timespenterror'] = '적어도 {$a} 분간은 학습에 임해야 합니
 $string['timespentminutes'] = '소비 시간(분)';
 $string['timetaken'] = '시간이 걸렸음';
 $string['topscorestitle'] = '상위 {$a} 고득점';
+$string['true'] = '진실';
 $string['truefalse'] = '참/거짓';
 $string['unabledtosavefile'] = '올린 파일을 저장할 수 없음';
 $string['unknownqtypesnotimported'] = '지원되지 않는 질문 유형의  {$a} 질문을 가져오지 못 했음';

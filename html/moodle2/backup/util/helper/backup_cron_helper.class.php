@@ -111,7 +111,7 @@ abstract class backup_cron_automated_helper {
             cron_trace_time_and_memory();
 
             // This could take a while!
-            @set_time_limit(0);
+            core_php_time_limit::raise();
             raise_memory_limit(MEMORY_EXTRA);
 
             $nextstarttime = backup_cron_automated_helper::calculate_next_automated_backup($admin->timezone, $now);
@@ -153,14 +153,9 @@ abstract class backup_cron_automated_helper {
                 // If config backup_auto_skip_modif_days is set to true, skip courses
                 // that have not been modified since the number of days defined.
                 if ($shouldrunnow && !$skipped && $lastbackupwassuccessful && $config->backup_auto_skip_modif_days) {
-                    $sqlwhere = "course=:courseid AND time>:time AND ".$DB->sql_like('action', ':action', false, true, true);
                     $timenotmodifsincedays = $now - ($config->backup_auto_skip_modif_days * DAYSECS);
                     // Check log if there were any modifications to the course content.
-                    $params = array('courseid' => $course->id,
-                                    'time' => $timenotmodifsincedays,
-                                    'action' => '%view%');
-                    $logexists = $DB->record_exists_select('log', $sqlwhere, $params);
-
+                    $logexists = self::is_course_modified($course->id, $timenotmodifsincedays);
                     $skipped = ($course->timemodified <= $timenotmodifsincedays && !$logexists);
                     $skippedmessage = 'Not modified in the past '.$config->backup_auto_skip_modif_days.' days';
                 }
@@ -169,12 +164,7 @@ abstract class backup_cron_automated_helper {
                 // that have not been modified since previous backup.
                 if ($shouldrunnow && !$skipped && $lastbackupwassuccessful && $config->backup_auto_skip_modif_prev) {
                     // Check log if there were any modifications to the course content.
-                    $sqlwhere = "course=:courseid AND time>:time AND ".$DB->sql_like('action', ':action', false, true, true);
-                    $params = array('courseid' => $course->id,
-                                    'time' => $backupcourse->laststarttime,
-                                    'action' => '%view%');
-                    $logexists = $DB->record_exists_select('log', $sqlwhere, $params);
-
+                    $logexists = self::is_course_modified($course->id, $backupcourse->laststarttime);
                     $skipped = ($course->timemodified <= $backupcourse->laststarttime && !$logexists);
                     $skippedmessage = 'Not modified since previous backup';
                 }
@@ -406,18 +396,36 @@ abstract class backup_cron_automated_helper {
             $results = $bc->get_results();
             $outcome = self::outcome_from_results($results);
             $file = $results['backup_destination']; // May be empty if file already moved to target location.
-            if (!file_exists($dir) || !is_dir($dir) || !is_writable($dir)) {
+
+            if (empty($dir) && $storage !== 0) {
+                // This is intentionally left as a warning instead of an error because of the current behaviour of backup settings.
+                // See MDL-48266 for details.
+                $bc->log('No directory specified for automated backups',
+                        backup::LOG_WARNING);
+                $outcome = self::BACKUP_STATUS_WARNING;
+            } else if ($storage !== 0 && (!file_exists($dir) || !is_dir($dir) || !is_writable($dir))) {
+                // If we need to copy the backup file to an external dir and it is not writable, change status to error.
+                $bc->log('Specified backup directory is not writable - ',
+                        backup::LOG_ERROR, $dir);
                 $dir = null;
+                $outcome = self::BACKUP_STATUS_ERROR;
             }
+
             // Copy file only if there was no error.
             if ($file && !empty($dir) && $storage !== 0 && $outcome != self::BACKUP_STATUS_ERROR) {
                 $filename = backup_plan_dbops::get_default_backup_filename($format, $type, $course->id, $users, $anonymised,
                         !$config->backup_shortname);
                 if (!$file->copy_content_to($dir.'/'.$filename)) {
+                    $bc->log('Attempt to copy backup file to the specified directory failed - ',
+                            backup::LOG_ERROR, $dir);
                     $outcome = self::BACKUP_STATUS_ERROR;
                 }
                 if ($outcome != self::BACKUP_STATUS_ERROR && $storage === 1) {
-                    $file->delete();
+                    if (!$file->delete()) {
+                        $outcome = self::BACKUP_STATUS_WARNING;
+                        $bc->log('Attempt to delete the backup file from course automated backup area failed - ',
+                                backup::LOG_WARNING, $file->get_filename());
+                    }
                 }
             }
 
@@ -566,9 +574,6 @@ abstract class backup_cron_automated_helper {
             return true;
         }
 
-        $backupword = str_replace(' ', '_', core_text::strtolower(get_string('backupfilename')));
-        $backupword = trim(clean_filename($backupword), '_');
-
         if (!file_exists($dir) || !is_dir($dir) || !is_writable($dir)) {
             $dir = null;
         }
@@ -583,9 +588,6 @@ abstract class backup_cron_automated_helper {
             $files = array();
             // Store all the matching files into timemodified => stored_file array.
             foreach ($fs->get_area_files($context->id, $component, $filearea, $itemid) as $file) {
-                if (strpos($file->get_filename(), $backupword) !== 0) {
-                    continue;
-                }
                 $files[$file->get_timemodified()] = $file;
             }
             if (count($files) <= $keep) {
@@ -605,8 +607,8 @@ abstract class backup_cron_automated_helper {
         if (!empty($dir) && ($storage == 1 || $storage == 2)) {
             // Calculate backup filename regex, ignoring the date/time/info parts that can be
             // variable, depending of languages, formats and automated backup settings.
-            $filename = $backupword . '-' . backup::FORMAT_MOODLE . '-' . backup::TYPE_1COURSE . '-' . $course->id . '-';
-            $regex = '#^'.preg_quote($filename, '#').'.*\.mbz$#';
+            $filename = backup::FORMAT_MOODLE . '-' . backup::TYPE_1COURSE . '-' . $course->id . '-';
+            $regex = '#' . preg_quote($filename, '#') . '.*\.mbz$#';
 
             // Store all the matching files into filename => timemodified array.
             $files = array();
@@ -646,5 +648,27 @@ abstract class backup_cron_automated_helper {
         }
 
         return true;
+    }
+
+    /**
+     * Check logs to find out if a course was modified since the given time.
+     *
+     * @param int $courseid course id to check
+     * @param int $since timestamp, from which to check
+     *
+     * @return bool true if the course was modified, false otherwise. This also returns false if no readers are enabled. This is
+     * intentional, since we cannot reliably determine if any modification was made or not.
+     */
+    protected static function is_course_modified($courseid, $since) {
+        $logmang = get_log_manager();
+        $readers = $logmang->get_readers('core\log\sql_select_reader');
+        $where = "courseid = :courseid and timecreated > :since and crud <> 'r'";
+        $params = array('courseid' => $courseid, 'since' => $since);
+        foreach ($readers as $reader) {
+            if ($reader->get_events_select_count($where, $params)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

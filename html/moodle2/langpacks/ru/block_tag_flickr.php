@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_tag_flickr', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_tag_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,18 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'Название';
-$string['date-posted-asc'] = 'Возрастание даты размещения';
-$string['date-posted-desc'] = 'Убывание даты размещения';
-$string['date-taken-asc'] = 'Возрастание даты получения';
-$string['date-taken-desc'] = 'Убывание даты получения';
+$string['configtitle'] = 'Заголовок';
+$string['date-posted-asc'] = 'Дата размещения, по возрастанию';
+$string['date-posted-desc'] = 'Дата размещения, по убыванию';
+$string['date-taken-asc'] = 'Дата получения, по возрастанию';
+$string['date-taken-desc'] = 'Дата получения, по убыванию';
 $string['defaulttile'] = 'Flickr';
 $string['getfromphotoset'] = 'Получение фотографий из фотонабора с ID';
 $string['includerelatedtags'] = 'Включать в запрос связанные теги';
-$string['interestingness-asc'] = 'Возрастание привлекательности';
-$string['interestingness-desc'] = 'Убывание привлекательности';
+$string['interestingness-asc'] = 'Интересность, по возрастанию';
+$string['interestingness-desc'] = 'Привлекательность, по убыванию';
 $string['numberofphotos'] = 'Количество фотографий';
 $string['pluginname'] = 'Flickr';
-$string['relevance'] = 'Актуальность';
+$string['relevance'] = 'Релевантность';
 $string['sortby'] = 'Сортировать по';
-$string['tag_flickr:addinstance'] = 'Добавлять новый блок Flickr';
+$string['tag_flickr:addinstance'] = 'Добавлять новый блок «Flickr»';

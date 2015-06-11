@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'feedback', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,13 +87,13 @@ $string['emailteachermail'] = '{$a->username}(e)k inkesta hau bete du: \'{$a->fe
 Hemen ikus dezakezu:
 
 {$a->url}';
-$string['emailteachermailhtml'] = '{$a->username}(e)k inkesta hau bete du: <i>\'{$a->feedback}\'</i><br/><br/>
-<a href="{$a->url}">Hemen</a> ikus dezakezu.';
+$string['emailteachermailhtml'] = '<p>{$a->username}(e)k inkesta hau bete du: <i>\'{$a->feedback}\'</i>.</p>
+<p><a href="{$a->url}">Hemen</a> ikus dezakezu</p>.';
 $string['entries_saved'] = 'Zure erantzunak ondo gorde dira. Eskerrik asko';
 $string['eventresponsedeleted'] = 'Erantzuna ezabatu da';
 $string['eventresponsesubmitted'] = 'Erantzuna bidali da';
 $string['export_questions'] = 'Galderak esportatu';
-$string['export_to_excel'] = 'Excelera esportatu ';
+$string['export_to_excel'] = 'Esportatu Excelera';
 $string['feedback:addinstance'] = 'Gehitu beste inkesta bat';
 $string['feedbackclose'] = 'Noiz itxi inkesta';
 $string['feedback:complete'] = 'Osatu inkesta bat';
@@ -184,7 +184,7 @@ $string['oldvalueswillbedeleted'] = 'Oraingo galderak eta zure erabiltzaile guzt
 $string['only_one_captcha_allowed'] = 'Feedbackean captcha bat baino ez da baimentzen';
 $string['overview'] = 'Ikuspegi orokorra';
 $string['page'] = 'Orria';
-$string['page_after_submit'] = 'Erantzun ondoren erakutsiko den orria';
+$string['page_after_submit'] = 'Osaketa-mezua';
 $string['pagebreak'] = 'Orri-jauzia';
 $string['page-mod-feedback-x'] = 'Inkesta moduluaren edozein orri';
 $string['parameters_missing'] = 'Hemengo parametroak falta dira';
@@ -199,6 +199,7 @@ $string['preview_help'] = 'Aurrebistan galderen ordena alda daiteke.';
 $string['previous_page'] = 'Aurreko orria';
 $string['public'] = 'Publikoa';
 $string['question'] = 'Galdera';
+$string['questionandsubmission'] = 'Galdera eta bidalketen ezarpenak';
 $string['questions'] = 'Galderak';
 $string['radio'] = 'Aukera anitza - erantzun bakarra';
 $string['radiobutton'] = 'Aukera anitza - erantzun bakarra baimenduta (botoiak)';

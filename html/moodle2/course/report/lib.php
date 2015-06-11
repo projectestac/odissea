@@ -18,11 +18,12 @@
 /**
  * This file contains functions used by course reports
  *
- * @since 2.1
- * @package course-report
+ * @since Moodle 2.1
+ * @package coursereport
  * @copyright 2011 Andrew Davis
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 /**
  * Return a list of page types
  * @param string $pagetype current page type

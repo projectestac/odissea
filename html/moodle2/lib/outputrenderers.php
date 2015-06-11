@@ -96,7 +96,13 @@ class renderer_base {
      * @return string
      */
     public function render(renderable $widget) {
-        $rendermethod = 'render_'.get_class($widget);
+        $classname = get_class($widget);
+        // Strip namespaces.
+        $classname = preg_replace('/^.*\\\/', '', $classname);
+        // Remove _renderable suffixes
+        $classname = preg_replace('/_renderable$/', '', $classname);
+
+        $rendermethod = 'render_'.$classname;
         if (method_exists($this, $rendermethod)) {
             return $this->$rendermethod($widget);
         }
@@ -216,9 +222,34 @@ class plugin_renderer_base extends renderer_base {
      * @return string
      */
     public function render(renderable $widget) {
-        $rendermethod = 'render_'.get_class($widget);
+        $classname = get_class($widget);
+        // Strip namespaces.
+        $classname = preg_replace('/^.*\\\/', '', $classname);
+        // Keep a copy at this point, we may need to look for a deprecated method.
+        $deprecatedmethod = 'render_'.$classname;
+        // Remove _renderable suffixes
+        $classname = preg_replace('/_renderable$/', '', $classname);
+
+        $rendermethod = 'render_'.$classname;
         if (method_exists($this, $rendermethod)) {
             return $this->$rendermethod($widget);
+        }
+        if ($rendermethod !== $deprecatedmethod && method_exists($this, $deprecatedmethod)) {
+            // This is exactly where we don't want to be.
+            // If you have arrived here you have a renderable component within your plugin that has the name
+            // blah_renderable, and you have a render method render_blah_renderable on your plugin.
+            // In 2.8 we revamped output, as part of this change we changed slightly how renderables got rendered
+            // and the _renderable suffix now gets removed when looking for a render method.
+            // You need to change your renderers render_blah_renderable to render_blah.
+            // Until you do this it will not be possible for a theme to override the renderer to override your method.
+            // Please do it ASAP.
+            static $debugged = array();
+            if (!isset($debugged[$deprecatedmethod])) {
+                debugging(sprintf('Deprecated call. Please rename your renderables render method from %s to %s.',
+                    $deprecatedmethod, $rendermethod), DEBUG_DEVELOPER);
+                $debugged[$deprecatedmethod] = true;
+            }
+            return $this->$deprecatedmethod($widget);
         }
         // pass to core renderer if method not found here
         return $this->output->render($widget);
@@ -364,10 +395,6 @@ class core_renderer extends renderer_base {
         $output = '';
         $output .= '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />' . "\n";
         $output .= '<meta name="keywords" content="moodle, ' . $this->page->title . '" />' . "\n";
-        if (!$this->page->cacheable) {
-            $output .= '<meta http-equiv="pragma" content="no-cache" />' . "\n";
-            $output .= '<meta http-equiv="expires" content="0" />' . "\n";
-        }
         // This is only set by the {@link redirect()} method
         $output .= $this->metarefreshtag;
 
@@ -468,9 +495,20 @@ class core_renderer extends renderer_base {
 
         $output = '';
         if (isset($CFG->maintenance_later) and $CFG->maintenance_later > time()) {
-            $output .= $this->box_start('errorbox maintenancewarning');
-            $output .= get_string('maintenancemodeisscheduled', 'admin', (int)(($CFG->maintenance_later-time())/60));
+            $timeleft = $CFG->maintenance_later - time();
+            // If timeleft less than 30 sec, set the class on block to error to highlight.
+            $errorclass = ($timeleft < 30) ? 'error' : 'warning';
+            $output .= $this->box_start($errorclass . ' moodle-has-zindex maintenancewarning');
+            $a = new stdClass();
+            $a->min = (int)($timeleft/60);
+            $a->sec = (int)($timeleft % 60);
+            $output .= get_string('maintenancemodeisscheduled', 'admin', $a) ;
             $output .= $this->box_end();
+            $this->page->requires->yui_module('moodle-core-maintenancemodetimer', 'M.core.maintenancemodetimer',
+                    array(array('timeleftinsec' => $timeleft)));
+            $this->page->requires->strings_for_js(
+                    array('maintenancemodeisscheduled', 'sitemaintenance'),
+                    'admin');
         }
         return $output;
     }
@@ -659,16 +697,16 @@ class core_renderer extends renderer_base {
             unset($SESSION->justloggedin);
             if (!empty($CFG->displayloginfailures)) {
                 if (!isguestuser()) {
-                    if ($count = count_login_failures($CFG->displayloginfailures, $USER->username, $USER->lastlogin)) {
-                        $loggedinas .= '&nbsp;<div class="loginfailures">';
-                        if (empty($count->accounts)) {
-                            $loggedinas .= get_string('failedloginattempts', '', $count);
-                        } else {
-                            $loggedinas .= get_string('failedloginattemptsall', '', $count);
-                        }
+                    // Include this file only when required.
+                    require_once($CFG->dirroot . '/user/lib.php');
+                    if ($count = user_count_login_failures($USER)) {
+                        $loggedinas .= '<div class="loginfailures">';
+                        $a = new stdClass();
+                        $a->attempts = $count;
+                        $loggedinas .= get_string('failedloginattempts', '', $a);
                         if (file_exists("$CFG->dirroot/report/log/index.php") and has_capability('report/log:view', context_system::instance())) {
-                            $loggedinas .= ' (<a href="'.$CFG->wwwroot.'/report/log/index.php'.
-                                                 '?chooselog=1&amp;id=1&amp;modid=site_errors">'.get_string('logs').'</a>)';
+                            $loggedinas .= ' ('.html_writer::link(new moodle_url('/report/log/index.php', array('chooselog' => 1,
+                                    'id' => 0 , 'modid' => 'site_errors')), get_string('logs')).')';
                         }
                         $loggedinas .= '</div>';
                     }
@@ -691,13 +729,13 @@ class core_renderer extends renderer_base {
             // Special case for site home page - please do not remove
             return '<div class="sitelink">' .
                    '<a title="Moodle" href="http://moodle.org/">' .
-                   '<img style="width:100px;height:30px" src="' . $this->pix_url('moodlelogo') . '" alt="moodlelogo" /></a></div>';
+                   '<img src="' . $this->pix_url('moodlelogo') . '" alt="moodlelogo" /></a></div>';
 
         } else if (!empty($CFG->target_release) && $CFG->target_release != $CFG->release) {
             // Special case for during install/upgrade.
             return '<div class="sitelink">'.
                    '<a title="Moodle" href="http://docs.moodle.org/en/Administrator_documentation" onclick="this.target=\'_blank\'">' .
-                   '<img style="width:100px;height:30px" src="' . $this->pix_url('moodlelogo') . '" alt="moodlelogo" /></a></div>';
+                   '<img src="' . $this->pix_url('moodlelogo') . '" alt="moodlelogo" /></a></div>';
 
         } else if ($this->page->course->id == $SITE->id || strpos($this->page->pagetype, 'course-view') === 0) {
             return '<div class="homelink"><a href="' . $CFG->wwwroot . '/">' .
@@ -787,6 +825,13 @@ class core_renderer extends renderer_base {
 
         if (\core\session\manager::is_loggedinas()) {
             $this->page->add_body_class('userloggedinas');
+        }
+
+        // If the user is logged in, and we're not in initial install,
+        // check to see if the user is role-switched and add the appropriate
+        // CSS class to the body element.
+        if (!during_initial_install() && isloggedin() && is_role_switched($this->page->course->id)) {
+            $this->page->add_body_class('userswitchedrole');
         }
 
         // Give themes a chance to init/alter the page object.
@@ -1406,7 +1451,7 @@ class core_renderer extends renderer_base {
                 $output .= $this->block($bc, $region);
                 $lastblock = $bc->title;
             } else if ($bc instanceof block_move_target) {
-                $output .= $this->block_move_target($bc, $zones, $lastblock);
+                $output .= $this->block_move_target($bc, $zones, $lastblock, $region);
             } else {
                 throw new coding_exception('Unexpected type of thing (' . get_class($bc) . ') found in list of block contents.');
             }
@@ -1420,13 +1465,15 @@ class core_renderer extends renderer_base {
      * @param block_move_target $target with the necessary details.
      * @param array $zones array of areas where the block can be moved to
      * @param string $previous the block located before the area currently being rendered.
+     * @param string $region the name of the region
      * @return string the HTML to be output.
      */
-    public function block_move_target($target, $zones, $previous) {
+    public function block_move_target($target, $zones, $previous, $region) {
         if ($previous == null) {
             if (empty($zones)) {
                 // There are no zones, probably because there are no blocks.
-                $position = get_string('moveblockhere', 'block');
+                $regions = $this->page->theme->get_all_block_regions();
+                $position = get_string('moveblockinregion', 'block', $regions[$region]);
             } else {
                 $position = get_string('moveblockbefore', 'block', $zones[0]);
             }
@@ -1912,7 +1959,7 @@ class core_renderer extends renderer_base {
     public function doc_link($path, $text = '', $forcepopup = false) {
         global $CFG;
 
-        $icon = $this->pix_icon('docs', $text, 'moodle', array('class'=>'iconhelp icon-pre'));
+        $icon = $this->pix_icon('docs', '', 'moodle', array('class'=>'iconhelp icon-pre', 'role'=>'presentation'));
 
         $url = new moodle_url(get_docs_url($path));
 
@@ -2248,6 +2295,7 @@ class core_renderer extends renderer_base {
      *     - popup=false (open in popup)
      *     - alttext=true (add image alt attribute)
      *     - class = image class attribute (default 'userpicture')
+     *     - visibletoscreenreaders=true (whether to be visible to screen readers)
      * @return string HTML fragment
      */
     public function user_picture(stdClass $user, array $options = null) {
@@ -2298,6 +2346,9 @@ class core_renderer extends renderer_base {
         $src = $userpicture->get_url($this->page, $this);
 
         $attributes = array('src'=>$src, 'alt'=>$alt, 'title'=>$alt, 'class'=>$class, 'width'=>$size, 'height'=>$size);
+        if (!$userpicture->visibletoscreenreaders) {
+            $attributes['role'] = 'presentation';
+        }
 
         // get the image html output fisrt
         $output = html_writer::empty_tag('img', $attributes);
@@ -2320,6 +2371,10 @@ class core_renderer extends renderer_base {
         }
 
         $attributes = array('href'=>$url);
+        if (!$userpicture->visibletoscreenreaders) {
+            $attributes['tabindex'] = '-1';
+            $attributes['aria-hidden'] = 'true';
+        }
 
         if ($userpicture->popup) {
             $id = html_writer::random_id('userpicture');
@@ -2855,6 +2910,199 @@ EOD;
     }
 
     /**
+     * Construct a user menu, returning HTML that can be echoed out by a
+     * layout file.
+     *
+     * @param stdClass $user A user object, usually $USER.
+     * @param bool $withlinks true if a dropdown should be built.
+     * @return string HTML fragment.
+     */
+    public function user_menu($user = null, $withlinks = null) {
+        global $USER, $CFG;
+        require_once($CFG->dirroot . '/user/lib.php');
+
+        if (is_null($user)) {
+            $user = $USER;
+        }
+
+        // Note: this behaviour is intended to match that of core_renderer::login_info,
+        // but should not be considered to be good practice; layout options are
+        // intended to be theme-specific. Please don't copy this snippet anywhere else.
+        if (is_null($withlinks)) {
+            $withlinks = empty($this->page->layout_options['nologinlinks']);
+        }
+
+        // Add a class for when $withlinks is false.
+        $usermenuclasses = 'usermenu';
+        if (!$withlinks) {
+            $usermenuclasses .= ' withoutlinks';
+        }
+
+        $returnstr = "";
+
+        // If during initial install, return the empty return string.
+        if (during_initial_install()) {
+            return $returnstr;
+        }
+
+        $loginpage = ((string)$this->page->url === get_login_url());
+        $loginurl = get_login_url();
+        // If not logged in, show the typical not-logged-in string.
+        if (!isloggedin()) {
+            $returnstr = get_string('loggedinnot', 'moodle');
+            if (!$loginpage) {
+                $returnstr .= " (<a href=\"$loginurl\">" . get_string('login') . '</a>)';
+            }
+            return html_writer::div(
+                html_writer::span(
+                    $returnstr,
+                    'login'
+                ),
+                $usermenuclasses
+            );
+
+        }
+
+        // If logged in as a guest user, show a string to that effect.
+        if (isguestuser()) {
+            $returnstr = get_string('loggedinasguest');
+            if (!$loginpage && $withlinks) {
+                $returnstr .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
+            }
+
+            return html_writer::div(
+                html_writer::span(
+                    $returnstr,
+                    'login'
+                ),
+                $usermenuclasses
+            );
+        }
+
+        // Get some navigation opts.
+        $opts = user_get_user_navigation_info($user, $this->page, $this->page->course);
+
+        $avatarclasses = "avatars";
+        $avatarcontents = html_writer::span($opts->metadata['useravatar'], 'avatar current');
+        $usertextcontents = $opts->metadata['userfullname'];
+
+        // Other user.
+        if (!empty($opts->metadata['asotheruser'])) {
+            $avatarcontents .= html_writer::span(
+                $opts->metadata['realuseravatar'],
+                'avatar realuser'
+            );
+            $usertextcontents = $opts->metadata['realuserfullname'];
+            $usertextcontents .= html_writer::tag(
+                'span',
+                get_string(
+                    'loggedinas',
+                    'moodle',
+                    html_writer::span(
+                        $opts->metadata['userfullname'],
+                        'value'
+                    )
+                ),
+                array('class' => 'meta viewingas')
+            );
+        }
+
+        // Role.
+        if (!empty($opts->metadata['asotherrole'])) {
+            $role = core_text::strtolower(preg_replace('#[ ]+#', '-', trim($opts->metadata['rolename'])));
+            $usertextcontents .= html_writer::span(
+                $opts->metadata['rolename'],
+                'meta role role-' . $role
+            );
+        }
+
+        // User login failures.
+        if (!empty($opts->metadata['userloginfail'])) {
+            $usertextcontents .= html_writer::span(
+                $opts->metadata['userloginfail'],
+                'meta loginfailures'
+            );
+        }
+
+        // MNet.
+        if (!empty($opts->metadata['asmnetuser'])) {
+            $mnet = strtolower(preg_replace('#[ ]+#', '-', trim($opts->metadata['mnetidprovidername'])));
+            $usertextcontents .= html_writer::span(
+                $opts->metadata['mnetidprovidername'],
+                'meta mnet mnet-' . $mnet
+            );
+        }
+
+        $returnstr .= html_writer::span(
+            html_writer::span($usertextcontents, 'usertext') .
+            html_writer::span($avatarcontents, $avatarclasses),
+            'userbutton'
+        );
+
+        // Create a divider (well, a filler).
+        $divider = new action_menu_filler();
+        $divider->primary = false;
+
+        $am = new action_menu();
+        $am->initialise_js($this->page);
+        $am->set_menu_trigger(
+            $returnstr
+        );
+        $am->set_alignment(action_menu::TR, action_menu::BR);
+        $am->set_nowrap_on_items();
+        if ($withlinks) {
+            $navitemcount = count($opts->navitems);
+            $idx = 0;
+            foreach ($opts->navitems as $key => $value) {
+
+                switch ($value->itemtype) {
+                    case 'divider':
+                        // If the nav item is a divider, add one and skip link processing.
+                        $am->add($divider);
+                        break;
+
+                    case 'invalid':
+                        // Silently skip invalid entries (should we post a notification?).
+                        break;
+
+                    case 'link':
+                        // Process this as a link item.
+                        $pix = null;
+                        if (isset($value->pix) && !empty($value->pix)) {
+                            $pix = new pix_icon($value->pix, $value->title, null, array('class' => 'iconsmall'));
+                        } else if (isset($value->imgsrc) && !empty($value->imgsrc)) {
+                            $value->title = html_writer::img(
+                                $value->imgsrc,
+                                $value->title,
+                                array('class' => 'iconsmall')
+                            ) . $value->title;
+                        }
+                        $al = new action_menu_link_secondary(
+                            $value->url,
+                            $pix,
+                            $value->title,
+                            array('class' => 'icon')
+                        );
+                        $am->add($al);
+                        break;
+                }
+
+                $idx++;
+
+                // Add dividers after the first item and before the last item.
+                if ($idx == 1 || $idx == $navitemcount - 1) {
+                    $am->add($divider);
+                }
+            }
+        }
+
+        return html_writer::div(
+            $this->render($am),
+            $usermenuclasses
+        );
+    }
+
+    /**
      * Return the navbar content so that it can be echoed out by the layout
      *
      * @return string XHTML navbar
@@ -2954,7 +3202,7 @@ EOD;
     }
 
     /**
-     * Accessibility: Right arrow-like character is
+     * Accessibility: Left arrow-like character is
      * used in the breadcrumb trail, course navigation menu
      * (previous/next activity), calendar, and search forum block.
      * If the theme does not set characters, appropriate defaults
@@ -3067,14 +3315,31 @@ EOD;
             $content .= html_writer::end_tag('div');
             $content .= html_writer::end_tag('li');
         } else {
-            // The node doesn't have children so produce a final menuitem
-            $content = html_writer::start_tag('li', array('class'=>'yui3-menuitem'));
-            if ($menunode->get_url() !== null) {
-                $url = $menunode->get_url();
+            // The node doesn't have children so produce a final menuitem.
+            // Also, if the node's text matches '####', add a class so we can treat it as a divider.
+            $content = '';
+            if (preg_match("/^#+$/", $menunode->get_text())) {
+
+                // This is a divider.
+                $content = html_writer::start_tag('li', array('class' => 'yui3-menuitem divider'));
             } else {
-                $url = '#';
+                $content = html_writer::start_tag(
+                    'li',
+                    array(
+                        'class' => 'yui3-menuitem'
+                    )
+                );
+                if ($menunode->get_url() !== null) {
+                    $url = $menunode->get_url();
+                } else {
+                    $url = '#';
+                }
+                $content .= html_writer::link(
+                    $url,
+                    $menunode->get_text(),
+                    array('class' => 'yui3-menuitem-content', 'title' => $menunode->get_title())
+                );
             }
-            $content .= html_writer::link($url, $menunode->get_text(), array('class'=>'yui3-menuitem-content', 'title'=>$menunode->get_title()));
             $content .= html_writer::end_tag('li');
         }
         // Return the sub menu
@@ -3108,7 +3373,7 @@ EOD;
         $linkurl = new moodle_url('/theme/switchdevice.php', array('url' => $this->page->url, 'device' => $devicetype, 'sesskey' => sesskey()));
 
         $content  = html_writer::start_tag('div', array('id' => 'theme_switch_link'));
-        $content .= html_writer::link($linkurl, $linktext);
+        $content .= html_writer::link($linkurl, $linktext, array('rel' => 'nofollow'));
         $content .= html_writer::end_tag('div');
 
         return $content;
@@ -3221,7 +3486,7 @@ EOD;
     /**
      * Get the HTML for blocks in the given region.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @param string $region The region to get HTML for.
      * @return string HTML.
      */
@@ -3268,7 +3533,7 @@ EOD;
     /**
      * Returns the CSS classes to apply to the body tag.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @param array $additionalclasses Any additional classes to apply.
      * @return string
      */
@@ -3298,7 +3563,7 @@ EOD;
     /**
      * The ID attribute to apply to the body tag.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @return string
      */
     public function body_id() {
@@ -3308,7 +3573,7 @@ EOD;
     /**
      * Returns HTML attributes to use within the body tag. This includes an ID and classes.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @param string|array $additionalclasses Any additional classes to give the body tag,
      * @return string
      */
@@ -3322,7 +3587,7 @@ EOD;
     /**
      * Gets HTML for the page heading.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @param string $tag The tag to encase the heading in. h1 by default.
      * @return string HTML.
      */
@@ -3333,7 +3598,7 @@ EOD;
     /**
      * Gets the HTML for the page heading button.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @return string HTML.
      */
     public function page_heading_button() {
@@ -3343,7 +3608,7 @@ EOD;
     /**
      * Returns the Moodle docs link to use for this page.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @param string $text
      * @return string
      */
@@ -3361,7 +3626,7 @@ EOD;
     /**
      * Returns the page heading menu.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @return string HTML.
      */
     public function page_heading_menu() {
@@ -3371,7 +3636,7 @@ EOD;
     /**
      * Returns the title to use on the page.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @return string
      */
     public function page_title() {
@@ -3381,7 +3646,7 @@ EOD;
     /**
      * Returns the URL for the favicon.
      *
-     * @since 2.5.1 2.6
+     * @since Moodle 2.5.1 2.6
      * @return string The favicon URL
      */
     public function favicon() {
@@ -3473,6 +3738,12 @@ class core_renderer_cli extends core_renderer {
         }
         return "!! $message !!\n";
     }
+
+    /**
+     * There is no footer for a cli request, however we must override the
+     * footer method to prevent the default footer.
+     */
+    public function footer() {}
 }
 
 
@@ -3850,7 +4121,7 @@ class core_media_renderer extends plugin_renderer_base {
  * is running a maintenance related task.
  * It must always extend the core_renderer as we switch from the core_renderer to this renderer in a couple of places.
  *
- * @since 2.6
+ * @since Moodle 2.6
  * @package core
  * @category output
  * @copyright 2013 Sam Hemelryk

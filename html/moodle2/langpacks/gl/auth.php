@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Bloquear os campos de usuario';
 $string['auth_fieldlocks_help'] = '<p>Vostede pode bloquear os campos de datos dos usuarios, isto é útil en sitios onde eses datos son mantidos por administradores de forma manual, editando os rexistros dos usuarios ou enviándoos mediante a utilidade «Enviar usuarios». Se vostede bloquea campos requiridos por Moodle, asegúrese de que fornece eses datos ao crear as contas dos usuarios; doutro modo as contas non serán utilizábeis.</p><p>Considere fixar este axuste de bloqueo en «Desbloqueado se está baleiro», para evitar este problema.</p>';
 $string['authinstructions'] = 'Deixe isto en branco para que as instrucións de acceso predeterminadas sexan presentadas na páxina de acceso. Se desexa fornecer instrucións de acceso personalizadas, escríbaas aquí.';
 $string['auth_invalidnewemailkey'] = 'Erro: Si está tentando confirmar un cambio de enderezo de correo. debe ter cometido un error ao copiar o URL que lle enviamos por correo. Copie a ligazón e tenteo de novo.';
+$string['authloginviaemail'] = 'Permitir acceso por correo electrónico';
+$string['authloginviaemail_desc'] = 'Permitir aos usuarios usar tanto o nome de usuario coma o enderezo de correo (se é único) para acceder.';
 $string['auth_multiplehosts'] = 'Pode especificar múltiplos servidores (p.ex. servidor1.com;servidor2.com;servidor3.com) ou (p.ex. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_outofnewemailupdateattempts'] = 'Fixo máis intentos dos permitidos para actualizar e seu enderezo de correo. A súa solicitude de actualización foi cancelada.';
 $string['auth_passwordisexpired'] = 'O seu contrasinal caducou. Quere cambiar agora o seu contrasinal?';
@@ -87,8 +89,9 @@ $string['errorminpasswordlower'] = 'Os contrasinais deben ter polo menos {$a} le
 $string['errorminpasswordnonalphanum'] = 'Os contrasinais deben ter polo menos {$a} caracteres non alfanuméricos.';
 $string['errorminpasswordupper'] = 'Os contrasinais deben ter polo menos {$a} letra(s) maiúscula(s).';
 $string['errorpasswordupdate'] = 'Produciuse un erro ao actualizar o contrasnal. O contrasinal non cambiou';
-$string['event_user_loggedin'] = 'O usuario iniciou sesión';
+$string['eventuserloggedin'] = 'O usuario accedeu';
 $string['eventuserloggedinas'] = 'O usuario accedeu como outro usuario';
+$string['eventuserloginfailed'] = 'Erro no acceso do usuario';
 $string['forcechangepassword'] = 'Forzar o cambio de contrasinal';
 $string['forcechangepasswordfirst_help'] = 'Forzar que os usuarios cambien o contrasinal a primeira vez que accedan a Moodle.';
 $string['forcechangepassword_help'] = 'Forzar que os usuarios cambien o contrasinal a próxima vez que accedan a Moodle.';

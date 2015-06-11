@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Voeg nog een hint toe';
 $string['addcategory'] = 'Voeg categorie toe';
 $string['addmorechoiceblanks'] = 'Lege lijnen voor {no} meer keuzes';
 $string['adminreport'] = 'Rapport over mogelijke problemen in je vragendatabank';
+$string['advancedsearchoptions'] = 'Zoekopties';
+$string['alltries'] = 'Alle pogingen';
 $string['answer'] = 'Antwoord';
 $string['answers'] = 'Antwoorden';
 $string['answersaved'] = 'Antwoord bewaard';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'Kon vraagcategorie niet ophalen';
 $string['cannotunhidequestion'] = 'Terug zichtbaar maken van deze vraag mislukt';
 $string['cannotunzip'] = 'Kon bestand niet unzippen';
 $string['cannotwriteto'] = 'Kan geëxporteerde bestanden niet schrijven naar {$a}';
+$string['categories'] = 'Categorieën';
 $string['category'] = 'Categorie';
 $string['categorycurrent'] = 'Huidige categorie';
 $string['categorycurrentuse'] = 'Gebruik deze categorie';
@@ -114,7 +117,7 @@ $string['defaultmark'] = 'Standaard cijfer';
 $string['defaultmarkmustbepositive'] = 'Het standaardcijfer moet positief zijn.';
 $string['deletecoursecategorywithquestions'] = 'Er zijn vragen in de vragenbank geassocieerd met deze cursuscategorie. Als je verdergaat zullen die verwijderd worden. Misschien wil je ze eerst verplaatsen. Gebruik hiervoor de vragenbankinterface.';
 $string['deletequestioncheck'] = 'Weet je zeker dat je \'{$a}\' wil verwijderen?';
-$string['deletequestionscheck'] = '<p>Weet je zeker dat je volgende vragen wil verwijderen?</p><p> {$a}<p>';
+$string['deletequestionscheck'] = 'Weet je zeker dat je volgende vragen wil verwijderen?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'Vraaggedrag \'{$a}\' verwijderen';
 $string['deletingqtype'] = 'Vraagtype \'{$a}\' aan het verwijderen';
 $string['didnotmatchanyanswer'] = '[Komt met geen enkel antwoord overeen]';
@@ -150,6 +153,7 @@ $string['errorduringregrade'] = 'Kon vraag {$a->qid} niet herwaarderen, ga naar 
 $string['errorfilecannotbecopied'] = 'Fout: kan bestand {$a} niet kopieëren.';
 $string['errorfilecannotbemoved'] = 'Fout: kan bestand {$a} niet verplaatsen.';
 $string['errorfileschanged'] = 'Fout: bestanden gelinkt aan vragen zijn gewijzigd sinds het tonen van dit formulier.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Vraag ({$a}) wordt meer dan eens gebruikt met verschillende wegingen. Dit wordt nog niet ondersteund door het statistis rapport en maakt de statistieken voor deze vraag onbetrouwbaar.';
 $string['errormanualgradeoutofrange'] = 'Het cijfer {$a->grade} is niet tussen 0 en  {$a->maxgrade} voor vraag {$a->name}. De score en commentaar zijn niet bewaard.';
 $string['errormovingquestions'] = 'Fout tijdens het verplaatsen van vragen met ID {$a}';
 $string['errorpostprocess'] = 'Fout opgetreden tijdens naverwerking';
@@ -159,6 +163,8 @@ $string['errorprocessingresponses'] = 'Er is een fout opgetreden tijdens het ver
 $string['errorsavingcomment'] = 'Fout bij het bewaren van de commentaar voor vraag {$a->name} in de databank.';
 $string['errorsavingflags'] = 'Fout bij het bewaren van de vlagstatus';
 $string['errorupdatingattempt'] = 'Fout bij het updaten van poging {$a->id} in de databank.';
+$string['eventquestioncategorycreated'] = 'Vraagcategorie aangemaakt';
+$string['export'] = 'Exporteer';
 $string['exportcategory'] = 'Exporteer categorie';
 $string['exportcategory_help'] = 'Deze instelling bepaalt de categorie van waaruit de geëxporteerde vragen gehaald worden.
 
@@ -176,6 +182,7 @@ $string['filesareacourse'] = 'de plaats voor cursusbestanden';
 $string['filesareasite'] = 'de plaats voor sitebestanden';
 $string['filestomove'] = 'Verplaats / kopieëer bestanden naar {$a}?';
 $string['fillincorrect'] = 'Vul de juiste antwoorden in';
+$string['firsttry'] = 'Eerste poging';
 $string['flagged'] = 'Gemarkeerd';
 $string['flagthisquestion'] = 'Markeer deze vraag';
 $string['formquestionnotinids'] = 'Formulier bevat vraag die niet bij de vraag ID\'s staat';
@@ -194,6 +201,7 @@ $string['howquestionsbehave'] = 'Hoe vragen zich gedragen';
 $string['howquestionsbehave_help'] = 'Leerlingen kunnen op verschillende manieren interageren met de vragen. Bijvoorbeeld kun je wensen dat de leerlingen elke vraag beantwoorden en dan de test insturen voor er ook maar iets beoordeeld wordt of feedback gegeven wordt. Dat is dan de  "Uitgestelde feedback" modus.
 Je zou ook kunnen willen dat leerlingen bij elke vraag die ze insturen onmiddellijk feedback krijgen, en als ze het niet juist hebben, een tweede kans krijgen voor minder punten. Dat is dan de "Interactief met meerdere pogingen"-modus.';
 $string['ignorebroken'] = 'Negeer gebroken links';
+$string['import'] = 'Importeer';
 $string['importcategory'] = 'Importeer categorie';
 $string['importcategory_help'] = 'Deze instelling bepaalt de categorie waarin geïmporteerde vragen terecht komen.
 
@@ -223,6 +231,7 @@ $string['invalidgrade'] = 'Cijfers komen niet overeen met beoordelingsopties - v
 $string['invalidpenalty'] = 'Ingeldige strafpunten';
 $string['invalidwizardpage'] = 'Ongeldige of geen pagina opgegeven!';
 $string['lastmodifiedby'] = 'Laatst gewijzigd door';
+$string['lasttry'] = 'Laatste poging';
 $string['linkedfiledoesntexist'] = 'Het gelinkte bestand {$a} bestaat niet';
 $string['makechildof'] = 'Maak ondergeschikt aan \'{$a}\'';
 $string['makecopy'] = 'Maak kopie';
@@ -301,7 +310,7 @@ $string['partiallycorrectfeedbackdefault'] = 'Je antwoord is gedeeltelijk juist.
 $string['penaltyfactor'] = 'Strafpuntfactor';
 $string['penaltyfactor_help'] = '<p>Je kunt instellen welk deel van de behaalde score moet afgetrokken worden voor elk fout antwoord. Dit is enkel relevant als de test in adaptieve modus loopt, zodat de leerling meerdere keren kan antwoorden op elke vraag. De straffactor moet een getal zijn tussen 0 en 1. Een straffactor van 1 betekent dat de leerling het antwoord van de eerste keer juist moet hebben om een cijfer te krijgen. Een straffactor van 0 betekent dat de leerling zo dikwijls als hij wil mag proberen en toch nog het volledige cijfer krijgt als hij het antwoord juist heeft.</p>';
 $string['penaltyforeachincorrecttry'] = 'Strafpunt voor elke foute poging';
-$string['penaltyforeachincorrecttry_help'] = 'Wanneer je je vragen laat lopen met het vraaggedrag \'Interactief met meerdere pogingen\' of met \'Adaptieve modus\', zodat de leerling meerdere pogingen heeft om het antwoord juist te hebben, dan controleert deze optie hoe veel strafpunten ze krijgen voor elke foute poging.
+$string['penaltyforeachincorrecttry_help'] = 'Wanneer je vragen laat lopen met het vraaggedrag \'Interactief met meerdere pogingen\' of met \'Adaptieve modus\', zodat de leerling meerdere pogingen heeft om het antwoord juist te hebben, dan controleert deze optie hoe veel strafpunten ze krijgen voor elke foute poging.
 
 Het aantal strafpunten is een deel van het totaal aantal punten voor de vraag, dus als de vraag drie punten waard is en het aantal strafpunten is 0,3333333, dan zal de leerling een 3 krijgen als die het antwoord van de eerste keer juist heeft, een 3 als die het bij de tweede poging juist heeft en een 1 bij de derde poging.';
 $string['permissionedit'] = 'Bewerk deze vraag';
@@ -323,6 +332,7 @@ $string['questioncatsfor'] = 'Vragencategorieën voor \'{$a}\'';
 $string['questiondoesnotexist'] = 'Deze vraag bestaat niet.';
 $string['questionidmismatch'] = 'Vraag ID\'s komen niet overeen';
 $string['questionname'] = 'Vraagnaam';
+$string['questionnamecopy'] = '{$a} (kopie)';
 $string['questionno'] = 'Vraag {$a}';
 $string['questionpreviewdefaults'] = 'Standaardinstellingen vraagvoorbeeld';
 $string['questionpreviewdefaults_desc'] = 'Deze standaardwaarden worden gebruikt wanneer een gebruiker vragen bekijkt in de vragenbank. Wanneer een gebruiker een vraag bekeken heeft, worden deze instellingen bewaard als persoonlijke gebruikersvoorkeuren.';
@@ -345,6 +355,7 @@ $string['reviewresponse'] = 'Bekijk antwoord';
 $string['rightanswer'] = 'Juist antwoord';
 $string['rightanswer_help'] = 'Een automatisch gegenereerde samenvatting van het juiste antwoord. Dit kan beperkt zijn. Overweeg om het juiste antwoord in de algemene feedback foor de vraag mee te geven en deze optie uit te schakelen.';
 $string['save'] = 'Bewaar';
+$string['savechangesandcontinueediting'] = 'Bewaar wijzigingen en ga verder met bewerken';
 $string['saved'] = 'Bewaard: {$a}';
 $string['saveflags'] = 'Bewaar de status van deze markeringen';
 $string['selectacategory'] = 'Selecteer een categorie:';
@@ -393,6 +404,7 @@ $string['unknownquestioncatregory'] = 'Onbekende vraagcategorie: {$a}';
 $string['unknownquestiontype'] = 'Onbekend vraagtype: {$a}.';
 $string['unknowntolerance'] = 'Onbekend tolerantietype {$a}';
 $string['unpublished'] = 'Niet gepubliceerd';
+$string['unusedcategorydeleted'] = 'Deze categorie is verwijderd omdat na het verwijderen van de cursus bleek dat de vragen nergens op de server nog gebruikt worden.';
 $string['updatedisplayoptions'] = 'Toonopties aanpassen';
 $string['upgradeproblemcategoryloop'] = 'Probleem gevonden tijdens de upgrade van de vragencategorieën. Er is een lus in de categorieënboom. De betreffende categorie-id\'s zijn {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Kon vragencategorie {$a->name}({$a->id}) niet updaten.';
@@ -400,6 +412,7 @@ $string['upgradeproblemunknowncategory'] = 'Probleem gevonden tijdens het upgrad
 Categorie {$a->id} refereert naar bovenliggende categorie {$a->parent}, die niet bestaat. Bovenliggende categorie gewijzigd om het probleem op te lossen';
 $string['whethercorrect'] = 'Indien juist';
 $string['whethercorrect_help'] = 'Dit geldt zowel voor de tekstuele omschrijving \'juist\', \'gedeeltelijk juist\' of \'fout\', en alle gekleurde markeringen die dezelfde informatie overbrengt.';
+$string['whichtries'] = 'Welke pogingen';
 $string['withselected'] = 'Met geselecteerd';
 $string['wrongprefix'] = 'Fout geformateerde naamprefix {$a}';
 $string['xoutofmax'] = '{$a->mark} op {$a->max}';

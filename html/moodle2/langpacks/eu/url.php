@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,6 @@ URLa erakusteko modu ezberdinak daude, hala nola enbotaturik edo leiho berri bat
 
 Badago, bestalde, beste edozein baliabide edo aktibitateetan testu-editorea erabilita URLak gehitzeko aukera ere.';
 $string['modulenameplural'] = 'URLak';
-$string['neverseen'] = 'Ikusi gabea';
 $string['page-mod-url-x'] = 'URL moduluaren edozein orria';
 $string['parameterinfo'] = 'parametroa=aldagaia';
 $string['parametersheader'] = 'URL aldagaiak';
@@ -67,7 +66,7 @@ $string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren berezko altuera
 $string['popupwidth'] = 'Pop-up-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren berezko zabalera.';
 $string['printintro'] = 'Erakutsi URLaren deskribapena';
-$string['printintroexplain'] = 'Erakutsi URL izena edukiaren azpian? Erakusteko hainbat motak ez dute erakusten URL izena nahiz eta gaituta egon.';
+$string['printintroexplain'] = 'Erakutsi URL deskribapena edukiaren azpian? Erakusteko hainbat motek ez dute erakusten URL deskribapena gaituta egon arren.';
 $string['rolesinparams'] = 'Sartu rol-izenak parametroetan';
 $string['serverurl'] = 'Zerbitzariaren URLa';
 $string['url:addinstance'] = 'Gehitu beste URL baliabide bat';

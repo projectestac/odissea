@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,16 +67,16 @@ $string['erroreditgrouping'] = 'Fehler beim Bearbeiten der Gruppierung {$a}';
 $string['errorinvalidgroup'] = 'Fehler: Ungültige Gruppe {$a}';
 $string['errorremovenotpermitted'] = 'Sie haben nicht das Recht, automatisch hinzugefügte Gruppenmitglieder {$a} zu entfernen.';
 $string['errorselectone'] = 'Bitte markieren Sie nur eine Gruppe, bevor Sie diese Option wählen.';
-$string['errorselectsome'] = 'Bitte markieren Sie eine oder mehrere Gruppen, bevor Sie diese Option wählen.';
-$string['evenallocation'] = 'Anmerkung: Um die Verteilung der Gruppen gleichmäßig zu erteilen, kann die Zahl der Mitglieder je Gruppe von der angegeben Zahl abweichen.';
-$string['event_group_created'] = 'Gruppe angelegt';
-$string['event_group_deleted'] = 'Gruppe gelöscht';
-$string['event_grouping_created'] = 'Gruppierung angelegt';
-$string['event_grouping_deleted'] = 'Gruppierung gelöscht';
-$string['event_grouping_updated'] = 'Gruppierung aktualisiert';
-$string['event_group_member_added'] = 'Gruppenmitglied hinzugefügt';
-$string['event_group_member_removed'] = 'Gruppenmitglied entfernt';
-$string['event_group_updated'] = 'Gruppe aktualisiert';
+$string['errorselectsome'] = 'Markieren Sie eine oder mehrere Gruppen, bevor Sie diese Option wählen.';
+$string['evenallocation'] = 'Um die Gruppen gleichmäßig zu verteilen, kann die Zahl der Mitglieder je Gruppe von der angegeben Zahl abweichen.';
+$string['eventgroupcreated'] = 'Gruppe angelegt';
+$string['eventgroupdeleted'] = 'Gruppe gelöscht';
+$string['eventgroupingcreated'] = 'Gruppierung angelegt';
+$string['eventgroupingdeleted'] = 'Gruppierung gelöscht';
+$string['eventgroupingupdated'] = 'Gruppierung aktualisiert';
+$string['eventgroupmemberadded'] = 'Gruppenmitglied hinzugefügt';
+$string['eventgroupmemberremoved'] = 'Gruppenmitglied entfernt';
+$string['eventgroupupdated'] = 'Gruppe aktualisiert';
 $string['existingmembers'] = 'Vorhandene Mitglieder: {$a}';
 $string['filtergroups'] = 'Gruppen filtern nach:';
 $string['group'] = 'Gruppe';
@@ -100,9 +100,6 @@ $string['groupingsonly'] = 'Nur Gruppierungen';
 $string['groupmember'] = 'Gruppenmitglied';
 $string['groupmemberdesc'] = 'Standard-Rolle für Mitglieder einer Gruppe';
 $string['groupmembers'] = 'Gruppenmitglieder';
-$string['groupmembersonly'] = 'Nur für Gruppenmitglieder';
-$string['groupmembersonlyerror'] = 'Sie müssen Mitglied in einer Gruppe sein, die diese Aktivität nutzt.';
-$string['groupmembersonly_help'] = 'Wenn die Option aktiviert ist, ist das Material oder die Aktivität nur für Gruppenmitglieder verfügbar, die der jeweiligen Gruppierung zugeordnet sind.';
 $string['groupmemberssee'] = 'Gruppenmitglieder anzeigen';
 $string['groupmembersselected'] = 'Mitglieder der markierten Gruppe';
 $string['groupmode'] = 'Gruppenmodus';
@@ -155,6 +152,7 @@ $string['nogroups'] = 'In diesem Kurs gibt es bisher keine Gruppeneinstellungen'
 $string['nogroupsassigned'] = 'Keine Gruppen zugeordnet';
 $string['nopermissionforcreation'] = 'Die Gruppe "{$a}" konnte nicht erstellt werden, weil Sie nicht über die notwendigen Rechte verfügen.';
 $string['nosmallgroups'] = 'Letzte kleine Gruppe vermeiden';
+$string['notingroup'] = 'Nutzer/innen in Gruppen ignorieren';
 $string['notingrouping'] = '[Nicht in einer Gruppierung]';
 $string['nousersinrole'] = 'In der ausgewählten Rolle gibt es keine passenden Nutzer/innen';
 $string['number'] = 'Anzahl von Gruppen oder Mitgliedern pro Gruppe';
@@ -171,6 +169,8 @@ $string['removegroupfromselectedgrouping'] = 'Gruppe aus der Gruppierung entfern
 $string['removegroupingsmembers'] = 'Alle Gruppen aus den Gruppierungen entfernen';
 $string['removegroupsmembers'] = 'Alle Gruppenmitglieder entfernen';
 $string['removeselectedusers'] = 'Ausgewählte Nutzer/innen entfernen';
+$string['selectfromgroup'] = 'Mitglieder aus der Gruppe wählen';
+$string['selectfromgrouping'] = 'Mitglieder aus der Gruppierung wählen';
 $string['selectfromrole'] = 'Nutzer in der Rolle auswählen';
 $string['showgroupsingrouping'] = 'Gruppen in Gruppierungen anzeigen';
 $string['showmembersforgroup'] = 'Mitglieder der Gruppe anzeigen';

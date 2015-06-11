@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'Lerro arteko iruzkina';
+$string['commentinlinedefault'] = 'Berezko lerro arteko iruzkina';
+$string['commentinlinedefault_help'] = 'Ezarriz gero, lerro arteko iruzkin hau berez gaituko da bidalketa berri guztietan.';
+$string['commentinline_help'] = 'Gaituz gero, kalifikazioa egitean bidalketaren testua feedback-eko iruzkinera kopiatuko da, lerro arteko iruzkina egitea errazteko (kolore ezberdin bat erabilita beharbada) edo jatorrizko testua editatu ahal izateko.';
 $string['default'] = 'Berez gaituta';
 $string['default_help'] = 'Ezarriz gero, feedback-metodo hau berez gaituko da zeregin berri guztietan';
 $string['enabled'] = 'Feedback-iruzkinak';

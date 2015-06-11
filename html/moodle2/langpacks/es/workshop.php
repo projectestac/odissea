@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['aggregategrades'] = 'Recalcular las calificaciones';
 $string['aggregation'] = 'Agregación de calificaciones';
 $string['allocate'] = 'Asignar envíos';
-$string['allocatedetails'] = 'esperado: {$a->expected}<br />presentado: {$a->submitted}<br />para asignar: {$a->allocate}';
+$string['allocatedetails'] = 'esperado: {$a->expected}<br />presentado: {$a->submitted}<br />to asignado: {$a->allocate}';
 $string['allocation'] = 'Asignación de envíos';
 $string['allocationconfigured'] = 'Asignación configurada';
 $string['allocationdone'] = 'Asignación hecha';
@@ -108,7 +108,7 @@ $string['evaluation'] = 'Evaluación de calificaciones';
 $string['evaluationmethod'] = 'Método de evaluación de calificaciones';
 $string['evaluationmethod_help'] = 'El método de evaluación de calificaciones determina cómo se calculan las calificaciones en las evaluaciones. Usted puede permitir el re-cálculo posterior de calificaciones según diferentes configuraciones, a menos que ya estuviera satisfecho con el resultado.';
 $string['evaluationsettings'] = 'Ajustes de la evaluación de las calificaciones';
-$string['event_assessable_uploaded'] = 'Se ha realizado una entrega.';
+$string['eventassessableuploaded'] = 'Se ha realizado una entrega.';
 $string['example'] = 'Envío de ejemplo';
 $string['exampleadd'] = 'Agregar envío de ejemplo';
 $string['exampleassess'] = 'Evaluar envío de ejemplo';
@@ -312,7 +312,6 @@ $string['workshop:viewallassessments'] = 'Mostrar todas las evaluaciones';
 $string['workshop:viewallsubmissions'] = 'Ver todos los envíos';
 $string['workshop:viewauthornames'] = 'Ver el nombre de los autores';
 $string['workshop:viewauthorpublished'] = 'Ver los autores de los envíos publicados';
-$string['workshopviewed'] = 'Taller visto';
 $string['workshop:viewpublishedsubmissions'] = 'Ver los envíos publicados';
 $string['workshop:viewreviewernames'] = 'Ver los nombres de los evaluadores';
 $string['yourassessment'] = 'Su evaluación';

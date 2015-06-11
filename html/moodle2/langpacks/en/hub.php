@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'hub', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -159,13 +159,13 @@ $string['questionsnumber'] = 'Number of questions ({$a})';
 $string['readvertiseon'] = 'Update advertising information on {$a}';
 $string['registeredcourses'] = 'Registered courses';
 $string['registeredmoodleorg'] = 'Moodle.org ({$a})';
-$string['registeredon'] = 'Hubs with which you are registered';
+$string['registeredon'] = 'Where your site is registered';
 $string['registeredsites'] = 'Registered sites';
 $string['registermoochtips'] = 'In order to register with Moodle.net, your site must be registered with Moodle.org.';
 $string['registersite'] = 'Register with {$a}';
 $string['registerwith'] = 'Register with a hub';
 $string['registrationconfirmed'] = 'Site registration confirmed';
-$string['registrationconfirmedon'] = 'You are now registered on the hub {$a}. You are now able to publish courses to this hub, using the "Publish" link in course administration menus.';
+$string['registrationconfirmedon'] = 'Thank you for registering your site. Registration information will be kept up to date by the \'Site registration\' scheduled task.';
 $string['registrationinfo'] = 'Registration information';
 $string['registrationupdated'] = 'Registration has been updated.';
 $string['registrationupdatedfailed'] = 'Registration update failed.';

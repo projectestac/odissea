@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qformat_missingword', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   qformat_missingword
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['beginanswernotfound'] = '在导入文件的内容中无法找到必需的“{”字符。';
+$string['endanswernotfound'] = '在导入文件的内容中无法找到必需的“}”字符。';
+$string['noanswerfound'] = '在题目中没有找到答案';
 $string['pluginname'] = '缺失字格式';
 $string['pluginname_help'] = '缺失字格式可以使问题通过文本文件来导入。';

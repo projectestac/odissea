@@ -409,7 +409,7 @@ abstract class grade_object {
      *
      * @param bool $deleted
      */
-    function notify_changed($deleted) {
+    protected function notify_changed($deleted) {
     }
 
     /**

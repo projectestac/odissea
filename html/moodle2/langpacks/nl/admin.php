@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'admin', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,8 @@ $string['allowthemechangeonurl'] = 'Verandering van thema toestaan via de URL';
 $string['allowuserblockhiding'] = 'Gebruikers mogen blokken verbergen';
 $string['allowuserswitchrolestheycantassign'] = 'Gebruikers zonder het recht om rollen toe te wijzen toelaten om de rol wijzigen schakelaar op de cursuspagina te gebruiken';
 $string['allowuserthemes'] = 'Gebruikersthema\'s toestaan';
+$string['alternativefullnameformat'] = 'Alternatieve format voor volledige naam';
+$string['alternativefullnameformat_desc'] = 'Hier bepaal je hoe de namen van gebruikers worden getoond aan gebruikers die de moeglijkheid viewfullnames hebben (standaard voor gebruikers die manager, leraar of leraar zonder bewerken zijn). De mogelijke plaatshouders zijn dezelfde als die gebruikt kunnen worden voor de \'Volledige naam opmaak"-instelling.';
 $string['antivirus'] = 'Anti-virus';
 $string['appearance'] = 'Uiterlijk';
 $string['aspellpath'] = 'Pad naar aspell';
@@ -101,7 +103,6 @@ $string['cacherequesthelp'] = 'Gebruikersspecifieke cache die vervalt wanneer de
 $string['cachesession'] = 'Sessie cache';
 $string['cachesessionhelp'] = 'Gebruikersspecifieke cache die vervalt wanneer de sessie van de gebruiker eindigt. Ontworpen om de sessiebelasting te verlagen';
 $string['cachesettings'] = 'Cache instellingen';
-$string['cachetext'] = 'Hoelang mag tekst in cache blijven';
 $string['caching'] = 'Caching';
 $string['calendarexportsalt'] = 'Kalender export beveiliging';
 $string['calendarsettings'] = 'Kalender';
@@ -161,14 +162,11 @@ $string['configauthenticationplugins'] = 'Kies de authenticatieplugins die je we
 $string['configautolang'] = 'Detecteer de standaardtaal uit de browserinstelling. Indien uitgeschakeld, wordt de standaardtaal van de site gebruikt.';
 $string['configautologinguests'] = 'Moeten bezoekers automatisch als gast aangemeld worden als ze cursussen met toegangsrecht voor gasten binnengaan ?';
 $string['configbloglevel'] = 'Met deze instelling kun je het niveau beperken waarop gebruikers blogs op deze site kunnen zien. Merk op dat ze een maximum zetten voor wie KIJKT, niet voor wie berichten post of de mogelijke types berichten die gepost kunnen worden. Blogs kunnen ook uitgeschakeld worden als je ze niet wil.';
-$string['configcachetext'] = 'Deze instelling kan de snelheid vergroten voor grotere sites of voor sites die tekstfilters gebruiken. kopieën van teksten zullen in hun gecompileerde vorm bewaard worden voor de tijd die je hier instelt. Als je deze tijd te kort instelt, zou je zelfs een kleine vertraging kunnen krijgen, maar de tijd te lang instellen kan ervoor zorgen dat het te lang duurt voor teksten vernieuwd worden (met nieuwe links bijvoorbeeld).';
 $string['configcalendarcustomexport'] = 'Aangepast datumbereik inschakelen voor het exporteren van de kalender';
 $string['configcalendarexportsalt'] = 'Deze willekeurige tekst wordt gebruikt om de beveiliging van authenticatie-tokens te verbeteren. Deze tokens worden gebruikt bij het exporteren van kalenders. Alle huidige tokens worden ongeldig als je deze tekst wijzigt.';
 $string['configclamactlikevirus'] = 'Behandel bestanden als virussen';
 $string['configclamdonothing'] = 'Behandel bestanden als OK';
 $string['configclamfailureonupload'] = 'Als je clam geconfigureerd hebt om geüploade bestanden op virussen te scannen, maar het is slecht geconfigureerd of loopt niet om één of andere reden, hoe moet Moodle zich dan gedragen? Als je kiest voor "Behandel alle bestanden als virussen", dan zullen alle bestanden naar de quarantainezone  verplaatst worden of verwijderd worden. Als je kiest voor "Behandel bestanden als OK", dan zullen de bestanden naar de bedoelde map verplaatst worden zoals normaal. In beide gevallen wordt de beheerder op de hoogte gebracht van het slecht werken van clam. Als je kiest voor "Behandel bestanden als virussen" en om één of andere reden werkt clam niet (gewoonlijk omdat je een verkeerd pad naar clam gegeven hebt), dan zullen ALLE geüploade bestanden naar de quarantainezone verplaatst worden of verwijderd worden. Wees voorzichtig met deze instelling.';
-$string['configconvertformat'] = '	
-Als <i>latex</i>, <i>dvips</i> en <i>convert</i> beschikbaar zijn, dan kunnen de afbeeldingen gemaakt worden met het opgegeven formaat. Anders zal mimeTeX gebruikt worden en dat maakt GIF-afbeeldingen.';
 $string['configcookiehttponly'] = 'Schakelt nieuwe PHP 5.2.0-mogelijkheid in - browsers moeten cookies alleen met echte http-requests verzenden, cookies zouden niet toegankelijk mogen zijn voor script-talen. Dit wordt niet in alle browsers ondersteund en het is mogelijk dat het nog niet compatibel is met alle huidige code. Het helpt sommige types van XSS-aanvallen te voorkomen.';
 $string['configcookiesecure'] = 'Als de server alleen https-verbindingen aanvaardt, dan is het aangeraden om het versturen van secure cookies in te schakelen. Als dit ingeschakeld is, zorg er dan voor dat de webserver geen http:// toelaat of zet een permanente redirectie op naar een https://-adres. Wanneer het <em>wwwroot</em> niet begint met https://, dan wordt deze instelling automatisch uitgeschakeld.';
 $string['configcountry'] = 'Als je hier een land invult, wordt dit land als standaard geselecteerd bij nieuwe gebruikersaccounts. Laat dit veld gewoon leeg om gebruikers te dwingen een land te kiezen.';
@@ -183,16 +181,20 @@ $string['configcronremotepassword'] = 'Dit betekent dat het script cron.php niet
 http://site.voorbeeld.com/admin/cron.php?password=opensesame
 </pre> Als dit leeggelaten wordt, is er geen wachtwoord nodig';
 $string['configcurlcache'] = 'Levenduur van cURL-cache in sekonden.';
-$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Elke lijn bestaat uit wat menu tekst, een URL (optioneel), een tooltip titel (optioneel) en een taalcode of kommagescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ). Je kunt de structuur opgeven met liggende streepjes. Bijvoorbeeld:
+$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Elke lijn bestaat uit wat menu tekst, een URL (optioneel), een tooltip titel (optioneel) en een taalcode of kommagescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ). Je kunt de structuur opgeven met liggende streepjes en scheidingen kunnen gemaakt worden door een lijn met één of meer #-tekens in te voegen waar je dit wenst. Bijvoorbeeld:
 <pre>
 Moodle community|https://moodle.org
 -Moodle free support|https://moodle.org/support
 -Moodle development|https://moodle.org/development
+-###
 --Moodle Tracker|https://tracker.moodle.org
 --Moodle Docs|http://docs.moodle.org|Moodle Docs
 --German Moodle Docs|http://docs.moodle.org/de|Documentation in German|de
+###
 -Moodle.com|https://moodle.com/
 </pre>';
+$string['configcustomusermenuitems'] = 'Je kunt de inhoud van het gebruikersmenu configureren (uitgezonderd de link om af te melden, die wordt automatisch toegevoegd). Elke lijn wordt gescheiden door | tekens en bestaat uit 1) een string in het formaat "taalstringnaam, componentnaam" of als platte tekst, 2) een URL en 3) een icoontje als een pix-icoon of als URL.
+Je kunt scheidingen maken waar je wil door een regel met één of meer #-tekens in te voegen.';
 $string['configdbsessions'] = 'Als dit ingeschakeld is, dan zal de databank gebruikt worden om informatie over de sessies te bewaren. Merk op dat het wijzigen van deze instelling alle gebruikers zal afmelden (jij inbegrepen).
 Indien je MySQL gebruikt, zorg er dan voor dat \'max_allowed_packet\' in my.cnf (of my.ini) minstens 4M is. Andere sessiedrivers kunnen juist geconfigureerd worden in config.php - raadpleeg config-dist.php voor meer informatie. Deze optie verdwijnt als je een sessiedriver opgeeft in je config.php-bestand.';
 $string['configdebug'] = 'Als je dit aan zet zullen er meer PHP-fouten op het scherm worden weergegeven. Dit is alleen maar handig voor ontwikkelaars van de applicatie.';
@@ -209,21 +211,19 @@ $string['configdeleteincompleteusers'] = 'Na deze periode zullen oude, niet voll
 $string['configdeleteunconfirmed'] = 'Als je met e-mailauthenticatie werkt dan is dit de periode waarbinnen gebruikers moeten reageren op de bevestigingsmail voor de nieuwe account. Na deze periode zullen oude, niet-bevestigde accounts verwijderd worden.';
 $string['configdenyemailaddresses'] = 'Om e-mailadressen van bepaalde domeinen te weigeren, kun je ze hier op dezelfde manier opnemen. Alle andere domeinen zullen aanvaard worden. Om subdomeinen te weigeren, geef je de domeinnaam, voorafgegaan door een \'.\' bv <strong>hotmail.com yahoo.co.uk; .live.com</strong>';
 $string['configdisableuserimages'] = 'Schakel het wijzigen van het profielprentje uit voor alle gebruikers.';
-$string['configdisplayloginfailures'] = 'Dit zal informatie tonen over mislukte aanmeldingen van de geselecteerde gebruikers';
+$string['configdisplayloginfailures'] = 'Dit zal informatie aan gebruikers tonen over mislukte aanmeldingen.';
 $string['configdndallowtextandlinks'] = 'Slepen en neerzetten van teksten en links inschakelen of uitschakelen, samen met het slepen en neerzetten van bestanden. Merk op dat het slepen van tekst in Firefox of tussen verschillende browsers onbetrouwbaar is en kan resulteren in geen of verminkte gegevens die geuploaded worden.';
+$string['configdoclang'] = 'Deze taal zal gebuikt worden voor links naar documentatiepagina\'s.';
 $string['configdocroot'] = 'Bepaalt het pad naar Moodle Docs voor contextgevoelige hulp via de link \'MoodleDocs voor deze pagina\' onderaan elke pagina. Als dit veld leeg gelaten wordt, dan wordt er geen link getoond.';
 $string['configdoctonewwindow'] = 'Als je dit aanzet zullen links naar Moodle Docs geopend worden in een nieuw venster';
 $string['configeditordictionary'] = 'Deze waarde zal gebruikt worden als aspell geen woordenlijst heeft voor de eigen taal van een gebruiker.';
 $string['configeditorfontlist'] = 'Kies de lettertypes die in het dropdownmenu van de editor zouden moeten verschijnen';
 $string['configemailchangeconfirmation'] = 'Als een gebruiker zijn e-mailadres wil wijzigen, moet die dat dan bevestigen via een bevestigingsmail? Deze optie inschakelen is nuttig op sites waar gebruikers zelf accounts kunnen aanmaken en wijzigen en waarbij die accounts gebruikt kunnen worden voor het versturen van spam.';
-$string['configenableajax'] = 'Met deze instelling kun je het gebruik van AJAX  controleren voor de hele site. AJAX is vereist voor functies als slepen en neerzetten';
 $string['configenableblogs'] = 'Hiermee geef je alle gebruikers op de site hun eigen blog.';
 $string['configenablecalendarexport'] = 'Exporteren of abonneren op kalenders inschakelen';
 $string['configenablecomments'] = 'Commentaren inschakelen';
 $string['configenablecourserequests'] = 'Hiermee kan elke gebruiker aanvragen om een nieuwe cursus aan te maken.';
 $string['configenabledevicedetection'] = 'Maakt het detecteren van telefoons, smartphones, tabletcomputers of andere standaardapparatuur (desktops, laptops enz) mogelijk voor het toepassen van thema\'s en andere functies.';
-$string['configenablegroupmembersonly'] = 'Deze instelling schakelt de \'enkel groepsleden\' mogelijkheid in. Merk op dat dit de belasting op je server vergroot.
-Je moet ook categorieën instellen in je puntenboek en wel zo dat activiteiten niet zichtbaar zijn voor niet-groepsleden.';
 $string['configenablemobilewebservice'] = 'Schakel de mobiele service in voor de officiële Moodle app of voor andere toepassingen die dat nodig hebben. Lees voor meer informatie {$a}';
 $string['configenablerssfeeds'] = 'Met deze instelling maak je RSS-feeds mogelijk voor functies over de hele site, zoals blogs, databanken, forums en woordenlijsten. Merk op dat RSS ook moet ingeschakeld worden op het niveau van de activiteitsmodule.';
 $string['configenablerssfeedsdisabled'] = 'Dit is niet beschikbaar omdat RSS voor heel de site is uitgeschakeld. Om RSS in te schakelen ga je naar Configureer variablen onder Beheer Configuratie.';
@@ -294,7 +294,7 @@ $string['configmypagelocked'] = 'Deze instelling verhindert dat de standaardpagi
 $string['confignavcourselimit'] = 'Beperkt het aantal cursussen getoont aan de gebruiker wanneer ze niet ingelogd zijn of wanneer ze bij geen enkele cursus aangemeld zijn.';
 $string['confignavshowallcourses'] = 'Deze instelling bepaalt of gebruikers die aangemeld zijn in cursussen de lijst met alle cursussen kunnen zien in de navigatie, naast "Mijn cursussen" (de lijst met alle cursussen waarin ze aangemeld zijn).';
 $string['confignavshowcategories'] = 'Toon cursuscategorieën in de navigatiebalk en navigatieblokken. Dit doet zich niet voor met cursussen waarin de gebruiker aangemeld is, die zullen getoond worden onder mijn cursussen zonder categorieën.';
-$string['confignotifyloginfailures'] = 'Als er mislukte aanmeldingen gelogd worden, dan kunnen er e-mailnotificaties verstuurd worden. Wie moet deze notificaties zien?';
+$string['confignotifyloginfailures'] = 'Als er mislukte aanmeldingen gelogd worden, dan kunnen er e-mailnotificaties verstuurd worden naar deze geselecteerde gebruikers. Hiervoor moet er een interne logstore ingeschakeld worden (vb Sandaard Logstore).';
 $string['confignotifyloginthreshold'] = 'Als notificaties over mislukte aanmeldingen verzonden moeten worden, hoeveel aanmeldingspogingen  door één gebruiker of vanaf één IP-adres zijn het melden waard?';
 $string['confignotloggedinroleid'] = 'Gebruikers die niet aangemeld zijn bij de site zullen behandeld worden alsof ze binnen de site deze rol gekregen hebben.
 Gast is meestal wat je hier wil, maar het is mogelijlk dat je hier een rol wil creëren die meer of minder beperkend is. Zaken zoals het posten van berichten zullen altijd vereisen dat de gebruiker met een account is aangemeld.';
@@ -380,7 +380,6 @@ $string['configyuicomboloading'] = 'Deze opties schakelen gecombineerde bestands
 $string['confirmation'] = 'Bevestiging';
 $string['confirmdeletecomments'] = 'Je gaat notities verwijderen. Ben je zeker?';
 $string['confirmed'] = 'Bevestigd';
-$string['convertformat'] = '<i>convert</i> output formaat';
 $string['cookiehttponly'] = 'Enkel http cookies';
 $string['cookiesecure'] = 'Enkel secure cookies';
 $string['country'] = 'Standaard landinstelling';
@@ -405,11 +404,10 @@ $string['cronerrorclionly'] = 'Sorry, internettoegang tot deze pagina is door de
 $string['cronerrorpassword'] = 'Sorry, maar je kon geen geldig wachtwoord ingeven om deze pagina te bezoeken.';
 $string['cron_help'] = 'Het cron.php onderhoudsscript helpt sommige Moodle modules om taken te doen volgens een planning, zoals het versturen van forumberichten. Er is een mechanisme vereist om er voor te zorgen dat het script regelmatig, bijvoorbeeld om de 5 minuten, loopt.';
 $string['cronremotepassword'] = 'Cron wachtwoord voor toegang op afstand';
-$string['cronwarning'] = 'Het onderhoudsscript <a href="cron.php">cron.php</a> heeft de laatste 24 uur niet gelopen.';
-$string['ctyperecommended'] = 'Het installeren van de optionele ctype PHP extentie is aanbevolen om de performantie van de site te verhogen, vooral als op je site niet-latijnse talen gebruikt worden.';
+$string['cronwarning'] = 'Het onderhoudsscript <a href="cron.php">cron.php</a> heeft minstens 24 uur niet gelopen.';
+$string['cronwarningcli'] = 'Het cli/cron.php onderhoudsscript heeft minstens 24 uur niet gelopen.';
 $string['ctyperequired'] = 'De ctype PHP-extentie is nu vereist in Moodle om de performantie te verhogen en om multi-talencompatibiliteit mogelijk te maken.';
 $string['curlcache'] = 'cURL cache TTL';
-$string['curlrecommended'] = 'Het installeren van de optionele Curl bibliotheek wordt ten zeerste aangeraden om de netwerkmogelijkheden van Moodle in te schakelen';
 $string['curlrequired'] = 'De cURL PHP-extentie is nu vereist in Moodle om te kunnen communiceren met Moodle bewaarplaats';
 $string['curltimeoutkbitrate'] = 'Te gebruiken bitrate bij het berekenen van cURL timeouts (Kbps)';
 $string['curltimeoutkbitrate_help'] = 'Deze instelling wordt gebruikt om een juiste timeout te berekenen bij het uitvoeren van lange cURL requests. Als deel van de berekening wordt een HTTP HEAD request gemaakt om de grootte van de inhoud te bepalen. Als je dit op 0 zet, wordt de request niet gedaan.';
@@ -417,17 +415,10 @@ $string['currenttheme'] = 'Dit thema';
 $string['customcheck'] = 'Andere controles';
 $string['custommenu'] = 'Aangepast menu';
 $string['custommenuitems'] = 'Aangepast menu items';
+$string['customusermenuitems'] = 'Gebruikersmenu-items';
 $string['datarootsecurityerror'] = '<p><strong>BEVEILIGINGSWAARSCHUWING!</strong></p><p>Je dataroot map staat op de verkeerde plaats en is bereikbaar vanop het internet. Dit betekent dat al je bestanden voor iedereen beschikbaar zijn en dat sommige bestanden kunnen gebruikt worden door een cracker om toegang tot je site te krijgen als beheerder!</p>
 <p>Je <em>moet</em> de dataroot map ({$a}) verplaatsen naar een andere plaats die buiten je publieke webmap is en de <code>$CFG->dataroot</code>-instelling in je config.php aanpassen.</p>';
 $string['datarootsecuritywarning'] = 'De configuratie van je site zou onveilig kunnen zijn. Zorg er voor dat je dataroot map ({$a}) niet toegankelijk is vanaf het internet.';
-$string['dbmigrate'] = 'Migratie van de Moodle databank';
-$string['dbmigrateconnecerror'] = 'Kon niet met de opgegeven databank verbinden';
-$string['dbmigrateencodingerror'] = 'De opgegeven databank heeft {$a} als encodering en dat zou moeten UNICODE/UTF8 zijn.<br />Kies een andere.';
-$string['dbmigratepostgres'] = 'Je gebruikt blijkbaar PostgreSQL als databank server. Om verder te gaan met het migratieproces, moet je manueel een nieuwe databank aanmaken met de encoding "UNICODE" (PostgreSQL 7 of "UTF8" (PostgreSQL 8) om de gemigreerde data in te bewaren. Geef hieronder de connectie-instellingen van je nieuwe databank in om verder te kunnen gaan.';
-$string['dbmigratewarning'] = 'Zorg voor een back-up van je databank voor je aan deze procedure begint. Als je niet goed weet hoe dat te doen, neem dan contact op met je systeembeheerder. Zodra je de migratie begint, wordt je Moodle-site in onderhoudsmodus gezet.';
-$string['dbmigratewarning2'] = '<b>Waarschuwing: zodadelijk ga je het databank migratieproces starten. Zorg er voor dat je een goede back-up hebt van je Moodle databank.</b>';
-$string['dbmigrationdeprecateddb'] = '<font color="#ff0000">Deze databank is gemigreerd naar een nieuwe UTF8 databank en is buiten werking gesteld. Bewerk je config.php om de nieuwe databank te gebruiken voor deze Moodle-installatie.</font>';
-$string['dbmigrationdupfailed'] = 'Databankduplicatie mislukt met als mogelijke fout: <font color="#ff0000"><pre>{$a}</pre></font>';
 $string['dbsessions'] = 'Gebruik databank voor sessie-informatie';
 $string['debug'] = 'Foutopsporingsmeldingen';
 $string['debugall'] = 'E_ALL: toon alle zinnige feedback';
@@ -462,13 +453,13 @@ $string['devicedetectregexvalue'] = 'Teruggegeven waarde';
 $string['devicetype'] = 'Toesteltype';
 $string['disableuserimages'] = 'Schakel profielprentjes uit.';
 $string['displayerrorswarning'] = 'Het inschakelen van de PHP-instelling <em>display_errors</em> is niet aangewezen op productie-sites omdat sommige foutmeldingen gevoelige informatie over de server kunnen vrijgeven.';
-$string['displayloginfailures'] = 'Toon loginfouten aan';
+$string['displayloginfailures'] = 'Toon loginfouten';
 $string['dndallowtextandlinks'] = 'Slepen en neerzetten';
+$string['doclang'] = 'Taal voor docs';
 $string['docroot'] = 'Startpagina Moodle Docs';
 $string['doctonewwindow'] = 'Open in nieuw venster';
 $string['download'] = 'Download';
 $string['edithelpdocs'] = 'Bewerk helpbestanden';
-$string['editingnoncorelangfile'] = 'Je probeert een vertaling van een niet-standaard module te wijzigen. Je kunt de vertaling alleen bewaren in je _local map. Misschien wil je daarna de vertaling verplaatsen naar de lang-map van de module en/of de vertaling naar de maker van de module sturen.';
 $string['editlang'] = '<b>Bewerk</b>';
 $string['editorbackgroundcolor'] = 'Achtergrondkleur';
 $string['editordictionary'] = 'Editor woordenboek';
@@ -494,7 +485,6 @@ $string['emoticons_desc'] = 'Dit formulier bepaalt de emoticons (of smileys) die
 $string['emoticonsreset'] = 'Zet de instellingen voor emoticons terug op standaardinstellingen';
 $string['emoticontext'] = 'Tekst';
 $string['emptysettingvalue'] = 'Leeg';
-$string['enableajax'] = 'AJAX inschakelen';
 $string['enableblogs'] = 'Blogs inschakelen';
 $string['enablecalendarexport'] = 'Kalenderexport inschakelen';
 $string['enablecomments'] = 'Commentaren inschakelen';
@@ -505,7 +495,6 @@ $string['enabled'] = 'Ingeschakeld';
 $string['enabledevicedetection'] = 'Toesteldetectie inschakelen';
 $string['enablegravatar'] = 'Gravatar inschakelen';
 $string['enablegravatar_help'] = 'Als je dit inschakeld zal Moodle proberen een gebruikersprofielfoto van Gravataar te halen als de gebruiker nog geen afbeelding geüpload heeft.';
-$string['enablegroupmembersonly'] = 'Enkel groepsleden inschakelen';
 $string['enablemobilewebservice'] = 'Webservices voor mobiele toestellen inschakelen';
 $string['enablerecordcache'] = 'Record cache inschakelen';
 $string['enablerssfeeds'] = 'RSS-feeds inschakelen';
@@ -513,7 +502,6 @@ $string['enablesafebrowserintegration'] = 'Schakel Safe Exam Browser integratie 
 $string['enablestats'] = 'Statistieken inschakelen';
 $string['enabletgzbackups'] = 'Schakel nieuw backupformaat in';
 $string['enabletgzbackups_desc'] = 'Indien ingeschakeld zullen nieuwe backups gemaakt worden met een nieuwe compressiestandaard voor de .mbz-bestanden (intern worden dat tar.gz-bestanden). Hierdoor verdwijnt de 4GB limiet voor backupbestanden en verbetert de performantie. Het terugzetten ondersteunt beide formaten en gebruikers zullen geen verschil opmerken.';
-$string['enabletgzbackups_nozlib'] = 'De PHP-extentie  &lsquo;zlib&rsquo; is niet beschikbaar. Het nieuwe backupformaat heeft dit nodig en zal uitgeschakeld worden tot zlib geïnstalleerd en ingeschakeld is.';
 $string['enabletrusttext'] = 'Vertrouwde Inhoud inschakelen';
 $string['enablewebservices'] = 'Webservices inschakelen';
 $string['enablewsdocumentation'] = 'Documentatie Webservices';
@@ -539,12 +527,11 @@ $string['errorsetting'] = 'Kon instelling niet bewaren';
 $string['errorwithsettings'] = 'Sommige instellingen zijn door een fout niet gewijzigd.';
 $string['everyonewhocan'] = 'Iedereen die kan \'{$a}\'';
 $string['exceptions'] = 'uitzonderingen';
-$string['execpathnotallowed'] = 'Uitvoerbare paden uitschakelen in config.php';
+$string['execpathnotallowed'] = 'Uitvoerbare en lokale paden uitschakelen in config.php';
 $string['experimental'] = 'Experimenteel';
 $string['experimentalsettings'] = 'Experimentele instellingen';
 $string['extendedusernamechars'] = 'Uitgebreide tekenset in gebruikersnamen toestaan';
 $string['extramemorylimit'] = 'Extra PHP memory limit';
-$string['fatalmagicquotesruntime'] = '<p>Ernstige configuratiefout gevonden. Verwittig je serverbeheerder.</p><p>Om goed te functioneren moet de beheerder de PHP-instellingen aanpassen.</p><p><code>magic_quotes_runtime</code> moet op<code>off</code> gezet worden.</p><p>Deze instelling kan gewijzigd worden door het bestand <code>php.ini</code>, Apache/IIS <br />-configuratie of het bestand <code>.htaccess</code> op de server aan te passen.</p>';
 $string['fatalsessionautostart'] = '<p>Ernstige configuratiefout gevonden. Waarschuw je serverbeheerder.</p><p>Om goed te functioneren moet de beheerder de PHP-instellingen aanpassen.</p><p><code>session.auto_start</code> moet op<code>off</code> gezet worden.</p><p>Deze instelling kan gewijzigd worden door het bestand <code>php.ini</code>, Apache/IIS <br />-configuratie of het bestand <code>.htaccess</code> op de server aan te passen.</p>';
 $string['filecreated'] = 'Nieuw bestand aangemaakt';
 $string['filestoredin'] = 'Bewaar bestand in map';
@@ -573,13 +560,11 @@ $string['frontpagerestore'] = 'Restore startpagina';
 $string['frontpageroles'] = 'Rollen startpagina';
 $string['frontpagesettings'] = 'Instellingen startpagina';
 $string['fullnamedisplay'] = 'Volledige naam opmaak';
-$string['fullnamedisplayprivate'] = 'Volledige naam - privé';
-$string['gdrecommended'] = 'De GD-extentie wordt gebruikt voor de conversie van afbeeldingen. Sommige mogelijkeden, zoals afbeeldingen in gebruikersprofielen zullen zonder GD niet werken.';
+$string['fullnamedisplayprivate'] = 'Volledige naam opmaak - privé';
 $string['gdrequired'] = 'De GD-extentie is vereist door Moodle voor conversie van afbeeldingen';
 $string['generalsettings'] = 'Algemene instellingen';
 $string['geoipfile'] = 'GeoIP City databestand';
 $string['getremoteaddrconf'] = 'IP-adres in de logs';
-$string['globalswarning'] = '<p><strong>Veiligheidswaarschuwing</strong>:om Moodle goed te laten werken, is het nodig <br />dat je enkele wijzigingen maakt in je huidige PHP-instellingen.</p><p>Je <em>moet</em> <code>register_globals=off</code> instellen.</p><p>Deze instelling kan aangepast worden door je <code>php.ini</code>, Apache/IIS <br /> configuratie aan te passen of door een <code>.htaccess</code>-bestand te gebruiken.';
 $string['googlemapkey3'] = 'Google Maps API V3 sleutel';
 $string['googlemapkey3_help'] = 'Je moet een speciale sleutel ingeven om Google Maps voor IP-adreslocalisatie te kunnen gebruiken. Die kun je gratis bekomen op <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>';
 $string['gotofirst'] = 'Ga naar de eerste ontbrekende string';
@@ -613,7 +598,6 @@ $string['htmlsettings'] = 'HTML-instellingen';
 $string['http'] = 'HTTP';
 $string['httpsecurity'] = 'HTTP Security';
 $string['hubs'] = 'Hubs';
-$string['iconvrecommended'] = 'Als je site andere talen dan die uit de Latin1 tekenset gebruikt, dan is het installeren van de optionele ICONV library ten zeerste aangeraden om de performantie van de site te verhogen.';
 $string['iconvrequired'] = 'Het installeren van de ICONV-extentie is vereist.';
 $string['ignore'] = 'Negeer';
 $string['includemoduleuserdata'] = 'Ook gebruikersdata van modules';
@@ -641,13 +625,11 @@ $string['langmenu'] = 'Toon taalmenu';
 $string['langpackwillbeupdated'] = 'Opmerking: tijdens de upgrade zal Moodle proberen updates te downloaden voor je geïnstalleerde taalpakketten.';
 $string['langstringcache'] = 'Cache alle taalstrings';
 $string['languagesettings'] = 'Instellingen';
-$string['latexpreamble'] = 'LaTeX inleiding';
-$string['latexsettings'] = 'LaTeX  renderer instellingen';
 $string['latinexcelexport'] = 'Excel encoding';
 $string['legacyfilesaddallowed'] = 'Cursusbestanden toevoegen volgens verouderd systeem toestaan';
 $string['legacyfilesaddallowed_help'] = 'Toestaan om nog nieuwe cursusbestanden en mappen toe te voegen als een cursus nog bestanden gebruikt volgens het oude systeem.';
 $string['legacyfilesinnewcourses'] = 'Standaard cursusbestanden in nieuwe cursussen';
-$string['legacyfilesinnewcourses_help'] = 'Standaard zijn de verouderde cursusbestanden alleen beschikbaar in geüpgraded cursussen. Merk op dat sommige functies zoals back-up/terugzetten van afzonderlijke activiteiten niet compatibel zijn met deze instelling.';
+$string['legacyfilesinnewcourses_help'] = 'Standaard zijn de verouderde cursusbestanden alleen beschikbaar in geüpgrade cursussen. Merk op dat sommige functies zoals back-up/terugzetten van afzonderlijke activiteiten niet compatibel zijn met deze instelling.';
 $string['licensesettings'] = 'Licentieinstellingen';
 $string['linkadmincategories'] = 'Link beheercategorieën';
 $string['linkadmincategories_help'] = 'Indien ingeschakeld zullen beheerinstellingscategorieën als links getoond worden in de navigatie en zullen die je naar de beheercategorieënpagina\'s brengen.';
@@ -681,11 +663,13 @@ $string['loginhttps'] = 'Gebruik HTTPS voor logins';
 $string['loginpageautofocus'] = 'Autofocus loginformulier';
 $string['loginpageautofocus_help'] = 'Deze functie inschakelen verhoogt het gebruiksgemak op de loginpagina, maar het automatisch focussen van velden wordt gezien als een toegankelijkheidsprobleem.';
 $string['loginpasswordautocomplete'] = 'Wachtwoord aanvullen uitschakelen op loginformulier';
-$string['loginpasswordautocomplete_help'] = 'Indien uitgeschakeld kunnen gebruikers hun wachtwoord bewaren in hun browser. Het inschakelen van deze optie zal er voor zorgen dat je site niet meer voldoet aan de XHTML strict validatieregels.';
+$string['loginpasswordautocomplete_help'] = 'Indien ingeschakeld kunnen gebruikers hun wachtwoord niet bewaren in hun browser.';
 $string['loglifetime'] = 'Logs bijhouden';
+$string['logstorenotrequired'] = 'Log store niet vereist';
+$string['logstoressupported'] = 'Log stores die dit rapport ondersteunen';
 $string['longtimewarning'] = '<b>Opgelet: dit proces kan lang duren</b>';
 $string['maintenancemode'] = 'In onderhoudsmodus';
-$string['maintenancemodeisscheduled'] = 'De site wordt binnen {$a} minuten in onderhoudsmodus gezet.';
+$string['maintenancemodeisscheduled'] = 'De site wordt binnen {$a->min} minuten en {$a->sec} in onderhoudsmodus gezet.';
 $string['maintfileopenerror'] = 'Fout bij het openen van de onderhoudsbestanden!';
 $string['maintinprogress'] = 'Onderhoud bezig...';
 $string['manageformats'] = 'Beheer cursusopmaak';
@@ -704,6 +688,8 @@ $string['maturitycorewarning'] = 'De Moodleversie die je gaat installeren of upg
 $string['maxbytes'] = 'Maximale grootte voor bestandsupload';
 $string['maxconsecutiveidentchars'] = 'Opeenvolgende identieke tekens';
 $string['maxeditingtime'] = 'Maximale tijd om berichten te bewerken';
+$string['maxtimelimit'] = 'Maximum tijdslimiet';
+$string['maxtimelimit_desc'] = 'Geef hier een waarde in seconden om de PHP uitvoertijd die Moodle toestaat zonder dat er iets getoond wordt op het scherm. 0 betekent dat de standaardbeperkingen gebruikt worden. Als je een front-endserver hebt met zijn eigen tijdslimiet, zet deze waarde dan lager, zodat je PHP-fouten in de logs krijgt. Niet van toepassing op CLI-scripts.';
 $string['maxusersperpage'] = 'Maximaal aantal gebruikers per pagian';
 $string['mbstringrecommended'] = 'Als je site andere talen dan die uit de Latin1 tekenset gebruikt, dan is het installeren van de optionele MBSTRING library ten zeerste aangeraden om de performantie van de site te verhogen.';
 $string['mediapluginavi'] = 'Gebruik .avi-filter';
@@ -754,11 +740,11 @@ $string['mymoodleredirect'] = 'Mijn Moodle verplichten';
 $string['mypage'] = 'Standaard "Mijn startpagina"';
 $string['mypagelocked'] = 'Blokkeer standaardpagina';
 $string['myprofile'] = 'Standaard profielpagina';
-$string['mysql416bypassed'] = 'Als je site echter UITSLUITEND iso-8859-1 (latin) talen gebruikt, dan kun je MySQL 4.1.12 (of hoger) blijven gebruiken.';
-$string['mysql416required'] = 'MySQL 4.1.16 is de minimumversie die nodig is voor Moodle 1.6 om te kunnen garanderen dat alle gegevens naar UTF-8 geconverteerd zullen worden.';
 $string['navadduserpostslinks'] = 'Voeg links toe om gebruikersberichten te zien';
 $string['navadduserpostslinks_help'] = 'Indien ingeschakeld zullen er twee links toegevoegd worden bij elke gebruiker in de navigatie om discussies te zien die zij gestart hebben en berichten die de gebruikers geplaatst heeft in forums over heel de site of in bepaalde cursussen.';
 $string['navcourselimit'] = 'Cursuslimiet';
+$string['navexpandmycourses'] = 'Toon mijn cursussen uitgeklapt op mijn startpagina';
+$string['navexpandmycourses_desc'] = 'Indien ingeschakeld, worden de cursussen uitgeklapt getoond in het navigatieblok op je startpagina.';
 $string['navigationupgrade'] = 'Deze upgrade introduceert twee nieuwe navigatieblokken die volgende blokken zal vervangen: Beheer, cursussen, activiteiten en deelnemers. Als je op deze blokken speciale rechten had toegepast, dan moet je controleren of alles wel werkt zoals je wil.';
 $string['navshowallcourses'] = 'Toon alle curssusen';
 $string['navshowcategories'] = 'Toon cursuscategorieën';
@@ -769,7 +755,7 @@ $string['navshowfullcoursenames_help'] = 'Indien dit is ingeschakeld zullen curs
 $string['navshowmycoursecategories'] = 'Toon mijn cursuscategorieën';
 $string['navshowmycoursecategories_help'] = 'Indien ingeschakeld worden cursus in de Mijn cursussen vertakking in categorieën getoond.';
 $string['navsortmycoursessort'] = 'Sorteer mijn cursussen';
-$string['navsortmycoursessort_help'] = 'Bepaalt hoe de cursussen op de Mijn cursussen-tak van de navigatie gesorteerd zullen worden. (de volgorde in Instellingen > Site beheer > Cursussen > Curussen toevoegen/bewerken) of alfabetisch volgens cursusinstelling.';
+$string['navsortmycoursessort_help'] = 'Bepaalt of de cursussen getoond worden op Mijn cursussen volgens de sorteervolgorde. (de volgorde in Instellingen > Site beheer > Cursussen > Cusrussen toevoegen/bewerken) of alfabetisch volgens cursusinstelling.';
 $string['neverdeleteruns'] = 'Nooit verwijderen';
 $string['nobookmarksforuser'] = 'Je hebt geen bladwijzers.';
 $string['nodatabase'] = 'Geen databank';
@@ -779,6 +765,7 @@ $string['nonewsettings'] = 'Er zijn geen nieuwe instellingen toegevoegd tijdens 
 $string['nonexistentbookmark'] = 'De bladwijzer die je vroeg, bestaat niet.';
 $string['noresults'] = 'Geen resultaten gevonden';
 $string['noroles'] = 'Geen rollen';
+$string['nosupportedlogstore'] = 'Geen ondersteunde logstore gevonden';
 $string['notifications'] = 'Meldingen';
 $string['notifyloginfailures'] = 'Loginfouten mailen naar';
 $string['notifyloginthreshold'] = 'Minimaal aantal fouten voor e-mailnotificatie';
@@ -795,13 +782,12 @@ $string['order3'] = 'Derde';
 $string['order4'] = 'Vierde';
 $string['passwordpolicy'] = 'Wachtwoordbeleid';
 $string['passwordresettime'] = 'Maximumtijd om een wachtwoordreset te valideren';
-$string['pathconvert'] = 'Pad van <i>convert</i> binary';
-$string['pathdvips'] = 'Pad van <i>dvips</i> binary';
-$string['pathlatex'] = 'Pad van <i>latex</i> binary';
 $string['pathtoclam'] = 'Clam AV-pad';
 $string['pathtodot'] = 'Pad naar dot';
 $string['pathtodot_help'] = 'Pad naar dot. Waarschijnlijk iets als /usr/bin/dot. Om het mogelijk te maken grafische bestanden te maken van DOT-bestanden, heb je dot nodig en moet je hier opgeven waar het op je server te vinden is.';
 $string['pathtodu'] = 'Pad naar du';
+$string['pathtogs'] = 'Pad naar ghostscript';
+$string['pathtogs_help'] = 'Op de meeste Linux-servers mag dit blijven staan als \'/usr/bin/gs\'. Op een Windows-server zal het eerder iets zijn als \'c:gsbingswin32c.exe\' (zorg er voor dat er geen spaties voorkomen in het pad - kopiëer indien nodig de bestanden \'gswin32c.exe\' en \'gsdll32.dll\' naar een nieuwe map zonder spatie in het pad)';
 $string['pathtopgdump'] = 'Pad naar pg_dump';
 $string['pathtopgdumpdesc'] = 'Je moet dit enkel ingeven als je meer dan één pg_dump op je systeem hebt (bijvoorbeeld als je meer dan één versie van postgresql geïnstalleerd hebt)';
 $string['pathtopgdumpinvalid'] = 'Ongeldig pad naar pg_dump - ofwel verkeerd pad of niet uitvoerbaar';
@@ -813,10 +799,8 @@ $string['perfdebug'] = 'Performantie-informatie';
 $string['performance'] = 'Prestaties';
 $string['pgcluster'] = 'PostgreSQL Cluster';
 $string['pgclusterdescription'] = '<pre>PostgeSQL versie/cluster parameter voor operaties via commandprompt. Als je slechts één PostgreSQL op je systeem hebt of je weet niet wat dit is, laat dit veld dan leeg.</pre>';
-$string['php50restricted'] = 'PHP 5.0.x heeft een heel aantal bekende problemen. Upgrade naar 5.1.x of downgrade naar 4.3.x of 4.4.x';
-$string['php533warning'] = 'PHP 5.3.3 en hoger aangeraden';
 $string['phpfloatproblem'] = 'Onverwacht probleem gevonden bij het behandelen van PHP float numbers - {$a}';
-$string['pleaserefreshregistration'] = 'Je site is geregistreerd bij moodle.org. Update je registratie als er grote wijzigingen aan je site zijn sinds je laatste registratie.';
+$string['pleaserefreshregistration'] = 'Je site is geregistreerd. Je kunt je registratie op elk moment aanpassen. Standaard zal de \'Site registratie\' geplande taak automatisch je registratie updaten.';
 $string['pleaseregister'] = 'Registreer aub je site.  Op die manier kun je deze knop verwijderen.';
 $string['plugin'] = 'Module';
 $string['plugins'] = 'Plugins';
@@ -903,8 +887,6 @@ $string['proxyuser'] = 'Proxy gebruikersnaam';
 $string['purgecaches'] = 'Alle caches leegmaken';
 $string['purgecachesconfirm'] = 'Moodle kan thema\'s cachen, javascript, taalstrings, gefilterde tekst, rss-feeds en veel andere stukken berekende gegevens. Het leegmaken van deze caches zal alle gegevens verwijderen van de server en zal browsers forceren om de gegevens te verversen, zodat je er zeker kan van zijn dat de meest recente waardes die je huidige code produceert, getoond worden. Er is geen gevaar verbonden aan het verwijderen van caches, maar je server kan trager lijken tot je server en de clients de nieuwe informatie berekend en gecached hebben.';
 $string['purgecachesfinished'] = 'Alle caches zijn leeggemaakt.';
-$string['qtyperqpwillberemoved'] = 'Tijdens de upgrade zal het RQP vraagtype verwijderd worden. Je gebruikte deze vraag niet, dus je zult hier geen problemen mee krijgen.';
-$string['qtyperqpwillberemovedanyway'] = 'Tijdens de upgrade zal het RQP vraagtype verwijderd worden. Er zijn vragen van dit type in je database. Die zullen stoppen met werken, tenzij je de code herinstalleert van  http://moodle.org/mod/data/view.php?d=13&amp;rid=797 voor je verder gaat met de upgrade.';
 $string['quarantinedir'] = 'Quarantainemap';
 $string['question'] = 'Vragen';
 $string['questionbehaviours'] = 'Gedrag vragen';
@@ -933,6 +915,7 @@ $string['requiredentrieschanged'] = '<strong>BELANGRIJK - LEES DIT<br /> (Deze w
 Deze wijziging heeft effect op volgende databanken in je systeem (bewaar deze lijst nu, zodat je na de upgrade kunt testen of de activiteiten nog steeds werken zoals de leraar het bedoelt): <br/><strong style="color:red">{$a->text}</strong><br/>';
 $string['requiremodintro'] = 'Beschrijving van de activiteit vereist';
 $string['requires'] = 'Vereist';
+$string['restorecourse'] = 'Cursus terugzetten';
 $string['restorernewroleid'] = 'De rol in cursussen van degene die een back-up terugzet';
 $string['restorernewroleid_help'] = 'Als de gebruiker nog geen toestemming heeft om de pas teruggezette cursus te beheren, dan krijgt de gebruiker automatisch deze rol en wordt aangemeld indien nodig. Selecteer "Geen" als u niet wil dat diegenen die de cursus hebben teruggezet nog wijzigingen mogen aanbrengen.';
 $string['reverseproxy'] = 'Reverse proxy';
@@ -993,8 +976,9 @@ Deze instelling kan gelijk welke publiek zichtbare URL bevatten. Merk op: toegan
 $string['sitepolicy_help'] = 'Als je een overeenkomst hebt voor het gebruik van de site die alle gebruikers moeten zien voor ze deze site gebruiken, geef dan hier een de URL naar die pagina op, anders laat je dit veld leeg. De URL kan naar gelijk waar verwijzen - een voor de hand liggende plaats zou een bestand tussen de sitebestanden zijn, bijvoorbeeld http://jouwsite/file.php/1/overeenkomst.html';
 $string['sitesectionhelp'] = 'Indien gekozen wordt er een onderwerpsectie getoond op de startpagina van de site';
 $string['slasharguments'] = 'Gebruik slash arguments';
+$string['slashargumentswarning'] = 'Je kunt best het gebruik van  "slash arguments" inschakelen. Het wordt een vereiste instelling in de toekomst. Meer details in de documentatie op  <a href="https://docs.moodle.org/en/admin/environment/slasharguments">Using slash arguments</a>.';
 $string['smartpix'] = 'Slim afbeeldingen zoeken';
-$string['soaprecommended'] = 'Het installeren van de optionele Soap-extentie is nuttig voor webservices en sommige modules uit contrib.';
+$string['soaprecommended'] = 'Het installeren van de optionele SOAP-extentie is nuttig voor webservices en sommige modules uit contrib.';
 $string['sort_fullname'] = 'Volledige naam cursus';
 $string['sort_idnumber'] = 'ID-nummer cursus';
 $string['sort_shortname'] = 'Korte naam cursus';
@@ -1027,6 +1011,36 @@ $string['tablenosave'] = 'Wijzigingen in bovenstaande tabel worden automatisch b
 $string['tablesnosave'] = 'Wijzigingen in bovenstaande tabellen worden automatisch bewaard.';
 $string['tabselectedtofront'] = 'Moet bij tabellen met tabs de nu geselecteerde tab vooraan gezet worden?';
 $string['tabselectedtofronttext'] = 'Breng de rij van de geselecteerde tab naar voor';
+$string['taskautomatedbackup'] = 'Automatische backups';
+$string['taskbackupcleanup'] = 'Backuptabellen en logs leeg maken';
+$string['taskbadgescron'] = 'Badges toekennen';
+$string['taskblogcron'] = 'Externe blogs synchroniseren';
+$string['taskcachecleanup'] = 'Verwijder verlopen cache-items';
+$string['taskcachecron'] = 'Achtergrondbewerkingen voor cache';
+$string['taskcalendarcron'] = 'Stuur kalendermeldingen';
+$string['taskcheckforupdates'] = 'Controleer op updates';
+$string['taskcompletioncron'] = 'Bereken voltooingsgegevens';
+$string['taskcontextcleanup'] = 'Contexts opruimen';
+$string['taskcreatecontexts'] = 'Ontbrekende contexts maken';
+$string['taskdeletecachetext'] = 'Oude tekst cache records verwijderen';
+$string['taskdeleteincompleteusers'] = 'Onvolledige gebruikersaccounts verwijderen';
+$string['taskdeleteunconfirmedusers'] = 'Onbevestigde gebruikersaccounts verwijderen';
+$string['taskeventscron'] = 'Achtergrondprocessen voor gebeurtenissen';
+$string['taskfiletrashcleanup'] = 'Bestanden in prullenbak opruimen';
+$string['taskgradecron'] = 'Achtergrondprocessen voor cijferlijst';
+$string['tasklegacycron'] = 'Verouderde cronverwerking voor plugins';
+$string['taskmessagingcleanup'] = 'Achtergrondprocessen voor berichten';
+$string['taskpasswordresetcleanup'] = 'Opruimen van pogingen om wachtwoorden opnieuw in te stellen';
+$string['taskplagiarismcron'] = 'Achtergrondprocessen voor plagiaatplugins';
+$string['taskportfoliocron'] = 'Achtergrondprocessen voor portfolioplugins';
+$string['taskquestioncron'] = 'Achtergrondprocessen voor vragenmotor';
+$string['taskregistrationcron'] = 'Site-registratie';
+$string['tasksendfailedloginnotifications'] = 'Rapport voor mislukte aanmeldingen verzonden';
+$string['tasksendnewuserpasswords'] = 'Nieuwe gebruikerswachtwoorden verstuurd';
+$string['tasksessioncleanup'] = 'Oude sessies opgeruimd';
+$string['taskstatscron'] = 'Achtergrondprocessen voor statistieken';
+$string['tasktagcron'] = 'Achtergrondprocessen voor tags';
+$string['tasktempfilecleanup'] = 'Verwijder oude tijdelijke bestanden';
 $string['testsiteupgradewarning'] = 'Je gebruikt nu de {$a} test site. Je kunt beter de command line tool gebruiken om te upgraden';
 $string['themedesignermode'] = 'Thema ontwerpermodus';
 $string['themelist'] = 'Thema lijst';
@@ -1048,12 +1062,13 @@ $string['tools'] = 'Beheertools';
 $string['toolsmanage'] = 'Beheer beheertools';
 $string['unattendedoperation'] = 'Automatische installatie';
 $string['unbookmarkthispage'] = 'Verwijder de bladwijzer naar deze pagina';
-$string['unicoderecommended'] = 'Aanbevolen wordt om al je data als Unicode (UTF-8) te bewaren. Nieuwe installaties zouden moeten geïnstalleerd worden met Unicode als standaard tekenset voor de databank. Als je upgrade, moet je het UTF-8 migratieproces laten lopen (zie pagina Beheer).';
 $string['unicoderequired'] = 'Je moet al je data als Unicode (UTF-8) bewaren. Nieuwe installaties moeten geïnstalleerd worden met Unicode als standaard tekenset voor de databank. Als je upgrade, moet je het UTF-8 migratieproces laten lopen (zie pagina Beheer).';
 $string['uninstallplugin'] = 'Verwijder';
 $string['unlockaccount'] = 'Deblokkeer account';
 $string['unsettheme'] = 'Zet thema uit';
 $string['unsupported'] = 'Niet ondersteund';
+$string['unsupporteddbstorageengine'] = 'De database storage engine wordt niet meer ondersteund.';
+$string['unsupporteddbtablerowformat'] = 'Je databanktabellen gebruiken Antilope als bestandsformaat. Je wordt aangeraden om ze te converteren naar Barracuda bestandsformaat. Je vindt documentatie op <a href="https://docs.moodle.org/en/cli">Administration via command line</a> met details over een tool om InnoDB-tabellen om te zetten naar Barracuda.';
 $string['unsuspenduser'] = 'Activeer gebruikersaccount';
 $string['updateaccounts'] = 'Update bestaande accounts';
 $string['updateautocheck'] = 'Automatisch controleren op beschikbare updates';
@@ -1076,10 +1091,6 @@ $string['updatenotifications'] = 'Update meldingen';
 $string['updatenotificationsubject'] = 'Er zijn Moodle updates beschikbaar voor {$a->siteurl}.';
 $string['updatenotifybuilds'] = 'Stuur melding bij nieuwe versies';
 $string['updatenotifybuilds_desc'] = 'Indien ingeschakeld wordt de beschikbaarheid van een update van de Moodle-code als er een nieuwe build van de huidige versie beschikbaar is. Builds zijn voortdurende verbeteringen van een bepaalde Moodleversie. Ze worden gewoonlijk elke week gebouwd; Indien uitgeschakeld wordt als beschikbare update alleen gerapporteerd als er een nieuwe Moodleversie beschikbaar is. Controles voor plugins worden niet beïnvloed door deze instelling.';
-$string['upgrade197notice'] = '<p>Moodle 1.9.7 bevat een aantal oplossingen voor beveiligingsproblemen in verband met gebruikerswachtwoorden en back-ups om de gebruikersgegevens van jouw site te beschermen. Hierdoor kunnen sommige instellingen en rechten die verband houden met het nemen van back-ups gewijzigd zijn.<br />
-Kijk op <a href="http://docs.moodle.org/dev/Moodle_1.9.7_release_notes" target="_blank">Moodle 1.9.7 release notes</a> voor alle details.</p>';
-$string['upgrade197noticesubject'] = 'Beveiligingswaarschuwingen voor de Moodle 1.9.7 upgrade';
-$string['upgrade197salt'] = 'Om het risico op wachtwoorddiefstal te verminderen wordt je sterk aangeraden om een password salt in te stellen.<br />Zie See the <a href="{$a}" target="_blank">password salting documentation</a> voor details.';
 $string['upgradeerror'] = 'Onbekende fout bij het upgraden van {$a->plugin} naar versie {$a->version}. Kan niet verder doen.';
 $string['upgradeforumread'] = 'Vanaf Moodle 1.5 kun je bijhouden of forumberichten al gelezen zijn of niet.<br /> Om deze functie te kunnen gebruiken moet je <a href="{$a}">je tabellen upgraden</a>.';
 $string['upgradeforumreadinfo'] = 'Vanaf Moodle 1.5 kun je bijhouden of forumberichten al gelezen zijn of niet.<br /> Om deze functie te kunnen gebruiken moet je je tabellen upgraden met alle niet gelezen/gelezen informatie voor de bestaande berichten. Afhankelijk van de grootte van je site kan dit lang duren (uren) en kan je databank behoorlijk belasten. Het is dus aangeraden dit te doen tijdens een rustige periode. Je site zal blijven werken tijdens deze upgrade en je gebruikers zullen er weinig hinder van ondervinden. Als je dit proces start moet je het laten aflopen (laat je browser-venster open). Geen paniek als je het proces toch zou stoppen door je venster te sluiten: je kunt terug opnieuw beginnen .<br /><br />Wil je het upgrade-proces nu starten?';
@@ -1111,7 +1122,7 @@ Je kunt meer informatie vinden in de upgrade documentatie op <a href="{$a}">{$a}
 $string['upgradestart'] = 'Moodledatabank nu bijwerken';
 $string['upgradesure'] = '<p>De bestanden op je Moodleserver zijn gewijzigd en je gaat zo dadelijk je server automatisch upgraden naar versie: </p>
 <p><strong>{$a}</strong></p>
-<p>Als je dit doet, kun je niet meer terug.</p>
+<p>Als je dit doet, kun je niet meer terug. Merk op dat het proces lang kan duren</p>
 <p>Ben je er er zeker van dat je deze server naar die versie wil upgraden?</p>';
 $string['upgradetimedout'] = 'Er is een time-out opgetreden. Herstart de upgrade.';
 $string['upgradingdata'] = 'Bezig met het upgraden van de gegevens';
@@ -1122,6 +1133,7 @@ $string['useblogassociations'] = 'Associaties inschakelen';
 $string['useexternalyui'] = 'Gebruik online YUI-libraries';
 $string['user'] = 'Gebruiker';
 $string['userbulk'] = 'Gebruikers in bulk beheren';
+$string['userdefaultpreferences'] = 'Standaardvoorkeuren gebruiker';
 $string['userlist'] = 'Lijst';
 $string['userpolicies'] = 'Gebruikersregels';
 $string['userpreference'] = 'Gebruikersvoorkeur';
@@ -1138,4 +1150,3 @@ $string['webproxyinfo'] = 'Vul onderstaande opties in als je Moodle server niet 
 $string['xmlrpcrecommended'] = 'Het installeren van de optionele XMLRPC-extentie is nuttig voor de werking van Moodle Netwerk';
 $string['yuicomboloading'] = 'YUI combo aan het laden';
 $string['ziprequired'] = 'De ZIP-PHP-extentie is nu vereist voor Moodle. Info-ZIP en PclZip worden niet meer gebruikt.';
-$string['zlibenabled'] = 'zlib ingeschakeld';

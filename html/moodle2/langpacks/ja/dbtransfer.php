@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dbtransfer', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'dbtransfer', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   dbtransfer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['checkingsourcetables'] = 'ソーステーブル構造のチェック';
 $string['copyingtable'] = 'テーブル {$a} のコピー';
 $string['copyingtables'] = 'テーブルコンテンツのコピー';
-$string['creatingtargettables'] = 'ターゲットデータベースのテーブル作成';
+$string['creatingtargettables'] = 'ターゲットデータベース内のテーブル作成';
 $string['dbexport'] = 'データベースエクスポート';
 $string['dbtransfer'] = 'データベース転送';
 $string['differenttableexception'] = 'テーブル {$a} の構造が合致しません。';

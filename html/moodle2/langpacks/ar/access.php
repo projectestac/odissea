@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'access', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   access
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,22 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['access'] = 'الإتاحة';
-$string['accesshelp'] = 'مساعدة حول الإتاحة';
-$string['accesskey'] = 'مفتاح الوصول، {$a}';
-$string['accessstatement'] = 'وثيقة الإتاحة';
+$string['access'] = 'إمكانية الوصول';
+$string['accesshelp'] = 'المساعده حول إمكانية الوصول';
+$string['accesskey'] = 'مفتاح الوصول';
+$string['accessstatement'] = 'بيان إمكانية الوصول';
 $string['activitynext'] = 'النشاط التالي';
 $string['activityprev'] = 'النشاط السابق';
-$string['breadcrumb'] = 'مسار التصفح';
-$string['hideblocka'] = 'إخفاء كتلة {$a}';
+$string['breadcrumb'] = 'الممر التفصيلي';
+$string['hideblocka'] = 'إخفاء المربع';
 $string['monthnext'] = 'الشهر القادم';
-$string['monthprev'] = 'الشهر الماضي';
-$string['showblocka'] = 'إظهار كتلة {$a}';
+$string['monthprev'] = 'الشهر السابق';
+$string['showblocka'] = 'اظهار المربع';
 $string['sitemap'] = 'خارطة الموقع';
-$string['skipa'] = 'اقفز {$a}';
-$string['skipblock'] = 'تجاوز كتلة';
-$string['skipnavigation'] = 'تجاوز قائمة التصفح';
-$string['skipto'] = 'الذهاب إلى {$a}';
-$string['tocontent'] = 'أقفز إلى المحتوى الرئيس';
-$string['tonavigation'] = 'الذهاب إلى قائمة التصفح';
-$string['youarehere'] = 'أنت هنا';
+$string['skipa'] = 'تجاوز';
+$string['skipblock'] = 'تخطي المربع';
+$string['skipnavigation'] = 'تخطي المستعرض';
+$string['skipto'] = 'تخطي الى';
+$string['tocontent'] = 'تخطي الى المحتوى الرئيسي';
+$string['tonavigation'] = 'الذهاب الى المستعرض';
+$string['youarehere'] = 'انت هنا';

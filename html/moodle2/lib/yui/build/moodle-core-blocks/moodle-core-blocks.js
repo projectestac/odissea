@@ -327,26 +327,14 @@ Y.extend(DRAGBLOCK, M.core.dragdrop, {
     }
 });
 
-/**
- * Core namespace.
- * @static
- * @class core
- */
 M.core = M.core || {};
-
-/**
- * Block drag and drop static class.
- * @namespace M.core
- * @class blockdraganddrop
- * @static
- */
 M.core.blockdraganddrop = M.core.blockdraganddrop || {};
 
 /**
  * True if the page is using the new blocks methods.
  * @private
  * @static
- * @property _isusingnewblocksmethod
+ * @property M.core.blockdraganddrop._isusingnewblocksmethod
  * @type Boolean
  * @default null
  */
@@ -355,7 +343,7 @@ M.core.blockdraganddrop._isusingnewblocksmethod = null;
 /**
  * Returns true if the page is using the new blocks methods.
  * @static
- * @method is_using_blocks_render_method
+ * @method M.core.blockdraganddrop.is_using_blocks_render_method
  * @return Boolean
  */
 M.core.blockdraganddrop.is_using_blocks_render_method = function() {
@@ -373,7 +361,7 @@ M.core.blockdraganddrop.is_using_blocks_render_method = function() {
  * Initialises a drag and drop manager.
  * This should only ever be called once for a page.
  * @static
- * @method init
+ * @method M.core.blockdraganddrop.init
  * @param {Object} params
  * @return Manager
  */
@@ -385,7 +373,7 @@ M.core.blockdraganddrop.init = function(params) {
     }
 };
 
-/**
+/*
  * Legacy code to keep things working.
  */
 M.core_blocks = M.core_blocks || {};
@@ -512,7 +500,7 @@ MANAGER.prototype = {
      * Returns the ID of the block the given node represents.
      * @method get_block_id
      * @param {Node} node
-     * @returns {int} The blocks ID in the database.
+     * @return {int} The blocks ID in the database.
      */
     get_block_id : function(node) {
         return Number(node.get('id').replace(/inst/i, ''));
@@ -522,7 +510,7 @@ MANAGER.prototype = {
      * Returns the block region that the node is part of or belonging to.
      * @method get_block_region
      * @param {Y.Node} node
-     * @returns {string} The region name.
+     * @return {string} The region name.
      */
     get_block_region : function(node) {
         if (!node.test('[data-blockregion]')) {
@@ -535,7 +523,7 @@ MANAGER.prototype = {
      * Returns the BLOCKREGION instance that represents the block region the given node is part of.
      * @method get_region_object
      * @param {Y.Node} node
-     * @returns {BLOCKREGION}
+     * @return {BLOCKREGION}
      */
     get_region_object : function(node) {
         return this.regionobjects[this.get_block_region(node)];
@@ -545,7 +533,6 @@ MANAGER.prototype = {
      * Enables all fo the regions so that they are all visible while dragging is occuring.
      *
      * @method enable_all_regions
-     * @returns {undefined}
      */
     enable_all_regions : function() {
         var groups = Y.DD.DDM.activeDrag.get('groups');
@@ -569,7 +556,6 @@ MANAGER.prototype = {
     /**
      * Disables enabled regions if they contain no blocks.
      * @method disable_regions_if_required
-     * @returns {undefined}
      */
     disable_regions_if_required : function() {
         var i = 0;
@@ -582,7 +568,6 @@ MANAGER.prototype = {
      * Called by M.core.dragdrop.global_drag_start when dragging starts.
      * @method drag_start
      * @param {Event} e
-     * @returns {undefined}
      */
     drag_start : function(e) {
         // Get our drag object
@@ -604,7 +589,6 @@ MANAGER.prototype = {
      * Called by M.core.dragdrop.global_drop_over when something is dragged over a drop target.
      * @method drop_over
      * @param {Event} e
-     * @returns {undefined}
      */
     drop_over : function(e) {
         // Get a reference to our drag and drop nodes
@@ -621,7 +605,6 @@ MANAGER.prototype = {
     /**
      * Called by M.core.dragdrop.global_drop_end when a drop has been completed.
      * @method drop_end
-     * @returns {undefined}
      */
     drop_end : function() {
         // Clear variables.
@@ -634,7 +617,6 @@ MANAGER.prototype = {
      * Called by M.core.dragdrop.global_drag_dropmiss when something has been dropped on a node that isn't contained by a drop target.
      * @method drag_dropmiss
      * @param {Event} e
-     * @returns {undefined}
      */
     drag_dropmiss : function(e) {
         // Missed the target, but we assume the user intended to drop it
@@ -647,7 +629,6 @@ MANAGER.prototype = {
      * Called by M.core.dragdrop.global_drag_hit when something has been dropped on a drop target.
      * @method drop_hit
      * @param {Event} e
-     * @returns {undefined}
      */
     drop_hit : function(e) {
         // Get a reference to our drag node
@@ -810,7 +791,7 @@ Y.extend(MANAGER, M.core.dragdrop, MANAGER.prototype, {
  * @namespace M.core.blockdraganddrop
  * @class BlockRegion
  * @constructor
- * @extends Y.Base
+ * @extends Base
  */
 var BLOCKREGION = function() {
     BLOCKREGION.superclass.constructor.apply(this, arguments);

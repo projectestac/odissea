@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filter_tex', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configconvertformat'] = 'Wenn neben <i>latex</i> und <i>dvips</i> auch <i>convert</i> oder <i>dvisvgm</i> auf dem Server verfügbar sind, können Sie für die Formelbilder ein Ausgabeformat wählen. (<i>convert</i> liefert GIF oder PNG; <i>dvisvgm</i> liefert SVG). Standardmäßig wird <i>mimeTeX</i> benutzt, das die Formelbilder als GIF ausgibt.';
+$string['convertformat'] = 'Ausgabeformat';
 $string['filtername'] = 'TeX-Notation';
+$string['latexpreamble'] = 'LaTeX Präambel';
+$string['latexsettings'] = 'Einstellungen für das LaTeX-Rendering';
+$string['pathconvert'] = 'Pfad zu <i>convert</i>';
+$string['pathdvips'] = 'Pfad zu <i>dvips</i>';
+$string['pathdvisvgm'] = 'Pfad zu <i>dvisvgm</i>';
+$string['pathlatex'] = 'Pfad zu <i>latex</i>';
+$string['pathmimetex'] = 'Pfad zu <i>mimetex</i>';
+$string['pathmimetexdesc'] = 'Moodle nutzt sein eigenes MimeTeX, wenn kein anderer gültiger Pfad angegeben ist.';
 $string['source'] = 'TeX Quellcode';

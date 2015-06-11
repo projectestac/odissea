@@ -5,7 +5,7 @@ Feature: Set up contextual data for tests
   I need to fill the database with fixtures
 
   Scenario: Add a bunch of users
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username  | password  | firstname | lastname |
       | testuser  | testuser  |  |  |
       | testuser2 | testuser2 | TestFirstname | TestLastname |
@@ -16,12 +16,12 @@ Feature: Set up contextual data for tests
 
   @javascript
   Scenario: Add a bunch of courses and categories
-    Given the following "categories" exists:
+    Given the following "categories" exist:
       | name | category | idnumber |
       | Cat 1 | 0 | CAT1 |
       | Cat 2 | CAT1 | CAT2 |
       | Cat 3 | CAT1 | CAT3 |
-    And the following "courses" exists:
+    And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | COURSE1 | CAT3 |
       | Course 2 | COURSE2 | CAT3 |
@@ -44,14 +44,14 @@ Feature: Set up contextual data for tests
 
   @javascript
   Scenario: Add a bunch of groups and groupings
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname |
       | Course 1 | C1 |
-    And the following "groups" exists:
+    And the following "groups" exist:
       | name | course | idnumber |
       | Group 1 | C1 | G1 |
       | Group 2 | C1 | G2 |
-    And the following "groupings" exists:
+    And the following "groupings" exist:
       | name | course | idnumber |
       | Grouping 1 | C1 | GG1 |
       | Grouping 2 | C1 | GG2 |
@@ -67,21 +67,21 @@ Feature: Set up contextual data for tests
 
   @javascript
   Scenario: Role overrides
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@asd.com |
-      | student1 | Student | 1 | student1@asd.com |
-    And the following "categories" exists:
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+      | student1 | Student | 1 | student1@example.com |
+    And the following "categories" exist:
       | name | category | idnumber |
       | Cat 1 | 0 | CAT1 |
-    And the following "courses" exists:
+    And the following "courses" exist:
       | fullname | shortname |
       | Course 1 | C1 |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | student1 | C1 | student |
       | teacher1 | C1 | editingteacher |
-    And the following "permission overrides" exists:
+    And the following "permission overrides" exist:
       | capability | permission | role | contextlevel | reference |
       | mod/forum:editanypost | Allow | student | Course | C1 |
       | mod/forum:replynews | Prevent | editingteacher | Course | C1 |
@@ -89,21 +89,21 @@ Feature: Set up contextual data for tests
     And I follow "Course 1"
     And I expand "Users" node
     And I follow "Permissions"
-    And I select "Student (1)" from "Advanced role override"
+    And I set the field "Advanced role override" to "Student (1)"
     Then "mod/forum:editanypost" capability has "Allow" permission
     And I press "Cancel"
-    And I select "Teacher (1)" from "Advanced role override"
+    And I set the field "Advanced role override" to "Teacher (1)"
     And "mod/forum:replynews" capability has "Prevent" permission
     And I press "Cancel"
 
   Scenario: Add course enrolments
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email |
-      | student1 | Student | 1 | student1@asd.com |
-    And the following "courses" exists:
+      | student1 | Student | 1 | student1@example.com |
+    And the following "courses" exist:
       | fullname | shortname | format |
       | Course 1 | C1 | topics |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | student1 | C1 | student |
     When I log in as "student1"
@@ -111,22 +111,32 @@ Feature: Set up contextual data for tests
     Then I should see "Topic 1"
 
   Scenario: Add role assigns
-    Given the following "users" exists:
+    Given the following "roles" exist:
+      | name                   | shortname | description      | archetype      |
+      | Custom editing teacher | custom1   | My custom role 1 | editingteacher |
+      | Custom student         | custom2   |                  |                |
+    And the following "users" exist:
       | username | firstname | lastname | email |
-      | user1 | User | 1 | user1@moodlemoodle.com |
-      | user2 | User | 2 | user2@moodlemoodle.com |
-      | user3 | User | 3 | user3@moodlemoodle.com |
-    And the following "categories" exists:
+      | user1 | User | 1 | user1@example.com |
+      | user2 | User | 2 | user2@example.com |
+      | user3 | User | 3 | user3@example.com |
+      | user4 | User | 4 | user4@example.com |
+      | user5 | User | 5 | user5@example.com |
+    And the following "categories" exist:
       | name | category | idnumber |
       | Cat 1 | 0 | CAT1 |
-    And the following "courses" exists:
+    And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | CAT1 |
-    And the following "role assigns" exists:
+    And the following "course enrolments" exist:
+      | user | course | role |
+      | user4 | C1 | custom1 |
+    And the following "role assigns" exist:
       | user  | role           | contextlevel | reference |
       | user1 | manager        | System       |           |
       | user2 | editingteacher | Category     | CAT1      |
       | user3 | editingteacher | Course       | C1        |
+      | user5 | custom2        | System       |           |
     When I log in as "user1"
     Then I should see "Front page settings"
     And I log out
@@ -137,12 +147,21 @@ Feature: Set up contextual data for tests
     And I log in as "user3"
     And I follow "Course 1"
     And I should see "Turn editing on"
+    And I log out
+    And I log in as "user4"
+    And I follow "Course 1"
+    And I should see "Turn editing on"
+    And I log out
+    And I log in as "user5"
+    And I should see "You are logged in as"
+    And I follow "Course 1"
+    And I should see "You can not enrol yourself in this course."
 
   Scenario: Add modules
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname |
       | Course 1 | C1 |
-    And the following "activities" exists:
+    And the following "activities" exist:
       | activity   | name                   | intro                         | course | idnumber    |
       | assign     | Test assignment name   | Test assignment description   | C1     | assign1     |
       | assignment | Test assignment22 name | Test assignment22 description | C1     | assignment1 |
@@ -166,6 +185,12 @@ Feature: Set up contextual data for tests
       | url        | Test url name          | Test url description          | C1     | url1        |
       | wiki       | Test wiki name         | Test wiki description         | C1     | wiki1       |
       | workshop   | Test workshop name     | Test workshop description     | C1     | workshop1   |
+    And the following "scales" exist:
+      | name | scale |
+      | Test Scale 1 | Disappointing, Good, Very good, Excellent |
+    And the following "activities" exist:
+      | activity   | name                            | intro                         | course | idnumber    | grade |
+      | assign     | Test assignment name with scale | Test assignment description   | C1     | assign1     | Test Scale 1 |
     When I log in as "admin"
     And I follow "Course 1"
     Then I should see "Test assignment name"
@@ -195,32 +220,36 @@ Feature: Set up contextual data for tests
     And I should see "Test workshop name"
     And I follow "Test assignment name"
     And I should see "Test assignment description"
+    And I follow "C1"
+    And I follow "Test assignment name with scale"
+    And I follow "Edit settings"
+    And the field "Type" matches value "Scale"
 
   @javascript
   Scenario: Add relations between users and groups
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email |
-      | student1 | Student | 1 | student1@asd.com |
-      | student2 | Student | 2 | student2@asd.com |
-    And the following "courses" exists:
+      | student1 | Student | 1 | student1@example.com |
+      | student2 | Student | 2 | student2@example.com |
+    And the following "courses" exist:
       | fullname | shortname |
       | Course 1 | C1 |
-    And the following "groups" exists:
+    And the following "groups" exist:
       | name | course | idnumber |
       | Group 1 | C1 | G1 |
       | Group 2 | C1 | G2 |
-    And the following "groupings" exists:
+    And the following "groupings" exist:
       | name | course | idnumber |
       | Grouping 1 | C1 | GG1 |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | student1 | C1 | student |
       | student2 | C1 | student |
-    And the following "group members" exists:
+    And the following "group members" exist:
       | user | group |
       | student1 | G1 |
       | student2 | G2 |
-    And the following "grouping groups" exists:
+    And the following "grouping groups" exist:
       | grouping | group |
       | GG1 | G1 |
     When I log in as "admin"
@@ -229,9 +258,9 @@ Feature: Set up contextual data for tests
     And I follow "Groups"
     Then the "groups" select box should contain "Group 1 (1)"
     And the "groups" select box should contain "Group 2 (1)"
-    And I select "Group 1 (1)" from "groups"
+    And I set the field "groups" to "Group 1 (1)"
     And the "members" select box should contain "Student 1"
-    And I select "Group 2 (1)" from "groups"
+    And I set the field "groups" to "Group 2 (1)"
     And the "members" select box should contain "Student 2"
 
   Scenario: Add cohorts and cohort members with data generator
@@ -240,8 +269,8 @@ Feature: Set up contextual data for tests
       | Cat 1 | 0        | CAT1     |
     And the following "users" exist:
       | username | firstname | lastname | email |
-      | student1 | Student | 1 | student1@asd.com |
-      | student2 | Student | 2 | student2@asd.com |
+      | student1 | Student | 1 | student1@example.com |
+      | student2 | Student | 2 | student2@example.com |
     And the following "cohorts" exist:
       | name            | idnumber |
       | System cohort A | CHSA     |
@@ -278,13 +307,124 @@ Feature: Set up contextual data for tests
       | Course 1 | C1 |
     And the following "grade categories" exist:
       | fullname | course |
-      | Grade category 1 | C1|
+      | Grade category 1 | C1 |
     And the following "grade categories" exist:
       | fullname | course | gradecategory |
-      | Grade sub category 2 | C1 | Grade category 1|
+      | Grade sub category 2 | C1 | Grade category 1 |
     When I log in as "admin"
     And I follow "Courses"
     And I follow "Course 1"
     And I navigate to "Grades" node in "Course administration"
     Then I should see "Grade category 1"
     And I should see "Grade sub category 2"
+
+  Scenario: Add a bunch of grade items
+    Given the following "courses" exist:
+      | fullname | shortname |
+      | Course 1 | C1 |
+    And the following "grade categories" exist:
+      | fullname | course |
+      | Grade category 1 | C1 |
+    And the following "grade categories" exist:
+      | fullname | course | gradecategory |
+      | Grade sub category 2 | C1 | Grade category 1 |
+    And the following "grade items" exist:
+      | itemname    | course |
+      | Test Grade Item 1 | C1 |
+    And the following "grade items" exist:
+      | itemname    | course | gradecategory |
+      | Test Grade Item 2 | C1 | Grade category 1 |
+      | Test Grade Item 3 | C1 | Grade sub category 2 |
+    When I log in as "admin"
+    And I follow "Course 1"
+    And I follow "Grades"
+    And I expand "Setup" node
+    And I follow "Categories and items"
+    Then I should see "Test Grade Item 1"
+    And I follow "Edit   Test Grade Item 1"
+    And I expand all fieldsets
+    And I should see "Course 1"
+    And I press "Cancel"
+    And I should see "Grade category 1"
+    And I should see "Test Grade Item 2"
+    And I follow "Edit   Test Grade Item 2"
+    And I expand all fieldsets
+    And I should see "Grade category 1"
+    And I press "Cancel"
+    And I should see "Grade sub category 2"
+    And I should see "Test Grade Item 3"
+    And I follow "Edit   Test Grade Item 3"
+    And I expand all fieldsets
+    And I should see "Grade sub category 2"
+    And I press "Cancel"
+
+  Scenario: Add a bunch of scales
+    Given the following "courses" exist:
+      | fullname | shortname |
+      | Course 1 | C1 |
+    And the following "scales" exist:
+      | name | scale |
+      | Test Scale 1 | Disappointing, Good, Very good, Excellent |
+    When I log in as "admin"
+    And I follow "Course 1"
+    And I follow "Grades"
+    And I follow "Scales"
+    Then I should see "Test Scale 1"
+    And I should see "Disappointing,  Good,  Very good,  Excellent"
+
+  Scenario: Add a bunch of outcomes
+    Given the following "courses" exist:
+      | fullname | shortname |
+      | Course 1 | C1        |
+    And the following "scales" exist:
+      | name | scale |
+      | Test Scale 1 | Disappointing, Good, Very good, Excellent |
+    And the following "grade outcomes" exist:
+      | fullname        | shortname | scale        |
+      | Grade outcome 1 | OT1       | Test Scale 1 |
+    And the following "grade outcomes" exist:
+      | fullname        | shortname | course | scale        |
+      | Grade outcome 2 | OT2       | C1     | Test Scale 1 |
+    And the following config values are set as admin:
+      | enableoutcomes | 1 |
+    When I log in as "admin"
+    And I follow "Home"
+    And I follow "Course 1"
+    And I follow "Outcomes"
+    Then I should see "Grade outcome 1" in the "#addoutcomes" "css_element"
+    And I should see "Grade outcome 2" in the "#removeoutcomes" "css_element"
+    And I follow "Edit outcomes"
+    And the following should exist in the "generaltable" table:
+      | Full name       | Short name | Scale        |
+      | Grade outcome 2 | OT2        | Test Scale 1 |
+
+  Scenario: Add a bunch of outcome grade items
+    Given the following "courses" exist:
+      | fullname | shortname |
+      | Course 1 | C1        |
+    And the following "scales" exist:
+      | name         | scale                                     |
+      | Test Scale 1 | Disappointing, Good, Very good, Excellent |
+    And the following "grade outcomes" exist:
+      | fullname        | shortname | course | scale        |
+      | Grade outcome 1 | OT1       | C1     | Test Scale 1 |
+    And the following "grade categories" exist:
+      | fullname         | course |
+      | Grade category 1 | C1     |
+     And the following "grade items" exist:
+       | itemname                  | course | outcome | gradecategory    |
+       | Test Outcome Grade Item 1 | C1     | OT1     | Grade category 1 |
+    And the following config values are set as admin:
+      | enableoutcomes | 1 |
+    When I log in as "admin"
+    And I follow "Home"
+    And I follow "Course 1"
+    And I follow "Grades"
+    And I expand "Setup" node
+    And I follow "Categories and items"
+    Then I should see "Test Outcome Grade Item 1"
+    And I follow "Edit   Test Outcome Grade Item 1"
+    And the field "Outcome" matches value "Grade outcome 1"
+    And I expand all fieldsets
+    And "//div[contains(@class, 'fitem')]/div[contains(@class, 'fitemtitle')]/div[contains(@class, fstaticlabel) and contains(., 'Grade category')]/../../div[contains(@class, 'felement') and contains(., 'Grade category 1')]" "xpath_element" should exist
+    And I press "Cancel"

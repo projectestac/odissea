@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,17 @@ $string['evaluation'] = 'Ebaluazioa kalifikatzen';
 $string['evaluationmethod'] = 'Ebaluazioa kalifikatzeko metodoa';
 $string['evaluationmethod_help'] = 'Kalifikazioa ebaluatzeko metodoak zehazten du nola kalkulatzen den ebaluazioen kalifikazioa. Kalifikazioak ezarpen ezberdinekin nahi beste aldiz berkalkulatu daitezke emaitzarekin ados egon arte.';
 $string['evaluationsettings'] = 'Kalifikazioa ebaluatzeko ezarpenak';
-$string['event_assessable_uploaded'] = 'Bidalketa igo da.';
+$string['eventassessableuploaded'] = 'Bidalketa bat igo da.';
+$string['eventassessmentevaluated'] = 'Ebaluazioa kalifikatu da.';
+$string['eventassessmentevaluationsreset'] = 'Ebaluazioen kalifikazioak berrezarri dira';
+$string['eventassessmentreevaluated'] = 'Ebaluazioak berkalifikatu dira';
+$string['eventphaseswitched'] = 'Aldia aldatu da';
+$string['eventsubmissionassessed'] = 'Bidalketa ebaluatu da';
+$string['eventsubmissionassessmentsreset'] = 'Bidalketen ebaluazioak garbitu dira';
+$string['eventsubmissioncreated'] = 'Bidalketa sortu da';
+$string['eventsubmissionreassessed'] = 'Bidalketa berrebaluatu dira';
+$string['eventsubmissionupdated'] = 'Bidalketa eguneratu da';
+$string['eventsubmissionviewed'] = 'Bidalketa ikusi da';
 $string['example'] = 'Adibide motako bidalketa';
 $string['exampleadd'] = 'Gehitu adibide motako bidalketa';
 $string['exampleassess'] = 'Ebaluatu adibide motako bidalketa';
@@ -183,7 +193,7 @@ $string['nosubmissionfound'] = 'Ez da erabiltzaile honen bidalketarik aurkitu';
 $string['nosubmissions'] = 'Oraindik ez dago bidalketarik tailer honetan';
 $string['notassessed'] = 'Ebaluatu gabea';
 $string['nothingtoreview'] = 'Ez dago berrikusteko ezer';
-$string['notoverridden'] = 'Baliogabetu gabea';
+$string['notoverridden'] = 'Baliogabetu gabe';
 $string['noworkshops'] = 'Ez dago tailerrik ikastaro honetan';
 $string['noyoursubmission'] = 'Oraindik ez duzu lanik bidali';
 $string['nullgrade'] = '-';
@@ -239,7 +249,7 @@ $string['strategy_help'] = 'Kalifikazioa estrategiak ebaluazio formularioa eta b
 * Metatutako kalifikazioa - Iruzkinak eta kalifikazio bat ematen dira zehaztutako arlo bakoitzean
 * Iruzkinak - Iruzkinak ematen dira zehaztutako arlo bakoitzean baina ez da kalifikaziorik ematen
 * Errore-kopurua - Iruzkinak eta Bai/Ez ebaluazioa egiten da zehaztutako baieztapen bakoitzean
-* Argibideak - Mailakatze-ebaluazioa egiten da zehaztutako irizpide bakoitzean';
+* Errubrika - Mailakatze-ebaluazioa egiten da zehaztutako irizpide bakoitzean';
 $string['submission'] = 'Bidalketa';
 $string['submissionattachment'] = 'Eranskina';
 $string['submissionby'] = '{$a} -ren bidalketa';
@@ -315,7 +325,6 @@ $string['workshop:viewallassessments'] = 'Ikusi ebaluazio guztiak';
 $string['workshop:viewallsubmissions'] = 'Ikusi bidalketa guztiak';
 $string['workshop:viewauthornames'] = 'Ikusi egileen izenak';
 $string['workshop:viewauthorpublished'] = 'Ikusi argitaratutako bidaldeten egileak';
-$string['workshopviewed'] = 'Tailerra ikusita';
 $string['workshop:viewpublishedsubmissions'] = 'Ikusi argitaratutako bidalketak';
 $string['workshop:viewreviewernames'] = 'Ikusi ebaluatzaileen izenak';
 $string['yourassessment'] = 'Zure ebaluazioa';

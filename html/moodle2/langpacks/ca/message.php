@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['blocknoncontacts'] = 'Impedeix que m\'enviïn missatges els usuaris que
 $string['contactlistempty'] = 'La vostra llista de contactes és buida';
 $string['contacts'] = 'Contactes';
 $string['context'] = 'context';
-$string['defaultmessageoutputs'] = 'Sortides de missatge per defecte';
+$string['defaultmessageoutputs'] = 'Sortides de missatges per defecte';
 $string['defaults'] = 'Per defecte';
 $string['deletemessagesdays'] = 'Nombre de dies abans que els missatges vells se suprimeixin automàticament';
 $string['disableall'] = 'Inhabilita les notificacions temporalment';
@@ -53,8 +53,15 @@ $string['discussion'] = 'Debat';
 $string['emailmessages'] = 'Envia missatges per correu quan no tingui sessió oberta';
 $string['emailtagline'] = 'Aquest correu és una còpia d\'un missatge que se us ha enviat des de "{$a->sitename}". Aneu a {$a->url} per a contestar.';
 $string['emptysearchstring'] = 'Heu de cercar alguna cosa';
+$string['enabled'] = 'Habilitat';
 $string['errorcallingprocessor'] = 'S\'ha produït un error en cridar a la sortida definida';
 $string['errortranslatingdefault'] = 'S\'ha produït un error en traduir els paràmetres per defecte del connector. S\'utilitzaran els paràmetres per defecte del sistema.';
+$string['eventmessagecontactadded'] = 'Afegit el contacte del missatge';
+$string['eventmessagecontactblocked'] = 'Blocat el contacte del missatge';
+$string['eventmessagecontactremoved'] = 'Suprimit el contacte del missatge';
+$string['eventmessagecontactunblocked'] = 'Desblocat el contacte del missatge';
+$string['eventmessagesent'] = 'Missatge enviat';
+$string['eventmessageviewed'] = 'Missatge vist';
 $string['forced'] = 'Imposat';
 $string['formorethan'] = 'Més de';
 $string['gotomessages'] = 'Vés als missatges';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Desbloca contacte';
 $string['unreadmessages'] = 'Missatges no llegits ({$a})';
 $string['unreadnewmessage'] = 'Missatges nous de {$a}';
 $string['unreadnewmessages'] = 'Missatges nous ({$a})';
-$string['unreadnewnotification'] = 'Notificació nova';
-$string['unreadnewnotifications'] = 'Notificacions noves ({$a})';
 $string['userisblockingyou'] = 'Aquest usuari ha blocat els missatges enviats per vós';
 $string['userisblockingyounoncontact'] = '{$a} només accepta missatges de persones que siguin a la seva llista de contactes.';
 $string['userssearchresults'] = 'Usuaris trobats: {$a}';

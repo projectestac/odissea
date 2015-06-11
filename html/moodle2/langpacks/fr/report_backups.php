@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_backups', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_backups
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backupofcourselogs'] = 'Historique de sauvegarde de {$a}';
+$string['logsofbackupexecutedon'] = 'Historique de la sauvegarde exécutée le {$a}';
+$string['nobackupsfound'] = 'Pas de sauvegarde trouvée.';
+$string['nologsfound'] = 'Il n\'y a pas d\'historique pour cette sauvegarde.';
 $string['pluginname'] = 'Rapport des sauvegardes';
+$string['strftimetime'] = '%H:%M:%S';
+$string['viewlogs'] = 'Voir les historiques';

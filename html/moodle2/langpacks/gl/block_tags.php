@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_tags', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,6 @@ $string['showcoursetagsdef'] = 'Presentar as funcionalidades de etiquetado do cu
 $string['suggestedtagthisunit'] = 'Etiqueta suxerida para este curso:';
 $string['tags'] = 'etiquetas';
 $string['tags:addinstance'] = 'Engadir un novo bloque de etiquetas';
-$string['tags:myaddinstance'] = 'Engadir un novo bloque de etiquetas ao meu cartafol persoal';
+$string['tags:myaddinstance'] = 'Engadir un novo bloque de etiquetas na área persoal';
 $string['tagthisunit'] = 'Etiquetar este curso:';
 $string['tagunits'] = 'etiquetar os teus cursos favoritos';

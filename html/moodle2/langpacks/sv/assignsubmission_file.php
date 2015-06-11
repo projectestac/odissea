@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['default'] = 'Aktiverad som förval';
 $string['default_help'] = 'Om valt kommer denna inlämningsmetod vara aktiverad som förval för alla nya uppgifter.';
 $string['enabled'] = 'Filinlämningar';
 $string['enabled_help'] = 'Om aktiverad, kan studenter ladda upp en eller flera filer som sin inlämningsuppgift';
+$string['eventassessableuploaded'] = 'En fil har laddats upp.';
 $string['file'] = 'Filinlämningar';
 $string['maxbytes'] = 'Maximal filstorlek';
 $string['maxfilessubmission'] = 'Maximalt antal uppladdade filer';

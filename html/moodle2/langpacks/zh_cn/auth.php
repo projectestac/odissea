@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,8 @@ $string['auth_fieldlocks_help'] = '<p>您可以锁定指定的用户数据字段
 <p>如果想要避免这个问题，可以考虑将锁定模式设定为“如果空则不锁定”。</p>';
 $string['authinstructions'] = '此处留空，登录页面会显示缺省的登录说明。如果想自定义登录说明，就在此输入。';
 $string['auth_invalidnewemailkey'] = '错误：URL 不正确，请完整拷贝后重试。';
+$string['authloginviaemail'] = '允许无效的电子邮件地址';
+$string['authloginviaemail_desc'] = '允许用户使用用户名和电子邮件地址（如果唯一）进行网站登录。';
 $string['auth_multiplehosts'] = '可以指定多个主机名或地址（如 host1.com;host2.com;host3.com 或 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx）';
 $string['auth_outofnewemailupdateattempts'] = '更改Email地址的许可次数已到，您的请求被取消。';
 $string['auth_passwordisexpired'] = '您的密码已经过期，要现在修改么?';
@@ -94,7 +96,9 @@ $string['errorminpasswordlower'] = '密码中至少要有 {$a} 个小写字母�
 $string['errorminpasswordnonalphanum'] = '密码中至少要有 {$a} 个非字母、数字字符。';
 $string['errorminpasswordupper'] = '密码中至少要有 {$a} 个大写字母。';
 $string['errorpasswordupdate'] = '更新密码错误，密码没有更新。';
-$string['event_user_loggedin'] = '用户已登录';
+$string['eventuserloggedin'] = '用户已登录';
+$string['eventuserloggedinas'] = '使用另外一个用户名进行登录';
+$string['eventuserloginfailed'] = '登记登录失败';
 $string['forcechangepassword'] = '强制修改密码';
 $string['forcechangepasswordfirst_help'] = '强制用户在第一次登录时修改密码。';
 $string['forcechangepassword_help'] = '强制用户在下次登录时修改密码。';
@@ -141,6 +145,8 @@ $string['stdchangepassword_expl'] = '如果外部认证系统允许通过 Moodle
 $string['stdchangepassword_explldap'] = '注意: 如果使用远程服务器，建议您使用安全的 LDAP 连接(ldaps://)。';
 $string['suspended'] = '停用账号';
 $string['suspended_help'] = '停用的用户账号将会阻止用户使用这个账号的用户名和密码登录系统，并且所有的系统外发消息也会被终止。';
+$string['testsettings'] = '测试设置';
+$string['testsettingsheading'] = '测试身份认证设置- {$a}';
 $string['unlocked'] = '不锁定';
 $string['unlockedifempty'] = '如果空则不锁定';
 $string['update_never'] = '从不';

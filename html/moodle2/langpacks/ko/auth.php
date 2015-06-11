@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['auth_fieldlocks'] = '사용자 항목 잠금';
 $string['auth_fieldlocks_help'] = '<p>당신은 사용자 자료 필드를 잠글 수 있다. 이 기능은 운영자가 "사용자 업로드" 기능 등을 통해 직접 사용자 자료를 유지 관리할 때 유용하다. 무들에서 필요한데도 잠금 해제가 되지 않은 필드가 있다면, 그 필드에 대한 자료를 따로 생성해 주지 않는 한, 그 사용자 계정은 사용할 수 없게 된다.</p><p>이런 문제가 생기지 않길 바란다면 \'비어있다면 잠금 해제\'로 설정하라.</p>';
 $string['authinstructions'] = '로그인 화면에 기본 안내가 나타나게 하려면 비워두십시오. 만일 나름대로의 안내문을 제공하고 싶으면 여기에 그 내용을 적어 넣으면 됩니다.';
 $string['auth_invalidnewemailkey'] = '오류: 메일 주소 변경 확인을 시도했지만, 서버에서 발송한 이메일 주소와 일치하지 않는 모양입니다. 이메일 주소를 다시한번 확인하고 재 시도하기 바랍니다.';
+$string['authloginviaemail'] = '이메일로 로그인 허용';
+$string['authloginviaemail_desc'] = '사이트 로그인에 사용자이름과 이메일 주소를 사용하는 것을 허용';
 $string['auth_multiplehosts'] = '다수의 호스트들은 host1.com;host2.com;host3.com 식이나 IP의 경우 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx 형태로 쓸 수 있다.';
 $string['auth_outofnewemailupdateattempts'] = '허용된 이메일 주소 변경의 업데이트 시도 횟수를 넘겼습니다. 요청이 기각되었습니다.';
 $string['auth_passwordisexpired'] = '당신의 비밀번호가 만료되었습니다. 지금 비밀번호를 바꾸시겠습니까?';
@@ -94,7 +96,9 @@ $string['errorminpasswordlower'] = '암호에는 최소 {$a} 개의 소문자가
 $string['errorminpasswordnonalphanum'] = '암호에는 최소 {$a} 개의 특수문자가 포함되야 합니다.';
 $string['errorminpasswordupper'] = '암호에는 최소 {$a} 개의 대문자가 포함되야 합니다.';
 $string['errorpasswordupdate'] = '비밀번호 업데이트 오류. 비밀번호가 변경되지 않았습니다.';
+$string['eventuserloggedin'] = '사용자가 로그인 하였습니다.';
 $string['eventuserloggedinas'] = '사용자가 다른 사용자로 로그인하였습니다.';
+$string['eventuserloginfailed'] = '사용자 로그인 실패';
 $string['forcechangepassword'] = '강제 암호변경';
 $string['forcechangepasswordfirst_help'] = '무들에 최초 로그인 할 때 비밀번호 교체 요청';
 $string['forcechangepassword_help'] = '다음 로그인시 사용자에게 비밀번호 교체 요청';

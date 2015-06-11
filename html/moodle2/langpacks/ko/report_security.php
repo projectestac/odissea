@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,11 +59,6 @@ $string['check_frontpagerole_error'] = '잘못 정의된 시작 페이지 역할
 $string['check_frontpagerole_name'] = '시작 페이지 역할';
 $string['check_frontpagerole_notset'] = '시작 페이지 역할이 설정되지 않음';
 $string['check_frontpagerole_ok'] = '시작 페이지 역활 정의는 맞습니다.';
-$string['check_globals_details'] = '<p>PHP의 Register globals은 매우 위험함 PHP  설정으로 간주됩니다.</p>
-<p>반드시 PHP 설정을 <code>register_globals=off</code>으로 해야 합니다. 이 설정은 Apache/IIS 구성 혹은 <code>.htaccess</code> 파일을 수정하거나, 직접 <code>php.ini</code>파일을 편집하여 설정할 수 있습니다. </p>';
-$string['check_globals_error'] = 'Register globals은 비활성화 되어야 합니다. 즉시 서버의 PHP 설정을 수정하십시요!';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Register globals가 꺼져 있음(정상)';
 $string['check_google_details'] = '<p>구글에 대한 개방 설정은 검색엔진이 손님접속으로 강좌에 들어오는 것을 가능하게 합니다.  손님 접속을 허용하지 않았을 때는 이 설정을 활성화 하는 것에 의미가 없습니다.</p>';
 $string['check_google_error'] = '검색엔진 접속은 허용되지만 및 손님 접속은 금지됩니다.';
 $string['check_google_info'] = '검색엔진이 손님 자격으로 들어올 수 있음';

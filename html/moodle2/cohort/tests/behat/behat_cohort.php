@@ -40,22 +40,17 @@ use Behat\Behat\Context\Step\Given as Given;
 class behat_cohort extends behat_base {
 
     /**
-     * Adds the user to the specified cohort.
+     * Adds the user to the specified cohort. The user should be specified like "Firstname Lastname (user@example.com)".
      *
-     * @Given /^I add "(?P<user_username_string>(?:[^"]|\\")*)" user to "(?P<cohort_idnumber_string>(?:[^"]|\\")*)" cohort$/
-     * @param string $username
+     * @Given /^I add "(?P<user_fullname_string>(?:[^"]|\\")*)" user to "(?P<cohort_idnumber_string>(?:[^"]|\\")*)" cohort members$/
+     * @param string $user
      * @param string $cohortidnumber
      */
-    public function i_add_user_to_cohort($username, $cohortidnumber) {
-        global $DB;
-
-        // The user was created by the data generator, executed by the same PHP process that is
-        // running this step, not by any Selenium action.
-        $userid = $DB->get_field('user', 'id', array('username' => $username));
+    public function i_add_user_to_cohort_members($user, $cohortidnumber) {
 
         $steps = array(
             new Given('I click on "' . get_string('assign', 'cohort') . '" "link" in the "' . $this->escape($cohortidnumber) . '" "table_row"'),
-            new Given('I select "' . $userid . '" from "' . get_string('potusers', 'cohort') . '"'),
+            new Given('I set the field "' . get_string('potusers', 'cohort') . '" to "' . $this->escape($user) . '"'),
             new Given('I press "' . get_string('add') . '"'),
             new Given('I press "' . get_string('backtocohorts', 'cohort') . '"')
         );
@@ -63,17 +58,30 @@ class behat_cohort extends behat_base {
         // If we are not in the cohorts management we should move there before anything else.
         if (!$this->getSession()->getPage()->find('css', 'input#cohort_search_q')) {
 
-            $parentnodes = get_string('administrationsite') .
-                ' > ' . get_string('users', 'admin') .
-                ' > ' . get_string('accounts', 'admin');
+            // With JS enabled we should expand a few tree nodes.
+            if ($this->running_javascript()) {
+                $parentnodes = get_string('administrationsite') . ' > ' .
+                    get_string('users', 'admin') . ' > ' .
+                    get_string('accounts', 'admin');
+                $steps = array_merge(
+                    array(
+                        new Given('I am on homepage'),
+                        new Given('I navigate to "' . get_string('cohorts', 'cohort') . '" node in "' . $parentnodes . '"')
+                    ),
+                    $steps
+                );
 
-            $steps = array_merge(
-                array(
-                    new Given('I am on homepage'),
-                    new Given('I navigate to "' . get_string('cohorts', 'cohort') . '" node in "' . $parentnodes . '"')
-                ),
-                $steps
-            );
+            } else {
+                // JS disabled.
+                $steps = array_merge(
+                    array(
+                        new Given('I am on homepage'),
+                        new Given('I follow "' . get_string('administrationsite') . '" node'),
+                        new Given('I follow "' . get_string('cohorts', 'cohort') . '"')
+                    ),
+                    $steps
+                );
+            }
         }
 
         return $steps;

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,7 @@ $string['auth_ldap_passtype'] = 'Geef de opmaak voor nieuwe of gewijzigde wachtw
 $string['auth_ldap_passtype_key'] = 'Wachtwoordopmaak';
 $string['auth_ldap_passwdexpire_settings'] = 'Instellingen voor het verlopen van het LDAP-wachtwoord';
 $string['auth_ldap_preventpassindb'] = 'Kies ja om te verhinderen dat wachtwoorden in de Moodle databank bewaard worden.';
-$string['auth_ldap_preventpassindb_key'] = 'Verberg wachtwoorden';
+$string['auth_ldap_preventpassindb_key'] = 'Wachtwoorden niet in cache zetten';
 $string['auth_ldap_search_sub'] = 'Zet waarde <> 0 als je gebruikers wilt kunnen zoeken in subcontexten.';
 $string['auth_ldap_search_sub_key'] = 'Zoek subcontexten';
 $string['auth_ldap_server_settings'] = 'LDAP-server instellingen';

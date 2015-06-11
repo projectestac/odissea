@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Bloquear campos de utilizador';
 $string['auth_fieldlocks_help'] = '<p>Pode bloquear os campos de perfil dos utilizadores. Esta configuração é útil para sites onde os dados dos utilizadores são mantidos manualmente pelos administradores, editando os registos dos utilizadores ou fazendo o carregamento utilizando a ferramenta \'Carregar utilizadores\'. Se está a bloquear campos requeridos pelo Moodle, verifique que fornece esses dados ao criar contas de utilizadores, senão as contas não serão válidas.</p><p>Pondere a utilização do modo de bloqueio \'Desbloquear se vazio\' para evitar este problema.</p>';
 $string['authinstructions'] = 'Deixe este campo em branco para que as instruções de autenticação predefinidas sejam mostradas na página de autenticação. Se pretender disponibilizar instruções personalizadas, introduza-as aqui.';
 $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alteração de e-mail, deve ter cometido um erro ao copiar o URL enviado no e-mail de confirmação. Por favor, copie novamente o URL e volte a tentar.';
+$string['authloginviaemail'] = 'Permitir autenticação por e-mail';
+$string['authloginviaemail_desc'] = 'Permitir que os utilizadores usem o nome de utilizador ou endereço de e-mail (se for único) para se autenticarem no site.';
 $string['auth_multiplehosts'] = 'Podem ser especificados vários servidores OU endereços (por exemplo, serv1.com;serv2.com;serv3.com OU xxx.xxx.xxx.xxx;yyy.yyy.yyy.yyy)';
 $string['auth_outofnewemailupdateattempts'] = 'Esgotou o número de tentativas disponíveis para atualizar o seu e-mail. O seu pedido de atualização foi cancelado.';
 $string['auth_passwordisexpired'] = 'A sua senha expirou. Quer alterá-la agora?';
@@ -64,7 +66,7 @@ $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remot
 $string['changepassword'] = 'Endereço para alteração de senha';
 $string['changepasswordhelp'] = 'Aqui pode especificar um local onde os utilizadores podem recuperar ou alterar a sua senha e nome de utilizador caso se esqueçam dela. Será apresentado aos utilizadores um botão na página de entrada e na sua página de utilizador. Se deixar este espaço em branco o botão não aparecerá.';
 $string['chooseauthmethod'] = 'Escolha um método de autenticação:';
-$string['chooseauthmethod_help'] = 'Este menu permite alterar o método de autenticação usado para autenticar o utilizador. Deverão ser selecionados unicamente métodos de autenticação que tenham sido habilitados, para evitar que o utilizador deixe de poder aceder. Para impedir um utilizador de aceder ao servidor, selecione "Sem autenticação".';
+$string['chooseauthmethod_help'] = 'Esta configuração determina o método de autenticação utilizado sempre que o utilizador se autentica. Deve selecionar unicamente métodos de autenticação ativos, caso contrário o utilizador não conseguirá se autenticar. Para impedir um utilizador de se autenticar, selecione "Sem autenticação".';
 $string['createpassword'] = 'Gerar senha e notificar utilizador';
 $string['createpasswordifneeded'] = 'Criar senha se necessário';
 $string['emailchangecancel'] = 'Cancelar a mudança de e-mail';
@@ -89,8 +91,9 @@ $string['errorminpasswordlower'] = 'A senha deverá ter pelo menos {$a} letra(s)
 $string['errorminpasswordnonalphanum'] = 'A senha deverá ter pelo menos {$a} caracter(es) não alfanumérico(s).';
 $string['errorminpasswordupper'] = 'A senha deverá ter pelo menos {$a} letra(s) maiúscula(s).';
 $string['errorpasswordupdate'] = 'Erro na atualização da senha; senha não modificada';
-$string['event_user_loggedin'] = 'Utilizador autenticou-se';
+$string['eventuserloggedin'] = 'Utilizador autenticou-se';
 $string['eventuserloggedinas'] = 'Utilizador entrou como outro utilizador';
+$string['eventuserloginfailed'] = 'Autenticação de utilizador falhou';
 $string['forcechangepassword'] = 'Obrigar a alterar senha';
 $string['forcechangepasswordfirst_help'] = 'Obrigar os utilizadores a alterar a senha na sua primeira entrada no Moodle.';
 $string['forcechangepassword_help'] = 'Obrigar os utilizadores a alterar a senha na sua próxima entrada no Moodle.';
@@ -127,7 +130,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'O CAPTCHA serve para evitar ações indevidas por parte de programas automáticos. Insira as palavras na caixa, pela ordem apresentada e separadas por um espaço em branco.Se não tem a certeza das palavras, obtenha um novo CAPTCHA ou um CAPTCHA em formato áudio.';
 $string['recaptcha_link'] = 'link';
 $string['selfregistration'] = 'Autorregisto';
-$string['selfregistration_help'] = 'Se estiver selecionado um módulo de autenticação como, por exemplo, o Autorregisto com confirmação por e-mail, então é possível aos utilizadores potenciais se registarem e criarem a sua conta de utilizador. Todavia isto torna também possível que spammers criem para usar os fóruns, blogs, etc. para inserir mensagens de spam (publicidade por exemplo). Para evitar estas situações, o autorregisto deve ser desativado ou limitado através da opção <em>Domínios de e-mail permitidos</em>';
+$string['selfregistration_help'] = 'Se estiver selecionado um módulo de autenticação como, por exemplo, o Autorregisto com confirmação por e-mail, então é possível aos utilizadores potenciais se registarem e criarem a sua conta de utilizador. Todavia isto torna também possível que spammers criem para usar os fóruns, blogues, etc. para inserir mensagens de spam (publicidade por exemplo). Para evitar estas situações, o autorregisto deve ser desativado ou limitado através da opção <em>Domínios de e-mail permitidos</em>';
 $string['sha1'] = 'tabela hash SHA-1';
 $string['showguestlogin'] = 'Pode optar por esconder ou mostrar o botão de entrada para visitantes na página de entrada.';
 $string['stdchangepassword'] = 'Usar a página standard para alterar a senha';

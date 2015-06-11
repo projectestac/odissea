@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['activerepository'] = 'Repository plugin disponibili';
 $string['activitybackup'] = 'Backup attività';
 $string['add'] = 'Aggiungi';
 $string['addfile'] = 'Aggiungi...';
+$string['addfiletext'] = 'Aggiungi file';
 $string['addplugin'] = 'Attivazione repository plugin';
 $string['allowexternallinks'] = 'Consenti link esterni';
 $string['areacategoryintro'] = 'Introduzione alla categoria';
@@ -62,13 +63,16 @@ $string['close'] = 'Chiudi';
 $string['commonrepositorysettings'] = 'Impostazioni comuni repository';
 $string['configallowexternallinks'] = 'E\' possibile disabilitare l\'utilizzo di link esterni nei repository';
 $string['configcacheexpire'] = 'La permanenza in cache, espressa in secondi, degli elenchi di file ottenuti da repository esterni.';
+$string['configgetfiletimeout'] = 'Il timeout in secondi per lo scaricamento di file esterni in Moodle';
 $string['configsaved'] = 'Configurazione salvata!';
-$string['confirmdelete'] = 'Sei sicuro di voler eliminare il repository {$a} ?
-Se scegli "Prosegui e scarica", i collegamenti a contenuti esterni saranno copiati in moodle. Tieni presente che il processo può durare molto.';
+$string['configsyncfiletimeout'] = 'Il timeout in secondi per la sincronizzazione della dimensione di file esterni';
+$string['configsyncimagetimeout'] = 'Il timeout in secondi per lo scaricamento di immagini da repository esterni durante la sincronizzazione';
+$string['confirmdelete'] = 'Sei sicuro di eliminare il repository {$a} ?
+Se scegli "Prosegui e scarica", i file esterni collegati saranno copiati in Moodle. Tieni presente che il processo può durare molto tempo.';
 $string['confirmdeletefile'] = 'Sei sicuro di voler eliminare questo file?';
 $string['confirmdeletefilewithhref'] = 'Sei sicuro di voler eliminare questo file? Sono presenti {$a} alias/scorciatoie che utilizzano il file. Proseguendo, gli alias saranno convertiti in copie del file.';
 $string['confirmdeletefolder'] = 'Sei sicuro di voler eliminare questa cartella? Saranno eliminati anche i file e le cartelle ivi contenute.';
-$string['confirmremove'] = 'Sei sicuro di voler eliminare questo repository plugin, le sue opzioni e <strong style=color:red>tutte le sue istanze</strong> - {$a}? Se scegli "Prosegui e scarica", i collegamenti a contenuti esterni saranno copiati in moodle. Tieni presente che il processo può durare molto..';
+$string['confirmremove'] = 'Sei sicuro di voler eliminare questo repository plugin, le sue opzioni e <strong style=color:red>tutte le sue istanze</strong> - {$a}? Se scegli "Prosegui e scarica", i file esterni collegati saranno copiati in Moodle. Tieni presente che il processo può durare molto tempo.';
 $string['confirmrenamefile'] = 'Sei sicuro di voler rinominare/spostare questo file? Sono presenti {$a} alias/scorciatoie che utilizzano il file. Proseguendo, gli alias saranno convertiti in copie del file.';
 $string['confirmrenamefolder'] = 'Sei sicuro di voler rinominare/spostare questa cartella? Tutti gli alias/scorciatoie collegati ai file contenuti nella cartella saranno convertiti in copie dei file.';
 $string['continueuninstall'] = 'Prosegui';
@@ -76,6 +80,7 @@ $string['continueuninstallanddownload'] = 'Prosegui e scarica';
 $string['copying'] = 'Copia in corso';
 $string['coursebackup'] = 'Backup corsi';
 $string['create'] = 'Crea';
+$string['createfolder'] = 'Crea cartella';
 $string['createfolderfail'] = 'Si è verificato un errore durante la creazione della cartella';
 $string['createfoldersuccess'] = 'La cartella è stata creata correttamente';
 $string['createinstance'] = 'Crea una istanza di repository';
@@ -88,10 +93,14 @@ $string['deleterepository'] = 'Elimina questo repository';
 $string['detailview'] = 'Dettagli';
 $string['dimensions'] = 'Dimensioni';
 $string['disabled'] = 'Disabilitato';
+$string['displayasdetails'] = 'Visualizza dettagli';
+$string['displayasicons'] = 'Visualizza icone';
+$string['displayastree'] = 'Visualizza albero';
 $string['displaydetails'] = 'Visualizza dettagli';
 $string['displayicons'] = 'Visualizza icone';
 $string['displaytree'] = 'Visualizza alberatura';
 $string['download'] = 'Scarica';
+$string['downloadallfiles'] = 'Scarica tutti i file';
 $string['downloadfolder'] = 'Scarica tutto';
 $string['downloadsucc'] = 'Il file è stato scaricato correttamente';
 $string['draftareanofiles'] = 'Non può essere scaricato poiché non ci sono file allegati';
@@ -125,6 +134,7 @@ $string['folderexists'] = 'Il nome della cartella esiste già, per favore utiliz
 $string['foldernotfound'] = 'La cartella non è stata trovata';
 $string['folderrecurse'] = 'La cartella non può diventare una sotto cartella di se stessa';
 $string['getfile'] = 'Scegli questo file';
+$string['getfiletimeout'] = 'Timeout scaricamento file';
 $string['help'] = 'Aiuto';
 $string['hidden'] = 'Nascosto';
 $string['iconview'] = 'Visualizza icone';
@@ -142,6 +152,8 @@ $string['invalidplugin'] = 'Repository plug-in non valido';
 $string['invalidrepositoryid'] = 'Repository ID non valido';
 $string['isactive'] = 'Attivo ?';
 $string['keyword'] = 'Parola chiave';
+$string['lastmodified'] = 'Ultima modifica';
+$string['license'] = 'Licenza';
 $string['linkexternal'] = 'Link esterno';
 $string['listview'] = 'visualizza come elenco';
 $string['loading'] = 'Caricamento in corso...';
@@ -155,6 +167,7 @@ $string['manage'] = 'Gestione repository';
 $string['manageurl'] = 'Gestisci';
 $string['manageuserrepository'] = 'Gestisci repository individuali';
 $string['moving'] = 'Spostamento in corso';
+$string['name'] = 'Nome';
 $string['newfolder'] = 'Nuova cartella';
 $string['newfoldername'] = 'Nuovo nome cartella';
 $string['noenter'] = 'Non è stato inserito niente';
@@ -174,6 +187,7 @@ $string['operation'] = 'Operazione';
 $string['original'] = 'Originale';
 $string['overwrite'] = 'Sovrascrivi';
 $string['overwriteall'] = 'Sovrascrivi tutti';
+$string['path'] = 'Percorso';
 $string['personalrepositories'] = 'Istanze repository disponibili';
 $string['plugin'] = 'Repository plug-in';
 $string['pluginerror'] = 'Si sono verificati errori nel repository plugin';
@@ -213,6 +227,8 @@ $string['siteinstances'] = 'Repository attivi nel sito';
 $string['size'] = 'Dimensione';
 $string['submit'] = 'Invia';
 $string['sync'] = 'Sync';
+$string['syncfiletimeout'] = 'Timeout sincronizzazione file';
+$string['syncimagetimeout'] = 'Timeout sincronizzazione immagini';
 $string['thumbview'] = 'Vedi come icone';
 $string['title'] = 'Scegli un file...';
 $string['type'] = 'Tipo';
@@ -229,5 +245,5 @@ $string['usenonjsfilemanager'] = 'Apri il file manager in una nuova finestra';
 $string['usenonjsfilepicker'] = 'Apri il file picker in una nuova finestra';
 $string['usercontextrepositorydisabled'] = 'Nel contesto utente non puoi modificare questo repository';
 $string['wrongcontext'] = 'Non puoi accedere a questo contesto';
-$string['xhtmlerror'] = 'Probabilmente stai usando header XHTML strict, con le quali alcune componenti YUI non funzionano correttamente. Per favore disabilita le componenti YUI in Moodle.';
+$string['xhtmlerror'] = 'Probabilmente stai usando header XHTML strict, con i quali alcune componenti YUI non funzionano correttamente. Per favore disabilita le componenti.';
 $string['ziped'] = 'La cartella è stata compressa correttamente';

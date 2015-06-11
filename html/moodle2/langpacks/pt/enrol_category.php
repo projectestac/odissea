@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_category', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['category:config'] = 'Configurar categorias das instâncias das inscrições';
 $string['category:synchronised'] = 'Atribuição de papéis sincronizadas com inscrições nas disciplinas';
 $string['pluginname'] = 'Inscrições em categorias';
 $string['pluginname_desc'] = 'Este módulo de inscrição é uma solução de retrocompatibiliddade para inscrições feitas no contexto da categoria de disciplinas em versões anteriores do Moodle. É recomendado que se usem grupos globais nestas situações.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -97,9 +97,6 @@ $string['inputwebdirectory'] = 'Pasta do Moodle:';
 $string['installation'] = 'Instalação';
 $string['langdownloaderror'] = 'Não foi possível instalar o idioma <b>{$a}</b> por falha no download. O processo de instalação continuará em Inglês.';
 $string['langdownloadok'] = 'O idioma <b>{$a}</b> foi instalado com sucesso. O processo de instalação continuará neste idioma.';
-$string['magicquotesruntime'] = '<i>Magic quotes run time</i>';
-$string['magicquotesruntimeerror'] = 'Esta opção não deve estar ativa.';
-$string['magicquotesruntimehelp'] = '<p>Para o correto funcionamento do Moodle o parâmetro <b>Magic quotes runtime</b> deve estar desativado.</p><p>Esta é a configuração habitual e pode ser verificada através do valor do parâmetro <b>magic_quotes_runtime</b> no ficheiro <b>php.ini</b>.</p><p>Se não for possível alterar este ficheiro, é possível definir esta configuração através da inclusão, num ficheiro <b>.htaccess</b> localizado na raiz da pasta do moodle, da linha:</p> <p><b>php_value magic_quotes_runtime Off</b></p>';
 $string['memorylimit'] = 'Limite de memória';
 $string['memorylimiterror'] = 'O limite de memória definido na configuração do PHP é muito baixo... poderá originar problemas mais tarde.';
 $string['memorylimithelp'] = '<p>O limite de memória para o PHP definido atualmente no servidor é <b>{$a}</b>.</p><p>Um número elevado de módulos em utilização ou de utilizadores registados pode fazer com que o Moodle apresente problemas de falta de memória.</p><p>É recomendado que o PHP seja configurado com um limite de memória de pelo menos 40MB. Esta configuração pode ser definida de diversas formas:</p><ol><li>Compilação do PHP com o parâmetro <b>--enable-memory-limit</b>. Esta definição permitirá ao próprio Moodle definir o valor a utilizar.</li><li>Alteração do parâmetro <b>memory_limit</b> no ficheiro de configuração do PHP para um valor igual ou superior a 40MB.</li><li>Criação de um ficheiro <b>.htaccess</b> na raiz da pasta do Moodle com a linha <b>php_value memory_limit 40M</b><p>ATENÇÃO: Em alguns servidores esta configuração impedirá o funcionamento de <b>todas</b> as páginas PHP. Nestes casos, não poderá ser utilizado o ficheiro <b>.htaccess</b>.</p></li></ol>';

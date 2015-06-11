@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Impaginazione non definita';
 $string['layoutvertical'] = 'Colonna verticale di pulsanti radio';
 $string['nooptionsforsubquestion'] = 'Non è possibile ricavare le opzioni per la porzione di domanda # {$a->sub}';
 $string['noquestions'] = 'La domanda Cloze <strong>{$a}</strong>" non contiene nessuna domanda';
+$string['pleaseananswerallparts'] = 'Per favore rispondi a tutte le parti della domanda';
 $string['pluginname'] = 'Risposte inglobate (Cloze)';
 $string['pluginnameadding'] = 'Creazione domanda a Risposte inglobate (Cloze)';
 $string['pluginnameediting'] = 'Modifica domanda a Risposte inglobate (Cloze)';
@@ -54,7 +55,7 @@ $string['questionsless'] = '{$a} domanda(e) in meno rispetto alla domanda a risp
 $string['questionsmissing'] = 'Il testo della domanda deve incorporare almeno un\'altra domanda.';
 $string['questionsmore'] = '{$a} domanda(e) in più rispetto alla domanda a risposta multipla presente nel datab';
 $string['questiontypechanged'] = 'Tipo di domanda cambiato';
-$string['questiontypechangedcomment'] = 'Almeno un tipo di domanda è stato modificato.<br >Hao aggiunto, eliminato, o spostato una domanda<br >Guarda di seguito.';
+$string['questiontypechangedcomment'] = 'Almeno un tipo di domanda è stato modificato.<br >Hai aggiunto, eliminato, o spostato una domanda?<br >Guarda di seguito.';
 $string['questionusedinquiz'] = 'Questa domanda è usata in {$a->nb_of_quiz} quiz, tentativi totali : {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Tipo di domanda memorizzata {$a}';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';

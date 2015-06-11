@@ -66,7 +66,7 @@ EXCEPTION = function(c) {
 
     EXCEPTION.superclass.constructor.apply(this, [config]);
 };
-Y.extend(EXCEPTION, M.core.dialogue, {
+Y.extend(EXCEPTION, M.core.notification.info, {
     _hideTimeout : null,
     _keypress : null,
     initializer : function(config) {
@@ -94,7 +94,6 @@ Y.extend(EXCEPTION, M.core.dialogue, {
             this._hideTimeout = setTimeout(function(){self.hide();}, delay);
         }
         this.after('visibleChange', this.visibilityChanged, this);
-        this.after('destroyedChange', function(){this.get(BASE).remove();}, this);
         this._keypress = Y.on('key', this.hide, window, 'down:13,27', this);
         this.centerDialogue();
     },

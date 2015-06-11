@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,11 +119,6 @@ $string['inputwebdirectory'] = 'Moodle map:';
 $string['installation'] = 'Installatie';
 $string['langdownloaderror'] = 'De taal "{$a}" kon niet worden gedownload. Het installatieproces gaat verder in het Engels.';
 $string['langdownloadok'] = 'De taal "{$a}" is met succes geïnstalleerd. Het installatieproces zal in deze taal verder gaan.';
-$string['magicquotesruntime'] = 'Magic Quotes runtime';
-$string['magicquotesruntimeerror'] = 'Dit moet uitgeschakeld zijn';
-$string['magicquotesruntimehelp'] = '<p>Magic Quotes runtime moet uitgeschakeld zijn om Moodle goed te laten functioneren.</p>
-<p>Normaal staat het af als standaardinstelling ... zie de instelling <b>magic_quotes_runtime</b> in je php.ini-bestand.</p>
-<p>Als je geen toegang hebt tot php.ini, dan kun je proberen om onderstaande lijn in een bestand te zetten dat je .htaccess noemt en dat dan in je Moodle-map plaatsen: <blockquote><div>php_value magic_quotes_runtime Off</div></blockquote></p>';
 $string['memorylimit'] = 'Geheugenlimiet';
 $string['memorylimiterror'] = 'De PHP-geheugenlimiet staat eerder laag ingesteld ...  je zou hierdoor later problemen kunnen krijgen.';
 $string['memorylimithelp'] = '<p>De PHP-geheugenlimiet van je server is ingesteld op {$a}.</p>
@@ -138,21 +133,24 @@ Hierdoor kan Moodle zelf zijn geheugenlimiet instellen.
 <p>Opgelet: op sommige servers zal dit verhinderen dat <b>alle</b> PHP-bestanden uitgevoerd worden. (je zult foutmeldingen zien wanneer je naar php-pagina\'s kijkt) Je zult dan het .htaccess-bestand moeten verwijderen.</li>
 </ol>';
 $string['mssqlextensionisnotpresentinphp'] = 'PHP is niet juist geconfigureerd met de MSSQL-extentie en kan niet communiceren met SQL*Server. Controleer je php.ini-bestand of hercompileer PHP';
-$string['mysqliextensionisnotpresentinphp'] = 'PHP is niet goed geconfigureerd - het kan niet communiceren met MySQL. Controleer je php.ini bestand of hercompileer PHP. De MySQLi-extentie is niet beschikbaar voor PHP 4.';
+$string['mysqliextensionisnotpresentinphp'] = 'PHP is niet goed geconfigureerd met de MySQLi-extentie om met MySQL te communiceren. Controleer je php.ini bestand of hercompileer PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
-$string['nativemariadbhelp'] = 'Je moet nu de databank configureren. De databank zou kunnen automatisch aangemaakt worden als de opgegeven databankgebruiker de juiste rechten heeft. De gebruikersnaam en wachtwoord moeten al bestaan. het tabelprefix is optioneel.  Deze driver is niet compatibel met de verouderde MyISAM engine.';
+$string['nativemariadbhelp'] = '<p>De databank is waar de meeste Moodle-instellingen en gegevens bewaard worden. Die moet geconfigureerd worden. </p>
+<p> De databanknaam, gebruikersnaam en wachtwoord zijn vereiste velden. het tabelprefix is optioneel.</p>
+<p>Als de databank nog niet bestaat, maar de opgegeven gebruiker heeft de juiste rechten, dan zal Moodle proberen een nieuwe databank te maken met je juiste rechten en instellingen.</p>
+<p>Deze driver is niet compatibel met de verouderde MyISAM engine.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
 $string['nativemssqlhelp'] = 'Nu moet je de databank waar de meeste gegevens van Moodle bewaard worden gaan configureren. Deze databank moet al gemaakt zijn en je moet een gebruikersnaam en wachtwoord hebben om er toegang toe te krijgen. Een tabelprefix is verplicht.';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
-$string['nativemysqlihelp'] = 'Nu moet je de databank configureren waar de meeste Moodlegegevens bewaard zullen worden.
-De databank kan aangemaakt worden als de databankgebruiker en wachtwoord bestaat en de juiste rechten heeft.
-Een tabelvoorvoegsel is optioneel.';
+$string['nativemysqlihelp'] = '<p>De databank is waar de meeste Moodle-instellingen en gegevens bewaard worden. Die moet geconfigureerd worden. </p>
+<p> De databanknaam, gebruikersnaam en wachtwoord zijn vereiste velden. het tabelprefix is optioneel.</p>
+<p>Als de databank nog niet bestaat, maar de opgegeven gebruiker heeft de juiste rechten, dan zal Moodle proberen een nieuwe databank te maken met je juiste rechten en instellingen.</p>';
 $string['nativeoci'] = 'Oracle(native/oci)';
 $string['nativeocihelp'] = 'Nu moet je de databank waar de meeste gegevens van Moodle bewaard worden gaan configureren. Deze databank moet al gemaakt zijn en je moet een gebruikersnaam en wachtwoord hebben om er toegang toe te krijgen. Een tabelprefix is verplicht.';
 $string['nativepgsql'] = 'PostgreSQL (native/pgsql)';
-$string['nativepgsqlhelp'] = 'Nu moet je de databank configureren waar de meeste Moodlegegevens bewaard zullen worden.
-Deze databank moet al aangemaakt zijn en er moet een gebruikersnaam en wachtwoord aangemaakt zijn met rechten om de databank te gebruiken.
-Een tabelvoorvoegsel is optioneel.';
+$string['nativepgsqlhelp'] = '<p>De databank is waar de meeste Moodle-instellingen en gegevens bewaard worden. Die moet geconfigureerd worden. </p>
+<p> De databanknaam, gebruikersnaam en wachtwoord zijn vereiste velden. het tabelprefix is optioneel.</p>
+<p>Deze databank moet al aangemaakt zijn en de gebruiker moet rechten hebben om de databank te lezen en te schrijven.</p>';
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Nu moet je de databank waar de meeste gegevens van Moodle bewaard worden gaan configureren. Deze databank moet al gemaakt zijn en je moet een gebruikersnaam en wachtwoord hebben om er toegang toe te krijgen. Een tabelprefix is verplicht.';
 $string['nativesqlsrvnodriver'] = 'Microsoft Drivers voor SQL Server voor PHP zijn niet geïnstalleerd of niet goed geconfigureerd.';
@@ -165,10 +163,15 @@ $string['pathshead'] = 'Bevestig paden';
 $string['pathsrodataroot'] = 'De dataroot map is niet beschrijfbaar.';
 $string['pathsroparentdataroot'] = 'De bovenliggende map ({$a->parent}) is niet beschrijfbaar. De datamap ({$a->dataroot}) kan niet aangemaakt worden door het installatiescript';
 $string['pathssubadmindir'] = 'Sommige webhosts gebruiken /admin als een speciale url om toegang tot bijvoorbeeld een controlepaneel te krijgen. Dit kan conflicten veroorzaken met de standaardlocatie van de Moodle admin scripts. Je kunt dit oplossen door de admin map van Moodle te hernoemen en de nieuwe naam hier te zetten. Bijvoorbeeld <em>moodleadmin</em>. Dat zal de admin links in Moodle herstellen.';
-$string['pathssubdataroot'] = 'Je hebt een plaats nodig waar Moodle geüploade bestanden kan bewaren. Deze map moet leesbaar en BESCHRIJFBAAR zijn door de webserver gebruiker (gewoonlijk \'nobody\', \'apache\' of www-data\') en mag niet rechtstreeks toegankelijk zijn vanaf het internet.';
-$string['pathssubdirroot'] = 'Volledig pad naar de Moodle-installatie.';
-$string['pathssubwwwroot'] = 'Volledig webadres waarlangs de toegang naar Moodle zal gebeuren. Het is niet mogelijk toegang tot Moodle te krijgen via meerdere adressen. Als je site meerdere publieke adressen heeft, dan zul je permanente verwijzingen moeten opzetten voor al die adressen, behalve voor wat je hier invult. Als je site zowel van het internet als van een intranet toegankelijk is, zet dat het internetadres hier en wijzig je DNS-instellingen zodanig dat intranetgebruikers dit publieke adres ook gebruiken.
-Als het adres niet juist is, wijzig dan de URL in je browser om de installatie met een andere waarde te starten.';
+$string['pathssubdataroot'] = '<p>Een map waar Moodle geüploade bestanden kan bewaren.</p>
+<p>Deze map moet leesbaar en BESCHRIJFBAAR zijn door de webserver gebruiker (gewoonlijk \'nobody\', \'apache\' of www-data\').</p>
+<p>Ze mag niet rechtstreeks toegankelijk zijn vanaf het internet.</p>
+<p>Als de map niet bestaat, zal het installatieproces ze proberen te maken.</p>';
+$string['pathssubdirroot'] = '<p>Het volledig pad naar de Moodle-code.</p>';
+$string['pathssubwwwroot'] = '<p>Het volledige webadres waarlangs de toegang naar Moodle zal gebeuren - het adres dat gebruikers zullen ingeven om Moodle te bereiken.</p>
+<p>Het is niet mogelijk toegang tot Moodle te krijgen via meerdere adressen. Als je site meerdere publieke adressen heeft, dan zul je permanente verwijzingen moeten opzetten voor al die andere adressen.</p>
+<p>Als je site zowel vanaf het internet als vanaf een intranet toegankelijk is, zet dat het internetadres hier.</p>
+<p>Als het adres niet juist is, wijzig dan de URL in je browser en herstart de installatie.</p>';
 $string['pathsunsecuredataroot'] = 'De plaats van de datamap is niet veilig.';
 $string['pathswrongadmindir'] = 'De adminmap bestaat niet';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP is niet juist geïnstalleerd met de PGSQL-extentie en kan niet communiceren met PostgreSQL. Controleer je php.ini-bestand of hercompileer PHP.';

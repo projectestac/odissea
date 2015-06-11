@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Composant';
+$string['eventcontext'] = 'Contexte de l\'événement';
+$string['eventloggedas'] = '{$a->realusername} en tant que {$a->asusername}';
+$string['eventorigin'] = 'Origine';
+$string['eventrelatedfullnameuser'] = 'Utilisateur touché';
+$string['eventreportviewed'] = 'Historique consulté';
+$string['eventuserreportviewed'] = 'Historique d\'utilisateur consulté';
 $string['logsformat'] = 'Format des historiques';
 $string['log:view'] = 'Consulter les historiques du cours';
 $string['log:viewtoday'] = 'Consulter l\'historique du jour';
-$string['mnetlogwarning'] = 'Si vos clients MNet tournent sur Moodle 2.7 ou version ultérieure, il est possible que vous ne receviez aucun historique.';
+$string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
 $string['page'] = 'Page {$a}';
 $string['page-report-log-index'] = 'Rapport d\'historiques de cours';
 $string['page-report-log-user'] = 'Rapport utilisateur d\'historiques de cours';
 $string['page-report-log-x'] = 'Tout rapport d\'historiques';
 $string['pluginname'] = 'Historiques';
+$string['selectlogreader'] = 'Sélectionner un lecteur d\'historiques';

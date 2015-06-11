@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,31 @@ $string['actualresponse'] = 'Risposte reali';
 $string['allattempts'] = 'tutti i tentativi';
 $string['allattemptsavg'] = 'Voto medio di tutti i tentativi';
 $string['allattemptscount'] = 'Numero totale dei tentativi completi valutati';
+$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisno'] = '({$a->number}) "{$a->name}"';
+$string['analysisnovariant'] = '({$a->number}) "{$a->name}" variante {$a->variant}';
 $string['analysisofresponses'] = 'Analisi delle risposte';
 $string['analysisofresponsesfor'] = 'Analisi delle risposte per {$a}';
+$string['analysisvariant'] = '"{$a->name}" variante {$a->variant}';
 $string['attempts'] = 'Tentativi';
 $string['attemptsall'] = 'tutti i tentativi';
 $string['attemptsfirst'] = 'primo tentativo';
 $string['backtoquizreport'] = 'Torna alla pagina home delle statistiche';
 $string['calculatefrom'] = 'Calcolo statistiche da';
+$string['calculatingallstats'] = 'E\' in corso l\'analisi delle risposte e il calcolo delle statistiche del quiz e delle domande e';
 $string['cic'] = 'Coefficiente di consistenza interna (per {$a})';
 $string['completestatsfilename'] = 'completestats';
 $string['count'] = 'Numero';
+$string['counttryno'] = 'Tentativo numero {$a}';
 $string['coursename'] = 'Nome corso';
 $string['detailedanalysis'] = 'Analisi più dettagliata delle risposte a questa domanda';
+$string['detailedanalysisforvariant'] = 'Analisi più dettagliata delle risposte alla variante {$a} di questa domanda';
 $string['discrimination_index'] = 'Indice di discriminazione';
 $string['discriminative_efficiency'] = 'Efficienza discriminativa';
 $string['downloadeverything'] = 'Download report completo come {$a->formatsmenu} {$a->downloadbutton}';
 $string['duration'] = 'Aperto per';
 $string['effective_weight'] = 'Peso effettivo';
 $string['errordeleting'] = 'Si è verificato un errore durante l\'eliminazione di {$a} vecchi record.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La domanda ({$a}) è stata utilizzata più di una volta nello stesso test in diverse posizioni e con diversi pesi. Questa situazione al momento non è supportata dalla statistiche e potrebbe rendere i risultati non affidabili.';
 $string['errormedian'] = 'Si è verificato un errore ricavando la mediana';
 $string['errorpowerquestions'] = 'Si è verificato un errore ricavando i dati per il calcolo della varianza dei punteggi delle domande';
 $string['errorpowers'] = 'Si è verificato un errore ricavando i dati per il calcolo della varianza dei punteggi dei quiz';
@@ -65,9 +71,13 @@ $string['intended_weight'] = 'Peso previsto';
 $string['kurtosis'] = 'Curtosi della distribuzione dei voti (per {$a})';
 $string['lastattempts'] = 'ultimi tentativi';
 $string['lastattemptsavg'] = 'Media delle valutazioni degli ultimi tentativi';
-$string['lastcalculated'] = 'Calcolo più recente: {$a->lastcalculated} fa. Tentativi effettuati dopo il calcolo più recente: {$a->count}.';
+$string['lastcalculated'] = 'Ultimo calcolo {$a->lastcalculated} fa. Ci sono stati {$a->count} tentativi da allora.';
+$string['maximumfacility'] = 'Abilità massima';
 $string['median'] = 'Mediana dei voti (per {$a})';
+$string['medianfacility'] = 'Mediana dell\'abilità';
+$string['minimumfacility'] = 'Abilità minima';
 $string['modelresponse'] = 'Modello di risposta';
+$string['nameforvariant'] = 'Variante {$a->variant} di {$a->name}';
 $string['negcovar'] = 'Covarianza negativa del voto rispetto al voto del tentativo complessivo';
 $string['negcovar_help'] = 'Il voto di questa domanda relativo a questo insieme di tentativi varia in modo opposto rispetto al voto complessivo di tutti i tentativi. Questo significa che che il voto complessivo tende ad essere inferiore alla media quando il voto per questa domanda è superiore alla media e vice-versa.
 
@@ -95,6 +105,7 @@ $string['recalculatenow'] = 'Ricalcola ora';
 $string['reportsettings'] = 'Impostazioni di calcolo delle statistiche';
 $string['response'] = 'Risposta data';
 $string['skewness'] = 'Asimmetria della distribuzione dei voti (per {$a})';
+$string['slotstructureanalysis'] = 'Analisi strutturale per la domanda numero {$a}';
 $string['standarddeviation'] = 'Deviazione standard (per {$a})';
 $string['standarddeviationq'] = 'Deviazione standard';
 $string['standarderror'] = 'Errore standard (per {$a})';
@@ -104,3 +115,5 @@ $string['statisticsreport'] = 'Report statistico';
 $string['statisticsreportgraph'] = 'Statistiche sulla posizione delle domande';
 $string['statistics:view'] = 'Visualizzare report statistici';
 $string['statsfor'] = 'Statistiche quiz (per {$a})';
+$string['variant'] = 'Variante';
+$string['whichtries'] = 'Analizza le risposte per';

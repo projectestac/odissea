@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filters', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,9 +37,11 @@ $string['categoryrole'] = 'Rol categorie';
 $string['contains'] = 'bevat';
 $string['content'] = 'Inhoud';
 $string['contentandheadings'] = 'Inhoud en titels';
+$string['coursecategory'] = 'Cursuscategorie';
 $string['courserole'] = 'Cursusrol';
 $string['courserolelabel'] = '{$a->label} is {$a->rolename} in {$a->coursename} van {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} fout: cursus {$a->coursename} bestaat niet';
+$string['coursevalue'] = 'cursus waarde';
 $string['datelabelisafter'] = '{$a->label} is na {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} is voor {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} is tussen {$a->after} en {$a->before}';
@@ -65,6 +67,7 @@ $string['isempty'] = 'is leeg';
 $string['isequalto'] = 'gelijk aan';
 $string['isnotdefined'] = 'is niet gedefinieerd';
 $string['isnotequalto'] = 'is niet gelijk aan';
+$string['limiterfor'] = '{$a} veldscheidingsteken';
 $string['neveraccessed'] = 'Nooit aangemeld';
 $string['nevermodified'] = 'Nooit gewijzigd';
 $string['newfilter'] = 'Nieuwe filter';
@@ -72,6 +75,8 @@ $string['nofiltersenabled'] = 'Er zijn geen filters ingeschakeld voor deze site'
 $string['off'] = 'Uit';
 $string['offbutavailable'] = 'Uit, maar beschikbaar';
 $string['on'] = 'Aan';
+$string['profilefilterfield'] = 'Veldnaam profiel';
+$string['profilefilterlimiter'] = 'Profiel veld operator';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Verwijder alle filters';
@@ -81,3 +86,4 @@ $string['startswith'] = 'begint met';
 $string['tablenosave'] = 'Wijzigingen in bovenstaande tabel worden automatisch bewaard.';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = '{$a} waarde';

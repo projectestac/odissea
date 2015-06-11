@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Palavras-chave da disciplina - Apagada(s)';
 $string['description'] = 'Descrição';
 $string['edittag'] = 'Editar esta palavra-chave';
 $string['entertags'] = 'Inserir palavras-chave separadas por vírgulas';
-$string['errordeleting'] = 'Ocorreu um erro ao apagar a palavra-chave com o identificador {$a}. Por favor informe o administrador da plataforma.';
 $string['errortagfrontpage'] = 'Criar palavras-chave para a página principal do site não é permitido';
 $string['errorupdatingrecord'] = 'Ocorreu um erro ao atualizar a palavra-chave';
+$string['eventtagadded'] = 'Palavra-chave adicionada a um item';
+$string['eventtagcreated'] = 'Palavra-chave criada';
+$string['eventtagdeleted'] = 'Palavra-chave eliminada';
+$string['eventtagflagged'] = 'Palavra-chave assinalada';
+$string['eventtagremoved'] = 'Palavra-chave removida de um item';
+$string['eventtagunflagged'] = 'Palavra-chave desmarcada';
+$string['eventtagupdated'] = 'Palavra-chave atualizada';
 $string['flag'] = 'Sinalizar';
 $string['flagasinappropriate'] = 'Sinalizar como inapropriada';
 $string['helprelatedtags'] = 'Palavras-chave relacionadas, separadas por vírgulas';

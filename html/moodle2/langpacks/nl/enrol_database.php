@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_database', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configureer databank aanmeldinstanties';
 $string['database:unenrol'] = 'Verwijder geschorste gebruikers uit cursus';
 $string['dbencoding'] = 'Databank encodering';
 $string['dbhost'] = 'Databank host';
@@ -63,6 +64,8 @@ $string['remotecoursefield'] = 'Extern cursusveld';
 $string['remotecoursefield_desc'] = 'De veldnaam uit de externe tabel die we gebruiken om records in de cursustabel te koppelen.';
 $string['remoteenroltable'] = 'Externe aanmeldingstabel';
 $string['remoteenroltable_desc'] = 'Geef de naam van de tabel die een lijst bevat met gebruikersaanmeldingen. Leeg betekent geen aanmeldingssynchronisatie';
+$string['remoteotheruserfield'] = 'Gebruikersveld externe gebruiker';
+$string['remoteotheruserfield_desc'] = 'De naam van het veld in de externe tabel dat we gebruiken om "Andere gebruiker" roltoewijzingen aan te geven:';
 $string['remoterolefield'] = 'Extern rolveld';
 $string['remoterolefield_desc'] = 'De velnaam uit de externe tabel die we gebruiken om records in de rollentabel te koppelen.';
 $string['remoteuserfield'] = 'De veldnaam uit de externe tabel die we gebruiken om records in de gebruikerstabel te koppelen.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['default'] = 'Включено по умолчанию';
 $string['default_help'] = 'Если установлено, то этот метод представления будет включен по умолчанию для всех новых заданий.';
 $string['enabled'] = 'Ответ в виде текста';
 $string['enabled_help'] = 'Если включен, студенты смогут вводить форматированный текст прямо в редактор, в качестве своего ответа.';
+$string['eventassessableuploaded'] = 'Текст был загружен';
 $string['nosubmission'] = 'Нет представленных ответов на это задание.';
 $string['numwords'] = '(слов - {$a})';
 $string['numwordsforlog'] = 'Количество представленных слов: {$a}';
@@ -37,3 +38,6 @@ $string['onlinetext'] = 'Ответ в виде текста';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Разрешить ответ в виде текста';
 $string['pluginname'] = 'Ответ в виде текста';
+$string['wordlimit'] = 'Лимит слов';
+$string['wordlimitexceeded'] = 'Для этого задания задано ограничение максимального количества слов - {$a->limit}. Вы пытаетесь представить {$a->count} слово(а). Проверьте свой текст и попробуйте еще раз.';
+$string['wordlimit_help'] = 'Если разрешен ответ в виде текста, то этот параметр задает максимальное количество слов, которое может содержать ответ студента.';

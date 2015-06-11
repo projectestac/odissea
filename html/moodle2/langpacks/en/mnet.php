@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'The remote site has tried to decrypt your message with a
 $string['error7024'] = 'You send an unencrypted message to the remote site, but the remote site doesn\'t accept unencrypted communication from your site. This is very unexpected; you should probably file a bug if this occurs (giving as much information as possible about the application versions in question, etc.';
 $string['error7026'] = 'The key that your message was signed with differs from the key that the remote host has on file for your server. Further, the remote host attempted to fetch your current key and failed to do so. Please manually re-key with the remote host and try again.';
 $string['error709'] = 'The remote site failed to obtain a SSL key from you.';
+$string['eventaccesscontrolcreated'] = 'Access control created';
+$string['eventaccesscontrolupdated'] = 'Access control updated';
 $string['expired'] = 'This key expired on';
 $string['expires'] = 'Valid until';
 $string['expireyourkey'] = 'Delete this key';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'MNet ID provider';
 $string['mnetidproviderdesc'] = 'You can use this facility to retrieve a link that you can log in at, if you can provide the correct email address to match the username you previously tried to log in with.';
 $string['mnetidprovidermsg'] = 'You should be able to login at your {$a} provider.';
 $string['mnetidprovidernotfound'] = 'Sorry, but no further information could be found.';
-$string['mnetlog'] = 'Logs';
 $string['mnetpeers'] = 'Peers';
 $string['mnetservices'] = 'Services';
 $string['mnet_session_prohibited'] = 'Users from your home server are not currently permitted to roam to {$a}.';

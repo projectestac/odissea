@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,7 +83,7 @@ $string['choosefilefromuserbackup'] = 'ユーザプライベートバックア�
 $string['choosefilefromuserbackup_help'] = '「ユーザ情報を匿名化する」オプションをチェックしてコースをバックアップした場合、バックアップファイルはここに保存されます。';
 $string['configgeneralactivities'] = '活動をバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralanonymize'] = '有効にした場合、ユーザに関する情報がデフォルトで匿名化されます。';
-$string['configgeneralbadges'] = 'バックアップにバッジを含むよう、デフォルトに設定します。';
+$string['configgeneralbadges'] = 'バックアップにバッジを含むようデフォルトに設定します。';
 $string['configgeneralblocks'] = 'ブロックをバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralcomments'] = 'コメントをバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralfilters'] = 'フィルタをバックアップに含むかどうか、デフォルトを設定します。';
@@ -118,7 +118,6 @@ $string['errorinvalidformat'] = '不明なバックアップフォーマット�
 $string['errorinvalidformatinfo'] = '選択されたファイルは有効なMoodleバックアップファイルではないため、リストアすることはできません。';
 $string['errorminbackup20version'] = 'このバックアップファイルは開発バージョンのMoodleバックアップ ({$a->backup}) により作成されました。最小必要条件は {$a->min} です。リストアすることはできません。';
 $string['errorrestorefrontpage'] = 'フロントページへのリストアは許可されていません。';
-$string['errortgznozlib'] = 'このシステムではzlib PHP拡張モジュールが利用できないため、新しいバックアップフォーマット内の選択されたファイルをリストアすることができません。';
 $string['executionsuccess'] = 'バックアップファイルが正常に作成されました。';
 $string['filealiasesrestorefailures'] = 'エイリアスリストア失敗';
 $string['filealiasesrestorefailures_help'] = 'エイリアスは外部リポジトリに保存されたファイルを含む、他のファイルへのシンボリックリンクです。一部の例ではMoodeがシンボリックリンクをリストアできない場合があります - 例えば、別のサイトでのバックアップをリストアする場合、または参照ファイルが存在しくなった場合です。
@@ -166,6 +165,7 @@ $string['includeditems'] = '含まれるアイテム:';
 $string['includefilereferences'] = '外部コンテンツへのファイル参照';
 $string['includesection'] = 'セクション {$a}';
 $string['includeuserinfo'] = 'ユーザデータ';
+$string['jumptofinalstep'] = '最終ステップにジャンプする';
 $string['locked'] = 'ロック';
 $string['lockedbyconfig'] = 'この設定はデフォルトバックアップ設定によりロックされています。';
 $string['lockedbyhierarchy'] = 'この設定は依存関係によりロックされています。';
@@ -257,10 +257,11 @@ $string['skiphiddenhelp'] = '非表示コースをスキップするかどうか
 $string['skipmodifdays'] = '次の期間更新されていないコースをスキップする';
 $string['skipmodifdayshelp'] = '指定された日数の間に更新されていないコースをスキップするかどうか選択します。';
 $string['skipmodifprev'] = '前回のバックアップから更新されていないコースをスキップする';
-$string['skipmodifprevhelp'] = '前のバックアップから更新されていないコースをバックアップに含むかどうか、デフォルトを設定します。';
+$string['skipmodifprevhelp'] = '前回のバックアップから更新されていないコースをスキップするかどうか選択してください。ロギングを有効にする必要があります。';
 $string['storagecourseandexternal'] = 'コースバックアップファイルエリアおよび指定ディレクトリ';
 $string['storagecourseonly'] = 'コースバックアップファイルエリア';
 $string['storageexternalonly'] = '自動バックアップの指定ディレクトリ';
+$string['timetaken'] = '所要時間';
 $string['title'] = 'タイトル';
 $string['totalcategorysearchresults'] = '合計カテゴリ数: {$a}';
 $string['totalcoursesearchresults'] = '合計コース数: {$a}';

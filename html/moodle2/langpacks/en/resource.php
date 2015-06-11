@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,6 @@ A file may be used
 * To provide draft files of certain software programs (eg Photoshop .psd) so students can edit and submit them for assessment';
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Files';
-$string['neverseen'] = 'Never seen';
 $string['notmigrated'] = 'This legacy resource type ({$a}) was not yet migrated, sorry.';
 $string['optionsheader'] = 'Display options';
 $string['page-mod-resource-x'] = 'Any file module page';

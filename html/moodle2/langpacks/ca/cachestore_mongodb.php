@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['extendedmode'] = 'Utilitza claus esteses';
 $string['extendedmode_help'] = 'Si s\'habilita la clau completa s\'utilitzarà quan es treballi amb el connector. Això no s\'utilitza internament encara, però li permetrà buscar i investigar fàcilment el connector MongoDB manualment si així ho desitja. Activar aquesta opció afegirà un petita sobrecàrrega pel que només s\'ha de fer si vostè ho requereix.';
 $string['password'] = 'Contrasenya';
 $string['password_help'] = 'La contrasenya que l\'usuari utilitza durant la connexió.';
+$string['pleaseupgrademongo'] = 'Esteu utilitzant una versió antiga de l\'extensió de PHP Mongo (< 1.3 ). La compatibilitat amb versions velles de Mongo s\'abandonarà aviat. Us aconsellem actualitzar.';
 $string['pluginname'] = 'MongoDB';
 $string['replicaset'] = 'Rèplica';
 $string['replicaset_help'] = 'El nom de la rèplica per connectar-si. Si això es dóna el mestre es determinarà mitjançant ordres en la base de dades en l\'alimentació, de manera que el controlador pot tancar la connexió a un servidor que ni tan sols és a la llista.';

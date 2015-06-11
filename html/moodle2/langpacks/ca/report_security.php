@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,8 +43,8 @@ $string['check_displayerrors_error'] = 'El paràmetre de PHP per mostrar errors 
 $string['check_displayerrors_name'] = 'Visualització dels errors de PHP';
 $string['check_displayerrors_ok'] = 'Visualització dels errors de PHP deshabilitada.';
 $string['check_emailchangeconfirmation_details'] = '<p>Es recomana que calgui demanar un correu electrònic de confirmació quan els usuaris canvien la seva adreça electrònica al seu perfil. Si es deshabilita, els que envien correu brossa poden intentar explotar aquesta debilitat del servidor per enviar correu brossa.</p> <p>El camp correu pot també bloquejar-se des dels connectors d\'autenticació; aquesta possibilitat no es considera aquí.</p>';
-$string['check_emailchangeconfirmation_error'] = 'Els usuaris poden entrar qualsevol adreça de correu electrònic.';
-$string['check_emailchangeconfirmation_info'] = 'Els usuaris poden entrar adreces de correu electrònic sols d\'alguns servidors de domini permesos.';
+$string['check_emailchangeconfirmation_error'] = 'Els usuaris poden introduir qualsevol adreça de correu electrònic.';
+$string['check_emailchangeconfirmation_info'] = 'Els usuaris poden introduir adreces de correu electrònic sols de dominis permesos.';
 $string['check_emailchangeconfirmation_name'] = 'Confirmació del canvi del correu electrònic';
 $string['check_emailchangeconfirmation_ok'] = 'Confirmació del canvi del correu electrònic al perfil de l\'usuari.';
 $string['check_embed_details'] = '<p>Incrustar un nombre il·limitat objectes és molt perillós - qualsevol usuari registrat pot llançar un atac XSS contra altres usuaris del servidor. Aquest paràmetre hauria d\'estar deshabilitat en servidors en producció.</p>';
@@ -56,10 +56,6 @@ $string['check_frontpagerole_error'] = 'S\'ha detectat una definició incorrecta
 $string['check_frontpagerole_name'] = 'Rol de la pàgina principal';
 $string['check_frontpagerole_notset'] = 'El rol de la pàgina principal no està definit.';
 $string['check_frontpagerole_ok'] = 'El rol de la pàgina principal està definit de forma correcta.';
-$string['check_globals_details'] = '<p>«Register globals» es considera un paràmetre PHP altament insegur.</p> <p>Cal establir <code>register_globals=off</code> a la configuració del PHP. Aquest paràmetre es controla editant el codi del fitxer <code>php.ini</code>, la configuració d\'Apache/IIS o el fitxer <code>.htaccess</code>.</p>';
-$string['check_globals_error'] = 'CAL que «REgister globals» estigui deshabilitat. Si us plau arrangeu els paràmetres del servidor PHP de forma immediata!';
-$string['check_globals_name'] = '«Register globals»';
-$string['check_globals_ok'] = '«Register globals» està deshabilitat.';
 $string['check_google_details'] = '<p>El paràmetre «Obertura a Google» permet que els motors de cerca accedeixin als cursos amb permís d\'accés als convidats. No té sentit habilitar aquest paràmetre si no permeteu l\'accés a convidats.</p>';
 $string['check_google_error'] = 'L\'accés als motors de cerca està permès però l\'accés de convidat està deshabilitat.';
 $string['check_google_info'] = 'Els motors de cerca poden entrar com a convidats.';

@@ -19,9 +19,9 @@
  * This file contains several classes uses to render the diferent pages
  * of the wiki module
  *
- * @package mod-wiki-2.0
- * @copyrigth 2009 Marc Alier, Jordi Piguillem marc.alier@upc.edu
- * @copyrigth 2009 Universitat Politecnica de Catalunya http://www.upc.edu
+ * @package mod_wiki
+ * @copyright 2009 Marc Alier, Jordi Piguillem marc.alier@upc.edu
+ * @copyright 2009 Universitat Politecnica de Catalunya http://www.upc.edu
  *
  * @author Jordi Piguillem
  * @author Marc Alier
@@ -136,7 +136,7 @@ abstract class page_wiki {
 
         echo $OUTPUT->header();
         $wiki = $PAGE->activityrecord;
-        echo $OUTPUT->heading($wiki->name);
+        echo $OUTPUT->heading(format_string($wiki->name));
 
         echo $this->wikioutput->wiki_info();
 
@@ -633,6 +633,7 @@ class page_wiki_comments extends page_wiki {
             $by->date = userdate($comment->timecreated);
 
             $t = new html_table();
+            $t->id = 'wiki-comments';
             $cell1 = new html_table_cell($OUTPUT->user_picture($user, array('popup' => true)));
             $cell2 = new html_table_cell(get_string('bynameondate', 'forum', $by));
             $cell3 = new html_table_cell();
@@ -2055,7 +2056,7 @@ class page_wiki_save extends page_wiki_edit {
 
         if ($save && $data) {
             if (!empty($CFG->usetags)) {
-                tag_set('wiki_pages', $this->page->id, $data->tags);
+                tag_set('wiki_pages', $this->page->id, $data->tags, 'mod_wiki', $this->modcontext->id);
             }
 
             $message = '<p>' . get_string('saving', 'wiki') . '</p>';
@@ -2183,7 +2184,7 @@ class page_wiki_confirmrestore extends page_wiki_save {
         $version = wiki_get_version($this->version->id);
         $wiki = $PAGE->activityrecord;
         if (wiki_user_can_edit($this->subwiki, $wiki) &&
-                wiki_restore_page($this->page, $version->content, $version->userid)) {
+                wiki_restore_page($this->page, $version, $this->modcontext)) {
             redirect($CFG->wwwroot . '/mod/wiki/view.php?pageid=' . $this->page->id, get_string('restoring', 'wiki', $version->version), 3);
         } else {
             print_error('restoreerror', 'wiki', $version->version);

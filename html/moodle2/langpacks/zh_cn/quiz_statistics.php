@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,6 @@ $string['downloadeverything'] = '下载完整报告 {$a->formatsmenu} {$a->downl
 $string['duration'] = '开放时长';
 $string['effective_weight'] = '实际权重';
 $string['errordeleting'] = '删除 {$a} 条旧记录出错。';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = '题目（{$a}）在此测验中出现了一次以上，且每次的权重不同。统计报告目前不支持这种情况，所以此题的统计结果可能不可靠。';
 $string['errormedian'] = '获取中值失败';
 $string['errorpowerquestions'] = '获取计算题目成绩变化的数据出错';
 $string['errorpowers'] = '获取计算测验成绩方差的数据失败';

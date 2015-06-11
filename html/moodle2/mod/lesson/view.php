@@ -18,8 +18,7 @@
 /**
  * This page prints a particular instance of lesson
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or late
  **/
@@ -179,8 +178,6 @@ if (empty($pageid)) {
         }
     }
 
-    add_to_log($course->id, 'lesson', 'start', 'view.php?id='. $cm->id, $lesson->id, $cm->id);
-
     // if no pageid given see if the lesson has been started
     $retries = $DB->count_records('lesson_grades', array("lessonid" => $lesson->id, "userid" => $USER->id));
     if ($retries > 0) {
@@ -217,12 +214,9 @@ if (empty($pageid)) {
         // in here, user has viewed a branch table
         $lastbranchtable = current($branchtables);
         if (count($allattempts) > 0) {
-            foreach($allattempts as $attempt) {
-                if ($lastbranchtable->timeseen > $attempt->timeseen) {
-                    // branch table was viewed later than the last attempt
-                    $lastpageseen = $lastbranchtable->pageid;
-                }
-                break;
+            if ($lastbranchtable->timeseen > $attempt->timeseen) {
+                // This branch table was viewed more recently than the question page.
+                $lastpageseen = $lastbranchtable->pageid;
             }
         } else {
             // hasnt answered any questions but has viewed a branch table
@@ -287,7 +281,14 @@ if ($pageid != LESSON_EOL) {
         $page = $lesson->load_page($newpageid);
     }
 
-    add_to_log($PAGE->course->id, 'lesson', 'view', 'view.php?id='. $PAGE->cm->id, $page->id, $PAGE->cm->id);
+    // Trigger module viewed event.
+    $event = \mod_lesson\event\course_module_viewed::create(array(
+        'objectid' => $lesson->id,
+        'context' => $context
+    ));
+    $event->add_record_snapshot('course_modules', $cm);
+    $event->add_record_snapshot('course', $course);
+    $event->trigger();
 
     // This is where several messages (usually warnings) are displayed
     // all of this is displayed above the actual page
@@ -349,7 +350,6 @@ if ($pageid != LESSON_EOL) {
         }
     }
 
-    $PAGE->set_url('/mod/lesson/view.php', array('id' => $cm->id, 'pageid' => $page->id));
     $PAGE->set_subpage($page->id);
     $currenttab = 'view';
     $extraeditbuttons = true;
@@ -406,7 +406,6 @@ if ($pageid != LESSON_EOL) {
         echo '<a name="maincontent" id="maincontent" title="' . get_string('anchortitle', 'lesson') . '"></a>';
     }
     echo $lessoncontent;
-    echo $lessonoutput->slideshow_end();
     echo $lessonoutput->progress_bar($lesson);
     echo $lessonoutput->footer();
 
@@ -417,9 +416,6 @@ if ($pageid != LESSON_EOL) {
     // Used to check to see if the student ran out of time
     $outoftime = optional_param('outoftime', '', PARAM_ALPHA);
 
-    // Update the clock / get time information for this user
-    add_to_log($course->id, "lesson", "end", "view.php?id=".$PAGE->cm->id, "$lesson->id", $PAGE->cm->id);
-
     // We are using level 3 header because the page title is a sub-heading of lesson title (MDL-30911).
     $lessoncontent .= $OUTPUT->heading(get_string("congratulations", "lesson"), 3);
     $lessoncontent .= $OUTPUT->box_start('generalbox boxaligncenter');
@@ -428,6 +424,7 @@ if ($pageid != LESSON_EOL) {
         $ntries--;  // need to look at the old attempts :)
     }
     if (!$canmanage) {
+        // Update the clock / get time information for this user.
         $lesson->stop_timer();
         $gradeinfo = lesson_grade($lesson, $ntries);
 
@@ -503,12 +500,6 @@ if ($pageid != LESSON_EOL) {
     }
     $lessoncontent .= $OUTPUT->box_end(); //End of Lesson button to Continue.
 
-    // after all the grade processing, check to see if "Show Grades" is off for the course
-    // if yes, redirect to the course page
-    if (!$course->showgrades) {
-        redirect(new moodle_url('/course/view.php', array('id'=>$course->id)));
-    }
-
     // high scores code
     if ($lesson->highscores && !$canmanage && !$lesson->practice) {
         $lessoncontent .= $OUTPUT->box_start('center');
@@ -574,8 +565,12 @@ if ($pageid != LESSON_EOL) {
     $url = new moodle_url('/course/view.php', array('id'=>$course->id));
     $lessoncontent .= html_writer::link($url, get_string('returnto', 'lesson', format_string($course->fullname, true)), array('class'=>'centerpadded lessonbutton standardbutton'));
 
-    $url = new moodle_url('/grade/index.php', array('id'=>$course->id));
-    $lessoncontent .= html_writer::link($url, get_string('viewgrades', 'lesson'), array('class'=>'centerpadded lessonbutton standardbutton'));
+    if (has_capability('gradereport/user:view', context_course::instance($course->id))
+            && $course->showgrades && $lesson->grade != 0 && !$lesson->practice) {
+        $url = new moodle_url('/grade/index.php', array('id' => $course->id));
+        $lessoncontent .= html_writer::link($url, get_string('viewgrades', 'lesson'),
+            array('class' => 'centerpadded lessonbutton standardbutton'));
+    }
 
     lesson_add_fake_blocks($PAGE, $cm, $lesson, $timer);
     echo $lessonoutput->header($lesson, $cm, $currenttab, $extraeditbuttons, $lessonpageid, get_string("congratulations", "lesson"));

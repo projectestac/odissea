@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package moodlecore
+ * @package mod_lesson
  * @subpackage backup-moodle2
  * @copyright 2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -72,6 +72,12 @@ class restore_lesson_activity_structure_step extends restore_activity_structure_
             unset($data->showhighscores);
         }
 
+        // Supply item that maybe missing from previous versions.
+        if (!isset($data->intro)) {
+            $data->intro = '';
+            $data->introformat = FORMAT_HTML;
+        }
+
         // insert the lesson record
         $newitemid = $DB->insert_record('lesson', $data);
         // immediately after inserting "activity" record, call this
@@ -105,7 +111,7 @@ class restore_lesson_activity_structure_step extends restore_activity_structure_
 
         // Set a dummy mapping to get the old ID so that it can be used by get_old_parentid when
         // processing attempts. It will be corrected in after_execute
-        $this->set_mapping('lesson_answer', $data->id, 0);
+        $this->set_mapping('lesson_answer', $data->id, 0, true); // Has related fileareas.
 
         // Answers need to be processed in order, so we store them in an
         // instance variable and insert them in the after_execute stage
@@ -186,7 +192,7 @@ class restore_lesson_activity_structure_step extends restore_activity_structure_
         ksort($this->answers);
         foreach ($this->answers as $answer) {
             $newitemid = $DB->insert_record('lesson_answers', $answer);
-            $this->set_mapping('lesson_answer', $answer->id, $newitemid);
+            $this->set_mapping('lesson_answer', $answer->id, $newitemid, true);
 
             // Update the lesson attempts to use the newly created answerid
             $DB->set_field('lesson_attempts', 'answerid', $newitemid, array(
@@ -195,10 +201,13 @@ class restore_lesson_activity_structure_step extends restore_activity_structure_
                     'answerid' => $answer->id));
         }
 
-        // Add lesson mediafile, no need to match by itemname (just internally handled context)
+        // Add lesson files, no need to match by itemname (just internally handled context).
+        $this->add_related_files('mod_lesson', 'intro', null);
         $this->add_related_files('mod_lesson', 'mediafile', null);
         // Add lesson page files, by lesson_page itemname
         $this->add_related_files('mod_lesson', 'page_contents', 'lesson_page');
+        $this->add_related_files('mod_lesson', 'page_answers', 'lesson_answer');
+        $this->add_related_files('mod_lesson', 'page_responses', 'lesson_answer');
 
         // Remap all the restored prevpageid and nextpageid now that we have all the pages and their mappings
         $rs = $DB->get_recordset('lesson_pages', array('lessonid' => $this->task->get_activityid()),
@@ -220,6 +229,23 @@ class restore_lesson_activity_structure_step extends restore_activity_structure_
             }
         }
         $rs->close();
+
+        // Replay the upgrade step 2014111003.
+        // Delete any orphaned lesson_branch record.
+        if ($DB->get_dbfamily() === 'mysql') {
+            $sql = "DELETE {lesson_branch}
+                      FROM {lesson_branch}
+                 LEFT JOIN {lesson_pages}
+                        ON {lesson_branch}.pageid = {lesson_pages}.id
+                     WHERE {lesson_pages}.id IS NULL";
+        } else {
+            $sql = "DELETE FROM {lesson_branch}
+               WHERE NOT EXISTS (
+                         SELECT 'x' FROM {lesson_pages}
+                          WHERE {lesson_branch}.pageid = {lesson_pages}.id)";
+        }
+
+        $DB->execute($sql);
 
         // Re-map the dependency and activitylink information
         // If a depency or activitylink has no mapping in the backup data then it could either be a duplication of a

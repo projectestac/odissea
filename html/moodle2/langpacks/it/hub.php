@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'hub', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -159,13 +159,13 @@ $string['questionsnumber'] = 'Numero di domande ({$a})';
 $string['readvertiseon'] = 'Aggiorna reclamizzazione su {$a}';
 $string['registeredcourses'] = 'Corsi registrati';
 $string['registeredmoodleorg'] = 'Moodle.org ({$a})';
-$string['registeredon'] = 'Hub nei quali sei registrato';
+$string['registeredon'] = 'Sito registrato su';
 $string['registeredsites'] = 'Siti registrati';
 $string['registermoochtips'] = 'Per registrarti su Moodle.met  il tuo sito deve essere registrato su Moodle.org';
 $string['registersite'] = 'Registrati su {$a}';
 $string['registerwith'] = 'Registrati su un hub';
 $string['registrationconfirmed'] = 'Conferma della registrazione del sito';
-$string['registrationconfirmedon'] = 'Sei registrato sull\'hub {$a}. E\' ora possibile pubblicare corsi usando il link "Pubblica" presente nel blocco Amministrazione del corso';
+$string['registrationconfirmedon'] = 'Grazie per avere registrato il sito. L\'elaborazione pianificata \'Registrazione del sito\' aggiornerà periodicamente la registrazione in modo automatico.';
 $string['registrationinfo'] = 'Informazioni di registrazione';
 $string['registrationupdated'] = 'La registrazione è stata aggiornata';
 $string['registrationupdatedfailed'] = 'Si è verificato un errore durante l\'aggiornamento della registrazione';

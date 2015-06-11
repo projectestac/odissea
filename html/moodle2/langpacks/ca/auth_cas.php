@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_cas', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,5 +65,5 @@ $string['auth_cas_text'] = 'Connexió segura';
 $string['auth_cas_use_cas'] = 'Utilitza CAS';
 $string['auth_cas_version'] = 'Versió de CAS';
 $string['CASform'] = 'Opció d\'autenticació';
-$string['noldapserver'] = 'No hi ha cap servidor LDAP configurat per CAS! Sincronització inhabilitada.';
+$string['noldapserver'] = 'No hi ha cap servidor LDAP configurat per CAS! Sincronització deshabilitada.';
 $string['pluginname'] = 'Servidor CAS (SSO)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'Marker description can not be empty';
 $string['err_nomaxscore'] = 'Criterion max score can not be empty';
 $string['err_noshortname'] = 'Criterion name can not be empty';
 $string['err_scoreinvalid'] = 'The score given to {$a->criterianame} is not valid, the max score is: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'Criterion name must be less than 256 characters';
 $string['gradingof'] = '{$a} grading';
 $string['guidemappingexplained'] = 'WARNING: Your marking guide has a maximum grade of <b>{$a->maxscore} points</b> but the maximum grade set in your activity is {$a->modulegrade}  The maximum score set in your marking guide will be scaled to the maximum grade in the module.<br />
     Intermediate scores will be converted respectively and rounded to the nearest available grade.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Bloquear campos de usuario';
 $string['auth_fieldlocks_help'] = '<p>Usted puede bloquear los campos de datos de los usuarios, lo que resulta útil en sitios donde esos datos están mantenidos por administradores de forma manual, editando los registros de los usuarios o subiéndolos mediante la utilidad \'Subir usuarios\'. Si usted bloquea campos requeridos por Moodle, asegúrese de que proporciona esos datos al crear las cuentas de los usuarios; de otro modo las cuentas no serán utilizables.</p><p>Considere fijar esta opción de bloqueo en \'Desbloqueado si está vacío\', para evitar este problema.</p>';
 $string['authinstructions'] = 'Aquí puede proporcionar instrucciones a sus usuarios, de forma que sepan qué usuario y contraseña deben usar. El texto que incluya aquí aparecerá en la página de acceso. Si deja esto en blanco no aparecerá ninguna instrucción.';
 $string['auth_invalidnewemailkey'] = 'Error: Si está intentando confirmar un cambio de dirección email. debe haber cometido un error al copiar la URL que le enviamos por email. Por favor, copie la dirección y pruebe de nuevo.';
+$string['authloginviaemail'] = 'Permitir acceso por email';
+$string['authloginviaemail_desc'] = 'Permitir a los usuarios acceder al sitio indistintamente con su nombre de usuario o con su  dirección de correo (siempre que sea única).';
 $string['auth_multiplehosts'] = 'Es posible especificar múltiples servidores (por ej. servidor1.com;servidor2.com;servidor3.com';
 $string['auth_outofnewemailupdateattempts'] = 'Ha hecho más intentos de los permitidos para actualizar su dirección email. Su solicitud de actualización ha sido cancelada.';
 $string['auth_passwordisexpired'] = 'Su contraseña ha caducado ¿Desea cambiar su contraseña ahora?';
@@ -97,8 +99,9 @@ $string['errorminpasswordlower'] = 'Las contraseñas deben tener al menos {$a} m
 $string['errorminpasswordnonalphanum'] = 'Las contraseñas deben tener al menos {$a} caracter(es) no alfanumérico(s).';
 $string['errorminpasswordupper'] = 'Las contraseñas deben tener al menos {$a} mayúscula(s).';
 $string['errorpasswordupdate'] = 'Error actualizando contraseña, la contraseña no ha cambiado';
-$string['event_user_loggedin'] = 'El usuario ha iniciado sesión';
+$string['eventuserloggedin'] = 'El usuario ha iniciado sesión';
 $string['eventuserloggedinas'] = 'El usuario inicia sesión como otro usuario';
+$string['eventuserloginfailed'] = 'Inicio de sesión fallido';
 $string['forcechangepassword'] = 'Forzar cambio de contraseña';
 $string['forcechangepasswordfirst_help'] = 'Forzar a los usuarios a cambiar la contraseña la primera vez que accedan a Moodle.';
 $string['forcechangepassword_help'] = 'Forzar a los usuarios a cambiar la contraseña la próxima vez que accedan a Moodle.';

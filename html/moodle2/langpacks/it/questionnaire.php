@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Azione';
+$string['activityoverview'] = 'Ci sono questionari che richiedono la tua attenzione';
 $string['additionalinfo'] = 'Informazioni aggiuntive';
 $string['additionalinfo_help'] = 'Le informazioni aggiuntive vengono visualizzate nella intestazione della prima pagina del questionario. Sono state pensate per fornire all\'utente al quale il questionario è sottoposto, informazioni di carattere generale quali: istruzioni, informazioni di contesto, dettagli tecnici e/o organizzativi o quant\'altro possa apparire necessario.';
 $string['addnewquestion'] = 'Nuova domanda di tipo: {$a}.';
@@ -55,6 +56,14 @@ $string['boxesnbmax'] = 'un minimo di {$a} casella(e).';
 $string['boxesnbmin'] = 'un massimo di {$a} casella(e).';
 $string['boxesnbreq'] = 'Per questa domanda è necessario spuntare';
 $string['by'] = 'di';
+$string['cannotviewpublicresponses'] = 'Non puoi visualizzare le risposte di questo questionario pubblico';
+$string['chart:bipolar'] = 'Barre bipolari';
+$string['chart:hbar'] = 'Barre orizzontali';
+$string['chart:radar'] = 'Radar';
+$string['chart:rose'] = 'Rosa';
+$string['chart:type'] = 'Tipo di grafico';
+$string['chart:type_help'] = 'Seleziona il tipo di grafico da utilizzare per il feedback';
+$string['chart:vprogress'] = 'Barra verticale';
 $string['checkallradiobuttons'] = 'Selezionare tutti i <strong>{$a}</strong> pulsanti radio!';
 $string['checkboxes'] = 'Caselle di spunta';
 $string['checkboxes_help'] = 'Inserisci una opzione per ogni linea.';
@@ -67,8 +76,11 @@ $string['clicktoswitch'] = '(clicca per cambiare)';
 $string['closed'] = 'Il questionario si è chiuso il  {$a}. Grazie';
 $string['closedate'] = 'Usa data di chiusura';
 $string['closedate_help'] = 'Qui è possibile specificare una data di chiusura del questionario. Selezionare la Casella di spunta e indicare la data e l\'ora che si desiderano. Trascorsa la data indicata, gli utenti non potranno più compilare il questionario. Se la casella di spunta non è selezionata, il questionario non verrà mai chiuso.';
+$string['closeson'] = 'Il questionario chiude il {$a}';
 $string['completionsubmit'] = 'Gli studenti devono inviare il questionario per completarlo';
 $string['confalts'] = 'oppure<br />Pagina di conferma';
+$string['configusergraph'] = 'Visualizza i grafici per il feedback del "Test della personalità"';
+$string['configusergraphlong'] = 'Usa <a href="http://www.rgraph.net/">Rgraph</a>  per visualizzare i grafici del feedback del "Test della personalità".';
 $string['confirmdelallresp'] = 'Sei sicuro di eliminare TUTTE le risposte del questionario?';
 $string['confirmdelchildren'] = 'Eliminando questa domanda, verranno eliminate anche le domande "figlie":';
 $string['confirmdelgroupresp'] = 'Sei sicuro di eliminare TUTTE le risposte del gruppo {$a}?';
@@ -122,14 +134,68 @@ $string['errortable'] = 'Errore!! Tabelle di sistema danneggiate.';
 $string['essaybox'] = 'Testo lungo';
 $string['essaybox_help'] = 'E\' possibile definire l\'ampiezza (numero di colonne) e l\'altezza (numero di righe) dell\'area di testo (la textarea).
                       Se si lasciano entrambi i valori vuoti (o se si inserisce "0"), l\'editor HTML di Moodle (se disponibile) verrà visualizzato con altezza e ampiezza standard.';
+$string['event_all_responses_deleted'] = 'Eliminate tutte le risposte';
+$string['event_all_responses_saved_as_text'] = 'Salvate tutte le risposte in formato testo';
+$string['event_all_responses_viewed'] = 'Visualizzato il report di tutte le risposte';
+$string['event_individual_responses_viewed'] = 'Visualizzato il report delle risposte individuali';
+$string['event_non_respondents_viewed'] = 'Visualizzati gli utenti che non hanno risposto';
+$string['event_previewed'] = 'Visualizzata anteprima del questionario';
+$string['event_question_created'] = 'Creato questionario';
+$string['event_question_deleted'] = 'Eliminato questionario';
+$string['event_response_deleted'] = 'Eliminata risposta individuale';
+$string['event_saved'] = 'Salvate risposte';
+$string['event_submitted'] = 'Inviate risposte';
+$string['feedback'] = 'Feedback';
+$string['feedbackaddmorefeedbacks'] = 'Aggiungi {no} campi feedback';
+$string['feedbackbysection'] = 'Sezioni di feedback';
+$string['feedbackeditmessages'] = 'Salva le impostazioni della sezione e modifica i messaggi di feedback';
+$string['feedbackeditsections'] = 'Salva le impostazioni e modifica le sezioni di feedback';
+$string['feedbackerrorboundaryformat'] = 'I limiti delle valutazioni del feedback devono essere espresse in percentuale o in numero. Il valore immesso nella posizione {$a} non è valido.';
+$string['feedbackerrorboundaryoutofrange'] = 'I limiti delle valutazioni del feedback devono essere comprese tra 0% e 100%. Il valore immesso nella posizione {$a} non è valido.';
+$string['feedbackerrorjunkinboundary'] = 'Devi compilare i limiti delle valutazioni del feedback senza lasciare intervalli vuoti.';
+$string['feedbackerrorjunkinfeedback'] = 'Devi compilare i campi del feedback senza lasciare intervalli intervalli vuoti.';
+$string['feedbackerrororder'] = 'Ii limiti delle valutazioni del feedback devono essere in ordine decrescente. Il valore immesso nella posizione  {$a} è fuori sequenza.';
+$string['feedbackglobal'] = 'Feedback complessivo';
+$string['feedbackglobalheading'] = 'Intestazione del feedback complessivo';
+$string['feedbackglobalmessages'] = 'Messaggi del feedback compessivo';
+$string['feedbackhdr'] = 'Feedback';
+$string['feedbackheading'] = 'Intestazione del feedback';
+$string['feedbackheading_help'] = 'Nel campo dell\'intestazione del feedback è possibile utilizzare 2 variabili:  $scorepercent e $oppositescorepercent.';
+$string['feedback_help'] = 'Aiuto sul feedback';
+$string['feedbackmessages'] = 'Messaggi di feedback per la sezione  {$a}';
+$string['feedbacknextsection'] = 'Sezione successiva  {$a}';
+$string['feedbacknone'] = 'Nessun messaggio di feedback';
+$string['feedbacknotes'] = 'Note sul feedback';
+$string['feedbacknotes_help'] = 'Il testo inserito verrà visualizzato dall\'utente al termine del Report del Feedback';
+$string['feedbackoptions'] = 'Opzioni di feedback';
+$string['feedbackoptions_help'] = 'Le opzioni del feedback saranno disponibili se il questionario contiene i seguenti tipi di domande e impostazioni:
+Pulsanti radio; Menu a tendina; Scala. Queste domande devono essere impostate con risposta obbligatoria, deve essere inserito un nome e le possibili risposte devono contenere un valore.';
+$string['feedbackremovequestionfromsection'] = 'Questa domanda fa parte della sezione del feedback [{$a}]';
+$string['feedbackremovesection'] = 'Eliminando questa domanda si eliminerà la sezione del feedback [{$a}]';
+$string['feedbackreport'] = 'Report del feedback';
+$string['feedbackscore'] = 'Punteggio del feedback';
+$string['feedbackscoreboundary'] = 'Valutazioni di riferimento del feedback';
+$string['feedbackscores'] = 'Visualizza punteggi';
+$string['feedbackscores_help'] = 'Visualizza la tabella dei punteggi del feedback';
 $string['feedbacksection'] = 'Sezione';
+$string['feedbacksectionheading'] = 'Intestazione del feedback per la sezione  {$a}';
+$string['feedbacksectionheadingmissing'] = 'Inserire un\'intestazione per la sezione del Feedback!';
+$string['feedbacksectionheadingtext'] = 'Intestazione';
 $string['feedbacksectionlabel'] = 'Etichetta';
+$string['feedbacksectionlabel_help'] = 'Questa etichetta verrà utilizzata in grafici/diagrammi. Deve essere il più breve possibile!';
+$string['feedbacksections'] = '{$a} sezioni per il feedback';
 $string['feedbacksectionsselect'] = 'Sezioni';
+$string['feedbacksectionsselect_help'] = 'Posiziona le tue domande in queste sezioni';
+$string['feedbacksettingssaved'] = 'Impostazioni del feedback salvate';
+$string['feedbacktype'] = 'Tipo di feedback';
 $string['field'] = 'La domanda numero {$a}';
 $string['fieldlength'] = 'Lunghezza del campo';
 $string['fieldlength_help'] = 'Per il tipo di domanda **Campo di testo**, si può definire l\'ampiezza in caratteri del "Campo" visualizzato nel questionario e la massima lunghezza del testo da immettere.
 I valori di default sono di 20 caratteri per l\'ampiezza del campo di testo e 25 caratteri per la massima lunghezza del testo da immettere.';
 $string['finished'] = 'Hai risposto a tutte le domande di questo questionario!';
+$string['firstrespondent'] = 'Primo utente che ha risposto';
+$string['formateditor'] = 'Editor HTML';
+$string['formatplain'] = 'Testo';
 $string['grade'] = 'Valutazione ottenuta';
 $string['gradesdeleted'] = 'Le valutazioni del questionario sono state eliminate';
 $string['headingtext'] = 'Testo dell\'Intestazione';
@@ -145,6 +211,7 @@ $string['invalidresponserecord'] = 'Il record specificato per la risposta non è
 $string['invalidsurveyid'] = 'ID del questionario non corretto';
 $string['kindofratescale'] = 'Tipo di scala';
 $string['kindofratescale_help'] = 'Click con il pulsante destro del mouse sul link "Aiuto ulteriore"';
+$string['lastrespondent'] = 'Ultimo utente che ha risposto';
 $string['length'] = 'Lunghezza';
 $string['managequestions'] = 'Gestisci domande';
 $string['managequestions_help'] = 'Nella sezione Gestisci domande della pagina Modifica domande, puoi effettuare varie operazioni sulle domande del Questionario';
@@ -156,8 +223,11 @@ $string['messageprovider:message'] = 'Promemoria per il questionario';
 $string['minforcedresponses'] = 'Numero minimo di scelte';
 $string['minforcedresponses_help'] = 'Usa questi parametri per obbligare l\'utente a spuntare un **numero minimo di scelte** o un **numero massimo di scelte** fra le caselle di spunta disponibili. Per forzare un numero preciso di caselle di spunta da selezionare, assegnare a **numero minimo di scelte** e **numero massimo di scelte** il medesimo valore. Se si desidera soltanto un minimo o un massimo valore, lasciare l\'altro al suo valore di default **0**. Se si imposta il numero minimo di scelte o il numero massimo di scelte su valori diversi dallo 0 di default, sarà mostrato un messaggio di errore se chi risponde non si adeguerà ai vincoli imposti per la risposta. Ovviamente, è consigliabile fornire tutti i chiarimenti del caso nelle istruzioni generali del questionario o nel testo della specifica domanda o attraverso una etichetta.';
 $string['misconfigured'] = 'Corso danneggiato';
+$string['missingname'] = 'La domanda {$a} non può essere utilizzata nella sezione del feedback perché non ha un nome.';
+$string['missingnameandrequired'] = 'La domanda {$a} non può essere utilizzata nella sezione del feedback perché non ha un nome e perché non è obbigatoria.';
 $string['missingquestion'] = 'Per favore rispondi alla domanda obbligatoria';
 $string['missingquestions'] = 'Per favore rispondi alle seguenti  domande obbligatorie:';
+$string['missingrequired'] = 'La domanda {$a} non può essere utilizzata nella sezione del feedback perché non è obbligatoria.';
 $string['modulename'] = 'Questionario';
 $string['modulename_help'] = 'Il modulo Questionario consente di costruire questionari (indagini) usando diversi tipi di domande, allo scopo di raccogliere dati dagli utenti.';
 $string['modulenameplural'] = 'Questionari';
@@ -233,6 +303,7 @@ $string['owner'] = 'Proprietario';
 $string['page'] = 'Pagina';
 $string['pageof'] = 'Pagina {$a->page} di {$a->totpages}';
 $string['participant'] = 'Partecipanti';
+$string['pleasecomplete'] = 'Per favore completa questa scelta.';
 $string['pluginadministration'] = 'Amministrazione del Questionario';
 $string['pluginname'] = 'Questionario';
 $string['position'] = 'posizione';
@@ -335,6 +406,8 @@ E\' possibile nascondere l\'identità degli stessi selezionando la voce "anonimo
 **Nota:**<br />
 Se il corso Moodle consente l\'accesso agli ospiti, questi ultimi saranno autorizzati a rispondere soltanto ai questionari per i quali l\'identità del compilatore è stato impostata ad "anonima".';
 $string['response'] = 'Risposta';
+$string['responsefieldlines'] = 'Dimensione della casella di testo';
+$string['responseformat'] = 'Formato delle risposte';
 $string['responseoptions'] = 'Opzioni delle risposte';
 $string['responses'] = 'Risposte';
 $string['responseview'] = 'Visibilità dei questionari inviati';
@@ -373,6 +446,7 @@ $string['savesettings'] = 'Salva le modifiche';
 $string['section'] = 'Descrizione';
 $string['sectionbreak'] = '---Interruzione di pagina---';
 $string['sectionbreak_help'] = '---Interruzione di pagina---';
+$string['sectionsnotset'] = 'Selezionare almeno UNA domanda per sezione! <br /> Sezione/i non selezionata/e: {$a}';
 $string['sectiontext'] = 'Etichetta';
 $string['sectiontext_help'] = 'Questa non è una domanda bensì un testo (breve) che sarà mostrato all\'interno del questionario.';
 $string['selecttheme'] = 'Seleziona un tema (css) da usare per il questionario.';
@@ -425,6 +499,7 @@ $string['unknown'] = 'Sconosciuto';
 $string['unknownaction'] = 'E\' stata inoltrata una richiesta incomprensibile...';
 $string['url'] = 'URL';
 $string['url_help'] = 'E\' l\'indirizzo internet al quale l\'utente verrà re-indirizzato successivamente all\'invio del questionario.';
+$string['useprivate'] = 'Copia esistente';
 $string['usepublic'] = 'Usa pubblico';
 $string['usetemplate'] = 'Copia esistente';
 $string['vertical'] = 'Verticale';

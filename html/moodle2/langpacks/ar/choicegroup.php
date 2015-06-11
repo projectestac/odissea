@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choicegroup', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,6 @@ $string['noresultsviewable'] = 'حالياً لا يمكن معاينة النت
 $string['notanswered'] = 'لم تتم الأجابة بعد';
 $string['notenrolledchoose'] = 'عذراً، فقط المستخدمون المسجلون بإمكانهم الاختيار.';
 $string['notopenyet'] = 'عذرا، هذا النشاط سيكون متوفر في {$a}';
-$string['numberofuser'] = 'عدد المستخدمين';
 $string['option'] = 'خيار';
 $string['pluginadministration'] = 'إدارة الخيارات';
 $string['pluginname'] = 'اختيار مجموعة';

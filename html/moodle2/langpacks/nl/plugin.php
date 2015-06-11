@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['plugindisable'] = 'Uitschakelen';
 $string['plugindisabled'] = 'Uitgeschakeld';
 $string['pluginenable'] = 'Inschakelen';
 $string['pluginenabled'] = 'Ingeschakeld';
+$string['release'] = 'Release';
 $string['requiredby'] = 'Vereist door: {$a}';
 $string['requires'] = 'Vereist';
 $string['rootdir'] = 'Map';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'Geïnstalleerd';
 $string['systemname'] = 'Identificatie';
 $string['type_auth'] = 'Authenticatiemethode';
 $string['type_auth_plural'] = 'Authenticatie-plugins';
+$string['type_availability'] = 'Beschikbaarheidsrestrictie';
+$string['type_availability_plural'] = 'Beschikbaarheidsrestricties';
 $string['type_block'] = 'Blok';
 $string['type_block_plural'] = 'Blokken';
 $string['type_cachelock'] = 'Cache blokker handler';
@@ -107,8 +110,8 @@ $string['type_gradeexport'] = 'Cijfer exportmethode';
 $string['type_gradeexport_plural'] = 'Cijfer exportmethodes';
 $string['type_gradeimport'] = 'Cijfer importmethode';
 $string['type_gradeimport_plural'] = 'Cijfer importmethodes';
-$string['type_gradereport'] = 'Puntenboekrapport';
-$string['type_gradereport_plural'] = 'Puntenboekrapporten';
+$string['type_gradereport'] = 'Cijferlijstrapport';
+$string['type_gradereport_plural'] = 'Cijferlijstrapporten';
 $string['type_gradingform'] = 'Geavanceerde beoordelingsmethode';
 $string['type_gradingform_plural'] = 'Geavanceerde beoordelingsmethodes';
 $string['type_local'] = 'Lokale plugin';

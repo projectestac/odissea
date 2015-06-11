@@ -127,6 +127,18 @@ if ($delq) {
             $DB->delete_records('questionnaire_attempts', array('qid' => $questionnaireid));
         }
     }
+
+    // Log question deleted event.
+    $context = context_module::instance($questionnaire->cm->id);
+    $questiontype = $qtypenames[$qtype];
+    $params = array(
+                    'context' => $context,
+                    'courseid' => $questionnaire->course->id,
+                    'other' => array('questiontype' => $questiontype)
+    );
+    $event = \mod_questionnaire\event\question_deleted::create($params);
+    $event->trigger();
+
     if ($questionnairehasdependencies) {
         $SESSION->questionnaire->validateresults = questionnaire_check_page_breaks($questionnaire);
     }
@@ -496,6 +508,19 @@ if ($action == 'main') {
         // Switch to main screen.
         $action = 'main';
         $reload = true;
+    }
+
+    // Log question created event.
+    if (isset($qformdata)) {
+        $context = context_module::instance($questionnaire->cm->id);
+        $questiontype = $qtypenames[$qformdata->type_id];
+        $params = array(
+                        'context' => $context,
+                        'courseid' => $questionnaire->course->id,
+                        'other' => array('questiontype' => $questiontype)
+        );
+        $event = \mod_questionnaire\event\question_created::create($params);
+        $event->trigger();
     }
 
     $questionsform->set_data($question);

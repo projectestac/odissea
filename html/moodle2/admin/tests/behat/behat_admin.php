@@ -115,6 +115,30 @@ class behat_admin extends behat_base {
     }
 
     /**
+     * Sets the specified site settings. A table with | config | value | (optional)plugin | is expected.
+     *
+     * @Given /^the following config values are set as admin:$/
+     * @param TableNode $table
+     */
+    public function the_following_config_values_are_set_as_admin(TableNode $table) {
+
+        if (!$data = $table->getRowsHash()) {
+            return;
+        }
+
+        foreach ($data as $config => $value) {
+            // Default plugin value is null.
+            $plugin = null;
+
+            if (is_array($value)) {
+                $plugin = $value[1];
+                $value = $value[0];
+            }
+            set_config($config, $value, $plugin);
+        }
+    }
+
+    /**
      * Waits with the provided params if we are running a JS session.
      *
      * @param int $timeout
@@ -125,18 +149,5 @@ class behat_admin extends behat_base {
         if ($this->running_javascript()) {
             $this->getSession()->wait($timeout, $javascript);
         }
-    }
-
-    /**
-     * Will be deprecated in 2.7. Goes to notification page.
-     *
-     * @Given /^I go to notifications page$/
-     * @return Given[]
-     */
-    public function i_go_to_notifications_page() {
-        return array(
-            new Given('I expand "' . get_string('administrationsite') . '" node'),
-            new Given('I follow "' . get_string('notifications') . '"')
-        );
     }
 }

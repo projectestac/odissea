@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.gencat.cat/educacio/sscc/correu" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.gencat.cat/educacio/sscc/correu" xmlns:WL5G3N2="http://www.gencat.cat/educacio/esquema/Fault/v01" xmlns:WL5G3N3="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:eml="http://www.gencat.cat/educacio/sscc/correu/types" xmlns:fault="http://www.gencat.cat/educacio/esquema/Fault/v01" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.gencat.cat/educacio/sscc/correu" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.gencat.cat/educacio/sscc/correu" schemaLocation="http://preproduccio.bus.ensenyament.intranet.gencat.cat:80/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu?SCHEMA%2FServeisComuns%2FEnviaCorreu%2FXSD%2Fv01_00%2FEnviaCorreu"/>
+      <xsd:import namespace="http://www.gencat.cat/educacio/esquema/Fault/v01" schemaLocation="http://preproduccio.bus.ensenyament.intranet.gencat.cat:80/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu?SCHEMA%2FElementsComuns%2FXSD%2Fv01_00%2FFaultServeis"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="EnviamentPeticio">
+    <WL5G3N0:part element="WL5G3N1:PeticioEnviament" name="PeticioEnviament"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EnviamentResposta">
+    <WL5G3N0:part element="WL5G3N1:RespostaEnviament" name="RespostaEnviament"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="DisponibilitatPeticio">
+    <WL5G3N0:part element="WL5G3N1:PeticioDisponibilitat" name="PeticioDisponibilitat"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="DisponibilitatResposta">
+    <WL5G3N0:part element="WL5G3N1:RespostaDisponibilitat" name="RespostaDisponibilitat"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="enviamentCorreuFault">
+    <WL5G3N0:part element="WL5G3N2:faultServeisGencat" name="error"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Correu">
+    <WL5G3N0:operation name="enviament">
+      <WL5G3N0:input message="WL5G3N1:EnviamentPeticio"/>
+      <WL5G3N0:output message="WL5G3N1:EnviamentResposta"/>
+      <WL5G3N0:fault message="WL5G3N1:enviamentCorreuFault" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="disponibilitat">
+      <WL5G3N0:input message="WL5G3N1:DisponibilitatPeticio"/>
+      <WL5G3N0:output message="WL5G3N1:DisponibilitatResposta"/>
+      <WL5G3N0:fault message="WL5G3N1:enviamentCorreuFault" name="fault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="CorreuSoapHttp" type="WL5G3N1:Correu">
+    <WL5G3N3:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="enviament">
+      <WL5G3N3:operation style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="disponibilitat">
+      <WL5G3N3:operation style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="Correu">
+    <WL5G3N0:port binding="WL5G3N1:CorreuSoapHttp" name="CorreuHttpPort">
+      <WL5G3N3:address location="http://preproduccio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

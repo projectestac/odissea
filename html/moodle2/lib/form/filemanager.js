@@ -111,7 +111,7 @@ M.form_filemanager.init = function(Y, options) {
             var labelid = 'fm-dialog-label_'+ this.selectnode.get('id');
             this.selectui = new M.core.dialogue({
                 draggable    : true,
-                headerContent: '<span id="' + labelid +'">' + M.str.moodle.edit + '</span>',
+                headerContent: '<h3 id="' + labelid +'">' + M.str.moodle.edit + '</h3>',
                 bodyContent  : this.selectnode,
                 centered     : true,
                 width        : '480px',
@@ -366,11 +366,21 @@ M.form_filemanager.init = function(Y, options) {
                     return;
                 }
                 var scope = this;
+
+                var image_downloading = this.filemanager.one('.fp-img-downloading');
+                if (image_downloading.getStyle('display') == 'inline') {
+                    return;
+                }
+                image_downloading.setStyle('display', 'inline');
+
                 // perform downloaddir ajax request
                 this.request({
                     action: 'downloaddir',
                     scope: scope,
                     callback: function(id, obj, args) {
+                        var image_downloading = scope.filemanager.one('.fp-img-downloading');
+                        image_downloading.setStyle('display', 'none');
+
                         if (obj) {
                             scope.refresh(obj.filepath);
                             node = Y.Node.create('<iframe></iframe>').setStyles({

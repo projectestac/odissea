@@ -6,7 +6,8 @@
 			<FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT=""/>
 			<FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
 			<FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT=""/>
-			<FIELD NAME="summary" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" COMMENT=""/>
+			<FIELD NAME="intro" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        	<FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="text format of intro field"/>
 			<FIELD NAME="levelid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
 			<FIELD NAME="bookid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
 			<FIELD NAME="unitid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>

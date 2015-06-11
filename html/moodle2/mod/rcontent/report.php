@@ -80,7 +80,7 @@ if (empty($user)) {
     $optionsparam = !empty($filterby) ? $filterby : "";
 
     $menu = array();
-    $menu['']  = get_string('all', 'rcontent');
+    $menu['']  = get_string('all');
     $menu['NO_INICIADO']  = get_string('NO_INICIADO', 'rcontent');
     $menu['INCOMPLETO']   = get_string('INCOMPLETO', 'rcontent');
     $menu['FINALIZADO']   = get_string('FINALIZADO', 'rcontent');
@@ -711,7 +711,9 @@ $params = array(
         'rcontentid' => $rcontent->id
     )
 );
-
-add_to_log($course->id, 'rcontent', 'report', 'report.php?id='.$cm->id, $rcontent->id, $cm->id);;
+$event = \mod_rcontent\event\report_viewed::create($params);
+$event->add_record_snapshot('course', $course);
+$event->add_record_snapshot('rcontent', $rcontent);
+$event->trigger();
 
 echo $OUTPUT->footer();

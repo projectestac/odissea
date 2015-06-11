@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,11 +60,6 @@ $string['check_frontpagerole_error'] = '检测到未正确定义的首页角色�
 $string['check_frontpagerole_name'] = '首页角色';
 $string['check_frontpagerole_notset'] = '未设置首页角色。';
 $string['check_frontpagerole_ok'] = '首页角色定义正确。';
-$string['check_globals_details'] = '<p>注册全局变量是一个高度不安全的PHP设置。</p>
-必须在PHP配置中写上<p><code>register_globals=off</code>。可以通过编辑<code>php.ini</code>、Apache/IIS配置或<code>.htaccess</code>文件来控制它。</p>';
-$string['check_globals_error'] = '一定要禁止注册全局变量。请立刻修改服务器的PHP设置！';
-$string['check_globals_name'] = '注册全局变量';
-$string['check_globals_ok'] = '注册全局变量已禁用。';
 $string['check_google_details'] = '<p>向Google开放后，搜索引擎就可以以访客身份进入课程。如果不允许访客访问的话，那么打开这个设置也没有意义。</p>';
 $string['check_google_error'] = '搜索引擎可以访问，但访客不能访问。';
 $string['check_google_info'] = '搜索引擎可以作为访客进入。';

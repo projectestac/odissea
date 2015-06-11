@@ -19,7 +19,7 @@
  *
  * @author Andreas Grabs
  * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @package feedback
+ * @package mod_feedback
  */
 
 require_once("../../config.php");
@@ -43,14 +43,8 @@ $current_tab = 'nonrespondents';
 ////////////////////////////////////////////////////////
 //get the objects
 ////////////////////////////////////////////////////////
-if (! $cm = get_coursemodule_from_id('feedback', $id)) {
-    print_error('invalidcoursemodule');
-}
 
-if (! $course = $DB->get_record("course", array("id"=>$cm->course))) {
-    print_error('coursemisconf');
-}
-
+list ($course, $cm) = get_course_and_cm_from_cmid($id, 'feedback');
 if (! $feedback = $DB->get_record("feedback", array("id"=>$cm->instance))) {
     print_error('invalidcoursemodule');
 }

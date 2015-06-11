@@ -179,9 +179,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         // Setup the assignment.
         $this->create_extra_users();
         $this->setUser($this->editingteachers[0]);
+        $time = time();
         $assign = $this->create_instance(array(
             'assignsubmission_onlinetext_enabled'=>1,
-            'duedate' => time() - 4 * 24 * 60 * 60,
+            'duedate' => $time - 4 * 24 * 60 * 60,
          ));
         $PAGE->set_url(new moodle_url('/mod/assign/view.php', array(
             'id' => $assign->get_course_module()->id,
@@ -192,15 +193,17 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $gradingtable = new assign_grading_table($assign, 1, '', 0, true);
         $output = $assign->get_renderer()->render($gradingtable);
         $this->assertContains(get_string('submissionstatus_', 'assign'), $output);
-        $this->assertContains(get_string('overdue', 'assign', format_time(4*24*60*60)), $output);
+        $difftime = time() - $time;
+        $this->assertContains(get_string('overdue', 'assign', format_time(4*24*60*60 + $difftime)), $output);
 
         // Grant an extension that is in the past.
-        $assign->testable_save_user_extension($this->students[0]->id, time() - 2 * 24 * 60 * 60);
+        $assign->testable_save_user_extension($this->students[0]->id, $time - 2 * 24 * 60 * 60);
         $gradingtable = new assign_grading_table($assign, 1, '', 0, true);
         $output = $assign->get_renderer()->render($gradingtable);
         $this->assertContains(get_string('submissionstatus_', 'assign'), $output);
-        $this->assertContains(get_string('userextensiondate', 'assign', userdate(time() - 2*24*60*60)), $output);
-        $this->assertContains(get_string('overdue', 'assign', format_time(2*24*60*60)), $output);
+        $this->assertContains(get_string('userextensiondate', 'assign', userdate($time - 2*24*60*60)), $output);
+        $difftime = time() - $time;
+        $this->assertContains(get_string('overdue', 'assign', format_time(2*24*60*60 + $difftime)), $output);
 
         // Simulate a submission.
         $this->setUser($this->students[0]);
@@ -213,14 +216,17 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
                                          'format'=>FORMAT_MOODLE);
         $plugin = $assign->get_submission_plugin_by_type('onlinetext');
         $plugin->save($submission, $data);
+        $submittedtime = time();
 
         // Verify output.
         $this->setUser($this->editingteachers[0]);
         $gradingtable = new assign_grading_table($assign, 1, '', 0, true);
         $output = $assign->get_renderer()->render($gradingtable);
         $this->assertContains(get_string('submissionstatus_submitted', 'assign'), $output);
-        $this->assertContains(get_string('userextensiondate', 'assign', userdate(time() - 2*24*60*60)), $output);
-        $this->assertContains(get_string('submittedlateshort', 'assign', format_time(2*24*60*60)), $output);
+        $this->assertContains(get_string('userextensiondate', 'assign', userdate($time - 2*24*60*60)), $output);
+
+        $difftime = $submittedtime - $time;
+        $this->assertContains(get_string('submittedlateshort', 'assign', format_time(2*24*60*60 + $difftime)), $output);
     }
 
     /**
@@ -316,6 +322,13 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         // Simulate a submission.
         $this->setUser($this->students[0]);
         $submission = $assign->get_user_submission($this->students[0]->id, true);
+
+        // The submission is still new.
+        $this->assertEquals(false, $assign->has_submissions_or_grades());
+
+        // Submit the submission.
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $this->students[0]->id, true, false);
         $data = new stdClass();
         $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
                                          'text'=>'Submission text',
@@ -584,6 +597,8 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
     }
 
     public function test_list_participants() {
+        global $CFG, $DB;
+
         $this->create_extra_users();
         $this->setUser($this->editingteachers[0]);
         $assign = $this->create_instance(array('grade'=>100));
@@ -601,29 +616,227 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         set_user_preference('grade_report_showonlyactiveenrol', false);
         $assign = $this->create_instance(array('grade'=>100));
         $this->assertEquals(self::DEFAULT_STUDENT_COUNT + self::EXTRA_STUDENT_COUNT, count($assign->list_participants(null, true)));
+
+        // Turn on availability and a group restriction, and check that it doesn't
+        // show users who aren't in the group.
+        $CFG->enableavailability = true;
+        $specialgroup = $this->getDataGenerator()->create_group(
+                array('courseid' => $this->course->id));
+        $assign = $this->create_instance(array('grade' => 100,
+                'availability' => json_encode(\core_availability\tree::get_root_json(
+                    array(\availability_group\condition::get_json($specialgroup->id))))));
+        groups_add_member($specialgroup, $this->students[0]);
+        groups_add_member($specialgroup, $this->students[1]);
+        $this->assertEquals(2, count($assign->list_participants(null, true)));
     }
 
     public function test_count_teams() {
         $this->create_extra_users();
         $this->setUser($this->editingteachers[0]);
-        $assign = $this->create_instance(array('teamsubmission'=>1));
+        $assign1 = $this->create_instance(array('teamsubmission' => 1));
+        $this->assertEquals(self::GROUP_COUNT + 1, $assign1->count_teams());
 
-        $this->assertEquals(self::GROUP_COUNT + 1, $assign->count_teams());
+        $grouping = $this->getDataGenerator()->create_grouping(array('courseid' => $this->course->id));
+        $this->getDataGenerator()->create_grouping_group(array('groupid' => $this->groups[0]->id, 'groupingid' => $grouping->id));
+        $this->getDataGenerator()->create_grouping_group(array('groupid' => $this->groups[1]->id, 'groupingid' => $grouping->id));
+
+        // No active group => 2 groups + the default one.
+        $assign2 = $this->create_instance(array('teamsubmission' => 1, 'teamsubmissiongroupingid' => $grouping->id));
+        $this->assertEquals(3, $assign2->count_teams());
+
+        // An active group => Just the selected one.
+        $this->assertEquals(1, $assign2->count_teams($this->groups[0]->id));
+    }
+
+    public function test_submit_to_default_group() {
+        global $DB, $SESSION;
+
+        $this->preventResetByRollback();
+        $sink = $this->redirectMessages();
+
+        $this->setUser($this->editingteachers[0]);
+        $params = array('teamsubmission' => 1,
+                        'assignsubmission_onlinetext_enabled' => 1,
+                        'submissiondrafts' => 0,
+                        'groupmode' => VISIBLEGROUPS);
+        $assign = $this->create_instance($params);
+
+        $newstudent = $this->getDataGenerator()->create_user();
+        $studentrole = $DB->get_record('role', array('shortname'=>'student'));
+        $this->getDataGenerator()->enrol_user($newstudent->id,
+                                              $this->course->id,
+                                              $studentrole->id);
+        $this->setUser($newstudent);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Submission text',
+                                         'format'=>FORMAT_MOODLE);
+        $notices = array();
+
+        $group = $assign->get_submission_group($newstudent->id);
+        $this->assertFalse($group, 'New student is in default group');
+        $assign->save_submission($data, $notices);
+        $this->assertEmpty($notices, 'No errors on save submission');
+
+        // Set active groups to all groups.
+        $this->setUser($this->teachers[0]);
+        $SESSION->activegroup[$this->course->id]['aag'][0] = 0;
+        $this->assertEquals(1, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+
+        // Set an active group.
+        $anothergroup = $this->groups[0];
+        $SESSION->activegroup[$this->course->id]['aag'][0] = (int)$anothergroup->id;
+        $this->assertEquals(0, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+
+        $sink->close();
     }
 
     public function test_count_submissions() {
+        global $SESSION;
+
         $this->create_extra_users();
         $this->setUser($this->editingteachers[0]);
-        $assign = $this->create_instance(array('assignsubmission_onlinetext_enabled'=>1));
+        $assign1 = $this->create_instance(array('assignsubmission_onlinetext_enabled' => 1));
 
         // Simulate a submission.
         $this->setUser($this->extrastudents[0]);
-        $submission = $assign->get_user_submission($this->extrastudents[0]->id, true);
+        $submission = $assign1->get_user_submission($this->extrastudents[0]->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_DRAFT;
+        $assign1->testable_update_submission($submission, $this->extrastudents[0]->id, true, false);
         // Leave this one as DRAFT.
         $data = new stdClass();
         $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
                                          'text'=>'Submission text',
                                          'format'=>FORMAT_MOODLE);
+        $plugin = $assign1->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // Simulate adding a grade.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '50.0';
+        $assign1->testable_apply_grade_to_user($data, $this->extrastudents[0]->id, 0);
+
+        // Simulate a submission.
+        $this->setUser($this->extrastudents[1]);
+        $submission = $assign1->get_user_submission($this->extrastudents[1]->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign1->testable_update_submission($submission, $this->extrastudents[1]->id, true, false);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Submission text',
+                                         'format'=>FORMAT_MOODLE);
+        $plugin = $assign1->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // Simulate a submission.
+        $this->setUser($this->extrastudents[2]);
+        $submission = $assign1->get_user_submission($this->extrastudents[2]->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign1->testable_update_submission($submission, $this->extrastudents[2]->id, true, false);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Submission text',
+                                         'format'=>FORMAT_MOODLE);
+        $plugin = $assign1->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // Simulate a submission.
+        $this->setUser($this->extrastudents[3]);
+        $submission = $assign1->get_user_submission($this->extrastudents[3]->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign1->testable_update_submission($submission, $this->extrastudents[3]->id, true, false);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Submission text',
+                                         'format'=>FORMAT_MOODLE);
+        $plugin = $assign1->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // Simulate a submission for suspended user, this will never be counted.
+        $this->setUser($this->extrastudents[3]);
+        $submission = $assign1->get_user_submission($this->extrasuspendedstudents[0]->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign1->testable_update_submission($submission, $this->extrasuspendedstudents[0]->id, true, false);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Submission text',
+                                         'format'=>FORMAT_MOODLE);
+        $plugin = $assign1->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // Simulate adding a grade.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '50.0';
+        $assign1->testable_apply_grade_to_user($data, $this->extrastudents[3]->id, 0);
+        $assign1->testable_apply_grade_to_user($data, $this->extrasuspendedstudents[0]->id, 0);
+
+        // Create a new submission with status NEW.
+        $this->setUser($this->extrastudents[4]);
+        $submission = $assign1->get_user_submission($this->extrastudents[4]->id, true);
+
+        $this->assertEquals(2, $assign1->count_grades());
+        $this->assertEquals(4, $assign1->count_submissions());
+        $this->assertEquals(5, $assign1->count_submissions(true));
+        $this->assertEquals(2, $assign1->count_submissions_need_grading());
+        $this->assertEquals(3, $assign1->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+        $this->assertEquals(1, $assign1->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_DRAFT));
+
+        // Groups.
+        $assign2 = $this->create_instance(array(
+            'assignsubmission_onlinetext_enabled' => 1,
+            'groupmode' => VISIBLEGROUPS
+        ));
+
+        $this->setUser($this->extrastudents[1]);
+        $submission = $assign2->get_user_submission($this->extrastudents[1]->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign2->testable_update_submission($submission, $this->extrastudents[1]->id, true, false);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                                         'text' => 'Submission text',
+                                         'format' => FORMAT_MOODLE);
+        $plugin = $assign2->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        $this->assertEquals(1, $assign2->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+
+        // Set active groups to all groups.
+        $this->setUser($this->teachers[0]);
+        $SESSION->activegroup[$this->course->id]['aag'][0] = 0;
+        $this->assertEquals(1, $assign2->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+
+        // Set the user group.
+        $studentgroups = groups_get_user_groups($this->course->id, $this->extrastudents[1]->id);
+        $this->assertEquals(1, count($studentgroups));
+        $studentgroup = array_pop($studentgroups);
+        $SESSION->activegroup[$this->course->id]['aag'][0] = $studentgroup[0];
+        $this->assertEquals(1, $assign2->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+
+        // Set another group.
+        $anothergroup = $this->groups[0];
+        $this->assertNotEquals($anothergroup->id, $studentgroup[0]);
+        $SESSION->activegroup[$this->course->id]['aag'][0] = (int)$anothergroup->id;
+        $this->assertEquals(0, $assign2->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
+    }
+
+    public function test_count_submissions_for_groups() {
+        $this->create_extra_users();
+        $groupid = null;
+        $this->setUser($this->editingteachers[0]);
+        $assign = $this->create_instance(array('assignsubmission_onlinetext_enabled' => 1, 'teamsubmission' => 1));
+
+        // Simulate a submission.
+        $this->setUser($this->extrastudents[0]);
+        $submission = $assign->get_group_submission($this->extrastudents[0]->id, $groupid, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_DRAFT;
+        $assign->testable_update_submission($submission, $this->extrastudents[0]->id, true, false);
+        // Leave this one as DRAFT.
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                                         'text' => 'Submission text',
+                                         'format' => FORMAT_MOODLE);
         $plugin = $assign->get_submission_plugin_by_type('onlinetext');
         $plugin->save($submission, $data);
 
@@ -635,49 +848,37 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
 
         // Simulate a submission.
         $this->setUser($this->extrastudents[1]);
-        $submission = $assign->get_user_submission($this->extrastudents[1]->id, true);
+        $submission = $assign->get_group_submission($this->extrastudents[1]->id, $groupid, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
         $assign->testable_update_submission($submission, $this->extrastudents[1]->id, true, false);
         $data = new stdClass();
-        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
-                                         'text'=>'Submission text',
-                                         'format'=>FORMAT_MOODLE);
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                                         'text' => 'Submission text',
+                                         'format' => FORMAT_MOODLE);
         $plugin = $assign->get_submission_plugin_by_type('onlinetext');
         $plugin->save($submission, $data);
 
         // Simulate a submission.
         $this->setUser($this->extrastudents[2]);
-        $submission = $assign->get_user_submission($this->extrastudents[2]->id, true);
+        $submission = $assign->get_group_submission($this->extrastudents[2]->id, $groupid, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
         $assign->testable_update_submission($submission, $this->extrastudents[2]->id, true, false);
         $data = new stdClass();
-        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
-                                         'text'=>'Submission text',
-                                         'format'=>FORMAT_MOODLE);
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                                         'text' => 'Submission text',
+                                         'format' => FORMAT_MOODLE);
         $plugin = $assign->get_submission_plugin_by_type('onlinetext');
         $plugin->save($submission, $data);
 
         // Simulate a submission.
         $this->setUser($this->extrastudents[3]);
-        $submission = $assign->get_user_submission($this->extrastudents[3]->id, true);
+        $submission = $assign->get_group_submission($this->extrastudents[3]->id, $groupid, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
         $assign->testable_update_submission($submission, $this->extrastudents[3]->id, true, false);
         $data = new stdClass();
-        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
-                                         'text'=>'Submission text',
-                                         'format'=>FORMAT_MOODLE);
-        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
-        $plugin->save($submission, $data);
-
-        // Simulate a submission for suspended user, this will never be counted.
-        $this->setUser($this->extrastudents[3]);
-        $submission = $assign->get_user_submission($this->extrasuspendedstudents[0]->id, true);
-        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
-        $assign->testable_update_submission($submission, $this->extrasuspendedstudents[0]->id, true, false);
-        $data = new stdClass();
-        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
-                                         'text'=>'Submission text',
-                                         'format'=>FORMAT_MOODLE);
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                                         'text' => 'Submission text',
+                                         'format' => FORMAT_MOODLE);
         $plugin = $assign->get_submission_plugin_by_type('onlinetext');
         $plugin->save($submission, $data);
 
@@ -688,9 +889,13 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $assign->testable_apply_grade_to_user($data, $this->extrastudents[3]->id, 0);
         $assign->testable_apply_grade_to_user($data, $this->extrasuspendedstudents[0]->id, 0);
 
+        // Create a new submission with status NEW.
+        $this->setUser($this->extrastudents[4]);
+        $submission = $assign->get_group_submission($this->extrastudents[4]->id, $groupid, true);
+
         $this->assertEquals(2, $assign->count_grades());
         $this->assertEquals(4, $assign->count_submissions());
-        $this->assertEquals(2, $assign->count_submissions_need_grading());
+        $this->assertEquals(5, $assign->count_submissions(true));
         $this->assertEquals(3, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_SUBMITTED));
         $this->assertEquals(1, $assign->count_submissions_with_status(ASSIGN_SUBMISSION_STATUS_DRAFT));
     }
@@ -718,7 +923,7 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
 
         // Now create an assignment and add some feedback.
         $this->setUser($this->editingteachers[0]);
-        $assign = $this->create_instance();
+        $assign = $this->create_instance(array('sendstudentnotifications'=>1));
 
         // Simulate adding a grade.
         $this->setUser($this->teachers[0]);
@@ -742,6 +947,51 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->assertEquals(2, count($messages));
         $this->assertEquals(1, $messages[0]->notification);
         $this->assertEquals($assign->get_instance()->name, $messages[0]->contexturlname);
+
+        // Regrading a grade causes a notification to the user.
+        $data->sendstudentnotifications = true;
+        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 0);
+        assign::cron();
+        $messages = $sink->get_messages();
+        $this->assertEquals(3, count($messages));
+    }
+
+    /**
+     * Test delivery of grade notifications as controlled by marking workflow.
+     */
+    public function test_markingworkflow_cron() {
+        // First run cron so there are no messages waiting to be sent (from other tests).
+        cron_setup_user();
+        assign::cron();
+
+        // Now create an assignment with marking workflow enabled.
+        $this->setUser($this->editingteachers[0]);
+        $assign = $this->create_instance(array('sendstudentnotifications' => 1, 'markingworkflow' => 1));
+
+        // Simulate adding a grade.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '50.0';
+
+        // This student will not receive notification.
+        $data->workflowstate = ASSIGN_MARKING_WORKFLOW_STATE_READYFORRELEASE;
+        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 0);
+
+        // This student will receive notification.
+        $data->workflowstate = ASSIGN_MARKING_WORKFLOW_STATE_RELEASED;
+        $assign->testable_apply_grade_to_user($data, $this->students[1]->id, 0);
+
+        // Now run cron and see that one message was sent.
+        $this->preventResetByRollback();
+        $sink = $this->redirectMessages();
+        cron_setup_user();
+        $this->expectOutputRegex('/Done processing 1 assignment submissions/');
+        assign::cron();
+
+        $messages = $sink->get_messages();
+        $this->assertEquals(1, count($messages));
+        $this->assertEquals($messages[0]->useridto, $this->students[1]->id);
+        $this->assertEquals($assign->get_instance()->name, $messages[0]->contexturlname);
     }
 
     public function test_is_graded() {
@@ -758,7 +1008,29 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->assertEquals(false, $assign->testable_is_graded($this->students[1]->id));
     }
 
+    public function test_can_grade() {
+        global $DB;
+
+        $this->setUser($this->editingteachers[0]);
+        $assign = $this->create_instance();
+
+        $this->setUser($this->students[0]);
+        $this->assertEquals(false, $assign->can_grade());
+        $this->setUser($this->editingteachers[0]);
+        $this->assertEquals(true, $assign->can_grade());
+        $this->setUser($this->teachers[0]);
+        $this->assertEquals(true, $assign->can_grade());
+
+        // Test the viewgrades capability - without mod/assign:grade.
+        $this->setUser($this->students[0]);
+        $studentrole = $DB->get_record('role', array('shortname' => 'student'));
+        assign_capability('mod/assign:viewgrades', CAP_ALLOW, $studentrole->id, $assign->get_context()->id);
+        $this->assertEquals(false, $assign->can_grade());
+    }
+
     public function test_can_view_submission() {
+        global $DB;
+
         $this->create_extra_users();
         $this->setUser($this->editingteachers[0]);
         $assign = $this->create_instance();
@@ -777,6 +1049,15 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->assertEquals(true, $assign->can_view_submission($this->students[1]->id));
         $this->assertEquals(true, $assign->can_view_submission($this->teachers[0]->id));
         $this->assertEquals(true, $assign->can_view_submission($this->extrasuspendedstudents[0]->id));
+
+        // Test the viewgrades capability - without mod/assign:grade.
+        $this->setUser($this->students[0]);
+        $studentrole = $DB->get_record('role', array('shortname' => 'student'));
+        assign_capability('mod/assign:viewgrades', CAP_ALLOW, $studentrole->id, $assign->get_context()->id);
+        $this->assertEquals(true, $assign->can_view_submission($this->students[0]->id));
+        $this->assertEquals(true, $assign->can_view_submission($this->students[1]->id));
+        $this->assertEquals(true, $assign->can_view_submission($this->teachers[0]->id));
+        $this->assertEquals(false, $assign->can_view_submission($this->extrasuspendedstudents[0]->id));
     }
 
 
@@ -946,11 +1227,12 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->create_extra_users();
         // Now verify group assignments.
         $this->setUser($this->editingteachers[0]);
+        $time = time();
         $assign = $this->create_instance(array('teamsubmission'=>1,
                                                'assignsubmission_onlinetext_enabled'=>1,
                                                'submissiondrafts'=>1,
                                                'requireallteammemberssubmit'=>0,
-                                               'duedate' => time() - 2*24*60*60));
+                                               'duedate' => $time - 2*24*60*60));
         $PAGE->set_url(new moodle_url('/mod/assign/view.php', array('id' => $assign->get_course_module()->id)));
 
         $this->setUser($this->extrastudents[0]);
@@ -967,7 +1249,8 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $output = $assign->view_student_summary($this->extrastudents[0], true);
         $this->assertContains(get_string('submitassignment', 'assign'), $output);
         $this->assertContains(get_string('timeremaining', 'assign'), $output);
-        $this->assertContains(get_string('overdue', 'assign', format_time(2*24*60*60)), $output);
+        $difftime = time() - $time;
+        $this->assertContains(get_string('overdue', 'assign', format_time(2*24*60*60 + $difftime)), $output);
 
         $submission = $assign->get_group_submission($this->extrastudents[0]->id, 0, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
@@ -984,7 +1267,8 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
 
         // Check that time remaining is not overdue.
         $this->assertContains(get_string('timeremaining', 'assign'), $output);
-        $this->assertContains(get_string('submittedlate', 'assign', format_time(2*24*60*60)), $output);
+        $difftime = time() - $time;
+        $this->assertContains(get_string('submittedlate', 'assign', format_time(2*24*60*60 + $difftime)), $output);
 
         $submission = $assign->get_group_submission($this->extrastudents[self::GROUP_COUNT]->id, 0, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
@@ -1058,24 +1342,79 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->assertCount(10, $assign->testable_get_graders($this->students[1]->id));
     }
 
+    public function test_get_notified_users() {
+        global $CFG, $DB;
+
+        $capability = 'mod/assign:receivegradernotifications';
+        $coursecontext = context_course::instance($this->course->id);
+        $role = $DB->get_record('role', array('shortname' => 'teacher'));
+
+        $this->create_extra_users();
+        $this->setUser($this->editingteachers[0]);
+
+        // Create an assignment with no groups.
+        $assign = $this->create_instance();
+
+        $this->assertCount(self::DEFAULT_TEACHER_COUNT +
+                           self::DEFAULT_EDITING_TEACHER_COUNT +
+                           self::EXTRA_TEACHER_COUNT +
+                           self::EXTRA_EDITING_TEACHER_COUNT,
+                           $assign->testable_get_notifiable_users($this->students[0]->id));
+
+        // Change nonediting teachers role to not receive grader notifications.
+        assign_capability($capability, CAP_PROHIBIT, $role->id, $coursecontext);
+
+        $this->assertCount(self::DEFAULT_EDITING_TEACHER_COUNT +
+                           self::EXTRA_EDITING_TEACHER_COUNT,
+                           $assign->testable_get_notifiable_users($this->students[0]->id));
+
+        // Reset nonediting teachers role to default.
+        unassign_capability($capability, $role->id, $coursecontext);
+
+        // Force create an assignment with SEPARATEGROUPS.
+        $data = new stdClass();
+        $data->courseid = $this->course->id;
+        $data->name = 'Grouping';
+        $groupingid = groups_create_grouping($data);
+        groups_assign_grouping($groupingid, $this->groups[0]->id);
+        $assign = $this->create_instance(array('groupingid' => $groupingid, 'groupmode' => SEPARATEGROUPS));
+
+        $this->setUser($this->students[1]);
+        $this->assertCount(4, $assign->testable_get_notifiable_users($this->students[0]->id));
+        // Note the second student is in a group that is not in the grouping.
+        // This means that we get all graders that are not in a group in the grouping.
+        $this->assertCount(10, $assign->testable_get_notifiable_users($this->students[1]->id));
+
+        // Change nonediting teachers role to not receive grader notifications.
+        assign_capability($capability, CAP_PROHIBIT, $role->id, $coursecontext);
+
+        $this->assertCount(2, $assign->testable_get_notifiable_users($this->students[0]->id));
+        // Note the second student is in a group that is not in the grouping.
+        // This means that we get all graders that are not in a group in the grouping.
+        $this->assertCount(5, $assign->testable_get_notifiable_users($this->students[1]->id));
+    }
+
     public function test_group_members_only() {
         global $CFG;
 
         $this->setAdminUser();
         $this->create_extra_users();
-        $CFG->enablegroupmembersonly = true;
+        $CFG->enableavailability = true;
         $grouping = $this->getDataGenerator()->create_grouping(array('courseid' => $this->course->id));
         groups_assign_grouping($grouping->id, $this->groups[0]->id);
 
         // Force create an assignment with SEPARATEGROUPS.
         $instance = $this->getDataGenerator()->create_module('assign', array('course'=>$this->course->id),
-            array('groupmembersonly' => SEPARATEGROUPS, 'groupingid' => $grouping->id));
+                array('availability' => json_encode(\core_availability\tree::get_root_json(array(
+                    \availability_grouping\condition::get_json()))),
+                'groupingid' => $grouping->id));
 
         $cm = get_coursemodule_from_instance('assign', $instance->id);
         $context = context_module::instance($cm->id);
         $assign = new testable_assign($context, $cm, $this->course);
 
         $this->setUser($this->teachers[0]);
+        get_fast_modinfo($this->course, 0, true);
         $this->assertCount(5, $assign->list_participants(0, true));
 
     }
@@ -1245,14 +1584,189 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $formdata->instance = $formdata->id;
         $assign->update_instance($formdata);
 
-        // Check we can repopen still.
+        // Mark the submission again.
+        $data = new stdClass();
+        $data->grade = '60.0';
+        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 1);
+
+        // Check the grade exists.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEquals(60, (int)$grades[$this->students[0]->id]->rawgrade);
+
+        // Check we can reopen still.
         $result = $assign->testable_process_add_attempt($this->students[0]->id);
         $this->assertEquals(true, $result);
 
+        // Should no longer have a grade because there is no grade for the latest attempt.
         $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
-        $this->assertEquals(50, (int)$grades[$this->students[0]->id]->rawgrade);
+        $this->assertEmpty($grades);
 
     }
+
+    /**
+     * Test reopen behavior when in "Reopen until pass" mode.
+     */
+    public function test_attempt_reopen_method_untilpass() {
+        global $PAGE;
+
+        $this->setUser($this->editingteachers[0]);
+        $assign = $this->create_instance(array('attemptreopenmethod' => ASSIGN_ATTEMPT_REOPEN_METHOD_UNTILPASS,
+                'maxattempts' => 3,
+                'submissiondrafts' => 1,
+                'assignsubmission_onlinetext_enabled' => 1));
+        $PAGE->set_url(new moodle_url('/mod/assign/view.php', array('id' => $assign->get_course_module()->id)));
+
+        // Set grade to pass to 80.
+        $gradeitem = $assign->get_grade_item();
+        $gradeitem->gradepass = '80.0';
+        $gradeitem->update();
+
+        // Student should be able to see an add submission button.
+        $this->setUser($this->students[0]);
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertNotEquals(false, strpos($output, get_string('addsubmission', 'assign')));
+
+        // Add a submission.
+        $now = time();
+        $submission = $assign->get_user_submission($this->students[0]->id, true);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                'text' => 'Submission text',
+                'format' => FORMAT_MOODLE);
+        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // And now submit it for marking.
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $this->students[0]->id, true, false);
+
+        // Verify the student cannot make a new attempt.
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
+
+        // Mark the submission as non-passing.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '50.0';
+        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 0);
+
+        // Check the student can see the grade.
+        $this->setUser($this->students[0]);
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertNotEquals(false, strpos($output, '50.0'));
+
+        // Check that the student now has a button for Add a new attempt.
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
+
+        // Check that the student now does not have a button for Submit.
+        $this->assertEquals(false, strpos($output, get_string('submitassignment', 'assign')));
+
+        // Check that the student now has a submission history.
+        $this->assertNotEquals(false, strpos($output, get_string('attempthistory', 'assign')));
+
+        // Add a second submission.
+        $now = time();
+        $submission = $assign->get_user_submission($this->students[0]->id, true, 1);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                'text' => 'Submission text',
+                'format' => FORMAT_MOODLE);
+        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // And now submit it for marking.
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $this->students[0]->id, true, false);
+
+        // Mark the submission as passing.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '80.0';
+        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 1);
+
+        // Check that the student does not have a button for Add a new attempt.
+        $this->setUser($this->students[0]);
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
+
+        // Re-mark the submission as not passing.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '50.0';
+        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 1);
+
+        // Check that the student now has a button for Add a new attempt.
+        $this->setUser($this->students[0]);
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
+
+        // Add a submission as a second student.
+        $this->setUser($this->students[1]);
+        $now = time();
+        $submission = $assign->get_user_submission($this->students[1]->id, true);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                'text' => 'Submission text',
+                'format' => FORMAT_MOODLE);
+        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // And now submit it for marking.
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $this->students[1]->id, true, false);
+
+        // Mark the submission as passing.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '100.0';
+        $assign->testable_apply_grade_to_user($data, $this->students[1]->id, 0);
+
+        // Check the student can see the grade.
+        $this->setUser($this->students[1]);
+        $output = $assign->view_student_summary($this->students[1], true);
+        $this->assertNotEquals(false, strpos($output, '100.0'));
+
+        // Check that the student does not have a button for Add a new attempt.
+        $output = $assign->view_student_summary($this->students[1], true);
+        $this->assertEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
+
+        // Set grade to pass to 0, so that no attempts should reopen.
+        $gradeitem = $assign->get_grade_item();
+        $gradeitem->gradepass = '0';
+        $gradeitem->update();
+
+        // Add another submission.
+        $this->setUser($this->students[2]);
+        $now = time();
+        $submission = $assign->get_user_submission($this->students[2]->id, true);
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid' => file_get_unused_draft_itemid(),
+                'text' => 'Submission text',
+                'format' => FORMAT_MOODLE);
+        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // And now submit it for marking.
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $this->students[2]->id, true, false);
+
+        // Mark the submission as graded.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->grade = '0.0';
+        $assign->testable_apply_grade_to_user($data, $this->students[2]->id, 0);
+
+        // Check the student can see the grade.
+        $this->setUser($this->students[2]);
+        $output = $assign->view_student_summary($this->students[2], true);
+        $this->assertNotEquals(false, strpos($output, '0.0'));
+
+        // Check that the student does not have a button for Add a new attempt.
+        $output = $assign->view_student_summary($this->students[2], true);
+        $this->assertEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
+    }
+
 
     public function test_markingworkflow() {
         global $PAGE;
@@ -1273,6 +1787,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $output = $assign->view_student_summary($this->students[0], true);
         $this->assertEquals(false, strpos($output, '50.0'));
 
+        // Make sure the grade isn't pushed to the gradebook.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEmpty($grades);
+
         // Mark the submission and set to inmarking.
         $this->setUser($this->teachers[0]);
         $data = new stdClass();
@@ -1284,6 +1802,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->setUser($this->students[0]);
         $output = $assign->view_student_summary($this->students[0], true);
         $this->assertEquals(false, strpos($output, '50.0'));
+
+        // Make sure the grade isn't pushed to the gradebook.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEmpty($grades);
 
         // Mark the submission and set to readyforreview.
         $this->setUser($this->teachers[0]);
@@ -1297,6 +1819,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $output = $assign->view_student_summary($this->students[0], true);
         $this->assertEquals(false, strpos($output, '50.0'));
 
+        // Make sure the grade isn't pushed to the gradebook.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEmpty($grades);
+
         // Mark the submission and set to inreview.
         $this->setUser($this->teachers[0]);
         $data = new stdClass();
@@ -1308,6 +1834,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->setUser($this->students[0]);
         $output = $assign->view_student_summary($this->students[0], true);
         $this->assertEquals(false, strpos($output, '50.0'));
+
+        // Make sure the grade isn't pushed to the gradebook.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEmpty($grades);
 
         // Mark the submission and set to readyforrelease.
         $this->setUser($this->teachers[0]);
@@ -1321,6 +1851,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $output = $assign->view_student_summary($this->students[0], true);
         $this->assertEquals(false, strpos($output, '50.0'));
 
+        // Make sure the grade isn't pushed to the gradebook.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEmpty($grades);
+
         // Mark the submission and set to released.
         $this->setUser($this->teachers[0]);
         $data = new stdClass();
@@ -1332,6 +1866,10 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->setUser($this->students[0]);
         $output = $assign->view_student_summary($this->students[0], true);
         $this->assertNotEquals(false, strpos($output, '50.0'));
+
+        // Make sure the grade is pushed to the gradebook.
+        $grades = $assign->get_user_grades_for_gradebook($this->students[0]->id);
+        $this->assertEquals(50, (int)$grades[$this->students[0]->id]->rawgrade);
     }
 
     public function test_markerallocation() {
@@ -1359,328 +1897,90 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->assertNotEquals(true, strpos($output, $this->students[0]->lastname));
     }
 
-    public function test_extension_granted_event() {
+
+
+    public function test_teacher_submit_for_student() {
+        global $PAGE;
+
+        $this->preventResetByRollback();
+        $sink = $this->redirectMessages();
+
         $this->setUser($this->editingteachers[0]);
 
-        $tomorrow = time() + 24*60*60;
-        $yesterday = time() - 24*60*60;
+        $assign = $this->create_instance(array('assignsubmission_onlinetext_enabled'=>1, 'submissiondrafts'=>1));
+        $PAGE->set_url(new moodle_url('/mod/assign/view.php', array('id' => $assign->get_course_module()->id)));
 
-        $assign = $this->create_instance(array('duedate' => $yesterday, 'cutoffdate' => $yesterday));
-        $sink = $this->redirectEvents();
+        $this->setUser($this->students[0]);
+        // Simulate a submission.
+        $data = new stdClass();
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Student submission text',
+                                         'format'=>FORMAT_MOODLE);
 
-        $assign->testable_save_user_extension($this->students[0]->id, $tomorrow);
+        $notices = array();
+        $assign->save_submission($data, $notices);
 
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\extension_granted', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($assign->get_instance()->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'grant extension',
-            'view.php?id=' . $assign->get_course_module()->id,
-            $this->students[0]->id,
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-    }
+        // Check that the submission text was saved.
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertContains('Student submission text', $output, 'Contains student submission text');
 
-    public function test_submission_locked_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
+        // Check that a teacher teacher with the extra capability can edit a students submission.
+        $this->setUser($this->teachers[0]);
+        $data = new stdClass();
+        $data->userid = $this->students[0]->id;
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Teacher edited submission text',
+                                         'format'=>FORMAT_MOODLE);
 
-        $assign = $this->create_instance();
-        $sink = $this->redirectEvents();
+        // Add the required capability.
+        $roleid = create_role('Dummy role', 'dummyrole', 'dummy role description');
+        assign_capability('mod/assign:editothersubmission', CAP_ALLOW, $roleid, $assign->get_context()->id);
+        role_assign($roleid, $this->teachers[0]->id, $assign->get_context()->id);
+        accesslib_clear_all_caches_for_unit_testing();
 
-        $assign->lock_submission($this->students[0]->id);
+        // Try to save the submission.
+        $notices = array();
+        $assign->save_submission($data, $notices);
 
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\submission_locked', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($assign->get_instance()->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'lock submission',
-            'view.php?id=' . $assign->get_course_module()->id,
-            get_string('locksubmissionforstudent', 'assign', array('id' => $this->students[0]->id,
-                'fullname' => fullname($this->students[0]))),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
+        // Check that the teacher can submit the students work.
+        $data = new stdClass();
+        $data->userid = $this->students[0]->id;
+        $notices = array();
+        $assign->submit_for_grading($data, $notices);
 
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
-    }
-
-    public function test_identities_revealed_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
-
-        $assign = $this->create_instance(array('blindmarking'=>1));
-        $sink = $this->redirectEvents();
-
-        $assign->reveal_identities();
-
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\identities_revealed', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($assign->get_instance()->id, $event->objectid);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'reveal identities',
-            'view.php?id=' . $assign->get_course_module()->id,
-            get_string('revealidentities', 'assign'),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
-    }
-
-    public function test_submission_status_updated_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
-
-        $assign = $this->create_instance();
-        $submission = $assign->get_user_submission($this->students[0]->id, true);
-        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
-        $assign->testable_update_submission($submission, $this->students[0]->id, true, false);
-
-        $sink = $this->redirectEvents();
+        // Revert to draft so the student can edit it.
         $assign->revert_to_draft($this->students[0]->id);
 
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\submission_status_updated', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($submission->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $this->assertEquals(ASSIGN_SUBMISSION_STATUS_DRAFT, $event->other['newstatus']);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'revert submission to draft',
-            'view.php?id=' . $assign->get_course_module()->id,
-            get_string('reverttodraftforstudent', 'assign', array('id' => $this->students[0]->id,
-                'fullname' => fullname($this->students[0]))),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
-    }
-
-    public function test_marker_updated_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
-
-        $assign = $this->create_instance();
-
-        $sink = $this->redirectEvents();
-        $assign->testable_process_set_batch_marking_allocation($this->students[0]->id, $this->teachers[0]->id);
-
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\marker_updated', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($assign->get_instance()->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $this->assertEquals($this->editingteachers[0]->id, $event->userid);
-        $this->assertEquals($this->teachers[0]->id, $event->other['markerid']);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'set marking allocation',
-            'view.php?id=' . $assign->get_course_module()->id,
-            get_string('setmarkerallocationforlog', 'assign', array('id' => $this->students[0]->id,
-                'fullname' => fullname($this->students[0]), 'marker' => fullname($this->teachers[0]))),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
-    }
-
-    public function test_workflow_state_updated_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
-
-        $assign = $this->create_instance();
-
-        $sink = $this->redirectEvents();
-        $assign->testable_process_set_batch_marking_workflow_state($this->students[0]->id, ASSIGN_MARKING_WORKFLOW_STATE_INREVIEW);
-
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\workflow_state_updated', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($assign->get_instance()->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $this->assertEquals($this->editingteachers[0]->id, $event->userid);
-        $this->assertEquals(ASSIGN_MARKING_WORKFLOW_STATE_INREVIEW, $event->other['newstate']);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'set marking workflow state',
-            'view.php?id=' . $assign->get_course_module()->id,
-            get_string('setmarkingworkflowstateforlog', 'assign', array('id' => $this->students[0]->id,
-                'fullname' => fullname($this->students[0]), 'state' => ASSIGN_MARKING_WORKFLOW_STATE_INREVIEW)),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
-    }
-
-    public function test_submission_duplicated_event() {
         $this->setUser($this->students[0]);
 
-        $assign = $this->create_instance();
-        $submission1 = $assign->get_user_submission($this->students[0]->id, true, 0);
-        $submission2 = $assign->get_user_submission($this->students[0]->id, true, 1);
-        $submission2->status = ASSIGN_SUBMISSION_STATUS_REOPENED;
-        $assign->testable_update_submission($submission2, $this->students[0]->id, time(), $assign->get_instance()->teamsubmission);
+        // Check that the submission text was saved.
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertContains('Teacher edited submission text', $output, 'Contains student submission text');
 
-        $sink = $this->redirectEvents();
-        $notices = null;
-        $assign->copy_previous_attempt($notices);
+        // Check that the student can submit their work.
+        $data = new stdClass();
+        $assign->submit_for_grading($data, $notices);
 
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\submission_duplicated', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($submission2->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->userid);
-        $submission2->status = ASSIGN_SUBMISSION_STATUS_DRAFT;
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'submissioncopied',
-            'view.php?id=' . $assign->get_course_module()->id,
-            $assign->testable_format_submission_for_log($submission2),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-    }
+        $output = $assign->view_student_summary($this->students[0], true);
+        $this->assertNotContains(get_string('addsubmission', 'assign'), $output);
 
-    public function test_submission_unlocked_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
+        // Set to a default editing teacher who should not be able to edit this submission.
+        $this->setUser($this->editingteachers[1]);
 
-        $assign = $this->create_instance();
-        $sink = $this->redirectEvents();
-
-        $assign->unlock_submission($this->students[0]->id);
-
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\submission_unlocked', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($assign->get_instance()->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'unlock submission',
-            'view.php?id=' . $assign->get_course_module()->id,
-            get_string('unlocksubmissionforstudent', 'assign', array('id' => $this->students[0]->id,
-                'fullname' => fullname($this->students[0]))),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
-    }
-
-    public function test_submission_graded_event() {
-        $this->editingteachers[0]->ignoresesskey = true;
-        $this->setUser($this->editingteachers[0]);
-        $assign = $this->create_instance();
-
-        // Test apply_grade_to_user.
-        $sink = $this->redirectEvents();
+        // Revert to draft so the submission is editable.
+        $assign->revert_to_draft($this->students[0]->id);
 
         $data = new stdClass();
-        $data->grade = '50.0';
-        $assign->testable_apply_grade_to_user($data, $this->students[0]->id, 0);
-        $grade = $assign->get_user_grade($this->students[0]->id, false, 0);
+        $data->userid = $this->students[0]->id;
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>'Teacher 2 edited submission text',
+                                         'format'=>FORMAT_MOODLE);
 
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\submission_graded', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($grade->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'grade submission',
-            'view.php?id=' . $assign->get_course_module()->id,
-            $assign->format_grade_for_log($grade),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
+        $notices = array();
+        $this->setExpectedException('moodle_exception');
+        $assign->save_submission($data, $notices);
+
         $sink->close();
-
-        // Test process_save_quick_grades.
-        $sink = $this->redirectEvents();
-
-        $data = array(
-            'grademodified_' . $this->students[0]->id => time(),
-            'quickgrade_' . $this->students[0]->id => '60.0'
-        );
-        $assign->testable_process_save_quick_grades($data);
-        $grade = $assign->get_user_grade($this->students[0]->id, false);
-        $this->assertEquals('60.0', $grade->grade);
-
-        $events = $sink->get_events();
-        $this->assertCount(1, $events);
-        $event = reset($events);
-        $this->assertInstanceOf('\mod_assign\event\submission_graded', $event);
-        $this->assertEquals($assign->get_context(), $event->get_context());
-        $this->assertEquals($grade->id, $event->objectid);
-        $this->assertEquals($this->students[0]->id, $event->relateduserid);
-        $expected = array(
-            $assign->get_course()->id,
-            'assign',
-            'grade submission',
-            'view.php?id=' . $assign->get_course_module()->id,
-            $assign->format_grade_for_log($grade),
-            $assign->get_course_module()->id
-        );
-        $this->assertEventLegacyLogData($expected, $event);
-        $sink->close();
-        // Revert to defaults.
-        $this->editingteachers[0]->ignoresesskey = false;
     }
 
     public function test_disable_submit_after_cutoff_date() {
@@ -1766,6 +2066,77 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
     }
 
     /**
+     * Testing for comment inline settings
+     */
+    public function test_feedback_comment_commentinline() {
+        global $CFG;
+
+        $sourcetext = "Hello!
+
+I'm writing to you from the Moodle Majlis in Muscat, Oman, where we just had several days of Moodle community goodness.
+
+URL outside a tag: https://moodle.org/logo/logo-240x60.gif
+Plugin url outside a tag: @@PLUGINFILE@@/logo-240x60.gif
+
+External link 1:<img src='https://moodle.org/logo/logo-240x60.gif' alt='Moodle'/>
+External link 2:<img alt=\"Moodle\" src=\"https://moodle.org/logo/logo-240x60.gif\"/>
+Internal link 1:<img src='@@PLUGINFILE@@/logo-240x60.gif' alt='Moodle'/>
+Internal link 2:<img alt=\"Moodle\" src=\"@@PLUGINFILE@@logo-240x60.gif\"/>
+Anchor link 1:<a href=\"@@PLUGINFILE@@logo-240x60.gif\" alt=\"bananas\">Link text</a>
+Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
+";
+
+        // Note the internal images have been stripped and the html is purified (quotes fixed in this case).
+        $filteredtext = "Hello!
+
+I'm writing to you from the Moodle Majlis in Muscat, Oman, where we just had several days of Moodle community goodness.
+
+URL outside a tag: https://moodle.org/logo/logo-240x60.gif
+Plugin url outside a tag: @@PLUGINFILE@@/logo-240x60.gif
+
+External link 1:<img src=\"https://moodle.org/logo/logo-240x60.gif\" alt=\"Moodle\" />
+External link 2:<img alt=\"Moodle\" src=\"https://moodle.org/logo/logo-240x60.gif\" />
+Internal link 1:
+Internal link 2:
+Anchor link 1:Link text
+Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
+";
+
+        $this->setUser($this->editingteachers[0]);
+        $params = array('assignsubmission_onlinetext_enabled' => 1,
+                        'assignfeedback_comments_enabled' => 1,
+                        'assignfeedback_comments_commentinline' => 1);
+        $assign = $this->create_instance($params);
+
+        $this->setUser($this->students[0]);
+        // Add a submission but don't submit now.
+        $submission = $assign->get_user_submission($this->students[0]->id, true);
+        $data = new stdClass();
+
+        // Test the internal link is stripped, but the external one is not.
+        $data->onlinetext_editor = array('itemid'=>file_get_unused_draft_itemid(),
+                                         'text'=>$sourcetext,
+                                         'format'=>FORMAT_MOODLE);
+
+        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        $this->setUser($this->editingteachers[0]);
+
+        $data = new stdClass();
+        require_once($CFG->dirroot . '/mod/assign/gradeform.php');
+        $pagination = array('userid'=>$this->students[0]->id,
+                            'rownum'=>0,
+                            'last'=>true,
+                            'useridlistid'=>time(),
+                            'attemptnumber'=>0);
+        $formparams = array($assign, $data, $pagination);
+        $mform = new mod_assign_grade_form(null, $formparams);
+
+        $this->assertEquals($filteredtext, $data->assignfeedbackcomments_editor['text']);
+    }
+
+    /**
      * Testing for feedback comment plugin settings
      */
     public function test_feedback_plugin_settings() {
@@ -1805,5 +2176,95 @@ class mod_assign_locallib_testcase extends mod_assign_base_testcase {
         $this->assertEquals(0, $plugin->is_enabled('enabled'));
     }
 
+    /**
+     * Testing can_edit_submission
+     */
+    public function test_can_edit_submission() {
+        global $PAGE, $DB;
+        $this->create_extra_users();
+
+        $this->setAdminUser();
+        // Create assignment (onlinetext).
+        $assign = $this->create_instance(array('assignsubmission_onlinetext_enabled'=>1, 'submissiondrafts'=>1));
+        $PAGE->set_url(new moodle_url('/mod/assign/view.php', array('id' => $assign->get_course_module()->id)));
+
+        // Check student can edit their own submission.
+        $this->assertTrue($assign->can_edit_submission($this->students[0]->id, $this->students[0]->id));
+        // Check student cannot edit others submission.
+        $this->assertFalse($assign->can_edit_submission($this->students[0]->id, $this->students[1]->id));
+
+        // Check teacher cannot (by default) edit a students submission.
+        $this->assertFalse($assign->can_edit_submission($this->students[0]->id, $this->teachers[0]->id));
+
+        // Add the required capability to edit a student submission.
+        $roleid = create_role('Dummy role', 'dummyrole', 'dummy role description');
+        assign_capability('mod/assign:editothersubmission', CAP_ALLOW, $roleid, $assign->get_context()->id);
+        role_assign($roleid, $this->teachers[0]->id, $assign->get_context()->id);
+        accesslib_clear_all_caches_for_unit_testing();
+        // Retest - should now have access.
+        $this->assertTrue($assign->can_edit_submission($this->students[0]->id, $this->teachers[0]->id));
+
+        // Force create an assignment with SEPARATEGROUPS.
+        $data = new stdClass();
+        $data->courseid = $this->course->id;
+        $data->name = 'Grouping';
+        $groupingid = groups_create_grouping($data);
+        groups_assign_grouping($groupingid, $this->groups[0]->id);
+        groups_assign_grouping($groupingid, $this->groups[1]->id);
+        $assign = $this->create_instance(array('groupingid' => $groupingid, 'groupmode' => SEPARATEGROUPS));
+
+        // Add the capability to the new assignment for extra students 0 and 1.
+        assign_capability('mod/assign:editothersubmission', CAP_ALLOW, $roleid, $assign->get_context()->id);
+        role_assign($roleid, $this->extrastudents[0]->id, $assign->get_context()->id);
+        role_assign($roleid, $this->extrastudents[1]->id, $assign->get_context()->id);
+        accesslib_clear_all_caches_for_unit_testing();
+
+        // Verify the extra student does not have the capability to edit a submission not in their group.
+        $this->assertFalse($assign->can_edit_submission($this->students[0]->id, $this->extrastudents[1]->id));
+        // Verify the extra student does have the capability to edit a submission in their group.
+        $this->assertTrue($assign->can_edit_submission($this->students[0]->id, $this->extrastudents[0]->id));
+
+    }
+
+    /**
+     * Test if the view blind details capability works
+     */
+    public function test_can_view_blind_details() {
+        global $PAGE, $DB;
+        $teacherrole = $DB->get_record('role', array('shortname' => 'teacher'));
+        $managerrole = $DB->get_record('role', array('shortname' => 'manager'));
+
+        $student = $this->students[0];// Get a student user.
+        // Create a teacher. Shouldn't be able to view blind marking ID.
+        $teacher = $this->getDataGenerator()->create_user();
+
+        $this->getDataGenerator()->enrol_user($teacher->id,
+                                              $this->course->id,
+                                              $teacherrole->id);
+
+        // Create a manager.. Should be able to view blind marking ID.
+        $manager = $this->getDataGenerator()->create_user();
+        $this->getDataGenerator()->enrol_user($manager->id,
+                $this->course->id,
+                $managerrole->id);
+
+        // Generate blind marking assignment.
+        $assign = $this->create_instance(array('blindmarking' => 1));
+        $this->assertEquals(true, $assign->is_blind_marking());
+
+        // Test student names are hidden to teacher.
+        $this->setUser($teacher);
+        $gradingtable = new assign_grading_table($assign, 1, '', 0, true);
+        $output = $assign->get_renderer()->render($gradingtable);
+        $this->assertEquals(true, strpos($output, get_string('hiddenuser', 'assign')));    // "Participant" is somewhere on the page.
+        $this->assertEquals(false, strpos($output, fullname($student)));    // Students full name doesn't appear.
+
+        // Test student names are visible to manager.
+        $this->setUser($manager);
+        $gradingtable = new assign_grading_table($assign, 1, '', 0, true);
+        $output = $assign->get_renderer()->render($gradingtable);
+        $this->assertEquals(false, strpos($output, get_string('hiddenuser', 'assign')));
+        $this->assertEquals(true, strpos($output, fullname($student)));    //students full name doesn't appear.
+    }
 }
 

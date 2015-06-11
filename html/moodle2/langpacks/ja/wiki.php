@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,17 @@ $string['editing'] = 'Wikiページの編集';
 $string['editingcomment'] = 'コメントの編集';
 $string['editingpage'] = 'このページ「 {$a} 」の編集';
 $string['editsection'] = '編集';
+$string['eventdiffviewed'] = 'Wiki diffが閲覧されました。';
+$string['eventhistoryviewed'] = 'Wiki履歴が閲覧されました。';
+$string['eventmapviewed'] = 'Wikiページマップが閲覧されました。';
+$string['eventpagecreated'] = 'Wikiページが作成されました。';
+$string['eventpagedeleted'] = 'Wikiページが削除されました。';
+$string['eventpagelocksdeleted'] = 'Wikiページロックが削除されました。';
+$string['eventpageupdated'] = 'Wikiページが更新されました。';
+$string['eventpageversiondeleted'] = 'Wikiページバージョンが削除されました。';
+$string['eventpageviewed'] = 'Wikiページが閲覧されました。';
+$string['eventversionrestored'] = 'Wikiバージョンがリストアされました。';
+$string['eventversionviewed'] = 'Wikiページバージョンが閲覧されました。';
 $string['filenotuploadederror'] = 'ファイル「 {$a} 」は正常にアップロードされませんでした。';
 $string['files'] = 'ファイル';
 $string['filtername'] = 'Wikiページオートリンク';
@@ -259,7 +270,7 @@ $string['wiki:managewiki'] = 'Wiki設定を管理する';
 $string['wikimode'] = 'Wikiモード';
 $string['wikimodecollaborative'] = '共同Wiki';
 $string['wikimode_help'] = 'Wikiモードでは、すべてのユーザがWikiを編集できる「共同Wiki」、またはユーザのみ自分のWikiを編集できる「個人Wiki」を決定します。';
-$string['wikimodeindividual'] = '個人WIki';
+$string['wikimodeindividual'] = '個人Wiki';
 $string['wikiname'] = 'Wiki名';
 $string['wikinowikitext'] = '非Wikiテキスト';
 $string['wikiorderedlist'] = '順序付きリスト';

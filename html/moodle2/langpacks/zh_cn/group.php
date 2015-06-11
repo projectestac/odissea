@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,9 +88,6 @@ $string['groupingsonly'] = '只使用大组';
 $string['groupmember'] = '组成员';
 $string['groupmemberdesc'] = '组中成员的标准角色';
 $string['groupmembers'] = '组成员';
-$string['groupmembersonly'] = '仅对组成员可用';
-$string['groupmembersonlyerror'] = '对不起，您必须是该活动中至少一个组的成员';
-$string['groupmembersonly_help'] = '如果勾选此框，这项活动（或资源）将只对属于所选的大组的学生开放。';
 $string['groupmemberssee'] = '查看组成员';
 $string['groupmembersselected'] = '已选组的成员';
 $string['groupmode'] = '小组模式';

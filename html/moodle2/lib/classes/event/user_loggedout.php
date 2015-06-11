@@ -28,6 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * Event when user logout.
  *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string sessionid: (optional) session id.
+ * }
+ *
  * @package    core
  * @since      Moodle 2.6
  * @copyright  2013 Rajesh Taneja <rajesh@moodle.com>
@@ -42,7 +48,7 @@ class user_loggedout extends base {
         $this->context = \context_system::instance();
         $this->data['objecttable'] = 'user';
         $this->data['crud'] = 'r';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 
     /**
@@ -60,7 +66,7 @@ class user_loggedout extends base {
      * @return string
      */
     public function get_description() {
-        return 'User '.$this->objectid.' logged out.';
+        return "The user with id '$this->objectid' has logged out.";
     }
 
     /**

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_quiz_results', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['config_show_best'] = 'Quanti fra i voti migliori devono essere visualiz
 $string['config_show_worst'] = 'Quanti fra i voti peggiori devono essere visualizzati? (0  disabilita)';
 $string['configuredtoshownothing'] = 'La configurazione di questo blocco al momento non consente di visualizzaere nessun risultato. Dovresti riconfigurarlo o nasconderlo.';
 $string['config_use_groups'] = 'Visualizzare i gruppi invece degli studenti (solo se il quiz supporta i gruppi)?';
-$string['error_emptyquizid'] = 'E\' stato rilevato un errore su questo blocco: bisogna selezionare il quiz da dove trarre i risultati';
+$string['error_emptyquizid'] = 'Per favore configura il blocco e seleziona il quiz da dove trarre i risultati.';
 $string['error_emptyquizrecord'] = 'E\' stato rilevato un errore su questo blocco: il quiz selezionato sembra non esistere nel database.';
 $string['error_nogroupsexist'] = 'E\' stato rilevato un errore su questo blocco: è impostato per visualizzare i voti in modalità  gruppo, ma in questo corso non sono stati definiti gruppi.';
 $string['pluginname'] = 'Risultati del quiz';

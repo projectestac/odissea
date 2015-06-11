@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,6 @@ En mapp kan t.ex. användas
 * För atttillhandahålla en gemensam uppladdningsutrymme för lärare på kurssidan (håller mappen dold så att endast lärare kan se det)
 * För atttillhandahålla en gemensam uppladdningsutrymme för studenterna på kurssidan (kom ihåg att ge studenterna redigeringsbehörighet till den specifika mappen)';
 $string['modulenameplural'] = 'Mappar';
-$string['neverseen'] = 'Har aldrig visats';
 $string['noautocompletioninline'] = 'Automatiskt slutförande vid visning av aktivitet kan inte väljas tillsammans med alternativet "Visa på kurssidan"';
 $string['page-mod-folder-view'] = 'Mapp-modul huvudsidan';
 $string['page-mod-folder-x'] = 'Valfri mapp modulsida';

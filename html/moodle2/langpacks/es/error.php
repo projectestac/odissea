@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -494,7 +494,7 @@ $string['statsnodata'] = 'No hay datos disponibles para esa combinación de curs
 $string['storedfilecannotcreatefile'] = 'No se puede crear el archivo local, verifique los permisos del área de datos y el espacio en disco disponible.';
 $string['storedfilecannotcreatefiledirs'] = 'No se puede crear directorios \'pool\' de archivos locales, por favor verifique los permisos en dataroot.';
 $string['storedfilecannotread'] = 'No se puede leer el archivo, ya sea el archivo no existe o hay problemas de permisos';
-$string['storedfilenotcreated'] = 'No se puede crear el archivo "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}/{$a->filepath}/{$a->filename}"';
+$string['storedfilenotcreated'] = 'No se puede crear el archivo "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
 $string['storedfileproblem'] = 'Excepción desconocida relacionadas con los archivos locales ({$a})';
 $string['tagdisabled'] = 'Las etiquetas están deshabilitadas';
 $string['tagnotfound'] = 'No se ha encontrado la marca especificada en la base de datos';

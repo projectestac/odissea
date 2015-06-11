@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,6 @@ $string['generatefeedback'] = 'Genera PDF de retroacció';
 $string['generatingpdf'] = 'S\'està generant el PDF ...';
 $string['gotopage'] = 'Ves a la pàgina';
 $string['green'] = 'Verd';
-$string['gspath'] = 'Camí al Ghostscript';
-$string['gspath_help'] = 'En la majoria d\'instal·lacions de Linux pot trobar-se a  \'/usr/bin/gs\'. En Windows se sol trobar a  \'c:gsbingswin32c.exe\'  (comproveu que no hi ha espais en blanc al camí - si cal copieu els fitxers \'gswin32c.exe\' i \'gsdll32.dll\' en una nova carpeta sense espais en blanc al camí)';
 $string['highlight'] = 'Ressalta';
 $string['jsrequired'] = 'Cal JavaScript per fer anotacions en un PDF. Habiliteu JavaScript al vostre navegador per utilitzar aquesta característica.';
 $string['launcheditor'] = 'Obre l\'editor PDF ...';
@@ -90,4 +88,3 @@ $string['unsavedchanges'] = 'Canvis no desats';
 $string['viewfeedbackonline'] = 'Mostra el PDF comentat...';
 $string['white'] = 'Blanc';
 $string['yellow'] = 'Groc';
-$string['zlibnotavailable'] = 'L\'extensió «zlib» no està disponible. La característica d\'anotar PDF depèn d\'aquesta extensió i s\'inhabilitarà fins que zlib estigui instal·lat i habilitat.';

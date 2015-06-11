@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,7 +82,6 @@ Um ficheiro pode ser utilizado para:
 * Disponibilizar ficheiros de certos programas (p. ex. Photoshop .psd) para os alunos editarem e submeterem para avaliação.';
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Ficheiros';
-$string['neverseen'] = 'Nunca visto';
 $string['notmigrated'] = 'O tipo de recurso herdado ({$a}) ainda não foi migrado.';
 $string['optionsheader'] = 'Mostrar opções';
 $string['page-mod-resource-x'] = 'Qualquer ficheiro dos recursos';

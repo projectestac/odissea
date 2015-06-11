@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,11 +31,8 @@ $string['assign'] = 'تعيين';
 $string['assignto'] = 'أعضاء فوج \'{$a}\'';
 $string['backtocohorts'] = 'عودة إلى الأفواج';
 $string['cohort'] = 'فوج';
-$string['cohort:assign'] = 'تعيين أعضاء الفوج';
-$string['cohort:manage'] = 'إدارة الجماعة';
 $string['cohorts'] = 'الأفواج';
 $string['cohortsin'] = '{$a}: فوج متوافر';
-$string['cohort:view'] = 'استخدام الأفواج وعرض الأعضاء';
 $string['component'] = 'المصدر';
 $string['currentusers'] = 'المستخدمون الحاليون';
 $string['currentusersmatching'] = 'المستخدمون الحاليون المطابقون';
@@ -53,3 +50,4 @@ $string['potusersmatching'] = 'المستخدمين المحتملين المط�
 $string['search'] = 'بحث';
 $string['searchcohort'] = 'البحث في الأفواج';
 $string['selectfromcohort'] = 'اختر أعضاءً من فوج';
+$string['visible'] = 'مرئ';

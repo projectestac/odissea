@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['cannotcreatedboninstall'] = '<p>Kan inte skapa databasen.</p>
 <p>Administratören för webbplatsen bör verifiera databaskonfigurationen.</p>';
 $string['cannotcreategroup'] = 'Fel vid skapande av grupp';
 $string['cannotcreatelangdir'] = 'Det går inte att skapa en lang-katalog';
-$string['cannotcreateorfindstructs'] = 'Fel i samband med sökning efter eller skapande av sektionsstrukturer för den här kursen';
+$string['cannotcreateorfindstructs'] = 'Fel i sb m sökning eller skapande av sektionsstrukturer för den här kursen';
 $string['cannotcreatepopupwin'] = 'Odefinierad element - kan inte skapa pop-up fönster';
 $string['cannotcreatesitedir'] = 'Kan inte skapa webbplats-mapp. En administratör kan ändra filrättigheterna.';
 $string['cannotcreatetempdir'] = 'Det går inte att skapa en temp-katalog';
@@ -61,7 +61,7 @@ $string['cannotdeletebackupids'] = 'Kunde inte raderas tidigare backuppers id.';
 $string['cannotdeletecategorycourse'] = 'Det gick inte att ta bort kursen {$a}.';
 $string['cannotdeletecategoryquestions'] = 'Det gick inte att ta bort frågor från kategorin {$a}.';
 $string['cannotdeletecourse'] = 'Du har inte tillstånd att ta bort den här kursen. ';
-$string['cannotdeletecustomfield'] = 'Fel vid radering av anpassade fältdata';
+$string['cannotdeletecustomfield'] = 'Fel i sb m borttagande av standardiserade fältdata';
 $string['cannotdeletedir'] = 'Kan inte ta bort ({$a})';
 $string['cannotdeletefile'] = 'Det går inte att ta bort den här filen';
 $string['cannotdeleterole'] = 'It cannot be deleted, because {$a}';
@@ -97,7 +97,7 @@ $string['cannotimportformat'] = 'Funktionen att importera det här formatet är 
 $string['cannotimportgrade'] = 'Fel vid import av betyg/omdöme';
 $string['cannotinsertgrade'] = 'Det går inte att foga in en betygskomponent utan kursID!';
 $string['cannotinsertrecord'] = 'Det gick inte att infoga ny post-ID {$a}';
-$string['cannotmailconfirm'] = 'Fel vid skickande av e-postbekräftelse för lösenordsändring';
+$string['cannotmailconfirm'] = 'Fel i sb m att e-post om bekräftelse av ändring av lösenord skickades ut';
 $string['cannotmanualctrack'] = 'Den här aktiviteten erbjuder inte manuell spårning av fullföljande';
 $string['cannotmapfield'] = 'En kollision vid kartläggning har upptäckts - två fält leder till samma betygskomponent {$a}';
 $string['cannotmovecategory'] = 'Kan inte flytta kategori';
@@ -114,7 +114,7 @@ $string['cannotreadtmpfile'] = 'Fel vid läsning av en temporär fil';
 $string['cannotreaduploadfile'] = 'Det gick inte att läsa den uppladdade filen';
 $string['cannotremovefrommeta'] = 'Kunde inte ta bort den valda kursen från den här metakursen!';
 $string['cannotresetguestpwd'] = 'Du kan inte återställa lösenordet för gäster';
-$string['cannotresetmail'] = 'Fel i samband med återställning av lösenord och skickande av e-post till dig';
+$string['cannotresetmail'] = 'Fel i sb m återställande av lösenord och e-post till Dig';
 $string['cannotresetthisrole'] = 'Kan inte återställa denna roll';
 $string['cannotrestore'] = 'Ett fel har uppstått och det gick inte att fullfölja återställningen';
 $string['cannotrestoreadminorcreator'] = 'Du behöver vara administratör för att återställa till ny kurs!';
@@ -192,7 +192,7 @@ $string['detectedbrokenplugin'] = 'Plugin "{$a}" är defekt eller föråldrat, k
 $string['dmlexceptiononinstall'] = '<p>Ett databasfel har inträffat [{$a->errorcode}].<br />{$a->debuginfo}</p>';
 $string['dmlreadexception'] = 'Fel vid läsning av databas';
 $string['dmltransactionexception'] = 'Fel vid överföring till databas';
-$string['dmlwriteexception'] = 'Fel vid skrivning till databasen';
+$string['dmlwriteexception'] = 'Fel i sb m att data skulle skrivas till databas';
 $string['downgradedcore'] = 'FEL! Koden som du använder är äldre än den version som skapade dessa databaser!';
 $string['downloadedfilecheckfailed'] = 'Det gick inte att kontrollera den nedladdade filen';
 $string['duplicatefieldname'] = 'Duplicerat fältnamn "{$a}" upptäcktes';
@@ -208,7 +208,7 @@ $string['errorcopyingfiles'] = 'Fel i samband med kopiering av filer';
 $string['errorcreatingdirectory'] = 'Fel i samband med skapandet av katalogen  "{$a}"';
 $string['errorcreatingfile'] = 'Fel i samband med skapandet av filen  "{$a}"';
 $string['errorcreatingrole'] = 'Fel vid skapande av roll';
-$string['errorfetchingrssfeed'] = 'Fel vid hämtning av RSS-flöde.';
+$string['errorfetchingrssfeed'] = 'Det uppstod ett fel i sb m hämtning av RSS-inflöde';
 $string['erroronline'] = 'Fel på rad {$a}';
 $string['errorparsingxml'] = 'Fel vid tolkning XML: {$a->errorstring} på rad {$a->errorline}, tecken {$a->errorchar}';
 $string['errorreadingfile'] = 'Fel i samband med läsningen av filen  "{$a}"';
@@ -456,7 +456,7 @@ $string['statsnodata'] = 'Det finns inga tillgängliga data för denna kombinati
 $string['storedfilecannotcreatefile'] = 'Kan inte skapa fil för lokal filpool, var god verifiera filrättigheter i dataroot samt tillgängligt diskutrymme.';
 $string['storedfilecannotcreatefiledirs'] = 'Kan inte skapa foldrar för lokal filpool, var god kontrollera filrättigheter i dataroot.';
 $string['storedfilecannotread'] = 'Kan inte läsa filen, antingen finns inte filen eller det finns finnsbehörighetsproblem';
-$string['storedfilenotcreated'] = 'Kan inte skapa filen "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}/{$a->filepath}/{$a->filename}"';
+$string['storedfilenotcreated'] = 'Kan inte skapa filen "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
 $string['storedfileproblem'] = 'Okänt undantag relaterat till lokala filer ({$a})';
 $string['tagdisabled'] = 'Taggar har inaktiveras!';
 $string['tagnotfound'] = 'Den specificerade etiketten gick inte att hitta i databasen.';

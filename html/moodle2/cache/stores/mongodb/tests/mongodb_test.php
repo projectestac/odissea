@@ -43,16 +43,6 @@ require_once($CFG->dirroot.'/cache/stores/mongodb/lib.php');
  */
 class cachestore_mongodb_test extends cachestore_tests {
     /**
-     * Prepare to run tests.
-     */
-    public function setUp() {
-        if (defined('TEST_CACHESTORE_MONGODB_TESTSERVER')) {
-            set_config('testserver', TEST_CACHESTORE_MONGODB_TESTSERVER, 'cachestore_mongodb');
-            $this->resetAfterTest();
-        }
-        parent::setUp();
-    }
-    /**
      * Returns the MongoDB class name
      * @return string
      */
@@ -66,7 +56,7 @@ class cachestore_mongodb_test extends cachestore_tests {
     public function test_collection_name() {
         // This generates a definition that has a hash starting with a number. MDL-46208.
         $definition = cache_definition::load_adhoc(cache_store::MODE_APPLICATION, 'cachestore_mongodb', 'abc');
-        $instance = cachestore_mongodb::initialise_test_instance($definition);
+        $instance = cachestore_mongodb::initialise_unit_test_instance($definition);
 
         if (!$instance) {
             $this->markTestSkipped();

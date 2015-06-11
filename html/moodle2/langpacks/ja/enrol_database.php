@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_database', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'データベース登録インスタンスを設定する';
 $string['database:unenrol'] = '利用停止ユーザを登録解除する';
 $string['dbencoding'] = 'データベースエンコーディング';
 $string['dbhost'] = 'データベースホスト';
@@ -63,6 +64,8 @@ $string['remotecoursefield'] = 'リモートコースフィールド';
 $string['remotecoursefield_desc'] = 'コーステーブルのエントリに私たちが合致させるため使用するリモートテーブルのフィールド名です。 ';
 $string['remoteenroltable'] = 'リモートユーザ登録テーブル';
 $string['remoteenroltable_desc'] = 'ユーザ受講登録の一覧を含んだテーブル名を指定してください。空白の場合、ユーザの受講登録は同期されません。';
+$string['remoteotheruserfield'] = 'リモートその他のユーザフィールド';
+$string['remoteotheruserfield_desc'] = '私たちが「その他のユーザ」ロール割り当てのフラグに使用するためのリモートテーブルのフィールド名です。';
 $string['remoterolefield'] = 'リモートロールフィールド';
 $string['remoterolefield_desc'] = 'ロールテーブルのエントリに私たちが合致させるため使用するリモートテーブルのフィールド名です。 ';
 $string['remoteuserfield'] = 'リモートユーザフィールド';

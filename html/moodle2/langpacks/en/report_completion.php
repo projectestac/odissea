@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_completion', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktomarkusercomplete'] = 'Click to mark user complete';
 $string['completiondate'] = 'Completion date';
 $string['completion:view'] = 'View course completion report';
+$string['eventreportviewed'] = 'Completion report viewed';
+$string['eventuserreportviewed'] = 'Completion user report viewed';
 $string['id'] = 'ID';
 $string['name'] = 'Name';
 $string['page-report-completion-index'] = 'Course completion report';

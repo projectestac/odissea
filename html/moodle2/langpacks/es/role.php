@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -153,6 +153,7 @@ $string['course:movesections'] = 'Mover secciones';
 $string['course:publish'] = 'Publicar un curso en el hub';
 $string['course:request'] = 'Solicitar nuevos cursos';
 $string['course:reset'] = 'Reiniciar curso';
+$string['course:reviewotherusers'] = 'Revise otros usuarios';
 $string['course:sectionvisibility'] = 'Controlar visibilidad de sección';
 $string['course:setcurrentsection'] = 'Ajustar sección actual';
 $string['course:update'] = 'Actualizar ajustes de curso';
@@ -366,6 +367,7 @@ $string['site:backup'] = 'Hacer copia de seguridad de los cursos';
 $string['site:config'] = 'Cambiar configuración del sitio';
 $string['site:doanything'] = 'Permiso para todo';
 $string['site:doclinks'] = 'Mostrar enlaces a documentos fuera del sitio';
+$string['site:forcelanguage'] = 'Sobreescribe idioma del curso';
 $string['site:import'] = 'Importar otros cursos a un curso';
 $string['site:manageblocks'] = 'Gestionar bloques en una página';
 $string['site:mnetloginfromremote'] = 'Acceso desde una aplicación remota vía MNet';
@@ -385,7 +387,7 @@ $string['tag:editblocks'] = 'Editar bloques en páginas de marcas';
 $string['tag:flag'] = 'Señalar marcas (tags) como inapropiadas';
 $string['tag:manage'] = 'Gestionar todas las marcas';
 $string['thisnewrole'] = 'Este nuevo rol';
-$string['thisusersroles'] = 'Asignaciones de rol para este usuario';
+$string['thisusersroles'] = 'Asignaciones de rol de este usuario';
 $string['unassignarole'] = 'Desasignar rol {$a}';
 $string['unassignconfirm'] = '¿Realmente desea desasignar el rol "{$a->role}" del usuario "{$a->user}"?';
 $string['unassignerror'] = 'Error al desasignar el rol {$a->role} del usuario {$a->user}.';
@@ -414,6 +416,7 @@ $string['user:update'] = 'Actualizar perfiles de usuario';
 $string['user:viewalldetails'] = 'Ver información completa del usuario';
 $string['user:viewdetails'] = 'Ver perfiles de usuario';
 $string['user:viewhiddendetails'] = 'Ver detalles ocultos de los usuarios';
+$string['user:viewlastip'] = 'Ver última dirección ip del usuario';
 $string['user:viewuseractivitiesreport'] = 'Ver informes de actividad de los usuarios';
 $string['user:viewusergrades'] = 'Ver calificaciones de los usuarios';
 $string['useshowadvancedtochange'] = 'Usar "Mostrar avanzadas" para cambiar';

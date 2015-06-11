@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository_s3', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   repository_s3
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access_key'] = 'Clef d\'accès';
 $string['configplugin'] = 'Configuration Amazon S3';
+$string['endpoint'] = 'Point de terminaison Amazon S3';
 $string['needaccesskey'] = 'Une clef d\'accès doit être fournie';
 $string['pluginname'] = 'Amazon S3';
 $string['s3:view'] = 'Consulter un dépôt Amazon S3';

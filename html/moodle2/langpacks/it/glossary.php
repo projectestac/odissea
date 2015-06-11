@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['attachment_help'] = 'Alle voci è possibile allegare uno o più file.';
 $string['author'] = 'autore';
 $string['authorview'] = 'Visualizza per autore';
 $string['back'] = 'Indietro';
+$string['cachedef_concepts'] = 'Collegamenti voci di glossario';
 $string['cantinsertcat'] = 'Non è possibile inserire la categoria';
 $string['cantinsertrec'] = 'Non è possibile inserire il record';
 $string['cantinsertrel'] = 'Non è possibile inserire la relazione categoria-voce';
@@ -158,6 +159,15 @@ $string['errconceptalreadyexists'] = 'La voce è già presente. In questo glossa
 $string['errdeltimeexpired'] = 'Eliminazione non consentita. Tempo scaduto!';
 $string['erredittimeexpired'] = 'E\' scaduto il tempo per la modifica di questa voce.';
 $string['errorparsingxml'] = 'Si sono verificati errori durante il parsing del file. Assicurarsi che la sintassi XML sia corretta.';
+$string['eventcategorycreated'] = 'Creata categoria';
+$string['eventcategorydeleted'] = 'Eliminata categoria';
+$string['eventcategoryupdated'] = 'Aggiornata categoria';
+$string['evententryapproved'] = 'Approvata voce di glossario';
+$string['evententrycreated'] = 'Creata voce di glossario';
+$string['evententrydeleted'] = 'Eliminata voce di glossario';
+$string['evententrydisapproved'] = 'Disapprovata voce di glossario';
+$string['evententryupdated'] = 'Aggiornata voce di glossario';
+$string['evententryviewed'] = 'Visualizzata voce di glossario';
 $string['explainaddentry'] = 'Aggiungi un termine al glossario.<br />Concetto e definizione sono campi obbligatori.';
 $string['explainall'] = 'Visualizza TUTTE le voci nella stessa pagina';
 $string['explainalphabet'] = 'Sfoglia il glossario usando questo indice';

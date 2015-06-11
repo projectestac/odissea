@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'De site op afstand heeft geprobeerd he bericht te ontcij
 $string['error7024'] = 'Je hebt een onversleuteld bericht gestuurd naar de site op afstand, maar deze site accepteert geen onversleutelde boodschappen van jouw site. Dit is heel ongewoon. Je kunt best een foutmelding maken, waarbij je zoveel mogelijk informatie geeft over de betreffende applicatieversie enz.';
 $string['error7026'] = 'De sleutel waarmee je boodschap is ondertekend, is verschillend van de sleutel waarover de host op afstand over beschikt voor jouw server. Bovendien heeft die host geprobeerd je huidige sleutel te bekomen en is daar niet in gelukt. Geef de sleutel opnieuw manueel door en probeer nog eens.';
 $string['error709'] = 'De site op afstand kon van jouw site geen SSL key bekomen.';
+$string['eventaccesscontrolcreated'] = 'Toegangscontrole aangemaakt';
+$string['eventaccesscontrolupdated'] = 'Toeganscontrole aangepast';
 $string['expired'] = 'Deze sleutel verloopt op';
 $string['expires'] = 'Geldig tot';
 $string['expireyourkey'] = 'Verwijder deze sleutel';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'MNET ID-Provider';
 $string['mnetidproviderdesc'] = 'Je kunt dit gebruiken om een link te bekomen waar je kunt inloggen als je het juiste e-mailadres kunt geven dat overeen komt met de gebruikersnaam waarmee je net probeerde in te loggen';
 $string['mnetidprovidermsg'] = 'Je zou moeten kunnen aanmelden bij je {$a} provider.';
 $string['mnetidprovidernotfound'] = 'Er kon niet meer informatie gevonden worden.';
-$string['mnetlog'] = 'Logs';
 $string['mnetpeers'] = 'Peer servers';
 $string['mnetservices'] = 'Services';
 $string['mnet_session_prohibited'] = 'Gebruikers van jouw server mogen op dit moment niet op {$a} aanmelden.';

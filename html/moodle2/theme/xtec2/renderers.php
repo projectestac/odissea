@@ -16,160 +16,275 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         return parent::user_picture($user, $options);
     }
 
-	/**
-     * Return the standard string that says whether you are logged in (and switched
-     * roles/logged in as another user).
-     * @return string HTML fragment.
-     */
-    public function login_info($withlinks = null) {
-        global $USER, $CFG, $DB, $SESSION;
 
-        if (during_initial_install()) {
-            return '';
-        }
 
-        if (is_null($withlinks)) {
-            $withlinks = empty($this->page->layout_options['nologinlinks']);
-        }
-
-        $loginpage = ((string)$this->page->url === get_login_url());
-        $course = $this->page->course;
-        if (\core\session\manager::is_loggedinas()) {
-            $realuser = \core\session\manager::get_realuser();
-            $fullname = fullname($realuser, true);
-            if ($withlinks) {
-                $loginastitle = get_string('loginas');
-                $realuserinfo = " [<a href=\"$CFG->wwwroot/course/loginas.php?id=$course->id&amp;sesskey=".sesskey()."\"";
-                $realuserinfo .= "title =\"".$loginastitle."\">$fullname</a>] ";
-            } else {
-                $realuserinfo = " [$fullname] ";
-            }
-        } else {
-            $realuserinfo = '';
-        }
-
-        $loginurl = get_login_url();
-
-        if (empty($course->id)) {
-            // $course->id is not defined during installation
-            return '';
-        } else if (isloggedin()) {
-            $context = context_course::instance($course->id);
-
-            $fullname = fullname($USER, true);
-            $picture = $this->user_picture($USER, array('alttext' => false, 'size' => 27, 'link' => false));
-
-            $username = $picture.$fullname;
-            if (is_mnet_remote_user($USER) and $idprovider = $DB->get_record('mnet_host', array('id' => $USER->mnethostid))) {
-                if ($withlinks) {
-                    $username .= " from <a href=\"{$idprovider->wwwroot}\">{$idprovider->name}</a>";
-                } else {
-                    $username .= " from {$idprovider->name}";
-                }
-            }
-
-            // Navigation to the User menu
-            $options = $this->get_user_menu();
-
-            $loggedinas = '<div class="dropdown pull-right">';
-            if (isguestuser()) {
-                $loggedinas .= $realuserinfo.get_string('loggedinasguest');
-                if (!$loginpage && $withlinks) {
-                    $loggedinas .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
-                }
-            } else if (is_role_switched($course->id)) { // Has switched roles
-                $rolename = '';
-                if ($role = $DB->get_record('role', array('id' => $USER->access['rsw'][$context->path]))) {
-                    $rolename = ': '.role_get_name($role, $context);
-                }
-                $loggedinas .= '<a class="dropdown-toggle" data-toggle="dropdown" href="#">'.$username.$rolename.'<b class="caret"></b></a>';
-                if ($withlinks) {
-                    $url = new moodle_url('/course/switchrole.php', array('id' => $course->id,'sesskey' => sesskey(), 'switchrole' => 0, 'returnurl' => $this->page->url->out_as_local_url(false)));
-                    $options [] = '<li>'.html_writer::tag('a', get_string('switchrolereturn'), array('href' => $url)).'</li>';
-                }
-            } else {
-                $loggedinas .= $realuserinfo.'<a class="dropdown-toggle" data-toggle="dropdown" href="#">'.$username.'<b class="caret"></b></a>';
-                if ($withlinks) {
-					$options [] = "<li><a href=\"$CFG->wwwroot/login/logout.php?sesskey=".sesskey()."\">".get_string('logout').'</a></li>';
-                }
-            }
-            if (!empty($options)) {
-				$loggedinas .= '<ul class="dropdown-menu">';
-				foreach ($options as $option) {
-					$loggedinas .= $option;
-				}
-				$loggedinas .= '</ul>';
-			}
-			$loggedinas .= '</div>';
-        } else {
-            $loggedinas = get_string('loggedinnot', 'moodle');
-            if (!$loginpage && $withlinks) {
-                $loggedinas .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
-            }
-        }
-
-        $loggedinas = '<div class="logininfo pull-right">'.$loggedinas.'</div>';
-
-        if (isset($SESSION->justloggedin)) {
-            unset($SESSION->justloggedin);
-            if (!empty($CFG->displayloginfailures)) {
-                if (!isguestuser()) {
-                    if ($count = count_login_failures($CFG->displayloginfailures, $USER->username, $USER->lastlogin)) {
-                        $loggedinas .= '&nbsp;<div class="loginfailures">';
-                        if (empty($count->accounts)) {
-                            $loggedinas .= get_string('failedloginattempts', '', $count);
-                        } else {
-                            $loggedinas .= get_string('failedloginattemptsall', '', $count);
-                        }
-                        if (file_exists("$CFG->dirroot/report/log/index.php") and has_capability('report/log:view', context_system::instance())) {
-                            $loggedinas .= ' (<a href="'.$CFG->wwwroot.'/report/log/index.php'.
-                                                 '?chooselog=1&amp;id=1&amp;modid=site_errors">'.get_string('logs').'</a>)';
-                        }
-                        $loggedinas .= '</div>';
-                    }
-                }
-            }
-        }
-
+    public function messages_menu() {
+        global $CFG;
         if (isloggedin() && !isguestuser()) {
             if (file_exists($CFG->dirroot.'/local/agora/message_notifier/global.lib.php')) {
                 require_once($CFG->dirroot.'/local/agora/message_notifier/global.lib.php');
                 if (function_exists('message_notifier_get_badge')) {
-                    $messages = message_notifier_get_badge();
-                    $loggedinas .= $messages;
+                    return message_notifier_get_badge();
                 }
             }
-		}
-        return $loggedinas;
+        }
+        return "";
     }
 
-    public function get_user_menu() {
+    /**
+     * Construct a user menu, returning HTML that can be echoed out by a
+     * layout file.
+     *
+     * @param stdClass $user A user object, usually $USER.
+     * @param bool $withlinks true if a dropdown should be built.
+     * @return string HTML fragment.
+     */
+    public function user_menu($user = null, $withlinks = null) {
+        global $USER, $CFG;
+        require_once($CFG->dirroot . '/user/lib.php');
 
-    	$options = array();
-
-    	$mymoodle = $this->page->navigation->get('home');
-    	if ($mymoodle) {
-			$options[] = theme_xtec2_render_user_settings($mymoodle, array(), null, array(), 2);
-		}
-    	$myprofile = $this->page->navigation->get('myprofile');
-		if ($myprofile && $myprofile->has_children()) {
-			foreach ($myprofile->children as $child) {
-				$options[] = theme_xtec2_render_user_settings($child, array(), null, array(), 2);
-			}
-		}
-        if ($this->page->navigation->get('myprofile')) {
-            $this->page->navigation->get('myprofile')->hide();
+        if (is_null($user)) {
+            $user = $USER;
         }
 
-    	$usernav = $this->page->settingsnav->get('usercurrentsettings');
-		if ($usernav && $usernav->has_children()) {
-			$options[] = theme_xtec2_render_user_settings($usernav, array(), null, array(), 2);
-		}
-        if ($this->page->settingsnav->get('usercurrentsettings')) {
-            $this->page->settingsnav->get('usercurrentsettings')->hide();
+        // Note: this behaviour is intended to match that of core_renderer::login_info,
+        // but should not be considered to be good practice; layout options are
+        // intended to be theme-specific. Please don't copy this snippet anywhere else.
+        if (is_null($withlinks)) {
+            $withlinks = empty($this->page->layout_options['nologinlinks']);
         }
 
-		return $options;
+        // Add a class for when $withlinks is false.
+        $usermenuclasses = 'usermenu';
+        if (!$withlinks) {
+            $usermenuclasses .= ' withoutlinks';
+        }
+
+        $returnstr = "";
+
+        // If during initial install, return the empty return string.
+        if (during_initial_install()) {
+            return $returnstr;
+        }
+
+        $loginpage = ((string)$this->page->url === get_login_url());
+        $loginurl = get_login_url();
+        // If not logged in, show the typical not-logged-in string.
+        if (!isloggedin()) {
+            $returnstr = get_string('loggedinnot', 'moodle');
+            if (!$loginpage) {
+                $returnstr .= " (<a href=\"$loginurl\">" . get_string('login') . '</a>)';
+            }
+            return html_writer::div(
+                html_writer::span(
+                    $returnstr,
+                    'login'
+                ),
+                $usermenuclasses
+            );
+
+        }
+
+        // If logged in as a guest user, show a string to that effect.
+        if (isguestuser()) {
+            $returnstr = get_string('loggedinasguest');
+            if (!$loginpage && $withlinks) {
+                $returnstr .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
+            }
+
+            return html_writer::div(
+                html_writer::span(
+                    $returnstr,
+                    'login'
+                ),
+                $usermenuclasses
+            );
+        }
+
+        // Get some navigation opts.
+        $opts = user_get_user_navigation_info($user, $this->page, $this->page->course);
+
+        $opt = array_pop($opts->navitems); // Get the last item to add it at the end
+
+        $calendar = new stdClass();
+        $calendar->itemtype = 'link';
+        $calendar->url = new moodle_url('/calendar/view.php', array('view' => 'month'));
+        $calendar->title = get_string('calendar', 'calendar');
+        $calendar->pix = 'i/calendar';
+        $opts->navitems[] = $calendar;
+
+        // Link: Grades
+        $courses = enrol_get_users_courses($user->id, true);
+        if (!empty($courses)) {
+            $mygrades = new stdClass();
+            $mygrades->itemtype = 'link';
+            $course = array_shift($courses);
+            $mygrades->url = new moodle_url('/grade/report/overview/index.php', array('id' => $course->id));
+            $mygrades->title = get_string('mygrades', 'local_agora');
+            $mygrades->pix = 't/grades';
+            $opts->navitems[] = $mygrades;
+        }
+
+        $opts->navitems[] = $opt;  // Add the last item at the end
+
+        $avatarclasses = "avatars";
+        $avatarcontents = html_writer::span($opts->metadata['useravatar'], 'avatar current');
+        $usertextcontents = $opts->metadata['userfullname'];
+
+        // Other user.
+        if (!empty($opts->metadata['asotheruser'])) {
+            $avatarcontents .= html_writer::span(
+                $opts->metadata['realuseravatar'],
+                'avatar realuser'
+            );
+            $usertextcontents = $opts->metadata['realuserfullname'];
+            $usertextcontents .= html_writer::tag(
+                'span',
+                get_string(
+                    'loggedinas',
+                    'moodle',
+                    html_writer::span(
+                        $opts->metadata['userfullname'],
+                        'value'
+                    )
+                ),
+                array('class' => 'meta viewingas')
+            );
+        }
+
+        // Role.
+        if (!empty($opts->metadata['asotherrole'])) {
+            $role = core_text::strtolower(preg_replace('#[ ]+#', '-', trim($opts->metadata['rolename'])));
+            $usertextcontents .= html_writer::span(
+                $opts->metadata['rolename'],
+                'meta role role-' . $role
+            );
+        }
+
+        // User login failures.
+        if (!empty($opts->metadata['userloginfail'])) {
+            $usertextcontents .= html_writer::span(
+                $opts->metadata['userloginfail'],
+                'meta loginfailures'
+            );
+        }
+
+        // MNet.
+        if (!empty($opts->metadata['asmnetuser'])) {
+            $mnet = strtolower(preg_replace('#[ ]+#', '-', trim($opts->metadata['mnetidprovidername'])));
+            $usertextcontents .= html_writer::span(
+                $opts->metadata['mnetidprovidername'],
+                'meta mnet mnet-' . $mnet
+            );
+        }
+
+        $returnstr .= $usertextcontents.$avatarcontents;
+
+        // Navigation to the User menu
+        $options = array();
+
+        $navitemcount = count($opts->navitems);
+        $idx = 0;
+        foreach ($opts->navitems as $key => $value) {
+            switch ($value->itemtype) {
+                case 'divider':
+                    // If the nav item is a divider, add one and skip link processing.
+                    $options[] = '<li class="divider"></li>';
+                    break;
+
+                case 'invalid':
+                    // Silently skip invalid entries (should we post a notification?).
+                    break;
+
+                case 'link':
+                    // Process this as a link item.
+                    $pix = "";
+                    if (isset($value->pix) && !empty($value->pix)) {
+                        $pix = new pix_icon($value->pix, $value->title, null, array('class' => 'iconsmall'));
+                        $pix = $this->render($pix);
+                    } else if (isset($value->imgsrc) && !empty($value->imgsrc)) {
+                        $value->title = html_writer::img(
+                            $value->imgsrc,
+                            $value->title,
+                            array('class' => 'iconsmall')
+                        ) . $value->title;
+                    }
+                    $options[] = '<li><a class="icon menu-action" role="menuitem" href="'.$value->url.'" >'.$pix.
+                    '<span class="menu-action-text">'.$value->title.'</span></a></li>';
+                    break;
+            }
+
+            $idx++;
+
+            // Add dividers after the first item and before the last item.
+            if ($idx == 1) {
+                $options[] = '<li class="divider"></li>';
+            } else if ($idx == $navitemcount - 1) {
+                $options[] = '<li class="divider"></li>';
+                $myprofile = $this->page->navigation->get('myprofile');
+                if ($myprofile && $myprofile->has_children()) {
+                    $deleteditems = array(get_string('viewprofile'), get_string('messages', 'message'), get_string('myfiles'), get_string('mybadges', 'badges'));
+
+                    foreach ($myprofile->children as $child) {
+                        if (!in_array($child->get_content(), $deleteditems)) {
+                            $options[] = theme_xtec2_render_dropdown_menu($child);
+                        }
+                    }
+                }
+
+                $usernav = $this->page->settingsnav->get('usercurrentsettings');
+                if ($usernav && $usernav->has_children()) {
+                    $title = $usernav->get_content();
+                    $text = '<li class="icon dropdown-submenu pull-left">';
+                    $pix = new pix_icon('i/settings', $title, null, array('class' => 'iconsmall'));
+                    $text .= '<a class="icon dropdown-toggle" data-toggle="dropdown" href="#">'.$this->render($pix);
+                    $text .= '<span class="menu-action-text">'.$title.'</span></a><ul class="dropdown-menu">';
+                    foreach ($usernav->children as $child) {
+                        $text .= theme_xtec2_render_dropdown_menu($child);
+                    }
+                    $text .= '</ul></li>';
+                    $options[] = $text;
+                }
+                $options[] = '<li class="divider"></li>';
+            }
+        }
+
+        if (empty($options)) {
+            return $returnstr;
+        }
+
+        $menu = '<div id="usermenu" class="dropdown pull-right">';
+        $menu .= '<a id="usermenu_toogle" class="dropdown-toggle" href="#usermenu">'.$returnstr.'<b class="caret"></b></a>';
+        $menu .= '<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">';
+        foreach ($options as $option) {
+            $menu .= $option;
+        }
+        $menu .= '</ul>';
+        $menu .= '</div>';
+
+        return $menu;
+    }
+
+    public function standard_end_of_body_html() {
+        global $CFG;
+
+        // This function is normally called from a layout.php file in {@link core_renderer::header()}
+        // but some of the content won't be known until later, so we return a placeholder
+        // for now. This will be replaced with the real content in {@link core_renderer::footer()}.
+        $output = '';
+        if (!empty($CFG->additionalhtmlfooter)) {
+            $output .= "\n".$CFG->additionalhtmlfooter;
+        }
+        $output .= $this->unique_end_html_token;
+
+        $jsmodule = array(
+            'name'     => 'theme_xtec2',
+            'fullpath' => '/theme/xtec2/javascript/xtec2_footer.js',
+            'requires' => array('base'),
+        );
+        $this->page->requires->js_init_call('M.theme_xtec2.init',array(), true, $jsmodule);
+
+        return $output;
     }
 
     /*
@@ -262,40 +377,53 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 
         $currentcourse = $this->page->navigation->get('currentcourse');
         if ($currentcourse  && $currentcourse->has_children()) {
-            $content .= '<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="'.$currentcourse->get_content().'">';
-            $content .= $currentcourse->get_content().'<b class="caret"></b></a><ul class="dropdown-menu pull-right">';
+            $menucontent = "";
             foreach ($currentcourse->children as $child) {
                 foreach ($child->children as $child2) {
-                    $content .= theme_xtec2_render_user_settings($child2, array(), null, array(), 2);
+                    $menucontent .= theme_xtec2_render_dropdown_menu($child2);
                 }
             }
-            $content .= '</ul>';
+            if (!empty($menucontent)) {
+                $content .= '<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="'.$currentcourse->get_content().'">';
+                $content .= $currentcourse->get_content().'<b class="caret"></b></a><ul class="dropdown-menu pull-right">';
+                $content .= $menucontent;
+                $content .= '</ul>';
+            }
         }
 
         $navigation = $this->page->navigation;
         if ($navigation  && $navigation->has_children()) {
-            $content .= '<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="'.get_string('pluginname', 'block_navigation').'">';
-            $content .= get_string('pluginname', 'block_navigation').'<b class="caret"></b></a><ul class="dropdown-menu pull-right">';
+            $menucontent = "";
             foreach ($navigation->children as $child) {
-                if ($child->key != 'currentcourse' && $child->key != 'home') {
-                    $content .= theme_xtec2_render_user_settings($child, array(), null, array(), 2);
+                if ($child->key != 'currentcourse' && $child->key != 'home' && $child->key != 'myprofile') {
+                    $menucontent .= theme_xtec2_render_dropdown_menu($child);
                 }
-
             }
-            $content .= '</ul>';
+            if (!empty($menucontent)) {
+                $content .= '<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="'.get_string('pluginname', 'block_navigation').'">';
+                $content .= get_string('pluginname', 'block_navigation').'<b class="caret"></b></a><ul class="dropdown-menu pull-right">';
+                $content .= $menucontent;
+                $content .= '</ul>';
+            }
         }
 
         $settings = $this->page->settingsnav;
         if ($settings  && $settings->has_children()) {
-            $content .= '<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="'.get_string('pluginname', 'block_settings').'">';
-            $content .= get_string('pluginname', 'block_settings').'<b class="caret"></b></a><ul class="dropdown-menu pull-right">';
+            $menucontent = "";
             foreach ($settings->children as $child) {
-                $content .= theme_xtec2_render_user_settings($child, array(), null, array(), 2);
+                if ($child->key != 'usercurrentsettings') {
+                    $menucontent .= theme_xtec2_render_dropdown_menu($child);
+                }
             }
             if (has_capability('moodle/site:config', context_system::instance())) {
-                $content .= '<li><form class="navbar-search" method="get" action="'.$CFG->wwwroot.'/'.$CFG->admin.'/search.php"><input type="text" class="search-query" name="query" placeholder="'.get_string('search').'"></form></li>';
+                $menucontent .= '<li><form class="navbar-search" method="get" action="'.$CFG->wwwroot.'/'.$CFG->admin.'/search.php"><input type="text" class="search-query" name="query" placeholder="'.get_string('search').'"></form></li>';
             }
-            $content .= '</ul>';
+            if (!empty($menucontent)) {
+                $content .= '<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="'.get_string('pluginname', 'block_settings').'">';
+                $content .= get_string('pluginname', 'block_settings').'<b class="caret"></b></a><ul class="dropdown-menu pull-right">';
+                $content .= $menucontent;
+                $content .= '</ul>';
+            }
         }
 
         return $content.'</ul>';
@@ -360,6 +488,10 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         if (get_config('theme_xtec2', 'intranet') && theme_xtec2_is_service_enabled('intranet')) {
             $content .= '<a href="'.get_service_url('intranet').'" target="_blank" class="agora-social icon intranet"><img src="'.$OUTPUT->pix_url('intranet-32', 'theme').'" alt="" title="Intranet" /></a>';
         }
+        if ($url = get_config('theme_xtec2', 'whatsapp')) {
+            $content .= '<a href="tel:'.$url.'" target="_blank"><i class="fa fa-whatsapp" title="'.get_string('whatsapp_tel', 'theme_xtec2', $url).'"></i></a>';
+        }
+
         if ($url = get_config('theme_xtec2', 'facebook')) {
 			$content .= '<a href="'.$url.'" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a>';
 		}
@@ -384,6 +516,10 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 		if ($url = get_config('theme_xtec2', 'youtube')) {
 			$content .= '<a href="'.$url.'" target="_blank"><i class="fa fa-youtube" title="Youtube"></i></a>';
 		}
+        if ($url = get_config('theme_xtec2', 'skype')) {
+            $url = 'skype://'.$url;
+            $content .= '<a href="'.$url.'" target="_blank"><i class="fa fa-skype" title="Skype"></i></a>';
+        }
         $cache->set('social_icons', $content);
         return $content;
     }
@@ -405,27 +541,37 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             'withpassword' => 'lock',
             'withoutkey' => 'magic',
             'a/download_all' => 'cloud-download',
+            'a/logout' => 'sign-out',
             'i/badge' => 'trophy',
             'i/course' => 'graduation-cap',
+            'i/enrolusers' => 'user-plus',
             'i/marker' => 'lightbulb-o',
             'i/dragdrop' => 'arrows',
+            'i/loading' => 'refresh fa-spin fa-2x',
             'i/loading_small' => 'spinner fa-spin ',
             'i/backup' => 'cloud-download',
+            'i/calendar' => 'calendar',
             'i/checkpermissions' => 'user',
             'i/dragdrop' => 'arrows',
             'i/edit' => 'pencil',
+            'i/email' => 'envelope-o',
             'i/filter' => 'filter',
             'i/folder' => 'folder',
             'i/grades' => 'table',
             'i/group' => 'group',
-            'i/groupn' => 'user',
+            'i/groupn' => 'group',
+            'i/groupv' => 'group',
+            'i/groups' => 'group',
             'i/hide' => 'eye-slash',
-            'i/import' => 'upload',
+            'i/import' => 'download',
+            'i/export' => 'upload',
             'i/info' => 'info-circle',
+            'i/item' => 'circle-o',
             'i/move_2d' => 'arrows',
             'i/navigationitem' => 'circle',
             'i/outcomes' => 'pie-chart',
             'i/publish' => 'globe',
+            'i/preview' => 'search',
             'i/reload' => 'refresh',
             'i/report' => 'list-alt',
             'i/restore' => 'cloud-upload',
@@ -433,7 +579,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             'i/roles' => 'user',
             'i/cohort' => 'users',
 			'i/scales' => 'signal',
-            'i/settings' => 'cogs',
+            'i/settings' => 'cog',
             'i/show' => 'eye',
             'i/switchrole' => 'random',
             'i/user' => 'user',
@@ -444,16 +590,18 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 			't/add' => 'plus',
             'i/assignroles' => 'lock',
 			't/assignroles' => 'lock',
+            't/award' => 'trophy',
 			't/cohort' => 'users',
 			't/delete' => 'times-circle',
-			't/edit' => 'cog',
+			't/edit' => 'pencil',
 			't/right' => 'arrow-right',
             't/left' => 'arrow-left',
-			't/edit_menu' => 'cogs',
-			// 't/hide' => 'eye-slash', Disabled to solve errors hidding activities
+			't/edit_menu' => 'cog',
+			// 't/hide' => 'eye-slash', //Disabled to solve errors hidding activities
 			// 't/show' => 'eye',
 			't/up' => 'arrow-up',
 			't/down' => 'arrow-down',
+            't/download' => 'download',
             't/copy' => 'copy',
             't/lock' => 'unlock',
             't/unlock' => 'lock',
@@ -499,6 +647,30 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         } else {
             return parent::render_pix_icon($icon);
         }
+    }
+
+    /**
+     * Returns HTML to display a "Turn editing on/off" button in a form.
+     *
+     * @param moodle_url $url The URL + params to send through when clicking the button
+     * @return string HTML the button
+     * Written by G J Barnard
+     */
+    public function edit_button(moodle_url $url) {
+        $url->param('sesskey', sesskey());
+        if ($this->page->user_is_editing()) {
+            $url->param('edit', 'off');
+            $btn = 'btn-danger';
+            $title = get_string('turneditingoff');
+            $icon = 'fa-power-off';
+        } else {
+            $url->param('edit', 'on');
+            $btn = 'btn-success';
+            $title = get_string('turneditingon');
+            $icon = 'fa-edit';
+        }
+        return html_writer::tag('a', html_writer::start_tag('i', array('class' => $icon . ' fa fa-fw')) .
+            html_writer::end_tag('i') . $title, array('href' => $url, 'class' => 'edit-btn btn ' . $btn, 'title' => $title));
     }
 
     public static function agora_alerts() {
@@ -569,6 +741,37 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             }
         }
         return false;
+    }
+
+    public function course_content_header($onlyifnotcalledbefore = false) {
+                global $CFG;
+        if ($this->page->course->id == SITEID) {
+            // return immediately and do not include /course/lib.php if not necessary
+            return '';
+        }
+        static $functioncalled = false;
+        if ($functioncalled && $onlyifnotcalledbefore) {
+            // we have already output the content header
+            return '';
+        }
+        require_once($CFG->dirroot.'/course/lib.php');
+        $functioncalled = true;
+        $courseformat = course_get_format($this->page->course);
+        $return = "";
+        if (($obj = $courseformat->course_content_header()) !== null) {
+            $return = html_writer::div($courseformat->get_renderer($this->page)->render($obj), 'course-content-header');
+        }
+
+        if ($this->page->pagelayout == 'course' && theme_xtec2_show_course_grades($this->page->course->showgrades, $this->page->course->id)) {
+            $title = get_string('grades');
+            $url = $CFG->wwwroot.'/grade/report/index.php?id=' . $this->page->course->id;
+            $return .= '<div class="agora_navbar">';
+            $return .= html_writer::tag('a', html_writer::start_tag('i', array('class' => 'fa fa-fw fa-table')) .
+                html_writer::end_tag('i') . $title, array('href' => $url, 'class' => 'edit-btn btn btn-primary', 'title' => $title));
+            $return .= '</div>';
+        }
+
+        return $return;
     }
 
 }

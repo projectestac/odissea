@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_manual', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['alterstatus'] = '상태 변경';
 $string['altertimeend'] = '종료시간 변경';
 $string['altertimestart'] = '시작시간 변경';
 $string['assignrole'] = '역할 부여';
+$string['browsecohorts'] = '수업집단 살펴보기';
 $string['confirmbulkdeleteenrolment'] = '이 사용자들의 등록을 삭제하기를 원하십니까?';
 $string['defaultperiod'] = '기본 등록 기간';
 $string['defaultperiod_desc'] = '기본 등록 기간 설정의 기본 시간(초).';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -146,6 +146,7 @@ $string['cannotsetupblock'] = 'As tabelas dos blocos não foram configuradas com
 $string['cannotsetupcapformod'] = 'Não foi possível configurar as capacidades para {$a}';
 $string['cannotsetupcapforplugin'] = 'Não foi possível configurar as capacidades para {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Não é possível mostrar/esconder as disciplinas na categoria {$a}';
+$string['cannotsignup'] = 'Não pode criar uma nova conta uma vez que já se encontra autenticado como {$a}.';
 $string['cannotunassigncap'] = 'Não foi possível remover a capacidade descontinuada {$a->cap} do papel {$a->role}';
 $string['cannotunassignrolefrom'] = 'Não é possível subscrever este utilizador do papel com o id: {$a}';
 $string['cannotunzipfile'] = 'Não é possível descompactar o ficheiro ZIP';
@@ -378,7 +379,7 @@ $string['missinguseranditemid'] = 'Falta algum campo necessário';
 $string['missingvarname'] = 'Nome da variável obrigatório está em falta';
 $string['mixedtypesqlparam'] = 'ERRO: Mixed tipos de parâmetros de consulta sql!';
 $string['mnetdisable'] = 'MNET está desativada';
-$string['mnetlocal'] = 'Os usuários remotos MNET não podem entrar no local';
+$string['mnetlocal'] = 'Os usuários remotos MNET não podem autenticar-se localmente';
 $string['moduledisable'] = 'O módulo ({$a}) foi desativado para esta disciplina';
 $string['moduledoesnotexist'] = 'Este módulo não existe';
 $string['moduleinstancedoesnotexist'] = 'Não existem instâncias deste módulo';
@@ -473,7 +474,7 @@ $string['sendmessage'] = 'Enviar mensagem';
 $string['serverconnection'] = 'Ocorreu um erro ao conectar com o servidor';
 $string['servicedonotexist'] = 'Esse serviço não existe';
 $string['sessioncookiesdisable'] = 'Uso incorreto da require_key_login() - os cookies da sessão devem estar desativos!';
-$string['sessiondiskfull'] = 'A partição da sessão está completa. Não é possível entrar neste momento.<br /><br />Avise o administrador do site.';
+$string['sessiondiskfull'] = 'A partição da sessão está completa. Não é possível entrar neste momento. Por favor, avise o administrador do site.';
 $string['sessionerroruser'] = 'A sua sessão expirou. Autentique-se novamente.';
 $string['sessionerroruser2'] = 'Foi detetado um erro no servidor que afeta a sua sessão atual. Por favor, volte a autenticar-se ou reinicie o seu browser.';
 $string['sessionhandlerproblem'] = 'O handler de sessão está mal configurado';

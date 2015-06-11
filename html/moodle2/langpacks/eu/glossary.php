@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['attachment_help'] = 'Glosategi bateko sarrerari fitxategi bat edo gehia
 $string['author'] = 'egilea';
 $string['authorview'] = 'Egilearen arabera bilatu';
 $string['back'] = 'Atzera';
+$string['cachedef_concepts'] = 'Kontzeptuak estekatzea';
 $string['cantinsertcat'] = 'Ezin da kategoria txertatu';
 $string['cantinsertrec'] = 'Ezin da erregistroa txertatu';
 $string['cantinsertrel'] = 'Ezin kategoria-sarrera erlaziorik ezarri';
@@ -160,6 +161,15 @@ $string['errconceptalreadyexists'] = 'Kontzeptu hau dagoeneko existitzen da. Glo
 $string['errdeltimeexpired'] = 'Ezin duzu hau ezabatu. Denbora amaitu egin da!';
 $string['erredittimeexpired'] = 'Sarrera hau editatzeko denbora amaitu egin da.';
 $string['errorparsingxml'] = 'Errorea fitxategia aztertzean. Ziurta ezazu XML sintaxia ondo dagoela.';
+$string['eventcategorycreated'] = 'Kategoria sortu da';
+$string['eventcategorydeleted'] = 'Kategoria ezabatu da';
+$string['eventcategoryupdated'] = 'Kategoria eguneratu da';
+$string['evententryapproved'] = 'Sarrera onartu da';
+$string['evententrycreated'] = 'Sarrera sortu da';
+$string['evententrydeleted'] = 'Sarrera ezabatu da';
+$string['evententrydisapproved'] = 'Sarrera baztertu da';
+$string['evententryupdated'] = 'Sarrera eguneratu da';
+$string['evententryviewed'] = 'Sarrera ikusi da';
 $string['explainaddentry'] = 'Beste sarrera bat gehitu glosategi honetara.<br />Kontzeptua eta azalpena derrigorrezko datuak dira.';
 $string['explainall'] = 'Erakutsi sarrera guztiak orri bakar batean';
 $string['explainalphabet'] = 'Bilatu glosategian aurkibide hau erabiliz';

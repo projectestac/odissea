@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,6 @@ Hai un certo número de opcións de presentación do URL, incorporada ou para ab
 Vexa que os URL tamén poden engadirse a calquera outro recurso ou tipo de actividade a través do editor de texto.';
 $string['modulename_link'] = 'mod/url/vista';
 $string['modulenameplural'] = 'URL';
-$string['neverseen'] = 'Nunca visto';
 $string['page-mod-url-x'] = 'Calquera URL do módulo páxina';
 $string['parameterinfo'] = '&amp;parámetro=variábel';
 $string['parametersheader'] = 'Variábeis de URL';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['colcalendar'] = 'カレンダー';
 $string['collastupdated'] = '最終更新日時';
 $string['colpoll'] = '更新間隔';
 $string['commontasks'] = 'オプション';
-$string['confirmeventdelete'] = '本当にこのイベントを削除してもよろしいですか?';
+$string['confirmeventdelete'] = '本当にこのイベント「 {$a} 」を削除してもよろしいですか?';
 $string['course'] = 'コース';
 $string['courseevent'] = 'コースイベント';
 $string['courseevents'] = 'コースイベント';
@@ -71,6 +71,12 @@ $string['errorinvalidrepeats'] = 'イベント数を1から99の間で指定し�
 $string['errornodescription'] = '説明を入力してください';
 $string['errornoeventname'] = '名称を入力してください';
 $string['errorrequiredurlorfile'] = 'カレンダーのインポートに必要なURLまたはファイルです。';
+$string['errorrrule'] = '通過した繰り返しルールが正しくないようです。';
+$string['errorrruleday'] = '繰り返しルールに無効な日付パラメータがあります。';
+$string['errorrrulefreq'] = '繰り返しルールに無効な頻度パラメータがあります。';
+$string['eventcalendareventcreated'] = 'カレンダーイベントが作成されました。';
+$string['eventcalendareventdeleted'] = 'カレンダーイベントが削除されました。';
+$string['eventcalendareventupdated'] = 'カレンダーイベントが更新されました。';
 $string['eventdate'] = '日付';
 $string['eventdescription'] = '説明';
 $string['eventduration'] = '期間';

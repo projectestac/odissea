@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_manual', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Aquest mètode impedeix que els usuaris puguin crear-se comptes. Tots els comptes han de ser creats manualment per l\'usuari administrador.';
+$string['expiration'] = 'Habilita el venciment de les contrasenyes';
+$string['expiration_desc'] = 'Permet que les contrasenyes vencin després d\'un temps determinat.';
+$string['expiration_warning'] = 'Llindar de notificació';
+$string['expiration_warning_desc'] = 'Quants dies abans del venciment de la contrasenya s\'envia una notificació.';
+$string['passwdexpire_settings'] = 'Paràmetres de venciment de contrasenyes';
+$string['passwdexpiretime'] = 'Durada de la contrasenya';
+$string['passwdexpiretime_desc'] = 'Temps durant el qual és vàlida una contrasenya.';
 $string['pluginname'] = 'Comptes manuals';

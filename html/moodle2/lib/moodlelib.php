@@ -414,7 +414,10 @@ define('FEATURE_IDNUMBER', 'idnumber');
 define('FEATURE_GROUPS', 'groups');
 /** True if module supports groupings */
 define('FEATURE_GROUPINGS', 'groupings');
-/** True if module supports groupmembersonly */
+/**
+ * True if module supports groupmembersonly (which no longer exists)
+ * @deprecated Since Moodle 2.8
+ */
 define('FEATURE_GROUPMEMBERSONLY', 'groupmembersonly');
 
 /** Type of module */
@@ -1105,7 +1108,7 @@ function clean_param($param, $type) {
             // Remove some nasties.
             $param = preg_replace('~[[:cntrl:]]|[<>`]~u', '', $param);
             // Convert many whitespace chars into one.
-            $param = preg_replace('/\s+/', ' ', $param);
+            $param = preg_replace('/\s+/u', ' ', $param);
             $param = core_text::substr(trim($param), 0, TAG_MAX_LENGTH);
             return $param;
 
@@ -1623,6 +1626,7 @@ function purge_all_caches() {
     remove_dir($CFG->localcachedir, true);
     set_config('localcachedirpurged', time());
     make_localcache_directory('', true);
+    \core\task\manager::clear_static_caches();
 }
 
 /**
@@ -2186,7 +2190,7 @@ function userdate($date, $format = '', $timezone = 99, $fixday = true, $fixhour 
  * @param string $format strftime format.
  * @param int|float $tz the numerical timezone, typically returned by {@link get_user_timezone_offset()}.
  * @return string the formatted date/time.
- * @since 2.3.3
+ * @since Moodle 2.3.3
  */
 function date_format_string($date, $format, $tz = 99) {
     global $CFG;
@@ -3154,7 +3158,7 @@ function require_login($courseorid = null, $autologinguest = true, $cm = null, $
         $PAGE->set_course($course);
     }
 
-    // Check visibility of activity to current user; includes visible flag, groupmembersonly, conditional availability, etc.
+    // Check visibility of activity to current user; includes visible flag, conditional availability, etc.
     if ($cm && !$cm->uservisible) {
         if ($preventredirect) {
             throw new require_login_exception('Activity is hidden');
@@ -3188,10 +3192,11 @@ function require_logout() {
     }
 
     // Execute hooks before action.
+    $authplugins = array();
     $authsequence = get_enabled_auth_plugins();
     foreach ($authsequence as $authname) {
-        $authplugin = get_auth_plugin($authname);
-        $authplugin->prelogout_hook();
+        $authplugins[$authname] = get_auth_plugin($authname);
+        $authplugins[$authname]->prelogout_hook();
     }
 
     // Store info that gets removed during logout.
@@ -3207,11 +3212,19 @@ function require_logout() {
         $event->add_record_snapshot('sessions', $session);
     }
 
+    // Clone of $USER object to be used by auth plugins.
+    $user = fullclone($USER);
+
     // Delete session record and drop $_SESSION content.
     \core\session\manager::terminate_current();
 
     // Trigger event AFTER action.
     $event->trigger();
+
+    // Hook to execute auth plugins redirection after event trigger.
+    foreach ($authplugins as $authplugin) {
+        $authplugin->postlogout_hook($user);
+    }
 }
 
 /**
@@ -3261,37 +3274,28 @@ function require_course_login($courseorid, $autologinguest = true, $cm = null, $
 
     } else if ($issite) {
         // Login for SITE not required.
-        if ($cm and empty($cm->visible)) {
-            // Hidden activities are not accessible without login.
-            require_login($courseorid, $autologinguest, $cm, $setwantsurltome, $preventredirect);
-        } else if ($cm and !empty($CFG->enablegroupmembersonly) and $cm->groupmembersonly) {
-            // Not-logged-in users do not have any group membership.
-            require_login($courseorid, $autologinguest, $cm, $setwantsurltome, $preventredirect);
-        } else {
-            // We still need to instatiate PAGE vars properly so that things that rely on it like navigation function correctly.
-            if (!empty($courseorid)) {
-                if (is_object($courseorid)) {
-                    $course = $courseorid;
-                } else {
-                    $course = clone($SITE);
-                }
-                if ($cm) {
-                    if ($cm->course != $course->id) {
-                        throw new coding_exception('course and cm parameters in require_course_login() call do not match!!');
-                    }
-                    $PAGE->set_cm($cm, $course);
-                    $PAGE->set_pagelayout('incourse');
-                } else {
-                    $PAGE->set_course($course);
-                }
+        // We still need to instatiate PAGE vars properly so that things that rely on it like navigation function correctly.
+        if (!empty($courseorid)) {
+            if (is_object($courseorid)) {
+                $course = $courseorid;
             } else {
-                // If $PAGE->course, and hence $PAGE->context, have not already been set up properly, set them up now.
-                $PAGE->set_course($PAGE->course);
+                $course = clone $SITE;
             }
-            // TODO: verify conditional activities here.
-            user_accesstime_log(SITEID);
-            return;
+            if ($cm) {
+                if ($cm->course != $course->id) {
+                    throw new coding_exception('course and cm parameters in require_course_login() call do not match!!');
+                }
+                $PAGE->set_cm($cm, $course);
+                $PAGE->set_pagelayout('incourse');
+            } else {
+                $PAGE->set_course($course);
+            }
+        } else {
+            // If $PAGE->course, and hence $PAGE->context, have not already been set up properly, set them up now.
+            $PAGE->set_course($PAGE->course);
         }
+        user_accesstime_log(SITEID);
+        return;
 
     } else {
         // Course login always required.
@@ -3619,9 +3623,20 @@ function fullname($user, $override=false) {
     if (isset($CFG->fullnamedisplay)) {
         $template = $CFG->fullnamedisplay;
     }
-    // If the template is empty, or set to language, or $override is set, return the language string.
-    if (empty($template) || $template == 'language' || $override) {
+    // If the template is empty, or set to language, return the language string.
+    if ((empty($template) || $template == 'language') && !$override) {
         return get_string('fullnamedisplay', null, $user);
+    }
+
+    // Check to see if we are displaying according to the alternative full name format.
+    if ($override) {
+        if (empty($CFG->alternativefullnameformat) || $CFG->alternativefullnameformat == 'language') {
+            // Default to show just the user names according to the fullnamedisplay string.
+            return get_string('fullnamedisplay', null, $user);
+        } else {
+            // If the override is true, then change the template to use the complete name.
+            $template = $CFG->alternativefullnameformat;
+        }
     }
 
     $requirednames = array();
@@ -3677,9 +3692,12 @@ function fullname($user, $override=false) {
  * @param string $tableprefix table query prefix to use in front of each field.
  * @param string $prefix prefix added to the name fields e.g. authorfirstname.
  * @param string $fieldprefix sql field prefix e.g. id AS userid.
+ * @param bool $order moves firstname and lastname to the top of the array / start of the string.
  * @return array|string All name fields.
  */
-function get_all_user_name_fields($returnsql = false, $tableprefix = null, $prefix = null, $fieldprefix = null) {
+function get_all_user_name_fields($returnsql = false, $tableprefix = null, $prefix = null, $fieldprefix = null, $order = false) {
+    // This array is provided in this order because when called by fullname() (above) if firstname is before
+    // firstnamephonetic str_replace() will change the wrong placeholder.
     $alternatenames = array('firstnamephonetic' => 'firstnamephonetic',
                             'lastnamephonetic' => 'lastnamephonetic',
                             'middlename' => 'middlename',
@@ -3691,6 +3709,19 @@ function get_all_user_name_fields($returnsql = false, $tableprefix = null, $pref
     if ($prefix) {
         foreach ($alternatenames as $key => $altname) {
             $alternatenames[$key] = $prefix . $altname;
+        }
+    }
+
+    // If we want the end result to have firstname and lastname at the front / top of the result.
+    if ($order) {
+        // Move the last two elements (firstname, lastname) off the array and put them at the top.
+        for ($i = 0; $i < 2; $i++) {
+            // Get the last element.
+            $lastelement = end($alternatenames);
+            // Remove it from the array.
+            unset($alternatenames[$lastelement]);
+            // Put the element back on the top of the array.
+            $alternatenames = array_merge(array($lastelement => $lastelement), $alternatenames);
         }
     }
 
@@ -3714,6 +3745,8 @@ function get_all_user_name_fields($returnsql = false, $tableprefix = null, $pref
 
 /**
  * Reduces lines of duplicated code for getting user name fields.
+ *
+ * See also {@link user_picture::unalias()}
  *
  * @param object $addtoobject Object to add user name fields to.
  * @param object $secondobject Object that contains user name field information.
@@ -4036,6 +4069,7 @@ function create_user_record($username, $password, $auth = 'manual') {
             }
         }
     }
+
     //XTEC ************ AFEGIT - To capitalize correctly the first and last names
     //2012.12.07 @sarjona
     if (!empty($newuser->firstname)){
@@ -4118,16 +4152,31 @@ function create_user_record($username, $password, $auth = 'manual') {
  */
 function update_user_record($username) {
     global $DB, $CFG;
-    require_once($CFG->dirroot."/user/profile/lib.php");
-    require_once($CFG->dirroot.'/user/lib.php');
     // Just in case check text case.
     $username = trim(core_text::strtolower($username));
 
     $oldinfo = $DB->get_record('user', array('username' => $username, 'mnethostid' => $CFG->mnet_localhost_id), '*', MUST_EXIST);
+    return update_user_record_by_id($oldinfo->id);
+}
+
+/**
+ * Will update a local user record from an external source (MNET users can not be updated using this method!).
+ *
+ * @param int $id user id
+ * @return stdClass A complete user object
+ */
+function update_user_record_by_id($id) {
+    global $DB, $CFG;
+    require_once($CFG->dirroot."/user/profile/lib.php");
+    require_once($CFG->dirroot.'/user/lib.php');
+
+    $params = array('mnethostid' => $CFG->mnet_localhost_id, 'id' => $id, 'deleted' => 0);
+    $oldinfo = $DB->get_record('user', $params, '*', MUST_EXIST);
+
     $newuser = array();
     $userauth = get_auth_plugin($oldinfo->auth);
 
-    if ($newinfo = $userauth->get_userinfo($username)) {
+    if ($newinfo = $userauth->get_userinfo($oldinfo->username)) {
         $newinfo = truncate_userinfo($newinfo);
         $customfields = $userauth->get_custom_user_profile_fields();
 
@@ -4268,7 +4317,7 @@ function delete_user(stdClass $user) {
     // TODO: remove from cohorts using standard API here.
 
     // Remove user tags.
-    tag_set('user', $user->id, array());
+    tag_set('user', $user->id, array(), 'core', $usercontext->id);
 
     // Unconditionally unenrol from all courses.
     enrol_user_delete($user);
@@ -4338,6 +4387,7 @@ function delete_user(stdClass $user) {
     $event = \core\event\user_deleted::create(
             array(
                 'objectid' => $user->id,
+                'relateduserid' => $user->id,
                 'context' => $usercontext,
                 'other' => array(
                     'username' => $user->username,
@@ -4395,7 +4445,7 @@ function guest_user() {
  *
  * Note: this function works only with non-mnet accounts!
  *
- * @param string $username  User's username
+ * @param string $username  User's username (or also email if $CFG->authloginviaemail enabled)
  * @param string $password  User's password
  * @param bool $ignorelockout useful when guessing is prevented by other mechanism such as captcha or SSO
  * @param int $failurereason login failure reason, can be used in renderers (it may disclose if account exists)
@@ -4405,22 +4455,48 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
     global $CFG, $DB;
     require_once("$CFG->libdir/authlib.php");
 
+    if ($user = get_complete_user_data('username', $username, $CFG->mnet_localhost_id)) {
+        // we have found the user
+
+    } else if (!empty($CFG->authloginviaemail)) {
+        if ($email = clean_param($username, PARAM_EMAIL)) {
+            $select = "mnethostid = :mnethostid AND LOWER(email) = LOWER(:email) AND deleted = 0";
+            $params = array('mnethostid' => $CFG->mnet_localhost_id, 'email' => $email);
+            $users = $DB->get_records_select('user', $select, $params, 'id', 'id', 0, 2);
+            if (count($users) === 1) {
+                // Use email for login only if unique.
+                $user = reset($users);
+                $user = get_complete_user_data('id', $user->id);
+                $username = $user->username;
+            }
+            unset($users);
+        }
+    }
+
     $authsenabled = get_enabled_auth_plugins();
 
-    if ($user = get_complete_user_data('username', $username, $CFG->mnet_localhost_id)) {
+    if ($user) {
         // Use manual if auth not set.
         $auth = empty($user->auth) ? 'manual' : $user->auth;
         if (!empty($user->suspended)) {
-            add_to_log(SITEID, 'login', 'error', 'index.php', $username);
-            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Suspended Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             $failurereason = AUTH_LOGIN_SUSPENDED;
+
+            // Trigger login failed event.
+            $event = \core\event\user_login_failed::create(array('userid' => $user->id,
+                    'other' => array('username' => $username, 'reason' => $failurereason)));
+            $event->trigger();
+            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Suspended Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             return false;
         }
         if ($auth=='nologin' or !is_enabled_auth($auth)) {
-            add_to_log(SITEID, 'login', 'error', 'index.php', $username);
-            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Disabled Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             // Legacy way to suspend user.
             $failurereason = AUTH_LOGIN_SUSPENDED;
+
+            // Trigger login failed event.
+            $event = \core\event\user_login_failed::create(array('userid' => $user->id,
+                    'other' => array('username' => $username, 'reason' => $failurereason)));
+            $event->trigger();
+            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Disabled Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             return false;
         }
         $auths = array($auth);
@@ -4428,16 +4504,13 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
     } else {
         // Check if there's a deleted record (cheaply), this should not happen because we mangle usernames in delete_user().
         if ($DB->get_field('user', 'id', array('username' => $username, 'mnethostid' => $CFG->mnet_localhost_id,  'deleted' => 1))) {
-            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Deleted Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             $failurereason = AUTH_LOGIN_NOUSER;
-            return false;
-        }
 
-        // Do not try to authenticate non-existent accounts when user creation is not disabled.
-        if (!empty($CFG->authpreventaccountcreation)) {
-            add_to_log(SITEID, 'login', 'error', 'index.php', $username);
-            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Unknown user, can not create new accounts:  $username  ".$_SERVER['HTTP_USER_AGENT']);
-            $failurereason = AUTH_LOGIN_NOUSER;
+            // Trigger login failed event.
+            $event = \core\event\user_login_failed::create(array('other' => array('username' => $username,
+                    'reason' => $failurereason)));
+            $event->trigger();
+            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Deleted Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             return false;
         }
 
@@ -4453,9 +4526,14 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
     } else if ($user->id) {
         // Verify login lockout after other ways that may prevent user login.
         if (login_is_lockedout($user)) {
-            add_to_log(SITEID, 'login', 'error', 'index.php', $username);
-            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Login lockout:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             $failurereason = AUTH_LOGIN_LOCKOUT;
+
+            // Trigger login failed event.
+            $event = \core\event\user_login_failed::create(array('userid' => $user->id,
+                    'other' => array('username' => $username, 'reason' => $failurereason)));
+            $event->trigger();
+
+            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Login lockout:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             return false;
         }
     } else {
@@ -4475,7 +4553,7 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
             // User already exists in database.
             if (empty($user->auth)) {
                 // For some reason auth isn't set yet.
-                $DB->set_field('user', 'auth', $auth, array('username' => $username));
+                $DB->set_field('user', 'auth', $auth, array('id' => $user->id));
                 $user->auth = $auth;
             }
 
@@ -4485,11 +4563,24 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
 
             if ($authplugin->is_synchronised_with_external()) {
                 // Update user record from external DB.
-                $user = update_user_record($username);
+                $user = update_user_record_by_id($user->id);
             }
         } else {
-            // Create account, we verified above that user creation is allowed.
-            $user = create_user_record($username, $password, $auth);
+            // The user is authenticated but user creation may be disabled.
+            if (!empty($CFG->authpreventaccountcreation)) {
+                $failurereason = AUTH_LOGIN_UNAUTHORISED;
+
+                // Trigger login failed event.
+                $event = \core\event\user_login_failed::create(array('other' => array('username' => $username,
+                        'reason' => $failurereason)));
+                $event->trigger();
+
+                error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Unknown user, can not create new accounts:  $username  ".
+                        $_SERVER['HTTP_USER_AGENT']);
+                return false;
+            } else {
+                $user = create_user_record($username, $password, $auth);
+            }
         }
 
         $authplugin->sync_roles($user);
@@ -4501,14 +4592,21 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
 
         if (empty($user->id)) {
             $failurereason = AUTH_LOGIN_NOUSER;
+            // Trigger login failed event.
+            $event = \core\event\user_login_failed::create(array('other' => array('username' => $username,
+                    'reason' => $failurereason)));
+            $event->trigger();
             return false;
         }
 
         if (!empty($user->suspended)) {
             // Just in case some auth plugin suspended account.
-            add_to_log(SITEID, 'login', 'error', 'index.php', $username);
-            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Suspended Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             $failurereason = AUTH_LOGIN_SUSPENDED;
+            // Trigger login failed event.
+            $event = \core\event\user_login_failed::create(array('userid' => $user->id,
+                    'other' => array('username' => $username, 'reason' => $failurereason)));
+            $event->trigger();
+            error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Suspended Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
             return false;
         }
 
@@ -4518,7 +4616,6 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
     }
 
     // Failed if all the plugins have failed.
-    add_to_log(SITEID, 'login', 'error', 'index.php', $username);
     if (debugging('', DEBUG_ALL)) {
         error_log('[client '.getremoteaddr()."]  $CFG->wwwroot  Failed Login:  $username  ".$_SERVER['HTTP_USER_AGENT']);
     }
@@ -4526,8 +4623,16 @@ function authenticate_user_login($username, $password, $ignorelockout=false, &$f
     if ($user->id) {
         login_attempt_failed($user);
         $failurereason = AUTH_LOGIN_FAILED;
+        // Trigger login failed event.
+        $event = \core\event\user_login_failed::create(array('userid' => $user->id,
+                'other' => array('username' => $username, 'reason' => $failurereason)));
+        $event->trigger();
     } else {
         $failurereason = AUTH_LOGIN_NOUSER;
+        // Trigger login failed event.
+        $event = \core\event\user_login_failed::create(array('other' => array('username' => $username,
+                'reason' => $failurereason)));
+        $event->trigger();
     }
 
     return false;
@@ -4609,38 +4714,6 @@ function password_is_legacy_hash($password) {
 }
 
 /**
- * Checks whether the password compatibility library will work with the current
- * version of PHP. This cannot be done using PHP version numbers since the fix
- * has been backported to earlier versions in some distributions.
- *
- * See https://github.com/ircmaxell/password_compat/issues/10 for more details.
- *
- * @return bool True if the library is NOT supported.
- */
-function password_compat_not_supported() {
-
-    $hash = '$2y$04$usesomesillystringfore7hnbRJHxXVLeakoG8K30oukPsA.ztMG';
-
-    // Create a one off application cache to store bcrypt support status as
-    // the support status doesn't change and crypt() is slow.
-    $cache = cache::make_from_params(cache_store::MODE_APPLICATION, 'core', 'password_compat');
-
-    if (!$bcryptsupport = $cache->get('bcryptsupport')) {
-        $test = crypt('password', $hash);
-        // Cache string instead of boolean to avoid MDL-37472.
-        if ($test == $hash) {
-            $bcryptsupport = 'supported';
-        } else {
-            $bcryptsupport = 'not supported';
-        }
-        $cache->set('bcryptsupport', $bcryptsupport);
-    }
-
-    // Return true if bcrypt *not* supported.
-    return ($bcryptsupport !== 'supported');
-}
-
-/**
  * Compare password against hash stored in user object to determine if it is valid.
  *
  * If necessary it also updates the stored hash to the current format.
@@ -4714,15 +4787,6 @@ function hash_internal_user_password($password, $fasthash = false) {
     global $CFG;
     require_once($CFG->libdir.'/password_compat/lib/password.php');
 
-    // Use the legacy hashing algorithm (md5) if PHP is not new enough to support bcrypt properly.
-    if (password_compat_not_supported()) {
-        if (isset($CFG->passwordsaltmain)) {
-            return md5($password.$CFG->passwordsaltmain);
-        } else {
-            return md5($password);
-        }
-    }
-
     // Set the cost factor to 4 for fast hashing, otherwise use default cost.
     $options = ($fasthash) ? array('cost' => 4) : array();
 
@@ -4749,34 +4813,43 @@ function hash_internal_user_password($password, $fasthash = false) {
  *
  * @param stdClass $user User object (password property may be updated).
  * @param string $password Plain text password.
+ * @param bool $fasthash If true, use a low cost factor when generating the hash
+ *                       This is much faster to generate but makes the hash
+ *                       less secure. It is used when lots of hashes need to
+ *                       be generated quickly.
  * @return bool Always returns true.
  */
-function update_internal_user_password($user, $password) {
+function update_internal_user_password($user, $password, $fasthash = false) {
     global $CFG, $DB;
     require_once($CFG->libdir.'/password_compat/lib/password.php');
 
-    // Use the legacy hashing algorithm (md5) if PHP doesn't support bcrypt properly.
-    $legacyhash = password_compat_not_supported();
-
     // Figure out what the hashed password should be.
+    if (!isset($user->auth)) {
+        debugging('User record in update_internal_user_password() must include field auth',
+                DEBUG_DEVELOPER);
+        $user->auth = $DB->get_field('user', 'auth', array('id' => $user->id));
+    }
     $authplugin = get_auth_plugin($user->auth);
     if ($authplugin->prevent_local_passwords()) {
         $hashedpassword = AUTH_PASSWORD_NOT_CACHED;
     } else {
-        $hashedpassword = hash_internal_user_password($password);
+        $hashedpassword = hash_internal_user_password($password, $fasthash);
     }
 
-    if ($legacyhash || $hashedpassword == AUTH_PASSWORD_NOT_CACHED) {
+    $algorithmchanged = false;
+
+    if ($hashedpassword === AUTH_PASSWORD_NOT_CACHED) {
+        // Password is not cached, update it if not set to AUTH_PASSWORD_NOT_CACHED.
         $passwordchanged = ($user->password !== $hashedpassword);
-        $algorithmchanged = false;
+
+    } else if (isset($user->password)) {
+        // If verification fails then it means the password has changed.
+        $passwordchanged = !password_verify($password, $user->password);
+        $algorithmchanged = password_needs_rehash($user->password, PASSWORD_DEFAULT);
     } else {
-        if (isset($user->password)) {
-            // If verification fails then it means the password has changed.
-            $passwordchanged = !password_verify($password, $user->password);
-            $algorithmchanged = password_needs_rehash($user->password, PASSWORD_DEFAULT);
-        } else {
-            $passwordchanged = true;
-        }
+        // While creating new user, password in unset in $user object, to avoid
+        // saving it with user_create()
+        $passwordchanged = true;
     }
 
     if ($passwordchanged || $algorithmchanged) {
@@ -4784,12 +4857,8 @@ function update_internal_user_password($user, $password) {
         $user->password = $hashedpassword;
 
         // Trigger event.
-        $event = \core\event\user_updated::create(array(
-             'objectid' => $user->id,
-             'context' => context_user::instance($user->id)
-        ));
-        $event->add_record_snapshot('user', $user);
-        $event->trigger();
+        $user = $DB->get_record('user', array('id' => $user->id));
+        \core\event\user_password_updated::create_from_user($user)->trigger();
     }
 
     return true;
@@ -4943,6 +5012,7 @@ function set_login_session_preferences() {
     $SESSION->justloggedin = true;
 
     unset($SESSION->lang);
+    unset($SESSION->forcelang);
     unset($SESSION->load_navigation_admin);
 }
 
@@ -4983,6 +5053,11 @@ function delete_course($courseorid, $showfeedback = true) {
 
     $DB->delete_records("course", array("id" => $courseid));
     $DB->delete_records("course_format_options", array("courseid" => $courseid));
+
+    // Reset all course related caches here.
+    if (class_exists('format_base', false)) {
+        format_base::reset_course_cache($courseid);
+    }
 
     // Trigger a course deleted event.
     $event = \core\event\course_deleted::create(array(
@@ -5124,12 +5199,6 @@ function remove_course_contents($courseid, $showfeedback = true, array $options 
     $DB->delete_records_select('course_modules_completion',
            'coursemoduleid IN (SELECT id from {course_modules} WHERE course=?)',
            array($courseid));
-    $DB->delete_records_select('course_modules_availability',
-           'coursemoduleid IN (SELECT id from {course_modules} WHERE course=?)',
-           array($courseid));
-    $DB->delete_records_select('course_modules_avail_fields',
-           'coursemoduleid IN (SELECT id from {course_modules} WHERE course=?)',
-           array($courseid));
 
     // Remove course-module data.
     $cms = $DB->get_records('course_modules', array('course' => $course->id));
@@ -5216,7 +5285,6 @@ function remove_course_contents($courseid, $showfeedback = true, array $options 
     // This array stores the tables that need to be cleared, as
     // table_name => column_name that contains the course id.
     $tablestoclear = array(
-        'log' => 'course',               // Course logs (NOTE: this might be changed in the future).
         'backup_courses' => 'courseid',  // Scheduled backup stuff.
         'user_lastaccess' => 'courseid', // User access info.
     );
@@ -5239,13 +5307,7 @@ function remove_course_contents($courseid, $showfeedback = true, array $options 
     }
     $DB->update_record('course', $oldcourse);
 
-    // Delete course sections and availability options.
-    $DB->delete_records_select('course_sections_availability',
-           'coursesectionid IN (SELECT id from {course_sections} WHERE course=?)',
-           array($course->id));
-    $DB->delete_records_select('course_sections_avail_fields',
-           'coursesectionid IN (SELECT id from {course_sections} WHERE course=?)',
-           array($course->id));
+    // Delete course sections.
     $DB->delete_records('course_sections', array('course' => $course->id));
 
     // Delete legacy, section and any other course files.
@@ -5369,11 +5431,6 @@ function reset_course_userdata($data) {
         $DB->execute($updatesql, array($data->timeshift, $data->courseid));
 
         $status[] = array('component' => $componentstr, 'item' => get_string('datechanged'), 'error' => false);
-    }
-
-    if (!empty($data->reset_logs)) {
-        $DB->delete_records('log', array('course' => $data->courseid));
-        $status[] = array('component' => $componentstr, 'item' => get_string('deletelogs'), 'error' => false);
     }
 
     if (!empty($data->reset_events)) {
@@ -5776,6 +5833,11 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
         return false;
     }
 
+    if (defined('BEHAT_SITE_RUNNING')) {
+        // Fake email sending in behat.
+        return true;
+    }
+
     if (!empty($CFG->noemailever)) {
         // Hidden setting for development sites, set in config.php if needed.
         debugging('Not sending email due to $CFG->noemailever config setting', DEBUG_NORMAL);
@@ -6011,30 +6073,40 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
     //XTEC ************ MODIFICAT - Use apligest system to send mails if it's configured
     //28.04.2011 @fcasanel
     //14.03.2012 @aginard
-    //17.01.2013 @aginard: added global $FULLME;
-    global $FULLME;
-
+    //28.04.2015 @pferre22
     if (!empty($CFG->apligestmail)) {
-        return send_apligest_mail($mail, $user);
+        $mailsent = send_apligest_mail($mail, $user);
     } else {
-        if ($mail->send()) {
-            set_send_count($user);
-            if (!empty($mail->SMTPDebug)) {
-                echo '</pre>';
-            }
-            return true;
-        } else {
-            add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. $mail->ErrorInfo);
-            if (CLI_SCRIPT) {
-                mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
-            }
-            if (!empty($mail->SMTPDebug)) {
-                echo '</pre>';
-            }
-            return false;
-        }
+        $mailsent = $mail->send();
     }
-    //****************** ORIGINAL
+    if ($mailsent) {
+        set_send_count($user);
+        if (!empty($mail->SMTPDebug)) {
+            echo '</pre>';
+        }
+        return true;
+    } else {
+        // Trigger event for failing to send email.
+        $event = \core\event\email_failed::create(array(
+            'context' => context_system::instance(),
+            'userid' => $from->id,
+            'relateduserid' => $user->id,
+            'other' => array(
+                'subject' => $subject,
+                'message' => $messagetext,
+                'errorinfo' => $mail->ErrorInfo
+            )
+        ));
+        $event->trigger();
+        if (CLI_SCRIPT) {
+            mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
+        }
+        if (!empty($mail->SMTPDebug)) {
+            echo '</pre>';
+        }
+        return false;
+    }
+    //************ ORIGINAL
     /*
     if ($mail->send()) {
         set_send_count($user);
@@ -6043,7 +6115,18 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
         }
         return true;
     } else {
-        add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. $mail->ErrorInfo);
+        // Trigger event for failing to send email.
+        $event = \core\event\email_failed::create(array(
+            'context' => context_system::instance(),
+            'userid' => $from->id,
+            'relateduserid' => $user->id,
+            'other' => array(
+                'subject' => $subject,
+                'message' => $messagetext,
+                'errorinfo' => $mail->ErrorInfo
+            )
+        ));
+        $event->trigger();
         if (CLI_SCRIPT) {
             mtrace('Error: lib/moodlelib.php email_to_user(): '.$mail->ErrorInfo);
         }
@@ -6098,17 +6181,7 @@ function setnew_password_and_mail($user, $fasthash = false) {
 
     $newpassword = generate_password();
 
-    $hashedpassword = hash_internal_user_password($newpassword, $fasthash);
-    $DB->set_field('user', 'password', $hashedpassword, array('id' => $user->id));
-    $user->password = $hashedpassword;
-
-    // Trigger event.
-    $event = \core\event\user_updated::create(array(
-        'objectid' => $user->id,
-        'context' => context_user::instance($user->id)
-    ));
-    $event->add_record_snapshot('user', $user);
-    $event->trigger();
+    update_internal_user_password($user, $newpassword, $fasthash);
 
     $a = new stdClass();
     $a->firstname   = fullname($user, true);
@@ -6785,7 +6858,14 @@ function clean_filename($string) {
 function current_language() {
     global $CFG, $USER, $SESSION, $COURSE;
 
-    if (!empty($COURSE->id) and $COURSE->id != SITEID and !empty($COURSE->lang)) {
+    if (!empty($SESSION->forcelang)) {
+        // Allows overriding course-forced language (useful for admins to check
+        // issues in courses whose language they don't understand).
+        // Also used by some code to temporarily get language-related information in a
+        // specific language (see force_current_language()).
+        $return = $SESSION->forcelang;
+
+    } else if (!empty($COURSE->id) and $COURSE->id != SITEID and !empty($COURSE->lang)) {
         // Course language can override all other settings for this page.
         $return = $COURSE->lang;
 
@@ -6817,14 +6897,10 @@ function current_language() {
  * @return string
  */
 function get_parent_language($lang=null) {
-    global $COURSE, $SESSION;
 
     // Let's hack around the current language.
     if (!empty($lang)) {
-        $oldcourselang  = empty($COURSE->lang) ? '' : $COURSE->lang;
-        $oldsessionlang = empty($SESSION->lang) ? '' : $SESSION->lang;
-        $COURSE->lang  = '';
-        $SESSION->lang = $lang;
+        $oldforcelang = force_current_language($lang);
     }
 
     $parentlang = get_string('parentlanguage', 'langconfig');
@@ -6834,11 +6910,32 @@ function get_parent_language($lang=null) {
 
     // Let's hack around the current language.
     if (!empty($lang)) {
-        $COURSE->lang  = $oldcourselang;
-        $SESSION->lang = $oldsessionlang;
+        force_current_language($oldforcelang);
     }
 
     return $parentlang;
+}
+
+/**
+ * Force the current language to get strings and dates localised in the given language.
+ *
+ * After calling this function, all strings will be provided in the given language
+ * until this function is called again, or equivalent code is run.
+ *
+ * @param string $language
+ * @return string previous $SESSION->forcelang value
+ */
+function force_current_language($language) {
+    global $SESSION;
+    $sessionforcelang = isset($SESSION->forcelang) ? $SESSION->forcelang : '';
+    if ($language !== $sessionforcelang) {
+        // Seting forcelang to null or an empty string disables it's effect.
+        if (empty($language) || get_string_manager()->translation_exists($language, false)) {
+            $SESSION->forcelang = $language;
+            moodle_setlocale();
+        }
+    }
+    return $sessionforcelang;
 }
 
 /**
@@ -7802,7 +7899,16 @@ function moodle_setlocale($locale='') {
  */
 function count_words($string) {
     $string = strip_tags($string);
-    return count(preg_split("/\w\b/", $string)) - 1;
+    // Decode HTML entities.
+    $string = html_entity_decode($string);
+    // Replace underscores (which are classed as word characters) with spaces.
+    $string = preg_replace('/_/u', ' ', $string);
+    // Remove any characters that shouldn't be treated as word boundaries.
+    $string = preg_replace('/[\'’-]/u', '', $string);
+    // Remove dots and commas from within numbers only.
+    $string = preg_replace('/([0-9])[.,]([0-9])/u', '$1$2', $string);
+
+    return count(preg_split('/\w\b/u', $string)) - 1;
 }
 
 /**
@@ -8683,7 +8789,23 @@ function getremoteaddr($default='0.0.0.0') {
     }
     if (!($variablestoskip & GETREMOTEADDR_SKIP_HTTP_X_FORWARDED_FOR)) {
         if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-            $address = cleanremoteaddr($_SERVER['HTTP_X_FORWARDED_FOR']);
+            $forwardedaddresses = explode(",", $_SERVER['HTTP_X_FORWARDED_FOR']);
+            $address = $forwardedaddresses[0];
+
+            if (substr_count($address, ":") > 1) {
+                // Remove port and brackets from IPv6.
+                if (preg_match("/\[(.*)\]:/", $address, $matches)) {
+                    $address = $matches[1];
+                }
+            } else {
+                // Remove port from IPv4.
+                if (substr_count($address, ":") == 1) {
+                    $parts = explode(":", $address);
+                    $address = $parts[0];
+                }
+            }
+
+            $address = cleanremoteaddr($address);
             return $address ? $address : $default;
         }
     }
@@ -9005,35 +9127,6 @@ function get_performance_info() {
         foreach ($filterinfo as $key => $value) {
             $info['html'] .= "<span class='$key'>$nicenames[$key]: $value </span> ";
             $info['txt'] .= "$key: $value ";
-        }
-    }
-
-    $jsmodules = $PAGE->requires->get_loaded_modules();
-    if ($jsmodules) {
-        $yuicount = 0;
-        $othercount = 0;
-        $details = '';
-        foreach ($jsmodules as $module => $backtraces) {
-            if (strpos($module, 'yui') === 0) {
-                $yuicount += 1;
-            } else {
-                $othercount += 1;
-            }
-            if (!empty($CFG->yuimoduledebug)) {
-                // Hidden feature for developers working on YUI module infrastructure.
-                $details .= "<div class='yui-module'><p>$module</p>";
-                foreach ($backtraces as $backtrace) {
-                    $details .= "<div class='backtrace'>$backtrace</div>";
-                }
-                $details .= '</div>';
-            }
-        }
-        $info['html'] .= "<span class='includedyuimodules'>Included YUI modules: $yuicount</span> ";
-        $info['txt'] .= "includedyuimodules: $yuicount ";
-        $info['html'] .= "<span class='includedjsmodules'>Other JavaScript modules: $othercount</span> ";
-        $info['txt'] .= "includedjsmodules: $othercount ";
-        if ($details) {
-            $info['html'] .= '<div id="yui-module-debug" class="notifytiny">'.$details.'</div>';
         }
     }
 

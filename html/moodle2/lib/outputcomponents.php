@@ -175,6 +175,11 @@ class user_picture implements renderable {
     public $class = 'userpicture';
 
     /**
+     * @var bool Whether to be visible to screen readers.
+     */
+    public $visibletoscreenreaders = true;
+
+    /**
      * User picture constructor.
      *
      * @param stdClass $user user record with at least id, picture, imagealt, firstname and lastname set.
@@ -399,7 +404,7 @@ class user_picture implements renderable {
 
             // If the currently requested page is https then we'll return an
             // https gravatar page.
-            if (strpos($CFG->httpswwwroot, 'https:') === 0) {
+            if (is_https()) {
                 $gravatardefault = str_replace($CFG->wwwroot, $CFG->httpswwwroot, $gravatardefault); // Replace by secure url.
                 return new moodle_url("https://secure.gravatar.com/avatar/{$md5}", array('s' => $size, 'd' => $gravatardefault));
             } else {
@@ -1102,6 +1107,22 @@ class html_writer {
     }
 
     /**
+     * Generates a simple image tag with attributes.
+     *
+     * @param string $src The source of image
+     * @param string $alt The alternate text for image
+     * @param array $attributes The tag attributes (array('height' => $max_height, 'class' => 'class1') etc.)
+     * @return string HTML fragment
+     */
+    public static function img($src, $alt, array $attributes = null) {
+        $attributes = (array)$attributes;
+        $attributes['src'] = $src;
+        $attributes['alt'] = $alt;
+
+        return self::empty_tag('img', $attributes);
+    }
+
+    /**
      * Generates random html element id.
      *
      * @staticvar int $counter
@@ -1426,6 +1447,9 @@ class html_writer {
      * method. In most cases this is not an issue at all so we do not clone by default for performance
      * and memory consumption reasons.
      *
+     * Please do not use .r0/.r1 for css, as they will be removed in Moodle 2.9.
+     * @todo MDL-43902 , remove r0 and r1 from tr classes.
+     *
      * @param html_table $table data to be rendered
      * @return string HTML code
      */
@@ -1562,11 +1586,7 @@ class html_writer {
 
             foreach ($table->data as $key => $row) {
                 if (($row === 'hr') && ($countcols)) {
-                    $output .= html_writer::start_tag('tr');
-                    $output .= html_writer::start_tag('td', array('colspan' => $countcols));
-                    $output .= html_writer::tag('div', '', array('class' => 'tabledivider'));
-                    $output .= html_writer::end_tag('td');
-                    $output .= html_writer::end_tag('tr') . "\n";
+                    $output .= html_writer::tag('td', html_writer::tag('div', '', array('class' => 'tabledivider')), array('colspan' => $countcols));
                 } else {
                     // Convert array rows to html_table_rows and cell strings to html_table_cell objects
                     if (!($row instanceof html_table_row)) {
@@ -1591,7 +1611,13 @@ class html_writer {
                         $row->attributes['class'] .= ' lastrow';
                     }
 
-                    $output .= html_writer::start_tag('tr', array('class' => trim($row->attributes['class']), 'style' => $row->style, 'id' => $row->id)) . "\n";
+                    // Explicitly assigned properties should override those defined in the attributes.
+                    $row->attributes['class'] = trim($row->attributes['class']);
+                    $trattributes = array_merge($row->attributes, array(
+                            'id'            => $row->id,
+                            'style'         => $row->style,
+                        ));
+                    $output .= html_writer::start_tag('tr', $trattributes) . "\n";
                     $keys2 = array_keys($row->cells);
                     $lastkey = end($keys2);
 
@@ -1640,8 +1666,8 @@ class html_writer {
                         }
                         $output .= html_writer::tag($tagtype, $cell->text, $tdattributes) . "\n";
                     }
-                    $output .= html_writer::end_tag('tr') . "\n";
                 }
+                $output .= html_writer::end_tag('tr') . "\n";
             }
             $output .= html_writer::end_tag('tbody') . "\n";
         }
@@ -2619,6 +2645,30 @@ class custom_menu_item implements renderable {
     }
 
     /**
+     * Removes a custom menu item that is a child or descendant to the current menu.
+     *
+     * Returns true if child was found and removed.
+     *
+     * @param custom_menu_item $menuitem
+     * @return bool
+     */
+    public function remove_child(custom_menu_item $menuitem) {
+        $removed = false;
+        if (($key = array_search($menuitem, $this->children)) !== false) {
+            unset($this->children[$key]);
+            $this->children = array_values($this->children);
+            $removed = true;
+        } else {
+            foreach ($this->children as $child) {
+                if ($removed = $child->remove_child($menuitem)) {
+                    break;
+                }
+            }
+        }
+        return $removed;
+    }
+
+    /**
      * Returns the text for this item
      * @return string
      */
@@ -2786,87 +2836,69 @@ class custom_menu extends custom_menu_item {
      * @return array
      */
     public static function convert_text_to_menu_nodes($text, $language = null) {
+        $root = new custom_menu();
+        $lastitem = $root;
+        $lastdepth = 0;
+        $hiddenitems = array();
         $lines = explode("\n", $text);
-        $children = array();
-        $lastchild = null;
-        $lastdepth = null;
-        $lastsort = 0;
-        foreach ($lines as $line) {
+        foreach ($lines as $linenumber => $line) {
             $line = trim($line);
-            $bits = explode('|', $line, 4);    // name|url|title|langs
-            if (!array_key_exists(0, $bits) or empty($bits[0])) {
-                // Every item must have a name to be valid
+            if (strlen($line) == 0) {
                 continue;
-            } else {
-                $bits[0] = ltrim($bits[0],'-');
             }
-            if (!array_key_exists(1, $bits) or empty($bits[1])) {
-                // Set the url to null
-                $bits[1] = null;
-            } else {
-                // Make sure the url is a moodle url
-                //XTEC MODIFICAT MDL-48430 custom_menu: Malformed url in custom menu cannot break the platform
-                try {
-                    $bits[1] = new moodle_url(trim($bits[1]));
-                } catch (Exception $e) {
-                    $bits[1] = null;
-                }
-                //******** CODI ORIGINAL
-                //$bits[1] = new moodle_url(trim($bits[1]));
-                //********* FI
-            }
-            if (!array_key_exists(2, $bits) or empty($bits[2])) {
-                // Set the title to null seeing as there isn't one
-                $bits[2] = $bits[0];
-            }
-            if (!array_key_exists(3, $bits) or empty($bits[3])) {
-                // The item is valid for all languages
-                $itemlangs = null;
-            } else {
-                $itemlangs = array_map('trim', explode(',', $bits[3]));
-            }
-            if (!empty($language) and !empty($itemlangs)) {
-                // check that the item is intended for the current language
-                if (!in_array($language, $itemlangs)) {
-                    continue;
-                }
-            }
-            // Set an incremental sort order to keep it simple.
-            $lastsort++;
-            if (preg_match('/^(\-*)/', $line, $match) && $lastchild != null && $lastdepth !== null) {
-                $depth = strlen($match[1]);
-                if ($depth < $lastdepth) {
-                    $difference = $lastdepth - $depth;
-                    if ($lastdepth > 1 && $lastdepth != $difference) {
-                        $tempchild = $lastchild->get_parent();
-                        for ($i =0; $i < $difference; $i++) {
-                            $tempchild = $tempchild->get_parent();
-                        }
-                        $lastchild = $tempchild->add($bits[0], $bits[1], $bits[2], $lastsort);
-                    } else {
-                        $depth = 0;
-                        $lastchild = new custom_menu_item($bits[0], $bits[1], $bits[2], $lastsort);
-                        $children[] = $lastchild;
-                    }
-                } else if ($depth > $lastdepth) {
-                    $depth = $lastdepth + 1;
-                    $lastchild = $lastchild->add($bits[0], $bits[1], $bits[2], $lastsort);
-                } else {
-                    if ($depth == 0) {
-                        $lastchild = new custom_menu_item($bits[0], $bits[1], $bits[2], $lastsort);
-                        $children[] = $lastchild;
-                    } else {
-                        $lastchild = $lastchild->get_parent()->add($bits[0], $bits[1], $bits[2], $lastsort);
+            // Parse item settings.
+            $itemtext = null;
+            $itemurl = null;
+            $itemtitle = null;
+            $itemvisible = true;
+            $settings = explode('|', $line);
+            foreach ($settings as $i => $setting) {
+                $setting = trim($setting);
+                if (!empty($setting)) {
+                    switch ($i) {
+                        case 0:
+                            $itemtext = ltrim($setting, '-');
+                            $itemtitle = $itemtext;
+                            break;
+                        case 1:
+                            try {
+                                $itemurl = new moodle_url($setting);
+                            } catch (moodle_exception $exception) {
+                                // We're not actually worried about this, we don't want to mess up the display
+                                // just for a wrongly entered URL.
+                                $itemurl = null;
+                            }
+                            break;
+                        case 2:
+                            $itemtitle = $setting;
+                            break;
+                        case 3:
+                            if (!empty($language)) {
+                                $itemlanguages = array_map('trim', explode(',', $setting));
+                                $itemvisible &= in_array($language, $itemlanguages);
+                            }
+                            break;
                     }
                 }
-            } else {
-                $depth = 0;
-                $lastchild = new custom_menu_item($bits[0], $bits[1], $bits[2], $lastsort);
-                $children[] = $lastchild;
             }
-            $lastdepth = $depth;
+            // Get depth of new item.
+            preg_match('/^(\-*)/', $line, $match);
+            $itemdepth = strlen($match[1]) + 1;
+            // Find parent item for new item.
+            while (($lastdepth - $itemdepth) >= 0) {
+                $lastitem = $lastitem->get_parent();
+                $lastdepth--;
+            }
+            $lastitem = $lastitem->add($itemtext, $itemurl, $itemtitle, $linenumber + 1);
+            $lastdepth++;
+            if (!$itemvisible) {
+                $hiddenitems[] = $lastitem;
+            }
         }
-        return $children;
+        foreach ($hiddenitems as $item) {
+            $item->parent->remove_child($item);
+        }
+        return $root->get_children();
     }
 
     /**
@@ -3374,6 +3406,34 @@ class action_menu implements renderable {
      */
     public function will_be_enhanced() {
         return isset($this->attributes['data-enhance']);
+    }
+
+    /**
+     * Sets nowrap on items. If true menu items should not wrap lines if they are longer than the available space.
+     *
+     * This property can be useful when the action menu is displayed within a parent element that is either floated
+     * or relatively positioned.
+     * In that situation the width of the menu is determined by the width of the parent element which may not be large
+     * enough for the menu items without them wrapping.
+     * This disables the wrapping so that the menu takes on the width of the longest item.
+     *
+     * @param bool $value If true nowrap gets set, if false it gets removed. Defaults to true.
+     */
+    public function set_nowrap_on_items($value = true) {
+        $class = 'nowrap-items';
+        if (!empty($this->attributes['class'])) {
+            $pos = strpos($this->attributes['class'], $class);
+            if ($value === true && $pos === false) {
+                // The value is true and the class has not been set yet. Add it.
+                $this->attributes['class'] .= ' '.$class;
+            } else if ($value === false && $pos !== false) {
+                // The value is false and the class has been set. Remove it.
+                $this->attributes['class'] = substr($this->attributes['class'], $pos, strlen($class));
+            }
+        } else if ($value) {
+            // The value is true and the class has not been set yet. Add it.
+            $this->attributes['class'] = $class;
+        }
     }
 }
 

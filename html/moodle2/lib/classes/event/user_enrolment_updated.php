@@ -26,7 +26,13 @@ namespace core\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Event when user enrolment is updated.
+ * Event class for when user enrolment is updated.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string enrol: name of enrolment instance.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
@@ -41,7 +47,7 @@ class user_enrolment_updated extends base {
     protected function init() {
         $this->data['objecttable'] = 'user_enrolments';
         $this->data['crud'] = 'u';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 
     /**
@@ -59,7 +65,8 @@ class user_enrolment_updated extends base {
      * @return string
      */
     public function get_description() {
-        return 'User '.$this->relateduserid. ' has updated enrolment for user '.$this->userid.' in course '.$this->courseid;
+        return "The user with id '$this->userid' updated the enrolment for the user with id '$this->relateduserid' using the " .
+            "enrolment method '{$this->other['enrol']}' in the course with id '$this->courseid'.";
     }
 
     /**
@@ -68,7 +75,7 @@ class user_enrolment_updated extends base {
      * @return \moodle_url
      */
     public function get_url() {
-        return new \moodle_url('/enrol/users.php', array('id' => $this->courseid));
+        return new \moodle_url('/enrol/editenrolment.php', array('ue' => $this->objectid));
     }
 
     /**
@@ -101,10 +108,10 @@ class user_enrolment_updated extends base {
     protected function validate_data() {
         parent::validate_data();
         if (!isset($this->other['enrol'])) {
-            throw new \coding_exception('Enrolment plugin name must be set in $other.');
+            throw new \coding_exception('The \'enrol\' value must be set in other.');
         }
         if (!isset($this->relateduserid)) {
-            throw new \coding_exception('Related user id must be set.');
+            throw new \coding_exception('The \'relateduserid\' must be set.');
         }
     }
 }

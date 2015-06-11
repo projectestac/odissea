@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,31 @@ $string['actualresponse'] = 'Antwoord';
 $string['allattempts'] = 'alle pogingen';
 $string['allattemptsavg'] = 'Gemiddelde cijfer voor alle pogingen';
 $string['allattemptscount'] = 'Totaal aantal volledig beoordeelde pogingen';
+$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisno'] = '({$a->number}) "{$a->name}"';
+$string['analysisnovariant'] = '({$a->number}) "{$a->name}" variant {$a->variant}';
 $string['analysisofresponses'] = 'Analyse van pogingen';
 $string['analysisofresponsesfor'] = 'Analyse van antwoorden voor {$a}';
+$string['analysisvariant'] = '"{$a->name}" variant {$a->variant}';
 $string['attempts'] = 'Pogingen';
 $string['attemptsall'] = 'alle pogingen';
 $string['attemptsfirst'] = 'eerste poging';
 $string['backtoquizreport'] = 'Terug naar startpagina statistisch rapport';
 $string['calculatefrom'] = 'Bereken statistieken van';
+$string['calculatingallstats'] = 'Statistieken voor de test, vragen en analyse van antwoordgegevens aan het berekenen';
 $string['cic'] = 'Coëfficiënt van interne consistentie (voor {$a})';
 $string['completestatsfilename'] = 'completestats';
 $string['count'] = 'Aantal';
+$string['counttryno'] = 'Aantal pogingen {$a}';
 $string['coursename'] = 'Cursusnaam';
 $string['detailedanalysis'] = 'Meer gedetailleerde analyse van de antwoorden op deze vraag';
+$string['detailedanalysisforvariant'] = 'Meer gedetailleerde analyse van de antwoorden op variant {$a} van deze vraag';
 $string['discrimination_index'] = 'Discriminatie-index';
 $string['discriminative_efficiency'] = 'Discriminatieve efficientie';
 $string['downloadeverything'] = 'Download volledig rapport als {$a->formatsmenu} {$a->downloadbutton}';
 $string['duration'] = 'Open voor';
 $string['effective_weight'] = 'Effectieve weging';
 $string['errordeleting'] = 'Fout bij het verwijderen van oude {$a} records.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Vraag ({$a}) wordt meer dan eens gebruikt met verschillende wegingen. Dit wordt nog niet ondersteund door het statistis rapport en maakt de statistieken voor deze vraag onbetrouwbaar.';
 $string['errormedian'] = 'Fout bij het ophalen van de mediaan';
 $string['errorpowerquestions'] = 'Fout bij het ophalen van gegevens om de variatie op beoordeling van vragen te berekenen';
 $string['errorpowers'] = 'Fout bij het ophalen van gegevens om de variatie op de testresultaten te berekenen';
@@ -66,8 +72,12 @@ $string['kurtosis'] = 'Score distributiekurtosis (voor {$a})';
 $string['lastattempts'] = 'laatste poging';
 $string['lastattemptsavg'] = 'Gemiddeld cijfer van de laatste pogingen';
 $string['lastcalculated'] = 'Er zijn {$a->count} pogingen sinds de laatste berekening, {$a->lastcalculated} geleden.';
+$string['maximumfacility'] = 'Maximum';
 $string['median'] = 'Mediaancijfer (voor {$a})';
+$string['medianfacility'] = 'Mediaan';
+$string['minimumfacility'] = 'Minimum';
 $string['modelresponse'] = 'Voorbeeldantwoord';
+$string['nameforvariant'] = 'Variant {$a->variant} van {$a->name}';
 $string['negcovar'] = 'Negatieve cijfercovariantie met totaalcijfer van de poging';
 $string['negcovar_help'] = 'Het cijfer voor deze vraag van deze set testpogingen wijkt in tegenovergestelde richting af van het algemeen cijfer van de pogingen. Dit betekent dat het algemene gemiddelde van de poging is eerder lager dan het gemiddelde wanneer het cijfer voor deze vraag boven het gemiddelde is en omgekeerd.
 
@@ -95,6 +105,7 @@ $string['recalculatenow'] = 'Herbereken nu';
 $string['reportsettings'] = 'Instellingen statistische berekening';
 $string['response'] = 'Antwoord';
 $string['skewness'] = 'Score verdelingsscheefheid (voor {$a})';
+$string['slotstructureanalysis'] = 'Structurele analyse van vraag nummer {$a}';
 $string['standarddeviation'] = 'Standaarddeviatie (voor {$a})';
 $string['standarddeviationq'] = 'Standaarddeviatie';
 $string['standarderror'] = 'Standaardafwijking (voor {$a})';
@@ -104,3 +115,5 @@ $string['statisticsreport'] = 'Statistisch rapport';
 $string['statisticsreportgraph'] = 'Statistiek voor vraagposities';
 $string['statistics:view'] = 'Bekijk rapport teststatistieken';
 $string['statsfor'] = 'Teststatistieken (voor {$a})';
+$string['variant'] = 'Variant';
+$string['whichtries'] = 'Analyse antwoorden voor';

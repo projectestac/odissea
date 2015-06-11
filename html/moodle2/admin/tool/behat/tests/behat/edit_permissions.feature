@@ -5,13 +5,13 @@ Feature: Edit capabilities
   I need to allow/deny the existing capabilities at different levels
 
   Background:
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@asd.com |
-    And the following "courses" exists:
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+    And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
 
@@ -40,7 +40,7 @@ Feature: Edit capabilities
       | mod/forum:deleteanypost | Prohibit |
       | mod/forum:editanypost | Prevent |
       | mod/forum:addquestion | Allow |
-    When I select "Student (3)" from "Advanced role override"
+    When I set the field "Advanced role override" to "Student (3)"
     Then "mod/forum:deleteanypost" capability has "Prohibit" permission
     And "mod/forum:editanypost" capability has "Prevent" permission
     And "mod/forum:addquestion" capability has "Allow" permission
@@ -59,7 +59,7 @@ Feature: Edit capabilities
       | mod/forum:deleteanypost | Prohibit |
       | mod/forum:editanypost | Prevent |
       | mod/forum:addquestion | Allow |
-    When I select "Student (3)" from "Advanced role override"
+    When I set the field "Advanced role override" to "Student (3)"
     Then "mod/forum:deleteanypost" capability has "Prohibit" permission
     And "mod/forum:editanypost" capability has "Prevent" permission
     And "mod/forum:addquestion" capability has "Allow" permission

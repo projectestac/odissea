@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_glossary_random', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,10 @@ $string['addentry'] = 'Добавить новую запись';
 $string['askaddentry'] = 'Если пользователь может добавлять записи в глоссарий, показывать ссылку с этим текстом';
 $string['askinvisible'] = 'Если пользователь не может редактировать или просматривать глоассарий, показывать этот текст (без ссылки)';
 $string['askviewglossary'] = 'Если пользователь может просматривать глоссарий, но не может добавлять новые записи, показывать ссылку с этим текстом';
-$string['glossary_random:addinstance'] = 'Добавлять новый блок Случайная запись глоссария';
-$string['glossary_random:myaddinstance'] = 'Добавлять новый блок Случайная запись глоссария в Мой Moodle';
+$string['glossary_random:addinstance'] = 'Добавлять новый блок «Случайная запись из глоссария»';
+$string['glossary_random:myaddinstance'] = 'Добавлять новый блок «Случайная запись из глоссария» на домашнюю страницу';
 $string['intro'] = 'Убедитесь, что в курсе есть хотя бы один глоссарий, а в нем не менее одной записи. В этом случае Вы можете настроить следующие параметры.';
-$string['invisible'] = '(Продолжение следует)';
+$string['invisible'] = '(продолжение следует)';
 $string['lastmodified'] = 'Последняя измененная запись';
 $string['nextalpha'] = 'В алфавитном порядке';
 $string['nextone'] = 'Следующая запись';

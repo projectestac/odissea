@@ -14,10 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace core\event;
-
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Event for when a new note entry is added.
  *
@@ -26,17 +22,27 @@ defined('MOODLE_INTERNAL') || die();
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace core\event;
+
+defined('MOODLE_INTERNAL') || die();
+
 /**
  * Class note_created
  *
  * Class for event to be triggered when a note is created.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string publishstate: (optional) the publish state.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
  * @copyright  2013 Ankit Agarwal
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class note_created extends \core\event\base {
+class note_created extends base {
 
     /**
      * Set basic properties for the event.
@@ -44,7 +50,7 @@ class note_created extends \core\event\base {
     protected function init() {
         $this->data['objecttable'] = 'post';
         $this->data['crud'] = 'c';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 
     /**
@@ -62,7 +68,8 @@ class note_created extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return 'Note for user with id "'. $this->relateduserid . '" was created by user with id "' . $this->userid . '"';
+        return "The user with id '$this->userid' created the note with id '$this->objectid' for the user with id " .
+            "'$this->relateduserid'.";
     }
 
     /**
@@ -70,7 +77,7 @@ class note_created extends \core\event\base {
      * @return \moodle_url
      */
     public function get_url() {
-        $logurl = new \moodle_url('/note/index.php', array('course' => $this->courseid, 'user' => $this->relateduserid));
+        $logurl = new \moodle_url('/notes/index.php', array('course' => $this->courseid, 'user' => $this->relateduserid));
         $logurl->set_anchor('note-' . $this->objectid);
         return $logurl;
     }
@@ -84,5 +91,19 @@ class note_created extends \core\event\base {
         $logurl = new \moodle_url('index.php', array('course' => $this->courseid, 'user' => $this->relateduserid));
         $logurl->set_anchor('note-' . $this->objectid);
         return array($this->courseid, 'notes', 'add', $logurl, 'add note');
+    }
+
+    /**
+     * Custom validation.
+     *
+     * @throws \coding_exception
+     * @return void
+     */
+    protected function validate_data() {
+        parent::validate_data();
+
+        if (!isset($this->relateduserid)) {
+            throw new \coding_exception('The \'relateduserid\' must be set.');
+        }
     }
 }

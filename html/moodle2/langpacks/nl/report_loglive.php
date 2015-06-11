@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_loglive', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Component';
+$string['eventcontext'] = 'Gebeurteniscontext';
+$string['eventloggedas'] = '{$a->realusername} als {$a->asusername}';
+$string['eventorigin'] = 'Oorsprong';
+$string['eventrelatedfullnameuser'] = 'Over gebruiker';
+$string['eventreportviewed'] = 'Live logs bekeken';
 $string['livelogs'] = 'Actief logboek van het afgelopen uur';
 $string['loglive:view'] = 'Bekijk live logs';
-$string['page'] = 'Pagina {$a}';
+$string['nologreaderenabled'] = 'Geen loglezer ingeschakeld';
+$string['pause'] = 'Pauzeer life logs';
 $string['pluginname'] = 'Live logs';
+$string['resume'] = 'Herstart life logs';
+$string['selectlogreader'] = 'Selecteer loglezer';

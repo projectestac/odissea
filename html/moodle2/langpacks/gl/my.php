@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'my', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mymoodle'] = 'Vista xeral dos meus cursos';
+$string['mymoodle'] = 'Área persoal';
 $string['nocourses'] = 'Non hai información sobre o curso para mostrar.';
-$string['noguest'] = 'A páxina \'Vista xeral do curso\' non está dispoñible para convidados';
+$string['noguest'] = 'A páxina «Área persoal» non está dispoñible para convidados';
 $string['pinblocks'] = 'Configurar bloques de agarre do meu Moodle';
 $string['pinblocksexplan'] = 'Calquera configuración dos bloques que estableza aquí será visible (e non editable) para calquera usuario do Moodle na súa páxina de vista xeral \'O meu Moodle\'.';

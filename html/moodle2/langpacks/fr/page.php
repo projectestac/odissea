@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,6 @@ $string['createpage'] = 'Créer une ressource page';
 $string['displayoptions'] = 'Options d\'affichage disponibles';
 $string['displayselect'] = 'Affichage';
 $string['displayselectexplain'] = 'Sélectionner le type d\'affichage.';
-$string['eventcoursemoduleviewed'] = 'Ressource page consultée';
-$string['eventinstanceslistviewed'] = 'Liste d\'instances de page consultée';
 $string['legacyfiles'] = 'Migration d\'un ancien fichier de cours';
 $string['legacyfilesactive'] = 'Actif';
 $string['legacyfilesdone'] = 'Terminé';
@@ -47,7 +45,6 @@ Une page peut être utilisée pour :
 * présenter les conditions et objectifs d\'un cours ou d\'un module de formation
 * intégrer plusieurs vidéos ou sons avec des textes explicatifs';
 $string['modulenameplural'] = 'Pages';
-$string['neverseen'] = 'Jamais consulté';
 $string['optionsheader'] = 'Afficher les options';
 $string['page:addinstance'] = 'Ajouter une ressource page';
 $string['page-mod-page-x'] = 'Toute page de module';
@@ -58,5 +55,7 @@ $string['popupheight'] = 'Hauteur de la fenêtre (en pixels)';
 $string['popupheightexplain'] = 'Indique la hauteur par défaut des fenêtres surgissantes.';
 $string['popupwidth'] = 'Largeur de la fenêtre (en pixels)';
 $string['popupwidthexplain'] = 'Indique la largeur par défaut des fenêtres surgissantes.';
+$string['printheading'] = 'Afficher le nom de la page';
+$string['printheadingexplain'] = 'Afficher le nom de la page au-dessus de son contenu ?';
 $string['printintro'] = 'Afficher la description de la page';
 $string['printintroexplain'] = 'Afficher la description de la page au-dessus de son contenu ?';

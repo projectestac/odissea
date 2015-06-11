@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['default'] = 'Habilitado por defecto';
 $string['default_help'] = 'Si se activa la opción, este método de retroalimentación estará habilitado por omisión para todas las tareas nuevas.';
 $string['enabled'] = 'Texto en línea';
 $string['enabled_help'] = 'Si está habilitado, los estudiantes pueden escribir en su envió texto ampliado (text rich) directamente en el campo del editor.';
-$string['event_assessable_uploaded'] = 'Se ha subido un texto en línea.';
+$string['eventassessableuploaded'] = 'Un texto en línea ha sido subido.';
 $string['nosubmission'] = 'No se ha enviado nada para esta tarea';
 $string['numwords'] = '({$a} palabras)';
 $string['numwordsforlog'] = 'Número de palabras en el envío: {$a} palabras';
@@ -38,3 +38,6 @@ $string['onlinetext'] = 'Texto en línea';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Permmite entregas de texto en línea';
 $string['pluginname'] = 'Entregas de texto en línea';
+$string['wordlimit'] = 'Límite de palabras';
+$string['wordlimitexceeded'] = 'El límite de palabras para esta entrada es de {$a->limit} palabras y estas intentando de enviar {$a->count} palabras. Por favor, revisa el contenido e inténtalo de nuevo.';
+$string['wordlimit_help'] = 'Si se habilitan las entregas de texto en línea, este es el número máximo de palabras que a cada estudiante se le permitirá entregar.';

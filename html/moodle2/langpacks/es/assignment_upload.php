@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignment_upload', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   assignment_upload
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['event_assessable_submitted'] = 'Una entrega subida ha sido enviada.';
 $string['event_assessable_uploaded'] = 'Se ha subido un fichero.';
 $string['pluginname'] = 'Subir';

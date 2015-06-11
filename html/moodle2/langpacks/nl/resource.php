@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,6 @@ Een bestand kan gebruikt worden
 * om een kleine website als cursusbron aan te bieden
 * om kladbestanden van bepaalde softwareprogramma\'s te voorzien (zoals Photoshop .psd) zodat leerlingen ze kunnen bewerken en dan insturen voor beoordeling';
 $string['modulenameplural'] = 'Bestanden';
-$string['neverseen'] = 'Nooit bekeken';
 $string['notmigrated'] = 'Dit verouderd brontype ({$a}) is nog niet omgezet.';
 $string['optionsheader'] = 'Toon opties';
 $string['page-mod-resource-x'] = 'Elke bestandsmodule pagina';

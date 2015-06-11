@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,14 +91,15 @@ $string['errorcoursecontextnotvalid'] = 'Je kunt geen functies uitvoeren in de c
 $string['errorinvalidparam'] = 'De param "{$a}" is ongeldig';
 $string['errornotemptydefaultparamarray'] = 'De webservice beschrijvingsparameter met als naam \'{$a}\' is een enkele of meervoudige structuur. De standaard kan enkel een lege array zijn. Controleer je webservice beschrijving.';
 $string['erroroptionalparamarray'] = 'De webservice beschrijvingsparameter met als naam \'{$a}\' is een enkele of meervoudige structuur. Dit kan niet ingesteld worden als VALUE_OPTIONAL. Controleer de webservice beschrijving.';
-$string['event_webservice_function_called'] = 'Webservice-functie aangeroepen';
-$string['event_webservice_login_failed'] = 'Webservice login mislukt';
-$string['event_webservice_service_created'] = 'Webservice service gemaakt';
-$string['event_webservice_service_updated'] = 'Webservice service aangepast';
-$string['event_webservice_service_user_added'] = 'Webservice service gebruiker toegevoegd';
-$string['event_webservice_service_user_removed'] = 'Webservice service gebruiker verwijderd';
-$string['event_webservice_token_created'] = 'Webservice token gemaakt';
-$string['event_webservice_token_sent'] = 'Webservice token verstuurd';
+$string['eventwebservicefunctioncalled'] = 'Webservice-functie aangeroepen';
+$string['eventwebserviceloginfailed'] = 'Webservice login mislukt';
+$string['eventwebserviceservicecreated'] = 'Webservice service gemaakt';
+$string['eventwebserviceservicedeleted'] = 'Web service verwijderd';
+$string['eventwebserviceserviceupdated'] = 'Webservice service aangepast';
+$string['eventwebserviceserviceuseradded'] = 'Webservice service gebruiker toegevoegd';
+$string['eventwebserviceserviceuserremoved'] = 'Webservice service gebruiker verwijderd';
+$string['eventwebservicetokencreated'] = 'Webservice token gemaakt';
+$string['eventwebservicetokensent'] = 'Webservice token verstuurd';
 $string['execute'] = 'Voer uit';
 $string['executewarnign'] = 'WAARSCHUWING: als je op uitvoeren drukt, dan zal je databank aangepast worden en die wijzigingen kunnen niet automatisch ongedaan gemaakt worden!';
 $string['externalservice'] = 'Externe service';
@@ -133,6 +134,7 @@ $string['missingusername'] = 'Gebruikersnaam ontbreekt';
 $string['missingversionfile'] = 'Codefout: version.php ontbreekt voor component {$a}';
 $string['mobilewsdisabled'] = 'Uitgeschakeld';
 $string['mobilewsenabled'] = 'Ingeschakeld';
+$string['nameexists'] = 'Deze naam is al in gebruik voor een andere service';
 $string['nocapabilitytouseparameter'] = 'De gebruiker heeft de vereiste mogelijkheid niet om parameter {$a} te gebruiken.';
 $string['nofunctions'] = 'Deze service heeft geen functies.';
 $string['norequiredcapability'] = 'Geen vereiste mogelijkheid';
@@ -183,6 +185,7 @@ $string['serviceusers'] = 'Geauthoriseerde gebruikers';
 $string['serviceusersettings'] = 'Gebruikersinstellingen';
 $string['serviceusersmatching'] = 'Overenkomstige geauthoriseerde gebruikers';
 $string['serviceuserssettings'] = 'Instellingen wijzigen voor de geauthoriseerde gebruikers';
+$string['shortnametaken'] = 'Korte naam is al gebruikt voor een andere service ({$a})';
 $string['simpleauthlog'] = 'Eenvoudige authenticatielogin';
 $string['step'] = 'Stap';
 $string['supplyinfo'] = 'Meer details';

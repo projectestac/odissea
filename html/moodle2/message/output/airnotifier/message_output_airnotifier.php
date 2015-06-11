@@ -26,7 +26,6 @@
 
 
 require_once($CFG->dirroot . '/message/output/lib.php');
-require_once($CFG->libdir . '/filelib.php');
 
 /**
  * Message processor class
@@ -81,11 +80,6 @@ class message_output_airnotifier extends message_output {
         $extra->site            = $siteid;
         $extra->date            = (!empty($eventdata->timecreated)) ? $eventdata->timecreated : time();
         $extra->notification    = (!empty($eventdata->notification)) ? 1 : 0;
-
-        // Site name.
-        $site = get_site();
-        $extra->sitefullname = format_string($site->fullname);
-        $extra->siteshortname = format_string($site->shortname);
 
         // We are sending to message to all devices.
         $airnotifiermanager = new message_airnotifier_manager();

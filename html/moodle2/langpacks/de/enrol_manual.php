@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,8 @@ $string['alterstatus'] = 'Status ändern';
 $string['altertimeend'] = 'Endzeit ändern';
 $string['altertimestart'] = 'Startzeit ändern';
 $string['assignrole'] = 'Kursrolle zuweisen ';
+$string['browsecohorts'] = 'Globale Gruppen anzeigen';
+$string['browseusers'] = 'Nutzer/innen anzeigen';
 $string['confirmbulkdeleteenrolment'] = 'Möchten Sie diese Einschreibungen wirklich löschen?';
 $string['defaultperiod'] = 'Teilnahmedauer';
 $string['defaultperiod_desc'] = 'Die standardmäßige Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt. Wenn dieser Wert 0 ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';

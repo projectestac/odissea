@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['display_help'] = 'Als je de mapinhoud op een cursuspagina wil tonen, da
 $string['displayinline'] = 'Inline op een cursuspagina';
 $string['displaypage'] = 'Op een aparte pagina';
 $string['dnduploadmakefolder'] = 'Bestanden unzippen en map maken';
+$string['eventfolderupdated'] = 'Map aangepast';
 $string['folder:addinstance'] = 'Voeg een nieuwe map toe';
 $string['foldercontent'] = 'Bestanden en submappen';
 $string['folder:managefiles'] = 'Beheer bestanden in mappenmodule';
@@ -43,7 +44,6 @@ En map kan gebruikt worden
 * voor een reeks bestanden over één onderwerp, bijvoorbeeld een ingevulde cursus of een verzameling afbeeldingen die een leerling kan gebruiken in een project
 * om een gedeelde uploadruimte te voorzien voor leraren in dezelfde cursus, waarbij de map verborgen gehouden wordt voor leerlingen, zodat enkel de leraren die kunnen zien.';
 $string['modulenameplural'] = 'Mappen';
-$string['neverseen'] = 'Nooit gezien';
 $string['noautocompletioninline'] = 'Automatisch voltooien kan niet gekozen worden met de optie "inline op de cursuspagina".';
 $string['page-mod-folder-view'] = 'Hoofdpagina mappenmodule';
 $string['page-mod-folder-x'] = 'Elke mappenmodule pagina';

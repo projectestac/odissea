@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_tags', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,7 +70,7 @@ $string['showcoursetags'] = 'Показать теги курса';
 $string['showcoursetagsdef'] = 'Показать свойства отметок курса в блоке тегов, позволить студентам теги курсов.';
 $string['suggestedtagthisunit'] = 'Предлагаемые теги этого курса:';
 $string['tags'] = 'теги';
-$string['tags:addinstance'] = 'Добавлять новый блок тегов';
-$string['tags:myaddinstance'] = 'Добавлять новый блок тегов на страницу Мой Moodle';
+$string['tags:addinstance'] = 'Добавлять новый блок «Теги»';
+$string['tags:myaddinstance'] = 'Добавлять новый блок «Теги» на домашнюю страницу';
 $string['tagthisunit'] = 'Тег этого курса:';
 $string['tagunits'] = 'к тегам своих любимых курсов';

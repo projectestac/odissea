@@ -50,10 +50,6 @@ use Behat\Behat\Exception\PendingException as PendingException;
  */
 class behat_data_generators extends behat_base {
 
-    const cap_allow = 'Allow';
-    const cap_prevent = 'Prevent';
-    const cap_prohibit = 'Prohibit';
-
     /**
      * @var testing_data_generator
      */
@@ -95,7 +91,6 @@ class behat_data_generators extends behat_base {
             'datagenerator' => 'enrol_user',
             'required' => array('user', 'course', 'role'),
             'switchids' => array('user' => 'userid', 'course' => 'courseid', 'role' => 'roleid')
-
         ),
         'permission overrides' => array(
             'datagenerator' => 'permission_override',
@@ -136,41 +131,54 @@ class behat_data_generators extends behat_base {
             'required' => array('user', 'cohort'),
             'switchids' => array('user' => 'userid', 'cohort' => 'cohortid')
         ),
+        'roles' => array(
+            'datagenerator' => 'role',
+            'required' => array('shortname')
+        ),
         'grade categories' => array(
             'datagenerator' => 'grade_category',
             'required' => array('fullname', 'course'),
             'switchids' => array('course' => 'courseid', 'gradecategory' => 'parent')
-        )
+        ),
+        'grade items' => array(
+            'datagenerator' => 'grade_item',
+            'required' => array('course'),
+            'switchids' => array('scale' => 'scaleid', 'outcome' => 'outcomeid', 'course' => 'courseid',
+                                 'gradecategory' => 'categoryid')
+        ),
+        'grade outcomes' => array(
+            'datagenerator' => 'grade_outcome',
+            'required' => array('shortname', 'scale'),
+            'switchids' => array('course' => 'courseid', 'gradecategory' => 'categoryid', 'scale' => 'scaleid')
+        ),
+        'scales' => array(
+            'datagenerator' => 'scale',
+            'required' => array('name', 'scale'),
+            'switchids' => array('course' => 'courseid')
+        ),
+        'question categories' => array(
+            'datagenerator' => 'question_category',
+            'required' => array('name', 'contextlevel', 'reference'),
+            'switchids' => array('questioncategory' => 'category')
+        ),
+        'questions' => array(
+            'datagenerator' => 'question',
+            'required' => array('qtype', 'questioncategory', 'name'),
+            'switchids' => array('questioncategory' => 'category', 'user' => 'createdby')
+        ),
     );
 
     /**
      * Creates the specified element. More info about available elements in http://docs.moodle.org/dev/Acceptance_testing#Fixtures.
      *
-     * This method has been introduced in 2.7 and replaces self::the_following_exists(),
-     * it has been added here to make backports easier and to help 3rd parties working on new
-     * scenarios so they don't need to update their scenarios when they upgrade to 2.7.
-     *
      * @Given /^the following "(?P<element_string>(?:[^"]|\\")*)" exist:$/
-     *
-     * @param string    $elementname The name of the entity to add
-     * @param TableNode $data
-     */
-    public function the_following_exist($elementname, TableNode $data) {
-        // Forwarding it.
-        $this->the_following_exists($elementname, $data);
-    }
-
-    /**
-     * Creates the specified element. More info about available elements in http://docs.moodle.org/dev/Acceptance_testing#Fixtures. This step will be deprecated in Moodle 2.7 in favour of 'the following "ELEMENT_STRING" exist:'.
-     *
-     * @Given /^the following "(?P<element_string>(?:[^"]|\\")*)" exists:$/
      *
      * @throws Exception
      * @throws PendingException
      * @param string    $elementname The name of the entity to add
      * @param TableNode $data
      */
-    public function the_following_exists($elementname, TableNode $data) {
+    public function the_following_exist($elementname, TableNode $data) {
 
         // Now that we need them require the data generators.
         require_once(__DIR__ . '/../../testing/generator/lib.php');
@@ -264,17 +272,42 @@ class behat_data_generators extends behat_base {
     }
 
     /**
+     * Preprocesses the creation of a grade item. Converts gradetype text to a number.
+     * @param array $data
+     * @return array
+     */
+    protected function preprocess_grade_item($data) {
+        global $CFG;
+        require_once("$CFG->libdir/grade/constants.php");
+
+        if (isset($data['gradetype'])) {
+            $data['gradetype'] = constant("GRADE_TYPE_" . strtoupper($data['gradetype']));
+        }
+        return $data;
+    }
+
+    /**
      * Adapter to modules generator
      * @throws Exception Custom exception for test writers
      * @param array $data
      * @return void
      */
     protected function process_activity($data) {
-        global $DB;
+        global $DB, $CFG;
 
         // The the_following_exists() method checks that the field exists.
         $activityname = $data['activity'];
         unset($data['activity']);
+
+        // Convert scale name into scale id (negative number indicates using scale).
+        if (isset($data['grade']) && strlen($data['grade']) && !is_number($data['grade'])) {
+            $data['grade'] = - $this->get_scale_id($data['grade']);
+            require_once("$CFG->libdir/grade/constants.php");
+
+            if (!isset($data['gradetype'])) {
+                $data['gradetype'] = GRADE_TYPE_SCALE;
+            }
+        }
 
         // We split $data in the activity $record and the course module $options.
         $cmoptions = array();
@@ -424,6 +457,22 @@ class behat_data_generators extends behat_base {
     }
 
     /**
+     * Creates a role.
+     *
+     * @param array $data
+     * @return void
+     */
+    protected function process_role($data) {
+
+        // We require the user to fill the role shortname.
+        if (empty($data['shortname'])) {
+            throw new Exception('\'role\' requires the field \'shortname\' to be specified');
+        }
+
+        $this->datagenerator->create_role($data);
+    }
+
+    /**
      * Adds members to cohorts
      *
      * @param array $data
@@ -431,6 +480,49 @@ class behat_data_generators extends behat_base {
      */
     protected function process_cohort_member($data) {
         cohort_add_member($data['cohortid'], $data['userid']);
+    }
+
+    /**
+     * Create a question category.
+     *
+     * @param array $data the row of data from the behat script.
+     */
+    protected function process_question_category($data) {
+        $context = $this->get_context($data['contextlevel'], $data['reference']);
+        $data['contextid'] = $context->id;
+        $this->datagenerator->get_plugin_generator('core_question')->create_question_category($data);
+    }
+
+    /**
+     * Create a question.
+     *
+     * Creating questions relies on the question/type/.../tests/helper.php mechanism.
+     * We start with test_question_maker::get_question_form_data($data['qtype'], $data['template'])
+     * and then overlay the values from any other fields of $data that are set.
+     *
+     * @param array $data the row of data from the behat script.
+     */
+    protected function process_question($data) {
+        if (array_key_exists('questiontext', $data)) {
+            $data['questiontext'] = array(
+                    'text'   => $data['questiontext'],
+                    'format' => FORMAT_HTML,
+                );
+        }
+
+        if (array_key_exists('generalfeedback', $data)) {
+            $data['generalfeedback'] = array(
+                    'text'   => $data['generalfeedback'],
+                    'format' => FORMAT_HTML,
+                );
+        }
+
+        $which = null;
+        if (!empty($data['template'])) {
+            $which = $data['template'];
+        }
+
+        $this->datagenerator->get_plugin_generator('core_question')->create_question($data['qtype'], $which, $data);
     }
 
     /**
@@ -473,7 +565,7 @@ class behat_data_generators extends behat_base {
         global $DB;
 
         if (!$id = $DB->get_field('role', 'id', array('shortname' => $roleshortname))) {
-            throw new Exception('The specified role with shortname"' . $roleshortname . '" does not exist');
+            throw new Exception('The specified role with shortname "' . $roleshortname . '" does not exist');
         }
 
         return $id;
@@ -510,7 +602,7 @@ class behat_data_generators extends behat_base {
         global $DB;
 
         if (!$id = $DB->get_field('course', 'id', array('shortname' => $shortname))) {
-            throw new Exception('The specified course with shortname"' . $shortname . '" does not exist');
+            throw new Exception('The specified course with shortname "' . $shortname . '" does not exist');
         }
         return $id;
     }
@@ -556,6 +648,56 @@ class behat_data_generators extends behat_base {
 
         if (!$id = $DB->get_field('cohort', 'id', array('idnumber' => $idnumber))) {
             throw new Exception('The specified cohort with idnumber "' . $idnumber . '" does not exist');
+        }
+        return $id;
+    }
+
+    /**
+     * Gets the outcome item id from its shortname.
+     * @throws Exception
+     * @param string $shortname
+     * @return int
+     */
+    protected function get_outcome_id($shortname) {
+        global $DB;
+
+        if (!$id = $DB->get_field('grade_outcomes', 'id', array('shortname' => $shortname))) {
+            throw new Exception('The specified outcome with shortname "' . $shortname . '" does not exist');
+        }
+        return $id;
+    }
+
+    /**
+     * Get the id of a named scale.
+     * @param string $name the name of the scale.
+     * @return int the scale id.
+     */
+    protected function get_scale_id($name) {
+        global $DB;
+
+        if (!$id = $DB->get_field('scale', 'id', array('name' => $name))) {
+            throw new Exception('The specified scale with name "' . $name . '" does not exist');
+        }
+        return $id;
+    }
+
+    /**
+     * Get the id of a named question category (must be globally unique).
+     * Note that 'Top' is a special value, used when setting the parent of another
+     * category, meaning top-level.
+     *
+     * @param string $name the question category name.
+     * @return int the question category id.
+     */
+    protected function get_questioncategory_id($name) {
+        global $DB;
+
+        if ($name == 'Top') {
+            return 0;
+        }
+
+        if (!$id = $DB->get_field('question_categories', 'id', array('name' => $name))) {
+            throw new Exception('The specified question category with name "' . $name . '" does not exist');
         }
         return $id;
     }

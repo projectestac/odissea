@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_media', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,5 @@ $string['createmedia'] = 'Insertar multimedia';
 $string['entername'] = 'Insertar nombre';
 $string['enterurl'] = 'Insertar URL';
 $string['height'] = 'Altura';
-$string['media'] = 'Media';
 $string['pluginname'] = 'Multimedia';
 $string['width'] = 'Ancho';

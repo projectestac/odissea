@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,6 +148,7 @@ $string['cannotsetupblock'] = 'Les tables de blocs n\'ont pas pu être mises en 
 $string['cannotsetupcapformod'] = 'Impossible d\'installer les capacités de {$a}';
 $string['cannotsetupcapforplugin'] = 'Impossible d\'installer les capacités de {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Impossible d\'afficher/de cacher les cours dans la catégorie {$a}.';
+$string['cannotsignup'] = 'Impossible de créer un nouveau compte, car vous êtes déjà connecté sous le nom « {$a} ».';
 $string['cannotunassigncap'] = 'Impossible de retirer l\'attribution de la capacité obsolète {$a->cap} du rôle {$a->role}';
 $string['cannotunassignrolefrom'] = 'Impossible de retirer l\'attribution du rôle d\'identifiant {$a} pour cet utilisateur';
 $string['cannotunzipfile'] = 'Décompression du fichier ZIP impossible';
@@ -377,7 +378,7 @@ $string['missinguseranditemid'] = 'Identifiants utilisateur et élément manquan
 $string['missingvarname'] = 'Nom de variable requis manquant !';
 $string['mixedtypesqlparam'] = 'Erreur : différents types de paramètres dans la requête SQL !';
 $string['mnetdisable'] = 'Le réseau MNET est désactivé';
-$string['mnetlocal'] = 'Les utilisateurs distants du Réseau Moodle ne peuvent pas se connecter localement';
+$string['mnetlocal'] = 'Les utilisateurs distants MNet ne peuvent pas se connecter localement';
 $string['moduledisable'] = 'Ce module ({$a}) a été désactivé dans ce cours';
 $string['moduledoesnotexist'] = 'Ce module n\'existe pas';
 $string['moduleinstancedoesnotexist'] = 'L\'instance de ce module n\'existe pas';
@@ -471,9 +472,9 @@ $string['sendmessage'] = 'Envoyer message';
 $string['serverconnection'] = 'Erreur lors de la connexion au serveur';
 $string['servicedonotexist'] = 'Le service n\'existe pas';
 $string['sessioncookiesdisable'] = 'Utilisation incorrecte de require_key_login(). Les cookies de session doivent être désactivés !';
-$string['sessiondiskfull'] = 'La partition de session du disque dur est pleine. Il n\'est actuellement pas possible de se connecter. Veuillez contacter l\'administrateur du serveur.';
-$string['sessionerroruser'] = 'Votre session est échue. Veuillez vous connecter à nouveau';
-$string['sessionerroruser2'] = 'Une erreur du serveur affectant votre session de connexion a été détectée. Veuillez vous connecter à nouveau ou relancer votre navigateur';
+$string['sessiondiskfull'] = 'La partition de session est pleine. Il n\'est actuellement pas possible de se connecter. Veuillez contacter l\'administrateur du serveur.';
+$string['sessionerroruser'] = 'Votre session est échue. Veuillez vous connecter à nouveau.';
+$string['sessionerroruser2'] = 'Une erreur du serveur affectant votre session de connexion a été détectée. Veuillez vous connecter à nouveau ou relancer votre navigateur.';
 $string['sessionhandlerproblem'] = 'Traitement des sessions mal configuré';
 $string['sessionipnomatch'] = 'Votre adresse IP semble avoir changé depuis votre connexion. Ce réglage de sécurité empêche des pirates d\'usurper votre identité lorsque vous êtes connecté sur ce site. Les utilisateurs ne devraient en principe pas rencontrer ce message. Veuillez demander de l\'aide à l\'administrateur de ce site';
 $string['sessionipnomatch2'] = '<p>Votre adresse IP semble avoir changé depuis votre première connexion. Ce réglage de sécurité empêche des pirates d\'usurper votre identité lorsque vous êtes connecté sur ce site. Cette erreur peut survenir lors de l\'utilisation de réseaux sans fil ou si vous passez d\'un réseau à un autre (itinérance). Pour plus d\'informations, veuillez contacter votre administrateur.</p>

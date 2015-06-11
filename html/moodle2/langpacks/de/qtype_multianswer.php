@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Undefiniertes Layout';
 $string['layoutvertical'] = 'Eine vertikale Spalte mit Einfach-Auswahl-Möglichkeiten';
 $string['nooptionsforsubquestion'] = 'Optionen für den Frageteil # {$a->sub} (question->id={$a->id}) konnten nicht gefunden werden';
 $string['noquestions'] = 'Die Lückentext-Frage "<strong>{$a}</strong>" enthält keine Frage.';
+$string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage';
 $string['pluginname'] = 'Lückentext-Frage';
 $string['pluginnameadding'] = 'Lückentext-Frage hinzufügen';
 $string['pluginnameediting'] = 'Lückentext-Frage bearbeiten';
@@ -56,7 +57,7 @@ $string['questionsless'] = '{$a} Frage(n) weniger als in der Mehrfachantwort-Fra
 $string['questionsmissing'] = 'Der Fragetext muss mindestens eine Antwort anbieten.';
 $string['questionsmore'] = '{$a} Frage(n) mehr als in der Mehrfachantwort-Frage, die in der Datenbank hinterlegt ist';
 $string['questiontypechanged'] = 'Fragetyp geändert';
-$string['questiontypechangedcomment'] = 'Mindestens ein Fragetyp wurde geändert.<br /> Haben Sie eine Frage hinzugefügt, gelöscht oder verschoben?<br /> Bitte kontrollieren Sie dies.';
+$string['questiontypechangedcomment'] = 'Mindestens ein Fragetyp wurde geändert.<br /> Haben Sie eine Frage hinzugefügt, gelöscht oder verschoben?';
 $string['questionusedinquiz'] = 'Diese Frage wird bereits in {$a->nb_of_quiz} Test(s) verwendet; Gesamtzahl an Versuchen: {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Gespeicherter Fragetyp {$a}';
 $string['subqresponse'] = 'Teil {$a->i}: {$a->response}';

@@ -15,12 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Admin settings class for the quiz review opitions.
+ * Admin settings class for the quiz review options.
  *
- * @package    mod
- * @subpackage quiz
- * @copyright  2008 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   mod_quiz
+ * @copyright 2008 Tim Hunt
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 
@@ -28,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 
 /**
- * Admin settings class for the quiz review opitions.
+ * Admin settings class for the quiz review options.
  *
  * @copyright  2008 Tim Hunt
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

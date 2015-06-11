@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_mnet', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'Er bestaat al een instantie van de MNet aanmeldingsplugin  voor deze host. Er is slechts één instantie per host en/of één instantie voor \'alle hosts\' toegestaan.';
 $string['instancename'] = 'Naam aanmeldingswijze';
 $string['instancename_help'] = 'Optioneel kun je deze instantie van de MNet aanmeldingsmethode hernoemen. Indien je dit veld open laat, wordt de standaardnaam van de instantie gebruikt, met daarin de naam van de externe host en de toegewezen rol voor hun gebruikers.';
+$string['mnet:config'] = 'Configureer MNet aanmeldingsinstanties';
 $string['mnet_enrol_description'] = 'Publiceer deze service om het beheerders op {$a} mogelijk te maken leerlingen aan te melden bij cursussen op jouw server.<br/>
 <ul>
 <li><em>Dependentie</em>: je moet je ook <strong>inschrijven</strong> op de SSO (identity provider) op {$a}</li>

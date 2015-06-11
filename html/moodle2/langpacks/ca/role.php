@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -150,6 +150,7 @@ $string['course:movesections'] = 'Moure seccions';
 $string['course:publish'] = 'Publicar un curs a la col·lectivitat';
 $string['course:request'] = 'Demanar nous cursos';
 $string['course:reset'] = 'Reiniciar un curs';
+$string['course:reviewotherusers'] = 'Revisar altres usuaris';
 $string['course:sectionvisibility'] = 'Controlar la visibilitat de seccions';
 $string['course:setcurrentsection'] = 'Definir la secció actual';
 $string['course:update'] = 'Actualitzar els paràmetres del curs';
@@ -268,7 +269,7 @@ $string['overrideanotherrole'] = 'Redefineix un altre rol';
 $string['overridecontext'] = 'Redefineix el context';
 $string['overridepermissions'] = 'Redefineix els permisos';
 $string['overridepermissionsforrole'] = 'Redefineix els permisos del rol «{$a->role}» a {$a->context}';
-$string['overridepermissions_help'] = 'La redefinició de permisos possibilita habilitar o inhabilitar capacitats concretes en contextos específics.';
+$string['overridepermissions_help'] = 'La redefinició de permisos possibilita habilitar o deshabilitar capacitats concretes en contextos específics.';
 $string['overridepermissionsin'] = 'Defineix excepcions als permisos en {$a}';
 $string['overrideroles'] = 'Redefineix els rols';
 $string['overriderolesin'] = 'Defineix excepcions als rols en {$a}';
@@ -360,6 +361,7 @@ $string['site:backup'] = 'Fer còpies de seguretat de cursos';
 $string['site:config'] = 'Canviar la configuració del lloc';
 $string['site:doanything'] = 'Tot permès';
 $string['site:doclinks'] = 'Mostrar enllaços a documents fora del lloc';
+$string['site:forcelanguage'] = 'Canviar l\'idioma del curs';
 $string['site:import'] = 'Importar altres cursos en un curs';
 $string['site:manageblocks'] = 'Gestionar blocs en una pàgina';
 $string['site:mnetloginfromremote'] = 'Entrar des d\'una aplicació remota via MNet';
@@ -408,6 +410,7 @@ $string['user:update'] = 'Actualitzar els perfils d\'usuari';
 $string['user:viewalldetails'] = 'Mostrar la informació completa de l\'usuari';
 $string['user:viewdetails'] = 'Veure els perfils d\'usuari';
 $string['user:viewhiddendetails'] = 'Veure els detalls ocults dels usuaris';
+$string['user:viewlastip'] = 'Veure la darrera adreça IP de l\'usuari';
 $string['user:viewuseractivitiesreport'] = 'Veure els informes d\'activitat dels usuaris';
 $string['user:viewusergrades'] = 'Veure qualificacions dels usuaris';
 $string['useshowadvancedtochange'] = 'Utilitza «Mostra avançats» per canviar';

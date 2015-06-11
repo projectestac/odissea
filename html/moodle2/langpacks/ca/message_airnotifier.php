@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message_airnotifier', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   message_airnotifier
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,6 @@ $string['deletedevice'] = 'Elimineu el dispositiu. Tingueu en compte que una apl
 $string['devicetoken'] = 'Testimoni de dispositiu';
 $string['errorretrievingkey'] = 'S\'ha produït un error en la recuperació de la clau. El vostre lloc Moodle ha d\'estar registrat amb Moodle.org per a utilitzar aquest servei. És possible que hàgiu de tornar a registrar-lo per a actualitzar les vostres dades allí.';
 $string['keyretrievedsuccessfully'] = 'La clau s\'ha recuperat correctament';
-$string['newmessage'] = 'Missatge nou';
 $string['nodevices'] = 'No hi ha dispositius registrats. El dispositius es registraran automàticament després que permeteu a una aplicació Moodle iOS rebre notificacions push.';
 $string['nopermissiontomanagedevices'] = 'No teniu permís per a gestionar dispositius.';
 $string['notconfigured'] = 'El servidor Airnotifier no s\'ha configurat i per tant els missatges Airnotifier no es poden enviar';

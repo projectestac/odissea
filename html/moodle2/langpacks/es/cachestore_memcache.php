@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_memcache', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,5 +43,6 @@ IP address:port
 nombre_servidor:puerto:peso
 </pre>';
 $string['sessionhandlerconflict'] = 'Advertencia: Una instancia memcache ({$a}) ha sido configurada para utilizar el mismo servidor memcached que las sesiones. Al purgar todas las cachés también se purgarán las sesiones.';
+$string['setservers'] = 'Configurar Servidores';
 $string['testservers'] = 'Servidores de prueba';
 $string['testservers_desc'] = 'Los servidores de prueba se utilizan para las pruebas unitarias y las pruebas de rendimiento. Es totalmente opcional utilizar servidores de prueba. Cada servidor se define en una por línea mediante una dirección de servidor y opcionalmente un puerto y su relevancia. Si no se especifica un puerto se usa el puerto por defecto (11211).';

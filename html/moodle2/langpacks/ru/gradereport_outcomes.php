@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_outcomes', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_outcomes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addoutcome'] = 'Добавить показатель';
 $string['courseoutcomes'] = 'Показатели курса';
 $string['coursespecoutcome'] = 'Показатели курса';
+$string['eventgradereportviewed'] = 'Просмотрен отчет «Отчет по показателям»';
 $string['outcomes:view'] = 'Просматривать отчет по показателям';
 $string['pluginname'] = 'Отчет по показателям';
 $string['usedgradeitem'] = 'Количество оценок';

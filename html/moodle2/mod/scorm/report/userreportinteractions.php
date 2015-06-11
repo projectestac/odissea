@@ -17,8 +17,7 @@
 /**
  * This page displays the user data from a single attempt
  *
- * @package mod
- * @subpackage scorm
+ * @package mod_scorm
  * @copyright 1999 onwards Martin Dougiamas {@link http://moodle.com}
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -53,8 +52,15 @@ require_login($course, false, $cm);
 $contextmodule = context_module::instance($cm->id);
 require_capability('mod/scorm:viewreport', $contextmodule);
 
-add_to_log($course->id, 'scorm', 'userreportinteractions', 'userreportinteractions.php?id='.$cm->id, $scorm->id, $cm->id);
-
+// Trigger a user interactions viewed event.
+$event = \mod_scorm\event\interactions_viewed::create(array(
+    'context' => $contextmodule,
+    'relateduserid' => $userid,
+    'other' => array('attemptid' => $attempt, 'instanceid' => $scorm->id)
+));
+$event->add_record_snapshot('course_modules', $cm);
+$event->add_record_snapshot('scorm', $scorm);
+$event->trigger();
 
 $trackdata = $DB->get_records('scorm_scoes_track', array('userid' => $user->id, 'scormid' => $scorm->id,
     'attempt' => $attempt));
@@ -102,7 +108,7 @@ $table->set_attribute('class', 'generaltable generalbox boxaligncenter boxwidthw
 $table->show_download_buttons_at(array(TABLE_P_BOTTOM));
 $table->setup();
 
-for ($i=0; $i < $questioncount; $i++) {
+for ($i = 0; $i < $questioncount; $i++) {
     $row = array();
     $element = 'cmi.interactions_'.$i.'.id';
     if (isset($usertrack->$element)) {
@@ -115,12 +121,12 @@ for ($i=0; $i < $questioncount; $i++) {
             $row[] = '&nbsp;';
         }
 
-        $j=0;
+        $j = 0;
         $element = 'cmi.interactions_'.$i.'.correct_responses_'.$j.'.pattern';
         $rightans = '';
         if (isset($usertrack->$element)) {
             while (isset($usertrack->$element)) {
-                if ($j>0) {
+                if ($j > 0) {
                     $rightans .= ',';
                 }
                 $rightans .= s($usertrack->$element);

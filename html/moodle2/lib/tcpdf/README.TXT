@@ -8,11 +8,11 @@ http://sourceforge.net/donate/index.php?group_id=128076
 ------------------------------------------------------------
 
 Name: TCPDF
-Version: 6.0.031
-Release date: 2013-09-18
+Version: 6.0.093
+Release date: 2014-09-02
 Author:	Nicola Asuni
 
-Copyright (c) 2002-2013:
+Copyright (c) 2002-2014:
 	Nicola Asuni
 	Tecnick.com LTD
 	www.tecnick.com
@@ -67,7 +67,7 @@ Additional Documentation:
 	http://www.tcpdf.org
 
 License:
-	Copyright (C) 2002-2013  Nicola Asuni - Tecnick.com LTD
+	Copyright (C) 2002-2014  Nicola Asuni - Tecnick.com LTD
 
 	TCPDF is free software: you can redistribute it and/or modify it
 	under the terms of the GNU Lesser General Public License as
@@ -106,5 +106,10 @@ Third party fonts:
 	
 	The binary files (.z) that begins with the prefix "ae" have been extracted from the Arabeyes.org collection (GNU-GPLv2).
 	Link : http://projects.arabeyes.org/
+
+ICC profile:
+    TCPDF includes the sRGB.icc profile from the icc-profiles-free Debian package:
+    https://packages.debian.org/source/stable/icc-profiles-free
+
 
 ============================================================

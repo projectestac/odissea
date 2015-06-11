@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,6 @@ $string['legacyfilesactive'] = 'نشط';
 $string['legacyfilesdone'] = 'انتهى';
 $string['modulename'] = 'صفحة';
 $string['modulenameplural'] = 'صفحات';
-$string['neverseen'] = 'غير مرئي مطلقا';
 $string['optionsheader'] = 'خيارات';
 $string['page:view'] = 'عاين محتوى الصفحة';
 $string['pluginadministration'] = 'إدارة وحدة الصفحات';

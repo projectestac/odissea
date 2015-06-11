@@ -47,6 +47,10 @@ define('CHOICEGROUP_SHOWRESULTS_DEFAULT',      '3');
 define('CHOICEGROUP_DISPLAY_HORIZONTAL',  '0');
 define('CHOICEGROUP_DISPLAY_VERTICAL',    '1');
 
+define('CHOICEGROUP_SORTGROUPS_SYSTEMDEFAULT',    '0');
+define('CHOICEGROUP_SORTGROUPS_CREATEDATE',    '1');
+define('CHOICEGROUP_SORTGROUPS_NAME',    '2');
+
 /** @global array $CHOICEGROUP_PUBLISH */
 global $CHOICEGROUP_PUBLISH;
 $CHOICEGROUP_PUBLISH = array (CHOICEGROUP_PUBLISH_ANONYMOUS  => get_string('publishanonymous', 'choicegroup'),
@@ -89,8 +93,10 @@ function choicegroup_user_outline($course, $user, $mod, $choicegroup) {
 /**
  *
  */
-function choicegroup_get_user_answer($choicegroup, $user, $returnArray = FALSE) {
-    global $DB;
+function choicegroup_get_user_answer($choicegroup, $user, $returnArray = FALSE, $refresh = FALSE) {
+    global $DB, $choicegroup_groups;
+
+    static $user_answers = array();
 
     if (is_numeric($user)) {
         $userid = $user;
@@ -99,10 +105,22 @@ function choicegroup_get_user_answer($choicegroup, $user, $returnArray = FALSE) 
         $userid = $user->id;
     }
 
-    $groups = choicegroup_get_groups($choicegroup);
+    if (!$refresh and isset($user_answers[$userid])) {
+        if ($returnArray === TRUE) {
+            return $user_answers[$userid];
+        } else {
+            return $user_answers[$userid][0];
+        }
+    } else {
+        $user_answers = array();
+    }
+
+    if (!count($choicegroup_groups)) {
+        $choicegroup_groups = choicegroup_get_groups($choicegroup);
+    }
 
     $groupids = array();
-    foreach ($groups as $group) {
+    foreach ($choicegroup_groups as $group) {
         if (is_numeric($group->id)) {
             $groupids[] = $group->id;
         }
@@ -114,11 +132,12 @@ function choicegroup_get_user_answer($choicegroup, $user, $returnArray = FALSE) 
         $groupmemberships = $DB->get_records_sql('SELECT * FROM {groups_members} WHERE userid = ? AND groupid '.$insql, $params);
         $groups = array();
         foreach ($groupmemberships as $groupmembership) {
-            $group = $DB->get_record('groups', array('id' => $groupmembership->groupid));
+            $group = $choicegroup_groups[$groupmembership->groupid];
             $group->timeuseradded = $groupmembership->timeadded;
             $groups[] = $group;
         }
         if (count($groups) > 0) {
+            $user_answers[$userid] = $groups;
             if ($returnArray === TRUE) {
                 return $groups;
             } else {
@@ -171,20 +190,27 @@ function choicegroup_add_instance($choicegroup) {
 
     //insert answers
     $choicegroup->id = $DB->insert_record("choicegroup", $choicegroup);
-    foreach ($choicegroup->option as $key => $value) {
-        $value = trim($value);
-        if (isset($value) && $value <> '') {
+    
+    // deserialize the selected groups
+    
+    $groupIDs = explode(';', $choicegroup->serializedselectedgroups);
+    $groupIDs = array_diff( $groupIDs, array( '' ) );
+    
+    foreach ($groupIDs as $groupID) {
+        $groupID = trim($groupID);
+        if (isset($groupID) && $groupID != '') {
             $option = new stdClass();
-            $option->groupid = $value;
+            $option->groupid = $groupID;
             $option->choicegroupid = $choicegroup->id;
-            if (isset($choicegroup->limit[$key])) {
-                $option->maxanswers = $choicegroup->limit[$key];
+            $property = 'group_' . $groupID . '_limit';
+            if (isset($choicegroup->$property)) {
+            	$option->maxanswers = $choicegroup->$property;
             }
             $option->timemodified = time();
             $DB->insert_record("choicegroup_options", $option);
-        }
+        }	
     }
-
+    
     return $choicegroup->id;
 }
 
@@ -212,29 +238,49 @@ function choicegroup_update_instance($choicegroup) {
     if (empty($choicegroup->multipleenrollmentspossible)) {
         $choicegroup->multipleenrollmentspossible = 0;
     }
+    
+    
+    // deserialize the selected groups
+    
+    $groupIDs = explode(';', $choicegroup->serializedselectedgroups);
+    $groupIDs = array_diff( $groupIDs, array( '' ) );
 
-    //update, delete or insert answers
-    foreach ($choicegroup->option as $key => $value) {
-        $value = trim($value);
-        $option = new stdClass();
-        $option->groupid = $value;
-        $option->choicegroupid = $choicegroup->id;
-        if (isset($choicegroup->limit[$key])) {
-            $option->maxanswers = $choicegroup->limit[$key];
-        }
-        $option->timemodified = time();
-        if (isset($choicegroup->optionid[$key]) && !empty($choicegroup->optionid[$key])){//existing choicegroup record
-            $option->id=$choicegroup->optionid[$key];
-            if (isset($value) && $value <> '') {
-                $DB->update_record("choicegroup_options", $option);
-            } else { //empty old option - needs to be deleted.
-                $DB->delete_records("choicegroup_options", array("id"=>$option->id));
-            }
-        } else {
-            if (isset($value) && $value <> '') {
-                $DB->insert_record("choicegroup_options", $option);
-            }
-        }
+    // prepare pre-existing selected groups from database
+    
+    if (!($preExistingGroups = $DB->get_records("choicegroup_options", array("choicegroupid" => $choicegroup->id), "id"))) {
+    	return false;
+    }
+
+    // walk through form-selected groups
+    foreach ($groupIDs as $groupID) {
+    	$groupID = trim($groupID);
+    	if (isset($groupID) && $groupID != '') {
+    		$option = new stdClass();
+    		$option->groupid = $groupID;
+    		$option->choicegroupid = $choicegroup->id;
+    		$property = 'group_' . $groupID . '_limit';
+    		if (isset($choicegroup->$property)) {
+    			$option->maxanswers = $choicegroup->$property;
+    		}
+    		$option->timemodified = time();
+    		// Find out if this selection already exists
+    		foreach ($preExistingGroups as $key => $preExistingGroup) {
+    			if ($option->groupid == $preExistingGroup->groupid) {
+    				// match found, so instead of creating a new record we should merely update a pre-existing record
+    				$option->id = $preExistingGroup->id;
+    				$DB->update_record("choicegroup_options", $option);
+    				// remove the element from the array to not deal with it later
+    				unset($preExistingGroups[$key]);
+    				continue 2; // continue the big loop
+    			}
+    		}
+    		$DB->insert_record("choicegroup_options", $option);	
+    	}
+    	 
+    }
+    // remove all remaining pre-existing groups which did not appear in the form (and are thus assumed to have been deleted)
+    foreach ($preExistingGroups as $preExistingGroup) {
+    	$DB->delete_records("choicegroup_options", array("id"=>$preExistingGroup->id));
     }
 
     return $DB->update_record('choicegroup', $choicegroup);
@@ -306,6 +352,12 @@ function choicegroup_user_submit_response($formanswer, $choicegroup, $userid, $c
     global $DB, $CFG;
     require_once($CFG->libdir.'/completionlib.php');
 
+    $context = context_module::instance($cm->id);
+    $eventparams = array(
+        'context' => $context,
+        'objectid' => $choicegroup->id
+    );
+
     $selected_option = $DB->get_record('choicegroup_options', array('id' => $formanswer));
 
     $current = choicegroup_get_user_answer($choicegroup, $userid);
@@ -313,7 +365,6 @@ function choicegroup_user_submit_response($formanswer, $choicegroup, $userid, $c
         $currentgroup = $DB->get_record('groups', array('id' => $current->id), 'id,name', MUST_EXIST);
     }
     $selectedgroup = $DB->get_record('groups', array('id' => $selected_option->groupid), 'id,name', MUST_EXIST);
-    $context = context_module::instance($cm->id);
 
     $countanswers=0;
     if($choicegroup->limitanswers) {
@@ -329,18 +380,27 @@ function choicegroup_user_submit_response($formanswer, $choicegroup, $userid, $c
                 if ($selected_option->groupid != $current->id) {
                     if (groups_is_member($current->id, $userid)) {
                         groups_remove_member($current->id, $userid);
-                        add_to_log($course->id, "choicegroup", "remove choice", "view.php?id=$cm->id", $currentgroup->name, $cm->id);
+//                        $eventparams['groupname'] = $currentgroup->name;
+                        $event = \mod_choicegroup\event\choice_removed::create($eventparams);
+                        $event->add_record_snapshot('course_modules', $cm);
+                        $event->add_record_snapshot('course', $course);
+                        $event->add_record_snapshot('choicegroup', $choicegroup);
+                        $event->trigger();
                     }
                 }
             }
-            add_to_log($course->id, "choicegroup", "choose again", "view.php?id=$cm->id", $selectedgroup->name, $cm->id);
         } else {
             // Update completion state
             $completion = new completion_info($course);
             if ($completion->is_enabled($cm) && $choicegroup->completionsubmit) {
                 $completion->update_state($cm, COMPLETION_COMPLETE);
             }
-            add_to_log($course->id, "choicegroup", "choose", "view.php?id=$cm->id", $selectedgroup->name, $cm->id);
+//            $eventparams['groupname'] = $selectedgroup->name;
+            $event = \mod_choicegroup\event\choice_updated::create($eventparams);
+            $event->add_record_snapshot('course_modules', $cm);
+            $event->add_record_snapshot('course', $course);
+            $event->add_record_snapshot('choicegroup', $choicegroup);
+            $event->trigger();
         }
     } else {
         if (!$current || !($current->id==$selected_option->groupid)) { //check to see if current choicegroup already selected - if not display error
@@ -575,7 +635,7 @@ function prepare_choicegroup_show_results($choicegroup, $course, $cm, $allrespon
  * @return bool
  */
 function choicegroup_delete_responses($userids, $choicegroup, $cm, $course) {
-    global $CFG, $DB;
+    global $CFG, $DB, $context;
     require_once($CFG->libdir.'/completionlib.php');
 
     if(!is_array($userids) || empty($userids)) {
@@ -589,12 +649,21 @@ function choicegroup_delete_responses($userids, $choicegroup, $cm, $course) {
     }
 
     $completion = new completion_info($course);
+    $eventparams = array(
+        'context' => $context,
+        'objectid' => $choicegroup->id
+    );
+
     foreach($userids as $userid) {
         if ($current = choicegroup_get_user_answer($choicegroup, $userid)) {
             $currentgroup = $DB->get_record('groups', array('id' => $current->id), 'id,name', MUST_EXIST);
             if (groups_is_member($current->id, $userid)) {
                 groups_remove_member($current->id, $userid);
-                add_to_log($course->id, "choicegroup", "remove choice", "view.php?id=$cm->id", $currentgroup->name, $cm->id);
+                $event = \mod_choicegroup\event\choice_removed::create($eventparams);
+                $event->add_record_snapshot('course_modules', $cm);
+                $event->add_record_snapshot('course', $course);
+                $event->add_record_snapshot('choicegroup', $choicegroup);
+                $event->trigger();
             }
             // Update completion state
             if ($completion->is_enabled($cm) && $choicegroup->completionsubmit) {
@@ -663,18 +732,24 @@ function choicegroup_get_option_text($choicegroup, $id) {
 function choicegroup_get_groups($choicegroup) {
     global $DB;
 
+    static $groups = array();
+
+    if (count($groups)) {
+        return $groups;
+    }
+
     if (is_numeric($choicegroup)) {
         $choicegroupid = $choicegroup;
     }
     else {
         $choicegroupid = $choicegroup->id;
     }
-    $groups = array();
 
+    $groups = array();
     $options = $DB->get_records('choicegroup_options', array('choicegroupid' => $choicegroupid));
     foreach ($options as $option) {
         if ($group = $DB->get_record('groups', array('id' => $option->groupid)))
-        $groups[] = $group;
+        $groups[$group->id] = $group;
     }
     return $groups;
 }
@@ -690,15 +765,43 @@ function choicegroup_get_choicegroup($choicegroupid) {
     global $DB;
 
     if ($choicegroup = $DB->get_record("choicegroup", array("id" => $choicegroupid))) {
-        if ($options = $DB->get_records("choicegroup_options", array("choicegroupid" => $choicegroupid), "id")) {
-            foreach ($options as $option) {
-                $choicegroup->option[$option->id] = $option->groupid;
-                $choicegroup->maxanswers[$option->id] = $option->maxanswers;
-            }
-            return $choicegroup;
+        $sortcolumn = choicegroup_get_sort_column($choicegroup);
+
+        $sql = "SELECT grp_o.id, grp_o.groupid, grp_o.maxanswers FROM {groups} grp
+            INNER JOIN {choicegroup_options} grp_o on grp.id = grp_o.groupid
+            WHERE grp_o.choicegroupid = :choicegroupid
+            ORDER BY $sortcolumn ASC";
+
+        $params = array(
+            'choicegroupid' => $choicegroupid
+        );
+        $options = $DB->get_records_sql($sql, $params);
+
+        foreach ($options as $option) {
+            $choicegroup->option[$option->id] = $option->groupid;
+            $choicegroup->maxanswers[$option->id] = $option->maxanswers;
         }
+
+        return $choicegroup;
     }
     return false;
+}
+
+function choicegroup_get_sort_column($choicegroup) {
+    if ($choicegroup->sortgroupsby == CHOICEGROUP_SORTGROUPS_SYSTEMDEFAULT) {
+        $sortcolumn = get_config('choicegroup', 'sortgroupsby');
+    } else {
+        $sortcolumn = $choicegroup->sortgroupsby;
+    }
+
+    switch ($sortcolumn) {
+        case CHOICEGROUP_SORTGROUPS_CREATEDATE:
+            return 'timecreated';
+        case CHOICEGROUP_SORTGROUPS_NAME:
+            return 'name';
+        default:
+            return 'timecreated';
+    }
 }
 
 /**
@@ -746,32 +849,35 @@ function choicegroup_reset_course_form_defaults($course) {
  * @return array
  */
 function choicegroup_get_response_data($choicegroup, $cm) {
-    global $CFG;
-    $context = context_module::instance($cm->id);
-    /// Initialise the returned array, which is a matrix:  $allresponses[responseid][userid] = responseobject
-    $allresponses = array();
+    // Initialise the returned array, which is a matrix:  $allresponses[responseid][userid] = responseobject.
+    static $allresponses = array();
 
-    /// First get all the users who have access here
-    /// To start with we assume they are all "unanswered" then move them later
-    $allresponses[0] = get_enrolled_users($context, 'mod/choicegroup:choose', 0, user_picture::fields('u',        array('idnumber')), 'u.lastname ASC,u.firstname ASC');
-
-    if ($allresponses[0]) {
-        // if groupmembersonly used, remove users who are not in any group
-        if (!empty($CFG->enablegroupmembersonly) and $cm->groupmembersonly) {
-            if ($groupingusers = groups_get_grouping_members($cm->groupingid, 'u.id', 'u.id')) {
-                $allresponses[0] = array_intersect_key($allresponses[0], $groupingusers);
-            }
-        }
+    if (count($allresponses)) {
+        return $allresponses;
     }
 
+    // First get all the users who have access here.
+    // To start with we assume they are all "unanswered" then move them later.
+    $ctx = \context_module::instance($cm->id);
+    $users = get_enrolled_users($ctx, 'mod/choicegroup:choose', 0, user_picture::fields('u', array('idnumber')), 'u.lastname ASC,u.firstname ASC');
+    if ($users) {
+        $modinfo = get_fast_modinfo($cm->course);
+        $cminfo = $modinfo->get_cm($cm->id);
+        $availability = new \core_availability\info_module($cminfo);
+        $users = $availability->filter_user_list($users);
+    }
+
+    $allresponses[0] = $users;
     foreach ($allresponses[0] as $user) {
-        $currentAnswers = choicegroup_get_user_answer($choicegroup, $user, TRUE);
-        if ($currentAnswers != false) {
-            foreach ($currentAnswers as $current) {
-                $allresponses[$current->id][$user->id] = clone($allresponses[0][$user->id]);
+        $currentanswers = choicegroup_get_user_answer($choicegroup, $user, true);
+        if ($currentanswers != false) {
+            foreach ($currentanswers as $current) {
+                $allresponses[$current->id][$user->id] = clone $allresponses[0][$user->id];
                 $allresponses[$current->id][$user->id]->timemodified = $current->timeuseradded;
             }
-            unset($allresponses[0][$user->id]);   // Remove from unanswered column
+
+            // Remove from unanswered column.
+            unset($allresponses[0][$user->id]);
         }
     }
     return $allresponses;
@@ -895,3 +1001,10 @@ function choicegroup_page_type_list($pagetype, $parentcontext, $currentcontext) 
     return $module_pagetype;
 }
 
+
+function choicegroup_get_sort_options() {
+    return array (
+        CHOICEGROUP_SORTGROUPS_CREATEDATE => get_string('createdate', 'choicegroup'),
+        CHOICEGROUP_SORTGROUPS_NAME => get_string('name', 'choicegroup')
+    );
+}

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['addselqtype'] = 'Geselecteerde vraagtype toevoegen';
 $string['alignment'] = 'Uitlijning van de keuzerondjes';
 $string['alignment_help'] = 'Selecteer uitlijning voor de selectievakjes: verticaal (standaard) of horizontaal';
 $string['all'] = 'Alles';
-$string['alreadyfilled'] = 'Deze enquête heb je voor ons al ingevuld {$a}. Bedankt!';
+$string['alreadyfilled'] = 'Deze vragenlijst heb je voor ons al ingevuld {$a}. Bedankt!';
 $string['andaveragevalues'] = 'en gemiddelde waardes';
 $string['anonymous'] = 'Anoniem';
 $string['answerquestions'] = 'Beantwoord de vragen...';
@@ -65,7 +65,7 @@ $string['chart:type_help'] = 'Selecteer het gewenste grafiektype voor deze terug
 $string['chart:vprogress'] = 'Verticale voortgangsbalk';
 $string['checkallradiobuttons'] = 'Selecteer <strong>{$a}</strong> selectievakje(s) alstublieft!';
 $string['checkboxes'] = 'Selectievakjes';
-$string['closed'] = 'De enquête is gesloten op {$a}. Dank je.';
+$string['closed'] = 'De vragenlijst is gesloten op {$a}. Dank je.';
 $string['closedate'] = 'Gebruik een einddatum';
 $string['closeson'] = 'Vragenlijst sluit op {$a}';
 $string['createcontent'] = 'Maak nieuwe inhoud';

@@ -38,7 +38,13 @@ function testing_cli_argument_path($moodlepath) {
         $moodlepath = preg_replace('|^/admin/|', "/$CFG->admin/", $moodlepath);
     }
 
-    $cwd = getcwd();
+    if (isset($_SERVER['REMOTE_ADDR'])) {
+        // Web access, this should not happen often.
+        $cwd = dirname(dirname(__DIR__));
+    } else {
+        // This is the real CLI script, work with relative paths.
+        $cwd = getcwd();
+    }
     if (substr($cwd, -1) !== DIRECTORY_SEPARATOR) {
         $cwd .= DIRECTORY_SEPARATOR;
     }
@@ -184,7 +190,7 @@ function testing_update_composer_dependencies() {
     }
 
     // Update composer dependencies.
-    passthru("php composer.phar update --dev", $code);
+    passthru("php composer.phar update", $code);
     if ($code != 0) {
         exit($code);
     }

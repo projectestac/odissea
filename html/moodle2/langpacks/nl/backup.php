@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['errorinvalidformat'] = 'Onbekend back-upformaat';
 $string['errorinvalidformatinfo'] = 'Het gekozen bestand is geen geldig Moodle back-upbestand en kan niet teruggezet worden.';
 $string['errorminbackup20version'] = 'Dit back-upbestand is gemaakt met een ontwikkelversie van Moodle-back-up ({$a->backup}). De minimale vereiste is {$a->min}. Kan niet teruggezet worden.';
 $string['errorrestorefrontpage'] = 'Terugzetten over de startpagina is niet toegestaan.';
-$string['errortgznozlib'] = 'Het geselecteerde bestand is in het nieuwe backupformaat en kan niet teruggezet worden omdat de zlib PHP-extentie niet beschikbaar is op deze server.';
 $string['executionsuccess'] = 'Je back-upbestand is klaar.';
 $string['filealiasesrestorefailures'] = 'Aliases terugzetten mislukt';
 $string['filealiasesrestorefailures_help'] = 'Aliases zijn symbolische links naar andere bestanden,  ook deze naar externe opslagruimten. In sommige gevallen kan Moodle ze niet terugzetten - bijvoorbeeld als een back-up van een andere site wordt teruggezet en het bestand waarnaar gerefereerd wordt niet bestaat.
@@ -130,7 +129,7 @@ $string['filename'] = 'Bestandsnaam';
 $string['filereferencesincluded'] = 'Bestandsreferenties naar externe inhoud in het back-upbestand. Die zullen niet werken op andere sites;';
 $string['filereferencesnotsamesite'] = 'De back-up is afkomstig van een andere site. Bestandsverwijzingen kunnen niet teruggezet worden';
 $string['filereferencessamesite'] = 'Back-up is van deze site, bestandsverwijzingen kunnen teruggezet worden';
-$string['generalactivities'] = 'Activiteiten mee opnemen';
+$string['generalactivities'] = 'Activiteiten en bronnen mee opnemen';
 $string['generalanonymize'] = 'Informatie anoniem maken';
 $string['generalbackdefaults'] = 'Algemene standaardinstellingen voor back-up';
 $string['generalbadges'] = 'Badges mee opnemen';
@@ -167,6 +166,7 @@ $string['includeditems'] = 'Ingesloten items:';
 $string['includefilereferences'] = 'Bestandsverwijizingen naar externe inhoud';
 $string['includesection'] = 'Sectie {$a}';
 $string['includeuserinfo'] = 'Gebruikersinformatie';
+$string['jumptofinalstep'] = 'Ga naar laatste stap';
 $string['locked'] = 'Geblokkeerd';
 $string['lockedbyconfig'] = 'Deze instelling is geblokkeerd door de standaard back-upinstellingen';
 $string['lockedbyhierarchy'] = 'Geblokkeerd door afhankelijkheden';
@@ -225,7 +225,7 @@ $string['restoretonewcourse'] = 'Zet terug als nieuwe cursus';
 $string['restoringcourse'] = 'Cursus aan het terugzetten';
 $string['restoringcourseshortname'] = 'terugzetten';
 $string['rootenrolmanual'] = 'Zet terug als manuele aanmeldingen';
-$string['rootsettingactivities'] = 'Activiteiten invoegen';
+$string['rootsettingactivities'] = 'Activiteiten en bronnen invoegen';
 $string['rootsettinganonymize'] = 'Maak gebruikersinfo anoniem';
 $string['rootsettingbadges'] = 'Badges mee opnemen';
 $string['rootsettingblocks'] = 'Blokken invoegen';
@@ -258,10 +258,11 @@ $string['skiphiddenhelp'] = 'Kies om verborgen cursussen al dan niet over te sla
 $string['skipmodifdays'] = 'Sla cursussen over die niet gewijzigd zijn sinds';
 $string['skipmodifdayshelp'] = 'Kies om cursussen over te slaan die niet gewijzigd zijn sinds een bepaald aantal dagen.';
 $string['skipmodifprev'] = 'Sla cursussen over die niet gewijzigd zijn sinds de vorige back-up';
-$string['skipmodifprevhelp'] = 'Kies om al dan niet cursussen over te slaan die niet gewijzigd zijn sinds de vorige back-up';
+$string['skipmodifprevhelp'] = 'Kies om al dan niet cursussen over te slaan die niet gewijzigd zijn sinds de vorige back-up. Hiervoor moeten logs ingeschakeld zijn.';
 $string['storagecourseandexternal'] = 'Cursusback-ups in cursusbestandszone en alternatieve map';
 $string['storagecourseonly'] = 'Cursusback-ups in cursusbestandszone';
 $string['storageexternalonly'] = 'Alternatieve map voor automatische back-ups';
+$string['timetaken'] = 'Gebruikte tijd';
 $string['title'] = 'Titel';
 $string['totalcategorysearchresults'] = 'Totaal aantal categorieën: {$a}';
 $string['totalcoursesearchresults'] = 'Totaal aantal cursussen: {$a}';

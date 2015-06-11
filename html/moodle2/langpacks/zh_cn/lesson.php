@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -172,11 +172,16 @@ $string['essayemailmessage2'] = '<p>问答题：<blockquote>{$a->question}</bloc
 $string['essayemailsubject'] = '题目{$a}的成绩';
 $string['essays'] = '问答题';
 $string['essayscore'] = '问答题成绩';
+$string['false'] = '错误';
 $string['fileformat'] = '文件格式';
 $string['finish'] = '结束';
 $string['firstanswershould'] = '第一个选项应当跳转到"正确"页';
 $string['firstwrong'] = '很遗憾，因为回答不正确，您没能够获得分数。还想继续猜测吗？这纯粹是为了学习的快乐（不能获得成绩）。';
 $string['flowcontrol'] = '流程控制';
+$string['fractionsaddwrong'] = '您选的得分总和不等于 100%<br />而是等于 {$a}%<br />您想回去改正这个问题吗？';
+$string['fractionsnomax'] = '答案中应该有一个是 100%，
+<br />这样这个题目才有可能得满分。
+<br />您想回去改正这个问题吗？';
 $string['full'] = '展开的';
 $string['general'] = '一般';
 $string['gotoendoflesson'] = '到教程末尾';
@@ -289,6 +294,7 @@ $string['noretake'] = '您不可以重新学习此教程。';
 $string['normal'] = '常规-按照自定义流程';
 $string['notcompleted'] = '没有完成';
 $string['notdefined'] = '没有定义';
+$string['notenoughsubquestions'] = '没有定义足够的小题!<br />您要退回去修改吗？';
 $string['nothighscore'] = '您没有制作 {$a} 最高成绩列表。';
 $string['notitle'] = '没有标题';
 $string['numberofcorrectanswers'] = '正确答案数：{$a}';
@@ -398,6 +404,7 @@ $string['timespenterror'] = '在本教程中至少花费了{$a}分钟';
 $string['timespentminutes'] = '消耗时间（分钟）';
 $string['timetaken'] = '开始时间';
 $string['topscorestitle'] = '{$a}个最高分';
+$string['true'] = '对';
 $string['truefalse'] = '判断题';
 $string['unabledtosavefile'] = '无法保存您上传的文件';
 $string['unknownqtypesnotimported'] = '{$a}个题目没有导入，因为不支持的它们的题目类型';

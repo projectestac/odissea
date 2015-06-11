@@ -75,7 +75,8 @@ class behat_permissions extends behat_base {
         $roleoption = $this->find('xpath', '//select[@name="roleid"]/option[contains(.,"' . $this->escape($rolename) . '")]');
 
         return array(
-            new Given('I select "' . $this->escape($roleoption->getText()) . '" from "' . get_string('advancedoverride', 'role') . '"'),
+            new Given('I set the field "' . get_string('advancedoverride', 'role') .
+                '" to "' . $this->escape($roleoption->getText()) . '"'),
             new Given('I fill the capabilities form with the following permissions:', $table),
             new Given('I press "' . get_string('savechanges') . '"')
         );
@@ -94,12 +95,6 @@ class behat_permissions extends behat_base {
         try {
             $advancedtoggle = $this->find_button(get_string('showadvanced', 'form'));
             if ($advancedtoggle) {
-
-                // As we are interacting with a moodle form we wait for the editor to be ready
-                // otherwise we may have problems when setting values on it or clicking on elements
-                // as the position of the elements will change once the editor is loaded.
-                $this->ensure_editors_are_loaded();
-
                 $advancedtoggle->click();
 
                 // Wait for the page to load.
@@ -135,7 +130,7 @@ class behat_permissions extends behat_base {
             // Converting from permission to constant value.
             $permissionvalue = constant($permissionconstant);
 
-            // Here we wait for the element to appear and exception if it does not exists.
+            // Here we wait for the element to appear and exception if it does not exist.
             $radio = $this->find('xpath', '//input[@name="' . $capability . '" and @value="' . $permissionvalue . '"]');
             $radio->click();
         }
@@ -181,4 +176,61 @@ class behat_permissions extends behat_base {
         }
     }
 
+    /**
+     * Set the allowed role assignments for the specified role.
+     *
+     * @Given /^I define the allowed role assignments for the "(?P<rolefullname_string>(?:[^"]|\\")*)" role as:$/
+     * @param string $rolename
+     * @param TableNode $table
+     * @return void Executes other steps
+     */
+    public function i_define_the_allowed_role_assignments_for_a_role_as($rolename, $table) {
+        $parentnodes = get_string('administrationsite') . ' > ' .
+            get_string('users', 'admin') . ' > ' .
+            get_string('permissions', 'role');
+        return array(
+            new Given('I am on homepage'),
+            new Given('I navigate to "' . get_string('defineroles', 'role') . '" node in "' . $parentnodes . '"'),
+            new Given('I follow "Allow role assignments"'),
+            new Given('I fill in the allowed role assignments form for the "' . $rolename . '" role with:', $table),
+            new Given('I press "' . get_string('savechanges') . '"')
+        );
+    }
+
+    /**
+     * Fill in the allowed role assignments form for the specied role.
+     *
+     * Takes a table with two columns. Each row should contain the target
+     * role, and either "Assignable" or "Not assignable".
+     *
+     * @Given /^I fill in the allowed role assignments form for the "(?P<rolefullname_string>(?:[^"]|\\")*)" role with:$/
+     * @param String $sourcerole
+     * @param TableNode $table
+     * @return void
+     */
+    public function i_fill_in_the_allowed_role_assignments_form_for_a_role_with($sourcerole, $table) {
+        foreach ($table->getRows() as $key => $row) {
+            list($targetrole, $allowed) = $row;
+
+            $node = $this->find('xpath', '//input[@title="Allow users with role ' .
+                $sourcerole .
+                ' to assign the role ' .
+                $targetrole . '"]');
+
+            if ($allowed == 'Assignable') {
+                if (!$node->isChecked()) {
+                    $node->click();
+                }
+            } else if ($allowed == 'Not assignable') {
+                if ($node->isChecked()) {
+                    $node->click();
+                }
+            } else {
+                throw new ExpectationException(
+                    'The provided permission value "' . $allowed . '" is not valid. Use Assignable, or Not assignable',
+                    $this->getSession()
+                );
+            }
+        }
+    }
 }

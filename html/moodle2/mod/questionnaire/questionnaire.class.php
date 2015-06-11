@@ -136,7 +136,7 @@ class questionnaire {
 
         if (!$this->capabilities->view) {
             echo('<br/>');
-            questionnaire_notify(get_string("guestsno", "questionnaire", $this->name));
+            questionnaire_notify(get_string("noteligible", "questionnaire", $this->name));
             echo('<div><a href="'.$CFG->wwwroot.'/course/view.php?id='.$this->course->id.'">'.
                 get_string("continue").'</a></div>');
             exit;
@@ -172,7 +172,7 @@ class questionnaire {
 
             $msg = $this->print_survey($USER->id, $quser);
 
-            // If Survey was submitted with all required fields completed ($msg is empty),
+            // If Questionnaire was submitted with all required fields completed ($msg is empty),
             // then record the submittal.
             $viewform = data_submitted($CFG->wwwroot."/mod/questionnaire/complete.php");
             if (!empty($viewform->rid)) {
@@ -214,8 +214,18 @@ class questionnaire {
                     $completion->update_state($this->cm, COMPLETION_COMPLETE);
                 }
 
-                add_to_log($this->course->id, "questionnaire", "submit", "view.php?id={$this->cm->id}", "{$this->name}",
-                    $this->cm->id, $USER->id);
+                // Log this submitted response.
+                $context = context_module::instance($this->cm->id);
+                $anonymous = $this->respondenttype == 'anonymous';
+                $params = array(
+                                'context' => $context,
+                                'courseid' => $this->course->id,
+                                'relateduserid' => $USER->id,
+                                'anonymous' => $anonymous,
+                                'other' => array('questionnaireid' => $questionnaire->id)
+                );
+                $event = \mod_questionnaire\event\attempt_submitted::create($params);
+                $event->trigger();
 
                 $this->response_send_email($this->rid);
                 $this->response_goto_thankyou();
@@ -730,6 +740,7 @@ class questionnaire {
         $userid = '';
         $resp = '';
         $groupname = '';
+        $currentgroupid = 0;
         $timesubmitted = '';
         // Available group modes (0 = no groups; 1 = separate groups; 2 = visible groups).
         if ($rid) {
@@ -742,6 +753,7 @@ class questionnaire {
                         if ($groups = groups_get_all_groups($courseid, $resp->username)) {
                             if (count($groups) == 1) {
                                 $group = current($groups);
+                                $currentgroupid = $group->id;
                                 $groupname = ' ('.get_string('group').': '.$group->name.')';
                             } else {
                                 $groupname = ' ('.get_string('groups').': ';
@@ -754,6 +766,16 @@ class questionnaire {
                             $groupname = ' ('.get_string('groupnonmembers').')';
                         }
                     }
+
+                    $params = array(
+                                    'objectid' => $this->survey->id,
+                                    'context' => $this->context,
+                                    'courseid' => $this->course->id,
+                                    'relateduserid' => $userid,
+                                    'other' => array('action' => 'vresp', 'currentgroupid' => $currentgroupid, 'rid' => $rid)
+                    );
+                    $event = \mod_questionnaire\event\response_viewed::create($params);
+                    $event->trigger();
                 }
             }
         }
@@ -789,13 +811,12 @@ class questionnaire {
             echo ($groupname);
             echo ($timesubmitted);
         }
-        echo '<h3 class="surveyTitle">'.s($this->survey->title).'</h3>';
+        echo '<h3 class="surveyTitle">'.format_text($this->survey->title, FORMAT_HTML).'</h3>';
 
         // We don't want to display the print icon in the print popup window itself!
         if ($this->capabilities->printblank && $blankquestionnaire && $section == 1) {
-            // Open print friendly as popup window.
-            $imageurl = $CFG->wwwroot.'/mod/questionnaire/images/';
-            $linkname = '<img src="'.$imageurl.'print.gif" alt="Printer-friendly version" />';
+            // Open print friendly as popup window
+            $linkname = '&nbsp;'.get_string('printblank', 'questionnaire');
             $title = get_string('printblanktooltip', 'questionnaire');
             $url = '/mod/questionnaire/print.php?qid='.$this->id.'&amp;rid=0&amp;'.'courseid='.$this->course->id.'&amp;sec=1';
             $options = array('menubar' => true, 'location' => false, 'scrollbars' => true, 'resizable' => true,
@@ -804,7 +825,7 @@ class questionnaire {
             $link = new moodle_url($url);
             $action = new popup_action('click', $link, $name, $options);
             $class = "floatprinticon";
-            echo $OUTPUT->action_link($link, $linkname, $action, array('class' => $class, 'title' => $title));
+            echo $OUTPUT->action_link($link, $linkname, $action, array('class' => $class, 'title' => $title), new pix_icon('t/print', $title));
         }
         if ($section == 1) {
             if ($this->survey->subtitle) {
@@ -1112,13 +1133,6 @@ class questionnaire {
         return($haschoices);
     }
 
-    private function array_to_insql($array) {
-        if (count($array)) {
-            return("IN (".preg_replace("/([^,]+)/", "'\\1'", join(",", $array)).")");
-        }
-        return 'IS NULL';
-    }
-
     // RESPONSE LIBRARY.
 
     private function response_check_format($section, $formdata, $checkmissing = true, $checkwrongformat = true) {
@@ -1379,29 +1393,28 @@ class questionnaire {
             $sec = min($numsections , $sec);
 
             /* get question_id's in this section */
-            $qids = '';
+            $qids = array();
             foreach ($this->questionsbysec[$sec] as $question) {
-                if (empty($qids)) {
-                    $qids .= ' AND question_id IN ('.$question->id;
-                } else {
-                    $qids .= ','.$question->id;
-                }
+                $qids[] = $question->id;
             }
-            if (!empty($qids)) {
-                $qids .= ')';
-            } else {
+            if (empty($qids)) {
                 return;
+            } else {
+                list($qsql, $params) = $DB->get_in_or_equal($qids);
+                $qsql = ' AND question_id ' . $qsql;
             }
+
         } else {
             /* delete all */
-            $qids = '';
+            $qsql = '';
+            $params = array();
         }
 
         /* delete values */
-        $select = 'response_id = \''.$rid.'\' '.$qids;
+        $select = 'response_id = \'' . $rid . '\' ' . $qsql;
         foreach (array('response_bool', 'resp_single', 'resp_multiple', 'response_rank', 'response_text',
                        'response_other', 'response_date') as $tbl) {
-            $DB->delete_records_select('questionnaire_'.$tbl, $select);
+            $DB->delete_records_select('questionnaire_'.$tbl, $select, $params);
         }
     }
 
@@ -1667,8 +1680,19 @@ class questionnaire {
             $DB->update_record('questionnaire_response', $record);
         }
         if ($resume) {
-            add_to_log($this->course->id, "questionnaire", "save", "view.php?id={$this->cm->id}",
-                "{$this->name}", $this->cm->id, $USER->id);
+            // Log this saved response.
+            // Needed for the event logging.
+            $context = context_module::instance($this->cm->id);
+            $anonymous = $this->respondenttype == 'anonymous';
+            $params = array(
+                            'context' => $context,
+                            'courseid' => $this->course->id,
+                            'relateduserid' => $userid,
+                            'anonymous' => $anonymous,
+                            'other' => array('questionnaireid' => $this->id)
+            );
+            $event = \mod_questionnaire\event\attempt_saved::create($params);
+            $event->trigger();
         }
 
         if (!empty($this->questionsbysec[$section])) {
@@ -1792,14 +1816,9 @@ class questionnaire {
                         $oldqid = $row->qid;
                     }
                 }
-                if (is_array($qids2)) {
-                    $qids2 = 'question_id ' . $this->array_to_insql($qids2);
-                } else {
-                    $qids2 = 'question_id= ' . $qids2;
-                }
-                $sql = 'SELECT * FROM {questionnaire_quest_choice} WHERE '.$qids2.
-                    'ORDER BY id';
-                if ($records2 = $DB->get_records_sql($sql)) {
+                list($qsql, $params) = $DB->get_in_or_equal($qids2);
+                $sql = 'SELECT * FROM {questionnaire_quest_choice} WHERE question_id ' . $qsql . 'ORDER BY id';
+                if ($records2 = $DB->get_records_sql($sql, $params)) {
                     foreach ($records2 as $qid => $row2) {
                         $selected = '0';
                         $qid2 = $row2->question_id;
@@ -2120,7 +2139,7 @@ class questionnaire {
         if ($isfullname) {
             $selectgroupid = '';
             $gmuserid = ', GM.userid ';
-            $groupmembers = ', '.$CFG->prefix.'groups_members GM ';
+            $groupmembers = ', {groups_members} GM ';
             $castsql = $DB->sql_cast_char2int('R.username');
             switch ($currentgroupid) {
                 case 0:     // All participants.
@@ -2132,9 +2151,9 @@ class questionnaire {
             }
             $sql = 'SELECT R.id AS responseid, R.submitted AS submitted, R.username, U.username AS username,
                             U.id as userid '.$gmuserid.
-            'FROM '.$CFG->prefix.'questionnaire_response R,
-            '.$CFG->prefix.'user U
-            '.$groupmembers.
+            'FROM {questionnaire_response} R,
+                  {user} U
+                '.$groupmembers.
             'WHERE R.survey_id='.$this->survey->id.
             ' AND complete = \'y\''.
             ' AND U.id = '.$castsql.
@@ -2237,9 +2256,7 @@ class questionnaire {
             echo '<br /><b><<< <a href="'.$url.'">'.get_string('viewbyresponse', 'questionnaire').'</a></b>';
 
             // Display a "print this response" icon here in prevision of total removal of tabs in version 2.6.
-            $linkname = get_string('print', 'questionnaire');
-            $imageurl = $CFG->wwwroot.'/mod/questionnaire/images/';
-            $linkname = '<img src="'.$imageurl.'print.gif" alt="Printer-friendly version" />';
+            $linkname = '&nbsp;'.get_string('print', 'questionnaire');
             $url = '/mod/questionnaire/print.php?qid='.$this->id.'&amp;rid='.$currrid.
             '&amp;courseid='.$this->course->id.'&amp;sec=1';
             $title = get_string('printtooltip', 'questionnaire');
@@ -2248,7 +2265,7 @@ class questionnaire {
             $name = 'popup';
             $link = new moodle_url($url);
             $action = new popup_action('click', $link, $name, $options);
-            $actionlink = $OUTPUT->action_link($link, $linkname, $action, array('title' => $title));
+            $actionlink = $OUTPUT->action_link($link, $linkname, $action, array('title' => $title), new pix_icon('t/print', $title));
             echo '&nbsp;|&nbsp;'.$actionlink;
 
             echo $OUTPUT->box_end();
@@ -2539,33 +2556,23 @@ class questionnaire {
         global $SESSION, $DB;
 
         $output = array();
-        $nbinfocols = 9; // Change this if you want more info columns.
         $stringother = get_string('other', 'questionnaire');
-        $columns = array(
-                get_string('response', 'questionnaire'),
-                get_string('submitted', 'questionnaire'),
-                get_string('institution'),
-                get_string('department'),
-                get_string('course'),
-                get_string('group'),
-                get_string('id', 'questionnaire'),
-                get_string('fullname'),
-                get_string('username')
-            );
-
-        $types = array(
-                0,
-                0,
-                1,
-                1,
-                1,
-                1,
-                0,
-                1,
-                1,
-            );
-
         $arr = array();
+
+        $config = get_config('questionnaire', 'downloadoptions');
+        $options = empty($config) ? array() : explode(',', $config);
+        $columns = array();
+        $types = array();
+        foreach ($options as $option) {
+            if (in_array($option, array('response', 'submitted', 'id'))) {
+                $columns[] = get_string($option, 'questionnaire');
+                $types[] = 0;
+            } else {
+                $columns[] = get_string($option);
+                $types[] = 1;
+            }
+        }
+        $nbinfocols = count($columns);
 
         $idtocsvmap = array(
             '0',    // 0: unused
@@ -2808,16 +2815,16 @@ class questionnaire {
                 $username = '';
                 $uid = '';
             }
-            $arr = array();
-            array_push($arr, $qid);
-            array_push($arr, $submitted);
-            array_push($arr, $institution);
-            array_push($arr, $department);
-            array_push($arr, $coursename);
-            array_push($arr, $groupname);
-            array_push($arr, $uid);
-            array_push($arr, $fullname);
-            array_push($arr, $username);
+            $arr = array(); // fill $arr only with fields selected in the mod settings
+            if (in_array('response', $options)) array_push($arr, $qid);
+            if (in_array('submitted', $options)) array_push($arr, $submitted);
+            if (in_array('institution', $options)) array_push($arr, $institution);
+            if (in_array('department', $options)) array_push($arr, $department);
+            if (in_array('course', $options)) array_push($arr, $coursename);
+            if (in_array('group', $options)) array_push($arr, $groupname);
+            if (in_array('id', $options)) array_push($arr, $uid);
+            if (in_array('fullname', $options)) array_push($arr, $fullname);
+            if (in_array('username', $options)) array_push($arr, $username);
 
             // Merge it.
             for ($i = $nbinfocols; $i < $numcols; $i++) {
@@ -3322,7 +3329,7 @@ class questionnaire {
                 $table->data[] = array($sectionlabel, $scorepercent[$key].'%'.$oppositescore,
                                 $allscorepercent[$key].'%'.$oppositeallscore);
             } else {
-                $table->data[] = array($sectionlabel, $sc.'%'.$oppositeallscore);
+                $table->data[] = array($sectionlabel, $allscorepercent[$key].'%'.$oppositeallscore);
             }
         }
         if (isset($CFG->questionnaire_usergraph) && $CFG->questionnaire_usergraph && $this->survey->chart_type) {

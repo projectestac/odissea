@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,7 +107,6 @@ $string['logs'] = 'καταγραφές';
 $string['mnet'] = 'Δικτύωση Moodle';
 $string['mnet_concatenate_strings'] = 'Ένωση (μέχρι) 3 αλφαριθμητικών και επιστροφή του αποτελέσματος';
 $string['mnetdisabled'] = 'Το Δίκτυο Moodle είναι <strong>απενεργοποιημένο</strong>.';
-$string['mnetlog'] = 'Καταγραφές';
 $string['mnetpeers'] = 'Ομότιμοι';
 $string['mnetservices'] = 'Υπηρεσίες';
 $string['mnet_session_prohibited'] = 'Οι χρήστες από τον κεντρικό εξυπηρετητή σας δεν επιτρέπεται προς το παρόν να περιηγούνται στο {$a}.';

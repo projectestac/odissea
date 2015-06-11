@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'grades', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,8 +49,6 @@ Este axuste determina cando as cualificacións baleiras non están incluídas na
 $string['aggregateoutcomes'] = 'Incluír os resultados na agregación';
 $string['aggregateoutcomes_help'] = 'Se está activado, os resultados inclúense na agregación. Isto pode dar como resultado un total de categoría non agardado.';
 $string['aggregatesonly'] = 'Só agregados';
-$string['aggregatesubcats'] = 'Agregar subcategorías incluíntes';
-$string['aggregatesubcats_help'] = 'Este axuste determina se as cualificacións das subcategorías se inclúen na agregación.';
 $string['aggregatesum'] = 'Suma de cualificacións';
 $string['aggregateweightedmean'] = 'Media ponderada de cualificacións';
 $string['aggregateweightedmean2'] = 'Media ponderada simple de cualificacións';
@@ -93,7 +91,7 @@ $string['averagesdecimalpoints'] = 'Núm. de decimais na columna de medias';
 $string['averagesdecimalpoints_help'] = 'Este axuste determina o número de decimais que presentar na media de cada columna ou se se emprega o axuste global de decimais para a categoría ou elemento de cualificación (herdanza).';
 $string['averagesdisplaytype'] = 'Tipo de presentación de columnas de medias';
 $string['averagesdisplaytype_help'] = 'Este axuste determina se a media presentase como cualificacións reais, porcentaxes ou letras ou se emprega o tipo de presentación pola categoría ou elemento de cualificación (herdanza).';
-$string['backupwithoutgradebook'] = 'A copia de seguranza non contén a configuración do Libro de cualificacións';
+$string['backupwithoutgradebook'] = 'A copia de seguranza non conten a configuración do Libro de cualificacións';
 $string['badgrade'] = 'A cualificación subministrada non é correcta';
 $string['badlyformattedscale'] = 'Escriba unha lista de valores separados por comas (requírense polo menos dous valores).';
 $string['baduser'] = 'O usuario subministrado non é correcto';
@@ -188,7 +186,6 @@ $string['errorreprintheadersnonnumeric'] = 'Recibiuse un valor non numérico par
 $string['errorsavegrade'] = 'Non foi posíbel cargar a cualificación.';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Produciuse un erro ao actualizar o axuste «Engadir só as cualificacións non baleiras» da categoría de cualificación co ID {$a->id}';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Produciuse un erro ao actualizar o axuste «Incluír os resultados na agregación» da categoría de cualificación co ID {$a->id}';
-$string['errorupdatinggradecategoryaggregatesubcats'] = 'Produciuse un erro ao actualizar o axuste «Engadir subcategorías incluíntes» da categoría de cualificación co ID {$a->id}';
 $string['errorupdatinggradecategoryaggregation'] = 'Produciuse un erro ao actualizar o tipo de agregación da categoría de cualificación co ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'produciuse un erro ao actualizar o coeficiente de agregación (ponderación ou punto adicional) da categoría de cualificación co ID {$a->id}';
 $string['excluded'] = 'Excluída';
@@ -669,7 +666,6 @@ $string['useweighted'] = 'Empregar a ponderación';
 $string['verbosescales'] = 'Escalas detalladas';
 $string['viewbygroup'] = 'Grupo';
 $string['viewgrades'] = 'Ver as cualificacións';
-$string['warningexcludedsum'] = 'Aviso: a exclusión das cualificacións non é compatíbel coa agregación da suma.';
 $string['weight'] = 'ponderación';
 $string['weightcourse'] = 'Empregar cualificacións ponderadas para o curso';
 $string['weightedascending'] = 'Ordenación ascendente por porcentaxe de ponderación';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_title', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blockquote'] = 'Aipatua';
-$string['h3'] = '1. izenburua';
-$string['h4'] = '2. izenburua';
-$string['h5'] = '3. izenburua';
-$string['p'] = 'Laua';
+$string['h3'] = 'Izenburua (handia)';
+$string['h4'] = 'Izenburua (ertaina)';
+$string['h5'] = 'Izenburua (txikia)';
+$string['p'] = 'Paragrafoa';
 $string['pluginname'] = 'Paragrafo-estiloak';
 $string['pre'] = 'Aurre-formateatua';
 $string['title'] = 'Paragrafo-estiloak';

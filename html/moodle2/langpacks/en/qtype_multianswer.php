@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Undefined layout';
 $string['layoutvertical'] = 'Vertical column of radio buttons';
 $string['nooptionsforsubquestion'] = 'Unable to get options for question part # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'The Cloze(multianswer) question "<strong>{$a}</strong>" does not contain any question';
+$string['pleaseananswerallparts'] = 'Please answer all parts of the question.';
 $string['pluginname'] = 'Embedded answers (Cloze)';
 $string['pluginnameadding'] = 'Adding an Embedded answers (Cloze) question';
 $string['pluginnameediting'] = 'Editing an Embedded answers (Cloze) question';
@@ -57,7 +58,7 @@ $string['questionsless'] = '{$a} question(s) less than in the multianswer questi
 $string['questionsmissing'] = 'The question text must include at least one embedded answer.';
 $string['questionsmore'] = '{$a} question(s) more than in the multianswer question stored in the database';
 $string['questiontypechanged'] = 'Question type changed';
-$string['questiontypechangedcomment'] = 'At least one question type has been changed.<br >Did you add, delete or move a question?<br >Look ahead.';
+$string['questiontypechangedcomment'] = 'At least one question type has been changed.<br />Did you add, delete or move a question?<br />Look ahead.';
 $string['questionusedinquiz'] = 'This question is used in {$a->nb_of_quiz} quiz(s), total attempt(s) : {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Stored question type {$a}';
 $string['subqresponse'] = 'part {$a->i}: {$a->response}';

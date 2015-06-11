@@ -621,16 +621,24 @@ class question_usage_by_activity {
 
             // Behaviour vars should not be processed by question type, just add prefix.
             $behaviourvars = $this->get_question_attempt($slot)->get_behaviour()->get_expected_data();
-            foreach ($behaviourvars as $behaviourvarname => $unused) {
-                $behaviourvarkey = '-'.$behaviourvarname;
-                if (isset($responsedata[$behaviourvarkey])) {
-                    $slotresponse[$behaviourvarkey] = $responsedata[$behaviourvarkey];
-                    unset($responsedata[$behaviourvarkey]);
+            foreach (array_keys($responsedata) as $responsedatakey) {
+                if ($responsedatakey{0} === '-') {
+                    $behaviourvarname = substr($responsedatakey, 1);
+                    if (isset($behaviourvars[$behaviourvarname])) {
+                        // Expected behaviour var found.
+                        if ($responsedata[$responsedatakey]) {
+                            // Only set the behaviour var if the column value from the cvs file is non zero.
+                            // The behaviours only look at whether the var is set or not they don't look at the value.
+                            $slotresponse[$responsedatakey] = $responsedata[$responsedatakey];
+                        }
+                    }
+                    // Remove both expected and unexpected vars from data passed to question type.
+                    unset($responsedata[$responsedatakey]);
                 }
             }
 
             $slotresponse += $this->get_question($slot)->prepare_simulated_post_data($responsedata);
-            $slotresponse[':sequencecheck'] =  $this->get_question_attempt($slot)->get_sequence_check_count();
+            $slotresponse[':sequencecheck'] = $this->get_question_attempt($slot)->get_sequence_check_count();
 
             // Add this slot's prefix to slot data.
             $prefix = $this->get_field_prefix($slot);
@@ -827,7 +835,7 @@ class question_usage_by_activity {
         while ($record->qubaid != $qubaid) {
             $records->next();
             if (!$records->valid()) {
-                throw new coding_exception("Question usage $qubaid not found in the database.");
+                throw new coding_exception("Question usage {$qubaid} not found in the database.");
             }
             $record = $records->current();
         }

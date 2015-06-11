@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['logsformat'] = 'Формат логов';
-$string['log:view'] = 'Просматривать логи курса';
-$string['log:viewtoday'] = 'Просматривать сегодняшние логи';
+$string['eventcomponent'] = 'Компонент';
+$string['eventcontext'] = 'Контекст события';
+$string['eventloggedas'] = '{$a->realusername} под именем {$a->asusername}';
+$string['eventorigin'] = 'Источник';
+$string['eventrelatedfullnameuser'] = 'Затронутый пользователь';
+$string['eventreportviewed'] = 'Просмотрен отчет «Журнал событий»';
+$string['eventuserreportviewed'] = 'Просмотрен журнал событий пользователя';
+$string['logsformat'] = 'Формат';
+$string['log:view'] = 'Просматривать журнал событий курса';
+$string['log:viewtoday'] = 'Просматривать записи журнала событий за сегодня';
+$string['nologreaderenabled'] = 'Нет доступных журналов событий';
 $string['page'] = 'Страница {$a}';
-$string['page-report-log-index'] = 'Отчет о логах курса';
-$string['page-report-log-user'] = 'Отчет о логах участников курса';
-$string['page-report-log-x'] = 'Отчеты о любых логах';
-$string['pluginname'] = 'Логи';
+$string['page-report-log-index'] = 'Отчет о событиях курса';
+$string['page-report-log-user'] = 'Отчет о событиях участника курса';
+$string['page-report-log-x'] = 'Отчет о любых событиях';
+$string['pluginname'] = 'Журнал событий';
+$string['selectlogreader'] = 'Выберите журнал событий';

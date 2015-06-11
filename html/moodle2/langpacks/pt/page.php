@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,6 @@ $string['createpage'] = 'Criar um novo recurso do tipo Página';
 $string['displayoptions'] = 'Opções de visualização disponíveis';
 $string['displayselect'] = 'Exibir em';
 $string['displayselectexplain'] = 'Escolha a forma de exibição.';
-$string['eventcoursemoduleviewed'] = 'Recurso do tipo Página visualizada';
-$string['eventinstanceslistviewed'] = 'Página da lista de instâncias visualizada';
 $string['legacyfiles'] = 'Migração de ficheiro de disciplina antiga';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
@@ -48,7 +46,6 @@ Uma página pode ser utilizada para:
 * Para incorporar vários vídeos ou ficheiros de som, juntamente com um texto explicativo.';
 $string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Páginas';
-$string['neverseen'] = 'Nunca visto';
 $string['optionsheader'] = 'Mostrar opções';
 $string['page:addinstance'] = 'Adicionar nova Página';
 $string['page-mod-page-x'] = 'Qualquer página do recurso página';
@@ -59,5 +56,7 @@ $string['popupheight'] = 'Altura da janela de pop-up (em pixeis)';
 $string['popupheightexplain'] = 'Especifique a altura pré-definida da janela de pop-up';
 $string['popupwidth'] = 'Largura da janela de pop-up (em pixeis)';
 $string['popupwidthexplain'] = 'Especifique a largura pré-definida quando abre numa janela de pop-up';
+$string['printheading'] = 'Exibir nome da página';
+$string['printheadingexplain'] = 'Exibir nome da página acima do conteúdo?';
 $string['printintro'] = 'Mostrar descrição da Página';
 $string['printintroexplain'] = 'Mostrar descrição da Página por cima do conteúdo?';

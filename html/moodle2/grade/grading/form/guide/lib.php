@@ -205,7 +205,7 @@ class gradingform_guide_controller extends gradingform_controller {
         } else {
             $newcomment = $newdefinition->guide['comments']; // New ones to be saved.
         }
-        $currentcomments = $currentdefinition->guide_comment;
+        $currentcomments = $currentdefinition->guide_comments;
         $commentfields = array('sortorder', 'description');
         foreach ($newcomment as $id => $comment) {
             if (preg_match('/^NEWID\d+$/', $id)) {
@@ -309,7 +309,7 @@ class gradingform_guide_controller extends gradingform_controller {
         $this->definition = $definition;
         // Now get criteria.
         $this->definition->guide_criteria = array();
-        $this->definition->guide_comment = array();
+        $this->definition->guide_comments = array();
         $criteria = $DB->get_recordset('gradingform_guide_criteria', array('definitionid' => $this->definition->id), 'sortorder');
         foreach ($criteria as $criterion) {
             foreach (array('id', 'sortorder', 'description', 'descriptionformat',
@@ -327,7 +327,7 @@ class gradingform_guide_controller extends gradingform_controller {
         $comments = $DB->get_recordset('gradingform_guide_comments', array('definitionid' => $this->definition->id), 'sortorder');
         foreach ($comments as $comment) {
             foreach (array('id', 'sortorder', 'description', 'descriptionformat') as $fieldname) {
-                $this->definition->guide_comment[$comment->id][$fieldname] = $comment->{$fieldname};
+                $this->definition->guide_comments[$comment->id][$fieldname] = $comment->{$fieldname};
             }
         }
         $comments->close();
@@ -404,8 +404,8 @@ class gradingform_guide_controller extends gradingform_controller {
         } else if (!$definition && $addemptycriterion) {
             $properties->guide['criteria'] = array('addcriterion' => 1);
         }
-        if (!empty($definition->guide_comment)) {
-            $properties->guide['comments'] = $definition->guide_comment;
+        if (!empty($definition->guide_comments)) {
+            $properties->guide['comments'] = $definition->guide_comments;
         } else if (!$definition && $addemptycriterion) {
             $properties->guide['comments'] = array('addcomment' => 1);
         }
@@ -508,7 +508,7 @@ class gradingform_guide_controller extends gradingform_controller {
         }
 
         $criteria = $this->definition->guide_criteria;
-        $comments = $this->definition->guide_comment;
+        $comments = $this->definition->guide_comments;
         $output = $this->get_renderer($page);
 
         $guide = '';
@@ -563,8 +563,8 @@ class gradingform_guide_controller extends gradingform_controller {
             return $this->get_instance($instance);
         }
         if ($itemid && $raterid) {
-            if ($rs = $DB->get_records('grading_instances', array('raterid' => $raterid, 'itemid' => $itemid),
-                'timemodified DESC', '*', 0, 1)) {
+            $params = array('definitionid' => $this->definition->id, 'raterid' => $raterid, 'itemid' => $itemid);
+            if ($rs = $DB->get_records('grading_instances', $params, 'timemodified DESC', '*', 0, 1)) {
                 $record = reset($rs);
                 $currentinstance = $this->get_current_instance($raterid, $itemid);
                 if ($record->status == gradingform_guide_instance::INSTANCE_STATUS_INCOMPLETE &&
@@ -653,7 +653,7 @@ class gradingform_guide_controller extends gradingform_controller {
 
     /**
      * @return array An array containing 2 key/value pairs which hold the external_multiple_structure
-     * for the 'guide_criteria' and the 'guide_comment'.
+     * for the 'guide_criteria' and the 'guide_comments'.
      * @see gradingform_controller::get_external_definition_details()
      * @since Moodle 2.5
      */
@@ -661,8 +661,8 @@ class gradingform_guide_controller extends gradingform_controller {
         $guide_criteria = new external_multiple_structure(
                               new external_single_structure(
                                   array(
-                                      'id'   => new external_value(PARAM_INT, 'criterion id'),
-                                      'sortorder' => new external_value(PARAM_INT, 'sortorder'),
+                                      'id'   => new external_value(PARAM_INT, 'criterion id', VALUE_OPTIONAL),
+                                      'sortorder' => new external_value(PARAM_INT, 'sortorder', VALUE_OPTIONAL),
                                       'description' => new external_value(PARAM_RAW, 'description', VALUE_OPTIONAL),
                                       'descriptionformat' => new external_format_value('description', VALUE_OPTIONAL),
                                       'shortname' => new external_value(PARAM_TEXT, 'description'),
@@ -672,17 +672,17 @@ class gradingform_guide_controller extends gradingform_controller {
                                       )
                                   )
         );
-        $guide_comment = new external_multiple_structure(
+        $guide_comments = new external_multiple_structure(
                               new external_single_structure(
                                   array(
-                                      'id'   => new external_value(PARAM_INT, 'criterion id'),
-                                      'sortorder' => new external_value(PARAM_INT, 'sortorder'),
+                                      'id'   => new external_value(PARAM_INT, 'criterion id', VALUE_OPTIONAL),
+                                      'sortorder' => new external_value(PARAM_INT, 'sortorder', VALUE_OPTIONAL),
                                       'description' => new external_value(PARAM_RAW, 'description', VALUE_OPTIONAL),
                                       'descriptionformat' => new external_format_value('description', VALUE_OPTIONAL)
                                    )
                               ), 'comments', VALUE_OPTIONAL
         );
-        return array('guide_criteria' => $guide_criteria, 'guide_comment' => $guide_comment);
+        return array('guide_criteria' => $guide_criteria, 'guide_comments' => $guide_comments);
     }
 
     /**
@@ -896,7 +896,7 @@ class gradingform_guide_instance extends gradingform_instance {
             }
         }
         $criteria = $this->get_controller()->get_definition()->guide_criteria;
-        $comments = $this->get_controller()->get_definition()->guide_comment;
+        $comments = $this->get_controller()->get_definition()->guide_comments;
         $options = $this->get_controller()->get_options();
         $value = $gradingformelement->getValue();
         $html = '';

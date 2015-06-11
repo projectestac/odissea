@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -205,10 +205,17 @@ $string['essayemailmessage2'] = '<p>Έκθεση:<blockquote>{$a->question}</blo
 $string['essayemailsubject'] = 'Ο βαθμός σας για την {$a} ερώτηση';
 $string['essays'] = 'Εκθέσεις';
 $string['essayscore'] = 'Βαθμός έκθεσης';
+$string['false'] = 'Λάθος';
 $string['fileformat'] = 'Μορφή αρχείου';
 $string['firstanswershould'] = 'Η πρώτη απάντηση να μεταπηδά στην "Σωστή" σελίδα';
 $string['firstwrong'] = 'Δυστυχώς δεν μπορείτε να κερδίσετε αυτό το βαθμό γιατί η απάντησή σας ήταν λάθος. Θέλετε να συνεχίσετε να μαντεύετε, μόνο για τη χαρά της μάθησης (δεν θα λάβετε το βαθμολογικό μπόνους);';
 $string['flowcontrol'] = 'Έλεγχος ροής';
+$string['fractionsaddwrong'] = 'Οι θετικές βαθμολογίες που επιλέξατε δεν αθροίζονται ως το 100%
+<br />Αντίθετα, αθροίζονται στο {$a}%
+<br />Θέλετε να γυρίσετε πίσω και να τροποποιήσετε την ερώτηση;';
+$string['fractionsnomax'] = 'Μια από τις ερωτήσεις θα έπρεπε να είναι 100%, έτσι ώστε να είναι δυνατό
+<br />να πάρει κάποιος το σύνολο της βαθμολογίας σε αυτή την ερώτηση.
+<br />Θέλετε να επιστρέψετε και να τροποποιήσετε την ερώτηση;';
 $string['full'] = 'Επεκτάθηκε';
 $string['general'] = 'Γενικά';
 $string['grade'] = 'Βαθμός';
@@ -441,6 +448,8 @@ $string['noretake'] = 'Δεν έχετε το δικαίωμα να επαναλ
 $string['normal'] = 'Κανονικό - ακολουθήστε τη διαδρομή της ενότητας';
 $string['notcompleted'] = 'Δεν ολοκληρώθηκε';
 $string['notdefined'] = 'Δεν καθορίστηκε';
+$string['notenoughsubquestions'] = 'Δεν έχουν οριστεί αρκετά υποερωτήματα!<br />
+Θέλετε να επιστρέψετε και να διορθώσετε αυτήν την ερώτηση;';
 $string['nothighscore'] = 'Δεν μπήκατε στη λίστα με τους {$a} υψηλότερους βαθμούς.';
 $string['notitle'] = 'Χωρίς τίτλο';
 $string['numberofcorrectanswers'] = 'Αριθμός σωστών απαντήσεων: {$a}';
@@ -591,6 +600,7 @@ $string['timespenterror'] = 'Πρέπει να αφιερώσετε τουλάχ
 $string['timespentminutes'] = 'Χρόνος που Πέρασε (σε λεπτά)';
 $string['timetaken'] = 'Χρόνος που χρειάστηκε';
 $string['topscorestitle'] = 'Οι {$a} Υψηλότεροι Βαθμοί';
+$string['true'] = 'Σωστό';
 $string['unseenpageinbranch'] = 'Ερώτηση μέσα σε διακλάδωση που δεν εμφανίσθηκε';
 $string['unsupportedqtype'] = 'Μη υποστηριζόμενος τύπος ερώτησης ({$a})!';
 $string['updatedpage'] = 'Ανανεωμένη σελίδα';

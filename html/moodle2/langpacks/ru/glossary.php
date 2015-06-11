@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,6 +77,7 @@ $string['attachment_help'] = '<h2>Вложения для записей</h2>
 $string['author'] = 'автор';
 $string['authorview'] = 'Обзор по авторам';
 $string['back'] = 'Назад';
+$string['cachedef_concepts'] = 'Концепция связывания';
 $string['cantinsertcat'] = 'Нельзя вставить категорию';
 $string['cantinsertrec'] = 'Нельзя вставить запись';
 $string['cantinsertrel'] = 'Нельзя вставить отношение категория-запись';
@@ -200,6 +201,15 @@ $string['errconceptalreadyexists'] = 'Это понятие уже сущест�
 $string['errdeltimeexpired'] = 'Вы не можете это удалить. Время истекло!';
 $string['erredittimeexpired'] = 'Время редактирования этой записи истекло.';
 $string['errorparsingxml'] = 'Ошибки при анализе файла. Убедитесь, что там допустимый синтаксис XML.';
+$string['eventcategorycreated'] = 'Категория создана';
+$string['eventcategorydeleted'] = 'Категория удалена';
+$string['eventcategoryupdated'] = 'Категория обновлена';
+$string['evententryapproved'] = 'Запись одобрена';
+$string['evententrycreated'] = 'Запись создана';
+$string['evententrydeleted'] = 'Запись удалена';
+$string['evententrydisapproved'] = 'Запись не одобрена';
+$string['evententryupdated'] = 'Запись обновлена';
+$string['evententryviewed'] = 'Запись просмотрена';
 $string['explainaddentry'] = 'Добавить новую запись.<br/>
 Слово и определение - поля обязательные.';
 $string['explainall'] = 'Показать все записи на одной странице';

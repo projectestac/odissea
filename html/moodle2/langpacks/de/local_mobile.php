@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'local_mobile', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cannotcreatetoken'] = 'Token für Administratoren werden nicht automatisch generiert, sondern müssen manuell auf der Website angelegt werden.';
+$string['cannotcreatetoken'] = 'Die Token für Administratoren werden nicht automatisch generiert, sondern müssen manuell auf der Website angelegt werden.';
 $string['local_mobiledescription'] = 'Das Plugin erweitert den mobilen Webservice.';
 $string['local_mobilesettings'] = 'Einstellungen';
 $string['local_mobiletypeoflogin'] = 'Wählen Sie die Art der Anmeldung.';

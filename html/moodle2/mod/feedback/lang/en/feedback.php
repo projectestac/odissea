@@ -17,7 +17,7 @@
 /**
  * Strings for component 'feedback', language 'en', branch 'MOODLE_20_STABLE'
  *
- * @package   feedback
+ * @package mod_feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -102,10 +102,8 @@ $string['emailteachermailhtml'] = '<p>{$a->username} has completed feedback acti
 $string['entries_saved'] = 'Your answers have been saved. Thank you.';
 $string['export_questions'] = 'Export questions';
 $string['export_to_excel'] = 'Export to Excel';
-$string['eventcoursemoduleviewed'] = 'Course module viewed';
 $string['eventresponsedeleted'] = 'Response deleted';
 $string['eventresponsesubmitted'] = 'Response submitted';
-$string['eventinstanceslistviewed'] = 'Instances list viewed';
 $string['feedback:addinstance'] = 'Add a new feedback';
 $string['feedbackclose'] = 'Allow answers to';
 $string['feedback:complete'] = 'Complete a feedback';

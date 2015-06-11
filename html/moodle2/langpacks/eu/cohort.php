@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,41 +26,52 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcohort'] = 'Gehitu beste kohorte bat';
+$string['allcohorts'] = 'Kohorte guztiak';
 $string['anycohort'] = 'Edozein';
 $string['assign'] = 'Esleitu';
+$string['assigncohorts'] = 'Esleitu kohorteko partaideak';
 $string['assignto'] = '{$a}\' kohorteko partaideak';
 $string['backtocohorts'] = 'Itzuli kohorteetara';
 $string['bulkadd'] = 'Gehitu kohortera';
 $string['bulknocohort'] = 'Ez da kohorte eskuragarririk aurkitu';
+$string['categorynotfound'] = '<b>{$a}</b> kategoria ez da aurkitu edo zuk ez duzu baimenik kohortea sortzeko bertan. Berezko testuingurua erabiliko da.';
 $string['cohort'] = 'Kohortea';
-$string['cohort:assign'] = 'Esleitu kohorteko partaideak';
-$string['cohort:manage'] = 'Kohorteak kudeatu';
 $string['cohorts'] = 'Kohorteak';
 $string['cohortsin'] = 'Eskura dauden kohorteak: {$a}';
-$string['cohort:view'] = 'Kohorteak erabili eta partaideak ikusi';
 $string['component'] = 'Mota';
+$string['contextnotfound'] = '<b>{$a}</b> testuingurua ez da aurkitu edo zuk ez duzu baimenik kohortea sortzeko bertan. Berezko testuingurua erabiliko da.';
+$string['csvcontainserrors'] = 'Erroreak aurkitu dira CSV datuetan. Ikusi xehetasunak behean.';
+$string['csvcontainswarnings'] = 'Abisuak aurkitu dira CSV datuetan. Ikusi xehetasunak behean.';
+$string['csvextracolumns'] = '<b>{$a}</b> zutabea(k) baztertuko d(ir)a.';
 $string['currentusers'] = 'Oraingo erabiltzaileak';
 $string['currentusersmatching'] = 'Bat datozen oraingo erabiltzaileak';
+$string['defaultcontext'] = 'Lehenetsitako testuingurua';
 $string['delcohort'] = 'Kohortea ezabatu';
 $string['delconfirm'] = 'Ziur al zaude \'{$a}\' kohortea ezabatu nahi duzula?';
 $string['description'] = 'Deskribapena';
 $string['duplicateidnumber'] = 'Badago dagoeneko ID zenbaki bera duen kohortea';
 $string['editcohort'] = 'Editatu kohortea';
-$string['event_cohort_created'] = 'Kohortea sortu da';
-$string['event_cohort_deleted'] = 'Kohortea ezabatu da';
-$string['event_cohort_member_added'] = 'Erabiltzailea kohortera gehitu da';
-$string['event_cohort_member_removed'] = 'Erabiltzailea kohortetik ezabatu da';
-$string['event_cohort_updated'] = 'Kohortea eguneratu da';
+$string['eventcohortcreated'] = 'Kohortea sortu da';
+$string['eventcohortdeleted'] = 'Kohortea ezabatu da';
+$string['eventcohortmemberadded'] = 'Erabiltzailea kohortera gehitu da';
+$string['eventcohortmemberremoved'] = 'Erabiltzailea kohortetik ezabatu da';
+$string['eventcohortupdated'] = 'Kohortea eguneratu da';
 $string['external'] = 'Kanpoko kohortea';
 $string['idnumber'] = 'Kohortearen IDa';
 $string['memberscount'] = 'Kohortearen tamaina';
 $string['name'] = 'Izena';
+$string['namefieldempty'] = 'Eremuaren izena ezin da hutsik egon';
 $string['nocomponent'] = 'Eskuz sortua';
 $string['potusers'] = 'Balizko erabiltzaileak';
 $string['potusersmatching'] = 'Bat datozen balizko erabiltzaileak';
+$string['preview'] = 'Aurreikusi';
 $string['removeuserwarning'] = 'Kohorte batetik erabiltzaileak kentzeak  hainbat ikastarotan erabiltzaileak desmatrikulatzea ekar dezake, erabiltzaile-ezarpenak, taldetako partaidetza edo ikastaro horietako beste hainbat informazio ezabatuz.';
 $string['search'] = 'Bilatu';
 $string['searchcohort'] = 'Bilatu kohortea';
 $string['selectfromcohort'] = 'Partaideak kohortetik aukeratu';
+$string['systemcohorts'] = 'Sistemako kohorteak';
 $string['unknowncohort'] = 'Kohorte ezezaguna: ({$a})';
+$string['uploadcohorts'] = 'Eguneratu kohorteak';
+$string['uploadedcohorts'] = 'Eguneratutako  {$a} kohorte';
 $string['useradded'] = 'Erabiltzailea "{$a}" kohortera gehitu da';
+$string['visible'] = 'Agerian jarri';

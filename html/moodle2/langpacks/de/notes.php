@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'notes', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['enablenotes'] = 'Anmerkungen';
 $string['eventnotecreated'] = 'Hinweis angelegt';
 $string['eventnotedeleted'] = 'Hinweis gelöscht';
 $string['eventnotesviewed'] = 'Hinweise angezeigt';
-$string['eventnoteupdate'] = 'Hinweis aktualisiert';
+$string['eventnoteupdated'] = 'Hinweis aktualisiert';
 $string['groupaddnewnote'] = 'Neue Anmerkung für alle hinzufügen';
 $string['invalidid'] = 'Falsche ID einer Anmerkung angegeben';
 $string['invaliduserid'] = 'Ungültige Nutzer-ID: {$a}';

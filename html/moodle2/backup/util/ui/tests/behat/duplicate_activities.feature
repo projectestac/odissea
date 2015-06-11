@@ -6,13 +6,13 @@ Feature: Duplicate activities
 
   @javascript
   Scenario: Duplicate an activity
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "users" exists:
+    And the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@asd.com |
-    And the following "course enrolments" exists:
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+    And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
     And I log in as "teacher1"
@@ -25,15 +25,15 @@ Feature: Duplicate activities
     And I wait until section "1" is available
     And I open "Test database name" actions menu
     And I click on "Edit settings" "link" in the "Test database name" activity
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Name | Original database name |
     And I press "Save and return to course"
     And I open "Test database name" actions menu
     And I click on "Edit settings" "link" in the "Test database name" activity
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Name | Duplicated database name |
       | Description | Duplicated database description |
     And I press "Save and return to course"
-    Then I should see "Original database name" in the "#section-1" "css_element"
-    And I should see "Duplicated database name" in the "#section-1" "css_element"
+    Then I should see "Original database name" in the "Topic 1" "section"
+    And I should see "Duplicated database name" in the "Topic 1" "section"
     And "Original database name" "link" should appear before "Duplicated database name" "link"

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'journal', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,9 +29,17 @@ $string['accessdenied'] = 'Доступ запрещен';
 $string['alwaysopen'] = 'Всегда открыта';
 $string['blankentry'] = 'Пустая запись';
 $string['daysavailable'] = 'Доступные дни';
+$string['deadline'] = 'Дни работы';
 $string['editingended'] = 'Период редактирования закончился';
 $string['editingends'] = 'Период редактирования заканчивается';
 $string['entries'] = 'Записи';
+$string['entry'] = 'Запись';
+$string['evententriesviewed'] = 'Просмотренные записи рабочей тетради';
+$string['evententryupdated'] = 'Запись рабочей тетради обновлена';
+$string['eventfeedbackupdated'] = 'Обновлён отзыв о рабочей тетради';
+$string['eventjournalcreated'] = 'Рабочая тетрадь создана';
+$string['eventjournaldeleted'] = 'Рабочая тетрадь удалена';
+$string['eventjournalviewed'] = 'Рабочая тетрадь просмотрена';
 $string['feedbackupdated'] = 'Отзыв для записей - ({$a}) обновлен';
 $string['gradeingradebook'] = 'Текущая оценка в журнале';
 $string['journal:addentries'] = 'Добавлять записи в рабочую тетрадь';
@@ -49,6 +57,7 @@ $string['modulename'] = 'Рабочая тетрадь';
 $string['modulename_help'] = 'Активный элемент «Рабочая тетрадь» позволяет учителям дать отзывы на работы студентов по конкретной теме.';
 $string['modulenameplural'] = 'Рабочие тетради';
 $string['newjournalentries'] = 'Новые записи в рабочих тетрадях';
+$string['nodeadline'] = 'Всегда открыта';
 $string['noentriesmanagers'] = 'Учителей нет';
 $string['noentry'] = 'Нет записей';
 $string['noratinggiven'] = 'Еще не оценено';

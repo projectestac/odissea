@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Número máximo de disciplinas que devem est
 $string['expandall'] = 'Expandir Todas as Listas de disciplinas';
 $string['forcedefaultmaxcourses'] = 'Forçar o número máximo de disciplinas';
 $string['forcedefaultmaxcoursesdesc'] = 'Se ativar esta opção, o utilizador não poderá alterar a sua configuração pessoal';
+$string['fullpath'] = 'Todas as categorias e subcategorias';
 $string['hiddencoursecount'] = 'Tem {$a} disciplina oculta';
 $string['hiddencoursecountplural'] = 'Tem {$a} disciplinas ocultas';
 $string['hiddencoursecountwithshowall'] = 'Tem {$a->coursecount} disciplinas ocultas ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Mover disciplina: {$a}';
 $string['movecoursehere'] = 'Mover disciplina para aqui';
 $string['movetofirst'] = 'Mover a disciplina {$a} para o topo';
 $string['movingcourse'] = 'Está a mover: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Nenhum';
 $string['numtodisplay'] = 'Número de disciplinas a mostrar:';
+$string['onlyparentname'] = 'Apenas categoria principal';
 $string['otherexpanded'] = 'Outras disciplinas expandidas';
 $string['pluginname'] = 'Visão geral das disciplinas';
 $string['preservestates'] = 'Manter os estados expandidos';
 $string['shortnameprefix'] = 'Inclui {$a}';
 $string['shortnamesufixprural'] = '(e {$a} restantes)';
 $string['shortnamesufixsingular'] = '(e {$a} restante)';
+$string['showcategories'] = 'Categorias a mostrar';
+$string['showcategoriesdesc'] = 'Deverão as categorias ser exibidas abaixo de cada disciplina?';
 $string['showchildren'] = 'Mostrar dependentes';
 $string['showchildrendesc'] = 'Listar subdisciplinas abaixo do título da disciplina principal?';
 $string['showwelcomearea'] = 'Mostrar área de boas-vindas';

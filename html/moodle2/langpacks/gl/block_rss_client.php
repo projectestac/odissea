@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_rss_client', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Crear fontes RSS privadas';
 $string['rss_client:createsharedfeeds'] = 'Crear fontes RSS compartidas';
 $string['rss_client:manageanyfeeds'] = 'Xestionar algunhas fontes RSS';
 $string['rss_client:manageownfeeds'] = 'Xestionar as propias fontes RSS';
-$string['rss_client:myaddinstance'] = 'Engadir un novo bloque de fontes RSS remotas ao meu cartafol persoal';
+$string['rss_client:myaddinstance'] = 'Engadir un novo bloque de fontes RSS remotas na área persoal';
 $string['seeallfeeds'] = 'Ver todas as fontes';
 $string['sharedfeed'] = 'Fontes compartidas';
 $string['shownumentrieslabel'] = 'Número máximo de entradas para mostrar por bloque.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,6 @@ Fitxategia erabil daiteke
 * Web-gune txiki bat ikastaroko baliabide moduan gehitzeko
 * Software zehatz batzuen zirriborro-fitxategiak eskuragarri jartzeko, ikasleek edita eta kalifikatzeko bidal dezaten';
 $string['modulenameplural'] = 'Fitxategiak';
-$string['neverseen'] = 'Inoiz ez ikusia';
 $string['notmigrated'] = 'Heredatutako baliabide-mota hau ({$a}) ez da oraindik migratu, barkatu.';
 $string['optionsheader'] = 'Erakusteko aukerak';
 $string['page-mod-resource-x'] = 'Fitxategia moduluaren edozein orri';

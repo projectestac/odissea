@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,7 +92,7 @@ $string['errorminpasswordlower'] = 'Pasahitzak gutxienez {$a} letra xehe izan be
 $string['errorminpasswordnonalphanum'] = 'Pasahitzak gutxienez {$a} karaktere ez alfa-numeriko izan behar ditu.';
 $string['errorminpasswordupper'] = 'Pasahitzak gutxienez {$a} letra larri izan behar ditu.';
 $string['errorpasswordupdate'] = 'Errorea pasahitza eguneratzean, pasahitza ez da aldatu';
-$string['event_user_loggedin'] = 'Erabiltzailea hemen sartu da:';
+$string['eventuserloggedin'] = 'Erabiltzailea hemen sartu da:';
 $string['eventuserloggedinas'] = 'Erabiltzailea beste erabiltzaile bat bezala sartu da';
 $string['forcechangepassword'] = 'Pasahitz aldaketa behartu';
 $string['forcechangepasswordfirst_help'] = 'Erabiltzaileak Moodle-n sartzen diren lehenengoan pasahitza aldatzera behartu.';

@@ -26,7 +26,8 @@ require_once($CFG->libdir.'/gradelib.php');
 
 /**
  * An abstract class containing variables and methods used by all or most reports.
- * @package core_grades
+ * @copyright 2007 Moodle Pty Ltd (http://moodle.com)
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 abstract class grade_report {
     /**
@@ -94,7 +95,7 @@ abstract class grade_report {
      */
     public $lang_strings = array();
 
-//// GROUP VARIABLES (including SQL)
+    // GROUP VARIABLES (including SQL)
 
     /**
      * The current group being displayed.
@@ -103,10 +104,16 @@ abstract class grade_report {
     public $currentgroup;
 
     /**
+     * The current groupname being displayed.
+     * @var string $currentgroupname
+     */
+    public $currentgroupname;
+
+    /**
      * Current course group mode
      * @var int $groupmode
      */
-    var $groupmode;
+    public $groupmode;
 
     /**
      * A HTML select element used to select the current group.
@@ -132,6 +139,19 @@ abstract class grade_report {
      */
     protected $groupwheresql_params = array();
 
+    // USER VARIABLES (including SQL).
+
+    /**
+     * An SQL constraint to append to the queries used by this object to build the report.
+     * @var string $userwheresql
+     */
+    protected $userwheresql;
+
+    /**
+     * The ordered params for $userwheresql
+     * @var array $userwheresql_params
+     */
+    protected $userwheresql_params = array();
 
     /**
      * Constructor. Sets local copies of user preferences and initialises grade_tree.
@@ -146,7 +166,6 @@ abstract class grade_report {
         if (empty($CFG->gradebookroles)) {
             print_error('norolesdefined', 'grades');
         }
-
 
         $this->courseid  = $courseid;
         if ($this->courseid == $COURSE->id) {
@@ -173,7 +192,7 @@ abstract class grade_report {
      * the value of that preference. If the preference has already been fetched before,
      * the saved value is returned. If the preference is not set at the User level, the $CFG equivalent
      * is given (site default).
-     * @static (Can be called statically, but then doesn't benefit from caching)
+     * Can be called statically, but then doesn't benefit from caching
      * @param string $pref The name of the preference (do not include the grade_report_ prefix)
      * @param int $objectid An optional itemid or categoryid to check for a more fine-grained preference
      * @return mixed The value of the preference
@@ -187,10 +206,10 @@ abstract class grade_report {
 
         if (!isset($this) OR get_class($this) != 'grade_report') {
             if (!empty($objectid)) {
-                $retval = get_user_preferences($fullprefname . $objectid, grade_report::get_pref($pref));
-            } elseif (isset($CFG->$fullprefname)) {
+                $retval = get_user_preferences($fullprefname . $objectid, self::get_pref($pref));
+            } else if (isset($CFG->$fullprefname)) {
                 $retval = get_user_preferences($fullprefname, $CFG->$fullprefname);
-            } elseif (isset($CFG->$shortprefname)) {
+            } else if (isset($CFG->$shortprefname)) {
                 $retval = get_user_preferences($fullprefname, $CFG->$shortprefname);
             } else {
                 $retval = null;
@@ -220,8 +239,7 @@ abstract class grade_report {
     /**
      * Uses set_user_preferences() to update the value of a user preference. If 'default' is given as the value,
      * the preference will be removed in favour of a higher-level preference.
-     * @static
-     * @param string $pref_name The name of the preference.
+     * @param string $pref The name of the preference.
      * @param mixed $pref_value The value of the preference.
      * @param int $itemid An optional itemid to which the preference will be assigned
      * @return bool Success or failure.
@@ -241,7 +259,7 @@ abstract class grade_report {
      * @param array $data
      * @return mixed True or array of errors
      */
-    abstract function process_data($data);
+    abstract public function process_data($data);
 
     /**
      * Processes a single action against a category, grade_item or grade.
@@ -249,7 +267,7 @@ abstract class grade_report {
      * @param string $action Which action to take (edit, delete etc...)
      * @return
      */
-    abstract function process_action($target, $action);
+    abstract public function process_action($target, $action);
 
     /**
      * First checks the cached language strings, then returns match if found, or uses get_string()
@@ -268,11 +286,12 @@ abstract class grade_report {
     /**
      * Fetches and returns a count of all the users that will be shown on this page.
      * @param boolean $groups include groups limit
+     * @param boolean $users include users limit - default false, used for searching purposes
      * @return int Count of users
      */
-    public function get_numusers($groups=true) {
-        global $DB;
-
+    public function get_numusers($groups = true, $users = false) {
+        global $CFG, $DB;
+        $userwheresql = "";
         $groupsql      = "";
         $groupwheresql = "";
 
@@ -287,13 +306,18 @@ abstract class grade_report {
 
         $params = array_merge($gradebookrolesparams, $enrolledparams, $relatedctxparams);
 
+        if ($users) {
+            $userwheresql = $this->userwheresql;
+            $params       = array_merge($params, $this->userwheresql_params);
+        }
+
         if ($groups) {
             $groupsql      = $this->groupsql;
             $groupwheresql = $this->groupwheresql;
             $params        = array_merge($params, $this->groupwheresql_params);
         }
 
-        $countsql = "SELECT COUNT(DISTINCT u.id)
+        $sql = "SELECT DISTINCT u.id
                        FROM {user} u
                        JOIN ($enrolledsql) je
                             ON je.id = u.id
@@ -302,16 +326,38 @@ abstract class grade_report {
                        $groupsql
                       WHERE ra.roleid $gradebookrolessql
                             AND u.deleted = 0
+                            $userwheresql
                             $groupwheresql
                             AND ra.contextid $relatedctxsql";
-        return $DB->count_records_sql($countsql, $params);
+        $selectedusers = $DB->get_records_sql($sql, $params);
+
+        $count = 0;
+        // Check if user's enrolment is active and should be displayed.
+        if (!empty($selectedusers)) {
+            $coursecontext = $this->context->get_course_context(true);
+
+            $defaultgradeshowactiveenrol = !empty($CFG->grade_report_showonlyactiveenrol);
+            $showonlyactiveenrol = get_user_preferences('grade_report_showonlyactiveenrol', $defaultgradeshowactiveenrol);
+            $showonlyactiveenrol = $showonlyactiveenrol || !has_capability('moodle/course:viewsuspendedusers', $coursecontext);
+
+            if ($showonlyactiveenrol) {
+                $useractiveenrolments = get_enrolled_users($coursecontext, '', 0, 'u.id',  null, 0, 0, true);
+            }
+
+            foreach ($selectedusers as $id => $value) {
+                if (!$showonlyactiveenrol || ($showonlyactiveenrol && array_key_exists($id, $useractiveenrolments))) {
+                    $count++;
+                }
+            }
+        }
+        return $count;
     }
 
     /**
      * Sets up this object's group variables, mainly to restrict the selection of users to display.
      */
     protected function setup_groups() {
-        /// find out current groups mode
+        // find out current groups mode
         if ($this->groupmode = groups_get_course_groupmode($this->course)) {
             $this->currentgroup = groups_get_course_group($this->course, true);
             $this->group_selector = groups_print_course_menu($this->course, $this->pbarurl, true);
@@ -321,6 +367,8 @@ abstract class grade_report {
             }
 
             if ($this->currentgroup) {
+                $group = groups_get_group($this->currentgroup);
+                $this->currentgroupname     = $group->name;
                 $this->groupsql             = " JOIN {groups_members} gm ON gm.userid = u.id ";
                 $this->groupwheresql        = " AND gm.groupid = :gr_grpid ";
                 $this->groupwheresql_params = array('gr_grpid'=>$this->currentgroup);
@@ -329,10 +377,27 @@ abstract class grade_report {
     }
 
     /**
+     * Sets up this report's user criteria to restrict the selection of users to display.
+     */
+    public function setup_users() {
+        global $SESSION, $DB;
+
+        $this->userwheresql = "";
+        $this->userwheresql_params = array();
+        if (isset($SESSION->gradereport['filterfirstname']) && !empty($SESSION->gradereport['filterfirstname'])) {
+            $this->userwheresql .= ' AND '.$DB->sql_like('u.firstname', ':firstname', false, false);
+            $this->userwheresql_params['firstname'] = $SESSION->gradereport['filterfirstname'].'%';
+        }
+        if (isset($SESSION->gradereport['filtersurname']) && !empty($SESSION->gradereport['filtersurname'])) {
+            $this->userwheresql .= ' AND '.$DB->sql_like('u.lastname', ':lastname', false, false);
+            $this->userwheresql_params['lastname'] = $SESSION->gradereport['filtersurname'].'%';
+        }
+    }
+
+    /**
      * Returns an arrow icon inside an <a> tag, for the purpose of sorting a column.
      * @param string $direction
-     * @param moodle_url $sort_link
-     * @param string HTML
+     * @param moodle_url $sortlink
      */
     protected function get_sort_arrow($direction='move', $sortlink=null) {
         global $OUTPUT;
@@ -349,7 +414,7 @@ abstract class grade_report {
      * @param string $courseid the course id
      * @param string $course_item an instance of grade_item
      * @param string $finalgrade the grade for the course_item
-     * @return array[] containing values for 'grade', 'grademax' and 'grademin'
+     * @return array[] containing values for 'grade', 'grademax', 'grademin', 'aggregationstatus' and 'aggregationweight'
      */
     protected function blank_hidden_total_and_adjust_bounds($courseid, $course_item, $finalgrade) {
         global $CFG, $DB;
@@ -361,8 +426,18 @@ abstract class grade_report {
         // If we're dealing with multiple courses we need to know when we've moved on to a new course.
         static $previous_courseid = null;
 
+        $coursegradegrade = grade_grade::fetch(array('userid'=>$this->user->id, 'itemid'=>$course_item->id));
         $grademin = $course_item->grademin;
         $grademax = $course_item->grademax;
+        if ($coursegradegrade) {
+            $grademin = $coursegradegrade->rawgrademin;
+            $grademax = $coursegradegrade->rawgrademax;
+        } else {
+            $coursegradegrade = new grade_grade(array('userid'=>$this->user->id, 'itemid'=>$course_item->id), false);
+        }
+        $hint = $coursegradegrade->get_aggregation_hint();
+        $aggregationstatus = $hint['status'];
+        $aggregationweight = $hint['weight'];
 
         if (!is_array($this->showtotalsifcontainhidden)) {
             debugging('showtotalsifcontainhidden should be an array', DEBUG_DEVELOPER);
@@ -370,7 +445,11 @@ abstract class grade_report {
         }
 
         if ($this->showtotalsifcontainhidden[$courseid] == GRADE_REPORT_SHOW_REAL_TOTAL_IF_CONTAINS_HIDDEN) {
-            return array('grade' => $finalgrade, 'grademin' => $grademin, 'grademax' => $grademax);
+            return array('grade' => $finalgrade,
+                         'grademin' => $grademin,
+                         'grademax' => $grademax,
+                         'aggregationstatus' => $aggregationstatus,
+                         'aggregationweight' => $aggregationweight);
         }
 
         // If we've moved on to another course or user, reload the grades.
@@ -380,7 +459,7 @@ abstract class grade_report {
             $previous_courseid = $courseid;
         }
 
-        if( !$hiding_affected ) {
+        if (!$hiding_affected) {
             $items = grade_item::fetch_all(array('courseid'=>$courseid));
             $grades = array();
             $sql = "SELECT g.*
@@ -393,7 +472,7 @@ abstract class grade_report {
                 }
                 unset($gradesrecords);
             }
-            foreach ($items as $itemid=>$unused) {
+            foreach ($items as $itemid => $unused) {
                 if (!isset($grades[$itemid])) {
                     $grade_grade = new grade_grade();
                     $grade_grade->userid = $this->user->id;
@@ -406,46 +485,69 @@ abstract class grade_report {
         }
 
         //if the item definitely depends on a hidden item
-        if (array_key_exists($course_item->id, $hiding_affected['altered'])) {
-            if( !$this->showtotalsifcontainhidden[$courseid] ) {
-                //hide the grade
+        if (array_key_exists($course_item->id, $hiding_affected['altered']) ||
+                array_key_exists($course_item->id, $hiding_affected['alteredgrademin']) ||
+                array_key_exists($course_item->id, $hiding_affected['alteredgrademax']) ||
+                array_key_exists($course_item->id, $hiding_affected['alteredaggregationstatus']) ||
+                array_key_exists($course_item->id, $hiding_affected['alteredaggregationweight'])) {
+            if (!$this->showtotalsifcontainhidden[$courseid] && array_key_exists($course_item->id, $hiding_affected['altered'])) {
+                // Hide the grade, but only when it has changed.
                 $finalgrade = null;
-            }
-            else {
+            } else {
                 //use reprocessed marks that exclude hidden items
-                $finalgrade = $hiding_affected['altered'][$course_item->id];
-                if (!empty($hiding_affected['alteredgrademin'][$course_item->id])) {
+                if (array_key_exists($course_item->id, $hiding_affected['altered'])) {
+                    $finalgrade = $hiding_affected['altered'][$course_item->id];
+                }
+                if (array_key_exists($course_item->id, $hiding_affected['alteredgrademin'])) {
                     $grademin = $hiding_affected['alteredgrademin'][$course_item->id];
                 }
-                if (!empty($hiding_affected['alteredgrademax'][$course_item->id])) {
+                if (array_key_exists($course_item->id, $hiding_affected['alteredgrademax'])) {
                     $grademax = $hiding_affected['alteredgrademax'][$course_item->id];
+                }
+                if (array_key_exists($course_item->id, $hiding_affected['alteredaggregationstatus'])) {
+                    $aggregationstatus = $hiding_affected['alteredaggregationstatus'][$course_item->id];
+                }
+                if (array_key_exists($course_item->id, $hiding_affected['alteredaggregationweight'])) {
+                    $aggregationweight = $hiding_affected['alteredaggregationweight'][$course_item->id];
+                }
+
+                if (!$this->showtotalsifcontainhidden[$courseid]) {
+                    // If the course total is hidden we must hide the weight otherwise
+                    // it can be used to compute the course total.
+                    $aggregationstatus = 'unknown';
+                    $aggregationweight = null;
                 }
             }
         } else if (!empty($hiding_affected['unknown'][$course_item->id])) {
             //not sure whether or not this item depends on a hidden item
-            if( !$this->showtotalsifcontainhidden[$courseid] ) {
+            if (!$this->showtotalsifcontainhidden[$courseid]) {
                 //hide the grade
                 $finalgrade = null;
-            }
-            else {
+            } else {
                 //use reprocessed marks that exclude hidden items
                 $finalgrade = $hiding_affected['unknown'][$course_item->id];
 
-                if (!empty($hiding_affected['alteredgrademin'][$course_item->id])) {
+                if (array_key_exists($course_item->id, $hiding_affected['alteredgrademin'])) {
                     $grademin = $hiding_affected['alteredgrademin'][$course_item->id];
                 }
-                if (!empty($hiding_affected['alteredgrademax'][$course_item->id])) {
+                if (array_key_exists($course_item->id, $hiding_affected['alteredgrademax'])) {
                     $grademax = $hiding_affected['alteredgrademax'][$course_item->id];
+                }
+                if (array_key_exists($course_item->id, $hiding_affected['alteredaggregationstatus'])) {
+                    $aggregationstatus = $hiding_affected['alteredaggregationstatus'][$course_item->id];
+                }
+                if (array_key_exists($course_item->id, $hiding_affected['alteredaggregationweight'])) {
+                    $aggregationweight = $hiding_affected['alteredaggregationweight'][$course_item->id];
                 }
             }
         }
 
-        return array('grade' => $finalgrade, 'grademin' => $grademin, 'grademax' => $grademax);
+        return array('grade' => $finalgrade, 'grademin' => $grademin, 'grademax' => $grademax, 'aggregationstatus'=>$aggregationstatus, 'aggregationweight'=>$aggregationweight);
     }
 
     /**
      * Optionally blank out course/category totals if they contain any hidden items
-     * Will be deprecated in Moodle 2.8 - Call blank_hidden_total_and_adjust_bounds instead.
+     * @deprecated since Moodle 2.8 - Call blank_hidden_total_and_adjust_bounds instead.
      * @param string $courseid the course id
      * @param string $course_item an instance of grade_item
      * @param string $finalgrade the grade for the course_item
@@ -455,6 +557,8 @@ abstract class grade_report {
         // Note it is flawed to call this function directly because
         // the aggregated grade does not make sense without the updated min and max information.
 
+        debugging('grade_report::blank_hidden_total() is deprecated.
+                   Call grade_report::blank_hidden_total_and_adjust_bounds instead.', DEBUG_DEVELOPER);
         $result = $this->blank_hidden_total_and_adjust_bounds($courseid, $course_item, $finalgrade);
         return $result['grade'];
     }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,8 @@ $string['fixcasepersonalnames'] = 'Namen am Anfang groß schreiben';
 $string['fixcaseusernames'] = 'Nutzernamen in Kleinbuchstaben umwandeln';
 $string['ignore'] = 'Ignorieren';
 $string['importimsfile'] = 'IMS Enterprisedatei importieren';
+$string['imsenterprise:config'] = 'IMS Enterprise-Einschreibe-Instanzen konfigurieren';
+$string['imsenterprisecrontask'] = 'Dateieinschreibung';
 $string['imsrolesdescription'] = 'Die IMS Enterprise Spezifikation umfasst acht verschiedene Rollen. Legen Sie bitte fest, wie diese Rollen in Moodle angewendet und welche ggf. ignoriert werden sollen.';
 $string['location'] = 'Speicherort für IMS-Datei';
 $string['logtolocation'] = 'Speicherort für Logdatei (leer lassen, um keine Logs zu erstellen)';

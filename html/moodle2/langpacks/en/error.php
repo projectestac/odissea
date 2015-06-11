@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,6 +148,7 @@ $string['cannotsetupblock'] = 'Blocks tables could NOT be set up successfully!';
 $string['cannotsetupcapformod'] = 'Could not set up the capabilities for {$a}';
 $string['cannotsetupcapforplugin'] = 'Could not set up the capabilities for {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Cannot show/hide the courses in category {$a}.';
+$string['cannotsignup'] = 'You cannot create a new account because you are already logged in as {$a}.';
 $string['cannotunassigncap'] = 'Could not unassign deprecated capability {$a->cap} from role {$a->role}';
 $string['cannotunassignrolefrom'] = 'Cannot unassign this user from role id: {$a}';
 $string['cannotunzipfile'] = 'Cannot unzip file';
@@ -380,7 +381,7 @@ $string['missinguseranditemid'] = 'Missing userid and itemid';
 $string['missingvarname'] = 'Required variable name is missing!';
 $string['mixedtypesqlparam'] = 'ERROR: Mixed types of sql query parameters!!';
 $string['mnetdisable'] = 'MNET is disabled';
-$string['mnetlocal'] = 'Remote MNET users cannot login locally';
+$string['mnetlocal'] = 'Remote MNET users cannot log in locally';
 $string['moduledisable'] = 'This module ({$a}) has been disabled for this particular course';
 $string['moduledoesnotexist'] = 'This module does not exist';
 $string['moduleinstancedoesnotexist'] = 'The instance of this module does not exist';
@@ -410,7 +411,7 @@ $string['nofolder'] = 'Requested directory does not exist';
 $string['noformdesc'] = 'No formslib form description file found for this activity.';
 $string['noguest'] = 'No guests here!';
 $string['noinstances'] = 'There are no instances of {$a} in this course!';
-$string['nologinas'] = 'You are not allowed to login as that user';
+$string['nologinas'] = 'You are not allowed to log in as that user';
 $string['nonmeaningfulcontent'] = 'Non meaningful content';
 $string['noparticipants'] = 'No participants found for this course';
 $string['noparticipatorycms'] = 'Sorry, but you have no participatory course modules to report on';
@@ -476,9 +477,9 @@ $string['sendmessage'] = 'Send message';
 $string['serverconnection'] = 'Error connecting to the server';
 $string['servicedonotexist'] = 'The service does not exist';
 $string['sessioncookiesdisable'] = 'Incorrect use of require_key_login() - session cookies must be disabled!';
-$string['sessiondiskfull'] = 'The session partition is full. It is not possible to login at this time. Please notify the server administrator.';
-$string['sessionerroruser'] = 'Your session has timed out.  Please login again.';
-$string['sessionerroruser2'] = 'A server error that affects your login session was detected. Please login again or restart your browser.';
+$string['sessiondiskfull'] = 'The session partition is full. It is not possible to log in at this time. Please notify the server administrator.';
+$string['sessionerroruser'] = 'Your session has timed out. Please log in again.';
+$string['sessionerroruser2'] = 'A server error that affects your login session was detected. Please log in again or restart your browser.';
 $string['sessionhandlerproblem'] = 'Session handler is misconfigured';
 $string['sessionipnomatch'] = 'Sorry, but your IP number seems to have changed from when you first logged in.  This security feature prevents crackers stealing your identity while logged in to this site.  Normal users should not be seeing this message - please ask the site administrator for help.';
 $string['sessionipnomatch2'] = '<p>Sorry, but your IP number seems to have changed from when you first logged in. This security feature prevents crackers stealing your identity while logged in to this site. You may see this error if you use wireless networks or if you are roaming between different networks. Please ask the site administrator for more help.</p>

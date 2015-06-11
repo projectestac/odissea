@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,8 +119,6 @@ $string['unblockcontact'] = 'أزل الحجب عن عنوان الاتصال';
 $string['unreadmessages'] = '{$a} رسائل غير مقروءة';
 $string['unreadnewmessage'] = 'رسالة جديدة من {$a}';
 $string['unreadnewmessages'] = '{$a} رسالة جديدة';
-$string['unreadnewnotification'] = 'إشعار جديد';
-$string['unreadnewnotifications'] = 'إشعارات جديدة ({$a})';
 $string['userisblockingyou'] = 'هذا المستخدم قام بحجب امكانية ارسالك رسائل له.';
 $string['userisblockingyounoncontact'] = 'هذا المستخدم يستقبل الرسائل المرسلة من الأشخاص الموجودين في قائمة الاتصال الخاصة به، أنت ليست من ضمن الموجودين بقائمة الاتصال.';
 $string['userssearchresults'] = 'تم إيجاد {$a} مستخدم';

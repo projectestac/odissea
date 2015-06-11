@@ -1,4 +1,4 @@
-@core @core_filepicker @_only_local @_file_upload
+@core @core_filepicker @_file_upload
 Feature: A selected file can be cancelled
   In order to refine the file manager contents
   As a user
@@ -6,19 +6,18 @@ Feature: A selected file can be cancelled
 
   @javascript @_bug_phantomjs
   Scenario: Cancel a selected recent file from being added to a folder
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
     And I log in as "admin"
-    And I expand "My profile" node
-    And I follow "My private files"
+    And I navigate to "My private files" node in "My profile"
     And I upload "lib/tests/fixtures/empty.txt" file to "Files" filemanager
     And I press "Save changes"
     And I am on homepage
     And I follow "Course 1"
     And I turn editing mode on
     When I add a "Folder" to section "1"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Name | Folder name |
       | Description | Folder description |
     And I upload "lib/tests/fixtures/upload_users.csv" file to "Files" filemanager

@@ -172,6 +172,10 @@ class qtype_calculated_edit_form extends qtype_numerical_edit_form {
         $mform->setType('wizard', PARAM_ALPHA);
     }
 
+    protected function can_preview() {
+        return false; // Generally not possible for calculated questions on this page.
+    }
+
     public function data_preprocessing($question) {
         $question = parent::data_preprocessing($question);
         $question = $this->data_preprocessing_answers($question);
@@ -195,9 +199,9 @@ class qtype_calculated_edit_form extends qtype_numerical_edit_form {
         $key = 0;
         foreach ($question->options->answers as $answer) {
             // See comment in the parent method about this hack.
-            unset($this->_form->_defaultValues["tolerancetype[$key]"]);
-            unset($this->_form->_defaultValues["correctanswerlength[$key]"]);
-            unset($this->_form->_defaultValues["correctanswerformat[$key]"]);
+            unset($this->_form->_defaultValues["tolerancetype[{$key}]"]);
+            unset($this->_form->_defaultValues["correctanswerlength[{$key}]"]);
+            unset($this->_form->_defaultValues["correctanswerformat[{$key}]"]);
 
             $question->tolerancetype[$key]       = $answer->tolerancetype;
             $question->correctanswerlength[$key] = $answer->correctanswerlength;

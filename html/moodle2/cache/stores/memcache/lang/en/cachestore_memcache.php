@@ -51,7 +51,7 @@ ipaddress:port
 servername:port:weight
 </pre>
 
-If *Enable clustered servers* is enabled below, there must be only one server listed here. This would usually be a name that always resolves to the local manchine, like 127.0.0.1 or localhost.';
+If *Enable clustered servers* is enabled below, there must be only one server listed here. This would usually be a name that always resolves to the local machine, like 127.0.0.1 or localhost.';
 $string['serversclusterinvalid'] = 'Exactly one server is required when clustering is enabled.';
 $string['setservers'] = 'Set Servers';
 $string['setservers_help'] = 'This is the list of servers that will updated when data is modified in the cache. Generally the fully qualified name of each server in the pool.
@@ -66,5 +66,5 @@ ipaddress:port
 </pre>';
 $string['sessionhandlerconflict'] = 'Warning: A memcache instance ({$a}) has being configured to use the same memcached server as sessions. Purging all caches will lead to sessions also being purged.';
 $string['testservers'] = 'Test servers';
-$string['testservers_desc'] = 'The test servers get used for unit tests and for performance tests. It is entirely optional to set up test servers. Servers should be defined one per line and consist of a server address and optionally a port and weight.
-If no port is provided then the default port (11211) is used.';
+$string['testservers_desc'] = 'One or more connection strings for memcache servers to test against. If a test server has been specified then memcache performance can be tested using the cache performance page in the administration block.
+As an example: 127.0.0.1:11211';

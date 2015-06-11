@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Verrouiller les champs utilisateur';
 $string['auth_fieldlocks_help'] = '<p>Vous pouvez verrouiller des champs utilisateurs. Ceci est utile sur les sites où les données des utilisateurs sont gérées manuellement par les administrateurs (en modifiant manuellement les enregistrements des utilisateurs) ou en utilisant l\'option « Importer des utilisateurs ». Si vous verrouillez des champs requis par Moodle, assurez-vous que vous fournissez les données en question lors de la création des comptes, sans quoi ceux-ci seront inutilisables.</p><p>Pour éviter ce problème, vous pouvez choisir comme mode de verrouillage « Déverrouillé si vide ».</p>';
 $string['authinstructions'] = 'Laisser vide pour les instructions de connexion par défaut. Si vous voulez indiquer des instructions de connexion propres à votre institution, saisissez-les ici.';
 $string['auth_invalidnewemailkey'] = 'Erreur : si vous avez tenté de confirmer la modification de votre adresse de courriel, il se peut que vous ayez fait une erreur lors de la copie de l\'URL qui vous a été envoyé. Veuillez essayer à nouveau.';
+$string['authloginviaemail'] = 'Permettre la connexion au moyen de l\'adresse de courriel';
+$string['authloginviaemail_desc'] = 'Permettre aux utilisateurs de se connecter soit avec le nom d\'utilisateur, soit avec l\'adresse de courriel (si elle est unique).';
 $string['auth_multiplehosts'] = 'Vous pouvez indiquer ici plusieurs hôtes ou adresses IP (par exemple host1.com;host2.com;host3.com ou 192.168.1.100;172.23.92.1)';
 $string['auth_outofnewemailupdateattempts'] = 'Le nombre de tentatives permises pour modifier votre adresse de courriel est dépassé. Votre demande de modification a été annulée.';
 $string['auth_passwordisexpired'] = 'Votre mot de passe est échu. Voulez-vous le changer maintenant ?';
@@ -64,7 +66,7 @@ $string['auto_add_remote_users'] = 'Ajouter automatiquement les utilisateurs dis
 $string['changepassword'] = 'URL de la page de changement du mot de passe';
 $string['changepasswordhelp'] = 'Vous pouvez indiquer dans cette zone l\'URL d\'une page sur laquelle vos utilisateurs pourront récupérer ou changer leurs nom d\'utilisateur et mot de passe s\'ils les ont oubliés. Cette URL sera disponible sous forme d\'un bouton sur la page de connexion. Si cette zone est vide, ce bouton ne sera pas affiché.';
 $string['chooseauthmethod'] = 'Choisir une méthode d\'authentification';
-$string['chooseauthmethod_help'] = 'Ce réglage détermine la méthode d\'authentification utilisée lorsque l\'utilisateur se connecte. Seules les plugins d\'authentification activés doivent être sélectionnés, faute de quoi l\'utilisateur ne pourra pas se connecter. Pour empêcher la connexion d\'un utilisateur, choisissez « Pas de connexion ».';
+$string['chooseauthmethod_help'] = 'Ce réglage détermine la méthode d\'authentification utilisée lorsque l\'utilisateur se connecte. Seuls les plugins d\'authentification activés doivent être sélectionnés, faute de quoi l\'utilisateur ne pourra pas se connecter. Pour empêcher la connexion d\'un utilisateur, choisissez « Pas de connexion ».';
 $string['createpassword'] = 'Générer le mot de passe et informer l\'utilisateur';
 $string['createpasswordifneeded'] = 'Créer un mot de passe si nécessaire';
 $string['emailchangecancel'] = 'Annuler la modification de l\'adresse de courriel';
@@ -87,8 +89,9 @@ $string['errorminpasswordlower'] = 'Les mots de passe doivent comporter au moins
 $string['errorminpasswordnonalphanum'] = 'Les mots de passe doivent comporter au moins {$a} caractère(s) non alphanumériques.';
 $string['errorminpasswordupper'] = 'Les mots de passe doivent comporter au moins {$a} lettre(s) majuscules.';
 $string['errorpasswordupdate'] = 'Erreur lors de la modification du mot de passe. Le mot de passe n\'a pas été modifié';
-$string['event_user_loggedin'] = 'L\'utilisateur s\'est connecté';
+$string['eventuserloggedin'] = 'Utilisateur connecté';
 $string['eventuserloggedinas'] = 'Utilisateur connecté sous le nom d\'un autre utilisateur';
+$string['eventuserloginfailed'] = 'Connexion utilisateur échouée';
 $string['forcechangepassword'] = 'Imposer le changement du mot de passe';
 $string['forcechangepasswordfirst_help'] = 'Impose aux utilisateurs de changer leur mot de passe lors de leur prochaine connexion à Moodle.';
 $string['forcechangepassword_help'] = 'Impose aux utilisateurs de changer leur mot de passe lors de leur première connexion à Moodle.';

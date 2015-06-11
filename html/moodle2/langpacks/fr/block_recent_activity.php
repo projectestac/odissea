@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_recent_activity', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Activité récente';
 $string['recent_activity:addinstance'] = 'Ajouter un bloc activité récente';
+$string['recent_activity:viewaddupdatemodule'] = 'Voir les modules ajoutés et modifiés dans le bloc des activités récentes';
+$string['recent_activity:viewdeletemodule'] = 'Voir les modules supprimés dans le bloc des activités récentes';

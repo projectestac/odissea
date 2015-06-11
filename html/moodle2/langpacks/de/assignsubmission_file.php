@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['default'] = 'Standardmäßig aktiviert';
 $string['default_help'] = 'Die gewählte Methode für die Abgabe von Lösungen wird für alle neuen Aufgaben voreingestellt.';
 $string['enabled'] = 'Dateiabgabe';
 $string['enabled_help'] = 'Teilnehmer/innen können eine oder mehrere Dateien als Lösung der Aufgabe einreichen wenn dies aktiviert wird.';
-$string['event_assessable_uploaded'] = 'Datei wurde hochgeladen';
+$string['eventassessableuploaded'] = 'Datei wurde hochgeladen';
 $string['file'] = 'Dateiabgabe';
 $string['maxbytes'] = 'Maximale Dateigröße';
 $string['maxfilessubmission'] = 'Anzahl hochladbarer Dateien';

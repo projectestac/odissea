@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['deletedcoursetags'] = 'Eliminadas - etiquetas do curso';
 $string['description'] = 'Descrición';
 $string['edittag'] = 'Editar esta etiqueta';
 $string['entertags'] = 'Escriba as etiquetas separadas por comas';
-$string['errordeleting'] = 'Produciuse un erro ao eliminar a etiqueta co ID {$a}, informe ao administrador do sistema.';
 $string['errortagfrontpage'] = 'Non está permitido etiquetar a páxina principal do sitio.';
 $string['errorupdatingrecord'] = 'Produciuse un erro ao actualizar o rexistro da etiqueta';
 $string['flag'] = 'Indicador';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_atto', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['autosavefailed'] = 'Não foi possível ligar ao servidor. Se submeter esta página agora, as alterações podem ser perdidas.';
+$string['autosavefrequency'] = 'Frequência da gravação automática';
+$string['autosavefrequency_desc'] = 'Este é o número de segundos entre as tentativas de gravação automática. O Atto irá guardar automaticamente o texto no editor de acordo com esta definição, para que o texto possa ser recuperado automaticamente quando o mesmo utilizador voltar ao mesmo formulário.';
+$string['autosavesucceeded'] = 'Rascunho guardado.';
+$string['editor_command_keycode'] = 'Cmd + {$a}';
+$string['editor_control_keycode'] = 'Ctrl + {$a}';
+$string['errorcannotparseline'] = 'A linha \'{$a}\' não está no formato correto.';
+$string['errorgroupisusedtwice'] = 'O grupo {$a}\' está definido duas vezes. Os nomes dos grupos devem ser únicos.';
+$string['errornopluginsorgroupsfound'] = 'Nenhum módulo ou grupo encontrados. Por favor, adicione alguns grupos e módulos.';
+$string['errorpluginisusedtwice'] = 'O módulo \'{$a}\' está a ser usado duas vezes. Os módulos só podem ser definidos uma vez.';
+$string['errorpluginnotfound'] = 'O módulo \'{$a}\' não pode ser usado, não parece estar instalado.';
+$string['errortextrecovery'] = 'Infelizmente a versão de rascunho não pôde ser restaurada.';
+$string['infostatus'] = 'Informação';
 $string['pluginname'] = 'Editor HTML Atto';
+$string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['recover'] = 'Recuperar';
+$string['settings'] = 'Configurações da barra de ferramentas Atto';
+$string['subplugintype_atto'] = 'Módulo Atto';
+$string['subplugintype_atto_plural'] = 'Módulos Atto';
+$string['textrecovered'] = 'Uma versão de rascunho deste texto foi automaticamente restaurada.';
+$string['toolbarconfig'] = 'Configurações da barra de ferramentas';
+$string['toolbarconfig_desc'] = 'A lista de módulos e a ordem pela qual são apresentados podem ser configurados aqui. A configuração consiste em grupos (um por linha), seguido pela lista ordenada de módulos para esse grupo. O grupo é separado dos módulos com um sinal de igual e os módulos são separados por vírgulas. Os nomes de grupos devem ser únicos e devem indicar o que os botões têm em comum. Botão e nomes do grupo não devem ser repetidos e só podem conter caracteres alfanuméricos.';
+$string['warningstatus'] = 'Aviso';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['enroltimeend'] = 'Einschreibeende';
 $string['enroltimestart'] = 'Einschreibebeginn';
 $string['enrolusage'] = 'Einschreibungen';
 $string['enrolusers'] = 'Nutzer/innen einschreiben';
+$string['enrolxusers'] = '{$a} Nutzer/innen einschreiben';
 $string['errajaxfailedenrol'] = 'Fehler bei der Nutzereinschreibung';
 $string['errajaxsearch'] = 'Fehler bei der Nutzersuche';
 $string['erroreditenrolment'] = 'Bei der Bearbeitung der Nutzereinschreibung ist ein Fehler aufgetreten';
@@ -87,6 +88,7 @@ $string['extremovedsuspend'] = 'Kurseinschreibung deaktivieren';
 $string['extremovedsuspendnoroles'] = 'Kurseinschreibung deaktivieren und Rollen entfernen';
 $string['extremovedunenrol'] = 'Nutzer/in aus dem Kurs abmelden';
 $string['finishenrollingusers'] = 'Nutzereinschreibung beenden';
+$string['foundxcohorts'] = 'Globale Gruppen gefunden {$a}';
 $string['instanceeditselfwarning'] = 'Warnung:';
 $string['instanceeditselfwarningtext'] = 'Sie sind über diese Einschreibemethode in den Kurs eingeschrieben. Änderungen könnten sich auf Ihren Zugriff zum Kurs auswirken.';
 $string['invalidenrolinstance'] = 'Falsche Einschreibung';

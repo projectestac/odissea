@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -136,8 +136,6 @@ $string['unblockcontact'] = 'Desbloquear o contacto';
 $string['unreadmessages'] = '{$a} mensaxes sen ler';
 $string['unreadnewmessage'] = 'Mensaxe nova de ({$a})';
 $string['unreadnewmessages'] = '({$a}) novas mensaxes';
-$string['unreadnewnotification'] = 'Nova notificación';
-$string['unreadnewnotifications'] = 'Novas notificacións ({$a})';
 $string['userisblockingyou'] = 'Este usuario bloqueouno e non pode enviarlle mensaxjes';
 $string['userisblockingyounoncontact'] = '{$a} só acepta mensaxes dos seus contactos.';
 $string['userssearchresults'] = 'Atopados {$a} usuarios';

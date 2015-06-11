@@ -17,7 +17,7 @@
 /**
  * This file is used to display a categories sub categories, external pages, and settings.
  *
- * @since      2.3
+ * @since      Moodle 2.3
  * @package    admin
  * @copyright  2011 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -67,7 +67,6 @@ if ($data = data_submitted() and confirm_sesskey()) {
         $errormsg = get_string('errorwithsettings', 'admin');
         $firsterror = reset($adminroot->errors);
     }
-    $adminroot = admin_get_root(true); //reload tree
     $settingspage = $adminroot->locate($category, true);
 }
 

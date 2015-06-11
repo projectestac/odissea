@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_replace', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cannotfit'] = 'The replacement is longer than original and shortening is not allow, cannot continue.';
 $string['disclaimer'] = 'I understand the risks of this operation';
 $string['doit'] = 'Yes, do it!';
-$string['excludedtables'] = 'Several tables are not updated as part of the text replacement. This include configuration, log, events, and session tables.';
+$string['excludedtables'] = 'Several tables are not updated as part of the text replacement. These include configuration, log, events, and session tables.';
 $string['notifyfinished'] = '...finished';
 $string['notifyrebuilding'] = 'Rebuilding course cache...';
 $string['notimplemented'] = 'Sorry, this feature is not implemented in your database driver.';

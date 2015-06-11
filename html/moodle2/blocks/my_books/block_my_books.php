@@ -13,7 +13,7 @@ class block_my_books extends block_list {
     }
 
     function has_config() {
-        return true;
+        return false;
     }
 
 	/*function applicable_formats() {
@@ -43,18 +43,18 @@ class block_my_books extends block_list {
         require_once($CFG->dirroot.'/mod/rcontent/lib.php');
 
         // Load user books
-        $sql = "SELECT * FROM {rcommon_user_credentials} RUC INNER JOIN {rcommon_books} RB ON RB.isbn = RUC.isbn WHERE RUC.euserid = :userid ORDER BY RB.name";
-        if (!$usercredentials = $DB->get_records_sql($sql, array('userid' => $USER->id))) {
+        $sql = "SELECT uc.isbn FROM {rcommon_user_credentials} uc INNER JOIN {rcommon_books} rb ON rb.isbn = uc.isbn WHERE uc.euserid = :userid ORDER BY rb.name";
+        if (!$isbns = $DB->get_fieldset_sql($sql, array('userid' => $USER->id))) {
         	$this->content->items[] = get_string('nobooks', 'block_my_books');
-        	$this->content->icons[] = '';
+        	$this->content->icons[] = "";
         } else {
-	        foreach ($usercredentials as $usercredential) {
-                $item = $this->get_item($usercredential, $mybooksconfig);
+	        foreach ($isbns as $isbn) {
+                $item = $this->get_item($isbn, $mybooksconfig);
                 if (!$item) {
                     continue;
                 }
                 $this->content->items[] = $item;
-                $this->content->icons[] = '<img src="'.$OUTPUT->pix_url('icon', 'rcontent').'" class="icon" alt="rscorm icon" />';
+                $this->content->icons[] = '<img src="'.$OUTPUT->pix_url('icon', 'rcontent').'" class="icon" alt="" />';
 	        }
         }
 
@@ -70,10 +70,10 @@ class block_my_books extends block_list {
     	return $this->content;
     }
 
-    private function get_item($usercredential, $mybooksconfig) {
+    private function get_item($isbn, $mybooksconfig) {
         global $DB, $CFG;
         // Deleted book
-        if (!$book = $DB->get_record('rcommon_books', array('isbn' => $usercredential->isbn))) {
+        if (!$book = $DB->get_record('rcommon_books', array('isbn' => $isbn))) {
             return false;
         }
 
@@ -99,17 +99,14 @@ class block_my_books extends block_list {
             $add->isbn           = $book->id;
             $add->unit           = 0;
             $add->activity       = 0;
-            $add->summary        = 'Auto added from my_books block';
+            $add->intro          = 'Auto added from my_books block';
+            $add->introformat    = FORMAT_MOODLE;
             $add->whatgrade      = 0;
-            $add->windowpopup    = 0;
-            $add->framepage      = 1;
+            $add->frame      = 0;
             $add->coursemodule   = 0;
             $add->cmidnumber     = 0;
-            $add->windowpopup    = $mybooksconfig->activity_opening;
-            $add->resizable      = $mybooksconfig->resizable;
+            $add->popup    = $mybooksconfig->activity_opening;
             $add->scrollbars     = $mybooksconfig->scrollbars;
-            $add->directories    = $mybooksconfig->directories;
-            $add->location       = $mybooksconfig->location;
             $add->menubar        = $mybooksconfig->menubar;
             $add->toolbar        = $mybooksconfig->toolbar;
             $add->status         = $mybooksconfig->status;

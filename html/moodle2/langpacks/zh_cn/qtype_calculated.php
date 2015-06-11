@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_calculated', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['additem'] = '添加数据项';
 $string['addmoreanswerblanks'] = '添加另一个答案空白';
 $string['addsets'] = '添加集合';
+$string['answerdisplay'] = '显示答案';
+$string['answerformula'] = '答案{$a}公式';
 $string['answerhdr'] = '答案';
 $string['answerstoleranceparam'] = '答案容错参数';
 $string['answerwithtolerance'] = '{$a->answer} (±{$a->tolerance} {$a->tolerancetype})';
@@ -131,6 +133,7 @@ $string['synchronizeno'] = '不同步';
 $string['synchronizeyes'] = '同步';
 $string['synchronizeyesdisplay'] = '同步，并将共享数据集名显示为题名前缀';
 $string['tolerance'] = '允许误差';
+$string['tolerancetype'] = '类型';
 $string['trueanswerinsidelimits'] = '正确答案“{$a->correct}”在{$a->true}真值范围内';
 $string['trueansweroutsidelimits'] = '<span class="error">错误！正确答案“{$a->correct}”不在{$a->true}真值范围内</span>';
 $string['uniform'] = '均匀';

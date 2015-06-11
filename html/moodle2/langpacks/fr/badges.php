@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addcriteriatext'] = 'Pour ajouter des critères, veuillez sélectionner
 $string['addtobackpack'] = 'Ajouter au sac à badges';
 $string['adminonly'] = 'L\'accès à cette page est restreint aux administrateurs du site.';
 $string['after'] = 'après la date de la remise.';
-$string['aggregationmethod'] = 'Méthode d\'agrégation';
+$string['aggregationmethod'] = 'Méthode de combinaison';
 $string['all'] = 'Tout';
 $string['allmethod'] = 'Toutes les conditions sélectionnées sont satisfaites';
 $string['allmethodactivity'] = 'Toutes les activités sélectionnées sont achevées';
@@ -55,6 +55,9 @@ $string['anymethodactivity'] = 'Une des activités sélectionnées est achevée'
 $string['anymethodcourseset'] = 'Un des cours sélectionnés est achevé';
 $string['anymethodmanual'] = 'Un des rôles sélectionnés décerne le badge';
 $string['anymethodprofile'] = 'Un des champs de profil sélectionnés a été renseigné';
+$string['archivebadge'] = 'Voulez-vous supprimer le badge « {$a} », tout en conservant les badges déjà délivrés ?';
+$string['archiveconfirm'] = 'Supprimer et conserver les badges délivrés';
+$string['archivehelp'] = '';
 $string['attachment'] = 'Joindre le badge à un courriel';
 $string['attachment_help'] = 'Si ce réglage est activé, le badge décerné sera joint à un message par courriel pour téléchargement (les annexes de courriel doivent être activées dans Administration du site > Plugins > Notification des messages > Courriel.';
 $string['award'] = 'Décerner le badge';
@@ -191,9 +194,11 @@ $string['defaultissuercontact'] = 'Informations de contact de l\'émetteur de ba
 $string['defaultissuercontact_desc'] = 'Une adresse de courriel associée à l\'émetteur du badge';
 $string['defaultissuername'] = 'Nom de l\'émetteur de badge par défaut';
 $string['defaultissuername_desc'] = 'Nom de la personne ou de l\'entité émettrice';
-$string['delbadge'] = 'Supprimer le badge';
-$string['delconfirm'] = 'Voulez-vous vraiment supprimer le badge « {$a}»?';
+$string['delbadge'] = 'Voulez-vous supprimer le badge « {$a} » et supprimer également tous les badges déjà délivrés ?';
+$string['delconfirm'] = 'Supprimer et supprimer les badges délivrés';
 $string['delcritconfirm'] = 'Voulez-vous vraiment supprimer ce critère ?';
+$string['deletehelp'] = '<p>La suppression complète d\'un badge effacera tous ses éléments (informations, critères, etc.). Les utilisateurs ayant reçu le badge ne pourront plus y accéder, ni l\'afficher sur leur page de profil.</p>
+<p>Remarque : les utilisateurs ayant reçu ce badge et l\'ayant enregistré sur leur sac à badges externe conserveront le badge dans leur sac à badges. Il ne pourront cependant plus accéder aux critères, ni aux preuves renvoyant vers ce site web.<p>';
 $string['delparamconfirm'] = 'Voulez-vous vraiment supprimer ce paramètre ?';
 $string['description'] = 'Description';
 $string['disconnect'] = 'Déconnecter';

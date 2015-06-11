@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_atto', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['autosavefailed'] = 'Keine Serververbindung. Wenn Sie diese Seite jetzt übertragen, könnten Ihre Änderungen verloren gehen.';
+$string['autosavefrequency'] = 'Frequenz der Auto-Sicherung';
+$string['autosavefrequency_desc'] = 'Diese Option legt die Zeit zwischen zwei automatischen Sicherungsvorgängen fest. Atto sichert den Text im Editor automatisch, so dass der Text automatisch wiederhergestellt werden kann, wenn die selbe Person erneut das selbe Formular aufruft.';
+$string['autosavesucceeded'] = 'Entwurf gesichert.';
+$string['editor_command_keycode'] = 'Cmd + {$a}';
+$string['editor_control_keycode'] = 'Ctrl + {$a}';
+$string['errorcannotparseline'] = 'Die Zeile \'{$a}\' ist nicht richtig formatiert.';
+$string['errorgroupisusedtwice'] = 'Die Gruppe \'{$a}\' ist mehrfach definiert. Gruppennamen müssen eindeutig sein.';
+$string['errornopluginsorgroupsfound'] = 'Keine Plugins oder Gruppen gefunden. Fügen Sie bitte Plugins und Gruppen hinzu.';
+$string['errorpluginisusedtwice'] = 'Das Plugin \'{$a}\' ist mehrfach benutzt. Plugins dürfen nur einmal definiert sein.';
+$string['errorpluginnotfound'] = 'Das Plugin \'{$a}\' kann nicht benutzt werden, weil es nicht installiert zu sein scheint.';
+$string['errortextrecovery'] = 'Leider konnte die Entwurfsversion nicht wiederhergestellt werden.';
+$string['infostatus'] = 'Information';
 $string['pluginname'] = 'Texteditor Atto';
+$string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['recover'] = 'Wiederherstellen';
+$string['settings'] = 'Einstellungen';
+$string['subplugintype_atto'] = 'Atto Plugin';
+$string['subplugintype_atto_plural'] = 'Atto Plugins';
+$string['textrecovered'] = 'Der Entwurf dieses Textes wurde automatisch wiederhergestellt.';
+$string['toolbarconfig'] = 'Einstellungen der Menüleiste';
+$string['toolbarconfig_desc'] = 'Mit dieser Option werden die Plugins und deren Reihenfolge in der Menüleiste festgelegt. Für die Konfiguration werden Gruppennamen angegeben (einer pro Zeile), jeweils gefolgt von einem Gleichheitszeichen und der kommagetrennten Liste von Plugins für diese Gruppe. Die Gruppennamen müssen eindeutig sein und sollten zeigen, was die Symbole in der jeweiligen Gruppe gemeinsam haben. Symbol- und Gruppennamen dürfen nur einmal vorkommen und nur alphanumerische Zeichen enthalten.';
+$string['warningstatus'] = 'Warnung';

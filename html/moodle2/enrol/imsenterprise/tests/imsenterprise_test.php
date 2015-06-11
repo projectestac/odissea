@@ -42,7 +42,7 @@ class enrol_imsenterprise_testcase extends advanced_testcase {
     /**
      * @var $imsplugin enrol_imsenterprise_plugin IMS plugin instance.
      */
-    protected $imsplugin;
+    public $imsplugin;
 
     /**
      * Setup required for all tests.
@@ -97,7 +97,7 @@ class enrol_imsenterprise_testcase extends advanced_testcase {
 
         $user1 = new StdClass();
         $user1->username = 'u1';
-        $user1->email = 'u1@u1.org';
+        $user1->email = 'u1@example.com';
         $user1->firstname = 'U';
         $user1->lastname = '1';
 
@@ -254,7 +254,7 @@ class enrol_imsenterprise_testcase extends advanced_testcase {
     /**
      * Sets the plugin configuration for testing
      */
-    protected function set_test_config() {
+    public function set_test_config() {
         $this->imsplugin->set_config('mailadmins', false);
         $this->imsplugin->set_config('prev_path', '');
         $this->imsplugin->set_config('createnewusers', true);
@@ -268,7 +268,7 @@ class enrol_imsenterprise_testcase extends advanced_testcase {
      * @param bool|array $users false or array of users StdClass
      * @param bool|array $courses false or of courses StdClass
      */
-    protected function set_xml_file($users = false, $courses = false) {
+    public function set_xml_file($users = false, $courses = false) {
 
         $xmlcontent = '<enterprise>';
 
@@ -346,5 +346,27 @@ class enrol_imsenterprise_testcase extends advanced_testcase {
 
         // Setting the file path in CFG.
         $this->imsplugin->set_config('imsfilelocation', $xmlfilepath);
+    }
+
+    /**
+     * IMS Enterprise enrolment task test.
+     */
+    public function test_imsenterprise_cron_task() {
+        global $DB;
+        $prevnusers = $DB->count_records('user');
+
+        $user1 = new StdClass();
+        $user1->username = 'u1';
+        $user1->email = 'u1@example.com';
+        $user1->firstname = 'U';
+        $user1->lastname = '1';
+
+        $users = array($user1);
+        $this->set_xml_file($users);
+
+        $task = new enrol_imsenterprise\task\cron_task();
+        $task->execute();
+
+        $this->assertEquals(($prevnusers + 1), $DB->count_records('user'));
     }
 }

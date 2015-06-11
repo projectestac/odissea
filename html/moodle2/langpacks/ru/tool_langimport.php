@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_langimport', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,11 @@ $string['installedlangs'] = 'Установленные языковые пак�
 $string['langimport'] = 'Процедура импорта языка';
 $string['langimportdisabled'] = 'Функция импорта языка была отключена. Вы должны вручную обновить языковые пакеты на уровне файловой системы. Не забудьте после этого очистить строки кэша.';
 $string['langpackinstalled'] = 'Языковой пакет «{$a}» успешно установлен';
-$string['langpackremoved'] = 'Языковый пакет был удален';
+$string['langpackinstalledevent'] = 'Языковой пакет установлен';
+$string['langpackremoved'] = 'Языковый пакет «{$a}» был удален';
+$string['langpackremovedevent'] = 'Языковой пакет удален';
+$string['langpackupdated'] = 'Языковой пакет «{$a}» успешно обновлен';
+$string['langpackupdatedevent'] = 'Языковой пакет обновлен';
 $string['langpackupdateskipped'] = 'Обновление языкового пакета «{$a}» пропущено';
 $string['langpackuptodate'] = 'Уже установлена последняя версия языкового пакета «{$a}»';
 $string['langupdatecomplete'] = 'Завершено обновление языкового пакета';

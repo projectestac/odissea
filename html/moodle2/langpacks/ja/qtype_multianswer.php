@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'レイアウト未定義';
 $string['layoutvertical'] = 'ラジオボタンの垂直カラム';
 $string['nooptionsforsubquestion'] = '問題部分 # {$a->sub} のオプションを取得できません (question->id={$a->id})。';
 $string['noquestions'] = 'Cloze (穴埋め問題) 「<strong>{$a}</strong>」に問題が含まれていません。';
+$string['pleaseananswerallparts'] = '問題のすべての部分に答えてください。';
 $string['pluginname'] = 'Cloze (穴埋め問題)';
 $string['pluginnameadding'] = '穴埋め問題 (Cloze) の追加';
 $string['pluginnameediting'] = 'Cloze (穴埋め問題) の編集';

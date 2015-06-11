@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,8 +17,7 @@
 /**
  * Strings for component 'block_quiz_results', language 'en', branch 'MOODLE_20_STABLE'
  *
- * @package    block
- * @subpackage quiz_results
+ * @package    block_quiz_results
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -42,7 +40,7 @@ $string['config_show_best'] = 'How many of the highest grades should be shown (0
 $string['config_show_worst'] = 'How many of the lowest grades should be shown (0 to disable)?';
 $string['configuredtoshownothing'] = 'This block\'s configuration currently does not allow it to show any results. You may want to either configure it or hide it.';
 $string['config_use_groups'] = 'Show groups instead of students (only if the quiz supports groups)?';
-$string['error_emptyquizid'] = 'There is an error right now with this block: you need to select which quiz it should display results from.';
+$string['error_emptyquizid'] = 'Please configure this block and select which quiz it should display results from.';
 $string['error_emptyquizrecord'] = 'There is an error right now with this block: the selected quiz does not seem to exist in the database.';
 $string['error_nogroupsexist'] = 'There is an error right now with this block: it is set to display grades in group mode, but the course has no defined groups.';
 $string['pluginname'] = 'Quiz results';

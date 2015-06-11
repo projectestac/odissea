@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -168,7 +168,7 @@ $string['coursegroupunknown'] = '{$a} taldeari dagokion ikastaroa ez da zehaztu'
 $string['courseidnotfound'] = 'Ikastaroa ID-a ez dago';
 $string['courseidnumbertaken'] = 'ID zenbakia dagoeneko erabilita dago beste ikastaro batean  ({$a})';
 $string['coursemisconf'] = 'Ikastaroa gaizki konfiguratuta dago';
-$string['courserequestdisabled'] = 'Barkatu, baina ikastaro-eskariak egiteko modua kudeatzaileak desgaitu du';
+$string['courserequestdisabled'] = 'Barkatu, baina ikastaro-eskariak egiteko modua kudeatzaileak desgaitu du.';
 $string['csvcolumnduplicates'] = 'Bikoiztutako zutabeak atzeman dira';
 $string['csvemptyfile'] = 'CSV fitxategia hutsik dago.';
 $string['csvfewcolumns'] = 'Ez dago zutabe nahikorik, mesedez egiazta ezazu mugatzailearen ezarpena';
@@ -177,7 +177,7 @@ $string['csvinvalidcolsnum'] = 'CSV fitxategi ezegokia - lerro bakoitzak 49 edo 
 $string['csvloaderror'] = 'Errorea gertatu da CVS fitxategia igotzean: {$a}';
 $string['csvweirdcolumns'] = 'CSV fitxategi-formatuak ez du balio - zutabe-kopurua ez da beti bat!';
 $string['dbsessionbroken'] = 'Datu-basean arazo larria gertatu da.<br /><br />Mesedez, jakinarazi zerbitzariaren kudeatzaileari.';
-$string['dbsessionmysqlpacketsize'] = 'Saioan errore larria atzeman da. <br /><br />Mesedez, jakinarazi kudeatzaileari; errore hau max_allowed_packet  MySQL ezarpenean balore handiegia ezarri delako gertatuko zen ziurrenik.';
+$string['dbsessionmysqlpacketsize'] = 'Saioan errore larria atzeman da. Mesedez, jakinarazi guneko kudeatzaileari; errore hau max_allowed_packet  MySQL ezarpenean balore handiegia ezarri delako gertatuko zen ziurrenik.';
 $string['dbupdatefailed'] = 'Datu-basearen eguneraketak kale egin du';
 $string['ddlexecuteerror'] = 'Errorea DDL sql egikaritzean';
 $string['ddlfieldalreadyexists'] = '"{$a}" eremua badago dagoeneko';
@@ -231,6 +231,7 @@ $string['groupnotaddederror'] = '"{$a}" taldea ez da gehitu';
 $string['groupnotaddedtogroupingerror'] = '"{$a->groupname}" taldea ez da  "{$a->groupingname}" taldekatzera gehitu';
 $string['groupunknown'] = '{$a} taldea ez da inongo ikastarokoa';
 $string['groupusernotmember'] = 'Erabiltzailea ez da talde honetako kidea';
+$string['guestcantaccessprofiles'] = 'Bisitariek ez dute erabiltzaile-profiletarako sarbiderik. Hasi saioa zure kontuarekin aurrera egiteko.';
 $string['guestnocomment'] = 'Bisitariek ez dute mezuen iruzkinak egiteko baimenik';
 $string['guestnoeditprofile'] = 'Erabiltzaile bisitariek ezin dute beren profila editatu.';
 $string['guestnoeditprofileother'] = 'Ezinezkoa da bisitarien profila editatzea.';
@@ -347,7 +348,7 @@ $string['nofiltersenabled'] = 'Iragazkiak ez daude gaituta.';
 $string['nofolder'] = 'Eskatutako direktorioa ez da existitzen';
 $string['noguest'] = 'Hemen bisitaririk ez!';
 $string['noinstances'] = 'Ikastaro honetan ez da {$a} azaltzen.';
-$string['nologinas'] = 'Ez duzu rol hori aukeratzeko baimenik "Aukeratu beste rol bat"-en';
+$string['nologinas'] = 'Ez duzu baimenik saioa hasteko beste erabiltzaile baten roletik';
 $string['nonmeaningfulcontent'] = 'Eduki esaguratsurik ez';
 $string['noparticipants'] = 'Ez da partaiderik aurkitu ikastaro honetarako';
 $string['noparticipatorycms'] = 'Sentitzen dugu, baina ez duzu ikastaroez informatzeko partaidetza-modulurik.';
@@ -382,6 +383,7 @@ $string['pleasereport'] = 'Denbora baduzu, errorea gertatu zenean zertan saiatze
 $string['pluginrequirementsnotmet'] = '"{$a->pluginname}" ({$a->pluginversion}) plugina ezin izan da instalatu. Moodle-ren bertsio berriagoa behar duzu (zure bertsioa {$a->currentmoodle} da, eta plugin-ak behar duena {$a->requiremoodle} da)';
 $string['prefixcannotbeempty'] = '<p>Errorea: datu-basearen taularen aurrizkia ezin da hutsik egon ({$a})</p> <p>Guneko kudeatzaileak arazo hau konpondu behar du.</p>';
 $string['processingstops'] = 'Prozesamendua hemen bukatu da. Gainontzeko erregistroak ez dira kontuan hartu.';
+$string['redirecterrordetected'] = 'Onartzen ez den berbideraketa atzeman da, script-aren egikaritzea amaitu da';
 $string['remotedownloaderror'] = 'Errorea osagaia zure zerbitzarian jaistean, mesedez egiaztatu proxy-ezarpenak, PHP cURL luzapea erabat gomendatzen da.<br/><br /> <a href="*{$a->url}*">*{$a->url}*</a> fitxategia eskuz jaitsi beharko zenuke, zure zerbitzariko "*{$a->dest}*" -ra kopiatu eta bertan deskonprimatu.';
 $string['remotedownloadnotallowed'] = 'Osagaiak ezin dira zure zerbitzarira jaitsi (allow_url_fopen ez dago aktibatuta).<br /><br /><a href="{$a->url}">{$a->url}</a> fitxategia eskuz jaitsi eta "{$a->dest}" kokapenean kopiatu behar duzu.';
 $string['requirecorrectaccess'] = 'URLa edo ataka ez dira baliagarriak.';

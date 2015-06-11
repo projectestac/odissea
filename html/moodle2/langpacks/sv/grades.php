@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'grades', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,8 +47,6 @@ $string['aggregateonlygraded_help'] = '<p>Icke-existerande betyg behandlas antin
 $string['aggregateoutcomes'] = 'Ta med resultaten i aggregeringen.';
 $string['aggregateoutcomes_help'] = '<p>Om du tar med resultaten i aggregationerna så är det inte säkert att det leder till det önskade sammanfattningsbetyget och därför har du valmöjligheten att ta med dem eller att utelämna dem. </p>';
 $string['aggregatesonly'] = 'Endast aggregeringar';
-$string['aggregatesubcats'] = 'Aggregera och inkludera underkategorier';
-$string['aggregatesubcats_help'] = '<p>Vanligtvis så genomförs aggregationen bara med omedelbara barn men det är även möjligt att aggregera betyg i alla underkategorier samtidigt som man undantar alla andra aggregerade betyg.  </p>';
 $string['aggregatesum'] = 'Summan av alla betyg';
 $string['aggregateweightedmean'] = 'Viktat medelbetyg';
 $string['aggregateweightedmean2'] = 'Enkelt vägt medelbetyg';
@@ -234,8 +232,6 @@ $string['feedbacksaved'] = 'Återkoppling sparad';
 $string['feedbackview'] = 'Visa återkoppling';
 $string['finalgrade'] = 'Slutbetyg';
 $string['finalgrade_help'] = '<p>Det slutliga betyget (cachat) efter det att alla beräkningar har genomförts.</p>';
-$string['fixedstudents'] = 'Statisk kolumn för studenter/elever/deltagare/lärande';
-$string['fixedstudents_help'] = 'Tillåt betyg att scrollas horisontellt utan att tappa översikt över elevkolunmen genom att göra den statisk.';
 $string['forceoff'] = 'Tvinga: På';
 $string['forceon'] = 'Tvinga: Av';
 $string['forelementtypes'] = 'för den markerade {$a}';
@@ -414,6 +410,12 @@ $string['median'] = 'Medel';
 $string['min'] = 'Lägsta';
 $string['missingscale'] = 'Du måste välja en skala';
 $string['mode'] = 'Läge';
+$string['modgrade'] = 'Betyg';
+$string['modgrademaxgrade'] = 'Maximum poäng';
+$string['modgradetype'] = 'Typ';
+$string['modgradetypenone'] = 'Ingen';
+$string['modgradetypepoint'] = 'Poäng';
+$string['modgradetypescale'] = 'Skala';
 $string['morethanmax'] = 'Betyget som har matats in för {$a->itemname} för {$a->username} är högre än maximum';
 $string['moveselectedto'] = 'Flytta valda komponenter till';
 $string['movingelement'] = 'Flyttar {$a}';
@@ -651,7 +653,6 @@ $string['useweighted'] = 'Använd viktat';
 $string['verbosescales'] = 'Detaljerade skalor';
 $string['viewbygroup'] = 'Grupp';
 $string['viewgrades'] = 'Visa betyg/omdömen';
-$string['warningexcludedsum'] = 'Varning: exkludering av betyg är inte kompatibelt med sumeringsaggregering.';
 $string['weight'] = 'vikt';
 $string['weightcourse'] = 'Använd viktade betyg för kurs';
 $string['weightedascending'] = 'Sortera efter stigande viktad procent';

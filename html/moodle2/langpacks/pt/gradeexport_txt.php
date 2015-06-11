@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_txt', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradeexport_txt', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   gradeexport_txt
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ficheiro de texto simples';
+$string['timeexported'] = 'Última descarregada a partir desta disciplina';
 $string['txt:publish'] = 'Publicar exportação de notas TXT';
 $string['txt:view'] = 'Usar exportação de notas em texto';

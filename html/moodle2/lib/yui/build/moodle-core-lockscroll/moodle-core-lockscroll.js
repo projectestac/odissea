@@ -1,7 +1,8 @@
 YUI.add('moodle-core-lockscroll', function (Y, NAME) {
 
 /**
- * Provides the ability to lock the scroll for a page.
+ * Provides the ability to lock the scroll for a page, allowing nested
+ * locking.
  *
  * @module moodle-core-lockscroll
  */

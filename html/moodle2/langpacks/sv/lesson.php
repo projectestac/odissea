@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,7 +151,7 @@ $string['customscoring'] = 'Egen utformning av resultat';
 $string['customscoring_help'] = '<p>Det här ger Dig möjlighet att ange ett numeriskt värde (en siffra) för varje svar.
 Svar kan antingen ha negativa eller positiva värden. Importerade frågor kommer att automatiskt
 tilldelas 1 poäng för rätt svar och 0 poäng för felaktiga svar. Detta kan Du dock ändra efter det att Du har importerat frågorna.</p>';
-$string['deadline'] = 'Slutdatum/tid';
+$string['deadline'] = 'Stoppdatum/tid';
 $string['defaultessayresponse'] = 'Din essä kommer att få ett betyg/omdöme av kursens distanslärare.';
 $string['deleteallattempts'] = 'Ta bot alla försök att genomföra lektionen';
 $string['deletedefaults'] = 'Tog bort {$a} x lektion standardinställning';
@@ -217,11 +217,17 @@ $string['essayemailmessage2'] = '<p>Essä:<blockquote>{$a->question}</blockquote
 $string['essayemailsubject'] = 'Ditt betyg/omdöme för {$a} fråga';
 $string['essays'] = 'Essäer';
 $string['essayscore'] = 'Resultat på essäer';
+$string['false'] = 'Falskt';
 $string['fileformat'] = 'Filformat';
 $string['finish'] = 'Avsluta';
 $string['firstanswershould'] = 'Det första svaret bör hoppa till sidan \'Rätt\'';
 $string['firstwrong'] = 'Tyvärr har Du inte uppnått den här poängen eftersom Du inte svarade rätt. Vill Du fortsätta att gissa, för lärandets skull (men inte för någon poäng)?';
 $string['flowcontrol'] = 'Styrning av flöde';
+$string['fractionsaddwrong'] = 'De positiva betyg Du valt kan inte summeras till 100%.<br />Istället kommer de upp till {$a}%
+<br />Vill Du gå tillbaka och ändra denna fråga?';
+$string['fractionsnomax'] = 'Ett av svaren borde bli 100%, så att det är
+<br />möjligt att få fullt betyg på denna fråga.
+<br />Vill Du gå tillbaka och ändra denna fråga?';
 $string['full'] = 'Utvidgad';
 $string['general'] = 'Allmänt';
 $string['gotoendoflesson'] = 'Gå till slutet av lektionen';
@@ -525,6 +531,8 @@ $string['noretake'] = 'Du får inte göra om den här lektionen.';
 $string['normal'] = 'Normal - följ lektionens progression';
 $string['notcompleted'] = 'Inte avslutad';
 $string['notdefined'] = 'Inte definierad';
+$string['notenoughsubquestions'] = 'Otillräckligt antal delfrågor!<br />
+Vill Du gå tillbaka och rätta till den här frågan?';
 $string['nothighscore'] = 'Du lyckades ínte komma med på listan över höga betyg.';
 $string['notitle'] = 'Ingen titel';
 $string['numberofcorrectanswers'] = 'Antal rätta svar: {$a}';
@@ -663,15 +671,15 @@ $string['pleasematchtheabovepairs'] = 'Var god och matcha de ovanstående paren'
 $string['pluginadministration'] = 'Administration av lektion';
 $string['pluginname'] = 'Lektion';
 $string['pointsearned'] = 'Intjänade poäng';
-$string['postprocesserror'] = 'Fel uppstod under efterbearbetning!';
+$string['postprocesserror'] = 'Ett fel uppstod i sb m bearbetning av bidrag';
 $string['postsuccess'] = 'Inlägget har registrerats framgångsrikt';
 $string['practice'] = 'Övningslektion';
 $string['practice_help'] = '<p>En &ouml;vningslektion kommer inte att visas i betygskatalogen.</p>';
-$string['preprocesserror'] = 'Fel uppstod under förbearbetning!';
+$string['preprocesserror'] = 'Ett fel uppstod i sb m förbearbetning ';
 $string['preview'] = 'Förhandsgranska';
 $string['previewlesson'] = 'Förhandsgranska {$a}';
 $string['previouspage'] = 'Föregående sida';
-$string['processerror'] = 'Fel uppstod under bearbetning!';
+$string['processerror'] = 'Ett fel uppstod i sb m bearbetning ';
 $string['progressbar'] = 'Rad som visar hur något fortskrider';
 $string['progressbar_help'] = '<p>Detta visar längst ner på sidan en rad som visar hur processen fortgår.
 F.n. så är denna rad den som passar bäst ihop med en linjär Lektion.</p>
@@ -752,6 +760,7 @@ $string['timespenterror'] = 'Lägg ner åtminstone {$a} minuter på den här lek
 $string['timespentminutes'] = 'Använd tid (minuter)';
 $string['timetaken'] = 'Använd tid';
 $string['topscorestitle'] = 'De högsta {$a} resultaten';
+$string['true'] = 'Sant';
 $string['truefalse'] = 'Sant/Falskt';
 $string['unabledtosavefile'] = 'Det gick inte att spara den fil som Du laddade upp';
 $string['unknownqtypesnotimported'] = '{$a} frågor av frågetyper som inte stödjs importerades inte';

@@ -14,12 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Course created event.
+ *
+ * @package    core
+ * @copyright  2013 Mark Nelson <markn@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 namespace core\event;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Course created event.
+ * Course created event class.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string fullname: fullname of course.
+ *      - string shortname: (optional) shortname of course.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
@@ -34,7 +49,7 @@ class course_created extends base {
     protected function init() {
         $this->data['objecttable'] = 'course';
         $this->data['crud'] = 'c';
-        $this->data['level'] = self::LEVEL_TEACHING;
+        $this->data['edulevel'] = self::LEVEL_TEACHING;
     }
 
     /**
@@ -52,7 +67,7 @@ class course_created extends base {
      * @return string
      */
     public function get_description() {
-        return "Course {$this->objectid} was created by user {$this->userid}";
+        return "The user with id '$this->userid' created the course with id '$this->courseid'.";
     }
 
     /**
@@ -89,5 +104,19 @@ class course_created extends base {
      */
     protected function get_legacy_logdata() {
         return array(SITEID, 'course', 'new', 'view.php?id=' . $this->objectid, $this->other['fullname'] . ' (ID ' . $this->objectid . ')');
+    }
+
+    /**
+     * Custom validation.
+     *
+     * @throws \coding_exception
+     * @return void
+     */
+    protected function validate_data() {
+        parent::validate_data();
+
+        if (!isset($this->other['fullname'])) {
+            throw new \coding_exception('The \'fullname\' value must be set in other.');
+        }
     }
 }

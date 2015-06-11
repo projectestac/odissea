@@ -198,7 +198,6 @@ class enrol_self_plugin extends enrol_plugin {
         }
 
         $this->enrol_user($instance, $USER->id, $instance->roleid, $timestart, $timeend);
-        add_to_log($instance->courseid, 'course', 'enrol', '../enrol/users.php?id='.$instance->courseid, $instance->courseid); //TODO: There should be userid somewhere!
 
         if ($instance->password and $instance->customint1 and $data->enrolpassword !== $instance->password) {
             // It must be a group enrolment, let's assign group too.
@@ -249,6 +248,8 @@ class enrol_self_plugin extends enrol_plugin {
             $form->display();
             $output = ob_get_clean();
             return $OUTPUT->box($output);
+        } else {
+            return $OUTPUT->box($enrolstatus);
         }
     }
 
@@ -261,12 +262,12 @@ class enrol_self_plugin extends enrol_plugin {
      * @return bool|string true if successful, else error message or false.
      */
     public function can_self_enrol(stdClass $instance, $checkuserenrolment = true) {
-        global $DB, $USER, $CFG;
+        global $CFG, $DB, $OUTPUT, $USER;
 
         if ($checkuserenrolment) {
             if (isguestuser()) {
                 // Can not enrol guest.
-                return get_string('canntenrol', 'enrol_self');
+                return get_string('noguestaccess', 'enrol') . $OUTPUT->continue_button(get_login_url());
             }
             // Check if user is already enroled.
             if ($DB->get_record('user_enrolments', array('userid' => $USER->id, 'enrolid' => $instance->id))) {
@@ -433,7 +434,13 @@ class enrol_self_plugin extends enrol_plugin {
         if (!empty($CFG->coursecontact)) {
             $croles = explode(',', $CFG->coursecontact);
             list($sort, $sortparams) = users_order_by_sql('u');
-            $rusers = get_role_users($croles, $context, true, '', 'r.sortorder ASC, ' . $sort, null, '', '', '', '', $sortparams);
+            // We only use the first user.
+            $i = 0;
+            do {
+                $rusers = get_role_users($croles[$i], $context, true, '',
+                    'r.sortorder ASC, ' . $sort, null, '', '', '', '', $sortparams);
+                $i++;
+            } while (empty($rusers) && !empty($croles[$i]));
         }
         if ($rusers) {
             $contact = reset($rusers);
@@ -471,7 +478,7 @@ class enrol_self_plugin extends enrol_plugin {
         }
 
         // Unfortunately this may take a long time, execution can be interrupted safely here.
-        @set_time_limit(0);
+        core_php_time_limit::raise();
         raise_memory_limit(MEMORY_HUGE);
 
         $trace->output('Verifying self-enrolments...');
@@ -647,5 +654,27 @@ class enrol_self_plugin extends enrol_plugin {
         // This is necessary only because we may migrate other types to this instance,
         // we do not use component in manual or self enrol.
         role_assign($roleid, $userid, $contextid, '', 0);
+    }
+
+    /**
+     * Is it possible to delete enrol instance via standard UI?
+     *
+     * @param stdClass $instance
+     * @return bool
+     */
+    public function can_delete_instance($instance) {
+        $context = context_course::instance($instance->courseid);
+        return has_capability('enrol/self:config', $context);
+    }
+
+    /**
+     * Is it possible to hide/show enrol instance via standard UI?
+     *
+     * @param stdClass $instance
+     * @return bool
+     */
+    public function can_hide_show_instance($instance) {
+        $context = context_course::instance($instance->courseid);
+        return has_capability('enrol/self:config', $context);
     }
 }

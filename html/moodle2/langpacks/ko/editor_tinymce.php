@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -471,7 +471,7 @@ $string['media_dlg:balance'] = 'Balance';
 $string['media_dlg:base'] = 'Base';
 $string['media_dlg:baseurl'] = 'Base URL';
 $string['media_dlg:bgcolor'] = 'Background';
-$string['media_dlg:cache'] = '캐시';
+$string['media_dlg:cache'] = 'Cache';
 $string['media_dlg:captioningid'] = 'Captioning id';
 $string['media_dlg:center'] = 'Center';
 $string['media_dlg:class_name'] = 'Class';

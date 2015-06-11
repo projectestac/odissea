@@ -14,12 +14,26 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Category deleted event.
+ *
+ * @package    core
+ * @copyright  2013 Mark Nelson <markn@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 namespace core\event;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * category deleted event.
+ * Category deleted event class.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string name: category name.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
@@ -39,7 +53,7 @@ class course_category_deleted extends base {
     protected function init() {
         $this->data['objecttable'] = 'course_categories';
         $this->data['crud'] = 'd';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 
     /**
@@ -57,7 +71,7 @@ class course_category_deleted extends base {
      * @return string
      */
     public function get_description() {
-        return "Category {$this->objectid} was deleted by user {$this->userid}";
+        return "The user with id '$this->userid' deleted the course category with id '$this->objectid'.";
     }
 
     /**
@@ -72,26 +86,15 @@ class course_category_deleted extends base {
     /**
      * Returns the legacy event data.
      *
-     * @return coursecat the category that was deleted
+     * @return \coursecat the category that was deleted
      */
     protected function get_legacy_eventdata() {
         return $this->coursecat;
     }
 
     /**
-     * Set the legacy event data.
-     *
-     * @param coursecat $class instance of the coursecat class
-     */
-    public function set_legacy_eventdata($class) {
-        // This function will be removed in 2.7.
-        $this->set_coursecat($class);
-    }
-
-    /**
      * Set custom data of the event - deleted coursecat.
      *
-     * @since 2.6.2
      * @param \coursecat $coursecat
      */
     public function set_coursecat(\coursecat $coursecat) {
@@ -101,7 +104,7 @@ class course_category_deleted extends base {
     /**
      * Returns deleted coursecat for event observers.
      *
-     * @since 2.6.2
+     * @throws \coding_exception
      * @return \coursecat
      */
     public function get_coursecat() {
@@ -118,5 +121,19 @@ class course_category_deleted extends base {
      */
     protected function get_legacy_logdata() {
         return array(SITEID, 'category', 'delete', 'index.php', $this->other['name'] . '(ID ' . $this->objectid . ')');
+    }
+
+    /**
+     * Custom validation.
+     *
+     * @throws \coding_exception
+     * @return void
+     */
+    protected function validate_data() {
+        parent::validate_data();
+
+        if (!isset($this->other['name'])) {
+            throw new \coding_exception('The \'name\' value must be set in other.');
+        }
     }
 }

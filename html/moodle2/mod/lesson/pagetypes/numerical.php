@@ -18,8 +18,7 @@
 /**
  * Numerical
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  2009 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
@@ -119,6 +118,7 @@ class lesson_page_type_numerical extends lesson_page {
         $options->para = false;
         $i = 1;
         foreach ($answers as $answer) {
+            $answer = parent::rewrite_answers_urls($answer, false);
             $cells = array();
             if ($this->lesson->custom && $answer->score > 0) {
                 // if the score is > 0, then it is correct
@@ -263,6 +263,9 @@ class lesson_display_answer_form_numerical extends moodleform {
         global $USER, $OUTPUT;
         $mform = $this->_form;
         $contents = $this->_customdata['contents'];
+
+        // Disable shortforms.
+        $mform->setDisableShortforms();
 
         $mform->addElement('header', 'pageheader');
 

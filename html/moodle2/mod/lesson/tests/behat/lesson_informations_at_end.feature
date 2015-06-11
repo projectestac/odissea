@@ -6,8 +6,8 @@ Feature: In a lesson activity, if custom scoring is not enabled, student should 
   Scenario: Informations at end of lesson if custom scoring not enabled
     Given the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@asd.com |
-      | student1 | Student | 1 | student1@asd.com |
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+      | student1 | Student | 1 | student1@example.com |
     And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
@@ -20,6 +20,7 @@ Feature: In a lesson activity, if custom scoring is not enabled, student should 
     And I turn editing mode on
     And I add a "Lesson" to section "1" and I fill the form with:
       | Name | Test lesson name |
+      | Description | Test lesson description |
       | Custom scoring | No |
     And I follow "Test lesson name"
     And I follow "Add a content page"

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -185,6 +185,7 @@ $string['tokenauthlog'] = '令牌认证';
 $string['tokencreatedbyadmin'] = '管理员不能重置（*）';
 $string['tokencreator'] = '创建人';
 $string['unknownoptionkey'] = '未知选项键（{$a}）';
+$string['unnamedstringparam'] = '一个字符型参数没有被命名。';
 $string['updateusersettings'] = '更新';
 $string['uploadfiles'] = '可以上传文件';
 $string['uploadfiles_help'] = '若启用，任何用户可以上传文件到私人文件区域或草稿文件区域。文件空间限额对所有用户有效。';

@@ -48,9 +48,14 @@ echo $OUTPUT->doctype() ?>
             </a>
             <div class="nav-collapse collapse">
                 <?php echo $OUTPUT->custom_menu(); ?>
-                <ul class="nav pull-right">
+                <a class="btn btn-navbar visible-phone custom_menu_toggle" data-toggle="collapse" data-target="#user-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <ul class="nav-collapse nav pull-right" id="user-collapse">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                    <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
+                    <li class="navbar-text"><?php echo $OUTPUT->user_menu(); ?></li>
                 </ul>
             </div>
         </div>

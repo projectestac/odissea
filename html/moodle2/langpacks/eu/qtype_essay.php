@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_essay', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowattachments'] = 'Baimendu eranskinak';
+$string['attachmentsoptional'] = 'Eranskinak aukerakoak dira';
+$string['attachmentsrequired'] = 'Eranskinak beharrezkoak dira';
+$string['attachmentsrequired_help'] = 'Aukera honek erantzun bat kalifikagarria izateko behar duen gutxieneko eranskin kopurua zehazten du.';
 $string['formateditor'] = 'HTML editorea';
 $string['formateditorfilepicker'] = 'HTML editorea fitxategi-hautatzailearekin';
 $string['formatmonospaced'] = 'Testu laua, espazio bakarreko letra-mota';
+$string['formatnoinline'] = 'Lerro-arteko testurik ez';
 $string['formatplain'] = 'Testu laua';
 $string['graderinfo'] = 'Ikasleentzako informazioa';
+$string['graderinfoheader'] = 'Ikaslearentzako informazioa';
+$string['mustattach'] = '"Lerro-arteko testurik ez" aukeratzean, edo ebazpenak aukerazkoak direnean, gutxienez eranskin bat baimendu behar duzu.';
+$string['mustrequire'] = '"Lerro-arteko testurik ez" aukeratzean, edo ebazpenak aukerazkoak direnean, gutxienez eranskin bat eskatu behar duzu.';
+$string['mustrequirefewer'] = 'Ezin duzu eskatu baimentzen duzun eranskin kopurua baino gehiago.';
 $string['nlines'] = '{$a} lerro';
 $string['pluginname'] = 'Entsegua';
 $string['pluginnameadding'] = 'Entsegu motako galdera gehitzen ';
@@ -39,5 +47,10 @@ $string['pluginname_help'] = 'Galderari erantzuteko (irudi bat izan dezakeena) i
 $string['pluginnamesummary'] = 'Pare bat esaldi edo paragrafoko erantzuna ematen uzten du. Hauek eskuz kalifikatu behar dira.';
 $string['responsefieldlines'] = 'Erantzuteko koadroaren tamaina';
 $string['responseformat'] = 'Ebazpenaren formatua';
+$string['responseisrequired'] = 'Beharrezkoa da ikasleak testua idaztea';
+$string['responsenotrequired'] = 'Testu-sarrera aukerakoa da';
+$string['responseoptions'] = 'Ebazpenaren aukerak';
+$string['responserequired'] = 'Testua beharrezkoa da';
 $string['responsetemplate'] = 'Erantzunetarako txantiloia';
+$string['responsetemplateheader'] = 'Erantzunetarako txantiloia';
 $string['responsetemplate_help'] = 'Hemen sartutako edozein testu erantzunaren sarrera kutxan erakutsiko da galdetegian saiakera berri bat hasten denean.';

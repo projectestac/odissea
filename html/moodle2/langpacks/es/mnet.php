@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'El sitio remoto ha intentado desencriptar su mensaje con
 $string['error7024'] = 'Usted envía un mensaje no encriptado al sitio remoto, pero éste no acepta comunicación sin encriptar desde su sitio. Que ocurra esto es muy extraño, y usted probablemente debería informar sobre el error (proporcionando toda la información posible sobre la versión de la aplicación, etc.)';
 $string['error7026'] = 'La clave con la que su mensaje ha sido firmado es distinta de la consta en el servidor remoto. Es más, el servidor ha intentado comprobar la clave y no lo ha conseguido. Intente introducir manualmente la clave y pruebe de nuevo.';
 $string['error709'] = 'El sitio remoto no ha podido obtener una clave SSL para usted.';
+$string['eventaccesscontrolcreated'] = 'Control de acceso creado';
+$string['eventaccesscontrolupdated'] = 'Control de acceso actualizado';
 $string['expired'] = 'Esta clave expiró el';
 $string['expires'] = 'Válida hasta';
 $string['expireyourkey'] = 'Eliminar esta clave';
@@ -133,7 +135,6 @@ $string['mnetidprovider'] = 'Provisor de ID MNET';
 $string['mnetidproviderdesc'] = 'Puede usar esta opción para recuperar un enlace en el que identificarse, en el caso de que proporcione la dirección email correcta que corresponda al nombre de usuario con el que trató de entrar.';
 $string['mnetidprovidermsg'] = 'Usted debería poder identificarse a su proveedor {$a}.';
 $string['mnetidprovidernotfound'] = 'Lo sentimos, no se ha podido encontrar más información.';
-$string['mnetlog'] = 'Registros';
 $string['mnetpeers'] = 'Iguales';
 $string['mnetservices'] = 'Servicios';
 $string['mnet_session_prohibited'] = 'Usuarios de su servidor inicial no tienen actualmente permitido divagar por {$a}.';

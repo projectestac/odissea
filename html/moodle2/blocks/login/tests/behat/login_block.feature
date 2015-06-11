@@ -7,9 +7,9 @@ Feature: Login from a block
   Background:
     Given the following "users" exist:
       | username | password | firstname | lastname | email |
-      | testuser | testpass | Test      | User     | student1@asd.com |
+      | testuser | testpass | Test      | User     | student1@example.com |
     And I log in as "admin"
-    And I follow "Turn editing on"
+    And I navigate to "Turn editing on" node in "Front page settings"
     And I add the "Login" block
 
   Scenario: Login block visible to non-logged in users

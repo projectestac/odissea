@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'A descrição para o professor não pode 
 $string['err_nomaxscore'] = 'A pontuação máxima não pode ficar em branco';
 $string['err_noshortname'] = 'O nome do critério não pode ficar em branco';
 $string['err_scoreinvalid'] = 'A pontuação dada a {$a->criterianame} não é válida, o máximo possível é: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'O critério do nome deverá ter menos de 256 caracteres.';
 $string['gradingof'] = '{$a} avaliado';
 $string['guidemappingexplained'] = 'AVISO: A sua grelha de avaliação tem uma nota máxima de <b>{$a->maxscore} pontos</b> mas a nota máxima da atividade é de {$a->modulegrade}  A nota máxima configurada na sua grelha irá ser convertida na nota máxima da atividade.<br />
     As notas intermediárias serão convertidas, respetivamente, e arredondadas para a nota mais próxima.';

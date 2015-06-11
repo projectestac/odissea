@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,9 @@ $string['description'] = '머리말';
 $string['displayhorizontal'] = '수평으로 배치';
 $string['displaymode'] = '옵션 표시모드';
 $string['displayvertical'] = '수직으로 배치';
+$string['eventanswercreated'] = '선택됨';
+$string['eventanswerupdated'] = '선택이 업데이트 됨';
+$string['eventreportviewed'] = '선택 보고서 봄';
 $string['expired'] = '죄송합니다. 이 활동은 {$a} 에 종료되어서 더 이상 사용할 수 없습니다.';
 $string['full'] = '(마감됨)';
 $string['havetologin'] = '설문에 응하려면 로그인해야 합니다.';

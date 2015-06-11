@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,6 +132,14 @@ $string['entry'] = 'Fiche';
 $string['entrysaved'] = 'Votre fiche a été enregistrée';
 $string['errormustbeteacher'] = 'Vous devez être enseignant pour afficher cette page !';
 $string['errorpresetexists'] = 'Un préréglage de ce nom existe déjà';
+$string['eventfieldcreated'] = 'Champ créé';
+$string['eventfielddeleted'] = 'Champ supprimé';
+$string['eventfieldupdated'] = 'Champ modifié';
+$string['eventrecordcreated'] = 'Fiche créée';
+$string['eventrecorddeleted'] = 'Fiche supprimée';
+$string['eventrecordupdated'] = 'Fiche modifiée';
+$string['eventtemplateupdated'] = 'Modèle modifié';
+$string['eventtemplateviewed'] = 'Modèle consulté';
 $string['example'] = 'Exemple de module Base de données';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Cette activité est fermée depuis {$a} et n\'est plus disponible';

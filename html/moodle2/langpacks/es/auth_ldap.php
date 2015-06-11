@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_ldap', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,7 +79,7 @@ $string['auth_ldap_passtype'] = 'Especifique el formato de las contraseñas nuev
 $string['auth_ldap_passtype_key'] = 'Formato de contraseña';
 $string['auth_ldap_passwdexpire_settings'] = 'Ajustes de caducidad de la contraseña LDAP.';
 $string['auth_ldap_preventpassindb'] = 'Seleccione \'sí\' para evitar que las contraseñas se almacenen en la base de datos de Moodle.';
-$string['auth_ldap_preventpassindb_key'] = 'Cachear contraseñas';
+$string['auth_ldap_preventpassindb_key'] = 'No cachear contraseñas';
 $string['auth_ldap_search_sub'] = 'Ponga el valor <> 0 si quiere buscar usuarios desde subcontextos.';
 $string['auth_ldap_search_sub_key'] = 'Buscar subcontextos';
 $string['auth_ldap_server_settings'] = 'Ajustes de servidor LDAP';
@@ -98,9 +98,11 @@ $string['auth_ldap_version_key'] = 'Versión';
 $string['auth_ntlmsso'] = 'NTLM SSO';
 $string['auth_ntlmsso_enabled'] = 'Seleccione Sí para intentar Single Sign On con el dominio NTLM. <strong>Nota:</strong> esto requiere un ajuste adicional en el servidor web para trabajar; vea <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Habilitar';
-$string['auth_ntlmsso_ie_fastpath'] = 'Establezca en "Si" para habilitar la ruta NTLM SSO rápida (se salta algunos pasos y solo trabaja si el explorador es MS Internet Explorer).';
+$string['auth_ntlmsso_ie_fastpath'] = 'Activar para habilitar la ruta NTLM SSO rápida (se salta algunos pasos si el explorador es MS Internet Explorer).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Intentar NTLM con todos los navegadores';
 $string['auth_ntlmsso_ie_fastpath_key'] = '¿Ruta rápida MS IE?';
+$string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Sí, intentar NTLM en otros navegadores';
+$string['auth_ntlmsso_ie_fastpath_yesform'] = 'Sí, el resto de navegadores utilizan un formulario de acceso estándar';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'No se pudo extraer el nombre de usuario del encabezado de REMOTE_USER (USUARIO_REMOTO). ¿Está correcto el formato configurado?';
 $string['auth_ntlmsso_missing_username'] = 'Usted necesita especificar al menos %username% en el formato de nombre de usuario remoto';
 $string['auth_ntlmsso_remoteuserformat'] = 'Si Usted ha elegido \'NTLM\' en \'Tipo de Autenticación\', Usted puede especificar aquí el formato de nombredeusuario remoto. Si lo deja vacío, se usará el formato de DOMAINusername. Usted puede usar el remplazable opcional <b>%domain%</b> para especificar dónde aparece el nombre del dominio, y el remplazable obligatorio <b>%username%</b> para especificar dónde aparece el nombre de usuario. <br /><br />Algunos de los formatos ampliamente usados son <tt>%domain%%username%</tt> (MS Windows por defecto), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> y simplemente <tt>%username%</tt> (si no hubiera la parte del dominio).';

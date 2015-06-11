@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,6 +132,14 @@ $string['entry'] = 'Record';
 $string['entrysaved'] = 'Il record è stato salvato';
 $string['errormustbeteacher'] = 'Devi avere il ruolo di docente per utilizzare questa pagina!';
 $string['errorpresetexists'] = 'Una preimpostazione con il nome scelto esiste già';
+$string['eventfieldcreated'] = 'Creato campo';
+$string['eventfielddeleted'] = 'Eliminato campo';
+$string['eventfieldupdated'] = 'Aggiornato campo';
+$string['eventrecordcreated'] = 'Creato record';
+$string['eventrecorddeleted'] = 'Eliminato record';
+$string['eventrecordupdated'] = 'Aggiornato record';
+$string['eventtemplateupdated'] = 'Aggiornato modello';
+$string['eventtemplateviewed'] = 'Visualizzato modlello';
 $string['example'] = 'Esempio di modulo Database';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Spiacente, l\'attività non è più disponibile poiché è stata chiusa il {$a} ';

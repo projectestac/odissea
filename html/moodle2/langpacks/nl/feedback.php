@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'feedback', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,7 @@ $string['completed'] = 'voltooid';
 $string['completed_feedbacks'] = 'Ingevulde antwoorden';
 $string['complete_the_form'] = 'Beantwoord de vragen...';
 $string['completionsubmit'] = 'Bekijk als voltooid als de feedback verstuurd is';
-$string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback ingevuld worden zonder aanmelding.';
+$string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback op de startpagina ingevuld worden zonder aangemeld te zijn.';
 $string['confirmdeleteentry'] = 'Ben je zeker dat je dit wil verwijderen?';
 $string['confirmdeleteitem'] = 'Ben je zeker dat je dit element wil verwijderen?';
 $string['confirmdeletetemplate'] = 'Ben je zeker dat je dit sjabloon wil verwijderen?';
@@ -105,8 +105,6 @@ Je kunt het hier bekijken:
 $string['emailteachermailhtml'] = '<p>{$a->username} heeft het feedbackformulier <i>\'{$a->feedback}\'</i> ingevuld en opgestuurd.</p><p>
 Je kunt het <a href="{$a->url}">hier</a> bekijken.<p>';
 $string['entries_saved'] = 'Je antwoorden zijn bewaard.';
-$string['eventcoursemoduleviewed'] = 'Cursusmodule bekeken';
-$string['eventinstanceslistviewed'] = 'Instantielijst bekeken';
 $string['eventresponsedeleted'] = 'Antwoord verwijderd';
 $string['eventresponsesubmitted'] = 'Antwoord ingestuurd';
 $string['export_questions'] = 'Exporteer vragen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,7 +69,6 @@ $string['legacyfilesactive'] = '활성화';
 $string['legacyfilesdone'] = '종료됨';
 $string['modulename'] = '파일';
 $string['modulenameplural'] = '파일';
-$string['neverseen'] = '보이지 않음';
 $string['notmigrated'] = '정규자료 형식 ({$a}) 은 아직 전환되지 않았습니다. ';
 $string['optionsheader'] = '표시 옵션';
 $string['page-mod-resource-x'] = '모든 파일 모듈 페이지';

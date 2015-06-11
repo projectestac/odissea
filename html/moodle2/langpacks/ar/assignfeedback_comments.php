@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'تعليق متضمن';
+$string['commentinlinedefault'] = 'افتراضياً سيكون التعليق متضمن';
+$string['commentinlinedefault_help'] = 'إذا تم  تفعيله فإن  وظيفة التعليق المتضمن ستكون مفعّله تلقائياً لكل المهمات الجديدة';
+$string['commentinline_help'] = 'إذا تم تفعيل هذا الخيار فإن النص المُرسل سيتم نسخه إلى حقل التعليق خلال التقييم مما يُسهّل تضمين التعليق (ربما باستخدام ألوان مختلفة للنص) أو بتحرير النص الأساسي';
 $string['default'] = 'مُفعّل تلقائياً';
 $string['default_help'] = 'إذا تم تفعيل هذا الخيار فإن طريقة اتغذية الراجعة هذه ستكون مفُعّلة افتراضياً لكل المهمات الجديدة.';
 $string['enabled'] = 'تعليقات الإفادة';

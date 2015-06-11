@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_image', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,13 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilityhint'] = '<p>Web edukien erabilerraztasunerako gida-lerroak (WCAG):<br/><ul><li><a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Ordezko testuak</a></li></ul></p>';
+$string['alignment'] = 'Lerrokadura';
+$string['alignment_bottom'] = 'Behera';
+$string['alignment_left'] = 'Ezkerra';
+$string['alignment_middle'] = 'Erdira';
+$string['alignment_right'] = 'Eskuinera';
+$string['alignment_top'] = 'Gora';
 $string['browserepositories'] = 'Arakatu biltegiak...';
+$string['constrain'] = 'Tamaina berez';
 $string['createimage'] = 'Txertatu irudia';
-$string['enteralt'] = 'Idatzi ordezko testua';
+$string['customstyle'] = 'Egokitu estiloa';
+$string['enteralt'] = 'Deskribatu irudia ikusi ezin duen batentzat';
 $string['enterurl'] = 'Idatzi URLa';
 $string['height'] = 'Altuera';
-$string['image'] = 'Irudia';
+$string['imageproperties'] = 'Irudiaren propietateak';
 $string['pluginname'] = 'Irudia';
+$string['presentation'] = 'Deskribapena ez da beharrezkoa';
+$string['presentationoraltrequired'] = 'Irudiek deskribapena behar dute, besterik adierazi ezean';
 $string['preview'] = 'Aurreikusi';
+$string['saveimage'] = 'Gorde irudia';
+$string['size'] = 'Tamaina';
 $string['width'] = 'Zabalera';

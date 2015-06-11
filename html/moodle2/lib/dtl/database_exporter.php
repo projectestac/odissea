@@ -122,14 +122,15 @@ abstract class database_exporter {
      * @see $check_schema is true), queries the database and calls
      * appropriate callbacks.
      *
-     * @exception dbtransfer_exception if any checking (e.g. database schema) fails
+     * @throws dbtransfer_exception if any checking (e.g. database schema) fails
      *
      * @param string $description a user description of the data.
      */
     public function export_database($description=null) {
         global $CFG;
 
-        if ($this->check_schema and $errors = $this->manager->check_database_schema($this->schema)) {
+        $options = array('changedcolumns' => false); // Column types may be fixed by transfer.
+        if ($this->check_schema and $errors = $this->manager->check_database_schema($this->schema, $options)) {
             $details = '';
             foreach ($errors as $table=>$items) {
                 $details .= '<div>'.get_string('tablex', 'dbtransfer', $table);

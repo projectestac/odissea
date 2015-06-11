@@ -10,7 +10,7 @@ if ($ADMIN->fulltree) {
 	$settings->add(new admin_setting_heading('rcontentmodeditdefaults', get_string('modeditdefaults', 'admin'), get_string('condifmodeditdefaults', 'admin')));
 
 	$settings->add(new admin_setting_configselect('rcontent/whatgrade', get_string('whatgrade', 'rcontent'),
-	    get_string('whatgradedesc', 'rcontent'), RCONTENT_HIGHESTATTEMPT, rcontent_get_what_grade_array()));
+	    get_string('whatgrade_help', 'rcontent'), RCONTENT_HIGHESTATTEMPT, rcontent_get_what_grade_array()));
 
 	$settings->add(new admin_setting_configtext('rcontent/framesize', get_string('framesize', 'rcontent'),
 	    get_string('configframesize', 'rcontent'), 400, PARAM_INT));
@@ -28,13 +28,13 @@ if ($ADMIN->fulltree) {
 	foreach ($RCONTENT_WINDOW_OPTIONS as $optionname) {
 	    $popupoption = "rcontent/popup$optionname";
 	    if ($popupoption == 'rcontent/popupheight') {
-	        $settings->add(new admin_setting_configtext($popupoption, get_string('newheight', 'rcontent'),
+	        $settings->add(new admin_setting_configtext($popupoption, get_string('paramheight', 'rcontent'),
 	            get_string('configpopupheight', 'rcontent'), 800, PARAM_INT));
 	    } else if ($popupoption == 'rcontent/popupwidth') {
-	        $settings->add(new admin_setting_configtext($popupoption, get_string('newwidth', 'rcontent'),
+	        $settings->add(new admin_setting_configtext($popupoption, get_string('paramwidth', 'rcontent'),
 	            get_string('configpopupwidth', 'rcontent'), '600'));
 	    } else {
-	        $settings->add(new admin_setting_configselect($popupoption, get_string('new'.$optionname, 'rcontent'),
+	        $settings->add(new admin_setting_configselect($popupoption, get_string('param'.$optionname, 'rcontent'),
 	            get_string('configpopup'.$optionname, 'rcontent'), 'checked', $checkedyesno));
 	    }
 	}

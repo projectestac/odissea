@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -395,7 +395,7 @@ $string['rating:viewall'] = 'Visa alla \'råa\' bedömningar som har avgivits av
 $string['rating:viewany'] = 'Visa de sammanlagda bedömningar som någon har fått';
 $string['resetrole'] = 'Återställ till standardvärden';
 $string['restore:configure'] = 'Konfigurera alternativ för återställande';
-$string['restore:createuser'] = 'Skapa användare vid återställning';
+$string['restore:createuser'] = 'Skapa användare i sb m återställande';
 $string['restore:restoreactivity'] = 'Aktiviteter för återställande';
 $string['restore:restorecourse'] = 'Återställ kurser';
 $string['restore:restoresection'] = 'Återställ sektioner';
@@ -464,8 +464,8 @@ $string['site:doanything'] = 'Tillåten att göra allting';
 $string['site:doclinks'] = 'Visa länkar till dokument utanför webbplatsen';
 $string['site:import'] = 'Importera andra kurser i en kurs';
 $string['site:manageblocks'] = 'Administrera block på en sida';
-$string['site:mnetloginfromremote'] = 'Logga in från en annan applikation via Mnet';
-$string['site:mnetlogintoremote'] = 'Flytta till en annan applikation via Mnet';
+$string['site:mnetloginfromremote'] = 'Logga in från en annan instans av Moodle';
+$string['site:mnetlogintoremote'] = 'Flytta över till en annan instans av Moodle';
 $string['site:readallmessages'] = 'Läs alla meddelanden på webbplatsen';
 $string['site:restore'] = 'Återställ kurser';
 $string['site:sendmessage'] = 'Skicka meddelanden till vilken användare som helst';
@@ -487,7 +487,7 @@ $string['user:editprofile'] = 'Redigera användarprofil';
 $string['user:loginas'] = 'Logga in som andra användare';
 $string['user:manageblocks'] = 'Hantera block i användarprofil hos andra användare';
 $string['user:readuserblogs'] = 'Se alla användarbloggar';
-$string['user:readuserposts'] = 'Se alla foruminlägg från användare';
+$string['user:readuserposts'] = 'Se alla inlägg från användare';
 $string['user:update'] = 'Uppdatera användarprofiler';
 $string['user:viewdetails'] = 'Visa användarprofiler';
 $string['user:viewhiddendetails'] = 'Visa dolda detaljer angående användare';

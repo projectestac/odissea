@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -120,7 +120,6 @@ $string['errorinvalidformat'] = '无法识别的备份格式';
 $string['errorinvalidformatinfo'] = '所选文件不是有效的Moodle备份文件，不能恢复。';
 $string['errorminbackup20version'] = '此备份文件由开发版的Moodle备份创建 ({$a->backup})。最低需求是{$a->min}。不能恢复。';
 $string['errorrestorefrontpage'] = '不允许恢复首页。';
-$string['errortgznozlib'] = '选定的文件确实在新的备份格式中，但无法恢复，原因是在这个系统中无法使用 zlib PHP 扩展。';
 $string['executionsuccess'] = '成功建立备份文件。';
 $string['filealiasesrestorefailures'] = '别名恢复失败';
 $string['filealiasesrestorefailures_help'] = '别名是链接到其他文件的符号链接，包括存储在外部容器中的文件。在某些情况下，Moodle 不能恢复它们——例如，在另一个站点恢复此备份文件或引用的文件不存在在时。
@@ -131,7 +130,7 @@ $string['filename'] = '文件名';
 $string['filereferencesincluded'] = '备份包中某些文件引用了外部内容，它们在其它网站上无效。';
 $string['filereferencesnotsamesite'] = '备份来自其他网站，文件引用不能恢复';
 $string['filereferencessamesite'] = '备份来自同一网站，文件引用可以恢复';
-$string['generalactivities'] = '包括活动';
+$string['generalactivities'] = '包括活动和资源';
 $string['generalanonymize'] = '匿名信息';
 $string['generalbackdefaults'] = '备份默认设置';
 $string['generalbadges'] = '包含奖章';
@@ -168,6 +167,7 @@ $string['includeditems'] = '包括项目：';
 $string['includefilereferences'] = '文件引用了外部内容';
 $string['includesection'] = '小节{$a}';
 $string['includeuserinfo'] = '用户数据';
+$string['jumptofinalstep'] = '跳到最后一步';
 $string['locked'] = '锁定';
 $string['lockedbyconfig'] = '此设置已被默认备份设置锁定';
 $string['lockedbyhierarchy'] = '因依赖关系而锁定';
@@ -226,7 +226,7 @@ $string['restoretonewcourse'] = '恢复为一个新课程';
 $string['restoringcourse'] = '课程正在恢复';
 $string['restoringcourseshortname'] = '恢复中';
 $string['rootenrolmanual'] = '恢复为人工选课';
-$string['rootsettingactivities'] = '包括活动';
+$string['rootsettingactivities'] = '包括活动和资源';
 $string['rootsettinganonymize'] = '匿名化用户信息';
 $string['rootsettingbadges'] = '包含奖章';
 $string['rootsettingblocks'] = '包括版块';
@@ -259,10 +259,11 @@ $string['skiphiddenhelp'] = '选择是否要忽略隐藏课程';
 $string['skipmodifdays'] = '忽略有多少天没有更新的课程';
 $string['skipmodifdayshelp'] = '选择是否要忽略已经有多少天没有更新的课程';
 $string['skipmodifprev'] = '忽略从上次备份以来没有更新的课程';
-$string['skipmodifprevhelp'] = '选择是否忽略自上次备份以来就没有更新修改过的课程';
+$string['skipmodifprevhelp'] = '选择是否跳过从上次自动备份后没有修改的课程。需要启用日志功能。';
 $string['storagecourseandexternal'] = '课程备份文件区和指定的目录';
 $string['storagecourseonly'] = '课程备份文件区';
 $string['storageexternalonly'] = '指定自动备份的目录';
+$string['timetaken'] = '耗时';
 $string['title'] = '标题';
 $string['totalcategorysearchresults'] = '分类总数：{$a}';
 $string['totalcoursesearchresults'] = '课程总数：{$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = '評定者説明を空白にすること�
 $string['err_nomaxscore'] = 'クライテリア最大評点を空白にすることはできません。';
 $string['err_noshortname'] = 'クライテリア名を空白にすることはできません。';
 $string['err_scoreinvalid'] = '{$a->criterianame} に設定された点数は有効ではありません。最大評点は次のとおりです: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'クライテリア名は半角256文字以下にしてください。';
 $string['gradingof'] = '{$a} 評定';
 $string['guidemappingexplained'] = '注意: あなたの評定ガイドでは最大評点<b>{$a->maxscore}</b>が設定されていますが、あなたの活動で設定されている最大評点は {$a->modulegrade} です。あなたの評定ガイドの最大評点はモジュール内の最大評点に調整されます。<br />中間にある評点は利用可能な最も近い評点にそれぞれ変換されます。';
 $string['guidenotcompleted'] = 'それぞれのクライテリアに対して有効な評点を入力してください。';

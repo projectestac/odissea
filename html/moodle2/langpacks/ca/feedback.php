@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'feedback', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,8 +108,6 @@ Podeu veure-la aquí:
 $string['emailteachermailhtml'] = '<p>{$a->username} ha completat l\'activitat de retroacció: <i>\'{$a->feedback}\'</i></p>
 <p>La podeu veure <a href="{$a->url}">al web.</a>.</p>';
 $string['entries_saved'] = 'Les vostres respostes s\'han desat.';
-$string['eventcoursemoduleviewed'] = 'S\'ha visualitzat el mòdul del curs';
-$string['eventinstanceslistviewed'] = 'S\'ha visualitzat la llista d\'instàncies';
 $string['eventresponsedeleted'] = 'S\'ha suprimit la resposta';
 $string['eventresponsesubmitted'] = 'S\'ha enviat la resposta';
 $string['export_questions'] = 'Exporta les preguntes';
@@ -158,8 +156,8 @@ $string['mapcourses_help'] = 'Una vegada heu triat els cursos relevants de la vo
 $string['mappedcourses'] = 'Cursos mapejats';
 $string['max_args_exceeded'] = 'Es poden gestionar com a màxim sis arguments. Massa arguments per a';
 $string['maximal'] = 'màxim';
-$string['messageprovider:message'] = 'Recordatori de la realimentació';
-$string['messageprovider:submission'] = 'Notificacions de la realimentació';
+$string['messageprovider:message'] = 'Recordatori de la retroacció';
+$string['messageprovider:submission'] = 'Notificacions de la retroacció';
 $string['mode'] = 'Mode';
 $string['modulename'] = 'Retroacció';
 $string['modulename_help'] = 'El mòdul d\'activitat de retroacció permet al professorat crear una enquesta personalitzada per a recollir la retroacció dels participants utilitzant diversos tipus de preguntes que inclouen opcions múltiples, de sí/no o d\'introducció de text.

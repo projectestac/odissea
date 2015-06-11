@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,6 @@ $string['generatefeedback'] = 'Skapa återkopplings PDF';
 $string['generatingpdf'] = 'Skapar PDF ...';
 $string['gotopage'] = 'Gå till sidan';
 $string['green'] = 'Grön';
-$string['gspath'] = 'Ghostscript sökväg';
 $string['highlight'] = 'Markera';
 $string['jsrequired'] = 'JavaScript krävs för att kommentera en PDF. Vänligen aktivera JavaScript i din webbläsare för att använda den här funktionen';
 $string['launcheditor'] = 'Starta PDF editor ...';

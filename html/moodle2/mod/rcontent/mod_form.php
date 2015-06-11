@@ -66,7 +66,7 @@ class mod_rcontent_mod_form extends moodleform_mod {
         $mform->setConstant('issubmit', 1);
         $mform->setType('issubmit', PARAM_BOOL);
 
-        $mform->addElement('text', 'name', get_string('name', 'rcontent'), array('size' => 64));
+        $mform->addElement('text', 'name', get_string('name'), array('size' => 64));
         $mform->setType('name', PARAM_TEXT);
         $mform->addRule('name', null, 'required');
 
@@ -132,9 +132,7 @@ class mod_rcontent_mod_form extends moodleform_mod {
         $mform->setDefault('activity', $activity);
 
         // Summary
-        $mform->addElement('htmleditor', 'summary', get_string('summary'));
-        $mform->setType('summary', PARAM_RAW);
-        $mform->addHelpButton('summary', 'summary');
+        $this->add_intro_editor();
 
         // Other settings
         $mform->addElement('header', 'displaysettings', get_string('appearance'));
@@ -153,12 +151,12 @@ class mod_rcontent_mod_form extends moodleform_mod {
         // Going through all the options popup
         foreach ($RCONTENT_WINDOW_OPTIONS as $option => $o) {
             if ($option == 'height' or $option == 'width') {
-                $mform->addElement('text', $option, get_string('new'.$option, 'rcontent'), array('size' => '4'));
+                $mform->addElement('text', $option, get_string('param'.$option, 'rcontent'), array('size' => '4'));
                 $mform->setDefault($option, $o);
                 $mform->setType($option, PARAM_INT);
                 $mform->disabledIf($option, 'popup', 'eq', 0);
             } else {
-                $mform->addElement('checkbox', $option, get_string('new'.$option, 'rcontent'));
+                $mform->addElement('checkbox', $option, get_string('param'.$option, 'rcontent'));
                 $mform->setDefault($option, $o);
                 $mform->disabledIf($option, 'popup', 'eq', 0);
             }

@@ -5,21 +5,19 @@ Feature: Restrict activity availability through date conditions
   I need to set allow access dates to restrict activity access
 
   Background:
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "users" exists:
+    And the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | Frist | teacher1@asd.com |
-      | student1 | Student | First | student1@asd.com |
-    And the following "course enrolments" exists:
+      | teacher1 | Teacher | Frist | teacher1@example.com |
+      | student1 | Student | First | student1@example.com |
+    And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
-    And I log in as "admin"
-    And I set the following administration settings values:
-      | Enable conditional access | 1 |
-    And I log out
+    And the following config values are set as admin:
+      | enableavailability | 1 |
     And I log in as "teacher1"
     And I follow "Course 1"
     And I turn editing mode on
@@ -29,36 +27,39 @@ Feature: Restrict activity availability through date conditions
 
   @javascript
   Scenario: Show activity greyed-out to students when available from date is in future
-    Given I click on "id_availablefrom_enabled" "checkbox"
-    And I fill the moodle form with:
+    Given I click on "Add restriction..." "button"
+    And I click on "Date" "button" in the "Add restriction..." "dialogue"
+    And I set the following fields to these values:
       | Assignment name | Test assignment 1 |
       | Description | This assignment is restricted by date |
       | assignsubmission_onlinetext_enabled | 1 |
       | assignsubmission_file_enabled | 0 |
-      | id_availablefrom_day | 31 |
-      | id_availablefrom_month | 12 |
-      | id_availablefrom_year | 2037 |
-      | id_showavailability | 1 |
+      | x[day] | 31 |
+      | x[month] | 12 |
+      | x[year] | 2037 |
     And I press "Save and return to course"
     And I log out
     When I log in as "student1"
     And I follow "Course 1"
-    Then I should see "Available from 31 December 2037."
+    Then I should see "Available from 31 December 2037"
     And "Test assignment 1" activity should be hidden
     And I log out
 
   @javascript
   Scenario: Show activity hidden to students when available until date is in past
-    Given I click on "id_availableuntil_enabled" "checkbox"
-    And I fill the moodle form with:
+    Given I click on "Add restriction..." "button"
+    And I click on "Date" "button" in the "Add restriction..." "dialogue"
+    And I set the following fields to these values:
       | Assignment name | Test assignment 2 |
       | Description | This assignment is restricted by date |
       | assignsubmission_onlinetext_enabled | 1 |
       | assignsubmission_file_enabled | 0 |
-      | id_availableuntil_day | 1 |
-      | id_availableuntil_month | 2 |
-      | id_availableuntil_year | 2013 |
-      | id_showavailability | 0 |
+      | x[day] | 1 |
+      | x[month] | 2 |
+      | x[year] | 2013 |
+      | Direction | until |
+    # Click eye icon to hide it when not available.
+    And I click on ".availability-item .availability-eye img" "css_element"
     And I press "Save and return to course"
     And I log out
     When I log in as "student1"

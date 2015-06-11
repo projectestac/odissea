@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['errors'] = 'Ошибки';
 $string['nochanges'] = 'Не изменять';
 $string['pluginname'] = 'Загрузка пользователей';
 $string['renameerrors'] = 'Ошибки переименования';
-$string['requiredtemplate'] = 'Обязательный параметр. Здесь Вы можете использовать шаблон с синтакисом  (%l = Фамилия,%f = Имя,%u = логин). Подробнее смотрите в справке и примерах.';
+$string['requiredtemplate'] = 'Обязательный параметр. Здесь Вы можете использовать шаблон с синтакисом  (%l = Фамилия, %f = Имя, %u = логин). Подробнее смотрите в справке и примерах.';
 $string['rowpreviewnum'] = 'Строк предпросмотра';
 $string['uploadpicture_baduserfield'] = 'Указано некорректный атрибут пользователя. Пожалуйста, попробуйте снова.';
 $string['uploadpicture_cannotmovezip'] = 'Невозможно переместить zip-файл во временный каталог.';

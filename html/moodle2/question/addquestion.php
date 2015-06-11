@@ -88,6 +88,6 @@ $PAGE->set_title($chooseqtype);
 echo $OUTPUT->header();
 echo $OUTPUT->notification(get_string('youmustselectaqtype', 'question'));
 echo $OUTPUT->box_start('generalbox boxwidthnormal boxaligncenter', 'chooseqtypebox');
-print_choose_qtype_to_add_form($hiddenparams);
+echo print_choose_qtype_to_add_form($hiddenparams, null, false);
 echo $OUTPUT->box_end();
 echo $OUTPUT->footer();

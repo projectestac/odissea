@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['default'] = '默认开启';
 $string['default_help'] = '如果设置此项，将会为所有新作业默认开启此提交方法。';
 $string['enabled'] = '文件提交';
 $string['enabled_help'] = '如果设置此项，学生可以上传一个或多个作业文件。';
-$string['event_assessable_uploaded'] = '一个文件已被上传';
+$string['eventassessableuploaded'] = '一个文件已被上传';
 $string['file'] = '文件提交';
 $string['maxbytes'] = '最大文件大小';
 $string['maxfilessubmission'] = '最大的文件上传数量';

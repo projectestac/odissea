@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Ajouter un autre indice';
 $string['addcategory'] = 'Ajouter une catégorie';
 $string['addmorechoiceblanks'] = 'Emplacement pour {no} réponses supplémentaires';
 $string['adminreport'] = 'Rapport sur les problèmes possibles dans votre banque de questions.';
+$string['advancedsearchoptions'] = 'Options de recherche';
+$string['alltries'] = 'Toutes les tentatives';
 $string['answer'] = 'Réponse';
 $string['answers'] = 'Réponses';
 $string['answersaved'] = 'Réponse enregistrée';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'Impossible de trouver la catégorie de question
 $string['cannotunhidequestion'] = 'Impossible de rendre visible cette question.';
 $string['cannotunzip'] = 'Impossible de décompresser le fichier.';
 $string['cannotwriteto'] = 'Impossible d\'écrire dans {$a} les questions exportées';
+$string['categories'] = 'Catégories';
 $string['category'] = 'Catégorie';
 $string['categorycurrent'] = 'Catégorie actuelle';
 $string['categorycurrentuse'] = 'Utiliser cette catégorie';
@@ -113,8 +116,7 @@ $string['defaultmark'] = 'Note par défaut';
 $string['defaultmarkmustbepositive'] = 'La note par défaut doit être positive.';
 $string['deletecoursecategorywithquestions'] = 'La banque de questions associée à cette catégorie contient des questions. Si vous continuez, ces questions seront supprimées. Si vous voulez les conserver, veuillez d\'abord les déplacer en utilisant l\'interface de la banque de questions.';
 $string['deletequestioncheck'] = 'Voulez-vous vraiment supprimer « {$a} »?';
-$string['deletequestionscheck'] = '<p>Voulez-vous vraiment supprimer les questions ci-dessous ?</p>
-<p>{$a}</p>';
+$string['deletequestionscheck'] = 'Voulez-vous vraiment supprimer les questions ci-dessous ?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'Suppression du comportement de question « {$a} »';
 $string['deletingqtype'] = 'Suppression du type de question « {$a} »';
 $string['didnotmatchanyanswer'] = '[Ne correspond à aucune réponse]';
@@ -150,6 +152,7 @@ $string['errorduringregrade'] = 'Impossible de renoter la question {$a->qid}. Re
 $string['errorfilecannotbecopied'] = 'Impossible de copier le fichier {$a}.';
 $string['errorfilecannotbemoved'] = 'Impossible de déplacer le fichier {$a}.';
 $string['errorfileschanged'] = 'Erreur : certains fichiers liés dans des questions ont été modifiés depuis l\'affichage du formulaire.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La question ({$a}) est présente avec des coefficients différents en des endroits différents du test. Une telle fonctionnalité n\'est pas supportée par le rapport statistique et pourrait rendre des statistiques de cette question incorrectes.';
 $string['errormanualgradeoutofrange'] = 'La note {$a->grade} n\'est pas entre 0 et {$a->maxgrade} pour la question {$a->name}. Le score et le commentaire n\'ont pas été enregistrés.';
 $string['errormovingquestions'] = 'Erreur lors du déplacement des questions d\'identifiants {$a}.';
 $string['errorpostprocess'] = 'Erreur lors du post-traitement !';
@@ -159,6 +162,8 @@ $string['errorprocessingresponses'] = 'Une erreur est survenue lors du traitemen
 $string['errorsavingcomment'] = 'Erreur lors de l\'enregistrement dans la base de données du commentaire pour la question {$a->name}.';
 $string['errorsavingflags'] = 'Erreur durant l\'enregistrement de l\'indicateur d\'état.';
 $string['errorupdatingattempt'] = 'Erreur lors de la mise à jour dans la base de données de la tentative {$a->id}.';
+$string['eventquestioncategorycreated'] = 'Catégorie de questions créée';
+$string['export'] = 'Exporter';
 $string['exportcategory'] = 'Exporter catégorie';
 $string['exportcategory_help'] = 'Ce réglage détermine la catégorie dont il faut tirer les questions à exporter.
 
@@ -176,6 +181,7 @@ $string['filesareacourse'] = 'la zone des fichiers du cours';
 $string['filesareasite'] = 'la zone des fichiers du site';
 $string['filestomove'] = 'Déplacer / copier les fichiers vers {$a} ?';
 $string['fillincorrect'] = 'Remplir les réponses correctes';
+$string['firsttry'] = 'Première tentative';
 $string['flagged'] = 'Marquée';
 $string['flagthisquestion'] = 'Marquer cette question';
 $string['formquestionnotinids'] = 'Le formulaire contient une question qui n\'apparaît pas dans les identifiants de question';
@@ -193,10 +199,11 @@ $string['hinttext'] = 'Texte de l\'indice';
 $string['howquestionsbehave'] = 'Comment se comportent les questions';
 $string['howquestionsbehave_help'] = 'Les participants peuvent agir avec les questions du test de différentes façons. Par exemple, vous pourriez souhaiter que les participants répondent à chaque question et envoient ensuite la totalité du test, avant que quoi que ce soit ne soit noté ou qu\'un feedback ne leur soit donné. Ce sera le mode « Feedback a posteriori ».
 
-Sinon, vous pourriez souhaiter que les participants envoient chaque question au fur et à mesure du test et reçoivent immédiatement le feedback correspondant, qu\'il puissent tenter de répondre à nouveau s\'ils ont échoué, mais avec une note moindre. Ce sera le mode « Interactif avec tentatives multiples ».
+Sinon, vous pourriez souhaiter que les participants envoient chaque question au fur et à mesure du test et reçoivent immédiatement le feedback correspondant, qu\'il puissent tenter de répondre à nouveau s\'ils ont échoué, mais avec une note moindre. Ce sera le mode « Interactif avec essais multiples ».
 
 Ces deux exemples illustrent les deux comportements les plus utilisés.';
 $string['ignorebroken'] = 'Ignorer les liens cassés';
+$string['import'] = 'Importer';
 $string['importcategory'] = 'Catégorie d\'importation';
 $string['importcategory_help'] = 'Ce réglage détermine la catégorie dans laquelle les questions importées seront placées.
 
@@ -226,6 +233,7 @@ $string['invalidgrade'] = 'Les notes ne correspondent pas aux options de notatio
 $string['invalidpenalty'] = 'Pénalité non valide';
 $string['invalidwizardpage'] = 'Page de l\'assistant incorrecte ou non spécifiée !';
 $string['lastmodifiedby'] = 'Dernière modification par';
+$string['lasttry'] = 'Dernière tentative';
 $string['linkedfiledoesntexist'] = 'Le fichier lié {$a} n\'existe pas';
 $string['makechildof'] = 'Déplacer comme descendant de {$a}';
 $string['makecopy'] = 'Copier';
@@ -306,7 +314,7 @@ $string['penaltyfactor_help'] = 'Ce réglage détermine la fraction de la note o
 
 Le facteur de pénalité doit être un nombre compris entre 0 et 1. Un facteur de pénalité de 1 signifie que l\'étudiant doit fournir la bonne réponse au premier essai, sous peine de n\'obtenir aucun point. Un facteur de pénalité de 0 indique que l\'étudiant peut réessayer autant qu\'il le veut et pourra obtenir tous les points.';
 $string['penaltyforeachincorrecttry'] = 'Pénalité pour tout essai incorrect';
-$string['penaltyforeachincorrecttry_help'] = 'Lorsque des questions sont en mode « Interactif avec tentatives multiples » ou « Adaptatif », les participants ont plusieurs essais pour trouver la bonne réponse. Cette option contrôle comment ils sont pénalisés pour chaque essai incorrect.
+$string['penaltyforeachincorrecttry_help'] = 'Lorsque des questions sont en mode « Interactif avec essais multiples » ou « Adaptatif », les participants ont plusieurs essais pour trouver la bonne réponse. Cette option contrôle comment ils sont pénalisés pour chaque essai incorrect.
 
 La pénalité est un pourcentage de la note totale de la question, donc si la question est notée sur 3 points et que la pénalité est de 0,3333333, alors le participant aura 3 points s\'il répond correctement à la question au premier essai, 2 points s\'il répond correctement au deuxième essai, et 1 point s\'il répond correctement au troisième essai.';
 $string['permissionedit'] = 'Modifier cette question';
@@ -328,6 +336,7 @@ $string['questioncatsfor'] = 'Catégories de question de « {$a} »';
 $string['questiondoesnotexist'] = 'Cette question n\'existe pas';
 $string['questionidmismatch'] = 'Les identifiants de questions ne correspondent pas';
 $string['questionname'] = 'Nom de question';
+$string['questionnamecopy'] = '{$a} (copie)';
 $string['questionno'] = 'Question {$a}';
 $string['questionpreviewdefaults'] = 'Réglages par défaut de la prévisualisation des questions';
 $string['questionpreviewdefaults_desc'] = 'Ces réglages sont utilisés lors de la première prévisualisation d\'une question dans la banque de questions. Lorsqu\'un utilisateur a prévisualisé une question, ses préférences personnelles sont enregistrées.';
@@ -350,6 +359,7 @@ $string['reviewresponse'] = 'Relire la réponse';
 $string['rightanswer'] = 'Réponse juste';
 $string['rightanswer_help'] = 'Un résumé de la réponse correcte généré automatiquement. Ce texte peut être limité. Il peut être plus judicieux d\'expliquer la réponse correcte dans le feedback général de la question et de désactiver cette option.';
 $string['save'] = 'Enregistrer';
+$string['savechangesandcontinueediting'] = 'Enregistrer les modifications et continuer';
 $string['saved'] = 'Enregistré : {$a}';
 $string['saveflags'] = 'Enregistrer l\'état des marquages';
 $string['selectacategory'] = 'Choisir une catégorie';
@@ -398,12 +408,14 @@ $string['unknownquestioncatregory'] = 'Catégorie de question inconnue : {$a}.'
 $string['unknownquestiontype'] = 'Type de question inconnu {$a}';
 $string['unknowntolerance'] = 'Type de tolérance inconnu {$a}';
 $string['unpublished'] = 'non partagée';
+$string['unusedcategorydeleted'] = 'Cette catégorie a été supprimée, car après la suppression du cours, les questions qui y étaient classées ne sont plus utilisées nulle part.';
 $string['updatedisplayoptions'] = 'Modifier les options d\'affichage';
 $string['upgradeproblemcategoryloop'] = 'Un problème a été détecté lors de la modification des catégories de question : il y a une boucle dans l\'arbre des catégories. Les identifiants des catégories touchés sont {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Impossible de modifier la catégorie de question {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Un problème a été détecté lors de la modification des catégories de question : la catégorie {$a->id} fait référence à la catégorie parente {$a->parent}, qui n\'existe pas. La catégorie parente a été changée pour corriger le problème.';
 $string['whethercorrect'] = 'Si correcte';
 $string['whethercorrect_help'] = 'Ceci couvre à la fois la description pour « Correct », « Partiellement correct » et « Incorrect » et toutes les indications en surlignage coloré portant la même information.';
+$string['whichtries'] = 'Choix des tentatives';
 $string['withselected'] = 'Avec la sélection';
 $string['wrongprefix'] = 'Le préfixe est mal formatté {$a}';
 $string['xoutofmax'] = '{$a->mark} sur {$a->max}';

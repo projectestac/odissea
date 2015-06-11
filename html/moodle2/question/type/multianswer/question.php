@@ -161,6 +161,20 @@ class qtype_multianswer_question extends question_graded_automatically_with_coun
         return $postdata;
     }
 
+    public function get_student_response_values_for_simulation($postdata) {
+        $simulatedresponse = array();
+        foreach ($this->subquestions as $i => $subq) {
+            $substep = $this->get_substep(null, $i);
+            $subqpostdata = $substep->filter_array($postdata);
+            $subqsimulatedresponse = $subq->get_student_response_values_for_simulation($subqpostdata);
+            foreach ($subqsimulatedresponse as $subresponsekey => $responsevalue) {
+                $simulatedresponse[$i.'.'.$subresponsekey] = $responsevalue;
+            }
+        }
+        ksort($simulatedresponse);
+        return $simulatedresponse;
+    }
+
     public function is_complete_response(array $response) {
         foreach ($this->subquestions as $i => $subq) {
             $substep = $this->get_substep(null, $i);
@@ -193,12 +207,10 @@ class qtype_multianswer_question extends question_graded_automatically_with_coun
     }
 
     public function get_validation_error(array $response) {
-        $errors = array();
-        foreach ($this->subquestions as $i => $subq) {
-            $substep = $this->get_substep(null, $i);
-            $errors[] = $subq->get_validation_error($substep->filter_array($response));
+        if ($this->is_complete_response($response)) {
+            return '';
         }
-        return implode('<br />', $errors);
+        return get_string('pleaseananswerallparts', 'qtype_multianswer');
     }
 
     /**

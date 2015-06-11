@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,14 +71,14 @@ $string['errorremovenotpermitted'] = 'Ez duzu automatikoki gehitutako {$a} talde
 $string['errorselectone'] = 'Mesedez, aukeratu talde bat aukera hau ezarri aurretik';
 $string['errorselectsome'] = 'Mesedez, aukeratu talde bat edo gehiago aukera hau ezarri aurretik';
 $string['evenallocation'] = 'Oharra: Taldeen ezarpena mantendu ahal izateko, oraingo taldeko kide-kopurua eta zuk zehaztutakoa ez datoz bat.';
-$string['event_group_created'] = 'Taldea sortu da';
-$string['event_group_deleted'] = 'Taldea ezabatu da';
-$string['event_grouping_created'] = 'Taldekatzea sortu da';
-$string['event_grouping_deleted'] = 'Taldekatzea ezabatu da';
-$string['event_grouping_updated'] = 'Taldekatzea eguneratu da';
-$string['event_group_member_added'] = 'Taldekidea gehitu da';
-$string['event_group_member_removed'] = 'Taldekidea ezabatu da';
-$string['event_group_updated'] = 'Taldea eguneratu da';
+$string['eventgroupcreated'] = 'Taldea sortu da';
+$string['eventgroupdeleted'] = 'Taldea ezabatu da';
+$string['eventgroupingcreated'] = 'Taldekatzea sortu da';
+$string['eventgroupingdeleted'] = 'Taldekatzea ezabatu da';
+$string['eventgroupingupdated'] = 'Taldekatzea eguneratu da';
+$string['eventgroupmemberadded'] = 'Taldekidea gehitu da';
+$string['eventgroupmemberremoved'] = 'Taldekidea ezabatu da';
+$string['eventgroupupdated'] = 'Taldea eguneratu da';
 $string['existingmembers'] = 'Dauden kideak: {$a}';
 $string['filtergroups'] = 'Taldeak honen arabera iragazi:';
 $string['group'] = 'Taldea';
@@ -102,9 +102,6 @@ $string['groupingsonly'] = 'Taldekatzeak baino ez';
 $string['groupmember'] = 'Taldekidea';
 $string['groupmemberdesc'] = 'Talde bateko kideen rol estandarra';
 $string['groupmembers'] = 'Taldekideak';
-$string['groupmembersonly'] = 'Taldekideentzat baino ez dago eskura';
-$string['groupmembersonlyerror'] = 'Barkatu, gutxienez jarduera honetan erabilitako talde bateko kide izan behar duzu.';
-$string['groupmembersonly_help'] = 'Laukitxoa markatuta, aukeratutako taldekatzeko taldeetako ikasleek bakarrik izango dute eskura jarduera (edo baliabidea).';
 $string['groupmemberssee'] = 'Ikusi taldekideak';
 $string['groupmembersselected'] = 'Aukeratutako taldeko kideak';
 $string['groupmode'] = 'Talde-modua';
@@ -158,6 +155,7 @@ $string['nogroups'] = 'Ikastaro honetan ez dago talderik ezarrita';
 $string['nogroupsassigned'] = 'Ez dago esleitutako talderik';
 $string['nopermissionforcreation'] = 'Ezin da "{$a}" taldea sortu: ez duzu horretarako baimenik.';
 $string['nosmallgroups'] = 'Debakatu azken talde txikia';
+$string['notingroup'] = 'Taldeetan dauden erabiltzaileak ez hartu kontuan';
 $string['notingrouping'] = '[Taldekatzetik kanpo]';
 $string['nousersinrole'] = 'Ez dago erabiltzaile egokirik aukeratutako rolean';
 $string['number'] = 'Talde-kopurua edo kide-kopurua taldeko';
@@ -174,6 +172,8 @@ $string['removegroupfromselectedgrouping'] = 'Taldea aukeratutako taldekatzetik 
 $string['removegroupingsmembers'] = 'Kendu taldeak taldekatzeetatik';
 $string['removegroupsmembers'] = 'Kendu talde guztietako kideak';
 $string['removeselectedusers'] = 'Kendu aukeratutako erabiltzaileak';
+$string['selectfromgroup'] = 'Aukeratu kideak taldetik';
+$string['selectfromgrouping'] = 'Aukeratu kideak taldekatzetik';
 $string['selectfromrole'] = 'Aukeratu kideak rol honekin';
 $string['showgroupsingrouping'] = 'Erakutsi taldekatzean dauden taldeak';
 $string['showmembersforgroup'] = 'Erakutsi taldekideak';

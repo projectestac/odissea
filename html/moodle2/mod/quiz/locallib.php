@@ -23,8 +23,7 @@
  * the module-indpendent code for handling questions and which in turn
  * initialises all the questiontype classes.
  *
- * @package    mod
- * @subpackage quiz
+ * @package    mod_quiz
  * @copyright  1999 onwards Martin Dougiamas and others {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -37,9 +36,9 @@ require_once($CFG->dirroot . '/mod/quiz/accessmanager.php');
 require_once($CFG->dirroot . '/mod/quiz/accessmanager_form.php');
 require_once($CFG->dirroot . '/mod/quiz/renderer.php');
 require_once($CFG->dirroot . '/mod/quiz/attemptlib.php');
-require_once($CFG->dirroot . '/question/editlib.php');
 require_once($CFG->libdir  . '/eventslib.php');
 require_once($CFG->libdir . '/filelib.php');
+require_once($CFG->libdir . '/questionlib.php');
 
 
 /**
@@ -110,10 +109,7 @@ function quiz_create_attempt(quiz $quizobj, $attemptnumber, $lastattempt, $timen
         $attempt->quiz = $quiz->id;
         $attempt->userid = $userid;
         $attempt->preview = 0;
-        $attempt->layout = quiz_clean_layout($quiz->questions, true);
-        if ($quiz->shufflequestions) {
-            $attempt->layout = quiz_repaginate($attempt->layout, $quiz->questionsperpage, true);
-        }
+        $attempt->layout = '';
     } else {
         // Build on last attempt.
         if (empty($lastattempt)) {
@@ -127,6 +123,8 @@ function quiz_create_attempt(quiz $quizobj, $attemptnumber, $lastattempt, $timen
     $attempt->timefinish = 0;
     $attempt->timemodified = $timenow;
     $attempt->state = quiz_attempt::IN_PROGRESS;
+    $attempt->currentpage = 0;
+    $attempt->sumgrades = null;
 
     // If this is a preview, mark it as such.
     if ($ispreview) {
@@ -165,9 +163,8 @@ function quiz_start_new_attempt($quizobj, $quba, $attempt, $attemptnumber, $time
     $quizobj->load_questions();
 
     // Add them all to the $quba.
-    $idstoslots = array();
     $questionsinuse = array_keys($quizobj->get_questions());
-    foreach ($quizobj->get_questions() as $i => $questiondata) {
+    foreach ($quizobj->get_questions() as $questiondata) {
         if ($questiondata->qtype != 'random') {
             if (!$quizobj->get_quiz()->shuffleanswers) {
                 $questiondata->options->shuffleanswers = false;
@@ -189,7 +186,7 @@ function quiz_start_new_attempt($quizobj, $quba, $attempt, $attemptnumber, $time
             }
         }
 
-        $idstoslots[$i] = $quba->add_question($question, $questiondata->maxmark);
+        $quba->add_question($question, $questiondata->maxmark);
         $questionsinuse[] = $question->id;
     }
 
@@ -211,16 +208,36 @@ function quiz_start_new_attempt($quizobj, $quba, $attempt, $attemptnumber, $time
 
     $quba->start_all_questions($variantstrategy, $timenow);
 
-    // Update attempt layout.
-    $newlayout = array();
-    foreach (explode(',', $attempt->layout) as $qid) {
-        if ($qid != 0) {
-            $newlayout[] = $idstoslots[$qid];
-        } else {
-            $newlayout[] = 0;
+    // Work out the attempt layout.
+    $layout = array();
+    if ($quizobj->get_quiz()->shufflequestions) {
+        $slots = $quba->get_slots();
+        shuffle($slots);
+
+        $questionsonthispage = 0;
+        foreach ($slots as $slot) {
+            if ($questionsonthispage && $questionsonthispage == $quizobj->get_quiz()->questionsperpage) {
+                $layout[] = 0;
+                $questionsonthispage = 0;
+            }
+            $layout[] = $slot;
+            $questionsonthispage += 1;
+        }
+
+    } else {
+        $currentpage = null;
+        foreach ($quizobj->get_questions() as $slot) {
+            if ($currentpage !== null && $slot->page != $currentpage) {
+                $layout[] = 0;
+            }
+            $layout[] = $slot->slot;
+            $currentpage = $slot->page;
         }
     }
-    $attempt->layout = implode(',', $newlayout);
+
+    $layout[] = 0;
+    $attempt->layout = implode(',', $layout);
+
     return $attempt;
 }
 
@@ -272,34 +289,31 @@ function quiz_attempt_save_started($quizobj, $quba, $attempt) {
     question_engine::save_questions_usage_by_activity($quba);
     $attempt->uniqueid = $quba->get_id();
     $attempt->id = $DB->insert_record('quiz_attempts', $attempt);
-    // Log the new attempt.
-    if ($attempt->preview) {
-        add_to_log($quizobj->get_courseid(), 'quiz', 'preview', 'view.php?id='.$quizobj->get_cmid(),
-                   $quizobj->get_quizid(), $quizobj->get_cmid());
-    } else {
-        add_to_log($quizobj->get_courseid(), 'quiz', 'attempt', 'review.php?attempt='.$attempt->id,
-                   $quizobj->get_quizid(), $quizobj->get_cmid());
-    }
-    return $attempt;
-}
 
-/**
- * Fire an event to tell the rest of Moodle a quiz attempt has started.
- *
- * @param object $attempt
- * @param quiz   $quizobj
- */
-function quiz_fire_attempt_started_event($attempt, $quizobj) {
-    // Trigger event.
-    $eventdata = array();
-    $eventdata['context'] = $quizobj->get_context();
-    $eventdata['courseid'] = $quizobj->get_courseid();
-    $eventdata['relateduserid'] = $attempt->userid;
-    $eventdata['objectid'] = $attempt->id;
-    $event = \mod_quiz\event\attempt_started::create($eventdata);
+    // Params used by the events below.
+    $params = array(
+        'objectid' => $attempt->id,
+        'relateduserid' => $attempt->userid,
+        'courseid' => $quizobj->get_courseid(),
+        'context' => $quizobj->get_context()
+    );
+    // Decide which event we are using.
+    if ($attempt->preview) {
+        $params['other'] = array(
+            'quizid' => $quizobj->get_quizid()
+        );
+        $event = \mod_quiz\event\attempt_preview_started::create($params);
+    } else {
+        $event = \mod_quiz\event\attempt_started::create($params);
+
+    }
+
+    // Trigger the event.
     $event->add_record_snapshot('quiz', $quizobj->get_quiz());
     $event->add_record_snapshot('quiz_attempts', $attempt);
     $event->trigger();
+
+    return $attempt;
 }
 
 /**
@@ -340,8 +354,26 @@ function quiz_delete_attempt($attempt, $quiz) {
         return;
     }
 
+    if (!isset($quiz->cmid)) {
+        $cm = get_coursemodule_from_instance('quiz', $quiz->id, $quiz->course);
+        $quiz->cmid = $cm->id;
+    }
+
     question_engine::delete_questions_usage_by_activity($attempt->uniqueid);
     $DB->delete_records('quiz_attempts', array('id' => $attempt->id));
+
+    // Log the deletion of the attempt.
+    $params = array(
+        'objectid' => $attempt->id,
+        'relateduserid' => $attempt->userid,
+        'context' => context_module::instance($quiz->cmid),
+        'other' => array(
+            'quizid' => $quiz->id
+        )
+    );
+    $event = \mod_quiz\event\attempt_deleted::create($params);
+    $event->add_record_snapshot('quiz_attempts', $attempt);
+    $event->trigger();
 
     // Search quiz_attempts for other instances by this user.
     // If none, then delete record for this quiz, this user from quiz_grades
@@ -386,126 +418,34 @@ function quiz_has_attempts($quizid) {
 // Functions to do with quiz layout and pages //////////////////////////////////
 
 /**
- * Returns a comma separated list of question ids for the quiz
- *
- * @param string $layout The string representing the quiz layout. Each page is
- *      represented as a comma separated list of question ids and 0 indicating
- *      page breaks. So 5,2,0,3,0 means questions 5 and 2 on page 1 and question
- *      3 on page 2
- * @return string comma separated list of question ids, without page breaks.
+ * Repaginate the questions in a quiz
+ * @param int $quizid the id of the quiz to repaginate.
+ * @param int $slotsperpage number of items to put on each page. 0 means unlimited.
  */
-function quiz_questions_in_quiz($layout) {
-    $questions = str_replace(',0', '', quiz_clean_layout($layout, true));
-    if ($questions === '0') {
-        return '';
-    } else {
-        return $questions;
-    }
-}
+function quiz_repaginate_questions($quizid, $slotsperpage) {
+    global $DB;
+    $trans = $DB->start_delegated_transaction();
 
-/**
- * Returns the number of pages in a quiz layout
- *
- * @param string $layout The string representing the quiz layout. Always ends in ,0
- * @return int The number of pages in the quiz.
- */
-function quiz_number_of_pages($layout) {
-    return substr_count(',' . $layout, ',0');
-}
+    $slots = $DB->get_records('quiz_slots', array('quizid' => $quizid),
+            'slot');
 
-/**
- * Returns the number of questions in the quiz layout
- *
- * @param string $layout the string representing the quiz layout.
- * @return int The number of questions in the quiz.
- */
-function quiz_number_of_questions_in_quiz($layout) {
-    $layout = quiz_questions_in_quiz(quiz_clean_layout($layout));
-    $count = substr_count($layout, ',');
-    if ($layout !== '') {
-        $count++;
-    }
-    return $count;
-}
-
-/**
- * Re-paginates the quiz layout
- *
- * @param string $layout  The string representing the quiz layout. If there is
- *      if there is any doubt about the quality of the input data, call
- *      quiz_clean_layout before you call this function.
- * @param int $perpage The number of questions per page
- * @param bool $shuffle Should the questions be reordered randomly?
- * @return string the new layout string
- */
-function quiz_repaginate($layout, $perpage, $shuffle = false) {
-    $questions = quiz_questions_in_quiz($layout);
-    if (!$questions) {
-        return '0';
-    }
-
-    $questions = explode(',', quiz_questions_in_quiz($layout));
-    if ($shuffle) {
-        shuffle($questions);
-    }
-
-    $onthispage = 0;
-    $layout = array();
-    foreach ($questions as $question) {
-        if ($perpage and $onthispage >= $perpage) {
-            $layout[] = 0;
-            $onthispage = 0;
+    $currentpage = 1;
+    $slotsonthispage = 0;
+    foreach ($slots as $slot) {
+        if ($slotsonthispage && $slotsonthispage == $slotsperpage) {
+            $currentpage += 1;
+            $slotsonthispage = 0;
         }
-        $layout[] = $question;
-        $onthispage += 1;
+        if ($slot->page != $currentpage) {
+            $DB->set_field('quiz_slots', 'page', $currentpage, array('id' => $slot->id));
+        }
+        $slotsonthispage += 1;
     }
 
-    $layout[] = 0;
-    return implode(',', $layout);
+    $trans->allow_commit();
 }
 
 // Functions to do with quiz grades ////////////////////////////////////////////
-
-/**
- * Creates an array of maximum grades for a quiz
- *
- * The grades are extracted from the quiz_question_instances table.
- * @param object $quiz The quiz settings.
- * @return array of grades indexed by question id. These are the maximum
- *      possible grades that students can achieve for each of the questions.
- */
-function quiz_get_all_question_grades($quiz) {
-    global $CFG, $DB;
-
-    $questionlist = quiz_questions_in_quiz($quiz->questions);
-    if (empty($questionlist)) {
-        return array();
-    }
-
-    $params = array($quiz->id);
-    $wheresql = '';
-    if (!is_null($questionlist)) {
-        list($usql, $question_params) = $DB->get_in_or_equal(explode(',', $questionlist));
-        $wheresql = " AND question $usql ";
-        $params = array_merge($params, $question_params);
-    }
-
-    $instances = $DB->get_records_sql("SELECT question, grade, id
-                                    FROM {quiz_question_instances}
-                                    WHERE quiz = ? $wheresql", $params);
-
-    $list = explode(",", $questionlist);
-    $grades = array();
-
-    foreach ($list as $qid) {
-        if (isset($instances[$qid])) {
-            $grades[$qid] = $instances[$qid]->grade;
-        } else {
-            $grades[$qid] = 1;
-        }
-    }
-    return $grades;
-}
 
 /**
  * Convert the raw grade stored in $attempt into a grade out of the maximum
@@ -601,9 +541,9 @@ function quiz_update_sumgrades($quiz) {
 
     $sql = 'UPDATE {quiz}
             SET sumgrades = COALESCE((
-                SELECT SUM(grade)
-                FROM {quiz_question_instances}
-                WHERE quiz = {quiz}.id
+                SELECT SUM(maxmark)
+                FROM {quiz_slots}
+                WHERE quizid = {quiz}.id
             ), 0)
             WHERE id = ?';
     $DB->execute($sql, array($quiz->id));
@@ -1180,6 +1120,20 @@ function quiz_get_user_image_options() {
 }
 
 /**
+ * Get the choices to offer for the 'Questions per page' option.
+ * @return array int => string.
+ */
+function quiz_questions_per_page_options() {
+    $pageoptions = array();
+    $pageoptions[0] = get_string('neverallononepage', 'quiz');
+    $pageoptions[1] = get_string('everyquestion', 'quiz');
+    for ($i = 2; $i <= QUIZ_MAX_QPP_OPTION; ++$i) {
+        $pageoptions[$i] = get_string('everynquestions', 'quiz', $i);
+    }
+    return $pageoptions;
+}
+
+/**
  * Get the human-readable name for a quiz attempt state.
  * @param string $state one of the state constants like {@link quiz_attempt::IN_PROGRESS}.
  * @return string The lang string to describe that state.
@@ -1291,27 +1245,12 @@ function quiz_question_preview_url($quiz, $question) {
  * @return the HTML for a preview question icon.
  */
 function quiz_question_preview_button($quiz, $question, $label = false) {
-    global $CFG, $OUTPUT;
+    global $PAGE;
     if (!question_has_capability_on($question, 'use', $question->category)) {
         return '';
     }
 
-    $url = quiz_question_preview_url($quiz, $question);
-
-    // Do we want a label?
-    $strpreviewlabel = '';
-    if ($label) {
-        $strpreviewlabel = get_string('preview', 'quiz');
-    }
-
-    // Build the icon.
-    $strpreviewquestion = get_string('previewquestion', 'quiz');
-    $image = $OUTPUT->pix_icon('t/preview', $strpreviewquestion);
-
-    $action = new popup_action('click', $url, 'questionpreview',
-            question_preview_popup_params());
-
-    return $OUTPUT->action_link($url, $image, $action, array('title' => $strpreviewquestion));
+    return $PAGE->get_renderer('mod_quiz', 'edit')->question_preview_icon($quiz, $question, $label);
 }
 
 /**
@@ -1436,73 +1375,6 @@ function quiz_get_combined_reviewoptions($quiz, $attempts) {
         $alloptions->marks = min($alloptions->marks, $attemptoptions->marks);
     }
     return array($someoptions, $alloptions);
-}
-
-/**
- * Clean the question layout from various possible anomalies:
- * - Remove consecutive ","'s
- * - Remove duplicate question id's
- * - Remove extra "," from beginning and end
- * - Finally, add a ",0" in the end if there is none
- *
- * @param $string $layout the quiz layout to clean up, usually from $quiz->questions.
- * @param bool $removeemptypages If true, remove empty pages from the quiz. False by default.
- * @return $string the cleaned-up layout
- */
-function quiz_clean_layout($layout, $removeemptypages = false) {
-    // Remove repeated ','s. This can happen when a restore fails to find the right
-    // id to relink to.
-    $layout = preg_replace('/,{2,}/', ',', trim($layout, ','));
-
-    // Remove duplicate question ids.
-    $layout = explode(',', $layout);
-    $cleanerlayout = array();
-    $seen = array();
-    foreach ($layout as $item) {
-        if ($item == 0) {
-            $cleanerlayout[] = '0';
-        } else if (!in_array($item, $seen)) {
-            $cleanerlayout[] = $item;
-            $seen[] = $item;
-        }
-    }
-
-    if ($removeemptypages) {
-        // Avoid duplicate page breaks.
-        $layout = $cleanerlayout;
-        $cleanerlayout = array();
-        $stripfollowingbreaks = true; // Ensure breaks are stripped from the start.
-        foreach ($layout as $item) {
-            if ($stripfollowingbreaks && $item == 0) {
-                continue;
-            }
-            $cleanerlayout[] = $item;
-            $stripfollowingbreaks = $item == 0;
-        }
-    }
-
-    // Add a page break at the end if there is none.
-    if (end($cleanerlayout) !== '0') {
-        $cleanerlayout[] = '0';
-    }
-
-    return implode(',', $cleanerlayout);
-}
-
-/**
- * Get the slot for a question with a particular id.
- * @param object $quiz the quiz settings.
- * @param int $questionid the of a question in the quiz.
- * @return int the corresponding slot. Null if the question is not in the quiz.
- */
-function quiz_get_slot_for_question($quiz, $questionid) {
-    $questionids = quiz_questions_in_quiz($quiz->questions);
-    foreach (explode(',', $questionids) as $key => $id) {
-        if ($id == $questionid) {
-            return $key + 1;
-        }
-    }
-    return null;
 }
 
 // Functions for sending notification messages /////////////////////////////////
@@ -1674,52 +1546,47 @@ function quiz_send_notification_messages($course, $quiz, $attempt, $context, $cm
 /**
  * Send the notification message when a quiz attempt becomes overdue.
  *
- * @param object $course the course
- * @param object $quiz the quiz
- * @param object $attempt this attempt just finished
- * @param object $context the quiz context
- * @param object $cm the coursemodule for this quiz
+ * @param quiz_attempt $attemptobj all the data about the quiz attempt.
  */
-function quiz_send_overdue_message($course, $quiz, $attempt, $context, $cm) {
+function quiz_send_overdue_message($attemptobj) {
     global $CFG, $DB;
 
-    // Do nothing if required objects not present.
-    if (empty($course) or empty($quiz) or empty($attempt) or empty($context)) {
-        throw new coding_exception('$course, $quiz, $attempt, $context and $cm must all be set.');
+    $submitter = $DB->get_record('user', array('id' => $attemptobj->get_userid()), '*', MUST_EXIST);
+
+    if (!$attemptobj->has_capability('mod/quiz:emailwarnoverdue', $submitter->id, false)) {
+        return; // Message not required.
     }
 
-    $submitter = $DB->get_record('user', array('id' => $attempt->userid), '*', MUST_EXIST);
-
-    if (!has_capability('mod/quiz:emailwarnoverdue', $context, $submitter, false)) {
+    if (!$attemptobj->has_response_to_at_least_one_graded_question()) {
         return; // Message not required.
     }
 
     // Prepare lots of useful information that admins might want to include in
     // the email message.
-    $quizname = format_string($quiz->name);
+    $quizname = format_string($attemptobj->get_quiz_name());
 
     $deadlines = array();
-    if ($quiz->timelimit) {
-        $deadlines[] = $attempt->timestart + $quiz->timelimit;
+    if ($attemptobj->get_quiz()->timelimit) {
+        $deadlines[] = $attemptobj->get_attempt()->timestart + $attemptobj->get_quiz()->timelimit;
     }
-    if ($quiz->timeclose) {
-        $deadlines[] = $quiz->timeclose;
+    if ($attemptobj->get_quiz()->timeclose) {
+        $deadlines[] = $attemptobj->get_quiz()->timeclose;
     }
     $duedate = min($deadlines);
-    $graceend = $duedate + $quiz->graceperiod;
+    $graceend = $duedate + $attemptobj->get_quiz()->graceperiod;
 
     $a = new stdClass();
     // Course info.
-    $a->coursename         = $course->fullname;
-    $a->courseshortname    = $course->shortname;
+    $a->coursename         = format_string($attemptobj->get_course()->fullname);
+    $a->courseshortname    = format_string($attemptobj->get_course()->shortname);
     // Quiz info.
     $a->quizname           = $quizname;
-    $a->quizurl            = $CFG->wwwroot . '/mod/quiz/view.php?id=' . $cm->id;
+    $a->quizurl            = $attemptobj->view_url();
     $a->quizlink           = '<a href="' . $a->quizurl . '">' . $quizname . '</a>';
     // Attempt info.
-    $a->attemptduedate    = userdate($duedate);
+    $a->attemptduedate     = userdate($duedate);
     $a->attemptgraceend    = userdate($graceend);
-    $a->attemptsummaryurl  = $CFG->wwwroot . '/mod/quiz/summary.php?attempt=' . $attempt->id;
+    $a->attemptsummaryurl  = $attemptobj->summary_url()->out(false);
     $a->attemptsummarylink = '<a href="' . $a->attemptsummaryurl . '">' . $quizname . ' review</a>';
     // Student's info.
     $a->studentidnumber    = $submitter->idnumber;
@@ -1768,33 +1635,12 @@ function quiz_attempt_submitted_handler($event) {
         return true;
     }
 
-    return quiz_send_notification_messages($course, $quiz, $attempt,
-            context_module::instance($cm->id), $cm);
-}
-
-/**
- * Handle the quiz_attempt_overdue event.
- *
- * For quizzes with applicable settings, this sends a message to the user, reminding
- * them that they forgot to submit, and that they have another chance to do so.
- *
- * @param object $event the event object.
- */
-function quiz_attempt_overdue_handler($event) {
-    global $DB;
-
-    $course  = $DB->get_record('course', array('id' => $event->courseid));
-    $attempt = $event->get_record_snapshot('quiz_attempts', $event->objectid);
-    $quiz    = $event->get_record_snapshot('quiz', $attempt->quiz);
-    $cm      = get_coursemodule_from_id('quiz', $event->get_context()->instanceid, $event->courseid);
-
-    if (!($course && $quiz && $cm && $attempt)) {
-        // Something has been deleted since the event was raised. Therefore, the
-        // event is no longer relevant.
-        return true;
+    // Update completion state.
+    $completion = new completion_info($course);
+    if ($completion->is_enabled($cm) && ($quiz->completionattemptsexhausted || $quiz->completionpass)) {
+        $completion->update_state($cm, COMPLETION_COMPLETE, $event->userid);
     }
-
-    return quiz_send_overdue_message($course, $quiz, $attempt,
+    return quiz_send_notification_messages($course, $quiz, $attempt,
             context_module::instance($cm->id), $cm);
 }
 
@@ -1996,5 +1842,204 @@ class qubaids_for_quiz extends qubaid_join {
         }
 
         parent::__construct('{quiz_attempts} quiza', 'quiza.uniqueid', $where, $params);
+    }
+}
+
+/**
+ * Creates a textual representation of a question for display.
+ *
+ * @param object $question A question object from the database questions table
+ * @param bool $showicon If true, show the question's icon with the question. False by default.
+ * @param bool $showquestiontext If true (default), show question text after question name.
+ *       If false, show only question name.
+ * @return string
+ */
+function quiz_question_tostring($question, $showicon = false, $showquestiontext = true) {
+    $result = '';
+
+    $name = shorten_text(format_string($question->name), 200);
+    if ($showicon) {
+        $name .= print_question_icon($question) . ' ' . $name;
+    }
+    $result .= html_writer::span($name, 'questionname');
+
+    if ($showquestiontext) {
+        $questiontext = question_utils::to_plain_text($question->questiontext,
+                $question->questiontextformat, array('noclean' => true, 'para' => false));
+        $questiontext = shorten_text($questiontext, 200);
+        if ($questiontext) {
+            $result .= ' ' . html_writer::span(s($questiontext), 'questiontext');
+        }
+    }
+
+    return $result;
+}
+
+/**
+ * Verify that the question exists, and the user has permission to use it.
+ * Does not return. Throws an exception if the question cannot be used.
+ * @param int $questionid The id of the question.
+ */
+function quiz_require_question_use($questionid) {
+    global $DB;
+    $question = $DB->get_record('question', array('id' => $questionid), '*', MUST_EXIST);
+    question_require_capability_on($question, 'use');
+}
+
+/**
+ * Verify that the question exists, and the user has permission to use it.
+ * @param object $quiz the quiz settings.
+ * @param int $slot which question in the quiz to test.
+ * @return bool whether the user can use this question.
+ */
+function quiz_has_question_use($quiz, $slot) {
+    global $DB;
+    $question = $DB->get_record_sql("
+            SELECT q.*
+              FROM {quiz_slots} slot
+              JOIN {question} q ON q.id = slot.questionid
+             WHERE slot.quizid = ? AND slot.slot = ?", array($quiz->id, $slot));
+    if (!$question) {
+        return false;
+    }
+    return question_has_capability_on($question, 'use');
+}
+
+/**
+ * Add a question to a quiz
+ *
+ * Adds a question to a quiz by updating $quiz as well as the
+ * quiz and quiz_slots tables. It also adds a page break if required.
+ * @param int $questionid The id of the question to be added
+ * @param object $quiz The extended quiz object as used by edit.php
+ *      This is updated by this function
+ * @param int $page Which page in quiz to add the question on. If 0 (default),
+ *      add at the end
+ * @param float $maxmark The maximum mark to set for this question. (Optional,
+ *      defaults to question.defaultmark.
+ * @return bool false if the question was already in the quiz
+ */
+function quiz_add_quiz_question($questionid, $quiz, $page = 0, $maxmark = null) {
+    global $DB;
+    $slots = $DB->get_records('quiz_slots', array('quizid' => $quiz->id),
+            'slot', 'questionid, slot, page, id');
+    if (array_key_exists($questionid, $slots)) {
+        return false;
+    }
+
+    $trans = $DB->start_delegated_transaction();
+
+    $maxpage = 1;
+    $numonlastpage = 0;
+    foreach ($slots as $slot) {
+        if ($slot->page > $maxpage) {
+            $maxpage = $slot->page;
+            $numonlastpage = 1;
+        } else {
+            $numonlastpage += 1;
+        }
+    }
+
+    // Add the new question instance.
+    $slot = new stdClass();
+    $slot->quizid = $quiz->id;
+    $slot->questionid = $questionid;
+
+    if ($maxmark !== null) {
+        $slot->maxmark = $maxmark;
+    } else {
+        $slot->maxmark = $DB->get_field('question', 'defaultmark', array('id' => $questionid));
+    }
+
+    if (is_int($page) && $page >= 1) {
+        // Adding on a given page.
+        $lastslotbefore = 0;
+        foreach (array_reverse($slots) as $otherslot) {
+            if ($otherslot->page > $page) {
+                $DB->set_field('quiz_slots', 'slot', $otherslot->slot + 1, array('id' => $otherslot->id));
+            } else {
+                $lastslotbefore = $otherslot->slot;
+                break;
+            }
+        }
+        $slot->slot = $lastslotbefore + 1;
+        $slot->page = min($page, $maxpage + 1);
+
+    } else {
+        $lastslot = end($slots);
+        if ($lastslot) {
+            $slot->slot = $lastslot->slot + 1;
+        } else {
+            $slot->slot = 1;
+        }
+        if ($quiz->questionsperpage && $numonlastpage >= $quiz->questionsperpage) {
+            $slot->page = $maxpage + 1;
+        } else {
+            $slot->page = $maxpage;
+        }
+    }
+
+    $DB->insert_record('quiz_slots', $slot);
+    $trans->allow_commit();
+}
+
+/**
+ * Add a random question to the quiz at a given point.
+ * @param object $quiz the quiz settings.
+ * @param int $addonpage the page on which to add the question.
+ * @param int $categoryid the question category to add the question from.
+ * @param int $number the number of random questions to add.
+ * @param bool $includesubcategories whether to include questoins from subcategories.
+ */
+function quiz_add_random_questions($quiz, $addonpage, $categoryid, $number,
+        $includesubcategories) {
+    global $DB;
+
+    $category = $DB->get_record('question_categories', array('id' => $categoryid));
+    if (!$category) {
+        print_error('invalidcategoryid', 'error');
+    }
+
+    $catcontext = context::instance_by_id($category->contextid);
+    require_capability('moodle/question:useall', $catcontext);
+
+    // Find existing random questions in this category that are
+    // not used by any quiz.
+    if ($existingquestions = $DB->get_records_sql(
+            "SELECT q.id, q.qtype FROM {question} q
+            WHERE qtype = 'random'
+                AND category = ?
+                AND " . $DB->sql_compare_text('questiontext') . " = ?
+                AND NOT EXISTS (
+                        SELECT *
+                          FROM {quiz_slots}
+                         WHERE questionid = q.id)
+            ORDER BY id", array($category->id, ($includesubcategories ? '1' : '0')))) {
+            // Take as many of these as needed.
+        while (($existingquestion = array_shift($existingquestions)) && $number > 0) {
+            quiz_add_quiz_question($existingquestion->id, $quiz, $addonpage);
+            $number -= 1;
+        }
+    }
+
+    if ($number <= 0) {
+        return;
+    }
+
+    // More random questions are needed, create them.
+    for ($i = 0; $i < $number; $i += 1) {
+        $form = new stdClass();
+        $form->questiontext = array('text' => ($includesubcategories ? '1' : '0'), 'format' => 0);
+        $form->category = $category->id . ',' . $category->contextid;
+        $form->defaultmark = 1;
+        $form->hidden = 1;
+        $form->stamp = make_unique_id_code(); // Set the unique code (not to be changed).
+        $question = new stdClass();
+        $question->qtype = 'random';
+        $question = question_bank::get_qtype('random')->save_question($question, $form);
+        if (!isset($question->id)) {
+            print_error('cannotinsertrandomquestion', 'quiz');
+        }
+        quiz_add_quiz_question($question->id, $quiz, $addonpage);
     }
 }

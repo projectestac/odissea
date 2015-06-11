@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_calculated', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['additem'] = 'Agregar ítem';
 $string['addmoreanswerblanks'] = 'Agregar otra respuesta en blanco.';
 $string['addsets'] = 'Agregar conjunto(s)';
 $string['answerdisplay'] = 'Mostrar';
-$string['answerformula'] = 'Fórmula para la respuesta {$a}';
+$string['answerformula'] = 'Fórmula para respuesta {$a}';
 $string['answerhdr'] = 'Respuesta';
 $string['answerstoleranceparam'] = 'Parámetros de tolerancia en las respuestas';
 $string['anyvalue'] = 'Cualquier valor';

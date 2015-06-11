@@ -121,7 +121,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $CFG->svgicons = true;
 
         // Verify new install contains expected defaults.
-        $this->assertSame('standard', $CFG->theme);
+        $this->assertSame('clean', $CFG->theme);
         $this->assertEquals(1, $CFG->slasharguments);
         $this->assertEquals(1, $CFG->themerev);
         $this->assertEquals(0, $CFG->themedesignermode);
@@ -150,7 +150,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         // Try legacy picture == 1.
         $user1->picture = 1;
         $up1 = new user_picture($user1);
-        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/standard/f2?rev=1', $up1->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/clean/f2?rev=1', $up1->get_url($page, $renderer)->out(false));
         $user1->picture = 11;
 
         // Try valid user with picture when user context is not cached - 1 query expected.
@@ -158,7 +158,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $reads = $DB->perf_get_reads();
         $up1 = new user_picture($user1);
         $this->assertEquals($reads, $DB->perf_get_reads());
-        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/standard/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/clean/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
         $this->assertEquals($reads+1, $DB->perf_get_reads());
 
         // Try valid user with contextid hint - no queries expected.
@@ -167,7 +167,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $reads = $DB->perf_get_reads();
         $up1 = new user_picture($user1);
         $this->assertEquals($reads, $DB->perf_get_reads());
-        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/standard/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/clean/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
         $this->assertEquals($reads, $DB->perf_get_reads());
 
         // Try valid user without image - no queries expected.
@@ -175,7 +175,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $reads = $DB->perf_get_reads();
         $up2 = new user_picture($user2);
         $this->assertEquals($reads, $DB->perf_get_reads());
-        $this->assertSame($CFG->wwwroot.'/theme/image.php/standard/core/1/u/f2', $up2->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/theme/image.php/clean/core/1/u/f2', $up2->get_url($page, $renderer)->out(false));
         $this->assertEquals($reads, $DB->perf_get_reads());
 
         // Try guessing of deleted users - no queries expected.
@@ -184,7 +184,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $reads = $DB->perf_get_reads();
         $up3 = new user_picture($user3);
         $this->assertEquals($reads, $DB->perf_get_reads());
-        $this->assertSame($CFG->wwwroot.'/theme/image.php/standard/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/theme/image.php/clean/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
         $this->assertEquals($reads, $DB->perf_get_reads());
 
         // Try incorrectly deleted users (with valid email and pciture flag) - some DB reads expected.
@@ -193,7 +193,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $reads = $DB->perf_get_reads();
         $up3 = new user_picture($user3);
         $this->assertEquals($reads, $DB->perf_get_reads());
-        $this->assertSame($CFG->wwwroot.'/theme/image.php/standard/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/theme/image.php/clean/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
         $this->assertGreaterThan($reads, $DB->perf_get_reads());
 
         // Test gravatar.
@@ -203,7 +203,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $user3->email = 'deleted';
         $user3->picture = 0;
         $up3 = new user_picture($user3);
-        $this->assertSame($CFG->wwwroot.'/theme/image.php/standard/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/theme/image.php/clean/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
 
         // Verify defaults to misteryman (mm).
         $up2 = new user_picture($user2);
@@ -215,57 +215,58 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $this->assertSame('http://www.gravatar.com/avatar/ab53a2911ddf9b4817ac01ddcd3d975f?s=35&d=http%3A%2F%2Fwww.example.com%2Fmoodle%2Fpix%2Fu%2Ff2.png', $up2->get_url($page, $renderer)->out(false));
         // Uploaded image takes precedence before gravatar.
         $up1 = new user_picture($user1);
-        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/standard/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/clean/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
 
         // Https version.
         $CFG->httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot);
 
         $up1 = new user_picture($user1);
-        $this->assertSame($CFG->httpswwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/standard/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->httpswwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/clean/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
 
         $up3 = new user_picture($user3);
-        $this->assertSame($CFG->httpswwwroot.'/theme/image.php/standard/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->httpswwwroot.'/theme/image.php/clean/core/1/u/f2', $up3->get_url($page, $renderer)->out(false));
 
         $up2 = new user_picture($user2);
         $this->assertSame('https://secure.gravatar.com/avatar/ab53a2911ddf9b4817ac01ddcd3d975f?s=35&d=https%3A%2F%2Fwww.example.com%2Fmoodle%2Fpix%2Fu%2Ff2.png', $up2->get_url($page, $renderer)->out(false));
 
+        // TODO MDL-44792 Rewrite those tests to use a fixture.
         // Now test gravatar with one theme having own images (afterburner).
-        $CFG->httpswwwroot = $CFG->wwwroot;
-        $this->assertFileExists("$CFG->dirroot/theme/afterburner/config.php");
-        set_config('theme', 'afterburner');
-        $page = new moodle_page();
-        $page->set_url('/user/profile.php');
-        $page->set_context(context_system::instance());
-        $renderer = $page->get_renderer('core');
+        // $CFG->httpswwwroot = $CFG->wwwroot;
+        // $this->assertFileExists("$CFG->dirroot/theme/afterburner/config.php");
+        // set_config('theme', 'afterburner');
+        // $page = new moodle_page();
+        // $page->set_url('/user/profile.php');
+        // $page->set_context(context_system::instance());
+        // $renderer = $page->get_renderer('core');
 
-        $up2 = new user_picture($user2);
-        $this->assertEquals('http://www.gravatar.com/avatar/ab53a2911ddf9b4817ac01ddcd3d975f?s=35&d=http%3A%2F%2Fwww.example.com%2Fmoodle%2Ftheme%2Fafterburner%2Fpix_core%2Fu%2Ff2.png', $up2->get_url($page, $renderer)->out(false));
+        // $up2 = new user_picture($user2);
+        // $this->assertEquals('http://www.gravatar.com/avatar/ab53a2911ddf9b4817ac01ddcd3d975f?s=35&d=http%3A%2F%2Fwww.example.com%2Fmoodle%2Ftheme%2Fafterburner%2Fpix_core%2Fu%2Ff2.png', $up2->get_url($page, $renderer)->out(false));
 
-        // Https version.
-        $CFG->httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot);
+        // // Https version.
+        // $CFG->httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot);
 
-        $up2 = new user_picture($user2);
-        $this->assertSame('https://secure.gravatar.com/avatar/ab53a2911ddf9b4817ac01ddcd3d975f?s=35&d=https%3A%2F%2Fwww.example.com%2Fmoodle%2Ftheme%2Fafterburner%2Fpix_core%2Fu%2Ff2.png', $up2->get_url($page, $renderer)->out(false));
+        // $up2 = new user_picture($user2);
+        // $this->assertSame('https://secure.gravatar.com/avatar/ab53a2911ddf9b4817ac01ddcd3d975f?s=35&d=https%3A%2F%2Fwww.example.com%2Fmoodle%2Ftheme%2Fafterburner%2Fpix_core%2Fu%2Ff2.png', $up2->get_url($page, $renderer)->out(false));
         // End of gravatar tests.
 
         // Test themed images.
-        set_config('enablegravatar', 0);
-        $this->assertFileExists("$CFG->dirroot/theme/formal_white/config.php"); // Use any other theme.
-        set_config('theme', 'formal_white');
-        $CFG->httpswwwroot = $CFG->wwwroot;
-        $page = new moodle_page();
-        $page->set_url('/user/profile.php');
-        $page->set_context(context_system::instance());
-        $renderer = $page->get_renderer('core');
+        // set_config('enablegravatar', 0);
+        // $this->assertFileExists("$CFG->dirroot/theme/formal_white/config.php"); // Use any other theme.
+        // set_config('theme', 'formal_white');
+        // $CFG->httpswwwroot = $CFG->wwwroot;
+        // $page = new moodle_page();
+        // $page->set_url('/user/profile.php');
+        // $page->set_context(context_system::instance());
+        // $renderer = $page->get_renderer('core');
 
-        $up1 = new user_picture($user1);
-        $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/formal_white/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
+        // $up1 = new user_picture($user1);
+        // $this->assertSame($CFG->wwwroot.'/pluginfile.php/'.$context1->id.'/user/icon/formal_white/f2?rev=11', $up1->get_url($page, $renderer)->out(false));
 
-        $up2 = new user_picture($user2);
-        $this->assertSame($CFG->wwwroot.'/theme/image.php/formal_white/core/1/u/f2', $up2->get_url($page, $renderer)->out(false));
+        // $up2 = new user_picture($user2);
+        // $this->assertSame($CFG->wwwroot.'/theme/image.php/formal_white/core/1/u/f2', $up2->get_url($page, $renderer)->out(false));
 
         // Test non-slashargument images.
-        set_config('theme', 'standard');
+        set_config('theme', 'clean');
         $CFG->httpswwwroot = $CFG->wwwroot;
         $CFG->slasharguments = 0;
         $page = new moodle_page();
@@ -274,7 +275,7 @@ class core_outputcomponents_testcase extends advanced_testcase {
         $renderer = $page->get_renderer('core');
 
         $up3 = new user_picture($user3);
-        $this->assertSame($CFG->wwwroot.'/theme/image.php?theme=standard&component=core&rev=1&image=u%2Ff2', $up3->get_url($page, $renderer)->out(false));
+        $this->assertSame($CFG->wwwroot.'/theme/image.php?theme=clean&component=core&rev=1&image=u%2Ff2', $up3->get_url($page, $renderer)->out(false));
     }
 
     public function test_empty_menu() {
@@ -291,7 +292,7 @@ Moodle community|http://moodle.org
 --Moodle Tracker|http://tracker.moodle.org
 --Moodle Docs|http://docs.moodle.org
 -Moodle News|http://moodle.org/news
-Moodle company
+Moodle company||Moodle trust pty
 -Hosting|http://moodle.com/hosting|Commercial hosting
 -Support|http://moodle.com/support|Commercial support
 EOF;
@@ -313,11 +314,13 @@ EOF;
         $this->assertEquals('http://moodle.org', $itemurl->out());
         $this->assertEquals($item->get_text(), $item->get_title()); // Implicit title.
 
+        /** @var custom_menu_item $item */
         $item = array_shift($firstlevel);
         $this->assertTrue($item->has_children());
         $this->assertCount(2, $item->get_children());
         $this->assertSame('Moodle company', $item->get_text());
         $this->assertNull($item->get_url());
+        $this->assertSame('Moodle trust pty', $item->get_title());
 
         $children = $item->get_children();
         $subitem = array_shift($children);
@@ -326,65 +329,81 @@ EOF;
         $this->assertSame('Commercial hosting', $subitem->get_title());
     }
 
-    public function test_multilang_support() {
+    public function test_custommenu_mulitlang() {
         $definition = <<<EOF
 Start|http://school.info
 Info
 -English|http://school.info/en|Information in English|en
+--Nested under English
+--I will be lost|||de
 -Deutsch|http://school.info/de|Informationen in deutscher Sprache|de,de_du,de_kids
+--Nested under Deutsch
+--I will be lost|||en
+kontaktieren Sie uns|contactus.php||de
+Contact us|contactus.php||en
+EOF;
+        $definitionen = <<<EOF
+Start|http://school.info
+Info
+-English|http://school.info/en|Information in English|en
+--Nested under English
+Contact us|contactus.php||en
+EOF;
+        $definitionde = <<<EOF
+Start|http://school.info
+Info
+-Deutsch|http://school.info/de|Informationen in deutscher Sprache|de,de_du,de_kids
+--Nested under Deutsch
+kontaktieren Sie uns|contactus.php||de
 EOF;
 
-        // The menu without multilang support.
-        $menu = new custom_menu($definition);
-        $this->assertTrue($menu->has_children());
-        $this->assertCount(2, $menu->get_children());
+        $definitiondedu = <<<EOF
+Start|http://school.info
+Info
+-Deutsch|http://school.info/de|Informationen in deutscher Sprache|de,de_du,de_kids
+--Nested under Deutsch
+EOF;
 
-        $children = $menu->get_children();
-        $infomenu = array_pop($children);
-        $this->assertTrue($infomenu->has_children());
-        $children = $infomenu->get_children();
-        $this->assertCount(2, $children);
+        $parsed = $this->custommenu_out(new custom_menu($definition));
+        $parseden = $this->custommenu_out(new custom_menu($definition, 'en'));
+        $parsedde = $this->custommenu_out(new custom_menu($definition, 'de'));
+        $parseddedu = $this->custommenu_out(new custom_menu($definition, 'de_du'));
 
-        $children = $infomenu->get_children();
-        $langspecinfo = array_shift($children);
-        $this->assertSame('Information in English', $langspecinfo->get_title());
+        $actualen = $this->custommenu_out(new custom_menu($definitionen, 'en'));
+        $actualde = $this->custommenu_out(new custom_menu($definitionde, 'de'));
+        $actualdedu = $this->custommenu_out(new custom_menu($definitiondedu, 'de_du'));
 
-        // Same menu for English language selected.
-        $menu = new custom_menu($definition, 'en');
-        $this->assertTrue($menu->has_children());
-        $this->assertCount(2, $menu->get_children());
+        $this->assertSame($actualen, $parseden, 'The parsed English menu does not match the expected English menu');
+        $this->assertSame($actualde, $parsedde, 'The parsed German menu does not match the expected German menu');
+        $this->assertSame($actualdedu, $parseddedu, 'The parsed German [Du] menu does not match the expected German [Du] menu');
 
-        $children = $menu->get_children();
-        $infomenu = array_pop($children);
-        $this->assertTrue($infomenu->has_children());
-        $this->assertCount(1, $infomenu->get_children());
+        $this->assertNotSame($parsed, $parsedde, 'The menu without language is the same as the German menu. They should differ!');
+        $this->assertNotSame($parsed, $parseden, 'The menu without language is the same as the English menu. They should differ!');
+        $this->assertNotSame($parsed, $parseddedu, 'The menu without language is the same as the German [Du] menu. They should differ!');
+        $this->assertNotSame($parseden, $parsedde, 'The English menu is the same as the German menu. They should differ!');
+        $this->assertNotSame($parseden, $parseddedu, 'The English menu is the same as the German [Du] menu. They should differ!');
+        $this->assertNotSame($parseddedu, $parsedde, 'The German [Du] menu is the same as the German menu. They should differ!');
+    }
 
-        $children = $infomenu->get_children();
-        $langspecinfo = array_shift($children);
-        $this->assertSame('Information in English', $langspecinfo->get_title());
-
-        // Same menu for German (de_du) language selected.
-        $menu = new custom_menu($definition, 'de_du');
-        $this->assertTrue($menu->has_children());
-        $this->assertCount(2, $menu->get_children());
-
-        $children = $menu->get_children();
-        $infomenu = array_pop($children);
-        $this->assertTrue($infomenu->has_children());
-        $this->assertCount(1, $infomenu->get_children());
-
-        $children = $infomenu->get_children();
-        $langspecinfo = array_shift($children);
-        $this->assertSame('Informationen in deutscher Sprache', $langspecinfo->get_title());
-
-        // Same menu for Czech language selected.
-        $menu = new custom_menu($definition, 'cs');
-        $this->assertTrue($menu->has_children());
-        $this->assertCount(2, $menu->get_children());
-
-        $children = $infomenu->get_children();
-        $infomenu = array_pop( $children);
-        $this->assertFalse($infomenu->has_children());
+    /**
+     * Support function that takes a custom_menu_item and converts it to a string.
+     *
+     * @param custom_menu_item $item
+     * @param int $depth
+     * @return string
+     */
+    protected function custommenu_out(custom_menu_item $item, $depth = 0) {
+        $str = str_repeat('-', $depth);
+        $str .= $item->get_text();
+        $str .= '|' . $item->get_url();
+        $str .= '|' . $item->get_title();
+        if ($item->has_children()) {
+            $str .= '|' . count($item->get_children());
+            foreach ($item->get_children() as $child) {
+                $str .= "\n" . $this->custommenu_out($child, $depth + 1);
+            }
+        }
+        return $str;
     }
 
     public function test_prepare() {

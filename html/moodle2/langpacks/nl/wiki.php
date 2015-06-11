@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,17 @@ $string['editing'] = 'Bewerk wiki-pagina';
 $string['editingcomment'] = 'Bewerk opmerking';
 $string['editingpage'] = 'Pagina \'{$a}\' aan het bewerken';
 $string['editsection'] = 'bewerk';
+$string['eventdiffviewed'] = 'Wiki-verschil tussen pagina\'s bekeken';
+$string['eventhistoryviewed'] = 'Wiki-geschiedenis bekeken';
+$string['eventmapviewed'] = 'Wiki-paginakaart bekeken';
+$string['eventpagecreated'] = 'Wiki-pagina gemaakt';
+$string['eventpagedeleted'] = 'Wiki-pagina verwijderd';
+$string['eventpagelocksdeleted'] = 'Wiki-paginablokkering verwijderd';
+$string['eventpageupdated'] = 'Wiki-pagina aangepast';
+$string['eventpageversiondeleted'] = 'Wiki-paginaversie verwijderd';
+$string['eventpageviewed'] = 'Wiki-pagina bekeken';
+$string['eventversionrestored'] = 'Wikiversie teruggezet';
+$string['eventversionviewed'] = 'Wiki paginaversie bekeken';
 $string['filenotuploadederror'] = 'Bestand \'{$a}\' kon niet correct geüpload worden.';
 $string['files'] = 'Bestanden';
 $string['filtername'] = 'Wiki automatisch pagina linken';

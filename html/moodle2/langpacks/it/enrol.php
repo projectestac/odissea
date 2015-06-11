@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['enroltimeend'] = 'L\'iscrizione termina';
 $string['enroltimestart'] = 'L\'iscrizione inizia';
 $string['enrolusage'] = 'Istanze / iscrizioni';
 $string['enrolusers'] = 'Iscrivi utenti';
+$string['enrolxusers'] = 'Iscrivi {$a} utenti';
 $string['errajaxfailedenrol'] = 'Non è stato possibile iscrivere l\'utente';
 $string['errajaxsearch'] = 'Si è verificato un errore durante la ricerca degli utenti';
 $string['erroreditenrolment'] = 'Si è verificato un errore durante il tentativo di modifica di una iscrizione';
@@ -90,6 +91,7 @@ $string['extremovedsuspend'] = 'Disabilita l\'iscrizione al corso';
 $string['extremovedsuspendnoroles'] = 'Disabilita le iscrizioni al corso e rimuovi i ruoli';
 $string['extremovedunenrol'] = 'Disiscrivi gli utenti dal corso';
 $string['finishenrollingusers'] = 'Termina iscrizione utenti';
+$string['foundxcohorts'] = 'Trovati {$a} gruppi globali';
 $string['instanceeditselfwarning'] = 'Attenzione:';
 $string['instanceeditselfwarningtext'] = 'Sei iscritto al corso tramite questo metodo di iscrizione, eventuali modifiche possono avere impatti sul tuo accesso al corso.';
 $string['invalidenrolinstance'] = 'L\'istanza dell\'iscrizione non è valida';

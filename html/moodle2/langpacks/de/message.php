@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Diskussion';
 $string['emailmessages'] = 'Mitteilungen per E-Mail versenden, wenn ich offline bin';
 $string['emailtagline'] = 'Diese E-Mail enthält die Kopie einer Mitteilung von \'{$a->sitename}\'. Zur Antwort gehen Sie zu {$a->url}.';
 $string['emptysearchstring'] = 'Sie müssen einen Suchbegriff eingeben';
+$string['enabled'] = 'Aktiviert';
 $string['errorcallingprocessor'] = 'Fehler bei der angegebenen Ausgabe';
 $string['errortranslatingdefault'] = 'Fehler in der Plugin-Einstellung, stattdessen werden die Systemeinstellungen benutzt.';
+$string['eventmessagecontactadded'] = 'Nachichtenkontakt hinzugefügt';
+$string['eventmessagecontactblocked'] = 'Nachichtenkontakt blockiert';
+$string['eventmessagecontactremoved'] = 'Nachichtenkontakt entfernt';
+$string['eventmessagecontactunblocked'] = 'Nachichtenkontakt freigegeben';
+$string['eventmessagesent'] = 'Nachricht gesendet';
+$string['eventmessageviewed'] = 'Angesehene Mitteilung';
 $string['forced'] = 'Zwingend';
 $string['formorethan'] = 'Für mehr als';
 $string['gotomessages'] = 'Zu Nachrichten gehen';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Kontakt aktivieren';
 $string['unreadmessages'] = 'Ungelesene Mitteilungen ({$a}) ';
 $string['unreadnewmessage'] = 'Neue Mitteilung von {$a}';
 $string['unreadnewmessages'] = 'Neue Mitteilungen ({$a})';
-$string['unreadnewnotification'] = 'Neue Mitteilung';
-$string['unreadnewnotifications'] = 'Neue Mitteilungen ({$a})';
 $string['userisblockingyou'] = 'Diese Person hat Mitteilungen von Ihnen gesperrt.';
 $string['userisblockingyounoncontact'] = '{$a} akzeptiert ausschließlich Personen aus seiner Kontaktliste.';
 $string['userssearchresults'] = 'Gefundene Nutzer/innen: {$a} ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filters', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,9 +37,11 @@ $string['categoryrole'] = 'Papel na categoria';
 $string['contains'] = 'contém';
 $string['content'] = 'Conteúdo';
 $string['contentandheadings'] = 'Conteúdo e cabeçalhos';
+$string['coursecategory'] = 'Categoria da disciplina';
 $string['courserole'] = 'Papel na disciplina';
 $string['courserolelabel'] = '{$a->label} é {$a->rolename} na {$a->coursename} desde {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} erro: a disciplina {$a->coursename} não existe';
+$string['coursevalue'] = 'Designação da disciplina';
 $string['datelabelisafter'] = '{$a->label} é posterior a {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} é anterior a {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} está entre {$a->after} e {$a->before}';
@@ -63,6 +65,7 @@ $string['isempty'] = 'está vazio';
 $string['isequalto'] = 'é igual a';
 $string['isnotdefined'] = 'não está definido';
 $string['isnotequalto'] = 'não é igual a';
+$string['limiterfor'] = 'limitador do campo {$a}';
 $string['neveraccessed'] = 'Nunca acedido';
 $string['nevermodified'] = 'Nunca alterado';
 $string['newfilter'] = 'Novo filtro';
@@ -70,6 +73,8 @@ $string['nofiltersenabled'] = 'Não foi ativado nenhum módulo de filtro neste s
 $string['off'] = 'Desligado';
 $string['offbutavailable'] = 'Desligado, mas disponível';
 $string['on'] = 'Ligado';
+$string['profilefilterfield'] = 'Nome do campo de perfil';
+$string['profilefilterlimiter'] = 'Condição do campo de perfil';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Remover todos os filtros';
@@ -79,3 +84,4 @@ $string['startswith'] = 'começa com';
 $string['tablenosave'] = 'As alterações na tabela acima são gravadas automaticamente.';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = 'valor de {$a}';

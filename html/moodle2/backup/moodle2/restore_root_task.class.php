@@ -195,7 +195,7 @@ class restore_root_task extends restore_task {
         $activities->add_dependency($badges);
         $users->add_dependency($badges);
 
-        // Define Calendar events (dependent of users)
+        // Define Calendar events.
         $defaultvalue = false;                      // Safer default
         $changeable = false;
         if (isset($rootsettings['calendarevents']) && $rootsettings['calendarevents']) { // Only enabled when available
@@ -206,7 +206,6 @@ class restore_root_task extends restore_task {
         $events->set_ui(new backup_setting_ui_checkbox($events, get_string('rootsettingcalendarevents', 'backup')));
         $events->get_ui()->set_changeable($changeable);
         $this->add_setting($events);
-        $users->add_dependency($events);
 
         // Define completion (dependent of users)
         $defaultvalue = false;                      // Safer default
@@ -246,5 +245,9 @@ class restore_root_task extends restore_task {
         $gradehistories->get_ui()->set_changeable($changeable);
         $this->add_setting($gradehistories);
         $users->add_dependency($gradehistories);
+
+        // The restore does not process the grade histories when some activities are ignored.
+        // So let's define a dependency to prevent false expectations from our users.
+        $activities->add_dependency($gradehistories);
     }
 }

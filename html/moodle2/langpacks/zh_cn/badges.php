@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,16 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actions'] = '动作';
-$string['activate'] = '启用';
-$string['activatesuccess'] = '成功启用勋章。';
-$string['addbadgecriteria'] = '添加授勋规则';
+$string['actions'] = '行为';
+$string['activate'] = '启用访问';
+$string['activatesuccess'] = '访问徽章被成功启用。';
+$string['addbadgecriteria'] = '添加徽章规则';
 $string['addcourse'] = '添加课程';
-$string['addcourse_help'] = '选择所有本勋章需要添加的课程。按 CTRL 键完成多选操作。';
-$string['addcriteria'] = '添加规则';
-$string['addcriteriatext'] = '请从下拉菜单中选择某一项来添加授勋规则。';
+$string['addcourse_help'] = '选出徽章所要求的所有课程，按 CTRL 键可以选择多个项目。';
+$string['addcriteria'] = '添加判断规则';
+$string['addcriteriatext'] = '要开始添加判断规则，请从下拉菜单中选择一项。';
 $string['addtobackpack'] = '添加进勋章背包';
+$string['adminonly'] = '本页面只限制系统管理员访问';
 $string['after'] = '自从授予之后。';
+$string['aggregationmethod'] = '聚合方法';
 $string['all'] = '全部';
 $string['allmethod'] = '所有选中的条件全部满足';
 $string['allmethodactivity'] = '所有选中的活动全部完成';
@@ -53,28 +55,43 @@ $string['anymethodactivity'] = '任一个选中的活动完成';
 $string['anymethodcourseset'] = '任一个选中的课程完成';
 $string['anymethodmanual'] = '任一个选中的角色授予此勋章';
 $string['anymethodprofile'] = '只要有一项个人信息项得到完善';
+$string['archivebadge'] = '你要删除徽章 \'{$a}\', 同时保留已经发行出去的徽章?';
+$string['archiveconfirm'] = '删除并且保留已经发行出去的徽章';
+$string['archivehelp'] = '<P>这个选项表示徽章将被标记为“退休”，将不再出现在产品列表。用户将不再能够获得这枚徽章，然而现有的徽章者仍然可以在他们的页面显示这个徽章并将它推到外部背包。</P >
+<P>如果你想你的用户获得了徽章是不是完全删除徽章选择此选项重要。</P >';
 $string['attachment'] = '附件发送';
 $string['attachment_help'] = '如果启用此项，授予的勋章会被作为附件发送到获得者的邮箱';
 $string['award'] = '授予勋章';
 $string['awardedtoyou'] = '授予日期';
+$string['awardoncron'] = '进入徽章被成功启用。太多的用户可以立即获得这枚徽章。为了确保网站的性能，这一行动将需要一些时间来处理。';
 $string['awards'] = '获得人';
+$string['backpackavailability'] = '外部验证徽章';
+$string['backpackconnection'] = '背包连接';
 $string['backpackdetails'] = '背包设置';
 $string['backpackemail'] = 'Email';
+$string['backpackemail_help'] = '你的背包关联的电子邮件地址。当你连接，任何徽章赢得了在本网站将与此有关的电子邮件地址。';
+$string['backpackimport'] = '徽章导入设置';
+$string['backpackimport_help'] = '背包连接成功建立后，从你的背包徽章可以显示在您的“我的徽章”页面，您的个人资料页。
+在这方面，你可以选择收藏徽章从你的背包，你想在你的剖面显示。';
 $string['badgedetails'] = '勋章详情';
 $string['badgeimage'] = '图片';
 $string['badgeimage_help'] = '此图片在授予此勋章时使用。
 
 更换图片时，浏览并选择一张图片文件（JPG或者PNG格式），然后再点击“保存更改”按钮。图片文件会被裁切成正方形并且按需要进行缩放。';
 $string['badgeprivacysetting'] = '勋章私密设置';
+$string['badgeprivacysetting_help'] = '你获得的徽章可以显示在您的帐户页面。这个设置允许你自动设定的新赚取徽章的可见性。
+你仍然可以控制个人徽章隐私设置您的“我的徽章”页面。';
 $string['badgeprivacysetting_str'] = '自动在我的个人资料页面上展示我荣获的勋章';
 $string['badgesalt'] = '获得者 email 的哈希盐';
 $string['badgesalt_desc'] = '提供一个哈希串给勋章背包服务中心，以便确保勋章获得者不会暴露他们的 email 地址。此项设计只能填入数字和字母。';
+$string['badgesdisabled'] = '徽章没有被启用。';
 $string['badgesearned'] = '获得勋章数： {$a}';
 $string['badgesettings'] = '勋章设置';
 $string['badgestatus_0'] = '禁用';
 $string['badgestatus_1'] = '启用';
 $string['badgestatus_2'] = '禁用';
 $string['badgestatus_3'] = '启用';
+$string['badgestatus_4'] = '存档';
 $string['badgestoearn'] = '可用的勋章数： {$a}';
 $string['badgesview'] = '课程勋章';
 $string['badgeurl'] = '授予的勋章链接';
@@ -84,16 +101,19 @@ $string['bdetails'] = '编辑';
 $string['bmessage'] = '消息';
 $string['boverview'] = '概览';
 $string['bydate'] = '完成日期不迟于';
+$string['clearsettings'] = '清除设置';
 $string['completioninfo'] = '该勋章是因为符合下面的条件而被授予的：';
 $string['completionnotenabled'] = '当前课程没有启用课程进度跟踪，故它不能纳入授勋规则当中。课程进度跟踪特性可以在课程设置里面启用，如果在课程设置里面看不到这项，说明网站没有启用这一特性，可以用管理员身份进入：网站管理->高级特性启用它。';
 $string['configenablebadges'] = '启用此项特性你将可以创建勋章并授予给网站的用户。';
 $string['configuremessage'] = '勋章消息';
 $string['connect'] = '连接';
 $string['connected'] = '已连接';
+$string['connecting'] = '连接中';
 $string['contact'] = '联系';
 $string['contact_help'] = '授勋机构的 email';
 $string['copyof'] = '复制的 {$a}';
 $string['coursebadges'] = '勋章';
+$string['coursebadgesdisabled'] = '课程徽章没有这被启用';
 $string['coursecompletion'] = '用户必须完成此课程。';
 $string['create'] = '创建勋章';
 $string['createbutton'] = '创建勋章';
@@ -104,11 +124,16 @@ $string['criteria_1'] = '完成活动';
 $string['criteria_1_help'] = '允许某勋章被授予给完成课程中的某些活动的用户。';
 $string['criteria_2'] = '由角色手工授予';
 $string['criteria_2_help'] = '由网站或者当前课程的某一特定用户角色手工来授予用户此勋章。';
+$string['criteria_3'] = '社会参与';
+$string['criteria_3_help'] = '社会';
 $string['criteria_4'] = '完成课程';
 $string['criteria_4_help'] = '允许勋章被授予给完成课程的用户。此规则可以包含附加参数，例如至少获得的成绩分数和完成日期不迟于指定日期等。';
 $string['criteria_5'] = '完成一个课程集';
 $string['criteria_5_help'] = '允许勋章被授予给完成课程的用户。各门课程可以附带参数，例如至少获得的成绩分数和完成日期不迟于指定日期等。';
 $string['criteria_6'] = '个人信息完善';
+$string['criteria_6_help'] = '允许一个徽章是用户完成他们某些领域授予简介。你可以从默认和自定义配置文件域是提供给用户选择。';
+$string['criteriacreated'] = '徽章标准创建成功';
+$string['criteriadeleted'] = '徽章标准删除成功';
 $string['criteria_descr'] = '符合下列条件的用户可以获得此勋章：';
 $string['criteria_descr_0'] = '符合下列 <strong>{$a}</strong> 条件的用户可以获得此勋章。';
 $string['criteria_descr_1'] = '下列活动 <strong>{$a}</strong> 得到完成：';
@@ -116,6 +141,7 @@ $string['criteria_descr_2'] = '由以下角色中 <strong>{$a}</strong> 授予�
 $string['criteria_descr_4'] = '用户必须完成课程';
 $string['criteria_descr_5'] = '下列课程 <strong>{$a}</strong> 得到完成：';
 $string['criteria_descr_6'] = '下列个人信息项 <strong>{$a}</strong> 得到完善：';
+$string['criteria_descr_bydate'] = '创建于 <em>{$a}</em>';
 $string['criteria_descr_grade'] = '并获得不低于 <em>{$a}</em> 分的成绩';
 $string['criteria_descr_short0'] = '完成 <strong>{$a}</strong> :';
 $string['criteria_descr_short1'] = '完成 <strong>{$a}</strong> :';
@@ -133,6 +159,9 @@ $string['criteria_descr_single_short2'] = '授予人：';
 $string['criteria_descr_single_short4'] = '完成课程';
 $string['criteria_descr_single_short5'] = '完成：';
 $string['criteria_descr_single_short6'] = '完成：';
+$string['criteriasummary'] = '标准概述';
+$string['criteriaupdated'] = '徽章标准更新成功';
+$string['criterror'] = '当前参数分配';
 $string['currentimage'] = '图片';
 $string['currentstatus'] = '当前状态：';
 $string['dateawarded'] = '授予日期';
@@ -147,15 +176,47 @@ $string['defaultissuername_desc'] = '授勋机构的名称。';
 $string['delbadge'] = '删除勋章';
 $string['delconfirm'] = '您确定要删除勋章“{$a}”？';
 $string['delcritconfirm'] = '您确定需要删除这条授勋规则吗？';
+$string['deletehelp'] = '<P>完全删除一个徽章，意味着所有的信息和条件的记录将被永久删除。谁赢得了这枚徽章的用户将不再能够访问和显示在个人资料页。</P >
+<P>注：谁赢得了这枚徽章，已经把它推到外部背包的用户，仍将在其外部的背包有这个徽章。然而，他们将不能访问标准和依据网页链接到本网站。</P >';
+$string['delparamconfirm'] = '您确定要删除此参数？';
 $string['description'] = '描述';
+$string['disconnect'] = '失去连接';
+$string['donotaward'] = '目前，这枚徽章是不活跃的，所以它不能被授予用户。如果你想获得这枚徽章，请设置其状态为活跃。';
+$string['editsettings'] = '编辑设置';
 $string['enablebadges'] = '启用勋章';
+$string['error:backpackdatainvalid'] = '从背包返回的数据是无效的。';
+$string['error:backpackloginfailed'] = '你无法连接外部背包， 由于以下原因：{$a}';
 $string['error:backpacknotavailable'] = '您的站点无法通过 Internet 访问，故此站点下授予的勋章均不能被外部勋章背包服务中心确认。';
+$string['error:backpackproblem'] = '连接到你的背包服务提供商出现问题，请稍后再试。';
+$string['error:badjson'] = '尝试的连接返回了无效的数据。';
+$string['error:cannotact'] = '不能激活徽章。';
+$string['error:cannotawardbadge'] = '不能奖徽章用户。';
+$string['error:clone'] = '不能克隆徽章。';
+$string['error:connectionunknownreason'] = '连接失败，但是没有原因。';
+$string['error:duplicatename'] = '徽章的名称已经在系统中存在';
+$string['error:externalbadgedoesntexist'] = '徽章没有被找到';
+$string['error:guestuseraccess'] = '你当前使用访问身份登录，如果查看徽章，你需要使用你的账号登录系统。';
 $string['error:invalidbadgeurl'] = '授勋机构 URL 格式错误。';
+$string['error:invalidcriteriatype'] = '无效的标准类型';
 $string['error:invalidexpiredate'] = '过期时间必须是将来某个时间。';
+$string['error:invalidexpireperiod'] = '有效期不能为负或为0。';
 $string['error:noactivities'] = '此课程中没有启用进度跟踪的活动。';
+$string['error:noassertion'] = '角色没有被声明，在完成登录过程前，你可以关闭这个对话框。';
 $string['error:nocourses'] = '当前站点所有课程均未启用进度跟踪，故没能显示。课程进度跟踪特性可以在课程设置里面启用。';
 $string['error:nopermissiontoview'] = '您没有查看勋章获得者的权限';
+$string['error:nosuchbadge'] = '徽章ID： {$a} 不存在';
+$string['error:nosuchcourse'] = '警告：这个课程不再可用。';
+$string['error:nosuchfield'] = '警告：这个用户配置文件字段不再可用。';
+$string['error:nosuchmod'] = '警告：这个活动不再可用。';
+$string['error:nosuchrole'] = '警告：这个角色不在可用。';
+$string['error:nosuchuser'] = '与此电子邮件地址的用户没有一个与当前的背包供应商匹配的帐户。';
 $string['error:notifycoursedate'] = '警告：在课程开始日期之前，与课程和活动相关的勋章不能被授予。';
+$string['error:parameter'] = '警告：为保证正确的徽章发放流程，至少有一个参数应该被选择。';
+$string['error:personaneedsjs'] = '目前，JavaScript需要连接到你的背包。如果可以，请允许执行JavaScript脚本，并刷新本页面。';
+$string['error:requesterror'] = '连接请求失败（错误代码：{$a}）';
+$string['error:requesttimeout'] = '连接请求在它完成之前超时！';
+$string['error:save'] = '不能保存徽章！';
+$string['error:userdeleted'] = '{$a->user} (不存在于 {$a->site}站点中)';
 $string['evidence'] = '凭据';
 $string['existingrecipients'] = '已经存在的勋章获得者';
 $string['expired'] = '已过期';
@@ -170,14 +231,23 @@ $string['expirydate_help'] = '可选项，可以是一个指定的日期，也�
 $string['externalbadges'] = '我在其它网站获得的勋章';
 $string['externalbadges_help'] = '此处展示您外部背包中的勋章。';
 $string['externalbadgesp'] = '在其它网站获得的勋章：';
+$string['externalconnectto'] = '为显示外部徽章，你需要<a href="{$a}">连接到背包</a>.';
 $string['fixed'] = '固定日期';
 $string['hidden'] = '隐藏';
+$string['hiddenbadge'] = '抱歉，徽章的主要没有提供此信息。';
 $string['issuancedetails'] = '有效期';
 $string['issuedbadge'] = '授予的勋章信息';
 $string['issuerdetails'] = '授勋机构详情';
 $string['issuername'] = '授勋机构名称';
 $string['issuername_help'] = '授勋机构的名称。';
 $string['issuerurl'] = '授勋机构 URL';
+$string['localbadges'] = '我的徽章来源于 {$a} 站点。';
+$string['localbadgesh'] = '我的徽章来源于这个站点。';
+$string['localbadgesh_help'] = '所有徽章赢得了在此网站完成课程，课程活动，及其他要求。
+你可以管理你的徽章在这里让他们为你的页面公共的或私人的。
+您可以下载所有徽章或每个徽章分别保存在你的电脑。下载的徽章可以被添加到您的外部包服务。';
+$string['localbadgesp'] = '徽章来源于 {$a}:';
+$string['localconnectto'] = '分享这些徽章到外部网站，你需要< a href ="{$a}“>连接到背包</a>。';
 $string['makeprivate'] = '不公开';
 $string['makepublic'] = '公开';
 $string['managebadges'] = '勋章管理';
@@ -195,6 +265,9 @@ $string['never'] = '从不';
 $string['newbadge'] = '添加一个新勋章';
 $string['newimage'] = '更换图片';
 $string['noawards'] = '还没有人获得此勋章。';
+$string['nobackpack'] = '没有背包服务连接到这个帐户。<br />';
+$string['nobackpackbadges'] = '在你所选择的集合没有徽章。<a href="mybackpack.php">添加更多连接</a>。';
+$string['nobackpackcollections'] = '没有徽章的连接被选中。<a href="mybackpack.php">添加连接</a>。';
 $string['nobadges'] = '没有可用的勋章';
 $string['nocriteria'] = '此勋章还没有定义授勋规则。';
 $string['noexpiry'] = '此勋章永不过期。';

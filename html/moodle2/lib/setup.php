@@ -59,6 +59,85 @@ if (!isset($CFG)) {
 // it can not be anything else, there is no point in having this in config.php
 $CFG->dirroot = dirname(dirname(__FILE__));
 
+// File permissions on created directories in the $CFG->dataroot
+if (!isset($CFG->directorypermissions)) {
+    $CFG->directorypermissions = 02777;      // Must be octal (that's why it's here)
+}
+if (!isset($CFG->filepermissions)) {
+    $CFG->filepermissions = ($CFG->directorypermissions & 0666); // strip execute flags
+}
+// Better also set default umask because developers often forget to include directory
+// permissions in mkdir() and chmod() after creating new files.
+if (!isset($CFG->umaskpermissions)) {
+    $CFG->umaskpermissions = (($CFG->directorypermissions & 0777) ^ 0777);
+}
+umask($CFG->umaskpermissions);
+
+if (defined('BEHAT_SITE_RUNNING')) {
+    // We already switched to behat test site previously.
+
+} else if (!empty($CFG->behat_wwwroot) or !empty($CFG->behat_dataroot) or !empty($CFG->behat_prefix)) {
+    // The behat is configured on this server, we need to find out if this is the behat test
+    // site based on the URL used for access.
+    require_once(__DIR__ . '/../lib/behat/lib.php');
+    if (behat_is_test_site()) {
+        // Checking the integrity of the provided $CFG->behat_* vars and the
+        // selected wwwroot to prevent conflicts with production and phpunit environments.
+        behat_check_config_vars();
+
+        // Check that the directory does not contains other things.
+        if (!file_exists("$CFG->behat_dataroot/behattestdir.txt")) {
+            if ($dh = opendir($CFG->behat_dataroot)) {
+                while (($file = readdir($dh)) !== false) {
+                    if ($file === 'behat' or $file === '.' or $file === '..' or $file === '.DS_Store') {
+                        continue;
+                    }
+                    behat_error(BEHAT_EXITCODE_CONFIG, '$CFG->behat_dataroot directory is not empty, ensure this is the directory where you want to install behat test dataroot');
+                }
+                closedir($dh);
+                unset($dh);
+                unset($file);
+            }
+
+            if (defined('BEHAT_UTIL')) {
+                // Now we create dataroot directory structure for behat tests.
+                testing_initdataroot($CFG->behat_dataroot, 'behat');
+            } else {
+                behat_error(BEHAT_EXITCODE_INSTALL);
+            }
+        }
+
+        if (!defined('BEHAT_UTIL') and !defined('BEHAT_TEST')) {
+            // Somebody tries to access test site directly, tell them if not enabled.
+            if (!file_exists($CFG->behat_dataroot . '/behat/test_environment_enabled.txt')) {
+                behat_error(BEHAT_EXITCODE_CONFIG, 'Behat is configured but not enabled on this test site.');
+            }
+        }
+
+        // Constant used to inform that the behat test site is being used,
+        // this includes all the processes executed by the behat CLI command like
+        // the site reset, the steps executed by the browser drivers when simulating
+        // a user session and a real session when browsing manually to $CFG->behat_wwwroot
+        // like the browser driver does automatically.
+        // Different from BEHAT_TEST as only this last one can perform CLI
+        // actions like reset the site or use data generators.
+        define('BEHAT_SITE_RUNNING', true);
+
+        // Clean extra config.php settings.
+        behat_clean_init_config();
+
+        // Now we can begin switching $CFG->X for $CFG->behat_X.
+        $CFG->wwwroot = $CFG->behat_wwwroot;
+        $CFG->prefix = $CFG->behat_prefix;
+        $CFG->dataroot = $CFG->behat_dataroot;
+    }
+}
+
+// Force timezone to be Australia/Perth for behat tests, so we don't get time zone problems.
+if (defined('BEHAT_SITE_RUNNING') || defined('BEHAT_TEST') || defined('BEHAT_UTIL')) {
+    @date_default_timezone_set('Australia/Perth');
+}
+
 // Normalise dataroot - we do not want any symbolic links, trailing / or any other weirdness there
 if (!isset($CFG->dataroot)) {
     if (isset($_SERVER['REMOTE_ADDR'])) {
@@ -89,84 +168,6 @@ if (!isset($CFG->wwwroot) or $CFG->wwwroot === 'http://example.com/moodle') {
     }
     echo('Fatal error: $CFG->wwwroot is not configured! Exiting.'."\n");
     exit(1);
-}
-
-// Test environment is requested if:
-// * If $CFG->behat_switchcompletely has been set (maintains CLI scripts behaviour, which ATM is only preventive).
-// * If we are accessing though the built-in web server (cli-server).
-// * Behat is running (constant set hooking the behat init process before requiring config.php).
-// * If $CFG->behat_wwwroot has been set and the hostname/port match what the page was requested with.
-// Test environment is enabled if:
-// * User has previously enabled through admin/tool/behat/cli/util.php --enable or admin/tool/behat/cli/init.php
-// Both are required to switch to test mode
-if (!defined('BEHAT_SITE_RUNNING') && !empty($CFG->behat_dataroot) &&
-        !empty($CFG->behat_prefix) && file_exists($CFG->behat_dataroot)) {
-
-    // Only included if behat_* are set, it is not likely to be a production site.
-    require_once(__DIR__ . '/../lib/behat/lib.php');
-
-    $defaultbehatwwwroot = behat_get_wwwroot();
-
-    if (!empty($CFG->behat_switchcompletely) && php_sapi_name() !== 'cli') {
-        // Switch completely uses the production wwwroot as the test site URL.
-        $behatwwwroot = $defaultbehatwwwroot;
-
-    } elseif (php_sapi_name() === 'cli-server') {
-        // If we are using the built-in server we use the provided $CFG->behat_wwwroot
-        // value or the default one if $CFG->behat_wwwroot is not set, only if it matches
-        // the requested URL.
-        if (behat_is_requested_url($defaultbehatwwwroot)) {
-            $behatwwwroot = $defaultbehatwwwroot;
-        }
-
-    } elseif (defined('BEHAT_TEST')) {
-        // This is when moodle codebase runs through vendor/bin/behat, we "are not supposed"
-        // to need a wwwroot, but before using the production one we should set something else
-        // as an alternative.
-        $behatwwwroot = $defaultbehatwwwroot;
-
-    } elseif (!empty($CFG->behat_wwwroot) && !empty($_SERVER['HTTP_HOST'])) {
-        // If $CFG->behat_wwwroot was set and matches the requested URL we
-        // use $CFG->behat_wwwroot as our wwwroot.
-        if (behat_is_requested_url($CFG->behat_wwwroot)) {
-            $behatwwwroot = $CFG->behat_wwwroot;
-        }
-    }
-
-    // If we found a proper behatwwwroot then we consider the behat test as requested.
-    $testenvironmentrequested = !empty($behatwwwroot);
-
-    // Only switch to test environment if it has been enabled.
-    $CFG->behat_dataroot = realpath($CFG->behat_dataroot);
-    $testenvironmentenabled = file_exists($CFG->behat_dataroot . '/behat/test_environment_enabled.txt');
-
-    if ($testenvironmentenabled && $testenvironmentrequested) {
-
-        // Now we know which one will be our behat wwwroot.
-        $CFG->behat_wwwroot = $behatwwwroot;
-
-        // Checking the integrity of the provided $CFG->behat_* vars and the
-        // selected wwwroot to prevent conflicts with production and phpunit environments.
-        behat_check_config_vars();
-
-        // Constant used to inform that the behat test site is being used,
-        // this includes all the processes executed by the behat CLI command like
-        // the site reset, the steps executed by the browser drivers when simulating
-        // a user session and a real session when browsing manually to $CFG->behat_wwwroot
-        // like the browser driver does automatically.
-        // Different from BEHAT_TEST as only this last one can perform CLI
-        // actions like reset the site or use data generators.
-        define('BEHAT_SITE_RUNNING', true);
-
-        // Clean extra config.php settings.
-        behat_clean_init_config();
-
-        // Now we can begin switching $CFG->X for $CFG->behat_X.
-        $CFG->wwwroot = $CFG->behat_wwwroot;
-        $CFG->passwordsaltmain = 'moodle';
-        $CFG->prefix = $CFG->behat_prefix;
-        $CFG->dataroot = $CFG->behat_dataroot;
-    }
 }
 
 // Make sure there is some database table prefix.
@@ -308,6 +309,11 @@ if (defined('WEB_CRON_EMULATED_CLI')) {
     }
 }
 
+// All web service requests have WS_SERVER == true.
+if (!defined('WS_SERVER')) {
+    define('WS_SERVER', false);
+}
+
 // Detect CLI maintenance mode - this is useful when you need to mess with database, such as during upgrades
 if (file_exists("$CFG->dataroot/climaintenance.html")) {
     if (!CLI_SCRIPT) {
@@ -335,10 +341,10 @@ if (file_exists("$CFG->dataroot/climaintenance.html")) {
 
 if (CLI_SCRIPT) {
     // sometimes people use different PHP binary for web and CLI, make 100% sure they have the supported PHP version
-    if (version_compare(phpversion(), '5.3.3') < 0) {
+    if (version_compare(phpversion(), '5.4.4') < 0) {
         $phpversion = phpversion();
         // do NOT localise - lang strings would not work here and we CAN NOT move it to later place
-        echo "Moodle 2.5 or later requires at least PHP 5.3.3 (currently using version $phpversion).\n";
+        echo "Moodle 2.7 or later requires at least PHP 5.4.4 (currently using version $phpversion).\n";
         echo "Some servers may have multiple PHP versions installed, are you using the correct executable?\n";
         exit(1);
     }
@@ -349,23 +355,18 @@ if (!defined('AJAX_SCRIPT')) {
     define('AJAX_SCRIPT', false);
 }
 
-// File permissions on created directories in the $CFG->dataroot
-if (!isset($CFG->directorypermissions)) {
-    $CFG->directorypermissions = 02777;      // Must be octal (that's why it's here)
-}
-if (!isset($CFG->filepermissions)) {
-    $CFG->filepermissions = ($CFG->directorypermissions & 0666); // strip execute flags
-}
-// Better also set default umask because developers often forget to include directory
-// permissions in mkdir() and chmod() after creating new files.
-if (!isset($CFG->umaskpermissions)) {
-    $CFG->umaskpermissions = (($CFG->directorypermissions & 0777) ^ 0777);
-}
-umask($CFG->umaskpermissions);
-
 // Exact version of currently used yui2 and 3 library.
 $CFG->yui2version = '2.9.0';
-$CFG->yui3version = '3.13.0';
+$CFG->yui3version = '3.17.2';
+
+// Patching the upstream YUI release.
+// For important information on patching YUI modules, please see http://docs.moodle.org/dev/YUI/Patching.
+// If we need to patch a YUI modules between official YUI releases, the yuipatchlevel will need to be manually
+// incremented here. The module will also need to be listed in the yuipatchedmodules.
+// When upgrading to a subsequent version of YUI, these should be reset back to 0 and an empty array.
+$CFG->yuipatchlevel = 0;
+$CFG->yuipatchedmodules = array(
+);
 
 // Store settings from config.php in array in $CFG - we can use it later to detect problems and overrides.
 if (!isset($CFG->config_php_settings)) {
@@ -495,7 +496,7 @@ global $OUTPUT;
  * Full script path including all params, slash arguments, scheme and host.
  *
  * Note: Do NOT use for getting of current page URL or detection of https,
- * instead use $PAGE->url or strpos($CFG->httpswwwroot, 'https:') === 0
+ * instead use $PAGE->url or is_https().
  *
  * @global string $FULLME
  * @name $FULLME
@@ -714,11 +715,6 @@ if (!defined('NO_UPGRADE_CHECK') and isset($CFG->upgraderunning)) {
     }
 }
 
-// Turn on SQL logging if required
-if (!empty($CFG->logsql)) {
-    $DB->set_logging(true);
-}
-
 // enable circular reference collector in PHP 5.3,
 // it helps a lot when using large complex OOP structures such as in amos or gradebook
 if (function_exists('gc_enable')) {
@@ -751,39 +747,6 @@ ini_set('pcre.backtrack_limit', 20971520);  // 20 MB
 // Location of standard files
 $CFG->wordlist = $CFG->libdir .'/wordlist.txt';
 $CFG->moddata  = 'moddata';
-
-// A hack to get around magic_quotes_gpc being turned on
-// It is strongly recommended to disable "magic_quotes_gpc"!
-if (ini_get_bool('magic_quotes_gpc')) {
-    function stripslashes_deep($value) {
-        $value = is_array($value) ?
-                array_map('stripslashes_deep', $value) :
-                stripslashes($value);
-        return $value;
-    }
-    $_POST = array_map('stripslashes_deep', $_POST);
-    $_GET = array_map('stripslashes_deep', $_GET);
-    $_COOKIE = array_map('stripslashes_deep', $_COOKIE);
-    $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
-    if (!empty($_SERVER['REQUEST_URI'])) {
-        $_SERVER['REQUEST_URI'] = stripslashes($_SERVER['REQUEST_URI']);
-    }
-    if (!empty($_SERVER['QUERY_STRING'])) {
-        $_SERVER['QUERY_STRING'] = stripslashes($_SERVER['QUERY_STRING']);
-    }
-    if (!empty($_SERVER['HTTP_REFERER'])) {
-        $_SERVER['HTTP_REFERER'] = stripslashes($_SERVER['HTTP_REFERER']);
-    }
-   if (!empty($_SERVER['PATH_INFO'])) {
-        $_SERVER['PATH_INFO'] = stripslashes($_SERVER['PATH_INFO']);
-    }
-    if (!empty($_SERVER['PHP_SELF'])) {
-        $_SERVER['PHP_SELF'] = stripslashes($_SERVER['PHP_SELF']);
-    }
-    if (!empty($_SERVER['PATH_TRANSLATED'])) {
-        $_SERVER['PATH_TRANSLATED'] = stripslashes($_SERVER['PATH_TRANSLATED']);
-    }
-}
 
 // neutralise nasty chars in PHP_SELF
 if (isset($_SERVER['PHP_SELF'])) {
@@ -818,12 +781,16 @@ try {
 }
 // And the 'default' course - this will usually get reset later in require_login() etc.
 $COURSE = clone($SITE);
-/** @deprecated Id of the frontpage course, use $SITE->id instead */
+// Id of the frontpage course.
 define('SITEID', $SITE->id);
 
 // init session prevention flag - this is defined on pages that do not want session
 if (CLI_SCRIPT) {
     // no sessions in CLI scripts possible
+    define('NO_MOODLE_COOKIES', true);
+
+} else if (WS_SERVER) {
+    // No sessions possible in web services.
     define('NO_MOODLE_COOKIES', true);
 
 } else if (!defined('NO_MOODLE_COOKIES')) {
@@ -899,7 +866,7 @@ unset($urlthemename);
 
 // Ensure a valid theme is set.
 if (!isset($CFG->theme)) {
-    $CFG->theme = 'standard';
+    $CFG->theme = 'clean';
 }
 
 // Set language/locale of printed times.  If user has chosen a language that
@@ -914,6 +881,21 @@ if (isset($_GET['lang']) and ($lang = optional_param('lang', '', PARAM_SAFEDIR))
     }
 }
 unset($lang);
+
+// PARAM_SAFEDIR used instead of PARAM_LANG because using PARAM_LANG results
+// in an empty string being returned when a non-existant language is specified,
+// which would make it necessary to log out to undo the forcelang setting.
+// With PARAM_SAFEDIR, it's possible to specify ?forcelang=none to drop the forcelang effect.
+if ($forcelang = optional_param('forcelang', '', PARAM_SAFEDIR)) {
+    if (isloggedin()
+        && get_string_manager()->translation_exists($forcelang, false)
+        && has_capability('moodle/site:forcelanguage', context_system::instance())) {
+        $SESSION->forcelang = $forcelang;
+    } else if (isset($SESSION->forcelang)) {
+        unset($SESSION->forcelang);
+    }
+}
+unset($forcelang);
 
 setup_lang_from_browser();
 
@@ -1055,9 +1037,9 @@ if (PHPUNIT_TEST) {
 
 // // try to detect IE6 and prevent gzip because it is extremely buggy browser
 if (!empty($_SERVER['HTTP_USER_AGENT']) and strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 6') !== false) {
-    @ini_set('zlib.output_compression', 'Off');
+    ini_set('zlib.output_compression', 'Off');
     if (function_exists('apache_setenv')) {
-        @apache_setenv('no-gzip', 1);
+        apache_setenv('no-gzip', 1);
     }
 }
 

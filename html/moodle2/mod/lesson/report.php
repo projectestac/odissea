@@ -18,8 +18,7 @@
 /**
  * Displays the lesson statistics.
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or late
  **/
@@ -65,14 +64,13 @@ if (!empty($cm->groupingid)) {
             ORDER BY $sort";
 }
 
-if (! $students = $DB->get_records_sql($sql, $params)) {
+$students = $DB->get_recordset_sql($sql, $params);
+if (!$students->valid()) {
     $nothingtodisplay = true;
 }
 
 $url = new moodle_url('/mod/lesson/report.php', array('id'=>$id));
-if ($action !== 'reportoverview') {
-    $url->param('action', $action);
-}
+$url->param('action', $action);
 if ($pageid !== null) {
     $url->param('pageid', $pageid);
 }
@@ -84,7 +82,8 @@ if ($action == 'reportoverview') {
 
 $lessonoutput = $PAGE->get_renderer('mod_lesson');
 
-if (! $attempts = $DB->get_records('lesson_attempts', array('lessonid' => $lesson->id), 'timeseen')) {
+$attempts = $DB->get_recordset('lesson_attempts', array('lessonid' => $lesson->id), 'timeseen');
+if (!$attempts->valid()) {
     $nothingtodisplay = true;
 }
 
@@ -222,6 +221,7 @@ if ($action === 'delete') {
                                                                     "userid" => $attempt->userid);
         }
     }
+    $attempts->close();
     // set all the stats variables
     $numofattempts = 0;
     $avescore      = 0;
@@ -307,6 +307,7 @@ if ($action === 'delete') {
             $table->data[] = array($studentname, $attempts, $bestgrade."%");
         }
     }
+    $students->close();
     // print it all out !
     if (has_capability('mod/lesson:edit', $context)) {
         echo  "<form id=\"theform\" method=\"post\" action=\"report.php\">\n
@@ -465,6 +466,7 @@ if ($action === 'delete') {
         $options = new stdClass;
         $options->noclean = true;
         $options->overflowdiv = true;
+        $options->context = $context;
         $answerpage->contents = format_text($page->contents, $page->contentsformat, $options);
 
         $answerpage->qtype = $qtypes[$page->qtype].$page->option_description_string();
@@ -536,7 +538,7 @@ if ($action === 'delete') {
 
             $table->data[] = array(get_string("notcompleted", "lesson"));
         } else {
-            $user = $students[$userid];
+            $user = $DB->get_record('user', array('id' => $userid));
 
             $gradeinfo = lesson_grade($lesson, $try, $user->id);
 
@@ -585,7 +587,8 @@ if ($action === 'delete') {
                 $table->data[] = $modified;
             }
             if (isset($page->answerdata->response)) {
-                $table->data[] = array($fontstart.get_string("response", "lesson").": <br />".$fontend.$fontstart2.format_text($page->answerdata->response,$page->answerdata->responseformat,$formattextdefoptions).$fontend2, " ");
+                $table->data[] = array($fontstart.get_string("response", "lesson").": <br />".$fontend
+                        .$fontstart2.$page->answerdata->response.$fontend2, " ");
             }
             $table->data[] = array($page->answerdata->score, " ");
         } else {

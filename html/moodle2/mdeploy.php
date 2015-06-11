@@ -77,6 +77,7 @@ class backup_folder_exception extends Exception {}
 class zip_exception extends Exception {}
 class filesystem_exception extends Exception {}
 class checksum_exception extends Exception {}
+class invalid_setting_exception extends Exception {}
 
 
 // Various support classes /////////////////////////////////////////////////////
@@ -733,6 +734,12 @@ class worker extends singleton_pattern {
     /** @var string the full path to the log file */
     private $logfile = null;
 
+    /** @var array the whitelisted config options which can be queried. */
+    private $validconfigoptions = array(
+        'dirroot'       => true,
+        'dataroot'      => true,
+    );
+
     /**
      * Main - the one that actually does something
      */
@@ -1141,24 +1148,20 @@ class worker extends singleton_pattern {
      * Fetch environment settings.
      *
      * @param string $key The key to fetch
-     * @return mixed The value of the key if found, null if not found.
+     * @return mixed The value of the key if found.
+     * @throws invalid_setting_exception if the option is not set, or is invalid.
      */
     protected function get_env($key) {
         global $CFG;
 
-        switch ($key) {
-            case 'dataroot':
-                if (isset($CFG->dataroot)) {
-                    return $CFG->dataroot;
-                }
-                break;
-            case 'dirroot':
-                if (isset($CFG->dirroot)) {
-                    return $CFG->dirroot;
-                }
-                break;
+        if (array_key_exists($key, $this->validconfigoptions)) {
+            if (isset($CFG->$key)) {
+                return $CFG->$key;
+            }
+            throw new invalid_setting_exception("Requested environment setting '{$key}' is not currently set.");
+        } else {
+            throw new invalid_setting_exception("Requested environment setting '{$key}' is invalid.");
         }
-        return null;
     }
 
     /**

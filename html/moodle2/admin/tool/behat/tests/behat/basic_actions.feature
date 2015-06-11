@@ -11,7 +11,7 @@ Feature: Page contents assertions
     And I expand "Users" node
     And I follow "Groups"
     And I press "Create group"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Group name | I'm the name |
       | Group description | I'm the description |
     And I press "Save changes"
@@ -34,7 +34,7 @@ Feature: Page contents assertions
 
   @javascript
   Scenario: Locators inside specific DOM nodes using CSS selectors
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
     And I log in as "admin"
@@ -45,7 +45,7 @@ Feature: Page contents assertions
 
   @javascript
   Scenario: Locators inside specific DOM nodes using XPath
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
     And I log in as "admin"

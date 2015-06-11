@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'journal', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,9 +29,17 @@ $string['accessdenied'] = 'Acesso negado';
 $string['alwaysopen'] = 'Sempre aberto';
 $string['blankentry'] = 'Entrada em branco';
 $string['daysavailable'] = 'Dias disponíveis';
+$string['deadline'] = 'Dias abertos';
 $string['editingended'] = 'Período de edição terminou';
 $string['editingends'] = 'Período de edição termina';
 $string['entries'] = 'Entradas';
+$string['entry'] = 'Entrada';
+$string['evententriesviewed'] = 'Entradas de diário visualizadas';
+$string['evententryupdated'] = 'Entrada de diário atualizada';
+$string['eventfeedbackupdated'] = 'Comentários do diário atualizados';
+$string['eventjournalcreated'] = 'Diário criado';
+$string['eventjournaldeleted'] = 'Diário eliminado';
+$string['eventjournalviewed'] = 'Diário visualizado';
 $string['feedbackupdated'] = 'Comentário atualizados para {$a} entradas';
 $string['gradeingradebook'] = 'Nota atual na pauta';
 $string['journal:addentries'] = 'Adicionar entradas de diário';
@@ -51,6 +59,7 @@ $string['modulename'] = 'Diário';
 $string['modulename_help'] = 'A atividade de diário permite aos professores obter feedback dos alunos sobre um tópico específico';
 $string['modulenameplural'] = 'Diários';
 $string['newjournalentries'] = 'Novas entradas de diário';
+$string['nodeadline'] = 'Sempre aberto';
 $string['noentriesmanagers'] = 'Não existem professores';
 $string['noentry'] = 'Sem entrada';
 $string['noratinggiven'] = 'Não foi dada classificação';

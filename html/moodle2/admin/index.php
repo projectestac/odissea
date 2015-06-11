@@ -30,10 +30,10 @@ if (!file_exists('../config.php')) {
 }
 
 // Check that PHP is of a sufficient version as soon as possible
-if (version_compare(phpversion(), '5.3.3') < 0) {
+if (version_compare(phpversion(), '5.4.4') < 0) {
     $phpversion = phpversion();
     // do NOT localise - lang strings would not work here and we CAN NOT move it to later place
-    echo "Moodle 2.5 or later requires at least PHP 5.3.3 (currently using version $phpversion).<br />";
+    echo "Moodle 2.7 or later requires at least PHP 5.4.4 (currently using version $phpversion).<br />";
     echo "Please upgrade your server software or install older Moodle version.";
     die();
 }
@@ -124,10 +124,6 @@ $documentationlink = '<a href="http://docs.moodle.org/en/Installation">Installat
 
 if (ini_get_bool('session.auto_start')) {
     print_error('phpvaroff', 'debug', '', (object)array('name'=>'session.auto_start', 'link'=>$documentationlink));
-}
-
-if (ini_get_bool('magic_quotes_runtime')) {
-    print_error('phpvaroff', 'debug', '', (object)array('name'=>'magic_quotes_runtime', 'link'=>$documentationlink));
 }
 
 if (!ini_get_bool('file_uploads')) {
@@ -583,36 +579,42 @@ if (isset($SESSION->pluginuninstallreturn)) {
 // Print default admin page with notifications.
 $errorsdisplayed = defined('WARN_DISPLAY_ERRORS_ENABLED');
 
-$lastcron = $DB->get_field_sql('SELECT MAX(lastcron) FROM {modules}');
+// We make the assumption that at least one schedule task should run once per day.
+$lastcron = $DB->get_field_sql('SELECT MAX(lastruntime) FROM {task_scheduled}');
 $cronoverdue = ($lastcron < time() - 3600 * 24);
 $dbproblems = $DB->diagnose();
 $maintenancemode = !empty($CFG->maintenance_enabled);
 
-// Available updates for Moodle core
+// Available updates for Moodle core.
 $updateschecker = \core\update\checker::instance();
 $availableupdates = array();
-$availableupdates['core'] = $updateschecker->get_update_info('core',
-    array('minmaturity' => $CFG->updateminmaturity, 'notifybuilds' => $CFG->updatenotifybuilds));
+$availableupdatesfetch = null;
 
-// Available updates for contributed plugins
-$pluginman = core_plugin_manager::instance();
-foreach ($pluginman->get_plugins() as $plugintype => $plugintypeinstances) {
-    foreach ($plugintypeinstances as $pluginname => $plugininfo) {
-        if (!empty($plugininfo->availableupdates)) {
-            foreach ($plugininfo->availableupdates as $pluginavailableupdate) {
-                if ($pluginavailableupdate->version > $plugininfo->versiondisk) {
-                    if (!isset($availableupdates[$plugintype.'_'.$pluginname])) {
-                        $availableupdates[$plugintype.'_'.$pluginname] = array();
+if (empty($CFG->disableupdatenotifications)) {
+    // Only compute the update information when it is going to be displayed to the user.
+    $availableupdates['core'] = $updateschecker->get_update_info('core',
+        array('minmaturity' => $CFG->updateminmaturity, 'notifybuilds' => $CFG->updatenotifybuilds));
+
+    // Available updates for contributed plugins
+    $pluginman = core_plugin_manager::instance();
+    foreach ($pluginman->get_plugins() as $plugintype => $plugintypeinstances) {
+        foreach ($plugintypeinstances as $pluginname => $plugininfo) {
+            if (!empty($plugininfo->availableupdates)) {
+                foreach ($plugininfo->availableupdates as $pluginavailableupdate) {
+                    if ($pluginavailableupdate->version > $plugininfo->versiondisk) {
+                        if (!isset($availableupdates[$plugintype.'_'.$pluginname])) {
+                            $availableupdates[$plugintype.'_'.$pluginname] = array();
+                        }
+                        $availableupdates[$plugintype.'_'.$pluginname][] = $pluginavailableupdate;
                     }
-                    $availableupdates[$plugintype.'_'.$pluginname][] = $pluginavailableupdate;
                 }
             }
         }
     }
-}
 
-// The timestamp of the most recent check for available updates
-$availableupdatesfetch = $updateschecker->get_last_timefetched();
+    // The timestamp of the most recent check for available updates
+    $availableupdatesfetch = $updateschecker->get_last_timefetched();
+}
 
 $buggyiconvnomb = (!function_exists('mb_convert_encoding') and @iconv('UTF-8', 'UTF-8//IGNORE', '100'.chr(130).'€') !== '100€');
 //check if the site is registered on Moodle.org

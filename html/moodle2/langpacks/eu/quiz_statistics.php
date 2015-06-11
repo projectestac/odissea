@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,31 @@ $string['actualresponse'] = 'Oraingo ebazpena';
 $string['allattempts'] = 'saiakera guztiak';
 $string['allattemptsavg'] = 'Saiakera guztien batez bestekoak';
 $string['allattemptscount'] = 'Denera osorik kalifikatutako saiakera-kopurua';
+$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisno'] = '({$a->number}) "{$a->name}"';
+$string['analysisnovariant'] = '({$a->number}) "{$a->name}" {$a->variant}-(r)en aldaera';
 $string['analysisofresponses'] = 'Ebazpenen analisia';
-$string['analysisofresponsesfor'] = 'Ebazpenen analisia {$a}-rako.';
+$string['analysisofresponsesfor'] = 'Ebazpenen analisia {$a}-rako';
+$string['analysisvariant'] = '"{$a->name}" {$a->variant}-(r)en aldaera';
 $string['attempts'] = 'Saiakerak';
 $string['attemptsall'] = 'saiakera guztiak';
 $string['attemptsfirst'] = 'lehenengo saiakera';
 $string['backtoquizreport'] = 'Itzuli estatistika-txostenaren orri nagurira.';
 $string['calculatefrom'] = 'Kalkulatu estatistikak hemendik:';
+$string['calculatingallstats'] = 'Kalkulatzen galdetegiaren eta galderen estatistikak';
 $string['cic'] = 'Barne-tinkotasun koefizientea ({$a}-(r)entzat)';
 $string['completestatsfilename'] = 'estatistikaosoak';
 $string['count'] = 'Kopurua';
+$string['counttryno'] = 'Zenbatu {$a} Saiakera';
 $string['coursename'] = 'Ikastaroaren izena';
 $string['detailedanalysis'] = 'Galdera honetarako ebazpenen analisi zehatzagoa';
+$string['detailedanalysisforvariant'] = 'Galdera honetarako ebazpenen {$a}-ren aldaeraren analisi zehatzagoa';
 $string['discrimination_index'] = 'Diskriminazio-indizea';
 $string['discriminative_efficiency'] = 'Efizientzia diskriminatzailea';
 $string['downloadeverything'] = 'Jaitsi txosten osoa {$a->formatsmenu} gisa {$a->downloadbutton}';
 $string['duration'] = 'Zabalik honentzat';
 $string['effective_weight'] = 'Benetako pisua';
 $string['errordeleting'] = 'Errorea {$a} erregistro zahar ezabatzean';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = '({$a}) galdera behin baino gehiago eta pisu ezberdinekin agertzen da galdetegian. Hau ez da oraingoz onartzen estatistiken txostenean eta baliteke galdera honen estatistikak ez izatea fidagarriak.';
 $string['errormedian'] = 'Errorea mediana lortzerakoan';
 $string['errorpowerquestions'] = 'Errorea galderen kalifikazioen aldaera kalkulatzeko datuak jasotzean';
 $string['errorpowers'] = 'Errorea galdetegiaren kalifikazioen aldaera kalkulatzeko datuak jasotzean';
@@ -66,8 +72,12 @@ $string['kurtosis'] = 'Emaitzen zapaltasun banaketa ({$a}-(r)entzat)';
 $string['lastattempts'] = 'azken saiakera';
 $string['lastattemptsavg'] = 'Azken saiakeren batez besteko kalifikazioa';
 $string['lastcalculated'] = 'Azkenengoz kalkulatua orain dela {$a->lastcalculated}, ordutik {$a->count} saiakera egon dira.';
+$string['maximumfacility'] = 'Gehienezko zailtasuna';
 $string['median'] = 'Kalifikazioaren mediana ({$a}-(r)entzat)';
+$string['medianfacility'] = 'Zailtasunaren mediana';
+$string['minimumfacility'] = 'Gutxieneko zailtasuna';
 $string['modelresponse'] = 'Ereduzko ebazpena';
+$string['nameforvariant'] = '{$a->name}-(r)en {$a->variant} aldaera';
 $string['negcovar'] = 'Kalifikazioaren kobariantza negatiboa saiakera osoaren kalifikazioarekiko';
 $string['negcovar_help'] = 'Galdera honen saiakera multzo honentzako kalifikazioa galdetegiaren batez besteko saiakeren kalifikazioaren kontrako zentzuan aldatzen da. Honek batez besteko saiakeren kalifikazioa batez bestetik behera joateko joera duela eta galdera honentzako batez bestetik gorako joera duela esan nahi du, edo alderantziz.
 
@@ -95,6 +105,7 @@ $string['recalculatenow'] = 'Birkalkulatu orain';
 $string['reportsettings'] = 'Estatistikak kalkulatzeko ezarpenak';
 $string['response'] = 'Ebazpena';
 $string['skewness'] = 'Kalifikazioen asimetria-banaketa ({$a}-(r)entzat)';
+$string['slotstructureanalysis'] = 'Egitura-analisia {$a} zenbakizko galderarentzat';
 $string['standarddeviation'] = 'Desbiderapen estandarra ({$a}-(r)entzat)';
 $string['standarddeviationq'] = 'Desbiderapen estandarra';
 $string['standarderror'] = 'Errore estandarra ({$a}-(r)entzat)';
@@ -104,3 +115,5 @@ $string['statisticsreport'] = 'Estatistiken txostena';
 $string['statisticsreportgraph'] = 'Estatistikak galderen kokapenaz';
 $string['statistics:view'] = 'Estatistiken txostean ikusi';
 $string['statsfor'] = 'Galdetegiaren estatitstikak (({$a}-rentzat)';
+$string['variant'] = 'Aldaera';
+$string['whichtries'] = 'Aztertu erantzunak honentzat';

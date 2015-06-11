@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_history', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,22 +28,24 @@ defined('MOODLE_INTERNAL') || die();
 $string['allgradeitems'] = 'Alle Bewertungsteile';
 $string['allgraders'] = 'Alle Bewerter/innen';
 $string['datefrom'] = 'Datum von';
-$string['datetill'] = 'Datum bis';
 $string['datetime'] = 'Datum und Zeit';
-$string['deselect'] = 'Abwählen';
+$string['dateto'] = 'Datum bis';
+$string['deleteditemid'] = 'Element mit der ID {$a} löschen';
+$string['errajaxsearch'] = 'Fehler bei der Nutzersuche';
+$string['eventgradereportviewed'] = 'Bewertungsverlauf angezeigt';
 $string['excluded'] = 'Von den Berechnungen ausgenommen';
+$string['exportfilename'] = 'grade_history';
 $string['feedbacktext'] = 'Feedbacktext';
 $string['finishselectingusers'] = 'Nutzerauswahl beenden';
-$string['gradeitem'] = 'Bewertungselement';
+$string['foundnusers'] = '{$a} Nutzer/innen gefunden';
+$string['foundoneuser'] = '1 Nutzer/in gefunden';
 $string['gradenew'] = 'Überarbeitete Bewertung';
 $string['gradeold'] = 'Ursprüngliche Bewertung';
 $string['grader'] = 'Bewerter/in';
-$string['history:manage'] = 'Bewertungsverlauf verwalten';
 $string['historyperpage'] = 'Verlaufseinträge pro Seite';
 $string['historyperpage_help'] = 'Die Einstellung bestimmt die Anzahl Einträge, die je Seite über frühere Berichte angezeigt wird.';
 $string['history:view'] = 'Bewertungsverlauf anzeigen';
-$string['locked'] = 'Gesperrt';
-$string['overridden'] = 'Überschrieben';
+$string['loadmoreusers'] = 'Weiter Nutzer/innen laden...';
 $string['pluginname'] = 'Bewertungsverlauf';
 $string['preferences'] = 'Einstellungen zum Bewertungsverlauf';
 $string['revisedonly'] = 'Nur überarbeite Bewertungen';
@@ -52,6 +54,7 @@ $string['revisedonly_help'] = 'Nur Bewertungen anzeigen, die bereinigt wurden.
 Dies meint nur Einträge, bei denen die Bewertung geändert wurde.';
 $string['selectedusers'] = 'Ausgewählte Nutzer/innen';
 $string['selectuser'] = 'Nutzer/in auswählen';
+$string['selectusers'] = 'Nutzer/innen auswählen';
 $string['source'] = 'Quelle';
 $string['useractivityfeedback'] = '{$a} Feedback';
 $string['useractivitygrade'] = '{$a} Bewertung';

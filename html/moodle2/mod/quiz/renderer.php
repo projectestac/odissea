@@ -17,10 +17,9 @@
 /**
  * Defines the renderer for the quiz module.
  *
- * @package    mod
- * @subpackage quiz
- * @copyright  2011 The Open University
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   mod_quiz
+ * @copyright 2011 The Open University
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 
@@ -336,11 +335,11 @@ class mod_quiz_renderer extends plugin_renderer_base {
      */
     protected function render_quiz_nav_question_button(quiz_nav_question_button $button) {
         $classes = array('qnbutton', $button->stateclass, $button->navmethod);
-        $attributes = array();
+        $extrainfo = array();
 
         if ($button->currentpage) {
             $classes[] = 'thispage';
-            $attributes[] = get_string('onthispage', 'quiz');
+            $extrainfo[] = get_string('onthispage', 'quiz');
         }
 
         // Flagged?
@@ -350,7 +349,7 @@ class mod_quiz_renderer extends plugin_renderer_base {
         } else {
             $flaglabel = '';
         }
-        $attributes[] = html_writer::tag('span', $flaglabel, array('class' => 'flagstate'));
+        $extrainfo[] = html_writer::tag('span', $flaglabel, array('class' => 'flagstate'));
 
         if (is_numeric($button->number)) {
             $qnostring = 'questionnonav';
@@ -360,12 +359,12 @@ class mod_quiz_renderer extends plugin_renderer_base {
 
         $a = new stdClass();
         $a->number = $button->number;
-        $a->attributes = implode(' ', $attributes);
+        $a->attributes = implode(' ', $extrainfo);
         $tagcontents = html_writer::tag('span', '', array('class' => 'thispageholder')) .
                         html_writer::tag('span', '', array('class' => 'trafficlight')) .
                         get_string($qnostring, 'quiz', $a);
         $tagattributes = array('class' => implode(' ', $classes), 'id' => $button->id,
-                                  'title' => $button->statestring);
+                                  'title' => $button->statestring, 'data-quiz-page' => $button->page);
 
         if ($button->url) {
             return html_writer::link($button->url, $tagcontents, $tagattributes);
@@ -615,7 +614,7 @@ class mod_quiz_renderer extends plugin_renderer_base {
                 $row[] = $attemptobj->get_question_mark($slot);
             }
             $table->data[] = $row;
-            $table->rowclasses[] = $attemptobj->get_question_state_class(
+            $table->rowclasses[] = 'quizsummary' . $slot . ' ' . $attemptobj->get_question_state_class(
                     $slot, $displayoptions->correctness);
         }
 
@@ -1175,10 +1174,12 @@ class mod_quiz_renderer extends plugin_renderer_base {
         $options = array('filter' => false, 'newlines' => false);
         $warning = format_text(get_string('connectionerror', 'quiz'), FORMAT_MARKDOWN, $options);
         $ok = format_text(get_string('connectionok', 'quiz'), FORMAT_MARKDOWN, $options);
-        return html_writer::tag('div', $warning, array('id' => 'connection-error', 'style' => 'display: none;', 'role' => 'alert')) .
-                html_writer::tag('div', $ok, array('id' => 'connection-ok', 'style' => 'display: none;', 'role' => 'alert'));
+        return html_writer::tag('div', $warning,
+                    array('id' => 'connection-error', 'style' => 'display: none;', 'role' => 'alert')) .
+                    html_writer::tag('div', $ok, array('id' => 'connection-ok', 'style' => 'display: none;', 'role' => 'alert'));
     }
 }
+
 
 class mod_quiz_links_to_other_attempts implements renderable {
     /**
@@ -1186,6 +1187,7 @@ class mod_quiz_links_to_other_attempts implements renderable {
      */
     public $links = array();
 }
+
 
 class mod_quiz_view_object {
     /** @var array $infomessages of messages with information to display about the quiz. */

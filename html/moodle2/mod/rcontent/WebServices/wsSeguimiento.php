@@ -20,8 +20,8 @@ class wsSeguimiento{
         if (!$this->user || !$this->password) {
             $ret = generate_error("Autenticacion", "", "ResultadoDetalleExtendido");
         } else {
-            global $HTTP_RAW_POST_DATA;
-            log_to_file("wsSeguimiento XMLrequest: " . $HTTP_RAW_POST_DATA);
+            $payload = file_get_contents("php://input");
+            log_to_file("wsSeguimiento XMLrequest: " . $payload);
             log_to_file("wsSeguimiento request: " . serialize($Resultado));
             $ret = get_ResultadoDetalleExtendido($Resultado->ResultadoExtendido, $this->user, $this->password);
         }

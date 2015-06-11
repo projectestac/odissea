@@ -39,7 +39,8 @@ if (!empty($rcontent->frame) || $rcontent->popup == 1) {
     require_login($course);
     $strexit = get_string('exitactivity', 'rcontent');
     $exitlink = '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$rcontent->course.'" target="_parent" title="'.$strexit.'">'.$strexit.'</a> ';
-    $PAGE->set_button($exitlink.update_module_button($cm->id, $course->id, get_string('modulename', 'rcontent')));
+    $updatebutton = $course->id == SITEID ? "" : update_module_button($cm->id, $course->id, get_string('modulename', 'rcontent'));
+    $PAGE->set_button($exitlink.$updatebutton);
 }
 
 
@@ -86,7 +87,7 @@ if ($rcontent->popup == 1 ) {
                                                               'launch_url' => $url), true);
     echo $OUTPUT->header();
     echo $OUTPUT->heading(format_string($rcontent->name));
-    $content = '<div class="rcontent-center"><a target="_blank" href="'.$url.'">'.get_string('popupblockedlinkname', 'rcontent').'</a></div>';
+    $content = '<a target="_blank" href="'.$url.'">'.get_string('popupblockedlinkname', 'rcontent').'</a>';
     echo $OUTPUT->box(get_string('popupblocked', 'rcontent', $content));
 
     $PAGE->requires->js('/mod/rcontent/view.js');
@@ -136,6 +137,12 @@ if ($rcontent->popup == 1 ) {
 
 }
 
-add_to_log($course->id, 'rcontent', 'view', "view.php?id=$cm->id", "$rcontent->id", $cm->id);
+$params = array(
+    'context' => $contextmodule,
+    'objectid' => $rcontent->id
+);
+$event = \mod_rcontent\event\course_module_viewed::create($params);
+$event->add_record_snapshot('rcontent', $rcontent);
+$event->trigger();
 
 echo $OUTPUT->footer();

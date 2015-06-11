@@ -18,8 +18,7 @@
 /**
  * Private imscp module utility functions
  *
- * @package    mod
- * @subpackage imscp
+ * @package mod_imscp
  * @copyright  2009 Petr Skoda  {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -61,15 +60,19 @@ function imscp_print_content($imscp, $cm, $course) {
 function imscp_htmllize_item($item, $imscp, $cm) {
     global $CFG;
 
-    if (preg_match('|^https?://|', $item['href'])) {
-        $url = $item['href'];
+    if ($item['href']) {
+        if (preg_match('|^https?://|', $item['href'])) {
+            $url = $item['href'];
+        } else {
+            $context = context_module::instance($cm->id);
+            $urlbase = "$CFG->wwwroot/pluginfile.php";
+            $path = '/'.$context->id.'/mod_imscp/content/'.$imscp->revision.'/'.$item['href'];
+            $url = file_encode_url($urlbase, $path, false);
+        }
+        $result = "<li><a href=\"$url\">".$item['title'].'</a>';
     } else {
-        $context = context_module::instance($cm->id);
-        $urlbase = "$CFG->wwwroot/pluginfile.php";
-        $path = '/'.$context->id.'/mod_imscp/content/'.$imscp->revision.'/'.$item['href'];
-        $url = file_encode_url($urlbase, $path, false);
+        $result = '<li>'.$item['title'];
     }
-    $result = "<li><a href=\"$url\">".$item['title'].'</a>';
     if ($item['subitems']) {
         $result .= '<ul>';
         foreach ($item['subitems'] as $subitem) {

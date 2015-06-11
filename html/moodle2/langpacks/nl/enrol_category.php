@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_category', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['category:config'] = 'Configureer categorie aanmeldinstanties';
 $string['category:synchronised'] = 'Roltoewijzingen gesynchroniseerd met cursusaanmeldingen';
 $string['pluginname'] = 'Categorie-aanmeldingen';
 $string['pluginname_desc'] = 'Categorie aanmeldingsplugin is een verouderde oplossing op cursus categorie niveau via roltoewijzingen. De aangeraden methode is om nu cohort synchronisatie te gebruiken.';

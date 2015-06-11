@@ -1,11 +1,8 @@
 M.local_message_notifier = {};
 
 M.local_message_notifier.init_notification = function(Y) {
-    Y.one('body').on('click', function (e){
-        if(Y.one('#message_notifier').hasClass('open')){
-            Y.one('#message_notifier').removeClass('open');
-            e.stopPropagation();
-        }
+    Y.one('#message_notif_click').on('clickoutside', function () {
+        Y.one('#message_notifier').removeClass('open');
     });
     Y.one('#message_notif_click').on('click', function (e){
         if(Y.one('#message_notifier').hasClass('open')){

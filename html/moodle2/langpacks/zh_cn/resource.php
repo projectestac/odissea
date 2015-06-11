@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['displayselect_help'] = '此设置，文件的类型，及浏览器是�
 * 在框架中 - 在导航栏和文件描述下方的框架里显示文件
 * 新窗口 - 在有菜单和地址栏的新窗口中显示文件
 ';
+$string['dnduploadresource'] = '创建文件资源';
 $string['encryptedcode'] = '加密代码';
 $string['filenotfound'] = '抱歉，找不到文件。';
 $string['filterfiles'] = '对文件内容使用过滤器';
@@ -66,7 +67,6 @@ $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';
 $string['modulename'] = '文件';
 $string['modulenameplural'] = '文件';
-$string['neverseen'] = '没看过';
 $string['notmigrated'] = '抱歉，传统的资源类型（{$a}）还不能移植。';
 $string['optionsheader'] = '选项';
 $string['page-mod-resource-x'] = '任意文件模块页面';
@@ -80,7 +80,14 @@ $string['popupwidth'] = '弹出窗口宽度（单位：像素）';
 $string['popupwidthexplain'] = '指定弹出窗口的缺省宽度。';
 $string['printintro'] = '显示资源描述';
 $string['printintroexplain'] = '在内容下方显示资源描述？某些显示类型就算开启此选项也不会显示描述。';
+$string['resource:addinstance'] = '添加一个新的资源';
 $string['resourcecontent'] = '文件和子目录';
 $string['resource:exportresource'] = '导出资源';
 $string['resource:view'] = '查看资源';
 $string['selectmainfile'] = '请点击文件名旁的图标选择主文件。';
+$string['showsize'] = '显示大小';
+$string['showsize_desc'] = '在课程页面中显示文件大小？';
+$string['showsize_help'] = '在文件链接的旁边，显示文件大小，如“3.1 MB”。如果在资源中有多个文件，则显示所有文件的总大小。';
+$string['showtype'] = '显示类型';
+$string['showtype_desc'] = '在课程页面中显示文件类型（如WORD文件）？';
+$string['showtype_help'] = '在文件链接的旁边，显示文件的类型，如“Word文档”。如果在资源中有多个文件，则显示第一个文件的类型。如果文件类型是未知的，则不显示类型。';

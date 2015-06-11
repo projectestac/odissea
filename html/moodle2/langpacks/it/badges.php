@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,10 @@ $string['anymethodactivity'] = 'Completamento di almeno una delle attività sele
 $string['anymethodcourseset'] = 'Completamento di almeno uno dei corsi selezionati';
 $string['anymethodmanual'] = 'Rilascio da parte di almeno uno dei ruoli selezioanti';
 $string['anymethodprofile'] = 'Compilazione di almeno uno dei campi del profilo utente selezionati';
+$string['archivebadge'] = 'Vuoi eliminare il badge \'{$a}\'  mantenendo i badge rilasciati?';
+$string['archiveconfirm'] = 'Elimina e mantieni i badge rilasciati';
+$string['archivehelp'] = '<p>Con questa opzione il badge sarà contrassegnato come "ritirato" e non comparirà più nell\'elenco dei badge. Gli utenti non potranno più conseguire il badge ma coloro i quali lo hanno già conseguito potranno comunque visualizzarlo nella pagina del proprio profilo e caricarlo su backpack esterni.</p>
+<p>Se desideri che gli utenti mantengano l\'accesso al badge, è necessario scegliere questa opzione.</p>';
 $string['attachment'] = 'Allega badge al messaggio';
 $string['attachment_help'] = 'Consente di allegare il file del badge nel messaggio indirizzato al destinatario. Prerequisito è l\'abilitazione degli allegati alle email in Amministrazione del sito > Plugin > Instradamento messaggi > Email.';
 $string['award'] = 'Rilascia badge';
@@ -145,7 +149,7 @@ $string['criteria_2_help'] = 'Abilita utenti con uno specifico ruolo a livello d
 $string['criteria_3'] = 'Partecipazione relazionale';
 $string['criteria_3_help'] = 'Relazionale';
 $string['criteria_4'] = 'Completamento corso';
-$string['criteria_4_help'] = 'Abilita il rilascio del badge al completamento del corso. Questo criterio può avere parametri addizionali come ad esempio il punteggio minimo richiesto o la data di completamento corso.';
+$string['criteria_4_help'] = 'Abilita il rilascio del badge al completamento del corso. Questo requisito può avere parametri addizionali come ad esempio il punteggio minimo richiesto o la data di completamento corso.';
 $string['criteria_5'] = 'Completamento di un gruppo di corsi';
 $string['criteria_5_help'] = 'Il badge sarà rilasciato a coloro che completeranno un gruppo di corsi. Per ogni corso è possibile impostare parametri come il punteggio minimo o la data di completamento.';
 $string['criteria_6'] = 'Compilazione profilo utente';
@@ -192,9 +196,11 @@ $string['defaultissuercontact'] = 'Contatto di default di chi rilascia il badge'
 $string['defaultissuercontact_desc'] = 'Indirizzo email di default associato con chi rilascia il badge';
 $string['defaultissuername'] = 'Nome di default di chi rilascia il badge';
 $string['defaultissuername_desc'] = 'Nome di default dell\'agenzia o dell\'autorità che rilascia il badge';
-$string['delbadge'] = 'Elimina badge';
-$string['delconfirm'] = 'Sei sicuro di eliminare il badge \'{$a}\'?';
-$string['delcritconfirm'] = 'Sei sicuro di eliminare questo criterio?';
+$string['delbadge'] = 'Vuoi eliminare il badge \'{$a}\'  e rimuovere anche tutti i badge rilasciati?';
+$string['delconfirm'] = 'Elimina e rimuovi i badge rilasciati';
+$string['delcritconfirm'] = 'Sei sicuro di eliminare questo requisito?';
+$string['deletehelp'] = '<p>Eliminare totalmente il badge comporta l\'eliminazione di di tutte le informazione associate e dei relativi criteri di rilascio. Gli utenti che hanno conseguito il badge non potranno più visualizzarlo nella propria pagina del profilo.</p>
+<p>Nota: gli utenti che hanno conseguito il badge e che lo hanno anche caricato su un backpack esterno, visualizzeranno il badge nel backapck ma non potranno accedere alle pagina dei criteri e di verifica collegate a questo sito.</p>';
 $string['delparamconfirm'] = 'Sei sicuro di eliminare questo parametro?';
 $string['description'] = 'Descrizione';
 $string['disconnect'] = 'Disconnetti';
@@ -314,7 +320,7 @@ Sono disponibili le seguenti opzioni:
 $string['notifydaily'] = 'Giornalmente';
 $string['notifyevery'] = 'Sempre';
 $string['notifymonthly'] = 'Mensilmente';
-$string['notifyweekly'] = 'Settimanalemnte';
+$string['notifyweekly'] = 'Settimanalmente';
 $string['numawards'] = 'Badge rilasciato a <a href="{$a->link}">{$a->count}</a> utenti.';
 $string['numawardstat'] = 'Badge rilasciato a {$a} utenti.';
 $string['overallcrit'] = 'Metodo di aggregazione dei requisiti';
@@ -328,7 +334,7 @@ $string['recipientidentificationproblem'] = 'Non è possibile trovare un destina
 $string['recipients'] = 'Destinatari badge';
 $string['recipientvalidationproblem'] = 'L\'utente attuale non può essere verificato come destinatario del badge';
 $string['relative'] = 'Data relativa';
-$string['requiredcourse'] = 'E\' necessario aggiungere al criterio almeno un corso.';
+$string['requiredcourse'] = 'E\' necessario aggiungere almeno un corso al requisito.';
 $string['reviewbadge'] = 'Modifica accesso al badge';
 $string['reviewconfirm'] = '<p>Il badge diverrà visibile agli utenti i quali potranno cominciare a conseguirlo.</p>
 

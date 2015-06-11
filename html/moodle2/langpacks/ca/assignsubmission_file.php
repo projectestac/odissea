@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['default'] = 'Habilitat per defecte';
 $string['default_help'] = 'Si està actiu, aquest mètode de tramesa s\'habilitarà per defecte per a totes les tasques noves.';
 $string['enabled'] = 'Fitxers de la tramesa';
 $string['enabled_help'] = 'Si està habilitat, l\'estudiantat podrà carregar un o més fitxers com a tramesa.';
-$string['event_assessable_uploaded'] = 'S\'ha pujat un fitxer.';
+$string['eventassessableuploaded'] = 'S\'ha pujat un fitxer.';
 $string['file'] = 'Fitxers de la tramesa';
 $string['maxbytes'] = 'Mida màxima del fitxer';
 $string['maxfilessubmission'] = 'Quantitat màxima de fitxers carregats';

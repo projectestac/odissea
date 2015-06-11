@@ -6,7 +6,7 @@ class mod_journal_entry_form extends moodleform {
 
     function definition() {
 
-        $this->_form->addElement('editor', 'text');
+        $this->_form->addElement('editor', 'text', get_string('entry', 'mod_journal'));
         $this->_form->setType('text', PARAM_CLEANHTML);
         $this->_form->addRule('text', null, 'required', null, 'client');
 
@@ -16,6 +16,5 @@ class mod_journal_entry_form extends moodleform {
         $this->add_action_buttons();
 
         $this->set_data($this->_customdata['current']);
-
     }
 }

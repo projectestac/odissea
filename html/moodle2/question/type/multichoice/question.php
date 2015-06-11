@@ -124,13 +124,6 @@ abstract class qtype_multichoice_base extends question_graded_automatically {
                     $args, $forcedownload);
         }
     }
-
-    public function make_html_inline($html) {
-        $html = preg_replace('~\s*<p>\s*~u', '', $html);
-        $html = preg_replace('~\s*</p>\s*~u', '<br />', $html);
-        $html = preg_replace('~(<br\s*/?>)+$~u', '', $html);
-        return trim($html);
-    }
 }
 
 
@@ -194,11 +187,27 @@ class qtype_multichoice_single_question extends qtype_multichoice_base {
         return array();
     }
 
-
     public function prepare_simulated_post_data($simulatedresponse) {
-        $ansnumbertoanswerid = array_keys($this->answers);
-        $ansid = $ansnumbertoanswerid[$simulatedresponse['answer']];
-        return array('answer' => array_search($ansid, $this->order));
+        $ansid = 0;
+        foreach ($this->answers as $answer) {
+            if (clean_param($answer->answer, PARAM_NOTAGS) == $simulatedresponse['answer']) {
+                $ansid = $answer->id;
+            }
+        }
+        if ($ansid) {
+            return array('answer' => array_search($ansid, $this->order));
+        } else {
+            return array();
+        }
+    }
+
+    public function get_student_response_values_for_simulation($postdata) {
+        if (!isset($postdata['answer'])) {
+            return array();
+        } else {
+            $answer = $this->answers[$this->order[$postdata['answer']]];
+            return array('answer' => clean_param($answer->answer, PARAM_NOTAGS));
+        }
     }
 
     public function is_same_response(array $prevresponse, array $newresponse) {
@@ -344,13 +353,28 @@ class qtype_multichoice_multi_question extends qtype_multichoice_base {
 
     public function prepare_simulated_post_data($simulatedresponse) {
         $postdata = array();
-        $ansidtochoiceno = array_flip($this->order);
-        ksort($ansidtochoiceno, SORT_NUMERIC);
-        $ansnotochoiceno = array_values($ansidtochoiceno);
-        foreach ($simulatedresponse as $ansno => $checked) {
-            $postdata[$this->field($ansnotochoiceno[$ansno])] = $checked;
+        foreach ($simulatedresponse as $ans => $checked) {
+            foreach ($this->answers as $ansid => $answer) {
+                if (clean_param($answer->answer, PARAM_NOTAGS) == $ans) {
+                    $fieldno = array_search($ansid, $this->order);
+                    $postdata[$this->field($fieldno)] = $checked;
+                    break;
+                }
+            }
         }
         return $postdata;
+    }
+
+    public function get_student_response_values_for_simulation($postdata) {
+        $simulatedresponse = array();
+        foreach ($this->order as $fieldno => $ansid) {
+            if (isset($postdata[$this->field($fieldno)])) {
+                $checked = $postdata[$this->field($fieldno)];
+                $simulatedresponse[clean_param($this->answers[$ansid]->answer, PARAM_NOTAGS)] = $checked;
+            }
+        }
+        ksort($simulatedresponse);
+        return $simulatedresponse;
     }
 
     public function is_same_response(array $prevresponse, array $newresponse) {

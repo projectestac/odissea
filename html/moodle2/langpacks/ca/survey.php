@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'survey', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -186,6 +186,9 @@ $string['downloadinfo'] = 'Podeu baixar les dades crues d\'aquesta enquesta en u
 $string['downloadresults'] = 'Baixa els resultats';
 $string['downloadtext'] = 'Baixa com a text';
 $string['editingasurvey'] = 'S\'està editant la informació';
+$string['eventreportdownloaded'] = 'S\'ha descarregat l\'informe de l\'enquesta';
+$string['eventreportviewed'] = 'S\'ha mostrat l\'informe de l\'enquesta';
+$string['eventresponsesubmitted'] = 'S\'ha enviat la resposta a l\'enquesta';
 $string['guestsnotallowed'] = 'Els visitants no poden participar en les enquestes';
 $string['howlong'] = '¿Quant de temps t’ha portat completar aquest questionari?';
 $string['howlongoptions'] = 'menys de 1 <abbr title=minuto>min.</abbr>, 1-2 <abbr title=minuto>min.</abbr>,  2-3 <abbr title=minuto>min.</abbr>,  3-4 <abbr title=minuto>min.</abbr>,  4-5 <abbr title=minuto>min.</abbr>,  5-10 <abbr title=minuto>min.</abbr>, més de 10 minuts.';

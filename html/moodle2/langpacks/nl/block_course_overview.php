@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Maximale aantal cursussen die getoond worden
 $string['expandall'] = 'Alle cursuslijsten openklappen';
 $string['forcedefaultmaxcourses'] = 'Maximale aantal cursussen afdwingen';
 $string['forcedefaultmaxcoursesdesc'] = 'Indien dit is ingesteld, dan kan een gebruiker zijn persoonlijke instelling niet wijzigen';
+$string['fullpath'] = 'Alle categorieën en ondercategorieën';
 $string['hiddencoursecount'] = 'Je hebt {$a} verborgen cursus';
 $string['hiddencoursecountplural'] = 'Je hebt {$a} verborgen cursussen';
 $string['hiddencoursecountwithshowall'] = 'Je hebt {$a->coursecount} verborgen cursus {$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Verplaats cursus: {$a}';
 $string['movecoursehere'] = 'Verplaats cursus naar hier';
 $string['movetofirst'] = 'Verplaats cursus {$a} naar bovenaan';
 $string['movingcourse'] = 'Je verplaatst: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Geen';
 $string['numtodisplay'] = 'Aantal te tonen cursussen:';
+$string['onlyparentname'] = 'Enkel bovenliggende categorie';
 $string['otherexpanded'] = 'Andere uitgeklapte cursussen';
 $string['pluginname'] = 'Cursusoverzicht';
 $string['preservestates'] = 'Bewaar uitklapstatus';
 $string['shortnameprefix'] = '{$a} inbegrepen';
 $string['shortnamesufixprural'] = '(en {$a} anderen)';
 $string['shortnamesufixsingular'] = '(en {$a} andere)';
+$string['showcategories'] = 'Te tonen categorieën';
+$string['showcategoriesdesc'] = 'Moeten er onder elke cursus de cursuscategorieën getoond worden?';
 $string['showchildren'] = 'Toon onderliggenden';
 $string['showchildrendesc'] = 'Moeten onderliggende cursussen opgelijst worden onder de hoofd cursustitel?';
 $string['showwelcomearea'] = 'Toon welkomzone';

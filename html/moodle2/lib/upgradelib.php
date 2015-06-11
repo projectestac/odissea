@@ -179,9 +179,9 @@ function upgrade_set_timeout($max_execution_time=300) {
 
     if (CLI_SCRIPT) {
         // there is no point in timing out of CLI scripts, admins can stop them if necessary
-        set_time_limit(0);
+        core_php_time_limit::raise();
     } else {
-        set_time_limit($max_execution_time);
+        core_php_time_limit::raise($max_execution_time);
     }
     set_config('upgraderunning', $expected_end); // keep upgrade locked until this time
 }
@@ -371,27 +371,31 @@ function upgrade_stale_php_files_present() {
     global $CFG;
 
     $someexamplesofremovedfiles = array(
-        // removed in 2.6dev
+        // Removed in 2.8.
+        '/course/delete_category_form.php',
+        // Removed in 2.7.
+        '/admin/tool/qeupgradehelper/version.php',
+        // Removed in 2.6.
         '/admin/block.php',
         '/admin/oacleanup.php',
-        // removed in 2.5dev
+        // Removed in 2.5.
         '/backup/lib.php',
         '/backup/bb/README.txt',
         '/lib/excel/test.php',
-        // removed in 2.4dev
+        // Removed in 2.4.
         '/admin/tool/unittest/simpletestlib.php',
-        // removed in 2.3dev
+        // Removed in 2.3.
         '/lib/minify/builder/',
-        // removed in 2.2dev
+        // Removed in 2.2.
         '/lib/yui/3.4.1pr1/',
-        // removed in 2.2
+        // Removed in 2.2.
         '/search/cron_php5.php',
         '/course/report/log/indexlive.php',
         '/admin/report/backups/index.php',
         '/admin/generator.php',
-        // removed in 2.1
+        // Removed in 2.1.
         '/lib/yui/2.8.0r4/',
-        // removed in 2.0
+        // Removed in 2.0.
         '/blocks/admin/block_admin.php',
         '/blocks/admin_tree/block_admin_tree.php',
     );
@@ -424,7 +428,7 @@ function upgrade_plugins($type, $startcallback, $endcallback, $verbose) {
 
     foreach ($plugs as $plug=>$fullplug) {
         // Reset time so that it works when installing a large number of plugins
-        set_time_limit(600);
+        core_php_time_limit::raise(600);
         $component = clean_param($type.'_'.$plug, PARAM_COMPONENT); // standardised plugin name
 
         // check plugin dir is valid name
@@ -477,7 +481,9 @@ function upgrade_plugins($type, $startcallback, $endcallback, $verbose) {
                     log_update_descriptions($component);
                     external_update_descriptions($component);
                     events_update_definition($component);
+                    \core\task\manager::reset_scheduled_tasks_for_component($component);
                     message_update_providers($component);
+                    \core\message\inbound\manager::update_handlers_for_component($component);
                     if ($type === 'message') {
                         message_update_processors($plug);
                     }
@@ -513,7 +519,9 @@ function upgrade_plugins($type, $startcallback, $endcallback, $verbose) {
             log_update_descriptions($component);
             external_update_descriptions($component);
             events_update_definition($component);
+            \core\task\manager::reset_scheduled_tasks_for_component($component);
             message_update_providers($component);
+            \core\message\inbound\manager::update_handlers_for_component($component);
             if ($type === 'message') {
                 message_update_processors($plug);
             }
@@ -544,7 +552,9 @@ function upgrade_plugins($type, $startcallback, $endcallback, $verbose) {
             log_update_descriptions($component);
             external_update_descriptions($component);
             events_update_definition($component);
+            \core\task\manager::reset_scheduled_tasks_for_component($component);
             message_update_providers($component);
+            \core\message\inbound\manager::update_handlers_for_component($component);
             if ($type === 'message') {
                 // Ugly hack!
                 message_update_processors($plug);
@@ -586,10 +596,11 @@ function upgrade_plugins_modules($startcallback, $endcallback, $verbose) {
             throw new plugin_defective_exception($component, 'Missing version.php');
         }
 
+        // TODO: Support for $module will end with Moodle 2.10 by MDL-43896. Was deprecated for Moodle 2.7 by MDL-43040.
         $plugin = new stdClass();
         $plugin->version = null;
         $module = $plugin;
-        require($fullmod .'/version.php');  // Defines $module/$plugin with version etc.
+        require($fullmod .'/version.php');  // Defines $plugin with version etc.
         $plugin = clone($module);
         unset($module->version);
         unset($module->component);
@@ -642,7 +653,9 @@ function upgrade_plugins_modules($startcallback, $endcallback, $verbose) {
                     log_update_descriptions($component);
                     external_update_descriptions($component);
                     events_update_definition($component);
+                    \core\task\manager::reset_scheduled_tasks_for_component($component);
                     message_update_providers($component);
+                    \core\message\inbound\manager::update_handlers_for_component($component);
                     upgrade_plugin_mnet_functions($component);
                     $endcallback($component, true, $verbose);
                 }
@@ -674,7 +687,9 @@ function upgrade_plugins_modules($startcallback, $endcallback, $verbose) {
             log_update_descriptions($component);
             external_update_descriptions($component);
             events_update_definition($component);
+            \core\task\manager::reset_scheduled_tasks_for_component($component);
             message_update_providers($component);
+            \core\message\inbound\manager::update_handlers_for_component($component);
             upgrade_plugin_mnet_functions($component);
 
             $endcallback($component, true, $verbose);
@@ -708,7 +723,9 @@ function upgrade_plugins_modules($startcallback, $endcallback, $verbose) {
             log_update_descriptions($component);
             external_update_descriptions($component);
             events_update_definition($component);
+            \core\task\manager::reset_scheduled_tasks_for_component($component);
             message_update_providers($component);
+            \core\message\inbound\manager::update_handlers_for_component($component);
             upgrade_plugin_mnet_functions($component);
 
             $endcallback($component, false, $verbose);
@@ -826,7 +843,9 @@ function upgrade_plugins_blocks($startcallback, $endcallback, $verbose) {
                     log_update_descriptions($component);
                     external_update_descriptions($component);
                     events_update_definition($component);
+                    \core\task\manager::reset_scheduled_tasks_for_component($component);
                     message_update_providers($component);
+                    \core\message\inbound\manager::update_handlers_for_component($component);
                     upgrade_plugin_mnet_functions($component);
                     $endcallback($component, true, $verbose);
                 }
@@ -864,7 +883,9 @@ function upgrade_plugins_blocks($startcallback, $endcallback, $verbose) {
             log_update_descriptions($component);
             external_update_descriptions($component);
             events_update_definition($component);
+            \core\task\manager::reset_scheduled_tasks_for_component($component);
             message_update_providers($component);
+            \core\message\inbound\manager::update_handlers_for_component($component);
             upgrade_plugin_mnet_functions($component);
 
             $endcallback($component, true, $verbose);
@@ -897,7 +918,9 @@ function upgrade_plugins_blocks($startcallback, $endcallback, $verbose) {
             log_update_descriptions($component);
             external_update_descriptions($component);
             events_update_definition($component);
+            \core\task\manager::reset_scheduled_tasks_for_component($component);
             message_update_providers($component);
+            \core\message\inbound\manager::update_handlers_for_component($component);
             upgrade_plugin_mnet_functions($component);
 
             $endcallback($component, false, $verbose);
@@ -1480,7 +1503,7 @@ function install_core($version, $verbose) {
     make_writable_directory($CFG->dataroot.'/muc', true);
 
     try {
-        set_time_limit(600);
+        core_php_time_limit::raise(600);
         print_upgrade_part_start('moodle', true, $verbose); // does not store upgrade running flag
 
         $DB->get_manager()->install_from_xmldb_file("$CFG->libdir/db/install.xml");
@@ -1497,7 +1520,9 @@ function install_core($version, $verbose) {
         log_update_descriptions('moodle');
         external_update_descriptions('moodle');
         events_update_definition('moodle');
+        \core\task\manager::reset_scheduled_tasks_for_component('moodle');
         message_update_providers('moodle');
+        \core\message\inbound\manager::update_handlers_for_component('moodle');
 
         // Write default settings unconditionally
         admin_apply_default_settings(NULL, true);
@@ -1538,7 +1563,7 @@ function upgrade_core($version, $verbose) {
         // Pre-upgrade scripts for local hack workarounds.
         $preupgradefile = "$CFG->dirroot/local/preupgrade.php";
         if (file_exists($preupgradefile)) {
-            set_time_limit(0);
+            core_php_time_limit::raise();
             require($preupgradefile);
             // Reset upgrade timeout to default.
             upgrade_set_timeout();
@@ -1559,7 +1584,9 @@ function upgrade_core($version, $verbose) {
         log_update_descriptions('moodle');
         external_update_descriptions('moodle');
         events_update_definition('moodle');
+        \core\task\manager::reset_scheduled_tasks_for_component('moodle');
         message_update_providers('moodle');
+        \core\message\inbound\manager::update_handlers_for_component('moodle');
         // Update core definitions.
         cache_helper::update_definitions(true);
 
@@ -1985,7 +2012,7 @@ function upgrade_save_orphaned_questions() {
  * @see backup_cron_automated_helper::remove_excess_backups()
  * @link http://tracker.moodle.org/browse/MDL-35116
  * @return void
- * @since 2.4
+ * @since Moodle 2.4
  */
 function upgrade_rename_old_backup_files_using_shortname() {
     global $CFG;
@@ -2177,4 +2204,78 @@ function upgrade_fix_missing_root_folders_draft() {
     }
     $rs->close();
     $transaction->allow_commit();
+}
+
+/**
+ * This function verifies that the database is not using an unsupported storage engine.
+ *
+ * @param environment_results $result object to update, if relevant
+ * @return environment_results|null updated results object, or null if the storage engine is supported
+ */
+function check_database_storage_engine(environment_results $result) {
+    global $DB;
+
+    // Check if MySQL is the DB family (this will also be the same for MariaDB).
+    if ($DB->get_dbfamily() == 'mysql') {
+        // Get the database engine we will either be using to install the tables, or what we are currently using.
+        $engine = $DB->get_dbengine();
+        // Check if MyISAM is the storage engine that will be used, if so, do not proceed and display an error.
+        if ($engine == 'MyISAM') {
+            $result->setInfo('unsupported_db_storage_engine');
+            $result->setStatus(false);
+            return $result;
+        }
+    }
+
+    return null;
+}
+
+/**
+ * Method used to check the usage of slasharguments config and display a warning message.
+ *
+ * @param environment_results $result object to update, if relevant.
+ * @return environment_results|null updated results or null if slasharguments is disabled.
+ */
+function check_slasharguments(environment_results $result){
+    global $CFG;
+
+    if (empty($CFG->slasharguments)) {
+        $result->setInfo('slasharguments');
+        $result->setStatus(false);
+        return $result;
+    }
+
+    return null;
+}
+
+/**
+ * This function verifies if the database has tables using innoDB Antelope row format.
+ *
+ * @param environment_results $result
+ * @return environment_results|null updated results object, or null if no Antelope table has been found.
+ */
+function check_database_tables_row_format(environment_results $result) {
+    global $DB;
+
+    if ($DB->get_dbfamily() == 'mysql') {
+        $generator = $DB->get_manager()->generator;
+
+        foreach ($DB->get_tables(false) as $table) {
+            $columns = $DB->get_columns($table, false);
+            $size = $generator->guess_antolope_row_size($columns);
+            $format = $DB->get_row_format($table);
+
+            if ($size <= $generator::ANTELOPE_MAX_ROW_SIZE) {
+                continue;
+            }
+
+            if ($format === 'Compact' or $format === 'Redundant') {
+                $result->setInfo('unsupported_db_table_row_format');
+                $result->setStatus(false);
+                return $result;
+            }
+        }
+    }
+
+    return null;
 }

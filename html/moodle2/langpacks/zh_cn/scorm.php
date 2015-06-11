@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['defaultgradesettings'] = '默认评分设置';
 $string['defaultothersettings'] = '其他默认设置';
 $string['deleteallattempts'] = '删除所有 SCORM 学习记录';
 $string['deleteattemptcheck'] = '您确定要完全删除所有尝试记录吗？';
+$string['deleteselected'] = '删除';
 $string['deleteuserattemptcheck'] = '您确定要完全删除所有您的尝试记录吗？';
 $string['details'] = '查看详情';
 $string['directories'] = '显示目录链接';

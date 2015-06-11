@@ -223,7 +223,7 @@ abstract class award_criteria {
         if (!empty($this->params)) {
             if (count($this->params) > 1) {
                 echo $OUTPUT->box(get_string('criteria_descr_' . $this->criteriatype, 'badges',
-                        strtoupper($agg[$data->get_aggregation_method($this->criteriatype)])), array('clearfix'));
+                        core_text::strtoupper($agg[$data->get_aggregation_method($this->criteriatype)])), array('clearfix'));
             } else {
                 echo $OUTPUT->box(get_string('criteria_descr_single_' . $this->criteriatype , 'badges'), array('clearfix'));
             }
@@ -236,9 +236,20 @@ abstract class award_criteria {
      * Review this criteria and decide if the user has completed
      *
      * @param int $userid User whose criteria completion needs to be reviewed.
+     * @param bool $filtered An additional parameter indicating that user list
+     *        has been reduced and some expensive checks can be skipped.
+     *
      * @return bool Whether criteria is complete
      */
-    abstract public function review($userid);
+    abstract public function review($userid, $filtered = false);
+
+    /**
+     * Returns array with sql code and parameters returning all ids
+     * of users who meet this particular criterion.
+     *
+     * @return array list($join, $where, $params)
+     */
+    abstract public function get_completed_criteria_sql();
 
     /**
      * Mark this criteria as complete for a user

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'survey', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,6 +200,9 @@ $string['downloadinfo'] = '당신은 엑셀, SPSS 또는 다른 패키지에서�
 $string['downloadresults'] = '결과 내려받기';
 $string['downloadtext'] = '문서파일 형태로 다운로드';
 $string['editingasurvey'] = '조사 편집';
+$string['eventreportdownloaded'] = '조사보고서가 다운로드되었습니다.';
+$string['eventreportviewed'] = '조사 보고서가 열람되었습니다.';
+$string['eventresponsesubmitted'] = '조사 응답이 제출되었습니다.';
 $string['guestsnotallowed'] = '손님은 survey 제출이 허락되지 않았습니다.';
 $string['howlong'] = '이 조사를 마치는데 시간이 얼마나 걸렸습니까?';
 $string['howlongoptions'] = '1분 미만, 1-2분, 2-3분, 3-4분, 4-5분, 5-10분, 10분 초과';

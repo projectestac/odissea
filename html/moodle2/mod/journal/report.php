@@ -14,9 +14,9 @@ if (! $course = $DB->get_record("course", array("id" => $cm->course))) {
     print_error("Course module is misconfigured");
 }
 
-require_login($course, false, $cm);
+require_login($course->id, false, $cm);
 
-$context = get_context_instance(CONTEXT_MODULE, $cm->id);
+$context = context_module::instance($cm->id);
 
 require_capability('mod/journal:manageentries', $context);
 
@@ -24,7 +24,6 @@ require_capability('mod/journal:manageentries', $context);
 if (! $journal = $DB->get_record("journal", array("id" => $cm->instance))) {
     print_error("Course module is incorrect");
 }
-
 
 // Header
 $PAGE->set_url('/mod/journal/report.php', array('id'=>$id));
@@ -64,7 +63,7 @@ if ($data = data_submitted()) {
 
     // Peel out all the data from variable names.
     foreach ($data as $key => $val) {
-        if ($key <> "id") {
+        if (strpos($key, 'r') === 0 || strpos($key, 'c') === 0) {
             $type = substr($key,0,1);
             $num  = substr($key,1);
             $feedback[$num][$type] = $val;
@@ -77,24 +76,29 @@ if ($data = data_submitted()) {
         $entry = $entrybyentry[$num];
         // Only update entries where feedback has actually changed.
         $rating_changed = false;
-        if (($vals['r'] <> $entry->rating) && !($vals['r'] == '' && $entry->rating == "0")) {
-          $rating_changed = true;
+
+        $studentrating = clean_param($vals['r'], PARAM_INT);
+        $studentcomment = clean_text($vals['c'], FORMAT_PLAIN);
+
+        if ($studentrating != $entry->rating && !($studentrating == '' && $entry->rating == "0")) {
+            $rating_changed = true;
         }
-        if (($rating_changed) || (addslashes($vals['c']) <> addslashes($entry->entrycomment))) {
+
+        if ($rating_changed || $studentcomment != $entry->entrycomment) {
             $newentry = new StdClass();
-            $newentry->rating     = $vals['r'];
-            $newentry->entrycomment    = $vals['c'];
-            $newentry->teacher    = $USER->id;
-            $newentry->timemarked = $timenow;
-            $newentry->mailed     = 0;           // Make sure mail goes out (again, even)
-            $newentry->id         = $num;
+            $newentry->rating       = $studentrating;
+            $newentry->entrycomment = $studentcomment;
+            $newentry->teacher      = $USER->id;
+            $newentry->timemarked   = $timenow;
+            $newentry->mailed       = 0;           // Make sure mail goes out (again, even)
+            $newentry->id           = $num;
             if (!$DB->update_record("journal_entries", $newentry)) {
                 notify("Failed to update the journal feedback for user $entry->userid");
             } else {
                 $count++;
             }
-            $entrybyuser[$entry->userid]->rating     = $vals['r'];
-            $entrybyuser[$entry->userid]->entrycomment    = $vals['c'];
+            $entrybyuser[$entry->userid]->rating     = $studentrating;
+            $entrybyuser[$entry->userid]->entrycomment    = $studentcomment;
             $entrybyuser[$entry->userid]->teacher    = $USER->id;
             $entrybyuser[$entry->userid]->timemarked = $timenow;
 
@@ -104,11 +108,30 @@ if ($data = data_submitted()) {
             journal_update_grades($journal, $entry->userid);
         }
     }
-    add_to_log($course->id, "journal", "update feedback", "report.php?id=$cm->id", "$count users", $cm->id);
+
+    // Trigger module feedback updated event.
+    $event = \mod_journal\event\feedback_updated::create(array(
+        'objectid' => $journal->id,
+        'context' => $context
+    ));
+    $event->add_record_snapshot('course_modules', $cm);
+    $event->add_record_snapshot('course', $course);
+    $event->add_record_snapshot('journal', $journal);
+    $event->trigger();
+
     notify(get_string("feedbackupdated", "journal", "$count"), "notifysuccess");
 
 } else {
-    add_to_log($course->id, "journal", "view responses", "report.php?id=$cm->id", "$journal->id", $cm->id);
+
+    // Trigger module viewed event.
+    $event = \mod_journal\event\entries_viewed::create(array(
+        'objectid' => $journal->id,
+        'context' => $context
+    ));
+    $event->add_record_snapshot('course_modules', $cm);
+    $event->add_record_snapshot('course', $course);
+    $event->add_record_snapshot('journal', $journal);
+    $event->trigger();
 }
 
 /// Print out the journal entries
@@ -121,7 +144,7 @@ if ($currentgroup) {
 $users = get_users_by_capability($context, 'mod/journal:addentries', '', '', '', '', $groups);
 
 if (!$users) {
-	echo $OUTPUT->heading(get_string("nousersyet"));
+    echo $OUTPUT->heading(get_string("nousersyet"));
 
 } else {
 

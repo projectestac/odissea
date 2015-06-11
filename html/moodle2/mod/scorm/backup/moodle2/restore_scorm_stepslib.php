@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package moodlecore
+ * @package    mod_scorm
  * @subpackage backup-moodle2
- * @copyright 2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright  2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
@@ -64,6 +64,10 @@ class restore_scorm_activity_structure_step extends restore_activity_structure_s
         $data->timeopen = $this->apply_date_offset($data->timeopen);
         $data->timeclose = $this->apply_date_offset($data->timeclose);
         $data->timemodified = $this->apply_date_offset($data->timemodified);
+
+        if (!isset($data->displayactivityname)) {
+            $data->displayactivityname = true;
+        }
 
         // insert the scorm record
         $newitemid = $DB->insert_record('scorm', $data);

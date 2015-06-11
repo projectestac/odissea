@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,18 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcohort'] = '新建群组';
+$string['allcohorts'] = '所有群组';
 $string['anycohort'] = '任意';
 $string['assign'] = '分配';
+$string['assigncohorts'] = '分配群组成员';
 $string['assignto'] = '群“{$a}”的成员';
 $string['backtocohorts'] = '回到群组';
 $string['bulkadd'] = '添加到群组';
 $string['bulknocohort'] = '没有可用的群组';
 $string['cohort'] = '群组';
-$string['cohort:assign'] = '分配群组成员';
-$string['cohort:manage'] = '管理群组';
 $string['cohorts'] = '群组';
 $string['cohortsin'] = '{$a}：可用群组';
-$string['cohort:view'] = '使用群组和查看成员';
 $string['component'] = '来源';
 $string['currentusers'] = '当前用户';
 $string['currentusersmatching'] = '匹配的当前用户';
@@ -57,5 +56,16 @@ $string['removeuserwarning'] = '从群组删除用户可能会导致撤销该用
 $string['search'] = '搜索';
 $string['searchcohort'] = '搜索群组';
 $string['selectfromcohort'] = '从群组选择成员';
+$string['systemcohorts'] = '系统群组';
 $string['unknowncohort'] = '未知群组（{$a}）！';
+$string['uploadcohorts'] = '上传群组';
+$string['uploadcohorts_help'] = '群组可以用过文本文件上传。文件格式应当是：
+
+* 每行包含一条记录
+* 每条记录是由逗号 (或其他分隔符) 分隔的一系列数据
+* 第一条记录为字段名称的列表，用于定义文件其它部分的格式
+* 必填的字段是 name
+* 可选的字段是 idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
+$string['uploadedcohorts'] = '上传 {$a} 个群组';
 $string['useradded'] = '用户已加入群组“{$a}”';
+$string['visible'] = '是否可见';

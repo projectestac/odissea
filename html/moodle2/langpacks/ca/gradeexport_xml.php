@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xml', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradeexport_xml', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   gradeexport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fitxer XML';
-$string['useridnumberwarning'] = 'S\'exclouen de l\'exportació a XML els usuaris sense un número d\'identificació perquè no es poden importar.';
 $string['xml:publish'] = 'Publicar qualificacions exportades en format XML';
 $string['xml:view'] = 'Utilitzar qualificacions exportades en format XML';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['nogroupusers'] = '<p>Oharra: Tailerra \'Taldeek elkar ikusten dute\' mo
 
 <p>Hurrengo erabiltzaileek une honetan ez daude inongo taldetan: {$a}</p>';
 $string['numofdeallocatedassessment'] = '{$a} esleipen kentzen';
-$string['numofrandomlyallocatedsubmissions'] = 'Ausaz {$a} bidalketa esleitu dira';
+$string['numofrandomlyallocatedsubmissions'] = 'Ausaz {$a} bidalketa esleitzen ari dira';
 $string['numofreviews'] = 'Berrikusketa-kopurua';
 $string['numofselfallocatedsubmissions'] = '{$a} bidalketa automatikoki esleitzen';
 $string['numperauthor'] = 'bidalketako';

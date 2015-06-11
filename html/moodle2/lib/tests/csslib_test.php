@@ -1231,7 +1231,7 @@ CSS;
 
         // Test something with unicode characters.
         $css = 'a,b{} nav a:hover:after { content: "↓"; } b{ color:test;}';
-        $chunks = css_chunk_by_selector_count($css, 'styles.php?type=test', 2, true);
+        $chunks = css_chunk_by_selector_count($css, 'styles.php?type=test', 2);
         $this->assertCount(2, $chunks);
         $this->assertSame('a,b{}', $chunks[0]);
         $this->assertSame("@import url(styles.php?type=test&chunk=1);\n nav a:hover:after { content: \"↓\"; } b{ color:test;}", $chunks[1]);

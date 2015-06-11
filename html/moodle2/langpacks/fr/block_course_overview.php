@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Le nombre maximal de cours devant être affi
 $string['expandall'] = 'Déplier la liste de tous les cours';
 $string['forcedefaultmaxcourses'] = 'Imposer le nombre maximal de cours';
 $string['forcedefaultmaxcoursesdesc'] = 'Si ce réglage est activé, les utilisateurs ne pourront pas modifier ce réglage dans leur profil';
+$string['fullpath'] = 'Toutes les catégories et sous-catégories';
 $string['hiddencoursecount'] = 'Vous avez {$a} cours non affiché';
 $string['hiddencoursecountplural'] = 'Vous avez {$a} cours non affichés';
 $string['hiddencoursecountwithshowall'] = 'Vous avez {$a->coursecount} cours caché ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Déplacement du cours {$a}';
 $string['movecoursehere'] = 'Déplacer le cours ici';
 $string['movetofirst'] = 'Déplacer le cours {$a} tout en haut';
 $string['movingcourse'] = 'Vous être en train de déplacer {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Aucune';
 $string['numtodisplay'] = 'Nombre de cours à afficher :';
+$string['onlyparentname'] = 'Catégories parentes seulement';
 $string['otherexpanded'] = 'Liste des autres cours dépliée';
 $string['pluginname'] = 'Vue d\'ensemble des cours';
 $string['preservestates'] = 'Préserver les états replié/déplié';
 $string['shortnameprefix'] = 'Inclut {$a}';
 $string['shortnamesufixprural'] = '(et {$a} autres)';
 $string['shortnamesufixsingular'] = '(et {$a} autre)';
+$string['showcategories'] = 'Catégories à afficher';
+$string['showcategoriesdesc'] = 'Ce réglage détermine si les catégories de cours seront affichées au-dessous de chaque cours.';
 $string['showchildren'] = 'Afficher les enfants';
 $string['showchildrendesc'] = 'Si ce réglage est activé, les cours enfants seront affichés sous le titre du cours principal';
 $string['showwelcomearea'] = 'Afficher la zone de bienvenue';

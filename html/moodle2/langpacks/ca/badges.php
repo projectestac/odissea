@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,10 @@ $string['anymethodactivity'] = 'S\'ha completat qualsevol de les activitats sele
 $string['anymethodcourseset'] = 'S\'ha completat qualsevol dels cursos seleccionats';
 $string['anymethodmanual'] = 'Qualsevol dels rols seleccionats pot concedir la insígnia.';
 $string['anymethodprofile'] = 'S\'ha completat qualsevol dels camps del perfil seleccionats';
+$string['archivebadge'] = 'Voleu suprimir la insígnia \'{$a}\', però mantenir les insígnies existents ja emeses?';
+$string['archiveconfirm'] = 'Suprimeix i manté les insígnies existents ja emeses.';
+$string['archivehelp'] = '<p> Aquesta opció significa que la insígnia ha estat marcada com a "retirada" i no apareixerà a la llista d\'insígnies. Els usuaris ja no podran guanyar aquesta insígnia, però els que l\'hagin rebuda anteriorment continuaran mostrant-la en les seves pàgines de perfil i podran promoure-la a les seves motxilles externes.</p>
+<p>Si voleu que els vostres estudiants conservin l\'accés a les insígnies que hagin guanyat, és important seleccionar aquesta opció en lloc de suprimir totalment les insígnies.</p>';
 $string['attachment'] = 'Adjunta la insígnia al missatge';
 $string['attachment_help'] = 'Si s\'habilita, s\'adjuntarà un fitxer amb la insígnia lliurada al missatge de correu perquè el destinatari la pugui descarregar. (Per poder usar aquesta caractarística cal que els fitxers adjunts estiguin permesos a Administració del lloc > Connectors > Missatges sortints > Correu electrònic.)';
 $string['award'] = 'Insígnia guanyada';
@@ -184,15 +188,19 @@ $string['currentstatus'] = 'Estat actual:';
 $string['dateawarded'] = 'Data publicada';
 $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Dia (dies)';
-$string['deactivate'] = 'Inhabilita l\'accés';
+$string['deactivate'] = 'Deshabilita l\'accés';
 $string['deactivatesuccess'] = 'L\'accés a les insígnies s\'ha desactivat amb èxit.';
 $string['defaultissuercontact'] = 'Dades de contacte de l\'emissor de la insígnia per defecte';
 $string['defaultissuercontact_desc'] = 'Una adreça de correu electrònic associada a l\'entitat emissora de la insígnia.';
 $string['defaultissuername'] = 'Nom de l\'emissor de la insígnia per defecte';
 $string['defaultissuername_desc'] = 'Nom de l\'autoritat que expedeix.';
-$string['delbadge'] = 'Suprimeix la insígnia';
-$string['delconfirm'] = 'Esteu segurs que voleu suprimir la insígnia \'{$a}\'?';
+$string['delbadge'] = 'Voleu suprimir la insígnia \'{$a}\'  i eliminar les insígnies ja emeses?';
+$string['delconfirm'] = 'Esteu segur que voleu suprimir la insígnia \'{$a}\' i eliminar les insígnies ja emeses?';
 $string['delcritconfirm'] = 'Esteu segur que voleu suprimir aquest criteri?';
+$string['deletehelp'] = '<p>Suprimir completament una insígnia vol dir que tots els seus registres d\'informació i criteris s\'eliminaran de forma permanent. Els usuaris que hagin guanyat aquesta insígnia ja no hi tindran accés i no es visualitzarà en les seves pàgines de perfil. </p>
+<p>
+Nota: Els usuaris que hagin guanyat aquesta insígnia i l\'hagin promoguda a la seva motxilla externa, conservaran aquesta insígnia en la motxilla externa. No obstant això, no funcionaran els enllaços a les pàgines de criteris i evidències en aquest lloc web.
+</p>';
 $string['delparamconfirm'] = 'Esteu segur que voleu suprimir aquest paràmetre?';
 $string['description'] = 'Descripció';
 $string['disconnect'] = 'Desconnecta';
@@ -343,7 +351,7 @@ Una vegada una insígnia s\'ha emès almenys per a un usuari, es **BLOCA** autom
 
 Volem assegurar-nos que tots els usuaris completen els mateixos requisits per a guanyar una insígnia. Actualment, no és possible revocar insígnies. Si permetem que els requisits d\'insígnies es puguen modificar en qualsevol moment, probablement acabaríem amb usuaris amb la mateixa insígnia per satisfer completament diferents requisits.';
 $string['statusmessage_0'] = 'Actualment aquesta insígnia no està disponible per als usuaris. Habiliteu l\'accés si voleu que els usuaris la puguin guanyar.';
-$string['statusmessage_1'] = 'Actualment aquesta insígnia està disponible per als usuaris. Inhabiliteu l\'accés per fer qualsevol canvi.';
+$string['statusmessage_1'] = 'Actualment aquesta insígnia està disponible per als usuaris. Deshabiliteu l\'accés per fer qualsevol canvi.';
 $string['statusmessage_2'] = 'Actualment aquesta insígnia no està disponible per als usuaris i els criteris estan blocats. Habiliteu l\'accés si voleu que els usuaris la puguin guanyar.';
 $string['statusmessage_3'] = 'Actualment aquesta insígnia està disponible per als usuaris i els criteris estan blocats.';
 $string['statusmessage_4'] = 'Actualment aquesta insígnia està arxivada.';

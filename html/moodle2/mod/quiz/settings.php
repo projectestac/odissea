@@ -17,10 +17,9 @@
 /**
  * Administration settings definitions for the quiz module.
  *
- * @package    mod
- * @subpackage quiz
- * @copyright  2010 Petr Skoda
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   mod_quiz
+ * @copyright 2010 Petr Skoda
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 
@@ -68,7 +67,7 @@ if ($ADMIN->fulltree) {
     // What to do with overdue attempts.
     $quizsettings->add(new mod_quiz_admin_setting_overduehandling('quiz/overduehandling',
             get_string('overduehandling', 'quiz'), get_string('overduehandling_desc', 'quiz'),
-            array('value' => 'autoabandon', 'adv' => false), null));
+            array('value' => 'autosubmit', 'adv' => false), null));
 
     // Grace period time.
     $quizsettings->add(new admin_setting_configtext_with_advanced('quiz/graceperiod',
@@ -218,7 +217,7 @@ if ($ADMIN->fulltree) {
         300 => get_string('numminutes', 'moodle', 5),
     );
     $quizsettings->add(new admin_setting_configselect('quiz/autosaveperiod',
-            get_string('autosaveperiod', 'quiz'), get_string('autosaveperiod_desc', 'quiz'), 0, $options));
+            get_string('autosaveperiod', 'quiz'), get_string('autosaveperiod_desc', 'quiz'), 120, $options));
 }
 
 // Now, depending on whether any reports have their own settings page, add

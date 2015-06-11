@@ -19,6 +19,7 @@ $PAGE->set_url(new moodle_url('/mod/rcontent/index.php', array('id' => $id)));
 // Report index make text translatable
 $strrcontent = get_string('modulename', 'rcontent');
 
+\mod_rcontent\event\course_module_instance_list_viewed::create_from_course($course)->trigger();
 
 /// Print the header
 echo $PAGE->set_heading($course->fullname);
@@ -106,7 +107,7 @@ for($i=$startindex;$i<($startindex+$limit);$i++) {
         $link = '<a href="view.php?id=' . $rcontent->coursemodule . '">' . $rcontent->name . '</a>';
     }
 
-    $table->data[] = array($rcontent->section, $link, $rcontent->summary,$reportshow);
+    $table->data[] = array($rcontent->section, $link, $rcontent->intro, $reportshow);
 }
 
 if (!isset($context)) {
@@ -115,7 +116,7 @@ if (!isset($context)) {
 
 if (has_capability('mod/rcontent:viewreport', $context)) {
 	$menu = array();
-	$menu[]                        = get_string('all', 'rcontent');
+	$menu[]                        = get_string('all');
 	$menu['NO_INICIADO']  = get_string('NO_INICIADO', 'rcontent');
 	$menu['INCOMPLETO']   = get_string('INCOMPLETO', 'rcontent');
 	$menu['FINALIZADO']   = get_string('FINALIZADO', 'rcontent');

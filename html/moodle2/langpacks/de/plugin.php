@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,8 +37,8 @@ $string['err_response_curl'] = 'Unerwarteter Fehler: verfügbare Aktualisierung 
 $string['err_response_format_version'] = 'Unerwartete Fehler: prüfen Sie die verfügbaren Aktualisierungen erneut.';
 $string['err_response_http_code'] = 'Unerwarteter Fehler: verfügbare Aktualisierung konnte nicht geladen werden.';
 $string['filterall'] = 'Alle zeigen';
-$string['filtercontribonly'] = 'Nur Add-ons zeigen';
-$string['filtercontribonlyactive'] = 'Nur Add-ons';
+$string['filtercontribonly'] = 'Nur zusätzliche Plugins zeigen';
+$string['filtercontribonlyactive'] = 'Nur zusätzliche Plugins zeigen';
 $string['filterupdatesonly'] = 'Nur Aktualisierbare zeigen';
 $string['filterupdatesonlyactive'] = 'Nur Aktualisierbare';
 $string['moodleversion'] = 'Moodle {$a}';
@@ -53,16 +53,17 @@ $string['notwritable_help'] = 'Die automatische Aktualisierung für Plugins ist 
 
 Sie müssen die Rechte für das Plugin-Verzeichnis anpassen, damit der Webserver die notwendigen Dateien speichern darf und die Aktualisierung ausführen kann.';
 $string['numdisabled'] = 'Deaktiviert: {$a}';
-$string['numextension'] = 'Add-ons: {$a}';
+$string['numextension'] = 'Zusätzlich: {$a}';
 $string['numtotal'] = 'Installiert: {$a}';
 $string['numupdatable'] = 'Verfügbare Aktualisierungen: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
-$string['pluginchecknotice'] = 'Diese Plugins fordern eine Beachtung. Markiert sind neue Plugins, aktualisierbare Plugins und fehlende Plugins. Die aktualisierbaren und fehlenden Versionen sollten Sie laden, bevor Sie die Aktualisierung von Moodle fortsetzen.';
+$string['pluginchecknotice'] = 'Diese Plugins fordern Ihre Aufmerksamkeit. Markiert sind neue Plugins, aktualisierbare Plugins und fehlende Plugins. Die aktualisierbaren und fehlenden Versionen sollten Sie laden, bevor Sie die Aktualisierung von Moodle fortsetzen.';
 $string['plugindisable'] = 'Deaktivieren';
 $string['plugindisabled'] = 'Deaktiviert';
 $string['pluginenable'] = 'Aktivieren';
 $string['pluginenabled'] = 'Aktiviert';
+$string['release'] = 'Release';
 $string['requiredby'] = 'Notwendig für: {$a}';
 $string['requires'] = 'Erfordert';
 $string['rootdir'] = 'Verzeichnis';
@@ -86,6 +87,8 @@ $string['systemname'] = 'Identifizierung';
 $string['type_auth'] = 'Plugin zur Authentifizierung
 ';
 $string['type_auth_plural'] = 'Plugins zur Authentifizierung';
+$string['type_availability'] = 'Voraussetzungen';
+$string['type_availability_plural'] = 'Voraussetzungen';
 $string['type_block'] = 'Block';
 $string['type_block_plural'] = 'Blöcke';
 $string['type_cachelock'] = 'Verfahren der Cache-Sperre';

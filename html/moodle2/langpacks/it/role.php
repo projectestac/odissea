@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,6 +151,7 @@ $string['course:movesections'] = 'Spostare sezioni';
 $string['course:publish'] = 'Pubblicare corsi nell\'hub';
 $string['course:request'] = 'Richiedere corsi';
 $string['course:reset'] = 'Eseguire reset del corso';
+$string['course:reviewotherusers'] = 'Rivedere altri utenti';
 $string['course:sectionvisibility'] = 'Gestire visibilità delle sezioni';
 $string['course:setcurrentsection'] = 'Impostare sezione attiva';
 $string['course:update'] = 'Modificare impostazioni del corso';
@@ -178,10 +179,10 @@ $string['defaultx'] = 'Default: {$a}';
 $string['defineroles'] = 'Gestione ruoli';
 $string['deletecourseoverrides'] = 'Cancellare tutte le modifiche di ruolo nel corso';
 $string['deletelocalroles'] = 'Cancellare tutte le assegnazioni locali di ruolo';
-$string['deleterolesure'] = '<p> Sei sicuro di voler cancellare "{$a->name} ({$a->shortname})"?</p><p>Attualmente questo ruolo è assegnato a {$a->count} utenti.</p>';
+$string['deleterolesure'] = '<p>Sei sicuro di eliminare il ruolo "{$a->name} ({$a->shortname})"?</p><p>Al momento questo ruolo è assegnato a {$a->count} utenti.</p>';
 $string['deletexrole'] = 'Elimina il ruolo {$a}';
 $string['duplicaterole'] = 'Duplica ruolo';
-$string['duplicaterolesure'] = 'Sei sicuro di voler duplicare il ruolo  "<b>{$a->name} ({$a->shortname})</b>"?</p>';
+$string['duplicaterolesure'] = 'Sei sicuro di duplicare il ruolo "<b>{$a->name} ({$a->shortname})</b>"?</p>';
 $string['editingrolex'] = 'Modifica del ruolo \'{$a}\'';
 $string['editrole'] = 'Modificare ruolo';
 $string['editxrole'] = 'Modifica il ruolo {$a}';
@@ -361,6 +362,7 @@ $string['site:backup'] = 'Effettuare backup corsi';
 $string['site:config'] = 'Cambiare configurazione del sito';
 $string['site:doanything'] = 'Modificare qualsiasi cosa';
 $string['site:doclinks'] = 'Visualizzare link a documenti esterni';
+$string['site:forcelanguage'] = 'Forzare lingua del corso';
 $string['site:import'] = 'Importare altri corsi in un corso';
 $string['site:manageblocks'] = 'Gestire blocchi nelle pagine';
 $string['site:mnetloginfromremote'] = 'Effettuare login da un Moodle remoto';
@@ -409,6 +411,7 @@ $string['user:update'] = 'Aggiornare i profili utente';
 $string['user:viewalldetails'] = 'Visualizzare il profilo completo degli utenti';
 $string['user:viewdetails'] = 'Visualizzare i profili utente';
 $string['user:viewhiddendetails'] = 'Visualizzare campi nascosti nei profili utenti';
+$string['user:viewlastip'] = 'Visualizzare Indirizzo IP più recente';
 $string['user:viewuseractivitiesreport'] = 'Visualizzare i report delle attività degli utenti';
 $string['user:viewusergrades'] = 'Visualizzare le valutazioni degli utenti';
 $string['useshowadvancedtochange'] = 'Per modificare, utilizza \'Visualizza impostazioni avanzate\'';

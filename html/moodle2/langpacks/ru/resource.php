@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,6 @@ $string['modulename_help'] = 'Модуль «Файл» позволяет пр�
 * Для включения мини-сайта в качестве ресурса курса.
 * Для предоставления файла проекта определенных программ (например, .psd для Photoshop), чтобы студенты могли его отредактировать и предоставить для оценивания.';
 $string['modulenameplural'] = 'Файлы';
-$string['neverseen'] = 'Не смотрел(а)';
 $string['notmigrated'] = 'К сожалению, этот устаревший тип ресурса ({$a}) еще не может быть мигрирован.';
 $string['optionsheader'] = 'Параметры отображения';
 $string['page-mod-resource-x'] = 'Любая страница модуля «Файл»';

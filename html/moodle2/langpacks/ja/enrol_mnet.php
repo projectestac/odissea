@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_mnet', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'このホストに関して、いくつかのMNet登録プラグインインスタンスがすでに存在しています。1ホストあたり1つのインスタンスのみ、または「すべてのホスト」が許可されます。';
 $string['instancename'] = '登録方法名';
 $string['instancename_help'] = 'あなたは任意でこのMNet登録メソッドのインスタンスをリネームすることができます。空白にした場合、リモートホストおよびあちらのユーザに割り当てられるロールを含むデフォルトのインスタンス名が使用されます。';
+$string['mnet:config'] = 'MNet登録インスタンスを設定する';
 $string['mnet_enrol_description'] = 'このサービスを公開することで、あなたのサーバに作成したコースに対して、 {$a} の管理者は自分の学生を受講登録することができます。
 
 <br />

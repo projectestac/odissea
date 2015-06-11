@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_generator', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['bigfile'] = 'Große Datei {$a}';
-$string['courseexplanation'] = 'Dieses Werkzeug erzeugt Standardtestkurse mit mehreen Themenabschnitten, Aktivitäten und Dateien.
+$string['courseexplanation'] = 'Dieses Werkzeug erzeugt Standardtestkurse mit mehreren Themenabschnitten, Aktivitäten und Dateien.
 
-Damit wird ein satndardisiertes Werkzeug zur Messung der Verlässlichkeit und Perfoprmance verschiedener Systemkomponenten geschaffen (z.B. Backup und Wiederherstellung).
+Damit wird ein standardisiertes Werkzeug zur Messung der Verlässlichkeit und Performance verschiedener Systemkomponenten geschaffen (z.B. Backup und Wiederherstellung).
 
-Dieses Tests sind wichtig. In der Praxis hat sich gezeigt, das man auch Extremsituationen wie Kurse mit 1.000 Aktivitäten überprüfen sollte.
+Diese Tests sind wichtig. In der Praxis hat sich gezeigt, dass man auch Extremsituationen wie Kurse mit 1.000 Aktivitäten überprüfen sollte.
 
-Derartig große Kurse können, wenn sie mit diesem Werkzeug erzeugt werden, viel Platz auf der Datenbank und Speicherplatz für den Dateibereich in Anspruch nehmen (10 GB und deutlich mehr). Löscehn sie daher diese Kurse nach Gebrauch wieder. Es wird u.U. mehrere Bereinigungsdurchläufe erfordern bis alle Daten gelöscht sind.
+Derartig große Kurse können, wenn sie mit diesem Werkzeug erzeugt werden, viel Platz auf der Datenbank und Speicherplatz für den Dateibereich in Anspruch nehmen (10 GB und deutlich mehr). Löschen Sie daher diese Kurse nach Gebrauch wieder. Es wird u.U. mehrere Bereinigungsdurchläufe erfordern bis alle Daten gelöscht sind.
 
 **Nutzen Sie dieses Werkzeug nicht auf einem Live-System**. Es ist für den Einsatz auf einem Entwicklungsrechner gedacht. (Um eine versehentliche Nutzung zu verhindern, ist es verborgen bis der Entwicklerlevel zum Debuggen aktiviert ist).';
 $string['coursesize_0'] = 'XS (~10KB; angelegt in ~1 Sekunde)';
@@ -56,7 +56,6 @@ $string['error_nonexistingcourse'] = 'Der ausgewählte Kurs existiert nicht';
 $string['error_nopageinstances'] = 'Der ausgewählte Kurs enthält keine Testseitenaktivitäten';
 $string['error_notdebugging'] = 'Auf diesem Server nicht verfügbar, da der Debug-Wert Entwickler nicht gesetzt wurde.';
 $string['error_nouserspassword'] = 'Sie müssen $CFG->tool_generator_users_password in der Datei config.php setzne, um den Testplan zu erstellen.';
-$string['firstname'] = 'Teskursnutzer';
 $string['fullname'] = 'Testkurs: {$a->size}';
 $string['maketestcourse'] = 'Testkurs erstellen';
 $string['maketestplan'] = 'JMeterTestplan erstellen';

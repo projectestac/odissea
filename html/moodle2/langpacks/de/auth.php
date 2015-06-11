@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Nutzerdatenfelder sperren';
 $string['auth_fieldlocks_help'] = '<p>Sie können Datenfelder im Nutzerprofil sperren. Dies ist sinnvoll, wenn die Nutzerdaten von Administratoren gepflegt werden, manuell angelegt oder im Bulkupload (Hochladen über Textdatei) hochgeladen werden. Falls Sie von Moodle benötigte Datenfelder sperren, müssen Sie sicher stellen, dass diese Datenfelder beim Anlegen der Nutzerprofile sinnvoll belegt werden.</p><p>Um Probleme zu vermeiden, achten Sie darauf, dass die Einstellung auf "Bearbeitbar (wenn leer)" gesetzt ist.</p>';
 $string['authinstructions'] = 'Wenn dieses Textfeld leer ist, wird auf der Anmeldeseite der Standardtext angezeigt. Falls Sie eine eigene Anleitung anbieten möchten, welche Anmeldenamen und Kennworte verwendet werden sollen, schreiben Sie hier Ihren Text.';
 $string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Bitte kopieren Sie die URL noch einmal und versuchen es erneut.';
+$string['authloginviaemail'] = 'Anmeldung über E-Mail erlauben';
+$string['authloginviaemail_desc'] = 'Nutzer/innen erlauben, sich mit dem Anmeldenamen oder der E-Mail-Adresse anzumelden, falls die E-Mail-Adresse eindeutig ist.';
 $string['auth_multiplehosts'] = 'Mehrere Adressen können angegeben werden (z.B. host1.com;host2.de;xxx.xxx.xxx.xxx)';
 $string['auth_outofnewemailupdateattempts'] = 'Sie haben die zulässige Zahl von Versuchen überschritten, Ihre E-Mail-Adresse zu ändern. Der Änderungsvorgang wurde abgebrochen.';
 $string['auth_passwordisexpired'] = 'Ihr Kennwort ist abgelaufen. Wollen Sie Ihr Kennwort jetzt aktualisieren?';
@@ -50,7 +52,7 @@ $string['auth_remove_delete'] = 'Intern löschen';
 $string['auth_remove_keep'] = 'Nur intern zugänglich';
 $string['auth_remove_suspend'] = 'Intern sperren';
 $string['auth_remove_user'] = 'Legen Sie fest, was mit einem internen Nutzerprofil passieren soll, wenn bei einer Massensynchronisierung dieser Account im externen System entfernt wurde.  Nur gesperrte Nutzer werden automatisch reaktiviert, wenn sie in der externen Quelle wieder erscheinen.';
-$string['auth_remove_user_key'] = 'Entfernte externe Nutzer/innen';
+$string['auth_remove_user_key'] = 'Entfernte externe Nutzer';
 $string['auth_sync_script'] = 'Cron-Synchronisierungsskript';
 $string['auth_updatelocal'] = 'Lokal aktualisieren';
 $string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal von extern (external auth) aktualisiert, wenn der Teilnehmer sich einloggt oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
@@ -87,8 +89,9 @@ $string['errorminpasswordlower'] = 'Kennworte müssen mindestens {$a} Kleinbuchs
 $string['errorminpasswordnonalphanum'] = 'Kennworte müssen mindestens {$a} Sonderzeichen enthalten, z.B. :#_!§-%&*+?@.';
 $string['errorminpasswordupper'] = 'Kennworte müssen mindestens {$a} Großbuchstaben enthalten.';
 $string['errorpasswordupdate'] = 'Fehler: Kennwort konnte nicht geändert werden!';
-$string['event_user_loggedin'] = 'Nutzer/in ist angemeldet';
+$string['eventuserloggedin'] = 'Nutzer/in ist angemeldet';
 $string['eventuserloggedinas'] = 'Nutzer/in ist als andere Person angemeldet';
+$string['eventuserloginfailed'] = 'Nutzeranmeldung fehlgeschlagen';
 $string['forcechangepassword'] = 'Kennwortänderung fordern';
 $string['forcechangepasswordfirst_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim ersten Anmelden zu ändern.';
 $string['forcechangepassword_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim nächsten Anmelden zu ändern.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'form', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,9 +48,9 @@ $string['minute'] = 'Minutua';
 $string['miscellaneoussettings'] = 'Beste hainbat ezarpen';
 $string['modstandardels'] = 'Moduluaren ezarpen bateratuak';
 $string['month'] = 'Hilabetea';
-$string['mustbeoverriden'] = '{$a} klaseko Abstract form_definition() metodoak baimenduta egon behar du; mesedez, konpondu kodea.';
+$string['mustbeoverriden'] = '{$a} klaseko Abstract form_definition() metodoak baliogabetua egon behar du; mesedez, konpondu kodea.';
 $string['nomethodforaddinghelpbutton'] = '{$a->name} (class {$a->classname}) formularioaren elementuari laguntza botoia gehitzeko metodorik ez dago';
-$string['nonexistentformelements'] = '{$a} formularioaren elementua ez dago eta ezin zaio laguntza botoirik gehitu';
+$string['nonexistentformelements'] = '{$a} formularioan ez dagoen elementuari ezin zaio laguntza botoirik gehitu';
 $string['optional'] = 'Aukerakoa';
 $string['othersettings'] = 'Beste ezarpen batzuk';
 $string['requiredelement'] = 'Beharrezko eremua';

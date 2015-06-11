@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_behat', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['infoheading'] = 'Informazioa';
-$string['moreinfoin'] = 'Informazio gehiago hemen: $a}';
 $string['stepsdefinitionscomponent'] = 'Eremua';
 $string['stepsdefinitionstype'] = 'Mota';
 $string['viewsteps'] = 'Iragazkia';

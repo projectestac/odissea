@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,6 @@ $string['modulename_help'] = 'Le module URL permet à l\'enseignant de fournir u
 
 De nombreuses possibilités d\'affichage sont offertes, par exemple l\'intégration dans une page ou l\'ouverture dans une nouvelle fenêtre. Des options avancées permettent si nécessaire de passer à l\'URL des informations telles que le nom du participant, par exemple.';
 $string['modulenameplural'] = 'URLs';
-$string['neverseen'] = 'Jamais consulté';
 $string['page-mod-url-x'] = 'Toute page du module URL';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'Variables d\'URL';

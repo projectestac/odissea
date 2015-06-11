@@ -32,58 +32,6 @@ $functions = array(
         'classpath'     => 'local/mobile/externallib.php',
         'description'   => 'Remove user devices.',
         'type'          => 'write',
-        'capabilities'  => '',
-    ),
-    'local_mobile_core_grades_get_grades' => array(
-        'classname'     => 'local_mobile_external',
-        'methodname'    => 'core_grades_get_grades',
-        'classpath'     => 'local/mobile/externallib.php',
-        'description'   => 'Returns grade item details and optionally student grades.',
-        'type'          => 'read',
-        'capabilities'  => 'moodle/grade:view, moodle/grade:viewall',
-    ),
-    'local_mobile_mod_forum_get_forums_by_courses' => array(
-        'classname'     => 'local_mobile_external',
-        'methodname'    => 'mod_forum_get_forums_by_courses',
-        'classpath'     => 'local/mobile/externallib.php',
-        'description'   => 'Returns a list of forum instances in a provided set of courses, if
-            no courses are provided then all the forum instances the user has access to will be
-            returned.',
-        'type'          => 'read',
-        'capabilities'  => 'mod/forum:viewdiscussion'
-    ),
-    'local_mobile_mod_forum_get_forum_discussions_paginated' => array(
-        'classname'     => 'local_mobile_external',
-        'methodname'    => 'mod_forum_get_forum_discussions_paginated',
-        'classpath'     => 'local/mobile/externallib.php',
-        'description'   => 'Returns a list of forum discussions contained within a given set of forums.',
-        'type'          => 'read',
-        'capabilities'  => 'mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting',
-    ),
-    'local_mobile_mod_forum_get_forum_discussion_posts' => array(
-        'classname'     => 'local_mobile_external',
-        'methodname'    => 'mod_forum_get_forum_discussion_posts',
-        'classpath'     => 'local/mobile/externallib.php',
-        'description'   => 'Returns a list of forum posts for a discussion.',
-        'type'          => 'read',
-        'capabilities'  => 'mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting',
-    ),
-    'local_mobile_core_message_get_messages' => array(
-        'classname'     => 'local_mobile_external',
-        'methodname'    => 'core_message_get_messages',
-        'classpath'     => 'local/mobile/externallib.php',
-        'description'   => 'Retrieve a list of messages send or received by a user (conversations, notifications or both)',
-        'type'          => 'read',
-        'capabilities'  => '',
-    ),
-    'local_mobile_core_files_get_files' => array(
-        'classname'     => 'local_mobile_external',
-        'methodname'    => 'core_files_get_files',
-        'description'   => 'browse moodle files',
-        'type'          => 'read',
-        'classpath'     => 'local/mobile/externallib.php',
-        'type'          => 'read',
-        'capabilities'  => '',
     ),
     'local_mobile_gradereport_user_get_grades_table' => array(
         'classname'   => 'local_mobile_external',
@@ -170,6 +118,123 @@ $functions = array(
         'type'          => 'read',
         'capabilities'  => 'moodle/notes:view',
     ),
+
+    'local_mobile_core_course_view_course' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_course_view_course',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Log that the course was viewed',
+        'type'        => 'write'
+    ),
+
+    'local_mobile_core_user_view_user_list' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_user_view_user_list',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulates the web-interface view of user/index.php (triggering events).',
+        'type'          => 'write',
+        'capabilities'  => 'moodle/course:viewparticipants',
+    ),
+
+    'local_mobile_core_user_view_user_profile' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_user_view_user_profile',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulates the web-interface view of user/view.php and user/profile.php (triggering events).',
+        'type'          => 'write',
+        'capabilities'  => 'moodle/user:viewdetails',
+    ),
+
+    'local_mobile_gradereport_user_view_grade_report' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'gradereport_user_view_grade_report',
+        'classpath' => 'local/mobile/externallib.php',
+        'description' => 'Trigger the report view event',
+        'type' => 'write',
+        'capabilities' => 'gradereport/user:view'
+    ),
+
+    'local_mobile_mod_forum_view_forum' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_forum_view_forum',
+        'classpath' => 'local/mobile/externallib.php',
+        'description' => 'Simulate the view.php web interface page: trigger events, completion, etc...',
+        'type' => 'write',
+        'capabilities' => 'mod/forum:viewdiscussion'
+    ),
+
+    'local_mobile_mod_forum_view_forum_discussion' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_forum_view_forum_discussion',
+        'classpath' => 'local/mobile/externallib.php',
+        'description' => 'Simulate the forum/discuss.php web interface page: trigger events, completion, etc...',
+        'type' => 'write',
+        'capabilities' => 'mod/forum:viewdiscussion'
+    ),
+
+    'local_mobile_core_message_mark_message_read' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_message_mark_message_read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Mark a single message as read, trigger message_viewed event.',
+        'type'          => 'write',
+        'capabilities'  => '',
+    ),
+
+    'local_mobile_core_notes_view_notes' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_notes_view_notes',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulates the web interface view of notes/index.php: trigger events.',
+        'type'          => 'write',
+        'capabilities'  => 'moodle/notes:view',
+    ),
+
+    'local_mobile_mod_resource_view_resource' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_resource_view_resource',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface page: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => 'mod/resource:view'
+    ),
+
+    'local_mobile_mod_url_view_url' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_url_view_url',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface page: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => 'mod/url:view'
+    ),
+
+    'local_mobile_mod_page_view_page' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_page_view_page',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface page: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => 'mod/page:view'
+    ),
+
+    'local_mobile_mod_assign_view_grading_table' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_assign_view_grading_table',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface page: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => 'mmod/assign:view, mod/assign:viewgrades'
+    ),
+
+    'local_mobile_mod_folder_view_folder' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_folder_view_folder',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface folder: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => 'mod/folder:view'
+    ),
+
 );
 
 $services = array(
@@ -191,14 +256,17 @@ $services = array(
             'moodle_message_send_instantmessages',
             'core_course_get_contents',
             'core_get_component_strings',
-            'local_mobile_core_message_get_messages',
+            'core_message_get_messages',
             'core_calendar_get_calendar_events',
             'core_user_add_user_device',
-            'local_mobile_core_grades_get_grades',
-            'local_mobile_mod_forum_get_forums_by_courses',
-            'local_mobile_mod_forum_get_forum_discussions_paginated',
-            'local_mobile_mod_forum_get_forum_discussion_posts',
-            'local_mobile_core_files_get_files',
+            'core_grades_get_grades',
+            'message_airnotifier_is_system_configured',
+            'message_airnotifier_are_notification_preferences_configured',
+            'mod_forum_get_forums_by_courses',
+            'mod_forum_get_forum_discussions_paginated',
+            'mod_forum_get_forum_discussion_posts',
+            'core_files_get_files',
+            'core_message_get_messages',
             'core_message_create_contacts',
             'core_message_delete_contacts',
             'core_message_block_contacts',
@@ -210,12 +278,27 @@ $services = array(
             'local_mobile_core_message_get_blocked_users',
             'local_mobile_core_group_get_course_user_groups',
             'local_mobile_core_user_remove_user_device',
+            'mod_assign_get_assignments',
+            'mod_assign_get_submissions',
             'local_mobile_core_completion_update_activity_completion_status_manually',
             'local_mobile_core_completion_get_course_completion_status',
             'local_mobile_core_completion_get_activities_completion_status',
             'local_mobile_core_comment_get_comments',
             'local_mobile_core_notes_get_course_notes',
             'local_mobile_core_rating_get_item_ratings',
+            'local_mobile_core_course_view_course',
+            'local_mobile_core_user_view_user_list',
+            'local_mobile_core_user_view_user_profile',
+            'local_mobile_gradereport_user_view_grade_report',
+            'local_mobile_core_message_mark_message_read',
+            'local_mobile_core_notes_view_notes',
+            'local_mobile_mod_forum_view_forum',
+            'local_mobile_mod_forum_view_forum_discussion',
+            'local_mobile_mod_resource_view_resource',
+            'local_mobile_mod_url_view_url',
+            'local_mobile_mod_page_view_page',
+            'local_mobile_mod_assign_view_grading_table',
+            'local_mobile_mod_folder_view_folder',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

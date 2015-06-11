@@ -505,6 +505,16 @@ $capabilities = array(
         'clonepermissionsfrom' => 'moodle/user:update'
     ),
 
+    'moodle/user:viewlastip' => array(
+        'riskbitmask' => RISK_PERSONAL,
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_USER,
+        'archetypes' => array(
+            'manager' => CAP_ALLOW
+        ),
+        'clonepermissionsfrom' => 'moodle/user:update'
+    ),
+
     'moodle/user:viewhiddendetails' => array(
 
         'riskbitmask' => RISK_PERSONAL,
@@ -713,8 +723,7 @@ $capabilities = array(
         )
     ),
 
-    // view members of a cohort, this can be used in course context too,
-    // this also controls the ability to actually use cohort
+    // View visible and hidden cohorts defined in the current context.
     'moodle/cohort:view' => array(
 
         'captype' => 'read',
@@ -801,6 +810,17 @@ $capabilities = array(
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW,
         )
+    ),
+
+    'moodle/course:reviewotherusers' => array(
+
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_COURSE,
+        'archetypes' => array(
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW,
+        ),
+        'clonepermissionsfrom' => 'moodle/role:assign'
     ),
 
     'moodle/course:bulkmessaging' => array(
@@ -2002,6 +2022,13 @@ $capabilities = array(
                 'manager'        => CAP_ALLOW,
                 'teacher'        => CAP_ALLOW,
                 'editingteacher' => CAP_ALLOW,
+        )
+    ),
+
+    'moodle/site:forcelanguage' => array(
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'archetypes' => array(
         )
     )
 );

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,12 +41,12 @@ $string['clozeaid'] = 'テキストを入力してください。';
 $string['correctansweris'] = '正答: {$a}';
 $string['correctfeedback'] = '正解すべてに対するフィードバック';
 $string['errfractionsaddwrong'] = 'あなたが選択したプラス評点の合計が、100%になっていません。<br />現在の評点合計は {$a}% です。';
-$string['errfractionsnomax'] = 'この問題で満点を取ることができるよう、<br />選択肢の1つは、100%でなければなりません。';
+$string['errfractionsnomax'] = 'この問題で満点を取ることができるよう<br />選択肢の1つは、100%でなければなりません。';
 $string['errgradesetanswerblank'] = '評点は設定されていますが、答えが空白です。';
 $string['feedback'] = 'フィードバック';
 $string['fillouttwochoices'] = 'あなたは少なくとも2つ以上の選択肢を入力する必要があります。空白の選択肢は使用されません。';
 $string['fractionsaddwrong'] = 'あなたが選択したプラス評点の合計が、100%になっていません。<br />現在の評点合計は {$a}% です。<br />戻ってこの問題を修正しますか?';
-$string['fractionsnomax'] = 'この問題で満点を取ることができるよう、<br />答えの1つは、100%でなければなりません。 <br />前のページに戻ってこの問題を修正しますか?';
+$string['fractionsnomax'] = 'この問題で満点を取ることができるよう<br />答えの1つは、100%でなければなりません。 <br />前のページに戻ってこの問題を修正しますか?';
 $string['incorrectfeedback'] = '不正解すべてに対するフィードバック';
 $string['notenoughanswers'] = 'このタイプの問題には少なくとも {$a} の選択肢が必要です。';
 $string['overallcorrectfeedback'] = '正解すべてに対するフィードバック';

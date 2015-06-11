@@ -50,7 +50,7 @@ var DIALOGUE_NAME = 'Moodle dialogue',
  * @param {Object} c Object literal specifying the dialogue configuration properties.
  * @constructor
  * @class M.core.dialogue
- * @extends Y.Panel
+ * @extends Panel
  */
 DIALOGUE = function(c) {
     var config = Y.clone(c);
@@ -69,24 +69,6 @@ DIALOGUE = function(c) {
     }
 
     config.srcNode =    '#'+id;
-    config.render =     (typeof config.render !== 'undefined') ? config.render : true;
-    config.width =      config.width || '400px';
-    if (typeof config.center === 'undefined') {
-        config.center = true;
-    } else {
-        config.center = config.centered && true;
-    }
-    config.centered =   false;
-
-    if (config.width === 'auto') {
-        delete config.width;
-    }
-
-    // lightbox param to keep the stable versions API.
-    if (config.lightbox !== false) {
-        config.modal = true;
-    }
-    delete config.lightbox;
 
     // closeButton param to keep the stable versions API.
     if (config.closeButton === false) {
@@ -115,20 +97,28 @@ Y.extend(DIALOGUE, Y.Panel, {
     // Orientation change event listener.
     _orientationevent : null,
     _calculatedzindex : false,
+
+    /**
+     * The original position of the dialogue before it was reposition to
+     * avoid browser jumping.
+     *
+     * @property _originalPosition
+     * @protected
+     * @type Array
+     */
+    _originalPosition: null,
+
     /**
      * Initialise the dialogue.
      *
      * @method initializer
-     * @return void
      */
     initializer : function() {
         var bb;
 
-        if (this.get('render') && !this.get('rendered')) {
+        if (this.get('render')) {
             this.render();
         }
-
-        this.makeResponsive();
         this.after('visibleChange', this.visibilityChanged, this);
         if (this.get('center')) {
             this.centerDialogue();
@@ -151,22 +141,37 @@ Y.extend(DIALOGUE, Y.Panel, {
         }
         // Recalculate the zIndex every time the modal is altered.
         this.on('maskShow', this.applyZIndex);
-        // We must show - after the dialogue has been positioned,
-        // either by centerDialogue or makeResonsive. This is because the show() will trigger
-        // a focus on the dialogue, which will scroll the page. If the dialogue has not
-        // been positioned it will scroll back to the top of the page.
-        if (this.get('visible')) {
-            this.show();
-            this.keyDelegation();
-        }
+
+        this.on('maskShow', function() {
+            // When the mask shows, position the boundingBox at the top-left of the window such that when it is
+            // focused, the position does not change.
+            var w = Y.one(Y.config.win),
+                bb = this.get('boundingBox');
+
+            if (!this.get('center')) {
+                this._originalPosition = bb.getXY();
+            }
+
+            if (bb.getStyle('position') !== 'fixed') {
+                // If the boundingBox has been positioned in a fixed manner, then it will not position correctly to scrollTop.
+                bb.setStyles({
+                    top: w.get('scrollTop'),
+                    left: w.get('scrollLeft')
+                });
+            }
+        }, this);
+
+        // Remove the dialogue from the DOM when it is destroyed.
+        this.after('destroyedChange', function(){
+            this.get(BASE).remove(true);
+        }, this);
     },
 
     /**
      * Either set the zindex to the supplied value, or set it to one more than the highest existing
      * dialog in the page.
      *
-     * @method visibilityChanged
-     * @return void
+     * @method applyZIndex
      */
     applyZIndex : function() {
         var highestzindex = 1,
@@ -191,6 +196,18 @@ Y.extend(DIALOGUE, Y.Panel, {
             this.set('zIndex', zindexvalue);
             if (this.get('modal')) {
                 ol.setStyle('zIndex', zindexvalue);
+
+                // In IE8, the z-indexes do not take effect properly unless you toggle
+                // the lightbox from 'fixed' to 'static' and back. This code does so
+                // using the minimum setTimeouts that still actually work.
+                if (Y.UA.ie && Y.UA.compareVersions(Y.UA.ie, 9) < 0) {
+                    setTimeout(function() {
+                        ol.setStyle('position', 'static');
+                        setTimeout(function() {
+                            ol.setStyle('position', 'fixed');
+                        }, 0);
+                    }, 0);
+                }
             }
             this._calculatedzindex = true;
         }
@@ -200,8 +217,8 @@ Y.extend(DIALOGUE, Y.Panel, {
      * Finds the zIndex of the given node or its parent.
      *
      * @method findZIndex
-     * @param Node node
-     * @returns int Return either the zIndex of 0 if one was not found.
+     * @param {Node} node The Node to apply the zIndex to.
+     * @return {Number} Either the zIndex, or 0 if one was not found.
      */
     findZIndex : function(node) {
         // In most cases the zindex is set on the parent of the dialog.
@@ -216,7 +233,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      * Event listener for the visibility changed event.
      *
      * @method visibilityChanged
-     * @return void
+     * @param {EventFacade} e
      */
     visibilityChanged : function(e) {
         var titlebar, bb;
@@ -258,11 +275,9 @@ Y.extend(DIALOGUE, Y.Panel, {
      * smaller than the responsive width - make the dialog fullscreen.
      *
      * @method makeResponsive
-     * @return void
      */
     makeResponsive : function() {
-        var bb = this.get('boundingBox'),
-            content;
+        var bb = this.get('boundingBox');
 
         if (this.shouldResizeFullscreen()) {
             // Make this dialogue fullscreen on a small screen.
@@ -277,15 +292,12 @@ Y.extend(DIALOGUE, Y.Panel, {
                           'height' : null,
                           'right' : null,
                           'bottom' : null});
-
-            content = Y.one('#' + this.get('id') + ' .' + CSS.BODY);
         } else {
             if (this.get('responsive')) {
                 // We must reset any of the fullscreen changes.
                 bb.removeClass(DIALOGUE_FULLSCREEN_CLASS)
                     .setStyles({'width' : this.get('width'),
                                 'height' : this.get('height')});
-                content = Y.one('#' + this.get('id') + ' .' + CSS.BODY);
             }
         }
     },
@@ -293,7 +305,6 @@ Y.extend(DIALOGUE, Y.Panel, {
      * Center the dialog on the screen.
      *
      * @method centerDialogue
-     * @return void
      */
     centerDialogue : function() {
         var bb = this.get('boundingBox'),
@@ -315,32 +326,35 @@ Y.extend(DIALOGUE, Y.Panel, {
         if (hidden) {
             bb.addClass(DIALOGUE_HIDDEN_CLASS);
         }
+        this.makeResponsive();
     },
     /**
-     * Return if this dialogue should be fullscreen or not.
+     * Return whether this dialogue should be fullscreen or not.
+     *
      * Responsive attribute must be true and we should not be in an iframe and the screen width should
      * be less than the responsive width.
      *
      * @method shouldResizeFullscreen
-     * @return Boolean
+     * @return {Boolean}
      */
     shouldResizeFullscreen : function() {
         return (window === window.parent) && this.get('responsive') &&
                Math.floor(Y.one(document.body).get('winWidth')) < this.get('responsiveWidth');
     },
 
-    /**
-     * Override the show method to set keyboard focus on the dialogue.
-     *
-     * @method show
-     * @return void
-     */
-    show : function() {
+    show: function() {
         var result = null,
             header = this.headerNode,
-            content = this.bodyNode;
+            content = this.bodyNode,
+            focusSelector = this.get('focusOnShowSelector'),
+            focusNode = null;
 
         result = DIALOGUE.superclass.show.call(this);
+
+        if (!this.get('center') && this._originalPosition) {
+            // Restore the dialogue position to it's location before it was moved at show time.
+            this.get('boundingBox').setXY(this._originalPosition);
+        }
 
         // Lock scroll if the plugin is present.
         if (this.lockScroll) {
@@ -349,10 +363,20 @@ Y.extend(DIALOGUE, Y.Panel, {
             this.lockScroll.enableScrollLock(this.shouldResizeFullscreen());
         }
 
-        if (header && header !== '') {
-            header.focus();
-        } else if (content && content !== '') {
-            content.focus();
+        // Try and find a node to focus on using the focusOnShowSelector attribute.
+        if (focusSelector !== null) {
+            focusNode = this.get('boundingBox').one(focusSelector);
+        }
+        if (!focusNode) {
+            // Fall back to the header or the content if no focus node was found yet.
+            if (header && header !== '') {
+                focusNode = header;
+            } else if (content && content !== '') {
+                focusNode = content;
+            }
+        }
+        if (focusNode) {
+            focusNode.focus();
         }
         return result;
     },
@@ -391,12 +415,14 @@ Y.extend(DIALOGUE, Y.Panel, {
             }
         }, 'down:9', CAN_RECEIVE_FOCUS_SELECTOR, this);
     },
+
     /**
      * Trap the tab focus within the open modal.
      *
-     * @param string target the element target
-     * @param string direction tab key for forward and tab+shift for backward
-     * @returns bool
+     * @method trapFocus
+     * @param {string} target the element target
+     * @param {string} direction tab key for forward and tab+shift for backward
+     * @return {Boolean} The result of the focus action.
      */
     trapFocus : function(target, direction) {
         var bb = this.get('boundingBox'),
@@ -424,10 +450,13 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @attribute lightbox
          * @type Boolean
          * @default true
+         * @deprecated Since Moodle 2.7. Please use modal instead.
          */
-        lightbox : {
-            validator : Y.Lang.isBoolean,
-            value : true
+        lightbox: {
+            lazyAdd: false,
+            setter: function(value) {
+                this.set('modal', value);
+            }
         },
 
         /**
@@ -508,7 +537,7 @@ Y.extend(DIALOGUE, Y.Panel, {
          * The width that this dialogue should be resized to fullscreen.
          *
          * @attribute responsiveWidth
-         * @type Integer
+         * @type Number
          * @default 768
          */
         responsiveWidth : {
@@ -516,19 +545,175 @@ Y.extend(DIALOGUE, Y.Panel, {
         },
 
         /**
-         * Any additional classes to add to the boundingBox.
+         * Selector to a node that should recieve focus when this dialogue is shown.
          *
-         * @attributes extraClasses
-         * @type Array
-         * @default []
+         * The default behaviour is to focus on the header.
+         *
+         * @attribute focusOnShowSelector
+         * @default null
+         * @type String
          */
-        extraClasses: {
-            value: []
+        focusOnShowSelector: {
+            value: null
         }
+
     }
 });
 
+Y.Base.modifyAttrs(DIALOGUE, {
+    /**
+     * String with units, or number, representing the width of the Widget.
+     * If a number is provided, the default unit, defined by the Widgets
+     * DEF_UNIT, property is used.
+     *
+     * If a value of 'auto' is used, then an empty String is instead
+     * returned.
+     *
+     * @attribute width
+     * @default '400px'
+     * @type {String|Number}
+     */
+    width: {
+        value: '400px',
+        setter: function(value) {
+            if (value === 'auto') {
+                return '';
+            }
+            return value;
+        }
+    },
+
+    /**
+     * Boolean indicating whether or not the Widget is visible.
+     *
+     * We override this from the default Widget attribute value.
+     *
+     * @attribute visible
+     * @default false
+     * @type Boolean
+     */
+    visible: {
+        value: false
+    },
+
+    /**
+     * A convenience Attribute, which can be used as a shortcut for the
+     * `align` Attribute.
+     *
+     * Note: We override this in Moodle such that it sets a value for the
+     * `center` attribute if set. The `centered` will always return false.
+     *
+     * @attribute centered
+     * @type Boolean|Node
+     * @default false
+     */
+    centered: {
+        setter: function(value) {
+            if (value) {
+                this.set('center', true);
+            }
+            return false;
+        }
+    },
+
+    /**
+     * Boolean determining whether to render the widget during initialisation.
+     *
+     * We override this to change the default from false to true for the dialogue.
+     * We then proceed to early render the dialogue during our initialisation rather than waiting
+     * for YUI to render it after that.
+     *
+     * @attribute render
+     * @type Boolean
+     * @default true
+     */
+    render : {
+        value : true,
+        writeOnce : true
+    },
+
+    /**
+     * Any additional classes to add to the boundingBox.
+     *
+     * @attribute extraClasses
+     * @type Array
+     * @default []
+     */
+    extraClasses: {
+        value: []
+    }
+});
+
+Y.Base.mix(DIALOGUE, [Y.M.core.WidgetFocusAfterHide]);
+
 M.core.dialogue = DIALOGUE;
+/**
+ * A dialogue type designed to display informative messages to users.
+ *
+ * @module moodle-core-notification
+ */
+
+/**
+ * Extends core Dialogue to provide a type of dialogue which can be used
+ * for informative message which are modal, and centered.
+ *
+ * @param {Object} config Object literal specifying the dialogue configuration properties.
+ * @constructor
+ * @class M.core.notification.info
+ * @extends M.core.dialogue
+ */
+var INFO = function() {
+    INFO.superclass.constructor.apply(this, arguments);
+};
+
+Y.extend(INFO, M.core.dialogue, {
+}, {
+    NAME: 'Moodle information dialogue',
+    CSS_PREFIX: DIALOGUE_PREFIX
+});
+
+Y.Base.modifyAttrs(INFO, {
+    /**
+     * Boolean indicating whether or not the Widget is visible.
+     *
+     * We override this from the default M.core.dialogue attribute value.
+     *
+     * @attribute visible
+     * @default true
+     * @type Boolean
+     */
+    visible: {
+        value: true
+    },
+
+   /**
+    * Whether the widget should be modal or not.
+    *
+    * We override this to change the default from false to true for a subset of dialogues.
+    *
+    * @attribute modal
+    * @type Boolean
+    * @default true
+    */
+    modal: {
+        validator: Y.Lang.isBoolean,
+        value: true
+    }
+});
+
+M.core.notification = M.core.notification || {};
+M.core.notification.info = INFO;
 
 
-}, '@VERSION@', {"requires": ["base", "node", "panel", "escape", "event-key", "dd-plugin", "moodle-core-lockscroll"]});
+}, '@VERSION@', {
+    "requires": [
+        "base",
+        "node",
+        "panel",
+        "escape",
+        "event-key",
+        "dd-plugin",
+        "moodle-core-widget-focusafterclose",
+        "moodle-core-lockscroll"
+    ]
+});

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filter_tex', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configconvertformat'] = 'Si <i>latex</i>, <i>dvips</i> i <i>convert</i> estan disponibles, les imatges seran creades utilitzant el format especificat. Si no ho és, el tipus TeX serà utilitzat i es crearan imatges GIF.';
+$string['convertformat'] = '	
+<i>converteix</i> format de sortida';
 $string['filtername'] = 'Notació TeX';
+$string['latexpreamble'] = 'Preàmbul LaTeX';
+$string['latexsettings'] = 'Paràmetres del renderitzador de LaTeX';
+$string['pathconvert'] = 'Camí del binari del <i>convert</i>';
+$string['pathdvips'] = 'Camí del binari del <i>dvips</i>';
+$string['pathlatex'] = 'Camí del binari del <i>latex</i>';
+$string['pathmimetex'] = 'Camí del binari <i>mimetex</i>';
+$string['pathmimetexdesc'] = 'Moodle utilitza el seu propi binari mimetex llevat que especifiqueu un altre camí vàlid.';
 $string['source'] = 'Font TeX';

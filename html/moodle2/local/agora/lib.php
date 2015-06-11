@@ -20,9 +20,8 @@ function is_xtecadmin($user=null) {
     if (empty($user)) {
         $user = $USER;
     }
-    return isset($user)
-           && array_key_exists('username', $user)
-           && $user->username == 'xtecadmin';
+
+    return isset($user->username) && $user->username == 'xtecadmin';
 }
 
 function require_xtecadmin($canbesiteadmin = false) {
@@ -132,30 +131,85 @@ function run_cli($command, $outputfile = false, $append = true, $background = tr
     return $returnvar;
 }
 
+function check_cron_run() {
+    if (!empty($CFG->cronclionly)) {
+        $nocli = optional_param('nocli', false, PARAM_BOOL);
+        if (!$nocli) {
+            run_cli_cron();
+            exit(0);
+        }
+    } else {
+        $cli = optional_param('cli', false, PARAM_BOOL);
+        if ($cli) {
+            run_cli_cron();
+            exit(0);
+        }
+    }
+    $CFG->cronclionly = false;
+}
+
 // Executes a cron via CLI
 function run_cli_cron($background = true) {
     global $CFG, $DB;
 
+    if (!empty($CFG->cronremotepassword)) {
+        $pass = optional_param('password', '', PARAM_RAW);
+        if ($pass != $CFG->cronremotepassword) {
+            // wrong password.
+            print_error('cronerrorpassword', 'admin');
+            exit(1);
+        }
+    }
+
+    if (CLI_MAINTENANCE) {
+        echo "CLI maintenance mode active, cron execution suspended.\n";
+        exit(1);
+    }
+
+    if (moodle_needs_upgrading()) {
+        echo "Moodle upgrade pending, cron execution suspended.\n";
+        exit(1);
+    }
+
     $command = $CFG->admin.'/cli/cron.php';
 
+    $force = optional_param('forcecron', false, PARAM_BOOL);
+    if (!$force) {
+        $cronstart = get_config(null, 'cronstart');
+        $cronperiod = 900; // 15 minutes minimum
+        if ($cronstart + $cronperiod > time()) {
+            echo "Moodle cron was executed recently.\n";
+            exit(1);
+        }
+    } else {
+        $command .= ' --forcecron=true';
+        echo "Moodle cron forced.\n";
+    }
+
     $outputfile = false;
-    $savecronlog = $DB->get_field('config', 'value', array('name' => 'savecronlog'));
-    // $CFG->savecronlog must be saved on DB
-    if (isset($savecronlog) && !empty($savecronlog)) {
+    if (isset($CFG->savecronlog)) {
+        $savecronlog = $CFG->savecronlog;
+    } else {
+        $savecronlog = $DB->get_field('config', 'value', array('name' => 'savecronlog'));
+    }
+    if (!empty($savecronlog)) {
         $outputdir = get_admin_datadir_folder('crons', false);
         if ($outputdir) {
             $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
         }
 
-        //Erase old files
+        // Erase old files
         $search = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ym", strtotime("-2 month"));
         foreach (glob($search.'*.log') as $filename) {
-           unlink($filename);
+            unlink($filename);
         }
         $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
     }
     $append = true;
-    return run_cli($command, $outputfile, $append, $background);
+
+    mtrace('Cron is being executing in background by CLI...');
+
+    run_cli($command, $outputfile, $append, $background);
 }
 
 /**
@@ -217,7 +271,6 @@ function is_rush_hour() {
 
 /**
  * Check if specified module/block name is enabled
- * @global Object $CFG
  * @param String $mod module name
  * @return Boolean True if specified module name is enabled and false otherwise.
  *
@@ -225,65 +278,28 @@ function is_rush_hour() {
  **/
 function is_enabled_in_agora ($mod) {
     if (is_agora()) {
-
-        // Only enabled in EOI Moodles
-        if (!is_eoi() && ($mod == 'eoicampus')) {
-            return false;
-        }
-
         // Disabled in all Agora Moodles
-        if ($mod == 'clean' || $mod == 'afterburner' || $mod == 'anomaly' || $mod == 'arialist' || $mod == 'base' || $mod == 'binarius' || $mod == 'boxxie' || $mod == 'brick' ||
-            $mod == 'canvas' || $mod == 'formal_white' || $mod == 'formfactor' || $mod == 'fusion' || $mod == 'leatherbound' || $mod == 'magazine' || $mod == 'nimble' ||
-            $mod == 'nonzero' || $mod == 'overlay' || $mod == 'serenity' || $mod == 'sky_high' || $mod == 'splash' || $mod == 'standard' || $mod == 'standardold' ||
-            $mod == 'chat' || $mod == 'alfresco' || $mod == 'rscorm' || $mod == 'rscormreport_basic' || $mod == 'rscormreport_graphs' || $mod == 'rscormreport_interactions') {
+        if ($mod == 'clean' || $mod == 'more' || $mod == 'canvas' || $mod == 'base' ||
+            $mod == 'chat' || $mod == 'alfresco') {
             return false;
         }
     }
     return true;
 }
 
-
-function agora_course_print_navlinks($course, $section = 0) {
-    global $CFG, $OUTPUT;
-    $context = context_course::instance($course->id, MUST_EXIST);
-    echo '<div class="agora_navbar">';
-    // Show reports
-    $reportavailable = false;
-    if (!empty($course->showgrades)) {
-        if (has_capability('moodle/grade:viewall', $context)) {
-            $reportavailable = true;
-        } else {
-            if ($reports = core_component::get_plugin_list('gradereport')) {     // Get all installed reports
-                arsort($reports); // user is last, we want to test it first
-                foreach ($reports as $plugin => $pluginname) {
-                    if (has_capability('gradereport/' . $plugin . ':view', $context)) {
-                        // Stop when the first visible plugin is found
-                        $reportavailable = true;
-                        break;
-                    }
-                }
-            }
-        }
-    }
-    if ($reportavailable) {
-        $icon = $OUTPUT->pix_icon('i/grades', "");
-        echo html_writer::link($CFG->wwwroot.'/grade/report/index.php?id=' . $course->id, $icon.get_string('grades'));
-    }
-    echo '</div>';
-}
-
 function local_agora_extends_navigation(global_navigation $navigation) {
     global $DB, $CFG;
     if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', array('client_id' => 'nodes'))) {
         $nodesurl = $CFG->wwwroot.'/local/agora/login_service.php?service=nodes';
-        $navigation->add(get_string('login_nodes', 'local_agora'), $nodesurl, navigation_node::TYPE_SETTING, null, get_string('login_nodes', 'local_agora'));
-        //$message->icon = 'i/email';
-
+        $icon = new pix_icon('i/permissions', "");
+        $navigation->add(get_string('login_nodes', 'local_agora'), $nodesurl, navigation_node::TYPE_SETTING, null, get_string('login_nodes', 'local_agora'), $icon);
     }
 }
 
 function is_service_enabled($service) {
-    if(!is_agora()) return false;
+    if (!is_agora()) {
+        return false;
+    }
 
     global $school_info;
     return isset($school_info['id_'.$service]) && !empty($school_info['id_'.$service]);
@@ -408,11 +424,12 @@ function get_mailsender() {
     return $mailsender;
 }
 
-function send_apligest_mail($mail, $user) {
+function send_apligest_mail(&$mail, $user) {
     global $CFG;
     try {
         $sender = get_mailsender();
         if (!$sender) {
+            $mail->ErrorInfo = 'Cannot initialize mailsender, no mail will be sent';
             return false;
         }
 
@@ -460,24 +477,122 @@ function send_apligest_mail($mail, $user) {
 
         // Add message to mailsender
         if (!$sender->add($message)) {
-            mtrace('ERROR: '.' Impossible to add message to mailsender');
-            add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. ' Impossible to add message to mailsender');
+            $mail->ErrorInfo = 'Impossible to add message to mailsender';
             return false;
         }
 
         // Send messages
         if (!$sender->send_mail()) {
-            mtrace('ERROR: '.' Impossible to send messages');
-            add_to_log(SITEID, 'library', 'mailer', qualified_me(), 'ERROR: '. ' Impossible to send messages');
+            $mail->ErrorInfo = 'Impossible to send messages';
             return false;
         } else {
-            set_send_count($user);
             return true;
         }
-    } catch (Exception $e){
-        mtrace('ERROR: Something terrible happened during the mailing and might be repaired');
-        mtrace($e->getMessage());
-        mtrace('The execution must go on!');
+    } catch (Exception $e) {
+        $mail->ErrorInfo = 'Exception: '. $e->getMessage();
         return false;
     }
+}
+
+function get_colors_from_nodes($solveerrors = false) {
+
+    try {
+        $filename = INSTALL_BASE.'/html/wordpress/wp-content/themes/reactor-primaria-1/custom-tac/colors_nodes.php';
+        if (file_exists($filename)) {
+            global $colors_nodes;
+            $db = external_db('nodes');
+            $options = $db->get_field('options', 'option_value', array('option_name' => 'reactor_options'));
+            $options = unserialize($options);
+            $paleta = $options['paleta_colors'];
+
+            require_once($filename);
+            $paleta = $colors_nodes[$paleta];
+            $colors = array(
+                'color' => $paleta['secondary'],
+                'logo_color' => $paleta['primary']
+            );
+            if ($solveerrors) {
+                set_config('color2', $colors['color'], 'theme_xtec2');
+                set_config('color4', $colors['color'], 'theme_xtec2');
+                set_config('color5', $colors['color'], 'theme_xtec2');
+                set_config('logo_color', $colors['logo_color'], 'theme_xtec2');
+            }
+            //$db->dispose();
+            return $colors;
+        }
+    } catch (Exception $e) {
+        // Nothing to do
+    }
+
+    if ($solveerrors) {
+        set_config('colorset', 'grana', 'theme_xtec2');
+        set_config('color2', '#AC2013', 'theme_xtec2');
+        set_config('color4', '#303030', 'theme_xtec2');
+        set_config('color5', '#AC2013', 'theme_xtec2');
+    }
+    return false;
+}
+
+
+/**
+ * Connecta a una base de dades configurada d'un servei
+ *
+ * @param string shortname de la taula que vulguem consultar
+ * @return  moodle_database
+ */
+function external_db($service) {
+    global $DBHANDLERS, $school_info, $agora;
+
+    //Es comprova si en la cache de handlers ja existeix el solicitat
+    if (!isset($DBHANDLERS)) {
+        $DBHANDLERS = array();
+    }
+    if (isset($DBHANDLERS[$service])) {
+        return $DBHANDLERS[$service];
+    }
+
+    if (!is_service_enabled($service)) {
+        $DBHANDLERS[$service] = false;
+        return false;
+    }
+
+    $options = array();
+    $options['dbpersist'] = false;
+    if (isset($agora[$service]['port']) && !empty($agora[$service]['port'])) {
+        $options['dbport'] = $agora[$service]['port'];
+    }
+
+    // Per ara només farem servir aquestes, per ampliar-ho caldria afegir aquest paràmetre a la taula
+    $library = 'native';
+    $dbtype = $agora[$service]['dbtype'];
+    if ($dbtype == 'mysql') {
+        $dbtype = 'mysqli';
+    }
+
+    if (!$handler = moodle_database::get_driver_instance($dbtype, $library, true)) {
+        throw new dml_exception('dbdriverproblem', "Unknown driver $library/$dbtype");
+    }
+
+    $host = $school_info['dbhost_'.$service];
+    $username = $agora[$service]['username'];
+    $password = $agora[$service]['userpwd'];
+    $prefix = $agora[$service]['prefix'].'_';
+    $dbname = $agora[$service]['userprefix'].$school_info['id_'.$service];
+
+    try {
+        if ($handler->connect($host, $username, $password, $dbname, $prefix, $options)) {
+            $DBHANDLERS[$service] = $handler;
+        } else {
+            $DBHANDLERS[$service] = false;
+            return false;
+
+        }
+    } catch (Exception $e) {
+        debugging('Error connecting external DB '.$service);
+        debugging($e->getMessage());
+        $DBHANDLERS[$service] = false;
+        return false;
+    }
+
+    return $handler;
 }

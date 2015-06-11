@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,10 +59,6 @@ $string['check_frontpagerole_error'] = '¡Detectado un rol en la página princip
 $string['check_frontpagerole_name'] = 'Rol en la página principal';
 $string['check_frontpagerole_notset'] = 'El rol en la página principal no está establecido.';
 $string['check_frontpagerole_ok'] = 'La definición del rol en la página principal es correcta.';
-$string['check_globals_details'] = '<p>Register globals se considera una configuración de PHP altamente insegura.</p> <p><code>register_globals=off</code> debe de establecerse en la configuración de PHP. Esta configuración se controla editando el archivo<code>php.ini</code>,la configuración de Apache/IIS o el archivo <code>.htaccess</code> .</p>';
-$string['check_globals_error'] = 'Register globals DEBE estar deshabilitado. Por favor corrija la configuraciones PHP del servidor inmediatamente.';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Register globals está deshabilitado';
 $string['check_google_details'] = '<p>La configuración de Abrir a Google permite que los motores de búsqueda entren a los cursos que tengan acceso a invitados. No hay razón de configurarlo así cuando un sitio no  permite el acceso a invitados.</p>';
 $string['check_google_error'] = 'Se permite el acceso al motor de búsquedas pero el acceso de invitados está desactivado.';
 $string['check_google_info'] = 'Los motores de búsqueda pueden entrar como invitados.';

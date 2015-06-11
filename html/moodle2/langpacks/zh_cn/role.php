@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -408,6 +408,7 @@ $string['user:update'] = '更新用户资料';
 $string['user:viewalldetails'] = '查看用户详细信息';
 $string['user:viewdetails'] = '浏览用户资料';
 $string['user:viewhiddendetails'] = '浏览用户隐藏的个人信息';
+$string['user:viewlastip'] = '查看用户最近一次IP地址';
 $string['user:viewuseractivitiesreport'] = '查看用户活动报表';
 $string['user:viewusergrades'] = '浏览用户成绩';
 $string['useshowadvancedtochange'] = '用“显示高级选项”修改';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,11 +59,6 @@ $string['check_frontpagerole_error'] = 'Fout gedefinieerde starpaginarol "{$a}" 
 $string['check_frontpagerole_name'] = 'Startpaginarol';
 $string['check_frontpagerole_notset'] = 'Startpaginarol niet ingeschakeld';
 $string['check_frontpagerole_ok'] = 'Startpaginarol roldefinitie OK';
-$string['check_globals_details'] = '<p>Register globals wordt beschouwd als een heel gevaarlijke PHP-instelling.</p>
-<p><code>register_globals=off</code> moet ingesteld worden in de PHP-configuratie. Deze instelling kan aangepast worden in <code>php.ini</code>, Apache/IIS-configuratie of een <code>.htaccess</code>-bestand.</p>';
-$string['check_globals_error'] = 'Register globals MOETEN uitgeschakeld zijn. Herstel de PHP-instellingen van je server onmiddellijk!';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Register globals zijn uitgeschakeld.';
 $string['check_google_details'] = '<p>De instelling Open voor Google maakt het voor zoekrobots mogelijk cursussen te doorzoeken met de gastrol. Het is nutteloos deze instelling in te schakelen als aanmelden als gast niet toegelaten is.</p>';
 $string['check_google_error'] = 'Gast-toegang voor zoekrobots toegelaten terwijl gast-toegang is uitgeschakeld.';
 $string['check_google_info'] = 'Zoekrobots mogen binnen als gasten';

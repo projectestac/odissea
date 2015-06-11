@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,6 @@ $string['invalidstoredurl'] = '이 자원을 표시할 수 없습니다. URL이 
 $string['invalidurl'] = '입력한 URL이 잘못되었습니다.';
 $string['modulename'] = 'URL';
 $string['modulenameplural'] = 'URLs';
-$string['neverseen'] = '볼 수 없음';
 $string['page-mod-url-x'] = '모든 URL 모듈 페이지';
 $string['parameterinfo'] = '배개변수=값';
 $string['parametersheader'] = 'URL 변수';

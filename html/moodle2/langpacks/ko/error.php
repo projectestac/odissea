@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -471,7 +471,7 @@ $string['statsdisable'] = '통계가 활성화되어 있지 않음';
 $string['statsnodata'] = '강좌 및 시한의 조합 조건에 맞는 자료가 없음';
 $string['storedfilecannotcreatefiledirs'] = '이 곳에 파일 저장 경로를 만들 수 없습니다. 데이터 경로의 사용권한을 살펴 보기 바랍니다.';
 $string['storedfilecannotread'] = '파일이 존재하지 않거나 파일 접근 권한에 문제가 있어 파일을 읽을 수 없음';
-$string['storedfilenotcreated'] = '"{$a->contextid}/{$a->filearea}/{$a->itemid}/{$a->filepath}/{$a->filename}"에 파일을 생성할 수 없음';
+$string['storedfilenotcreated'] = '"{$a->contextid}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}" 파일을 생성할 수 없음';
 $string['storedfileproblem'] = '파일 ({$a})에 알 수 없는 예외 규정이 적용되어 있음';
 $string['tagdisabled'] = '태그 사용 불가!';
 $string['tagnotfound'] = '지정한 태그가 데이터베이스에 없음';

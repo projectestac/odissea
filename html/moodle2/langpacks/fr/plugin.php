@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,8 +37,8 @@ $string['err_response_curl'] = 'Impossible de récupérer les données de mise �
 $string['err_response_format_version'] = 'Version inattendue du format de réponse. Veuillez vérifier si des mises à jour sont disponibles.';
 $string['err_response_http_code'] = 'Impossible de récupérer les données de mise à jour. Code de réponse HTTP inapproprié.';
 $string['filterall'] = 'Tout afficher';
-$string['filtercontribonly'] = 'N\'afficher que les plugins tiers';
-$string['filtercontribonlyactive'] = 'Affichage des plugins tiers seulement';
+$string['filtercontribonly'] = 'N\'afficher que les plugins additionnels';
+$string['filtercontribonlyactive'] = 'Affichage des plugins additionnels seulement';
 $string['filterupdatesonly'] = 'Afficher seulement les éléments susceptibles de mise à jour';
 $string['filterupdatesonlyactive'] = 'Affichage des éléments susceptibles de mise à jour seulement';
 $string['moodleversion'] = 'Moodle {$a}';
@@ -53,16 +53,17 @@ $string['notwritable_help'] = 'Vous avez activé le déploiement automatique des
 
 Pour permettre l\'installation de cette mise à jour, veuillez permettre au serveur web l\'accès en écriture au dossier de ce plugin et à tout son contenu.';
 $string['numdisabled'] = 'Désactivés : {$a}';
-$string['numextension'] = 'Plugins tiers : {$a}';
+$string['numextension'] = 'Additionnels : {$a}';
 $string['numtotal'] = 'Installés : {$a}';
 $string['numupdatable'] = 'Mises à jour disponibles : {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
-$string['pluginchecknotice'] = 'Cette page affiche les plugins pouvant requérir votre attention durant la mise à jour. Les éléments mis en évidence incluent les nouveaux plugins sur le point d\'être installés, les plugins qui vont être mis à jour et tous les plugins manquants. Les plugins tiers sont aussi mis en évidence si une mise à jour est disponible. Il est recommandé que vous vérifiiez si des versions plus récentes des plugins tiers sont disponibles et de mettre à jour leur code source avant de poursuivre la mise à jour de ce Moodle.';
+$string['pluginchecknotice'] = 'Cette page affiche les plugins pouvant requérir votre attention durant la mise à jour. Les éléments mis en évidence incluent les nouveaux plugins sur le point d\'être installés, les plugins qui vont être mis à jour et tous les plugins manquants. Les plugins additionnels sont aussi mis en évidence si une mise à jour est disponible. Il est recommandé que vous vérifiiez si des versions plus récentes des plugins sont disponibles et de mettre à jour leur code source avant de poursuivre la mise à jour de ce Moodle.';
 $string['plugindisable'] = 'Désactiver';
 $string['plugindisabled'] = 'Désactivé';
 $string['pluginenable'] = 'Activer';
 $string['pluginenabled'] = 'Activé';
+$string['release'] = 'Version';
 $string['requiredby'] = 'Requis par {$a}';
 $string['requires'] = 'Requiert';
 $string['rootdir'] = 'Dossier';
@@ -72,7 +73,7 @@ $string['somehighlighted'] = 'Nombre de plugins requérant votre attention : {$
 $string['somehighlightedinfo'] = 'Afficher la liste complète des plugins installés';
 $string['somehighlightedonly'] = 'N\'afficher que les plugins nécessitant votre attention';
 $string['source'] = 'Source';
-$string['sourceext'] = 'Tierce partie';
+$string['sourceext'] = 'Additionnel';
 $string['sourcestd'] = 'Standard';
 $string['status'] = 'Statut';
 $string['status_delete'] = 'À supprimer';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'Installé';
 $string['systemname'] = 'Identifiant';
 $string['type_auth'] = 'Méthode d\'authentification';
 $string['type_auth_plural'] = 'Méthodes d\'authentification';
+$string['type_availability'] = 'Restriction de disponibilité';
+$string['type_availability_plural'] = 'Restrictions de disponibilité';
 $string['type_block'] = 'Bloc';
 $string['type_block_plural'] = 'Blocs';
 $string['type_cachelock'] = 'Gestionnaire de verrou de cache';

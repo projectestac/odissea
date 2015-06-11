@@ -36,6 +36,7 @@ $string['attempts'] = 'Attempts';
 $string['avaluation'] = 'Evaluation criteria';
 $string['avaluation_score'] = 'Achieving this global score';
 $string['avaluation_solved'] = 'Solving this number of different activities';
+$string['contentheader'] = 'Content';
 $string['description'] = 'Description';
 $string['height'] = 'Height';
 $string['lastaccess'] = 'Last visited';
@@ -61,10 +62,6 @@ $string['activity'] = 'Activity';
 $string['msg_nosessions'] = 'This JClic activity hasn\'t yet any session';
 $string['solved'] = 'Correct';
 $string['time'] = 'Time';
-
-/* Revision 20071002 */
-$string['header_jclic'] = 'JClic Settings';
-$string['header_score'] = 'Avaluation Settings';
 
 /* Revision 20091023 */
 $string['deleteallsessions'] = 'Delete all sessions';
@@ -113,6 +110,7 @@ $string['preview_jclic'] = 'Preview JClic activity';
 $string['return_results'] = 'Return to results';
 $string['show_my_results'] = 'Show my results';
 $string['solveddone'] = 'Activities solved / done';
+$string['timing'] = 'Timing';
 $string['urledit'] = 'JClic activity file';
 $string['urledit_help'] = 'The "jclic.zip" file where you will find the JClic activity package.';
 

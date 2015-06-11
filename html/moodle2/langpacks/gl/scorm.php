@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,9 +51,9 @@ $string['attempt'] = 'Intentar';
 $string['attempt1'] = '1 intento';
 $string['attempts'] = 'Intento';
 $string['attemptsmanagement'] = 'Xestión de intentos';
-$string['attemptstatusall'] = 'Cartafol persoal e páxina de entrada';
+$string['attemptstatusall'] = 'Área persoal e páxina de entrada';
 $string['attemptstatusentry'] = 'Páxina de entrada unicamente';
-$string['attemptstatusmy'] = 'Cartafol persoal unicamente';
+$string['attemptstatusmy'] = 'Soamente a área persoal';
 $string['attemptsx'] = '{$a} intentos';
 $string['attr_error'] = 'Valor incorrecto para o atributo ({$a->attr}) na etiqueta {$a->tag}.';
 $string['autocontinue'] = 'Continuación automática';
@@ -92,7 +92,7 @@ $string['directories'] = 'Amosar as ligazóns de directorio';
 $string['disabled'] = 'Desactivado';
 $string['display'] = 'Presentar o paquete';
 $string['displayattemptstatus'] = 'Presentar o estado dos intentos';
-$string['displayattemptstatusdesc'] = 'Esta preferencia estabelece o valor predeterminado para presentar a configuración do estado de intentos';
+$string['displayattemptstatusdesc'] = 'Se debe amosarse un resumo dos intentos do usuario no bloque  de vista xeral do curso na área persoal e/ou na páxina de entrada de SCORM.';
 $string['displayattemptstatus_help'] = 'Esta preferencia permite un resumo dos intentos do usuario que se amosará no bloque de vista xeral do curso no cartafol persoal e/ou na páxina de entrada SCORM.';
 $string['displaycoursestructure'] = 'Presentar a estrutura do curso na páxina de entrada';
 $string['displaycoursestructuredesc'] = 'Esta preferencia estabelece o valor predeterminado para presentar a estrutura do curso no axuste da páxina de entrada';
@@ -229,7 +229,7 @@ $string['package'] = 'Ficheiro de paquete';
 $string['packagedir'] = 'Erro do sistema de ficheiros: Non é posíbel crear o directorio de paquetes';
 $string['packagefile'] = 'Non especificou ningún ficheiro de paquete';
 $string['packagehdr'] = 'Paquete';
-$string['package_help'] = 'O ficheiro de paquete é un arquivo zip (ou pif) que contén ficheiros de definición do curso SCORM/AICC.';
+$string['package_help'] = 'O ficheiro de paquete é un arquivo zip (ou pif) que conten ficheiros de definición do curso SCORM/AICC.';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Este axuste activa un URL para especificar o paquete SCORM no canto de escoller un ficheiro a través do selector de ficheiros.';
 $string['page-mod-scorm-x'] = 'Calquera páxina do módulo SCORM';
@@ -286,7 +286,7 @@ $string['show'] = 'Amosar';
 $string['sided'] = 'Lateral';
 $string['skipview'] = 'Omitir para o alumno a páxina de estrutura de contidos';
 $string['skipviewdesc'] = 'Esta preferencia estabelece o valor predeterminado sobre cando omitir a estrutura do contido dunha páxina';
-$string['skipview_help'] = 'Este axuste especifica se a páxina de estrutura de contido nunca debe ser omitido (non se presenta). Se o paquete contén só un obxecto de aprendizaxe, a páxina de estrutura de contidos pódese omitir sempre.';
+$string['skipview_help'] = 'Este axuste especifica se a páxina de estrutura de contido nunca debe ser omitido (non se presenta). Se o paquete conten só un obxecto de aprendizaxe, a páxina de estrutura de contidos pódese omitir sempre.';
 $string['slashargs'] = 'AVISO: os argumentos «slash» (barrados) están desactivados neste sitio e é probábel que os obxectos non se comporten como se agarda.';
 $string['stagesize'] = 'Tamaño da etapa';
 $string['stagesize_help'] = 'Estes dous axustes definen a altura e a largura do marco ou xanela do obxecto de aprendizaxe.</p>';

@@ -40,7 +40,7 @@ class theme extends base {
         //************ FI
         global $CFG;
 
-        if ($this->name === 'standard' or $this->name === 'base' or $this->name === 'bootstrapbase') {
+        if ($this->name === 'base' or $this->name === 'bootstrapbase') {
             // All of these are protected for now.
             return false;
         }

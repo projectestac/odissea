@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_capability', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['capabilitylabel'] = 'Capacitat:';
 $string['capabilityreport'] = 'Resum de capacitats';
 $string['changeoverrides'] = 'Canvia les excepcions en aquest context';
 $string['changeroles'] = 'Canvia les definicions del rol';
+$string['eventreportviewed'] = 'Informe visualitzat';
 $string['forroles'] = 'Per als rols {$a}';
 $string['getreport'] = 'Mostra informació general';
 $string['intro'] = 'Aquest informa mostra, per a una capacitat concreta, els permisos que aquesta capacitat té en la definició de cada rol (o selecció de rols), i qualsevol lloc on aquesta capacitat es pot anular.';

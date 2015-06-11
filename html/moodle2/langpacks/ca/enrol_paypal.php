@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_paypal', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,7 @@ $string['expiredaction_help'] = 'Seleccioneu l\'acció que es durà a terme quan
 $string['mailadmins'] = 'Notifica a l\'administrador';
 $string['mailstudents'] = 'Notifica als estudiants';
 $string['mailteachers'] = 'Notifica als professors';
-$string['messageprovider:paypal_enrolment'] = 'Missatges d\'inscripció de PayPal';
+$string['messageprovider:paypal_enrolment'] = 'Missatges d\'inscripcions mitjançant PayPal';
 $string['nocost'] = 'No hi ha cap cost associat a la inscripció en aquest curs!';
 $string['paypalaccepted'] = 'S\'accepten pagaments via PayPal';
 $string['paypal:config'] = 'Configura les instàncies d\'inscripció PayPal';

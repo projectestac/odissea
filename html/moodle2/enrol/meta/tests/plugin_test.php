@@ -443,7 +443,7 @@ class enrol_meta_plugin_testcase extends advanced_testcase {
     /**
      * Test user_enrolment_created event.
      */
-    public function test_user_enrolment_created_observer() {
+    public function test_user_enrolment_created_event() {
         global $DB;
 
         $this->resetAfterTest();
@@ -474,12 +474,13 @@ class enrol_meta_plugin_testcase extends advanced_testcase {
         $expectedlegacyeventdata->enrol = 'meta';
         $expectedlegacyeventdata->courseid = $course2->id;
         $this->assertEventLegacyData($expectedlegacyeventdata, $event);
+        $this->assertEventContextNotUsed($event);
     }
 
     /**
-     * Test user_enrolment_deleted observer.
+     * Test user_enrolment_deleted event.
      */
-    public function test_user_enrolment_deleted_observer() {
+    public function test_user_enrolment_deleted_event() {
         global $DB;
 
         $this->resetAfterTest(true);
@@ -507,12 +508,13 @@ class enrol_meta_plugin_testcase extends advanced_testcase {
         $this->assertEquals(0, $DB->count_records('user_enrolments'));
         $this->assertInstanceOf('\core\event\user_enrolment_deleted', $event);
         $this->assertEquals('user_unenrolled', $event->get_legacy_eventname());
+        $this->assertEventContextNotUsed($event);
     }
 
     /**
      * Test user_enrolment_updated event.
      */
-    public function test_user_enrolment_updated_observer() {
+    public function test_user_enrolment_updated_event() {
         global $DB;
 
         $this->resetAfterTest(true);
@@ -545,6 +547,9 @@ class enrol_meta_plugin_testcase extends advanced_testcase {
         $expectedlegacyeventdata = $dbuserenrolled;
         $expectedlegacyeventdata->enrol = 'meta';
         $expectedlegacyeventdata->courseid = $course2->id;
+        $url = new \moodle_url('/enrol/editenrolment.php', array('ue' => $event->objectid));
+        $this->assertEquals($url, $event->get_url());
         $this->assertEventLegacyData($expectedlegacyeventdata, $event);
+        $this->assertEventContextNotUsed($event);
     }
 }

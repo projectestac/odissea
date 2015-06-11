@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choicegroup', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Aggiungi';
+$string['add_group'] = 'Aggiungi gruppo';
+$string['add_grouping'] = 'Aggiungi raggruppamento';
+$string['add_groupings'] = 'Aggiungi raggruppamenti';
+$string['add_groups'] = 'Aggiungi gruppi';
 $string['addmorechoices'] = 'Aggiungi ulteriori scelte';
 $string['afterresultsviewable'] = 'I risultati saranno visibili soltanto dopo che avrai effettuato la scelta.';
 $string['allowupdate'] = 'Consenti di modificare la scelta';
 $string['and'] = 'e';
 $string['answered'] = 'Risposte';
 $string['applytoallgroups'] = 'Applica a tutti i gruppi';
+$string['available_groups'] = 'Gruppi disponibili';
 $string['byparticipants'] = 'di {$a} partecipanti';
 $string['choice'] = 'Scelta';
 $string['choicegroup:addinstance'] = 'Aggiungi attività Scelta gruppo';
@@ -50,10 +56,25 @@ $string['choicegroupsaved'] = 'La tua scelta è stata salvata';
 $string['choicetext'] = 'Testo della scelta';
 $string['chooseaction'] = 'Scegli un\'azione ...';
 $string['choosegroup'] = 'Scegli un gruppo';
+$string['collapse_all_groupings'] = 'Minimizza tutti i raggruppamenti';
 $string['completionsubmit'] = 'Visualizza come completo quando un utente effettua una scelta';
+$string['createdate'] = 'Data di creazione del gruppo';
+$string['defaultsettings'] = 'Impostazioni di default';
+$string['del'] = 'Rimuovi';
+$string['del_group'] = 'Rimuovi gruppo';
+$string['del_groups'] = 'Rimuovi gruppi';
 $string['displayhorizontal'] = 'Visualizza orizzontalmente';
 $string['displaymode'] = 'Modalità di visualizzazione';
 $string['displayvertical'] = 'Visualizza verticalmente';
+$string['double_click_grouping_legend'] = 'Doppio click su un raggruppamento per espanderlo/minimizzarlo.';
+$string['double_click_group_legend'] = 'Doppio click su un gruppo per aggiungerlo';
+$string['event:answered'] = 'Effettuata scelta';
+$string['event:answered_desc'] = 'L\'utente con id \'{$a->userid}\' ha effettuato una scelta nel modulo di attività Scelta del gruppo con id \'{$a->contextinstanceid}\'.';
+$string['event:removed'] = 'Eliminata scelta';
+$string['event:removed_desc'] = 'L\'utente con id \'{$a->userid}\' ha eliminato la sua scelta nel modulo di attività Scelta del gruppo con id \'{$a->contextinstanceid}\'.';
+$string['event:reportviewed'] = 'Visualizzato report';
+$string['event:reportviewed_desc'] = 'L\'utente con id \'{$a->userid}\' ha visualizzato il report del modulo di attività Scelta del gruppo con id \'{$a->contextinstanceid}\'.';
+$string['expand_all_groupings'] = 'Espandi tutti i raggruppamenti';
 $string['expired'] = 'Ci dispiace, questa attività si è chiusa il {$a} e non è più disponibile';
 $string['fillinatleastoneoption'] = 'Devi fornire almeno due possibili scelte.';
 $string['fillinatleasttwooptions'] = 'Devi fornire almeno due possibili risposte.';
@@ -61,6 +82,7 @@ $string['full'] = '(Completo)';
 $string['generallimitation'] = 'Limite generale';
 $string['groupdoesntexist'] = 'Parte dei gruppi specificati non esistono nel corso. Il docente deve creare i gruppi necessari e/o modificare questa attività.';
 $string['groupmembers'] = 'Membri del gruppo';
+$string['groupsheader'] = 'Gruppi';
 $string['havetologin'] = 'Prima di effettuare la scelta devi autenticarti';
 $string['hidedescription'] = 'Nascondi descrizione';
 $string['limit'] = 'Limite';
@@ -76,6 +98,7 @@ $string['modulenameplural'] = 'Scelta gruppi';
 $string['moveselectedusersto'] = 'Sposta gli utenti selezionati...';
 $string['multipleenrollmentspossible'] = 'Consenti l\'iscrizione a più gruppi';
 $string['mustchooseone'] = 'Devi effettuare una scelta prima di salvare. Non è stato salvato nulla.';
+$string['name'] = 'Nome';
 $string['neverresultsviewable'] = 'I risultati non possono essere visualizzati.';
 $string['noguestchoose'] = 'Ci dispiace, gli ospiti non possono effettuare scelte.';
 $string['noresultsviewable'] = 'Al momento i risultati  non possono essere visualizzati.';
@@ -83,7 +106,7 @@ $string['notanswered'] = 'Non ancora risposto';
 $string['notenrolledchoose'] = 'Ci dispiace, solo gli utenti iscritti possono effettuare scelte';
 $string['notopenyet'] = 'Ci dispiace, questa attività non sarà disponibile fino al {$a}';
 $string['notyetresultsviewable'] = 'I risultati saranno visibili soltanto dopo la chiusura dell\'attività.';
-$string['numberofuser'] = 'Numero di utenti';
+$string['numberofuser'] = 'Il numero degli utenti';
 $string['option'] = 'Gruppo';
 $string['page-mod-choice-x'] = 'Pagina contenente ogni scelta del gruppo';
 $string['pleasesetgroups'] = 'Per favore crea almeno due gruppi nel corso.';
@@ -103,12 +126,16 @@ $string['responses'] = 'Risposte';
 $string['responsesto'] = 'Risposte a {$a}';
 $string['samegroupused'] = 'Non è possibile selezionare più volte lo stesso gruppo.';
 $string['savemychoicegroup'] = 'Salva la mia scelta';
+$string['selected_groups'] = 'Gruppi selezionati';
+$string['set_limit_for_group'] = 'Limite per';
 $string['showdescription'] = 'Visualizza descrizione';
 $string['showunanswered'] = 'Visualizza la colonna per le risposte non pervenute';
 $string['skipresultgraph'] = 'Salta il grafico dei risultati';
+$string['sortgroupsby'] = 'Ordina gruppi per';
 $string['spaceleft'] = 'posto disponibile';
 $string['spacesleft'] = 'posti disponibili';
 $string['taken'] = 'Occupato';
+$string['the_value_you_entered_is_not_a_number'] = 'Il valore inserito non è un numero.';
 $string['timerestrict'] = 'Limita le risposte a questo periodo di tempo';
 $string['viewallresponses'] = 'Visualizza {$a} risposte';
 $string['withselected'] = 'Con i selezionati';

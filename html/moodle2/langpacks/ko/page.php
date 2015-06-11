@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['legacyfilesdone'] = '마감됨';
 $string['modulename'] = '웹페이지';
 $string['modulename_help'] = '강좌 내에서 표시되고 수정될 수 있는 웹 페이지를 만들 수 있다.';
 $string['modulenameplural'] = '웹페이지';
-$string['neverseen'] = '보이지 않음';
 $string['optionsheader'] = '표시 옵션';
 $string['page:addinstance'] = '새 페이지 자원 추가';
 $string['page-mod-page-x'] = '모든 페이지 모듈 페이지';

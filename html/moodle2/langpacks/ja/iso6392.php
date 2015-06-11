@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'iso6392', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   iso6392
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,7 +103,7 @@ $string['che'] = 'チェチェン語';
 $string['chg'] = 'チャガタイ語';
 $string['chk'] = 'チューク語';
 $string['chm'] = 'マリ語';
-$string['chn'] = 'チヌーク混成語';
+$string['chn'] = 'チヌーク・ジャーゴン';
 $string['cho'] = 'チョクトー語';
 $string['chp'] = 'チペワイヤン語,デネスリン語';
 $string['chr'] = 'チェロキー語';

@@ -258,7 +258,7 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
             return $coursecat;
         } else {
             if ($strictness == MUST_EXIST) {
-                throw new moodle_exception('unknowcategory');
+                throw new moodle_exception('unknowncategory');
             }
         }
         return null;
@@ -427,7 +427,12 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
             $DB->update_record('course_categories', $updatedata);
         }
 
-        add_to_log(SITEID, "category", 'add', "editcategory.php?id=$newcategory->id", $newcategory->id);
+        $event = \core\event\course_category_created::create(array(
+            'objectid' => $newcategory->id,
+            'context' => $categorycontext
+        ));
+        $event->trigger();
+
         cache_helper::purge_by_event('changesincoursecat');
 
         return self::get($newcategory->id, MUST_EXIST, true);
@@ -516,13 +521,19 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
 
         $newcategory->timemodified = time();
 
+        $categorycontext = $this->get_context();
         if ($editoroptions) {
-            $categorycontext = $this->get_context();
             $newcategory = file_postupdate_standard_editor($newcategory, 'description', $editoroptions, $categorycontext,
                                                            'coursecat', 'description', 0);
         }
         $DB->update_record('course_categories', $newcategory);
-        add_to_log(SITEID, "category", 'update', "editcategory.php?id=$this->id", $this->id);
+
+        $event = \core\event\course_category_updated::create(array(
+            'objectid' => $newcategory->id,
+            'context' => $categorycontext
+        ));
+        $event->trigger();
+
         fix_course_sortorder();
         // Purge cache even if fix_course_sortorder() did not do it.
         cache_helper::purge_by_event('changesincoursecat');
@@ -543,44 +554,6 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
     public function is_uservisible() {
         return !$this->id || $this->visible ||
                 has_capability('moodle/category:viewhiddencategories', $this->get_context());
-    }
-
-    /**
-     * Returns all categories visible to the current user
-     *
-     * This is a generic function that returns an array of
-     * (category id => coursecat object) sorted by sortorder
-     *
-     * @see coursecat::get_children()
-     *
-     * @return cacheable_object_array array of coursecat objects
-     */
-    public static function get_all_visible() {
-        global $USER;
-        $coursecatcache = cache::make('core', 'coursecat');
-        $ids = $coursecatcache->get('user'. $USER->id);
-        if ($ids === false) {
-            $all = self::get_all_ids();
-            $parentvisible = $all[0];
-            $rv = array();
-            foreach ($all as $id => $children) {
-                if ($id && in_array($id, $parentvisible) &&
-                        ($coursecat = self::get($id, IGNORE_MISSING)) &&
-                        (!$coursecat->parent || isset($rv[$coursecat->parent]))) {
-                    $rv[$id] = $coursecat;
-                    $parentvisible += $children;
-                }
-            }
-            $coursecatcache->set('user'. $USER->id, array_keys($rv));
-        } else {
-            $rv = array();
-            foreach ($ids as $id) {
-                if ($coursecat = self::get($id, IGNORE_MISSING)) {
-                    $rv[$id] = $coursecat;
-                }
-            }
-        }
-        return $rv;
     }
 
     /**
@@ -740,7 +713,8 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
         if (empty($cacheddata['basic']) || $cacheddata['basic']['roles'] !== $CFG->coursecontact ||
                 $cacheddata['basic']['lastreset'] < time() - self::CACHE_COURSE_CONTACTS_TTL) {
             // Reset cache.
-            $cache->purge();
+            $keys = $DB->get_fieldset_select('course', 'id', '');
+            $cache->delete_many($keys);
             $cache->set('basic', array('roles' => $CFG->coursecontact, 'lastreset' => time()));
             $cacheddata = $cache->get_many(array_merge(array('basic'), array_keys($courses)));
         }
@@ -1589,6 +1563,9 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
         require_once($CFG->libdir.'/questionlib.php');
         require_once($CFG->dirroot.'/cohort/lib.php');
 
+        // Make sure we won't timeout when deleting a lot of courses.
+        $settimeout = core_php_time_limit::raise();
+
         $deletedcourses = array();
 
         // Get children. Note, we don't want to use cache here because it would be rebuilt too often.
@@ -1740,7 +1717,13 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
             foreach ($children as $childcat) {
                 $childcat->change_parent_raw($newparentcat);
                 // Log action.
-                add_to_log(SITEID, "category", "move", "editcategory.php?id=$childcat->id", $childcat->id);
+                $event = \core\event\course_category_updated::create(array(
+                    'objectid' => $childcat->id,
+                    'context' => $childcat->get_context()
+                ));
+                $event->set_legacy_logdata(array(SITEID, 'category', 'move', 'editcategory.php?id=' . $childcat->id,
+                    $childcat->id));
+                $event->trigger();
             }
             fix_course_sortorder();
         }
@@ -1908,7 +1891,13 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
             fix_course_sortorder();
             cache_helper::purge_by_event('changesincoursecat');
             $this->restore();
-            add_to_log(SITEID, "category", "move", "editcategory.php?id=$this->id", $this->id);
+
+            $event = \core\event\course_category_updated::create(array(
+                'objectid' => $this->id,
+                'context' => $this->get_context()
+            ));
+            $event->set_legacy_logdata(array(SITEID, 'category', 'move', 'editcategory.php?id=' . $this->id, $this->id));
+            $event->trigger();
         }
     }
 
@@ -1974,7 +1963,13 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
     public function hide() {
         if ($this->hide_raw(0)) {
             cache_helper::purge_by_event('changesincoursecat');
-            add_to_log(SITEID, "category", "hide", "editcategory.php?id=$this->id", $this->id);
+
+            $event = \core\event\course_category_updated::create(array(
+                'objectid' => $this->id,
+                'context' => $this->get_context()
+            ));
+            $event->set_legacy_logdata(array(SITEID, 'category', 'hide', 'editcategory.php?id=' . $this->id, $this->id));
+            $event->trigger();
         }
     }
 
@@ -2027,7 +2022,13 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
     public function show() {
         if ($this->show_raw()) {
             cache_helper::purge_by_event('changesincoursecat');
-            add_to_log(SITEID, "category", "show", "editcategory.php?id=$this->id", $this->id);
+
+            $event = \core\event\course_category_updated::create(array(
+                'objectid' => $this->id,
+                'context' => $this->get_context()
+            ));
+            $event->set_legacy_logdata(array(SITEID, 'category', 'show', 'editcategory.php?id=' . $this->id, $this->id));
+            $event->trigger();
         }
     }
 
@@ -2111,7 +2112,8 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
 
         // Check if we cached the complete list of user-accessible category names ($baselist) or list of ids
         // with requried cap ($thislist).
-        $basecachekey = 'catlist';
+        $currentlang = current_language();
+        $basecachekey = $currentlang . '_catlist';
         $baselist = $coursecatcache->get($basecachekey);
         $thislist = false;
         $thiscachekey = null;
@@ -2395,20 +2397,36 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
     }
 
     /**
+     * Returns true if the user is able to restore a course into this category as a new course.
+     * @return bool
+     */
+    public function can_restore_courses_into() {
+        return has_capability('moodle/course:create', $this->get_context());
+    }
+
+    /**
      * Resorts the sub categories of this category by the given field.
      *
-     * @param string $field
+     * @param string $field One of name, idnumber or descending values of each (appended desc)
      * @param bool $cleanup If true cleanup will be done, if false you will need to do it manually later.
      * @return bool True on success.
      * @throws coding_exception
      */
     public function resort_subcategories($field, $cleanup = true) {
         global $DB;
+        $desc = false;
+        if (substr($field, -4) === "desc") {
+            $desc = true;
+            $field = substr($field, 0, -4);  // Remove "desc" from field name.
+        }
         if ($field !== 'name' && $field !== 'idnumber') {
             throw new coding_exception('Invalid field requested');
         }
         $children = $this->get_children();
         core_collator::asort_objects_by_property($children, $field, core_collator::SORT_NATURAL);
+        if (!empty($desc)) {
+            $children = array_reverse($children);
+        }
         $i = 1;
         foreach ($children as $cat) {
             $i++;
@@ -2437,14 +2455,19 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
     /**
      * Resort the courses within this category by the given field.
      *
-     * @param string $field One of fullname, shortname or idnumber
+     * @param string $field One of fullname, shortname, idnumber or descending values of each (appended desc)
      * @param bool $cleanup
      * @return bool True for success.
      * @throws coding_exception
      */
     public function resort_courses($field, $cleanup = true) {
         global $DB;
-        if ($field !== 'fullname' && $field !== 'shortname' && $field !== 'idnumber') {
+        $desc = false;
+        if (substr($field, -4) === "desc") {
+            $desc = true;
+            $field = substr($field, 0, -4);  // Remove "desc" from field name.
+        }
+        if ($field !== 'fullname' && $field !== 'shortname' && $field !== 'idnumber' && $field !== 'timecreated') {
             // This is ultra important as we use $field in an SQL statement below this.
             throw new coding_exception('Invalid field requested');
         }
@@ -2453,8 +2476,7 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
                   FROM {course} c
              LEFT JOIN {context} ctx ON ctx.instanceid = c.id
                  WHERE ctx.contextlevel = :ctxlevel AND
-                       c.category = :categoryid
-              ORDER BY c.{$field}, c.sortorder";
+                       c.category = :categoryid";
         $params = array(
             'ctxlevel' => CONTEXT_COURSE,
             'categoryid' => $this->id
@@ -2483,6 +2505,9 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
             }
             // Sort the courses.
             core_collator::asort_objects_by_property($courses, 'sortby', core_collator::SORT_NATURAL);
+            if (!empty($desc)) {
+                $courses = array_reverse($courses);
+            }
             $i = 1;
             foreach ($courses as $course) {
                 $DB->set_field('course', 'sortorder', $this->sortorder + $i, array('id' => $course->id));
@@ -2521,7 +2546,15 @@ class coursecat implements renderable, cacheable_object, IteratorAggregate {
             $DB->set_field('course_categories', 'sortorder', $swapcategory->sortorder, array('id' => $this->id));
             $DB->set_field('course_categories', 'sortorder', $this->sortorder, array('id' => $swapcategory->id));
             $this->sortorder = $swapcategory->sortorder;
-            add_to_log(SITEID, "category", "move", "management.php?categoryid={$this->id}", $this->id);
+
+            $event = \core\event\course_category_updated::create(array(
+                'objectid' => $this->id,
+                'context' => $this->get_context()
+            ));
+            $event->set_legacy_logdata(array(SITEID, 'category', 'move', 'management.php?categoryid=' . $this->id,
+                $this->id));
+            $event->trigger();
+
             // Finally reorder courses.
             fix_course_sortorder();
             cache_helper::purge_by_event('changesincoursecat');

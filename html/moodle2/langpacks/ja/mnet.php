@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'リモートサイトがあなたのサイトに関す�
 $string['error7024'] = 'あなたは暗号化されていないメッセージをリモートサイトに送信しましたが、リモートサイトはあなたのサイトからの暗号化されていないコミュニケーションを受け入れません。これは非常に稀なケースです。このエラーが発生した場合、バグを記録 (問題になっているMoodleのバージョンに関する可能な限り詳細な情報等) することをお勧めします。';
 $string['error7026'] = 'あなたのメッセージが署名されたキーは、リモートホストがあなたのサーバのために保持しているキーとは異なります。さらにリモートホストがあなたの現在のキーの取得を試みましたが失敗しました。リモートホストのキーを手動で再作成して、もう一度お試しください。';
 $string['error709'] = 'リモートサイトが、あなたのSSLキー取得に失敗しました。';
+$string['eventaccesscontrolcreated'] = 'アクセスコントロールが追加されました。';
+$string['eventaccesscontrolupdated'] = 'アクセスコントロールが更新されました。';
 $string['expired'] = 'この公開鍵の有効期限:';
 $string['expires'] = '有効期限';
 $string['expireyourkey'] = 'この公開鍵を削除する';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'MNet IDプロバイダ';
 $string['mnetidproviderdesc'] = '前回のログインに使用したユーザ名に合致する正しいメールアドレスを提供することで、あなたはこの機能を使用して、ログインリンクを検索することができます。';
 $string['mnetidprovidermsg'] = 'あなたは {$a} プロバイダにログインすることができます。';
 $string['mnetidprovidernotfound'] = '申し訳ございません、詳細情報は見つかりませんでした。';
-$string['mnetlog'] = 'ログ';
 $string['mnetpeers'] = 'ピア';
 $string['mnetservices'] = 'サービス';
 $string['mnet_session_prohibited'] = 'あなたのホームサーバのユーザは、現在 {$a} の散策を許可されていません。';
@@ -174,7 +175,7 @@ $string['phperror'] = '内部PHPエラーが発生したため、処理を実行
 $string['position'] = 'ポジション';
 $string['postrequired'] = '削除処理には、POSTリクエストが必要です。';
 $string['profileexportfields'] = '送信するフィールド';
-$string['profilefielddesc'] = 'ここであなたはユーザアカウント作成または更新時にMNet経由で送信または受信される、プロファイルフィールドのリストを設定することができます。あなたはそれぞれのMNetピアの設定を個別にオーバーライドすることもできます。次のフィールドは常に送信さるため、任意ではないことに留意してください: {$a}';
+$string['profilefielddesc'] = 'ここであなたはユーザアカウント作成または更新時にMNet経由で送信または受信されるプロファイルフィールドのリストを設定することができます。あなたはそれぞれのMNetピア設定を個別にオーバーライドすることもできます。次のフィールドは常に送信さるため、任意ではないことに留意してください: {$a}';
 $string['profilefields'] = 'プロファイルフィールド';
 $string['profileimportfields'] = 'インポートするフィールド';
 $string['promiscuous'] = '無制限';

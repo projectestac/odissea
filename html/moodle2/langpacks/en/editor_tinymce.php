@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -770,7 +770,7 @@ $string['table_dlg:langdir'] = 'Language direction';
 $string['table_dlg:ltr'] = 'Left to right';
 $string['table_dlg:merge_cells_title'] = 'Merge table cells';
 $string['table_dlg:mime'] = 'Target MIME type';
-$string['table_dlg:missing_scope'] = 'Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table.';
+$string['table_dlg:missing_scope'] = 'Are you sure you want to continue without specifying a scope for this table header cell? Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table.';
 $string['table_dlg:row_all'] = 'Update all rows in table';
 $string['table_dlg:row_even'] = 'Update even rows in table';
 $string['table_dlg:rowgroup'] = 'Row group';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_completion', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktomarkusercomplete'] = 'Cliquer pour signaler l\'achèvement du cours par l\'utilisateur';
 $string['completiondate'] = 'Date d\'achèvement';
 $string['completion:view'] = 'Consulter le rapport d\'achèvement du cours';
+$string['eventreportviewed'] = 'Rapport d\'achèvement consulté';
+$string['eventuserreportviewed'] = 'Rapport utilisateur d\'achèvement consulté';
 $string['id'] = 'ID';
 $string['name'] = 'Nom';
 $string['page-report-completion-index'] = 'Rapport d\'achèvement de cours';

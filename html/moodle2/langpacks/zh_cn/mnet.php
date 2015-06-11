@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,7 +132,6 @@ $string['mnetidprovider'] = 'MNet ID 提供者';
 $string['mnetidproviderdesc'] = '您可以使用这项功能检索任意您可以登录的链接网站，如果您能提供正确的邮箱地址来匹配您以前使用过的登录用户名。';
 $string['mnetidprovidermsg'] = '您应该在 {$a} 登录。';
 $string['mnetidprovidernotfound'] = '很抱歉，没有找到更多信息';
-$string['mnetlog'] = '日志';
 $string['mnetpeers'] = '同伴';
 $string['mnetservices'] = '服务';
 $string['mnet_session_prohibited'] = '宿主服务器中的用户当前不允许进入到{$a}。';

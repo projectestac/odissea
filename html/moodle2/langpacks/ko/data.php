@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -153,6 +153,12 @@ $string['entry'] = '입력 내용';
 $string['entrysaved'] = '입력 내용이 저장되었습니다.';
 $string['errormustbeteacher'] = '선생님만 이 페이지를 사용할 수 있습니다.';
 $string['errorpresetexists'] = '지정된 이름으로 미리 설정이 되어 있음';
+$string['eventfieldcreated'] = '필드 생성됨';
+$string['eventfielddeleted'] = '필드 삭제됨';
+$string['eventfieldupdated'] = '필드 업데이트됨';
+$string['eventrecordcreated'] = '레코드 생성됨';
+$string['eventrecorddeleted'] = '레코드 삭제됨';
+$string['eventrecordupdated'] = '레코드 업데이트됨';
 $string['example'] = '데이터베이스 모듈 예제';
 $string['excel'] = '엑셀';
 $string['expired'] = '죄송합니다만, 이 활동은 {$a}에 종료되었으므로 더 이상 이용할 수 없습니다.';

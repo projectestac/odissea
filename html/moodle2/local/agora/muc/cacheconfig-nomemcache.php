@@ -43,29 +43,27 @@ defined('MOODLE_INTERNAL') || die();
       'features' => 14,
       'modes' => 4,
       'default' => true,
-      'class' => 'cachestore_static',
-      'lock' => 'cachelock_file_default',
     )
   ),
   'modemappings' =>
   array (
     0 =>
     array (
-      'store' => 'default_request',
-      'mode' => 4,
-      'sort' => 0,
+      'mode' => 1,
+      'store' => 'default_application',
+      'sort' => -1,
     ),
     1 =>
     array (
-      'store' => 'default_session',
       'mode' => 2,
-      'sort' => 0,
+      'store' => 'default_session',
+      'sort' => -1,
     ),
     2 =>
     array (
-      'store' => 'default_application',
-      'mode' => 1,
-      'sort' => 0,
+      'mode' => 4,
+      'store' => 'default_request',
+      'sort' => -1,
     ),
   ),
   'definitions' =>
@@ -228,7 +226,7 @@ defined('MOODLE_INTERNAL') || die();
       'sharingoptions' => 15,
     ),
     'core/coursecat' =>
-      array (
+    array (
       'mode' => 2,
       'invalidationevents' =>
       array (
@@ -342,6 +340,43 @@ defined('MOODLE_INTERNAL') || die();
       'userinputsharingkey' => '',
       'sharingoptions' => 2,
     ),
+    'availability_grade/scores' =>
+    array (
+      'mode' => 1,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 2,
+      'ttl' => 3600,
+      'component' => 'availability_grade',
+      'area' => 'scores',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'availability_grade/items' =>
+    array (
+      'mode' => 1,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 2,
+      'ttl' => 3600,
+      'component' => 'availability_grade',
+      'area' => 'items',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'mod_glossary/concepts' =>
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 30,
+      'component' => 'mod_glossary',
+      'area' => 'concepts',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
     'repository_skydrive/foldername' =>
     array (
       'mode' => 2,
@@ -350,6 +385,19 @@ defined('MOODLE_INTERNAL') || die();
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
       'sharingoptions' => 2,
+    ),
+    'tool_monitor/eventsubscriptions' =>
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 10,
+      'component' => 'tool_monitor',
+      'area' => 'eventsubscriptions',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'tool_uploadcourse/helper' =>
     array (
@@ -366,7 +414,7 @@ defined('MOODLE_INTERNAL') || die();
   ),
   'locks' =>
   array (
-    'cachelock_file_default' =>
+    'default_file_lock' =>
     array (
       'name' => 'cachelock_file_default',
       'type' => 'cachelock_file',

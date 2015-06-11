@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,31 @@ $string['actualresponse'] = 'Actual response';
 $string['allattempts'] = 'all attempts';
 $string['allattemptsavg'] = 'Average grade of all attempts';
 $string['allattemptscount'] = 'Total number of complete graded attempts';
+$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisno'] = '({$a->number}) "{$a->name}"';
+$string['analysisnovariant'] = '({$a->number}) "{$a->name}" variant {$a->variant}';
 $string['analysisofresponses'] = 'Analysis of responses';
-$string['analysisofresponsesfor'] = 'Analysis of responses for {$a}.';
+$string['analysisofresponsesfor'] = 'Analysis of responses for {$a}';
+$string['analysisvariant'] = '"{$a->name}" variant {$a->variant}';
 $string['attempts'] = 'Attempts';
 $string['attemptsall'] = 'all attempts';
 $string['attemptsfirst'] = 'first attempt';
 $string['backtoquizreport'] = 'Back to main statistics report page.';
 $string['calculatefrom'] = 'Calculate statistics from';
+$string['calculatingallstats'] = 'Calculating statistics for quiz, questions and analysing response data';
 $string['cic'] = 'Coefficient of internal consistency (for {$a})';
 $string['completestatsfilename'] = 'completestats';
 $string['count'] = 'Count';
+$string['counttryno'] = 'Count Try {$a}';
 $string['coursename'] = 'Course name';
 $string['detailedanalysis'] = 'More detailed analysis of the responses to this question';
+$string['detailedanalysisforvariant'] = 'More detailed analysis of the responses to variant {$a} of this question';
 $string['discrimination_index'] = 'Discrimination index';
 $string['discriminative_efficiency'] = 'Discriminative efficiency';
 $string['downloadeverything'] = 'Download full report as {$a->formatsmenu} {$a->downloadbutton}';
 $string['duration'] = 'Open for';
 $string['effective_weight'] = 'Effective weight';
 $string['errordeleting'] = 'Error deleting old {$a} records.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Question ({$a}) appears more than once with different weights in different positions of the test. This is not currently supported by the statistics report and may make the statistics for this question unreliable.';
 $string['errormedian'] = 'Error fetching median';
 $string['errorpowerquestions'] = 'Error fetching data to calculate variance for question grades';
 $string['errorpowers'] = 'Error fetching data to calculate variance for quiz grades';
@@ -66,8 +72,12 @@ $string['kurtosis'] = 'Score distribution kurtosis (for {$a})';
 $string['lastattempts'] = 'last attempt';
 $string['lastattemptsavg'] = 'Average grade of last attempts';
 $string['lastcalculated'] = 'Last calculated {$a->lastcalculated} ago there have been {$a->count} attempts since then.';
+$string['maximumfacility'] = 'Maximum facility';
 $string['median'] = 'Median grade (for {$a})';
+$string['medianfacility'] = 'Median facility';
+$string['minimumfacility'] = 'Minimum facility';
 $string['modelresponse'] = 'Model response';
+$string['nameforvariant'] = 'Variant {$a->variant} of {$a->name}';
 $string['negcovar'] = 'Negative covariance of grade with total attempt grade';
 $string['negcovar_help'] = 'This question\'s grade for this set of attempts on the quiz varies in an opposite way to the overall attempt grade. This means overall attempt grade tends to be below average when the grade for this question is above average and vice-versa.
 
@@ -95,6 +105,7 @@ $string['recalculatenow'] = 'Recalculate now';
 $string['reportsettings'] = 'Statistics calculation settings';
 $string['response'] = 'Response';
 $string['skewness'] = 'Score distribution skewness (for {$a})';
+$string['slotstructureanalysis'] = 'Structural analysis for question number {$a}';
 $string['standarddeviation'] = 'Standard deviation (for {$a})';
 $string['standarddeviationq'] = 'Standard deviation';
 $string['standarderror'] = 'Standard error (for {$a})';
@@ -104,3 +115,5 @@ $string['statisticsreport'] = 'Statistics report';
 $string['statisticsreportgraph'] = 'Statistics for question positions';
 $string['statistics:view'] = 'View statistics report';
 $string['statsfor'] = 'Quiz statistics (for {$a})';
+$string['variant'] = 'Variant';
+$string['whichtries'] = 'Analyze responses for';

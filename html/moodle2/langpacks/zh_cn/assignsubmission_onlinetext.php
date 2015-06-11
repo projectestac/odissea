@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['default'] = '默认开启';
 $string['default_help'] = '如果设置此项，将会为所有新作业默认开启此提交方法。';
 $string['enabled'] = '在线文本';
 $string['enabled_help'] = '如果设置此项，学生可以直接在编辑器中以富文本形式输入他们的作业。';
-$string['event_assessable_uploaded'] = '一个在线文本已经被上传。';
+$string['eventassessableuploaded'] = '一个在线文本已经被上传。';
 $string['nosubmission'] = '这个作业还没有任何提交';
 $string['numwords'] = '({$a} 个字)';
 $string['numwordsforlog'] = '提交字数：{$a} 个字';
@@ -38,3 +38,6 @@ $string['onlinetext'] = '在线文本';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = '允许在线文本提交';
 $string['pluginname'] = '在线文本提交';
+$string['wordlimit'] = '字数限制';
+$string['wordlimitexceeded'] = '此作业被设置了不能超过 {$a->limit} 字，而您试图提交 {$a->count} 字，请再检查一下你的作业后重新提交。';
+$string['wordlimit_help'] = '如果作业类型为在线文本，此项设置是学生提交的最大字数限制。';

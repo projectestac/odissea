@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,23 +29,29 @@ $string['actualresponse'] = 'Фактический ответ';
 $string['allattempts'] = 'все попытки';
 $string['allattemptsavg'] = 'Средняя оценка по всем попыткам';
 $string['allattemptscount'] = 'Общее количество полностью оцененных попыток';
+$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisno'] = '({$a->number}) "{$a->name}"';
+$string['analysisnovariant'] = '({$a->number}) "{$a->name}" вариант {$a->variant}';
 $string['analysisofresponses'] = 'Анализ ответов';
 $string['analysisofresponsesfor'] = 'Анализ ответов на «{$a}».';
+$string['analysisvariant'] = '«{$a->name}» вариант {$a->variant}';
 $string['attempts'] = 'Попытки';
 $string['attemptsall'] = 'все попытки';
 $string['attemptsfirst'] = 'первая попытка';
 $string['backtoquizreport'] = 'Вернуться к основной странице статистики';
 $string['calculatefrom'] = 'Рассчитать статистику';
+$string['calculatingallstats'] = 'Расчет статистики теста, вопросов и анализ данных ответов';
 $string['cic'] = 'Коэффициент внутренней согласованности (для {$a})';
 $string['completestatsfilename'] = 'completestats';
 $string['count'] = 'Количество';
+$string['counttryno'] = 'Всего попыток {$a}';
 $string['coursename'] = 'Название курса';
 $string['detailedanalysis'] = 'Более детальный анализ ответов на этот вопрос';
+$string['detailedanalysisforvariant'] = 'Более детальный анализ ответов на вариант {$a} этого вопроса';
 $string['discrimination_index'] = 'Индекс дискриминации';
 $string['downloadeverything'] = 'Скачать полный отчет как {$a->formatsmenu} {$a->downloadbutton}';
 $string['duration'] = 'Открыть на';
 $string['errordeleting'] = 'Ошибка при удалении старых записей {$a}.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Вопрос ({$a}) присутствует несколько раз с различными весами в разных местах теста. В настоящее время это не поддерживается в статистическом отчете и может сделать статистику этого вопроса ненадежной.';
 $string['errormedian'] = 'Ошибка выборки среднего';
 $string['errorpowerquestions'] = 'Ошибка выборки данных расчета дисперсии для оценок вопроса';
 $string['errorpowers'] = 'Ошибка выборки данных расчета дисперсии для оценок вопроса';
@@ -92,6 +98,7 @@ $string['recalculatenow'] = 'Пересчитать сейчас';
 $string['reportsettings'] = 'Настройки статистического отчета';
 $string['response'] = 'Ответ';
 $string['skewness'] = 'Оценка асимметрии распределения (для {$a})';
+$string['slotstructureanalysis'] = 'Структурный анализ для вопроса номер {$a}';
 $string['standarddeviation'] = 'Стандартное отклонение (для {$a})';
 $string['standarddeviationq'] = 'Стандартное отклонение';
 $string['standarderror'] = 'Стандартная ошибка ( для {$a})';
@@ -101,3 +108,5 @@ $string['statisticsreport'] = 'Статистический отчет';
 $string['statisticsreportgraph'] = 'Статистика по позиции вопроса';
 $string['statistics:view'] = 'Просматривать отчет по тесту «Статистика»';
 $string['statsfor'] = 'Статистика теста (для {$a})';
+$string['variant'] = 'Вариант';
+$string['whichtries'] = 'Анализ ответов';

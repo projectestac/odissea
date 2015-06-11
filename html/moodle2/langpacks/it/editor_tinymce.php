@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -767,7 +767,7 @@ $string['table_dlg:langdir'] = 'Direzione testo';
 $string['table_dlg:ltr'] = 'Sinistra verso destra';
 $string['table_dlg:merge_cells_title'] = 'Unisci celle';
 $string['table_dlg:mime'] = 'Tipo MIME del target';
-$string['table_dlg:missing_scope'] = 'Sei sicuro di proseguire senza aver specificato uno scope per l\'intestazione di questa tabella? Senza l\'intestazione  potrebbe essere difficoltoso per alcuni utenti con disabilità capire il contenuto o i dati visualizzati tramite la tabella.';
+$string['table_dlg:missing_scope'] = 'Sei sicuro di proseguire senza aver specificato un ambito per la cella di questo valore intestazione di questa tabella? Senza questo valore per alcuni utenti con disabilità potrebbe essere difficoltoso capire il contenuto o i dati visualizzati tramite la tabella.';
 $string['table_dlg:row_all'] = 'Aggiorna tutte le righe della tabella';
 $string['table_dlg:row_even'] = 'Aggiorna righe pari della tabella';
 $string['table_dlg:rowgroup'] = 'Gruppo righe';

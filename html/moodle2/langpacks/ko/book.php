@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'book', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,10 @@ $string['customtitles'] = '사용자 맞춤 제목';
 $string['customtitles_help'] = '장의 제목은 목차에 자동으로 표시됩니다.';
 $string['editingchapter'] = '장 편집';
 $string['errorchapter'] = '책의 장을 읽는데 오류';
+$string['eventchaptercreated'] = '장이 만들어짐';
+$string['eventchapterdeleted'] = '장이 삭제됨';
+$string['eventchapterupdated'] = '장이 업데이트됨';
+$string['eventchapterviewed'] = '장이 보여짐';
 $string['modulename'] = '책';
 $string['modulename_help'] = '책은  여러 페이지로 된 간단한 학습 자료입니다.';
 $string['modulenameplural'] = '책';

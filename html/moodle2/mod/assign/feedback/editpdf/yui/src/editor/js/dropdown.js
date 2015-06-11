@@ -2,19 +2,23 @@ var DROPDOWN_NAME = "Dropdown menu",
     DROPDOWN;
 
 /**
- * DROPDOWN
+ * Provides an in browser PDF editor.
+ *
+ * @module moodle-assignfeedback_editpdf-editor
+ */
+
+/**
  * This is a drop down list of buttons triggered (and aligned to) a button.
  *
- * @namespace M.assignfeedback_editpdf.widget.dropdown
+ * @namespace M.assignfeedback_editpdf
  * @class dropdown
  * @constructor
- * @extends Y.Base
+ * @extends M.core.dialogue
  */
 DROPDOWN = function(config) {
     config.draggable = false;
     config.centered = false;
     config.width = 'auto';
-    config.lightbox = false;
     config.visible = false;
     config.footerContent = '';
     DROPDOWN.superclass.constructor.apply(this, [config]);
@@ -94,6 +98,23 @@ Y.extend(DROPDOWN, M.core.dialogue, {
          */
         buttonNode : {
             value : null
+        }
+    }
+});
+
+Y.Base.modifyAttrs(DROPDOWN, {
+    /**
+     * Whether the widget should be modal or not.
+     *
+     * Moodle override: We override this for commentsearch to force it always false.
+     *
+     * @attribute Modal
+     * @type Boolean
+     * @default false
+     */
+    modal: {
+        getter: function() {
+            return false;
         }
     }
 });

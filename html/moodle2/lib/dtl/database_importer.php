@@ -90,7 +90,7 @@ class database_importer {
      * operation, before any database changes are made. It will check the database
      * schema if @see check_schema is true
      *
-     * @exception dbtransfer_exception if any checking (e.g. database schema, Moodle
+     * @throws dbtransfer_exception if any checking (e.g. database schema, Moodle
      * version) fails
      *
      * @param float $version the version of the system which generated the data
@@ -110,7 +110,8 @@ class database_importer {
             throw new dbtransfer_exception('importversionmismatchexception', $a);
         }
 
-        if ($this->check_schema and $errors = $this->manager->check_database_schema($this->schema)) {
+        $options = array('changedcolumns' => false); // Column types may be fixed by transfer.
+        if ($this->check_schema and $errors = $this->manager->check_database_schema($this->schema, $options)) {
             $details = '';
             foreach ($errors as $table=>$items) {
                 $details .= '<div>'.get_string('table').' '.$table.':';
@@ -131,8 +132,8 @@ class database_importer {
      * Callback function. Should be called only once per table import operation,
      * before any table changes are made. It will delete all table data.
      *
-     * @exception dbtransfer_exception an unknown table import is attempted
-     * @exception ddl_table_missing_exception if the table is missing
+     * @throws dbtransfer_exception an unknown table import is attempted
+     * @throws ddl_table_missing_exception if the table is missing
      *
      * @param string $tablename - the name of the table that will be imported
      * @param string $schemaHash - the hash of the xmldb_table schema of the table
@@ -191,7 +192,7 @@ class database_importer {
      * between @see begin_table_import and @see finish_table_import calls.
      * It will insert table data.
      *
-     * @exception dml_exception if data insert operation failed
+     * @throws dml_exception if data insert operation failed
      *
      * @param string $tablename - the name of the table in which data will be
      * imported

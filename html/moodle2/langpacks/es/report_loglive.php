@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_loglive', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Componente';
+$string['eventcontext'] = 'Contexto del evento';
+$string['eventloggedas'] = '{$a->realusername} como {$a->asusername}';
+$string['eventorigin'] = 'Origen';
+$string['eventrelatedfullnameuser'] = 'Usuario afectado';
+$string['eventreportviewed'] = 'Lector de registros en tiempo real visto';
 $string['livelogs'] = 'Registros activos en la última hora';
 $string['loglive:view'] = 'Ver logs activos';
+$string['nologreaderenabled'] = 'No hay lector de registros activado';
+$string['pause'] = 'Pausar actualizaciones en tiempo real';
 $string['pluginname'] = 'Registros activos';
+$string['resume'] = 'Reanudar actualizaciones en tiempo real';
+$string['selectlogreader'] = 'Elegir lector de registros';

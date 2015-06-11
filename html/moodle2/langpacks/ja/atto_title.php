@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_title', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blockquote'] = '引用';
-$string['h3'] = '見出し1';
-$string['h4'] = '見出し2';
-$string['h5'] = '見出し3';
-$string['p'] = 'プレイン';
+$string['h3'] = '見出し(大)';
+$string['h4'] = '見出し(中)';
+$string['h5'] = '見出し(小)';
+$string['p'] = '段落';
 $string['pluginname'] = '段落スタイル';
 $string['pre'] = 'フォーマット済み';
 $string['title'] = '段落スタイル';

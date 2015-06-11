@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['errorinvalidformat'] = 'Formato de backup desconocido';
 $string['errorinvalidformatinfo'] = 'El archivo seleccionado no es un archivo de copia de seguridad de Moodle válido y no puede ser restaurado.';
 $string['errorminbackup20version'] = 'Este archivo de copia de seguridad ha sido creado con una versión de desarrollo de copia de seguridad de Moodle ({$a->backup}) y se requiere al menos la versión {$a->min}. Por lo tanto, no puede ser restaurado.';
 $string['errorrestorefrontpage'] = 'No está permitido restaurar en la página principal.';
-$string['errortgznozlib'] = 'El archivo seleccionado está en el nuevo formato de copia de seguridad y no puede restaurarse porque la extensión de PHP zlib no está disponible en el sistema.';
 $string['executionsuccess'] = 'El archivo de copia de seguridad se creó con éxito';
 $string['filealiasesrestorefailures'] = 'Fallos en la restauración de alias';
 $string['filealiasesrestorefailures_help'] = 'Los alias son enlaces simbólicos a otros archivos, incluyendo aquellos almacenados en repositorios externos. En algunos casos, Moodle no puede restaurarlos - por ejemplo cuando se restaura una copia de seguridad en otro sitio o cuando el archivo al que se hace referencia no existe.';
@@ -165,6 +164,7 @@ $string['includeditems'] = 'Elementos incluidos:';
 $string['includefilereferences'] = 'Referencias de archivo a contenidos externos';
 $string['includesection'] = 'Sección {$a}';
 $string['includeuserinfo'] = 'Datos de usuario';
+$string['jumptofinalstep'] = 'Saltar al último paso';
 $string['locked'] = 'Bloqueado';
 $string['lockedbyconfig'] = 'Este ajuste ha sido bloqueado por la configuración predeterminada de la copia de seguridad';
 $string['lockedbyhierarchy'] = 'Bloqueado por las dependencias';
@@ -256,10 +256,11 @@ $string['skiphiddenhelp'] = 'Elija si desea o no pasar por alto cursos ocultos';
 $string['skipmodifdays'] = 'Pasar por alto cursos no modificados desde';
 $string['skipmodifdayshelp'] = 'Seleccione para pasar por alto cursos que no han sido modificados desde un número de días';
 $string['skipmodifprev'] = 'Pasar por alto cursos no modificados desde copia de seguridad anterior';
-$string['skipmodifprevhelp'] = 'Elija si desea o no pasar por alto cursos que no han sido modificados desde la copia de seguridad anterior';
+$string['skipmodifprevhelp'] = 'Elija si desea o no pasar por alto cursos que no han sido modificados desde la copia de seguridad anterior. Requiere logearse para ser activada.';
 $string['storagecourseandexternal'] = 'Área de ficheros de copia de seguridad y carpeta específica';
 $string['storagecourseonly'] = 'Área de archivos de copia de seguridad';
 $string['storageexternalonly'] = 'Especifique directorio para las copias de seguridad automáticas';
+$string['timetaken'] = 'Tiempo empleado';
 $string['title'] = 'Título';
 $string['totalcategorysearchresults'] = 'Total de categorías: {$a}';
 $string['totalcoursesearchresults'] = 'Cursos totales: {$a}';

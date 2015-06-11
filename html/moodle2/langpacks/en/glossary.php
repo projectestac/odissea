@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['attachment_help'] = 'You can optionally attach one or more files to a g
 $string['author'] = 'author';
 $string['authorview'] = 'Browse by Author';
 $string['back'] = 'Back';
+$string['cachedef_concepts'] = 'Concept linking';
 $string['cantinsertcat'] = 'Can\'t insert category';
 $string['cantinsertrec'] = 'Can\'t insert record';
 $string['cantinsertrel'] = 'Can\'t insert relation category-entry';
@@ -158,6 +159,15 @@ $string['errconceptalreadyexists'] = 'This concept already exists. No duplicates
 $string['errdeltimeexpired'] = 'You can\'t delete this. Time expired!';
 $string['erredittimeexpired'] = 'The editing time for this entry has expired.';
 $string['errorparsingxml'] = 'Errors occurred while parsing the file. Make sure it is valid XML syntax.';
+$string['eventcategorycreated'] = 'Category has been created';
+$string['eventcategorydeleted'] = 'Category has been deleted';
+$string['eventcategoryupdated'] = 'Category has been updated';
+$string['evententryapproved'] = 'Entry has been approved';
+$string['evententrycreated'] = 'Entry has been created';
+$string['evententrydeleted'] = 'Entry has been deleted';
+$string['evententrydisapproved'] = 'Entry has been disapproved';
+$string['evententryupdated'] = 'Entry has been updated';
+$string['evententryviewed'] = 'Entry has been viewed';
 $string['explainaddentry'] = 'Add a new entry to the current glossary.<br />Concept and definition are mandatory fields.';
 $string['explainall'] = 'Shows ALL entries on one page';
 $string['explainalphabet'] = 'Browse the glossary using this index';

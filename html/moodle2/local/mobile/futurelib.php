@@ -26,6 +26,7 @@ defined('MOODLE_INTERNAL') || die;
 
 require_once("$CFG->dirroot/user/lib.php");
 
+
 if (!function_exists('user_remove_user_device')) {
     /**
      * Remove a user device from the Moodle database (for PUSH notifications usually).

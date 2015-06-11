@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,10 @@ $string['anymethodactivity'] = 'Aukeratutako edozein jarduera osatu da';
 $string['anymethodcourseset'] = 'Aukeratutako edozein ikastaro osatu da';
 $string['anymethodmanual'] = 'Aukeratutako edozein rolek ematen du domina';
 $string['anymethodprofile'] = 'Aukeratutako edozein profil-eremu osatu da';
+$string['archivebadge'] = '\'{$a}\' domina ezabatu nahi duzu, baina emandako dominak mantenduta?';
+$string['archiveconfirm'] = 'Ezabatu eta mantendu emandako dominak';
+$string['archivehelp'] = '<p>Aukera honen bidez domina "baztertuta" bezala markatuko da eta aurrerantzean ez da dominen zerrendan agertuko. Erabiltzaileek ezingo dute domina hau gehiago eskuratu, baina aurretik eskuratu dutenek euren profilean domina hau ikusi eta kanpo-motxiletara gehitzeko aukera izaten jarraituko dute.</p>
+<p>Erabiltzaileek euren dominetara sarbidea izaten jarraitzea nahi izanez gero aukera hau hautatzea garrantzitsua da, domina guztiz ezabatu beharrean</p>';
 $string['attachment'] = 'Erantsi domina mezuari';
 $string['attachment_help'] = 'Gaituta, e-postari domina erantsiko zaio jaisteko moduan. (Eranskinek gaituta egon behar dute hemen aukera hau erabiltzeko: Gunearen kudeaketa > Pluginak > Irteerako mezuak > E-posta)';
 $string['award'] = 'Eman domina';
@@ -195,9 +199,11 @@ $string['defaultissuercontact'] = 'Berezko domina-emailearekin kontaktuan jartze
 $string['defaultissuercontact_desc'] = 'E-posta helbide bat lotu da domina-emailearekin';
 $string['defaultissuername'] = 'Berezko domina-emailearen izena';
 $string['defaultissuername_desc'] = 'Ematen duen erakundearen izena.';
-$string['delbadge'] = 'Ezabatu domina';
-$string['delconfirm'] = 'Ziur al zaude \'{$a}\' domina ezabatu nahi duzula?';
+$string['delbadge'] = '\'{$a}\' domina eta jada emandako domina guztiak ezabatu nahi dituzu?';
+$string['delconfirm'] = 'Ezabatu domina eta kendu emandako guztiak';
 $string['delcritconfirm'] = 'Ziur al zaude irizpide hau ezabatu egin nahi duzula?';
+$string['deletehelp'] = '<p>Domina bat guztiz ezabatzean domina horren xehetasunak eta irizpide guztiak betiko ezabatuak izango dira. Domina hau eskuratu duten erabiltzaileek ez dute domina horretara sarbidea izango euren profilean.</p>
+<p>Oharra: Domina hau eskuratu eta euren kanpo-motxilara eraman duten erabiltzaileek domina kanpo-motxilan mantenduko dute. Dena den, ez dute gune honetako irizpide eta ebidentzia-orrietara sarbiderik izango</p>';
 $string['delparamconfirm'] = 'Ziur al zaude parametro hau ezabatu nahi duzula?';
 $string['description'] = 'Deskribapena';
 $string['disconnect'] = 'Deskonektatuta';

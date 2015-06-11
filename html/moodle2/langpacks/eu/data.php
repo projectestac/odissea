@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -142,6 +142,14 @@ $string['entry'] = 'Sarrera';
 $string['entrysaved'] = 'Zure sarrera gorde egin da';
 $string['errormustbeteacher'] = 'Orri hau erabiltzeko irakasle izan behar duzu!';
 $string['errorpresetexists'] = 'Dagoeneko bada elementu bat  aukeratutako izena duena';
+$string['eventfieldcreated'] = 'Eremua sortua';
+$string['eventfielddeleted'] = 'Eremua ezabatua';
+$string['eventfieldupdated'] = 'Eremua eguneratua';
+$string['eventrecordcreated'] = 'Erregistroa sortua';
+$string['eventrecorddeleted'] = 'Erregistroa ezabatua';
+$string['eventrecordupdated'] = 'Erregistroa eguneratua';
+$string['eventtemplateupdated'] = 'Txantiloia eguneratu da';
+$string['eventtemplateviewed'] = 'Txantiloia ikusi da';
 $string['example'] = 'Datu-basea moduluaren adibidea';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Barkatu, jarduera hau {$a} datan itxi zen eta dagoeneko ez dago eskuragarri';
@@ -270,8 +278,8 @@ $string['nameurl'] = 'URLa';
 $string['newentry'] = 'Sarrera berria';
 $string['newfield'] = 'Beste eremu bat sortu';
 $string['newfield_help'] = '<p>Pantaila honetan datu-basea osatuko duten eremuak sor ditzakezu.</p>
-
-<p>Eremu bakoitzak datu-mota ezberdinak onartzen ditu eta horretarako hainbat interfaz eskaintzen ditu.</p>';
+<p>Eremu bakoitzak datu-mota ezberdinak onartzen ditu eta horretarako hainbat interfaz eskaintzen ditu.</p>
+<p>Eremu bakoitzak izen desberdina izan behar du. Eremuaren deskribapena hautazkoa da.</p>';
 $string['noaccess'] = 'Orri honetara ez duzu sarbiderik';
 $string['nodefinedfields'] = 'Aurretiko ezarpen berriak ez du definitutako eremurik!';
 $string['nofieldcontent'] = 'Ez da eremuaren edukia aurkitu';
@@ -318,9 +326,8 @@ $string['requiredentries_help'] = '<p>Partaide bakoitzari bidaltzeko eskatzen za
 
 <p>Ez da jarduera amaitutzat emango erabiltzaileak behar duen sarrera-kopurua bidali arte.</p>';
 $string['requiredentriestoview'] = 'Ikusi aurretik behar diren sarrerak';
-$string['requiredentriestoview_help'] = '</p>
-
-<p>Datu-basearen gainerako sarrerak ikusi baino lehen, partaideek bidali behar duten sarrera-kopurua zehartu behar da hemen.</p>';
+$string['requiredentriestoview_help'] = '<p>Datu-basearen gainerako sarrerak ikusi baino lehen, partaideek bidali behar duten sarrera-kopurua zehartu behar da hemen.</p>
+<p>Oharra: erabiltzaileak sarrera kopuru bat bete arte ez badira ikusgai jarri nahi, datu-baserako esteka automatikoak egiteko iragazkia ezgaituta egon beharko luke.</p>';
 $string['resetsettings'] = 'Berrabiarazi iragazkiak';
 $string['resettemplate'] = 'Txantiloia berriz kargatu';
 $string['resizingimages'] = 'Irudi txikien tamaina aldatzen';

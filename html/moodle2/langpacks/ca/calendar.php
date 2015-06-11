@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,12 @@ $string['errorinvalidrepeats'] = 'Especifiqueu el nombre d\'esdeveniments (entre
 $string['errornodescription'] = 'La descripció és necessària';
 $string['errornoeventname'] = 'El nom és necessari';
 $string['errorrequiredurlorfile'] = 'Per a importar un calendari es requereixen un URL o un fitxer.';
+$string['errorrrule'] = 'La regla passada sembla incorrecta';
+$string['errorrruleday'] = 'La regla té un paràmetre de dia no vàlid';
+$string['errorrrulefreq'] = 'La regla té un paràmetre de freqüència no vàlid';
+$string['eventcalendareventcreated'] = 'S\'ha creat un esdeveniment del calendari';
+$string['eventcalendareventdeleted'] = 'S\'ha suprimit un esdeveniment del calendari';
+$string['eventcalendareventupdated'] = 'S\'ha actualitzat un esdeveniment del calendari';
 $string['eventdate'] = 'Data';
 $string['eventdescription'] = 'Descripció';
 $string['eventduration'] = 'Durada';

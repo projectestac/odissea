@@ -48,7 +48,7 @@ class core_dml_testcase extends database_driver_testcase {
 
         $table = new xmldb_table($tablename);
         $table->setComment("This is a test'n drop table. You can drop it safely");
-        return new xmldb_table($tablename);
+        return $table;
     }
 
     public function test_diagnose() {
@@ -2253,6 +2253,122 @@ class core_dml_testcase extends database_driver_testcase {
         } catch (moodle_exception $e) {
             $this->assertInstanceOf('dml_exception', $e);
         }
+
+        // Try to insert a record into a non-existent table. dml_exception expected.
+        try {
+            $DB->insert_record('nonexistenttable', $record, true);
+            $this->fail("Expecting an exception, none occurred");
+        } catch (exception $e) {
+            $this->assertTrue($e instanceof dml_exception);
+        }
+    }
+
+    public function test_insert_records() {
+        $DB = $this->tdb;
+        $dbman = $DB->get_manager();
+
+        $table = $this->get_test_table();
+        $tablename = $table->getName();
+
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('course', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
+        $table->add_field('oneint', XMLDB_TYPE_INTEGER, '10', null, null, null, 100);
+        $table->add_field('onenum', XMLDB_TYPE_NUMBER, '10,2', null, null, null, 200);
+        $table->add_field('onechar', XMLDB_TYPE_CHAR, '100', null, null, null, 'onestring');
+        $table->add_field('onetext', XMLDB_TYPE_TEXT, 'big', null, null, null);
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, array('id'));
+        $dbman->create_table($table);
+
+        $this->assertCount(0, $DB->get_records($tablename));
+
+        $record = new stdClass();
+        $record->id = '1';
+        $record->course = '1';
+        $record->oneint = null;
+        $record->onenum = '1.00';
+        $record->onechar = 'a';
+        $record->onetext = 'aaa';
+
+        $expected = array();
+        $records = array();
+        for ($i = 1; $i <= 2000; $i++) { // This may take a while, it should be higher than defaults in DML drivers.
+            $rec = clone($record);
+            $rec->id = (string)$i;
+            $rec->oneint = (string)$i;
+            $expected[$i] = $rec;
+            $rec = clone($rec);
+            unset($rec->id);
+            $records[$i] = $rec;
+        }
+
+        $DB->insert_records($tablename, $records);
+        $stored = $DB->get_records($tablename, array(), 'id ASC');
+        $this->assertEquals($expected, $stored);
+
+        // Test there can be some extra properties including id.
+        $count = $DB->count_records($tablename);
+        $rec1 = (array)$record;
+        $rec1['xxx'] = 1;
+        $rec2 = (array)$record;
+        $rec2['xxx'] = 2;
+
+        $records = array($rec1, $rec2);
+        $DB->insert_records($tablename, $records);
+        $this->assertEquals($count + 2, $DB->count_records($tablename));
+
+        // Test not all properties are necessary.
+        $rec1 = (array)$record;
+        unset($rec1['course']);
+        $rec2 = (array)$record;
+        unset($rec2['course']);
+
+        $records = array($rec1, $rec2);
+        $DB->insert_records($tablename, $records);
+
+        // Make sure no changes in data object structure are tolerated.
+        $rec1 = (array)$record;
+        unset($rec1['id']);
+        $rec2 = (array)$record;
+        unset($rec2['id']);
+
+        $records = array($rec1, $rec2);
+        $DB->insert_records($tablename, $records);
+
+        $rec2['xx'] = '1';
+        $records = array($rec1, $rec2);
+        try {
+            $DB->insert_records($tablename, $records);
+            $this->fail('coding_exception expected when insert_records receives different object data structures');
+        } catch (moodle_exception $e) {
+            $this->assertInstanceOf('coding_exception', $e);
+        }
+
+        unset($rec2['xx']);
+        unset($rec2['course']);
+        $rec2['course'] = '1';
+        $records = array($rec1, $rec2);
+        try {
+            $DB->insert_records($tablename, $records);
+            $this->fail('coding_exception expected when insert_records receives different object data structures');
+        } catch (moodle_exception $e) {
+            $this->assertInstanceOf('coding_exception', $e);
+        }
+
+        $records = 1;
+        try {
+            $DB->insert_records($tablename, $records);
+            $this->fail('coding_exception expected when insert_records receives non-traversable data');
+        } catch (moodle_exception $e) {
+            $this->assertInstanceOf('coding_exception', $e);
+        }
+
+        $records = array(1);
+        try {
+            $DB->insert_records($tablename, $records);
+            $this->fail('coding_exception expected when insert_records receives non-objet record');
+        } catch (moodle_exception $e) {
+            $this->assertInstanceOf('coding_exception', $e);
+        }
     }
 
     public function test_import_record() {
@@ -3910,6 +4026,31 @@ class core_dml_testcase extends database_driver_testcase {
         } catch (moodle_exception $e) {
             $this->assertInstanceOf('coding_exception', $e);
         }
+
+        // Cover the function using placeholders in all positions.
+        $start = 4;
+        $length = 2;
+        // 1st param (target).
+        $sql = "SELECT id, ".$DB->sql_substr(":param1", $start)." AS name FROM {{$tablename}}";
+        $record = $DB->get_record_sql($sql, array('param1' => $string));
+        $this->assertEquals(substr($string, $start - 1), $record->name); // PHP's substr is 0-based.
+        // 2nd param (start).
+        $sql = "SELECT id, ".$DB->sql_substr("name", ":param1")." AS name FROM {{$tablename}}";
+        $record = $DB->get_record_sql($sql, array('param1' => $start));
+        $this->assertEquals(substr($string, $start - 1), $record->name); // PHP's substr is 0-based.
+        // 3rd param (length).
+        $sql = "SELECT id, ".$DB->sql_substr("name", $start, ":param1")." AS name FROM {{$tablename}}";
+        $record = $DB->get_record_sql($sql, array('param1' => $length));
+        $this->assertEquals(substr($string, $start - 1,  $length), $record->name); // PHP's substr is 0-based.
+        // All together.
+        $sql = "SELECT id, ".$DB->sql_substr(":param1", ":param2", ":param3")." AS name FROM {{$tablename}}";
+        $record = $DB->get_record_sql($sql, array('param1' => $string, 'param2' => $start, 'param3' => $length));
+        $this->assertEquals(substr($string, $start - 1,  $length), $record->name); // PHP's substr is 0-based.
+
+        // Try also with some expression passed.
+        $sql = "SELECT id, ".$DB->sql_substr("name", "(:param1 + 1) - 1")." AS name FROM {{$tablename}}";
+        $record = $DB->get_record_sql($sql, array('param1' => $start));
+        $this->assertEquals(substr($string, $start - 1), $record->name); // PHP's substr is 0-based.
     }
 
     public function test_sql_length() {
@@ -4081,6 +4222,35 @@ class core_dml_testcase extends database_driver_testcase {
         } else {
             $this->assertTrue(true, 'Regexp operations not supported. Test skipped');
         }
+
+    }
+
+    /**
+     * Test some complicated variations of set_field_select.
+     */
+    public function test_set_field_select_complicated() {
+        $DB = $this->tdb;
+        $dbman = $DB->get_manager();
+
+        $table = $this->get_test_table();
+        $tablename = $table->getName();
+
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('course', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
+        $table->add_field('name', XMLDB_TYPE_CHAR, '255', null, null, null, null);
+        $table->add_field('content', XMLDB_TYPE_TEXT, 'big', null, XMLDB_NOTNULL);
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, array('id'));
+        $dbman->create_table($table);
+
+        $DB->insert_record($tablename, array('course' => 3, 'content' => 'hello', 'name'=>'xyz'));
+        $DB->insert_record($tablename, array('course' => 3, 'content' => 'world', 'name'=>'abc'));
+        $DB->insert_record($tablename, array('course' => 5, 'content' => 'hello', 'name'=>'def'));
+        $DB->insert_record($tablename, array('course' => 2, 'content' => 'universe', 'name'=>'abc'));
+        // This SQL is a tricky case because we are selecting from the same table we are updating.
+        $sql = 'id IN (SELECT outerq.id from (SELECT innerq.id from {' . $tablename . '} innerq WHERE course = 3) outerq)';
+        $DB->set_field_select($tablename, 'name', 'ghi', $sql);
+
+        $this->assertSame(2, $DB->count_records_select($tablename, 'name = ?', array('ghi')));
 
     }
 
@@ -4990,6 +5160,74 @@ class core_dml_testcase extends database_driver_testcase {
         $this->assertEquals(2, end($records)->count);
     }
 
+    /**
+     * Test debugging messages about invalid limit number values.
+     */
+    public function test_invalid_limits_debugging() {
+        $DB = $this->tdb;
+        $dbman = $DB->get_manager();
+
+        // Setup test data.
+        $table = $this->get_test_table();
+        $tablename = $table->getName();
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('course', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, array('id'));
+        $dbman->create_table($table);
+        $DB->insert_record($tablename, array('course' => '1'));
+
+        // Verify that get_records_sql throws debug notices with invalid limit params.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 'invalid');
+        $this->assertDebuggingCalled("Non-numeric limitfrom parameter detected: 'invalid', did you pass the correct arguments?");
+
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, 'invalid');
+        $this->assertDebuggingCalled("Non-numeric limitnum parameter detected: 'invalid', did you pass the correct arguments?");
+
+        // Verify that get_recordset_sql throws debug notices with invalid limit params.
+        $rs = $DB->get_recordset_sql("SELECT * FROM {{$tablename}}", null, 'invalid');
+        $this->assertDebuggingCalled("Non-numeric limitfrom parameter detected: 'invalid', did you pass the correct arguments?");
+        $rs->close();
+
+        $rs = $DB->get_recordset_sql("SELECT * FROM {{$tablename}}", null, 1, 'invalid');
+        $this->assertDebuggingCalled("Non-numeric limitnum parameter detected: 'invalid', did you pass the correct arguments?");
+        $rs->close();
+
+        // Verify that some edge cases do no create debugging messages.
+        // String form of integer values.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, '1');
+        $this->assertDebuggingNotCalled();
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, '2');
+        $this->assertDebuggingNotCalled();
+        // Empty strings.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, '');
+        $this->assertDebuggingNotCalled();
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, '');
+        $this->assertDebuggingNotCalled();
+        // Null values.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, null);
+        $this->assertDebuggingNotCalled();
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, null);
+        $this->assertDebuggingNotCalled();
+
+        // Verify that empty arrays DO create debugging mesages.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, array());
+        $this->assertDebuggingCalled("Non-numeric limitfrom parameter detected: array (\n), did you pass the correct arguments?");
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, array());
+        $this->assertDebuggingCalled("Non-numeric limitnum parameter detected: array (\n), did you pass the correct arguments?");
+
+        // Verify Negative number handling:
+        // -1 is explicitly treated as 0 for historical reasons.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, -1);
+        $this->assertDebuggingNotCalled();
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, -1);
+        $this->assertDebuggingNotCalled();
+        // Any other negative values should throw debugging messages.
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, -2);
+        $this->assertDebuggingCalled("Negative limitfrom parameter detected: -2, did you pass the correct arguments?");
+        $DB->get_records_sql("SELECT * FROM {{$tablename}}", null, 1, -2);
+        $this->assertDebuggingCalled("Negative limitnum parameter detected: -2, did you pass the correct arguments?");
+    }
+
     public function test_queries_counter() {
 
         $DB = $this->tdb;
@@ -5067,6 +5305,88 @@ class core_dml_testcase extends database_driver_testcase {
         // Sum of them.
         $totaldbqueries = $DB->perf_get_reads() + $DB->perf_get_writes();
         $this->assertEquals($totaldbqueries, $DB->perf_get_queries());
+    }
+
+    public function test_sql_intersect() {
+        $DB = $this->tdb;
+        $dbman = $this->tdb->get_manager();
+
+        $tables = array();
+        for ($i = 0; $i < 3; $i++) {
+            $table = $this->get_test_table('i'.$i);
+            $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+            $table->add_field('ival', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+            $table->add_field('name', XMLDB_TYPE_CHAR, '255', null, null, null, '0');
+            $table->add_key('primary', XMLDB_KEY_PRIMARY, array('id'));
+            $dbman->create_table($table);
+            $tables[$i] = $table;
+        }
+        $DB->insert_record($tables[0]->getName(), array('ival' => 1, 'name' => 'One'), false);
+        $DB->insert_record($tables[0]->getName(), array('ival' => 2, 'name' => 'Two'), false);
+        $DB->insert_record($tables[0]->getName(), array('ival' => 3, 'name' => 'Three'), false);
+        $DB->insert_record($tables[0]->getName(), array('ival' => 4, 'name' => 'Four'), false);
+
+        $DB->insert_record($tables[1]->getName(), array('ival' => 1, 'name' => 'One'), false);
+        $DB->insert_record($tables[1]->getName(), array('ival' => 2, 'name' => 'Two'), false);
+        $DB->insert_record($tables[1]->getName(), array('ival' => 3, 'name' => 'Three'), false);
+
+        $DB->insert_record($tables[2]->getName(), array('ival' => 1, 'name' => 'One'), false);
+        $DB->insert_record($tables[2]->getName(), array('ival' => 2, 'name' => 'Two'), false);
+        $DB->insert_record($tables[2]->getName(), array('ival' => 5, 'name' => 'Five'), false);
+
+        // Intersection on the int column.
+        $params = array('excludename' => 'Two');
+        $sql1 = 'SELECT ival FROM {'.$tables[0]->getName().'}';
+        $sql2 = 'SELECT ival FROM {'.$tables[1]->getName().'} WHERE name <> :excludename';
+        $sql3 = 'SELECT ival FROM {'.$tables[2]->getName().'}';
+
+        $sql = $DB->sql_intersect(array($sql1), 'ival') . ' ORDER BY ival';
+        $this->assertEquals(array(1, 2, 3, 4), $DB->get_fieldset_sql($sql, $params));
+
+        $sql = $DB->sql_intersect(array($sql1, $sql2), 'ival') . ' ORDER BY ival';
+        $this->assertEquals(array(1, 3), $DB->get_fieldset_sql($sql, $params));
+
+        $sql = $DB->sql_intersect(array($sql1, $sql2, $sql3), 'ival') . ' ORDER BY ival';
+        $this->assertEquals(array(1),
+            $DB->get_fieldset_sql($sql, $params));
+
+        // Intersection on the char column.
+        $params = array('excludeival' => 2);
+        $sql1 = 'SELECT name FROM {'.$tables[0]->getName().'}';
+        $sql2 = 'SELECT name FROM {'.$tables[1]->getName().'} WHERE ival <> :excludeival';
+        $sql3 = 'SELECT name FROM {'.$tables[2]->getName().'}';
+
+        $sql = $DB->sql_intersect(array($sql1), 'name') . ' ORDER BY name';
+        $this->assertEquals(array('Four', 'One', 'Three', 'Two'), $DB->get_fieldset_sql($sql, $params));
+
+        $sql = $DB->sql_intersect(array($sql1, $sql2), 'name') . ' ORDER BY name';
+        $this->assertEquals(array('One', 'Three'), $DB->get_fieldset_sql($sql, $params));
+
+        $sql = $DB->sql_intersect(array($sql1, $sql2, $sql3), 'name') . ' ORDER BY name';
+        $this->assertEquals(array('One'), $DB->get_fieldset_sql($sql, $params));
+
+        // Intersection on the several columns.
+        $params = array('excludename' => 'Two');
+        $sql1 = 'SELECT ival, name FROM {'.$tables[0]->getName().'}';
+        $sql2 = 'SELECT ival, name FROM {'.$tables[1]->getName().'} WHERE name <> :excludename';
+        $sql3 = 'SELECT ival, name FROM {'.$tables[2]->getName().'}';
+
+        $sql = $DB->sql_intersect(array($sql1), 'ival, name') . ' ORDER BY ival';
+        $this->assertEquals(array(1 => 'One', 2 => 'Two', 3 => 'Three', 4 => 'Four'),
+            $DB->get_records_sql_menu($sql, $params));
+
+        $sql = $DB->sql_intersect(array($sql1, $sql2), 'ival, name') . ' ORDER BY ival';
+        $this->assertEquals(array(1 => 'One', 3 => 'Three'),
+            $DB->get_records_sql_menu($sql, $params));
+
+        $sql = $DB->sql_intersect(array($sql1, $sql2, $sql3), 'ival, name') . ' ORDER BY ival';
+        $this->assertEquals(array(1 => 'One'),
+            $DB->get_records_sql_menu($sql, $params));
+
+        // Drop temporary tables.
+        foreach ($tables as $table) {
+            $dbman->drop_table($table);
+        }
     }
 }
 

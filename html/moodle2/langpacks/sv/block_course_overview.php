@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = '{$a}s att bevaka';
+$string['activityoverview'] = 'Du har {$a}s som behöver uppmärksammas';
 $string['alwaysshowall'] = 'Alltid Visa alla';
 $string['collapseall'] = 'Dölj alla kurslistor';
 $string['course_overview:myaddinstance'] = 'Lägg till Kursöversikt till mitt Moodle';

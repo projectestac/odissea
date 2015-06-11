@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ $string['cannotfindassignablerole'] = 'Non é posíbel asignar o rol {$a} no fic
 $string['choosefilefromactivitybackup'] = 'Área da copia de seguranza de actividade';
 $string['choosefilefromactivitybackup_help'] = 'Cando se fai unha copia de seguranza das actividades empregando os valores predeterminados, os ficheiros da copia gárdanse aquí.';
 $string['choosefilefromautomatedbackup'] = 'Copias de seguranza automatizadas';
-$string['choosefilefromautomatedbackup_help'] = 'Contén as copias de seguranza xeradas automaticamente.';
+$string['choosefilefromautomatedbackup_help'] = 'Conten as copias de seguranza xeradas automaticamente.';
 $string['choosefilefromcoursebackup'] = 'Área da copia de seguranza de curso';
 $string['choosefilefromcoursebackup_help'] = 'Cando se fai unha copia de seguranza dos cursos empregando os valores predeterminados, os ficheiros da copia gárdanse aquí.';
 $string['choosefilefromuserbackup'] = 'Área da copia de seguranza privada de usuario';
@@ -124,7 +124,7 @@ $string['filealiasesrestorefailures'] = 'Non foi posíbel restaurar os alias';
 $string['filealiasesrestorefailures_help'] = 'Os alias son ligazóns simbólicas a outros ficheiros, incluídos os almacenados en repositorios externos. Nalgúns casos, Moodle non pode restauralos; por exemplo, ao restaurar a copia de seguranza noutro lugar ou cando o ficheiro ao que se fai referencia non existe.
 
 Pode ver máis detalles e o motivo real da falla no ficheiro de rexistro da restauración.';
-$string['filealiasesrestorefailuresinfo'] = 'Non foi posíbel restaurar algún(s) dos alias incluídos no ficheiro de copia de seguranza. A seguinte lista contén a localización prevista e o ficheiro orixe ao que se refire no sitio orixinal.';
+$string['filealiasesrestorefailuresinfo'] = 'Non foi posíbel restaurar algún(s) dos alias incluídos no ficheiro de copia de seguranza. A seguinte lista conten a localización prevista e o ficheiro orixe ao que se refire no sitio orixinal.';
 $string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filename'] = 'Nome de ficheiro';
 $string['filereferencesincluded'] = 'As referencias de ficheiro a contidos externos incluídos no paquete de copia de seguranza, non funcionarán noutros sitios.';
@@ -167,6 +167,7 @@ $string['includeditems'] = 'Elementos incluídos:';
 $string['includefilereferences'] = 'Referencias de ficheiro a contidos externos';
 $string['includesection'] = 'Sección {$a}';
 $string['includeuserinfo'] = 'Datos de usuario';
+$string['jumptofinalstep'] = 'Saltar ao último paso';
 $string['locked'] = 'Bloqueado';
 $string['lockedbyconfig'] = 'Este axuste foi bloqueado pola configuración predeterminada da copia de seguranza';
 $string['lockedbyhierarchy'] = 'Bloqueado polas dependencias';
@@ -262,6 +263,7 @@ $string['skipmodifprevhelp'] = 'Escolla se omitir ou non os cursos que non se mo
 $string['storagecourseandexternal'] = 'Área de ficheiros de copia de seguranza e directorio específico.';
 $string['storagecourseonly'] = 'Área de ficheiros de copia de seguranza';
 $string['storageexternalonly'] = 'Especifique o directorio para as copias de seguranza automatizadas';
+$string['timetaken'] = 'Tempo levado';
 $string['title'] = 'Título';
 $string['totalcategorysearchresults'] = 'Total de categorías: {$a}';
 $string['totalcoursesearchresults'] = 'Total de cursos: {$a}';

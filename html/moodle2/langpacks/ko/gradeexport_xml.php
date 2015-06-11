@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xml', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradeexport_xml', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   gradeexport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XML 파일로 내보냄';
-$string['useridnumberwarning'] = '아이디 번호가 없는 사용자들은 가져오기 할 수 없가 때문에 XML 내보내기에서 제외되었습니다.';
 $string['xml:publish'] = 'XML 성적 내보내기 공개';
 $string['xml:view'] = 'XML 성적 내보내기 사용';

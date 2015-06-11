@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,6 @@ $string['createpage'] = 'Sortu beste orri bat';
 $string['displayoptions'] = 'Eskura dauden erakusteko aukerak';
 $string['displayselect'] = 'Erakutsi';
 $string['displayselectexplain'] = 'Aukeratu pantaila-mota';
-$string['eventcoursemoduleviewed'] = 'Orria baliabidea ikusi da';
 $string['legacyfiles'] = 'Ikastaro zaharren fitxategi-migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
@@ -48,7 +47,6 @@ Orri bat erabil daiteke
 * Ikastaro baten baldintzak, laburpena edo ikasketa-programa aurkezteko
 * Azalpen batekin batera hainbat bideo edo audio txertatzeko';
 $string['modulenameplural'] = 'Orriak';
-$string['neverseen'] = 'Inoiz ez ikusia';
 $string['optionsheader'] = 'Erakusteko aukerak';
 $string['page:addinstance'] = 'Gehitu beste orri bat';
 $string['page-mod-page-x'] = 'Orria moduluaren edozein orri';
@@ -59,5 +57,7 @@ $string['popupheight'] = 'Popup-aren altuera (pixeletan)';
 $string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren berezko altuera.';
 $string['popupwidth'] = 'Popup-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren berezko zabalera.';
+$string['printheading'] = 'Erakutsi orriaren izena';
+$string['printheadingexplain'] = 'Orriaren izena edukiaren gainean erakutsi?';
 $string['printintro'] = 'Erakutsi orriaren deskribapena';
 $string['printintroexplain'] = 'Orriaren deskribapena edukiaren gainean erakutsi?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Añadir otra pista';
 $string['addcategory'] = 'Añadir Categoría';
 $string['addmorechoiceblanks'] = 'Espacios en blanco para  {no} opciones más';
 $string['adminreport'] = 'Informe sobre posibles problemas en su base de datos de preguntas.';
+$string['advancedsearchoptions'] = 'Opciones busqueda';
+$string['alltries'] = 'Todos los intentos';
 $string['answer'] = 'Respuesta';
 $string['answers'] = 'Respuestas';
 $string['answersaved'] = 'Respuesta guardada';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'No se ha podido recuperar la categoría de preg
 $string['cannotunhidequestion'] = 'Error al descubrir la pregunta.';
 $string['cannotunzip'] = 'No se ha podido descomprimir el archivo.';
 $string['cannotwriteto'] = '{$a}';
+$string['categories'] = 'Categorías';
 $string['category'] = 'Categoría';
 $string['categorycurrent'] = 'Categoría actual';
 $string['categorycurrentuse'] = 'Usar esta categoría';
@@ -140,6 +143,7 @@ $string['errorduringregrade'] = 'No se ha podido recalificar la pregunta {$a->qi
 $string['errorfilecannotbecopied'] = 'Error: no se puede copiar el archivo {$a}.';
 $string['errorfilecannotbemoved'] = 'Error: no se puede mover el archivo {$a}.';
 $string['errorfileschanged'] = 'Los archivos de error enlazados desde preguntas han cambiado desde que se ha mostrado el formato.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La pregunta ({$a}) aparece más de una vez en el cuestionario con diferentes valores de calificación. Esto no es actualmente posible en el informe de estadísticas y puede hacer que las estadísticas de esta pregunta no sean fiables.';
 $string['errormanualgradeoutofrange'] = 'La calificación {$a->grade} no está entre 0 y {$a->maxgrade} para la pregunta {$a->name}. La puntuación y el comentario no se han guardado.';
 $string['errormovingquestions'] = 'Error al trasladar preguntas con IDs {$a}.';
 $string['errorpostprocess'] = 'Ha ocurrido un error durante el post-procesamiento';
@@ -149,6 +153,8 @@ $string['errorprocessingresponses'] = 'Ha ocurrido un error al procesar sus resp
 $string['errorsavingcomment'] = 'Error al guardar el comentario para la pregunta {$a->name} en la base de datos.';
 $string['errorsavingflags'] = 'Error al guardar el estado.';
 $string['errorupdatingattempt'] = 'Error al actualizar el intento {$a->id} en la base de datos.';
+$string['eventquestioncategorycreated'] = 'Categoría de preguntas creada';
+$string['export'] = 'Exportar';
 $string['exportcategory'] = 'Exportar categoría';
 $string['exportcategory_help'] = '<p align="center"><b>Categoría de exportación</b></p>
 
@@ -168,6 +174,7 @@ $string['filesareacourse'] = 'área de archivos del curso';
 $string['filesareasite'] = 'área de archivos del sitio';
 $string['filestomove'] = '¿Mover / copiar archivos a {$a}?';
 $string['fillincorrect'] = 'Rellenar con las respuestas correctas';
+$string['firsttry'] = 'Primer intento';
 $string['flagged'] = 'Marcadas';
 $string['flagthisquestion'] = 'Marcar esta pregunta';
 $string['formquestionnotinids'] = 'Pregunta contenida en formulario que no está en questionids.';
@@ -185,6 +192,7 @@ $string['hinttext'] = 'Texto de la pista';
 $string['howquestionsbehave'] = 'Comportamiento de las preguntas';
 $string['howquestionsbehave_help'] = 'Los estudiantes pueden interactuar con las preguntas en el cuestionario de varias maneras diferentes. Por ejemplo, usted puede desear que los estudiantes introduzcan una respuesta a cada pregunta y posteriormente envien el cuestionario completo, antes de que se realice ninguna calificación o de que se envíe ninguna retroalimentación. Ese sería el modo de \'retroalimentación diferida\'. En otra situación, usted puede desear que los estudiantes respondan una pregunta y sobre la marcha obtengan retroalimentación inmediata, y si la respuesta no es correcta, tengan otra otra oportunidad con menor puntuación. Este modo sería \'interactivo con varios intentos\' .';
 $string['ignorebroken'] = 'Pasar por alto enlaces rotos';
+$string['import'] = 'Importar';
 $string['importcategory'] = 'Categoría a donde importar';
 $string['importcategory_help'] = '<p>Se utiliza el menú emergente <b>Categoría:</b> para seleccionar la categoría en la que irán las preguntas importadas.</p>
 
@@ -216,6 +224,7 @@ $string['invalidgrade'] = 'Las calificaciones no coinciden con las opciones de c
 $string['invalidpenalty'] = 'Penalización no válida';
 $string['invalidwizardpage'] = 'La página asistente es incorrecta o no está especificada.';
 $string['lastmodifiedby'] = 'Última modificación por';
+$string['lasttry'] = 'Último intento';
 $string['linkedfiledoesntexist'] = 'El archivo enlazado {$a} no existe';
 $string['makechildof'] = 'Crear una categoría "hija" de \'{$a}\'';
 $string['makecopy'] = 'Crear copia';
@@ -351,6 +360,7 @@ $string['questioncatsfor'] = 'Categorías de pregunta para \'{$a}\'';
 $string['questiondoesnotexist'] = 'Esta pregunta no existe.';
 $string['questionidmismatch'] = 'Error en los IDs de las preguntas';
 $string['questionname'] = 'Nombre de la pregunta';
+$string['questionnamecopy'] = '{$a} (copia)';
 $string['questionno'] = 'Pregunta {$a}';
 $string['questionpreviewdefaults'] = 'Valores por defecto en la previsualización de preguntas';
 $string['questionpreviewdefaults_desc'] = 'Estos valores por defecto se utilizan cuando un usuario previsualiza por primera vez una pregunta del banco de preguntas. Una vez que un usuario ha previsualizar una pregunta, sus preferencias personales se almacenan como preferencias del usuario.';
@@ -373,6 +383,7 @@ $string['reviewresponse'] = 'Revisar respuesta';
 $string['rightanswer'] = 'Respuesta correcta';
 $string['rightanswer_help'] = 'un resumen generado automáticamente de las respuestas correctas. Pudiera estar limitado, por lo que podría desear explicar la solución correcta en la retroalimentación general para la pregunta, y deshabilitar esta opción.';
 $string['save'] = 'Guardar';
+$string['savechangesandcontinueediting'] = 'Guarde cambios y continúe editando';
 $string['saved'] = 'Guardada: {$a}';
 $string['saveflags'] = 'Guardar el estado en las marcas';
 $string['selectacategory'] = 'Seleccionar una categoría:';
@@ -419,12 +430,14 @@ $string['unknownquestioncatregory'] = 'Categoría de pregunta desconocida: {$a}'
 $string['unknownquestiontype'] = 'Tipo de pregunta desconocido: {$a}.';
 $string['unknowntolerance'] = 'Tipo de tolerancia desconocido: {$a}.';
 $string['unpublished'] = 'no compartida';
+$string['unusedcategorydeleted'] = 'Esta categoría ha sido eliminada, ya que, después de eliminar el curso, sus preguntas no fueron utilizadas nunca más.';
 $string['updatedisplayoptions'] = 'Actualizar opciones de visualización';
 $string['upgradeproblemcategoryloop'] = 'Se ha detectado un problema al actualizar las categorías de preguntas. Hay un bucle (\'loop\') en el árbol de categorías. Las IDs de categorías afectadas son {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'No se ha podido actualizar la categoría de pregunta {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Se ha detectado un problema al actualizar las categorías de preguntas. La catogoría {$a->id} se refiere al padre {$a->parent}, que no existe. Se ha cambiado el padre para solucionar el problema.';
 $string['whethercorrect'] = 'Si fuese correcta';
 $string['whethercorrect_help'] = 'Esto cubre tanto la descripción textual \'Correcta\' , \'Parcialmente correcta\' o \'Incorrecta\', y cualquier resaltado coloreado que transmita la misma información.';
+$string['whichtries'] = 'Que intentos';
 $string['withselected'] = 'Con seleccionadas';
 $string['wrongprefix'] = 'Prefijo de nombre formateado erróneamente {$a}.';
 $string['xoutofmax'] = '{$a->mark} sobre {$a->max}';

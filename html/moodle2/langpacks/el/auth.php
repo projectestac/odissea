@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['actauthhdr'] = 'Active authentication plugins';
 $string['alternatelogin'] = 'Όποια διεύθυνση πληκτρολογήσετε θα χρησιμοποιηθεί σαν σελίδα σύνδεσης. Η σελίδα αυτή, θα πρέπει να έχει μία φόρμα με την ιδιότητα <strong>\'{$a}\'</strong> και τα πεδία <strong>username</strong>, <strong>password</strong>.';
 $string['alternateloginurl'] = 'Εναλλακτική σελίδα σύνδεσης';
 $string['auth_changepasswordhelp'] = 'Βοήθεια αλλαγήςκωδικού';
-$string['auth_changepasswordhelp_expl'] = 'Εμφάνιση της βοήθειας απολεσθέντος κωδικού στους χρήστες που έχασαν τον {$a} κωδικό τους. Αυτό θα εμφανιστεί μαζί με ή αντί του <strong>URL αλλαγής κωδικού</strong> ή άλλαγή κωδικού εσωτερικά του Moodle.';
+$string['auth_changepasswordhelp_expl'] = 'Εμφάνιση της βοήθειας απολεσθέντος κωδικού στους χρήστες που έχασαν τον {$a} κωδικό τους. Αυτό θα εμφανιστεί μαζί με ή αντί του <strong>URL αλλαγής κωδικού</strong> ή άλλαγή κωδικού εσωτερικά του ΠΗΛΕΑΣ';
 $string['auth_changepasswordurl'] = 'URL αλλαγής κωδικού';
 $string['auth_changepasswordurl_expl'] = 'Προσδιορίστε το URL που θα αποστέλλεται στους χρήστες που έχει χάσει τον {$a} κωδικό τους. Ορίστε την <strong>Χρήση της κανονικής σελίδας αλλαγής κωδικού</strong> σε <strong>Όχι</strong>.';
 $string['auth_changingemailaddress'] = 'Έχετε ζητήσει μια αλλαγή της διεύθυνσης ηλεκτρονικού ταχυδρομείου, από {$a->oldemail} στο {$a->newemail}. Για λόγους ασφαλείας, σας στέλνουμε ένα μήνυμα ηλεκτρονικού ταχυδρομείου στη νέα διεύθυνση για να επιβεβαιώσετε ότι ανήκει σε εσάς. Η διεύθυνση του ηλεκτρονικού ταχυδρομείου σας θα ενημερωθεί αμέσως μόλις ανοίξετε το σύνδεσμο που σας έχει αποσταλεί σε αυτό το μήνυμα.';
@@ -37,11 +37,12 @@ $string['auth_common_settings'] = 'Κοινές ρυθμίσεις';
 $string['auth_data_mapping'] = 'Χαρτογράφηση δεδομένων';
 $string['authenticationoptions'] = 'Επιλογές πιστοποίησης';
 $string['auth_fieldlock'] = 'Κλείδωμα τιμής';
-$string['auth_fieldlock_expl'] = '<p><b>Κλείδωμα τιμής:</b> Εάν ενεργοποιηθεί, αποτρέπει χρήστες του Moodle και διαχειριστές να επεξεργαστούν το πεδίο άμεσα. Χρησιμοποιήστε την επιλογή αυτή εάν διατηρείτε τα δεδομένα σε εξωτερικό σύστημα πιστοποίησης.  </p>';
+$string['auth_fieldlock_expl'] = '<p><b>Κλείδωμα τιμής:</b> Εάν ενεργοποιηθεί, αποτρέπει χρήστες του ΠΗΛΕΑΣ και διαχειριστές να επεξεργαστούν το πεδίο άμεσα. Χρησιμοποιήστε την επιλογή αυτή εάν διατηρείτε τα δεδομένα σε εξωτερικό σύστημα πιστοποίησης.  </p>';
 $string['auth_fieldlocks'] = 'Κλειδωμα πεδίων χρήστη';
 $string['auth_fieldlocks_help'] = '<p>Έχετε τη δυνατότητα να κλειδώσετε κάποια από τα πεδία που χρησιμοποιούνται στην φόρμα εγγραφής των χρηστών. Μ\' αυτόν τον τρόπο, γίνεται πιο εύκολη η συντήρηση του site στην περίπτωση που ο διαχειριστής επεξεργάζεται χειροκίνητα τα στοιχεία των χρηστών.';
 $string['authinstructions'] = 'Εδώ μπορείτε να παρέχετε τις οδηγίες για τους χρήστες σας, έτσι ώστε να ξέρουν ποιο όνομα χρήστη και κωδικό πρόσβασης πρέπει να χρησιμοποιούν.  Το κείμενο που εισάγετε εδώ θα εμφανιστεί στη σελίδα σύνδεσης.  Εάν το αφήσετε  κενό, τότε καμία οδηγία δεν θα τυπωθεί.';
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
+$string['authloginviaemail'] = 'Επέτρεψε σύνδεση μέσω ηλεκτρονικού ταχυδρομείου';
 $string['auth_multiplehosts'] = 'Πολλαπλοί hosts ή διευθύνσεις μπορούν να προσδιοριστούν (πχ host1.com;host2.com;host3.com) ή (πχ xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_outofnewemailupdateattempts'] = 'You have run out of allowed attempts to update your email address. Your update request has been cancelled.';
 $string['auth_passwordisexpired'] = 'Το συνθηματικό σας έχει λήξει. Θέλετε να αλλάξετε το συνθηματικό σας τώρα;';
@@ -92,7 +93,9 @@ $string['errorminpasswordlower'] = 'Passwords must have at least {$a} lower case
 $string['errorminpasswordnonalphanum'] = 'Passwords must have at least {$a} non-alphanumeric character(s).';
 $string['errorminpasswordupper'] = 'Passwords must have at least {$a} upper case letter(s).';
 $string['errorpasswordupdate'] = 'Error updating password, password not changed';
+$string['eventuserloggedin'] = 'Ο χρήστης έχει συνδεθεί';
 $string['eventuserloggedinas'] = 'Ο χρήστης έχει συνδεθεί ως άλλος χρήστης';
+$string['eventuserloginfailed'] = 'Η είσοδος χρήστη απέτυχε';
 $string['forcechangepassword'] = 'Υποχρεωτική αλλαγή κωδικού πρόσβασης';
 $string['forcechangepasswordfirst_help'] = 'Επιβεβλημένη αλλαγή του κωδικού πρόσβασης των χρηστών την πρώτη φορά που θα εισέλθουν στο ΠΗΚΕΑΣ';
 $string['forcechangepassword_help'] = 'Επιβεβλημένη αλλαγή του κωδικού πρόσβασης των χρηστών την επόμενη φορά που θα εισέλθουν στο ΠΗΚΕΑΣ';
@@ -140,7 +143,7 @@ $string['selfregistration_help'] = 'If an authentication plugin, such as email-b
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Μπορείτε να αποκρύψετε ή να εμφανίσετε το σύνδεσμο στη σελίδα σύνδεσης';
 $string['stdchangepassword'] = 'Χρήση standard σελίδας αλλαγής κωδικού';
-$string['stdchangepassword_expl'] = 'Εάν το εξωτερικό σύστημα πιστοποίησης επιτρέπει αλλαγές στο κωδικό πρόσβασης μεσα στο Moodle, ρυθμίστε το σε Ναι. Αυτή η ρύθμιση υπερβαίνει το \'URL αλλαγής κωδικού\'.';
+$string['stdchangepassword_expl'] = 'Εάν το εξωτερικό σύστημα πιστοποίησης επιτρέπει αλλαγές στο κωδικό πρόσβασης μεσα στο ΠΗΛΕΑΣ, ρυθμίστε το σε Ναι. Αυτή η ρύθμιση υπερβαίνει το \'URL αλλαγής κωδικού\'.';
 $string['stdchangepassword_explldap'] = 'Σημείωση: Δεν προτείνεται να χρησιμοποιήσετε LDAP πάνω από ένα SSL κρυπτογραφημένο τούνελ (ldaps://) εάν ο LDAP server είναι απομακρυσμένος.';
 $string['suspended'] = 'Ανεσταλμένος λογαριασμός';
 $string['testsettings'] = 'Δοκιμαστικές ρυθμίσεις';

@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,7 +17,7 @@
 /**
  * Strings for component 'chat', language 'en', branch 'MOODLE_20_STABLE'
  *
- * @package   chat
+ * @package   mod_chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -64,9 +63,8 @@ $string['chatreport'] = 'Chat sessions';
 $string['chat:talk'] = 'Talk in a chat';
 $string['chattime'] = 'Next chat time';
 $string['entermessage'] = "Enter your message";
-$string['event_instances_list_viewed'] = 'Instances list viewed';
-$string['event_message_sent'] = 'Message sent';
-$string['event_sessions_viewed'] = 'Sessions viewed';
+$string['eventmessagesent'] = 'Message sent';
+$string['eventsessionsviewed'] = 'Sessions viewed';
 $string['idle'] = 'Idle';
 $string['inputarea'] = 'Input area';
 $string['invalidid'] = 'Could not find that chat room!';

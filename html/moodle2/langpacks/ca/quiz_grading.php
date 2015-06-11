@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_grading', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['gradinguser'] = 'Intents de {$a}';
 $string['grading:viewidnumber'] = 'Mostra el número ID dels estudiants mentre es qualifica';
 $string['grading:viewstudentnames'] = 'Mostra el nom dels estudiants mentre es qualifica';
 $string['hideautomaticallygraded'] = 'Oculta les preguntes que s\'han qualificat automàticament';
-$string['inprogress'] = 'S\'està fent';
+$string['inprogress'] = 'En curs';
 $string['invalidattemptid'] = 'No existeix aquest ID d\'intent';
 $string['invalidquestionid'] = 'No s\'ha trobat la pregunta puntuable amb l\'ID {$a}';
 $string['noquestionsfound'] = 'No s\'han trobat preguntes qualificades manualment';

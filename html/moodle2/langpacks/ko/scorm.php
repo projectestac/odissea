@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,11 +86,13 @@ $string['defaultgradesettings'] = '기본 성적 설정';
 $string['defaultothersettings'] = '다른 기본 설정';
 $string['deleteallattempts'] = '모든 스콤 시도 삭제';
 $string['deleteattemptcheck'] = '정말로, 이 시도들을 완전히 삭제하길 원하십니까?';
+$string['deleteselected'] = '선택한 시도 삭제';
 $string['deleteuserattemptcheck'] = '정말로 모든 시도를 완전히 삭제하기를 원하십니까?';
 $string['details'] = 'SCO 트랙 세부사항';
 $string['directories'] = '연결 경로 보임';
 $string['disabled'] = '비활성화됨';
 $string['display'] = '진열';
+$string['displayactivityname'] = '활동이름 표시';
 $string['displayattemptstatus'] = '시도 상황 표시';
 $string['displayattemptstatusdesc'] = '시도 상태 표시 여부에 대한 기본 설정';
 $string['displayattemptstatus_help'] = '활성화되면 시도에 대한 점수와 성적들이 스콤 개요 페이지에 표시됩니다.';
@@ -106,6 +108,11 @@ $string['element'] = '요소';
 $string['enter'] = '입력';
 $string['entercourse'] = '스콤 강좌 입장';
 $string['errorlogs'] = '오류 기록';
+$string['eventattemptdeleted'] = '시도 삭제됨';
+$string['eventinteractionsviewed'] = '상호작용 봄';
+$string['eventreportviewed'] = '보고서 봄';
+$string['eventscolaunched'] = 'Sco가 기동됨';
+$string['eventuserreportviewed'] = '사용자 보고서 봄';
 $string['everyday'] = '매일';
 $string['everytime'] = '매시간 사용됨';
 $string['exceededmaxattempts'] = '최대 시도 한계에 도달';
@@ -258,6 +265,7 @@ $string['reviewmode'] = '재검토 모드';
 $string['rightanswer'] = '정답';
 $string['scoes'] = '학습 객체';
 $string['score'] = '점수';
+$string['scorm12standard'] = 'SCORM 1.2 표준모드 활성화';
 $string['scorm:addinstance'] = '새 SCORM 패키지 추가';
 $string['scormclose'] = '사용가능 기한';
 $string['scormcourse'] = '학습 강좌';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['attachment_help'] = 'Sie können optional eine oder mehrere Dateien an 
 $string['author'] = 'Autor/in';
 $string['authorview'] = 'Nach Autor/in';
 $string['back'] = 'Zurück';
+$string['cachedef_concepts'] = 'Konzeptverknüpfung';
 $string['cantinsertcat'] = 'Kategorie kann nicht angelegt werden';
 $string['cantinsertrec'] = 'Eintrag kann nicht angelegt werden';
 $string['cantinsertrel'] = 'Verbindung zur Kategorie kann nicht angelegt werden.';
@@ -170,6 +171,15 @@ $string['errconceptalreadyexists'] = 'Diesen Begriff gibt es bereits. In diesem 
 $string['errdeltimeexpired'] = 'Sie dürfen dies nicht löschen. Die Zeit ist abgelaufen!';
 $string['erredittimeexpired'] = 'Die Bearbeitungszeit für diesen Eintrag wurde überschritten.';
 $string['errorparsingxml'] = 'Es sind Fehler bei der Analyse der Datei aufgetreten. Stellen Sie sicher, dass die  XML-Syntax zulässig ist.';
+$string['eventcategorycreated'] = 'Kategorie angelegt';
+$string['eventcategorydeleted'] = 'Kategorie gelöscht';
+$string['eventcategoryupdated'] = 'Kategorie aktualisiert';
+$string['evententryapproved'] = 'Eintrag freigeben';
+$string['evententrycreated'] = 'Eintrag angelegt';
+$string['evententrydeleted'] = 'Eintrag gelöscht';
+$string['evententrydisapproved'] = 'Eintrag abgelehnt';
+$string['evententryupdated'] = 'Eintrag aktualisiert';
+$string['evententryviewed'] = 'Eintrag angezeigt';
 $string['explainaddentry'] = 'Neuen Eintrag ins Glossar hinzufügen. <br />Begriff und Definition sind Pflichtfelder.';
 $string['explainall'] = 'Alle Einträge des Glossars auf einer Seite anzeigen';
 $string['explainalphabet'] = 'Sie können das Glossar über das Suchfeld und das Stichwortalphabet durchsuchen.';

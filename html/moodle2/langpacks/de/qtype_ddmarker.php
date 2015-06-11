@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,9 +45,9 @@ $string['dropzoneheader'] = 'Ablegebereiche';
 $string['dropzones'] = 'Ablegebereiche';
 $string['dropzones_help'] = 'Die Ablegebereiche werden definiert, indem Sie Koordinaten eingeben. Die Vorschau wird ständig aktualisiert während Sie tippen, so dass Sie die Ablegebereiche gegebenenfalls auch durch systematisches Ausprobieren definieren können.
 
-* Kreis: mittelpunkt_x, mittelpunkt_y; radius<br>Beispiel: `80, 100; 50`
-* Polygon: x1, y1; x2, y2; ...; xn, yn<br>Beispiel: `20, 60; 100, 60; 20, 100`
-* Rechteck: links, oben, breite, höhe<br>Beispiel: `20, 60; 80, 40`';
+* Kreis: mittelpunkt_x, mittelpunkt_y; radius<br>Beispiel: <code>80, 100; 50</code>
+* Polygon: x1, y1; x2, y2; ...; xn, yn<br>Beispiel: <code>20, 60; 100, 60; 20, 100</code>
+* Rechteck: links, oben, breite, höhe<br>Beispiel: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Die folgenden Markierungen wurden in den falschen Bereich gesetzt: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Die folgenden Markierungen wurden falsch gesetzt: {$a}. Hervorgehobene Markierungen werden nun an den richtigen Platzierungen gezeigt. <br />Klicken Sie auf die Markierung, um den erlaubten Bereich zu sehen.';
 $string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag and Drop"-Fläche wählen.';
@@ -56,6 +56,7 @@ $string['formerror_nosemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält kein
 $string['formerror_onlysometagsallowed'] = 'Nur "{$a}" Tags sind in der Beschreibung für eine Markierung erlaubt.';
 $string['formerror_onlyusewholepositivenumbers'] = 'Bitte nutzen Sie nur positive ganze Zahlen, um x,y Koordinaten und/oder die Höhe und Breite zu beschreiben. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'Für ein Polygon müssen sie mindestens drei Punkte angeben. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden';
+$string['formerror_repeatedpoint'] = 'Sie haben einen Punkt zweimal angegeben. Bitte entfernen Sie die Dopplung. Ihre Koordinaten für ein(en) {$a->shape} sollten in der Form - {$a->coordsstring} - angegeben werden.';
 $string['formerror_shapeoutsideboundsofbgimage'] = 'Die Form, die Sie erstellt haben, liegt nicht auf dem Hintergrundbild';
 $string['formerror_toomanysemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält zu viele Strichpunkte. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordsstring} ausgedrückt werden';
 $string['formerror_unrecognisedwidthheightpart'] = 'Die Breite und Höhe, die Sie angegeben haben, kann nicht erkannt werden. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden';

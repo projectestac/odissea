@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['coursestruct'] = 'Δομή μαθήματος';
 $string['currentwindow'] = 'Τρέχον παράθυρο';
 $string['datadir'] = 'Σφάλμα αρχείου συστήματος: Δεν δημιουργήθηκε φάκελος δεδομένων μαθήματος';
 $string['deleteallattempts'] = 'Διαγραφή όλων των προσπαθειών';
+$string['deleteselected'] = 'Διαγραφή επιλεγμένων προσπαθειών';
 $string['details'] = 'Παρακολούθηση λεπτομερειών';
 $string['directories'] = 'Εμφάνιση των συνδέσμων του φακέλου';
 $string['disabled'] = 'Απενεργοποιημένο';

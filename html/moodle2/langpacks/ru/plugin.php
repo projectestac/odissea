@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,8 +37,8 @@ $string['err_response_curl'] = 'Невозможно получить имеющ
 $string['err_response_format_version'] = 'Непредвиденная версия формата ответа. Попробуйте еще раз проверить наличие обновлений.';
 $string['err_response_http_code'] = 'Невозможно получить информацию о доступных обновлениях - непредвиденный код ответа HTTP.';
 $string['filterall'] = 'Отображать все';
-$string['filtercontribonly'] = 'Показать только дополнения';
-$string['filtercontribonlyactive'] = 'Показаны только дополнения';
+$string['filtercontribonly'] = 'Отображать только дополнения';
+$string['filtercontribonlyactive'] = 'Отображаются только дополнения';
 $string['filterupdatesonly'] = 'Отображать только с доступными обновлениями';
 $string['filterupdatesonlyactive'] = 'Отображаются только с доступными обновлениями';
 $string['moodleversion'] = 'Moodle {$a}';
@@ -63,6 +63,7 @@ $string['plugindisable'] = 'Отключить';
 $string['plugindisabled'] = 'Отключено';
 $string['pluginenable'] = 'Включить';
 $string['pluginenabled'] = 'Включено';
+$string['release'] = 'Релиз';
 $string['requiredby'] = 'Требуется для: {$a}';
 $string['requires'] = 'Необходимо';
 $string['rootdir'] = 'Каталог';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'Установлен';
 $string['systemname'] = 'Идентификатор';
 $string['type_auth'] = 'Метод аутентификации';
 $string['type_auth_plural'] = 'Методы аутентификации';
+$string['type_availability'] = 'Наличие ограничения';
+$string['type_availability_plural'] = 'Наличие ограничений';
 $string['type_block'] = 'Блок';
 $string['type_block_plural'] = 'Блоки';
 $string['type_cachelock'] = 'Обработчик блокировок кэша';

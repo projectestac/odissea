@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -199,11 +199,14 @@ $string['essayemailmessage2'] = '<p>Indicador de ensayo:<blockquote>{$a->questio
 $string['essayemailsubject'] = 'Su calificación para la pregunta {$a}';
 $string['essays'] = 'Ensayos';
 $string['essayscore'] = 'Puntuación del ensayo';
+$string['false'] = 'Falso';
 $string['fileformat'] = 'Formato de archivo';
 $string['finish'] = 'Terminado';
 $string['firstanswershould'] = 'de elementos';
 $string['firstwrong'] = 'Lo sentimos, usted no puede obtener este punto porque su respuesta no es correcta. ¿Desea seguir intentándolo? (únicamente para aprender, no para ganar el punto).';
 $string['flowcontrol'] = 'Control de Flujo';
+$string['fractionsaddwrong'] = 'Las calificaciones positivas otorgadas no suman 100% sino {$a}%<br />¿Desea regresar y corregir esta pregunta?';
+$string['fractionsnomax'] = 'Una de las preguntas debe ser 100% para que sea<br />posible alcanzar la calificación máxima<br />¿Desea regresar y corregir esta pregunta?';
 $string['full'] = 'Expandido';
 $string['general'] = 'General';
 $string['gotoendoflesson'] = 'Ir al final de la lección';
@@ -337,6 +340,7 @@ $string['noretake'] = 'No se le permite retomar esta lección.';
 $string['normal'] = 'Normal - seguir el flujo de la lección';
 $string['notcompleted'] = 'Sin finalizar';
 $string['notdefined'] = 'Sin definir';
+$string['notenoughsubquestions'] = 'No se han definido suficientes subpreguntas.<br /> ¿Quiere regresar y arreglar esta pregunta?';
 $string['nothighscore'] = 'No ha fijado la lista {$a} de puntuaciones más altas.';
 $string['notitle'] = 'Sin título';
 $string['numberofcorrectanswers'] = 'Número de respuestas correctas: {$a}';
@@ -473,6 +477,7 @@ $string['timespenterror'] = 'Dedicar al menos {$a} minutos a la lección';
 $string['timespentminutes'] = 'Tiempo empleado (minutos)';
 $string['timetaken'] = 'Tiempo empleado';
 $string['topscorestitle'] = '{$a} puntuaciones más altas.';
+$string['true'] = 'Verdadero';
 $string['truefalse'] = 'Verdadero/Falso';
 $string['unabledtosavefile'] = 'El archivo que ha subido no se ha podido guardar';
 $string['unknownqtypesnotimported'] = 'No se importaron {$a} preguntas con tipos de pregunta no admitidos';

@@ -18,10 +18,9 @@
 /**
  * Manage files in folder module instance
  *
- * @package    mod
- * @subpackage folder
- * @copyright  2010 Dongsheng Cai <dongsheng@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   mod_folder
+ * @copyright 2010 Dongsheng Cai <dongsheng@moodle.com>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 require('../../config.php');
@@ -46,7 +45,8 @@ $PAGE->set_activity_record($folder);
 
 $data = new stdClass();
 $data->id = $cm->id;
-$options = array('subdirs'=>1, 'maxbytes'=>$CFG->maxbytes, 'maxfiles'=>-1, 'accepted_types'=>'*');
+$maxbytes = get_user_max_upload_file_size($context, $CFG->maxbytes);
+$options = array('subdirs' => 1, 'maxbytes' => $maxbytes, 'maxfiles' => -1, 'accepted_types' => '*');
 file_prepare_standard_filemanager($data, 'files', $options, $context, 'mod_folder', 'content', 0);
 
 $mform = new mod_folder_edit_form(null, array('data'=>$data, 'options'=>$options));
@@ -63,7 +63,16 @@ if ($mform->is_cancelled()) {
     $formdata = file_postupdate_standard_filemanager($formdata, 'files', $options, $context, 'mod_folder', 'content', 0);
     $DB->set_field('folder', 'revision', $folder->revision+1, array('id'=>$folder->id));
 
-    add_to_log($course->id, 'folder', 'edit', 'edit.php?id='.$cm->id, $folder->id, $cm->id);
+    // Update the variable of the folder revision so we can pass it as an accurate snapshot later.
+    $folder->revision = $folder->revision + 1;
+
+    $params = array(
+        'context' => $context,
+        'objectid' => $folder->id
+    );
+    $event = \mod_folder\event\folder_updated::create($params);
+    $event->add_record_snapshot('folder', $folder);
+    $event->trigger();
 
     redirect($redirecturl);
 }

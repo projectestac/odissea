@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_manual', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,8 @@ $string['alterstatus'] = 'Canvia l\'estat';
 $string['altertimeend'] = 'Canvia la data final';
 $string['altertimestart'] = 'Canvia la data inicial';
 $string['assignrole'] = 'Assigneu un rol';
+$string['browsecohorts'] = 'Visualitza les cohorts';
+$string['browseusers'] = 'Visualitza els usuaris';
 $string['confirmbulkdeleteenrolment'] = 'Esteu segur de voler suprimir aquestes inscripcions d\'usuaris ?';
 $string['defaultperiod'] = 'Duració de la inscripció per defecte';
 $string['defaultperiod_desc'] = 'Temps per defecte durant el qual la inscripció serà vàlida. Si es posa a cero, la duració per defecte de la inscripció serà il·limitada.';

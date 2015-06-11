@@ -237,9 +237,21 @@ class mod_assign_renderer extends plugin_renderer_base {
         if ($header->showintro) {
             $o .= $this->output->box_start('generalbox boxaligncenter', 'intro');
             $o .= format_module_intro('assign', $header->assign, $header->coursemoduleid);
+            $o .= $header->postfix;
             $o .= $this->output->box_end();
         }
 
+        return $o;
+    }
+
+    /**
+     * Render the header for an individual plugin.
+     *
+     * @param assign_plugin_header $header
+     * @return string
+     */
+    public function render_assign_plugin_header(assign_plugin_header $header) {
+        $o = $header->plugin->view_header();
         return $o;
     }
 
@@ -471,7 +483,7 @@ class mod_assign_renderer extends plugin_renderer_base {
         $row = new html_table_row();
         $cell1 = new html_table_cell(get_string('submissionstatus', 'assign'));
         if (!$status->teamsubmissionenabled) {
-            if ($status->submission) {
+            if ($status->submission && $status->submission->status != ASSIGN_SUBMISSION_STATUS_NEW) {
                 $statusstr = get_string('submissionstatus_' . $status->submission->status, 'assign');
                 $cell2 = new html_table_cell($statusstr);
                 $cell2->attributes = array('class'=>'submissionstatus' . $status->submission->status);
@@ -487,7 +499,7 @@ class mod_assign_renderer extends plugin_renderer_base {
         } else {
             $row = new html_table_row();
             $cell1 = new html_table_cell(get_string('submissionstatus', 'assign'));
-            if ($status->teamsubmission) {
+            if ($status->teamsubmission && $status->teamsubmission->status != ASSIGN_SUBMISSION_STATUS_NEW) {
                 $teamstatus = $status->teamsubmission->status;
                 $submissionsummary = get_string('submissionstatus_' . $teamstatus, 'assign');
                 $groupid = 0;
@@ -541,12 +553,18 @@ class mod_assign_renderer extends plugin_renderer_base {
         $row = new html_table_row();
         $cell1 = new html_table_cell(get_string('gradingstatus', 'assign'));
 
-        if ($status->graded) {
-            $cell2 = new html_table_cell(get_string('graded', 'assign'));
-            $cell2->attributes = array('class'=>'submissiongraded');
+        if ($status->gradingstatus == ASSIGN_GRADING_STATUS_GRADED ||
+            $status->gradingstatus == ASSIGN_GRADING_STATUS_NOT_GRADED) {
+            $cell2 = new html_table_cell(get_string($status->gradingstatus, 'assign'));
         } else {
-            $cell2 = new html_table_cell(get_string('notgraded', 'assign'));
-            $cell2->attributes = array('class'=>'submissionnotgraded');
+            $gradingstatus = 'markingworkflowstate' . $status->gradingstatus;
+            $cell2 = new html_table_cell(get_string($gradingstatus, 'assign'));
+        }
+        if ($status->gradingstatus == ASSIGN_GRADING_STATUS_GRADED ||
+            $status->gradingstatus == ASSIGN_MARKING_WORKFLOW_STATE_RELEASED) {
+            $cell2->attributes = array('class' => 'submissiongraded');
+        } else {
+            $cell2->attributes = array('class' => 'submissionnotgraded');
         }
         $row->cells = array($cell1, $cell2);
         $t->data[] = $row;
@@ -678,7 +696,7 @@ class mod_assign_renderer extends plugin_renderer_base {
         // Links.
         if ($status->view == assign_submission_status::STUDENT_VIEW) {
             if ($status->canedit) {
-                if (!$submission) {
+                if (!$submission || $submission->status == ASSIGN_SUBMISSION_STATUS_NEW) {
                     $o .= $this->output->box_start('generalbox submissionaction');
                     $urlparams = array('id' => $status->coursemoduleid, 'action' => 'editsubmission');
                     $o .= $this->output->single_button(new moodle_url('/mod/assign/view.php', $urlparams),

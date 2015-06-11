@@ -38,11 +38,7 @@ $PAGE->set_url('/mod/qv/index.php', array('id' => $id));
 $PAGE->set_pagelayout('incourse');
 
 $context = context_course::instance($course->id);
-$params = array(
-    'context' => $context,
-);
-$event = \mod_qv\event\instances_list_viewed::create($params);
-$event->trigger();
+\mod_qv\event\course_module_instance_list_viewed::create_from_course($course)->trigger();
 
 // Print the header
 $strplural = get_string('modulenameplural', 'qv');

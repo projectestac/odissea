@@ -18,7 +18,7 @@
 /**
  * Strings for component 'survey', language 'en', branch 'MOODLE_20_STABLE'
  *
- * @package   survey
+ * @package   mod_survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -197,6 +197,9 @@ $string['downloadinfo'] = 'You can download the complete raw data for this surve
 $string['downloadresults'] = 'Download results';
 $string['downloadtext'] = 'Download data as a plain text file';
 $string['editingasurvey'] = 'Editing a survey';
+$string['eventreportdownloaded'] = 'Survey report downloaded';
+$string['eventreportviewed'] = 'Survey report viewed';
+$string['eventresponsesubmitted'] = 'Survey response submitted';
 $string['guestsnotallowed'] = 'Only enrolled users are able to submit surveys';
 $string['howlong'] = 'How long did this survey take you to complete?';
 $string['howlongoptions'] = 'under 1 min,1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,more than 10';
@@ -239,6 +242,7 @@ $string['selectedquestions'] = 'Selected questions from a scale, all students';
 $string['summary'] = 'Summary';
 $string['survey:addinstance'] = 'Add a new survey';
 $string['surveycompleted'] = 'You\'ve completed this survey.  The graph below shows a summary of your results compared to the class averages.';
+$string['surveycompletednograph'] = 'You have completed this survey.';
 $string['survey:download'] = 'Download responses';
 $string['surveygraph'] = 'Survey graph';
 $string['surveyname'] = 'Survey name';

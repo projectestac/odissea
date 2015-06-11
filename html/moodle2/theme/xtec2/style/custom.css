@@ -15,9 +15,32 @@ body{
 	padding-top: 41px;
 	font-size: [[setting:fontsize]];
     [[setting:fontstyle]];
+    scrollbar-face-color: [[setting:color5]];
+    scrollbar-highlight-color: #DDD;
+    scrollbar-3dlight-color: #DDD
+    scrollbar-darkshadow-color: [[setting:color5]];
+    scrollbar-track-color: #DDD;
+    scrollbar-arrow-color: #333;
 }
 
-a {
+::-webkit-scrollbar {
+  background-color: #DDD;
+}
+::-webkit-scrollbar-track {
+  background-color: #DDD;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #DDD;
+}
+::-webkit-scrollbar-thumb {
+  background-color: [[setting:color5]];
+  border: 0px;
+}
+::-webkit-scrollbar-corner {
+  background-color: [[setting:color5]];
+}
+
+a, .usermenu .login a {
 	color: [[setting:color5]]; /* Color*/
 }
 
@@ -92,8 +115,16 @@ h3{
 	padding-top: 0px;
 }
 
+.block.hidden {
+    padding: 0;
+}
+
 .block.no-header{
 	padding-top: 8px;
+}
+
+.block .header h2 {
+    cursor: pointer;
 }
 
 .block .header h2, #dockeditempanel .dockeditempanel_hd h2{
@@ -131,22 +162,22 @@ h3{
 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
+.block.hidden .header {
+    border-radius: 4px;
+}
+
 .block_course_overview .content h2.title{
 	font-size: 20px;
 }
 
 .block .content {
-	transition: all 0.5s ease;
-	visibility: visible;
-	opacity: 1;
-	max-height: 200000px;
+	display: block;
+    padding: 4px 14px;
 }
 
-.jsenabled .block.hidden .content {
-	visibility: hidden;
-	opacity: 0;
-	max-height: 0;
-	display: block;
+.jsenabled .block.hidden .content, .block.hidden .content {
+	display: none;
+    padding: 0;
 }
 
 .block .minicalendar {
@@ -282,8 +313,68 @@ h3{
     text-shadow: none;
 }
 
+/* User menu*/
+#usermenu .dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+    display: block;
+    color: #777;
+}
+
+#usermenu a.dropdown-toggle:hover{
+    color: black;
+    text-decoration: none;
+}
+
+#usermenu .dropdown-toggle .caret {
+  margin-top: 8px;
+  margin-left: 2px;
+  border-top-color: #777;
+  position: relative;
+  top: 9px;
+  display: inline-block;
+}
+
+#usermenu .dropdown-toggle img {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 32px;
+    height: 32px;
+}
+
+#usermenu .dropdown-menu a:hover{
+    text-decoration: none;
+    color: [[setting:color3]];
+    background-color: [[setting:color2]];
+    background-image: none;
+}
+
+#usermenu .dropdown-menu a {
+  display: block;
+  padding: 2px 1em 2px 28px;
+  color: #333;
+}
+
+#usermenu .dropdown-menu a:hover i.fa {
+    color: [[setting:color3]];
+}
+
+#usermenu .dropdown-menu i.fa {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  vertical-align: middle;
+  margin: 4px 4px 4px -24px;
+}
+
+
+.dropdown-submenu.icon>a:after {
+    margin-top: 8px;
+}
+
 .dropdown-menu{
-    background-color: #f5f5f5;
+    background-color: white;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
 }
@@ -315,6 +406,32 @@ h3{
 	margin-left: 15px;
 }
 
+#main_menu .dropdown-menu a:hover{
+    text-decoration: none;
+    color: [[setting:color3]];
+    background-color: [[setting:color2]];
+    background-image: none;
+}
+
+#main_menu .dropdown-menu a {
+  display: block;
+  padding: 2px 1em 2px 28px;
+  color: #333;
+}
+
+#main_menu .dropdown-menu a:hover i.fa {
+    color: [[setting:color3]];
+}
+
+#main_menu .dropdown-menu i.fa {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  vertical-align: middle;
+  margin: 4px 4px 4px -24px;
+}
+
 .agora_navbar{
 	text-align: right;
 }
@@ -322,6 +439,22 @@ h3{
 	margin-right: 5px;
 	vertical-align: top;
 }
+
+.edit-btn i.fa {
+    color: white;
+    margin-right: 0.5em;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu a:hover {
+    color: [[setting:color3]];
+    background-color: [[setting:color2]];
+}
+
+.moodle-actionmenu[data-enhanced].show .menu a:hover i.fa {
+    color: [[setting:color3]];
+}
+
+
 
 /* Footer */
 
@@ -369,6 +502,10 @@ h3{
 	background-color: #739cce;
 }
 
+#page-footer-top .social-icons  i.fa-whatsapp{
+    background-color: #34af23;
+}
+
 #page-footer-top .social-icons  i.fa-facebook{
 	background-color: #3b5998;
 }
@@ -399,6 +536,10 @@ h3{
 
 #page-footer-top .social-icons i.fa-linkedin{
 	background-color: #007bb6;
+}
+
+#page-footer-top .social-icons i.fa-skype{
+    background-color: #00AFF0;
 }
 
 #page-footer-top a{
@@ -713,55 +854,13 @@ body.path-grade-report-grader #user-grades {
 		height: 0;
 		overflow: hidden;
 	}
-	.navbar .nav-collapse, .navbar .nav-collapse.active, .navbar .nav-collapse.active{
+	.navbar .nav-collapse.active, .navbar .nav-collapse.active{
         border: 0;
 		height: auto;
 		overflow: visible;
 	}
 }
 
-@media (min-width: 979px) {
-	/* Better grader */
-	body.blocks_collapsed.super_collapse{
-		height: 100%;
-	}
-
-	body.blocks_collapsed.super_collapse #page-footer,
-	body.blocks_collapsed.super_collapse #title-header,
-	body.blocks_collapsed.super_collapse #page-header,
-	body.blocks_collapsed.super_collapse .urlselect,
-	body.blocks_collapsed.super_collapse .paging,
-	body.blocks_collapsed.super_collapse h2{
-		display: none;
-	}
-
-	body.blocks_collapsed.super_collapse #page{
-		max-width: none;
-		padding: 0;
-		margin-top: 36px;
-	}
-
-	body.blocks_collapsed.super_collapse table.generaltable,
-	body.blocks_collapsed.super_collapse div.gradeparent>table#user-grades {
-		margin-top: 77px;
-		top: 0;
-		left: 0;
-		position: absolute;
-		width: 100%;
-        /*height: 100%;*/
-		max-height: 100%;
-		background-color: white;
-		font-size: 12px;
-	}
-
-
-	body.blocks_collapsed.super_collapse #main_navigation {
-		position: fixed;
-		z-index: 4030;
-		top: 41px;
-		width: 100%;
-	}
-}
 
 /* All except phones */
 @media (min-width: 767px){
@@ -769,6 +868,12 @@ body.path-grade-report-grader #user-grades {
 		text-align: left;
 	}
 
+    .navbar .brand {
+        margin: 0 0 0 -20px;
+    }
+}
+
+@media (min-width: 979px){
     #main_navigation.navbar .nav>li>a {
         padding: 0;
     }

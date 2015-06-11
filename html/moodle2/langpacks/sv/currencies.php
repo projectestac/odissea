@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'currencies', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   currencies
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['KWD'] = 'Kuwaitiska dinarer';
 $string['LBP'] = 'Libanesiska pund';
 $string['NOK'] = 'Norska kronor';
 $string['SEK'] = 'Svenska kronor';
-$string['THB'] = 'Thai baht';
+$string['THB'] = 'Thai bat';
 $string['TND'] = 'Tunisiska dinarer';
 $string['TWD'] = 'Taiwanesiska dollar';
 $string['USD'] = 'USA dollar';

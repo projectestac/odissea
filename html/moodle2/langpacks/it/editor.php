@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,7 @@ $string['minimize'] = 'Minimizza editor';
 $string['move'] = 'Muovi';
 $string['multi'] = 'Multi';
 $string['mustenterurl'] = 'Si deve inserire l\'indirizzo';
-$string['nolink'] = 'Prevenire auto-collegamenti';
+$string['nolink'] = 'Evita link automatici';
 $string['normal'] = 'Normale';
 $string['notimage'] = 'Il file selezionato non è un\'immagine. Prego scegliere un\'immagine!';
 $string['notset'] = 'Non impostato';

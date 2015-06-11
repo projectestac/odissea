@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['all'] = 'Alle';
 $string['allmethod'] = 'Er is aan alle geselecteerde voorwaarden voldaan.';
 $string['allmethodactivity'] = 'Alle geselecteerde activiteiten zijn voltooid.';
 $string['allmethodcourseset'] = 'Alle geselecteerde cursussen zijn voltooid.';
-$string['allmethodmanual'] = 'Alle geselecteerde rollen krijgen de badge.';
+$string['allmethodmanual'] = 'Alle geselecteerde rollen kennen de badge toe.';
 $string['allmethodprofile'] = 'Alle geselecteerde profielvelden zijn aangevuld.';
 $string['allowcoursebadges'] = 'Cursus-badges inschakelen';
 $string['allowcoursebadges_desc'] = 'Toestaan om badges te maken en toe te kennen op cursusniveau.';
@@ -53,8 +53,12 @@ $string['any'] = 'Gelijk welke';
 $string['anymethod'] = 'Aan gelijk welke van de geselecteerde voorwaarden is voldaan.';
 $string['anymethodactivity'] = 'Gelijk welke van de geselecteerde activiteiten zijn voltooid.';
 $string['anymethodcourseset'] = 'Gelijk welke van de geselecteerde cursussen is voltooid.';
-$string['anymethodmanual'] = 'Gelijk welke van de geselecteerde rollen krijgt de badge.';
+$string['anymethodmanual'] = 'Gelijk welke van de geselecteerde rollen kennen de badge toe.';
 $string['anymethodprofile'] = 'Gelijk welke van de geselecteerde profielvelden is aangevuld.';
+$string['archivebadge'] = 'Zou je badge \'{$a}\' willen verwijderen maar de bestaande uitgereikte badge willen behouden?';
+$string['archiveconfirm'] = 'Verwijder en behoudt de bestaande uitgereikte badges';
+$string['archivehelp'] = '<p>Deze optie betekent dat de badge wordt gemarkeerd als "ingetrokken" en niet meer zal verschijnen in de lijst van badges. Gebruikers kunnen deze badge niet meer verdienen. Bestaande badge ontvangers kunnen de badge echter nog wel in hun profiel tonen en naar hun externe backpacks sturen.</p>
+<p>Als je wilt dat je gebruikers nog toegang hebben tot hun verdiende badges, is het belangrijk om deze optie te kiezen, in plaats van de badges volledig te verwijderen.</p>';
 $string['attachment'] = 'Badge als bijlage bij bericht';
 $string['attachment_help'] = 'Indien ingeschakeld kan een uitgereikte badge als bijlage in de e-mail naar de gebruiker om te downloaden. (E-mailbijlagen moeten ingeschakeld zijn in de Sitebeheer > Plugins > Berichtoutput > E-mail om deze optie te kunnen gebruiken.)';
 $string['award'] = 'Badge toekennen';
@@ -64,15 +68,15 @@ $string['awards'] = 'Ontvangers';
 $string['backpackavailability'] = 'Externe badge verificatie';
 $string['backpackavailability_help'] = 'Een externe \'backpack service\' moet toegang kunnen krijgen tot je site, zodat wie van jou een badge gekregen heeft dit zou kunnen bewijzen.Je site blijkt niet toegankelijk te zijn. Dit betekent dat badges die ja al toegekend hebt of in de toekomst zult toekennen niet geverifieerd kunnen worden.
 
-##Waarom zie ik dit bericht?
+**Waarom zie ik dit bericht?**
 
 Misschien verhindert je firewall toegang van buiten je netwerk, is je site beveiligd met een wachtwoord of loopt de site van een computer die niet beschikbaar is van op internet (zoals een lokale ontwikkelmachine).
 
-##Is dit een probleem?
+**Is dit een probleem?**
 
 Je moet dit oplossen op een productie-site als je van plan bent om badges uit te reiken, anders zullen de ontvangers ervan niet kunnen bewijzen dat ze de badges bij jou verdient hebben. Als je site nog niet live is, dan kun je testbadges maken en uitreiken, zo lang je er maar voor zorgt dat je site bereikbaar is zodra je live gaat.
 
-##Wat als ik mijn hele site niet kan publiek beschikbaar maken?
+**Wat als ik mijn hele site niet kan publiek beschikbaar maken?**
 
 De enige URL die nodig is voor verificatie is [your-site-url]/badges/assertion.php. Als je je firewall wijzigt zodat die URL toegankelijk is, dan zal badge verificatie werken.';
 $string['backpackbadges'] = 'Je hebt {$a->totalbadges} badge(s) van {$a->totalcollections} collecties.
@@ -139,7 +143,7 @@ $string['createbutton'] = 'Maak badge';
 $string['creatorbody'] = '<p>{$a->user} heeft aan alle criteria voor een badge voldaan en de badge is aan hem uitgereikt. Bekijk de uitgereikte badge op  {$a->link} </p>';
 $string['creatorsubject'] = '\'{$a}\' is bekroond!';
 $string['criteria_0'] = 'De badge wordt toegekend als ...';
-$string['criteria_1'] = 'Activieteiten voltooien';
+$string['criteria_1'] = 'Activiteiten voltooien';
 $string['criteria_1_help'] = 'Maakt het mogelijk een badge toe te kennen gebaseerd op het voltooien van een aantal activiteiten binnen een cursus.';
 $string['criteria_2'] = 'Manueel uitgeven door rol';
 $string['criteria_2_help'] = 'Maakt het mogelijk om manueel een badge uit te reiken door gebruikers met deze rol binnen de site of cursus.';
@@ -156,7 +160,7 @@ $string['criteriadeleted'] = 'Badge criteria verwijderen gelukt';
 $string['criteria_descr'] = 'Gebruikers krijgen deze badge als ze aan volgende criteria voltooien:';
 $string['criteria_descr_0'] = 'Gebruikers krijgen deze badge als ze <strong>{$a}</strong> van de criteria in de lijst voltooien.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> van volgende activiteiten zijn voltooid.';
-$string['criteria_descr_2'] = 'Deze badge moet uitgerijkt worden aan gebruikers met <strong>{$a}</strong> van volgende rollen:';
+$string['criteria_descr_2'] = 'Deze badge moet uitgereikt worden door gebruikers met <strong>{$a}</strong> van volgende rollen:';
 $string['criteria_descr_4'] = 'Gebruikers moeten de cursus voltooien';
 $string['criteria_descr_5'] = '<strong>{$a}</strong> van onderstaande cursussen zijn voltooid.';
 $string['criteria_descr_6'] = '<strong>{$a}</strong> van onderstaande gebruikersvelden moeten aangevuld worden:';
@@ -169,7 +173,7 @@ $string['criteria_descr_short4'] = 'Voltooi de cursus';
 $string['criteria_descr_short5'] = 'Voltooi <strong>{$a}</strong> van:';
 $string['criteria_descr_short6'] = 'Voltooi <strong>{$a}</strong> van:';
 $string['criteria_descr_single_1'] = 'Volgende activiteit moet voltooid worden:';
-$string['criteria_descr_single_2'] = 'Deze badge moet uitgereikt worden aan een gebruiker met volgende rol:';
+$string['criteria_descr_single_2'] = 'Deze badge moet uitgereikt worden door een gebruiker met volgende rol:';
 $string['criteria_descr_single_4'] = 'Gebruikers moeten deze cursus voltooien.';
 $string['criteria_descr_single_5'] = 'Volgende cursus moet voltooid worden:';
 $string['criteria_descr_single_6'] = 'Volgend gebruikersprofielveld moet aangevuld worden:';
@@ -193,9 +197,11 @@ $string['defaultissuercontact'] = 'Contactgegevens van de standaard badge uitgev
 $string['defaultissuercontact_desc'] = 'Een e-mailadres dat verbonden is met de uitgever van de badge.';
 $string['defaultissuername'] = 'Naam van de standaard badge uitgever';
 $string['defaultissuername_desc'] = 'Naam van de uitgevende instantie of autoriteit.';
-$string['delbadge'] = 'Verwijder badge';
-$string['delconfirm'] = 'Weet je zeker dat je badge \'{$a} wil verwijderen?';
+$string['delbadge'] = 'Wil je badge \'{$a}\' verwijderen en ook alle bestaande uitgegeven badges?';
+$string['delconfirm'] = 'Verwijder alle bestaande uitgegeven badges';
 $string['delcritconfirm'] = 'Weet je zeker dat je dit criterium wil verwijderen?';
+$string['deletehelp'] = '<p>Een badge volledig verwijderen betekent dat alle gegevens met informatie en criteria voor altijd verwijderd worden. Gebruikers die deze badge verdiend hebben, zullen er niet langer toegang toe hebben en hem niet meer kunnen tonen op hun profielpagina\'s.</p>
+<p>Opmerking: gebruikers die deze badge hebben verdiend en hem al naar hun externe backpack hebben gestuurd, zullen hem daar nog wel kunnen tonen. Ze zullen echter de criteria en pagina\'s met bewijs die aan deze website zijn gelinkt, niet meer kunnen bereiken.</p>';
 $string['delparamconfirm'] = 'Weet je zeker dat je deze parameter wil verwijderen?';
 $string['description'] = 'Beschrijving';
 $string['disconnect'] = 'Verbinding verbreken';
@@ -277,9 +283,9 @@ $string['managebadges'] = 'Beheer badges';
 $string['message'] = 'Berichtinhoud';
 $string['messagebody'] = '<p>Je hebt een badge "%badgename%" verdient!</p>
 <p>Meer informatie over deze badge kun je vinden op %badgelink%.</p>
-<p>Als er geen badge met deze e-mail verbonden is, dan kun je de badge beheren en downloaden van de pagina {$a}.</p>';
+<p>Je kunt de badge beheren en downloaden vanaf de pagina {$a}.</p>';
 $string['messagesubject'] = 'Proficiat! Je hebt een badge verdient!';
-$string['method'] = 'Dit crititerium is behaald als...';
+$string['method'] = 'Dit criterium is behaald als...';
 $string['mingrade'] = 'Minimum vereist cijfer';
 $string['month'] = 'Maand(en)';
 $string['mybackpack'] = 'Mijn backpack instellingen';
@@ -299,14 +305,19 @@ $string['notacceptedrole'] = 'Je huidige rol behoort niet tot die rollen die een
 Als je wil zien wie al een badge verdient heeft, dan kan je volgende pagina bezoeken: {$a}';
 $string['notconnected'] = 'Niet verbonden';
 $string['nothingtoadd'] = 'Er zijn geen criteria beschikbaar om toe te voegen';
-$string['notification'] = 'Waarschuw ontwerper van de badge';
-$string['notification_help'] = 'Deze instelling beheert de meldingen die naar een badge-ontwerper gestuurd worden als de badge wordt uitgereikt.
+$string['notification'] = 'Waarschuw uitgever van de badge';
+$string['notification_help'] = 'Deze instelling beheert de meldingen die naar een badge-uitgever gestuurd worden als de badge wordt uitgereikt.
 
 Volgende opties zijn mogelijk:
+
 * **NOOIT** - Stuur geen meldingen
+
 * **ELKE KEER** - Stuur een bericht telkens de badge wordt uitgereikt.
+
 * **DAGELIJKS** - Stuur één keer per dag een bericht.
+
 * **WEKELIJKS** - Stuur één bericht per week.
+
 * **MAANDELIJKS** - Stuur één bericht per maand.';
 $string['notifydaily'] = 'Dagelijks';
 $string['notifyevery'] = 'Elke keer';

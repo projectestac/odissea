@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -120,7 +120,6 @@ $string['errorinvalidformat'] = 'Format de sauvegarde inconnu';
 $string['errorinvalidformatinfo'] = 'Le fichier sélectionné n\'est pas un fichier de sauvegarde Moodle valide et ne peut pas être restauré.';
 $string['errorminbackup20version'] = 'Restauration impossible. Ce fichier de sauvegarde a été créé avec une version de développement du moteur de sauvegardes de Moodle ({$a->backup}). La version minimale requise pour la restaurer est {$a->min}.';
 $string['errorrestorefrontpage'] = 'La restauration de la page d\'accueil n\'est pas autorisée.';
-$string['errortgznozlib'] = 'Le fichier sélectionné a été créé dans le nouveau format de sauvegarde et ne peut pas être restauré, car l\'extension zlib de PHP n\'est pas disponible sur cette installation.';
 $string['executionsuccess'] = 'Le fichier de sauvegarde a été enregistré correctement.';
 $string['filealiasesrestorefailures'] = 'Échec de la restauration des alias';
 $string['filealiasesrestorefailures_help'] = 'Les alias sont des liens vers d\'autres fichiers, y compris ceux qui sont stockés dans des dépôts externes. Dans certains cas, Moodle ne peut pas les restaurer, par exemple lors de la restauration de sauvegardes d\'un autre site ou si le fichier lié n\'existe pas.
@@ -168,6 +167,7 @@ $string['includeditems'] = 'Éléments inclus :';
 $string['includefilereferences'] = 'Liens vers des contenus externes';
 $string['includesection'] = 'Section {$a}';
 $string['includeuserinfo'] = 'Données utilisateur';
+$string['jumptofinalstep'] = 'Sauter à la dernière étape';
 $string['locked'] = 'Verrouillé';
 $string['lockedbyconfig'] = 'Ce réglage a été verrouillé par les réglages par défaut des sauvegardes';
 $string['lockedbyhierarchy'] = 'Verrouillé en raison de contraintes';
@@ -259,10 +259,11 @@ $string['skiphiddenhelp'] = 'Choisir s\'il faut ou non omettre les cours cachés
 $string['skipmodifdays'] = 'Omettre les cours non modifiés depuis';
 $string['skipmodifdayshelp'] = 'Choisir s\'il faut ou non omettre les cours non modifiés depuis un certain nombre de jours';
 $string['skipmodifprev'] = 'Omettre les cours non modifiés depuis la dernière sauvegarde';
-$string['skipmodifprevhelp'] = 'Choisir s\'il faut ou non omettre les cours n\'ayant pas été modifiés depuis la dernière sauvegarde';
+$string['skipmodifprevhelp'] = 'Choisir s\'il faut ou non omettre les cours n\'ayant pas été modifiés depuis la dernière sauvegarde. Requiert l\'activation des historiques.';
 $string['storagecourseandexternal'] = 'Zone de sauvegarde de cours et dossier spécifié';
 $string['storagecourseonly'] = 'Zone de sauvegarde de cours';
 $string['storageexternalonly'] = 'Dossier spécifié pour les sauvegardes automatiques';
+$string['timetaken'] = 'Temps mis';
 $string['title'] = 'Titre';
 $string['totalcategorysearchresults'] = 'Nombre de catégories : {$a}';
 $string['totalcoursesearchresults'] = 'Nombre de cours : {$a}';

@@ -18,8 +18,7 @@
 /**
  * Action for processing page answers by users
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  2009 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
@@ -43,6 +42,7 @@ $lessonoutput = $PAGE->get_renderer('mod_lesson');
 
 $url = new moodle_url('/mod/lesson/continue.php', array('id'=>$cm->id));
 $PAGE->set_url($url);
+$PAGE->set_pagetype('mod-lesson-view');
 $PAGE->navbar->add(get_string('continue', 'lesson'));
 
 // This is the code updates the lesson time for a timed test
@@ -162,11 +162,11 @@ if ($canmanage) {
     }
 }
 // Report attempts remaining
-if ($result->attemptsremaining != 0 && !$lesson->review && !$reviewmode) {
+if ($result->attemptsremaining != 0 && $lesson->review && !$reviewmode) {
     $lesson->add_message(get_string('attemptsremaining', 'lesson', $result->attemptsremaining));
 }
 // Report if max attempts reached
-if ($result->maxattemptsreached != 0 && !$lesson->review && !$reviewmode) {
+if ($result->maxattemptsreached != 0 && $lesson->review && !$reviewmode) {
     $lesson->add_message('('.get_string("maximumnumberofattemptsreached", "lesson").')');
 }
 
@@ -184,7 +184,9 @@ if ($lesson->displayleft) {
 if ($lesson->ongoing && !$reviewmode) {
     echo $lessonoutput->ongoing_score($lesson);
 }
-echo $result->feedback;
+if (!$result->maxattemptsreached && !$reviewmode) {
+    echo $result->feedback;
+}
 
 // User is modifying attempts - save button and some instructions
 if (isset($USER->modattempts[$lesson->id])) {
@@ -199,7 +201,7 @@ if (isset($USER->modattempts[$lesson->id])) {
 }
 
 // Review button back
-if (!$result->correctanswer && !$result->noanswer && !$result->isessayquestion && !$reviewmode && $lesson->review) {
+if (!$result->correctanswer && !$result->noanswer && !$result->isessayquestion && !$reviewmode && $lesson->review && !$result->maxattemptsreached) {
     $url = $CFG->wwwroot.'/mod/lesson/view.php';
     $content = html_writer::empty_tag('input', array('type'=>'hidden', 'name'=>'id', 'value'=>$cm->id));
     $content .= html_writer::empty_tag('input', array('type'=>'hidden', 'name'=>'pageid', 'value'=>$page->id));
@@ -208,7 +210,7 @@ if (!$result->correctanswer && !$result->noanswer && !$result->isessayquestion &
 }
 
 $url = new moodle_url('/mod/lesson/view.php', array('id'=>$cm->id, 'pageid'=>$result->newpageid));
-if ($lesson->review && !$result->correctanswer && !$result->noanswer && !$result->isessayquestion) {
+if ($lesson->review && !$result->correctanswer && !$result->noanswer && !$result->isessayquestion && !$result->maxattemptsreached) {
     // Review button continue
     echo $OUTPUT->single_button($url, get_string('reviewquestioncontinue', 'lesson'));
 } else {

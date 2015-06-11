@@ -5,14 +5,14 @@ Feature: Add a quiz
   I need to create a quiz
 
   Background:
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email               |
-      | teacher1 | Terry1    | Teacher1 | teacher1@moodle.com |
-      | student1 | Sam1      | Student1 | student1@moodle.com |
-    And the following "courses" exists:
+      | teacher1 | Terry1    | Teacher1 | teacher1@example.com |
+      | student1 | Sam1      | Student1 | student1@example.com |
+    And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
@@ -36,7 +36,7 @@ Feature: Add a quiz
     And I press "Attempt quiz now"
     Then I should see "Question 1"
     And I should see "Answer the first question"
-    And I select "True" radio button
+    And I set the field "True" to "1"
     And I press "Next"
     And I should see "Answer saved"
     And I press "Submit all and finish"

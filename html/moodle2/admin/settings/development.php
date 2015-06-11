@@ -4,27 +4,18 @@
 
 if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
+//XTEC ************ AFEGIT - To let access only to xtecadmin user
+//2012.05.23  @sarjona
+if (get_protected_agora()) { 
+//************ FI
     // Experimental settings page
     $ADMIN->add('development', new admin_category('experimental', new lang_string('experimental','admin')));
 
     $temp = new admin_settingpage('experimentalsettings', new lang_string('experimentalsettings', 'admin'));
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-if (get_protected_agora()) {
-//************ FI
     //TODO: Re-enable cc-import once re-implemented in 2.0.x
     //$temp->add(new admin_setting_configcheckbox('enableimsccimport', new lang_string('enable_cc_import', 'imscc'), new lang_string('enable_cc_import_description', 'imscc'), 0));
     $temp->add(new admin_setting_configcheckbox('enablesafebrowserintegration', new lang_string('enablesafebrowserintegration', 'admin'), new lang_string('configenablesafebrowserintegration', 'admin'), 0));
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-}
-//************ FI
-    $temp->add(new admin_setting_configcheckbox('enablegroupmembersonly', new lang_string('enablegroupmembersonly', 'admin'), new lang_string('configenablegroupmembersonly', 'admin'), 0));
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-if (get_protected_agora()) {
-//************ FI
     $temp->add(new admin_setting_configcheckbox('dndallowtextandlinks', new lang_string('dndallowtextandlinks', 'admin'), new lang_string('configdndallowtextandlinks', 'admin'), 0));
     // The CSS optimiser setting. When changed we need to reset the theme caches in order to ensure they are regenerated through the optimiser.
     $enablecssoptimiser = new admin_setting_configcheckbox('enablecssoptimiser', new lang_string('enablecssoptimiser','admin'), new lang_string('enablecssoptimiser_desc','admin'), 0);
@@ -39,20 +30,9 @@ if (get_protected_agora()) {
     $temp->add(new admin_setting_configcheckbox('enabletgzbackups',
             new lang_string('enabletgzbackups', 'admin'),
             new lang_string('enabletgzbackups_desc', 'admin'), 0));
-    $temp->add(new admin_setting_php_extension_enabled('zlibenabled',
-            get_string('zlibenabled', 'admin'),
-            get_string('enabletgzbackups_nozlib', 'admin'), 'zlib'));
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-}
-//************ FI
 
     $ADMIN->add('experimental', $temp);
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-if (get_protected_agora()) {
-//************ FI
     // "debugging" settingpage
     $temp = new admin_settingpage('debugging', new lang_string('debugging', 'admin'));
     $temp->add(new admin_setting_special_debug());
@@ -112,19 +92,14 @@ if (get_protected_agora()) {
     if ($CFG->mnet_dispatcher_mode !== 'off') {
         $ADMIN->add('development', new admin_externalpage('mnettestclient', new lang_string('testclient', 'mnet'), "$CFG->wwwroot/$CFG->admin/mnet/testclient.php"));
     }
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-}
-//************ FI
+
     $ADMIN->add('development', new admin_externalpage('purgecaches', new lang_string('purgecaches','admin'), "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-if (get_protected_agora()) {
-//************ FI
     $ADMIN->add('development', new admin_externalpage('thirdpartylibs', new lang_string('thirdpartylibs','admin'), "$CFG->wwwroot/$CFG->admin/thirdpartylibs.php"));
 //XTEC ************ AFEGIT - To let access only to xtecadmin user
 //2012.05.23  @sarjona
-}
+} else {
+    $ADMIN->add('development', new admin_externalpage('purgecaches', get_string('purgecaches','admin'), "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
+} 
 //************ FI
 } // end of speedup

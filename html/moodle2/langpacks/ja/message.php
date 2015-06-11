@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'ディスカッション';
 $string['emailmessages'] = 'オフライン時は下記メールアドレス宛にメッセージを転送する。';
 $string['emailtagline'] = 'このメールはあなた宛に「 {$a->sitename} 」内で送信されたメッセージのコピーです。 返信するには、{$a->url} にアクセスしてください。';
 $string['emptysearchstring'] = 'キーワードを入力してください。';
+$string['enabled'] = '有効';
 $string['errorcallingprocessor'] = '定義されたアウトプットのコールにエラーが発生しました。';
 $string['errortranslatingdefault'] = 'プラグインから提供されているデフォルト設定の変換にエラーが発生しました。代わりにシステムデフォルトを使用します。';
+$string['eventmessagecontactadded'] = 'メッセージ連絡先が追加されました。';
+$string['eventmessagecontactblocked'] = 'メッセージ連絡先がブロックされました。';
+$string['eventmessagecontactremoved'] = 'メッセージ連絡先が削除されました。';
+$string['eventmessagecontactunblocked'] = 'メッセージ連絡先がブロック解除されました。';
+$string['eventmessagesent'] = 'メッセージが送信されました。';
+$string['eventmessageviewed'] = 'メッセージが閲覧されました。';
 $string['forced'] = '強制';
 $string['formorethan'] = '経過後';
 $string['gotomessages'] = 'メッセージに移動する';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'コンタクトの拒否解除';
 $string['unreadmessages'] = '未読メッセージ {$a} 件';
 $string['unreadnewmessage'] = '{$a} からの新しいメッセージ';
 $string['unreadnewmessages'] = '新しいメッセージ {$a} 件';
-$string['unreadnewnotification'] = '新しい通知';
-$string['unreadnewnotifications'] = '新しい通知 ({$a})';
 $string['userisblockingyou'] = 'このユーザはあなたからのメッセージ受信を拒否しています。';
 $string['userisblockingyounoncontact'] = '{$a} はコンタクトリストに登録されたユーザからのみメッセージを受信します。';
 $string['userssearchresults'] = '検索結果: {$a} 名のユーザが見つかりました。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,10 +56,6 @@ $string['check_frontpagerole_error'] = 'Rôle de la page d\'accueil « {$a} »
 $string['check_frontpagerole_name'] = 'Rôle de la page d\'accueil';
 $string['check_frontpagerole_notset'] = 'Le rôle de la page d\'accueil n\'est pas défini.';
 $string['check_frontpagerole_ok'] = 'Définition correcte du rôle de la page d\'accueil';
-$string['check_globals_details'] = '<p>L\'activation du réglage PHP <code>register_globals</code> représente une importante faille de sécurité.</p><p>Veuillez indiquer <code>register_globals=off</code> dans la configuration PHP de votre site. Vous pouvez modifier ce réglage dans le fichier <code>php.ini</code>, dans la configuration de Apache ou IIS ou dans un fichier <code>.htaccess</code>.</p>';
-$string['check_globals_error'] = 'Le réglage <em>register_globals</em> doit être désactivé. Veuillez modifier immédiatement les réglages de PHP !';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Le réglage <em>register_globals</em> est désactivé.';
 $string['check_google_details'] = '<p>L\'activation du réglage « Ouvert à Google » autorise les moteurs de recherche à accéder aux cours en tant que visiteur anonyme. Il n\'y a aucune raison d\'activer ce réglage si l\'accès aux visiteurs anonymes n\'est pas autorisé.</p>';
 $string['check_google_error'] = 'L\'accès aux visiteurs anonymes est autorisé pour les moteurs de recherche alors que l\'accès aux visiteurs anonymes est désactivé.';
 $string['check_google_info'] = 'Les moteurs de recherche peuvent accéder en tant que visiteur anonyme.';

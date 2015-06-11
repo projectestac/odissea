@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_capability', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['capabilitylabel'] = 'ケイパビリティ:';
 $string['capabilityreport'] = 'ケイパビリティレポート';
 $string['changeoverrides'] = 'このコンテクスト内のオーバーライドを変更する';
 $string['changeroles'] = 'ロール定義を変更する';
+$string['eventreportviewed'] = 'レポートが閲覧されました。';
 $string['forroles'] = 'ロール {$a}';
 $string['getreport'] = 'レポートを取得する';
 $string['intro'] = 'このレポートでは、特定のケイパビリティに関して、すべてのロール (または選択されたロール) 定義に、どのようなパーミッションが設定されているか、およびサイト全体のどこでそのケイパビリティがオーバーライドされているか表示します。';

@@ -24,6 +24,12 @@
 
 defined('MOODLE_INTERNAL') || die;
 
+//XTEC ************ AFEGIT - To let access only to xtecadmin user
+//2015.06.03 @pferre22
+if (!get_protected_agora()) {
+    return;
+}
+//************ FI
 $ADMIN->add('reports', new admin_externalpage('reportperformance', get_string('pluginname', 'report_performance'),
         $CFG->wwwroot."/report/performance/index.php", 'report/performance:view'));
 

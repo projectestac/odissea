@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['plugindisable'] = '비활성화';
 $string['plugindisabled'] = '비활성화됨';
 $string['pluginenable'] = '활성화';
 $string['pluginenabled'] = '활성화됨';
+$string['release'] = '릴리스';
 $string['requiredby'] = '{$a}가 필요로 함';
 $string['requires'] = '필요로 하는 것';
 $string['rootdir'] = '디렉토리';
@@ -74,6 +75,8 @@ $string['status_uptodate'] = '설치됨';
 $string['systemname'] = '식별자';
 $string['type_auth'] = '인증 방법';
 $string['type_auth_plural'] = '인증 플러그인';
+$string['type_availability'] = '사용가능성 제한';
+$string['type_availability_plural'] = '사용가능 제한';
 $string['type_block'] = '블록';
 $string['type_block_plural'] = '블록';
 $string['type_cachelock'] = '캐시 잠금 처리기';
@@ -114,8 +117,8 @@ $string['type_portfolio'] = '포트폴리오';
 $string['type_portfolio_plural'] = '포트폴리오';
 $string['type_profilefield'] = '개인정보 항목 유형';
 $string['type_profilefield_plural'] = '개인정보 항목 유형';
-$string['type_qbehaviour'] = '질문 진행방식';
-$string['type_qbehaviour_plural'] = '질문 진행방식';
+$string['type_qbehaviour'] = '질문 작동';
+$string['type_qbehaviour_plural'] = '질문 작동';
 $string['type_qformat'] = '질문 가져오기/내보내기 형식';
 $string['type_qformat_plural'] = '질문 가져오기/내보내기 형식';
 $string['type_qtype'] = '질문 유형';

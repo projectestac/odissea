@@ -25,6 +25,9 @@
 */
 
 if ($hassiteconfig) {
+    /* @var admin_root $ADMIN */
+    $ADMIN->locate('modules')->set_sorting(true);
+
     $ADMIN->add('modules', new admin_page_pluginsoverview());
 
     // activity modules
@@ -69,6 +72,7 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_manageauths());
     $temp->add(new admin_setting_heading('manageauthscommonheading', new lang_string('commonsettings', 'admin'), ''));
     $temp->add(new admin_setting_special_registerauth());
+    $temp->add(new admin_setting_configcheckbox('authloginviaemail', new lang_string('authloginviaemail', 'core_auth'), new lang_string('authloginviaemail_desc', 'core_auth'), 0));
     $temp->add(new admin_setting_configcheckbox('authpreventaccountcreation', new lang_string('authpreventaccountcreation', 'admin'), new lang_string('authpreventaccountcreation_help', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('loginpageautofocus', new lang_string('loginpageautofocus', 'admin'), new lang_string('loginpageautofocus_help', 'admin'), 0));
     $temp->add(new admin_setting_configselect('guestloginbutton', new lang_string('guestloginbutton', 'auth'),
@@ -142,31 +146,7 @@ if ($hassiteconfig) {
     // "filtersettings" settingpage
     $temp = new admin_settingpage('commonfiltersettings', new lang_string('commonfiltersettings', 'admin'));
     if ($ADMIN->fulltree) {
-        $cachetimes = array(
-            604800 => new lang_string('numdays','',7),
-            86400 => new lang_string('numdays','',1),
-            43200 => new lang_string('numhours','',12),
-            10800 => new lang_string('numhours','',3),
-            7200 => new lang_string('numhours','',2),
-            3600 => new lang_string('numhours','',1),
-            2700 => new lang_string('numminutes','',45),
-            1800 => new lang_string('numminutes','',30),
-            900 => new lang_string('numminutes','',15),
-            600 => new lang_string('numminutes','',10),
-            540 => new lang_string('numminutes','',9),
-            480 => new lang_string('numminutes','',8),
-            420 => new lang_string('numminutes','',7),
-            360 => new lang_string('numminutes','',6),
-            300 => new lang_string('numminutes','',5),
-            240 => new lang_string('numminutes','',4),
-            180 => new lang_string('numminutes','',3),
-            120 => new lang_string('numminutes','',2),
-            60 => new lang_string('numminutes','',1),
-            30 => new lang_string('numseconds','',30),
-            0 => new lang_string('no')
-        );
         $items = array();
-        $items[] = new admin_setting_configselect('cachetext', new lang_string('cachetext', 'admin'), new lang_string('configcachetext', 'admin'), 60, $cachetimes);
         $items[] = new admin_setting_configselect('filteruploadedfiles', new lang_string('filteruploadedfiles', 'admin'), new lang_string('configfilteruploadedfiles', 'admin'), 0,
                 array('0' => new lang_string('none'), '1' => new lang_string('allfiles'), '2' => new lang_string('htmlfilesonly')));
         $items[] = new admin_setting_configcheckbox('filtermatchoneperpage', new lang_string('filtermatchoneperpage', 'admin'), new lang_string('configfiltermatchoneperpage', 'admin'), 0);
@@ -256,7 +236,10 @@ if ($hassiteconfig) {
 
     // Add common settings page
     $temp = new admin_settingpage('managerepositoriescommon', new lang_string('commonrepositorysettings', 'repository'));
-    $temp->add(new admin_setting_configtext('repositorycacheexpire', new lang_string('cacheexpire', 'repository'), new lang_string('configcacheexpire', 'repository'), 120));
+    $temp->add(new admin_setting_configtext('repositorycacheexpire', new lang_string('cacheexpire', 'repository'), new lang_string('configcacheexpire', 'repository'), 120, PARAM_INT));
+    $temp->add(new admin_setting_configtext('repositorygetfiletimeout', new lang_string('getfiletimeout', 'repository'), new lang_string('configgetfiletimeout', 'repository'), 30, PARAM_INT));
+    $temp->add(new admin_setting_configtext('repositorysyncfiletimeout', new lang_string('syncfiletimeout', 'repository'), new lang_string('configsyncfiletimeout', 'repository'), 1, PARAM_INT));
+    $temp->add(new admin_setting_configtext('repositorysyncimagetimeout', new lang_string('syncimagetimeout', 'repository'), new lang_string('configsyncimagetimeout', 'repository'), 3, PARAM_INT));
     $temp->add(new admin_setting_configcheckbox('repositoryallowexternallinks', new lang_string('allowexternallinks', 'repository'), new lang_string('configallowexternallinks', 'repository'), 1));
     $temp->add(new admin_setting_configcheckbox('legacyfilesinnewcourses', new lang_string('legacyfilesinnewcourses', 'admin'), new lang_string('legacyfilesinnewcourses_help', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('legacyfilesaddallowed', new lang_string('legacyfilesaddallowed', 'admin'), new lang_string('legacyfilesaddallowed_help', 'admin'), 1));
@@ -299,9 +282,6 @@ if ($hassiteconfig) {
     $ADMIN->add('webservicesettings', new admin_externalpage('webservicedocumentation', new lang_string('wsdocapi', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/documentation.php", 'moodle/site:config', false));
     /// manage service
     $temp = new admin_settingpage('externalservices', new lang_string('externalservices', 'webservice'));
-    $temp->add(new admin_setting_enablemobileservice('enablemobilewebservice',
-            new lang_string('enablemobilewebservice', 'admin'),
-            new lang_string('configenablemobilewebservice', 'admin', $enablemobiledoclink), 0));
     $temp->add(new admin_setting_heading('manageserviceshelpexplaination', new lang_string('information', 'webservice'), new lang_string('servicehelpexplanation', 'webservice')));
     $temp->add(new admin_setting_manageexternalservices());
     $ADMIN->add('webservicesettings', $temp);

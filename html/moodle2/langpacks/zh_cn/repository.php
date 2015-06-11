@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['activerepository'] = '可用的容器插件';
 $string['activitybackup'] = '活动备份';
 $string['add'] = '添加';
 $string['addfile'] = '添加...';
+$string['addfiletext'] = '添加文件';
 $string['addplugin'] = '添加容器插件';
 $string['allowexternallinks'] = '允许外部链接';
 $string['areacategoryintro'] = '类别描述';
@@ -62,7 +63,10 @@ $string['close'] = '关闭';
 $string['commonrepositorysettings'] = '通用容器设置';
 $string['configallowexternallinks'] = '此选项允许所有用户选择是否将外部媒体文件拷贝到Moodle中。如果关闭此选择，那么媒体总是被拷贝到Moodle（这通常对整体的数据完整性和安全性有好处）。如果此选项被打开，那么用户每次将媒体添加到文本时都可以选择。';
 $string['configcacheexpire'] = '浏览外部容器时，文件列表的本地缓存时间（单位：秒）。';
+$string['configgetfiletimeout'] = '从外部下载文件到Moodle的超时时间，以秒为单位。';
 $string['configsaved'] = '配置已保存！';
+$string['configsyncfiletimeout'] = '从外部同步文件大小的超时时间，以秒为单位。';
+$string['configsyncimagetimeout'] = '同步时从外部库下载图片文件的超时时间，以秒为单位。';
 $string['confirmdelete'] = '你确定要删除容器{$a}吗？如果你选择“继续并下载“，那么引用外部内容的文件将被下载到 Moodle，但可能要花费很长时间。';
 $string['confirmdeletefile'] = '您确信要删除此文件？';
 $string['confirmdeletefilewithhref'] = '您确定您要删除这个文件吗？有 {$a} 个别名或快捷方式引用了这个文件。如果您继续，那么这些别名将被转换为真实副本。';
@@ -75,6 +79,7 @@ $string['continueuninstallanddownload'] = '继续并下载';
 $string['copying'] = '拷贝';
 $string['coursebackup'] = '课程备份';
 $string['create'] = '创建';
+$string['createfolder'] = '创建文件夹';
 $string['createfolderfail'] = '新建文件夹出错';
 $string['createfoldersuccess'] = '文件夹成功新建';
 $string['createinstance'] = '创建一个容器实例';
@@ -87,10 +92,14 @@ $string['deleterepository'] = '删除此容器';
 $string['detailview'] = '查看详情';
 $string['dimensions'] = '大小';
 $string['disabled'] = '禁用';
+$string['displayasdetails'] = '显示文件为详情';
+$string['displayasicons'] = '显示为文件图标';
+$string['displayastree'] = '显示为文件树';
 $string['displaydetails'] = '以文件详细信息显示文件夹内容';
 $string['displayicons'] = '以文件图标显示文件夹内容';
 $string['displaytree'] = '以文件树状结构显示文件夹内容';
 $string['download'] = '下载';
+$string['downloadallfiles'] = '下载所有文件';
 $string['downloadfolder'] = '下载全部';
 $string['downloadsucc'] = '文件已成功下载';
 $string['draftareanofiles'] = '因为没有附件，所以不能下载';
@@ -124,6 +133,7 @@ $string['folderexists'] = '文件夹的名称已被使用，请使用其他名�
 $string['foldernotfound'] = '找不到文件夹';
 $string['folderrecurse'] = '文件夹不能被移动到自己的子文件夹里';
 $string['getfile'] = '选择此文件';
+$string['getfiletimeout'] = '提取文件超时';
 $string['help'] = '帮助';
 $string['hidden'] = '隐藏';
 $string['iconview'] = '图标查看';
@@ -141,6 +151,8 @@ $string['invalidplugin'] = '容器插件 {$a} 无效';
 $string['invalidrepositoryid'] = '无效的容器ID';
 $string['isactive'] = '激活？';
 $string['keyword'] = '关键词';
+$string['lastmodified'] = '最近修改';
+$string['license'] = '证书';
 $string['linkexternal'] = '链接到外部';
 $string['listview'] = '列表查看';
 $string['loading'] = '加载中...';
@@ -154,6 +166,7 @@ $string['manage'] = '管理容器';
 $string['manageurl'] = '管理';
 $string['manageuserrepository'] = '管理个人容器';
 $string['moving'] = '移动中';
+$string['name'] = '名字';
 $string['newfolder'] = '新文件夹';
 $string['newfoldername'] = '新文件夹名：';
 $string['noenter'] = '什么都没输入';
@@ -173,6 +186,7 @@ $string['operation'] = '操作';
 $string['original'] = '原始的';
 $string['overwrite'] = '覆盖';
 $string['overwriteall'] = '全部覆盖';
+$string['path'] = '路径';
 $string['personalrepositories'] = '可用的容器实例';
 $string['plugin'] = '容器插件';
 $string['pluginerror'] = '容器插件有错误。';
@@ -212,6 +226,8 @@ $string['siteinstances'] = '本站的容器实例';
 $string['size'] = '大小';
 $string['submit'] = '提交';
 $string['sync'] = '同步';
+$string['syncfiletimeout'] = '同步文件超时时间';
+$string['syncimagetimeout'] = '同步图片超时时间';
 $string['thumbview'] = '图标查看';
 $string['title'] = '选择一个文件...';
 $string['type'] = '类型';

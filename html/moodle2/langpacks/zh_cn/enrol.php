@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,7 @@ $string['extremovedsuspend'] = '禁用选课';
 $string['extremovedsuspendnoroles'] = '禁用选课并删除角色';
 $string['extremovedunenrol'] = '撤销选课';
 $string['finishenrollingusers'] = '结束';
+$string['foundxcohorts'] = '找到 {$a} 群组';
 $string['invalidenrolinstance'] = '无效的选课实例';
 $string['invalidrole'] = '无效角色';
 $string['manageenrols'] = '管理选课插件';

@@ -18,8 +18,7 @@
 /**
  * This page lists all the instances of lesson in a particular course
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
@@ -39,8 +38,13 @@ if (!$course = $DB->get_record("course", array("id" => $id))) {
 require_login($course);
 $PAGE->set_pagelayout('incourse');
 
-add_to_log($course->id, "lesson", "view all", "index.php?id=$course->id", "");
-
+// Trigger instances list viewed event.
+$params = array(
+    'context' => context_course::instance($course->id)
+);
+$event = \mod_lesson\event\course_module_instance_list_viewed::create($params);
+$event->add_record_snapshot('course', $course);
+$event->trigger();
 
 /// Get all required strings
 

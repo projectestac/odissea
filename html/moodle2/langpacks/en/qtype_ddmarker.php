@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,9 +45,9 @@ $string['dropzoneheader'] = 'Drop zones';
 $string['dropzones'] = 'Drop zones';
 $string['dropzones_help'] = 'The drop zones are defined by typing co-ordinates. As you type, the preview above is immediately updated, so you can position things by trial and error.
 
-* Circle: centre_x, centre_y; radius<br>for example: `80, 100; 50`
-* Polygon: x1, y1; x2, y2; ...; xn, yn<br>for example: `20, 60; 100, 60; 20, 100`
-* Rectangle: left, top, width, height<br>for example: `20, 60; 80, 40`';
+* Circle: centre_x, centre_y; radius<br>for example: <code>80, 100; 50</code>
+* Polygon: x1, y1; x2, y2; ...; xn, yn<br>for example: <code>20, 60; 100, 60; 20, 100</code>
+* Rectangle: left, top, width, height<br>for example: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'The following markers have been placed in the wrong area : {$a}.';
 $string['followingarewrongandhighlighted'] = 'The following markers were incorrectly placed :  {$a}. Highlighted marker(s) are now shown with the correct placement(s).<br /> Click on the marker to highlight the allowed area.';
 $string['formerror_nobgimage'] = 'You need to select an image to use as the background for the drag and drop area.';
@@ -56,6 +56,7 @@ $string['formerror_nosemicolons'] = 'There are no semicolons in your coordinates
 $string['formerror_onlysometagsallowed'] = 'Only "{$a}" tags are allowed in the label for a marker';
 $string['formerror_onlyusewholepositivenumbers'] = 'Please use only whole positive numbers to specify x,y coords and/or width and height of shapes. Your coordinates for a {$a->shape} should be expressed as - {$a->coordsstring}.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'For a polygon shape you need to specify at least 3 points. Your coordinates for a {$a->shape} should be expressed as - {$a->coordsstring}.';
+$string['formerror_repeatedpoint'] = 'You have given the same point twice. Please remove the duplication. Your coordinates for a {$a->shape} should be expressed as - {$a->coordsstring}.';
 $string['formerror_shapeoutsideboundsofbgimage'] = 'The shape you have defined goes out of the bounds of the background image';
 $string['formerror_toomanysemicolons'] = 'There are too many semi colon separated parts to the coordinates you have specified. Your coordinates for a {$a->shape} should be expressed as - {$a->coordsstring}.';
 $string['formerror_unrecognisedwidthheightpart'] = 'We do not recognise the width and height you have specified. Your coordinates for a {$a->shape} should be expressed as - {$a->coordsstring}.';

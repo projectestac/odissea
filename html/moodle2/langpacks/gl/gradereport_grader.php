@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_grader', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,6 @@ $string['ajaxfieldchanged'] = 'O campo que está a editar actualmente cambiou. Q
 $string['grader:manage'] = 'Administrar o informe do cualificador';
 $string['grader:view'] = 'Ver o informe do cualificador';
 $string['pluginname'] = 'Informe do cualificador';
-$string['preferences'] = 'Preferencias de informe do cualificador';
-$string['useractivityfeedback'] = 'Comentario de {$a}';
+$string['preferences'] = 'Preferencias de informe de cualificación';
+$string['useractivityfeedback'] = 'comentario {$a}';
 $string['useractivitygrade'] = 'Cualificación de {$a}';

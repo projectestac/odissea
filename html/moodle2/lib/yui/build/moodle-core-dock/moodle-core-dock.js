@@ -37,22 +37,7 @@ var LOGNS = 'moodle-core-dock',
     BLOCK,
     DOCKEDITEM;
 
-/**
- * Core namespace.
- *
- * @static
- * @namespace M
- * @class core
- */
 M.core = M.core || {};
-
-/**
- * Dock namespace.
- *
- * @static
- * @namespace M.core
- * @class dock
- */
 M.core.dock = M.core.dock || {};
 
 /**
@@ -260,8 +245,8 @@ M.core.dock.notifyBlockChange = function(instanceid) {
  * @namespace M.core.dock
  * @class Dock
  * @constructor
- * @extends Y.Base
- * @uses Y.EventTarget
+ * @extends Base
+ * @uses EventTarget
  */
 DOCK = function() {
     DOCK.superclass.constructor.apply(this, arguments);
@@ -354,12 +339,12 @@ DOCK.prototype = {
          * Fires after the dock has been changed from hidden to visible.
          * @event dock:shown
          */
-        this.publish('dock:shown', {prefix:'dock'});
+        this.publish('dock:shown', {prefix:'dock', broadcast: 2});
         /**
          * Fired after the dock has been changed from visible to hidden.
          * @event dock:hidden
          */
-        this.publish('dock:hidden', {prefix:'dock'});
+        this.publish('dock:hidden', {prefix:'dock', broadcast: 2});
         /**
          * Fires when an item is added to the dock.
          * @event dock:itemadded
@@ -375,7 +360,7 @@ DOCK.prototype = {
          * This happens after the itemadded and itemremoved events have been called.
          * @event dock:itemschanged
          */
-        this.publish('dock:itemschanged', {prefix:'dock'});
+        this.publish('dock:itemschanged', {prefix:'dock', broadcast: 2});
         /**
          * Fires once when the docks panel is first initialised.
          * @event dock:panelgenerated
@@ -1124,8 +1109,8 @@ Y.augment(DOCK, Y.EventTarget);
  * @namespace M.core.dock
  * @class Panel
  * @constructor
- * @extends Y.Base
- * @uses Y.EventTarget
+ * @extends Base
+ * @uses EventTarget
  */
 DOCKPANEL = function() {
     DOCKPANEL.superclass.constructor.apply(this, arguments);
@@ -1360,7 +1345,7 @@ Y.augment(DOCKPANEL, Y.EventTarget);
  * @namespace M.core.dock
  * @class TabHeightManager
  * @constructor
- * @extends Y.Base
+ * @extends Base
  */
 TABHEIGHTMANAGER = function() {
     TABHEIGHTMANAGER.superclass.constructor.apply(this, arguments);
@@ -1598,7 +1583,7 @@ Y.Event.define("dock:actionkey", {
  * @namespace M.core.dock
  * @class Block
  * @constructor
- * @extends Y.Base
+ * @extends Base
  */
 BLOCK = function() {
     BLOCK.superclass.constructor.apply(this, arguments);
@@ -1851,8 +1836,8 @@ Y.extend(BLOCK, Y.Base, BLOCK.prototype, {
  * @namespace M.core.dock
  * @class DockedItem
  * @constructor
- * @extends Y.Base
- * @uses Y.EventTarget
+ * @extends Base
+ * @uses EventTarget
  */
 DOCKEDITEM = function() {
     DOCKEDITEM.superclass.constructor.apply(this, arguments);
@@ -1970,6 +1955,9 @@ DOCKEDITEM.prototype = {
         this.fire('dockeditem:showstart');
         panel.setHeader(this.get('titlestring'), this.get('commands'));
         panel.setBody(Y.Node.create('<div class="block_'+this.get('blockclass')+' block_docked"></div>').append(this.get('contents')));
+        if (M.core.actionmenu !== undefined) {
+            M.core.actionmenu.newDOMNode(panel.get('node'));
+        }
         panel.show();
         panel.correctWidth();
 

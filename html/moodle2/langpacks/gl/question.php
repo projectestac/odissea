@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['cannotretrieveqcat'] = 'Non foi posíbel recuperar a categoría da preg
 $string['cannotunhidequestion'] = 'Produciuse un fallo ao volver amosar a pregunta.';
 $string['cannotunzip'] = 'Non foi posíbel descomprimir o ficheiro.';
 $string['cannotwriteto'] = 'Non é posíbel escribir as preguntas exportadas a {$a}';
+$string['categories'] = 'Categorías';
 $string['category'] = 'Categoría';
 $string['categorycurrent'] = 'Categoría actual';
 $string['categorycurrentuse'] = 'Usar esta categoría';
@@ -90,7 +91,7 @@ $string['closepreview'] = 'Pechar a previsualización';
 $string['combinedfeedback'] = 'Comentario combinado';
 $string['comment'] = 'Comentario';
 $string['commented'] = 'Comentado: {$a}';
-$string['commentormark'] = 'Facer comentario ou cambiar a puntuación';
+$string['commentormark'] = 'Facer comentario ou substituír marca';
 $string['comments'] = 'Comentarios';
 $string['commentx'] = 'Comentar: {$a}';
 $string['complete'] = 'Completa';
@@ -169,6 +170,7 @@ $string['errorprocessingresponses'] = 'Produciuse un erro ao procesar as súas r
 $string['errorsavingcomment'] = 'Produciuse un erro ao gardar o comentario da pregunta {$a->name} na base de datos.';
 $string['errorsavingflags'] = 'Produciuse un erro ao gardar o indicador de estado';
 $string['errorupdatingattempt'] = 'Produciuse un erro ao actualizar o intento {$a->id} na base de datos.';
+$string['export'] = 'Exportar';
 $string['exportcategory'] = 'Exportar categoría';
 $string['exportcategory_help'] = 'Este axuste determina a categoría da que se tomarán as preguntas para exportar.
 
@@ -207,6 +209,7 @@ Alternativamente, pode querer que os alumnos entreguen cada pregunta así como v
 
 Eses son probabelmente os dous modos máis comúns de comportamento usados.';
 $string['ignorebroken'] = 'Ignorar ligazóns rotas';
+$string['import'] = 'Importar';
 $string['importcategory'] = 'Importar categoría';
 $string['importcategory_help'] = 'Este axuste determina a categoría dentro da cal se poñerán as preguntas importadas.
 
@@ -400,6 +403,7 @@ $string['unknownquestioncatregory'] = 'Categoría de pregunta descoñecida: {$a}
 $string['unknownquestiontype'] = 'Tipo de pregunta descoñecida: {$a}.';
 $string['unknowntolerance'] = 'Tipo de tolerancia descoñecida {$a}';
 $string['unpublished'] = 'descompartido';
+$string['unusedcategorydeleted'] = 'Esta categoría eliminouse porque, despois de eliminar o curso, as súas preguntas non se usaron máis.';
 $string['upgradeproblemcategoryloop'] = 'Detectouse un problema ao actualizar as categorías de preguntas. Hai un bucle na árbore de categorías. Os id das categoría afectadas son {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Non foi posíbel actualizar a categoría da pregunta {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Detectouse un problema ao anovar as categorías de preguntas. A categoría {$a->id} refírese ao pai {$a->parent}, que non existe. Cambiouse o pai para arranxar este problema.';

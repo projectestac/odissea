@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Afegeix una altra pista';
 $string['addcategory'] = 'Afegeix una categoria';
 $string['addmorechoiceblanks'] = 'Blancs per a {no} preguntes més';
 $string['adminreport'] = 'Informe sobre possibles problemes en la vostra base de dades de preguntes';
+$string['advancedsearchoptions'] = 'Opcions de cerca';
+$string['alltries'] = 'Tots els intents';
 $string['answer'] = 'Resposta';
 $string['answers'] = 'Respostes';
 $string['answersaved'] = 'Resposta desada';
@@ -72,6 +74,7 @@ $string['cannotretrieveqcat'] = 'No s\'ha pogut recuperar la categoria de la pre
 $string['cannotunhidequestion'] = 'No s\'ha pogut mostrar la pregunta.';
 $string['cannotunzip'] = 'No s\'ha pogut descomprimir el fitxer zip';
 $string['cannotwriteto'] = 'No es poden escriure les preguntes exportades a {$a}';
+$string['categories'] = 'Categories';
 $string['category'] = 'Categoria';
 $string['categorycurrent'] = 'Categoria actual';
 $string['categorycurrentuse'] = 'Utilitza aquesta categoria';
@@ -154,6 +157,7 @@ $string['errorduringregrade'] = 'No es pot requalificar la pregunta {$a->quid}, 
 $string['errorfilecannotbecopied'] = 'Error: no s\'ha pogut copiar el fitxer {$a}';
 $string['errorfilecannotbemoved'] = 'Error: no s\'ha pogut moure el fitxer {$a}';
 $string['errorfileschanged'] = 'Error: alguns fitxers enllaçats en les preguntes han canviat des de la visualització del formulari.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La pregunta ({$a}) apareix diverses vegades amb diferents ponderacions en diferents llocs del qüestionari. L\'informe estadístic no ho permet i podria reduir la  fiabilitat de les estadístiques d\'aquesta pregunta.';
 $string['errormanualgradeoutofrange'] = 'La qualificació {$a->grade} no està entre 0 i {$a->maxgrade} a la pregunta [$a->name}. La puntuació i el comentari no s\'han desat.';
 $string['errormovingquestions'] = 'Error en moure les preguntes amb identificador {$a}.';
 $string['errorpostprocess'] = 'Error durant el postprocessat!';
@@ -163,13 +167,15 @@ $string['errorprocessingresponses'] = 'S\'ha produït un error mentre es process
 $string['errorsavingcomment'] = 'Error en desar el comentari a la pregunta {$a->name} a la base de dades.';
 $string['errorsavingflags'] = 'Error en desar l\'estat de la marca';
 $string['errorupdatingattempt'] = 'Error en actualitzar l\'intent {$a->id} a la base de dades.';
+$string['eventquestioncategorycreated'] = 'Categoria de preguntes creada';
+$string['export'] = 'Exporta';
 $string['exportcategory'] = 'Exporta categoria';
 $string['exportcategory_help'] = '<p>Aquest paràmetre determina la categoria de la qual s\'exportaran les preguntes.</p>
 <p>Alguns formats d\'importació, com ara el GIFT i XML del Moodle, permeten copiar la categoria i el context al fitxer exportat, i això permet (opcionalment) recrear-les en una importació, marcant els quadres de selecció adequats.';
 $string['exporterror'] = 'Errors durant l\'exportació!';
 $string['exportfilename'] = 'preguntes';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
-$string['exportquestions'] = 'Exportació de preguntes a un fitxer';
+$string['exportquestions'] = 'Exporta preguntes a un fitxer';
 $string['exportquestions_help'] = 'Aquesta funció habilita l\'exportació d\'una categoria completa de preguntes (i les seves subcategories) en un fitxer. Tingueu en compte que, en funció del format de fitxer escollit, algunes dades de les preguntes i certs tipus de preguntes possiblement no s\'exportaran.';
 $string['feedback'] = 'Retroacció';
 $string['filecantmovefrom'] = 'Els fitxers de preguntes no es poden desplaçar perquè no teniu prou permisos per eliminar fitxers al lloc on ho intenteu.';
@@ -179,6 +185,7 @@ $string['filesareacourse'] = 'l\'àrea de fitxers del curs';
 $string['filesareasite'] = 'l\'àrea de fitxers del lloc';
 $string['filestomove'] = 'Voleu copiar o moure els fitxers a {$a}?';
 $string['fillincorrect'] = 'Emplena amb les respostes correctes';
+$string['firsttry'] = 'Primer intent';
 $string['flagged'] = 'Marcada';
 $string['flagthisquestion'] = 'Marca aquesta pregunta';
 $string['formquestionnotinids'] = 'El formulari contenia preguntes que no troben els identificadors';
@@ -200,6 +207,7 @@ Alternativament, podeu voler que els estudiants responguin cada pregunta i obtin
 
 Aquests probablement són els dos modes de comportament usats més comunament.';
 $string['ignorebroken'] = 'Ignora enllaços trencats';
+$string['import'] = 'Importa';
 $string['importcategory'] = 'Importació d\'una categoria';
 $string['importcategory_help'] = '<p>Aquest paràmetre determina la categoria cap a on aniran les preguntes importades.</p>
 <p>Alguns formats d\'importació, com ara el GIFT i XML del Moodle poden incloure la categoria i el context en el fitxer d\'importació. Per utilitzar aquesta informació, en lloc de la categoria seleccionada, cal haver marcat els quadres de selecció pertinents. Si les categories al fitxer d\'importació no es troben, se\'n crearan de noves.
@@ -229,6 +237,7 @@ $string['invalidgrade'] = 'Les qualificacions no casen amb les opcions de qualif
 $string['invalidpenalty'] = 'Penalització incorrecta';
 $string['invalidwizardpage'] = 'Incorrecte o pàgina auxiliar no especificada!';
 $string['lastmodifiedby'] = 'Última modificació feta per ';
+$string['lasttry'] = 'Darrer intent';
 $string['linkedfiledoesntexist'] = 'El fitxer enllaçat {$a} no existeix';
 $string['makechildof'] = 'Fes filla de: \'{$a}\'';
 $string['makecopy'] = 'Fes-ne una còpia';
@@ -331,6 +340,7 @@ $string['questioncatsfor'] = 'Categories de preguntes en \'{$a}\'';
 $string['questiondoesnotexist'] = 'Aquesta pregunta no existeix';
 $string['questionidmismatch'] = 'Identificadors de preguntes desajustats';
 $string['questionname'] = 'Nom de la pregunta';
+$string['questionnamecopy'] = '{$a} (còpia)';
 $string['questionno'] = 'Pregunta {$a}';
 $string['questionpreviewdefaults'] = 'Valors per defecte de la previsualització de les preguntes';
 $string['questionpreviewdefaults_desc'] = 'Aquests valors per defecte s\'utilitzen quan un usuari primer visualitza una pregunta al banc de preguntes. Una vegada que un usuari ha previsualitzat una pregunta, les seves preferències personals s\'emmagatzemen com preferències d\'usuari.';
@@ -353,6 +363,7 @@ $string['reviewresponse'] = 'Revisa la resposta';
 $string['rightanswer'] = 'Resposta correcta';
 $string['rightanswer_help'] = 'un resum generat automàticament de la resposta correcta. Això es pot limitar, per la qual cosa potser vulgueu considerar explicar la solució correcta en la retroacció general de la pregunta i desactivar aquesta opció.';
 $string['save'] = 'Desa';
+$string['savechangesandcontinueediting'] = 'Desa el canvis i continua editant';
 $string['saved'] = 'Desada: {$a}';
 $string['saveflags'] = 'Desa l\'estat dels marcadors';
 $string['selectacategory'] = 'Tria una categoria:';
@@ -399,12 +410,14 @@ $string['unknownquestioncatregory'] = 'Categoria de preguntes desconeguda: {$a}.
 $string['unknownquestiontype'] = 'Tipus de pregunta desconegut: {$a}.';
 $string['unknowntolerance'] = 'Tipus de tolerància {$a} desconegut ';
 $string['unpublished'] = 'no pública';
+$string['unusedcategorydeleted'] = 'S\'ha suprimit aquesta categoria perquè, després de suprimir el curs, les seves preguntes ja no eren utilitzades en cap altre curs.';
 $string['updatedisplayoptions'] = 'Actualitza les opcions de visualització';
 $string['upgradeproblemcategoryloop'] = 'S\'ha detectat un problema en actualitzar una categoria de preguntes. Hi ha un salt en l\'arbre de categories. Els identificadors de categories afectats són {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'No es pot actualitzar la categoria de preguntes {$a->name} ({$a->id})';
 $string['upgradeproblemunknowncategory'] = 'S\'ha detectat un problema en actualitzar les categories de preguntes. La categoria {$a->id} es refereix a una categoria mare, {$a->parent},inexistent. Es canvia la categoria mare per arreglar el problema';
 $string['whethercorrect'] = 'Si correcte';
 $string['whethercorrect_help'] = 'Això es refereix tant a la descripció textual \'Correcte\', \'Parcialment correcte\' i \'Incorrecte\', com a qualsevol ressaltat de color que transmet la mateixa informació.';
+$string['whichtries'] = 'Quins intents';
 $string['withselected'] = 'Amb el que s\'ha seleccionat';
 $string['wrongprefix'] = 'Nom de prefix mal format ({$a})';
 $string['xoutofmax'] = '{$a->mark} sobre {$a->max}';

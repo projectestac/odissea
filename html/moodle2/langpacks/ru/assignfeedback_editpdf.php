@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'Создать PDF-файл с отзывом';
 $string['generatingpdf'] = 'Создание PDF ...';
 $string['gotopage'] = 'Перейти на страницу';
 $string['green'] = 'Зеленый';
-$string['gspath'] = 'Путь к Ghostscript';
-$string['gspath_help'] = 'В большинстве установок Linux это можно оставить как «/usr/bin/gs». В Windows это будет что-то вроде «c:gsbingswin32c.exe» (убедитесь, что путь не содержит пробелов - при необходимости скопируйте файлы «gswin32c.exe» и «gsdll32.dll» в новую папку без пробелов в пути)';
+$string['gsimage'] = 'Тестовое изображение Ghostscript';
 $string['highlight'] = 'Выделение';
 $string['jsrequired'] = 'Для аннотирования PDF требуется JavaScript. Включите JavaScript в своем браузере, чтобы использовать эту функцию.';
 $string['launcheditor'] = 'Запуск редактора PDF...';
@@ -66,6 +65,7 @@ $string['output'] = 'Выход:';
 $string['oval'] = 'Овал';
 $string['pagenumber'] = 'Страница  {$a}';
 $string['pagexofy'] = 'Страница {$a->page} из {$a->total}';
+$string['pathtogspathdesc'] = 'Обратите внимание, что для работы плагина «Аннотирование PDF» требуется указать путь в файлам Ghostscript на странице {$a}.';
 $string['pen'] = 'Ручка';
 $string['pluginname'] = 'Аннотирование PDF';
 $string['rectangle'] = 'Прямоугольник';

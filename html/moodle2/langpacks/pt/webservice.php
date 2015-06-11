@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,14 +86,15 @@ $string['errorcoursecontextnotvalid'] = 'Não pode executar funções no context
 $string['errorinvalidparam'] = 'O parâmetro "{$a}" é inválido.';
 $string['errornotemptydefaultparamarray'] = 'O parâmetro de descrição do web service designado por "{$a}" é uma estrutura individual ou múltipla. O valor predefinido tem que ser um array vazio. Consulte a descrição do web service.';
 $string['erroroptionalparamarray'] = 'O parâmetro de descrição do web service designado por "{$a}" é uma estrutura indvidual ou múltipla. Não pode ser definido como VALUE_OPTIONAL. Consulte a descrição do web service.';
-$string['event_webservice_function_called'] = 'Função de web service chamada';
-$string['event_webservice_login_failed'] = 'O login do web service  falhou';
-$string['event_webservice_service_created'] = 'Web service criado';
-$string['event_webservice_service_updated'] = 'Web service atualizado';
-$string['event_webservice_service_user_added'] = 'Utilizador do web service atualizado';
-$string['event_webservice_service_user_removed'] = 'Utilizador do web service removido';
-$string['event_webservice_token_created'] = 'Token do web service criado';
-$string['event_webservice_token_sent'] = 'Token do web service enviado';
+$string['eventwebservicefunctioncalled'] = 'Função de web service chamada';
+$string['eventwebserviceloginfailed'] = 'O login do web service  falhou';
+$string['eventwebserviceservicecreated'] = 'Web service criado';
+$string['eventwebserviceservicedeleted'] = 'Serviço de Web eliminado';
+$string['eventwebserviceserviceupdated'] = 'Web service atualizado';
+$string['eventwebserviceserviceuseradded'] = 'Utilizador do web service atualizado';
+$string['eventwebserviceserviceuserremoved'] = 'Utilizador do web service removido';
+$string['eventwebservicetokencreated'] = 'Token do web service criado';
+$string['eventwebservicetokensent'] = 'Token do web service enviado';
 $string['execute'] = 'Executar';
 $string['executewarnign'] = 'AVISO: Se carregar em "Executar" serão realizadas alterações irreversíveis na base de dados!';
 $string['externalservice'] = 'Serviço externo';
@@ -128,6 +129,7 @@ $string['missingusername'] = 'Não indicou o nome de utilizador';
 $string['missingversionfile'] = 'Erro de codificação: está em falta o ficheiro version.php no componente {$a}';
 $string['mobilewsdisabled'] = 'Desativado';
 $string['mobilewsenabled'] = 'Ativado';
+$string['nameexists'] = 'Este nome já está a ser utilizado por outro serviço';
 $string['nocapabilitytouseparameter'] = 'O utilizador não tem a capacidade necessária para usar o parâmetro {$a}';
 $string['nofunctions'] = 'Não existem funções no serviço';
 $string['norequiredcapability'] = 'Não é necessária nenhuma capacidade';
@@ -178,6 +180,7 @@ $string['serviceusers'] = 'Utilizadores autorizados';
 $string['serviceusersettings'] = 'Configurações de utilizador';
 $string['serviceusersmatching'] = 'Utilizadores autorizados com as seguintes caraterísticas';
 $string['serviceuserssettings'] = 'Mudar as configurações dos utilizadores autorizados';
+$string['shortnametaken'] = 'O nome curto já está a ser usado por outro serviço ({$a})';
 $string['simpleauthlog'] = 'Início de sessão simples';
 $string['step'] = 'Passo';
 $string['supplyinfo'] = 'Mais detalhes';

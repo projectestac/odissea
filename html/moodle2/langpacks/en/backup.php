@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['errorinvalidformat'] = 'Unknown backup format';
 $string['errorinvalidformatinfo'] = 'The selected file is not a valid Moodle backup file and can\'t be restored.';
 $string['errorminbackup20version'] = 'This backup file has been created with one development version of Moodle backup ({$a->backup}). Minimum required is {$a->min}. Cannot be restored.';
 $string['errorrestorefrontpage'] = 'Restoring over front page is not allowed.';
-$string['errortgznozlib'] = 'The selected file is in the new backup format and cannot be restored because the zlib PHP extension is not available on this system.';
 $string['executionsuccess'] = 'The backup file was successfully created.';
 $string['filealiasesrestorefailures'] = 'Aliases restore failures';
 $string['filealiasesrestorefailures_help'] = 'Aliases are symbolic links to other files, including those stored in external repositories. In some cases, Moodle cannot restore them - for example when restoring the backup at another site or when the referenced file does not exist.
@@ -168,6 +167,7 @@ $string['includeditems'] = 'Included items:';
 $string['includefilereferences'] = 'File references to external contents';
 $string['includesection'] = 'Section {$a}';
 $string['includeuserinfo'] = 'User data';
+$string['jumptofinalstep'] = 'Jump to final step';
 $string['locked'] = 'Locked';
 $string['lockedbyconfig'] = 'This setting has been locked by the default backup settings';
 $string['lockedbyhierarchy'] = 'Locked by dependencies';
@@ -259,10 +259,11 @@ $string['skiphiddenhelp'] = 'Choose whether or not to skip hidden courses';
 $string['skipmodifdays'] = 'Skip courses not modified since';
 $string['skipmodifdayshelp'] = 'Choose to skip courses that have not been modified since a number of days';
 $string['skipmodifprev'] = 'Skip courses not modified since previous backup';
-$string['skipmodifprevhelp'] = 'Choose whether or not to skip courses that have not been modified since previous backup';
+$string['skipmodifprevhelp'] = 'Choose whether to skip courses that have not been modified since the last automatic backup. This requires logging to be enabled.';
 $string['storagecourseandexternal'] = 'Course backup filearea and the specified directory';
 $string['storagecourseonly'] = 'Course backup filearea';
 $string['storageexternalonly'] = 'Specified directory for automated backups';
+$string['timetaken'] = 'Time taken';
 $string['title'] = 'Title';
 $string['totalcategorysearchresults'] = 'Total categories: {$a}';
 $string['totalcoursesearchresults'] = 'Total courses: {$a}';

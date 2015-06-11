@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_langimport', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,13 @@ $string['installedlangs'] = 'Geïnstalleerde taalpakketten';
 $string['langimport'] = 'Taalpakkettenbeheer';
 $string['langimportdisabled'] = 'De interface voor het importeren van taalpakketten is uitgeschakeld. Je moet je taalpakketten manueel updaten via het bestandssysteem. Vergeet niet de taalcache leeg te maken nadat je dit gedaan hebt.';
 $string['langpackinstalled'] = 'Taalpakket {$a} is geïnstalleerd';
-$string['langpackremoved'] = 'Taalpakket verwijderd';
-$string['langpackupdateskipped'] = 'De update van taalpakket {$a} is overgeslagen.';
-$string['langpackuptodate'] = 'Taalpakket {$a} is up-to-date';
+$string['langpackinstalledevent'] = 'Taalpakket geïnstalleerd';
+$string['langpackremoved'] = 'Taalpakket \'{$a}\' verwijderd';
+$string['langpackremovedevent'] = 'Taalpakket verwijderd';
+$string['langpackupdated'] = 'Taalpakket \'{$a}\' aangepast';
+$string['langpackupdatedevent'] = 'Taalpakket bijgewerkt';
+$string['langpackupdateskipped'] = 'De update van taalpakket \'{$a}\' is overgeslagen.';
+$string['langpackuptodate'] = 'Taalpakket \'{$a}\' is up-to-date';
 $string['langupdatecomplete'] = 'Taalpakket update voltooid';
 $string['missingcfglangotherroot'] = 'Er ontbreekt een configuratiewaarde $CFG->langotherroot';
 $string['missinglangparent'] = 'Ontbrekende parent language <em>{$a->parent}</em> voor <em>{$a->lang}</em>.';

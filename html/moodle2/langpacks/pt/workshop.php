@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,17 @@ $string['evaluation'] = 'Avaliação dos avaliadores';
 $string['evaluationmethod'] = 'Método de avaliação dos avaliadores';
 $string['evaluationmethod_help'] = 'O método de avaliação determina como a nota de avaliação é calculada. Pode recalcular as notas várias vezes, usando diferentes configurações, até estar satisfeito com o resultado.';
 $string['evaluationsettings'] = 'Definições da classificação de avaliação';
-$string['event_assessable_uploaded'] = 'Foi feito o upload de uma submissão.';
+$string['eventassessableuploaded'] = 'Submissão enviada';
+$string['eventassessmentevaluated'] = 'Fase de Avaliação avaliada';
+$string['eventassessmentevaluationsreset'] = 'Avaliações da Fase de Avaliação  respostas';
+$string['eventassessmentreevaluated'] = 'Fase de Avaliação reavaliada';
+$string['eventphaseswitched'] = 'Fase alterada';
+$string['eventsubmissionassessed'] = 'Submissão avaliada';
+$string['eventsubmissionassessmentsreset'] = 'Avaliações da submissão limpas';
+$string['eventsubmissioncreated'] = 'Submissão criada';
+$string['eventsubmissionreassessed'] = 'Submissão reavaliada';
+$string['eventsubmissionupdated'] = 'Submissão atualizada';
+$string['eventsubmissionviewed'] = 'Submissão visualizada';
 $string['example'] = 'Trabalho exemplo';
 $string['exampleadd'] = 'Adicionar trabalho exemplo';
 $string['exampleassess'] = 'Avaliar trabalho exemplo';
@@ -316,7 +326,6 @@ $string['workshop:viewallassessments'] = 'Ver todas as avaliações';
 $string['workshop:viewallsubmissions'] = 'Ver todos os trabalhos';
 $string['workshop:viewauthornames'] = 'Ver nomes dos autores';
 $string['workshop:viewauthorpublished'] = 'Ver autores dos trabalhos submetidos';
-$string['workshopviewed'] = 'Workshop visualizado';
 $string['workshop:viewpublishedsubmissions'] = 'Ver trabalhos publicados';
 $string['workshop:viewreviewernames'] = 'Ver nomes dos avaliadores';
 $string['yourassessment'] = 'A sua avaliação';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,8 @@ $string['error7023'] = 'Der Remote-Server ist bei dem Versuch gescheitert, Ihre 
 $string['error7024'] = 'Sie haben eine unverschlüsselte Nachricht an den Remote-Server versandt, aber dieser akzeptiert keine unverschlüsselte Kommunikation von Ihrer Site. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
 $string['error7026'] = 'Der Schlüssel, mit dem Ihre Nachricht signiert wurde, unterscheidet sich vom Schlüssel, den der Remote-Server für Ihre Site gespeichert hat. Zusätzlich ist der Remote-Server bei dem Versuch gescheitert, Ihren aktuellen Schlüssel automatisch zu holen. Bitte greifen Sie manuell ein (re-key) und versuchen Sie es noch einmal.';
 $string['error709'] = 'Der Remote-Server ist bei dem Versuch gescheitert, einen SSL-Schlüssel von Ihnen zu beziehen.';
+$string['eventaccesscontrolcreated'] = 'Zugangssteuerung angelegt';
+$string['eventaccesscontrolupdated'] = 'Zugangssteuerung aktualisiert';
 $string['expired'] = 'PublicKey wird ungültig am';
 $string['expires'] = 'Gültig bis';
 $string['expireyourkey'] = 'PublicKey löschen';
@@ -134,7 +136,6 @@ $string['mnetidprovider'] = 'MNet ID Provider';
 $string['mnetidproviderdesc'] = 'Falls Sie die richtige, zum eben eingegebenen Anmeldenamen passende E-Mail-Adresse übermitteln, könnten Sie umgehend einen Link zum Einloggen erhalten.';
 $string['mnetidprovidermsg'] = 'Das Login bei Ihrem Provider {$a} sollte möglich sein.';
 $string['mnetidprovidernotfound'] = 'Weitere Informationen konnten nicht gefunden werden.';
-$string['mnetlog'] = 'Logdaten';
 $string['mnetpeers'] = 'Peers';
 $string['mnetservices'] = 'Dienste';
 $string['mnet_session_prohibited'] = 'Teilnehmer/innen Ihres Moodle-Servers sind aktuell nicht für einen Wechsel auf {$a} zugelassen.';

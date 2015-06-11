@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_installaddon', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,13 +33,13 @@ $string['installaddon'] = 'Instal·la un complement!';
 $string['installaddons'] = 'Instal·la complements!';
 $string['installexception'] = 'Vaja vaja, ha succeït un error quan es provava d\'instal·lar el complement. Activeu el mode depuració per veure els detalls de l\'error.';
 $string['installfromrepo'] = 'Instal·la complements des del directori de connectors de Moodle';
-$string['installfromrepo_help'] = 'Sereu redirigits al directori de connectors de Moodle per cercar i instal·lar un complement. Fixeu-vos que s\'enviarà el nom complet del vostre lloc, l\'URL i la versió de Moodle per facilitar-vos la instal·lació.';
+$string['installfromrepo_help'] = 'Sereu redirigits al directori de connectors de Moodle per cercar i instal·lar un complement. Fixeu-vos que s\'enviarà el nom complet del vostre lloc, la URL i la versió de Moodle per facilitar-vos la instal·lació.';
 $string['installfromzip'] = 'Instal·la un complement des d\'un fitxer ZIP';
 $string['installfromzipfile'] = 'Paquet ZIP';
 $string['installfromzipfile_help'] = 'El paquet ZIP del connector ha de contindre un directori anomenat amb el nom del connector. El fitxer ZIP s\'extraurà en la localització adequada per al tipus de connector. Si el paquet ha sigut baixat des del directori de connectors de Moodle tindrà aquesta estructura.';
 $string['installfromzip_help'] = 'Una alternativa per instal·lar complements directament des del directori de complements de Moodle és carregar un paquet ZIP del complement. L\'estructura ZIP ha de tindre la mateixa estructura que el paquet baixat des del directori de connectors de Moodle.';
 $string['installfromziprootdir'] = 'Canvia el nom del directori arrel';
-$string['installfromziprootdir_help'] = 'Alguns paquets ZIP, com els generats per GitHub poden contindre un nom incorrecte per al directori arrel. Si passa això podreu entrar el nom correcte aquí.';
+$string['installfromziprootdir_help'] = 'Alguns paquets ZIP, com els generats per GitHub, poden contenir un nom incorrecte per al directori arrel. Si és així, podeu introduir-ne el nom correcte aquí.';
 $string['installfromzipsubmit'] = 'Instal·la un complement des d\'un fitxer ZIP';
 $string['installfromziptype'] = 'Tipus de connector';
 $string['installfromziptype_help'] = 'Escolliu el tipus correcte de connector que aneu a instal·lar. Avís: El procediment d\'instal·lació pot anar molt malament si especifiqueu un tipus incorrecte de connector.';
@@ -65,7 +65,7 @@ $string['validationmsg_filenotexists'] = 'No s\'ha trobat el fitxer extret';
 $string['validationmsg_filesnumber'] = 'No s\'han trobat suficients fitxers en el paquet';
 $string['validationmsg_filestatus'] = 'No es poden extraure tots els fitxers';
 $string['validationmsg_filestatus_info'] = 'S\'estava intentant extraure el fitxer {$a->file} i ha succeït un error «{$a->status}».';
-$string['validationmsg_foundlangfile'] = 'S\'ha trobat un fitxer d\'idioma';
+$string['validationmsg_foundlangfile'] = 'S\'ha trobat el fitxer d\'idioma';
 $string['validationmsglevel_debug'] = 'Depuració';
 $string['validationmsglevel_error'] = 'Error';
 $string['validationmsglevel_info'] = 'D\'acord';
@@ -83,15 +83,20 @@ $string['validationmsg_onedir'] = 'Estructura invàlida al paquet ZIP';
 $string['validationmsg_onedir_help'] = 'El paquet ZIP ha de contindre un directori arrel que conté el codi del complement. El nom del directori arrel ha de tindre el mateix nom que el connector.';
 $string['validationmsg_pathwritable'] = 'Comprovació del permís d\'escriptura.';
 $string['validationmsg_pluginversion'] = 'Versió del complement.';
+$string['validationmsg_release'] = 'Versió del connector';
 $string['validationmsg_requiresmoodle'] = 'Versió de Moodle requerida';
-$string['validationmsg_rootdir'] = 'Nom del complement que s\'instal·larà';
-$string['validationmsg_rootdirinvalid'] = 'El nom del complement no és vàlid';
-$string['validationmsg_targetexists'] = 'La ubicació de destinació ja existeix';
+$string['validationmsg_rootdir'] = 'Nom del plugin que s\'instal·larà';
+$string['validationmsg_rootdir_help'] = 'El nom del directori arrel al paquet ZIP forma el nom del complement a instal·lar. Si el nom no és correcte, hauríeu de canviar el nom del directori arrel al ZIP abans d\'instal·lar el complement.';
+$string['validationmsg_rootdirinvalid'] = 'Nom de plugin no vàlid';
+$string['validationmsg_rootdirinvalid_help'] = 'El nom del directori arrel en el paquet ZIP viola els requeriments formals de sintaxi. Alguns paquets ZIP, com els generats per Github, poden contenir un nom de directori arrel incorrecte. Heu de corregir el nom del directori arrel per a fer-lo coincidir amb el nom del connector.';
+$string['validationmsg_targetexists'] = 'La ubicació objectiu ja existeix';
+$string['validationmsg_targetexists_help'] = 'El directori en el qual s\'instal·la el connector no ha d\'existir encara.';
 $string['validationmsg_unknowntype'] = 'Tipus de plugin desconegut';
 $string['validationresult0'] = 'La validació ha fallat!';
-$string['validationresult0_help'] = 'S\'ha detectat un error greu i, per tant, no és segur instal·lar el complement. Per a més detalls, vegeu els missatges de registre de validació.';
+$string['validationresult0_help'] = 'S\'ha detectat un problema greu i no és segur instal·lar el connector. Per a més detalls vegeu els missatges del registre de validació.';
 $string['validationresult1'] = 'S\'ha superat la validació.';
-$string['validationresult1_help'] = 'S\'ha validat el paquet de complement i no s\'han detectat problemes greus.';
+$string['validationresult1_help'] = 'S\'ha validat el paquet del connector i no s\'han detectat problemes greus.';
+$string['validationresult2_help'] = 'No s\'han detectat problemes greus. Podeu continuar amb la instal·lació del connector. Per a més detalls i possibles avisos mireu els missatges del registre de validació.';
 $string['validationresultinfo'] = 'Informació';
 $string['validationresultmsg'] = 'Missatge';
 $string['validationresultstatus'] = 'Estat';

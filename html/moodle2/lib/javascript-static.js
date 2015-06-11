@@ -223,10 +223,16 @@ M.util.set_user_preference = function(name, value) {
 
 /**
  * Prints a confirmation dialog in the style of DOM.confirm().
- * @param object event A YUI DOM event or null if launched manually
- * @param string message The message to show in the dialog
- * @param string url The URL to forward to if YES is clicked. Disabled if fn is given
- * @param function fn A JS function to run if YES is clicked.
+ *
+ * @method show_confirm_dialog
+ * @param {EventFacade} e
+ * @param {Object} args
+ * @param {String} args.message The question to ask the user
+ * @param {Function} [args.callback] A callback to apply on confirmation.
+ * @param {Object} [args.scope] The scope to use when calling the callback.
+ * @param {Object} [args.callbackargs] Any arguments to pass to the callback.
+ * @param {String} [args.cancellabel] The label to use on the cancel button.
+ * @param {String} [args.continuelabel] The label to use on the continue button.
  */
 M.util.show_confirm_dialog = function(e, args) {
     var target = e.target;
@@ -234,47 +240,35 @@ M.util.show_confirm_dialog = function(e, args) {
         e.preventDefault();
     }
 
-    YUI().use('yui2-container', 'yui2-event', function(Y) {
-        var simpledialog = new Y.YUI2.widget.SimpleDialog('confirmdialog',
-            {width: '300px',
-              fixedcenter: true,
-              modal: true,
-              visible: false,
-              draggable: false
-            }
-        );
+    YUI().use('moodle-core-notification-confirm', function(Y) {
+        var confirmationDialogue = new M.core.confirm({
+            width: '300px',
+            center: true,
+            modal: true,
+            visible: false,
+            draggable: false,
+            title: M.util.get_string('confirmation', 'admin'),
+            noLabel: M.util.get_string('cancel', 'moodle'),
+            question: args.message
+        });
 
-        simpledialog.setHeader(M.str.admin.confirmation);
-        simpledialog.setBody(args.message);
-        simpledialog.cfg.setProperty('icon', Y.YUI2.widget.SimpleDialog.ICON_WARN);
-
-        var handle_cancel = function() {
-            simpledialog.hide();
-        };
-
-        var handle_yes = function() {
-            simpledialog.hide();
-
+        // The dialogue was submitted with a positive value indication.
+        confirmationDialogue.on('complete-yes', function(e) {
+            // Handle any callbacks.
             if (args.callback) {
-                // args comes from PHP, so callback will be a string, needs to be evaluated by JS
-                var callback = null;
-                if (Y.Lang.isFunction(args.callback)) {
-                    callback = args.callback;
-                } else {
-                    callback = eval('('+args.callback+')');
+                if (!Y.Lang.isFunction(args.callback)) {
+                    Y.log('Callbacks to show_confirm_dialog must now be functions. Please update your code to pass in a function instead.',
+                            'warn', 'M.util.show_confirm_dialog');
+                    return;
                 }
 
+                var scope = e.target;
                 if (Y.Lang.isObject(args.scope)) {
-                    var sc = args.scope;
-                } else {
-                    var sc = e.target;
+                    scope = args.scope;
                 }
 
-                if (args.callbackargs) {
-                    callback.apply(sc, args.callbackargs);
-                } else {
-                    callback.apply(sc);
-                }
+                var callbackargs = args.callbackargs || [];
+                args.callback.apply(scope, callbackargs);
                 return;
             }
 
@@ -288,9 +282,7 @@ M.util.show_confirm_dialog = function(e, args) {
                 window.location = targetancestor.get('href');
 
             } else if (target.test('input')) {
-                targetform = target.ancestor(function(node) { return node.get('tagName').toLowerCase() == 'form'; });
-                // We cannot use target.ancestor('form') on the previous line
-                // because of http://yuilibrary.com/projects/yui3/ticket/2531561
+                targetform = target.ancestor('form', true);
                 if (!targetform) {
                     return;
                 }
@@ -300,32 +292,26 @@ M.util.show_confirm_dialog = function(e, args) {
                 }
                 targetform.submit();
 
-            } else if (target.get('tagName').toLowerCase() == 'form') {
-                // We cannot use target.test('form') on the previous line because of
-                // http://yuilibrary.com/projects/yui3/ticket/2531561
+            } else if (target.test('form')) {
                 target.submit();
 
-            } else if (M.cfg.developerdebug) {
-                alert("Element of type " + target.get('tagName') + " is not supported by the M.util.show_confirm_dialog function. Use A, INPUT, or FORM");
+            } else {
+                Y.log("Element of type " + target.get('tagName') +
+                        " is not supported by the M.util.show_confirm_dialog function. Use A, INPUT, or FORM",
+                        'warn', 'javascript-static');
             }
-        };
+        }, this);
 
-        if (!args.cancellabel) {
-            args.cancellabel = M.str.moodle.cancel;
-        }
-        if (!args.continuelabel) {
-            args.continuelabel = M.str.moodle.yes;
+        if (args.cancellabel) {
+            confirmationDialogue.set('noLabel', args.cancellabel);
         }
 
-        var buttons = [
-            {text: args.cancellabel,   handler: handle_cancel, isDefault: true},
-            {text: args.continuelabel, handler: handle_yes}
-        ];
+        if (args.continuelabel) {
+            confirmationDialogue.set('yesLabel', args.continuelabel);
+        }
 
-        simpledialog.cfg.queueProperty('buttons', buttons);
-
-        simpledialog.render(document.body);
-        simpledialog.show();
+        confirmationDialogue.render()
+                .show();
     });
 };
 
@@ -369,7 +355,7 @@ M.util.init_maximised_embed = function(Y, id) {
 
         var headerheight = get_htmlelement_size('page-header', 'height');
         var footerheight = get_htmlelement_size('page-footer', 'height');
-        var newheight = parseInt(Y.one('body').get('winHeight')) - footerheight - headerheight - 100;
+        var newheight = parseInt(Y.one('body').get('docHeight')) - footerheight - headerheight - 100;
         if (newheight < 400) {
             newheight = 400;
         }
@@ -381,105 +367,6 @@ M.util.init_maximised_embed = function(Y, id) {
     window.onresize = function() {
         resize_object();
     };
-};
-
-/**
- * Attach handler to single_select
- *
- * This code was deprecated in Moodle 2.4 and will be removed in Moodle 2.6
- *
- * Please see lib/yui/formautosubmit/formautosubmit.js for its replacement
- */
-M.util.init_select_autosubmit = function(Y, formid, selectid, nothing) {
-    if (M.cfg.developerdebug) {
-        Y.log("You are using a deprecated function call (M.util.init_select_autosubmit). Please look at rewriting your call to use moodle-core-formautosubmit");
-    }
-    Y.use('event-key', function() {
-        var select = Y.one('#'+selectid);
-        if (select) {
-            // Try to get the form by id
-            var form = Y.one('#'+formid) || (function(){
-                // Hmmm the form's id may have been overriden by an internal input
-                // with the name id which will KILL IE.
-                // We need to manually iterate at this point because if the case
-                // above is true YUI's ancestor method will also kill IE!
-                var form = select;
-                while (form && form.get('nodeName').toUpperCase() !== 'FORM') {
-                    form = form.ancestor();
-                }
-                return form;
-            })();
-            // Make sure we have the form
-            if (form) {
-                var buttonflag = 0;
-                // Create a function to handle our change event
-                var processchange = function(e, paramobject) {
-                    if ((nothing===false || select.get('value') != nothing) && paramobject.lastindex != select.get('selectedIndex')) {
-                        // chrome doesn't pick up on a click when selecting an element in a select menu, so we use
-                        // the on change event to fire this function. This just checks to see if a button was
-                        // first pressed before redirecting to the appropriate page.
-                        if (Y.UA.os == 'windows' && Y.UA.chrome){
-                            if (buttonflag == 1) {
-                                buttonflag = 0;
-                                this.submit();
-                            }
-                        } else {
-                            this.submit();
-                        }
-                    }
-                    if (e.button == 1) {
-                        buttonflag = 1;
-                    }
-                    paramobject.lastindex = select.get('selectedIndex');
-                };
-
-                var changedown = function(e, paramobject) {
-                    if ((nothing===false || select.get('value') != nothing) && paramobject.lastindex != select.get('selectedIndex')) {
-                        if(e.keyCode == 13) {
-                            form.submit();
-                        }
-                        paramobject.lastindex = select.get('selectedIndex');
-                    }
-                }
-
-                var paramobject = new Object();
-                paramobject.lastindex = select.get('selectedIndex');
-                paramobject.eventchangeorblur = select.on('click', processchange, form, paramobject);
-                // Bad hack to circumvent problems with different browsers on different systems.
-                if (Y.UA.os == 'macintosh') {
-                    if(Y.UA.webkit) {
-                        paramobject.eventchangeorblur = select.on('change', processchange, form, paramobject);
-                    }
-                    paramobject.eventkeypress = Y.on('key', processchange, select, 'press:13', form, paramobject);
-                } else {
-                    if(Y.UA.os == 'windows' && Y.UA.chrome) {
-                        paramobject.eventchangeorblur = select.on('change', processchange, form, paramobject);
-                    }
-                    paramobject.eventkeypress = Y.on('keydown', changedown, select, '', form, paramobject);
-                }
-            }
-        }
-    });
-};
-
-/**
- * Attach handler to url_select
- * Deprecated from 2.4 onwards.
- * Please use @see init_select_autosubmit() for redirecting to a url (above).
- * This function has accessability issues and also does not use the formid passed through as a parameter.
- */
-M.util.init_url_select = function(Y, formid, selectid, nothing) {
-    if (M.cfg.developerdebug) {
-        Y.log("You are using a deprecated function call (M.util.init_url_select). Please look at rewriting your call to use moodle-core-formautosubmit");
-    }
-    YUI().use('node', function(Y) {
-        Y.on('change', function() {
-            if ((nothing == false && Y.Lang.isBoolean(nothing)) || Y.one('#'+selectid).get('value') != nothing) {
-                window.location = M.cfg.wwwroot+Y.one('#'+selectid).get('value');
-            }
-        },
-        '#'+selectid);
-    });
 };
 
 /**
@@ -829,34 +716,25 @@ M.util.js_pending = function(uniqid) {
     return M.util.pending_js.length;
 };
 
+// Start this asap.
+M.util.js_pending('init');
+
 /**
  * Register listeners for Y.io start/end so we can wait for them in behat.
  */
-M.util.js_watch_io = function() {
-    YUI.add('moodle-core-io', function(Y) {
-        Y.on('io:start', function(id) {
-            M.util.js_pending('io:' + id);
-        });
-        Y.on('io:end', function(id) {
-            M.util.js_complete('io:' + id);
-        });
+YUI.add('moodle-core-io', function(Y) {
+    Y.on('io:start', function(id) {
+        M.util.js_pending('io:' + id);
     });
-    YUI.applyConfig({
-        modules: {
-            'moodle-core-io': {
-                after: ['io-base']
-            },
-            'io-base': {
-                requires: ['moodle-core-io']
-            }
-        }
+    Y.on('io:end', function(id) {
+        M.util.js_complete('io:' + id);
     });
-
-};
-
-// Start this asap.
-M.util.js_pending('init');
-M.util.js_watch_io();
+}, '@VERSION@', {
+    condition: {
+        trigger: 'io-base',
+        when: 'after'
+    }
+});
 
 /**
  * Unregister any long running javascript code by unique identifier.
@@ -1152,8 +1030,14 @@ function findParentNode(el, elName, elClass, elId) {
     specified tag name, class, and id. All conditions must be met,
     but any can be ommitted.
     Doesn't examine children of matches.
+
+    @deprecated since Moodle 2.7 - please do not use this function any more.
+    @todo MDL-43242 This will be deleted in Moodle 2.9.
+    @see Y.all
 */
 function findChildNodes(start, tagName, elementClass, elementID, elementName) {
+    Y.log("findChildNodes() is deprecated. Please use Y.all instead.",
+            "warn", "javascript-static.js");
     var children = new Array();
     for (var i = 0; i < start.childNodes.length; i++) {
         var classfound = false;
@@ -1303,8 +1187,11 @@ function insertAtCursor(myField, myValue) {
         Call instead of setting window.onload directly or setting body onload=.
         Adds your function to a chain of functions rather than overwriting anything
         that exists.
+        @deprecated Since Moodle 2.7. This will be removed in Moodle 2.9.
 */
 function addonload(fn) {
+    Y.log('addonload has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
+            'warn', 'javascript-static.js');
     var oldhandler=window.onload;
     window.onload=function() {
         if(oldhandler) oldhandler();
@@ -1325,8 +1212,11 @@ function addonload(fn) {
  *                    document, use `document`.
  * @param {String} strTagName filter by tag names
  * @param {String} name same as HTML5 spec
+ * @deprecated Since Moodle 2.7. This will be removed in Moodle 2.9.
  */
 function getElementsByClassName(oElm, strTagName, name) {
+    Y.log('getElementsByClassName has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
+            'warn', 'javascript-static.js');
     // for backwards compatibility
     if(typeof name == "object") {
         var names = new Array();
@@ -1498,19 +1388,24 @@ function close_window(e) {
 
 /**
  * Used in a couple of modules to hide navigation areas when using AJAX
+ * @deprecated since Moodle 2.7. This function will be removed in Moodle 2.9.
  */
-
 function show_item(itemid) {
-    var item = document.getElementById(itemid);
+    Y.log('show_item has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
+            'warn', 'javascript-static.js');
+    var item = Y.one('#' + itemid);
     if (item) {
-        item.style.display = "";
+        item.show();
     }
 }
 
+// Deprecated since Moodle 2.7. This function will be removed in Moodle 2.9.
 function destroy_item(itemid) {
-    var item = document.getElementById(itemid);
+    Y.log('destroy_item has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
+            'warn', 'javascript-static.js');
+    var item = Y.one('#' + itemid);
     if (item) {
-        item.parentNode.removeChild(item);
+        item.remove(true);
     }
 }
 /**
@@ -1567,35 +1462,32 @@ function stripHTML(str) {
     return ret;
 }
 
-Number.prototype.fixed=function(n){
-    with(Math)
-        return round(Number(this)*pow(10,n))/pow(10,n);
-};
-function update_progress_bar (id, width, pt, msg, es){
-    var percent = pt;
-    var status = document.getElementById("status_"+id);
-    var percent_indicator = document.getElementById("pt_"+id);
-    var progress_bar = document.getElementById("progress_"+id);
-    var time_es = document.getElementById("time_"+id);
-    status.innerHTML = msg;
-    percent_indicator.innerHTML = percent.fixed(2) + '%';
-    if(percent == 100) {
-        progress_bar.style.background = "green";
-        time_es.style.display = "none";
-    } else {
-        progress_bar.style.background = "#FFCC66";
-        if (es == '?'){
-            time_es.innerHTML = "";
-        }else {
-            time_es.innerHTML = es.fixed(2)+" sec";
-            time_es.style.display
-                = "block";
-        }
+function updateProgressBar(id, percent, msg, estimate) {
+    var progressIndicator = Y.one('#' + id);
+    if (!progressIndicator) {
+        return;
     }
-    progress_bar.style.width = width + "px";
 
+    var progressBar = progressIndicator.one('.bar'),
+        statusIndicator = progressIndicator.one('h2'),
+        estimateIndicator = progressIndicator.one('p');
+
+    statusIndicator.set('innerHTML', Y.Escape.html(msg));
+    progressBar.set('innerHTML', Y.Escape.html('' + percent + '%'));
+    if (percent === 100) {
+        progressIndicator.addClass('progress-success');
+        estimateIndicator.set('innerHTML', null);
+    } else {
+        if (estimate) {
+            estimateIndicator.set('innerHTML', Y.Escape.html(estimate));
+        } else {
+            estimateIndicator.set('innerHTML', null);
+        }
+        progressIndicator.removeClass('progress-success');
+    }
+    progressBar.setAttribute('aria-valuenow', percent);
+    progressBar.setStyle('width', percent + '%');
 }
-
 
 // ===== Deprecated core Javascript functions for Moodle ====
 //       DO NOT USE!!!!!!!
@@ -1603,12 +1495,14 @@ function update_progress_bar (id, width, pt, msg, es){
 
 /**
  * Used in a couple of modules to hide navigation areas when using AJAX
+ * @deprecated since Moodle 2.7. This function will be removed in Moodle 2.9.
  */
 function hide_item(itemid) {
-    // use class='hiddenifjs' instead
-    var item = document.getElementById(itemid);
+    Y.log('hide_item has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
+            'warn', 'javascript-static.js');
+    var item = Y.one('#' + itemid);
     if (item) {
-        item.style.display = "none";
+        item.hide();
     }
 }
 
@@ -1647,30 +1541,6 @@ M.util.help_popups = {
         openpopup(e, args);
     }
 }
-
-/**
- * This code bas been deprecated and will be removed from Moodle 2.7
- *
- * Please see lib/yui/popuphelp/popuphelp.js for its replacement
- */
-M.util.help_icon = {
-    initialised : false,
-    setup : function(Y, properties) {
-        this.add(Y, properties);
-    },
-    add : function(Y) {
-        if (M.cfg.developerdebug) {
-            Y.log("You are using a deprecated function call (M.util.help_icon.add). " +
-                    "Please look at rewriting your call to support lib/yui/popuphelp/popuphelp.js");
-        }
-        if (!this.initialised) {
-            YUI().use('moodle-core-popuphelp', function() {
-                M.core.init_popuphelp([]);
-            });
-        }
-        this.initialised = true;
-    }
-};
 
 /**
  * Custom menu namespace

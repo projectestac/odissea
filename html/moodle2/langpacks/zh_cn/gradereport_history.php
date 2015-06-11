@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_history', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['history:manage'] = '管理过往成绩';
+$string['eventgradereportviewed'] = '已查看过往成绩报告';
 $string['history:view'] = '查看过往成绩';
 $string['pluginname'] = '过往成绩';
 $string['preferences'] = '过往成绩偏好设置';

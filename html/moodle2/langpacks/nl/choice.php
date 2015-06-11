@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Voeg meer keuzes toe';
+$string['allowmultiple'] = 'Meer dan één keuze toestaan';
 $string['allowupdate'] = 'Laat toe de keuze aan te passen';
 $string['answered'] = 'Beantwoord';
 $string['atleastoneoption'] = 'Je moet minstens één mogelijk antwoord geven';
+$string['cannotsubmit'] = 'Er was een probleem bij het insturen van je keuze. Probeer opnieuw';
 $string['choice'] = 'Keuze {$a}';
 $string['choice:addinstance'] = 'Voeg een nieuwe keuze toe';
 $string['choice:choose'] = 'Bewaar een keuze';
@@ -51,11 +53,9 @@ $string['description'] = 'Inleidende tekst';
 $string['displayhorizontal'] = 'Toon horizontaal';
 $string['displaymode'] = 'Toonmodus voor de opties';
 $string['displayvertical'] = 'Toon verticaal';
-$string['event_answer_created'] = 'Keuze gemaakt';
-$string['event_answer_updated'] = 'Keuze aangepast';
-$string['event_choice_viewed'] = 'Keuze bekeken';
-$string['event_instances_list_viewed'] = 'Instantielijst bekeken';
-$string['event_report_viewed'] = 'Keuzerapport bekeken';
+$string['eventanswercreated'] = 'Keuze gemaakt';
+$string['eventanswerupdated'] = 'Keuze aangepast';
+$string['eventreportviewed'] = 'Keuzerapport bekeken';
 $string['expired'] = 'Sorry, deze activiteit is afgesloten op {$a} en is niet meer beschikbaar';
 $string['full'] = '(volledig)';
 $string['havetologin'] = 'Je moet aangemeld zijn voor je je keuze kunt insturen';
@@ -79,14 +79,15 @@ Een keuze kan gebruikt worden
 * om beslissingen door leerlingen mogelijk te maken, bijvoorbeeld door leerlingen te laten stemmen over de richting waarin de cursus zal evolueren;';
 $string['modulenameplural'] = 'Keuzes';
 $string['moveselectedusersto'] = 'Verplaats geselecteerde gebruikers naar...';
+$string['multiplenotallowederror'] = 'Meerdere antwoorden zijn niet toegestaan in deze keuze';
 $string['mustchooseone'] = 'Je moet een antwoord kiezen voor je kunt bewaren. Er is niets bewaard.';
 $string['noguestchoose'] = 'Sorry, gasten mogen geen keuze ingeven.';
 $string['noresultsviewable'] = 'De resultaten zijn nu niet zichtbaar.';
 $string['notanswered'] = 'Nog niet beantwoord';
 $string['notenrolledchoose'] = 'Enkel aangemelde gebruikers mogen hun keuze invullen';
 $string['notopenyet'] = 'Deze activiteit is niet beschikbaar tot {$a}';
-$string['numberofuser'] = 'Het aantal gebruikers';
-$string['numberofuserinpercentage'] = 'Het aantal gebruikers als percentage';
+$string['numberofuser'] = 'Aantal deelnemers';
+$string['numberofuserinpercentage'] = 'Percentage deelnemers';
 $string['option'] = 'Optie';
 $string['optionno'] = 'Optie {no}';
 $string['options'] = 'Opties';
@@ -114,7 +115,7 @@ $string['spaceleft'] = 'plaats beschikbaar';
 $string['spacesleft'] = 'plaatsen beschikbaar';
 $string['taken'] = 'Ingenomen';
 $string['timerestrict'] = 'Beperk het beantwoorden tot deze periode';
-$string['userchoosethisoption'] = 'Gebruiker koos deze optie';
+$string['userchoosethisoption'] = 'Gebruikers due deze optie kozen';
 $string['viewallresponses'] = 'Bekijk {$a} antwoorden';
 $string['withselected'] = 'Met geselecteerde';
 $string['yourselection'] = 'Jouw selectie';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * assignsubmission_onlinetext assessable uploaded event.
+ * The assignsubmission_onlinetext assessable uploaded event.
  *
  * @package    assignsubmission_onlinetext
  * @copyright  2013 Frédéric Massart
@@ -27,7 +27,13 @@ namespace assignsubmission_onlinetext\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * assignsubmission_onlinetext assessable uploaded event class.
+ * The assignsubmission_onlinetext assessable uploaded event class.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string format: (optional) content format.
+ * }
  *
  * @package    assignsubmission_onlinetext
  * @since      Moodle 2.6
@@ -42,7 +48,8 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
      * @return string
      */
     public function get_description() {
-        return "User {$this->userid} has saved an online text in submission {$this->objectid}.";
+        return "The user with id '$this->userid' has saved an online text submission with id '$this->objectid' " .
+            "in the assignment activity with course module id '$this->contextinstanceid'.";
     }
 
     /**
@@ -53,7 +60,7 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
     protected function get_legacy_eventdata() {
         $eventdata = new \stdClass();
         $eventdata->modulename = 'assign';
-        $eventdata->cmid = $this->context->instanceid;
+        $eventdata->cmid = $this->contextinstanceid;
         $eventdata->itemid = $this->objectid;
         $eventdata->courseid = $this->courseid;
         $eventdata->userid = $this->userid;
@@ -79,7 +86,7 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
      * @return string
      */
     public static function get_name() {
-        return get_string('event_assessable_uploaded', 'assignsubmission_onlinetext');
+        return get_string('eventassessableuploaded', 'assignsubmission_onlinetext');
     }
 
     /**
@@ -88,7 +95,7 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
      * @return \moodle_url
      */
     public function get_url() {
-        return new \moodle_url('/mod/assign/view.php', array('id' => $this->context->instanceid));
+        return new \moodle_url('/mod/assign/view.php', array('id' => $this->contextinstanceid));
     }
 
     /**
@@ -100,5 +107,4 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
         parent::init();
         $this->data['objecttable'] = 'assign_submission';
     }
-
 }

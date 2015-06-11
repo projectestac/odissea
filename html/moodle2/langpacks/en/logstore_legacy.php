@@ -1,0 +1,33 @@
+<?php
+
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'logstore_legacy', language 'en', branch 'MOODLE_28_STABLE'
+ *
+ * @package   logstore_legacy
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['eventlegacylogged'] = 'Legacy event logged';
+$string['loglegacy'] = 'Log legacy data';
+$string['loglegacy_help'] = 'This plugin records log data to the legacy log table (mdl_log). This functionality has been replaced by newer, richer and more efficient logging plugins, so you should only run this plugin if you have old custom reports that directly query the old log table. Writing to the legacy logs will increase load, so it is recommended that you disable this plugin for performance reasons when it is not needed.';
+$string['pluginname'] = 'Legacy log';
+$string['pluginname_desc'] = 'A log plugin that stores log entries in the legacy log table.';
+$string['taskcleanup'] = 'Legacy log table cleanup';

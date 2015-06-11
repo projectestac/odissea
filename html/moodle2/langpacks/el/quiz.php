@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,8 +29,10 @@ $string['accessnoticesheader'] = 'Μπορείτε να προεπισκοπήσ
 $string['action'] = 'Ενέργεια';
 $string['activityoverview'] = 'Έχετε κουίζ που είναι μέχρι';
 $string['adaptive'] = 'Κατάσταση προσαρμογής';
-$string['addaquestion'] = 'Προσθήκη ερώτησης ...';
-$string['addarandomquestion'] = 'Προσθήκη τυχαίας ερώτησης ...';
+$string['add'] = 'Προσθήκη';
+$string['addaquestion'] = 'μια νέα ερώτηση';
+$string['addarandomquestion'] = 'μια τυχαία ερώτηση';
+$string['addarandomselectedquestion'] = 'Προσθέστε μια τυχαία επιλεγμένη ερώτηση ...';
 $string['adddescriptionlabel'] = 'Προσθήκη περιγραφής/ετικέτας';
 $string['addingquestion'] = 'Προσθήκη ερώτησης';
 $string['addingquestions'] = 'Αυτή η πλευρά της σελίδας είναι όπου διαχειρίζεστε τη βάση δεδομένων των ερωτημάτων. Τα ερωτήματα αποθηκεύονται σε κατηγορίες ώστε να τηρούνται οργανωμένα και μπορούν να χρησιμοποιηθούν στο μάθημά σας ή ακόμη και σε άλλα μαθήματα αν επιλέξετε να τα \'δημοσιοποιήσετε\'.<br /><br />Αφού επιλέξετε ή δημιουργήσετε μια κατηγορία ερωτημάτων τότε θα είστε σε θέση να δημιουργήσετε ή να επεξεργαστείτε ερωτήματα. Μπορείτε να επιλέξετε οποιοδήποτε από αυτά τα ερωτήματα για να το προσθέσετε στο κουίζ σας στην άλλη πλευρά αυτής της σελίδας.';
@@ -140,6 +142,9 @@ $string['comment'] = 'Σχόλιο';
 $string['commentorgrade'] = 'Εισαγάγετε σχόλιο ή παρακάμψτε το βαθμό';
 $string['comments'] = 'Σχόλια';
 $string['completedon'] = 'Ολοκληρώθηκε στις';
+$string['completionattemptsexhausted'] = 'Ή όλες οι διαθέσιμες προσπάθειες ολοκληρώθηκαν';
+$string['completionattemptsexhausted_help'] = 'Κατέταξε το κουίζ ολοκληρωμένο όταν ο μαθητής έχει εξαντλήσει το μέγιστο αριθμό προσπαθειών.';
+$string['completionpass'] = 'Απαίτηση προβιβάσιμου βαθμού';
 $string['configadaptive'] = 'Εάν επιλέξετε Ναι σε αυτήν την επιλογή τότε ο σπουδαστής θα μπορεί να απαντάει πολλές φορές σε μια ερώτηση ακόμη και στην ίδια προσπάθεια του κουίζ.';
 $string['configattemptsallowed'] = 'Περιορισμός του αριθμού προσπαθειών των σπουδαστών στο κουίζ.';
 $string['configdecimaldigits'] = 'Αριθμός ψηφίων που θα προβάλλονται μετά την υποδιαστολή στους βαθμούς.';
@@ -167,6 +172,7 @@ $string['configtimelimit'] = 'Προεπιλεγμένο όριο χρόνου �
 $string['configtimelimitsec'] = 'Προεπιλεγμένο όριο χρόνου για κουίζ σε δευτερόλεπτα. Το 0 σημαίνει πως δεν υπάρχει όριο.';
 $string['configurerandomquestion'] = 'Ρύθμιση ερώτησης';
 $string['confirmclose'] = 'Πρόκειται να τερματίσετε αυτήν την προσπάθεια. Από τη στιγμή που θα τερματίσετε την προσπάθειά σας δεν θα είστε σε θέση να αλλάξετε τις απαντήσεις σας.';
+$string['confirmremovequestion'] = 'Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτήν την ερώτηση {$a};';
 $string['confirmserverdelete'] = 'Είστε σίγουρος ότι θέλετε να διαγράψετε το διακομιστή <b>{$a}</b> από τη λίστα;';
 $string['confirmstartattemptlimit'] = 'Αυτό το κουίζ έχει όριο {$a} προσπαθειών. Πρόκειται να ξεκινήσετε μία νέα προσπάθεια. Επιθυμείτε να συνεχίσετε;';
 $string['confirmstartattempttimelimit'] = 'Αυτό το κουίζ έχει χρονικό όριο και όριο {$a} προσπαθειών. Πρόκειται να ξεκινήσετε μία νέα προσπάθεια. Επιθυμείτε να συνεχίσετε;';
@@ -234,6 +240,8 @@ $string['displayoptions'] = 'Επιλογές εμφάνισης';
 $string['donotuseautosave'] = 'Μην χρησιμοποιείτε αυτόματη αποθήκευση';
 $string['download'] = 'Κάντε κλικ για να κατεβάσετε το εξαγόμενο αρχείο κατηγορίας';
 $string['downloadextra'] = '(το αρχείο αποθηκεύτηκε επίσης στα αρχεία του μαθήματος στο φάκελο /backupdata/κουίζ)';
+$string['dragtoafter'] = 'Μετά {$a}';
+$string['dragtostart'] = 'Στην αρχή';
 $string['duplicateresponse'] = 'Αυτή η υποβολή έχει αγνοηθεί γιατί δώσατε την ίδια απάντηση προηγουμένως.';
 $string['eachattemptbuildsonthelast'] = 'Κάθε προσπάθεια στηρίζεται στο τελευταίο';
 $string['eachattemptbuildsonthelast_help'] = '<p>Αν το κουίζ επιτρέπει πολλαπλές απόπειρες και αυτή η επιλογή είναι ενεργοποιημένη,
@@ -249,6 +257,7 @@ $string['editingquestion'] = 'Επεξεργασία μιας ερώτησης';
 $string['editingquiz'] = 'Επεξεργασία κουίζ';
 $string['editingquizx'] = 'Επεξεργασία κουίζ: {$a}';
 $string['editqcats'] = 'Επεξεργασία κατηγοριών ερωτήσεων';
+$string['editquestion'] = 'Επεξεργασία ερώτησης';
 $string['editquestions'] = 'Επεξεργασία ερωτήσεων';
 $string['editquiz'] = 'Επεξεργασία Κουίζ';
 $string['editquizquestions'] = 'Επεξεργασία Ερωτήσεων του Κουίζ';
@@ -281,6 +290,8 @@ $string['errornotnumbers'] = 'Σφάλμα - οι απαντήσεις πρέπ�
 $string['errorunexpectedevent'] = 'Απρόσμενο συμβάν με κωδικό {$a->event} βρέθηκε για την ερώτηση {$a->questionid} στην προσπάθεια {$a->attemptid}.';
 $string['essay'] = 'Έκθεση';
 $string['essayquestions'] = 'Ερωτήσεις';
+$string['eventattemptreviewed'] = 'Η προσπάθεια στο κουίζ επανεξετάστηκε';
+$string['eventquestionmanuallygraded'] = 'Η ερώτηση βαθμολογήθηκε χειροκίνητα';
 $string['eventquizattemptabandoned'] = 'Η προσπάθεια στο κουίζ εγκαταλείφθηκε';
 $string['eventquizattemptstarted'] = 'Η προσπάθεια στο κουίζ ξεκίνησε';
 $string['eventquizattemptsubmitted'] = 'Η προσπάθεια στο κουίζ υποβλήθηκε';
@@ -518,7 +529,7 @@ $string['overridedeleteusersure'] = 'Είστε σίγουροι ότι θέλε
 $string['overrideuser'] = 'Παράκαμψη χρήστη';
 $string['page-mod-quiz-edit'] = 'Επεξεργασία σελίδας κουίζ';
 $string['page-mod-quiz-view'] = 'Σελίδα πληροφοριών κουίζ';
-$string['pagesize'] = 'Προσπάθειες που εμφανίζονται ανά σελίδα:';
+$string['pagesize'] = 'Μέγεθος σελίδας';
 $string['parent'] = 'Γονέας';
 $string['parentcategory'] = 'Κατηγορία-γονέας';
 $string['parsingquestions'] = 'Ανάλυση ερωτήσεων από αρχείο εισαγωγής.';
@@ -548,8 +559,8 @@ $string['qname'] = 'όνομα';
 $string['qti'] = 'Μορφή IMS QTI';
 $string['qtypename'] = 'τύπος, όνομα';
 $string['question'] = 'Ερώτηση';
-$string['questionbankcontents'] = 'περιεχόμενα τράπεζας ερωτήσεων';
-$string['questionbankmanagement'] = 'διαχείριση τράπεζας ερωτήσεων';
+$string['questionbank'] = 'από τράπεζα ερωτήσεων';
+$string['questionbankmanagement'] = 'Διαχείριση τράπεζας ερωτήσεων';
 $string['questionbehaviour'] = 'συμπεριφορά τράπεζας ερωτήσεων';
 $string['questioncats'] = 'Κατηγορίες Ερωτήσεων';
 $string['questiondeleted'] = 'Αυτή η ερώτηση έχει διαγραφεί. Παρακαλώ επικοινωνήστε με τον καθηγητή';
@@ -606,6 +617,7 @@ $string['random'] = 'Τυχαία ερώτηση';
 $string['randomcreate'] = 'Δημιουργία τυχαίων ερωτήσεων';
 $string['randomfromcategory'] = 'Τυχαία ερώτηση από κατηγορία:';
 $string['randomnosubcat'] = 'Ερωτήσεις από αυτήν την κατηγορία και μόνο, όχι από τις υποκατηγορίες της.';
+$string['randomnumber'] = 'Αριθμός τυχαίων ερωτήσεων';
 $string['randomwithsubcat'] = 'Ερωτήσεις από αυτήν την κατηγορία και από τις υποκατηγορίες της.';
 $string['readytosend'] = 'Πρόκειται να στείλετε ολόκληρο το κουίζ σας για βαθμολόγηση. Είστε σίγουροι οτι θέλετε να συνεχίσετε;';
 $string['reattemptquiz'] = 'Επαναπροσπάθεια του κουίζ';

@@ -18,8 +18,7 @@
 /**
  * Settings used by the lesson module, were moved from mod_edit
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  2009 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or late
  **/
@@ -67,4 +66,6 @@ if ($ADMIN->fulltree) {
     $defaultnextpages[LESSON_UNANSWEREDPAGE] = get_string("showanunansweredpage", "lesson");
     $settings->add(new admin_setting_configselect('lesson_defaultnextpage', get_string('actionaftercorrectanswer','lesson'),
             get_string('configactionaftercorrectanswer', 'lesson'), 0, $defaultnextpages));
+    $settings->add(new admin_setting_configcheckbox('lesson/requiremodintro',
+        get_string('requiremodintro', 'admin'), get_string('configrequiremodintro', 'admin'), 1));
 }

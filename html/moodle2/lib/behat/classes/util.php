@@ -94,7 +94,7 @@ class behat_util extends testing_util {
 
         // Update admin user info.
         $user = $DB->get_record('user', array('username' => 'admin'));
-        $user->email = 'moodle@moodlemoodle.com';
+        $user->email = 'moodle@example.com';
         $user->firstname = 'Admin';
         $user->lastname = 'User';
         $user->city = 'Perth';
@@ -106,7 +106,10 @@ class behat_util extends testing_util {
 
         // Sets maximum debug level.
         set_config('debug', DEBUG_DEVELOPER);
-        set_config('debugdisplay', true);
+        set_config('debugdisplay', 1);
+
+        // Disable some settings that are not wanted on test sites.
+        set_config('noemailever', 1);
 
         // Keeps the current version of database and dataroot.
         self::store_versions_hash();
@@ -185,7 +188,7 @@ class behat_util extends testing_util {
      * features and steps definitions.
      *
      * Stores a file in dataroot/behat to allow Moodle to switch
-     * to the test environment when using cli-server (or $CFG->behat_switchcompletely)
+     * to the test environment when using cli-server.
      * @throws coding_exception
      * @return void
      */
@@ -197,7 +200,7 @@ class behat_util extends testing_util {
         }
 
         // Checks the behat set up and the PHP version.
-        if ($errorcode = behat_command::behat_setup_problem(true)) {
+        if ($errorcode = behat_command::behat_setup_problem()) {
             exit($errorcode);
         }
 
@@ -231,7 +234,7 @@ class behat_util extends testing_util {
         }
 
         // Checks the behat set up and the PHP version, returning an error code if something went wrong.
-        if ($errorcode = behat_command::behat_setup_problem(true)) {
+        if ($errorcode = behat_command::behat_setup_problem()) {
             return $errorcode;
         }
 
@@ -287,4 +290,31 @@ class behat_util extends testing_util {
         return behat_command::get_behat_dir() . '/test_environment_enabled.txt';
     }
 
+    /**
+     * Reset contents of all database tables to initial values, reset caches, etc.
+     */
+    public static function reset_all_data() {
+        // Reset database.
+        self::reset_database();
+
+        // Purge dataroot directory.
+        self::reset_dataroot();
+
+        // Reset all static caches.
+        accesslib_clear_all_caches(true);
+        // Reset the nasty strings list used during the last test.
+        nasty_strings::reset_used_strings();
+
+        filter_manager::reset_caches();
+
+        // Reset course and module caches.
+        if (class_exists('format_base')) {
+            // If file containing class is not loaded, there is no cache there anyway.
+            format_base::reset_course_cache(0);
+        }
+        get_fast_modinfo(0, 0, true);
+
+        // Inform data generator.
+        self::get_data_generator()->reset();
+    }
 }

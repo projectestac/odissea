@@ -243,16 +243,8 @@ class course_enrolment_manager {
                       JOIN {enrol} e ON (e.id = ue.enrolid)
                  LEFT JOIN {user_lastaccess} ul ON (ul.courseid = e.courseid AND ul.userid = u.id)
                  LEFT JOIN {groups_members} gm ON u.id = gm.userid
-                     WHERE $filtersql";
-            if ($sort === 'firstname') {
-                $sql .= " ORDER BY u.firstname $direction, u.lastname $direction";
-            } else if ($sort === 'lastname') {
-                $sql .= " ORDER BY u.lastname $direction, u.firstname $direction";
-            } else if ($sort === 'email') {
-                $sql .= " ORDER BY u.email $direction, u.lastname $direction, u.firstname $direction";
-            } else if ($sort === 'lastseen') {
-                $sql .= " ORDER BY ul.timeaccess $direction, u.lastname $direction, u.firstname $direction";
-            }
+                     WHERE $filtersql
+                  ORDER BY u.$sort $direction";
             $this->users[$key] = $DB->get_records_sql($sql, $params, $page*$perpage, $perpage);
         }
         return $this->users[$key];
@@ -894,7 +886,7 @@ class course_enrolment_manager {
             $args['search'] = $this->searchfilter;
         }
         if (!empty($this->groupfilter)) {
-            $args['group'] = $this->groupfilter;
+            $args['filtergroup'] = $this->groupfilter;
         }
         if ($this->statusfilter !== -1) {
             $args['status'] = $this->statusfilter;
@@ -1267,15 +1259,18 @@ class enrol_user_button extends single_button {
      * @param string|array $modules One or more modules to require
      * @param string $function The JS function to call
      * @param array $arguments An array of arguments to pass to the function
-     * @param string $galleryversion The YUI gallery version of any modules required
+     * @param string $galleryversion Deprecated: The gallery version to use
      * @param bool $ondomready If true the call is postponed until the DOM is finished loading
      */
-    public function require_yui_module($modules, $function, array $arguments = null, $galleryversion = '2010.04.08-12-35', $ondomready = false) {
+    public function require_yui_module($modules, $function, array $arguments = null, $galleryversion = null, $ondomready = false) {
+        if ($galleryversion != null) {
+            debugging('The galleryversion parameter to yui_module has been deprecated since Moodle 2.3.', DEBUG_DEVELOPER);
+        }
+
         $js = new stdClass;
         $js->modules = (array)$modules;
         $js->function = $function;
         $js->arguments = $arguments;
-        $js->galleryversion = $galleryversion;
         $js->ondomready = $ondomready;
         $this->jsyuimodules[] = $js;
     }
@@ -1319,7 +1314,7 @@ class enrol_user_button extends single_button {
      */
     public function initialise_js(moodle_page $page) {
         foreach ($this->jsyuimodules as $js) {
-            $page->requires->yui_module($js->modules, $js->function, $js->arguments, $js->galleryversion, $js->ondomready);
+            $page->requires->yui_module($js->modules, $js->function, $js->arguments, null, $js->ondomready);
         }
         foreach ($this->jsinitcalls as $js) {
             $page->requires->js_init_call($js->function, $js->extraarguments, $js->ondomready, $js->module);

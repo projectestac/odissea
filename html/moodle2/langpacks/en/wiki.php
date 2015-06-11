@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,17 @@ $string['editing'] = 'Editing wiki page';
 $string['editingcomment'] = 'Editing comment';
 $string['editingpage'] = 'Editing this page \'{$a}\'';
 $string['editsection'] = 'edit';
+$string['eventdiffviewed'] = 'Wiki diff viewed';
+$string['eventhistoryviewed'] = 'Wiki history viewed';
+$string['eventmapviewed'] = 'Wiki page map viewed';
+$string['eventpagecreated'] = 'Wiki page created';
+$string['eventpagedeleted'] = 'Wiki page deleted';
+$string['eventpagelocksdeleted'] = 'Wiki page locks deleted';
+$string['eventpageupdated'] = 'Wiki page updated';
+$string['eventpageversiondeleted'] = 'Wiki page version deleted';
+$string['eventpageviewed'] = 'Wiki page viewed';
+$string['eventversionrestored'] = 'Wiki version restored';
+$string['eventversionviewed'] = 'Wiki page version viewed';
 $string['filenotuploadederror'] = 'File \'{$a}\' could not be uploaded correctly.';
 $string['files'] = 'Files';
 $string['filtername'] = 'Wiki auto-linking';

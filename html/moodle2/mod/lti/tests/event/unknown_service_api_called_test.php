@@ -34,16 +34,25 @@ use mod_lti\event\unknown_service_api_called;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class mod_lti_event_unknown_service_api_called_test extends advanced_testcase {
+    /*
+     * Ensure create event works.
+     */
     public function test_create_event() {
         $event = unknown_service_api_called::create();
         $this->assertInstanceOf('\mod_lti\event\unknown_service_api_called', $event);
     }
 
+    /*
+     * Ensure event context works.
+     */
     public function test_event_context() {
         $event = unknown_service_api_called::create();
         $this->assertEquals(context_system::instance(), $event->get_context());
     }
 
+    /*
+     * Ensure we can trigger the event.
+     */
     public function test_trigger_event() {
         $event = unknown_service_api_called::create();
 
@@ -53,25 +62,20 @@ class mod_lti_event_unknown_service_api_called_test extends advanced_testcase {
         $this->assertCount(1, $events);
     }
 
+    /*
+     * Ensure get/set message data is functioning as expected.
+     */
     public function test_get_message_data() {
-        $xml = <<<XML
-<?xml version="1.0" encoding="UTF-8"?>
-<foo>
-    <bar>baz</bar>
-</foo>
-XML;
-
-        /** @var unknown_service_api_called $event */
-        $event = unknown_service_api_called::create(
-            array('other' => array('rawbody' => $xml, 'foo' => 'bar'))
+        $data = (object) array(
+            'foo' => 'bar',
+            'bat' => 'baz',
         );
-        $data = $event->get_message_data();
 
-        $this->assertInstanceOf('stdClass', $data);
-        $this->assertCount(3, get_object_vars($data));
-        $this->assertEquals('bar', $data->foo);
-        $this->assertEquals($xml, $data->rawbody);
-        $this->assertInstanceOf('SimpleXMLElement', $data->xml);
-        $this->assertXmlStringEqualsXmlString($xml, $data->xml->asXML());
+        /*
+         * @var unknown_service_api_called $event
+         */
+        $event = unknown_service_api_called::create();
+        $event->set_message_data($data);
+        $this->assertSame($data, $event->get_message_data());
     }
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'Comentário inserido no texto';
+$string['commentinlinedefault'] = 'Comentário inserido no texto por predefinição';
+$string['commentinlinedefault_help'] = 'Se definido, a funcionalidade de comentário inserido no texto será ativada por predefinição para todos os novos trabalhos.';
+$string['commentinline_help'] = 'Se ativar esta opção, o texto da submissão será copiado para o campo de comentários de feedback durante a avaliação, tornando mais fácil fazer um comentário inserido no texto (usando uma cor diferente, talvez) ou para editar o texto original.';
 $string['default'] = 'Ativo por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método de feedback estará disponível para todos os trabalhos.';
 $string['enabled'] = 'Comentários de feedback';

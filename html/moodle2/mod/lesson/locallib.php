@@ -19,8 +19,7 @@
  * Local library file for Lesson.  These are non-standard functions that are used
  * only by Lesson.
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or late
  **/
@@ -467,7 +466,7 @@ function lesson_mediafile_block_contents($cmid, $lesson) {
 
     $bc = new block_contents();
     $bc->title = get_string('linkedmedia', 'lesson');
-    $bc->attributes['class'] = 'mediafile';
+    $bc->attributes['class'] = 'mediafile block';
     $bc->content = $content;
 
     return $bc;
@@ -576,7 +575,12 @@ function lesson_add_header_buttons($cm, $context, $extraeditbuttons=false, $less
             print_error('invalidpageid', 'lesson');
         }
         if (!empty($lessonpageid) && $lessonpageid != LESSON_EOL) {
-            $url = new moodle_url('/mod/lesson/editpage.php', array('id'=>$cm->id, 'pageid'=>$lessonpageid, 'edit'=>1));
+            $url = new moodle_url('/mod/lesson/editpage.php', array(
+                'id'       => $cm->id,
+                'pageid'   => $lessonpageid,
+                'edit'     => 1,
+                'returnto' => $PAGE->url->out(false)
+            ));
             $PAGE->set_button($OUTPUT->single_button($url, get_string('editpagecontent', 'lesson')));
         }
     }
@@ -699,6 +703,11 @@ abstract class lesson_add_page_form_base extends moodleform {
 
         $mform->addElement('header', 'qtypeheading', get_string('createaquestionpage', 'lesson', get_string($this->qtypestring, 'lesson')));
 
+        if (!empty($this->_customdata['returnto'])) {
+            $mform->addElement('hidden', 'returnto', $this->_customdata['returnto']);
+            $mform->setType('returnto', PARAM_URL);
+        }
+
         $mform->addElement('hidden', 'id');
         $mform->setType('id', PARAM_INT);
 
@@ -792,8 +801,19 @@ abstract class lesson_add_page_form_base extends moodleform {
         if ($label === null) {
             $label = get_string('answer', 'lesson');
         }
-        $this->_form->addElement('editor', 'answer_editor['.$count.']', $label, array('rows'=>'4', 'columns'=>'80'), array('noclean'=>true));
-        $this->_form->setDefault('answer_editor['.$count.']', array('text'=>'', 'format'=>FORMAT_MOODLE));
+
+        if ($this->qtype != 'multichoice' && $this->qtype != 'matching') {
+            $this->_form->addElement('editor', 'answer_editor['.$count.']', $label,
+                    array('rows' => '4', 'columns' => '80'), array('noclean' => true));
+            $this->_form->setDefault('answer_editor['.$count.']', array('text' => '', 'format' => FORMAT_MOODLE));
+        } else {
+            $this->_form->addElement('editor', 'answer_editor['.$count.']', $label,
+                    array('rows' => '4', 'columns' => '80'),
+                    array('noclean' => true, 'maxfiles' => EDITOR_UNLIMITED_FILES, 'maxbytes' => $this->_customdata['maxbytes']));
+            $this->_form->setType('answer_editor['.$count.']', PARAM_RAW);
+            $this->_form->setDefault('answer_editor['.$count.']', array('text' => '', 'format' => FORMAT_HTML));
+        }
+
         if ($required) {
             $this->_form->addRule('answer_editor['.$count.']', get_string('required'), 'required', null, 'client');
         }
@@ -810,8 +830,12 @@ abstract class lesson_add_page_form_base extends moodleform {
         if ($label === null) {
             $label = get_string('response', 'lesson');
         }
-        $this->_form->addElement('editor', 'response_editor['.$count.']', $label, array('rows'=>'4', 'columns'=>'80'), array('noclean'=>true));
-        $this->_form->setDefault('response_editor['.$count.']', array('text'=>'', 'format'=>FORMAT_MOODLE));
+        $this->_form->addElement('editor', 'response_editor['.$count.']', $label,
+                 array('rows' => '4', 'columns' => '80'),
+                 array('noclean' => true, 'maxfiles' => EDITOR_UNLIMITED_FILES, 'maxbytes' => $this->_customdata['maxbytes']));
+        $this->_form->setType('response_editor['.$count.']', PARAM_RAW);
+        $this->_form->setDefault('response_editor['.$count.']', array('text' => '', 'format' => FORMAT_HTML));
+
         if ($required) {
             $this->_form->addRule('response_editor['.$count.']', get_string('required'), 'required', null, 'client');
         }
@@ -1205,6 +1229,18 @@ class lesson extends lesson_base {
      */
     public function start_timer() {
         global $USER, $DB;
+
+        $cm = get_coursemodule_from_instance('lesson', $this->properties()->id, $this->properties()->course,
+            false, MUST_EXIST);
+
+        // Trigger lesson started event.
+        $event = \mod_lesson\event\lesson_started::create(array(
+            'objectid' => $this->properties()->id,
+            'context' => context_module::instance($cm->id),
+            'courseid' => $this->properties()->course
+        ));
+        $event->trigger();
+
         $USER->startlesson[$this->properties->id] = true;
         $startlesson = new stdClass;
         $startlesson->lessonid = $this->properties->id;
@@ -1229,11 +1265,12 @@ class lesson extends lesson_base {
         global $USER, $DB;
         // clock code
         // get time information for this user
-        if (!$timer = $DB->get_records('lesson_timer', array ("lessonid" => $this->properties->id, "userid" => $USER->id), 'starttime DESC', '*', 0, 1)) {
-            print_error('cannotfindtimer', 'lesson');
-        } else {
-            $timer = current($timer); // this will get the latest start time record
+        $params = array("lessonid" => $this->properties->id, "userid" => $USER->id);
+        if (!$timer = $DB->get_records('lesson_timer', $params, 'starttime DESC', '*', 0, 1)) {
+            $this->start_timer();
+            $timer = $DB->get_records('lesson_timer', $params, 'starttime DESC', '*', 0, 1);
         }
+        $timer = current($timer); // This will get the latest start time record.
 
         if ($restart) {
             if ($continue) {
@@ -1257,6 +1294,18 @@ class lesson extends lesson_base {
     public function stop_timer() {
         global $USER, $DB;
         unset($USER->startlesson[$this->properties->id]);
+
+        $cm = get_coursemodule_from_instance('lesson', $this->properties()->id, $this->properties()->course,
+            false, MUST_EXIST);
+
+        // Trigger lesson ended event.
+        $event = \mod_lesson\event\lesson_ended::create(array(
+            'objectid' => $this->properties()->id,
+            'context' => context_module::instance($cm->id),
+            'courseid' => $this->properties()->course
+        ));
+        $event->trigger();
+
         return $this->update_timer(false, false);
     }
 
@@ -1435,8 +1484,24 @@ class lesson extends lesson_base {
         $clusterpages = $this->get_sub_pages_of($pageid, array(LESSON_PAGE_ENDOFCLUSTER));
         $unseen = array();
         foreach ($clusterpages as $key=>$cluster) {
-            if ($cluster->type !== lesson_page::TYPE_QUESTION) {
+            // Remove the page if  it is in a branch table or is an endofbranch.
+            if ($this->is_sub_page_of_type($cluster->id,
+                    array(LESSON_PAGE_BRANCHTABLE), array(LESSON_PAGE_ENDOFBRANCH, LESSON_PAGE_CLUSTER))
+                    || $cluster->qtype == LESSON_PAGE_ENDOFBRANCH) {
                 unset($clusterpages[$key]);
+            } else if ($cluster->qtype == LESSON_PAGE_BRANCHTABLE) {
+                // If branchtable, check to see if any pages inside have been viewed.
+                $branchpages = $this->get_sub_pages_of($cluster->id, array(LESSON_PAGE_BRANCHTABLE, LESSON_PAGE_ENDOFBRANCH));
+                $flag = true;
+                foreach ($branchpages as $branchpage) {
+                    if (array_key_exists($branchpage->id, $seenpages)) {  // Check if any of the pages have been viewed.
+                        $flag = false;
+                    }
+                }
+                if ($flag && count($branchpages) > 0) {
+                    // Add branch table.
+                    $unseen[] = $cluster;
+                }
             } elseif ($cluster->is_unseen($seenpages)) {
                 $unseen[] = $cluster;
             }
@@ -1458,15 +1523,15 @@ class lesson extends lesson_base {
                 return LESSON_EOL;
             } else {
                 $clusterendid = $pageid;
-                while ($clusterendid != 0) { // this condition should not be satisfied... should be a cluster page
-                    if ($lessonpages[$clusterendid]->qtype == LESSON_PAGE_CLUSTER) {
+                while ($clusterendid != 0) { // This condition should not be satisfied... should be an end of cluster page.
+                    if ($lessonpages[$clusterendid]->qtype == LESSON_PAGE_ENDOFCLUSTER) {
                         break;
                     }
-                    $clusterendid = $lessonpages[$clusterendid]->prevpageid;
+                    $clusterendid = $lessonpages[$clusterendid]->nextpageid;
                 }
                 $exitjump = $DB->get_field("lesson_answers", "jumpto", array("pageid" => $clusterendid, "lessonid" => $this->properties->id));
                 if ($exitjump == LESSON_NEXTPAGE) {
-                    $exitjump = $lessonpages[$pageid]->nextpageid;
+                    $exitjump = $lessonpages[$clusterendid]->nextpageid;
                 }
                 if ($exitjump == 0) {
                     return LESSON_EOL;
@@ -1480,6 +1545,9 @@ class lesson extends lesson_base {
                                 $found = true;
                             } else if ($page->qtype == LESSON_PAGE_ENDOFCLUSTER) {
                                 $exitjump = $DB->get_field("lesson_answers", "jumpto", array("pageid" => $page->id, "lessonid" => $this->properties->id));
+                                if ($exitjump == LESSON_NEXTPAGE) {
+                                    $exitjump = $lessonpages[$page->id]->nextpageid;
+                                }
                                 break;
                             }
                         }
@@ -1829,6 +1897,8 @@ abstract class lesson_page extends lesson_base {
         global $DB;
         // first delete all the associated records...
         $DB->delete_records("lesson_attempts", array("pageid" => $this->properties->id));
+
+        $DB->delete_records("lesson_branch", array("pageid" => $this->properties->id));
         // ...now delete the answers...
         $DB->delete_records("lesson_answers", array("pageid" => $this->properties->id));
         // ..and the page itself
@@ -1839,6 +1909,8 @@ abstract class lesson_page extends lesson_base {
         $context = context_module::instance($cm->id);
         $fs = get_file_storage();
         $fs->delete_area_files($context->id, 'mod_lesson', 'page_contents', $this->properties->id);
+        $fs->delete_area_files($context->id, 'mod_lesson', 'page_answers', $this->properties->id);
+        $fs->delete_area_files($context->id, 'mod_lesson', 'page_responses', $this->properties->id);
 
         // repair the hole in the linkage
         if (!$this->properties->prevpageid && !$this->properties->nextpageid) {
@@ -2042,9 +2114,20 @@ abstract class lesson_page extends lesson_base {
                     $options->noclean = true;
                     $options->para = true;
                     $options->overflowdiv = true;
+                    $options->context = $context;
+                    $result->response = file_rewrite_pluginfile_urls($result->response, 'pluginfile.php', $context->id,
+                            'mod_lesson', 'page_responses', $result->answerid);
                     $result->feedback = $OUTPUT->box(format_text($this->get_contents(), $this->properties->contentsformat, $options), 'generalbox boxaligncenter');
-                    $result->feedback .= '<div class="correctanswer generalbox"><em>'.get_string("youranswer", "lesson").'</em> : '.$result->studentanswer; // already in clean html
-                    $result->feedback .= $OUTPUT->box($result->response, $class); // already conerted to HTML
+                    if (isset($result->studentanswerformat)) {
+                        // This is the student's answer so it should be cleaned.
+                        $studentanswer = format_text($result->studentanswer, $result->studentanswerformat,
+                                array('context' => $context, 'para' => true));
+                    } else {
+                        $studentanswer = format_string($result->studentanswer);
+                    }
+                    $result->feedback .= '<div class="correctanswer generalbox"><em>'
+                            . get_string("youranswer", "lesson").'</em> : ' . $studentanswer;
+                    $result->feedback .= $OUTPUT->box($result->response, $class); // Already converted to HTML.
                     $result->feedback .= '</div>';
                 }
             }
@@ -2125,6 +2208,54 @@ abstract class lesson_page extends lesson_base {
     }
 
     /**
+     * save editor answers files and update answer record
+     *
+     * @param object $context
+     * @param int $maxbytes
+     * @param object $answer
+     * @param object $answereditor
+     * @param object $responseeditor
+     */
+    public function save_answers_files($context, $maxbytes, &$answer, $answereditor = '', $responseeditor = '') {
+        global $DB;
+        if (isset($answereditor['itemid'])) {
+            $answer->answer = file_save_draft_area_files($answereditor['itemid'],
+                    $context->id, 'mod_lesson', 'page_answers', $answer->id,
+                    array('noclean' => true, 'maxfiles' => EDITOR_UNLIMITED_FILES, 'maxbytes' => $maxbytes),
+                    $answer->answer, null);
+            $DB->set_field('lesson_answers', 'answer', $answer->answer, array('id' => $answer->id));
+        }
+        if (isset($responseeditor['itemid'])) {
+            $answer->response = file_save_draft_area_files($responseeditor['itemid'],
+                    $context->id, 'mod_lesson', 'page_responses', $answer->id,
+                    array('noclean' => true, 'maxfiles' => EDITOR_UNLIMITED_FILES, 'maxbytes' => $maxbytes),
+                    $answer->response, null);
+            $DB->set_field('lesson_answers', 'response', $answer->response, array('id' => $answer->id));
+        }
+    }
+
+    /**
+     * Rewrite urls in response and optionality answer of a question answer
+     *
+     * @param object $answer
+     * @param bool $rewriteanswer must rewrite answer
+     * @return object answer with rewritten urls
+     */
+    public static function rewrite_answers_urls($answer, $rewriteanswer = true) {
+        global $PAGE;
+
+        $context = context_module::instance($PAGE->cm->id);
+        if ($rewriteanswer) {
+            $answer->answer = file_rewrite_pluginfile_urls($answer->answer, 'pluginfile.php', $context->id,
+                    'mod_lesson', 'page_answers', $answer->id);
+        }
+        $answer->response = file_rewrite_pluginfile_urls($answer->response, 'pluginfile.php', $context->id,
+                'mod_lesson', 'page_responses', $answer->id);
+
+        return $answer;
+    }
+
+    /**
      * Updates a lesson page and its answers within the database
      *
      * @param object $properties
@@ -2147,41 +2278,77 @@ abstract class lesson_page extends lesson_base {
         $properties->timemodified = time();
         $properties = file_postupdate_standard_editor($properties, 'contents', array('noclean'=>true, 'maxfiles'=>EDITOR_UNLIMITED_FILES, 'maxbytes'=>$maxbytes), $context, 'mod_lesson', 'page_contents', $properties->id);
         $DB->update_record("lesson_pages", $properties);
-
-        for ($i = 0; $i < $this->lesson->maxanswers; $i++) {
-            if (!array_key_exists($i, $this->answers)) {
-                $this->answers[$i] = new stdClass;
-                $this->answers[$i]->lessonid = $this->lesson->id;
-                $this->answers[$i]->pageid = $this->id;
-                $this->answers[$i]->timecreated = $this->timecreated;
+        if ($this->type == self::TYPE_STRUCTURE && $this->get_typeid() != LESSON_PAGE_BRANCHTABLE) {
+            if (count($answers) > 1) {
+                $answer = array_shift($answers);
+                foreach ($answers as $a) {
+                    $DB->delete_record('lesson_answers', array('id' => $a->id));
+                }
+            } else if (count($answers) == 1) {
+                $answer = array_shift($answers);
+            } else {
+                $answer = new stdClass;
+                $answer->lessonid = $properties->lessonid;
+                $answer->pageid = $properties->id;
+                $answer->timecreated = time();
             }
 
-            if (!empty($properties->answer_editor[$i]) && is_array($properties->answer_editor[$i])) {
-                $this->answers[$i]->answer = $properties->answer_editor[$i]['text'];
-                $this->answers[$i]->answerformat = $properties->answer_editor[$i]['format'];
+            $answer->timemodified = time();
+            if (isset($properties->jumpto[0])) {
+                $answer->jumpto = $properties->jumpto[0];
             }
-            if (!empty($properties->response_editor[$i]) && is_array($properties->response_editor[$i])) {
-                $this->answers[$i]->response = $properties->response_editor[$i]['text'];
-                $this->answers[$i]->responseformat = $properties->response_editor[$i]['format'];
+            if (isset($properties->score[0])) {
+                $answer->score = $properties->score[0];
             }
-
-            // we don't need to check for isset here because properties called it's own isset method.
-            if ($this->answers[$i]->answer != '') {
-                if (isset($properties->jumpto[$i])) {
-                    $this->answers[$i]->jumpto = $properties->jumpto[$i];
-                }
-                if ($this->lesson->custom && isset($properties->score[$i])) {
-                    $this->answers[$i]->score = $properties->score[$i];
-                }
-                if (!isset($this->answers[$i]->id)) {
-                    $this->answers[$i]->id =  $DB->insert_record("lesson_answers", $this->answers[$i]);
-                } else {
-                    $DB->update_record("lesson_answers", $this->answers[$i]->properties());
+            if (!empty($answer->id)) {
+                $DB->update_record("lesson_answers", $answer->properties());
+            } else {
+                $DB->insert_record("lesson_answers", $answer);
+            }
+        } else {
+            for ($i = 0; $i < $this->lesson->maxanswers; $i++) {
+                if (!array_key_exists($i, $this->answers)) {
+                    $this->answers[$i] = new stdClass;
+                    $this->answers[$i]->lessonid = $this->lesson->id;
+                    $this->answers[$i]->pageid = $this->id;
+                    $this->answers[$i]->timecreated = $this->timecreated;
                 }
 
-            } else if (isset($this->answers[$i]->id)) {
-                $DB->delete_records('lesson_answers', array('id'=>$this->answers[$i]->id));
-                unset($this->answers[$i]);
+                if (!empty($properties->answer_editor[$i]) && is_array($properties->answer_editor[$i])) {
+                    $this->answers[$i]->answer = $properties->answer_editor[$i]['text'];
+                    $this->answers[$i]->answerformat = $properties->answer_editor[$i]['format'];
+                }
+                if (!empty($properties->response_editor[$i]) && is_array($properties->response_editor[$i])) {
+                    $this->answers[$i]->response = $properties->response_editor[$i]['text'];
+                    $this->answers[$i]->responseformat = $properties->response_editor[$i]['format'];
+                }
+
+                if (isset($this->answers[$i]->answer) && $this->answers[$i]->answer != '') {
+                    if (isset($properties->jumpto[$i])) {
+                        $this->answers[$i]->jumpto = $properties->jumpto[$i];
+                    }
+                    if ($this->lesson->custom && isset($properties->score[$i])) {
+                        $this->answers[$i]->score = $properties->score[$i];
+                    }
+                    if (!isset($this->answers[$i]->id)) {
+                        $this->answers[$i]->id = $DB->insert_record("lesson_answers", $this->answers[$i]);
+                    } else {
+                        $DB->update_record("lesson_answers", $this->answers[$i]->properties());
+                    }
+
+                    // Save files in answers and responses.
+                    if (isset($properties->response_editor[$i])) {
+                        $this->save_answers_files($context, $maxbytes, $this->answers[$i],
+                                $properties->answer_editor[$i], $properties->response_editor[$i]);
+                    } else {
+                        $this->save_answers_files($context, $maxbytes, $this->answers[$i],
+                                $properties->answer_editor[$i]);
+                    }
+
+                } else if (isset($this->answers[$i]->id)) {
+                    $DB->delete_records('lesson_answers', array('id' => $this->answers[$i]->id));
+                    unset($this->answers[$i]);
+                }
             }
         }
         return true;
@@ -2238,12 +2405,15 @@ abstract class lesson_page extends lesson_base {
      * @return array
      */
     public function create_answers($properties) {
-        global $DB;
+        global $DB, $PAGE;
         // now add the answers
         $newanswer = new stdClass;
         $newanswer->lessonid = $this->lesson->id;
         $newanswer->pageid = $this->properties->id;
         $newanswer->timecreated = $this->properties->timecreated;
+
+        $cm = get_coursemodule_from_instance('lesson', $this->lesson->id, $this->lesson->course);
+        $context = context_module::instance($cm->id);
 
         $answers = array();
 
@@ -2267,6 +2437,13 @@ abstract class lesson_page extends lesson_base {
                     $answer->score = $properties->score[$i];
                 }
                 $answer->id = $DB->insert_record("lesson_answers", $answer);
+                if (isset($properties->response_editor[$i])) {
+                    $this->save_answers_files($context, $PAGE->course->maxbytes, $answer,
+                            $properties->answer_editor[$i], $properties->response_editor[$i]);
+                } else {
+                    $this->save_answers_files($context, $PAGE->course->maxbytes, $answer,
+                            $properties->answer_editor[$i]);
+                }
                 $answers[$answer->id] = new lesson_page_answer($answer);
             } else {
                 break;

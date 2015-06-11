@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,7 @@ $string['resultvoidexecuted'] = 'L\'attribution a déjà été effectuée';
 $string['scheduledallocationsettings'] = 'Réglages d\'attribution programmée';
 $string['scheduledallocationsettings_help'] = 'Si ce réglage est activé, la méthode d\'attribution programmée attribuera des travaux à évaluer, au terme de la phase de remise. La fin de la phase peut être définie au moyen du réglage « Délai de remise » de l\'atelier.
 
-À l\'interne, la méthode d\'attribution programmée est lancée avec les paramètre prédéfinis sur cette page. Cela signifie qu\'elle fonction de la même manière que si l\'enseignant avant lancé manuellement l\'allocation aléatoire au terme de la phase de remise des travaux avec les réglages ci-dessous.
+À l\'interne, la méthode d\'attribution programmée est lancée avec les paramètre prédéfinis sur cette page. Cela signifie qu\'elle fonctionne de la même manière que si l\'enseignant avant lancé manuellement l\'allocation aléatoire au terme de la phase de remise des travaux avec les réglages ci-dessous.
 
 Il est à noter que l\'attribution programmée ne sera pas lancée si vous passez manuellement l\'atelier à la phase d\'évaluation avant le délai fixé pour la fin de la phase de remise des travaux. Dans ce cas, l\'attribution doit être lancée manuellement. La méthode d\'attribution programmée est particulièrement utile lorsqu\'elle est couplée au passage automatique d\'une phase à l\'autre.';
 $string['setup'] = 'Configurer l\'attribution programmée';

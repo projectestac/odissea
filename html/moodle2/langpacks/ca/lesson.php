@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -183,11 +183,22 @@ $string['essayemailmessage2'] = '<p>Informació de les preguntes de resposta obe
 $string['essayemailsubject'] = 'La vostra qualificació per a la pregunta {$a}';
 $string['essays'] = 'Preguntes de resposta oberta';
 $string['essayscore'] = 'Puntuació de la pregunta';
+$string['eventessayassessed'] = 'S\'ha avaluat la pregunta de resposta oberta';
+$string['eventessayattemptviewed'] = 'S\'ha mostrat l\'intent de resposta oberta';
+$string['eventhighscoreadded'] = 'S\'ha afegit la puntuació màxima';
+$string['eventhighscoresviewed'] = 'S\'han mostrat les puntuacions màximes';
+$string['eventlessonended'] = 'S\'ha acabat la lliçó';
+$string['eventlessonstarted'] = 'S\'ha començat la lliçó';
+$string['false'] = 'Fals';
 $string['fileformat'] = 'Format de fitxer';
 $string['finish'] = 'Acaba';
 $string['firstanswershould'] = 'La primera resposta hauria de saltar a la pàgina "Correcta"';
 $string['firstwrong'] = 'Com que la resposta no és correcta no aconseguiu cap punt. Encara que no obtingueu cap altre punt, voleu seguir provant-ho, ni que sigui per aprendre?';
 $string['flowcontrol'] = 'Control de flux';
+$string['fractionsaddwrong'] = 'Les notes que heu donat no sumen 100% (sumen {$a}%).
+<br />Voleu tornar enrere i corregir aquesta pregunta?';
+$string['fractionsnomax'] = 'Una de les respostes ha de valer 100%, de manera que sigui
+<br />possible obtenir la qualificació màxima en aquesta pregunta.<br />Voleu tornar enrere i corregir aquesta pregunta?';
 $string['full'] = 'Expandit';
 $string['general'] = 'General';
 $string['gotoendoflesson'] = 'Vés al final de la lliçó';
@@ -260,7 +271,7 @@ $string['mediafile_help'] = 'Per incloure una finestra emergent al començament 
 $string['mediafilepopup'] = 'Feu clic aquí per visualitzar';
 $string['mediaheight'] = 'Alçada de la finestra emergent';
 $string['mediawidth'] = 'Amplada de la finestra emergent';
-$string['messageprovider:graded_essay'] = 'Notificació de la qualificació de la prova';
+$string['messageprovider:graded_essay'] = 'Notificació de qualificació de treball';
 $string['minimumnumberofquestions'] = 'Nombre mínim de preguntes';
 $string['minimumnumberofquestions_help'] = 'Aquest paràmetre especifica el nombre mínim de preguntes que s\'utilitzaran per calcular la qualificació de l\'activitat. Si la lliçó conté una o més taules de ramificació, el nombre mínim de preguntes ha de ser posat a zero.
 
@@ -304,6 +315,8 @@ $string['noretake'] = 'No podeu tornar a fer aquesta lliçó.';
 $string['normal'] = 'Normal: segueix el camí de la lliçó';
 $string['notcompleted'] = 'Incomplet';
 $string['notdefined'] = 'No està definit';
+$string['notenoughsubquestions'] = 'No heu definit prou subpreguntes!<br />
+Voleu tornar enrere i arreglar aquesta pregunta?';
 $string['nothighscore'] = 'No heu aconseguit la {$a} posició a la llista de puntuacions màximes.';
 $string['notitle'] = 'Sense títol';
 $string['numberofcorrectanswers'] = 'Nombre de respostes correctes: {$a}';
@@ -416,6 +429,7 @@ $string['timespenterror'] = 'Heu de dedicar almenys {$a} minuts en la lliçó';
 $string['timespentminutes'] = 'Temps dedicat (minuts).';
 $string['timetaken'] = 'Temps dedicat';
 $string['topscorestitle'] = 'Les {$a} puntuacions màximes de la lliçó.';
+$string['true'] = 'Vertader';
 $string['truefalse'] = 'Vertader/Fals';
 $string['unabledtosavefile'] = 'No es pot desar el fitxer que heu carregat.';
 $string['unknownqtypesnotimported'] = 'No s\'han importat {$ a} preguntes amb tipus de pregunta no suportat.';

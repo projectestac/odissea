@@ -142,6 +142,9 @@
     display: block;
 }
 .section .activity .moodle-actionmenu[data-enhanced] .menu {margin-left: -2.8em;}
+.section .activity .moodle-actionmenu:not([data-enhanced]) .menubar > li .toggle-display {
+    display: none;
+}
 .section img.iconsmall {
     vertical-align: text-bottom;
     width: 16px;
@@ -171,6 +174,9 @@
 .dir-rtl .sitetopic .section .activity .contentafterlink,
 .dir-rtl .course-content .section .activity .availabilityinfo,
 .dir-rtl .course-content .section .activity .contentafterlink { margin-left: 0; margin-right: 30px;}
+.availabilityinfo > ul {
+    margin-top: 0;
+}
 .section .activity .contentafterlink p { margin:.5em 0; }
 .sitetopic .section .activity:hover,
 .course-content .section .activity:hover { background-color: #EEE; }

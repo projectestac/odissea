@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshopform_rubric', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Zuriuneak {$a} irizpide gehiagotarako';
-$string['configuration'] = 'Argibideen ezarpenak';
+$string['configuration'] = 'Errubrikaren ezarpenak';
 $string['criteria'] = 'Irizpidea';
 $string['dimensiondescription'] = 'Deskribapena';
 $string['dimensionnumber'] = '{$a} irizpidea';
-$string['layout'] = 'Argibideen diseinua';
+$string['layout'] = 'Errubrikaren diseinua';
 $string['layoutgrid'] = 'Sareta';
 $string['layoutlist'] = 'Zerrenda';
 $string['levelgroup'] = 'Mailarako kalifikazioa eta definizioa';
 $string['levels'] = 'Mailak';
 $string['mustchooseone'] = 'Elementu hauetako bat aukeratu behar duzu';
-$string['pluginname'] = 'Argibideak';
+$string['pluginname'] = 'Errubrika';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -125,6 +125,7 @@ $string['essaybox'] = 'Texto amplio';
 $string['essaybox_help'] = 'Esta pregunta se mostrará en un cuadro de texto sin formato con x columnas (ancho) e y filas (líneas de texto).
 
 Si deja ambos valores x e y con valor 0 (su valor por defecto), el editor de texto HTML de Moodle se mostrará con los valores estándar de altura y longitud (si está disponible en contexto de usuario/curso y/o en el perfil del usuario)';
+$string['event_all_responses_deleted'] = 'Todas las respuestas fueron borradas';
 $string['feedback'] = 'Retroalimentación';
 $string['feedbackaddmorefeedbacks'] = 'Agregar {no} campos más de retroalimentación';
 $string['field'] = 'Pregunta {$a}';
@@ -178,7 +179,7 @@ $string['notapplicablecolumn'] = 'Columna NS/NC';
 $string['notavail'] = 'Esta encuesta no esta aún disponible. Inténtelo más tarde.';
 $string['noteligible'] = 'Usted no ha sido seleccionado para responder a esta encuesta';
 $string['notemplatesurveys'] = 'No hay plantillas de encuesta';
-$string['notopen'] = 'Esta encuesta no se abrirá hasta {$a}';
+$string['notopen'] = 'Esta encuesta no se abrirá hasta {$a}.';
 $string['notrequired'] = 'Respuesta no obligatoria';
 $string['num'] = 'nº';
 $string['numberfloat'] = 'El número que introdujo,<strong>{$a->number}</strong> ha sido redondeado con <strong>{$a->precision}</strong> decimal(es).';

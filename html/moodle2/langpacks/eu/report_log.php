@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Osagaia';
+$string['eventcontext'] = 'Testuingurua';
+$string['eventorigin'] = 'Jatorria';
+$string['eventreportviewed'] = 'Agerraldi-txostena ikusi da';
+$string['logsformat'] = 'Agerraldien formatua';
 $string['log:view'] = 'Ikastaroko agerraldiak ikusi';
 $string['log:viewtoday'] = 'Gaurko agerraldiak ikusi';
 $string['page'] = '{$a} orria';
 $string['page-report-log-index'] = 'Ikastaroko agerraldien txostena';
+$string['page-report-log-x'] = 'Edozein agerraldi-txosten';
 $string['pluginname'] = 'Agerraldiak';
+$string['selectlogreader'] = 'Aukeratu agerraldi-irakurlea';

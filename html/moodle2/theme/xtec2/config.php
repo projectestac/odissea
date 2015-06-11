@@ -36,7 +36,7 @@ $THEME->name = 'xtec2';
 //
 $THEME->doctype = 'html5';
 $THEME->parents = array('bootstrapbase');
-$THEME->sheets = array('font-awesome.min', 'moodle-awesome', 'custom');
+$THEME->sheets = array('font-awesome', 'moodle-awesome', 'custom');
 $THEME->enable_dock = true;
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
@@ -141,7 +141,7 @@ $THEME->layouts = array(
 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
-        'file' => 'general.php',
+        'file' => 'popup.php',
         'regions' => array(),
         'options' => array('nofooter' => true, 'nonavbar' => true),
     ),

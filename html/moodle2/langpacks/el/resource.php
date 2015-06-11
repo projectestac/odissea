@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,6 @@ $string['forcedownload'] = 'Επιβολή κατεβάσματος αρχείο
 $string['framesize'] = 'Μέγεθος πλαισίου';
 $string['modulename'] = 'Πηγή πληροφοριών';
 $string['modulenameplural'] = 'Πηγές πληροφοριών';
-$string['neverseen'] = 'Ποτέ δεν εμφανίστηκαν';
 $string['pluginname'] = 'Πηγή πληροφοριών';
 $string['popupheightexplain'] = 'Καθορίζει το προεπιλεγμένο ύψος του αναδυόμενου παράθυρου.';
 $string['popupresource'] = 'Αυτή η πηγή θα εμφανιστεί αυτόματα σε αναδυόμενο παράθυρο.';

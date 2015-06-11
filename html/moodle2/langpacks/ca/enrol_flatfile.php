@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_flatfile', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['flatfile:unenrol'] = 'Cancel·la la inscripció d\'usuaris del curs de 
 $string['location'] = 'Camí al fitxer';
 $string['location_desc'] = 'Especifica el camí complet del fitxer d\'inscripció. El fitxer s\'esborra de forma automàtica després del processament.';
 $string['mapping'] = 'S\'està fent el mapa del fitxer pla';
-$string['messageprovider:flatfile_enrolment'] = 'Missatges d\'inscripció en fitxer de text pla';
+$string['messageprovider:flatfile_enrolment'] = 'Missatges d\'inscripcions mitjançant fitxer de text';
 $string['notifyadmin'] = 'Notifica a l\'administrador';
 $string['notifyenrolled'] = 'Notifica als usuaris inscrits.';
 $string['notifyenroller'] = 'Notifica a l\'usuari responsable de les inscripcions.';

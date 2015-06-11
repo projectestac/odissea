@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'admin', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,7 +101,6 @@ $string['cacherequesthelp'] = 'Användarspecifik cache som upphör när ansökan
 $string['cachesession'] = 'Session cache';
 $string['cachesessionhelp'] = 'Användarspecifik cache som upphör när användarens session avslutas.';
 $string['cachesettings'] = 'Cacheinställningar';
-$string['cachetext'] = 'Så länge lagras text i cache-minnet';
 $string['caching'] = 'Caching';
 $string['calendarexportsalt'] = 'Salt av export av kalender';
 $string['calendarsettings'] = 'Kalender';
@@ -136,7 +135,7 @@ $string['commonfiltersettings'] = 'Standardinställningar för filter';
 $string['commonsettings'] = 'Vanliga inställningar';
 $string['componentinstalled'] = 'En komponent har installerats';
 $string['computedfromlogs'] = 'Beräknade från loggarna sedan {$a}.';
-$string['condifmodeditdefaults'] = 'De värden du anger här definierar standardvärden som används i aktivitetsinställningarna när du skapar en ny aktivitet.';
+$string['condifmodeditdefaults'] = 'De värden du anger här definierar standardvärden som används i aktivitetsinställningarna när du skapar en ny aktivitet. Du kan också konfigurera vilka aktivitetsinställningar som anses vara avancerade.';
 $string['confeditorhidebuttons'] = 'Välj de knappar som ska vara dolda i HTML-redigeraren.';
 $string['configallcountrycodes'] = 'Detta är en lista över länder som kan väljas på olika ställen, till exempel i en användares profil. Om det lämnas tomt (standard) i förteckningen i  countries.php används engelska språkpaketetet som standard. Detta är en lista från ISO 3166-1. Annars kan du ange en kommaseparerad lista av koder, till exempel \'GB, FR, ES\';. Om du lägger till nya, icke-standardiserade koder här, måste du lägga till dem countries.php i \'en\' och ditt språkpaket.';
 $string['configallowassign'] = 'Du kan tillåta användare i rollerna på den vänstra sidan att tilldela några av rollerna i kolumnerna till andra användare.';
@@ -157,13 +156,11 @@ $string['configauthenticationplugins'] = 'Var snäll och välj de plugins som Du
 $string['configautolang'] = 'Identifiera standardspråket med hjälp av inställningen i webbläsaren. Om du avaktiverar detta så kommer standardinställningen för webbplatsen att användas.';
 $string['configautologinguests'] = 'Ska besökare automatiskt loggas in som gäster när de klickar sig in i kurser med behörighet som gäster?';
 $string['configbloglevel'] = 'Den här inställningen gör det möjligt för Dig att begränsa den nivå som kan användas för visning av användarbloggar på den här webbplatsen. Lägg märke till att de anger det maximala sammanhanget för DEN SOM DET VISAS FÖR och inte för den som har gjort inlägget i bloggen eller typerna av blogginlägg. Du kan även avaktivera bloggar helt och hållet om du inte alls vill ha dem.';
-$string['configcachetext'] = 'För större webbplatser och webbplatser som använder textfilter kan den här inställningen verkligen snabba upp saker och ting. Kopior av texter kommer att bevaras i sin processade form under den tid som är angiven här. Att ange en alltför kort tid kan göra systemet något långsammare men att ange en alltför lång tid innebär att det tar för lång tid att uppdatera långa texter (med nya länkar t.ex.).';
 $string['configcalendarcustomexport'] = 'Aktivera anpassade datumintervall för export av kalender';
 $string['configcalendarexportsalt'] = 'Denna slumpmässiga text används för att förbättra säkerheten av autentiseringstoken som används för export av kalendrar. Observera att alla aktuella tokens ogiltigförklaras om du ändrar det här hash saltet.';
 $string['configclamactlikevirus'] = 'Behandla filerna som virus';
 $string['configclamdonothing'] = 'Behandla filerna som godkända';
 $string['configclamfailureonupload'] = 'Om Du har konfigurerat clam så att det ska skanna uppladdade filer men på ett sådant sätt att det är fel gjort eller om det inte går att köra av någon anledning, hur ska det då bete sig? Om Du väljer "Behandla filerna som virus" då kommer de att flyttas till en karantän eller också tas de bort. Om Du väljer "Behandla filerna som godkända" så kommer filerna att flyttas till målkatalogen som vanligt. I vilket fall kommer administratören att få ett meddelande om att clam har misslyckats. Om Du väljer "Behandla filerna som virus" och clam av någon anledning inte fungerar som det ska (vanligtvis för att Du har angivit felaktig pathtoclam) så kommer ALLA filer att flyttas till den angivna karantänen eller tas bort. Var försiktig med denna inställning.';
-$string['configconvertformat'] = 'Om <i>latex, dvips</i> och <i>konvertera</i> är tillgängliga, visas bilderna skapas med det angivna formatet. Om det inte är aktiverat kommer mimetex att användas och det kommer att skapa GIF-bilder.';
 $string['configcookiehttponly'] = 'Detta aktiverar en ny PHP 5.2.0 egenskap - webbläsare instrueras att skicka en cookie med endast den riktiga http-förfrågan. Cookies bör inte vara tillgängliga för skriptspråk. Detta stöds inte av alla webbläsare så det kanske inte är fullt kompatibelt med nuvarande kod. Detta hjälper till att förhindra vissa typer av XSS attacker.';
 $string['configcookiesecure'] = 'Om servern bara accepterar https-anslutningar så rekommenderar vi att man aktiverar utskickning av säkra cookies. Om detta är aktiverat så bör du försäkra dig om att webbservern inte accepterar http:// eller ställ in en permanent vidarekoppling till https:// address. När <em>wwwroot</em> adressen inte startar med https:// så stängs den här inställningen av automatiskt.';
 $string['configcountry'] = 'Om Du väljer ett land här så kommer detta land att vara förvalt när det gäller nya användarkonton. Om Du vill tvinga användare att välja ett land så lämnar Du bara det här tomt.';
@@ -183,13 +180,11 @@ $string['configcustommenuitems'] = 'Du kan konfigurera en anpassad meny här som
 <pre>
 Moodle community|http://moodle.org
 -Moodle free support|http://moodle.org/support
--Moodle development|http://moodle.org/development
---Moodle Tracker|http://tracker.moodle.org
+-Moodle development|http://moodle.org/development --Moodle Tracker|http://tracker.moodle.org
 --Moodle Docs|http://docs.moodle.org
 -Moodle News|http://moodle.org/news
 Moodle company
--Moodle commercial hosting|http://moodle.com/hosting
--Moodle commercial support|http://moodle.com/support </pre>';
+-Moodle commercial hosting|http://moodle.com/hosting -Moodle commercial support|http://moodle.com/support </pre>';
 $string['configdbsessions'] = 'Om detta är avaktiverat så kommer den här inställningen att lagra information om aktuella sessioner. Detta är speciellt användbart för stora/hårt belastade webbplatser eller webbplatser som är byggda som kluster av servrar. På de flesta webbplatser så borde detta antagligen vara avaktiverat så att serverns hårddisk används istället. Lägg märke till att Du genom att ändra den här inställningen nu kommer att logga ut alla aktuella användare (inkl Dig själv). Om du använder MySQL var då snäll och säkerställ att \'max_allowed_packet\' i my.cnf (eller my.ini) är på åtminstone 4M.';
 $string['configdebug'] = 'Om Du aktiverar det här så utökar Du PHP:s felrapportering. Systemet ger då ifrån sig fler varningar. Detta är av värde bara för utvecklare.';
 $string['configdebugdisplay'] = 'Om detta är aktiverat så kommer felrapporteringen att ske via en HTML-sida. Detta är praktiskt men XHTML, JS, cookies och HTTP headers
@@ -208,18 +203,17 @@ $string['configdenyemailaddresses'] = 'Om Du vill avvisa e-postadresser från sp
 $string['configdisableuserimages'] = 'Avaktivera möjligheten för användare att ändra bilder i användarprofilerna.';
 $string['configdisplayloginfailures'] = 'Det här kommer (för utvalda användare) att visa information om inloggningar som inte har lyckats.';
 $string['configdndallowtextandlinks'] = 'Aktivera eller inaktivera dra och släppa av text och länkar på en kurssida, vid sidan av att dra och släppa filer. Observera att släpa på text i Firefox eller mellan olika webbläsare är opålitlig och kan resultera i att inga data laddas upp, eller felaktig text laddas upp.';
+$string['configdoclang'] = 'Detta språk kommer att användas i länkar för dokumentationen.';
 $string['configdocroot'] = 'Detta definierar vägen till Moodle Docs. Du kan ändra detta om Du vill ha Du vill ha Din egen specialutformade externa dokumentation. Om Du gör det så måste Du dock tänka på att sökvägarna i Din dokumentation använder samma format som http://docs.moodle.org.';
 $string['configdoctonewwindow'] = 'Om Du aktiverar detta så kommer länkarna till Moodle Docs att visas i ett nytt fönster.';
 $string['configeditordictionary'] = 'Det här värdet kommer att användas om det inte finns någon stavningskontroll för aspell på användarens eget språk.';
 $string['configeditorfontlist'] = 'Välj de typsnitt som ska visas i redigerarens nedrullningsmeny.';
 $string['configemailchangeconfirmation'] = 'Kräv en e-postbekräftelse när användarna ändrar sin e-postadress i sin profil.';
-$string['configenableajax'] = 'Den här inställningen tillåter Dig att kontrollera användningen av AJAX (avancerat gränssnitt mellan klient och server som använder sig av JavaScript) globalt på webbplatsen. Om den här inställningen är aktiverad så kommer användarna fortfarande att kunna göra ett val i sina profiler, annars kommer AJAX att vara avaktiverat för alla.';
 $string['configenableblogs'] = 'Detta alternativ ger alla användare av webbplatsen tillgång till en egen blogg.';
 $string['configenablecalendarexport'] = 'Aktivera export av och prenumeration på kalendrar.';
 $string['configenablecomments'] = 'Aktivera kommentarer';
 $string['configenablecourserequests'] = 'Det här kommer att tillåta alla användare att begära att en kurs ska skapas.';
 $string['configenabledevicedetection'] = 'Möjliggör upptäckt av mobiler, smartphones, plattor eller standard (stationära datorer, bärbara datorer, etc.) för tillämpning av teman och andra funktioner.';
-$string['configenablegroupmembersonly'] = 'Aktiverad kan tillgång till aktiviteter begränsas till gruppens medlemmar. Detta kan resultera i en ökad lasten på servern. Dessutom måste betygsbokens kategorier sättas upp på ett visst sätt för att säkerställa att aktiviteten är dold från icke-gruppmedlemmar.';
 $string['configenablemobilewebservice'] = 'Aktivera mobiltjänst för den officiella Moodle app-en eller annan app som begär det. För mer information, läs {$a}';
 $string['configenablerssfeeds'] = 'Den här omkopplaren kommer att aktivera RSS-inmatningar från hela webbplatsen. För att faktiskt se några förändringar så behöver Du aktivera RSS-inmatningar i de individuella modulerna också - gå till inställningar för moduler i Administration->konfiguration';
 $string['configenablerssfeedsdisabled'] = 'Detta är inte tillgängligt eftersom RSS-inmatningar är avaktiverade på hela webbplatsen. För att aktivera dem behöver Du gå till inställning av variabler i Administration->konfiguration';
@@ -246,7 +240,8 @@ $string['configfrontpagecourselimithelp'] = 'Högsta antal kurser som visas på 
 $string['configfrontpageloggedin'] = 'De komponenter som Du väljer här ovan kommer att visas på webbplatsens ingångssida (första/hem) när en användare har loggat in.';
 $string['configfullnamedisplay'] = 'Detta definierar hur fullständiga namn visas. För de flesta enspråkiga webbplatser är standardinställningen \'För- och efternamn\' den bästa, men Du kan välja att dölja efternamnet helt och hållet eller låta det aktuella språkpaketet avgöra (en del språk har olika konventioner).';
 $string['configgeoipfile'] = 'Placering av den binära datafilen GeoIP City. Den här filen är inte del av Moodle-distributionen så därför måste du hämta den separat från <a href="http://www.maxmind.com/">MaxMind</a>.
-Du kan antingen köpa en kommersiell version eller använda den fria versionen. <br /> Ladda bara helt enkelt ner <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a> och packa upp den i katalogen "{$a}" på din server.';
+Du kan antingen köpa en kommersiell version eller använda den fria versionen. <br /> Ladda bara helt enkelt ner <a href="http://www.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" >http://www.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a>
+och packa upp den i katalogen "{$a}" på din server.';
 $string['configgetremoteaddrconf'] = 'Om din server finns bakom en reverse proxy, kan du använda denna inställning för att ange vilka HTTP-headers som är betrodda med fjärran IP-adressen. Headers läses i ordning, den första tillgängliga används.';
 $string['configgradebookroles'] = 'Den här inställningen tillåter Dig att kontrollera vem som dyker upp i betygskatalogen. Användare behöver ha åtminstone en av dessa roller i kurs för att de ska visas i betygskatalogen för den kursen.';
 $string['configgradeexport'] = 'Välj vilka exportformat för betygskatalogen som Du vill använda som Dina primära metoder för att exportera betyg. De valda \'plugin\'-programmen kommer då att ställas in och använda ett fält som kallas för \'senast exporterade\' för varje betyg. Detta kan t.ex. komma att resultera i det att exporterade betygsdata identifieras som \'ny/a\' eller \'uppdaterade\'. Om Du är osäker på vad detta innebär så bör Du inte markera några val angående detta.';
@@ -308,7 +303,8 @@ $string['configproxyport'] = 'Om servern behöver använda en proxy-dator, ange 
 $string['configproxytype'] = 'Typ av webbproxy (PHP5 och cURL-extension krävs för SOCKS5-stöd).';
 $string['configproxyuser'] = 'Det behövs ett användarnamn för att få tillgång till internet via proxy, detta är  tomt om det inte finns något. (PHP cURL extension required).';
 $string['configquarantinedir'] = 'Om Du vill att clam AV ska flytta virussmittade filer till en katalog för karantän så skriver Du in det här. Det måste skrivbart för webbservern. Om Du lämnar detta tomt, eller om Du skriver in en katalog som inte finns eller som är skrivskyddad, så kommer de virussmittade filerna att tas bort. Ta inte med något avslutande snedstreck \'/\'.';
-$string['configrecaptchaprivatekey'] = 'En teckensträng som används för kommunikation mellan din Moodle-server och recaptcha.net-servern. Hämta en för den här webbplatsen genom att besöka  http://recaptcha.net.';
+$string['configrecaptchaprivatekey'] = 'En teckensträng som används för kommunikation mellan din Moodle-server och
+recaptcha.net-servern. Hämta en för den här webbplatsen genom att besöka  http://recaptcha.net.';
 $string['configrecaptchapublickey'] = 'En teckensträng som används för att visa
 reCAPTCHA-elementet i formuläret för att  registrera sig. Gerererad av http://recaptcha.net.';
 $string['configrequestcategoryselection'] = 'Tillåt valet av en kategori när du begär en kurs.';
@@ -349,7 +345,7 @@ $string['configstatsmaxruntime'] = 'Behandling av statistik kan vara ganska resu
 $string['configstatsmaxruntime2'] = 'Behandling av statistik kan bli ganska intensiv så därför bör du ange max hur länge det får ta att samla in all statistik för en dag. Max antal dagar som kan behandlas i en cron-körning är 3.';
 $string['configstatsmaxruntime3'] = 'Detta anger den maximala tiden som tillåts för att beräkna statistiken för en dag, men kom ihåg att beräkning av statistik kraftigt kan belasta serverns kapacitet. Det maximala antalet dagar som beräknas i en cron körning kan anges nedan.';
 $string['configstatsruntimedays'] = 'Detta anger det maximala antalet dagar som beräknas i varje statistikberäkning. När väl statistiken är uppdaterad kommer endast en dag att beräknas, så anpassa detta värde beroende på din serverbelastning, ange mindre värde om kortare cron körningar behövs.';
-$string['configstatsruntimestart'] = 'När ska  cron-jobbet som sköter behandlingen av statistiken börja? Ange olika tider om det finns ett flertal Moodle-installationer på samma fysiska server.';
+$string['configstatsruntimestart'] = 'När ska  cron-jobbet som sköter behandlingen av statistiken <b>börja</b>? Var snäll och ange olika tider om det finns ett flertal Moodle-installationer på samma fysiska server.';
 $string['configstatsuserthreshold'] = 'Den här inställningen anger det minsta antal registrerade användare som krävs för att en kurs ska tas med i statistiska beräkningar.';
 $string['configstrictformsrequired'] = 'Om aktiverat hindras användare från att ange mellanslag eller radbrytning i obligatoriska fält i formulär.';
 $string['configstripalltitletags'] = 'Avmarkera den här inställningen om Du vill tillåta HTML-taggar i namn på resurser och aktiviteter.';
@@ -373,7 +369,6 @@ för Yui bibliotek. Denna inställning ska vara aktiverad på produktionsmilöer
 $string['confirmation'] = 'Bekräftelse';
 $string['confirmdeletecomments'] = 'Du håller på att ta bort kommentarer, är Du säker?';
 $string['confirmed'] = 'Bekräftad';
-$string['convertformat'] = '<i>omvandla</i> formatet för output';
 $string['cookiehttponly'] = 'Endast http cookies';
 $string['cookiesecure'] = 'Endast säkra cookies';
 $string['country'] = 'Standardval av land';
@@ -381,7 +376,7 @@ $string['coursecontact'] = 'Administratörer av kurs';
 $string['coursecontact_desc'] = 'Den här inställningen tillåter Dig att kontrollera vem som dyker upp på kursbeskrivningen. Användarna kommer att behöva ha åtminstone en av dessa roller för att de ska vara synliga på beskrivningen av den kursen.';
 $string['courselistshortnames'] = 'Visa utökad kursnamn';
 $string['courselistshortnames_desc'] = 'Om aktiverat kommer kursernas kortnamn att visas som tillägg till hela namnet i kurslistor. Om så krävs kan förlängda kursnamn ändras genom att ändra \'courseextendednamedisplay\' språksträngen med språkanpassningsverktyget.';
-$string['coursemgmt'] = 'Hantera kurser och kategorier';
+$string['coursemgmt'] = 'Lägg till/redigera kurser';
 $string['courseoverview'] = 'Översikt över kurs';
 $string['courserequestnotify'] = 'Meddelande om begäran om kurs';
 $string['courserequestnotifyemail'] = 'Användaren {$a->user} har begärt en ny kurs på {$a->link}';
@@ -399,10 +394,9 @@ $string['cronerrorpassword'] = 'Du har tyärr inte angivit något giltigt lösen
 $string['cron_help'] = 'cron.php underhållskriptet hjälper några av Moodle modulerna för att utföra uppgifter på regelbunden basis, såsom utskick av kopior av nya inlägg i forume. En mekanism krävs för att köra skriptet regelbundet t.ex. var 5 minuter';
 $string['cronremotepassword'] = 'Lösenord för tillträde till cron på distans.';
 $string['cronwarning'] = 'Skriptet <a href="cron.php">cron.php skript för underhåll</a> har inte körts under de senaste 24 timmarna.';
-$string['ctyperecommended'] = 'Att installera PHP tillägget ctype är starkt rekomenderat för att förbättra webbplatsens prestanda, speciellt om din webbplats stödjer icke-latinska språk.';
+$string['cronwarningcli'] = 'Underhållsscriptet cli/cron.php har inte körts på minst 24 timmar.';
 $string['ctyperequired'] = 'PHP tillägget ctype krävs numer av Moodle för att förbättra webbplatsprestandan och för att ge flerspråkskapacitet.';
 $string['curlcache'] = 'cURL cache TTL';
-$string['curlrecommended'] = 'Vi rekommenderar starkt att Du installerar det valfria Curl-biblioteket för att aktivera Moodles funktionalitet för nätverkande.';
 $string['curlrequired'] = 'PHP tillägget cURL krävs nu av Moodle för att kommunicera med Moodle arkiv.';
 $string['curltimeoutkbitrate'] = 'Bitrate att använda vid beräkning av curl timeout (Kbps)';
 $string['curltimeoutkbitrate_help'] = 'Denna inställning används för att beräkna lämplig timeout under stora cURL förfrågningar. Som del i denna beräkning görs en HTTP HEAD förfrågan för att avgöra storleken på innehållet. Om detta sätts till 0 förhindras denna begäran från att utföras.';
@@ -413,14 +407,6 @@ $string['custommenuitems'] = 'Komponenter på standardmenyn';
 $string['datarootsecurityerror'] = '<p><strong>SÄKERHETS VARNING!</strong></p><p>Din rotkatalog för data fins på fel plats och är tillgänglig från webben. Detta innebär att alla dina privata filer är tillgängliga för alla i världen, och vissa av dessa filer kan användas för att få otillåten åtkomst till din webbplats!</p>
 <p>Du <em>måste</em> flytta din rotkatalog för data (dataroot directory) ({$a}) till en ny plats som inte är innanför din publika webbkatalog, samt uppdatera <code>$CFG->dataroot</code> inställningen i din config.php till den nya katalogen.</p>';
 $string['datarootsecuritywarning'] = 'Den konfiguration som Du använder för webbplatsen kanske inte är säker. Var snäll och säkerställ att din dataroot-katalog ({$a}) inte är direkt tillgänglig via webben.';
-$string['dbmigrate'] = 'Migration av Moodles databas';
-$string['dbmigrateconnecerror'] = 'Det gick inte att ansluta till den angivna databasen.';
-$string['dbmigrateencodingerror'] = 'Den databas som har angivits använder teckenuppsättningen {$a} snarare än den UNICODE/UTF8 som krävs.<br />Var snäll och ange en annan.';
-$string['dbmigratepostgres'] = 'Det verkar som om Du använder PostgreSQL som databasserver. För att kunna gå vidare med migrationsprocessen behöver Du, manuellt, skapa en ny databas med teckenuppsättningen "UNICODE"(PostgreSQL 7) eller "UTF8" (PostgreSQL 8) för att lagra Dina migrerade data. Var snäll och mata in inställningarna för kopplingen till Din nya databas här nedan för att fortsätta:';
-$string['dbmigratewarning'] = 'Var snäll och säkerställ att Du har säkerhetskopierat Din databas till Moodle innan Du påbörjar den här processen: Om Du inte är säker på hur det ska gå till så bör Du kontakta Din systemadministratör. Din Moodle-webbplats kommer att försättas i läge för underhåll efter det att Du har påbörjat migrationsprocessen.';
-$string['dbmigratewarning2'] = '<b>VARNING: Du håller på att starta en process för migration av databasen. Var snäll och säkerställ noga att hela Din databas till Moodle har säkerhetskopierats.';
-$string['dbmigrationdeprecateddb'] = '<font color="#ff0000">Den här databasen har migrerats till en ny UTF8-kodad databas och är föråldrad.Var snäll och redigera Din config.php och använd den nya databasen för den här instansen av Moodle.</font>';
-$string['dbmigrationdupfailed'] = 'Dupliceringen av databasen misslyckades, troligen p g a följande fel:<font color="#ff0000"><pre>{$a}</pre></font>';
 $string['dbsessions'] = 'Använd databasen för information om session';
 $string['debug'] = 'Meddelanden om felsökning (debug)';
 $string['debugall'] = 'ALLA: Visa alla rimliga meddelanden angående felsökning i PHP.';
@@ -457,11 +443,11 @@ $string['disableuserimages'] = 'Avaktivera bilder i användarnas profiler';
 $string['displayerrorswarning'] = 'Aktiverande av PHP inställning <em>display_errors</em> rekommenderas inte på servrar i drift med användare eftersom vissa felmeddelanden kan avslöja känslig information om din server.';
 $string['displayloginfailures'] = 'Visa misslyckade inloggningsförsök för';
 $string['dndallowtextandlinks'] = 'Dra och släpp uppladdning av text/länkar';
+$string['doclang'] = 'Språk för dokumentation';
 $string['docroot'] = 'Dokument root för Extern dokumentation av Moodle';
 $string['doctonewwindow'] = 'Öppna i nytt fönster';
 $string['download'] = 'Ladda ner';
 $string['edithelpdocs'] = 'Redigera hjälpdokument';
-$string['editingnoncorelangfile'] = 'Du håller på att försöka modifiera en översättning av en tredjeparts-modul eller ett \'plugin\'-program. Du kan bara spara sådana översättningar i Din _local-mapp. Du kanske vill flytta filen med översättningen till modulens \'lang\'-mapp och/eller skicka den till den som underhåller den modulen.';
 $string['editlang'] = '<b>Redigera</b>';
 $string['editorbackgroundcolor'] = 'Bakgrundsfärg';
 $string['editordictionary'] = 'Ordlista för redigerare';
@@ -487,7 +473,6 @@ $string['emoticons_desc'] = 'Detta formulär definierar uttryckssymboler (eller 
 $string['emoticonsreset'] = 'Återställ inställningarna för "smilies" till standardvärden';
 $string['emoticontext'] = 'Text';
 $string['emptysettingvalue'] = 'Tom';
-$string['enableajax'] = 'Aktivera AJAX';
 $string['enableblogs'] = 'Aktivera bloggar';
 $string['enablecalendarexport'] = 'Aktivera export av kalender';
 $string['enablecomments'] = 'Aktivera kommentarer';
@@ -498,7 +483,6 @@ $string['enabled'] = 'Aktiverat';
 $string['enabledevicedetection'] = 'Aktivera detektering av enhet';
 $string['enablegravatar'] = 'Aktivera Gravatar';
 $string['enablegravatar_help'] = 'När funktionen är aktiverad kommer Moodle att försöka hämta en bild för användarprofllen från Gravatar, gäller bara om användaren inte har laddat upp en bild.';
-$string['enablegroupmembersonly'] = 'Aktivera endast medlemmar i grupp';
 $string['enablemobilewebservice'] = 'Aktivera webbtjänster för mobila enheter';
 $string['enablerecordcache'] = 'Aktivera cachning av poster';
 $string['enablerssfeeds'] = 'Aktivera RSS-matningar';
@@ -506,7 +490,6 @@ $string['enablesafebrowserintegration'] = 'Aktivera integration av webbläsaren 
 $string['enablestats'] = 'Aktivera statistik';
 $string['enabletgzbackups'] = 'Aktivera ny backup-format';
 $string['enabletgzbackups_desc'] = 'Om aktiverat kommer framtida säkerhetskopieringar att skapas i ett nytt format för fil komprimering för .mbz filer (internt sparat som tar.gz filer). Detta tar bort restriktionen på storlek för säkerhetskopia på 4GB och kan förbättra prestandan. Återställning stödjer båda formaten och skillnaden bör vara obefintlig för användare.';
-$string['enabletgzbackups_nozlib'] = 'PHP tillägget zlib är inte tillgängligt. Det nya säkerhetskopieringsformatet är beroende av detta tillägg och kommer avaktiveras tills zlib är installerat och aktiverat.';
 $string['enabletrusttext'] = 'Aktivera tillförlitligt innehåll';
 $string['enablewebservices'] = 'Aktivera webbtjänster';
 $string['enablewsdocumentation'] = 'Dokumentation av webbtjänster';
@@ -537,7 +520,6 @@ $string['experimental'] = 'Experimentell';
 $string['experimentalsettings'] = 'Inställningar för experimentell';
 $string['extendedusernamechars'] = 'Tillåt specialtecken i användarnamn';
 $string['extramemorylimit'] = 'Extra minnesgräns för PHP';
-$string['fatalmagicquotesruntime'] = '<p> Ett allvarligt konfigurationsfel har upptäckts, vänligen meddela serveradministratören. </p><p> För att fungera korrekt, kräver Moodle att administratören ändrar PHP inställningar. </p><p> <code>magic_quotes_runtime</code> måste vara inställd på <code>off</code> . </p><p> Denna inställning kontrolleras genom att redigera <code>php.ini</code> , Apache/IIS <br /> eller <code>.htaccess</code> -filen på servern. </p>';
 $string['fatalsessionautostart'] = '<p> Ett allvarligt konfigurationsfel har upptäckts, vänligen meddela serveradministratören. </p><p> För att fungera korrekt, kräver Moodle att administratören ändrar PHP inställningar. </p><p> <code>session.auto_start</code> måste vara inställd på <code>off</code> . </p><p> Denna inställning kontrolleras genom att redigera <code>php.ini</code> , Apache/IIS <br /> eller <code>.htaccess</code> -filen på servern. </p>';
 $string['filecreated'] = 'En ny fil har skapats';
 $string['filestoredin'] = 'Spara fil till katalog:';
@@ -550,10 +532,10 @@ $string['filtersettings'] = 'Inställningar för filter';
 $string['filtersettingsgeneral'] = 'Generella inställningar för filter';
 $string['filteruploadedfiles'] = 'Filtrera uppladdade filer';
 $string['forcelogin'] = 'Tvinga användare att logga in';
-$string['forceloginforprofileimage'] = 'Tvinga användarna att logga in för att se användarnas bilder';
+$string['forceloginforprofileimage'] = 'Tvinga användarna att logga in för att se användarens bilder';
 $string['forceloginforprofileimage_help'] = 'Om aktiverad, måste användarna logga in för att se  användarprofilsbilder, standard användarbilden kommer att användas i alla e-postmeddelanden.';
 $string['forceloginforprofiles'] = 'Tvinga användare att logga in för profiler';
-$string['forcetimezone'] = 'Tvinga tidszon';
+$string['forcetimezone'] = 'Tvinga standardinställd tidszon';
 $string['formatuninstallwithcourses'] = 'Det finns {$a->count} kurser som använder {$a->format}. Deras format kommer att ändras till {$a->defaultformat} (förvalt format för denna webbplats). Vissa formatspecifika data kan komma att förloras. Är du säker på att du vill fortsätta?';
 $string['frontpage'] = 'Ingångssida';
 $string['frontpagebackup'] = 'Säkerhetskopia för ingångssida';
@@ -567,12 +549,10 @@ $string['frontpageroles'] = 'Roller på ingångssidan';
 $string['frontpagesettings'] = 'Inställningar på ingångssidan';
 $string['fullnamedisplay'] = 'Namn i fullt format';
 $string['fullnamedisplayprivate'] = 'Format fullständigt namn - privat';
-$string['gdrecommended'] = 'GD biblioteket används för konvertering av bilder, om de saknas kommer vissa funktioner såsom bilder av användarprofil inte visas.';
 $string['gdrequired'] = 'Tillägget GD krävs nu av Moodle för bildkonvertering.';
 $string['generalsettings'] = 'Allmänna inställningar';
 $string['geoipfile'] = 'Datafil för GeoIP City';
 $string['getremoteaddrconf'] = 'Källa till loggad IP-adress';
-$string['globalswarning'] = '<p><strong>Säkerhetsvarning</strong>: för att fungera som det ska så kräver Moodle <br /> att du gör vissa ändringar i dina aktuella inställningar för PHP.</p><p>Du <em>måste</em> ställa in <code>register_globals=off</code>.</p><p>Den här inställningen kan du styra genom att redigera din <code>php.ini</code>, Apache/IIS <br />konfiguration eller <code>.htaccess</code> file.</p>';
 $string['googlemapkey3'] = 'API-nyckel V3 för Google Maps';
 $string['googlemapkey3_help'] = 'Du måste ange en specifik nyckel för att använda Google Maps för visualisering av IP address uppslagning. Du kan skaffa denna nyckel utan kostnad på <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>';
 $string['gotofirst'] = 'Gå till den första saknade strängen';
@@ -606,7 +586,6 @@ $string['htmlsettings'] = 'Inställningar för HTML';
 $string['http'] = 'HTTP';
 $string['httpsecurity'] = 'HTTP säkerhet';
 $string['hubs'] = 'Hubbar';
-$string['iconvrecommended'] = 'Du rekommenderas starkt att installera det valfria ICONV-biblioteket. Detta förbättrar webbplatsens prestanda, speciellt om Din webbplats stödjer icke-latinska språk.';
 $string['iconvrequired'] = 'Det är obligatoriskt att installera ett ICONV-tillägg.';
 $string['ignore'] = 'Låt detta vara';
 $string['includemoduleuserdata'] = 'Ta med modulens användardata';
@@ -632,8 +611,6 @@ $string['langmenu'] = 'Visa språkmenyn';
 $string['langpackwillbeupdated'] = 'Under uppgraderingen kommer Moodle att försöka uppdatera det aktuella valda språkpaketet. ';
 $string['langstringcache'] = 'Cacha alla språksträngar';
 $string['languagesettings'] = 'Inställningar för språk';
-$string['latexpreamble'] = 'LaTeX utkast';
-$string['latexsettings'] = 'Inställningar för LaTeX Renderer';
 $string['latinexcelexport'] = 'Teckenuppsättning för Excel';
 $string['legacyfilesaddallowed'] = 'Tillåt att lägga till gammaldags kursfiler';
 $string['legacyfilesaddallowed_help'] = 'Om en kurs har gammaldags kursfiler, tillåt nya filer och mappar att läggas till.';
@@ -677,7 +654,7 @@ $string['loginpasswordautocomplete_help'] = 'Om denna funktion är avstängd til
 $string['loglifetime'] = 'Spara loggar i';
 $string['longtimewarning'] = 'Var snäll och notera att detta kan ta lång tid.';
 $string['maintenancemode'] = 'i läge för underhåll';
-$string['maintenancemodeisscheduled'] = 'Webbplatsen övergår till läge för underhåll om {$a} minuter';
+$string['maintenancemodeisscheduled'] = 'Denna webbplats kommer övergå till läge för underhåll om {$a->min} minuter {$a->sec} sekunder';
 $string['maintfileopenerror'] = 'Fel i samband med att filerna för underhål skulle öppnas';
 $string['maintinprogress'] = 'Underhåll pågår';
 $string['manageformats'] = 'Hantera kursformat';
@@ -696,6 +673,8 @@ $string['maturitycorewarning'] = 'Versionen av Moodle som du vill installera ell
 $string['maxbytes'] = 'Maximal storlek på uppladdade filer';
 $string['maxconsecutiveidentchars'] = 'Efter varandra följande identiska tecken';
 $string['maxeditingtime'] = 'Maximal tillåten tid för att redigera inlägg';
+$string['maxtimelimit'] = 'Maximal tidsgräns';
+$string['maxtimelimit_desc'] = 'För att begränsa maximal exekveringstid för PHP som Moodle tillåter utan att utmatning visas, ange här ett värde i sekunder. 0 betyder att Moodle standardbegränsningar används. Om du har en front-end-server med egen tidsgräns, ställ in detta värde lägre för att få PHP fel i loggarna. Gäller ej CLI skript.';
 $string['maxusersperpage'] = 'Högsta antal användare per sida';
 $string['mbstringrecommended'] = 'Du rekommenderas starkt att installera det valfria MBSTRING-biblioteket. Detta förbättrar webbplatsens prestanda, speciellt om Din webbplats stödjer icke-latinska språk.';
 $string['mediapluginavi'] = 'Aktivera .avi-filter';
@@ -739,13 +718,11 @@ $string['moodleorghubname'] = 'Moodle.net';
 $string['multilangforceold'] = 'Tvinga fram den gamla syntaxen för flerspråkigt innehåll <span> utan  class="multilang" och <lang>';
 $string['mustenablestats'] = 'Statistik har ännu inte aktiverats för den här webbplatsen.';
 $string['mycoursesperpage'] = 'Antal kurser';
-$string['mymoodle'] = 'Mitt hem';
+$string['mymoodle'] = 'Mitt Moodle';
 $string['mymoodleredirect'] = 'Tvinga användare att använda Mitt Moodle';
-$string['mypage'] = 'Standardformat för Mitt hem-sida';
+$string['mypage'] = 'Standardformat för MittMoodle-sida';
 $string['mypagelocked'] = 'Lås standardsidan';
 $string['myprofile'] = 'Standardformatpå profilsida';
-$string['mysql416bypassed'] = 'Om Du emellertid på Din webbplats använder BARA språk som är kodade enligt ISO-8859-1 så kan Du fortsätta att använda Din aktuella installation av MySQL 4.1.12 (eller högre).';
-$string['mysql416required'] = 'MySQL 4.1.16 är den äldsta version som Du kan använda tillsammans med Moodle 1.6 om Du vill säkerställa att alla data kan konverteras till UTF-8 i framtiden.';
 $string['navadduserpostslinks'] = 'Lägg till  länkar för att visa användarinlägg';
 $string['navadduserpostslinks_help'] = 'Om aktiverad kommer två länkar att läggas till varje användare i navigeringen för att visa de diskussioner användaren har startat och de inlägg som användaren har gjort i forum på hela webbplatsen eller i specifika kurser.';
 $string['navcourselimit'] = 'Begränsning av kurs';
@@ -783,9 +760,6 @@ $string['order2'] = 'Andra';
 $string['order3'] = 'Tredje';
 $string['order4'] = 'Fjärde';
 $string['passwordpolicy'] = 'Policy för lösenord';
-$string['pathconvert'] = 'Sökväg för <i>convert</i> binär';
-$string['pathdvips'] = 'Sökväg för <i>dvips</i> binär';
-$string['pathlatex'] = 'Sökväg för <i>latex</i> binär';
 $string['pathtoclam'] = 'Sökväg till clam AV';
 $string['pathtodot'] = 'Sökväg till dot';
 $string['pathtodu'] = 'Sökväg till du';
@@ -799,8 +773,6 @@ $string['perfdebug'] = 'Info om prestanda';
 $string['performance'] = 'Prestanda';
 $string['pgcluster'] = 'PostgreSQL kluster';
 $string['pgclusterdescription'] = 'PostgreSQL version/kluster parameter för aktiviteter av typ kommandorad. Om Du bara har en postgresql i Ditt system eller om Du inte vet vad detta är så bör Du lämna tdetta tomt.';
-$string['php50restricted'] = 'PHP 5.0.x har ett antal kända problem. Var snäll och uppgradera till 5.1.x eller nedgradera till 4.3.x eller 4.4.x';
-$string['php533warning'] = 'PHP 5.3.3 och nyare rekommenderas';
 $string['phpfloatproblem'] = 'Upptäckte problem vid hanteringen av flyttal i PHP - {$a}';
 $string['pleaserefreshregistration'] = 'Din webbplats har registrerats på moodle.org, var snäll och tänk efter om du vill uppdatera registreringen om det har inträffat väsentliga förändringar sedan din senaste uppdatering, på {$a}.';
 $string['pleaseregister'] = 'Var snäll och registrera Din webbplats genom att klicka på den här knappen';
@@ -825,7 +797,7 @@ $string['profiledefaultcategory'] = 'Andra fält';
 $string['profiledefaultchecked'] = 'Förvald som standard';
 $string['profiledefaultdata'] = 'Förvalt standardvärde';
 $string['profiledeletecategory'] = 'Definierar en kategori';
-$string['profiledeletefield'] = 'Tar bort fält \'{$a}\'';
+$string['profiledeletefield'] = 'Tar bort ett fält';
 $string['profiledescription'] = 'Beskrivning av ett fält';
 $string['profiledscript'] = 'Detta skript har profilerats';
 $string['profiledscriptview'] = 'Visa profileringsinformation för det här skriptet';
@@ -877,8 +849,6 @@ $string['proxytype'] = 'Typ av proxy';
 $string['proxyuser'] = 'Användarnamn för proxy';
 $string['purgecaches'] = 'Töm allt i cacheminnet';
 $string['purgecachesfinished'] = 'Allt i cacheminnet tömdes';
-$string['qtyperqpwillberemoved'] = 'Under uppgraderingen kommer RQP-frågan att tas bort. Du använde inte den här typen av frågor så Du bör inte stöta på några problem.';
-$string['qtyperqpwillberemovedanyway'] = 'Under uppgraderingen kommer RQP-frågan att tas bort. Du har några RQP-frågor i Din databas och de kommer att sluta att fungera om Du inte installerar om koden från http://moodle.org/mod/data/view.php?d=13&amp;rid=797 innan Du fortsätter med uppgraderingen.';
 $string['quarantinedir'] = 'Katalog för karantän';
 $string['question'] = 'Fråga';
 $string['questioncwqpfscheck'] = 'En eller flera \'slumpmässiga\' frågor i testet har ställts in för att välja frågor från en blandning av gemensamma och separata kategorier av frågor. Det finns en mer detaljerad rapport <a href="{$a->reporturl}">här</a> och Du kan läsa mer på en sida ur dokumentationen för Moodle a href="{$a->docsurl}">här</a>.';
@@ -926,8 +896,8 @@ $string['security'] = 'Säkerhet';
 $string['selectdevice'] = 'Välj enhet';
 $string['selecttheme'] = 'Välj tema för enhet {$a}';
 $string['server'] = 'Server';
-$string['serverchecks'] = 'Server kontroller';
-$string['serverlimit'] = 'Server gräns';
+$string['serverchecks'] = 'Serverkontroller';
+$string['serverlimit'] = 'Begränsning av server';
 $string['sessioncookie'] = 'Prefix för cookie';
 $string['sessioncookiedomain'] = 'Domän för cookie';
 $string['sessioncookiepath'] = 'Sökväg för cookie';
@@ -1002,7 +972,6 @@ $string['tokenizerrecommended'] = 'Vi rekommenderar att Du installerar det valfr
 $string['tools'] = 'Admin verktyg';
 $string['unattendedoperation'] = 'Operation som inte monitoreras';
 $string['unbookmarkthispage'] = 'ta bort bokmärket för den här sidan';
-$string['unicoderecommended'] = 'Vi rekommenderar att Du lagrar alla Dina data i Unicode (UTF-8). Nya installationer bör genomföras i databaser som har Unicode som förvald standardinställning för teckenuppsättningar. Om Du uppgraderar så bör Du genomföra processen för migration till UTF-8 (se sidan för administration).';
 $string['unicoderequired'] = 'Det är ett krav att Du lagrar alla Dina data i Unicode (UTF-8). Nya installationer måste genomföras i databaser som har Unicode som förvald standardinställning för teckenuppsättningar. Om Du uppgraderar så bör Du genomföra processen för migration till UTF-8 (se sidan för administration).';
 $string['uninstallplugin'] = 'Avinstallera';
 $string['unsupported'] = 'Stödjs inte';
@@ -1022,7 +991,6 @@ $string['updatecomponent'] = 'Uppdatera komponent';
 $string['updateminmaturity'] = 'Obligatorisk kodmognad';
 $string['updatenotifications'] = 'Meddelanden om uppdateringar';
 $string['updatenotificationsubject'] = 'Moodle uppdateringar finns tillgängliga ({$a->siteurl})';
-$string['upgrade197noticesubject'] = 'Säkerhetsnotiser för uppgradering till Moodle 1.9.7';
 $string['upgradeerror'] = 'Okänt fel vid uppgradering av {$a->plugin} till version {$a->version}, kan inte fortsätta.';
 $string['upgradeforumread'] = 'En ny egenskap har lagts till i Moodle 1.5. Den innebär att man kan spåra lästa/olästa inlägg. <br />För att använda denna funktion behöver du <a href="{$a}">uppdatera dina tabeller</a>.';
 $string['upgradeforumreadinfo'] = 'En ny egenskap har lagts till i Moodle 1.5. Den innebär att man kan spåra lästa/olästa inlägg. För att använda denna funktion behöver du uppdatera dina tabeller med all spårande information för befintliga inlägg. Beroende på hur stor Din webbplats är så kan detta ta en hel del tid och utgöra en belastning på Din databas. Därför är det bäst om Du kan göra detta under en lugn period. Din webbplats kommer emellertid att fortsätta att fungera under denna uppgradering och användarna kommer inte att påverkas. När Du väl har påbörjat denna process så bör Du också fullfölja den (lämna webbläsarens fönter öppet). Skulle Du råka stänga det och avbryta processen så är det ingen stor olycka. Du kan börja om igen. Vill Du påbörja processen för uppgradering nu?';
@@ -1032,10 +1000,9 @@ $string['upgradepluginsinfo'] = 'Uppdaterar plugins';
 $string['upgradesettings'] = 'Nya inställningar';
 $string['upgradesettingsintro'] = 'Inställningarna här nedan lades till under Din senaste uppgradering av Moodle. Gör  (eventuellt) nödvändiga ändringar av de förvalda standardinställningarna och klicka sedan på "Spara inställningar" längst ner på den här sidan.';
 $string['upgradestalefiles'] = 'Blandade Moodle versioner upptäckta, uppgraderingen kan inte fortsätta';
-$string['upgradestart'] = 'Uppgradera Moodle databasen nu';
+$string['upgradestart'] = 'Uppgradera';
 $string['upgradesure'] = 'Dina Moodle-filer har ändrats och Du håller på att automatiskt uppgradera Din server till den här versionen:
-</p>
-<p><strong>{$a}</strong></p>
+<p><b>{$a}</b></p>
 <p>Du kan inte ångra detta.</p><p>Lägg märke till att detta kan ta lång tid.</p>
 <p>Är Du säker på att Du vill uppgradera servern till den här versionen?</p>';
 $string['upgradetimedout'] = 'Uppgraderingen avbröts, var snäll och starta om den.';
@@ -1060,4 +1027,3 @@ $string['webproxy'] = 'Webb proxy';
 $string['webproxyinfo'] = 'Fyll i följande alternativ om din Moodle-server inte har direkt tillgång till Internet. Tillgång till Internet är nödvändigt för att du ska kunna ladda ner miljödata, språkpaket, RSS-matningar, tidszoner etc.<br /><em>PHP cURL extensionen rekommenderas starkt.</em>';
 $string['xmlrpcrecommended'] = 'Att installera det valfria xmlrpc-tillägget är nödvändigt för hub kommunikation och är användbart med tanke på webbtjänster och funktionaliteten i Moodle Nätverk.';
 $string['yuicomboloading'] = 'Laddar YUI combo';
-$string['zlibenabled'] = 'zlib aktiverat';

@@ -181,7 +181,7 @@ class OAuthSignatureMethod_RSA_SHA1 extends OAuthSignatureMethod {
         // (3) some sort of specific discovery code based on request
         //
         // either way should return a string representation of the certificate
-        throw OAuthException("fetch_public_cert not implemented");
+        throw new OAuthException("fetch_public_cert not implemented");
     }
 
     protected function fetch_private_cert(&$request) {
@@ -189,7 +189,7 @@ class OAuthSignatureMethod_RSA_SHA1 extends OAuthSignatureMethod {
         // (1) do a lookup in a table of trusted certs keyed off of consumer
         //
         // either way should return a string representation of the certificate
-        throw OAuthException("fetch_private_cert not implemented");
+        throw new OAuthException("fetch_private_cert not implemented");
     }
 
     public function build_signature(&$request, $consumer, $token) {
@@ -252,7 +252,7 @@ class OAuthRequest {
      * attempt to build up a request from what was passed to the server
      */
     public static function from_request($http_method = null, $http_url = null, $parameters = null) {
-        $scheme = (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != "on") ? 'http' : 'https';
+        $scheme = (!is_https()) ? 'http' : 'https';
         $port = "";
         if ($_SERVER['SERVER_PORT'] != "80" && $_SERVER['SERVER_PORT'] != "443" && strpos(':', $_SERVER['HTTP_HOST']) < 0) {
             $port = ':' . $_SERVER['SERVER_PORT'];

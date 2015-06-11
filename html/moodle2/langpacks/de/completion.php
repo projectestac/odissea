@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -139,7 +139,7 @@ $string['inprogress'] = 'In Bearbeitung';
 $string['manualcompletionby'] = 'Manueller Abschluss durch andere';
 $string['manualcompletionbynote'] = 'Hinweis: Die Berechtigung moodle/course:markcomplete muss für eine Rolle erlaubt sein, damit sie in der Liste erscheint.';
 $string['manualselfcompletion'] = 'Manueller eigener Abschluss';
-$string['manualselfcompletionnote'] = 'Hinweis: Der Kursabschluss-Block sollte im Kurs eingefügt werden, wenn den TN erlaubt werden soll, selber den Kurs abzuschließen.';
+$string['manualselfcompletionnote'] = 'Hinweis: Der Kursabschluss-Block sollte im Kurs eingefügt werden wenn den TN erlaubt werden soll, selber den Kurs anzuschliessen.';
 $string['markcomplete'] = 'Abgeschlossen markieren';
 $string['markedcompleteby'] = 'Abgeschlossen markiert von {$a}';
 $string['markingyourselfcomplete'] = 'Selbst abgeschlossen markiert';
@@ -166,6 +166,7 @@ $string['restoringcompletiondata'] = 'Abschlussdaten werden wiederhergestellt';
 $string['roleaggregation'] = 'Bedingung erfordert';
 $string['roleaggregation_all'] = 'ALLE gewählten Rollen kennzeichnen wenn die Bedingung erfüllt ist';
 $string['roleaggregation_any'] = 'EINIGE gewählten Rollen kennzeichnen wenn die Bedingung erfüllt ist';
+$string['roleidnotfound'] = 'Rollen-ID {$a} wurde nicht gefunden';
 $string['saved'] = 'Gesichert';
 $string['seedetails'] = 'Details ansehen';
 $string['self'] = 'Selbst';

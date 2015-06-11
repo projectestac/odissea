@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_loglive', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['livelogs'] = 'Логи за последний час';
-$string['loglive:view'] = 'Просматривать логи в реальном времени';
-$string['page'] = 'Страница {$a}';
-$string['pluginname'] = 'Логи в реальном времени';
+$string['eventcomponent'] = 'Компонент';
+$string['eventcontext'] = 'Контекст события';
+$string['eventloggedas'] = '{$a->realusername} под именем {$a->asusername}';
+$string['eventorigin'] = 'Источник';
+$string['eventrelatedfullnameuser'] = 'Затронутый пользователь';
+$string['eventreportviewed'] = 'Просмотрен отчет «События в реальном времени»';
+$string['livelogs'] = 'Записи журнала событий за последний час';
+$string['loglive:view'] = 'Просматривать отчет «События в реальном времени»';
+$string['nologreaderenabled'] = 'Нет доступных журналов событий';
+$string['pause'] = 'Остановить обновление страницы';
+$string['pluginname'] = 'События в реальном времени';
+$string['resume'] = 'Возобновить обновление страницы';
+$string['selectlogreader'] = 'Выберите журнал событий';

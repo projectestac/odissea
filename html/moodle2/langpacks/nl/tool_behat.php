@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_behat', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aim'] = 'Deze beheerstool helpt ontwikkelaars en testers om .feature-bestanden te maken die de functionaliteit van Moodle beschrijven en dan automatisch lopen.';
+$string['aim'] = 'Deze beheertool helpt ontwikkelaars en testers om .feature-bestanden te maken die de functionaliteit van Moodle beschrijft en ze automatisch laat lopen. De beschikbare definities om in .feature-bestanden te gebruiken zijn hieronder opgelijst.';
 $string['allavailablesteps'] = 'Alle beschikbare stappendefinities';
+$string['errorbehatcommand'] = 'Fout bij het lopen van het behat CLI commando. Probeer manueel "{$a} --help" op de command line te laten lopen om meer informatie over het probleem te verkrijgen.';
+$string['errorcomposer'] = 'Composer dependencies zijn niet geïnstalleerd.';
+$string['errordataroot'] = '$CFG->behat_dataroot is niet ingesteld of is ongeldig.';
+$string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot moeten geconfigureerd zijn in config.php.';
+$string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot waarden moeten verschillend zijn van $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG-> phpunit_dataroot en $CFG->phpunit_prefix.';
+$string['fieldvalueargument'] = 'Argumenten veldwaarde';
+$string['fieldvalueargument_help'] = 'Dit argument moet worden ingevuld door een veldwaarde. Er zijn vele veldtypen, eenvoudige, zoals selectievakjes of textzones of complexe,  zoals datumselectors. Je kunt  <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">gebied waarden</a> bekijken om de verwachte veldwaarde te controleren afhankelijk van het veldtype veld dat je gebruikt.';
 $string['giveninfo'] = 'Given. Processen die de omgeving instellen';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lees {$a} voor informatie over installatie en het uitvoeren van tests';
-$string['moreinfoin'] = 'Meer info op {$a}';
 $string['newstepsinfo'] = 'Lees {$a} voor info over hoe je nieuwe definitiestappen kunt toevoegen';
 $string['newtestsinfo'] = 'Lees {$a} voor informatie over hoe nieuwe testen geschreven moeten worden.';
 $string['nostepsdefinitions'] = 'Er zijn geen stappendefinities die overeenkomen met deze filters.';
@@ -43,3 +49,4 @@ $string['theninfo'] = 'Then. Controles die er voor zorgen dat de uitkomst is wat
 $string['unknownexceptioninfo'] = 'Er was een probleem met Selenium of de browser. Update Selenium tot de laatste versie: Fout:';
 $string['viewsteps'] = 'Filter';
 $string['wheninfo'] = 'When. Acties die een gebeurtenis veroorzaken';
+$string['wrongbehatsetup'] = 'Er is iets mis met de Behat setup. Daarom kunnen stap-definities niet worden getoond: <b>{$a->errormsg}</b> <br/><br/> Kijk na: <ul><li> $CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot worden ingesteld in config.php met waarden anders dan die van $CFG->dataroot, $CFG->prefix en $CFG->wwwroot. </li><li> Je liet "{$a->behatinit}" lopen vanuit je Moodlerootmap. </li><li> Dependencies worden geïnstalleerd in vendor / en het {$a->behatcommand} bestand heeft uitvoerrechten. </li></ul>';

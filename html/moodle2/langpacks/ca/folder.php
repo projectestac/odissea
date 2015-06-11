@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ També cal tenir en compte que en aquest cas no es podran registrar les accions 
 $string['displayinline'] = 'Dins d\'una pàgina del curs';
 $string['displaypage'] = 'En una pàgina separada';
 $string['dnduploadmakefolder'] = 'Descomprimeix els fitxers i crea una carpeta nova';
+$string['eventfolderupdated'] = 'Carpeta actualitzada';
 $string['folder:addinstance'] = 'Afegeix una carpeta nova';
 $string['foldercontent'] = 'Fitxers i subcarpetes';
 $string['folder:managefiles'] = 'Gestiona fitxers al mòdul Carpeta';
@@ -43,7 +44,6 @@ Una carpeta pot utilitzar-se
 * Per a una sèrie de fitxers d\'un tema, per exemple, un conjunt d\'exàmens d\'anys anteriors en format pdf o una col·lecció de fitxers d\'imatge perquè l\'alumnat els empre en els seus projectes
 * Per a oferir un espai compartit de càrrega de fitxers per al professorat en la pàgina del curs (manteniment  la carpeta oculta perquè només el professorat ho pugui veure)';
 $string['modulenameplural'] = 'Carpetes';
-$string['neverseen'] = 'Mai vist';
 $string['noautocompletioninline'] = 'La compleció automàtica de la visualització de l\'activitat no és pot seleccionar al mateix temps que l\'opció «Mostra en línia»';
 $string['page-mod-folder-view'] = 'Pàgina principal del mòdul de fitxers';
 $string['page-mod-folder-x'] = 'Qualsevol pàgina del mòdul de fitxers';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,11 @@ $string['discussion'] = '讨论';
 $string['emailmessages'] = '如果我离线就通过email发送消息';
 $string['emailtagline'] = '这封邮件是“{$a->sitename}”上发给您的消息的副本。到{$a->url}回复。';
 $string['emptysearchstring'] = '您必须提供搜索的线索';
+$string['enabled'] = '启用';
 $string['errorcallingprocessor'] = '调用定义的处理器出错';
 $string['errortranslatingdefault'] = '转化插件的缺省设置出错，改为使用系统缺省设置。';
+$string['eventmessagesent'] = '发送了消息';
+$string['eventmessageviewed'] = '查看了消息';
 $string['forced'] = '强制';
 $string['formorethan'] = '未读超过';
 $string['gotomessages'] = '看消息去';
@@ -136,8 +139,6 @@ $string['unblockcontact'] = '不再阻拦联系人';
 $string['unreadmessages'] = '未读消息（{$a}）';
 $string['unreadnewmessage'] = '来自{$a}的新消息';
 $string['unreadnewmessages'] = '新消息（{$a}）';
-$string['unreadnewnotification'] = '新通知';
-$string['unreadnewnotifications'] = '新通知（{$a}）';
 $string['userisblockingyou'] = '此用户屏蔽了您的消息';
 $string['userisblockingyounoncontact'] = '{$a}只接受来自联系人的消息。';
 $string['userssearchresults'] = '找到用户：{$a}';

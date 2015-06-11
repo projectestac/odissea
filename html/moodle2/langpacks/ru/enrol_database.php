@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_database', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,8 @@ $string['remotecoursefield'] = 'Поле курса во внешней табл
 $string['remotecoursefield_desc'] = 'Имя поля во внешней таблице, в котором записи соответствуют записям в таблице курсов.';
 $string['remoteenroltable'] = 'Внешняя таблица информацией о записи на курсы';
 $string['remoteenroltable_desc'] = 'Укажите имя таблицы, содержащей список записанных пользователей. Пустое значение означает отсутствие синхронизации записи пользователей на курс.';
+$string['remoteotheruserfield'] = 'Поле «Другой пользователь» во внешней таблице';
+$string['remoteotheruserfield_desc'] = 'Имя поля во внешней таблице, которое используется для обозначения  назначений ролей «Другой пользователь».';
 $string['remoterolefield'] = 'Поле для роли во внешней таблице';
 $string['remoterolefield_desc'] = 'Имя поля во внешней таблице, в котором записи соответствуют записям в таблице ролей.';
 $string['remoteuserfield'] = 'Поле пользователя во внешней таблице';

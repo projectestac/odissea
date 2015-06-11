@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_manual', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'この方法では、ユーザによるユーザアカウント作成機能を停止します。すべてのアカウントは、管理者により手動で作成される必要があります。';
+$string['expiration'] = 'パスワード有効期限を有効にする';
+$string['expiration_desc'] = '指定された時間以降にパスワードが期限切れになるようにします。';
+$string['expiration_warning'] = '通知閾値';
+$string['expiration_warning_desc'] = 'パスワード有効期限に関する通知が送信されるまでの日数です。';
+$string['passwdexpire_settings'] = 'パスワード有効期限設定';
+$string['passwdexpiretime'] = 'パスワード持続時間';
+$string['passwdexpiretime_desc'] = 'パスワードが無効となる時間の長さです。';
 $string['pluginname'] = '手動アカウント';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,6 @@ $string['modulename_help'] = 'Модуль «Страница» позволяе
 * Для представления сроков и условий курса или резюме программы курса
 * Для встраивания разных видео- или звуковых файлов в пояснительный текст.';
 $string['modulenameplural'] = 'Страницы';
-$string['neverseen'] = 'Не смотрел(а)';
 $string['optionsheader'] = 'Настройки отображения';
 $string['page:addinstance'] = 'Добавлять новую страницу';
 $string['page-mod-page-x'] = 'Любая страница модуля «Страница»';
@@ -56,5 +55,7 @@ $string['popupheight'] = 'Высота всплывающего окна ( в п
 $string['popupheightexplain'] = 'Определяет по умолчанию высоту всплывающего окна.';
 $string['popupwidth'] = 'Ширина всплывающего окна (в пикселях)';
 $string['popupwidthexplain'] = 'Определяет по умолчанию ширину всплывающего окна.';
+$string['printheading'] = 'Отображать название страницы';
+$string['printheadingexplain'] = 'Отображать название страницы выше содержимого?';
 $string['printintro'] = 'Показывать описание страницы';
 $string['printintroexplain'] = 'Показывать описание страницы перед содержимым?';

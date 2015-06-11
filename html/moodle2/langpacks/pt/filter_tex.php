@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filter_tex', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configconvertformat'] = 'Se <i>latex</i> e <i>dvips</i> estiverem presentes, para além de <i>convert</i> ou <i>dvisvgm</i>, selecione o tipo de imagem preferido (<i>convert</i> produz GIF ou PNG; <i>dvisvgm</i> produz SVG). Caso contrário, <i>mimeTeX</i> será usado para criar imagens GIF.';
+$string['convertformat'] = 'Formato de apresentação da imagem';
 $string['filtername'] = 'Notação TeX';
+$string['latexpreamble'] = 'Preâmbulo do LaTeX';
+$string['latexsettings'] = 'Configurações do filtro LaTeX';
+$string['pathconvert'] = 'Caminho para o programa <strong>converter</strong>';
+$string['pathdvips'] = 'Caminho para o programa <strong>dvips</strong>';
+$string['pathdvisvgm'] = 'Caminho de <i>dvisvgm</i> binário';
+$string['pathlatex'] = 'Caminho para o programa <strong>latex</strong>';
+$string['pathmimetex'] = 'Caminho para binário <i>mimetex</i>';
+$string['pathmimetexdesc'] = 'O Moodle usará o seu próprio binário mimetex, a menos que outro caminho válido seja especificado.';
 $string['source'] = 'TeX source';

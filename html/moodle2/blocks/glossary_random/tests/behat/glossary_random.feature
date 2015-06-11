@@ -10,8 +10,8 @@ Feature: Random glossary entry block is used in a course
       | Course 1 | C1        |
     And the following "users" exist:
       | username | firstname | lastname | email             |
-      | student1 | Sam1      | Student1 | student1@test.com |
-      | teacher1 | Terry1    | Teacher1 | teacher1@test.com |
+      | student1 | Sam1      | Student1 | student1@example.com |
+      | teacher1 | Terry1    | Teacher1 | teacher1@example.com |
     And the following "course enrolments" exist:
       | user     | course | role           |
       | student1 | C1     | student        |
@@ -68,9 +68,9 @@ Feature: Random glossary entry block is used in a course
     And I should see "Concept2" in the "AutoGlossaryblock" "block"
     And I should see "Definition2" in the "AutoGlossaryblock" "block"
     And I click on "View all entries" "link" in the "AutoGlossaryblock" "block"
-    And I should see "GlossaryAuto" in the "#page-header .navbar" "css_element"
-    And I should see "Concept1" in the "#region-main" "css_element"
-    And I should see "Concept2" in the "#region-main" "css_element"
+    And I should see "GlossaryAuto" in the "#page-navbar" "css_element"
+    And I should see "Concept1" in the "#page-content" "css_element"
+    And I should see "Concept2" in the "#page-content" "css_element"
     And I log out
 
   Scenario: View random (last) entry in the glossary with manual approval
@@ -105,7 +105,7 @@ Feature: Random glossary entry block is used in a course
     And I follow "GlossaryManual"
     And I follow "Waiting approval"
     And I follow "Approve"
-    And I follow "Course 1"
+    And I click on "Course 1" "link" in the "#page-navbar" "css_element"
     And I should see "Concept1" in the "ManualGlossaryblock" "block"
     And I should see "Definition1" in the "ManualGlossaryblock" "block"
     And I log out

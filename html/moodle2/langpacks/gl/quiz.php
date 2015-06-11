@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addarandomquestion_help'] = 'Ao engadir unha pregunta aleatoria, prodú
 $string['adddescriptionlabel'] = 'Engadir unha descrición/etiqueta';
 $string['addingquestion'] = 'Engadir pregunta';
 $string['addingquestions'] = 'Este lado da páxina é onde se xestiona a  súa base de datos de preguntas. As preguntas recóllense en categorías para axudarlle a mantelas organizadas e poden utilizarse en calquera proba no seu curso ou mesmo noutros cursos cando vostede se decante por as \'publicar\'. <br /><br />Despois de seleccionar ou crear unha categoría de preguntas poderá crear ou editar preguntas. Pode seleccionar calquera destas preguntas para engadilas á súa proba sobre a outra parte desta páxina.';
-$string['addmoreoverallfeedbacks'] = 'Engadir {no} campos máis para comentarios';
+$string['addmoreoverallfeedbacks'] = 'Engdir {no} campos máis de retroalimentación';
 $string['addnewgroupoverride'] = 'Engadir grupo de supervisión';
 $string['addnewpagesafterselected'] = 'Engadir novas páxinas tras as preguntas seleccionadas';
 $string['addnewquestionsqbank'] = 'Engadir preguntas á categoría {$a->catname}: {$a->link}';
@@ -67,9 +67,9 @@ $string['analysisoptions'] = 'Opcións de análise';
 $string['analysistitle'] = 'Táboa de análise do ítem';
 $string['answer'] = 'Resposta';
 $string['answered'] = 'Respondida';
-$string['answerhowmany'] = 'Unha ou varias respostas?';
+$string['answerhowmany'] = 'Unha ou respostas múltiplas?';
 $string['answers'] = 'Respostas';
-$string['answersingleno'] = 'Permítense varias respostas';
+$string['answersingleno'] = 'Permítense respostas múltiplas';
 $string['answersingleyes'] = 'Unha única resposta';
 $string['answertoolong'] = 'A resposta é demasiado longa a partir da liña {$a} (255 carác. máx)';
 $string['aon'] = 'Formato AON';
@@ -86,7 +86,7 @@ $string['attemptincomplete'] = 'Este intento (de {$a}) aínda non se rematou.';
 $string['attemptlast'] = 'Último intento';
 $string['attemptnumber'] = 'Intentar';
 $string['attemptquiznow'] = 'Intentar a proba agora';
-$string['attempts'] = 'Intentos';
+$string['attempts'] = 'Intento';
 $string['attemptsallowed'] = 'Intentos permitidos';
 $string['attemptsdeleted'] = 'Elimináronse os intentos de proba';
 $string['attemptselection'] = 'Seleccionar os intentos para a análise por usuario:';
@@ -592,7 +592,6 @@ $string['qname'] = 'nome';
 $string['qti'] = 'Formato IMS QTI';
 $string['qtypename'] = 'tipo, nome';
 $string['question'] = 'Pregunta';
-$string['questionbankcontents'] = 'O banco de preguntas contén';
 $string['questionbankmanagement'] = 'Xestión do banco de preguntas';
 $string['questionbehaviour'] = 'Comportamento da pregunta';
 $string['questioncats'] = 'Categorías de pregunta';

@@ -20,7 +20,7 @@
  *
  * @copyright 2005 Martin Dougiamas  http://dougiamas.com
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package mod-data
+ * @package mod_data
  */
 
 require_once('../../config.php');
@@ -94,7 +94,7 @@ if (!$formdata = $form->get_data()) {
     // Large files are likely to take their time and memory. Let PHP know
     // that we'll take longer, and that the process should be recycled soon
     // to free up memory.
-    @set_time_limit(0);
+    core_php_time_limit::raise();
     raise_memory_limit(MEMORY_EXTRA);
 
     $iid = csv_import_reader::get_new_iid('moddata');
@@ -164,6 +164,10 @@ if (!$formdata = $form->get_data()) {
                     } else if ($field->type == 'url') {
                         $values = explode(" ", $value, 2);
                         $content->content  = $values[0];
+                        if (!empty($content->content) && (strpos($content->content, '://') === false)
+                                && (strpos($content->content, '/') !== 0)) {
+                            $content->content = 'http://' . $content->content;
+                        }
                         // The url field doesn't always have two values (unforced autolinking).
                         if (count($values) > 1) {
                             $content->content1 = $values[1];

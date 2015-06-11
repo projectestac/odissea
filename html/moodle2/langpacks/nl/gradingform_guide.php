@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'Beoordelaarsbeschrijving kan niet leeg zi
 $string['err_nomaxscore'] = 'Criterium maximumscore kan niet leeg zijn.';
 $string['err_noshortname'] = 'Criterium naam kan niet leeg zijn';
 $string['err_scoreinvalid'] = 'De score, gegeven aan {$a->criterianame} is niet geldig, de maximumscore is: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'Criteriumnaam moet minder dan 256 tekens zijn';
 $string['gradingof'] = '{$a} beoordeling';
 $string['guidemappingexplained'] = 'WAARSCHUWING: je beoordelingshulp heeft een maximumcijfer van <b>{$a->maxscore} punten</b> maar het maximumcijfer van je activeit is {$a->modulegrade}. Het maximumcijfer van je beoordelingshulp zal geschaald worden naar het maximumcijfer van de activiteitsmodule.<br />
 Tussenresultaten zullen geconverteerd en afgerond worden.';
@@ -70,7 +71,7 @@ $string['needregrademessage'] = 'De beoordelingshulp is gewijzigd nadat deze lee
 $string['pluginname'] = 'Beoordelingshulp';
 $string['previewmarkingguide'] = 'Voorbeeld beoordelingshulp';
 $string['regrademessage1'] = 'Je gaat wijzigingen aanbrengen in een boordelingshulp die al gebruikt geweest is om te beoordelen. Geef aan of bestaande cijfers moeten nagekeken worden. Als je dit inschakeld, dan zal de beoordelingshulp verborgen worden tot het werk van de leerling opnieuw nagekeken is.';
-$string['regrademessage5'] = 'Je gaat grote wijzigingen aanbrengen aan een beoordelingshulp die al gebruikt geweest is om mee te beoordelen. Het cijfer in het puntenboek zal niet wijzigen, maar de beoordelingshulp zal voor de leerlingen verborgen blijven tot hun werk opnieuw nagekeken is.';
+$string['regrademessage5'] = 'Je gaat grote wijzigingen aanbrengen aan een beoordelingshulp die al gebruikt geweest is om mee te beoordelen. Het cijfer in de cijferlijst zal niet wijzigen, maar de beoordelingshulp zal voor de leerlingen verborgen blijven tot hun werk opnieuw nagekeken is.';
 $string['regradeoption0'] = 'Niet markeren voor opnieuw beoordelen';
 $string['regradeoption1'] = 'Markeer om opnieuw te boordelen';
 $string['restoredfromdraft'] = 'OPMERKING: de laatste poging om deze leerling te beoordelen is niet behoorlijk bewaard, dus zijn de als klad bewaarde punten teruggezet. Als je deze wijzigingen wil annuleren, klik dan op \'annuleren\' onderaan';

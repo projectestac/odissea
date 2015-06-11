@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addedby'] = '追加 - {$a}';
 $string['addgroup'] = 'グループにユーザを追加する';
-$string['addgroupstogrouping'] = 'グループをグルーピングに追加する';
+$string['addgroupstogrouping'] = 'グルーピングにグループを追加する';
 $string['addgroupstogroupings'] = 'グループを追加/削除する';
 $string['adduserstogroup'] = 'ユーザを追加/削除する';
-$string['allocateby'] = 'メンバーの割り当て';
+$string['allocateby'] = 'メンバーを割り当てる';
 $string['anygrouping'] = '[すべてのグルーピング]';
 $string['autocreategroups'] = 'グループを自動作成する';
 $string['backtogroupings'] = 'グルーピングに戻る';
@@ -70,16 +70,16 @@ $string['errorinvalidgroup'] = 'エラー、無効なグループです: {$a}';
 $string['errorremovenotpermitted'] = 'あなたには自動的に追加されたメンバー {$a} を削除するパーミッションがありません。';
 $string['errorselectone'] = 'このオプションを選択する前に単一グループを選択してください。';
 $string['errorselectsome'] = 'このオプションを選択する前に1つまたはそれ以上のグループを選択してください。';
-$string['evenallocation'] = '注意: 割り当てを均等にするため、グループごとの実際のメンバー数は、あなたが指定した数と異なります。';
-$string['event_group_created'] = 'グループが作成されました。';
-$string['event_group_deleted'] = 'グループが削除されました。';
-$string['event_grouping_created'] = 'グルーピングが作成されました。';
-$string['event_grouping_deleted'] = 'グルーピングが削除されました。';
-$string['event_grouping_updated'] = 'グルーピングが更新されました。';
-$string['event_group_member_added'] = 'グループメンバーが追加されました。';
-$string['event_group_member_removed'] = 'グループメンバーが削除されました。';
-$string['event_group_updated'] = 'グループが更新されました。';
-$string['existingmembers'] = '登録済みメンバー: {$a}';
+$string['evenallocation'] = '注意: 割り当てを均等にするため、グループごとの実際のメンバー数はあなたが指定した数と異なります。';
+$string['eventgroupcreated'] = 'グループが作成されました。';
+$string['eventgroupdeleted'] = 'グループが削除されました。';
+$string['eventgroupingcreated'] = 'グルーピングが作成されました。';
+$string['eventgroupingdeleted'] = 'グルーピングが削除されました。';
+$string['eventgroupingupdated'] = 'グルーピングが更新されました。';
+$string['eventgroupmemberadded'] = 'グループメンバーが追加されました。';
+$string['eventgroupmemberremoved'] = 'グループメンバーが削除されました。';
+$string['eventgroupupdated'] = 'グループが更新されました。';
+$string['existingmembers'] = '既存のメンバー: {$a}';
 $string['filtergroups'] = 'グループをフィルタする:';
 $string['group'] = 'グループ';
 $string['groupaddedsuccesfully'] = 'グループ「 {$a} 」が正常に追加されました。';
@@ -102,14 +102,11 @@ $string['groupingsonly'] = 'グルーピングのみ';
 $string['groupmember'] = 'グループメンバー';
 $string['groupmemberdesc'] = 'グループメンバーの標準ロール';
 $string['groupmembers'] = 'グループメンバー';
-$string['groupmembersonly'] = 'グループメンバーのみ利用可';
-$string['groupmembersonlyerror'] = '申し訳ございません、あなたがこの活動を使用するには、少なくとも1つのグループメンバーである必要があります。';
-$string['groupmembersonly_help'] = 'このチェックボックスがチェックされた場合、活動 (またはリソース)  は、選択されたグルーピング内のグループに属するユーザのみ利用できます。';
 $string['groupmemberssee'] = 'グループメンバーを表示する';
-$string['groupmembersselected'] = '選択されたグループのメンバー';
+$string['groupmembersselected'] = '選択したグループのメンバー';
 $string['groupmode'] = 'グループモード';
 $string['groupmodeforce'] = 'グループモードを強制する';
-$string['groupmodeforce_help'] = 'グループモードが強制された場合、コース内のすべての活動にコースグループモードが適用されます。そのため、それぞれの活動のグループモード設定は無視されます。';
+$string['groupmodeforce_help'] = 'グループモードが強制された場合、コース内すべての活動にコースグループモードが適用されます。そのため、それぞれの活動のグループモード設定は無視されます。';
 $string['groupmode_help'] = 'この設定には下記3つのオプションがあります:
 
 * グループなし - サブグループはありません。全員が1つの大きなコミュニティの一員です。
@@ -150,26 +147,14 @@ $string['namingscheme_help'] = 'アットマーク (@) を使用することに�
 ハッシュマーク (#) を使用することにより、グループ名に数字を含むグループを作成することができます。例えば「グループ #」は「グループ 1」「グループ 2」「グループ 3」のようなグループ名のグループを生成します。';
 $string['newgrouping'] = '新しいグルーピング';
 $string['newpicture'] = '新しい画像';
-$string['newpicture_help'] = '<p>あなたのコンピュータから、このサーバにイメージをアップロードすることができます。アップロードしたイメージは様々な場所であなたを表すために使用されます。</p>
-<p>この理由から、顔のクローズアップイメージが一番良いのですが、あなたが好きなイメージを使用することもできます。</p>
-<p>画像は、JPGまたはPNG形式を使用してください (ファイル名は通常.jpgまたは.pngで終わります)。</p>
-<p>あなたは多くの方法で画像ファイルを取得することができます。次に例をあげます。</p>
-<ol>
-<li>デジタルカメラを使用する。ほとんどの場合、写真は正しい形式であなたのコンピュータの中に保存されます。 </li>
-<li>プリント写真をスキャナでイメージファイルに取り込むこともできます。</li>
-<li>あなたが絵を描けるのでしたら、ペイントプログラムで絵を描くこともできます。</li>
-</ol>
-<p>あなたが選択するどのような方法でも、使用したいイメージがJPGまたはPNGフォーマットであることを確認してください。</p>
-<p>イメージをアップロードするには、このページの「参照」ボタンをクリックして、ハードディスクよりイメージを選択してください。</p>
-<p>注意: アップロードできませんので、ファイルサイズが最大サイズを超えないようにしてください。</p>
-<p>そして「プロファイルを更新する」ボタンをクリックしてください。 イメージが取り込まれて、100×100ピクセルにリサイズされます。</p>
-<p>プロファイルページに戻ってもイメージが表示されなかったり、変更されない場合、あなたのブラウザの「更新」ボタンをクリックしてください。</p>';
+$string['newpicture_help'] = 'JPGまたはPNGフォーマットの画像を選択してください。画像は正方形に切り取られた後、100x100ピクセルにリサイズされます。';
 $string['noallocation'] = '割り当てなし';
 $string['nogrouping'] = 'グルーピングなし';
-$string['nogroups'] = 'このコースにはまだグループが割り当てられていません。';
+$string['nogroups'] = 'このコースにはまだグループが作成されていません。';
 $string['nogroupsassigned'] = 'グループが割り当てられていません。';
 $string['nopermissionforcreation'] = 'あなたには必要なパーミッションがないため、グループ「 {$a} 」を作成することはできません。';
 $string['nosmallgroups'] = '最後の小グループを抑制する';
+$string['notingroup'] = 'グループ内のユーザを無視する';
 $string['notingrouping'] = '[グルーピング未登録]';
 $string['nousersinrole'] = '選択したロールに適合するユーザがいません。';
 $string['number'] = 'グループ/メンバー数';
@@ -186,10 +171,12 @@ $string['removegroupfromselectedgrouping'] = 'グルーピングからグルー�
 $string['removegroupingsmembers'] = 'グルーピングからすべてのグループを削除する';
 $string['removegroupsmembers'] = 'すべてのグループメンバーを削除する';
 $string['removeselectedusers'] = '選択したユーザを削除する';
+$string['selectfromgroup'] = 'グループからメンバーを選択する';
+$string['selectfromgrouping'] = 'グルーピングからメンバーを選択する';
 $string['selectfromrole'] = 'ロールからメンバーを選択する';
 $string['showgroupsingrouping'] = 'グルーピングのグループを表示する';
 $string['showmembersforgroup'] = 'グループのメンバーを表示する';
 $string['toomanygroups'] = 'このグループ数に割り当てるユーザが不足しています - 選択したロールには {$a} 名のユーザしか存在しません。';
 $string['usercount'] = 'ユーザ数';
 $string['usercounttotal'] = 'ユーザ数 ({$a})';
-$string['usergroupmembership'] = '選択したユーザのメンバーシップ';
+$string['usergroupmembership'] = '選択したユーザのメンバーシップ:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Blokkeer gebruikersvelden';
 $string['auth_fieldlocks_help'] = '<p>Je kunt gegevensvelden van de gebruikers blokkeren. Dit is nuttig voor sites waar het beheer van de gegevens van de gebruikers manueel of door de \'Upload gebruikers\'-functie gebeurt. Als je door Moodle vereiste velden blokkeert, zorg er dan voor dat je die gegevens voorziet wanneer je gebruikers aanmaakt of de accounts zullen onbruikbaar zijn.</p><p>Overweeg om de blokkeermodus in te stellen op \'Niet geblokkeerd als leeg\' om dit probleem te voorkomen.</p>';
 $string['authinstructions'] = 'Laat dit leeg om de standaard login instructies op de loginpagina te tonen. Als je aangepaste login-instructies wil weergeven, zet ze dan hier.';
 $string['auth_invalidnewemailkey'] = 'Fout. Als je probeert een wijziging van e-mailadres te bevestigen, dan heb je misschien een fout gemaakt bij het kopieëren van de URL van de e-mail die we je toezonden. Probeer opnieuw.';
+$string['authloginviaemail'] = 'Inloggen via e-mail toestaan';
+$string['authloginviaemail_desc'] = 'Gebruikers zowel gebruikersnaam als e-mailadres laten gebruiken (indien uniek) om aan te melden in de site.';
 $string['auth_multiplehosts'] = 'Je kunt verschillende hosts ingeven (bijv. host1.com;host2.com;host3.com)';
 $string['auth_outofnewemailupdateattempts'] = 'Je hebt het maximale aantal pogingen om je wijziging van e-mailadres te bevestigen bereikt. Je wijzigingsaanvraag is geannuleerd.';
 $string['auth_passwordisexpired'] = 'Je wachtwoord is verlopen. Wil je het nu wijzigen?';
@@ -65,11 +67,7 @@ $string['auto_add_remote_users'] = 'Voeg externe gebruikers automatisch toe';
 $string['changepassword'] = 'URL voor het veranderen van het wachtwoord';
 $string['changepasswordhelp'] = 'Hier kun je een locatie aangeven waar gebruikers hun gebruikersnaam/wachtwoord kunnen terugkrijgen als ze deze vergeten zijn. De gebruikers zullen op hun inlogpagina en op hun gebruikerspagina een knop krijgen. Als je dit leeg laat zal de knop niet verschijnen.';
 $string['chooseauthmethod'] = 'Kies een methode van authenticatie:';
-$string['chooseauthmethod_help'] = '<p>Met dit menu kun je de authenticatiemethode voor deze gebruiker wijzigen.</p>
-
-<p>Let op dat dit sterk afhankelijk is van de authenticatiemethodes die je ingesteld hebt voor de site en welke instellingen je gebruikt.</p>
-
-<p>Hier een fout maken kan ervoor zorgen dat de gebruiker niet meer aangemeld geraakt of kan zelfs de account helemaal verwijderen. Gebruik dit alleen als je echt weet wat je doet.</p>';
+$string['chooseauthmethod_help'] = 'Dit menu bepaalt de authenticatiemethode voor deze gebruiker wanneer die inlogt. Je mag enkel ingeschakelde authenticatiemethodes kiezen, anders zal de gebruiker niet meer kunnen aanmelden. Om te verhinderen dat de gebruiker kan inloggen, kies je hier "Niet inloggen".';
 $string['createpassword'] = 'Genereer wachtwoord en waarschuw gebruiker';
 $string['createpasswordifneeded'] = 'Maak een wachtwoord indien nodig';
 $string['emailchangecancel'] = 'Annuleer e-mailwijziging';
@@ -92,8 +90,9 @@ $string['errorminpasswordlower'] = 'Wachtwoorden moeten minstens {$a} kleine let
 $string['errorminpasswordnonalphanum'] = 'Wachtwoorden moeten minstens {$a} niet-alphanumerieke tekens hebben.';
 $string['errorminpasswordupper'] = 'Wachtwoorden moeten minstens {$a} hoofdletters hebben.';
 $string['errorpasswordupdate'] = 'Fout tijdens het updaten van het wachtwoord, wachtwoord niet gewijzigd.';
-$string['event_user_loggedin'] = 'Gebruiker ingelogd';
+$string['eventuserloggedin'] = 'Gebruiker ingelogd';
 $string['eventuserloggedinas'] = 'Gebruiker ingelogd als een andere gebruiker';
+$string['eventuserloginfailed'] = 'Aanmelden gebruiker mislukt';
 $string['forcechangepassword'] = 'Verplicht het wijzigen van het wachtwoord';
 $string['forcechangepasswordfirst_help'] = 'Verplicht gebruikers om hun wachtwoord te wijzigen bij hun eerste aanmelding bij Moodle.';
 $string['forcechangepassword_help'] = 'Verplicht gebruikers om hun wachtwoord te wijzigen bij hun volgende aanmelding bij Moodle';

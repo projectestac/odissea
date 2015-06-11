@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filters', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,9 +37,11 @@ $string['categoryrole'] = 'Rôle dans la catégorie';
 $string['contains'] = 'contient';
 $string['content'] = 'Contenu';
 $string['contentandheadings'] = 'Contenu et titres';
+$string['coursecategory'] = 'Catégorie de cours';
 $string['courserole'] = 'Rôle dans le cours';
 $string['courserolelabel'] = '{$a->label} est {$a->rolename} dans {$a->coursename} de la catégorie {$a->categoryname}';
 $string['courserolelabelerror'] = 'Erreur {$a->label} : le cours {$a->coursename} n\'existe pas';
+$string['coursevalue'] = 'Valeur du cours';
 $string['datelabelisafter'] = '{$a->label} est postérieur à {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} est antérieur à {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} est entre {$a->after} et {$a->before}';
@@ -67,6 +69,7 @@ $string['isempty'] = 'est vide';
 $string['isequalto'] = 'est égal à';
 $string['isnotdefined'] = 'n\'est pas défini';
 $string['isnotequalto'] = 'n\'est pas égal à';
+$string['limiterfor'] = 'Limiteur du champ {$a}';
 $string['neveraccessed'] = 'Jamais accédé';
 $string['nevermodified'] = 'Jamais modifié';
 $string['newfilter'] = 'Nouveau filtre';
@@ -74,6 +77,8 @@ $string['nofiltersenabled'] = 'Aucun plugin de filtre n\'a été activé sur ce 
 $string['off'] = 'Désactivé';
 $string['offbutavailable'] = 'Désactivé, mais disponible';
 $string['on'] = 'Activé';
+$string['profilefilterfield'] = 'Nom du champ de profil';
+$string['profilefilterlimiter'] = 'Opérateur du champ de profil';
 $string['profilelabel'] = '{$a->label} : {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label} : {$a->profile} {$a->operator}';
 $string['removeall'] = 'Retirer tous les filtres';
@@ -83,3 +88,4 @@ $string['startswith'] = 'commence par';
 $string['tablenosave'] = 'Les modifications dans le tableau ci-dessus sont immédiatement effectives.';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = 'Valeur {$a}';

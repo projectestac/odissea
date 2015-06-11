@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,6 +123,18 @@ $string['erroropening'] = 'Ошибка открытия анкетного оп
 $string['errortable'] = 'Системная ошибка - таблица недостоверна.';
 $string['essaybox'] = 'Поле Эссе';
 $string['essaybox_help'] = 'В вопросе будет отображаться окно редактора шириной в Х столбцов и высотой в Y строк. Если вы оставите значения Х и Y по умолчанию - 0 (или, если вы установите его в 0), то HTML редактор будет отображаться со стандартной высотой и шириной (если редактор включен в контексте курса/пользователя и в профиле пользователя).';
+$string['event_all_responses_deleted'] = 'Все ответы удалены';
+$string['event_all_responses_saved_as_text'] = 'Все ответы сохранены в виде текста';
+$string['event_all_responses_viewed'] = 'Просмотрен отчет «Все ответы»';
+$string['event_individual_responses_viewed'] = 'Просмотрен отчет «Индивидуальный ответ»';
+$string['event_non_respondents_viewed'] = 'Просмотрен список не сдавших ответы';
+$string['event_previewed'] = 'Осуществлен предварительный просмотр анкетного опроса';
+$string['event_question_created'] = 'Вопрос создан';
+$string['event_question_deleted'] = 'Вопрос удален';
+$string['event_response_deleted'] = 'Индивидуальный ответ удален';
+$string['event_resumed'] = 'Попытка возобновлена';
+$string['event_saved'] = 'Ответы сохранены';
+$string['event_submitted'] = 'Ответы сданы';
 $string['feedback'] = 'Отзыв';
 $string['feedbackaddmorefeedbacks'] = 'Добавить еще поля ({no}) для отзыва';
 $string['feedbackbysection'] = 'Разделы отзыва';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'Встроенный комментарий';
+$string['commentinlinedefault'] = 'По умолчанию использовать встроенный комментарий';
+$string['commentinlinedefault_help'] = 'При заданном параметре этот встроенный комментарий будет включен по умолчанию для всех новых работ.';
+$string['commentinline_help'] = 'При включенном параметре во время оценивания текст ответа будет скопирован в поле комментария обратной связи, что позволяет легче встраивать комментарий (возможно, используя другие цвета) или редактировать исходный текст.';
 $string['default'] = 'Включено по умолчанию';
 $string['default_help'] = 'При включенном параметре способ отзыва будет включен по умолчанию для всех новых заданий.';
 $string['enabled'] = 'Отзыв в виде комментария';

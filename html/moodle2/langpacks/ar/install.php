@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,7 +72,6 @@ $string['inputdatadirectory'] = 'مجلد البيانات';
 $string['inputwebadress'] = 'عنوان الويب:';
 $string['inputwebdirectory'] = 'مجلد مودل';
 $string['installation'] = 'تثبيت';
-$string['magicquotesruntimeerror'] = 'هذا يجب ان يكون معطل';
 $string['memorylimit'] = 'حد الذاكرة';
 $string['memorylimiterror'] = 'ذاكرة الـ PHP صغيرة جداً... من المحتل ستواجه بعض المشاكل لاحقاً';
 $string['pass'] = 'اجتياز';

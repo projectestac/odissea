@@ -15,7 +15,8 @@
     $PAGE->set_pagelayout('incourse');
 
     $eventdata = array('context' => context_course::instance($id));
-    $event = \mod_choice\event\instances_list_viewed::create($eventdata);
+    $event = \mod_choice\event\course_module_instance_list_viewed::create($eventdata);
+    $event->add_record_snapshot('course', $course);
     $event->trigger();
 
     $strchoice = get_string("modulename", "choice");

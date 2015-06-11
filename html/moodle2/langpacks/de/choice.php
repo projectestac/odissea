@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Optionen hinzufügen';
+$string['allowmultiple'] = 'Mehr als eine Auswahl erlauben';
 $string['allowupdate'] = 'Änderung der Auswahl erlauben';
 $string['answered'] = 'Beantwortet';
 $string['atleastoneoption'] = 'Sie müssen mindestens eine mögliche Abstimmoption angeben.';
+$string['cannotsubmit'] = 'Ihre Auswahl konnte nicht gespeichert werden. Versuchen Sie es bitte noch einmal.';
 $string['choice'] = 'Abstimmung';
 $string['choice:addinstance'] = 'Abstimmung hinzufügen';
 $string['choice:choose'] = 'Abstimmung vornehmen';
@@ -52,11 +54,9 @@ $string['description'] = 'Beschreibung';
 $string['displayhorizontal'] = 'Horizontal anzeigen';
 $string['displaymode'] = 'Anzeigemodus';
 $string['displayvertical'] = 'Vertikal anzeigen';
-$string['event_answer_created'] = 'Abstimmung durchgeführt';
-$string['event_answer_updated'] = 'Abstimmung aktualisiert';
-$string['event_choice_viewed'] = 'Abstimmung angezeigt';
-$string['event_instances_list_viewed'] = 'Instanzenliste angezeigt';
-$string['event_report_viewed'] = 'Abstimmungsübersicht angezeigt';
+$string['eventanswercreated'] = 'Abstimmung durchgeführt';
+$string['eventanswerupdated'] = 'Abstimmung aktualisiert';
+$string['eventreportviewed'] = 'Abstimmungsübersicht angezeigt';
 $string['expired'] = 'Diese Abstimmung ist seit {$a} beendet. Eine Auswahl ist nicht mehr möglich.';
 $string['full'] = '(Nicht verfügbar)';
 $string['havetologin'] = 'Sie müssen angemeldet sein, um sich an der Abstimmung beteiligen zu können.';
@@ -72,6 +72,7 @@ $string['modulename_help'] = 'Mit der Abstimmung können Sie im Kurs eine Frage 
 Die Ergebnisse werden direkt angezeigt oder erst später veröffentlicht. Wählen Sie, ob das Abstimmungsverhalten sichtbar oder anonym sein soll.';
 $string['modulenameplural'] = 'Abstimmungen';
 $string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen bewegen nach...';
+$string['multiplenotallowederror'] = 'In dieser Auswahl ist nur eine Antwort erlaubt.';
 $string['mustchooseone'] = 'Sie müssen eine Option auswählen, um sie speichern können. Bisher wurde noch nichts gespeichert.';
 $string['noguestchoose'] = 'Gäste dürfen an Abstimmungen nicht teilnehmen.';
 $string['noresultsviewable'] = 'Ergebnisse sind aktuell nicht sichtbar.';

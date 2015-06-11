@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,7 +128,7 @@ $string['err_settingslocked'] = 'Un ou plusieurs étudiants ont déjà rempli un
 $string['err_system'] = 'Une erreur interne est survenue dans le système de suivi de l\'achèvement des activités. L\'administrateur peut activer l\'affichage des informations de débogage pour obtenir plus de détails sur cette erreur.';
 $string['eventcoursecompleted'] = 'Cours terminé';
 $string['eventcoursecompletionupdated'] = 'Achèvement de cours modifié';
-$string['eventcoursemodulecompletionupdated'] = 'Module d\'achèvement de cours modifié';
+$string['eventcoursemodulecompletionupdated'] = 'Achèvement de module de cours modifié';
 $string['excelcsvdownload'] = 'Télécharger en format CSV compatible Excel';
 $string['fraction'] = 'Fraction';
 $string['graderequired'] = 'Note de cours requise';
@@ -164,6 +164,7 @@ $string['restoringcompletiondata'] = 'Écriture des données d\'achèvement';
 $string['roleaggregation'] = 'La condition demande';
 $string['roleaggregation_all'] = 'que TOUS les rôles sélectionnés indiquent que la condition est remplie';
 $string['roleaggregation_any'] = 'que l\'UN des rôles sélectionnés indique que la condition est remplie';
+$string['roleidnotfound'] = 'Rôle d\'identifiant {$a} non trouvé';
 $string['saved'] = 'Enregistré';
 $string['seedetails'] = 'Voir les détails';
 $string['self'] = 'Soi-même';

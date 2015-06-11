@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,7 +81,6 @@ Un fitxer pot servir per a:
 * Incloure un mini lloc web com un recurs dins del curs
 * Proporcionar plantilles o esborranys de documents de certes aplicacions (per exemple .psd de Photoshop) de manera que l\'estudiantat pugui editar-les i trametre-les per avaluar-les.';
 $string['modulenameplural'] = 'Fitxers';
-$string['neverseen'] = 'Mai vist';
 $string['notmigrated'] = 'Ho lamento però aquest tipus de recurs ({$a}) no es pot migrar.';
 $string['optionsheader'] = 'Opcions';
 $string['page-mod-resource-x'] = 'Qualsevol pàgina del mòdul de fitxers';

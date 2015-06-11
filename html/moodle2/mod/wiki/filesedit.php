@@ -17,7 +17,7 @@
 /**
  * Manage files in wiki
  *
- * @package   mod-wiki-2.0
+ * @package   mod_wiki
  * @copyright 2011 Dongsheng Cai <dongsheng@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -96,7 +96,7 @@ if ($mform->is_cancelled()) {
 }
 
 echo $OUTPUT->header();
-echo $OUTPUT->heading($wiki->name);
+echo $OUTPUT->heading(format_string($wiki->name));
 echo $OUTPUT->box(format_module_intro('wiki', $wiki, $PAGE->cm->id), 'generalbox', 'intro');
 echo $OUTPUT->box_start('generalbox');
 $mform->display();

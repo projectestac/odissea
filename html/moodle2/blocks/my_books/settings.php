@@ -49,21 +49,9 @@ $settings->add(new admin_setting_configselect('mybooks/activity_opening', get_st
 // Popup header
 $settings->add(new admin_setting_heading('block_my_books_popup', get_string('popupconfig', 'block_my_books'), ''));
 
-// Popup resizable
-$settings->add(new admin_setting_configcheckbox('mybooks/resizable', get_string('resizable', 'block_my_books'),
-    get_string('resizableinfo', 'block_my_books'), 1));
-
 // Popup scrollbars
 $settings->add(new admin_setting_configcheckbox('mybooks/scrollbars', get_string('scrollbars', 'block_my_books'),
     get_string('scrollbarsinfo', 'block_my_books'), 1));
-
-// Popup show directories bar
-$settings->add(new admin_setting_configcheckbox('mybooks/directories', get_string('directories', 'block_my_books'),
-    get_string('directoriesinfo', 'block_my_books'), 0));
-
-// Popup show location bar
-$settings->add(new admin_setting_configcheckbox('mybooks/location', get_string('location', 'block_my_books'),
-    get_string('locationinfo', 'block_my_books'), 0));
 
 // Popup show menu bar
 $settings->add(new admin_setting_configcheckbox('mybooks/menubar', get_string('menubar', 'block_my_books'),

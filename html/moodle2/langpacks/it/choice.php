@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Aggiungi altre scelte';
+$string['allowmultiple'] = 'Consenti la selezione di più scelte';
 $string['allowupdate'] = 'Consenti la modifica delle scelte';
 $string['answered'] = 'Risposta';
 $string['atleastoneoption'] = 'Devi fornire almeno una possibile risposta.';
+$string['cannotsubmit'] = 'Si è verificato un errore durante l\'invio della scelta. Per favore riprova.';
 $string['choice'] = 'Scelta';
 $string['choice:addinstance'] = 'Aggiungere scelta';
 $string['choice:choose'] = 'Salvare una scelta';
@@ -51,11 +53,9 @@ $string['description'] = 'Descrizione';
 $string['displayhorizontal'] = 'Visualizza orizzontalmente';
 $string['displaymode'] = 'Modalità  di visualizzazione';
 $string['displayvertical'] = 'Visualizza verticalmente';
-$string['event_answer_created'] = 'Eseguita scelta';
-$string['event_answer_updated'] = 'Aggiornata scelta';
-$string['event_choice_viewed'] = 'Visualizzata scelta';
-$string['event_instances_list_viewed'] = 'Visualizzato elenco istanze';
-$string['event_report_viewed'] = 'Visualizzato report scelta';
+$string['eventanswercreated'] = 'Eseguita scelta';
+$string['eventanswerupdated'] = 'Aggiornata scelta';
+$string['eventreportviewed'] = 'Visualizzato report scelta';
 $string['expired'] = 'Spiacente, questa attività è stata chiusa il {$a} e non è più disponibile';
 $string['full'] = '(Completo)';
 $string['havetologin'] = 'Devi autenticarti prima di poter effettuare la tua scelta';
@@ -77,6 +77,7 @@ E\' possibile usare la scelta per:
 * Facilitare le decisioni degli studenti, ad esempio consentendogli di esprimere preferenze sullo svolgimento del corso.';
 $string['modulenameplural'] = 'Scelte';
 $string['moveselectedusersto'] = 'Sposta gli utenti selezionati in...';
+$string['multiplenotallowederror'] = 'Le scelte multiple non sono consentite';
 $string['mustchooseone'] = 'Devi scegliere una proposta prima di salvare. Non è stato salvato nulla.';
 $string['noguestchoose'] = 'Spiacente, gli ospiti non possono effettuare scelte.';
 $string['noresultsviewable'] = 'I risultati non sono al momento visualizzabili.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_myprofile', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,26 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['contentsettings'] = 'Отображать региональные настройки для  контента';
-$string['display_address'] = 'Показать адрес';
-$string['display_aim'] = 'Показать AIM';
-$string['display_city'] = 'Показать город';
-$string['display_country'] = 'Показать страну';
-$string['display_currentlogin'] = 'Показать текущий логин';
-$string['display_email'] = 'Показать email';
-$string['display_firstaccess'] = 'Показать первый доступ';
-$string['display_icq'] = 'Показать ICQ';
-$string['display_institution'] = 'Показать учреждение';
-$string['display_lastaccess'] = 'Показать последний доступ';
-$string['display_lastip'] = 'Показать последний IP';
-$string['display_msn'] = 'Показать MSN';
-$string['display_phone1'] = 'Показать телефон 1';
-$string['display_phone2'] = 'Показать телефон 2';
-$string['display_picture'] = 'Показать изображение';
-$string['display_skype'] = 'Показать Skype';
-$string['display_un'] = 'Показать имя';
-$string['display_yahoo'] = 'Показать Yahoo';
-$string['myprofile:addinstance'] = 'Добавлять новый блок Текущий пользователь';
-$string['myprofile:myaddinstance'] = 'Добавлять новый блок Текущий пользователь в Мой Moodle';
+$string['contentsettings'] = 'Настройки отображения для области содержимого';
+$string['display_address'] = 'Показывать адрес';
+$string['display_aim'] = 'Показывать AIM';
+$string['display_city'] = 'Показывать город';
+$string['display_country'] = 'Показывать страну';
+$string['display_currentlogin'] = 'Показывать дату текущего входа в систему';
+$string['display_email'] = 'Показывать адрес электронной почты';
+$string['display_firstaccess'] = 'Показывать дату первого доступа';
+$string['display_icq'] = 'Показывать ICQ';
+$string['display_institution'] = 'Показывать учреждение';
+$string['display_lastaccess'] = 'Показывать дату последнего доступа';
+$string['display_lastip'] = 'Показывать последний IP';
+$string['display_msn'] = 'Показывать MSN';
+$string['display_phone1'] = 'Показывать телефон 1';
+$string['display_phone2'] = 'Показывать телефон 2';
+$string['display_picture'] = 'Показывать изображение';
+$string['display_skype'] = 'Показывать Skype';
+$string['display_un'] = 'Показывать имя';
+$string['display_yahoo'] = 'Показывать Yahoo';
+$string['myprofile:addinstance'] = 'Добавлять новый блок «Текущий пользователь»';
+$string['myprofile:myaddinstance'] = 'Добавлять новый блок «Текущий пользователь» на домашнюю страницу';
 $string['myprofile_settings'] = 'Вывод информации о пользователе';
 $string['pluginname'] = 'Текущий пользователь';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_installaddon', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['installaddons'] = '安装插件';
+$string['installfromrepo'] = '从Moodle插件目录安装插件';
 $string['installfromzip'] = '从 ZIP 文件中安装';
 $string['installfromzipfile'] = 'ZIP包';
 $string['installfromziprootdir'] = '重命名根目录';

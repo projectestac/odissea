@@ -265,7 +265,7 @@ function calendar_get_mini($courses, $groups, $users, $calmonth = false, $calyea
         foreach ($events as $eventid => $event) {
             if (!empty($event->modulename)) {
                 $cm = get_coursemodule_from_instance($event->modulename, $event->instance);
-                if (!groups_course_module_visible($cm)) {
+                if (!\core_availability\info_module::is_user_visible($cm, 0, false)) {
                     unset($events[$eventid]);
                 }
             }
@@ -571,34 +571,8 @@ function calendar_get_upcoming($courses, $groups, $users, $daysinfuture, $maxeve
                     if (!$cm = get_coursemodule_from_instance($event->modulename, $event->instance)) {
                         continue;
                     }
-                    if (!coursemodule_visible_for_user($cm)) {
+                    if (!\core_availability\info_module::is_user_visible($cm, 0, false)) {
                         continue;
-                    }
-                }
-                if ($event->modulename == 'assignment'){
-                    // create calendar_event to test edit_event capability
-                    // this new event will also prevent double creation of calendar_event object
-                    $checkevent = new calendar_event($event);
-                    // TODO: rewrite this hack somehow
-                    if (!calendar_edit_event_allowed($checkevent)){ // cannot manage entries, eg. student
-                        if (!$assignment = $DB->get_record('assignment', array('id'=>$event->instance))) {
-                            // print_error("invalidid", 'assignment');
-                            continue;
-                        }
-                        // assign assignment to assignment object to use hidden_is_hidden method
-                        require_once($CFG->dirroot.'/mod/assignment/lib.php');
-
-                        if (!file_exists($CFG->dirroot.'/mod/assignment/type/'.$assignment->assignmenttype.'/assignment.class.php')) {
-                            continue;
-                        }
-                        require_once ($CFG->dirroot.'/mod/assignment/type/'.$assignment->assignmenttype.'/assignment.class.php');
-
-                        $assignmentclass = 'assignment_'.$assignment->assignmenttype;
-                        $assignmentinstance = new $assignmentclass($cm->id, $assignment, $cm);
-
-                        if ($assignmentinstance->description_is_hidden()){//force not to show description before availability
-                            $event->description = get_string('notavailableyet', 'assignment');
-                        }
                     }
                 }
             }
@@ -1017,7 +991,7 @@ function calendar_filter_controls_element(moodle_url $url, $type) {
         $str = get_string('show'.$typeforhumans.'events', 'calendar');
     }
     $content = html_writer::start_tag('li', array('class' => 'calendar_event'));
-    $content .= html_writer::start_tag('a', array('href' => $url));
+    $content .= html_writer::start_tag('a', array('href' => $url, 'rel' => 'nofollow'));
     $content .= html_writer::tag('span', $icon, array('class' => $class));
     $content .= html_writer::tag('span', $str, array('class' => 'eventname'));
     $content .= html_writer::end_tag('a');
@@ -1917,6 +1891,54 @@ function calendar_add_event_allowed($event) {
 }
 
 /**
+ * Convert region timezone to php supported timezone
+ *
+ * @param string $tz value from ical file
+ * @return string $tz php supported timezone
+ */
+function calendar_normalize_tz($tz) {
+    switch ($tz) {
+        case('CST'):
+        case('Central Time'):
+        case('Central Standard Time'):
+            $tz = 'America/Chicago';
+            break;
+        case('CET'):
+        case('Central European Time'):
+            $tz = 'Europe/Berlin';
+            break;
+        case('EST'):
+        case('Eastern Time'):
+        case('Eastern Standard Time'):
+            $tz = 'America/New_York';
+            break;
+        case('PST'):
+        case('Pacific Time'):
+        case('Pacific Standard Time'):
+            $tz = 'America/Los_Angeles';
+            break;
+        case('China Time'):
+        case('China Standard Time'):
+            $tz = 'Asia/Beijing';
+            break;
+        case('IST'):
+        case('India Time'):
+        case('India Standard Time'):
+            $tz = 'Asia/New_Delhi';
+            break;
+        case('JST');
+        case('Japan Time'):
+        case('Japan Standard Time'):
+            $tz = 'Asia/Tokyo';
+            break;
+        case('Romance Standard Time'):
+            $tz = 'Europe/Brussels';
+            break;
+    }
+    return $tz;
+}
+
+/**
  * Manage calendar events
  *
  * This class provides the required functionality in order to manage calendar events.
@@ -2185,7 +2207,7 @@ class calendar_event {
      * @return bool event updated
      */
     public function update($data, $checkcapability=true) {
-        global $CFG, $DB, $USER;
+        global $DB, $USER;
 
         foreach ($data as $key=>$value) {
             $this->properties->$key = $value;
@@ -2193,6 +2215,17 @@ class calendar_event {
 
         $this->properties->timemodified = time();
         $usingeditor = (!empty($this->properties->description) && is_array($this->properties->description));
+
+        // Prepare event data.
+        $eventargs = array(
+            'context' => $this->properties->context,
+            'objectid' => $this->properties->id,
+            'other' => array(
+                'repeatid' => empty($this->properties->repeatid) ? 0 : $this->properties->repeatid,
+                'timestart' => $this->properties->timestart,
+                'name' => $this->properties->name
+            )
+        );
 
         if (empty($this->properties->id) || $this->properties->id < 1) {
 
@@ -2259,7 +2292,10 @@ class calendar_event {
             }
 
             // Log the event entry.
-            add_to_log($this->properties->courseid, 'calendar', 'add', 'event.php?action=edit&amp;id='.$this->properties->id, $this->properties->name);
+            $eventargs['objectid'] = $this->properties->id;
+            $eventargs['context'] = $this->properties->context;
+            $event = \core\event\calendar_event_created::create($eventargs);
+            $event->trigger();
 
             $repeatedids = array();
 
@@ -2287,8 +2323,12 @@ class calendar_event {
                     }
 
                     $repeatedids[] = $eventcopyid;
-                    // Log the event entry.
-                    add_to_log($eventcopy->courseid, 'calendar', 'add', 'event.php?action=edit&amp;id='.$eventcopyid, $eventcopy->name);
+
+                    // Trigger an event.
+                    $eventargs['objectid'] = $eventcopyid;
+                    $eventargs['other']['timestart'] = $eventcopy->timestart;
+                    $event = \core\event\calendar_event_created::create($eventargs);
+                    $event->trigger();
                 }
             }
 
@@ -2342,13 +2382,22 @@ class calendar_event {
                 }
                 $DB->execute($sql, $params);
 
-                // Log the event update.
-                add_to_log($this->properties->courseid, 'calendar', 'edit all', 'event.php?action=edit&amp;id='.$this->properties->id, $this->properties->name);
+                // Trigger an update event for each of the calendar event.
+                $events = $DB->get_records('event', array('repeatid' => $event->repeatid), '', 'id,timestart');
+                foreach ($events as $event) {
+                    $eventargs['objectid'] = $event->id;
+                    $eventargs['other']['timestart'] = $event->timestart;
+                    $event = \core\event\calendar_event_updated::create($eventargs);
+                    $event->trigger();
+                }
             } else {
                 $DB->update_record('event', $this->properties);
                 $event = calendar_event::load($this->properties->id);
                 $this->properties = $event->properties();
-                add_to_log($this->properties->courseid, 'calendar', 'edit', 'event.php?action=edit&amp;id='.$this->properties->id, $this->properties->name);
+
+                // Trigger an update event.
+                $event = \core\event\calendar_event_updated::create($eventargs);
+                $event->trigger();
             }
 
             // Hook for tracking event updates
@@ -2376,9 +2425,22 @@ class calendar_event {
             debugging('Attempting to delete an event before it has been loaded', DEBUG_DEVELOPER);
             return false;
         }
-
+        $calevent = $DB->get_record('event',  array('id' => $this->properties->id), '*', MUST_EXIST);
         // Delete the event
         $DB->delete_records('event', array('id'=>$this->properties->id));
+
+        // Trigger an event for the delete action.
+        $eventargs = array(
+            'context' => $this->properties->context,
+            'objectid' => $this->properties->id,
+            'other' => array(
+                'repeatid' => empty($this->properties->repeatid) ? 0 : $this->properties->repeatid,
+                'timestart' => $this->properties->timestart,
+                'name' => $this->properties->name
+            ));
+        $event = \core\event\calendar_event_deleted::create($eventargs);
+        $event->add_record_snapshot('event', $calevent);
+        $event->trigger();
 
         // If we are deleting parent of a repeated event series, promote the next event in the series as parent
         if (($this->properties->id == $this->properties->repeatid) && !$deleterepeated) {
@@ -2387,8 +2449,14 @@ class calendar_event {
                 $DB->execute("UPDATE {event} SET repeatid = ? WHERE repeatid = ?", array($newparent, $this->properties->id));
                 // Get all records where the repeatid is the same as the event being removed
                 $events = $DB->get_records('event', array('repeatid' => $newparent));
-                // For each of the returned events trigger the event_update hook.
+                // For each of the returned events trigger the event_update hook and an update event.
                 foreach ($events as $event) {
+                    // Trigger an event for the update.
+                    $eventargs['objectid'] = $event->id;
+                    $eventargs['other']['timestart'] = $event->timestart;
+                    $event = \core\event\calendar_event_updated::create($eventargs);
+                    $event->trigger();
+
                     self::calendar_event_hook('update_event', array($event, false));
                 }
             }
@@ -2604,10 +2672,13 @@ class calendar_event {
     /**
      * Creates a new event and returns a calendar_event object
      *
-     * @param object|array $properties An object containing event properties
-     * @return calendar_event|false The event object or false if it failed
+     * @param stdClass|array $properties An object containing event properties
+     * @param bool $checkcapability Check caps or not
+     * @throws coding_exception
+     *
+     * @return calendar_event|bool The event object or false if it failed
      */
-    public static function create($properties) {
+    public static function create($properties, $checkcapability = true) {
         if (is_array($properties)) {
             $properties = (object)$properties;
         }
@@ -2615,7 +2686,7 @@ class calendar_event {
             throw new coding_exception('When creating an event properties should be either an object or an assoc array');
         }
         $event = new calendar_event($properties);
-        if ($event->update($properties)) {
+        if ($event->update($properties, $checkcapability)) {
             return $event;
         } else {
             return false;
@@ -2778,11 +2849,11 @@ class calendar_information {
 function calendar_get_pollinterval_choices() {
     return array(
         '0' => new lang_string('never', 'calendar'),
-        '3600' => new lang_string('hourly', 'calendar'),
-        '86400' => new lang_string('daily', 'calendar'),
-        '604800' => new lang_string('weekly', 'calendar'),
+        HOURSECS => new lang_string('hourly', 'calendar'),
+        DAYSECS => new lang_string('daily', 'calendar'),
+        WEEKSECS => new lang_string('weekly', 'calendar'),
         '2628000' => new lang_string('monthly', 'calendar'),
-        '31536000' => new lang_string('annually', 'calendar')
+        YEARSECS => new lang_string('annually', 'calendar')
     );
 }
 
@@ -2855,14 +2926,15 @@ function calendar_add_subscription($sub) {
 /**
  * Add an iCalendar event to the Moodle calendar.
  *
- * @param object $event The RFC-2445 iCalendar event
+ * @param stdClass $event The RFC-2445 iCalendar event
  * @param int $courseid The course ID
  * @param int $subscriptionid The iCalendar subscription ID
+ * @param string $timezone The X-WR-TIMEZONE iCalendar property if provided
  * @throws dml_exception A DML specific exception is thrown for invalid subscriptionids.
- * @return int Code: 1=updated, 2=inserted, 0=error
+ * @return int Code: CALENDAR_IMPORT_EVENT_UPDATED = updated,  CALENDAR_IMPORT_EVENT_INSERTED = inserted, 0 = error
  */
-function calendar_add_icalendar_event($event, $courseid, $subscriptionid) {
-    global $DB, $USER;
+function calendar_add_icalendar_event($event, $courseid, $subscriptionid, $timezone='UTC') {
+    global $DB;
 
     // Probably an unsupported X-MICROSOFT-CDO-BUSYSTATUS event.
     if (empty($event->properties['SUMMARY'])) {
@@ -2872,7 +2944,7 @@ function calendar_add_icalendar_event($event, $courseid, $subscriptionid) {
     $name = $event->properties['SUMMARY'][0]->value;
     $name = str_replace('\n', '<br />', $name);
     $name = str_replace('\\', '', $name);
-    $name = preg_replace('/\s+/', ' ', $name);
+    $name = preg_replace('/\s+/u', ' ', $name);
 
     $eventrecord = new stdClass;
     $eventrecord->name = clean_param($name, PARAM_NOTAGS);
@@ -2881,23 +2953,43 @@ function calendar_add_icalendar_event($event, $courseid, $subscriptionid) {
         $description = '';
     } else {
         $description = $event->properties['DESCRIPTION'][0]->value;
+        $description = clean_param($description, PARAM_NOTAGS);
         $description = str_replace('\n', '<br />', $description);
         $description = str_replace('\\', '', $description);
-        $description = preg_replace('/\s+/', ' ', $description);
+        $description = preg_replace('/\s+/u', ' ', $description);
     }
-    $eventrecord->description = clean_param($description, PARAM_NOTAGS);
+    $eventrecord->description = $description;
 
     // Probably a repeating event with RRULE etc. TODO: skip for now.
     if (empty($event->properties['DTSTART'][0]->value)) {
         return 0;
     }
 
-    $eventrecord->timestart = strtotime($event->properties['DTSTART'][0]->value);
+    $defaulttz = date_default_timezone_get();
+    $tz = isset($event->properties['DTSTART'][0]->parameters['TZID']) ? $event->properties['DTSTART'][0]->parameters['TZID'] :
+            $timezone;
+    $tz = calendar_normalize_tz($tz);
+    $eventrecord->timestart = strtotime($event->properties['DTSTART'][0]->value . ' ' . $tz);
     if (empty($event->properties['DTEND'])) {
         $eventrecord->timeduration = 0; // no duration if no end time specified
     } else {
-        $eventrecord->timeduration = strtotime($event->properties['DTEND'][0]->value) - $eventrecord->timestart;
+        $endtz = isset($event->properties['DTEND'][0]->parameters['TZID']) ? $event->properties['DTEND'][0]->parameters['TZID'] :
+                $timezone;
+        $endtz = calendar_normalize_tz($endtz);
+        $eventrecord->timeduration = strtotime($event->properties['DTEND'][0]->value . ' ' . $endtz) - $eventrecord->timestart;
     }
+
+    // Check to see if it should be treated as an all day event.
+    if ($eventrecord->timeduration == DAYSECS) {
+        // Check to see if the event started at Midnight on the imported calendar.
+        date_default_timezone_set($timezone);
+        if (date('H:i:s', $eventrecord->timestart) === "00:00:00") {
+            // This event should be an all day event.
+            $eventrecord->timeduration = 0;
+        }
+        date_default_timezone_set($defaulttz);
+    }
+
     $eventrecord->uuid = $event->properties['UID'][0]->value;
     $eventrecord->timemodified = time();
 
@@ -2912,17 +3004,22 @@ function calendar_add_icalendar_event($event, $courseid, $subscriptionid) {
 
     if ($updaterecord = $DB->get_record('event', array('uuid' => $eventrecord->uuid))) {
         $eventrecord->id = $updaterecord->id;
-        if ($DB->update_record('event', $eventrecord)) {
-            return CALENDAR_IMPORT_EVENT_UPDATED;
-        } else {
-            return 0;
-        }
+        $return = CALENDAR_IMPORT_EVENT_UPDATED; // Update.
     } else {
-        if ($DB->insert_record('event', $eventrecord)) {
-            return CALENDAR_IMPORT_EVENT_INSERTED;
-        } else {
-            return 0;
+        $return = CALENDAR_IMPORT_EVENT_INSERTED; // Insert.
+    }
+    if ($createdevent = calendar_event::create($eventrecord, false)) {
+        if (!empty($event->properties['RRULE'])) {
+            // Repeating events.
+            date_default_timezone_set($tz); // Change time zone to parse all events.
+            $rrule = new \core_calendar\rrule_manager($event->properties['RRULE'][0]->value);
+            $rrule->parse_rrule();
+            $rrule->create_events($createdevent);
+            date_default_timezone_set($defaulttz); // Change time zone back to what it was.
         }
+        return $return;
+    } else {
+        return 0;
     }
 }
 
@@ -3019,15 +3116,23 @@ function calendar_import_icalendar_events($ical, $courseid, $subscriptionid = nu
     $updatecount = 0;
 
     // Large calendars take a while...
-    set_time_limit(300);
+    if (!CLI_SCRIPT) {
+        core_php_time_limit::raise(300);
+    }
 
     // Mark all events in a subscription with a zero timestamp.
     if (!empty($subscriptionid)) {
         $sql = "UPDATE {event} SET timemodified = :time WHERE subscriptionid = :id";
         $DB->execute($sql, array('time' => 0, 'id' => $subscriptionid));
     }
+    // Grab the timezone from the iCalendar file to be used later.
+    if (isset($ical->properties['X-WR-TIMEZONE'][0]->value)) {
+        $timezone = $ical->properties['X-WR-TIMEZONE'][0]->value;
+    } else {
+        $timezone = 'UTC';
+    }
     foreach ($ical->components['VEVENT'] as $event) {
-        $res = calendar_add_icalendar_event($event, $courseid, $subscriptionid);
+        $res = calendar_add_icalendar_event($event, $courseid, $subscriptionid, $timezone);
         switch ($res) {
           case CALENDAR_IMPORT_EVENT_UPDATED:
             $updatecount++;

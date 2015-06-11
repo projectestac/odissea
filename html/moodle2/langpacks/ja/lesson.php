@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,6 +128,7 @@ $string['defaultessayresponse'] = 'あなたの作文は、あなたの教師に
 $string['deleteallattempts'] = 'すべてのレッスン受験を削除する';
 $string['deletedefaults'] = '{$a} x レッスンデフォルトを削除しました。';
 $string['deletedpage'] = 'ページを削除しました';
+$string['deletepagenamed'] = 'ページを削除する: {$a}';
 $string['deleting'] = '削除中';
 $string['deletingpage'] = 'ページの削除: {$a}';
 $string['dependencyon'] = '依存対象';
@@ -140,11 +141,11 @@ $string['displaydefaultfeedback'] = 'デフォルトフィードバックを使�
 $string['displaydefaultfeedback_help'] = '<p>「<strong>Yes</strong>」を選択すると、問題のレスポンスが見つからない場合、デフォルトレスポンスの「正解です」および「不正解です」が使用されます。</p>
 <p>「<strong>No</strong>」を選択すると、 問題のレスポンスが見つからない場合、フィードバックは表示されません。レッスンを受験しているユーザは、自動的に次のレッスンページにリダイレクトされます。</p>';
 $string['displayhighscores'] = 'ハイスコアを表示する';
-$string['displayinleftmenu'] = '左メニューに表示しますか?';
+$string['displayinleftmenu'] = 'メニューに表示しますか?';
 $string['displayleftif'] = 'メニューを表示するための最小評点';
-$string['displayleftif_help'] = 'この設定では左側メニューが表示される前に、学生が特定の評点を取得する必要があるかどうか設定します。これにより最初の受験でレッスンすべてを通すことを学生に強制します。要求される評点を取得した後、学生はレビューのために左側メニューを使用することができます。';
-$string['displayleftmenu'] = '左メニューを表示する';
-$string['displayleftmenu_help'] = '有効にした場合、ページ一覧が表示されます。';
+$string['displayleftif_help'] = 'この設定ではレッスンメニューが表示される前に、学生が特定の評点を取得する必要があるかどうか設定します。これにより最初の受験でレッスンすべてを通すことを学生に強制します。要求される評点を取得した後、学生はレビューのためにメニューを使用することができます。';
+$string['displayleftmenu'] = 'メニューを表示する';
+$string['displayleftmenu_help'] = 'この設定を有効にした場合、移動することのできるページ一覧を学生が表示できるようにします。';
 $string['displayofgrade'] = '評点を表示する (学生のみ)';
 $string['displayreview'] = '問題の再受験オプションを提供する';
 $string['displayreview_help'] = '有効にした場合、問題が不正解のときに学生が評点なしで再受験する、またはレッスンを続けるオプションを提供します。';
@@ -185,11 +186,20 @@ $string['essayemailmessage2'] = '<p>作文問題:<blockquote>{$a->question}</blo
 $string['essayemailsubject'] = '{$a} 問題に対するあなたの評点';
 $string['essays'] = '作文問題';
 $string['essayscore'] = '作文問題の評点';
+$string['eventessayassessed'] = '作文が評価されました。';
+$string['eventessayattemptviewed'] = '作文問題の受験が閲覧されました。';
+$string['eventhighscoreadded'] = 'ハイスコアが追加されました。';
+$string['eventhighscoresviewed'] = 'ハイスコアが閲覧されました。';
+$string['eventlessonended'] = 'レッスンが終了しました。';
+$string['eventlessonstarted'] = 'レッスンが開始しました。';
+$string['false'] = '×';
 $string['fileformat'] = 'ファイルフォーマット';
 $string['finish'] = '終了';
 $string['firstanswershould'] = '最初の答えは「正しい」ページにジャンプしてください。';
-$string['firstwrong'] = 'あなたの解答が正しくないため、残念ですが得点できませんでした。学ぶ楽しさのために再度解答しますか (得点はできません)?';
+$string['firstwrong'] = 'あなたの解答は正しくありません。問題を再度受験しますか?  (今から問題に正しく解答した場合、あなたの最終評点には加算されません)';
 $string['flowcontrol'] = 'フローコントロール';
+$string['fractionsaddwrong'] = 'あなたが選択したプラス評点の合計が、100%になっていません。<br />現在の評点合計は {$a}% です。<br />戻ってこの問題を修正しますか?';
+$string['fractionsnomax'] = 'この問題で満点を取ることができるよう<br />答えの1つは、100%でなければなりません。 <br />戻ってこの問題を修正しますか?';
 $string['full'] = '展開する';
 $string['general'] = '一般設定';
 $string['gotoendoflesson'] = 'レッスンの最後に移動する';
@@ -312,6 +322,7 @@ $string['lessoncloses'] = 'レッスン終了';
 $string['lessoncloseson'] = 'レッスン終了: {$a}';
 $string['lesson:edit'] = 'レッスン活動を編集する';
 $string['lessonformating'] = 'レッスンフォーマット';
+$string['lesson:grade'] = 'レッスン作文問題を評定する';
 $string['lesson:manage'] = 'レッスン活動を管理する';
 $string['lessonmenu'] = 'レッスンメニュー';
 $string['lessonnotready'] = 'このレッスンは、まだ受験することができません。あなたの {$a} に連絡してください。';
@@ -340,7 +351,7 @@ $string['maxtime'] = '制限時間 (分)';
 $string['maxtimewarning'] = 'レッスン終了まで {$a} 分です。';
 $string['mediaclose'] = '「ウィンドウを閉じる」ボタンを表示する:';
 $string['mediafile'] = 'ファイルポップアップ';
-$string['mediafile_help'] = '<p>ここではレッスンの最初に表示されるファイル (例: mp3ファイル) またはウェブページへのポップアップウィンドウを作成します。また、必要に応じてポップアップウィンドウを開くことができるよう、リンクはすべてのレッスンページに表示されます。</p>
+$string['mediafile_help'] = '<p>ここではレッスンの最初に表示されるファイル (例: mp3ファイル) またはウェブページへのポップアップウィンドウを作成します。また、必要に応じてポップアップウィンドウを開くことができるようリンクはすべてのレッスンページに表示されます。</p>
 
 <p>任意で「ウィンドウを閉じる」ボタンをポップアップの下部に表示することができます。同様に、ウィンドウの高さおよび幅を設定することができます。</p>
 
@@ -383,6 +394,7 @@ $string['modulenameplural'] = 'レッスン';
 $string['move'] = 'ページを移動する';
 $string['movedpage'] = 'ページを移動しました。';
 $string['movepagehere'] = 'ページをここに移動する';
+$string['movepagenamed'] = 'ページを移動する: {$a}';
 $string['moving'] = 'ページの移動: {$a}';
 $string['multianswer'] = '複数解答';
 $string['multianswer_help'] = '<p>いくつかの問題タイプではこのチェックボックスをチェックすることで有効にすることができるオプションがあります。問題タイプとオプションの意味は下記のとおりです.</p>
@@ -418,6 +430,7 @@ $string['noretake'] = 'このレッスンは再受験できません。';
 $string['normal'] = '通常 - レッスンパスに従う';
 $string['notcompleted'] = '未了';
 $string['notdefined'] = '未定義';
+$string['notenoughsubquestions'] = '十分な副問題が定義されていません！<br />この問題を修正しますか？';
 $string['nothighscore'] = 'あなたはトップ {$a} ハイスコアリストに入りませんでした。';
 $string['notitle'] = 'タイトルなし';
 $string['numberofcorrectanswers'] = '正解数: {$a}';
@@ -442,10 +455,12 @@ $string['outof'] = '{$a} 中';
 $string['overview'] = '概要';
 $string['overview_help'] = 'レッスンは多くのページおよび任意のコンテンツページにより構成されます。ページはいくつかのコンテンツを含み、通常、問題で終了します。ジャンプには「このページ」または「次のページ」のような相対ジャンプ、またはレッスン内の1ページを指定する絶対ジャンプがあります。ページコンテンツには例えば目次のように、レッスン内の他のページへの一連のリンクを含みます。';
 $string['page'] = 'ページ: {$a}';
+$string['pageanswers'] = '正解ページ';
 $string['pagecontents'] = 'ページコンテンツ';
 $string['page-mod-lesson-edit'] = 'レッスンページを編集する';
 $string['page-mod-lesson-view'] = 'レッスンページを表示またはプレビューする';
 $string['page-mod-lesson-x'] = 'すべてのレッスンページ';
+$string['pageresponses'] = '解答ページ';
 $string['pages'] = 'ページ';
 $string['pagetitle'] = 'ページタイトル';
 $string['password'] = 'パスワード';
@@ -465,6 +480,7 @@ $string['preprocesserror'] = '前処理中にエラーが発生しました!';
 $string['prerequisitelesson'] = '必修レッスン';
 $string['preview'] = 'プレビュー';
 $string['previewlesson'] = '{$a} のプレビュー';
+$string['previewpagenamed'] = 'ページをプレビューする: {$a}';
 $string['previouspage'] = '前のページ';
 $string['processerror'] = '処理中にエラーが発生しました!';
 $string['progressbar'] = 'プログレスバー';
@@ -538,6 +554,7 @@ $string['timespenterror'] = '少なくともレッスンで {$a} 分の時間を
 $string['timespentminutes'] = '利用時間 (分)';
 $string['timetaken'] = '経過時間';
 $string['topscorestitle'] = 'トップ {$a} ハイスコア';
+$string['true'] = '○';
 $string['truefalse'] = '○/×問題';
 $string['unabledtosavefile'] = 'あなたがアップロードしたファイルを保存することができませんでした。';
 $string['unknownqtypesnotimported'] = '{$a} 件のサポートされない問題タイプがインポートされませんでした。';
@@ -545,6 +562,7 @@ $string['unseenpageinbranch'] = 'コンテンツページ内の未閲覧の問�
 $string['unsupportedqtype'] = 'サポートされていない問題タイプ ({$a}) です!';
 $string['updatedpage'] = 'ページを更新しました';
 $string['updatefailed'] = '更新が失敗しました。';
+$string['updatepagenamed'] = 'ページを更新する: {$a}';
 $string['usemaximum'] = '最大評点を使用する';
 $string['usemean'] = '評点平均を使用する';
 $string['usepassword'] = 'レッスンをパスワードで保護する';

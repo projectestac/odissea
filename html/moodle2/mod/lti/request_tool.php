@@ -17,8 +17,7 @@
 /**
  * Submits a request to administrators to add a tool configuration for the requested site.
  *
- * @package    mod
- * @subpackage lti
+ * @package mod_lti
  * @copyright  Copyright (c) 2011 Moodlerooms Inc. (http://www.moodlerooms.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @author     Chris Scribner
@@ -55,9 +54,9 @@ $PAGE->set_pagelayout('incourse');
 echo $OUTPUT->header();
 echo $OUTPUT->heading(format_string($lti->name, true, array('context' => $context)));
 
-//Add a tool type if one does not exist already
+// Add a tool type if one does not exist already.
 if (!lti_get_tool_by_url_match($lti->toolurl, $lti->course, LTI_TOOL_STATE_ANY)) {
-    //There are no tools (active, pending, or rejected) for the launch URL. Create a new pending tool
+    // There are no tools (active, pending, or rejected) for the launch URL. Create a new pending tool.
     $tooltype = new stdClass();
     $toolconfig = new stdClass();
 

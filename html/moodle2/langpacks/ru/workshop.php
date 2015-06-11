@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,6 +108,17 @@ $string['evaluation'] = 'Оценивание оценок';
 $string['evaluationmethod'] = 'Метод оценивания оценок';
 $string['evaluationmethod_help'] = 'Метод оценивания оценок определяет, как вычисляются баллы за оценивание. Вы можете позволить неоднократно пересчитывать баллы с различными настройками, пока не получите приемлемый результат.';
 $string['evaluationsettings'] = 'Параметры оценки';
+$string['eventassessableuploaded'] = 'Работа была загружена';
+$string['eventassessmentevaluated'] = 'Оценка вычислена';
+$string['eventassessmentevaluationsreset'] = 'Сброшено вычисление оценки';
+$string['eventassessmentreevaluated'] = 'Оценка переопределена';
+$string['eventphaseswitched'] = 'Фаза переключена';
+$string['eventsubmissionassessed'] = 'Работа оценена';
+$string['eventsubmissionassessmentsreset'] = 'Оценки работы очищены';
+$string['eventsubmissioncreated'] = 'Представление работы создано';
+$string['eventsubmissionreassessed'] = 'Работа переоценена';
+$string['eventsubmissionupdated'] = 'Работа обновлена';
+$string['eventsubmissionviewed'] = 'Работа просмотрена';
 $string['example'] = 'Пример работы';
 $string['exampleadd'] = 'Добавить пример работы';
 $string['exampleassess'] = 'Оценить пример работы';

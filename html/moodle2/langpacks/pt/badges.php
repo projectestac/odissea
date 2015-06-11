@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,9 @@ $string['anymethodactivity'] = 'Qualquer uma das atividades selecionadas está c
 $string['anymethodcourseset'] = 'Qualquer uma das disciplinas selecionadas está concluída';
 $string['anymethodmanual'] = 'Qualquer um dos papéis selecionados pode atribuir a Medalha';
 $string['anymethodprofile'] = 'Qualquer um dos campos de perfil foi completado';
+$string['archivebadge'] = 'Gostaria de apagar a Medalha \'{$a}\', mas manter as Medalhas existentes que foram emitidas?';
+$string['archiveconfirm'] = 'Apagar e manter as Medalhas existentes que foram emitidas';
+$string['archivehelp'] = '<p>Esta opção significa que a Medalha será marcada como "retirada" e não aparecerá mais na lista de Medalhas. Os utilizadores deixarão de poder obter esta Medalha, no entanto, os atuais destinatários de Medalhas continuarão a poder exibir esta Medalha na sua página de perfil e nas suas backpacks externas. </p><p> Se pretende que os utilizadores mantenham o acesso às Medalhas recebidas, é importante selecionar esta opção em vez de excluir totalmente as Medalhas.</p>';
 $string['attachment'] = 'Anexar Medalha à mensagem';
 $string['attachment_help'] = 'Se ativar esta opção, uma Medalha emitida será anexada ao email para que os destinatários possam fazer o seu download. Para usar esta opção, a funcionalidade de anexos de email tem de ser ativada nas configurações do site.';
 $string['award'] = 'Atribuir Medalha';
@@ -187,9 +190,11 @@ $string['defaultissuercontact'] = 'Detalhes de contacto do emissor predefinido d
 $string['defaultissuercontact_desc'] = 'Endereço de email associado ao emissor de Medalhas.';
 $string['defaultissuername'] = 'Nome predefinido do emissor de Medalhas';
 $string['defaultissuername_desc'] = 'Nome do agente ou autoridade emissora.';
-$string['delbadge'] = 'Eliminar Medalha';
-$string['delconfirm'] = 'Tem a certeza de que pretende eliminar a Medalha \'{$a}\'?';
+$string['delbadge'] = 'Gostaria de apagar a Medalha \'{$a}\' e remover todas as Medalhas existentes que foram emitidas?';
+$string['delconfirm'] = 'Eliminar e remover as Medalhas existentes que foram emitidas';
 $string['delcritconfirm'] = 'Tem a certeza de que pretende eliminar este critério?';
+$string['deletehelp'] = '<p>Eliminar completamente uma medalha significa que todos os seus registos de informação e critérios serão permanentemente removidos. Os utilizadores que receberam esta medalha deixarão de lhe poder aceder e de a exibir nas suas páginas de perfil.</p>
+<p>Nota: Os utilizadores que receberam esta medalha e que já a encaminharam para a sua backpack externa, continuarão a ter esta medalha na sua backpack. No entanto, não poderão aceder aos respetivos critérios nem às páginas de evidência que estejam ligadas a este web site.</p>';
 $string['delparamconfirm'] = 'Tem a certeza de que pretende eliminar este parâmetro?';
 $string['description'] = 'Descrição';
 $string['disconnect'] = 'Desligar';

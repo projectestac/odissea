@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,13 +17,14 @@
 /**
  * This file keeps track of upgrades to the html block
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package block_html
  * @copyright 2010 Dongsheng Cai
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
+ * Upgrade code for the HTML block.
  *
  * @param int $oldversion
  * @param object $block
@@ -33,11 +33,11 @@ function xmldb_block_html_upgrade($oldversion) {
     global $CFG, $DB;
 
     // Moodle v2.3.0 release upgrade line
-    // Put any upgrade step following this
+    // Put any upgrade step following this.
 
 
     // Moodle v2.4.0 release upgrade line
-    // Put any upgrade step following this
+    // Put any upgrade step following this.
 
 
     // Moodle v2.5.0 release upgrade line.
@@ -45,6 +45,12 @@ function xmldb_block_html_upgrade($oldversion) {
 
 
     // Moodle v2.6.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Moodle v2.7.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Moodle v2.8.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

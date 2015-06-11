@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -94,6 +94,7 @@ $string['defaultgradesettings'] = 'Configuración de calificación predeterminad
 $string['defaultothersettings'] = 'Otras configuraciones predeterminadas';
 $string['deleteallattempts'] = 'Eliminar todos los intentos SCORM';
 $string['deleteattemptcheck'] = '¿Está totalmente seguro que quiere eliminar completamente estos intentos?';
+$string['deleteselected'] = 'Eliminar los intentos seleccionados';
 $string['deleteuserattemptcheck'] = '¿Está seguro que quiere eliminar completamente todos sus intentos?';
 $string['details'] = 'Detalles del rastreo SCO';
 $string['directories'] = 'Mostrar enlaces de directorio';

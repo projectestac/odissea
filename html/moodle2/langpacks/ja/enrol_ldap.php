@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_ldap', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,7 +107,7 @@ $string['phpldap_noextension'] = 'PHP LDAPモジュールが存在しないよ�
 $string['pluginname'] = 'LDAP登録';
 $string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロールするために、LDAPサーバを使用することができます。LDAPの使用は、あなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバーシップエントリを持つことを前提とします。</p>
 <p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む、複数のメンバーシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>
-<p>LDAPを使用してユーザを登録するには、ユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループは、ユーザがコースに登録できるよう、メンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
+<p>LDAPを使用してユーザを登録するには、ユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループは、ユーザがコースに登録できるようメンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
 <p>ユーザ登録情報は、ユーザのログイン時に更新されます。登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
 <p>このプラグインでは、新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';

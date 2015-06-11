@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,7 +134,7 @@ $string['excelcsvdownload'] = 'Descarrega en format compatible amb Excel (.csv)'
 $string['fraction'] = 'Fracció';
 $string['graderequired'] = 'Qualificació del curs requerida';
 $string['gradexrequired'] = '{$a} requerit';
-$string['inprogress'] = 'En progrés';
+$string['inprogress'] = 'En curs';
 $string['manualcompletionby'] = 'Compleció manual per altres';
 $string['manualcompletionbynote'] = 'Avís: Per tal que aparegui a la llista, la capacitat moodle/course:markcomplete s\'ha de permetre per algun rol';
 $string['manualselfcompletion'] = 'Auto-compleció manual';

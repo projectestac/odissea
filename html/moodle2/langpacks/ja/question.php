@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = '別のヒントを追加する';
 $string['addcategory'] = 'カテゴリを追加する';
 $string['addmorechoiceblanks'] = 'さらに {no} 件の選択肢入力欄を追加する';
 $string['adminreport'] = 'あなたの問題データベースで可能性のある不具合をレポートします。';
+$string['advancedsearchoptions'] = '検索オプション';
+$string['alltries'] = 'すべての受験';
 $string['answer'] = '答え';
 $string['answers'] = '答え';
 $string['answersaved'] = '解答保存';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = '問題カテゴリを検索できませんで�
 $string['cannotunhidequestion'] = '問題の非表示解除に失敗しました。';
 $string['cannotunzip'] = 'ZIPファイルを解凍できません。';
 $string['cannotwriteto'] = '{$a} にエクスポート問題を書き込めません。';
+$string['categories'] = 'カテゴリ';
 $string['category'] = 'カテゴリ';
 $string['categorycurrent'] = '現在のカテゴリ';
 $string['categorycurrentuse'] = 'このカテゴリを使用する';
@@ -114,8 +117,7 @@ $string['defaultmark'] = 'デフォルト評点';
 $string['defaultmarkmustbepositive'] = 'デフォルトの評点はプラスである必要があります。';
 $string['deletecoursecategorywithquestions'] = 'このコースカテゴリに関連する問題バンクに問題が登録されています。あなたが続けた場合、問題が削除されます。問題バンクのインターフェースを使用して、最初に問題を移動してください。';
 $string['deletequestioncheck'] = '本当に「 {$a} 」を削除してもよろしいですか?';
-$string['deletequestionscheck'] = '<p>本当に以下の問題を削除してもよろしいですか</p>
-<p>{$a}</p>';
+$string['deletequestionscheck'] = '本当に以下の問題を削除してもよろしいですか?<br /></br />{$a}';
 $string['deletingbehaviour'] = '問題動作「 {$a} 」の削除';
 $string['deletingqtype'] = '問題タイプ「 {$a} 」の削除中';
 $string['didnotmatchanyanswer'] = '[合致する答えはありませんでした]';
@@ -151,6 +153,7 @@ $string['errorduringregrade'] = '問題 {$a->qid} を再評定できませんで
 $string['errorfilecannotbecopied'] = 'エラー: ファイル {$a} をコピーできません。';
 $string['errorfilecannotbemoved'] = 'エラー: ファイル {$a} を移動できません。';
 $string['errorfileschanged'] = 'エラー: 問題からリンクされているファイルがフォーム表示後に変更されました。';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = '問題 ({$a}) では、小テストの異なる位置において、1つ以上の異なる加重が設定されています。現在、統計レポートで、このような設定はサポートされていません。また、この小テスト統計の信頼性が損なわれる恐れがあります。';
 $string['errormanualgradeoutofrange'] = '問題 {$a->name} の評点 {$a->grade} が、ゼロおよび {$a->maxgrade} の範囲にありません。評点およびコメントは、保存されませんでした。';
 $string['errormovingquestions'] = 'ID {$a} の問題の移動中にエラーが発生しました。';
 $string['errorpostprocess'] = '後処理中にエラーが発生しました!';
@@ -160,6 +163,8 @@ $string['errorprocessingresponses'] = 'あなたの解答処理中にエラー�
 $string['errorsavingcomment'] = '問題 {$a->name} のコメントをデータベースに保存中にエラーが発生しました。';
 $string['errorsavingflags'] = 'フラグ状態の保存中にエラーが発生しました。';
 $string['errorupdatingattempt'] = 'データベース内の受験結果 {$a->id} を更新中にエラーが発生しました。';
+$string['eventquestioncategorycreated'] = '小テストカテゴリが作成されました。';
+$string['export'] = 'エクスポート';
 $string['exportcategory'] = 'エクスポートカテゴリ';
 $string['exportcategory_help'] = 'この設定では問題のエクスポート元カテゴリを決定します。
 
@@ -177,10 +182,11 @@ $string['filesareacourse'] = 'コースファイルエリア';
 $string['filesareasite'] = 'サイトファイルエリア';
 $string['filestomove'] = '{$a} にファイルを移動/コピーしますか?';
 $string['fillincorrect'] = '正解を表示する';
+$string['firsttry'] = '最初の受験';
 $string['flagged'] = 'フラグ済み';
 $string['flagthisquestion'] = 'この問題にフラグ付けする';
 $string['formquestionnotinids'] = '問題IDがない問題がフォームに含まれています。';
-$string['fractionsnomax'] = 'この問題で満点を取ることができるよう、答えの1つに評点100%を指定してください。';
+$string['fractionsnomax'] = 'この問題で満点を取ることができるよう答えの1つに評点100%を指定してください。';
 $string['generalfeedback'] = '全般に対するフィードバック';
 $string['generalfeedback_help'] = '全般に対するフィードバックは問題の受験後、学生に表示されるテキストです。問題タイプおよび学生の解答によって決まるフィードバックとは異なり、同じ全般に対するフィードバックテキストがすべての学生に表示されます。
 
@@ -198,6 +204,7 @@ $string['howquestionsbehave_help'] = '学生は小テスト内の問題に対し
 
 恐らく、これらは最も一般的に使用される動作モードです。';
 $string['ignorebroken'] = 'リンク切れを無視する';
+$string['import'] = 'インポート';
 $string['importcategory'] = 'インポートカテゴリ';
 $string['importcategory_help'] = 'この設定では問題のインポート先カテゴリを決定します。
 
@@ -227,6 +234,7 @@ $string['invalidgrade'] = '評点が評定オプションと合致しません -
 $string['invalidpenalty'] = '無効なペナルティ';
 $string['invalidwizardpage'] = 'ウィザードページが正しくないか、指定されていません!';
 $string['lastmodifiedby'] = '最終更新者';
+$string['lasttry'] = '最後の受験';
 $string['linkedfiledoesntexist'] = 'リンクファイル {$a} がありません。';
 $string['makechildof'] = '「 {$a} 」の子にする';
 $string['makecopy'] = 'コピーを作成する';
@@ -320,7 +328,7 @@ $string['numquestions'] = '問題数';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} 非表示)';
 $string['options'] = 'オプション';
 $string['orphanedquestionscategory'] = '削除されたカテゴリから問題が保存されました。';
-$string['orphanedquestionscategoryinfo'] = '一般的に古いソフトウェアのバグのため、対応する問題カテゴリが削除された後も問題をデータベース内に残すことができます。もちろん、これは今回発生したのではなく、このサイトで過去に発生したものです。このカテゴリは自動的に作成され、あなたが管理できるよう、迷子の問題がここに移動されました。恐らく、これらの問題で使用されるイメージまたはメディアファイルは喪失していることに留意してください。';
+$string['orphanedquestionscategoryinfo'] = '一般的に古いソフトウェアのバグのため、対応する問題カテゴリが削除された後も問題をデータベース内に残すことができます。もちろん、これは今回発生したのではなく、このサイトで過去に発生したものです。このカテゴリは自動的に作成され、あなたが管理できるよう迷子の問題がここに移動されました。恐らく、これらの問題で使用されるイメージまたはメディアファイルは喪失していることに留意してください。';
 $string['page-question-category'] = '問題カテゴリページ';
 $string['page-question-edit'] = '問題編集ページ';
 $string['page-question-export'] = '問題エクスポートページ';
@@ -351,7 +359,7 @@ $string['partiallycorrectfeedbackdefault'] = 'あなたの答えは部分的に�
 $string['penaltyfactor'] = 'ペナルティ要素';
 $string['penaltyfactor_help'] = '<p>ここではそれぞれの間違った解答に対して、差し引く評点の割合を指定することができます。これは問題に繰り返し答えることのできる、アダプティブモードで小テストが動作している場合のみ関係があります。ペナルティ要素は0から1の間に設定してください。ペナルティ要素が１の場合、学生は単位を得るため、最初の解答で正解する必要があります。ペナルティ要素が0の場合、学生は満点になるまで何度でも好きなだけ受験することができます。</p>';
 $string['penaltyforeachincorrecttry'] = 'それぞれの不正解に対するペナルティ';
-$string['penaltyforeachincorrecttry_help'] = '学生が問題を正解できるまで複数回受験できるよう、あなたが「複数受験インタラクティブ」または「アダプティブモード」動作を使用して問題を実行する場合、このオプションではそれぞれの不正解の受験に何点のペナルティが課せられるかコントロールします。
+$string['penaltyforeachincorrecttry_help'] = '学生が問題を正解できるまで複数回受験できるようあなたが「複数受験インタラクティブ」または「アダプティブモード」動作を使用して問題を実行する場合、このオプションではそれぞれの不正解の受験に何点のペナルティが課せられるかコントロールします。
 
 ペナルティは問題評点合計の割合です。そのため、問題の正解が3点、ペナルティが0.3333333の場合、学生が最初に正解することで3点を取得します。2回目の受験で正解した場合、学生は2点を取得します。そして、3回目の受験で正解した場合、学生は1点を取得します。';
 $string['permissionedit'] = 'この問題を編集する';
@@ -373,6 +381,7 @@ $string['questioncatsfor'] = '「 {$a} 」の問題カテゴリ';
 $string['questiondoesnotexist'] = 'この問題は存在しません。';
 $string['questionidmismatch'] = '問題IDが一致しません。';
 $string['questionname'] = '問題名';
+$string['questionnamecopy'] = '{$a} (コピー)';
 $string['questionno'] = '問題 {$a}';
 $string['questionpreviewdefaults'] = '問題プレビューデフォルト';
 $string['questionpreviewdefaults_desc'] = 'これらのデフォルトはユーザが問題バンク内の問題を最初にプレビューする時点で使用されます。ユーザが問題をプレビューした場合、パーソナルプリファレンスがユーザプリファレンスとして保存されます。';
@@ -395,6 +404,7 @@ $string['reviewresponse'] = '解答をレビューする';
 $string['rightanswer'] = '正解';
 $string['rightanswer_help'] = '自動的に生成される正解の概要です。これは制限できるため、問題の全体的なフィードバックの中で正解を説明して、このオプションを無効にしても良いでしょう。';
 $string['save'] = '保存';
+$string['savechangesandcontinueediting'] = '変更を保存して編集を続ける';
 $string['saved'] = '保存: {$a}';
 $string['saveflags'] = 'フラグの状態を保存する';
 $string['selectacategory'] = 'カテゴリを選択してください:';
@@ -443,12 +453,14 @@ $string['unknownquestioncatregory'] = '不明な問題カテゴリ: {$a}.';
 $string['unknownquestiontype'] = '不明な問題タイプ「 {$a} 」です。';
 $string['unknowntolerance'] = '不明な許容誤差タイプ「 {$a} 」です。';
 $string['unpublished'] = '非共有';
+$string['unusedcategorydeleted'] = 'コースを削除した後、カテゴリ内の問題が使用されませんでしたので、このカテゴリは削除されました。';
 $string['updatedisplayoptions'] = '表示オプションを更新する';
 $string['upgradeproblemcategoryloop'] = '問題カテゴリのアップグレード中に問題が発生しました。カテゴリツリーにループがあります。影響のあるカテゴリIDは、{$a} です。';
 $string['upgradeproblemcouldnotupdatecategory'] = '問題カテゴリ「 {$a->name} ({$a->id}) 」をアップグレードできませんでした。';
 $string['upgradeproblemunknowncategory'] = '問題カテゴリのアップグレード中に問題が発生しました。カテゴリ「 {$a->id} 」が存在しない親カテゴリ「 {$a->parent} 」を参照しています。問題を修正するため、親カテゴリを変更しました。';
 $string['whethercorrect'] = '問題の正否';
 $string['whethercorrect_help'] = 'ここでは「部分的正解」または「不正解」のテキスト記述の両方をカバーします。色付けされた強調表示は同じ情報を意味します。';
+$string['whichtries'] = '受験対象';
 $string['withselected'] = '選択したものを';
 $string['wrongprefix'] = '問題名接頭辞のフォーマット「 {$a} 」が正しくありません。';
 $string['xoutofmax'] = '{$a->mark} / {$a->max}';

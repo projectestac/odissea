@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactive', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qbehaviour_interactive', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   qbehaviour_interactive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Incomplet';
-$string['pluginname'] = 'Interactif avec tentatives multiples';
+$string['pluginname'] = 'Interactif avec essais multiples';
 $string['triesremaining'] = 'Essais restants : {$a}';
 $string['tryagain'] = 'Essayez encore';

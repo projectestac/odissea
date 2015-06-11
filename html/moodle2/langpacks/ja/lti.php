@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lti', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = '承認';
+$string['accepted'] = '承認';
 $string['accept_grades'] = 'ツールからの評点を受け付ける';
 $string['accept_grades_admin'] = 'ツールからの評点を受け付ける';
 $string['accept_grades_admin_help'] = 'このツールタイプのインスタンスに関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
@@ -47,7 +48,7 @@ $string['allowinstructorcustom'] = '教師によるカスタムパラメータ�
 $string['allowsetting'] = 'ツールによるMoodle内での8Kの設定保存を許可する';
 $string['always'] = '常に';
 $string['automatic'] = '自動、起動URLに基づく';
-$string['baseurl'] = 'ベースURL';
+$string['baseurl'] = 'ベースURL/ツール登録名';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'LTI活動';
 $string['basiclti_base_string'] = 'LTI OAuth基本ストリング';
@@ -58,8 +59,13 @@ $string['basicltiintro'] = '活動説明';
 $string['basicltiname'] = '活動名';
 $string['basiclti_parameters'] = 'LTI起動パラメータ';
 $string['basicltisettings'] = '基本学習ツール相互運用 (Learning Tool Interoperability) 設定';
+$string['cancel'] = 'キャンセル';
+$string['cancelled'] = 'キャンセル';
 $string['cannot_delete'] = 'あなたはこのツール設定を削除できません。';
 $string['cannot_edit'] = 'あなたはこのツール設定を編集できません。';
+$string['capabilities'] = 'ケイパビリティ';
+$string['capabilities_help'] = 'あなたがツールプロバイダに提供するケイパビリティを選択してください。1つ以上のケイパビリティを選択してください。';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">続けるにはクリック</a>';
 $string['comment'] = 'コメント';
 $string['configpassword'] = 'デフォルトのリモートツールパスワード';
 $string['configpreferheight'] = 'デフォルト推奨高';
@@ -68,6 +74,7 @@ $string['configpreferwidth'] = 'デフォルト推奨幅';
 $string['configresourceurl'] = 'デフォルトリソースURL';
 $string['configtoolurl'] = 'デフォルトリモートツールURL';
 $string['configtypes'] = 'LTIアプリケーションを有効にする';
+$string['configured'] = '設定';
 $string['courseid'] = 'コースIDナンバー';
 $string['coursemisconf'] = 'コースが正しく設定されていません。';
 $string['course_tool_types'] = 'コースツールタイプ';
@@ -75,7 +82,7 @@ $string['createdon'] = '作成日';
 $string['curllibrarymissing'] = 'LTIを使用するには、PHP Curlライブラリをインストールする必要があります。';
 $string['custom'] = 'カスタムパラメータ';
 $string['custom_config'] = 'カスタムツール設定を使用します。';
-$string['custom_help'] = 'カスタムパラメータはツールプロバイダから使用される設定です。例えば、プロバイダから特定のリソースを表示するため、カスタムパラメータを使用することができます。
+$string['custom_help'] = 'カスタムパラメータはツールプロバイダから使用される設定です。例えば、プロバイダから特定のリソースを表示するため、カスタムパラメータを使用することができます。それぞれのパラメータは独立した行に「name=value」のような形で入力する必要があります。例えば、次のようになります: 「chapter=3」
 
 ツールプロバイダから指示されない限り、このフィールドを変更しないままで安全です。';
 $string['custominstr'] = 'カスタムパラメータ';
@@ -113,12 +120,14 @@ $string['domain_mismatch'] = '起動URLのドメインがツール設定と合�
 $string['donot'] = '送信しない';
 $string['donotaccept'] = '承認しない';
 $string['donotallow'] = '許可しない';
+$string['duplicateregurl'] = 'この登録URLはすでに使用されています。';
 $string['edittype'] = '外部ツール設定を編集する';
 $string['embed'] = '埋め込み';
 $string['embed_no_blocks'] = '埋め込み (ブロックなし)';
 $string['enableemailnotification'] = '通知メールを送信する';
 $string['enableemailnotification_help'] = '有効にした場合、ツール送信が評定された時点で学生に対して通知メールが送信されます。';
 $string['errormisconfig'] = 'ツールが正しく設定されていません。ツール設定を修正するには、あなたのMoodle管理者にご連絡ください。';
+$string['existing_window'] = '既存のウィンドウ';
 $string['extensions'] = 'LTI拡張サービス';
 $string['external_tool_type'] = '外部ツールタイプ';
 $string['external_tool_type_help'] = 'ツール設定の主目的は、Moodleおよびツールプロバイダ間の安全な通信チャネルを構築することにあります。
@@ -194,6 +203,7 @@ $string['lti_launch_error_unsigned_help'] = '<p>ツールプロバイダのコ�
 <p> 代わりに、あなたは<a href="{$a->course_tool_editor}">ここで</a>コースレベルのツールプロバイダ設定を作成することができます。</p>';
 $string['lti:manage'] = 'ツール起動時、インストラクタになる';
 $string['lti:requesttooladd'] = 'ツールがサイト全体に設定されるようリクエストする';
+$string['ltisettings'] = 'LTI設定';
 $string['lti_tool_request_added'] = 'ツール設定のリクエストが正常に送信されました。ツール設定を完了するため、あなたは管理者に連絡する必要があります。';
 $string['lti_tool_request_existing'] = 'ツールドメインに関するツール設定は、すでに送信されています。';
 $string['ltiunknownserviceapicall'] = 'LTIの不明なサービスAPIがコールされました。';
@@ -208,6 +218,8 @@ $string['main_admin_help'] = '外部ツールでは、遠隔に設置された�
 * **保留** - これらのツールプロバイダはパッケージインポート経由で登録されていますが、管理者から設定されていない状態です。コンシューマーキーおよび共通秘密鍵がある場合、またはそれらを必要としない場合、教師はこれらのプロバイダのツールを利用することができます。
 
 * **拒否** - これらのツールは、管理者がMoodleインスタンス全体において、利用できるようにする意図がない旨、フラグを立てられた状態です。コンシューマーキーおよび共通秘密鍵がある場合、またはそれらを必要としない場合、教師はこれらのプロバイダのツールを利用することができます。';
+$string['manage_tool_proxies'] = '外部ツール登録を管理する';
+$string['manage_tools'] = '外部ツールタイプを管理する';
 $string['miscellaneous'] = 'その他';
 $string['misconfiguredtools'] = '設定の正しくないツールインスタンスが検出されました。';
 $string['missingparameterserror'] = 'ページの設定が正しくありません: 「 $a 」';
@@ -224,6 +236,7 @@ $string['modulename_help'] = '外部ツール活動モジュールにおいて�
 * 外部ツール設定では、両者間の安全な通信を許可することにより、あなたのサイトおよびツールプロバイダ間の信頼関係を確立します。';
 $string['modulenameplural'] = '外部ツール';
 $string['modulenamepluralformatted'] = 'LTIインスタンス';
+$string['name'] = '名称';
 $string['never'] = 'なし';
 $string['new_window'] = '新しいウィンドウ';
 $string['noattempts'] = 'このツールインスタンスでは、受験されたものはありません。';
@@ -231,7 +244,13 @@ $string['no_lti_configured'] = 'アクティブな外部ツール設定はあり
 $string['no_lti_pending'] = '保留された外部ツール設定はありません。';
 $string['no_lti_rejected'] = '拒否された外部ツール設定はありません。';
 $string['noltis'] = '外部ツールインスタンスはありません。';
+$string['noprofileservice'] = 'プロファイルサービスが見つかりませんでした。';
 $string['noservers'] = 'サーバが見つかりませんでした。';
+$string['no_tp_accepted'] = '承認された外部ツール登録はありません。';
+$string['no_tp_cancelled'] = 'キャンセルされた外部ツール登録はありません。';
+$string['no_tp_configured'] = '登録解除された外部ツール登録設定はありません。';
+$string['no_tp_pending'] = '保留の外部ツール登録はありません。';
+$string['no_tp_rejected'] = '拒否された外部ツール登録はありません。';
 $string['notypes'] = '現在、Moodle内で設定されているLTIツールはありません。追加するには、上記のインストールリンクをクリックしてください。';
 $string['noviewusers'] = 'このツールを使用するパーミッションが割り当てられたユーザは見つかりませんでした。';
 $string['optionalsettings'] = 'オプション設定';
@@ -246,6 +265,8 @@ $string['organizationurl_help'] = 'MoodleインスタンスのベースURLです
 
 このフィールドを空白にした場合、サイト設定内のデフォルト値が使用されます。';
 $string['pagesize'] = '1ページあたりの表示送信数';
+$string['parameter'] = 'ツールパラメータ';
+$string['parameter_help'] = 'ツールパラメータは認められたツールプロクシ内でツールプロバイダによりパスされるために要求される設定です。';
 $string['password'] = '共有秘密鍵';
 $string['password_admin'] = '共有秘密鍵';
 $string['password_admin_help'] = '共有秘密鍵は、ツールへの認証アクセスに使用されるパスワードだと考えることができます。ツールプロバイダから、コンシューマーキーと共に提供される必要があります。
@@ -269,6 +290,14 @@ $string['privacy'] = 'プライバシー';
 $string['quickgrade'] = 'クイック評定を有効にする';
 $string['quickgrade_help'] = 'クイック評定を有効にした場合、1ページで複数のツールを評定することができます。ページ内のすべての変更を同時に保存するには、評点とコメントを変更して画面下部にある「すべてのフィードバックを保存する」ボタンをクリックしてください。';
 $string['redirect'] = 'あなたは数秒以内にリダイレクトされます。リダイレクトされない場合、ボタンをクリックしてください。';
+$string['register'] = '登録';
+$string['registertype'] = '新しい外部ツール登録を設定する';
+$string['register_warning'] = '登録ページを開くのにしばらく時間がかかります。表示されない場合、あなたが設定で正しいURLを入力したか確認してください。';
+$string['registrationname'] = 'ツールプロバイダ名';
+$string['registrationname_help'] = '登録されるツールプロバイダ名を入力してください。';
+$string['registration_options'] = '登録オプション';
+$string['registrationurl'] = '登録URL';
+$string['registrationurl_help'] = '登録リクエストが送信されるロケーションとして、登録URLはツールプロバイダから利用することができます。';
 $string['reject'] = '拒否';
 $string['rejected'] = '拒否';
 $string['resource'] = 'リソース';
@@ -298,6 +327,8 @@ $string['secure_launch_url_help'] = '起動URLに似ていますが、起動URL�
 
 SSL経由での起動を強制するため、起動URLにhttpsアドレスを設定することもできます。また、このフィールドは空白のままにすることもできます。';
 $string['send'] = '送信';
+$string['services'] = 'サービス';
+$string['services_help'] = 'あなたがツールプロバイダに提供したいサービスを選択してください。1つ以上のサービスを選択してください。';
 $string['setupoptions'] = 'セットアップオプション';
 $string['share_email'] = 'ランチャーEメールをツールと共有する';
 $string['share_email_admin'] = 'ランチャーEメールをツールと共有する';
@@ -329,10 +360,25 @@ $string['size'] = 'サイズパラメータ';
 $string['submission'] = '送信';
 $string['submissions'] = '提出';
 $string['submissionsfor'] = '{$a} の提出';
+$string['subplugintype_ltiresource'] = 'LTIサービスリソース';
+$string['subplugintype_ltiresource_plural'] = 'LTIサービスリソース';
+$string['subplugintype_ltiservice'] = 'LTIサービス';
+$string['subplugintype_ltiservice_plural'] = 'LTIサービス';
 $string['subplugintype_ltisource'] = 'LTIソース';
 $string['subplugintype_ltisource_plural'] = 'LTIソース';
 $string['toggle_debug_data'] = 'デバッグデータに切り替える';
 $string['tool_config_not_found'] = 'このURLではツール設定が見つかりませんでした。';
+$string['toolproxy'] = '外部ツール登録';
+$string['toolproxy_help'] = '外部ツール登録はMoodleサイト管理者がLTI 2.0をサポートしているツールプロバイダから取得したツールプロクシから外部ツールを設定できるようにします。ツールプロバイダから提供されたURLすべてにおいて、処理を開始できる必要があります。ツールプロバイダに提供するケイパビリティおよびサービスは新しい登録の設定時に選択されます。
+
+このページに一覧表示されているツール登録は4つのカテゴリに分けられます:
+
+* **設定** - これらのツール登録はセットアップされていますが、登録処理は開始していません。
+* **保留** - これらのツール登録の登録処理は開始していますが、完了していません。 「設定」カテゴリに戻すには、設定を開いて保存してください。
+* **承認** - これらのツール登録は承認されています。ツールプロクシで指定されたリソースは初期ステータス「保留」の状態で外部ツールタイプページに表示されます。
+* **拒否** - これらのツール登録は登録処理中に拒否されています。登録処理を再開するため「設定」カテゴリに戻すには、設定を開いて保存してください。';
+$string['toolproxyregistration'] = '外部ツール登録';
+$string['toolregistration'] = '外部ツール登録';
 $string['tool_settings'] = 'ツール設定';
 $string['toolsetup'] = '外部ツール設定';
 $string['toolurl'] = 'ツールベースURL';

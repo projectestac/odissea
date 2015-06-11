@@ -104,1367 +104,6 @@ class local_mobile_external extends external_api {
         );
     }
 
-
-    /**
-     * Returns description of method parameters
-     *
-     * @return external_function_parameters
-     * @since Moodle 2.7
-     */
-    public static function core_grades_get_grades_parameters() {
-        return new external_function_parameters(
-            array(
-                'courseid' => new external_value(PARAM_INT, 'id of course'),
-                'component' => new external_value(
-                    PARAM_COMPONENT, 'A component, for example mod_forum or mod_quiz', VALUE_DEFAULT, ''),
-                'activityid' => new external_value(PARAM_INT, 'The activity ID', VALUE_DEFAULT, null),
-                'userids' => new external_multiple_structure(
-                    new external_value(PARAM_INT, 'user ID'),
-                    'An array of user IDs, leave empty to just retrieve grade item information', VALUE_DEFAULT, array()
-                )
-            )
-        );
-    }
-
-    /**
-     * Retrieve grade items and, optionally, student grades
-     *
-     * @param  int $courseid        Course id
-     * @param  string $component    Component name
-     * @param  int $activityid      Activity id
-     * @param  array  $userids      Array of user ids
-     * @return array                Array of grades
-     * @since Moodle 2.7
-     */
-    public static function core_grades_get_grades($courseid, $component = null, $activityid = null, $userids = array()) {
-        global $CFG, $USER, $DB;
-        require_once($CFG->libdir  . "/gradelib.php");
-        require_once($CFG->dirroot . "/local/mobile/locallib.php");
-
-        $params = self::validate_parameters(self::core_grades_get_grades_parameters(),
-            array('courseid' => $courseid, 'component' => $component, 'activityid' => $activityid, 'userids' => $userids));
-
-        $coursecontext = context_course::instance($params['courseid']);
-
-        try {
-            self::validate_context($coursecontext);
-        } catch (Exception $e) {
-            $exceptionparam = new stdClass();
-            $exceptionparam->message = $e->getMessage();
-            $exceptionparam->courseid = $params['courseid'];
-            throw new moodle_exception('errorcoursecontextnotvalid' , 'webservice', '', $exceptionparam);
-        }
-
-        $course = $DB->get_record('course', array('id' => $params['courseid']), '*', MUST_EXIST);
-
-        $access = false;
-        if (has_capability('moodle/grade:viewall', $coursecontext)) {
-            // Can view all user's grades in this course.
-            $access = true;
-
-        } else if ($course->showgrades && count($params['userids']) == 1) {
-            // Course showgrades == students/parents can access grades.
-
-            if ($params['userids'][0] == $USER->id and has_capability('moodle/grade:view', $coursecontext)) {
-                // Student can view their own grades in this course.
-                $access = true;
-
-            } else if (has_capability('moodle/grade:viewall', context_user::instance($params['userids'][0]))) {
-                // User can view the grades of this user. Parent most probably.
-                $access = true;
-            }
-        }
-
-        if (!$access) {
-            throw new moodle_exception('nopermissiontoviewgrades', 'error');
-        }
-
-        $itemtype = null;
-        $itemmodule = null;
-        if (!empty($params['component'])) {
-            list($itemtype, $itemmodule) = normalize_component($params['component']);
-        }
-
-        $cm = null;
-        if (!empty($itemmodule) && !empty($activityid)) {
-            if (! $cm = get_coursemodule_from_id($itemmodule, $activityid)) {
-                throw new moodle_exception('invalidcoursemodule');
-            }
-        }
-
-        $cminstanceid = null;
-        if (!empty($cm)) {
-            $cminstanceid = $cm->instance;
-        }
-
-        $grades = local_mobile_grade_get_grades($params['courseid'], $itemtype, $itemmodule, $cminstanceid, $params['userids']);
-
-        $acitivityinstances = null;
-        if (empty($cm)) {
-            // If we're dealing with multiple activites load all the module info.
-            $modinfo = get_fast_modinfo($params['courseid']);
-            $acitivityinstances = $modinfo->get_instances();
-        }
-
-        foreach ($grades->items as $gradeitem) {
-            if (!empty($cm)) {
-                // If they only requested one activity we will already have the cm.
-                $modulecm = $cm;
-            } else if (!empty($gradeitem->itemmodule)) {
-                $modulecm = $acitivityinstances[$gradeitem->itemmodule][$gradeitem->iteminstance];
-            } else {
-                // Course grade item.
-                continue;
-            }
-
-            // Make student feedback ready for output.
-            foreach ($gradeitem->grades as $studentgrade) {
-                if (!empty($studentgrade->feedback)) {
-                    list($studentgrade->feedback, $categoryinfo->feedbackformat) =
-                        external_format_text($studentgrade->feedback, $studentgrade->feedbackformat,
-                        $modulecm->id, $params['component'], 'feedback', null);
-                }
-            }
-        }
-
-        // Convert from objects to arrays so all web service clients are supported.
-        // While we're doing that we also remove grades the current user can't see due to hiding.
-        $gradesarray = array();
-        $canviewhidden = has_capability('moodle/grade:viewhidden', context_course::instance($params['courseid']));
-
-        $gradesarray['items'] = array();
-
-        foreach ($grades->items as $gradeitem) {
-            // Switch the stdClass instance for a grade item instance so we can call is_hidden() and use the ID.
-            $gradeiteminstance = self::core_grades_get_grade_item(
-                $course->id, $gradeitem->itemtype, $gradeitem->itemmodule, $gradeitem->iteminstance, $gradeitem->itemnumber);
-
-            if (!$canviewhidden && $gradeiteminstance->is_hidden()) {
-                continue;
-            }
-
-            // Format mixed bool/integer parameters.
-            $gradeitem->hidden = (!$gradeitem->hidden)? 0 : $gradeitem->hidden;
-            $gradeitem->locked = (!$gradeitem->locked)? 0 : $gradeitem->locked;
-
-            $gradeitemarray = (array)$gradeitem;
-            $gradeitemarray['grades'] = array();
-
-            if (!empty($gradeitem->grades)) {
-                foreach ($gradeitem->grades as $studentid => $studentgrade) {
-                    if (!$canviewhidden) {
-                        // Need to load the grade_grade object to check visibility.
-                        $gradegradeinstance = grade_grade::fetch(
-                            array(
-                                'userid' => $studentid,
-                                'itemid' => $gradeiteminstance->id
-                            )
-                        );
-                        // The grade grade may be legitimately missing if the student has no grade.
-                        if (!empty($gradegradeinstance ) && $gradegradeinstance->is_hidden()) {
-                            continue;
-                        }
-                    }
-
-                    // Format mixed bool/integer parameters.
-                    $studentgrade->hidden = (!$studentgrade->hidden)? 0 : $studentgrade->hidden;
-                    $studentgrade->locked = (!$studentgrade->locked)? 0 : $studentgrade->locked;
-                    $studentgrade->overridden = (!$studentgrade->overridden)? 0 : $studentgrade->overridden;
-
-                    $gradeitemarray['grades'][$studentid] = (array)$studentgrade;
-                    // Add the student ID as some WS clients can't access the array key.
-                    $gradeitemarray['grades'][$studentid]['userid'] = $studentid;
-                }
-            }
-
-            // If they requested grades for multiple activities load the cm object now.
-            $modulecm = $cm;
-            if (empty($modulecm) && !empty($gradeiteminstance->itemmodule)) {
-                $modulecm = $acitivityinstances[$gradeiteminstance->itemmodule][$gradeiteminstance->iteminstance];
-            }
-            if ($gradeiteminstance->itemtype == 'course') {
-                $gradesarray['items']['course'] = $gradeitemarray;
-                $gradesarray['items']['course']['activityid'] = 'course';
-            } else {
-                $gradesarray['items'][$modulecm->id] = $gradeitemarray;
-                // Add the activity ID as some WS clients can't access the array key.
-                $gradesarray['items'][$modulecm->id]['activityid'] = $modulecm->id;
-            }
-        }
-
-        $gradesarray['outcomes'] = array();
-        foreach ($grades->outcomes as $outcome) {
-            $modulecm = $cm;
-            if (empty($modulecm)) {
-                $modulecm = $acitivityinstances[$outcome->itemmodule][$outcome->iteminstance];
-            }
-
-            // Format mixed bool/integer parameters.
-            $outcome->hidden = (!$outcome->hidden)? 0 : $outcome->hidden;
-            $outcome->locked = (!$outcome->locked)? 0 : $outcome->locked;
-
-            $gradesarray['outcomes'][$modulecm->id] = (array)$outcome;
-            $gradesarray['outcomes'][$modulecm->id]['activityid'] = $modulecm->id;
-
-            $gradesarray['outcomes'][$modulecm->id]['grades'] = array();
-            if (!empty($outcome->grades)) {
-                foreach ($outcome->grades as $studentid => $studentgrade) {
-                    if (!$canviewhidden) {
-                        // Need to load the grade_grade object to check visibility.
-                        $gradeiteminstance = self::core_grades_get_grade_item(
-                            $course->id, $outcome->itemtype, $outcome->itemmodule, $outcome->iteminstance, $outcome->itemnumber);
-                        $gradegradeinstance = grade_grade::fetch(
-                            array(
-                                'userid' => $studentid,
-                                'itemid' => $gradeiteminstance->id
-                            )
-                        );
-                        // The grade grade may be legitimately missing if the student has no grade.
-                        if (!empty($gradegradeinstance ) && $gradegradeinstance->is_hidden()) {
-                            continue;
-                        }
-                    }
-
-                    // Format mixed bool/integer parameters.
-                    $studentgrade->hidden = (!$studentgrade->hidden)? 0 : $studentgrade->hidden;
-                    $studentgrade->locked = (!$studentgrade->locked)? 0 : $studentgrade->locked;
-
-                    $gradesarray['outcomes'][$modulecm->id]['grades'][$studentid] = (array)$studentgrade;
-
-                    // Add the student ID into the grade structure as some WS clients can't access the key.
-                    $gradesarray['outcomes'][$modulecm->id]['grades'][$studentid]['userid'] = $studentid;
-                }
-            }
-        }
-
-        return $gradesarray;
-    }
-
-    /**
-     * Get a grade item
-     * @param  int $courseid        Course id
-     * @param  string $itemtype     Item type
-     * @param  string $itemmodule   Item module
-     * @param  int $iteminstance    Item instance
-     * @param  int $itemnumber      Item number
-     * @return grade_item           A grade_item instance
-     */
-    private static function core_grades_get_grade_item($courseid, $itemtype, $itemmodule = null, $iteminstance = null, $itemnumber = null) {
-        global $CFG;
-        require_once($CFG->libdir . '/gradelib.php');
-
-        $gradeiteminstance = null;
-        if ($itemtype == 'course') {
-            $gradeiteminstance = grade_item::fetch(array('courseid' => $courseid, 'itemtype' => $itemtype));
-        } else {
-            $gradeiteminstance = grade_item::fetch(
-                array('courseid' => $courseid, 'itemtype' => $itemtype,
-                    'itemmodule' => $itemmodule, 'iteminstance' => $iteminstance, 'itemnumber' => $itemnumber));
-        }
-        return $gradeiteminstance;
-    }
-
-    /**
-     * Returns description of method result value
-     *
-     * @return external_description
-     * @since Moodle 2.7
-     */
-    public static function core_grades_get_grades_returns() {
-        return new external_single_structure(
-            array(
-                'items'  => new external_multiple_structure(
-                    new external_single_structure(
-                        array(
-                            'activityid' => new external_value(
-                                PARAM_ALPHANUM, 'The ID of the activity or "course" for the course grade item'),
-                            'itemnumber'  => new external_value(PARAM_INT, 'Will be 0 unless the module has multiple grades'),
-                            'scaleid' => new external_value(PARAM_INT, 'The ID of the custom scale or 0'),
-                            'name' => new external_value(PARAM_RAW, 'The module name'),
-                            'grademin' => new external_value(PARAM_FLOAT, 'Minimum grade'),
-                            'grademax' => new external_value(PARAM_FLOAT, 'Maximum grade'),
-                            'gradepass' => new external_value(PARAM_FLOAT, 'The passing grade threshold'),
-                            'locked' => new external_value(PARAM_INT, '0 means not locked, > 1 is a date to lock until'),
-                            'hidden' => new external_value(PARAM_INT, '0 means not hidden, > 1 is a date to hide until'),
-                            'grades' => new external_multiple_structure(
-                                new external_single_structure(
-                                    array(
-                                        'userid' => new external_value(
-                                            PARAM_INT, 'Student ID'),
-                                        'grade' => new external_value(
-                                            PARAM_FLOAT, 'Student grade'),
-                                        'locked' => new external_value(
-                                            PARAM_INT, '0 means not locked, > 1 is a date to lock until'),
-                                        'hidden' => new external_value(
-                                            PARAM_INT, '0 means not hidden, 1 hidden, > 1 is a date to hide until'),
-                                        'overridden' => new external_value(
-                                            PARAM_INT, '0 means not overridden, > 1 means overridden'),
-                                        'feedback' => new external_value(
-                                            PARAM_RAW, 'Feedback from the grader'),
-                                        'feedbackformat' => new external_value(
-                                            PARAM_INT, 'The format of the feedback'),
-                                        'usermodified' => new external_value(
-                                            PARAM_INT, 'The ID of the last user to modify this student grade'),
-                                        'datesubmitted' => new external_value(
-                                            PARAM_INT, 'A timestamp indicating when the student submitted the activity'),
-                                        'dategraded' => new external_value(
-                                            PARAM_INT, 'A timestamp indicating when the assignment was grades'),
-                                        'str_grade' => new external_value(
-                                            PARAM_RAW, 'A string representation of the grade'),
-                                        'str_long_grade' => new external_value(
-                                            PARAM_RAW, 'A nicely formatted string representation of the grade'),
-                                        'str_feedback' => new external_value(
-                                            PARAM_RAW, 'A string representation of the feedback from the grader'),
-                                    )
-                                )
-                            ),
-                        )
-                    )
-                ),
-                'outcomes'  => new external_multiple_structure(
-                    new external_single_structure(
-                        array(
-                            'activityid' => new external_value(
-                                PARAM_ALPHANUM, 'The ID of the activity or "course" for the course grade item'),
-                            'itemnumber'  => new external_value(PARAM_INT, 'Will be 0 unless the module has multiple grades'),
-                            'scaleid' => new external_value(PARAM_INT, 'The ID of the custom scale or 0'),
-                            'name' => new external_value(PARAM_RAW, 'The module name'),
-                            'locked' => new external_value(PARAM_INT, '0 means not locked, > 1 is a date to lock until'),
-                            'hidden' => new external_value(PARAM_INT, '0 means not hidden, > 1 is a date to hide until'),
-                            'grades' => new external_multiple_structure(
-                                new external_single_structure(
-                                    array(
-                                        'userid' => new external_value(
-                                            PARAM_INT, 'Student ID'),
-                                        'grade' => new external_value(
-                                            PARAM_FLOAT, 'Student grade'),
-                                        'locked' => new external_value(
-                                            PARAM_INT, '0 means not locked, > 1 is a date to lock until'),
-                                        'hidden' => new external_value(
-                                            PARAM_INT, '0 means not hidden, 1 hidden, > 1 is a date to hide until'),
-                                        'feedback' => new external_value(
-                                            PARAM_RAW, 'Feedback from the grader'),
-                                        'feedbackformat' => new external_value(
-                                            PARAM_INT, 'The feedback format'),
-                                        'usermodified' => new external_value(
-                                            PARAM_INT, 'The ID of the last user to modify this student grade'),
-                                        'str_grade' => new external_value(
-                                            PARAM_RAW, 'A string representation of the grade'),
-                                        'str_feedback' => new external_value(
-                                            PARAM_TEXT, 'A string representation of the feedback from the grader'),
-                                    )
-                                )
-                            ),
-                        )
-                    ), 'An array of outcomes associated with the grade items', VALUE_OPTIONAL
-                )
-            )
-        );
-    }
-
-    /**
-     * Get messages parameters description.
-     *
-     * @return external_function_parameters
-     * @since 2.8
-     */
-    public static function core_message_get_messages_parameters() {
-        return new external_function_parameters(
-            array(
-                'useridto' => new external_value(PARAM_INT, 'the user id who received the message, 0 for any user', VALUE_REQUIRED),
-                'useridfrom' => new external_value(PARAM_INT,
-                            'the user id who send the message, 0 for any user. -10 or -20 for no-reply or support user',
-                            VALUE_DEFAULT, 0),
-                'type' => new external_value(PARAM_ALPHA,
-                            'type of message to return, expected values are: notifications, conversations and both',
-                            VALUE_DEFAULT, 'both'),
-                'read' => new external_value(PARAM_BOOL, 'true for getting read messages, false for unread', VALUE_DEFAULT, true),
-                'newestfirst' => new external_value(PARAM_BOOL,
-                            'true for ordering by newest first, false for oldest first', VALUE_DEFAULT, true),
-                'limitfrom' => new external_value(PARAM_INT, 'limit from', VALUE_DEFAULT, 0),
-                'limitnum' => new external_value(PARAM_INT, 'limit number', VALUE_DEFAULT, 0)            )
-        );
-    }
-
-    /**
-     * Get messages function implementation.
-     * @param  int      $useridto       the user id who received the message
-     * @param  int      $useridfrom     the user id who send the message. -10 or -20 for no-reply or support user
-     * @param  string   $type           type of message tu return, expected values: notifications, conversations and both
-     * @param  bool     $read           true for retreiving read messages, false for unread
-     * @param  bool     $newestfirst    true for ordering by newest first, false for oldest first
-     * @param  int      $limitfrom      limit from
-     * @param  int      $limitnum       limit num
-     * @return external_description
-     * @since  2.8
-     */
-    public static function core_message_get_messages($useridto, $useridfrom = 0, $type = 'both' , $read = true,
-                                        $newestfirst = true, $limitfrom = 0, $limitnum = 0) {
-        global $CFG, $DB, $USER;
-        require_once($CFG->dirroot . "/message/lib.php");
-
-        $warnings = array();
-
-        $params = array(
-            'useridto' => $useridto,
-            'useridfrom' => $useridfrom,
-            'type' => $type,
-            'read' => $read,
-            'newestfirst' => $newestfirst,
-            'limitfrom' => $limitfrom,
-            'limitnum' => $limitnum
-        );
-
-        $params = self::validate_parameters(self::core_message_get_messages_parameters(), $params);
-
-        $context = context_system::instance();
-        self::validate_context($context);
-
-        $useridto = $params['useridto'];
-        $useridfrom = $params['useridfrom'];
-        $type = $params['type'];
-        $read = $params['read'];
-        $newestfirst = $params['newestfirst'];
-        $limitfrom = $params['limitfrom'];
-        $limitnum = $params['limitnum'];
-
-        $allowedvalues = array('notifications', 'conversations', 'both');
-        if (!in_array($type, $allowedvalues)) {
-            throw new invalid_parameter_exception('Invalid value for type parameter (value: ' . $type . '),' .
-                'allowed values are: ' . implode(',', $allowedvalues));
-        }
-
-        // Check if private messaging between users is allowed.
-        if (empty($CFG->messaging)) {
-            // If we are retreiving only conversations, and messaging is disabled, throw an exception.
-            if ($type == "conversations") {
-                throw new moodle_exception('disabled', 'message');
-            }
-            if ($type == "both") {
-                $warning = array();
-                $warning['item'] = 'message';
-                $warning['itemid'] = $USER->id;
-                $warning['warningcode'] = '1';
-                $warning['message'] = 'Private messages (conversations) are not enabled in this site.
-                    Only notifications will be returned';
-                $warnings[] = $warning;
-            }
-        }
-
-        if (!empty($useridto)) {
-            if (core_user::is_real_user($useridto)) {
-                $userto = core_user::get_user($useridto, '*', MUST_EXIST);
-            } else {
-                throw new moodle_exception('invaliduser');
-            }
-        }
-
-        if (!empty($useridfrom)) {
-            // We use get_user here because the from user can be the noreply or support user.
-            $userfrom = core_user::get_user($useridfrom, '*', MUST_EXIST);
-        }
-
-        // Check if the current user is the sender/receiver or just a privileged user.
-        if ($useridto != $USER->id and $useridfrom != $USER->id and
-             !has_capability('moodle/site:readallmessages', $context)) {
-            throw new moodle_exception('accessdenied', 'admin');
-        }
-
-        // Get messages.
-        $messagetable = $read ? '{message_read}' : '{message}';
-        $usersql = "";
-        $joinsql = "";
-        $params = array('deleted' => 0);
-
-        // Empty useridto means that we are going to retrieve messages send by the useridfrom to any user.
-        if (empty($useridto)) {
-            $userfields = get_all_user_name_fields(true, 'u', '', 'userto');
-            $joinsql = "JOIN {user} u ON u.id = mr.useridto";
-            $usersql = "mr.useridfrom = :useridfrom AND u.deleted = :deleted";
-            $params['useridfrom'] = $useridfrom;
-        } else {
-            $userfields = get_all_user_name_fields(true, 'u', '', 'userfrom');
-            // Left join because useridfrom may be -10 or -20 (no-reply and support users).
-            $joinsql = "LEFT JOIN {user} u ON u.id = mr.useridfrom";
-            $usersql = "mr.useridto = :useridto AND (u.deleted IS NULL OR u.deleted = :deleted)";
-            $params['useridto'] = $useridto;
-            if (!empty($useridfrom)) {
-                $usersql .= " AND mr.useridfrom = :useridfrom";
-                $params['useridfrom'] = $useridfrom;
-            }
-        }
-
-        // Now, if retrieve notifications, conversations or both.
-        $typesql = "";
-        if ($type != 'both') {
-            $typesql = "AND mr.notification = :notification";
-            $params['notification'] = ($type == 'notifications') ? 1 : 0;
-        }
-
-        // Finally the sort direction.
-        $orderdirection = $newestfirst ? 'DESC' : 'ASC';
-
-        $sql = "SELECT mr.*, $userfields
-                  FROM $messagetable mr
-                     $joinsql
-                 WHERE  $usersql
-                        $typesql
-                 ORDER BY mr.timecreated $orderdirection";
-
-        if ($messages = $DB->get_records_sql($sql, $params, $limitfrom, $limitnum)) {
-            $canviewfullname = has_capability('moodle/site:viewfullnames', $context);
-
-            // In some cases, we don't need to get the to/from user objects from the sql query.
-            $userfromfullname = '';
-            $usertofullname = '';
-
-            // In this case, the useridto field is not empty, so we can get the user destinatary fullname from there.
-            if (!empty($useridto)) {
-                $usertofullname = fullname($userto, $canviewfullname);
-                // The user from may or may not be filled.
-                if (!empty($useridfrom)) {
-                    $userfromfullname = fullname($userfrom, $canviewfullname);
-                }
-            } else {
-                // If the useridto field is empty, the useridfrom must be filled.
-                $userfromfullname = fullname($userfrom, $canviewfullname);
-            }
-            foreach ($messages as $mid => $message) {
-
-                // We need to get the user from the query.
-                if (empty($userfromfullname)) {
-                    // Check for non-reply and support users.
-                    if (core_user::is_real_user($message->useridfrom)) {
-                        $user = new stdclass();
-                        $user = username_load_fields_from_object($user, $message, 'userfrom');
-                        $message->userfromfullname = fullname($user, $canviewfullname);
-                    } else {
-                        $user = core_user::get_user($message->useridfrom);
-                        $message->userfromfullname = fullname($user, $canviewfullname);
-                    }
-                } else {
-                    $message->userfromfullname = $userfromfullname;
-                }
-
-                // We need to get the user from the query.
-                if (empty($usertofullname)) {
-                    $user = new stdclass();
-                    $user = username_load_fields_from_object($user, $message, 'userto');
-                    $message->usertofullname = fullname($user, $canviewfullname);
-                } else {
-                    $message->usertofullname = $usertofullname;
-                }
-
-                if (!isset($message->timeread)) {
-                    $message->timeread = 0;
-                }
-
-                $message->text = message_format_message_text($message);
-                $messages[$mid] = (array) $message;
-            }
-        }
-
-        $results = array(
-            'messages' => $messages,
-            'warnings' => $warnings
-        );
-
-        return $results;
-    }
-
-    /**
-     * Get messages return description.
-     *
-     * @return external_single_structure
-     * @since 2.8
-     */
-    public static function core_message_get_messages_returns() {
-        return new external_single_structure(
-            array(
-                'messages' => new external_multiple_structure(
-                    new external_single_structure(
-                        array(
-                            'id' => new external_value(PARAM_INT, 'mMssage id'),
-                            'useridfrom' => new external_value(PARAM_INT, 'User from id'),
-                            'useridto' => new external_value(PARAM_INT, 'User to id'),
-                            'subject' => new external_value(PARAM_TEXT, 'The message subject'),
-                            'text' => new external_value(PARAM_RAW, 'The message text formated'),
-                            'fullmessage' => new external_value(PARAM_RAW, 'The message'),
-                            'fullmessageformat' => new external_value(PARAM_INT, 'The message message format'),
-                            'fullmessagehtml' => new external_value(PARAM_RAW, 'The message in html'),
-                            'smallmessage' => new external_value(PARAM_RAW, 'The shorten message'),
-                            'notification' => new external_value(PARAM_INT, 'Is a notification?'),
-                            'contexturl' => new external_value(PARAM_RAW, 'Context URL'),
-                            'contexturlname' => new external_value(PARAM_TEXT, 'Context URL link name'),
-                            'timecreated' => new external_value(PARAM_INT, 'Time created'),
-                            'timeread' => new external_value(PARAM_INT, 'Time read'),
-                            'usertofullname' => new external_value(PARAM_TEXT, 'User to full name'),
-                            'userfromfullname' => new external_value(PARAM_TEXT, 'User from full name')
-                        ), 'message'
-                    )
-                ),
-                'warnings' => new external_warnings()
-            )
-        );
-    }
-
-    /**
-     * Returns description of get_files parameters
-     *
-     * @return external_function_parameters
-     * @since Moodle 2.2
-     */
-    public static function core_files_get_files_parameters() {
-        return new external_function_parameters(
-            array(
-                'contextid'    => new external_value(PARAM_INT, 'context id Set to -1 to use contextlevel and instanceid.'),
-                'component'    => new external_value(PARAM_TEXT, 'component'),
-                'filearea'     => new external_value(PARAM_TEXT, 'file area'),
-                'itemid'       => new external_value(PARAM_INT, 'associated id'),
-                'filepath'     => new external_value(PARAM_PATH, 'file path'),
-                'filename'     => new external_value(PARAM_TEXT, 'file name'),
-                'modified'     => new external_value(PARAM_INT, 'timestamp to return files changed after this time.', VALUE_DEFAULT, null),
-                'contextlevel' => new external_value(PARAM_ALPHA, 'The context level for the file location.', VALUE_DEFAULT, null),
-                'instanceid'   => new external_value(PARAM_INT, 'The instance id for where the file is located.', VALUE_DEFAULT, null)
-
-            )
-        );
-    }
-
-    /**
-     * Return moodle files listing
-     *
-     * @param int $contextid context id
-     * @param int $component component
-     * @param int $filearea file area
-     * @param int $itemid item id
-     * @param string $filepath file path
-     * @param string $filename file name
-     * @param int $modified timestamp to return files changed after this time.
-     * @param string $contextlevel The context level for the file location.
-     * @param int $instanceid The instance id for where the file is located.
-     * @return array
-     * @since Moodle 2.2
-     */
-    public static function core_files_get_files($contextid, $component, $filearea, $itemid, $filepath, $filename, $modified = null,
-                                     $contextlevel = null, $instanceid = null) {
-        global $CFG;
-        require_once($CFG->dirroot . "/local/mobile/locallib.php");
-
-        $parameters = array(
-            'contextid'    => $contextid,
-            'component'    => $component,
-            'filearea'     => $filearea,
-            'itemid'       => $itemid,
-            'filepath'     => $filepath,
-            'filename'     => $filename,
-            'modified'     => $modified,
-            'contextlevel' => $contextlevel,
-            'instanceid'   => $instanceid);
-        $fileinfo = self::validate_parameters(self::core_files_get_files_parameters(), $parameters);
-
-        $browser = get_file_browser();
-
-        // We need to preserve backwards compatibility. Zero will use the system context and minus one will
-        // use the addtional parameters to determine the context.
-        // TODO MDL-40489 get_context_from_params should handle this logic.
-        if ($fileinfo['contextid'] == 0) {
-            $context = context_system::instance();
-        } else {
-            if ($fileinfo['contextid'] == -1) {
-                unset($fileinfo['contextid']);
-            }
-            $context = local_mobile_get_context_from_params($fileinfo);
-        }
-        self::validate_context($context);
-
-        if (empty($fileinfo['component'])) {
-            $fileinfo['component'] = null;
-        }
-        if (empty($fileinfo['filearea'])) {
-            $fileinfo['filearea'] = null;
-        }
-        if (empty($fileinfo['filename'])) {
-            $fileinfo['filename'] = null;
-        }
-        if (empty($fileinfo['filepath'])) {
-            $fileinfo['filepath'] = null;
-        }
-
-        $return = array();
-        $return['parents'] = array();
-        $return['files'] = array();
-        $list = array();
-
-        if ($file = $browser->get_file_info(
-            $context, $fileinfo['component'], $fileinfo['filearea'], $fileinfo['itemid'],
-                $fileinfo['filepath'], $fileinfo['filename'])) {
-            $level = $file->get_parent();
-            while ($level) {
-                $params = $level->get_params();
-                $params['filename'] = $level->get_visible_name();
-                array_unshift($return['parents'], $params);
-                $level = $level->get_parent();
-            }
-            $children = $file->get_children();
-            foreach ($children as $child) {
-
-                $params = $child->get_params();
-                $timemodified = $child->get_timemodified();
-
-                if ($child->is_directory()) {
-                    if ((is_null($modified)) or ($modified < $timemodified)) {
-                        $node = array(
-                            'contextid' => $params['contextid'],
-                            'component' => $params['component'],
-                            'filearea'  => $params['filearea'],
-                            'itemid'    => $params['itemid'],
-                            'filepath'  => $params['filepath'],
-                            'filename'  => $child->get_visible_name(),
-                            'url'       => null,
-                            'isdir'     => true,
-                            'timemodified' => $timemodified
-                           );
-                           $list[] = $node;
-                    }
-                } else {
-                    if ((is_null($modified)) or ($modified < $timemodified)) {
-                        $node = array(
-                            'contextid' => $params['contextid'],
-                            'component' => $params['component'],
-                            'filearea'  => $params['filearea'],
-                            'itemid'    => $params['itemid'],
-                            'filepath'  => $params['filepath'],
-                            'filename'  => $child->get_visible_name(),
-                            'url'       => $child->get_url(),
-                            'isdir'     => false,
-                            'timemodified' => $timemodified
-                        );
-                           $list[] = $node;
-                    }
-                }
-            }
-        }
-        $return['files'] = $list;
-        return $return;
-    }
-
-    /**
-     * Returns description of get_files returns
-     *
-     * @return external_single_structure
-     * @since Moodle 2.2
-     */
-    public static function core_files_get_files_returns() {
-        return new external_single_structure(
-            array(
-                'parents' => new external_multiple_structure(
-                    new external_single_structure(
-                        array(
-                            'contextid' => new external_value(PARAM_INT, ''),
-                            'component' => new external_value(PARAM_COMPONENT, ''),
-                            'filearea'  => new external_value(PARAM_AREA, ''),
-                            'itemid'    => new external_value(PARAM_INT, ''),
-                            'filepath'  => new external_value(PARAM_TEXT, ''),
-                            'filename'  => new external_value(PARAM_TEXT, ''),
-                        )
-                    )
-                ),
-                'files' => new external_multiple_structure(
-                    new external_single_structure(
-                        array(
-                            'contextid' => new external_value(PARAM_INT, ''),
-                            'component' => new external_value(PARAM_COMPONENT, ''),
-                            'filearea'  => new external_value(PARAM_AREA, ''),
-                            'itemid'   => new external_value(PARAM_INT, ''),
-                            'filepath' => new external_value(PARAM_TEXT, ''),
-                            'filename' => new external_value(PARAM_TEXT, ''),
-                            'isdir'    => new external_value(PARAM_BOOL, ''),
-                            'url'      => new external_value(PARAM_TEXT, ''),
-                            'timemodified' => new external_value(PARAM_INT, ''),
-                        )
-                    )
-                )
-            )
-        );
-    }
-
-    /**
-     * Describes the parameters for mod_forum_get_forum_discussions_paginated.
-     *
-     * @return external_external_function_parameters
-     * @since Moodle 2.5
-     */
-    public static function mod_forum_get_forum_discussions_paginated_parameters() {
-        return new external_function_parameters (
-            array(
-                'forumid' => new external_value(PARAM_INT, 'forum ID', VALUE_REQUIRED),
-                'sortby' => new external_value(PARAM_ALPHA,
-                    'sort by this element: id, timemodified, timestart or timeend', VALUE_DEFAULT, 'timemodified'),
-                'sortdirection' => new external_value(PARAM_ALPHA, 'sort direction: ASC or DESC', VALUE_DEFAULT, 'DESC'),
-                'page' => new external_value(PARAM_INT, 'current page', VALUE_DEFAULT, -1),
-                'perpage' => new external_value(PARAM_INT, 'items per page', VALUE_DEFAULT, 0),
-            )
-        );
-    }
-
-
-    /**
-     * Returns a list of forum discussions as well as a summary of the discussion in a provided list of forums.
-     *
-     * @param array $forumids the forum ids
-     * @param int $limitfrom limit from SQL data
-     * @param int $limitnum limit number SQL data
-     *
-     * @return array the forum discussion details
-     * @since Moodle 2.8
-     */
-    public static function mod_forum_get_forum_discussions_paginated($forumid, $sortby = 'timemodified', $sortdirection = 'DESC',
-                                                    $page = -1, $perpage = 0) {
-        global $CFG, $DB, $USER;
-
-        require_once($CFG->dirroot . "/mod/forum/lib.php");
-
-        $warnings = array();
-
-        $params = self::validate_parameters(self::mod_forum_get_forum_discussions_paginated_parameters(),
-            array(
-                'forumid' => $forumid,
-                'sortby' => $sortby,
-                'sortdirection' => $sortdirection,
-                'page' => $page,
-                'perpage' => $perpage
-            )
-        );
-
-        // Compact/extract functions are not recommended.
-        $forumid        = $params['forumid'];
-        $sortby         = $params['sortby'];
-        $sortdirection  = $params['sortdirection'];
-        $page           = $params['page'];
-        $perpage        = $params['perpage'];
-
-        $sortallowedvalues = array('id', 'timemodified', 'timestart', 'timeend');
-        if (!in_array($sortby, $sortallowedvalues)) {
-            throw new invalid_parameter_exception('Invalid value for sortby parameter (value: ' . $sortby . '),' .
-                'allowed values are: ' . implode(',', $sortallowedvalues));
-        }
-
-        $sortdirection = strtoupper($sortdirection);
-        $directionallowedvalues = array('ASC', 'DESC');
-        if (!in_array($sortdirection, $directionallowedvalues)) {
-            throw new invalid_parameter_exception('Invalid value for sortdirection parameter (value: ' . $sortdirection . '),' .
-                'allowed values are: ' . implode(',', $directionallowedvalues));
-        }
-
-        $forum = $DB->get_record('forum', array('id' => $forumid), '*', MUST_EXIST);
-        $course = $DB->get_record('course', array('id' => $forum->course), '*', MUST_EXIST);
-        $cm = get_coursemodule_from_instance('forum', $forum->id, $course->id, false, MUST_EXIST);
-
-        // Validate the module context. It checks everything that affects the module visibility (including groupings, etc..).
-        $modcontext = context_module::instance($cm->id);
-        self::validate_context($modcontext);
-
-        // Check they have the view forum capability.
-        require_capability('mod/forum:viewdiscussion', $modcontext, null, true, 'noviewdiscussionspermission', 'forum');
-
-        $sort = 'd.' . $sortby . ' ' . $sortdirection;
-        $discussions = forum_get_discussions($cm, $sort, true, -1, -1, true, $page, $perpage);
-
-        if ($discussions) {
-            // Get the unreads array, this takes a forum id and returns data for all discussions.
-            $unreads = array();
-            if ($cantrack = forum_tp_can_track_forums($forum)) {
-                if ($forumtracked = forum_tp_is_tracked($forum)) {
-                    $unreads = forum_get_discussions_unread($cm);
-                }
-            }
-            // The forum function returns the replies for all the discussions in a given forum.
-            $replies = forum_count_discussion_replies($forumid, $sort, -1, $page, $perpage);
-
-            foreach ($discussions as $did => $discussion) {
-                // This function checks for qanda forums.
-                if (!forum_user_can_see_discussion($forum, $discussion, $modcontext)) {
-                    $warning = array();
-                    // Function forum_get_discussions returns forum_posts ids not forum_discussions ones.
-                    $warning['item'] = 'post';
-                    $warning['itemid'] = $discussion->id;
-                    $warning['warningcode'] = '1';
-                    $warning['message'] = 'You can\'t see this discussion';
-                    $warnings[] = $warning;
-                    continue;
-                }
-
-                $discussion->numunread = 0;
-                if ($cantrack && $forumtracked) {
-                    if (isset($unreads[$discussion->discussion])) {
-                        $discussion->numunread = (int) $unreads[$discussion->discussion];
-                    }
-                }
-
-                $discussion->numreplies = 0;
-                if (!empty($replies[$discussion->discussion])) {
-                    $discussion->numreplies = (int) $replies[$discussion->discussion]->replies;
-                }
-
-                // Load user objects from the results of the query.
-                $user = new stdclass();
-                $user->id = $discussion->userid;
-                $user = username_load_fields_from_object($user, $discussion);
-                $discussion->userfullname = fullname($user, $canviewfullname);
-                // We can have post written by users that are deleted. In this case, those users don't have a valid context.
-                $usercontext = context_user::instance($user->id, IGNORE_MISSING);
-                if ($usercontext) {
-                    $discussion->userpictureurl = moodle_url::make_pluginfile_url(
-                        $usercontext->id, 'user', 'icon', null, '/', 'f1')->out(false);
-                } else {
-                    $discussion->userpictureurl = '';
-                }
-
-                $usermodified = new stdclass();
-                $usermodified->id = $discussion->usermodified;
-                $usermodified = username_load_fields_from_object($usermodified, $discussion, 'um');
-                $discussion->usermodifiedfullname = fullname($usermodified, $canviewfullname);
-
-                // We can have post written by users that are deleted. In this case, those users don't have a valid context.
-                $usercontext = context_user::instance($usermodified->id, IGNORE_MISSING);
-                if ($usercontext) {
-                    $discussion->usermodifiedpictureurl = moodle_url::make_pluginfile_url(
-                        $usercontext->id, 'user', 'icon', null, '/', 'f1')->out(false);
-                } else {
-                    $discussion->usermodifiedpictureurl = '';
-                }
-
-                // Rewrite embedded images URLs.
-                list($discussion->message, $discussion->messageformat) =
-                    external_format_text($discussion->message, $discussion->messageformat,
-                                            $modcontext->id, 'mod_forum', 'post', $discussion->id);
-
-                // List attachments.
-                if (!empty($discussion->attachment)) {
-                    $discussion->attachments = array();
-
-                    $fs = get_file_storage();
-                    if ($files = $fs->get_area_files($modcontext->id, 'mod_forum', 'attachment',
-                                                        $discussion->id, "filename", false)) {
-                        foreach ($files as $file) {
-                            $filename = $file->get_filename();
-
-                            $discussion->attachments[] = array(
-                                'filename' => $filename,
-                                'mimetype' => $file->get_mimetype(),
-                                'fileurl'  => file_encode_url($CFG->wwwroot.'/webservice/pluginfile.php',
-                                                '/'.$modcontext->id.'/mod_forum/attachment/'.$discussion->id.'/'.$filename)
-                            );
-                        }
-                    }
-                }
-
-                $discussions[$did] = (array) $discussion;
-            }
-        }
-
-        $result = array();
-        $result['discussions'] = $discussions;
-        $result['warnings'] = $warnings;
-        return $result;
-
-    }
-
-    /**
-     * Describes the mod_forum_get_forum_discussions_paginated return value.
-     *
-     * @return external_single_structure
-     * @since Moodle 2.8
-     */
-    public static function mod_forum_get_forum_discussions_paginated_returns() {
-        return new external_single_structure(
-            array(
-                'discussions' => new external_multiple_structure(
-                        new external_single_structure(
-                            array(
-                                'id' => new external_value(PARAM_INT, 'Post id'),
-                                'name' => new external_value(PARAM_TEXT, 'Discussion name'),
-                                'groupid' => new external_value(PARAM_INT, 'Group id'),
-                                'timemodified' => new external_value(PARAM_INT, 'Time modified'),
-                                'usermodified' => new external_value(PARAM_INT, 'The id of the user who last modified'),
-                                'timestart' => new external_value(PARAM_INT, 'Time discussion can start'),
-                                'timeend' => new external_value(PARAM_INT, 'Time discussion ends'),
-                                'discussion' => new external_value(PARAM_INT, 'Discussion id'),
-                                'parent' => new external_value(PARAM_INT, 'Parent id'),
-                                'userid' => new external_value(PARAM_INT, 'User who started the discussion id'),
-                                'created' => new external_value(PARAM_INT, 'Creation time'),
-                                'modified' => new external_value(PARAM_INT, 'Time modified'),
-                                'mailed' => new external_value(PARAM_INT, 'Mailed?'),
-                                'subject' => new external_value(PARAM_TEXT, 'The post subject'),
-                                'message' => new external_value(PARAM_RAW, 'The post message'),
-                                'messageformat' => new external_format_value('message'),
-                                'messagetrust' => new external_value(PARAM_INT, 'Can we trust?'),
-                                'attachment' => new external_value(PARAM_RAW, 'Has attachments?'),
-                                'attachments' => new external_multiple_structure(
-                                    new external_single_structure(
-                                        array (
-                                            'filename' => new external_value(PARAM_FILE, 'file name'),
-                                            'mimetype' => new external_value(PARAM_RAW, 'mime type'),
-                                            'fileurl'  => new external_value(PARAM_URL, 'file download url')
-                                        )
-                                    ), 'attachments', VALUE_OPTIONAL
-                                ),
-                                'totalscore' => new external_value(PARAM_INT, 'The post message total score'),
-                                'mailnow' => new external_value(PARAM_INT, 'Mail now?'),
-                                'userfullname' => new external_value(PARAM_TEXT, 'Post author full name'),
-                                'usermodifiedfullname' => new external_value(PARAM_TEXT, 'Post modifier full name'),
-                                'userpictureurl' => new external_value(PARAM_URL, 'Post author picture.'),
-                                'usermodifiedpictureurl' => new external_value(PARAM_URL, 'Post modifier picture.'),
-                                'numreplies' => new external_value(PARAM_TEXT, 'The number of replies in the discussion'),
-                                'numunread' => new external_value(PARAM_TEXT, 'The number of unread posts, blank if this value is
-                                    not available due to forum settings.')
-                            ), 'post'
-                        )
-                    ),
-                'warnings' => new external_warnings()
-            )
-        );
-    }
-
-
-    /**
-     * Describes the parameters for get_forum_discussion_posts.
-     *
-     * @return external_external_function_parameters
-     * @since Moodle 2.7
-     */
-    public static function mod_forum_get_forum_discussion_posts_parameters() {
-        return new external_function_parameters (
-            array(
-                'discussionid' => new external_value(PARAM_INT, 'discussion ID', VALUE_REQUIRED),
-                'sortby' => new external_value(PARAM_ALPHA,
-                    'sort by this element: id, created or modified', VALUE_DEFAULT, 'created'),
-                'sortdirection' => new external_value(PARAM_ALPHA, 'sort direction: ASC or DESC', VALUE_DEFAULT, 'DESC')
-            )
-        );
-    }
-
-    /**
-     * Returns a list of forum posts for a discussion
-     *
-     * @param int $discussionid the post ids
-     * @param string $sortby sort by this element (id, created or modified)
-     * @param string $sortdirection sort direction: ASC or DESC
-     *
-     * @return array the forum post details
-     * @since Moodle 2.7
-     */
-    public static function mod_forum_get_forum_discussion_posts($discussionid, $sortby = "created", $sortdirection = "DESC") {
-        global $CFG, $DB, $USER;
-
-        $warnings = array();
-
-        // Validate the parameter.
-        $params = self::validate_parameters(self::mod_forum_get_forum_discussion_posts_parameters(),
-            array(
-                'discussionid' => $discussionid,
-                'sortby' => $sortby,
-                'sortdirection' => $sortdirection));
-
-        // Compact/extract functions are not recommended.
-        $discussionid   = $params['discussionid'];
-        $sortby         = $params['sortby'];
-        $sortdirection  = $params['sortdirection'];
-
-        $sortallowedvalues = array('id', 'created', 'modified');
-        if (!in_array($sortby, $sortallowedvalues)) {
-            throw new invalid_parameter_exception('Invalid value for sortby parameter (value: ' . $sortby . '),' .
-                'allowed values are: ' . implode(',', $sortallowedvalues));
-        }
-
-        $sortdirection = strtoupper($sortdirection);
-        $directionallowedvalues = array('ASC', 'DESC');
-        if (!in_array($sortdirection, $directionallowedvalues)) {
-            throw new invalid_parameter_exception('Invalid value for sortdirection parameter (value: ' . $sortdirection . '),' .
-                'allowed values are: ' . implode(',', $directionallowedvalues));
-        }
-
-        $discussion = $DB->get_record('forum_discussions', array('id' => $discussionid), '*', MUST_EXIST);
-        $forum = $DB->get_record('forum', array('id' => $discussion->forum), '*', MUST_EXIST);
-        $course = $DB->get_record('course', array('id' => $forum->course), '*', MUST_EXIST);
-        $cm = get_coursemodule_from_instance('forum', $forum->id, $course->id, false, MUST_EXIST);
-
-        // Validate the module context. It checks everything that affects the module visibility (including groupings, etc..).
-        $modcontext = context_module::instance($cm->id);
-        self::validate_context($modcontext);
-
-        // This require must be here, see mod/forum/discuss.php.
-        require_once($CFG->dirroot . "/mod/forum/lib.php");
-
-        // Check they have the view forum capability.
-        require_capability('mod/forum:viewdiscussion', $modcontext, null, true, 'noviewdiscussionspermission', 'forum');
-
-        if (! $post = forum_get_post_full($discussion->firstpost)) {
-            throw new moodle_exception('notexists', 'forum');
-        }
-
-        // This function check groups, qanda, timed discussions, etc.
-        if (!forum_user_can_see_post($forum, $discussion, $post, null, $cm)) {
-            throw new moodle_exception('noviewdiscussionspermission', 'forum');
-        }
-
-        $canviewfullname = has_capability('moodle/site:viewfullnames', $modcontext);
-
-        // We will add this field in the response.
-        $canreply = forum_user_can_post($forum, $discussion, $USER, $cm, $course, $modcontext);
-
-        $forumtracked = forum_tp_is_tracked($forum);
-
-        $sort = 'p.' . $sortby . ' ' . $sortdirection;
-        $posts = forum_get_all_discussion_posts($discussion->id, $sort, $forumtracked);
-
-        foreach ($posts as $pid => $post) {
-
-            if (!forum_user_can_see_post($forum, $discussion, $post, null, $cm)) {
-                $warning = array();
-                $warning['item'] = 'post';
-                $warning['itemid'] = $post->id;
-                $warning['warningcode'] = '1';
-                $warning['message'] = 'You can\'t see this post';
-                $warnings[] = $warning;
-                continue;
-            }
-
-            // Function forum_get_all_discussion_posts adds postread field.
-            // Note that the value returned can be a boolean or an integer. The WS expects a boolean.
-            if (empty($post->postread)) {
-                $posts[$pid]->postread = false;
-            } else {
-                $posts[$pid]->postread = true;
-            }
-
-            $posts[$pid]->canreply = $canreply;
-            if (!empty($posts[$pid]->children)) {
-                $posts[$pid]->children = array_keys($posts[$pid]->children);
-            } else {
-                $posts[$pid]->children = array();
-            }
-
-            $user = new stdclass();
-            $user->id = $post->userid;
-            $user = username_load_fields_from_object($user, $post);
-            $post->userfullname = fullname($user, $canviewfullname);
-
-            $usercontext = context_user::instance($user->id, IGNORE_MISSING);
-            if ($usercontext) {
-                $post->userpictureurl = moodle_url::make_pluginfile_url(
-                        $usercontext->id, 'user', 'icon', null, '/', 'f1')->out(false);
-            } else {
-                $post->userpictureurl = '';
-            }
-
-            // Rewrite embedded images URLs.
-            list($post->message, $post->messageformat) =
-                external_format_text($post->message, $post->messageformat, $modcontext->id, 'mod_forum', 'post', $post->id);
-
-            // List attachments.
-            if (!empty($post->attachment)) {
-                $post->attachments = array();
-
-                $fs = get_file_storage();
-                if ($files = $fs->get_area_files($modcontext->id, 'mod_forum', 'attachment', $post->id, "filename", false)) {
-                    foreach ($files as $file) {
-                        $filename = $file->get_filename();
-
-                        $post->attachments[] = array(
-                            'filename' => $filename,
-                            'mimetype' => $file->get_mimetype(),
-                            'fileurl'  => file_encode_url($CFG->wwwroot.'/webservice/pluginfile.php',
-                                            '/'.$modcontext->id.'/mod_forum/attachment/'.$post->id.'/'.$filename)
-                        );
-                    }
-                }
-            }
-
-            $posts[$pid] = (array) $post;
-        }
-
-        $result = array();
-        $result['posts'] = $posts;
-        $result['warnings'] = $warnings;
-        return $result;
-    }
-
-    /**
-     * Describes the get_forum_discussion_posts return value.
-     *
-     * @return external_single_structure
-     * @since Moodle 2.7
-     */
-    public static function mod_forum_get_forum_discussion_posts_returns() {
-        return new external_single_structure(
-            array(
-                'posts' => new external_multiple_structure(
-                        new external_single_structure(
-                            array(
-                                'id' => new external_value(PARAM_INT, 'Post id'),
-                                'discussion' => new external_value(PARAM_INT, 'Discussion id'),
-                                'parent' => new external_value(PARAM_INT, 'Parent id'),
-                                'userid' => new external_value(PARAM_INT, 'User id'),
-                                'created' => new external_value(PARAM_INT, 'Creation time'),
-                                'modified' => new external_value(PARAM_INT, 'Time modified'),
-                                'mailed' => new external_value(PARAM_INT, 'Mailed?'),
-                                'subject' => new external_value(PARAM_TEXT, 'The post subject'),
-                                'message' => new external_value(PARAM_RAW, 'The post message'),
-                                'messageformat' => new external_format_value('message'),
-                                'messagetrust' => new external_value(PARAM_INT, 'Can we trust?'),
-                                'attachment' => new external_value(PARAM_RAW, 'Has attachments?'),
-                                'attachments' => new external_multiple_structure(
-                                    new external_single_structure(
-                                        array (
-                                            'filename' => new external_value(PARAM_FILE, 'file name'),
-                                            'mimetype' => new external_value(PARAM_RAW, 'mime type'),
-                                            'fileurl'  => new external_value(PARAM_URL, 'file download url')
-                                        )
-                                    ), 'attachments', VALUE_OPTIONAL
-                                ),
-                                'totalscore' => new external_value(PARAM_INT, 'The post message total score'),
-                                'mailnow' => new external_value(PARAM_INT, 'Mail now?'),
-                                'children' => new external_multiple_structure(new external_value(PARAM_INT, 'children post id')),
-                                'canreply' => new external_value(PARAM_BOOL, 'The user can reply to posts?'),
-                                'postread' => new external_value(PARAM_BOOL, 'The post was read'),
-                                'userfullname' => new external_value(PARAM_TEXT, 'Post author full name'),
-                                'userpictureurl' => new external_value(PARAM_URL, 'Post author picture.', VALUE_OPTIONAL),
-                            ), 'post'
-                        )
-                    ),
-                'warnings' => new external_warnings()
-            )
-        );
-    }
-
-    /**
-     * Describes the parameters for get_forum.
-     *
-     * @return external_external_function_parameters
-     * @since Moodle 2.5
-     */
-    public static function mod_forum_get_forums_by_courses_parameters() {
-        return new external_function_parameters (
-            array(
-                'courseids' => new external_multiple_structure(new external_value(PARAM_INT, 'course ID',
-                        '', VALUE_REQUIRED, '', NULL_NOT_ALLOWED), 'Array of Course IDs', VALUE_DEFAULT, array()),
-            )
-        );
-    }
-
-    /**
-     * Returns a list of forums in a provided list of courses,
-     * if no list is provided all forums that the user can view
-     * will be returned.
-     *
-     * @param array $courseids the course ids
-     * @return array the forum details
-     * @since Moodle 2.5
-     */
-    public static function mod_forum_get_forums_by_courses($courseids = array()) {
-        global $CFG, $DB, $USER;
-
-        require_once($CFG->dirroot . "/mod/forum/lib.php");
-
-        $params = self::validate_parameters(self::mod_forum_get_forums_by_courses_parameters(), array('courseids' => $courseids));
-
-        if (empty($params['courseids'])) {
-            // Get all the courses the user can view.
-            $courseids = array_keys(enrol_get_my_courses());
-        } else {
-            $courseids = $params['courseids'];
-        }
-
-        // Array to store the forums to return.
-        $arrforums = array();
-
-        // Ensure there are courseids to loop through.
-        if (!empty($courseids)) {
-            // Go through the courseids and return the forums.
-            foreach ($courseids as $cid) {
-                // Get the course context.
-                $context = context_course::instance($cid);
-                // Check the user can function in this context.
-                self::validate_context($context);
-                // Get the forums in this course.
-                if ($forums = $DB->get_records('forum', array('course' => $cid))) {
-                    // Get the modinfo for the course.
-                    $modinfo = get_fast_modinfo($cid);
-                    // Get the forum instances.
-                    $foruminstances = $modinfo->get_instances_of('forum');
-                    // Loop through the forums returned by modinfo.
-                    foreach ($foruminstances as $forumid => $cm) {
-                        // If it is not visible or present in the forums get_records call, continue.
-                        if (!$cm->uservisible || !isset($forums[$forumid])) {
-                            continue;
-                        }
-                        // Set the forum object.
-                        $forum = $forums[$forumid];
-                        // Get the module context.
-                        $context = context_module::instance($cm->id);
-                        // Check they have the view forum capability.
-                        require_capability('mod/forum:viewdiscussion', $context);
-                        // Format the intro before being returning using the format setting.
-                        list($forum->intro, $forum->introformat) = external_format_text($forum->intro, $forum->introformat,
-                            $context->id, 'mod_forum', 'intro', 0);
-                        // Add the course module id to the object, this information is useful.
-                        $forum->cmid = $cm->id;
-
-                        // Discussions count. This function does static request cache.
-                        $forum->numdiscussions = forum_count_discussions($forum, $cm, $modinfo->get_course());
-
-                        // Add the forum to the array to return.
-                        $arrforums[$forum->id] = (array) $forum;
-                    }
-                }
-            }
-        }
-
-        return $arrforums;
-    }
-
-    /**
-     * Describes the get_forum return value.
-     *
-     * @return external_single_structure
-     * @since Moodle 2.5
-     */
-    public static function mod_forum_get_forums_by_courses_returns() {
-        return new external_multiple_structure(
-            new external_single_structure(
-                array(
-                    'id' => new external_value(PARAM_INT, 'Forum id'),
-                    'course' => new external_value(PARAM_TEXT, 'Course id'),
-                    'type' => new external_value(PARAM_TEXT, 'The forum type'),
-                    'name' => new external_value(PARAM_TEXT, 'Forum name'),
-                    'intro' => new external_value(PARAM_RAW, 'The forum intro'),
-                    'introformat' => new external_format_value('intro'),
-                    'assessed' => new external_value(PARAM_INT, 'Aggregate type'),
-                    'assesstimestart' => new external_value(PARAM_INT, 'Assess start time'),
-                    'assesstimefinish' => new external_value(PARAM_INT, 'Assess finish time'),
-                    'scale' => new external_value(PARAM_INT, 'Scale'),
-                    'maxbytes' => new external_value(PARAM_INT, 'Maximum attachment size'),
-                    'maxattachments' => new external_value(PARAM_INT, 'Maximum number of attachments'),
-                    'forcesubscribe' => new external_value(PARAM_INT, 'Force users to subscribe'),
-                    'trackingtype' => new external_value(PARAM_INT, 'Subscription mode'),
-                    'rsstype' => new external_value(PARAM_INT, 'RSS feed for this activity'),
-                    'rssarticles' => new external_value(PARAM_INT, 'Number of RSS recent articles'),
-                    'timemodified' => new external_value(PARAM_INT, 'Time modified'),
-                    'warnafter' => new external_value(PARAM_INT, 'Post threshold for warning'),
-                    'blockafter' => new external_value(PARAM_INT, 'Post threshold for blocking'),
-                    'blockperiod' => new external_value(PARAM_INT, 'Time period for blocking'),
-                    'completiondiscussions' => new external_value(PARAM_INT, 'Student must create discussions'),
-                    'completionreplies' => new external_value(PARAM_INT, 'Student must post replies'),
-                    'completionposts' => new external_value(PARAM_INT, 'Student must post discussions or replies'),
-                    'cmid' => new external_value(PARAM_INT, 'Course module id'),
-                    'numdiscussions' => new external_value(PARAM_INT, 'Number of discussions in the forum', VALUE_OPTIONAL)
-                ), 'forum'
-            )
-        );
-    }
-
     /**
      * Describes the parameters for get_grades_table.
      *
@@ -2532,18 +1171,13 @@ class local_mobile_external extends external_api {
                 if ($rating->rating > $maxrating) {
                     $rating->rating = $maxrating;
                 }
+                $usercontext = context_user::instance($rating->userid);
+                $profileimageurl = moodle_url::make_webservice_pluginfile_url($usercontext->id, 'user', 'icon', null, '/', 'f1');
 
-                $profileimageurl = '';
-                // We can have ratings from deleted users. In this case, those users don't have a valid context.
-                $usercontext = context_user::instance($rating->userid, IGNORE_MISSING);
-                if ($usercontext) {
-                    $profileimageurl = moodle_url::make_pluginfile_url($usercontext->id, 'user', 'icon', null,
-                                                                                    '/', 'f1')->out(false);
-                }
                 $result = array();
                 $result['id'] = $rating->id;
                 $result['userid'] = $rating->userid;
-                $result['userpictureurl'] = $profileimageurl;
+                $result['userpictureurl'] = $profileimageurl->out(false);
                 $result['userfullname'] = fullname($rating);
                 $result['rating'] = $scalemenu[$rating->rating];
                 $result['timemodified'] = $rating->timemodified;
@@ -2749,6 +1383,1113 @@ class local_mobile_external extends external_api {
                    ),
                  'warnings' => new external_warnings()
             ), 'notes'
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_course_view_course_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'id of the course'),
+                'sectionnumber' => new external_value(PARAM_INT, 'section number', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Simulate the view.php web interface page, logging events, completion, etc...
+     *
+     * @param int $courseid id of course
+     * @param int $sectionnumber sectionnumber (0, 1, 2...)
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_course_view_course($courseid, $sectionnumber = 0) {
+        global $CFG;
+        require_once($CFG->dirroot . "/course/lib.php");
+
+        $params = self::validate_parameters(self::core_course_view_course_parameters(),
+                                            array(
+                                                'courseid' => $courseid,
+                                                'sectionnumber' => $sectionnumber
+                                            ));
+
+        $warnings = array();
+
+        $course = get_course($params['courseid']);
+        $context = context_course::instance($course->id);
+        self::validate_context($context);
+
+        if (!empty($params['sectionnumber'])) {
+
+            // Get section details and check it exists.
+            $modinfo = get_fast_modinfo($course);
+            $coursesection = $modinfo->get_section_info($params['sectionnumber'], MUST_EXIST);
+
+            // Check user is allowed to see it.
+            if (!$coursesection->uservisible) {
+                require_capability('moodle/course:viewhiddensections', $context);
+            }
+        }
+
+        $eventdata = array('context' => $context);
+
+        if (!empty($sectionnumber)) {
+            $eventdata['other']['coursesectionnumber'] = $params['sectionnumber'];
+        }
+
+        $event = \core\event\course_viewed::create($eventdata);
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_course_view_course_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+        /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_user_view_user_list_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'id of the course, 0 for site')
+            )
+        );
+    }
+
+    /**
+     * Simulate the /user/index.php web interface page triggering events
+     *
+     * @param int $courseid id of course
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_user_view_user_list($courseid) {
+        global $CFG;
+        require_once($CFG->dirroot . "/user/lib.php");
+
+        $params = self::validate_parameters(self::core_user_view_user_list_parameters(),
+                                            array(
+                                                'courseid' => $courseid
+                                            ));
+
+        $warnings = array();
+
+        if (empty($params['courseid'])) {
+            $params['courseid'] = SITEID;
+        }
+
+        $course = get_course($params['courseid']);
+
+        if ($course->id == SITEID) {
+            $context = context_system::instance();
+        } else {
+            $context = context_course::instance($course->id);
+        }
+        self::validate_context($context);
+
+        if ($course->id == SITEID) {
+            require_capability('moodle/site:viewparticipants', $context);
+        } else {
+            require_capability('moodle/course:viewparticipants', $context);
+        }
+
+        $event = \core\event\user_list_viewed::create(array(
+            'objectid' => $course->id,
+            'courseid' => $course->id,
+            'context' => $context,
+            'other' => array(
+                'courseshortname' => $course->shortname,
+                'coursefullname' => $course->fullname
+            )
+        ));
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_user_view_user_list_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_user_view_user_profile_parameters() {
+        return new external_function_parameters(
+            array(
+                'userid' => new external_value(PARAM_INT, 'id of the user, 0 for current user', VALUE_REQUIRED),
+                'courseid' => new external_value(PARAM_INT, 'id of the course, default site course', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Simulate the /user/index.php and /user/profile.php web interface page triggering events
+     *
+     * @param int $userid id of user
+     * @param int $courseid id of course
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_user_view_user_profile($userid, $courseid = 0) {
+        global $CFG, $USER;
+        require_once($CFG->dirroot . "/user/profile/lib.php");
+
+        $params = self::validate_parameters(self::core_user_view_user_profile_parameters(),
+                                            array(
+                                                'userid' => $userid,
+                                                'courseid' => $courseid
+                                            ));
+
+        $warnings = array();
+
+        if (empty($params['userid'])) {
+            $params['userid'] = $USER->id;
+        }
+
+        if (empty($params['courseid'])) {
+            $params['courseid'] = SITEID;
+        }
+
+        $course = get_course($params['courseid']);
+        $user = core_user::get_user($params['userid'], '*', MUST_EXIST);
+
+        if ($user->deleted) {
+            throw new moodle_exception('userdeleted');
+        }
+        if (isguestuser($user)) {
+            // Can not view profile of guest - thre is nothing to see there.
+            throw new moodle_exception('invaliduserid');
+        }
+
+        if ($course->id == SITEID) {
+            $coursecontext = context_system::instance();;
+        } else {
+            $coursecontext = context_course::instance($course->id);
+        }
+        self::validate_context($coursecontext);
+
+        $currentuser = $USER->id == $user->id;
+        $usercontext = context_user::instance($user->id);
+
+        if (!$currentuser and
+                !has_capability('moodle/user:viewdetails', $coursecontext) and
+                !has_capability('moodle/user:viewdetails', $usercontext)) {
+            throw new moodle_exception('cannotviewprofile');
+        }
+
+        // Case like user/profile.php.
+        if ($course->id == SITEID) {
+            $eventdata = array(
+                'objectid' => $user->id,
+                'relateduserid' => $user->id,
+                'context' => $usercontext
+            );
+
+            if (!empty($course)) {
+                $eventdata['courseid'] = $course->id;
+                $eventdata['other'] = array(
+                    'courseid' => $course->id,
+                    'courseshortname' => $course->shortname,
+                    'coursefullname' => $course->fullname
+                );
+            }
+
+            $event = \core\event\user_profile_viewed::create($eventdata);
+            $event->add_record_snapshot('user', $user);
+            $event->trigger();
+        } else {
+            // Case like user/view.php.
+            if (!$currentuser and !is_enrolled($coursecontext, $user->id)) {
+                throw new moodle_exception('notenrolledprofile');
+            }
+
+            $eventdata = array(
+                'objectid' => $user->id,
+                'relateduserid' => $user->id,
+                'context' => $coursecontext
+            );
+
+            if (!empty($course)) {
+                $eventdata['courseid'] = $course->id;
+                $eventdata['other'] = array(
+                    'courseid' => $course->id,
+                    'courseshortname' => $course->shortname,
+                    'coursefullname' => $course->fullname
+                );
+            }
+
+            $event = \core\event\user_profile_viewed::create($eventdata);
+            $event->add_record_snapshot('user', $user);
+            $event->trigger();
+        }
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_user_view_user_profile_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function mod_forum_view_forum_parameters() {
+        return new external_function_parameters(
+            array(
+                'forumid' => new external_value(PARAM_INT, 'forum instance id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the forum/view.php web interface page: trigger events, completion, etc...
+     *
+     * @param int $forumid the forum instance id
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function mod_forum_view_forum($forumid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/forum/lib.php");
+
+        $params = self::validate_parameters(self::mod_forum_view_forum_parameters(),
+                                            array(
+                                                'forumid' => $forumid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $forum = $DB->get_record('forum', array('id' => $params['forumid']), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($forum, 'forum');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $forum->id
+        );
+
+        $event = \mod_forum\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('forum', $forum);
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function mod_forum_view_forum_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function mod_forum_view_forum_discussion_parameters() {
+        return new external_function_parameters(
+            array(
+                'discussionid' => new external_value(PARAM_INT, 'discussion id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the forum/discuss.php web interface page: trigger events
+     *
+     * @param int $discussionid the discussion id
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function mod_forum_view_forum_discussion($discussionid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/forum/lib.php");
+
+        $params = self::validate_parameters(self::mod_forum_view_forum_discussion_parameters(),
+                                            array(
+                                                'discussionid' => $discussionid
+                                            ));
+        $warnings = array();
+
+        $discussion = $DB->get_record('forum_discussions', array('id' => $params['discussionid']), '*', MUST_EXIST);
+        $forum = $DB->get_record('forum', array('id' => $discussion->forum), '*', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($forum, 'forum');
+
+        // Validate the module context. It checks everything that affects the module visibility (including groupings, etc..).
+        $modcontext = context_module::instance($cm->id);
+        self::validate_context($modcontext);
+
+        // Call the forum/lib API.
+        $params = array(
+            'context' => $modcontext,
+            'objectid' => $discussion->id,
+        );
+
+        $event = \mod_forum\event\discussion_viewed::create($params);
+        $event->add_record_snapshot('forum_discussions', $discussion);
+        $event->add_record_snapshot('forum', $forum);
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function mod_forum_view_forum_discussion_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function gradereport_user_view_grade_report_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'id of the course'),
+                'userid' => new external_value(PARAM_INT, 'id of the user, 0 means current user', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Trigger the user report events, do the same that the web interface view of the report
+     *
+     * @param int $courseid id of course
+     * @param int $userid id of the user the report belongs to
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function gradereport_user_view_grade_report($courseid, $userid = 0) {
+        global $CFG, $USER;
+        require_once($CFG->dirroot . "/grade/lib.php");
+        require_once($CFG->dirroot . "/grade/report/user/lib.php");
+
+        $params = self::validate_parameters(self::gradereport_user_view_grade_report_parameters(),
+                                            array(
+                                                'courseid' => $courseid,
+                                                'userid' => $userid
+                                            ));
+
+        $warnings = array();
+
+        $course = get_course($params['courseid']);
+
+        $context = context_course::instance($course->id);
+        self::validate_context($context);
+
+        $userid = $params['userid'];
+        if (empty($userid)) {
+            $userid = $USER->id;
+        } else {
+            $user = core_user::get_user($userid, '*', MUST_EXIST);
+            if ($user->deleted) {
+                throw new moodle_exception('userdeleted');
+            }
+            if (isguestuser($user)) {
+                // Can not view profile of guest - thre is nothing to see there.
+                throw new moodle_exception('invaliduserid');
+            }
+        }
+
+        $access = false;
+
+        if (has_capability('moodle/grade:viewall', $context)) {
+            // Can view all course grades (any user).
+            $access = true;
+        } else if ($userid == $USER->id and has_capability('moodle/grade:view', $context) and $course->showgrades) {
+            // View own grades.
+            $access = true;
+        }
+
+        if (!$access) {
+            throw new moodle_exception('nopermissiontoviewgrades', 'error');
+        }
+
+        $event = \gradereport_user\event\grade_report_viewed::create(
+            array(
+                'context' => $context,
+                'courseid' => $course->id,
+                'relateduserid' => $userid,
+            )
+        );
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function gradereport_user_view_grade_report_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since 2.9
+     */
+    public static function core_message_mark_message_read_parameters() {
+        return new external_function_parameters(
+            array(
+                'messageid' => new external_value(PARAM_INT, 'id of the message (in the message table)'),
+                'timeread' => new external_value(PARAM_INT, 'timestamp for when the message should be marked read')
+            )
+        );
+    }
+
+    /**
+     * Mark a single message as read, trigger message_viewed event
+     *
+     * @param  int $messageid id of the message (in the message table)
+     * @param  int $timeread timestamp for when the message should be marked read
+     * @return external_description
+     * @throws invalid_parameter_exception
+     * @throws moodle_exception
+     * @since 2.9
+     */
+    public static function core_message_mark_message_read($messageid, $timeread) {
+        global $CFG, $DB, $USER;
+        require_once($CFG->dirroot . "/message/lib.php");
+
+        // Check if private messaging between users is allowed.
+        if (empty($CFG->messaging)) {
+            throw new moodle_exception('disabled', 'message');
+        }
+
+        // Warnings array, it can be empty at the end but is mandatory.
+        $warnings = array();
+
+        // Validate params.
+        $params = array(
+            'messageid' => $messageid,
+            'timeread' => $timeread
+        );
+        $params = self::validate_parameters(self::core_message_mark_message_read_parameters(), $params);
+
+        // Validate context.
+        $context = context_system::instance();
+        self::validate_context($context);
+
+        $message = $DB->get_record('message', array('id' => $params['messageid']), '*', MUST_EXIST);
+
+        if ($message->useridto != $USER->id) {
+            throw new invalid_parameter_exception('Invalid messageid, you don\'t have permissions to mark this message as read');
+        }
+
+        $messageid = message_mark_message_read($message, $params['timeread']);
+
+        $results = array(
+            'messageid' => $messageid,
+            'warnings' => $warnings
+        );
+        return $results;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since 2.9
+     */
+    public static function core_message_mark_message_read_returns() {
+        return new external_single_structure(
+            array(
+                'messageid' => new external_value(PARAM_INT, 'the id of the message in the message_read table'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 2.9
+     */
+    public static function core_notes_view_notes_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'course id, 0 for notes at system level'),
+                'userid' => new external_value(PARAM_INT, 'user id, 0 means view all the user notes', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Simulates the web interface view of notes/index.php: trigger events
+     *
+     * @param int $courseid id of the course
+     * @param int $userid id of the user
+     * @return array of warnings and status result
+     * @since Moodle 2.9
+     * @throws moodle_exception
+     */
+    public static function core_notes_view_notes($courseid, $userid = 0) {
+        global $CFG;
+        require_once($CFG->dirroot . "/notes/lib.php");
+
+        if (empty($CFG->enablenotes)) {
+            throw new moodle_exception('notesdisabled', 'notes');
+        }
+
+        $warnings = array();
+        $arrayparams = array(
+            'courseid' => $courseid,
+            'userid' => $userid
+        );
+        $params = self::validate_parameters(self::core_notes_view_notes_parameters(), $arrayparams);
+
+        if (empty($params['courseid'])) {
+            $params['courseid'] = SITEID;
+        }
+
+        $course = get_course($params['courseid']);
+
+        if ($course->id == SITEID) {
+            $context = context_system::instance();
+        } else {
+            $context = context_course::instance($course->id);
+        }
+
+        // First of all, validate the context before do further permission checks.
+        self::validate_context($context);
+        require_capability('moodle/notes:view', $context);
+
+        if (!empty($params['userid'])) {
+            $user = core_user::get_user($params['userid'], 'id, deleted', MUST_EXIST);
+
+            if ($user->deleted) {
+                throw new moodle_exception('userdeleted');
+            }
+
+            if (isguestuser($user)) {
+                throw new moodle_exception('invaliduserid');
+            }
+
+            if ($course->id != SITEID and !is_enrolled($context, $user, '', true)) {
+                throw new moodle_exception('notenrolledprofile');
+            }
+        }
+
+        $event = \core\event\notes_viewed::create(array(
+            'relateduserid' => $params['userid'],
+            'context' => $context
+        ));
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 2.9
+     */
+    public static function core_notes_view_notes_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_resource_view_resource_parameters() {
+        return new external_function_parameters(
+            array(
+                'resourceid' => new external_value(PARAM_INT, 'resource instance id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the resource/view.php web interface page: trigger events, completion, etc...
+     *
+     * @param int $resourceid the resource instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_resource_view_resource($resourceid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/resource/lib.php");
+
+        $params = self::validate_parameters(self::mod_resource_view_resource_parameters(),
+                                            array(
+                                                'resourceid' => $resourceid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $resource = $DB->get_record('resource', array('id' => $params['resourceid']), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($resource, 'resource');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        require_capability('mod/resource:view', $context);
+
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $resource->id
+        );
+
+        $event = \mod_resource\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('resource', $resource);
+        $event->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_resource_view_resource_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_url_view_url_parameters() {
+        return new external_function_parameters(
+            array(
+                'urlid' => new external_value(PARAM_INT, 'url instance id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the url/view.php web interface page: trigger events, completion, etc...
+     *
+     * @param int $urlid the url instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_url_view_url($urlid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/url/lib.php");
+
+        $params = self::validate_parameters(self::mod_url_view_url_parameters(),
+                                            array(
+                                                'urlid' => $urlid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $url = $DB->get_record('url', array('id' => $params['urlid']), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($url, 'url');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        require_capability('mod/url:view', $context);
+
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $url->id
+        );
+
+        $event = \mod_url\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('url', $url);
+        $event->trigger();
+
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_url_view_url_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_page_view_page_parameters() {
+        return new external_function_parameters(
+            array(
+                'pageid' => new external_value(PARAM_INT, 'page instance id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the page/view.php web interface page: trigger events, completion, etc...
+     *
+     * @param int $pageid the page instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_page_view_page($pageid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/page/lib.php");
+
+        $params = self::validate_parameters(self::mod_page_view_page_parameters(),
+                                            array(
+                                                'pageid' => $pageid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $page = $DB->get_record('page', array('id' => $params['pageid']), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($page, 'page');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        require_capability('mod/page:view', $context);
+
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $page->id
+        );
+
+        $event = \mod_page\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('page', $page);
+        $event->trigger();
+
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_page_view_page_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_assign_view_grading_table_parameters() {
+        return new external_function_parameters(
+            array(
+                'assignid' => new external_value(PARAM_INT, 'assign instance id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the web interface grading table view.
+     *
+     * @param int $assignid the assign instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_assign_view_grading_table($assignid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/assign/locallib.php");
+
+        $params = self::validate_parameters(self::mod_assign_view_grading_table_parameters(),
+                                            array(
+                                                'assignid' => $assignid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $assign = $DB->get_record('assign', array('id' => $params['assignid']), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($assign, 'assign');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        require_capability('mod/assign:view', $context);
+
+        $assign = new assign($context, null, null);
+        $assign->require_view_grades();
+        \mod_assign\event\grading_table_viewed::create_from_assign($assign)->trigger();
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_assign_view_grading_table_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_folder_view_folder_parameters() {
+        return new external_function_parameters(
+            array(
+                'folderid' => new external_value(PARAM_INT, 'folder instance id')
+            )
+        );
+    }
+
+    /**
+     * Simulate the folder/view.php web interface page: trigger events, completion, etc...
+     *
+     * @param int $folderid the folder instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_folder_view_folder($folderid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . "/mod/folder/lib.php");
+
+        $params = self::validate_parameters(self::mod_folder_view_folder_parameters(),
+                                            array(
+                                                'folderid' => $folderid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $folder = $DB->get_record('folder', array('id' => $params['folderid']), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($folder, 'folder');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        require_capability('mod/folder:view', $context);
+
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $folder->id
+        );
+
+        $event = \mod_folder\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('folder', $folder);
+        $event->trigger();
+
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_folder_view_folder_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
         );
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains an event for an unknown service API call.
+ * The mod_lti unknown service api called event.
  *
  * @package    mod_lti
  * @copyright  2013 Adrian Greeve <adrian@moodle.com>
@@ -26,6 +26,8 @@ namespace mod_lti\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
+ * The mod_lti unknown service api called event class.
+ *
  * Event for when something happens with an unknown lti service API call.
  *
  * @package    mod_lti
@@ -35,28 +37,28 @@ defined('MOODLE_INTERNAL') || die();
  */
 class unknown_service_api_called extends \core\event\base {
 
+    /** @var \stdClass Data to be used by event observers. */
+    protected $eventdata;
+
     /**
-     * Set method for legacy data.
+     * Sets custom data used by event observers.
      *
-     * @param \stdClass $data legacy event data.
+     * @param \stdClass $data
      */
-    public function set_legacy_data($data) {
-        // This function is not used and will be removed in 2.7.
+    public function set_message_data(\stdClass $data) {
+        $this->eventdata = $data;
     }
 
     /**
      * Returns custom data for event observers.
      *
-     * @since 2.6.2
      * @return \stdClass
      */
     public function get_message_data() {
         if ($this->is_restored()) {
             throw new \coding_exception('Function get_message_data() can not be used on restored events.');
         }
-        $data = (object)$this->data['other'];
-        $data->xml = new \SimpleXMLElement($data->rawbody);
-        return $data;
+        return $this->eventdata;
     }
 
     /**
@@ -64,7 +66,7 @@ class unknown_service_api_called extends \core\event\base {
      */
     protected function init() {
         $this->data['crud'] = 'r';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
         $this->context = \context_system::instance();
     }
 
@@ -101,6 +103,7 @@ class unknown_service_api_called extends \core\event\base {
      * @return mixed
      */
     protected function get_legacy_eventdata() {
-        return $this->get_message_data();
+        return $this->eventdata;
     }
+
 }

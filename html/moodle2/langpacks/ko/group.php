@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,14 @@ $string['errorremovenotpermitted'] = '자동으로 추가된 모둠 구성원 {$
 $string['errorselectone'] = '옵션을 고르기 전에 하나의 모둠을 미리 선택하기 바람';
 $string['errorselectsome'] = '옵션을 고르기 전에 하나 이상의 모둠을 미리 선택하기 바람';
 $string['evenallocation'] = '모둠 할당을 균등히 하기 위해서, 실제 모둠당 구성원 수는 명시한 것과 다를 수 있습니다.';
+$string['eventgroupcreated'] = '모둠이생성됨';
+$string['eventgroupdeleted'] = '모둠이 삭제됨';
+$string['eventgroupingcreated'] = '모둠무리가 생성됨';
+$string['eventgroupingdeleted'] = '모둠무리가 삭제됨';
+$string['eventgroupingupdated'] = '모둠무리 업데이트됨';
+$string['eventgroupmemberadded'] = '모둠 구성원이 추가됨';
+$string['eventgroupmemberremoved'] = '모둠 구성원이 제거됨';
+$string['eventgroupupdated'] = '모둠이 업데이트됨';
 $string['existingmembers'] = '실제 회원수 : {$a}';
 $string['filtergroups'] = '모둠을 다음 조건으로 필터링 :';
 $string['group'] = '모둠';
@@ -95,11 +103,6 @@ $string['groupingsonly'] = '모둠무리만';
 $string['groupmember'] = '모둠 구성원';
 $string['groupmemberdesc'] = '모둠 구성원에 대한 기본 역할';
 $string['groupmembers'] = '모둠 구성원';
-$string['groupmembersonly'] = '모둠 구성원만 사용가능';
-$string['groupmembersonlyerror'] = '죄송합니다만, 이 활동을 하기 위해서는 최소한 어떤 모둠의 구성원이라야만 합니다.';
-$string['groupmembersonly_help'] = '만일 체크박스가 체크 되어있다면,
-활동(혹은 학습자원)은 선택된 모둠 무리 내 모둠에 배정된 사용자만이
-이용할 수 있습니다';
 $string['groupmemberssee'] = '모둠 구성원 보기';
 $string['groupmembersselected'] = '선택한 모둠의 구성원';
 $string['groupmode'] = '모둠 모드';

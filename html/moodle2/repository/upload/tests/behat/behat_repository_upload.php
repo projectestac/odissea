@@ -45,23 +45,6 @@ class behat_repository_upload extends behat_files {
     /**
      * Uploads a file to the specified filemanager leaving other fields in upload form default. The paths should be relative to moodle codebase.
      *
-     * Will be deprecated in 2.7
-     * @see behat_repository_upload::i_upload_file_to_filemanager()
-     *
-     * @When /^I upload "(?P<filepath_string>(?:[^"]|\\")*)" file to "(?P<filepicker_field_string>(?:[^"]|\\")*)" filepicker$/
-     * @throws ExpectationException Thrown by behat_base::find
-     * @param string $filepath
-     * @param string $filepickerelement
-     */
-    public function i_upload_file_to_filepicker($filepath, $filepickerelement) {
-        $alternative = 'I upload "' . $this->escape($filepath) . '" file to "' .
-                $this->escape($filepickerelement) . '" filemanager';
-        return array(new Behat\Behat\Context\Step\Given($alternative));
-    }
-
-    /**
-     * Uploads a file to the specified filemanager leaving other fields in upload form default. The paths should be relative to moodle codebase.
-     *
      * @When /^I upload "(?P<filepath_string>(?:[^"]|\\")*)" file to "(?P<filemanager_field_string>(?:[^"]|\\")*)" filemanager$/
      * @throws ExpectationException Thrown by behat_base::find
      * @param string $filepath
@@ -115,7 +98,7 @@ class behat_repository_upload extends behat_files {
      * Uploads a file to filemanager
      *
      * @throws ExpectationException Thrown by behat_base::find
-     * @param string $filepath
+     * @param string $filepath Normally a path relative to $CFG->dirroot, but can be an absolute path too.
      * @param string $filemanagerelement
      * @param TableNode $data Data to fill in upload form
      * @param false|string $overwriteaction false if we don't expect that file with the same name already exists,
@@ -147,13 +130,18 @@ class behat_repository_upload extends behat_files {
 
         // Attaching specified file to the node.
         // Replace 'admin/' if it is in start of path with $CFG->admin .
-        $pos = strpos($filepath, 'admin/');
-        if ($pos === 0) {
-            $filepath = $CFG->admin . DIRECTORY_SEPARATOR . substr($filepath, 6);
+        if (substr($filepath, 0, 6) === 'admin/') {
+            $filepath = $CFG->dirroot . DIRECTORY_SEPARATOR . $CFG->admin .
+                    DIRECTORY_SEPARATOR . substr($filepath, 6);
         }
         $filepath = str_replace('/', DIRECTORY_SEPARATOR, $filepath);
-        $fileabsolutepath = $CFG->dirroot . DIRECTORY_SEPARATOR . $filepath;
-        $file->attachFile($fileabsolutepath);
+        if (!is_readable($filepath)) {
+            $filepath = $CFG->dirroot . DIRECTORY_SEPARATOR . $filepath;
+            if (!is_readable($filepath)) {
+                throw new ExpectationException('The file to be uploaded does not exist.', $this->getSession());
+            }
+        }
+        $file->attachFile($filepath);
 
         // Fill the form in Upload window.
         $datahash = $data->getRowsHash();

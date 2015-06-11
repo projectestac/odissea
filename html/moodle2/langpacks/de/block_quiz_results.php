@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_quiz_results', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['config_show_best'] = 'Wie viele der höchsten Bewertungen sollen angeze
 $string['config_show_worst'] = 'Wie viele der niedrigsten Bewertungen sollen angezeigt werden? <br>(0 deaktiviert die Funktion)';
 $string['configuredtoshownothing'] = 'Die derzeitige Einstellung des Blocks verhindert die Anzeige von Ergebnissen. Sie müssen entweder die Einstellungen ändern oder den Block verstecken.';
 $string['config_use_groups'] = 'Gruppen anzeigen statt Einzelergebnisse (nur wenn der Test die Gruppenfunktion unterstützt)';
-$string['error_emptyquizid'] = 'Es liegt ein Fehler bei den Einstellungen für diesen Block  vor: Wählen Sie einen Test aus, dessen Ergebnisse angezeigt werden sollen.';
+$string['error_emptyquizid'] = 'Wählen Sie einen Test aus, dessen Ergebnisse im Block angezeigt werden sollen.';
 $string['error_emptyquizrecord'] = 'Es ist ein Fehler mit diesem Block aufgetreten: Der ausgewählte Test scheint in der Datenbank nicht vorhanden zu sein.';
 $string['error_nogroupsexist'] = 'Es ist ein Fehler mit diesem Block aufgetreten: Die Ergebnisse sollen im Gruppenmodus angezeigt werden. Im Kurs sind jedoch keine Gruppen eingerichtet worden.';
 $string['pluginname'] = 'Testergebnisse';

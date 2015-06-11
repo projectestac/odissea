@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,10 @@ $string['anymethodactivity'] = 'Cualquiera de las actividades seleccionada está
 $string['anymethodcourseset'] = 'Cualquiera de los cursos seleccionados está finalizado';
 $string['anymethodmanual'] = 'Cualquiera de los roles seleccionados otorga la insignia';
 $string['anymethodprofile'] = 'Cualquiera de los campos de perfil seleccionados ha sido cumplimentado';
+$string['archivebadge'] = '¿Quiere eliminar la insignia \'{$a}\', pero mantener las insignias otorgadas existentes?';
+$string['archiveconfirm'] = 'Eliminar y mantener las insignias otorgadas existentes';
+$string['archivehelp'] = '<p>Esta opción significa que la insignia se marcará como "retirada" y ya no aparecerá en la lista de insignias. Los usuarios no podrán ganar esta insignia, sin embargo los destinatarios de la insignia existentes seguirán pudiendo mostrarla en su página de perfil y subirla a sus mochilas externas. </p>
+<p> Si desea que sus usuarios pueden mantener el acceso a las insignias obtenidas es importante seleccionar esta opción en lugar de eliminar totalmente las insignias.</p>';
 $string['attachment'] = 'Adjuntar insignia al mensaje';
 $string['attachment_help'] = 'Si se selecciona, se adjuntará una insignia al correo electrónico que se podrá descargar';
 $string['award'] = 'Otorgar insignia';
@@ -195,9 +199,10 @@ $string['defaultissuercontact'] = 'Datos de contacto del emisor de la insignia p
 $string['defaultissuercontact_desc'] = 'Una dirección de correo electrónico asociada al emisor de la insignia.';
 $string['defaultissuername'] = 'Nombre del emisor de la insignia por defecto';
 $string['defaultissuername_desc'] = 'Nombre del agente o autoridad emisora';
-$string['delbadge'] = 'Borrar insignia';
-$string['delconfirm'] = '¿Está seguro de que quieres eliminar la insignia \'{$a}\'?';
+$string['delbadge'] = '¿Desea borrar la insignia \'{$a}\' y todas las que se han generado a partir de la misma?';
+$string['delconfirm'] = 'Borrar y retirar las insignias emitidas';
 $string['delcritconfirm'] = '¿Estás seguro de que quiere eliminar este criterio?';
+$string['deletehelp'] = '<p>Borrar completamente una insignia significa que todos sus registros de información y criterios se eliminarán de forma permanente. Los usuarios que han ganado esta insignia ya no serán capaces de acceder a ella y mostrarla en sus páginas de perfil.</p> <p>Nota: Los usuarios que hayan ganado esta placa y la hayan subido a su mochila externa, aún la tendrán en su mochila. Sin embargo, no podrán acceder a los criterios ni las páginas de evidencia que enlazan con este sitio web.</p>';
 $string['delparamconfirm'] = '¿Estás seguro de que quiere eliminar este parámetro?';
 $string['description'] = 'Descripción';
 $string['disconnect'] = 'Desconectar';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_memcache', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clustered'] = 'Servercluster aktivieren';
+$string['clusteredheader'] = 'Server aufteilen';
+$string['clustered_help'] = 'Die Funktion wird genutzt, um einmal zu lesen und mehrere Funktionen auszuführen.
+
+Die Idee hinter dem Konzept liegt darin, einen verbesserten Store für Load-balanced Konfigurationen zur Verfügung zu stellen.  Der Store holt Daten von einem Server (meist localhost) setzt sie aber für mehrere (alle server im load-balanced Pool). Für Caches mit sehr hohen read-to-set ratios spart dies Last im Netzwerk deutlich.
+
+Wenn die Einstellung aktiviert wird, wird der oben aufgeführte Server zum Abholen der Daten verwandt.';
 $string['pluginname'] = 'Memcache';
 $string['prefix'] = 'Key Prefix';
 $string['prefix_help'] = 'Der Prefix wird für alle Schlüsselbezeichnungen des MemCache-Servers genutzt.
@@ -32,14 +39,29 @@ $string['prefix_help'] = 'Der Prefix wird für alle Schlüsselbezeichnungen des 
 * Die Länge ist auf 5 Zeichen beschränkt.';
 $string['prefixinvalid'] = 'Ungültiger Schlüssel. Verwenden Sie nur a-z A-Z o-9 -_.';
 $string['servers'] = 'Server';
-$string['servers_help'] = 'Hiermit definieren Sie den/die Server für den Memcache Adapter. Schreiben Sie einen Server pro Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung ein  Wird kein Port eingetragen wird als Standard der Port 11211 verwendet.
+$string['serversclusterinvalid'] = 'Wenn das Clustering aktiviert wird, ist die Angabe genau eines Servers notwendig.';
+$string['servers_help'] = 'Diese Option legt die Server für den Memcache Adapter fest. Schreiben Sie einen Server pro Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung ein.  Wird kein Port eingetragen wird standardmäßig der Port 11211 verwendet.
 
 Zum Beispiel:
 <pre>
 server.url.com
 ipaddress:port
 servername:port:weight
-</pre>';
+</pre>
+
+Wenn unten *Cluster-Servern aktivieren* ausgewählt ist, darf nur ein Server angegeben sein. Normalerweise soll das ein Name sein, der sich auf die lokale Maschine bezieht, z.B. 127.0.0.1 oder localhost.';
 $string['sessionhandlerconflict'] = 'Warnung: Eine Memcache Instanz ({$a}) ist so konfiguriert, dass sie den gleichen Memcached Server wie Sessons verwendet. Das Löschen aller Caches wird gleichzeitig auch alle Sessions löschen.';
+$string['setservers'] = 'Server setzen';
+$string['setservers_help'] = 'Diese Option legt die Server fest, die aktualisiert werden, wenn sich Daten im Cache geändert haben. Geben Sie für jeden Server den vollständigen Namen an.
+Es **muss** jeder Server enthalten sein, der in der Liste *Server* aufgeführt ist, auch mit einem anderen Hostmamen.
+Benutzen Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse und optional einen Port ein.
+Wenn kein Port eingetragen ist, wird der Standardport 11211 verwendet.
+
+z.B.:
+<pre>
+server.url.com
+ipaddress:port
+</pre>';
 $string['testservers'] = 'Testserver';
-$string['testservers_desc'] = 'Testserver werden für Unit-Tests und Performace-Tests verwandt. Es ist gänzlich optional Testserver zu verwenden. Schreiben Sie einen Server pro Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung ein  Wird kein Port eingetragen wird als Standard der Port 11211 verwendet.';
+$string['testservers_desc'] = 'In diesem Feld können eine oder mehrere Verbindungsadressen zu Memcache-Servern angegeben werden. Wenn ein entsprechender Testserver vorhanden ist, kann die Memcache-Performance über die Cache-Seite im Administrationsblock getestet werden.
+Beispielserver: 127.0.0.1:11211';

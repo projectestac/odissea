@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Discussão';
 $string['emailmessages'] = 'Enviar por e-mail quando não estou online';
 $string['emailtagline'] = 'Este e-mail é uma cópia automática de uma mensagem enviada para si em "{$a->sitename}". Aceda a {$a->url} para responder.';
 $string['emptysearchstring'] = 'Tem que procurar por alguma coisa';
+$string['enabled'] = 'Ativado';
 $string['errorcallingprocessor'] = 'Erro ao chamar método de envio definido';
 $string['errortranslatingdefault'] = 'Ocorreu um erro na tradução dada pelo módulo, irá usar as configurações predefinidas do site.';
+$string['eventmessagecontactadded'] = 'Contato de mensagem adicionado';
+$string['eventmessagecontactblocked'] = 'Contato de mensagem bloqueado';
+$string['eventmessagecontactremoved'] = 'Contato de mensagem removido';
+$string['eventmessagecontactunblocked'] = 'Contato de mensagem desbloqueado';
+$string['eventmessagesent'] = 'Mensagem enviada';
+$string['eventmessageviewed'] = 'Mensagem visualizada';
 $string['forced'] = 'Forçado';
 $string['formorethan'] = 'Há mais de';
 $string['gotomessages'] = 'Ver mensagens';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Desbloquear contacto';
 $string['unreadmessages'] = 'Mensagens não lidas: {$a}';
 $string['unreadnewmessage'] = 'Nova mensagem de {$a}';
 $string['unreadnewmessages'] = 'Mensagens novas: ({$a})';
-$string['unreadnewnotification'] = 'Nova notificação';
-$string['unreadnewnotifications'] = 'Novas notificações ({$a})';
 $string['userisblockingyou'] = 'Este utilizador bloqueou-te para não enviares mensagens para ele';
 $string['userisblockingyounoncontact'] = '{$a} só aceita mensagens de pessoas que estejam na sua lista de contactos.';
 $string['userssearchresults'] = 'Utilizadores encontrados: {$a}';

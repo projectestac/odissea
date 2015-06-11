@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'langconfig', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['strftimedaytime'] = '%a, %H:%Metan';
 $string['strftimemonthyear'] = '%Y(e)ko %B';
 $string['strftimerecent'] = '%bk %d, %H:%Metan';
 $string['strftimerecentfull'] = '%a, %Y(e)ko %bren %d(a)n, %H:%M(e)tan';
-$string['strftimetime'] = '%H:%M';
+$string['strftimetime'] = '%H:%M %p';
 $string['thisdirection'] = 'ltr';
 $string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = 'Euskara';

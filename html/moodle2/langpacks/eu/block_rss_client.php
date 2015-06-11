@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['clientshowchannellinklabel'] = 'Jatorrizko gunearekiko esteka (jarioare
 $string['clientshowimagelabel'] = 'Jarioaren irudia erakutsi eskuragarri balitz:';
 $string['configblock'] = 'Blokea konfiguratu';
 $string['couldnotfindfeed'] = 'Ezin izan da ID hori duen jariorik aurkitu';
+$string['couldnotfindloadrssfeed'] = 'Ezin izan da aurkitu edo kargatu RSS jarioa.';
 $string['customtitlelabel'] = 'Izenburu pertsonalizatua (jarioak ematen duen izenburua erakusteko zuriz utzi):';
 $string['deletefeedconfirm'] = 'Ziur al zaude jario hau ezabatu nahi duzula?';
 $string['disabledrssfeeds'] = 'RSS jarioak desgaituta daude';

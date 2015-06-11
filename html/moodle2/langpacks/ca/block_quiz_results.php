@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_quiz_results', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,8 +39,8 @@ $string['config_names_full'] = 'Mostra els noms complets';
 $string['config_names_id'] = 'Mostra sols els nombres ID';
 $string['config_no_quizzes_in_course'] = 'Aquest curs no conté cap activitat quiz. Us cal afegir al menys una per poder utilitzar aquest bloc de forma correcta.';
 $string['config_select_quiz'] = 'De quina forma s\'haurien de mostrar els resultats d\'aquest bloc ?';
-$string['config_show_best'] = 'Quina és la quantitat de notes altes que s\'haurien de mostrar (0 per inhabilitar)?';
-$string['config_show_worst'] = 'Quina és la quantitat de notes baixes que s\'haurien de mostrar (0 per inhabilitar)?';
+$string['config_show_best'] = 'Quina és la quantitat de notes altes que s\'haurien de mostrar (0 per deshabilitar) ?';
+$string['config_show_worst'] = 'Quina és la quantitat de notes baixes que s\'haurien de mostrar (0 per deshabilitar) ?';
 $string['configuredtoshownothing'] = 'La configuració d\'aquest bloc no us permet visualitzar cap resultat. Us caldrà configurar-ho per mostrar-ho o amagar-ho.';
 $string['config_use_groups'] = 'Visualitza grups en lloc d\'alumnes (sols si el qüestionari suporta grups) ?';
 $string['error_emptyquizid'] = 'Hi ha un error en aquest bloc: us cal seleccionar de quin qüestionari us cal mostrar els resultats.';

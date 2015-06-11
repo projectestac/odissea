@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,7 @@ $string['attachment_help'] = '<p>Opcionalment, podeu adjuntar UN fitxer des del 
 $string['author'] = 'autor/a';
 $string['authorview'] = 'Ordenat per autor';
 $string['back'] = 'Enrere';
+$string['cachedef_concepts'] = 'Vinculació de conceptes';
 $string['cantinsertcat'] = 'No s\'ha pogut inserir la categoria';
 $string['cantinsertrec'] = 'No s\'ha pogut inserir el registre';
 $string['cantinsertrel'] = 'No s\'ha pogut inserir la relació categoria-entrada';
@@ -212,6 +213,15 @@ $string['errconceptalreadyexists'] = 'El concepte ja existeix. Aquest glossari n
 $string['errdeltimeexpired'] = 'No podeu esborrar això. El temps ha expirat.';
 $string['erredittimeexpired'] = 'El temps d\'edició d\'aquesta entrada ha vençut.';
 $string['errorparsingxml'] = 'S\'han produït errors en analitzar el fitxer. Assegureu-vos que és XML vàlid.';
+$string['eventcategorycreated'] = 'S\'ha creat la categoria';
+$string['eventcategorydeleted'] = 'S\'ha suprimit la categoria';
+$string['eventcategoryupdated'] = 'S\'ha actualitzat la categoria';
+$string['evententryapproved'] = 'S\'ha aprovat l\'entrada';
+$string['evententrycreated'] = 'S\'ha creat l\'entrada';
+$string['evententrydeleted'] = 'S\'ha suprimit l\'entrada';
+$string['evententrydisapproved'] = 'S\'ha rebutjat l\'entrada';
+$string['evententryupdated'] = 'S\'ha actualitzat l\'entrada';
+$string['evententryviewed'] = 'S\'ha visualitzat l\'entrada';
 $string['explainaddentry'] = 'Afegiu una nova entrada al glossari actual.<br />El concepte i la definició són camps obligatoris.';
 $string['explainall'] = 'Visualitzeu TOTES les entrades en una pàgina';
 $string['explainalphabet'] = 'Navegueu pel glossari utilitzant aquest índex';

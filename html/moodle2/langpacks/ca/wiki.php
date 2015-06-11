@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,17 @@ $string['editing'] = 'S\'està editant la pàgina wiki';
 $string['editingcomment'] = 'S\'està editant el comentari';
 $string['editingpage'] = 'S\'està editant aquesta pàgina \'{$a}\'';
 $string['editsection'] = 'Edita';
+$string['eventdiffviewed'] = 'S\'ha mostrat el diff de la wiki';
+$string['eventhistoryviewed'] = 'S\'ha mostrat l\'historial de la wiki';
+$string['eventmapviewed'] = 'S\'ha mostrat el mapa de pàgines de la wiki';
+$string['eventpagecreated'] = 'S\'ha creat la pàgina wiki';
+$string['eventpagedeleted'] = 'S\'ha suprimit la pàgina wiki';
+$string['eventpagelocksdeleted'] = 'S\'han suprimit els bloqueigs de la pàgina wiki';
+$string['eventpageupdated'] = 'S\'ha actualitzat la pàgina wiki';
+$string['eventpageversiondeleted'] = 'S\'ha suprimit la versió de la pàgina wiki';
+$string['eventpageviewed'] = 'S\'ha mostrat la pàgina wiki';
+$string['eventversionrestored'] = 'S\'ha restaurat la versió wiki';
+$string['eventversionviewed'] = 'S\'ha mostrat la versió de la pàgina wiki';
 $string['filenotuploadederror'] = 'El fitxer \'{$a}\' no s\'ha pogut carregar de forma correcta.';
 $string['files'] = 'Fitxers';
 $string['filtername'] = 'Enllaços automàtics a pàgines wiki';

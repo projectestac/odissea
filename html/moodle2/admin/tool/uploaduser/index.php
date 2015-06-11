@@ -36,7 +36,7 @@ require_once('user_form.php');
 $iid         = optional_param('iid', '', PARAM_INT);
 $previewrows = optional_param('previewrows', 10, PARAM_INT);
 
-@set_time_limit(60*60); // 1 hour should be enough
+core_php_time_limit::raise(60*60); // 1 hour should be enough
 raise_memory_limit(MEMORY_HUGE);
 
 require_login();
@@ -861,6 +861,15 @@ if ($formdata = $mform2->is_cancelled()) {
                         $cohort = $DB->get_record('cohort', array('id'=>$addcohort));
                     } else {
                         $cohort = $DB->get_record('cohort', array('idnumber'=>$addcohort));
+                        if (empty($cohort) && has_capability('moodle/cohort:manage', context_system::instance())) {
+                            // Cohort was not found. Create a new one.
+                            $cohortid = cohort_add_cohort((object)array(
+                                'idnumber' => $addcohort,
+                                'name' => $addcohort,
+                                'contextid' => context_system::instance()->id
+                            ));
+                            $cohort = $DB->get_record('cohort', array('id'=>$cohortid));
+                        }
                     }
 
                     if (empty($cohort)) {

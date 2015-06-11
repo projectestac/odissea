@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,6 @@ $string['downloadeverything'] = 'Μεταφόρτωση της πλήρους α
 $string['duration'] = 'Άνοιγμα για';
 $string['effective_weight'] = 'Ισχύον βάρος';
 $string['errordeleting'] = 'Σφάλμα διαγραφής παλαιών {$a} εγγραφών.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Η ερώτηση ({$a}) εμφανίζεται περισσότερες από μια φορές με διαφορετικά βάρη σε διαφορετικά σημεία του τεστ. Αυτό δεν υποστηρίζεται προς το παρόν από την αναφορά στατιστικών και μπορεί να κάνει τα στατιστικά για αυτή την ερώτηση αναξιόπιστα.';
 $string['errormedian'] = 'Σφάλμα λήψεως διάμεσου';
 $string['errorpowerquestions'] = 'Σφάλμα κατά τη λήψη των δεδομένων για τον υπολογισμό της διακύμανσης των βαθμών της ερώτησης';
 $string['errorpowers'] = 'Σφάλμα κατά τη λήψη των δεδομένων για τον υπολογισμό της διακύμανσης των βαθμών του κουίζ';

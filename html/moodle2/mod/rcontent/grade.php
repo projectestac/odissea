@@ -91,7 +91,7 @@ if (!$mform->is_cancelled() && $data = $mform->get_data()) {
 $struserfullname = fullname($user, true);
 $PAGE->set_pagelayout('popup');
 
-$PAGE->navbar->add(get_string('feedback', 'rcontent').':'.$struserfullname.':'.format_string($rcontent->name), null, null, navigation_node::TYPE_CUSTOM, null);
+$PAGE->navbar->add(get_string('comments', 'rcontent').':'.$struserfullname.':'.format_string($rcontent->name), null, null, navigation_node::TYPE_CUSTOM, null);
 
 echo $OUTPUT->header();
 echo $OUTPUT->heading($heading);

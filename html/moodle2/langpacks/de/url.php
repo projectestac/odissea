@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,6 @@ Legen Sie fest, ob die verlinkte Seite in einem neuen Fenster geöffnet oder in 
 
 Hinweis: Verlinkungen und URLs können mit dem Texteditor auch in jede andere Seite oder Aktivität integriert werden.';
 $string['modulenameplural'] = 'Links/URLs';
-$string['neverseen'] = 'Nie gesehen';
 $string['page-mod-url-x'] = 'Jede URL-Seite';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'URL Variablen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,11 +84,13 @@ $string['choosefilefromuserbackup'] = 'Område för privat säkerhetskopiering f
 $string['choosefilefromuserbackup_help'] = 'När säkerhetskopiering görs med "Anonymisera användarinformation" valet aktiverat kommer säkerhetskopiorna att sparas här';
 $string['configgeneralactivities'] = 'Anger grundinställningen för att inkludera aktiviteter i en säkerhetskopia.';
 $string['configgeneralanonymize'] = 'Om det är aktiverat alla uppgifter om användare kommer att anonymiseras som standard.';
+$string['configgeneralbadges'] = 'Definierar standardinställningen för "märken" (badges) i säkerhetskopior';
 $string['configgeneralblocks'] = 'Anger grundinställningen för att inkludera block i en säkerhetskopia.';
 $string['configgeneralcomments'] = 'Anger grundinställningen för att inkludera kommentarer i en säkerhetskopia.';
 $string['configgeneralfilters'] = 'Anger grundinställningen för att inkludera filter i en säkerhetskopia.';
 $string['configgeneralhistories'] = 'Anger grundinställningen för att inkludera användarhistoria i en säkerhetskopia.';
 $string['configgenerallogs'] = 'Om valet aktiverats kommer loggar att ingå i säkerhetskopiorna som standard.';
+$string['configgeneralquestionbank'] = 'Om aktiverat kommer frågebanken att ingå i säkerhetskopior som standard. OBS: Om du inaktiverar den här inställningen inaktiveras säkerhetskopior av aktiviteter som använder frågebanken  som t.ex aktiviteten "Test"';
 $string['configgeneralroleassignments'] = 'Om valet aktiverats kommer rolltilldelning att säkerhetskopieras.';
 $string['configgeneralusers'] = 'Anger grundinställningen för om du vill inkludera användare i säkerhetskopior.';
 $string['configgeneraluserscompletion'] = 'Om valet aktiverats kommer spårning av fullföljande att ingå i säkerhetskopior som standard.';
@@ -113,7 +115,7 @@ $string['error_block_for_module_not_found'] = 'Den övergivna block-instansen (I
 $string['error_course_module_not_found'] = 'Den övergivna kursen (ID: {$a}) hittades. Denna modul kommer inte att säkerhetskopieras.';
 $string['errorfilenamemustbezip'] = 'Filnamnet du anger måste vara en ZIP-fil och har .mbz förlängning';
 $string['errorfilenamerequired'] = 'Du måste ange ett giltigt filnamn för denna säkerhetskopia';
-$string['errorinvalidformat'] = 'Okänd backup format';
+$string['errorinvalidformat'] = 'Ogiltigt format för säkerhetskopiering';
 $string['errorinvalidformatinfo'] = 'Den valda filen är inte en giltig Moodle backupfil och kan inte återställas.';
 $string['errorminbackup20version'] = 'Denna säkerhetskopia har skapats med en utvecklingsversion av Moodle backup ({$a->backup}). Minimikravet är {$a->min}. Säkerhetskopian kan inte återställas.';
 $string['errorrestorefrontpage'] = 'Återställning över ingångssidan är inte tillåtet.';
@@ -135,10 +137,12 @@ $string['generalfilters'] = 'Ta med filter';
 $string['generalgradehistories'] = 'Ta med historik';
 $string['generalhistories'] = 'Ta med historik';
 $string['generallogs'] = 'Ta med loggar';
+$string['generalquestionbank'] = 'Inkludera frågebanken';
 $string['generalroleassignments'] = 'Ta med tilldelningar av roller';
 $string['generalsettings'] = 'Allmänna inställningar för säkerhetskopiering';
 $string['generalusers'] = 'Ta med användare';
 $string['generaluserscompletion'] = 'Ta med information om användarnas fullföljande av kurser/delar av kurser';
+$string['hidetypes'] = 'Dölj optioner';
 $string['importbackupstage16action'] = 'Fortsätt';
 $string['importbackupstage1action'] = 'Nästa';
 $string['importbackupstage2action'] = 'Nästa';
@@ -151,12 +155,16 @@ $string['importcurrentstage2'] = 'Inställningar för schema';
 $string['importcurrentstage4'] = 'Bekräftelse och förnyad kontroll';
 $string['importcurrentstage8'] = 'Utför import';
 $string['importfile'] = 'Importera en säkerhetskopierad fil';
+$string['importgeneralmaxresults'] = 'Maximum antal av kurser som visas vid import';
+$string['importgeneralmaxresults_desc'] = 'Detta styr antalet kurser som visas under det första steget i importprocessen';
+$string['importgeneralsettings'] = 'Generella standardinställningar för Import';
 $string['importsuccess'] = 'Importen är komplett. Klicka för att återvända till kursen.';
 $string['includeactivities'] = 'Ta med:';
 $string['includeditems'] = 'Medtagna komponenter:';
 $string['includefilereferences'] = 'Filreferenser till externt innehåll';
 $string['includesection'] = 'Sektion {$a}';
 $string['includeuserinfo'] = 'Användardata';
+$string['jumptofinalstep'] = 'Gå direkt till sista steget';
 $string['locked'] = 'Låst';
 $string['lockedbyconfig'] = 'Den här inställningen har låsts av standardinställningarna för säkerhetskopiering';
 $string['lockedbyhierarchy'] = 'Låst av beroenden';
@@ -215,7 +223,7 @@ $string['restoretonewcourse'] = 'Återställ som en ny kurs';
 $string['restoringcourse'] = 'Återställning av kurs pågår';
 $string['restoringcourseshortname'] = 'återställer';
 $string['rootenrolmanual'] = 'Återställ med manuell inskrivning';
-$string['rootsettingactivities'] = 'Ta med aktiviteter';
+$string['rootsettingactivities'] = 'Ta med aktiviteter och resurser';
 $string['rootsettinganonymize'] = 'Anonymisera information om användare';
 $string['rootsettingbadges'] = 'Inkludera märken';
 $string['rootsettingblocks'] = 'Ta med block';
@@ -226,6 +234,7 @@ $string['rootsettinggradehistories'] = 'Ta med betygshistorik';
 $string['rootsettingimscc1'] = 'Konvertera till IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Konvertera till IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Ta med loggar för kurser';
+$string['rootsettingquestionbank'] = 'Inkludera frågebanken';
 $string['rootsettingroleassignments'] = 'Ta med tilldelningar av roller för användare';
 $string['rootsettings'] = 'Inställningar för säkerhetskopiering';
 $string['rootsettingusers'] = 'Ta med registrerade användare';
@@ -241,6 +250,7 @@ $string['setting_course_startdate'] = 'Startdatum för kurs';
 $string['setting_keep_groups_and_groupings'] = 'Behåll nuvarande grupper och grupperingar';
 $string['setting_keep_roles_and_enrolments'] = 'Behåll nuvarande roller och registreringar';
 $string['setting_overwriteconf'] = 'Skriv över konfiguration för kurs';
+$string['showtypes'] = 'Visa optioner';
 $string['skiphidden'] = 'Hoppa över dolda kurser';
 $string['skiphiddenhelp'] = 'Välj om du vill hoppa över dolda kurser';
 $string['skipmodifdays'] = 'Hoppa över kurser som inte ändrats sedan';
@@ -250,6 +260,7 @@ $string['skipmodifprevhelp'] = 'Välj om du vill hoppa över kurser som inte har
 $string['storagecourseandexternal'] = 'Filarea för kursens säkerhetskopian och den angivna katalogen';
 $string['storagecourseonly'] = 'Filarea för kursens säkerhetskopia';
 $string['storageexternalonly'] = 'Specificerad katalog för automatiska säkerhetskopieringar';
+$string['timetaken'] = 'Tid för genomförande';
 $string['title'] = 'Titel';
 $string['totalcategorysearchresults'] = 'Summa kategorier: {$a}';
 $string['totalcoursesearchresults'] = 'Summa kurser: {$a}';

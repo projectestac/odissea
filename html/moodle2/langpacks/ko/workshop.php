@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,6 +108,7 @@ $string['evaluation'] = '채점 평가';
 $string['evaluationmethod'] = '채점 평가 방법';
 $string['evaluationmethod_help'] = '성적 평가 방법은 평가 성적이 어떻게 계산되느냐를 결정합니다. 현재는 최선의 평가와 비교하는 옵션이 있습니다.';
 $string['evaluationsettings'] = '평가능력 채점 설정';
+$string['eventassessableuploaded'] = '제출이 업로드 되었습니다.';
 $string['example'] = '예제 제출';
 $string['exampleadd'] = '예제 제출 추가';
 $string['exampleassess'] = '예제 제출 평가';

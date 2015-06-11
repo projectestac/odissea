@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'rating', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aggregateavg'] = 'Média de avaliações';
+$string['aggregateavg'] = 'Nota média';
 $string['aggregatecount'] = 'Número de avaliações';
 $string['aggregatemax'] = 'Nota máxima';
 $string['aggregatemin'] = 'Nota mínima';
 $string['aggregatenone'] = 'Sem avaliação';
-$string['aggregatesum'] = 'Soma de avaliações';
+$string['aggregatesum'] = 'Soma das notas';
 $string['aggregatetype'] = 'Tipo de avaliação';
 $string['aggregatetype_help'] = 'O tipo de avaliação define a forma como as notas são apresentadas no relatório de avaliação .
 
-* Média de avaliações - A média de todas as notas
-* Número de avaliações - O número de itens avaliados torna-se a nota final. O total não pode exceder a nota máxima da atividade.
+* Nota média - A média de todas as notas
+* Número de avaliações - O número de avaliações torna-se a nota final. O total não pode exceder a nota máxima da atividade.
 * Nota máxima - A nota mais alta atribuída torna-se a nota final
 * Nota mínima - A nota atribuída com o valor menor torna-se a nota final
-* Soma de avaliações - Todas as notas são somadas. O total não pode exceder a nota máxima da atividade.
+* Soma das notas - Todas as notas são somadas. O total não pode exceder a nota máxima da atividade.
 
 Se selecionar \'Sem avaliação\', a atividade não aparece no relatório de avaliações.';
 $string['allowratings'] = 'Permitir avaliação?';

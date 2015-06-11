@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Aparência indefinida';
 $string['layoutvertical'] = 'Botões de rádio dispostos verticalmente';
 $string['nooptionsforsubquestion'] = 'Não foi possível obter as opções para a parte # {$a->sub} (question->id={$a->id}) da pergunta';
 $string['noquestions'] = 'A pergunta de escolha múltipla incorporada "<strong>{$a}</strong>" não possui nenhuma pergunta.';
+$string['pleaseananswerallparts'] = 'Por favor, responda a todas as partes da pergunta.';
 $string['pluginname'] = 'Respostas incorporadas (cloze)';
 $string['pluginnameadding'] = 'A adicionar uma pergunta de respostas incorporadas (cloze)';
 $string['pluginnameediting'] = 'A editar uma pergunta de respostas incorporadas (cloze)';
@@ -57,7 +58,7 @@ $string['questionsless'] = 'Menos {$a} pergunta(s) do que a pergunta de escolha 
 $string['questionsmissing'] = 'Não existem perguntas válidas, crie pelo menos uma pergunta';
 $string['questionsmore'] = 'Mais {$a} pergunta(s) do que a pergunta de escolha múltipla guardada na base de dados';
 $string['questiontypechanged'] = 'Tipo de pergunta alterado';
-$string['questiontypechangedcomment'] = 'Pelo menos um tipo de pergunta foi alterado.<br >Adicionou, moveu ou apagou uma pergunta?<br >Veja em seguida.';
+$string['questiontypechangedcomment'] = 'Pelo menos um tipo de pergunta foi alterado.<br />Adicionou, moveu ou apagou uma pergunta?<br />Veja em seguida.';
 $string['questionusedinquiz'] = 'Esta pergunta é usada em {$a->nb_of_quiz} teste(s), total de tentativa(s) : {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Tipo de pergunta {$a} restaurada';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';

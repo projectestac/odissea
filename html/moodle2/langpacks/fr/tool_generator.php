@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_generator', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,6 @@ $string['error_nonexistingcourse'] = 'Le cours indiqué n\'existe pas';
 $string['error_nopageinstances'] = 'Le cours sélectionné ne contient pas de pages';
 $string['error_notdebugging'] = 'Non disponible sur ce serveur, car le niveau de débogage n\'est pas défini sur DEVELOPER';
 $string['error_nouserspassword'] = 'Vous devez définir $CFG->tool_generator_users_password dans le fichier config.php, afin de pouvoir générer le plan de test';
-$string['firstname'] = 'Utilisateur de cours test';
 $string['fullname'] = 'Cours de test : {$a->size}';
 $string['maketestcourse'] = 'Créer des cours de test';
 $string['maketestplan'] = 'Créer un plan de test JMeter';

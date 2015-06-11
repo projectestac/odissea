@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'form', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,17 +30,17 @@ $string['advancedelement'] = '拡張要素';
 $string['close'] = '閉じる';
 $string['day'] = '日';
 $string['display'] = '表示';
-$string['err_alphanumeric'] = 'ここには文字または数字のみ入力してください。';
-$string['err_email'] = 'ここには有効なメールアドレスを入力してください。';
-$string['err_lettersonly'] = 'ここには文字のみ入力してください。';
+$string['err_alphanumeric'] = 'あなたはここに文字または数字のみ入力する必要があります。';
+$string['err_email'] = 'あなたはここに有効なメールアドレスを入力する必要があります。';
+$string['err_lettersonly'] = 'あなたはここに文字のみ入力する必要があります。';
 $string['err_maxfiles'] = 'あなたはここに {$a} ファイル以上を添付することはできません。';
-$string['err_maxlength'] = 'ここには最大 {$a->format} 文字を入力してください。';
-$string['err_minlength'] = 'ここには少なくとも {$a->format} 文字を入力してください。';
-$string['err_nonzero'] = 'ここにはゼロから開始されない数字を入力してください。';
-$string['err_nopunctuation'] = 'ここには句読点を入力しないでください。';
-$string['err_numeric'] = 'ここには数字を入力してください。';
-$string['err_rangelength'] = 'ここには {$a->format[0]} から {$a->format[1]} の文字を入力してください。';
-$string['err_required'] = '内容を入力してください。';
+$string['err_maxlength'] = 'あなたはここに最大 {$a->format} 文字入力する必要があります。';
+$string['err_minlength'] = 'あなたはここに少なくとも {$a->format} 文字入力する必要があります。';
+$string['err_nonzero'] = 'あなたはここにゼロから開始されない数字を入力する必要があります。';
+$string['err_nopunctuation'] = 'あなたはここに句読点以外の文字を入力する必要があります。';
+$string['err_numeric'] = 'あなたはここに数字を入力する必要があります。';
+$string['err_rangelength'] = 'あなたはここに {$a->format[0]} から {$a->format[1]} の文字を入力する必要があります。';
+$string['err_required'] = 'あなたはここに値を入力する必要があります。';
 $string['general'] = '一般';
 $string['hideadvanced'] = '拡張要素を隠す';
 $string['hour'] = '時';

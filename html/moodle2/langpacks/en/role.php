@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,6 +151,7 @@ $string['course:movesections'] = 'Move sections';
 $string['course:publish'] = 'Publish a course into hub';
 $string['course:request'] = 'Request new courses';
 $string['course:reset'] = 'Reset course';
+$string['course:reviewotherusers'] = 'Review other users';
 $string['course:sectionvisibility'] = 'Control section visibility';
 $string['course:setcurrentsection'] = 'Set current section';
 $string['course:update'] = 'Update course settings';
@@ -178,10 +179,10 @@ $string['defaultx'] = 'Default: {$a}';
 $string['defineroles'] = 'Define roles';
 $string['deletecourseoverrides'] = 'Delete all overrides in course';
 $string['deletelocalroles'] = 'Delete all local role assignments';
-$string['deleterolesure'] = 'Are you sure that you want to delete role "{$a->name} ({$a->shortname})"?</p><p>Currently this role is assigned to {$a->count} users.';
+$string['deleterolesure'] = '<p>Are you sure that you want to delete role "{$a->name} ({$a->shortname})"?</p><p>Currently this role is assigned to {$a->count} users.</p>';
 $string['deletexrole'] = 'Delete {$a} role';
 $string['duplicaterole'] = 'Duplicate role';
-$string['duplicaterolesure'] = 'Are you sure that you want to duplicate role "{$a->name} ({$a->shortname})"?</p>';
+$string['duplicaterolesure'] = '<p>Are you sure that you want to duplicate role "{$a->name} ({$a->shortname})"?</p>';
 $string['editingrolex'] = 'Editing role \'{$a}\'';
 $string['editrole'] = 'Edit role';
 $string['editxrole'] = 'Edit {$a} role';
@@ -363,6 +364,7 @@ $string['site:backup'] = 'Backup courses';
 $string['site:config'] = 'Change site configuration';
 $string['site:doanything'] = 'Allowed to do everything';
 $string['site:doclinks'] = 'Show links to offsite docs';
+$string['site:forcelanguage'] = 'Override course language';
 $string['site:import'] = 'Import other courses into a course';
 $string['site:manageblocks'] = 'Manage blocks on a page';
 $string['site:mnetloginfromremote'] = 'Login from a remote application via MNet';
@@ -411,6 +413,7 @@ $string['user:update'] = 'Update user profiles';
 $string['user:viewalldetails'] = 'View user full information';
 $string['user:viewdetails'] = 'View user profiles';
 $string['user:viewhiddendetails'] = 'View hidden details of users';
+$string['user:viewlastip'] = 'View user last ip address';
 $string['user:viewuseractivitiesreport'] = 'See user activity reports';
 $string['user:viewusergrades'] = 'View user grades';
 $string['useshowadvancedtochange'] = 'Use \'Show advanced\' to change';

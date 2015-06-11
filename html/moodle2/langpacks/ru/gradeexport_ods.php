@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradeexport_ods', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   gradeexport_ods
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате ODS';
 $string['ods:view'] = 'Использовать экспорт оценок в формате OpenDocument';
 $string['pluginname'] = 'Таблица OpenDocument';
+$string['timeexported'] = 'Последние загруженные из этого курса';

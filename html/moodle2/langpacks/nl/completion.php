@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -165,6 +165,7 @@ $string['restoringcompletiondata'] = 'Wegschrijven gegevens voltooiing activitei
 $string['roleaggregation'] = 'Voorwaarde vereist';
 $string['roleaggregation_all'] = 'Alle geselecteerde rollen markeren wanneer aan de voorwaarden voldaan is';
 $string['roleaggregation_any'] = 'ELKE geselecteerde rol te markeren wanneer aan de voorwaarde voldaan is';
+$string['roleidnotfound'] = 'Rol-ID {$a} niet gevonden';
 $string['saved'] = 'Bewaard';
 $string['seedetails'] = 'Zie detail';
 $string['self'] = 'Zelf';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>ウェブサーバからファイルが修正されないよう、インストール後、config.phpのファイルパーミッションを変更することをお勧めします。この方法は、サーバのセキュリティを著しく向上させるものではありませんが、一般的なセキュリティ上の弱点 (exploits) をスローダウンしたり、制限することはできます。</p>';
+$string['check_configrw_details'] = '<p>ウェブサーバからファイルが修正されないようインストール後、config.phpのファイルパーミッションを変更することをお勧めします。この方法は、サーバのセキュリティを著しく向上させるものではありませんが、一般的なセキュリティ上の弱点 (exploits) をスローダウンしたり、制限することはできます。</p>';
 $string['check_configrw_name'] = '書き込み可能なconfig.php';
 $string['check_configrw_ok'] = 'PHPスクリプトは、config.phpを修正することができません。';
 $string['check_configrw_warning'] = 'PHPスクリプトは、config.phpを修正することができます。';
@@ -59,11 +59,6 @@ $string['check_frontpagerole_error'] = '正しくないフロントページロ�
 $string['check_frontpagerole_name'] = 'フロントページロール';
 $string['check_frontpagerole_notset'] = 'フロントページロールが設定されていません。';
 $string['check_frontpagerole_ok'] = 'フロントページロール定義はOKです。';
-$string['check_globals_details'] = '<p>Register globalsは、極めて危険なPHP設定だと考えられています。</p>
-<p>PHP設定において、<code>register_globals=off</code>が設定されるべきです。この設定は、あなたの<code>php.ini</code>、Apache/IIS設定または<code>.htaccess</code>ファイルを編集することでコントロールされます。</p>';
-$string['check_globals_error'] = 'Register globalsは無効すべきです。すぐにPHP設定を修正してください!';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Register globalsが無効にされています。';
 $string['check_google_details'] = '<p>Googleに公開する設定では、サーチエンジンがコースにゲストとしてログインできるようにします。ゲストログインが許可されていない場合、この設定の有効化は意味を持ちません。</p>';
 $string['check_google_error'] = 'サーチエンジンによるゲストアクセスは許可されていますが、ゲストアクセスは無効にされています。';
 $string['check_google_info'] = 'サーチエンジンは、ゲストとして入ることができます。';

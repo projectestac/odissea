@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Adicionar outra ajuda';
 $string['addcategory'] = 'Adicionar categoria';
 $string['addmorechoiceblanks'] = 'Adicionar mais {no} campos de opções de resposta';
 $string['adminreport'] = 'Relatório de possíveis problemas na sua base de dados de perguntas.';
+$string['advancedsearchoptions'] = 'Opções de pesquisa';
+$string['alltries'] = 'Todas as tentativas';
 $string['answer'] = 'Resposta';
 $string['answers'] = 'Respostas';
 $string['answersaved'] = 'Resposta guardada';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'Não foi possível recuperar a categoria da per
 $string['cannotunhidequestion'] = 'Ocorreu um erro ao mostrar a pergunta';
 $string['cannotunzip'] = 'Não foi possível zipar o ficheiro';
 $string['cannotwriteto'] = 'Não é possível editar perguntas exportadas para {$a}';
+$string['categories'] = 'Categorias';
 $string['category'] = 'Categoria';
 $string['categorycurrent'] = 'Categoria atual';
 $string['categorycurrentuse'] = 'Usar esta categoria';
@@ -114,7 +117,7 @@ $string['defaultmark'] = 'Nota predefinida';
 $string['defaultmarkmustbepositive'] = 'A nota predefinida deve ser positiva.';
 $string['deletecoursecategorywithquestions'] = 'Existem perguntas na base de dados de perguntas associadas a esta categoria da disciplina. Se continuar, elas serão apagadas. Poderá primeiro movê-las para outras categorias usando a base de dados de perguntas.';
 $string['deletequestioncheck'] = 'Tem a certeza absoluta que deseja apagar {$a}?';
-$string['deletequestionscheck'] = '<p>Tem a certeza absoluta de que deseja apagar as seguintes perguntas?</p><p>{$a}</p>';
+$string['deletequestionscheck'] = '<p>Tem a certeza absoluta de que deseja apagar as seguintes perguntas?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'A apagar o comportamento de pergunta {$a}';
 $string['deletingqtype'] = 'A apagar o tipo de pergunta {$a}';
 $string['didnotmatchanyanswer'] = '[Não corresponde nenhuma resposta]';
@@ -151,6 +154,7 @@ $string['errorduringregrade'] = 'Não foi possível reclassificar a pergunta {$a
 $string['errorfilecannotbecopied'] = 'Erro: não é possível copiar o ficheiro {$a}.';
 $string['errorfilecannotbemoved'] = 'Erro: não é possível mover o ficheiro {$a}.';
 $string['errorfileschanged'] = 'Erro: os ficheiros com hiperligações às questões de origem mudaram desde a exibição do formulário.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'A pergunta ({$a}) aparece mais uma vez com pesos diferentes em diferentes posições do teste. Isto não é suportado pelo relatório de estatísticas e poderá comprometer a fiabilidade das estatísticas para esta pergunta.';
 $string['errormanualgradeoutofrange'] = 'A nota {$a->grade} não se encontra entre 0 e {$a->maxgrade} para a pergunta {$a->name}. A avaliação e o feedback não foram guardados.';
 $string['errormovingquestions'] = 'Erro ao mover perguntas com os ids  {$a}.';
 $string['errorpostprocess'] = 'Ocorreu um erro durante o pós-processamento!';
@@ -160,6 +164,8 @@ $string['errorprocessingresponses'] = 'Ocorreu um erro enquanto processava as su
 $string['errorsavingcomment'] = 'Ocorreu um erro ao guardar o comentário da pergunta {$a->name} na base de dados.';
 $string['errorsavingflags'] = 'Ocorreu um erro ao guardar a marcação';
 $string['errorupdatingattempt'] = 'Ocorreu um erro ao atualizar a tentativa  {$a->id} na base de dados.';
+$string['eventquestioncategorycreated'] = 'Pergunta de categoria criada';
+$string['export'] = 'Exportar';
 $string['exportcategory'] = 'Exportar categoria';
 $string['exportcategory_help'] = 'Esta configuração determina qual a categoria a partir da qual as perguntas serão exportadas.
 
@@ -178,6 +184,7 @@ $string['filesareacourse'] = 'área de ficheiros da disciplina';
 $string['filesareasite'] = 'área de ficheiros do site';
 $string['filestomove'] = 'Mover / copiar ficheiros para {$a}?';
 $string['fillincorrect'] = 'Preencha as respostas corretas';
+$string['firsttry'] = 'Primeiro tentativa';
 $string['flagged'] = 'Marcadas';
 $string['flagthisquestion'] = 'Marcar esta pergunta';
 $string['formquestionnotinids'] = 'Formulário continha pergunta que não está nos ids das perguntas';
@@ -195,6 +202,7 @@ $string['hinttext'] = 'Texto de ajuda';
 $string['howquestionsbehave'] = 'Modo de comportamento das perguntas';
 $string['howquestionsbehave_help'] = 'Os alunos podem interagir com as perguntas do teste de várias formas diferentes. Por exemplo, pode configurar o teste de forma a que os alunos insiram uma resposta em cada pergunta e só após submeterem todo o teste obterão a sua nota e/ou feedbacks. (modo feedback diferido). Em alternativa, pode desejar que os alunos obtenham feedback imediato consoante vão submetendo as respostas a cada pergunta, e se não acertarem de imediato, possam responder de novo (modo interativo com múltiplas tentativas).';
 $string['ignorebroken'] = 'Ignorar ligações quebradas';
+$string['import'] = 'Importar';
 $string['importcategory'] = 'Importar categoria';
 $string['importcategory_help'] = 'Esta configuração determina a categoria para a qual as perguntas serão importadas.
 
@@ -225,6 +233,7 @@ $string['invalidgrade'] = 'As notas não correspondem às opções definidas - a
 $string['invalidpenalty'] = 'Penalização inválida';
 $string['invalidwizardpage'] = 'Incorreto ou nenhuma página do assistente foi especificada';
 $string['lastmodifiedby'] = 'Última modificação por';
+$string['lasttry'] = 'Última tentativa';
 $string['linkedfiledoesntexist'] = 'O ficheiro, convertido em hiperligação {$a}, não existe.';
 $string['makechildof'] = 'Tornar subcategoria de \'{$a}';
 $string['makecopy'] = 'Gravar como nova pergunta';
@@ -320,16 +329,17 @@ $string['published'] = 'partilhada';
 $string['qtypeveryshort'] = 'Tipo de pergunta';
 $string['questionaffected'] = 'A <a href="{$a->qurl}">pergunta "{$a->name}" ({$a->qtype})</a> encontra-se nesta categoria, mas também está a ser usada no <a href="{$a->qurl}">teste "{$a->quizname}"</a> em outra disciplina "{$a->coursename}".';
 $string['questionbank'] = 'Base de dados de perguntas';
-$string['questionbehaviouradminsetting'] = 'Configurações do comportamento de pergunta';
-$string['questionbehavioursdisabled'] = 'Comportamentos de pergunta a desativar';
+$string['questionbehaviouradminsetting'] = 'Configurações do comportamento das perguntas';
+$string['questionbehavioursdisabled'] = 'Comportamentos das perguntas a desativar';
 $string['questionbehavioursdisabledexplained'] = 'Insira os comportamentos que deseja que não sejam selecionáveis, separados por vírgulas';
-$string['questionbehavioursorder'] = 'Ordem dos comportamentos de pergunta';
+$string['questionbehavioursorder'] = 'Ordem dos comportamentos das perguntas';
 $string['questionbehavioursorderexplained'] = 'Insira uma lista de comportamentos separados por vírgulas, pela ordem que deseja que apareçam no menu de seleção';
 $string['questioncategory'] = 'Categoria de perguntas';
 $string['questioncatsfor'] = 'Categorias de perguntas para \'{$a}';
 $string['questiondoesnotexist'] = 'Esta pergunta não existe';
 $string['questionidmismatch'] = 'Incoerência nos ids da Pergunta';
 $string['questionname'] = 'Nome da pergunta';
+$string['questionnamecopy'] = '{$a} (cópia)';
 $string['questionno'] = 'Pergunta {$a}';
 $string['questionpreviewdefaults'] = 'Predefinições da pré-visualização da pergunta';
 $string['questionpreviewdefaults_desc'] = 'Estas configurações predefinidas são usadas quando o utilizador pré-visualiza pela primeira vez uma pergunta na Base de dados de perguntas. Assim que o utilizador tiver pré-visualizado a pergunta, as suas preferências pessoais serão guardadas como preferências do utilizador.';
@@ -352,6 +362,7 @@ $string['reviewresponse'] = 'Rever respostas';
 $string['rightanswer'] = 'Resposta correta';
 $string['rightanswer_help'] = 'Resumo da resposta correta gerada automaticamente pelo Moodle. Pode desativar esta opção e optar por explicar a solução correta à pergunta no respetivo feedback geral.';
 $string['save'] = 'Guardar';
+$string['savechangesandcontinueediting'] = 'Guardar as alterações e continuar a editar';
 $string['saved'] = 'Guardado: {$a}';
 $string['saveflags'] = 'Guardar o estado das marcações';
 $string['selectacategory'] = 'Selecione uma categoria:';
@@ -400,12 +411,14 @@ $string['unknownquestioncatregory'] = 'Categoria desconhecida: {$a}.';
 $string['unknownquestiontype'] = 'Tipo de pergunta desconhecida: {$a}.';
 $string['unknowntolerance'] = 'Tipo de tolerância desconhecida: {$a}.';
 $string['unpublished'] = 'não-partilhada';
+$string['unusedcategorydeleted'] = 'Esta categoria foi apagada pois após apagar a disciplina, as perguntas deixaram de ser utilizadas.';
 $string['updatedisplayoptions'] = 'Atualizar opções de visualização';
 $string['upgradeproblemcategoryloop'] = 'Foram detetados problemas na atualização das categorias. Existe um erro na árvore de categorias. Os ids das categorias afetados são {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Não foi possível atualizar a categoria de perguntas {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Foram detetados problemas na atualização das categorias. A categoria {$a->id} tem como categoria ascendente {$a->parent}, que não existe. A categoria ascendente foi alterada para resolver o problema.';
 $string['whethercorrect'] = 'Correta/incorreta';
 $string['whethercorrect_help'] = 'A classificação na forma de texto \'Correto\', \'Parcialmente correto\' ou \'Incorreto\', ou a cor de realce que expressa a mesma informação.';
+$string['whichtries'] = 'Que tentativas';
 $string['withselected'] = 'Com os selecionados';
 $string['wrongprefix'] = 'nameprefix {$a} formatado incorretamente';
 $string['xoutofmax'] = '{$a->mark} em {$a->max}';

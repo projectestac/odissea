@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['author'] = '저자';
 $string['automatedbackup'] = '자동화된 백업';
 $string['back'] = '<<뒤로';
 $string['backtodraftfiles'] = '<<초안 파일 관리자로 돌아가기';
-$string['cachecleared'] = '캐시된 파일 제거됨';
+$string['cachecleared'] = '임시파일 제거됨';
 $string['cacheexpire'] = '캐쉬 기한만료';
 $string['cannotaccessparentwin'] = '만일 부모 창이 HTTPS에 있다면 window.opener 객체에 접근하도록 허용되지 않아서 저장소를 자동으로 새로고침 할 수 없습니다. 하지만 세션이 있어서 파일 선택기로 돌아가서 저장소를 선택하면 작동할 것입니다.';
 $string['cannotdelete'] = '이 파일은 지울 수 없음';
@@ -117,6 +117,7 @@ $string['folderexists'] = '파일 이름이 이미 사용되고 있습니다. �
 $string['foldernotfound'] = '폴더를 발견할 수 없습니다.';
 $string['folderrecurse'] = '폴더는 자신의 서브 폴더로 이동할 수 없습니다.';
 $string['getfile'] = '파일 선택';
+$string['getfiletimeout'] = '파일 가져오기 타임아웃';
 $string['help'] = '도움말';
 $string['hidden'] = '비공개';
 $string['iconview'] = '아이콘으로 제시';
@@ -134,6 +135,8 @@ $string['invalidplugin'] = '잘못된 저장소 {$a} 플러그인';
 $string['invalidrepositoryid'] = '잘못된 저장소 ID';
 $string['isactive'] = '활성화?';
 $string['keyword'] = '핵심어';
+$string['lastmodified'] = '마지막 수정';
+$string['license'] = '라이선스';
 $string['linkexternal'] = '외부 연결고리';
 $string['listview'] = '목록으로 보기';
 $string['loading'] = '불러오는 중...';
@@ -147,6 +150,7 @@ $string['manage'] = '저장소 관리';
 $string['manageurl'] = 'URL 관리';
 $string['manageuserrepository'] = '개별 저장소 관리';
 $string['moving'] = '이동';
+$string['name'] = '이름';
 $string['newfolder'] = '새 폴더';
 $string['newfoldername'] = '새 폴더이름';
 $string['noenter'] = '입력내용 없음';
@@ -166,6 +170,7 @@ $string['operation'] = '작동';
 $string['original'] = '원본';
 $string['overwrite'] = '덮어쓰기';
 $string['overwriteall'] = '모두 덮어쓰기';
+$string['path'] = '경로';
 $string['personalrepositories'] = '가능한 저장소 인스턴스';
 $string['plugin'] = '저장소 플러그인';
 $string['pluginerror'] = '저장소 플러그인에 오류';
@@ -204,6 +209,8 @@ $string['siteinstances'] = '사이트 저장 인스턴스';
 $string['size'] = '크기';
 $string['submit'] = '제출';
 $string['sync'] = '동기화';
+$string['syncfiletimeout'] = '파일 동기화 타임아웃';
+$string['syncimagetimeout'] = '이미지 동기화 타임아웃';
 $string['thumbview'] = '아이콘으로 보기';
 $string['title'] = '파일을 선택하세요...';
 $string['type'] = '유형';

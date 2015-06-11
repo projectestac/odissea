@@ -24,10 +24,11 @@ cp html/moodle2_old/config-restricted-dist.php html/moodle2/config-restricted-di
 cp html/moodle2_old/theme/xtec2/pix/favicon.ico html/moodle2/theme/xtec2/pix/favicon.ico
 cp html/moodle2_old/theme/xtec2/pix/logo_main.png html/moodle2/theme/xtec2/pix/logo_main.png
 
-cp html/moodle2_old/apc.php html/moodle2/apc.php
 cp html/moodle2_old/opcache.php html/moodle2/opcache.php
+cp html/moodle2_old/testapp.php html/moodle2/testapp.php
 cp html/moodle2_old/CHANGES.txt html/moodle2/CHANGES.txt
 
+cp -Rp html/moodle2_old/testlib html/moodle2/testlib
 cp -Rp html/moodle2_old/auth/odissea html/moodle2/auth/odissea
 cp -Rp html/moodle2_old/blocks/configurable_reports html/moodle2/blocks/configurable_reports
 cp -Rp html/moodle2_old/admin/tool/odisseagtafsync html/moodle2/admin/tool/odisseagtafsync

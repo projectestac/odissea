@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -109,12 +109,6 @@ $string['fileuploadshelp'] = '<p>Uppladdning av filer verkar vara avaktiverat p�
 $string['installation'] = 'Installation';
 $string['langdownloaderror'] = 'Språket "{$a}" gick tyvärr inte att ladda ner. Installationen kommer att fullföljas på engelska.';
 $string['langdownloadok'] = 'Språket "{$a}" installerades framgångsrikt. Installationen kommer att fullföljas på detta språk.';
-$string['magicquotesruntime'] = 'körtid för \'Magiska citat\'';
-$string['magicquotesruntimeerror'] = 'Det här bör vara \'off\'';
-$string['magicquotesruntimehelp'] = '<p>Körtid för \'Magiska citat\' (Magic quotes runtime) bör vara inställt till \'off\' för att Moodle ska fungera korrekt</p>
-<p>Som förvald standard är det normalt sett inställt till \'off\'... Kontrollera inställningen för \'Magic quotes runtime\' i Din php.ini-fil.</p>
-<p>Om Du inte har tillgång till Din php.ini-fil så kanske Du kan lägga in följande rad i en fil som heter .htaccess i Din katalog för Moodle:<blockquote>php_value magic_quotes_runtime Off</blockquote>
-</p>';
 $string['memorylimit'] = 'Minnesbegränsning';
 $string['memorylimiterror'] = 'Minnesbegränsningen för PHP på Din server är f n inställt till ett ganska lågt värde... Detta kan leda till problem senare.';
 $string['memorylimithelp'] = '<p>Den aktuella minnesbegränsningen för PHP på Din server är  inställt till {$a}.</p>

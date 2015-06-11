@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,6 +100,7 @@ $string['entername'] = 'Mesedez, idatzi karpetaren izena';
 $string['enternewname'] = 'Mesedez, idatzi fitxategi berriaren izena';
 $string['error'] = 'Errore ezezagun bat gertatu da!';
 $string['errornotyourfile'] = 'Ezin da aukeratu zeuk gehitu ez duzun fitxategi bat';
+$string['errorwhiledownload'] = 'Errorea gertatu da ondorengo fitxategia jaitsi bitartean: {$a}';
 $string['existingrepository'] = 'Biltegia lehendik bazen';
 $string['fileexists'] = 'Fitxategiaren izena dagoeneko erabilita dago. Mesedez, erabili beste izen bat';
 $string['fileexistsdialogheader'] = 'Fitxategia dagoeneko badago';
@@ -125,10 +126,11 @@ $string['invalidjson'] = 'JSON katea ez da baliagarria';
 $string['invalidrepositoryid'] = 'Biltegiaren IDa ez da baliagarria';
 $string['isactive'] = 'Aktiboa?';
 $string['keyword'] = 'Gakoa';
+$string['license'] = 'Lizentzia';
 $string['linkexternal'] = 'Kanpoko esteka';
 $string['listview'] = 'Ikusi zerrenda gisa';
 $string['loading'] = 'Kargatzen...';
-$string['login'] = 'Sartu';
+$string['login'] = 'Sartu zure kontuan';
 $string['logout'] = 'Saioa amaitu';
 $string['lostsource'] = 'Errorea. Iturria falta da. {$a}';
 $string['makefileinternal'] = 'Fitxategiaren kopia egin';
@@ -138,6 +140,7 @@ $string['manage'] = 'Biltegiak kudeatu';
 $string['manageurl'] = 'Kudeatu';
 $string['manageuserrepository'] = 'Kudeatu norberaren biltegia';
 $string['moving'] = 'Mugitzen';
+$string['name'] = 'Izena';
 $string['newfolder'] = 'Karpeta berria';
 $string['newfoldername'] = 'Karpeta berriaren izena';
 $string['nofilesattached'] = 'Ez dago erantsitako fitxategirik';
@@ -152,6 +155,7 @@ $string['openpicker'] = 'Aukera ezazu fitxategi bat...';
 $string['operation'] = 'Eragiketa';
 $string['original'] = 'Jatorrizkoa';
 $string['overwrite'] = 'Berridatzi';
+$string['path'] = 'Bidea';
 $string['personalrepositories'] = 'Eskura dauden biltegi-instantziak';
 $string['plugin'] = 'Biltegi-pluginak';
 $string['pluginerror'] = 'Erroreak biltegi-pluginean';
@@ -169,6 +173,7 @@ $string['renameto'] = 'Berrizendatu honela: "{$a}"';
 $string['repositories'] = 'Biltegiak';
 $string['repository'] = 'Biltegia';
 $string['repositorycourse'] = 'Ikastaro-biltegiak';
+$string['repositoryerror'] = 'Urrutiko biltegiak errorea itzuli du: {$a}';
 $string['repositoryicon'] = 'Biltegiaren ikonoa';
 $string['save'] = 'Gorde';
 $string['saveas'] = 'Gorde honela';

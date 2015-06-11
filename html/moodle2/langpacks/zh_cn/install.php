@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -120,14 +120,6 @@ $string['inputwebdirectory'] = 'Moodle目录：';
 $string['installation'] = '安装';
 $string['langdownloaderror'] = '很不幸，无法下载“{$a}”语言包。安装过程将以英文继续。';
 $string['langdownloadok'] = '语言“{$a}”已经成功安装了。安装过程将会以此语言继续。';
-$string['magicquotesruntime'] = '运行时的 Magic Quotes';
-$string['magicquotesruntimeerror'] = '这应该是关闭的';
-$string['magicquotesruntimehelp'] = '<p>运行时的Magic Quotes应当关闭，这样Moodle才能正常工作。</p>
-
-<p>通常缺省时它是关闭的...参考php.ini文件中的<b>magic_quotes_runtime</b>设置。</p>
-
-<p>如果您不能访问php.ini文件，也许您可以把下面的内容添加到Moodle目录中名为.htaccess的文件中:</p>
-<blockquote><div>php_value magic_quotes_runtime Off</div></blockquote>';
 $string['memorylimit'] = '内存限制';
 $string['memorylimiterror'] = 'PHP内存限制设置的太低了...以后您会遇到问题的。';
 $string['memorylimithelp'] = '<p>您服务器的PHP内存限制是{$a}。</p>

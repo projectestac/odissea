@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['aicchacpkeepsessiondata'] = 'Dati sessione AICC HACP';
 $string['aicchacpkeepsessiondata_desc'] = 'La durata del mantenimento, espressa in giorni, dei dati delle sessioni esterne AICC HACP. (un valore elevato riempirà la tabella di dati ma può essere utile per eseguire attività si debug)';
 $string['aicchacptimeout'] = 'Timeout AICC HACP';
 $string['aicchacptimeout_desc'] = 'La durata in minuti in cui una sessione AICC HACP può rimanere aperta';
+$string['aiccuserid'] = 'Passa ad AICC gli user id numerici';
+$string['aiccuserid_desc'] = 'Poiché lo standard AICC rispetto a Moodle è molto restrittivo sugli username, questa impostazione consente di passare al pacchetto AICC lo user->id di Moodle al posto dello username. Lo standard AICC per gli username consente l\'uso di caratteri alfanumerici e di due caratteri addizionali, il segno meno (-) ed il segno di sottolineatura (_). Punti, spazi e il simbolo @ non sono consentiti.';
 $string['aliasonly'] = 'Aggiornamento autorizzati a cambiare ruolo';
 $string['allowapidebug'] = 'Attiva l\'API di debug e tracking (Imposta la capture mask con apidebugmasjk)';
 $string['allowtypeaicchacp'] = 'Abilita AICC HACP esterna';
@@ -57,6 +59,9 @@ $string['attemptstatusentry'] = 'Solo pagina di ingresso';
 $string['attemptstatusmy'] = 'Solo My home';
 $string['attemptsx'] = '{$a} tentativi';
 $string['attr_error'] = 'Valore non valido per l\'attributo ({$a->attr}) nel tag {$a->tag}.';
+$string['autocommit'] = 'Auto-commit';
+$string['autocommitdesc'] = 'Salva automaticamente i dati SCORM se il pacchetto SCORM omette di farlo';
+$string['autocommit_help'] = 'Consente di salvare automaticamente i dati SCORM nel database. L\'impostazione è utile per quei pacchetti SCORM che non salvano i dati con regolarità.';
 $string['autocontinue'] = 'Continuazione automatica';
 $string['autocontinuedesc'] = 'Imposta il lancio automatico di learning object successivi. Se non abilitato, dovrà essere utilizzato il pulsante Continua.';
 $string['autocontinue_help'] = 'La continuazione automatica consente il lancio automatico di  learning object successivi senza usare il tasto Continua';
@@ -92,11 +97,14 @@ $string['defaultgradesettings'] = 'Impostazioni di valutazione di default';
 $string['defaultothersettings'] = 'Altre impostazioni di default';
 $string['deleteallattempts'] = 'Elimina tutti i tentativi SCORM';
 $string['deleteattemptcheck'] = 'Sei sicuro di voler eliminare questi tentativi?';
+$string['deleteselected'] = 'Elimina tentativi selezionati';
 $string['deleteuserattemptcheck'] = 'Sei proprio sicuro di voler eliminare tutti i tuoi tentativi?';
 $string['details'] = 'Dettagli tracciamento';
 $string['directories'] = 'Visualizza collegamenti';
 $string['disabled'] = 'Disabilitato';
 $string['display'] = 'Visualizzazione pacchetto';
+$string['displayactivityname'] = 'Visualizza nome dell\'attività';
+$string['displayactivityname_help'] = 'Consente di viuaslizzare il nome dell\'attività sopra lo SCORM player.';
 $string['displayattemptstatus'] = 'Visualizza  lo stato dei tentativi';
 $string['displayattemptstatusdesc'] = 'Imposta la visualizzazione del riepilogo dei tentativi dell\'utente nella pagina  My home all\'interno del blocco Panoramica corsi oppure nella pagina di ingresso dell\'attività SCORM.';
 $string['displayattemptstatus_help'] = 'Consente di visualizzare un riepilogo dello stato dei nel blocco Panoramica corsi della pagina My home e/o nella pagina con la struttura del pacchetto del modulo SCORM.';
@@ -112,6 +120,12 @@ $string['element'] = 'Elemento';
 $string['enter'] = 'Entra';
 $string['entercourse'] = 'Entra nel corso';
 $string['errorlogs'] = 'Log degli errori';
+$string['eventattemptdeleted'] = 'Eliminato tentativo';
+$string['eventinteractionsviewed'] = 'Visualizzata interazione';
+$string['eventreportviewed'] = 'Visualizzato report';
+$string['eventscolaunched'] = 'Lanciata SCO';
+$string['eventtracksviewed'] = 'Visualizzato tracciamento';
+$string['eventuserreportviewed'] = 'Visualizzato report utente';
 $string['everyday'] = 'Ogni giorno';
 $string['everytime'] = 'Ogni volta che è usato';
 $string['exceededmaxattempts'] = 'Hai raggiunto il massimo numero di tentativi consentito.';
@@ -132,8 +146,10 @@ $string['forcejavascript'] = 'Obbliga gli utenti ad abilitare JavaScript';
 $string['forcejavascript_desc'] = 'Impedisce l\'accesso ad oggetti SCORM quando il borwser dell\'utente non supporta javascript oppure non lo ha abilitato. Se l\'impostazione è disbailitata, l\'utente può vedere l\'oggetto SCORM ma la comunicazione dei dati di fruizione sarà perduta.';
 $string['forcejavascriptmessage'] = 'Per visualizzare questo oggetto è necessario JavaScript, per favore abilita JavaScript nel tuo browser e riprova';
 $string['forcenewattempt'] = 'Forza un nuovo tentativo';
-$string['forcenewattemptdesc'] = 'Ogni accesso ad un pacchetto SCORM sarò considerato come nuovo tentativo';
-$string['forcenewattempt_help'] = 'Con Forza un nuovo tentativo ogni accesso al pacchetto SCORM sarà considerato un nuovo tentativo.';
+$string['forcenewattemptdesc'] = 'Consente di nascondere la casella di spunta "Avvia nuovo tentativo" ed evita la modalità revisione. Lo SCORM consente agli studenti di tornare allo stesso tentativo in qualsiasi punto e non è possibile avviare un nuovo tentativo finché il tentativo precedente non risulta "completed", "passed" o "failed". Se il pacchetto SCORM non gestisce la cosa, lo studente rientrerà sempre nello stesso tentativo.';
+$string['forcenewattempt_help'] = 'Consente di nascondere la casella di spunta "Avvia nuovo tentativo" ed evita la modalità revisione.
+
+Lo SCORM consente agli studenti di tornare allo stesso tentativo in qualsiasi punto e non è possibile avviare un nuovo tentativo finché il tentativo precedente non risulta "completed", "passed" o "failed". Se il pacchetto SCORM non gestisce la cosa, lo studente rientrerà sempre nello stesso tentativo.';
 $string['found'] = 'Manifest trovato';
 $string['frameheight'] = 'L\'altezza del frame o della finestra';
 $string['framewidth'] = 'La larghezza del frame o della finestra';
@@ -219,6 +235,8 @@ Sono disponibili 3 opzioni:
 $string['navigation'] = 'Navigazione';
 $string['navpositionleft'] = 'Posizione da sinistra dei pulsanti di navigazione, in pixel';
 $string['navpositiontop'] = 'Posizione dall\'alto dei pulsanti di navigazione, in pixel';
+$string['networkdropped'] = 'Il player SCORM ha rilevato che la tua connessione internet è poco affidabile oppure si è interrotta. Se prosegui nell\'attività SCORM, è possibile che i dati di tracciamento non vengano salvati.<br />
+E\' preferibile uscire subito dall\'attività e accedervi nuovamente usando una connessione internet affidabile.';
 $string['newattempt'] = 'Avvia un nuovo tentativo';
 $string['next'] = 'Continua';
 $string['noactivity'] = 'Nessun report';
@@ -282,6 +300,9 @@ $string['reviewmode'] = 'Modalità revisione';
 $string['rightanswer'] = 'Risposta corretta';
 $string['scoes'] = 'Learning Object';
 $string['score'] = 'Punteggio';
+$string['scorm12standard'] = 'Abilita modalità SCORM 1.2 standard';
+$string['scorm12standarddesc'] = 'L\'impostazione consente di scegliere se Moodle può memorizzare più informazioni di quante ne consenta la specifica SCORM 1.2.
+Disabilitare l\'impostazione qualora il pacchetto SCORM in uso consenta agli utenti l\'inserimento di grandi quantitativi di testo oppure memorizzi molti dati nel campo suspend_data.';
 $string['scorm:addinstance'] = 'Aggiungere pacchetto SCORM';
 $string['scormclose'] = 'Al';
 $string['scormcourse'] = 'Corso';

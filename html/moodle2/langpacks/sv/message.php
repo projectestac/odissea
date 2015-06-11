@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['emailmessages'] = 'E-postmeddelanden när jag arbetar i frånkopplat l�
 $string['emailtagline'] = 'Det här e-postmeddelandet är en kopia av ett meddelande som har skickats till Dig på "{$a>sitename}". Gå till  {$a->url} för att svara.
 ';
 $string['emptysearchstring'] = 'Du måste söka efter någonting';
-$string['errorcallingprocessor'] = 'Fel vid anrop av definierad output';
+$string['errorcallingprocessor'] = 'Fel i sb m anrop till den definierade processorn';
 $string['errortranslatingdefault'] = 'Fel vid översättningen av standardinställningar från plugin, använder systemets standard istället.';
 $string['forced'] = 'Tvingad';
 $string['formorethan'] = 'I mer än';
@@ -137,8 +137,6 @@ $string['unblockcontact'] = 'Ta bort blockering av användare';
 $string['unreadmessages'] = '({$a}) olästa meddelanden';
 $string['unreadnewmessage'] = 'Nytt meddelande från {$a}';
 $string['unreadnewmessages'] = 'Nya meddelanden från {$a}';
-$string['unreadnewnotification'] = 'Nytt meddelande';
-$string['unreadnewnotifications'] = 'Nya meddelanden ({$a})';
 $string['userisblockingyou'] = 'Den här användaren har blockerat Dig från att skicka meddelanden till dem';
 $string['userisblockingyounoncontact'] = 'Den här användaren accepterar bara meddelanden från personer på sin kontaktlista och där finns Du f.n. inte med.';
 $string['userssearchresults'] = ' {$a} användare hittades';

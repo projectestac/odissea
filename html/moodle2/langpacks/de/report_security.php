@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,11 +59,6 @@ $string['check_frontpagerole_error'] = 'Rolle für die Startseite \'{$a}\' ist f
 $string['check_frontpagerole_name'] = 'Rolle für die Startseite';
 $string['check_frontpagerole_notset'] = 'Keine Rolle für die Startseite angelegt.';
 $string['check_frontpagerole_ok'] = 'Die Rolle für die Startseite ist in Ordnung.';
-$string['check_globals_details'] = '<p>register_globals gilt als eine sehr unsichere Einstellung für PHP.</p>
-<p>Die PHP-Einstellung <code>register_globals=off </code> muss unbedingt gesetzt sein. Diese Einstellung können Sie in der Datei <code>php.ini</code>, Apache/IIS-Konfiguration oder der Datei <code>.htaccess</code> vornehmen.</p>';
-$string['check_globals_error'] = 'Die Einstellung register_globals muss deaktiviert sein. Bitte passen Sie Ihre PHP-Einstellungen umgehend an!';
-$string['check_globals_name'] = 'register_globals';
-$string['check_globals_ok'] = 'register_globals ist deaktiviert.';
 $string['check_google_details'] = '<p>Die Einstellung \'Offen für Google\' erlaubt es Google und anderen Suchmaschinen, mit der Gastberechtigung alle offenen Kurse zu durchsuchen. Es ist nicht sinnvoll, diese Funktion zu aktivieren, wenn der Gastzugang deaktiviert ist.</p>';
 $string['check_google_error'] = 'Der Zugriff für Suchmaschinen ist aktiviert, wobei der Gastzugang aber deaktiviert ist.';
 $string['check_google_info'] = 'Suchmaschinen könnten auf Ihre Kursinhalte als Gäste zugreifen.';

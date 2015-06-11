@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = '정의되지 않은 서식';
 $string['layoutvertical'] = '라디오 버튼의 수직 배치';
 $string['nooptionsforsubquestion'] = '질문 영역 # {$a->sub} (question->id={$a->id})에서 설정을 탑재할 수 없음';
 $string['noquestions'] = '답 내장형(복수답) "<strong>{$a}</strong>" 의 질문이 없음';
+$string['pleaseananswerallparts'] = '질문의 모든 부분에 대해 답하세요.';
 $string['pluginname'] = '답 내장형(Cloze)';
 $string['pluginnameadding'] = '답 내장형(Cloze) 질문 추가';
 $string['pluginnameediting'] = '답 내장형(Cloze) 질문 편집';

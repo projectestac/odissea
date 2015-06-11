@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,5 @@ $string['folder:managefiles'] = 'أدر الملفات في وحدت المجل�
 $string['folder:view'] = 'عايين محتوى المجلد';
 $string['modulename'] = 'مجلد';
 $string['modulenameplural'] = 'مجلدات';
-$string['neverseen'] = 'لم يتم رؤيتها';
 $string['pluginadministration'] = 'إدارة المجلد';
 $string['pluginname'] = 'مجلد';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'コメントインライン';
+$string['commentinlinedefault'] = 'デフォルトでコメントインラインにする';
+$string['commentinlinedefault_help'] = '設定した場合、すべての新しい課題に関して、このコメントインライン機能がデフォルトで有効にされます。';
+$string['commentinline_help'] = 'この設定を有効にした場合、評定中、送信テキストがフィードバックコメントフィールドにコピーされ、 (恐らく、異なる色を使った) コメントインラインまたはオリジナルテキストの編集を簡単にします。';
 $string['default'] = 'デフォルトで有効にする';
 $string['default_help'] = '有効にした場合、すべての新しい課題において、このフィードバック方法がデフォルトで有効にされます。';
 $string['enabled'] = 'フィードバックコメント';

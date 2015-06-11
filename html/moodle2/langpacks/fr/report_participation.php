@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_participation', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_participation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Rapport de participation consulté';
+$string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
 $string['page-report-participation-index'] = 'Rapport de participation au cours';
 $string['page-report-participation-x'] = 'Tout rapport de participation';
 $string['participation:view'] = 'Consulter le rapport de participation au cours';

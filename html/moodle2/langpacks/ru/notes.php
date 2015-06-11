@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'notes', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ $string['enablenotes'] = 'Включить заметки';
 $string['eventnotecreated'] = 'Создана заметка';
 $string['eventnotedeleted'] = 'Удалена заметка';
 $string['eventnotesviewed'] = 'Просмотрена заметка';
+$string['eventnoteupdated'] = 'Обновлена заметка';
 $string['groupaddnewnote'] = 'Добавить общую заметку';
 $string['invalidid'] = 'Указан некорректный идентификатор заметки';
 $string['invaliduserid'] = 'Неверный идентификатор пользователя: {$a}';

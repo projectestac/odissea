@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'blog', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,6 +87,8 @@ $string['entrybodyonlydesc'] = 'Entry description';
 $string['entryerrornotyours'] = 'This entry is not yours';
 $string['entrysaved'] = 'Your entry has been saved';
 $string['entrytitle'] = 'Entry title';
+$string['eventblogassociationadded'] = 'Blog association created';
+$string['eventblogentriesviewed'] = 'Blog entries viewed';
 $string['evententryadded'] = 'Blog entry added';
 $string['evententrydeleted'] = 'Blog entry deleted';
 $string['evententryupdated'] = 'Blog entry updated';

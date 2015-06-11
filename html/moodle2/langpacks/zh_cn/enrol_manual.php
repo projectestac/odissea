@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_manual', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['alterstatus'] = '修改状态';
 $string['altertimeend'] = '修改结束时间';
 $string['altertimestart'] = '修改开始时间';
 $string['assignrole'] = '分配角色';
+$string['browsecohorts'] = '浏览群组';
 $string['confirmbulkdeleteenrolment'] = '你确信要删除该用户的选课吗？';
 $string['defaultperiod'] = '缺省保持选课时长';
 $string['defaultperiod_desc'] = '选课有效的缺省时间长度（单位秒）。如果此时间设置为零，选课持续时间将会按默认不加以限制。';

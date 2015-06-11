@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'survey', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -158,7 +158,7 @@ Eskerrik asko.';
 $string['collesaname'] = 'COLLES (Benetakoa)';
 $string['collesapintro'] = 'Galdeketa honen helburua da unitate honen on-line banaketak ikasten zenbat lagundu zaituen jakitea.
 
-Azpiko 24 esaldietako bakoitzak unitate honetan izandako esperientzia konparatzea eskatzen dizu, <B>nahiaren</B> (idealaren) eta <B>benetako</B> esperientziaren artean.
+Azpiko 24 esaldietako bakoitzak unitate honetan izandako esperientzia konparatzea eskatzen dizu, <b>nahiaren</b> (idealaren) eta <b>benetako</b> esperientziaren artean.
 
 Ez dago erantzun \'zuzen\' edo \'okerrik\'; zure iritzia jakin nahi dugu, besterik gabe. Zure erantzunak konfidentzialtasun osoz tratatuko ditugula ziur egon zaitezke, eta hauek ez dute zure ebaluazioan eraginik izango.
 
@@ -168,8 +168,8 @@ Eskerrik asko.';
 $string['collesapname'] = 'COLLES (Lehenetsia eta Benetakoa)';
 $string['collesm1'] = 'Garrantzia';
 $string['collesm1short'] = 'Garrantzia';
-$string['collesm2'] = 'Gogoetazko pentsaera';
-$string['collesm2short'] = 'Gogoetazko pentsaera';
+$string['collesm2'] = 'Gogoeta-pentsaera';
+$string['collesm2short'] = 'Gogoeta-pentsaera';
 $string['collesm3'] = 'Elkarreragina';
 $string['collesm3short'] = 'Elkarreragina';
 $string['collesm4'] = 'Tutorearen laguntza';
@@ -199,7 +199,10 @@ $string['downloadinfo'] = 'Inkesta honen datu gordin guztiak Excel, SPSS edo bes
 $string['downloadresults'] = 'Emaitzak jaitsi';
 $string['downloadtext'] = 'Datuak testu arrunt fitxategi gisa jaitsi';
 $string['editingasurvey'] = 'Hausnarketa bat editatzen';
-$string['guestsnotallowed'] = 'Bistariek ezin dute hausnarketarik bidali';
+$string['eventreportdownloaded'] = 'Hausnarketaren txostena jaitsi da';
+$string['eventreportviewed'] = 'Hausnarketaren txostena ikusi da';
+$string['eventresponsesubmitted'] = 'Hausnarketa-erantzuna bidalita';
+$string['guestsnotallowed'] = 'Bisitariek ezin dute hausnarketarik bidali';
 $string['howlong'] = 'Zenbat denbora behar izan duzu inkesta hau betetzeko?';
 $string['howlongoptions'] = '<1 min, 1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,>10 min';
 $string['ifoundthat'] = 'Hau aurkitu dut';
@@ -241,6 +244,7 @@ $string['selectedquestions'] = 'Eskala batetik aukeratutako galderak, ikasle guz
 $string['summary'] = 'Laburpena';
 $string['survey:addinstance'] = 'Gehitu beste hausnarketa bat';
 $string['surveycompleted'] = 'Hausnarketa hau bukatu duzu. Beheko grafikoak zure erantzunen eta klasearen erantzunen batez bestekoen arteko konparaketa da.';
+$string['surveycompletednograph'] = 'Bete duzu hausnarketa hau';
 $string['survey:download'] = 'Erantzunak jaitsi';
 $string['surveygraph'] = 'Hausnarketaren grafikoa';
 $string['surveyname'] = 'Hausnarketaren izena';
@@ -248,6 +252,11 @@ $string['survey:participate'] = 'Hausnarketari erantzun';
 $string['survey:readresponses'] = 'Erantzunak ikusi';
 $string['surveysaved'] = 'Hausnarketa gordeta';
 $string['surveytype'] = 'Hausnarketa mota';
+$string['surveytype_help'] = '3 inkesta mota daude eskuragarri:
+
+* Pentsatzeko eta Ikasteko Jarrerarako Inkesta (ATTS inglesezko hitzetatik) - pertsona bat zein neurrira arte \'konektatutako ikaslea\' den (ikastea gustagarriago aurkitzen du, eta askotan lagunkoiagoa, atseginagoa eta besteekin ideiak eraikitzeko prestutasun handiagoa izaten du) edo \'ikasle bereizia\' den (ikastean kritikoagoa eta jarrera eztabaidatsuagoa izateko joera du) neurtzeko.
+* Gertakari kritikoetarako inkesta
+* Online-ko Ikaste Ingurune Konstruktibistarako Inkesta (COLLES inglesezko hitzetatik) - World Wide Web-eko gaitasun interaktiboa ikasteko praktika dinamikoetan ikasleen parte-hartzea areagotzeko esplotatzeko gaitasuna monitorizatzeko.';
 $string['thanksforanswers'] = 'Eskerrik asko erantzuteagatik, {$a}';
 $string['time'] = 'Denbora';
 $string['viewsurveyresponses'] = 'Ikusi hausnarketaren {$a} erantzun';

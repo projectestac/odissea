@@ -125,9 +125,9 @@ class cronlib_testcase extends basic_testcase {
      * Function to populate node array.
      *
      * @param string $path Path of directory or file
-     * @param boolean $isdir Is the node a directory
+     * @param bool $isdir Is the node a directory
      * @param int $time modified time of the node in epoch
-     * @param boolean $keep Should the node exist after the delete function has run
+     * @param bool $keep Should the node exist after the delete function has run
      */
     private function generate_test_path($path, $isdir = false, $time = 0, $keep = false) {
         $node = new stdClass();
@@ -137,7 +137,6 @@ class cronlib_testcase extends basic_testcase {
         $node->keep = $keep;
         return $node;
     }
-
     /**
      * Test removing files and directories from tempdir.
      *
@@ -160,7 +159,9 @@ class cronlib_testcase extends basic_testcase {
         foreach ($nodes as $data) {
             touch($tmpdir.$data->path, time() + $data->time);
         }
-        cron_delete_from_temp();
+
+        $task = new \core\task\file_temp_cleanup_task();
+        $task->execute();
 
         $dir = new RecursiveDirectoryIterator($tmpdir);
         $iter = new RecursiveIteratorIterator($dir, RecursiveIteratorIterator::CHILD_FIRST);

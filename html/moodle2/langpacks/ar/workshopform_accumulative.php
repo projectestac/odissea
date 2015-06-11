@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,5 +33,5 @@ $string['poor'] = 'ضعيف';
 $string['present'] = 'حاضر';
 $string['scalename4'] = 'ممتاز  / ضعيف جدا';
 $string['scalename5'] = 'ممتاز  / ضعيف جدا';
-$string['scalename6'] = 'ممتاز / ضعيف جدا (7 نقاط)';
+$string['scalename6'] = 'ممتاز  / ضعيف جدا';
 $string['verypoor'] = 'ضعيف جدا';

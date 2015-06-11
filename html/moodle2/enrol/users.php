@@ -174,11 +174,30 @@ if ($action) {
 
 
 $renderer = $PAGE->get_renderer('core_enrol');
-$userdetails = array (
-    'picture' => false,
-    'firstname' => get_string('firstname'),
-    'lastname' => get_string('lastname'),
-);
+$userdetails = array('picture' => false);
+// Get all the user names in a reasonable default order.
+$allusernames = get_all_user_name_fields(false, null, null, null, true);
+// Initialise the variable for the user's names in the table header.
+$usernameheader = null;
+// Get the alternative full name format for users with the viewfullnames capability.
+$fullusernames = $CFG->alternativefullnameformat;
+// If fullusernames is empty or accidentally set to language then fall back to default of just first and last name.
+if ($fullusernames == 'language' || empty($fullusernames)) {
+    // Set $a variables to return 'firstname' and 'lastname'.
+    $a = new stdClass();
+    $a->firstname = 'firstname';
+    $a->lastname = 'lastname';
+    // Getting the fullname display will ensure that the order in the language file is maintained.
+    $usernameheader = explode(' ', get_string('fullnamedisplay', null, $a));
+} else {
+    // If everything is as expected then put them in the order specified by the alternative full name format setting.
+    $usernameheader = order_in_string($allusernames, $fullusernames);
+}
+
+// Loop through each name and return the language string.
+foreach ($usernameheader as $key => $username) {
+    $userdetails[$username] = get_string($username);
+}
 $extrafields = get_extra_user_fields($context);
 foreach ($extrafields as $field) {
     $userdetails[$field] = get_user_field_name($field);
@@ -205,7 +224,8 @@ if (!has_capability('moodle/course:viewhiddenuserfields', $context)) {
 
 $filterform = new enrol_users_filter_form('users.php', array('manager' => $manager, 'id' => $id),
         'get', '', array('id' => 'filterform'));
-$filterform->set_data(array('search' => $search, 'ifilter' => $filter, 'role' => $role));
+$filterform->set_data(array('search' => $search, 'ifilter' => $filter, 'role' => $role,
+    'filtergroup' => $fgroup, 'status' => $status));
 
 $table->set_fields($fields, $renderer);
 

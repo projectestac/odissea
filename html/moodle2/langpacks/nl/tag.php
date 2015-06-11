@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Verwijderd - cursus-tags';
 $string['description'] = 'Beschrijving';
 $string['edittag'] = 'Bewerk deze tag';
 $string['entertags'] = 'Geef tags in, gescheiden door komma\'s';
-$string['errordeleting'] = 'Fout bij het verwijderen van de tag met id {$a}. Rapporteer dit bij je systeembeheerder.';
 $string['errortagfrontpage'] = 'Het taggen van de startpagina van de site is niet toegelaten';
 $string['errorupdatingrecord'] = 'Fout bij het aanpassen van de tag';
+$string['eventtagadded'] = 'Tag aan een item toegevoegd';
+$string['eventtagcreated'] = 'Tag gemaakt';
+$string['eventtagdeleted'] = 'Tag verwijderd';
+$string['eventtagflagged'] = 'Tag gemarkeerd';
+$string['eventtagremoved'] = 'Tag verwijderd van een item';
+$string['eventtagunflagged'] = 'Tag markering verwijderd';
+$string['eventtagupdated'] = 'Tag aangepast';
 $string['flag'] = 'Markeer';
 $string['flagasinappropriate'] = 'Markeer als niet geschikt';
 $string['helprelatedtags'] = 'Komma gescheiden gerelateerde tags';

@@ -30,6 +30,14 @@ defined('MOODLE_INTERNAL') || die();
  *
  * Class for event to be triggered when a course module is updated.
  *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string modulename: name of module updated.
+ *      - string name: title of module.
+ *      - string instanceid: id of module instance.
+ * }
+ *
  * @package    core
  * @since      Moodle 2.6
  * @copyright  2013 Ankit Agarwal
@@ -43,7 +51,7 @@ class course_module_updated extends base {
     protected function init() {
         $this->data['objecttable'] = 'course_modules';
         $this->data['crud'] = 'u';
-        $this->data['level'] = self::LEVEL_TEACHING;
+        $this->data['edulevel'] = self::LEVEL_TEACHING;
     }
 
     /**
@@ -61,8 +69,8 @@ class course_module_updated extends base {
      * @return string
      */
     public function get_description() {
-        return 'The ' . $this->other['modulename'] . ' module with instance id ' . $this->other['instanceid'] .
-                ' was updated by user with id ' . $this->userid;
+        return "The user with id '$this->userid' updated the '{$this->other['modulename']}' activity with " .
+            "course module id '$this->contextinstanceid'.";
     }
 
     /**
@@ -103,8 +111,12 @@ class course_module_updated extends base {
      * @return array of parameters to be passed to legacy add_to_log() function.
      */
     protected function get_legacy_logdata() {
-        return array ($this->courseid, "course", "update mod", "../mod/" . $this->other['modulename'] . "/view.php?id=" .
+        $log1 = array($this->courseid, "course", "update mod", "../mod/" . $this->other['modulename'] . "/view.php?id=" .
                 $this->objectid, $this->other['modulename'] . " " . $this->other['instanceid']);
+        $log2 = array($this->courseid, $this->other['modulename'], "update",
+               "view.php?id={$this->objectid}",
+               "{$this->other['instanceid']}", $this->objectid);
+        return array($log1, $log2);
     }
 
     /**
@@ -113,14 +125,15 @@ class course_module_updated extends base {
      * Throw \coding_exception notice in case of any problems.
      */
     protected function validate_data() {
+        parent::validate_data();
         if (!isset($this->other['modulename'])) {
-            throw new \coding_exception("Field other['modulename'] cannot be empty");
+            throw new \coding_exception('The \'modulename\' value must be set in other.');
         }
         if (!isset($this->other['instanceid'])) {
-            throw new \coding_exception("Field other['instanceid'] cannot be empty");
+            throw new \coding_exception('The \'instanceid\' value must be set in other.');
         }
         if (!isset($this->other['name'])) {
-            throw new \coding_exception("Field other['name'] cannot be empty");
+            throw new \coding_exception('The \'name\' value must be set in other.');
         }
     }
 
@@ -131,7 +144,6 @@ class course_module_updated extends base {
      *                     or {@link get_coursemodule_from_instance}.
      * @param \context_module $modcontext module context instance
      * @return \core\event\base returns instance of new event
-     * @since Moodle 2.6.3
      */
     public static final function create_from_cm($cm, $modcontext = null) {
         // If not set, get the module context.

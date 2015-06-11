@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -112,7 +112,7 @@ $string['checkuserspermissionshere'] = 'Rechte prüfen, die {$a->fullname} bei {
 $string['chooseroletoassign'] = 'Wählen Sie bitte eine Rolle zur Zuweisung';
 $string['cohort:assign'] = 'Mitglieder von globalen Gruppen verwalten';
 $string['cohort:manage'] = 'Globale Gruppen anlegen, löschen und bewegen';
-$string['cohort:view'] = 'Globale Gruppen sehen';
+$string['cohort:view'] = 'Globale Gruppen anzeigen';
 $string['comment:delete'] = 'Kommentare löschen';
 $string['comment:post'] = 'Kommentare schreiben';
 $string['comment:view'] = 'Kommentare lesen';
@@ -150,6 +150,7 @@ $string['course:movesections'] = 'Abschnitte verschieben';
 $string['course:publish'] = 'Kurs in einem Hub veröffentlichen';
 $string['course:request'] = 'Neue Kurse beantragen';
 $string['course:reset'] = 'Kurs zurücksetzen';
+$string['course:reviewotherusers'] = 'Beobachtung anderer Nutzer/innen';
 $string['course:sectionvisibility'] = 'Abschnitte anzeigen/verbergen';
 $string['course:setcurrentsection'] = 'Kursabschnitt als \'aktuell\' markieren';
 $string['course:update'] = 'Kurseinstellungen aktualisieren';
@@ -177,11 +178,11 @@ $string['defaultx'] = 'Standard: {$a}';
 $string['defineroles'] = 'Rollen verwalten';
 $string['deletecourseoverrides'] = 'Alle Änderungen im Kurs löschen';
 $string['deletelocalroles'] = 'Alle lokalen Rollenzuordnungen löschen';
-$string['deleterolesure'] = 'Sind Sie sicher, dass Sie die Rolle "{$a->name} ({$a->shortname})" wirklich löschen möchten?</p>
-<p>Aktuell sind dieser Rolle insgesamt {$a->count} Nutzer/innen zugewiesen.';
+$string['deleterolesure'] = '<p>Möchten Sie die Rolle \'{$a->name} ({$a->shortname})\' wirklich löschen?</p>
+<p>Aktuell sind dieser Rolle insgesamt {$a->count} Personen zugewiesen.';
 $string['deletexrole'] = 'Rolle {$a} löschen';
 $string['duplicaterole'] = 'Rolle duplizieren';
-$string['duplicaterolesure'] = 'Sind Sie sicher, dass Sie die Rolle "{$a->name} ({$a->shortname})" duplizieren möchten?</p>';
+$string['duplicaterolesure'] = '<p>Möchten Sie wirklich die Rolle \'{$a->name} ({$a->shortname})\' duplizieren?</p>';
 $string['editingrolex'] = 'Rolle \'{$a}\' wird bearbeitet';
 $string['editrole'] = 'Rolle bearbeiten';
 $string['editxrole'] = 'Rolle \'{$a}\' bearbeiten';
@@ -362,6 +363,7 @@ $string['site:backup'] = 'Kurse sichern';
 $string['site:config'] = 'Moodle-Konfiguration anpassen';
 $string['site:doanything'] = 'Darf alles machen';
 $string['site:doclinks'] = 'Links zu den MoodleDocs anzeigen';
+$string['site:forcelanguage'] = 'Kurssprache überschreiben';
 $string['site:import'] = 'Andere Kurse in eigenen Kurs importieren';
 $string['site:manageblocks'] = 'Blöcke auf einer Seite verwalten';
 $string['site:mnetloginfromremote'] = 'Aus anderem Moodle über MNet einloggen';
@@ -381,7 +383,7 @@ $string['tag:editblocks'] = 'Blöcke auf Schlagwortseiten bearbeiten';
 $string['tag:flag'] = 'Schlagworte als unangemessen markieren';
 $string['tag:manage'] = 'Schlagworte verwalten';
 $string['thisnewrole'] = 'Diese neue Rolle';
-$string['thisusersroles'] = 'Rollenzuweisungen für dieses Nutzerkonto';
+$string['thisusersroles'] = 'Rollenzuweisungen';
 $string['unassignarole'] = 'Nicht zugewiesene Rolle {$a}';
 $string['unassignconfirm'] = 'Wollen Sie wirklich Teilnehmer/in "{$a->user}" die Rolle "{$a->role}" entziehen?';
 $string['unassignerror'] = 'Es ist ein Fehler während der Entfernung der Rolle {$a->role} des/r Nutzer/in {$a->user} aufgetreten.';
@@ -410,6 +412,7 @@ $string['user:update'] = 'Nutzerprofile aktualisieren';
 $string['user:viewalldetails'] = 'Alle Nutzerinformationen sehen';
 $string['user:viewdetails'] = 'Nutzerprofile sehen';
 $string['user:viewhiddendetails'] = 'Verborgene Nutzerdetails sehen';
+$string['user:viewlastip'] = 'Letzte Nutzer-IP-Adresse sehen';
 $string['user:viewuseractivitiesreport'] = 'Nutzerberichte sehen';
 $string['user:viewusergrades'] = 'Nutzerbewertungen sehen';
 $string['useshowadvancedtochange'] = '\'Optionale Felder anzeigen\', <br />um Änderungen duchzuführen';

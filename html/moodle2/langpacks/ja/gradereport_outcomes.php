@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_outcomes', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_outcomes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addoutcome'] = 'アウトカムを追加する';
 $string['courseoutcomes'] = 'コースアウトカム';
 $string['coursespecoutcome'] = 'コースアウトカム';
+$string['eventgradereportviewed'] = 'アウトカムレポートが閲覧されました。';
 $string['outcomes:view'] = 'アウトカムレポートを表示する';
 $string['pluginname'] = 'アウトカムレポート';
 $string['usedgradeitem'] = '評定項目数';

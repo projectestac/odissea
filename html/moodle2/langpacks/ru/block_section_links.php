@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_section_links', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_section_links
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,6 @@ $string['numsections1_help'] = 'Если число разделов в курс
 $string['numsections2'] = 'Число разделов 2';
 $string['numsections2_help'] = 'Если число разделов в курсе достигало этого значения, то будут отображаться ссылки не на все разделы. Нумерация будет идти с шагом «Шаг 2».';
 $string['pluginname'] = 'Ссылки на разделы';
-$string['section_links:addinstance'] = 'Добавлять новый блок Ссылки на разделы';
+$string['section_links:addinstance'] = 'Добавлять новый блок «Ссылки на разделы»';
 $string['topics'] = 'Темы';
 $string['weeks'] = 'Недели';

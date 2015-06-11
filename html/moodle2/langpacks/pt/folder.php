@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ Note também que as ações de visualização dos participantes não poderão se
 $string['displayinline'] = 'Na página da disciplina';
 $string['displaypage'] = 'Numa página separada';
 $string['dnduploadmakefolder'] = 'Extrair zip e criar pasta';
+$string['eventfolderupdated'] = 'Pasta atualizada';
 $string['folder:addinstance'] = 'Adicionar nova pasta';
 $string['foldercontent'] = 'Ficheiros e subpastas';
 $string['folder:managefiles'] = 'Gerir ficheiros no recurso pasta';
@@ -48,7 +49,6 @@ A pasta pode ser utilizada para:
 * partilhar ficheiros entre os professores da disciplina (numa pasta oculta à qual os alunos não têm acesso)';
 $string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Pastas';
-$string['neverseen'] = 'Nunca visto';
 $string['noautocompletioninline'] = 'A conclusão automática com base na visualização da atividade não pode ser selecionada em conjunto com a opção "Exibir na página da disciplina"';
 $string['page-mod-folder-view'] = 'Página principal do recurso pasta';
 $string['page-mod-folder-x'] = 'Qualquer pasta';

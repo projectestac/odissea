@@ -54,7 +54,11 @@ class moodle1_mod_rcontent_handler extends moodle1_mod_handler {
             new convert_path('rcontent', '/MOODLE_BACKUP/COURSE/MODULES/MOD/RCONTENT',
                 array(
                     'renamefields' => array(
-                        'bookid' => 'isbn'
+                        'bookid' => 'isbn',
+                        'summary' => 'intro',
+                    ),
+                    'newfields' => array(
+                        'introformat' => 0
                     )
                 )
             ),
@@ -84,16 +88,16 @@ class moodle1_mod_rcontent_handler extends moodle1_mod_handler {
 
         // conditionally migrate to html format in summary
         if ($CFG->texteditors !== 'textarea') {
-            $data['summary']       = text_to_html($data['summary'], false, false, true);
+            $data['intro']       = text_to_html($data['intro'], false, false, true);
         }
 
         // get a fresh new file manager for this instance
         $this->fileman = $this->converter->get_file_manager($contextid, 'mod_rcontent');
 
         // convert course files embedded into the summary
-        $this->fileman->filearea = 'summary';
+        $this->fileman->filearea = 'intro';
         $this->fileman->itemid   = 0;
-        $data['summary'] = moodle1_converter::migrate_referenced_files($data['summary'], $this->fileman);
+        $data['intro'] = moodle1_converter::migrate_referenced_files($data['intro'], $this->fileman);
 
         // check 1.9 version where backup was created
         $backupinfo = $this->converter->get_stash('backup_info');

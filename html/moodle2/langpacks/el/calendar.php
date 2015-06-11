@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['colcalendar'] = 'Ημερολόγιο';
 $string['collastupdated'] = 'Τελευταία ενημέρωση';
 $string['colpoll'] = 'Ενημέρωση';
 $string['commontasks'] = 'Διεργασίες';
-$string['confirmeventdelete'] = 'Θέλετε σίγουρα να διαγράψετε αυτό το γεγονός;';
+$string['confirmeventdelete'] = 'Θέλετε σίγουρα να διαγράψετε αυτό το γεγονός "{$a}";';
 $string['course'] = 'Μάθημα';
 $string['courseevent'] = 'Γεγονός μαθήματος';
 $string['courseevents'] = 'Γεγονότα μαθήματος';
@@ -69,6 +69,9 @@ $string['errorinvalidrepeats'] = 'Προσδιορίστε το πλήθος τ�
 $string['errornodescription'] = 'Η περιγραφή απαιτείται';
 $string['errornoeventname'] = 'Το όνομα απαιτείται';
 $string['errorrequiredurlorfile'] = 'Είτε μια διεύθυνση URL ή ένα αρχείο είναι υποχρεωτικό για να εισαγάγετε ένα ημερολόγιο.';
+$string['eventcalendareventcreated'] = 'Το ημερολογιακό γεγονός δημιουργήθηκε';
+$string['eventcalendareventdeleted'] = 'Το ημερολογιακό γεγονός διαγράφηκε';
+$string['eventcalendareventupdated'] = 'Το ημερολογιακό γεγονός ενημερώθηκε';
 $string['eventdate'] = 'Ημερομηνία';
 $string['eventdescription'] = 'Περιγραφή';
 $string['eventduration'] = 'Διάρκεια';

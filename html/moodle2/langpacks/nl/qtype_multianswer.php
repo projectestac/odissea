@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Ongedefiniëerde opmaak';
 $string['layoutvertical'] = 'Vertikale kolom keuzerondjes';
 $string['nooptionsforsubquestion'] = 'Kan opties voor vraagdeel {$a->sub} (question->id={$a->id}) niet vinden';
 $string['noquestions'] = 'De gatentekst-vraag "<strong>{$a}</strong>" bevat geen vraag';
+$string['pleaseananswerallparts'] = 'Beantwoord alle delen van de vraag.';
 $string['pluginname'] = 'Ingebedde antwoorden (cloze)';
 $string['pluginnameadding'] = 'Ingebedde antwoorden (cloze) toevoegen';
 $string['pluginnameediting'] = 'Ingebedde antwoorden (cloze) bewerken';
@@ -56,7 +57,7 @@ $string['questionsless'] = '{$a} vragen minder dan in de meerkeuzenvraag in de d
 $string['questionsmissing'] = 'De vraagtekst moet minstens één ingebed antwoord hebben.';
 $string['questionsmore'] = '{$a} vragen meer dan in de meerkeuzenvraag in de databank';
 $string['questiontypechanged'] = 'Vraagtype gewijzigd';
-$string['questiontypechangedcomment'] = 'Minstens een vraagtype is gewijzigd.<br >Heb je een vraag toegevoegd, verwijderd of verplaatst?<br >Kijk verder.';
+$string['questiontypechangedcomment'] = 'Minstens een vraagtype is gewijzigd.<br />Heb je een vraag toegevoegd, verwijderd of verplaatst?<br />Kijk verder.';
 $string['questionusedinquiz'] = 'Deze vraag is gebruikt in {$a->nb_of_quiz} test(en), totaal poging(en):{$a->nb_of_attempts}';
 $string['storedqtype'] = 'Opgeslagen vraagtype {$a}';
 $string['subqresponse'] = 'deel {$a->i}: {$a->response}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'my', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,3 +35,5 @@ $string['nocourses'] = '볼 수 있는 강좌 정보가 없습니다.';
 $string['noguest'] = '손님 계정을 사용하는 분들에게는 "내 공부방"이 제공되지 않습니다.';
 $string['pinblocks'] = '내 공부방을 위한 고정 블록의 환경설정';
 $string['pinblocksexplan'] = '여기에서 설정한 블록은 모든 사용자들에게 각자의 공부방 개요 페이지에 보여집니다. (편집은 할수 없음)';
+$string['reseterror'] = '페이지를 리셋하는데 오류가 있었습니다';
+$string['resetpage'] = '페이지를 기본으로 리셋';

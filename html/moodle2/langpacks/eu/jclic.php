@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'jclic', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   jclic
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,6 @@ $string['filetypelocal'] = 'Igotako JClic fitxategia';
 $string['header_jclic'] = 'JClic-en ezarpenak';
 $string['header_score'] = 'Ebaluazio-ezarpenak';
 $string['height'] = 'Altuera';
-$string['hideall'] = 'Laburpenak baino ez erakutsi';
 $string['invalidjclicfile'] = 'Balio ez duen JClic fitxategia ezarri da. Fitxategiak ".jclic.zip" luzapena izan behar du.';
 $string['invalidurl'] = 'Balio ez duen URLa ezarri da. URLak http(s) hasiera izan behar du eta ".jclic.zip" fitxategi baliagarri bat izan behar du.';
 $string['jclic'] = 'JClic';
@@ -89,7 +88,6 @@ $string['preview_jclic'] = 'Aurreikusi JClic jarduera';
 $string['return_results'] = 'Itzuli emaitzetara';
 $string['score'] = 'Puntuazioa';
 $string['sessions'] = 'Saioak';
-$string['showall'] = 'Erakutsi saio guztietako xehetasunak';
 $string['show_my_results'] = 'Erakutsi nire emaitzak';
 $string['size'] = 'Tamaina';
 $string['skin'] = 'Itxura';

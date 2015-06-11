@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filters', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,9 +37,11 @@ $string['categoryrole'] = 'カテゴリロール';
 $string['contains'] = '次の文字を含む';
 $string['content'] = 'コンテンツ';
 $string['contentandheadings'] = 'コンテンツおよびヘッディング';
+$string['coursecategory'] = 'コースカテゴリ';
 $string['courserole'] = 'コースロール';
-$string['courserolelabel'] = '{$a->label} が {$a->categoryname} 内の {$a->coursename} の {$a->rolename}';
+$string['courserolelabel'] = '{$a->label} は {$a->categoryname} 内の {$a->coursename} の {$a->rolename} です。';
 $string['courserolelabelerror'] = '{$a->label} エラー: コース {$a->coursename} がありません。';
+$string['coursevalue'] = 'コース値';
 $string['datelabelisafter'] = '{$a->label} が {$a->after} 以降';
 $string['datelabelisbefore'] = '{$a->label} が {$a->before} 以前';
 $string['datelabelisbetween'] = '{$a->label} が {$a->after} および {$a->before} の間';
@@ -50,9 +52,9 @@ $string['endswith'] = '次の文字で終わる';
 $string['filterallwarning'] = 'ヘッディングおよびコンテンツにフィルタを適用する場合、あなたのサーバに対する負荷を極めて増大させます。「適用先」設定は控えめに使ってください。主な使用は多言語コンテンツフィルタです。';
 $string['filtersettings'] = 'フィルタ設定';
 $string['filtersettingsforin'] = '{$a->context} の {$a->filter} に関するフィルタ設定';
-$string['filtersettings_help'] = '<p>このページでは、あなたはサイトの特定部分においてフィルタを有効または無効にすることができます。また、このページでは管理者が有効にしたフィルタのみ、あなたはアクセスすることができます。</p>
+$string['filtersettings_help'] = 'このページでは、あなたはサイトの特定部分においてフィルタを有効または無効にすることができます。
 
-<p>いくつかのフィルタにおいて、あなたはローカル設定を設定することができます。この場合、フィルタ名の次に「設定」リンクが表示されます。</p>';
+いくつかのフィルタにおいて、あなたはローカル設定を設定することができます。この場合、フィルタ名の次に「設定」リンクが表示されます。';
 $string['filtersettingsin'] = '{$a} のフィルタ設定';
 $string['firstaccess'] = '初回アクセス';
 $string['globalrolelabel'] = '{$a->label} が {$a->value}';
@@ -65,13 +67,16 @@ $string['isempty'] = '空白';
 $string['isequalto'] = '次の文字と等しい';
 $string['isnotdefined'] = '次が定義されていない';
 $string['isnotequalto'] = '次の文字と等しくない';
-$string['neveraccessed'] = '未アクセス';
+$string['limiterfor'] = '{$a} フィールドリミッタ';
+$string['neveraccessed'] = '過去にアクセスなし';
 $string['nevermodified'] = '過去に修正なし';
 $string['newfilter'] = '新しいフィルタ';
 $string['nofiltersenabled'] = 'このサイトで有効にされているフィルタはありません。';
 $string['off'] = 'Off';
 $string['offbutavailable'] = 'Off、しかし利用可';
 $string['on'] = 'On';
+$string['profilefilterfield'] = 'プロファイルフィールド名';
+$string['profilefilterlimiter'] = 'プロファイルフィールドオペレータ';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'すべてのフィルタを削除する';
@@ -81,3 +86,4 @@ $string['startswith'] = '次の文字で始まる';
 $string['tablenosave'] = '上記テーブルの変更は自動的に保存されます。';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = '{$a} 値';

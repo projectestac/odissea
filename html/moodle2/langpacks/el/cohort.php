@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['description'] = 'Περιγραφή';
 $string['idnumber'] = 'ID ομάδας χρηστών';
 $string['memberscount'] = 'Μέγεθος ομάδων χρηστών';
 $string['name'] = 'Όνομα';
+$string['visible'] = 'Ορατό';

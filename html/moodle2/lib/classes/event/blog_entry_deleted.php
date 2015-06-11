@@ -25,7 +25,7 @@ namespace core\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * class blog_entry_deleted
+ * Class blog_entry_deleted
  *
  * Event for when a new blog entry is deleted.
  *
@@ -35,9 +35,9 @@ defined('MOODLE_INTERNAL') || die();
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-class blog_entry_deleted extends \core\event\base {
+class blog_entry_deleted extends base {
 
-    /** @var  \blog_entry A reference to the active blog_entry object. */
+    /** @var \blog_entry A reference to the active blog_entry object. */
     protected $blogentry;
 
     /**
@@ -47,7 +47,7 @@ class blog_entry_deleted extends \core\event\base {
         $this->context = \context_system::instance();
         $this->data['objecttable'] = 'post';
         $this->data['crud'] = 'd';
-        $this->data['level'] = self::LEVEL_PARTICIPATING;
+        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
     }
 
     /**
@@ -60,20 +60,9 @@ class blog_entry_deleted extends \core\event\base {
     }
 
     /**
-     * Set custom data of the event.
-     *
-     * @param \blog_entry $data A reference to the active blog_entry object.
-     */
-    public function set_custom_data(\blog_entry $data) {
-        // Note, this function will be removed in 2.7.
-        $this->set_blog_entry($data);
-    }
-
-    /**
      * Sets blog_entry object to be used by observers.
      *
-     * @since 2.6.2
-     * @param \blog_entry $data A reference to the active blog_entry object.
+     * @param \blog_entry $blogentry A reference to the active blog_entry object.
      */
     public function set_blog_entry(\blog_entry $blogentry) {
         $this->blogentry = $blogentry;
@@ -82,7 +71,7 @@ class blog_entry_deleted extends \core\event\base {
     /**
      * Returns deleted blog entry for event observers.
      *
-     * @since 2.6.2
+     * @throws \coding_exception
      * @return \blog_entry
      */
     public function get_blog_entry() {
@@ -98,7 +87,7 @@ class blog_entry_deleted extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return 'Blog entry id '. $this->objectid. ' was deleted by userid '. $this->userid;
+        return "The user with id '$this->userid' deleted the blog entry with id '$this->objectid'.";
     }
 
     /**
@@ -127,5 +116,19 @@ class blog_entry_deleted extends \core\event\base {
     protected function get_legacy_logdata() {
         return array (SITEID, 'blog', 'delete', 'index.php?userid=' . $this->relateduserid, 'deleted blog entry with entry id# '.
                 $this->objectid);
+    }
+
+    /**
+     * Custom validations.
+     *
+     * @throws \coding_exception
+     * @return void
+     */
+    protected function validate_data() {
+        parent::validate_data();
+
+        if (!isset($this->relateduserid)) {
+            throw new \coding_exception('The \'relateduserid\' must be set.');
+        }
     }
 }

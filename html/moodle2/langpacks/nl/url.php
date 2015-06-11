@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,6 @@ Er zijn een aantal toonmogelijkheden voor de URL, zoals ingebed of openen in een
 
 Merk op dat URL\'s aan elke andere activiteit kan toegevoegd worden via de tekstverwerker.';
 $string['modulenameplural'] = 'URL\'s';
-$string['neverseen'] = 'Nooit gezien';
 $string['page-mod-url-x'] = 'Elke URL module-pagina';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'URL variablen';

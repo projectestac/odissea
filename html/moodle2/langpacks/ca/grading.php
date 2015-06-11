@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'grading', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['gradingmanagementtitle'] = 'Qualificació avançada: {$a->component} ({
 $string['gradingmethod'] = 'Mètode de qualificació';
 $string['gradingmethod_help'] = 'Trieu el mètode de qualificació avançat que s\'hauria d\'emprar per calcular les qualificacions en el context donat.
 
-Per tal d\'inhabilitar la qualificació avançada i tornar al mecanisme de qualificació per defecte, trieu «Qualificació senzilla».';
+Per tal de deshabilitar la qualificació avançada i tornar al mecanisme de qualificació per defecte, trieu \'Qualificació senzilla\'.';
 $string['gradingmethodnone'] = 'Qualificació senzilla';
 $string['gradingmethods'] = 'Mètodes de qualificació';
 $string['manageactionclone'] = 'Crea un formulari de qualificació nou a partir d\'una plantilla';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Удаленные теги курса';
 $string['description'] = 'Описание';
 $string['edittag'] = 'Редактировать этот тег';
 $string['entertags'] = 'Введите теги через запятую';
-$string['errordeleting'] = 'Ошибка удаления тега с идентификатором {$a} - сообщите своему системному администратору';
 $string['errortagfrontpage'] = 'Теги на главной странице сайта не разрешены';
 $string['errorupdatingrecord'] = 'Ошибка обновления записи тегов';
+$string['eventtagadded'] = 'Тег добавлен к объекту';
+$string['eventtagcreated'] = 'Тег создан';
+$string['eventtagdeleted'] = 'Тег удален';
+$string['eventtagflagged'] = 'Тег помечен';
+$string['eventtagremoved'] = 'Тег удален из объекта';
+$string['eventtagunflagged'] = 'С тега снята пометка';
+$string['eventtagupdated'] = 'Тег обновлен';
 $string['flag'] = 'Флаг';
 $string['flagasinappropriate'] = 'Выделить как неуместный';
 $string['helprelatedtags'] = 'Разделенные запятым теги';

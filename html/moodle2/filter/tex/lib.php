@@ -42,6 +42,14 @@ function filter_tex_get_executable($debug=false) {
         return "$CFG->dirroot/filter/tex/mimetex.exe";
     }
 
+    if ($pathmimetex = get_config('filter_tex', 'pathmimetex')) {
+        if (is_executable($pathmimetex)) {
+            return $pathmimetex;
+        } else {
+            print_error('mimetexnotexecutable', 'error');
+        }
+    }
+
     $custom_commandpath = "$CFG->dirroot/filter/tex/mimetex";
     if (file_exists($custom_commandpath)) {
         if (is_executable($custom_commandpath)) {
@@ -55,10 +63,6 @@ function filter_tex_get_executable($debug=false) {
         case "Linux":   return "$CFG->dirroot/filter/tex/mimetex.linux";
         case "Darwin":  return "$CFG->dirroot/filter/tex/mimetex.darwin";
         case "FreeBSD": return "$CFG->dirroot/filter/tex/mimetex.freebsd";
-        //XTEC ************ AFEGIT - Sun OS tex compiled file
-        //2012.06.26  @sarjona
-        case "SunOS": return "$CFG->dirroot/filter/tex/mimetex.sunos";
-	//************ FI
     }
 
     print_error('mimetexisnotexist', 'error');
@@ -115,21 +119,30 @@ function filter_tex_updatedcallback($name) {
     $DB->delete_records('cache_filters', array('filter'=>'tex'));
     $DB->delete_records('cache_filters', array('filter'=>'algebra'));
 
-    if (!isset($CFG->filter_tex_pathlatex)) {
+    $pathlatex = get_config('filter_tex', 'pathlatex');
+    if ($pathlatex === false) {
         // detailed settings not present yet
         return;
     }
 
-    $pathlatex = trim($CFG->filter_tex_pathlatex, " '\"");
-    $pathdvips = trim($CFG->filter_tex_pathdvips, " '\"");
-    $pathconvert = trim($CFG->filter_tex_pathconvert, " '\"");
+    $pathlatex = trim($pathlatex, " '\"");
+    $pathdvips = trim(get_config('filter_tex', 'pathdvips'), " '\"");
+    $pathconvert = trim(get_config('filter_tex', 'pathconvert'), " '\"");
+    $pathdvisvgm = trim(get_config('filter_tex', 'pathdvisvgm'), " '\"");
 
-    if (!(is_file($pathlatex) && is_executable($pathlatex) &&
-          is_file($pathdvips) && is_executable($pathdvips) &&
-          is_file($pathconvert) && is_executable($pathconvert))) {
-        // LaTeX, dvips or convert are not available, and mimetex can only produce GIFs so...
-        set_config('filter_tex_convertformat', 'gif');
+    $supportedformats = array('gif');
+    if ((is_file($pathlatex) && is_executable($pathlatex)) &&
+            (is_file($pathdvips) && is_executable($pathdvips))) {
+        if (is_file($pathconvert) && is_executable($pathconvert)) {
+             $supportedformats[] = 'png';
+        }
+        if (is_file($pathdvisvgm) && is_executable($pathdvisvgm)) {
+             $supportedformats[] = 'svg';
+        }
     }
-}
+    if (!in_array(get_config('filter_tex', 'convertformat'), $supportedformats)) {
+        set_config('convertformat', array_pop($supportedformats), 'filter_tex');
+    }
 
+}
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'my', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,3 +35,5 @@ $string['nocourses'] = '表示するコース情報がありません。';
 $string['noguest'] = 'ゲストユーザは「マイホーム」ページを利用できません。';
 $string['pinblocks'] = 'マイMoodle固定ブロックの設定';
 $string['pinblocksexplan'] = 'あなたがここで設定したブロックは、すべてのMoodleユーザの「マイMoodle」概要ページに表示 (編集不可) されます。';
+$string['reseterror'] = 'あなたのページのリセット中にエラーが発生しました。';
+$string['resetpage'] = 'ページをデフォルトにリセットする';

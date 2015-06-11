@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_flatfile', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filelockedmail'] = 'Το αρχείο κειμένου που χρησιμοποιείτε για εγγραφές βασισμένες σε αρχεία ({$a}) δεν μπορεί να διαγραφεί από την διαδικασία cron. Αυτό συνήθως σημαίνει ότι τα δικαιώματα σε αυτήν είναι λάθος. Παρακαλώ διορθώστε τα δικαιώματα ώστε το Moodle να διαγράψει το αρχείο αυτό, ειδάλλως ίσως να εκτελείται επανειλημμένα.';
+$string['filelockedmail'] = 'Το αρχείο κειμένου που χρησιμοποιείτε για εγγραφές βασισμένες σε αρχεία ({$a}) δεν μπορεί να διαγραφεί από την διαδικασία cron. Αυτό συνήθως σημαίνει ότι τα δικαιώματα σε αυτήν είναι λάθος. Παρακαλώ διορθώστε τα δικαιώματα ώστε το ΠΗΛΕΑΣ να διαγράψει το αρχείο αυτό, ειδάλλως ίσως να εκτελείται επανειλημμένα.';
 $string['filelockedmailsubject'] = 'Σημαντικό σφάλμα: Αρχείο εγγραφής';
 $string['location'] = 'Τοποθεσία αρχείου';
 $string['pluginname'] = 'Επίπεδο αρχείο (CSV)';

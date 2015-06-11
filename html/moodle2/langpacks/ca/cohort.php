@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcohort'] = 'Afegeix nova cohort';
+$string['allcohorts'] = 'Totes les cohorts';
 $string['anycohort'] = 'Qualsevol';
 $string['assign'] = 'Assigna';
 $string['assignto'] = 'Membres de la cohort \'{$a}';
@@ -33,24 +34,22 @@ $string['backtocohorts'] = 'Tornar a les cohorts';
 $string['bulkadd'] = 'Afegir a la cohort';
 $string['bulknocohort'] = 'No s\'han trobat cohorts disponibles';
 $string['cohort'] = 'Cohort';
-$string['cohort:assign'] = 'Assigna membres de la cohort';
-$string['cohort:manage'] = 'Gestiona cohorts';
 $string['cohorts'] = 'Cohorts';
 $string['cohortsin'] = 'Cohorts disponibles: {$a}';
-$string['cohort:view'] = 'Utilitza cohorts i visualitza els membres';
 $string['component'] = 'Font';
 $string['currentusers'] = 'Usuaris corrents';
 $string['currentusersmatching'] = 'S\'estan cercant usuaris corrents';
+$string['defaultcontext'] = 'Context per defecte';
 $string['delcohort'] = 'Suprimeix cohort';
 $string['delconfirm'] = 'De veritat voleu suprimir la cohort  \'{$a}\'?';
 $string['description'] = 'Descripció';
 $string['duplicateidnumber'] = 'Ja existeix una cohort amb el mateix nombre ID';
 $string['editcohort'] = 'Edita la cohort';
-$string['event_cohort_created'] = 'S\'ha creat la cohort';
-$string['event_cohort_deleted'] = 'S\'ha suprimit la cohort';
-$string['event_cohort_member_added'] = 'S\'ha afegit un usuari a la cohort';
-$string['event_cohort_member_removed'] = 'S\'ha tret un usuari de la cohort';
-$string['event_cohort_updated'] = 'S\'ha actualitzat la cohort';
+$string['eventcohortcreated'] = 'S\'ha creat la cohort';
+$string['eventcohortdeleted'] = 'S\'ha suprimit la cohort';
+$string['eventcohortmemberadded'] = 'S\'ha afegit un usuari a la cohort';
+$string['eventcohortmemberremoved'] = 'S\'ha tret un usuari de la cohort';
+$string['eventcohortupdated'] = 'S\'ha actualitzat la cohort';
 $string['external'] = 'Cohort externa';
 $string['idnumber'] = 'ID de la cohort';
 $string['memberscount'] = 'Mida de la cohort';
@@ -58,9 +57,11 @@ $string['name'] = 'Nom';
 $string['nocomponent'] = 'Creat de forma manual';
 $string['potusers'] = 'Usuaris potencials';
 $string['potusersmatching'] = 'S\'estan cercant usuaris potencials';
+$string['preview'] = 'Previsualització';
 $string['removeuserwarning'] = 'Treure usuaris d\'una cohort pot esdevenir una desmatriculació d\'usuaris de múltiples cursos, que inclou l\'eliminació de la configuració de l\'usuari, les qualificacions, la pertinença a grups i una altra informació de l\'usuari dels cursos afectats.';
 $string['search'] = 'Cerca';
 $string['searchcohort'] = 'Cerca cohort';
 $string['selectfromcohort'] = 'Selecciona membres de la cohort';
 $string['unknowncohort'] = 'Cohort desconeguda ({$a})!';
 $string['useradded'] = 'Usuari afegit a la cohort «{$a}»';
+$string['visible'] = 'Visible';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -95,7 +95,7 @@ $string['configgeneralusers'] = 'Standard für die Einbeziehung von Nutzerkonten
 $string['configgeneraluserscompletion'] = 'Standard für die Einbeziehung von Fortschrittsinformationen in eine Sicherung';
 $string['configloglifetime'] = 'Diese Option legt fest, wie weit zurückliegende Logdaten Sie einbeziehen möchten. Logdaten, die älter sind als diese Angabe, werden automatisch gelöscht. Dieser Wert sollte möglichst klein gehalten werden, weil die Logdaten sehr viel Platz brauchen.';
 $string['confirmcancel'] = 'Sicherung abbrechen';
-$string['confirmcancelno'] = 'Warten';
+$string['confirmcancelno'] = 'Fortsetzen';
 $string['confirmcancelquestion'] = 'Soll der Vorgang wirklich abgebrochen werden? Alle eingegebenen Informationen werden gelöscht.';
 $string['confirmcancelyes'] = 'Abbrechen';
 $string['confirmnewcoursecontinue'] = 'Warnung für neuen Kurs';
@@ -118,7 +118,6 @@ $string['errorinvalidformat'] = 'Unbekanntes Sicherungsformat';
 $string['errorinvalidformatinfo'] = 'Die ausgewählte Datei ist keine gültige Moodlesicherung und kann nicht zur Wiederherstellung verwendet werden';
 $string['errorminbackup20version'] = 'Diese Sicherungsdatei wurde mit einer Entwicklungsversion des Moodle-Backups ({$a->backup}) erstellt. Für die Wiederherstellung ist mindestens {$a->min} notwendig.';
 $string['errorrestorefrontpage'] = 'Die Wiederherstellung über die Startseite ist nicht erlaubt';
-$string['errortgznozlib'] = 'Die ausgewählte Datei nutzt das neue Backupformat. Da die zlib PHP-Erweiterung auf diesem System nicht installiert ist, kann die Datei nicht zur Wiederherstellung genutzt werden. Wenden Sie sich an den/die Administrator/in.';
 $string['executionsuccess'] = 'Ihre Sicherung wurde erfolgreich abgeschlossen.';
 $string['filealiasesrestorefailures'] = 'Fehler bei der Alias-Wiederherstellung';
 $string['filealiasesrestorefailures_help'] = 'Aliases sind symbolische Links zu anderen Dateien, auch Dateien in externen Repositories. In einigen Fällen kann Moodle diese Aliases nicht wiederherstellen, z.B. wenn eine Sicherung in einem anderen System wiederhergestellt wird oder die verlinkte Datei nicht existiert.';
@@ -164,6 +163,7 @@ $string['includeditems'] = 'Einbezogene Elemente:';
 $string['includefilereferences'] = 'Dateiverweise zu externen Inhalten';
 $string['includesection'] = 'Abschnitt {$a}';
 $string['includeuserinfo'] = 'Nutzerdaten';
+$string['jumptofinalstep'] = 'Einstellungen überspringen';
 $string['locked'] = 'Gesperrt';
 $string['lockedbyconfig'] = 'Diese Einstellung wurde durch eine standardmäßige Sicherungseinstellung gesperrt';
 $string['lockedbyhierarchy'] = 'Gesperrt durch Abhängigkeiten';
@@ -255,10 +255,11 @@ $string['skiphiddenhelp'] = 'Wählen Sie, ob verborgene Kurse gesichert werden s
 $string['skipmodifdays'] = 'Unveränderte Kurse überspringen';
 $string['skipmodifdayshelp'] = 'Wählen Sie, ob Kurse, die sich x Tage nicht verändert haben, gesichert werden sollen oder nicht.';
 $string['skipmodifprev'] = 'Seit der letzten Sicherung unveränderte Kurse überspringen';
-$string['skipmodifprevhelp'] = 'Wählen Sie, ob Kurse, die sich seit der letzten Sicherung nicht geändert haben, gesichert werden sollen oder nicht.';
+$string['skipmodifprevhelp'] = 'Wählen Sie, ob Kurse, die sich seit der letzten Sicherung nicht geändert haben, gesichert oder übersprungen werden sollen. Dazu ist das Logging erforderlich.';
 $string['storagecourseandexternal'] = 'Dateibereich für Kurssicherungen und angegebenes Verzeichnis';
 $string['storagecourseonly'] = 'Dateibereich für Kurssicherungen';
 $string['storageexternalonly'] = 'Angegebenes Verzeichnis für automatisierte Sicherungen';
+$string['timetaken'] = 'Verbrauchte Zeit';
 $string['title'] = 'Titel';
 $string['totalcategorysearchresults'] = 'Kategorien gesamt: {$a}';
 $string['totalcoursesearchresults'] = 'Kurse gesamt: {$a}';

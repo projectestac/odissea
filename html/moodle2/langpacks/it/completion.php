@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -163,6 +163,7 @@ $string['restoringcompletiondata'] = 'Ripristino dello stato di completamento';
 $string['roleaggregation'] = 'Aggregazione';
 $string['roleaggregation_all'] = 'TUTTI i ruoli selezionati devono approvare il completamento del corso';
 $string['roleaggregation_any'] = 'ALMENO UNO dei ruoli selezionati deve approvare il completamento del corso';
+$string['roleidnotfound'] = 'Il ruolo con ID {$a} non è stato trovato';
 $string['saved'] = 'Salvato';
 $string['seedetails'] = 'Visualizza dettagli';
 $string['self'] = 'Auto';

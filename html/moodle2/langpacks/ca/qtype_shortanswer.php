@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['correctansweris'] = 'La resposta correcta és: {$a}';
 $string['correctanswers'] = 'Respostes correctes';
 $string['filloutoneanswer'] = 'Heu de proporcionar almenys una possible resposta. Les respostes en blanc no s\'utilitzaran. Podeu utilitzar \'*\' com un comodí que val per qualsevol caràcter. La primera resposta coincident s\'utilitzarà per determinar la puntuació i la retroacció.';
 $string['notenoughanswers'] = 'Aquest tipus de pregunta necessita almenys {$a} respostes.';
-$string['pleaseenterananswer'] = 'Si us plau, escriviu una resposta';
+$string['pleaseenterananswer'] = 'Introduïu una resposta.';
 $string['pluginname'] = 'Resposta breu';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de resposta breu';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de resposta breu';

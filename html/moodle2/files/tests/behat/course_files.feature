@@ -6,14 +6,13 @@ Feature: Course files
 
   @javascript
   Scenario: Add legacy files
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category | legacyfiles |
       | Course 1 | C1 | 0 | 2 |
-    And I log in as "admin"
-    And I set the following administration settings values:
-      | Legacy course files in new courses | 1 |
-      | Allow adding to legacy course files | 1 |
-    When I follow "Home"
+    And the following config values are set as admin:
+      | legacyfilesinnewcourses | 1 |
+      | legacyfilesaddallowed   | 1 |
+    When I log in as "admin"
     And I follow "Course 1"
     Then I should see "Legacy course files"
     And I follow "Legacy course files"
@@ -23,14 +22,13 @@ Feature: Course files
 
   @javascript
   Scenario: Add legacy file disabled
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category | legacyfiles |
       | Course 1 | C1 | 0 | 2 |
-    And I log in as "admin"
-    And I set the following administration settings values:
-      | Legacy course files in new courses | 1 |
-      | Allow adding to legacy course files | 0 |
-    When I follow "Home"
+    And the following config values are set as admin:
+      | legacyfilesinnewcourses | 1 |
+      | legacyfilesaddallowed   | 0 |
+    When I log in as "admin"
     And I follow "Course 1"
     Then I should see "Legacy course files"
     And I follow "Legacy course files"

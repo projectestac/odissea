@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,6 +128,18 @@ $string['essaybox'] = 'Freitextfeld';
 $string['essaybox_help'] = 'Diese Frage wird ein Textbox mit x Spalten (oder der entsprechenden Breite) und y Reihen (Anzahl der Textzeilen) anzeigen.
 
 Wenn Sie beides auf dem Standardwert 0 belassen (oder es auf 0 setzen) wird der Moodle Html-Editor mit Standardhöhe und -breite  angezeigt (Werte aus dem Kurs- oder Nutzerprofil).';
+$string['event_all_responses_deleted'] = 'Alle Antworten gelöscht';
+$string['event_all_responses_saved_as_text'] = 'Alle Antworten als Text gespeichert';
+$string['event_all_responses_viewed'] = 'Bericht aller Antworten angesehen';
+$string['event_individual_responses_viewed'] = 'Bericht aller individuellen Antworten angesehen';
+$string['event_non_respondents_viewed'] = 'Nicht Antwortende angesehen';
+$string['event_previewed'] = 'Befragungsvorschau angesehen';
+$string['event_question_created'] = 'Frage erstellt';
+$string['event_question_deleted'] = 'Frage gelöscht';
+$string['event_response_deleted'] = 'Individuelle Antworten gelöscht';
+$string['event_resumed'] = 'Versuch aufgenommen';
+$string['event_saved'] = 'Antworten gespeichert';
+$string['event_submitted'] = 'Antworten abgesendet';
 $string['feedback'] = 'Feedback';
 $string['feedbackaddmorefeedbacks'] = 'Füge {keine} weiteren Feedback Felder hinzu';
 $string['feedbackbysection'] = 'Abschnittsfeedback';

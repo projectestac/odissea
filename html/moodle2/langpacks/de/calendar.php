@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['colcalendar'] = 'Kalender';
 $string['collastupdated'] = 'Aktualisiert';
 $string['colpoll'] = 'Update';
 $string['commontasks'] = 'Optionen';
-$string['confirmeventdelete'] = 'Möchten Sie diesen Termin wirklich löschen?';
+$string['confirmeventdelete'] = 'Möchten Sie den Termin \'{$a}\' wirklich löschen?';
 $string['course'] = 'Kurs';
 $string['courseevent'] = 'Kurstermin';
 $string['courseevents'] = 'Kurstermine';
@@ -71,6 +71,12 @@ $string['errorinvalidrepeats'] = 'Geben Sie die Anzahl der Termine an (1...99)';
 $string['errornodescription'] = 'Beschreibung notwendig';
 $string['errornoeventname'] = 'Eine Bezeichnung für den Termin ist erforderlich';
 $string['errorrequiredurlorfile'] = 'Für den Kalenderimport ist eine URL oder eine Datei notwendig.';
+$string['errorrrule'] = 'Die Regel scheint falsch zu sein.';
+$string['errorrruleday'] = 'Die Regel hat einen ungültigen Parameter \'Tag\'.';
+$string['errorrrulefreq'] = 'Die Regel hat einen ungültigen Parameter \'Wiederholung\'.';
+$string['eventcalendareventcreated'] = 'Kalendereintrag angelegt';
+$string['eventcalendareventdeleted'] = 'Kalendereintrag gelöscht';
+$string['eventcalendareventupdated'] = 'Kalendereintrag aktualisiert';
 $string['eventdate'] = 'Datum';
 $string['eventdescription'] = 'Beschreibung';
 $string['eventduration'] = 'Dauer';
@@ -200,7 +206,7 @@ $string['tt_showuser'] = 'Teilnehmertermine sind verborgen (klicken Sie hier, um
 $string['tue'] = 'Di';
 $string['tuesday'] = 'Dienstag';
 $string['typecourse'] = 'Kurstermin';
-$string['typegroup'] = 'Termin meiner Gruppen';
+$string['typegroup'] = 'Gruppentermin';
 $string['typesite'] = 'Allgemeiner Termin';
 $string['typeuser'] = 'Persönlicher Termin';
 $string['upcomingevents'] = 'Aktuelle Termine';

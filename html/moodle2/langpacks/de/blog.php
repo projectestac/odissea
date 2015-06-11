@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'blog', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addnewentry'] = 'Neuer Beitrag';
-$string['addnewexternalblog'] = 'Externen Blog registrieren ...';
+$string['addnewexternalblog'] = 'Externen Blog registrieren';
 $string['assocdescription'] = 'Wenn Sie zu einen Kurs und/oder über eine Aktivität schreiben, dann wählen Sie dies bitte hier aus.';
 $string['associated'] = 'Verbunden: {$a}';
 $string['associatewithcourse'] = 'Blog zum Kurs {$a->coursename}';
@@ -79,14 +79,16 @@ $string['donothaveblog'] = 'Sie haben zur Zeit keinen persönlichen Blog.';
 $string['editentry'] = 'Blogeintrag bearbeiten';
 $string['editexternalblog'] = 'Externen Blog bearbeiten';
 $string['emptybody'] = 'Der Eingabetext darf nicht leer sein';
-$string['emptyrssfeed'] = 'Die eingegebene URL zeigt nicht auf einen gültigen RSS Feed';
+$string['emptyrssfeed'] = 'Die URL zeigt nicht auf einen gültigen RSS Feed';
 $string['emptytitle'] = 'Der Titel darf nicht leer sein';
-$string['emptyurl'] = 'Sie müssen eine URL zu einem gültigen RSS Feed angeben';
+$string['emptyurl'] = 'Sie müssen eine URL zu einem RSS Feed angeben';
 $string['entrybody'] = 'Eingabetext';
 $string['entrybodyonlydesc'] = 'Beschreibung';
 $string['entryerrornotyours'] = 'Dies ist kein eigener Beitrag';
 $string['entrysaved'] = 'Beitrag wurde gespeichert';
 $string['entrytitle'] = 'Titel';
+$string['eventblogassociationadded'] = 'Blogverknüpfung angelegt';
+$string['eventblogentriesviewed'] = 'Blogeinträge angezeigt';
 $string['evententryadded'] = 'Blogeintrag hinzugefügt';
 $string['evententrydeleted'] = 'Blogeintrag gelöscht';
 $string['evententryupdated'] = 'Beitrag aktualisiert';

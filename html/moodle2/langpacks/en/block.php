@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,7 +52,7 @@ $string['hidepanel'] = 'Hide panel';
 $string['moveblock'] = 'Move {$a} block';
 $string['moveblockafter'] = 'Move block to after {$a} block';
 $string['moveblockbefore'] = 'Move block to before {$a} block';
-$string['moveblockhere'] = 'Move block here';
+$string['moveblockinregion'] = 'Move block to {$a} region';
 $string['movingthisblockcancel'] = 'Moving this block ({$a})';
 $string['onthispage'] = 'On this page';
 $string['pagetypes'] = 'Page types';

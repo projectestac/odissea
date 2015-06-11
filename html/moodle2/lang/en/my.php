@@ -1,4 +1,4 @@
-<?PHP // $Id$ 
+<?php // $Id$
       // my.php - created with Moodle 1.7 beta + (2006101003)
 
 
@@ -12,3 +12,5 @@ $string['defaultprofilepage'] = 'Default profile page';
 $string['addpage'] = 'Add page';
 $string['delpage'] = 'Delete page';
 $string['managepages'] = 'Manage pages';
+$string['resetpage'] = 'Reset page to default';
+$string['reseterror'] = 'There was an error resetting your page';

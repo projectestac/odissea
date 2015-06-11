@@ -75,7 +75,7 @@ class behat_mod_forum extends behat_base {
             new Given('I follow "' . $this->escape($forumname) . '"'),
             new Given('I follow "' . $this->escape($postsubject) . '"'),
             new Given('I follow "' . get_string('reply', 'forum') . '"'),
-            new Given('I fill the moodle form with:', $table),
+            new Given('I set the following fields to these values:', $table),
             new Given('I press "' . get_string('posttoforum', 'forum') . '"'),
             new Given('I wait to be redirected')
         );
@@ -99,7 +99,7 @@ class behat_mod_forum extends behat_base {
         return array(
             new Given('I follow "' . $this->escape($forumname) . '"'),
             new Given('I press "' . $buttonstr . '"'),
-            new Given('I fill the moodle form with:', $table),
+            new Given('I set the following fields to these values:', $table),
             new Given('I press "' . get_string('posttoforum', 'forum') . '"'),
             new Given('I wait to be redirected')
         );

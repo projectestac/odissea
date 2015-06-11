@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,7 @@ $string['cannotretrieveqcat'] = '无法获取题目类别';
 $string['cannotunhidequestion'] = '取消题目隐藏失败。';
 $string['cannotunzip'] = '不能解压缩zip文件。';
 $string['cannotwriteto'] = '无法把导出的题目写入{$a}';
+$string['categories'] = '类别';
 $string['category'] = '类别';
 $string['categorycurrent'] = '当前类别';
 $string['categorycurrentuse'] = '使用该类别';
@@ -145,6 +146,7 @@ $string['errorduringregrade'] = '无法对题目{$a->qid}重新评分，切换�
 $string['errorfilecannotbecopied'] = '错误：无法复制文件{$a}。';
 $string['errorfilecannotbemoved'] = '错误：无法移动文件 {$a}。';
 $string['errorfileschanged'] = '错误：链接到试题的文件在表单显示后被更改了。';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = '题目（{$a}）在此测验中出现了一次以上，且每次的权重不同。统计报告目前不支持这种情况，所以此题的统计结果可能不可靠。';
 $string['errormanualgradeoutofrange'] = '试题 {$a->name} 的成绩 {$a->grade} 不在 0 和 {$a->maxgrade} 之间，得分和评价未保存。';
 $string['errormovingquestions'] = '移动ID为{$a}的题目时出错。';
 $string['errorpostprocess'] = '后处理过程中出错！';
@@ -154,6 +156,7 @@ $string['errorprocessingresponses'] = '处理您的回答（{$a}）时发生错�
 $string['errorsavingcomment'] = '向数据库保存试题 {$a->name} 的评价时出错';
 $string['errorsavingflags'] = '保存标记状态出错。';
 $string['errorupdatingattempt'] = '更新数据库中的试卷 {$a->id} 时出错。';
+$string['export'] = '导出';
 $string['exportcategory'] = '导出类别';
 $string['exportcategory_help'] = '此设置决定导出的题目来自哪个类别。
 
@@ -192,6 +195,7 @@ $string['howquestionsbehave_help'] = '学生可以和此测验中的题目有多
 它们大概是通常情况下用的最多的两种模式。
 注：CBD是Certainty Based Marking的简称。';
 $string['ignorebroken'] = '忽略坏链接';
+$string['import'] = '导入';
 $string['importcategory'] = '导入类别';
 $string['importcategory_help'] = '此设置决定导入的题目将被归入哪个类别。
 
@@ -343,6 +347,7 @@ $string['reviewresponse'] = '检查答案';
 $string['rightanswer'] = '标准答案';
 $string['rightanswer_help'] = '一个自动生成的正确答案的有限总结。也许您关闭这个选项，在题目的通用反馈里解释答案的效果更好。';
 $string['save'] = '保存';
+$string['savechangesandcontinueediting'] = '保存更改并继续编辑';
 $string['saved'] = '保存：{$a}';
 $string['saveflags'] = '保存这些标记的状态';
 $string['selectacategory'] = '选择一个类别：';
@@ -374,7 +379,7 @@ $string['technicalinfo'] = '技术信息';
 $string['technicalinfomaxfraction'] = '最大的一部分:{$a}';
 $string['technicalinfominfraction'] = '最小分数：{$a}';
 $string['technicalinfoquestionsummary'] = '问题总结：{$a}';
-$string['technicalinforesponsesummary'] = '响应的概述';
+$string['technicalinforesponsesummary'] = '最大的一部分:{$a}';
 $string['technicalinforightsummary'] = '正确答案总结：{$a}';
 $string['technicalinfostate'] = '题目状态：{$a}';
 $string['technicalinfovariant'] = '问题变式:{$a}';
@@ -390,11 +395,13 @@ $string['unknownquestioncatregory'] = '未知题目类别：{$a}。';
 $string['unknownquestiontype'] = '未知题目类型：{$a}。';
 $string['unknowntolerance'] = '未知容错类型 {$a}';
 $string['unpublished'] = '不共享';
+$string['unusedcategorydeleted'] = '此类别已经被删除，因为删除课程后，它下面的题目都不再使用。';
 $string['updatedisplayoptions'] = '更新显示选项';
 $string['upgradeproblemcategoryloop'] = '在升级题目类别时遇到问题。题目类别树中存在循环引用，受影响的类别ID有 {$a}。';
 $string['upgradeproblemcouldnotupdatecategory'] = '无法升级题目类别 {$a->name} ({$a->id})';
 $string['upgradeproblemunknowncategory'] = '在升级题目类别时遇到问题。类别 {$a->id} 有父类别 {$a->parent}，但该类别已经不存在了。已通过修改父类别纠正了错误。';
 $string['whethercorrect'] = '是否正确';
+$string['whichtries'] = '其尝试';
 $string['withselected'] = '对所选题目';
 $string['wrongprefix'] = '错误格式化的名前缀 {$a}';
 $string['xoutofmax'] = '{$a->mark}（满分{$a->max}）';

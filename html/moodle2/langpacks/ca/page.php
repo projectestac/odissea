@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['legacyfilesdone'] = 'Acabat';
 $string['modulename'] = 'Pàgina';
 $string['modulename_help'] = 'Una pàgina que habilita una pàgina web per ser vista i editada dins del curs.';
 $string['modulenameplural'] = 'Pàgines';
-$string['neverseen'] = 'Mai vist';
 $string['optionsheader'] = 'Opcions';
 $string['page:addinstance'] = 'Afegeix un recurs de pàgina nou';
 $string['page-mod-page-x'] = 'Qualsevol pàgina del mòdul de pàgina';
@@ -49,5 +48,7 @@ $string['popupheight'] = 'Altura de la finestra emergent (en píxels)';
 $string['popupheightexplain'] = 'Especifica l\'altura per defecte de les finestres emergents.';
 $string['popupwidth'] = 'Amplada de la finestra emergent (en píxels)';
 $string['popupwidthexplain'] = 'Especifica l\'amplaria per defecte de les finestres emergents.';
+$string['printheading'] = 'Mostra el nom de la pàgina';
+$string['printheadingexplain'] = 'Voleu mostrar el nom de la pàgina dalt del contingut ?';
 $string['printintro'] = 'Mostra la descripció de la pàgina';
 $string['printintroexplain'] = 'Mostra la descripció de la pàgina en la part de dalt del contingut ?';

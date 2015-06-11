@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,13 +51,12 @@ $string['hidepanel'] = 'Göm panel';
 $string['moveblock'] = 'Flytta {$a} block';
 $string['moveblockafter'] = 'Flytta blocket efter {$a} blocket';
 $string['moveblockbefore'] = 'Flytta blocket framför {$a} blocket';
-$string['moveblockhere'] = 'Flytta block hit';
 $string['movingthisblockcancel'] = 'Flyttar det här blocket ({$a})';
 $string['onthispage'] = 'På den här sidan';
 $string['pagetypes'] = 'Typer av sidor';
 $string['pagetypewarning'] = 'Den tidigare angivna sidtypen är inte längre valbar. Välj den lämpligaste sidtypen nedan.';
 $string['region'] = 'Region';
-$string['restrictpagetypes'] = 'Visa på sidor av typern';
+$string['restrictpagetypes'] = 'Begränsa till den här typen av sidor';
 $string['showblock'] = 'Visa {$a} block';
 $string['showoncontextandsubs'] = 'Visa på \'{$a}\' och alla sidor inom den';
 $string['showoncontextonly'] = 'Visa bara på \'{$a}\' ';

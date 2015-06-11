@@ -106,7 +106,12 @@ class enrol_ldap_plugin extends enrol_plugin {
      * @param object $instance
      * @return bool
      */
-    public function instance_deleteable($instance) {
+    public function can_delete_instance($instance) {
+        $context = context_course::instance($instance->courseid);
+        if (!has_capability('enrol/ldap:manage', $context)) {
+            return false;
+        }
+
         if (!enrol_is_enabled('ldap')) {
             return true;
         }
@@ -117,6 +122,17 @@ class enrol_ldap_plugin extends enrol_plugin {
 
         // TODO: connect to external system and make sure no users are to be enrolled in this course
         return false;
+    }
+
+    /**
+     * Is it possible to hide/show enrol instance via standard UI?
+     *
+     * @param stdClass $instance
+     * @return bool
+     */
+    public function can_hide_show_instance($instance) {
+        $context = context_course::instance($instance->courseid);
+        return has_capability('enrol/ldap:config', $context);
     }
 
     /**
@@ -151,7 +167,7 @@ class enrol_ldap_plugin extends enrol_plugin {
         }
 
         // We may need a lot of memory here
-        @set_time_limit(0);
+        core_php_time_limit::raise();
         raise_memory_limit(MEMORY_HUGE);
 
         // Get enrolments for each type of role.
@@ -315,7 +331,7 @@ class enrol_ldap_plugin extends enrol_plugin {
         $ldap_pagedresults = ldap_paged_results_supported($this->get_config('ldap_version'));
 
         // we may need a lot of memory here
-        @set_time_limit(0);
+        core_php_time_limit::raise();
         raise_memory_limit(MEMORY_HUGE);
 
         $oneidnumber = null;
@@ -1160,4 +1176,3 @@ class enrol_ldap_plugin extends enrol_plugin {
         }
     }
 }
-

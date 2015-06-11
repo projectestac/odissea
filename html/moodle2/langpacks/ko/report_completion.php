@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_completion', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['completiondate'] = '이수 날짜';
 $string['completion:view'] = '강좌이수완료 보고서 보기';
+$string['eventreportviewed'] = '구성요소 보고서 봄';
+$string['eventuserreportviewed'] = '완료 사용자 보고서 봄';
 $string['id'] = '아이디';
 $string['name'] = '이름';
 $string['page-report-completion-index'] = '강좌이수완료 보고서';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_title', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blockquote'] = 'Aanhalen';
-$string['h3'] = 'Kop 1';
-$string['h4'] = 'Kop 2';
-$string['h5'] = 'Kop 3';
-$string['p'] = 'Platte tekst';
+$string['h3'] = 'Kop (groot)';
+$string['h4'] = 'Kop (midden)';
+$string['h5'] = 'Kop (klein)';
+$string['p'] = 'Alinea';
 $string['pluginname'] = 'Alineastijl';
 $string['pre'] = 'Voor opgemaakt';
 $string['title'] = 'Alineastijlen';

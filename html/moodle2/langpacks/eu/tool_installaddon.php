@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_installaddon', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Onarpena';
-$string['installaddon'] = 'Instalatu gehigarria!';
-$string['installaddons'] = 'Instalatu gehigarriak!';
+$string['installaddon'] = 'Instalatu plugina!';
+$string['installaddons'] = 'Instalatu pluginak!';
+$string['installfromrepo'] = 'Instalatu pluginak Moodle-ren plugin-bilgunetik';
+$string['installfromzip'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromzipfile'] = 'ZIP paketea';
 $string['installfromziprootdir'] = 'Berrizendatu root karpeta';
+$string['installfromzipsubmit'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromziptype'] = 'Plugin-mota';
+$string['pluginname'] = 'Plugin-instalatzailea';
 $string['validationmsg_componentmatch'] = 'Osagaiaren izen osoa';
 $string['validationmsglevel_error'] = 'Errorea';
 $string['validationmsglevel_info'] = 'Ados';

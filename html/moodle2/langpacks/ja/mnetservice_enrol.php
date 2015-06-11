@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availablecourseson'] = '{$a} の利用可能なコース';
 $string['availablecoursesonnone'] = 'リモートホスト「 <a href="{$a->hosturl}">{$a->hostname}</a> 」は私たちのユーザにコースを提供していません。';
 $string['clientname'] = 'リモート登録クライアント';
-$string['clientname_help'] = 'ユーザ登録および登録抹消が許可されている、あなたのMoodleに対して、Moodleネットワーク登録プラグイン経由でユーザを登録および登録抹消します。';
+$string['clientname_help'] = 'ユーザ登録および登録解除が許可されている、あなたのMoodleに対して、Moodleネットワーク登録プラグイン経由でユーザを登録および登録解除します。';
 $string['editenrolments'] = '登録を編集する';
 $string['hostappname'] = 'アプリケーション';
 $string['hostname'] = 'ホスト名';

@@ -1,4 +1,4 @@
-<?PHP
+<?php
 ///////////////////////////////////////////////////////////////////////////
 //                                                                       //
 // Moodle configuration file                                             //
@@ -242,7 +242,15 @@ $CFG->admin = 'admin';
 //      $CFG->session_memcached_save_path = '127.0.0.1:11211';
 //      $CFG->session_memcached_prefix = 'memc.sess.key.';
 //      $CFG->session_memcached_acquire_lock_timeout = 120;
-//      $CFG->session_memcached_lock_expire = 7200;       // Ignored if memcached extension <= 2.1.0
+//      $CFG->session_memcached_lock_expire = 7200;       // Ignored if PECL memcached is below version 2.2.0
+//
+//   Memcache session handler (requires memcached server and memcache extension):
+//      $CFG->session_handler_class = '\core\session\memcache';
+//      $CFG->session_memcache_save_path = '127.0.0.1:11211';
+//      $CFG->session_memcache_acquire_lock_timeout = 120;
+//      ** NOTE: Memcache extension has less features than memcached and may be
+//         less reliable. Use memcached where possible or if you encounter
+//         session problems. **
 //
 // Please be aware that when selecting either Memcached or Memcache for sessions that it is advised to use a dedicated
 // memcache server. The memcache and memcached extensions do not provide isolated environments for individual uses.
@@ -332,15 +340,6 @@ $CFG->admin = 'admin';
 //   then all non-teachers will always see these for every person.
 //       $CFG->forcefirstname = 'Bruce';
 //       $CFG->forcelastname  = 'Simpson';
-//
-// The following setting will turn SQL Error logging on. This will output an
-// entry in apache error log indicating the position of the error and the statement
-// called. This option will action disregarding error_reporting setting.
-//     $CFG->dblogerror = true;
-//
-// The following setting will log every database query to a table called adodb_logsql.
-// Use this setting on a development server only, the table grows quickly!
-//     $CFG->logsql = true;
 //
 // The following setting will turn on username logging into Apache log. For full details regarding setting
 // up of this function please refer to the install section of the document.
@@ -453,6 +452,11 @@ $CFG->admin = 'admin';
 //
 //      $CFG->disableonclickaddoninstall = true;
 //
+// Use the following flag to disable modifications to scheduled tasks
+// whilst still showing the state of tasks.
+//
+//      $CFG->preventscheduledtaskchanges = true;
+//
 // As of version 2.4 Moodle serves icons as SVG images if the users browser appears
 // to support SVG.
 // For those wanting to control the serving of SVG images the following setting can
@@ -478,6 +482,31 @@ $CFG->admin = 'admin';
 // As of version 2.6 Moodle supports admin to set support user. If not set, all mails
 // will be sent to supportemail.
 //      $CFG->supportuserid = -20;
+//
+// Moodle 2.7 introduces a locking api for critical tasks (e.g. cron).
+// The default locking system to use is DB locking for MySQL and Postgres, and File
+// locking for Oracle and SQLServer. If $CFG->preventfilelocking is set, then the default
+// will always be DB locking. It can be manually set to one of the lock
+// factory classes listed below, or one of your own custom classes implementing the
+// \core\lock\lock_factory interface.
+//
+//      $CFG->lock_factory = "auto";
+//
+// The list of available lock factories is:
+//
+// "\\core\\lock\\file_lock_factory" - File locking
+//      Uses lock files stored by default in the dataroot. Whether this
+//      works on clusters depends on the file system used for the dataroot.
+//
+// "\\core\\lock\\db_record_lock_factory" - DB locking based on table rows.
+//
+// "\\core\\lock\\postgres_lock_factory" - DB locking based on postgres advisory locks.
+//
+// Settings used by the lock factories
+//
+// Location for lock files used by the File locking factory. This must exist
+// on a shared file system that supports locking.
+//      $CFG->lock_file_root = $CFG->dataroot . '/lock';
 //
 //=========================================================================
 // 7. SETTINGS FOR DEVELOPMENT SERVERS - not intended for production use!!!
@@ -571,11 +600,8 @@ $CFG->admin = 'admin';
 //=========================================================================
 // 10. SECRET PASSWORD SALT
 //=========================================================================
-// A single site-wide password salt is no longer required *unless* you are
-// upgrading an older version of Moodle (prior to 2.5), or if you are using
-// a PHP version below 5.3.7. If upgrading, keep any values from your old
-// config.php file. If you are using PHP < 5.3.7 set to a long random string
-// below:
+// A site-wide password salt is no longer used in new installations.
+// If upgrading from 2.6 or older, keep all existing salts in config.php file.
 //
 // $CFG->passwordsaltmain = 'a_very_long_random_string_of_characters#@6&*1';
 //
@@ -593,21 +619,11 @@ $CFG->admin = 'admin';
 //=========================================================================
 // 11. BEHAT SUPPORT
 //=========================================================================
-// Behat needs a separate data directory and unique database prefix:
+// Behat test site needs a unique www root, data directory and database prefix:
 //
+// $CFG->behat_wwwroot = 'http://127.0.0.1/moodle';
 // $CFG->behat_prefix = 'bht_';
 // $CFG->behat_dataroot = '/home/example/bht_moodledata';
-//
-// To set a seperate wwwroot for Behat to use, use $CFG->behat_wwwroot; this is set automatically
-// to http://localhost:8000 as it is the proposed PHP built-in server URL. Instead of that you can,
-// for example, use an alias, add a host to /etc/hosts or add a new virtual host having a URL
-// poiting to your production site and another one poiting to your test site. Note that you need
-// to ensure that this URL is not accessible from the www as the behat test site uses "sugar"
-// credentials (admin/admin) and can be easily hackable.
-//
-// Example:
-//   $CFG->behat_wwwroot = 'http://192.168.1.250:8000';
-//   $CFG->behat_wwwroot = 'http://localhost/moodlesitetesting';
 //
 // You can override default Moodle configuration for Behat and add your own
 // params; here you can add more profiles, use different Mink drivers than Selenium...
@@ -653,16 +669,6 @@ $CFG->admin = 'admin';
 //       )
 //   );
 //
-// You can completely switch to test environment when "php admin/tool/behat/cli/util --enable",
-// this means that all the site accesses will be routed to the test environment instead of
-// the regular one, so NEVER USE THIS SETTING IN PRODUCTION SITES. This setting is useful
-// when working with cloud CI (continous integration) servers which requires public sites to run the
-// tests, or in testing/development installations when you are developing in a pre-PHP 5.4 server.
-// Note that with this setting enabled $CFG->behat_wwwroot is ignored and $CFG->behat_wwwroot
-// value will be the regular $CFG->wwwroot value.
-// Example:
-//   $CFG->behat_switchcompletely = true;
-//
 // You can force the browser session (not user's sessions) to restart after N seconds. This could
 // be useful if you are using a cloud-based service with time restrictions in the browser side.
 // Setting this value the browser session that Behat is using will be restarted. Set the time in
@@ -674,7 +680,17 @@ $CFG->admin = 'admin';
 // (the basic and behat_* ones) to avoid problems with production environments. This setting can be
 // used to expand the default white list with an array of extra settings.
 // Example:
-//   $CFG->behat_extraallowedsettings = array('logsql', 'dblogerror');
+//   $CFG->behat_extraallowedsettings = array('somecoresetting', ...);
+//
+// You should explicitly allow the usage of the deprecated behat steps, otherwise an exception will
+// be thrown when using them. The setting is disabled by default.
+// Example:
+//   $CFG->behat_usedeprecated = true;
+//
+// Including feature files from directories outside the dirroot is possible if required. The setting
+// requires that the running user has executable permissions on all parent directories in the paths.
+// Example:
+//   $CFG->behat_additionalfeatures = array('/home/developer/code/wipfeatures');
 //
 // You can make behat save several dumps when a scenario fails. The dumps currently saved are:
 // * a dump of the DOM in it's state at the time of failure; and
@@ -695,6 +711,40 @@ $CFG->admin = 'admin';
 // generated by this tool, but only in case you want to generate a JMeter test. The value should be a string.
 // Example:
 //   $CFG->tool_generator_users_password = 'examplepassword';
+//
+//=========================================================================
+// 13. SYSTEM PATHS (You need to set following, depending on your system)
+//=========================================================================
+// Ghostscript path.
+// On most Linux installs, this can be left as '/usr/bin/gs'.
+// On Windows it will be something like 'c:\gs\bin\gswin32c.exe' (make sure
+// there are no spaces in the path - if necessary copy the files 'gswin32c.exe'
+// and 'gsdll32.dll' to a new folder without a space in the path)
+//      $CFG->pathtogs = '/usr/bin/gs';
+//
+// Clam AV path.
+// Probably something like /usr/bin/clamscan or /usr/bin/clamdscan. You need
+// this in order for clam AV to run.
+//      $CFG->pathtoclam = '';
+//
+// Path to du.
+// Probably something like /usr/bin/du. If you enter this, pages that display
+// directory contents will run much faster for directories with a lot of files.
+//      $CFG->pathtodu = '';
+//
+// Path to aspell.
+// To use spell-checking within the editor, you MUST have aspell 0.50 or later
+// installed on your server, and you must specify the correct path to access the
+// aspell binary. On Unix/Linux systems, this path is usually /usr/bin/aspell,
+// but it might be something else.
+//      $CFG->aspellpath = '';
+//
+// Path to dot.
+// Probably something like /usr/bin/dot. To be able to generate graphics from
+// DOT files, you must have installed the dot executable and point to it here.
+// Note that, for now, this only used by the profiling features
+// (Development->Profiling) built into Moodle.
+//      $CFG->pathtodot = '';
 
 //=========================================================================
 // ALL DONE!  To continue installation, visit your main page with a browser

@@ -204,5 +204,31 @@ function xmldb_qv_upgrade($oldversion=0) {
         upgrade_mod_savepoint(true, 2014072500, 'qv');
     }
 
+    if ($oldversion < 2015050600) {
+
+        if (isset($CFG->qv_distpluginappl) && !empty($CFG->qv_distpluginappl)) {
+            set_config('distpluginappl', $CFG->qv_distpluginappl, 'qv');
+        }
+        unset_config('qv_distpluginappl');
+
+        if (isset($CFG->qv_distpluginscripts) && !empty($CFG->qv_distpluginscripts)) {
+            set_config('distpluginscripts', $CFG->qv_distpluginscripts, 'qv');
+        }
+        unset_config('qv_distpluginscripts');
+
+        if (isset($CFG->qv_distplugincss) && !empty($CFG->qv_distplugincss)) {
+            set_config('distplugincss', $CFG->qv_distplugincss, 'qv');
+        }
+        unset_config('qv_distplugincss');
+
+        if (isset($CFG->qv_skins) && !empty($CFG->qv_skins)) {
+            set_config('skins', $CFG->qv_skins, 'qv');
+        }
+        unset_config('qv_skins');
+
+        // Qv savepoint reached.
+        upgrade_mod_savepoint(true, 2015050600, 'qv');
+    }
+
     return true;
 }

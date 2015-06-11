@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'さらに選択肢を追加する';
+$string['allowmultiple'] = '1つ以上の選択を許可する';
 $string['allowupdate'] = '投票内容の更新を許可する';
 $string['answered'] = '投票済み';
 $string['atleastoneoption'] = 'あなたは少なくとも1つの考えられる答えを提供する必要があります。';
+$string['cannotsubmit'] = '申し訳ございません、あなたの投票送信時に問題が発生しました。再度お試しください。';
 $string['choice'] = '選択肢';
 $string['choice:addinstance'] = '新しい投票を追加する';
 $string['choice:choose'] = '投票を記録する';
@@ -51,11 +53,9 @@ $string['description'] = '説明';
 $string['displayhorizontal'] = '水平に表示する';
 $string['displaymode'] = 'オプション表示モード';
 $string['displayvertical'] = '垂直に表示する';
-$string['event_answer_created'] = '投票が作成されました。';
-$string['event_answer_updated'] = '投票が更新されました。';
-$string['event_choice_viewed'] = '投票が閲覧されました。';
-$string['event_instances_list_viewed'] = 'インスタンス一覧が閲覧されました。';
-$string['event_report_viewed'] = '投票結果が閲覧されました。';
+$string['eventanswercreated'] = '投票が作成されました。';
+$string['eventanswerupdated'] = '投票が更新されました。';
+$string['eventreportviewed'] = '投票結果が閲覧されました。';
 $string['expired'] = '申し訳ございません、この活動は {$a} に終了しているため、これ以上利用することはできません。';
 $string['full'] = '(上限到達)';
 $string['havetologin'] = 'あなたは投票する前にログインする必要があります。';
@@ -77,6 +77,7 @@ $string['modulename_help'] = '投票活動モジュールにおいて、教師�
 * 例えばコースの運用に関する投票を促すように、学生の意思決定を促進するため';
 $string['modulenameplural'] = '投票';
 $string['moveselectedusersto'] = '選択したユーザを ...';
+$string['multiplenotallowederror'] = 'この投票では複数回答は許可されていません。';
 $string['mustchooseone'] = 'あなたは保存する前に答えを選択する必要があります。投票内容は、保存されませんでした。';
 $string['noguestchoose'] = '申し訳ございません、ゲストは投票することができません。';
 $string['noresultsviewable'] = '現在、投票結果は閲覧できません。';

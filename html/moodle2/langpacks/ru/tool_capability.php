@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_capability', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['capabilitylabel'] = 'Право:';
 $string['capabilityreport'] = 'Отчет о правах';
 $string['changeoverrides'] = 'Изменение переопределений в этом контексте';
 $string['changeroles'] = 'Изменение определения роли';
+$string['eventreportviewed'] = 'Просмотрен «Отчет о правах»';
 $string['forroles'] = 'Для ролей {$a}';
 $string['getreport'] = 'Получить отчет';
 $string['intro'] = 'В этом отчете для конкретного права отображается, дано ли такое право каждой из ролей (или выбранным ролям), а также все места на сайте, где это право переопределяется.';

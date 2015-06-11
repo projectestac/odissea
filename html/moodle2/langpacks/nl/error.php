@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,6 +148,7 @@ $string['cannotsetupblock'] = 'Bloktabellen konden niet ingesteld worden!';
 $string['cannotsetupcapformod'] = 'Kon de mogelijkheden (capabilities) niet instellen voor {$a}';
 $string['cannotsetupcapforplugin'] = 'Kon de mogelijkheden (capabilities) niet instellen voor {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Kan cursussen in categorie {$a} niet tonen/verbergen';
+$string['cannotsignup'] = 'Je kunt geen nieuwe account maken want je bent al aangemeld als {$a}.';
 $string['cannotunassigncap'] = 'Kon ongebruikte mogelijkheid (capability) {$a->cap} niet wegnemen van rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'Kon rol id {$a} niet wegnemen van deze gebruiker';
 $string['cannotunzipfile'] = 'Kon bestand niet unzippen';
@@ -410,7 +411,7 @@ $string['nofolder'] = 'De gevraagde map bestaat niet.';
 $string['noformdesc'] = 'Geen formslib formulierbeschrijving gevonden voor deze activiteit.';
 $string['noguest'] = 'Geen gasten hier!';
 $string['noinstances'] = 'Er is niets te vinden van {$a} in deze cursus!';
-$string['nologinas'] = 'Je hebt het recht niet in te loggen als die gebruiker';
+$string['nologinas'] = 'Je hebt het recht niet om in te loggen als die gebruiker';
 $string['nonmeaningfulcontent'] = 'Geen zinnige inhoud';
 $string['noparticipants'] = 'Geen gebruikers gevonden in deze cursus';
 $string['noparticipatorycms'] = 'Sorry, maar je hebt geen vereiste cursusmodules om over te rapporteren';
@@ -477,7 +478,7 @@ $string['servicedonotexist'] = 'De service bestaat niet';
 $string['sessioncookiesdisable'] = 'Fout gebruik van require_key_login() - sessie cookies moet uitgeschakeld worden!';
 $string['sessiondiskfull'] = 'De sessiepartitie is vol. Het is nu niet mogelijk om aan te melden. Waarschuw de systeembeheerder.';
 $string['sessionerroruser'] = 'Je sessie bleef te lang zonder activiteit. Je moet opnieuw inloggen.';
-$string['sessionerroruser2'] = 'Je loginsessie is verknoeid. Meld je opnieuw aan of herstart je browser.';
+$string['sessionerroruser2'] = 'Een serverfout die heeft Je loginsessie verknoeid. Meld je opnieuw aan of herstart je browser.';
 $string['sessionhandlerproblem'] = 'Sessieafhandeling is fout geconfigureerd';
 $string['sessionipnomatch'] = 'Sorry, maar je IP-adres is gewijzigd sinds je aangemeld bent. Deze beveiligingsmethode voorkomt dat crackers je identiteit stelen terwijl je aangemeld bent op deze site. Gewone gebruikers zouden deze melding niet mogen zien - vraag je sitebeheerder om hulp.';
 $string['sessionipnomatch2'] = '<p>Je IP-nummer is blijkbaar gewijzigd sinds je login. Deze beveiligingsfunctie verhindert dat crackers je identiteit stelen terwijl je aangemeld bent bij deze site. Je kunt deze melding zien als je draadloze netwerken gebruikt of als je schakelt tussen verschillende netwerken. Vraag de sitebeheerder om hulp.</p><p>Als je wil verder gaan, klik dan op F5 om deze pagina te verversen.</p>';

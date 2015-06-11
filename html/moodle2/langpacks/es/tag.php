@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Eliminado - marcas del curso';
 $string['description'] = 'Descripción';
 $string['edittag'] = 'Editar esta marca';
 $string['entertags'] = 'Escriba las marcas separadas por comas';
-$string['errordeleting'] = 'Error al eliminar la marca con id {$a}, por favor, informe al administrador del sistema.';
 $string['errortagfrontpage'] = 'No se permite marcar la página principal del sitio';
 $string['errorupdatingrecord'] = 'Error al actualizar el registro de marcas';
+$string['eventtagadded'] = 'Marca añadida a un item';
+$string['eventtagcreated'] = 'Marca creada';
+$string['eventtagdeleted'] = 'Marca borrada';
+$string['eventtagflagged'] = 'Marca señalizada';
+$string['eventtagremoved'] = 'Marca borrada de un item';
+$string['eventtagunflagged'] = 'Marca desseñalizada';
+$string['eventtagupdated'] = 'Marca actualizada';
 $string['flag'] = 'Señalar';
 $string['flagasinappropriate'] = 'Señalar como inapropiado';
 $string['helprelatedtags'] = 'Marcas relacionadas separadas por comas';

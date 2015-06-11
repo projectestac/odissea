@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,13 +31,15 @@ $string['extendedmode'] = '拡張キーを使用する';
 $string['extendedmode_help'] = '有効にした場合、プラグインとの連携にフルキーセットが使用されます。現在のところ、内部的には使用されませんが、あなたは簡単にMongoDBプラグインを検索および調査することができます。この設定を有効にすることで、少しだけ負荷が増大します。そのため、あなたが必要な場合のみ有効にしてください。';
 $string['password'] = 'パスワード';
 $string['password_help'] = '接続に使用されるユーザパスワードです。';
+$string['pleaseupgrademongo'] = 'あなたは古いバージョンのPHP Mongo拡張モジュール (< 1.3) を使用しています。古いバージョンのMongo拡張モジュールのサポートは将来的に廃止されます。アップグレードをお考えください。.';
 $string['pluginname'] = 'MongoDB';
 $string['replicaset'] = 'レプリカセット';
 $string['replicaset_help'] = '接続するレプリカセット名です。この名称が設定された場合、シードのismasterデータベースコマンドを使ってマスタが決定されます。そのため、リスト内に存在しないサーバであっても、ドライバは接続することができます。';
 $string['server'] = 'サーバ';
 $string['server_help'] = 'これはあなたが使用したいサーバへの接続ストリングです。カンマで区切ることにより、複数サーバを指定することができます。';
 $string['testserver'] = 'テストサーバ';
-$string['testserver_desc'] = 'これはあなたが使用したいテストサーバへの接続ストリングです。テストサーバは完全に任意です。テストサーバを指定することで、あなたはこのストアに関するPHPunitテストおよびパフォーマンステストを実行することができます。';
+$string['testserver_desc'] = 'サーバをテストするための接続ストリングです。テストサーバが指定された場合、管理ブロックのキャッシュパフォーマンスページを使用してMongoDBパフォーマンスをテストすることができます。
+例: mongodb://127.0.0.1:27017';
 $string['username'] = 'ユーザ名';
 $string['username_help'] = '接続に使用されるユーザ名です。';
 $string['usesafe'] = 'セーフを使用する';

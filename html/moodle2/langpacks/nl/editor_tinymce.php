@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -348,7 +348,7 @@ $string['contextmenu:right'] = 'Rechts';
 $string['customconfig'] = 'Aangepaste configuratie';
 $string['customconfig_desc'] = 'Aangepaste geavanceerde TinyMCE-configuratei in JSON-formaat, bijvoorbeeld: {"option1" : "value2", "option2" : "value2"}. Alle opties die je hier plaatst, overschrijven de standaard- en pluginingstellingen.';
 $string['customtoolbar'] = 'Editor werkbalk';
-$string['customtoolbar_desc'] = 'Elke lijn bevat een lijst met komma gescheiden knopnamen, gebruik "wrap" om groepen te scheiden. Lege regels worden genegeerd. Kijk op <a href="{$a}" target="_blank">{$a}</a> voor de lijst met standaard TinyMCE-knoppen.<br />De eerste rij wordt altijd getoond, terwijl de zichtbaarheid van de tweede en derde rij in- en uitgeschakeld kan worden.';
+$string['customtoolbar_desc'] = 'Elke lijn bevat een lijst met komma gescheiden knopnamen, gebruik "wrap" als groepsscheiding. Lege regels worden genegeerd. Kijk op <a href="{$a}" target="_blank">{$a}</a> voor de lijst met standaard TinyMCE-knoppen.<br />De eerste rij wordt altijd getoond, terwijl de zichtbaarheid van de tweede en derde rij in- en uitgeschakeld kan worden.';
 $string['directionality:ltr_desc'] = 'Van links naar rechts';
 $string['directionality:rtl_desc'] = 'Van rechts naar links';
 $string['emotions:delta_height'] = '';

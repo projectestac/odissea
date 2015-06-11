@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_file', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,11 +34,11 @@ $string['countfiles'] = '{$a} ファイル';
 $string['default'] = 'デフォルトで有効にする';
 $string['default_help'] = '有効にした場合、すべての新しい課題において、このフィードバック方法がデフォルトで有効にされます。';
 $string['enabled'] = 'ファイルフィードバック';
-$string['enabled_help'] = '有効にした場合、教師は課題の評定時にフィードバックと共にファイルをアップロードすることができます。アップロードするファイルはコメント付きのドキュメントまたはオーディオフィードバックにすることもできます。これらのファイルは学生の評定に影響しません。';
+$string['enabled_help'] = 'この設定を有効にした場合、教師は課題の評定時にフィードバックファイルをアップロードすることができます。これらのファイルは学生提出の評定、コメント付きのドキュメントまたは音声フィードバックに制限されることはありません。';
 $string['feedbackfileadded'] = '学生「 {$a->student} 」の新しいフィードバックファイル「 {$a->filename} 」';
 $string['feedbackfileupdated'] = '学生「 {$a->student} 」のフィードバックファイル「 {$a->filename} 」を更新しました。';
 $string['feedbackzip'] = 'フィードバックファイルを含むZIPファイル';
-$string['feedbackzip_help'] = '1名またはそれ以上の学生のフィードバックファイル一覧を含むZIPファイルは、ファイル名のユーザフルネーム直後にある2番目の部分の参加者IDに基づき学生に割り当てられます。あなたがすべての提出をダウンロードして、いつくかのファイルにコメントを追加した後、再度ZIP圧縮してファイルすべてをアップロードできるよう、この命名規則が使用されます。変更のないファイルは無視されます。';
+$string['feedbackzip_help'] = '1名またはそれ以上の学生のフィードバックファイル一覧を含むZIPファイルは、ファイル名のユーザフルネーム直後にある2番目の部分の参加者IDに基づき学生に割り当てられます。あなたがすべての提出をダウンロードして、いつくかのファイルにコメントを追加した後、再度ZIP圧縮してファイルすべてをアップロードできるようこの命名規則が使用されます。変更のないファイルは無視されます。';
 $string['file'] = 'フィードバックファイル';
 $string['filesadded'] = 'フィードバックファイルが追加されました: {$a}';
 $string['filesupdated'] = 'フィードバックファイルが更新されました: {$a}';

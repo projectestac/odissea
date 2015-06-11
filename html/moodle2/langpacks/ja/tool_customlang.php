@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_customlang', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['checkin'] = 'ストリングを言語パックに保存する';
-$string['checkout'] = '編集のため言語パックを開く';
+$string['checkout'] = '編集のために言語パックを開く';
 $string['checkoutdone'] = '言語パックが読み込まれました。';
 $string['checkoutinprogress'] = '言語パック読み込み中';
 $string['confirmcheckin'] = 'あなたは修正ストリングをローカル言語パックに保存しようとしています。修正されたストリングはトランスレータからデータディレクトリにエクスポートされます。同時にMoodleは修正済みストリングの使用を開始します。保存を進めるには「続ける」ボタンをクリックしてください。';

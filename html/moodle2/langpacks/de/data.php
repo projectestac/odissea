@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['configenablerssfeeds'] = 'Mit dieser Funktion aktivieren Sie RSS-Feeds 
 $string['confirmdeletefield'] = 'Möchten Sie dieses Feld wirklich in der Datenbank löschen?';
 $string['confirmdeleterecord'] = 'Möchten Sie diesen Datensatz wirklich in der Datenbank löschen?';
 $string['confirmdeleterecords'] = 'Möchten Sie diese EInträge wirklich löschen?';
-$string['csstemplate'] = 'CSS für Vorlagen';
+$string['csstemplate'] = 'CSS-Anpassungen';
 $string['csvfailed'] = 'Die Daten aus der CSV-Datei konnten nicht gelesen werden.';
 $string['csvfile'] = 'CSV-Datei';
 $string['csvimport'] = 'CSV-Dateiimport';
@@ -133,6 +133,14 @@ $string['entry'] = 'Eintrag';
 $string['entrysaved'] = 'Ihr Eintrag wurde gesichert';
 $string['errormustbeteacher'] = 'Diese Seite dürfen nur Trainer/innen benutzen!';
 $string['errorpresetexists'] = 'Es gibt bereits eine Vorlage mit dem gewählten Namen';
+$string['eventfieldcreated'] = 'Feld angelegt';
+$string['eventfielddeleted'] = 'Feld gelöscht';
+$string['eventfieldupdated'] = 'Feld aktualisiert';
+$string['eventrecordcreated'] = 'Datensatz angelegt';
+$string['eventrecorddeleted'] = 'Datensatz gelöscht';
+$string['eventrecordupdated'] = 'Datensatz aktualisiert';
+$string['eventtemplateupdated'] = 'Vorlage aktualisiert';
+$string['eventtemplateviewed'] = 'Vorlagen angezeigt';
 $string['example'] = 'Datenbankbeispiel';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Diese Aktivität wurde am {$a} abgeschlossen und ist nicht weiter verfügbar';
@@ -262,7 +270,7 @@ $string['notapproved'] = 'Der Eintrag wurde bisher nicht freigegeben';
 $string['notinjectivemap'] = 'Keine injektive Abbildung';
 $string['notopenyet'] = 'Aktivität ist nicht verfügbar bis {$a}';
 $string['number'] = 'Zahl';
-$string['numberrssarticles'] = 'RSS-Beiträge';
+$string['numberrssarticles'] = 'RSS Beiträge';
 $string['numnotapproved'] = 'Wartend';
 $string['numrecords'] = '{$a} Datensätze';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
@@ -345,6 +353,6 @@ $string['url'] = 'URL';
 $string['usedate'] = 'In Suche einbeziehen';
 $string['usestandard'] = 'Vorlagensatz benutzen';
 $string['usestandard_help'] = 'Um einen auf der gesamten Website verfügbaren Vorlagensatz zu benutzen, wählen Sie ihn aus der Liste aus. Wenn Sie selbst einen Vorlagensatz zur Liste hinzugefügt haben, können Sie ihn hier auch wieder löschen.';
-$string['viewfromdate'] = 'Nur Anzeige ab';
-$string['viewtodate'] = 'Nur Anzeige bis';
+$string['viewfromdate'] = 'Bearbeiten sperren ab';
+$string['viewtodate'] = 'Bearbeiten sperren bis';
 $string['wrongdataid'] = 'Falsche Daten-ID bereitgestellt';

@@ -96,9 +96,6 @@ class core_calendar_lib_testcase extends advanced_testcase {
 
         $this->expectOutputRegex('/Events imported: .* Events updated:/');
         calendar_cron();
-
-        // Clear the time limit, otherwise PHPUnit complains.
-        set_time_limit(0);
     }
 
     /**

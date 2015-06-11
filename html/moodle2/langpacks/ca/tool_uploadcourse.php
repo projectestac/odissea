@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['coursedoesnotexistandcreatenotallowed'] = 'El curs no existeix i no est
 $string['courseexistsanduploadnotallowed'] = 'El curs ja existeix i l\'actualització no està permesa';
 $string['coursefile'] = 'Fitxer';
 $string['coursefile_help'] = 'Ha de ser un fitxer CSV.';
-$string['courseidnumberincremented'] = 'Nombre ID del curs incrementat {$a->from} -> {$a->to}';
+$string['courseidnumberincremented'] = 'Número ID del curs incrementat {$a->from} -> {$a->to}';
 $string['courseprocess'] = 'Procés del curs';
 $string['courserenamed'] = 'S\'ha canviat el nom del curs';
 $string['courserenamingnotallowed'] = 'No està permès canviar el nom del curs';
@@ -73,7 +73,7 @@ $string['createnew'] = 'Crea només els cursos nous, omet els ja existents';
 $string['createorupdate'] = 'Crea els cursos nous, o actualitza els ja existents';
 $string['csvdelimiter'] = 'Delimitador CSV';
 $string['csvdelimiter_help'] = 'Delimiador CSV del fitxer CSV.';
-$string['csvfileerror'] = 'Hi ha algun error amb el format del fitxer CSV. Comproveu que  el nombre de capçaleres i columnes coincideixen, i que el delimitador i la codificació del fitxer siguin correctes: {$a}';
+$string['csvfileerror'] = 'Hi ha algun error amb el format del fitxer CSV. Comproveu que el nombre de capçaleres i columnes coincideixen, i que el delimitador i la codificació del fitxer siguin correctes: {$a}';
 $string['csvline'] = 'Línia';
 $string['defaultvalues'] = 'Valors per defecte del curs';
 $string['encoding'] = 'Codificació';
@@ -119,11 +119,11 @@ $string['updateonly'] = 'Actualitza només els cursos existents';
 $string['updatewithdataonly'] = 'Actualitza només amb les dades del fitxer CSV';
 $string['updatewithdataordefaults'] = 'Actualitza amb les dades i valors predeterminats del fitxer CSV';
 $string['uploadcourses'] = 'Carrega cursos';
-$string['uploadcourses_help'] = 'Els cursos s\'han de carregar amb un fitxer de text. El format d\'aquest fitxer ha de ser de la forma següent:
+$string['uploadcourses_help'] = 'Els cursos s\'han de carregar a través d\'un fitxer de text. El format d\'aquest fitxer ha de ser de la forma següent:
 
 * Cada línia ha de contenir un registre
-* Cada registre és una serie de dades separada per comes (o altres delimitadors)
+* Cada registre és una sèrie de dades separades per comes (o altres delimitadors)
 * El primer registre ha de contenir una llista dels noms dels camps, definint així la resta del fitxer
-* Els camps requerits són nom curt, nom complet i categoria';
+* Els camps requerits són: nom curt, nom complet i categoria';
 $string['uploadcoursespreview'] = 'Previsualització de la càrrega de cursos';
 $string['uploadcoursesresult'] = 'Resultat de la càrrega de cursos';

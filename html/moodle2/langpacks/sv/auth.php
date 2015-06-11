@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_fieldlock'] = 'Värde för låsningen';
 $string['auth_fieldlock_expl'] = '<p><b>Värde för låsningen:</b>Om detta är aktiverat så kommer det att hindra användare och administratörer av Moodle från att redigera detta fält direkt. Använd detta fält om Du underhåller dessa data i det externa systemet för autenticering.';
 $string['auth_fieldlocks'] = 'Låsning av användarfält';
 $string['auth_fieldlocks_help'] = '<p>Du kan låsa användarnas datafält. Detta är användbart för webbplatser där administratörerna underhåller användardata manuellt genom att redigera användarposter eller genom att använda komponenten "Ladda upp användare".  Om Du låser de fält som Moodle kräver så ska Du säkerställa att Du fyller i dessa data när Du skapar användarkonton för annars kommer kontona att bli oanvändbara.</p><p>Överväg om Du ska ställa in låsningsläget till "Olåst om fältet är tomt" för att undvika detta problem.</p>';
-$string['authinstructions'] = 'Lämna detta tomt för att visa standardinloggningsinstruktioner på inloggningssidan. Om du vill tillhandahålla egna inloggningsinstruktioner, ange dem här.';
+$string['authinstructions'] = 'Här kan Du ge instruktioner för Dina användare, så att de vet vilket användarnamn och lösenord de bör använda.  Texten Du skriver in här kommer att visas på sidan för inloggning.  Om Du lämnar detta tomt så kommer inga instruktioner att visas.';
 $string['auth_invalidnewemailkey'] = 'Fel: om du försöker bekräfta ett byte av e-postadress kan du ha gjort ett misstag när du kopierat URL adressen vi skickade till dig med e-post. Vänligen kopiera adressen igen och försök på nytt.';
 $string['auth_multiplehosts'] = 'Du kan ange flera värdar(t ex host1.com;host2.com;host3.com)';
 $string['auth_outofnewemailupdateattempts'] = 'Fel: om du försöker bekräfta ett byte av e-postadress kan du ha gjort ett misstag när du kopierat URL adressen vi skickade till dig med e-post. Vänligen kopiera adressen igen och försök på nytt.';
@@ -91,7 +91,7 @@ $string['errorminpasswordlower'] = 'Lösenord måste innehålla minst {$a} små 
 $string['errorminpasswordnonalphanum'] = 'Lösenord måste innehålla minst {$a} icke-alfanumeriska tecken.';
 $string['errorminpasswordupper'] = 'Lösenord måste innehålla minst {$a} stora bokstäver.';
 $string['errorpasswordupdate'] = 'Det uppstod ett fel i samband med uppdatering av lösenord, lösenordet ändrades inte.';
-$string['event_user_loggedin'] = 'Användaren har loggat in';
+$string['eventuserloggedin'] = 'Användaren har loggat in';
 $string['eventuserloggedinas'] = 'Användaren är inloggad som en annan användare';
 $string['forcechangepassword'] = 'Tvinga fram ändring av lösenord';
 $string['forcechangepasswordfirst_help'] = 'Tvinga användare att byta lösenord första gången som de loggar in på Moodle.';

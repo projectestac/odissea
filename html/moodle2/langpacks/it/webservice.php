@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,14 +87,15 @@ $string['errorcoursecontextnotvalid'] = 'Non puoi eseguire funzioni nel contesti
 $string['errorinvalidparam'] = 'Il parametro "{$a}" non è valido.';
 $string['errornotemptydefaultparamarray'] = 'Il parametro di descrizione web service di nome  \'{$a}\' è una struttura singola o multipla. Il default può essere solamente un array vuoto. Controlla la descrizione del web service.';
 $string['erroroptionalparamarray'] = 'Il parametro di descrizione web service di nome  \'{$a}\' è una struttura singola o multipla. Non è possibile impostarlo a VALUE_OPTIONAL. Controlla la descrizione del web service.';
-$string['event_webservice_function_called'] = 'Chiamata funzione web service';
-$string['event_webservice_login_failed'] = 'Fallita autenticazione web service';
-$string['event_webservice_service_created'] = 'Creato servizio web service';
-$string['event_webservice_service_updated'] = 'Aggiornato servizio web service';
-$string['event_webservice_service_user_added'] = 'Aggiornato utente servizio web service';
-$string['event_webservice_service_user_removed'] = 'Eliminato utente servizio web service';
-$string['event_webservice_token_created'] = 'Creato token web service';
-$string['event_webservice_token_sent'] = 'Inviato token web service';
+$string['eventwebservicefunctioncalled'] = 'Chiamata funzione web service';
+$string['eventwebserviceloginfailed'] = 'Fallita autenticazione web service';
+$string['eventwebserviceservicecreated'] = 'Creato servizio web service';
+$string['eventwebserviceservicedeleted'] = 'Eliminato servizio web service';
+$string['eventwebserviceserviceupdated'] = 'Aggiornato servizio web service';
+$string['eventwebserviceserviceuseradded'] = 'Aggiornato utente servizio web service';
+$string['eventwebserviceserviceuserremoved'] = 'Eliminato utente servizio web service';
+$string['eventwebservicetokencreated'] = 'Creato token web service';
+$string['eventwebservicetokensent'] = 'Inviato token web service';
 $string['execute'] = 'Esegui';
 $string['executewarnign'] = 'ATTENZIONE: premendo il pulsante Esegui il database sarà modificato e le modiche apportate non potranno essere annullate automaticamente!';
 $string['externalservice'] = 'Servizio';
@@ -129,6 +130,7 @@ $string['missingusername'] = 'Username mancante';
 $string['missingversionfile'] = 'Errore di programmazione: il file version.php non è presente per il componente {$a}';
 $string['mobilewsdisabled'] = 'Disabilitato';
 $string['mobilewsenabled'] = 'Abilitato';
+$string['nameexists'] = 'Il nome è già utilizzato da un altro servizio';
 $string['nocapabilitytouseparameter'] = 'L\'utente non ha il privilegio necessario per usare il parametro {$a}';
 $string['nofunctions'] = 'Il servizio non ha funzioni.';
 $string['norequiredcapability'] = 'Nessun privilegio richiesto';
@@ -179,6 +181,7 @@ $string['serviceusers'] = 'Utenti autorizzati';
 $string['serviceusersettings'] = 'Impostazioni utente';
 $string['serviceusersmatching'] = 'Utenti autorizzati che corrispondono';
 $string['serviceuserssettings'] = 'Cambia le impostazioni per l\'utente autorizzato';
+$string['shortnametaken'] = 'Il nome breve è già usato da un altro servizio ({$a})';
 $string['simpleauthlog'] = 'Login con autenticazione semplice';
 $string['step'] = 'Passo';
 $string['supplyinfo'] = 'Dettagli';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,12 +87,6 @@ $string['groupingsonly'] = 'Μόνο ομαδοποιήσεις';
 $string['groupmember'] = 'Μέλος ομάδας';
 $string['groupmemberdesc'] = 'Πρότυπος ρόλος για το μέλος μιας ομάδας.';
 $string['groupmembers'] = 'Μέλη ομάδας';
-$string['groupmembersonly'] = 'Διαθέσιμο μόνο για μέλη ομάδας';
-$string['groupmembersonlyerror'] = 'Λυπόμαστε, αλλά πρέπει να είστε μέλος τουλάχιστον σε μια ομάδα η οποία χρησιμοποιείται σε αυτή τη δραστηριότητα.';
-$string['groupmembersonly_help'] = '<p>Εάν έχει ενεργοποιηθεί το κουμπί επιλογής "Διαθέσιμο μόνο στα μέλη της ομάδας",
-τότε η δραστηριότητα (ή η πηγή) θα είναι διαθέσιμη μόνο σε χρήστες
-που έχουν αντιστοιχιστεί σε ομάδες μέσα στην επιλεγμένη ομαδοποίηση ή σε οποιαδήποτε ομάδα,
-εάν δεν έχει επιλεχθεί ομαδοποίηση.</p>';
 $string['groupmemberssee'] = 'Εμφάνιση μελών ομάδας';
 $string['groupmembersselected'] = 'Μέλη της επιλεγμένης ομάδας';
 $string['groupmode'] = 'Λειτουργία ομάδας';

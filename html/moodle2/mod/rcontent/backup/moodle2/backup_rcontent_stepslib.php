@@ -37,7 +37,7 @@ class backup_rcontent_activity_structure_step extends backup_activity_structure_
 
         // Define each element separated
         $rcontent = new backup_nested_element('rcontent', array('id'), array(
-            'course', 'name', 'summary', 'levelid',
+            'course', 'name', 'intro', 'introformat', 'levelid',
             /*'bookid', 'unitid', 'activityid',*/ 'whatgrade',
             'popup', 'popup_options', 'frame', 'width',
             'height', 'timecreated', 'timemodified', 'levelcode', 'isbn', 'unitcode', 'activitycode'));
@@ -118,7 +118,7 @@ class backup_rcontent_activity_structure_step extends backup_activity_structure_
         $grade_detail->annotate_ids('user', 'userid');
 
         // Define file annotations
-        $rcontent->annotate_files('mod_rcontent', 'summary', null); // This file area hasn't itemid
+        $rcontent->annotate_files('mod_rcontent', 'intro', null); // This file area hasn't itemid
 
         // Return the root element (rcontent), wrapped into standard activity structure
         return $this->prepare_activity_structure($rcontent);

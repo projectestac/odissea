@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_mnet', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'Es existieren mehrere MNet Einschreibungs Plugins für diesen Host. Nur eine Instanz für jeden Host und/oder \'Alle Hosts\'ist erlaubt.';
 $string['instancename'] = 'Einschreibemethode';
 $string['instancename_help'] = 'Sie haben die Möglichkeit, diese Instanz der MNet Einschreibemethode umzubenennen. Wenn das Feld leer bleibt, wird der Standardwert genutzt. Dieser enthält den Namen des externen Hosts und die dort zugewiesenen Rollenbezeichnungen für Nutzer. ';
+$string['mnet:config'] = 'MNet-Einschreibe-Instanzen konfigurieren';
 $string['mnet_enrol_description'] = 'Veröffentlichen Sie diesen Dienst, um Administrator/innen von {$a} zu erlauben, deren Teilnehmer/innen in Kursen anzumelden, die Sie auf Ihrem Server erstellt haben.<br/>
 <ul><li><em>Voraussetzung</em>: Sie müssen den SSO-Dienst (Service Provider) für {$a} <strong> veröffentlichen </strong>.</li>
 <li><em>Voraussetzung</em>: Sie müssen auch den SSO-Dienst (Identity Provider) von {$a} <strong>abonnieren</strong>. </li></ul><br/>

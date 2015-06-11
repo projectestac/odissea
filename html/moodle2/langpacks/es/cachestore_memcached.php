@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_memcached', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['hash_murmur'] = 'Murmur';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Clave de prefijo';
 $string['servers'] = 'Servidores';
+$string['setservers'] = 'Configurar Servidores';
 $string['testservers'] = 'Servidores de prueba';
 $string['testservers_desc'] = 'Los servidores de prueba se utilizan para las pruebas unitarias y las pruebas de rendimiento. Es totalmente opcional utilizar servidores de prueba. Cada servidor se define en una por línea mediante una dirección de servidor y opcionalmente un puerto y su relevancia. Si no se especifica un puerto se usa el puerto por defecto (11211).';
 $string['usecompression'] = 'Usar compresión';

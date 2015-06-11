@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Add another hint';
 $string['addcategory'] = 'Add category';
 $string['addmorechoiceblanks'] = 'Blanks for {no} more choices';
 $string['adminreport'] = 'Report on possible problems in your question database.';
+$string['advancedsearchoptions'] = 'Search options';
+$string['alltries'] = 'All tries';
 $string['answer'] = 'Answer';
 $string['answers'] = 'Answers';
 $string['answersaved'] = 'Answer saved';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'Could not retrieve question category';
 $string['cannotunhidequestion'] = 'Failed to unhide the question.';
 $string['cannotunzip'] = 'Could not unzip file.';
 $string['cannotwriteto'] = 'Cannot write exported questions to {$a}';
+$string['categories'] = 'Categories';
 $string['category'] = 'Category';
 $string['categorycurrent'] = 'Current category';
 $string['categorycurrentuse'] = 'Use this category';
@@ -122,8 +125,7 @@ $string['defaultmark'] = 'Default mark';
 $string['defaultmarkmustbepositive'] = 'The default mark must be positive.';
 $string['deletecoursecategorywithquestions'] = 'There are questions in the question bank associated with this course category. If you proceed, they will be deleted. You may wish to move them first, using the question bank interface.';
 $string['deletequestioncheck'] = 'Are you absolutely sure you want to delete \'{$a}\'?';
-$string['deletequestionscheck'] = '<p>Are you absolutely sure you want to delete the following questions?</p>
-<p>{$a}</p>';
+$string['deletequestionscheck'] = 'Are you absolutely sure you want to delete the following questions?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'Deleting question behaviour \'{$a}\'';
 $string['deletingqtype'] = 'Deleting question type \'{$a}\'';
 $string['didnotmatchanyanswer'] = '[Did not match any answer]';
@@ -160,6 +162,7 @@ $string['errorduringregrade'] = 'Could not regrade question {$a->qid}, going to 
 $string['errorfilecannotbecopied'] = 'Error: cannot copy file {$a}.';
 $string['errorfilecannotbemoved'] = 'Error: cannot move file {$a}.';
 $string['errorfileschanged'] = 'Error: files linked to from questions have changed since form was displayed.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Question ({$a}) appears more than once with different weights in different positions of the test. This is not currently supported by the statistics report and may make the statistics for this question unreliable.';
 $string['errormanualgradeoutofrange'] = 'The grade {$a->grade} is not between 0 and {$a->maxgrade} for question {$a->name}. The score and comment have not been saved.';
 $string['errormovingquestions'] = 'Error while moving questions with ids {$a}.';
 $string['errorpostprocess'] = 'Error occurred during post-processing!';
@@ -169,6 +172,8 @@ $string['errorprocessingresponses'] = 'An error occurred while processing your r
 $string['errorsavingcomment'] = 'Error saving the comment for question {$a->name} in the database.';
 $string['errorsavingflags'] = 'Error saving the flag state.';
 $string['errorupdatingattempt'] = 'Error updating attempt {$a->id} in the database.';
+$string['eventquestioncategorycreated'] = 'Question category created';
+$string['export'] = 'Export';
 $string['exportcategory'] = 'Export category';
 $string['exportcategory_help'] = 'This setting determines the category from which the exported questions will be taken.
 
@@ -187,6 +192,7 @@ $string['filesareacourse'] = 'the course files area';
 $string['filesareasite'] = 'the site files area';
 $string['filestomove'] = 'Move / copy files to {$a}?';
 $string['fillincorrect'] = 'Fill in correct responses';
+$string['firsttry'] = 'First try';
 $string['flagged'] = 'Flagged';
 $string['flagthisquestion'] = 'Flag this question';
 $string['formquestionnotinids'] = 'Form contained question that is not in questionids';
@@ -209,6 +215,7 @@ Alternatively, you may wish for students to submit each question as they go alon
 Those are probably the two most commonly used modes of behaviour.';
 $string['howquestionsbehave_link'] = 'question/behaviour';
 $string['ignorebroken'] = 'Ignore broken links';
+$string['import'] = 'Import';
 $string['importcategory'] = 'Import category';
 $string['importcategory_help'] = 'This setting determines the category into which the imported questions will go.
 
@@ -239,6 +246,7 @@ $string['invalidgrade'] = 'Grades ({$a}) do not match grade options - question s
 $string['invalidpenalty'] = 'Invalid penalty';
 $string['invalidwizardpage'] = 'Incorrect or no wizard page specified!';
 $string['lastmodifiedby'] = 'Last modified by';
+$string['lasttry'] = 'Last try';
 $string['linkedfiledoesntexist'] = 'Linked file {$a} doesn\'t exist';
 $string['makechildof'] = 'Make child of \'{$a}\'';
 $string['makecopy'] = 'Make copy';
@@ -342,6 +350,7 @@ $string['questioncatsfor'] = 'Question categories for \'{$a}\'';
 $string['questiondoesnotexist'] = 'This question does not exist';
 $string['questionidmismatch'] = 'Question ids mismatch';
 $string['questionname'] = 'Question name';
+$string['questionnamecopy'] = '{$a} (copy)';
 $string['questionno'] = 'Question {$a}';
 $string['questionpreviewdefaults'] = 'Question preview defaults';
 $string['questionpreviewdefaults_desc'] = 'These defaults are used when a user first previews a question in the question bank. Once a user has previewed a question, their personal preferences are stored as user preferences.';
@@ -364,6 +373,7 @@ $string['reviewresponse'] = 'Review response';
 $string['rightanswer'] = 'Right answer';
 $string['rightanswer_help'] = 'an automatically generated summary of the correct response. This can be limited, so you may wish to consider explaining the correct solution in the general feedback for the question, and turning this option off.';
 $string['save'] = 'Save';
+$string['savechangesandcontinueediting'] = 'Save changes and continue editing';
 $string['saved'] = 'Saved: {$a}';
 $string['saveflags'] = 'Save the state of the flags';
 $string['selectacategory'] = 'Select a category:';
@@ -412,12 +422,14 @@ $string['unknownquestioncatregory'] = 'Unknown question category: {$a}.';
 $string['unknownquestiontype'] = 'Unknown question type: {$a}.';
 $string['unknowntolerance'] = 'Unknown tolerance type {$a}';
 $string['unpublished'] = 'unshared';
+$string['unusedcategorydeleted'] = 'This category has been deleted because, after deleting the course, its questions weren\'t used any more.';
 $string['updatedisplayoptions'] = 'Update display options';
 $string['upgradeproblemcategoryloop'] = 'Problem detected when upgrading question categories. There is a loop in the category tree. The affected category ids are {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Could not update question category {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Problem detected when upgrading question categories. Category {$a->id} refers to parent {$a->parent}, which does not exist. Parent changed to fix problem.';
 $string['whethercorrect'] = 'Whether correct';
 $string['whethercorrect_help'] = 'This covers both the textual description \'Correct\', \'Partially correct\' or \'Incorrect\', and any coloured highlighting that conveys the same information.';
+$string['whichtries'] = 'Which tries';
 $string['withselected'] = 'With selected';
 $string['wrongprefix'] = 'Wrongly formatted nameprefix {$a}';
 $string['xoutofmax'] = '{$a->mark} out of {$a->max}';

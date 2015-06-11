@@ -7,7 +7,7 @@
 ##
 
 This theme is based on Clean theme and has been developed for Àgora:
-Àgora [1] is a multi-instance system with services like Moodle, Wordpress and Zikula. 
+Àgora [1] is a multi-instance system with services like Moodle, Wordpress and Zikula.
 It's developed by the Ministry of Education of the Government of Catalonia [2].
 
 The full code of agora can be found on:
@@ -26,7 +26,7 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program (in a file called COPYING); if not, go
-to http://www.gnu.org/copyleft/gpl.html or write to 
+to http://www.gnu.org/copyleft/gpl.html or write to
 
   Free Software Foundation, Inc.
   59 Temple Place - Suite 330
@@ -48,7 +48,7 @@ Developers:
    Pau Ferrer       (crazyserver@gmail.com)
    Toni Ginard      (aginard@xtec.cat)
    Francesc Busquets
-   
+
 With the support of:
    Francesc Busquets
    Eduard Cercós
@@ -61,13 +61,13 @@ This theme is developed for:
 
 This theme includes external resources like:
    - Abecedario: True Type Font by George Williams (revised version)
-   - FontAwesome 4.2.0  (http://fortawesome.github.io/Font-Awesome/)
+   - FontAwesome 4.3.0  (http://fortawesome.github.io/Font-Awesome/)
    - Some code to show Fontawesome icons is based on Essential Moodle theme (https://gjb2048.github.io/moodle-theme_essential/)
 
 Special Thanks:
    Catalan schools involved in the project
    UPCnet           (http://www.upcnet.es)
-   
+
 
 -----------------------------------------------------------------------------
 [1] http://agora.xtec.cat

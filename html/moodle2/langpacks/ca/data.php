@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -152,6 +152,14 @@ $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'S\'ha desat la vostra entrada';
 $string['errormustbeteacher'] = 'Per a utilitzar aquesta pàgina heu de ser professor/a';
 $string['errorpresetexists'] = 'Ja existeix un valor predefinit amb el nom que heu seleccionat';
+$string['eventfieldcreated'] = 'S\'ha creat un camp';
+$string['eventfielddeleted'] = 'S\'ha suprimit un camp';
+$string['eventfieldupdated'] = 'S\'ha actualitzat el camp';
+$string['eventrecordcreated'] = 'S\'ha creat un registre';
+$string['eventrecorddeleted'] = 'S\'ha suprimit un registre';
+$string['eventrecordupdated'] = 'S\'ha actualitzat un registre';
+$string['eventtemplateupdated'] = 'S\'ha actualitzat una plantilla';
+$string['eventtemplateviewed'] = 'S\'han visualitzat les plantilles';
 $string['example'] = 'Exemple del mòdul de bases de dades';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Ho sento, aquesta activitat tenia termini a {$a} i no es troba disponible';

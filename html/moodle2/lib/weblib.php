@@ -224,6 +224,20 @@ function qualified_me() {
 }
 
 /**
+ * Determines whether or not the Moodle site is being served over HTTPS.
+ *
+ * This is done simply by checking the value of $CFG->httpswwwroot, which seems
+ * to be the only reliable method.
+ *
+ * @return boolean True if site is served over HTTPS, false otherwise.
+ */
+function is_https() {
+    global $CFG;
+
+    return (strpos($CFG->httpswwwroot, 'https://') === 0);
+}
+
+/**
  * Class for creating and manipulating urls.
  *
  * It can be used in moodle pages where config.php has been included without any further includes.
@@ -632,6 +646,10 @@ class moodle_url {
             }
         }
 
+        if ($url->anchor !== $this->anchor) {
+            return false;
+        }
+
         return true;
     }
 
@@ -723,6 +741,32 @@ class moodle_url {
                                                $forcedownload = false) {
         global $CFG;
         $urlbase = "$CFG->httpswwwroot/pluginfile.php";
+        if ($itemid === null) {
+            return self::make_file_url($urlbase, "/$contextid/$component/$area".$pathname.$filename, $forcedownload);
+        } else {
+            return self::make_file_url($urlbase, "/$contextid/$component/$area/$itemid".$pathname.$filename, $forcedownload);
+        }
+    }
+
+    /**
+     * Factory method for creation of url pointing to plugin file.
+     * This method is the same that make_pluginfile_url but pointing to the webservice pluginfile.php script.
+     * It should be used only in external functions.
+     *
+     * @since  2.8
+     * @param int $contextid
+     * @param string $component
+     * @param string $area
+     * @param int $itemid
+     * @param string $pathname
+     * @param string $filename
+     * @param bool $forcedownload
+     * @return moodle_url
+     */
+    public static function make_webservice_pluginfile_url($contextid, $component, $area, $itemid, $pathname, $filename,
+                                               $forcedownload = false) {
+        global $CFG;
+        $urlbase = "$CFG->httpswwwroot/webservice/pluginfile.php";
         if ($itemid === null) {
             return self::make_file_url($urlbase, "/$contextid/$component/$area".$pathname.$filename, $forcedownload);
         } else {
@@ -973,7 +1017,7 @@ function page_doc_link($text='') {
 /**
  * Returns the path to use when constructing a link to the docs.
  *
- * @since 2.5.1 2.6
+ * @since Moodle 2.5.1 2.6
  * @param moodle_page $page
  * @return string
  */
@@ -1099,7 +1143,6 @@ function format_text_menu() {
  */
 function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseiddonotuse = null) {
     global $CFG, $DB, $PAGE;
-    static $croncache = array();
 
     if ($text === '' || is_null($text)) {
         // No need to do any filters and cleaning.
@@ -1168,34 +1211,6 @@ function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseidd
         $filtermanager = new null_filter_manager();
     }
 
-    if (!empty($CFG->cachetext) and empty($options['nocache'])) {
-        $hashstr = $text.'-'.$filtermanager->text_filtering_hash($context).'-'.$context->id.'-'.current_language().'-'.
-                (int)$format.(int)$options['trusted'].(int)$options['noclean'].
-                (int)$options['para'].(int)$options['newlines'];
-
-        $time = time() - $CFG->cachetext;
-        $md5key = md5($hashstr);
-        if (CLI_SCRIPT) {
-            if (isset($croncache[$md5key])) {
-                return $croncache[$md5key];
-            }
-        }
-
-        if ($oldcacheitem = $DB->get_record('cache_text', array('md5key' => $md5key), '*', IGNORE_MULTIPLE)) {
-            if ($oldcacheitem->timemodified >= $time) {
-                if (CLI_SCRIPT) {
-                    if (count($croncache) > 150) {
-                        reset($croncache);
-                        $key = key($croncache);
-                        unset($croncache[$key]);
-                    }
-                    $croncache[$md5key] = $oldcacheitem->formattedtext;
-                }
-                return $oldcacheitem->formattedtext;
-            }
-        }
-    }
-
     switch ($format) {
         case FORMAT_HTML:
             if (!$options['noclean']) {
@@ -1259,65 +1274,15 @@ function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseidd
         }
     }
 
-    // Warn people that we have removed this old mechanism, just in case they
-    // were stupid enough to rely on it.
-    if (isset($CFG->currenttextiscacheable)) {
-        debugging('Once upon a time, Moodle had a truly evil use of global variables ' .
-            'called $CFG->currenttextiscacheable. The good news is that this no ' .
-            'longer exists. The bad news is that you seem to be using a filter that '.
-            'relies on it. Please seek out and destroy that filter code.', DEBUG_DEVELOPER);
-    }
-
     if (!empty($options['overflowdiv'])) {
         $text = html_writer::tag('div', $text, array('class' => 'no-overflow'));
-    }
-
-    if (empty($options['nocache']) and !empty($CFG->cachetext)) {
-        if (CLI_SCRIPT) {
-            // Special static cron cache - no need to store it in db if its not already there.
-            if (count($croncache) > 150) {
-                reset($croncache);
-                $key = key($croncache);
-                unset($croncache[$key]);
-            }
-            $croncache[$md5key] = $text;
-            return $text;
-        }
-
-        $newcacheitem = new stdClass();
-        $newcacheitem->md5key = $md5key;
-        $newcacheitem->formattedtext = $text;
-        $newcacheitem->timemodified = time();
-        if ($oldcacheitem) {
-            // See bug 4677 for discussion.
-            $newcacheitem->id = $oldcacheitem->id;
-            try {
-                // Update existing record in the cache table.
-                $DB->update_record('cache_text', $newcacheitem);
-            } catch (dml_exception $e) {
-                // It's unlikely that the cron cache cleaner could have
-                // deleted this entry in the meantime, as it allows
-                // some extra time to cover these cases.
-            }
-        } else {
-            try {
-                // Insert a new record in the cache table.
-                $DB->insert_record('cache_text', $newcacheitem);
-            } catch (dml_exception $e) {
-                // Again, it's possible that another user has caused this
-                // record to be created already in the time that it took
-                // to traverse this function.  That's OK too, as the
-                // call above handles duplicate entries, and eventually
-                // the cron cleaner will delete them.
-            }
-        }
     }
 
     return $text;
 }
 
 /**
- * Resets all data related to filters, called during upgrade or when filter settings change.
+ * Resets some data related to filters, called during upgrade or when general filter settings change.
  *
  * @param bool $phpunitreset true means called from our PHPUnit integration test reset
  * @return void
@@ -1327,14 +1292,12 @@ function reset_text_filters_cache($phpunitreset = false) {
 
     if ($phpunitreset) {
         // HTMLPurifier does not change, DB is already reset to defaults,
-        // nothing to do here.
+        // nothing to do here, the dataroot was cleared too.
         return;
     }
 
-    $DB->delete_records('cache_text');
-
-    $purifdir = $CFG->cachedir.'/htmlpurifier';
-    remove_dir($purifdir, true);
+    // The purge_all_caches() deals with cachedir and localcachedir purging,
+    // the individual filter caches are invalidated as necessary elsewhere.
 
     // Update $CFG->filterall cache flag.
     if (empty($CFG->stringfilters)) {
@@ -1763,6 +1726,7 @@ function purify_html($text, $options = array()) {
             'nntp' => true,
             'news' => true,
             'rtsp' => true,
+            'rtmp' => true,
             'teamspeak' => true,
             'gopher' => true,
             'mms' => true,
@@ -1867,6 +1831,7 @@ function markdown_to_html($text) {
         return $text;
     }
 
+    require_once($CFG->libdir .'/markdown/MarkdownInterface.php');
     require_once($CFG->libdir .'/markdown/Markdown.php');
     require_once($CFG->libdir .'/markdown/MarkdownExtra.php');
 
@@ -2302,6 +2267,7 @@ function print_group_picture($group, $courseid, $large=false, $return=false, $li
     }
 
     $grouppictureurl = moodle_url::make_pluginfile_url($context->id, 'group', 'icon', $group->id, '/', $file);
+    $grouppictureurl->param('rev', $group->picture);
     $output .= '<img class="grouppicture" src="'.$grouppictureurl.'"'.
         ' alt="'.s(get_string('group').' '.$group->name).'" title="'.s($group->name).'"/>';
 
@@ -2581,6 +2547,16 @@ function redirect($url, $message='', $delay=-1) {
     do {
         if (defined('DEBUGGING_PRINTED')) {
             // Some debugging already printed, no need to look more.
+            $debugdisableredirect = true;
+            break;
+        }
+
+        if (core_useragent::is_msword()) {
+            // Clicking a URL from MS Word sends a request to the server without cookies. If that
+            // causes a redirect Word will open a browser pointing the new URL. If not, the URL that
+            // was clicked is opened. Because the request from Word is without cookies, it almost
+            // always results in a redirect to the login page, even if the user is logged in in their
+            // browser. This is not what we want, so prevent the redirect for requests from Word.
             $debugdisableredirect = true;
             break;
         }
@@ -3075,21 +3051,22 @@ class progress_bar {
      * @return void Echo's output
      */
     public function create() {
+        global $PAGE;
+
         $this->time_start = microtime(true);
         if (CLI_SCRIPT) {
             return; // Temporary solution for cli scripts.
         }
-        $widthplusborder = $this->width + 2;
+
+        $PAGE->requires->string_for_js('secondsleft', 'moodle');
+
         $htmlcode = <<<EOT
-        <div style="text-align:center;width:{$widthplusborder}px;clear:both;padding:0;margin:0 auto;">
-            <h2 id="status_{$this->html_id}" style="text-align: center;margin:0 auto"></h2>
-            <p id="time_{$this->html_id}"></p>
-            <div id="bar_{$this->html_id}" style="border-style:solid;border-width:1px;width:{$this->width}px;height:50px;">
-                <div id="progress_{$this->html_id}"
-                style="text-align:center;background:#FFCC66;width:4px;border:1px
-                solid gray;height:38px; padding-top:10px;">&nbsp;<span id="pt_{$this->html_id}"></span>
-                </div>
+        <div class="progressbar_container" style="width: {$this->width}px;" id="{$this->html_id}">
+            <h2></h2>
+            <div class="progress progress-striped active">
+                <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">&nbsp;</div>
             </div>
+            <p></p>
         </div>
 EOT;
         flush();
@@ -3115,12 +3092,11 @@ EOT;
             return; // Temporary solution for cli scripts.
         }
 
-        $es = $this->estimate($percent);
+        $estimate = $this->estimate($percent);
 
-        if ($es === null) {
+        if ($estimate === null) {
             // Always do the first and last updates.
-            $es = "?";
-        } else if ($es == 0) {
+        } else if ($estimate == 0) {
             // Always do the last updates.
         } else if ($this->lastupdate + 20 < time()) {
             // We must update otherwise browser would time out.
@@ -3128,13 +3104,15 @@ EOT;
             // No significant change, no need to update anything.
             return;
         }
+        if (is_numeric($estimate)) {
+            $estimate = get_string('secondsleft', 'moodle', round($estimate, 2));
+        }
 
-        $this->percent = $percent;
+        $this->percent = round($percent, 2);
         $this->lastupdate = microtime(true);
 
-        $w = ($this->percent/100) * $this->width;
-        echo html_writer::script(js_writer::function_call('update_progress_bar',
-            array($this->html_id, $w, $this->percent, $msg, $es)));
+        echo html_writer::script(js_writer::function_call('updateProgressBar',
+            array($this->html_id, $this->percent, $msg, $estimate)));
         flush();
     }
 
@@ -3526,6 +3504,8 @@ function print_password_policy() {
  * @param boolean $ajax Whether this help is called from an AJAX script.
  *                This is used to influence text formatting and determines
  *                which format to output the doclink in.
+ * @param string|object|array $a An object, string or number that can be used
+ *      within translation strings
  * @return Object An object containing:
  * - heading: Any heading that there may be for this help string.
  * - text: The wiki-formatted help string.
@@ -3533,7 +3513,7 @@ function print_password_policy() {
  *            CSS classes to apply to that link. Only present if $ajax = false.
  * - completedoclink: A text representation of the doclink. Only present if $ajax = true.
  */
-function get_formatted_help_string($identifier, $component, $ajax = false) {
+function get_formatted_help_string($identifier, $component, $ajax = false, $a = null) {
     global $CFG, $OUTPUT;
     $sm = get_string_manager();
 
@@ -3560,7 +3540,7 @@ function get_formatted_help_string($identifier, $component, $ajax = false) {
         $options->overflowdiv = !$ajax;
 
         // Should be simple wiki only MDL-21695.
-        $data->text =  format_text(get_string($identifier.'_help', $component), FORMAT_MARKDOWN, $options);
+        $data->text = format_text(get_string($identifier.'_help', $component, $a), FORMAT_MARKDOWN, $options);
 
         $helplink = $identifier . '_link';
         if ($sm->string_exists($helplink, $component)) {  // Link to further info in Moodle docs.

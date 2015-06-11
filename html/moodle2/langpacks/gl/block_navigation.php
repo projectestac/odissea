@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_navigation', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['everything'] = 'Todo';
 $string['expansionlimit'] = 'Xerar navegación para o seguinte';
 $string['linkcategoriesdesc'] = 'Amosar as categorías como ligazóns';
 $string['navigation:addinstance'] = 'Engadir un novo bloque de navegación';
-$string['navigation:myaddinstance'] = 'Engadir un novo bloque de navegación á miña área persoal';
+$string['navigation:myaddinstance'] = 'Engadir un novo bloque de navegación na área persoal';
 $string['pluginname'] = 'Navegación';
 $string['trimlength'] = 'Cantos caracteres recortar';
 $string['trimmode'] = 'Modo recorte';

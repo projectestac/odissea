@@ -18,7 +18,7 @@
  * Library of functions and constants for module feedback
  * includes the main-part of feedback-functions
  *
- * @package mod-feedback
+ * @package mod_feedback
  * @copyright Andreas Grabs
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -52,7 +52,6 @@ function feedback_get_extra_capabilities() {
 /**
  * @uses FEATURE_GROUPS
  * @uses FEATURE_GROUPINGS
- * @uses FEATURE_GROUPMEMBERSONLY
  * @uses FEATURE_MOD_INTRO
  * @uses FEATURE_COMPLETION_TRACKS_VIEWS
  * @uses FEATURE_GRADE_HAS_GRADE
@@ -64,7 +63,6 @@ function feedback_supports($feature) {
     switch($feature) {
         case FEATURE_GROUPS:                  return true;
         case FEATURE_GROUPINGS:               return true;
-        case FEATURE_GROUPMEMBERSONLY:        return true;
         case FEATURE_MOD_INTRO:               return true;
         case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
         case FEATURE_COMPLETION_HAS_RULES:    return true;
@@ -395,9 +393,12 @@ function feedback_get_recent_mod_activity(&$activities, &$index,
         $sql .= " JOIN {groups_members} gm ON  gm.userid=u.id ";
     }
 
-    $sql .= " WHERE fc.timemodified > ? AND fk.id = ? ";
+    $sql .= " WHERE fc.timemodified > ?
+                AND fk.id = ?
+                AND fc.anonymous_response = ?";
     $sqlargs[] = $timemodified;
     $sqlargs[] = $cm->instance;
+    $sqlargs[] = FEEDBACK_ANONYMOUS_NO;
 
     if ($userid) {
         $sql .= " AND u.id = ? ";
@@ -572,6 +573,13 @@ function feedback_scale_used_anywhere($scaleid) {
 }
 
 /**
+ * List the actions that correspond to a view of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = 'r' and edulevel = LEVEL_PARTICIPATING will
+ *       be considered as view action.
+ *
  * @return array
  */
 function feedback_get_view_actions() {
@@ -579,6 +587,13 @@ function feedback_get_view_actions() {
 }
 
 /**
+ * List the actions that correspond to a post of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = ('c' || 'u' || 'd') and edulevel = LEVEL_PARTICIPATING
+ *       will be considered as post action.
+ *
  * @return array
  */
 function feedback_get_post_actions() {
@@ -848,14 +863,14 @@ function feedback_check_is_switchrole() {
  *
  * @global object
  * @uses CONTEXT_MODULE
- * @param object $cm
+ * @param cm_info $cm Course-module object
  * @param int $group single groupid
  * @param string $sort
  * @param int $startpage
  * @param int $pagecount
  * @return object the userrecords
  */
-function feedback_get_incomplete_users($cm,
+function feedback_get_incomplete_users(cm_info $cm,
                                        $group = false,
                                        $sort = '',
                                        $startpage = false,
@@ -880,7 +895,8 @@ function feedback_get_incomplete_users($cm,
         return false;
     }
     // Filter users that are not in the correct group/grouping.
-    $allusers = groups_filter_users_by_course_module_visible($cm, $allusers);
+    $info = new \core_availability\info_module($cm);
+    $allusers = $info->filter_user_list($allusers);
 
     $allusers = array_keys($allusers);
 
@@ -1901,10 +1917,11 @@ function feedback_save_tmp_values($feedbackcompletedtmp, $feedbackcompleted, $us
         'relateduserid' => $userid,
         'objectid' => $feedbackcompleted->id,
         'context' => context_module::instance($cm->id),
+        'anonymous' => ($feedbackcompleted->anonymous_response == FEEDBACK_ANONYMOUS_YES),
         'other' => array(
             'cmid' => $cm->id,
             'instanceid' => $feedbackcompleted->feedback,
-            'anonymous' => $feedbackcompleted->anonymous_response
+            'anonymous' => $feedbackcompleted->anonymous_response // Deprecated.
         )
     ));
 
@@ -2697,7 +2714,11 @@ function feedback_delete_completed($completedid) {
         'objectid' => $completedid,
         'courseid' => $course->id,
         'context' => context_module::instance($cm->id),
-        'other' => array('cmid' => $cm->id, 'instanceid' => $feedback->id, 'anonymous' => $completed->anonymous_response)
+        'anonymous' => ($completed->anonymous_response == FEEDBACK_ANONYMOUS_YES),
+        'other' => array(
+            'cmid' => $cm->id,
+            'instanceid' => $feedback->id,
+            'anonymous' => $completed->anonymous_response) // Deprecated.
     ));
 
     $event->add_record_snapshot('feedback_completed', $completed);

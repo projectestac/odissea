@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_image', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alignment'] = 'Выравнивание';
+$string['alignment_bottom'] = 'Вниз';
+$string['alignment_left'] = 'Влево';
+$string['alignment_middle'] = 'Посередине';
+$string['alignment_right'] = 'Вправо';
+$string['alignment_top'] = 'Вверху';
 $string['browserepositories'] = 'Просмотр репозиториев...';
+$string['constrain'] = 'Автоматический размер';
 $string['createimage'] = 'Вставить картинку';
+$string['customstyle'] = 'Пользовательский стиль';
+$string['enteralt'] = 'Описание картинки для тех, кто ее не видит';
 $string['enterurl'] = 'Введите адрес ссылки';
 $string['height'] = 'Высота';
+$string['imageproperties'] = 'Свойства картинки';
 $string['pluginname'] = 'Картинка';
+$string['presentation'] = 'Описание не обязательно';
+$string['presentationoraltrequired'] = 'Картинка должна иметь описание, если не указано обратное';
 $string['preview'] = 'Просмотр';
+$string['saveimage'] = 'Сохранить картинку';
+$string['size'] = 'Размер';
 $string['width'] = 'Ширина';

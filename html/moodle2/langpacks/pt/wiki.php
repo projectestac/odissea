@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,17 @@ $string['editing'] = 'A editar página de wiki';
 $string['editingcomment'] = 'A editar comentário';
 $string['editingpage'] = 'A editar a página \'{$a}\'';
 $string['editsection'] = 'editar';
+$string['eventdiffviewed'] = 'Diferenças do Wiki visualizadas';
+$string['eventhistoryviewed'] = 'Histórico do Wiki visualizado';
+$string['eventmapviewed'] = 'Mapa de páginas do Wiki visualizado';
+$string['eventpagecreated'] = 'Página do Wiki criada';
+$string['eventpagedeleted'] = 'Página do Wiki eliminada';
+$string['eventpagelocksdeleted'] = 'Bloqueios de página do Wiki eliminados';
+$string['eventpageupdated'] = 'Página do Wiki atualizada';
+$string['eventpageversiondeleted'] = 'Página de versão do Wiki eliminada';
+$string['eventpageviewed'] = 'Página do Wiki visualizada';
+$string['eventversionrestored'] = 'Página de versão do Wiki restaurada';
+$string['eventversionviewed'] = 'Página de versão do Wiki visualizada';
 $string['filenotuploadederror'] = 'O ficheiro \'{$a}\' não pôde ser carregado corretamente';
 $string['files'] = 'Anexos';
 $string['filtername'] = 'Hiperligações automáticas às páginas Wiki';
@@ -178,7 +189,7 @@ $string['orphaned'] = 'Páginas órfãs';
 $string['orphaned_help'] = 'Lista de páginas que não estão ligadas a partir de outra página.';
 $string['overridelocks'] = 'Ultrapassar bloqueios';
 $string['overridinglocks'] = 'A ultrapassar bloqueios...';
-$string['pageexists'] = 'Esta página já existe. A redirecionar para a mesma.';
+$string['pageexists'] = 'Esta página já existe. A redirecionar...';
 $string['pageindex'] = 'Índice';
 $string['pageindex_help'] = 'Árvore de páginas deste wiki';
 $string['pageislocked'] = 'Alguém está neste momento a editar esta página. Tente editá-la dentro de alguns minutos.';

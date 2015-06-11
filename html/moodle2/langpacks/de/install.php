@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,12 +115,6 @@ $string['inputwebdirectory'] = 'Moodle-Verzeichnis: ';
 $string['installation'] = 'Installation';
 $string['langdownloaderror'] = 'Das Sprachpaket \'{$a}\' konnte nicht heruntergeladen werden. Die Installation wird in englischer Sprache fortgesetzt.';
 $string['langdownloadok'] = 'Das Sprachpaket \'{$a}\' wurde installiert. Der weitere Installationsprozess erfolgt nun in dieser Sprache.';
-$string['magicquotesruntime'] = 'Magic Quotes Run Time';
-$string['magicquotesruntimeerror'] = 'Dies sollte ausgeschaltet sein (\'off\')';
-$string['magicquotesruntimehelp'] = '<p>Magic Quotes Runtime sollte ausgeschaltet (\'off\') sein, damit Moodle richtig funktioniert.  </p>
-<p>Normalerweise ist dies der Fall. Prüfen Sie bitte die Einstellung <b>magic_quotes_runtime</b> in der Datei php.ini. </p>
-<p>Falls Sie keinen Zugriff auf die Datei php.ini haben, können Sie auch versuchen, die folgende Zeile in die Datei .htaccess im Verzeichnis moodle einfügen:
-<blockquote><div>php_value magic_quotes_runtime Off</div></blockquote></p>';
 $string['memorylimit'] = 'Memory Limit';
 $string['memorylimiterror'] = 'Die PHP-Speichereinstellung memory_limit ist ziemlich niedrig .... dies könnte später zu Problemen führen.';
 $string['memorylimithelp'] = '<p>Die PHP-Einstellung memory_limit Ihres Servers ist zur Zeit auf {$a} eingestellt. </p>

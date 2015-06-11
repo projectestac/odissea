@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,8 +29,12 @@ $string['actualresponse'] = '실제 응답';
 $string['allattempts'] = '모든 시도';
 $string['allattemptsavg'] = '모든 시도의 평균값';
 $string['allattemptscount'] = '총 시도의 수';
+$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisno'] = '({$a->number}) "{$a->name}"';
+$string['analysisnovariant'] = '({$a->number}) "{$a->name}" 배리언트 {$a->variant}';
 $string['analysisofresponses'] = '응답분석';
 $string['analysisofresponsesfor'] = '{$a} 응답분석';
+$string['analysisvariant'] = '"{$a->name}" 배리언트 {$a->variant}';
 $string['attempts'] = '시도';
 $string['attemptsall'] = '모든 시도';
 $string['attemptsfirst'] = '첫번째 시도';
@@ -47,7 +51,6 @@ $string['downloadeverything'] = '모든 보고서 내려받기';
 $string['duration'] = '개방 기간';
 $string['effective_weight'] = '유효 가중치';
 $string['errordeleting'] = '옛 {$a} 기록 삭제 중 오류';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = ' 질문 ({$a})은 시험의 다른 위치에서 각기 다른 가중치로 나타났습니다. 이것은 현재 통계보고서에 지원되지 않으며,  질문에 대한 통계를 못 믿게 할 수 있습니다.';
 $string['errormedian'] = '오차제거 중앙값';
 $string['errorpowerquestions'] = '질문 성적의 분산을 계산하기 위해 데이터를 가져오는데 오류';
 $string['errorpowers'] = '퀴즈의 분산 계산을 위한 오차 제거한 데이터';
@@ -65,8 +68,12 @@ $string['kurtosis'] = '({$a})득점분포 첨도';
 $string['lastattempts'] = '마지막 시도';
 $string['lastattemptsavg'] = '마지막 시도의 평균 성적';
 $string['lastcalculated'] = '마지막 집계가 된 것이 {$a->lastcalculated} 전인데, 그 후 {$a->count}  회의 시도가 이루어 졌음';
+$string['maximumfacility'] = '최대 Facility 인덱스';
 $string['median'] = '({$a})중앙값';
+$string['medianfacility'] = '중간 Facility 인덱스';
+$string['minimumfacility'] = '최소 Facility 인덱스';
 $string['modelresponse'] = '모델 응답';
+$string['nameforvariant'] = '{$a->name}의 배리언트 {$a->variant}';
 $string['negcovar'] = '전체 시도 점수에 대한 음의 공분산';
 $string['negcovar_help'] = '시도된 본 질문에 대한 점수는 전체 시도 점수에 대해 반대 방향으로 변합니다. 이는 본 질문의 점수가 평균 이상으로 변하는 경향이 있을 때 전체 시도 점수는 그 반대인 평균 이하로 변해가는 경향이 있음을 뜻하며 그 반대의 경우도 동일한 경향을 보입니다.
 
@@ -94,6 +101,7 @@ $string['recalculatenow'] = '즉시 재계산';
 $string['reportsettings'] = '통계 계산 설정';
 $string['response'] = '응답';
 $string['skewness'] = '({$a})득점분포 비대칭도';
+$string['slotstructureanalysis'] = '질문 번호 {$a}에 대한 구조 분석';
 $string['standarddeviation'] = '({$a})표준편차';
 $string['standarddeviationq'] = '표준편차';
 $string['standarderror'] = '({$a})표준오차';
@@ -103,3 +111,4 @@ $string['statisticsreport'] = '통계 보고';
 $string['statisticsreportgraph'] = '질문 위치에 대한 통계';
 $string['statistics:view'] = '통계 보고서 보기';
 $string['statsfor'] = '퀴즈 ({$a}) 통계';
+$string['whichtries'] = '다음에 대한 응답분석';

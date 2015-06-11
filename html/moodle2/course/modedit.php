@@ -73,7 +73,6 @@ if (!empty($add)) {
     $data->modulename       = $module->name;
     $data->groupmode        = $course->groupmode;
     $data->groupingid       = $course->defaultgroupingid;
-    $data->groupmembersonly = 0;
     $data->id               = '';
     $data->instance         = '';
     $data->coursemodule     = '';
@@ -146,7 +145,6 @@ if (!empty($add)) {
     $data->cmidnumber         = $cm->idnumber;          // The cm IDnumber
     $data->groupmode          = groups_get_activity_groupmode($cm); // locked later if forced
     $data->groupingid         = $cm->groupingid;
-    $data->groupmembersonly   = $cm->groupmembersonly;
     $data->course             = $course->id;
     $data->module             = $module->id;
     $data->modulename         = $module->name;
@@ -160,9 +158,7 @@ if (!empty($add)) {
     $data->completionusegrade = is_null($cm->completiongradeitemnumber) ? 0 : 1;
     $data->showdescription    = $cm->showdescription;
     if (!empty($CFG->enableavailability)) {
-        $data->availablefrom      = $cm->availablefrom;
-        $data->availableuntil     = $cm->availableuntil;
-        $data->showavailability   = $cm->showavailability;
+        $data->availabilityconditionsjson = $cm->availability;
     }
 
     if (plugin_supports('mod', $data->modulename, FEATURE_MOD_INTRO, true)) {

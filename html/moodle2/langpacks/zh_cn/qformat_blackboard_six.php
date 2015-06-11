@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qformat_blackboard_six', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   qformat_blackboard_six
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['defaultname'] = '导入的问题 {$a}';
 $string['errormanifest'] = '解析 IMS 说明文档时出错';
 $string['filenothandled'] = '该文件包含文件 {$a} 的参考资料，此文件在导入过程中没有处理。';
 $string['imagenotfound'] = '在该导入中没有找到路径为 {$a} 的图片文件。';
+$string['importedcategory'] = '导入类别{$a}';
 $string['importnotext'] = '在 XML 文件中丢失问题文本';
 $string['notenoughtsubans'] = '无法导入匹配问题 {$a}，因为一个匹配的问题必须包括至少两个问题以及三个答案。';
 $string['pluginname'] = 'Blackboard V6+';

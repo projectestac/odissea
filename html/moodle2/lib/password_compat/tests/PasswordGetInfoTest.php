@@ -4,14 +4,7 @@ global $CFG;
 require_once($CFG->dirroot . '/lib/password_compat/lib/password.php');
 
 class PasswordGetInfoTest extends PHPUnit_Framework_TestCase {
-
-    protected function setUp() {
-        if (password_compat_not_supported()) {
-            // Skip test if password_compat is not supported.
-            $this->markTestSkipped('password_compat not supported');
-        }
-    }
-
+    
     public static function provideInfo() {
         return array(
             array('foo', array('algo' => 0, 'algoName' => 'unknown', 'options' => array())),

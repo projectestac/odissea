@@ -440,7 +440,7 @@ if (!$nonrespondents) {
             $editor = editors_get_preferred_editor();
             $editor->use_editor($id, questionnaire_get_editor_options($context));
             $texteditor = html_writer::tag('div', html_writer::tag('textarea', $message,
-                            array('id' => $id, 'name' => "message", '', '')));
+                            array('id' => $id, 'name' => "message", 'rows'=>'10', 'cols'=>'60')));
             echo '<input type="hidden" name="format" value="'.FORMAT_HTML.'" />';
 
 
@@ -476,3 +476,14 @@ echo $OUTPUT->box_end();
 // Finish the page.
 
 echo $OUTPUT->footer();
+
+// Log this questionnaire show non-respondents action.
+$context = context_module::instance($questionnaire->cm->id);
+$anonymous = $questionnaire->respondenttype == 'anonymous';
+
+$event = \mod_questionnaire\event\non_respondents_viewed::create(array(
+                'objectid' => $questionnaire->id,
+                'anonymous' => $anonymous,
+                'context' => $context
+));
+$event->trigger();

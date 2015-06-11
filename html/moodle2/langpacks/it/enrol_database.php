@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_database', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configurare istanze plugin Database esterno';
 $string['database:unenrol'] = 'Disiscrivi utenti sospesi';
 $string['dbencoding'] = 'Codifica databse';
 $string['dbhost'] = 'Host database';
@@ -63,6 +64,8 @@ $string['remotecoursefield'] = 'Campo remoto per i corsi';
 $string['remotecoursefield_desc'] = 'Il nome del campo della tabella remota utilizzato per individuare il corso nella tabella dei corsi.';
 $string['remoteenroltable'] = 'Tabella remota contenente le iscrizioni degli utenti';
 $string['remoteenroltable_desc'] = 'Il nome della tabella remota che contiene l\'elenco degli utenti iscritti. Lasciando vuoto il nome non sarà effettuata la sincronizzazione delle iscrizioni degli utenti.';
+$string['remoteotheruserfield'] = 'Campo remoto per Altri utenti';
+$string['remoteotheruserfield_desc'] = 'Il nome del campo della tabella remota utilizzato per indicare assegnazioni di ruolo per "Altri utenti"';
 $string['remoterolefield'] = 'Campo remoto per il ruolo';
 $string['remoterolefield_desc'] = 'Il nome del campo della tabella remota utilizzato per individuare il ruolo nella tabella dei ruoli.';
 $string['remoteuserfield'] = 'Campo remoto per l\'utente';

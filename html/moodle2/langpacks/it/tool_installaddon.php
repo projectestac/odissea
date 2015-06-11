@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_installaddon', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,20 +27,20 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Accettazione';
 $string['acknowledgementmust'] = 'Devi accettare le condizioni';
-$string['acknowledgementtext'] = 'Sono consapevole che è mia responsabilità disporre di backup completi del sito effettuati prima di installare plugin. Accetto e comprendo che i plugin (ivi inclusi quelli provenienti da siti non ufficiali) possono contenere problemi di sicurezza, rendere il sito non funzionante nonché provocare la perdita o diffusione di dati.';
+$string['acknowledgementtext'] = 'Sono consapevole che è mia responsabilità disporre di backup completi del sito effettuati prima di installare plugin aggiuntivi. Accetto e comprendo che i plugin aggiuntivi (ivi inclusi quelli provenienti da siti non ufficiali) possono contenere problemi di sicurezza, rendere il sito non funzionante nonché provocare la perdita di dati o la diffusione di dati sensibili.';
 $string['featuredisabled'] = 'L\'installazione di plugin è disabilitata';
 $string['installaddon'] = 'Installa plugin!';
-$string['installaddons'] = 'Installazione plugin';
-$string['installexception'] = 'Oops... Si è verificato un errore durante l\'installazione del plugin. E\' possibile attivare la modalità di debug per individuare meglio la causa dell\'errore.';
+$string['installaddons'] = 'Installa plugin';
+$string['installexception'] = 'Oops... Si è verificato un errore durante l\'installazione del plugin. E\' possibile attivare la modalità debugging per individuare meglio la causa dell\'errore.';
 $string['installfromrepo'] = 'Installazione dal Moodle plugins directory';
 $string['installfromrepo_help'] = 'Sarai reindirizzato sul Moodle plugins directory per cercare il plugin da installare. Per facilitare l\'installazione del plugin, verranno anche trasmessi Il nome del sito, l\'URL e la versione di Moodle utilizzata.';
-$string['installfromzip'] = 'Installazione plugin da file ZIP';
+$string['installfromzip'] = 'Installa plugin da file ZIP';
 $string['installfromzipfile'] = 'Pacchetto ZIP';
 $string['installfromzipfile_help'] = 'Il pacchetto ZIP del plugin deve contenere solo una cartella con il nome del plugin. Il pacchetto ZIP sarà estratto nella cartella di destinazione designata dal tipo di plugin. I pacchetti scaricati tramite Moodle plugins directory hanno questo formato.';
 $string['installfromzip_help'] = 'Oltre alla installazione tramite Moodle plugins directory, è anche possibile installare manualmente plugin tramite caricamento di un pacchetto ZIP. Il pacchetto ZIP deve avere la stessa struttura dei pacchetti disponibili sul Moodle plugins directory.';
 $string['installfromziprootdir'] = 'Rinomina cartella radice';
 $string['installfromziprootdir_help'] = 'Alcuni pacchetti ZIP, come ad esempio i pacchetti generati da Github, possono contenere un nome errato per la cartella radice. Se necessario, tramite questo campo è possibile rinominare la cartella radice.';
-$string['installfromzipsubmit'] = 'Installazione plugin da file ZIP';
+$string['installfromzipsubmit'] = 'Installa plugin da file ZIP';
 $string['installfromziptype'] = 'Tipo plugin';
 $string['installfromziptype_help'] = 'Scegliere il tipo di plugin che si intende installare. La scelta di un tipo errato impedirà il corretto completamento della procedura di installazione.';
 $string['permcheck'] = 'E\' necessario accertarsi che la cartella radice del tipo di plugin sia scrivibile dal processo web server';
@@ -53,12 +53,12 @@ $string['remoterequestalreadyinstalled'] = 'E\' stato richiesto di installare il
 $string['remoterequestconfirm'] = 'E\' stato richiesto di installare il plugin {$a->name} ({$a->component}) versione {$a->version} dal Moodle plugins directory. Se si decide di proseguire, il pacchetto ZIP contenente il plugin verrà prima scaricato per essere verificato, senza essere installato.';
 $string['remoterequestinvalid'] = 'E\' stato richiesto di installare un plugin dal Moodle plugins directory. Sfortunatamente la richiesta non è valida e il plugin non può essere installato';
 $string['remoterequestpermcheck'] = 'E\' stato richiesto di installare il plugin {$a->name} ({$a->component}) versione {$a->version} dal Moodle plugins directory. La cartella di destinazione <strong>{$a->typepath}</strong> del tipo di plugin <strong>non è scrivibile</strong>. E\' necessario dare al processo web server i permessi di scrittura sulla cartella, dopodiché sarà possibile premere il pulsante "continua" per ripetere i controlli.';
-$string['remoterequestpluginfoexception'] = 'Oops... Si è verificato un errore durante la richiesta di informazioni sul plugin {$a->name} ({$a->component}) versione {$a->version}. L\'installazione del plugin non può proseguire. E\' possibile attivare la modalità di debug per individuare meglio la causa dell\'errore.';
+$string['remoterequestpluginfoexception'] = 'Oops... Si è verificato un errore durante la richiesta di informazioni sul plugin {$a->name} ({$a->component}) versione {$a->version}. L\'installazione del plugin non può proseguire. E\' possibile attivare la modalità debugging per individuare meglio la causa dell\'errore.';
 $string['validation'] = 'Verifica pacchetto plugin';
 $string['validationmsg_componentmatch'] = 'Nome plugin';
 $string['validationmsg_componentmismatchname'] = 'Discrepanza sul nome del plugin';
 $string['validationmsg_componentmismatchname_help'] = 'Alcuni pacchetti ZIP, come ad esempio i pacchetti generati da Github, possono contenere nomi errati della cartella radice. E\' necessario correggere il nome della cartella radice rendendolo coincidente con il nome dichiarato del plugin.';
-$string['validationmsg_componentmismatchname_info'] = 'Il plugin dichiara il nome di \'{$a}\', ma questo nome non coincide con il nome della cartella radice';
+$string['validationmsg_componentmismatchname_info'] = 'Il plugin dichiara il nome \'{$a}\', ma questo nome non coincide con il nome della cartella radice.';
 $string['validationmsg_componentmismatchtype'] = 'Discrepanza sul tipo di plugin';
 $string['validationmsg_componentmismatchtype_info'] = 'Hai selezionato il tipo  \'{$a->expected}\' ma il plugin dichiara di essere di tipo \'{$a->found}\'.';
 $string['validationmsg_filenotexists'] = 'I file estratti non sono stati trovati';
@@ -90,12 +90,13 @@ $string['validationmsg_rootdir_help'] = 'Il nome della cartella radice contenuta
 $string['validationmsg_rootdirinvalid'] = 'Nome del plugin non valido';
 $string['validationmsg_rootdirinvalid_help'] = 'Il nome della cartella radice contenuta nel pacchetto ZIP viola i requisiti sintattici formali. Alcuni pacchetti ZIP, come ad esempio i pacchetti generati da Github, possono contenere nomi errati della cartella radice. E\' necessario correggere il nome della cartella radice rendendolo coincidente con il nome del plugin.';
 $string['validationmsg_targetexists'] = 'La cartella di destinazione è già esistente';
-$string['validationmsg_targetexists_help'] = 'La cartella dove installare in plugin non deve esistere.';
+$string['validationmsg_targetexists_help'] = 'La cartella dove installare il plugin non deve essere già esistente.';
 $string['validationmsg_unknowntype'] = 'Tipo plugin sconosciuto';
 $string['validationresult0'] = 'La verifica è fallita!';
-$string['validationresult0_help'] = 'Sono stati rilevati problemi gravi. Installare il plugin non è sicuro. Per maggiori informazioni controllare il log dei messaggi della verifica';
+$string['validationresult0_help'] = 'Sono stati rilevati problemi gravi. Installare il plugin non è sicuro. Per maggiori informazioni controllare il log dei messaggi di verifica.';
 $string['validationresult1'] = 'Verifica completata correttamente!';
 $string['validationresult1_help'] = 'Il plugin è stato verificato e non sono stati rilevati problemi gravi.';
+$string['validationresult2_help'] = 'Non sono stati rilevati problemi gravi. E\' possibile proseguire con l\'installazione del plugin. Per maggiori informazioni e per eventuali avvisi controllare il log dei messaggi di verifica.';
 $string['validationresultinfo'] = 'Info';
 $string['validationresultmsg'] = 'Messaggio';
 $string['validationresultstatus'] = 'Stato';

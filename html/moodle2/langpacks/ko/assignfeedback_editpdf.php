@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['generatefeedback'] = '피드백 PDF 만들기';
 $string['generatingpdf'] = '피드백 PDF 만들기 ...';
 $string['gotopage'] = '페이지로 가기';
 $string['green'] = '녹색';
-$string['gspath'] = 'Ghostscript 경로';
 $string['highlight'] = '하이라이트';
 $string['launcheditor'] = 'PDF 편집기를 실행합니다...';
 $string['line'] = '라인';

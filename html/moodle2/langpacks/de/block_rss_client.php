@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,47 +36,48 @@ $string['clientnumentries'] = 'Standardzahl der Einträge, die pro Feed angezeig
 $string['clientshowchannellinklabel'] = 'Soll ein Link zur Originalseite angezeigt werden? Hinweis: kann nur genutzt werden, wenn der RSS-Feed einen Link verwendet.';
 $string['clientshowimagelabel'] = 'Grafik anzeigen, wenn vorhanden';
 $string['configblock'] = 'Block konfigurieren';
-$string['couldnotfindfeed'] = 'RSS-Feed mit der ID konnte nicht gefunden werden';
+$string['couldnotfindfeed'] = 'RSS Feed mit der ID konnte nicht gefunden werden';
+$string['couldnotfindloadrssfeed'] = 'RSS Feed konnte nicht gefunden bzw. nicht geladen werden.';
 $string['customtitlelabel'] = 'Titel (leer lassen, um den Titel der Quelle zu wenden)';
-$string['deletefeedconfirm'] = 'Möchten Sie diesen RSS-Feed wirklich löschen?';
+$string['deletefeedconfirm'] = 'Möchten Sie diesen RSS Feed wirklich löschen?';
 $string['disabledrssfeeds'] = 'RSS Feeds sind deaktiviert';
 $string['displaydescriptionlabel'] = 'Beschreibung für jeden Link anzeigen?';
-$string['editafeed'] = 'RSS-Feed bearbeiten';
-$string['editfeeds'] = 'Bearbeiten, Eintragen oder Austragen von RSS-Feeds';
-$string['editnewsfeeds'] = 'RSS-Feeds bearbeiten';
-$string['editrssblock'] = 'RSS-Schlagzeilen bearbeiten';
-$string['enableautodiscovery'] = 'RSS-Feeds automatisch erkennen';
-$string['enableautodiscovery_help'] = 'Wenn diese Option aktiviert ist, werden RSS-Feeds auf Webseiten automatisch erkannt. Wenn Sie z.B. http://docs.moodle.org als Webseite eingeben, dann würde http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss automatisch gefunden werden.';
+$string['editafeed'] = 'RSS Feed bearbeiten';
+$string['editfeeds'] = 'RSS Feeds verwalten';
+$string['editnewsfeeds'] = 'RSS Feeds bearbeiten';
+$string['editrssblock'] = 'RSS Themen bearbeiten';
+$string['enableautodiscovery'] = 'RSS Feeds automatisch erkennen';
+$string['enableautodiscovery_help'] = 'Wenn diese Option aktiviert ist, werden RSS Feeds auf Webseiten automatisch erkannt. Wenn Sie z.B. http://docs.moodle.org als Webseite eingeben, dann würde http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss automatisch gefunden werden.';
 $string['errorloadingfeed'] = 'Fehler beim Laden des RSS Feeds ({$a})';
-$string['feed'] = 'RSS-Feed';
-$string['feedadded'] = 'RSS-Feed hinzugefügt';
-$string['feeddeleted'] = 'RSS-Feed gelöscht';
+$string['feed'] = 'RSS Feed';
+$string['feedadded'] = 'RSS Feed hinzugefügt';
+$string['feeddeleted'] = 'RSS Feed gelöscht';
 $string['feeds'] = 'RSS-Feeds';
-$string['feedsaddedit'] = 'RSS-Feeds bearbeiten';
-$string['feedsconfigurenewinstance'] = 'Klicken Sie hier, um den Block für RSS Feeds zu konfigurieren';
-$string['feedsconfigurenewinstance2'] = 'Klicken Sie auf das Symbol \'Bearbeiten\', um diesen Block für RSS Feeds zu konfigurieren';
-$string['feedupdated'] = 'RSS-Feed aktualisiert';
-$string['feedurl'] = 'URL des RSS-Feed';
+$string['feedsaddedit'] = 'RSS Feeds bearbeiten';
+$string['feedsconfigurenewinstance'] = 'Um den Block \'RSS Feeds\' zu konfigurieren, klicken Sie hier.';
+$string['feedsconfigurenewinstance2'] = 'Um den Block \'RSS Feeds\' zu konfigurieren, klicken Sie auf \'Bearbeiten\'.';
+$string['feedupdated'] = 'RSS Feed aktualisiert';
+$string['feedurl'] = 'URL des RSS Feed';
 $string['findmorefeeds'] = 'Weitere RSS Feeds suchen';
-$string['managefeeds'] = 'Meine RSS-Feeds verwalten';
+$string['managefeeds'] = 'Meine RSS Feeds verwalten';
 $string['nofeeds'] = 'Es sind keine RSS Feeds für diese Seite definiert.';
-$string['numentries'] = 'Einträge pro RSS-Feed';
-$string['pickfeed'] = 'RSS-Feed auswählen';
-$string['pluginname'] = 'Externe RSS Feeds';
-$string['remotenewsfeed'] = 'Externer RSS-Feed';
-$string['rss_client:addinstance'] = 'Block \'Externe RSS Feeds\' hinzufügen';
+$string['numentries'] = 'Einträge pro RSS Feed';
+$string['pickfeed'] = 'RSS Feed auswählen';
+$string['pluginname'] = 'RSS Feeds';
+$string['remotenewsfeed'] = 'RSS Feed';
+$string['rss_client:addinstance'] = 'Block \'RSS Feeds\' hinzufügen';
 $string['rss_client:createprivatefeeds'] = 'Persönliche RSS Feeds erstellen';
 $string['rss_client:createsharedfeeds'] = 'Gemeinsame RSS Feeds erstellen';
 $string['rss_client:manageanyfeeds'] = 'Alle RSS Feeds verwalten';
 $string['rss_client:manageownfeeds'] = 'Persönliche RSS Feeds verwalten';
 $string['rss_client:myaddinstance'] = 'Block \'Externe RSS Feeds\' für \'Meine Startseite\' hinzufügen';
-$string['seeallfeeds'] = 'Alle RSS-Feeds anzeigen';
-$string['sharedfeed'] = 'Gemeinsamer RSS-Feed';
+$string['seeallfeeds'] = 'Alle RSS Feeds anzeigen';
+$string['sharedfeed'] = 'Gemeinsamer RSS Feed';
 $string['shownumentrieslabel'] = 'Maximale Anzahl der angezeigten Einträge pro Block';
 $string['submitters'] = 'Wer darf neue RSS Feeds anlegen? Bereitgestellte RSS-Feeds können in allen Seiten genutzt werden.';
 $string['submitters2'] = 'Bereitsteller/innen für RSS-Feeds';
 $string['timeout'] = 'Zeitdauer (in Minuten), bevor ein RSS Feed im Cache ungültig wird. Dieser Wert legt die minimale Zeit fest. Der RSS-Feed wird im Cache aktualisiert, sobald der dann nachfolgende Cronjob abläuft. Empfohlen ist ein Wert von minimal 30 Minuten.';
 $string['timeout2'] = 'Timeout';
-$string['timeoutdesc'] = 'Zeitdauer für einen RSS Feed (in Minuten) , bevor der Cache erneuert wird.';
-$string['updatefeed'] = 'URL für RSS-Feed ändern';
-$string['viewfeed'] = 'RSS-Feed anzeigen';
+$string['timeoutdesc'] = 'Zeitdauer für RSS Feeds (in Minuten)';
+$string['updatefeed'] = 'URL für RSS Feed ändern';
+$string['viewfeed'] = 'RSS Feed anzeigen';

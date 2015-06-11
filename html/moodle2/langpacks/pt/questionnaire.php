@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,7 @@ $string['essaybox'] = 'Caixa de ensaio';
 $string['essaybox_help'] = 'Esta questão irá exibir uma caixa de texto simples com X colunas (ou largura da área de texto) e Y linhas (número de linhas de texto).
 
 Se deixar tanto X como Yy com o seu valor predefinido de 0 (ou se o configurar para 0), então será exibido um editor HTML com valores standard de altura e largura (se estiver disponível no contexto disciplina/aluno e perfil do participante).';
+$string['event_all_responses_deleted'] = 'Todas as respostas foram apagadas';
 $string['field'] = 'Questão {$a}';
 $string['fieldlength'] = 'Tamanho da caixa de texto';
 $string['fieldlength_help'] = 'Para o tipo de questão **Caixa de texto**, insira o valor do **Comprimento da caixa de texto** e o **Comprimento máximo do texto** permitido.

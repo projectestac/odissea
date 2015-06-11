@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,6 +132,14 @@ $string['entry'] = 'Entry';
 $string['entrysaved'] = 'Your entry has been saved';
 $string['errormustbeteacher'] = 'You need to be a teacher to use this page!';
 $string['errorpresetexists'] = 'There is already a preset with the selected name';
+$string['eventfieldcreated'] = 'Field created';
+$string['eventfielddeleted'] = 'Field deleted';
+$string['eventfieldupdated'] = 'Field updated';
+$string['eventrecordcreated'] = 'Record created';
+$string['eventrecorddeleted'] = 'Record deleted';
+$string['eventrecordupdated'] = 'Record updated';
+$string['eventtemplateupdated'] = 'Template updated';
+$string['eventtemplateviewed'] = 'Templates viewed';
 $string['example'] = 'Database module example';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';

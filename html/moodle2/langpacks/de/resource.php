@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,6 @@ $string['modulename_help'] = 'Wenn ein Lernmaterial als Datei vorliegt, kann es 
 
 Tipp: Wenn Sie mehrere zusammenhängende HTML-Dateien als Lerninhalt nutzen wollen, packen Sie alles als ZIP-Datei zusammen und laden es in den Kurs hoch. Entpacken Sie dort die ZIP-Datei wieder und markieren Sie die Startseite (oft: index.html) als Hauptdatei im Menü hinter dem Dateinamen.';
 $string['modulenameplural'] = 'Dateien';
-$string['neverseen'] = 'Arbeitsmaterial nie angesehen';
 $string['notmigrated'] = 'Dieser Materialtyp ({$a}) wurde bisher noch nicht migriert';
 $string['optionsheader'] = 'Optionen';
 $string['page-mod-resource-x'] = 'Jede Dateiseite';

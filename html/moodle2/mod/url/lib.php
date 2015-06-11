@@ -18,8 +18,7 @@
 /**
  * Mandatory public API of url module
  *
- * @package    mod
- * @subpackage url
+ * @package    mod_url
  * @copyright  2009 Petr Skoda  {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -36,7 +35,6 @@ function url_supports($feature) {
         case FEATURE_MOD_ARCHETYPE:           return MOD_ARCHETYPE_RESOURCE;
         case FEATURE_GROUPS:                  return false;
         case FEATURE_GROUPINGS:               return false;
-        case FEATURE_GROUPMEMBERSONLY:        return true;
         case FEATURE_MOD_INTRO:               return true;
         case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
         case FEATURE_GRADE_HAS_GRADE:         return false;
@@ -66,7 +64,13 @@ function url_reset_userdata($data) {
 }
 
 /**
- * List of view style log actions
+ * List the actions that correspond to a view of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = 'r' and edulevel = LEVEL_PARTICIPATING will
+ *       be considered as view action.
+ *
  * @return array
  */
 function url_get_view_actions() {
@@ -74,7 +78,13 @@ function url_get_view_actions() {
 }
 
 /**
- * List of update style log actions
+ * List the actions that correspond to a post of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = ('c' || 'u' || 'd') and edulevel = LEVEL_PARTICIPATING
+ *       will be considered as post action.
+ *
  * @return array
  */
 function url_get_post_actions() {
@@ -180,57 +190,6 @@ function url_delete_instance($id) {
     $DB->delete_records('url', array('id'=>$url->id));
 
     return true;
-}
-
-/**
- * Return use outline
- * @param object $course
- * @param object $user
- * @param object $mod
- * @param object $url
- * @return object|null
- */
-function url_user_outline($course, $user, $mod, $url) {
-    global $DB;
-
-    if ($logs = $DB->get_records('log', array('userid'=>$user->id, 'module'=>'url',
-                                              'action'=>'view', 'info'=>$url->id), 'time ASC')) {
-
-        $numviews = count($logs);
-        $lastlog = array_pop($logs);
-
-        $result = new stdClass();
-        $result->info = get_string('numviews', '', $numviews);
-        $result->time = $lastlog->time;
-
-        return $result;
-    }
-    return NULL;
-}
-
-/**
- * Return use complete
- * @param object $course
- * @param object $user
- * @param object $mod
- * @param object $url
- */
-function url_user_complete($course, $user, $mod, $url) {
-    global $CFG, $DB;
-
-    if ($logs = $DB->get_records('log', array('userid'=>$user->id, 'module'=>'url',
-                                              'action'=>'view', 'info'=>$url->id), 'time ASC')) {
-        $numviews = count($logs);
-        $lastlog = array_pop($logs);
-
-        $strmostrecently = get_string('mostrecently');
-        $strnumviews = get_string('numviews', '', $numviews);
-
-        echo "$strnumviews - $strmostrecently ".userdate($lastlog->time);
-
-    } else {
-        print_string('neverseen', 'url');
-    }
 }
 
 /**

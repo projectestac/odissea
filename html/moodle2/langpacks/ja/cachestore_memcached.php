@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['bufferwrites'] = '書き込みバッファ';
 $string['bufferwrites_help'] = 'I/Oバッファを有効または無効にします。I/Oバッファを有効にすることで、コマンドを送信する代わりに「バッファ」に保持します。データ参照に関する操作すべてにおいて、このバッファをリモート接続に送信します。接続終了または閉鎖に関しても、リモート接続にバッファ済みデータが送信されることになります。';
+$string['clustered'] = 'クラスタサーバを有効にする';
+$string['clusteredheader'] = 'サーバを分割する';
+$string['clustered_help'] = 'これは「read-one」および「set-multi」機能を有効にするために使用します。
+
+これはロードバランス設定に関して、ストア改善を作成する場合を意図しています。ストアは1台のサーバ (通常、localhost) から取得しますが、多くの台数 (ロードバランスプール内のサーバすべて) を設定します。リードの割合が高く設定されているキャッシュの場合、これにより相当割合のネットワークオーバーヘッドを減らすことができます。
+
+この設定が有効にされた場合、上記に一覧表示されているサーバがフェッチに使用されます。';
 $string['hash'] = 'ハッシュメソッド';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'デフォルト (1回につき1つ)';
@@ -46,6 +53,7 @@ $string['serialiser_igbinary'] = 'igbinaryシリアライザ';
 $string['serialiser_json'] = 'JSONシリアライザ';
 $string['serialiser_php'] = 'デフォルトのPHPシリアライザ';
 $string['servers'] = 'サーバ';
+$string['serversclusterinvalid'] = 'クラスタが有効にされている場合、厳密に1台のサーバを必要とします。';
 $string['servers_help'] = 'ここではmemcachedアダプタに使用されるサーバを設定します。
 サーバは1行に1台のサーバアドレス、任意でポートおよびウェイト値を記述することができます。
 ポートが指定されない場合、デフォルトポート (11211) が使用されます。
@@ -55,11 +63,22 @@ $string['servers_help'] = 'ここではmemcachedアダプタに使用される�
 server.url.com
 ipaddress:ポート
 servername:ポート:ウェイト値
-</pre>';
+</pre>
+
+「クラスタサーバを有効にする」が有効にされた場合、ここに1台のサーバのみ表示される必要があります。通常、これは「127.0.0.1」または「localhost」のようにローカルマシンを解決する名称となります。';
 $string['sessionhandlerconflict'] = '警告: memcached インスタンス ({$a}) はセッションとして同じmemcachedサーバを使用するよう設定されています。すべてのキャッシュを削除することにより、セッションも削除されることになります。';
+$string['setservers'] = 'サーバを設定する';
+$string['setservers_help'] = 'これはデータが修正された場合に更新されるサーバの一覧です。通常、プール内サーバの完全修飾名となります。仮に異なるホスト名であったとしても、上記に一覧表示されている「サーバ」を含む必要があります。サーバはサーバアドレスおよび任意でポートを1行に1台定義します。
+ポートが提供されない場合、デフォルトポート (11211) が使用されます。
+
+例:
+<pre>
+server.url.com
+ipaddress:port
+</pre>';
 $string['testservers'] = 'テストサーバ';
-$string['testservers_desc'] = 'テストサーバは単体テストおよびパフォーマンステストに使用されます。テストサーバの配置は完全に任意です。サーバは1行に1台のサーバアドレス、任意でポートおよびウェイト値を記述することができます。
-ポートが指定されない場合、デフォルトポート (11211) が使用されます。';
+$string['testservers_desc'] = 'memcachedサーバをテストするための1つまたはそれ以上の接続ストリングです。テストサーバが指定された場合、管理ブロックのキャッシュパフォーマンスページを使用してmemcacheパフォーマンスをテストすることができます。
+例: 127.0.0.1:11211';
 $string['usecompression'] = '圧縮を使用する';
 $string['usecompression_help'] = 'ペイロード圧縮を有効または無効にします。有効にした場合、特定の閾値より長いアイテム値 (現在100バイト) は透過的に、保存時に圧縮され、参照時に解凍されます。';
 $string['useserialiser'] = 'シリアライザを使用する';

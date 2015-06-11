@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'Générer le feedback PDF';
 $string['generatingpdf'] = 'Génération du PDF...';
 $string['gotopage'] = 'Aller à la page';
 $string['green'] = 'Vert';
-$string['gspath'] = 'Chemin d\'accès à Ghostscript';
-$string['gspath_help'] = 'Sur Linux, ce réglage peut être laissé par défaut sur « /usr/bin/gs/ ». Sur Mac OS X, c\'est plutôt « /usr/local/bin/gs ». Sous Windows, ce sera quelque chose comme « c:gsbingswin32c.exe » (assurez-vous qu\'aucun espace ne soit présent dans le chemin ; si nécessaire, copier les fichiers « gswin32c.exe » et « gsdll32.dll » dans un autre dossier dont le chemin ne comporte pas d\'espace).';
+$string['gsimage'] = 'Image de test Ghostscript';
 $string['highlight'] = 'Surlignage';
 $string['jsrequired'] = 'L\'annotation de documents PDF requiert l\'activation de Javascript. Veuillez activer Javascript dans votre navigateur si vous désirez utiliser cette fonctionnalité.';
 $string['launcheditor'] = 'Lancer l\'éditeur PDF...';
@@ -66,6 +65,7 @@ $string['output'] = 'Sortie :';
 $string['oval'] = 'Ovale';
 $string['pagenumber'] = 'Page {$a}';
 $string['pagexofy'] = 'Page {$a->page} sur {$a->total}';
+$string['pathtogspathdesc'] = 'Veuillez remarquer que les annotations PDF nécessitent la définition du chemin vers le logiciel Ghostscript dans {$a}.';
 $string['pen'] = 'Plume';
 $string['pluginname'] = 'Annotation PDF';
 $string['rectangle'] = 'Rectangle';
@@ -90,4 +90,3 @@ $string['unsavedchanges'] = 'Modifications non enregistrées';
 $string['viewfeedbackonline'] = 'Afficher le PDF annoté...';
 $string['white'] = 'Blanc';
 $string['yellow'] = 'Jaune';
-$string['zlibnotavailable'] = 'L\'extension zlib de PHP n\'est pas disponible. La fonctionnalité d\'annotation de PDF requiert l\'installation de cette extension et sera désactivée tant que zlib n\'est pas installée et activée.';

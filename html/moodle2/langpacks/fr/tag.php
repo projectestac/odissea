@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Supprimé - Tags de cours';
 $string['description'] = 'Description';
 $string['edittag'] = 'Modifier ce tag';
 $string['entertags'] = 'Taper les tags séparés par des virgules';
-$string['errordeleting'] = 'Erreur lors de la suppression du tag d\'identifiant {$a}. Veuillez informer votre administrateur système.';
 $string['errortagfrontpage'] = 'Il n\'est pas permis de placer des tags sur la page principale du site';
 $string['errorupdatingrecord'] = 'Erreur lors de la modification de l\'enregistrement du tag';
+$string['eventtagadded'] = 'Tag ajouté à un élément';
+$string['eventtagcreated'] = 'Tag créé';
+$string['eventtagdeleted'] = 'Tag supprimé';
+$string['eventtagflagged'] = 'Tag signalé';
+$string['eventtagremoved'] = 'Tag retiré d\'un élément';
+$string['eventtagunflagged'] = 'Tag plus signalé';
+$string['eventtagupdated'] = 'Tag modifié';
 $string['flag'] = 'Fanion';
 $string['flagasinappropriate'] = 'Signaler comme inapproprié';
 $string['helprelatedtags'] = 'Tags reliés, séparés par des virgules';

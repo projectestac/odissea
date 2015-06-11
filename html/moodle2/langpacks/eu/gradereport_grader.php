@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_grader', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['ajaxclicktoclose'] = 'Ezabatzeko lauki honetan klik egin';
 $string['ajaxerror'] = 'Errorea';
 $string['ajaxfailedupdate'] = 'Ezin da [1] [2]-rako eguneratu';
 $string['ajaxfieldchanged'] = 'Orain editatzen ari zaren eremua aldatu da. Nahi al duzu eguneratutako balorea erabili?';
+$string['eventgradereportviewed'] = 'Kalifikazioaren txostena ikusi da';
 $string['grader:manage'] = 'Kalifikatzailearen txostena kudeatu';
 $string['grader:view'] = 'Kalifikatzailearen txostena ikusi';
 $string['pluginname'] = 'Kalifikatzailea';

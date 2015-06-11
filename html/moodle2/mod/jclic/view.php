@@ -83,8 +83,6 @@ $completion->set_module_viewed($cm);
 
 echo $OUTPUT->header();
 
-groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/jclic/view.php?id=' . $cm->id);
-
 echo $OUTPUT->heading($jclic->name);
 
 jclic_view_intro($jclic, $cm);

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_generator', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,6 @@ $string['error_nonexistingcourse'] = '指定されたコースは存在しませ
 $string['error_nopageinstances'] = '選択されたコースにはページモジュールインスタンスがありません。';
 $string['error_notdebugging'] = 'デバッグにおいて、「DEVELOPER」が設定されていないため、このサーバでは利用できません。';
 $string['error_nouserspassword'] = 'テストプランを作成する場合、あなたはconfig.php内に「$CFG->tool_generator_users_password」を設定する必要があります。';
-$string['firstname'] = 'テストコースユーザ';
 $string['fullname'] = 'テストコース: {$a->size}';
 $string['maketestcourse'] = 'テストコースを作成する';
 $string['maketestplan'] = 'JMeterテストプランを作成する';

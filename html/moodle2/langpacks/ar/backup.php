@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -199,5 +199,6 @@ $string['setting_overwriteconf'] = 'استبدال إعدادات المقرر';
 $string['storagecourseandexternal'] = 'منطقة والمجلد المحدد لملفات النسخ الاحتياطي لمقرر';
 $string['storagecourseonly'] = 'منطقة ملفات النسخ الاحتياطي لمقرر';
 $string['storageexternalonly'] = 'المجلد المحدد لنسخ الاحتياطي الآلي المجدول';
+$string['timetaken'] = 'الوقت المستغرق';
 $string['totalcategorysearchresults'] = 'مجموع التصنيفات : {$a}';
 $string['totalcoursesearchresults'] = 'مجموع المقررات: {$a}';

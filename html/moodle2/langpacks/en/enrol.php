@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['enroltimeend'] = 'Enrolment ends';
 $string['enroltimestart'] = 'Enrolment starts';
 $string['enrolusage'] = 'Instances / enrolments';
 $string['enrolusers'] = 'Enrol users';
+$string['enrolxusers'] = 'Enrol {$a} users';
 $string['errajaxfailedenrol'] = 'Failed to enrol user';
 $string['errajaxsearch'] = 'Error when searching users';
 $string['erroreditenrolment'] = 'An error occurred while trying to edit a users enrolment';
@@ -89,6 +90,7 @@ $string['extremovedsuspend'] = 'Disable course enrolment';
 $string['extremovedsuspendnoroles'] = 'Disable course enrolment and remove roles';
 $string['extremovedunenrol'] = 'Unenrol user from course';
 $string['finishenrollingusers'] = 'Finish enrolling users';
+$string['foundxcohorts'] = 'Found {$a} cohorts';
 $string['instanceeditselfwarning'] = 'Warning:';
 $string['instanceeditselfwarningtext'] = 'You are enrolled into this course through this enrolment method, changes may affect your access to this course.';
 $string['invalidenrolinstance'] = 'Invalid enrolment instance';

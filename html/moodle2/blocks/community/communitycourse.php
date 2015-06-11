@@ -15,16 +15,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
- * @package    blocks
- * @subpackage community
- * @author     Jerome Mouneyrac <jerome@mouneyrac.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
- * @copyright  (C) 1999 onwards Martin Dougiamas  http://dougiamas.com
+/**
+ * Controller for various actions of the block.
  *
  * This page display the community course search form.
  * It also handles adding a course to the community block.
  * It also handles downloading a course template.
+ *
+ * @package    block_community
+ * @author     Jerome Mouneyrac <jerome@mouneyrac.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
+ * @copyright  (C) 1999 onwards Martin Dougiamas  http://dougiamas.com
  */
 
 require('../../config.php');
@@ -40,7 +41,7 @@ $context = context_course::instance($courseid);
 $PAGE->set_course($parentcourse);
 $PAGE->set_url('/blocks/community/communitycourse.php');
 $PAGE->set_heading($SITE->fullname);
-$PAGE->set_pagelayout('course');
+$PAGE->set_pagelayout('incourse');
 $PAGE->set_title(get_string('searchcourse', 'block_community'));
 $PAGE->navbar->add(get_string('searchcourse', 'block_community'));
 

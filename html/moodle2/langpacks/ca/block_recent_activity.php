@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_recent_activity', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Activitat recent';
 $string['recent_activity:addinstance'] = 'Afegir un bloc nou d\'activitat recent';
+$string['recent_activity:viewaddupdatemodule'] = 'Mostra al bloc d\'activitat recent els mòduls afegits i actualitzats';
+$string['recent_activity:viewdeletemodule'] = 'Mostra al bloc d\'activitat recent els mòduls suprimits';

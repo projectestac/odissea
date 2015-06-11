@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'form', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['err_alphanumeric'] = 'Deve introduzir apenas letras e números neste ca
 $string['err_email'] = 'Deve introduzir um e-mail válido neste campo';
 $string['err_lettersonly'] = 'Deve introduzir apenas letras neste campo';
 $string['err_maxfiles'] = 'Não pode anexar mais de {$a} ficheiros aqui.';
-$string['err_maxlength'] = 'Deve introduzir neste campo menos de {$a->format}  caracteres.';
+$string['err_maxlength'] = 'Deve introduzir neste campo menos de {$a->format} caracteres.';
 $string['err_minlength'] = 'Deve introduzir neste campo pelo menos {$a->format} caracteres.';
 $string['err_nonzero'] = 'Deve introduzir neste campo um número que não inicie em 0';
 $string['err_nopunctuation'] = 'Não deve introduzir pontuação neste campo.';

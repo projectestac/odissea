@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_spellchecker', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tinymce_spellchecker', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   tinymce_spellchecker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

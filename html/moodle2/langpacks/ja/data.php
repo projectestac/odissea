@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,6 +132,14 @@ $string['entry'] = 'エントリ';
 $string['entrysaved'] = 'エントリが保存されました。';
 $string['errormustbeteacher'] = 'このページは教師のみ使用できます!';
 $string['errorpresetexists'] = '選択した名称のプリセットはすでに存在します。';
+$string['eventfieldcreated'] = 'フィールドが作成されました。';
+$string['eventfielddeleted'] = 'フィールドが削除されました。';
+$string['eventfieldupdated'] = 'フィールドが更新されました。';
+$string['eventrecordcreated'] = 'レコードが作成されました。';
+$string['eventrecorddeleted'] = 'レコードが削除されました。';
+$string['eventrecordupdated'] = 'レコードが更新されました。';
+$string['eventtemplateupdated'] = 'テンプレートが更新されました。';
+$string['eventtemplateviewed'] = 'テンプレートが閲覧されました。';
 $string['example'] = 'データベースモジュール例';
 $string['excel'] = 'Excel';
 $string['expired'] = '申し訳ございません、この活動は {$a} に終了して利用することはできません。';
@@ -314,7 +322,7 @@ $string['save'] = '保存';
 $string['saveandadd'] = '保存して次を追加する';
 $string['saveandview'] = '保存して表示する';
 $string['saveaspreset'] = 'プリセットとして保存する';
-$string['saveaspreset_help'] = 'プリセットとして保存する機能では、サイトの誰でも使用できるよう、プリセットおよびフィールドを公開します (あなたは保存したプリセットをプリセット一覧よりいつでも削除することができます)。';
+$string['saveaspreset_help'] = 'プリセットとして保存する機能では、サイトの誰でも使用できるようプリセットおよびフィールドを公開します (あなたは保存したプリセットをプリセット一覧よりいつでも削除することができます)。';
 $string['savesettings'] = '設定を保存する';
 $string['savesuccess'] = '正常に保存されました。あなたのプリセットは、サイト全体で利用できます。';
 $string['savetemplate'] = 'テンプレートを保存する';

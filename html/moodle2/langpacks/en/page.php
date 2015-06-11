@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,6 @@ $string['createpage'] = 'Create a new page resource';
 $string['displayoptions'] = 'Available display options';
 $string['displayselect'] = 'Display';
 $string['displayselectexplain'] = 'Select display type.';
-$string['eventcoursemoduleviewed'] = 'Page resource viewed';
-$string['eventinstanceslistviewed'] = 'Page instances list viewed';
 $string['legacyfiles'] = 'Migration of old course file';
 $string['legacyfilesactive'] = 'Active';
 $string['legacyfilesdone'] = 'Finished';
@@ -50,7 +48,6 @@ A page may be used
 * To embed several videos or sound files together with some explanatory text';
 $string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Pages';
-$string['neverseen'] = 'Never seen';
 $string['optionsheader'] = 'Display options';
 $string['page:addinstance'] = 'Add a new page resource';
 $string['page-mod-page-x'] = 'Any page module page';
@@ -61,5 +58,7 @@ $string['popupheight'] = 'Pop-up height (in pixels)';
 $string['popupheightexplain'] = 'Specifies default height of popup windows.';
 $string['popupwidth'] = 'Pop-up width (in pixels)';
 $string['popupwidthexplain'] = 'Specifies default width of popup windows.';
+$string['printheading'] = 'Display page name';
+$string['printheadingexplain'] = 'Display page name above content?';
 $string['printintro'] = 'Display page description';
 $string['printintroexplain'] = 'Display page description above content?';

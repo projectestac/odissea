@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,14 +71,14 @@ $string['errorremovenotpermitted'] = 'Je hebt het recht niet om het automatisch 
 $string['errorselectone'] = 'Selecteer één groep voor je deze optie kiest';
 $string['errorselectsome'] = 'Selecteer één of meerdere groepen voor je deze optie kiest';
 $string['evenallocation'] = 'Opmerking: Om de toewijzing aan groepen evenwichtig te houden, verschilt het aantal leden per groep van het aantal dat je opgegeven hebt.';
-$string['event_group_created'] = 'Groep gemaakt';
-$string['event_group_deleted'] = 'Groep verwijderd';
-$string['event_grouping_created'] = 'Groepering gemaakt';
-$string['event_grouping_deleted'] = 'Groepering verwijderd';
-$string['event_grouping_updated'] = 'Groepering aangepast';
-$string['event_group_member_added'] = 'Groepslid toegevoegd';
-$string['event_group_member_removed'] = 'Groepslid verwijderd';
-$string['event_group_updated'] = 'Groep aangepast';
+$string['eventgroupcreated'] = 'Groep gemaakt';
+$string['eventgroupdeleted'] = 'Groep verwijderd';
+$string['eventgroupingcreated'] = 'Groepering gemaakt';
+$string['eventgroupingdeleted'] = 'Groepering verwijderd';
+$string['eventgroupingupdated'] = 'Groepering aangepast';
+$string['eventgroupmemberadded'] = 'Groepslid toegevoegd';
+$string['eventgroupmemberremoved'] = 'Groepslid verwijderd';
+$string['eventgroupupdated'] = 'Groep aangepast';
 $string['existingmembers'] = 'Leden: {$a}';
 $string['filtergroups'] = 'Filter groepeert op:';
 $string['group'] = 'Groep';
@@ -103,14 +103,11 @@ $string['groupingsonly'] = 'Enkel groeperingen';
 $string['groupmember'] = 'Groepslid';
 $string['groupmemberdesc'] = 'Standaardrol voor groepsleden';
 $string['groupmembers'] = 'Groepsleden';
-$string['groupmembersonly'] = 'Enkel beschikbaar voor groeperingsleden';
-$string['groupmembersonlyerror'] = 'Sorry, je moet van minstens één groep die deze activiteit gebruikt lid zijn.';
-$string['groupmembersonly_help'] = 'Als dit is aangevinkt, dan zal de activiteit (of bron) enkel beschikbaar zijn voor gebruikers in de geselecteerde groepering.';
 $string['groupmemberssee'] = 'Bekijk groepsleden';
 $string['groupmembersselected'] = 'Leden van de geselecteerde groep';
 $string['groupmode'] = 'Groepsmodus';
 $string['groupmodeforce'] = 'Forceer groepsmodus';
-$string['groupmodeforce_help'] = 'Als de groepsmodus geforceerd wordt, dan zal de groepsmodus van de cursus op elke activiteit toegepast worden. De instellingen van de groepsmodus in de activieteitenmodules wordt dan genegeerd.';
+$string['groupmodeforce_help'] = 'Als de groepsmodus geforceerd wordt, dan zal de groepsmodus van de cursus op elke activiteit toegepast worden. De instellingen van de groepsmodus in de activiteitenmodules wordt dan genegeerd.';
 $string['groupmode_help'] = 'Er zijn drie types van groepsmodus:
 
 *Geen groepen - er zijn geen subgroepen, iedereen is onderdeel van één grote groep<
@@ -158,6 +155,7 @@ $string['nogroups'] = 'In deze cursus zijn nog geen groepen aangemaakt';
 $string['nogroupsassigned'] = 'Geen groepen toegewezen';
 $string['nopermissionforcreation'] = 'Kan de groep "{$a}" niet maken omdat je niet over voldoende rechten beschikt om dat te doen.';
 $string['nosmallgroups'] = 'Voorkom laatste te kleine groep';
+$string['notingroup'] = 'Negeer gebruikers in groepen';
 $string['notingrouping'] = '[Niet in een groepering]';
 $string['nousersinrole'] = 'Er zijn geen geschikte gebruikers met de geselecteerde rol';
 $string['number'] = 'Aantal groepen of leden per groep';
@@ -174,6 +172,8 @@ $string['removegroupfromselectedgrouping'] = 'Verwijder groep van geselecteeerde
 $string['removegroupingsmembers'] = 'Verwijder alle groepen van groeperingen';
 $string['removegroupsmembers'] = 'Verwijder alle groepsleden';
 $string['removeselectedusers'] = 'Verwijder geselecteerde gebruikers';
+$string['selectfromgroup'] = 'Selecteer leden van groep';
+$string['selectfromgrouping'] = 'Selecteer leden van groepering';
 $string['selectfromrole'] = 'Kies leden met rol';
 $string['showgroupsingrouping'] = 'Toon groepen in groepering';
 $string['showmembersforgroup'] = 'Toon leden van groep';

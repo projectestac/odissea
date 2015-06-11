@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_outline', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventactivityreportviewed'] = 'Rapport d\'activité consulté';
+$string['eventoutlinereportviewed'] = 'Rapport résumé consulté';
+$string['neverseen'] = 'Jamais consulté';
+$string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
 $string['outline:view'] = 'Consulter le rapport d\'activité du cours';
 $string['page-report-outline-index'] = 'Rapport résumé de cours';
 $string['page-report-outline-user'] = 'Rapport utilisateur de résumé de cours';

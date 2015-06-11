@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Discussion';
 $string['emailmessages'] = 'Email messages when I am offline';
 $string['emailtagline'] = 'This is a copy of a message sent to you at "{$a->sitename}". Go to {$a->url} to reply.';
 $string['emptysearchstring'] = 'You must search for something';
+$string['enabled'] = 'Enabled';
 $string['errorcallingprocessor'] = 'Error calling defined output';
 $string['errortranslatingdefault'] = 'Error translating default setting provided by plugin, using system defaults instead.';
+$string['eventmessagecontactadded'] = 'Message contact added';
+$string['eventmessagecontactblocked'] = 'Message contact blocked';
+$string['eventmessagecontactremoved'] = 'Message contact removed';
+$string['eventmessagecontactunblocked'] = 'Message contact unblocked';
+$string['eventmessagesent'] = 'Message sent';
+$string['eventmessageviewed'] = 'Message viewed';
 $string['forced'] = 'Forced';
 $string['formorethan'] = 'For more than';
 $string['gotomessages'] = 'Go to messages';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Unblock contact';
 $string['unreadmessages'] = 'Unread messages ({$a})';
 $string['unreadnewmessage'] = 'New message from {$a}';
 $string['unreadnewmessages'] = 'New messages ({$a})';
-$string['unreadnewnotification'] = 'New notification';
-$string['unreadnewnotifications'] = 'New notifications ({$a})';
 $string['userisblockingyou'] = 'This user has blocked you from sending messages to them';
 $string['userisblockingyounoncontact'] = '{$a} only accepts messages from their contacts.';
 $string['userssearchresults'] = 'Users found: {$a}';

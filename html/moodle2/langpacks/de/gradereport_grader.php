@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_grader', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,10 @@ $string['ajaxclicktoclose'] = 'Klicken Sie in dieses Feld, um es zu entfernen';
 $string['ajaxerror'] = 'Fehler';
 $string['ajaxfailedupdate'] = 'Aktualisierung [1] nach [2] nicht möglich';
 $string['ajaxfieldchanged'] = 'Das von Ihnen aktuell bearbeitete Feld hat sich geändert. Möchten Sie den aktualisierten Wert benutzen?';
+$string['eventgradereportviewed'] = 'Bewerterübersicht angezeigt';
 $string['grader:manage'] = 'Bewerterübersicht verwalten';
 $string['grader:view'] = 'Bewerterübersicht anzeigen';
+$string['overriddengrade'] = 'Überschriebene Bewertung';
 $string['pluginname'] = 'Bewerterübersicht';
 $string['preferences'] = 'Einstellungen für die Bewerterübersicht';
 $string['useractivityfeedback'] = '{$a} Feedback';

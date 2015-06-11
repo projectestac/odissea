@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_recent_activity', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Последние действия';
-$string['recent_activity:addinstance'] = 'Добавлять новый блок последних действий';
+$string['recent_activity:addinstance'] = 'Добавлять новый блок «Последние действия»';
+$string['recent_activity:viewaddupdatemodule'] = 'Просматривать добавленные и обновленные модули в блоке «Последние действия»';
+$string['recent_activity:viewdeletemodule'] = 'Просматривать удаленные модули в блоке «Последние действия»';

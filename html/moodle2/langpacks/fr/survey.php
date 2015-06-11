@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'survey', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,6 +200,9 @@ $string['downloadinfo'] = 'Il vous est possible de télécharger l\'ensemble des
 $string['downloadresults'] = 'Télécharger les résultats';
 $string['downloadtext'] = 'Télécharger les données dans un format texte';
 $string['editingasurvey'] = 'Modification d\'une consultation';
+$string['eventreportdownloaded'] = 'Rapport de consultation téléchargé';
+$string['eventreportviewed'] = 'Rapport de consultation consulté';
+$string['eventresponsesubmitted'] = 'Réponse à la consultation envoyée';
 $string['guestsnotallowed'] = 'Seuls les utilisateurs inscrits peuvent participer à des consultations';
 $string['howlong'] = 'Combien de temps avez-vous mis pour répondre à cette consultation ?';
 $string['howlongoptions'] = 'Moins d\'1 min,1-2 min,2-3 min,3-4 min,4-5 min,5-10 min,Plus de 10 min';
@@ -242,6 +245,7 @@ $string['selectedquestions'] = 'Questions choisies dans un barème, tous les ét
 $string['summary'] = 'Résumé';
 $string['survey:addinstance'] = 'Ajouter une consultation';
 $string['surveycompleted'] = 'Vous avez complètement répondu à cette consultation. Le graphique ci-dessous montre un résumé de vos résultats comparés aux moyennes de la classe.';
+$string['surveycompletednograph'] = 'Vous avez terminé ce sondage.';
 $string['survey:download'] = 'Télécharger les réponses';
 $string['surveygraph'] = 'Graphique de la consultation';
 $string['surveyname'] = 'Nom de la consultation';

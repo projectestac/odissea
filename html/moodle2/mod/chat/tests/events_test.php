@@ -89,6 +89,7 @@ class mod_chat_events_testcase extends advanced_testcase {
         $this->assertEquals($user2->id, $event->userid);
         $expected = array($course->id, 'chat', 'talk', "view.php?id=$cm->id", $chat->id, $cm->id, $user2->id);
         $this->assertEventLegacyLogData($expected, $event);
+        $this->assertEventContextNotUsed($event);
 
         // Sending a message from the system should not trigger any event.
         $sink->clear();
@@ -132,9 +133,10 @@ class mod_chat_events_testcase extends advanced_testcase {
         $this->assertEquals($chat, $event->get_record_snapshot('chat', $chat->id));
         $expected = array($course->id, 'chat', 'report', "report.php?id=$chat->cmid", $chat->id, $chat->cmid);
         $this->assertEventLegacyLogData($expected, $event);
+        $this->assertEventContextNotUsed($event);
     }
 
-    public function test_instances_list_viewed() {
+    public function test_course_module_instance_list_viewed() {
         global $USER;
         $this->resetAfterTest();
 
@@ -146,16 +148,40 @@ class mod_chat_events_testcase extends advanced_testcase {
         $params = array(
             'context' => context_course::instance($course->id)
         );
-        $event = \mod_chat\event\instances_list_viewed::create($params);
+        $event = \mod_chat\event\course_module_instance_list_viewed::create($params);
         $sink = $this->redirectEvents();
         $event->trigger();
         $events = $sink->get_events();
         $event = reset($events);
-        $this->assertInstanceOf('\mod_chat\event\instances_list_viewed', $event);
+        $this->assertInstanceOf('\mod_chat\event\course_module_instance_list_viewed', $event);
         $this->assertEquals($USER->id, $event->userid);
         $this->assertEquals(context_course::instance($course->id), $event->get_context());
         $expected = array($course->id, 'chat', 'view all', "index.php?id=$course->id", '');
         $this->assertEventLegacyLogData($expected, $event);
+        $this->assertEventContextNotUsed($event);
     }
 
+    public function test_course_module_viewed() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $course = $this->getDataGenerator()->create_course();
+        $chat = $this->getDataGenerator()->create_module('chat', array('course' => $course->id));
+        $cm = get_coursemodule_from_instance('chat', $chat->id);
+        $context = context_module::instance($cm->id);
+
+        $params = array(
+            'objectid' => $chat->id,
+            'context' => $context
+        );
+        $event = \mod_chat\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('chat', $chat);
+        $event->trigger();
+
+        $expected = array($course->id, 'chat', 'view', "view.php?id=$cm->id", $chat->id, $cm->id);
+        $this->assertEventLegacyLogData($expected, $event);
+        $this->assertEventContextNotUsed($event);
+        $url = new moodle_url('/mod/chat/view.php', array('id' => $cm->id));
+        $this->assertEquals($url, $event->get_url());
+        $event->get_name();
+    }
 }

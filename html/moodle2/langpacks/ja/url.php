@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,6 @@ $string['modulename_help'] = 'URLモジュールにおいて、教師はコー�
 
 テキストエディタをとおして、URLでは他のリソースまたは活動タイプを追加できることに留意してください。';
 $string['modulenameplural'] = 'URL';
-$string['neverseen'] = '未確認';
 $string['page-mod-url-x'] = 'すべてのURLモジュールページ';
 $string['parameterinfo'] = '&parameter=変数';
 $string['parametersheader'] = 'URL変数';

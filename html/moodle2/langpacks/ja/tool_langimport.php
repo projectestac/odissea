@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_langimport', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,14 @@ $string['install'] = '選択された言語パックをインストールする'
 $string['installedlangs'] = 'インストール済み言語パック';
 $string['langimport'] = '言語インポートユーティリティ';
 $string['langimportdisabled'] = '言語インポート機能は無効にされています。あなたはファイルシステムレベルで言語パックを手動更新する必要があります。手動更新の後、忘れずにストリングキャッシュを消去してください。';
-$string['langpackinstalled'] = '言語パック {$a} が正常にインストールされました。';
-$string['langpackremoved'] = '言語パックがアンインストールされました。';
-$string['langpackupdateskipped'] = '言語パック {$a} の更新がスキップされました。';
-$string['langpackuptodate'] = '言語パック {$a} は最新版です。';
+$string['langpackinstalled'] = '言語パック「 {$a} 」が正常にインストールされました。';
+$string['langpackinstalledevent'] = '言語パックがインストールされました。';
+$string['langpackremoved'] = '言語パック「 {$a} 」がアンインストールされました。';
+$string['langpackremovedevent'] = '言語パックがアンインストールされました。';
+$string['langpackupdated'] = '言語パック「 {$a} 」が正常に更新されました。';
+$string['langpackupdatedevent'] = '言語パックが更新されました。';
+$string['langpackupdateskipped'] = '言語パック「 {$a} 」の更新がスキップされました。';
+$string['langpackuptodate'] = '言語パック「 {$a} 」は最新版です。';
 $string['langupdatecomplete'] = '言語パックの更新が完了しました。';
 $string['missingcfglangotherroot'] = '$CFG->langotherrootの設定値が正しくありません。';
 $string['missinglangparent'] = '「 {$a->lang} 」の親言語「 {$a->parent} 」がありません。';

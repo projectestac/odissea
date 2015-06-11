@@ -46,23 +46,13 @@ class blog_entry_updated extends base {
         $this->context = \context_system::instance();
         $this->data['objecttable'] = 'post';
         $this->data['crud'] = 'u';
-        $this->data['level'] = self::LEVEL_PARTICIPATING;
-    }
-
-    /**
-     * Set custom data of the event - updated blog entry.
-     *
-     * @param \blog_entry $data A reference to the active blog_entry object.
-     */
-    public function set_custom_data(\blog_entry $data) {
-        // Note, this function will be removed in 2.7.
-        $this->set_blog_entry($data);
+        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
     }
 
     /**
      * Sets blog_entry object to be used by observers.
      *
-     * @param \blog_entry $data A reference to the active blog_entry object.
+     * @param \blog_entry $blogentry A reference to the active blog_entry object.
      */
     public function set_blog_entry(\blog_entry $blogentry) {
         $this->blogentry = $blogentry;
@@ -71,6 +61,7 @@ class blog_entry_updated extends base {
     /**
      * Returns updated blog entry for event observers.
      *
+     * @throws \coding_exception
      * @return \blog_entry
      */
     public function get_blog_entry() {
@@ -95,7 +86,7 @@ class blog_entry_updated extends base {
      * @return string
      */
     public function get_description() {
-        return 'Blog entry id '. $this->objectid. ' was updated by userid '. $this->userid;
+        return "The user with id '$this->userid' updated the blog entry with id '$this->objectid'.";
     }
 
     /**
@@ -103,7 +94,7 @@ class blog_entry_updated extends base {
      * @return \moodle_url
      */
     public function get_url() {
-        return new \moodle_url('/blog/index.php', array('entryid' => $this->objectid, 'userid' => $this->userid));
+        return new \moodle_url('/blog/index.php', array('entryid' => $this->objectid));
     }
 
     /**
@@ -132,6 +123,20 @@ class blog_entry_updated extends base {
     protected function get_legacy_logdata() {
         return array(SITEID, 'blog', 'update', 'index.php?userid=' . $this->relateduserid . '&entryid=' . $this->objectid,
                  $this->blogentry->subject);
+    }
+
+    /**
+     * Custom validations.
+     *
+     * @throws \coding_exception
+     * @return void
+     */
+    protected function validate_data() {
+        parent::validate_data();
+
+        if (!isset($this->relateduserid)) {
+            throw new \coding_exception('The \'relateduserid\' must be set.');
+        }
     }
 }
 

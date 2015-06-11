@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'Geef inline commentaar';
+$string['commentinlinedefault'] = 'Geef standaard inline commentaar';
+$string['commentinlinedefault_help'] = 'Indien ingesteld, zal de inline-commentaarfunctie voor alle nieuwe opdrachten standaard ingesteld worden.';
+$string['commentinline_help'] = 'Indien ingeschakeld zal de ingestuurde tekst in het feedback commentaarveld gekopiëerd worden tijdens het beoordelen. Dit maakt het makkelijker om inline commentaar te geven (bijvoorbeeld in een ander kleurtje) of om de originele tekst te bewerken.';
 $string['default'] = 'Standaard ingeschakeld';
 $string['default_help'] = 'Indien ingesteld, dan zal deze feedbackmethode als standaardmethode gebruikt worden voor alle nieuwe opdrachten';
 $string['enabled'] = 'Feedback';

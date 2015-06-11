@@ -63,13 +63,15 @@ class mod_jclic_mod_form extends moodleform_mod {
         // Adding the standard "intro" and "introformat" fields
         $this->add_intro_editor();
 
+        // -------------------------------------------------------------------------------
+        $mform->addElement('header', 'timing', get_string('timing', 'jclic'));
 
         $mform->addElement('date_time_selector', 'timeavailable', get_string('availabledate', 'jclic'), array('optional'=>true));
         $mform->addElement('date_time_selector', 'timedue', get_string('duedate', 'jclic'), array('optional'=>true));
 
         //-------------------------------------------------------------------------------
         // Adding the rest of jclic settings, spreeading all them into this fieldset
-        $mform->addElement('header', 'header_jclic', get_string('header_jclic', 'jclic'));
+        $mform->addElement('header', 'contentheader', get_string('contentheader', 'jclic'));
 
         $mform->addElement('select', 'filetype', get_string('filetype', 'jclic'), jclic::get_file_types());
         $mform->addHelpButton('filetype', 'filetype', 'jclic');
@@ -90,21 +92,13 @@ class mod_jclic_mod_form extends moodleform_mod {
 
         $options = jclic::get_languages();
         $mform->addElement('select', 'lang', get_string('lang', 'jclic'), $options);
-        $mform->setDefault('lang', substr($CFG->lang, 0, -5));
+        $mform->setDefault('lang', $CFG->lang);
 
         $options = jclic::get_skins();
         $mform->addElement('select', 'skin', get_string('skin', 'jclic'), $options);
 
-        $mform->addElement('text', 'width', get_string('width', 'jclic'), array('size'=>'5'));
-        $mform->setDefault('width', '800');
-        $mform->setType('width', PARAM_TEXT);
-
-        $mform->addElement('text', 'height', get_string('height', 'jclic'), array('size'=>'5'));
-        $mform->setDefault('height', '600');
-        $mform->setType('height', PARAM_TEXT);
-
-        //-------------------------------------------------------------------------------
-        $mform->addElement('header', 'header_score', get_string('header_score', 'jclic'));
+        //---GRADING-------------------------------------------------------------------------------
+        $this->standard_grading_coursemodule_elements();
 
         /*$mform->addElement('modgrade', 'maxxgrade', get_string('grade'));
         $mform->setDefault('grade', 100);
@@ -122,9 +116,17 @@ class mod_jclic_mod_form extends moodleform_mod {
         $mform->addElement('select', 'avaluation', get_string('avaluation', 'jclic'), $options);
         $mform->setDefault('avaluation', '-1');
 
-        //-------------------------------------------------------------------------------
+        //---OPTIONS---------------------------------------------------------------------------
+        $mform->addElement('header', 'optionsheader', get_string('appearance'));
 
-        $this->standard_grading_coursemodule_elements();
+        $mform->addElement('text', 'width', get_string('width', 'jclic'), array('size'=>'5'));
+        $mform->setDefault('width', '800');
+        $mform->setType('width', PARAM_TEXT);
+
+        $mform->addElement('text', 'height', get_string('height', 'jclic'), array('size'=>'5'));
+        $mform->setDefault('height', '600');
+        $mform->setType('height', PARAM_TEXT);
+
 
         // add standard elements, common to all modules
         $this->standard_coursemodule_elements();

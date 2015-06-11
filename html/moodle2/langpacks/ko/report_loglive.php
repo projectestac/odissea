@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_loglive', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = '구성요소';
+$string['eventcontext'] = '이벤트 문맥';
+$string['eventloggedas'] = '{$a->realusername}를 {$a->asusername}로';
+$string['eventorigin'] = '오리진';
+$string['eventrelatedfullnameuser'] = '영향받는 사용자';
+$string['eventreportviewed'] = '라이브 로그 리더 봄';
 $string['livelogs'] = '최근 한 시간동안의 로그';
 $string['loglive:view'] = '라이브 로그 보기';
-$string['page'] = '페이지 {$a}';
+$string['nologreaderenabled'] = '활성화된 로그 리더가 없습니다.';
+$string['pause'] = '라이브 업데이트 일지 중지';
 $string['pluginname'] = '현재 기록';
+$string['resume'] = '라이브 업데이트 다시 시작';
+$string['selectlogreader'] = '로그 리더를 선택하십시요.';

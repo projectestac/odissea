@@ -674,17 +674,26 @@ class sqlsrv_native_moodle_database extends moodle_database {
 
     /**
      * Do NOT use in code, to be used by database_manager only!
-     * @param string $sql query
+     * @param string|array $sql query
      * @return bool true
-     * @throws dml_exception A DML specific exception is thrown for any errors.
+     * @throws ddl_change_structure_exception A DDL specific exception is thrown for any errors.
      */
     public function change_database_structure($sql) {
+        $this->get_manager(); // Includes DDL exceptions classes ;-)
+        $sqls = (array)$sql;
+
+        try {
+            foreach ($sqls as $sql) {
+                $this->query_start($sql, null, SQL_QUERY_STRUCTURE);
+                $result = sqlsrv_query($this->sqlsrv, $sql);
+                $this->query_end($result);
+            }
+        } catch (ddl_change_structure_exception $e) {
+            $this->reset_caches();
+            throw $e;
+        }
+
         $this->reset_caches();
-
-        $this->query_start($sql, null, SQL_QUERY_STRUCTURE);
-        $result = sqlsrv_query($this->sqlsrv, $sql);
-        $this->query_end($result);
-
         return true;
     }
 
@@ -767,10 +776,8 @@ class sqlsrv_native_moodle_database extends moodle_database {
      * @throws dml_exception A DML specific exception is thrown for any errors.
      */
     public function get_recordset_sql($sql, array $params = null, $limitfrom = 0, $limitnum = 0) {
-        $limitfrom = (int)$limitfrom;
-        $limitnum = (int)$limitnum;
-        $limitfrom = max(0, $limitfrom);
-        $limitnum = max(0, $limitnum);
+
+        list($limitfrom, $limitnum) = $this->normalise_limit_from_num($limitfrom, $limitnum);
 
         if ($limitfrom or $limitnum) {
             if ($limitnum >= 1) { // Only apply TOP clause if we have any limitnum (limitfrom offset is handled later)
@@ -984,6 +991,10 @@ class sqlsrv_native_moodle_database extends moodle_database {
         $dataobject = (array)$dataobject;
 
         $columns = $this->get_columns($table);
+        if (empty($columns)) {
+            throw new dml_exception('ddltablenotexist', $table);
+        }
+
         $cleaned = array ();
 
         foreach ($dataobject as $field => $value) {
@@ -1313,16 +1324,16 @@ class sqlsrv_native_moodle_database extends moodle_database {
         }
 
         if ($length === false) {
-            return "SUBSTRING($expr, $start, (LEN($expr) - $start + 1))";
+            return "SUBSTRING($expr, " . $this->sql_cast_char2int($start) . ", 2^31-1)";
         } else {
-            return "SUBSTRING($expr, $start, $length)";
+            return "SUBSTRING($expr, " . $this->sql_cast_char2int($start) . ", " . $this->sql_cast_char2int($length) . ")";
         }
     }
 
     /**
      * Does this driver support tool_replace?
      *
-     * @since 2.6.1
+     * @since Moodle 2.6.1
      * @return bool
      */
     public function replace_all_text_supported() {

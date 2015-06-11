@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,14 +118,6 @@ $string['inputwebdirectory'] = '무들 디렉토리 :';
 $string['installation'] = '설치';
 $string['langdownloaderror'] = '안타깝게도 "{$a}" 언어팩을 내려받을 수 없습니다. 영어를 이용하여 설치가 진행될 것입니다.';
 $string['langdownloadok'] = '"{$a}" 언어팩이 성공적으로 설치되었습니다. 해당 언어를 이용하여 설치가 진행될 것입니다.';
-$string['magicquotesruntime'] = 'Magic Quotes 실행 시간';
-$string['magicquotesruntimeerror'] = '이것은 꺼져야 합니다.';
-$string['magicquotesruntimehelp'] = '<p>Magic quotes runtime은 무들이 제대로 작동하기 위해 꺼져야(Off) 합니다.</p>
-
-<p>일반적으로 기본값은 Off 입니다만 다시한번 php.ini파일에 있는 <b>magic_quotes_runtime</b>을 확인해 보세요.</p>
-
-<p>만약에 당신이 php.ini파일에 접근하지 못한다면 무들 디렉토리안에 다음의 내용을 적은 .htaccess 파일을 넣어두기 바랍니다.</p>
-<blockquote><div>php_value magic_quotes_runtime Off</div></blockquote>';
 $string['memorylimit'] = '메모리 한계';
 $string['memorylimiterror'] = 'php의 메모리 사용량이 너무 작게 설정되어 있습니다. 당신은 후에 문제에 봉착할 지도 모릅니다.';
 $string['memorylimithelp'] = '<p>현재 서버의 PHP 메모리 사용량은 {$a} 로 설정되어 있습니다.</p>

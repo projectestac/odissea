@@ -63,6 +63,7 @@ if (!$ineditperiod and !$manageentries) {
 if ($confirm and confirm_sesskey()) { // the operation was confirmed.
     // if it is an imported entry, just delete the relation
 
+    $origentry = fullclone($entry);
     if ($entry->sourceglossaryid) {
         if (!$newcm = get_coursemodule_from_instance('glossary', $entry->sourceglossaryid)) {
             print_error('invalidcoursemodule');
@@ -113,12 +114,27 @@ if ($confirm and confirm_sesskey()) { // the operation was confirmed.
         $rm->delete_ratings($delopt);
     }
 
-    add_to_log($course->id, "glossary", "delete entry", "view.php?id=$cm->id&amp;mode=$prevmode&amp;hook=$hook", $entry->id,$cm->id);
-
     // Delete cached RSS feeds.
     if (!empty($CFG->enablerssfeeds)) {
         require_once($CFG->dirroot.'/mod/glossary/rsslib.php');
         glossary_rss_delete_file($glossary);
+    }
+
+    $event = \mod_glossary\event\entry_deleted::create(array(
+        'context' => $context,
+        'objectid' => $origentry->id,
+        'other' => array(
+            'mode' => $prevmode,
+            'hook' => $hook,
+            'concept' => $origentry->concept
+        )
+    ));
+    $event->add_record_snapshot('glossary_entries', $origentry);
+    $event->trigger();
+
+    // Reset caches.
+    if ($entry->usedynalink and $entry->approved) {
+        \mod_glossary\local\concept_cache::reset_glossary($glossary);
     }
 
     redirect("view.php?id=$cm->id&amp;mode=$prevmode&amp;hook=$hook");

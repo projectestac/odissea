@@ -18,16 +18,16 @@
  * Fallback page of /mod/quiz/edit.php add random question dialog,
  * for users who do not use javascript.
  *
- * @package    mod
- * @subpackage quiz
- * @copyright  2008 Olli Savolainen
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   mod_quiz
+ * @copyright 2008 Olli Savolainen
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 
-require_once('../../config.php');
-require_once($CFG->dirroot . '/mod/quiz/editlib.php');
+require_once(__DIR__ . '/../../config.php');
+require_once($CFG->dirroot . '/mod/quiz/locallib.php');
 require_once($CFG->dirroot . '/mod/quiz/addrandomform.php');
+require_once($CFG->dirroot . '/question/editlib.php');
 require_once($CFG->dirroot . '/question/category_class.php');
 
 list($thispageurl, $contexts, $cmid, $cm, $quiz, $pagevars) =
@@ -74,7 +74,8 @@ $qcobject = new question_category_object(
     null,
     $contexts->having_cap('moodle/question:add'));
 
-$mform = new quiz_add_random_form(new moodle_url('/mod/quiz/addrandom.php'), $contexts);
+$mform = new quiz_add_random_form(new moodle_url('/mod/quiz/addrandom.php'),
+                array('contexts' => $contexts, 'cat' => $pagevars['cat']));
 
 if ($mform->is_cancelled()) {
     redirect($returnurl);
@@ -90,16 +91,14 @@ if ($data = $mform->get_data()) {
         list($parentid, $contextid) = explode(',', $data->parent);
         $categoryid = $qcobject->add_category($data->parent, $data->name, '', true);
         $includesubcategories = 0;
-        add_to_log($quiz->course, 'quiz', 'addcategory',
-                'view.php?id=' . $cm->id, $categoryid, $cm->id);
-        $returnurl->param('cat', $categoryid . ',' . $contextid);
 
+        $returnurl->param('cat', $categoryid . ',' . $contextid);
     } else {
         throw new coding_exception(
                 'It seems a form was submitted without any button being pressed???');
     }
 
-    quiz_add_random_questions($quiz, $addonpage, $categoryid, 1, $includesubcategories);
+    quiz_add_random_questions($quiz, $addonpage, $categoryid, $data->numbertoadd, $includesubcategories);
     quiz_delete_previews($quiz);
     quiz_update_sumgrades($quiz);
     redirect($returnurl);

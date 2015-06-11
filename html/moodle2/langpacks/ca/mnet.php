@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'El lloc remot ha intentat desxifrar el missatge amb tote
 $string['error7024'] = 'Heu enviat un missatge no xifrat al lloc remot, però el lloc remot no ha acceptat la comunicació no xifrada del vostre lloc. Això és molt inesperat, probablement hauríeu de presentar un informe d\'error si això passa (donant tanta informació com sigui possible sobre les versions de l\'aplicació en qüestió, etc.)';
 $string['error7026'] = 'La clau amb què el seu missatge ha estat signat es diferencia de la clau que el servidor remot té en els seus arxius per al vostre servidor. A més, la màquina remota ha intentat recuperar la seva clau actual i no ho ha aconseguit. Si us plau reconnecteu-vos manualment amb el servidor remot i torneu a intentar-ho.';
 $string['error709'] = 'El lloc remot ha fallat en obtenir una clau SSL de vós.';
+$string['eventaccesscontrolcreated'] = 'Control d\'accés creat';
+$string['eventaccesscontrolupdated'] = 'Control d\'accés actualitzat';
 $string['expired'] = 'Aquesta clau ha expirat';
 $string['expires'] = 'Vàlida fins';
 $string['expireyourkey'] = 'Suprimeix aquesta clau';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'Proporcionador d\'identificació per MNet';
 $string['mnetidproviderdesc'] = 'Podeu utilitzar aquesta funció per obtenir un enllaç que permeta connectar-vos, si podeu proporcionar l\'adreça de correu electrònic correcta perquè coincideixi amb el nom d\'usuari que ja ha intentat iniciar la sessió.';
 $string['mnetidprovidermsg'] = 'Hauríeu de poder connectar amb el vostre proveïdor {$a}.';
 $string['mnetidprovidernotfound'] = 'Disculpeu, però no s\' ha trobat cap informació addicional.';
-$string['mnetlog'] = 'Registres';
 $string['mnetpeers'] = 'Iguals';
 $string['mnetservices'] = 'Serveis';
 $string['mnet_session_prohibited'] = 'Als usuaris del seu servidor no se\'ls permet actualment anar a  {$a}.';

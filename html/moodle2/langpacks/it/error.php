@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -147,6 +147,7 @@ $string['cannotsetupblock'] = 'Non è stato possibile impostare correttamente le
 $string['cannotsetupcapformod'] = 'Non è stato possibile impostare i privilegi per {$a}';
 $string['cannotsetupcapforplugin'] = 'Non è stato possibile impostare i privilegi per {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Non è possibile visualizzare/nascondere il corso nella categoria {$a}';
+$string['cannotsignup'] = 'Non puoi creare un nuovo account poiché sei già autenticato come {$a}.';
 $string['cannotunassigncap'] = 'Non è possibile rimuovere il privilegio deprecato {$a->cap} dal ruolo {$a->role}';
 $string['cannotunassignrolefrom'] = 'Non è possibile togliere a questo utente il ruolo id: {$a}';
 $string['cannotunzipfile'] = 'Non è possibile decomprimere il file.';
@@ -379,7 +380,7 @@ $string['missinguseranditemid'] = 'Manca userid e itemid';
 $string['missingvarname'] = 'Manca il nome di una variabile obbligatoria!';
 $string['mixedtypesqlparam'] = 'ERRORE: parametri della query di tipo promiscuo';
 $string['mnetdisable'] = 'MNET è disabilitato';
-$string['mnetlocal'] = 'Gli utenti remoti MNET non possono eseguire login in locale';
+$string['mnetlocal'] = 'Gli utenti remoti MNET non possono autenticarsi localmente';
 $string['moduledisable'] = 'Questo modulo ({$a}) è stato disabilitato per questo corso';
 $string['moduledoesnotexist'] = 'Questo modulo non esiste';
 $string['moduleinstancedoesnotexist'] = 'L\'istanza di questo modulo non esiste';
@@ -409,7 +410,7 @@ $string['nofolder'] = 'La cartella richiesta non esiste';
 $string['noformdesc'] = 'Per questa attività nella formslib non sono state trovate definizioni del form';
 $string['noguest'] = 'Non ci sono ospiti qui!';
 $string['noinstances'] = 'Non ci sono istanze di {$a} in questo corso!';
-$string['nologinas'] = 'Non ti è permesso l\'accesso come tale utente';
+$string['nologinas'] = 'Non sei autorizzato ad autenticarti come quell\'utente';
 $string['nonmeaningfulcontent'] = 'Contenuto senza significato';
 $string['noparticipants'] = 'In questo corso non sono stati trovati partecipanti';
 $string['noparticipatorycms'] = 'Spiacente, ma il report di partecipazione dei moduli del corso non è attivato.';
@@ -475,10 +476,9 @@ $string['sendmessage'] = 'Invia messaggio';
 $string['serverconnection'] = 'Si è verificato un errore durante la connessione al server';
 $string['servicedonotexist'] = 'Il servizio non esiste';
 $string['sessioncookiesdisable'] = 'E\' stato rilevato un uso errato di require_key_login() - i cookie di sessione devono essere disabilitati!';
-$string['sessiondiskfull'] = 'La partizione contenente le sessioni è piena. Al momento non è possibile autenticarsi.
-Per favore avvertire l\'amministratore del server.';
-$string['sessionerroruser'] = 'La sessione è scaduta o è stato rilevato un errore. Si prega effettuare nuovamente il login.';
-$string['sessionerroruser2'] = 'È stato rilevato un errore sul server che ha compromesso la vostra sessione di autenticazione. Vi preghiamo di autenticarvi nuovamente o di far ripartire il browser.';
+$string['sessiondiskfull'] = 'La partizione contenente le sessioni è piena. Al momento non è possibile autenticarsi. Per favore avvertire l\'amministratore del server.';
+$string['sessionerroruser'] = 'La sessione è scaduta. Si prega di autenticarsi nuovamente.';
+$string['sessionerroruser2'] = 'È stato rilevato un errore sul server che ha compromesso la sessione di autenticazione. Autenticati nuovamente o fai ripartire il browser.';
 $string['sessionhandlerproblem'] = 'Il session handler non è configurato correttamente';
 $string['sessionipnomatch'] = 'Spiacente, ma il tuo IP sembra essere cambiato da quando ti sei autenticao. Questa caratteristica previene il furto della vostra identità  da parte di hacker mentre sei collegato a questo sito. Gli utenti non dovrebbero vedere questo messaggio - chiedi aiuto all\'amministratore del sito.';
 $string['sessionipnomatch2'] = '<p>Spiacente ma il tuo indirizzo IP è cambiato da quando ti sei autenticato. Questa misura di sicurezza evita che cracker possano rubare la tua identità mentre sei collegato al sito. L\'errore potrebbe comparire se stai usando reti wireless oppure se stai muovendovi su reti diverse. Per ricevere aiuto, contatta il tuo amministratore.</p>

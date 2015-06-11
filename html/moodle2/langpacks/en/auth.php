@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Lock user fields';
 $string['auth_fieldlocks_help'] = '<p>You can lock user data fields. This is useful for sites where the user data is maintained by the administrators manually by editing user records or uploading using the \'Upload users\' facility. If you are locking fields that are required by Moodle, make sure that you provide that data when creating user accounts or the accounts will be unusable.</p><p>Consider setting the lock mode to \'Unlocked if empty\' to avoid this problem.</p>';
 $string['authinstructions'] = 'Leave this blank for the default login instructions to be displayed on the login page. If you want to provide custom login instructions, enter them here.';
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
+$string['authloginviaemail'] = 'Allow log in via email';
+$string['authloginviaemail_desc'] = 'Allow users to use both username and email address (if unique) for site login.';
 $string['auth_multiplehosts'] = 'Multiple hosts OR addresses can be specified (eg host1.com;host2.com;host3.com) or (eg xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_outofnewemailupdateattempts'] = 'You have run out of allowed attempts to update your email address. Your update request has been cancelled.';
 $string['auth_passwordisexpired'] = 'Your password is expired. Do you want change your password now?';
@@ -64,7 +66,7 @@ $string['auto_add_remote_users'] = 'Auto add remote users';
 $string['changepassword'] = 'Change password URL';
 $string['changepasswordhelp'] = 'Here you can specify a location at which your users can recover or change their username/password if they\'ve forgotten it. This will be provided to users as a button on the login page and their user page. If you leave this blank the button will not be printed.';
 $string['chooseauthmethod'] = 'Choose an authentication method';
-$string['chooseauthmethod_help'] = 'This setting determines the authentication method used when the user logs in. Only enabled authentication plugins should be chosen, otherwise the user will no longer be able to login. To block the user from logging in, select "No login".';
+$string['chooseauthmethod_help'] = 'This setting determines the authentication method used when the user logs in. Only enabled authentication plugins should be chosen, otherwise the user will no longer be able to log in. To block the user from logging in, select "No login".';
 $string['createpassword'] = 'Generate password and notify user';
 $string['createpasswordifneeded'] = 'Create password if needed';
 $string['emailchangecancel'] = 'Cancel email change';
@@ -87,8 +89,9 @@ $string['errorminpasswordlower'] = 'Passwords must have at least {$a} lower case
 $string['errorminpasswordnonalphanum'] = 'Passwords must have at least {$a} non-alphanumeric character(s).';
 $string['errorminpasswordupper'] = 'Passwords must have at least {$a} upper case letter(s).';
 $string['errorpasswordupdate'] = 'Error updating password, password not changed';
-$string['event_user_loggedin'] = 'User has logged in';
+$string['eventuserloggedin'] = 'User has logged in';
 $string['eventuserloggedinas'] = 'User logged in as another user';
+$string['eventuserloginfailed'] = 'User login failed';
 $string['forcechangepassword'] = 'Force change password';
 $string['forcechangepasswordfirst_help'] = 'Force users to change password on their first login to Moodle.';
 $string['forcechangepassword_help'] = 'Force users to change password on their next login to Moodle.';

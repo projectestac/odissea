@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -767,7 +767,7 @@ $string['table_dlg:langdir'] = 'Direção do texto';
 $string['table_dlg:ltr'] = 'Da esquerda para a direita';
 $string['table_dlg:merge_cells_title'] = 'Unir células';
 $string['table_dlg:mime'] = 'MIME alvo';
-$string['table_dlg:missing_scope'] = 'Tem certeza de que quer continuar sem especificar um escopo para esta célula? (Isso poderá causar dificuldades a usuários deficientes)';
+$string['table_dlg:missing_scope'] = 'Tem certeza de que quer continuar sem especificar um contexto para esta célula? (Isso poderá causar dificuldades a utilizadores portadores de deficiência).';
 $string['table_dlg:row_all'] = 'Atualizar todas as linhas';
 $string['table_dlg:row_even'] = 'Atualizar linhas pares';
 $string['table_dlg:rowgroup'] = 'Grupo da linha';
@@ -788,7 +788,7 @@ $string['table_dlg:rules_lhs'] = 'Lhs';
 $string['table_dlg:rules_rhs'] = 'Rhs';
 $string['table_dlg:rules_void'] = 'void';
 $string['table_dlg:rules_vsides'] = 'Vsides';
-$string['table_dlg:scope'] = 'Alcance';
+$string['table_dlg:scope'] = 'Contexto';
 $string['table_dlg:style'] = 'Estilo';
 $string['table_dlg:summary'] = 'Sumário';
 $string['table_dlg:tbody'] = 'Corpo';

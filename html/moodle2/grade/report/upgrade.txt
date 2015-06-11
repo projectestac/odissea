@@ -1,6 +1,9 @@
 This files describes API changes in /grade/report/*,
 information provided here is intended especially for developers.
 
+=== 2.8.2 ===
+* gradereport_singleview::__construct doesn't need groupid parameter anymore, so it was renamed to $unused.
+
 === 2.6.5, 2.7.2 ===
 
 * The callback function grade_report_*_profilereport now takes one more parameter $viewasuser. This parameter
@@ -12,6 +15,18 @@ information provided here is intended especially for developers.
 === 2.6 ===
 * grade_report_grader::get_toggles_html() and grade_report_grader::print_toggle()
   can not be used any more
+* class grade_report get_numusers($groups = true, $users = false)
+  An extra parameter has been added to restrict count to those users being
+displayed
+* class grade_report_grader get_left_rows($displayaverages)
+  A parameter has been added to indicate whether averages are applicable and
+should be displayed on the report
+* class grade_report_grader get_right_rows($displayaverages)
+  A parameter has been added to indicate whether averages are applicable and
+should be displayed on the report
+* class grade_report_grader get_grade_table($displayaverages = false)
+  A parameter has been added to indicate whether averages are applicable and
+should be displayed on the report
 
 === 2.3.5, 2.4.2 ===
 * class_grade_report::showtotalsifcontainhidden has been switched from a single integer value to an array.

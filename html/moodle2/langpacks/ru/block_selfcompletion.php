@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_selfcompletion', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_selfcompletion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Вы уже указывали, что завершили этот курс';
 $string['completecourse'] = 'Завершить курс';
 $string['pluginname'] = 'Самостоятельное отслеживание завершения';
-$string['selfcompletion:addinstance'] = 'Добавлять новый блок Самостоятельного завершения';
+$string['selfcompletion:addinstance'] = 'Добавлять новый блок «Самостоятельное отслеживание завершения»';
 $string['selfcompletionnotenabled'] = 'В этом курсе не разрешено самостоятельное отслеживание завершения';

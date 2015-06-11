@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,25 +43,25 @@ $string['formerror_disallowedtags'] = 'Sie haben hier HTML-Tags verwendet, welch
 $string['formerror_multipledraginstance'] = 'Sie haben Bild {$a} mehr als einmal als richtige Antwort für einen Ablegebereich ausgewählt, ohne es als mehrfach benutz- und ziehbares Objekt zu kennzeichnen.';
 $string['formerror_multipledraginstance2'] = 'Sie haben das Bild mehr als einmal als richtige Antwort für einen Ablegebereich ausgewählt, ohne es als mehrfach benutz- und ziehbares Objekt zu kennzeichnen.';
 $string['formerror_noallowedtags'] = 'Im alternativen Text zu einem ziehbaren Bild sind keine HTML Tags erlaubt';
-$string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag and Drop"-Fläche wählen.';
+$string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die \'Drag and Drop\'-Fläche wählen.';
 $string['formerror_nofile'] = 'Sie müssen eine Datei hochladen oder auswählen, die hier genutzt werden soll.';
-$string['formerror_nofile3'] = 'Sie müssen eine Bilddatei auswählen, oder die Beschriftung löschen, und die "unendlich" Checkbox deaktivieren.';
+$string['formerror_nofile3'] = 'Sie müssen eine Bilddatei auswählen. Oder Sie löschen die Beschriftung und deaktivieren die Checkbox \'unendlich\'.';
 $string['formerror_noimageselected'] = 'Sie müssen für diesen Ablegebereich ein ziehbares Objekt als richtige Auswahl definieren.';
-$string['formerror_notintxleft'] = 'Die X-Koordinaten müssen eine Ganzzahl sein.';
-$string['formerror_notintytop'] = 'Die Y-Koordinaten müssen eine Ganzzahl sein.';
+$string['formerror_notintxleft'] = 'Die X-Koordinaten müssen Ganzzahlen sein.';
+$string['formerror_notintytop'] = 'Die Y-Koordinaten müssen Ganzzahlen sein.';
 $string['formerror_noxleft'] = 'Sie müssen einen Wert für die X-Koordinate der oberen linken Ecke des Ablegebereichs angeben. Sie können den Ablegebereich entweder oben automatisch per "Drag and Drop" oder hier manuell festlegen.';
 $string['formerror_noytop'] = 'Sie müssen einen Wert für die Y-Koordinate der oberen linken Ecke des Ablegebereichs angeben. Sie können den Ablegebereich entweder oben automatisch per "Drag and Drop" oder hier manuell festlegen.';
 $string['infinite'] = 'Unendlich';
 $string['label'] = 'Text';
-$string['nolabel'] = 'Kein Beschriftung';
+$string['nolabel'] = 'Keine Beschriftung';
 $string['pleasedraganimagetoeachdropregion'] = 'Ihre Antwort ist nicht vollständig, bitte ziehen Sie in jeden Bereich ein Objekt.';
-$string['pluginname'] = '"Drag and Drop" auf Bild';
-$string['pluginnameadding'] = '"Drag and Drop" auf Bild hinzufügen';
-$string['pluginnameediting'] = '"Drag and Drop" auf Bild bearbeiten';
-$string['pluginname_help'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder oder geben Sie Text ein und definieren Ablegebereiche auf einem Hintergrundbild, auf die diese Objekte gezogen werden müssen.';
+$string['pluginname'] = 'Drag and Drop auf Bild';
+$string['pluginnameadding'] = '\'Drag and Drop auf Bild\' hinzufügen';
+$string['pluginnameediting'] = '\'Drag and Drop auf Bild\' bearbeiten';
+$string['pluginname_help'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder oder geben Sie Texte ein. Definieren Sie anschließend auf dem Hintergrundbild die Ablegebereiche, auf die die Objekte gezogen werden müssen.';
 $string['pluginnamesummary'] = 'Bilder oder Texte werden auf Ablegebereiche auf ein Hintergrundbild gezogen.';
 $string['previewareaheader'] = 'Vorschau';
-$string['previewareamessage'] = 'Wählen Sie eine Datei für ein Hintergrundbild und bestimmen Sie ziehbare Bilder oder Texte. Dann wählen Sie ein Objekt für jeden Ablegebereich und ziehen das Objekt dorthin, wo Teilnehmende es ablegen sollen';
+$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder oder geben Sie Texte ein. Definieren Sie anschließend auf dem Hintergrundbild für jedes Objekt einen Ablegebereich, auf den die Teilnehmer/innen das Objekt geziehen müssen.';
 $string['refresh'] = 'Vorschau neu laden';
 $string['shuffleimages'] = 'Ziehbare Objekte bei jedem Versuch zufällig anordnen.';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

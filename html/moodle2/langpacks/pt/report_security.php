@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,11 +60,6 @@ $string['check_frontpagerole_error'] = 'O papel "{$a}", definido para a página 
 $string['check_frontpagerole_name'] = 'Papel para a página de entrada';
 $string['check_frontpagerole_notset'] = 'Não foi definido nenhum papel para a página de entrada.';
 $string['check_frontpagerole_ok'] = 'O papel definido para a página de entrada está configurado corretamente.';
-$string['check_globals_details'] = '<p>A configuração <strong>Register globals</strong> do PHP é considerada muito insegura.</p>
-<p>Deve ser definida a configuração <strong>register_globals=off</strong> no ficheiro de configuração do PHP. Este parâmetro é definido no ficheiro <strong>php.ini</strong>, na configuração do servidor web (Apache, IIS, etc.) ou no ficheiro <strong>.htaccess</strong>.</p>';
-$string['check_globals_error'] = 'A configuração <code>Register globals</code> deve estar DESATIVADA. Deve alterar esta configuração imediatamente!';
-$string['check_globals_name'] = 'Parâmetro <strong>Register globals</strong>';
-$string['check_globals_ok'] = 'A configuração <strong>Register globals</strong> do PHP não deve estar ativa.';
 $string['check_google_details'] = '<p>A configuração <strong>Permitir acesso Google</strong> disponibiliza aos motores de busca o acesso às disciplinas que dão acesso a visitantes. Não faz sentido ativar esta configuração se o site não permitir o acesso de visitantes.</p>';
 $string['check_google_error'] = 'É permitido o acesso pelos motores de busca mas o acesso de visitantes não está ativo. Com esta configuração, os motores não terão acesso a nenhuma disciplina no site.';
 $string['check_google_info'] = 'Os motores de busca podem aceder como visitantes.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['aicchacpkeepsessiondata'] = 'AICC HACP sessiegegevens';
 $string['aicchacpkeepsessiondata_desc'] = 'De tijdsduur in dagen dat de externe AICC HACP sessiedata worden bijgehouden (een hoge instelling zal de tabel vullen met oude data maar kan nuttig zijn bij het debuggen).';
 $string['aicchacptimeout'] = 'AICC HACP timeout';
 $string['aicchacptimeout_desc'] = 'De tijdsduur in minuten dat een externe AICC HACP sessie open kan blijven.';
+$string['aiccuserid'] = 'AICC pass numeriek gebruikers id';
+$string['aiccuserid_desc'] = 'De AICC-standaard voor gebruikersnamen is erg beperkend in vergelijking met Moodle, dus geven we de user->id in de plaats. Indien uitgeschakeld geeft dit de Moodle gebruikersnaam aan het AICC-pakket. De AICC-standaard staat alfanumerieke tekens toe, het liggend streepje (-) en de underscore (_). Punten, spaties en het @-symbool zijn niet toegestaan.';
 $string['aliasonly'] = 'Wanneer je een imsmanifest.xml bestand van een opslagruimte selecteert, moet je een alias/snelkoppeling voor dit bestand gebruiken';
 $string['allowapidebug'] = 'Activeer API debug en tracing (zet het capture mask met apidebugmask)';
 $string['allowtypeaicchacp'] = 'Schakel extern AICC HACP in';
@@ -57,6 +59,9 @@ $string['attemptstatusentry'] = 'Enkel op ingangspagina';
 $string['attemptstatusmy'] = 'Enkel op Mijn startpagina';
 $string['attemptsx'] = '{$a} pogingen';
 $string['attr_error'] = 'Foute waarde voor attribuut ({$a->attr}) in tag {$a->tag}.';
+$string['autocommit'] = 'Automatisch insturen';
+$string['autocommitdesc'] = 'Automatisch SCORM-gegevens bewaren als het SCORM-pakket dat niet doet.';
+$string['autocommit_help'] = 'Indien ingeschakeld zullen SCORM-gegevens automatisch bewaard worden in de databank. Nuttig voor SCORM-objecten die hun data niet regelmatig bewaren.';
 $string['autocontinue'] = 'Ga automatisch verder';
 $string['autocontinuedesc'] = 'Indien ingeschakeld worden opeenvolgende leerobjecten automatisch gestart. Anders moet de Ga verder-knop gebruikt worden.';
 $string['autocontinue_help'] = '<p><b>Automatisch verdergaan</b></p>
@@ -96,11 +101,14 @@ $string['defaultgradesettings'] = 'Standaard cijferinstellingen';
 $string['defaultothersettings'] = 'Andere standaardinstellingen';
 $string['deleteallattempts'] = 'Verwijder alle SCORM pogingen';
 $string['deleteattemptcheck'] = 'Weet je zeker dat je al deze pogingen volledig wil verwijderen?';
+$string['deleteselected'] = 'Verwijder geselecteerde pogingen';
 $string['deleteuserattemptcheck'] = 'Weet je zeker dat je al jouw pogingen volledig wil verwijderen?';
 $string['details'] = 'SCO opvolgdetails';
 $string['directories'] = 'Toon de links naar mappen';
 $string['disabled'] = 'Uitgeschakeld';
 $string['display'] = 'Toon';
+$string['displayactivityname'] = 'Activieteitsnaam tonen';
+$string['displayactivityname_help'] = 'Al dan niet de activiteitsnaam boven de SCORM-speler tonen';
 $string['displayattemptstatus'] = 'Toon pogingstatus';
 $string['displayattemptstatusdesc'] = 'Of een samenvatting van de pogingen van de gebruiker getoond moeten worden op het cursusoverzichtsblok op Mijn startpagina en/of de startpagina van het SCORM-pakket.';
 $string['displayattemptstatus_help'] = 'Hiermee wordt een samenvatting van de pogingen van de gebruiker getoond in het cursusoverzichtsblok in Mijn startpagina en/of de SCORM ingangspagina.';
@@ -116,6 +124,12 @@ $string['element'] = 'Element';
 $string['enter'] = 'Start';
 $string['entercourse'] = 'Begin de SCORM/AICC-cursus';
 $string['errorlogs'] = 'Foutenlogboek';
+$string['eventattemptdeleted'] = 'Poging verwijderd';
+$string['eventinteractionsviewed'] = 'Interacties bekeken';
+$string['eventreportviewed'] = 'Rapport bekeken';
+$string['eventscolaunched'] = 'Sco gestart';
+$string['eventtracksviewed'] = 'Tracks bekeken';
+$string['eventuserreportviewed'] = 'Gebruikersrapport bekeken';
 $string['everyday'] = 'Elke dag';
 $string['everytime'] = 'Elke keer wanneer gebruikt';
 $string['exceededmaxattempts'] = 'Je hebt het maximale aantal pogingen bereikt.';
@@ -173,7 +187,7 @@ $string['hidebrowse_help'] = '<p>Als deze optie op ja wordt gezet, dan zal de le
 $string['hideexit'] = 'Verberg de uitgang-link';
 $string['hidereview'] = 'Verberg de knop voor herzien';
 $string['hidetoc'] = 'Weergave cursusstructuur';
-$string['hidetocdesc'] = 'Deze instelling regelt de standaardinstelling voor het al dan niet tonen van de inhoudstafel van de cursus (TOC) in de SCORM-speler';
+$string['hidetocdesc'] = 'Deze instelling regelt de standaardinstelling voor het al dan niet tonen van de inhoudstafel in de SCORM-speler';
 $string['hidetoc_help'] = 'Deze instelling bepaalt hoe de inhoudstabel getoond wordt in de SCORM-speler.';
 $string['highestattempt'] = 'Beste poging';
 $string['identifier'] = 'Vraagidentificatie';
@@ -207,7 +221,7 @@ $string['mode'] = 'Modus';
 $string['modulename'] = 'SCORM-pakket';
 $string['modulename_help'] = 'Een SCORM-pakket is een verzameling bestanden die verpakt zijn volgens een afgesproken standaard voor leerobjecten. De SCORM-activiteit maakt het mogelijk om SCORM of AICC-pakketten te uploaden als zip-bestanden en aan een cursus toegevoegd te worden.
 
-De inhoud wordt meestal getoond op meerdere pagina\'s met navigatie tussen de pagina\'s. Er zijn verschillende opties om de inhoud in een pop-upvenster te tonen, met een inhoudstafel, met navigatieknoppen enz. SCORM-activiteiten bevatten dikwijls vragen, waarvan de resultaten opgenomen zullen worden in het puntenboek.
+De inhoud wordt meestal getoond op meerdere pagina\'s met navigatie tussen de pagina\'s. Er zijn verschillende opties om de inhoud in een pop-upvenster te tonen, met een inhoudstafel, met navigatieknoppen enz. SCORM-activiteiten bevatten dikwijls vragen, waarvan de resultaten opgenomen zullen worden in de cijferlijst.
 
 SCORM-activiteiten kunnen gebruikt worden
 
@@ -226,6 +240,8 @@ Er zijn 3 opties:
 $string['navigation'] = 'Navigatie';
 $string['navpositionleft'] = 'Positie van de navigatieknoppen in pixels van links';
 $string['navpositiontop'] = 'Positie van de navigatieknoppen in pixels van boven.';
+$string['networkdropped'] = 'De SCORM-speler heeft bepaalt dat je internetverbinding onbetrouwbaar is of onderbroken is. Als je verder gaat met deze SCORM-activiteit, dan zal je vooruitgang niet bewaard worden. <br />
+Je kunt best de activiteit nu verlaten en terugkeren wanneer je een betrouwbare verbinding hebt.';
 $string['newattempt'] = 'Begin een nieuwe poging';
 $string['next'] = 'Volgende';
 $string['noactivity'] = 'Niets te melden';
@@ -234,7 +250,7 @@ $string['noattemptsmade'] = 'Aantal pogingen die je gedaan hebt';
 $string['no_attributes'] = 'Tag {$a->tag} moet attributen hebben';
 $string['no_children'] = 'Tag {$a->tag} moet children hebben';
 $string['nolimit'] = 'Onbeperkt aantal pogingen';
-$string['nomanifest'] = 'Fout bestandspakket - ontbrekend imsmanifest.xml of AICC-structuur';
+$string['nomanifest'] = 'Fout bestandspakket - imsmanifest.xml of AICC-structuur ontbreekt.';
 $string['noprerequisites'] = 'Sorry, maar je hebt nog niet genoeg voltooid om toegang te krijgen tot dit leerobject';
 $string['noreports'] = 'Er is geen rapport om te tonen';
 $string['normal'] = 'Activiteit starten';
@@ -304,6 +320,8 @@ $string['reviewmode'] = 'Nalezen';
 $string['rightanswer'] = 'Juist antwood';
 $string['scoes'] = 'Leerobjecten';
 $string['score'] = 'Score';
+$string['scorm12standard'] = 'SCORM 1.2 standaard modus inschakelen';
+$string['scorm12standarddesc'] = 'Door deze instelling uit te schakelen, kan Moodle meer gegevens bewaren dan de SCORM 1.2-specificatie toestaat. Als jouw SCORM-pakket het toestaat dat gebruikers grote hoeveelheden tekst bewaren of als je pakket grote hoeveelheden data wil bewaren in het suspend_data-veld, schakel dit dan uit.';
 $string['scorm:addinstance'] = 'Voeg een nieuw SCORM-pakket toe';
 $string['scormclose'] = 'Beschikbaar tot';
 $string['scormcourse'] = 'Leercursus';
@@ -316,9 +334,9 @@ $string['scormresponsedeleted'] = 'Verwijderde gebruikerspoging';
 $string['scorm:savetrack'] = 'Bewaar spoor';
 $string['scorm:skipview'] = 'Overzicht overslaan';
 $string['scormtype'] = 'Type';
-$string['scormtype_help'] = 'Deze instelling bepaalt hoe het pakket wordt opgenomen in de cursus. Er zijn 4 opties:
+$string['scormtype_help'] = 'Deze instelling bepaalt hoe het pakket wordt opgenomen in de cursus. Er zijn vier opties:
 
-* Upload van pakket - Hiermee kun je een SCORM pakket kiezen let de bestandenzoeker
+* Upload van pakket - Staat toe om een SCORM pakket te kiezen via de file picker
 * Extern SCORM manifest - Staat toe om een imsmanifest.xml URL te specifiëren. Nota: Indien de URL een andere domeinnaam heeft dan jouw site, dan is \'Download van pakket\' een betere optie, want anders worden de beoordelingscijfers niet bewaard.
 * Download van pakket - Staat toe om een pakket URL te specifiëren. Dit pakket zal worden unzipped, lokaal bewaard, en bijgewerkt wanneer het externe SCORN pakket wordt bijgewerkt.
 * Externe AICC URL - Deze URL is de lancerings URL voor één enkele AICC activiteit. Een pseudo pakket zal hierrond worden opgetrokken.';
@@ -405,12 +423,12 @@ $string['versionwarning'] = 'De versie van het Manifest is ouder dan 1.3, waarsc
 $string['viewallreports'] = 'Bekijk de rapporten voor {$a} pogingen';
 $string['viewalluserreports'] = 'Bekijk de rapporten voor {$a} gebruikers';
 $string['whatgrade'] = 'Te beoordelen pogingen';
-$string['whatgradedesc'] = 'Of de hoogste, gemiddelde, eerste of laatste volledige poging in het puntenboek bewaard wordt wanneer meerdere pogingen toegestaan zijn.';
-$string['whatgrade_help'] = 'Wanneer je meerdere pogingen toelaat, kun je via deze instelling specifiëren of de hoogste score, de gemiddelde score, of die van de eerste of laatste voltooide poging in het puntenboek opgenomen zal worden. Met de laatste voltooide poging worden geen pogingen die opgenomen die de "niet geslaagd"-status hebben.
+$string['whatgradedesc'] = 'Of de hoogste, gemiddelde, eerste of laatste volledige poging in de cijferlijst bewaard wordt wanneer meerdere pogingen toegestaan zijn.';
+$string['whatgrade_help'] = 'Wanneer je meerdere pogingen toelaat, kun je via deze instelling specifiëren of de hoogste score, de gemiddelde score, of die van de eerste of laatste voltooide poging in de cijferlijst opgenomen zal worden. Met de laatste voltooide poging worden geen pogingen die opgenomen die de "niet geslaagd"-status hebben.
 
 Behandeling van meerdere pogingen
 
-* De optie om een nieuwe poging op te starten, gebeurt via een aankruisvakje dat zich boven de Enter knop op de content structure pagine bevindt; zorg er dus voor dat toegang tot die pagina beschikbaar is indien je meer dan een poging wil toestaan.
+* De optie om een nieuwe poging op te starten, gebeurt via een aankruisvakje dat zich boven de Enter knop op de inhoudsstructuurpagina bevindt; zorg er dus voor dat toegang tot die pagina beschikbaar is indien je meer dan een poging wil toestaan.
 * Sommige scorm pakketten gaan intelligent om met nieuwe pogingen, vele andere niet. Dit betekent dat, wanneer de gebruiker een bestaande poging heropent en de scorm content  niet over een interne logica beschikt om te beletten dat ze wordt overschreven, de eerdere poging overschreven kan worden zelfs al was ze \'volledig\' of \'voorbij\'.
 * De instellingen "Forceer voltooiing", "Forceer nieuwe poging" en "Vergrendel na laatste poging" bieden verdere mogelijkheden tot management van meerdere pogingen.';
 $string['width'] = 'Breedte';

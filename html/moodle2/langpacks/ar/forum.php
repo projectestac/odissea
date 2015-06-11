@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'forum', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,7 +103,7 @@ $string['everyonecannowchoose'] = 'كل شخص يمكنه الاختيار لي�
 $string['everyoneisnowsubscribed'] = 'كل الاشخاص مشتركون في هذا المنتدى';
 $string['everyoneissubscribed'] = 'الجميع مشترك في هذا النقاش';
 $string['existingsubscribers'] = 'المشاركين الموجودين';
-$string['forcessubscribe'] = 'هذا المنتدى يجبر الكل للأشتراك';
+$string['forcesubscribed'] = 'هذا المنتدى يجبر الكل للأشتراك';
 $string['forum'] = 'المنتدى';
 $string['forum:addnews'] = 'إضافة أخبار';
 $string['forumauthorhidden'] = 'الكاتب (غير مرئي)';
@@ -222,9 +222,6 @@ $string['nowtracking'] = '{$a->name} الآن يتابع\'{$a->forum}\'';
 $string['numposts'] = '{$a} مقالات';
 $string['olderdiscussions'] = 'أقدم المناقشات';
 $string['oldertopics'] = 'موضوعات قديمة';
-$string['openmode0'] = 'لا يسمح بالمناقشات، ولا يسمح بالردود';
-$string['openmode1'] = 'لا يسمح بالمناقشات، ولكن يسمح بالردود';
-$string['openmode2'] = 'يسمح بالمناقشات والردود';
 $string['overviewnumpostssince'] = '{$a} مشاركة منذ أخر زيارة';
 $string['overviewnumunread'] = '{$a} مجموع المشاركات التي لم تقراء بعد';
 $string['parent'] = 'اعرض الاصل';

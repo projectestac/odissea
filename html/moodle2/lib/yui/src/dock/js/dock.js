@@ -35,22 +35,7 @@ var LOGNS = 'moodle-core-dock',
     BLOCK,
     DOCKEDITEM;
 
-/**
- * Core namespace.
- *
- * @static
- * @namespace M
- * @class core
- */
 M.core = M.core || {};
-
-/**
- * Dock namespace.
- *
- * @static
- * @namespace M.core
- * @class dock
- */
 M.core.dock = M.core.dock || {};
 
 /**
@@ -259,8 +244,8 @@ M.core.dock.notifyBlockChange = function(instanceid) {
  * @namespace M.core.dock
  * @class Dock
  * @constructor
- * @extends Y.Base
- * @uses Y.EventTarget
+ * @extends Base
+ * @uses EventTarget
  */
 DOCK = function() {
     DOCK.superclass.constructor.apply(this, arguments);
@@ -354,12 +339,12 @@ DOCK.prototype = {
          * Fires after the dock has been changed from hidden to visible.
          * @event dock:shown
          */
-        this.publish('dock:shown', {prefix:'dock'});
+        this.publish('dock:shown', {prefix:'dock', broadcast: 2});
         /**
          * Fired after the dock has been changed from visible to hidden.
          * @event dock:hidden
          */
-        this.publish('dock:hidden', {prefix:'dock'});
+        this.publish('dock:hidden', {prefix:'dock', broadcast: 2});
         /**
          * Fires when an item is added to the dock.
          * @event dock:itemadded
@@ -375,7 +360,7 @@ DOCK.prototype = {
          * This happens after the itemadded and itemremoved events have been called.
          * @event dock:itemschanged
          */
-        this.publish('dock:itemschanged', {prefix:'dock'});
+        this.publish('dock:itemschanged', {prefix:'dock', broadcast: 2});
         /**
          * Fires once when the docks panel is first initialised.
          * @event dock:panelgenerated

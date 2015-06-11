@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['errorinvalidformat'] = 'O formato da cópia de segurança é desconheci
 $string['errorinvalidformatinfo'] = 'O ficheiro selecionado não é um ficheiro de cópia de segurança Moodle válido e não pode ser restaurado.';
 $string['errorminbackup20version'] = 'Esta cópia de segurança foi criada com uma versão de desenvolvimento do Moodle ({$a->backup}). A versão mínima necessária é {$a->min}. O restauro não pode continuar.';
 $string['errorrestorefrontpage'] = 'O restauro sobre a página inicial não é permitido.';
-$string['errortgznozlib'] = 'O ficheiro selecionado está no novo formato de cópia de segurança e não pode ser restaurado porque a extensão zlib PHP não está disponível neste sistema.';
 $string['executionsuccess'] = 'O ficheiro da cópia de segurança foi criado com sucesso.';
 $string['filealiasesrestorefailures'] = 'Não conseguiu restaurar os atalhos';
 $string['filealiasesrestorefailures_help'] = 'Atalhos são ligações a outros ficheiros, incluindo os que se encontram em repositórios externos. Em alguns casos, o Moodle não consegue restaurá-los, por exemplo quando faz o restauro a partir de outro site ou quando os ficheiros ligados não existem.';
@@ -166,6 +165,7 @@ $string['includeditems'] = 'Itens incluídos:';
 $string['includefilereferences'] = 'Referências a conteúdos externos';
 $string['includesection'] = 'Secção {$a}';
 $string['includeuserinfo'] = 'Informação do utilizador';
+$string['jumptofinalstep'] = 'Ir para etapa final';
 $string['locked'] = 'Bloqueado(a)';
 $string['lockedbyconfig'] = 'Este parâmetro foi bloqueado por predefinição na configuração da cópia de segurança';
 $string['lockedbyhierarchy'] = 'Bloqueado pelas dependências';
@@ -257,10 +257,11 @@ $string['skiphiddenhelp'] = 'Determina se as disciplinas ocultas devem ou não s
 $string['skipmodifdays'] = 'Ignorar disciplinas que não foram modificadas há';
 $string['skipmodifdayshelp'] = 'Determina se as disciplinas que não foram modificadas há um determinado número de dias são ignoradas';
 $string['skipmodifprev'] = 'Ignorar disciplinas que não foram modificadas desde a cópia de segurança anterior';
-$string['skipmodifprevhelp'] = 'Selecione se as disciplinas que não foram modificadas desde a cópia de segurança anterior devem ser ignoradas ou não';
+$string['skipmodifprevhelp'] = 'Selecione se as disciplinas que não foram modificadas desde a última cópia de segurança devem ser ou não ignoradas. Isto requer logging para ser ativado.';
 $string['storagecourseandexternal'] = 'Área de ficheiros das cópias de segurança da disciplina e pasta escolhida';
 $string['storagecourseonly'] = 'Área de ficheiros das cópias de segurança da disciplina';
 $string['storageexternalonly'] = 'Pasta escolhida para a cópias de segurança automáticas';
+$string['timetaken'] = 'Tempo gasto';
 $string['title'] = 'Título';
 $string['totalcategorysearchresults'] = 'Total de categorias: {$a}';
 $string['totalcoursesearchresults'] = 'Total de disciplinas: {$a}';

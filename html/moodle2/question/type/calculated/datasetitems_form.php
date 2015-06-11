@@ -51,6 +51,12 @@ class question_dataset_dependent_items_form extends question_wizard_form {
      */
     public $qtypeobj;
 
+    /** @var stdClass the question category. */
+    protected $category;
+
+    /** @var context the context of the question category. */
+    protected $categorycontext;
+
     public $datasetdefs;
 
     public $maxnumber = -1;
@@ -108,8 +114,10 @@ class question_dataset_dependent_items_form extends question_wizard_form {
     }
 
     protected function definition() {
+        global $PAGE;
+
         $labelsharedwildcard = get_string("sharedwildcard", "qtype_calculated");
-        $mform =& $this->_form;
+        $mform = $this->_form;
         $mform->setDisableShortforms();
 
         $strquestionlabel = $this->qtypeobj->comment_header($this->question);
@@ -138,16 +146,16 @@ class question_dataset_dependent_items_form extends question_wizard_form {
             } else {
                 $name = get_string('wildcard', 'qtype_calculated', $datasetdef->name);
             }
-            $mform->addElement('text', "number[$j]", $name);
-            $mform->setType("number[$j]", PARAM_RAW); // This parameter will be validated in validation().
+            $mform->addElement('text', "number[{$j}]", $name);
+            $mform->setType("number[{$j}]", PARAM_RAW); // This parameter will be validated in validation().
             $this->qtypeobj->custom_generator_tools_part($mform, $idx, $j);
             $idx++;
-            $mform->addElement('hidden', "definition[$j]");
-            $mform->setType("definition[$j]", PARAM_RAW);
-            $mform->addElement('hidden', "itemid[$j]");
-            $mform->setType("itemid[$j]", PARAM_RAW);
-            $mform->addElement('static', "divider[$j]", '', '<hr />');
-            $mform->setType("divider[$j]", PARAM_RAW);
+            $mform->addElement('hidden', "definition[{$j}]");
+            $mform->setType("definition[{$j}]", PARAM_RAW);
+            $mform->addElement('hidden', "itemid[{$j}]");
+            $mform->setType("itemid[{$j}]", PARAM_RAW);
+            $mform->addElement('static', "divider[{$j}]", '', '<hr />');
+            $mform->setType("divider[{$j}]", PARAM_RAW);
             $j++;
         }
 
@@ -210,14 +218,14 @@ class question_dataset_dependent_items_form extends question_wizard_form {
         $addremoveoptions = array();
         $addremoveoptions['1']='1';
         for ($i=10; $i<=100; $i+=10) {
-             $addremoveoptions["$i"]="$i";
+             $addremoveoptions["{$i}"] = "{$i}";
         }
         $showoptions = Array();
         $showoptions['1']='1';
         $showoptions['2']='2';
         $showoptions['5']='5';
         for ($i=10; $i<=100; $i+=10) {
-             $showoptions["$i"]="$i";
+             $showoptions["{$i}"] = "{$i}";
         }
         $mform->addElement('header', 'addhdr', get_string('add', 'moodle'));
         $mform->closeHeaderBefore('addhdr');
@@ -279,35 +287,35 @@ class question_dataset_dependent_items_form extends question_wizard_form {
             foreach ($this->datasetdefs as $defkey => $datasetdef) {
                 if ($k > 0) {
                     if ($datasetdef->category == 0 ) {
-                        $mform->addElement('text', "number[$j]",
+                        $mform->addElement('text', "number[{$j}]",
                                 get_string('wildcard', 'qtype_calculated', $datasetdef->name));
                     } else {
-                        $mform->addElement('text', "number[$j]", get_string(
+                        $mform->addElement('text', "number[{$j}]", get_string(
                                 'sharedwildcard', 'qtype_calculated', $datasetdef->name));
                     }
 
                 } else {
-                    $mform->addElement('hidden', "number[$j]" , '');
+                    $mform->addElement('hidden', "number[{$j}]" , '');
                 }
-                $mform->setType("number[$j]", PARAM_RAW); // This parameter will be validated in validation().
-                $mform->addElement('hidden', "itemid[$j]");
-                $mform->setType("itemid[$j]", PARAM_INT);
+                $mform->setType("number[{$j}]", PARAM_RAW); // This parameter will be validated in validation().
+                $mform->addElement('hidden', "itemid[{$j}]");
+                $mform->setType("itemid[{$j}]", PARAM_INT);
 
-                $mform->addElement('hidden', "definition[$j]");
-                $mform->setType("definition[$j]", PARAM_NOTAGS);
+                $mform->addElement('hidden', "definition[{$j}]");
+                $mform->setType("definition[{$j}]", PARAM_NOTAGS);
                 $data[$datasetdef->name] =$datasetdef->items[$i]->value;
 
                 $j--;
             }
             if ('' != $strquestionlabel && ($k > 0 )) {
                 // ... $this->outsidelimit || !empty($this->numbererrors ).
-                $repeated[] = $mform->addElement('static', "answercomment[$i]", $strquestionlabel);
+                $repeated[] = $mform->addElement('static', "answercomment[{$i}]", $strquestionlabel);
                 // Decode equations in question text.
                 $qtext = $this->qtypeobj->substitute_variables(
                         $this->question->questiontext, $data);
                 $textequations = $this->qtypeobj->find_math_equations($qtext);
                 if ($textequations != '' && count($textequations) > 0 ) {
-                    $mform->addElement('static', "divider1[$j]", '',
+                    $mform->addElement('static', "divider1[{$j}]", '',
                             'Formulas {=..} in question text');
                     foreach ($textequations as $key => $equation) {
                         if ($formulaerrors = qtype_calculated_find_formula_errors($equation)) {
@@ -316,7 +324,7 @@ class question_dataset_dependent_items_form extends question_wizard_form {
                             eval('$str = '.$equation.';');
                         }
                         $equation = shorten_text($equation, 17, true);
-                        $mform->addElement('static', "textequation", "{=$equation}", "=".$str);
+                        $mform->addElement('static', "textequation", "{={$equation}}", "=".$str);
                     }
                 }
 
@@ -325,11 +333,19 @@ class question_dataset_dependent_items_form extends question_wizard_form {
 
         }
         $mform->addElement('static', 'outsidelimit', '', '');
-        // ...----------------------------------------------------------------------
-        // Non standard name for button element needed so not using add_action_buttons.
-        if (!($this->noofitems==0) ) {
-            $mform->addElement('submit', 'savechanges', get_string('savechanges'));
-            $mform->closeHeaderBefore('savechanges');
+
+        // Submit buttons.
+        if ($this->noofitems > 0) {
+            $buttonarray = array();
+            $buttonarray[] = $mform->createElement(
+                    'submit', 'savechanges', get_string('savechanges'));
+
+            $previewlink = $PAGE->get_renderer('core_question')->question_preview_link(
+                        $this->question->id, $this->categorycontext, true);
+            $buttonarray[] = $mform->createElement('static', 'previewlink', '', $previewlink);
+
+            $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
+            $mform->closeHeaderBefore('buttonar');
         }
 
         $this->add_hidden_fields();
@@ -392,9 +408,9 @@ class question_dataset_dependent_items_form extends question_wizard_form {
             $data = array();
             foreach ($this->datasetdefs as $defid => $datasetdef) {
                 if (isset($datasetdef->items[$itemnumber])) {
-                    $formdata["number[$j]"] = $datasetdef->items[$itemnumber]->value;
-                    $formdata["definition[$j]"] = $defid;
-                    $formdata["itemid[$j]"] = $datasetdef->items[$itemnumber]->id;
+                    $formdata["number[{$j}]"] = $datasetdef->items[$itemnumber]->value;
+                    $formdata["definition[{$j}]"] = $defid;
+                    $formdata["itemid[{$j}]"] = $datasetdef->items[$itemnumber]->id;
                     $data[$datasetdef->name] = $datasetdef->items[$itemnumber]->value;
                 }
                 $j--;
@@ -422,15 +438,15 @@ class question_dataset_dependent_items_form extends question_wizard_form {
             foreach ($this->datasetdefs as $defid => $datasetdef) {
                 if (!optional_param('updatedatasets', false, PARAM_BOOL) &&
                         !optional_param('updateanswers', false, PARAM_BOOL)) {
-                    $formdata["number[$j]"] = $this->qtypeobj->generate_dataset_item(
+                    $formdata["number[{$j}]"] = $this->qtypeobj->generate_dataset_item(
                             $datasetdef->options);
                 } else {
-                    $formdata["number[$j]"] = $this->_form->getElementValue("number[$j]");
+                    $formdata["number[{$j}]"] = $this->_form->getElementValue("number[{$j}]");
                 }
-                $formdata["definition[$j]"] = $defid;
-                $formdata["itemid[$j]"] = isset($datasetdef->items[$itemnumber]) ?
+                $formdata["definition[{$j}]"] = $defid;
+                $formdata["itemid[{$j}]"] = isset($datasetdef->items[$itemnumber]) ?
                         $datasetdef->items[$itemnumber]->id : 0;
-                $data[$datasetdef->name] = $formdata["number[$j]"];
+                $data[$datasetdef->name] = $formdata["number[{$j}]"];
                 $j++;
             }
         }
@@ -443,9 +459,9 @@ class question_dataset_dependent_items_form extends question_wizard_form {
             $itemnumber = $this->noofitems + 1;
             foreach ($this->datasetdefs as $defid => $datasetdef) {
                 if (isset($datasetdef->items[$itemnumber])) {
-                    $formdata["number[$j]"] = $datasetdef->items[$itemnumber]->value;
-                    $formdata["definition[$j]"] = $defid;
-                    $formdata["itemid[$j]"] = $datasetdef->items[$itemnumber]->id;
+                    $formdata["number[{$j}]"] = $datasetdef->items[$itemnumber]->value;
+                    $formdata["definition[{$j}]"] = $defid;
+                    $formdata["itemid[{$j}]"] = $datasetdef->items[$itemnumber]->id;
                     $data[$datasetdef->name] = $datasetdef->items[$itemnumber]->value;
                 }
                 $j++;

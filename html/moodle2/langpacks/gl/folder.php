@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,6 @@ Un cartafol pódese usar
 * Para fornecer un espazo de envío compartido entre profesores na páxina do curso (permanecendo o cartafol agochado de modo que só os profesores o poidan ver)';
 $string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = 'Cartafoles';
-$string['neverseen'] = 'Nunca visto';
 $string['noautocompletioninline'] = 'Completado automático na vista de actividade non se pode seleccionar xunto coa opción «Presentar en xunto»';
 $string['page-mod-folder-view'] = 'Páxina principal do módulo cartafol';
 $string['page-mod-folder-x'] = 'Calquera páxina do módulo de cartafol';

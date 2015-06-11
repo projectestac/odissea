@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -125,6 +125,18 @@ $string['erroropening'] = 'エラー：アンケートを開くことができ�
 $string['errortable'] = 'エラー：システムテーブルが不正です。';
 $string['essaybox'] = '短文記述形式';
 $string['essaybox_help'] = 'この質問は、横x列，縦y行の領域のプレーンテキストボックスを表示します。あなたがxとyの両方をデフォルト値の0のままにしている場合（または0に設定している場合）、MoodleのHTMLエディタは標準的な高さと幅（コース/ユーザーコンテキスト·ユーザープロファイルで設定可能）で表示されます。';
+$string['event_all_responses_deleted'] = 'すべての回答が消去されました。';
+$string['event_all_responses_saved_as_text'] = 'すべての回答がテキストとして保存されました。';
+$string['event_all_responses_viewed'] = 'すべての回答が閲覧されました。';
+$string['event_individual_responses_viewed'] = '個人の回答が閲覧されました。';
+$string['event_non_respondents_viewed'] = '無回答者が確認されました。';
+$string['event_previewed'] = 'アンケートが事前チェックされました。';
+$string['event_question_created'] = '質問が追加されました。';
+$string['event_question_deleted'] = '質問が消去されました。';
+$string['event_response_deleted'] = '個人の回答が消去されました。';
+$string['event_resumed'] = '企画がまとめられました。';
+$string['event_saved'] = '回答が保存されました。';
+$string['event_submitted'] = '回答が提出されました。';
 $string['feedback'] = 'フィードバック';
 $string['feedbackaddmorefeedbacks'] = 'フィードバックフィールドを追加する/追加しない';
 $string['feedbackbysection'] = 'フィードバックセクション';

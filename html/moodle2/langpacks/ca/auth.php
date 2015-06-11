@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'Bloca camps d\'usuari';
 $string['auth_fieldlocks_help'] = '<p>Podeu blocar els camps de dades d\'usuari. Això és útil en llocs on els administradors mantenen manualment les dades dels usuaris tot editant els registres d\'usuari o per mitjà de l\'opció de càrrega d\'usuaris. Si bloqueu camps requerits per Moodle, assegureu-vos que aquestes dades s\'introdueixen en crear els comptes d\'usuari, o en cas contrari no es podran utilitzar els comptes.</p><p>Considereu la possibilitat d\'utilitzar el mode \'Desblocat si està buit\' per evitar aquest problema.</p>';
 $string['authinstructions'] = 'Aquí podeu posar instruccions per als vostres usuaris, per tal que sàpiguen quin nom d\'usuari i quina contrasenya han d\'utilitzar. El text apareixerà a la pàgina d\'entrada. Si el deixeu en blanc no hi haurà instruccions.';
 $string['auth_invalidnewemailkey'] = 'Error: si esteu intentant confirmar un canvi d\'adreça de correu, probablement heu copiat malament l\'enllaç que havíeu rebut. Copieu l\'enllaç complet i torneu a intentar-ho.';
+$string['authloginviaemail'] = 'Permet l\'inici de sessió mitjançant el correu electrònic';
+$string['authloginviaemail_desc'] = 'Permet als usuaris utilitzar indistintament el nom d\'usuari i l\'adreça de correu electrònic (mentre sigui única) per iniciar la sessió.';
 $string['auth_multiplehosts'] = 'Podeu especificar diversos ordinadors (p. e. host1.com; host2.com; host3.com)';
 $string['auth_outofnewemailupdateattempts'] = 'Heu esgotat els intents d\'actualització de la vostra adreça de correu electrònic. La vostra sol·licitud s\'ha cancel·lat.';
 $string['auth_passwordisexpired'] = 'La vostra contrasenya ha caducat. Voleu canviar-la ara?';
@@ -87,8 +89,9 @@ $string['errorminpasswordlower'] = 'La contrasenya ha de contenir almenys {$a} m
 $string['errorminpasswordnonalphanum'] = 'La contrasenya ha de contenir almenys {$a} caràcter/s no alfanumèric/s.';
 $string['errorminpasswordupper'] = 'La contrasenya ha de contenir almenys {$a} majúscula/es.';
 $string['errorpasswordupdate'] = 'No s\'ha pogut canviar la contrasenya. S\'ha produït un error.';
-$string['event_user_loggedin'] = 'L\'usuari ha entrat';
+$string['eventuserloggedin'] = 'L\'usuari ha entrat';
 $string['eventuserloggedinas'] = 'L\'usuari ha entrat com a un altre usuari';
+$string['eventuserloginfailed'] = 'Ha fallat l\'inici de sessió';
 $string['forcechangepassword'] = 'Imposa canvi de contrasenya';
 $string['forcechangepasswordfirst_help'] = 'Obliga els usuaris a canviar la contrasenya la pròxima vegada que entrien en Moodle.';
 $string['forcechangepassword_help'] = 'Obliga els usuaris a canviar la contrasenya la pròxima vegada que entrien en Moodle.';

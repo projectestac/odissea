@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'journal', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,13 @@ $string['accessdenied'] = 'Sarbide ukatua';
 $string['alwaysopen'] = 'Beti zabalik';
 $string['blankentry'] = 'Sarrera hutsik';
 $string['entries'] = 'Sarrerak';
+$string['entry'] = 'Sarrera';
+$string['evententriesviewed'] = 'Egunkari-sarrerak ikusi dira';
+$string['evententryupdated'] = 'Egunakari-sarrera eguneratu da';
+$string['eventfeedbackupdated'] = 'Egunkariaren feedbacka eguneratu da';
+$string['eventjournalcreated'] = 'Egunkaria sortu da';
+$string['eventjournaldeleted'] = 'Egunkaria ezabatu da';
+$string['eventjournalviewed'] = 'Egunkaria ikusi da';
 $string['feedbackupdated'] = 'feedbacka eguneratu da {$a} sarreratan';
 $string['gradeingradebook'] = 'Oraingo kalifikazioa kalifikazio-liburuan';
 $string['journal:addentries'] = 'Gehitu egunkari-sarrerak';
@@ -46,6 +53,7 @@ $string['mailsubject'] = 'Egunkariaren feedbacka';
 $string['modulename'] = 'Egunkaria';
 $string['modulenameplural'] = 'Egunkariak';
 $string['newjournalentries'] = 'Egunkari-sarrera berriak';
+$string['nodeadline'] = 'Betik zabalik';
 $string['noentriesmanagers'] = 'Ez dago irakaslerik';
 $string['noentry'] = 'Sarrerarik ez';
 $string['notstarted'] = 'Oraindik ez duzu egunkari hau hasi';

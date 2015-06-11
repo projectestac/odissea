@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_essay', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowattachments'] = 'Permitir archivos adjuntos';
+$string['attachmentsoptional'] = 'Los archivos adjuntos son opcionales';
+$string['attachmentsrequired'] = 'Archivos adjuntos requeridos';
+$string['attachmentsrequired_help'] = 'Esta opción indica el número mínimo de archivos adjuntos necesarios para que la respuesta se considere como evaluable.';
 $string['formateditor'] = 'Editor HTML';
 $string['formateditorfilepicker'] = 'Editor HTML con selector de archivos';
 $string['formatmonospaced'] = 'Texto sin formato, tipografía monoespaciada';
+$string['formatnoinline'] = 'Sin texto';
 $string['formatplain'] = 'Texto sin formato';
 $string['graderinfo'] = 'Información para evaluadores';
+$string['graderinfoheader'] = 'Información para el evaluador';
+$string['mustattach'] = 'Si se selecciona "sin texto", o las respuestas son opcionales, debe permitir al menos un archivo adjunto.';
+$string['mustrequire'] = 'Si se selecciona "sin texto", o las respuestas son opcionales, debe requerir al menos un archivo adjunto.';
+$string['mustrequirefewer'] = 'No puede requerir más archivos adjuntos de los que permite.';
 $string['nlines'] = '{$a} líneas';
 $string['pluginname'] = 'Ensayo';
 $string['pluginnameadding'] = 'Agregando una pregunta de ensayo';
@@ -39,5 +47,10 @@ $string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una ima
 $string['pluginnamesummary'] = 'Permite una respuesta de unas pocas frases o párrafos. Se deberá calificar manualmente.';
 $string['responsefieldlines'] = 'Tamaño de la caja de entrada';
 $string['responseformat'] = 'Formato de la respuesta';
+$string['responseisrequired'] = 'Requerir al estudiante que introduzca texto';
+$string['responsenotrequired'] = 'El texto es opcional';
+$string['responseoptions'] = 'Opciones de respuesta';
+$string['responserequired'] = 'Requerir texto';
 $string['responsetemplate'] = 'Plantilla de respuesta';
+$string['responsetemplateheader'] = 'Plantilla de respuesta';
 $string['responsetemplate_help'] = 'El texto introducido aquí se mostrará en el cuadro de entrada de respuesta cuando se inicia un nuevo intento de la pregunta a modo de plantilla o guía para su cumplimentación.';

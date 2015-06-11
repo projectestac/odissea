@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['colcalendar'] = 'Kalender';
 $string['collastupdated'] = 'Laatst aangepast';
 $string['colpoll'] = 'Update';
 $string['commontasks'] = 'Opties';
-$string['confirmeventdelete'] = 'Wil je deze activiteit echt wissen?';
+$string['confirmeventdelete'] = 'Wil je de activiteit {$a}  echt wissen?';
 $string['course'] = 'Cursus';
 $string['courseevent'] = 'Cursusactiviteit';
 $string['courseevents'] = 'Cursusactiviteiten';
@@ -71,6 +71,12 @@ $string['errorinvalidrepeats'] = 'Geef het aantal activiteiten met een getal tus
 $string['errornodescription'] = 'Beschrijving verplicht';
 $string['errornoeventname'] = 'Naam verplicht';
 $string['errorrequiredurlorfile'] = 'Er is een bestand of een URL nodig om een kalender te importeren.';
+$string['errorrrule'] = 'De doorgegeven rrule lijkt onjuist';
+$string['errorrruleday'] = 'De rrule heeft een ongeldige dagparameter';
+$string['errorrrulefreq'] = 'De rrule heeft een ongeldige frequentieparameter';
+$string['eventcalendareventcreated'] = 'Kalendergebeurtenis gemaakt';
+$string['eventcalendareventdeleted'] = 'Kalendergebeurtenis verwijderd';
+$string['eventcalendareventupdated'] = 'Kalendergebeurtenis aangepast';
 $string['eventdate'] = 'Datum';
 $string['eventdescription'] = 'Beschrijving';
 $string['eventduration'] = 'Tijdsduur';

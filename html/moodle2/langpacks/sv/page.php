@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,6 @@ $string['legacyfilesdone'] = 'Avslutad';
 $string['modulename'] = 'Sida';
 $string['modulename_help'] = 'En sida gör det möjligt att visa och redigera en webbsida i kursen';
 $string['modulenameplural'] = 'Sidor';
-$string['neverseen'] = 'Aldrig sedd';
 $string['optionsheader'] = 'Alternativ';
 $string['page:view'] = 'Visa sidinnehåll';
 $string['pluginadministration'] = 'Administration av modulen för sida';

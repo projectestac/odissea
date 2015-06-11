@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Discussion';
 $string['emailmessages'] = 'Envoyer par courriel les messages personnels quand je suis déconnecté';
 $string['emailtagline'] = 'Ce courriel est la copie d\'un message personnel qui vous a été envoyé sur « {$a->sitename} ». Pour y répondre, visitez {$a->url}.';
 $string['emptysearchstring'] = 'Vous devez saisir un critère de recherche';
+$string['enabled'] = 'Activé';
 $string['errorcallingprocessor'] = 'Erreur lors de l\'appel de la notification définie';
 $string['errortranslatingdefault'] = 'Erreur lors de la conversion d\'un réglage par défaut fourni par le plugin. Utilisation des réglages par défaut du système.';
+$string['eventmessagecontactadded'] = 'Contact de messagerie personnelle ajouté';
+$string['eventmessagecontactblocked'] = 'Contact de messagerie personnelle bloqué';
+$string['eventmessagecontactremoved'] = 'Contact de messagerie personnelle supprimé';
+$string['eventmessagecontactunblocked'] = 'Contact de messagerie personnelle débloqué';
+$string['eventmessagesent'] = 'Message personnel envoyé';
+$string['eventmessageviewed'] = 'Message consulté';
 $string['forced'] = 'Imposé';
 $string['formorethan'] = 'Depuis plus de';
 $string['gotomessages'] = 'Vers les messages';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Débloquer ce contact';
 $string['unreadmessages'] = 'Messages personnels non lus ({$a})';
 $string['unreadnewmessage'] = 'Nouveau message de {$a}';
 $string['unreadnewmessages'] = 'Nouveaux messages ({$a})';
-$string['unreadnewnotification'] = 'Nouvelle notification';
-$string['unreadnewnotifications'] = 'Nouvelles notifications ({$a})';
 $string['userisblockingyou'] = 'Cet utilisateur vous a retiré le droit de lui envoyer des messages personnels';
 $string['userisblockingyounoncontact'] = '{$a} n\'accepte de messages personnels que de personnes de sa liste de contacts.';
 $string['userssearchresults'] = 'Utilisateur(s) trouvé(s) : {$a}';

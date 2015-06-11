@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_langimport', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,11 @@ $string['installedlangs'] = 'Instalatutako hizkuntza-paketeak';
 $string['langimport'] = 'Hizkuntza inportatzeko baliabidea';
 $string['langimportdisabled'] = 'Hizkuntza inportatzeko funtzioa ez dago gaituta. Eskuz eguneratu behar dituzu hizkuntza-paketeak fitxategi-sisteman';
 $string['langpackinstalled'] = '{$a} hizkuntza-paketea ondo instalatu da';
-$string['langpackremoved'] = 'Hizkuntzaren desinstalazioa burutu da';
+$string['langpackinstalledevent'] = 'Hizkuntza-paketea instalatu da';
+$string['langpackremoved'] = '\'{$a}\' hizkuntzaren desinstalazioa burutu da';
+$string['langpackremovedevent'] = 'Hizkuntza-paketea desinstalatu da';
+$string['langpackupdated'] = '\'{$a}\'  hizkuntza-paketea ondo eguneratu da';
+$string['langpackupdatedevent'] = 'Hizkuntza-paketea eguneratu da';
 $string['langpackupdateskipped'] = '{$a} hizkuntza-paketearen eguneratzea albo batera utzi da';
 $string['langpackuptodate'] = '{$a} hizkuntza-paketea eguneratuta dago';
 $string['langupdatecomplete'] = 'Hizkuntza-paketea eguneratu da';

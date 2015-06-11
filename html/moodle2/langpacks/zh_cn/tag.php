@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,11 @@ $string['deletedcoursetags'] = '已删除 - 课程标签';
 $string['description'] = '描述';
 $string['edittag'] = '编辑标签';
 $string['entertags'] = '输入标签，用半角逗号分隔';
-$string['errordeleting'] = '删除id为{$a}的标签时出错，请报告给系统管理员。';
 $string['errortagfrontpage'] = '网站首页不允许加标签';
 $string['errorupdatingrecord'] = '更新标签记录时出错';
+$string['eventtagcreated'] = '创建了标签';
+$string['eventtagdeleted'] = '删除了标签';
+$string['eventtagflagged'] = '标记了标签';
 $string['flag'] = '标记';
 $string['flagasinappropriate'] = '标记为不和谐的';
 $string['helprelatedtags'] = '相关标签用英文半角逗号分隔';

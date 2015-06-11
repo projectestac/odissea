@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,13 +31,15 @@ $string['extendedmode'] = 'Erweiterte Schlüssel verwenden';
 $string['extendedmode_help'] = 'Wenn diese Option aktiviert wird, wird durch das Plugin mit voller Schlüssellänge gearbeitet. Damit ist eine einfache Suche und Analyse in der Mongo-DB möglich: Es wird aber bei der Verarbeitung nicht verwendet. Wenn die Option aktiviert wird, hat dies einen Performanceverlust zur Folge. Deshalb sollte diese Option nur in Testumgebungen aktiviert werden oder wenn dies zur Fehleranalyse unbedingt erforderlich ist.';
 $string['password'] = 'Kennwort';
 $string['password_help'] = 'Nutzerpasswort für diese Verbindung.';
+$string['pleaseupgrademongo'] = 'Sie verwenden eine ältere Version der PHP Mongo-Erweiterung (< 1.3). Die Unterstzung für diese Versionen wird in Kürze deaktiviert. Bereiten Sie ein Update vor.';
 $string['pluginname'] = 'MongoDB';
 $string['replicaset'] = 'Replica Set';
 $string['replicaset_help'] = 'Der Name des Hosts, der für die Verbindung mit der Datenbank benutzt wird. Wenn dies eingetragen wird erfolgt der Zugriff auf die Datenbank über die Definition des ismaster Befehls. Damit wird die Verbindung hergestellt zu einer Datenbank- Instanz, die hier nicht aufgeführt ist.';
 $string['server'] = 'Server';
 $string['server_help'] = 'Dies ist der Verbindungsstring zum Server, den Sie verwenden wollen. Mehrere Server können durch Eintrag einer Komma-separierten Liste eingetragen werden.';
 $string['testserver'] = 'Testserver';
-$string['testserver_desc'] = 'Dies ist der Verbindungsstring zu einem Testserver, den Sie verwenden wollen. Testserver sind gänzlich optional. Durch Festlegung eines Testservers könen Sie PHPunit Tests für diesen Speicher und Performance-Tests durchführen.';
+$string['testserver_desc'] = 'In diesem Feld können eine Verbindungsadresse zu einem MongoDB-Server angegeben werden. Wenn ein entsprechender Testserver vorhanden ist, kann die MongoDB-Performance über die Cache-Seite im Administrationsblock getestet werden.
+Beispielserver: mongodb://127.0.0.1:27017';
 $string['username'] = 'Nutzername';
 $string['username_help'] = 'Der Anmeldename wird benutzt, wenn eine Verbindung hergestellt wird.';
 $string['usesafe'] = 'Sichere Verbindung benutzen';

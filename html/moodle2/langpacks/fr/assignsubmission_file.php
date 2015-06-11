@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['default'] = 'Activé par défaut';
 $string['default_help'] = 'Si ce réglage est activé, cette méthode de remise de travaux sera activée par défaut pour tous les nouveaux devoirs';
 $string['enabled'] = 'Remises de fichiers';
 $string['enabled_help'] = 'Si ce réglage est activé, les participants pourront déposer un ou plusieurs fichiers pour leur devoir.';
-$string['event_assessable_uploaded'] = 'Un fichier a été déposé.';
+$string['eventassessableuploaded'] = 'Fichier déposé';
 $string['file'] = 'Remises de fichiers';
 $string['maxbytes'] = 'Taille maximale des fichiers';
 $string['maxfilessubmission'] = 'Nombre maximum de fichiers à remettre';

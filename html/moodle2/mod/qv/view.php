@@ -28,8 +28,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once('../../config.php');
-require_once('locallib.php');
+require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
+require_once(dirname(__FILE__).'/locallib.php');
 require_once($CFG->libdir . '/completionlib.php');
 
 $id = optional_param('id', 0, PARAM_INT);  // Course Module ID
@@ -47,26 +47,36 @@ if ($id) {
     print_error('You must specify a course_module ID or an instance ID');
 }
 
+require_login($course, true, $cm);
+$context = context_module::instance($cm->id);
+require_capability('mod/qv:view', $context);
+
+$ispreview = false;
+if (has_capability('moodle/grade:viewall', $context)) {
+    $action = optional_param('action', false, PARAM_TEXT);
+    if ($action == 'preview') {
+        $ispreview = true;
+    } else {
+        redirect('report.php?id='.$cm->id);
+    }
+}
+
 $qv = new qv();
 $qv->load_record($record);
-
-$PAGE->set_url('/mod/qv/view.php', array('id' => $cm->id));
-require_login($course, true, $cm);
-
-require_capability('mod/qv:view', $qv->context);
 
 $params = array(
     'context' => $qv->context,
     'objectid' => $qv->id
 );
 $event = \mod_qv\event\course_module_viewed::create($params);
-$event->add_record_snapshot('qv', $qv);
+$event->add_record_snapshot('qv', $record);
 
 
 /// Print the page header
+$PAGE->set_url('/mod/qv/view.php', array('id' => $cm->id));
 $PAGE->set_title(format_string($qv->name));
 $PAGE->set_heading(format_string($course->fullname));
-$PAGE->set_context($qv->context);
+$PAGE->set_context($context);
 
 
 // Mark viewed if required
@@ -75,21 +85,9 @@ $completion->set_module_viewed($cm);
 
 echo $OUTPUT->header();
 
-groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/qv/view.php?id=' . $cm->id);
+echo $OUTPUT->heading($qv->name);
 
-$intro = format_module_intro('qv', $qv, $cm->id);
-echo $OUTPUT->box($intro, 'generalbox boxaligncenter','intro');
-
-$action = optional_param('action', '', PARAM_TEXT);
-if (has_capability('moodle/grade:viewall', $qv->context, $USER->id, true)){
-    if ($action == 'preview'){
-        echo $qv->view_assessment($USER, true);
-    } else{
-        echo $qv->view_dates();
-        echo $qv->print_results_table($course, $action);
-    }
-} else{
-    echo $qv->view_assessment($USER);
-}
+echo $qv->view_intro();
+echo $qv->view_assessment($USER, $ispreview);
 
 echo $OUTPUT->footer();

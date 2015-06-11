@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,8 +46,6 @@ $string['check_frontpagerole_error'] = 'Hasiera-orrian gaizki definitutako rola 
 $string['check_frontpagerole_name'] = 'Hasiera-orriaren rola';
 $string['check_frontpagerole_notset'] = 'Hasiera-orriaren rola ez da ezarri.';
 $string['check_frontpagerole_ok'] = 'Hasiera-orriaren rolaren definizioa ONDO dago.';
-$string['check_globals_name'] = 'Erregistro orokorrak';
-$string['check_globals_ok'] = 'Erregistro orokorrak desgaituta daude';
 $string['check_google_details'] = '<p>Zabaldu Google-ri ezarpenak bilaketa-motorei ikastaroetan sartzen uzten die bisitari gisa. Honek ez du zentzurik bisitariek sarbidea baimenduta ez badute.</p>';
 $string['check_google_error'] = 'Bilaketa-motoreen sarbidea baimenduta dago baina bisitarien sarbidea desgaituta dago.';
 $string['check_google_info'] = 'Bilaketa-motoreak bisitari gisa sar daitezke';

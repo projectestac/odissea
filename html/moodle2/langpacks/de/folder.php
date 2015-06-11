@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ Beachten Sie, dass keine Zugriffe geloggt werden können, wenn der Verzeichnisin
 $string['displayinline'] = 'Auf der Kursseite';
 $string['displaypage'] = 'Auf separater Seite';
 $string['dnduploadmakefolder'] = 'Dateien entpacken und Verzeichnisse anlegen';
+$string['eventfolderupdated'] = 'Verzeichnis aktualisiert';
 $string['folder:addinstance'] = 'Verzeichnis hinzufügen';
 $string['foldercontent'] = 'Dateien und Unterverzeichnisse';
 $string['folder:managefiles'] = 'Dateien im Verzeichnis verwalten';
@@ -42,7 +43,6 @@ $string['modulename_help'] = 'Wenn Sie eine größere Anzahl von Dateien in Ihre
 
 Laden Sie mehrere Dateien als gepacktes ZIP-Archiv hoch und entpacken Sie sie im Verzeichnis. Auch eine Struktur mit Unterverzeichnissen bleibt beim Übertragen in ein Verzeichnis erhalten.';
 $string['modulenameplural'] = 'Verzeichnisse';
-$string['neverseen'] = 'Nie gesehen';
 $string['noautocompletioninline'] = 'Der automatische Abschluss kann nicht gleichzeitig mit der Anzeige "Auf der Kursseite" gewählt werden';
 $string['page-mod-folder-view'] = 'Verzeichnishauptseite';
 $string['page-mod-folder-x'] = 'Jede Verzeichnisseite';

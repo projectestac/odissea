@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,17 @@ $string['evaluation'] = 'Bewertung';
 $string['evaluationmethod'] = 'Bewertungsmethode';
 $string['evaluationmethod_help'] = 'Das Auswertungsverfahren bestimmt, wie die Punkte für die Beurteilung berechnet wird. Im Augenblick gibt es nur eine Option: Vergleich mit der besten Bewertung.';
 $string['evaluationsettings'] = 'Einstellungen für rechnerische Bewertungen';
-$string['event_assessable_uploaded'] = 'Lösung wurde hochgeladen';
+$string['eventassessableuploaded'] = 'Lösung hochgeladen';
+$string['eventassessmentevaluated'] = 'Beurteilung geprüft';
+$string['eventassessmentevaluationsreset'] = 'Beurteilungsprüfung zurückgesetzt';
+$string['eventassessmentreevaluated'] = 'Beurteilung neu geprüft';
+$string['eventphaseswitched'] = 'Phase gewechselt';
+$string['eventsubmissionassessed'] = 'Abgabe beurteilt';
+$string['eventsubmissionassessmentsreset'] = 'Abgabebeurteilungen gelöscht';
+$string['eventsubmissioncreated'] = 'Abgabe angelegt';
+$string['eventsubmissionreassessed'] = 'Abgabe neu beurteilt';
+$string['eventsubmissionupdated'] = 'Abgabe aktualisiert';
+$string['eventsubmissionviewed'] = 'Abgabe angezeigt';
 $string['example'] = 'Beispieleinreichung';
 $string['exampleadd'] = 'Beispieleinreichung hinzufügen';
 $string['exampleassess'] = 'Beurteilen einer Beispieleinreichung';
@@ -234,7 +244,7 @@ $string['selfassessmentdisabled'] = 'Selbstbeurteilung deaktiviert';
 $string['showingperpage'] = '{$a} Einträge pro Seite';
 $string['showingperpagechange'] = 'Ändern...';
 $string['someuserswosubmission'] = 'Mindestens ein/e Teilnehmer/in hat Ihre Einreichung noch nicht vorgenommen';
-$string['sortasc'] = 'Aufwärts sortieren';
+$string['sortasc'] = 'Aufsteigend sortieren';
 $string['sortdesc'] = 'Abwärts sortieren';
 $string['strategy'] = 'Punktestrategie';
 $string['strategyhaschanged'] = 'Die Punktestrategie des Workshops würde seit dem Beginn der Änderungen geändert.';
@@ -320,7 +330,6 @@ $string['workshop:viewallassessments'] = 'Alle Beurteilungen betrachten';
 $string['workshop:viewallsubmissions'] = 'Alle Einreichungen betrachten';
 $string['workshop:viewauthornames'] = 'Autorennamen betrachten';
 $string['workshop:viewauthorpublished'] = 'Autor/innen von veröffentlichten Beiträgen ansehen';
-$string['workshopviewed'] = 'Workshop angezeigt';
 $string['workshop:viewpublishedsubmissions'] = 'Veröffentlichte Einreichungen betrachten';
 $string['workshop:viewreviewernames'] = 'Beurteilernamen anzeigen';
 $string['yourassessment'] = 'Ihre Beurteilung';

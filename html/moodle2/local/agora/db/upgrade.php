@@ -64,6 +64,16 @@ function xmldb_local_agora_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2015050400, 'local', 'agora');
     }
 
+    if ($oldversion < 2015051900) {
+        $DB->set_field('block', 'visible', 0, array('name' => 'participants'));
+        $DB->set_field('block', 'visible', 0, array('name' => 'myprofile'));
+        $DB->set_field('block', 'visible', 0, array('name' => 'mnet_hosts'));
+
+        upgrade_plugin_savepoint(true, 2015051900, 'local', 'agora');
+    }
+
+
+
     return true;
 }
 

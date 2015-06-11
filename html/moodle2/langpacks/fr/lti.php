@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lti', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = 'Accepter';
+$string['accepted'] = 'Accepté';
 $string['accept_grades'] = 'Accepter les notes de l\'outil';
 $string['accept_grades_admin'] = 'Accepter les notes de l\'outil';
 $string['accept_grades_admin_help'] = 'Indiquer si le fournisseur de l\'outil peut ajouter, mettre à jour, lire et effacer les notes associées à des instances de ce type d\'outil.
@@ -47,7 +48,7 @@ $string['allowinstructorcustom'] = 'Permettre aux enseignants d\'ajouter des par
 $string['allowsetting'] = 'Permettre à l\'outil de stocker 8 kO de réglages dans Moodle';
 $string['always'] = 'Toujours';
 $string['automatic'] = 'Automatique, basé sur l\'URL de lancement';
-$string['baseurl'] = 'URL de base';
+$string['baseurl'] = 'URL de base/Nom enregistré de l\'outil';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'Activités LTI';
 $string['basiclti_base_string'] = 'Chaîne de base OAuth LTI';
@@ -58,8 +59,13 @@ $string['basicltiintro'] = 'Description de l\'activité';
 $string['basicltiname'] = 'Nom de l\'activité';
 $string['basiclti_parameters'] = 'Paramètres de lancement LTI';
 $string['basicltisettings'] = 'Réglages LTI de base';
+$string['cancel'] = 'Annuler';
+$string['cancelled'] = 'Annulé';
 $string['cannot_delete'] = 'Vous ne pouvez pas supprimer la configuration de cet outil.';
 $string['cannot_edit'] = 'Vous ne pouvez pas modifier la configuration de cet outil.';
+$string['capabilities'] = 'Fonctionnalités';
+$string['capabilities_help'] = 'Veuillez sélectionner les capacités que vous désirez offrir au fournisseur de l\'outil. Il est possible de sélectionner plusieurs capacités.';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Cliquer pour continuer</a>';
 $string['comment'] = 'Commentaire';
 $string['configpassword'] = 'Mot de passe par défaut de l\'outil distant';
 $string['configpreferheight'] = 'Hauteur favorite par défaut';
@@ -68,6 +74,7 @@ $string['configpreferwidth'] = 'Largeur favorite par défaut';
 $string['configresourceurl'] = 'URL de la ressource par défaut';
 $string['configtoolurl'] = 'URL de l\'outil distant par défaut';
 $string['configtypes'] = 'Autoriser les applications LTI';
+$string['configured'] = 'Configuré';
 $string['courseid'] = 'Identifiant du cours';
 $string['coursemisconf'] = 'Le cours n\'est pas configuré correctement';
 $string['course_tool_types'] = 'Types d\'outil du cours';
@@ -75,7 +82,7 @@ $string['createdon'] = 'Créé le';
 $string['curllibrarymissing'] = 'La bibliothèque PHP cURL doit être installée pour utiliser LTI';
 $string['custom'] = 'Paramètres personnalisés';
 $string['custom_config'] = 'Utilisation de l\'outil de configuration personnalisé';
-$string['custom_help'] = 'Les paramètres personnalisés sont des réglages utilisés par le fournisseur de l\'outil. Par exemple, un paramètre personnalisé pourrait être utilisé pour afficher une ressource spécifique du fournisseur.
+$string['custom_help'] = 'Les paramètres personnalisés sont des réglages utilisés par le fournisseur de l\'outil. Par exemple, un paramètre personnalisé pourrait être utilisé pour afficher une ressource spécifique du fournisseur. Chaque paramètre doit être saisi sur une ligne séparée, dans le format « nom=valeur », par exemple : « chapitre=3 ».
 
 Il n\'est pas nécessaire de modifier ce champ, à moins que le fournisseur de l\'outil ne le demande.';
 $string['custominstr'] = 'Paramètres personnalisés';
@@ -110,12 +117,14 @@ $string['domain_mismatch'] = 'Le domaine de l\'URL de lancement ne correspond pa
 $string['donot'] = 'Ne pas envoyer';
 $string['donotaccept'] = 'Ne pas accepter';
 $string['donotallow'] = 'Ne pas autoriser';
+$string['duplicateregurl'] = 'Cet URL d\'enregistrement est déjà utilisée';
 $string['edittype'] = 'Modifier la configuration de l\'outil externe';
 $string['embed'] = 'Incorporer';
 $string['embed_no_blocks'] = 'Incorporer, sans bloc';
 $string['enableemailnotification'] = 'Envoyer des courriels de notification';
 $string['enableemailnotification_help'] = 'Si ce réglage est activé, les participants recevront notification par courriel lorsque leur remise est évaluée.';
 $string['errormisconfig'] = 'Outil mal configuré. Veuillez demander à l\'administrateur de votre Moodle de corriger sa configuration.';
+$string['existing_window'] = 'Fenêtre existante';
 $string['extensions'] = 'Services d\'extension LTI';
 $string['external_tool_type'] = 'Type d\'outil externe';
 $string['external_tool_type_help'] = 'Le but principal d\'une configuration d\'outil est la mise en place d\'un canal de communication sécurisé entre Moodle et le fournisseur de l\'outil. Elle permet également de définir des réglages par défaut ainsi que de paramétrer d\'éventuels services supplémentaires fournis par l\'outil.
@@ -182,6 +191,7 @@ $string['lti_launch_error_unsigned_help'] = '<p>Cette erreur est vraisemblableme
 <p>Ou alors, vous pouvez <a href="{$a->course_tool_editor}">créer une configuration</a> du fournisseur d\'outil au niveau du cours.</p>';
 $string['lti:manage'] = 'Être formateur lors qu\'un outil externe est lancé';
 $string['lti:requesttooladd'] = 'Demander la configuration d\'outils externes pour tout le site';
+$string['ltisettings'] = 'Réglages LTI';
 $string['lti_tool_request_added'] = 'La demande de configuration a été envoyée correctement. Vous pouvez contacter un administrateur pour terminer la configuration de l\'outil.';
 $string['lti_tool_request_existing'] = 'Une demande de configuration a déjà été envoyée pour cet outil.';
 $string['ltiunknownserviceapicall'] = 'API de service LTI inconnue appelée';
@@ -194,6 +204,8 @@ Les types d\'outils mentionnés sur cette page sont classés en trois catégorie
 * **Actif** - Le type d\'outil a été approuvé et configuré par l\'administrateur. L\'outil peut être utilisé dans tous les cours de ce Moodle. Si une clef client et un secret partagé sont renseignés, une liaison sécurisée est établie entre ce Moodle et l\'outil externe, fournissant un canal de communication sûr.
 * **En attente** - Le type d\'outil a été installé, mais n\'a pas été configuré par un administrateur. Les enseignants peuvent utiliser ces outils s\'ils disposent d\'une clef client et d\'un secret partagé, ou si ces éléments ne sont pas requis.
 * **Rejeté** - Le type d\'outil a été marqué par un administrateur et ne sera pas configuré pour être mis à disposition de ce Moodle. Les enseignants peuvent utiliser ces outils s\'ils disposent d\'une clef client et d\'un secret partagé, ou si ces éléments ne sont pas requis.';
+$string['manage_tool_proxies'] = 'Gérer les enregistrements d\'outils externes';
+$string['manage_tools'] = 'Gérer les types d\'outils externes';
 $string['miscellaneous'] = 'Divers';
 $string['misconfiguredtools'] = 'Des instances d\'outil mal configurées ont été détectées';
 $string['missingparameterserror'] = 'Cette page est mal configurée : {$a}';
@@ -210,6 +222,7 @@ Les outils externes diffèrent des ressources de type URL de plusieurs façons.
 * **Sécurité** - Les configurations d\'outils externes créent une liaison sécurisée entre Moodle et le fournisseur de l\'outil, permettant une communication sûre entre eux.';
 $string['modulenameplural'] = 'Outils externes';
 $string['modulenamepluralformatted'] = 'Instances LTI';
+$string['name'] = 'Nom';
 $string['never'] = 'Jamais';
 $string['new_window'] = 'Nouvelle fenêtre';
 $string['noattempts'] = 'Aucune tentative n\'a été effectuée sur cet instance de l\'outil';
@@ -217,7 +230,13 @@ $string['no_lti_configured'] = 'Il n\'y a pas d\'outil externe actif configuré.
 $string['no_lti_pending'] = 'Il n\'y a pas d\'outil externe en attente.';
 $string['no_lti_rejected'] = 'Il n\'y a pas d\'outil externe rejeté.';
 $string['noltis'] = 'Il n\'y a pas d\'instance d\'outil externe';
+$string['noprofileservice'] = 'Service de profil introuvable';
 $string['noservers'] = 'Aucun serveur trouvé';
+$string['no_tp_accepted'] = 'Il n\'y a pas d\'enregistrement d\'outil externe accepté.';
+$string['no_tp_cancelled'] = 'Il n\'y a pas d\'enregistrement d\'outil externe annulé.';
+$string['no_tp_configured'] = 'Il n\'y a pas d\'enregistrement d\'outil externe configuré.';
+$string['no_tp_pending'] = 'Il n\'y a pas d\'enregistrement d\'outil externe en attente.';
+$string['no_tp_rejected'] = 'Il n\'y a pas d\'enregistrement d\'outil externe rejeté.';
 $string['notypes'] = 'Il n\'y a actuellement dans Moodle aucune configuration d\'outil LTI. Cliquer le lien d\'installation ci-dessus pour en ajouter.';
 $string['noviewusers'] = 'Aucun utilisateur n\'a l\'autorisation d\'utiliser cet outil';
 $string['optionalsettings'] = 'Réglages optionnels';
@@ -232,6 +251,8 @@ $string['organizationurl_help'] = 'L\'URL de base de cette installation de Moodl
 
 Si ce champ n\'est pas renseigné, une valeur basée sur la configuration du site sera utilisée.';
 $string['pagesize'] = 'Remises affichées par page';
+$string['parameter'] = 'Paramètres d\'outil';
+$string['parameter_help'] = 'Les paramètres d\'outil sont des réglages devant être fournis au proxy de l\'outil accepté par le fournisseur de l\'outil.';
 $string['password'] = 'Secret partagé';
 $string['password_admin'] = 'Secret partagé';
 $string['password_admin_help'] = 'Le secret partagé est une sorte de mot de passe utilisé pour permettre l\'accès à l\'outil. Il doit être fourni avec la clef client par le fournisseur de l\'outil.
@@ -255,6 +276,14 @@ $string['privacy'] = 'Confidentialité';
 $string['quickgrade'] = 'Permettre l\'évaluation rapide';
 $string['quickgrade_help'] = 'Si ce réglage est activé, plusieurs outils peuvent être évalués sur une seule page. Ajoutez des notes et des commentaires, puis cliquez « Enregistrer mes feedbacks » pour enregistrer toutes les modifications.';
 $string['redirect'] = 'Vous allez être redirigé dans quelques secondes. Dans le cas contraire, cliquez sur le bouton.';
+$string['register'] = 'Enregistrer';
+$string['registertype'] = 'Configurer l\'enregistrement d\'un outil externe';
+$string['register_warning'] = 'La page d\'enregistrement prend trop de temps à ouvrir. Si elle ne s\'ouvre pas, veuillez vérifier que l\'URL saisie dans la configuration est correcte.';
+$string['registrationname'] = 'Nom du fournisseur de l\'outil';
+$string['registrationname_help'] = 'Saisir le nom du fournisseur de l\'outil en cours d\'enregistrement';
+$string['registration_options'] = 'Options d\'enregistrement';
+$string['registrationurl'] = 'URL d\'enregistrement';
+$string['registrationurl_help'] = 'L\'URL d\'enregistrement doit être mis à disposition par le fournisseur de l\'outil pour désigner l\'endroit où les demandes d\'enregistrement doivent être envoyées.';
 $string['reject'] = 'Rejeter';
 $string['rejected'] = 'Rejeté';
 $string['resource'] = 'Ressource';
@@ -284,6 +313,8 @@ $string['secure_launch_url_help'] = 'Analogue à l\'URL de lancement, mais utili
 
 Il est aussi possible de définir l\'URL de lancement standard avec une adresse https, afin de forcer le lancement via SSL. Dans ce cas, ce champ peut être laissé vide.';
 $string['send'] = 'Envoyer';
+$string['services'] = 'Services';
+$string['services_help'] = 'Sélectionnez les services que vous désirez offrir au fournisseur de l\'outil. Plusieurs services peuvent être sélectionnés.';
 $string['setupoptions'] = 'Options de configuration';
 $string['share_email'] = 'Partager le courriel de l\'utilisateur avec l\'outil';
 $string['share_email_admin'] = 'Partager le courriel de l\'utilisateur avec l\'outil';
@@ -317,10 +348,25 @@ $string['size'] = 'Paramètres de taille';
 $string['submission'] = 'Remise';
 $string['submissions'] = 'Remises';
 $string['submissionsfor'] = 'Travaux remis pour {$a}';
+$string['subplugintype_ltiresource'] = 'Ressource de service LTI';
+$string['subplugintype_ltiresource_plural'] = 'Ressources de service LTI';
+$string['subplugintype_ltiservice'] = 'Service LTI';
+$string['subplugintype_ltiservice_plural'] = 'Services LTI';
 $string['subplugintype_ltisource'] = 'Source LTI';
 $string['subplugintype_ltisource_plural'] = 'Sources LTI';
 $string['toggle_debug_data'] = 'Activer/désactiver les données de débogage';
 $string['tool_config_not_found'] = 'Configuration de l\'outil introuvable avec cet URL';
+$string['toolproxy'] = 'Enregistrements d\'outil externe';
+$string['toolproxy_help'] = 'L\'enregistrement d\'un outil externe permet aux administrateurs d\'un site Moodle de configurer des outils externes via un proxy d\'un fournisseur d\'outils supportant LTI 2.0. La seule information nécessaire pour initier le processus est une URL d\'enregistrement donnée par le fournisseur. Les fonctionnalités et services offerts au fournisseur de l\'outil sont choisies lors de la configuration d\'un nouvel enregistrement.
+
+Les enregistrements répertoriés sur cette page sont classés en quatre catégories.
+
+* **Configuré** - Ces enregistrements ont été configurés, mais le processus d\'enregistrement n\'a pas encore été initié.
+* **En attente** - Le processus d\'enregistrement a été initié, mais ne s\'est pas terminé correctement. Ouvrez, puis fermez les réglages pour le remettre dans la catégorie « Configuré ».
+* **Accepté** - Ces enregistrements ont été approuvés ; les ressources indiquées dans le proxy d\'outil apparaîtront sur la page des types d\'outil externe, avec un statut initial de « En attente ».
+* **Rejeté** - Ces enregistrements ont été rejetés durant le processus d\'enregistrement. Ouvrez, puis fermez les réglages pour le remettre dans la catégorie « Configuré », afin de pouvoir recommencer le processus d\'enregistrement.';
+$string['toolproxyregistration'] = 'Enregistrement d\'outil externe';
+$string['toolregistration'] = 'Enregistrement d\'outil externe';
 $string['tool_settings'] = 'Réglages de l\'outil';
 $string['toolsetup'] = 'Configuration de l\'outil externe';
 $string['toolurl'] = 'URL de base de l\'outil';

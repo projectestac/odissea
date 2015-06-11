@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assign', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['alwaysshowdescription'] = 'Mostrar sempre a descrição';
 $string['alwaysshowdescription_help'] = 'Se selecionar \'Não\', os alunos só podem ver a descrição do trabalho após a data "Aceitar trabalhos a partir de".';
 $string['applytoteam'] = 'Atribuir notas e comentários a todo o grupo';
 $string['assign:addinstance'] = 'Adicionar novo trabalho';
+$string['assign:editothersubmission'] = 'Editar submissão do aluno';
 $string['assign:exportownsubmission'] = 'Exportar o próprio trabalho';
 $string['assignfeedback'] = 'Módulo de feedback';
 $string['assignfeedbackpluginname'] = 'Módulo de feedback';
@@ -66,6 +67,7 @@ ao trabalho que submeteu em \'{$a->assignment}\' Pode consultar o feedback na á
 $string['assignmentname'] = 'Nome do trabalho';
 $string['assignmentplugins'] = 'Trabalho';
 $string['assignmentsperpage'] = 'Nº de trabalhos por página';
+$string['assign:receivegradernotifications'] = 'Receber notificações de submissão do avaliador';
 $string['assign:releasegrades'] = 'Lançar notas';
 $string['assign:revealidentities'] = 'Revelar a identidade dos alunos';
 $string['assign:reviewgrades'] = 'Rever notas';
@@ -73,6 +75,8 @@ $string['assignsubmission'] = 'Módulo de submissão';
 $string['assignsubmissionpluginname'] = 'Módulo de submissão';
 $string['assign:submit'] = 'Submeter trabalho';
 $string['assign:view'] = 'Ver trabalho';
+$string['assign:viewblinddetails'] = 'Ver identidades dos alunos quando a avaliação anónima está ativada';
+$string['assign:viewgrades'] = 'Ver notas';
 $string['attemptheading'] = 'Tentativa {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Tentativas anteriores';
 $string['attemptnumber'] = 'Número da tentativa';
@@ -98,7 +102,7 @@ $string['batchoperationunlock'] = 'desbloquear trabalhos';
 $string['batchsetallocatedmarker'] = 'Definir avaliador atribuído a {$a} utilizador(es) selecionado(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Definir processo de avaliação por estados para {$a} utilizador(es) selecionado(s).';
 $string['blindmarking'] = 'Avaliação anónima';
-$string['blindmarking_help'] = 'A avaliação anónima oculta a identidade dos alunos. A opção avaliação anónima ficará bloqueada assim que for realizada uma submissão ou atribuição de nota neste trabalho.';
+$string['blindmarking_help'] = 'A avaliação anónima oculta a identidade dos alunos aos avaliadores. As configurações da avaliação anónima ficarão bloqueadas assim que um trabalho ou nota forem submetidos nesta atividade.';
 $string['changegradewarning'] = 'Esta atividade já tem trabalhos avaliados e mudar a nota não alterará as notas já submetidas. Deve avaliar novamente todos os trabalhos já submetidos se pretende alterar as suas notas.';
 $string['choosegradingaction'] = 'Ação de avaliação';
 $string['choosemarker'] = 'Escolha...';
@@ -138,23 +142,36 @@ $string['editingpreviousfeedbackwarning'] = 'Está a editar o feedback de uma te
 $string['editingstatus'] = 'Editar o estado';
 $string['editsubmission'] = 'Editar submissão';
 $string['editsubmission_help'] = 'Fazer alterações à sua submissão';
+$string['editsubmissionother'] = 'Editar submissões para {$a}';
 $string['enabled'] = 'Ativo';
 $string['errornosubmissions'] = 'Não há trabalhos submetidos para descarregar';
 $string['errorquickgradingvsadvancedgrading'] = 'As notas não foram guardadas porque este trabalho está a usar um método de avaliação avançado.';
 $string['errorrecordmodified'] = 'As notas não foram guardadas porque alguém alterou um ou mais registos desde o momento em que acedeu à página.';
-$string['event_all_submissions_downloaded'] = 'Todas as submissões estão a ser descarregadas.';
-$string['event_assessable_submitted'] = 'Foi enviada uma nova submissão do Trabalho.';
-$string['event_extension_granted'] = 'Foi concedido um prolongamento da data limite.';
-$string['event_identities_revealed'] = 'As identidades foram reveladas.';
-$string['event_marker_updated'] = 'O avaliador atribuído foi atualizado.';
-$string['event_statement_accepted'] = 'O utilizador aceitou a declaração de submissão.';
-$string['event_submission_duplicated'] = 'O utilizador duplicou a sua submissão.';
-$string['event_submission_graded'] = 'A submissão foi avaliada.';
-$string['event_submission_locked'] = 'As submissões foram bloqueadas para um utilizador.';
-$string['event_submission_status_updated'] = 'O estado da submissão foi atualizado.';
-$string['event_submission_unlocked'] = 'As submissões foram desbloqueadas para um utilizador.';
-$string['event_submission_updated'] = 'O utilizador guardou as alterações à submissão.';
-$string['event_workflow_state_updated'] = 'O estado do processo de avaliação foi atualizado.';
+$string['eventallsubmissionsdownloaded'] = 'Todas as submissões estão a ser descarregadas.';
+$string['eventassessablesubmitted'] = 'Foi enviada uma nova submissão do Trabalho.';
+$string['eventbatchsetmarkerallocationviewed'] = 'Página de atribuição de avaliador visualizada';
+$string['eventbatchsetworkflowstateviewed'] = 'Página de definição do processo de avaliação visualizada.';
+$string['eventextensiongranted'] = 'Foi concedido um prolongamento da data limite.';
+$string['eventfeedbackupdated'] = 'Comentários atualizados';
+$string['eventfeedbackviewed'] = 'Comentários visualizados';
+$string['eventgradingformviewed'] = 'Formulário de avaliação visualizado';
+$string['eventgradingtableviewed'] = 'Grelha de avaliação visualizada';
+$string['eventidentitiesrevealed'] = 'As identidades foram reveladas.';
+$string['eventmarkerupdated'] = 'O avaliador atribuído foi atualizado.';
+$string['eventrevealidentitiesconfirmationpageviewed'] = 'Página de confirmação para revelar identidades visualizada';
+$string['eventstatementaccepted'] = 'O utilizador aceitou a declaração de submissão.';
+$string['eventsubmissionconfirmationformviewed'] = 'Formulário de confirmação de submissão visualizado.';
+$string['eventsubmissioncreated'] = 'Submissão criada.';
+$string['eventsubmissionduplicated'] = 'O utilizador duplicou a sua submissão.';
+$string['eventsubmissionformviewed'] = 'Formulário de submissão visualizado.';
+$string['eventsubmissiongraded'] = 'A submissão foi avaliada.';
+$string['eventsubmissionlocked'] = 'As submissões foram bloqueadas para um utilizador.';
+$string['eventsubmissionstatusupdated'] = 'O estado da submissão foi atualizado.';
+$string['eventsubmissionstatusviewed'] = 'O estado da submissão foi visualizado.';
+$string['eventsubmissionunlocked'] = 'As submissões foram desbloqueadas para um utilizador.';
+$string['eventsubmissionupdated'] = 'O utilizador guardou as alterações à submissão.';
+$string['eventsubmissionviewed'] = 'Submissão visualizada.';
+$string['eventworkflowstateupdated'] = 'O estado do processo de avaliação foi atualizado.';
 $string['extensionduedate'] = 'Prolongamento da data limite';
 $string['extensionnotafterduedate'] = 'A data de prolongamento deve ser posterior à data limite';
 $string['extensionnotafterfromdate'] = 'A data de prolongamento deve ser posterior à data definida para iniciar a aceitação de trabalhos';
@@ -175,6 +192,7 @@ $string['feedbacktypes'] = 'Tipos de Feedback';
 $string['filesubmissions'] = 'Submissões de ficheiros';
 $string['filter'] = 'Filtro';
 $string['filternone'] = 'Sem filtro';
+$string['filternotsubmitted'] = 'Não submetidos';
 $string['filterrequiregrading'] = 'Trabalhos por avaliar';
 $string['filtersubmitted'] = 'Trabalhos submetidos';
 $string['gradeabovemaximum'] = 'A nota deve ser menor ou igual a {$a}.';
@@ -209,18 +227,21 @@ $string['groupsubmissionsettings'] = 'Configurações das submissões de Grupo';
 $string['hiddenuser'] = 'Participante';
 $string['hideshow'] = 'Mostrar/Esconder';
 $string['instructionfiles'] = 'Ficheiros de instruções';
+$string['introattachments'] = 'Ficheiros adicionais';
+$string['introattachments_help'] = 'Ficheiros adicionais para utilização no Trabalho, tal como modelos de resposta, podem ser adicionados. Os links para download dos ficheiros serão exibidos na página do Trabalho, abaixo da descrição.';
 $string['invalidfloatforgrade'] = 'A avaliação submetida não é perceptivel: {$a}';
 $string['invalidgradeforscale'] = 'A avaliação atríbuida não é válida para a escala em uso';
 $string['lastmodifiedgrade'] = 'Última atualização (avaliação)';
 $string['lastmodifiedsubmission'] = 'Última atualização (submissão)';
 $string['latesubmissions'] = 'Submissões com atraso';
-$string['latesubmissionsaccepted'] = 'Apenas os alunos a quem foi concedido um prolongamento do prazo podem ainda submeter o trabalho';
+$string['latesubmissionsaccepted'] = 'Disponível até à Data limite para submeter trabalhos';
 $string['locksubmissionforstudent'] = 'Impedir novas submissões para o aluno: (id={$a->id}, nome completo={$a->fullname}).';
 $string['locksubmissions'] = 'Bloquear trabalhos';
 $string['manageassignfeedbackplugins'] = 'Gerir módulos de feedback do trabalho';
 $string['manageassignsubmissionplugins'] = 'Gerir módulos de submissão do trabalho';
 $string['marker'] = 'Avaliador';
 $string['markerfilter'] = 'Filtro por avaliador';
+$string['markerfilternomarker'] = 'Sem avaliador';
 $string['markingallocation'] = 'Usar atribuição de avaliador';
 $string['markingallocation_help'] = 'Se ativar esta opção, os avaliadores podem ser atribuídos a determinados alunos - requer ativação do processo de avaliação.';
 $string['markingworkflow'] = 'Usar processo de avaliação';
@@ -228,18 +249,18 @@ $string['markingworkflow_help'] = 'Se ativar esta opção, as notas irão passar
 $string['markingworkflowstate'] = 'Estado do  processo de avaliação';
 $string['markingworkflowstate_help'] = 'Os estados do processo de avaliação poderão incluir as seguintes opções (dependendo das suas permissões de utilizador):
 
-- Sem avaliação: o avaliador ainda não iniciou a avaliação;
+- Não avaliado: o avaliador ainda não iniciou a avaliação;
 - Em avaliação: o avaliador iniciou o a avaliação mas esta ainda não está concluída;
 - Avaliação concluída: o avaliador terminou a avaliação mas esta ainda poderá ser sujeita a análise e/ou alterações;
 - Em validação: o professor responsável procede à validação qualitativa;
 - Avaliação validada: o professor responsável validou a avaliação mas ainda não está disponível para os alunos;
-- Avaliação lançada: os alunos podem aceder às notas/feedback.';
+- Avaliação publicada: os alunos podem aceder às notas/feedback.';
 $string['markingworkflowstateinmarking'] = 'Em avaliação';
 $string['markingworkflowstateinreview'] = 'Em validação';
 $string['markingworkflowstatenotmarked'] = 'Sem avaliação';
 $string['markingworkflowstatereadyforrelease'] = 'Avaliação validada';
 $string['markingworkflowstatereadyforreview'] = 'Avaliação concluída';
-$string['markingworkflowstatereleased'] = 'Avaliação lançada';
+$string['markingworkflowstatereleased'] = 'Avaliação publicada';
 $string['maxattempts'] = 'Número máximo de tentativas';
 $string['maxattempts_help'] = 'Número máximo de tentativas de submissão permitidas a um aluno. Após este número de tentativas ter sido atingido a submissão do aluno não poderá ser reaberta.';
 $string['maxgrade'] = 'Nota Máxima';
@@ -259,7 +280,7 @@ $string['noattempt'] = 'Nenhuma tentativa';
 $string['nofiles'] = 'Não foi submetido nenhum ficheiro';
 $string['nograde'] = 'Sem avaliação';
 $string['nolatesubmissions'] = 'Não se aceitam submissões atrasadas.';
-$string['nomoresubmissionsaccepted'] = 'Não se aceitam mais submissões.';
+$string['nomoresubmissionsaccepted'] = 'Apenas disponível aos alunos a quem tenha sido concedida uma extensão do prazo.';
 $string['noonlinesubmissions'] = 'Este trabalho não requer que submeta nada online.';
 $string['nosavebutnext'] = 'Próximo';
 $string['nosubmission'] = 'Ainda não foi submetido nada neste Trabalho';
@@ -292,6 +313,7 @@ $string['quickgradingchangessaved'] = 'As atualizações das notas foram guardad
 $string['quickgrading_help'] = 'A avaliação rápida permite que atribua as notas diretamente na tabela de trabalhos e avaliação. Não funciona nos métodos de avaliação avançados nem é recomendada quando existem mais que um professor a avaliar.';
 $string['quickgradingresult'] = 'Avaliação rápida';
 $string['recordid'] = 'Número de identificação';
+$string['reopenuntilpassincompatiblewithblindmarking'] = '\'Automaticamente até obter aproveitamento\' é incompatível com avaliação anónima, pois as notas não são lançadas para a pauta até que as identidades dos alunos sejam reveladas.';
 $string['requireallteammemberssubmit'] = 'Todos os membros do grupo têm de submeter o trabalho';
 $string['requireallteammemberssubmit_help'] = 'Se ativar esta opção, todos os membros do grupo de alunos devem clicar no botão Submeter para que o trabalho do grupo seja considerado submetido. Se não ativar esta opção, o trabalho do grupo será considerado submetido assim que um dos membros clicar no botão Submeter.';
 $string['requiresubmissionstatement'] = 'Os alunos têm de aceitar a declaração de submissão';
@@ -315,6 +337,8 @@ $string['sendlatenotifications_help'] = 'Se ativar esta opção, os avaliadores 
 $string['sendnotifications'] = 'Notificar submissões aos avaliadores';
 $string['sendnotifications_help'] = 'Se ativo,os avaliadores (normalmente os professores) receberão uma mensagem sempre que um aluno submete um trabalho, antes, durante ou fora do prazo do trabalho. Os métodos das mensagens são configuráveis.';
 $string['sendstudentnotifications'] = 'Notificar alunos';
+$string['sendstudentnotificationsdefault'] = 'Configuração predefinida para "Notificar alunos"';
+$string['sendstudentnotificationsdefault_help'] = 'Definir o valor predefinido para a opção "Notificar alunos" no formulário de avaliação.';
 $string['sendstudentnotifications_help'] = 'Se ativar esta opção, os alunos recebem uma mensagem sobre a atualização da nota ou comentário de feedback.';
 $string['sendsubmissionreceipts'] = 'Notificar submissão do trabalho ao aluno';
 $string['sendsubmissionreceipts_help'] = 'Se ativo os alunos receberão notificações de submissão do trabalho. Receberão uma notificação sempre que submeterem um trabalho.';
@@ -325,6 +349,7 @@ $string['setmarkingworkflowstateforlog'] = 'Definir estado do  processo de avali
 $string['settings'] = 'Configurações do trabalho';
 $string['showrecentsubmissions'] = 'Mostrar submissões recentes';
 $string['status'] = 'Estado';
+$string['studentnotificationworkflowstateerror'] = 'O estado do processo de avaliação tem de ser "Avaliação publicada" para que os alunos sejam notificados.';
 $string['submission'] = 'Trabalho';
 $string['submissioncopiedhtml'] = '<p>Efetuou uma cópia da sua anterior submissão do trabalho \'<i>{$a->assignment}</i>\'.</p>
 <p>Pode ver o estado da <a href="{$a->url}">submissão do seu trabalho</a>.</p>';
@@ -338,12 +363,23 @@ $string['submissiondrafts'] = 'Ativar botão “Submeter o trabalho”';
 $string['submissiondrafts_help'] = 'Se ativar esta opção, os alunos terão de clicar no botão Submeter para declarar o seu envio como sendo o trabalho final. Isto permite que os alunos possam manter o trabalho em curso no sistema até o finalizarem. Se esta opção for modificada de "Não" para "Sim" após alguns alunos já terem submetido o seu trabalho, este será considerado final.';
 $string['submissioneditable'] = 'Os alunos podem editar esta submissão';
 $string['submissionempty'] = 'Nenhum trabalho submetido';
+$string['submissionlog'] = 'Aluno: {$a->fullname},
+Estado: {$a->status}';
 $string['submissionnotcopiedinvalidstatus'] = 'A submissão não foi copiada porque foi editada desde que foi reaberta.';
 $string['submissionnoteditable'] = 'O aluno não pode editar esta submissão';
 $string['submissionnotready'] = 'Este trabalho não está pronto para ser submetido:';
 $string['submissionplugins'] = 'Módulos de submissão';
 $string['submissionreceipthtml'] = '<p>Enviou uma submissão do trabalho \'<i>{$a->assignment}</i>\'.</p>
 <p>Pode ver o estado da <a href="{$a->url}">submissão do seu trabalho </a>.</p>';
+$string['submissionreceiptotherhtml'] = 'A sua submissão de trabalho para \'<i>{$a->assignment}</i>\' foi submetida.<br /><br /> Pode ver o estado da submissão do seu trabalho em <a href="{$a->url}"></a>.';
+$string['submissionreceiptothersmall'] = 'A sua submissão de trabalho para
+{$a->assignment} foi submetida.';
+$string['submissionreceiptothertext'] = 'A sua submissão de trabalho para
+\'{$a->assignment}\'  foi submetida.
+
+Pode ver o estado da submissão do seu trabalho:
+
+{$a->url}';
 $string['submissionreceipts'] = 'Enviar notificações de submissão';
 $string['submissionreceiptsmall'] = 'Submeteu o seu trabalho em {$a->assignment}';
 $string['submissionreceipttext'] = 'Submeteu um trabalho em \'{$a->assignment}\'
@@ -366,7 +402,7 @@ $string['submissionstatus_'] = 'Não submetido';
 $string['submissionstatus_draft'] = 'Trabalho em curso (não submetido)';
 $string['submissionstatusheading'] = 'Estado do trabalho';
 $string['submissionstatus_marked'] = 'Avaliado';
-$string['submissionstatus_new'] = 'Nova submissão';
+$string['submissionstatus_new'] = 'Nenhuma submissão';
 $string['submissionstatus_reopened'] = 'Reaberta';
 $string['submissionstatus_submitted'] = 'Submetido para avaliação';
 $string['submissionsummary'] = '{$a->status}. Modificado pela última vez em {$a->timemodified}';
@@ -375,6 +411,7 @@ $string['submissiontypes'] = 'Tipos de submissão';
 $string['submitaction'] = 'Enviar';
 $string['submitassignment'] = 'Submeter o trabalho';
 $string['submitassignment_help'] = 'Assim que este trabalho for submetido não poderá fazer mais alterações.';
+$string['submitforgrading'] = 'Submeter para avaliação';
 $string['submitted'] = 'Enviados';
 $string['submittedearly'] = 'O trabalho  {$a}  foi submetido antes do prazo';
 $string['submittedlate'] = 'O trabalho foi submetido {$a} após o prazo';
@@ -387,7 +424,6 @@ $string['teamsubmission'] = 'Os alunos submetem em grupos';
 $string['teamsubmissiongroupingid'] = 'Agrupamento para grupos de alunos';
 $string['teamsubmissiongroupingid_help'] = 'Este é o agrupamento que o trabalho utilizará para encontrar grupos para os grupos de alunos. Se não configurar esta opção, será utilizada a configuração predefinida de grupos.';
 $string['teamsubmission_help'] = 'Se ativar esta opção os alunos serão divididos em grupos de acordo com o conjunto predefinido de grupos ou de um agrupamento específico. Uma submissão de grupo será partilhada entre todos os membros do grupo e todos veem as alterações realizadas à submissão.';
-$string['teamsubmissionstatus'] = 'Estado de submissão do grupo';
 $string['textinstructions'] = 'Instruções do trabalho';
 $string['timemodified'] = 'Última alteração';
 $string['timeremaining'] = 'Tempo restante';

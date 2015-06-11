@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_dbtransfer', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_dbtransfer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,6 @@ $string['pluginname'] = 'Transferència base de dades';
 $string['targetdatabase'] = 'Base de dades de destinació';
 $string['targetdatabasenotempty'] = 'La base de dades de destinació no pot contenir taules amb el prefix que especifiqueu.';
 $string['transferdata'] = 'Transfereix dades';
-$string['transferdbintro'] = 'Aquest guió transferirà el contingut sencer de la base de dades a un altre servidor de bases de dades.';
+$string['transferdbintro'] = 'Aquest script transferirà el contingut complet d\'aquesta base de dades a un altre servidor de bases de dades. S\'utilitza sovint per migrar les dades a un altre tipus de base de dades.';
 $string['transferdbtoserver'] = 'Transfereix la base de dades de Moodle a un altre servidor.';
 $string['transferringdbto'] = 'S\'està transferint la base de dades {$a->dbtypefrom} a la base de dades "{$a->dbname}" de tipus {$a->dbtype} en el servidor "{$a->dbhost}"';

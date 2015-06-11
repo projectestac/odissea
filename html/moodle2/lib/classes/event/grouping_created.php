@@ -33,7 +33,7 @@ defined('MOODLE_INTERNAL') || die();
  * @copyright  2013 Frédéric Massart
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class grouping_created extends \core\event\base {
+class grouping_created extends base {
 
     /**
      * Returns description of what happened.
@@ -41,13 +41,13 @@ class grouping_created extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return "User {$this->userid} created the grouping {$this->objectid}.";
+        return "The user with id '$this->userid' created the grouping with id '$this->objectid'.";
     }
 
     /**
      * Legacy event data if get_legacy_eventname() is not empty.
      *
-     * @return stdClass
+     * @return \stdClass
      */
     protected function get_legacy_eventdata() {
         return $this->get_record_snapshot('groupings', $this->objectid);
@@ -68,7 +68,7 @@ class grouping_created extends \core\event\base {
      * @return string
      */
     public static function get_name() {
-        return get_string('event_grouping_created', 'group');
+        return get_string('eventgroupingcreated', 'group');
     }
 
     /**
@@ -77,7 +77,7 @@ class grouping_created extends \core\event\base {
      * @return \moodle_url
      */
     public function get_url() {
-        return new \moodle_url('/group/groupings/index.php', array('id' => $this->courseid));
+        return new \moodle_url('/group/groupings.php', array('id' => $this->courseid));
     }
 
     /**
@@ -87,18 +87,7 @@ class grouping_created extends \core\event\base {
      */
     protected function init() {
         $this->data['crud'] = 'c';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
         $this->data['objecttable'] = 'groupings';
     }
-
-    /**
-     * Set legacy data.
-     *
-     * @param mixed $legacydata.
-     * @return void
-     */
-    public function set_legacy_eventdata($legacydata) {
-        // This function is not used and will be removed in 2.7.
-    }
-
 }

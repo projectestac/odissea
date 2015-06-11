@@ -28,10 +28,6 @@ function TOOLTIP(config) {
         config.constrain = true;
     }
 
-    if (typeof config.lightbox === 'undefined') {
-        config.lightbox = false;
-    }
-
     TOOLTIP.superclass.constructor.apply(this, [config]);
 }
 
@@ -319,7 +315,6 @@ Y.extend(TOOLTIP, M.core.dialogue, {
 
         // Prevent the default click action and prevent the event triggering anything else.
         e.preventDefault();
-        e.stopPropagation();
 
         // Cancel any existing listeners and close the panel if it's already open.
         this.cancel_events();
@@ -335,7 +330,7 @@ Y.extend(TOOLTIP, M.core.dialogue, {
         });
 
         // Now that initial setup has begun, show the panel.
-        this.show();
+        this.show(e);
 
         // Align with the link that was clicked.
         this.align(clickedlink, this.alignpoints);
@@ -383,11 +378,17 @@ Y.extend(TOOLTIP, M.core.dialogue, {
             responseobject = Y.JSON.parse(response);
             if (responseobject.error) {
                 this.close_panel();
-                return new M.core.ajaxException(responseobject);
+                Y.use('moodle-core-notification-ajaxexception', function() {
+                    return new M.core.ajaxException(responseobject).show();
+                });
+                return this;
             }
         } catch (error) {
             this.close_panel();
-            return new M.core.exception(error);
+            Y.use('moodle-core-notification-exception', function() {
+                return new M.core.exception(error).show();
+            });
+            return this;
         }
 
         // Set the contents using various handlers.
@@ -442,6 +443,26 @@ Y.extend(TOOLTIP, M.core.dialogue, {
         }
     }
 });
+
+Y.Base.modifyAttrs(TOOLTIP, {
+    /**
+     * Whether the widget should be modal or not.
+     *
+     * Moodle override: We override this for tooltip to default it to false.
+     *
+     * @attribute Modal
+     * @type Boolean
+     * @default false
+     */
+    modal: {
+        value: false
+    },
+
+    focusOnPreviousTargetAfterHide: {
+        value: true
+    }
+});
+
 M.core = M.core || {};
 M.core.tooltip = M.core.tooltip = TOOLTIP;
 
@@ -451,7 +472,7 @@ M.core.tooltip = M.core.tooltip = TOOLTIP;
         "base",
         "node",
         "io-base",
-        "moodle-core-notification",
+        "moodle-core-notification-dialogue",
         "json-parse",
         "widget-position",
         "widget-position-align",

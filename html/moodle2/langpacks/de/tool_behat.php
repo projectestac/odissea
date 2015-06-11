@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_behat', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,17 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aim'] = 'Dieses Administrationstool unterstützt Entwickler und Softwaretestautoren bei der Erstellung und Ausführung von .feature-Dateien, die neue Moodle-Funktionalitäten beschreiben.';
+$string['aim'] = 'Dieses Administrationstool unterstützt Entwickler und Softwaretestautoren bei der Erstellung und Ausführung von .feature-Dateien, die neue Moodle-Funktionalitäten beschreiben. Die einzelnen Schritte zur Verwendung von .feature Dateien sind unten aufgeführt.';
 $string['allavailablesteps'] = 'Alle verfügbaren Schritte zur Definition';
+$string['errorbehatcommand'] = 'Fehler beim Ausführen des behat-CLI-Kommandos. Versuchen Sie {$a} --help" manuell von der CLI Konsole auszuführen, um mehr über das Problem herauszufinden.';
+$string['errorcomposer'] = 'Composer-Abhängigkeiten sind nicht installiert';
+$string['errordataroot'] = '$CFG->behat_dataroot ist nicht gesetzt oder ungültig.';
+$string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot müssen in der config.php definiert werden.';
+$string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot values müssen sich unterscheiden von den Werten für $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot und $CFG->phpunit_prefix.';
+$string['fieldvalueargument'] = 'Argumente für Feldwert';
+$string['fieldvalueargument_help'] = 'Das Argument wird mit einem Feldwert abgeschlossen. Neben einfachen Feldwerten wie Checkboxen, gibt es Texteingabebereiche oder Auswahllisten. Unter <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a>  finden Sie erwartete Feldwerte für die Feldtypen.';
 $string['giveninfo'] = 'Vorgefunden (given). Prozesse zum Anlegen der Umgebung.';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lesen {$a} Information für Installation und Testdurchlauf';
-$string['moreinfoin'] = 'Weitere Informationen {$a}';
 $string['newstepsinfo'] = 'Lesen {$a} von Informationen wie neue Schritte definiert werden.';
 $string['newtestsinfo'] = 'Lesen {$a} von Informationen zum Schreiben neuer Softwaretests.';
 $string['nostepsdefinitions'] = 'Es gibt keine Schritt-Definition, die zu diesen Filtern passt.';
 $string['pluginname'] = 'Akzeptanztest';
-$string['runclitool'] = 'Um die Schrittdefinition aufzulisten, muss das Behat CLI-Tool gestartet werden, damit das $CFG->behat_dataroot Verzeichnis erzeugt wird. Rufen Sie das Moodle-Root-Verzeichnis auf und starten Sie "{$a}".';
 $string['stepsdefinitionscomponent'] = 'Bereich';
 $string['stepsdefinitionscontains'] = 'Enthält';
 $string['stepsdefinitionsfilters'] = 'Definition der Schritte';
@@ -44,6 +49,7 @@ $string['theninfo'] = 'Dann. Prüfung, damit die Ergebnisse der Erwartung entspr
 $string['unknownexceptioninfo'] = 'Es gab ein Problem mit Selenium oder dem Browser. Versuchen Sie Selenium auf die letzte Version zu aktualisieren. Fehler:';
 $string['viewsteps'] = 'Filter';
 $string['wheninfo'] = 'Wenn. Aktion, die einen Event auslöst.';
-$string['wrongbehatsetup'] = 'Mit dem Behat Setup ist ein Problem aufgetreten. Stellen Sie sicher, dass
-<ul><li>Sie php admin/tool/behat/cli/init.php im Root-Verzeichnis gestartet haben</li>
-<li>die Datei vendor/bin/behat Ausführungsrechte hat.</li></ul>';
+$string['wrongbehatsetup'] = 'Mit dem Behat Setup ist ein Problem aufgetreten. Die Definitionsschritte können nicht aufgelistet werden: <b>{$a->errormsg}</b><br/><br/>Prüfen Sie bitte:<ul>
+<li>$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot, die in der  config.php  angelegt sein müssen und deren Werte sich von den Werten für $CFG->dataroot, $CFG->prefix und $CFG->wwwroot unterscheiden müssen.</li>
+<li>Sie starten "{$a->behatinit}" aus Ihrem Moodle-Root-Verzeichnis.</li>
+<li>Abhängigkeiten sind installiert in vendor/ und die {$a->behatcommand} Datei ist auf dem Server ausführbar.</li></ul>';

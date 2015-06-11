@@ -654,5 +654,5 @@ function rcontent_get_uploadscore_link($cmid, $userid, $attempt, $gradeid = fals
     }
     $link = new moodle_url($url);
     $action = new popup_action('click', $link, 'update_rcontent', array('height' => 500, 'width' => 600));
-    return $OUTPUT->action_link($link, get_string('rcontent:updatescore', 'rcontent'), $action, array('title' => get_string('rcontent:update', 'rcontent')));
+    return $OUTPUT->action_link($link, get_string('rcontent:updatescore', 'rcontent'), $action, array('title' => get_string('rcontent:updatescore', 'rcontent')));
 }

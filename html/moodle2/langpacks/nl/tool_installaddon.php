@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_installaddon', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,13 +34,13 @@ $string['installaddons'] = 'Installeer add-ons';
 $string['installexception'] = 'Oei, er is een fout opgetreden tijdens het installeren van de add-on. Schakel debugging aan om details over de fout te bekijken.';
 $string['installfromrepo'] = 'Installeer add-ons van de Moodle plugin databank';
 $string['installfromrepo_help'] = 'Je zult omgeleid worden naar de plugin-databank van Moodle om een add-on te zoeken en installeren. Merk op dat je site-naam, URL en Moodleversie ook verstuurd zullen worden om het installatieproces voor jou makkelijker te maken.';
-$string['installfromzip'] = 'Installeer contributiecode van ZIP-bestand';
+$string['installfromzip'] = 'Installeer plugin van ZIP-bestand';
 $string['installfromzipfile'] = 'ZIP-bestand';
 $string['installfromzipfile_help'] = 'Het ZIP-bestand met de plugin moet exact één map bevatten met als naam de naam van de plugin. Het ZIP-bestand zal in de juiste map van het plugin-type uitgepakt worden. Als het van de Moodle plugin databank gedownload wordt, dan zal het deze structuur hebben.';
 $string['installfromzip_help'] = 'Een alternatief voor het installeren van een add-on rechtstreeks van de Moodle plugin databank, is het uploaden van een ZIP-pakket van de add-on. Dat ZIP-pakket moet dezelfde structuur hebben als een pakket dat je download van de Moodle plugin databank.';
 $string['installfromziprootdir'] = 'Hernoem de root-map';
 $string['installfromziprootdir_help'] = 'Sommige ZIP-bestanden, zoals die door Github gegenereerd worden, kunnen een foute root mapnaam hebbben. Indien dat zo is kan de juiste naam hier ingegeven worden.';
-$string['installfromzipsubmit'] = 'Installeer contributiecode van ZIP-bestand';
+$string['installfromzipsubmit'] = 'Installeer plugin van ZIP-bestand';
 $string['installfromziptype'] = 'Plugin type';
 $string['installfromziptype_help'] = 'Kies het juiste type plugin dat je gaat installeren. Waarschuwing: de installatieprocedure kan behoorlijk falen als er een fout plugintype geselecteerd wordt.';
 $string['permcheck'] = 'Zorg ervoor dat de root-locatie voor dit plugintype beschrijvbaar is voor het webserver proces.';
@@ -59,7 +59,7 @@ $string['validationmsg_componentmatch'] = 'Volledige componentnaam';
 $string['validationmsg_componentmismatchname'] = 'Add-on name klopt niet';
 $string['validationmsg_componentmismatchname_help'] = 'Sommige ZIP-bestanden, zoals die gemaakt door Github, kunnen een foute root-mapnaam bevatten. Je moet de naam van de root-map van de plugin aanpassen zodat die de naam van de plugin heeft.';
 $string['validationmsg_componentmismatchname_info'] = 'De plugin verklaart dat zijn naam \'{$a}\' is en dat die naam niet overeen komt met de root-map';
-$string['validationmsg_componentmismatchtype'] = 'Fout type contributiecode';
+$string['validationmsg_componentmismatchtype'] = 'Het plugin-type is fout.';
 $string['validationmsg_componentmismatchtype_info'] = 'Je hebt type \'{$a->expected}\' geselecteerd, maar de code verklaart dat het type \'{$a->found}\' is.';
 $string['validationmsg_filenotexists'] = 'Uitgepakt bestand niet gevonden';
 $string['validationmsg_filesnumber'] = 'Te weinig bestanden in het pakket';
@@ -71,21 +71,21 @@ $string['validationmsglevel_error'] = 'Fout';
 $string['validationmsglevel_info'] = 'OK';
 $string['validationmsglevel_warning'] = 'Waarschuwing';
 $string['validationmsg_maturity'] = 'Verklaar maturiteitsniveau';
-$string['validationmsg_maturity_help'] = 'De contributiecode kan verklaren hoe volwassen de code is. Als degene die de code onderhoudt vind dat de code stabiel is, dan zal er MATURITY_STABLE staan. Alle andere niveau\'s (zoals alpha of beta) moeten als niet stabiel beschouwd worden en er wordt een waarschuwing getoond.';
+$string['validationmsg_maturity_help'] = 'De plugin kan verklaren hoe volwassen de code is. Als degene die de code onderhoud vindt dat de code stabiel is, dan zal er MATURITY_STABLE staan. Alle andere niveau\'s (zoals alpha of beta) moeten als niet stabiel beschouwd worden en er wordt een waarschuwing getoond.';
 $string['validationmsg_missingexpectedlangenfile'] = 'Fout in de bestandsnaam van het Engelstalig taalpakket';
-$string['validationmsg_missingexpectedlangenfile_info'] = 'Het gegeven contributiecode type mist het verwachte Engelstalig taalbestand {$a}.';
+$string['validationmsg_missingexpectedlangenfile_info'] = 'Het plugin-type mist het verwachte Engelstalig taalbestand {$a}.';
 $string['validationmsg_missinglangenfile'] = 'Geen Engelstalig taalpakket gevonden';
 $string['validationmsg_missinglangenfolder'] = 'Map Engels taalpakket ontbreekt';
-$string['validationmsg_missingversion'] = 'Contributiecode zegt niet welke versie het is';
+$string['validationmsg_missingversion'] = 'De plugin zegt niet welke versie het is';
 $string['validationmsg_missingversionphp'] = 'Bestand version.php niet gevonden';
 $string['validationmsg_multiplelangenfiles'] = 'Meerdere Engelse taalbestanden gevonden';
 $string['validationmsg_onedir'] = 'Ongeldige structuur van het ZIP-bestand';
-$string['validationmsg_onedir_help'] = 'Het zip-bestand moet één root-map bevatten waarin de contributiecode zit.';
+$string['validationmsg_onedir_help'] = 'Het zip-bestand moet één root-map bevatten waarin de plugin zit. De naam van die map moet dezelfde zijn als de naam van de plugin.';
 $string['validationmsg_pathwritable'] = 'Test schrijftoegang';
-$string['validationmsg_pluginversion'] = 'Versie contributiecode';
-$string['validationmsg_release'] = 'Release contributiecode';
+$string['validationmsg_pluginversion'] = 'Plugin-versie';
+$string['validationmsg_release'] = 'Plugin-release';
 $string['validationmsg_requiresmoodle'] = 'Vereiste Moodleversie';
-$string['validationmsg_rootdir'] = 'Naam van de te installeren contributiecode';
+$string['validationmsg_rootdir'] = 'Naam van de te installeren plugin';
 $string['validationmsg_rootdir_help'] = 'De naam van de root-map in het ZIP-bestand is de naam van de geïnstalleerde contributiecode. Als de naam fout is, dan kun je de root-map in het zip-bestand hernoemen voor je de contributiecode installeerd.';
 $string['validationmsg_rootdirinvalid'] = 'Ongeldige naam contributiecode';
 $string['validationmsg_rootdirinvalid_help'] = 'De naam van de root-map in het ZIP-bestand bevat ongeldige tekens. Sommige ZIP-bestanden, zoals diegene die door Github gegenereerd worden, kunnen een foute root-mapnaam bevatten. Je moet die naam van de root-map aanpassen, zodat die overeenkomt met de naam van de geïnstalleerde contributiecode.';
@@ -96,6 +96,7 @@ $string['validationresult0'] = 'Validatie mislukt.';
 $string['validationresult0_help'] = 'Er is een groot probleem gevonden en daarom is het niet veilig om de add-on te installeren. Bekijk de logberichten van de validatie voor details.';
 $string['validationresult1'] = 'Validatie geslaagd.';
 $string['validationresult1_help'] = 'Het add-on pakket is gevalideerd en er werden geen grote problemen gedetecteerd.';
+$string['validationresult2_help'] = 'Er zijn geen ernstige problemen gevonden. Je kunt verder gaan met de installatie van de plugin. Bekijk de logberichten van de validatie voor meer details en eventuele waarschuwingen.';
 $string['validationresultinfo'] = 'Info';
 $string['validationresultmsg'] = 'Bericht';
 $string['validationresultstatus'] = 'Status';

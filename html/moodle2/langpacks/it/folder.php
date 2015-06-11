@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ Da notare che con questa impostazione la visualizzazione della risorsa da parte 
 $string['displayinline'] = 'Nella home page del corso';
 $string['displaypage'] = 'In una pagina separata';
 $string['dnduploadmakefolder'] = 'Decomprimi i file e crea le cartelle';
+$string['eventfolderupdated'] = 'Aggiornata catella';
 $string['folder:addinstance'] = 'Aggiungere cartelle';
 $string['foldercontent'] = 'File e sotto cartelle';
 $string['folder:managefiles'] = 'Gestire file nel modulo cartella';
@@ -44,7 +45,6 @@ Una cartella può essere usata per:
 * un insieme di file su un dato argomento, ad esempio un insieme di temi d\'esame svolti in passato in formato pdf
 * fornire uno spazio comune dove i docenti possono caricare e condividere file del corso (tenendo la cartella nascosta agli studenti)';
 $string['modulenameplural'] = 'Cartelle';
-$string['neverseen'] = 'Mai acceduto';
 $string['noautocompletioninline'] = 'Il completamento automatico basato sulla visualizzazione dell\'attività non può essere selezionato se la visualizzazione del contenuto è impostata a "Nella home page del corso".';
 $string['page-mod-folder-view'] = 'Pagina principale modulo cartella';
 $string['page-mod-folder-x'] = 'Qualsiasi pagina con modulo cartella';

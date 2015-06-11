@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'book', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,12 +41,10 @@ $string['customtitles_help'] = 'Normalmente o título do capítulo é mostrado n
 Se ativar os titulos personalizados, o título do capítulo não será exibido como cabeçalho por cima do conteúdo. Neste caso, poderá introduzir no conteúdo um título diferente (talvez mais longo que o título do capítulo).';
 $string['editingchapter'] = 'Editar capítulo';
 $string['errorchapter'] = 'Ocorreu um erro ao ler o capítulo do livro';
-$string['event_chapter_created'] = 'Capítulo criado';
-$string['event_chapter_deleted'] = 'Capítulo apagado';
-$string['event_chapter_updated'] = 'Capítulo atualizado';
-$string['event_chapter_viewed'] = 'Capítulo visualizado';
-$string['event_course_module_viewed'] = 'Módulo de disciplina visualizado';
-$string['event_instances_list_viewed'] = 'Lista de instâncias visualizada';
+$string['eventchaptercreated'] = 'Capítulo criado';
+$string['eventchapterdeleted'] = 'Capítulo apagado';
+$string['eventchapterupdated'] = 'Capítulo atualizado';
+$string['eventchapterviewed'] = 'Capítulo visualizado';
 $string['modulename'] = 'Livro';
 $string['modulename_help'] = 'O recurso Livro permite que o professor crie um conteúdo com várias páginas com formato idêntico a um livro, com capítulos e subcapítulos. O Livro pode conter texto e elementos multimédia e é útil para exibir informação extensa que pode ser dividida em capítulos.
 

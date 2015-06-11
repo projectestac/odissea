@@ -86,7 +86,7 @@ class mod_qv_mod_form extends moodleform_mod {
 
         $options = get_string_manager()->get_list_of_translations();
         $mform->addElement('select', 'assessmentlang', get_string('assessmentlang', 'qv'), $options);
-        $mform->setDefault('assessmentlang', substr($CFG->lang, 0, -5));
+        $mform->setDefault('assessmentlang', $CFG->lang);
 
         $options = qv_get_skins();
         $options_parsed = array();
@@ -120,7 +120,7 @@ class mod_qv_mod_form extends moodleform_mod {
         $mform->setDefault('orderitems', '1');
 
          //---OPTIONS---------------------------------------------------------------------------
-        $mform->addElement('header', 'optionsheader', get_string('optionsheader', 'qv'));
+        $mform->addElement('header', 'optionsheader', get_string('appearance'));
 
         $options = array('self' => get_string('displayembed','qv'), 'blank' => get_string('displayinpopup','qv'));
 

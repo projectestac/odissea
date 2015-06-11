@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Дискуссия';
 $string['emailmessages'] = 'Дублировать приходящие мне сообщения по почте, если я вне сайта...';
 $string['emailtagline'] = 'Это письмо - копия сообщения, отправленного Вам на сайте «{$a->sitename}». Для ответа пройдите по ссылке {$a->url}.';
 $string['emptysearchstring'] = 'Вы не указали, что именно Вы ищете';
+$string['enabled'] = 'Включено';
 $string['errorcallingprocessor'] = 'Ошибка вызова указанного способа доставки';
 $string['errortranslatingdefault'] = 'Ошибка перевода настроек по умолчанию для плагина, вместо них будут использоваться системные настройки';
+$string['eventmessagecontactadded'] = 'Добавлен собеседник';
+$string['eventmessagecontactblocked'] = 'Собеседник заблокирован';
+$string['eventmessagecontactremoved'] = 'Собеседник удален';
+$string['eventmessagecontactunblocked'] = 'Собеседник разблокирован';
+$string['eventmessagesent'] = 'Сообщение отправлено';
+$string['eventmessageviewed'] = 'Сообщение просмотрено';
 $string['forced'] = 'Установить принудительно';
 $string['formorethan'] = '... в течение последних';
 $string['gotomessages'] = 'Перейти к сообщениям';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Разблокировать сообщения о�
 $string['unreadmessages'] = 'Непрочитанных сообщений: {$a}';
 $string['unreadnewmessage'] = 'Новое сообщение от пользователя {$a}';
 $string['unreadnewmessages'] = 'Новые сообщения ({$a})';
-$string['unreadnewnotification'] = 'Новое уведомление';
-$string['unreadnewnotifications'] = 'Новые уведомления ({$a})';
 $string['userisblockingyou'] = 'Пользователь заблокировал получение Ваших сообщений';
 $string['userisblockingyounoncontact'] = 'Пользователь {$a} принимает сообщения только от лиц из своего списка собеседников.';
 $string['userssearchresults'] = 'Найдено пользователей: {$a}';

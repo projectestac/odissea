@@ -5,20 +5,20 @@ Feature: Test we can both create and delete a course.
   I need to test I can delete a course
 
   Scenario: Create a course
-    Given the following "categories" exists:
+    Given the following "categories" exist:
       | name | category 0| idnumber |
       | Cat 1 | 0 | CAT1 |
 
     And I log in as "admin"
     And I go to the courses management page
-    And I should see the "Course categories" management page
+    And I should see the "Course categories and courses" management page
     And I click on category "Cat 1" in the management interface
     # Redirect
     And I should see the "Course categories and courses" management page
     And I should see "Cat 1" in the "#category-listing" "css_element"
     And I should see "No courses in this category" in the "#course-listing" "css_element"
     And I click on "Create new course" "link" in the ".course-listing-actions" "css_element"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Course full name | Test course: create a course |
       | Course short name | TCCAC |
       | Course ID number | TC3401 |
@@ -26,7 +26,7 @@ Feature: Test we can both create and delete a course.
     And I press "Save changes"
     # Redirect
     And I go to the courses management page
-    And I should see the "Course categories" management page
+    And I should see the "Course categories and courses" management page
     And I click on category "Cat 1" in the management interface
     # Redirect
     And I should see the "Course categories and courses" management page
@@ -34,17 +34,17 @@ Feature: Test we can both create and delete a course.
     And I should see "Test course: create a course" in the "#course-listing" "css_element"
 
   Scenario: Delete a course via its management listing
-    Given the following "categories" exists:
+    Given the following "categories" exist:
       | name | category 0| idnumber |
       | Cat 1 | 0 | CAT1 |
-    And the following "courses" exists:
+    And the following "courses" exist:
       | category | fullname | shortname | idnumber |
       | CAT1 | Test course: create a course | TCCAC | TC3401 |
       | CAT1 | Test course 2: create another course | TC2CAC | TC3402 |
 
     And I log in as "admin"
     And I go to the courses management page
-    And I should see the "Course categories" management page
+    And I should see the "Course categories and courses" management page
     And I click on category "Cat 1" in the management interface
     # Redirect
     And I should see the "Course categories and courses" management page
@@ -66,17 +66,17 @@ Feature: Test we can both create and delete a course.
     And I should see "Test course 2: create another course" in the "#course-listing" "css_element"
 
   Scenario: Delete a course via its management details page
-    Given the following "categories" exists:
+    Given the following "categories" exist:
       | name | category 0| idnumber |
       | Cat 1 | 0 | CAT1 |
-    And the following "courses" exists:
+    And the following "courses" exist:
       | category | fullname | shortname | idnumber |
       | CAT1 | Test course: create a course | TCCAC | TC3401 |
       | CAT1 | Test course 2: create another course | TC2CAC | TC3402 |
 
     And I log in as "admin"
     And I go to the courses management page
-    And I should see the "Course categories" management page
+    And I should see the "Course categories and courses" management page
     And I click on category "Cat 1" in the management interface
     # Redirect
     And I should see the "Course categories and courses" management page

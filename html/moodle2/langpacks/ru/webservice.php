@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,6 +86,15 @@ $string['errorcoursecontextnotvalid'] = 'Вы не можете выполнят
 $string['errorinvalidparam'] = 'Недопустимый параметр «{$a}».';
 $string['errornotemptydefaultparamarray'] = 'Параметр с именем «{$a}» в описании веб-службы является одиночной или множественной структурой. По умолчанию может использоваться только пустой массив. Сверьтесь с документацией веб-службы.';
 $string['erroroptionalparamarray'] = 'Параметр с именем «{$a}» в описании веб-службы является одиночной или множественной структурой. Он не может быть установлен в виде VALUE_OPTIONAL. Проверьте описание веб-службы.';
+$string['eventwebservicefunctioncalled'] = 'Осуществлен вызов функции веб-службы';
+$string['eventwebserviceloginfailed'] = 'Ошибка авторизации в веб-службе';
+$string['eventwebserviceservicecreated'] = 'Веб-служба создана';
+$string['eventwebserviceservicedeleted'] = 'Веб-служба удалена';
+$string['eventwebserviceserviceupdated'] = 'Веб-служба обновлена';
+$string['eventwebserviceserviceuseradded'] = 'Добавлен пользователь веб-службы';
+$string['eventwebserviceserviceuserremoved'] = 'Удален пользователь веб-службы';
+$string['eventwebservicetokencreated'] = 'Создан ключ веб-службы';
+$string['eventwebservicetokensent'] = 'Ключ веб-службы отправлен';
 $string['execute'] = 'Выполнить';
 $string['executewarnign'] = 'ВНИМАНИЕ: Если Вы нажмете «Выполнить», то база данных будет изменена и изменения не смогут быть отменены автоматически!';
 $string['externalservice'] = 'Внешняя служба';
@@ -170,6 +179,7 @@ $string['serviceusers'] = 'Авторизованные пользователи
 $string['serviceusersettings'] = 'Настройки пользователя';
 $string['serviceusersmatching'] = 'Соответствие авторизованных пользователей';
 $string['serviceuserssettings'] = 'Изменить параметры для авторизованных пользователей';
+$string['shortnametaken'] = 'Краткое название уже используется для другой службы ({$a})';
 $string['simpleauthlog'] = 'Простой авторизованный вход';
 $string['step'] = 'Шаг';
 $string['supplyinfo'] = 'Подробнее';

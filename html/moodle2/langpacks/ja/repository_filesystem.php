@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository_filesystem', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['enableuserinstances'] = '管理者による個人利用のためのリ�
 $string['filesystem:view'] = 'ファイルシステムリポジトリを表示する';
 $string['information'] = 'これらのフォルダは、<b>{$a}</b>ディレクトリ内にあります。';
 $string['invalidpath'] = '無効なrootパス';
-$string['nosubdir'] = 'ここで選択できるよう、あなたは少なくとも1つのフォルダを<b>{$a}</b>ディレクトリ内に作成する必要があります。';
+$string['nosubdir'] = 'ここで選択できるようあなたは少なくとも1つのフォルダを<b>{$a}</b>ディレクトリ内に作成する必要があります。';
 $string['path'] = 'サブディレクトリを選択する';
 $string['pluginname'] = 'ファイルシステム';
 $string['pluginname_help'] = 'ローカルディレクトリからリポジトリを作成する';

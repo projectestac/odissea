@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_image', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,13 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilityhint'] = '<p>Web content accessibility guidelines (WCAG):<br/><ul><li><a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Text Alternatives</a></li></ul></p>';
+$string['alignment'] = 'Alignment';
+$string['alignment_bottom'] = 'Bottom';
+$string['alignment_left'] = 'Left';
+$string['alignment_middle'] = 'Middle';
+$string['alignment_right'] = 'Right';
+$string['alignment_top'] = 'Top';
 $string['browserepositories'] = 'Browse repositories...';
+$string['constrain'] = 'Auto size';
 $string['createimage'] = 'Insert image';
-$string['enteralt'] = 'Enter alternative text';
+$string['customstyle'] = 'Custom style';
+$string['enteralt'] = 'Describe this image for someone who cannot see it';
 $string['enterurl'] = 'Enter URL';
 $string['height'] = 'Height';
-$string['image'] = 'Image';
+$string['imageproperties'] = 'Image properties';
 $string['pluginname'] = 'Image';
+$string['presentation'] = 'Description not necessary';
+$string['presentationoraltrequired'] = 'Images must have a description, except if the description is marked as not necessary.';
 $string['preview'] = 'Preview';
+$string['saveimage'] = 'Save image';
+$string['size'] = 'Size';
 $string['width'] = 'Width';

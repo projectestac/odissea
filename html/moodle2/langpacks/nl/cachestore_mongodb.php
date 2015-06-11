@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,13 +31,15 @@ $string['extendedmode'] = 'Gebruik externe sleutels';
 $string['extendedmode_help'] = 'Indien ingeschakeld worden volledige sleutel sets gebruikt bij het werken met de plugin. Dit wordt intern nog niet gebruikt, maar laat je toe om gemakkelijk met de MongoDB plugin te zoeken en onderzoeken. Als je dit inschakelt voegt dit een kleine belasting toe, dus je mag dit alleen doen als je dit nodig hebt.';
 $string['password'] = 'Wachtwoord';
 $string['password_help'] = 'Het wachtwoord van de gebruiker dat voor de connectie gebruikt wordt.';
+$string['pleaseupgrademongo'] = 'Je gebruikt een oude versie van de PHP Mongo extentie (<1.3). Ondersteuning voor oude versies van de Mongo-extentie zal niet voortgezet worden in de toekomst. Overweeg upgraden.';
 $string['pluginname'] = 'MongoDB';
 $string['replicaset'] = 'Replicaset';
 $string['replicaset_help'] = 'De naam van de replicaset waarmee je wil verbinden. Als dit gegeven is, wordt de master bepaalt door het gebruik van de ismaster databank opdracht op de invoer, zodat de driver kan verbinden met een server die zelfs niet voorkomt in de lijst.';
 $string['server'] = 'Server';
 $string['server_help'] = 'Dit is de connectiestring voor de server die je wil gebruiken. Meerder servers kunnen opgegeven worden door ze te scheiden met komma\'s.';
 $string['testserver'] = 'Testserver';
-$string['testserver_desc'] = 'Dit is de connectiestring voor de testserver die je wil gebruiken. Testservers zijn volledig optioneel. Door een testserver op te geven, kun je PHPunit testen laten lopen voor deze opslagruimte en kun je performatietests uitvoeren.';
+$string['testserver_desc'] = 'Dit is de connectiestring voor de testserver die je wil gebruiken. Alms er een testserver is opgegeven, dan kan de MongoDB-performantie getest worden met de cache performantiepagina in het administratieblok.
+Bijvoorbeeld: mongodb://127.0.0.1:27017';
 $string['username'] = 'Gebruikersnaam';
 $string['username_help'] = 'De gebruikersnaam die je gebruikt om connectie te maken.';
 $string['usesafe'] = 'Veilig gebruiken';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_title', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blockquote'] = 'Zitiert';
 $string['h3'] = 'Überschrift (groß)';
 $string['h4'] = 'Überschrift (mittel)';
 $string['h5'] = 'Überschrift (klein)';
-$string['p'] = 'Unformatiert';
+$string['p'] = 'Absatz';
 $string['pluginname'] = 'Absatzformate';
 $string['pre'] = 'Vorformatiert';
 $string['title'] = 'Absatzformate';

@@ -1,0 +1,61 @@
+<?php
+
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'report_eventlist', language 'it', branch 'MOODLE_28_STABLE'
+ *
+ * @package   report_eventlist
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['abstractclass'] = 'Classe astratta';
+$string['action'] = 'Azione';
+$string['affectedtable'] = 'Tabella coinvolta';
+$string['all'] = 'Tutti';
+$string['clear'] = 'Reimposta';
+$string['component'] = 'Componente';
+$string['create'] = 'create';
+$string['crud'] = 'Tipo query database';
+$string['delete'] = 'delete';
+$string['details'] = 'Dettagli';
+$string['dname'] = 'Nome';
+$string['edulevel'] = 'Livello formativo';
+$string['errorinvaliddirectory'] = 'La directory degli eventi è vuota o non è valida';
+$string['errorinvalidevent'] = 'L\'evento fornito non è un evento valido';
+$string['eventcode'] = 'Codice evento';
+$string['eventexplanation'] = 'Descrizione dell\'evento';
+$string['eventname'] = 'Nome evento';
+$string['filter'] = 'Filtra';
+$string['legacyevent'] = 'Evento legacy';
+$string['name'] = 'Nome';
+$string['objecttable'] = 'Tabella oggetto';
+$string['other'] = 'Altro';
+$string['othereventparameters'] = 'Altri parametri dell\'evento';
+$string['otherinformation'] = 'Altre informazioni:';
+$string['parentevent'] = 'Evento gentitore';
+$string['participating'] = 'Partecipazione';
+$string['pluginname'] = 'Elenco eventi';
+$string['read'] = 'read';
+$string['relatedobservers'] = 'Plugin che osserva l\'evento';
+$string['since'] = 'Da';
+$string['teaching'] = 'Insegnamento';
+$string['typedeclaration'] = 'Altri eventi genitore';
+$string['update'] = 'update';
+$string['yes'] = 'si';

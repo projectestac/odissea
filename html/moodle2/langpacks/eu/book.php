@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'book', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,15 +36,15 @@ $string['confchapterdelete'] = 'Ziur al zaude atal hau ezabatu nahi duzula?';
 $string['confchapterdeleteall'] = 'Ziur al zaude atal hau eta bere azpiatal guztiak ezabatu nahi dituzula?';
 $string['content'] = 'Edukia';
 $string['customtitles'] = 'Pertsonalizatu izenburuak';
-$string['customtitles_help'] = 'Normalean atalaren izenburua edukien taualan agertzen da (ET) ETA goiburu gisa edukiaren gainean.
+$string['customtitles_help'] = 'Normalean atalaren izenburua edukien taulan (ET) agertzen da ETA goiburu gisa edukiaren gainean.
 
 Izenburuak pertsonalizatzeko laukitxoa markatuta badago, atalaren izenburua EZ da agertuko goiburu gisa edukiaren gainean. Beste izenburu bat (agian atalaren izenburua baino luzeagoa) sar daiteke edukiaren osagai gisa.';
 $string['editingchapter'] = 'Atala editatzen';
 $string['errorchapter'] = 'Errorea liburuaren atala irakurtzean.';
-$string['event_chapter_created'] = 'Atala sortu da';
-$string['event_chapter_deleted'] = 'Atala ezabatu da';
-$string['event_chapter_updated'] = 'Atala eguneratu da';
-$string['event_chapter_viewed'] = 'Atala ikusi da';
+$string['eventchaptercreated'] = 'Atala sortu da';
+$string['eventchapterdeleted'] = 'Atala ezabatu da';
+$string['eventchapterupdated'] = 'Atala eguneratu da';
+$string['eventchapterviewed'] = 'Atala ikusi da';
 $string['modulename'] = 'Liburua';
 $string['modulename_help'] = 'Liburua moduluak aukera ematen dio irakasleari liburu formatuko hainbat orritako baliabidea sortzeko, atal eta azpiatalduna. Liburuak media fitxategiak izan ditzake eta baita testua ere eta erabilgarria da ataletan bana daitezkeen informazio-pasarte luzeak erakusteko.
 

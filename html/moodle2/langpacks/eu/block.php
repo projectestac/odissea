@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,7 +52,7 @@ $string['hidepanel'] = 'Ezkatutatu panela';
 $string['moveblock'] = 'Mugitu {$a} blokea';
 $string['moveblockafter'] = 'Mugitu blokea {$a} blokearen atzera';
 $string['moveblockbefore'] = 'Mugitu blokea {$a} blokearen aurrera';
-$string['moveblockhere'] = 'Mugitu blokea hona';
+$string['moveblockinregion'] = 'Mugitu blokea {$a} bloke-eremura';
 $string['movingthisblockcancel'] = 'Mugitu bloke hau ({$a})';
 $string['onthispage'] = 'Orri honetan';
 $string['pagetypes'] = 'Orri-motak';

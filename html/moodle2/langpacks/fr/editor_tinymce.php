@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -771,7 +771,7 @@ $string['table_dlg:langdir'] = 'Sens de lecture';
 $string['table_dlg:ltr'] = 'De gauche à droite';
 $string['table_dlg:merge_cells_title'] = 'Fusionner les cellules';
 $string['table_dlg:mime'] = 'Type MIME de la cible';
-$string['table_dlg:missing_scope'] = 'Êtes-vous sûr de vouloir continuer sans spécifier de portée pour cette cellule de titre ? Sans portée, cela peut être difficile pour certains utilisateurs de comprendre le contenu ou les données affichées dans le tableau.';
+$string['table_dlg:missing_scope'] = 'Voulez-vous vraiment continuer sans spécifier de portée pour cette cellule de titre ? Sans cela, il sera difficile pour certains utilisateurs de comprendre le contenu ou les données affichées dans le tableau.';
 $string['table_dlg:row_all'] = 'Mettre à jour toutes les lignes du tableau';
 $string['table_dlg:row_even'] = 'Mettre à jour les lignes paires';
 $string['table_dlg:rowgroup'] = 'Groupe de rangées';

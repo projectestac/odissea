@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = '产生反馈的PDF文件';
 $string['generatingpdf'] = '产生这个PDF…';
 $string['gotopage'] = '跳转到页面';
 $string['green'] = '绿色';
-$string['gspath'] = 'Ghostscript路径';
-$string['gspath_help'] = '在大多数的 Linux 系统上，它会像是 \'/usr/bin/gs\'。在 Windows 系统上，它会像是 \'c:gsbingswin32c.exe\'（要确定在路径上没有空格 - 若必要时复制\'gswin32c.exe\' 和 \'gsdll32.dll\'文件到一新文件夹中，以避免路径上有空格）';
+$string['gsimage'] = 'Ghostscript测试图片';
 $string['highlight'] = '醒目标示';
 $string['jsrequired'] = '要批注一个PDF文件，是需要用到JavaScript。请在你的浏览器上启用JavaScript来使用这个功能。';
 $string['launcheditor'] = '启动PDF编辑器';
@@ -90,4 +89,3 @@ $string['unsavedchanges'] = '更改没有保存';
 $string['viewfeedbackonline'] = '浏览有批注的PDF文件';
 $string['white'] = '白色';
 $string['yellow'] = '黄色';
-$string['zlibnotavailable'] = 'PHP扩展"zlib"无法使用。批注PDF文件的功能需要这个PHP扩展，现在将关闭该功能，直到安装好并启用"zlib"扩展。';

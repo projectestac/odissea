@@ -339,7 +339,8 @@ class behat_navigation extends behat_base {
         }
 
         if (!$node) {
-            throw new ExpectationException('Sub-navigation node "' . $nodetext . '" not found under "' . $parentnode->getText() . '"', $this->getSession());
+            throw new ExpectationException('Sub-navigation node "' . $nodetext . '" not found under "' .
+                $parentnode->getText() . '"', $this->getSession());
         }
         return $node;
     }

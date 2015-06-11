@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_private_files', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   block_private_files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['managemyfiles'] = 'Gérer mes fichiers';
 $string['pluginname'] = 'Mes fichiers personnels';
 $string['privatefiles'] = 'Fichiers personnels';
 $string['private_files:addinstance'] = 'Ajouter un bloc mes fichiers personnels';

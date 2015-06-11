@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assign', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['assignmentisdue'] = 'فات موعد التسليم';
 $string['assignmentname'] = 'اسم المهمة';
 $string['assign:submit'] = 'تقديم مهمة';
 $string['assign:view'] = 'معاينة مهمة';
+$string['assign:viewgrades'] = 'عرض الدرجات';
 $string['backtoassignment'] = 'العودة للوظيفة';
 $string['comment'] = 'تعليق (علق)';
 $string['currentgrade'] = 'الدرجة الحالية في';
@@ -85,7 +86,6 @@ $string['submitted'] = 'تم التسليم';
 $string['submittedearly'] = 'تم تسليم الوظيفة مبكرة بـ{$a}';
 $string['submittedlate'] = 'تم تسليم الوظيفة متأخرة بـ{$a}';
 $string['submittedlateshort'] = '{$a} متأخر';
-$string['teamsubmissionstatus'] = 'حالة تسليم المجموعات';
 $string['timeremaining'] = 'الزمن المتبقي';
 $string['viewgrading'] = 'معاينة/تقييم كل التسليمات';
 $string['viewownsubmissionform'] = 'معاينة صفحة تسليم الوظيفة الشخصية';

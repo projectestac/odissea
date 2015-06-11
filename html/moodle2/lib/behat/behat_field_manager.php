@@ -149,7 +149,7 @@ class behat_field_manager {
         if ($tagname == 'textarea') {
 
             // If there is an iframe with $id + _ifr there a TinyMCE editor loaded.
-            $xpath = '//iframe[@id="' . $fieldnode->getAttribute('id') . '_ifr"]';
+            $xpath = '//div[@id="' . $fieldnode->getAttribute('id') . 'editable"]';
             if ($session->getPage()->find('xpath', $xpath)) {
                 return 'editor';
             }
@@ -217,6 +217,11 @@ class behat_field_manager {
      * @return mixed A NodeElement if we continue looking for the element type and String or false when we are done.
      */
     protected static function get_field_node_type(NodeElement $fieldnode, Session $session) {
+
+        // Special handling for availability field which requires custom JavaScript.
+        if ($fieldnode->getAttribute('name') === 'availabilityconditionsjson') {
+            return 'availability';
+        }
 
         // We look for a parent node with 'felement' class.
         if ($class = $fieldnode->getParent()->getAttribute('class')) {

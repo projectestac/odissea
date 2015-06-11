@@ -17,7 +17,7 @@
 /**
  * This plugin is used to access flickr pictures
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package    repository_flickr_public
  * @copyright  2010 Dongsheng Cai {@link http://dongsheng.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -32,7 +32,7 @@ require_once(dirname(__FILE__) . '/image.php');
  * You can set up a public account in admin page, so everyone can access
  * flickr photos from this plugin
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package    repository_flickr_public
  * @copyright  2009 Dongsheng Cai {@link http://dongsheng.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -397,7 +397,7 @@ class repository_flickr_public extends repository {
         $str .= '<input type="hidden" name="repo_id" value="'.$this->id.'" />';
         $str .= '<input type="hidden" name="ctx_id" value="'.$this->context->id.'" />';
         $str .= '<input type="hidden" name="seekey" value="'.sesskey().'" />';
-        $str .= '<label>'.get_string('fulltext', 'repository_flickr_public').': </label><br/><input name="s" value="" /><br/>';
+        $str .= '<label>'.get_string('fulltext', 'repository_flickr_public').'</label><br/><input name="s" value="" /><br/>';
         $str .= '<label>'.get_string('tag', 'repository_flickr_public').'</label><br /><input type="text" name="flickr_tag" /><br />';
         return $str;
     }

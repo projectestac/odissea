@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'Sortu PDF feedbacka-a';
 $string['generatingpdf'] = 'PDF feedback-a sortzen...';
 $string['gotopage'] = 'Joan orrira';
 $string['green'] = 'Berdea';
-$string['gspath'] = 'Ghostscript ibilbidea';
-$string['gspath_help'] = 'Linux instalazio gehienetan, honelako zerbait izan daiteke: \'/usr/bin/gs\'.  Windows-en berriz, honelako zerbait: \'c:gsbingswin32c.exe\' (ziurtatu ez dagoela tarterik helbidean - beharrezkoa bada kopiatu \'gswin32c.exe\' eta \'gsdll32.dll\' fitxategiak karpeta berri batera helbidean tarterik utzi gabe)';
+$string['gsimage'] = 'Ghostscript proba-irudia';
 $string['highlight'] = 'Azpimarratu';
 $string['jsrequired'] = 'JavaScript-a beharrezkoa da PDF oharretarako. Mesedez, gaitu javaScript-a zure nagibatzailean funtzio honetarako.';
 $string['launcheditor'] = 'Ekin PDF editatzaileari...';
@@ -66,6 +65,7 @@ $string['output'] = 'Irteera:';
 $string['oval'] = 'Obaloa';
 $string['pagenumber'] = '{$a} orria';
 $string['pagexofy'] = '{$a->page} orri {$a->total}-(e)tik';
+$string['pathtogspathdesc'] = 'Mesedez kontuan izan PDF oharrek ghostscript-erako bide-izena {$a}-n zehazturik egon behar dutela.';
 $string['pen'] = 'Arkatza';
 $string['pluginname'] = 'PDF oharra';
 $string['rectangle'] = 'Laukizuzena';
@@ -90,4 +90,3 @@ $string['unsavedchanges'] = 'Gorde gabeko aldaketak';
 $string['viewfeedbackonline'] = 'Ikusi PDF oharrak...';
 $string['white'] = 'Zuria';
 $string['yellow'] = 'Horia';
-$string['zlibnotavailable'] = '"zlib" php luzapena ez dago eskuragarri. PDF oharren funtzioa php luzapen honetan ari da eta desgaitu egin behar da zlib instalatu eta gaitu arte.';

@@ -1,4 +1,4 @@
-@core @core_course @_cross_browser
+@core @core_course
 Feature: Open the edit menu when a block is docked
   In order to edit an activity with a block docked
   As a teacher
@@ -6,13 +6,13 @@ Feature: Open the edit menu when a block is docked
 
   @javascript
   Scenario: Open the action menu with a block docked
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@asd.com |
-    And the following "courses" exists:
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+    And the following "courses" exist:
       | fullname | shortname | format |
       | Course 1 | C1 | weeks |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
     And I log in as "teacher1"

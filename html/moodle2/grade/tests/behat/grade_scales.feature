@@ -8,7 +8,7 @@ Feature: View gradebook when scales are used
     Given I log in as "admin"
     And I set the following administration settings values:
       | grade_report_showranges    | 1 |
-      | grade_aggregations_visible | Mean of grades,Weighted mean of grades,Simple weighted mean of grades,Mean of grades (with extra credits),Median of grades,Lowest grade,Highest grade,Mode of grades,Sum of grades |
+      | grade_aggregations_visible | Mean of grades,Weighted mean of grades,Simple weighted mean of grades,Mean of grades (with extra credits),Median of grades,Lowest grade,Highest grade,Mode of grades,Natural |
     And I navigate to "Scales" node in "Site administration > Grades"
     And I press "Add a new scale"
     And I set the following fields to these values:
@@ -21,12 +21,12 @@ Feature: View gradebook when scales are used
       | Course 1 | C1        |
     And the following "users" exist:
       | username | firstname | lastname | email            | idnumber |
-      | teacher1 | Teacher   | 1        | teacher1@asd.com | t1       |
-      | student1 | Student   | 1        | student1@asd.com | s1       |
-      | student2 | Student   | 2        | student2@asd.com | s2       |
-      | student3 | Student   | 3        | student3@asd.com | s3       |
-      | student4 | Student   | 4        | student4@asd.com | s4       |
-      | student5 | Student   | 5        | student5@asd.com | s5       |
+      | teacher1 | Teacher   | 1        | teacher1@example.com | t1       |
+      | student1 | Student   | 1        | student1@example.com | s1       |
+      | student2 | Student   | 2        | student2@example.com | s2       |
+      | student3 | Student   | 3        | student3@example.com | s3       |
+      | student4 | Student   | 4        | student4@example.com | s4       |
+      | student5 | Student   | 5        | student5@example.com | s5       |
     And the following "course enrolments" exist:
       | user     | course | role           |
       | teacher1 | C1     | editingteacher |
@@ -46,7 +46,8 @@ Feature: View gradebook when scales are used
     And I follow "Test assignment one"
     And I follow "Edit settings"
     And I expand all fieldsets
-    And I set the field "Grade" to "Scale: Letterscale"
+    And I set the field "grade[modgrade_type]" to "Scale"
+    And I set the field "grade[modgrade_scale]" to "Letterscale"
     And I press "Save and display"
     And I follow "View/grade all submissions"
     And I click on "Grade Student 1" "link" in the "Student 1" "table_row"
@@ -62,17 +63,16 @@ Feature: View gradebook when scales are used
     And I press "Save changes"
     And I follow "Course 1"
     And I follow "Grades"
+    And I navigate to "Course grade settings" node in "Grade administration > Setup"
+    And I set the field "Show weightings" to "Show"
+    And I set the field "Show contribution to course total" to "Show"
+    And I press "Save changes"
+    And I follow "Grader report"
     And I turn editing mode on
 
   @javascript
-  Scenario: Test displaying scales in gradebook in aggregation method Sum of grades
-    When I follow "Edit   Course 1"
-    And I set the field "Aggregation" to "Sum of grades"
-    And I press "Save changes"
-    And I follow "Edit   Sub category 1"
-    And I set the field "Aggregation" to "Sum of grades"
-    And I press "Save changes"
-    And I turn editing mode off
+  Scenario: Test displaying scales in gradebook in aggregation method Natural
+    When I turn editing mode off
     Then the following should exist in the "user-grades" table:
       | -1-                | -4-      | -5-            | -6-          |
       | Student 1          | A        | 5.00           | 5.00         |
@@ -88,25 +88,25 @@ Feature: View gradebook when scales are used
     And I set the field "Select all or one user" to "Student 3"
     And I click on "Select all or one user" "select"
     And the following should exist in the "user-grade" table:
-      | Grade item          | Grade | Range | Percentage |
-      | Test assignment one | C     | F–A   | 50.00 %    |
-      | Category total      | 3.00  | 0–5   | 60.00 %    |
-      | Course total        | 3.00  | 0–5   | 60.00 %    |
-    And I set the field "jump" to "Simple view"
+      | Grade item          | Grade | Range | Percentage | Contribution to course total |
+      | Test assignment one | C     | F–A   | 50.00 %    | 60.00 %                      |
+      | Sub category 1 total      | 3.00  | 0–5   | 60.00 %    | -                            |
+      | Course total        | 3.00  | 0–5   | 60.00 %    | -                            |
+    And I set the field "jump" to "Categories and items"
     And the following should exist in the "grade_edit_tree_table" table:
       | Name                | Max grade |
       | Test assignment one | 5.00      |
-      | Category total      | 5.00      |
+      | Sub category 1 total      | 5.00      |
       | Course total        | 5.00      |
     And I log out
     And I log in as "student2"
     And I follow "Course 1"
     And I follow "Grades"
     And the following should exist in the "user-grade" table:
-      | Grade item          | Grade | Range | Percentage |
-      | Test assignment one | B     | F–A   | 75.00 %    |
-      | Category total      | 4.00  | 0–5   | 80.00 %    |
-      | Course total        | 4.00  | 0–5   | 80.00 %    |
+      | Grade item          | Grade | Range | Percentage | Contribution to course total |
+      | Test assignment one | B     | F–A   | 75.00 %    | 80.00 %                      |
+      | Sub category 1 total      | 4.00  | 0–5   | 80.00 %    | -                            |
+      | Course total        | 4.00  | 0–5   | 80.00 %    | -                            |
 
   @javascript
   Scenario Outline: Test displaying scales in gradebook in all other aggregation methods
@@ -136,33 +136,33 @@ Feature: View gradebook when scales are used
     And I set the field "Select all or one user" to "Student 3"
     And I click on "Select all or one user" "select"
     And the following should exist in the "user-grade" table:
-      | Grade item          | Grade          | Range | Percentage    |
-      | Test assignment one | C              | F–A   | 50.00 %       |
-      | Category total      | 3.00           | 1–5   | 50.00 %       |
-      | Course total        | <coursetotal3> | 0–100 | <courseperc3> |
-    And I set the field "jump" to "Simple view"
+      | Grade item                   | Grade          | Range | Percentage    | Contribution to course total |
+      | Test assignment one          | C              | F–A   | 50.00 %       | <contrib3>                   |
+      | Sub category (<aggregation>) total<aggregation>. | 3.00           | 1–5   | 50.00 %       | -                            |
+      | Course total<aggregation>.   | <coursetotal3> | 0–100 | <courseperc3> | -                            |
+    And I set the field "jump" to "Categories and items"
     And the following should exist in the "grade_edit_tree_table" table:
       | Name                | Max grade |
       | Test assignment one | A (5)     |
-      | Category total      |           |
-      | Course total        |           |
+      | Sub category (<aggregation>) total<aggregation>. |           |
+      | Course total<aggregation>.   |           |
     And I log out
     And I log in as "student2"
     And I follow "Course 1"
     And I follow "Grades"
     And the following should exist in the "user-grade" table:
-      | Grade item          | Grade          | Range | Percentage    |
-      | Test assignment one | B              | F–A   | 75.00 %       |
-      | Category total      | 4.00           | 1–5   | 75.00 %       |
-      | Course total        | <coursetotal2> | 0–100 | <courseperc2> |
+      | Grade item                   | Grade          | Range | Percentage    | Contribution to course total |
+      | Test assignment one          | B              | F–A   | 75.00 %       | <contrib2>                   |
+      | Sub category (<aggregation>) total<aggregation>. | 4.00           | 1–5   | 75.00 %       | -                            |
+      | Course total<aggregation>.   | <coursetotal2> | 0–100 | <courseperc2> | -                            |
 
-  Examples:
-      | aggregation                         | coursetotal1 | coursetotal2 | coursetotal3 | coursetotal4 | coursetotal5 |overallavg | courseperc2 | courseperc3 |
-      | Mean of grades                      | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
-      | Weighted mean of grades             | -            | -            | -            | -            | -            | -         | -           | -           |
-      | Simple weighted mean of grades      | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
-      | Mean of grades (with extra credits) | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
-      | Median of grades                    | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
-      | Lowest grade                        | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
-      | Highest grade                       | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
-      | Mode of grades                      | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     |
+    Examples:
+      | aggregation                         | coursetotal1 | coursetotal2 | coursetotal3 | coursetotal4 | coursetotal5 |overallavg | courseperc2 | courseperc3 | contrib2 | contrib3 |
+      | Mean of grades                      | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |
+      | Weighted mean of grades             | -            | -            | -            | -            | -            | -         | -           | -           | 0.00 %   | 0.00 %   |
+      | Simple weighted mean of grades      | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |
+      | Mean of grades (with extra credits) | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |
+      | Median of grades                    | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |
+      | Lowest grade                        | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |
+      | Highest grade                       | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |
+      | Mode of grades                      | 100.00       | 75.00        | 50.00        | 25.00        | 0.00         | 50.00     | 75.00 %     | 50.00 %     | 75.00 %  | 50.00 %  |

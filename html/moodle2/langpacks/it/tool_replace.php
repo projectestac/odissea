@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_replace', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cannotfit'] = 'La stringa da sostituire è più lunga dell\'originale e l\'accorciamento non è consentito. Non è possibile continuare.';
 $string['disclaimer'] = 'Sono consapevole dei rischi di questa operazione';
 $string['doit'] = 'Si, esegui l\'operazione';
-$string['excludedtables'] = 'Diverse tabelle non sono state aggiornate durante la sostituzione del testo, tra le quali tabelle di configurazione, log, eventi e sessioni.';
+$string['excludedtables'] = 'Diverse tabelle non sono state aggiornate durante la sostituzione del testo, tra le quali le tabelle di configurazione, log, eventi e sessioni.';
 $string['notifyfinished'] = '...completato';
 $string['notifyrebuilding'] = 'Ricostruzione della cache dei corsi...';
 $string['notimplemented'] = 'Siamo spiacenti, questa funzionalità non è implementata per il driver database in uso.';

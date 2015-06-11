@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,9 @@ $string['errorinvalidrepeats'] = '일정의 수를 적으세요. 1부터 99까�
 $string['errornodescription'] = '설명이 필요합니다.';
 $string['errornoeventname'] = '이름이 필요합니다.';
 $string['errorrequiredurlorfile'] = '달력을 가져오기 하기 위해서 URL이나 파일이 필요합니다.';
+$string['eventcalendareventcreated'] = '달력 이벤트가 만들어졌습니다.';
+$string['eventcalendareventdeleted'] = '달력 이벤트가 삭제되었습니다.';
+$string['eventcalendareventupdated'] = '달력 이벤트가 업데이트 되었습니다.';
 $string['eventdate'] = '날짜';
 $string['eventdescription'] = '설명';
 $string['eventduration'] = '기간';

@@ -148,9 +148,6 @@ class core_backup_controller_testcase extends advanced_testcase {
             }
         }
         $this->assertTrue($alltrue);
-
-        // Avoid test warning.
-        set_time_limit(0);
     }
 }
 
@@ -162,7 +159,7 @@ class core_backup_controller_testcase extends advanced_testcase {
  * @copyright 2014 The Open University
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class core_backup_progress_restore_is_executing extends core_backup_progress {
+class core_backup_progress_restore_is_executing extends \core\progress\base {
     /** @var array Array of results from calling function */
     public $executing = array();
 

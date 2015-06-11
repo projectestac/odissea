@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_grader', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,10 @@ $string['ajaxclicktoclose'] = '削除するにはこのチェックボックス�
 $string['ajaxerror'] = 'エラー';
 $string['ajaxfailedupdate'] = '[2] の [1] を更新できません。';
 $string['ajaxfieldchanged'] = '現在あなたが編集しているフィールドの内容が変更されました。変更された値を使用しますか?';
+$string['eventgradereportviewed'] = '評定者レポートが閲覧されました。';
 $string['grader:manage'] = '評定者レポートを管理する';
 $string['grader:view'] = '評定者レポートを表示する';
+$string['overriddengrade'] = 'オーバーライド (優先) 評点';
 $string['pluginname'] = '評定者レポート';
 $string['preferences'] = '評定者レポートプリファレンス';
 $string['useractivityfeedback'] = '{$a} フィードバック';

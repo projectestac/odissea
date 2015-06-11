@@ -146,58 +146,33 @@ function journal_cron () {
     if ($entries = journal_get_unmailed_graded($cutofftime)) {
         $timenow = time();
 
-        $usernamefields = get_all_user_name_fields();
-        $requireduserfields = 'id, auth, mnethostid, email, mailformat, maildisplay, lang, deleted, suspended, ' . implode(', ', $usernamefields);
-
-        // To save some db queries.
-        $users = array();
-        $courses = array();
-
         foreach ($entries as $entry) {
 
             echo "Processing journal entry $entry->id\n";
 
-            if (!empty($users[$entry->userid])) {
-                $user = $users[$entry->userid];
-            } else {
-                if (!$user = $DB->get_record("user", array("id" => $entry->userid), $requireduserfields)) {
-                    echo "Could not find user $entry->userid\n";
-                    continue;
-                }
-                $users[$entry->userid] = $user;
+            if (! $user = $DB->get_record("user", array("id" => $entry->userid))) {
+                echo "Could not find user $entry->userid\n";
+                continue;
             }
 
             $USER->lang = $user->lang;
 
-            if (!empty($courses[$entry->course])) {
-                $course = $courses[$entry->course];
-            } else {
-                if (!$course = $DB->get_record('course', array('id' => $entry->course), 'id, shortname')) {
-                    echo "Could not find course $entry->course\n";
-                    continue;
-                }
-                $courses[$entry->course] = $course;
+            if (! $course = $DB->get_record("course", array("id" => $entry->course))) {
+                echo "Could not find course $entry->course\n";
+                continue;
             }
 
-            if (!empty($users[$entry->teacher])) {
-                $teacher = $users[$entry->teacher];
-            } else {
-                if (!$teacher = $DB->get_record("user", array("id" => $entry->teacher), $requireduserfields)) {
-                    echo "Could not find teacher $entry->teacher\n";
-                    continue;
-                }
-                $users[$entry->teacher] = $teacher;
+            if (! $teacher = $DB->get_record("user", array("id" => $entry->teacher))) {
+                echo "Could not find teacher $entry->teacher\n";
+                continue;
             }
 
-            // All cached.
-            $coursejournals = get_fast_modinfo($course)->get_instances_of('journal');
-            if (empty($coursejournals) || empty($coursejournals[$entry->journal])) {
+
+            if (! $mod = get_coursemodule_from_instance("journal", $entry->journal, $course->id)) {
                 echo "Could not find course module for journal id $entry->journal\n";
                 continue;
             }
-            $mod = $coursejournals[$entry->journal];
 
-            // This is already cached internally.
             $context = context_module::instance($mod->id);
             $canadd = has_capability('mod/journal:addentries', $context, $user);
             $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
@@ -206,7 +181,7 @@ function journal_cron () {
                 continue;  // Not an active participant
             }
 
-            $journalinfo = new stdClass();
+            unset($journalinfo);
             $journalinfo->teacher = fullname($teacher);
             $journalinfo->journal = format_string($entry->name,true);
             $journalinfo->url = "$CFG->wwwroot/mod/journal/view.php?id=$mod->id";
@@ -420,9 +395,7 @@ function journal_print_overview($courses, &$htmlarray) {
     $timenow = time();
     foreach ($journals as $journal) {
 
-        if (empty($courses[$journal->course]->format)) {
-            $courses[$journal->course]->format = $DB->get_field('course', 'format', array('id' => $journal->course));
-        }
+        $courses[$journal->course]->format = $DB->get_field('course', 'format', array('id' => $journal->course));
 
         if ($courses[$journal->course]->format == 'weeks' AND $journal->days) {
 

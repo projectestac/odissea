@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -767,7 +767,7 @@ $string['table_dlg:langdir'] = '文章の方向';
 $string['table_dlg:ltr'] = '左から右';
 $string['table_dlg:merge_cells_title'] = 'セルの結合';
 $string['table_dlg:mime'] = 'ターゲットのMIMEタイプ';
-$string['table_dlg:missing_scope'] = '表のスコープ属性を設定していませんがよろしいですか？';
+$string['table_dlg:missing_scope'] = 'このテーブルのヘッダセルのスコープを設定せずに続けてもよろしいですか? スコープがない場合、障害のあるユーザに関して、テーブルに表示されるコンテンツまたはデータの理解が難しくなる可能性があります。';
 $string['table_dlg:row_all'] = 'テーブル内すべての行を更新する';
 $string['table_dlg:row_even'] = '偶数行の更新';
 $string['table_dlg:rowgroup'] = '行グループ';

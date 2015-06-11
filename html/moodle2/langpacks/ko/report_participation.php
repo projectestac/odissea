@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_participation', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   report_participation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = '참여 보고서 봄';
+$string['nologreaderenabled'] = '활성화된 로그 리더가 없습니다.';
 $string['page-report-participation-index'] = '강좌 참가 보고서';
 $string['page-report-participation-x'] = '모든 참가 보고서';
 $string['participation:view'] = '참여자 명단 보기';

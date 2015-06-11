@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -133,7 +133,6 @@ $string['mnetidprovider'] = 'MNET ID 제공자';
 $string['mnetidproviderdesc'] = '만일 이전에 로그인하려고 했던 사용자 이름과 일치되는 올바른 이메일 주소를 제공할 수 있다면 이 기능을 사용하여 로그인할 수 있는 링크를 가져올 수 있습니다.';
 $string['mnetidprovidermsg'] = '{$a} 제공자에서 로그인 할 수 있어야 합니다.';
 $string['mnetidprovidernotfound'] = '죄송합니다. 더 자세한 정보는 찾을 수 없습니다.';
-$string['mnetlog'] = '기록들';
 $string['mnetpeers'] = '무들네트웍 환경';
 $string['mnetservices'] = '서비스';
 $string['mnet_session_prohibited'] = '홈 서버의 사용자는 현재 {$a} 로 방문할 수 있도록 허용되지 않았습니다.';

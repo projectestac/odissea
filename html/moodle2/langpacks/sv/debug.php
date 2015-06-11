@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'debug', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   debug
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,8 +34,8 @@ $string['codingerror'] = 'Detta är ett kodningsfel, det måste åtgärdas av en
 $string['erroroccur'] = 'Det har uppstått ett fel under denna process';
 $string['invalidarraysize'] = 'Felaktig storlek på arrayerna i parametrarna för {$a}';
 $string['invalideventdata'] = 'Felaktiga eventadata har matats in: {$a}';
-$string['invalidparameter'] = 'Ett felaktigt värde för en parameter har upptäckts';
-$string['invalidresponse'] = 'Ett felaktigt värde för en respons har upptäckts';
+$string['invalidparameter'] = 'Ett felaktigt värde för en parameter har upptäckts, körningen kan inte fortsätta.';
+$string['invalidresponse'] = 'Ett felaktigt värde för en respons har upptäckts, körningen kan inte fortsätta.';
 $string['missingconfigversion'] = 'Det går tyvärr inte att fortsätta eftersom tabellen för konfiguration inte innehåller version.';
 $string['modulenotexist'] = 'Det finns ingen modul {$a}';
 $string['morethanonerecordinfetch'] = 'Det fanns mer än en post i fetch()!';

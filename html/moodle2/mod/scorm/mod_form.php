@@ -72,7 +72,7 @@ class mod_scorm_mod_form extends moodleform_mod {
             $mform->addElement('select', 'scormtype', get_string('scormtype', 'scorm'), $scormtypes);
             $mform->setType('scormtype', PARAM_ALPHA);
             $mform->addHelpButton('scormtype', 'scormtype', 'scorm');
-            $mform->addElement('text', 'packageurl', get_string('packageurl', 'scorm'), array('size'=>60));
+            $mform->addElement('text', 'packageurl', get_string('packageurl', 'scorm'), array('size' => 60));
             $mform->setType('packageurl', PARAM_RAW);
             $mform->addHelpButton('packageurl', 'packageurl', 'scorm');
             $mform->disabledIf('packageurl', 'scormtype', 'eq', SCORM_TYPE_LOCAL);
@@ -80,12 +80,6 @@ class mod_scorm_mod_form extends moodleform_mod {
             $mform->addElement('hidden', 'scormtype', SCORM_TYPE_LOCAL);
             $mform->setType('scormtype', PARAM_ALPHA);
         }
-
-        // Update packages timing.
-        $mform->addElement('select', 'updatefreq', get_string('updatefreq', 'scorm'), scorm_get_updatefreq_array());
-        $mform->setType('updatefreq', PARAM_INT);
-        $mform->setDefault('updatefreq', $cfgscorm->updatefreq);
-        $mform->addHelpButton('updatefreq', 'updatefreq', 'scorm');
 
         // New local package upload.
         $filemanageroptions = array();
@@ -97,6 +91,12 @@ class mod_scorm_mod_form extends moodleform_mod {
         $mform->addElement('filemanager', 'packagefile', get_string('package', 'scorm'), null, $filemanageroptions);
         $mform->addHelpButton('packagefile', 'package', 'scorm');
         $mform->disabledIf('packagefile', 'scormtype', 'noteq', SCORM_TYPE_LOCAL);
+
+        // Update packages timing.
+        $mform->addElement('select', 'updatefreq', get_string('updatefreq', 'scorm'), scorm_get_updatefreq_array());
+        $mform->setType('updatefreq', PARAM_INT);
+        $mform->setDefault('updatefreq', $cfgscorm->updatefreq);
+        $mform->addHelpButton('updatefreq', 'updatefreq', 'scorm');
 
         // Display Settings.
         $mform->addElement('header', 'displaysettings', get_string('appearance'));
@@ -129,6 +129,11 @@ class mod_scorm_mod_form extends moodleform_mod {
         $mform->addGroup($winoptgrp, 'winoptgrp', get_string('options', 'scorm'), '<br />', false);
         $mform->disabledIf('winoptgrp', 'popup', 'eq', 0);
         $mform->setAdvanced('winoptgrp', $cfgscorm->winoptgrp_adv);
+
+        // Display activity name.
+        $mform->addElement('advcheckbox', 'displayactivityname', get_string('displayactivityname', 'scorm'));
+        $mform->addHelpButton('displayactivityname', 'displayactivityname', 'scorm');
+        $mform->setDefault('displayactivityname', $cfgscorm->displayactivityname);
 
         // Skip view page.
         $skipviewoptions = scorm_get_skip_view_array();
@@ -207,7 +212,7 @@ class mod_scorm_mod_form extends moodleform_mod {
         $mform->setDefault('grademethod', $cfgscorm->grademethod);
 
         // Maximum Grade.
-        for ($i=0; $i<=100; $i++) {
+        for ($i = 0; $i <= 100; $i++) {
             $grades[$i] = "$i";
         }
         $mform->addElement('select', 'maxgrade', get_string('maximumgrade'), $grades);
@@ -250,6 +255,11 @@ class mod_scorm_mod_form extends moodleform_mod {
         $mform->addElement('selectyesno', 'auto', get_string('autocontinue', 'scorm'));
         $mform->addHelpButton('auto', 'autocontinue', 'scorm');
         $mform->setDefault('auto', $cfgscorm->auto);
+
+        // Autocommit.
+        $mform->addElement('selectyesno', 'autocommit', get_string('autocommit', 'scorm'));
+        $mform->addHelpButton('autocommit', 'autocommit', 'scorm');
+        $mform->setDefault('autocommit', $cfgscorm->autocommit);
 
         // Hidden Settings.
         $mform->addElement('hidden', 'datadir', null);
@@ -309,7 +319,7 @@ class mod_scorm_mod_form extends moodleform_mod {
             $defaultvalues['redirecturl'] = '../mod/scorm/view.php?id='.$defaultvalues['coursemodule'];
         }
         if (isset($defaultvalues['version'])) {
-            $defaultvalues['pkgtype'] = (substr($defaultvalues['version'], 0, 5) == 'SCORM') ? 'scorm':'aicc';
+            $defaultvalues['pkgtype'] = (substr($defaultvalues['version'], 0, 5) == 'SCORM') ? 'scorm' : 'aicc';
         }
         if (isset($defaultvalues['instance'])) {
             $defaultvalues['datadir'] = $defaultvalues['instance'];
@@ -337,7 +347,6 @@ class mod_scorm_mod_form extends moodleform_mod {
         if (!isset($defaultvalues['completionscorerequired']) || !strlen($defaultvalues['completionscorerequired'])) {
             $defaultvalues['completionscoredisabled'] = 1;
         }
-
     }
 
     public function validation($data, $files) {
@@ -361,7 +370,7 @@ class mod_scorm_mod_form extends moodleform_mod {
                 $fs = get_file_storage();
                 $files = $fs->get_area_files($usercontext->id, 'user', 'draft', $draftitemid, 'id', false);
 
-                if (count($files)<1) {
+                if (count($files) < 1) {
                     $errors['packagefile'] = get_string('required');
                     return $errors;
                 }
@@ -475,7 +484,6 @@ class mod_scorm_mod_form extends moodleform_mod {
 
         $items[] = 'completionscoregroup';
 
-
         // Require status.
         $first = true;
         $firstkey = null;
@@ -496,14 +504,14 @@ class mod_scorm_mod_form extends moodleform_mod {
         return $items;
     }
 
-    function completion_rule_enabled($data) {
+    public function completion_rule_enabled($data) {
         $status = !empty($data['completionstatusrequired']);
         $score = empty($data['completionscoredisabled']) && strlen($data['completionscorerequired']);
 
         return $status || $score;
     }
 
-    function get_data($slashed = true) {
+    public function get_data($slashed = true) {
         $data = parent::get_data($slashed);
 
         if (!$data) {
@@ -523,12 +531,11 @@ class mod_scorm_mod_form extends moodleform_mod {
             // Turn off completion settings if the checkboxes aren't ticked.
             $autocompletion = isset($data->completion) && $data->completion == COMPLETION_TRACKING_AUTOMATIC;
 
-            if (isset($data->completionstatusrequired) && $autocompletion) {
-                // Do nothing: completionstatusrequired has been already converted
-                //             into a correct integer representation.
-            } else {
+            if (!(isset($data->completionstatusrequired) && $autocompletion)) {
                 $data->completionstatusrequired = null;
             }
+            // Else do nothing: completionstatusrequired has been already converted
+            //             into a correct integer representation.
 
             if (!empty($data->completionscoredisabled) || !$autocompletion) {
                 $data->completionscorerequired = null;

@@ -1,14 +1,22 @@
 <?PHP // $Id: journal.php,v 1.1 2011/01/24 11:36:58 davmon Exp $ 
       // journal.php - created with Moodle 1.7 beta + (2006101003)
 
+$string['eventjournalcreated'] = 'Journal created';
+$string['eventjournalviewed'] = 'Journal viewed';
+$string['evententriesviewed'] = 'Journal entries viewed';
+$string['eventjournaldeleted'] = 'Journal deleted';
+$string['evententryupdated'] = 'Journal entry updated';
+$string['eventfeedbackupdated'] = 'Journal feedback updated';
 
 $string['accessdenied'] = 'Access denied';
 $string['alwaysopen'] = 'Always open';
 $string['blankentry'] = 'Blank entry';
 $string['daysavailable'] = 'Days available';
+$string['deadline'] = 'Days Open';
 $string['editingended'] = 'Editing period has ended';
 $string['editingends'] = 'Editing period ends';
 $string['entries'] = 'Entries';
+$string['entry'] = 'Entry';
 $string['feedbackupdated'] = 'Feedback updated for {$a} entries';
 $string['gradeingradebook'] = 'Current grade in gradebook';
 $string['journal:addentries'] = 'Add journal entries';
@@ -30,7 +38,9 @@ $string['modulename'] = 'Journal';
 $string['modulename_help'] = 'The journal activity enables teachers to obtain students feedback 
 about a specific topic'; 
 $string['modulenameplural'] = 'Journals';
+$string['needsregrade'] = 'Entry has changed since last feedback was saved.';
 $string['newjournalentries'] = 'New journal entries';
+$string['nodeadline'] = 'Always open';
 $string['noentriesmanagers'] = 'There are no teachers';
 $string['noentry'] = 'No entry';
 $string['noratinggiven'] = 'No rating given';

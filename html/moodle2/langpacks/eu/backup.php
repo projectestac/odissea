@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -149,6 +149,7 @@ $string['includeditems'] = 'Barne dituen elementuak:';
 $string['includefilereferences'] = 'Fitxategien erreferentziak kanpoko edukietara';
 $string['includesection'] = '{$a} atala';
 $string['includeuserinfo'] = 'Erabiltzaileen datuak';
+$string['jumptofinalstep'] = 'Jauzi egin azken urratsera';
 $string['locked'] = 'Bokleatuta';
 $string['lockedbyconfig'] = 'Ezarpena blokeatuta dago segurtasun-kopiaren berezko ezarpenengatik.';
 $string['lockedbyhierarchy'] = 'Menpekotasunek blokeatuta';
@@ -157,7 +158,7 @@ $string['loglifetime'] = 'Mantendu erregistroak tarte honetan:';
 $string['managefiles'] = 'Kudeatu segurtasun-kopiaren fitxategiak';
 $string['module'] = 'Modulua';
 $string['moodleversion'] = 'Moodle bertsioa';
-$string['morecoursesearchresults'] = 'More than {$a} ikastaro baino gehiago aurkitu dira, lehenbiziko {$a} emaitza erakusten';
+$string['morecoursesearchresults'] = '{$a} ikastaro baino gehiago aurkitu dira, lehenbiziko {$a} emaitza erakusten';
 $string['moreresults'] = 'Emaitza gehiegi daude, zehaztu gehiago bilaketa.';
 $string['nomatchingcourses'] = 'Ez dago erakusteko ikastarorik';
 $string['norestoreoptions'] = 'Ez dago berreskuratzeko kategoriarik edo ikastarorik.';
@@ -231,6 +232,7 @@ $string['showtypes'] = 'Erakutsi aukera-motak';
 $string['storagecourseandexternal'] = 'Ikastaroko segurtasun-kopien fitxategi-eremua eta direktorio espezifikoa';
 $string['storagecourseonly'] = 'Ikastaroko segurtasun-kopien fitxategi-eremua';
 $string['storageexternalonly'] = 'Zehaztu direktorio bat segurtasun-kopia automatikoetarako';
+$string['timetaken'] = 'Hartutako denbora';
 $string['title'] = 'Izenburua';
 $string['totalcategorysearchresults'] = 'Kategoriak denera: {$a}';
 $string['totalcoursesearchresults'] = 'Ikastaroak denera: {$a}';

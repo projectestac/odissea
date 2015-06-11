@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_calculated', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['calclength'] = 'Hamartar-kopurua';
 $string['calcmax'] = 'Gehienekoa';
 $string['calcmin'] = 'Gutxienekoa';
 $string['choosedatasetproperties'] = 'Aukeratu komodinen datu-multzoen propietateak';
-$string['choosedatasetproperties_help'] = 'Datu-multzo bat komodin baten ordez jartzeko balore-multzo bat da. Galdera zehatz batentzako datu-multzo pribatu bat sortu daiteke, edo elkarbanatutako datu-multzoa kategoria bereko beste galderek ere erabil dezaten.';
+$string['choosedatasetproperties_help'] = 'Datu-multzo bat komodin baten ordez jartzeko balore-multzo bat da. Galdera zehatz batentzako datu-multzo pribatu bat sor daiteke, edo elkarbanatutako datu-multzoa kategoria bereko beste galderek ere erabil dezaten.';
 $string['correctanswerformula'] = 'Erantzun zuzenerako formula';
 $string['correctanswershows'] = 'Erantzun zuzena erakutsi';
 $string['correctanswershowsformat'] = 'Formatua';

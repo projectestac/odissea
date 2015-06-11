@@ -110,7 +110,7 @@ class backup_controller extends base_controller {
 
         // By default there is no progress reporter. Interfaces that wish to
         // display progress must set it.
-        $this->progress = new core_backup_null_progress();
+        $this->progress = new \core\progress\null();
 
         // Instantiate the output_controller singleton and active it if interactive and inmediate
         $oc = output_controller::get_instance();
@@ -307,7 +307,7 @@ class backup_controller extends base_controller {
      */
     public function execute_plan() {
         // Basic/initial prevention against time/memory limits
-        set_time_limit(1 * 60 * 60); // 1 hour for 1 course initially granted
+        core_php_time_limit::raise(1 * 60 * 60); // 1 hour for 1 course initially granted
         raise_memory_limit(MEMORY_EXTRA);
         // If this is not a course backup, inform the plan we are not
         // including all the activities for sure. This will affect any

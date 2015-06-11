@@ -157,6 +157,26 @@ function xmldb_jclic_upgrade($oldversion) {
         upgrade_mod_savepoint(true, 2014040400, 'jclic');
     }
 
+    if ($oldversion < 2015050600) {
+
+        if (isset($CFG->jclic_jarbase) && !empty($CFG->jclic_jarbase)) {
+            set_config('jarbase', $CFG->jclic_jarbase, 'jclic');
+        }
+        unset_config('jclic_jarbase');
+
+        if (isset($CFG->jclic_lap) && !empty($CFG->jclic_lap)) {
+            set_config('lap', $CFG->jclic_lap, 'jclic');
+        }
+        unset_config('jclic_lap');
+
+        if (isset($CFG->jclic_pluginjs) && !empty($CFG->jclic_pluginjs)) {
+            set_config('pluginjs', $CFG->jclic_pluginjs, 'jclic');
+        }
+        unset_config('jclic_pluginjs');
+
+        upgrade_mod_savepoint(true, 2015050600, 'jclic');
+    }
+
     // Final return of upgrade result (true, all went good) to Moodle.
     return true;
 }

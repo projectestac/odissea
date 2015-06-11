@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,6 +132,14 @@ $string['entry'] = 'Запись';
 $string['entrysaved'] = 'Ваша запись сохранена';
 $string['errormustbeteacher'] = 'Вы должны быть преподавателем, чтобы работать с этой страницей!';
 $string['errorpresetexists'] = 'Уже существует заготовка с таким названием.';
+$string['eventfieldcreated'] = 'Поле создано';
+$string['eventfielddeleted'] = 'Поле удалено';
+$string['eventfieldupdated'] = 'Поле обновлено';
+$string['eventrecordcreated'] = 'Запись создана';
+$string['eventrecorddeleted'] = 'Запись удалена';
+$string['eventrecordupdated'] = 'Запись обновлена';
+$string['eventtemplateupdated'] = 'Шаблон обновлен';
+$string['eventtemplateviewed'] = 'Просмотрены шаблоны';
 $string['example'] = 'Пример модуля База данных';
 $string['excel'] = 'Excel';
 $string['expired'] = 'К сожалению, эта база данных закрыта {$a} и больше не доступна';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,9 +53,7 @@ $string['generatefeedback'] = 'Genera feedback PDF';
 $string['generatingpdf'] = 'Generazione PDF in corso...';
 $string['gotopage'] = 'Vai a pagina';
 $string['green'] = 'Verde';
-$string['gspath'] = 'Percorso per ghostscript';
-$string['gspath_help'] = 'In ambienti Linux in genere il percorso è \'/usr/bin/gs\'.
-In ambienti Windows il percorso può essere \'c:gsbingswin32c.exe\'. (accertarsi che non ci siano spazi bianchi nel percorso - se necessario copiare i file \'gswin32c.exe\' e \'gsdll32.dll\' in una cartella dove non sono presenti spazi bianchi nel percorso)';
+$string['gsimage'] = 'Immagine di test Ghostscript';
 $string['highlight'] = 'Evidenziato';
 $string['jsrequired'] = 'Per annotare documenti PDF è necessario javascript. Per favore abilitare javascript nel browser per usare questa funzionalità.';
 $string['launcheditor'] = 'Lancio dell\'editor PDF';
@@ -67,6 +65,7 @@ $string['output'] = 'Output:';
 $string['oval'] = 'Ovale';
 $string['pagenumber'] = 'Pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} di {$a->total}';
+$string['pathtogspathdesc'] = 'L\'annotazione PDF richiede l\'impostazione del percorso per ghostscript in {$a}.';
 $string['pen'] = 'Penna';
 $string['pluginname'] = 'Annotazione PDF';
 $string['rectangle'] = 'Rettangolo';
@@ -91,4 +90,3 @@ $string['unsavedchanges'] = 'Modifiche non salvate';
 $string['viewfeedbackonline'] = 'Visualizza pdf annotato...';
 $string['white'] = 'Bianco';
 $string['yellow'] = 'Giallo';
-$string['zlibnotavailable'] = 'L\'estensione PHP "zlib" non è disponibile. La funzionalità annotazione PDF dipende da questa estensione PHO sarà disabilitata finché l\'estensione zlib non sarà installata e abilitata';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['discussion'] = '토론주제';
 $string['emailmessages'] = '오프라인 상태에서 온 이메일 메세지';
 $string['emailtagline'] = '이 이메일은 "{$a->sitename}"에서 당신에게 보낸 메세지 사본입니다. 답장을 하기 위해서는 {$a->url} 로 가십시요.';
 $string['emptysearchstring'] = '문자열 필수';
+$string['enabled'] = '활성화됨';
 $string['errorcallingprocessor'] = '규정 처리 오류 호출';
 $string['errortranslatingdefault'] = '플러그인에서 제공되는 기본 설정 번역 오류. 대신 시스템 기본 값 사용';
 $string['forced'] = '강제됨';
@@ -136,8 +137,6 @@ $string['unblockcontact'] = '차단되지 않은 연락처';
 $string['unreadmessages'] = '읽지않은 메세지 ({$a}) ';
 $string['unreadnewmessage'] = '{$a} 에게서 온 새 메세지';
 $string['unreadnewmessages'] = '새 메세지({$a})';
-$string['unreadnewnotification'] = '새 통지';
-$string['unreadnewnotifications'] = '새 통지 ({$a})';
 $string['userisblockingyou'] = '이 사용자는 메세지 수신을 거부했음';
 $string['userisblockingyounoncontact'] = '이 사용자는 자신의 연락처에 있는 사람들의 메세지만 받습니다. 당신은 현재 그 목록에 들어 있지 않습니다.';
 $string['userssearchresults'] = '사용자 발견: {$a} ';

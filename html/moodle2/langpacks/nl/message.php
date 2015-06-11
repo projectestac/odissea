@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Discussie';
 $string['emailmessages'] = 'Stuur berichten door als e-mail wanneer ik offline ben';
 $string['emailtagline'] = 'Deze e-mail is een kopie van een bericht dat naar jou gestuurd is op "{$a->sitename}". Ga naar {$a->url} om te antwoorden.';
 $string['emptysearchstring'] = 'Je moet iets zoeken';
+$string['enabled'] = 'Ingeschakeld';
 $string['errorcallingprocessor'] = 'Fout bij het aanroepen van de opgegeven output';
 $string['errortranslatingdefault'] = 'Fout bij het vertalen van de standaardinstelling van de plugin. Systeemstandaarden worden gebruikt.';
+$string['eventmessagecontactadded'] = 'Berichtcontact toegevoegd';
+$string['eventmessagecontactblocked'] = 'Berichtcontact geblokkeerd';
+$string['eventmessagecontactremoved'] = 'Berichtcontact verwijderd';
+$string['eventmessagecontactunblocked'] = 'Berichtcontact blokkering verwijderd';
+$string['eventmessagesent'] = 'Bericht verzonden';
+$string['eventmessageviewed'] = 'Bericht bekeken';
 $string['forced'] = 'Verplicht';
 $string['formorethan'] = 'Langer offline dan';
 $string['gotomessages'] = 'Ga naar berichten';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'deblokkeer deze contactpersoon';
 $string['unreadmessages'] = '{$a} ongelezen berichten';
 $string['unreadnewmessage'] = 'Nieuw bericht van {$a}';
 $string['unreadnewmessages'] = '{$a} nieuwe berichten';
-$string['unreadnewnotification'] = 'Nieuwe melding';
-$string['unreadnewnotifications'] = 'Nieuwe melding ({$a})';
 $string['userisblockingyou'] = 'Deze gebruiker heeft je geblokkeerd om berichten naar hem te sturen';
 $string['userisblockingyounoncontact'] = '{$a} aanvaardt alleen berichten van mensen uit zijn lijst met contactpersonen.';
 $string['userssearchresults'] = '{$a} gebruikers gevonden';

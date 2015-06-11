@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,8 +38,8 @@ $string['attemptfinishedsubmitting'] = '시도가 완료되어 제출합니다.'
 $string['attemptoptions'] = '시도 옵션';
 $string['availableq'] = '이용가능?';
 $string['badbase'] = '**: {$a}** 이전의 잘못된 베이스';
-$string['behaviour'] = '질문 진행방식';
-$string['behaviourbeingused'] = '사용된 질문진행방식: {$a}';
+$string['behaviour'] = '작동';
+$string['behaviourbeingused'] = '사용되는 질문진행방식: {$a}';
 $string['broken'] = '없는 파일로 연결된 "깨진 링크"임';
 $string['byandon'] = '<em>{$a->user}</em>가 <em>{$a->time}</em>에';
 $string['cannotcopybackup'] = '백업파일 복사 실패';
@@ -69,6 +69,7 @@ $string['cannotretrieveqcat'] = '질문 범주를 불러올 수 없음';
 $string['cannotunhidequestion'] = '질문 감추기 해제 실패';
 $string['cannotunzip'] = '파일을 풀 수 없음';
 $string['cannotwriteto'] = '가져온 질문을 {$a} 에 기록할 수 없음';
+$string['categories'] = '범주들';
 $string['category'] = '범주';
 $string['categorycurrent'] = '현재 범주';
 $string['categorycurrentuse'] = '이 범주를 사용';
@@ -115,7 +116,7 @@ $string['defaultmarkmustbepositive'] = '기본 점수는 양수이어야 합니�
 $string['deletecoursecategorywithquestions'] = ' 본 강좌의 범주와 연계된 질문 은향에 질문들이 있습니다. 계속 진행하게 되면 이들이 삭제될 것입니다. 이들을 이동시키고 싶으면 질문은행 인터페이스를 사용하기 바랍니다.';
 $string['deletequestioncheck'] = '\'{$a}\'를 삭제하는 것이 확실합니까?';
 $string['deletequestionscheck'] = '다음 질문을 삭제하는 것이 확실합닊? <br /><br />{$a}';
-$string['deletingbehaviour'] = '질문 진행방식 \'{$a}\' 삭제';
+$string['deletingbehaviour'] = '질문 진행 \'{$a}\' 방식 삭제';
 $string['deletingqtype'] = '\'{$a}\' 질문 유형 삭제';
 $string['didnotmatchanyanswer'] = '[어떤 대답과도 일치하지 않습니다]';
 $string['disabled'] = '불가능';
@@ -152,6 +153,7 @@ $string['errorduringregrade'] = '질문 {$a->qid} 를 재채점할 수 없어서
 $string['errorfilecannotbecopied'] = '오류: {$a} 파일을 복사할 수 없음';
 $string['errorfilecannotbemoved'] = '오류: {$a} 파일을 이동할 수 없음';
 $string['errorfileschanged'] = '오류: 양식이 표시된 후 질문에 링크된 파일이 변경되었습니다.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = ' 질문 ({$a})은 시험의 다른 위치에서 각기 다른 가중치로 나타났습니다. 이것은 현재 통계보고서에 지원되지 않으며,  질문에 대한 통계를 못 믿게 할 수 있습니다.';
 $string['errormanualgradeoutofrange'] = ' 질문  {$a->name} 에 대한 점수 {$a->grade} 는 0과 {$a->maxgrade} 의 범위를 벗어났습니다. 점수 및 덧글은 저장되지 않았습니다.';
 $string['errormovingquestions'] = 'id {$a} 의 질문을 옮기는 중에 오류발생';
 $string['errorpostprocess'] = '후 처리과정 중 오류 발생';
@@ -161,6 +163,7 @@ $string['errorprocessingresponses'] = '응답 처리 중 오류 발생';
 $string['errorsavingcomment'] = ' 질문 {$a->name} 의 덧글을 데이터베이스에 저장하던 중 오류발생';
 $string['errorsavingflags'] = '표식 상태를 저장하는데 오류';
 $string['errorupdatingattempt'] = '시도 {$a->id} 를 데이터베이스에 업데이트하던 중 오류발생';
+$string['export'] = '내보내기';
 $string['exportcategory'] = '범주 내보내기';
 $string['exportcategory_help'] = '<p align="center"><b>범주 내보내기</b></p>
 
@@ -197,6 +200,7 @@ $string['hintnoptions'] = '힌트 {no} 옵션';
 $string['hinttext'] = '힌트 문장';
 $string['howquestionsbehave'] = '어떻게 질문들이 진행될지';
 $string['ignorebroken'] = '깨진 링크 무시';
+$string['import'] = '가져오기';
 $string['importcategory'] = '범주 가져오기';
 $string['importcategory_help'] = '<p><b>범주:</b>펼침 메뉴는 어느 범주에 가져온 질문을 넣을 것인가를 선택하는 데 쓰인다.</p>
 
@@ -311,16 +315,17 @@ $string['published'] = '공유함';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '본 질문 범주에는 <a href="{$a->qurl}">질문 "{$a->name}" ({$a->qtype})</a>이 있는데, 다른 강좌인 "{$a->coursename}"의 <a href="{$a->qurl}">퀴즈 "{$a->quizname}"</a>에서 사용되고 있습니다.';
 $string['questionbank'] = '질문 은행';
-$string['questionbehaviouradminsetting'] = '질문 진행방식 설정';
-$string['questionbehavioursdisabled'] = '비활성화할 질문 진행방식';
+$string['questionbehaviouradminsetting'] = '질문 작동 설정';
+$string['questionbehavioursdisabled'] = '비활성화할 질문 작동';
 $string['questionbehavioursdisabledexplained'] = '드롭다운 메뉴에 나타나지 않기를 원하는 질문진행방식의 목록을 콤마로 분리하여 입력하십시요.';
-$string['questionbehavioursorder'] = '질문 진행방식 순서';
+$string['questionbehavioursorder'] = '질문 작동 순서';
 $string['questionbehavioursorderexplained'] = '드롭다운 메뉴에 나타나기를 원하는 순서대로 질문진행방식의 목록을 콤마로 분리하여 입력하십시요.';
 $string['questioncategory'] = '질문 범주';
 $string['questioncatsfor'] = '\'{$a}\'의 질문 범주';
 $string['questiondoesnotexist'] = '질문이 존재하지 않음';
 $string['questionidmismatch'] = '질문 아이디 불일치';
 $string['questionname'] = '질문 이름';
+$string['questionnamecopy'] = '{$a} (복사)';
 $string['questionno'] = '질문 {$a}';
 $string['questionpreviewdefaults'] = '질문 미리보기 기본 설정';
 $string['questions'] = '질문들';
@@ -341,6 +346,7 @@ $string['restartwiththeseoptions'] = '이 옵션으로 다시 시작';
 $string['reviewresponse'] = '응답 검토';
 $string['rightanswer'] = '정답';
 $string['save'] = '저장';
+$string['savechangesandcontinueediting'] = '변경사항 저장 및 계속 편집';
 $string['saved'] = '저장됨 {$a}';
 $string['saveflags'] = '표식 상태 저장';
 $string['selectacategory'] = '범주 선택 :';
@@ -374,16 +380,17 @@ $string['technicalinforightsummary'] = '정답 요약:{$a}';
 $string['technicalinfostate'] = '질문 상태: {$a}';
 $string['tofilecategory'] = '파일에 범주 기입';
 $string['tofilecontext'] = '파일에 문맥 기입';
-$string['uninstallbehaviour'] = '이 질문 진행방식 제거';
+$string['uninstallbehaviour'] = '이 질문 작동 제거';
 $string['uninstallqtype'] = '이 질문 유형 제거';
 $string['unknown'] = '알수없음';
-$string['unknownbehaviour'] = '알 수 없는 질문 진행방식: {$a}';
+$string['unknownbehaviour'] = '알 수 없는 작동: {$a}';
 $string['unknownorunhandledtype'] = '알수없는 혹은 처리되지 않은 질문 유형: {$a}';
 $string['unknownquestion'] = '알수 없는 질문: {$a}';
 $string['unknownquestioncatregory'] = '알수 없는 질문 범주: {$a}';
 $string['unknownquestiontype'] = '{$a} 질문 유형은 없습니다.';
 $string['unknowntolerance'] = '알 수 없는 오차 유형 {$a}';
 $string['unpublished'] = '공유되지 않음';
+$string['unusedcategorydeleted'] = '강좌가 삭제된 이후, 쓰였던  질문들이 더 이상 사용되지 않았기 때문에, 이 범주는 삭제되었습니다.';
 $string['updatedisplayoptions'] = '표시 옵션 업데이트';
 $string['upgradeproblemcategoryloop'] = '질문 범주를 업데이트하려는데 문제 발견. 범주 트리에 고리가 있습니다. 영향받는 범주 ID는 {$a} 입니다';
 $string['upgradeproblemcouldnotupdatecategory'] = '질문 범주 {$a->name} ({$a->id}) 를 업데이트할 수 없음';

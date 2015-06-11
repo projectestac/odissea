@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,6 @@ $string['createpage'] = 'Maak een nieuwe paginabron';
 $string['displayoptions'] = 'Mogelijk opties om te tonen';
 $string['displayselect'] = 'Toon';
 $string['displayselectexplain'] = 'Kies type om te tonen';
-$string['eventcoursemoduleviewed'] = 'Pagina bron bekeken';
-$string['eventinstanceslistviewed'] = 'Pagina item lijst bekeken';
 $string['legacyfiles'] = 'Migratie van oude cursusbestanden';
 $string['legacyfilesactive'] = 'Actief';
 $string['legacyfilesdone'] = 'Beëindigd';
@@ -49,7 +47,6 @@ Een pagina kan gebruikt worden
 * om de deelnemingsvoorwaarden of een samenvatting van een cursus te tonen
 * om verschillende video\'s of geluidsbestanden samen te presenteren met wat tekst als uitleg';
 $string['modulenameplural'] = 'Pagina\'s';
-$string['neverseen'] = 'Nooit bekeken';
 $string['optionsheader'] = 'Toon opties';
 $string['page:addinstance'] = 'Voeg een nieuwe pagina bron toe';
 $string['page-mod-page-x'] = 'Elke paginamodule pagina';
@@ -60,5 +57,7 @@ $string['popupheight'] = 'Pop-up hoogte (in pixels)';
 $string['popupheightexplain'] = 'Bepaalt de standaard hoogte van pop-upvensters';
 $string['popupwidth'] = 'Pop-up breedte (in pixels)';
 $string['popupwidthexplain'] = 'Bepaalt de standaard breedte van pop-upvensters';
+$string['printheading'] = 'Toon paginanaam';
+$string['printheadingexplain'] = 'Paginanaam boven inhoud tonen?';
 $string['printintro'] = 'Toon paginabeschrijving';
 $string['printintroexplain'] = 'Toon paginabeschrijving boven inhoud?';

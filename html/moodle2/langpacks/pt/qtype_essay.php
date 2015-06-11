@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowattachments'] = 'Permitir anexos';
+$string['attachmentsoptional'] = 'Anexos são opcionais';
+$string['attachmentsrequired'] = 'Exigir anexos';
+$string['attachmentsrequired_help'] = 'Esta opção especifica o número mínimo de anexos necessários para que uma resposta seja considerada avaliável.';
 $string['formateditor'] = 'Editor HTML';
 $string['formateditorfilepicker'] = 'Editor HTML com explorador de ficheiros';
 $string['formatmonospaced'] = 'Texto simples, fonte monoespaçada';
+$string['formatnoinline'] = 'Sem texto online';
 $string['formatplain'] = 'Texto simples';
 $string['graderinfo'] = 'Informação sobre a avaliação';
+$string['graderinfoheader'] = 'Informação do Avaliador';
+$string['mustattach'] = 'Quando a opção "Sem texto online" é selecionada, ou as respostas são opcionais, tem de permitir pelo menos um anexo.';
+$string['mustrequire'] = 'Quando a opção "Sem texto online" é selecionada, ou as respostas são opcionais, tem de exigir pelo menos um anexo.';
+$string['mustrequirefewer'] = 'Não pode exigir mais anexos do que aqueles que permite.';
 $string['nlines'] = '{$a} linhas';
 $string['pluginname'] = 'Desenvolvimento';
 $string['pluginnameadding'] = 'A adicionar pergunta de desenvolvimento';
@@ -40,5 +48,10 @@ $string['pluginname_link'] = 'pergunta/tipo/desenvolvimento';
 $string['pluginnamesummary'] = 'Permite uma resposta composta por várias frases ou parágrafos. Este tipo de perguntas tem de ser avaliado manualmente.';
 $string['responsefieldlines'] = 'Tamanho da caixa de resposta';
 $string['responseformat'] = 'Formato da resposta';
+$string['responseisrequired'] = 'Requerer que o aluno insira texto';
+$string['responsenotrequired'] = 'A introdução de texto é opcional';
+$string['responseoptions'] = 'Opções de Resposta';
+$string['responserequired'] = 'Exigir texto';
 $string['responsetemplate'] = 'Modelo de resposta';
+$string['responsetemplateheader'] = 'Modelo de resposta';
 $string['responsetemplate_help'] = 'Qualquer texto inserido aqui será exibido na caixa de resposta quando inicia uma nova tentativa de resposta à pergunta.';

@@ -16,6 +16,7 @@
     display:none;
 }
 
+.content-only #region-main.span9, // Two column layout with no block or all blocks docked.
 .empty-region-side-post #region-bs-main-and-pre.span9, // LTR with no post area.
 .empty-region-side-pre #region-bs-main-and-post.span9, // RTL with no pre area.
 .empty-region-side-post #region-bs-main-and-post.span9 #region-main.span8, // RTL with no post area.
@@ -312,9 +313,6 @@ img.uihint {
     margin-left: auto;
     margin-right: auto;
 }
-.flexible th {
-    white-space: nowrap;
-}
 table.flexible .emptyrow {
     display: none;
 }
@@ -592,6 +590,11 @@ table.mod_index {
 .comment-area textarea {
     width: 100%;
     overflow: auto;
+    &.fullwidth {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }
 .comment-area .fd {
     text-align: right;
@@ -655,16 +658,6 @@ table.mod_index {
     left: 0;
     right: auto;
     margin: .3em;
-}
-.comment-delete-confirm {
-    background: #eee;
-    padding: 2px;
-    width: 5em;
-    text-align: center;
-}
-.comment-container {
-    float: left;
-    margin: 4px;
 }
 .comment-report-selectall{
     display: none
@@ -829,8 +822,8 @@ table#tag-management-list th {
     position: absolute;
     width: 420px;
     left: 20%;
-    border: 1px solid #404040;
-    background: #fff;
+    border: 1px solid @dropdownBorder;
+    background: @dropdownBackground;
     overflow: hidden;
     z-index: 9050;
 }
@@ -859,7 +852,8 @@ table#tag-management-list th {
     white-space: nowrap;
 }
 #relatedtags-autocomplete li.yui-ac-highlight{
-    background: #FFFFCC;
+    background: @dropdownLinkBackgroundHover;
+    color: @dropdownLinkColorHover;
 }
 h2.tag-heading,
 div#tag-description,
@@ -1028,6 +1022,9 @@ body.tag .managelink {
     width: 100%;
     border-collapse: collapse;
 }
+.userenrolment tr {
+    vertical-align:top;
+}
 .userenrolment td {
     padding: 0;
     height: 41px;
@@ -1044,59 +1041,44 @@ body.tag .managelink {
 .userenrolment .col_role {
     width: 262px;
 }
-.userenrolment .col_role .roles {
-    margin-right: 30px;
-}
-.userenrolment .col_role .role {
-    float: left;
-    padding: 3px;
-    margin: 3px;
-}
-.dir-rtl .userenrolment .col_role .role {
-    float: right;
-}
-.userenrolment .col_role .role a {
-    margin-left: 3px;
-    cursor: pointer;
-}
-.userenrolment .col_role .addrole {
-    float: right;
-    width: 18px;
-    height: 18px;
-    margin: 3px;
-    text-align: center;
-    background-color: @successBackground;
-    border: 1px solid @successBorder;
-}
-.userenrolment .col_role .addrole img {
-    vertical-align: baseline;
-}
-.userenrolment .hasAllRoles .col_role .addrole {
-    display: none;
-}
+.userenrolment .col_role .roles,
 .userenrolment .col_group .groups {
     margin-right: 30px;
 }
+.userenrolment .col_role .role,
 .userenrolment .col_group .group {
     float: left;
     padding: 3px;
     margin: 3px;
     white-space: nowrap;
 }
+.userenrolment .col_role .role a,
 .userenrolment .col_group .group a {
     margin-left: 3px;
     cursor: pointer;
 }
+.userenrolment .col_role .addrole,
 .userenrolment .col_group .addgroup {
     float: right;
-    width: 18px;
+    padding: 3px;
     margin: 3px;
-    height: 18px;
-    text-align: center;
+    > *:hover {
+        border-bottom:1px solid #666;
+    }
 }
-.userenrolment .col_group .addgroup a img {
-    vertical-align: bottom;
+.userenrolment .col_role .addrole img,
+.userenrolment .col_group .addgroup img {
+    vertical-align: baseline;
 }
+
+.dir-rtl .userenrolment .col_role .role {
+    float: right;
+}
+
+.userenrolment .hasAllRoles .col_role .addrole {
+    display: none;
+}
+
 .userenrolment .col_enrol .enrolment {
     float: left;
     padding: 3px;
@@ -1154,9 +1136,12 @@ body.tag .managelink {
             margin-bottom: 0;
         }
     }
-    .user-enroller-panel .uep-search-results .user .details {
-       width: 237px;
-    }
+  .user-enroller-panel .uep-search-results .user .details {
+    width: 237px;
+  }
+  .user-enroller-panel .uep-search-results .cohort .details {
+    width: 237px;
+  }
 }
 .dir-rtl {
     &#page-enrol-users {
@@ -1629,11 +1614,11 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     left: 6px;
 }
 /**
-* Chooser Dialogues (moodle-core-chooserdialogue)
-*
-* This CSS belong to the chooser dialogue which should work both with, and
-* without javascript enabled
-*/
+ * Chooser Dialogues (moodle-core-chooserdialogue)
+ *
+ * This CSS belong to the chooser dialogue which should work both with, and
+ * without javascript enabled
+ */
 /* Hide the dialog and it's title */
 .chooserdialoguebody,
 .choosertitle {
@@ -1668,13 +1653,13 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     border-bottom: 1px solid #BBBBBB;
 }
 /* Only set these options if we're showing the js container */
-.jsenabled .choosercontainer #chooseform .alloptions {
+.jschooser .choosercontainer #chooseform .alloptions {
     overflow-x: hidden;
     overflow-y: auto;
     max-width: 20.3em;
     .box-shadow(inset 0 0 30px 0px #ccc);
 }
-.dir-rtl.jsenabled .choosercontainer #chooseform .alloptions {
+.dir-rtl.jschooser .choosercontainer #chooseform .alloptions {
     max-width: 18.3em;
 }
 /* Settings for option rows and option subtypes */
@@ -1701,8 +1686,9 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .dir-rtl .choosercontainer #chooseform .nonoption span.modicon img.icon {
     padding: 0 0.5em 0 0;
 }
-.choosercontainer #chooseform .option span.modicon img.icon,
-.choosercontainer #chooseform .nonoption span.modicon img.icon {
+
+.chooserdialogue-course-modchooser .choosercontainer #chooseform .option span.modicon img.icon,
+.chooserdialogue-course-modchooser .choosercontainer #chooseform .nonoption span.modicon img.icon {
     height: 24px;
     width: 24px;
 }
@@ -1739,8 +1725,8 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     margin: 0 0.2em 0 0;
 }
 /* The instruction/help area */
-.jsenabled .choosercontainer #chooseform .instruction,
-.jsenabled .choosercontainer #chooseform .typesummary {
+.jschooser .choosercontainer #chooseform .instruction,
+.jschooser .choosercontainer #chooseform .typesummary {
    display: none;
     position: absolute;
     top: 0;
@@ -1749,24 +1735,24 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     left: 20.3em;
     margin: 0;
     padding: 1.6em;
-    background-color: @bodyBackground;
+    background-color: #fff;
     overflow-x: hidden;
     overflow-y: auto;
     line-height: 2em;
 }
-.dir-rtl.jsenabled .choosercontainer #chooseform .instruction,
-.dir-rtl.jsenabled .choosercontainer #chooseform .typesummary {
+.dir-rtl.jschooser .choosercontainer #chooseform .instruction,
+.dir-rtl.jschooser .choosercontainer #chooseform .typesummary {
     left: 0;
     right: 18.5em;
     border-right: 1px solid grey;
 }
 /* Selected option settings */
-.jsenabled .choosercontainer #chooseform .instruction,
+.jschooser .choosercontainer #chooseform .instruction,
 .choosercontainer #chooseform .selected .typesummary {
     display: block;
 }
 .choosercontainer #chooseform .selected {
-    background-color: @bodyBackground;
+    background-color: #fff;
     .box-shadow(0px 0 10px 0 #ccc);
 }
 .section-modchooser-link img.smallicon {
@@ -1871,32 +1857,6 @@ a.criteria-action {
     padding: 0px 3px;
     float: right;
 }
-table.issuedbadgebox {
-    width: 750px;
-    background-color: #FFFFFF;
-}
-table.badgeissuedimage {
-    width: 150px;
-    text-align: center;
-}
-table.badgeissuedinfo {
-    width: 600px;
-}
-table.badgeissuedinfo .bvalue {
-    text-align: left;
-    vertical-align: middle;
-}
-table.badgeissuedinfo .bfield {
-    width: 125px;
-    text-align: left;
-    font-style: italic;
-}
-.dir-rtl {
-    table.badgeissuedinfo .bvalue,
-    table.badgeissuedinfo .bfield {
-        text-align: right;
-    }
-}
 ul.badges {
     margin: 0;
     list-style: none;
@@ -1917,8 +1877,8 @@ ul.badges {
     position: absolute;
 }
 .badges li .badge-image {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     left: 10px;
     top: 0px;
     z-index: 1;
@@ -1926,24 +1886,78 @@ ul.badges {
 .badges li .badge-actions {
     position: relative;
 }
-div.badge {
-    position: relative;
-    display: block;
-}
-div.badge .expireimage {
+.badges li .expireimage {
     width: 100px;
     height: 100px;
-    left: 20px;
-    top: 0px;
-}
-.expireimage {
-    .opacity(85);
-    width: 90px; height: 90px;
-    left: 30px;
+    left: 25px;
     top: 0px;
     position: absolute;
-    z-index:10;
+    z-index: 10;
+    opacity: 0.85;
 }
+
+#badge-image {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    min-width: 100px;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 17px;
+
+    .expireimage {
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        .opacity(85);
+        position: absolute;
+        z-index:10;
+    }
+
+    .singlebutton {
+        padding-top: 5px;
+
+        input {
+            margin-left: 0px;
+        }
+    }
+}
+.dir-rtl #badge-image {
+    float: right;
+
+    .expireimage {
+        left: 41px;
+    }
+}
+#badge-details {
+    display: inline-block;
+    width: 79%;
+}
+
+#badge-overview dl,
+#badge-details dl {
+    margin: 0;
+
+    dt,
+    dd {
+        vertical-align: top;
+        padding: 3px 0;
+    }
+    dt {
+        clear: both;
+        display: inline-block;
+        width: 20%;
+        min-width: 100px;
+    }
+    dd {
+        display: inline-block;
+        width: 79%;
+        margin-left: 1%;
+    }
+}
+
 .badge-profile {
     vertical-align: top;
 }
@@ -1969,14 +1983,25 @@ div.badge .expireimage {
     width: 42%;
 }
 
-.statustable {
-    margin-bottom: 0px;
+#issued-badge-table .activatebadge {
+    display: inline-block;
 }
 .statusbox.active {
     background-color: @successBackground;
 }
 .statusbox.inactive {
     background-color: @warningBackground;
+}
+.statusbox {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.statusbox .activatebadge {
+    display: inline-block;
+}
+.statusbox .activatebadge input[type=submit]{
+    margin: 3px;
 }
 .activatebadge {
     margin: 0px;
@@ -2097,8 +2122,8 @@ img#persona_signin {
         display:block;
         position: absolute;
         text-align: left;
-        background-color: #fff;
-        border: 1px solid #ccc;
+        background-color: @dropdownBackground;
+        border: 1px solid @dropdownBorder;
         z-index:1000;
         .border-radius(5px);
         .box-shadow(5px 5px 20px 0 #666);
@@ -2153,6 +2178,10 @@ img#persona_signin {
         &.align-tr-tr {top: 0;right: 0;}
         &.align-bl-tr {bottom: 100%;left:100%;}
         &.align-br-tr {bottom: 100%;right: 0;margin-bottom: 4px;}
+    }
+    /** no wrap is set - prevent menu items from wrapping **/
+    &.nowrap-items .menu > li {
+        white-space: nowrap;
     }
 }
 
@@ -2222,10 +2251,24 @@ body.lockscroll {
   height: 100%;
   overflow: hidden;
 }
+
 .dir-rtl {
-    ul, ol {
+    // Bootstrap sets right margin to 0. Fail.
+    // They set left margin to 25px so we will copy that.
+    ul {
+        margin-left: 0;
         margin-right: 25px;
     }
+}
+
+.progressbar_container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* IE10 only fix for calendar titling */
+.ie10 .yui3-calendar-header-label {
+    display: inline-block;
 }
 
 dd:before,

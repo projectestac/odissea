@@ -26,11 +26,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$module->version  = 2014010100;
-$module->requires  = 2011120500;
-$module->maturity  = MATURITY_STABLE;
-$module->release = '1.4.4 (Build: 2014010100)';
+$plugin->version  = 2015022302;
+$plugin->requires  = 2014050800; // Moodle 2.7
+$plugin->maturity  = MATURITY_STABLE;
+$plugin->release = '1.8.2 for Moodle 2.7-2.8 (Build: 2015022302)';
 
-$module->component = 'mod_choicegroup';
-$module->cron = 0;
+$plugin->component = 'mod_choicegroup';
+$plugin->cron = 0;
 

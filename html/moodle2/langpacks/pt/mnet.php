@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorr
 $string['error7024'] = 'Enviou uma mensagem não encriptada para o site remoto, mas este não aceita mensagens não encriptadas do seu site, o que é surpreendente. É recomendável que submeta uma informação de bug se tal voltar a acontecer (com o máximo de informação possível sobre as versões Moodle em questão, etc.)';
 $string['error7026'] = 'A chave utilizada para assinar a sua mensagem é diferente da chave que o servidor remoto tem registada para o seu site. Além disso, o servidor remoto tentou obter a sua chave atual e não conseguiu. Redefina as chaves com o servidor remoto, manualmente, e tente de novo.';
 $string['error709'] = 'O site externo falhou na tentativa de obter uma chave SSL do seu site.';
+$string['eventaccesscontrolcreated'] = 'Controlo de acesso criado';
+$string['eventaccesscontrolupdated'] = 'Controlo de acesso atualizado';
 $string['expired'] = 'Esta chave expirou em';
 $string['expires'] = 'Válida até';
 $string['expireyourkey'] = 'Eliminar esta chave';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'Fornecedor de identidade para a rede Moodle';
 $string['mnetidproviderdesc'] = 'Pode utilizar esta funcionalidade para obter um link para iniciar sessão. Para isso, deverá indicar o e-mail que corresponda aos dados de acesso que utilizou para fazer login.';
 $string['mnetidprovidermsg'] = 'Deverá poder autenticar-se no seu fornecedor {$a}.';
 $string['mnetidprovidernotfound'] = 'Não foi possível encontrar mais informação.';
-$string['mnetlog'] = 'Registos de atividade';
 $string['mnetpeers'] = 'Pares';
 $string['mnetservices'] = 'Serviços';
 $string['mnet_session_prohibited'] = 'Utilizadores do seu servidor doméstico não têm permissão para navegar para $a.';

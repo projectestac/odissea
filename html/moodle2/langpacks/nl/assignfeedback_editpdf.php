@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['clear'] = 'Wissen';
 $string['colourpicker'] = 'Kleurkiezer';
 $string['command'] = 'Commando:';
 $string['comment'] = 'Opmerkingen';
-$string['commentcolour'] = 'Kleur opmerkingen';
+$string['commentcolour'] = 'Commentaarkleur';
 $string['commentcontextmenu'] = 'Contextmenu opmerkingen';
 $string['couldnotsavepage'] = 'Kon pagina {$a} niet bewaren';
 $string['currentstamp'] = 'Stempel';
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'Genereer feedback PDF';
 $string['generatingpdf'] = 'PDF aan het genereren...';
 $string['gotopage'] = 'Ga naar pagina';
 $string['green'] = 'Groen';
-$string['gspath'] = 'Ghostscript pad';
-$string['gspath_help'] = 'Op de meeste Linux-installaties kan dit gelaten worden als \'/usr/bin/gs\'. Op Windows zal het iets zijn als \'c:gsbingswin32c.exe\' (zorg er voor dat er geen spaties in het pad staan - indien nodig kopieer de bestanden \'gswin32c.exe\' en \'gsdll32.dll\' naar een nieuwe map zonder spaties in het pad)';
+$string['gsimage'] = 'Ghostscript testafbeelding';
 $string['highlight'] = 'Markeer';
 $string['jsrequired'] = 'Het annoteren van PDF-documenten vereist javascript. Schakel Javascript in in je browser als je deze functie wil gebruiken';
 $string['launcheditor'] = 'Start PDF-editor...';
@@ -66,6 +65,7 @@ $string['output'] = 'Output:';
 $string['oval'] = 'Ovaal';
 $string['pagenumber'] = 'pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} van {$a->total}';
+$string['pathtogspathdesc'] = 'Opgelet: om PDF te kunnen annoteren moet het pad naar ghostscript ingesteld zijn in {$a}.';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annoteer PDF';
 $string['rectangle'] = 'Rechthoek';
@@ -76,7 +76,7 @@ $string['select'] = 'Selecteer';
 $string['stamp'] = 'Stempel';
 $string['stamppicker'] = 'Stempelzoeker';
 $string['stamps'] = 'Stempels';
-$string['stampsdesc'] = 'Stempels moeten afbeeldingen zijn (aanbevolen grootte: 40 X 40à. Deze afbeeldingen kunnen gebruikt worden met het stempelgereedschap om PDF\'s mee te annoteren.';
+$string['stampsdesc'] = 'Stempels moeten afbeeldingen zijn. Deze afbeeldingen kunnen gebruikt worden met het stempelgereedschap om PDF\'s mee te annoteren.';
 $string['test_doesnotexist'] = 'Het pad naar Ghostscript verwijst naar een bestand dat niet bestaat.';
 $string['test_empty'] = 'Het Ghostscript-pad is leeg - geef het juiste pad in.';
 $string['testgs'] = 'Test het ghostscript-pad';
@@ -90,4 +90,3 @@ $string['unsavedchanges'] = 'Onbewaarde wijzigingen';
 $string['viewfeedbackonline'] = 'Bekijk een geannoteerde pdf...';
 $string['white'] = 'Wit';
 $string['yellow'] = 'Geel';
-$string['zlibnotavailable'] = 'De PHP-extentie "zlib" is niet beschikbaar. Het annoteren op PDF heeft deze php-extentie nodig en zal uitgeschakeld worden tot zlib geïnstalleerd en ingeschakeld is.';

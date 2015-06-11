@@ -49,7 +49,7 @@ ALERT = function(config) {
     config.closeButton = false;
     ALERT.superclass.constructor.apply(this, [config]);
 };
-Y.extend(ALERT, M.core.dialogue, {
+Y.extend(ALERT, M.core.notification.info, {
     /**
      * The list of events to detach when destroying this dialogue.
      *
@@ -58,7 +58,7 @@ Y.extend(ALERT, M.core.dialogue, {
      * @private
      */
     _closeEvents: null,
-    initializer : function() {
+    initializer: function() {
         this._closeEvents = [];
         this.publish('complete');
         var yes = Y.Node.create('<input type="button" id="id_yuialertconfirm-' + this.get('COUNT') + '" value="'+this.get(CONFIRMYES)+'" />'),
@@ -70,7 +70,7 @@ Y.extend(ALERT, M.core.dialogue, {
         this.setStdModContent(Y.WidgetStdMod.BODY, content, Y.WidgetStdMod.REPLACE);
         this.setStdModContent(Y.WidgetStdMod.HEADER,
                 '<h1 id="moodle-dialogue-'+this.get('COUNT')+'-header-text">' + this.get(TITLE) + '</h1>', Y.WidgetStdMod.REPLACE);
-        this.after('destroyedChange', function(){this.get(BASE).remove();}, this);
+
         this._closeEvents.push(
             Y.on('key', this.submit, window, 'down:13', this),
             yes.on('click', this.submit, this)
@@ -84,16 +84,16 @@ Y.extend(ALERT, M.core.dialogue, {
             );
         }
     },
-    submit : function() {
+    submit: function() {
         new Y.EventHandle(this._closeEvents).detach();
         this.fire('complete');
         this.hide();
         this.destroy();
     }
 }, {
-    NAME : ALERT_NAME,
-    CSS_PREFIX : DIALOGUE_PREFIX,
-    ATTRS : {
+    NAME: ALERT_NAME,
+    CSS_PREFIX: DIALOGUE_PREFIX,
+    ATTRS: {
 
         /**
          * The title of the alert.
@@ -102,9 +102,9 @@ Y.extend(ALERT, M.core.dialogue, {
          * @type String
          * @default 'Alert'
          */
-        title : {
-            validator : Y.Lang.isString,
-            value : 'Alert'
+        title: {
+            validator: Y.Lang.isString,
+            value: 'Alert'
         },
 
         /**
@@ -114,9 +114,9 @@ Y.extend(ALERT, M.core.dialogue, {
          * @type String
          * @default 'Confirm'
          */
-        message : {
-            validator : Y.Lang.isString,
-            value : 'Confirm'
+        message: {
+            validator: Y.Lang.isString,
+            value: 'Confirm'
         },
 
         /**
@@ -126,15 +126,15 @@ Y.extend(ALERT, M.core.dialogue, {
          * @type String
          * @default 'Ok'
          */
-        yesLabel : {
-            validator : Y.Lang.isString,
-            setter : function(txt) {
+        yesLabel: {
+            validator: Y.Lang.isString,
+            setter: function(txt) {
                 if (!txt) {
                     txt = 'Ok';
                 }
                 return txt;
             },
-            value : 'Ok'
+            value: 'Ok'
         }
     }
 });

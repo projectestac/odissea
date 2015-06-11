@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'grades', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,8 +49,6 @@ $string['aggregateonlygraded_help'] = '빈 성적은 성적부에서 누락된 �
 $string['aggregateoutcomes'] = '집계에 학습성과 포함';
 $string['aggregateoutcomes_help'] = '<p>집계에 학습성과를 포함하는 것이 원하는 전체 성적에 다다른다는 것이 아니기 때문에, 학습성과를 포함시킬지 말 것인지를 선택할 수 있는 것이다.</p>';
 $string['aggregatesonly'] = '집계만';
-$string['aggregatesubcats'] = '하위 범주를 포함한 집계';
-$string['aggregatesubcats_help'] = '이 설정은 하위 범주의 성적이 집계에 포함될지를 결정합니다.';
 $string['aggregatesum'] = '성적 합계';
 $string['aggregateweightedmean'] = '성적 가중 평균';
 $string['aggregateweightedmean2'] = '성적 단순 가중 평균';
@@ -182,9 +180,9 @@ $string['errorreprintheadersnonnumeric'] = '해당 항목에 바르지 않은 �
 $string['errorsavegrade'] = '성적을 저장할 수 없습니다. 죄송합니다.';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = '성적 범주 ID {$a->id} 의 "비어있지 않은 항목만 집계" 설정을 업데이트하는 중에 오류';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = '성적 범주 ID {$a->id} 의 "집계에 학습성과 포함" 설정을 업데이트하는 중 오류';
-$string['errorupdatinggradecategoryaggregatesubcats'] = '성적 범주 ID {$a->id} 의 "하위 범주를 포함하는 집계" 설정을 업데이트하는 중 오류';
 $string['errorupdatinggradecategoryaggregation'] = '성적 범주 ID {$a->id} 의 집계 유형을 업데이트하는 중 오류';
 $string['errorupdatinggradeitemaggregationcoef'] = '성적 범주 ID {$a->id} 의 집계 계수(가중치 혹은 부가점)를 업데이트하는 중 오류';
+$string['eventusergraded'] = '성적부에서 편집된 사용자 성적';
 $string['excluded'] = '제외';
 $string['excluded_help'] = '체크되면 성적이 어떤 집계에도 포함되지 않습니다.';
 $string['expand'] = '범주 확장';
@@ -208,8 +206,6 @@ $string['feedbacksaved'] = '피드백 저장됨';
 $string['feedbackview'] = '피드백 보기';
 $string['finalgrade'] = '최종 성적';
 $string['finalgrade_help'] = '덮어쓰기 체크박스가 체크되어 있으면 성적이 추가되거나 수정될 것입니다.';
-$string['fixedstudents'] = '고정된 학생 열';
-$string['fixedstudents_help'] = '학생열을 정적으로 함으로써 학생열을 다 보면서 성적들을 수평으로 스크롤 할 수 있게 합니다.';
 $string['forceoff'] = '강제:꺼짐';
 $string['forceon'] = '강제:켜짐';
 $string['forelementtypes'] = '선택한 {$a} 의 유형';
@@ -280,6 +276,7 @@ $string['gradeoutcomes'] = '학습성과';
 $string['gradeoutcomescourses'] = '강좌 학습성과';
 $string['gradepass'] = '통과 성적';
 $string['gradepass_help'] = '이 설정은 통과하기 위한 최소 성적을 결정합니다. 이 값은 활동과 강좌이수완료에 사용됩니다. 성적부에서는 통과 성적은 초록으로, 실패 성적은 빨강색으로 강조표시됩니다.';
+$string['gradepointmax'] = '최대 성적 점수';
 $string['gradepreferences'] = '성적 환경 설정';
 $string['gradepreferenceshelp'] = '성적 환경 설정 도움말';
 $string['gradepublishing'] = '성적 공개 가능';
@@ -405,6 +402,12 @@ $string['median'] = '중간값';
 $string['min'] = '최저';
 $string['missingscale'] = '척도가 선택되어야 합니다.';
 $string['mode'] = '모드';
+$string['modgrade'] = '성적';
+$string['modgrademaxgrade'] = '최대 점수';
+$string['modgradetype'] = '유형';
+$string['modgradetypenone'] = '없음';
+$string['modgradetypepoint'] = '점수';
+$string['modgradetypescale'] = '척도';
 $string['morethanmax'] = '{$a->itemname} 에 대하여 {$a->username} 에게 입력된 성적은 최대 허용치보다 큽니다.';
 $string['moveselectedto'] = '다음으로 선택항목 옮김 :';
 $string['movingelement'] = '{$a} 이동';
@@ -658,7 +661,6 @@ $string['useweighted'] = '가중치 사용';
 $string['verbosescales'] = 'Verbose 척도';
 $string['viewbygroup'] = '모둠';
 $string['viewgrades'] = '성적 보기';
-$string['warningexcludedsum'] = '경고: 점수를 제외시키는 것은 집계 전략에 맞지 않음';
 $string['weight'] = '가중치';
 $string['weightcourse'] = '강좌에 대한 가중된 성적 사용';
 $string['weightedascending'] = '가중된 백분률로 오름차순 정렬';

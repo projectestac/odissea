@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Discussione';
 $string['emailmessages'] = 'Inviami i messaggi per email quando sono offline';
 $string['emailtagline'] = 'Questa email contiene una copia del messaggio  ricevuto su "{$a->sitename}", Per rispondere recati su {$a->url} .';
 $string['emptysearchstring'] = 'Dovresti cercare qualcosa';
+$string['enabled'] = 'Abilitato';
 $string['errorcallingprocessor'] = 'Si è verificato un errore durante la chiamata all\'instradamento definito';
 $string['errortranslatingdefault'] = 'Si è verificato un errore durante la trasposizione delle impostazioni di default del plugin, al loro posto verranno utilizzati i default di sistema.';
+$string['eventmessagecontactadded'] = 'Aggiunto contatto';
+$string['eventmessagecontactblocked'] = 'Bloccato contatto';
+$string['eventmessagecontactremoved'] = 'Eliminato contatto';
+$string['eventmessagecontactunblocked'] = 'Sbloccato contatto';
+$string['eventmessagesent'] = 'Inviato messaggio';
+$string['eventmessageviewed'] = 'Visualizzato messaggo';
 $string['forced'] = 'Forzato';
 $string['formorethan'] = 'Per più di';
 $string['gotomessages'] = 'Vai ai messaggi';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Sblocca contatto';
 $string['unreadmessages'] = 'Messaggi non letti: ({$a})';
 $string['unreadnewmessage'] = 'Nuovo messaggio da {$a}';
 $string['unreadnewmessages'] = 'Nuovi messaggi: ({$a})';
-$string['unreadnewnotification'] = 'Nuova notifica';
-$string['unreadnewnotifications'] = '({$a}) nuove notifiche';
 $string['userisblockingyou'] = 'Questo utente ha bloccato la possibilità da parte tua di inviargli messaggi';
 $string['userisblockingyounoncontact'] = '{$a} accetta solamente i messaggi provenienti dai suoi contatti.';
 $string['userssearchresults'] = 'Utenti trovati: {$a}';

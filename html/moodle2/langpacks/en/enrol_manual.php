@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,8 @@ $string['alterstatus'] = 'Alter status';
 $string['altertimeend'] = 'Alter end time';
 $string['altertimestart'] = 'Alter start time';
 $string['assignrole'] = 'Assign role';
+$string['browsecohorts'] = 'Browse cohorts';
+$string['browseusers'] = 'Browse users';
 $string['confirmbulkdeleteenrolment'] = 'Are you sure you want to delete these users enrolments?';
 $string['defaultperiod'] = 'Default enrolment duration';
 $string['defaultperiod_desc'] = 'Default length of time that the enrolment is valid. If set to zero, the enrolment duration will be unlimited by default.';

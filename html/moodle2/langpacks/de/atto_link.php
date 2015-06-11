@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_link', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_link
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilityhint'] = '<p>Hinweise zur Barierefreiheit:<br/><ul><li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs" target="_blank">2.4.4 Linkzweck (im Kontext)</a></li><li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-link" target="_blank">2.4.9 Linkzweck (Link alleine)</a></li></ul></p>';
 $string['browserepositories'] = 'Repositories durchsuchen...';
 $string['createlink'] = 'Link anlegen';
 $string['enterurl'] = 'URL eingeben';
-$string['link'] = 'Link';
 $string['openinnewwindow'] = 'In neuem Fenster öffnen';
 $string['pluginname'] = 'Link';
+$string['unlink'] = 'Link entfernen';

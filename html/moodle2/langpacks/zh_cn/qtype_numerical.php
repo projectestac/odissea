@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_numerical', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['acceptederror'] = '可接受误差';
 $string['addmoreanswerblanks'] = '再加 {no} 个空答案';
 $string['addmoreunitblanks'] = '再加 {no} 个空单位';
 $string['answercolon'] = '答案：';
+$string['answererror'] = '错误';
 $string['answermustbenumberorstar'] = '答案必须是数字，例如 -1.234 或 3e8，或“*”。';
 $string['answerno'] = '答案 {$a}';
 $string['decfractionofquestiongrade'] = '从此题目总分罚掉的比例（0-1）';
@@ -96,7 +97,9 @@ $string['unitpenalty_help'] = '发生如下情况之一，会罚分
 * 在单位输入框输入了错误的单位
 * 单位输入到了数值输入框';
 $string['unitposition'] = '单位位置';
+$string['units'] = '单元';
 $string['unitselect'] = '下拉菜单';
+$string['unitx'] = '单元{no}';
 $string['validnumberformats'] = '有效的数字格式';
 $string['validnumberformats_help'] = '* 普通数字，13500.67、13 500.67、 13500,67 或 13 500,67
 
@@ -104,4 +107,6 @@ $string['validnumberformats_help'] = '* 普通数字，13500.67、13 500.67、 1
 
 * 对对数形式，1.350067 * 10<sup>4</sup> 用 1.350067 E4 : 1.350067 E04 表示';
 $string['validnumbers'] = '13500.67、13 500.67、13,500.67、13500,67、13 500,67、1.350067 E4 或 1.350067 E04';
+$string['xmustbenumeric'] = '{$a}必须是一个数字。';
+$string['xmustnotbenumeric'] = '{$a}不能是一个数字。';
 $string['youmustenteramultiplierhere'] = '必须键入一个乘数';

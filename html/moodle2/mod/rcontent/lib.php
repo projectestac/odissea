@@ -27,7 +27,8 @@ function rcontent_add_instance($data){
     $tmp = new stdClass();
     $tmp->course        = $data->course;
     $tmp->name          = $data->name;
-    $tmp->summary       = $data->summary;
+    $tmp->intro = $data->intro;
+    $tmp->introformat = $data->introformat;
     $tmp->levelid       = (isset($data->levelid))?$data->levelid:required_param('level',PARAM_INT);
     $tmp->bookid        = (isset($data->isbn))?$data->isbn:required_param('isbn',PARAM_INT);
     $tmp->unitid        = (isset($data->unit))?$data->unit:required_param('unit',PARAM_INT);
@@ -78,7 +79,8 @@ function rcontent_update_instance($data){
     $tmp->id            = $data->instance;
     $tmp->course        = $data->course;
     $tmp->name          = $data->name;
-    $tmp->summary       = $data->summary;
+    $tmp->intro = $data->intro;
+    $tmp->introformat = $data->introformat;
     $tmp->levelid       = (isset($data->levelid))?$data->levelid:required_param('level',PARAM_INT);
     $tmp->bookid        = (isset($data->isbn))?$data->isbn:required_param('isbn',PARAM_INT);
     $tmp->unitid        = (isset($data->unit))?$data->unit:required_param('unit',PARAM_INT);
@@ -293,7 +295,7 @@ function rcontent_supports($feature) {
 		case FEATURE_GROUPS:                  return false;
 		case FEATURE_GROUPINGS:               return false;
 		case FEATURE_GROUPMEMBERSONLY:        return true;
-		case FEATURE_MOD_INTRO:               return false;
+		case FEATURE_MOD_INTRO:               return true;
 		case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
 		case FEATURE_COMPLETION_HAS_RULES:    return true;
 		case FEATURE_GRADE_HAS_GRADE:         return true;
@@ -322,7 +324,7 @@ function rcontent_supports($feature) {
  * @return void
  */
 function rcontent_extend_settings_navigation($settings, $node) {
-    global $DB, $CFG, $PAGE;
+    global $CFG, $PAGE;
 
     // We want to add these new nodes after the Edit settings node, and before the
     // Locally assigned roles node. Of course, both of those are controlled by capabilities.
@@ -336,13 +338,24 @@ function rcontent_extend_settings_navigation($settings, $node) {
     }
 
     if (has_any_capability(array('mod/rcontent:viewreport'), $PAGE->cm->context)) {
+        require_once($CFG->dirroot . '/mod/rcontent/report/reportlib.php');
+
         $url = new moodle_url('/mod/rcontent/report.php',
                         array('id' => $PAGE->cm->id));
         $reportnode = $node->add_node(navigation_node::create(get_string('results', 'rcontent'), $url,
                 navigation_node::TYPE_SETTING,
                 null, null, new pix_icon('i/report', '')), $beforekey);
 
-        if (file_exists($CFG->dirroot.'/blocks/rgrade/rgrade_table.php')) {
+        $reportlist = rcontent_report_list();
+        if (!empty($reportlist)) {
+            foreach ($reportlist as $report) {
+                $url = new moodle_url('/mod/rcontent/report/'.$report.'/index.php',
+                        array('id' => $PAGE->cm->id));
+                $reportnode->add_node(navigation_node::create(get_string($report, 'rcontent_'.$report), $url,
+                        navigation_node::TYPE_SETTING,
+                        null, 'rcontent_report_' . $report, new pix_icon('i/item', '')));
+            }
+        } else if (file_exists($CFG->dirroot.'/blocks/rgrade/rgrade_table.php')) {
             $rcontent = $DB->get_record('rcontent', array('id' => $PAGE->cm->instance));
             if ($rcontent->bookid) {
                 $reportnode->add_node(navigation_node::create(get_string('rgrade', 'block_rgrade'),

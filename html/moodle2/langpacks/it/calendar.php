@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['colcalendar'] = 'Calendario';
 $string['collastupdated'] = 'Aggiornamento più recente';
 $string['colpoll'] = 'Aggiornamento';
 $string['commontasks'] = 'Opzioni';
-$string['confirmeventdelete'] = 'Sei sicuro di voler eliminare questo evento?';
+$string['confirmeventdelete'] = 'Sei sicuro di eliminare l\'evento "{$a}"?';
 $string['course'] = 'Corso';
 $string['courseevent'] = 'Evento di corso';
 $string['courseevents'] = 'Eventi di corso';
@@ -71,6 +71,12 @@ $string['errorinvalidrepeats'] = 'Specifica il numero di eventi impostando un nu
 $string['errornodescription'] = 'La descrizione è richiesta';
 $string['errornoeventname'] = 'Il nome è richiesto';
 $string['errorrequiredurlorfile'] = 'Per importare un calendario è necessario un file o un URL.';
+$string['errorrrule'] = 'Il rrule sembra non corretto';
+$string['errorrruleday'] = 'Il parametro giorno del rrule non è valido';
+$string['errorrrulefreq'] = 'Il parametro frequenza del rrule non è valido';
+$string['eventcalendareventcreated'] = 'Creato evento di calendario';
+$string['eventcalendareventdeleted'] = 'Eliminato evento di calendario';
+$string['eventcalendareventupdated'] = 'Aggiornato evento di calendario';
 $string['eventdate'] = 'Data';
 $string['eventdescription'] = 'Descrizione';
 $string['eventduration'] = 'Durata';

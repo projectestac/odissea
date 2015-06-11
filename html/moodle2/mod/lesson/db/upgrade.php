@@ -36,8 +36,7 @@
  * Please do not forget to use upgrade_set_timeout()
  * before any action that may take longer time to finish.
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 o
  */
@@ -76,7 +75,66 @@ function xmldb_lesson_upgrade($oldversion) {
     // Moodle v2.6.0 release upgrade line.
     // Put any upgrade step following this.
 
+    // Moodle v2.7.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2014091001) {
+        $table = new xmldb_table('lesson');
+        $field = new xmldb_field('intro', XMLDB_TYPE_TEXT, null, null, null, null, null, 'name');
+        // Conditionally launch add field.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+        $field = new xmldb_field('introformat', XMLDB_TYPE_INTEGER, '4', XMLDB_UNSIGNED, XMLDB_NOTNULL, null, '0', 'intro');
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+        upgrade_mod_savepoint(true, 2014091001, 'lesson');
+    }
+
+    if ($oldversion < 2014100600) {
+        // Previously there was no module intro in lesson so don't require
+        // it to be filled in for upgraded sites.
+        set_config('requiremodintro', 0, 'lesson');
+        upgrade_mod_savepoint(true, 2014100600, 'lesson');
+    }
+
+    // Moodle v2.8.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2014111001) {
+
+        // Changing precision of field grade on table lesson to (10).
+        $table = new xmldb_table('lesson');
+        $field = new xmldb_field('grade', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'conditions');
+
+        // Launch change of precision for field grade.
+        $dbman->change_field_precision($table, $field);
+
+        // Lesson savepoint reached.
+        upgrade_mod_savepoint(true, 2014111001, 'lesson');
+    }
+
+    if ($oldversion < 2014111003) {
+        // Delete any orphaned lesson_branch record.
+        if ($DB->get_dbfamily() === 'mysql') {
+            $sql = "DELETE {lesson_branch}
+                      FROM {lesson_branch}
+                 LEFT JOIN {lesson_pages}
+                        ON {lesson_branch}.pageid = {lesson_pages}.id
+                     WHERE {lesson_pages}.id IS NULL";
+        } else {
+            $sql = "DELETE FROM {lesson_branch}
+               WHERE NOT EXISTS (
+                         SELECT 'x' FROM {lesson_pages}
+                          WHERE {lesson_branch}.pageid = {lesson_pages}.id)";
+        }
+
+        $DB->execute($sql);
+
+        // Lesson savepoint reached.
+        upgrade_mod_savepoint(true, 2014111003, 'lesson');
+    }
+
     return true;
 }
-
-

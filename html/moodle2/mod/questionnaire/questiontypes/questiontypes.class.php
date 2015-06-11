@@ -291,11 +291,11 @@ class questionnaire_question {
                 }
             }
         }
-        if (preg_match("/other_q([0-9]+)/", (isset($val)?$val:''), $regs)) {
+        if (preg_match("/other_q([0-9]+)/", (isset($val) ? $val : ''), $regs)) {
             $cid = $regs[1];
-            $other = optional_param('q'.$this->id.'_'.$cid, null, PARAM_CLEAN);
             if (!isset($other)) {
                 break; // Out of the case.
+                $other = optional_param('q'.$this->id.'_'.$cid, null, PARAM_CLEAN);
             }
             if (preg_match("/[^ \t\n]/", $other)) {
                 $record = new object;
@@ -422,99 +422,91 @@ class questionnaire_question {
         global $DB;
         global $CFG;
 
-        $ridstr = '';
-        if (is_array($rids)) {
-            foreach ($rids as $rid) {
-                $ridstr .= (empty($ridstr) ? ' AND response_id IN ('.$rid : ', '.$rid);
-            }
-            $ridstr .= ') ';
-        } else if (is_int($rids)) {
-            $ridstr = ' AND response_id = '.$rids.' ';
+        $rsql = '';
+        $params = array($this->id);
+        if (!empty($rids)) {
+            list($rsql, $rparams) = $DB->get_in_or_equal($rids);
+            $params = array_merge($params, $rparams);
+            $rsql = ' AND response_id ' . $rsql;
         }
+        $params[] = '';
 
-        $sql = 'SELECT choice_id, COUNT(response_id) AS num '.
-               'FROM {questionnaire_'.$this->response_table.'} '.
-               'WHERE question_id= ? '.$ridstr.' AND choice_id != ? ' .
+        $sql = 'SELECT choice_id, COUNT(response_id) AS num ' .
+               'FROM {questionnaire_' . $this->response_table . '} ' .
+               'WHERE question_id= ? ' . $rsql . ' AND choice_id != ? ' .
                'GROUP BY choice_id';
-        return $DB->get_records_sql($sql, array($this->id, ''));
+        return $DB->get_records_sql($sql, $params);
     }
 
     private function get_response_text_results($rids = false) {
         global $DB;
 
-        $ridstr = '';
-        if (is_array($rids)) {
-            foreach ($rids as $rid) {
-                $ridstr .= (empty($ridstr) ? ' AND response_id IN ('.$rid : ', '.$rid);
-            }
-            $ridstr .= ') ';
-        } else if (is_int($rids)) {
-            $ridstr = ' AND response_id = '.$rids.' ';
+        $rsql = '';
+        if (!empty($rids)) {
+            list($rsql, $params) = $DB->get_in_or_equal($rids);
+            $rsql = ' AND response_id ' . $rsql;
         }
-        $sql = 'SELECT T.id, T.response, R.submitted AS submitted, R.username, U.username AS username, '.
-                'U.id as userid, '.
-                'R.survey_id, R.id AS rid '.
-                'FROM {questionnaire_'.$this->response_table.'} T, '.
-                '{questionnaire_response} R, '.
-                '{user} U '.
-                'WHERE question_id='.$this->id.$ridstr.
-                ' AND T.response_id = R.id'.
+
+        $sql = 'SELECT T.id, T.response, R.submitted AS submitted, R.username, U.username AS username, ' .
+                'U.id as userid, ' .
+                'R.survey_id, R.id AS rid ' .
+                'FROM {questionnaire_'. $this->response_table.'} T, ' .
+                '{questionnaire_response} R, ' .
+                '{user} U ' .
+                'WHERE question_id=' . $this->id . $rsql .
+                ' AND T.response_id = R.id' .
                 ' AND U.id = ' . $DB->sql_cast_char2int('R.username') .
                 'ORDER BY U.lastname, U.firstname, R.submitted';
-        return $DB->get_records_sql($sql);
+        return $DB->get_records_sql($sql, $params);
     }
 
     private function get_response_date_results($rids = false) {
         global $DB;
 
-        $ridstr = '';
-        if (is_array($rids)) {
-            foreach ($rids as $rid) {
-                $ridstr .= (empty($ridstr) ? ' AND response_id IN ('.$rid : ', '.$rid);
-            }
-            $ridstr .= ') ';
-        } else if (is_int($rids)) {
-            $ridstr = ' AND response_id = '.$rids.' ';
+        $rsql = '';
+        $params = array($this->id);
+        if (!empty($rids)) {
+            list($rsql, $rparams) = $DB->get_in_or_equal($rids);
+            $params = array_merge($params, $rparams);
+            $rsql = ' AND response_id ' . $rsql;
         }
 
-        $sql = 'SELECT id, response '.
-               'FROM {questionnaire_'.$this->response_table.'} '.
-               'WHERE question_id= ? '.$ridstr;
+        $sql = 'SELECT id, response ' .
+               'FROM {questionnaire_' . $this->response_table . '} ' .
+               'WHERE question_id= ? ' . $rsql;
 
-        return $DB->get_records_sql($sql, array($this->id));
+        return $DB->get_records_sql($sql, $params);
     }
 
     private function get_response_single_results($rids=false) {
         global $CFG;
         global $DB;
 
-        $ridstr = '';
-        if (is_array($rids)) {
-            foreach ($rids as $rid) {
-                $ridstr .= (empty($ridstr) ? ' AND response_id IN ('.$rid : ', '.$rid);
-            }
-            $ridstr .= ') ';
-        } else if (is_int($rids)) {
-            $ridstr = ' AND response_id = '.$rids.' ';
+        $rsql = '';
+        $params = array($this->id);
+        if (!empty($rids)) {
+            list($rsql, $rparams) = $DB->get_in_or_equal($rids);
+            $params = array_merge($params, $rparams);
+            $rsql = ' AND response_id ' . $rsql;
         }
         // Added qc.id to preserve original choices ordering.
-        $sql = 'SELECT rt.id, qc.id as cid, qc.content '.
-               'FROM {questionnaire_quest_choice} qc, '.
-               '{questionnaire_'.$this->response_table.'} rt '.
-               'WHERE qc.question_id= ? AND qc.content NOT LIKE \'!other%\' AND '.
-                     'rt.question_id=qc.question_id AND rt.choice_id=qc.id'.$ridstr.' '.
+        $sql = 'SELECT rt.id, qc.id as cid, qc.content ' .
+               'FROM {questionnaire_quest_choice} qc, ' .
+               '{questionnaire_' . $this->response_table . '} rt ' .
+               'WHERE qc.question_id= ? AND qc.content NOT LIKE \'!other%\' AND ' .
+                     'rt.question_id=qc.question_id AND rt.choice_id=qc.id' . $rsql . ' ' .
                'ORDER BY qc.id';
 
-        $rows = $DB->get_records_sql($sql, array($this->id));
+        $rows = $DB->get_records_sql($sql, $params);
 
         // Handle 'other...'.
-        $sql = 'SELECT rt.id, rt.response, qc.content '.
-               'FROM {questionnaire_response_other} rt, '.
-                    '{questionnaire_quest_choice} qc '.
-               'WHERE rt.question_id= ? AND rt.choice_id=qc.id'.$ridstr.' '.
+        $sql = 'SELECT rt.id, rt.response, qc.content ' .
+               'FROM {questionnaire_response_other} rt, ' .
+                    '{questionnaire_quest_choice} qc ' .
+               'WHERE rt.question_id= ? AND rt.choice_id=qc.id' . $rsql . ' ' .
                'ORDER BY qc.id';
 
-        if ($recs = $DB->get_records_sql($sql, array($this->id))) {
+        if ($recs = $DB->get_records_sql($sql, $params)) {
             $i = 1;
             foreach ($recs as $rec) {
                 $rows['other'.$i] = new stdClass();
@@ -535,20 +527,16 @@ class questionnaire_question {
         global $CFG;
         global $DB;
 
-        $ridstr = '';
-        if (is_array($rids)) {
-            foreach ($rids as $rid) {
-                $ridstr .= (empty($ridstr) ? ' AND response_id IN ('.$rid : ', '.$rid);
-            }
-            $ridstr .= ') ';
-        } else if (is_int($rids)) {
-            $ridstr = ' AND response_id = '.$rids.' ';
+        $rsql = '';
+        if (!empty($rids)) {
+            list($rsql, $params) = $DB->get_in_or_equal($rids);
+            $rsql = ' AND response_id ' . $rsql;
         }
 
         if ($this->type_id == QUESRATE) {
             // JR there can't be an !other field in rating questions ???
             $rankvalue = array();
-            $select = 'question_id='.$this->id.' AND content NOT LIKE \'!other%\' ORDER BY id ASC';
+            $select = 'question_id=' . $this->id . ' AND content NOT LIKE \'!other%\' ORDER BY id ASC';
             if ($rows = $DB->get_records_select('questionnaire_quest_choice', $select)) {
                 foreach ($rows as $row) {
                     $this->counts[$row->content] = new stdClass();
@@ -567,12 +555,12 @@ class questionnaire_question {
             if (!$isrestricted) {
                 if (!empty ($rankvalue)) {
                     $sql = "SELECT r.id, c.content, r.rank, c.id AS choiceid
-                    FROM {$CFG->prefix}questionnaire_quest_choice c, {$CFG->prefix}questionnaire_{$this->response_table} r
+                    FROM {questionnaire_quest_choice} c, {questionnaire_{$this->response_table}} r
                     WHERE r.choice_id = c.id
-                    AND c.question_id = ".$this->id."
-                    AND r.rank >= 0{$ridstr}
+                    AND c.question_id = " . $this->id . "
+                    AND r.rank >= 0{$rsql}
                     ORDER BY choiceid";
-                    $results = $DB->get_records_sql($sql);
+                    $results = $DB->get_records_sql($sql, $params);
                     $value = array();
                     foreach ($results as $result) {
                         if (isset ($value[$result->choiceid])) {
@@ -587,11 +575,11 @@ class questionnaire_question {
                         FROM {questionnaire_quest_choice} c
                         INNER JOIN
                              (SELECT c2.id, AVG(a2.rank+1) AS average, COUNT(a2.response_id) AS num
-                              FROM {questionnaire_quest_choice} c2, {$CFG->prefix}questionnaire_{$this->response_table} a2
-                              WHERE c2.question_id = ? AND a2.question_id = ? AND a2.choice_id = c2.id AND a2.rank >= 0{$ridstr}
+                              FROM {questionnaire_quest_choice} c2, {questionnaire_{$this->response_table}} a2
+                              WHERE c2.question_id = ? AND a2.question_id = ? AND a2.choice_id = c2.id AND a2.rank >= 0{$rsql}
                               GROUP BY c2.id) a ON a.id = c.id
-                              ORDER by c.id";
-                $results = $DB->get_records_sql($sql, array($this->id, $this->id));
+                              order by c.id";
+                $results = $DB->get_records_sql($sql, array_merge(array($this->id, $this->id), $params));
                 if (!empty ($rankvalue)) {
                     foreach ($results as $key => $result) {
                         $result->averagevalue = $value[$key] / $result->num;
@@ -609,10 +597,10 @@ class questionnaire_question {
                         FROM {questionnaire_quest_choice} c
                         INNER JOIN
                              (SELECT c2.id, SUM(a2.rank+1) AS sum, COUNT(a2.response_id) AS num
-                              FROM {questionnaire_quest_choice} c2, {$CFG->prefix}questionnaire_{$this->response_table} a2
-                              WHERE c2.question_id = ? AND a2.question_id = ? AND a2.choice_id = c2.id AND a2.rank >= 0{$ridstr}
+                              FROM {questionnaire_quest_choice} c2, {questionnaire_{$this->response_table}} a2
+                              WHERE c2.question_id = ? AND a2.question_id = ? AND a2.choice_id = c2.id AND a2.rank >= 0{$rsql}
                               GROUP BY c2.id) a ON a.id = c.id";
-                $results = $DB->get_records_sql($sql, array($this->id, $this->id));
+                $results = $DB->get_records_sql($sql, array_merge(array($this->id, $this->id), $params));
                 // Formula to calculate the best ranking order.
                 $nbresponses = count($rids);
                 foreach ($results as $key => $result) {
@@ -623,11 +611,11 @@ class questionnaire_question {
                 return $results;
             }
         } else {
-            $sql = 'SELECT A.rank, COUNT(A.response_id) AS num '.
-                   'FROM {questionnaire_'.$this->response_table.'} A '.
-                   'WHERE A.question_id= ? '.$ridstr.' '.
+            $sql = 'SELECT A.rank, COUNT(A.response_id) AS num ' .
+                   'FROM {questionnaire_' . $this->response_table . '} A ' .
+                   'WHERE A.question_id= ? ' . $rsql . ' ' .
                    'GROUP BY A.rank';
-            return $DB->get_records_sql($sql, array($this->id));
+            return $DB->get_records_sql($sql, array_merge(array($this->id), $params));
         }
     }
 
@@ -940,8 +928,9 @@ class questionnaire_question {
         if ($this->type_id == QUESESSAY) {
             echo html_writer::start_tag('label', array('for' => 'edit-q' . $this->id));
         }
+        $options = array('noclean' => true, 'para' => false, 'filter' => true, 'context' => $this->context, 'overflowdiv' => true);
         echo format_text(file_rewrite_pluginfile_urls($this->content, 'pluginfile.php',
-            $this->context->id, 'mod_questionnaire', 'question', $this->id), FORMAT_HTML);
+            $this->context->id, 'mod_questionnaire', 'question', $this->id), FORMAT_HTML, $options);
         if ($this->type_id == QUESNUMERIC || $this->type_id == QUESTEXT ||
             $this->type_id == QUESESSAY || $this->type_id == QUESDROP) {
             echo html_writer::end_tag('label');
@@ -1006,7 +995,7 @@ class questionnaire_question {
 
         $options = array($val1 => $stryes, $val2 => $strno);
         $name = 'q'.$this->id;
-        $checked = (isset($data->{'q'.$this->id})?$data->{'q'.$this->id}:'');
+        $checked = (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} : '');
         $output = '';
         $ischecked = false;
 
@@ -1338,7 +1327,7 @@ class questionnaire_question {
                 $options[$value] = $choice->content;
             }
             $dependdrop = "dependdrop('$qdropid', '$descendants')";
-            echo html_writer::select($options, $qdropid, (isset($data->{'q'.$this->id})?$data->{'q'.$this->id}:''),
+            echo html_writer::select($options, $qdropid, (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} : ''),
                             array('' => 'choosedots'), array('id' => $qdropid, 'onchange' => $dependdrop));
             // End dependents.
         } else {
@@ -1349,7 +1338,7 @@ class questionnaire_question {
                 $options[$key] = $choice->content;
             }
             echo html_writer::select($options, 'q'.$this->id,
-                (isset($data->{'q'.$this->id})?$data->{'q'.$this->id}:''),
+                (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} : ''),
                 array('' => 'choosedots'), array('id' => $this->type . $this->id));
         }
     }
@@ -1502,8 +1491,8 @@ class questionnaire_question {
                         $str.'" type="radio" value="-999" '.$checked.$order.' /></td>';
                 }
                 for ($j = 0; $j < $this->length + $isna; $j++) {
-                    $checked = ((isset($data->$str) && ($j == $data->$str || $j == $this->length && $data->$str == -1))
-                                     ? ' checked="checked"' : '');
+                    $checked = ((isset($data->$str) && ($j == $data->$str || $j ==
+                                    $this->length && $data->$str == -1)) ? ' checked="checked"' : '');
                     $checked = '';
                     if (isset($data->$str) && ($j == $data->$str || $j == $this->length && $data->$str == -1)) {
                         $checked = ' checked="checked"';
@@ -1658,7 +1647,7 @@ class questionnaire_question {
     public function radio_response_display($data) {
         static $uniquetag = 0;  // To make sure all radios have unique names.
         $horizontal = $this->length;
-        $checked = (isset($data->{'q'.$this->id})?$data->{'q'.$this->id}:'');
+        $checked = (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} : '');
         foreach ($this->choices as $id => $choice) {
             if ($horizontal) {
                 echo ' <span style="white-space:nowrap;">';
@@ -1760,7 +1749,7 @@ class questionnaire_question {
         }
         echo '<div class="response drop">';
         echo html_writer::select($options, 'q'.$this->id.$uniquetag++,
-                        (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} :''));
+                        (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} : ''));
         if (isset($data->{'q'.$this->id}) ) {
             echo ': <span class="selected">'.$options[$data->{'q'.$this->id}].'</span></div>';
         }
@@ -2313,25 +2302,23 @@ class questionnaire_question {
         $nbresponses = count($rids);
         // Prepare data to be displayed.
         $isrestricted = ($this->length < count($this->choices)) && $this->precise == 2;
-        $ridstr = '';
-        if (is_array($rids)) {
-            foreach ($rids as $rid) {
-                $ridstr .= (empty($ridstr) ? ' AND response_id IN ('.$rid : ', '.$rid);
-            }
-            $ridstr .= ') ';
-        } else if (is_int($rids)) {
-            $ridstr = ' AND response_id = '.$rids.' ';
+
+        $rsql = '';
+        if (!empty($rids)) {
+            list($rsql, $params) = $DB->get_in_or_equal($rids);
+            $rsql = ' AND response_id ' . $rsql;
         }
-        $questionid = $this->id;
-        $sql = 'SELECT r.id, c.content, r.rank, c.id AS choiceid '.
-                'FROM '.$CFG->prefix.'questionnaire_quest_choice c , '.
-                $CFG->prefix.'questionnaire_response_rank r '.
-                'WHERE c.question_id = '.$questionid.
-                ' AND r.question_id = c.question_id'.
-                ' AND r.choice_id = c.id '.
-                $ridstr.
+
+        array_unshift($params, $this->id); // This is question_id.
+        $sql = 'SELECT r.id, c.content, r.rank, c.id AS choiceid ' .
+                'FROM {questionnaire_quest_choice} c , ' .
+                     '{questionnaire_response_rank} r ' .
+                'WHERE c.question_id = ?' .
+                ' AND r.question_id = c.question_id' .
+                ' AND r.choice_id = c.id ' .
+                $rsql .
                 ' ORDER BY choiceid, rank ASC';
-        $choices = $DB->get_records_sql($sql);
+        $choices = $DB->get_records_sql($sql, $params);
 
         // Sort rows (results) by average value.
         if ($sort != 'default') {

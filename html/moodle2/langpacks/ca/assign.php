@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assign', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['alwaysshowdescription'] = 'Mostra sempre la descripció';
 $string['alwaysshowdescription_help'] = 'Si està desactivat, la descripció de la tasca de dalt només serà visible a l\'estudiantat a partir de la data «Permet trameses des de».';
 $string['applytoteam'] = 'Aplica les qualificacions i la retroacció al grup sencer';
 $string['assign:addinstance'] = 'Afegeix una nova tasca';
+$string['assign:editothersubmission'] = 'Editar una tasca d\'un altre estudiant';
 $string['assign:exportownsubmission'] = 'Exporta les trameses pròpies';
 $string['assignfeedback'] = 'Connector de retroacció';
 $string['assignfeedbackpluginname'] = 'Connector de retroacció';
@@ -69,6 +70,7 @@ $string['assignsubmission'] = 'Connector de tramesa';
 $string['assignsubmissionpluginname'] = 'Connector de tramesa';
 $string['assign:submit'] = 'Tramet la tasca';
 $string['assign:view'] = 'Veure tasca';
+$string['assign:viewgrades'] = 'Mostra les qualificacions';
 $string['attemptheading'] = 'Intent {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Intents previs';
 $string['attemptnumber'] = 'Número d\'intent';
@@ -139,23 +141,36 @@ $string['editingpreviousfeedbackwarning'] = 'Esteu editant la retroacció d\'un 
 $string['editingstatus'] = 'S\'està editant l\'estat';
 $string['editsubmission'] = 'Edita la tramesa';
 $string['editsubmission_help'] = 'Feu canvis a la vostra tramesa';
+$string['editsubmissionother'] = 'Edita la tramesa per a: {$a}';
 $string['enabled'] = 'Habilitat';
 $string['errornosubmissions'] = 'No hi ha tasques per baixar';
 $string['errorquickgradingvsadvancedgrading'] = 'Les qualificacions no s\'han desat perquè aquesta tasca està emprant ara qualificacions avançades';
 $string['errorrecordmodified'] = 'Les qualificacions no s\'han desat perquè algú ha modificat un o més registres més recentment que quan carregàreu la pàgina';
-$string['event_all_submissions_downloaded'] = 'S\'estan descarregant totes les trameses.';
-$string['event_assessable_submitted'] = 'S\'ha tramès una tramesa.';
-$string['event_extension_granted'] = 'S\'ha concedit una extensió.';
-$string['event_identities_revealed'] = 'Les identitats han estat revelades.';
-$string['event_marker_updated'] = 'S\'ha actualitzat l\'avaluador assignat.';
-$string['event_statement_accepted'] = 'L\'usuari ha acceptat la declaració de la tramesa.';
-$string['event_submission_duplicated'] = 'L\'usuari ha duplicat la seva tramesa.';
-$string['event_submission_graded'] = 'La tramesa s\'ha avaluat.';
-$string['event_submission_locked'] = 'S\'han blocat les trameses de l\'usuari.';
-$string['event_submission_status_updated'] = 'S\'ha actualitzat l\'estat de la tramesa.';
-$string['event_submission_unlocked'] = 'S\'han desblocat les trameses de l\'usuari.';
-$string['event_submission_updated'] = 'L\'usuari ha desat una tramesa.';
-$string['event_workflow_state_updated'] = 'S\'ha actualitzat l\'estat del flux.';
+$string['eventallsubmissionsdownloaded'] = 'S\'estan descarregant totes les trameses.';
+$string['eventassessablesubmitted'] = 'S\'ha tramès una tramesa.';
+$string['eventbatchsetmarkerallocationviewed'] = '';
+$string['eventbatchsetworkflowstateviewed'] = '';
+$string['eventextensiongranted'] = 'S\'ha concedit una extensió.';
+$string['eventfeedbackupdated'] = 'S\'ha actualitzat la retroacció';
+$string['eventfeedbackviewed'] = 'S\'ha visualitzat la retroacció';
+$string['eventgradingformviewed'] = 'S\'ha visualitzat el formulari de qualificació';
+$string['eventgradingtableviewed'] = 'S\'ha visualitzat la taula de notes';
+$string['eventidentitiesrevealed'] = 'Les identitats han estat revelades.';
+$string['eventmarkerupdated'] = 'S\'ha actualitzat l\'avaluador assignat.';
+$string['eventrevealidentitiesconfirmationpageviewed'] = 'S\'ha visualitzat la pàgina de confirmació de revelació d\'identitats.';
+$string['eventstatementaccepted'] = 'L\'usuari ha acceptat la declaració de la tramesa.';
+$string['eventsubmissionconfirmationformviewed'] = 'S\'ha visualitzat el formulari de confirmació de la tramesa.';
+$string['eventsubmissioncreated'] = 'S\'ha creat la tramesa.';
+$string['eventsubmissionduplicated'] = 'L\'usuari ha duplicat la seva tramesa.';
+$string['eventsubmissionformviewed'] = 'S\'ha visualitzat el formulari de tramesa.';
+$string['eventsubmissiongraded'] = 'La tramesa s\'ha avaluat.';
+$string['eventsubmissionlocked'] = 'S\'han blocat les trameses de l\'usuari.';
+$string['eventsubmissionstatusupdated'] = 'S\'ha actualitzat l\'estat de la tramesa.';
+$string['eventsubmissionstatusviewed'] = 'S\'ha visualitzat l\'estat de la tasca.';
+$string['eventsubmissionunlocked'] = 'S\'han desblocat les trameses de l\'usuari.';
+$string['eventsubmissionupdated'] = 'S\'ha actualitzat la tasca.';
+$string['eventsubmissionviewed'] = 'S\'ha visualitzat la tasca.';
+$string['eventworkflowstateupdated'] = 'S\'ha actualitzat l\'estat del flux.';
 $string['extensionduedate'] = 'Data de venciment de la pròrroga';
 $string['extensionnotafterduedate'] = 'La data de venciment de la pròrroga ha de ser posterior a la data de venciment de les trameses';
 $string['extensionnotafterfromdate'] = 'La data de venciment de la pròrroga ha de ser posterior a la data inicial de les trameses';
@@ -173,6 +188,7 @@ $string['feedbacktypes'] = 'Tipus de retroacció';
 $string['filesubmissions'] = 'Fitxers de la tramesa';
 $string['filter'] = 'Filtre';
 $string['filternone'] = 'Sense filtre';
+$string['filternotsubmitted'] = 'No s\'ha tramès';
 $string['filterrequiregrading'] = 'Requereix qualificació';
 $string['filtersubmitted'] = 'S\'ha tramès';
 $string['gradeabovemaximum'] = 'La qualificació ha de ser menor o igual que {$a}.';
@@ -208,6 +224,7 @@ $string['groupsubmissionsettings'] = 'Paràmetres de la tramesa en grup';
 $string['hiddenuser'] = 'Participant';
 $string['hideshow'] = 'Mostra/Oculta';
 $string['instructionfiles'] = 'Fitxers amb instruccions';
+$string['introattachments'] = 'Arxius addicionals';
 $string['invalidfloatforgrade'] = 'La qualificació donada no es comprèn: {$a}';
 $string['invalidgradeforscale'] = 'La qualificació proporcionada no era vàlida per a l\'escala actual';
 $string['lastmodifiedgrade'] = 'Darrera modificació (qualificació)';
@@ -220,6 +237,7 @@ $string['manageassignfeedbackplugins'] = 'Gestiona els connectors de retroacció
 $string['manageassignsubmissionplugins'] = 'Gestiona els connectors de tramesa de la tasca';
 $string['marker'] = 'Avaluador';
 $string['markerfilter'] = 'Filtre d\'avaluador';
+$string['markerfilternomarker'] = 'No hi ha marcador';
 $string['markingallocation'] = 'Utilitza l\'assignació d\'avaluadors';
 $string['markingallocation_help'] = 'Si s\'habilita alhora amb el flux d\'avaluació, es podran assignar avaluadors a estudiants concrets.';
 $string['markingworkflow'] = 'Utilitza el flux d\'avaluació';
@@ -242,7 +260,7 @@ $string['markingworkflowstatereleased'] = 'Publicada';
 $string['maxattempts'] = 'Quantitat màxima d\'intents';
 $string['maxattempts_help'] = 'El nombre màxim d\'intents de trameses que pot fer un estudiant. Després que l\'estudiantat arribi a aquest nombre d\'intents, la tramesa no es podrà reobrir.';
 $string['maxgrade'] = 'Qualificació màxima';
-$string['messageprovider:assign_notification'] = 'Notificacions de la tasca';
+$string['messageprovider:assign_notification'] = 'Notificacions de tasques';
 $string['modulename'] = 'Tasca';
 $string['modulename_help'] = 'El mòdul d\'activitat tasca permet al professorat comunicar les instruccions, recollir els treballs i proporcionar qualificacions i retroacció.
 
@@ -313,6 +331,8 @@ $string['sendlatenotifications_help'] = 'Si està activat, qui qualifica (normal
 $string['sendnotifications'] = 'Notifica les trameses a qui qualifica';
 $string['sendnotifications_help'] = 'Si està activat, qui qualifica (normalment, el professorat) rep un missatge cada vegada que un estudiant envia un treball aviat, a temps o amb retard. Els mètodes de missatgeria són configurables.';
 $string['sendstudentnotifications'] = 'Notifica a l\'estudiantat';
+$string['sendstudentnotificationsdefault'] = 'Paràmetre per defecte per a "Notifica a l\'estudiantat"';
+$string['sendstudentnotificationsdefault_help'] = 'Defineix el valor per defecte de la casella de verificació "Notifica als estudiants" en el formulari de qualificació.';
 $string['sendstudentnotifications_help'] = 'Si s\'habilita aquesta opció, els estudiants rebran un missatge amb la qualificació actualitzada o la retroacció.';
 $string['sendsubmissionreceipts'] = 'Envia la confirmació de la tramesa a l\'estudiantat';
 $string['sendsubmissionreceipts_help'] = 'Aquest canvi permetrà la confirmació de la tramesa per a l\'estudiantat. L\'estudiantat rebrà una notificació cada vegada que trameti una tasca amb èxit.';
@@ -335,11 +355,21 @@ $string['submissiondrafts_help'] = 'Si està activat, l\'estudiantat haurà de f
 Si es canvia aquest paràmetre de «No» a «Sí» després que l\'estudiantat hagi tramès algun treball, la tramesa es considerarà com a definitiva.';
 $string['submissioneditable'] = 'L\'estudiant pot editar aquesta tramesa';
 $string['submissionempty'] = 'No s\'ha tramès res';
+$string['submissionlog'] = 'Estudiant: {$a->fullname}, estat: {$a->status}';
 $string['submissionnotcopiedinvalidstatus'] = 'La tramesa no s\'ha copiat perquè s\'ha editat des que es va reobrir.';
 $string['submissionnoteditable'] = 'L\'estudiant no pot editar aquesta tramesa';
 $string['submissionnotready'] = 'Aquesta tasca no està preparada per a trametre\'s:';
 $string['submissionplugins'] = 'Connectors de tramesa';
 $string['submissionreceipthtml'] = '<p>Heu realitzat una tramesa de la tasca «<i>{$a->assignment}</i>».</p><p>Podeu veure l\'estat de la vostra  <a href="{$a->url}">tramesa de tasca</a>.</p>';
+$string['submissionreceiptotherhtml'] = 'S\'ha tramès la vostra tasca
+\'<i>{$a->assignment}</i>\'.<br /><br />
+Podeu veure l\'estat de la vostra <a href="{$a->url}">tasca tramesa.</a>.';
+$string['submissionreceiptothersmall'] = 'La vostra tasca {$a->assignment} ha estat tramesa.';
+$string['submissionreceiptothertext'] = 'La vostra tasca \'{$a->assignment}\' ha estat tramesa.
+
+Podeu veure l\'estat de la tramesa:
+
+     {$a->url}';
 $string['submissionreceipts'] = 'Envia confirmacions de la tramesa';
 $string['submissionreceiptsmall'] = 'Heu realitzat la tramesa de la tasca {$a->assignment}';
 $string['submissionreceipttext'] = 'Heu realitzat una tramesa de la tasca \'{$a->assignment}\'
@@ -368,6 +398,7 @@ $string['submissiontypes'] = 'Tipus de tramesa';
 $string['submitaction'] = 'Tramet';
 $string['submitassignment'] = 'Trametre tasca';
 $string['submitassignment_help'] = 'Un cop s\'hagi tramès la tasca no podreu fer més canvis';
+$string['submitforgrading'] = 'Tramet per a qualificar';
 $string['submitted'] = 'S\'ha tramès';
 $string['submittedearly'] = 'La tasca s\'ha tramès {$a} abans del límit';
 $string['submittedlate'] = 'La tasca s\'ha tramès {$a} tard';
@@ -380,7 +411,6 @@ $string['teamsubmission'] = 'L\'estudiantat tramet en grups';
 $string['teamsubmissiongroupingid'] = 'Agrupament per als grups d\'estudiantat';
 $string['teamsubmissiongroupingid_help'] = 'Aquest és l\'agrupament que utilitzarà la tasca per trobar grups d\'estudiants. Si no s\'estableix, s\'utilitzarà el conjunt de grups per omissió.';
 $string['teamsubmission_help'] = 'Si s\'habilita els estudiants es dividiran en grups basats en el conjunt de grups per omissió o bé en un agrupament personalitzat. Una tramesa en grup serà compartida entre els membres del grup i tots els membres del grup podran veure els canvis a la tramesa que facin els altres.';
-$string['teamsubmissionstatus'] = 'Estat de la tramesa en grup';
 $string['textinstructions'] = 'Instruccions de la tasca';
 $string['timemodified'] = 'Darrera modificació';
 $string['timeremaining'] = 'Temps restant';

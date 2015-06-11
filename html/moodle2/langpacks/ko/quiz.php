@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -281,10 +281,21 @@ $string['errornotnumbers'] = '오류 - 답은 숫자라야 함';
 $string['errorunexpectedevent'] = '시도{$a->attemptid} 중  {$a->questionid} 질문에서 예기치 않은 이벤트 코드 {$a->attemptid} 발견';
 $string['essay'] = '에세이';
 $string['essayquestions'] = '논제';
+$string['eventattemptdeleted'] = '퀴즈 시도 삭제됨';
+$string['eventattemptpreviewstarted'] = '퀴즈 시도 미리보기 시작됨';
+$string['eventattemptreviewed'] = '퀴즈 시도 검토됨';
+$string['eventattemptsummaryviewed'] = '퀴즈 시도 요약 봄';
+$string['eventattemptviewed'] = '';
+$string['eventeditpageviewed'] = '퀴즈 편집 페이지 봄';
+$string['eventoverridecreated'] = '퀴즈 덮어쓰기 생성됨';
+$string['eventoverridedeleted'] = '퀴즈 덮어쓰기 삭제됨';
+$string['eventoverrideupdated'] = '퀴즈 덮어쓰기 업데이트됨';
+$string['eventquestionmanuallygraded'] = '질문 수동 채점됨';
 $string['eventquizattemptabandoned'] = '퀴즈 시도 버림';
 $string['eventquizattemptstarted'] = '퀴즈 시도 시작됨';
 $string['eventquizattemptsubmitted'] = '퀴즈 시도 제출됨';
 $string['eventquizattempttimelimitexceeded'] = '퀴즈 시도 시간 제한 초과';
+$string['eventreportviewed'] = '퀴즈 보고서 봄';
 $string['everynquestions'] = '매 {$a} 질문당';
 $string['everyquestion'] = '모든 질문';
 $string['everythingon'] = '모두 켬';
@@ -547,9 +558,8 @@ $string['qname'] = '퀴즈명';
 $string['qti'] = 'IMS QTI 형식';
 $string['qtypename'] = '형식, 퀴즈명';
 $string['question'] = '질문';
-$string['questionbankcontents'] = '질문은행 내용';
 $string['questionbankmanagement'] = '질문은행 관리';
-$string['questionbehaviour'] = '질문 진행방식';
+$string['questionbehaviour'] = '질문 작동';
 $string['questioncats'] = '질문 범주';
 $string['questiondeleted'] = '이 질문은 삭제되었습니다. 선생님에게 연락하십시오.';
 $string['questioninuse'] = '\'{$a->questionname}\' 질문은 현재 {$a->quiznames} 에서 사용되고 있습니다.<br />이 질문은 이 퀴즈나 항목에서 삭제되지 않을 것입니다.';

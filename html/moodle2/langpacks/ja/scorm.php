@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['aicchacpkeepsessiondata'] = 'AICC HACPセッションデータ';
 $string['aicchacpkeepsessiondata_desc'] = '外部AICC HACPセッションデータを保持する日数です (設定値を高くすることで、テーブル内に古いデータが一杯になりますが、デバッグには有用です)。';
 $string['aicchacptimeout'] = 'AICC HACPタイムアウト';
 $string['aicchacptimeout_desc'] = '外部AICC HACPセッションをオープンしたままにできる最大時間 (分) です。';
+$string['aiccuserid'] = 'AICC数字ユーザID渡し';
+$string['aiccuserid_desc'] = 'Moodleに比べてAICCスタンダードのユーザ名には制限が多く、半角英数字、ダッシュ (-) およびアンダースコア (_) のみ許可されます。ピリオド (.)、スペースおよびアットマーク (@) は許可されません。この設定を有効にした場合、ユーザ名の代わりにユーザIDナンバーがAICCパッケージに渡されます。';
 $string['aliasonly'] = 'リポジトリからimsmanifest.xml ファイルを選択する場合、あなたはこのファイルのエイリアス/ショートカットを使用する必要があります。';
 $string['allowapidebug'] = 'アクティブAPIデバッグおよびトレース (apidebugmaskでキャプチャマスクを設定する)';
 $string['allowtypeaicchacp'] = '外部AICC HACPを有効にする';
@@ -57,6 +59,9 @@ $string['attemptstatusentry'] = 'エントリページのみ';
 $string['attemptstatusmy'] = 'マイホームのみ';
 $string['attemptsx'] = '受験 {$a}';
 $string['attr_error'] = 'タグ {$a->tag} のアトリビュート ({$a->attr}) に不適切な値が設定されています。';
+$string['autocommit'] = '自動コミット';
+$string['autocommitdesc'] = 'SCORMパッケージがSCORMデータを保存しない場合、自動的にSCORMデータを保存します。';
+$string['autocommit_help'] = 'この設定を有効にした場合、SCORMデータは自動的にデータベースに保存されます。定期的にデータを保存しないSCORMオブジェクトに有用です。';
 $string['autocontinue'] = '自動継続';
 $string['autocontinuedesc'] = '有効にした場合、次に続く学習オブジェクトが自動できに開始動されます。そうでない場合、「続ける」ボタンが使用されます。';
 $string['autocontinue_help'] = '<p>自動継続を「Yes」にした場合、学習オブジェクトが「close communication」メソッドをコールすることで、自動的に次の利用可能な学習オブジェクトが起動されます。</p>
@@ -94,11 +99,14 @@ $string['defaultgradesettings'] = 'デフォルト評定設定';
 $string['defaultothersettings'] = 'デフォルト評定設定';
 $string['deleteallattempts'] = 'すべてのSCORM受験を削除する';
 $string['deleteattemptcheck'] = '本当にこれらの受験を完全に削除してもよろしいですか?';
+$string['deleteselected'] = '選択した受験を削除する';
 $string['deleteuserattemptcheck'] = '本当にあなたの受験すべてを完全に削除してもよろしいですか?';
 $string['details'] = 'トラック詳細';
 $string['directories'] = 'ディレクトリリンクを表示する';
 $string['disabled'] = '無効';
 $string['display'] = 'パッケージの表示';
+$string['displayactivityname'] = '活動名を表示する';
+$string['displayactivityname_help'] = 'SCORMプレイヤーの上に活動名を表示するかどうか指定します。';
 $string['displayattemptstatus'] = '受験状況を表示する';
 $string['displayattemptstatusdesc'] = 'ホームディレクトリのコース概要ブロックおよびSCORMエントリページにユーザの受験概要を表示するかどうか設定します。';
 $string['displayattemptstatus_help'] = 'このプリファレンスでは、ユーザ受験の概要をマイホーム内のコース概要ブロックまたはSCORMエントリページに表示できるようにします。';
@@ -114,6 +122,12 @@ $string['element'] = 'エレメント';
 $string['enter'] = '問題に入る';
 $string['entercourse'] = 'コースに入る';
 $string['errorlogs'] = 'エラーログ';
+$string['eventattemptdeleted'] = '受験が削除されました。';
+$string['eventinteractionsviewed'] = 'インタラクションが閲覧されました。';
+$string['eventreportviewed'] = 'レポートが閲覧されました。';
+$string['eventscolaunched'] = 'SCOが起動されました。';
+$string['eventtracksviewed'] = 'トラックが閲覧されました。';
+$string['eventuserreportviewed'] = 'ユーザレポートが閲覧されました。';
 $string['everyday'] = '毎日';
 $string['everytime'] = '毎回使用されるたびに';
 $string['exceededmaxattempts'] = 'あなたは最大受験数に到達しました。';
@@ -121,7 +135,7 @@ $string['exit'] = 'コースから抜ける';
 $string['exitactivity'] = '活動から抜ける';
 $string['expired'] = '申し訳ございません、この活動は {$a} に終了しているため、これ以上利用することはできません。';
 $string['external'] = '外部パッケージを更新するタイミング';
-$string['failed'] = '失敗';
+$string['failed'] = '不合格';
 $string['finishscorm'] = 'あなたがこのリソースの閲覧を終了した場合、{$a}';
 $string['finishscormlinkname'] = 'ここをクリックしてコースに戻ってください。';
 $string['firstaccess'] = '最初のアクセス';
@@ -134,8 +148,10 @@ $string['forcejavascript'] = 'ユーザにJavaスクリプトの有効化を強�
 $string['forcejavascript_desc'] = 'このオプションを有効にした場合 (推奨)、ユーザのブラウザでJavaスクリプトをサポートしていない場合にSCORMオブジェクトへのアクセスを防ぎます。無効にした場合、ユーザはSCORMを閲覧することはできますが、API接続が失敗するため、評定情報が保存されることはありません。';
 $string['forcejavascriptmessage'] = 'このオブジェクトを閲覧するにはJavaスクリプトが必要です。あなたのブラウザのJavaスクリプトを有効にして、再度お試しください。';
 $string['forcenewattempt'] = '新しい受験を強制する';
-$string['forcenewattemptdesc'] = '有効にした場合、SCORMパッケージは毎回新しい受験みなされます。';
-$string['forcenewattempt_help'] = 'このオプションを有効にした場合、SCORMパッケージへのアクセスすべてを新しい受験とします。';
+$string['forcenewattemptdesc'] = 'この設定では「新しい受験を開始する」チェックボックスを隠して、レビューモードを禁止します。SCORMは学生がいつでも同じ受験に戻ることを許可しますが、前回の受験に「完了」「合格」または「不合格」 が設定されていない場合、新しく受験することはできません。SCORMパッケージがこのように動作しない場合、学生は常に同じ受験に入ることになります。';
+$string['forcenewattempt_help'] = 'この設定では「新しい受験を開始する」チェックボックスを隠して、レビューモードを禁止します。
+
+SCORMは学生がいつでも同じ受験に戻ることを許可しますが、前回の受験に「完了」「合格」または「不合格」 が設定されていない場合、新しく受験することはできません。SCORMパッケージがこのように動作しない場合、学生は常に同じ受験に入ることになります。';
 $string['found'] = 'マニフェストファイルが見つかりました。';
 $string['frameheight'] = 'ステージフレームまたはウィンドウのデフォルトの高さです。';
 $string['framewidth'] = 'ステージフレームまたはウィンドウのデフォルトの幅です。';
@@ -222,6 +238,7 @@ $string['nav_help'] = 'この設定では、ナビゲーションボタンの表
 $string['navigation'] = 'ナビゲーション';
 $string['navpositionleft'] = '左からのナビゲーションボタンのポジション (ピクセル) です。';
 $string['navpositiontop'] = 'トップからのナビゲーションボタンのポジション (ピクセル) です。';
+$string['networkdropped'] = 'SCORMプレイヤーはあなたのインターネット接続が信頼できない、または中断されていることを検出しました。このSCORM活動を続ける場合、あなたの進捗が保存されない場合があります。<br />今すぐこの活動を終了して、あなたが信頼できるインターネット接続を利用できるようになった後に戻ってください。';
 $string['newattempt'] = '新しい受験を開始する';
 $string['next'] = '次へ進む';
 $string['noactivity'] = '報告内容はありません。';
@@ -285,6 +302,8 @@ $string['reviewmode'] = 'レビューモード';
 $string['rightanswer'] = '正解';
 $string['scoes'] = '学習オブジェクト';
 $string['score'] = '評点';
+$string['scorm12standard'] = 'SCORM 1.2標準モードを有効にする';
+$string['scorm12standarddesc'] = 'この設定を無効にすることにより、MoodleはSCORM 1.2仕様で許可されている以上のデータを保存できるようになります。あなたのSCORMパッケージがユーザに大量のテキスト入力を許可している場合、または大量のデータをsuspend_dataフィールドに保存する場合、この設定を無効にしてください。';
 $string['scorm:addinstance'] = '新しいSCORMパッケージを追加する';
 $string['scormclose'] = '終了日時';
 $string['scormcourse'] = '学習コース';
@@ -379,7 +398,7 @@ $string['viewallreports'] = '{$a} 件の受験レポートを表示する';
 $string['viewalluserreports'] = '{$a} 件のユーザレポートを表示する';
 $string['whatgrade'] = '複数回受験時の評点';
 $string['whatgradedesc'] = '複数受験が許可された場合、最高、平均、最初または最後に完了した受験が評定表に記録されます。';
-$string['whatgrade_help'] = '複数回の受験を許可した場合、ここでは最高、平均、最初または最後の受験のどれを評定表に記録するか設定します。最後の受験オプションには「失敗」ステータスの受験を含みません。
+$string['whatgrade_help'] = '複数回の受験を許可した場合、ここでは最高、平均、最初または最後の受験のどれを評定表に記録するか設定します。最後の受験オプションには「不合格」ステータスの受験を含みません。
 
 複数受験の処理に関するメモ:
 

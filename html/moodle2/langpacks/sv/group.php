@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['createautomaticgrouping'] = 'Skapa automatiska gruppindelningar';
 $string['creategroup'] = 'Skapa grupp';
 $string['creategrouping'] = 'Skapa gruppindelningar';
 $string['creategroupinselectedgrouping'] = 'Skapa grupp  i gruppindelning';
-$string['createingrouping'] = 'Skapa i gruppindelning';
+$string['createingrouping'] = 'Gruppindelning utifrån automatiskt skapade grupper';
 $string['createorphangroup'] = 'Skapa \'föräldralös\' grupp';
 $string['databaseupgradegroups'] = 'Versionerna för grupper är nu {$a}';
 $string['defaultgrouping'] = 'Förinställd gruppindelning';
@@ -59,6 +59,7 @@ $string['deleteselectedgroup'] = 'Ta bort markerad grupp';
 $string['editgroupingsettings'] = 'Redigera inställningar för gruppindelningar';
 $string['editgroupsettings'] = 'Redigera inställningar för grupp';
 $string['enrolmentkey'] = 'Nyckel för registrering';
+$string['enrolmentkeyalreadyinuse'] = 'Denna kursnyckel används redan för en annan grupp.';
 $string['enrolmentkey_help'] = 'En kursnyckel ger tillgång till kursen och begränsar tillträdet till de som känner till nyckeln. Om en grupp-kursnyckel används kommer användaren förutom att få tillträde till kursen även bli medlem av den här gruppen automatiskt.';
 $string['erroraddremoveuser'] = 'Fel i samband med att användare  {$a} skulle läggas till/ tas bort från grupp';
 $string['erroreditgroup'] = 'Fel i samband med skapande/uppdatering av  {$a}';
@@ -68,16 +69,26 @@ $string['errorremovenotpermitted'] = 'Du har inte behörighet att ta bort den au
 $string['errorselectone'] = 'Var snäll och välj en enskild grupp innan Du väljer det här alternativet.';
 $string['errorselectsome'] = 'Var snäll och välj en eller flera grupper innan Du väljer det här alternativet.';
 $string['evenallocation'] = 'OBS! För att fördelningen på grupper ska bli jämn så kommer det faktiska antalet medlemmar per grupp att variera i förhållande till det antal du har angivit.';
+$string['eventgroupcreated'] = 'Grupp skapad';
+$string['eventgroupdeleted'] = 'Grupp borttagen';
+$string['eventgroupingcreated'] = 'Gruppindelning skapad';
+$string['eventgroupingdeleted'] = 'Gruppindelning borttagen';
+$string['eventgroupingupdated'] = 'Gruppindelning updaterad';
+$string['eventgroupmemberadded'] = 'Gruppmedlem tillagd';
+$string['eventgroupmemberremoved'] = 'Gruppmedlem borttagen';
+$string['eventgroupupdated'] = 'Grupp uppdaterad';
 $string['existingmembers'] = 'Befintliga medlemmar: {$a}';
 $string['filtergroups'] = 'Filtrera grupper enligt:';
 $string['group'] = 'Grupp';
 $string['groupaddedsuccesfully'] = 'Grupp {$a} har lagts till framgångsrikt';
-$string['groupby'] = 'Specificera:';
+$string['groupaddedtogroupingsuccesfully'] = 'Grupp {$a->groupname} framgångsrik tillagd till gruppindelning {$a->groupingname}';
+$string['groupby'] = 'Automatiskt skapad baserad på';
 $string['groupdescription'] = 'Beskrivning av grupp';
 $string['groupinfo'] = 'Info om vald grupp';
 $string['groupinfomembers'] = 'Info om valda  medlemmar';
 $string['groupinfopeople'] = 'Info om valda personer';
 $string['grouping'] = 'Gruppindelning';
+$string['groupingaddedsuccesfully'] = 'Gruppindelning {$a} lades till framgångsrikt';
 $string['groupingdescription'] = 'Beskrivning av gruppindelning';
 $string['grouping_help'] = 'En gruppering är en samling av grupper inom en kurs. Avsikten är att olika grupperingar kan användas för olika aktiviteter i kursen, så att grupperna i t.ex. en "gruppering för samarbete" skulle användas för en grupp-wiki medan en "gruppering för diskussioner" skulle användas för en forum-aktiviteten.';
 $string['groupingname'] = 'Namn på gruppindelning';
@@ -89,30 +100,22 @@ $string['groupingsonly'] = 'Endast gruppindelningar';
 $string['groupmember'] = 'Medlem av grupp';
 $string['groupmemberdesc'] = 'Standardroll för en medlem i en grupp';
 $string['groupmembers'] = 'Gruppmedlemmar';
-$string['groupmembersonly'] = 'Endast tillgänglig för gruppmedlemmar';
-$string['groupmembersonlyerror'] = 'Du måste tyvärr vara medlem i åtminstone en grupp som används i den här aktiviteten.';
-$string['groupmembersonly_help'] = 'Om alternativet är ikryssat kommer aktiviteten (eller resursen) endast vara tillgänglig för studenter som tillhör grupper inom den valda grupperingen.';
 $string['groupmemberssee'] = 'Se gruppmedlemmar';
 $string['groupmembersselected'] = 'Medlemmar i vald grupp';
 $string['groupmode'] = 'Gruppläge';
 $string['groupmodeforce'] = 'Framtvinga gruppläge';
 $string['groupmodeforce_help'] = 'Om gruppläge är tvingande, kommer gruppläge att tillämpas på varje aktivitet i kursen. Gruppinställningar för varje enskild aktivitet kommer då att ignoreras.';
-$string['groupmode_help'] = 'Du kan g&ouml;ra indelningar i grupper p&aring; f&ouml;ljande tre s&auml;tt:
-   <ul>
-      <li><b>Inga grupper</b> - det finns inga subgrupper utan alla tillh&ouml;r samma stora gemenskap (ung. klass).</li>
-      <li><b>Separata grupper</b> - deltagarna i varje grupp kan bara se sin egen grupp, &ouml;vriga grupper &auml;r dolda.</li>
-      <li><b>Synliga grupper</b>  - deltagarna i varje grupp arbetar i sin egen grupp men de kan ocks&aring; se de andra grupperna.</li>
-   </ul>
-<p>Gruppindelningen kan definieras p&aring; tv&aring; niv&aring;er:</p>
-<dl>
-   <dt><b>1. Kursniv&aring;</b></dt>
-   <dd>Gruppindelningen definieras p&aring; kursniv&aring; vilket &auml;r standardinst&auml;llningen f&ouml;r alla aktiviteter p&aring; den kursen.
-    <br /><br /></dd>
-   <dt><b>2. Aktivitetsniv&aring;</b></dt>
-   <dd>Varje enskild aktivitet som st&ouml;djer grupper kan ocks&aring; delas upp s&aring; att flera olika grupper arbetar med samma aktivitet.
-   Om kursen &auml;r inst&auml;lld f&ouml;r "<a href="help.php?module=moodle&file=groupmodeforce.html">Obligatorisk indelning i grupper</a>" d&aring; kommer
-   inst&auml;llningen f&ouml;r varje enskild aktivitet att bli ogiltig.</dd>
-</dl>';
+$string['groupmode_help'] = 'Du kan göra inställningen på följande tre sätt:
+
+* Inga grupper - det finns inga undergrupper utan alla tillhör samma klass
+
+* Separata/olika grupper - deltagarna i varje grupp kan bara se sin egen grupp, övriga grupper är dolda
+
+*Synliga grupper - deltagarna i varje grupp arbetar i sin egen grupp men de kan också se de andra grupperna.
+
+De inställningar som väljs för grupper på kursnivå blir standardinställningen för kursens alla enskilda aktiviteter som använder sig av grupper (Inställningar för grupp i enskild aktivitet ignorerar systemet i så fall)
+
+Om man vill definiera inställningar för grupp för enskild aktivitet så är det viktigt att välja inställningen i den enskilda aktiviteten och inte på kursnivå.';
 $string['groupmy'] = 'Min grupp';
 $string['groupname'] = 'Group name';
 $string['groupnameexists'] = 'Gruppnamnet \'{$a}\' finns redan i den här kursen, var snäll och välj en annan,';
@@ -183,10 +186,12 @@ bilden kommer att formas om till en kvadrat och skalas ner till en storlek av
 har &auml;ndrats. Om det skulle vara s&aring; beh&ouml;ver Du bara anv&auml;nda funktionen
 \'Ladda om sidan\' i Din webbl&auml;sare.</p>';
 $string['noallocation'] = 'Ingen fördelning';
+$string['nogrouping'] = 'Ingen gruppindelning';
 $string['nogroups'] = 'Det finns ingen uppsättning av grupper i den här kursen ännu.';
 $string['nogroupsassigned'] = 'Det har inte tilldelats några grupper';
 $string['nopermissionforcreation'] = 'Det går inte att skapa grupp \'{$a}\' eftersom Du inte har de rättigheter som krävs.';
 $string['nosmallgroups'] = 'Förhindra den sista lilla gruppen';
+$string['notingroup'] = 'Ignorera användare i grupper';
 $string['notingrouping'] = '[Inte i gruppindelning]';
 $string['nousersinrole'] = 'Det finns inga lämpliga användare i den valda rollen';
 $string['number'] = 'Räkning av grupper/medlemmar';
@@ -203,7 +208,9 @@ $string['removegroupfromselectedgrouping'] = 'Ta bort grupp från gruppindelning
 $string['removegroupingsmembers'] = 'Ta bort alla grupper från gruppindelningarna';
 $string['removegroupsmembers'] = 'Ta bort alla medlemmar i grupp';
 $string['removeselectedusers'] = 'Ta bort de markerade användarna';
-$string['selectfromrole'] = 'Välj medlem från roll';
+$string['selectfromgroup'] = 'Välj medlem från gruppen';
+$string['selectfromgrouping'] = 'Välj medlemmar från gruppindelning';
+$string['selectfromrole'] = 'Välj medlemmar med roll';
 $string['showgroupsingrouping'] = 'Visa grupper i gruppindelning';
 $string['showmembersforgroup'] = 'Visa medlemmar i grupp';
 $string['toomanygroups'] = 'Otillräckligt antal användare för att fylla upp det här antalet grupper - det finns bara {$a} användare i den valda rollen.';

@@ -325,26 +325,14 @@ Y.extend(DRAGBLOCK, M.core.dragdrop, {
     }
 });
 
-/**
- * Core namespace.
- * @static
- * @class core
- */
 M.core = M.core || {};
-
-/**
- * Block drag and drop static class.
- * @namespace M.core
- * @class blockdraganddrop
- * @static
- */
 M.core.blockdraganddrop = M.core.blockdraganddrop || {};
 
 /**
  * True if the page is using the new blocks methods.
  * @private
  * @static
- * @property _isusingnewblocksmethod
+ * @property M.core.blockdraganddrop._isusingnewblocksmethod
  * @type Boolean
  * @default null
  */
@@ -353,7 +341,7 @@ M.core.blockdraganddrop._isusingnewblocksmethod = null;
 /**
  * Returns true if the page is using the new blocks methods.
  * @static
- * @method is_using_blocks_render_method
+ * @method M.core.blockdraganddrop.is_using_blocks_render_method
  * @return Boolean
  */
 M.core.blockdraganddrop.is_using_blocks_render_method = function() {
@@ -372,7 +360,7 @@ M.core.blockdraganddrop.is_using_blocks_render_method = function() {
  * Initialises a drag and drop manager.
  * This should only ever be called once for a page.
  * @static
- * @method init
+ * @method M.core.blockdraganddrop.init
  * @param {Object} params
  * @return Manager
  */
@@ -386,7 +374,7 @@ M.core.blockdraganddrop.init = function(params) {
     }
 };
 
-/**
+/*
  * Legacy code to keep things working.
  */
 M.core_blocks = M.core_blocks || {};

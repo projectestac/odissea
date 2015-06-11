@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,6 @@ Una página puede ser utilizada para
  * Dar a conocer los términos y condiciones de un curso o el programa de la asignatura
 * Para incrustar varios vídeos o archivos de sonido, junto con un texto explicativo';
 $string['modulenameplural'] = 'Páginas';
-$string['neverseen'] = 'Nunca visto';
 $string['optionsheader'] = 'Mostrar opciones';
 $string['page:addinstance'] = 'Añadir un nuevo recurso de página';
 $string['page-mod-page-x'] = 'Cualquier página del recurso Página';
@@ -56,5 +55,7 @@ $string['popupheight'] = 'Altura de las ventanas emergentes (en pixels)';
 $string['popupheightexplain'] = 'Especifica la altura predeterminada de ventanas emergentes.';
 $string['popupwidth'] = 'Anchura de las ventanas emergentes (en pixels)';
 $string['popupwidthexplain'] = 'Especifica la anchura por defecto de ventanas emergentes.';
+$string['printheading'] = 'Mostrar el nombre de la página';
+$string['printheadingexplain'] = 'Mostrar el nombre de la página por encima del contenido?';
 $string['printintro'] = 'Mostrar la descripción de la página';
 $string['printintroexplain'] = '¿Mostrar la descripción de la página encima del contenido?';

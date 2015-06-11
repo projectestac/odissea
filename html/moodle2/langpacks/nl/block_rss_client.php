@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['clientshowchannellinklabel'] = 'Wil je dat er een link naar de oorspron
 $string['clientshowimagelabel'] = 'Toon een kanaalafbeelding als die beschikbaar is:';
 $string['configblock'] = 'Configureer dit blok';
 $string['couldnotfindfeed'] = 'Kon geen RSS-feed vinden met dit id';
+$string['couldnotfindloadrssfeed'] = 'Kon RSS-feed niet vinden of niet laden.';
 $string['customtitlelabel'] = 'Aangepaste titel (laat leeg als je de titel wil gebruiken die met de feed verstuurd wordt):';
 $string['deletefeedconfirm'] = 'Ben je er zeker van dat je deze RSS-feed wil verwijderen?';
 $string['disabledrssfeeds'] = 'RSS-feeds zijn uitgeschakeld';

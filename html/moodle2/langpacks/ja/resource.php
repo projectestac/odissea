@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,6 @@ $string['modulename_help'] = 'ファイルモジュールにおいて、教師�
 * コースリソースとしてミニウェブサイトを含むため
 * 特定のソフトウェアプログラムの下書きファイル (例 Photoshop .psd) を提供して、学生が編集および評価のために提出できるようにするため';
 $string['modulenameplural'] = 'ファイル';
-$string['neverseen'] = '未確認';
 $string['notmigrated'] = '申し訳ございません、このレガシーリソースタイプ ({$a}) は、まだ移行されていません。';
 $string['optionsheader'] = '表示オプション';
 $string['page-mod-resource-x'] = 'すべてのファイルモジュールページ';

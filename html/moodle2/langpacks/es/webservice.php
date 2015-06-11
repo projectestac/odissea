@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,14 +86,15 @@ $string['errorcoursecontextnotvalid'] = 'No puede ejecutar funciones en el conte
 $string['errorinvalidparam'] = 'El parámetro "{$a}" no es válido.';
 $string['errornotemptydefaultparamarray'] = 'El parámetro de descripción de servicio web llamado \'{$a}\' es una estructura sencilla o múltiple. Por defecto solamente puede ser un arreglo vacío. Revise la descripción del servicio web.';
 $string['erroroptionalparamarray'] = 'La descripción del parámetro de servicio web llamado \'{$a}\' es una estructura sencilla o múltiple. No puede configurarse como VALUE_OPTIONAL. Revise la descripción de los servicios web';
-$string['event_webservice_function_called'] = 'Llamada a la función de servicio web';
-$string['event_webservice_login_failed'] = 'Fallo en el login del servicio web';
-$string['event_webservice_service_created'] = 'Servicio de "web service" creado';
-$string['event_webservice_service_updated'] = 'Servicio de "web service" actualizado';
-$string['event_webservice_service_user_added'] = 'Usuario del servicio "web service" añadido';
-$string['event_webservice_service_user_removed'] = 'Usuario del servicio "web service" eliminado';
-$string['event_webservice_token_created'] = 'Token de "web service" creado';
-$string['event_webservice_token_sent'] = 'Token de "web service" enviado';
+$string['eventwebservicefunctioncalled'] = 'Llamada a la función del "web service"';
+$string['eventwebserviceloginfailed'] = 'El acceso al "web service" ha fallado';
+$string['eventwebserviceservicecreated'] = 'El servicio del "web service" ha sido creado';
+$string['eventwebserviceservicedeleted'] = 'El servicio del "web service" ha sido borrado';
+$string['eventwebserviceserviceupdated'] = 'El servicio del "web service" ha sido actualizado';
+$string['eventwebserviceserviceuseradded'] = 'El servicio de usuario del "web service" ha sido añadido';
+$string['eventwebserviceserviceuserremoved'] = 'servicio de usuario del "web service" ha sido borrado';
+$string['eventwebservicetokencreated'] = 'El token del "web service" ha sido creado';
+$string['eventwebservicetokensent'] = 'El token del "web service" ha sido enviado';
 $string['execute'] = 'Ejecutar';
 $string['executewarnign'] = 'ADVERTENCIA: Si pulsa "ejecutar" su base de datos será modificada. Los cambios no se puede revertir automáticamente';
 $string['externalservice'] = 'Servicio externo';
@@ -178,6 +179,7 @@ $string['serviceusers'] = 'Usuarios autorizados';
 $string['serviceusersettings'] = 'Ajustes de usuario';
 $string['serviceusersmatching'] = 'Usuarios autorizados concordantes';
 $string['serviceuserssettings'] = 'Cambiar ajustes para usuarios autorizados';
+$string['shortnametaken'] = 'Nombre corto ya usado por otro servicio ({$a})';
 $string['simpleauthlog'] = 'Acceso por identificación simple';
 $string['step'] = 'Pasos';
 $string['supplyinfo'] = 'Más detalles';

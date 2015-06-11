@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_capability', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['capabilitylabel'] = 'Privilegio:';
 $string['capabilityreport'] = 'Report dei privilegi';
 $string['changeoverrides'] = 'Cambia le modifiche in questo contesto';
 $string['changeroles'] = 'Modifica le definizioni del ruolo';
+$string['eventreportviewed'] = 'Visualizzato report';
 $string['forroles'] = 'Per il ruolo {$a}';
 $string['getreport'] = 'Visualizza il report';
 $string['intro'] = 'Questo report consente la visualizzazione dello stato di un dato privilegio all\'interno della definizione dei ruoli. Il report consente anche di visualizzare in quali parti del sito è stato modificato il ruolo.';

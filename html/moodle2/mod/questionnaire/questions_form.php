@@ -60,9 +60,14 @@ class questionnaire_questions_form extends moodleform {
         if (!($qtypes = $DB->get_records_select_menu('questionnaire_question_type', $select, null, '', 'typeid,type'))) {
             $qtypes = array();
         }
-        // Needed for non-English languages.
+        // Get the names of each question type in the appropriate language.
         foreach ($qtypes as $key => $qtype) {
-            $qtypes[$key] = questionnaire_get_type($key);
+            // Do not allow "Page Break" to be selected as first element of a Questionnaire. 
+            if (empty($questionnaire->questions) && ($qtype == 'Page Break')) {
+                unset($qtypes[$key]);
+            } else {
+                $qtypes[$key] = questionnaire_get_type($key);
+            }
         }
         natsort($qtypes);
         $addqgroup = array();
@@ -120,6 +125,18 @@ class questionnaire_questions_form extends moodleform {
             }
 
             $pos = $question->position;
+
+            // No page break in first position!
+            if ($tid == QUESPAGEBREAK && $pos == 1) {
+                $DB->set_field('questionnaire_question', 'deleted', 'y', array('id' => $qid, 'survey_id' => $sid));
+                if ($records = $DB->get_records_select('questionnaire_question', $select, null, 'position ASC')) {
+                    foreach ($records as $record) {
+                        $DB->set_field('questionnaire_question', 'position', $record->position - 1, array('id' => $record->id));
+                    }
+                }
+                redirect($CFG->wwwroot.'/mod/questionnaire/questions.php?id='.$questionnaire->cm->id);
+            }
+            
             if ($tid != QUESPAGEBREAK && $tid != QUESSECTIONTEXT) {
                 $qnum++;
             }

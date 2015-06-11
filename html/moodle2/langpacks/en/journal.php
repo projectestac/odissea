@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'journal', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,9 +29,17 @@ $string['accessdenied'] = 'Access denied';
 $string['alwaysopen'] = 'Always open';
 $string['blankentry'] = 'Blank entry';
 $string['daysavailable'] = 'Days available';
+$string['deadline'] = 'Days Open';
 $string['editingended'] = 'Editing period has ended';
 $string['editingends'] = 'Editing period ends';
 $string['entries'] = 'Entries';
+$string['entry'] = 'Entry';
+$string['evententriesviewed'] = 'Journal entries viewed';
+$string['evententryupdated'] = 'Journal entry updated';
+$string['eventfeedbackupdated'] = 'Journal feedback updated';
+$string['eventjournalcreated'] = 'Journal created';
+$string['eventjournaldeleted'] = 'Journal deleted';
+$string['eventjournalviewed'] = 'Journal viewed';
 $string['feedbackupdated'] = 'Feedback updated for {$a} entries';
 $string['gradeingradebook'] = 'Current grade in gradebook';
 $string['journal:addentries'] = 'Add journal entries';
@@ -53,7 +61,9 @@ $string['modulename'] = 'Journal';
 $string['modulename_help'] = 'The journal activity enables teachers to obtain students feedback
 about a specific topic';
 $string['modulenameplural'] = 'Journals';
+$string['needsregrade'] = 'Entry has changed since last feedback was saved.';
 $string['newjournalentries'] = 'New journal entries';
+$string['nodeadline'] = 'Always open';
 $string['noentriesmanagers'] = 'There are no teachers';
 $string['noentry'] = 'No entry';
 $string['noratinggiven'] = 'No rating given';

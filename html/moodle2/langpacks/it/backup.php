@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,7 +118,6 @@ $string['errorinvalidformat'] = 'Formato backup sconosciuto';
 $string['errorinvalidformatinfo'] = 'Il file selezionato non è un file di backup Moodle valido e non può essere ripristinato.';
 $string['errorminbackup20version'] = 'Questo file di backup è stato creato con una versione di sviluppo del backup di Moodle ({$a->backup}). La versione minima dalla quale è possibile ripristinare è la {$a->min}.';
 $string['errorrestorefrontpage'] = 'Non è consentito ripristinare sovrascrivendo l\'home page';
-$string['errortgznozlib'] = 'Il file selezionato è nel nuovo formato di backup e non può essere ripristinato poiché l\'estensione PHP zlib non è disponibile su questo sistema.';
 $string['executionsuccess'] = 'Il file di backup è stato creato correttamente. ';
 $string['filealiasesrestorefailures'] = 'Errori nel ripristino di alias';
 $string['filealiasesrestorefailures_help'] = 'Gli alias sono link simbolici a file, tra cui i file memorizzati in repository esterni. In alcuni casi Moodle non può ripristinarli, ad esempio nel caso in cui si tenti di ripristinare backup provenienti da altri siti oppure quando il file collegato non esiste.
@@ -166,6 +165,7 @@ $string['includeditems'] = 'Elementi inclusi:';
 $string['includefilereferences'] = 'File collegati a contenuti esterni';
 $string['includesection'] = 'Sezione {$a}';
 $string['includeuserinfo'] = 'Dati utente';
+$string['jumptofinalstep'] = 'Salta al passo finale';
 $string['locked'] = 'Bloccato';
 $string['lockedbyconfig'] = 'L\' impostazione è bloccata dalle impostazioni di default';
 $string['lockedbyhierarchy'] = 'Bloccato da dipendenze';
@@ -257,10 +257,11 @@ $string['skiphiddenhelp'] = 'Consente di escludere dal backup i corsi nascosti';
 $string['skipmodifdays'] = 'Salta i corsi non modificati per';
 $string['skipmodifdayshelp'] = 'Consente di escludere dal backup i corsi non modificati per un dato numero di giorni.';
 $string['skipmodifprev'] = 'Salta i corsi non modificati dall\'ultimo backup';
-$string['skipmodifprevhelp'] = 'Consente di escludere dal backup i corsi non modificati dalla data del backup più recente';
+$string['skipmodifprevhelp'] = 'Consente di escludere dal backup i corsi non modificati dalla data del backup più recente. Richiede l\'abilitazione del logging.';
 $string['storagecourseandexternal'] = 'Area backup del corso e una cartella specifica';
 $string['storagecourseonly'] = 'Area backup del corso';
 $string['storageexternalonly'] = 'Una cartella specifica, dove salvare i backup automatici';
+$string['timetaken'] = 'Tempo impiegato';
 $string['title'] = 'Titolo';
 $string['totalcategorysearchresults'] = 'Totale categorie: {$a}';
 $string['totalcoursesearchresults'] = 'Totale corsi: {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'forum', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,8 @@ $string['cannotupdatepost'] = 'No puede actualizar este mensaje';
 $string['cannotviewpostyet'] = 'No puede leer las preguntas de otros estudiantes en esta discusión porque usted aún no ha enviado mensajes';
 $string['cannotviewusersposts'] = 'No hay aportaciones realizadas por este usuario que usted pueda ver.';
 $string['cleanreadtime'] = 'Hora para marcar mensajes antiguos como leídos';
+$string['clicktosubscribe'] = 'Usted no está suscrito a esta discusión. Haga clic aquí para suscribirse.';
+$string['clicktounsubscribe'] = 'Usted está suscrito a este debate. Haga clic para cancelar la suscripción.';
 $string['completiondiscussions'] = 'El usuario debe crear debates::';
 $string['completiondiscussionsgroup'] = 'Requerir debates';
 $string['completiondiscussionshelp'] = 'se requieren debates para completar';
@@ -115,6 +117,7 @@ $string['delete'] = 'Borrar';
 $string['deleteddiscussion'] = 'El tema se ha borrado';
 $string['deletedpost'] = 'El mensaje se ha borrado';
 $string['deletedposts'] = 'Los mensajes han sido borrados';
+$string['deleteoriginalonreply'] = 'Si responde directamente a través del correo electrónico, por favor no incluya una copia del mensaje que se cita';
 $string['deletesure'] = '¿Está seguro de que desea borrar este mensaje?';
 $string['deletesureplural'] = '¿Está seguro de que desea borrar este mensaje y todas las réplicas? ({$a} mensajes)';
 $string['digestmailheader'] = 'Éste es su resumen diario por correo de los nuevos mensajes de los foros de {$a->sitename}. Si desea cambiar sus preferencias de foro por correo, hágalo en {$a->userprefs}.';
@@ -125,10 +128,12 @@ $string['digestmailtime'] = 'Hora para enviar los mensajes resumen';
 $string['digestsentusers'] = 'Resúmenes de correo enviados con éxito a {$a} usuarios.';
 $string['disallowsubscribe'] = 'No se permiten suscripciones';
 $string['disallowsubscribeteacher'] = 'No se permiten suscripciones (excepto para profesores)';
+$string['disallowsubscription'] = 'Suscripción';
 $string['discussion'] = 'Tema';
 $string['discussionmoved'] = 'Este tema se ha movido a \'{$a}\'.';
 $string['discussionmovedpost'] = 'Esta discusión ha sido trasladada a <a href="{$a->discusshref}">aquí</a> en el foro <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Denominación';
+$string['discussionnowsubscribed'] = '{$a->name}  recibirá notificación de nuevas aportaciones en \'{$a->discussion}\' de\'{$a->forum}\'';
 $string['discussions'] = 'Debates';
 $string['discussionsstartedby'] = 'Debate comenzado por {$a}';
 $string['discussionsstartedbyrecent'] = 'Debate recientemente comenzado por {$a}';
@@ -148,13 +153,31 @@ $string['editedby'] = 'Editado por {$a->name} - envío original {$a->date}';
 $string['editedpostupdated'] = '{$a} mensajes actualizados';
 $string['editing'] = 'Editando';
 $string['emaildigest_0'] = 'Recibirás un e-mail por cada mensaje del foro.';
+$string['emaildigest_1'] = 'Recibirá un resumen de correo diario con el contenido completo de cada mensaje del foro';
+$string['emaildigest_2'] = 'Recibirá un resumen de correo diario con el asunto de cada mensaje del foro';
 $string['emaildigestcompleteshort'] = 'Mensajes completos';
 $string['emaildigestdefault'] = 'Por defecto ({$a})';
+$string['emaildigestoffshort'] = 'Sin resumen';
+$string['emaildigesttype'] = 'Opciones de resumen de correo';
+$string['emaildigesttype_help'] = 'Tipo de notificación que recibirá de cada foro:
+
+* Por defecto - Sigue los ajustes de resumen de correo de su perfil de usuario. Si actualiza su perfil, los cambios se verán reflejados también aquí;
+* Sin resumen - Recibirá un correo por cada mensaje del foro;
+* Resumen - mensajes completos- Recibirá un resumen de correo diario con el contenido completo de cada mensaje del foro;
+* Resumen - sólo asunto- Recibirá un resumen de correo diario sólo con el asunto de cada mensaje del foro.';
+$string['emaildigestupdated'] = 'El tipo de resumen de correo ha sido cambiado a  \'{$a->maildigesttitle}\' para el foro \'{$a->forum}\'. {$a->maildigestdescription}';
+$string['emaildigestupdated_default'] = 'Sus ajustes de perfil por defecto para \'{$a->maildigesttitle}\' han sido usados para el foro \'{$a->forum}\'. {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Algo va mal con su mensaje. Tal vez lo haya enviado en blanco o el archivo adjunto, si lo hay, es demasiado grande. Sus cambios NO se han guardado.';
 $string['erroremptymessage'] = 'El mensaje no puede estar vacío';
 $string['erroremptysubject'] = 'El asunto del mensaje no puede estar vacío.';
 $string['errorenrolmentrequired'] = 'Es necesario estar matriculado en este curso para poder acceder al contenido.';
 $string['errorwhiledelete'] = 'Ha ocurrido un error al eliminar el registro';
+$string['eventdiscussionupdated'] = 'Discusión actualizada';
+$string['eventpostcreated'] = 'Mensaje creado';
+$string['eventpostdeleted'] = 'Mensaje borrado';
+$string['eventpostupdated'] = 'Mensaje actualizado';
+$string['eventsubscriptioncreated'] = 'Suscripción activada';
+$string['eventsubscriptiondeleted'] = 'Suscripción anulada';
 $string['everyonecanchoose'] = 'Todos pueden suscribirse';
 $string['everyonecannowchoose'] = 'Ahora cualquiera puede elegir si se suscribe';
 $string['everyoneisnowsubscribed'] = 'Ahora todos están suscritos a este foro';
@@ -163,7 +186,8 @@ $string['existingsubscribers'] = 'Suscriptores existentes';
 $string['exportdiscussion'] = 'Exportar el debate completo';
 $string['forcedreadtracking'] = 'Permitir forzar el rastreo de lectura';
 $string['forcedreadtracking_desc'] = 'Permite que en los foros se establezca forzar el rastreo de lectura. Dará como resultado una disminución del rendimiento para algunos usuarios, sobre todo en cursos con muchos foros y mensajes. Cuando está deshabilitado, los foros establecidos previamente en Siempre se tratarán como opcional.';
-$string['forcessubscribe'] = 'Este foro fuerza la suscripción de todos';
+$string['forcesubscribed'] = 'Este foro fuerza la suscripción de todos';
+$string['forcesubscribed_help'] = 'Este foro se ha configurado de manera que usted no puede darse de baja de las discusiones.';
 $string['forum'] = 'Foro';
 $string['forum:addinstance'] = 'Añadir un nuevo foro';
 $string['forum:addnews'] = 'Añadirr noticias';
@@ -221,6 +245,7 @@ $string['intronews'] = 'Novedades y anuncios';
 $string['introsocial'] = 'Foro abierto a todos los temas';
 $string['introteacher'] = 'Foro exclusivo para profesores';
 $string['invalidaccess'] = 'No se ha accedido correctamente a esta página';
+$string['invaliddigestsetting'] = 'Se ha proporcionado un ajuste de resumen de correo no válido';
 $string['invaliddiscussionid'] = 'El ID de la discusión es incorrecto o ya no existe';
 $string['invalidforcesubscribe'] = 'Modo de suscripción forzada no válido';
 $string['invalidforumid'] = 'El ID del foro es incorrecto';
@@ -279,6 +304,7 @@ $string['namenews_help'] = 'El foro Novedades es un foro especial para anuncios 
 $string['namesocial'] = 'Foro social';
 $string['nameteacher'] = 'Foro de profesores';
 $string['newforumposts'] = 'Nuevos mensajes en foros';
+$string['nextdiscussiona'] = 'Nuevo debate: {$a}';
 $string['noattachments'] = 'No hay archivos adjuntos a este mensaje';
 $string['nodiscussions'] = 'Aún no hay temas en este foro';
 $string['nodiscussionsstartedby'] = '{$a} no ha comenzado ningún debate';
@@ -302,6 +328,7 @@ $string['notingroup'] = 'Lo sentimos, pero debe formar parte del grupo para pode
 $string['notinstalled'] = 'El módulo foro no está instalado';
 $string['notpartofdiscussion'] = 'Este mensaje no es parte de ningún debate';
 $string['notrackforum'] = 'No rastrear mensajes no leídos';
+$string['notsubscribed'] = 'Suscribir';
 $string['noviewdiscussionspermission'] = 'No dispone de permiso para ver los debates de este foro';
 $string['nowallsubscribed'] = 'Todos los foros en {$a} están suscritos.';
 $string['nowallunsubscribed'] = 'Todos los foros en {$a} están dados de baja.';
@@ -313,9 +340,6 @@ $string['numposts'] = '{$a} mensajes';
 $string['olderdiscussions'] = 'Mensajes anteriores';
 $string['oldertopics'] = 'Temas antiguos';
 $string['oldpostdays'] = 'Leer después de días';
-$string['openmode0'] = 'Ni debates, ni réplicas';
-$string['openmode1'] = 'No se pueden colocar debates, sólo réplicas';
-$string['openmode2'] = 'Permitir nuevos debates y réplicas';
 $string['overviewnumpostssince'] = '{$a} mensajes desde la última entrada';
 $string['overviewnumunread'] = '{$a} mensajes no leídos';
 $string['page-mod-forum-discuss'] = 'Página de hilo de discusión del módulo foro';
@@ -342,6 +366,7 @@ $string['postsmadebyuserincourse'] = 'Aportación realizada por {$a->fullname} e
 $string['posttoforum'] = 'Enviar al foro';
 $string['postupdated'] = 'Su mensaje se ha actualizado';
 $string['potentialsubscribers'] = 'Suscriptores potenciales';
+$string['prevdiscussiona'] = 'Debate anterior: {$a}';
 $string['processingdigest'] = 'Procesando el resumen por correo para el usuario {$a}';
 $string['processingpost'] = 'Procesando {$a}';
 $string['prune'] = 'Dividir';
@@ -356,7 +381,11 @@ $string['repliesmany'] = '{$a} réplicas';
 $string['repliesone'] = '{$a} respuesta';
 $string['reply'] = 'Responder';
 $string['replyforum'] = 'Responder al foro';
+$string['reply_handler'] = 'Responder a los mensajes en el foro vía correo electrónico';
+$string['replytoforumpost'] = 'Puede responder a este mensaje directamente desde el correo electrónico. Se publicará una copia del mensaje en el foro original.';
+$string['replytopostbyemail'] = 'Si responde directamente a través del correo electrónico, por favor no incluya una copia del mensaje que se cita';
 $string['replytouser'] = 'Usar dirección email en réplica';
+$string['resetdigests'] = 'Borrar todas las preferencias de resumen de correo de usuarios';
 $string['resetforums'] = 'Eliminar mensajes de';
 $string['resetforumsall'] = 'Eliminar todos los mensajes';
 $string['resetsubscriptions'] = 'Eliminar todas las suscripciones al foro';
@@ -451,6 +480,7 @@ $string['unsubscribeallconfirm'] = 'En este momento está suscrito a {$a} foros.
 $string['unsubscribealldone'] = 'Se han eliminado todas sus suscripciones opcionales a los foros. Aun así, podría seguir recibiendo notificaciones de foros con suscripción forzosa. Para gestionar las notificaciones de los foros, vaya a Mensajería en los Ajustes de su Perfil.';
 $string['unsubscribeallempty'] = 'No está suscrito a ningún foro. Si desea desactivar todas las notificaciones de este servidor, vaya a Mensajería en los Ajustes de su Perfil.';
 $string['unsubscribed'] = 'No suscrito';
+$string['unsubscribediscussion'] = 'Darse de baja de esta discusión';
 $string['unsubscribeshort'] = 'Dar de baja';
 $string['usermarksread'] = 'Marcar lectura de mensaje manual';
 $string['viewalldiscussions'] = 'Ver todos los debates';

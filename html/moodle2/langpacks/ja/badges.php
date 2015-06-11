@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,8 +55,12 @@ $string['anymethodactivity'] = '選択した活動のいずれかを完了する
 $string['anymethodcourseset'] = '選択したコースのいずれかを完了する';
 $string['anymethodmanual'] = '選択したロールのいずれかがバッジを授与する';
 $string['anymethodprofile'] = '選択したプロファイルフィールドのいずれかを完了する';
+$string['archivebadge'] = 'バッジ「 {$a} 」を削除して、既存の発行済みバッジを保持しますか?';
+$string['archiveconfirm'] = '削除および既存の発行済みバッジを保持する';
+$string['archivehelp'] = '<p>このオプションはバッジが「引退」してバッジ一覧に表示されなくなることを意味します。ユーザはこのバッジを取得できないようになりますが、既存のバッジ取得者はプロファイルページにこのバッジを表示および外部バックパックに送信することができます。</p>
+<p>あなたのユーザが取得済みバッジへのアクセスを保持できるようにしたい場合、バッジを完全に削除する代わりに、このオプションを選択することが重要です。</p>';
 $string['attachment'] = 'メッセージにバッジを添付する';
-$string['attachment_help'] = 'この設定を有効にした場合、ダウンロードできるよう、発行済みバッジが取得者のメールに添付されます (サイト管理 > プラグイン > メッセージアウトプット > メール」にて、添付を有効にする必要があります。';
+$string['attachment_help'] = 'この設定を有効にした場合、ダウンロードできるよう発行済みバッジが取得者のメールに添付されます (サイト管理 > プラグイン > メッセージアウトプット > メール」にて、添付を有効にする必要があります。';
 $string['award'] = 'バッジを授与する';
 $string['awardedtoyou'] = '私に発行';
 $string['awardoncron'] = 'バッジへのアクセスが正常に有効にされました。多くのユーザがこのバッジを取得できます。サイトパフォーマンス確認のため、この操作には時間を要します。';
@@ -74,7 +78,7 @@ $string['backpackavailability_help'] = 'あなたからバッジを取得した�
 
 **私のサイト全体を誰からでもアクセス可能にできない場合は?**
 
-証明に必要な唯一のURLは「[your-site-url]/badges/assertion.php」です。このファイルに外部からアクセスできるよう、あなたのファイアーウォールを変更できる場合、バッジ証明を実現することができます。';
+証明に必要な唯一のURLは「[your-site-url]/badges/assertion.php」です。このファイルに外部からアクセスできるようあなたのファイアーウォールを変更できる場合、バッジ証明を実現することができます。';
 $string['backpackbadges'] = 'あなたには {$a->totalcollections} 件のコレクションから表示される {$a->totalbadges} 個のバッジがあります。<a href="mybackpack.php">バックパック設定を変更してください</a>。';
 $string['backpackconnection'] = 'バックパック接続';
 $string['backpackconnection_help'] = 'このページにおいて、あなたは外部バックパックプロバイダとの接続を設定することができます。バックパックに接続することで、あなたはこのサイト内に外部バッジを表示すること、そしてここで取得したバッジをバックパックに送信することができます。
@@ -91,7 +95,7 @@ $string['badgedetails'] = 'バッジ詳細';
 $string['badgeimage'] = 'イメージ';
 $string['badgeimage_help'] = 'このバッジが発行される時に使用されるイメージです。
 
-新しいイメージを追加するには、イメージ (JPGまたはPNG) を参照および選択して、「変更を保存する」をクリックしてください。イメージは正方形にトリミングされ、バッジイメージ要件に合致するよう、リサイズされます。';
+新しいイメージを追加するには、イメージ (JPGまたはPNG) を参照および選択して、「変更を保存する」をクリックしてください。イメージは正方形にトリミングされ、バッジイメージ要件に合致するようリサイズされます。';
 $string['badgeprivacysetting'] = 'バッジプライバシー設定';
 $string['badgeprivacysetting_help'] = 'あなたのアカウントプロファイルページに取得したバッジを表示することができます。この設定において、あなたは新しく取得したバッジの可視性を自動的に設定することができます。
 
@@ -179,7 +183,7 @@ $string['criteria_descr_single_short6'] = '完了:';
 $string['criteriasummary'] = 'クライテリア概要';
 $string['criteriaupdated'] = 'バッジクライテリアが正常に更新されました。';
 $string['criterror'] = '現在のパラメータ問題';
-$string['criterror_help'] = 'このバッジ要件に最初に追加されたすべてのパラメータをこのフィールドセットで表示していますが現在利用できません。将来的にユーザがバッジを取得できるよう、このようなバッジのチェックを外すことをお勧めします。';
+$string['criterror_help'] = 'このバッジ要件に最初に追加されたすべてのパラメータをこのフィールドセットで表示していますが現在利用できません。将来的にユーザがバッジを取得できるようこのようなバッジのチェックを外すことをお勧めします。';
 $string['currentimage'] = '現在のイメージ';
 $string['currentstatus'] = '現在のステータス:';
 $string['dateawarded'] = '発効日';
@@ -191,9 +195,11 @@ $string['defaultissuercontact'] = 'デフォルトのバッジ発行者連絡先
 $string['defaultissuercontact_desc'] = 'バッジ発行者に関連付けられるメールアドレスです。';
 $string['defaultissuername'] = 'デフォルトのバッジ発行者名';
 $string['defaultissuername_desc'] = '発行担当者名または機関名です。';
-$string['delbadge'] = 'バッジを削除する';
-$string['delconfirm'] = '本当にバッジ「 {$a} 」を削除してもよろしいですか?';
+$string['delbadge'] = 'バッジ「 {$a} 」および既存の発行済みバッジすべてを削除しますか?';
+$string['delconfirm'] = '削除および既存の発行済みバッジを削除する';
 $string['delcritconfirm'] = '本当にこのクライテリアを削除してもよろしいですか?';
+$string['deletehelp'] = '<p>バッジを完全に削除することはすべての情報およびクライテリアレコードが永久に削除されることを意味します。このバッジを取得したユーザはバッジにアクセスすること、およびプロファイルページにバッジを表示することができなくなります。</p>
+<p>注意: このバッジを取得して、すでに外部バックパックに送信したユーザはこのバッジを外部バックパックに保持したままとなります。しかし、これらのユーザはこのウェブサイトからリンクされているクライテリアおよびエビデンスページにアクセスすることはできません。</p>';
 $string['delparamconfirm'] = '本当にこのパラメータを削除してもよろしいですか?';
 $string['description'] = '説明';
 $string['disconnect'] = '接続解除';
@@ -367,7 +373,7 @@ $string['statusmessage_3'] = '現在、ユーザはこのバッジを利用で�
 $string['statusmessage_4'] = '現在、このバッジはアーカイブされています。';
 $string['subject'] = 'メッセージ件名';
 $string['variablesubstitution'] = 'メッセージ内の変数置換です。';
-$string['variablesubstitution_help'] = 'バッジメッセージにおいて、メッセージ送信時に実際の文字と置換するよう、メッセージの件名および本文に変数を入れることができます。変数は下記に表示されているものと厳密に同じようにテキストに入れてください。以下の変数を使用することができます:
+$string['variablesubstitution_help'] = 'バッジメッセージにおいて、メッセージ送信時に実際の文字と置換するようメッセージの件名および本文に変数を入れることができます。変数は下記に表示されているものと厳密に同じようにテキストに入れてください。以下の変数を使用することができます:
 
 %badgename%
 : これはバッジフルネームと置換されます。

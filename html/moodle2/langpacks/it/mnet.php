@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,8 @@ $string['error7023'] = 'Il sito remoto ha provato a decrittare il tuo messaggio 
 $string['error7024'] = 'Hai inviato un messaggio non crittato al sito remoto, ma il sito remoto non accetta comunicazioni non criptate dal tuo sito.  Ciò è davvero insolito: se il problema si dovesse verificare nuovamente, forse dovresti inserire un bug nel Tracker fornendo il maggior numero di informazioni possibile sulla  versione di Moodle in uso.';
 $string['error7026'] = 'La chiave con la quale è stato firmato il tuo messaggio è diversa dalla chiave a disposizione del sito remoto. Inoltre, l\'host remoto ha tentato di ottenere la chiave ma non ci è riuscito. Per favore  a scambia le chiavi manualmente e riprova.';
 $string['error709'] = 'Il sito remoto non è riuscito ad ottenere una chiave SSL.';
+$string['eventaccesscontrolcreated'] = 'Creato controllo d\'accesso';
+$string['eventaccesscontrolupdated'] = 'Aggiornato controllo d\'acecsso';
 $string['expired'] = 'Questa chiave è scaduta il';
 $string['expires'] = 'Valido fino al';
 $string['expireyourkey'] = 'Elimina questa chiave';
@@ -132,7 +134,6 @@ $string['mnetidprovider'] = 'Provider MNet ID';
 $string['mnetidproviderdesc'] = 'Puoi utilizzare questo servizio per individuare l\'URL corretto dove potersi autenticare. Devi inserire l\'email corrispondente allo username con il quale hai tentato l\'autenticazione.';
 $string['mnetidprovidermsg'] = 'Dovresti autenticarti presso il tuo provider {$a}';
 $string['mnetidprovidernotfound'] = 'Spiacente, non è stato possibile trovare ulteriori informazioni.';
-$string['mnetlog'] = 'Log';
 $string['mnetpeers'] = 'Nodi';
 $string['mnetservices'] = 'Servizi';
 $string['mnet_session_prohibited'] = 'Agli utenti del tuo server non è al momento consentito l\'accesso ad {$a}.';

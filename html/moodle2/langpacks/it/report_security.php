@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,10 +60,6 @@ $string['check_frontpagerole_error'] = 'Il Ruolo di default per la pagina home, 
 $string['check_frontpagerole_name'] = 'Ruolo di default per la pagina home';
 $string['check_frontpagerole_notset'] = 'Il Ruolo di default per la pagina home non è impostato.';
 $string['check_frontpagerole_ok'] = 'Definizione del Ruolo di default per la pagina home OK.';
-$string['check_globals_details'] = '<p>L\'impostazione Register globals è considerata una delle più pericolose. Devi impostare <code>register_globals=off</code> nella configurazione del PHP. Puoi impostare register_globals nel file <code>php.ini</code>, nella configurazione di Apache oppure nel file <code>.htaccess</code>.</p>';
-$string['check_globals_error'] = 'L\'impostazione Register globals DEVE essere disabilitata. Per favore modifica l\'impostazione immediatamente!';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'L\'impostazione Register globals è disabilitata';
 $string['check_google_details'] = '<p>L\'impostazione Aperto a Google consente ai motori di ricerca di accedere ai corsi come ospite. E\' inutile consentire l\'accesso come ospite ai motori di ricerca se l\'accesso come ospite è disabilitato.</p>';
 $string['check_google_error'] = 'L\'accesso per i motori di ricerca è abilitato ma l\'accesso come ospite al sito è disabilitato.';
 $string['check_google_info'] = 'I motori di ricerca possono entrare nel sito come ospiti.';

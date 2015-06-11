@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,7 @@ $string['eventduration'] = 'Varaktighet';
 $string['eventendtime'] = 'Sluttid/datum';
 $string['eventinstanttime'] = 'Tid';
 $string['eventkind'] = 'Typ av händelse';
-$string['eventname'] = 'Namn för händelse';
+$string['eventname'] = 'Namn';
 $string['eventnone'] = 'Inga händelser';
 $string['eventrepeat'] = 'Upprepningar';
 $string['eventsall'] = 'Alla händelser';

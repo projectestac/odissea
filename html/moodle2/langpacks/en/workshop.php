@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,17 @@ $string['evaluation'] = 'Grading evaluation';
 $string['evaluationmethod'] = 'Grading evaluation method';
 $string['evaluationmethod_help'] = 'The grading evaluation method determines how the grade for assessment is calculated. You can let it re-calculate grades repeatedly with different settings unless you are happy with the result.';
 $string['evaluationsettings'] = 'Grading evaluation settings';
-$string['event_assessable_uploaded'] = 'A submission has been uploaded.';
+$string['eventassessableuploaded'] = 'A submission has been uploaded.';
+$string['eventassessmentevaluated'] = 'Assessment evaluated';
+$string['eventassessmentevaluationsreset'] = 'Assessment evaluations reset';
+$string['eventassessmentreevaluated'] = 'Assessment re-evaluated';
+$string['eventphaseswitched'] = 'Phase switched';
+$string['eventsubmissionassessed'] = 'Submission assessed';
+$string['eventsubmissionassessmentsreset'] = 'Submission assessments cleared';
+$string['eventsubmissioncreated'] = 'Submission created';
+$string['eventsubmissionreassessed'] = 'Submission re-assessed';
+$string['eventsubmissionupdated'] = 'Submission updated';
+$string['eventsubmissionviewed'] = 'Submission viewed';
 $string['example'] = 'Example submission';
 $string['exampleadd'] = 'Add example submission';
 $string['exampleassess'] = 'Assess example submission';
@@ -184,7 +194,7 @@ $string['nosubmissionfound'] = 'No submission found for this user';
 $string['nosubmissions'] = 'No submissions yet in this workshop';
 $string['notassessed'] = 'Not assessed yet';
 $string['nothingtoreview'] = 'Nothing to review';
-$string['notoverridden'] = 'Not overriden';
+$string['notoverridden'] = 'Not overridden';
 $string['noworkshops'] = 'There are no workshops in this course';
 $string['noyoursubmission'] = 'You have not submitted your work yet';
 $string['nullgrade'] = '-';
@@ -316,7 +326,6 @@ $string['workshop:viewallassessments'] = 'View all assessments';
 $string['workshop:viewallsubmissions'] = 'View all submissions';
 $string['workshop:viewauthornames'] = 'View author names';
 $string['workshop:viewauthorpublished'] = 'View authors of published submissions';
-$string['workshopviewed'] = 'Workshop viewed';
 $string['workshop:viewpublishedsubmissions'] = 'View published submissions';
 $string['workshop:viewreviewernames'] = 'View reviewer names';
 $string['yourassessment'] = 'Your assessment';

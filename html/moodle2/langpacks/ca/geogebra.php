@@ -33,7 +33,7 @@ $string['attemptsremaining'] = 'Intents restants per a aquesta activitat:';
 $string['autograde'] = 'Activitat autopuntuable';
 $string['availabledate'] = 'Disponible des de';
 $string['average'] = 'Mitjana';
-$string['choosescripttype'] = 'Escull el tipus de script';
+$string['choosescripttype'] = 'Escull el tipus de <i>script</i>';
 $string['comment'] = 'Comentari';
 $string['coursewithoutstudents'] = 'Curs sense estudiants';
 $string['datestudent'] = 'Darrera modificació (tramesa)';
@@ -46,26 +46,27 @@ $string['duration'] = 'Durada';
 $string['enableLabelDrags'] = 'Permet arrossegar les etiquetes';
 $string['enableRightClick'] = 'Habilita el botó dret';
 $string['errorattempt'] = 'S\'ha produït un error. No s\'ha pogut desar l\'intent.';
-$string['expired'] = 'Ho sentim, aquesta activitat es va tancar el {$a} i, per tant, ja no està disponible';
+$string['expired'] = 'Aquesta activitat es va tancar el {$a} i, per tant, ja no està disponible';
+$string['extractedfromggb'] = 'fitxers extrets de ggb';
 $string['filename'] = 'Nom del fitxer';
 $string['filenotfound'] = 'El fitxer indicat no existeix';
 $string['filetype'] = 'Tipus';
 $string['filetypeexternal'] = 'URL extern';
 $string['filetype_help'] = 'Aquest paràmetre determina com s\'incorporarà l\'activitat GeoGebra al curs. Hi ha dues opcions:
 
-* Fitxer pujat - Permet escollir un fitxer ".ggb" vàlid mitjançant el selector d\'arxius.
-* URL extern - Permet especificar l\'URL d\'una activitat GeoGebra. Nota: L\'URL ha de començar amb http(s) o www i contenir un fitxer ".ggb" vàlid.';
+* Fitxer pujat - Permet escollir un fitxer .GGB vàlid mitjançant el selector d\'arxius.
+* URL extern - Permet especificar l\'URL d\'una activitat GeoGebra. Nota: L\'URL ha de començar amb http(s) o www i contenir un fitxer .GGB vàlid.';
 $string['filetypelocal'] = 'Fitxer pujat';
 $string['firstattempt'] = 'Primer intent';
 $string['for'] = 'per';
 $string['functionalityoptionsgrp'] = 'Funcionalitats';
 $string['geogebra:addinstance'] = 'Afegeix una activitat GeoGebra';
 $string['geogebrafile'] = 'Fitxer GeoGebra';
-$string['geogebrafile_help'] = 'El fitxer ".ggb" que conté l\'activitat GeoGebra.';
+$string['geogebrafile_help'] = 'El fitxer .GGB que conté l\'activitat GeoGebra.';
 $string['geogebra:grade'] = 'Avalua GeoGebra';
 $string['geogebra:submit'] = 'Envia GeoGebra';
 $string['geogebraurl'] = 'URL';
-$string['geogebraurl_help'] = 'Aquest paràmetre permet especificar l\'URL de l\'activitat GeoGebra en lloc de seleccionar-la mitjançant el selector d\'arxius.';
+$string['geogebraurl_help'] = 'Aquest paràmetre permet especificar l\'URL de l\'activitat GeoGebra en lloc de seleccionar-la mitjançant el selector de fitxers.';
 $string['geogebra:view'] = 'Visualitza GeoGebra';
 $string['grade'] = 'Qualificació';
 $string['gradeit'] = 'Qualificació';
@@ -76,20 +77,29 @@ $string['height'] = 'Alçada';
 $string['highestattempt'] = 'Millor intent';
 $string['httpnotallowed'] = 'De moment no és possible utilitzar fitxers externs';
 $string['interfaceoptionsgrp'] = 'Interfície d\'usuari';
-$string['invalidgeogebrafile'] = 'S\'ha especificat un fitxer GeoGebra no vàlid. El fitxer ha de tenir l\'extensió ".ggb".';
-$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer «.ggb» vàlid.';
+$string['invalidgeogebrafile'] = 'S\'ha especificat un fitxer GeoGebra no vàlid. El fitxer ha de tenir l\'extensió .GGB.';
+$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer .GGB vàlid.';
 $string['javacodebase'] = 'Base de codi de GeoGebra';
-$string['javacodebase_help'] = 'URL dels fitxers JAR de GeoGebra';
+$string['javacodebase_help'] = 'URL dels fitxers .JAR de GeoGebra';
 $string['language'] = 'Idioma';
 $string['lastattempt'] = 'Darrer intent';
 $string['lastattemptremaining'] = 'Aquest és el teu darrer intent en aquesta activitat';
+$string['lastmodifiedgrade'] = 'Darrera modificació (qualificació)';
+$string['lastmodifiedsubmission'] = 'Darrera modificació (tramesa)';
 $string['lowestattempt'] = 'Pitjor intent';
 $string['manualgrade'] = 'Qualificació manual?';
-$string['maxattempts'] = 'Número màxim d\'intents';
+$string['maxattempts'] = 'Nombre màxim d\'intents';
 $string['modulename'] = 'GeoGebra';
-$string['modulename_help'] = '<b>ATENCIÓ!!</b> <br>Versió alfa del mòdul del GeoGebra pel Moodle 2. Està incompleta i, per tant, algunes parts poden no funcionar adequadament.';
+$string['modulename_help'] = '<p><a href="http://www.geogebra.org" target="_blank">GeoGebra</a> és una aplicació de matemàtica dinàmica, gratuïta, lliure i multiplataforma, enfocada a tots els nivells educatius, que aglutina la geometria, l\'àlgebra, el full de càlcul, l\'estadística i l\'anàlisi, en un únic paquet integrat, molt fàcil d\'utilitzar.</p>
+<p>Per aquest motiu, el <a href="http://www.gencat.cat/ensenyament/" target="_blank">Departament d\'Ensenyament de Catalunya</a>, en col·laboració amb l\'<a href="http://acgeogebra.cat/" target="_blank">Associació Catalana de GeoGebra</a> (ACG) i l\'equip de desenvolupament de GeoGebra han implementat aquest mòdul que permet la incorporació d\'aquest tipus d\'activitats a Moodle. Les seves característiques principals són:
+<ul>
+<li>Permet incrustar activitats GeoGebra a qualsevol curs de forma molt senzilla.</li>
+<li>Facilita el seguiment ja que guarda la puntuació, data, durada i construccions de cadascun dels intents que realitza l\'alumnat.</li>
+<li>L\'alumnat pot desar l\'estat de les activitats realitzades per continuar-les en un altre moment.</li>
+</ul>
+</p>';
 $string['modulenameplural'] = 'GeoGebra';
-$string['msg_noattempts'] = 'Ja has fet aquesta activitat el nombre m&agrave;xim de vegades perm&egrave;s.';
+$string['msg_noattempts'] = 'Ja heu fet aquesta activitat el nombre màxim de vegades permès';
 $string['name'] = 'Nom';
 $string['noattempts'] = '-';
 $string['nograding'] = 'Sense qualificar';
@@ -104,6 +114,7 @@ $string['resultstab'] = 'Resultats';
 $string['resumeattempt'] = 'Continuació d\'un intent anterior';
 $string['review'] = 'Revisió de';
 $string['reviewtab'] = 'Revisió';
+$string['save'] = 'Desa';
 $string['savechanges'] = 'Desa els canvis';
 $string['savewithoutsubmitting'] = 'Desa sense entregar';
 $string['settings'] = 'Paràmetres';
@@ -120,12 +131,12 @@ $string['unfinished'] = 'No finalitzat';
 $string['ungraded'] = 'Sense qualificar';
 $string['unlimitedattempts'] = 'Aquesta activitat no té límit d\'intents';
 $string['urledit'] = 'Fitxer GeoGebra';
-$string['urledit_help'] = 'El fitxer ".ggb" que conté l\'activitat GeoGebra.';
+$string['urledit_help'] = 'El fitxer ".GGB" que conté l\'activitat GeoGebra.';
 $string['view'] = 'Visualitza';
 $string['viewattempt'] = 'Visualitza';
 $string['viewattempts'] = 'Visualitza els intents';
 $string['viewattempttab'] = 'Visualitza l\'intent';
 $string['viewtab'] = 'Mostra';
-$string['warningnojava'] = 'Aquest Applet Java s\'ha creat utilitzant GeoGebra (www.geogebra.org) - possiblement no tingueu el Java correctament instal·lat, comproveu-ho a www.java.com';
+$string['warningnojava'] = 'Aquest Applet de Java s\'ha creat utilitzant GeoGebra (www.geogebra.org) - possiblement no tingueu el Java correctament instal·lat, comproveu-ho a www.java.com';
 $string['weight'] = 'Pes';
 $string['width'] = 'Amplada';

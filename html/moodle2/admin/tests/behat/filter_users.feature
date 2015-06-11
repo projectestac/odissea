@@ -5,31 +5,31 @@ Feature: An administrator can filter user accounts by role, cohort and other pro
   I need to filter the users account list using different filter
 
   Background:
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email | auth | confirmed |
-      | user1 | User | One | one@asd.com | manual | 0 |
-      | user2 | User | Two | one@asd.com | ldap | 1 |
-      | user3 | User | Three | one@asd.com | manual | 1 |
-      | user4 | User | Four | one@asd.com | ldap | 0 |
-    And the following "cohorts" exists:
+      | user1 | User | One | one@example.com | manual | 0 |
+      | user2 | User | Two | two@example.com | ldap | 1 |
+      | user3 | User | Three | three@example.com | manual | 1 |
+      | user4 | User | Four | four@example.com | ldap | 0 |
+    And the following "cohorts" exist:
       | name | idnumber |
       | Cohort 1 | CH1 |
-    And the following "courses" exists:
+    And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | user1 | C1 | student |
       | user2 | C1 | student |
       | user3 | C1 | student |
     And I log in as "admin"
-    And I add "user2" user to "CH1" cohort
-    And I add "user3" user to "CH1" cohort
+    And I add "User Two (two@example.com)" user to "CH1" cohort members
+    And I add "User Three (three@example.com)" user to "CH1" cohort members
     And I follow "Browse list of users"
 
   @javascript
   Scenario: Filter user accounts by role and cohort
-    When I fill the moodle form with:
+    When I set the following fields to these values:
       | courserole_rl | Student |
       | courserole_ct | any category |
       | courserole | C1 |
@@ -38,7 +38,7 @@ Feature: An administrator can filter user accounts by role, cohort and other pro
     And I should see "User Two"
     And I should see "User Three"
     And I should not see "User Four"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | cohort | CH1 |
     And I press "Add filter"
     And I should not see "User One"
@@ -53,14 +53,14 @@ Feature: An administrator can filter user accounts by role, cohort and other pro
 
   @javascript
   Scenario: Filter user accounts by confirm and authentication method
-    When I fill the moodle form with:
+    When I set the following fields to these values:
       | Confirmed | No |
     And I press "Add filter"
     Then I should see "User One"
     And I should not see "User Two"
     And I should not see "User Three"
     And I should see "User Four"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Authentication | manual |
     And I press "Add filter"
     And I should see "User One"

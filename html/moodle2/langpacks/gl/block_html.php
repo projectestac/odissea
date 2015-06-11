@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_html', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,11 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowadditionalcssclasses'] = 'Permitir clases CSS adicionais';
 $string['configallowadditionalcssclasses'] = 'Engade unha opción de configuración ás instancias do bloque HTML que permite estabelecer clases CSS adicionais.';
 $string['configclasses'] = 'Clases CSS adicionais';
-$string['configclasses_help'] = 'O propósito deste configuración e axudar coa tematización mediante a distinción de bloques HTML uns dos outros. Calquera clase CSS introducida aquí (delimitada por espazos) vincularase ás clases predeterminadas do bloque.';
+$string['configclasses_help'] = 'O propósito desta configuración é axudar coa tematización mediante a distinción de bloques HTML uns dos outros. Calquera clase CSS introducida aquí (delimitada por espazos) vincularase ás clases predeterminadas do bloque.';
 $string['configcontent'] = 'Contido';
 $string['configtitle'] = 'Título do bloque';
 $string['html:addinstance'] = 'Engadir un novo bloque HTML';
-$string['html:myaddinstance'] = 'Engadir un novo bloque HTML ao meu cartafol persoal';
+$string['html:myaddinstance'] = 'Engadir un novo bloque HTML na área persoal';
 $string['leaveblanktohide'] = 'déixeo en branco para agochar o título';
 $string['newhtmlblock'] = '(novo bloque HTML)';
 $string['pluginname'] = 'HTML';

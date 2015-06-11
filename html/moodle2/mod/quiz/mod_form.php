@@ -17,8 +17,7 @@
 /**
  * Defines the quiz module ettings form.
  *
- * @package    mod
- * @subpackage quiz
+ * @package    mod_quiz
  * @copyright  2006 Jamie Pratt
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -121,7 +120,12 @@ class mod_quiz_mod_form extends moodleform_mod {
         $this->standard_grading_coursemodule_elements();
 
         $mform->removeElement('grade');
-        $mform->addElement('hidden', 'grade', $quizconfig->maximumgrade);
+        if (property_exists($this->current, 'grade')) {
+            $currentgrade = $this->current->grade;
+        } else {
+            $currentgrade = $quizconfig->maximumgrade;
+        }
+        $mform->addElement('hidden', 'grade', $currentgrade);
         $mform->setType('grade', PARAM_FLOAT);
 
         // Number of attempts.
@@ -157,33 +161,15 @@ class mod_quiz_mod_form extends moodleform_mod {
         $mform->setAdvanced('shufflequestions', $quizconfig->shufflequestions_adv);
         $mform->setDefault('shufflequestions', $quizconfig->shufflequestions);
 
-        // Questions per page.
-        $pageoptions = array();
-        $pageoptions[0] = get_string('neverallononepage', 'quiz');
-        $pageoptions[1] = get_string('everyquestion', 'quiz');
-        for ($i = 2; $i <= QUIZ_MAX_QPP_OPTION; ++$i) {
-            $pageoptions[$i] = get_string('everynquestions', 'quiz', $i);
-        }
-
         $pagegroup = array();
         $pagegroup[] = $mform->createElement('select', 'questionsperpage',
-                get_string('newpage', 'quiz'), $pageoptions, array('id' => 'id_questionsperpage'));
+                get_string('newpage', 'quiz'), quiz_questions_per_page_options(), array('id' => 'id_questionsperpage'));
         $mform->setDefault('questionsperpage', $quizconfig->questionsperpage);
 
         if (!empty($this->_cm)) {
             $pagegroup[] = $mform->createElement('checkbox', 'repaginatenow', '',
                     get_string('repaginatenow', 'quiz'), array('id' => 'id_repaginatenow'));
             $mform->disabledIf('repaginatenow', 'shufflequestions', 'eq', 1);
-
-            $PAGE->requires->js('/question/qengine.js');
-            $module = array(
-                'name'      => 'mod_quiz_edit',
-                'fullpath'  => '/mod/quiz/edit.js',
-                'requires'  => array('yui2-dom', 'yui2-event', 'yui2-container'),
-                'strings'   => array(),
-                'async'     => false,
-            );
-            $PAGE->requires->js_init_call('quiz_settings_init', null, false, $module);
         }
 
         $mform->addGroup($pagegroup, 'questionsperpagegrp',
@@ -257,7 +243,7 @@ class mod_quiz_mod_form extends moodleform_mod {
                 'neq', 'wontmatch');
 
         // -------------------------------------------------------------------------------
-        $mform->addElement('header', 'display', get_string('display', 'form'));
+        $mform->addElement('header', 'display', get_string('appearance'));
 
         // Show user picture.
         $mform->addElement('select', 'showuserpicture', get_string('showuserpicture', 'quiz'),
@@ -409,6 +395,8 @@ class mod_quiz_mod_form extends moodleform_mod {
 
         // -------------------------------------------------------------------------------
         $this->add_action_buttons();
+
+        $PAGE->requires->yui_module('moodle-mod_quiz-modform', 'M.mod_quiz.modform.init');
     }
 
     protected function add_review_options_group($mform, $quizconfig, $whenname,
@@ -488,7 +476,7 @@ class mod_quiz_mod_form extends moodleform_mod {
 
                 if ($feedback->mingrade > 0) {
                     $toform['feedbackboundaries['.$key.']'] =
-                            (100.0 * $feedback->mingrade / $toform['grade']) . '%';
+                            round(100.0 * $feedback->mingrade / $toform['grade'], 6) . '%';
                 }
                 $key++;
             }
@@ -596,6 +584,39 @@ class mod_quiz_mod_form extends moodleform_mod {
         $errors = quiz_access_manager::validate_settings_form_fields($errors, $data, $files, $this);
 
         return $errors;
+    }
+
+    /**
+     * Display module-specific activity completion rules.
+     * Part of the API defined by moodleform_mod
+     * @return array Array of string IDs of added items, empty array if none
+     */
+    public function add_completion_rules() {
+        $mform = $this->_form;
+        $items = array();
+
+        $group = array();
+        $group[] = $mform->createElement('advcheckbox', 'completionpass', null, get_string('completionpass', 'quiz'),
+                array('group' => 'cpass'));
+
+        $group[] = $mform->createElement('advcheckbox', 'completionattemptsexhausted', null,
+                get_string('completionattemptsexhausted', 'quiz'),
+                array('group' => 'cattempts'));
+        $mform->disabledIf('completionattemptsexhausted', 'completionpass', 'notchecked');
+        $mform->addGroup($group, 'completionpassgroup', get_string('completionpass', 'quiz'), ' &nbsp; ', false);
+        $mform->addHelpButton('completionpassgroup', 'completionpass', 'quiz');
+        $items[] = 'completionpassgroup';
+        return $items;
+    }
+
+    /**
+     * Called during validation. Indicates whether a module-specific completion rule is selected.
+     *
+     * @param array $data Input data (not yet validated)
+     * @return bool True if one or more rules is enabled, false if none are.
+     */
+    public function completion_rule_enabled($data) {
+        return !empty($data['completionattemptsexhausted']) || !empty($data['completionpass']);
     }
 
     /**

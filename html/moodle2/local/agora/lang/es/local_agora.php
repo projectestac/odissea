@@ -31,6 +31,7 @@ $string['years_ago'] = 'hace {$a} años';
 $string['agora_scripts'] = 'Àgora Scripts';
 
 $string['login_nodes'] = 'Entrar a Nodes';
+$string['mygrades'] = 'Mis calificacions';
 
 $string['mailer'] = 'Mailer';
 $string['apligestmail'] = 'Activa el Mailer';

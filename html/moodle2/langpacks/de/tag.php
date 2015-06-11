@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Gelöscht - Kursschlagworte';
 $string['description'] = 'Beschreibung';
 $string['edittag'] = 'Schlagwort bearbeiten';
 $string['entertags'] = 'Schlagworte (kommagetrennt)';
-$string['errordeleting'] = 'Fehler beim Löschen des Schlagwortes mit der ID {$a}. Bitte informieren Sie Ihren Administrator.';
 $string['errortagfrontpage'] = 'Schlagworte sind für die Startseite nicht erlaubt.';
 $string['errorupdatingrecord'] = 'Fehler beim Aktualisieren des Schlagwortes';
+$string['eventtagadded'] = 'Schlagwort zum Wert hinzugefügt';
+$string['eventtagcreated'] = 'Schlüsselwort angelegt';
+$string['eventtagdeleted'] = 'Schlüsselwort gelöscht';
+$string['eventtagflagged'] = 'Schlüsselwort mit Kennzeichen versehen';
+$string['eventtagremoved'] = 'Schlagwort vom Wert entfernt';
+$string['eventtagunflagged'] = 'Kennzeichen von Schlüsselwort entfernt';
+$string['eventtagupdated'] = 'Schlüsselwort aktualisiert';
 $string['flag'] = 'Markieren';
 $string['flagasinappropriate'] = 'Als unpassend markieren';
 $string['helprelatedtags'] = 'Verwandte Schlagworte (kommagetrennt)';

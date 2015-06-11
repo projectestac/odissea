@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['addtodock'] = 'Déplacer vers le dock';
 $string['anypagematchingtheabove'] = 'Toutes les pages correspondant aux critères ci-dessus';
 $string['appearsinsubcontexts'] = 'Apparaît dans des sous-contextes';
 $string['assignrolesinblock'] = 'Attribuer des rôles dans le bloc {$a}';
-$string['blocksettings'] = 'Réglage du bloc';
+$string['blocksettings'] = 'Réglages du bloc';
 $string['bracketfirst'] = '{$a} (premier)';
 $string['bracketlast'] = '{$a} (dernier)';
 $string['configureblock'] = 'Configurer le bloc {$a}';
@@ -52,7 +52,7 @@ $string['hidepanel'] = 'Cacher le dock';
 $string['moveblock'] = 'Déplacer le bloc {$a}';
 $string['moveblockafter'] = 'Déplacer le bloc après le bloc {$a}';
 $string['moveblockbefore'] = 'Déplacer le bloc avant le bloc {$a}';
-$string['moveblockhere'] = 'Déplacer le bloc ici';
+$string['moveblockinregion'] = 'Déplacer le bloc vers la région {$a}';
 $string['movingthisblockcancel'] = 'Déplacement de ce bloc ({$a})';
 $string['onthispage'] = 'Sur cette page';
 $string['pagetypes'] = 'Types de page';

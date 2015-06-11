@@ -12,8 +12,8 @@
  * @namespace M.core.dock
  * @class DockedItem
  * @constructor
- * @extends Y.Base
- * @uses Y.EventTarget
+ * @extends Base
+ * @uses EventTarget
  */
 DOCKEDITEM = function() {
     DOCKEDITEM.superclass.constructor.apply(this, arguments);
@@ -133,6 +133,9 @@ DOCKEDITEM.prototype = {
         Y.log('Showing '+this._getLogDescription(), 'debug', LOGNS);
         panel.setHeader(this.get('titlestring'), this.get('commands'));
         panel.setBody(Y.Node.create('<div class="block_'+this.get('blockclass')+' block_docked"></div>').append(this.get('contents')));
+        if (M.core.actionmenu !== undefined) {
+            M.core.actionmenu.newDOMNode(panel.get('node'));
+        }
         panel.show();
         panel.correctWidth();
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,7 @@ $string['err_nomaxscore'] = 'La puntuació màxima del criteri no pot estar buid
 $string['err_noshortname'] = 'El nom del criteri no pot estar buit';
 $string['err_scoreinvalid'] = 'La puntuació donada a {$a->criterianame} no és vàlida, la puntuació màxima és: {$a->maxscore}';
 $string['gradingof'] = '{$a} qualificació';
-$string['guidemappingexplained'] = 'AVÍS: La guia de qualificació té una qualificació màxima de <b>{$a->maxscore} punts</b> però la qualificació màxima establida en la activitat és {$a->modulegrade} La puntuació màxima establida en la vostra guia de qualificació s\'escalarà a la qualificació màxima del mòdul. <br />
+$string['guidemappingexplained'] = 'AVÍS: La guia de qualificació té una qualificació màxima de <b>{$a->maxscore} punts</b> però la qualificació màxima establerta en l\'activitat és {$a->modulegrade} La puntuació màxima establerta en la vostra guia de qualificació s\'escalarà a la qualificació màxima del mòdul. <br />
 Puntuacions intermèdies es convertiran, respectivament, i s\'arrodoniran a la qualificació més propera disponible.';
 $string['guidenotcompleted'] = 'Proporcioneu una qualificació vàlida per a cada criteri';
 $string['guideoptions'] = 'Opcions de la guia de qualificació';

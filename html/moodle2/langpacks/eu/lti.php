@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lti', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = 'Onartu';
+$string['accepted'] = 'Onartua';
 $string['accept_grades'] = 'Onartu kalifikazioak tresnatik';
 $string['accept_grades_admin'] = 'Onartu kalifikazioak tresnatik';
 $string['action'] = 'Ekintza';
@@ -46,8 +47,12 @@ $string['basicltiintro'] = 'Jardueraren deskribapena';
 $string['basicltiname'] = 'Jardueraren izena';
 $string['basiclti_parameters'] = 'LTI hasierako parametroak';
 $string['basicltisettings'] = 'Oinarrizko ikasteko tresnaren elkarreragingarritasunaren ezarpenak';
+$string['cancel'] = 'Utzi';
+$string['cancelled'] = 'Bertan behera utzia';
 $string['cannot_delete'] = 'Ezin dituzu tresnaren ezarpenak ezabatu';
 $string['cannot_edit'] = 'Ezin dituzu tresnaren ezarpenak editatu';
+$string['capabilities'] = 'Gaitasunak';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Sakatu jarraitzeko</a>';
 $string['comment'] = 'Iruzkina';
 $string['configpassword'] = 'Kanpoko tresnaren berezko pasahitza';
 $string['configpreferheight'] = 'Berezko altuera';
@@ -55,6 +60,7 @@ $string['configpreferwidth'] = 'Berezko zabalera';
 $string['configresourceurl'] = 'Baliabidearen berezko URLa';
 $string['configtoolurl'] = 'Urrutiko tresnaren berezko URLa';
 $string['configtypes'] = 'Gaitu LTI aplikazioak';
+$string['configured'] = 'Konfiguratua';
 $string['courseid'] = 'Ikastaroaren ID zenbakia';
 $string['coursemisconf'] = 'Ikastaroa gaizki konfiguratuta dago';
 $string['course_tool_types'] = 'Ikastaroko tresna-motak';
@@ -120,8 +126,11 @@ $string['lti_launch_error_tool_request'] = '<p>
 Kudeatzaileari tresnaren ezarpena osa dezala eskatzeko sakatu <a href="{$a->admin_request_url}" target="_top">honi</a>.
 </p>';
 $string['lti:manage'] = 'Editatu LTI jarduerak';
+$string['ltisettings'] = 'LTIren ezarpenak';
 $string['lti:view'] = 'Ikusi LTI jarduerak';
 $string['main_admin'] = 'Laguntza orokorra';
+$string['manage_tool_proxies'] = 'Kudeatu kanpoko tresnen erregistroak';
+$string['manage_tools'] = 'Kudeatu kanpoko tresna-motak';
 $string['miscellaneous'] = 'Denetarikoak';
 $string['misconfiguredtools'] = 'Gaizki konfiguratutako tresna-instantziak atzeman dira';
 $string['missingparameterserror'] = 'Orria gaizki konfiguratuta dago: "{$a}"';
@@ -138,6 +147,7 @@ Kanpoko tresna jarduera URL baliabidearekin hainbat gauzatan desberdintzen da:
 * Kanpoko tresnek erreminta hornitzailearen webgunearen eta Moodle-ren arteko konfiantzazko erlazioa ezartzen du, euren arteko konfiantzazko komunikazioa ahalbidetuz.';
 $string['modulenameplural'] = 'Kanpoko tresnak';
 $string['modulenamepluralformatted'] = 'LTI instantziak';
+$string['name'] = 'Izena';
 $string['never'] = 'Inoiz ez';
 $string['new_window'] = 'Leiho berria';
 $string['noattempts'] = 'Ez da saiakerarik izan tresna honen instantzian';
@@ -151,12 +161,16 @@ $string['organizationdescr'] = 'Erakundearen deskribapena';
 $string['organizationid'] = 'Erakundearen IDa';
 $string['organizationurl'] = 'Erakundearen URLa';
 $string['pagesize'] = 'Orriko erakutsitako bidalketak';
+$string['parameter'] = 'Tresnaren parametroak';
 $string['pluginadministration'] = 'LTIren kudeaketa';
 $string['pluginname'] = 'LTI';
 $string['preferheight'] = 'Hobetsitako altuera';
 $string['preferwidth'] = 'Hobetsitako zabalera';
 $string['privacy'] = 'Pribatutasuna';
 $string['quickgrade'] = 'Baimendu kalifikazio azkarra';
+$string['register'] = 'Erregistratu';
+$string['registration_options'] = 'Erregistrorako aukerak';
+$string['registrationurl'] = 'Erregistrorako URLa';
 $string['reject'] = 'Ez onartu';
 $string['rejected'] = 'Onartu gabea';
 $string['resource'] = 'Baliabidea';
@@ -167,6 +181,7 @@ $string['return_to_course'] = 'Sakatu <a href="{$a->link}" target="_top">here</a
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['secure_launch_url'] = 'Hasierako URL segurua';
 $string['send'] = 'Bidali';
+$string['services'] = 'Zerbitzuak';
 $string['setupoptions'] = 'Ezarpen-aukerak';
 $string['share_email'] = 'Partekatu erabiltzailearen e-posta tresnarekin';
 $string['share_email_admin'] = 'Partekatu erabiltzailearen e-posta tresnarekin';
@@ -176,8 +191,13 @@ $string['size'] = 'Tamainaren parametroak';
 $string['submission'] = 'Bidalketa';
 $string['submissions'] = 'Bidalketak';
 $string['submissionsfor'] = '{$a}-(r)entzako bidalketak';
+$string['subplugintype_ltiservice'] = 'LTI zerbitzua';
+$string['subplugintype_ltiservice_plural'] = 'LTI zerbitzuak';
 $string['subplugintype_ltisource'] = 'LTIren iturburua';
 $string['subplugintype_ltisource_plural'] = 'LTIren iturburuak';
+$string['toolproxy'] = 'Kanpoko tresnen erregistroak';
+$string['toolproxyregistration'] = 'Kanpoko tresnen erregistroa';
+$string['toolregistration'] = 'Kanpoko tresnen erregistroa';
 $string['tool_settings'] = 'Tresnaren ezarpenak';
 $string['toolsetup'] = 'Kanpoko tresnaren ezarpenak';
 $string['typename'] = 'Tresnaren izena';

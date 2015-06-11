@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,8 +71,6 @@ $string['groupings'] = 'تجميعات';
 $string['groupingsonly'] = 'تجميعات فقط';
 $string['groupmember'] = 'عضو المجموعة';
 $string['groupmembers'] = 'أعضاء المجموعة';
-$string['groupmembersonly'] = 'متاح لإعضاء المحموعة فقط';
-$string['groupmembersonly_help'] = 'إذا تم تقعيل هذا الخيار، فإن هذا النشاط (أو المورد) سيكون متاحاً فقط للطلاب المنتمين للمجموعات المتضمنة في التجميع المحدد.';
 $string['groupmemberssee'] = 'عاين اعضاء المجموعة';
 $string['groupmembersselected'] = 'أعضاء مجموعة مختارة';
 $string['groupmode'] = 'وضع مجموعة';

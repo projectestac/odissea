@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,17 @@ $string['evaluation'] = '成績評価';
 $string['evaluationmethod'] = '成績評価方法';
 $string['evaluationmethod_help'] = '成績評価方法では評価に対する評点をどのように計算するか決定します。あなたの希望に結果が合致しない場合、評定を繰り返し再計算することができます。';
 $string['evaluationsettings'] = '成績評価設定';
-$string['event_assessable_uploaded'] = '課題がアップロードされました。';
+$string['eventassessableuploaded'] = '提出がアップロードされました。';
+$string['eventassessmentevaluated'] = '評価が評定されました。';
+$string['eventassessmentevaluationsreset'] = '評価の評定がリセットされました。';
+$string['eventassessmentreevaluated'] = '評価が再評定されました。';
+$string['eventphaseswitched'] = 'フェーズが切り替えられました。';
+$string['eventsubmissionassessed'] = '提出が評定されました。';
+$string['eventsubmissionassessmentsreset'] = '提出の評定がクリアされました。';
+$string['eventsubmissioncreated'] = '提出が作成されました。';
+$string['eventsubmissionreassessed'] = '提出が再評定されました。';
+$string['eventsubmissionupdated'] = '提出が更新されました。';
+$string['eventsubmissionviewed'] = '提出が閲覧されました。';
 $string['example'] = '提出例';
 $string['exampleadd'] = '提出例を追加する';
 $string['exampleassess'] = '提出例を評価する';
@@ -219,7 +229,7 @@ $string['receivedgrades'] = '与えられた評点';
 $string['recentassessments'] = 'ワークショップ評価:';
 $string['recentsubmissions'] = 'ワークショップ提出:';
 $string['resetassessments'] = 'すべての評価を削除する';
-$string['resetassessments_help'] = 'あなたは提出に影響を及ぼさずに割り当てられた評価のみ削除するよう、選択することができます。提出が削除される場合、その評価は暗黙のうちに削除され、このオプションは無視されます。これには提出例の評価も含むことに留意してください。';
+$string['resetassessments_help'] = 'あなたは提出に影響を及ぼさずに割り当てられた評価のみ削除するよう選択することができます。提出が削除される場合、その評価は暗黙のうちに削除され、このオプションは無視されます。これには提出例の評価も含むことに留意してください。';
 $string['resetphase'] = 'セットアップフェーズにスイッチする';
 $string['resetphase_help'] = 'この設定を有効にした場合、すべてのワークショップは初期セットアップフェーズに入ります。';
 $string['resetsubmissions'] = 'すべての提出を削除する';
@@ -317,7 +327,6 @@ $string['workshop:viewallassessments'] = 'すべての評価を表示する';
 $string['workshop:viewallsubmissions'] = 'すべての提出を表示する';
 $string['workshop:viewauthornames'] = '作成者名を表示する';
 $string['workshop:viewauthorpublished'] = '公開された提出の作成者を表示する';
-$string['workshopviewed'] = 'ワークショップが閲覧されました。';
 $string['workshop:viewpublishedsubmissions'] = '公開済み提出を表示する';
 $string['workshop:viewreviewernames'] = '評価者名を表示する';
 $string['yourassessment'] = 'あなたの評価';

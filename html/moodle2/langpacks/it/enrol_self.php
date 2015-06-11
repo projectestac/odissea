@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_self', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,9 +62,9 @@ Per prorogare l\'iscrizione, recati su {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notifica scadenza iscrizione spontanea';
 $string['groupkey'] = 'Utilizza chiavi di iscrizione ai gruppi';
 $string['groupkey_desc'] = 'Utilizza per default le chiavi di iscrizione ai gruppi';
-$string['groupkey_help'] = 'Oltre alla chiave di accesso al corso, è possibile usare chiavi di iscrizione ai gruppi per regolare sia l\'accesso al corso sia l\'inserimento automatico dell\'utente in un gruppo.
+$string['groupkey_help'] = 'Oltre alla chiave di iscrizione al corso, è possibile usare chiavi di iscrizione ai gruppi per regolare sia l\'accesso al corso sia l\'inserimento automatico dell\'utente in un gruppo.
 
-Nota: per usare una chiave di iscrizione al gruppo è necessario specificare sia la chiave di accesso al corso sia la chiave di iscrizione al gruppo.';
+Nota: per usare una chiave di iscrizione al gruppo è necessario specificare sia la chiave di iscrizione al corso sia la chiave di iscrizione al gruppo.';
 $string['longtimenosee'] = 'Disiscrivi utenti non attivi dopo';
 $string['longtimenosee_help'] = 'Consente di disiscvievre automaticamente quegli utenti che non abbiamo svolto attività per il numero di giorni impostato.';
 $string['maxenrolled'] = 'Numero max. di iscrizioni';
@@ -76,17 +76,17 @@ $string['newenrols_desc'] = 'Per default gli utenti possono iscriversi ai corsi 
 $string['newenrols_help'] = 'L\'impostazione stabilisce se un utente può iscriversi spontaneamente al corso.';
 $string['nopassword'] = 'Non è necessaria una chiave di iscrizione';
 $string['password'] = 'Chiave di iscrizione';
-$string['password_help'] = 'Una chiave di accesso consente di regolare l\'iscrizione al corso consentendola ai soli utenti che ne sono in possesso.
+$string['password_help'] = 'Una chiave di iscrizione consente di regolare l\'iscrizione al corso consentendola ai soli utenti che ne sono in possesso.
 
 Lasciando il campo vuoto, qualsiasi utente autenticato potrà iscriversi spontaneamente al corso.
 
-Se viene specificata una chiave, agli utenti verrà chiesto di inserirla per perfezionare l\'iscrizione. La chiave verrà chiesta solo al primo accesso al corso.';
+Se viene impostata una chiave, agli utenti verrà chiesto di inserirla per perfezionare l\'iscrizione. La chiave verrà chiesta solo al primo accesso al corso.';
 $string['passwordinvalid'] = 'Chiave errata, per favore riprova';
-$string['passwordinvalidhint'] = 'La chiave di accesso è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
+$string['passwordinvalidhint'] = 'La chiave d\'iscrizione è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
 $string['pluginname'] = 'Iscrizione spontanea';
-$string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di decidere a quali corsi iscriversi. E\' possibile regolare le iscrizioni spontanee tramite chiavi di accesso. L\'iscrizione spontanea per funzionare ha bisogno del plugin Iscrizioni manuali, che deve essere abilitato nel medesimo corso. ';
-$string['requirepassword'] = 'Chiave di accesso obbligatoria';
-$string['requirepassword_desc'] = 'Rende obbligatoria la chiave di accesso nei nuovi corsi ed evita l\'eliminazione di chiavi d\'accesso già esistenti.';
+$string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di decidere a quali corsi iscriversi. E\' possibile regolare le iscrizioni spontanee tramite chiavi di iscrizione. L\'iscrizione spontanea per funzionare ha bisogno del plugin Iscrizioni manuali, che deve essere abilitato nel medesimo corso.';
+$string['requirepassword'] = 'Chiave d\'iscrizione obbligatoria';
+$string['requirepassword_desc'] = 'Rende obbligatoria la chiave d\'iscrizione nei nuovi corsi ed evita l\'eliminazione di chiavi d\'iscrizione già esistenti.';
 $string['role'] = 'Ruolo assegnato per default';
 $string['self:config'] = 'Configurare istanze plugin Iscrizione spontanea';
 $string['self:manage'] = 'Gestire utenti iscritti';
@@ -95,7 +95,7 @@ $string['self:unenrolself'] = 'Disiscriversi dai corsi';
 $string['sendcoursewelcomemessage'] = 'Invia messaggio di benvenuto al corso';
 $string['sendcoursewelcomemessage_help'] = 'Se abilitato, gli utenti che si iscrivono spontaneamente in un corso riceveranno per email un messaggio di benvenuto.';
 $string['showhint'] = 'Visualizza suggerimento';
-$string['showhint_desc'] = 'Visualizza la prima lettera della chiave d\'accesso.';
+$string['showhint_desc'] = 'Visualizza la prima lettera della chiave d\'iscrizione.';
 $string['status'] = 'Abilita iscrizioni già esistenti.';
 $string['status_desc'] = 'Abilita il metodo di iscrizione spontanea ai corsi.';
 $string['status_help'] = 'Disabilitando l\'impostazione, tutte le iscrizioni spontanee saranno sospese e non saranno consentite nuove iscrizioni.';
@@ -103,7 +103,7 @@ $string['unenrol'] = 'Cancella iscrizione utente';
 $string['unenrolselfconfirm'] = 'Sei certo di volerti disiscrivere dal corso "{$a}"?';
 $string['unenroluser'] = 'Sei certo di rimuovere l\'iscrizione di "{$a->user}" dal corso "{$a->course}"?';
 $string['usepasswordpolicy'] = 'Utilizza regole password';
-$string['usepasswordpolicy_desc'] = 'Le chiavi d\'accesso dovranno seguire le regole password.';
+$string['usepasswordpolicy_desc'] = 'Le chiavi d\'iscrizione dovranno seguire le regole password.';
 $string['welcometocourse'] = 'Benvenuto(a) in {$a}';
 $string['welcometocoursetext'] = 'Benvenuto(a) in {$a->coursename}!
 

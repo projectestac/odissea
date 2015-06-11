@@ -67,22 +67,21 @@ $string['modulename_help'] = '<a href="http://clic.xtec.cat/qv_web" target="_bla
 This module allows teachers to add QV activities to any course and to track pupils\' results (time spent on each of the activities, number of tries, score...).';
 $string['modulenameplural'] = 'Virtual Notebooks';
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
-$string['optionsheader'] = 'Options';
-$string['orderitems'] = 'Active random order questions'; //Albert
-$string['orderitems_help'] = 'Active random order questions'; //Albert
-$string['ordersections'] = 'Active random order sections'; //Albert
-$string['ordersections_help'] = 'Active random order sections'; //Albert
+$string['orderitems'] = 'Active random order questions';
+$string['orderitems_help'] = 'Active random order questions';
+$string['ordersections'] = 'Active random order sections';
+$string['ordersections_help'] = 'Active random order sections';
 $string['pluginadministration'] = 'QV module administration';
 $string['pluginname'] = 'QV';
-$string['preview'] = 'Preview activity';
-$string['qv_distpluginappl']='Applets\'s URL';
-$string['qv_distpluginappl_help']='Applets\'s URL';
-$string['qv_distpluginscripts']='Scripts\' URL';
-$string['qv_distpluginscripts_help']='Scripts\' URL';
-$string['qv_distplugincss']='Stylesheets\' URL';
-$string['qv_distplugincss_help']='Stylesheets\' URL';
-$string['qv_skins']='Skins names list, separated by comas';
-$string['qv_skins_help']='Skins names list, separated by comas';
+$string['preview_qv'] = 'Preview QV activity';
+$string['qv_distpluginappl'] = 'Applets\'s URL';
+$string['qv_distpluginappl_help'] = 'Applets\'s URL';
+$string['qv_distpluginscripts'] = 'Scripts\' URL';
+$string['qv_distpluginscripts_help'] = 'Scripts\' URL';
+$string['qv_distplugincss'] = 'Stylesheets\' URL';
+$string['qv_distplugincss_help'] = 'Stylesheets\' URL';
+$string['qv_skins'] = 'Skins names list, separated by comas';
+$string['qv_skins_help'] = 'Skins names list, separated by comas';
 $string['qvfile'] = 'QV activity file';
 $string['qvfile_help'] = 'The zip file where you will find the QV activity. It must contain index.htm file inside html folder.';
 $string['qvurl'] = 'URL';
@@ -90,7 +89,6 @@ $string['qvurl_help'] = 'This setting enables a URL for the QV to be specified, 
 $string['qv:view'] = 'View QV';
 $string['qv:submit'] = 'Submit QV';
 $string['qv:addinstance'] = 'Add QV';
-$string['return_results'] = 'Return to results';
 $string['score'] = 'Score';
 $string['start'] = 'Start the assessment';
 $string['state'] = 'State';
@@ -110,3 +108,7 @@ $string['width'] = 'Width';
 /* Revision Moodle 2.6 */
 $string['event_course_module_viewed'] = 'Course module viewed';
 $string['event_instances_list_viewed'] = 'Instances list viewed';
+$string['results'] = 'Results';
+$string['msg_nosessions'] = 'This QV activity hasn\'t yet any session';
+
+

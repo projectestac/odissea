@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Максимум курсов, которы�
 $string['expandall'] = 'Развернуть весь список курсов';
 $string['forcedefaultmaxcourses'] = 'Принудительный максимум курсов';
 $string['forcedefaultmaxcoursesdesc'] = 'При установленном параметре пользователь не сможет изменить свою личную настройку';
+$string['fullpath'] = 'Все категории и подкатегории';
 $string['hiddencoursecount'] = 'У Вас есть скрытые курсы - {$a}';
 $string['hiddencoursecountplural'] = 'У Вас есть скрытые курсы - {$a}';
 $string['hiddencoursecountwithshowall'] = 'У Вас есть {$a->coursecount} скрытый курс ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Переместить курс: {$a}';
 $string['movecoursehere'] = 'Переместить курс сюда';
 $string['movetofirst'] = 'Переместить курс {$a} вверх';
 $string['movingcourse'] = 'Вы перемещаете: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Не отображать';
 $string['numtodisplay'] = 'Количество отображаемых курсов:';
+$string['onlyparentname'] = 'Только родительская категория';
 $string['otherexpanded'] = 'Другие курсы развернуты';
 $string['pluginname'] = 'Сводка по курсам';
 $string['preservestates'] = 'Сохранить развернутое состояние';
 $string['shortnameprefix'] = 'Включает {$a}';
 $string['shortnamesufixprural'] = '({$a} и др.)';
 $string['shortnamesufixsingular'] = '({$a} и др.)';
+$string['showcategories'] = 'Отображение категорий';
+$string['showcategoriesdesc'] = 'Нужно ли под каждым курсом отображать категорию?';
 $string['showchildren'] = 'Показать дочерние';
 $string['showchildrendesc'] = 'Должны ли под названием основного курса быть перечислены дочерние курсы?';
 $string['showwelcomearea'] = 'Показать область приветствия';

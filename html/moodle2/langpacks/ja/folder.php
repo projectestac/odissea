@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'folder', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['display_help'] = 'あなたがコースでのフォルダコンテン�
 $string['displayinline'] = 'コースページにインライン表示する';
 $string['displaypage'] = '別ページに表示する';
 $string['dnduploadmakefolder'] = 'ファイルを解凍してフォルダを作成する';
+$string['eventfolderupdated'] = 'フォルダが更新されました。';
 $string['folder:addinstance'] = '新しいフォルダを追加する';
 $string['foldercontent'] = 'ファイルおよびサブフォルダ';
 $string['folder:managefiles'] = 'フォルダモジュールのファイルを管理する';
@@ -41,9 +42,8 @@ $string['modulename_help'] = 'フォルダモジュールにおいて、コー�
 フォルダは下記のように使用することができます:
 
 * 例えば過去のPDF版の試験問題または学生プロジェクトで使用するイメージコレクションのように、1つのテーマに関する一連のファイル用として
-* コースページ内の教師に共有アップロードスペースを提供するため (教師のみ閲覧できるよう、フォルダの非表示にする)';
+* コースページ内の教師に共有アップロードスペースを提供するため (教師のみ閲覧できるようフォルダの非表示にする)';
 $string['modulenameplural'] = 'フォルダ';
-$string['neverseen'] = '未閲覧';
 $string['noautocompletioninline'] = '活動閲覧による自動完了は「コースページにインライン表示する」オプションと同時に選択することはできません。';
 $string['page-mod-folder-view'] = 'フォルダモジュールメインページ';
 $string['page-mod-folder-x'] = 'すべてのフォルダモジュールページ';

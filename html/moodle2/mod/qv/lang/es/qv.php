@@ -65,14 +65,13 @@ Este módulo permite al profesorado añadir a un curso cualquier actividad de ti
 
 $string['modulenameplural'] = 'Cuadernos Virtuales';
 $string['notopenyet'] = 'Esta actividad no estará disponible hasta {$a}';
-$string['optionsheader'] = 'Opciones';
 $string['orderitems'] = 'Activar la ordenación aleatoria de preguntas';
 $string['orderitems_help'] = 'Activar la ordenación aleatoria de preguntas';
 $string['ordersections'] = 'Activar la ordenación aleatoria de hojas';
 $string['ordersections_help'] = 'Activar la ordenación aleatoria de hojas';
 $string['pluginadministration'] = 'Admnistración del módulo de QV';
 $string['pluginname'] = 'QV';
-$string['preview'] = 'Previsualizar actividad';
+$string['preview'] = 'Previsualizar actividad QV';
 $string['qv_distpluginappl'] = 'URL dónde se encuentran los applets';
 $string['qv_distpluginappl_help'] = 'URL dónde se encuentran los applets';
 $string['qv_distpluginscripts'] = 'URL dónde se encuentran los scripts';
@@ -88,7 +87,6 @@ $string['qvurl_help'] = 'Este parámetro habilita un URL para especificar el QV 
 $string['qv:view'] = 'Visualizar QV';
 $string['qv:submit'] = 'Enviar QV';
 $string['qv:addinstance'] = 'Añadir QV';
-$string['return_results'] = 'Volver a los resultados';
 $string['score'] = 'Puntuación';
 $string['start'] = 'Empezar el Cuaderno';
 $string['state'] = 'Estado';
@@ -108,3 +106,5 @@ $string['width'] = 'Anchura';
 /* Revision Moodle 2.6 */
 $string['event_course_module_viewed'] = 'Módulo de curso visto';
 $string['event_instances_list_viewed'] = 'Lista de instancias vistas';
+$string['results'] = 'Resultados';
+$string['msg_nosessions'] = 'Esta actividad QV todavía no tiene ninguna sessión';

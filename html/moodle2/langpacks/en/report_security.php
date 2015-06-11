@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,11 +60,6 @@ $string['check_frontpagerole_error'] = 'Incorrectly defined frontpage role "{$a}
 $string['check_frontpagerole_name'] = 'Frontpage role';
 $string['check_frontpagerole_notset'] = 'Frontpage role is not set.';
 $string['check_frontpagerole_ok'] = 'Frontpage role definition is OK.';
-$string['check_globals_details'] = '<p>Register globals is considered to be a highly insecure PHP setting.</p>
-<p><code>register_globals=off</code> must be set in PHP configuration. This setting is controlled by editing your <code>php.ini</code>, Apache/IIS configuration or <code>.htaccess</code> file.</p>';
-$string['check_globals_error'] = 'Register globals MUST be disabled. Please fix the server PHP settings immediately!';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Register globals are disabled.';
 $string['check_google_details'] = '<p>The Open to Google setting enables search engines to enter courses with guest access. There is no point in enabling this setting if guest login is not allowed.</p>';
 $string['check_google_error'] = 'Search engine access is allowed but guest access is disabled.';
 $string['check_google_info'] = 'Search engines may enter as guests.';

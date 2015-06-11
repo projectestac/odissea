@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -130,7 +130,6 @@ $string['mnetdisabled'] = 'MNet är <strong>avaktiverat</strong>.';
 $string['mnetidprovider'] = 'Leverantör av ID för MNet';
 $string['mnetidprovidermsg'] = 'Du bör kunna logga in hos din {$a} leverantör.';
 $string['mnetidprovidernotfound'] = 'Tyvärr, men ingen ytterligare information kunde hittas.';
-$string['mnetlog'] = 'Loggar';
 $string['mnetpeers'] = '\'Peers\' jämbördiga partners';
 $string['mnetservices'] = 'Tjänster';
 $string['mnet_session_prohibited'] = 'Användare från Din hemserver har f.n. inte tillstånd att navigera vidare till {$a}.';

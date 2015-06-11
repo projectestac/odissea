@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = '未定义的布局';
 $string['layoutvertical'] = '纵向排列的单选按钮';
 $string['nooptionsforsubquestion'] = '不能获取题目 #{$a->sub} 的选项(question->id={$a->id})';
 $string['noquestions'] = '完形题“<strong>{$a}</strong>”中没有任何问题';
+$string['pleaseananswerallparts'] = '请回答题目的所有部分。';
 $string['pluginname'] = '内嵌答案(完形填空)';
 $string['pluginnameadding'] = '添加内嵌答案(完形填空)题';
 $string['pluginnameediting'] = '修改内嵌答案(完形填空)';

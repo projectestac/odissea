@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'my', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,3 +35,5 @@ $string['nocourses'] = 'Sem informação das suas disciplinas para mostrar.';
 $string['noguest'] = 'A Minha página principal não está disponível para visitantes';
 $string['pinblocks'] = 'Configurar blocos fixos para a \'Minha página principal\'';
 $string['pinblocksexplan'] = 'Quaisquer definições de blocos que aqui sejam configuradas serão disponibilizadas (sem possibilidade de edição) a qualquer utilizador do moodle na sua página \'Minha página principal\'';
+$string['reseterror'] = 'Houve um erro ao redefinir a sua página';
+$string['resetpage'] = 'Restaurar página para os valores predefinidos';

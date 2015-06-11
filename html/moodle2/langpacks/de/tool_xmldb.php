@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_xmldb', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,7 +83,7 @@ $string['doc'] = 'Dokumentation';
 $string['docindex'] = 'Dokumentationsindex:';
 $string['documentationintro'] = 'Diese Dokumentation wurde automatisch aus der Definition der XMLDB-Datenbank generiert. Sie ist ausschließlich in Englisch verfügbar.';
 $string['down'] = 'Nach unten';
-$string['duplicate'] = 'Kopieren';
+$string['duplicate'] = 'Duplizieren';
 $string['duplicatefieldname'] = 'Es existiert bereits ein anderes Feld mit diesem Namen';
 $string['duplicatefieldsused'] = 'Verwendete Felder duplizieren';
 $string['duplicateindexname'] = 'Doppelter Indexname';

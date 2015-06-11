@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,6 @@ Det finns även avancerade inställningsalternativ som gör det möjligt att def
 
 Observera att URL/webbadresser även kan läggas till andra resurser eller aktiviteter genom att använda sig av textredigeraren i respektive element.';
 $string['modulenameplural'] = 'URLer';
-$string['neverseen'] = 'Aldrig visad';
 $string['page-mod-url-x'] = 'Valfri URL modulsida';
 $string['parameterinfo'] = 'parameter=variabel';
 $string['parametersheader'] = 'Parametrar';

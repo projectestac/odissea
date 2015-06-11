@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,6 +151,7 @@ $string['course:movesections'] = 'Mover secções';
 $string['course:publish'] = 'Publicar uma disciplina num <em>hub</em>';
 $string['course:request'] = 'Pedir nova disciplina';
 $string['course:reset'] = 'Repor disciplina';
+$string['course:reviewotherusers'] = 'Rever outros utilizadores';
 $string['course:sectionvisibility'] = 'Controlar visibilidade de secções';
 $string['course:setcurrentsection'] = 'Definir secção atual';
 $string['course:update'] = 'Atualizar definições de disciplinas';
@@ -178,10 +179,10 @@ $string['defaultx'] = 'Predefinido: {$a}';
 $string['defineroles'] = 'Definir papéis';
 $string['deletecourseoverrides'] = 'Apagar todas as adaptações existentes na disciplina';
 $string['deletelocalroles'] = 'Apagar todas as atribuições locais de papéis';
-$string['deleterolesure'] = 'Tem a certeza que quer apagar o papel "{$a->name} ({$a->shortname})"?</p><p>Atualmente existem {$a->count} utilizadores atribuídos a esse papel.';
+$string['deleterolesure'] = '<p>Tem a certeza que quer apagar o papel "{$a->name} ({$a->shortname})"?</p><p>Atualmente existem {$a->count} utilizadores atribuídos a esse papel.</p>';
 $string['deletexrole'] = 'Apagar o papel {$a}';
 $string['duplicaterole'] = 'Duplicar papel';
-$string['duplicaterolesure'] = 'Tem a certeza que pretende duplicar o papel "{$a->name} ({$a->shortname})"?</p>';
+$string['duplicaterolesure'] = '<p>Tem a certeza que pretende duplicar o papel "{$a->name} ({$a->shortname})"?</p>';
 $string['editingrolex'] = 'A editar o papel \'{$a}';
 $string['editrole'] = 'Editar papel';
 $string['editxrole'] = 'Editar o papel {$a}';
@@ -363,6 +364,7 @@ $string['site:backup'] = 'Fazer cópias de segurança de disciplinas';
 $string['site:config'] = 'Alterar configurações do site';
 $string['site:doanything'] = 'Autorizado(a) a fazer tudo';
 $string['site:doclinks'] = 'Mostrar hiperligações para documentos localizados fora do site';
+$string['site:forcelanguage'] = 'Sobrepor idioma do curso';
 $string['site:import'] = 'Importar outras disciplinas para uma disciplina';
 $string['site:manageblocks'] = 'Gerir blocos a nível do site';
 $string['site:mnetloginfromremote'] = 'Login de um Moodle remoto';
@@ -411,6 +413,7 @@ $string['user:update'] = 'Modificar perfil dos utilizadores';
 $string['user:viewalldetails'] = 'Ver a informação completa do utilizador';
 $string['user:viewdetails'] = 'Ver perfil dos utilizadores';
 $string['user:viewhiddendetails'] = 'Ver dados ocultos dos utilizadores';
+$string['user:viewlastip'] = 'Ver último endereço IP do utilizador';
 $string['user:viewuseractivitiesreport'] = 'Ver relatórios de atividade do utilizador';
 $string['user:viewusergrades'] = 'Ver notas de utilizador';
 $string['useshowadvancedtochange'] = 'Usar \'Mostrar avançado\' para alterar';

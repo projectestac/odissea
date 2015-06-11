@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'data', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,7 +103,7 @@ $string['csvimport_help'] = '<p align="center"><strong>Importeren met een CSV be
 <p>Waarschuwing: sommige veldtypes worden niet ondersteund.</p>';
 $string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> tekst met het gekozen scheidingsteken:';
 $string['data:addinstance'] = 'Voeg een nieuwe databank toe';
-$string['data:approve'] = 'Keur nieuwe items goed of verwerp goedgekeurde items';
+$string['data:approve'] = 'Keur nieuwe items goed en verwerp goedgekeurde items';
 $string['data:comment'] = 'Schrijf commentaar';
 $string['data:exportallentries'] = 'Exporteer alle databankitems';
 $string['data:exportentry'] = 'Exporteer een databankitem';
@@ -153,6 +153,14 @@ $string['entry'] = 'Item';
 $string['entrysaved'] = 'Gegevens bewaard.';
 $string['errormustbeteacher'] = 'Je moet leraar zijn om deze pagina te kunnen gebruiken';
 $string['errorpresetexists'] = 'Er bestaat al een preset met de gekozen naam';
+$string['eventfieldcreated'] = 'Veld gemaakt';
+$string['eventfielddeleted'] = 'Veld verwijderd';
+$string['eventfieldupdated'] = 'Veld aangepast';
+$string['eventrecordcreated'] = 'Rapport gemaakt';
+$string['eventrecorddeleted'] = 'Rapport verwijderd';
+$string['eventrecordupdated'] = 'Rapport aangepast';
+$string['eventtemplateupdated'] = 'Sjabloon aangepast';
+$string['eventtemplateviewed'] = 'Sjablonen bekeken';
 $string['example'] = 'Voorbeeld van een databankmodule';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Deze activiteit is gesloten op {$a} en is niet langer beschikbaar';
@@ -250,7 +258,7 @@ De zichtbare layout van de informatie bij het maken van lijsten, bekijken of bew
 
 Als de filter databank automatisch linken is ingeschakeld, dan zullen items in de databank  automatisch gelinkt worden aan woorden en zinnen die in de cursus voorkomen.
 
-Een leraar kan opmerkingen bij databankitems toestaan. Databankitems kunnen ook beoordeeld worden door leraars of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een eindbeoordeling te vormen die in het puntenboek opgeslagen wordt.
+Een leraar kan opmerkingen bij databankitems toestaan. Databankitems kunnen ook beoordeeld worden door leraars of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een eindbeoordeling te vormen die in de cijferlijst opgeslagen wordt.
 
 Databankactiviteiten kunnen voor heel veel zaken gebruikt worden, zoals
 

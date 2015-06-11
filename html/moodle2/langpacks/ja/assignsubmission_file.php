@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_file', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['default'] = 'デフォルトで有効にする';
 $string['default_help'] = '有効にした場合、すべての新しい課題において、この提出方法がデフォルトで有効にされます。';
 $string['enabled'] = 'ファイル提出';
 $string['enabled_help'] = '有効にした場合、学生は1つまたはそれ以上のファイルを提出物としてアップロードすることができます。';
-$string['event_assessable_uploaded'] = 'ファイルがアップロードされました。';
+$string['eventassessableuploaded'] = 'ファイルがアップロードされました。';
 $string['file'] = 'ファイル提出';
 $string['maxbytes'] = '最大ファイルサイズ';
 $string['maxfilessubmission'] = '最大アップロードファイル数';

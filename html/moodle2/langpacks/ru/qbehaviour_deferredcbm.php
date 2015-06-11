@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,3 +69,4 @@ $string['pluginname'] = 'Отложенный отзыв с учетом уве�
 $string['slightlyoverconfident'] = 'уверен(а)';
 $string['slightlyunderconfident'] = 'немного не уверен(а)';
 $string['underconfident'] = 'не уверен(а)';
+$string['weightx'] = 'Вес {$a}';

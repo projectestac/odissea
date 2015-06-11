@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'survey', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,6 +200,9 @@ $string['downloadinfo'] = 'Sie können die Rohdaten dieser Umfrage vollständig 
 $string['downloadresults'] = 'Ergebnisse herunterladen';
 $string['downloadtext'] = 'Daten als reine Text-Datei herunterladen';
 $string['editingasurvey'] = 'Eine Umfrage bearbeiten';
+$string['eventreportdownloaded'] = 'Bericht zur Befragung heruntergeladen';
+$string['eventreportviewed'] = 'Bericht zur Befragung angezeigt';
+$string['eventresponsesubmitted'] = 'Antwort zur Befragung eingereicht';
 $string['guestsnotallowed'] = 'Gäste dürfen an Umfragen nicht teilnehmen.';
 $string['howlong'] = 'Wie lange haben Sie für das Ausfüllen dieser Umfrage gebraucht?';
 $string['howlongoptions'] = 'unter 1 Min, 1-2 Min, 2-3 Min, 3-4 Min, 4-5 Min, 5-10 Min, mehr als 10 Min';
@@ -242,6 +245,7 @@ $string['selectedquestions'] = 'Ausgewählte Fragen aus einer Skala, alle Teilne
 $string['summary'] = 'Zusammenfassung';
 $string['survey:addinstance'] = 'Umfrage hinzufügen';
 $string['surveycompleted'] = 'Sie haben die Umfrage beendet. Das folgende Diagramm zeigt Ihre Ergebnisse im Vergleich zum Durchschnitt Ihrer Lerngruppe.';
+$string['surveycompletednograph'] = 'Sie haben diese Umfrage abgeschlossen.';
 $string['survey:download'] = 'Antworten herunterladen';
 $string['surveygraph'] = 'Umfragegrafik';
 $string['surveyname'] = 'Name der Umfrage';

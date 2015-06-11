@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,16 +53,17 @@ $string['notwritable_help'] = 'L\'installazione automatica degli aggiornamenti �
 
 Per installare automaticamente gli aggiornamenti del plugin è necessario dare gli appropriati permessi di scrittura sulle cartelle e sui file del plugin.';
 $string['numdisabled'] = 'Disabilitati: {$a}';
-$string['numextension'] = 'Plugin: {$a}';
+$string['numextension'] = 'Aggiuntivi: {$a}';
 $string['numtotal'] = 'Installati: {$a}';
 $string['numupdatable'] = 'Aggiornamenti disponibili: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
-$string['pluginchecknotice'] = 'La pagina visualizza i plugin che potrebbero richiedere una verifica prima dell\'aggiornamento. Gli elementi evidenziati includono nuovi plugin in procinto di essere installati, plugin da aggiornare e plugin mancanti. I plugin aggiuntivi vengono evidenziati se è disponibile un aggiornamento. Si raccomanda di controllare la disponibilità di versioni più recenti dei plugin aggiuntivi e aggiornare il relativo codice prima di effettuare l\'aggiornamento di Moodle.';
+$string['pluginchecknotice'] = 'La pagina visualizza i plugin che richiedono una verifica prima dell\'aggiornamento. Gli elementi evidenziati includono nuovi plugin in procinto di essere installati, plugin da aggiornare e plugin mancanti. I plugin aggiuntivi vengono evidenziati se è disponibile un aggiornamento. Si raccomanda di controllare la disponibilità di versioni più recenti dei plugin aggiuntivi e aggiornare il relativo codice prima di effettuare l\'aggiornamento di Moodle.';
 $string['plugindisable'] = 'Disabilita';
 $string['plugindisabled'] = 'Disabilitato';
 $string['pluginenable'] = 'Abilita';
 $string['pluginenabled'] = 'Abilitato';
+$string['release'] = 'Release';
 $string['requiredby'] = 'Richiesto da: {$a}';
 $string['requires'] = 'Richiede';
 $string['rootdir'] = 'Cartella';
@@ -72,7 +73,7 @@ $string['somehighlighted'] = 'Numero di plugin che richiedono la tua attenzione 
 $string['somehighlightedinfo'] = 'Visualizza l\'elenco completo dei plugin installati';
 $string['somehighlightedonly'] = 'Visualizza solo i plugin che richiedono attenzione';
 $string['source'] = 'Sorgente';
-$string['sourceext'] = 'Componente aggiuntivo';
+$string['sourceext'] = 'Aggiuntivo';
 $string['sourcestd'] = 'Standard';
 $string['status'] = 'Stato';
 $string['status_delete'] = 'Da eliminare';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'Installato';
 $string['systemname'] = 'Identificativo';
 $string['type_auth'] = 'Metodo di autenticazione';
 $string['type_auth_plural'] = 'Plugin di autenticazione';
+$string['type_availability'] = 'Condizione per l\'accesso';
+$string['type_availability_plural'] = 'Condizioni per l\'accesso';
 $string['type_block'] = 'Blocco';
 $string['type_block_plural'] = 'Blocchi';
 $string['type_cachelock'] = 'Cache lock handler';

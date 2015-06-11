@@ -49,8 +49,7 @@
  *          UL->user level info
  *          files->table may have files)
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  2010 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -70,13 +69,14 @@ class backup_lesson_activity_structure_step extends backup_activity_structure_st
         // alot goes into it but nothing relational other than course when will
         // need to be corrected upon restore
         $lesson = new backup_nested_element('lesson', array('id'), array(
-            'course','name','practice','modattempts','usepassword','password',
-            'dependency','conditions','grade','custom','ongoing','usemaxgrade',
-            'maxanswers','maxattempts','review','nextpagedefault','feedback',
-            'minquestions','maxpages','timed','maxtime','retake','activitylink',
-            'mediafile','mediaheight','mediawidth','mediaclose','slideshow',
-            'width','height','bgcolor','displayleft','displayleftif','progressbar',
-            'showhighscores','maxhighscores','available','deadline','timemodified'
+            'course', 'name', 'intro', 'introformat', 'practice', 'modattempts',
+            'usepassword', 'password',
+            'dependency', 'conditions', 'grade', 'custom', 'ongoing', 'usemaxgrade',
+            'maxanswers', 'maxattempts', 'review', 'nextpagedefault', 'feedback',
+            'minquestions', 'maxpages', 'timed', 'maxtime', 'retake', 'activitylink',
+            'mediafile', 'mediaheight', 'mediawidth', 'mediaclose', 'slideshow',
+            'width', 'height', 'bgcolor', 'displayleft', 'displayleftif', 'progressbar',
+            'showhighscores', 'maxhighscores', 'available', 'deadline', 'timemodified'
         ));
         // Tell the lesson element about the showhighscores elements mapping to the highscores
         // database field.
@@ -189,8 +189,11 @@ class backup_lesson_activity_structure_step extends backup_activity_structure_st
         $timer->annotate_ids('user', 'userid');
 
         // Annotate the file areas in user by the lesson module.
+        $lesson->annotate_files('mod_lesson', 'intro', null);
         $lesson->annotate_files('mod_lesson', 'mediafile', null);
         $page->annotate_files('mod_lesson', 'page_contents', 'id');
+        $answer->annotate_files('mod_lesson', 'page_answers', 'id');
+        $answer->annotate_files('mod_lesson', 'page_responses', 'id');
 
         // Prepare and return the structure we have just created for the lesson module.
         return $this->prepare_activity_structure($lesson);

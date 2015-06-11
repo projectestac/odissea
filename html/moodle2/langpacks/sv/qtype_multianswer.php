@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Odefinierat utseende';
 $string['layoutvertical'] = 'Vertikal kolumn med radioknappar';
 $string['nooptionsforsubquestion'] = 'Kan inte hämta alternativ för frågedel # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'The Cloze(multianswer) question "<strong>{$a}</strong>" does not contain any question';
+$string['pleaseananswerallparts'] = 'Vänligen besvara alla delar av frågan.';
 $string['pluginname'] = 'Inbäddade svar (Cloze)';
 $string['pluginnameadding'] = 'Lägga till en Inbäddat svar (Cloze) fråga';
 $string['pluginnameediting'] = 'Redigera en inbäddat svar (Cloze) fråga';

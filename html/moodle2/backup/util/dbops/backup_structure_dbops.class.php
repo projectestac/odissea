@@ -111,10 +111,10 @@ abstract class backup_structure_dbops extends backup_dbops {
      * @param string $component Component
      * @param string $filearea File area
      * @param int $itemid Item id
-     * @param core_backup_progress $progress
+     * @param \core\progress\base $progress
      */
     public static function annotate_files($backupid, $contextid, $component, $filearea, $itemid,
-            core_backup_progress $progress = null) {
+            \core\progress\base $progress = null) {
         global $DB;
         $sql = 'SELECT id
                   FROM {files}
@@ -153,9 +153,9 @@ abstract class backup_structure_dbops extends backup_dbops {
      *
      * @param string $backupid Backup ID
      * @param string $itemname Item name
-     * @param core_backup_progress $progress Progress tracker
+     * @param \core\progress\base $progress Progress tracker
      */
-    public static function move_annotations_to_final($backupid, $itemname, core_backup_progress $progress) {
+    public static function move_annotations_to_final($backupid, $itemname, \core\progress\base $progress) {
         global $DB;
         $progress->start_progress('move_annotations_to_final');
         $rs = $DB->get_recordset('backup_ids_temp', array('backupid' => $backupid, 'itemname' => $itemname));

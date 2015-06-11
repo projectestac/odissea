@@ -281,12 +281,8 @@ class assign_feedback_editpdf extends assign_feedback_plugin {
      */
     public function is_enabled() {
         if ($this->enabledcache === null) {
-            if (!extension_loaded('zlib')) {
-                $this->enabledcache = false;
-            } else {
-                $testpath = assignfeedback_editpdf\pdf::test_gs_path(false);
-                $this->enabledcache = ($testpath->status == assignfeedback_editpdf\pdf::GSPATH_OK);
-            }
+            $testpath = assignfeedback_editpdf\pdf::test_gs_path(false);
+            $this->enabledcache = ($testpath->status == assignfeedback_editpdf\pdf::GSPATH_OK);
         }
         return $this->enabledcache;
     }

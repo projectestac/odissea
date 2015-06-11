@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'repository', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,7 +62,10 @@ $string['close'] = 'Tanca';
 $string['commonrepositorysettings'] = 'Paràmetres comuns dels repositoris';
 $string['configallowexternallinks'] = 'Aquesta opció permet als usuaris triar si les memòries  externes es copien a Moodle o no. Si està desactivat llavors les memòries externes sempre es copiaran a Moodle (això és el millor per a la integritat de dades en general i la seguretat). Si aquesta opció està habilitada l\'usuari podrà triar cada vegada que s\'afegeix un medi si s\'importa el text.';
 $string['configcacheexpire'] = 'Temps (en segons) que es mantenen a la memòria cau els llistats de fitxers quan s\'exploren repositoris externs.';
+$string['configgetfiletimeout'] = 'Temps d\'espera en segons per a baixar el fitxer extern en Moodle.';
 $string['configsaved'] = 'Configuració desada!';
+$string['configsyncfiletimeout'] = 'Temps d\'espera en segons per a sincronitzar la mida del fitxer extern.';
+$string['configsyncimagetimeout'] = 'Temps d\'espera en segons per a baixar el fitxer d\'imatge des d\'un repositori extern durant la sincronització.';
 $string['confirmdelete'] = 'Esteu segur que voleu suprimir aquest repositori - {$a}? Si trieu "Continua i descarrega", les referències de fitxer a continguts externs es descarregaran en moodle, però podria ser molt llarg de processar.';
 $string['confirmdeletefile'] = 'Esteu segur que voleu suprimir el fitxer?';
 $string['confirmdeletefilewithhref'] = 'Esteu segur que voleu suprimir el fitxer? Hi ha {$a} àlies o accessos directes de fitxer que utilitzen aquest fitxer com a font. Si procediu, aquests àlies es convertiran en còpies autèntiques.';
@@ -124,6 +127,7 @@ $string['folderexists'] = 'El nom de la carpeta ja s\'està utilitzant, utilitze
 $string['foldernotfound'] = 'No s\'ha trobat la carpeta';
 $string['folderrecurse'] = 'La carpeta no es pot moure a la seva pròpia subcarpeta';
 $string['getfile'] = 'Seleccioneu aquest fitxer';
+$string['getfiletimeout'] = 'Temps d\'espera per a obtenir el fitxer';
 $string['help'] = 'Ajuda';
 $string['hidden'] = 'Ocult';
 $string['iconview'] = 'Mostra com a icones';
@@ -141,10 +145,12 @@ $string['invalidplugin'] = 'Connector del repositori {$a} invàlid';
 $string['invalidrepositoryid'] = 'ID de repositori invàlida';
 $string['isactive'] = 'Actiu?';
 $string['keyword'] = 'Paraula clau';
+$string['lastmodified'] = 'Darrera modificació';
+$string['license'] = 'Llicència';
 $string['linkexternal'] = 'Lloc extern';
 $string['listview'] = 'Visualitza com a llista';
 $string['loading'] = 'S\'està carregant...';
-$string['login'] = 'Inicia la sessió';
+$string['login'] = 'Inicieu la sessió';
 $string['logout'] = 'Tanca la sessió';
 $string['lostsource'] = 'Error. No es troba la font. {$a}';
 $string['makefileinternal'] = 'Fes una còpia del fitxer';
@@ -154,6 +160,7 @@ $string['manage'] = 'Gestiona els repositoris';
 $string['manageurl'] = 'Gestiona';
 $string['manageuserrepository'] = 'Gestiona el repositori individual';
 $string['moving'] = 'S\'està movent';
+$string['name'] = 'Nom';
 $string['newfolder'] = 'Carpeta nova';
 $string['newfoldername'] = 'Nom de la nova carpeta';
 $string['noenter'] = 'No s\'ha introduït res';
@@ -173,6 +180,7 @@ $string['operation'] = 'Operació';
 $string['original'] = 'Original';
 $string['overwrite'] = 'Sobreescriu';
 $string['overwriteall'] = 'Sobreescriu tot';
+$string['path'] = 'Camí';
 $string['personalrepositories'] = 'Instàncies del repositori disponibles';
 $string['plugin'] = 'Connectors de repositori';
 $string['pluginerror'] = 'Errors al connector del repositori';
@@ -212,6 +220,8 @@ $string['siteinstances'] = 'Instàncies de repositori del lloc';
 $string['size'] = 'Mida';
 $string['submit'] = 'Envia';
 $string['sync'] = 'Sync';
+$string['syncfiletimeout'] = 'Temps d\'espera per a la sincronització del fitxer';
+$string['syncimagetimeout'] = 'Temps d\'espera per a la sincronització de la imatge';
 $string['thumbview'] = 'Vista d\'icones';
 $string['title'] = 'Tria un fitxer...';
 $string['type'] = 'Tipus';

@@ -14,24 +14,24 @@ Feature: Authentication
     Then I should see "You are logged in as Admin User" in the "page-footer" "region"
 
   Scenario: Log in as an existing admin user filling the form
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | password | firstname | lastname | email |
-      | testuser | testuser | Test | User | moodle@moodlemoodle.com |
+      | testuser | testuser | Test | User | moodle@example.com |
     And I am on homepage
     When I follow "Log in"
-    And I fill in "Username" with "testuser"
-    And I fill in "Password" with "testuser"
+    And I set the field "Username" to "testuser"
+    And I set the field "Password" to "testuser"
     And I press "Log in"
     Then I should see "You are logged in as" in the "page-footer" "region"
 
   Scenario: Log in as an unexisting user filling the form
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | password | firstname | lastname | email |
-      | testuser | testuser | Test | User | moodle@moodlemoodle.com |
+      | testuser | testuser | Test | User | moodle@example.com |
     And I am on homepage
     When I follow "Log in"
-    And I fill in "Username" with "testuser"
-    And I fill in "Password" with "unexisting"
+    And I set the field "Username" to "testuser"
+    And I set the field "Password" to "unexisting"
     And I press "Log in"
     Then I should see "Invalid login, please try again"
 

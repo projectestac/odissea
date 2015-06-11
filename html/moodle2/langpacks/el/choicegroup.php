@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choicegroup', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,7 +83,6 @@ $string['notanswered'] = 'Δεν απαντήθηκε ακόμη';
 $string['notenrolledchoose'] = 'Λυπούμαστε, αλλά μόνο εγγεγραμμένοι χρήστες επιτρέπεται να κάνουν επιλογή.';
 $string['notopenyet'] = 'Λυπούμαστε, αλλά αυτή η δραστηριότητα δεν είναι διαθέσιμη πριν τις {$a}';
 $string['notyetresultsviewable'] = 'Τα αποτελέσματα θα είναι ορατά αφού ολοκληρωθεί αυτή η δραστηριότητα.';
-$string['numberofuser'] = 'Ο αριθμός του χρήστη';
 $string['option'] = 'Ομάδα';
 $string['page-mod-choice-x'] = 'Οποιαδήποτε σελίδα του module επιλογής ομάδας';
 $string['pleasesetgroups'] = 'Παρακαλώ δημιουργήστε τουλάχιστον δύο ομάδες σε αυτό το μάθημα.';

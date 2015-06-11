@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,6 @@ Un Archivo puede utilizarse para
 * Incluire una mini-web como recurso del curso
 * Proveer a los estudiantes de borradores de archivos para que los editen y los envíen en sus tareas';
 $string['modulenameplural'] = 'Archivos';
-$string['neverseen'] = 'Nunca visto';
 $string['notmigrated'] = 'Este tipo de recurso heredado ({$a}) no ha sido trasladado aún.';
 $string['optionsheader'] = 'Mostrar opciones';
 $string['page-mod-resource-x'] = 'Cualquier página del módulo Archivo';

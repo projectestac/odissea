@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -129,6 +129,7 @@ $string['defaultessayresponse'] = 'Die Freitext-Antwort wird später bewertet.';
 $string['deleteallattempts'] = 'Alle Versuche der Lektion löschen';
 $string['deletedefaults'] = '{$a} x Lektionen gelöscht';
 $string['deletedpage'] = 'Seite gelöscht';
+$string['deletepagenamed'] = 'Seite löschen: {$a}';
 $string['deleting'] = 'Lösche';
 $string['deletingpage'] = 'Lösche Seite {$a}';
 $string['dependencyon'] = 'Abhängigkeit von anderen Lektionen';
@@ -143,11 +144,11 @@ $string['displaydefaultfeedback_help'] = '<h2>Standardrückmeldung anzeigen</h2>
 <p>Bei der Einstellung <strong>Ja</strong> wird die Standardrückmeldung (Richtig/Falsch) angezeigt, sofern keine individuelle Rückmeldung vorhanden ist.</p>
 <p>Bei der Einstellung <strong>Nein</strong> wird keine Rückmeldung angezeigt, sofern keine individuelle Rückmeldung vorhanden ist. Die Teilnehmer/innen werden dann automatisch zur nächsten Seite der Lektion geführt. </p>';
 $string['displayhighscores'] = 'High Scores anzeigen';
-$string['displayinleftmenu'] = 'Im linken Seitenmenü anzeigen?';
+$string['displayinleftmenu'] = 'Im Menü anzeigen?';
 $string['displayleftif'] = 'Menü nur anzeigen, wenn die Bewertung höher ist als';
-$string['displayleftif_help'] = 'Diese Einstellung legt fest, ob eine bestimmte Bewertung erreicht sein muss, bevor das linke Seitenmenü sichtbar wird. Dies zwingt die Teilnehmer/innen dazu, bei ihren ersten Versuchen durch die gesamte Lektion zu gehen. Erst nach dem Erreichen einer bestimmten Punktzahl kann das linke Seitenmenü benutzet werden, um sich die Lösungen nochmals anzuschauen.';
-$string['displayleftmenu'] = 'Linkes Seitenmenü anzeigen';
-$string['displayleftmenu_help'] = 'Wenn diese Option aktiviert ist, wird am linken Rand ein Seitenmenü mit der Liste aller Inhaltsseiten angezeigt.';
+$string['displayleftif_help'] = 'Diese Option legt fest, ob eine bestimmte Bewertung erreicht sein muss, damit das Menü sichtbar ist. Dies zwingt Teilnehmer/innen, bei ihrem ersten Versuch durch die gesamte Lektion zu gehen. Erst mit dem Erreichen einer bestimmten Punktzahl kann das Menü benutzt werden, um  alle Lösungen nochmals zu kontrollieren.';
+$string['displayleftmenu'] = 'Menü anzeigen';
+$string['displayleftmenu_help'] = 'Diese Option legt fest, ob ein Menü zur Navigation zwischen den Seiten angezeigt wird.';
 $string['displayofgrade'] = 'Anzeige der Bewertungen (für Teilnehmer/innen)';
 $string['displayreview'] = 'Wiederholung bei falscher Antwort';
 $string['displayreview_help'] = 'Diese Option zeigt nach einer falsch beantworteten Frage eine Taste, mit der die Teilnehmer/innen zur Frage zurückgehen und diese noch einmal antworten können.';
@@ -173,7 +174,7 @@ $string['enterpassword'] = 'Bitte geben Sie das Kennwort ein:';
 $string['eolstudentoutoftime'] = 'Achtung: Die verfügbare Zeit ist abgelaufen. Die letzte Frage wird nicht bewertet, wenn die Antwort nach Zeitablauf abgegeben wurde.';
 $string['eolstudentoutoftimenoanswers'] = 'Sie haben keine Fragen beantwortet. Sie erhalten daher 0 Punkte für die Lektion.';
 $string['essay'] = 'Freitext';
-$string['essayemailmessage'] = '<p>Freitext-Frage: <blockquote>{$a->question}</blockquote></p>
+$string['essayemailmessage'] = '<p>Freitextfrage: <blockquote>{$a->question}</blockquote></p>
 <p>Ihre Freitext-Antwort: <blockquote><em>{$a->response}</em></blockquote></p>
 <p>Feedback von {$a->teacher}: <blockquote><em>{$a->comment}</em></blockquote></p>
 <p>Sie haben {$a->earned} Punkte von {$a->outof} Punkten für Ihre Freitext-Antwort erhalten.</p>
@@ -182,18 +183,31 @@ $string['essayemailmessage2'] = '<p>Freitextfrage:<blockquote>{$a->question}</bl
 $string['essayemailsubject'] = 'Freitext-Bewertung für {$a}';
 $string['essays'] = 'Freitexte';
 $string['essayscore'] = 'Freitext-Bewertung';
+$string['eventessayassessed'] = 'Essay-Frage bewertet';
+$string['eventessayattemptviewed'] = 'Essayversuch angesehen';
+$string['eventhighscoreadded'] = 'Höchstwert hinzugefügt';
+$string['eventhighscoresviewed'] = 'Höchstwert angezeigt';
+$string['eventlessonended'] = 'Lektion beendet';
+$string['eventlessonstarted'] = 'Lektion begonnen';
+$string['false'] = 'Falsch';
 $string['fileformat'] = 'Dateiformat';
 $string['finish'] = 'Fertigstellen';
 $string['firstanswershould'] = 'Die erste Antwort sollte zur Seite mit der Antwort "richtig" verzweigen';
 $string['firstwrong'] = 'Ihre Antwort ist falsch. Wollen Sie noch einmal (ohne Bewertung) wiederholen?';
 $string['flowcontrol'] = 'Ablaufkontrolle';
+$string['fractionsaddwrong'] = 'Die positiven Bewertungen, die Sie gewählt haben, ergeben keine 100%.
+<br />Statt dessen ergeben sie {$a}%.
+<br />Möchten Sie zurückgehen und diese Frage korrigieren?';
+$string['fractionsnomax'] = 'Eine dieser Antworten sollte 100% sein, damit
+<br />es möglich ist, die volle Punktzahl für diese Frage zu bekommen.
+<br />Möchten Sie zurückgehen und diese Frage korrigieren?';
 $string['full'] = 'Erweitert';
 $string['general'] = 'Grundeinstellungen';
 $string['gotoendoflesson'] = 'Zum Lektionende gehen';
 $string['grade'] = 'Relative Bewertung';
 $string['gradebetterthan'] = 'Bewertung besser als (%)';
 $string['gradebetterthanerror'] = 'Bewertung muss besser als {$a} Prozent sein';
-$string['gradeessay'] = 'Freitext-Bewertung ({$a->notgradedcount} - nicht bewertet, {$a->notsentcount} - nicht gesendet)';
+$string['gradeessay'] = 'Freitextfragen bewerten ({$a->notgradedcount} - nicht bewertet, {$a->notsentcount} - nicht gesendet)';
 $string['gradeis'] = 'Ihre Bewertung: {$a}';
 $string['gradeoptions'] = 'Bewertung';
 $string['handlingofretakes'] = 'Bewertung bei Wiederholungen';
@@ -229,6 +243,7 @@ $string['lessoncloses'] = 'Verfügbarkeit der Lektion endet';
 $string['lessoncloseson'] = 'Verfügbarkeit der Lektion endet: {$a}';
 $string['lesson:edit'] = 'Lektion bearbeiten';
 $string['lessonformating'] = 'Lektion wird formatiert';
+$string['lesson:grade'] = 'Freitextfragen in Lektionen bewerten';
 $string['lesson:manage'] = 'Lektion verwalten';
 $string['lessonmenu'] = 'Seitenmenü';
 $string['lessonnotready'] = 'Diese Lektion ist noch nicht verfügbar. Nehmen Sie bitte mit {$a} Kontakt auf.';
@@ -281,6 +296,7 @@ $string['modulenameplural'] = 'Lektionen';
 $string['move'] = 'Seite verschieben';
 $string['movedpage'] = 'Seite verschoben';
 $string['movepagehere'] = 'Seite hierher verschieben';
+$string['movepagenamed'] = 'Seite verschieben: {$a}';
 $string['moving'] = 'Seite {$a} verschieben';
 $string['multianswer'] = 'Mehrere Antworten';
 $string['multianswer_help'] = 'Aktivieren Sie diese Option, wenn mehr als eine Antwort richtig sein kann.';
@@ -304,11 +320,12 @@ $string['nooneansweredcorrectly'] = 'Niemand hat richtig geantwortet.';
 $string['nooneansweredthisquestion'] = 'Niemand hat diese Frage beantwortet.';
 $string['noonecheckedthis'] = 'Niemand hat dies ausgewählt.';
 $string['nooneenteredthis'] = 'Niemand hat dies eingegeben.';
-$string['noonehasanswered'] = 'Bisher hat noch niemand Freitext-Fragen beantwortet.';
+$string['noonehasanswered'] = 'Bisher wurden keine Freitextfragen beantwortet.';
 $string['noretake'] = 'Sie können diese Lektion nicht wiederholen.';
 $string['normal'] = 'Dem Pfad der Lektion folgen';
 $string['notcompleted'] = 'Nicht beendet';
 $string['notdefined'] = 'Nicht definiert';
+$string['notenoughsubquestions'] = 'Es wurden noch nicht genügend Unterfragen definiert! <br />Möchten Sie zurückgehen und diese Frage korrigieren?';
 $string['nothighscore'] = 'Sie haben keine Bestenliste angelegt.';
 $string['notitle'] = 'Kein Titel';
 $string['numberofcorrectanswers'] = 'Richtige Antworten: {$a}';
@@ -337,10 +354,12 @@ Eine Seite stellt den Lerninhalt bereit und endet normalerweise mit einer Frage.
 
 Eine Inhaltsseite enthält eine ganze Reihe von Links zu anderen Seiten der Lektion, wie beispielsweise ein Inhaltsverzeichnis.';
 $string['page'] = 'Seite: {$a}';
+$string['pageanswers'] = 'Seitenantworten';
 $string['pagecontents'] = 'Seiteninhalt';
 $string['page-mod-lesson-edit'] = 'Lektionsbearbeitungsseite';
 $string['page-mod-lesson-view'] = 'Lektionsansichtsseite';
 $string['page-mod-lesson-x'] = 'Alle Lektionsseiten';
+$string['pageresponses'] = 'Seitenantworten';
 $string['pages'] = 'Seiten';
 $string['pagetitle'] = 'Seitentitel';
 $string['password'] = 'Kennwort';
@@ -360,6 +379,7 @@ $string['preprocesserror'] = 'Fehler während der Verarbeitung aufgetreten! (pre
 $string['prerequisitelesson'] = 'Abhängige Lektion';
 $string['preview'] = 'Vorschau';
 $string['previewlesson'] = 'Vorschau {$a}';
+$string['previewpagenamed'] = 'Seite anzeigen: {$a}';
 $string['previouspage'] = 'Vorherige Seite';
 $string['processerror'] = 'Fehler während der Verarbeitung aufgetreten!';
 $string['progressbar'] = 'Fortschrittsbalken';
@@ -427,6 +447,7 @@ $string['timespenterror'] = 'Bearbeiten Sie diese Lektion mindestens {$a} Minute
 $string['timespentminutes'] = 'Aufgewendete Zeit (Minuten)';
 $string['timetaken'] = 'Aufgewendete Zeit';
 $string['topscorestitle'] = 'Top {$a} Bestenliste';
+$string['true'] = 'Wahr';
 $string['truefalse'] = 'Wahr/Falsch';
 $string['unabledtosavefile'] = 'Die hochgeladene Datei konnte nicht gesichert werden';
 $string['unknownqtypesnotimported'] = '$ Fragen mit nicht unterstützten Fragetypen wurden nicht importiert';
@@ -434,6 +455,7 @@ $string['unseenpageinbranch'] = 'Noch nicht angezeigte Frage innerhalb des Zweig
 $string['unsupportedqtype'] = 'Der Fragetyp ({$a}) wird nicht unterstützt!';
 $string['updatedpage'] = 'Seite aktualisiert';
 $string['updatefailed'] = 'Aktualisierung fehlgeschlagen';
+$string['updatepagenamed'] = 'Seite aktualisieren: {$a}';
 $string['usemaximum'] = 'Bester Versuch';
 $string['usemean'] = 'Durchschnitt';
 $string['usepassword'] = 'Erfordert Kennwort';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * core webservice service created event.
+ * Web service service created event.
  *
  * @package    core
  * @copyright  2013 Frédéric Massart
@@ -26,14 +26,20 @@ namespace core\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * core webservice service created event class.
+ * Web service service created event class.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string sessionid: (optional) session id.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
  * @copyright  2013 Frédéric Massart
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class webservice_service_created extends \core\event\base {
+class webservice_service_created extends base {
 
     /**
      * Returns description of what happened.
@@ -41,7 +47,7 @@ class webservice_service_created extends \core\event\base {
      * @return string
      */
     public function get_description() {
-        return "The web service service $this->objectid has been created by user $this->userid.";
+        return "The user with id '$this->userid' created the web service with id '$this->objectid'.";
     }
 
     /**
@@ -62,7 +68,7 @@ class webservice_service_created extends \core\event\base {
      * @return string
      */
     public static function get_name() {
-        return get_string('event_webservice_service_created', 'webservice');
+        return get_string('eventwebserviceservicecreated', 'webservice');
     }
 
     /**
@@ -82,8 +88,7 @@ class webservice_service_created extends \core\event\base {
     protected function init() {
         $this->context = \context_system::instance();
         $this->data['crud'] = 'c';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
         $this->data['objecttable'] = 'external_services';
     }
-
 }

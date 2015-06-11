@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['plugindisable'] = 'Desactiva';
 $string['plugindisabled'] = 'Desactivat';
 $string['pluginenable'] = 'Activa';
 $string['pluginenabled'] = 'Activat';
+$string['release'] = 'Versió';
 $string['requiredby'] = 'Requerit per: {$a}';
 $string['requires'] = 'Requereix';
 $string['rootdir'] = 'Directori';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'Instal·lat';
 $string['systemname'] = 'Identificador';
 $string['type_auth'] = 'Mètode d\'autenticació';
 $string['type_auth_plural'] = 'Connectors d\'autenticació';
+$string['type_availability'] = 'Restricció de disponibilitat';
+$string['type_availability_plural'] = 'Restriccions de disponibilitat';
 $string['type_block'] = 'Bloc';
 $string['type_block_plural'] = 'Blocs';
 $string['type_cachelock'] = 'Controlador de bloqueig de memòria cau';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -174,11 +174,20 @@ $string['essayemailmessage2'] = '<p>Pregunta de ensaio:<blockquote>{$a->question
 $string['essayemailsubject'] = 'A súa cualificación para a pregunta {$a}';
 $string['essays'] = 'Ensaios';
 $string['essayscore'] = 'Puntuación nos ensaios';
+$string['eventessayassessed'] = 'Ensaio avaliado';
+$string['eventessayattemptviewed'] = 'Intento de ensaio visto';
+$string['eventhighscoreadded'] = 'Puntuación alta engadida';
+$string['eventhighscoresviewed'] = 'Engadida a puntuación vista';
+$string['eventlessonended'] = 'Lección terminada';
+$string['eventlessonstarted'] = 'Lección iniciada';
+$string['false'] = 'Falso';
 $string['fileformat'] = 'Formato de ficheiro';
 $string['finish'] = 'Rematar';
 $string['firstanswershould'] = 'A primeira resposta debería saltar á páxina «Corrixir»';
 $string['firstwrong'] = 'Desculpe, mais non gañou este punto porque a súa resposta non foi correcta. Gustaríalle seguilo tentando, só polo simple pracer de aprender (e non polo punto de crédito)?';
 $string['flowcontrol'] = 'Control do fluxo';
+$string['fractionsaddwrong'] = 'As cualificacións positivas que escolleu non engadir ao 100%<br />No entanto, engádense ao {$a}%<br />Quere volver atrás e arranxar esta pregunta?';
+$string['fractionsnomax'] = 'Unha das respostas deberían ser ao 100%, así que é<br />posíbel obter unha cualificación completa para esta pregunta.<br />Quere volver atrás e arraxar esta pregunta?';
 $string['full'] = 'Estendido';
 $string['general'] = 'Xeral';
 $string['gotoendoflesson'] = 'Ir ao final da lección';
@@ -301,6 +310,7 @@ $string['noretake'] = 'Non ten permiso para retomar esta lección.';
 $string['normal'] = 'Normal - Seguir o roteiro da lección';
 $string['notcompleted'] = 'Incompleto';
 $string['notdefined'] = 'Sen definir';
+$string['notenoughsubquestions'] = 'Non se definiron suficientes subpreguntas!<br />Quere volver atrás e arranxar esta cuestión?';
 $string['nothighscore'] = 'Non creou a lista das {$a} mellores puntuacións.';
 $string['notitle'] = 'Sen título';
 $string['numberofcorrectanswers'] = 'Número de respostas correctas: {$a}';
@@ -410,8 +420,9 @@ $string['thispage'] = 'Esta páxina';
 $string['timeremaining'] = 'Tempo restante';
 $string['timespenterror'] = 'Utilizar polo menos {$a} minutos na lección';
 $string['timespentminutes'] = 'Tempo empregado (minutos)';
-$string['timetaken'] = 'Tempo levado';
+$string['timetaken'] = 'Tempo utilizado';
 $string['topscorestitle'] = 'As {$a} mellores puntuacións';
+$string['true'] = 'Verdadeiro';
 $string['truefalse'] = 'Verdadeiro/falso';
 $string['unabledtosavefile'] = 'Non foi posíbel gardar o ficheiro que enviou';
 $string['unknownqtypesnotimported'] = 'Non se importaron {$a} preguntas con tipos de preguntas incompatíbeis';

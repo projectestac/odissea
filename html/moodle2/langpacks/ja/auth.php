@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['auth_fieldlocks'] = 'ユーザフィールドのロック';
 $string['auth_fieldlocks_help'] = '<p>あなたはユーザデータフィールドをロックすることができます。ユーザレコードを管理者が手動で管理する方法、または「ユーザをアップロードする」機能を使用してユーザレコードをアップロードする方法をとっているサイトに有用です。Moodleが必要とするフィールドをロックする場合、ユーザアカウント作成時にそれらのデータを必ず提供してください。そうでない場合、アカウントを使用できなくなります。</p><p>この問題を避けるため、「空の場合はロックしない」に設定することをお勧めします。</p>';
 $string['authinstructions'] = 'ログインページにデフォルトのログインインストラクションを表示したい場合、空白のままにしてください。あなたが特別なログインインストラクションを表示したい場合、ここに入力してください。';
 $string['auth_invalidnewemailkey'] = 'エラー: あなたがメールアドレスの変更確認を試みているのでしたら、あなたに送信されたメール内URLのコピーに失敗しているようです。URLをコピーして、もう一度お試しください。';
+$string['authloginviaemail'] = 'メールによるログインを許可する';
+$string['authloginviaemail_desc'] = 'ユーザのサイトログインにユーザ名およびメールアドレス (ユニークな場合) の両方を使用できるようにします。';
 $string['auth_multiplehosts'] = '複数のホストまたはアドレスを設定できます (例 host1.com;host2.com;host3.com) または (例 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_outofnewemailupdateattempts'] = 'あなたはメールアドレスの変更許容回数を超えました。あなたの変更リクエストはキャンセルされました。';
 $string['auth_passwordisexpired'] = 'あなたのパスワード有効期限が切れました。あなたのパスワードを変更しますか?';
@@ -64,11 +66,7 @@ $string['auto_add_remote_users'] = 'リモートユーザを自動的に追加�
 $string['changepassword'] = 'パスワードURLの変更';
 $string['changepasswordhelp'] = 'ここではあなたのユーザがパスワードを忘れた場合、ユーザ名/パスワードを回復または変更するための場所を設定します。これはログインページおよびユーザページにボタンとして提供されます。空白にした場合、ボタンは表示されません。';
 $string['chooseauthmethod'] = '認証方法の選択';
-$string['chooseauthmethod_help'] = '<p>ここではユーザの認証方法を変更することができます。</p>
-
-<p>この設定は、どの認証方法をサイトに設定しているか、またどの認証方法を使うかに強く依存します。</p>
-
-<p>間違った設定によりユーザはログインすることができず、またはアカウントが完全に削除されてしまうこともあります。あなたが何をしているか理解できる場合のみ、この設定を使用してください。</p>';
+$string['chooseauthmethod_help'] = 'ここではユーザログイン時の認証方法を決定します。有効にされた認証プラグインのみ選択することができます。そうでない場合、ユーザはログインできないようになります。ユーザのログインをブロックするには「ログインなし」を選択してください。';
 $string['createpassword'] = 'パスワードを生成してユーザに通知する';
 $string['createpasswordifneeded'] = '必要に応じてパスワードを作成する';
 $string['emailchangecancel'] = 'メール変更をキャンセルする';
@@ -91,12 +89,13 @@ $string['errorminpasswordlower'] = 'パスワードには少なくとも半角 {
 $string['errorminpasswordnonalphanum'] = 'パスワードには少なくとも半角 {$a} 文字の非英数字を使用する必要があります。';
 $string['errorminpasswordupper'] = 'パスワードには少なくとも半角 {$a} 文字の大文字を使用する必要があります。';
 $string['errorpasswordupdate'] = 'パスワード変更中にエラーが発生しました。パスワードは変更されませんでした。';
-$string['event_user_loggedin'] = 'ユーザがログインしました。';
+$string['eventuserloggedin'] = 'ユーザがログインしました。';
 $string['eventuserloggedinas'] = 'ユーザが別のユーザとしてログインしました。';
+$string['eventuserloginfailed'] = 'ユーザがログインに失敗しました。';
 $string['forcechangepassword'] = 'パスワード変更を強制する';
 $string['forcechangepasswordfirst_help'] = 'ユーザの初回Moodleログイン時にパスワードの変更を強制します。';
 $string['forcechangepassword_help'] = 'ユーザの次回Moodleログイン時にパスワードの変更を強制します。';
-$string['forgottenpassword'] = 'あなたがここにURLを入力した場合、このサイトの喪失パスワードリカバリページに使用されます。これは完全にMoodleの外でパスワードが処理されるサイトを対象としています。デフォルトのパスワードリカバリを使用する場合、空白のままにしてください。';
+$string['forgottenpassword'] = 'あなたがここにURLを入力した場合、このサイトの喪失パスワード回復ページに使用されます。これは完全にMoodleの外でパスワードが処理されるサイトを対象としています。デフォルトのパスワード回復を使用する場合、空白のままにしてください。';
 $string['forgottenpasswordurl'] = 'パスワード喪失URL';
 $string['getanaudiocaptcha'] = 'CAPTCHAオーディオを取得する';
 $string['getanimagecaptcha'] = 'CAPTCHAイメージを取得する';

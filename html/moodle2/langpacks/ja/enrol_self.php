@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,6 +108,6 @@ $string['usepasswordpolicy_desc'] = '登録キーに標準パスワードポリ�
 $string['welcometocourse'] = '{$a} へようこそ';
 $string['welcometocoursetext'] = '{$a->coursename} へようこそ!
 
-まだプロファイルの編集が終わっていない場合は、私たちが受講している皆さんのことを知ることができるよう、あなたのプロファイルページを編集してください:
+まだプロファイルの編集が終わっていない場合は、私たちが受講している皆さんのことを知ることができるようあなたのプロファイルページを編集してください:
 
  {$a->profileurl}';

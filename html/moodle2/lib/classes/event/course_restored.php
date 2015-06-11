@@ -14,12 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Course restored event.
+ *
+ * @package    core
+ * @copyright  2013 Mark Nelson <markn@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 namespace core\event;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Course restored event.
+ * Course restored event class.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string type: restore type, activity, course or section.
+ *      - int target: where restored (new/existing/current/adding/deleting).
+ *      - int mode: execution mode.
+ *      - string operation: what operation are we performing?
+ *      - boolean samesite: true if restoring to same site.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
@@ -34,7 +52,7 @@ class course_restored extends base {
     protected function init() {
         $this->data['objecttable'] = 'course';
         $this->data['crud'] = 'c';
-        $this->data['level'] = self::LEVEL_TEACHING;
+        $this->data['edulevel'] = self::LEVEL_TEACHING;
     }
 
     /**
@@ -52,7 +70,7 @@ class course_restored extends base {
      * @return string
      */
     public function get_description() {
-        return "Course {$this->objectid} was restored by user {$this->userid}";
+        return "The user with id '$this->userid' restored the course with id '$this->courseid'.";
     }
 
     /**
@@ -88,5 +106,35 @@ class course_restored extends base {
             'operation' => $this->other['operation'],
             'samesite' => $this->other['samesite'],
         );
+    }
+
+    /**
+     * Custom validation.
+     *
+     * @throws \coding_exception
+     * @return void
+     */
+    protected function validate_data() {
+        parent::validate_data();
+
+        if (!isset($this->other['type'])) {
+            throw new \coding_exception('The \'type\' value must be set in other.');
+        }
+
+        if (!isset($this->other['target'])) {
+            throw new \coding_exception('The \'target\' value must be set in other.');
+        }
+
+        if (!isset($this->other['mode'])) {
+            throw new \coding_exception('The \'mode\' value must be set in other.');
+        }
+
+        if (!isset($this->other['operation'])) {
+            throw new \coding_exception('The \'operation\' value must be set in other.');
+        }
+
+        if (!isset($this->other['samesite'])) {
+            throw new \coding_exception('The \'samesite\' value must be set in other.');
+        }
     }
 }

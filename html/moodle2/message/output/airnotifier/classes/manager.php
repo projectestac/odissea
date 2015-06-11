@@ -83,14 +83,13 @@ class message_airnotifier_manager {
         // We are going to allow only ios devices (since these are the ones that supports PUSH notifications).
         $userdevices = $DB->get_records('user_devices', $params);
         foreach ($userdevices as $device) {
-            $platform = core_text::strtolower($device->platform);
-            if ($platform) {
+            if (core_text::strtolower($device->platform)) {
                 // Check if the device is known by airnotifier.
                 if (!$airnotifierdev = $DB->get_record('message_airnotifier_devices',
                         array('userdeviceid' => $device->id))) {
 
                     // We have to create the device token in airnotifier.
-                    if (! $this->create_token($device->pushid, $platform)) {
+                    if (! $this->create_token($device->pushid)) {
                         continue;
                     }
 
@@ -119,7 +118,7 @@ class message_airnotifier_manager {
         require_once($CFG->libdir . '/filelib.php');
 
         // Sending the request access key request to Airnotifier.
-        $serverurl = $CFG->airnotifierurl . ':' . $CFG->airnotifierport . '/api/v2/accesskeys/';
+        $serverurl = $CFG->airnotifierurl . ':' . $CFG->airnotifierport . '/accesskeys/';
         // We use an APP Key "none", it can be anything.
         $header = array('Accept: application/json', 'X-AN-APP-NAME: ' . $CFG->airnotifierappname,
             'X-AN-APP-KEY: none');
@@ -131,12 +130,9 @@ class message_airnotifier_manager {
             'url' => $CFG->wwwroot,
             'siteid' => md5($CFG->siteidentifier),
             'contact' => $USER->email,
-            'description' => $CFG->wwwroot,
-            'processor' => 'moodle'
+            'description' => $CFG->wwwroot
             );
-
-        // JSON POST raw body request.
-        $resp = $curl->post($serverurl, json_encode($params));
+        $resp = $curl->post($serverurl, $params);
 
         if ($key = json_decode($resp, true)) {
             if (!empty($key['accesskey'])) {
@@ -151,7 +147,7 @@ class message_airnotifier_manager {
      * @param string $token The token to be created
      * @return bool True if all was right
      */
-    private function create_token($token, $platform) {
+    private function create_token($token) {
         global $CFG;
 
         if (!$this->is_system_configured()) {
@@ -160,25 +156,18 @@ class message_airnotifier_manager {
 
         require_once($CFG->libdir . '/filelib.php');
 
-        $serverurl = $CFG->airnotifierurl . ':' . $CFG->airnotifierport . '/api/v2/tokens/';
+        $serverurl = $CFG->airnotifierurl . ':' . $CFG->airnotifierport . '/tokens/' . $token;
         $header = array('Accept: application/json', 'X-AN-APP-NAME: ' . $CFG->airnotifierappname,
             'X-AN-APP-KEY: ' . $CFG->airnotifieraccesskey);
         $curl = new curl;
         $curl->setHeader($header);
+        $params = array();
+        $resp = $curl->post($serverurl, $params);
 
-        $params = array(
-            'device' => $platform,
-            'token' => $token,
-            'processor' => 'moodle'
-        );
-
-        // JSON POST raw body request.
-        $resp = $curl->post($serverurl, json_encode($params));
-        $status = $curl->info;
-
-        // Check returned HTTP status code.
-        if (!empty($status) and $status['http_code'] == 200) {
-            return true;
+        if ($resp = json_decode($resp, true)) {
+            if (!empty($resp['status'])) {
+                return $resp['status'] == 'ok' || $resp['status'] == 'token exists';
+            }
         }
         return false;
     }

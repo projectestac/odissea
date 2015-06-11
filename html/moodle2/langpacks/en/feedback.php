@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'feedback', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,8 +108,6 @@ You can view it here:
 $string['emailteachermailhtml'] = '<p>{$a->username} has completed feedback activity : <i>\'{$a->feedback}\'</i>.</p>
 <p>It is <a href="{$a->url}">available on the site</a>.</p>';
 $string['entries_saved'] = 'Your answers have been saved. Thank you.';
-$string['eventcoursemoduleviewed'] = 'Course module viewed';
-$string['eventinstanceslistviewed'] = 'Instances list viewed';
 $string['eventresponsedeleted'] = 'Response deleted';
 $string['eventresponsesubmitted'] = 'Response submitted';
 $string['export_questions'] = 'Export questions';

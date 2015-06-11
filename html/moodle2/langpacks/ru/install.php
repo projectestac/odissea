@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'install', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -120,14 +120,6 @@ $string['inputwebdirectory'] = 'Каталог Moodle:';
 $string['installation'] = 'Установка';
 $string['langdownloaderror'] = 'К сожалению, не удалось установить язык «{$a}». Процесс установки продолжится на английском.';
 $string['langdownloadok'] = 'Язык «{$a}» успешно установлен. Процесс установки продолжится на этом языке.';
-$string['magicquotesruntime'] = 'Параметр «magic_quotes_runtime»';
-$string['magicquotesruntimeerror'] = 'Должен быть «Off»';
-$string['magicquotesruntimehelp'] = '<p>Для правильной работы Moodle режим «Magic quotes runtime» должен быть отключен.</p>
-
-<p>Обычно по умолчанию он и так отключен. Ищите параметр <b>magic_quotes_runtime</b> в файле php.ini.</p>
-
-<p>Если у Вас нет доступа к файлу php.ini, Вы можете попробовать поместить следующую строку в файле .htaccess в каталоге Moodle:</p>
-<blockquote><div>php_value magic_quotes_runtime Off</div></blockquote>';
 $string['memorylimit'] = 'Ограничение памяти';
 $string['memorylimiterror'] = 'Ограничение памяти в PHP установлено слишком маленьким. Впоследствии это может создать трудности.';
 $string['memorylimithelp'] = '<p>Сейчас ограничение памяти в PHP на Вашем сервере установлено в {$a}.</p>

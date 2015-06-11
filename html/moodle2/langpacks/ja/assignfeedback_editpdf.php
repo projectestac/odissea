@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'フィードバックPDFを生成する';
 $string['generatingpdf'] = 'PDF生成中 ...';
 $string['gotopage'] = 'ページに移動する';
 $string['green'] = '緑';
-$string['gspath'] = 'Ghostscriptパス';
-$string['gspath_help'] = 'ほとんどのLinuxインストールにおいて、これは「usr/bin/gs」のままにすることができます。Windowsでは「c:gsbingswin32c.exe」のようになります (パス内にスペースがないことを確認してください - 必要であれば、ファイル「gswin32c.exe」および「gsdll32.dll」をパス内にスペースの入らない新しいフォルダにコピーしてください)。';
+$string['gsimage'] = 'Ghostscriptテストイメージ';
 $string['highlight'] = 'ハイライト';
 $string['jsrequired'] = '注釈PDFドキュメントはJavaスクリプトを必要とします。この機能を使用したい場合、あなたのブラウザのJavaスクリプトを有効にしてください。';
 $string['launcheditor'] = 'PDFエディタを起動する ...';
@@ -66,6 +65,7 @@ $string['output'] = 'アウトプット:';
 $string['oval'] = '楕円';
 $string['pagenumber'] = 'ページ {$a}';
 $string['pagexofy'] = 'ページ {$a->page} / {$a->total}';
+$string['pathtogspathdesc'] = 'PDF注釈では「 {$a} 」にGhostscriptのパスを設定する必要があることに留意してください。';
 $string['pen'] = 'ペン';
 $string['pluginname'] = 'PDF注釈';
 $string['rectangle'] = '長方形';
@@ -90,4 +90,3 @@ $string['unsavedchanges'] = '未保存の変更';
 $string['viewfeedbackonline'] = '注釈付きPDFを表示する ...';
 $string['white'] = '白';
 $string['yellow'] = '黄色';
-$string['zlibnotavailable'] = 'PHP拡張モジュール「zlib」を利用できません。PDF注釈機能はこのPHP拡張モジュールに依存しているため、zlibがインストールおよび有効にされるまで無効にされます。';

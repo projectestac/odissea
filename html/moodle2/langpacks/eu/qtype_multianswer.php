@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Definitu gabeko diseinua';
 $string['layoutvertical'] = 'Erantzun-botoietarako zutabe bertikala';
 $string['nooptionsforsubquestion'] = 'Ezin da aukerarik lortu  # {$a->sub} galderaren zatirako (galdera->id={$a->id})';
 $string['noquestions'] = 'Erantzun anitzeko "<strong>{$a}</strong>" galderak ez du galderarik';
+$string['pleaseananswerallparts'] = 'Mesedez, erantzun galderaren atal guztiei';
 $string['pluginname'] = 'Txertatutako erantzunak (Cloze)';
 $string['pluginnameadding'] = 'Gehitu txertatutako erantzuna (Cloze) motako galdera';
 $string['pluginnameediting'] = 'Editatu txertatutako erantzuna (Cloze) motako galdera';

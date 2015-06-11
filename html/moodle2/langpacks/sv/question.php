@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['addcategory'] = 'Lägg till kategori';
 $string['addmorechoiceblanks'] = 'Tomma utrymmen för {no} fler val';
 $string['adminreport'] = 'Rapport över  möjliga problem i Din frågedatabas.';
 $string['answer'] = 'Svar';
-$string['answersaved'] = 'Svar sparat';
+$string['answersaved'] = 'Svar sparade';
 $string['attemptfinished'] = 'Avslutat försök';
 $string['attemptfinishedsubmitting'] = 'Försöket avslutades med inskicket:';
 $string['attemptoptions'] = 'Försöksalternativ';
@@ -64,15 +64,16 @@ $string['cannotmovequestion'] = 'Du kan inte använda det här skriptet för att
 $string['cannotopenforwriting'] = 'Det går inte att öppna för att skriva: {$a}';
 $string['cannotpreview'] = 'Du kan inte förhandsgranska de här frågorna!';
 $string['cannotread'] = 'Det går inte att läsa den importerade filen ({$a}) eller också är den tom';
-$string['cannotretrieveqcat'] = 'Det gick att hämta kategori för frågor';
+$string['cannotretrieveqcat'] = 'Det gick att återhämta kategori för frågor';
 $string['cannotunhidequestion'] = 'Det gick inte att ta fram frågan.';
 $string['cannotunzip'] = 'Det gick inte att packa upp filen';
 $string['cannotwriteto'] = 'Det går inte att skriva exporterade frågor till {$a}';
+$string['categories'] = 'Kategorier';
 $string['category'] = 'Kategori';
 $string['categorycurrent'] = 'Aktuell kategori';
 $string['categorycurrentuse'] = 'Använd den här kategorin';
 $string['categorydoesnotexist'] = 'Den här kategorin finns inte.';
-$string['categoryinfo'] = 'Kategori-info';
+$string['categoryinfo'] = 'Kategori info';
 $string['categorymove'] = 'Denna kategori \'{$a->name}\' innehåller {$a->count} frågor.  Var vänlig välj en annan kategori att flytta dem till.';
 $string['categorymoveto'] = 'Spara i kategori';
 $string['categorynamecantbeblank'] = 'Kategorinamnet får inte vara tomt.';
@@ -80,7 +81,7 @@ $string['changeoptions'] = 'Ändra alternativ';
 $string['changepublishstatuscat'] = '<a href="{$a->caturl}">Kategorin "{$a->name}"</a> i kursen "{$a->coursename}" kommer att få sin status för gemenskap ändrad från <strong>{$a->changefrom} till {$a->changeto}</strong>';
 $string['check'] = 'Kontrollera';
 $string['chooseqtypetoadd'] = 'Välj en frågetyp som Du vill lägga till';
-$string['clearwrongparts'] = 'Rensa felaktiga svar';
+$string['clearwrongparts'] = 'Radera felaktiga svar';
 $string['clickflag'] = 'Flagga fråga';
 $string['clicktoflag'] = 'Klicka för att flagga den här frågan';
 $string['clicktounflag'] = 'Klicka för att av-flagga den här frågan';
@@ -111,7 +112,7 @@ $string['defaultinfofor'] = 'Det förinställda standardvärdet för frågor som
 $string['defaultmark'] = 'Förvalt betyg';
 $string['deletecoursecategorywithquestions'] = 'Det finns frågor i frågebanken i associerade med denna kurs kategori. Om du fortsätter kommer de att raderas. Du kanske vill flytta dem först, med hjälp av gränssnittet i frågebanken.';
 $string['deletequestioncheck'] = 'Är du helt säker på att du vill ta bort \'{$a}\'?';
-$string['deletequestionscheck'] = 'Är du helt säker på att du vill ta bort de följande frågorna?<br /><br />{$a}';
+$string['deletequestionscheck'] = 'Är du helt säker på att du vill ta bort följande frågor? <br /><br /> {$a}';
 $string['deletingbehaviour'] = 'Radera frågebeteende "{$a}"';
 $string['deletingqtype'] = 'Tar bort frågetypen\'{$a}\'';
 $string['didnotmatchanyanswer'] = '[Matchade inte något svar]';
@@ -139,7 +140,7 @@ $string['editthiscategory'] = 'Redigera den här kategorin';
 $string['emptyxml'] = 'Okänt fel - tomt imsmanifest.xml';
 $string['enabled'] = 'Aktiverad';
 $string['erroraccessingcontext'] = 'Det går inte att få tillgång till sammanhanget';
-$string['errordeletingquestionsfromcategory'] = 'Fel vid borttagande av frågor från kategori {$a}.';
+$string['errordeletingquestionsfromcategory'] = 'Fel i sb m borttagande av frågor från kategori {$a}';
 $string['errorduringpost'] = 'Fel inträffade under efterbearbetning!';
 $string['errorduringpre'] = 'Fel inträffade under förbehandling!';
 $string['errorduringproc'] = 'Ett fel uppstod under bearbetning!';
@@ -156,6 +157,7 @@ $string['errorprocessingresponses'] = 'Ett fel uppstod när dina svar bearbetade
 $string['errorsavingcomment'] = 'Fel när kommentar till frågan {$a->name} skulle sparas i databasen.';
 $string['errorsavingflags'] = 'Fel vid sparande av status.';
 $string['errorupdatingattempt'] = 'Fel vid uppdatering av försök {$a->id} i databasen.';
+$string['export'] = 'Exportera';
 $string['exportcategory'] = 'Kategori för export';
 $string['exportcategory_help'] = '<p align="center"><b>Exportera kategori</b></p>
 
@@ -253,6 +255,7 @@ Alternativt vill du att eleverna skickar in varje fråga för sig medan de genom
 
 Dessa två lägen är troligen de mest vanligen använda för frågebeteenden.';
 $string['ignorebroken'] = 'Ta inte hänsyn till brutna länkar';
+$string['import'] = 'Importera';
 $string['importcategory'] = 'Importera kategori';
 $string['importcategory_help'] = 'Denna inställning avgör vilken kategori den importerade frågan kommer att tillhöra.
 
@@ -261,13 +264,13 @@ $string['importerror'] = 'Ett fel uppstod under importprocessen';
 $string['importerrorquestion'] = 'Fel vid frågeimport';
 $string['importfromcoursefiles'] = '...eller välj en kursfil att importera.';
 $string['importfromupload'] = 'Välj fil att ladda upp ...';
-$string['importingquestions'] = 'Importerar {$a} frågor från fil';
+$string['importingquestions'] = 'Importera {$a} frågor från fil';
 $string['importparseerror'] = 'Fel uppstod vid analys av importfilen. Inga frågor har importerats. Om du vill prova importera dina bra frågor igen så ställ "Stoppa på fel" till "Nej"';
 $string['importquestions'] = 'Importera frågor från fil';
 $string['importquestions_help'] = 'Denna funktion möjliggör att frågor i en mängd olika format kan importeras från textfil. Notera att filen måste använda teckenkodning UTF-8.';
 $string['importwrongfiletype'] = 'Den typ av fil som du valde ({$a->actualtype}) motsvarar inte den typ som förväntas av detta import format ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Ogiltligt tecken {$a} detekteras som parentes tecken';
-$string['includesubcategories'] = 'Visa även frågor från underkategorier';
+$string['includesubcategories'] = 'Visa även frågor från underkategorier.';
 $string['incorrect'] = 'Felaktig';
 $string['incorrectfeedback'] = 'För varje felaktigt svar';
 $string['incorrectfeedbackdefault'] = 'Ditt svar är felaktigt.';
@@ -287,7 +290,7 @@ $string['makechildof'] = 'Gör om \'{$a}\'  till ett barn';
 $string['makecopy'] = 'Skapa kopia';
 $string['maketoplevelitem'] = 'Flytta till översta positionen';
 $string['manualgradeoutofrange'] = 'Detta betyg är utanför det giltiga området.';
-$string['manuallygraded'] = 'Manuellt betygsatt {$a->mark} med kommentar: {$a->comment}';
+$string['manuallygraded'] = 'Manuellt betygsatta {$a->mark} med kommentar: {$a->comment}';
 $string['mark'] = 'Rätta';
 $string['markedoutof'] = 'Rättade av';
 $string['markedoutofmax'] = 'Rättat av {$a}';
@@ -311,11 +314,11 @@ $string['movedquestionsandcategories'] = 'Flyttade frågor och kategorier fråga
 $string['movelinksonly'] = 'Ändra bara länkadresserna, flytta inte och kopiera inte filerna.';
 $string['moveq'] = 'Flytta fråga/or';
 $string['moveqtoanothercontext'] = 'Flytta fråga till ett annat sammanhang';
-$string['moveto'] = 'Flytta till >>';
+$string['moveto'] = 'Flytta till &gt;&gt;';
 $string['movingcategory'] = 'Flyttar kategori';
 $string['movingcategoryandfiles'] = 'Är Du säker på att Du vill flytta kategorin {$a->name} och alla barn-kategorier till sammanhanget för "{$a->contextto}"?<br />Vi har upptäckt {$a->urlcount} filer som är länkade från frågor i {$a->fromareaname}, skulle Du vilja kopiera eller flytta dessa till {$a->toareaname}?';
 $string['movingcategorynofiles'] = 'Är Du säker på att Du vill flytta kategorin "{$a->name}" och alla barn-kategorier till sammanhanget för "{$a->contextto}"?';
-$string['movingquestions'] = 'Flyttar frågor och eventuella filer';
+$string['movingquestions'] = 'Flyttar frågor och alla typer av filer';
 $string['movingquestionsandfiles'] = 'Är Du säker på att Du vill flytta frågorna  {$a->questions}till sammanhanget <strong>"{$a->tocontext}"</strong>?Vi har upptäckt <strong>{$a->urlcount} filer</strong> som är länkade från dessa frågor i {$a->fromareaname}, skulle Du vilja kopiera eller flytta dessa till {$a->toareaname}?';
 $string['movingquestionsnofiles'] = 'Är Du säker på att Du vill flytta frågorna  {$a->questions}till sammanhanget <strong>"{$a->tocontext}"</strong>?<br /> Det finns  <strong>inga filer</strong> som är länkade från dessa frågor i {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Du måste välja en kategori för att flytta den här frågan eller klicka på \'Avbryt\'.';
@@ -337,8 +340,8 @@ $string['notshown'] = 'Visas inte';
 $string['notyetanswered'] = 'Inte besvarad än';
 $string['notyourpreview'] = 'Den här förhandsvisningen tillhör inte dig.';
 $string['novirtualquestiontype'] = 'Ingen virtuell frågetyp för frågetyp {$a}';
-$string['numqas'] = 'Antal frågeförsök';
-$string['numquestions'] = 'Antal frågor';
+$string['numqas'] = 'Inga frågeförsök';
+$string['numquestions'] = 'Inga frågor';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} hidden)';
 $string['options'] = 'Alternativ';
 $string['orphanedquestionscategory'] = 'Frågor sparade från borttagna kategorier';
@@ -410,7 +413,7 @@ $string['selectcategoryabove'] = 'Välj en kategori ovan';
 $string['selectquestionsforbulk'] = 'Välj frågor för bulk åtgärder.';
 $string['settingsformultipletries'] = 'Flera försök';
 $string['shareincontext'] = 'Dela i sammanhanget för {$a}';
-$string['showhidden'] = 'Visa även gamla frågor';
+$string['showhidden'] = 'Visa även gamla frågor.';
 $string['showmarkandmax'] = 'Visa betyg och max';
 $string['showmaxmarkonly'] = 'Visa endast toppbetyg';
 $string['shown'] = 'Visas';
@@ -426,9 +429,9 @@ $string['stoponerror'] = 'Stanna vid fel';
 $string['stoponerror_help'] = 'Denna inställning avgör om importprocessen ska stoppas när ett fel upptäcks, vilket resulterar i att inga frågor importeras, eller om frågor som innehåller fel ska ignoreras och övriga frågor importeras.';
 $string['submissionoutofsequence'] = 'Sekvensfel. Vänligen klicka inte på bakåt/framåt knapparna i din webbläsare när du arbetar med testets frågor.';
 $string['submissionoutofsequencefriendlymessage'] = 'Du har skickat uppgifter utanför den normala sekvensen. Detta kan inträffa om du använder tillbaka eller framåt-knapparna i webbläsaren, använd inte dessa under testet. Det kan också hända om du klickar på något medan en sida laddas. Klicka på <strong>Fortsätt</strong> för att återuppta.';
-$string['submit'] = 'Skicka in';
-$string['submitandfinish'] = 'Skicka in och avsluta';
-$string['submitted'] = 'Skicka in: {$a}';
+$string['submit'] = 'Skicka';
+$string['submitandfinish'] = 'Skicka och avsluta';
+$string['submitted'] = 'Skicka:{$a}';
 $string['technicalinfo'] = 'Teknisk information';
 $string['technicalinfo_help'] = 'Denna tekniska information är troligen endast användbar för utvecklare av nya frågetyper. Det kan även vara till hjälp vid försök att hitta felaktigheter med frågor.';
 $string['technicalinfominfraction'] = 'Minsta fraktion: {$a}';
@@ -444,18 +447,19 @@ $string['unknownbehaviour'] = 'Okänd frågebeteende: {$a}.';
 $string['unknownorunhandledtype'] = 'Okänd eller ohanterbar frågetyp: {$a}';
 $string['unknownquestion'] = 'Okänd fråga: {$a}.';
 $string['unknownquestioncatregory'] = 'Okänd frågekategori: {$a}.';
-$string['unknownquestiontype'] = 'Okänd frågetyp: {$a}.';
+$string['unknownquestiontype'] = 'Okänd frågetyp: {$a}';
 $string['unknowntolerance'] = 'Okänd toleranstyp {$a}';
 $string['unpublished'] = 'Inte gemensam';
+$string['unusedcategorydeleted'] = 'Den här kategorin har tagits bort eftersom frågorna inte användes på servern längre efter det att kursen tagits bort.';
 $string['updatedisplayoptions'] = 'Uppdatera visningsalternativ';
 $string['upgradeproblemcategoryloop'] = 'Problem upptäcktes vid uppgradering av frågekategorier. Det finns en loop i kategoriträdet. Den berörda kategorins ID är {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Det gick inte att uppdatera {$a->name} frågekategori ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Problem upptäcktes vid uppgradering av frågekategorier. Kategori {$a->id} avser överkategorin {$a->parent}, som inte existerar. Överkatekorin ändrats att åtgärda problemet.';
 $string['whethercorrect'] = 'Huruvida korrekt';
 $string['whethercorrect_help'] = 'Detta täcker både textbeskrivningen \'Korrekt\', \'Delvis korrekt\' eller \'Felaktig\' och alla färgade markeringar som förmedlar samma information.';
-$string['withselected'] = 'Med valda';
-$string['wrongprefix'] = 'Felaktigt formaterat namnprefix {$a}';
+$string['withselected'] = 'Med vald';
+$string['wrongprefix'] = 'Felaktigt formaterad namnprefix {$a}';
 $string['xoutofmax'] = '{$a->mark} av {$a->max}';
-$string['yougotnright'] = 'Du har korrekt valt {$a->num}.';
-$string['youmustselectaqtype'] = 'Du måste välja en frågetyp.';
+$string['yougotnright'] = 'Du har valt {$a->num}.';
+$string['youmustselectaqtype'] = 'Du måste välja frågetyp.';
 $string['yourfileshoulddownload'] = 'Din exportfil kommer att laddas ner inom kort. Om inte, <a href="{$a}">klicka här</a> .';

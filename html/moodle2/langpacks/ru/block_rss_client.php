@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_rss_client', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['clientshowchannellinklabel'] = 'Должна ли быть показа
 $string['clientshowimagelabel'] = 'Показывать иконку канала, если она доступна:';
 $string['configblock'] = 'Настроить этот блок';
 $string['couldnotfindfeed'] = 'Не может быть найдена лента с идентификатором';
+$string['couldnotfindloadrssfeed'] = 'Не удалось найти или загрузить RSS-ленту.';
 $string['customtitlelabel'] = 'Свое название (оставьте пустым для использования заголовка, указанного в ленте):';
 $string['deletefeedconfirm'] = 'Вы уверены, что хотите удалить эту ленту?';
 $string['disabledrssfeeds'] = 'RSS-ленты отключены';

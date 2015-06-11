@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Gehitu aukera gehiago';
+$string['allowmultiple'] = 'Gaitu aukera bat baino gehiago erantzun ahal izatea';
 $string['allowupdate'] = 'Utzi kontsulta eguneratzen';
 $string['answered'] = 'Erantzunda';
 $string['atleastoneoption'] = 'Gutxienez erantzun posible bat eman behar duzu.';
@@ -52,10 +53,9 @@ $string['description'] = 'Deskribapena';
 $string['displayhorizontal'] = 'Erakutsi horizontalean';
 $string['displaymode'] = 'Aukerak erakusteko modua';
 $string['displayvertical'] = 'Erakutsi bertikalean';
-$string['event_answer_created'] = 'Kontsulta egin da';
-$string['event_answer_updated'] = 'Kontsulta eguneratu da';
-$string['event_choice_viewed'] = 'Kontsulta eginda da';
-$string['event_report_viewed'] = 'Kontsultaren txostena ikusi da';
+$string['eventanswercreated'] = 'Kontsulta egin da';
+$string['eventanswerupdated'] = 'Kontsulta eguneratu da';
+$string['eventreportviewed'] = 'Kontsultaren txostena ikusi da';
 $string['expired'] = 'Barkatu, jarduera hau {$a}(e)an itxi zen eta dagoeneko ez dago eskuragarri.';
 $string['full'] = '(Beteta)';
 $string['havetologin'] = 'Saioa hasi behar duzu erantzuna bidali ahal izateko.';
@@ -79,8 +79,9 @@ Kontsultak  ondokoetarako erabili daitezke
 * Ikasleen erabakiak errazteko, ikastaroaren norabidea aukeratzeko bozketak egiteko, adibidez';
 $string['modulenameplural'] = 'Kontsultak';
 $string['moveselectedusersto'] = 'Aukeratutako erabiltzaileak hona mugitu...';
+$string['multiplenotallowederror'] = 'Erantzun anitzak ez daude baimenduta inkesta xume honetan';
 $string['mustchooseone'] = 'Erantzunen bat aukeratu behar duzu gorde aurretik. Ezer ez da gorde orain arte.';
-$string['noguestchoose'] = 'Barkatu, bisitariek ezin diete kontsultei erantzun.';
+$string['noguestchoose'] = 'Barkatu, bisitariek ezin diete inkestei erantzun';
 $string['noresultsviewable'] = 'Emaitzak ezin dira orain ikusi';
 $string['notanswered'] = 'Oraindik erantzun gabe';
 $string['notenrolledchoose'] = 'Barkatu, baina matrikulatutako erabiltzaileek baino ezin diote kontsultari erantzun.';
@@ -114,7 +115,7 @@ $string['spaceleft'] = 'espazio erabilgarria';
 $string['spacesleft'] = 'espazio erabilgarriak';
 $string['taken'] = 'Hartuta';
 $string['timerestrict'] = 'Mugatu erantzuteko denbora';
-$string['userchoosethisoption'] = 'Erabiltzaileak hau aukeratu du';
+$string['userchoosethisoption'] = 'Aukera hau erantzun duten erabiltzaileak';
 $string['viewallresponses'] = 'Ikusi {$a} erantzun';
 $string['withselected'] = 'Aukeratutakoekin';
 $string['yourselection'] = 'Zure aukera';

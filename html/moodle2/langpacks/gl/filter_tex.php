@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filter_tex', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configconvertformat'] = 'Se están dispoñíbeis <i>látex</i>, <i>dvips</i> e <i>convert</i>, as imaxes crease empregando o formato especificado. De non ser así, empregarase mimeTeX e crearanse imaxes GIF.';
+$string['convertformat'] = '<i>converter</i> o formato de saída';
 $string['filtername'] = 'Notación en TeX';
-$string['source'] = 'Orixe TeX';
+$string['latexpreamble'] = 'Preámbulo LaTeX';
+$string['latexsettings'] = 'Configuración do procesador de LaTeX';
+$string['pathconvert'] = 'Ruta ao binario <i>convert</i>';
+$string['pathdvips'] = 'Ruta ao binario <i>dvips</i>';
+$string['pathlatex'] = 'Ruta ao binario <i>latex</i>';
+$string['source'] = 'Código fonte TeX';

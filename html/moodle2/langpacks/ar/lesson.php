@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,7 +106,14 @@ $string['essay'] = 'مقالى';
 $string['essayemailsubject'] = 'درجتك للسؤال {$a}';
 $string['essays'] = 'مقالات';
 $string['essayscore'] = 'درجة المقالة';
+$string['false'] = 'خاطىء';
 $string['fileformat'] = 'صيغة ملف';
+$string['fractionsaddwrong'] = 'الدرجات الموجبة التي حصلت عليها لا تبلغ 100%
+<br />بل إنها تبلغ {$a} %
+<br />هل تريد الرجوع لتصويب هذا السؤال؟';
+$string['fractionsnomax'] = 'لا بد أن يكون أحد الأسئلة 100%, حتى يكون
+<br />الحصول على الدرجة النهائية لهذا السؤال ممكنا.
+<br />هل تريد الرجوع لتصويب هذا السؤال؟';
 $string['full'] = 'وسع';
 $string['general'] = 'عام';
 $string['grade'] = 'درجة';
@@ -179,6 +186,7 @@ $string['noretake'] = 'غير مسموح لك بإعادة هذا الدرس';
 $string['normal'] = 'عادي - تابع مسار الدرس';
 $string['notcompleted'] = 'لم يتم انهائه';
 $string['notdefined'] = 'لم يعرف';
+$string['notenoughsubquestions'] = 'عدد الاسئلة الفرعية غير كافي!<br /> هل ترغب في العودة لتعديل هذا السؤال.';
 $string['notitle'] = 'لا يوجد عنوان';
 $string['numberofcorrectanswers'] = 'عدد الاجابات الصحيحة: {$a}';
 $string['numberofcorrectmatches'] = 'عدد الاجابات الصحيصة المتطابقة: {$a}';
@@ -248,6 +256,7 @@ $string['thispage'] = 'هذه الصفحة';
 $string['timeremaining'] = 'الزمن المتبقى';
 $string['timespentminutes'] = 'الوقت الذي تم قضاءه (دقائق)';
 $string['timetaken'] = 'الزمن المستنفذ';
+$string['true'] = 'صواب';
 $string['truefalse'] = 'صح/خطاء';
 $string['updatedpage'] = 'حدث الصفحة';
 $string['updatefailed'] = 'تعثر التحديث';

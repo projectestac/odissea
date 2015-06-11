@@ -17,8 +17,7 @@
 /**
  * The comments block
  *
- * @package   block
- * @subpackage comments
+ * @package    block_comments
  * @copyright 2009 Dongsheng Cai <dongsheng@moodle.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -79,6 +78,7 @@ class block_comments extends block_base {
         $args->displaycancel = false;
         $comment = new comment($args);
         $comment->set_view_permission(true);
+        $comment->set_fullwidth();
 
         $this->content = new stdClass();
         $this->content->text = $comment->output(true);

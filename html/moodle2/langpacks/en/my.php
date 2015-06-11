@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'my', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,3 +35,5 @@ $string['nocourses'] = 'No course information to show.';
 $string['noguest'] = 'The My home page is not available to guest users';
 $string['pinblocks'] = 'Configure pinned blocks for my moodle';
 $string['pinblocksexplan'] = 'Any block settings you configure here will be visible (and non-editable) for any user of moodle on their \'My Moodle\' overview page.';
+$string['reseterror'] = 'There was an error resetting your page';
+$string['resetpage'] = 'Reset page to default';

@@ -22,8 +22,7 @@
  * It uses the standard core Moodle formslib. For more info about them, please
  * visit: http://docs.moodle.org/dev/lib/formslib.php
  *
- * @package    mod
- * @subpackage workshop
+ * @package    mod_workshop
  * @copyright  2009 David Mudrak <david.mudrak@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -217,7 +216,7 @@ class mod_workshop_mod_form extends moodleform_mod {
         plagiarism_get_form_elements_module($mform, $coursecontext, 'mod_workshop');
 
         // Common module settings, Restrict availability, Activity completion etc. ----
-        $features = array('groups'=>true, 'groupings'=>true, 'groupmembersonly'=>true,
+        $features = array('groups' => true, 'groupings' => true,
                 'outcomes'=>true, 'gradecat'=>false, 'idnumber'=>false);
 
         $this->standard_coursemodule_elements();

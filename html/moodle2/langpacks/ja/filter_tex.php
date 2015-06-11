@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'filter_tex', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configconvertformat'] = 'convertまたはdvisvgmに加えて、latexおよびdvipsが利用可能な場合、希望するイメージタイプを選択してください (convertはGIFまたはPNG、dvisvgmはSVGを生成します)。そうでない場合、、GIFイメージを作成するためにmimeTeXが使用されます。';
+$string['convertformat'] = '出力イメージフォーマット';
 $string['filtername'] = 'TeX表記法';
+$string['latexpreamble'] = 'LaTeXプリアンブル';
+$string['latexsettings'] = 'LaTeXレンダラ設定';
+$string['pathconvert'] = '<i>convert</i>バイナリのパス';
+$string['pathdvips'] = '<i>dvips</i>バイナリのパス';
+$string['pathdvisvgm'] = 'dvisvgmバイナリのパス';
+$string['pathlatex'] = '<i>latex</i>バイナリのパス';
+$string['pathmimetex'] = '「mimetex」バイナリのパス';
+$string['pathmimetexdesc'] = '別の有効なパスが指定されない場合、Moodleは独自のmimetexバイナリを使用します。';
 $string['source'] = 'TeXソース';

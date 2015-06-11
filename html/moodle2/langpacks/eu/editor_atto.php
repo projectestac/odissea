@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_atto', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['autosavefailed'] = 'Ezin izan da zerbitzarira konektatu. Orri hau berriz bidaltzen baduzu, agian aldaketak galduko dira.';
+$string['autosavefrequency'] = 'Automatikoki gordetzeko maiztasuna';
+$string['autosavesucceeded'] = 'Zirriborroa gorde da.';
+$string['editor_command_keycode'] = 'Cmd + {$a}';
+$string['editor_control_keycode'] = 'Ctrl + {$a}';
+$string['errorcannotparseline'] = '{$a}\' lerroak ez du formatu zuzenik.';
+$string['errorgroupisusedtwice'] = '\'{$a}\' taldea bi aldiz definitu da; taldeen izenek bakarra izan behar dute.';
+$string['errornopluginsorgroupsfound'] = 'Ez da pluginik ezta talderik aurkitu; mesedez, gehitu zenbait plugin eta talde.';
+$string['errorpluginisusedtwice'] = '\'{$a}\' plugina bi aldiz erabili da; pluginak behin baino ezin dira definitu.';
+$string['errorpluginnotfound'] = '\'{$a}\' plugina ezin da erabili; badirudi ez dagoela instalatuta.';
+$string['errortextrecovery'] = 'Zoritxarrez zirriborroa ezin izan da berrezarri.';
+$string['infostatus'] = 'Informazioa';
 $string['pluginname'] = 'Atto HTML editorea';
+$string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['recover'] = 'Berreskuratu';
+$string['settings'] = 'Atto tresna-barraren ezarpenak';
+$string['subplugintype_atto'] = 'Atto plugina';
+$string['subplugintype_atto_plural'] = 'Atto pluginak';
+$string['textrecovered'] = 'Testu honen zirriborroa automatikoki berrezarri da.';
+$string['toolbarconfig'] = 'Konfihuratu tresna-barra';
+$string['warningstatus'] = 'Kontuz';

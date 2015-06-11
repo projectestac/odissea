@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['attachment_help'] = 'Je kunt optionneel één of meer bestanden uploade
 $string['author'] = 'Auteur';
 $string['authorview'] = 'Blader volgens auteur';
 $string['back'] = 'Terug';
+$string['cachedef_concepts'] = 'Concept linken';
 $string['cantinsertcat'] = 'Kan geen categorie toevoegen';
 $string['cantinsertrec'] = 'Kan geen record toevoegen';
 $string['cantinsertrel'] = 'Kan geen relatie tussen categorie en invoer toevoegen';
@@ -168,6 +169,15 @@ $string['errconceptalreadyexists'] = 'Dit item bestaat al. In deze woordenlijst 
 $string['errdeltimeexpired'] = 'Je kunt dit niet verwijderen. Tijd verstreken!';
 $string['erredittimeexpired'] = 'De bewerktijd voor dit item is voorbij.';
 $string['errorparsingxml'] = 'Er zijn fouten opgetreden bij het verwerken van het bestand. Zorg ervoor dat de XML-syntax geldig is.';
+$string['eventcategorycreated'] = 'Categorie is aangemaakt';
+$string['eventcategorydeleted'] = 'Categorie is verwijderd';
+$string['eventcategoryupdated'] = 'Categorie is aangepast';
+$string['evententryapproved'] = 'Item is goedgekeurd';
+$string['evententrycreated'] = 'Item is aangemaakt';
+$string['evententrydeleted'] = 'Item is verwijderd';
+$string['evententrydisapproved'] = 'Item is verworpen';
+$string['evententryupdated'] = 'Item is aangepast';
+$string['evententryviewed'] = 'Item is bekeken';
 $string['explainaddentry'] = 'Voeg een nieuwe invoer toe in deze woordenlijst<br />Zowel concept als definitie moeten ingevuld worden.';
 $string['explainall'] = 'Toon ALLE items op één pagina';
 $string['explainalphabet'] = 'Blader door de woordenlijst met deze index';
@@ -191,7 +201,7 @@ woorden gelinkt worden.</p>
 <p>Bijvoorbeeld: voor het item "construct" in de woordenlijst wordt geen link gemaakt in het woord
  "constructivisme" als deze optie is ingeschakeld.</p>';
 $string['glossary:addinstance'] = 'Voeg een nieuwe woordenlijst toe';
-$string['glossary:approve'] = 'Nieuwe items goedkeuren of goedgekeurde terug afkeuren';
+$string['glossary:approve'] = 'Items goedkeuren of goedgekeurde items verwerpen';
 $string['glossary:comment'] = 'Commentaar toevoegen';
 $string['glossary:export'] = 'Items exporteren';
 $string['glossary:exportentry'] = 'Exporteer één item';
@@ -240,7 +250,7 @@ Een leraar kan toestaan dat bestanden als bijlage bij een item gevoegd worden. A
 
 Als de autolinkfilter voor woordenlijsten is ingeschakeld, dan kunnen woordenlijstitems automatisch gelinkt worden telkens wanneer het woord ergens in de cursus verschijnt.
 
-Een leraar kan commentaren op woordenlijstitems toestaan. De items kunnen ook beoordeeld worden door leraars of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een totaalcijfer te vormen dat opgenomen wordt in het puntenboek.
+Een leraar kan commentaren op woordenlijstitems toestaan. De items kunnen ook beoordeeld worden door leraars of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een totaalcijfer te vormen dat opgenomen wordt in de cijferlijst.
 
 Woordelijsten kunnen gebruikt worden voor vele zaken, zoals
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_history', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,28 +28,31 @@ defined('MOODLE_INTERNAL') || die();
 $string['allgradeitems'] = 'Tutti gli elementi di valutazione';
 $string['allgraders'] = 'Tutti i valutatori';
 $string['datefrom'] = 'Da';
-$string['datetill'] = 'A';
 $string['datetime'] = 'Data e ora';
-$string['deselect'] = 'Deseleziona';
+$string['dateto'] = 'A';
+$string['deleteditemid'] = 'Eliminato elemento con id {$a}';
+$string['errajaxsearch'] = 'Si è verificato un errore durante la ricerca degli utenti';
+$string['eventgradereportviewed'] = 'Visualizzata storia delle valuatzioni';
 $string['excluded'] = 'Esclusi dal calcolo';
+$string['exportfilename'] = 'Storia delle valutazioni';
 $string['feedbacktext'] = 'Testo del feedback';
 $string['finishselectingusers'] = 'Termina selezione utenti';
-$string['gradeitem'] = 'Elemento di valutazione';
+$string['foundnusers'] = 'Sono stati trovati {$a} utenti';
+$string['foundoneuser'] = 'E\' stato trovato 1 utente';
 $string['gradenew'] = 'Valutazione rivista';
 $string['gradeold'] = 'Valutazione orginale';
 $string['grader'] = 'Valutatore';
-$string['history:manage'] = 'Gestione storia valutazioni';
 $string['historyperpage'] = 'Elementi storia visualizzati per pagina';
 $string['historyperpage_help'] = 'Imposta il numero di elementi della storia delle valutazione da viualizzare nel report Storia delle valutazioni';
 $string['history:view'] = 'Visualizza la storia valutazioni';
-$string['locked'] = 'Bloccato';
-$string['overridden'] = 'Modificato';
+$string['loadmoreusers'] = 'Carica altri utenti...';
 $string['pluginname'] = 'Storia delle valutazioni';
 $string['preferences'] = 'Preferenze storia valutazioni';
 $string['revisedonly'] = 'Solo valutazioni riviste';
 $string['revisedonly_help'] = 'Visualizza solamente le valutazioni riviste.';
 $string['selectedusers'] = 'Utenti selezionati';
 $string['selectuser'] = 'Seleziona utente';
+$string['selectusers'] = 'Seleziona utente';
 $string['source'] = 'Fonte';
 $string['useractivityfeedback'] = 'Feedback {$a}';
 $string['useractivitygrade'] = 'Valutazione {$a}';

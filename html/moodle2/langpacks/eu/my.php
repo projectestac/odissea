@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'my', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,3 +35,5 @@ $string['nocourses'] = 'Ez dago ikastaroei buruzko informaziorik';
 $string['noguest'] = 'Nire hasiera orria ez dago bisitarien eskura';
 $string['pinblocks'] = 'Nire Moodle-rako blokeen ezarpenak';
 $string['pinblocksexplan'] = 'Hemen ezartzen duzun edozin bloke ikusiko du (baina ezingo du editatu) Moodle-ren edozein erabiltzailek bere "Nire Moodle" orrian.';
+$string['reseterror'] = 'Errorea gertatu da zure orria berrabiaraztean';
+$string['resetpage'] = 'Berrezarri orria berezkora';

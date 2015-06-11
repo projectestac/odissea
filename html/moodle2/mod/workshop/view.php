@@ -21,8 +21,7 @@
  * You can have a rather longer description of the file as well,
  * if you like, and it can span multiple lines.
  *
- * @package    mod
- * @subpackage workshop
+ * @package    mod_workshop
  * @copyright  2009 David Mudrak <david.mudrak@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -62,15 +61,12 @@ $completion->set_module_viewed($cm);
 $eventdata = array();
 $eventdata['objectid']         = $workshop->id;
 $eventdata['context']          = $workshop->context;
-$eventdata['courseid']         = $course->id;
-$eventdata['other']['content'] = $workshop->phase;
 
 $PAGE->set_url($workshop->view_url());
 $event = \mod_workshop\event\course_module_viewed::create($eventdata);
 $event->add_record_snapshot('course', $course);
 $event->add_record_snapshot('workshop', $workshoprecord);
 $event->add_record_snapshot('course_modules', $cm);
-$event->set_page_detail();
 $event->trigger();
 
 // If the phase is to be switched, do it asap. This just has to happen after triggering
@@ -78,7 +74,6 @@ $event->trigger();
 if ($workshop->phase == workshop::PHASE_SUBMISSION and $workshop->phaseswitchassessment
         and $workshop->submissionend > 0 and $workshop->submissionend < time()) {
     $workshop->switch_phase(workshop::PHASE_ASSESSMENT);
-    $workshop->log('update switch phase', $workshop->view_url(), $workshop->phase);
     // Disable the automatic switching now so that it is not executed again by accident
     // if the teacher changes the phase back to the submission one.
     $DB->set_field('workshop', 'phaseswitchassessment', 0, array('id' => $workshop->id));

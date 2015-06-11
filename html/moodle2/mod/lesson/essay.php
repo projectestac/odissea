@@ -18,8 +18,7 @@
 /**
  * Provides the interface for grading essay questions
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
@@ -34,11 +33,12 @@ $mode = optional_param('mode', 'display', PARAM_ALPHA);
 
 $cm = get_coursemodule_from_id('lesson', $id, 0, false, MUST_EXIST);
 $course = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
-$lesson = new lesson($DB->get_record('lesson', array('id' => $cm->instance), '*', MUST_EXIST));
+$dblesson = $DB->get_record('lesson', array('id' => $cm->instance), '*', MUST_EXIST);
+$lesson = new lesson($dblesson);
 
 require_login($course, false, $cm);
 $context = context_module::instance($cm->id);
-require_capability('mod/lesson:edit', $context);
+require_capability('mod/lesson:grade', $context);
 
 $url = new moodle_url('/mod/lesson/essay.php', array('id'=>$id));
 if ($mode !== 'display') {
@@ -49,6 +49,11 @@ $PAGE->set_url($url);
 $attempt = new stdClass();
 $user = new stdClass();
 $attemptid = optional_param('attemptid', 0, PARAM_INT);
+
+$formattextdefoptions = new stdClass();
+$formattextdefoptions->noclean = true;
+$formattextdefoptions->para = false;
+$formattextdefoptions->context = $context;
 
 if ($attemptid > 0) {
     $attempt = $DB->get_record('lesson_attempts', array('id' => $attemptid));
@@ -129,8 +134,20 @@ switch ($mode) {
             $updategrade->id = $grade->id;
             $updategrade->grade = $gradeinfo->grade;
             $DB->update_record('lesson_grades', $updategrade);
-            // Log it
-            add_to_log($course->id, 'lesson', 'update grade', "essay.php?id=$cm->id", $lesson->name, $cm->id);
+
+            $params = array(
+                'context' => $context,
+                'objectid' => $grade->id,
+                'courseid' => $course->id,
+                'relateduserid' => $attempt->userid,
+                'other' => array(
+                    'lessonid' => $lesson->id,
+                    'attemptid' => $attemptid
+                )
+            );
+            $event = \mod_lesson\event\essay_assessed::create($params);
+            $event->add_record_snapshot('lesson', $dblesson);
+            $event->trigger();
 
             $lesson->add_message(get_string('changessaved'), 'notifysuccess');
 
@@ -189,8 +206,6 @@ switch ($mode) {
         if (!$answers = $DB->get_records_select('lesson_answers', "lessonid = ? AND pageid $answerUsql", $parameters, '', 'pageid, score')) {
             print_error('cannotfindanswer', 'lesson');
         }
-        $options = new stdClass;
-        $options->noclean = true;
 
         foreach ($attempts as $attempt) {
             $essayinfo = unserialize($attempt->useranswer);
@@ -214,8 +229,9 @@ switch ($mode) {
 
                 // Set rest of the message values
                 $currentpage = $lesson->load_page($attempt->pageid);
-                $a->question = format_text($currentpage->contents, $currentpage->contentsformat, $options);
-                $a->response = s($essayinfo->answer);
+                $a->question = format_text($currentpage->contents, $currentpage->contentsformat, $formattextdefoptions);
+                $a->response = format_text($essayinfo->answer, $essayinfo->answerformat,
+                        array('context' => $context, 'para' => true));
                 $a->comment  = s($essayinfo->response);
 
                 // Fetch message HTML and plain text formats
@@ -243,8 +259,6 @@ switch ($mode) {
                 $essayinfo->sent = 1;
                 $attempt->useranswer = serialize($essayinfo);
                 $DB->update_record('lesson_attempts', $attempt);
-                // Log it
-                add_to_log($course->id, 'lesson', 'update email essay grade', "essay.php?id=$cm->id", format_string($pages[$attempt->pageid]->title,true).': '.fullname($users[$attempt->userid]), $cm->id);
             }
         }
         $lesson->add_message(get_string('emailsuccess', 'lesson'), 'notifysuccess');
@@ -288,8 +302,6 @@ switch ($mode) {
         }
         break;
 }
-// Log it
-add_to_log($course->id, 'lesson', 'view grade', "essay.php?id=$cm->id", get_string('manualgrading', 'lesson'), $cm->id);
 
 $lessonoutput = $PAGE->get_renderer('mod_lesson');
 echo $lessonoutput->header($lesson, $cm, 'essay', false, null, get_string('manualgrading', 'lesson'));
@@ -348,11 +360,11 @@ switch ($mode) {
                     $attributes = array();
                     // Different colors for all the states of an essay (graded, if sent, not graded)
                     if (!$essayinfo->graded) {
-                        $attributes['class'] = "graded";
+                        $attributes['class'] = "essayungraded";
                     } elseif (!$essayinfo->sent) {
-                        $attributes['class'] = "sent";
+                        $attributes['class'] = "essaygraded";
                     } else {
-                        $attributes['class'] = "ungraded";
+                        $attributes['class'] = "essaysent";
                     }
                     $essaylinks[] = html_writer::link($url, userdate($essay->timeseen, get_string('strftimedatetime')).' '.format_string($pages[$essay->pageid]->title,true), $attributes);
                 }
@@ -373,6 +385,16 @@ switch ($mode) {
         echo html_writer::table($table);
         break;
     case 'grade':
+        // Trigger the essay grade viewed event.
+        $event = \mod_lesson\event\essay_attempt_viewed::create(array(
+            'objectid' => $attempt->id,
+            'relateduserid' => $attempt->userid,
+            'context' => $context,
+            'courseid' => $course->id,
+        ));
+        $event->add_record_snapshot('lesson_attempts', $attempt);
+        $event->trigger();
+
         // Grading form
         // Expects the following to be set: $attemptid, $answer, $user, $page, $attempt
         $essayinfo = unserialize($attempt->useranswer);
@@ -383,8 +405,9 @@ switch ($mode) {
         $data->id = $cm->id;
         $data->attemptid = $attemptid;
         $data->score = $essayinfo->score;
-        $data->question = format_string($currentpage->contents, $currentpage->contentsformat);
-        $data->studentanswer = format_string($essayinfo->answer, $essayinfo->answerformat);
+        $data->question = format_text($currentpage->contents, $currentpage->contentsformat, $formattextdefoptions);
+        $data->studentanswer = format_text($essayinfo->answer, $essayinfo->answerformat,
+                array('context' => $context, 'para' => true));
         $data->response = $essayinfo->response;
         $mform->set_data($data);
 

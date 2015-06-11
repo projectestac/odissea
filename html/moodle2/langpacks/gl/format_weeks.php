@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'format_weeks', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,5 +31,5 @@ $string['page-course-view-weeks'] = 'Páxina principal de calquera curso en form
 $string['page-course-view-weeks-x'] = 'Páxina de calquera curso en formato semanal';
 $string['pluginname'] = 'Formato semanal';
 $string['section0name'] = 'Xeral';
-$string['sectionname'] = 'Semana';
+$string['sectionname'] = 'semana';
 $string['showfromothers'] = 'Amosar a semana';

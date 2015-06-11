@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_list', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['allcourses'] = 'O administrador ve todos os cursos';
 $string['configadminview'] = 'Que debería ver o administrador no bloque de listaxe de cursos?';
 $string['confighideallcourseslink'] = 'Agochar a ligazón «Todos os cursos» no fondo do bloque. Agochar as ligazóns non afecta a vista do administrador.';
 $string['course_list:addinstance'] = 'Engadir un novo bloque de cursos';
-$string['course_list:myaddinstance'] = 'Engadir un novo bloque de cursos ao cartafol persoal';
+$string['course_list:myaddinstance'] = 'Engadir un novo bloque de cursos na área persoal';
 $string['hideallcourseslink'] = 'Agochar a ligazón a Todos os cursos';
 $string['owncourses'] = 'O administrador ve os seus propios cursos';
 $string['pluginname'] = 'Cursos';

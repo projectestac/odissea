@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['location'] = 'Ubicació del fitxer';
 $string['logtolocation'] = 'Ubicació del fitxer de registre (en blanc si no voleu registre)';
 $string['mailadmins'] = 'Notifica a l\'administrador per correu electrònic';
 $string['mailusers'] = 'Notifica als usuaris per correu electrònic';
-$string['messageprovider:imsenterprise_enrolment'] = 'Missatges d\'inscripció en fitxer IMS Enterprise';
+$string['messageprovider:imsenterprise_enrolment'] = 'Missatges d\'inscripcions mitjançant IMS Enterprise';
 $string['miscsettings'] = 'Miscel·lània';
 $string['pluginname'] = 'Fitxer IMS Enterprise';
 $string['pluginname_desc'] = 'Aquest mètode comprovarà de forma cíclica en un procés  un fitxer de text formatat en la localització que heu indicat. El fitxer seguirà les especificacions IMS Enterprise i contindrà  els elements XML  persona, grup, i categoria.';

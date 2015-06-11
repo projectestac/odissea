@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="lib/db" VERSION="20131009" COMMENT="XMLDB file for core Moodle tables"
+<XMLDB PATH="lib/db" VERSION="20141017" COMMENT="XMLDB file for core Moodle tables"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../lib/xmldb/xmldb.xsd"
 >
@@ -293,15 +293,12 @@
         <FIELD NAME="visibleold" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
         <FIELD NAME="groupmode" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="groupingid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="groupmembersonly" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="only members of any group are allowed to access the activity"/>
         <FIELD NAME="completion" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Whether the completion-tracking facilities are enabled for this activity. 0 = not enabled (database default) 1 = manual tracking, user can tick this activity off (UI default for most activity types) 2 = automatic tracking, system should mark completion according to rules specified in course_moduleS_completion"/>
         <FIELD NAME="completiongradeitemnumber" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="Grade-item number used to track automatic completion, if applicable."/>
         <FIELD NAME="completionview" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Controls whether a page view is part of the automatic completion requirements for this activity. 0 = view not required 1 = view required"/>
         <FIELD NAME="completionexpected" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Date at which students are expected to complete this activity. This field is used when displaying student progress."/>
-        <FIELD NAME="availablefrom" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If set non-zero, the activity only becomes available from the time given here."/>
-        <FIELD NAME="availableuntil" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If set non-zero, the activity is only available until the time given here."/>
-        <FIELD NAME="showavailability" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If this field is set to 1 and the activity is not available because the 'availablefrom' date has not been reached, or one of the conditions in course_modules_availability is not matched, then the item will be displayed greyed-out (unclickable) with an information message such as 'Available from (date)'. Otherwise, the item will not be displayed to students at all."/>
         <FIELD NAME="showdescription" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Some module types support a 'description' which shows within the module pages. This option controls whether it also displays on the course main page. 0 = does not display (default), 1 = displays"/>
+        <FIELD NAME="availability" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Availability restrictions for viewing this activity, in JSON format. Null if no restrictions."/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
@@ -314,37 +311,6 @@
         <INDEX NAME="instance" UNIQUE="false" FIELDS="instance"/>
         <INDEX NAME="idnumber-course" UNIQUE="false" FIELDS="idnumber, course" COMMENT="non unique index (although programatically we are guarantying some sort of uniqueness both under this table and the grade_items one). TODO: We need a central store of module idnumbers in the future."/>
       </INDEXES>
-    </TABLE>
-    <TABLE NAME="course_modules_availability" COMMENT="Table stores conditions that affect whether a module/activity is currently available to students or not.">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="coursemoduleid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="ID of the module whose availability is being restricted by this condition."/>
-        <FIELD NAME="sourcecmid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="If this condition is based on completion of another activity, then this is the course-module ID of that activity. Otherwise null."/>
-        <FIELD NAME="requiredcompletion" TYPE="int" LENGTH="1" NOTNULL="false" SEQUENCE="false" COMMENT="If this condition is on a module's completion, then this should be set to the required completion state. Otherwise null. Suitable values are 1 = completed, 2 = completed-passed, 3 = completed-failed."/>
-        <FIELD NAME="gradeitemid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="If this condition is based on a gradebook score, the item ID is given here (and the item will now not be available until a value is achieved for that grade). Otherwise null."/>
-        <FIELD NAME="grademin" TYPE="number" LENGTH="10" NOTNULL="false" SEQUENCE="false" DECIMALS="5" COMMENT="If set, this is the minimum grade percentage that must be reached (greater than or equal) in order for this module to appear. Otherwise null."/>
-        <FIELD NAME="grademax" TYPE="number" LENGTH="10" NOTNULL="false" SEQUENCE="false" DECIMALS="5" COMMENT="If set, this is the maximum grade percentage that users must be below (less than) in order to display this item. Otherwise null."/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-        <KEY NAME="coursemoduleid" TYPE="foreign" FIELDS="coursemoduleid" REFTABLE="course_modules" REFFIELDS="id"/>
-        <KEY NAME="sourcecmid" TYPE="foreign" FIELDS="sourcecmid" REFTABLE="course_modules" REFFIELDS="id"/>
-        <KEY NAME="gradeitemid" TYPE="foreign" FIELDS="gradeitemid" REFTABLE="grade_items" REFFIELDS="id"/>
-      </KEYS>
-    </TABLE>
-    <TABLE NAME="course_modules_avail_fields" COMMENT="Stores user field conditions that affect whether an activity is currently available.">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="coursemoduleid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="ID of the module whose availability is being restricted by this condition."/>
-        <FIELD NAME="userfield" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" COMMENT="The user profile field this record relates to if it is not a custom profile field"/>
-        <FIELD NAME="customfieldid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="ID for the custom field if this relates to one"/>
-        <FIELD NAME="operator" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="The operator, such as less than or equal to, between the field and the value"/>
-        <FIELD NAME="value" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The required value of the field"/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-        <KEY NAME="coursemoduleid" TYPE="foreign" FIELDS="coursemoduleid" REFTABLE="course_modules" REFFIELDS="id"/>
-      </KEYS>
     </TABLE>
     <TABLE NAME="course_modules_completion" COMMENT="Stores the completion state (completed or not completed, etc) of each user on each activity.">
       <FIELDS>
@@ -373,10 +339,7 @@
         <FIELD NAME="summaryformat" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="sequence" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="visible" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
-        <FIELD NAME="availablefrom" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If set non-zero, the section only becomes available from the time given here."/>
-        <FIELD NAME="availableuntil" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If set non-zero, the section is only available until the time given here."/>
-        <FIELD NAME="showavailability" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If this field is set to 1 and the section is not available because the 'availablefrom' date has not been reached, or one of the conditions in course_sections_availability_cg is not matched, then the item will be displayed greyed-out (unclickable) with an information message such as 'Available from (date)'. Otherwise, the item will not be displayed to students at all."/>
-        <FIELD NAME="groupingid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Grouping that has access to this section."/>
+        <FIELD NAME="availability" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Availability restrictions for viewing this section, in JSON format. Null if no restrictions."/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
@@ -384,37 +347,6 @@
       <INDEXES>
         <INDEX NAME="course_section" UNIQUE="true" FIELDS="course, section"/>
       </INDEXES>
-    </TABLE>
-    <TABLE NAME="course_sections_availability" COMMENT="Completion or grade conditions that affect if a section is currently available to students.">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="coursesectionid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="ID of the section whose availability is being restricted by this condition."/>
-        <FIELD NAME="sourcecmid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="If this condition is based on completion of some activity, then this is the course-module ID of that activity. Otherwise null."/>
-        <FIELD NAME="requiredcompletion" TYPE="int" LENGTH="1" NOTNULL="false" SEQUENCE="false" COMMENT="If this condition is on a module's completion, then this should be set to the required completion state. Otherwise null. Suitable values are 1 = completed, 2 = completed-passed, 3 = completed-failed."/>
-        <FIELD NAME="gradeitemid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="If this condition is based on a gradebook score, the item ID is given here (and the item will now not be available until a value is achieved for that grade). Otherwise null."/>
-        <FIELD NAME="grademin" TYPE="number" LENGTH="10" NOTNULL="false" SEQUENCE="false" DECIMALS="5" COMMENT="If set, this is the minimum grade percentage that must be reached (greater than or equal) in order for this section to appear. Otherwise null."/>
-        <FIELD NAME="grademax" TYPE="number" LENGTH="10" NOTNULL="false" SEQUENCE="false" DECIMALS="5" COMMENT="If set, this is the maximum grade percentage that users must be below (less than) in order to display this item. Otherwise null."/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-        <KEY NAME="coursesectionid" TYPE="foreign" FIELDS="coursesectionid" REFTABLE="course_sections" REFFIELDS="id"/>
-        <KEY NAME="sourcecmid" TYPE="foreign" FIELDS="sourcecmid" REFTABLE="course_modules" REFFIELDS="id"/>
-        <KEY NAME="gradeitemid" TYPE="foreign" FIELDS="gradeitemid" REFTABLE="grade_items" REFFIELDS="id"/>
-      </KEYS>
-    </TABLE>
-    <TABLE NAME="course_sections_avail_fields" COMMENT="Stores user field conditions that affect whether an activity is currently available.">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="coursesectionid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="ID of the section whose availability is being restricted by this condition."/>
-        <FIELD NAME="userfield" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" COMMENT="The user profile field this record relates to if it is not a custom profile field"/>
-        <FIELD NAME="customfieldid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="ID for the custom field if this relates to one"/>
-        <FIELD NAME="operator" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="The operator, such as less than or equal to, between the field and the value"/>
-        <FIELD NAME="value" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The required value of the field"/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-        <KEY NAME="coursesectionid" TYPE="foreign" FIELDS="coursesectionid" REFTABLE="course_sections" REFFIELDS="id"/>
-      </KEYS>
     </TABLE>
     <TABLE NAME="course_request" COMMENT="course requests">
       <FIELDS>
@@ -530,21 +462,6 @@
       </KEYS>
       <INDEXES>
         <INDEX NAME="filter_md5key" UNIQUE="false" FIELDS="filter, md5key"/>
-      </INDEXES>
-    </TABLE>
-    <TABLE NAME="cache_text" COMMENT="For storing temporary copies of processed texts">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="md5key" TYPE="char" LENGTH="32" NOTNULL="true" SEQUENCE="false"/>
-        <FIELD NAME="formattedtext" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
-        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-      </KEYS>
-      <INDEXES>
-        <INDEX NAME="md5key" UNIQUE="false" FIELDS="md5key"/>
-        <INDEX NAME="timemodified" UNIQUE="false" FIELDS="timemodified" COMMENT="Mainly to help deletion of expired records from cron"/>
       </INDEXES>
     </TABLE>
     <TABLE NAME="log" COMMENT="Every action is logged as far as possible">
@@ -1287,7 +1204,7 @@
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
       </KEYS>
       <INDEXES>
-        <INDEX NAME="userfieldidx" UNIQUE="false" FIELDS="userid, fieldid"/>
+        <INDEX NAME="userfieldidx" UNIQUE="true" FIELDS="userid, fieldid"/>
       </INDEXES>
     </TABLE>
     <TABLE NAME="question_categories" COMMENT="Categories are for grouping questions">
@@ -1442,48 +1359,6 @@
         <INDEX NAME="attemptstepid-name" UNIQUE="true" FIELDS="attemptstepid, name"/>
       </INDEXES>
     </TABLE>
-    <TABLE NAME="question_states" COMMENT="Stores user responses to an attempt, and percentage grades">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="attempt" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="question" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="seq_number" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="answer" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
-        <FIELD NAME="timestamp" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="event" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="grade" TYPE="number" LENGTH="12" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="7"/>
-        <FIELD NAME="raw_grade" TYPE="number" LENGTH="12" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="7"/>
-        <FIELD NAME="penalty" TYPE="number" LENGTH="12" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="7"/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-        <KEY NAME="attempt" TYPE="foreign" FIELDS="attempt" REFTABLE="question_attempts" REFFIELDS="id"/>
-        <KEY NAME="question" TYPE="foreign" FIELDS="question" REFTABLE="question" REFFIELDS="id"/>
-      </KEYS>
-    </TABLE>
-    <TABLE NAME="question_sessions" COMMENT="Gives ids of the newest open and newest graded states">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="attemptid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="newest" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="newgraded" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="sumpenalty" TYPE="number" LENGTH="12" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="7"/>
-        <FIELD NAME="manualcomment" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
-        <FIELD NAME="manualcommentformat" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="flagged" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The person attempting the question may mark certain questions within their question_attempt if the module that owns the attempt allow it. This field stores the status of that flag."/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-        <KEY NAME="attemptid" TYPE="foreign" FIELDS="attemptid" REFTABLE="question_attempts" REFFIELDS="id"/>
-        <KEY NAME="questionid" TYPE="foreign" FIELDS="questionid" REFTABLE="question" REFFIELDS="id"/>
-        <KEY NAME="newest" TYPE="foreign" FIELDS="newest" REFTABLE="question_states" REFFIELDS="id"/>
-        <KEY NAME="newgraded" TYPE="foreign" FIELDS="newgraded" REFTABLE="question_states" REFFIELDS="id"/>
-      </KEYS>
-      <INDEXES>
-        <INDEX NAME="attemptid-questionid" UNIQUE="true" FIELDS="attemptid, questionid"/>
-      </INDEXES>
-    </TABLE>
     <TABLE NAME="question_statistics" COMMENT="Statistics for individual questions used in an activity.">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
@@ -1492,6 +1367,7 @@
         <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="slot" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The position in the quiz where this question appears"/>
         <FIELD NAME="subquestion" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="variant" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="s" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="effectiveweight" TYPE="number" LENGTH="15" NOTNULL="false" SEQUENCE="false" DECIMALS="5"/>
         <FIELD NAME="negcovar" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
@@ -1512,16 +1388,29 @@
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
         <FIELD NAME="hashcode" TYPE="char" LENGTH="40" NOTNULL="true" SEQUENCE="false" COMMENT="sha1 hash of serialized qubaids_condition class. Unique for every combination of class name and property."/>
+        <FIELD NAME="whichtries" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="variant" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="subqid" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="aid" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="response" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
-        <FIELD NAME="rcount" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="credit" TYPE="number" LENGTH="15" NOTNULL="true" SEQUENCE="false" DECIMALS="5"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="question_response_count" COMMENT="Count for each responses for each try at a question.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="analysisid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="try" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="rcount" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="analysisid" TYPE="foreign" FIELDS="analysisid" REFTABLE="question_response_analysis" REFFIELDS="id"/>
       </KEYS>
     </TABLE>
     <TABLE NAME="mnet_application" COMMENT="Information about applications on remote hosts">
@@ -1795,7 +1684,6 @@
         <FIELD NAME="droplow" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Drop the X lowest items"/>
         <FIELD NAME="aggregateonlygraded" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="aggregate only graded activities"/>
         <FIELD NAME="aggregateoutcomes" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Aggregate outcomes"/>
-        <FIELD NAME="aggregatesubcats" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="ignore subcategories in aggregation"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="hidden" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
@@ -1828,6 +1716,7 @@
         <FIELD NAME="multfactor" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="1.0" SEQUENCE="false" DECIMALS="5" COMMENT="Multiply all grades by this"/>
         <FIELD NAME="plusfactor" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="Add this to all grades"/>
         <FIELD NAME="aggregationcoef" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="Aggregation coefficient used for category weights or other aggregation types"/>
+        <FIELD NAME="aggregationcoef2" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="Aggregation coefficient used for weights in aggregation types with both extra credit and weight"/>
         <FIELD NAME="sortorder" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Sorting order of the columns"/>
         <FIELD NAME="display" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Display as real grades, percentages (in reference to the minimum and maximum grades) or letters (A, B, C etc..), or course default (0)"/>
         <FIELD NAME="decimals" TYPE="int" LENGTH="1" NOTNULL="false" SEQUENCE="false" COMMENT="Also known as precision, the number of digits after the decimal point symbol."/>
@@ -1835,6 +1724,7 @@
         <FIELD NAME="locked" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 is locked, &amp;gt; 1 is a date to lock until (prevents update)"/>
         <FIELD NAME="locktime" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="lock all final grades after this date"/>
         <FIELD NAME="needsupdate" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If this flag is set, then the whole column will be recalculated"/>
+        <FIELD NAME="weightoverride" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The first time this grade_item was created"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The last time this grade_item was modified"/>
       </FIELDS>
@@ -1875,6 +1765,8 @@
         <FIELD NAME="informationformat" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="format of information text"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="the time this grade was first created"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="the time this grade was last modified"/>
+        <FIELD NAME="aggregationstatus" TYPE="char" LENGTH="10" NOTNULL="true" DEFAULT="unknown" SEQUENCE="false" COMMENT="One of several values describing how this grade_grade was used when calculating the aggregation. Possible values are &quot;unknown&quot;, &quot;dropped&quot;, &quot;novalue&quot;, &quot;used&quot;"/>
+        <FIELD NAME="aggregationweight" TYPE="number" LENGTH="10" NOTNULL="false" SEQUENCE="false" DECIMALS="5" COMMENT="If the aggregationstatus == 'included', then this is the percent this item contributed to the aggregation."/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
@@ -1932,7 +1824,7 @@
         <FIELD NAME="droplow" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Drop the X lowest items"/>
         <FIELD NAME="aggregateonlygraded" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="aggregate only graded items"/>
         <FIELD NAME="aggregateoutcomes" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Aggregate outcomes"/>
-        <FIELD NAME="aggregatesubcats" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="ignore subcategories in aggregation"/>
+        <FIELD NAME="aggregatesubcats" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This setting was removed from grade_categories. It is kept here only to preserve history."/>
         <FIELD NAME="hidden" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
@@ -1973,6 +1865,7 @@
         <FIELD NAME="multfactor" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="1.0" SEQUENCE="false" DECIMALS="5" COMMENT="Multiply all grades by this"/>
         <FIELD NAME="plusfactor" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="Add this to all grades"/>
         <FIELD NAME="aggregationcoef" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="Aggregation coefficient used for category weights or other aggregation types"/>
+        <FIELD NAME="aggregationcoef2" TYPE="number" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="Aggregation coefficient used for category weights or other aggregation types"/>
         <FIELD NAME="sortorder" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Sorting order of the columns"/>
         <FIELD NAME="hidden" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 is hidden, &amp;gt; 1 is a date to hide until (prevents viewing)"/>
         <FIELD NAME="locked" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 is locked, &amp;gt; 1 is a date to lock until (prevents update)"/>
@@ -1980,6 +1873,7 @@
         <FIELD NAME="needsupdate" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="If this flag is set, then the whole column will be recalculated"/>
         <FIELD NAME="display" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="decimals" TYPE="int" LENGTH="1" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="weightoverride" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
@@ -2101,15 +1995,19 @@
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
         <FIELD NAME="tagid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="component" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="Defines the Moodle component which the tag was added to"/>
         <FIELD NAME="itemtype" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="itemid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="contextid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The context id of the item that was tagged"/>
         <FIELD NAME="tiuserid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="ordering" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="Maintains the order of the tag instances of an item"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="timemodified"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
         <KEY NAME="tagid" TYPE="foreign" FIELDS="tagid" REFTABLE="tag" REFFIELDS="id"/>
+        <KEY NAME="contextid" TYPE="foreign" FIELDS="contextid" REFTABLE="context" REFFIELDS="id"/>
       </KEYS>
       <INDEXES>
         <INDEX NAME="itemtype-itemid-tagid-tiuserid" UNIQUE="true" FIELDS="itemtype, itemid, tagid, tiuserid"/>
@@ -2193,6 +2091,7 @@
         <FIELD NAME="idnumber" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="Unique identifier of a cohort, useful especially for mapping to external entities"/>
         <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Standard description text box"/>
         <FIELD NAME="descriptionformat" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="visible" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Visibility to teachers"/>
         <FIELD NAME="component" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Component (plugintype_pluignname) that manages the cohort, manual modifications are allowed only when set to NULL"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
@@ -2372,6 +2271,7 @@
         <FIELD NAME="expirytime" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="time this record will expire (used for cron cleanups) - the start of export + 24 hours"/>
         <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="psuedo fk to user.  this is stored in the serialised data structure in the data field, but added here for ease of lookups."/>
         <FIELD NAME="instance" TYPE="int" LENGTH="10" NOTNULL="false" DEFAULT="0" SEQUENCE="false" COMMENT="which portfolio plugin instance is being used"/>
+        <FIELD NAME="queued" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Value 1 means the entry should be processed in cron."/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
@@ -2464,7 +2364,7 @@
         <KEY NAME="repositoryid" TYPE="foreign" FIELDS="repositoryid" REFTABLE="repository_instances" REFFIELDS="id"/>
       </KEYS>
       <INDEXES>
-        <INDEX NAME="uq_external_file" UNIQUE="true" FIELDS="repositoryid, referencehash" COMMENT="The combination of repositoryid and reference field is supposed to be a unique identification of an external file. Because the reference is a TEXT field, we can't use to compose the index. So we use the referencehash instead and the file API is responsible to keep it up-to-date"/>
+        <INDEX NAME="uq_external_file" UNIQUE="true" FIELDS="referencehash, repositoryid" COMMENT="The combination of repositoryid and reference field is supposed to be a unique identification of an external file. Because the reference is a TEXT field, we can't use to compose the index. So we use the referencehash instead and the file API is responsible to keep it up-to-date"/>
       </INDEXES>
     </TABLE>
     <TABLE NAME="repository" COMMENT="This table contains one entry for every configured external repository instance.">
@@ -3075,6 +2975,105 @@
         <FIELD NAME="timerequested" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The time that the user first requested this password reset"/>
         <FIELD NAME="timererequested" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The time the user re-requested the password reset."/>
         <FIELD NAME="token" TYPE="char" LENGTH="32" NOTNULL="true" SEQUENCE="false" COMMENT="secret set and emailed to user"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="lock_db" COMMENT="Stores active and inactive lock types for db locking method.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="resourcekey" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="String identifying the resource to be locked. Should use frankenstyle format."/>
+        <FIELD NAME="expires" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="Expiry time for an active lock."/>
+        <FIELD NAME="owner" TYPE="char" LENGTH="36" NOTNULL="false" SEQUENCE="false" COMMENT="uuid indicating the owner of the lock."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="resourcekey_uniq" UNIQUE="true" FIELDS="resourcekey" COMMENT="Unique index for resourcekey"/>
+        <INDEX NAME="expires_idx" UNIQUE="false" FIELDS="expires" COMMENT="Index on expires column"/>
+        <INDEX NAME="owner_idx" UNIQUE="false" FIELDS="owner" COMMENT="Index on owner"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="task_scheduled" COMMENT="List of scheduled tasks to be run by cron.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="component" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The component this scheduled task belongs to."/>
+        <FIELD NAME="classname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The class extending scheduled_task to be called when running this task."/>
+        <FIELD NAME="lastruntime" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="nextruntime" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="blocking" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Block the entire cron when this task is running."/>
+        <FIELD NAME="minute" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="hour" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="day" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="month" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="dayofweek" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="faildelay" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="customised" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Used on upgrades to prevent overwriting custom schedules."/>
+        <FIELD NAME="disabled" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="1 means do not run from cron"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="classname_uniq" UNIQUE="true" FIELDS="classname"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="task_adhoc" COMMENT="List of adhoc tasks waiting to run.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="component" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The component that triggered this adhoc task."/>
+        <FIELD NAME="classname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The name of the class extending adhoc_task to run when this task is executed."/>
+        <FIELD NAME="nextruntime" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="faildelay" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="customdata" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Custom data to be passed to the adhoc task. Must be serialisable using json_encode()"/>
+        <FIELD NAME="blocking" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="nextruntime_idx" UNIQUE="false" FIELDS="nextruntime"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="messageinbound_handlers" COMMENT="Inbound Message Handler definitions.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="component" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="The component this handler belongs to."/>
+        <FIELD NAME="classname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The class defining the Inbound Message handler to be called."/>
+        <FIELD NAME="defaultexpiration" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="86400" SEQUENCE="false" COMMENT="The default expiration period to use when creating a new key"/>
+        <FIELD NAME="validateaddress" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Whether to validate the sender address against the user record."/>
+        <FIELD NAME="enabled" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Whether this handler is currently enabled."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="classname" TYPE="unique" FIELDS="classname" COMMENT="The classname must be unique."/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="messageinbound_datakeys" COMMENT="Inbound Message data item secret keys.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="handler" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The handler that this key belongs to."/>
+        <FIELD NAME="datavalue" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The integer value of the data item that this key belongs to."/>
+        <FIELD NAME="datakey" TYPE="char" LENGTH="64" NOTNULL="false" SEQUENCE="false" COMMENT="The secret key for this data item."/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The time that the data key was created."/>
+        <FIELD NAME="expires" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The expiry time of this key."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="handler_datavalue" TYPE="unique" FIELDS="handler, datavalue" COMMENT="The combination of handler and data item value must be unique."/>
+        <KEY NAME="handler" TYPE="foreign" FIELDS="handler" REFTABLE="messageinbound_handlers" REFFIELDS="id" COMMENT="The handler must point to a valid record in the messageinbound_handlers table."/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="messageinbound_messagelist" COMMENT="A list of message IDs for existing replies">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="messageid" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="address" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="The Inbound Message address that the message was originally sent to"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>

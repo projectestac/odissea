@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_image', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,13 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilityhint'] = '<p>Pautes d\'accessibilitat de continguts web (<em>Web content accessibility guidelines</em>, WCAG):<br/><ul><li><a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Alternatives de text</a></li></ul></p>';
+$string['alignment'] = 'Alineació';
+$string['alignment_bottom'] = 'Inferior';
+$string['alignment_left'] = 'Esquerra';
+$string['alignment_middle'] = 'Mig';
+$string['alignment_right'] = 'Dreta';
+$string['alignment_top'] = 'Superior';
 $string['browserepositories'] = 'Navega pels repositoris ...';
+$string['constrain'] = 'Mida automàtica';
 $string['createimage'] = 'Insereix imatge';
+$string['customstyle'] = 'Estil personalitzat';
 $string['enteralt'] = 'Descriu aquesta imatge per a algú que no la pot veure';
 $string['enterurl'] = 'Introdueix l\'URL';
 $string['height'] = 'Alçada';
-$string['image'] = 'Imatge';
+$string['imageproperties'] = 'Propietats de la imatge';
 $string['pluginname'] = 'Imatge';
+$string['presentation'] = 'La descripció no és necessària';
+$string['presentationoraltrequired'] = 'Les imatges han de tenir una descripció, tret que la descripció es marqui com a no necessària.';
 $string['preview'] = 'Previsualització';
+$string['saveimage'] = 'Desa imatge';
+$string['size'] = 'Mida';
 $string['width'] = 'Amplada';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'error', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -395,7 +395,7 @@ $string['statsdisable'] = 'Τα στατιστικά δεν είναι ενερ�
 $string['statsnodata'] = 'Δεν υπάρχουν διαθέσιμα δεδομένα γι\' αυτόν το συνδυασμό μαθημάτων και χρονικών περιόδων';
 $string['storedfilecannotcreatefiledirs'] = 'Δεν είναι δυνατή η δημιουργία τοπικών pool καταλόγων αρχείων, παρακαλώ ελέγξτε τα δικαιώματα στο dataroot.';
 $string['storedfilecannotread'] = 'Δεν είναι δυνατή η ανάγνωση του αρχείου, είτε το αρχείο δεν υπάρχει ή υπάρχουν προβλήματα δικαιωμάτων';
-$string['storedfilenotcreated'] = 'Δεν είναι δυνατή η δημιουργία του αρχείου "{$a->contextid}/{$a->filearea}/{$a->itemid}/{$a->filepath}/{$a->filename}"';
+$string['storedfilenotcreated'] = 'Δεν είναι δυνατή η δημιουργία του αρχείου "{$a->contextid}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
 $string['storedfileproblem'] = 'Άγνωστη εξαίρεση σχετική με τοπικά αρχεία ({$a})';
 $string['tagdisabled'] = 'Οι ετικέτες είναι απενεργοποιημένες!';
 $string['tagnotfound'] = 'Η συγκεκριμένη ετικέτα δε βρέθηκε στη βάση';

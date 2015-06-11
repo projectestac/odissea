@@ -178,6 +178,28 @@ abstract class qtype_essay_format_renderer_base extends plugin_renderer_base {
     protected abstract function class_name();
 }
 
+/**
+ * An essay format renderer for essays where the student should not enter
+ * any inline response.
+ *
+ * @copyright  2013 Binghamton University
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class qtype_essay_format_noinline_renderer extends plugin_renderer_base {
+
+    protected function class_name() {
+        return 'qtype_essay_noinline';
+    }
+
+    public function response_area_read_only($name, $qa, $step, $lines, $context) {
+        return '';
+    }
+
+    public function response_area_input($name, $qa, $step, $lines, $context) {
+        return '';
+    }
+
+}
 
 /**
  * An essay format renderer for essays where the student should use the HTML
@@ -280,7 +302,8 @@ class qtype_essay_format_editor_renderer extends plugin_renderer_base {
      * @return array options for the editor.
      */
     protected function get_editor_options($context) {
-        return array('context' => $context);
+        // Disable the text-editor autosave because quiz has it's own auto save function.
+        return array('context' => $context, 'autosave' => false);
     }
 
     /**
@@ -335,13 +358,15 @@ class qtype_essay_format_editorfilepicker_renderer extends qtype_essay_format_ed
     }
 
     protected function get_editor_options($context) {
+        // Disable the text-editor autosave because quiz has it's own auto save function.
         return array(
             'subdirs' => 0,
             'maxbytes' => 0,
             'maxfiles' => -1,
             'context' => $context,
             'noclean' => 0,
-            'trusttext'=>0
+            'trusttext'=> 0,
+            'autosave' => false
         );
     }
 

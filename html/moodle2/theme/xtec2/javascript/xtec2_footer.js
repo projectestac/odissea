@@ -1,8 +1,4 @@
 
-// Global variables
-var colorset;
-var color2, color4, color5;
-
 var blocks_shown = true;
 var old_main_post_class = '';
 var old_main_pre_class = '';
@@ -13,90 +9,11 @@ function close_agora_alerts() {
     return false;
 }
 
-function changeColors() {
-    colorProfile = colorset.value;
-
-    if(colorProfile == 'grana') {
-        color2.value = '#AC2013';
-        color4.value = '#303030';
-        color5.value = '#AC2013';
-    }
-    else if(colorProfile == 'coral') {
-        color2.value = '#FF4444';
-        color4.value = '#00BBBB';
-        color5.value = '#008888';
-    }
-    else if(colorProfile == 'or') {
-        color2.value = '#E99B00';
-        color4.value = '#0B3D41';
-        color5.value = '#145C61';
-    }
-    else if(colorProfile == 'llima') {
-        color2.value = '#5A6E31';
-        color4.value = '#333333';
-        color5.value = '#74AB00';
-    }
-    else if(colorProfile == 'tardor') {
-        color2.value = '#E68804';
-        color4.value = '#344D00';
-        color5.value = '#4E7104';
-    }
-    else if(colorProfile == 'nostalgia') {
-        color2.value = '#457FB9';
-        color4.value = '#457FB9';
-        color5.value = '#457FB9';
-    }
-
-
-    var color2pick = color2.parentNode.getElementsByClassName("currentcolour")[0];
-    var color4pick = color4.parentNode.getElementsByClassName("currentcolour")[0];
-    var color5pick = color5.parentNode.getElementsByClassName("currentcolour")[0];
-
-    color2pick.style.backgroundColor = color2.value;
-    color4pick.style.backgroundColor = color4.value;
-    color5pick.style.backgroundColor = color5.value;
-}
-
-
-function changeToPersonalized() {
-    colorset.value = 'personalitzat';
-    color2pick.style.backgroundColor = color2.value;
-    color4pick.style.backgroundColor = color4.value;
-    color5pick.style.backgroundColor = color5.value;
-}
-
-
-function xtec2_theme_onload() {
-
-    colorset = document.getElementById('id_s_theme_xtec2_colorset');
-
-    // This condition ensures that this code is only loaded while configuring
-    //  xtec2 theme. This is mandatory because if id's don't exist in HTML code,
-    //  this code generates a javascript conflict in admin menu.
-    if (colorset != null) {
-        color2 = document.getElementById('id_s_theme_xtec2_color2');
-        color4 = document.getElementById('id_s_theme_xtec2_color4');
-        color5 = document.getElementById('id_s_theme_xtec2_color5');
-
-        color2.addEventListener('input', changeToPersonalized, false);
-        color4.addEventListener('input', changeToPersonalized, false);
-        color5.addEventListener('input', changeToPersonalized, false);
-
-        colorset.addEventListener('change', changeColors, false);
-    }
-}
-
-function showhideblocks(){
+function showhideblocks() {
     YUI().use('moodle-theme_bootstrapbase-bootstrap', function(Y) {
         var main_pre = Y.one('#region-bs-main-and-pre');
         if(main_pre == null) main_pre = Y.one('#region-bs-main-and-post');
         var main_post = Y.one('#region-main');
-
-        if (!Y.one('body').hasClass('super_collapse')) {
-            if (Y.one('.gradeparent') || Y.one('.gradingtable') || Y.one('#page-grade-report-user-index') || Y.one('#page-report-progress-index')) {
-                Y.one('body').addClass('super_collapse');
-            }
-        }
 
         if(blocks_shown){
             //Hide
@@ -133,3 +50,30 @@ function showhideblocks(){
     blocks_shown = !blocks_shown;
 }
 
+
+M.theme_xtec2 = {};
+
+M.theme_xtec2.init = function(Y) {
+
+    var usermenu = Y.one('#usermenu');
+
+    if (usermenu != null) {
+
+        Y.one('#usermenu_toogle').on('clickoutside', function () {
+            usermenu.removeClass('open');
+        });
+
+        Y.one('#usermenu_toogle').on('click', function (e){
+            usermenu.toggleClass('open');
+            e.stopPropagation();
+            return false;
+        });
+    }
+
+    Y.on('click', function (e) {
+        this.ancestor(".block").toggleClass('hidden');
+        e.stopPropagation();
+        return false;
+    }
+    , '.block .header h2');
+};

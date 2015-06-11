@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains an event for when a page activity is viewed.
+ * The mod_page course module viewed event.
  *
  * @package    mod_page
  * @copyright  2013 Ankit Agarwal
@@ -26,59 +26,22 @@ namespace mod_page\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Event for when a page activity is viewed.
+ * The mod_page course module viewed event class.
  *
  * @package    mod_page
  * @since      Moodle 2.6
  * @copyright  2013 Ankit Agarwal
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class course_module_viewed extends \core\event\content_viewed {
+class course_module_viewed extends \core\event\course_module_viewed {
 
     /**
      * Init method.
      */
     protected function init() {
         $this->data['crud'] = 'r';
-        $this->data['level'] = self::LEVEL_PARTICIPATING;
+        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
         $this->data['objecttable'] = 'page';
-    }
-
-    /**
-     * Returns non-localised description of what happened.
-     *
-     * @return string
-     */
-    public function get_description() {
-        return 'User with id ' . $this->userid . ' viewed page resource with instance id ' . $this->objectid;
-    }
-
-    /**
-     * Returns localised general event name.
-     *
-     * @return string
-     */
-    public static function get_name() {
-        return get_string('eventcoursemoduleviewed', 'mod_page');
-    }
-
-    /**
-     * Get URL related to the action
-     *
-     * @return \moodle_url
-     */
-    public function get_url() {
-        return new \moodle_url('/mod/page/view.php', array('id' => $this->context->instanceid));
-    }
-
-    /**
-     * Replace add_to_log() statement.
-     *
-     * @return array of parameters to be passed to legacy add_to_log() function.
-     */
-    protected function get_legacy_logdata() {
-        return array($this->courseid, 'page', 'view', 'view.php?id=' . $this->context->instanceid, $this->objectid,
-                $this->context->instanceid);
     }
 }
 

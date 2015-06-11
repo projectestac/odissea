@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'La descrizione per il valutatore non può
 $string['err_nomaxscore'] = 'Il punteggio massimo del criterio non può rimanere vuoto';
 $string['err_noshortname'] = 'Il nome del criterio non può rimanere vuoto';
 $string['err_scoreinvalid'] = 'Il punteggio del criterio {$a->criterianame} non è valido. Il punteggio massimo è {$a->maxscore}';
+$string['err_shortnametoolong'] = 'Il criterio deve contenere meno di 256 caratteri.';
 $string['gradingof'] = 'Valutazione {$a}';
 $string['guidemappingexplained'] = 'ATTENZIONE: la valutazione guidata ha un punteggio massimo di <b>{$a->maxscore}</b> ma il punteggio massimo impostato nell\'attività è pari a {$a->modulegrade}. Il punteggio massimo della valutazione guidata sarà convertito proporzionalmente.<br />I punteggi intermedi saranno arrotondati al punteggio più vicino.';
 $string['guidenotcompleted'] = 'Per favore inserisci un punteggio valido per ciascun criterio';

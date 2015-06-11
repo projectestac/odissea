@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,17 @@ $string['editing'] = 'Wiki-orria editatzen';
 $string['editingcomment'] = 'Iruzkina editatzen';
 $string['editingpage'] = 'Orri hau editatzen: \'{$a}\'';
 $string['editsection'] = 'editatu';
+$string['eventdiffviewed'] = 'Wikiaren ezberdintasunak ikusi dira';
+$string['eventhistoryviewed'] = 'Wikiaren historia ikusi da';
+$string['eventmapviewed'] = 'Wikiaren orri-mapa ikusi da';
+$string['eventpagecreated'] = 'Wiki-orria sortu da';
+$string['eventpagedeleted'] = 'Wiki-orria ezabatu da';
+$string['eventpagelocksdeleted'] = 'Wiki-orriaren blokeoak ezabatu dira';
+$string['eventpageupdated'] = 'Wiki-orria eguneratu da';
+$string['eventpageversiondeleted'] = 'Wiki-orriaren bertsioa ezabatu da';
+$string['eventpageviewed'] = 'Wiki-orria ikusi da';
+$string['eventversionrestored'] = 'Wiki bertsioa berreskuratu da';
+$string['eventversionviewed'] = 'Wiki-orriaren bertsioa ikusia';
 $string['filenotuploadederror'] = '\'{$a}\' fitxategia ezin da egoki eguneratu';
 $string['files'] = 'Fitxategiak';
 $string['filtername'] = 'Wikiaren auto-estekak';

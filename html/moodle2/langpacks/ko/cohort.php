@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,11 +33,8 @@ $string['backtocohorts'] = '수업집단으로 돌아가기';
 $string['bulkadd'] = '수업집단에 추가';
 $string['bulknocohort'] = '사용가능한 수업집단이 없습니다.';
 $string['cohort'] = '수업집단';
-$string['cohort:assign'] = '수업집단 구성원 배정';
-$string['cohort:manage'] = '수업집단 관리';
 $string['cohorts'] = '수업집단';
 $string['cohortsin'] = '{$a}: 가능한 수업집단';
-$string['cohort:view'] = '수업집단';
 $string['component'] = '출처';
 $string['currentusers'] = '현재 사용자';
 $string['currentusersmatching'] = '일치하는 현재 사용자';
@@ -46,6 +43,11 @@ $string['delconfirm'] = '수업집단\'{$a}\'를 삭제하기를 원하십니까
 $string['description'] = '설명';
 $string['duplicateidnumber'] = '같은 아이디의 수업집단이 이미 존재합니다.';
 $string['editcohort'] = '수업집단 편집';
+$string['eventcohortcreated'] = '수강자집단 생성됨';
+$string['eventcohortdeleted'] = '수강자집단 삭제됨';
+$string['eventcohortmemberadded'] = '사용자가 수강자집단에 추가됨';
+$string['eventcohortmemberremoved'] = '사용자가 수강자집단에서 제외됨';
+$string['eventcohortupdated'] = '수강자집단이 업데이트됨';
 $string['external'] = '외부 수업집단';
 $string['idnumber'] = '수업집단 아이디';
 $string['memberscount'] = '수업집단 크기';
@@ -59,3 +61,4 @@ $string['searchcohort'] = '수업집단 검색';
 $string['selectfromcohort'] = '수업집단에서 구성원 선택';
 $string['unknowncohort'] = '알수 없는 수업집단 ({$a})!';
 $string['useradded'] = '수업집단 "{$a}"에 사용자가 추가되었습니다.';
+$string['visible'] = '볼 수 있음';

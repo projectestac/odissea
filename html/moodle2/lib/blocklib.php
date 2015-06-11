@@ -29,28 +29,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**#@+
- * @deprecated since Moodle 2.0. No longer used.
- */
-define('BLOCK_MOVE_LEFT',   0x01);
-define('BLOCK_MOVE_RIGHT',  0x02);
-define('BLOCK_MOVE_UP',     0x04);
-define('BLOCK_MOVE_DOWN',   0x08);
-define('BLOCK_CONFIGURE',   0x10);
-/**#@-*/
-
-/**#@+
  * Default names for the block regions in the standard theme.
  */
 define('BLOCK_POS_LEFT',  'side-pre');
 define('BLOCK_POS_RIGHT', 'side-post');
-/**#@-*/
-
-/**#@+
- * @deprecated since Moodle 2.0. No longer used.
- */
-define('BLOCKS_PINNED_TRUE',0);
-define('BLOCKS_PINNED_FALSE',1);
-define('BLOCKS_PINNED_BOTH',2);
 /**#@-*/
 
 define('BUI_CONTEXTS_FRONTPAGE_ONLY', 0);
@@ -444,8 +426,8 @@ class block_manager {
             foreach ($SESSION->custom_block_regions[$pagetype] as $customregion) {
                 $this->add_region($customregion, false);
             }
-          }
-      }
+        }
+    }
 
     /**
      * Set the default region for new blocks on the page
@@ -486,19 +468,6 @@ class block_manager {
     }
 
     /**
-     * When the block_manager class was created, the {@link add_fake_block()}
-     * was called add_pretend_block, which is inconsisted with
-     * {@link show_only_fake_blocks()}. To fix this inconsistency, this method
-     * was renamed to add_fake_block. Please update your code.
-     * @param block_contents $bc the content of the block-like thing.
-     * @param string $region a block region that exists on this page.
-     */
-    public function add_pretend_block($bc, $region) {
-        debugging(DEBUG_DEVELOPER, 'add_pretend_block has been renamed to add_fake_block. Please rename the method call in your code.');
-        $this->add_fake_block($bc, $region);
-    }
-
-    /**
      * Checks to see whether all of the blocks within the given region are docked
      *
      * @see region_uses_dock
@@ -517,6 +486,11 @@ class block_manager {
             return false;
         }
 
+        // Block regions should not be docked during editing when all the blocks are hidden.
+        if ($this->page->user_is_editing() && $this->page->user_can_edit_blocks()) {
+            return false;
+        }
+
         $this->check_is_loaded();
         $this->ensure_content_created($region, $output);
         if (!$this->region_has_content($region, $output)) {
@@ -524,7 +498,7 @@ class block_manager {
             return false;
         }
         foreach ($this->visibleblockcontent[$region] as $instance) {
-            if (!empty($instance->content) && !get_user_preferences('docked_block_instance_'.$instance->blockinstanceid, 0)) {
+            if (!get_user_preferences('docked_block_instance_'.$instance->blockinstanceid, 0)) {
                 return false;
             }
         }
@@ -776,19 +750,23 @@ class block_manager {
     }
 
     /**
-     * Convenience method, calls add_block repeatedly for all the blocks in $blocks.
+     * Convenience method, calls add_block repeatedly for all the blocks in $blocks. Optionally, a starting weight
+     * can be used to decide the starting point that blocks are added in the region, the weight is passed to {@link add_block}
+     * and incremented by the position of the block in the $blocks array
      *
      * @param array $blocks array with array keys the region names, and values an array of block names.
-     * @param string $pagetypepattern optional. Passed to @see add_block()
-     * @param string $subpagepattern optional. Passed to @see add_block()
+     * @param string $pagetypepattern optional. Passed to {@link add_block()}
+     * @param string $subpagepattern optional. Passed to {@link add_block()}
+     * @param boolean $showinsubcontexts optional. Passed to {@link add_block()}
+     * @param integer $weight optional. Determines the starting point that the blocks are added in the region.
      */
     public function add_blocks($blocks, $pagetypepattern = NULL, $subpagepattern = NULL, $showinsubcontexts=false, $weight=0) {
+        $initialweight = $weight;
         $this->add_regions(array_keys($blocks), false);
         foreach ($blocks as $region => $regionblocks) {
-            $weight = 0;
-            foreach ($regionblocks as $blockname) {
+            foreach ($regionblocks as $offset => $blockname) {
+                $weight = $initialweight + $offset;
                 $this->add_block($blockname, $region, $weight, $showinsubcontexts, $pagetypepattern, $subpagepattern);
-                $weight += 1;
             }
         }
     }
@@ -1113,7 +1091,7 @@ class block_manager {
         }
 
         // Assign roles icon.
-        if (has_capability('moodle/role:assign', $block->context)) {
+        if ($this->page->pagetype != 'my-index' && has_capability('moodle/role:assign', $block->context)) {
             //TODO: please note it is sloppy to pass urls through page parameters!!
             //      it is shortened because some web servers (e.g. IIS by default) give
             //      a 'security' error if you try to pass a full URL as a GET parameter in another URL.
@@ -1621,8 +1599,10 @@ class block_manager {
         if ($bestgap < $newweight) {
             $newweight = floor($newweight);
             for ($weight = $bestgap + 1; $weight <= $newweight; $weight++) {
-                foreach ($usedweights[$weight] as $biid) {
-                    $this->reposition_block($biid, $newregion, $weight - 1);
+                if (array_key_exists($weight, $usedweights)) {
+                    foreach ($usedweights[$weight] as $biid) {
+                        $this->reposition_block($biid, $newregion, $weight - 1);
+                    }
                 }
             }
             $this->reposition_block($block->instance->id, $newregion, $newweight);
@@ -1749,6 +1729,30 @@ function matching_page_type_patterns($pagetype) {
         array_pop($bits);
     }
     $patterns[] = '*';
+    return $patterns;
+}
+
+/**
+ * Give an specific pattern, return all the page type patterns that would also match it.
+ *
+ * @param  string $pattern the pattern, e.g. 'mod-forum-*' or 'mod-quiz-view'.
+ * @return array of all the page type patterns matching.
+ */
+function matching_page_type_patterns_from_pattern($pattern) {
+    $patterns = array($pattern);
+    if ($pattern === '*') {
+        return $patterns;
+    }
+
+    // Only keep the part before the star because we will append -* to all the bits.
+    $star = strpos($pattern, '-*');
+    if ($star !== false) {
+        $pattern = substr($pattern, 0, $star);
+    }
+
+    $patterns = array_merge($patterns, matching_page_type_patterns($pattern));
+    $patterns = array_unique($patterns);
+
     return $patterns;
 }
 
@@ -1949,28 +1953,6 @@ function block_add_block_ui($page, $output) {
     return $bc;
 }
 
-// Functions that have been deprecated by block_manager =======================
-
-/**
- * @deprecated since Moodle 2.0 - use $page->blocks->get_addable_blocks();
- *
- * This function returns an array with the IDs of any blocks that you can add to your page.
- * Parameters are passed by reference for speed; they are not modified at all.
- *
- * @param $page the page object.
- * @param $blockmanager Not used.
- * @return array of block type ids.
- */
-function blocks_get_missing(&$page, &$blockmanager) {
-    debugging('blocks_get_missing is deprecated. Please use $page->blocks->get_addable_blocks() instead.', DEBUG_DEVELOPER);
-    $blocks = $page->blocks->get_addable_blocks();
-    $ids = array();
-    foreach ($blocks as $block) {
-        $ids[] = $block->id;
-    }
-    return $ids;
-}
-
 /**
  * Actually delete from the database any blocks that are currently on this page,
  * but which should not be there according to blocks_name_allowed_in_format.
@@ -2103,23 +2085,6 @@ function blocks_set_visibility($instance, $page, $newvisibility) {
 }
 
 /**
- * @deprecated since 2.0
- * Delete all the blocks from a particular page.
- *
- * @param string $pagetype the page type.
- * @param integer $pageid the page id.
- * @return bool success or failure.
- */
-function blocks_delete_all_on_page($pagetype, $pageid) {
-    global $DB;
-
-    debugging('Call to deprecated function blocks_delete_all_on_page. ' .
-            'This function cannot work any more. Doing nothing. ' .
-            'Please update your code to use a block_manager method $PAGE->blocks->....', DEBUG_DEVELOPER);
-    return false;
-}
-
-/**
  * Get the block record for a particular blockid - that is, a particular type os block.
  *
  * @param $int blockid block type id. If null, an array of all block types is returned.
@@ -2164,12 +2129,12 @@ function blocks_find_block($blockid, $blocksarray) {
 
 // Functions for programatically adding default blocks to pages ================
 
-/**
- * Parse a list of default blocks. See config-dist for a description of the format.
- *
- * @param string $blocksstr
- * @return array
- */
+ /**
+  * Parse a list of default blocks. See config-dist for a description of the format.
+  *
+  * @param string $blocksstr Determines the starting point that the blocks are added in the region.
+  * @return array the parsed list of default blocks
+  */
 function blocks_parse_default_blocks_list($blocksstr) {
     $blocks = array();
     $bits = explode(':', $blocksstr);
@@ -2180,7 +2145,7 @@ function blocks_parse_default_blocks_list($blocksstr) {
         }
     }
     if (!empty($bits)) {
-        $rightbits =trim(array_shift($bits));
+        $rightbits = trim(array_shift($bits));
         if ($rightbits != '') {
             $blocks[BLOCK_POS_RIGHT] = explode(',', $rightbits);
         }
@@ -2248,11 +2213,13 @@ function blocks_add_default_system_blocks() {
     $page->blocks->add_blocks(array(BLOCK_POS_LEFT => array('navigation', 'settings')), '*', null, true);
     $page->blocks->add_blocks(array(BLOCK_POS_LEFT => array('admin_bookmarks')), 'admin-*', null, null, 2);
 
-    if ($defaultmypage = $DB->get_record('my_pages', array('userid'=>null, 'name'=>'__default', 'private'=>1))) {
+    if ($defaultmypage = $DB->get_record('my_pages', array('userid' => null, 'name' => '__default', 'private' => 1))) {
         $subpagepattern = $defaultmypage->id;
     } else {
         $subpagepattern = null;
     }
 
-    $page->blocks->add_blocks(array(BLOCK_POS_RIGHT => array('private_files', 'online_users'), 'content' => array('course_overview')), 'my-index', $subpagepattern, false);
+    $newblocks = array('private_files', 'online_users', 'badges', 'calendar_month', 'calendar_upcoming');
+    $newcontent = array('course_overview');
+    $page->blocks->add_blocks(array(BLOCK_POS_RIGHT => $newblocks, 'content' => $newcontent), 'my-index', $subpagepattern);
 }

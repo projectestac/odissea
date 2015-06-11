@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,8 +37,8 @@ $string['err_response_curl'] = 'No pudo obtener actualizaciones disponibles - er
 $string['err_response_format_version'] = 'Formato de respuesta con versión inesperada. Por favor, trate de revisar nuevamente las actualizaciones disponibles.';
 $string['err_response_http_code'] = 'No pudo obtener actualizaciones disponibles - código de respuesta HTTP inesperado.';
 $string['filterall'] = 'Mostrar todo';
-$string['filtercontribonly'] = 'Mostrar sólo los módulos externos';
-$string['filtercontribonlyactive'] = 'Mostrando sólo los módulos externos';
+$string['filtercontribonly'] = 'Mostrar sólo los plugins externos';
+$string['filtercontribonlyactive'] = 'Mostrando sólo los plugins externos';
 $string['filterupdatesonly'] = 'Mostrar sólo las actualizables';
 $string['filterupdatesonlyactive'] = 'Mostrando únicamente actualizables';
 $string['moodleversion'] = 'Moodle {$a}';
@@ -53,7 +53,7 @@ $string['notwritable_help'] = 'Ha habilitado que se realicen actualizaciones aut
 
 Esnecesario que la carpeta del plugin y todos sus contenidos sean escribibles para poder instalar automáticamente la actualización disponible.';
 $string['numdisabled'] = 'Deshabilitado: {$a}';
-$string['numextension'] = 'Módulos externos: {$a}';
+$string['numextension'] = 'Plugins externos: {$a}';
 $string['numtotal'] = 'Instalado: {$a}';
 $string['numupdatable'] = 'Actualizaciones disponibles: {$a}';
 $string['otherplugin'] = '{$a->component}';
@@ -63,6 +63,7 @@ $string['plugindisable'] = 'Deshabilitar';
 $string['plugindisabled'] = 'Deshabilitado';
 $string['pluginenable'] = 'Habilitar';
 $string['pluginenabled'] = 'Habilitado';
+$string['release'] = 'Versión';
 $string['requiredby'] = 'Requerido por: {$a}';
 $string['requires'] = 'Requiere';
 $string['rootdir'] = 'Directorio';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'Instalado';
 $string['systemname'] = 'Identificador';
 $string['type_auth'] = 'Método de identificación';
 $string['type_auth_plural'] = 'Extensiones de identificación';
+$string['type_availability'] = 'Restricciones disponibles';
+$string['type_availability_plural'] = 'Restricciones disponibles';
 $string['type_block'] = 'Bloque';
 $string['type_block_plural'] = 'Bloques';
 $string['type_cachelock'] = 'Manejador de bloqueo de caché';

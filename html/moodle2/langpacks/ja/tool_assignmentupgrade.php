@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['areyousure'] = '本当によろしいですか?';
 $string['areyousuremessage'] = '本当に課題「 {$a->name} 」をアップグレードしてもよろしいですか?';
 $string['assignmentid'] = '課題ID';
 $string['assignmentnotfound'] = '課題が見つかりませんでした (id={$a})。';
-$string['assignmentsperpage'] = '1ぺーじあたりの課題数';
+$string['assignmentsperpage'] = '1ページあたりの課題数';
 $string['assignmenttype'] = '課題タイプ';
 $string['backtoindex'] = 'インデックスに戻る';
 $string['batchoperations'] = 'バッチ処理';

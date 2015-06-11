@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choicegroup', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,7 +83,6 @@ $string['notanswered'] = 'Nog geen keuze gemaakt';
 $string['notenrolledchoose'] = 'Helaas, alleen aangemelde gebruikers kunnen een keuze maken.';
 $string['notopenyet'] = 'Helaas, deze activiteit is niet beschikbaar tot {$a}';
 $string['notyetresultsviewable'] = 'De gemaakte keuzes worden getoond nadat de activiteit is gesloten.';
-$string['numberofuser'] = 'Het aantal gebruikers';
 $string['option'] = 'Groep';
 $string['page-mod-choice-x'] = 'Willekeurige Groepkeuze module pagina';
 $string['pleasesetgroups'] = 'Maak a.u.b. tenminste twee groepen binnen deze cursus.';

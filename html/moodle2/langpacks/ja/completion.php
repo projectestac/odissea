@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'completion', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,9 @@ $string['approval'] = '承認';
 $string['badautocompletion'] = '「条件を満たした場合、活動完了を表示する」を選択した場合、あなたは少なくとも (下記の) 1つの必要条件も有効にする必要があります。';
 $string['completed'] = '完了';
 $string['completedunlocked'] = '完了オプションがロック解除されました。';
-$string['completedunlockedtext'] = 'あなたが変更を保存した場合、すべてのユーザの完了状態が消去されます。完了状態の消去に関してあなたが方針を変更した場合、フォームを保存しないでください。';
+$string['completedunlockedtext'] = 'あなたが変更を保存した場合、すべてのユーザの完了状態が消去されます。完了ステータスの消去に関してあなたが方針を変更した場合、フォームを保存しないでください。';
 $string['completedwarning'] = '完了オプションがロックされました。';
-$string['completedwarningtext'] = 'すでに1名またはそれ以上のユーザ ({$a}) がこの活動を完了マークしています。完了オプションを変更することにより、それらの完了状況を消去するため、混乱の原因となる可能性があります。そのため、完了オプションはロックされてます。あなたが絶対に必要な場合を除き、ロック解除しないことをお勧めします。';
+$string['completedwarningtext'] = 'すでに1名またはそれ以上のユーザ ({$a}) がこの活動を完了マークしています。完了オプションを変更することにより、それらの完了ステータスを消去するため、混乱の原因となる可能性があります。そのため、完了オプションはロックされてます。あなたが絶対に必要な場合を除き、ロック解除しないことをお勧めします。';
 $string['completion'] = '完了トラッキング';
 $string['completionactivitydefault'] = '活動デフォルトを使用する';
 $string['completion-alt-auto-enabled'] = '状態に応じて、システムはこのアイテムに完了マークします: {$a}';
@@ -164,6 +164,7 @@ $string['restoringcompletiondata'] = '完了データの書き出し';
 $string['roleaggregation'] = 'コンディション要求';
 $string['roleaggregation_all'] = 'コンディションに合致した場合、選択したロールすべてをマークできる';
 $string['roleaggregation_any'] = 'コンディションに合致した場合、選択したロールのどれかをマークできる';
+$string['roleidnotfound'] = 'ロールID「 {$a} 」が見つかりませんでした。';
 $string['saved'] = '保存完了';
 $string['seedetails'] = '詳細を表示する';
 $string['self'] = '自己';

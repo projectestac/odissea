@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Component';
+$string['eventcontext'] = 'Gebeurteniscontext';
+$string['eventloggedas'] = '{$a->realusername} als {$a->asusername}';
+$string['eventorigin'] = 'Oorsprong';
+$string['eventrelatedfullnameuser'] = 'Over gebruiker';
+$string['eventreportviewed'] = 'Lograpport bekeken';
+$string['eventuserreportviewed'] = 'Gebruikerslograpport bekeken';
 $string['logsformat'] = 'Log-opmaak';
 $string['log:view'] = 'Bekijk cursus logs';
 $string['log:viewtoday'] = 'Bekijk logs van vandaag';
-$string['mnetlogwarning'] = 'Als je MNet clients Moodle 2.7 of hoger gebruiken, dan krijg je geen logs.';
+$string['nologreaderenabled'] = 'Geen loglezer ingeschakeld';
 $string['page'] = 'Pagina {$a}';
 $string['page-report-log-index'] = 'Cursus log rapport';
 $string['page-report-log-user'] = 'Cursus log rapport gebruiker';
 $string['page-report-log-x'] = 'Elk log rapport';
 $string['pluginname'] = 'Logs';
+$string['selectlogreader'] = 'Selecteer loglezer';

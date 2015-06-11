@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,13 +40,12 @@ $string['cic'] = 'Coeficiente de consistentia interna (para {$a})';
 $string['count'] = 'Número';
 $string['coursename'] = 'Nombre del curso';
 $string['detailedanalysis'] = 'Análisis más detallado de las respuestas a esta pregunta';
-$string['discrimination_index'] = 'Índice de discriminación';
+$string['discrimination_index'] = 'Índice de Discriminación';
 $string['discriminative_efficiency'] = 'Eficiencia discriminativa';
 $string['downloadeverything'] = 'Descargar informe completo como';
 $string['duration'] = 'Abierto para';
-$string['effective_weight'] = 'Peso efectivo';
+$string['effective_weight'] = 'peso efectivo';
 $string['errordeleting'] = 'Error al eliminar {$a} registros antiguos.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La pregunta ({$a}) aparece más de una vez en el cuestionario con diferentes valores de calificación. Esto no es actualmente posible en el informe de estadísticas y puede hacer que las estadísticas de esta pregunta no sean fiables.';
 $string['errormedian'] = 'Error al buscar la mediana';
 $string['errorpowerquestions'] = 'Error al recuperar datos para calcular la varianza de las calificaciones de la pregunta';
 $string['errorpowers'] = 'Error al recuperar datos para calcular la varianza de las calificaciones del cuestionario';

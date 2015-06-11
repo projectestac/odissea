@@ -71,7 +71,6 @@ class mod_quiz_generator extends testing_module_generator {
             'questionsperpage'       => 1,
             'shufflequestions'       => 0,
             'shuffleanswers'         => 1,
-            'questions'              => '',
             'sumgrades'              => 0,
             'grade'                  => 100,
             'timecreated'            => time(),

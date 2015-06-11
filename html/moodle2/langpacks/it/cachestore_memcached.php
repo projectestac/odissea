@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_memcached', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['bufferwrites'] = 'Buffer write';
 $string['bufferwrites_help'] = 'Abilita o disabilita il buffered I/O. I comandi I/O di memorizzazione saranno inseriti in un buffer invece di essere inviati. Qualsiasi azione di recupero dati provocherà l\'invio del buffer verso la connessione remota. L\'invio dei dati nel buffer verso la connessione remota sarà causato anche dalla interruzione o chiusura della connessione.';
+$string['clustered'] = 'Abilita server in cluster';
+$string['clusteredheader'] = 'Split server';
+$string['clustered_help'] = 'Abilita la funzionalità "read-one set-multi".
+
+Permette di disporre di uno store più performante adatto a configurazioni in load balancing. Lo store leggerà da un solo server (generalmente localhost) ma scriverà su tutti i server che compongono il pool di load balancing. Per cache con un rapporto molto alto di letture/scritture si riduce notevolmente l\'overhead dovuto alla rete.
+
+Abilitando questa impostazione, il server indicato sopra sarà usato per la lettura.';
 $string['hash'] = 'Metodo di hash';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Default (one-at-a-time)';
@@ -46,6 +53,7 @@ $string['serialiser_igbinary'] = 'Il serializzatore igbinary.';
 $string['serialiser_json'] = 'Il serializzatore JSON.';
 $string['serialiser_php'] = 'Il serializzatore PHP di default.';
 $string['servers'] = 'Server';
+$string['serversclusterinvalid'] = 'Con il clustering abilitato nell\'elenco deve essere presente un solo server.';
 $string['servers_help'] = 'Imposta i server usati dall\'adapter memcached.
 I server devono essere definiti usando una linea per ciascun server contenente obbligatoriamente l\'indirizzo e opzionalmente la porta ed il peso. In assenza di indicazione sulla porta da usare sarà utilizzata la porta di default (11211).
 
@@ -53,10 +61,23 @@ Esempio:
 <pre> server.url.com
 ipaddress:porta
 nomeserver:porta:peso
-</pre>';
+</pre>
+
+Se viene utilizzata l\'impostazione sottostante *Abilita server in cluster*, allora nell\'elenco deve comparire il nome o l\'IP di un solo server. In generale il nome o l\'IP del server risolverà la macchina locale, come 127.0.0.1 oppure localhost.';
 $string['sessionhandlerconflict'] = 'Attenzione: l\'istanza memcached ({$a}) è stata configurata per usare lo stesso server memcached usato per le sessioni. Lo svuotamento delle cache provocherà anche l\'eliminazione delle sessioni.';
+$string['setservers'] = 'Set server';
+$string['setservers_help'] = 'L\'elenco dei server da aggiornare quando i dati della cache vengono modificati. In genere il nome qualificato di ciascun server appartenentre al pool di load balancing.
+E\' **obbligatorio** inserire anche il server indicato sopra nella impostazione **Server**, anche usando un nome host diverso.
+Ogni riga deve contenere un solo server con, opzionalmente, la porta.
+Se la porta non viene indicata sarà usata la porta di default  (11211).
+
+Esempio:
+<pre>
+server.url.com
+ipaddress:port
+</pre>';
 $string['testservers'] = 'Test server';
-$string['testservers_desc'] = 'I server di test vengono utilizzati per gli unit test e per test di prestazioni. La loro impostazione è opzionale. I server devono essere definiti usando una linea per ciascun server contenente obbligatoriamente l\'indirizzo e opzionalmente la porta ed il peso. In assenza di indicazione sulla porta da usare sarà utilizzata la porta di default (11211).';
+$string['testservers_desc'] = 'Una più stringhe di connessione ad un server memcached da utilizzare per test. Il server di test consente di provare le prestazioni della cache memcached tramite la pagina amministrativa "Test prestazioni". Esempio: 127.0.0.1:11211';
 $string['usecompression'] = 'Usa compressione';
 $string['usecompression_help'] = 'Abilita o disabilita la compressione del payload. L\'impostazione consente di comprimere  in fase di memorizzazione gli elementi più grandi di una data soglia  (al momento 100 byte), decomprimendoli poi in modo trasparente durante il recupero.';
 $string['useserialiser'] = 'Usa serializzatore';

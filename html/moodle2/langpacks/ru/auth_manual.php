@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_manual', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Этот способ не предоставляет пользователям никаких возможностей по самостоятельному созданию учетных записей. Все учетные записи должны быть созданы администратором вручную.';
+$string['expiration'] = 'Включить ограничение срока действия пароля';
+$string['expiration_desc'] = 'При включении этого параметра после указанного промежутка времени пароли будут становиться недействительными.';
+$string['expiration_warning'] = 'Порог уведомления';
+$string['expiration_warning_desc'] = 'Количество дней до окончания срока действия пароля, при котором будет выводиться уведомление.';
+$string['passwdexpire_settings'] = 'Настройки срока действия пароля';
+$string['passwdexpiretime'] = 'Срок действия пароля';
+$string['passwdexpiretime_desc'] = 'Продолжительность времени, в течение которого пароль действителен.';
 $string['pluginname'] = 'Ручная регистрация';

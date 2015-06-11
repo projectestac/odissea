@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['fixcasepersonalnames'] = 'Escrever nomes próprios em maiúsculas';
 $string['fixcaseusernames'] = 'Escrever nomes de utilizador em minúsculas';
 $string['ignore'] = 'Ignorar';
 $string['importimsfile'] = 'Importar ficheiro IMS Enterprise';
+$string['imsenterprise:config'] = 'Configure instâncias de inscrição IMS Enterprise';
+$string['imsenterprisecrontask'] = 'Processamento dos ficheiros de Inscrição';
 $string['imsrolesdescription'] = 'A especificação IMS Enterprise inclui 8 tipos de papéis diferentes.
 Defina como quer que estes sejam atribuídos no Moodle, incluindo se pretende que algum deles seja ignorado.';
 $string['location'] = 'Caminho para o ficheiro';

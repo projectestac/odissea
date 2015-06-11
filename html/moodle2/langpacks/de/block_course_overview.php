@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = '{$a} Aktivität(en) erfordern Ihre Aufmerksamkeit';
 $string['alwaysshowall'] = 'Immer alle anzeigen';
 $string['collapseall'] = 'Kursliste einklappen';
-$string['configotherexpanded'] = 'Wenn diese Option aktiviert ist, werden \'Weitere Kurse\' aufgeklappt. Im Nutzerprofil kann die Einstellung geändert werden.';
+$string['configotherexpanded'] = 'Wenn diese Option aktiviert ist, werden \'Weitere Kurse\' aufgeklappt. In den Nutzereinstellungen kann die Einstellung geändert werden.';
 $string['configpreservestates'] = 'Wenn aktiviert wird der auf-/zugeklappt Status, den der/die Nutzer/in gesetzt hat, gespeichert und beim Laden der Seite verwandt.';
 $string['course_overview:addinstance'] = 'Neuen Block \'Kursüberblick\' hinzufügen';
 $string['course_overview:myaddinstance'] = 'Block \'Kursübersicht\' für \'Meine Startseite\' hinzufügen';
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Maximalzahl der Kurse, die im Block \'Kursü
 $string['expandall'] = 'Kursliste aufklappen';
 $string['forcedefaultmaxcourses'] = 'Höchstzahl von Kurse festlegen';
 $string['forcedefaultmaxcoursesdesc'] = 'Wenn diese Option aktiviert wird, können Nutzer/innen keine individuellen Einstellungen vornehmen';
+$string['fullpath'] = 'Alle Kursbereiche und Kursunterbereiche';
 $string['hiddencoursecount'] = 'Sie haben {$a} verborgene Kurse';
 $string['hiddencoursecountplural'] = 'Sie haben {$a} verborgene Kurse';
 $string['hiddencoursecountwithshowall'] = 'Sie haben {$a->coursecount} verborgenen Kurs ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Kurs bewegen: {$a}';
 $string['movecoursehere'] = 'Kurs hierhin verschieben';
 $string['movetofirst'] = 'Kurs {$a} nach oben bewegen';
 $string['movingcourse'] = 'Sie verschieben: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Keine';
 $string['numtodisplay'] = 'Zahl der anzuzeigenden Kurse:';
+$string['onlyparentname'] = 'Nur übergeordneter Kursbereich';
 $string['otherexpanded'] = 'Weitere Kurse aufklappen';
 $string['pluginname'] = 'Kursübersicht';
 $string['preservestates'] = 'Aufgeklappten Status beibehalten';
 $string['shortnameprefix'] = 'Enthält {$a}';
 $string['shortnamesufixprural'] = '(und {$a} weitere)';
 $string['shortnamesufixsingular'] = '(und {$a} weiterer)';
+$string['showcategories'] = 'Kursbereiche zum Anzeigen';
+$string['showcategoriesdesc'] = 'Sollen die Kursbereiche zusammen mit jedem Kurs angezeigt werden?';
 $string['showchildren'] = 'Metakurse anzeigen';
 $string['showchildrendesc'] = 'Sollen Metakurse unter dem Hauptkurs angezeigt werden';
 $string['showwelcomearea'] = 'Begrüßung anzeigen';

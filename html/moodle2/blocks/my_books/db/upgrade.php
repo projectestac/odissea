@@ -50,17 +50,8 @@ function xmldb_block_my_books_upgrade($oldversion=0) {
         set_config('activity_opening', $CFG->mybooks_activity_opening, 'mybooks');
         unset_config('mybooks_activity_opening');
 
-        set_config('resizable', $CFG->mybooks_resizable, 'mybooks');
-        unset_config('mybooks_resizable');
-
         set_config('scrollbars', $CFG->mybooks_scrollbars, 'mybooks');
         unset_config('mybooks_scrollbars');
-
-        set_config('directories', $CFG->mybooks_directories, 'mybooks');
-        unset_config('mybooks_directories');
-
-        set_config('location', $CFG->mybooks_location, 'mybooks');
-        unset_config('mybooks_location');
 
         set_config('menubar', $CFG->mybooks_menubar, 'mybooks');
         unset_config('mybooks_menubar');
@@ -74,7 +65,21 @@ function xmldb_block_my_books_upgrade($oldversion=0) {
         set_config('addkey', $CFG->mybooks_addkey, 'mybooks');
         unset_config('mybooks_addkey');
 
+        unset_config('mybooks_directories');
+        unset_config('mybooks_resizable');
+        unset_config('mybooks_location');
+
         upgrade_block_savepoint(true, 2014111100, 'my_books');
+    }
+
+    if ($oldversion < 2015051900) {
+        unset_config('resizable', 'mybooks');
+        unset_config('directories', 'mybooks');
+        unset_config('location', 'mybooks');
+
+        $DB->set_field('rcontent', 'frame', 0, array('course' => SITEID));
+
+        upgrade_block_savepoint(true, 2015051900, 'my_books');
     }
 
     return true;

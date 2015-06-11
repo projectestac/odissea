@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,7 @@ $string['enablewsdescription'] = 'Webbtjänster måste aktiveras i Avancerade fu
 $string['entertoken'] = 'Ange en säkerhetsnyckel/token:';
 $string['error'] = 'Fel: {$a}';
 $string['errorcodes'] = 'Felmeddelande';
-$string['event_webservice_login_failed'] = 'Webbtjänstinloggning misslyckades';
+$string['eventwebserviceloginfailed'] = 'Webbtjänstinloggning misslyckades';
 $string['function'] = 'Funktion';
 $string['functions'] = 'Funktion';
 $string['information'] = 'Information';

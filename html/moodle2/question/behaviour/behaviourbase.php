@@ -281,10 +281,32 @@ abstract class question_behaviour {
     }
 
     /**
-     * @return question_possible_response[] where keys are subpartid or an empty array if no classification is possible.
+     * Classify responses for this question into a number of sub parts and response classes as defined by
+     * {@link \question_type::get_possible_responses} for this question type.
+     *
+     * @param string $whichtries         which tries to analyse for response analysis. Will be one of
+     *                                   question_attempt::FIRST_TRY, LAST_TRY or ALL_TRIES.
+     *                                   Defaults to question_attempt::LAST_TRY.
+     * @return (question_classified_response|array)[] If $whichtries is question_attempt::FIRST_TRY or LAST_TRY index is subpartid
+     *                                   and values are question_classified_response instances.
+     *                                   If $whichtries is question_attempt::ALL_TRIES then first key is submitted response no
+     *                                   and the second key is subpartid.
      */
-    public function classify_response() {
-        return $this->question->classify_response($this->qa->get_last_qt_data());
+    public function classify_response($whichtries = question_attempt::LAST_TRY) {
+        if ($whichtries == question_attempt::LAST_TRY) {
+            return $this->question->classify_response($this->qa->get_last_qt_data());
+        } else {
+            $stepswithsubmit = $this->qa->get_steps_with_submitted_response_iterator();
+            if ($whichtries == question_attempt::FIRST_TRY) {
+                return $this->question->classify_response($stepswithsubmit[1]->get_qt_data());
+            } else {
+                $classifiedresponses = array();
+                foreach ($stepswithsubmit as $submittedresponseno => $step) {
+                    $classifiedresponses[$submittedresponseno] = $this->question->classify_response($step->get_qt_data());
+                }
+                return $classifiedresponses;
+            }
+        }
     }
 
     /**
@@ -504,6 +526,20 @@ abstract class question_behaviour {
     public function summarise_finish($step) {
         return get_string('attemptfinished', 'question');
     }
+
+    /**
+     * Does this step include a response submitted by a student?
+     *
+     * This method should return true for any attempt explicitly submitted by a student. The question engine itself will also
+     * automatically recognise any last saved response before the attempt is finished, you don't need to return true here for these
+     * steps with responses which are not explicitly submitted by the student.
+     *
+     * @param question_attempt_step $step
+     * @return bool is this a step within a question attempt that includes a submitted response by a student.
+     */
+    public function step_has_a_submitted_response($step) {
+        return false;
+    }
 }
 
 
@@ -625,6 +661,11 @@ abstract class question_behaviour_with_save extends question_behaviour {
     }
 }
 
+abstract class question_behaviour_with_multiple_tries extends question_behaviour_with_save {
+    public function step_has_a_submitted_response($step) {
+        return $step->has_behaviour_var('submit') && $step->get_state() != question_state::$invalid;
+    }
+}
 
 /**
  * This helper class contains the constants and methods required for

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'es', branch 'MOODLE_26_STABLE'
+ * Strings for component 'journal', language 'es', branch 'MOODLE_28_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,12 +39,12 @@ $string['journalname'] = 'Nombre del Diario';
 $string['journalquestion'] = 'Pregunta del Diario';
 $string['mailsubject'] = 'Retroalimentación del Diario';
 $string['modulename'] = 'Diario';
-$string['modulename_help'] = 'La actividad Diario permite a los profesores obtener retroalimentación de los estudiantes sobre un tema específico';
+$string['modulename_help'] = 'La actividad de revista (journal) les permite a los profesores obtener retroalimentación de estudiantes sobre un tema específico';
 $string['modulenameplural'] = 'Diarios';
 $string['newjournalentries'] = 'Nuevas entradas en el Diario';
 $string['noentriesmanagers'] = 'No hay profesores';
 $string['noentry'] = 'No hay entrada';
-$string['notopenuntil'] = 'Este Diario no estará abierto hasta';
+$string['notopenuntil'] = 'Este diario no estará disponible hasta';
 $string['notstarted'] = 'Usted no ha iniciado todavía este Diario';
 $string['pluginadministration'] = 'Administración de la extensión Diario';
 $string['pluginname'] = 'Diario';

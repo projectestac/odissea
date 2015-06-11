@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xml', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradeexport_xml', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   gradeexport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XML 文件';
-$string['useridnumberwarning'] = '没有学号的用户不会被包含在XML导出中，因为他们不可能被导入';
 $string['xml:publish'] = '发布 XML 导出成绩';
 $string['xml:view'] = '使用 XML 导出成绩';

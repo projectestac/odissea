@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Suprimides - etiquetes del curs';
 $string['description'] = 'Descripció';
 $string['edittag'] = 'Edita aquesta etiqueta';
 $string['entertags'] = 'Introduïu les etiquetes separades per comes';
-$string['errordeleting'] = 'Error en suprimir l\'etiqueta amb id {$a}, si us plau informeu a l\'administrador del sistema.';
 $string['errortagfrontpage'] = 'Les etiquetes a la pàgina principal del lloc no estan permeses.';
 $string['errorupdatingrecord'] = 'Error actualitzant la dada de l\'etiqueta.';
+$string['eventtagadded'] = 'Etiquetes afegides a un element';
+$string['eventtagcreated'] = 'Etiqueta creada';
+$string['eventtagdeleted'] = 'Etiqueta suprimida';
+$string['eventtagflagged'] = 'Etiqueta marcada';
+$string['eventtagremoved'] = 'Etiqueta suprimida d\'un element';
+$string['eventtagunflagged'] = 'Etiqueta desmarcada';
+$string['eventtagupdated'] = 'Etiqueta actualitzada';
 $string['flag'] = 'Senyalador';
 $string['flagasinappropriate'] = 'Senyala com a inapropiat';
 $string['helprelatedtags'] = 'Etiquetes relacionades separades per comes';

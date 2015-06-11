@@ -1,7 +1,6 @@
 <?php
 require_once($CFG->dirroot.'/local/rcommon/settingslib.php');
 require_once($CFG->dirroot.'/local/rcommon/locallib.php');
-
 // If site is allowed to use Marsupial
 if (is_marsupial_enabled()) {
 	//****************** MENU ******************/

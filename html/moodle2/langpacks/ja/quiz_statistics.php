@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,31 @@ $string['actualresponse'] = '実解答';
 $string['allattempts'] = 'すべての受験';
 $string['allattemptsavg'] = 'すべての受験評点の平均値';
 $string['allattemptscount'] = '受験総数 (評定済み)';
+$string['analysisnameonly'] = '「 {$a->name} 」';
+$string['analysisno'] = '({$a->number}) 「 {$a->name} 」';
+$string['analysisnovariant'] = '({$a->number}) 「 {$a->name} 」変形 {$a->variant}';
 $string['analysisofresponses'] = '解答分析';
 $string['analysisofresponsesfor'] = '{$a} の解答に関する分析';
+$string['analysisvariant'] = '「 {$a->name} 」変形 {$a->variant}';
 $string['attempts'] = '受験';
 $string['attemptsall'] = 'すべての受験';
 $string['attemptsfirst'] = '最初の受験';
 $string['backtoquizreport'] = 'メイン統計レポートページに戻る';
 $string['calculatefrom'] = '統計計算:';
+$string['calculatingallstats'] = '小テスト、問題の統計計算および解答データの分析';
 $string['cic'] = '内部整合性係数 ({$a})';
 $string['completestatsfilename'] = '完了統計';
 $string['count'] = 'カウント';
+$string['counttryno'] = 'カウント試行 {$a}';
 $string['coursename'] = 'コース名';
 $string['detailedanalysis'] = 'この問題に対する解答の詳細分析';
+$string['detailedanalysisforvariant'] = 'この問題の変形「 {$a} 」への解答に関する詳細分析';
 $string['discrimination_index'] = '識別指数';
 $string['discriminative_efficiency'] = '識別率';
 $string['downloadeverything'] = 'フルリポートをダウンロードする: {$a->formatsmenu} {$a->downloadbutton}';
 $string['duration'] = '公開期間';
 $string['effective_weight'] = '有効加重';
 $string['errordeleting'] = '古い {$a} レコード削除中にエラーが発生しました。';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = '問題 ({$a}) では、小テストの異なる位置において、1つ以上の異なる加重が設定されています。現在、統計レポートで、このような設定はサポートされていません。また、この小テスト統計の信頼性が損なわれる恐れがあります。';
 $string['errormedian'] = '中央値の取得中にエラーが発生しました。';
 $string['errorpowerquestions'] = '問題評点の分散を計算するデータの取得中にエラーが発生しました。';
 $string['errorpowers'] = '小テスト評点の分散を計算するデータの取得中にエラーが発生しました。';
@@ -66,8 +72,12 @@ $string['kurtosis'] = '評点分布の尖度 ({$a})';
 $string['lastattempts'] = '前回の受験';
 $string['lastattemptsavg'] = '前回の受験の平均点';
 $string['lastcalculated'] = '最終計算 {$a->lastcalculated} 前より {$a->count} 件の受験がありました。';
+$string['maximumfacility'] = '容易さ - 最大';
 $string['median'] = '評点の中央値 ({$a})';
+$string['medianfacility'] = '容易さ - 中間';
+$string['minimumfacility'] = '容易さ - 最低';
 $string['modelresponse'] = 'モデル解答';
+$string['nameforvariant'] = '{$a->name} の変形 {$a->variant}';
 $string['negcovar'] = '受験評点総計における評点の負の共分散';
 $string['negcovar_help'] = '小テストの一連の受験に関する、この問題の評点は全体の受験評点と反対であるという点で異なります。これはこの問題の評点が反対に平均以上であることに対して、全体の受験評点は平均以下の傾向があることを意味します。
 
@@ -95,6 +105,7 @@ $string['recalculatenow'] = '再計算する';
 $string['reportsettings'] = '統計計算設定';
 $string['response'] = '解答';
 $string['skewness'] = '評点分布の歪み ({$a})';
+$string['slotstructureanalysis'] = '問題番号「 {$a} 」の構造分析';
 $string['standarddeviation'] = '標準偏差 ({$a})';
 $string['standarddeviationq'] = '標準偏差';
 $string['standarderror'] = '標準誤差 ({$a})';
@@ -104,3 +115,5 @@ $string['statisticsreport'] = '統計レポート';
 $string['statisticsreportgraph'] = '問題ポジションの統計';
 $string['statistics:view'] = '統計レポートを表示する';
 $string['statsfor'] = '小テスト統計 ({$a})';
+$string['variant'] = '変形';
+$string['whichtries'] = '解答分析対象';

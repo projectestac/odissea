@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['attachment_help'] = 'Pode anexar um ou mais ficheiros a um termo.';
 $string['author'] = 'autor';
 $string['authorview'] = 'Consultar por autor';
 $string['back'] = 'Voltar';
+$string['cachedef_concepts'] = 'Ligação de conceitos';
 $string['cantinsertcat'] = 'Não é possível inserir a categoria';
 $string['cantinsertrec'] = 'Não é possível inserir o registo';
 $string['cantinsertrel'] = 'Não é possível inserir relação categoria-termo';
@@ -158,6 +159,15 @@ $string['errconceptalreadyexists'] = 'Este termo já existe. Este glossário nã
 $string['errdeltimeexpired'] = 'Não é possível apagar este termo. O tempo de edição expirou!';
 $string['erredittimeexpired'] = 'O tempo para editar este termo expirou.';
 $string['errorparsingxml'] = 'Ocorreram erros ao analisar o ficheiro. Certifique-se que a sintaxe XML é válida.';
+$string['eventcategorycreated'] = 'A categoria foi criada';
+$string['eventcategorydeleted'] = 'A categoria foi eliminada';
+$string['eventcategoryupdated'] = 'A categoria foi atualizada';
+$string['evententryapproved'] = 'A entrada foi aprovada';
+$string['evententrycreated'] = 'A entrada foi criada';
+$string['evententrydeleted'] = 'A entrada foi eliminada';
+$string['evententrydisapproved'] = 'A entrada foi desaprovada';
+$string['evententryupdated'] = 'A entrada foi atualizada';
+$string['evententryviewed'] = 'A entrada foi visualizada';
 $string['explainaddentry'] = 'Adicione um novo termo no glossário.<br />O termo e a definição são campos obrigatórios.';
 $string['explainall'] = 'Mostra TODOS os termos numa página';
 $string['explainalphabet'] = 'Consulte o glossário usando este índice';

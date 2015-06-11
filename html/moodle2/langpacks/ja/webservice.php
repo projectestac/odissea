@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'webservice', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,14 +86,15 @@ $string['errorcoursecontextnotvalid'] = 'あなたはコースコンテクスト
 $string['errorinvalidparam'] = 'パラメータ「 {$a} 」が有効ではありません。';
 $string['errornotemptydefaultparamarray'] = 'ウェブサービス記述パラメータ「 {$a} 」は単一または多重構造となっています。 デフォルトでは空の配列のみ使用できます。ウェブサービス記述を確認してください。';
 $string['erroroptionalparamarray'] = 'ウェブサービス記述パラメータ「 {$a} 」は単一または多重構造となっています。VALUE_OPTIONALとして設定することはできません。ウェブサービス記述を確認してください。';
-$string['event_webservice_function_called'] = 'ウェブサービス関数がコールされました。';
-$string['event_webservice_login_failed'] = 'ウェブサービスのログインに失敗しました。';
-$string['event_webservice_service_created'] = 'ウェブサービスが作成されました。';
-$string['event_webservice_service_updated'] = 'ウェブサービスが更新されました。';
-$string['event_webservice_service_user_added'] = 'ウェブサービスユーザが追加されました。';
-$string['event_webservice_service_user_removed'] = 'ウェブサービスユーザが削除されました。';
-$string['event_webservice_token_created'] = 'ウェブサービストークンが作成されました。';
-$string['event_webservice_token_sent'] = 'ウェブサービストークンが送信されました。';
+$string['eventwebservicefunctioncalled'] = 'ウェブサービス関数がコールされました。';
+$string['eventwebserviceloginfailed'] = 'ウェブサービスのログインに失敗しました。';
+$string['eventwebserviceservicecreated'] = 'ウェブサービスが作成されました。';
+$string['eventwebserviceservicedeleted'] = 'ウェブサービスが削除されました。';
+$string['eventwebserviceserviceupdated'] = 'ウェブサービスが更新されました。';
+$string['eventwebserviceserviceuseradded'] = 'ウェブサービスユーザが追加されました。';
+$string['eventwebserviceserviceuserremoved'] = 'ウェブサービスユーザが削除されました。';
+$string['eventwebservicetokencreated'] = 'ウェブサービストークンが作成されました。';
+$string['eventwebservicetokensent'] = 'ウェブサービストークンが送信されました。';
 $string['execute'] = '実行';
 $string['executewarnign'] = '警告: 実行をクリックした場合、あなたのデータベースが変更され、自動的に戻すことができないようになります!';
 $string['externalservice'] = '外部サービス';
@@ -128,6 +129,7 @@ $string['missingusername'] = 'ユーザ名がありません。';
 $string['missingversionfile'] = 'コーディングエラー: コンポーネント {$a} のversion.phpファイルがありません。';
 $string['mobilewsdisabled'] = '無効';
 $string['mobilewsenabled'] = '無効';
+$string['nameexists'] = 'この名称はすでに別のサービスで使用されています。';
 $string['nocapabilitytouseparameter'] = 'ユーザにはパラメータ「 {$a} 」を使用するための必須ケイパビリティがありません。';
 $string['nofunctions'] = 'このサービスに関数はありません。';
 $string['norequiredcapability'] = '必須ケイパビリティなし';
@@ -178,6 +180,7 @@ $string['serviceusers'] = '認証ユーザ';
 $string['serviceusersettings'] = 'ユーザ設定';
 $string['serviceusersmatching'] = '合致する認証ユーザ';
 $string['serviceuserssettings'] = '認証済みユーザの設定を変更する';
+$string['shortnametaken'] = 'すでに省略名が別のサービス ({$a}) で使用されています。';
 $string['simpleauthlog'] = 'シンプル認証ログイン';
 $string['step'] = 'ステップ';
 $string['supplyinfo'] = '詳細';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,10 +56,6 @@ $string['check_frontpagerole_error'] = 'Обнаружена неправиль�
 $string['check_frontpagerole_name'] = 'Роль для главной страницы';
 $string['check_frontpagerole_notset'] = 'Роль для главной страницы не задана.';
 $string['check_frontpagerole_ok'] = 'Роль для главной страницы задана верно.';
-$string['check_globals_details'] = '<p>Считается, что включение параметра PHP register_globals является крайне небезопасной настройкой PHP. </p> <p> В конфигурации PHP должно быть установлено <code> register_globals=off> </code>. Этой параметр устанавливается редактированием файла <code> php.ini </code>, конфигурации Apache/IIS или файла <code>.htaccess </code>. </p>';
-$string['check_globals_error'] = 'Параметр register_globals ДОЛЖЕН быть отключен. Пожалуйста, немедленно установите параметры настройки PHP сервера!';
-$string['check_globals_name'] = 'Параметр register_globals';
-$string['check_globals_ok'] = 'Параметр register_globals отключен.';
 $string['check_google_details'] = '<p>Установка Открыть для Google позволяет поисковым машинам входить в курсы с доступом гостя. Нет никакого смысла в этой настройке, если вход гостя не разрешен.</p>';
 $string['check_google_error'] = 'Доступ поисковой машины разрешен, но доступ гостя - запрещен.';
 $string['check_google_info'] = 'Поисковые машины могут входить как гости.';

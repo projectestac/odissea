@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,8 +37,8 @@ $string['err_response_curl'] = '利用可能なアップデートデータを取
 $string['err_response_format_version'] = '予期しないレスポンスフォーマットのバージョンです。利用可能な更新を再度確認してください。';
 $string['err_response_http_code'] = '利用可能なアップデートデータを取得できません - 不明なHTTPレスポンスコードです。';
 $string['filterall'] = 'すべてを表示する';
-$string['filtercontribonly'] = 'アドオンのみ表示する';
-$string['filtercontribonlyactive'] = 'アドオンのみ表示中';
+$string['filtercontribonly'] = '追加プラグインのみ表示する';
+$string['filtercontribonlyactive'] = '追加プラグインのみ表示中';
 $string['filterupdatesonly'] = '更新可能のみ表示する';
 $string['filterupdatesonlyactive'] = '更新可能のみ表示中';
 $string['moodleversion'] = 'Moodle {$a}';
@@ -51,18 +51,19 @@ $string['notes'] = 'ノート';
 $string['notwritable'] = 'プラグインファイル書き込み不可';
 $string['notwritable_help'] = 'あなたは自動更新適用を有効にしています。また、このプラグインに利用可能な更新があります。しかし、プラグインファイルに書き込み権がないため、更新を自動インストールすることができません。
 
-利用可能な更新を自動インストールできるよう、プラグインフォルダおよびコンテンツすべてに書き込めるようにしてください。';
+利用可能な更新を自動インストールできるようプラグインフォルダおよびコンテンツすべてに書き込めるようにしてください。';
 $string['numdisabled'] = '無効: {$a}';
-$string['numextension'] = 'アドオン: {$a}';
+$string['numextension'] = '追加: {$a}';
 $string['numtotal'] = 'インストール: {$a}';
 $string['numupdatable'] = '利用可能な更新: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component}';
-$string['pluginchecknotice'] = 'このページではアップグレード中、あなたが注意する必要のあるプラグインを表示しています。ハイライトされた項目にはインストールされる予定の新しいプラグイン、アップグレードされる予定の更新プラグイン、そして不明のプラグインを含みます。利用可能な更新がある場合、アドオンもハイライトされています。新しいバージョンのアドオンがあるか確認して、このMoodleアップグレードを続ける前にソースコードの更新をお勧めします。';
+$string['pluginchecknotice'] = 'このページではアップグレード中、あなたが注意する必要のあるプラグインを表示しています。ハイライトされた項目にはインストールされる予定の新しいプラグイン、アップグレードされる予定の更新プラグイン、そして不明のプラグインを含みます。利用可能な更新がある場合、プラグインもハイライトされています。新しいバージョンのプラグインがあるか確認して、このMoodleアップグレードを続ける前にソースコードの更新をお勧めします。';
 $string['plugindisable'] = '無効';
 $string['plugindisabled'] = '無効';
 $string['pluginenable'] = '有効';
 $string['pluginenabled'] = '有効';
+$string['release'] = 'リリース';
 $string['requiredby'] = '次のプラグインに必要です: {$a}';
 $string['requires'] = '必要条件';
 $string['rootdir'] = 'ディレクトリ';
@@ -72,7 +73,7 @@ $string['somehighlighted'] = 'あなたの注意が必要なプラグイン数: 
 $string['somehighlightedinfo'] = 'インストール済みプラグイン詳細リストを表示する';
 $string['somehighlightedonly'] = 'あなたの注意が必要なプラグインのみ表示する';
 $string['source'] = 'ソース';
-$string['sourceext'] = 'アドオン';
+$string['sourceext'] = '追加';
 $string['sourcestd'] = '標準';
 $string['status'] = '状態';
 $string['status_delete'] = '削除予定';
@@ -85,6 +86,8 @@ $string['status_uptodate'] = 'インストール';
 $string['systemname'] = '識別子';
 $string['type_auth'] = '認証方法';
 $string['type_auth_plural'] = '認証プラグイン';
+$string['type_availability'] = '利用制限';
+$string['type_availability_plural'] = '利用制限';
 $string['type_block'] = 'ブロック';
 $string['type_block_plural'] = 'ブロック';
 $string['type_cachelock'] = 'キャッシュロックハンドラ';

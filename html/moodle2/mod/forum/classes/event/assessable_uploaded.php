@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * mod_forum assessable uploaded event.
+ * The mod_forum assessable uploaded event.
  *
  * @package    mod_forum
  * @copyright  2013 Frédéric Massart
@@ -27,7 +27,14 @@ namespace mod_forum\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * mod_forum assessable uploaded event class.
+ * The mod_forum assessable uploaded event class.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - int discussionid: id of discussion.
+ *      - string triggeredfrom: name of the function from where event was triggered.
+ * }
  *
  * @package    mod_forum
  * @since      Moodle 2.6
@@ -42,19 +49,21 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
      * @return string
      */
     public function get_description() {
-        return "User {$this->userid} has posted some content in the forum post {$this->objectid}.";
+        return "The user with id '$this->userid' has posted content in the forum post with id '$this->objectid' " .
+            "in the discussion '{$this->other['discussionid']}' located in the forum with course module id " .
+            "'$this->contextinstanceid'.";
     }
 
     /**
      * Legacy event data if get_legacy_eventname() is not empty.
      *
-     * @return stdClass
+     * @return \stdClass
      */
     protected function get_legacy_eventdata() {
         $eventdata = new \stdClass();
         $eventdata->modulename   = 'forum';
         $eventdata->name         = $this->other['triggeredfrom'];
-        $eventdata->cmid         = $this->context->instanceid;
+        $eventdata->cmid         = $this->contextinstanceid;
         $eventdata->itemid       = $this->objectid;
         $eventdata->courseid     = $this->courseid;
         $eventdata->userid       = $this->userid;
@@ -80,7 +89,7 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
      * @return string
      */
     public static function get_name() {
-        return get_string('event_assessable_uploaded', 'mod_forum');
+        return get_string('eventassessableuploaded', 'mod_forum');
     }
 
     /**
@@ -110,10 +119,11 @@ class assessable_uploaded extends \core\event\assessable_uploaded {
      */
     protected function validate_data() {
         parent::validate_data();
+
         if (!isset($this->other['discussionid'])) {
-            throw new \coding_exception('discussionid must be set in $other.');
+            throw new \coding_exception('The \'discussionid\' value must be set in other.');
         } else if (!isset($this->other['triggeredfrom'])) {
-            throw new \coding_exception('triggeredfrom must be set in $other');
+            throw new \coding_exception('The \'triggeredfrom\' value must be set in other.');
         }
     }
 }

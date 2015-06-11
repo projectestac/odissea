@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Komponente';
+$string['eventcontext'] = 'Ereigniskontext';
+$string['eventloggedas'] = '{$a->realusername} als {$a->asusername}';
+$string['eventorigin'] = 'Herkunft';
+$string['eventrelatedfullnameuser'] = 'Betroffene/r Nutzer/in';
+$string['eventreportviewed'] = 'Logbericht angezeigt';
+$string['eventuserreportviewed'] = 'Logbericht von Nutzer/innen angezeigt';
 $string['logsformat'] = 'Logdaten-Format';
 $string['log:view'] = 'Logdaten von Kursen anzeigen';
 $string['log:viewtoday'] = 'Heutige Logdaten anzeigen';
-$string['mnetlogwarning'] = 'Wenn Ihre MNet Clients mit Moodle 2.7 (oder höher) arbeiten, bekommen Sie eventuell keine Logdaten.';
+$string['nologreaderenabled'] = 'Anzeige für Logdaten deaktiviert';
 $string['page'] = 'Seite {$a}';
 $string['page-report-log-index'] = 'Kurs-Logbericht';
 $string['page-report-log-user'] = 'Nutzer-Kurs-Logbericht';
 $string['page-report-log-x'] = 'Alle Logberichte';
 $string['pluginname'] = 'Logdaten';
+$string['selectlogreader'] = 'Anzeige für Logdaten wählen';

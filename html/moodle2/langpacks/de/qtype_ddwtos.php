@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,9 +29,9 @@ $string['addmorechoiceblanks'] = 'Leerfeld für {no} weitere Wahlmöglichkeiten'
 $string['answer'] = 'Antwort';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['infinite'] = 'Unendlich';
-$string['pleaseputananswerineachbox'] = 'Bitte ziehen Sie in jede Box eine Antwort';
-$string['pluginname'] = '"Drag and Drop" auf Text';
-$string['pluginnameadding'] = '"Drag and Drop" auf Text hinzufügen';
-$string['pluginnameediting'] = '"Drag and Drop" auf Text bearbeiten';
-$string['pluginname_help'] = 'Geben Sie einen Text wie "Der [[1]] sprang über den [[2]]" ein. Dann schreiben Sie mögliche Wörter für die Lücken 1 und 2 unten auf.';
-$string['pluginnamesummary'] = 'Fehlende Wörter in einem Text werden per "Drag and Drop" ausgefüllt.';
+$string['pleaseputananswerineachbox'] = 'Bitte ziehen Sie in jede Box eine Antwort.';
+$string['pluginname'] = 'Drag and Drop auf Text';
+$string['pluginnameadding'] = '\'Drag and Drop auf Text\' hinzufügen';
+$string['pluginnameediting'] = '\'Drag and Drop auf Text\' bearbeiten';
+$string['pluginname_help'] = 'Geben Sie einen Text in der Form "Der [[1]] sprang über den [[2]]" ein und schreiben Sie mögliche Wörter für die Lücken 1 und 2 unten auf.';
+$string['pluginnamesummary'] = 'Fehlende Wörter in einem Text werden per Drag and Drop ausgefüllt.';

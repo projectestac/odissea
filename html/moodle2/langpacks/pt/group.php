@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,14 +71,14 @@ $string['errorremovenotpermitted'] = 'Não tem permissão para remover o membro 
 $string['errorselectone'] = 'Selecione um único grupo, antes de escolher esta opção';
 $string['errorselectsome'] = 'Selecione um ou mais grupos, antes de escolher esta opção';
 $string['evenallocation'] = 'Nota: Para manter o equilíbrio no número de membros de cada grupo, o número destes é diferente do número especificado.';
-$string['event_group_created'] = 'Grupo criado';
-$string['event_group_deleted'] = 'Grupo apagado';
-$string['event_grouping_created'] = 'Agrupamento criado';
-$string['event_grouping_deleted'] = 'Agrupamento apagado';
-$string['event_grouping_updated'] = 'Agrupamento atualizado';
-$string['event_group_member_added'] = 'Membro do grupo adicionado';
-$string['event_group_member_removed'] = 'Membro do grupo removido';
-$string['event_group_updated'] = 'Grupo atualizado';
+$string['eventgroupcreated'] = 'Grupo criado';
+$string['eventgroupdeleted'] = 'Grupo apagado';
+$string['eventgroupingcreated'] = 'Agrupamento criado';
+$string['eventgroupingdeleted'] = 'Agrupamento apagado';
+$string['eventgroupingupdated'] = 'Agrupamento atualizado';
+$string['eventgroupmemberadded'] = 'Membro do grupo adicionado';
+$string['eventgroupmemberremoved'] = 'Membro do grupo removido';
+$string['eventgroupupdated'] = 'Grupo atualizado';
 $string['existingmembers'] = 'Membros existentes: {$a}';
 $string['filtergroups'] = 'Filtrar grupos por:';
 $string['group'] = 'Grupo';
@@ -102,9 +102,6 @@ $string['groupingsonly'] = 'Apenas agrupamentos';
 $string['groupmember'] = 'Membro do grupo';
 $string['groupmemberdesc'] = 'Papel por predefinição para um membro de um grupo.';
 $string['groupmembers'] = 'Membros do grupo';
-$string['groupmembersonly'] = 'Disponível apenas para membros do agrupamento';
-$string['groupmembersonlyerror'] = 'Tem de pertencer a, pelo menos, um grupo utilizado nesta atividade.';
-$string['groupmembersonly_help'] = 'Se esta opção estiver selecionada, a atividade (ou recurso) só estará disponível para os alunos atribuídos a grupos dentro do agrupamento selecionado.';
 $string['groupmemberssee'] = 'Ver membros do grupo';
 $string['groupmembersselected'] = 'Membros do grupo selecionado';
 $string['groupmode'] = 'Modo de grupo';
@@ -158,6 +155,7 @@ $string['nogroups'] = 'Ainda não há grupos definidos nesta disciplina';
 $string['nogroupsassigned'] = 'Não foram atribuídos grupos';
 $string['nopermissionforcreation'] = 'Não é possível criar o grupo"{$a}", porque não tem as permissões necessárias';
 $string['nosmallgroups'] = 'Apagar último pequeno grupo';
+$string['notingroup'] = 'Ignorar utilizadores em grupos';
 $string['notingrouping'] = '[Não está num agrupamento]';
 $string['nousersinrole'] = 'Não existem utilizadores adequados no papel selecionado';
 $string['number'] = 'Número de grupos/membros por grupo';
@@ -174,6 +172,8 @@ $string['removegroupfromselectedgrouping'] = 'Remover grupo do agrupamento';
 $string['removegroupingsmembers'] = 'Remover todos os grupos de agrupamentos';
 $string['removegroupsmembers'] = 'Remover todos os membros do(s) grupo(s)';
 $string['removeselectedusers'] = 'Remover utilizadores selecionados';
+$string['selectfromgroup'] = 'Selecione os membros do grupo';
+$string['selectfromgrouping'] = 'Selecione os membros do agrupamento';
 $string['selectfromrole'] = 'Selecionar membros com o papel';
 $string['showgroupsingrouping'] = 'Mostrar grupos no agrupamento';
 $string['showmembersforgroup'] = 'Mostrar membros do grupo';

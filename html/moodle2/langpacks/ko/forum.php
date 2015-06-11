@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'forum', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -158,6 +158,21 @@ $string['erroremptymessage'] = '게시 메세지는 비어 있을 수 없습니�
 $string['erroremptysubject'] = '제목이 없으면 안됩니다.';
 $string['errorenrolmentrequired'] = '콘텐츠에 접근하기 위해서는 이 강좌에 등록해야 합니다.';
 $string['errorwhiledelete'] = '기록 삭제 중 오류 발생';
+$string['eventcoursesearched'] = '강좌 검색됨';
+$string['eventdiscussioncreated'] = '토론 생성됨';
+$string['eventdiscussiondeleted'] = '토론 삭제됨';
+$string['eventdiscussionmoved'] = '토론 이동됨';
+$string['eventdiscussionupdated'] = '토론 업데이트됨';
+$string['eventdiscussionviewed'] = '토론 봄';
+$string['eventpostcreated'] = '게시글 생성됨';
+$string['eventpostdeleted'] = '게시글 삭제됨';
+$string['eventpostupdated'] = '게시글 업데이트됨';
+$string['eventreadtrackingdisabled'] = '읽기 추적 비활성화됨';
+$string['eventreadtrackingenabled'] = '읽기 추적 활성화됨';
+$string['eventsubscribersviewed'] = '구독자 봄';
+$string['eventsubscriptioncreated'] = '구독 생성됨';
+$string['eventsubscriptiondeleted'] = '구독 삭제됨';
+$string['eventuserreportviewed'] = '사용자 보고서 봄';
 $string['everyonecanchoose'] = '모든 사람이 구독여부를 선택할 수 있음';
 $string['everyonecannowchoose'] = '모든 사람이 구독여부를 선택할 수 있게 됨';
 $string['everyoneisnowsubscribed'] = '이제 모든 사람이 이 포럼을 구독하게 됨';
@@ -165,7 +180,7 @@ $string['everyoneissubscribed'] = '모든 사람이 이 포럼을 구독함';
 $string['existingsubscribers'] = '구독자 존재';
 $string['exportdiscussion'] = '전체 토론을 내보내기';
 $string['forcedreadtracking'] = '강제 읽기 추적 허용';
-$string['forcessubscribe'] = '모든 사람이 포럼을 구독해야 함';
+$string['forcesubscribed'] = '모든 사람이 포럼을 구독해야 함';
 $string['forum'] = '포럼';
 $string['forum:addinstance'] = '새 포럼 추가';
 $string['forum:addnews'] = '새소식 추가';
@@ -310,9 +325,6 @@ $string['numposts'] = '{$a} 게시물';
 $string['olderdiscussions'] = '오래된 토론들';
 $string['oldertopics'] = '오래된 주제들';
 $string['oldpostdays'] = '지난 기사 읽음 처리';
-$string['openmode0'] = '토론 및 답글 불가';
-$string['openmode1'] = '토론 없음, 답글 허용됨';
-$string['openmode2'] = '토론과 답글 허용됨';
 $string['overviewnumpostssince'] = '마지막 접속 후 게시물 수 : {$a}';
 $string['overviewnumunread'] = '읽지 않은 수 : {$a}';
 $string['page-mod-forum-discuss'] = '포럼 모듈 토론 쓰레드 페이지';

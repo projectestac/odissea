@@ -113,3 +113,32 @@ $string['pleasesetgroups'] = 'Veuillez créer au préalable au moins deux groupe
 
 $string['multipleenrollmentspossible'] = 'Autoriser l\'inscription à plusieurs groupes.';
 $string['and'] = 'et';
+$string['event:answered'] = 'Choix fait';
+$string['event:answered_desc'] = 'L\'utilisateur id \'{$a->userid}\' a fait un choix dans l\'activité choix de groupe, module de cours id \'{$a->contextinstanceid}\'.';
+$string['event:removed'] = 'Choix supprimé';
+$string['event:removed_desc'] = 'L\'utilisateur id \'{$a->userid}\' a supprimé son choix dans l\'activité choix de groupe, module de cours id \'{$a->contextinstanceid}\'.';
+$string['event:reportviewed'] = 'Rapport affiché';
+$string['event:reportviewed_desc'] = 'L\'utilisateur id \'{$a->userid}\' a visualisé le rapport de l\'activité choix de groupe, module de cours id \'{$a->contextinstanceid}\'.';
+$string['groupsheader'] = "Groupes";
+$string['the_value_you_entered_is_not_a_number'] = "La valeur donnée n’est pas un nombre.";
+$string['add_groupings'] = "Créer des groupements";
+$string['add_grouping'] = "Créer un groupement";
+$string['add_groups'] = "Créer des groupes";
+$string['del_groups'] = "Supprimer des groupes";
+$string['del_group'] = "Retirer le groupe";
+$string['add_group'] = "Ajouter le groupe";
+$string['add'] = "Ajouter";
+$string['del'] = "Retirer";
+$string['set_limit_for_group'] = "Limite pour ";
+$string['available_groups'] = 'Groupes disponibles';
+$string['selected_groups'] = 'Groupes sélectionnés';
+$string['char_bullet_collapsed'] = '►';
+$string['char_bullet_expanded'] = '▼';
+$string['char_limitui_parenthesis_start'] = '⦗';
+$string['char_limitui_parenthesis_end'] = '⦘';
+$string['expand_all_groupings'] = 'Développer tous les groupements';
+$string['collapse_all_groupings'] = 'Réduire tous les groupements';
+$string['double_click_grouping_legend'] = 'Double-clic sur groupement pour le développer/réduire.';
+$string['double_click_group_legend'] = 'Double-clic sur groupe pour l’ajouter.';
+
+

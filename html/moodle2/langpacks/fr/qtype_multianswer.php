@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Disposition non définie';
 $string['layoutvertical'] = 'Colonne verticale de boutons radio';
 $string['nooptionsforsubquestion'] = 'Impossible d\'obtenir les options de la partie de question no {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'La question Cloze (multianswer) « <strong>{$a}</strong> » ne contient aucune question';
+$string['pleaseananswerallparts'] = 'Merci de répondre à tous les éléments de la question.';
 $string['pluginname'] = 'Question Cloze';
 $string['pluginnameadding'] = 'Ajout d\'une question Cloze';
 $string['pluginnameediting'] = 'Modification d\'une question Cloze';

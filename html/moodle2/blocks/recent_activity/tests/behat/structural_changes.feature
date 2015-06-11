@@ -5,40 +5,40 @@ Feature: View structural changes in recent activity block
   In need to see the structural changes in recent activity block
 
   Background:
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "users" exists:
+    And the following "users" exist:
       | username    | firstname | lastname | email            |
-      | teacher1    | Terry1    | Teacher1 | teacher1@asd.com |
-      | assistant1  | Terry2    | Teacher2 | teacher2@asd.com |
-      | student1    | Sam1      | Student1 | student1@asd.com |
-      | student2    | Sam2      | Student2 | student2@asd.com |
-      | student3    | Sam3      | Student3 | student3@asd.com |
-    And the following "course enrolments" exists:
+      | teacher1    | Terry1    | Teacher1 | teacher1@example.com |
+      | assistant1  | Terry2    | Teacher2 | teacher2@example.com |
+      | student1    | Sam1      | Student1 | student1@example.com |
+      | student2    | Sam2      | Student2 | student2@example.com |
+      | student3    | Sam3      | Student3 | student3@example.com |
+    And the following "course enrolments" exist:
       | user        | course | role           |
       | teacher1    | C1     | editingteacher |
       | assistant1  | C1     | teacher        |
       | student1    | C1     | student        |
       | student2    | C1     | student        |
       | student3    | C1     | student        |
-    And the following "groups" exists:
+    And the following "groups" exist:
       | name | course | idnumber |
       | Group 1 | C1 | G1 |
       | Group 2 | C1 | G2 |
-    And the following "groupings" exists:
+    And the following "groupings" exist:
       | name        | course | idnumber |
       | Grouping 1  | C1     | GG1      |
       | Grouping 2  | C1     | GG2      |
       | Grouping 3  | C1     | GG3      |
-    And the following "group members" exists:
+    And the following "group members" exist:
       | user        | group |
       | student1    | G1    |
       | student2    | G2    |
       | student3    | G1    |
       | student3    | G2    |
       | assistant1  | G1    |
-    And the following "grouping groups" exists:
+    And the following "grouping groups" exist:
       | grouping | group |
       | GG1      | G1    |
       | GG2      | G2    |
@@ -46,10 +46,8 @@ Feature: View structural changes in recent activity block
       | GG3      | G2    |
 
   Scenario: Check that Added module information is displayed respecting view capability
-    Given I log in as "admin"
-    And I set the following administration settings values:
-      | Enable group members only | 1 |
-    And I log out
+    Given the following config values are set as admin:
+      | enableavailability | 1 |
     And I log in as "teacher1"
     And I follow "Course 1"
     And I turn editing mode on
@@ -70,29 +68,29 @@ Feature: View structural changes in recent activity block
       | Description | No description |
       | groupmode   | No groups      |
     And I add a "Forum" to section "2" and I fill the form with:
-      | name                             | ForumVisibleGroupsG1 |
-      | Description                      | No description       |
-      | groupmode                        | Visible groups       |
-      | Grouping                         | Grouping 1           |
-      | Available for group members only | 1                    |
+      | name                | ForumVisibleGroupsG1 |
+      | Description         | No description       |
+      | groupmode           | Visible groups       |
+      | Grouping            | Grouping 1           |
+      | Access restrictions | Grouping: Grouping 1 |
     And I add a "Forum" to section "2" and I fill the form with:
-      | name                             | ForumSeparateGroupsG1 |
-      | Description                      | No description        |
-      | groupmode                        | Separate groups       |
-      | Grouping                         | Grouping 1            |
-      | Available for group members only | 1                     |
+      | name                | ForumSeparateGroupsG1 |
+      | Description         | No description        |
+      | groupmode           | Separate groups       |
+      | Grouping            | Grouping 1            |
+      | Access restrictions | Grouping: Grouping 1  |
     And I add a "Forum" to section "3" and I fill the form with:
-      | name                             | ForumVisibleGroupsG2 |
-      | Description                      | No description       |
-      | groupmode                        | Visible groups       |
-      | Grouping                         | Grouping 2           |
-      | Available for group members only | 1                    |
+      | name                | ForumVisibleGroupsG2 |
+      | Description         | No description       |
+      | groupmode           | Visible groups       |
+      | Grouping            | Grouping 2           |
+      | Access restrictions | Grouping: Grouping 2 |
     And I add a "Forum" to section "3" and I fill the form with:
-      | name                             | ForumSeparateGroupsG2 |
-      | Description                      | No description        |
-      | groupmode                        | Separate groups       |
-      | Grouping                         | Grouping 2            |
-      | Available for group members only | 1                     |
+      | name                | ForumSeparateGroupsG2 |
+      | Description         | No description        |
+      | groupmode           | Separate groups       |
+      | Grouping            | Grouping 2            |
+      | Access restrictions | Grouping: Grouping 2  |
     Then I should see "ForumVisibleGroups" in the "Recent activity" "block"
     And I should see "ForumSeparateGroups" in the "Recent activity" "block"
     And I should see "ForumNoGroups" in the "Recent activity" "block"
@@ -165,7 +163,7 @@ Feature: View structural changes in recent activity block
     And I follow "Course 1"
     And I follow "ForumNew"
     And I click on "Edit settings" "link" in the "Administration" "block"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | name | ForumUpdated |
     And I press "Save and return to course"
     And I log out

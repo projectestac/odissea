@@ -44,7 +44,7 @@
 
             // $fontsize don't affects to formula's size. $density can change size
             $doc =  "\\documentclass[{$fontsize}pt]{article}\n";
-            $doc .=  $CFG->filter_tex_latexpreamble;
+            $doc .= get_config('filter_tex', 'latexpreamble');
             $doc .= "\\pagestyle{empty}\n";
             $doc .= "\\begin{document}\n";
 //dlnsk            $doc .= "$ {$formula} $\n";
@@ -78,7 +78,7 @@
         /**
          * Render TeX string into gif/png
          * @param string $formula TeX formula
-         * @param string $filename base of filename for output (no extension)
+         * @param string $filename filename for output (including extension)
          * @param int $fontsize font size
          * @param int $density density value for .ps to .gif/.png conversion
          * @param string $background background color (e.g, #FFFFFF).
@@ -90,17 +90,24 @@
             global $CFG;
 
             // quick check - will this work?
-            if (empty($CFG->filter_tex_pathlatex)) {
+            $pathlatex = get_config('filter_tex', 'pathlatex');
+            if (empty($pathlatex)) {
                 return false;
             }
+            $pathlatex = escapeshellarg(trim($pathlatex, " '\""));
 
             $doc = $this->construct_latex_document( $formula, $fontsize );
 
             // construct some file paths
+            $convertformat = get_config('filter_tex', 'convertformat');
+            if (!strpos($filename, ".{$convertformat}")) {
+                $convertformat = 'png';
+            }
+            $filename = str_replace(".{$convertformat}", '', $filename);
             $tex = "{$this->temp_dir}/$filename.tex";
             $dvi = "{$this->temp_dir}/$filename.dvi";
             $ps  = "{$this->temp_dir}/$filename.ps";
-            $img = "{$this->temp_dir}/$filename.{$CFG->filter_tex_convertformat}";
+            $img = "{$this->temp_dir}/$filename.{$convertformat}";
 
             // turn the latex doc into a .tex file in the temp area
             $fh = fopen( $tex, 'w' );
@@ -108,7 +115,6 @@
             fclose( $fh );
 
             // run latex on document
-            $pathlatex = escapeshellarg(trim($CFG->filter_tex_pathlatex, " '\""));
             $command = "$pathlatex --interaction=nonstopmode --halt-on-error $tex";
             chdir( $this->temp_dir );
             if ($this->execute($command, $log)) { // It allways False on Windows
@@ -116,20 +122,25 @@
             }
 
             // run dvips (.dvi to .ps)
-            $pathdvips = escapeshellarg(trim($CFG->filter_tex_pathdvips, " '\""));
+            $pathdvips = escapeshellarg(trim(get_config('filter_tex', 'pathdvips'), " '\""));
             $command = "$pathdvips -E $dvi -o $ps";
             if ($this->execute($command, $log )) {
                 return false;
             }
 
-            // run convert on document (.ps to .gif/.png)
+            // Run convert on document (.ps to .gif/.png) or run dvisvgm (.ps to .svg).
             if ($background) {
                 $bg_opt = "-transparent \"$background\""; // Makes transparent background
             } else {
                 $bg_opt = "";
             }
-            $pathconvert = escapeshellarg(trim($CFG->filter_tex_pathconvert, " '\""));
-            $command = "$pathconvert -density $density -trim $bg_opt $ps $img";
+            if ($convertformat == 'svg') {
+                $pathdvisvgm = escapeshellarg(trim(get_config('filter_tex', 'pathdvisvgm'), " '\""));
+                $command = "$pathdvisvgm -E $ps -o $img";
+            } else {
+                $pathconvert = escapeshellarg(trim(get_config('filter_tex', 'pathconvert'), " '\""));
+                $command = "$pathconvert -density $density -trim $bg_opt $ps $img";
+            }
             if ($this->execute($command, $log )) {
                 return false;
             }
@@ -148,7 +159,8 @@
             unlink( "{$this->temp_dir}/$filename.tex" );
             unlink( "{$this->temp_dir}/$filename.dvi" );
             unlink( "{$this->temp_dir}/$filename.ps" );
-            unlink( "{$this->temp_dir}/$filename.{$CFG->filter_tex_convertformat}" );
+            $convertformat = get_config('filter_tex', 'convertformat');
+            unlink( "{$this->temp_dir}/$filename.{$convertformat}" );
             unlink( "{$this->temp_dir}/$filename.aux" );
             unlink( "{$this->temp_dir}/$filename.log" );
             return;

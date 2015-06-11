@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'Ebaluatzailearen deskribapena ezin da hut
 $string['err_nomaxscore'] = 'Irizpidearen gehienezko kalifikazioa ezin da hutsik egon';
 $string['err_noshortname'] = 'Irizpidearen izena ezin da hutsik egon';
 $string['err_scoreinvalid'] = '{$a->criterianame}-ri emandako puntuazioa ez da egokia, gehienezko puntuazioa hau da: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'Irizpidearen izenak gehienez 256 karaktere izan ditzake';
 $string['gradingof'] = '{$a} kalifikatzen';
 $string['guidemappingexplained'] = 'KONTUZ: zure kalifikazio-gidak <b>{$a->maxscore} puntuko</b> gehieneko kalifikazioa du, baina zure jardueraren gehieneko kalifikazioa {$a->modulegrade} da. Kalifikazio-gidaren gehieneko kalifikazioa moduluaren gehieneko kalifikaziora eskalatuko da. <br />
    Erdiko puntuazioak era berean eraldatuko dira, eta erabilgarria den gertukoen baliora biribilduko dira.';

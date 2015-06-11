@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_behat', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['allavailablesteps'] = '모든 사용 가능한 단계 정의';
 $string['giveninfo'] = '주어짐. 환경을 설정하기 위한 프로세스';
 $string['infoheading'] = '정보';
-$string['moreinfoin'] = '{$a}에 상세 정보';
 $string['pluginname'] = '허용 테스트';
 $string['stepsdefinitionscomponent'] = '영역';
 $string['stepsdefinitionscontains'] = '포함';

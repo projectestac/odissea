@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,8 @@ $string['downloadgrades'] = 'Download beoordelingswerkblad';
 $string['enabled'] = 'Off-line beoordelingswerkblad';
 $string['enabled_help'] = 'Indien ingeschakeld zal de leraar een werkblad kunnen downloaden en terug uploaden met cijfers bij het beoordelen van opdrachten.';
 $string['feedbackupdate'] = 'Zet veld "{$a->field}" voor "{$a->student}" op "{$a->text}"';
-$string['gradelockedingradebook'] = 'Dit cijfer is geblokkeerd in het puntenboek voor {$a}';
-$string['graderecentlymodified'] = 'Het cijfer is in het Moodle puntenboek is recenter dan het cijfer op het beoordelingswerkblad voor {$a}';
+$string['gradelockedingradebook'] = 'Dit cijfer is geblokkeerd in de cijferlijst voor {$a}';
+$string['graderecentlymodified'] = 'Het cijfer is in de Moodle-cijferlijst is recenter dan het cijfer op het beoordelingswerkblad voor {$a}';
 $string['gradesfile'] = 'Beoordelingswerkblad (csv-opmaak)';
 $string['gradesfile_help'] = 'Beoordelingswerkblad met aangepaste cijfers. Dit bestand moet een csv-bestand zijn dat gedownload is via deze opdracht en moet kolommen voor het cijfer van de leerlinge en identificatie bevatten. De encoding van het bestand moet UTF-8 zijn.';
 $string['gradeupdate'] = 'Zet het cijfer voor {$a->student} op {$a->grade}';

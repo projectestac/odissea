@@ -635,10 +635,16 @@ function get_docs_url($path = null) {
         // that will ensure people end up at the latest version of the docs.
         $branch = '.';
     }
-    if (!empty($CFG->docroot)) {
-        return $CFG->docroot . '/' . $branch . '/' . current_language() . '/' . $path;
+    if (empty($CFG->doclang)) {
+        $lang = current_language();
     } else {
-        return 'http://docs.moodle.org/'. $branch . '/' . current_language() . '/' . $path;
+        $lang = $CFG->doclang;
+    }
+    $end = '/' . $branch . '/' . $lang . '/' . $path;
+    if (empty($CFG->docroot)) {
+        return 'http://docs.moodle.org'. $end;
+    } else {
+        return $CFG->docroot . $end ;
     }
 }
 
@@ -710,14 +716,8 @@ function ini_get_bool($ini_get_arg) {
 function setup_validate_php_configuration() {
    // this must be very fast - no slow checks here!!!
 
-   if (ini_get_bool('register_globals')) {
-       print_error('globalswarning', 'admin');
-   }
    if (ini_get_bool('session.auto_start')) {
        print_error('sessionautostartwarning', 'admin');
-   }
-   if (ini_get_bool('magic_quotes_runtime')) {
-       print_error('fatalmagicquotesruntime', 'admin');
    }
 }
 
@@ -842,6 +842,8 @@ function initialise_fullme() {
             throw new coding_exception('Must use https address in wwwroot when ssl proxy enabled!');
         }
         $rurl['scheme'] = 'https'; // make moodle believe it runs on https, squid or something else it doing it
+        $_SERVER['HTTPS'] = 'on'; // Override $_SERVER to help external libraries with their HTTPS detection.
+        $_SERVER['SERVER_PORT'] = 443; // Assume default ssl port for the proxy.
     }
 
     // hopefully this will stop all those "clever" admins trying to set up moodle
@@ -1041,11 +1043,6 @@ function workaround_max_input_vars() {
     foreach ($chunks as $chunk) {
         $values = array();
         parse_str($chunk, $values);
-
-        if (ini_get_bool('magic_quotes_gpc')) {
-            // Use the same logic as lib/setup.php to work around deprecated magic quotes.
-            $values = array_map('stripslashes_deep', $values);
-        }
 
         merge_query_params($_POST, $values);
         merge_query_params($_REQUEST, $values);
@@ -1314,7 +1311,7 @@ function disable_output_buffering() {
  */
 function redirect_if_major_upgrade_required() {
     global $CFG;
-    $lastmajordbchanges = 2013100400.02;
+    $lastmajordbchanges = 2014093001.00;
     if (empty($CFG->version) or (float)$CFG->version < $lastmajordbchanges or
             during_initial_install() or !empty($CFG->adminsetuppending)) {
         try {

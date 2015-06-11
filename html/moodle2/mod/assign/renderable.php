@@ -384,6 +384,9 @@ class assign_submission_status implements renderable {
     public $attemptreopenmethod = 'none';
     /** @var int maxattempts */
     public $maxattempts = -1;
+    /** @var string gradingstatus */
+    public $gradingstatus = '';
+
 
     /**
      * Constructor
@@ -415,6 +418,7 @@ class assign_submission_status implements renderable {
      * @param string $gradingcontrollerpreview
      * @param string $attemptreopenmethod - The method of reopening student attempts.
      * @param int $maxattempts - How many attempts can a student make?
+     * @param string $gradingstatus - The submission status (ie. Graded, Not Released etc).
      */
     public function __construct($allowsubmissionsfromdate,
                                 $alwaysshowdescription,
@@ -442,7 +446,8 @@ class assign_submission_status implements renderable {
                                 $blindmarking,
                                 $gradingcontrollerpreview,
                                 $attemptreopenmethod,
-                                $maxattempts) {
+                                $maxattempts,
+                                $gradingstatus) {
         $this->allowsubmissionsfromdate = $allowsubmissionsfromdate;
         $this->alwaysshowdescription = $alwaysshowdescription;
         $this->submission = $submission;
@@ -470,6 +475,7 @@ class assign_submission_status implements renderable {
         $this->gradingcontrollerpreview = $gradingcontrollerpreview;
         $this->attemptreopenmethod = $attemptreopenmethod;
         $this->maxattempts = $maxattempts;
+        $this->gradingstatus = $gradingstatus;
     }
 }
 
@@ -559,6 +565,8 @@ class assign_header implements renderable {
     public $subpage = '';
     /** @var string $preface optional preface (text to show before the heading) */
     public $preface = '';
+    /** @var string $postfix optional postfix (text to show after the intro) */
+    public $postfix = '';
 
     /**
      * Constructor
@@ -575,13 +583,35 @@ class assign_header implements renderable {
                                 $showintro,
                                 $coursemoduleid,
                                 $subpage='',
-                                $preface='') {
+                                $preface='',
+                                $postfix='') {
         $this->assign = $assign;
         $this->context = $context;
         $this->showintro = $showintro;
         $this->coursemoduleid = $coursemoduleid;
         $this->subpage = $subpage;
         $this->preface = $preface;
+        $this->postfix = $postfix;
+    }
+}
+
+/**
+ * Renderable header related to an individual subplugin
+ * @package   mod_assign
+ * @copyright 2014 Henning Bostelmann
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class assign_plugin_header implements renderable {
+    /** @var assign_plugin $plugin */
+    public $plugin = null;
+
+    /**
+     * Header for a single plugin
+     *
+     * @param assign_plugin $plugin
+     */
+    public function __construct(assign_plugin $plugin) {
+        $this->plugin = $plugin;
     }
 }
 

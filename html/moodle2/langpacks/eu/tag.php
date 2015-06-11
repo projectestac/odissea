@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = 'Ezabatuta - Ikastaro-etiketak';
 $string['description'] = 'Deskribapena';
 $string['edittag'] = 'Etiketa hau editatu';
 $string['entertags'] = 'Idatzi etiketak komaz banatuta';
-$string['errordeleting'] = 'Errorea {$a} id-a duen etiketa ezabatzean, mesedez jakinarazi zure guneko kudeatzaileari.';
 $string['errortagfrontpage'] = 'Guneko hasiera-orria etiketatzea ez dago gaituta';
 $string['errorupdatingrecord'] = 'Errorea etiketa-erregistroak eguneratzean';
+$string['eventtagadded'] = 'Etiketa elementuari gehitu zaio';
+$string['eventtagcreated'] = 'Etiketa sortu da';
+$string['eventtagdeleted'] = 'Etiketa ezabatu da';
+$string['eventtagflagged'] = 'Etiketa markatu da';
+$string['eventtagremoved'] = 'Etiketa ezabatu da elementutik';
+$string['eventtagunflagged'] = 'Etiketa ez-markatua';
+$string['eventtagupdated'] = 'Etiketa eguneratu da';
 $string['flag'] = 'Markatu';
 $string['flagasinappropriate'] = 'Ezegoki markatu';
 $string['helprelatedtags'] = 'Harremana duten etiketak komaz banatuta';

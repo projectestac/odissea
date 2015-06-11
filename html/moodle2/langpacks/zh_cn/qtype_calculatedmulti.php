@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'zh_cn', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'zh_cn', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_calculatedmulti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['answeroptions'] = '选择选项';
+$string['answeroptions_help'] = '建议选择公式... <strong>{= {X} + ..}</strong> ...';
 $string['pluginname'] = '计算题选项版';
 $string['pluginnameadding'] = '添加一道选项版计算题';
 $string['pluginnameediting'] = '编辑一道选项版计算题';

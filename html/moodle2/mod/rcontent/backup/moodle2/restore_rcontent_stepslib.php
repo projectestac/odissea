@@ -61,6 +61,14 @@ class restore_rcontent_activity_structure_step extends restore_activity_structur
         $data->unitid = $this->get_unit_id($data->unitcode);
         $data->activityid = $this->get_activity_id($data->activitycode, $data->unitid);
 
+        if (!isset($data->intro) && isset($data->summary)) {
+            $data->intro = $data->summary;
+            if ($CFG->texteditors !== 'textarea') {
+                $data->intro = text_to_html($data->intro, false, false, true);
+            }
+            $data->introformat = FORMAT_HTML;
+        }
+
         $data->course = $this->get_courseid();
 
         $data->timecreated = $this->apply_date_offset($data->timecreated);
@@ -109,8 +117,8 @@ class restore_rcontent_activity_structure_step extends restore_activity_structur
 
     protected function after_execute() {
         // Add scorm related files, no need to match by itemname (just internally handled context)
-        $this->add_related_files('mod_rcontent', 'summary', null);
-         
+        $this->add_related_files('mod_rcontent', 'intro', null);
+
     }
 
     private function get_level($levelcode, $name) {

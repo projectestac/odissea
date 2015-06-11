@@ -6,14 +6,14 @@ Feature: A teacher can set a time limit for a lesson
 
   @javascript
   Scenario: Accessing as student to a lesson with time limit
-    Given the following "users" exists:
+    Given the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@asd.com |
-      | student1 | Student | 1 | student1@asd.com |
-    And the following "courses" exists:
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+      | student1 | Student | 1 | student1@example.com |
+    And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
-    And the following "course enrolments" exists:
+    And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
@@ -22,11 +22,12 @@ Feature: A teacher can set a time limit for a lesson
     And I turn editing mode on
     And I add a "Lesson" to section "1" and I fill the form with:
       | Name | Test lesson |
+      | Description | Test lesson description |
       | timed | 1 |
       | maxtime | 1 |
     And I follow "Test lesson"
     And I follow "Add a content page"
-    And I fill the moodle form with:
+    And I set the following fields to these values:
       | Page title | Lesson page name |
       | Page contents | Single lesson page contents |
       | Description | Single button |

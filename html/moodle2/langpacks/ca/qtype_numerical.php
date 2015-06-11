@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_numerical', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,12 +39,12 @@ $string['editableunittext'] = 'la caixa d\'entrada de text';
 $string['errornomultiplier'] = 'Heu d\'especificar un multiplicador per a aquesta unitat.';
 $string['errorrepeatedunit'] = 'No podeu tenir dues unitats amb el mateix nom.';
 $string['geometric'] = 'Geomètric';
-$string['invalidnumber'] = 'Cal que entreu un nombre vàlid';
-$string['invalidnumbernounit'] = 'Cal que entreu un nombre vàlid. No inclogueu unitats en la resposta.';
-$string['invalidnumericanswer'] = 'Una de les respostes que heu entrat ha estat un nombre no vàlid.';
-$string['invalidnumerictolerance'] = 'Una de les toleràncies que heu entrat ha estat un nombre no vàlid.';
+$string['invalidnumber'] = 'Cal que introduïu un nombre vàlid.';
+$string['invalidnumbernounit'] = 'Cal que introduïu un nombre vàlid. No incloeu unitats en la resposta.';
+$string['invalidnumericanswer'] = 'Una de les respostes que heu introduït no és un nombre vàlid.';
+$string['invalidnumerictolerance'] = 'Una de les toleràncies que heu introduït no és un nombre vàlid.';
 $string['leftexample'] = 'ESQUERRA com a $1,00 o £1,00';
-$string['manynumerical'] = 'Les unitats són opcionals. Si entreu una unitat, s\'utilitza per convertir la resposta a la Unitat 1 abans de qualificar.';
+$string['manynumerical'] = 'Les unitats són opcionals. Si introduïu una unitat, s\'utilitza per convertir la resposta a la Unitat 1 abans de qualificar.';
 $string['multiplier'] = 'Multiplicador';
 $string['nominal'] = 'Nominal';
 $string['noneditableunittext'] = 'Text NO editable de la Unitat No.1';
@@ -61,8 +61,8 @@ Si afegiu la unitat kW amb un multiplicador de 0.001, això afegirà una respost
 Noteu que també es multiplica l\'error acceptat, per la qual cosa un error acceptat de 100W esdevindrà un error de 0.1kW.';
 $string['oneunitshown'] = 'La unitat 1 és mostrarà de forma automàtica a la vora de la caixa de respostes';
 $string['onlynumerical'] = 'No s\'utilitzen per a res les unitats. Només es qualificarà la RESPOSTA NUMÈRICA';
-$string['pleaseenterananswer'] = 'Si us plau entreu una resposta.';
-$string['pleaseenteranswerwithoutthousandssep'] = 'Si us plau entreu una resposta sense utilitzar el separador de milers ({$a}).';
+$string['pleaseenterananswer'] = 'Introduïu una resposta.';
+$string['pleaseenteranswerwithoutthousandssep'] = 'Introduïu una resposta sense utilitzar el separador de milers ({$a}).';
 $string['pluginname'] = 'Numèrica';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta numèrica';
 $string['pluginnameediting'] = 'S\'està editant una pregunta numèrica';
@@ -86,7 +86,7 @@ $string['unitmandatory_help'] = '* La resposta serà qualificada utilitzant la r
 
 * Es penalitzarà si el camp està buit.';
 $string['unitnotselected'] = 'Cal que seleccioneu una resposta';
-$string['unitonerequired'] = 'Cal que entreu al menys una resposta';
+$string['unitonerequired'] = 'Cal que introduïu almenys una unitat';
 $string['unitoptional'] = 'Pregunta opcional';
 $string['unitoptional_help'] = '* Si el camp no està buit, la resposta es qualificarà utilitzant aquesta resposta.
 
@@ -94,8 +94,8 @@ $string['unitoptional_help'] = '* Si el camp no està buit, la resposta es quali
 $string['unitpenalty'] = 'Penalització per resposta errònia';
 $string['unitpenalty_help'] = 'La penalització s\'aplica si
 
-* la resposta errònia s\'entra en una entrada, o
-* una resposta s\'entra en una caixa d\'entrada de valors numèrics';
+* el nom erroni de la unitat s\'introdueix en l\'entrada de la unitat, o
+* una unitat s\'introdueix en la caixa d\'entrada de valors numèrics';
 $string['unitposition'] = 'Posició de les unitats';
 $string['units'] = 'Unitats';
 $string['unitselect'] = 'un menú desplegable';

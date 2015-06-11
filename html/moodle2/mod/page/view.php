@@ -18,8 +18,7 @@
 /**
  * Page module version information
  *
- * @package    mod
- * @subpackage page
+ * @package mod_page
  * @copyright  2009 Petr Skoda (http://skodak.org)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -54,8 +53,7 @@ require_capability('mod/page:view', $context);
 // Trigger module viewed event.
 $event = \mod_page\event\course_module_viewed::create(array(
    'objectid' => $page->id,
-   'context' => $context,
-   'other' => array('content' => 'pageresourceview')
+   'context' => $context
 ));
 $event->add_record_snapshot('course_modules', $cm);
 $event->add_record_snapshot('course', $course);
@@ -81,7 +79,9 @@ if ($inpopup and $page->display == RESOURCELIB_DISPLAY_POPUP) {
     $PAGE->set_activity_record($page);
 }
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($page->name), 2);
+if (!isset($options['printheading']) || !empty($options['printheading'])) {
+    echo $OUTPUT->heading(format_string($page->name), 2);
+}
 
 if (!empty($options['printintro'])) {
     if (trim(strip_tags($page->intro))) {

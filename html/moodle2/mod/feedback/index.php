@@ -19,7 +19,7 @@
  *
  * @author Andreas Grabs
  * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @package feedback
+ * @package mod_feedback
  */
 
 require_once("../../config.php");
@@ -41,7 +41,8 @@ require_login($course);
 $PAGE->set_pagelayout('incourse');
 
 // Trigger instances list viewed event.
-$event = \mod_feedback\event\instances_list_viewed::create(array('context' => $context));
+$event = \mod_feedback\event\course_module_instance_list_viewed::create(array('context' => $context));
+$event->add_record_snapshot('course', $course);
 $event->trigger();
 
 /// Print the page header

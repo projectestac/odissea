@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Adicionar mais opções de resposta';
+$string['allowmultiple'] = 'Permitir mais do que uma opção a ser selecionada';
 $string['allowupdate'] = 'Permitir mudar a resposta';
 $string['answered'] = 'Respondido';
 $string['atleastoneoption'] = 'Tem de inserir pelo menos uma opção de resposta';
+$string['cannotsubmit'] = 'Desculpe, surgiu um problema ao submeter a sua escolha. Por favor, tente novamente.';
 $string['choice'] = 'Opção de resposta';
 $string['choice:addinstance'] = 'Adicionar nova sondagem';
 $string['choice:choose'] = 'Responder';
@@ -51,11 +53,9 @@ $string['description'] = 'Descrição';
 $string['displayhorizontal'] = 'Disposição horizontal';
 $string['displaymode'] = 'Modo de exibição para as opções';
 $string['displayvertical'] = 'Disposição vertical';
-$string['event_answer_created'] = 'Opção da Sondagem selecionada';
-$string['event_answer_updated'] = 'Opção da Sondagem atualizada';
-$string['event_choice_viewed'] = 'Sondagem visualizada';
-$string['event_instances_list_viewed'] = 'Lista de instâncias visualizada';
-$string['event_report_viewed'] = 'Relatório da Sondagem visualizado';
+$string['eventanswercreated'] = 'Opção selecionada';
+$string['eventanswerupdated'] = 'Opção atualizada';
+$string['eventreportviewed'] = 'Relatório da Sondagem visualizado';
 $string['expired'] = 'Esta atividade terminou em {$a} e já não está disponível';
 $string['full'] = 'Completa';
 $string['havetologin'] = 'Tem que estar autenticado antes de submeter a sua resposta';
@@ -77,6 +77,7 @@ A Sondagem pode ser utilizada:
 $string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Opções de resposta';
 $string['moveselectedusersto'] = 'Mover os utilizadores selecionados para...';
+$string['multiplenotallowederror'] = 'Múltiplas respostas não são permitidas nesta sondagem';
 $string['mustchooseone'] = 'Deve selecionar uma opção de resposta antes de gravar.';
 $string['noguestchoose'] = 'Lamentamos, mas os visitantes não podem responder à sondagem';
 $string['noresultsviewable'] = 'Os resultados da sondagem ainda não estão disponíveis.';

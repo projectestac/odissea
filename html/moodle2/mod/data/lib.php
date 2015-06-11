@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   mod-data
+ * @package   mod_data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -42,7 +42,7 @@ define('DATA_PRESET_CONTEXT', SYSCONTEXTID);
 // In Moodle >= 2, new roles may be introduced and used instead.
 
 /**
- * @package   mod-data
+ * @package   mod_data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -188,6 +188,18 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
         }
 
         $this->field->id = $DB->insert_record('data_fields',$this->field);
+
+        // Trigger an event for creating this field.
+        $event = \mod_data\event\field_created::create(array(
+            'objectid' => $this->field->id,
+            'context' => $this->context,
+            'other' => array(
+                'fieldname' => $this->field->name,
+                'dataid' => $this->data->id
+            )
+        ));
+        $event->trigger();
+
         return true;
     }
 
@@ -202,6 +214,18 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
         global $DB;
 
         $DB->update_record('data_fields', $this->field);
+
+        // Trigger an event for updating this field.
+        $event = \mod_data\event\field_updated::create(array(
+            'objectid' => $this->field->id,
+            'context' => $this->context,
+            'other' => array(
+                'fieldname' => $this->field->name,
+                'dataid' => $this->data->id
+            )
+        ));
+        $event->trigger();
+
         return true;
     }
 
@@ -215,9 +239,25 @@ class data_field_base {     // Base class for Database Field Types (see field/*/
         global $DB;
 
         if (!empty($this->field->id)) {
+            // Get the field before we delete it.
+            $field = $DB->get_record('data_fields', array('id' => $this->field->id));
+
             $this->delete_content();
             $DB->delete_records('data_fields', array('id'=>$this->field->id));
+
+            // Trigger an event for deleting this field.
+            $event = \mod_data\event\field_deleted::create(array(
+                'objectid' => $this->field->id,
+                'context' => $this->context,
+                'other' => array(
+                    'fieldname' => $this->field->name,
+                    'dataid' => $this->data->id
+                 )
+            ));
+            $event->add_record_snapshot('data_fields', $field);
+            $event->trigger();
         }
+
         return true;
     }
 
@@ -802,7 +842,19 @@ function data_add_record($data, $groupid=0){
     } else {
         $record->approved = 0;
     }
-    return $DB->insert_record('data_records', $record);
+    $record->id = $DB->insert_record('data_records', $record);
+
+    // Trigger an event for creating this record.
+    $event = \mod_data\event\record_created::create(array(
+        'objectid' => $record->id,
+        'context' => $context,
+        'other' => array(
+            'dataid' => $data->id
+        )
+    ));
+    $event->trigger();
+
+    return $record->id;
 }
 
 /**
@@ -1067,37 +1119,6 @@ function data_update_grades($data, $userid=0, $nullifnone=true) {
     } else {
         data_grade_item_update($data);
     }
-}
-
-/**
- * Update all grades in gradebook.
- *
- * @global object
- */
-function data_upgrade_grades() {
-    global $DB;
-
-    $sql = "SELECT COUNT('x')
-              FROM {data} d, {course_modules} cm, {modules} m
-             WHERE m.name='data' AND m.id=cm.module AND cm.instance=d.id";
-    $count = $DB->count_records_sql($sql);
-
-    $sql = "SELECT d.*, cm.idnumber AS cmidnumber, d.course AS courseid
-              FROM {data} d, {course_modules} cm, {modules} m
-             WHERE m.name='data' AND m.id=cm.module AND cm.instance=d.id";
-    $rs = $DB->get_recordset_sql($sql);
-    if ($rs->valid()) {
-        // too much debug output
-        $pbar = new progress_bar('dataupgradegrades', 500, true);
-        $i=0;
-        foreach ($rs as $data) {
-            $i++;
-            upgrade_set_timeout(60*5); // set up timeout, may also abort execution
-            data_update_grades($data, 0, false);
-            $pbar->update($i, $count, "Updating Database grades ($i/$count).");
-        }
-    }
-    $rs->close();
 }
 
 /**
@@ -1674,7 +1695,12 @@ function data_print_ratings($data, $record) {
 }
 
 /**
- * For Participantion Reports
+ * List the actions that correspond to a view of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = 'r' and edulevel = LEVEL_PARTICIPATING will
+ *       be considered as view action.
  *
  * @return array
  */
@@ -1683,6 +1709,13 @@ function data_get_view_actions() {
 }
 
 /**
+ * List the actions that correspond to a post of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = ('c' || 'u' || 'd') and edulevel = LEVEL_PARTICIPATING
+ *       will be considered as post action.
+ *
  * @return array
  */
 function data_get_post_actions() {
@@ -2534,6 +2567,9 @@ function data_reset_userdata($data) {
     $ratingdeloptions->component = 'mod_data';
     $ratingdeloptions->ratingarea = 'entry';
 
+    // Set the file storage - may need it to remove files later.
+    $fs = get_file_storage();
+
     // delete entries if requested
     if (!empty($data->reset_data)) {
         $DB->delete_records_select('comments', "itemid IN ($allrecordssql) AND commentarea='database_entry'", array($data->courseid));
@@ -2542,12 +2578,13 @@ function data_reset_userdata($data) {
 
         if ($datas = $DB->get_records_sql($alldatassql, array($data->courseid))) {
             foreach ($datas as $dataid=>$unused) {
-                fulldelete("$CFG->dataroot/$data->courseid/moddata/data/$dataid");
-
                 if (!$cm = get_coursemodule_from_instance('data', $dataid)) {
                     continue;
                 }
                 $datacontext = context_module::instance($cm->id);
+
+                // Delete any files that may exist.
+                $fs->delete_area_files($datacontext->id, 'mod_data', 'content');
 
                 $ratingdeloptions->contextid = $datacontext->id;
                 $rm->delete_ratings($ratingdeloptions);
@@ -2585,21 +2622,17 @@ function data_reset_userdata($data) {
                 $ratingdeloptions->itemid = $record->id;
                 $rm->delete_ratings($ratingdeloptions);
 
-                $DB->delete_records('comments', array('itemid'=>$record->id, 'commentarea'=>'database_entry'));
-                $DB->delete_records('data_content', array('recordid'=>$record->id));
-                $DB->delete_records('data_records', array('id'=>$record->id));
-                // HACK: this is ugly - the recordid should be before the fieldid!
-                if (!array_key_exists($record->dataid, $fields)) {
-                    if ($fs = $DB->get_records('data_fields', array('dataid'=>$record->dataid))) {
-                        $fields[$record->dataid] = array_keys($fs);
-                    } else {
-                        $fields[$record->dataid] = array();
+                // Delete any files that may exist.
+                if ($contents = $DB->get_records('data_content', array('recordid' => $record->id), '', 'id')) {
+                    foreach ($contents as $content) {
+                        $fs->delete_area_files($datacontext->id, 'mod_data', 'content', $content->id);
                     }
                 }
-                foreach($fields[$record->dataid] as $fieldid) {
-                    fulldelete("$CFG->dataroot/$data->courseid/moddata/data/$record->dataid/$fieldid/$record->id");
-                }
                 $notenrolled[$record->userid] = true;
+
+                $DB->delete_records('comments', array('itemid' => $record->id, 'commentarea' => 'database_entry'));
+                $DB->delete_records('data_content', array('recordid' => $record->id));
+                $DB->delete_records('data_records', array('id' => $record->id));
             }
         }
         $rs->close();
@@ -2660,7 +2693,6 @@ function data_supports($feature) {
     switch($feature) {
         case FEATURE_GROUPS:                  return true;
         case FEATURE_GROUPINGS:               return true;
-        case FEATURE_GROUPMEMBERSONLY:        return true;
         case FEATURE_MOD_INTRO:               return true;
         case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
         case FEATURE_GRADE_HAS_GRADE:         return true;
@@ -3688,13 +3720,23 @@ function data_delete_record($recordid, $data, $courseid, $cmid) {
                 $DB->delete_records('data_content', array('recordid'=>$deleterecord->id));
                 $DB->delete_records('data_records', array('id'=>$deleterecord->id));
 
-                add_to_log($courseid, 'data', 'record delete', "view.php?id=$cmid", $data->id, $cmid);
-
                 // Delete cached RSS feeds.
                 if (!empty($CFG->enablerssfeeds)) {
                     require_once($CFG->dirroot.'/mod/data/rsslib.php');
                     data_rss_delete_file($data);
                 }
+
+                // Trigger an event for deleting this record.
+                $event = \mod_data\event\record_deleted::create(array(
+                    'objectid' => $deleterecord->id,
+                    'context' => context_module::instance($cmid),
+                    'courseid' => $courseid,
+                    'other' => array(
+                        'dataid' => $deleterecord->dataid
+                    )
+                ));
+                $event->add_record_snapshot('data_records', $deleterecord);
+                $event->trigger();
 
                 return true;
             }

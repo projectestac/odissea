@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Weiteren Hinweis hinzufügen';
 $string['addcategory'] = 'Kategorie hinzufügen';
 $string['addmorechoiceblanks'] = 'Leerfelder für {no} weitere Auswahlmöglichkeit(en)';
 $string['adminreport'] = 'Bericht zu möglichen Problemen mit Ihrer Fragen-Datenbank';
+$string['advancedsearchoptions'] = 'Suchoptionen';
+$string['alltries'] = 'Alle Versuche';
 $string['answer'] = 'Antwort';
 $string['answers'] = 'Antworten';
 $string['answersaved'] = 'Antwort gespeichert';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'Fragekategorie konnte nicht aufgerufen werden';
 $string['cannotunhidequestion'] = 'Frage konnte nicht sichtbar gemacht werden';
 $string['cannotunzip'] = 'Datei konnte nicht entpackt werden.';
 $string['cannotwriteto'] = 'Die exportierten Fragen können nicht nach "{$a}" gespeichert werden';
+$string['categories'] = 'Kategorien';
 $string['category'] = 'Kategorie';
 $string['categorycurrent'] = 'Aktuelle Kategorie';
 $string['categorycurrentuse'] = 'Diese Kategorie benutzen';
@@ -114,8 +117,7 @@ $string['defaultmark'] = 'Erreichbare Punkte';
 $string['defaultmarkmustbepositive'] = 'Die Standardbewertung muß ein positiver Wert sein.';
 $string['deletecoursecategorywithquestions'] = 'In dieser Kurskategorie sind Fragen in der Testfragendatenbank hinterlegt. Wenn Sie nun fortfahren, werden diese gelöscht. Über die Testfragenverwaltung können diese  von Ihnen verschoben werden.';
 $string['deletequestioncheck'] = 'Sind Sie absolut sicher, die Sie \'{$a}\' löschen möchten?';
-$string['deletequestionscheck'] = '<p>Möchten Sie die folgenden Fragen wirklich löschen? </p>
-<p>{$a}</p>';
+$string['deletequestionscheck'] = 'Möchten Sie die folgenden Fragen wirklich löschen? <br /> <br />{$a}';
 $string['deletingbehaviour'] = 'Frageverhalten \'{$a}\' wird gelöscht';
 $string['deletingqtype'] = 'Fragetyp \'{$a}\' löschen';
 $string['didnotmatchanyanswer'] = '[Passt zu keiner Antwort]';
@@ -151,6 +153,7 @@ $string['errorduringregrade'] = 'Frage {$a->qid} konnte nicht neu bewertet werde
 $string['errorfilecannotbecopied'] = 'Fehler: Datei {$a} kann nicht kopiert werden.';
 $string['errorfilecannotbemoved'] = 'Fehler: Datei {$a} kann nicht verschoben werden.';
 $string['errorfileschanged'] = 'Fehler: Dateien, die in Fragen verwendet werden, haben sich seit der letzten Anzeige geändert. ';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Frage ({$a}) erscheint mehrfach im Test mit unterschiedlichen Gewichtungen. Dies wird bei der Erstellung der Statistik nicht unterstützt und kann zu unzuverlässigen Auswertungen führen.';
 $string['errormanualgradeoutofrange'] = 'Die Bewertung {$a->grade} für die Frage {$a->name} liegt nicht zwischen \'0\' und {$a->maxgrade}. Punkte und Kommentare wurde nicht gespeichert.';
 $string['errormovingquestions'] = 'Fehler beim Verschieben von Fragen mit Ids {$a}.';
 $string['errorpostprocess'] = 'Fehler beim Post-Processing';
@@ -160,6 +163,8 @@ $string['errorprocessingresponses'] = 'Während der Verarbeitung Ihrer Antworten
 $string['errorsavingcomment'] = 'Fehler beim Speichern des Kommentars für Frage {$a->name}.';
 $string['errorsavingflags'] = 'Fehler beim Speichern der Markierung';
 $string['errorupdatingattempt'] = 'Fehler beim Speichern des Kommentars zu Frage {$a->id} in der Datenbank.';
+$string['eventquestioncategorycreated'] = 'Fragenkategorie';
+$string['export'] = 'Export';
 $string['exportcategory'] = 'Kategorie exportieren';
 $string['exportcategory_help'] = '<h2>Export von Test-Kategorien</h2>
 
@@ -187,6 +192,7 @@ $string['filesareacourse'] = 'Dateibereich im Kurs';
 $string['filesareasite'] = 'Dateibereich der Website';
 $string['filestomove'] = 'Dateien nach {$a} kopieren / verschieben?';
 $string['fillincorrect'] = 'Richtige Lösung';
+$string['firsttry'] = 'Erster Versuch';
 $string['flagged'] = 'markiert';
 $string['flagthisquestion'] = 'Diese Frage markieren';
 $string['formquestionnotinids'] = 'Die angefragte Frage ist nicht in questionids vermerkt.';
@@ -209,6 +215,7 @@ Alternativ könnte nach der Beantwortung jeder einzelnen Frage eine sofortige  R
 
 Dies sind die am Häufigsten genutzten Frageverhalten.';
 $string['ignorebroken'] = 'Ungültige Links ignorieren';
+$string['import'] = 'Import';
 $string['importcategory'] = 'Importkategorien';
 $string['importcategory_help'] = '<h2>Import von Kategorien</h2>
 
@@ -242,6 +249,7 @@ $string['invalidgrade'] = 'Bewertungen passen nicht zu den Bewertungsoptionen - 
 $string['invalidpenalty'] = 'Ungültige Abzüge';
 $string['invalidwizardpage'] = 'Falsche oder keine Seite festgelegt!';
 $string['lastmodifiedby'] = 'Zuletzt verändert von';
+$string['lasttry'] = 'Letzter Versuch';
 $string['linkedfiledoesntexist'] = 'Verbundene Datei {$a} existiert nicht';
 $string['makechildof'] = 'Unterkategorie  von \'{$a}\' erzeugen';
 $string['makecopy'] = 'Kopieren';
@@ -392,6 +400,7 @@ $string['questioncatsfor'] = 'Fragenkategorien für \'{$a}\'';
 $string['questiondoesnotexist'] = 'Diese Frage gibt es nicht';
 $string['questionidmismatch'] = 'Frage-IDs können nicht zugeordnet werden';
 $string['questionname'] = 'Fragetitel';
+$string['questionnamecopy'] = '{$a} (Kopie)';
 $string['questionno'] = 'Frage {$a}';
 $string['questionpreviewdefaults'] = 'Standardeinstellungen für die Fragenvorschau';
 $string['questionpreviewdefaults_desc'] = 'Diese Standardeinstellungen werden verwendet, wenn jemand eine Frage aus der Fragensammlung erstmalig anzeigt. Sobald eine Frage angezeigt wurde, werden die persönlichen Einstellungen gespeichert.';
@@ -416,6 +425,7 @@ $string['rightanswer_help'] = 'Automatisch erzeugte Zusammenfassung der richtige
 
 Wenn Sie die richtige Lösung im Gesamtfeedback noch einmal erklären möchten, schalten Sie diese Option aus.';
 $string['save'] = 'Sichern';
+$string['savechangesandcontinueediting'] = 'Sichern und weiter bearbeiten';
 $string['saved'] = 'Gespeichert: {$a}';
 $string['saveflags'] = 'Den Status der Markierungen speichern';
 $string['selectacategory'] = 'Eine Kategorie wählen:';
@@ -464,12 +474,14 @@ $string['unknownquestioncatregory'] = 'Unbekannte Fragekategorie: {$a}';
 $string['unknownquestiontype'] = 'Unbekannter Fragetyp: {$a}';
 $string['unknowntolerance'] = 'Unbekannter Toleranztyp: {$a}';
 $string['unpublished'] = 'Nicht freigegeben';
+$string['unusedcategorydeleted'] = 'Nach dem Löschen des Kurses wurde auch diese Kategorie gelöscht, denn die Fragen wurden nirgendwo mehr eingesetzt.';
 $string['updatedisplayoptions'] = 'Anzeigeoptionen aktualisieren';
 $string['upgradeproblemcategoryloop'] = 'Bei der Aktualisierung der Fragenkategorien wurde ein Problem erkannt. Es wurde eine Schleife (Wiederholung) im Kategorien-Baum entdeckt. Es handelt sich hierbei um die Kategorie mit der ID {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Die Fragenkategorie {$a->name} ({$a->id}) konnte nicht aktualisiert werden.';
 $string['upgradeproblemunknowncategory'] = 'Bei der Aktualisierung der Fragenkategorien wurde ein Problem erkannt. Kategorie {$a->id} bezieht sich auf die Vorgänger-Kategorie, die nicht existiert. Die Vorgänger-Kategorie wurde geändert um das Problem zu beheben.';
 $string['whethercorrect'] = 'Ob richtig';
 $string['whethercorrect_help'] = 'Dies beinhaltet sowohl die textliche Beschreibung für \'Richtig\', \'Teilweise richtig\' und \'Falsch\' wie auch alle farbigen Hervorhebungen für die Informationen.';
+$string['whichtries'] = 'Welche Versuche';
 $string['withselected'] = 'Mit Auswahl';
 $string['wrongprefix'] = 'Falsch formatiertes Präfix-Wort';
 $string['xoutofmax'] = '{$a->mark} von {$a->max}';

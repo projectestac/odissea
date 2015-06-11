@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['browse'] = '閲覧';
 $string['cancel'] = 'キャンセル';
 $string['cellpadding'] = 'セルパッディング';
 $string['cellspacing'] = 'セルスペーシング';
-$string['choosechar'] = 'キャラクタを選択する';
+$string['choosechar'] = '文字を選択する';
 $string['chooseicon'] = '挿入するアイコンを選択する';
 $string['close'] = '閉じる';
 $string['closeafterreplace'] = '置換後に閉じる';
@@ -52,9 +52,9 @@ $string['configeditorplugins'] = 'あなたが使用したいテキストエデ�
 $string['copy'] = '選択したものをコピーする';
 $string['createanchor'] = 'アンカーを作成する';
 $string['createfolder'] = 'フォルダを作成する';
-$string['createlink'] = 'リンクを挿入する';
+$string['createlink'] = 'ウェブリンクを挿入する';
 $string['cut'] = '選択したものを切り取る';
-$string['cutpastemozilla'] = '大変残念ですが、現在通常のキーボードショートカット (ペーストボタンも) を使うことができません。これはMozillaおよびFirefoxブラウザのいくつかのバージョンに、セキュリティ機能が組み込まれたことが原因しています。<br /><br />これに関して3つの対処方法があります: <br /> (1) CTRL + v を使用する代わりに SHIFT + Insert を使用する。<br /> (2) ブラウザの 編集->貼り付け メニューを使う。<br /> (3) user.jsファイルを編集することにより、あなたのブラウザプリファレンスを変更する。<br /><br />下記のOKボタンを押して詳細情報を閲覧するか、キャンセルを押してエディタに戻ってください。';
+$string['cutpastemozilla'] = '大変残念ですが、現在通常のキーボードショートカット (ペーストボタンも) を使うことができません。これはMozillaおよびFirefoxブラウザのいくつかのバージョンにセキュリティ機能が組み込まれたことが原因しています。<br /><br />これに関して3つの対処方法があります: <br /> (1) CTRL + vを使用する代わりにSHIFT + Insertを使用する。<br /> (2) ブラウザの 編集->貼り付け メニューを使う。<br /> (3) user.jsファイルを編集することにより、あなたのブラウザプリファレンスを変更する。<br /><br />下記のOKボタンを押して詳細情報を閲覧するか、キャンセルを押してエディタに戻ってください。';
 $string['delete'] = '削除';
 $string['editors'] = 'テキストエディタ';
 $string['editorsettings'] = 'エディタ管理';
@@ -74,7 +74,7 @@ $string['horizontalrule'] = '水平線';
 $string['htmlmode'] = 'HTMLソースに切り替える';
 $string['imageurl'] = 'イメージURL';
 $string['indent'] = 'インデントを増やす';
-$string['insertchar'] = '特別文字を挿入する';
+$string['insertchar'] = '特殊文字を挿入する';
 $string['insertimage'] = 'イメージを挿入する';
 $string['insertlink'] = 'リンクを挿入する';
 $string['insertsmile'] = 'スマイリーを挿入する';
@@ -122,7 +122,7 @@ $string['preformatted'] = '整形済み';
 $string['preview'] = 'プレビュー';
 $string['properties'] = '属性';
 $string['redo'] = 'やり直す';
-$string['regularexpressions'] = '通常の表現を使う';
+$string['regularexpressions'] = '正規表現を使う';
 $string['removelink'] = 'リンクを削除する';
 $string['rename'] = 'リネーム';
 $string['replaceall'] = 'すべてを置換する';
@@ -141,7 +141,7 @@ $string['strikethrough'] = '打ち消し線';
 $string['subscript'] = '下付き文字';
 $string['superscript'] = '上付き文字';
 $string['textindicator'] = '現在のスタイル';
-$string['textmode'] = 'あなたは現在テキストモードを使用しています。WYSIWYGモードに戻るには、[<>]ボタンをクリックしてください。';
+$string['textmode'] = '現在、あなたはテキストモードを使用しています。WYSIWYGモードに戻るには、[<>]ボタンをクリックしてください。';
 $string['texttop'] = 'テキスト上揃え';
 $string['top'] = '上揃え';
 $string['type'] = 'タイプ';

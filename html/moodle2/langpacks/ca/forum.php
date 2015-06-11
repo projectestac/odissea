@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'forum', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,6 +110,7 @@ $string['confirmunsubscribe'] = 'Segur que voleu cancel·lar la vostra subscripc
 $string['couldnotadd'] = 'Un error desconegut ha impedit afegir el vostre missatge';
 $string['couldnotdeletereplies'] = 'No es pot suprimir perquè ja l\'han contestat altres persones';
 $string['couldnotupdate'] = 'Un error desconegut ha impedit actualitzar el vostre missatge';
+$string['crontask'] = 'Tasques de manteniment i missatgeria del fòrum';
 $string['delete'] = 'Suprimeix';
 $string['deleteddiscussion'] = 'El tema de debat s\'ha suprimit';
 $string['deletedpost'] = 'El missatge s\'ha suprimit';
@@ -124,6 +125,8 @@ $string['digestmailtime'] = 'Hora per a enviar el correu en format resum';
 $string['digestsentusers'] = 'S\'han enviat amb èxit els resums de correu de: {$a} usuaris.';
 $string['disallowsubscribe'] = 'No es permeten subscripcions';
 $string['disallowsubscribeteacher'] = 'No es permeten subscripcions (excepte al professorat)';
+$string['disallowsubscription'] = 'Subscripció';
+$string['disallowsubscription_help'] = 'La configuració del fòrum no permet subscriure-us a les discussions.';
 $string['discussion'] = 'Debat';
 $string['discussionmoved'] = 'Aquest debat s\'ha traslladat a \'{$a}\'.';
 $string['discussionmovedpost'] = 'Aquest debat s\'ha traslladat <a href="{$a->discusshref}">aquí</a> dins del fòrum <a href="{$a->forumhref}">{$a->forumname}</a>';
@@ -132,6 +135,8 @@ $string['discussions'] = 'Debats';
 $string['discussionsstartedby'] = 'Debats iniciats per {$a}';
 $string['discussionsstartedbyrecent'] = 'Debats iniciats recentment per {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Debats iniciats per {$a->fullname} en el curs {$a->coursename}';
+$string['discussionsubscription'] = 'Subcripció a les discussions';
+$string['discussionsubscription_help'] = 'Subscriure\'s a una discussió significa que rebreu notificacions quan s\'afegeixin nous missatges a aquella discussió.';
 $string['discussthistopic'] = 'Debateu aquest tema';
 $string['displayend'] = 'Fi de la visualització';
 $string['displayend_help'] = 'Aquest paràmetre especifica si un missatge del fòrum s\'ha d\'amagar a partir d\'una data determinada. Els administradors, però, sempre podran veure els missatges.';
@@ -167,7 +172,24 @@ $string['erroremptymessage'] = 'El missatge no pot estar buit';
 $string['erroremptysubject'] = 'La casella «Assumpte» no pot estar buida';
 $string['errorenrolmentrequired'] = 'Heu d\'estar inscrit/a en aquest curs per a poder accedir al contingut';
 $string['errorwhiledelete'] = 'S\'ha produït un error en esborrar el registre.';
-$string['event_assessable_uploaded'] = 'Algun contingut ha estat publicat.';
+$string['eventassessableuploaded'] = 'Algun contingut ha estat publicat.';
+$string['eventcoursesearched'] = 'Curs cercat';
+$string['eventdiscussioncreated'] = 'S\'ha creat el debat';
+$string['eventdiscussiondeleted'] = 'S\'ha suprimit el debat';
+$string['eventdiscussionmoved'] = 'S\'ha canviat de lloc el debat';
+$string['eventdiscussionsubscriptioncreated'] = 'S\'ha creat la subscripció a la discussió';
+$string['eventdiscussionsubscriptiondeleted'] = 'S\'ha esborrat la subscripció a la discussió';
+$string['eventdiscussionupdated'] = 'S\'ha actualitzat el debat';
+$string['eventdiscussionviewed'] = 'S\'ha mostrat el debat';
+$string['eventpostcreated'] = 'S\'ha creat el missatge';
+$string['eventpostdeleted'] = 'S\'ha suprimit el missatge';
+$string['eventpostupdated'] = 'S\'ha actualitzat el missatge';
+$string['eventreadtrackingdisabled'] = 'S\'ha deshabilitat el seguiment de lectures';
+$string['eventreadtrackingenabled'] = 'S\'ha habilitat el seguiment de lectures';
+$string['eventsubscribersviewed'] = 'S\'han mostrat el subscriptors';
+$string['eventsubscriptioncreated'] = 'S\'ha creat la subscripció';
+$string['eventsubscriptiondeleted'] = 'S\'ha suprimit la subscripció';
+$string['eventuserreportviewed'] = 'S\'ha mostrat l\'informe de l\'usuari';
 $string['everyonecanchoose'] = 'Cadascú pot triar subscriure\'s';
 $string['everyonecannowchoose'] = 'A partir d\'ara cadascú pot triar subscriure\'s';
 $string['everyoneisnowsubscribed'] = 'Ara tothom està subscrit a aquest fòrum';
@@ -176,7 +198,7 @@ $string['existingsubscribers'] = 'Subscriptors actuals';
 $string['exportdiscussion'] = 'Exporta el debat sencer';
 $string['forcedreadtracking'] = 'Habilita el seguiment de lectura forçat';
 $string['forcedreadtracking_desc'] = 'Si habiliteu configurar els fòrums per seguir la lectura forçada, disminuireu el rendiment per a alguns usuaris, sobre tot en cursos amb molts fòrums i missatges. Si no ho habiliteu, qualsevol fòrum configurat prèviament com a forçat es tractarà com opcional.';
-$string['forcessubscribe'] = 'Aquest fòrum subscriu obligatòriament a tothom';
+$string['forcesubscribed'] = 'Aquest fòrum subscriu obligatòriament a tothom';
 $string['forum'] = 'Fòrum';
 $string['forum:addinstance'] = 'Afegeix un fòrum nou';
 $string['forum:addnews'] = 'Afegir notícies';
@@ -254,8 +276,8 @@ $string['maxattachmentsize'] = 'Mida màxima dels fitxers adjunts';
 $string['maxattachmentsize_help'] = 'Aquest paràmetre especifica la mida màxima que pot tenir el fitxer que s\'adjunta a un missatge del fòrum';
 $string['maxtimehaspassed'] = 'Ha passat el temps màxim per editar aquest missatge! ({$a})';
 $string['message'] = 'Missatge';
-$string['messageprovider:digests'] = 'Resum dels missatges enviats al fòrum als que s\'està subscrit';
-$string['messageprovider:posts'] = 'Missatges del fòrum als que s\'està subscrit';
+$string['messageprovider:digests'] = 'Resums dels fòrums als quals esteu subscrit/a';
+$string['messageprovider:posts'] = 'Missatges dels fòrums als quals esteu subscrit/a';
 $string['missingsearchterms'] = 'Els termes de cerca següents només apareixen en les etiquetes HTML del missatge:';
 $string['modeflatnewestfirst'] = 'Visualitza les respostes, començant per la més recent';
 $string['modeflatoldestfirst'] = 'Visualitza les respostes, començant per la més antiga';
@@ -324,9 +346,6 @@ $string['numposts'] = '{$a} missatges';
 $string['olderdiscussions'] = 'Debats anteriors';
 $string['oldertopics'] = 'Temes anteriors';
 $string['oldpostdays'] = 'Llegit després de tants dies';
-$string['openmode0'] = 'Ni debats ni respostes';
-$string['openmode1'] = 'Les respostes estan permeses però els debats no';
-$string['openmode2'] = 'Tant els debats com les respostes estan permesos';
 $string['overviewnumpostssince'] = '{$a} missatges des de la darrera entrada';
 $string['overviewnumunread'] = '{$a} no llegits en total';
 $string['page-mod-forum-discuss'] = 'Pàgina dels temes de debat del mòdul «fòrum»';
@@ -345,6 +364,7 @@ $string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat al lloc we
 
 Per respondre-hi cliqueu damunt d\'aquest enllaç:';
 $string['postmailnow'] = '<p>Aquest missatge s\'enviarà per correu, immediatament, a tots els subscriptors del fòrum.</p>';
+$string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Sobretot coneixements separats';
 $string['postrating2'] = 'Separats i connectats';
 $string['postrating3'] = 'Sobretot coneixements connectats';
@@ -368,6 +388,7 @@ $string['repliesmany'] = '{$a} respostes fins ara';
 $string['repliesone'] = '{$a} resposta fins ara';
 $string['reply'] = 'Contesta';
 $string['replyforum'] = 'Contesta al fòrum';
+$string['reply_handler_name'] = 'Respon als posts del fòrum';
 $string['replytouser'] = 'Utilitza l\'adreça de correu en la resposta';
 $string['resetdigests'] = 'Suprimeix totes les preferències de resum als fòrums de l\'usuari';
 $string['resetforums'] = 'Suprimeix els missatges de';
@@ -427,14 +448,14 @@ $string['subscriptiondisabled'] = 'No es permet la subscripció';
 $string['subscriptionforced'] = 'Subscripció obligatòria';
 $string['subscription_help'] = 'La subscripció a un fòrum significa que la persona rebrà còpies per correu electrònic dels missatges del fòrum. Normalment la gent pot triar si vol subscriure\'s a un fòrum o no. A vegades, la subscripció a un fòrum pot ser obligatòria, i tots els membres del curs rebran còpies dels missatges al seu correu electrònic.';
 $string['subscriptionmode'] = 'Mode de subscripció';
-$string['subscriptionmode_help'] = 'Quan un participant es subscriu a un fòrum significa que rebrà notificacions dels missatges del fòrum. Hi ha 4 modalitats de subscripció:
+$string['subscriptionmode_help'] = 'La subscripció a un fòrum significa que la persona rebrà còpies per correu electrònic dels missatges del fòrum.
+
+Hi ha 4 modalitats de subscripció:
 
 * Subscripció voluntària - Els participants poden triar si es subscriuen o no
 * Subscripció obligatòria - Tothom hi està subscrit i no pot esborrar-se\'n
-* Subscripció automàtica - D\'entrada, tothom hi està subscrit, però hi ha la possibilitat d\'esborrar-se\'n quan es vulgui
-* Subscripció inhabilitada - No s\'hi permeten les subscripcions.
-
-Nota: Els canvis en qualsevol mode de subscripció afectaran només als usuaris que s\'inscriguin en el futur i no als usuaris existents.';
+* Subscripció inicial - D\'entrada, tothom hi està subscrit, però hi ha la possibilitat d\'esborrar-se\'n quan es vulgui
+* Subscripció inhabilitada - No s\'hi permeten les subscripcions.';
 $string['subscriptionoptional'] = 'Subscripció voluntària';
 $string['subscriptions'] = 'Subscripcions';
 $string['thisforumisthrottled'] = 'Aquest fòrum té limitat el nombre de missatges que podeu enviar-hi en un període de temps determinat. Actualment el límit són {$a->blockafter} missatges en {$a->blockperiod}';

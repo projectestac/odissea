@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_media', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilityhint'] = '<p>Indicações de acessibilidade a conteúdo web (WCAG):<br/><ul><li><a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Alternativas de Texto</a></li></ul></p>';
 $string['browserepositories'] = 'Procurar repositórios...';
 $string['createmedia'] = 'Inserir media';
 $string['entername'] = 'Digitar nome';
 $string['enterurl'] = 'Digitar URL';
 $string['height'] = 'Altura';
-$string['media'] = 'Multimédia';
 $string['pluginname'] = 'Media';
 $string['width'] = 'Largura';

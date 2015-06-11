@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,8 +57,8 @@ $string['certaintyshort-1'] = 'Geen idee';
 $string['certaintyshort2'] = 'Z=2';
 $string['certaintyshort3'] = 'Z=3';
 $string['dontknow'] = 'Geen idee';
-$string['foransweredquestions'] = 'Enkel voor de {$a} beantwoorde vragen';
-$string['forentirequiz'] = 'Voor de hele test ({$a} vragen)';
+$string['foransweredquestions'] = 'Resultaten enkel voor de {$a} beantwoorde vragen';
+$string['forentirequiz'] = 'Resultaten voor de hele test ({$a} vragen)';
 $string['howcertainareyou'] = 'Zekerheid {$a->help}: {$a->choices}';
 $string['judgementok'] = 'OK';
 $string['judgementsummary'] = 'Antwoorden: {$a->responses}. Nauwkeurigheid: {$a->fraction}. (Optimaal bereik {$a->idealrangelow} tot {$a->idealrangehigh}). Je had {$a->judgement} met dit zekerheidsniveau.';
@@ -68,3 +68,4 @@ $string['pluginname'] = 'Uitgestelde feedback met CBM';
 $string['slightlyoverconfident'] = 'een beetje veel zelfvertrouwen';
 $string['slightlyunderconfident'] = 'een beetje weinig zelfvertrouwen';
 $string['underconfident'] = 'te weinig zelfvertrouwen';
+$string['weightx'] = 'Weging {$a}';

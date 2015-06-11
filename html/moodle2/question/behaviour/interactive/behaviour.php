@@ -39,7 +39,7 @@ defined('MOODLE_INTERNAL') || die();
  * @copyright  2009 The Open University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class qbehaviour_interactive extends question_behaviour_with_save {
+class qbehaviour_interactive extends question_behaviour_with_multiple_tries {
     /**
      * Special value used for {@link question_display_options::$readonly when
      * we are showing the try again button to the student during an attempt.
@@ -71,6 +71,10 @@ class qbehaviour_interactive extends question_behaviour_with_save {
         // We only need different behaviour in try again states.
         if (!$this->is_try_again_state()) {
             parent::adjust_display_options($options);
+            if ($this->qa->get_state() == question_state::$invalid &&
+                    $options->marks == question_display_options::MARK_AND_MAX) {
+                $options->marks = question_display_options::MAX_ONLY;
+            }
             return;
         }
 

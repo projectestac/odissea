@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tool_langimport', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,14 @@ $string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
 $string['langimport'] = 'Importação de pacote linguístico';
 $string['langimportdisabled'] = 'O recurso de importação de lingua foi desativado. Tem que atualizar o seu pacote linguístico manualmente no sistema de ficheiros. Não se esqueça de limpar as caches após fazê-lo.';
-$string['langpackinstalled'] = 'O pacote linguístico {$a} foi instalado com sucesso';
-$string['langpackremoved'] = 'O pacote linguístico foi desinstalado';
-$string['langpackupdateskipped'] = 'Atualização de {$a} packs linguisticos';
-$string['langpackuptodate'] = 'O pacote linguístico{$a} está atualizado';
+$string['langpackinstalled'] = 'O pacote linguístico \'{$a}\' foi instalado com sucesso';
+$string['langpackinstalledevent'] = 'Pacote linguístico instalado';
+$string['langpackremoved'] = 'O pacote linguístico \'{$a}\' foi desinstalado';
+$string['langpackremovedevent'] = 'Pacote linguístico desinstalado';
+$string['langpackupdated'] = 'O pacote linguístico \'{$a}\' foi atualizado com sucesso';
+$string['langpackupdatedevent'] = 'Pacote linguístico atualizado';
+$string['langpackupdateskipped'] = 'Atualização do pacote linguistico \'{$a}\' ignorada';
+$string['langpackuptodate'] = 'O pacote linguístico \'{$a}\' está atualizado';
 $string['langupdatecomplete'] = 'Atualização do pacote linguístico completa';
 $string['missingcfglangotherroot'] = 'Falta o valor de configuração $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta a lingua-mãe <em>{$a->parent}</em> em <em>{$a->lang}</em>.';

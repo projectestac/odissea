@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'questionnaire', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['alignment'] = 'Alignement des boutons radio';
 $string['alignment_help'] = 'Par défaut les boutons radio sont disposés et alignés verticalement. Si vous avez des items relativements courts ou nombreux vous pouvez préférer les disposer horizontalement.';
 $string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'Tout';
-$string['alreadyfilled'] = 'Vous avez déjà répondu à ce questionnaire{$a}. Merci.';
+$string['alreadyfilled'] = 'Vous avez déjà répondu à ce questionnaire {$a}. Merci.';
 $string['andaveragevalues'] = 'et moyenne des valeurs';
 $string['anonymous'] = 'Anonyme';
 $string['answerquestions'] = 'Répondre aux questions';
@@ -65,30 +65,31 @@ $string['chart:rose'] = 'Polaire';
 $string['chart:type'] = 'Type de graphique';
 $string['chart:type_help'] = 'Sélectionnez le type de graphique qui illustrera ce feedback';
 $string['chart:vprogress'] = 'Barre verticale (progression)';
-$string['checkallradiobuttons'] = 'Veuillez cocher un bouton radio sur <em>chaque</em> ligne!';
+$string['checkallradiobuttons'] = 'Veuillez cocher un bouton radio sur <em>chaque</em> ligne !';
 $string['checkboxes'] = 'Cases à cocher';
-$string['checkboxes_help'] = 'Entrez une option à cocher par ligne.';
+$string['checkboxes_help'] = 'Entrez une option par ligne, parmi lesquelles l\'utilisateur pourra choisir.';
 $string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
-$string['checkbreaksadded'] = 'De nouveaux sauts de page ont été automatiquement ajoutés aux positions:';
-$string['checkbreaksok'] = 'Tous les sauts de page nécessaires sont présents.';
-$string['checkbreaksremoved'] = 'Supprimé {$a} saut(s) de page inutiles.';
+$string['checkbreaksadded'] = 'Nouveau(x) saut(s) de page ajouté(s) en position(s) :';
+$string['checkbreaksok'] = 'Tous les sauts de page nécessaires sont présents !';
+$string['checkbreaksremoved'] = 'Supprimé {$a} saut(s) de page inutile(s).';
 $string['checknotstarted'] = 'Sélectionner les tentatives non commencées';
 $string['checkstarted'] = 'Sélectionner les tentatives commencées';
 $string['clicktoswitch'] = '(cliquez pour modifier)';
 $string['closed'] = 'Questionnaire fermé le {$a}. Merci.';
 $string['closedate'] = 'Date de fermeture';
-$string['closedate_help'] = 'Vous pouvez indiquer la date d\'ouverture et de fermeture d\'un questionnaire.
- Les étudiants ne peuvent répondre au questionnaire qu\'entre ces deux dates. En dehors de cette période, le questionnaire n\'est pas disponible.';
+$string['closedate_help'] = 'Vous pouvez indiquer la date de fermeture du questionnaire. Cochez la case, et spécifiez la date souhaitée.
+
+Les étudiants ne pourront pas répondre au questionnaire après cette date. Si la case n\'est pas cochée, le questionnaire ne sera jamais fermé.';
 $string['closeson'] = 'Ce questionnaire est disponible jusqu\'au {$a}';
 $string['completionsubmit'] = 'L\'étudiant doit soumettre ce questionnaire pour compléter l\'activité';
 $string['confalts'] = '- OU - <br />Page de confirmation';
 $string['configusergraph'] = 'Afficher les graphiques pour les « Tests de personnalité »';
 $string['configusergraphlong'] = 'Utiliser la bibliothèque <a href="http://www.rgraph.net/">Rgraph</a> pour afficher les graphiques illustrant le feedback des tests de personnalité.';
 $string['confirmdelallresp'] = 'Voulez-vous vraiment supprimer TOUTES les réponses à ce questionnaire&nbsp;?';
-$string['confirmdelchildren'] = 'Si vous supprimez cette question, ses questions "enfants" suivantes seront également supprimées:';
-$string['confirmdelgroupresp'] = 'Voulez-vous vraiment supprimer toutes les réponses de {$a}?';
-$string['confirmdelquestion'] = 'Êtes-vous certain de vouloir supprimer la question en position {$a}?';
-$string['confirmdelquestionresps'] = 'Cette action supprimera également la ou les  {$a} réponse(s) déjà donnée(s) à cette question.';
+$string['confirmdelchildren'] = 'Si vous supprimez cette question, ses questions "enfants" suivantes seront également supprimées :';
+$string['confirmdelgroupresp'] = 'Voulez-vous vraiment supprimer toutes les réponses de {$a} ?';
+$string['confirmdelquestion'] = 'Êtes-vous certain de vouloir supprimer la question en position {$a} ?';
+$string['confirmdelquestionresps'] = 'Cette action supprimera également la ou les {$a} réponse(s) déjà donnée(s) à cette question.';
 $string['confirmdelresp'] = 'Voulez-vous vraiment supprimer les réponses de {$a}&nbsp;?';
 $string['confpage'] = 'Titre';
 $string['confpagedesc'] = 'Titre (en gras) et corps de texte pour la page de "Confirmation" affichée après qu\'un utilisateur a répondu au questionnaire. (Si vous donnez une adresse Web, elle sera affichée à la place du texte de confirmation).';
@@ -120,8 +121,7 @@ $string['downloadtextformat'] = 'Exporter en format texte';
 $string['downloadtextformat_help'] = 'Si vous avez besoin de traiter les réponses à un questionnaire en dehors de Moodle dans un logiciel comme Excel, le tableur Calc d\'Open Office ou un logiciel de statistiques, vous pouvez exporter les données en format texte.';
 $string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['dropdown'] = 'Liste déroulante';
-$string['dropdown_help'] = 'Il n\'y a aucun avantage à utiliser la question "liste déroulante" plutôt que la question "boutons radio"
-sauf peut-être lorsque la liste d\'options est relativement longue, pour économiser de l\'espace.';
+$string['dropdown_help'] = 'Il n\'y a aucun avantage à utiliser la question "liste déroulante" plutôt que la question "boutons radio", sauf peut-être lorsque la liste d\'options est relativement longue, pour économiser de l\'espace.';
 $string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = 'Modifier';
 $string['editingquestionnaire'] = 'Modification du questionnaire  - page Générale';
@@ -133,8 +133,19 @@ $string['errortable'] = 'Erreur système (table corrompue).';
 $string['essaybox'] = 'Texte long';
 $string['essaybox_help'] = 'Affiche une boîte de texte non formatable de x colonnes (Nb de colonnes du texte) et de y lignes (Nb de lignes du texte).
 
-Si vous laissez x et y à leur valeur par défaut de 0 (zéro), alors l\'éditeur HTML sera affiché
-avec sa hauteur et sa largeur par défaut s\'il est disponible dans le contexte du cours et du profil de l\'utilisateur courant.';
+Si vous laissez x et y à leur valeur par défaut de 0 (zéro), alors l\'éditeur HTML sera affiché avec sa hauteur et sa largeur par défaut s\'il est disponible dans le contexte du cours et du profil de l\'utilisateur courant.';
+$string['event_all_responses_deleted'] = 'Toutes les réponses supprimées';
+$string['event_all_responses_saved_as_text'] = 'Réponses téléchargées au format texte';
+$string['event_all_responses_viewed'] = 'Rapport de toutes les réponses consulté';
+$string['event_individual_responses_viewed'] = 'Rapport des réponses individuelles consulté';
+$string['event_non_respondents_viewed'] = 'Liste des utilisateurs n\'ayant pas répondu consultée';
+$string['event_previewed'] = 'Questionnaire prévisualisé';
+$string['event_question_created'] = 'Question créée';
+$string['event_question_deleted'] = 'Question supprimée';
+$string['event_response_deleted'] = 'Réponse individuelle supprimée';
+$string['event_resumed'] = 'Questionnaire poursuivi';
+$string['event_saved'] = 'Réponses sauvegardées';
+$string['event_submitted'] = 'Questionnaire soumis';
 $string['feedback'] = 'Feedback';
 $string['feedbackaddmorefeedbacks'] = 'Ajouter {no} champs de feedback';
 $string['feedbackbysection'] = 'Feedback de sections';
@@ -173,10 +184,10 @@ $string['feedbackscores'] = 'Afficher les scores';
 $string['feedbackscores_help'] = 'Affiche un tableau des scores obtenus';
 $string['feedbacksection'] = 'Section';
 $string['feedbacksectionheading'] = 'Titre de la section {$a}';
-$string['feedbacksectionheadingmissing'] = 'Vous devez entrer un titre pour cette section de feedback.';
+$string['feedbacksectionheadingmissing'] = 'Vous devez entrer un titre pour cette section de feedback !';
 $string['feedbacksectionheadingtext'] = 'Titre';
 $string['feedbacksectionlabel'] = 'Étiquette';
-$string['feedbacksectionlabel_help'] = 'Cette étiquette sera utilisée dans les graphiques. Veillez à rédiger une étiquette la plus courte possible!';
+$string['feedbacksectionlabel_help'] = 'Cette étiquette sera utilisée dans les graphiques. Veillez à rédiger une étiquette la plus courte possible !';
 $string['feedbacksections'] = '{$a} sections de feedback';
 $string['feedbacksectionsselect'] = 'Sections';
 $string['feedbacksectionsselect_help'] = 'Veuillez indiquer dans quelles sections vous souhaitez placer vos questions.';
@@ -184,8 +195,7 @@ $string['feedbacksettingssaved'] = 'Les paramètres de feedback ont bien été e
 $string['feedbacktype'] = 'Type de feedback';
 $string['field'] = 'Question {$a}';
 $string['fieldlength'] = 'Longueur de la boîte de texte';
-$string['fieldlength_help'] = 'Affiche une boîte de texte d\'une seule ligne de hauteur, d\'une longueur de x caractères et
-où la longueur maximale du texte saisi par le répondant est limitée à y caractères.
+$string['fieldlength_help'] = 'Affiche une boîte de texte d\'une seule ligne de hauteur, d\'une longueur de x caractères et où la longueur maximale du texte saisi par le répondant est limitée à y caractères.
 
 Valeurs par défaut : 20 caractères pour la longueur de la boîte [Longueur de la boîte de texte] et 25 caractères pour le texte effectivement saisi par le répondant [Longueur texte max.].';
 $string['finished'] = 'Vous avez répondu à toutes les questions de ce questionnaire !';
@@ -204,27 +214,26 @@ $string['incorrectmodule'] = 'L\'identificateur du module de cours était incorr
 $string['incorrectquestionnaire'] = 'Questionnaire incorrect';
 $string['invalidresponse'] = 'Réponse non valide.';
 $string['invalidresponserecord'] = 'Enregistrement de réponse non valide.';
-$string['invalidsurveyid'] = 'Identificateur de questionnaire non valide.';
+$string['invalidsurveyid'] = 'Identifiant de questionnaire non valide.';
 $string['kindofratescale'] = 'Type d\'échelle';
 $string['kindofratescale_help'] = 'Cliquez droit sur le lien "Plus d\'aide" ci-dessous';
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Dernier répondant';
 $string['length'] = 'Longueur';
 $string['managequestions'] = 'Gérer les questions';
-$string['managequestions_help'] = 'Dans la section "Gérer les questions" de la page "Éditer les questions" vous pouvez effectuer toutes les opérations utiles sur les questions déjà crées.';
+$string['managequestions_help'] = 'Dans la section "Gérer les questions" de la page "Éditer les questions" vous pouvez effectuer toutes les opérations utiles sur les questions déjà créées.';
 $string['maxdigitsallowed'] = 'Max. chiffres autorisés';
 $string['maxdigitsallowed_help'] = 'Utilisez Max. chiffres autorisés pour limiter le nombre de chiffres entrés pour une question de type numérique.
 
 Utilisez Nb de chiffres après la virgule pour forcer un certain nombre de chiffres après la virgule.';
 $string['maxforcedresponses'] = 'Max. cases à cocher';
-$string['maxtextlength'] = 'Longueur  texte max.';
+$string['maxtextlength'] = 'Longueur texte max.';
 $string['messageprovider:message'] = 'Rappel de réponse au questionnaire';
 $string['minforcedresponses'] = 'Min. cases à cocher';
 $string['minforcedresponses_help'] = 'Utilisez ces paramètres si vous voulez forcer les étudiants à cocher un minimum de **Min. cases à cocher** ou un maximum de **Max. cases à cocher**.
-Pour les forcer à cocher un nombre exact de cases, tapez la même valeur pour **Min.** et **Max**. Si vous voulez uniquement forcer un minimum ou un maximum de cases cochées,
-laissez l\'autre valeur à zéro. Ex. pour avoir un minimum de 2 cases cochées sur un total de 5, tapez **Min.** = 2 et laissez **Max.** à 0.
+Pour les forcer à cocher un nombre exact de cases, tapez la même valeur pour **Min.** et **Max**. Si vous voulez uniquement forcer un minimum ou un maximum de cases cochées, laissez l\'autre valeur à zéro. Ex. pour avoir un minimum de 2 cases cochées sur un total de 5, tapez **Min.** = 2 et laissez **Max.** à 0.
 Si vous avez saisi pour l\'un ou l\'autre de ces paramètres une valeur différente de 0, si l\'étudiant ne respecte pas le nombre mini ou maxi imposé, un message d\'erreur sera affiché.
-Evidemment, il vous appartient de préciser vos exigences dans le texte de la question!';
+Évidemment, il vous appartient de préciser vos exigences dans le texte de la question !';
 $string['misconfigured'] = 'Le cours est mal configuré.';
 $string['missingname'] = 'Vous ne pouvez pas utiliser la question {$a} dans cette section de feedback parce qu\'elle n\'a pas de nom.';
 $string['missingnameandrequired'] = 'Vous ne pouvez pas utiliser la question {$a} dans cette section de feedback parce qu\'elle n\'a pas de nom et qu\'elle n\'est pas obligatoire.';
@@ -248,19 +257,19 @@ $string['noanswer'] = 'Sans réponse';
 $string['noattempts'] = 'Ce questionnaire ne contient encore aucune réponse.';
 $string['nodata'] = 'Aucune donnée n\'a été envoyée.';
 $string['noduplicates'] = 'Choix uniques';
-$string['noduplicateschoiceserror'] = 'Vous devez entrer au moins 2 "réponses possibles" pour l\'option "Choix uniques"';
+$string['noduplicateschoiceserror'] = 'Vous devez entrer au moins 2 "réponses possibles" pour l\'option "Choix uniques" !';
 $string['noneinuse'] = 'Ce questionnaire ne contient aucune question.';
 $string['non_respondents'] = 'Inscrits au cours qui n\'ont pas encore soumis leurs réponses à ce questionnaire';
-$string['nopublicsurveys'] = 'Pas de questionnaires publics.';
-$string['noresponsedata'] = 'Il n\'y a pas de réponses pour cette question.';
-$string['noresponses'] = 'Pas de réponses';
+$string['nopublicsurveys'] = 'Pas de questionnaire public.';
+$string['noresponsedata'] = 'Il n\'y a pas de réponse pour cette question.';
+$string['noresponses'] = 'Pas de réponse';
 $string['normal'] = 'Normal';
 $string['notanumber'] = '<strong>{$a}</strong> n\'est pas un nombre.';
 $string['notapplicable'] = 'NSP';
 $string['notapplicablecolumn'] = 'Colonne NSP';
 $string['notavail'] = 'Ce questionnaire n\'est pas encore disponible. Réessayez plus tard.';
 $string['noteligible'] = 'Vous n\'êtes pas autorisé à répondre à ce questionnaire.';
-$string['notemplatesurveys'] = 'Pas de modèles de questionnaires.';
+$string['notemplatesurveys'] = 'Pas de modèle de questionnaire.';
 $string['notenoughscaleitems'] = 'Vous devez entrer au minimum 2 items sur cette échelle.';
 $string['notopen'] = 'Ce questionnaire ne sera pas disponible avant le {$a}.';
 $string['notrequired'] = 'Réponse facultative';
@@ -276,14 +285,14 @@ $string['numeric'] = 'Numérique';
 $string['numeric_help'] = 'Utilisez ce type de question si vous voulez que la réponse soit donnée sous forme d\'un nombre correctement formaté.';
 $string['of'] = 'de';
 $string['opendate'] = 'Date d\'ouverture';
-$string['opendate_help'] = 'Vous pouvez indiquer la date d\'ouverture et de fermeture d\'un questionnaire.
+$string['opendate_help'] = 'Vous pouvez indiquer la date d\'ouverture du questionnaire. Cochez la case, et spécifiez la date souhaitée.
 
-Les étudiants ne peuvent répondre au questionnaire qu\'entre ces deux dates. En dehors de cette période, le questionnaire n\'est pas disponible.';
+Les étudiants ne pourront pas répondre au questionnaire avant cette date. Si la case n\'est pas cochée, le questionnaire sera disponible immédiatement.';
 $string['option'] = 'option {$a}';
 $string['optionalname'] = 'Nom de la question';
 $string['optionalname_help'] = 'Le **nom de la question** est seulement utilisé lors de l\'exportation des données au format CSV/Excel.
 Si vous ne faites jamais d\'export de ce type, vous n\'avez pas besoin d\'entrer un nom de question.
- Pour plus de détails voir la documentation ci-dessous.';
+Pour plus de détails voir la documentation ci-dessous.';
 $string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
 $string['or'] = '- OU -';
 $string['order_ascending'] = 'Ordre ascendant';
@@ -302,7 +311,7 @@ Lorsque vous arrivez sur la page Toutes les réponses, par défaut toutes les r�
 $string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['osgood'] = 'Osgood';
 $string['other'] = 'Autre :';
-$string['otherempty'] = 'Si vous cochez ce choix vous devez taper du texte dans la case de texte!';
+$string['otherempty'] = 'Si vous cochez ce choix vous devez taper du texte dans la case de texte !';
 $string['overviewnumresplog'] = 'réponses';
 $string['overviewnumresplog1'] = 'réponse';
 $string['overviewnumrespvw'] = 'réponses';
@@ -330,7 +339,7 @@ $string['private'] = 'Privé';
 $string['public'] = 'Public';
 $string['publiccopy'] = 'Copie :';
 $string['publicoriginal'] = 'Original :';
-$string['qtype'] = 'Fréquence de participation';
+$string['qtype'] = 'Type';
 $string['qtypedaily'] = 'répondre tous les jours';
 $string['qtype_help'] = 'Ce paramètre vous permet de définir si les étudiants pourront répondre au questionnaire une seule fois, une fois par jour, par semaine, par mois ou un nombre illimité de fois.';
 $string['qtypemonthly'] = 'répondre tous les mois';
@@ -423,7 +432,7 @@ $string['savedprogress'] = 'Vos réponses ont été sauvegardées. Vous pouvez r
 $string['saveeditedquestion'] = 'Enregistrer la question {$a}';
 $string['savesettings'] = 'Enregistrer les paramètres';
 $string['section'] = 'Description';
-$string['sectionbreak'] = '----- Saut de page-----';
+$string['sectionbreak'] = '----- Saut de page -----';
 $string['sectionbreak_help'] = '----- Saut de page -----';
 $string['sectionsnotset'] = 'Vous devez sélectionner au moins UNE question par section<br />Sections non sélectionnées : {$a}.';
 $string['sectiontext'] = 'Description';
@@ -449,7 +458,7 @@ $string['submitpreviewcorrect'] = 'Cette soumission serait acceptée comme corre
 $string['submitsurvey'] = 'Envoyer le questionnaire';
 $string['submitted'] = 'Soumis le :';
 $string['subtitle'] = 'Sous-titre';
-$string['subtitle_help'] = 'Ce sous-titre (facultatif) n\'apparait que sur la 1ère page du questionnaire (si celui-ci comporte plusieurs pages).';
+$string['subtitle_help'] = 'Ce sous-titre (facultatif) n’apparaît que sur la 1ère page du questionnaire (si celui-ci comporte plusieurs pages).';
 $string['summary'] = 'Résumé';
 $string['surveynotexists'] = 'Le questionnaire n\'existe pas.';
 $string['surveyowner'] = 'Seuls les propriétaires de ce questionnaire sont autorisés à effectuer cette opération.';
@@ -487,15 +496,14 @@ $string['usetemplate'] = 'Copier un modèle de questionnaire';
 $string['vertical'] = 'Vertical';
 $string['view'] = 'Voir';
 $string['viewallresponses'] = 'Voir toutes les réponses';
-$string['viewallresponses_help'] = 'Si le questionnaire est paramétré pour **Type des groupes** : *Groupes visibles*, ou *Groupes séparés* et que l\'utilisateur actuel possède la capacité *Accéder à tous les groupes* (dans le contexte actuel) et que des groupes d\'utilisateurs ont été définis dans le cours actuel, alors l\'utilisateur a accès à une liste déroulante
-des groupes existants. Cette liste déroulante lui permet de "filtrer" les réponses au questionnaire par groupes.';
+$string['viewallresponses_help'] = 'Si le questionnaire est paramétré pour **Type des groupes** : *Groupes visibles*, ou *Groupes séparés* et que l\'utilisateur actuel possède la capacité *Accéder à tous les groupes* (dans le contexte actuel) et que des groupes d\'utilisateurs ont été définis dans le cours actuel, alors l\'utilisateur a accès à une liste déroulante des groupes existants. Cette liste déroulante lui permet de "filtrer" les réponses au questionnaire par groupes.';
 $string['viewallresponses_link'] = 'Voir_les_réponses#Filtrer_par_groupes';
 $string['viewbyresponse'] = 'Liste des réponses';
 $string['viewindividualresponse'] = 'Réponses individuelles';
 $string['viewindividualresponse_help'] = 'Cliquez sur les noms des répondants dans la liste ci-dessous pour voir leurs réponses individuelles.';
 $string['viewresponses'] = 'Toutes les réponses ({$a})';
 $string['viewyourresponses'] = 'Vos réponses : voir {$a}';
-$string['warning'] = 'ATTENTION ! erreur rencontrée.';
+$string['warning'] = 'ATTENTION ! Erreur rencontrée.';
 $string['wronganswers'] = 'Il y a une erreur dans vos réponses (voir ci-dessous)';
 $string['wrongdateformat'] = 'Le format de la date entrée <strong>{$a}</strong> ne correspond pas au format montré dans l\'exemple.';
 $string['wrongdaterange'] = 'ERREUR ! L\'année doit se situer entre 1902 et 2037.';

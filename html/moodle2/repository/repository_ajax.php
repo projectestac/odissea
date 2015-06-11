@@ -18,7 +18,7 @@
 /**
  * The Web service script that is called from the filepicker front end
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package    repository
  * @copyright  2009 Dongsheng Cai {@link http://dongsheng.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -89,7 +89,7 @@ if (!empty($course)) {
 $maxbytes = get_user_max_upload_file_size($context, $CFG->maxbytes, $coursemaxbytes, $maxbytes);
 
 // Wait as long as it takes for this script to finish
-set_time_limit(0);
+core_php_time_limit::raise();
 
 // These actions all occur on the currently active repository instance
 switch ($action) {

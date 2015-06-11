@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,6 @@ E\' possibile usare file per:
 * Includere nel corso piccoli siti web
 * Fornire bozze da usare con software client (ad esempio file Photoshop .psd) che gli studenti possono usare per preparare e consegnare i propri compiti';
 $string['modulenameplural'] = 'File';
-$string['neverseen'] = 'Mai visualizzata';
 $string['notmigrated'] = 'Spiacente, ma questo tipo di risorsa legacy ({$a}) non è stato ancora migrata.';
 $string['optionsheader'] = 'Opzioni di visualizzazione';
 $string['page-mod-resource-x'] = 'Qualsiasi pagina con modulo file';

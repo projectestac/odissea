@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_questioninstances', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   report_questioninstances
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['editquestionshere'] = '이 문맥의 질문 편집';
+$string['eventreportviewed'] = '보고서 봄';
 $string['getreport'] = '보고서 생성';
 $string['hiddenquestions'] = '비공개';
 $string['intro'] = '본 보고서는 특정 형식의 질문들이 속해 있는 모든 문맥을 보여 줍니다.';

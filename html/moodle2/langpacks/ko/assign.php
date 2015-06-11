@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assign', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['assignsubmission'] = '제출 플러그인';
 $string['assignsubmissionpluginname'] = '제출 플러그인';
 $string['assign:submit'] = '과제 제출';
 $string['assign:view'] = '과제 보기';
+$string['assign:viewgrades'] = '성적 보기';
 $string['attemptheading'] = '시도 {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = '이전 시도';
 $string['attemptnumber'] = '시도 수';
@@ -227,6 +228,7 @@ $string['selectuser'] = '{$a} 선택';
 $string['sendlatenotifications'] = '채점자에게 늦은 제출 통지하기';
 $string['sendnotifications'] = '채점자에게 제출 통지하기';
 $string['sendstudentnotifications'] = '학습자들에게 통지';
+$string['sendstudentnotificationsdefault'] = '학습자 통지 기본 설정';
 $string['sendsubmissionreceipts'] = '학생들에게 제출 확인증을 보냅니다.';
 $string['settings'] = '과제 설정';
 $string['showrecentsubmissions'] = '최근 제출물 보기';
@@ -235,6 +237,7 @@ $string['submission'] = '제출';
 $string['submissiondrafts'] = '학생들이 제출 버튼 클릭 필요';
 $string['submissioneditable'] = '학생들은 이 제출을 편집할 수 있습니다.';
 $string['submissionempty'] = '아무것도 제출되지 않았습니다.';
+$string['submissionlog'] = '학생: {$a->fullname}, 상태: {$a->status}';
 $string['submissionnotcopiedinvalidstatus'] = '제출물이 다시 열린 후에 편집되어 제출물이 복사되지 않았습니다.';
 $string['submissionnoteditable'] = '학생들은 이 제출을 편집할 수 없습니다.';
 $string['submissionnotready'] = '이 과제는 제출할  준비가 안되어 있습니다.';
@@ -268,6 +271,7 @@ $string['submissiontypes'] = '제출 유형';
 $string['submitaction'] = '제출';
 $string['submitassignment'] = '과제 제출';
 $string['submitassignment_help'] = '과제가 제출되면 더 이상 변경할 수 없습니다.';
+$string['submitforgrading'] = '채점을 위한 제출';
 $string['submitted'] = '제출 완료';
 $string['submittedearly'] = '과제가 {$a} 일찍 제출되었습니다.';
 $string['submittedlate'] = '과제가 {$a} 늦게 제출되었습니다.';
@@ -278,7 +282,6 @@ $string['subplugintype_assignsubmission'] = '제출 플러그인';
 $string['subplugintype_assignsubmission_plural'] = '제출 플러그인';
 $string['teamsubmission'] = '모둠에서 학생 제출';
 $string['teamsubmissiongroupingid'] = '학습 모둠들을 위한 모둠 무리';
-$string['teamsubmissionstatus'] = '모둠 제출 상태';
 $string['textinstructions'] = '과제 안내';
 $string['timemodified'] = '마지막 수정';
 $string['timeremaining'] = '남은 시간';

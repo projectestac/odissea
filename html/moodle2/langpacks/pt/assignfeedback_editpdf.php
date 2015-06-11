@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,7 @@ $string['generatefeedback'] = 'Gerar PDF de feedback';
 $string['generatingpdf'] = 'A gerar o PDF...';
 $string['gotopage'] = 'Ir para a página';
 $string['green'] = 'Verde';
-$string['gspath'] = 'Ghostscript path';
-$string['gspath_help'] = 'Na maioria das instalações Linux, isto pode ser deixado como \'/usr/bin/gs\'. Em Windows será algo como \'c:gsbingswin32c.exe\' (assegure-se que não existem espaços no caminho indicado - se necessário, copie os ficheiros \'gswin32c.exe\' e \'gsdll32.dll\' para uma nova pasta cujo caminho não contenha espaços).';
+$string['gsimage'] = 'Imagem de teste Ghostscript';
 $string['highlight'] = 'Destacar texto';
 $string['jsrequired'] = 'É necessário JavaScript para fazer anotações no PDF. Por favor, ative o JavaScript no seu navegador para esta funcionalidade.';
 $string['launcheditor'] = 'Abrir editor de PDF...';
@@ -66,6 +65,7 @@ $string['output'] = 'Resposta:';
 $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Página  {$a}';
 $string['pagexofy'] = 'Página {$a->page} de {$a->total}';
+$string['pathtogspathdesc'] = 'Note que a anotação de PDF requer que o caminho para Ghostscript seja definido em {$a}.';
 $string['pen'] = 'Caneta';
 $string['pluginname'] = 'Anotar PDF';
 $string['rectangle'] = 'Retângulo';
@@ -90,4 +90,3 @@ $string['unsavedchanges'] = 'Alterações não guardadas';
 $string['viewfeedbackonline'] = 'Ver o PDF anotado...';
 $string['white'] = 'Branco';
 $string['yellow'] = 'Amarelo';
-$string['zlibnotavailable'] = 'A extensão PHP "zlib"  não está disponível. A funcionalidade de anotar PDF depende desta extensão PHP e será desativada até que zlib seja instalado e ativado.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['cannotretrieveqcat'] = 'Αποτυχία εύρεσης της κατη
 $string['cannotunhidequestion'] = 'Αποτυχία επανεμφάνισης της ερώτησης.';
 $string['cannotunzip'] = 'Αποτυχία αποσυμπίεσης του αρχείου.';
 $string['cannotwriteto'] = 'Αποτυχία εγγραφής των εξαγώμενων ερωτήσεων στο {$a}';
+$string['categories'] = 'Κατηγορίες';
 $string['category'] = 'Κατηγορία';
 $string['categorycurrent'] = 'Τρέχουσα κατηγορία';
 $string['categorycurrentuse'] = 'Χρήση αυτής της κατηγορίας';
@@ -113,6 +114,7 @@ $string['errorduringregrade'] = 'Αποτυχία επαναβαθμολόγησ
 $string['errorfilecannotbecopied'] = 'Σφάλμα αποτυχία αντιγραφής του αρχείου {$a}.';
 $string['errorfilecannotbemoved'] = 'Σφάλμα αποτυχία μετακίνσης του αρχείου {$a}.';
 $string['errorfileschanged'] = 'Σφάλμα τα αρχεία με σύνδεση από ερωτήσεις αλλάξανε από τη στιγμή που εμφανίστηκε η φόρμα.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Η ερώτηση ({$a}) εμφανίζεται περισσότερες από μια φορές με διαφορετικά βάρη σε διαφορετικά σημεία του τεστ. Αυτό δεν υποστηρίζεται προς το παρόν από την αναφορά στατιστικών και μπορεί να κάνει τα στατιστικά για αυτή την ερώτηση αναξιόπιστα.';
 $string['errormanualgradeoutofrange'] = 'Ο βαθμός {$a->grade} δεν είναι μεταξύ 0 και {$a->maxgrade} για την ερώτηση {$a->name}. Το σκορ και το σχόλιο δεν έχουν αποθηκευθεί.';
 $string['errormovingquestions'] = 'Σφάλμα κατά την μετακίνηση ερωτήσεων με αναγνωριστικά {$a}.';
 $string['errorpostprocess'] = 'Σφάλμα κατά την μετά-επεξεργασία!';
@@ -121,6 +123,7 @@ $string['errorprocess'] = 'Σφάλμα κατά την επεξεργασία!'
 $string['errorprocessingresponses'] = 'Συνέβη ένα σφάλμα κατά την επεξεργασία των απαντήσεων σας.';
 $string['errorsavingcomment'] = 'Σφάλμα αποθήκευσης του σχόλιου για την ερώτηση {$a->name} στην βάση δεδομένων.';
 $string['errorupdatingattempt'] = 'Σφάλμα ενημέρωσης της απόπειραςt {$a->id} στην βάση δεδομένων.';
+$string['export'] = 'Εξαγωγή';
 $string['exportcategory'] = 'Εξαγωγή κατηγορίας';
 $string['exporterror'] = 'Σφάλματα συνέβησαν κατά την εξαγωγή!';
 $string['exportfilename'] = 'κουίζ';
@@ -156,6 +159,7 @@ $string['hintn'] = 'Βοήθεια (hint) {no}';
 $string['hinttext'] = 'Κείμενο βοήθειας (hint)';
 $string['howquestionsbehave'] = 'Πώς συμπεριφέρονται οι ερωτήσεις';
 $string['ignorebroken'] = 'Αγνόησε τους χαλασμένους συνδέσμους';
+$string['import'] = 'Εισαγωγή';
 $string['impossiblechar'] = 'Ο λάθος χαρακτήρας {$a} εντοπίστηκε σαν χαρακτήρας παρένθεσης';
 $string['includesubcategories'] = 'Εμφάνιση επίσης των ερωτήσεων από τις υπο-κατηγορίες';
 $string['incorrectfeedback'] = 'Για κάθε λανθασμένη απάντηση';
@@ -284,6 +288,7 @@ $string['unknown'] = 'Άγνωστο';
 $string['unknownquestiontype'] = 'Άγνωστος τύπος ερώτησης: {$a}.';
 $string['unknowntolerance'] = 'Άγνωστος τύπος ανοχής {$a}';
 $string['unpublished'] = 'κατάργηση διαμοιρασμού';
+$string['unusedcategorydeleted'] = 'Αυτή η κατηγορία έχει διαγραφεί γιατί, μετά τη διαγραφή του μαθήματος, οι ερωτήσεις της δεν χρησιμοποιούνται άλλο.';
 $string['upgradeproblemcategoryloop'] = 'Εντοπίστηκε πρόβλημα κατά την αναβάθμιση των κατηγοριών ερωτήσεων. Υπάρχει ένας βρόχος στο δέντρο των κατηγοριών. Τα επηρεαζόμενα αναγνωριστικά κατηγοριών είναι {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Αποτυχία ενημέρωσης της κατηγορίας ερώτησης {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Εντοπίστηκε πρόβλημα κατά την αναβάθμιση των κατηγοριών ερωτήσεων. Η κατηγορία {$a->id} αναφέρεται στον γονέα {$a->parent}, που δεν υπάρχει. Αλλάχθηκε ο γονέας για τη διόρθωση του προβλήματος.';

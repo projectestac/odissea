@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = '삭제됨 - 강좌 태그';
 $string['description'] = '설명';
 $string['edittag'] = '태그 편집';
 $string['entertags'] = '태그는 쉼표로 구분하여 입력';
-$string['errordeleting'] = 'id {$a} 태그 삭제 오류. 시스템 관리자에게 보고하기 바랍니다.';
 $string['errortagfrontpage'] = '사이트 주 페이지 태그는 허용되지 않습니다.';
 $string['errorupdatingrecord'] = '태그 기록 업데이트 오류';
+$string['eventtagadded'] = '태그가 항목에 추가됨';
+$string['eventtagcreated'] = '태그가 생성됨';
+$string['eventtagdeleted'] = '태그가 삭제됨';
+$string['eventtagflagged'] = '태그에 플래그 표시됨';
+$string['eventtagremoved'] = '항목에서 태그가 제거되었습니다.';
+$string['eventtagunflagged'] = '태그에 플래그가 제거되었습니다.';
+$string['eventtagupdated'] = '태그가 업데이트 되었습니다.';
 $string['flag'] = '표식';
 $string['flagasinappropriate'] = '부적절 표시';
 $string['helprelatedtags'] = '관련 태그를 컴마로 분리';

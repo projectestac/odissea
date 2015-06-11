@@ -3,6 +3,7 @@
 require_once("../../config.php");
 require_once("lib.php");
 require_once("$CFG->dirroot/course/lib.php");
+require_once("$CFG->dirroot/course/modlib.php");
 require_once('import_form.php');
 
 $id = required_param('id', PARAM_INT);    // Course Module ID
@@ -88,16 +89,15 @@ if ($xml = glossary_read_imported_file($result)) {
 
         if ( $xmlglossary['NAME'][0]['#'] ) {
             $glossary = new stdClass();
+            $glossary->modulename = 'glossary';
+            $glossary->module = $cm->module;
             $glossary->name = ($xmlglossary['NAME'][0]['#']);
-            $glossary->course = $course->id;
             $glossary->globalglossary = ($xmlglossary['GLOBALGLOSSARY'][0]['#']);
             $glossary->intro = ($xmlglossary['INTRO'][0]['#']);
             $glossary->introformat = isset($xmlglossary['INTROFORMAT'][0]['#']) ? $xmlglossary['INTROFORMAT'][0]['#'] : FORMAT_MOODLE;
             $glossary->showspecial = ($xmlglossary['SHOWSPECIAL'][0]['#']);
             $glossary->showalphabet = ($xmlglossary['SHOWALPHABET'][0]['#']);
             $glossary->showall = ($xmlglossary['SHOWALL'][0]['#']);
-            $glossary->timecreated = time();
-            $glossary->timemodified = time();
             $glossary->cmidnumber = null;
 
             // Setting the default values if no values were passed
@@ -132,52 +132,21 @@ if ($xml = glossary_read_imported_file($result)) {
                 $glossary->defaultapproval = $CFG->glossary_defaultapproval;
             }
 
-            // This field was not included in export, assume zero.
+            // These fields were not included in export, assume zero.
             $glossary->assessed = 0;
+            $glossary->availability = null;
+
+            // New glossary is to be inserted in section 0, it is always visible.
+            $glossary->section = 0;
+            $glossary->visible = 1;
 
             // Include new glossary and return the new ID
-            if ( !$glossary->id = glossary_add_instance($glossary) ) {
+            if ( !($glossary = add_moduleinfo($glossary, $course)) ) {
                 echo $OUTPUT->notification("Error while trying to create the new glossary.");
                 glossary_print_tabbed_table_end();
                 echo $OUTPUT->footer();
                 exit;
             } else {
-                //The instance has been created, so lets do course_modules
-                //and course_sections
-                $mod = new stdClass();
-                $mod->groupmode = $course->groupmode;  /// Default groupmode the same as course
-
-                $mod->instance = $glossary->id;
-                // course_modules and course_sections each contain a reference
-                // to each other, so we have to update one of them twice.
-
-                if (! $currmodule = $DB->get_record("modules", array("name"=>'glossary'))) {
-                    print_error('modulenotexist', 'debug', '', 'Glossary');
-                }
-                $mod->module = $currmodule->id;
-                $mod->course = $course->id;
-                $mod->modulename = 'glossary';
-                $mod->section = 0;
-
-                if (! $mod->coursemodule = add_course_module($mod) ) {
-                    print_error('cannotaddcoursemodule');
-                }
-
-                $sectionid = course_add_cm_to_section($course, $mod->coursemodule, 0);
-                //We get the section's visible field status
-                $visible = $DB->get_field("course_sections", "visible", array("id"=>$sectionid));
-
-                $DB->set_field("course_modules", "visible", $visible, array("id"=>$mod->coursemodule));
-
-                add_to_log($course->id, "course", "add mod",
-                           "../mod/$mod->modulename/view.php?id=$mod->coursemodule",
-                           "$mod->modulename $mod->instance");
-                add_to_log($course->id, $mod->modulename, "add",
-                           "view.php?id=$mod->coursemodule",
-                           "$mod->instance", $mod->coursemodule);
-
-                rebuild_course_cache($course->id);
-
                 echo $OUTPUT->box(get_string("newglossarycreated","glossary"),'generalbox boxaligncenter boxwidthnormal');
             }
         } else {
@@ -303,6 +272,10 @@ if ($xml = glossary_read_imported_file($result)) {
             }
         }
     }
+
+    // Reset caches.
+    \mod_glossary\local\concept_cache::reset_glossary($glossary);
+
     // processed entries
     echo $OUTPUT->box_start('glossarydisplay generalbox');
     echo '<table class="glossaryimportexport">';

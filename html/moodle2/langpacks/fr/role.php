@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,7 +106,7 @@ $string['category:viewhiddencategories'] = 'Voir les catégories cachées';
 $string['category:visibility'] = 'Voir les catégories de cours cachées';
 $string['checkglobalpermissions'] = 'Vérifier les permissions système';
 $string['checkpermissions'] = 'Voir les permissions';
-$string['checkpermissionsin'] = 'Voir les permissions dans {$a}';
+$string['checkpermissionsin'] = 'Voir les permissions de {$a}';
 $string['checksystempermissionsfor'] = 'Vérifier les permissions système de {$a->fullname}';
 $string['checkuserspermissionshere'] = 'Voir les permissions de {$a->fullname} dans ce {$a->contextlevel}';
 $string['chooseroletoassign'] = 'Veuillez choisir un rôle à attribuer';
@@ -150,6 +150,7 @@ $string['course:movesections'] = 'Déplacer les sections';
 $string['course:publish'] = 'Publier un cours vers un serveur d\'échanges';
 $string['course:request'] = 'Demander de nouveaux cours';
 $string['course:reset'] = 'Réinitialiser les cours';
+$string['course:reviewotherusers'] = 'Consulter les autres utilisateurs';
 $string['course:sectionvisibility'] = 'Contrôler la visibilité des sections';
 $string['course:setcurrentsection'] = 'Fixer la section actuelle';
 $string['course:update'] = 'Modifier les réglages des cours';
@@ -180,7 +181,7 @@ $string['deletelocalroles'] = 'Supprimer toutes les attributions de rôles local
 $string['deleterolesure'] = '<p>Voulez-vous vraiment supprimer le rôle « {$a->name} ({$a->shortname}) » ?</p><p>Ce rôle est actuellement attribué à {$a->count} utilisateurs.</p>';
 $string['deletexrole'] = 'Supprimer le rôle {$a}';
 $string['duplicaterole'] = 'Dupliquer le rôle';
-$string['duplicaterolesure'] = 'Voulez-vous vraiment dupliquer le rôle « {$a->name} ({$a->shortname}) » ?';
+$string['duplicaterolesure'] = '<p>Voulez-vous vraiment dupliquer le rôle « {$a->name} ({$a->shortname}) » ?</p>';
 $string['editingrolex'] = 'Modification du rôle « {$a} »';
 $string['editrole'] = 'Modifier rôle';
 $string['editxrole'] = 'Modifier le rôle {$a}';
@@ -360,6 +361,7 @@ $string['site:backup'] = 'Sauvegarder les cours';
 $string['site:config'] = 'Modifier la configuration du site';
 $string['site:doanything'] = 'Permettre de tout faire';
 $string['site:doclinks'] = 'Afficher les liens vers la documentation de Moodle';
+$string['site:forcelanguage'] = 'Passer outre la langue du cours';
 $string['site:import'] = 'Importer d\'autres cours dans un cours';
 $string['site:manageblocks'] = 'Gérer les blocs sur une page';
 $string['site:mnetloginfromremote'] = 'Se connecter depuis une application distante via MNet';
@@ -408,6 +410,7 @@ $string['user:update'] = 'Mettre à jour les profils des utilisateurs';
 $string['user:viewalldetails'] = 'Voir toutes les infos utilisateur';
 $string['user:viewdetails'] = 'Voir les profils des utilisateurs';
 $string['user:viewhiddendetails'] = 'Voir les informations cachées des utilisateurs';
+$string['user:viewlastip'] = 'Afficher la dernière adresse IP de l\'utilisateur';
 $string['user:viewuseractivitiesreport'] = 'Voir les rapports d\'activités des utilisateurs';
 $string['user:viewusergrades'] = 'Voir les notes des utilisateurs';
 $string['useshowadvancedtochange'] = 'Utiliser « Afficher éléments supplémentaires » pour effectuer des modifications';

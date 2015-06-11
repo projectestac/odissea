@@ -6,7 +6,7 @@ Feature: Course summary block used on the frontpage
 
   Background:
     Given I log in as "admin"
-    And I follow "Edit settings"
+    And I navigate to "Edit settings" node in "Front page settings"
     And I set the following fields to these values:
       | summary | Proved the summary block works! |
     And I press "Save changes"

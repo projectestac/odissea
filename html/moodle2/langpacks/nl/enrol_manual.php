@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,8 @@ $string['alterstatus'] = 'Wijzig status';
 $string['altertimeend'] = 'Wijzig eindtijd';
 $string['altertimestart'] = 'Wijzig starttijd';
 $string['assignrole'] = 'Rol toewijzen';
+$string['browsecohorts'] = 'Blader door site-groepen';
+$string['browseusers'] = 'Blader door gebruikers';
 $string['confirmbulkdeleteenrolment'] = 'Wil je echt deze gebruikersaanmeldingen verwijderen?';
 $string['defaultperiod'] = 'Standaard aanmeldingsduur';
 $string['defaultperiod_desc'] = 'Standaard tijdsduur waarvoor de aanmelding geldig is. Indien ingesteld op 0, dan wordt de aanmeldingsduur automatisch onbeperkt.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_list', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['allcourses'] = 'Администратору доступны все к
 $string['configadminview'] = 'Настроить доступ администратора';
 $string['confighideallcourseslink'] = 'Скрыть ссылку «Все курсы» в нижней части блока. (Администраторы смогут видеть ссылку, несмотря на значение этого параметра.)';
 $string['course_list:addinstance'] = 'Добавлять новый блок «Курса»';
-$string['course_list:myaddinstance'] = 'Добавлять новый блок курсов в Мой Moodle';
+$string['course_list:myaddinstance'] = 'Добавлять новый блок «Курсы» на домашнюю странцу';
 $string['hideallcourseslink'] = 'Скрыть ссылку «Все курсы»';
 $string['owncourses'] = 'Администратору доступны только его собственные курсы';
 $string['pluginname'] = 'Курсы';

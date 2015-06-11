@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'form', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['err_alphanumeric'] = 'Vous ne devez saisir que des chiffres ou des lett
 $string['err_email'] = 'Vous devez indiquer une adresse de courriel valable dans ce champ.';
 $string['err_lettersonly'] = 'Vous ne devez saisir que des lettres dans ce champ.';
 $string['err_maxfiles'] = 'Vous ne pouvez pas joindre ici plus de {$a} fichiers.';
-$string['err_maxlength'] = 'Vous ne pouvez pas taper plus de {$a->format} caractères dans ce champ.';
+$string['err_maxlength'] = 'Vous ne pouvez pas saisir plus de {$a->format} caractères dans ce champ.';
 $string['err_minlength'] = 'Vous devez taper au moins {$a->format} caractères dans ce champ.';
 $string['err_nonzero'] = 'Vous ne devez pas saisir de nombre commençant par 0 dans ce champ.';
 $string['err_nopunctuation'] = 'Vous ne devez saisir aucune ponctuation dans ce champ.';

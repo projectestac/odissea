@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,6 +47,7 @@ $string['coursepacket'] = 'حزمة المقرر الدراسي';
 $string['coursestruct'] = 'بناء المقرر الدراسي';
 $string['currentwindow'] = 'النافذة الحالية';
 $string['datadir'] = 'خطاء في ملف النظام: لا يمكن أنشاء دليل بيانات منهج دراسي';
+$string['deleteselected'] = 'حذف المحاولات المحددة';
 $string['details'] = 'تفاصيل متابعة اسكو';
 $string['directories'] = 'أعرض روابط الدليل';
 $string['display'] = 'أعرض الحزمة';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'role', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -226,7 +226,8 @@ $string['manageroles'] = 'Xestionar roles';
 $string['maybeassignedin'] = 'Tipos de contexto no pode asignarse este rol';
 $string['morethan'] = 'Máis de {$a}';
 $string['multipleroles'] = 'Roles múltiplos';
-$string['my:manageblocks'] = 'Xestionar bloques de páxina o meuMoodle';
+$string['my:configsyspages'] = 'Configura os modelos para as páxinas da área persoal';
+$string['my:manageblocks'] = 'Xestionar os bloques da páxina da área persoal';
 $string['neededroles'] = 'Roles con permiso';
 $string['nocapabilitiesincontext'] = 'Non hai permisos dispoñíbeis neste contexto';
 $string['noneinthisx'] = 'Ningún neste {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -109,7 +109,17 @@ $string['evaluation'] = 'Calcolo dei voti';
 $string['evaluationmethod'] = 'Metodo di calcolo dei voti';
 $string['evaluationmethod_help'] = 'Il metodo di calcolo della valutazione determina come verranno calcolati i voti. Puoi consentire il calcolo ripetuto dei voti finché non ottieni un risultato che ti soddisfi';
 $string['evaluationsettings'] = 'Impostazioni di calcolo dei voti';
-$string['event_assessable_uploaded'] = 'Caricata consegna';
+$string['eventassessableuploaded'] = 'Caricata consegna';
+$string['eventassessmentevaluated'] = 'Assegnati voti alla valutazione';
+$string['eventassessmentevaluationsreset'] = 'Reimpostati voti della valutazione';
+$string['eventassessmentreevaluated'] = 'Assegnati di nuovo voti alla valutazione';
+$string['eventphaseswitched'] = 'Cambiata fase';
+$string['eventsubmissionassessed'] = 'Valutata consegna';
+$string['eventsubmissionassessmentsreset'] = 'Eliminate valutazioni consegna';
+$string['eventsubmissioncreated'] = 'Creata consegna';
+$string['eventsubmissionreassessed'] = 'Valutata di nuovo consegna';
+$string['eventsubmissionupdated'] = 'Aggiornata consegna';
+$string['eventsubmissionviewed'] = 'Visualizzata consegna';
 $string['example'] = 'Consegna di esempio';
 $string['exampleadd'] = 'Aggiungi una consegna di esempio';
 $string['exampleassess'] = 'Valuta consegna di esempio';
@@ -318,7 +328,6 @@ $string['workshop:viewallassessments'] = 'Visualizzare qualsiasi valutazione';
 $string['workshop:viewallsubmissions'] = 'Visualizzare qualsiasi consegna';
 $string['workshop:viewauthornames'] = 'Visualizzare nomi degli autori';
 $string['workshop:viewauthorpublished'] = 'Visualizzare gli autori degli invii pubblicati';
-$string['workshopviewed'] = 'Workshop visualizzato';
 $string['workshop:viewpublishedsubmissions'] = 'Visualizzare consegne pubblicate';
 $string['workshop:viewreviewernames'] = 'Visualizzare nome del revisore';
 $string['yourassessment'] = 'La tua valutazione';

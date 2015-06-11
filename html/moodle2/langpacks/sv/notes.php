@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'notes', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewnote'] = 'Lägg till en ny anteckning';
 $string['addnewnoteselect'] = 'Välj vilka användare som Du vill skriva anteckningar om';
 $string['bynameondate'] = 'av {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Fel uppstod vid borttagning av inlägg';
+$string['cannotdeletepost'] = 'Det uppstod ett fel i sb m att ett inlägg skulle tas bort';
 $string['configenablenotes'] = 'Aktivera lagring av anteckningar om individuella användare';
 $string['content'] = 'Innehåll';
 $string['course'] = 'kurs';

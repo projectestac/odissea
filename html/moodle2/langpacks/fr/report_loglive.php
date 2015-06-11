@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_loglive', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Composant';
+$string['eventcontext'] = 'Contexte de l\'événement';
+$string['eventloggedas'] = '{$a->realusername} en tant que {$a->asusername}';
+$string['eventorigin'] = 'Origine';
+$string['eventrelatedfullnameuser'] = 'Utilisateur touché';
+$string['eventreportviewed'] = 'Historique en direct consulté';
 $string['livelogs'] = 'Actions effectuées durant l\'heure écoulée';
 $string['loglive:view'] = 'Consulter les historiques en direct';
-$string['page'] = 'Page {$a}';
+$string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
+$string['pause'] = 'Suspendre la mise à jour en direct';
 $string['pluginname'] = 'Historiques en direct';
+$string['resume'] = 'Reprendre la mise à jour en direct';
+$string['selectlogreader'] = 'Sélectionner un lecteur d\'historiques';

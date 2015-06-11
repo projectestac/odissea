@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'badges', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,10 @@ $string['anymethodactivity'] = 'Algunha das actividades seleccionadas están com
 $string['anymethodcourseset'] = 'Algún dos cursos seleccionados están completos';
 $string['anymethodmanual'] = 'Algún dos roles seleccionados reciben a distinción';
 $string['anymethodprofile'] = 'Completáronse algúns dos campos do perfil seleccionado';
+$string['archivebadge'] = 'Quere borrar a distinción \'{$a}\' pero manter as distincións xa concedidas?';
+$string['archiveconfirm'] = 'Borrar e manter as distincións xa concedidas';
+$string['archivehelp'] = '<p>Esta opción implica que a distinción quedará marcada como «retirada» e xa non aparecerá na lista de distincións. Os usuarios xa non volverán a podela ganar, pero aqueles aos que xa se lle concedeu poderán seguir amosándoa na súa páxina de perfil e trasladala á súa mochila externa.</p>
+<p>Se desexa que os seus usuarios manteñan o acceso ás distincións xa concedidas é importante que seleccione esta opción en vez de eliminalas por completo.</p>';
 $string['attachment'] = 'Anexar a distinción á mensaxe';
 $string['attachment_help'] = 'De estar marcado, anexarase a distinción recibida ao correo do destinatario para a súa descarga. (teñen que estar activados os anexos en Administración do sitio > Engadidos > Mensaxes saíntes > Correo para poder usar esta opción)';
 $string['award'] = 'Distinción recibida';
@@ -191,9 +195,11 @@ $string['defaultissuercontact'] = 'Detalles predeterminados de contacto do emiso
 $string['defaultissuercontact_desc'] = 'Un enderezo de correo asociado co emisor da distinción.';
 $string['defaultissuername'] = 'Nome predeterminado do emisor da distinción';
 $string['defaultissuername_desc'] = 'Nome do axente ou autoridade emisores.';
-$string['delbadge'] = 'Confirma que quere eliminar a distinción «{$a}», e retirar todas as distincións emitidas xa existentes?';
-$string['delconfirm'] = 'Confirma que quere eliminar a distinción «{$a}»?';
+$string['delbadge'] = 'Quere borrar a distinción \'{$a}\' e eliminar as distincións xa concedidas?';
+$string['delconfirm'] = 'Borrar e eliminar as distincións xa concedidas';
 $string['delcritconfirm'] = 'Confirma que quere eliminar este criterio?';
+$string['deletehelp'] = '<p>Borrar por completo unha distinción significa que tamén se elimina toda a súa información e os rexistros de criterios de entrega. Os usuarios aos que se lle concedeu esta distinción non poderán acceder a ela nin amosala na súa páxina de perfil.</p>
+<p>Nota: Os usuarios aos que se lle concedeu esta distinción e xa a trasladaron á súa mochila externa seguirán a podela amosar na súa mochila. Sen embargo, non poderán acceder nin aos criterios nin aos enlaces ás páxinas de evidencia neste sitio web.</p>';
 $string['delparamconfirm'] = 'Confirma que quere eliminar este parámetro?';
 $string['description'] = 'Descrición';
 $string['disconnect'] = 'Desconectar';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -93,6 +93,7 @@ $string['defaultgradesettings'] = 'Berezko kalifikazio-ezarpenak';
 $string['defaultothersettings'] = 'Berezko beste ezarpen batzuk';
 $string['deleteallattempts'] = 'SCORMen saiakera guztiak ezabatu';
 $string['deleteattemptcheck'] = 'Ziur al zaude saiakera hauek ezabatu nahi dituzula?';
+$string['deleteselected'] = 'Ezabatu aukeratutako saiakerak';
 $string['deleteuserattemptcheck'] = 'Ziur al zaude zure saiakera guztiak ezabatu nahi dituzula?';
 $string['details'] = 'Miaketaren zehaztapenak';
 $string['directories'] = 'Direktorioaren estekak erakutsi';
@@ -337,11 +338,11 @@ $string['trackid'] = 'Id';
 $string['trackid_help'] = 'Hau da zure SCORM paketeak galdera honentzat ezarritako identifikatzailea, SCORM espezifikazioak ez du galderen testu osoa ematea uzten.';
 $string['trackingloose'] = 'KONTUZ: Pakete honen miaketa-datuak galdu egingo dira!';
 $string['tracklatency'] = 'Itxarote-denbora';
-$string['tracklatency_help'] = 'Galdera erantzuteko eskuragarri jartzen denetik ikaslearen lehen erantzuna egin arteko denbora-tartea.';
+$string['tracklatency_help'] = 'Galdera erantzuteko eskuragarri jartzen denetik ikaslearen lehen erantzuna egin arteko denbora-tartea';
 $string['trackpattern'] = 'Patroia';
 $string['trackpattern_help'] = 'Hau galderarentzako erantzun egokiaren patroia da, ez da ikasleei erakusten.';
 $string['trackresponse'] = 'Erantzuna';
-$string['trackresponse_help'] = 'Hau da ikasleak galderari emandako erantzuna';
+$string['trackresponse_help'] = 'Hau da ikasleak galderari egindako erantzuna';
 $string['trackresult'] = 'Emaitza';
 $string['trackresult_help'] = 'Ikasleak ondo erantzun duen erakusten du.';
 $string['trackscoremax'] = 'Gehieneko puntuazioa';

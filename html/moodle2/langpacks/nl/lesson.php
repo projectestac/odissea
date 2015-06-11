@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lesson', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,6 +128,7 @@ $string['defaultessayresponse'] = 'Je antwoord op deze open vraag zal door de le
 $string['deleteallattempts'] = 'Verwijder alle pogingen';
 $string['deletedefaults'] = 'Standaard les {$a} verwijderd';
 $string['deletedpage'] = 'Pagina verwijderd';
+$string['deletepagenamed'] = 'Verwijder pagina: {$a}';
 $string['deleting'] = 'Verwijderen';
 $string['deletingpage'] = 'Bezig met pagina {$a} verwijderen';
 $string['dependencyon'] = 'Deeltaak van';
@@ -142,11 +143,11 @@ $string['displaydefaultfeedback_help'] = '<p align="center"><strong>Toon standaa
 <p>Als deze instelling op <strong>ja</strong> gezet wordt, dan zal bij het ontbreken van feedback, de standaardfeedback "Juist antwoord" en "Fout antwoord" gebruikt worden.</p>
 <p>Als deze instelling op <strong>Nee</strong> gezet wordt, dan zal er bij het ontbreken van feedback niets getoond worden. De gebruiker wordt dan automatisch naar de volgende pagina van de les gebracht worden.</p>';
 $string['displayhighscores'] = 'Toon hoogste cijfers';
-$string['displayinleftmenu'] = 'Toon in linkermenu?';
+$string['displayinleftmenu'] = 'Toon in menu?';
 $string['displayleftif'] = 'Minimum cijfer om het linkermenu te tonen';
-$string['displayleftif_help'] = 'Deze instelling bepaalt of een leerling een bepaald cijfer moet halen voor die het linker menu kan zien. Dit verplicht een leerling om door de hele les te gaan tijdens de eerste poging, dan kan die na het behalen van het vereiste cijfer, het linker menu gebruiken om na te kijken.';
-$string['displayleftmenu'] = 'Toon linkermenu';
-$string['displayleftmenu_help'] = 'Indien ingeschakeld, wordt een lijst van pagina\'s getoond.';
+$string['displayleftif_help'] = 'Deze instelling bepaalt of een leerling een bepaald cijfer moet halen voor die het linker menu kan zien. Dit verplicht een leerling om door de hele les te gaan tijdens de eerste poging, dan kan die na het behalen van het vereiste cijfer, het menu gebruiken om na te kijken.';
+$string['displayleftmenu'] = 'Toon menu';
+$string['displayleftmenu_help'] = 'Indien ingeschakeld, wordt een menu getoond waarmee de gebruiker door een lijst van pagina\'s kan navigeren.';
 $string['displayofgrade'] = 'Tonen van het cijfer (voor de leerling)';
 $string['displayreview'] = 'Geef de optie om een vraag opnieuw te proberen';
 $string['displayreview_help'] = 'Indien ingeschakeld, zal bij een fout antwoord de student de optie krijgen om ofwel de vraag vrijblijvend opnieuw te proberen (zonder cijfer), ofwel verder te gaan met de les.';
@@ -178,11 +179,24 @@ $string['essayemailmessage2'] = '<p>Open vraag prompt:
 $string['essayemailsubject'] = 'Jouw cijfer voor {$a} vraag';
 $string['essays'] = 'Open vragen';
 $string['essayscore'] = 'Cijfer voor de open vragen';
+$string['eventessayassessed'] = 'Open vraag beoordeeld';
+$string['eventessayattemptviewed'] = 'Open vraag bekeken';
+$string['eventhighscoreadded'] = 'Hoogste cijfer toegevoegd';
+$string['eventhighscoresviewed'] = 'Hoogste cijfer bekeken';
+$string['eventlessonended'] = 'Les beëindigd';
+$string['eventlessonstarted'] = 'Les begonnen';
+$string['false'] = 'Onwaar';
 $string['fileformat'] = 'Bestandsformaat';
 $string['finish'] = 'Einde';
 $string['firstanswershould'] = 'Het eerste antwoord moet naar de "juist"-pagina verwijzen';
-$string['firstwrong'] = 'Jammer genoeg verdien je dit punt niet, omdat je antwoord fout was. Wil je alleen maar voor de pret van het leren nog eens gokken (maar zonder er punten mee te verdienen)?';
+$string['firstwrong'] = 'Je antwoord is fout.  Wil je de vraag opnieuw proberen te beantwoorden? Als je het antwoord weet, zul je er geen punten meer mee verdienen.';
 $string['flowcontrol'] = 'Controle van het verloop';
+$string['fractionsaddwrong'] = 'De positieve cijfers die je hebt gekozen tellen niet op tot 100%
+<br />In plaats daarvan tellen ze op tot {$a}%
+<br />Wil je terug gaan en deze vraag verbeteren?';
+$string['fractionsnomax'] = 'Eén van de antwoorden moet 100% zijn, zodat het mogelijk is
+<br />om een vol punt voor deze vraag te krijgen.
+<br />Wil je terug gaan en deze vraag verbeteren?';
 $string['full'] = 'Volledig';
 $string['general'] = 'Algemeen';
 $string['gotoendoflesson'] = 'Ga naar het einde van de les';
@@ -349,6 +363,7 @@ $string['lessoncloses'] = 'Les sluit';
 $string['lessoncloseson'] = 'Les sluit op {$a}';
 $string['lesson:edit'] = 'Bewerk een les';
 $string['lessonformating'] = 'Opmaken van de les';
+$string['lesson:grade'] = 'Cijfer van de open vragen van de les';
 $string['lesson:manage'] = 'Beheer een les';
 $string['lessonmenu'] = 'Lesmenu';
 $string['lessonnotready'] = 'Deze les is nog niet klaar. Contacteer aub je {$a}';
@@ -394,7 +409,7 @@ $string['modattemptsnoteacher'] = 'Nalezen werkt alleen voor leerlingen';
 $string['modulename'] = 'Les';
 $string['modulename_help'] = 'Een lesactiviteit geeft de leraar de mogelijkheid om inhoud of oefeningen op een interessante en flexibele manier aan te bieden. Een leraar kan de les gebruiken om een lineaire set van inhoudspagina\'s of instructie-activiteiten te maken. In elk geval kunnen leraren kiezen om he engagement van de leerling te verhogen en om het begrijpen van de inhoud te verzekeren door een variatie aan vragen toe te voegen, zoals meerkeuzevragen, koppelvragen en korte antwoorden. Afhankelijk van het antwoord van de leerling en van hoe de leraar de les opbouwt, kunnen leerlingen dan naar de volgende pagina verder gaan of terug genomen worden naar een eerdere pagina of op een compleet ander pad gezet worden.
 
-Een les kan beoordeeld worden met een cijfer in het puntenboek.
+Een les kan beoordeeld worden met een cijfer in de cijferlijst.
 
 Les kan gebruikt worden
 
@@ -405,6 +420,7 @@ $string['modulenameplural'] = 'Lessen';
 $string['move'] = 'Verplaats pagina';
 $string['movedpage'] = 'Pagina verplaatst';
 $string['movepagehere'] = 'Verplaats de pagina naar hier';
+$string['movepagenamed'] = 'Verplaats pagina: {$a}';
 $string['moving'] = 'Bezig met pagina {$a} verplaatsen';
 $string['multianswer'] = 'Meer antwoorden';
 $string['multianswer_help'] = '<p>Enkele vraagtypes hebben een optie die ingeschakeld kan worden door deze checkbox aan te vinken. De vraagtypes en de bedoeling van de opties worden hier in detail overlopen.</p>
@@ -439,6 +455,7 @@ $string['noretake'] = 'Je mag deze les niet opnieuw maken';
 $string['normal'] = 'Normaal - volg het lespad';
 $string['notcompleted'] = 'Nog niet voltooid';
 $string['notdefined'] = 'Niet gedefinieerd';
+$string['notenoughsubquestions'] = 'Er zijn onvoldoende deelvragen gedefinieerd!<br />Wil je teruggaan en deze vraag herstellen?';
 $string['nothighscore'] = 'Je hebt de top {$a} cijferlijst niet gehaald.';
 $string['notitle'] = 'Geen titel';
 $string['numberofcorrectanswers'] = 'Aantal juiste antwoorden: {$a}';
@@ -464,10 +481,12 @@ $string['overview'] = 'Overzicht';
 $string['overview_help'] = 'Een les is opgebouwd uit een aantal pagina\'s en optioneel een aantal inhoudspagina\'s. Een pagina bevat een zekere inhoud en eindigt gewoonlijk met een vraag.
 Aan elk antwoord op de vraag is een sprong verbonden. De sprong kan relatief zijn, zoals deze pagina of volgende pagina, of absoluut verwijzen naar om het even welke pagina in de les. Een inhoudspagina is een pagina die een reeks links naar andere pagina\'s in de les bevat, zoals bijvoorbeeld een inhoudstafel.';
 $string['page'] = 'Pagina: {$a}';
+$string['pageanswers'] = 'Pagineer antwoorden';
 $string['pagecontents'] = 'Inhoud van de pagina';
 $string['page-mod-lesson-edit'] = 'Bewerk lespagina';
 $string['page-mod-lesson-view'] = 'Bekijk of bekijk voorbeeld van lespagina';
 $string['page-mod-lesson-x'] = 'Elke lespagina';
+$string['pageresponses'] = 'Pagineer reacties';
 $string['pages'] = 'Pagina\'s';
 $string['pagetitle'] = 'Titel van de pagina';
 $string['password'] = 'Wachtwoord';
@@ -482,11 +501,12 @@ $string['pointsearned'] = 'Verdiende punten';
 $string['postprocesserror'] = 'Fout opgetreden tijdens de verwerking!';
 $string['postsuccess'] = 'Posten gelukt';
 $string['practice'] = 'Oefenles';
-$string['practice_help'] = '<p>Een oefenles zal niet in het puntenboek verschijnen.</p>';
+$string['practice_help'] = 'Een oefenles zal niet in de cijferlijst verschijnen.';
 $string['preprocesserror'] = 'Fout opgetreden tijdens de voorbereiding!';
 $string['prerequisitelesson'] = 'Voorwaarde les';
 $string['preview'] = 'Voorbeeld';
 $string['previewlesson'] = 'Voorbeeld van {$a}';
+$string['previewpagenamed'] = 'Voorbeeld van pagina: {$a}';
 $string['previouspage'] = 'Vorige pagina';
 $string['processerror'] = 'Fout opgetreden tijdens de verwerking!';
 $string['progressbar'] = 'Vorderingsbalk';
@@ -561,6 +581,7 @@ $string['timespenterror'] = 'Neem minstens {$a} minuten de tijd om de les te mak
 $string['timespentminutes'] = 'Gebruikte tijd (minuten)';
 $string['timetaken'] = 'Gebruikte tijd';
 $string['topscorestitle'] = 'Top {$a} hoogste cijfers';
+$string['true'] = 'Waar';
 $string['truefalse'] = 'Waar/niet waar';
 $string['unabledtosavefile'] = 'Het bestand dat je uploadde kon niet bewaard worden';
 $string['unknownqtypesnotimported'] = '{$a} vragen met niet ondersteunde vraagtypes werden niet geïmporteerd';
@@ -568,6 +589,7 @@ $string['unseenpageinbranch'] = 'Ongeziene vraag binnen een inhoudspagina';
 $string['unsupportedqtype'] = 'Vraagtype ({$a}) niet ondersteund';
 $string['updatedpage'] = 'Pagina geüpdatet';
 $string['updatefailed'] = 'Update mislukt';
+$string['updatepagenamed'] = 'Pagina updaten: {$a}';
 $string['usemaximum'] = 'Gebruik maximum';
 $string['usemean'] = 'Gemiddelde';
 $string['usepassword'] = 'Les beschermd met wachtwoord';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xml', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradeexport_xml', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   gradeexport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fichier XML';
-$string['useridnumberwarning'] = 'Les utilisateurs sans identifiant (ID) sont exclus de l\'exportation XML, car ils ne peuvent pas être importés.';
 $string['xml:publish'] = 'Publier l\'exportation des notes au format XML';
 $string['xml:view'] = 'Exporter les notes au format XML';

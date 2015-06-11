@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'calendar', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['colcalendar'] = 'Календарь';
 $string['collastupdated'] = 'Последнее обновление';
 $string['colpoll'] = 'Обновление';
 $string['commontasks'] = 'Настройки';
-$string['confirmeventdelete'] = 'Вы уверены, что необходимо удалить это событие?';
+$string['confirmeventdelete'] = 'Вы уверены, что хотите удалить событие «{$a}»?';
 $string['course'] = 'Курс';
 $string['courseevent'] = 'Событие курса';
 $string['courseevents'] = 'События курса';
@@ -71,6 +71,9 @@ $string['errorinvalidrepeats'] = 'Определите количество со
 $string['errornodescription'] = 'Требуется описание';
 $string['errornoeventname'] = 'Требуется название';
 $string['errorrequiredurlorfile'] = 'URL или файл календаря для импорта';
+$string['eventcalendareventcreated'] = 'Создано событие календаря';
+$string['eventcalendareventdeleted'] = 'Удалено событие календаря';
+$string['eventcalendareventupdated'] = 'Событие календаря обновлено';
 $string['eventdate'] = 'Дата';
 $string['eventdescription'] = 'Описание';
 $string['eventduration'] = 'Продолжительность';

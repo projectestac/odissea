@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'tag', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,9 +38,15 @@ $string['deletedcoursetags'] = '削除 - コースタグ';
 $string['description'] = '説明';
 $string['edittag'] = 'このタグを編集する';
 $string['entertags'] = 'カンマで区切って、タグを入力してください。';
-$string['errordeleting'] = 'ID {$a} のタグを削除中にエラーが発生しました。あなたのシステム管理者に報告してください。';
 $string['errortagfrontpage'] = 'サイトメインページへのタグ付けは許可されていません。';
 $string['errorupdatingrecord'] = 'タグレコードの更新中にエラーが発生しました。';
+$string['eventtagadded'] = 'タグがアイテムに追加されました。';
+$string['eventtagcreated'] = 'タグが作成されました。';
+$string['eventtagdeleted'] = 'タグが削除されました。';
+$string['eventtagflagged'] = 'タグがフラグされました。';
+$string['eventtagremoved'] = 'タグがアイテムから削除されました。';
+$string['eventtagunflagged'] = 'タグのフラグが解除されました。';
+$string['eventtagupdated'] = 'タグが更新されました。';
 $string['flag'] = 'フラグ';
 $string['flagasinappropriate'] = '不適切としてフラグする';
 $string['helprelatedtags'] = 'カンマ区切りの関連タグ';

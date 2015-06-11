@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'group', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,9 +88,6 @@ $string['groupingsonly'] = 'Só agrupamentos';
 $string['groupmember'] = 'Membro do grupo';
 $string['groupmemberdesc'] = 'Rol estándar dun membro do grupo.';
 $string['groupmembers'] = 'Membros do grupo';
-$string['groupmembersonly'] = 'Dispoñíbel só para membros do grupo';
-$string['groupmembersonlyerror'] = 'Ten que ser membro de polo menos un grupo que sexa usado nesta actividade.';
-$string['groupmembersonly_help'] = 'De estar marcada a caixiña, a actividade (ou recurso) só estará dispoñíbel para os alumnos asignados aos grupos dentro do agrupamento seleccionado.';
 $string['groupmemberssee'] = 'Ver os membros do grupo';
 $string['groupmembersselected'] = 'Membros do grupo seleccionado';
 $string['groupmode'] = 'Modo de grupo';
@@ -122,9 +119,9 @@ $string['hidepicture'] = 'Agochar a imaxe';
 $string['importgroups'] = 'Importar grupos';
 $string['importgroups_help'] = 'Os grupos poden importarse mediante un ficheiro de texto. O formato do ficheiro ten que ser como sigue:
 
-* Cada liña do ficheiro contén un rexistro
+* Cada liña do ficheiro conten un rexistro
 * Cada rexistro é unha serie de datos separados por comas
-* O primeiro rexistro contén unha lista de nomes de campos que definen o formato do resto do ficheiro
+* O primeiro rexistro conten unha lista de nomes de campos que definen o formato do resto do ficheiro
 * É obrigatorio o nome de campo sendo nome de grupo
 * Son opcionais os nomes de campo descrición, chave de matriculación, imaxe, imaxe agochada';
 $string['importgroups_link'] = 'group/import';

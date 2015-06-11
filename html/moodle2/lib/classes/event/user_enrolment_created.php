@@ -26,7 +26,13 @@ namespace core\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Event when user is enrolled in a course.
+ * Event class for when user is enrolled in a course.
+ *
+ * @property-read array $other {
+ *      Extra information about event.
+ *
+ *      - string enrol: name of enrolment instance.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
@@ -41,7 +47,7 @@ class user_enrolment_created extends base {
     protected function init() {
         $this->data['objecttable'] = 'user_enrolments';
         $this->data['crud'] = 'c';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 
     /**
@@ -59,7 +65,8 @@ class user_enrolment_created extends base {
      * @return string
      */
     public function get_description() {
-        return 'User '.$this->relateduserid. ' is enrolled in course '.$this->courseid.' by user '.$this->userid;
+        return "The user with id '$this->userid' enrolled the user with id '$this->relateduserid' using the enrolment method " .
+            "'{$this->other['enrol']}' in the course with id '$this->courseid'.";
     }
 
     /**
@@ -93,6 +100,15 @@ class user_enrolment_created extends base {
     }
 
     /**
+     * Return legacy data for add_to_log().
+     *
+     * @return array
+     */
+    protected function get_legacy_logdata() {
+        return array($this->courseid, 'course', 'enrol', '../enrol/users.php?id=' . $this->courseid, $this->courseid);
+    }
+
+    /**
      * Custom validation.
      *
      * @throws \coding_exception
@@ -100,11 +116,13 @@ class user_enrolment_created extends base {
      */
     protected function validate_data() {
         parent::validate_data();
-        if (!isset($this->other['enrol'])) {
-            throw new \coding_exception('Enrolment plugin name must be set in $other.');
-        }
+
         if (!isset($this->relateduserid)) {
-            throw new \coding_exception('Related user id must be set.');
+            throw new \coding_exception('The \'relateduserid\' must be set.');
+        }
+
+        if (!isset($this->other['enrol'])) {
+            throw new \coding_exception('The \'enrol\' value must be set in other.');
         }
     }
 }

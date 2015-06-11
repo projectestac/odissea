@@ -1,0 +1,3 @@
+[submodule "html/moodle2/testlib"]
+	path = html/moodle2/testlib
+	url = https://github.com/projectestac/testlib_PHP.git

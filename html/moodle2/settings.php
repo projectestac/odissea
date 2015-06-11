@@ -26,7 +26,7 @@ $CFG->iseoi = 0;
 $CFG->isportal = 0;
 $CFG->diskPercent = 0;
 $CFG->disableupdatenotifications = 1;
-$CFG->cachetext = 0; // Disabled to enhace the performance
+$CFG->slasharguments = true;
 
 $CFG->session_handler_class = '\core\session\file';
 $CFG->session_file_save_path = ini_get('session.save_path');
@@ -41,10 +41,13 @@ $CFG->agora_muc_path = $dirroot.'/cache_ins';
 $CFG->cachedir = $CFG->agora_muc_path.'/cache';
 $CFG->localcachedir = $CFG->agora_muc_path.'/localcache';
 
+$CFG->mobilecssurl = $CFG->wwwroot.'/theme/xtec2/mobile/style.php';
 
 $CFG->forced_plugin_settings = array('block_configurable_reports' => array(
                                         'sqlsecurity' => true,
                                         'dbhost' => "",
                                         'dbname' => "",
                                         'dbuser' => "",
-                                        'dbpass' => ""));
+                                        'dbpass' => ""),
+                                     'logstore_legacy' => array('loglegacy' => 1),
+                                     'filter_wiris' => array('uninstall' => 1));

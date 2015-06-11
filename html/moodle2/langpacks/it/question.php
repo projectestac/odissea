@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['addanotherhint'] = 'Aggiungi un altro suggerimento';
 $string['addcategory'] = 'Aggiungi categoria';
 $string['addmorechoiceblanks'] = 'Spazi per altre {no} alternative';
 $string['adminreport'] = 'Report su possibili problemi nel tuo database di domande.';
+$string['advancedsearchoptions'] = 'Cerca opzioni';
+$string['alltries'] = 'Tutti i tentativi';
 $string['answer'] = 'Risposta';
 $string['answers'] = 'Risposte';
 $string['answersaved'] = 'Risposta salvata';
@@ -69,6 +71,7 @@ $string['cannotretrieveqcat'] = 'Non è stato possibile ottenere la categoria di
 $string['cannotunhidequestion'] = 'Non è stato possibile rendere visibile la domanda';
 $string['cannotunzip'] = 'Impossibile unzippare il file.';
 $string['cannotwriteto'] = 'Impossibile scrivere le domande esportate su {$a}';
+$string['categories'] = 'Categorie';
 $string['category'] = 'Categoria';
 $string['categorycurrent'] = 'Categoria in uso';
 $string['categorycurrentuse'] = 'Usa questa categoria';
@@ -114,8 +117,7 @@ $string['defaultmark'] = 'Punteggio di default';
 $string['defaultmarkmustbepositive'] = 'Il punteggi odi default deve essere positivo.';
 $string['deletecoursecategorywithquestions'] = 'Ci sono domande nel deposito delle domande associate con questa categoria di corso. Se procedi, queste saranno eliminate. Puoi comunque spostarle prima, usando l\'interfaccia del deposito delle domande.';
 $string['deletequestioncheck'] = 'Sei proprio sicuro di voler eliminare \'{$a}\'?';
-$string['deletequestionscheck'] = '<p>Sei sicuro di eliminare le seguenti domande ?</p>
-<p>{$a}</p>';
+$string['deletequestionscheck'] = 'Sei sicuro di eliminare le seguenti domande ?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'Eliminazione comportamento domanda \'{$a}\'';
 $string['deletingqtype'] = 'Eliminazione del tipo di domanda \'{$a}\'';
 $string['didnotmatchanyanswer'] = '[Non ha associato nessuna risposta]';
@@ -151,6 +153,7 @@ $string['errorduringregrade'] = 'Impossibile rivalutare la domanda {$a->qid}, sp
 $string['errorfilecannotbecopied'] = 'Errore: non è possibile copiare il file {$a}.';
 $string['errorfilecannotbemoved'] = 'Errore: non è possibile spostare il file {$a}.';
 $string['errorfileschanged'] = 'Errore: i file linkati dalle domande sono cambiati da quando è iniziata la visualizzazione del form.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La domanda ({$a}) è stata utilizzata più di una volta nello stesso test in diverse posizioni e con diversi pesi. Questa situazione al momento non è supportata dalla statistiche e potrebbe rendere i risultati non affidabili.';
 $string['errormanualgradeoutofrange'] = 'La valutazione {$a->grade} non è compresa tra 0 e {$a->maxgrade} per la domanda {$a->name}. Punteggio e commento non sono stati salvati.';
 $string['errormovingquestions'] = 'Errore nello spostamento di domande con ids {$a}.';
 $string['errorpostprocess'] = 'Si è verificato un errore durante la post-elaborazione!';
@@ -160,6 +163,8 @@ $string['errorprocessingresponses'] = 'Si è verificato un errore durante l\'ela
 $string['errorsavingcomment'] = 'Errore durante il salvataggio nel database del commento per la domanda {$a->name}.';
 $string['errorsavingflags'] = 'Si è verificato un errore durante il salvataggio del flag di stato';
 $string['errorupdatingattempt'] = 'Errore durante l\'aggiornamento del tentativo {$a->id} nel database.';
+$string['eventquestioncategorycreated'] = 'Creata categoria domande';
+$string['export'] = 'Esporta';
 $string['exportcategory'] = 'Esporta categoria';
 $string['exportcategory_help'] = 'L\'impostazione determina la categoria dalla quale esportare le domande.
 
@@ -178,6 +183,7 @@ $string['filesareacourse'] = 'area file del corso';
 $string['filesareasite'] = 'area file del sito';
 $string['filestomove'] = 'Sposta / copia i file a {$a}?';
 $string['fillincorrect'] = 'Inserisci le risposte corrette';
+$string['firsttry'] = 'Primo tentativo';
 $string['flagged'] = 'Contrassegnata';
 $string['flagthisquestion'] = 'Contrassegna questa domanda';
 $string['formquestionnotinids'] = 'Il form contiene una domanda non presente tra le id delle domande.';
@@ -199,6 +205,7 @@ In alternativa puoi consentire agli studenti di dare una risposta a ciascuna dom
 
 Le due modalità sono probabilmente quelle  più comunemente utilizzate.';
 $string['ignorebroken'] = 'Ignora link interrotti';
+$string['import'] = 'Importa';
 $string['importcategory'] = 'Importa categoria';
 $string['importcategory_help'] = 'L\'impostazione consente la scelta della categoria dove importare le domande.
 
@@ -228,6 +235,7 @@ $string['invalidgrade'] = 'Le valutazioni non corrispondono alle opzioni di valu
 $string['invalidpenalty'] = 'Penalità non valida';
 $string['invalidwizardpage'] = 'Specificata pagina di aiuto non corretta o assente!';
 $string['lastmodifiedby'] = 'Ultima modifica di';
+$string['lasttry'] = 'Ultimo tentativo';
 $string['linkedfiledoesntexist'] = 'Il file linkato {$a} non esiste';
 $string['makechildof'] = 'Fai figlio di \'{$a}\'';
 $string['makecopy'] = 'Duplica';
@@ -362,6 +370,7 @@ $string['questioncatsfor'] = 'Categorie di domande per \'{$a}\'';
 $string['questiondoesnotexist'] = 'Questa domanda non esiste';
 $string['questionidmismatch'] = 'Mancata corrispondenza delle id delle domande';
 $string['questionname'] = 'Nome della domanda';
+$string['questionnamecopy'] = '{$a} (copia)';
 $string['questionno'] = 'Domanda {$a}';
 $string['questionpreviewdefaults'] = 'Default anteprima domanda';
 $string['questionpreviewdefaults_desc'] = 'I default vengono utilizzati quando un utente visualizza l\'anteprima di una domanda presente nel deposito delle domande. Dopo che la domanda è stata visualizzata in anteprima per la prima volta, le preferenze personali saranno memorizzate come preferenze dell\'utente.';
@@ -384,6 +393,7 @@ $string['reviewresponse'] = 'Rivedi le risposte date';
 $string['rightanswer'] = 'Risposta corretta';
 $string['rightanswer_help'] = 'Un sommario delle risposte corrette generato automaticamente. Questo  sommario è limitato,  potrebbe essere preferibile fornire la risposta corretta nel feedback generale della domanda, disabilitando questa impostazione.';
 $string['save'] = 'Salva';
+$string['savechangesandcontinueediting'] = 'Salva e continua a modificare';
 $string['saved'] = 'Salvato: {$a}';
 $string['saveflags'] = 'Salva lo stato dei contrassegni';
 $string['selectacategory'] = 'Scegli una categoria:';
@@ -432,12 +442,14 @@ $string['unknownquestioncatregory'] = 'Categoria di domande sconosciuta: {$a}.';
 $string['unknownquestiontype'] = 'Tipo domanda sconosciuto: {$a}.';
 $string['unknowntolerance'] = 'Tipo tolleranza sconosciuto: {$a}.';
 $string['unpublished'] = 'non condivise';
+$string['unusedcategorydeleted'] = 'Questa categoria è stata soppressa poiché dopo l\'eliminazione del corso le domande in essa presenti non erano più utilizzate.';
 $string['updatedisplayoptions'] = 'Aggiorna opzioni di visualizzazione';
 $string['upgradeproblemcategoryloop'] = 'Rilevato un problema nell\'aggiornamento delle categorie di domande. C\'è un circolo nell\'albero delle categorie. Gli id delle categorie interessate sono {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'La categoria di domande {$a->name} ({$a->id}) non può essere aggiornata.';
 $string['upgradeproblemunknowncategory'] = 'Rilevato un problema nell\'aggiornamento delle categorie di domande. La categoria {$a->id} sta sotto alla categoria {$a->parent}, che non esiste. La categoria superiore è stata cambiata per risolvere il problema.';
 $string['whethercorrect'] = 'Se corretto';
 $string['whethercorrect_help'] = 'Include sia la descrizione testuale "Corretta", "Parzialmente corretta" o "Errata", sia eventuali evidenziamenti basati sui colori che forniscono le medesime informazioni';
+$string['whichtries'] = 'Visualizza tentativi';
 $string['withselected'] = 'Con la selezione';
 $string['wrongprefix'] = 'Nameprefix {$a} formattato erroneamente';
 $string['xoutofmax'] = '{$a->mark} su {$a->max}';

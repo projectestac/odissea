@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'wiki', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,14 @@ $string['editing'] = 'Редактирование страницы Вики';
 $string['editingcomment'] = 'Редактирование комментрия';
 $string['editingpage'] = 'Редактирование страницы «{$a}»';
 $string['editsection'] = 'редактировать';
+$string['eventpagecreated'] = 'Страница вики создана';
+$string['eventpagedeleted'] = 'Страница вики удалена';
+$string['eventpagelocksdeleted'] = 'Страница вики разблокирована';
+$string['eventpageupdated'] = 'Страница вики обновлена';
+$string['eventpageversiondeleted'] = 'Версия страницы вики удалена';
+$string['eventpageviewed'] = 'Страница вики просмотрена';
+$string['eventversionrestored'] = 'Версия вики восстановлена';
+$string['eventversionviewed'] = 'Версия страницы вики просмотрена';
 $string['filenotuploadederror'] = 'Не удалось загрузить файл «{$a}».';
 $string['files'] = 'Файлы';
 $string['filtername'] = 'Автосвязывание страниц Вики';

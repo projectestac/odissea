@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'pt', branch 'MOODLE_26_STABLE'
+ * Strings for component 'lti', language 'pt', branch 'MOODLE_28_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = 'Aceitar';
+$string['accepted'] = 'Aceite';
 $string['accept_grades'] = 'Aceitar notas da ferramenta';
 $string['accept_grades_admin'] = 'Aceitar notas da ferramenta';
 $string['accept_grades_admin_help'] = 'Indique se o fornecedor da ferramenta pode adicionar, atualizar, ler e apagar notas associadas a esta atividade.
@@ -48,7 +49,7 @@ $string['allowinstructorcustom'] = 'Permitir aos professores adicionar parâmetr
 $string['allowsetting'] = 'Permitir que a ferramenta guarde 8K de configurações no Moodle.';
 $string['always'] = 'Sempre';
 $string['automatic'] = 'Automático, com base no URL de arranque';
-$string['baseurl'] = 'URL de base';
+$string['baseurl'] = 'URL base/ferramenta de registo de nome';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'Atividades LTI';
 $string['basiclti_base_string'] = 'Base String do LTI OAuth';
@@ -59,8 +60,13 @@ $string['basicltiintro'] = 'Descrição da atividade';
 $string['basicltiname'] = 'Nome da atividade';
 $string['basiclti_parameters'] = 'Parâmetros de arranque do LTI';
 $string['basicltisettings'] = 'Configurações básicas da Learning Tool Interoperability (LTI)';
+$string['cancel'] = 'Cancelar';
+$string['cancelled'] = 'Cancelado';
 $string['cannot_delete'] = 'Não pode apagar a configuração desta ferramenta';
 $string['cannot_edit'] = 'Não pode editar a configuração desta ferramenta';
+$string['capabilities'] = 'Capacidades';
+$string['capabilities_help'] = 'Selecione aquelas capacidades que pretende disponibilizar ao fornecedor da ferramenta. Podem ser selecionadas mais do que uma capacidade.';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Clique para continuar</a>';
 $string['comment'] = 'Comentário';
 $string['configpassword'] = 'Senha remota predefinida da ferramenta';
 $string['configpreferheight'] = 'Altura predefinida';
@@ -69,6 +75,7 @@ $string['configpreferwidth'] = 'Largura predefinida';
 $string['configresourceurl'] = 'URL predefinido do recurso';
 $string['configtoolurl'] = 'URL predefinido da ferramenta remota';
 $string['configtypes'] = 'Ativar aplicações LTI';
+$string['configured'] = 'Configurado';
 $string['courseid'] = 'Número ID da disciplina';
 $string['coursemisconf'] = 'A disciplina está mal configurada';
 $string['course_tool_types'] = 'Tipos de ferramentas da disciplina';
@@ -78,7 +85,7 @@ $string['custom'] = 'Parâmetros personalizados';
 $string['custom_config'] = 'A usar configurações personalizadas';
 $string['custom_help'] = 'Os parâmetros personalizados são configurações utilizadas pelo fornecedor da ferramenta. Por exemplo, um parâmetro personalizado pode ser usado para exibir um recurso específico do fornecedor.
 
-É seguro deixar este campo inalterado, excepto se tiver instruções do fornecedor em contrário.';
+É seguro deixar este campo inalterado, exceto se tiver instruções do fornecedor em contrário.';
 $string['custominstr'] = 'Parâmetros personalizados';
 $string['debuglaunch'] = 'Opção de debug';
 $string['debuglaunchoff'] = 'Arranque normal';
@@ -87,13 +94,14 @@ $string['default'] = 'Predefinido';
 $string['default_launch_container'] = 'Recipiente de arranque predefinido';
 $string['default_launch_container_help'] = 'O modo de visualização afeta forma como é exibida a ferramenta quando iniciada a partir da disciplina. Alguns modos permitem maior espaço de ecrã disponível para a ferramenta enquanto outros aparentam maior integração com o ambiente Moodle.
 
-* **Predefinido** - Usa o modo de visualização definido nas configurações da ferramenta.
-* **Incorporado** -  A ferramenta é exibida incorporada na janela do Moodle, de uma forma semelhante à maioria dos outros tipos de atividades.
-* **Incorporado, sem blocos** -  A ferramenta é exibida incorporada na janela do Moodle, apenas com a área de navegação
-         na parte superior da página.
-* **Nova janela** - A ferramenta abre numa nova janela, ocupando todo o espaço disponível.
-         Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop-up.
-         É possível que alguns navegadores impeçam a abertura em nova janela.';
+Predefinido - Usa o modo de visualização definido nas configurações da ferramenta.
+Incorporado -  A ferramenta é exibida incorporada na janela do Moodle, de uma forma semelhante à maioria dos outros tipos de atividades.
+Incorporado, sem blocos -  A ferramenta é exibida incorporada na janela do Moodle, apenas com a área de navegação na parte superior da página.
+Nova janela - A ferramenta abre numa nova janela, ocupando todo o espaço disponível.
+
+Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop-up.
+
+É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['delegate'] = 'Delegar ao professor';
 $string['delete'] = 'Apagar';
 $string['delete_confirmation'] = 'Tem a certeza que deseja apagar esta configuração da ferramenta?';
@@ -115,12 +123,14 @@ $string['domain_mismatch'] = 'O domínio do URL de arranque não corresponde ao 
 $string['donot'] = 'Não enviar';
 $string['donotaccept'] = 'Não aceitar';
 $string['donotallow'] = 'Não permitir';
+$string['duplicateregurl'] = 'Este URL de registo já está a ser usado';
 $string['edittype'] = 'Editar configuração da ferramenta LTI';
 $string['embed'] = 'Incorporar';
 $string['embed_no_blocks'] = 'Incorporar, sem blocos';
 $string['enableemailnotification'] = 'Enviar e-mails de notificação';
 $string['enableemailnotification_help'] = 'Se ativar esta opção, os alunos recebem um e-mail de aviso quando as suas notas são atribuídas.';
 $string['errormisconfig'] = 'Ferramenta mal configurada. Peça ao administrador do Moodle para corrigir a configuração da ferramenta.';
+$string['existing_window'] = 'Janela existente';
 $string['extensions'] = 'Extensão de serviços da LTI';
 $string['external_tool_type'] = 'Tipo de ferramenta LTI';
 $string['external_tool_type_help'] = 'O principal objetivo da configuração da ferramenta é criar um canal de comunicação seguro entre o Moodle e o fornecedor da ferramenta.
@@ -171,14 +181,14 @@ $string['launchinpopup'] = 'Recipiente de arranque';
 $string['launch_in_popup'] = 'Arrancar ferramenta em pop-up';
 $string['launchinpopup_help'] = 'O modo de visualização afeta forma como é exibida a ferramenta quando iniciada a partir da disciplina. Alguns modos permitem maior espaço de ecrã disponível para a ferramenta enquanto outros aparentam maior integração com o ambiente Moodle.
 
+Predefinido - Usa o modo de visualização definido nas configurações da ferramenta.
+Incorporado -  A ferramenta é exibida incorporada na janela do Moodle, de uma forma semelhante à maioria dos outros tipos de atividades.
+Incorporado, sem blocos -  A ferramenta é exibida incorporada na janela do Moodle, apenas com a área de navegação na parte superior da página.
+Nova janela - A ferramenta abre numa nova janela, ocupando todo o espaço disponível.
 
-* **Predefinido** - Usa o modo de visualização definido nas configurações da ferramenta.
-* **Incorporado** -  A ferramenta é exibida incorporada na janela do Moodle, de uma forma semelhante à maioria dos outros tipos de atividades.
-* **Incorporado, sem blocos** -  A ferramenta é exibida incorporada na janela do Moodle, apenas com a área de navegação
-         na parte superior da página.
-* **Nova janela** - A ferramenta abre numa nova janela, ocupando todo o espaço disponível.
-         Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop-up.
-         É possível que alguns navegadores impeçam a abertura em nova janela.';
+Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop-up.
+
+É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['launchoptions'] = 'Opções de arranque';
 $string['launch_url'] = 'URL de arranque';
 $string['launch_url_help'] = 'O URL de arranque indica o endereço web da ferramenta LTI, e pode conter informações adicionais, tais como o recurso para mostrar.
@@ -201,6 +211,7 @@ $string['lti_launch_error_unsigned_help'] = '<p>Este erro pode ser o resultado d
 <p>Em alternativa, pode criar uma configuração de fornecedor da ferramenta ao nível da disciplina <a href="{$a->course_tool_editor}"> </p>';
 $string['lti:manage'] = 'Ser um Instrutor quando a Ferramenta LTI arranca';
 $string['lti:requesttooladd'] = 'Requerer que a Ferramenta LTI seja configurada ao nível do site';
+$string['ltisettings'] = 'Configurações LTI';
 $string['lti_tool_request_added'] = 'O pedido de configuração da ferramenta foi submetido com êxito. Pode precisar entrar em contacto com um administrador para concluir a configuração da ferramenta.';
 $string['lti_tool_request_existing'] = 'A ferramenta de configuração para o domínio de ferramentas já foi inserida.';
 $string['ltiunknownserviceapicall'] = 'Serviço desconhecido de LTI no pedido a API.';
@@ -218,6 +229,8 @@ Os tipos de ferramentas listadas nesta página são separadas em três categoria
 * **Pendente** - Estes fornecedores de ferramentas chegam através de um pacote importado e não foram configurados por nenhum administrador.
         Os professores podem usar estas ferramentas se possuírem uma palava-passe dada pelos fornecedores ou se não for necessário nenhuma.
 * **Rejeitado** - Estes fornecedores de ferramentas são marcados como aqueles que um administrador não tem a intenção de colocar à disposição de todo o Moodle. Os professores podem ainda utilizar ferramentas desses fornecedores se tiverem a senha secreta, ou se nenhuma for necessária.';
+$string['manage_tool_proxies'] = 'Gerir registos de ferramentas externas';
+$string['manage_tools'] = 'Gerir tipos de ferramentas externas';
 $string['miscellaneous'] = 'Diversos';
 $string['misconfiguredtools'] = 'Foram detetadas instâncias da ferramenta mal configuradas';
 $string['missingparameterserror'] = 'A página "{$a}" está mal configurada';
@@ -235,6 +248,7 @@ As atividades ferramenta LTI diferem dos recursos URL em alguns aspetos:
 $string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = 'Ferramentas externas';
 $string['modulenamepluralformatted'] = 'Instâncias LTI';
+$string['name'] = 'Nome';
 $string['never'] = 'Nunca';
 $string['new_window'] = 'Nova janela';
 $string['noattempts'] = 'Não foram realizadas tentativas nesta ferramenta';
@@ -242,7 +256,13 @@ $string['no_lti_configured'] = 'Não existem ferramentas LTI configuradas';
 $string['no_lti_pending'] = 'Não existem ferramentas LTI pendentes';
 $string['no_lti_rejected'] = 'Não existem ferramentas LTI rejeitadas';
 $string['noltis'] = 'Não existem instâncias de ferramentas LTI';
+$string['noprofileservice'] = 'Serviço de Perfil não encontrado';
 $string['noservers'] = 'Não foram encontrados servidores';
+$string['no_tp_accepted'] = 'Não há registos de ferramentas externas aceites.';
+$string['no_tp_cancelled'] = 'Não há registos de ferramentas externas cancelados.';
+$string['no_tp_configured'] = 'Não há registos de ferramentas externas não registadas configurados.';
+$string['no_tp_pending'] = 'Não há registos pendentes de ferramentas externas.';
+$string['no_tp_rejected'] = 'Não há registos de ferramentas externas rejeitadas.';
 $string['notypes'] = 'De momento não existem ferramentas LTI configuradas no Moodle. Clique no link acima para adicionar algumas.';
 $string['noviewusers'] = 'Não foram encontrados utilizadores com permissões para usar esta ferramenta';
 $string['optionalsettings'] = 'Configurações opcionais';
@@ -257,6 +277,8 @@ $string['organizationurl_help'] = 'O URL de base desta instância Moodle.
 
 Se este campo for deixado em branco, um valor predefinido será utilizado com base na configuração do site.';
 $string['pagesize'] = 'Submissões por página';
+$string['parameter'] = 'Parâmetros da ferramenta';
+$string['parameter_help'] = 'Os parâmetros da ferramenta são configurações que requerem a aprovação do fornecedor da ferramenta LTI no proxy de ferramenta aceite.';
 $string['password'] = 'Senha partilhada';
 $string['password_admin'] = 'Senha partilhada';
 $string['password_admin_help'] = 'A senha partilhada pode ser visto como uma senha usada para autenticar o acesso à ferramenta. Esta deve ser dada
@@ -285,6 +307,14 @@ $string['privacy'] = 'Privacidade';
 $string['quickgrade'] = 'Permitir avaliação rápida';
 $string['quickgrade_help'] = 'Se ativar esta opção, várias ferramentas podem ser avaliadas apenas numa página. Adicione notas e comentários e clique no botão "Guardar todas as alterações" para guardar as alterações.';
 $string['redirect'] = 'Será redirecionado em pouco segundos, se não pretender prima o botão.';
+$string['register'] = 'Registe-se';
+$string['registertype'] = 'Configurar um novo registo de ferramenta externa';
+$string['register_warning'] = 'A página de registo parece estar a demorar algum tempo a abrir. Se esta não aparecer, verifique se inseriu o URL correto nas definições de configuração.';
+$string['registrationname'] = 'Nome do fornecedor da ferramenta';
+$string['registrationname_help'] = 'Introduza o nome do fornecedor de ferramenta LTI a ser registado.';
+$string['registration_options'] = 'Opções de registo';
+$string['registrationurl'] = 'URL de registo';
+$string['registrationurl_help'] = 'O URL de registo deverá estar disponível a partir do fornecedor de ferramenta bem como a localização para a qual os pedidos de registo deverão ser enviados.';
 $string['reject'] = 'Rejeitar';
 $string['rejected'] = 'Rejeitado';
 $string['resource'] = 'Recurso';
@@ -320,6 +350,8 @@ estão definidas para sempre iniciar usando SSL.
 
 O URL de arranque também pode ser definido para um endereço https que forçe a entrada através de SSL, e este campo pode ser deixado em branco.';
 $string['send'] = 'Enviar';
+$string['services'] = 'Serviços';
+$string['services_help'] = 'Selecione os serviços que pretende disponibilizar ao fornecedor de ferramenta. Podem ser selecionados mais do que um serviço.';
 $string['setupoptions'] = 'Opções de configuração';
 $string['share_email'] = 'Partilhar e-mail do utilizador com a ferramenta';
 $string['share_email_admin'] = 'Partilhar e-mail do utilizador com a ferramenta';
@@ -356,10 +388,25 @@ $string['size'] = 'Parâmetros de tamanho';
 $string['submission'] = 'Submissão';
 $string['submissions'] = 'Submissões';
 $string['submissionsfor'] = 'Submissões para {$a}';
+$string['subplugintype_ltiresource'] = 'Recurso de serviços LTI';
+$string['subplugintype_ltiresource_plural'] = 'Recursos de serviços LTI';
+$string['subplugintype_ltiservice'] = 'Serviço LTI';
+$string['subplugintype_ltiservice_plural'] = 'Serviços LTI';
 $string['subplugintype_ltisource'] = 'Fonte LTI';
 $string['subplugintype_ltisource_plural'] = 'Fontes LTI';
 $string['toggle_debug_data'] = 'Alternar dados de debug';
 $string['tool_config_not_found'] = 'A configuração não foi encontrada neste URL.';
+$string['toolproxy'] = 'Registos da ferramenta externa';
+$string['toolproxy_help'] = 'Os registos de ferramenta externa permitem aos administradores de sites Moodle configurar ferramentas externas a partir de um proxy de ferramenta obtido a partir de um fornecedor de ferramenta que suporte LTI 2.0. Um URL de registo fornecido pelo fornecedor de ferramenta consiste em tudo o que é requerido para iniciar o processo. As capacidades e os serviços disponibilizados pelo fornecedor de ferramenta são selecionados ao configurar um novo registo.
+
+Os registos da ferramenta listados nesta página encontram-se separados em quatro categorias:
+
+* **Configurados** - Estes registos de ferramenta foram definidos mas o processo de registo ainda não foi iniciado.
+* **Pendentes** - O processo de registo para estes registos de ferramenta foi iniciado mas ainda não foi concluído. Abra e grave as configurações para o mover novamente para a categoria \'Configurados\'.
+* **Aceites** - Estes registos de ferramenta foram aprovados; os recursos especificados no proxy da ferramenta serão exibidos na página dos tipos de ferramenta externa com um estado inicial de \'Pendente\'.
+ * ** Rejeitados** - Estes registos de ferramenta são aqueles que foram rejeitados durante o processo de registo. Abra e grave as definições para o mover novamente para a categoria \'Configurados\', para que o processo de registo possa ser reiniciado.';
+$string['toolproxyregistration'] = 'Registo de ferramenta externa';
+$string['toolregistration'] = 'Registo de ferramenta externa';
 $string['tool_settings'] = 'Configurações da ferramenta';
 $string['toolsetup'] = 'Configurações da ferramenta LTI';
 $string['toolurl'] = 'URL base da ferramenta';

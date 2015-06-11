@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,6 @@ $string['displayselect'] = 'Εμφάνιση';
 $string['displayselectexplain'] = 'Επιλέξτε τύπο εμφάνισης.';
 $string['modulename'] = 'Σελίδα';
 $string['modulenameplural'] = 'Σελίδες';
-$string['neverseen'] = 'Ποτέ δεν εμφανίστηκαν';
 $string['page:view'] = 'Εμφάνιση περιεχομένου σελίδας';
 $string['pluginname'] = 'Σελίδα';
 $string['popupheightexplain'] = 'Καθορίζει το προεπιλεγμένο ύψος του αναδυόμενου παράθυρου.';

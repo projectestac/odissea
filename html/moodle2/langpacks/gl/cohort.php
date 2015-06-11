@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,11 +33,8 @@ $string['backtocohorts'] = 'Volver aos círculos';
 $string['bulkadd'] = 'Engadir ao círculo';
 $string['bulknocohort'] = 'Non se atoparon círculos dispoñíbeis';
 $string['cohort'] = 'Círculo';
-$string['cohort:assign'] = 'Asignar membros ao círculo';
-$string['cohort:manage'] = 'Xestionar os círculos';
 $string['cohorts'] = 'Círculos';
 $string['cohortsin'] = '{$a}: círculos dispoñíbeis';
-$string['cohort:view'] = 'Empregue circulos e a vista de membros';
 $string['component'] = 'Orixe';
 $string['currentusers'] = 'Usuarios actuais';
 $string['currentusersmatching'] = 'Usuarios actuais coincidentes';
@@ -46,11 +43,6 @@ $string['delconfirm'] = 'Confirma que quere eliminar o círculo «{$a}»?';
 $string['description'] = 'Descrición';
 $string['duplicateidnumber'] = 'Xa existe un círculo co mesmo número ID';
 $string['editcohort'] = 'Editar o círculo';
-$string['event_cohort_created'] = 'Círculo creado';
-$string['event_cohort_deleted'] = 'Círculo eliminado';
-$string['event_cohort_member_added'] = 'Usuario engadido a un círculo';
-$string['event_cohort_member_removed'] = 'Usuario eliminado dun círculo';
-$string['event_cohort_updated'] = 'Círculo actualizado';
 $string['external'] = 'Círculo externo';
 $string['idnumber'] = 'ID do círculo';
 $string['memberscount'] = 'Tamaño do círculo';
@@ -64,3 +56,4 @@ $string['searchcohort'] = 'Buscar un círculo';
 $string['selectfromcohort'] = 'Seleccionar os membros do círculo';
 $string['unknowncohort'] = 'Círculo ({$a}) descoñecido';
 $string['useradded'] = 'Usuario «{$a}» engadido ao círculo';
+$string['visible'] = 'Visíbel';

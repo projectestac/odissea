@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'auth_manual', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Deze methode verwijdert alle mogelijkheden voor gebruikers om hun eigen accounts aan te maken. Alle accounts moeten handmatig worden aangemaakt door de beheerder.';
+$string['expiration'] = 'Wachtwoord verlopen inschakelen';
+$string['expiration_desc'] = 'Maakt het mogelijk het wachtwoord te laten verlopen na een bepaalde tijd.';
+$string['expiration_warning'] = 'Waarschuwingsperiode';
+$string['expiration_warning_desc'] = 'Aantal dagen voor het verlopen van het wachtwoord dat een waarschuwing wordt verstuurd.';
+$string['passwdexpire_settings'] = 'Instellingen verlopen van het wachtwoord';
+$string['passwdexpiretime'] = 'Wachtwoord geldigheidsduur';
+$string['passwdexpiretime_desc'] = 'Tijd dat een wachtwoord geldig blijft.';
 $string['pluginname'] = 'Manuele accounts';

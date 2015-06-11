@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,6 @@ $string['legacyfilesactive'] = 'نشط';
 $string['legacyfilesdone'] = 'انتهى';
 $string['modulename'] = 'ملف';
 $string['modulenameplural'] = 'ملفات';
-$string['neverseen'] = 'غير مرئي مطلقا';
 $string['optionsheader'] = 'خيارات';
 $string['pluginname'] = 'ملف';
 $string['popupresource'] = 'لا بد ان يظهر هذا المورد في نافذه مستقله';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_cohort', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Inserisci nel gruppo';
-$string['ajaxmore'] = 'Altro...';
 $string['assignrole'] = 'Assegna ruolo';
 $string['cohort:config'] = 'Configurare istanze plugin Sincronizzazione gruppi globali';
-$string['cohortsearch'] = 'Cerca';
 $string['cohort:unenrol'] = 'Disiscrivere utenti sospesi';
 $string['instanceexists'] = 'Il gruppo globale è già sincronizzato con il ruolo selezionato';
 $string['pluginname'] = 'Sincronizzazione gruppi globali';

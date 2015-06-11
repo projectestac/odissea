@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'plugin', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,8 +37,8 @@ $string['err_response_curl'] = 'Unable to fetch available updates data - unexpec
 $string['err_response_format_version'] = 'Unexpected version of the response format. Please try to re-check for available updates.';
 $string['err_response_http_code'] = 'Unable to fetch available updates data - unexpected HTTP response code.';
 $string['filterall'] = 'Show all';
-$string['filtercontribonly'] = 'Show add-ons only';
-$string['filtercontribonlyactive'] = 'Showing add-ons only';
+$string['filtercontribonly'] = 'Show additional plugins only';
+$string['filtercontribonlyactive'] = 'Showing additional plugins only';
 $string['filterupdatesonly'] = 'Show updateable only';
 $string['filterupdatesonlyactive'] = 'Showing updateable only';
 $string['moodleversion'] = 'Moodle {$a}';
@@ -55,16 +55,17 @@ $string['notwritable_help'] = 'You have enabled automatic updates deployment and
 You need to make the plugin folder and all its contents writable to be able to install the available update automatically.';
 $string['notwritable_link'] = 'admin/mdeploy/notwritable';
 $string['numdisabled'] = 'Disabled: {$a}';
-$string['numextension'] = 'Add-ons: {$a}';
+$string['numextension'] = 'Additional: {$a}';
 $string['numtotal'] = 'Installed: {$a}';
 $string['numupdatable'] = 'Updates available: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
-$string['pluginchecknotice'] = 'This page displays plugins that may require your attention during the upgrade. Highlighted items include new plugins that are about to be installed, updated plugins that are about to be upgraded and any missing plugins. Add-ons are highlighted if there is an available update for them. It is recommended that you check whether there are more recent versions of add-ons available and update their source code before continuing with this Moodle upgrade.';
+$string['pluginchecknotice'] = 'This page displays plugins that may require your attention during the upgrade. Highlighted items include new plugins that are about to be installed, updated plugins that are about to be upgraded and any missing plugins. Additional plugins are highlighted if there is an available update for them. It is recommended that you check whether there are more recent versions of plugins available and update their source code before continuing with this Moodle upgrade.';
 $string['plugindisable'] = 'Disable';
 $string['plugindisabled'] = 'Disabled';
 $string['pluginenable'] = 'Enable';
 $string['pluginenabled'] = 'Enabled';
+$string['release'] = 'Release';
 $string['requiredby'] = 'Required by: {$a}';
 $string['requires'] = 'Requires';
 $string['rootdir'] = 'Directory';
@@ -74,7 +75,7 @@ $string['somehighlighted'] = 'Number of plugins requiring your attention: {$a}';
 $string['somehighlightedinfo'] = 'Display the full list of installed plugins';
 $string['somehighlightedonly'] = 'Display only plugins requiring your attention';
 $string['source'] = 'Source';
-$string['sourceext'] = 'Add-on';
+$string['sourceext'] = 'Additional';
 $string['sourcestd'] = 'Standard';
 $string['status'] = 'Status';
 $string['status_delete'] = 'To be deleted';
@@ -87,6 +88,8 @@ $string['status_uptodate'] = 'Installed';
 $string['systemname'] = 'Identifier';
 $string['type_auth'] = 'Authentication method';
 $string['type_auth_plural'] = 'Authentication methods';
+$string['type_availability'] = 'Availability restriction';
+$string['type_availability_plural'] = 'Availability restrictions';
 $string['type_block'] = 'Block';
 $string['type_block_plural'] = 'Blocks';
 $string['type_cachelock'] = 'Cache lock handler';

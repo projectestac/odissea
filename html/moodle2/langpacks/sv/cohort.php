@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cohort', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,11 +33,8 @@ $string['backtocohorts'] = 'Tillbaka till kohorter';
 $string['bulkadd'] = 'Lägg till i kohort';
 $string['bulknocohort'] = 'Inga tillgängliga kohorter hittades';
 $string['cohort'] = 'Kohort';
-$string['cohort:assign'] = 'Tilldela deltagare i kohort';
-$string['cohort:manage'] = 'Administrera kohorter';
 $string['cohorts'] = 'Kohorter';
 $string['cohortsin'] = '{$a}: tillgängliga kohorter';
-$string['cohort:view'] = 'Använd kohorter och visa deltagare';
 $string['component'] = 'Källa';
 $string['currentusers'] = 'Aktuella användare';
 $string['currentusersmatching'] = 'Aktuella användare som matchar';
@@ -59,3 +56,4 @@ $string['searchcohort'] = 'Sök kohort';
 $string['selectfromcohort'] = 'Välj deltagare ur kohort';
 $string['unknowncohort'] = 'Okänd kohort ({$a})!';
 $string['useradded'] = 'Användare har lagts till kohort "{$a}"';
+$string['visible'] = 'Synlig';

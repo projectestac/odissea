@@ -17,7 +17,7 @@
 /**
  * This plugin is used to access equella repositories.
  *
- * @since 2.3
+ * @since Moodle 2.3
  * @package    repository_equella
  * @copyright  2012 Dongsheng Cai {@link http://dongsheng.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -30,7 +30,7 @@ require_once($CFG->dirroot . '/repository/lib.php');
 /**
  * repository_equella class implements equella_client
  *
- * @since 2.3
+ * @since Moodle 2.3
  * @package    repository_equella
  * @copyright  2012 Dongsheng Cai {@link http://dongsheng.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -174,7 +174,7 @@ class repository_equella extends repository {
      *   url: URL to the source (from parameters)
      */
     public function get_file($reference, $filename = '') {
-        global $USER;
+        global $USER, $CFG;
         $ref = @unserialize(base64_decode($reference));
         if (!isset($ref->url) || !($url = $this->appendtoken($ref->url))) {
             // Occurs when the user isn't known..
@@ -183,7 +183,7 @@ class repository_equella extends repository {
         $path = $this->prepare_file($filename);
         $cookiepathname = $this->prepare_file($USER->id. '_'. uniqid('', true). '.cookie');
         $c = new curl(array('cookie'=>$cookiepathname));
-        $result = $c->download_one($url, null, array('filepath' => $path, 'followlocation' => true, 'timeout' => self::GETFILE_TIMEOUT));
+        $result = $c->download_one($url, null, array('filepath' => $path, 'followlocation' => true, 'timeout' => $CFG->repositorygetfiletimeout));
         // Delete cookie jar.
         if (file_exists($cookiepathname)) {
             unlink($cookiepathname);
@@ -195,7 +195,7 @@ class repository_equella extends repository {
     }
 
     public function sync_reference(stored_file $file) {
-        global $USER;
+        global $USER, $CFG;
         if ($file->get_referencelastsync() + DAYSECS > time() || !$this->connection_result()) {
             // Synchronise not more often than once a day.
             // if we had several unsuccessfull attempts to connect to server - do not try any more.
@@ -212,7 +212,7 @@ class repository_equella extends repository {
         $c = new curl(array('cookie' => $cookiepathname));
         if (file_extension_in_typegroup($ref->filename, 'web_image')) {
             $path = $this->prepare_file('');
-            $result = $c->download_one($url, null, array('filepath' => $path, 'followlocation' => true, 'timeout' => self::SYNCIMAGE_TIMEOUT));
+            $result = $c->download_one($url, null, array('filepath' => $path, 'followlocation' => true, 'timeout' => $CFG->repositorysyncimagetimeout));
             if ($result === true) {
                 $fs = get_file_storage();
                 list($contenthash, $filesize, $newfile) = $fs->add_file_to_pool($path);
@@ -220,7 +220,7 @@ class repository_equella extends repository {
                 return true;
             }
         } else {
-            $result = $c->head($url, array('followlocation' => true, 'timeout' => self::SYNCFILE_TIMEOUT));
+            $result = $c->head($url, array('followlocation' => true, 'timeout' => $CFG->repositorysyncfiletimeout));
         }
         // Delete cookie jar.
         if (file_exists($cookiepathname)) {

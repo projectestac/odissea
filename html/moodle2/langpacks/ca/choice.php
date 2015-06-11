@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,11 +51,9 @@ $string['description'] = 'Descripció';
 $string['displayhorizontal'] = 'En horitzontal';
 $string['displaymode'] = 'Mode de visualització';
 $string['displayvertical'] = 'En vertical';
-$string['event_answer_created'] = 'S\'ha fet l\'elecció';
-$string['event_answer_updated'] = 'S\'ha actualitzat l\'elecció';
-$string['event_choice_viewed'] = 'S\'ha visualitzat l\'elecció';
-$string['event_instances_list_viewed'] = 'S\'ha visualitzat la llista d\'instàncies';
-$string['event_report_viewed'] = 'S\'ha visualitzat l\'informe d\'elecció';
+$string['eventanswercreated'] = 'S\'ha fet l\'elecció';
+$string['eventanswerupdated'] = 'S\'ha actualitzat l\'elecció';
+$string['eventreportviewed'] = 'S\'ha visualitzat l\'informe d\'elecció';
 $string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible.';
 $string['full'] = '(Complet)';
 $string['havetologin'] = 'Abans de trametre una resposta heu d\'entrar amb el vostre nom d\'usuari i contrasenya.';

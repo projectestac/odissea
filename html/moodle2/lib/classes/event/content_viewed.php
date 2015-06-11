@@ -16,8 +16,11 @@
 /**
  * Abstract event for content viewing.
  *
+ * This class has been deprecated, please extend base event or other relevent abstract class.
+ *
  * @package    core
  * @copyright  2013 Ankit Agarwal
+ * @deprecated since Moodle 2.7
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -25,23 +28,24 @@ namespace core\event;
 
 defined('MOODLE_INTERNAL') || die();
 
+debugging('core\event\content_viewed has been deprecated. Please extend base event or other relevant abstract class.',
+        DEBUG_DEVELOPER);
+
 /**
  * Class content_viewed.
  *
- * Base class for a content view event. Each plugin must extend this to create their own content view event.
+ * This class has been deprecated, please extend base event or other relevent abstract class.
  *
- * An example usage:-
- *  $event = \report_participation\event\content_viewed::create(array('courseid' => $course->id,
- *          'other' => array('content' => 'participants'));
- *  $event->set_page_detail();
- *  $event->set_legacy_logdata(array($course->id, "course", "report participation",
- *          "report/participation/index.php?id=$course->id", $course->id));
- *  $event->trigger();
- * where \report_participation\event\content_viewed extends \core\event\content_viewed
+ * @property-read array $other {
+ *      Extra information about the event.
+ *
+ *      - string content: name of the content viewed.
+ * }
  *
  * @package    core
  * @since      Moodle 2.6
  * @copyright  2013 Ankit Agarwal
+ * @deprecated since Moodle 2.7
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 abstract class content_viewed extends base {
@@ -56,7 +60,7 @@ abstract class content_viewed extends base {
         global $PAGE;
 
         $this->data['crud'] = 'r';
-        $this->data['level'] = self::LEVEL_OTHER;
+        $this->data['edulevel'] = self::LEVEL_OTHER;
         $this->context = $PAGE->context;
     }
 
@@ -88,7 +92,7 @@ abstract class content_viewed extends base {
      * @return string
      */
     public function get_description() {
-        return 'User with id ' . $this->userid . ' viewed content';
+        return "The user with id '$this->userid' viewed content.";
     }
 
     /**
@@ -116,11 +120,10 @@ abstract class content_viewed extends base {
      * @return void
      */
     protected function validate_data() {
-        if (debugging('', DEBUG_DEVELOPER)) {
-            // Make sure this class is never used without a content identifier.
-            if (empty($this->other['content'])) {
-                throw new \coding_exception('content_viewed event must define content identifier.');
-            }
+        parent::validate_data();
+        // Make sure this class is never used without a content identifier.
+        if (empty($this->other['content'])) {
+            throw new \coding_exception('The \'content\' value must be set in other.');
         }
     }
 }

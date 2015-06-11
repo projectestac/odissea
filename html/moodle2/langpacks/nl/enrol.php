@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['enroltimeend'] = 'Aanmelding eindigt';
 $string['enroltimestart'] = 'Aanmelding begint';
 $string['enrolusage'] = 'Exemplaren / Aanmeldingen';
 $string['enrolusers'] = 'Meld gebruikers aan';
+$string['enrolxusers'] = '{$a} gebruikers aanmelden';
 $string['errajaxfailedenrol'] = 'Aanmelden gebruiker mislukt';
 $string['errajaxsearch'] = 'Fout bij het zoeken naar gebruikers';
 $string['erroreditenrolment'] = 'Er is een fout opgetreden bij het bewerken van de aanmelding van een gebruiker';
@@ -89,6 +90,7 @@ $string['extremovedsuspend'] = 'Schakel aanmelding bij de cursus uit';
 $string['extremovedsuspendnoroles'] = 'Schakel aanmelding bij de cursus uit en verwijder rollen';
 $string['extremovedunenrol'] = 'Meld de gebruiker af van de cursus';
 $string['finishenrollingusers'] = 'beëindig het aanmelden van gebruikers';
+$string['foundxcohorts'] = '{$a} site-brede groepen gevonden';
 $string['instanceeditselfwarning'] = 'Waarschuwing:';
 $string['instanceeditselfwarningtext'] = 'Je bent in deze cursus aangemeld door deze aanmeldingsmethode. Het wijzigen hiervan kan je toegang tot deze cursus onmogelijk maken.';
 $string['invalidenrolinstance'] = 'Ongeldige aanmelding';

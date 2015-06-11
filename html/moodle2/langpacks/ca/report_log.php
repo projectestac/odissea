@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Component';
+$string['eventcontext'] = 'Context de l\'esdeveniment';
+$string['eventloggedas'] = '{$a->realusername} com a {$a->asusername}';
+$string['eventorigin'] = 'Origen';
+$string['eventrelatedfullnameuser'] = 'Usuari afectat';
+$string['eventreportviewed'] = 'S\'ha visualitzat l\'informe dels registres';
+$string['eventuserreportviewed'] = 'S\'ha visualitzat l\'informe dels registres de l\'usuari';
 $string['logsformat'] = 'Format dels informes';
 $string['log:view'] = 'Veure els registres del curs';
 $string['log:viewtoday'] = 'Veure els registres d\'avui';
-$string['mnetlogwarning'] = 'Si els vostres clients MNet estan utilitzant el Moodle 2.7 o superior, potser no rebreu cap registre.';
+$string['nologreaderenabled'] = 'No s\'ha habilitat cap lector de registres';
 $string['page'] = 'Pàgina {$a}';
 $string['page-report-log-index'] = 'Informe d\'activitat del curs';
 $string['page-report-log-user'] = 'Informe d\'activitat de l\'usuari';
 $string['page-report-log-x'] = 'Qualsevol informe d\'activitat';
 $string['pluginname'] = 'Registres';
+$string['selectlogreader'] = 'Escolliu el lector de registres';

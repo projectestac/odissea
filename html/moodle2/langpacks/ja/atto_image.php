@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_image', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,13 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilityhint'] = '<p>ウェブコンテンツアクセシビリティガイドライン (Web content accessibility guidelines - WCAG):<br/><ul><li><a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">代替テキスト</a></li></ul></p>';
+$string['alignment'] = '配置';
+$string['alignment_bottom'] = 'ボトム';
+$string['alignment_left'] = '左';
+$string['alignment_middle'] = '中央';
+$string['alignment_right'] = '右';
+$string['alignment_top'] = 'トップ';
 $string['browserepositories'] = 'リポジトリを参照する ...';
+$string['constrain'] = '自動サイズ';
 $string['createimage'] = 'イメージを挿入する';
-$string['enteralt'] = '代替テキストを入力する';
+$string['customstyle'] = 'カスタムスタイル';
+$string['enteralt'] = '閲覧できない人に対して、このイメージを説明します。';
 $string['enterurl'] = 'URIを入力する';
 $string['height'] = '高さ';
-$string['image'] = 'イメージ';
+$string['imageproperties'] = 'イメージプロパティ';
 $string['pluginname'] = 'イメージ';
+$string['presentation'] = '説明は必須ではありません。';
+$string['presentationoraltrequired'] = '説明が必要ではないと設定されていない限り、イメージには説明が必要です。';
 $string['preview'] = 'プレビュー';
+$string['saveimage'] = 'イメージを保存する';
+$string['size'] = 'サイズ';
 $string['width'] = '幅';

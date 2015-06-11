@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Неопределенное положение';
 $string['layoutvertical'] = 'Вертикальная колонка переключателей';
 $string['nooptionsforsubquestion'] = 'Невозможно получить варианты для части вопроса # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'Вопрос «Вложенные ответы» (Cloze) «<strong>{$a}</strong>» не содержит ни одного вопроса';
+$string['pleaseananswerallparts'] = 'Ответьте на все части вопроса';
 $string['pluginname'] = 'Вложенные ответы (Cloze)';
 $string['pluginnameadding'] = 'Добавление вопроса «Вложенные ответы» (Cloze)';
 $string['pluginnameediting'] = 'Редактирование вопроса «Вложенные ответы» (Cloze)';

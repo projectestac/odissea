@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Contraer todas as listas de cursos';
 $string['configotherexpanded'] = 'Se está activado, expándese a lista de Outros cursos de xeito predeterminado, a non ser que estea anulado polas preferencias do usuario.';
 $string['configpreservestates'] = 'Se está activado, os estados contraida/expandida estabelecidos polo usuario almacenaranse e empregaranse en cada carga.';
 $string['course_overview:addinstance'] = 'Engadir un novo bloque de vista xeral do curso';
-$string['course_overview:myaddinstance'] = 'Engadir un novo bloque de vista xeral ao meu cartafol persoal';
+$string['course_overview:myaddinstance'] = 'Engadir un novo bloque de vista xeral de curso na área persoal';
 $string['defaultmaxcourses'] = 'Máximo de cursos como predeterminado';
 $string['defaultmaxcoursesdesc'] = 'Máximo de cursos que deben presentarse no bloque de Vista xeral do curso, 0 amosará todos os cursos';
 $string['expandall'] = 'Expandirá todas as listas de cursos';

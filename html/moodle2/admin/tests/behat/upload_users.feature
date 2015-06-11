@@ -1,4 +1,4 @@
-@core @core_admin @_only_local @_file_upload
+@core @core_admin @_file_upload
 Feature: Upload users
   In order to add users to the system
   As an admin
@@ -6,10 +6,10 @@ Feature: Upload users
 
   @javascript
   Scenario: Upload users enrolling them on courses and groups
-    Given the following "courses" exists:
+    Given the following "courses" exist:
       | fullname | shortname | category |
       | Maths | math102 | 0 |
-    And the following "groups" exists:
+    And the following "groups" exist:
       | name | course | idnumber |
       | Section 1 | math102 | S1 |
       | Section 3 | math102 | S3 |
@@ -21,7 +21,7 @@ Feature: Upload users
     And I should see "Tom"
     And I should see "Jones"
     And I should see "verysecret"
-    And I should see "jonest@someplace.edu"
+    And I should see "jonest@example.com"
     And I should see "Reznor"
     And I should see "course1"
     And I should see "math102"
@@ -32,10 +32,10 @@ Feature: Upload users
     And I follow "Browse list of users"
     And I should see "Tom Jones"
     And I should see "Trent Reznor"
-    And I should see "reznor@someplace.edu"
+    And I should see "reznor@example.com"
     And I am on homepage
     And I follow "Maths"
     And I expand "Users" node
     And I follow "Groups"
-    And I select "Section 1 (1)" from "groups"
+    And I set the field "groups" to "Section 1 (1)"
     And the "members" select box should contain "Tom Jones"

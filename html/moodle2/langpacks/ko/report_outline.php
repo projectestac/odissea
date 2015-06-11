@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_outline', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventactivityreportviewed'] = '활동 보고서 봄';
+$string['eventoutlinereportviewed'] = '개요 보고서 봄';
+$string['neverseen'] = '보여지지 않음';
+$string['nologreaderenabled'] = '활성화된 로그 리더가 없습니다.';
 $string['outline:view'] = '활동 보고서 보기';
 $string['page-report-outline-index'] = '강좌 개요 보고서';
 $string['page-report-outline-user'] = '사용자 강좌 개요 보고서';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'resource', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,6 @@ Un fichier peut être utilisé pour
 * inclure un mini site web comme ressource de cours
 * fournir des fichiers partiellement terminés que les participants doivent modifier et remettre terminés comme devoir';
 $string['modulenameplural'] = 'Fichiers';
-$string['neverseen'] = 'Jamais consulté';
 $string['notmigrated'] = 'Cet ancien type de ressource ({$a}) n\'a pas été copié.';
 $string['optionsheader'] = 'Afficher les options';
 $string['page-mod-resource-x'] = 'Toute page du module fichier';

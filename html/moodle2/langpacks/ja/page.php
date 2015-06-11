@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'page', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,6 @@ $string['createpage'] = '新しいページリソースを作成する';
 $string['displayoptions'] = '利用可能な表示オプション';
 $string['displayselect'] = '表示';
 $string['displayselectexplain'] = '表示タイプを選択してください。';
-$string['eventcoursemoduleviewed'] = 'ページリソースが閲覧されました。';
-$string['eventinstanceslistviewed'] = 'ページインスタンス一覧が閲覧されました。';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -49,7 +47,6 @@ $string['modulename_help'] = 'ページモジュールにおいて、教師は�
 * コースの利用規約を表示、またはコースシラバス概要を表示するため
 * 説明文と共にいくつかのビデオまたはサウンドファイルを埋め込むため';
 $string['modulenameplural'] = 'ページ';
-$string['neverseen'] = '未確認';
 $string['optionsheader'] = '表示オプション';
 $string['page:addinstance'] = '新しいページリソースを追加する';
 $string['page-mod-page-x'] = 'すべてのページモジュールページ';
@@ -60,5 +57,7 @@ $string['popupheight'] = 'ポップアップ高 (ピクセル)';
 $string['popupheightexplain'] = 'ポップアップウィンドウのデフォルト高を指定してください。';
 $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
+$string['printheading'] = 'ページ名を表示する';
+$string['printheadingexplain'] = 'コンテンツの上にページ名を表示しますか?';
 $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの上にページ説明を表示しますか?';

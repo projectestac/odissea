@@ -246,16 +246,16 @@ class format_simple_renderer extends format_topics_renderer {
 	            }
 
 				$modcontext = context_module::instance($mod->id);
-				
+
 				$iconsize = !empty($course->simpleiconsize)?$course->simpleiconsize:self::DEFAULTICONSIZE;
-				
+
 				$liclasses = array();
 				$liclasses[] = 'activity';
 				$liclasses[] = $mod->modname;
 				$liclasses[] = 'modtype_'.$mod->modname;
 				$liclasses[] = 'size_'.$iconsize;
-				
-				$extraclasses = $mod->get_extra_classes();
+
+				$extraclasses = $mod->extraclasses;
 				if ($extraclasses) {
 					$liclasses = array_merge($liclasses, explode(' ', $extraclasses));
 				}
@@ -268,14 +268,14 @@ class format_simple_renderer extends format_topics_renderer {
 				$content = $cm->get_formatted_content(array('overflowdiv' => true, 'noclean' => true));
         		$instancename = $cm->get_formatted_name();
 
-				//Accessibility: for files get description via icon, this is very ugly hack!
+				// Accessibility: for files get description via icon, this is very ugly hack!
 				$altname = '';
 				$altname = $mod->modfullname;
 				// Avoid unnecessary duplication: if e.g. a forum name already
 				// includes the word forum (or Forum, etc) then it is unhelpful
 				// to include that in the accessible description that is added.
-				if (false !== strpos(textlib::strtolower($instancename),
-						textlib::strtolower($altname))) {
+				if (false !== strpos(core_text::strtolower($instancename),
+						core_text::strtolower($altname))) {
 					$altname = '';
 				}
 				// File type after name, for alphabetic lists (screen reader).
@@ -292,18 +292,18 @@ class format_simple_renderer extends format_topics_renderer {
 
 				// Get on-click attribute value if specified and decode the onclick - it
                 // has already been encoded for display (puke).
-                $onclick = htmlspecialchars_decode($mod->get_on_click(), ENT_QUOTES);
+                $onclick = htmlspecialchars_decode($mod->onclick, ENT_QUOTES);
 
-				if ($url = $mod->get_url()) {
+				if ($url = $mod->url) {
 					// Display link itself.
 
 					// resize mimetype icons to a proper size
-					$iconurl = simple_get_icon_url($mod, $modnumber);
+					$iconurl = simple_get_icon_url($mod, $modnumber, $iconsize);
 					$pattern = '/f\/[a-zA-Z0-9]*-(\d+)\D*$/';
 					preg_match($pattern, $iconurl, $matches);
 					if ($matches) {
-						$baseiconurl = str_replace($matches[0],'',$iconurl);
-						$relativeiconurl = str_replace($matches[1],$iconsize,$matches[0]);
+						$baseiconurl = str_replace($matches[0], "", $iconurl);
+						$relativeiconurl = str_replace($matches[1], $iconsize, $matches[0]);
 						$iconurl = $baseiconurl.$relativeiconurl;
 					}
 					$html = '<div class="simple_image" style="background-image: url(\''.$iconurl.'\');"></div>';

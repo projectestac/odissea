@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradereport_user', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   gradereport_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'Cijfer gebruikersrapport bekeken';
 $string['pluginname'] = 'Rapport';
 $string['tablesummary'] = 'De tabel is geschikt al een lijst met beoordeelde items, waaronder ook categorieën van beoordeelde items. Wanneer items in een categorie ondergebracht zijn, worden zij ook zo getoond.';
 $string['user:view'] = 'Bekijk je eigen rapport';

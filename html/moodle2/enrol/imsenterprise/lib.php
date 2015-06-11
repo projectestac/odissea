@@ -68,7 +68,8 @@ class enrol_imsenterprise_plugin extends enrol_plugin {
      * Read in an IMS Enterprise file.
      * Originally designed to handle v1.1 files but should be able to handle
      * earlier types as well, I believe.
-     *
+     * This cron feature has been converted to a scheduled task and it can now be scheduled
+     * from the UI.
      */
     public function cron() {
         global $CFG;
@@ -94,7 +95,7 @@ class enrol_imsenterprise_plugin extends enrol_plugin {
 
         $fileisnew = false;
         if ( file_exists($filename) ) {
-            @set_time_limit(0);
+            core_php_time_limit::raise();
             $starttime = time();
 
             $this->log_line('----------------------------------------------------------------------');
@@ -280,6 +281,7 @@ class enrol_imsenterprise_plugin extends enrol_plugin {
         if ($createnewcourses) {
             require_once("$CFG->dirroot/course/lib.php");
         }
+
         // Process tag contents.
         $group = new stdClass();
         if (preg_match('{<sourcedid>.*?<id>(.+?)</id>.*?</sourcedid>}is', $tagcontents, $matches)) {
@@ -380,24 +382,11 @@ class enrol_imsenterprise_plugin extends enrol_plugin {
                         } else {
                             $course->category = $this->get_default_category_id();
                         }
-                        $course->timecreated = time();
                         $course->startdate = time();
                         // Choose a sort order that puts us at the start of the list!
                         $course->sortorder = 0;
-                        $courseid = $DB->insert_record('course', $course);
 
-                        // Setup default enrolment plugins.
-                        $course->id = $courseid;
-                        enrol_course_updated(true, $course, null);
-
-                        // Setup the blocks.
-                        $course = $DB->get_record('course', array('id' => $courseid));
-                        blocks_add_default_course_blocks($course);
-
-                        // Create default 0-section.
-                        course_create_sections_if_missing($course, 0);
-
-                        add_to_log(SITEID, "course", "new", "view.php?id=$course->id", "$course->fullname (ID $course->id)");
+                        $course = create_course($course);
 
                         $this->log_line("Created course $coursecode in Moodle (Moodle ID is $course->id)");
                     }
@@ -803,5 +792,27 @@ class enrol_imsenterprise_plugin extends enrol_plugin {
         }
 
         return $defaultcategoryid;
+    }
+
+    /**
+     * Is it possible to delete enrol instance via standard UI?
+     *
+     * @param object $instance
+     * @return bool
+     */
+    public function can_delete_instance($instance) {
+        $context = context_course::instance($instance->courseid);
+        return has_capability('enrol/imsenterprise:config', $context);
+    }
+
+    /**
+     * Is it possible to hide/show enrol instance via standard UI?
+     *
+     * @param stdClass $instance
+     * @return bool
+     */
+    public function can_hide_show_instance($instance) {
+        $context = context_course::instance($instance->courseid);
+        return has_capability('enrol/imsenterprise:config', $context);
     }
 }

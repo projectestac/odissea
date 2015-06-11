@@ -17,8 +17,7 @@
 /**
  * This page allows instructors to configure course level tool providers.
  *
- * @package    mod
- * @subpackage lti
+ * @package mod_lti
  * @copyright  Copyright (c) 2011 Moodlerooms Inc. (http://www.moodlerooms.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @author     Chris Scribner
@@ -62,7 +61,7 @@ if ($data = $form->get_data()) {
         $fromdb = lti_get_type($typeid);
         $json = json_encode($fromdb);
 
-        //Output script to update the calling window.
+        // Output script to update the calling window.
         $script = "
             <html>
                 <script type=\"text/javascript\">
@@ -83,7 +82,7 @@ if ($data = $form->get_data()) {
         $fromdb = lti_get_type($id);
         $json = json_encode($fromdb);
 
-        //Output script to update the calling window.
+        // Output script to update the calling window.
         $script = "
             <html>
                 <script type=\"text/javascript\">
@@ -110,7 +109,7 @@ if ($data = $form->get_data()) {
     die;
 }
 
-//Delete action is called via ajax
+// Delete action is called via ajax.
 if ($action == 'delete') {
     lti_delete_type($typeid);
     die;

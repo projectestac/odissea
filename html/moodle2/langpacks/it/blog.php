@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'blog', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,7 +72,7 @@ $string['courseblogs'] = 'Gli utenti possono vedere solo i blog  delle persone c
 $string['deleteblogassociations'] = 'Elimina associazioni blog';
 $string['deleteblogassociations_help'] = 'Consente l\'eliminazione dell\'associazione degli interventi blog da questo corso e dalle attività e risorse correlate. Gli interventi non saranno eliminati.';
 $string['deleteexternalblog'] = 'Elimina la registrazione di questo blog esterno';
-$string['deleteotagswarn'] = 'Sei sicuro di voler rimuovere questi tag da tutti gli interventi di blog e dal sistema?';
+$string['deleteotagswarn'] = 'Sei sicuro di rimuovere questi tag da tutti gli interventi di blog e dal sistema?';
 $string['description'] = 'Descrizione';
 $string['description_help'] = 'Inserisci una frase descrittiva dei contenuti del tuo blog esterno. (Se non inserisci nessuna descrizione, verrà utilizzata la descrizione presa dal blog esterno).';
 $string['donothaveblog'] = 'Spiacente, ma non hai un tuo blog.';
@@ -87,6 +87,8 @@ $string['entrybodyonlydesc'] = 'Descrizione intervento';
 $string['entryerrornotyours'] = 'Questo intervento non ti appartiene';
 $string['entrysaved'] = 'Il tuo intervento è stato salvato';
 $string['entrytitle'] = 'Titolo intervento';
+$string['eventblogassociationadded'] = 'Creata associazione blog';
+$string['eventblogentriesviewed'] = 'Visualizzato intervento blog';
 $string['evententryadded'] = 'Inserito intervento blog';
 $string['evententrydeleted'] = 'Eliminato intervento blog';
 $string['evententryupdated'] = 'Aggiornato intervento blog';

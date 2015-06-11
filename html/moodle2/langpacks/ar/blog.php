@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'blog', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,8 @@ $string['blogentriesbyuseraboutmodule'] = 'التدوينات عن {$a->mod} ب�
 $string['blogentrybyuser'] = 'تدوينة بواسطة {$a}';
 $string['blogpreferences'] = 'تفضيلات البلوق';
 $string['blogs'] = 'بلوقات';
+$string['blogscourse'] = 'مدونة المقرر الدراسي';
+$string['blogssite'] = 'مدونة الموقع الرئيسسي';
 $string['blogtags'] = 'علامات بلوق';
 $string['cannotviewcourseblog'] = 'ليس لديك الإذن المطلوب لعرض المدونات في هذا المقرر';
 $string['cannotviewcourseorgroupblog'] = 'ليس لديك الإذن المطلوب لعرض المدونات في هذا المقرر أو هذه المجموعة';
@@ -86,6 +88,10 @@ $string['entrybodyonlydesc'] = 'وصف مدخل';
 $string['entryerrornotyours'] = 'هذا المدخل ليس خاص بك';
 $string['entrysaved'] = 'تم حفظ مشاركتك';
 $string['entrytitle'] = 'عنوان مدخل';
+$string['eventblogassociationadded'] = 'انشاء المدونة';
+$string['eventblogentriesviewed'] = 'شوهدت محتويات المدونة';
+$string['evententryadded'] = 'اضافة محتوى المدنة بنجاح';
+$string['evententrydeleted'] = 'حذف محتوى المدونة بنجاح';
 $string['evententryupdated'] = 'تم تحديث مدخل بلوق';
 $string['externalblogcrontime'] = 'جدولة كرون للمدونة الخارجية';
 $string['externalblogdeleteconfirm'] = 'هل حقاً تريد إلغاء تسجيل هذه المدونة الخارجية؟';
@@ -141,6 +147,7 @@ $string['publishtoworld'] = 'أي أحد في العالم';
 $string['readfirst'] = 'اقرأ هذا أولاً';
 $string['relatedblogentries'] = 'تدوينات ذات صلة';
 $string['retrievedfrom'] = 'جلب من';
+$string['rssfeed'] = 'مغذي المدونة  باستخدام تكنولوجي  RSS';
 $string['searchterm'] = 'البحث: {$a}';
 $string['settingsupdatederror'] = 'لقد حدث خطاء ما، لا يمكن تحديث إعدادات تفضيلات بلوق';
 $string['siteblog'] = 'بلوق الموقع: {$a}';

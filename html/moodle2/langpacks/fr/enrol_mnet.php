@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_mnet', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'Des instances du plugin d\'inscription MNet existes déjà pour ce serveur. Une seule instance par serveur et/ou une pour tous les serveurs est autorisée.';
 $string['instancename'] = 'Nom de la méthode d\'inscription';
 $string['instancename_help'] = 'Vous pouvez renommer cette instance du plugin d\'inscription MNet. Si le champ n\'est pas renseigné, le nom par défaut sera utilisé. Ce nom comprend le nom du serveur distant et le rôle attribué à ses utilisateurs.';
+$string['mnet:config'] = 'Configurer les instances d\'inscription MNet';
 $string['mnet_enrol_description'] = 'En publiant ce service, vous autorisez les administrateurs de {$a} à inscrire leurs étudiants à des cours sur votre Moodle.<br />
 <ul>
 <li><em>Dépendance</em> : vous devez également <strong>vous abonner</strong> au service SSO (fournisseur d\'identité) de {$a}.</li>

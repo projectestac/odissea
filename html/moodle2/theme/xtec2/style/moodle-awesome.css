@@ -189,9 +189,12 @@ i.fa.icon-pre, .dir-rtl i.fa.icon-post {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     color:[[setting:color3]];
-    margin-left:.3em;
-    margin-right:.5em;
+    margin-left: 0;
+    margin-right:.3em;
     font-weight: normal;
+    font-size: 1.5em;
+    line-height: 0px;
+    vertical-align: middle;
 }
 .block_login .username label:before{
     content:"\f007";

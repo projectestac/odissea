@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'editor_tinymce', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -193,7 +193,7 @@ $string['advimage_dlg:long_desc'] = 'Ausführliche Beschreibung';
 $string['advimage_dlg:ltr'] = 'Links nach rechts';
 $string['advimage_dlg:map'] = 'Image-Map';
 $string['advimage_dlg:misc'] = 'Verschiedenes';
-$string['advimage_dlg:missing_alt'] = 'Möchten Sie wirklich keine Bildbeschreibung eingeben? Nutzer/innen mit Einschränkungen im Sehen, Nutzer/innen, die sich im Browser keine Bilder anzeigen lassen oder Nur-Text-Browser verwenden, enthalten dann keine Informationen zum Bild.';
+$string['advimage_dlg:missing_alt'] = 'Möchten Sie wirklich keine Bildbeschreibung eingeben? Ohne Beschreibung könnte es für Nutzer/innen mit Einschränkungen oder für Nutzer/innen ohne Bildanzeige im Browser schwierig sein, die Bildinhalte zu erfassen.';
 $string['advimage_dlg:mouseout'] = 'ohne Mauskontakt';
 $string['advimage_dlg:mouseover'] = 'bei Mauskontakt';
 $string['advimage_dlg:preview'] = 'Vorschau';
@@ -768,7 +768,7 @@ $string['table_dlg:langdir'] = 'Schriftrichtung';
 $string['table_dlg:ltr'] = 'Links nach rechts';
 $string['table_dlg:merge_cells_title'] = 'Zellen vereinen';
 $string['table_dlg:mime'] = 'MIME-Type';
-$string['table_dlg:missing_scope'] = 'Möchten Sie wirklich keine alternative Beschreibung für diese Tabellenüberschrift angeben?';
+$string['table_dlg:missing_scope'] = 'Möchten Sie wirklich keine Beschreibung für die Tabellenüberschrift angeben? Ohne Beschreibung könnte es für Nutzer/innen mit Einschränkungen schwierig sein, die Tabelleninhalte zu erfassen.';
 $string['table_dlg:row_all'] = 'Alle Zeilen verändern';
 $string['table_dlg:row_even'] = 'Gerade Zeilen verändern';
 $string['table_dlg:rowgroup'] = 'Zeilen gruppieren';

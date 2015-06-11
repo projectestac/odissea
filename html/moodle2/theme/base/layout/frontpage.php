@@ -1,4 +1,26 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * The frontpage layout for the base theme.
+ *
+ * @package   theme_base
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
@@ -44,7 +66,7 @@ echo $OUTPUT->doctype() ?>
     <div id="page-header" class="clearfix">
         <h1 class="headermain"><?php echo $PAGE->heading ?></h1>
         <div class="headermenu"><?php
-            echo $OUTPUT->login_info();
+            echo $OUTPUT->user_menu();
             echo $OUTPUT->lang_menu();
             echo $PAGE->headingmenu;
         ?></div>

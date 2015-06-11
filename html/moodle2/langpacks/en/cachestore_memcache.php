@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'cachestore_memcache', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clustered'] = 'Enable clustered servers';
+$string['clusteredheader'] = 'Split servers';
+$string['clustered_help'] = 'This is used to allow read-one, set-multi functionality.
+
+The intended use case is to create an improved store for load-balanced configurations. The store will fetch from one server (usually localhost), but set to many (all the servers in the load-balance pool). For caches with very high read to set ratios, this saves a significant amount of network overhead.
+
+When this setting is enabled, the server listed above will be used for fetching.';
 $string['pluginname'] = 'Memcache';
 $string['prefix'] = 'Key prefix';
 $string['prefix_help'] = 'This prefix is used for all key names on the memcache server.
@@ -32,6 +39,7 @@ $string['prefix_help'] = 'This prefix is used for all key names on the memcache 
 * Due to key length restrictions, a maximum of 5 characters is permitted.';
 $string['prefixinvalid'] = 'Invalid prefix. You can only use a-z A-Z 0-9-_.';
 $string['servers'] = 'Servers';
+$string['serversclusterinvalid'] = 'Exactly one server is required when clustering is enabled.';
 $string['servers_help'] = 'This sets the servers that should be utilised by this memcache adapter.
 Servers should be defined one per line and consist of a server address and optionally a port and weight.
 If no port is provided then the default port (11211) is used.
@@ -41,8 +49,21 @@ For example:
 server.url.com
 ipaddress:port
 servername:port:weight
-</pre>';
+</pre>
+
+If *Enable clustered servers* is enabled below, there must be only one server listed here. This would usually be a name that always resolves to the local manchine, like 127.0.0.1 or localhost.';
 $string['sessionhandlerconflict'] = 'Warning: A memcache instance ({$a}) has being configured to use the same memcached server as sessions. Purging all caches will lead to sessions also being purged.';
+$string['setservers'] = 'Set Servers';
+$string['setservers_help'] = 'This is the list of servers that will updated when data is modified in the cache. Generally the fully qualified name of each server in the pool.
+It **must** include the server listed in *Servers* above, even if by a different hostname.
+Servers should be defined one per line and consist of a server address and optionally a port.
+If no port is provided then the default port (11211) is used.
+
+For example:
+<pre>
+server.url.com
+ipaddress:port
+</pre>';
 $string['testservers'] = 'Test servers';
-$string['testservers_desc'] = 'The test servers get used for unit tests and for performance tests. It is entirely optional to set up test servers. Servers should be defined one per line and consist of a server address and optionally a port and weight.
-If no port is provided then the default port (11211) is used.';
+$string['testservers_desc'] = 'One or more connection strings for memcache servers to test against. If a test server has been specified then memcache performance can be tested using the cache performance page in the administration block.
+As an example: 127.0.0.1:11211';

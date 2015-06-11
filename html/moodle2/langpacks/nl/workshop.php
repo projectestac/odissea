@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshop', language 'nl', branch 'MOODLE_28_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,17 @@ $string['evaluation'] = 'Evaluatie van de beoordeling';
 $string['evaluationmethod'] = 'Methode voor de evaluatie van de beoordeling';
 $string['evaluationmethod_help'] = 'De beoordelingsevaluatiemethode bepaalt hoe het cijfer voor de beoordeling wordt berekend. Je kunt laten herberekenen met verschillende instellingen tenzij je tevreden bent met het resultaat.';
 $string['evaluationsettings'] = 'Instellingen voor het cijfer van de evaluatie';
-$string['event_assessable_uploaded'] = 'Er is een inzending geüploaded';
+$string['eventassessableuploaded'] = 'Er is een inzending geüploaded';
+$string['eventassessmentevaluated'] = 'Beoordeling geëvalueerd';
+$string['eventassessmentevaluationsreset'] = 'Beoordelingsevaluaties gereset';
+$string['eventassessmentreevaluated'] = 'Beoordelingen opnieuw geëvalueerd';
+$string['eventphaseswitched'] = 'Fase verplaatst';
+$string['eventsubmissionassessed'] = 'Inzending beoordeeld';
+$string['eventsubmissionassessmentsreset'] = 'Inzendingsbeoordelingen gewist';
+$string['eventsubmissioncreated'] = 'Inzending gemaakt';
+$string['eventsubmissionreassessed'] = 'Inzending opnieuw beoordeeld';
+$string['eventsubmissionupdated'] = 'Inzending aangepast';
+$string['eventsubmissionviewed'] = 'Inzending bekeken';
 $string['example'] = 'Voorbeeldtaak';
 $string['exampleadd'] = 'Voeg een voorbeeldtaak toe';
 $string['exampleassess'] = 'Beoordeel voorbeeldtaak';
@@ -172,7 +182,7 @@ Leerlingen kunnen gelijk welke digitale inhoud (bestanden) insturen, zoals docum
 
 Inzendingen worden beoordeeld via een beoordelingsformulier met meerdere criteria dat opgesteld is door de leraar. Het peerevaluatieproces kan op voorhand geoefend worden door een voorbeeldinzending die de leraar ingestuurd heeft, samen met een referentiebeoordeling. Leerlingen kunnen één of meer taken van hun medeleerlingen beoordelen. De ingestuurde documenten en de beoordelaars kunnen anoniem zijn indien gewenst.
 
-Leerlingen krijgen twee cijfers voor een workshopactiviteit - een cijfer voor hun ingestuurde taak en een cijfer voor de evaluatie van de taak van de medeleerling. Beide cijfers worden opgenomen in het puntenboek.';
+Leerlingen krijgen twee cijfers voor een workshopactiviteit - een cijfer voor hun ingestuurde taak en een cijfer voor de evaluatie van de taak van de medeleerling. Beide cijfers worden opgenomen in de cijferlijst.';
 $string['modulenameplural'] = 'Workshops';
 $string['mysubmission'] = 'Mijn inzending';
 $string['nattachments'] = 'Maximaal aantal bijlagen bij een taak';
@@ -274,7 +284,7 @@ $string['switchphase20info'] = 'Je gaat de Workshop naar de <strong>Insturen fas
 $string['switchphase30auto'] = 'De workshop zal automatisch naar de evaluatiefase schakelen na  {$a->daydatetime} ({$a->distanceday})';
 $string['switchphase30info'] = 'Je gaat de Workshop in de <strong>Beoordelingsfase</strong> schakelen. In deze fase kunnen beoordelaars de taken beoordelen die ze toegewezen gekregen hebben (binnen de beoordelings data indien ingesteld).';
 $string['switchphase40info'] = 'Je gaat de Workshop in de <strong>Evaluatiecijfers fase</strong> schakelen. In deze fase kunnen gebruikers hun taak en hun beoordelingen niet meer wijzigen. Leraren kunnen in deze fase de evaluatietools gebruiken om een eindcijfer te berekenen en om feedback aan de leerlingen en beoordelaars te geven.';
-$string['switchphase50info'] = 'Je gaat de Workshop sluiten. Hierdoor zullen de berekende cijfers in het puntenboek verschijnen. Leerlingen kunnen dan hun taken en de beoordelingen ervan bekijken .';
+$string['switchphase50info'] = 'Je gaat de Workshop sluiten. Hierdoor zullen de berekende cijfers in de cijferlijst verschijnen. Leerlingen kunnen dan hun taken en de beoordelingen ervan bekijken .';
 $string['taskassesspeers'] = 'Evalueer anderen';
 $string['taskassesspeersdetails'] = 'totaal: {$a->total}<br />te doen: {$a->todo}';
 $string['taskassessself'] = 'Evalueer jezelf';
@@ -316,7 +326,6 @@ $string['workshop:viewallassessments'] = 'Bekijk alle beoordelingen';
 $string['workshop:viewallsubmissions'] = 'Bekijk alle taken';
 $string['workshop:viewauthornames'] = 'Bekijk de namen';
 $string['workshop:viewauthorpublished'] = 'Bekijk de namen van de gepubliceerde taken';
-$string['workshopviewed'] = 'Workshop bekeken';
 $string['workshop:viewpublishedsubmissions'] = 'Bekijk gepubliceerde taken';
 $string['workshop:viewreviewernames'] = 'Bekijk de namen van de beoordelaars';
 $string['yourassessment'] = 'Jouw beoordeling';

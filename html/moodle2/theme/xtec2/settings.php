@@ -34,15 +34,16 @@ if ($ADMIN->fulltree) {
 
     require_once($CFG->dirroot.'/theme/xtec2/lib.php');
 
-	global $PAGE;
-	$PAGE->requires->js_init_code('xtec2_theme_onload();');
+    global $PAGE;
+    $PAGE->requires->js('/theme/xtec2/javascript/config.js');
+    $PAGE->requires->js_init_code('xtec2_theme_onload();');
 
     // Header settings
-    $setting = new admin_setting_heading('theme_xtec2/header_settings', get_string('header_settings', 'theme_xtec2'),"");
+    $setting = new admin_setting_heading('theme_xtec2/header_settings', get_string('header_settings', 'theme_xtec2'), "");
     $settings->add($setting);
 
     $name = 'theme_xtec2/logo';
-    $title = get_string('logo','theme_xtec2');
+    $title = get_string('logo', 'theme_xtec2');
     $description = get_string('logodesc', 'theme_xtec2');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -77,7 +78,7 @@ if ($ADMIN->fulltree) {
     $settings->add($setting);
 
     // Layout settings
-    $setting = new admin_setting_heading('theme_xtec2/layout_settings', get_string('layout_settings', 'theme_xtec2'),"");
+    $setting = new admin_setting_heading('theme_xtec2/layout_settings', get_string('layout_settings', 'theme_xtec2'), "");
     $settings->add($setting);
 
     $name = 'theme_xtec2/block_layout';
@@ -101,7 +102,6 @@ if ($ADMIN->fulltree) {
     $default = '';
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $settings->add($setting);
-
 
     $description_url_desc = get_string('urldesc', 'theme_xtec2');
     $description_tel_desc = get_string('teldesc', 'theme_xtec2');
@@ -144,6 +144,12 @@ if ($ADMIN->fulltree) {
         $setting->set_updatedcallback('theme_xtec2_clean_cache');
         $settings->add($setting);
     }
+
+    $name = 'theme_xtec2/whatsapp';
+    $title = get_string('whatsapp', 'theme_xtec2');
+    $setting = new admin_setting_configtext($name, $title, $description_tel_desc, '', PARAM_TEXT);
+    $setting->set_updatedcallback('theme_xtec2_clean_cache');
+    $settings->add($setting);
 
     $name = 'theme_xtec2/facebook';
     $title = get_string('facebook', 'theme_xtec2');
@@ -193,6 +199,11 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_xtec2_clean_cache');
     $settings->add($setting);
 
+    $name = 'theme_xtec2/skype';
+    $title = get_string('skype', 'theme_xtec2');
+    $setting = new admin_setting_configtext($name, $title, get_string('skypedesc', 'theme_xtec2'), '', PARAM_URL);
+    $setting->set_updatedcallback('theme_xtec2_clean_cache');
+    $settings->add($setting);
 
     // Select color set
     $setting = new admin_setting_heading('theme_xtec2/color_settings', get_string('color_settings', 'theme_xtec2'), get_string('colorsetdesc', 'theme_xtec2'));
@@ -204,11 +215,19 @@ if ($ADMIN->fulltree) {
     $choices = array('personalitzat' => get_string('custom', 'theme_xtec2'),
                     'grana' => get_string('grana', 'theme_xtec2'),
                     'coral' => get_string('coral', 'theme_xtec2'),
-                    'or' => get_string('or', 'theme_xtec2'),
-                    'llima' => get_string('llima', 'theme_xtec2'),
-                    'tardor' => get_string('tardor', 'theme_xtec2'),
-                    'nostalgia' => get_string('nostalgia', 'theme_xtec2'));
+                    'kellygreen' => get_string('kellygreen', 'theme_xtec2'),
+                    'colourful' => get_string('colourful', 'theme_xtec2'));
+    if (theme_xtec2_is_service_enabled('nodes')) {
+        $colors = get_colors_from_nodes();
+        if ($colors) {
+            $choices['nodes'] = get_string('nodes_color', 'theme_xtec2');
+            $init = 'init_nodes_colors("'.$colors['color'].'", "'.$colors['logo_color'].'");';
+            $PAGE->requires->js_init_code($init);
+        }
+    }
+
     $setting = new admin_setting_configselect($name, $title, "", $default, $choices);
+    $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     $name = 'theme_xtec2/color2';

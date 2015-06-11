@@ -18,8 +18,7 @@
 /**
  * Standard library of functions and constants for lesson
  *
- * @package    mod
- * @subpackage lesson
+ * @package mod_lesson
  * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
@@ -199,8 +198,8 @@ function lesson_user_complete($course, $user, $mod, $lesson) {
                 "retry, timeseen")) {
         echo $OUTPUT->box_start();
         $table = new html_table();
-        $table->head = array (get_string("attempt", "lesson"),  get_string("numberofpagesviewed", "lesson"),
-            get_string("numberofcorrectanswers", "lesson"), get_string("time"));
+        $table->head = array (get_string("attempt", "lesson", ""),  get_string("numberofpagesviewed", "lesson", ""),
+            get_string("numberofcorrectanswers", "lesson", ""), get_string("time"));
         $table->width = "100%";
         $table->align = array ("center", "center", "center", "center");
         $table->size = array ("*", "*", "*", "*");
@@ -287,7 +286,7 @@ function lesson_print_overview($courses, &$htmlarray) {
             // Attempt information
             if (has_capability('mod/lesson:manage', context_module::instance($lesson->coursemodule))) {
                 // Number of user attempts
-                $attempts = $DB->count_records('lesson_attempts', array('lessonid'=>$lesson->id));
+                $attempts = $DB->count_records('lesson_grades', array('lessonid' => $lesson->id));
                 $str     .= $OUTPUT->box(get_string('xattempts', 'lesson', $attempts), 'info');
             } else {
                 // Determine if the user has attempted the lesson or not
@@ -410,36 +409,6 @@ function lesson_update_grades($lesson, $userid=0, $nullifnone=true) {
 }
 
 /**
- * Update all grades in gradebook.
- *
- * @global object
- */
-function lesson_upgrade_grades() {
-    global $DB;
-
-    $sql = "SELECT COUNT('x')
-              FROM {lesson} l, {course_modules} cm, {modules} m
-             WHERE m.name='lesson' AND m.id=cm.module AND cm.instance=l.id";
-    $count = $DB->count_records_sql($sql);
-
-    $sql = "SELECT l.*, cm.idnumber AS cmidnumber, l.course AS courseid
-              FROM {lesson} l, {course_modules} cm, {modules} m
-             WHERE m.name='lesson' AND m.id=cm.module AND cm.instance=l.id";
-    $rs = $DB->get_recordset_sql($sql);
-    if ($rs->valid()) {
-        $pbar = new progress_bar('lessonupgradegrades', 500, true);
-        $i=0;
-        foreach ($rs as $lesson) {
-            $i++;
-            upgrade_set_timeout(60*5); // set up timeout, may also abort execution
-            lesson_update_grades($lesson, 0, false);
-            $pbar->update($i, $count, "Updating Lesson grades ($i/$count).");
-        }
-    }
-    $rs->close();
-}
-
-/**
  * Create grade item for given lesson
  *
  * @category grade
@@ -461,11 +430,11 @@ function lesson_grade_item_update($lesson, $grades=null) {
         $params = array('itemname'=>$lesson->name);
     }
 
-    if ($lesson->grade > 0) {
+    if (!$lesson->practice and $lesson->grade > 0) {
         $params['gradetype']  = GRADE_TYPE_VALUE;
         $params['grademax']   = $lesson->grade;
         $params['grademin']   = 0;
-    } else if ($lesson->grade < 0) {
+    } else if (!$lesson->practice and $lesson->grade < 0) {
         $params['gradetype']  = GRADE_TYPE_SCALE;
         $params['scaleid']   = -$lesson->grade;
 
@@ -528,6 +497,13 @@ function lesson_grade_item_delete($lesson) {
 }
 
 /**
+ * List the actions that correspond to a view of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = 'r' and edulevel = LEVEL_PARTICIPATING will
+ *       be considered as view action.
+ *
  * @return array
  */
 function lesson_get_view_actions() {
@@ -535,6 +511,13 @@ function lesson_get_view_actions() {
 }
 
 /**
+ * List the actions that correspond to a post of this module.
+ * This is used by the participation report.
+ *
+ * Note: This is not used by new logging system. Event with
+ *       crud = ('c' || 'u' || 'd') and edulevel = LEVEL_PARTICIPATING
+ *       will be considered as post action.
+ *
  * @return array
  */
 function lesson_get_post_actions() {
@@ -717,6 +700,7 @@ function lesson_reset_userdata($data) {
         $DB->delete_records_select('lesson_high_scores', "lessonid IN ($lessonssql)", $params);
         $DB->delete_records_select('lesson_grades', "lessonid IN ($lessonssql)", $params);
         $DB->delete_records_select('lesson_attempts', "lessonid IN ($lessonssql)", $params);
+        $DB->delete_records_select('lesson_branch', "lessonid IN ($lessonssql)", $params);
 
         // remove all grades from gradebook
         if (empty($data->reset_gradebook_grades)) {
@@ -746,7 +730,6 @@ function lesson_get_extra_capabilities() {
 /**
  * @uses FEATURE_GROUPS
  * @uses FEATURE_GROUPINGS
- * @uses FEATURE_GROUPMEMBERSONLY
  * @uses FEATURE_MOD_INTRO
  * @uses FEATURE_COMPLETION_TRACKS_VIEWS
  * @uses FEATURE_GRADE_HAS_GRADE
@@ -756,15 +739,24 @@ function lesson_get_extra_capabilities() {
  */
 function lesson_supports($feature) {
     switch($feature) {
-        case FEATURE_GROUPS:                  return false;
-        case FEATURE_GROUPINGS:               return false;
-        case FEATURE_GROUPMEMBERSONLY:        return true;
-        case FEATURE_MOD_INTRO:               return false;
-        case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
-        case FEATURE_GRADE_HAS_GRADE:         return true;
-        case FEATURE_GRADE_OUTCOMES:          return true;
-        case FEATURE_BACKUP_MOODLE2:          return true;
-        default: return null;
+        case FEATURE_GROUPS:
+            return false;
+        case FEATURE_GROUPINGS:
+            return false;
+        case FEATURE_MOD_INTRO:
+            return true;
+        case FEATURE_COMPLETION_TRACKS_VIEWS:
+            return true;
+        case FEATURE_GRADE_HAS_GRADE:
+            return true;
+        case FEATURE_GRADE_OUTCOMES:
+            return true;
+        case FEATURE_BACKUP_MOODLE2:
+            return true;
+        case FEATURE_SHOW_DESCRIPTION:
+            return true;
+        default:
+            return null;
     }
 }
 
@@ -780,14 +772,14 @@ function lesson_supports($feature) {
 function lesson_extend_settings_navigation($settings, $lessonnode) {
     global $PAGE, $DB;
 
-    $canedit = has_capability('mod/lesson:edit', $PAGE->cm->context);
-
-    $url = new moodle_url('/mod/lesson/view.php', array('id'=>$PAGE->cm->id));
-    $lessonnode->add(get_string('preview', 'lesson'), $url);
-
-    if ($canedit) {
-        $url = new moodle_url('/mod/lesson/edit.php', array('id'=>$PAGE->cm->id));
-        $lessonnode->add(get_string('edit', 'lesson'), $url);
+    if (has_capability('mod/lesson:edit', $PAGE->cm->context)) {
+        $url = new moodle_url('/mod/lesson/view.php', array('id' => $PAGE->cm->id));
+        $lessonnode->add(get_string('preview', 'lesson'), $url);
+        $editnode = $lessonnode->add(get_string('edit', 'lesson'));
+        $url = new moodle_url('/mod/lesson/edit.php', array('id' => $PAGE->cm->id, 'mode' => 'collapsed'));
+        $editnode->add(get_string('collapsed', 'lesson'), $url);
+        $url = new moodle_url('/mod/lesson/edit.php', array('id' => $PAGE->cm->id, 'mode' => 'full'));
+        $editnode->add(get_string('full', 'lesson'), $url);
     }
 
     if (has_capability('mod/lesson:manage', $PAGE->cm->context)) {
@@ -798,7 +790,7 @@ function lesson_extend_settings_navigation($settings, $lessonnode) {
         $reportsnode->add(get_string('detailedstats', 'lesson'), $url);
     }
 
-    if ($canedit) {
+    if (has_capability('mod/lesson:grade', $PAGE->cm->context)) {
         $url = new moodle_url('/mod/lesson/essay.php', array('id'=>$PAGE->cm->id));
         $lessonnode->add(get_string('manualgrading', 'lesson'), $url);
     }
@@ -884,6 +876,13 @@ function lesson_pluginfile($course, $cm, $context, $filearea, $args, $forcedownl
         }
         $fullpath = "/$context->id/mod_lesson/$filearea/$pageid/".implode('/', $args);
 
+    } else if ($filearea === 'page_answers' || $filearea === 'page_responses') {
+        $itemid = (int)array_shift($args);
+        if (!$pageanswers = $DB->get_record('lesson_answers', array('id' => $itemid))) {
+            return false;
+        }
+        $fullpath = "/$context->id/mod_lesson/$filearea/$itemid/".implode('/', $args);
+
     } else if ($filearea === 'mediafile') {
         if (count($args) > 1) {
             // Remove the itemid when it appears to be part of the arguments. If there is only one argument
@@ -916,6 +915,8 @@ function lesson_get_file_areas() {
     $areas = array();
     $areas['page_contents'] = get_string('pagecontents', 'mod_lesson');
     $areas['mediafile'] = get_string('mediafile', 'mod_lesson');
+    $areas['page_answers'] = get_string('pageanswers', 'mod_lesson');
+    $areas['page_responses'] = get_string('pageresponses', 'mod_lesson');
     return $areas;
 }
 

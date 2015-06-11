@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'portfolio_picasa', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   portfolio_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['nooauthcredentials_help'] = 'Per a utilitzar el connector de portafolis
 $string['oauth2upgrade_message_content'] = 'Com a part de l\'actualització a Moodle 2.3, el connector de portafolis de Picasa ha estat deshabilitat. Per a tornar-lo a habilitar, heu de registrar el vostre lloc Moodle amb Google com es descriu en la documentació {$a->docsurl}, a fi d\'obtenir un ID de client i un secret. L\'ID de client i el secret es poden utilitzar per a configurar tots els connectors de Picasa i Google Docs.';
 $string['oauth2upgrade_message_small'] = 'S\'ha deshabilitat aquest connector, tal i com es requereix en la documentació de la configuració de Google OAuth 2.0';
 $string['oauth2upgrade_message_subject'] = 'Informació important sobre el connector de portafolis de Picasa';
-$string['oauthinfo'] = '<p> Per utilitzar aquest connector, heu de registrar el vostre lloc amb Google, com es descriu en la documentació de la <a href="{$a->docsurl}">configuració de Google OAuth 2.0</a>. </p><p> Com a part del procés de registre, haureu d\'introduir el següent URL com a \'Redirecció URL autoritzada\': </p><p> {$a->callbackurl} </p> Un cop registrat, se us proporcionarà un ID de client secret que podeu utilitzar per configurar tots els connectors Google Docs i Picasa. </p>';
+$string['oauthinfo'] = '<p> Per utilitzar aquest connector, heu de registrar el vostre lloc a Google, com es descriu en la documentació de la <a href="{$a->docsurl}">configuració de Google OAuth 2.0</a>. </p><p> Com a part del procés de registre, haureu d\'introduir l\'URL següent com a «URL de redirecció autoritzats»: </p><p> {$a->callbackurl} </p> Un cop registrat, se us proporcionarà un ID de client i un secret que podeu utilitzar per configurar tots els connectors de Google Docs i Picasa. </p>';
 $string['pluginname'] = 'Picasa';
 $string['secret'] = 'Secret';
 $string['sendfailed'] = 'La transferència del fitxer {$a} a Picasa ha fallat';

@@ -32,11 +32,7 @@ header('Content-type: text/xml');
 ///  Author: Sara Arjona Tellez (sara.arjona@gmail.com)
 /////////////////////////////////////////////////////////////////////////////////
 
-if($GLOBALS["HTTP_RAW_POST_DATA"]){
-    $my_xml = $GLOBALS["HTTP_RAW_POST_DATA"];
-} else {
-  $my_xml = $HTTP_RAW_POST_DATA;
-}
+$payload = file_get_contents("php://input");
 
 require_once("../../../config.php");
 require_once("beans.lib.php");
@@ -58,16 +54,16 @@ $xml_parser = xml_parser_create('');
 xml_set_element_handler($xml_parser, "startElement", "endElement");
 // This function is disabled because it seems that is not needed
 // xml_set_character_data_handler($xml_parser, "characterData");
-xml_parse($xml_parser, $my_xml);
+xml_parse($xml_parser, $payload);
 xml_parser_free($xml_parser);
 
 
 /*$jclic_log->bean=$beans[0]['ID'];
-$jclic_log->xml=$my_xml;
+$jclic_log->xml=$payload;
 $jclic_log->time=time();
 insert_record("jclic_log", $jclic_log);*/
-//error_log($beans[0]['ID'].': '.$my_xml);
-//addEntry($beans[0]['ID'], $my_xml);
+//error_log($beans[0]['ID'].': '.$payload);
+//addEntry($beans[0]['ID'], $payload);
 
 switch($beans[0]['ID']){
 	case "get_properties":

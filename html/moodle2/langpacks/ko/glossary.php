@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ko', branch 'MOODLE_26_STABLE'
+ * Strings for component 'glossary', language 'ko', branch 'MOODLE_28_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,7 @@ $string['attachment_help'] = '용어집 항목에 선택적으로 한 개 이상
 $string['author'] = '작성자';
 $string['authorview'] = '집필자순으로 보기';
 $string['back'] = '뒤로';
+$string['cachedef_concepts'] = '개념 연결';
 $string['cantinsertcat'] = '범주를 추가할 수 없음';
 $string['cantinsertrec'] = '자료를 추가할 수 없음';
 $string['cantinsertrel'] = '범주 항목의 관계를 설정할 수 없음';
@@ -173,6 +174,15 @@ $string['errconceptalreadyexists'] = '이미 있는 내용입니다. 이 용어�
 $string['errdeltimeexpired'] = '이것을 삭제할 수 없습니다. 시간이 지났습니다!';
 $string['erredittimeexpired'] = '이 항목에 대한 편집 시간이 종료되었습니다.';
 $string['errorparsingxml'] = '파일을 해석하는 중에 오류가 발생하였습니다. 유효한 XML 문법인지 확인하세요.';
+$string['eventcategorycreated'] = '범주가 생성되었습니다';
+$string['eventcategorydeleted'] = '범주가 삭제되었습니다.';
+$string['eventcategoryupdated'] = '범주가 업데이트 되었습니다.';
+$string['evententryapproved'] = '입력항목이 승인되었습니다.';
+$string['evententrycreated'] = '입력항목이 생성되었습니다.';
+$string['evententrydeleted'] = '입력항목이 삭제되었습니다.';
+$string['evententrydisapproved'] = '입력항목이 거절되었습니다.';
+$string['evententryupdated'] = '입력항목이 업데이트 되었습니다.';
+$string['evententryviewed'] = '입력항목이 보여졌습니다,';
 $string['explainaddentry'] = '현재의 용어집에 새 항목을 추가합니다.';
 $string['explainall'] = '한  페이지에 모든 항목 보기';
 $string['explainalphabet'] = '색인을 사용하여 용어집 보기';

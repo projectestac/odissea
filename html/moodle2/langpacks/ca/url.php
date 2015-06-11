@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'url', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,6 @@ Hi ha certes opcions de visualització per a l\'URL, com ara incrustat o en una 
 
 Noteu que els URL també es poden afegir a qualsevol altre recurs o activitat a través de l\'editor de textos.';
 $string['modulenameplural'] = 'URL';
-$string['neverseen'] = 'No s\'ha vist mai';
 $string['page-mod-url-x'] = 'Qualsevol pàgina del mòdul URL';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'Variables URL';

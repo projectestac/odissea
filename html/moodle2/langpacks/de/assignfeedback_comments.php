@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'Inline-Kommentar';
+$string['commentinlinedefault'] = 'Inline-Kommentar als Standard';
+$string['commentinlinedefault_help'] = 'Wenn diese Option aktiviert ist, wird die Funktion Inline-Kommentar standardmäßig für alle neuen Aufgaben benutzt.';
+$string['commentinline_help'] = 'Wenn diese Option aktiviert ist, wird der Abgabetext für die Bewertung in das Kommentarfeld kopiert, um die Inline-Kommentierung (am besten in einer anderen Farbe) zu vereinfachen oder die Bearbeitung des Originaltextes zu ermöglichen.';
 $string['default'] = 'Standardmäßig aktiviert';
 $string['default_help'] = 'Die gewählte Feedback-Methode wird für alle neuen Aufgaben voreingestellt.';
 $string['enabled'] = 'Feedback als Kommentar';

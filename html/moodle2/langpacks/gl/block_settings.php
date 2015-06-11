@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'gl', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_settings', language 'gl', branch 'MOODLE_28_STABLE'
  *
  * @package   block_settings
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'Permitirlle ao usuario ancorar este bloque';
 $string['pluginname'] = 'Administración';
 $string['settings:addinstance'] = 'Engadir un novo bloque de administración';
-$string['settings:myaddinstance'] = 'Engadir un novo bloque de configuración ao cartafol persoal';
+$string['settings:myaddinstance'] = 'Engadir un novo bloque de administración na área persoal';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'message', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,15 @@ $string['discussion'] = 'Eztabaida';
 $string['emailmessages'] = 'Bidali e-postaz niretzako mezuak ni lineaz kanpo nagoenean';
 $string['emailtagline'] = 'Zuretzat "{$a->sitename}"-ra bidalitako mezuaren kopia da hau. Jo hona {$a->url} erantzuteko.';
 $string['emptysearchstring'] = 'Zerbait bilatu beharko duzu!';
+$string['enabled'] = 'Gaituta';
 $string['errorcallingprocessor'] = 'Errorea definitutako irteera-prozesatzaileari deitzean';
 $string['errortranslatingdefault'] = 'Errorea pluginak emandako berezko kofigurazioa itzultzean. Sistemaren berezko ezarpenak erabiliko dira.';
+$string['eventmessagecontactadded'] = 'Mezularitza-kontaktua gehitu da';
+$string['eventmessagecontactblocked'] = 'Mezularitza-kontaktua blokeatu da';
+$string['eventmessagecontactremoved'] = 'Mezularitza-kontaktua ezabatu da';
+$string['eventmessagecontactunblocked'] = 'Mezularitza-kontaktua desblokeatu da';
+$string['eventmessagesent'] = 'Mezua bidali da';
+$string['eventmessageviewed'] = 'Mezua ikusi da';
 $string['forced'] = 'Behartuta';
 $string['formorethan'] = 'Denbora-tarte hau gaindituz gero';
 $string['gotomessages'] = 'Joan mezuetara';
@@ -136,8 +143,6 @@ $string['unblockcontact'] = 'Desblokeatu kontaktua';
 $string['unreadmessages'] = 'Irakurri gabeko ({$a}) mezu';
 $string['unreadnewmessage'] = '{$a}-ren mezu berria';
 $string['unreadnewmessages'] = 'Mezu berriak ({$a})';
-$string['unreadnewnotification'] = 'Jakinarazpen berria';
-$string['unreadnewnotifications'] = 'Jakinarazpen berriak ({$a})';
 $string['userisblockingyou'] = 'Erabiltzaile honek blokeatu egin zaitu eta ezin diozu mezurik bidali';
 $string['userisblockingyounoncontact'] = '{$a}-k bere kontaktu-zerrendan daudenen mezuak bakarrik onartzen ditu.';
 $string['userssearchresults'] = 'Aurkitutako erabiltzaileak: {$a}';

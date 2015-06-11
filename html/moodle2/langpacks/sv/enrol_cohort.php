@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_cohort', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Lägg till grupp';
-$string['ajaxmore'] = 'Mer...';
 $string['assignrole'] = 'Tilldela roll';
 $string['cohort:config'] = 'Konfigurera kohorter';
-$string['cohortsearch'] = 'Sök';
 $string['instanceexists'] = 'Kohorten är redan redan kopplat till markerade rollen';
 $string['pluginname'] = 'Koppla kohort';
 $string['pluginname_desc'] = 'Registrering av kohort kopplar medlemmar i kohorten som kursdeltagare.';

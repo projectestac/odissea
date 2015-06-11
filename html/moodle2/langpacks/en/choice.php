@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'choice', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Add more choices';
+$string['allowmultiple'] = 'Allow more than one choice to be selected';
 $string['allowupdate'] = 'Allow choice to be updated';
 $string['answered'] = 'Answered';
 $string['atleastoneoption'] = 'You need to provide at least one possible answer.';
+$string['cannotsubmit'] = 'Sorry, there was a problem submitting your choice. Please try again.';
 $string['choice'] = 'Choice';
 $string['choice:addinstance'] = 'Add a new choice';
 $string['choice:choose'] = 'Record a choice';
@@ -51,11 +53,9 @@ $string['description'] = 'Description';
 $string['displayhorizontal'] = 'Display horizontally';
 $string['displaymode'] = 'Display mode for the options';
 $string['displayvertical'] = 'Display vertically';
-$string['event_answer_created'] = 'Choice made';
-$string['event_answer_updated'] = 'Choice updated';
-$string['event_choice_viewed'] = 'Choice viewed';
-$string['event_instances_list_viewed'] = 'Instances list viewed';
-$string['event_report_viewed'] = 'Choice report viewed';
+$string['eventanswercreated'] = 'Choice made';
+$string['eventanswerupdated'] = 'Choice updated';
+$string['eventreportviewed'] = 'Choice report viewed';
 $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
 $string['full'] = '(Full)';
 $string['havetologin'] = 'You have to log in before you can submit your choice';
@@ -78,6 +78,7 @@ A choice activity may be used
 $string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Choices';
 $string['moveselectedusersto'] = 'Move selected users to...';
+$string['multiplenotallowederror'] = 'Multiple answers are not allowed in this choice';
 $string['mustchooseone'] = 'You must choose an answer before saving.  Nothing was saved.';
 $string['noguestchoose'] = 'Sorry, guests are not allowed to make choices.';
 $string['noresultsviewable'] = 'The results are not currently viewable.';

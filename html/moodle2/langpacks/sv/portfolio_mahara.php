@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'portfolio_mahara', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'mnet', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -112,7 +112,6 @@ $string['mnet'] = 'Moodle Sarea';
 $string['mnetdisabled'] = 'Moodle Sarea <strong>desgaituta</strong> dago.';
 $string['mnetidprovider'] = 'Moodle  Sarearen ID hornitzailea';
 $string['mnetidprovidernotfound'] = 'Barkatu, ezin izan da informazio gehiago aurkitu.';
-$string['mnetlog'] = 'Agerraldiak';
 $string['mnetpeers'] = 'Berdinak';
 $string['mnetservices'] = 'Zerbitzuak';
 $string['mnetsettings'] = 'Moodle Sarearen ezarpenak';

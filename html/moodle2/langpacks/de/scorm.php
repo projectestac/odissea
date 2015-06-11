@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['aicchacpkeepsessiondata'] = 'AICC HACP Sessiondaten';
 $string['aicchacpkeepsessiondata_desc'] = 'Speicherdauer in Tagen für externe AICC HACP Sessiondaten (ein hoher Wert speichert viele Daten in der Datenbnaktabelle, kann jedoch zum debuggen hilfreich sein.';
 $string['aicchacptimeout'] = 'AICC HACP Timeout';
 $string['aicchacptimeout_desc'] = 'Länge in Minuten, die eine externe AICC HACP Session offen bleiben darf';
+$string['aiccuserid'] = 'Nutzer-ID für AICC verwenden';
+$string['aiccuserid_desc'] = 'Der AICC-Standard für Nutzernamen ist sehr restriktiv gegenüber Moodle, so dass stattdessen die Nutzer-ID übergeben wird. Wenn diese Option deaktiviert ist, werden die Moodle-Nutzernamen benutzt. Der AICC-Standard ermöglicht alphanumerische Zeichen mit den beiden Sonderzeichen Bindestrich (-) und Unterstrich (_). Punkte, Leerzeichen und das Symbol @ sind nicht erlaubt.';
 $string['aliasonly'] = 'Wenn eine imsmanifest.xml-Datei aus einem Repository ausgewählt wird, muss für diese Datei ein Alias/Shortcut verwendet werden.';
 $string['allowapidebug'] = 'API debug und tracing aktivieren (Capture Maske mit apidebumask einrichten)';
 $string['allowtypeaicchacp'] = 'Externe AICC HACP aktivieren';
@@ -42,7 +44,7 @@ $string['allowtypeaicchacp_desc'] = 'Die Aktivierung ermöglicht AICC HACP die e
 $string['allowtypeexternal'] = 'Externen Pakettyp aktivieren';
 $string['allowtypeexternalaicc'] = 'Direkte AICC URL aktivieren';
 $string['allowtypeexternalaicc_desc'] = 'Ermöglicht den direkten Aufruf über eine URL auf ein einfaches AICC Paket.';
-$string['allowtypelocalsync'] = 'Download Paketyp aktivieren';
+$string['allowtypelocalsync'] = 'Download Pakettyp aktivieren';
 $string['apidebugmask'] = 'API Debug Capture Mask (simple regex on <username>:<activityname>) z.B. admin:* zeigt die Debugmitteilungen nur für den Nutzer admin';
 $string['areacontent'] = 'Inhaltsdateien';
 $string['areapackage'] = 'Paketdatei';
@@ -57,6 +59,9 @@ $string['attemptstatusentry'] = 'Nur Eingangsseite';
 $string['attemptstatusmy'] = 'Nur meine Startseite';
 $string['attemptsx'] = '{$a} Versuche';
 $string['attr_error'] = 'Falscher Wert für das Attribut ({$a->attr}) im Tag {$a->tag}';
+$string['autocommit'] = 'Automatisch übernehmen';
+$string['autocommitdesc'] = 'SCORM-Daten automatisch sichern, wenn sie nicht vom Lernpaket gesichert werden.';
+$string['autocommit_help'] = 'Die Option legt fest, ob SCORM-Daten automatisch in der Datenbank gesichert werden. Dies ist hilfreich für SCORM-Objekte, die ihre Daten nicht regelmäßig sichern.';
 $string['autocontinue'] = 'Automatische Fortsetzung';
 $string['autocontinuedesc'] = 'Diese Einstellung setzt für diese Aktivität die automatische Fortsetzung.';
 $string['autocontinue_help'] = 'Wenn die Option aktiviert ist, wird nach dem Bearbeiten eines Lernobjekts automatisch das nächste verfügbare Lernobjekt aufgerufen. Andernfalls muss eine Taste \'Weiter\' benutzt werden.';
@@ -92,11 +97,14 @@ $string['defaultgradesettings'] = 'Standardmäßige Bewertungseinstellungen';
 $string['defaultothersettings'] = 'Weitere Standardeinstellungen';
 $string['deleteallattempts'] = 'Alle Versuche im Lernpaket löschen';
 $string['deleteattemptcheck'] = 'Sind Sie wirklich sicher, dass Sie diese Versuche vollständig löschen möchten?';
+$string['deleteselected'] = 'Ausgewählte Versuche löschen';
 $string['deleteuserattemptcheck'] = 'Sind Sie sich wirklich sicher, dass alle Versuche gelöscht werden sollen?';
 $string['details'] = 'Trackingdetails';
 $string['directories'] = 'Verzeichnislinks anzeigen';
 $string['disabled'] = 'Deaktiviert';
 $string['display'] = 'Lernpaket anzeigen';
+$string['displayactivityname'] = 'Aktivitätsname anzeigen';
+$string['displayactivityname_help'] = 'Anzeige des Aktivitätsnamens über der Anzeige des Lernpakets';
 $string['displayattemptstatus'] = 'Status der Versuche anzeigen';
 $string['displayattemptstatusdesc'] = 'Ob eine Zusammenfassung der Versuche des Nutzers im Kursübersichtsblock auf der My-Seite und oder der Lernpaket-Startseite gezeigt werden soll.';
 $string['displayattemptstatus_help'] = 'Diese Option erlaubt die Anzeige einer Zusammenfassung der Versuche in der Kursübersicht und/oder auf der Eingangsseite des Lernpakets.';
@@ -112,6 +120,12 @@ $string['element'] = 'Element';
 $string['enter'] = 'Start';
 $string['entercourse'] = 'Lernpaket starten';
 $string['errorlogs'] = 'Fehlerprotokoll';
+$string['eventattemptdeleted'] = 'Versuch gelöscht';
+$string['eventinteractionsviewed'] = 'Interaktionen angezeigt';
+$string['eventreportviewed'] = 'Bericht angezeigt';
+$string['eventscolaunched'] = 'Sco gestartet';
+$string['eventtracksviewed'] = 'Tracks angezeigt';
+$string['eventuserreportviewed'] = 'Nutzerbericht angezeigt';
 $string['everyday'] = 'Jeden Tag';
 $string['everytime'] = 'Alle Nutzungszeiten';
 $string['exceededmaxattempts'] = 'Sie haben die Höchstzahl der Versuche erreicht.';
@@ -132,10 +146,10 @@ $string['forcejavascript'] = 'Aktivierung von JavaScript einfordern';
 $string['forcejavascript_desc'] = 'Lernpakete erfordern JavaScript zur Kommunikation zwischen dem Lernpaket und Moodle, z.B. um Bewertungen zu übergeben. Mit dieser Funktion wird der Zugriff auf ein Lernpaket lesend möglich, wenn JavaScript im Browser nicht verfügbar ist. Es werden jedoch keine Bewertungen abgespeichert. Es wird empfohlen, diese Funktion zu aktivieren.';
 $string['forcejavascriptmessage'] = 'Um dieses Objekt anzuzeigen ist JavaScript notwendig. Bitte aktivieren Sie JavaScript für Ihren Browser und versuchen Sie es nochmal.';
 $string['forcenewattempt'] = 'Neuen Versuch einfordern';
-$string['forcenewattemptdesc'] = 'Wenn aktiviert, wird jeder Zugriff auf das Lernpaket als neuer Versuch betrachtet.';
-$string['forcenewattempt_help'] = '<h2>Neuen Versuch erzwingen</h2>
+$string['forcenewattemptdesc'] = 'Diese Option blendet das Kontrollfeld \'Neuen Versuch starten\' aus und verhindert den Überprüfungsmodus. SCORM ermöglicht, im gleichen Versuch an einen beliebigen Punkt zurückzuspringen. Ein neuer Versuch ist nur möglich, wenn der vorherige Versuch als "abgeschlossen", "bestanden" oder "nicht bestanden" gesetzt ist.';
+$string['forcenewattempt_help'] = 'Diese Option blendet das Kontrollfeld \'Neuen Versuch starten\' aus und verhindert den Überprüfungsmodus.
 
-<p>Jeder neue Aufruf des Lernpakets wird als neuer Versuch betrachtet. Auch wenn der vorherige Versuch nicht abgeschlossen wurde.</p>';
+SCORM ermöglicht, im gleichen Versuch an einen beliebigen Punkt zurückzuspringen. Ein neuer Versuch ist nur möglich, wenn der vorherige Versuch als "abgeschlossen", "bestanden" oder "nicht bestanden" gesetzt ist.';
 $string['found'] = 'Manifest gefunden';
 $string['frameheight'] = 'Die Einstellung definiert die Höhe der Darstellung.';
 $string['framewidth'] = 'Die Einstellung definiert die Breite der Darstellung.';
@@ -214,6 +228,8 @@ Es gibt drei Optionen:
 $string['navigation'] = 'Navigation';
 $string['navpositionleft'] = 'Position der Navigationstasten von links (als Pixel)';
 $string['navpositiontop'] = 'Position der Navigationstasten von oben (als Pixel)';
+$string['networkdropped'] = 'Die Anzeige für das Lernpaket hat festgestellt, dass die Internetverbindung nicht stabil oder unterbrochen ist. Wenn Sie das Lernpaket weiter bearbeiten, wird Ihr Fortschritt eventuell nicht festgehalten.<br />
+Sie sollten die Aktivität abbrechen und erst fortsetzen, wenn die Internetverbindung wieder besteht.';
 $string['newattempt'] = 'Neuen Versuch beginnen';
 $string['next'] = 'Weiter';
 $string['noactivity'] = 'Nichts zu berichten';
@@ -277,6 +293,9 @@ $string['reviewmode'] = 'Rückblick-Modus';
 $string['rightanswer'] = 'Richtige Antwort';
 $string['scoes'] = 'Lernobjekte';
 $string['score'] = 'Bewertung';
+$string['scorm12standard'] = 'SCORM 1.2  aktivieren';
+$string['scorm12standarddesc'] = 'Wenn diese Option deaktiviert ist, kann Moodle mehr Daten speichern als in den Festlegungen für SCORM 1.2 vorsehen.
+Wenn Ihr Lernpaket erlaubt, dass Teilnehmer/innen große Mengen an Text eingeben können, oder wenn Ihr Lernpaket versucht, große Mengen von Daten im Feld suspend_data zu speichern, deaktivieren Sie diese Option.';
 $string['scorm:addinstance'] = 'Lernpaket hinzufügen';
 $string['scormclose'] = 'Verfügbar bis';
 $string['scormcourse'] = 'Lernpaket-Kurs';

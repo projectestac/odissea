@@ -34,10 +34,8 @@ Feature: As a teacher I need to see an accurate list of subscribed users
     And the following "grouping groups" exist:
       | grouping | group |
       | GG1      | G1    |
-    And I log in as "admin"
-    And I set the following administration settings values:
-      | Enable group members only | 1 |
-    And I log out
+    And the following config values are set as admin:
+      | enableavailability | 1 |
     And I log in as "teacher"
     And I follow "Course 1"
     And I turn editing mode on
@@ -56,9 +54,10 @@ Feature: As a teacher I need to see an accurate list of subscribed users
     And I should see "Student 2"
     And I should see "Student 3"
     And I click on "Edit settings" "link" in the "Administration" "block"
-    And I set the following fields to these values:
-      | Grouping                          | Grouping 1 |
-      | Available for group members only  | 1          |
+    And I expand all fieldsets
+    And I click on "Add restriction..." "button"
+    And I click on "Grouping" "button" in the "Add restriction..." "dialogue"
+    And I set the field with xpath "//select[@name='id']" to "Grouping 1"
     And I press "Save and display"
     And I follow "Show/edit current subscribers"
     And I should see "Student 1"
@@ -80,9 +79,10 @@ Feature: As a teacher I need to see an accurate list of subscribed users
     And I should see "Student 2"
     And I should see "Student 3"
     And I click on "Edit settings" "link" in the "Administration" "block"
-    And I set the following fields to these values:
-      | Grouping                          | Grouping 1 |
-      | Available for group members only  | 1          |
+    And I expand all fieldsets
+    And I click on "Add restriction..." "button"
+    And I click on "Grouping" "button" in the "Add restriction..." "dialogue"
+    And I set the field with xpath "//select[@name='id']" to "Grouping 1"
     And I press "Save and display"
     And I follow "Show/edit current subscribers"
     And I should see "Student 1"

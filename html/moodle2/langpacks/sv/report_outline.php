@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'sv', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_outline', language 'sv', branch 'MOODLE_28_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['neverseen'] = 'Har aldrig visats';
 $string['outline:view'] = 'Visa rapport över aktivitet i kursen';
 $string['pluginname'] = 'Aktivitet i kursen';

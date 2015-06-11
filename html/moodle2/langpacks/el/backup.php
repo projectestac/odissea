@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'backup', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -109,6 +109,7 @@ $string['importsuccess'] = 'Η εισαγωγή ολοκληρώθηκε. Κάν
 $string['includeactivities'] = 'Περιλαμβάνουν:';
 $string['includeditems'] = 'Αντικείμενα που συμπεριλαμβάνονται:';
 $string['includeuserinfo'] = 'Δεδομένα χρήστη';
+$string['jumptofinalstep'] = 'Μετάβαση στο τελικό στάδιο';
 $string['locked'] = 'Κλειδωμένο';
 $string['managefiles'] = 'Διαχείριση αντιγράφων ασφαλείας';
 $string['moodleversion'] = 'Έκδοση Moodle';
@@ -146,3 +147,4 @@ $string['rootsettinguserscompletion'] = 'Συμπεριέλαβε λεπτομε
 $string['storagecourseandexternal'] = 'Περιοχή αρχείων αντιγράφων ασφαλείας μαθήματος και ο ορισμένος κατάλογος';
 $string['storagecourseonly'] = 'Περιοχή αρχείων αντιγράφων ασφαλείας μαθήματος';
 $string['storageexternalonly'] = 'Ορισμένος κατάλογος για αυτόματα αντίγραφα ασφαλείας';
+$string['timetaken'] = 'Χρόνος που χρειάστηκε';

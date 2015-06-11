@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'de', branch 'MOODLE_26_STABLE'
+ * Strings for component 'form', language 'de', branch 'MOODLE_28_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['err_alphanumeric'] = 'Sie dürfen hier nur Buchstaben oder Zahlen einge
 $string['err_email'] = 'Sie müssen hier eine gültige E-Mail-Adresse eingeben.';
 $string['err_lettersonly'] = 'Sie dürfen hier nur Buchstaben eingeben.';
 $string['err_maxfiles'] = 'Sie können hier höchstens {$a} Dateien anhängen.';
-$string['err_maxlength'] = 'Sie dürfen hier nicht mehr als {$a->format} Buchstaben eingeben.';
+$string['err_maxlength'] = 'Sie dürfen nur maximal {$a->format} Zeichen eingeben.';
 $string['err_minlength'] = 'Sie müssen hier mindestens {$a->format} Buchstaben eingeben.';
 $string['err_nonzero'] = 'Sie müssen hier eine Zahl eingeben, die nicht mit 0 beginnt.';
 $string['err_nopunctuation'] = 'Sie dürfen hier keine Satzseichen verwenden.';
@@ -46,7 +46,7 @@ $string['hideadvanced'] = 'Optionale Felder verbergen';
 $string['hour'] = 'Stunde';
 $string['minute'] = 'Minute';
 $string['miscellaneoussettings'] = 'Verschiedene Einstellungen';
-$string['modstandardels'] = 'Weitere Moduleinstellungen';
+$string['modstandardels'] = 'Weitere Einstellungen';
 $string['month'] = 'Monat';
 $string['mustbeoverriden'] = 'Die Methode form_definition() in der Klasse {$a} muss geändert werden. Bitte korrigieren Sie den Code.';
 $string['nomethodforaddinghelpbutton'] = 'Es gibt keine Möglichkeit, einen Hilfebutton zum Formularelement {$a->name} (class {$a->classname}) hinzuzufügen.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'ru', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_title', language 'ru', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['h3'] = 'Заголовок 1';
-$string['h4'] = 'Заголовок 2';
-$string['h5'] = 'Заголовок 3';
+$string['h3'] = 'Заголовок (большой)';
+$string['h4'] = 'Заголовок (средний)';
+$string['h5'] = 'Заголовок (маленький)';
+$string['p'] = 'Абзац';
 $string['pluginname'] = 'Стили абзаца';
 $string['pre'] = 'Предварительно отформатирован';
 $string['title'] = 'Стили абзаца';

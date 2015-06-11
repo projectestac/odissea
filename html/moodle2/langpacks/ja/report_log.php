@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_log', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'コンポーネント';
+$string['eventcontext'] = 'イベントコンテクスト';
+$string['eventloggedas'] = '{$a->realusername} - 代替ログイン: {$a->asusername}';
+$string['eventorigin'] = 'オリジン';
+$string['eventrelatedfullnameuser'] = '影響を受けるユーザ';
+$string['eventreportviewed'] = 'ログレポートが閲覧されました。';
+$string['eventuserreportviewed'] = 'ユーザログレポートが閲覧されました。';
 $string['logsformat'] = 'ログフォーマット';
 $string['log:view'] = 'コースログを表示する';
 $string['log:viewtoday'] = '本日のログを表示する';
-$string['mnetlogwarning'] = 'あなたのMNetクライアントがMoodle 2.7またはそれ以上を動作させている場合、 あなたはログを受信することはありません。';
+$string['nologreaderenabled'] = '有効にされているログリーダはありません。';
 $string['page'] = 'ページ {$a}';
 $string['page-report-log-index'] = 'コースログレポート';
 $string['page-report-log-user'] = 'ユーザコースログレポート';
 $string['page-report-log-x'] = 'すべてのログレポート';
 $string['pluginname'] = 'ログ';
+$string['selectlogreader'] = 'ログリーダを選択する';

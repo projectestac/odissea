@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'report_security', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,11 +60,6 @@ $string['check_frontpagerole_error'] = 'Εντόπιστήκε λαθος ορι
 $string['check_frontpagerole_name'] = 'Ρόλος αρχικής σελίδας';
 $string['check_frontpagerole_notset'] = 'Ο ρόλος αρχικής σελίδας δεν έχει οριστεί.';
 $string['check_frontpagerole_ok'] = 'Ο ορισμός του ρόλου αρχικής σελίδας είναι εντάξει.';
-$string['check_globals_details'] = '<p>Η ρύθμιση PHP Register globals θεωρείται οτι είναι άκρως μη ασφαλής.</p>
-<p>Η ρύθμιση <code>register_globals=off</code> πρέπει να οριστεί στις ρυθμίσεις της PHP. Αυτή η ρύθμιση μπορεί να καθοριστεί με επεξεργασία του αρχείου <code>php.ini</code>, ή των ρυθμίσεων των Apache/IIS ή ενός αρχείου <code>.htaccess</code>.</p>';
-$string['check_globals_error'] = 'Η ρύθμιση Register globals ΠΡΕΠΕΙ να είναι απενεργοποιημένη. Παρακαλούμε διορθώστε αυτή τη ρύθμιση της PHP άμεσα!';
-$string['check_globals_name'] = 'Register globals';
-$string['check_globals_ok'] = 'Η ρύθμιση Register globals είναι απενεργοποιημένη.';
 $string['check_google_details'] = '<p>Η ρύθμιση Open to Google επιτρέπει στις μηχανές αναζήτησης να συνδέονται σε μαθήματα με δικαιώματα επισκέπτη. Δεν υπάρχει λόγος ενεργοποίησης αυτής της ρύθμισης εάν δεν επιτρέπονται συνδέσεις επισκεπτών.</p>';
 $string['check_google_error'] = 'Η πρόσβαση στις μηχανές αναζήτησης επιτρέπεται παρόλο που δεν επιτρέπεται η σύνδεση επισκεπτών.';
 $string['check_google_info'] = 'Οι μηχανές αναζήτησης μπορούν να συνδέονται σαν επισκέπτες.';

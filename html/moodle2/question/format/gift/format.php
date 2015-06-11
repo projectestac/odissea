@@ -327,8 +327,10 @@ class qformat_gift extends qformat_default {
 
             case 'essay':
                 $question->responseformat = 'editor';
+                $question->responserequired = 1;
                 $question->responsefieldlines = 15;
                 $question->attachments = 0;
+                $question->attachmentsrequired = 0;
                 $question->graderinfo = array(
                         'text' => '', 'format' => FORMAT_HTML, 'files' => array());
                 $question->responsetemplate = array(
@@ -414,7 +416,7 @@ class qformat_gift extends qformat_default {
                 list($answer, $wrongfeedback, $rightfeedback) =
                         $this->split_truefalse_comment($answertext, $question->questiontextformat);
 
-                if ($answer['text'] == "T" OR $answer['text'] == "TRUE") {
+                if ($answer['text'] == "T" || $answer['text'] == "TRUE") {
                     $question->correctanswer = 1;
                     $question->feedbacktrue = $rightfeedback;
                     $question->feedbackfalse = $wrongfeedback;
@@ -632,7 +634,7 @@ class qformat_gift extends qformat_default {
         global $OUTPUT;
 
         // Start with a comment.
-        $expout = "// question: $question->id  name: $question->name\n";
+        $expout = "// question: {$question->id}  name: {$question->name}\n";
 
         // Output depends on question type.
         switch($question->qtype) {

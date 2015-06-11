@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'scorm', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -96,11 +96,14 @@ $string['defaultgradesettings'] = 'Configuració de qualificacions predeterminad
 $string['defaultothersettings'] = 'Altres configuracions predeterminades';
 $string['deleteallattempts'] = 'Suprimeix tots els intents SCORM';
 $string['deleteattemptcheck'] = 'Està completament segur de que vol eliminar aquests intents?';
+$string['deleteselected'] = 'Suprimeix els intents seleccionats';
 $string['deleteuserattemptcheck'] = 'Està completament segur de que vol eliminar tots els seus intents?';
 $string['details'] = 'Detalls de seguiment';
 $string['directories'] = 'Mostra els enllaços del directori';
 $string['disabled'] = 'Inhabilitat';
 $string['display'] = 'Visualitza';
+$string['displayactivityname'] = 'Mostra el nom de l\'activitat';
+$string['displayactivityname_help'] = 'Si cal mostrar o no el nom de l\'activitat al damunt del reproductor SCORM';
 $string['displayattemptstatus'] = 'Mostrar estat dels intents';
 $string['displayattemptstatusdesc'] = 'Si voleu mostrar o no les puntuacions i les qualificacions de l\'usuari al resum del curs a la Meva pàgina inicial i/o a la pàgina d\'entrada de l\'SCORM';
 $string['displayattemptstatus_help'] = 'Aquest paràmetre permet mostrar un resum dels intents de l\'usuari al bloc de resum del curs a la Meva pàgina inicial i/o a la pàgina d\'entrada de l\'SCORM.';
@@ -116,6 +119,12 @@ $string['element'] = 'Element';
 $string['enter'] = 'Entra';
 $string['entercourse'] = 'Entra al curs SCORM';
 $string['errorlogs'] = 'Registre d\'errors';
+$string['eventattemptdeleted'] = 'S\'ha suprimit l\'intent';
+$string['eventinteractionsviewed'] = 'S\'han mostrat les interaccions';
+$string['eventreportviewed'] = 'S\'han mostrat els informes';
+$string['eventscolaunched'] = 'S\'ha llançat l\'SCO';
+$string['eventtracksviewed'] = 'Pistes mostrades';
+$string['eventuserreportviewed'] = 'S\'ha mostrat l\'informe de l\'usuari';
 $string['everyday'] = 'Cada dia';
 $string['everytime'] = 'Cada vegada que s\'utilitzi';
 $string['exceededmaxattempts'] = 'Has arribat al nombre màxim d\'intents';
@@ -226,6 +235,8 @@ Hi ha 3 opcions:
 $string['navigation'] = 'Navegació';
 $string['navpositionleft'] = 'Posició dels botons de navegació des de l\'esquerra en píxels.';
 $string['navpositiontop'] = 'Posició dels botons de navegació des dalt en píxels.';
+$string['networkdropped'] = 'El reproductor SCORM ha determinat que la vostra connexió a Internet no és fiable o s\'ha interromput. Si continueu en aquesta activitat SCORM, el seu progrés potser no es podrà desar. <br />
+Hauríeu de sortir de l\'activitat ara, i tornar quan tingueu una connexió a Internet fiable.';
 $string['newattempt'] = 'Comença un nou intent';
 $string['next'] = 'Continua';
 $string['noactivity'] = 'Res per informar';
@@ -289,6 +300,10 @@ $string['reviewmode'] = 'Mode de revisió';
 $string['rightanswer'] = 'Resposta correcta';
 $string['scoes'] = 'Objectes d\'aprenentatge';
 $string['score'] = 'Puntuació';
+$string['scorm12standard'] = 'Habilita el mode estàndard SCORM 1.2';
+$string['scorm12standarddesc'] = 'Deshabilitant aquest paràmetre permeteu a Moodle emmagatzemar més dades que les que permeten les especificacions SCORM 1.2.
+
+Si el vostre paquet SCORM permet als usuaris entrar grans quantitats de text o si el vostre paquet intenta emmagatzemar grans quantitats de dades al camp «Dades de suspensió», deshabiliteu-lo.';
 $string['scorm:addinstance'] = 'Afegeix un paquet SCORM nou';
 $string['scormclose'] = 'Disponible fins';
 $string['scormcourse'] = 'Curs d\'aprenentatge';

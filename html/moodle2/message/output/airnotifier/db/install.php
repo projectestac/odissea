@@ -35,23 +35,5 @@ function xmldb_message_airnotifier_install() {
     $provider->enabled = 0;
     $DB->insert_record('message_processors', $provider);
 
-    // Add the WebServices to the MoodleMobile core service.
-    // TODO: Remove this when this plugin launch in core.
-    require_once($CFG->dirroot . '/webservice/lib.php');
-    $webservicemanager = new webservice();
-    $mobileservice = $webservicemanager->get_external_service_by_shortname(MOODLE_OFFICIAL_MOBILE_SERVICE);
-
-    if (!$webservicemanager->service_function_exists("message_airnotifier_is_system_configured",
-                                                        $mobileservice->id)) {
-        $webservicemanager->add_external_function_to_service("message_airnotifier_is_system_configured",
-                                                                $mobileservice->id);
-    }
-
-    if (!$webservicemanager->service_function_exists("message_airnotifier_are_notification_preferences_configured",
-                                                        $mobileservice->id)) {
-        $webservicemanager->add_external_function_to_service("message_airnotifier_are_notification_preferences_configured",
-                                                        $mobileservice->id);
-    }
-
     return $result;
 }

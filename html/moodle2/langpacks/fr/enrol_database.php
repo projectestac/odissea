@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_database', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configurer les instances d\'inscription par base de données';
 $string['database:unenrol'] = 'Désinscrire les utilisateurs suspendus';
 $string['dbencoding'] = 'Encodage de la base de données';
 $string['dbhost'] = 'Adresse IP ou nom de domaine du serveur';
@@ -63,6 +64,8 @@ $string['remotecoursefield'] = 'Champ cours de la base de données externe';
 $string['remotecoursefield_desc'] = 'Nom du champ de la table de la base de données externe utilisé pour comparer les enregistrements de la table de cours.';
 $string['remoteenroltable'] = 'Table des inscriptions de la base de données externe';
 $string['remoteenroltable_desc'] = 'Nom de la table de la base de données externe contenant la liste des inscriptions des utilisateurs. Si le champ n\'est pas renseigné, aucune synchronisation ne sera effectuée.';
+$string['remoteotheruserfield'] = 'Champ distant Autre utilisateur';
+$string['remoteotheruserfield_desc'] = 'Dans la table distante, le nom du champ utilisé pour signaler les attributions du rôle « Autre utilisateur ».';
 $string['remoterolefield'] = 'Champ rôle de la base de données externe';
 $string['remoterolefield_desc'] = 'Nom du champ de la table de la base de données externe utilisé pour comparer les enregistrements de la table des rôles.';
 $string['remoteuserfield'] = 'Champ utilisateur de la base de données externe';

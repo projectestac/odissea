@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['defaultmaxcoursesdesc'] = 'Il numero massimo di corsi da visualizzare n
 $string['expandall'] = 'Espandi tutti gli elenchi corsi';
 $string['forcedefaultmaxcourses'] = 'Forza numero massimo di corsi';
 $string['forcedefaultmaxcoursesdesc'] = 'Gli utenti non potranno personalizzare il numero massimo di corsi visualizzati nel blocco';
+$string['fullpath'] = 'Tutte le categorie e sotto categorie';
 $string['hiddencoursecount'] = 'Hai {$a} corso nascosto';
 $string['hiddencoursecountplural'] = 'Hai {$a} corsi nascosti';
 $string['hiddencoursecountwithshowall'] = 'Hai {$a->coursecount} corso nascosto ({$a->showalllink})';
@@ -48,13 +49,17 @@ $string['movecourse'] = 'Sposta corso: {$a}';
 $string['movecoursehere'] = 'Sposta il corso qui';
 $string['movetofirst'] = 'Sposta corso {$a} all\'inizio';
 $string['movingcourse'] = 'Stai spostando: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Nessuno';
 $string['numtodisplay'] = 'Numero di corsi da visualizzare';
+$string['onlyparentname'] = 'Solo categoria gentitore';
 $string['otherexpanded'] = 'Espandi altri corsi';
 $string['pluginname'] = 'Panoramica corsi';
 $string['preservestates'] = 'Mantieni stati espansi';
 $string['shortnameprefix'] = 'Includi {$a}';
 $string['shortnamesufixprural'] = '(e {$a} altri)';
 $string['shortnamesufixsingular'] = '(e {$a} altri)';
+$string['showcategories'] = 'Categorie da visualizzare';
+$string['showcategoriesdesc'] = 'Visualizza la categoria di appartenenza sotto al corso';
 $string['showchildren'] = 'Visualizza corsi figli';
 $string['showchildrendesc'] = 'Consente la visualizzazione dei corsi figli al di sotto del corso principale.';
 $string['showwelcomearea'] = 'Visualizza area di benvenuto';

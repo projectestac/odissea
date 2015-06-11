@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['default'] = 'Enabled by default';
 $string['default_help'] = 'If set, this submission method will be enabled by default for all new assignments.';
 $string['enabled'] = 'Online text';
 $string['enabled_help'] = 'If enabled, students are able to type rich text directly into an editor field for their submission.';
-$string['event_assessable_uploaded'] = 'An online text has been uploaded.';
+$string['eventassessableuploaded'] = 'An online text has been uploaded.';
 $string['nosubmission'] = 'Nothing has been submitted for this assignment';
 $string['numwords'] = '({$a} words)';
 $string['numwordsforlog'] = 'Submission word count: {$a} words';
@@ -38,3 +38,6 @@ $string['onlinetext'] = 'Online text';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Allow online text submission';
 $string['pluginname'] = 'Online text submissions';
+$string['wordlimit'] = 'Word limit';
+$string['wordlimitexceeded'] = 'The word limit for this assignment is {$a->limit} words and you are attempting to submit {$a->count} words. Please review your submission and try again.';
+$string['wordlimit_help'] = 'If online text submissions are enabled, this is the maximum number of words that each student will be allowed to submit.';

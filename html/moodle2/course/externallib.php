@@ -77,11 +77,14 @@ class core_course_external extends external_api {
         //retrieve the course
         $course = $DB->get_record('course', array('id' => $params['courseid']), '*', MUST_EXIST);
 
-        //check course format exist
-        if (!file_exists($CFG->dirroot . '/course/format/' . $course->format . '/lib.php')) {
-            throw new moodle_exception('cannotgetcoursecontents', 'webservice', '', null, get_string('courseformatnotfound', 'error', '', $course->format));
-        } else {
-            require_once($CFG->dirroot . '/course/format/' . $course->format . '/lib.php');
+        if ($course->id != SITEID) {
+            // Check course format exist.
+            if (!file_exists($CFG->dirroot . '/course/format/' . $course->format . '/lib.php')) {
+                throw new moodle_exception('cannotgetcoursecontents', 'webservice', '', null,
+                                            get_string('courseformatnotfound', 'error', $course->format));
+            } else {
+                require_once($CFG->dirroot . '/course/format/' . $course->format . '/lib.php');
+            }
         }
 
         // now security checks
@@ -140,6 +143,7 @@ class core_course_external extends external_api {
                         //common info (for people being able to see the module or availability dates)
                         $module['id'] = $cm->id;
                         $module['name'] = format_string($cm->name, true);
+                        $module['instance'] = $cm->instance;
                         $module['modname'] = $cm->modname;
                         $module['modplural'] = $cm->modplural;
                         $module['modicon'] = $cm->get_icon_url()->out(false);
@@ -148,15 +152,15 @@ class core_course_external extends external_api {
                         $modcontext = context_module::instance($cm->id);
 
                         if (!empty($cm->showdescription) or $cm->modname == 'label') {
-                            // We want to use the external format. However from reading get_formatted_content(), get_content() format is always FORMAT_HTML.
-                            list($module['description'], $descriptionformat) = external_format_text($cm->get_content(),
+                            // We want to use the external format. However from reading get_formatted_content(), $cm->content format is always FORMAT_HTML.
+                            list($module['description'], $descriptionformat) = external_format_text($cm->content,
                                 FORMAT_HTML, $modcontext->id, $cm->modname, 'intro', $cm->id);
                         }
 
                         //url of the module
-                        $url = $cm->get_url();
+                        $url = $cm->url;
                         if ($url) { //labels don't have url
-                            $module['url'] = $cm->get_url()->out(false);
+                            $module['url'] = $url->out(false);
                         }
 
                         $canviewhidden = has_capability('moodle/course:viewhiddenactivities',
@@ -164,10 +168,9 @@ class core_course_external extends external_api {
                         //user that can view hidden module should know about the visibility
                         $module['visible'] = $cm->visible;
 
-                        //availability date (also send to user who can see hidden module when the showavailabilyt is ON)
-                        if ($canupdatecourse or ($CFG->enableavailability && $canviewhidden && $cm->showavailability)) {
-                            $module['availablefrom'] = $cm->availablefrom;
-                            $module['availableuntil'] = $cm->availableuntil;
+                        // Availability date (also send to user who can see hidden module).
+                        if ($CFG->enableavailability && ($canviewhidden || $canupdatecourse)) {
+                            $module['availability'] = $cm->availability;
                         }
 
                         $baseurl = 'webservice/pluginfile.php';
@@ -217,13 +220,13 @@ class core_course_external extends external_api {
                                     'id' => new external_value(PARAM_INT, 'activity id'),
                                     'url' => new external_value(PARAM_URL, 'activity url', VALUE_OPTIONAL),
                                     'name' => new external_value(PARAM_RAW, 'activity module name'),
+                                    'instance' => new external_value(PARAM_INT, 'instance id', VALUE_OPTIONAL),
                                     'description' => new external_value(PARAM_RAW, 'activity description', VALUE_OPTIONAL),
                                     'visible' => new external_value(PARAM_INT, 'is the module visible', VALUE_OPTIONAL),
                                     'modicon' => new external_value(PARAM_URL, 'activity icon url'),
                                     'modname' => new external_value(PARAM_PLUGIN, 'activity module type'),
                                     'modplural' => new external_value(PARAM_TEXT, 'activity module plural name'),
-                                    'availablefrom' => new external_value(PARAM_INT, 'module availability start date', VALUE_OPTIONAL),
-                                    'availableuntil' => new external_value(PARAM_INT, 'module availability en date', VALUE_OPTIONAL),
+                                    'availability' => new external_value(PARAM_RAW, 'module availability settings', VALUE_OPTIONAL),
                                     'indent' => new external_value(PARAM_INT, 'number of identation in the site'),
                                     'contents' => new external_multiple_structure(
                                           new external_single_structure(
@@ -850,6 +853,7 @@ class core_course_external extends external_api {
 
             // Check if the current user has enought permissions.
             if (!can_delete_course($courseid)) {
+                fix_course_sortorder();
                 throw new moodle_exception('cannotdeletecategorycourse', 'error',
                     '', format_string($course->fullname)." (id: $courseid)");
             }
@@ -858,6 +862,7 @@ class core_course_external extends external_api {
         }
 
         $transaction->allow_commit();
+        fix_course_sortorder();
 
         return null;
     }
@@ -1029,7 +1034,7 @@ class core_course_external extends external_api {
 
         // Check if we need to unzip the file because the backup temp dir does not contains backup files.
         if (!file_exists($backupbasepath . "/moodle_backup.xml")) {
-            $file->extract_to_pathname(get_file_packer(), $backupbasepath);
+            $file->extract_to_pathname(get_file_packer('application/vnd.moodle.backup'), $backupbasepath);
         }
 
         // Create new course.

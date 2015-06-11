@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_orderedlist', language 'it', branch 'MOODLE_26_STABLE'
+ * Strings for component 'atto_orderedlist', language 'it', branch 'MOODLE_28_STABLE'
  *
  * @package   atto_orderedlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['orderedlist'] = 'Elenco ordinato';
 $string['pluginname'] = 'Elenco numerato';

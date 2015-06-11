@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'imscp', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['imscp:view'] = 'IMSコンテンツを表示する';
 $string['keepold'] = 'パッケージをアーカイブする';
 $string['keepoldexplain'] = '何個のパッケージをアーカイブしますか?';
 $string['modulename'] = 'IMSコンテンツパッケージ';
-$string['modulename_help'] = 'IMSコンテンツパッケージは異なるシステム内で再利用できるよう、同意された標準に基づきパッケージされた一連のファイルです。IMSコンテンツパッケージモジュールでは、ZIP圧縮されたコンテンツパッケージをアップロードした後、リソースとしてコースに追加することができます。
+$string['modulename_help'] = 'IMSコンテンツパッケージは異なるシステム内で再利用できるよう同意された標準に基づきパッケージされた一連のファイルです。IMSコンテンツパッケージモジュールでは、ZIP圧縮されたコンテンツパッケージをアップロードした後、リソースとしてコースに追加することができます。
 
 通常、コンテンツはページ間のナビゲーションと共にそれぞれのページに表示されます。コンテンツをナビゲーションメニューまたはボタン等と共にポップアップウィンドウ上に表示するための様々なオプションがあります。
 

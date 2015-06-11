@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,21 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'あなたの設定を保存した後、';
 $string['allowunenrol'] = 'IMSデータに学生/教師の<strong>登録解除</strong> を許可する';
-$string['allowunenrol_desc'] = '<p>エンタープライズデータではユーザの登録と同様に、コースから学生および教師のユーザ登録を抹消することができます。この設定が有効にされた場合、Moodleはデータに指定された内容で、ユーザ登録抹消を行います。</p>
-
-<p>IMSデータで学生のユーザ登録を抹消するには、3つの方法があります:</p>
-
-<ul>
-<li>学生およびコースを指定する &lt;member&gt; 要素および &lt;role&gt; 要素の「recstatus」属性に 3 (「削除」を意味する) をセットする。まだ、MOODLEプラグインに実装されていません。</li>
-
-<li>学生およびコースを指定する &lt;member&gt; 要素および &lt;status&gt; 要素に 0 (「インアクティブ」を意味する) をセットする。</li>
-</ul>
-
-<p>3番目の方法は若干異なります。この方法では設定を有効にする必要はなく、ユーザ登録抹消日より前に指定することができます:</p>
-
-<ul>
-<li>ユーザ登録の &lt;timeframe&gt; を指定する要素 &lt;member&gt; は特定の学生の開始日および/または終了日を指定することができます。Moodleユーザ登録データテーブルがある場合、これらの日付が挿入され、終了日以降は学生が特定のコースにアクセスできないようになります。</li>
-</ul>';
+$string['allowunenrol_desc'] = 'この設定を有効にした場合、エンタープライズデータで指定することによりコース登録が解除されます。';
 $string['basicsettings'] = '基本設定';
 $string['coursesettings'] = 'コースデータオプション';
 $string['createnewcategories'] = 'Moodleに登録されていない場合、新しい (非表示) コースカテゴリを作成する';
@@ -72,12 +58,14 @@ $string['deleteusers_desc'] = '<p>この設定が有効にされた場合、IMS�
 <p>Moodleの標準どおり、実際にはユーザレコードはMoodleデータベースから削除されず、アカウントに削除フラグがセットされます。</p>';
 $string['doitnow'] = 'IMSエンタープライズインポート処理を実行してください。';
 $string['emptyattribute'] = '空白のままにする';
-$string['filelockedmail'] = 'あなたが使用しているIMSファイルベースのユーザ登録 ({$a}) のテキストファイルをcronプロセスで削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるよう、ファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
+$string['filelockedmail'] = 'あなたが使用しているIMSファイルベースのユーザ登録 ({$a}) のテキストファイルをcronプロセスで削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
 $string['filelockedmailsubject'] = 'インポートエラー: ユーザ登録ファイル';
 $string['fixcasepersonalnames'] = '個人名をタイトル文字にする';
 $string['fixcaseusernames'] = 'ユーザ名を小文字に変更する';
 $string['ignore'] = '無視';
 $string['importimsfile'] = 'IMS Enterpriseファイルをインポートする';
+$string['imsenterprise:config'] = 'IMSエンタープライズ登録インスタンスを設定する';
+$string['imsenterprisecrontask'] = '登録ファイル処理';
 $string['imsrolesdescription'] = 'IMSエンタープライズには、8種類の異なるロールが指定されています。ロールを無視する場合も含めて、Moodleにこれらのロールを割り当ててください。';
 $string['location'] = 'ファイルロケーション';
 $string['logtolocation'] = 'ログファイルの出力場所 (空白はログなし)';

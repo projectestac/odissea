@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ca', branch 'MOODLE_26_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ca', branch 'MOODLE_28_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['layoutundefined'] = 'Aspecte no definit';
 $string['layoutvertical'] = 'Columna vertical de botons d\'opció';
 $string['nooptionsforsubquestion'] = 'No es poden obtenir les opcions per part de la pregunta # {$a->sub} (pregunta->id= {$a->id})';
 $string['noquestions'] = 'La pregunta de buits "<strong>{$a}</strong>" no conté cap buit';
+$string['pleaseananswerallparts'] = 'Si us plau, responeu totes les parts de la pregunta.';
 $string['pluginname'] = 'Respostes incrustades (Cloze)';
 $string['pluginnameadding'] = 'S\'està afegint una resposta incrustada (activitat de buits)';
 $string['pluginnameediting'] = 'S\'està editant una resposta incrustada (activitat de buits)';

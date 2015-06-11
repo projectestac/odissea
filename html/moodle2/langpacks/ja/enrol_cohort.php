@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'enrol_cohort', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'グループを追加する';
-$string['ajaxmore'] = 'さらに ...';
 $string['assignrole'] = 'ロールを割り当てる';
 $string['cohort:config'] = 'コーホートインスタンスを設定する';
-$string['cohortsearch'] = '検索';
 $string['cohort:unenrol'] = '利用停止ユーザを登録解除する';
 $string['instanceexists'] = 'すでに選択されたロールにコーホートは同期されています。';
 $string['pluginname'] = 'コーホート同期';

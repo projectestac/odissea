@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'gradingform_guide', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'La description pour évaluateurs ne peut 
 $string['err_nomaxscore'] = 'Le score maximal du critère ne peut pas être vide';
 $string['err_noshortname'] = 'Le nom du critère ne peut pas être vide';
 $string['err_scoreinvalid'] = 'Le score donné à {$a->criterianame} n\'est pas valide : le score max est de {$a->maxscore}';
+$string['err_shortnametoolong'] = 'Le nom des critères ne doit pas dépasser 256 caractères.';
 $string['gradingof'] = 'Évaluation de {$a}';
 $string['guidemappingexplained'] = 'Attention : votre guide d\'évaluation définit une note maximale de <b>{$a->maxscore}</b>, alors que la note maximale de l\'activité est de {$a->modulegrade}. La note maximale du guide d\'évaluation sera modifiée pour correspondre à la note maximale du module.<br />Toutes les notes seront converties en conformité et arrondies à la note disponible la plus proche.';
 $string['guidenotcompleted'] = 'Veuillez fournir une note valide pour chaque critère';

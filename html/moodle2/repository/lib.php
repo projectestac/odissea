@@ -17,7 +17,7 @@
 /**
  * This file contains classes used to manage the repository plugins in Moodle
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package   core_repository
  * @copyright 2009 Dongsheng Cai {@link http://dongsheng.org}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -493,18 +493,27 @@ class repository_type implements cacheable_object {
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 abstract class repository implements cacheable_object {
-    /** Timeout in seconds for downloading the external file into moodle */
+    /**
+     * Timeout in seconds for downloading the external file into moodle
+     * @deprecated since Moodle 2.7, please use $CFG->repositorygetfiletimeout instead
+     */
     //XTEC ************ MODIFICAT - To increase default timeout (to let downloading bigger files)
     //2012.11.20 @sarjona
     const GETFILE_TIMEOUT = 150;
     //************ ORIGINAL
-    /*
-    const GETFILE_TIMEOUT = 30;
-     */
+    //const GETFILE_TIMEOUT = 30;
     //************ FI
-    /** Timeout in seconds for syncronising the external file size */
+
+    /**
+     * Timeout in seconds for syncronising the external file size
+     * @deprecated since Moodle 2.7, please use $CFG->repositorysyncfiletimeout instead
+     */
     const SYNCFILE_TIMEOUT = 1;
-    /** Timeout in seconds for downloading an image file from external repository during syncronisation */
+
+    /**
+     * Timeout in seconds for downloading an image file from external repository during syncronisation
+     * @deprecated since Moodle 2.7, please use $CFG->repositorysyncimagetimeout instead
+     */
     const SYNCIMAGE_TIMEOUT = 3;
 
     // $disabled can be set to true to disable a plugin by force
@@ -655,7 +664,7 @@ abstract class repository implements cacheable_object {
      * Returns the type name of the repository.
      *
      * @return string type name of the repository.
-     * @since  2.5
+     * @since  Moodle 2.5
      */
     public function get_typename() {
         if (empty($this->typename)) {
@@ -1667,14 +1676,6 @@ abstract class repository implements cacheable_object {
     public function get_file_reference($source) {
         if ($source && $this->has_moodle_files()) {
             $params = @json_decode(base64_decode($source), true);
-            if (!$params && !in_array($this->get_typename(), array('recent', 'user', 'local', 'coursefiles'))) {
-                // IMPORTANT! Since default format for moodle files was changed in the minor release as a security fix
-                // we maintain an old code here in order not to break 3rd party repositories that deal
-                // with moodle files. Repositories are strongly encouraged to be upgraded, see MDL-45616.
-                // In Moodle 2.8 this fallback will be removed.
-                $params = file_storage::unpack_reference($source, true);
-                return file_storage::pack_reference($params);
-            }
             if (!is_array($params) || empty($params['contextid'])) {
                 throw new repository_exception('invalidparams', 'repository');
             }
@@ -1754,9 +1755,12 @@ abstract class repository implements cacheable_object {
      *   url: URL to the source (from parameters)
      */
     public function get_file($url, $filename = '') {
+        global $CFG;
+
         $path = $this->prepare_file($filename);
         $c = new curl;
-        $result = $c->download_one($url, null, array('filepath' => $path, 'timeout' => self::GETFILE_TIMEOUT));
+
+        $result = $c->download_one($url, null, array('filepath' => $path, 'timeout' => $CFG->repositorygetfiletimeout));
         if ($result !== true) {
             throw new moodle_exception('errorwhiledownload', 'repository', '', $result);
         }
@@ -1884,7 +1888,7 @@ abstract class repository implements cacheable_object {
      * can be edited.
      *
      * @return bool true if the user can edit the instance.
-     * @since 2.5
+     * @since Moodle 2.5
      */
     public final function can_be_edited_by_user() {
         global $USER;
@@ -1941,7 +1945,7 @@ abstract class repository implements cacheable_object {
      * the user instances will be protected when they need to.
      *
      * @return boolean True when the repository accesses private external data.
-     * @since  2.5
+     * @since  Moodle 2.5
      */
     public function contains_private_data() {
         return true;
@@ -2235,7 +2239,7 @@ abstract class repository implements cacheable_object {
      *
      * @param array $breadcrumb contains each element of the breadcrumb.
      * @return array of breadcrumb elements.
-     * @since 2.3.3
+     * @since Moodle 2.3.3
      */
     protected static function prepare_breadcrumb($breadcrumb) {
         global $OUTPUT;
@@ -2256,7 +2260,7 @@ abstract class repository implements cacheable_object {
      *
      * @param array $list of files and folders.
      * @return array of files and folders.
-     * @since 2.3.3
+     * @since Moodle 2.3.3
      */
     protected static function prepare_list($list) {
         global $OUTPUT;
@@ -2707,7 +2711,7 @@ abstract class repository implements cacheable_object {
      */
     public function convert_references_to_local() {
         $fs = get_file_storage();
-        $files = $fs->get_external_files($this->id);
+        $files = $fs->get_external_files($this->id, '');
         foreach ($files as $storedfile) {
             $fs->import_external_file($storedfile);
         }
@@ -2974,7 +2978,7 @@ abstract class repository implements cacheable_object {
 /**
  * Exception class for repository api
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package   core_repository
  * @copyright 2009 Dongsheng Cai {@link http://dongsheng.org}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -2985,7 +2989,7 @@ class repository_exception extends moodle_exception {
 /**
  * This is a class used to define a repository instance form
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package   core_repository
  * @copyright 2009 Dongsheng Cai {@link http://dongsheng.org}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -3105,7 +3109,7 @@ final class repository_instance_form extends moodleform {
 /**
  * This is a class used to define a repository type setting form
  *
- * @since 2.0
+ * @since Moodle 2.0
  * @package   core_repository
  * @copyright 2009 Dongsheng Cai {@link http://dongsheng.org}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

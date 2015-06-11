@@ -17,8 +17,7 @@
 /**
  * Handle the return back to Moodle from the tool provider
  *
- * @package    mod
- * @subpackage lti
+ * @package mod_lti
  * @copyright  Copyright (c) 2011 Moodlerooms Inc. (http://www.moodlerooms.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @author     Chris Scribner
@@ -58,7 +57,7 @@ if (!empty($errormsg) || !empty($msg)) {
     $PAGE->set_title($pagetitle);
     $PAGE->set_heading($course->fullname);
 
-    //Avoid frame-in-frame action
+    // Avoid frame-in-frame action.
     if ($launchcontainer == LTI_LAUNCH_CONTAINER_EMBED || $launchcontainer == LTI_LAUNCH_CONTAINER_EMBED_NO_BLOCKS) {
         $PAGE->set_pagelayout('embedded');
     } else {
@@ -109,9 +108,9 @@ if (!empty($errormsg)) {
     $courseurl = new moodle_url('/course/view.php', array('id' => $courseid));
     $url = $courseurl->out();
 
-    //Avoid frame-in-frame action
+    // Avoid frame-in-frame action.
     if ($launchcontainer == LTI_LAUNCH_CONTAINER_EMBED || $launchcontainer == LTI_LAUNCH_CONTAINER_EMBED_NO_BLOCKS) {
-        //Output a page containing some script to break out of frames and redirect them
+        // Output a page containing some script to break out of frames and redirect them.
 
         echo '<html><body>';
 
@@ -138,7 +137,7 @@ if (!empty($errormsg)) {
 
         echo '</body></html>';
     } else {
-        //If no error, take them back to the course
+        // If no error, take them back to the course.
         redirect($url);
     }
 }

@@ -43,6 +43,15 @@ class tool extends base {
     }
 
     /**
+     * Tools cannot be disabled.
+     *
+     * @return boolean
+     */
+    public function is_enabled() {
+        return true;
+    }
+
+    /**
      * Return URL used for management of plugins of this type.
      * @return moodle_url
      */

@@ -27,7 +27,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
-require_once(dirname(__FILE__) . '/../lib.php');
+require_once(__DIR__ . '/../lib.php');
+require_once($CFG->dirroot . '/lib/phpunit/lib.php');
 
 
 /**
@@ -116,7 +117,6 @@ abstract class question_test_helper {
         $dataforformconstructor->formoptions = new stdClass();
         $dataforformconstructor->formoptions->canmove = true;
         $dataforformconstructor->formoptions->cansaveasnew = true;
-        $dataforformconstructor->formoptions->movecontext = false;
         $dataforformconstructor->formoptions->canedit = true;
         $dataforformconstructor->formoptions->repeatelements = true;
         $qtype = question_bank::get_qtype($questiondata->qtype);
@@ -404,8 +404,12 @@ class test_question_maker {
         $essay->qtype = question_bank::get_qtype('essay');
 
         $essay->responseformat = 'editor';
+        $essay->responserequired = 1;
         $essay->responsefieldlines = 15;
         $essay->attachments = 0;
+        $essay->attachmentsrequired = 0;
+        $essay->responsetemplate = '';
+        $essay->responsetemplateformat = FORMAT_MOODLE;
         $essay->graderinfo = '';
         $essay->graderinfoformat = FORMAT_MOODLE;
 
@@ -542,10 +546,10 @@ abstract class question_testcase extends advanced_testcase {
             $compare = (array)$compare;
             foreach ($expect as $k=>$v) {
                 if (!array_key_exists($k, $compare)) {
-                    $this->fail("Property $k does not exist");
+                    $this->fail("Property {$k} does not exist");
                 }
                 if ($v != $compare[$k]) {
-                    $this->fail("Property $k is different");
+                    $this->fail("Property {$k} is different");
                 }
             }
             $this->assertTrue(true);

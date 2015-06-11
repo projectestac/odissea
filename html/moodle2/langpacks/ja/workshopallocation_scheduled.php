@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'ja', branch 'MOODLE_26_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'ja', branch 'MOODLE_28_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['currentstatusexecution4'] = '実行待ち';
 $string['currentstatusnext'] = '次の実行';
 $string['currentstatusnext_help'] = '場合によっては、すでに実行された後でも割り当てが自動的にスケジュールされることがあります。例えば、提出終了日時が延長された場合にこのような処理が発生します。';
 $string['currentstatusreset'] = 'リセット';
-$string['currentstatusreset_help'] = 'このチェックボックスをチェックした上でフォームを保存することで、結果として現在のステータスがリセットされます。上記で有効にされている場合、再度割り当てを実行できるよう、前回の実行情報すべてが削除されます。';
+$string['currentstatusreset_help'] = 'このチェックボックスをチェックした上でフォームを保存することで、結果として現在のステータスがリセットされます。上記で有効にされている場合、再度割り当てを実行できるよう前回の実行情報すべてが削除されます。';
 $string['currentstatusresetinfo'] = '実行結果をリセットするには、チェックボックスをチェックした上でフォームを保存してください。';
 $string['currentstatusresult'] = '最近の実行結果';
 $string['enablescheduled'] = 'スケジュール割り当てを有効にする';

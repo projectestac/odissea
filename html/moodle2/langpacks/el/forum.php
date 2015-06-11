@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'el', branch 'MOODLE_26_STABLE'
+ * Strings for component 'forum', language 'el', branch 'MOODLE_28_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -165,7 +165,7 @@ $string['everyonecannowchoose'] = 'Όλοι έχουν τώρα την επιλ�
 $string['everyoneisnowsubscribed'] = 'Όλοι είναι τώρα συνδρομητές σε αυτή την ομάδα συζητήσεων';
 $string['everyoneissubscribed'] = 'Όλοι είναι συνδρομητές σε αυτή την ομάδα συζητήσεων';
 $string['existingsubscribers'] = 'Υπάρχοντες συνδρομητές';
-$string['forcessubscribe'] = 'Αυτή η ομάδα συζητήσεων υποχρεώνει όλους να γίνουν συνδρομητές';
+$string['forcesubscribed'] = 'Αυτή η ομάδα συζητήσεων υποχρεώνει όλους να γίνουν συνδρομητές';
 $string['forum'] = 'Ομάδα συζητήσεων';
 $string['forum:addnews'] = 'Προσθήκη νέων';
 $string['forumauthorhidden'] = 'Συγγραφέας (κρυμμένος)';
@@ -309,14 +309,11 @@ $string['numposts'] = '{$a} μηνύματα';
 $string['olderdiscussions'] = 'Παλαιότερες συζητήσεις';
 $string['oldertopics'] = 'Παλαιότερα θέματα';
 $string['oldpostdays'] = 'Ανάγνωση μετά από ημέρες';
-$string['openmode0'] = 'Δεν επιτρέπονται συζητήσεις και απαντήσεις';
-$string['openmode1'] = 'Δεν επιτρέπονται συζητήσεις, αλλά επιτρέπονται απαντήσεις';
-$string['openmode2'] = 'Συζητήσεις και απαντήσεις επιτρέπονται';
 $string['overviewnumpostssince'] = '{$a} δημοσιεύσεις από την τελευταία είσοδο';
 $string['overviewnumunread'] = 'σύνολο μη αναγνωσμένων';
 $string['parent'] = 'Εμφάνιση γονέα';
 $string['parentofthispost'] = 'Γονέας αυτού του μηνύματος';
-$string['pluginadministration'] = 'Διαχείριση ομάδων συζητήσεων';
+$string['pluginadministration'] = 'Διαχείρηση ομάδων συζητήσεων';
 $string['pluginname'] = 'Ομάδα Συζητήσεων';
 $string['postadded'] = '<p>Το μήνυμά σας προστέθηκε επιτυχώς.</p> <p> Έχετε {$a} να το επεξεργαστείτε αν θέλετε να κάνετε αλλαγές.</p>';
 $string['postaddedsuccess'] = 'Η δημοσίευση σας προστέθηκε με επιτυχία.';
@@ -381,7 +378,7 @@ $string['searchphrase'] = 'Αυτή ακριβώς η φράση πρέπει ν
 $string['searchresults'] = 'Αναζήτηση στα αποτελέσματα';
 $string['searchsubject'] = 'Αυτές οι λέξεις θα πρέπει να εμφανίζονται στο θέμα';
 $string['searchuser'] = 'Αυτό το όνομα θα πρέπει να ταιριάζει με το συγγραφέα';
-$string['searchuserid'] = 'Το Moodle ID του συγγραφέα';
+$string['searchuserid'] = 'Το ΠΗΛΕΑΣ ID του συγγραφέα';
 $string['searchwhichforums'] = 'Επιλέξτε σε ποιά ομάδα συζητήσεων θα ψάξετε';
 $string['searchwords'] = 'Αυτές οι λέξεις μπορούν να εμφανίζονται οπουδήποτε στο μήνυμα';
 $string['seeallposts'] = 'Δείτε όλες τις δημοσιεύσεις από αυτόν το χρήστη';

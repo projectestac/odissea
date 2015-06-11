@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ar', branch 'MOODLE_26_STABLE'
+ * Strings for component 'question', language 'ar', branch 'MOODLE_28_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['cannotread'] = 'تعذر قراءة الملف المستورد (أو �
 $string['cannotretrieveqcat'] = 'لم يتم استرجاع فئة السؤال';
 $string['cannotunhidequestion'] = 'فشل إظهار السؤال.';
 $string['cannotunzip'] = 'لا يمكن فك ضغط الملف.';
+$string['categories'] = 'فئات';
 $string['category'] = 'فئة';
 $string['categorycurrent'] = 'الفئة الحالية';
 $string['categorycurrentuse'] = 'استخدم هذه الفئة ';
@@ -97,6 +98,7 @@ $string['errordeletingquestionsfromcategory'] = 'خطأ في حذف السؤال
 $string['errorfilecannotbecopied'] = 'خطأ: لا يمكن نسخ الملف {$a}.';
 $string['errorfilecannotbemoved'] = 'خطأ: لا يمكن نقل الملف {$a}.';
 $string['errormanualgradeoutofrange'] = 'الدرجة {$a->grade} ليست بين 0 و {$a->maxgrade} للسؤال {$a->name}. لم يتم حفظ النتيجة ولا التعليق.';
+$string['export'] = 'تصدير';
 $string['exportcategory'] = 'تصدير الفئه';
 $string['exportfilename'] = 'أسئله';
 $string['exportquestions'] = 'صدر الأسئله إلى ملف';
@@ -109,6 +111,7 @@ $string['getcontextfromfile'] = 'الحصول على السياق من ملف';
 $string['hidden'] = 'مخفي/غير ظاهر';
 $string['hintn'] = 'تلميح';
 $string['hinttext'] = 'نص التلميح';
+$string['import'] = 'استيراد';
 $string['importcategory'] = 'استورد فئه';
 $string['importfromcoursefiles'] = 'أو أختر ملف مقرر دراسي ليتم إستيراده';
 $string['importfromupload'] = 'أختر ملف ليتم تحميله';
