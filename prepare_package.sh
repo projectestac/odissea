@@ -41,4 +41,3 @@ rm html/moodle2/config-oracle.php
 rm html/moodle2/theme/xtec2/pix/logo_main.gif
 
 rm -Rf html/moodle2_old
-
