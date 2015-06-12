@@ -1,3 +1,12 @@
 [submodule "html/moodle2/testlib"]
 	path = html/moodle2/testlib
 	url = https://github.com/projectestac/testlib_PHP.git
+[submodule "html/moodle2/admin/tool/odisseagtafsync"]
+	path = html/moodle2/admin/tool/odisseagtafsync
+	url = https://github.com/projectestac/moodle-admin_odisseagtafsync.git
+[submodule "html/moodle2/auth/odissea"]
+	path = html/moodle2/auth/odissea
+	url = https://github.com/projectestac/moodle-auth_odissea.git
+[submodule "html/moodle2/blocks/configurable_reports"]
+	path = html/moodle2/blocks/configurable_reports
+	url = https://github.com/jleyva/moodle-block_configurablereports.git
