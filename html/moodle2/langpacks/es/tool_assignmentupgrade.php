@@ -41,6 +41,7 @@ $string['listnotupgraded'] = 'Lista de tareas que no se han actualizado';
 $string['listnotupgraded_desc'] = 'Puedo actualizar tareas individualmente desde aquí';
 $string['noassignmentsselected'] = 'No hay tareas convertidas';
 $string['noassignmentstoupgrade'] = 'No hay tareas que requieran actualización';
+$string['notsupported'] = '';
 $string['notupgradedintro'] = 'Esta página muestra las tareas creadas con una versión anterior de Moodle y que no se han actualizado a la nueva versión del módulo de tareas de Moodle 2.3. No todas las tareas pueden ser actualizadas - si es que fueron creados con un subtipo de tarea personalizada - ya que el subtipo tendría que ser actualizado para el formato de la nueva extensión tarea con el fin de completar la actualización.';
 $string['notupgradedtitle'] = 'Tareas no actualizadas';
 $string['pluginname'] = 'Motor de Ayuda para actualizar Tareas';

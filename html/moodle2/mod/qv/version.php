@@ -30,9 +30,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2015050600;      // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2014051207;      // Requires this Moodle version (2.0)
+$plugin->version   = 2015061500;      // The current module version (Date: YYYYMMDDXX)
+$plugin->requires  = 2014051200;      // Requires this Moodle version (2.7)
 $plugin->cron      = 0;               // Period for cron to check this module (secs)
 $plugin->component = 'mod_qv';        // To check on upgrade, that module sits in correct place
-$plugin->release   = 'v0.0.2';        // Human-readable version name
-$plugin->maturity = MATURITY_BETA;   // How stable the plugin is
+$plugin->release   = 'v0.1.0';        // Human-readable version name
+$plugin->maturity = MATURITY_STABLE;   // How stable the plugin is

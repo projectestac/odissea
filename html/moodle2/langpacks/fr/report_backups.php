@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backupofcourselogs'] = 'Historique de sauvegarde de {$a}';
-$string['logsofbackupexecutedon'] = 'Historique de la sauvegarde exécutée le {$a}';
+$string['logsofbackupexecutedon'] = 'Historique de la sauvegarde effectuée le {$a}';
 $string['nobackupsfound'] = 'Pas de sauvegarde trouvée.';
 $string['nologsfound'] = 'Il n\'y a pas d\'historique pour cette sauvegarde.';
 $string['pluginname'] = 'Rapport des sauvegardes';

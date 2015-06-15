@@ -58,10 +58,9 @@ $string['assignmentmail'] = '{$a->grader} ha hecho un comentario de  retroalimen
 Puede verla adjunta a su entrega en
 
    {$a->url}';
-$string['assignmentmailhtml'] = '{$a->grader} ha hecho un comentario de  retroalimentación en su entrega de la tarea
-\'<i>{$a->assignment}</i>\'<br /><br />
-
-Puede verla adjunta a su entrega en  <a href="{$a->url}">entrega de tarea</a>"';
+$string['assignmentmailhtml'] = '<p>{$a->grader} ha hecho un comentario de  retroalimentación en su entrega de la tarea
+\'<i>{$a->assignment}</i>\'.</p>
+<p>Puede verla adjunta a su entrega en  <a href="{$a->url}">entrega de tarea</a>.</p>';
 $string['assignmentmailsmall'] = '{$a->grader} ha hecho un comentario de  retroalimentación en su entrega de la tarea {$a->assignment}.
 
 Puede verla adjunta a su entrega';
@@ -110,7 +109,7 @@ $string['comment'] = 'Comentario';
 $string['completionsubmit'] = 'El estudiante debe entregar esta actividad para completarla';
 $string['configshowrecentsubmissions'] = 'Todos pueden ver las notificaciones de las entregas en los informes de actividad reciente.';
 $string['confirmbatchgradingoperation'] = '¿Está seguro que quiere {$a->operation} a  {$a->count} estudiantes?';
-$string['confirmsubmission'] = '¿Está seguro que quiere enviar su trabajo para que sea evaluado? Si es así, ya no podrá realizar modificaciones';
+$string['confirmsubmission'] = '¿Está seguro que quiere enviar su trabajo para que sea evaluado? Una vez enviado ya no podrá realizar modificaciones.';
 $string['conversionexception'] = 'No se pudo convertir tarea. La excepción fue: {$a}';
 $string['couldnotconvertgrade'] = 'No se pudo convertir calificación de tarea del usuario {$a}.';
 $string['couldnotconvertsubmission'] = 'No se pudo convertir la calificación de la entrega a la tarea del usuario {$a}.';
@@ -141,6 +140,7 @@ $string['editingpreviousfeedbackwarning'] = 'Está editando la realimentación p
 $string['editingstatus'] = 'Edición de estado';
 $string['editsubmission'] = 'Editar entrega';
 $string['editsubmission_help'] = 'Realizar cambios en la entrega';
+$string['editsubmissionother'] = 'Editar entrega para {$a}';
 $string['enabled'] = 'Habilitado';
 $string['errornosubmissions'] = 'No hay entregas que descargar';
 $string['errorquickgradingvsadvancedgrading'] = 'No se guardaron las calificaciones porque esta tarea usa actualmente la calificación avanzada';
@@ -148,6 +148,8 @@ $string['errorrecordmodified'] = 'Las calificaciones no se guardaron porque algu
 $string['eventallsubmissionsdownloaded'] = 'Todos los envíos se están descargando.';
 $string['eventassessablesubmitted'] = 'Se ha enviado una entrega';
 $string['eventextensiongranted'] = 'Se ha entregado una extensión.';
+$string['eventfeedbackupdated'] = 'Retroalimentación actualizada';
+$string['eventfeedbackviewed'] = 'Retroalimentación vista';
 $string['eventgradingtableviewed'] = 'Visualización de las Calificaciones';
 $string['eventidentitiesrevealed'] = 'Se han revelado las identidades.';
 $string['eventmarkerupdated'] = 'El evaluador asignado ha sido actualizado';
@@ -378,12 +380,14 @@ $string['submissionteam'] = 'Grupo';
 $string['submissiontypes'] = 'Tipos de entrega';
 $string['submitaction'] = 'Enviar';
 $string['submitassignment'] = 'Enviar tarea';
-$string['submitassignment_help'] = 'Una vez que esta tarea se haya enviado usted no podrá hacer más cambios';
+$string['submitassignment_help'] = 'Una vez que esta tarea se haya enviado usted no podrá hacer más cambios.';
 $string['submitforgrading'] = 'Enviado para calificar';
 $string['submitted'] = 'Enviada';
 $string['submittedearly'] = 'La tarea fue enviada {$a} antes';
 $string['submittedlate'] = 'La tarea fue enviada {$a} después';
 $string['submittedlateshort'] = '{$a} después';
+$string['subplugintype_assignfeedback'] = 'Plugin de Retroalimentación';
+$string['subplugintype_assignfeedback_plural'] = 'Plugins de Retroalimentación';
 $string['teamsubmission'] = 'Entrega por grupos';
 $string['teamsubmissiongroupingid'] = 'Agrupamiento para los grupos';
 $string['teamsubmissiongroupingid_help'] = 'Este es el agrupamiento que la tarea utilizará para formar los grupos de estudiantes. Si no se establece, se utilizará la configuración por defecto de grupos.';

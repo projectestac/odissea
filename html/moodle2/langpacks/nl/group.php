@@ -138,7 +138,7 @@ $string['importgroups_help'] = 'Groepen kunnen geïimporteerd worden via een tek
 * Elke  record is een rij kommagescheiden gegevens
 * De eerste record bevat een lijst met veldnamen die de opmaak bepalen van de rest van het bestand
 * De vereiste veldnaam is groupname
-* Optionele velnamen zijn description, enrolmentkey, picture, hidepictuer';
+* Optionele velnamen zijn description, enrolmentkey, picture, hidepicture';
 $string['javascriptrequired'] = 'Voor deze pagina moet Javascript ingeschakeld zijn';
 $string['members'] = 'Leden per groep';
 $string['membersofselectedgroup'] = 'Leden van de geselecteerde groep';

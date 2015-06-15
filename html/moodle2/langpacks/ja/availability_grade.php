@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = '条件付利用評価のためにキャッシュされた評定アイテム';
+$string['cachedef_items'] = '条件付利用評価のためにキャッシュされた評定項目';
 $string['cachedef_scores'] = '条件付利用評価のためにキャッシュされたユーザ評点';
 $string['description'] = '学生は指定された評点に達する必要があります。';
 $string['error_backwardrange'] = '評点幅を指定する場合、最小評点は最大評点より小さくなる必要があります。';
 $string['error_invalidnumber'] = '評点幅には有効なパーセンテージを指定する必要があります。';
-$string['error_selectgradeid'] = 'あなたは評定条件の評定アイテムを選択する必要があります。';
+$string['error_selectgradeid'] = 'あなたは評定条件の評定項目を選択する必要があります。';
 $string['label_max'] = '最大評点割合 (排他)';
 $string['label_min'] = '最小評点割合 (包括)';
 $string['missing'] = '(不明な活動)';

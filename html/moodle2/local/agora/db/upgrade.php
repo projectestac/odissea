@@ -72,6 +72,178 @@ function xmldb_local_agora_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2015051900, 'local', 'agora');
     }
 
+    if ($oldversion < 2015060500) {
+        set_config('customusermenuitems', "messages,message|/message/index.php|message
+myfiles,moodle|/user/files.php|download
+mybadges,badges|/badges/mybadges.php|award");
+        set_config('alternativefullnameformat', 'language');
+
+        set_config('toolbar', 'collapse = collapse
+style1 = title, bold, italic, underline
+list = unorderedlist, orderedlist
+links = link
+files = image, media, managefiles
+undo = undo
+style3 = fontfamily, fontsize, fontcolor, backcolor, clear
+style2 = strike, subscript, superscript
+align = align
+indent = indent
+insert = equation, charmap, table
+accessibility = accessibilitychecker, accessibilityhelper
+other = html
+math = wiris', 'editor_atto');
+
+        set_config('texteditors', 'atto,textarea');
+        set_config('autosavefrequency', 60, 'editor_atto');
+
+        set_config('httpurl', 'http://cdn.mathjax.org/mathjax/2.3-latest/MathJax.js', 'filter_mathjaxloader');
+        set_config('httpsurl', 'https://cdn.mathjax.org/mathjax/2.3-latest/MathJax.js', 'filter_mathjaxloader');
+        set_config('mathjaxconfig', 'MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+', '    ');
+
+        set_config('librarygroup1', '\cdot
+\times
+\ast
+\div
+\diamond
+\pm
+\mp
+\oplus
+\ominus
+\otimes
+\oslash
+\odot
+\circ
+\bullet
+\asymp
+\equiv
+\subseteq
+\supseteq
+\leq
+\geq
+\preceq
+\succeq
+\sim
+\simeq
+\approx
+\subset
+\supset
+\ll
+\gg
+\prec
+\succ
+\infty
+\in
+\ni
+\forall
+\exists
+\neq
+', 'atto_equation');
+
+        set_config('librarygroup2', '\leftarrow
+\rightarrow
+\uparrow
+\downarrow
+\leftrightarrow
+\nearrow
+\searrow
+\swarrow
+\nwarrow
+\Leftarrow
+\Rightarrow
+\Uparrow
+\Downarrow
+\Leftrightarrow
+', 'atto_equation');
+
+        set_config('librarygroup3', '\alpha
+\beta
+\gamma
+\delta
+\epsilon
+\zeta
+\eta
+\theta
+\iota
+\kappa
+\lambda
+\mu
+\nu
+\xi
+\pi
+\rho
+\sigma
+\tau
+\upsilon
+\phi
+\chi
+\psi
+\omega
+\Gamma
+\Delta
+\Theta
+\Lambda
+\Xi
+\Pi
+\Sigma
+\Upsilon
+\Phi
+\Psi
+\Omega
+', 'atto_equation');
+
+        set_config('librarygroup4', '\sum{a,b}
+\int_{a}^{b}{c}
+\iint_{a}^{b}{c}
+\iiint_{a}^{b}{c}
+\oint{a}
+(a)
+[a]
+\lbrace{a}\rbrace
+\left| \begin{matrix} a_1 & a_2 \ a_3 & a_4 \end{matrix} \right|
+', 'atto_equation');
+
+        set_config('pathdvisvgm', '/usr/bin/dvisvgm', 'filter_tex');
+        set_config('pathmimetex', '', 'filter_tex');
+
+        upgrade_plugin_savepoint(true, 2015060500, 'local', 'agora');
+    }
+
+
+    if ($oldversion < 2015060501) {
+        uninstall_plugin('block', 'advices');
+        uninstall_plugin('block', 'rcommon');
+        uninstall_plugin('rscormreport', 'basic');
+        uninstall_plugin('rscormreport', 'graphs');
+        uninstall_plugin('rscormreport', 'interactions');
+        uninstall_plugin('mod', 'rscorm');
+        uninstall_plugin('editor', 'tinymce');
+        uninstall_plugin('tinymce', 'ctrlhelp');
+        uninstall_plugin('tinymce', 'dragmath');
+        uninstall_plugin('tinymce', 'managefiles');
+        uninstall_plugin('tinymce', 'moodleemoticon');
+        uninstall_plugin('tinymce', 'moodleimage');
+        uninstall_plugin('tinymce', 'moodlemedia');
+        uninstall_plugin('tinymce', 'moodlenolink');
+        uninstall_plugin('tinymce', 'pdw');
+        uninstall_plugin('tinymce', 'spellchecker');
+        uninstall_plugin('tinymce', 'tiny_mce_wiris');
+        uninstall_plugin('tinymce', 'wrap');
+
+        // Delete block advices table
+        $table = new xmldb_table('block_advices');
+        if ($dbman->table_exists($table)) {
+            $dbman->drop_table($table);
+        }
+
+        upgrade_plugin_savepoint(true, 2015060501, 'local', 'agora');
+    }
+
 
 
     return true;

@@ -30,7 +30,7 @@ $string['activemethodinfonone'] = 'No s\'ha triat cap mètode de qualificació a
 $string['changeactivemethod'] = 'Canvia el mètode de qualificació actiu a';
 $string['clicktoclose'] = 'prem per tancar';
 $string['exc_gradingformelement'] = 'No es pot instanciar l\'element del formulari de qualificació';
-$string['formnotavailable'] = 'S\'ha seleccionat el mètode de qualificació avançat però el formulari de qualificació no està encara disponible. Necessiteu definir-lo primer a través d\'un enllaç en el bloc Configuració.';
+$string['formnotavailable'] = 'S\'ha seleccionat el mètode de qualificació avançat però el formulari de qualificació no està disponible encara. Necessiteu definir-lo primer a través d\'un enllaç en el bloc Configuració.';
 $string['gradingformunavailable'] = 'Avís: el formulari de qualificació avançada no està preparat en aquest moment. S\'utilitzarà el mètode de qualificació senzill fins que el formulari tingui un estat vàlid.';
 $string['gradingmanagement'] = 'Qualificació avançada';
 $string['gradingmanagementtitle'] = 'Qualificació avançada: {$a->component} ({$a->area})';
@@ -58,9 +58,9 @@ $string['noitemid'] = 'La qualificació no és possible. L\'element de qualifica
 $string['nosharedformfound'] = 'No s\'ha trobat cap plantilla.';
 $string['searchownforms'] = 'inclou els meus formularis';
 $string['searchtemplate'] = 'Cercador de formularis de qualificació';
-$string['searchtemplate_help'] = 'Podeu cercar un formulari de qualificació i utilitzar-lo com una plantilla per noves qualificacions des d\'aquí. Escriviu paraules que puguin aparèixer en algun lloc del nom del formulari, la seva descripció o el cos del formulari mateix. Per cercar una frase obre i tanca la frase entre cometes dobles.
+$string['searchtemplate_help'] = 'Podeu cercar un formulari de qualificació i utilitzar-lo aquí com a plantilla pel nou formulari. Simplement escriviu paraules que puguin aparèixer en algun lloc del nom del formulari, la seva descripció o el cos del formulari mateix. Per cercar una frase, poseu-la entre cometes dobles ("..").
 
-Per defecte, sols els formularis de qualificació que s\'hagin desat com a plantilles compartides s\'inclouran en la cerca de resultats. Podeu també incloure tots els vostres formularis de qualificació en els resultats de la cerca. D\'aquesta forma reutilitzeu els vostres formularis de qualificació sense compartir-los. Sols els formularis marcats com \'A punt per utilitzar\' poden ser reutilitzats d\'aquesta forma.';
+Per defecte, només els formularis de qualificació que s\'hagin desat com a plantilles compartides s\'inclouran en els resultats de la cerca. Podeu també incloure tots els vostres formularis de qualificació en els resultats de la cerca. D\'aquesta forma reutilitzeu els vostres formularis de qualificació sense compartir-los. Només els formularis marcats com «A punt per utilitzar» poden ser reutilitzats d\'aquesta forma.';
 $string['statusdraft'] = 'Esborrany';
 $string['statusready'] = 'A punt per utilitzar';
 $string['templatedelete'] = 'Suprimeix';

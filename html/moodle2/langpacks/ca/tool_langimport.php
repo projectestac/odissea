@@ -45,5 +45,5 @@ $string['pluginname'] = 'Paquets d\'idioma';
 $string['purgestringcaches'] = 'Purga la memòria cau de cadenes.';
 $string['remotelangnotavailable'] = 'Moodle no s\'ha pogut connectar a download.moodle.org i per tant no es pot fer la instal·lació automàtica de paquets d\'idioma. Baixeu el fitxer o fitxers zip des de <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> , copieu-los al directori {$a} i descomprimiu-los manualment.';
 $string['uninstall'] = 'Desinstal·la el paquet d\'idioma seleccionat';
-$string['uninstallconfirm'] = 'Esteu a punt de desinstal·lar completament el paquet d\'idioma {$a}. N\'esteu segur?';
+$string['uninstallconfirm'] = 'Ara desinstal·lareu completament el paquet d\'idioma {$a}. N\'esteu segur?';
 $string['updatelangs'] = 'Actualitza els paquets d\'idioma';

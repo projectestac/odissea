@@ -21,22 +21,22 @@ class script_replace_database_text extends agora_script_base{
 	protected function _execute($params = array(), $execute = true){
 		global $CFG, $OUTPUT;
 
-		$textOrig = $params['origintext'];
-		$textTarg = $params['targettext'];
-		if (empty($textOrig) || empty($textTarg)) {
+		$search = $params['origintext'];
+		$replace = $params['targettext'];
+		if (empty($search) || empty($replace)) {
 			echo $OUTPUT->notification('Falten paràmetres');
 			return false;
 		}
 
-		echo "Reemplaçant '<strong>$textOrig</strong>' per '<strong>$textTarg</strong>'<br />";
+		echo "Reemplaçant '<strong>$search</strong>' per '<strong>$replace</strong>'<br />";
 
 		switch ($CFG->dbtype) {
 			case 'oci':
 			case 'oci8':
-				$result = $this->replaceMoodleOCI($textOrig, $textTarg);
+				$result = $this->replaceMoodleOCI($search, $replace);
 				break;
 			default:
-				$result = $this->replaceMoodle($textOrig, $textTarg);
+				$result = $this->replaceMoodle($search, $replace);
 				break;
 		}
 
@@ -82,7 +82,7 @@ class script_replace_database_text extends agora_script_base{
 	        if ($columns = $DB->get_columns($table)) {
 	            $DB->set_debug(true);
 	            foreach ($columns as $column) {
-	            	try{
+	            	try {
 	                	$DB->replace_all_text($table, $column, $search, $replace);
 	                } catch (Exception $e) {
 	                	echo $OUTPUT->notification($e->getMessage());
@@ -93,7 +93,7 @@ class script_replace_database_text extends agora_script_base{
 	    }
 
 		$blocks = core_component::get_plugin_list('block');
-	    foreach ($blocks as $blockname=>$fullblock) {
+	    foreach ($blocks as $blockname => $fullblock) {
 	        if ($blockname === 'NEWBLOCK') {   // Someone has unzipped the template, ignore it
 	            continue;
 	        }
@@ -117,14 +117,14 @@ class script_replace_database_text extends agora_script_base{
 	}
 
 	/**
-	 * Replace $textOrig string to $new string at Moodle
+	 * Replace $search string to $new string at Moodle
 	 *
-	 * @param type $textOrig old string to replace
-	 * @param type $textTarg new string
+	 * @param type $search old string to replace
+	 * @param type $replace new string
 	 * @return type Boolean
 	 */
-	private function replaceMoodleOCI($textOrig, $textTarg) {
-		global $CFG;
+	private function replaceMoodleOCI($search, $replace) {
+		global $CFG, $DB;
 
 		if (!($con = oci_pconnect($CFG->dbuser, $CFG->dbpass, $CFG->dbname))) {
 			echo 'No s\'ha pogut connectar a la base de dades de Moodle';
@@ -135,8 +135,9 @@ class script_replace_database_text extends agora_script_base{
 		$sql = 'SELECT table_name FROM user_tables WHERE table_name like \'' . strtoupper($CFG->prefix) . '%\' ';
 		$stmt = oci_parse($con, $sql);
 		$tables = array();
-		if (!oci_execute($stmt, OCI_DEFAULT))
+		if (!oci_execute($stmt, OCI_DEFAULT)) {
 			return false;
+		}
 		while (oci_fetch($stmt)) {
 			$tables[] = oci_result($stmt, 'TABLE_NAME');
 		}
@@ -147,8 +148,9 @@ class script_replace_database_text extends agora_script_base{
 			$sql = 'SELECT column_name, data_type FROM user_tab_columns WHERE table_name = \'' . $table . '\' ';
 			$stmt = oci_parse($con, $sql);
 			$columns = array();
-			if (!oci_execute($stmt, OCI_DEFAULT))
+			if (!oci_execute($stmt, OCI_DEFAULT)) {
 				return false;
+			}
 			while (oci_fetch($stmt)) {
 				$columns[] = array('column_name' => oci_result($stmt, 'COLUMN_NAME'),
 					'data_type' => oci_result($stmt, 'DATA_TYPE')
@@ -158,7 +160,7 @@ class script_replace_database_text extends agora_script_base{
 			// Replace only CLOB and VARCHAR
 			foreach ($columns as $column) {
 				if ($column['data_type'] == 'CLOB' || $column['data_type'] == 'VARCHAR2') {
-					$sql = 'UPDATE ' . $table . ' SET ' . $column['column_name'] . ' = replace(' . $column['column_name'] . ', \'' . $textOrig . '\', \'' . $textTarg . '\') WHERE ' . $column['column_name'] . ' LIKE \'%' . $textOrig . '%\' ';
+					$sql = 'UPDATE ' . $table . ' SET ' . $column['column_name'] . ' = replace(' . $column['column_name'] . ', \'' . $search . '\', \'' . $replace . '\') WHERE ' . $column['column_name'] . ' LIKE \'%' . $search . '%\' ';
 					$stmt = oci_parse($con, $sql);
 					$columns = array();
 					if (!oci_execute($stmt, OCI_DEFAULT)) {
@@ -178,6 +180,18 @@ class script_replace_database_text extends agora_script_base{
 		}
 
 		oci_close($con);
+
+		echo '<br>Reemplaçant camps base64 de taula block_instances...';
+		$instances = $DB->get_recordset('block_instances');
+	    foreach ($instances as $instance) {
+	        // TODO: intentionally hardcoded until MDL-26800 is fixed
+	        $config = unserialize(base64_decode($instance->configdata));
+	        if (isset($config->text) and is_string($config->text)) {
+	            $config->text = str_replace($search, $replace, $config->text);
+	            $DB->set_field('block_instances', 'configdata', base64_encode(serialize($config)), array('id' => $instance->id));
+	        }
+	    }
+	    $instances->close();
 
 		return true;
 	}

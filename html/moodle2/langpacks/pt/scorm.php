@@ -35,6 +35,7 @@ $string['aicchacpkeepsessiondata'] = 'Sessão de dados AICC HACP';
 $string['aicchacpkeepsessiondata_desc'] = 'Período de tempo em dias para manter os dados da sessão externa AICC HACP (uma configuração alta vai encher a tabela com dados antigos, mas pode ser útil quando estiver depurando)';
 $string['aicchacptimeout'] = 'Tempo limite AICC HACP';
 $string['aicchacptimeout_desc'] = 'Período de tempo em minutos que uma sessão externa AICC HACP pode permanecer aberta';
+$string['aiccuserid'] = 'passar id numérico do utilizador ao AICC';
 $string['aliasonly'] = 'Ao selecionar um ficheiro \'imsmanifest.xml\' de um repositório, deverá usar um alias/atalho para este ficheiro.';
 $string['allowapidebug'] = 'Ativar debug e tracing da API (configure a máscara de captura com apidebugmask)';
 $string['allowtypeaicchacp'] = 'Permitir AICC HACP externo';

@@ -1,6 +1,13 @@
 Changes in progress
 -------------------------------------------
 
+Versió 2015061500 0.2.7
+-------------------------------------------
+ - Requirements of Moodle 2.7 or greater
+ - Code and settings cleaning
+ - Settings moved to config_plugins
+
+
 Versió 2013042200 - ITTERIA/UPCNET (2013-04-22 @sarjona)
 -------------------------------------------
 - Adapted version to Moodle 2. Tested and compatible with Moodle 2.3 and 2.4

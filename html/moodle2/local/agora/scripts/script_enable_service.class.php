@@ -63,14 +63,6 @@ class script_enable_service extends agora_script_base{
         $DB->update_record('course', $maincourse);
         mtrace('Curs principal configurat', '<br/>');
 
-        // Extra settings
-        $value = 'wrap,formatselect,wrap,bold,italic,wrap,bullist,numlist,wrap,hr,wrap,link,unlink,wrap,anchor,wrap,image
-
-undo,redo,wrap,underline,strikethrough,sub,sup,wrap,justifyleft,justifycenter,justifyright,wrap,outdent,indent,wrap,forecolor,backcolor,wrap,ltr,rtl,wrap,nonbreaking,charmap,table
-
-fontselect,fontsizeselect,code,search,replace,wrap,cleanup,removeformat,pastetext,pasteword,wrap,fullscreen';
-
-        set_config('customtoolbar', $value, 'editor_tinymce');
         mtrace('Canviat barra de l\'editor HMTL', '<br/>');
 
         filter_set_global_state('filter/tex', TEXTFILTER_ON);

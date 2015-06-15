@@ -804,6 +804,73 @@ body.path-grade-report-grader #user-grades {
     background: transparent;
 }
 
+/* Edited atto tables */
+/*
+#region-main div.editor_atto_content table,
+.path-mod #region-main table,
+.path-course-view #region-main table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#region-main div.editor_atto_content table td,
+#region-main div.editor_atto_content table th,
+#region-main div.editor_atto_content table caption,
+.path-mod #region-main table th,
+.path-mod #region-main table td,
+.path-mod #region-main table caption,
+.path-course-view #region-main table th,
+.path-course-view #region-main table td,
+.path-course-view #region-main table caption {
+    border: 1px solid #ccc;
+    position: relative;
+    min-width: 30px;
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#region-main div.editor_atto_content th,
+.path-mod #region-main table th,
+.path-course-view  #region-main table th {
+    font-weight: bold;
+}
+
+#region-main div.editor_atto_content thead th,
+.path-mod #region-main table thead th,
+.path-course-view  #region-main table thead th {
+    border-bottom: 2px solid #bbb;
+    vertical-align: bottom;
+}
+
+#region-main div.editor_atto_content table caption,
+.path-mod #region-main table caption,
+.path-course-view #region-main table caption {
+    text-align: center;
+}
+
+.path-mod #region-main table caption,
+.path-course-view #region-main table caption {
+    border: 0;
+}
+
+#region-main div.editor_atto_content table caption {
+    border: 1px dashed #ccc;
+}
+
+#region-main div.editor_atto_content table tbody + tbody,
+.path-mod #region-main table tbody + tbody,
+.path-course-view #region-main table tbody + tbody{
+    border-bottom: 2px solid #bbb;
+}
+
+div.editor_atto_content table table,
+.path-mod #region-main table table,
+.path-course-view #region-main table table {
+    background-color: white;
+}
+*/
 
 /* Phones and tablets */
 @media (max-width: 979px) {

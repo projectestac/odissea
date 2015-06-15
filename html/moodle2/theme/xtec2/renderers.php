@@ -683,13 +683,22 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         $renderized = true;
 
         $cache = cache::make('core', 'htmlpurifier');
-        if ($text = $cache->get('agora_alerts')) {
+
+        $isadmin = isloggedin() && has_capability('moodle/site:config', context_system::instance());
+
+        if ($isadmin) {
+            $cachekey = 'agora_alerts_admin';
+        } else {
+            $cachekey = 'agora_alerts';
+        }
+
+        if ($text = $cache->get($cachekey)) {
             return $text;
         }
 
         $text = "";
         $pluginconfig = get_config('theme_xtec2');
-        if (isloggedin() && has_capability('moodle/site:config', context_system::instance())) {
+        if ($isadmin) {
             if ($adminmsg = self::get_alert_message($pluginconfig, 'admin_alert')) {
                 $text .= '<div class="admin_alert">'.$adminmsg;
                 $text .= '<div style="font-size:smaller">' . get_string('show_admins', 'theme_xtec2') . '</div></div>';
@@ -715,11 +724,11 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             $output .= html_writer::end_tag('div');
 
             $output .= html_writer::tag('span', '', array('id' => 'sb-' . $skipid, 'class' => 'skip-block-to'));
-            $cache->set('agora_alerts', $output);
+            $cache->set($cachekey, $output);
             return $output;
         }
 
-        $cache->set('agora_alerts', "");
+        $cache->set($cachekey, "");
         return "";
     }
 

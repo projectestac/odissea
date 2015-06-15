@@ -59,6 +59,7 @@ $string['allowuserblockhiding'] = 'Permet que els usuaris ocultin blocs';
 $string['allowuserswitchrolestheycantassign'] = 'Permet que els usuaris sense la capacitat d\'assignar rols commutin rols';
 $string['allowuserthemes'] = 'Permet temes d\'usuari';
 $string['alternativefullnameformat'] = 'Format de nom complet alternatiu';
+$string['alternativefullnameformat_desc'] = 'Defineix la manera com es mostren els noms als usuaris amb capacitat de veure els noms complets (per defecte, usuaris amb el rol de gestor, professor o professor no editor). Els marcadors que es poden utilitzar són els mateixos que els de la configuració de «Format de nom complet».';
 $string['antivirus'] = 'Antivirus';
 $string['appearance'] = 'Aparença';
 $string['aspellpath'] = 'Camí d\'aspell';
@@ -194,6 +195,10 @@ Comunitat Moodle|http://moodle.org
 --Documentació en Català del Moodle|http://docs.moodle.org/ca|Documentació|ca
 -Novetats del Moodle|http://moodle.org/news
 </pre>';
+$string['configcustomusermenuitems'] = 'Podeu configurar els continguts del menú d\'usuari (tret de l\'enllaç de fi de sessió, que s\'hi afegeix de manera automàtica). Cada línia se separa amb un caràcter de barra vertical | i consisteix en:
+1) una cadena amb la forma «nom de la cadena d\'idioma, nom del component» o com a text net;
+2) un URL, i
+3) una icona, ja sigui una imatge o un URL. Es poden emprar separadors afegint-hi una línia d\'un o més caràcters de coixinet # allà on vulguem.';
 $string['configdbsessions'] = 'Si habiliteu aquest paràmetre, la base de dades emmagatzemarà la informació de les sessions dels usuaris. Això és especialment útil en llocs amb molts usuaris o en llocs que funcionen en clústers de servidors. Per a la majoria de llocs probablement és millor no habilitar-lo i utilitzar el disc del servidor en lloc de la base de dades. Teniu en compte que si canvieu ara aquest paràmetre tancareu les sessions de tots els usuaris (la vostra inclosa). Si utilitzeu MySQL assegureu-vos que el paràmetre \'max_allowed_packet\' de my.cnf (o my.ini) és com a mínim 4M.';
 $string['configdebug'] = 'Si activeu aquest paràmetre s\'incrementarà l\'error_reporting del PHP, de manera que es visualitzaran més avisos. Útil només per a desenvolupadors.';
 $string['configdebugdisplay'] = 'Si activeu aquest paràmetre els informes d\'errors s\'inclouran a la pàgina HTML. Això pot ser pràctic, però espatlla l\'XHTML, el Javascript, les galetes i les capçaleres HTTP. Si està desactivat, la sortida s\'enviarà als registres del servidor per facilitar la depuració. El paràmetre del PHP error_log controla a quin registre s\'envia.';
@@ -371,7 +376,7 @@ $string['configvisiblecourses'] = 'Visualitza de la manera normal els cursos en 
 $string['configwarning'] = 'Aneu amb compte amb aquests paràmetres: uns valors incorrectes podrien causar problemes.';
 $string['configyuicomboloading'] = 'Aquesta opció habilita la càrrega de fitxers combinats per les llibreries YUI. Aquest paràmetre hauria d\'estar habilitat en llocs de producció per raons de funcionament òptim.';
 $string['confirmation'] = 'Confirmació';
-$string['confirmdeletecomments'] = 'Esteu a punt d\'esborrar comentaris, segur que voleu fer-ho?';
+$string['confirmdeletecomments'] = 'Ara esborrareu comentaris, segur que voleu fer-ho?';
 $string['confirmed'] = 'Confirmat';
 $string['cookiehttponly'] = 'Només galetes HTTP';
 $string['cookiesecure'] = 'Només galetes segures';
@@ -778,6 +783,7 @@ $string['pathtodot'] = 'Camí a dot';
 $string['pathtodot_help'] = 'Camí a dot. Probablement alguna cosa com /usr/bin/dot. Per poder generar gràfics des de fitxers DOT, us cal tindre instal·lat l\'executable dot i anotar-lo aquí. Fixeu-vos que, per ara, això sols s\'utilitza per les característiques dels perfils (Desenvolupament -> Perfils ) construïts dins de Moodle.';
 $string['pathtodu'] = 'Camí de du';
 $string['pathtogs'] = 'Camí al ghostscript';
+$string['pathtogs_help'] = 'A la majoria d\'instal·lacions de Linux, això es pot deixar com a «/usr/bin/gs». A Windows seria una cosa així «c:gsbingswin32c.exe» (assegureu-vos que no hi ha espais al camí —si és necessari, copieu els fitxers «gswin32c.exe» i «gsdll32.dll» a una nova carpeta sense espais al camí)';
 $string['pathtopgdump'] = 'Camí de pg_dump';
 $string['pathtopgdumpdesc'] = 'Només cal definir aquest paràmetre en cas que tingueu diferents pg_dump en el vostre sistema (per exemple si teniu instal·lades diferents versions de postgresql)';
 $string['pathtopgdumpinvalid'] = 'El camí de pg_dump no és vàlid. El fitxer no es troba en aquest camí o no és executable.';
@@ -970,6 +976,7 @@ $string['sitepolicyguest_help'] = 'Si teniu una política de lloc que tots els c
 $string['sitepolicy_help'] = 'Si teniu unes normes del lloc que tots els usuaris han de veure i signar abans d\'usar el lloc, especifiqueu-ne aquí l\'URL. Si no, deixeu el camp en blanc. L\'URL pot ser una adreça qualsevol, p. ex. l\'adreça d\'un fitxer dels fitxers del lloc, p. ex. http://elvostrelloc/file.php/1/normes.html';
 $string['sitesectionhelp'] = 'Si activeu aquesta opció, es mostrarà una secció de tema a la primera plana del lloc.';
 $string['slasharguments'] = 'Utilitza arguments en barra';
+$string['slashargumentswarning'] = 'Es recomana habilitar l\'ús d\'arguments en barra. Serà necessari en el futur. Per a més detalls sobre això, vegeu la documentació següent: <a href="https://docs.moodle.org/en/admin/environment/slasharguments">Using slash arguments</a>.';
 $string['smartpix'] = 'Cerca intel·ligent d\'imatges';
 $string['soaprecommended'] = 'Instal·lar l\'extensió opcional SOAP és útil pels serveis web i alguns mòduls no oficials.';
 $string['sort_fullname'] = 'Nom complet del curs';
@@ -1060,6 +1067,8 @@ $string['uninstallplugin'] = 'Desinstal·la';
 $string['unlockaccount'] = 'Desbloca el compte';
 $string['unsettheme'] = 'Inhabilita el tema';
 $string['unsupported'] = 'No implementat';
+$string['unsupporteddbstorageengine'] = 'El motor d\'emmagatzematge de la base de dades que esteu utilitzant ja no és compatible.';
+$string['unsupporteddbtablerowformat'] = 'La vostra base de dades té taules que empren Antelope com a format de fitxers. Us recomanem que convertiu les taules al format de fitxers Barracuda. Per a més detalls sobre una eina per convertir taules d\'InnoDB a Barracuda, vegeu la documentació següent: <a href="https://docs.moodle.org/en/cli">Administration via command line</a>.';
 $string['unsuspenduser'] = 'Activeu el compte d\'usuari';
 $string['updateaccounts'] = 'Actualitza els comptes existents';
 $string['updateautocheck'] = 'Comprova automàticament si hi ha actualitzacions disponibles';

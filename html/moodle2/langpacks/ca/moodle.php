@@ -496,7 +496,7 @@ $string['deletecheckfiles'] = 'Esteu absolutament segur que voleu suprimir aques
 $string['deletecheckfull'] = 'Esteu absolutament segur que voleu suprimir completament {$a} ?';
 $string['deletechecktype'] = 'Esteu segurs que voleu suprimir aquest {$a->type}?';
 $string['deletechecktypename'] = 'Esteu segurs que voleu suprimir  {$a->type} "{$a->name}"?';
-$string['deletecheckwarning'] = 'Esteu a punt de suprimir aquests fitxers';
+$string['deletecheckwarning'] = 'Ara suprimireu aquests fitxers';
 $string['deletecomment'] = 'Elimina aquest comentari';
 $string['deletecompletely'] = 'Suprimeix-los completament';
 $string['deletecourse'] = 'Suprimeix un curs';
@@ -680,8 +680,8 @@ Si necessiteu ajuda, si us plau contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: confirmació de canvi de contrasenya';
-$string['emailpasswordconfirmmaybesent'] = '<p>Si heu proporcionat un nom d\'usuari o una adreça de correu correctes, ja se us deu haver enviat un missatge per correu electrònic.</p>
-<p>Aquest missatge conté instruccions molt senzilles per a confirmar i completar el canvi de contrasenya. Si seguiu tenint dificultats, contacteu si us plau amb l\'administrador del lloc.</p>';
+$string['emailpasswordconfirmmaybesent'] = '<p>Si heu proporcionat un nom d\'usuari o una adreça de correu correctes aviat rebreu un missatge de correu electrònic.</p>
+<p>Aquest missatge conté instruccions senzilles per a confirmar i completar el canvi de contrasenya. Si continueu tenint dificultats podeu contactar amb l\'administració del lloc.</p>';
 $string['emailpasswordconfirmnoemail'] = '<p> El compte d\'usuari que heu especificat no té cap adreça de correu electrònic registrada </p>
 <p>Poseu-vos en contacte amb l\'administrador del lloc. </p>';
 $string['emailpasswordconfirmnotsent'] = '<p> L\'usuari que heu proporcionat no identifica un compte d\'usuari existent. </p>
@@ -1546,8 +1546,8 @@ $string['restoredaccount'] = 'Compte restaurat';
 $string['restoredaccountinfo'] = 'Aquest compte ha sigut importat des d\'un altre servidor i la contrasenya s\'ha perdut. Per establir una altra contrasenya per correu electrònic, si us plau premeu "Continua"';
 $string['restorefinished'] = 'La restauració s\'ha completat amb èxit';
 $string['restoreto'] = 'Restaura en';
-$string['restoretositeadding'] = 'Atenció: Aneu a restaurar la  primera plana del lloc afegint-hi dades!';
-$string['restoretositedeleting'] = 'Atenció: Aneu a restaurar la  primera plana del lloc esborrant-li dades primer!';
+$string['restoretositeadding'] = 'Atenció: Ara restaurareu la primera plana del lloc afegint-hi dades!';
+$string['restoretositedeleting'] = 'Atenció: Ara restaurareu la  primera plana del lloc esborrant-ne dades primer!';
 $string['restoreuserconflict'] = 'Intentar restaurar l\'usuari {$a}\' des de la còpia de seguretat causa conflictes';
 $string['restoreuserinfofailed'] = 'El procés de restauració s\'ha aturat perquè no teniu permís per a restaurar dades d\'usuari.';
 $string['restoreusersprecheck'] = 'S\'estan comprovant les dades d\'usuari';
@@ -1643,7 +1643,7 @@ $string['selectacountry'] = 'Selecciona un país';
 $string['selectacourse'] = 'Selecciona un curs';
 $string['selectacoursesite'] = 'Selecciona un curs o lloc web';
 $string['selectagroup'] = 'Selecciona un grup';
-$string['selectall'] = 'Selecciona tot';
+$string['selectall'] = 'Selecciona-ho tot';
 $string['selectamodule'] = 'Heu de seleccionar un mòdul d\'activitat';
 $string['selectanaction'] = 'Selecciona una acció';
 $string['selectanoptions'] = 'Seleccioneu una opció';
@@ -2046,8 +2046,8 @@ $string['yahooid'] = 'Yahoo ID';
 $string['year'] = 'any';
 $string['years'] = 'anys';
 $string['yes'] = 'Sí';
-$string['youareabouttocreatezip'] = 'Es crearà un fitxer zip que conté';
-$string['youaregoingtorestorefrom'] = 'S\'engegarà el procés de restauració de';
+$string['youareabouttocreatezip'] = 'Ara creareu un fitxer zip que conté';
+$string['youaregoingtorestorefrom'] = 'Ara engegareu el procés de restauració de';
 $string['youneedtoenrol'] = 'Per a realitzar aquesta acció us heu d\'inscriure al curs';
 $string['yourlastlogin'] = 'La vostra darrera entrada va ser';
 $string['yourself'] = 'vós mateix';

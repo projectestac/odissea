@@ -1,0 +1,14 @@
+Release notes for QV Module for Moodle (https://github.com/projectestac/moodle-mod_qv/releases)
+
+More information on each of the fixes can be found in the project
+development home at https://github.com/projectestac/moodle-mod_qv
+
+Changes in 0.1.0 - 2015061500 (2015/06/15)
+---------------------------------------------------------------------------------------
+ - Added CHANGES.txt
+ - Changed HTTP_RAW_POST_DATA by php://input
+ - Requirements of Moodle 2.7 or greater
+ - Retrieving responses and scores solved
+ - Some navigation changes and added new events API classes
+ - Code cleaning
+ - Settings moved to config_plugins

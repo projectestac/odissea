@@ -589,6 +589,7 @@ $string['page-mod-quiz-review'] = 'Rever página de tentativa de Teste';
 $string['page-mod-quiz-summary'] = 'Página de sumário da tentativa de Teste';
 $string['page-mod-quiz-view'] = 'Página de informação do Teste';
 $string['page-mod-quiz-x'] = 'Qualquer página do teste';
+$string['pageshort'] = 'P';
 $string['pagesize'] = 'Número de tentativas por página';
 $string['parent'] = 'Ascendente';
 $string['parentcategory'] = 'Categoria ascendente';

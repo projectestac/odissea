@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['abstractclass'] = '抽象クラス';
 $string['action'] = '操作';
-$string['affectedtable'] = '影響を受けるテーブル';
+$string['affectedtable'] = '影響を受けたテーブル';
 $string['all'] = 'すべて';
 $string['clear'] = 'クリア';
 $string['component'] = 'コンポーネント';

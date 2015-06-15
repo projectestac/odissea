@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['autosavefrequency'] = 'Freqüència de desat automàtic';
+$string['autosavefrequency_desc'] = 'Aquest és el temps entre desat i desat automàtic. L\'Atto desarà de forma automàtica el text de l\'editor segons aquest paràmetre; per tant, el text es restaurarà de forma automàtica quan el mateix usuari torni al mateix formulari.';
 $string['autosavesucceeded'] = 'S\'ha desat l\'esborrany.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';

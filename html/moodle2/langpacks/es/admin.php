@@ -190,6 +190,7 @@ Comunidad Moodle|https://moodle.org
 #####
 Moodle.com|http://moodle.com/
 </pre>';
+$string['configcustomusermenuitems'] = 'Puede configurar los contenidos del menú de usuario (con la excepción del enlace de salir, el cual es automáticamente añadido). Cada línea se separa por carácteres | y consiste en 1) una cadena con el formato "langstringname, componentname" o como texto plano, 2) una URL, y 3) un icono bien un icono pix o como una URL. Los separadores pueden ser utilizados para añadir una línea o más carácteres # donde se desee.';
 $string['configdbsessions'] = 'Si elige esta opción, se usará la base de datos para almacenar información sobre las sesiones actuales. Esto es especialmente útil para sitios grandes u ocupados construídos sobre racimos (\'clusters\') de servidores. En la mayoría de los casos debería dejarse en blanco de modo que se use en su lugar el disco del servidor. Note que la modificación de este ajuste desconectará a todos los usuarios, incluído usted.';
 $string['configdebug'] = 'Si activa esta opción, se incrementará el error_reporting de PHP, de modo que recibirá más advertencias. Sólo resulta útil para los desarrolladores.';
 $string['configdebugdisplay'] = 'Si activa esta opción, el informe de errores irá a la página HTML. Es práctico pero rompe XHTML, JS, \'cookies\' y cabeceras HTTP en general. Si deshabilita esta opción, se enviarán las salidas a los registros del servidor, permitiendo una mejor depuración. El parámetro de configuración de PHP <b>error_log</b>controla a qué registro va el error.';
@@ -1060,6 +1061,7 @@ $string['unlockaccount'] = 'Desbloquear cuenta';
 $string['unsettheme'] = 'Desmarcar tema';
 $string['unsupported'] = 'No admitido';
 $string['unsupporteddbstorageengine'] = 'El motor de almacenamiento de base de datos que se utiliza ya no es compatible.';
+$string['unsupporteddbtablerowformat'] = 'Su base de datos tiene tablas utilizando el formato de fichero Antelope. Se le recomienda convertir las tablas al formato de fichero Barracuda. Revise la documentación <a href="https://docs.moodle.org/29/en/Administration_via_command_line">Administración mediante línea de comandos</a> para detalles de la herramienta para convertir tablas InnoDB a Barracuda.';
 $string['unsuspenduser'] = 'Activar cuenta de usuario';
 $string['updateaccounts'] = 'Actualizar cuentas existentes';
 $string['updateautocheck'] = 'Compruebe automáticamente las actualizaciones disponibles';

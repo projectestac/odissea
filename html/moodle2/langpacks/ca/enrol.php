@@ -36,11 +36,11 @@ $string['configenrolplugins'] = 'Seleccioneu tots els mòduls requerits i organi
 $string['custominstancename'] = 'Nom de la instància personalitzat';
 $string['defaultenrol'] = 'Afegeix instància als nous cursos';
 $string['defaultenrol_desc'] = 'És possible afegir aquest mòdul a tots els nous cursos per defecte.';
-$string['deleteinstanceconfirm'] = 'Esteu a punt de suprimir el mètode d\'inscripció "{$a->name}". Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
+$string['deleteinstanceconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}». Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
 
 Esteu segur que voleu continuar?';
 $string['deleteinstanceconfirmself'] = 'Esteu segur que voleu suprimir la instància "{$a->name}" que us dona accés a aquest curs? És possible que no pugueu tornar a entrar al curs si continueu.';
-$string['deleteinstancenousersconfirm'] = 'Esteu a punt de suprimir el mètode d\'inscripció "{$a->name}".
+$string['deleteinstancenousersconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}».
 
 Esteu segur que voleu continuar?';
 $string['disableinstanceconfirmself'] = 'Esteu segur que voler inhabilitar la instància "{$a->name}" que us dona accés a aquest curs? És possible que no pugueu tornar a entrar al curs si continueu.';

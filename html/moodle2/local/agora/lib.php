@@ -132,6 +132,7 @@ function run_cli($command, $outputfile = false, $append = true, $background = tr
 }
 
 function check_cron_run() {
+    global $CFG;
     if (!empty($CFG->cronclionly)) {
         $nocli = optional_param('nocli', false, PARAM_BOOL);
         if (!$nocli) {
@@ -280,7 +281,7 @@ function is_enabled_in_agora ($mod) {
     if (is_agora()) {
         // Disabled in all Agora Moodles
         if ($mod == 'clean' || $mod == 'more' || $mod == 'canvas' || $mod == 'base' ||
-            $mod == 'chat' || $mod == 'alfresco') {
+            $mod == 'chat' || $mod == 'alfresco' || $mod == 'tinymce') {
             return false;
         }
     }

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'リポジトリを参照する ...';
 $string['createlink'] = 'リンクを作成する';
-$string['enterurl'] = 'URIを入力する';
+$string['enterurl'] = 'URLを入力する';
 $string['openinnewwindow'] = '新しいウィンドウで開く';
 $string['pluginname'] = 'リンク';
 $string['unlink'] = 'リンク解除';

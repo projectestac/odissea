@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'リポジトリを参照する ...';
 $string['createmedia'] = 'メディアを挿入する';
 $string['entername'] = '名称を入力する';
-$string['enterurl'] = 'URIを入力する';
+$string['enterurl'] = 'URLを入力する';
 $string['height'] = '高さ';
 $string['pluginname'] = 'メディア';
 $string['width'] = '幅';

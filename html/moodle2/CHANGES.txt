@@ -3,6 +3,41 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 15.06.18
+---------------------------------------------------------------------------------------
+- Added testapp
+- Moodle upgraded to from 2.8.6
+- Hide some settings to non xtecadmins
+- Set stasharguments by default in config.php
+- Deleted participants as default course block
+- Configured new Logging system
+- Deleted patch to let teachers configure system cohorts
+- Changed TinyMCE to Atto
+- Deleted EOICampus
+- Updated theme XTEC2 with new features:
+  - Solved advices cache
+  - Added nodes color scheme
+  - Added new user menu
+  - Style maintenance page and popup layout
+  - Upgraded fontawesome to 4.3.0
+  - Toggle block view by clicking on each header
+  - Increased block icon size
+  - Deleted supercollapse on the grader
+  - Added footer whatsapp and skype icons
+- Added some extra atto modules:
+  - Font family
+  - Font size
+  - Wiris (added for Atto and deleted for tinyMCE)
+- Updated modules:
+  - Marsupial to 2.7.0.0 with code and settings cleaning
+  - Jclic, Geogebra i QV to version v0.2.7 with events, code and settings cleaning
+  - Geogebra now admits HTML5
+  - GoogleOauth, Choicegroup, Wiris, OpenUniversity question modules, Hotpotatoes, Journal, Questionnaire
+  - Language packs
+- Applied patches:
+  - MDL-49440 lib: Date picker duplicated week day names repaired
+  - MDL-49742 lib: Removed additional names on tables for sorting. (solved in 2.8.7)
+
 Changes 15.05.19
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 2.6.10 to 2.6.11

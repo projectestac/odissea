@@ -39,6 +39,6 @@ $string['page-mod-assignment-submissions'] = 'Página de entregas del módulo ta
 $string['page-mod-assignment-view'] = 'Página principal del módulo tareas';
 $string['page-mod-assignment-x'] = 'Cualquier página del módulo tarea';
 $string['pluginadministration'] = 'Administración de la tarea';
-$string['pluginname'] = 'Tarea (2.2)';
+$string['pluginname'] = 'Tarea 2.2 (Desactivada)';
 $string['upgradenotification'] = 'Esta actividad se basa en un módulo de tareas antiguo';
 $string['viewassignmentupgradetool'] = 'Ver la utilidad de actualización de tareas';

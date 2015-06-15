@@ -1,6 +1,13 @@
 Changes in progress
-------------------------------------------- 
-- Added ForzarGuardar parameter.
+-------------------------------------------
+
+Versió 2015061500 0.2.7
+-------------------------------------------
+ - Requirements of Moodle 2.7 or greater
+ - Code and settings cleaning
+ - Settings moved to config_plugins
+ - Rcontent admits report plugins
+ - Some navigation changes
 
 
 Versió 2013042200 - ITTERIA/UPCNET (2013-04-22 @sarjona)
@@ -63,7 +70,7 @@ Versió 2011101991 - IECISA (gantolin, mmartinez)
 -------------------------------------------
 - Extra control to prevend posible display notifications
 - Fixed bug in database model
-  
+
 
 Versió 2011092791 - IECISA (mmartinez)
 -------------------------------------------
@@ -78,7 +85,7 @@ Versió 2011090891 - IECISA (mmartinez)
 
 Versió 2011052091 - IECISA (mmartinez)
 -------------------------------------------
-- Added new parameter idgrade to search just for it  
+- Added new parameter idgrade to search just for it
 - Report show info directly
 - Report deleted innecessary comprovations
 - Report add parameter idgrade to the loader data
@@ -86,7 +93,7 @@ Versió 2011052091 - IECISA (mmartinez)
 - Report set the getted idgrade
 - Report get the next value of the array
 - Report now the comprovation is done in the sql statment
-- Report, in case that the user is a student in course context load from db just his registries 
+- Report, in case that the user is a student in course context load from db just his registries
 - Report add pagination
 - Settings added new field to set the number of registers per page
 - Lang files add new text string for report pagination
@@ -97,7 +104,7 @@ Versió 2011052091 - IECISA (mmartinez)
 - wsTrack status test changed to a alone function for control the error better
 - wsTrack new function to control that the status value is correct
 - wsTrack call to the new function for control status
-- wsTrack add POR_CORREGIR and CORREGIDO  
+- wsTrack add POR_CORREGIR and CORREGIDO
 - Lang files add new values POR_CORREGIR and CORREGIDO
 
 
@@ -116,6 +123,6 @@ Versió 2010121652 - IECISA (mmartinez)
 - wsTrack set how says the especification the optional parameters, and the default parameters when this fields arrive empty
 - wsTrack fixed bug in the details of the traking web services
 - wsTrack changed from where we ckeck the user and password to use in the headers
-- Add/edit form fixed bug when ajax is disabled and we are setting the isbn, unit or activity 
-  
-  
+- Add/edit form fixed bug when ajax is disabled and we are setting the isbn, unit or activity
+
+

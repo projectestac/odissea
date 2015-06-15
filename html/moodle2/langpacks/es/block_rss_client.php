@@ -37,6 +37,7 @@ $string['clientshowchannellinklabel'] = '¿Deberá mostrarse un enlace al sitio 
 $string['clientshowimagelabel'] = 'Mostrar imagen del canal si está disponible:';
 $string['configblock'] = 'Configurar este bloque';
 $string['couldnotfindfeed'] = 'No se pudo encontrar un canal con esa id';
+$string['couldnotfindloadrssfeed'] = 'No se puede encontrar o cargar el feed RSS.';
 $string['customtitlelabel'] = 'Título personalizado (déjelo en blanco para usar el título suministrado por el canal):';
 $string['deletefeedconfirm'] = '¿Está seguro de que desea eliminar este canal?';
 $string['disabledrssfeeds'] = 'Los canales RSS están deshabilitados';

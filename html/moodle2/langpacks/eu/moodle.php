@@ -716,6 +716,7 @@ $string['eventcourseupdated'] = 'Ikastaroa eguneratu da';
 $string['eventcourseviewed'] = 'Ikastaroa ikusi da';
 $string['eventemailfailed'] = 'Kale egin du e-posta bidaltzean';
 $string['eventname'] = 'Ekitaldiaren izena';
+$string['eventrecentactivityviewed'] = 'Duela gutxiko aktibitatea ikusi da';
 $string['eventunknownlogged'] = 'Ekitaldi ezezaguna';
 $string['eventusercreated'] = 'Erabiltzailea sortu da';
 $string['eventuserdeleted'] = 'Erabiltzailea ezabatu da';
