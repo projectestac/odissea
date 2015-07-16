@@ -6,6 +6,7 @@ $string['rcommon:exportcredentials'] = 'Exporta credencials de Marsupial';
 $string['rcommon:importcredentials'] = 'Importa credencials de Marsupial';
 $string['rcommon:managecredentials'] = 'Gestiona credencials de Marsupial';
 $string['rcommon:managepublishers'] = 'Gestiona proveïdors de Marsupial';
+$string['rcommon:editowncredentials'] = 'Edita les credencials pròpies';
 
 $string['addnewpublisher'] = 'Afegeix un proveïdor nou';
 $string['centernotfound'] = 'Codi de centre (CFG->center) no trobat al fitxer de configuració (config.php)';

@@ -146,6 +146,7 @@ $string['cannotsetupblock'] = 'НЕ удалось настроить табли
 $string['cannotsetupcapformod'] = 'Не удается установить возможности для модуля {$a}';
 $string['cannotsetupcapforplugin'] = 'Не удается установить возможности для плагина {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Не удалось показать/скрыть курсы в категории «{$a}».';
+$string['cannotsignup'] = 'Вы не можете создать новую учетную запись, так как вы уже зашли в систему как {$a}.';
 $string['cannotunassigncap'] = 'Не удалось отозвать устаревшее право «{$a->cap}» у роли «{$a->role}»';
 $string['cannotunassignrolefrom'] = 'Не удалось отменить назначение роли с ID = {$a} для этого пользователя';
 $string['cannotunzipfile'] = 'Не удалось распаковать файл';

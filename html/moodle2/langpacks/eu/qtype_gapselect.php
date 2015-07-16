@@ -26,3 +26,22 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Zuriuneak {no} aukera gehiagotarako';
+$string['answer'] = 'Erantzuna';
+$string['choices'] = 'Aukerak';
+$string['choicex'] = '{no} aukera';
+$string['combinedcontrolnamegapselect'] = 'Aukera zerrenda';
+$string['combinedcontrolnamegapselectplural'] = 'Aukera zerrendak';
+$string['correctansweris'] = 'Erantzun zuzena: {$a}';
+$string['errorblankchoice'] = 'Mesedez, egiaztatu aukerak: {$a} aukera hutsik dago.';
+$string['errormissingchoice'] = 'Mesedez egiaztatu galderaren testua: {$a} ez da aurkitu aukeretan! Aukeretan dauden balioak soilik dira baliagarriak hutsuneetan erabiltzeko.';
+$string['errornoslots'] = 'Galderaren testuak [[1]] moduko gakoak izan behar ditu hutsuneak non erakutsi behar diren jakiteko.';
+$string['errorquestiontextblank'] = 'Galderaren testua adierazi behar duzu.';
+$string['group'] = 'Taldea';
+$string['pleaseputananswerineachbox'] = 'Mesedez, jarri erantzun bat kaxa bakoitzean.';
+$string['pluginname'] = 'Aukeratu falta diren hitzak';
+$string['pluginnameadding'] = 'Hutsuneak bete galdera bat gehitzen';
+$string['pluginnameediting'] = 'Hutsuneak bete motako galdera bat editatzen';
+$string['pluginnamesummary'] = 'Zenbait testutan zerrendak erabiliaz bete dira hutsuneak.';
+$string['shuffle'] = 'Nahastu';
+$string['tagsnotallowed'] = '{$a->tag} ez dago baimenduta. ({$a->tag} soilik dago baimenduta.)';
+$string['tagsnotallowedatall'] = '{$a->tag} ez dago baimenduta. (Ezin da HTML kodea erabili hemen.)';

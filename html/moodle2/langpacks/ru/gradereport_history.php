@@ -25,16 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allgradeitems'] = 'Все оцениваемые элементы';
+$string['allgraders'] = 'Все оценщики';
 $string['datefrom'] = 'Дата с';
 $string['datetime'] = 'Дата и время';
 $string['dateto'] = 'Дата до';
 $string['deleteditemid'] = 'Удалить элемент с id {$a}';
 $string['errajaxsearch'] = 'Ошибка при поиске пользователей';
 $string['eventgradereportviewed'] = 'Просмотрен отчет «История оценок»';
+$string['excluded'] = 'Исключено из вычислений';
 $string['exportfilename'] = 'grade_history';
 $string['feedbacktext'] = 'Текст отзыва';
+$string['finishselectingusers'] = 'Завершить выбор пользователей';
 $string['foundnusers'] = 'Найдено пользователей - {$a}';
 $string['foundoneuser'] = 'Найден 1 пользователь';
+$string['gradenew'] = 'Исправленная оценка';
+$string['gradeold'] = 'Исходная оценка';
+$string['grader'] = 'Оценщик';
 $string['historyperpage'] = 'Записей истории на странице';
 $string['historyperpage_help'] = 'Этот параметр определяет количество записей истории, отображаемых на странице в отчете истории.';
 $string['history:view'] = 'Просмотр истории оценок';
@@ -47,3 +54,5 @@ $string['selectedusers'] = 'Выбранные пользователи';
 $string['selectuser'] = 'Выбрать пользователя';
 $string['selectusers'] = 'Выбрать пользователей';
 $string['source'] = 'Источник';
+$string['useractivityfeedback'] = '{$a} отзыв';
+$string['useractivitygrade'] = '{$a} оценка';

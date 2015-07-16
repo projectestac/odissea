@@ -72,6 +72,7 @@ $string['createcourseextid'] = 'Создать зачисленного поль
 $string['createnotcourseextid'] = 'Зачисленный пользователь в несуществующем курсе «{$a->courseextid}»';
 $string['creatingcourse'] = 'Создание курса «{$a}» ...';
 $string['duplicateshortname'] = 'Ошибка создания курса - дублируется  короткое имя. Курс с ID-номером «{$a->idnumber}» пропущен…';
+$string['editlock'] = 'Заблокировать значение';
 $string['emptyenrolment'] = 'Никто не зачислен с ролью «{$a->role_shortname}» в курсе «{$a->course_shortname}»';
 $string['enrolname'] = 'LDAP';
 $string['enroluser'] = 'Записать пользователя «{$a->user_username}» на курс «{$a->course_shortname}» (id {$a->course_id})';

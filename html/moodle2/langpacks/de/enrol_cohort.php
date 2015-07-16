@@ -31,5 +31,5 @@ $string['cohort:config'] = 'Globale Gruppen konfigurieren';
 $string['cohort:unenrol'] = 'Gesperrte Nutzer/innen aus Kursen abmelden';
 $string['instanceexists'] = 'Globale Gruppe ist bereits mit der gewählten Rolle synchronisiert';
 $string['pluginname'] = 'Globale Gruppe';
-$string['pluginname_desc'] = 'Das Plugin \'Globale Gruppe\' synchronisiert die Mitglieder globaler Gruppen mit der Kurseinschreibung';
+$string['pluginname_desc'] = 'Das Plugin \'Globale Gruppe\' synchronisiert die Mitglieder aus globalen Gruppen mit der Kurseinschreibung';
 $string['status'] = 'Aktiv';

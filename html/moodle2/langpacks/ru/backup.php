@@ -181,6 +181,7 @@ $string['nomatchingcourses'] = 'Нет подходящих курсов';
 $string['norestoreoptions'] = 'Нет категорий или курсов в которых Вы можете осуществлять восстановление';
 $string['originalwwwroot'] = 'URL резервной копии';
 $string['preparingdata'] = 'Подготовка данных';
+$string['preparingui'] = 'Подготовка страницы к показу';
 $string['previousstage'] = 'Назад';
 $string['qcategory2coursefallback'] = 'Категория вопросов «{$a->name}», находящаяся в файле резервной копии в контексте системы или категории курсов, при восстановлении будет создана в контексте курса.';
 $string['qcategorycannotberestored'] = 'Категория вопросов «{$a->name}» не может быть создана при восстановлении';

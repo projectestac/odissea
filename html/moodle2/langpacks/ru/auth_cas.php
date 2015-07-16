@@ -51,6 +51,7 @@ $string['auth_cas_language'] = 'Выберите язык';
 $string['auth_cas_language_key'] = 'Язык';
 $string['auth_cas_logincas'] = 'Безопасный доступ';
 $string['auth_cas_logoutcas'] = 'Выберите «Да», если хотите выйти из CAS при выходе из Moodle';
+$string['auth_cas_logoutcas_key'] = 'Параметр выхода из CAS';
 $string['auth_cas_logout_return_url'] = 'Введите URL-адрес, куда пользователи CAS должны быть перенаправлены после выхода из системы. <br /> Если оставить пустым, то пользователь будет перенаправлен в то место, куда  пользователей перенаправляет Moodle.';
 $string['auth_cas_logout_return_url_key'] = 'Альтернативный URL-адрес перенаправления при выходе';
 $string['auth_cas_multiauth'] = 'Выберите «Да», если Вы хотите иметь множественную аутентификацию (CAS + другие аутентификации)';

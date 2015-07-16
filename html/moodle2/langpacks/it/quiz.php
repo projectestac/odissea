@@ -752,15 +752,15 @@ $string['reviewofpreview'] = 'Revisione dell\'anteprima';
 $string['reviewopen'] = 'Dopo, mentre il quiz è ancora aperto';
 $string['reviewoptions'] = 'Gli studenti possono rivedere';
 $string['reviewoptionsheading'] = 'Opzioni di revisione';
-$string['reviewoptionsheading_help'] = 'Queste opzioni controllano le informazioni che gli utenti potranno visualizzare dopo avere tentato il quiz.
+$string['reviewoptionsheading_help'] = 'Queste impostazioni controllano le informazioni che gli utenti potranno visualizzare dopo avere tentato il quiz.
 
-**Durante il tentativo** è rilevante solo se si usano i comportamenti in grado di visualizzare feedback durante lo svolgimento del tentativo, come ad esempio "interattivo con risposte multiple"
+**Durante il tentativo** è rilevante solo se si usano i comportamenti in grado di visualizzare feedback durante lo svolgimento del tentativo, come ad esempio "interattivo con risposte multiple".
 
-**Subito dopo il tentativo**  significa entro i due minuti successivi al completamento del tentativo.
+**Subito dopo il tentativo**  ha valenza entro i due minuti successivi al completamento del tentativo.
 
-** Più tardi, a quiz ancora aperto" significa come il caso precedente ma entro la data di chiusura del quiz.
+** Più tardi, a quiz ancora aperto" è come il caso precedente ma entro la data di chiusura del quiz.
 
-** Dopo la chiusura del quiz** significa dopo la data di chiusura del quiz. Se il quiz non ha una data di chiusura, questa condizione non sarà mai soddisfatta.';
+** Dopo la chiusura del quiz** ha valenza dopo la data di chiusura del quiz. Se il quiz non ha una data di chiusura, questa condizione non sarà mai soddisfatta.';
 $string['reviewoverallfeedback'] = 'Feedback complessivo';
 $string['reviewoverallfeedback_help'] = 'Il feedback visualizzato al termine del tentativo in funzione del punteggio totale ottenuto dallo studente.';
 $string['reviewresponse'] = 'Revisione risposte date';

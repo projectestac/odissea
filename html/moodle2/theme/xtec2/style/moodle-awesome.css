@@ -23,7 +23,7 @@ i.fa.icon {
 	vertical-align: text-bottom;
 }
 
-i.fa.iconsmall {
+i.fa.iconsmall, i.fa.smallicon {
 	padding: .3em;
 	margin: 0;
 	width: 12px;
@@ -41,13 +41,8 @@ i.fa.iconlarge {
 	vertical-align: middle;
 }
 
-.action-icon i.fa.smallicon {
-	margin: 0 .3em;
-	vertical-align: text-bottom;
-	width: 12px;
-	height: 12px;
-	font-size: 12px;
-	line-height: 12px;
+.tree_item i.fa.smallicon {
+   padding: 0;
 }
 
 i.fa.icon-pre, .dir-rtl i.fa.icon-post {
@@ -89,6 +84,12 @@ i.fa.icon-pre, .dir-rtl i.fa.icon-post {
 	line-height: 12px;
 	font-size: 12px;
 	vertical-align: middle;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu a:hover img {
+    -webkit-filter: brightness(0) [[setting:color3b]];
+    -moz-filter: brightness(0) [[setting:color3b]];
+    filter: brightness(0) [[setting:color3b]];
 }
 
 
@@ -173,13 +174,6 @@ i.fa.icon-pre, .dir-rtl i.fa.icon-post {
 
 .block_site_main_menu li .buttons a i.fa{
 	vertical-align: text-bottom;
-}
-
-#course-category-listings .item-actions i.fa{
-	height: 12px;
-	padding: 0;
-	margin: 0 4px;
-	vertical-align: inherit;
 }
 
 /* Block icons */

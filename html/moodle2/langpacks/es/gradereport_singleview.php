@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['exclude'] = 'Excluir';
+$string['excludeall'] = 'Excluir todas las calificaciones';
+$string['excludefor'] = 'Excluir para {$a}';
+$string['excludenone'] = 'No excluir calificaciones';
 $string['override'] = 'Anular';

@@ -412,22 +412,33 @@ function report_coursequotas_getBackupUsage() {
 
 function report_coursequotas_getTempUsage() {
     global $CFG;
-    if (file_exists($CFG->dataroot . '/temp/')) {
-        $tempSize = exec('du -sk ' . $CFG->dataroot . '/temp/');
-        $tempSize = explode('/', $tempSize);
-        $tempSize = $tempSize[0]; // Size in kB
-        return $tempSize * 1024;
+    if (isset($CFG->tempdir)) {
+        $tempdir = $CFG->tempdir;
+    } else {
+        $tempdir = $CFG->dataroot.'/temp';
+    }
+    if (file_exists($tempdir)) {
+        $size = exec('du -sk ' . $tempdir);
+        $size = explode('/', $size);
+        $size = $size[0]; // Size in kB
+        return $size * 1024;
     }
     return 0;
 }
 
 function report_coursequotas_getTrashUsage() {
     global $CFG;
-    if (file_exists($CFG->dataroot . '/trashdir/')) {
-        $tempSize = exec('du -sk ' . $CFG->dataroot . '/trashdir/');
-        $tempSize = explode('/', $tempSize);
-        $tempSize = $tempSize[0]; // Size in kB
-        return $tempSize * 1024;
+    if (isset($CFG->trashdir)) {
+        $trashdir = $CFG->trashdir;
+    } else {
+        $trashdir = $CFG->dataroot.'/trashdir';
+    }
+    $trashdir .= '/';
+    if (file_exists($trashdir)) {
+        $size = exec('du -sk ' . $trashdir);
+        $size = explode('/', $size);
+        $size = $size[0]; // Size in kB
+        return $size * 1024;
     }
     return 0;
 }

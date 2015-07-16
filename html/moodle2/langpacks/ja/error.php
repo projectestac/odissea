@@ -45,7 +45,7 @@ $string['cannotaddthisblocktype'] = 'あなたはこのページに {$a} ブロ�
 $string['cannotassignrole'] = 'コース内でロールを割り当てることができません。';
 $string['cannotassignrolehere'] = 'あなたはこのコンテクスト ({$a->context}) において、このロール (id = {$a->roleid}) の割り当てを許可されていません。';
 $string['cannotassignselfasparent'] = '自分自身を親カテゴリに割り当てることはできません!';
-$string['cannotcallscript'] = 'このスクリプトをそのようにコールすることはできません。';
+$string['cannotcallscript'] = 'あなたはこのスクリプトをそのようにコールすることはできません。';
 $string['cannotcallusgetselecteduser'] = 'multiselectがtrueの場合、あなたはuser_selector::get_selected_userをコールできません。';
 $string['cannotcreatebackupdir'] = 'backupdataフォルダを作成できませんでした。サイト管理者がファイルパーミッションを変更する必要があります。';
 $string['cannotcreatecategory'] = 'カテゴリは追加されませんでした。';

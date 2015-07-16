@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Excel 电子表格';
+$string['timeexported'] = '上次下载';
 $string['xls:publish'] = '发布 XLS 导出成绩';
 $string['xls:view'] = '使用Excel成绩导出插件';

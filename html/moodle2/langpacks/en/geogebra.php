@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'en', branch 'MOODLE_26_STABLE'
+ * Strings for component 'geogebra', language 'en', branch 'MOODLE_28_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['availabledate'] = 'Available from';
 $string['average'] = 'Average';
 $string['choosescripttype'] = 'Choose the script type';
 $string['comment'] = 'Comment';
+$string['contentheader'] = 'Content';
 $string['coursewithoutstudents'] = 'Course without students';
 $string['datestudent'] = 'Last modified (submission)';
 $string['dateteacher'] = 'Last modified (grade)';
@@ -46,6 +47,8 @@ $string['duration'] = 'Duration';
 $string['enableLabelDrags'] = 'Enable dragging of labels';
 $string['enableRightClick'] = 'Enable right click';
 $string['errorattempt'] = 'Error: attempt could not be saved.';
+$string['event_course_module_viewed'] = 'Course module viewed';
+$string['event_instances_list_viewed'] = 'Instances list viewed';
 $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
 $string['extractedfromggb'] = 'extracted files from ggb';
 $string['filename'] = 'Filename';
@@ -71,16 +74,12 @@ $string['geogebra:view'] = 'View GeoGebra';
 $string['grade'] = 'Grade';
 $string['gradeit'] = 'Grade';
 $string['grademethod'] = 'Grading Method';
-$string['header_geogebra'] = 'GeoGebra Settings';
-$string['header_score'] = 'Avaluation Settings';
 $string['height'] = 'Height';
 $string['highestattempt'] = 'Highest attempt';
 $string['httpnotallowed'] = 'At the moment is not allowed to use external files';
 $string['interfaceoptionsgrp'] = 'User interface';
 $string['invalidgeogebrafile'] = 'Invalid GeoGebra specified. It must have the ".ggb" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".ggb" file.';
-$string['javacodebase'] = 'GeoGebra codebase';
-$string['javacodebase_help'] = 'GeoGebra jar files URL';
 $string['language'] = 'Language';
 $string['lastattempt'] = 'Last attempt';
 $string['lastattemptremaining'] = 'This is your last attempt for this activity';
@@ -100,6 +99,7 @@ $string['modulename_help'] = '<p><a href="http://www.geogebra.org" target="_blan
 </p>';
 $string['modulenameplural'] = 'GeoGebra';
 $string['msg_noattempts'] = 'You have done this activity the maximum number of times';
+$string['msg_nosessions'] = 'This Geogebra activity hasn\'t yet any session';
 $string['name'] = 'Name';
 $string['noattempts'] = '-';
 $string['nograding'] = 'No grading';
@@ -107,9 +107,11 @@ $string['nomoreattempts'] = 'No more attempts remaining for this activity';
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
 $string['pluginadministration'] = 'GeoGebra administration';
 $string['pluginname'] = 'GeoGebra';
+$string['preview_geogebra'] = 'Preview Geogebra activity';
 $string['previewtab'] = 'Preview';
 $string['redirecttocourse'] = 'The activity has been saved. Going back to the course home page';
 $string['report'] = 'Report of';
+$string['results'] = 'Results';
 $string['resultstab'] = 'Results';
 $string['resumeattempt'] = 'Resuming unfinished attempt';
 $string['review'] = 'Review of';
@@ -126,6 +128,7 @@ $string['showToolBar'] = 'Show toolbar';
 $string['showToolBarHelp'] = 'Show toolbar help';
 $string['status'] = 'Estat';
 $string['submitandfinish'] = 'Submit and finish';
+$string['timing'] = 'Timing';
 $string['total'] = 'Total';
 $string['unfinished'] = 'Unfinished';
 $string['ungraded'] = 'Ungraded';
@@ -137,6 +140,5 @@ $string['viewattempt'] = 'View';
 $string['viewattempts'] = 'View attemtps';
 $string['viewattempttab'] = 'View attempt';
 $string['viewtab'] = 'View';
-$string['warningnojava'] = 'This is a Java Applet created using GeoGebra from www.geogebra.org - it looks like you don\'t have Java installed, please go to www.java.com';
 $string['weight'] = 'Weight';
 $string['width'] = 'Width';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nologindescription'] = 'Connector auxiliar que impedeix que l\'usuari entri al sistema i bloca l\'enviament de correu a l\'usuari. Es pot utilitzar per <em>suspendre</em> comptes d\'usuari.';
-$string['pluginname'] = 'Sense connexió';
+$string['auth_nologindescription'] = 'Connector auxiliar que impedeix que l\'usuari iniciï una sessió al sistema i bloca l\'enviament de correu a l\'usuari. Es pot utilitzar per <em>suspendre</em> comptes d\'usuari.';
+$string['pluginname'] = 'Sense inici de sessió';

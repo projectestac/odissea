@@ -40,6 +40,7 @@ $string['choices'] = 'Réponses possibles';
 $string['clozeaid'] = 'Tapez le mot manquant';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['correctfeedback'] = 'Pour toute réponse correcte';
+$string['deletedchoice'] = 'Ce choix a été supprimé après le début de la tentative';
 $string['errfractionsaddwrong'] = 'La somme des notes positives que vous avez indiquées positive ne donne pas 100%<br />Leur somme est de {$a}%';
 $string['errfractionsnomax'] = 'L\'un des choix proposés devrait être à 100%, afin qu\'il soit<br />possible d\'obtenir une note maximale pour cette question.';
 $string['errgradesetanswerblank'] = 'Note donnée, mais la réponse est vide';

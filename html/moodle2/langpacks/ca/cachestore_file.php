@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autocreate'] = 'Crea directori automàticament';
 $string['autocreate_help'] = 'Si s\'habilita, el directori especificat al camí es crearà de forma automàtica si no existeix.';
 $string['path'] = 'Camí a la memòria cau';
-$string['path_help'] = 'El directori que serà utilitzat per emmagatzemar fitxers per aquesta memòria cau. Si és deixa en blanc (per defecte) es crearà un directori de forma automàtica al directori de moodledata. Aquest pot utilitzar-se per dirigir el desat de fitxers cap a un directori en un disc de major rendiment (com un en memòria).';
+$string['path_help'] = 'El directori que serà utilitzat per emmagatzemar fitxers per aquesta memòria cau. Si es deixa en blanc (per defecte) es crearà un directori de forma automàtica al directori moodledata. Aquest pot utilitzar-se per dirigir el desament de fitxers cap a un directori en un disc de major rendiment (com ara un en memòria).';
 $string['pluginname'] = 'Memòria cau de fitxers';
 $string['prescan'] = 'Preescaneja el directori';
 $string['prescan_help'] = 'Si s\'habilita, el directori s\'escaneja quan la memòria cau s\'utilitza per primera vegada per cercar fitxers. Això ajuda si teniu un sistema de fitxers lent i trobeu que les operacions de fitxers són un coll d\'ampolla.';

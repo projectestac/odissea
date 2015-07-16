@@ -40,6 +40,7 @@ $string['choices'] = '利用可能な選択肢';
 $string['clozeaid'] = 'テキストを入力してください。';
 $string['correctansweris'] = '正答: {$a}';
 $string['correctfeedback'] = '正解すべてに対するフィードバック';
+$string['deletedchoice'] = '受験開始後、この選択肢は削除されました。';
 $string['errfractionsaddwrong'] = 'あなたが選択したプラス評点の合計が、100%になっていません。<br />現在の評点合計は {$a}% です。';
 $string['errfractionsnomax'] = 'この問題で満点を取ることができるよう<br />選択肢の1つは、100%でなければなりません。';
 $string['errgradesetanswerblank'] = '評点は設定されていますが、答えが空白です。';

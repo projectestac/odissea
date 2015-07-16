@@ -74,7 +74,6 @@ function xmldb_local_agora_upgrade($oldversion) {
 
     if ($oldversion < 2015060500) {
         set_config('customusermenuitems', "messages,message|/message/index.php|message
-myfiles,moodle|/user/files.php|download
 mybadges,badges|/badges/mybadges.php|award");
         set_config('alternativefullnameformat', 'language');
 
@@ -242,6 +241,35 @@ math = wiris', 'editor_atto');
         }
 
         upgrade_plugin_savepoint(true, 2015060501, 'local', 'agora');
+    }
+
+    if ($oldversion < 2015061600) {
+        set_config('customusermenuitems', "messages,message|/message/index.php|message
+mybadges,badges|/badges/mybadges.php|award");
+        set_config('alternativefullnameformat', 'language');
+
+        upgrade_plugin_savepoint(true, 2015061600, 'local', 'agora');
+    }
+
+    if ($oldversion < 2015062200) {
+        set_config('grade_report_showcalculations', 1);
+
+        upgrade_plugin_savepoint(true, 2015062200, 'local', 'agora');
+    }
+
+    if ($oldversion < 2015071300) {
+
+        // Define index notification (not unique) to be added to message_read.
+        $table = new xmldb_table('message_read');
+        $index = new xmldb_index('notification', XMLDB_INDEX_NOTUNIQUE, array('notification'));
+
+        // Conditionally launch add index notification.
+        if (!$dbman->index_exists($table, $index)) {
+            $dbman->add_index($table, $index);
+        }
+
+        // Main savepoint reached.
+        upgrade_plugin_savepoint(true, 2015071300, 'local', 'agora');
     }
 
 

@@ -78,6 +78,9 @@ class script_enable_service extends agora_script_base{
         $rcommonlogdir = get_admin_datadir_folder();
         set_config('data_store_log', $rcommonlogdir, 'rcommon');
 
+        set_config('grade_report_showcalculations', 1);
+        mtrace('Activat Mostrar calculs del qualificador', '<br/>');
+
         // Solve error on Upgrade Bigdata
         if (!$DB->get_manager()->table_exists('bigdata_profiles')) {
             unset_config('version', 'local_bigdata');

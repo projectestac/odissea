@@ -31,5 +31,14 @@ $capabilities = array(
 				'editingteacher' => CAP_ALLOW,
 				'manager' => CAP_ALLOW
 		)
-	)
+	),
+    'local/rcommon:editowncredentials' => array(
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'archetypes' => array(
+                'teacher' => CAP_ALLOW,
+                'editingteacher' => CAP_ALLOW,
+                'manager' => CAP_ALLOW
+        )
+    )
 );

@@ -974,6 +974,7 @@ $string['sitepolicyguest_help'] = '如果您有一份网站使用协议，并且
 $string['sitepolicy_help'] = '如果您有一份网站使用协议，并且要求所有用户在使用此网站前阅读并同意，那么请在此指定它的URL，否则请留空。URL可以指向任何公开的地址。';
 $string['sitesectionhelp'] = '如果选择了，那么网站首页会显示一个主题小节。';
 $string['slasharguments'] = '使用斜线参数';
+$string['slashargumentswarning'] = '建议允许使用带斜线参数。将来会需要。详情请查看文档<a href="https://docs.moodle.org/en/admin/environment/slasharguments">使用带斜线参数</a>。';
 $string['smartpix'] = '在小图标（pix）中查找';
 $string['soaprecommended'] = '网络服务和某些第三方模块需要安装可选的 soap 扩展。';
 $string['sort_fullname'] = '课程全称';
@@ -1065,6 +1066,7 @@ $string['unlockaccount'] = '帐号解锁';
 $string['unsettheme'] = '取消主题';
 $string['unsupported'] = '不支持';
 $string['unsupporteddbstorageengine'] = '正在使用的数据库存储引擎已不再被支持';
+$string['unsupporteddbtablerowformat'] = '你的数据库含有使用Antelope文件格式的表。建议将这些表转换成Barracuda格式。查看文档 <a href="https://docs.moodle.org/en/cli">命令行管理</a> 获得转换InnoDB表到Barracuda的工具详情。';
 $string['unsuspenduser'] = '激活用户账号';
 $string['updateaccounts'] = '更新已有帐户';
 $string['updateautocheck'] = '自动检查可用更新';

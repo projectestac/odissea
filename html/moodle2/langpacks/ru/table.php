@@ -31,3 +31,4 @@ $string['downloadexcel'] = 'Таблица Excel';
 $string['downloadods'] = 'Таблица OpenDocument';
 $string['downloadoptions'] = 'Выберите параметры загрузки';
 $string['downloadtsv'] = 'CSV-файл (разделитель - табуляция)';
+$string['downloadxhtml'] = 'Документ XHTML, не разбитый на страницы';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Afegir un bloc nou d\'inici de sessió';
-$string['pluginname'] = 'Entrada';
+$string['login:addinstance'] = 'Afegir un nou bloc d\'inici de sessió';
+$string['pluginname'] = 'Inici de sessió';

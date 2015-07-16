@@ -74,6 +74,12 @@ $string['selectfromcohort'] = 'Seleccionar miembros de la cohorte';
 $string['systemcohorts'] = 'Cohortes del sistema';
 $string['unknowncohort'] = 'Cohorte desconocida ({$a})!';
 $string['uploadcohorts'] = 'Actualizar cohortes';
+$string['uploadcohorts_help'] = 'Las cohortes se pueden cargas a través de archivos de texto. El formato del archivo deber ser el siguiente:
+* Cada línea de archivo contiene un registro
+* Cada registro es una serie de datos separados por comas (u otros delimitadores)
+* El primer registro contiene una lista de nombres de campo que define el formato del resto del archivo
+* El nomre es un campo obligatorio
+* Los campos opcionales son: idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
 $string['uploadedcohorts'] = 'Subidas {$a} cohortes';
 $string['useradded'] = 'Usuario añadido a la cohorte "{$a}"';
 $string['visible'] = 'Visible';

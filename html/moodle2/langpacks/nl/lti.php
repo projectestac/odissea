@@ -340,9 +340,8 @@ Merk op dat deze instelling overschreven kan worden in de tool-configuratie';
 $string['share_roster'] = 'Geef de tool toegang tot de deelnemerslijst van de cursus';
 $string['share_roster_admin'] = 'De tool heeft toegang tot de deelnemerslijst van de cursus';
 $string['share_roster_admin_help'] = 'Geef op of de tool de gebruikerslijs kan opvragen van gebruikers die aangemeld zijn in cursussen vanwaar dit tooltype wordt gestart.';
-$string['share_roster_help'] = 'Geef op of de tool de gebruikerslijs kan opvragen van gebruikers die aangemeld zijn in cursussen vanwaar dit tooltype wordt gestart.
-
-Merk op dat deze instelling overschreven kan worden in de tool-configuratie';
+$string['share_roster_help'] = 'Geef op of de tool de gebruikerslijst kan opvragen van gebruikers die aangemeld zijn in deze cursus.
+Merk op dat deze instelling overschreven kan worden in de tool-configuratie.';
 $string['show_in_course'] = 'Toon tool-type wanneer je een toolinstantie aanmaakt';
 $string['show_in_course_help'] = 'Indien geselecteerd zal de configuratie van deze tool getoond worden in het "Externe tool type" rolmenu wanneer leraars externe tools configureren in cursussen.
 

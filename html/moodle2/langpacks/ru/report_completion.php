@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktomarkusercomplete'] = 'Нажмите, чтобы отметить завершение пользователем';
 $string['completiondate'] = 'Дата завершения';
 $string['completion:view'] = 'Просматривать отчет «Завершение курса»';
 $string['eventreportviewed'] = 'Просмотрен отчет «Завершение курса»';

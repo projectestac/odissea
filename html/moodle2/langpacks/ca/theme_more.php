@@ -65,7 +65,7 @@ $string['logo'] = 'Logo';
 $string['logodesc'] = 'Si us plau carregueu el vostre logo personalitzat aquí si voleu afegir-lo a la capçalera.<br>
 Si l\'altura del del vostre logo és major que 75 píxels afegiu la següent regla CSS a la caixa de CSS personalitzat que hi ha a continuació.<br>
 a.logo {height: 100px;} o el que tingui d\'altura el logo.';
-$string['pluginname'] = 'Clean';
+$string['pluginname'] = 'More';
 $string['region-side-post'] = 'Dret';
 $string['region-side-pre'] = 'Esquerre';
 $string['secondarybackground'] = 'Color de fons secundari';

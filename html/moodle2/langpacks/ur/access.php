@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'رسائی';
 $string['accesshelp'] = 'رسائی کےلیے مدد';
+$string['accesskey'] = '{$a} ،رسائی کی چابی';
 $string['accessstatement'] = 'بیان رسائی';
 $string['activitynext'] = 'اگلا کام';
 $string['activityprev'] = 'پچھلا کام';
 $string['breadcrumb'] = 'ھائپر لنکس کے نشانات';
+$string['hideblocka'] = 'بلاک کو چھپا دو {$a}';
 $string['monthnext'] = 'اگلے ماہ';
 $string['monthprev'] = 'پچھلے ماہ';
 $string['showblocka'] = 'دکھاو';
@@ -38,4 +40,5 @@ $string['sitemap'] = 'سائٹ کا نقشہ';
 $string['skipa'] = 'چھوڑ دو';
 $string['skipblock'] = 'بلاک چھوڑ دو';
 $string['skipnavigation'] = 'سمت بتانا چھوڑ دو';
+$string['skipto'] = 'چھوڑ دو';
 $string['youarehere'] = 'آپ یہاں ہیں';

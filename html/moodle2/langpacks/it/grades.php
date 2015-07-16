@@ -689,6 +689,7 @@ $string['unlockverbose'] = 'Sblocca {$a->category} {$a->itemmodule} {$a->itemnam
 $string['unused'] = 'Non usato';
 $string['updatedgradesonly'] = 'Esporta valutazioni nuove o aggiornate solo';
 $string['upgradedgradeshidemessage'] = 'OK';
+$string['upgradedminmaxrevertmessage'] = 'Annulla modifche';
 $string['uploadgrades'] = 'Importa valutazioni';
 $string['useadvanced'] = 'Usa opzioni avanzate';
 $string['usedcourses'] = 'Corsi usati';

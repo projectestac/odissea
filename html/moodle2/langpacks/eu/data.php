@@ -326,12 +326,11 @@ $string['requiredentries_help'] = '<p>Partaide bakoitzari bidaltzeko eskatzen za
 
 <p>Ez da jarduera amaitutzat emango erabiltzaileak behar duen sarrera-kopurua bidali arte.</p>';
 $string['requiredentriestoview'] = 'Ikusi aurretik behar diren sarrerak';
-$string['requiredentriestoview_help'] = '<p>Datu-basearen gainerako sarrerak ikusi baino lehen, partaideek bidali behar duten sarrera-kopurua zehartu behar da hemen.</p>
-<p>Oharra: erabiltzaileak sarrera kopuru bat bete arte ez badira ikusgai jarri nahi, datu-baserako esteka automatikoak egiteko iragazkia ezgaituta egon beharko luke.</p>';
+$string['requiredentriestoview_help'] = 'Datu-basearen gainerako sarrerak ikusi baino lehen, partaideek bidali behar duten sarrera-kopurua zehartu behar da hemen.';
 $string['resetsettings'] = 'Berrabiarazi iragazkiak';
 $string['resettemplate'] = 'Txantiloia berriz kargatu';
 $string['resizingimages'] = 'Irudi txikien tamaina aldatzen';
-$string['rows'] = 'iladak';
+$string['rows'] = 'errenkadak';
 $string['rssglobaldisabled'] = 'Desgaituta. Gunearen konfigurazio-aldagaiak ikusi.';
 $string['rsstemplate'] = 'RSS txantiloia';
 $string['rsstitletemplate'] = 'RSS txantiloiaren izenburua';

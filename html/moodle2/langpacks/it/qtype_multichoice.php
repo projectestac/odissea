@@ -40,6 +40,7 @@ $string['choices'] = 'Alternative possibili';
 $string['clozeaid'] = 'Inserire parola mancante';
 $string['correctansweris'] = 'La risposta corretta è: {$a}';
 $string['correctfeedback'] = 'Per ogni risposta corretta';
+$string['deletedchoice'] = 'Questa risposta è stata eliminata dopo l\'inizio del tentativo';
 $string['errfractionsaddwrong'] = 'I voti positivi definiti non assommano al 100%.<br/>Il loro totale è infatti <b>{$a}%</b>';
 $string['errfractionsnomax'] = 'Una delle alternative dovrebbe essere valutata al 100%, in modo che<br/> sia possibile ottenere un voto pieno per questa domanda.';
 $string['errgradesetanswerblank'] = 'La valutazione è impostata ma la risposta è vuota';

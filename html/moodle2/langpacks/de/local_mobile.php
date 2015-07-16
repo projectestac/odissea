@@ -33,4 +33,4 @@ $string['local_mobiletypeoflogin_key'] = 'Art der Anmeldung';
 $string['loginintheapp'] = 'App';
 $string['logininthebrowser'] = 'Browser (für SSO)';
 $string['pluginname'] = 'Moodle Mobile - Zusatzfeatures';
-$string['pluginnotenabledorconfigured'] = 'Das Plugin \'Moodle Mobile - Zusatzfeatures\' muss aktiviert und konfiguriert sein, um die App zu starten.';
+$string['pluginnotenabledorconfigured'] = 'Das Plugin \'Moodle Mobile - Zusatzfeatures\' muss aktiviert und konfiguriert sein, um die App automatisch zu starten.';

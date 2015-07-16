@@ -32,7 +32,7 @@ $string['accept_grades_admin'] = 'Accetta valutazioni dal tool';
 $string['accept_grades_admin_help'] = 'Stabilisce se il tool provider può aggiungere, aggiornare, leggere ed eliminare le valutazioni abbinate alle istanze di questo tipo di tool.
 
 Alcuni tool provider supportano l\'invio delle valutazioni verso Moodle, in funzione della attività svolte nel tool, fornendo una esperienza più integrata.';
-$string['accept_grades_help'] = 'Stabilisce se il tool provider può aggiungere, aggiornare, leggere ed eliminare le valutazioni abbinate alle istanze di questo tipo di tool.
+$string['accept_grades_help'] = 'Stabilisce se il tool provider può aggiungere, aggiornare, leggere ed eliminare le valutazioni abbinate a questa istanza di tool esterno.
 
 Alcuni tool provider supportano l\'invio delle valutazioni verso Moodle, in funzione della attività svolte nel tool, fornendo una esperienza più integrata.
 

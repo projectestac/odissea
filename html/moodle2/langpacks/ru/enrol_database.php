@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Настроить экземпляры записи из внешней базы данных';
 $string['database:unenrol'] = 'Отчислять приостановленных пользователей';
 $string['dbencoding'] = 'Кодировка базы данных';
 $string['dbhost'] = 'Сервер базы данных';

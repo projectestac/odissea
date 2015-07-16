@@ -30,7 +30,9 @@ $string['accepted'] = 'Akzeptiert';
 $string['accept_grades'] = 'Bewertungen des Tools akzeptieren';
 $string['accept_grades_admin'] = 'Bewertungen des Tools akzeptieren';
 $string['accept_grades_admin_help'] = 'Legen Sie fest, ob der Tool Provider Bewertungen der Instanzen des Tools hinzufügen, aktualisieren, lesen und löschen darf. Enige tool Provider ermöglichen, dass Bewertungen aus den Aktivitäten im Tool an Moodle berichtet werden. Dadurch erscheint das Tool noch besser integriert.';
-$string['accept_grades_help'] = 'Legen Sie fest, ob der Tool Provider Bewertungen der Instanzen des Tools hinzufügen, aktualisieren, lesen und löschen darf. Enige tool Provider ermöglichen, dass Bewertungen aus den Aktivitäten im Tool an Moodle berichtet werden. Dadurch erscheint das Tool noch besser integriert. Diese Einstellung kann u.U. in der Tool Konfiguration überschreiben werden.';
+$string['accept_grades_help'] = 'Diese Option legt fest, ob der Tool-Provider Bewertungen hinzufügen, aktualisieren, lesen und löschen darf, die mit der Tool-Instanz zusammenhängen. Manche Tool-Provider ermöglichen die Übernahme von Bewertungen aus den Tool-Aktivitäten und schaffen so eine bessere Integration in Moodle.
+
+Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
 $string['action'] = 'Aktion';
 $string['active'] = 'Aktiv';
 $string['activity'] = 'Aktivität';
@@ -292,17 +294,20 @@ $string['setupoptions'] = 'Setup-Optionen';
 $string['share_email'] = 'E-Mail des Anwenders an Tool übergeben';
 $string['share_email_admin'] = 'E-Mail des Anwenders an Tool übergeben';
 $string['share_email_admin_help'] = 'Legen Sie fest, ob die E-Mailadresse des Nutzers übergeben werden soll. Dies kan notwendig sein,um bestimmte Informationen im Tool anzuzeigen oder aufgrund von Aktivitäten im externen Tool E-Mails zu versenden.';
-$string['share_email_help'] = 'Legen Sie fest, ob die E-Mailadresse des Nutzers übergeben werden soll. Dies kan notwendig sein,um bestimmte Informationen im Tool anzuzeigen oder aufgrund von Aktivitäten im externen Tool E-Mails zu versenden.
+$string['share_email_help'] = 'Diese Option legt fest, ob die Nutzer-E-Mail-Adresse an den Tool-Provider übergeben wird, wenn die Tool-Instanz verwendet wird. Nutzer/innen können so bei einem wiederholten Zugriff wiedererkannt werden und personalisierte Informationen per E-Mails erhalten.
+
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
 $string['share_name'] = 'Anwendername an Tool übergeben';
 $string['share_name_admin'] = 'Anwendername an Tool überegeben';
 $string['share_name_admin_help'] = 'Festlegen, ob der Name des Anwenders an den Anbieter des Tools übergeben werden soll. Dies kann erforderlich sein, um im Tool bestimmte  Informationen anzeigen zu können.';
-$string['share_name_help'] = 'Festlegen, ob der Name des Anwenders an den Anbieter des Tools übergeben werden soll. Dies kann erforderlich sein, um im Tool bestimmte  Informationen anzeigen zu können.
+$string['share_name_help'] = 'Diese Option legt fest, ob der vollständige Nutzername an den Tool-Provider übergeben wird, wenn die Tool-Instanz verwendet wird. Nutzer/innen können so bei einem wiederholten Zugriff wiedererkannt werden und personalisierte Informationen erhalten.
+
 Diese Einstellung kann in der Tool-Konfiguration überschrieben wreden.';
 $string['share_roster'] = 'Tool Zugriff auf Teilnehmerliste geben';
 $string['share_roster_admin'] = 'Tool kann auf Teilnehmerliste zugreifen.';
 $string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer des Kurses zugreifen darf.';
-$string['share_roster_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer des Kurses zugreifen darf.
+$string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
+
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
 $string['show_in_course'] = 'Tool-Typ bei der Erstellung von Instanzen im Kurs anzeigen';
 $string['show_in_course_help'] = 'Falls ausgewählt erscheint diese Konfiguration als \'Externer Tool-Typ\' in der kursspezifischen Konfiguration und ist für Trainer sichtbar.

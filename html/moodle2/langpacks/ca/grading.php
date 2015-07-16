@@ -53,12 +53,12 @@ $string['manageactionedit'] = 'Edita el formulari actual';
 $string['manageactionnew'] = 'Defineix el formulari de qualificació des de zero';
 $string['manageactionshare'] = 'Pública el formulari com una plantilla nova';
 $string['manageactionshareconfirm'] = 'Aneu a desar una còpia del formulari de qualificació \'{$a}\'  com una plantilla  pública nova. Els altres usuaris del vostre lloc podran crear nous formularis de qualificació a partir de la vostra plantilla.';
-$string['manageactionsharedone'] = 'El formulari ha sigut desat amb èxit com una plantilla';
+$string['manageactionsharedone'] = 'El formulari ha estat desat amb èxit com una plantilla';
 $string['noitemid'] = 'La qualificació no és possible. L\'element de qualificació no existeix.';
 $string['nosharedformfound'] = 'No s\'ha trobat cap plantilla.';
 $string['searchownforms'] = 'inclou els meus formularis';
 $string['searchtemplate'] = 'Cercador de formularis de qualificació';
-$string['searchtemplate_help'] = 'Podeu cercar un formulari de qualificació i utilitzar-lo aquí com a plantilla pel nou formulari. Simplement escriviu paraules que puguin aparèixer en algun lloc del nom del formulari, la seva descripció o el cos del formulari mateix. Per cercar una frase, poseu-la entre cometes dobles ("..").
+$string['searchtemplate_help'] = 'Podeu cercar un formulari de qualificació i utilitzar-lo aquí com a plantilla per al nou formulari. Escriviu paraules que puguin aparèixer en algun lloc del nom del formulari, la seva descripció o el cos del formulari mateix. Per cercar una frase, poseu-la entre cometes dobles ("..").
 
 Per defecte, només els formularis de qualificació que s\'hagin desat com a plantilles compartides s\'inclouran en els resultats de la cerca. Podeu també incloure tots els vostres formularis de qualificació en els resultats de la cerca. D\'aquesta forma reutilitzeu els vostres formularis de qualificació sense compartir-los. Només els formularis marcats com «A punt per utilitzar» poden ser reutilitzats d\'aquesta forma.';
 $string['statusdraft'] = 'Esborrany';

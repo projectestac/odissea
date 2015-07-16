@@ -6,6 +6,7 @@ $string['rcommon:exportcredentials'] = 'Export Marsupial credentials';
 $string['rcommon:importcredentials'] = 'Import Marsupial credentials';
 $string['rcommon:managecredentials'] = 'Manage Marsupial credentials';
 $string['rcommon:managepublishers'] = 'Manage Marsupial publishers';
+$string['rcommon:editowncredentials'] = 'Edit own credentials';
 
 $string['addnewpublisher'] = 'Add new publisher';
 $string['centernotfound'] = 'Code center (CFG->center) not found in config.php';

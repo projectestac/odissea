@@ -164,6 +164,7 @@ $string['restoringcompletiondata'] = 'Escribiendo datos de grado de finalizació
 $string['roleaggregation'] = 'Condiciones requeridas';
 $string['roleaggregation_all'] = 'TODOS los roles seleccionados a marcar cuando se cumple la condición';
 $string['roleaggregation_any'] = 'ALGUNO de los roles seleccionados a marcar cuando se cumple la condición';
+$string['roleidnotfound'] = 'El Rol ID {$a} no ha sido encontrado';
 $string['saved'] = 'Guardado';
 $string['seedetails'] = 'Ver detalles';
 $string['self'] = 'Auto';

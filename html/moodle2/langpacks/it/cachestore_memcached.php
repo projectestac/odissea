@@ -54,16 +54,17 @@ $string['serialiser_json'] = 'Il serializzatore JSON.';
 $string['serialiser_php'] = 'Il serializzatore PHP di default.';
 $string['servers'] = 'Server';
 $string['serversclusterinvalid'] = 'Con il clustering abilitato nell\'elenco deve essere presente un solo server.';
-$string['servers_help'] = 'Imposta i server usati dall\'adapter memcached.
-I server devono essere definiti usando una linea per ciascun server contenente obbligatoriamente l\'indirizzo e opzionalmente la porta ed il peso. In assenza di indicazione sulla porta da usare sarà utilizzata la porta di default (11211).
+$string['servers_help'] = 'Imposta i server utilizzati dall\'adapter memcached.
+I server devono essere impostati usando una linea per ciascun server specificando obbligatoriamente l\'indirizzo e opzionalmente la porta ed il peso. In assenza di indicazione sulla porta sarà utilizzata la porta di default (11211).
 
 Esempio:
-<pre> server.url.com
+<pre>
+server.url.com
 ipaddress:porta
 nomeserver:porta:peso
 </pre>
 
-Se viene utilizzata l\'impostazione sottostante *Abilita server in cluster*, allora nell\'elenco deve comparire il nome o l\'IP di un solo server. In generale il nome o l\'IP del server risolverà la macchina locale, come 127.0.0.1 oppure localhost.';
+Se viene utilizzata l\'impostazione *Abilita server in cluster*, allora nell\'elenco dovrà essere presente un solo server, in genere il nome o l\'IP della macchina locale come ad esempio 127.0.0.1 oppure localhost.';
 $string['sessionhandlerconflict'] = 'Attenzione: l\'istanza memcached ({$a}) è stata configurata per usare lo stesso server memcached usato per le sessioni. Lo svuotamento delle cache provocherà anche l\'eliminazione delle sessioni.';
 $string['setservers'] = 'Set server';
 $string['setservers_help'] = 'L\'elenco dei server da aggiornare quando i dati della cache vengono modificati. In genere il nome qualificato di ciascun server appartenentre al pool di load balancing.

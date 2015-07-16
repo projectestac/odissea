@@ -1142,6 +1142,7 @@ $string['moodlerelease'] = 'Moodle release';
 $string['moodleversion'] = 'Moodleversie';
 $string['more'] = 'meer';
 $string['morehelp'] = 'Meer hulp';
+$string['moreinfo'] = 'Meer informatie';
 $string['moreinformation'] = 'Meer informatie over deze fout';
 $string['moreprofileinfoneeded'] = 'Vertel ons meer over jezelf';
 $string['mostrecently'] = 'meest recente';

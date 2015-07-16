@@ -9,7 +9,7 @@ require_login();
 $action  = optional_param('action', '', PARAM_TEXT);
 $context = context_system::instance();
 if (!has_capability('local/rcommon:managecredentials', $context)) {
-    $manageown = true;
+    $canedit = has_capability('local/rcommon:editowncredentials', $context);
     $username = $USER->username;
     if ($action != 'manage' && $action != 'delete') {
         $action = 'manage';
@@ -23,7 +23,7 @@ if (!has_capability('local/rcommon:managecredentials', $context)) {
     $PAGE->set_pagelayout('incourse');
 } else {
     admin_externalpage_setup('marsupial_credentials_users');
-    $manageown = false;
+    $canedit = true;
 }
 
 
@@ -73,7 +73,7 @@ switch ($action) {
                     $row[] = $name.' ('.$credential->isbn.')';
                     $row[] = $credential->credentials;
                     $actions = array();
-                    if (!$manageown) {
+                    if ($canedit) {
                         $actions[] = '<a href="edit_book_credential.php?id='.$credential->id.'">'.get_string('edit').'</a>';
                         $actions[] = '<a href="users.php?action=delete&id='.$credential->id.'&username='.$username.'">'.get_string('keymanager_unassignaction','local_rcommon').'</a>';
                     }

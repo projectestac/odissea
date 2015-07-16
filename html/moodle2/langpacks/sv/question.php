@@ -405,6 +405,7 @@ $string['reviewresponse'] = 'Granska svar';
 $string['rightanswer'] = 'Rätt svar';
 $string['rightanswer_help'] = 'en automatiskt genererad sammanfattning av det korrekta svaret. Denna kan vara begränsad så du kanske bör överväga att förklara det korrekta svaret i den generella återkopplingen för frågan och stänga av detta val.';
 $string['save'] = 'Spara';
+$string['savechangesandcontinueediting'] = 'Spara ändringar och fortsätt redigera';
 $string['saved'] = 'Sparad: {$a}';
 $string['saveflags'] = 'Spara nuvarande tillstånd';
 $string['selectacategory'] = 'Välj en kategori:';

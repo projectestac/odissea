@@ -40,6 +40,7 @@ $string['choices'] = 'Antwort-Optionen';
 $string['clozeaid'] = 'Fehlendes Wort eintragen';
 $string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';
 $string['correctfeedback'] = 'Für alle richtigen Antworten';
+$string['deletedchoice'] = 'Diese Auswahl ist gelöscht worden, nachdem der Versuch begonnen wurde.';
 $string['errfractionsaddwrong'] = 'Die Summe der von Ihnen angegebenen Positivwertungen beträgt {$a}%.<br />Diese Summe sollte aber genau 100% sein.';
 $string['errfractionsnomax'] = 'Eine der Antworten sollte eine Bewertung von 100% haben, damit es möglich ist,<br />eine volle Bewertung für diese Frage zu erreichen.';
 $string['errgradesetanswerblank'] = 'Bewertung wurde eingetragen aber keine Antwortoption';

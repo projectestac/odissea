@@ -32,20 +32,20 @@ $string['addgroupstogroupings'] = 'Gruppen verwalten';
 $string['adduserstogroup'] = 'Nutzer/innen verwalten';
 $string['allocateby'] = 'Mitglieder zuordnen';
 $string['anygrouping'] = '[Jede Gruppierung]';
-$string['autocreategroups'] = 'Gruppen automatisch erstellen';
+$string['autocreategroups'] = 'Gruppen automatisch anlegen';
 $string['backtogroupings'] = 'Zurück zu Gruppierungen';
 $string['backtogroups'] = 'Zurück zu Gruppen';
-$string['badnamingscheme'] = 'Muss genau ein \'@\' oder ein \'#\' Zeichen enthalten';
+$string['badnamingscheme'] = 'Der Name muss genau ein \'@\' oder ein \'#\' Zeichen enthalten.';
 $string['byfirstname'] = 'Alphabetisch: Vorname Nachname';
 $string['byidnumber'] = 'Alphabetisch nach ID-Nummer';
 $string['bylastname'] = 'Alphabetisch: Nachname Vorname';
-$string['createautomaticgrouping'] = 'Automatische Gruppierung anlegen';
+$string['createautomaticgrouping'] = 'Gruppierung automatisch anlegen';
 $string['creategroup'] = 'Gruppe anlegen';
 $string['creategrouping'] = 'Gruppierung anlegen';
 $string['creategroupinselectedgrouping'] = 'Gruppe in der Gruppierung anlegen';
 $string['createingrouping'] = 'Gruppierung von automatisch angelegten Gruppen';
 $string['createorphangroup'] = 'Einzelne Gruppe';
-$string['databaseupgradegroups'] = 'Die Gruppenversion ist jetzt {$a}';
+$string['databaseupgradegroups'] = 'Die Gruppenversion ist {$a}.';
 $string['defaultgrouping'] = 'Standardmäßige Gruppierung';
 $string['defaultgroupingname'] = 'Gruppierung';
 $string['defaultgroupname'] = 'Gruppe';
@@ -53,11 +53,11 @@ $string['deleteallgroupings'] = 'Alle Gruppierungen löschen';
 $string['deleteallgroups'] = 'Alle Gruppen löschen';
 $string['deletegroupconfirm'] = 'Möchten Sie die Gruppe \'{$a}\' wirklich löschen?';
 $string['deletegrouping'] = 'Gruppierung löschen';
-$string['deletegroupingconfirm'] = 'Möchten Sie die Gruppierung \'{$a}\' wirklich löschen? (Die Gruppen innerhalb werden dabei nicht gelöscht.)';
+$string['deletegroupingconfirm'] = 'Möchten Sie die Gruppierung \'{$a}\' wirklich löschen? Die darin enthaltenen Gruppen werden nicht gelöscht.';
 $string['deletegroupsconfirm'] = 'Möchten Sie die folgenden Gruppen wirklich löschen?';
-$string['deleteselectedgroup'] = 'Markierte Gruppe löschen';
-$string['editgroupingsettings'] = 'Gruppierungseinstellungen bearbeiten';
-$string['editgroupsettings'] = 'Gruppeneinstellungen bearbeiten';
+$string['deleteselectedgroup'] = 'Gruppe löschen';
+$string['editgroupingsettings'] = 'Gruppierung bearbeiten';
+$string['editgroupsettings'] = 'Gruppe bearbeiten';
 $string['enrolmentkey'] = 'Einschreibeschlüssel';
 $string['enrolmentkeyalreadyinuse'] = 'Dieser Einschreibeschlüssel wird bereits für eine andere Gruppe benutzt.';
 $string['enrolmentkey_help'] = 'Ein Einschreibeschlüssel erlaubt die Einschränkung von Kurszugängen auf diejenigen, die den Einschreibeschlüssel kennen. Falls zusätzlich ein Einschreibeschlüssel für eine Gruppe angegeben ist, dann dient dieser Schlüssel dem Kurszugang, aber auch der automatischen Zuweisung der Nutzer zur richtigen Gruppe.';
@@ -98,23 +98,24 @@ $string['groupingsection'] = 'Gruppierungszugang';
 $string['groupingsection_help'] = 'Eine Gruppierung ist eine Liste von Gruppen innerhalb eines Kurses. Wenn hier eine Gruppierung ausgewählt wird, haben ausschließlich Teilnehmer/innen Zugang zum Bereich, die Gruppen innerhalb der Gruppierung zugeordnet sind.';
 $string['groupingsonly'] = 'Nur Gruppierungen';
 $string['groupmember'] = 'Gruppenmitglied';
-$string['groupmemberdesc'] = 'Standard-Rolle für Mitglieder einer Gruppe';
+$string['groupmemberdesc'] = 'Standardrolle für Mitglieder einer Gruppe';
 $string['groupmembers'] = 'Gruppenmitglieder';
 $string['groupmemberssee'] = 'Gruppenmitglieder anzeigen';
 $string['groupmembersselected'] = 'Mitglieder der markierten Gruppe';
 $string['groupmode'] = 'Gruppenmodus';
 $string['groupmodeforce'] = 'Gruppenmodus vorgeben';
 $string['groupmodeforce_help'] = 'Wenn der Gruppenmodus erzwungen wird, dann wird der Gruppenmodus des Kurses auch auf jede Aktivität im Kurs angewendet. Die Gruppeneinstellungen in jeder Aktivität werden ignoriert.';
-$string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Einstellungen zur Verfügung:
-* Keine Gruppen - es gibt keine Gruppen im Kurs
-* Getrennte Gruppen - es gibt getrennte Gruppen im Kurs, d.h. ein Gruppenmitglied kann nur die Mitglieder der eigenen Gruppe sehen, alle andern sind unsichtbar.
-* Sichtbare Gruppen - es gibt sichtbare Gruppen im Kurs, d.h. jede Gruppe arbeitet in der eigenen Gruppe, kann aber die anderen Gruppen sehen.
+$string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verfügung:
+
+* Keine Gruppen - Im Kurs gibt es keine Gruppen im Kurs und alle nutzen alles zusammen.
+* Getrennte Gruppen - Im Kurs gibt es getrennte Gruppen, d.h. jedes Gruppenmitglied kann nur Mitglieder der eigenen Gruppe sehen, alle andern sind unsichtbar.
+* Sichtbare Gruppen - Im Kurs gibt es sichtbare Gruppen, d.h. jedes Gruppenmitglied arbeitet in der eigenen Gruppe, kann aber die anderen Gruppen sehen.
 
 Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls der Gruppenmodus auf Kursebene festgelegt wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
-$string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits, wählen Sie bitte einen anderen.';
-$string['groupnotamember'] = 'Sie sind nicht Mitglied dieser Gruppe';
+$string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits.';
+$string['groupnotamember'] = 'Sie sind nicht Mitglied dieser Gruppe.';
 $string['groups'] = 'Gruppen';
 $string['groupscount'] = 'Gruppen ({$a})';
 $string['groupsettingsheader'] = 'Gruppen';
@@ -140,13 +141,13 @@ $string['javascriptrequired'] = 'Diese Seite benötigt JavaScript.';
 $string['members'] = 'Mitglieder pro Gruppe';
 $string['membersofselectedgroup'] = 'Mitglieder in:';
 $string['namingscheme'] = 'Namenschema';
-$string['namingscheme_help'] = 'Das Symbol \'@\' kann benutzt werden, um Gruppen zu erzeugen, die Buchstaben im Namen haben (Gruppe @ erzeugt z.B. die Gruppennamen Gruppe A, Gruppe B, Gruppe C, ...)
+$string['namingscheme_help'] = 'Das Symbol \'@\' kann benutzt werden, um Gruppen zu erzeugen, die Buchstaben im Namen haben. \'Gruppe @\' erzeugt z.B. Gruppen mit den Namen Gruppe A, Gruppe B, Gruppe C, ...
 
-Das Symbol \'#\' kann benutzt werden, um Gruppen zu erzeugen, die Zahlen im Namen haben (Gruppe # erzeugt z.B. die Gruppennamen Gruppe 1, Gruppe 2, Gruppe 3, ...)';
+Das Symbol \'#\' kann benutzt werden, um Gruppen zu erzeugen, die Zahlen im Namen haben. \'Gruppe #\' erzeugt z.B. Gruppen mit den Namen Gruppe 1, Gruppe 2, Gruppe 3, ...';
 $string['newgrouping'] = 'Neue Gruppierung';
 $string['newpicture'] = 'Neues Bild';
 $string['newpicture_help'] = 'Wählen Sie ein Bild im Format GIF, JPG oder PNG aus. Das Bild wird als Quadrat beschnitten und in der Größe auf 100x100 Pixel verändert.';
-$string['noallocation'] = 'keine Zuweisung';
+$string['noallocation'] = 'Keine Zuweisung';
 $string['nogrouping'] = 'Keine Gruppierung';
 $string['nogroups'] = 'In diesem Kurs gibt es bisher keine Gruppeneinstellungen';
 $string['nogroupsassigned'] = 'Keine Gruppen zugeordnet';
@@ -162,7 +163,7 @@ $string['overview'] = 'Überblick';
 $string['potentialmembers'] = 'Mögliche Mitglieder: {$a}';
 $string['potentialmembs'] = 'Mögliche Mitglieder';
 $string['printerfriendly'] = 'Druckansicht';
-$string['random'] = 'zufällig';
+$string['random'] = 'Zufällig';
 $string['removefromgroup'] = 'Nutzer/in aus der Gruppe {$a} löschen';
 $string['removefromgroupconfirm'] = 'Möchten Sie \'{$a->user}\' wirklich aus der Gruppe \'{$a->group}\' löschen?';
 $string['removegroupfromselectedgrouping'] = 'Gruppe aus der Gruppierung entfernen';
@@ -177,4 +178,4 @@ $string['showmembersforgroup'] = 'Mitglieder der Gruppe anzeigen';
 $string['toomanygroups'] = 'Nur {$a} Nutzer/innen haben die gewählte Rolle. Dies sind zu wenig für die Anzahl der Gruppen.';
 $string['usercount'] = 'Nutzerzahl';
 $string['usercounttotal'] = 'Nutzerzahl ({$a})';
-$string['usergroupmembership'] = 'Mitgliedschaft der ausgewählten Person';
+$string['usergroupmembership'] = 'Mitgliedschaft der ausgewählten Person:';

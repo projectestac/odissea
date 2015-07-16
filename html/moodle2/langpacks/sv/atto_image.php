@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['saveimage'] = 'Spara bilden';
 $string['size'] = 'Storlek';

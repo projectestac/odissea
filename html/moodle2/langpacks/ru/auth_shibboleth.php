@@ -31,6 +31,7 @@ $string['auth_shibbolethdescription'] = 'При использовании эт�
 $string['auth_shibboleth_errormsg'] = 'Пожалуйста, выберите свою организацию!';
 $string['auth_shibboleth_login'] = 'Логин Shibboleth';
 $string['auth_shibboleth_login_long'] = 'Войти в Moodle через Shibboleth';
+$string['auth_shibboleth_manual_login'] = 'Ручной вход';
 $string['auth_shibboleth_select_member'] = 'Я являюсь членом ...';
 $string['auth_shibboleth_select_organization'] = 'Для аутентификации через Shibboleth, выберите организацию из выпадающего списка:';
 $string['auth_shib_changepasswordurl'] = 'Адрес страницы смены пароля';

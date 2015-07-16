@@ -35,7 +35,7 @@ $string['admindirsettingsub'] = 'Muy pocos servidores web usan /admin como URL e
     de las páginas de administración de Moodle. Usted puede corregir esto renombrando el directorio admin
     en su instalación, y poniendo aquí ese nuevo nombre. Por ejemplo: <br /> <br /><b>moodleadmin</b><br /> <br />
     Así se corregirán los enlaces admin en Moodle.';
-$string['availablelangs'] = 'Lista de idiomas disponibles';
+$string['availablelangs'] = 'Packs de idiomas disponibles';
 $string['caution'] = 'Precaución';
 $string['chooselanguage'] = 'Seleccionar idioma';
 $string['chooselanguagehead'] = 'Seleccionar idioma';
@@ -170,7 +170,7 @@ $string['pathsroparentdataroot'] = 'El directorio padre ({$a->parent}) no tiene 
 $string['pathssubadmindir'] = 'Muy pocos servidores web usan /admin como un URL especial para acceder a un
 panel de control o algo similar. Lamentablemente, esto entra en conflicto con la ubicación estándar para las páginas de administración de Moodle. Usted puede solucionar este problema, renombrando el directorio admin en su instalación Moodle, poniendo un nuevo nombre aquí. Por ejemplo: <em> moodleadmin </em>. Esto solucionará los enlaces de administración en instalación Moodle.';
 $string['pathssubdataroot'] = 'Usted necesita un espacio donde Moodle puede guardar los archivos subidos. En este directorio debe poder LEER y ESCRIBIR el usuario del servidor web (por lo general \'nobody\',  \'apache\' o \'www-data\'), pero no debe poderse acceder a esta carpeta directamente a través de la web. El instalador tratará de crearla si no existe.';
-$string['pathssubdirroot'] = 'Ruta completa del directorio de instalación de Moodle.';
+$string['pathssubdirroot'] = '<p>Ruta completa del directorio que contiene el código de  Moodle.</p>';
 $string['pathssubwwwroot'] = 'Dirección web completa para acceder a Moodle. No es posible acceder a Moodle utilizando múltiples direcciones. Si su sitio tiene varias direcciones públicas debe configurar redirecciones permanentes en todas ellas, excepto en ésta. Si su sitio web es accesible tanto desde una intranet como desde Internet, escriba aquí la dirección pública y configure su DNS para que los usuarios de su intranet puedan también utilizar la dirección pública.';
 $string['pathsunsecuredataroot'] = 'La ubicación de dataroot no es segura';
 $string['pathswrongadmindir'] = 'El directorio admin no existe';
@@ -181,7 +181,7 @@ $string['phpversionhelp'] = '<p>Moodle requiere al menos una versión de PHP 4.3
 <p>En este momento está ejecutando la versión {$a}</p>
 <p>¡Debe actualizar PHP o trasladarse a otro servidor con una versión más reciente de PHP!<br />
 (En caso de 5.0.x podría también revertir a la versión 4.4.x)</p>';
-$string['releasenoteslink'] = 'Para obtener información acerca de esta versión de Moodle, consulte las Notas de la Versión en {$a}';
+$string['releasenoteslink'] = 'Para obtener información acerca de esta versión de Moodle, consulte las notas de la versión en {$a}';
 $string['safemode'] = 'Modo Seguro';
 $string['safemodeerror'] = 'Moodle puede tener problemas con Modo Seguro (\'safe mode\') activado';
 $string['safemodehelp'] = '<p>Moodle puede tener varios problemas  Modo Seguro (\'safe mode\') activado, y probablemente no pueda crear nuevos archivos.</p>

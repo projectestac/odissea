@@ -39,8 +39,7 @@ $string['localewincharset'] = 'WINDOWS-1252';
 $string['oldcharset'] = 'ISO-8859-1';
 $string['parentlanguage'] = '';
 $string['strftimedate'] = '%d de %B de %Y';
-$string['strftimedatefullshort'] = '	
-%d/%m/%a';
+$string['strftimedatefullshort'] = '%d/%m/%y';
 $string['strftimedateshort'] = '%d de %B';
 $string['strftimedatetime'] = '%d de %B de %Y, %H:%M';
 $string['strftimedatetimeshort'] = '%d/%m/%Y %H:%M';

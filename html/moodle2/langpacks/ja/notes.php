@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addnewnote'] = '新しいノートを追加する';
 $string['addnewnoteselect'] = 'ノートを書くユーザを選択する';
-$string['bynameondate'] = '更新: {$a->name} - {$a->date}';
+$string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['cannotdeletepost'] = '投稿の削除中にエラーが発生しました。';
 $string['configenablenotes'] = '個々のユーザに関するノートの保存を有効にします。';
 $string['content'] = 'コンテンツ';
@@ -36,7 +36,7 @@ $string['coursenotes'] = 'コースノート';
 $string['created'] = '作成日時';
 $string['deleteconfirm'] = 'このノートを削除してもよろしいですか?';
 $string['deletenotes'] = 'すべてのノートを削除する';
-$string['editnote'] = 'ノートの編集';
+$string['editnote'] = 'ノートを編集する';
 $string['enablenotes'] = 'ノートを有効にする';
 $string['eventnotecreated'] = 'ノートが作成されました。';
 $string['eventnotedeleted'] = 'ノートが削除されました。';
@@ -45,25 +45,23 @@ $string['eventnoteupdated'] = 'ノートが更新されました。';
 $string['groupaddnewnote'] = '共通ノートを追加する';
 $string['invalidid'] = '無効なノートIDが指定されました。';
 $string['invaliduserid'] = '無効なユーザID: {$a}';
-$string['nocontent'] = 'ノートコンテンツを入力してください。';
+$string['nocontent'] = 'ノートコンテンツは空白にすることができません。';
 $string['nonotes'] = 'まだこのタイプのノートはありません。';
 $string['nopermissiontodelete'] = 'あなたはこのノートを削除できません。';
 $string['note'] = 'ノート';
 $string['notes'] = 'ノート';
 $string['notesdisabled'] = '申し訳ございません、ノートは無効にされています。';
 $string['notesnotvisible'] = 'あなたはこのノートを閲覧することができません。';
-$string['nouser'] = 'ユーザを選択してください。';
+$string['nouser'] = 'あなたはユーザを選択する必要があります。';
 $string['page-notes-index'] = 'ノートメインページ';
 $string['page-notes-x'] = 'すべてのノートページ';
 $string['personal'] = 'パーソナル';
 $string['personalnotes'] = 'パーソナルノート';
 $string['publishstate'] = 'コンテクスト';
-$string['publishstate_help'] = '<p>ここでは3つの設定を選択することができます。</p>
-<ul>
-<li><strong>パーソナル</strong> - ノートはあなただけに表示されます。</li>
-<li><strong>コース</strong> - ノートはこのコースの教師に表示されます。</li>
-<li><strong>サイト</strong> - ノートはすべてのコースの教師に表示されます。</li>
-</ul>';
+$string['publishstate_help'] = 'ノートコンテクストでは誰がノートを閲覧することができるか決定します。
+* パーソナル - ノートはあなただけに表示されます。
+* コース - ノートはこのコースの教師に表示されます。
+* サイト - ノートはすべてのコースの教師に表示されます。';
 $string['selectnotestate'] = 'ノートの状態を選択する';
 $string['site'] = 'サイト';
 $string['sitenotes'] = 'サイトノート';

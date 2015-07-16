@@ -25,24 +25,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcohort'] = 'Afegeix nova cohort';
+$string['addcohort'] = 'Afegeix una cohort nova';
 $string['allcohorts'] = 'Totes les cohorts';
 $string['anycohort'] = 'Qualsevol';
 $string['assign'] = 'Assigna';
+$string['assigncohorts'] = 'Assigna membres a la cohort';
 $string['assignto'] = 'Membres de la cohort \'{$a}';
-$string['backtocohorts'] = 'Tornar a les cohorts';
-$string['bulkadd'] = 'Afegir a la cohort';
+$string['backtocohorts'] = 'Torna a cohorts';
+$string['bulkadd'] = 'Afegeix a la cohort';
 $string['bulknocohort'] = 'No s\'han trobat cohorts disponibles';
+$string['categorynotfound'] = 'No s\'ha trobat la categoria <b>{$a}</b> o bé no teniu permís per per a crear-hi una cohort. Es farà servir el context per defecte.';
 $string['cohort'] = 'Cohort';
 $string['cohorts'] = 'Cohorts';
 $string['cohortsin'] = 'Cohorts disponibles: {$a}';
 $string['component'] = 'Font';
+$string['contextnotfound'] = 'No s\'ha trobat la categoria <b>{$a}</b> o bé no teniu permís per per a crear-hi una cohort. Es farà servir el context per defecte.';
+$string['csvcontainserrors'] = 'S\'han trobat errors al fitxer CSV. Mireu els detalls a sota.';
+$string['csvcontainswarnings'] = 'S\'han trobat alertes al fitxer CSV. Mireu els detalls a sota.';
+$string['csvextracolumns'] = 'La/les columna/es <b>{$a}</b> s\'ignorarà/an.';
 $string['currentusers'] = 'Usuaris corrents';
 $string['currentusersmatching'] = 'S\'estan cercant usuaris corrents';
 $string['defaultcontext'] = 'Context per defecte';
 $string['delcohort'] = 'Suprimeix cohort';
 $string['delconfirm'] = 'De veritat voleu suprimir la cohort  \'{$a}\'?';
 $string['description'] = 'Descripció';
+$string['displayedrows'] = 'Es mostren {$a->displayed} files d\'un total de {$a->total}.';
 $string['duplicateidnumber'] = 'Ja existeix una cohort amb el mateix nombre ID';
 $string['editcohort'] = 'Edita la cohort';
 $string['eventcohortcreated'] = 'S\'ha creat la cohort';
@@ -54,6 +61,8 @@ $string['external'] = 'Cohort externa';
 $string['idnumber'] = 'ID de la cohort';
 $string['memberscount'] = 'Mida de la cohort';
 $string['name'] = 'Nom';
+$string['namecolumnmissing'] = 'S\'ha detectat un problema amb el format del fitxer CSV. Comproveu que inclou els noms de les columnes.';
+$string['namefieldempty'] = 'El nom del camp no pot estar buit';
 $string['nocomponent'] = 'Creat de forma manual';
 $string['potusers'] = 'Usuaris potencials';
 $string['potusersmatching'] = 'S\'estan cercant usuaris potencials';
@@ -62,6 +71,11 @@ $string['removeuserwarning'] = 'Treure usuaris d\'una cohort pot esdevenir una d
 $string['search'] = 'Cerca';
 $string['searchcohort'] = 'Cerca cohort';
 $string['selectfromcohort'] = 'Selecciona membres de la cohort';
+$string['systemcohorts'] = 'Cohorts de sistema';
 $string['unknowncohort'] = 'Cohort desconeguda ({$a})!';
+$string['uploadcohorts'] = 'Carrega cohorts';
+$string['uploadedcohorts'] = 'S\'han carregat {$a} cohorts';
 $string['useradded'] = 'Usuari afegit a la cohort «{$a}»';
 $string['visible'] = 'Visible';
+$string['visible_help'] = 'Els usuaris amb la capacitat «moodle/cohort:view» en el context de cohort poden visualitzar qualsevol cohort.<br />
+Les cohorts visibles també poden ser visualitzades pels usuaris dels cursos on pertanyen.';

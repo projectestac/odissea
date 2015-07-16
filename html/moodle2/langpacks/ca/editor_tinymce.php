@@ -274,7 +274,7 @@ $string['advlist:types'] = 'Tipus';
 $string['advlist:upper_alpha'] = 'Majúscules llatines';
 $string['advlist:upper_roman'] = 'Majúscules romanes';
 $string['aria:rich_text_area'] = 'Àrea de text enriquit';
-$string['autosave:restore_content'] = 'Restaura el contingut auto desat.';
+$string['autosave:restore_content'] = 'Restaura el contingut desat automàticament.';
 $string['autosave:unload_msg'] = 'Els canvis que has fet es perdran si surts d\'aquesta pàgina.';
 $string['autosave:warning_message'] = 'Si restaureu el document desat, perdreu tot el contingut que teniu ara a l\'editor.
 

@@ -90,7 +90,7 @@ $string['adminhelpcourses'] = 'Zehaztu ikastaroak eta kategoriak eta esleitu ika
 $string['adminhelpeditorsettings'] = 'Ezarri HTML editorearen oinarrizko ezarpenak';
 $string['adminhelpedituser'] = 'Ikusi erabiltzaile-kontuen zerrenda eta aldatu bat edo beste';
 $string['adminhelpenvironment'] = 'Konprobatu zure zerbitzaria oraingo eta geroko instalaziorako baldintzetara egokituta dagoen';
-$string['adminhelpfailurelogs'] = 'Ikusi huts egindako sarrerak';
+$string['adminhelpfailurelogs'] = 'Arakatu huts egindako saio-hasierak';
 $string['adminhelplanguage'] = 'Hizkuntza-ezaugarriak ikusi eta aldatzeko';
 $string['adminhelplogs'] = 'Ikusi web gune honetako jarduera guztietan zer gertatu den';
 $string['adminhelpmanageblocks'] = 'Kudeatu instalatutako blokeak eta beren ezaugarriak';
@@ -489,7 +489,7 @@ $string['deletecheck'] = '{$a} ezabatu?';
 $string['deletecheckfiles'] = 'Ziur al zaude fitxategi hauek ezabatu nahi dituzula?';
 $string['deletecheckfull'] = 'Ziur al zaude {$a} guztiz ezabatu nahi duzula?';
 $string['deletechecktype'] = 'Ziur al zaude {$a->type} ezabatu nahi duzula?';
-$string['deletechecktypename'] = 'Ziur al zaude {$a->type} ezabatu nahi duzula?';
+$string['deletechecktypename'] = 'Ziur al zaude "{$a->name}" {$a->type} ezabatu nahi duzula?';
 $string['deletecheckwarning'] = 'Fitxategi hauek ezabatu egingo dituzu';
 $string['deletecomment'] = 'Iruzkin hau ezabatu';
 $string['deletecompletely'] = 'Guztiz ezabatu';
@@ -1492,7 +1492,7 @@ $string['rssarticles'] = 'RSS jario berrien kopurua';
 $string['rsserror'] = 'Errorea jarioa irakurtzerakoan';
 $string['rsserrorauth'] = 'Zure RSS estekak ez du autentifikazio-token baliagarririk.';
 $string['rsserrorguest'] = 'Jario honek gonbidatu-sarbidea erabiltzen du datuetara iristeko, baina gonbidatuak ez du baimenik datuak irakurtzeko. Jario honen jatorrizko kokapenera joan (URL) erabiltzaile onargarri bat erabiliz eta RSS esteka berri bat lortu.';
-$string['rsskeyshelp'] = 'Segurtasuna eta pribatutasuna bermatzeko, RSS jarioen URLek token berezi bat dute, nori bideratua den identifikatzeko. Horrela, beste erabiltzaileek ezin izango dute atzipenik RSS bidez sartu behar ez diren Moodle ataletara.</p><p>Token hau automatikoki sortzen da RSS jarioak sortzen duen atal batera sartzen zaren lehen aldian. Uste baduzu RSS jarioaren tokena norbaiten eskuetara iritsi dela, beste token bat eskatu dezakezu Esteka hemen berritu botoiaren bidez. Kontuan izan oraingo RSS jarioaren URLak ez duela gehiago balio.';
+$string['rsskeyshelp'] = '<p>Segurtasuna eta pribatutasuna bermatzeko, RSS jarioen URLek token berezi bat dute, nori bideratua den identifikatzeko. Horrela, beste erabiltzaileek ezin izango dute atzipenik RSS bidez sartu behar ez diren Moodle ataletara.</p><p>Token hau automatikoki sortzen da RSS jarioak sortzen duen atal batera sartzen zaren lehen aldian. Uste baduzu RSS jarioaren tokena norbaiten eskuetara iritsi dela, beste token bat eskatu dezakezu Esteka hemen berritu botoiaren bidez. Kontuan izan oraingo RSS jarioaren URLak ez duela gehiago balio.</p>';
 $string['rsstype'] = 'RSS jarioak jarduera honetan';
 $string['saveandnext'] = 'Gorde eta erakutsi hurrengoa';
 $string['savechanges'] = 'Aldaketak gorde';
@@ -1520,12 +1520,7 @@ $string['searchagain'] = 'Berriz bilatu';
 $string['searchbyemail'] = 'Bilatu e-posta helbidearen arabera';
 $string['searchbyusername'] = 'Bilatu erabiltzaile-izenaren arabera';
 $string['searchcourses'] = 'Bilatu Ikastaroak';
-$string['searchhelp'] = '<p>Hitz asko batera bila ditzakezu bilaketaren emaitzak zehatzago izateko honela:</p>
-<ul>
-<li>Hitz bat baino gehiago idaztekotan, bilatzaileak hitz horiek edonon dauzkaten emaitzak bilatuko ditu.</li>
-<li>Hitz batzuk (+) ikurrak bananduta idatziz gero, hitz horiek guztiak orden berean duten emaitza guztiak erakutsiko dira.</li>
-<li>Hitz batzuk (-) ikurrak bananduta idatziz gero, hitz horiek dauzkaten emaitzak baztertu egingo dira.</li>
-</ul>';
+$string['searchhelp'] = '<p>Hitz asko batera bila ditzakezu. Hitz bat baino gehiago idaztekotan, bilatzaileak hitz horiek edonon dauzkaten emaitzak bilatuko ditu.</p><p>Hitz batzuk (+) ikurrak bananduta idatziz gero, hitz horiek guztiak orden berean duten emaitza guztiak erakutsiko dira.</p><p>(-) ikurra hitzaren aurretik jarriz gero, hitz hori duten emaitzak ez dira erakutsiko.</p>';
 $string['search_help'] = 'Testuko edozein tokitan hitz bat edo biko oinarrizko bilaketetarako, idatzi horiek tarte bat utzita. Bi karaktere baino gehiagoko hitz guztiak erabiltzen dira.
 
 Bilaketa arurreraturako, sakatu bilatu botoiari bilaketarako kutxatxoan ezer idatzi gabe eta bilaketa aurreraturako formulariora joango zara.';

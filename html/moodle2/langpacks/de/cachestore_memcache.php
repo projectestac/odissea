@@ -40,16 +40,17 @@ $string['prefix_help'] = 'Der Prefix wird für alle Schlüsselbezeichnungen des 
 $string['prefixinvalid'] = 'Ungültiger Schlüssel. Verwenden Sie nur a-z A-Z o-9 -_.';
 $string['servers'] = 'Server';
 $string['serversclusterinvalid'] = 'Wenn das Clustering aktiviert wird, ist die Angabe genau eines Servers notwendig.';
-$string['servers_help'] = 'Diese Option legt die Server für den Memcache Adapter fest. Schreiben Sie einen Server pro Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung ein.  Wird kein Port eingetragen wird standardmäßig der Port 11211 verwendet.
+$string['servers_help'] = 'Diese Option legt die Server für den Memcache Adapter fest.
+Verwenden Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung (optonal) ein.  Wenn kein Port angegeben ist, wird der standardmäßige Port 11211 verwendet.
 
-Zum Beispiel:
+Beispiele:
 <pre>
 server.url.com
 ipaddress:port
 servername:port:weight
 </pre>
 
-Wenn unten *Cluster-Servern aktivieren* ausgewählt ist, darf nur ein Server angegeben sein. Normalerweise soll das ein Name sein, der sich auf die lokale Maschine bezieht, z.B. 127.0.0.1 oder localhost.';
+Wenn unten *Cluster-Server aktivieren* ausgewählt ist, darf nur ein Server angegeben sein. Normalerweise ist das ein Name, der sich auf die lokale Maschine bezieht, z.B. 127.0.0.1 oder localhost.';
 $string['sessionhandlerconflict'] = 'Warnung: Eine Memcache Instanz ({$a}) ist so konfiguriert, dass sie den gleichen Memcached Server wie Sessons verwendet. Das Löschen aller Caches wird gleichzeitig auch alle Sessions löschen.';
 $string['setservers'] = 'Server setzen';
 $string['setservers_help'] = 'Diese Option legt die Server fest, die aktualisiert werden, wenn sich Daten im Cache geändert haben. Geben Sie für jeden Server den vollständigen Namen an.

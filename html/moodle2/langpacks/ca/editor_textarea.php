@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Àrea de text pla';
+$string['pluginname'] = 'Àrea de text net';

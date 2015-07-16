@@ -54,18 +54,17 @@ $string['serialiser_json'] = 'Serialiser JSON';
 $string['serialiser_php'] = 'Standardmäßiger PHP-Serialiser';
 $string['servers'] = 'Server';
 $string['serversclusterinvalid'] = 'Wenn das Clustering aktiviert wird, ist die Angabe genau eines Servers notwendig.';
-$string['servers_help'] = 'Diese Option legt die Server fest, die für den Memcached Adapter benutzt werden sollen.
-Benutzen Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse und optional einen Port und einen Rang ein.
-Wenn kein Port eingetragen ist, wird der Standardport 11211 verwendet.
+$string['servers_help'] = 'Diese Option legt die Server für den Memcached Adapter fest.
+Verwenden Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung (optonal) ein.  Wenn kein Port angegeben ist, wird der standardmäßige Port 11211 verwendet.
 
-z.B.:
+Beispiele:
 <pre>
 server.url.com
 ipaddress:port
 servername:port:weight
 </pre>
 
-Falls *Clustered Server aktiviert* sind! darf nur ein Server in der Liste stehen. Normalerweise wird hier dann ein Name angegeben, der auf die lokale Maschine verweist, also localhost oder 127.0.0.1.';
+Wenn unten *Cluster-Server aktivieren* ausgewählt ist, darf nur ein Server angegeben sein. Normalerweise ist das ein Name, der sich auf die lokale Maschine bezieht, z.B. 127.0.0.1 oder localhost.';
 $string['sessionhandlerconflict'] = 'Warnung: Eine Memcached Instanz ({$a}) ist so konfiguriert, dass sie den gleichen Memcached Server wie Sessons verwendet. Das Löschen aller Caches wird gleichzeitig auch alle Sessions löschen.';
 $string['setservers'] = 'Server auswählen';
 $string['setservers_help'] = 'Dies ist die Liste der Server, die aktualisiert werden wenn Daten im Cache verändert werden.  Aufgeführt wird der vollständige Name für jeden Server im Pool.

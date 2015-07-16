@@ -67,6 +67,7 @@ $string['modes'] = 'Moduak';
 $string['none'] = 'Bat ere ez';
 $string['plugin'] = 'Plugina';
 $string['pluginsummaries'] = 'Instalatutako cache-biltegiak';
+$string['purge'] = 'Ezabatu';
 $string['result'] = 'Emaitza';
 $string['set'] = 'Ezarri';
 $string['sharing'] = 'Partekatu';

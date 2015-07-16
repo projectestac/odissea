@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'fr', branch 'MOODLE_26_STABLE'
+ * Strings for component 'geogebra', language 'fr', branch 'MOODLE_28_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,16 +70,12 @@ $string['geogebra:view'] = 'Voir GeoGebra';
 $string['grade'] = 'Évaluation';
 $string['gradeit'] = 'Évaluer';
 $string['grademethod'] = 'Méthode d\'évaluation';
-$string['header_geogebra'] = 'Paramètres de Geogebra';
-$string['header_score'] = 'Paramètres d\'évaluation';
 $string['height'] = 'Hauteur';
 $string['highestattempt'] = 'Tentative la plus haute';
 $string['httpnotallowed'] = 'Il n\'est pas possible pour l\'instant d\'utiliser des fichiers externes';
 $string['interfaceoptionsgrp'] = 'Interface utilisateur';
 $string['invalidgeogebrafile'] = 'Fichier invalide. Il doit avoir l\'extension « .ggb ».';
 $string['invalidurl'] = 'URL invalide. L\'adresse doit commencer par http(s) ou www et contenir un fichier « .ggb » valide.';
-$string['javacodebase'] = 'Code de base de GeoGebra';
-$string['javacodebase_help'] = 'Chemin des fichiers .jar de GeoGebra';
 $string['language'] = 'Langage';
 $string['lastattempt'] = 'Dernière tentative';
 $string['lastattemptremaining'] = 'Ceci est votre dernière tentative pour cette activité';
@@ -129,6 +125,5 @@ $string['viewattempt'] = 'Voir';
 $string['viewattempts'] = 'Voir les tentatives';
 $string['viewattempttab'] = 'Voir la tentative';
 $string['viewtab'] = 'Voir';
-$string['warningnojava'] = 'Ce script utilise une application java issue de GeoGebra (www.geogebra.org). Il semble que vous n\'avez pas installé Java. Merci d\'aller sur www.java.com';
 $string['weight'] = 'Poids';
 $string['width'] = 'Largeur';

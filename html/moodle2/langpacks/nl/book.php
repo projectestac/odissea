@@ -36,9 +36,9 @@ $string['confchapterdelete'] = 'Wil je dit hoofdstuk echt verwijderen?';
 $string['confchapterdeleteall'] = 'Wil je dit hoofdstuk en alle paragrafen echt verwijderen?';
 $string['content'] = 'Inhoud';
 $string['customtitles'] = 'Aangepaste titels';
-$string['customtitles_help'] = 'Titels worden automatisch alleen in de inhoudstafel getoond en als hoofding boven de inhoud.
+$string['customtitles_help'] = 'Titels worden automatisch alleen in de inhoudsopgave getoond en als kopje boven de inhoud.
 
-Als het vinkje bij aangepaste titels is gezet, dan wordt de hoofdstuktitel niet als hoofding boven de inhoud gezet. Er kan een andere titel, misschien een langere, ingegeven worden als deel van de inhoud.';
+Als het vinkje bij aangepaste titels is gezet, dan wordt de hoofdstuktitel niet als kopje boven de inhoud gezet. Er kan een andere titel, misschien een langere, ingegeven worden als deel van de inhoud.';
 $string['editingchapter'] = 'Bewerk hoofdstuk';
 $string['errorchapter'] = 'Fout bij het lezen van het hoofdstuk';
 $string['eventchaptercreated'] = 'Hoofdstuk gemaakt';
@@ -65,10 +65,10 @@ $string['numbering2'] = 'Bolletjes';
 $string['numbering3'] = 'Inspringen';
 $string['numbering_help'] = '* Geen - Hoofdstuk en ondertitels hebben geen opmaak
 * Nummers - Hoofdstuk en ondertitels zijn genummerd 1, 1.1, 1.2, 2, ...
-* Punten - Ondertitels springen in en worden getoond met een punt in de inhoudstafel
-* Inspringen - Ondertitels springen in in de inhoudstafel';
+* Punten - Ondertitels springen in en worden getoond met een punt in de inhoudsopgave
+* Inspringen - Ondertitels springen in in de inhoudsopgave';
 $string['numberingoptions'] = 'Beschikbare opties voor opmaak van hoofdstukken';
-$string['numberingoptions_desc'] = 'Opties voor het tonen van hoofdstukken en subtitels in de inhoudstafel';
+$string['numberingoptions_desc'] = 'Opties voor het tonen van hoofdstukken en subtitels in de inhoudsopgave';
 $string['page-mod-book-x'] = 'Om het even welke pagina van de boekmodule';
 $string['pluginadministration'] = 'Boekbeheer';
 $string['pluginname'] = 'Boek';
@@ -76,5 +76,5 @@ $string['subchapter'] = 'Paragraaf';
 $string['subchapternotice'] = '(enkel beschikbaar als het eerste hoofdstuk gemaakt is)';
 $string['subplugintype_booktool'] = 'Boek tool';
 $string['subplugintype_booktool_plural'] = 'Boek tools';
-$string['toc'] = 'Inhoudstafel';
+$string['toc'] = 'Inhoudsopgave';
 $string['top'] = 'boven';

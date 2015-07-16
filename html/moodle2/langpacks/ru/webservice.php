@@ -129,6 +129,7 @@ $string['missingusername'] = 'Отсутствует логин';
 $string['missingversionfile'] = 'Ошибка в исходном коде: отсутствует файл version.php для компонента «{$a}»';
 $string['mobilewsdisabled'] = 'Отключено';
 $string['mobilewsenabled'] = 'Включено';
+$string['nameexists'] = 'Это имя уже используется другой службой';
 $string['nocapabilitytouseparameter'] = 'Пользователь не имеет права использовать параметр {$a}';
 $string['nofunctions'] = 'Эта служба не имеет функций.';
 $string['norequiredcapability'] = 'Никакие дополнительные права не требуются';

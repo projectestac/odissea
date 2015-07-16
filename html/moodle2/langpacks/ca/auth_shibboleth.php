@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_shib_auth_method'] = 'Nom del mètode d\'autenticació';
-$string['auth_shib_auth_method_description'] = 'Proporciona una paraula per la identificació Shibboleth que sigui familiar als vostres usuaris. Aquesta pot ser una paraula de la vostre llengua que tingui caràcters únics, ex. <tt>Nom d\'usuari catanyol</tt> o <tt>Nom d\'usuari català</tt> o semblant.';
+$string['auth_shib_auth_method_description'] = 'Proporciona una paraula per la identificació Shibboleth que sigui familiar als vostres usuaris. Aquesta pot ser el nom de la vostra federació Shibboleth com ara <tt>SWITHCHaai Login</tt> o <tt>InCommon Login</tt> o semblant.';
 $string['auth_shibbolethdescription'] = 'Amb l\'ús d\'aquest mètode es creen i s\'autentiquen usuaris utilitzant <a href="http://shibboleth.internet2.edu/">Shibboleth</a>.<br />Assegureu-vos de llegir les instruccions del fitxer <a href="../auth/shibboleth/README.txt">README</a> per conèixer com configurar Moodle amb Shibboleth.';
 $string['auth_shibboleth_errormsg'] = 'Seleccioneu l\'organització de la qual sou membre';
-$string['auth_shibboleth_login'] = 'Entrada Shibboleth';
-$string['auth_shibboleth_login_long'] = 'Entrada en Moodle a través de Shibboleth';
-$string['auth_shibboleth_manual_login'] = 'Entrada manual';
+$string['auth_shibboleth_login'] = 'Inici de sessió Shibboleth';
+$string['auth_shibboleth_login_long'] = 'Inici de sessió al Moodle a través de Shibboleth';
+$string['auth_shibboleth_manual_login'] = 'Inici de sessió manual';
 $string['auth_shibboleth_select_member'] = 'Sóc membre de:';
 $string['auth_shibboleth_select_organization'] = 'Per a l\'autenticació a través de Shibboleth, seleccioneu la vostra organització en la llista desplegable:';
 $string['auth_shib_changepasswordurl'] = 'URL de canvi de contrasenya';
@@ -41,11 +41,11 @@ $string['auth_shib_convert_data_description'] = 'Podeu utilitzar aquesta API per
 $string['auth_shib_convert_data_warning'] = 'El fitxer no existeix o el procés del servidor web no el pot llegir.';
 $string['auth_shib_idp_list'] = 'Proveïdors d\'identitat ';
 $string['auth_shib_idp_list_description'] = 'Proporciona una llista de proveïdors d\'identitat de noms d\'usuari per deixar a l\'usuari escollir a la pàgina d\'inici. <br>En cada línia cal que hi hagi una tupla separada per coma de ID del proveïdor (mireu el fitxer de metadades ) i el nom del proveïdor com es mostri a la llista desplegable de sota. </br>
-Un tercer paràmetre opcional que podeu afegir és la vostra ubicació en la sessió Shibboleth que pot ser utilitzada en el cas e que la instal·lació de Moodle sigui part d\'una configuració multi federació.';
-$string['auth_shib_instructions'] = 'Utilitzeu l\'<a href="{$a}">entrada Shibboleth</a> per tenir accés mitjançant Shibboleth, si funciona amb la vostra institució. Si no, utilitzeu el formulari d\'entrada normal.';
-$string['auth_shib_instructions_help'] = 'Aquí podeu proporcionar instruccions per explicar Shibboleth als vostres usuaris. Es visualitzaran en la secció d\'instruccions de la pàgina d\'entrada. Les instruccions han d\'incloure un enllaç a "<b>{$a}</b>" on els usuaris faran clic quan vulguin entrar.';
+Un tercer paràmetre opcional que podeu afegir és la vostra ubicació en la sessió Shibboleth que pot ser utilitzada en el cas que la instal·lació de Moodle sigui part d\'una configuració multi federació.';
+$string['auth_shib_instructions'] = 'Utilitzeu l\'<a href="{$a}">inici de sessió Shibboleth</a> per accedir mitjançant Shibboleth, si la vostra institució ho permet. Si no, utilitzeu el formulari d\'inici de sessió normal.';
+$string['auth_shib_instructions_help'] = 'Aquí podeu proporcionar instruccions per explicar Shibboleth als vostres usuaris. Es visualitzaran en la secció d\'instruccions de la pàgina d\'inici de sessió. Les instruccions han d\'incloure un enllaç a "<b>{$a}</b>" on els usuaris faran clic quan vulguin iniciar la sessió.';
 $string['auth_shib_integrated_wayf'] = 'Servei Moodle WAYF';
-$string['auth_shib_integrated_wayf_description'] = 'Si ho habiliteu, Moodle utilitzarà el seu propi servei WAYF en lloc de la primera configuració per a Shibboleth. Moodle mostrarà una llista desplegable en aquesta pàgina d\'inici on l\'usuari podrà seleccionar el seu proveïdor d\'identitats. ';
+$string['auth_shib_integrated_wayf_description'] = 'Si ho habiliteu, Moodle utilitzarà el seu propi servei WAYF en lloc del que proporciona Shibboleth. Moodle mostrarà una llista desplegable en aquesta pàgina alternativa d\'inici de sessió on l\'usuari haurà de seleccionar el seu proveïdor d\'identitats.';
 $string['auth_shib_logout_return_url'] = 'Desconnexió alternativa i retorn a l\'URL';
 $string['auth_shib_logout_return_url_description'] = 'Proporciona l\'URL on els usuaris Shibboleth seran redirigits després de tancar la sessió.</br> Si ho deixeu buit els usuaris seran redirigits a la localització on Moodle redirigeix els usuaris.';
 $string['auth_shib_logout_url'] = 'Proveïdor de servei Shibboleth del gestor de desconnexió d\'URL';

@@ -29,6 +29,7 @@ $string['addcohort'] = 'Добавить глобальную группу';
 $string['allcohorts'] = 'Все глобальные группы';
 $string['anycohort'] = 'Любой';
 $string['assign'] = 'Назначить';
+$string['assigncohorts'] = 'Назначить членов глобальной группы';
 $string['assignto'] = 'Участники глобальной группы «{$a}»';
 $string['backtocohorts'] = 'Вернуться';
 $string['bulkadd'] = 'Добавить в группу';

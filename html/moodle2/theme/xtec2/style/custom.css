@@ -115,7 +115,8 @@ h3{
 	padding-top: 0px;
 }
 
-.block.hidden {
+.block.hidden,
+.block.invisible {
     padding: 0;
 }
 
@@ -162,7 +163,8 @@ h3{
 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
-.block.hidden .header {
+.block.hidden .header,
+.block.invisible .header {
     border-radius: 4px;
 }
 
@@ -175,7 +177,8 @@ h3{
     padding: 4px 14px;
 }
 
-.jsenabled .block.hidden .content, .block.hidden .content {
+.jsenabled .block.hidden .content, .block.hidden .content,
+.jsenabled .block.invisible .content, .block.invisible .content {
 	display: none;
     padding: 0;
 }
@@ -803,6 +806,33 @@ body.path-grade-report-grader #user-grades {
     cursor: pointer;
     background: transparent;
 }
+
+/** MDL-42634 */
+.block.invisible {
+    opacity: 1;
+}
+
+.block.invisible .header h2,
+.block.invisible .header .block_action,
+.block.invisible .header .menubar {
+    opacity: .5;
+}
+
+.course-content ul li.section.hidden {
+    opacity: 1;
+}
+
+.course-content ul li.section.hidden .sectionname,
+.course-content ul li.section.hidden .content > div,  /* All the divs but the activities which are in a UL. */
+.course-content ul li.section.hidden .activity .activityinstance,
+.course-content ul li.section.hidden .side,
+.course-content ul li.section.hidden .menubar,
+.course-content ul li.section.hidden .editing_move,
+.course-content ul li.section.hidden .cm-edit-action,
+.course-content ul li.section.hidden .section-modchooser-link {
+    opacity: .5;
+}
+/** END MDL-42634 */
 
 /* Edited atto tables */
 /*

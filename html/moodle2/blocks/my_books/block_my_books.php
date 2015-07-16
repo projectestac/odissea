@@ -60,7 +60,7 @@ class block_my_books extends block_list {
 
 		$bt = "";
         $context = context_system::instance(); // pinned blocks do not have own context
-		if (has_capability('local/rcommon:managecredentials', $context)) {
+		if (has_capability('local/rcommon:managecredentials', $context) || has_capability('local/rcommon:editowncredentials', $context)) {
 			$bt = '<a href="' . $CFG->wwwroot . '/local/rcommon/users.php?action=manage" title="' . get_string('manage_button_title', 'block_my_books') . '"><button>' . get_string('manage_button', 'block_my_books') . '</button></a>';
 		}
 		if ($mybooksconfig->addkey) {

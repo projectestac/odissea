@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['application/epub_zip'] = 'EPUB ebook';
-$string['application/msword'] = 'Word文書';
-$string['application/pdf'] = 'PDF文書';
+$string['application/epub_zip'] = 'EPUB電子書籍';
+$string['application/msword'] = 'Wordドキュメント';
+$string['application/pdf'] = 'PDFドキュメント';
 $string['application/vnd.moodle.backup'] = 'Moodleバックアップ';
 $string['application/vnd.ms-excel'] = 'Excelスプレッドシート';
 $string['application/vnd.ms-powerpoint'] = 'Powerpointプレゼンテーション';
@@ -43,4 +43,4 @@ $string['document/unknown'] = 'ファイル';
 $string['image'] = 'イメージ ({$a->MIMETYPE2})';
 $string['text/html'] = 'HTMLドキュメント';
 $string['text/plain'] = 'テキストファイル';
-$string['text/rtf'] = 'RTF文書';
+$string['text/rtf'] = 'RTFドキュメント';

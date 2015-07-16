@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'eu', branch 'MOODLE_26_STABLE'
+ * Strings for component 'geogebra', language 'eu', branch 'MOODLE_28_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,6 @@ $string['geogebra:view'] = 'Ikusi GeoGebra';
 $string['grade'] = 'Kalifikatu';
 $string['gradeit'] = 'Kalifikatu';
 $string['grademethod'] = 'Kalifikazio-metodoa';
-$string['header_geogebra'] = 'GeoGebra-ren ezarpenak';
 $string['height'] = 'Altuera';
 $string['highestattempt'] = 'Saiakera altuena';
 $string['httpnotallowed'] = 'Une honetan ez dago baimenduta kanpoko fitxategiak erabiltzea';

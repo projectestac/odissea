@@ -35,6 +35,7 @@ $string['avaluation'] = 'Evaluation criteria';
 $string['avaluation_score'] = 'Achieving this global score';
 $string['avaluation_solved'] = 'Solving this number of different activities';
 $string['closebeforeopen'] = 'Could not update the jclic. You have specified a due date before the available date.';
+$string['contentheader'] = 'Content';
 $string['deleteallsessions'] = 'Delete all sessions';
 $string['description'] = 'Description';
 $string['duedate'] = 'Due date';
@@ -52,8 +53,6 @@ $string['filetype_help'] = 'This setting determines how the JClic activity is in
 * Uploaded JClic - Enables a valid ".jclic.zip" package to be chosen by the file picker.
 * External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" file.';
 $string['filetypelocal'] = 'Uploaded JClic';
-$string['header_jclic'] = 'JClic Settings';
-$string['header_score'] = 'Avaluation Settings';
 $string['height'] = 'Height';
 $string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic.zip" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" file.';
@@ -103,6 +102,7 @@ $string['solved'] = 'Correct';
 $string['solveddone'] = 'Activities solved / done';
 $string['starttime'] = 'Date started';
 $string['time'] = 'Time';
+$string['timing'] = 'Timing';
 $string['totals'] = 'Totals';
 $string['totaltime'] = 'Total time';
 $string['unlimited'] = 'Unlimited';

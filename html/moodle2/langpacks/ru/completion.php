@@ -164,6 +164,7 @@ $string['restoringcompletiondata'] = 'Запись данных отслежив
 $string['roleaggregation'] = 'Требуемое условие';
 $string['roleaggregation_all'] = 'ВСЕ выбранные роли помечать при выполнении условия';
 $string['roleaggregation_any'] = 'ЛЮБУЮ из выбранных ролей помечать при выполнении условия';
+$string['roleidnotfound'] = 'ID роли «{$a}» не найден';
 $string['saved'] = 'Сохранено';
 $string['seedetails'] = 'Подробнее';
 $string['self'] = 'Самостоятельно';

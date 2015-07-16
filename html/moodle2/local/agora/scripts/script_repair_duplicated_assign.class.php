@@ -83,6 +83,7 @@ class script_repair_duplicated_assign extends agora_script_base{
 		$original_assign = (array) $first_assign;
 		unset($original_assign['id']);
 		unset($original_assign['timemodified']);
+		unset($original_assign['coursemoduleid']);
 
 		$concat = $DB->sql_concat('plugin', 'subtype', 'name');
 		$assign_plugin_config_sql = "SELECT $concat as psn, value FROM {assign_plugin_config} WHERE assignment = :assignment";
@@ -138,13 +139,15 @@ class script_repair_duplicated_assign extends agora_script_base{
 		$compare = (array)$compare;
 		$compare = array_merge($compare, $config);
 		$compareid = $compare['id'];
+		$comparecmid = $compare['coursemoduleid'];
 		unset($compare['id']);
 		unset($compare['timemodified']);
+		unset($compare['coursemoduleid']);
 		foreach($original as $key => $value){
 			if($key == 'intro'){
 				if(isset($compare[$key]) && strip_tags($compare[$key]) != strip_tags($value)){
 					// Ja no son iguals...
-					mtrace("----> Assign {$compareid} DIFFER on key $key : {$compare[$key]} != $value ... skipping...", '<br/>');
+					mtrace("----> Assign {$compareid} ($comparecmid) DIFFER on key $key : {$compare[$key]} != $value ... skipping...", '<br/>');
 					return false;
 				}
 			} else if(isset($compare[$key]) && $compare[$key] != $value){

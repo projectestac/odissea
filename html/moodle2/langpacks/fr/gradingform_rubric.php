@@ -59,7 +59,7 @@ $string['restoredfromdraft'] = 'Remarque ! La dernière tentative d\'évaluatio
 $string['rubric'] = 'Grille d\'évaluation';
 $string['rubricmapping'] = 'Règles de correspondances entre score et note';
 $string['rubricmappingexplained'] = 'Le score minimal possible pour cette grille d\'évaluation est de <b>{$a->minscore} points</b>. Ce score sera converti en la note minimale disponible pour cette activité (c\'est-à-dire zéro, à moins qu\'un barème ne soit utilisé).
-Le score maximal possible <b>{$a->maxscore} points</b> sera converti en la note maximale disponible pour cette activité (c\'est-à-dire zéro, à moins qu\'un barème ne soit utilisé).<br />
+Le score maximal possible <b>{$a->maxscore} points</b> sera converti en la note maximale disponible pour cette activité.<br />
 Les scores intermédiaires seront convertis de la même façon et arrondis à la note disponible la plus proche.<br />
 Si un barème est utilisé plutôt qu\'une note, le score sera converti dans les éléments du barème comme s\'il s\'agissait d\'entiers successifs.';
 $string['rubricnotcompleted'] = 'Veuillez choisir quelque chose pour chaque critère';

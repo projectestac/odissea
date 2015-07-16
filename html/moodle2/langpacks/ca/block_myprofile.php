@@ -47,4 +47,4 @@ $string['display_yahoo'] = 'Visualitza Yahoo';
 $string['myprofile:addinstance'] = 'Afegir un bloc nou d\'usuaris connectats';
 $string['myprofile:myaddinstance'] = 'Afegir un bloc nou d\'usuaris connectats a la pàgina «El meu Moodle»';
 $string['myprofile_settings'] = 'Informació de l\'usuari visible';
-$string['pluginname'] = 'L\'usuari ha entrat';
+$string['pluginname'] = 'L\'usuari s\'ha connectat';

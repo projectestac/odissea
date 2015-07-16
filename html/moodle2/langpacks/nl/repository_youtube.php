@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
+$string['apikey'] = 'API-sleutel';
 $string['configplugin'] = 'YouTupe opslagruimte configuratie';
+$string['information'] = 'Haal een  <a href="https://developers.google.com/youtube/v3/getting-started">Google API Key</a> voor jouw Moodle site.';
 $string['pluginname'] = 'Youtube opslagruimte';
 $string['search'] = 'Zoek video\'s';
 $string['sortby'] = 'Sorteer op';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Teniu {$a} que necessiten la vostra atenció';
 $string['alwaysshowall'] = 'Mostra-ho sempre tot';
-$string['collapseall'] = 'Col·lapsa totes les llistes de cursos';
+$string['collapseall'] = 'Contreu totes les llistes de cursos';
 $string['configotherexpanded'] = 'Si s\'habilita, el Altres Cursos s\'expandiran per defecte llevat que les preferències de l\'usuari assenyalin el contrari.';
 $string['configpreservestates'] = 'Si s\'habilita, els estats col·lapsats / expandits establerts per l\'usuari s\'emmagatzemaran i utilitzaran en cada càrrega.';
 $string['course_overview:addinstance'] = 'Afegir un nou bloc de resum de cursos';
@@ -48,6 +48,7 @@ $string['movecourse'] = 'Mou el curs: {$a}';
 $string['movecoursehere'] = 'Mou el curs aquí';
 $string['movetofirst'] = 'Mou el curs {$a} dalt';
 $string['movingcourse'] = 'Esteu movent: {$a->fullname} ({$a->cancellink})';
+$string['none'] = 'Cap';
 $string['numtodisplay'] = 'Nombre de cursos a mostrar:';
 $string['otherexpanded'] = 'Altres Cursos expandits';
 $string['pluginname'] = 'Resum de cursos';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configintrotimezones'] = 'Aquesta pàgina cercarà informació nova sobre zones horàries (inclosos horaris d\'estiu) i actualitzarà la vostra base de dades. S\'inspeccionaran, per ordre, aquestes ubicacions: {$a} Aquest procediment generalment és molt segur i no pot perjudicar les instal·lacions normals. Desitgeu actualitzar ara les zones horàries?';
+$string['configintrotimezones'] = 'Aquesta pàgina cercarà informació nova sobre zones horàries (inclosos horaris d\'estiu) i actualitzarà la vostra base de dades. S\'inspeccionaran, per ordre, aquestes ubicacions: {$a} Aquest procediment generalment és molt segur i no pot perjudicar les instal·lacions normals. Voleu actualitzar ara les zones horàries?';
 $string['importtimezones'] = 'Actualitza la llista completa de zones horàries';
 $string['importtimezonescount'] = '{$a->count} entrades importades des de {$a->source}';
 $string['importtimezonesfailed'] = 'Males notícies: no s\'ha trobat cap font';

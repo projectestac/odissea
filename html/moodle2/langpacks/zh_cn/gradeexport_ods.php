@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = '发布 ODS 导出成绩';
 $string['ods:view'] = '使用 OpenDocument 导出成绩';
 $string['pluginname'] = 'OpenDocument 电子表格';
+$string['timeexported'] = '上次下载';

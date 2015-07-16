@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcontact'] = 'Afegeix contacte';
 $string['addsomecontacts'] = 'Per a enviar un missatge a algú, o per a afegir una drecera a algú en aquesta pàgina, utilitzeu la <a href="{$a}">pestanya de cerca</a> que hi ha a dalt.';
-$string['addsomecontactsincoming'] = 'Aquests missatges són de gent que no és a la vostra llista de contactes. Per a afegir-los als vostres contactes, feu clic en la icona "Afegeix contacte" al costat de cada nom.';
+$string['addsomecontactsincoming'] = 'Aquests missatges són de gent que no és a la vostra llista de contactes. Per a afegir-los als vostres contactes, feu clic en la icona «Afegeix contacte» al costat de cada nom.';
 $string['ago'] = 'Fa {$a}';
 $string['ajax_gui'] = 'Sala de xat amb Ajax';
 $string['allmine'] = 'Tots els missatges escrits per mi o adreçats a mi';

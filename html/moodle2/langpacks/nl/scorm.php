@@ -80,8 +80,8 @@ $string['browserepository'] = 'Blader door de opslagruimte';
 $string['calculatedweight'] = 'Berekende weging';
 $string['cannotfindsco'] = 'Kon SCO niet vinden';
 $string['chooseapacket'] = 'Kies of update een SCORM/AICC-pakket';
-$string['collapsetocwinsize'] = 'Inhoudstafel dichtklappen wanneer het venster kleiner wordt dan';
-$string['collapsetocwinsizedesc'] = 'Deze instelling laat je de venstergrootte kiezen tot wanneer de inhoudstafel automatisch ingeklapt moet blijven.';
+$string['collapsetocwinsize'] = 'Inhoudsopgave dichtklappen wanneer het venster kleiner wordt dan';
+$string['collapsetocwinsizedesc'] = 'Deze instelling laat je de venstergrootte kiezen tot wanneer de inhoudsopgave automatisch ingeklapt moet blijven.';
 $string['compatibilitysettings'] = 'Compatibiliteitsinstellingen';
 $string['completed'] = 'Volledig';
 $string['completionscorerequired'] = 'Vereiste minimumscore';
@@ -113,8 +113,8 @@ $string['displayattemptstatus'] = 'Toon pogingstatus';
 $string['displayattemptstatusdesc'] = 'Of een samenvatting van de pogingen van de gebruiker getoond moeten worden op het cursusoverzichtsblok op Mijn startpagina en/of de startpagina van het SCORM-pakket.';
 $string['displayattemptstatus_help'] = 'Hiermee wordt een samenvatting van de pogingen van de gebruiker getoond in het cursusoverzichtsblok in Mijn startpagina en/of de SCORM ingangspagina.';
 $string['displaycoursestructure'] = 'Toon cursusstructuur op startpagina';
-$string['displaycoursestructuredesc'] = 'Deze instelling regelt de standaardinstelling voor het tonen van de inhoudstafel op de startpagina van het SCORM-pakket.';
-$string['displaycoursestructure_help'] = 'Indien ingeschakeld zal de inhoudstafel getoond worden op de SCORM beschrijvingspagina';
+$string['displaycoursestructuredesc'] = 'Deze instelling regelt de standaardinstelling voor het tonen van de inhoudsopgave op de startpagina van het SCORM-pakket.';
+$string['displaycoursestructure_help'] = 'Indien ingeschakeld zal de inhoudsopgave getoond worden op de SCORM beschrijvingspagina';
 $string['displaydesc'] = 'Of SCORM-pakketten in een nieuw venster getoond moeten worden.';
 $string['displaysettings'] = 'Scherminstellingen';
 $string['dnduploadscorm'] = 'Voeg een SCORM-pakket toe';
@@ -187,7 +187,7 @@ $string['hidebrowse_help'] = '<p>Als deze optie op ja wordt gezet, dan zal de le
 $string['hideexit'] = 'Verberg de uitgang-link';
 $string['hidereview'] = 'Verberg de knop voor herzien';
 $string['hidetoc'] = 'Weergave cursusstructuur';
-$string['hidetocdesc'] = 'Deze instelling regelt de standaardinstelling voor het al dan niet tonen van de inhoudstafel in de SCORM-speler';
+$string['hidetocdesc'] = 'Deze instelling regelt hoede inhoudsopgave in de SCORM-speler getoond wordt.';
 $string['hidetoc_help'] = 'Deze instelling bepaalt hoe de inhoudstabel getoond wordt in de SCORM-speler.';
 $string['highestattempt'] = 'Beste poging';
 $string['identifier'] = 'Vraagidentificatie';
@@ -221,7 +221,7 @@ $string['mode'] = 'Modus';
 $string['modulename'] = 'SCORM-pakket';
 $string['modulename_help'] = 'Een SCORM-pakket is een verzameling bestanden die verpakt zijn volgens een afgesproken standaard voor leerobjecten. De SCORM-activiteit maakt het mogelijk om SCORM of AICC-pakketten te uploaden als zip-bestanden en aan een cursus toegevoegd te worden.
 
-De inhoud wordt meestal getoond op meerdere pagina\'s met navigatie tussen de pagina\'s. Er zijn verschillende opties om de inhoud in een pop-upvenster te tonen, met een inhoudstafel, met navigatieknoppen enz. SCORM-activiteiten bevatten dikwijls vragen, waarvan de resultaten opgenomen zullen worden in de cijferlijst.
+De inhoud wordt meestal getoond op meerdere pagina\'s met navigatie tussen de pagina\'s. Er zijn verschillende opties om de inhoud in een pop-upvenster te tonen, met een inhoudsopgave, met navigatieknoppen enz. SCORM-activiteiten bevatten dikwijls vragen, waarvan de resultaten opgenomen zullen worden in de cijferlijst.
 
 SCORM-activiteiten kunnen gebruikt worden
 
@@ -372,7 +372,7 @@ $string['syntax'] = 'Syntaxisfout';
 $string['tag_error'] = 'Onbekende tag ({$a->tag}) met deze inhoud: {$a->value}';
 $string['time'] = 'Tijd';
 $string['title'] = 'Titel';
-$string['toc'] = 'Inhoudstafel';
+$string['toc'] = 'Inhoudsopgave';
 $string['toolbar'] = 'Toon knoppenbalk';
 $string['too_many_attributes'] = 'Tag {$a->tag} heeft te veel attributen';
 $string['too_many_children'] = 'Tag {$a->tag} heeft teveel children';

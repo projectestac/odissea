@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
+$string['apikey'] = 'Clef API';
 $string['configplugin'] = 'Configuration YouTube';
+$string['information'] = 'Obtenir pour votre site une <a href="https://developers.google.com/youtube/v3/getting-started">clef API Google</a>.';
 $string['pluginname'] = 'Vidéos Youtube';
 $string['search'] = 'Recherche vidéos';
 $string['sortby'] = 'Trier par';

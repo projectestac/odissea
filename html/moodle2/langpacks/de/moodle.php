@@ -872,7 +872,7 @@ $string['groupadd'] = 'Neue Gruppe hinzufügen';
 $string['groupaddusers'] = 'Markierung zur Gruppe hinzufügen';
 $string['groupextendenrol'] = 'Verlängerte Einschreibung für alle';
 $string['groupfor'] = 'für Gruppe';
-$string['groupinfo'] = 'Info über die markierte Gruppe';
+$string['groupinfo'] = 'Info zur ausgewählten Gruppe';
 $string['groupinfoedit'] = 'Gruppeneinstellungen bearbeiten';
 $string['groupinfomembers'] = 'Info über die markierten Gruppenmitglieder';
 $string['groupinfopeople'] = 'Info über die markierten Teilnehmer/innen';
@@ -1162,6 +1162,7 @@ $string['moodlerelease'] = 'Moodle-Release';
 $string['moodleversion'] = 'Moodle-Version';
 $string['more'] = 'mehr';
 $string['morehelp'] = 'Weitere Hilfe';
+$string['moreinfo'] = 'Weitere Infos';
 $string['moreinformation'] = 'Weitere Informationen über diesen Fehler';
 $string['moreprofileinfoneeded'] = 'Bitte geben Sie uns einige Informationen zu Ihrer Person.';
 $string['mostrecently'] = 'neueste';
@@ -1283,9 +1284,9 @@ $string['nopotentialcreators'] = 'Keine möglichen Kursersteller/innen vorhanden
 $string['nopotentialstudents'] = 'Keine potenziellen Teilnehmer/innen vorhanden';
 $string['nopotentialteachers'] = 'Keine potenziellen Trainer/innen vorhanden';
 $string['norecentactivity'] = 'Keine aktuellen Aktivitäten';
-$string['noreplybouncemessage'] = 'Sie haben an eine gesperrte E-Mail-Adresse geantwortet. Wenn Sie versucht haben, auf einen Forenbeitrag zu antworten, benutzen Sie bitte direkt das Forum {$a} für Ihre Antwort.
+$string['noreplybouncemessage'] = 'Sie haben an eine Nicht-Antworten-Adresse geantwortet. Wenn Sie versucht haben, auf einen Forumsbeitrag zu antworten, benutzen Sie \'{$a}\' im Forum für Ihre Antwort.
 
-Das war der Inhalt Ihrer Nachicht:';
+Inhalt der Nachricht:';
 $string['noreplybouncesubject'] = '{$a} - E-Mail nicht zustellbar';
 $string['noreplyname'] = 'Antworten Sie nicht auf diese E-Mail.';
 $string['noresetrecord'] = 'Diese Anforderung passt zu keinem vorhandenen Nutzerkonto. Versuchen Sie das Zurücksetzen des Kennworts erneut!';

@@ -45,9 +45,9 @@ $string['aggregatemin'] = 'Qualificació més baixa';
 $string['aggregatemode'] = 'Moda de les qualificacions';
 $string['aggregatenotonlygraded'] = 'Inclou les notes buides';
 $string['aggregateonlygraded'] = 'Exclou les qualificacions buides';
-$string['aggregateonlygraded_help'] = 'Una  qualificació buida és una casella en blanc al butlletí de qualificacions. Pot tenir l\'origen en una tramesa que encara no s\'hagi puntuat, o en un qüestionari que encara no s\'hagi respost, etc.
+$string['aggregateonlygraded_help'] = 'Una  qualificació buida és una casella en blanc al butlletí de qualificacions. Pot tenir l\'origen en una tramesa que encara no s\'ha puntuat, o en un qüestionari que encara no s\'ha respost, etc.
 
-Aquest paràmetre determina si les qualificacions buides s\'inclouen o no en l\'agregació, o bé es comptabilitzen com la qualificació mínima, com ara 0 per una tramesa puntuada entre 0 i 100.';
+Aquest paràmetre determina si les qualificacions buides s\'inclouen o no en l\'agregació, o bé si es comptabilitzen com la qualificació mínima, com ara 0 per a una tramesa puntuada entre 0 i 100.';
 $string['aggregateoutcomes'] = 'Inclou les competències en l\'agregació';
 $string['aggregateoutcomes_help'] = '<p> Incloure les competències en l\'agregació pot no conduir a la qualificació final desitjada, de manera que teniu l\'opció d\'incloure-les o deixar-les fora. </p>';
 $string['aggregatesonly'] = 'Només agregats';
@@ -68,14 +68,14 @@ $string['aggregationcoefextraweight'] = 'Pes del crèdit extra';
 $string['aggregationcoefextraweight_help'] = 'Si el pes del crèdit extra s\'estableix a un valor més gran de zero, la qualificació actua com un crèdit extra durant l\'agregació. El nombre és el factor pel qual es multiplica la qualificació abans de sumar-la al total per calcular el promig.';
 $string['aggregationcoefweight'] = 'Pes de l\'element';
 $string['aggregationcoefweight_help'] = 'El pes de l\'element s\'utilitza en l\'agregació de la categoria per tal d\'influenciar la importància de l\'element en comparació als altres elements de la mateixa categoria.';
-$string['aggregation_help'] = 'L\'agregació determina com es combinen les diferents qualificacions d\'una categoria, com ara
+$string['aggregation_help'] = 'L\'agregació determina com es combinen les diferents qualificacions d\'una categoria, com ara:
 
-* Mitjana de les qualificacions - La suma de totes les qualificacions dividida pel nombre total de qualificacions.
-* Mediana de les qualificacions - La qualificació del mig quan aquestes s\'ordenen per valor.
+* Mitjana de les qualificacions. La suma de totes les qualificacions dividida pel nombre total de qualificacions.
+* Mediana de les qualificacions. La qualificació del mig quan aquestes s\'ordenen per valor.
 * Qualificació més baixa.
 * Qualificació més alta.
-* Moda de les qualificacions - La qualificació que es dóna amb més freqüència.
-* Natural - La suma ponderada de totes les qualificacions.';
+* Moda de les qualificacions. La qualificació que es dóna amb més freqüència.
+* Natural. La suma ponderada de totes les qualificacions.';
 $string['aggregationhintdropped'] = '( Descartat )';
 $string['aggregationhintexcluded'] = '( Exclós )';
 $string['aggregationhintextra'] = '( Crèdit extra )';
@@ -84,7 +84,7 @@ $string['aggregationofa'] = 'Agregació de {$a}';
 $string['aggregationposition'] = 'Posició de l\'agregació';
 $string['aggregationposition_help'] = 'Aquest paràmetre determina si les columnes dels totals de la categoria i curs es mostren al principi o al final en els informes de qualificacions.';
 $string['aggregationsvisible'] = 'Tipus d\'agregació disponibles';
-$string['aggregationsvisiblehelp'] = 'Seleccioneu tpts els tipus d\'agregació que han d\'estar disponibles. Amb la tecla de control (ctrl) podreu seleccioneu múltiples elements.';
+$string['aggregationsvisiblehelp'] = 'Seleccioneu tots els tipus d\'agregació que han d\'estar disponibles. Si manteniu pitjada la tecla de control (Ctrl) podreu seleccionar múltiples elements.';
 $string['allgrades'] = 'Totes les qualificacions per categoria';
 $string['allstudents'] = 'Tot l\'estudiantat';
 $string['allusers'] = 'Tots els usuaris';
@@ -94,7 +94,7 @@ $string['average'] = 'Mitjana';
 $string['averagesdecimalpoints'] = 'Decimals en les mitjanes de columnes';
 $string['averagesdecimalpoints_help'] = 'Aquest paràmetre especifica el nombre de decimals que es visualitzaran en la mitjana de cada columna. Si seleccioneu «Hereta» s\'utilitzarà el que estigui establert a la categoria o element de qualificació.';
 $string['averagesdisplaytype'] = 'Tipus de visualització de les mitjanes de columnes';
-$string['averagesdisplaytype_help'] = 'Aquest paràmetre si el promig (mitjana) es mostra com a valor real, percentatge o lletra. Si seleccioneu «Hereta» s\'utilitzarà el que estigui establert a la categoria o element de qualificació.';
+$string['averagesdisplaytype_help'] = 'Aquest paràmetre determina si la mitjana es mostra com a valor real, percentatge o lletra. Si seleccioneu «Hereta» s\'utilitzarà el que estigui establert a la categoria o element de qualificació.';
 $string['backupwithoutgradebook'] = 'La còpia de seguretat no conté la configuració del butlletí de qualificacions';
 $string['badgrade'] = 'La qualificació proporcionada no és vàlida';
 $string['badlyformattedscale'] = 'Escriviu una llista de valors separats per comes (calen dos valors com a mínim).';
@@ -159,7 +159,7 @@ $string['dropdown'] = 'Menú desplegable';
 $string['droplow'] = 'Omet les qualificacions baixes';
 $string['droplowestvalue'] = 'Configura l\'omissió de les qualificacions més baixes';
 $string['droplowestvalues'] = 'Omet els {$a} valors més baixos';
-$string['droplow_help'] = 'Aquest paràmetre fa que un nombre especificat de es qualificacions més baixes no es tinguin en compte en calcular l\'agregació.';
+$string['droplow_help'] = 'Aquest paràmetre fa que un nombre especificat de les qualificacions més baixes no es tinguin en compte en calcular l\'agregació.';
 $string['dropped'] = 'Omesos';
 $string['dropxlowest'] = 'Omet els X més baixos';
 $string['dropxlowestwarning'] = 'Nota: si ometeu els x més baixos la qualificació assumeix que tots els elements de la categoria tenen el mateix valor en punts. Si els valors en punts difereixen, els resultats poden ser impredictibles.';
@@ -176,7 +176,7 @@ $string['editscale'] = 'Edita l\'escala';
 $string['edittree'] = 'Configuració';
 $string['editverbose'] = 'Edita {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['enableajax'] = 'Habilita l\'AJAX';
-$string['enableajax_help'] = 'Afegeix una capa de funcions AJAX en l\'informe de qualificacions, cosa que simplifica i agilita les operacions més habituals. Requereix que el Javascript estigui activat en el navegador de l\'usuari.';
+$string['enableajax_help'] = 'Afegeix una capa de funcions AJAX en l\'informe de qualificacions, cosa que simplifica i agilita les operacions més habituals. Requereix que el JavaScript estigui activat en el navegador de l\'usuari.';
 $string['enableoutcomes'] = 'Habilita les competències';
 $string['enableoutcomes_help'] = 'El suport per a competències (objectius, estàndards, criteris...) significa que es poden avaluar coses mitjançant una o més escales vinculades a declaracions de competències. Habilitar les competències fa possible utilitzar aquest tipus de qualificació a tot el lloc.';
 $string['encoding'] = 'Codificació';
@@ -189,7 +189,7 @@ $string['errornocategorisedid'] = 'No s\'ha pogut obtenir un ID no categoritzat'
 $string['errornocourse'] = 'No s\'ha pogut obtenir la informació del curs';
 $string['errorreprintheadersnonnumeric'] = 'S\'ha rebut un valor no-numèric per a les capçaleres reimpreses';
 $string['errorsavegrade'] = 'No es pot desar la qualificació.';
-$string['errorsettinggrade'] = 'S\'ha produït un error en desar la qualificació  "{$a->itemname}" per a l\'usuari {$a->userid}';
+$string['errorsettinggrade'] = 'S\'ha produït un error en desar la qualificació  «{$a->itemname}» per a l\'usuari {$a->userid}';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'S\'ha produït un error en actualitzar l\'opció "Agrega només les qualificacions no buides" de la categoria de qualificació ID {$a->id}';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'S\'ha produït un error en actualitzar l\'opció "Inclou les competències en l\'agregació" de la categoria de qualificació ID {$a->id}';
 $string['errorupdatinggradecategoryaggregation'] = 'S\'ha produït un error en actualitzar el tipus d\'agregació de la categoria de qualificació ID {$a->id}';
@@ -251,9 +251,9 @@ $string['gradedisplay'] = 'Visualització de les qualificacions';
 $string['gradedisplaytype'] = 'Tipus de visualització de les qualificacions';
 $string['gradedisplaytype_help'] = 'Aquest paràmetre determina com es visualitzen les qualificacions en el qualificador i en els informes d\'usuari.
 
-* Real - Valor numèric real
+* Real. Valor numèric real
 * Percentatge
-* Lletra - S\'utilitzen lletres o paraules per representar un interval de qualificacions';
+* Lletra. S\'utilitzen lletres o paraules per representar un interval de qualificacions';
 $string['gradedon'] = 'Qualificat: {$a}';
 $string['gradeexport'] = 'Exporta qualificacions';
 $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
@@ -308,7 +308,7 @@ $string['gradepointmax_validateerror'] = 'Aquest paràmetre cal que sigui un ent
 $string['gradepreferences'] = 'Preferències de qualificació';
 $string['gradepreferenceshelp'] = 'Ajuda sobre les preferències de qualificació';
 $string['gradepublishing'] = 'Habilita la publicació';
-$string['gradepublishing_help'] = 'Habilita la publicació per a exportacions i importacions. Es podrà accedir a les qualificacions exportades mitjançant un URL, sense necessitat d\'entrar al Moodle. D\'una manera semblant, també es podran importar qualificacions mitjançant un URL, (cosa que vol dir que un lloc Moodle pot importar qualificacions publicades per un altre lloc). Per defecte, només els administradors poden utilitzar aquesta característica. Formeu els vostres usuaris abans d\'afegir aquesta capacitat a altres rols.';
+$string['gradepublishing_help'] = 'Habilita la publicació per a exportacions i importacions. Es podrà accedir a les qualificacions exportades mitjançant un URL, sense necessitat de connectar-se a Moodle. D\'una manera semblant, també es podran importar qualificacions mitjançant un URL (cosa que vol dir que un lloc Moodle pot importar qualificacions publicades per un altre lloc). Per defecte, només els administradors poden utilitzar aquesta característica. Formeu els vostres usuaris abans d\'afegir aquesta capacitat a altres rols (els perills de compartir marcadors i acceleradors de descàrrega, les restriccions d\'adreces IP, etc.).';
 $string['gradepublishinglink'] = 'Descàrrega: {$a}';
 $string['gradereport'] = 'Informe de qualificacions';
 $string['graderreport'] = 'Informe del qualificador';
@@ -332,7 +332,7 @@ $string['gradeweighthelp'] = 'Ajuda sobre la ponderació';
 $string['groupavg'] = 'Mitjana del grup';
 $string['hidden'] = 'Ocult';
 $string['hiddenasdate'] = 'Mostra la data de tramesa en les qualificacions ocultes';
-$string['hiddenasdate_help'] = 'Si l\'usuari no pot veure qualificacions ocultes, mostra la data de tramesa en lloc d\'un guió \'-\'.';
+$string['hiddenasdate_help'] = 'Si l\'usuari no pot veure qualificacions ocultes, mostra la data de tramesa en lloc d\'un guió «-».';
 $string['hidden_help'] = 'Si s\'activa, les qualificacions estan ocultes als estudiants. Si es vol es pot establir un \'Oculta fins a\' una data determinada per no publicar  les qualificacions fins que s\'hagi completat la correcció.';
 $string['hiddenuntil'] = 'Oculta fins';
 $string['hiddenuntildate'] = 'Oculta fins: {$a}';
@@ -350,9 +350,9 @@ $string['hidenooutcomes'] = 'Mostra les competències';
 $string['hidequickfeedback'] = 'Oculta la retroacció ràpida';
 $string['hideranges'] = 'Oculta les gammes';
 $string['hidetotalifhiddenitems'] = 'Oculta els totals si contenen elements ocults';
-$string['hidetotalifhiddenitems_help'] = 'Aquesta opció especifica si es mostren als estudiants els totals que contenen elements ocults de qualificació o bé són substituïts per un guió (-). Si es mostren, el total pot ser calculat excloent o bé incloent els elements ocults.
+$string['hidetotalifhiddenitems_help'] = 'Aquesta opció especifica si es mostren als estudiants els totals que contenen elements ocults de qualificació o bé són substituïts per un guió (-). Si es mostren, el total pot ser calculat excloent els elements ocults o bé incloent-los.
 
-Si s\'exclouen els elements ocults, el total serà diferent del total que veu el professorat a l\'informe de les qualificacions, ja que el professorat sempre veu els totals calculats a partir de tots els elements, siguin ocults o siguin visibles. Si s\'inclouen els elements ocults, els estudiants poden arribar a calcular les seves qualificacions als elements ocults.';
+Si s\'exclouen els elements ocults, el total serà diferent del total que veu el professor a l\'informe de les qualificacions, ja que el professor sempre veu els totals calculats a partir de tots els elements, siguin ocults o siguin visibles. Si s\'inclouen els elements ocults, els estudiants poden arribar a calcular les seves qualificacions als elements ocults.';
 $string['hidetotalshowexhiddenitems'] = 'Mostra els totals excloent els elements ocults';
 $string['hidetotalshowinchiddenitems'] = 'Mostra els totals incloent els elements ocults';
 $string['hideverbose'] = 'Oculta {$a->category} {$a->itemmodule} {$a->itemname}';
@@ -400,7 +400,7 @@ $string['items'] = 'Elements';
 $string['itemsedit'] = 'Edita element de qualificació';
 $string['keephigh'] = 'Conserva les més altes';
 $string['keephighestvalues'] = 'Conserva els {$a} valors més alts';
-$string['keephigh_help'] = 'Si activeu aquesta opció, només es conservaran les n qualificacions més altes (n és el nombre que definiu aquí).';
+$string['keephigh_help'] = 'Si activeu aquesta opció, només es conservaran les <em>n</em> qualificacions més altes (<em>n</em> és el nombre que definiu aquí).';
 $string['keymanager'] = 'Gestor de claus';
 $string['lessthanmin'] = 'La qualificació de l\'element {$a->itemname} per a l\'usuari {$a->username} és menor que el mínim permès';
 $string['letter'] = 'Lletra';
@@ -433,7 +433,7 @@ $string['meanselection_help'] = 'Incloure o no les cel·les sense qualificació 
 $string['median'] = 'Punt mitjà';
 $string['min'] = 'La més baixa';
 $string['minimum_show'] = 'Mostra la qualificació mínima';
-$string['minimum_show_help'] = 'La qualificació mínima s\'utilitza en els càlculs de pesos i qualificacions. Si no es mostra, la qualificació mínima s\'establirà a zero i no es podrà editar.';
+$string['minimum_show_help'] = 'La qualificació mínima s\'utilitza en els càlculs de ponderacions i qualificacions. Si no es mostra, la qualificació mínima s\'establirà a zero i no es podrà editar.';
 $string['missingscale'] = 'Heu de seleccionar una escala';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Qualificació';
@@ -515,7 +515,7 @@ $string['overridden'] = 'Rectificat';
 $string['overridden_help'] = '<p>Si aquest indicador està activat, el valor de la qualificació no es tornarà a ajustar automàticament en endavant. El butlletí de qualificacions sol activar internament aquest indicador, però també podeu commutar-lo manualment mitjançant el formulari.</p>';
 $string['overriddennotice'] = 'La vostra qualificació final en aquesta activitat s\'ha modificat manualment.';
 $string['overridecat'] = 'Permet que les qualificacions de les categories es puguin rectificar manualment';
-$string['overridecat_help'] = 'Inhabilitant aquest paràmetre impossibilita que els usuaris puguin rectificar les qualificacions de les categories.';
+$string['overridecat_help'] = 'Inhabilitar aquest paràmetre impossibilita que els usuaris puguin rectificar les qualificacions de les categories.';
 $string['overridesitedefaultgradedisplaytype'] = 'Rectifica les opcions per defecte del lloc';
 $string['overridesitedefaultgradedisplaytype_help'] = 'Si marqueu la casella, podreu establir lletres de qualificacions i fronteres per al curs, en lloc d\'usar els valors per defecte del lloc.';
 $string['overrideweightofa'] = 'Rectifica el pes de {$a}';
@@ -606,32 +606,32 @@ $string['showactivityicons_help'] = 'Si s\'habilita, les icones de les activitat
 $string['showallhidden'] = 'Mostra tots els elements ocults';
 $string['showallstudents'] = 'Mostra tots els estudiants';
 $string['showanalysisicon'] = 'Mostra la icona d\'anàlisi de qualificacions';
-$string['showanalysisicon_desc'] = 'Determina si per defecte es mostra la icona d\'anàlisi de qualificacions. Si el mòdul d\'activitat ho suporta, la icona d\'anàlisi de qualificacions enllaça amb una pàgina amb l\'explicació molt més detallada de les qualificacions i de com s\'han obtingut.';
+$string['showanalysisicon_desc'] = 'Determina si per defecte es mostra la icona d\'anàlisi de qualificacions. Si el mòdul d\'activitat ho admet, la icona d\'anàlisi de qualificacions enllaça amb una pàgina amb l\'explicació molt més detallada de les qualificacions i de com s\'han obtingut.';
 $string['showanalysisicon_help'] = 'Si el mòdul d\'activitat ho suporta, la icona d\'anàlisi de qualificacions enllaça amb una pàgina amb l\'explicació molt més detallada de les qualificacions i de com s\'han obtingut.';
 $string['showaverage'] = 'Mostra la mitjana';
-$string['showaverage_help'] = 'Voleu mostrar la columna mitjana? Els estudiants poden estimar les qualificacions d\'altres estudiants si la mitjana es calcula a partir d\'un petit nombre de qualificacions. Per motius de rendiment la mitjana és aproximada si depèn d\'algun element ocult.';
+$string['showaverage_help'] = 'Voleu mostrar la columna de la mitjana? Els estudiants poden estimar les qualificacions d\'altres estudiants si la mitjana es calcula a partir d\'un petit nombre de qualificacions. Per motius de rendiment, la mitjana és aproximada si depèn d\'algun element ocult.';
 $string['showaverages'] = 'Mostra les mitjanes de columnes';
 $string['showaverages_help'] = 'Mostrar o no la mitjana de cada columna.';
 $string['showcalculations'] = 'Mostra els càlculs';
 $string['showcalculations_help'] = 'Si s\'habilita, en mode d\'edició es mostrarà una icona de calculadora al costat de cada element i categoria de qualificació, i un senyal visual que indiqui que l\'element de qualificació està calculat.';
 $string['showcontributiontocoursetotal'] = 'Mostra la contribució al total del curs';
-$string['showcontributiontocoursetotal_help'] = 'Si es mostra o no una columna de percentatges indicant en quina proporció intervé cada element de qualificació al percentatge total de curs de l\'usuari (després d\'aplicar les ponderacions).';
+$string['showcontributiontocoursetotal_help'] = 'Determina si es mostra o no una columna de percentatges que indica en quina proporció intervé cada element de qualificació en el percentatge total de curs de l\'usuari (després d\'aplicar les ponderacions).';
 $string['showeyecons'] = 'Mostra les icones mostra/oculta';
 $string['showeyecons_help'] = 'Mostrar o no una icona de mostra/oculta al costat de cada qualificació (per controlar que sigui visible o no per a l\'usuari).';
 $string['showfeedback'] = 'Mostra la retroacció';
-$string['showfeedback_help'] = 'Voleu mostrar la columna retroacció?';
+$string['showfeedback_help'] = 'Voleu mostrar la columna de la retroacció?';
 $string['showgrade'] = 'Mostra les qualificacions';
-$string['showgrade_help'] = 'Voleu mostrar la columna qualificacions?';
+$string['showgrade_help'] = 'Voleu mostrar la columna de les qualificacions?';
 $string['showgroups'] = 'Mostra els grups';
 $string['showhiddenitems'] = 'Mostra els elements ocults';
 $string['showhiddenitems_help'] = 'Especifica si els elements de qualificació ocults s\'oculten completament o si els noms dels elements de qualificació ocults són visibles per als estudiants.
 
-* Mostra els ocults - Els noms dels elements de qualificació ocults es mostren, però les qualificacions resten ocultes.
-* Només els «oculta fins» - Els elements de qualificació amb una data «oculta fins» s\'oculten completament fins aquesta data. Després d\'aquesta data es mostrarà l\'element complet.
-* No mostris - Els elements de qualificació ocults s\'oculten completament.';
+* Mostra tots els elements ocults. Els noms dels elements de qualificació ocults es mostren, però les qualificacions resten ocultes.
+* Mostra només els elements «oculta fins». Els elements de qualificació amb una data «oculta fins» s\'oculten completament fins aquesta data. Després d\'aquesta data es mostrarà l\'element complet.
+* No mostris cap element ocult. Els elements de qualificació ocults s\'oculten completament.';
 $string['showhiddenuntilonly'] = 'Mostra només els elements «oculta fins»';
 $string['showlettergrade'] = 'Mostra les qualificacions en lletra';
-$string['showlettergrade_help'] = 'Voleu mostrar la columna qualificacions en lletra?';
+$string['showlettergrade_help'] = 'Voleu mostrar la columna de les qualificacions en lletra?';
 $string['showlocks'] = 'Mostra els blocatges';
 $string['showlocks_help'] = 'Mostrar o no una icona de bloca/desbloca al costat de cada qualificació.';
 $string['shownohidden'] = 'No mostris cap element ocult';
@@ -639,7 +639,7 @@ $string['shownooutcomes'] = 'Oculta les competències';
 $string['shownumberofgrades'] = 'Mostra el nombre de qualificacions en les mitjanes';
 $string['shownumberofgrades_help'] = 'Mostrar o no entre parèntesis, a continuació de cada mitjana, el nombre de qualificacions utilitzades per a calcular-la. P. ex. 45 (34).';
 $string['showonlyactiveenrol'] = 'Mostra sols les inscripcions actives';
-$string['showonlyactiveenrol_help'] = 'Aquest paràmetre determina, si sols els usuaris inscrits són visibles al butlletí de notes. Si s\'habilita, els usuaris suspesos no es mostraran al butlletí.';
+$string['showonlyactiveenrol_help'] = 'Aquest paràmetre determina si sols els usuaris inscrits són visibles al butlletí de notes. Si s\'habilita, els usuaris suspesos no es mostraran al butlletí.';
 $string['showpercentage'] = 'Mostra el percentatge';
 $string['showpercentage_help'] = 'Voleu mostrar el valor en percentatge de cada element de qualificació?';
 $string['showquickfeedback'] = 'Mostra la retroacció ràpida';
@@ -649,7 +649,7 @@ $string['showrange_help'] = 'Voleu mostrar la columna d\'intervals?';
 $string['showranges'] = 'Mostra les gammes';
 $string['showranges_help'] = 'Mostrar o no la gamma de qualificacions de cada columna en una fila addicional.';
 $string['showrank'] = 'Mostra la posició';
-$string['showrank_help'] = 'Voleu mostrar la posició de l\'estudiant en relació a la resta de la classe, per cada element de qualificació.';
+$string['showrank_help'] = 'Voleu mostrar la posició de l\'estudiant en relació amb la resta de la classe, per a cada element de qualificació?';
 $string['showuserimage'] = 'Mostra la imatge del perfil de l\'usuari';
 $string['showuserimage_help'] = 'Mostrar o no la imatge del perfil de l\'usuari, al costat del nom, en l\'informe del qualificador.';
 $string['showverbose'] = 'Mostra {$a->category} {$a->itemmodule} {$a->itemname}';
@@ -692,7 +692,7 @@ $string['uncategorised'] = 'Sense categoria';
 $string['unchangedgrade'] = 'Qualificació no modificada';
 $string['unenrolledusersinimport'] = 'Aquesta importació incloïa les qualificacions següents d\'usuaris a hores d\'ara no inscrits en aquest curs: {$a}';
 $string['unlimitedgrades'] = 'Qualficacions il·limitades';
-$string['unlimitedgrades_help'] = 'Per defecte les qualificacions estan limitades pels valors màxim i mínim dels element de qualificació. Si habiliteu aquesta opció eliminareu aquest límit, i podreu introduir  directament al butlletí de qualificacions qualificacions superiors al 100%. Es recomana que aquesta opció s\'activi en un horari de poca activitat perquè es tornaran a calcular totes les qualificacions, acció que pot provocar una sobrecàrrega del servidor.';
+$string['unlimitedgrades_help'] = 'Per defecte les qualificacions estan limitades pels valors màxim i mínim dels elements de qualificació. Si habiliteu aquesta opció eliminareu aquest límit, i podreu introduir  directament al butlletí de qualificacions qualificacions superiors al 100%. Es recomana que aquesta opció s\'activi en un horari de poca activitat, perquè es tornaran a calcular totes les qualificacions, acció que pot provocar una sobrecàrrega del servidor.';
 $string['unlock'] = 'Desbloca';
 $string['unlockverbose'] = 'Desbloca {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['unused'] = 'No utilitzat';

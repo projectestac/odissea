@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
+$string['apikey'] = 'APIキー';
 $string['configplugin'] = 'YouTubeリポジトリタイプ設定';
+$string['information'] = 'あなたのMoodleサイトのために<a href="https://developers.google.com/youtube/v3/getting-started">Google APIキー</a>を取得します。';
 $string['pluginname'] = 'Youtubeビデオ';
 $string['search'] = 'ビデオを検索する';
 $string['sortby'] = '並べ替え';

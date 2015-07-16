@@ -559,9 +559,9 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             'i/folder' => 'folder',
             'i/grades' => 'table',
             'i/group' => 'group',
-            'i/groupn' => 'group',
-            'i/groupv' => 'group',
-            'i/groups' => 'group',
+            //'i/groupn' => 'group', //Disabled to solve errors changing group working activities
+            //'i/groupv' => 'group', //Disabled to solve errors changing group working activities
+            //'i/groups' => 'group', //Disabled to solve errors changing group working activities
             'i/hide' => 'eye-slash',
             'i/import' => 'download',
             'i/export' => 'upload',
@@ -587,6 +587,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 			'i/twoway' => 'arrows-h',
 			'i/withsubcat' => 'indent',
 			'i/permissions' => 'key',
+            'i/rss' => 'rss-square',
 			't/add' => 'plus',
             'i/assignroles' => 'lock',
 			't/assignroles' => 'lock',

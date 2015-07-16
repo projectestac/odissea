@@ -41,3 +41,4 @@ $string['requires_complete_pass'] = 'Активный элемент <strong>{$a
 $string['requires_incomplete'] = 'Активный элемент <strong>{$a}</strong> является незавершенным';
 $string['requires_not_complete_fail'] = 'Активный элемент <strong>{$a}</strong> является незавершенным (не допускается)';
 $string['requires_not_complete_pass'] = 'Активный элемент <strong>{$a}</strong> является незавершенным (пропускается)';
+$string['title'] = 'Завершение элемента';

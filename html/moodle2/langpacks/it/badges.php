@@ -210,7 +210,7 @@ $string['enablebadges'] = 'Abilita badge';
 $string['error:backpackdatainvalid'] = 'I dati restituiti dal backpack non sono validi';
 $string['error:backpackemailnotfound'] = 'L\'email \'{$a}\' non è associata ad un backpack. E\' necessario <a href="http://backpack.openbadges.org">creare un backpack</a> per l\'account o autenticarsi con un altro indirizzo email.';
 $string['error:backpackloginfailed'] = 'Il collegamento con il backpack esterno non è stato possibile per il seguente motivo: {$a}';
-$string['error:backpacknotavailable'] = 'Il tuo sito non è accessibile da internet, i badge rilasciati non potranno essere verificati da servizi backpack esterni';
+$string['error:backpacknotavailable'] = 'Il tuo sito non è accessibile da Internet, i badge rilasciati non potranno essere verificati da servizi backpack esterni';
 $string['error:backpackproblem'] = 'Si sono verificati problemi di connessione con il service provider del backpack. Per favore riprova.';
 $string['error:badjson'] = 'Il tentativo di collegamento ha restituito dati non validi.';
 $string['error:cannotact'] = 'Non è possibile attivare i badge.';

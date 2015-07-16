@@ -33,6 +33,7 @@ $string['enabled'] = 'Gaituta';
 $string['mailsettings'] = 'Postaren ezarpenak';
 $string['messageinboundgeneralconfiguration'] = 'Ezarpen orokorra';
 $string['messageinboundhostpass'] = 'Pasahitza';
+$string['messageinboundhostssl'] = 'Erabili SSL';
 $string['messageinboundhosttype'] = 'Zerbitzari-mota';
 $string['messageinboundhostuser'] = 'Erabiltzaile-izena';
 $string['name'] = 'Izena';

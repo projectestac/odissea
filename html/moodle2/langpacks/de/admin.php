@@ -56,7 +56,7 @@ $string['allowframembedding_help'] = 'Diese Funktion ermöglicht das Einbetten d
 $string['allowguestmymoodle'] = '\'Meine Startseite\' für Gäste erlauben';
 $string['allowobjectembed'] = 'object/embed erlauben';
 $string['allowthemechangeonurl'] = 'Designwechsel über URL erlauben';
-$string['allowuserblockhiding'] = 'Blöckeverbergen erlauben';
+$string['allowuserblockhiding'] = 'Blöckeminimierung erlauben';
 $string['allowuserswitchrolestheycantassign'] = 'Rollenwechsel für Nutzer/innen erlauben, die kein Recht zur Rollenzuweisung besitzen';
 $string['allowuserthemes'] = 'Designwechsel für Nutzer/innen erlauben';
 $string['alternativefullnameformat'] = 'Vollständiger Name - Alternative';
@@ -85,7 +85,7 @@ $string['blockeditingmenu_desc'] = 'Wenn diese Option aktiviert ist, werden die 
 $string['blockinstances'] = 'Instanzen';
 $string['blockmultiple'] = 'Mehrfach';
 $string['blockprotect'] = 'Gegen Löschen schützen';
-$string['blockprotect_help'] = 'Wenn Sie bestimmte Blöcke sperren kann niemand Instanzen neu hinzufügen oder löschen. (Man kann sie natürlich wieder entsperren, wenn Instanzen bearbeitet werden müssen.)
+$string['blockprotect_help'] = 'Wenn Sie bestimmte Blöcke sperren, kann niemand Instanzen neu hinzufügen oder löschen. (Man kann sie natürlich wieder entsperren, wenn Instanzen bearbeitet werden müssen.)
 
 Dies soll dazu dienen, um Blocks wie die Navigation oder die Einstellungen zu schützen, die sehr schwer wiederherzustellen sind, wenn sie aus Versehen gelöscht wurden.';
 $string['blocksettings'] = 'Übersicht';
@@ -148,7 +148,7 @@ Dies ist die Liste gemäß ISO 3166-1.
 Über eine kommagetrennte Liste können Sie die Auswahlmöglichkeiten einschränken, z.B. \'GB,FR,ES\'.
 Falls Sie weitere, nicht standardmäßige Codes, ergänzen möchten, so müssen Sie diese Codes in der Datei countries.php in Ihrem Sprachpaket hinzufügen.';
 $string['configallowassign'] = 'Die linksseitig genannten Rolleninhaber dürfen alle rechts in den Spalten markierten Rollen an andere Nutzer/innen zuweisen';
-$string['configallowblockstodock'] = 'Wenn diese Option aktiviert ist und vom ausgewählten Design unterstützt wird, können die Nutzer/innen entscheiden, ob sie Blöcke in ein spezielles Dock verschieben.';
+$string['configallowblockstodock'] = 'Diese Option legt fest, ob Nutzer/innen die Blöcke in ein spezielles Dock ablegen können, wobei nicht alle Designs diese Möglichkeit unterstützen.';
 $string['configallowcategorythemes'] = 'Wenn Sie diese Option aktivieren, können Designs auf Kategorieebene gesetzt werden. Dies wirkt sich gleichzeitig auf alle Unterkategorien und Kurse aus, falls diese nicht wiederum eigene Designs verwenden. ACHTUNG: Kategorie-Designs können zu einer Reduzierung der Arbeitsgeschwindigkeit führen!!';
 $string['configallowcoursethemes'] = 'Mit der Aktivierung erlauben Sie die Auswahl kursspezifischer Designs. Ein Kursdesign hat Vorrang vor allen anderen Designfestlegungen (Website, Kursbereich, Nutzer, Session).';
 $string['configallowemailaddresses'] = 'Wenn Sie die Eingabe bestimmter E-Mail-Domains bei der Neueingabe verbindlich vorgeben möchten, tragen Sie hier bitte eine leerzeichengetrennte Liste der zulässigen Domains ein, z.B. <strong>unserefirma.de</strong>. Alle übrigen Domains werden zurückgewiesen. Um Subdomains zu erlauben, fügen Sie die Domain mit einem führenden Punkt \'.\' hinzu.';
@@ -158,7 +158,7 @@ $string['configallowoverride'] = 'Die linksseitig genannten Rolleninhaber dürfe
 $string['configallowoverride2'] = 'Wählen Sie, welche Rollen durch eine Rolle aus der linken Spalte verändert werden dürfen. <br />Beachten Sie dabei, dass diese Einstellungen ausschließlich für Nutzer/innen gelten, für die die Rechte moodle/role:override oder moodle/role:safeoverride gesetzt sind.';
 $string['configallowswitch'] = 'Legen Sie fest, in welche anderen Rollen ein Nutzer von der aktuellen Rollen aus wechseln kann. Zusätzlich zu dieser Einstellung ist die Berechtigung moodle/role:switchroles für die aktuelle Rolle erforderlich. <br />Anmerkung: Der Wechsel in eine Rolle kann nur erfolgen, wenn diese die Berechtigung moodle/course:view besitzen und nicht die Berechtigung moodle/site:doanything. Einige Spalten sind daher u.U. deaktiviert.';
 $string['configallowthemechangeonurl'] = 'Wenn diese Option aktiv ist, kann das Design jeder Seite über den URL-Zusatz \'theme={themename}\' geändert werden, z.B. als  moodledomain.de/?theme=afterburner oder als moodledomain.de/course/view.php?id=2&theme=afterburner';
-$string['configallowuserblockhiding'] = 'Möchten Sie das Ein-/Ausblenden von Blöcken zulassen? Diese Option verwendet Javascript und Cookies zur Statusspeicherung. Jede Person beeinflusst ausschließlich ihre eigene Nutzeransicht.';
+$string['configallowuserblockhiding'] = 'Möchten Sie das Minimieren von Blöcken zulassen? Die Blöcke werden dabei bis auf die Kopfzeile reduziert. Jede Person beeinflusst ausschließlich ihre eigene Nutzeransicht.';
 $string['configallowuserswitchrolestheycantassign'] = 'Standardmäßig besteht für das Recht zum Rollenwechsel die Notwendigkeit, dass jemand das Recht moodle/role:assign besitzt. Falls diese Einstellung aktiviert ist, entfällt diese Notwendigkeit. <br />Die verfügbaren Rollen, die im Dropdown-Menü "Rolle wechseln..." angezeigt werden, sind nur durch die Einstellungen in der Tabelle "Rollenzuweisungen erlauben" beschränkt. Es wird unbedingt empfohlen, dass diese Tabelle niemandem erlaubt, zu höheren Rollen mit mehr Rechten zu wechseln als ihm ursprünglich zugewiesen wurden.';
 $string['configallowuserthemes'] = 'Die Einstellung erlaubt allen Nutzer/innen, ein eigenes Design auszuwählen. Damit wird das Design der Website überschrieben, aber keine kursspezifische Design-Vorgabe.';
 $string['configallusersaresitestudents'] = 'Mit dieser Option legen Sie den Zugriff zu den Lernaktivitäten auf der Startseite fest. Wenn Sie \'Ja\' auswählen, können alle eingetragenen Nutzer/innen die Lernaktivitäten auf der Startseite durchführen. Wenn Sie \'Nein\' auswählen, können nur diejenigen, die derzeit in mindestens einem Kurs eingetragen sind, die Lernaktivitäten auf der Startseite ausführen. Nur Administrator/innen und speziell zugelassene Trainer/innen dürfen die Aktivitäten auf der Startseite einrichten und bearbeiten.';
@@ -307,7 +307,7 @@ $string['configmymoodleredirect'] = 'Die Einstellung führt Personen (außer Adm
 $string['configmypagelocked'] = 'Diese Option schützt die standardmäßig gezeigte Seite vor Änderungen durch Nicht-Admins';
 $string['confignavcourselimit'] = 'Die Zahl legt die Anzahl der maximal in der Navigation angezeigten Kurse fest, falls Nutzer/innen nicht eingeloggt oder noch in keinem Kurs eingetragen sind ';
 $string['confignavshowallcourses'] = 'Wenn diese Option aktiviert ist, sehen Nutzer/innen Kurse, in denen sie eingeschrieben sind, sowohl unter \'Meine Kurse\' wie auch in der Kursstruktur. Wenn die Funktion deaktiviert ist, sehen sie nur den Link \'Meine Kurse\' in der Navigation. Die Anzahl der angezeigten Kurse wird durch die Einstellung \'Kursbegrenzung (navcourselimit)\' beschränkt solange der Nutzer nicht eingeloggt oder nicht in Kurse eingeschrieben ist.';
-$string['confignavshowcategories'] = 'Kursbereiche in Navigationsleiste und Navigationsblöcken anzeigen.';
+$string['confignavshowcategories'] = 'Kursbereiche in Navigationsleiste und Navigationsblöcken anzeigen. Diese Einstellung wirkt sich nicht auf die Anzeige der eingeschriebenen Kurse im Bereich \'Meine Kurse\' aus, wo die Kurse immer ohne Kursbereiche gelistet werden.';
 $string['confignotifyloginfailures'] = 'Login-Fehlerbenachrichtigungen können an Nutzer versandt werden. Dazu muss ein interner Logstore (z.B. Standard-Logstore) aktiviert werden.';
 $string['confignotifyloginthreshold'] = 'Nach wie vielen erfolglosen Anmeldeversuchen hintereinander über ein Nutzerkonto oder über eine IP-Adresse soll eine E-Mail-Mitteilung gesendet werden?';
 $string['confignotloggedinroleid'] = 'Nicht auf der Website eingeloggte Nutzer/innen werden behandelt, als ob sie diese Rolle hätten. Die Rolle \'Gast\' ist in der Regel brauchbar. Sie können aber auch neue Rollen erstellen, die mehr oder weniger Einschränkungen vornehmen. Viele Aktivitäten, z.B. Beiträge schreiben oder Tests durchführen, erfordern aber immer eine richtige Anmeldung.';
@@ -1107,7 +1107,7 @@ $string['updateautodeploy'] = 'Installation von Aktualisierungen erlauben';
 $string['updateautodeploy_desc'] = 'Wenn diese Option aktiviert ist, können Sie verfügbare Aktualisierungen direkt über die Moodle-Administration herunterladen und installieren. Beachten Sie, dass der Webserver-Prozess schreibberechtigt auf das Moodle-Verzeichnis zugreifen muss, was wegen des Sicherheitsrisikos untersagt sein könnte.';
 $string['updateavailable'] = 'Eine neuere Moodle-Version ist verfügbar!';
 $string['updateavailabledetailslink'] = 'Weitere Informationen: {$a->url}';
-$string['updateavailableforplugin'] = 'Zu Ihren Plugins sind teilweise neuere Versionen verfügbar!';
+$string['updateavailableforplugin'] = 'Bei Ihren Plugins sind neuere Versionen verfügbar!';
 $string['updateavailableinstall'] = 'Aktualisierung installieren';
 $string['updateavailable_moreinfo'] = 'Weitere Informationen';
 $string['updateavailablenot'] = 'Moodle ist aktuell';

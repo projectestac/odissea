@@ -50,8 +50,6 @@ $string['filetype_help'] = 'Ezarpen honek zehazten du nola txertatuko den ikasta
 * Igotako JClic fitxategia - Fitxategi-hautatzailearen bitartez ".jclic.zip" fitxategi baliagarria aukera daiteke
 * Kanpoko URLa - JClic pakete baten URLa zehazteko aukera ematen du. OHARRA: URL-ak https(s) edo www hasiera izan behar du eta ".jclic.zip" fitxategi baliagarria izan behar du barnean.';
 $string['filetypelocal'] = 'Igotako JClic fitxategia';
-$string['header_jclic'] = 'JClic-en ezarpenak';
-$string['header_score'] = 'Ebaluazio-ezarpenak';
 $string['height'] = 'Altuera';
 $string['invalidjclicfile'] = 'Balio ez duen JClic fitxategia ezarri da. Fitxategiak ".jclic.zip" luzapena izan behar du.';
 $string['invalidurl'] = 'Balio ez duen URLa ezarri da. URLak http(s) hasiera izan behar du eta ".jclic.zip" fitxategi baliagarri bat izan behar du.';

@@ -40,6 +40,7 @@ $string['choices'] = 'Beschikbare keuzes';
 $string['clozeaid'] = 'Geef ontbrekend woord';
 $string['correctansweris'] = 'Het juiste antwoord is: {$a}';
 $string['correctfeedback'] = 'Voor elk juist antwoord';
+$string['deletedchoice'] = 'Deze keuze is verwijderd nadat de poging was gestart.';
 $string['errfractionsaddwrong'] = 'De positieve cijfers die je voor deze antwoorden gekozen hebt, zijn samen geen 100%<br /> Het is {$a}%';
 $string['errfractionsnomax'] = 'Één van de antwoorden zou 100% moeten zijn, zodat het mogelijk is<br /> het maximum te halen voor deze vraag.';
 $string['errgradesetanswerblank'] = 'Cijfer ingesteld, maar het antwoord is leeg';

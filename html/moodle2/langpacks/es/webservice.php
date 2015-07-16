@@ -129,6 +129,7 @@ $string['missingusername'] = 'Falta nombre de usuario';
 $string['missingversionfile'] = 'Error de programación: falta el archivo version.php para el componente {$a}';
 $string['mobilewsdisabled'] = 'Deshabilitado';
 $string['mobilewsenabled'] = 'Habilitado';
+$string['nameexists'] = 'Este nombre ya está en uso por otro servicio';
 $string['nocapabilitytouseparameter'] = 'El usuario no tiene la capacidad necesaria para utilizar el parámetro {$a}';
 $string['nofunctions'] = 'Este servicio no tiene funciones.';
 $string['norequiredcapability'] = 'No se requiere permiso';

@@ -32,11 +32,11 @@ $string['accept_grades_admin'] = 'Accepter les notes de l\'outil';
 $string['accept_grades_admin_help'] = 'Indiquer si le fournisseur de l\'outil peut ajouter, mettre à jour, lire et effacer les notes associées à des instances de ce type d\'outil.
 
 Certains fournisseurs d\'outil supportent le transfert des notes vers Moodle, sur la base d\'actions effectuées dans l\'outil, créant ainsi une expérience utilisateur mieux intégrée.';
-$string['accept_grades_help'] = 'Indiquer si le fournisseur de l\'outil peut ajouter, mettre à jour, lire et effacer les notes associées à cette instance  de l\'outil externe
+$string['accept_grades_help'] = 'Indique si le fournisseur de l\'outil peut ajouter, mettre à jour, lire et effacer les notes associées à cette instance de l\'outil externe
 
 Certains fournisseurs d\'outil supportent le transfert des notes vers Moodle, sur la base d\'actions effectuées dans l\'outil, créant ainsi une expérience utilisateur mieux intégrée.
 
-Ce réglage peut être surchargé par la configuration de l\'outil.';
+Ce réglage peut être court-circuité dans la configuration de l\'outil.';
 $string['action'] = 'Action';
 $string['active'] = 'Actif';
 $string['activity'] = 'Activité';
@@ -321,6 +321,7 @@ $string['share_email_admin'] = 'Partager le courriel de l\'utilisateur avec l\'o
 $string['share_email_admin_help'] = 'Spécifie si l\'adresse de courriel de l\'utilisateur qui lance l\'outil sera partagée avec le fournisseur de l\'outil.
 Ce fournisseur pourrait avoir besoin de cette adresse afin de distinguer des utilisateurs dont le nom est le même dans l\'interface graphique, ou pour leur envoyer des messages en fonction des actions effectuées dans l\'outil.';
 $string['share_email_help'] = 'Spécifie si l\'adresse de courriel de l\'utilisateur qui lance l\'outil sera partagée avec le fournisseur de l\'outil.
+
 Ce fournisseur pourrait avoir besoin de cette adresse afin de distinguer des utilisateurs dont le nom est le même dans l\'interface graphique, ou pour leur envoyer des messages en fonction des actions effectuées dans l\'outil.
 
 Ce réglage peut être court-circuité dans la configuration de l\'outil.';
@@ -329,13 +330,14 @@ $string['share_name_admin'] = 'Partager le nom de l\'utilisateur avec l\'outil';
 $string['share_name_admin_help'] = 'Spécifie si le nom complet de l\'utilisateur qui lance l\'outil sera partagée avec le fournisseur de l\'outil.
 Ce fournisseur pourrait avoir besoin de ce nom pour afficher des informations pertinentes.';
 $string['share_name_help'] = 'Spécifie si le nom complet de l\'utilisateur qui lance l\'outil sera partagée avec le fournisseur de l\'outil.
+
 Ce fournisseur pourrait avoir besoin de ce nom pour afficher des informations pertinentes.
 
 Ce réglage peut être court-circuité dans la configuration de l\'outil.';
 $string['share_roster'] = 'Permettre à l\'outil d\'accéder à la liste des participants de ce cours';
 $string['share_roster_admin'] = 'L\'outil peut accéder à la liste des participants du cours';
 $string['share_roster_admin_help'] = 'Indiquez si cet outil peut accéder à la liste des utilisateurs inscrits aux cours à partir desquels ce type d\'outil est lancé.';
-$string['share_roster_help'] = 'Indiquez si cet outil peut accéder à la liste des utilisateurs inscrits à ce cours.
+$string['share_roster_help'] = 'Spécifie si cet outil peut accéder à la liste des utilisateurs inscrits à ce cours.
 
 Ce réglage peut être court-circuité dans la configuration de l\'outil.';
 $string['show_in_course'] = 'Afficher le type d\'outil lors de la création des instances';

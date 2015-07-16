@@ -30,6 +30,7 @@ $string['allevents'] = 'Все события';
 $string['allmodules'] = 'Все модули';
 $string['area'] = 'Область';
 $string['areatomonitor'] = 'Область для отслеживания';
+$string['cachedef_eventsubscriptions'] = 'Здесь хранится список подписок на события для отдельных курсов';
 $string['contactadmin'] = 'Обратитесь к администратору, чтобы включить его.';
 $string['core'] = 'Ядро';
 $string['currentsubscriptions'] = 'Ваши текущие подписки';

@@ -479,7 +479,7 @@ $string['other'] = 'Andere';
 $string['outof'] = 'Van {$a}';
 $string['overview'] = 'Overzicht';
 $string['overview_help'] = 'Een les is opgebouwd uit een aantal pagina\'s en optioneel een aantal inhoudspagina\'s. Een pagina bevat een zekere inhoud en eindigt gewoonlijk met een vraag.
-Aan elk antwoord op de vraag is een sprong verbonden. De sprong kan relatief zijn, zoals deze pagina of volgende pagina, of absoluut verwijzen naar om het even welke pagina in de les. Een inhoudspagina is een pagina die een reeks links naar andere pagina\'s in de les bevat, zoals bijvoorbeeld een inhoudstafel.';
+Aan elk antwoord op de vraag is een sprong verbonden. De sprong kan relatief zijn, zoals deze pagina of volgende pagina, of absoluut verwijzen naar om het even welke pagina in de les. Een inhoudspagina is een pagina die een reeks links naar andere pagina\'s in de les bevat, zoals bijvoorbeeld een inhoudsopgave.';
 $string['page'] = 'Pagina: {$a}';
 $string['pageanswers'] = 'Pagineer antwoorden';
 $string['pagecontents'] = 'Inhoud van de pagina';

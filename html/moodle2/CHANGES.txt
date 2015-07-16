@@ -3,6 +3,18 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at http://projectes.lafarga.cat/projects/odissea/
 
+Changes 15.07.20
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 2.8.7
+- Avoid using global variable section to solve a bug on week format
+- MARSUPIAL: Add new permission to allow users to change their own credentials only
+- Only enabled modules has to be backup
+- Reduce from 1 week to 1 the waiting time to purge temp files
+- Set empty SMTP hosts to avoid overhead in sending mails
+- Change locking from NFS to DB
+- Add loglifetime setting for backup logs
+- GEOGEBRA: Restore executing JS embedded in Geogebra files
+
 Changes 15.06.18
 ---------------------------------------------------------------------------------------
 - Added testapp

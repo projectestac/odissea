@@ -59,6 +59,7 @@ $string['deleteselectedgroup'] = 'Eliminar grupo seleccionado';
 $string['editgroupingsettings'] = 'Editar ajustes de agrupamiento';
 $string['editgroupsettings'] = 'Editar ajustes de grupo';
 $string['enrolmentkey'] = 'Clave de matriculación';
+$string['enrolmentkeyalreadyinuse'] = 'Esta clave de matriculación ya está siendo usada para otro grupo.';
 $string['enrolmentkey_help'] = 'Una clave de acceso permite que el acceso al curso esté limitado sólo a aquellos que conocen la clave. Si se especifica una clave de acceso grupal, entonces dicha clave no sólo permitirá a los usuarios entrar al curso, sino que los hará miembros del grupo.';
 $string['erroraddremoveuser'] = 'Error al agregar/quitar al usuario {$a} del grupo';
 $string['erroreditgroup'] = 'Error al crear o actualizar el grupo {$a}';

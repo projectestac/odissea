@@ -135,13 +135,13 @@ $string['publishtocourseassocparam'] = 'Membres de {$a}';
 $string['publishtogroup'] = 'Usuaris que comparteixen un grup amb vosté';
 $string['publishtogroupassoc'] = 'El vostre grup de membres al curs associat';
 $string['publishtogroupassocparam'] = 'El vostre grup de membres a {$a}';
-$string['publishto_help'] = '<p>Aquí hi ha tres opcions possibles.</p>
+$string['publishto_help'] = '<p>Aquí hi ha tres opcions possibles:</p>
 
-<p><b>Privat (esborrany)</b>: aquest apunt només podran veure\'l l\'autor/a i els administradors.</p>
+<p><b>Privat (esborrany)</b>: només l\'autor/a i els administradors podran veure aquesta entrada.</p>
 
-<p><b>Usuaris del lloc</b>: aquest apunt podran llegir-lo tots els usuaris que tinguin un compte en aquest lloc.</p>
+<p><b>Usuaris del lloc</b>: tots els usuaris que tinguin un compte en aquest lloc podran llegir aquesta entrada.</p>
 
-<p><b>Tothom</b>: tothom, inclosos els usuaris visitants, podran llegir aquest apunt.</p>';
+<p><b>Tothom</b>: tothom, inclosos els usuaris visitants, podrà llegir aquesta entrada.</p>';
 $string['publishtonoone'] = 'Privat (esborrany)';
 $string['publishtosite'] = 'Usuaris del lloc';
 $string['publishtoworld'] = 'Tothom';
@@ -167,7 +167,7 @@ $string['url_help'] = 'Introduïu l\'URL del canal RSS del vostre blog extern';
 $string['useblogassociations'] = 'Habilita les associacions dels blogs';
 $string['useexternalblogs'] = 'Habilita els blogs externs';
 $string['userblog'] = 'Blog d\'usuari: {$a}';
-$string['userblogentries'] = 'Entrades del bloc de {$a}';
+$string['userblogentries'] = 'Entrades del blog de {$a}';
 $string['valid'] = 'Vàlida';
 $string['viewallblogentries'] = 'Totes les entrades sobre aquest {$a}';
 $string['viewallmodentries'] = 'Mostra totes les entrades sobre aquest {$a->type}';
