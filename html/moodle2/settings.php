@@ -41,6 +41,9 @@ $CFG->agora_muc_path = $dirroot.'/cache_ins';
 $CFG->cachedir = $CFG->agora_muc_path.'/cache';
 $CFG->localcachedir = $CFG->agora_muc_path.'/localcache';
 
+// Change locking from NFS to DB
+$CFG->lock_factory = "\\core\\lock\\db_record_lock_factory";
+
 $CFG->mobilecssurl = $CFG->wwwroot.'/theme/xtec2/mobile/style.php';
 
 $CFG->forced_plugin_settings = array('block_configurable_reports' => array(
