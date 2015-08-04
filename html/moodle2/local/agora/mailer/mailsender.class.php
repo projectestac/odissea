@@ -36,13 +36,13 @@ class mailsender {
     /**
      * Url of the allowed environments
      */
-    public static $allowed_environments = array (
-        'DES' => 'http://xtec-int.educacio.intranet:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
-        //'INT' => 'http://xtec-wc.educacio.intranet:8080/esb/slide/ESB_Projects/ESB-EnviaCorreu_ESB-enviaCorreu/INT/ESB-Correu.wsdl',
-        'INT' => 'http://xtec-int.educacio.intranet:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
-        'ACC' => 'http://acc.xtec.cat:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
-        'PRO' => 'http://aplitic.xtec.cat:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
-        'FRM' => 'http://aplitic.xtec.cat:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu'
+    private static $allowed_environments = array(
+        'DES' => 'http://integracio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'INT' => 'http://integracio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'ACC' => 'http://preproduccio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'PRE' => 'http://preproduccio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'PRO' => 'http://bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'FRM' => 'http://bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu'
     );
 
     /**

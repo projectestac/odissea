@@ -6,6 +6,8 @@ function get_marsupial_ws_client($publisher, $auth_content = false) {
     libxml_disable_entity_loader(false);
 
     $debugging = debugging();
+    $tracer = get_config('rcommon', 'tracer');
+    $debugging = $debugging || $tracer == 'checked';
     if ($debugging) {
         ini_set('soap.wsdl_cache', WSDL_CACHE_NONE);
     }

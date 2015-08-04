@@ -13,7 +13,7 @@ class block_my_books extends block_list {
     }
 
     function has_config() {
-        return false;
+        return true;
     }
 
 	/*function applicable_formats() {
@@ -37,7 +37,7 @@ class block_my_books extends block_list {
     	$this->content->items = array();
         $this->content->icons = array();
         $this->content->footer = '';
-        $mybooksconfig = get_config('mybooks');
+        $mybooksconfig = self::get_mybooksconfig();
 
         require_once($CFG->dirroot.'/local/rcommon/locallib.php');
         require_once($CFG->dirroot.'/mod/rcontent/lib.php');
@@ -68,6 +68,22 @@ class block_my_books extends block_list {
 		}
 		$this->content->footer = $bt;
     	return $this->content;
+    }
+
+    private static function get_mybooksconfig() {
+        $mybooksconfig = get_config('mybooks');
+        if (!isset($mybooksconfig->viewer_opening)) {
+            $mybooksconfig->viewer_opening = 1;
+            $mybooksconfig->width = 800;
+            $mybooksconfig->height = 600;
+            $mybooksconfig->activity_opening = 0;
+            $mybooksconfig->scrollbars = 1;
+            $mybooksconfig->menubar = 0;
+            $mybooksconfig->toolbar = 0;
+            $mybooksconfig->status = 1;
+            $mybooksconfig->addkey = 1;
+        }
+        return $mybooksconfig;
     }
 
     private function get_item($isbn, $mybooksconfig) {
@@ -105,7 +121,7 @@ class block_my_books extends block_list {
             $add->frame      = 0;
             $add->coursemodule   = 0;
             $add->cmidnumber     = 0;
-            $add->popup    = $mybooksconfig->activity_opening;
+            $add->popup          = $mybooksconfig->activity_opening;
             $add->scrollbars     = $mybooksconfig->scrollbars;
             $add->menubar        = $mybooksconfig->menubar;
             $add->toolbar        = $mybooksconfig->toolbar;

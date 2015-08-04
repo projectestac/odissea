@@ -78,10 +78,6 @@ function theme_xtec2_process_css($css, $theme) {
     $fontstyle = !empty($theme->settings->fontstyle) ? $theme->settings->fontstyle : 'normal';
     $css = theme_xtec2_set_fontstyle($css, $fontstyle);
 
-    // Configure import CSS
-    $importcss = !empty($theme->settings->importcss) ? "@import url('" . $theme->settings->importcss . "');" : "";
-    $css = theme_xtec2_set_importcss($css, $importcss);
-
     $css = theme_xtec2_set_color($css, 2, $color2);
 
     // Decide foreground color depending on the other
@@ -169,13 +165,6 @@ function theme_xtec2_set_logo_tint($css, $color, $transparency) {
         $color = 'rgba('.implode(",",$rgb).', 0.'.$transparency.')';
         $css = str_replace($tag, $color, $css);
     }
-    return $css;
-}
-
-function theme_xtec2_set_importcss($css, $importcss) {
-    $tag = '[[setting:importcss]]';
-    $css = str_replace($tag, $importcss, $css);
-
     return $css;
 }
 
@@ -300,7 +289,7 @@ function theme_xtec2_get_html_for_settings(renderer_base $output, moodle_page $p
     global $CFG;
     $return = new stdClass;
 
-    $return->navbarclass = '';
+    $return->navbarclass = "";
 
     if (!empty($page->theme->settings->logo)) {
         $return->heading = html_writer::link($CFG->wwwroot, '', array('title' => get_string('home'), 'class' => 'logo'));
@@ -308,7 +297,12 @@ function theme_xtec2_get_html_for_settings(renderer_base $output, moodle_page $p
         $return->heading = $output->page_heading();
     }
 
-    $return->footnote = '';
+    $return->importcss = "";
+    if (!empty($page->theme->settings->importcss)) {
+        $return->importcss = '<link rel="stylesheet" type="text/css" href="'.$page->theme->settings->importcss.'">';
+    }
+
+    $return->footnote = "";
     if (!empty($page->theme->settings->footnote)) {
         $return->footnote = '<div class="footnote text-center">'.$page->theme->settings->footnote.'</div>';
     }

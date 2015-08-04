@@ -324,7 +324,7 @@ function rcontent_supports($feature) {
  * @return void
  */
 function rcontent_extend_settings_navigation($settings, $node) {
-    global $CFG, $PAGE;
+    global $CFG, $PAGE, $DB;
 
     // We want to add these new nodes after the Edit settings node, and before the
     // Locally assigned roles node. Of course, both of those are controlled by capabilities.

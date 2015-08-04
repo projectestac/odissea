@@ -129,7 +129,11 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
             }
 
             $response = $client->__soapCall("AutenticarUsuarioContenido", array($params));
+
+            log_to_file("wsAutenthication request: ".$client->__getLastRequest());
+            log_to_file("wsAutenthication response: ".$client->__getLastResponse());
         } catch (Exception $e) {
+            log_to_file("wsAutenthication exception: ".get_string('bad_wsdl_connection', 'local_rcommon'));
             echo '<script type="text/javascript">window.alert("' . get_string('bad_wsdl_connection', 'local_rcommon') . '"); history.go(-1);</script>';
             echo $OUTPUT->notification(get_string('bad_wsdl_connection', 'local_rcommon'));
             die();
@@ -149,9 +153,6 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true){
         			break;
         	}
         }
-
-        log_to_file("wsAutenthication request: ".$client->__getLastRequest());
-        log_to_file("wsAutenthication response: ".$client->__getLastResponse());
 
         //check if there are any response error
         if ($response->AutenticarUsuarioContenidoResult->Codigo <= 0 ) {

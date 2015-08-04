@@ -2,17 +2,6 @@
 //delete all rscorm my_books auto add entries
 //TODO abertranb confirmar que sigui necessari
 if (false) {
-    if ($module = $DB->get_record('modules', array('name' => 'rscorm'), 'id')){
-    	if ($cs = $DB->get_record('course_sections', array('course' => 1, 'section' => 2), 'id')){
-    	    if ($cms = $DB->get_records_select('course_modules', 'course = 1 AND module = '.$module->id.' AND section = '.$cs->id, array(), 'id, instance')){
-    	    	include_once($CFG->dirroot.'/mod/rscorm/lib.php');
-    		    foreach ($cms as $cm){
-    		    	rscorm_delete_instance($cm->instance);
-    		    	$DB->delete_records('course_modules', array('id' => $cm->id));
-    		    }
-    	    }
-    	}
-    }
     //delete all rcontent my_books out add entries
     if ($module = $DB->get_record('modules', array('name' => 'rcontent'), 'id')){
     	if ($cs = $DB->get_record('course_sections', array('course' => 1, 'section' => 2), 'id')){

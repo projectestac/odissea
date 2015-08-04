@@ -235,6 +235,103 @@ $functions = array(
         'capabilities'  => 'mod/folder:view'
     ),
 
+    'local_mobile_mod_chat_get_chats_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_chat_get_chats_by_courses',
+        'description'   => 'Retrieve chat activities by courses.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/chat:chat'
+    ),
+
+    'local_mobile_mod_chat_login_user' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_chat_login_user',
+        'description'   => 'Log a user into a chat room in the given chat.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/chat:chat'
+    ),
+
+    'local_mobile_mod_chat_get_chat_users' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_chat_get_chat_users',
+        'description'   => 'Get the list of users in the given chat session.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/chat:chat'
+    ),
+
+    'local_mobile_mod_chat_send_chat_message' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_chat_send_chat_message',
+        'description'   => 'Send a message on the given chat session.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/chat:chat'
+    ),
+
+    'local_mobile_mod_chat_get_chat_latest_messages' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_chat_get_chat_latest_messages',
+        'description'   => 'Get the latest messages from the given chat session.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/chat:chat'
+    ),
+
+    'local_mobile_mod_chat_view_chat' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_chat_view_chat',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface folder: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => 'mod/chat:chat'
+    ),
+
+    'local_mobile_mod_choice_view_choice' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_choice_view_choice',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Simulate the view.php web interface folder: trigger events, completion, etc...',
+        'type'          => 'write',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_mod_choice_get_choice_results' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_choice_get_choice_results',
+        'description'   => 'Retrieve users results for a specific choice.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_mod_choice_get_choice_options' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_choice_get_choice_options',
+        'description'   => 'Retrieve options for a specific choice.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/choice:choose'
+    ),
+
+    'local_mobile_mod_choice_submit_choice_response' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_choice_submit_choice_response',
+        'description'   => 'Submit responses to a specific choice item.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/choice:choose'
+    ),
+
+    'local_mobile_mod_choice_get_choices_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_choice_get_choices_by_courses',
+        'description'   => 'Retrieve choice activities by courses.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_core_completion_mark_course_self_completed' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_completion_mark_course_self_completed',
+        'description' => 'Update the course completion status for the current user (if course self-completion is enabled).',
+        'type'        => 'write',
+    ),
+
 );
 
 $services = array(
@@ -299,6 +396,18 @@ $services = array(
             'local_mobile_mod_page_view_page',
             'local_mobile_mod_assign_view_grading_table',
             'local_mobile_mod_folder_view_folder',
+            'local_mobile_mod_chat_login_user',
+            'local_mobile_mod_chat_get_chat_users',
+            'local_mobile_mod_chat_send_chat_message',
+            'local_mobile_mod_chat_get_chat_latest_messages',
+            'local_mobile_mod_chat_get_chats_by_courses',
+            'local_mobile_mod_chat_view_chat',
+            'local_mobile_mod_choice_view_choice',
+            'local_mobile_mod_choice_get_choice_results',
+            'local_mobile_mod_choice_get_choice_options',
+            'local_mobile_mod_choice_submit_choice_response',
+            'local_mobile_mod_choice_get_choices_by_courses',
+            'local_mobile_core_completion_mark_course_self_completed',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,
