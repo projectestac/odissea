@@ -67,6 +67,14 @@ function duration($ts) {
     else $str .= " $mins minutes";
     return $str;
 }
+
+function get_hostname() {
+    $hostname = getenv('HOSTNAME');
+    if (empty($hostname)) {
+        $hostname = gethostname();
+    }
+    return $hostname;
+}
 //************ FI
 
 class OpCacheDataModel
@@ -81,11 +89,12 @@ class OpCacheDataModel
         $this->_status = opcache_get_status();
     }
 
+
     public function getPageTitle()
     {
         //XTEC ************ MODIFICAT - To add hostname
         //2015.04.14 @pferre22
-        return 'OpCache '.getenv('HOSTNAME');
+        return 'OpCache '.get_hostname();
         // ORIGINAL
         // return 'PHP ' . phpversion() . " with OpCache {$this->_configuration['version']['version']}";
         //************ FI
