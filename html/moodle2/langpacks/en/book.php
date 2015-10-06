@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = 'Add new chapter';
 $string['book:addinstance'] = 'Add a new book';
 $string['book:edit'] = 'Edit book chapters';
-$string['book:read'] = 'Read book';
+$string['book:read'] = 'View book';
 $string['book:viewhiddenchapters'] = 'View hidden book chapters';
 $string['chapters'] = 'Chapters';
 $string['chaptertitle'] = 'Chapter title';

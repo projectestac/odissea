@@ -9,7 +9,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$checks);
 	}
 	public function isEquivalence() {
-		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$equivalent);
+		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$equivalent) || com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SET === $this->name;
 	}
 	public function isSyntactic() {
 		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$syntactic);
@@ -298,7 +298,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		com_wiris_quizzes_impl_Assertion::$paramnames = new Hash();
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_expression", new _hx_array(array("constants", "functions", "listoperators", "groupoperators", "itemseparators", "decimalseparators", "digitgroupseparators", "nobracketslist", "intervals", "textlogicoperators")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_list", new _hx_array(array("constants", "functions")));
-		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_quantity", new _hx_array(array("constants", "units", "unitprefixes", "groupoperators", "mixedfractions", "itemseparators", "nobracketslist")));
+		com_wiris_quizzes_impl_Assertion::$paramnames->set("syntax_quantity", new _hx_array(array("constants", "units", "unitprefixes", "groupoperators", "mixedfractions", "itemseparators", "decimalseparators", "digitgroupseparators", "nobracketslist")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("check_divisible", new _hx_array(array("value")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("check_unit", new _hx_array(array("unit")));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set("check_unit_literal", new _hx_array(array("unit")));

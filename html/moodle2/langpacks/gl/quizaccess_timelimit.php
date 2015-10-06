@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = 'Regra de acceso á proba para límite de tempo';
 $string['quiztimelimit'] = 'Tempo límite: {$a}';

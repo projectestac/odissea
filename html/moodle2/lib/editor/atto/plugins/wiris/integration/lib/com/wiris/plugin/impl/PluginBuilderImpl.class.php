@@ -10,6 +10,34 @@ class com_wiris_plugin_impl_PluginBuilderImpl extends com_wiris_plugin_api_Plugi
 		$this->configuration = $ci;
 		$ci->setPluginBuilderImpl($this);
 	}}
+	public function addStats($url) {
+		$saveMode = $this->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$SAVE_MODE, "xml");
+		$version = null;
+		try {
+			$version = com_wiris_system_Storage::newResourceStorage("VERSION")->read();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$ex = $_ex_;
+			{
+				$version = "Missing version";
+			}
+		}
+		$tech = null;
+		try {
+			$tech = com_wiris_system_Storage::newResourceStorage("tech.txt")->read();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$ex2 = $_ex_;
+			{
+				$tech = "Missing tech";
+			}
+		}
+		if(_hx_index_of($url, "?", null) !== -1) {
+			return $url . "&stats-mode=" . $saveMode . "&stats-version=" . $version . "&stats-scriptlang=" . $tech;
+		} else {
+			return $url . "?stats-mode=" . $saveMode . "&stats-version=" . $version . "&stats-scriptlang=" . $tech;
+		}
+	}
 	public function addCorsHeaders($response, $origin) {
 		$conf = $this->getConfiguration();
 		if($conf->getProperty("wiriscorsenabled", "false") === "true") {
@@ -44,7 +72,7 @@ class com_wiris_plugin_impl_PluginBuilderImpl extends com_wiris_plugin_api_Plugi
 			}
 		}
 	}
-	public function getImageServiceURL($service) {
+	public function getImageServiceURL($service, $stats) {
 		$protocol = null;
 		$port = null;
 		$url = null;
@@ -87,6 +115,9 @@ class com_wiris_plugin_impl_PluginBuilderImpl extends com_wiris_plugin_api_Plugi
 			} else {
 				$path = _hx_substr($path, 0, $end) . "/" . $service;
 			}
+		}
+		if($stats) {
+			$path = $this->addStats($path);
 		}
 		return $protocol . "://" . $domain . $port . $path;
 	}

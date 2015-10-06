@@ -44,7 +44,7 @@ $string['choiceoptions'] = 'Abstimmoptionen';
 $string['choiceoptions_help'] = 'Tragen Sie die Abstimmoptionen ein, zwischen denen sich die Teilnehmer/innen entscheiden sollen.
 
 Sie können jedes der vorhandenen Felder ausfüllen, Sie dürfen aber auch nicht benötigte Felder leer lassen, die dann in der Abstimmung nicht angezeigt werden. Weitere Optionsfelder erhalten Sie über den Knopf "Optionen hinzufügen".';
-$string['choice:readresponses'] = 'Antworten sehen';
+$string['choice:readresponses'] = 'Antworten anzeigen';
 $string['choicesaved'] = 'Ihre Auswahl wurde gespeichert';
 $string['choicetext'] = 'Abstimmungstext';
 $string['chooseaction'] = 'Aktion auswählen...';
@@ -87,7 +87,7 @@ $string['options'] = 'Optionen';
 $string['page-mod-choice-x'] = 'Jede Abstimmungsseite';
 $string['pluginadministration'] = 'Abstimmungs-Administration';
 $string['pluginname'] = 'Abstimmung';
-$string['privacy'] = 'Nicht veröffentlichen';
+$string['privacy'] = 'Ergebnisse anonym darstellen';
 $string['publish'] = 'Ergebnisse veröffentlichen';
 $string['publishafteranswer'] = 'Nach eigener Stimmabgabe';
 $string['publishafterclose'] = 'Nach Abstimmungsende';

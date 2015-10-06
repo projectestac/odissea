@@ -44,6 +44,7 @@ $string['recover'] = 'Récupérer';
 $string['settings'] = 'Réglages barres Atto';
 $string['subplugintype_atto'] = 'Plugin Atto';
 $string['subplugintype_atto_plural'] = 'Plugins Atto';
+$string['taskautosavecleanup'] = 'Supprimer de la base de données les brouillons enregistrés automatiquement échus.';
 $string['textrecovered'] = 'Un brouillon de ce texte a été récupéré automatiquement.';
 $string['toolbarconfig'] = 'Configuration barre d\'outils';
 $string['toolbarconfig_desc'] = 'La liste des plugins et l\'ordre dans lequel ils sont affichés peut être configurée ici. La configuration consiste en groupes (un par ligne) suivis par une liste (ordonnée) des plugins de ce groupe. Le groupe est séparé des plugins par un signe d\'égalité et les plugins sont séparés par des virgules. Le nom des groupes doit être unique et indiquer ce que les boutons ont en commun. Les boutons et noms des groupes ne peuvent pas être répétés et ne doivent comporter que des caractères alphanumériques.';

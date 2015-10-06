@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'ドックに移動する';
+$string['addtodock'] = 'これをドックに移動する';
 $string['anypagematchingtheabove'] = '上記に合致するページすべて';
 $string['appearsinsubcontexts'] = 'サブコンテクストに表示する';
 $string['assignrolesinblock'] = '{$a} ブロックにロールを割り当てる';
@@ -60,7 +60,7 @@ $string['pagetypewarning'] = '前回選択したページタイプを選択で�
 $string['region'] = '場所';
 $string['restrictpagetypes'] = 'ページタイプに表示する';
 $string['showblock'] = '{$a} ブロックを表示する';
-$string['showoncontextandsubs'] = '「 {$a} 」およびそのページ内すべてに表示する';
+$string['showoncontextandsubs'] = '「 {$a} 」およびその中のページすべてを表示する';
 $string['showoncontextonly'] = '「 {$a} 」のみに表示する';
 $string['showonentiresite'] = 'サイト全体に表示する';
 $string['showonfrontpageandsubs'] = 'フロントページおよびフロントページに追加されたページすべてに表示する';

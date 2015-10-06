@@ -79,7 +79,7 @@ $string['courseid'] = 'コースIDナンバー';
 $string['coursemisconf'] = 'コースが正しく設定されていません。';
 $string['course_tool_types'] = 'コースツールタイプ';
 $string['createdon'] = '作成日';
-$string['curllibrarymissing'] = 'LTIを使用するには、PHP Curlライブラリをインストールする必要があります。';
+$string['curllibrarymissing'] = 'LTIを使用するにはPHP Curlライブラリをインストールする必要があります。';
 $string['custom'] = 'カスタムパラメータ';
 $string['custom_config'] = 'カスタムツール設定を使用します。';
 $string['custom_help'] = 'カスタムパラメータはツールプロバイダから使用される設定です。例えば、プロバイダから特定のリソースを表示するため、カスタムパラメータを使用することができます。それぞれのパラメータは独立した行に「name=value」のような形で入力する必要があります。例えば、次のようになります: 「chapter=3」
@@ -126,7 +126,7 @@ $string['embed'] = '埋め込み';
 $string['embed_no_blocks'] = '埋め込み (ブロックなし)';
 $string['enableemailnotification'] = '通知メールを送信する';
 $string['enableemailnotification_help'] = '有効にした場合、ツール送信が評定された時点で学生に対して通知メールが送信されます。';
-$string['errormisconfig'] = 'ツールが正しく設定されていません。ツール設定を修正するには、あなたのMoodle管理者にご連絡ください。';
+$string['errormisconfig'] = 'ツールが正しく設定されていません。ツール設定を修正するにはあなたのMoodle管理者にご連絡ください。';
 $string['existing_window'] = '既存のウィンドウ';
 $string['extensions'] = 'LTI拡張サービス';
 $string['external_tool_type'] = '外部ツールタイプ';
@@ -197,7 +197,7 @@ $string['lti_administration'] = 'LTI管理';
 $string['lti_errormsg'] = 'ツールにより次のエラーメッセージが返されました: 「 $a 」';
 $string['lti:grade'] = '外部ツールから戻された評点を表示する';
 $string['lti_launch_error'] = '外部ツール起動中にエラーが発生しました:';
-$string['lti_launch_error_tool_request'] = '<p>管理者にツール設定の完了をリクエストするには、<a href="{$a->admin_request_url}" target="_top">ここをクリック</a>してください。 </p>';
+$string['lti_launch_error_tool_request'] = '<p>管理者にツール設定の完了をリクエストするには<a href="{$a->admin_request_url}" target="_top">ここをクリック</a>してください。 </p>';
 $string['lti_launch_error_unsigned_help'] = '<p>ツールプロバイダのコンシューマーキーおよび共通秘密鍵が不足しているため、このエラーが発生したと考えられます。</p>
 <p> コンシューマーキーおよび共通秘密鍵がある場合、あなたは外部ツールインスタンスの設定時に入力することができます (拡張要素が表示されていることを確認してください)。</p>
 <p> 代わりに、あなたは<a href="{$a->course_tool_editor}">ここで</a>コースレベルのツールプロバイダ設定を作成することができます。</p>';
@@ -227,7 +227,7 @@ $string['module_class_type'] = 'Moodleモジュールタイプ';
 $string['modulename'] = '外部ツール';
 $string['modulename_help'] = '外部ツール活動モジュールにおいて、学生は他のウェブサイト上の学習リソースおよび活動と相互連携することができます。例えば、外部ツールは新しい活動タイプまたは出版社の学習教材へのアクセスを提供することができます。
 
-外部ツール活動を作成するには、ツールプロバイダによるLTI (Learning Tool Interoperability 学習ツール相互運用) のサポートが必要です。教師は外部ツール活動を作成またはサイト管理者によって設定されたツールを利用可能な状態にすることができます。
+外部ツール活動を作成するにはツールプロバイダによるLTI (Learning Tool Interoperability 学習ツール相互運用) のサポートが必要です。教師は外部ツール活動を作成またはサイト管理者によって設定されたツールを利用可能な状態にすることができます。
 
 いくつかの点において、外部ツール活動はURLリソースと異なります:
 
@@ -251,7 +251,7 @@ $string['no_tp_cancelled'] = 'キャンセルされた外部ツール登録は�
 $string['no_tp_configured'] = '登録解除された外部ツール登録設定はありません。';
 $string['no_tp_pending'] = '保留の外部ツール登録はありません。';
 $string['no_tp_rejected'] = '拒否された外部ツール登録はありません。';
-$string['notypes'] = '現在、Moodle内で設定されているLTIツールはありません。追加するには、上記のインストールリンクをクリックしてください。';
+$string['notypes'] = '現在、Moodle内で設定されているLTIツールはありません。追加するには上記のインストールリンクをクリックしてください。';
 $string['noviewusers'] = 'このツールを使用するパーミッションが割り当てられたユーザは見つかりませんでした。';
 $string['optionalsettings'] = 'オプション設定';
 $string['organization'] = '組織詳細';
@@ -288,7 +288,7 @@ $string['preferwidth'] = '推奨幅';
 $string['press_to_submit'] = 'この活動を起動する';
 $string['privacy'] = 'プライバシー';
 $string['quickgrade'] = 'クイック評定を有効にする';
-$string['quickgrade_help'] = 'クイック評定を有効にした場合、1ページで複数のツールを評定することができます。ページ内のすべての変更を同時に保存するには、評点とコメントを変更して画面下部にある「すべてのフィードバックを保存する」ボタンをクリックしてください。';
+$string['quickgrade_help'] = 'クイック評定を有効にした場合、1ページで複数のツールを評定することができます。ページ内のすべての変更を同時に保存するには評点とコメントを変更して画面下部にある「すべてのフィードバックを保存する」ボタンをクリックしてください。';
 $string['redirect'] = 'あなたは数秒以内にリダイレクトされます。リダイレクトされない場合、ボタンをクリックしてください。';
 $string['register'] = '登録';
 $string['registertype'] = '新しい外部ツール登録を設定する';
@@ -348,8 +348,8 @@ $string['share_name_help'] = 'ツールを起動したユーザのフルネー�
 この設定はツール設定内でオーバーライドできることに留意してください。';
 $string['share_roster'] = 'ツールに対して、このコースの参加者一覧へのアクセスを許可する';
 $string['share_roster_admin'] = 'ツールがコース一覧にアクセスできる';
-$string['share_roster_admin_help'] = 'このツールタイプが起動された場合、コース内の受講ユーザ一覧にツールがアクセスできるかどうか指定してください。';
-$string['share_roster_help'] = 'コース内の受講ユーザ一覧にツールがアクセスできるかどうか指定してください。
+$string['share_roster_admin_help'] = 'このツールタイプが起動された場合、コース内の受講登録済みユーザ一覧にツールがアクセスできるかどうか指定してください。';
+$string['share_roster_help'] = 'コース内の受講登録済みユーザ一覧にツールがアクセスできるかどうか指定してください。
 
 この設定はツール設定内でオーバーライドできることに留意してください。';
 $string['show_in_course'] = 'ツールインスタンスの作成時にツールタイプを表示する';

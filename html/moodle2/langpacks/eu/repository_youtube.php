@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
+$string['apikey'] = 'API giltza';
 $string['configplugin'] = 'YouTube biltegi-motaren ezarpenak';
+$string['information'] = 'Lortu <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API giltza</a> zure  Moodle gunerako.';
 $string['pluginname'] = 'Youtube bideoak';
 $string['search'] = 'Bilatu bideoak';
 $string['sortby'] = 'Ordenatu honela';
@@ -33,4 +36,4 @@ $string['sortpublished'] = 'Argitaratze-data';
 $string['sortrating'] = 'Puntuazioa';
 $string['sortrelevance'] = 'Garrantzia';
 $string['sortviewcount'] = 'Ikustaldiak';
-$string['youtube:view'] = 'Youtube erabili fitxategi-hautatzailean';
+$string['youtube:view'] = 'Erabili Youtube fitxategi-hautatzailean';

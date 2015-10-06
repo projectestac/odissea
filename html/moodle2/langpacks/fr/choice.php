@@ -44,7 +44,7 @@ $string['choiceoptions'] = 'Options du sondage';
 $string['choiceoptions_help'] = 'Vous indiquez ici les réponses possibles parmi lesquelles les participants auront à choisir.
 
 Les champs non remplis ne seront pas affichés. Si vous désirez plus d\'options, cliquez sur le bouton « Ajouter 3 champs au formulaire ».';
-$string['choice:readresponses'] = 'Lire les réponses';
+$string['choice:readresponses'] = 'Consulter les réponses';
 $string['choicesaved'] = 'Votre choix a été enregistré';
 $string['choicetext'] = 'Texte de la question';
 $string['chooseaction'] = 'Choisir une action...';

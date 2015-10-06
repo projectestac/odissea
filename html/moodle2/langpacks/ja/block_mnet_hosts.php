@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_authmnetneeded'] = 'MNetネットワークサーバを表示するには、MNet認証プラグインを有効にする必要があります。';
+$string['error_authmnetneeded'] = 'MNetネットワークサーバを表示するにはMNet認証プラグインを有効にする必要があります。';
 $string['error_localusersonly'] = 'リモートユーザはこのホストから他のMNetネットワークサーバにジャンプすることはできません。';
-$string['error_roamcapabilityneeded'] = 'MNetネットワークサーバ一覧を表示するには、ユーザに「MNet経由でリモートアプリケーションを散策する」ケイパビリティが必要です。';
+$string['error_roamcapabilityneeded'] = 'MNetネットワークサーバ一覧を表示するにはユーザに「MNet経由でリモートアプリケーションを散策する」ケイパビリティが必要です。';
 $string['mnet_hosts:addinstance'] = '新しいネットワークサーバブロックを追加する';
 $string['mnet_hosts:myaddinstance'] = '新しいネットワークサーバブロックをマイホームに追加する';
 $string['pluginname'] = 'ネットワークサーバ';

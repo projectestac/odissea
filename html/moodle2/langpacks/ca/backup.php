@@ -87,7 +87,7 @@ $string['configgeneralbadges'] = 'Estableix el valor per defecte per incloure in
 $string['configgeneralblocks'] = 'Estableix el valor per defecte per incloure blocs en una còpia de seguretat.';
 $string['configgeneralcomments'] = 'Estableix el valor per defecte per incloure comentaris en una còpia de seguretat.';
 $string['configgeneralfilters'] = 'Estableix el valor per defecte per incloure filtres en una còpia de seguretat.';
-$string['configgeneralhistories'] = 'Estableix el valor per defecte per incloure la història de l\'usuari en una còpia de seguretat.';
+$string['configgeneralhistories'] = 'Estableix el valor per defecte per incloure l\'historial de l\'usuari en una còpia de seguretat.';
 $string['configgenerallogs'] = 'Si està habilitat, s\'inclouran per omissió els registres dins de la còpia de seguretat.';
 $string['configgeneralquestionbank'] = 'Si s\'habilita, el banc de preguntes s\'inclourà en les còpies de seguretat per defecte.
 NOTA: Inhabilitar aquest paràmetre inhabilitarà la còpia de seguretat de les activitats que utilitzin el banc de preguntes, com ara el qüestionari.';
@@ -233,7 +233,7 @@ $string['rootsettingblocks'] = 'Inclou els blocs';
 $string['rootsettingcalendarevents'] = 'Inclou els esdeveniments de calendari';
 $string['rootsettingcomments'] = 'Inclou els comentaris';
 $string['rootsettingfilters'] = 'Inclou els filtres';
-$string['rootsettinggradehistories'] = 'Inclou l\'històric de qualificacions';
+$string['rootsettinggradehistories'] = 'Inclou l\'historial de qualificacions';
 $string['rootsettingimscc1'] = 'Converteix a IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Converteix a IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Inclou els registres del curs';

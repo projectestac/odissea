@@ -53,7 +53,7 @@ $string['blockperiod_help'] = '指定された時間内に指定された記事�
 $string['blogforum'] = 'ブログフォーマットで表示される標準フォーラム';
 $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
 $string['cannotadd'] = 'このフォーラムにディスカッションを追加できませんでした。';
-$string['cannotadddiscussion'] = 'このフォーラムにディスカッションを追加するには、グループのメンバーである必要があります。';
+$string['cannotadddiscussion'] = 'このフォーラムにディスカッションを追加するにはグループのメンバーである必要があります。';
 $string['cannotadddiscussionall'] = 'あなたには、すべての参加者に対する新しいディスカッショントピックを追加するパーミッションがありません。';
 $string['cannotaddsubscriber'] = 'このフォーラムに、ID {$a} のメール購読ユーザを追加できませんでした!';
 $string['cannotaddteacherforumto'] = 'コースのセクションゼロに対して、コンバートされた教師フォーラムインスタンスを追加できませんでした。';
@@ -74,7 +74,7 @@ $string['cannotpurgecachedrss'] = 'ソースまたは対象フォーラムに関
 $string['cannotremovesubscriber'] = 'このフォーラムから、ID {$a} のメール購読ユーザを削除できませんでした!';
 $string['cannotreply'] = 'あなたはこの投稿に返信できません。';
 $string['cannotsplit'] = 'このフォーラムのディスカッションは、分割できません。';
-$string['cannotsubscribe'] = '申し訳ございません、あなたがメール購読するには、グループメンバーである必要があります。';
+$string['cannotsubscribe'] = '申し訳ございません、あなたがメール購読するにはグループメンバーである必要があります。';
 $string['cannottrack'] = 'フォーラムの未読管理を停止できませんでした。';
 $string['cannotunsubscribe'] = 'あなたをフォーラムからメール購読解除できませんでした。';
 $string['cannotupdatepost'] = 'あなたはこの投稿を更新できません。';
@@ -85,13 +85,13 @@ $string['clicktosubscribe'] = 'あなたはこのディスカッションを購�
 $string['clicktounsubscribe'] = 'あなたはこのディスカッションを購読しています。購読解除するにはクリックしてください。';
 $string['completiondiscussions'] = '学生は次の件数のディスカッションを作成する必要があります:';
 $string['completiondiscussionsgroup'] = 'ディスカッションを必要とする';
-$string['completiondiscussionshelp'] = '完了するには、ディスカッションを必要とする';
+$string['completiondiscussionshelp'] = '完了するにはディスカッションを必要とする';
 $string['completionposts'] = '学生は次の件数のディスカッションまたは返信を投稿する必要があります:';
 $string['completionpostsgroup'] = '投稿を必要とする';
-$string['completionpostshelp'] = '完了するには、ディスカッションまたは返信を必要とする';
+$string['completionpostshelp'] = '完了するにはディスカッションまたは返信を必要とする';
 $string['completionreplies'] = '学生は次の件数の返信を投稿する必要があります:';
 $string['completionrepliesgroup'] = '返信を必要とする';
-$string['completionreplieshelp'] = '完了するには、返信を必要とする';
+$string['completionreplieshelp'] = '完了するには返信を必要とする';
 $string['configcleanreadtime'] = '古い投稿を「既読」テーブルからクリアする時刻 (時) です。';
 $string['configdigestmailtime'] = 'メール送信を選択したユーザに、投稿内容を要約したメールが毎日送信されます。ここでは1日の内で何時に要約メールを送信するか設定します (この設定後に実行される次のcronがメールを送信します)。';
 $string['configdisplaymode'] = '表示モードが設定されていない場合、ディスカッションで使用されるデフォルト表示モードです。';
@@ -122,7 +122,7 @@ $string['deletedposts'] = '投稿が削除されました。';
 $string['deleteoriginalonreply'] = 'このメール経由で直接返信する場合、あなたが返信する投稿の引用を含まないでください。';
 $string['deletesure'] = 'この投稿を削除してもよろしいですか?';
 $string['deletesureplural'] = 'この投稿およびすべての返信を削除してもよろしいですか? (投稿数 {$a})';
-$string['digestmailheader'] = 'これは {$a->sitename} フォーラムの新しい投稿に関するあなたのデイリーダイジェストです。あなたのデフォルトのフォーラムメールプリファレンスを変更するには、 {$a->userprefs} に移動してください。';
+$string['digestmailheader'] = 'これは {$a->sitename} フォーラムの新しい投稿に関するあなたのデイリーダイジェストです。あなたのデフォルトのフォーラムメールプリファレンスを変更するには {$a->userprefs} に移動してください。';
 $string['digestmailpost'] = 'あなたのフォーラムダイジェストプリファレンスを変更する';
 $string['digestmailprefs'] = 'ユーザプロファイル';
 $string['digestmailsubject'] = '{$a}: フォーラムダイジェスト';
@@ -148,19 +148,11 @@ $string['discussionsubscription'] = 'ディスカッション購読';
 $string['discussionsubscription_help'] = 'ディスカッショの購読はあなたがディスカッションへの新しい投稿の通知を受信することを意味します。';
 $string['discussthistopic'] = 'このトピックを読む';
 $string['displayend'] = '表示終了';
-$string['displayend_help'] = '<p>あなたの投稿が特定の日付から表示開始、特定の日付に表示終了、または指定された期間のみ表示することを選択できます。</p>
-
-<p>表示開始日付および/または終了日付を有効にするには、無効オプションを選択解除してください。</p>
-
-<p>管理者としてアクセスできるユーザは、表示開始日の前、および表示終了日の後に投稿内容を閲覧することができますので注意してください。</p>';
+$string['displayend_help'] = 'この設定では特定の日付の後にフォーラム投稿を非表示にするかどうか指定します。管理者は常にフォーラム投稿を閲覧できることに留意してください。';
 $string['displaymode'] = '表示モード';
 $string['displayperiod'] = '表示期間';
 $string['displaystart'] = '表示開始';
-$string['displaystart_help'] = '<p>あなたの投稿が特定の日付から表示開始、特定の日付に表示終了、または指定された期間のみ表示することを選択できます。</p>
-
-<p>表示開始日付および/または終了日付を有効にするには、無効オプションを選択解除してください。</p>
-
-<p>管理者としてアクセスできるユーザは、表示開始日の前、および表示終了日の後に投稿内容を閲覧することができますので注意してください。</p>';
+$string['displaystart_help'] = 'この設定では特定の日付からフォーラム投稿を表示するかどうか指定します。管理者は常にフォーラム投稿を閲覧できることに留意してください。';
 $string['displaywordcount'] = '文字カウントを表示する';
 $string['displaywordcount_help'] = 'この設定では、それぞれの投稿の文字数を表示するかどうか指定します。';
 $string['eachuserforum'] = '各人が1件のディスカッションを投稿する';
@@ -186,10 +178,10 @@ $string['emaildigestupdated'] = 'フォーラム「 {$a->forum} 」に関する�
 {$a->maildigestdescription}';
 $string['emaildigestupdated_default'] = 'あなたの「 {$a->maildigesttitle} 」のデフォルトプロファイル設定はフォーラム「 {$a->forum} 」に使用されました。
 {$a->maildigestdescription}';
-$string['emptymessage'] = 'あなたの投稿に問題があります。恐らく投稿が空白のままか、添付ファイルのサイズが大きすぎます。あなたの変更は保存されませんでした。';
+$string['emptymessage'] = 'あなたの投稿に問題があります。おそらく投稿が空白のままか、添付ファイルのサイズが大きすぎます。あなたの変更は保存されませんでした。';
 $string['erroremptymessage'] = '投稿メッセージを空にすることはできません。';
 $string['erroremptysubject'] = '件名を空にすることはできません。';
-$string['errorenrolmentrequired'] = 'このコンテンツにアクセスするには、あなたはこのコースに受講登録する必要があります。';
+$string['errorenrolmentrequired'] = 'このコンテンツにアクセスするにはあなたはこのコースに受講登録する必要があります。';
 $string['errorwhiledelete'] = 'レコードの削除中にエラーが発生しました。';
 $string['eventassessableuploaded'] = 'コンテンツが投稿されました。';
 $string['eventcoursesearched'] = 'コースが検索されました。';
@@ -363,7 +355,7 @@ $string['noquestions'] = 'このフォーラムにはまだ質問がありませ
 $string['nosubscribers'] = 'このフォーラムにはまだメール購読ユーザはいません。';
 $string['notexists'] = 'ディスカッションは、すでに存在しません。';
 $string['nothingnew'] = '{$a} に新しい投稿はありません。';
-$string['notingroup'] = '申し訳ございません、グループ以外の方はこのフォーラムを閲覧できません。';
+$string['notingroup'] = '申し訳ございません、あなたがこのフォーラムを閲覧するにはグループに属している必要があります。';
 $string['notinstalled'] = 'フォーラムモジュールがインストールされていません。';
 $string['notpartofdiscussion'] = 'この投稿は、ディスカッションの一部ではありません。';
 $string['notrackforum'] = '投稿を未読管理しない';
@@ -398,7 +390,7 @@ $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'この投稿をコンテクスト内に表示する';
 $string['postmailinfo'] = 'これは ウェブサイト {$a} に投稿された記事のコピーです。
 
-返信を投稿するには、このリンクをクリックしてください:';
+返信を投稿するにはこのリンクをクリックしてください:';
 $string['postmailnow'] = '<p>この投稿はすべてのメール購読ユーザにすぐに送信されます。</p>';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = '主に分離認識の傾向がある';
@@ -525,8 +517,8 @@ $string['unsubscribeall'] = 'すべてのフォーラムのメール購読を解
 $string['unsubscribeallconfirm'] = '現在、あなたは {$a->forums} 件のフォーラムおよび {$a->discussions} 件のディスカッションをメール購読しています。本当にすべてのフォーラムおよびディスカッションのメール購読を解除およびフォーラム自動メール購読を無効にしてもよろしいですか?';
 $string['unsubscribeallconfirmdiscussions'] = '現在、ああたは {$a->discussions} 件のディスカッションを購読しています。本当にすべてのディスカッションの購読を解除して、自動購読を無効にしてもよろしいですか?';
 $string['unsubscribeallconfirmforums'] = '現在、ああたは {$a->forums} 件のフォーラムを購読しています。本当にすべてのフォーラムの購読を解除して、自動購読を無効にしてもよろしいですか?';
-$string['unsubscribealldone'] = 'すべてのフォーラムのメール購読が解除されました。まだ、あなたにはメール購読が強制されているフォーラムから通知が送信されます。フォーラム通知を管理するには、マイプロファイル設定のメッセージングにアクセスしてください。';
-$string['unsubscribeallempty'] = '申し訳ございません、あなたがメール購読しているフォーラムはありません。すべてのフォーラム通知を無効するには、マイプロファイル設定のメッセージングにアクセスしてください。';
+$string['unsubscribealldone'] = 'すべてのフォーラムのメール購読が解除されました。まだ、あなたにはメール購読が強制されているフォーラムから通知が送信されます。フォーラム通知を管理するにはマイプロファイル設定のメッセージングにアクセスしてください。';
+$string['unsubscribeallempty'] = '申し訳ございません、あなたがメール購読しているフォーラムはありません。すべてのフォーラム通知を無効するにはマイプロファイル設定のメッセージングにアクセスしてください。';
 $string['unsubscribed'] = 'メール購読を解除しました。';
 $string['unsubscribediscussion'] = 'このディスカッションを購読解除する';
 $string['unsubscribeshort'] = 'メール購読解除';

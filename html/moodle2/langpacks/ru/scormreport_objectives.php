@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['objectivescore'] = 'Показать оценку цели';
+$string['objectivex'] = 'Цель {$a}';
+$string['pluginname'] = 'Отчет по целям';
+$string['score'] = 'оценка';
 $string['status'] = 'состояние';

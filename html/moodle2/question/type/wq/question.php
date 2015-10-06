@@ -39,7 +39,7 @@ class qtype_wq_question extends question_with_responses {
         // Get variables from WIRIS quizzes service.
         $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
         $text = $this->join_all_text();
-        $this->wirisquestioninstance = $builder->newQuestionInstance();
+        $this->wirisquestioninstance = $builder->newQuestionInstance($this->wirisquestion);
         $this->wirisquestioninstance->setRandomSeed($variant);
         
         // Begin testing code. It's never used in production.

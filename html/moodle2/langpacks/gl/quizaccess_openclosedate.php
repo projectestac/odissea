@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Desculpe. Este cuestionario non está dispoñible';
+$string['pluginname'] = 'Regra de acceso por data de apertura e peche';
 $string['quiznotavailable'] = 'O cuestionario non estará dispoñible até: {$a}';

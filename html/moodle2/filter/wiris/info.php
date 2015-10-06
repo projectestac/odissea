@@ -54,7 +54,7 @@ $wiris_plugin_base = '../../lib/editor/tinymce/plugins/tiny_mce_wiris/tinymce';
 $wiris_plugin_base_string = 'TinyMCE';
 if ($CFG->version >= 2014051200) {
 	$editors =  array_flip(explode(',', $CFG->texteditors));
-	if (array_key_exists('atto', $editors) && ($editors['atto'] < $editors['tinymce'])) {
+	if (array_key_exists('atto', $editors) && (($editors['atto'] < $editors['tinymce'])) || !array_key_exists('tinymce', $editors)) {
 		$wiris_plugin_base = '../../lib/editor/atto/plugins/wiris';
 		$wiris_plugin_base_string = 'Atto';
 	}

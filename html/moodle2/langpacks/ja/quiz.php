@@ -185,7 +185,7 @@ $string['confignewpageevery'] = '問題を小テストに追加する場合、�
 $string['configoutcomesadvanced'] = 'このオプションを有効にした場合、小テスト編集フォームのアウトカムは高度な設定になります。';
 $string['configpenaltyscheme'] = 'アダプティブモードの場合、それぞれの誤答に関して、ペナルティーが差し引かれます。';
 $string['configpopup'] = '小テストの受験時、ポップアップウィンドを開きます。また、小テストの受験中、コピー&ペースト等を制限するため、Javaスクリプトを使用します。';
-$string['configrequirepassword'] = '学生が小テストを受験するには、このパスワードを事前に入力する必要があります。';
+$string['configrequirepassword'] = '学生が小テストを受験するにはこのパスワードを事前に入力する必要があります。';
 $string['configrequiresubnet'] = '学生は、これらのコンピュータからのみ小テストを受験することができます。';
 $string['configreviewoptions'] = 'これらのオプションでは、ユーザが小テスト受験をレビューまたは小テストレポートを閲覧する場合、どの情報を閲覧できるかコントロールします。';
 $string['configshowblocks'] = '小テスト受験中にブロックを表示します。';
@@ -230,7 +230,7 @@ $string['createmultiple'] = '複数問題の作成';
 $string['createnewquestion'] = '問題の作成';
 $string['createquestionandadd'] = '新しい問題を作成して、小テストに追加する';
 $string['custom'] = 'カスタムフォーマット';
-$string['dataitemneed'] = '有効な問題を作成するには、あなたは少なくとも一組のデータアイテムを追加する必要があります。';
+$string['dataitemneed'] = '有効な問題を作成するにはあなたは少なくとも一組のデータアイテムを追加する必要があります。';
 $string['datasetdefinitions'] = 'カテゴリ {$a} の再利用可能なデータセット定義';
 $string['datasetnumber'] = 'No.';
 $string['daysavailable'] = '日利用可能';
@@ -373,11 +373,7 @@ $string['fractionsnomax'] = 'この問題で満点を取ることができるよ
 $string['fromfile'] = 'ファイルからインポートする:';
 $string['functiondisabledbysecuremode'] = 'この機能は現在無効にされています。';
 $string['generalfeedback'] = '全般に対するフィードバック';
-$string['generalfeedback_help'] = '<p>全般に対するフィードバックは問題の受験後、学生に表示されるテキストです。問題タイプおよび学生の解答によって決まるフィードバックとは異なり、同じ全般に対するフィードバックテキストがすべての学生に表示されます。</p>
-
-<p>全般に対するフィードバックがいつ表示されるか、小テスト設定ページの「学生はレビューできる」チェックボックスでコントロールすることができます。</p>
-
-<p>どのような知識がこの問題で問われているのかという背景に関して、全般に対するフィードバックを使用して学生に提示することができます。または問題が分からない場合、さらなる情報のリンクを与えて学生が利用できるようにすることもできます。</p>';
+$string['generalfeedback_help'] = '全般に対するフィードバックは問題の受験後、学生に表示されるテキストです。問題タイプおよび学生の解答によって決まるフィードバックとは異なり、同じ全般に対するフィードバックテキストがすべての学生に表示されます。';
 $string['graceperiod'] = '送信猶予期間';
 $string['graceperiod_desc'] = '制限時間経過後に関して、「開いている受験を送信できる場合は猶予期間を設けますが、さらに問題に解答することはできません」が設定されている場合、デフォルトの猶予期間 (秒) が許可されます。';
 $string['graceperiod_help'] = '制限時間経過後に関して、「開いている受験を送信できる場合は猶予期間を設けますが、さらに問題に解答することはできません」が設定されている場合、デフォルトの猶予期間 (秒) が許可されます。';
@@ -568,9 +564,9 @@ $string['optional'] = 'オプション';
 $string['orderandpaging'] = '問題順およびページング';
 $string['orderandpaging_help'] = 'それぞれの問題の反対側にある番号10、20、30、 ... は問題順を意味します。問題を追加できるよう番号は10ずつ増やされます。問題順を並べ替えるには、番号を変更した後、「問題を並べ替える」ボタンをクリックしてください。
 
-特定の問題の後に改ページを追加するには、問題の横にあるチェックボックスをチェックした後、「選択した問題の後に改ページを追加する」ボタンをクリックしてください。
+特定の問題の後に改ページを追加するには問題の横にあるチェックボックスをチェックした後、「選択した問題の後に改ページを追加する」ボタンをクリックしてください。
 
-1ページあたりの問題数を調整するには、「改ページ調整」ボタンをクリックして、希望する1ページあたりの問題数を入力してください。';
+1ページあたりの問題数を調整するには「改ページ調整」ボタンをクリックして、希望する1ページあたりの問題数を入力してください。';
 $string['orderingquiz'] = '問題順およびページング';
 $string['orderingquizx'] = '問題順およびページング: {$a}';
 $string['outcomesadvanced'] = 'アウトカムを高度な設定にする';
@@ -640,7 +636,7 @@ $string['previewquiz'] = '{$a} のプレビュー';
 $string['previewquiznow'] = '小テストをプレビューする';
 $string['previous'] = '前の状態に戻す';
 $string['publish'] = '公開';
-$string['publishedit'] = 'このカテゴリへ問題を追加または編集するには、あなたにはコース公開に関するパーミッションが割り当てられている必要があります。';
+$string['publishedit'] = 'このカテゴリへ問題を追加または編集するにはあなたにはコース公開に関するパーミッションが割り当てられている必要があります。';
 $string['qbrief'] = 'Q. {$a}';
 $string['qname'] = '問題名';
 $string['qti'] = 'IMS QTIフォーマット';
@@ -758,9 +754,9 @@ $string['reportshowonly'] = '受験のみ表示する';
 $string['reportshowonlyfinished'] = 'ユーザごとに最大1件の終了した受験を表示する ({$a})';
 $string['reportsimplestat'] = '単純統計';
 $string['reportusersall'] = '小テストを受験したユーザすべて';
-$string['reportuserswith'] = '小テストを受験したことのある登録ユーザ';
-$string['reportuserswithorwithout'] = '小テストを受験したことのある、または受験したことのない登録ユーザ';
-$string['reportuserswithout'] = '小テストを受験したことのない登録ユーザ';
+$string['reportuserswith'] = '小テストを受験したことのある受講登録済みユーザ';
+$string['reportuserswithorwithout'] = '小テストを受験したことのある、または受験したことのない受講登済み録ユーザ';
+$string['reportuserswithout'] = '小テストを受験したことのない受講登録済みユーザ';
 $string['reportwhattoinclude'] = 'レポートに含む内容';
 $string['requirepassword'] = 'パスワード';
 $string['requirepassword_help'] = 'ここにパスワードを設定した場合、参加者は小テストを受ける前に同じパスワードを入力する必要があります。';
@@ -954,7 +950,7 @@ $string['upgradingveryoldquizattempts'] = '非常に古い小テスト受験の�
 $string['url'] = 'URL';
 $string['usedcategorymoved'] = 'このカテゴリは公開され、他のコースで使用されているため、維持したままサイトレベルに移動されました。';
 $string['useroverrides'] = 'ユーザオーバーライド';
-$string['usersnone'] = 'この小テストにアクセスした学生はいません。';
+$string['usersnone'] = 'この小テストにアクセスできる学生はいません。';
 $string['validate'] = '確認';
 $string['viewallanswers'] = '{$a} 件の受験結果を表示する';
 $string['viewallreports'] = '{$a} 件の受験レポートを表示する';
@@ -966,5 +962,5 @@ $string['windowclosing'] = 'このウィンドウは間もなく閉じられま�
 $string['withsummary'] = '(統計概要を含む)';
 $string['wronguse'] = 'あなたはこのページをそのように使うことはできません。';
 $string['xhtml'] = 'XHTML';
-$string['youneedtoenrol'] = 'この小テストを受験する前に、このコースに受講登録する必要があります。';
+$string['youneedtoenrol'] = 'この小テストを受験する前に、あなたがこのコースに受講登録している必要があります。';
 $string['yourfinalgradeis'] = 'あなたの小テスト最終評点は {$a} です。';

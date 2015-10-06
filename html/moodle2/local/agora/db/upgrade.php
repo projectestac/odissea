@@ -272,7 +272,13 @@ mybadges,badges|/badges/mybadges.php|award");
         upgrade_plugin_savepoint(true, 2015071300, 'local', 'agora');
     }
 
+    if ($oldversion < 2015100200) {
 
+        unset_config('apligestlogpath');
+
+        // Main savepoint reached.
+        upgrade_plugin_savepoint(true, 2015100200, 'local', 'agora');
+    }
 
     return true;
 }

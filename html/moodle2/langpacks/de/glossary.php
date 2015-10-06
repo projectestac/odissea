@@ -30,7 +30,7 @@ $string['addentry'] = 'Eintrag hinzufügen';
 $string['addingcomment'] = 'Kommentar hinzufügen';
 $string['alias'] = 'Alternativbegriff';
 $string['aliases'] = 'Alternativbegriff(e)';
-$string['aliases_help'] = 'Zu jedem Glossareintrag kann eine Reihe von Alternativbegriffen (Schlagworten, Synonymen, Keywords, Tags) angegeben werden. Tragen Sie jeden Begriff in einer neuen Zeile ein (nicht als kommagetrennte Liste).
+$string['aliases_help'] = 'Zu jedem Glossareintrag kann eine Reihe von Alternativbegriffen (Schlagwörter, Synonyme, Keywords, Tags) angegeben werden. Tragen Sie jeden Begriff in einer neuen Zeile ein (nicht als kommagetrennte Liste).
 
 Wenn ein Glossareintrag automatisch verlinkt wird wird jeder dieser Begriffe ebenfalls markiert.';
 $string['allcategories'] = 'Alle Kategorien';
@@ -196,7 +196,7 @@ $string['filetoimport'] = 'Datei importieren';
 $string['filetoimport_help'] = 'Wählen Sie eine lokal auf Ihrem Computer befindliche XML-Datei aus, die die zu importierenden Einträge enthält.';
 $string['fillfields'] = 'Begriff und Definition sind Pflichtfelder.';
 $string['filtername'] = 'Autoverlinkung zum Glossar';
-$string['fullmatch'] = 'Nur vollständige Worte';
+$string['fullmatch'] = 'Nur vollständige Wörter';
 $string['fullmatch_help'] = 'Wenn diese Option aktiviert ist, wird ein Eintrag nur dann verlinkt, wenn ein vollständiges Wort im Text mit dem Eintrag im Glossar übereinstimmt. Dabei wird beispielsweise keine Verlinkung erzeugt, wenn ein im Glossar eingetragener Begriff "Konstrukt" lautet, aber im Text das Wort "Konstruktivität" vorkommt.';
 $string['glossary:addinstance'] = 'Glossar hinzufügen';
 $string['glossary:approve'] = 'Einträge freigeben oder nicht freigegeben';

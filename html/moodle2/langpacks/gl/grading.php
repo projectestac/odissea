@@ -30,6 +30,7 @@ $string['activemethodinfonone'] = 'Non hai seleccionado un método de cualificac
 $string['changeactivemethod'] = 'Cambiar o método activo de cualificación a';
 $string['clicktoclose'] = 'premer para pechar';
 $string['exc_gradingformelement'] = 'Non é posíbel crear instancias do elemento formulario de cualificación';
+$string['formnotavailable'] = 'Seleccionou o método de cualificación avanzada para o seu uso, mais o formato de cualificación aínda non está dispoñíbel. Terá que definilo previamente utilizando a ligazón existente no bloque de Administración.';
 $string['gradingformunavailable'] = 'Teña en conta que o formulario de cualificación avanzada non está preparado neste momento. Empregarase o método de cualificación simple ata que formulario teña un estado correcto.';
 $string['gradingmanagement'] = 'Cualificación avanzada';
 $string['gradingmanagementtitle'] = 'Cualificación avanzada: {$a->component} ({$a->area})';

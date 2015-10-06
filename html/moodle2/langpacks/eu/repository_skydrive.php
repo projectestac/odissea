@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Bezeroaren IDa';
+$string['configplugin'] = 'Konfiguratu Microsoft OneDrive';
 $string['pluginname'] = 'Microsoft OneDrive';
 $string['secret'] = 'Sekretua';
 $string['skydrive:view'] = 'Ikusi OneDrive';

@@ -52,6 +52,7 @@ $string['hidepanel'] = 'Agochar o panel';
 $string['moveblock'] = 'Mover o bloque {$a}';
 $string['moveblockafter'] = 'Mover o bloque despois do bloque {$a}';
 $string['moveblockbefore'] = 'Mover o bloque antes do bloque {$a}';
+$string['moveblockinregion'] = 'Mover o bloque para a rexión {$a}';
 $string['movingthisblockcancel'] = 'Movendo este bloque ({$a})';
 $string['onthispage'] = 'Nesta páxina';
 $string['pagetypes'] = 'Tipos de páxina';

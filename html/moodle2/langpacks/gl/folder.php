@@ -33,6 +33,7 @@ Vexa tamén que a vista de accións dos participantes non se poderá rexistrar n
 $string['displayinline'] = 'Sobre unha páxina do curso';
 $string['displaypage'] = 'Nunha páxina separada';
 $string['dnduploadmakefolder'] = 'Descomprimir os ficheiros e crear un cartafol';
+$string['eventfolderupdated'] = 'Cartafol actualizado';
 $string['folder:addinstance'] = 'Engadir un novo cartafol';
 $string['foldercontent'] = 'Ficheiros e subcartafoles';
 $string['folder:managefiles'] = 'Xestionar ficheiros no módulo de cartafol';

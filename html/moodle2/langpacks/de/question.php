@@ -254,6 +254,7 @@ $string['linkedfiledoesntexist'] = 'Verbundene Datei {$a} existiert nicht';
 $string['makechildof'] = 'Unterkategorie  von \'{$a}\' erzeugen';
 $string['makecopy'] = 'Kopieren';
 $string['maketoplevelitem'] = 'Nach ganz oben bewegen';
+$string['manualgradeinvalidformat'] = 'Dies ist eine ungültige Zahl.';
 $string['manualgradeoutofrange'] = 'Dies Bewertung ist außerhalb des gültigen Bereichs';
 $string['manuallygraded'] = 'Manuell bewertete Punkte {$a->mark} mit Kommentar: {$a->comment}';
 $string['mark'] = 'Punkte';

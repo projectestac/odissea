@@ -41,7 +41,7 @@ $string['defaultrole_desc'] = '自己登録中にユーザに割り当てるロ�
 $string['enrolenddate'] = '終了日';
 $string['enrolenddate_help'] = '有効にした場合、ユーザはこの日まで受講登録することができます。';
 $string['enrolenddaterror'] = '登録終了日を開始日より早くすることはできません。';
-$string['enrolme'] = '私を受講登録する';
+$string['enrolme'] = '私を登録する';
 $string['enrolperiod'] = '登録期間';
 $string['enrolperiod_desc'] = '登録が有効な場合のデフォルト登録期間 (秒) です。ゼロが設定された場合、登録期間はデフォルトで無制限となります。';
 $string['enrolperiod_help'] = '登録が有効な場合の登録期間です。ユーザが登録された時点で開始します。無効にされた場合、登録期間は無制限となります。';
@@ -55,20 +55,20 @@ $string['expirymessageenrolledbody'] = '{$a->user} 様
 
 詳細は {$a->enroller} にご連絡ください。';
 $string['expirymessageenrolledsubject'] = '自己登録期限切れ通知';
-$string['expirymessageenrollerbody'] = '下記のユーザに関して、コース「 {$a->course} 」の自己登録は次の {$a->threshold} で有効期限切れとなります:
+$string['expirymessageenrollerbody'] = '下記のユーザに関してコース「 {$a->course} 」の自己登録は次の {$a->threshold} で有効期限切れとなります:
 
 {$a->users}
 
-登録期間を延期するには、{$a->extendurl}　にアクセスしてください。';
+登録期間を延期するには {$a->extendurl}　にアクセスしてください。';
 $string['expirymessageenrollersubject'] = '自己登録期限切れ通知';
 $string['groupkey'] = 'グループ登録キーを使用する';
 $string['groupkey_desc'] = 'デフォルトでグループ登録キーを使用します。';
 $string['groupkey_help'] = 'コース登録キーを知っているユーザのみにコースアクセスを制限することに加えて、グループ登録キーを使用することで、ユーザは受講登録したコース内のグループに自動追加されます。
 
-注意: グループ登録キーを使用するには、グループ設定内のグループ登録キーを設定すると共に、コース設定内の登録キーを設定する必要があります。';
+注意: グループ登録キーを使用するにはグループ設定内のグループ登録キーを設定すると共に、コース設定内の登録キーを設定する必要があります。';
 $string['longtimenosee'] = '次の期間活動停止の場合、登録解除する';
 $string['longtimenosee_help'] = 'ユーザが長期間コースにアクセスしていない場合、自動的に登録解除されます。このパラメータでは、その制限期間を指定します。';
-$string['maxenrolled'] = '最大登録ユーザ';
+$string['maxenrolled'] = '最大受講登録済みユーザ数';
 $string['maxenrolled_help'] = '自己登録できる最大ユーザ数を指定してください。ゼロは制限なしを意味します。';
 $string['maxenrolledreached'] = 'すでに自己登録可能な最大ユーザ数に達しています。';
 $string['messageprovider:expiry_notification'] = '自己登録期限切れ通知';
@@ -90,7 +90,7 @@ $string['requirepassword'] = '登録キーを要求する';
 $string['requirepassword_desc'] = '新しいコースに登録キーを要求します。また、既存のコースからの登録キーの削除を防ぎます。';
 $string['role'] = 'デフォルトの割り当てロール';
 $string['self:config'] = '自己登録インスタンスを設定する';
-$string['self:manage'] = '登録ユーザを管理する';
+$string['self:manage'] = '受講登録済みユーザを管理する';
 $string['self:unenrol'] = 'コースからユーザを登録解除する';
 $string['self:unenrolself'] = 'コースから自分自身を登録解除する';
 $string['sendcoursewelcomemessage'] = 'コースウェルカムメッセージを送信する';
@@ -99,7 +99,7 @@ $string['showhint'] = 'ヒントを表示する';
 $string['showhint_desc'] = 'ゲストアクセスキーの最初の文字を表示します。';
 $string['status'] = '既存の登録を有効にする';
 $string['status_desc'] = '新しいコースにおける自己登録を有効にします。';
-$string['status_help'] = 'この設定を無効にした場合、自己登録は停止され、新しいユーザが登録できないようになります。';
+$string['status_help'] = 'この設定を無効にした場合、既存の自己登録が停止されて、新しいユーザは登録できないようになります。';
 $string['unenrol'] = 'ユーザを登録解除する';
 $string['unenrolselfconfirm'] = '本当にコース「 {$a} 」からあなたを登録解除してもよろしいですか?';
 $string['unenroluser'] = '本当に「 {$a->user} 」をコース「 {$a->course} 」から登録解除してもよろしいですか?';

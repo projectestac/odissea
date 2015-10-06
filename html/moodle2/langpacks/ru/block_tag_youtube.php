@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Все категории';
+$string['apierror'] = 'Ключ API Youtube не установлен. Обратитесь к администратору.';
+$string['apikey'] = 'Ключ API';
 $string['autosvehicles'] = 'Автомобили и трпнспорт';
 $string['category'] = 'Категория';
 $string['comedy'] = 'Комедия';
@@ -41,7 +43,7 @@ $string['newspolitics'] = 'Новости и политика';
 $string['numberofvideos'] = 'Видео';
 $string['peopleblogs'] = 'Люди и блоги';
 $string['petsanimals'] = 'Домашние и дикие животные';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
 $string['scienceandtech'] = 'Наука и техника';
 $string['sports'] = 'Спорт';
 $string['tag_youtube:addinstance'] = 'Добавлять новый блок «YouTube»';

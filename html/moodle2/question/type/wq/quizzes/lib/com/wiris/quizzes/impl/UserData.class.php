@@ -6,6 +6,31 @@ class com_wiris_quizzes_impl_UserData extends com_wiris_util_xml_SerializableImp
 		parent::__construct();
 		$this->randomSeed = -1;
 	}}
+	public function setParameter($name, $value) {
+		if(!_hx_deref(new com_wiris_quizzes_impl_HTMLTools())->isQuizzesIdentifier($name)) {
+			throw new HException("Invalid parameter \"name\".");
+		}
+		if($this->parameters === null) {
+			$this->parameters = new _hx_array(array());
+		}
+		$i = null;
+		{
+			$_g1 = 0; $_g = $this->parameters->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if(_hx_array_get($this->parameters, $i1)->name === $name) {
+					$this->parameters->remove($this->parameters[$i1]);
+				}
+				unset($i1);
+			}
+		}
+		if($value !== null && !($value === "")) {
+			$p = new com_wiris_quizzes_impl_Parameter();
+			$p->name = $name;
+			$p->set($value);
+			$this->parameters->push($p);
+		}
+	}
 	public function ensureAnswerPlace($index) {
 		if($index < 0) {
 			throw new HException("Invalid index: " . _hx_string_rec($index, ""));
@@ -61,8 +86,10 @@ class com_wiris_quizzes_impl_UserData extends com_wiris_util_xml_SerializableImp
 		$s->beginTag(com_wiris_quizzes_impl_UserData::$tagName);
 		$this->randomSeed = $s->childInt("randomSeed", $this->randomSeed, -1);
 		$this->answers = $s->serializeArrayName($this->answers, "answers");
+		$this->parameters = $s->serializeArrayName($this->parameters, "parameters");
 		$s->endTag();
 	}
+	public $parameters;
 	public $answers;
 	public $randomSeed;
 	public function __call($m, $a) {

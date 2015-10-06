@@ -79,6 +79,21 @@ class com_wiris_plugin_impl_TestImpl implements com_wiris_plugin_api_Test{
 		$s2 = str_replace("\"", com_wiris_plugin_impl_TestImpl_2($this, $condition, $ex, $imageUrl, $mml, $outp, $output, $p, $param, $platform, $random, $reportText, $s2, $solutionLink, $testName), $s2);
 		$reportText = $this->plugin->newTextService()->filter("square root: " . $s2, $p);
 		$output .= $this->createTableRow($testName, $reportText, $solutionLink, $condition);
+		$testName = "Connecting to www.wiris.net";
+		$solutionLink = "";
+		$condition = true;
+		try {
+			$h = new com_wiris_plugin_impl_HttpImpl("http://www.wiris.net", null);
+			$h->request(true);
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$ex2 = $_ex_;
+			{
+				$condition = false;
+			}
+		}
+		$reportText = "Checking if WIRIS server is reachable";
+		$output .= $this->createTableRow($testName, $reportText, $solutionLink, $condition);
 		$debug = $this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$DEBUG, "false") === "true";
 		if($debug) {
 			$testName = "Font family";

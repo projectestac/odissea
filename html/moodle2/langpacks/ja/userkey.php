@@ -26,16 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['createnewkey'] = '新しいユーザキーを作成する';
-$string['createuserkey'] = 'ユーザキーの作成';
+$string['createuserkey'] = 'ユーザキーを作成する';
 $string['deletekeyconfirm'] = '本当にこのユーザキーを削除してもよろしいですか?';
-$string['edituserkey'] = 'ユーザキーの編集';
+$string['edituserkey'] = 'ユーザキーを編集する';
 $string['keyiprestriction'] = 'キーIP制限';
-$string['keyiprestriction_help'] = '<p>このデータにアクセスすることのできる唯一のIPアドレスまたはIPアドレスのレンジを入力してください。IP制限を無効にするには、空白のままにしてください (お勧めできません)。</p>';
+$string['keyiprestriction_help'] = 'このデータにアクセスすることのできる唯一のIPアドレスまたはIPアドレスのレンジを入力してください。IP制限を無効にするには空白のままにしてください (お勧めできません)。';
 $string['keymanager'] = 'キーマネージャ';
 $string['keyvaliduntil'] = 'キーの有効期限';
-$string['keyvaliduntil_help'] = '<p>それ以降、キーが無効になる任意の日時を選択してください (セキュリティ上お勧めします)。</p>';
+$string['keyvaliduntil_help'] = 'それ以降、キーが無効になる任意の日時を選択してください (セキュリティ向上のためお勧めします)。';
 $string['keyvalue'] = 'キー値';
 $string['newuserkey'] = '新しいユーザキー';
 $string['userkey'] = 'ユーザキー';
-$string['userkey_help'] = 'このエクスポートプラグインにより公開されるデータに対して、ユーザがMoodleへのログインなしでアクセスするために必要な保存キーを選択してください。「新しいユーザキーを作成する」を選択することで、このフォームの送信時に新しいユーザキーを作成することができます。';
+$string['userkey_help'] = 'このエクスポートプラグインにより公開されるデータに対して、ユーザがMoodleへのログインなしでアクセスするために必要な保存キーを選択してください。「新しいユーザキーを作成する」を選択することで、このフォームの送信時に新しいキーを作成することができます。';
 $string['userkeys'] = 'ユーザキー';

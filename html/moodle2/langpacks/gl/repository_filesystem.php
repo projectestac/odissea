@@ -37,4 +37,6 @@ $string['nosubdir'] = 'É necesario crear polo menos un cartafol dentro do direc
 $string['path'] = 'Seleccionar un subdirectorio';
 $string['pluginname'] = 'Sistema de ficheiros:';
 $string['pluginname_help'] = 'Crear un repositorio de directorio local';
+$string['relativefiles'] = 'Permitir ficheiros relativos';
+$string['relativefiles_desc'] = 'Isto permite que todos os ficheiros no repositorio sexan accesíbeis empregando ligazóns relativas.';
 $string['root'] = 'Raíz';

@@ -39,7 +39,7 @@ $string['pluginname'] = 'Nutzerupload';
 $string['renameerrors'] = 'Fehler beim Umbenennen';
 $string['requiredtemplate'] = 'Erforderlich. Geben Sie hier die Vorlagestruktur ein (%l = Nachname, %f = Vorname, %u = Anmeldename). In der Hilfedatei finden Sie weitere Details und Beispiele.';
 $string['rowpreviewnum'] = 'Vorschau für Zeilen';
-$string['uploadpicture_baduserfield'] = 'Die angegebene Nutzereigenschaft ist ungültig. Bitte versuchen Sie es noch einmal.';
+$string['uploadpicture_baduserfield'] = 'Die gewählte Nutzermerkmal ist ungültig. Versuchen Sie es noch einmal.';
 $string['uploadpicture_cannotmovezip'] = 'Die ZIP-Datei kann nicht in das temporäre Verzeichnis verschoben werden.';
 $string['uploadpicture_cannotprocessdir'] = 'Die entzippten Dateien können nicht verarbeitet werden.';
 $string['uploadpicture_cannotsave'] = 'Das Nutzerbild für {$a} kann nicht gespeichert werden. Prüfen Sie die ursprüngliche Bilddatei.';
@@ -48,7 +48,7 @@ $string['uploadpicture_invalidfilename'] = 'Die Bilddatei {$a} enthält ungülti
 $string['uploadpicture_overwrite'] = 'Vorhandene Nutzerbilder überschreiben?';
 $string['uploadpictures'] = 'Nutzerbilder hochladen';
 $string['uploadpictures_help'] = 'Nutzerbilder können als ZIP-Paket mit mehreren Bilddateien hochgeladen werden. Moodle ordnet die enthaltenen Dateien den Nutzerkonten als Portrait zu, wenn die Bilddateien geeignet benannt sind. Wenn Sie als Nutzerattribut den Nutzernamen gewählt haben, wird die Bilddatei nutzer1234.jpg für das Nutzerkonto nutzer1234 verwendet. Zulässige Bilddateitypen sind gif, jpg und png.';
-$string['uploadpicture_userfield'] = 'Nutzereigenschaft, die fürdie Zuordnung der Nutzerbilder verwandt werden soll:';
+$string['uploadpicture_userfield'] = 'Nutzermerkmal für die Zuordnung der Nutzerbilder:';
 $string['uploadpicture_usernotfound'] = 'Nutzer/in mit \'{$a->userfield}\'-Wert von \'{$a->uservalue}\' existiert nicht. Wird übersprungen.';
 $string['uploadpicture_userskipped'] = 'Nutzerbild {$a} exitiert bereits und wird nicht überschrieben.';
 $string['uploadpicture_userupdated'] = 'Nutzerbild {$a} aktualisiert';

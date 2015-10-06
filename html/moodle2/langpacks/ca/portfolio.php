@@ -143,7 +143,7 @@ $string['moderatefilesizethreshold'] = 'Mida de fitxer de transferència moderad
 $string['moderatefilesizethresholddesc'] = 'Mida del fitxer per damunt d\'aquest llindar es considera que prenen un temps moderat de transferència';
 $string['multipleinstancesdisallowed'] = 'S\'està intentant crear una altra instància del connector que ha rebutjat múltiples instàncies ({$a})';
 $string['mustsetcallbackoptions'] = 'Cal que configureu les retrocridades ja sigui al constructor portfolio_add_button o utilitzant el mètode set_callback_options';
-$string['noavailableplugins'] = 'Perdoneu però no hi ha disponibles portafolis per exportar';
+$string['noavailableplugins'] = 'No hi ha disponibles portafolis per exportar';
 $string['nocallbackclass'] = 'No es troba la classe de la crida de retorn a utilitzar ({$a})';
 $string['nocallbackcomponent'] = 'No es pot trobar el component especificat {$a}.';
 $string['nocallbackfile'] = 'Alguna cosa en el mòdul que esteu tractant d\'exportar està trencada - no s\'ha trobat el fitxer que cal ({$a})';
@@ -151,11 +151,11 @@ $string['noclassbeforeformats'] = 'Us cal configurar la classe de la crida de re
 $string['nocommonformats'] = 'No hi ha formats comuns entre el connector de portafolis disponible i la crida lloc {$a->location} (formats compatibles {$a->formats})';
 $string['noinstanceyet'] = 'No han estat seleccionats';
 $string['nologs'] = 'No hi ha registres per mostrar!';
-$string['nomultipleexports'] = 'Perdoneu però el portafolis de destinació ({$a->plugin}) no funciona amb exportacions múltiples simultànies. Si us plau <a href="{$a->link}">acabeu primer l\'actual</a> i torneu-ho a intentar.';
+$string['nomultipleexports'] = 'El portafolis de destinació ({$a->plugin}) no funciona amb exportacions múltiples simultànies. <a href="{$a->link}">Acabeu-ne primer l\'actual</a> i torneu-ho a intentar.';
 $string['nonprimative'] = 'Un valor no simple ha sigut passat com argument d\'una crida de retorn al portfolio_add_button. S\'esta rebutjant continuar. La clau ha estat {$a->key} i el valor ha estat {$a->value}';
-$string['nopermissions'] = 'Perdoneu però no teniu permisos per exportar fitxers des d\'aquesta zona.';
-$string['notexportable'] = 'Perdoneu però el tipus de document que voleu exportar no és exportable.';
-$string['notimplemented'] = 'Perdoneu però esteu intentant exportar contingut en un format que no està implementat ({$a})';
+$string['nopermissions'] = 'No teniu els permisos necessaris per a exportar fitxers des d\'aquesta zona.';
+$string['notexportable'] = 'El tipus de document que intenteu exportar no és exportable.';
+$string['notimplemented'] = 'Esteu intentant exportar contingut en un format que encara no està implementat ({$a})';
 $string['notyetselected'] = 'No s\'ha seleccionat encara';
 $string['notyours'] = 'Esteu tractant de reprendre una exportació de portafolis que no us pertany!';
 $string['nouploaddirectory'] = 'No es pot crear un directori temporal per a empaquetar-hi les vostres dades.';

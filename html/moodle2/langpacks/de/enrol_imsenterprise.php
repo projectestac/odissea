@@ -36,8 +36,8 @@ Wenn keine Kategorie mit dem Namen existiert wird diese neu als verborgene Kateg
 $string['createnewcourses'] = 'Erstelle neue (verborgene) Kurse, wenn nicht in Moodle gefunden';
 $string['createnewcourses_desc'] = 'Funktion: Das IMS-Einschreibungsplugin kann neue Kurse anlegen wenn es diese in der IMS Datei, nicht aber in der Moodle-Datenbank findet. Jeder neue Kurs wird so angelegt, dasser für Teilnehmer nicht verfügbar ist. ';
 $string['createnewusers'] = 'Erstelle neue Nutzerzugänge, wenn Nutzer noch nicht in Moodle registriert';
-$string['createnewusers_desc'] = 'Die IMS Enterprise Einschreibungsdatei enthält in der Regel eine Reihe von Teilnehmern. Mit der Funktion kann für jeden Nutzer, der noch nicht in Moodle registriert ist, ein Account angelegt werden.
-Teilnehmer werden zunächst aufgrund der ID-Nummer und dann nach dem Anmeldenamen in Moodle gesucht. Aus dem IMS Enterprise Plugin werden keine Kennwörter importiert. Hierfür wird die Nutzung eines Authentifizierungsplugin empfohlen.';
+$string['createnewusers_desc'] = 'Die IMS Enterprise Einschreibungsdatei enthält in der Regel eine Liste von Teilnehmer/innen. Mit der Funktion kann für Personen, die noch nicht in Moodle registriert sind, ein Nutzerkonto angelegt werden.
+Teilnehmer/innen werden zunächst aufgrund der ID-Nummer und dann nach dem Anmeldenamen in Moodle gesucht. Aus dem IMS Enterprise Plugin werden keine Kennwörter importiert. Hierfür wird die Nutzung eines Authentifizierungsplugin empfohlen.';
 $string['cronfrequency'] = 'Häufigkeit des Prozesses';
 $string['deleteusers'] = 'Nutzerzugänge löschen, wenn in IMS-Daten definiert';
 $string['deleteusers_desc'] = 'Funktion: Mitden IMS Enterprise Einschreibungsdaten kann mann auch Nutzeraccounts löschen wenn der "recstatus" auf auf \'3\' gesetzt wird. In Moodle wird der Datensatz des Nutzers dann nicht gelöscht, sondern der Flag auf gelöscht gesetzt.';

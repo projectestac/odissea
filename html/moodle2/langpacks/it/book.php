@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = 'Aggiungi un nuovo capitolo';
 $string['book:addinstance'] = 'Aggiungere libri';
 $string['book:edit'] = 'Modificare capitoli';
-$string['book:read'] = 'Leggere libro';
+$string['book:read'] = 'Visualizzare libri';
 $string['book:viewhiddenchapters'] = 'Visualizzare capitoli nascosti';
 $string['chapters'] = 'Capitoli';
 $string['chaptertitle'] = 'Titolo del capitolo';

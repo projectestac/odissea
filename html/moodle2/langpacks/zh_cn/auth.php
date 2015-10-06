@@ -67,13 +67,7 @@ $string['auto_add_remote_users'] = '自动添加远程用户';
 $string['changepassword'] = '更改密码 URL';
 $string['changepasswordhelp'] = '在这里指定一个位置，用户在忘记了用户名或密码后，可以在那里重新获得或更改。它将以一个按钮的形式显示在登录页面和用户页面。如果留空不填，就不会有按钮出现。';
 $string['chooseauthmethod'] = '选择一个身份认证方法：';
-$string['chooseauthmethod_help'] = '<p align="center"><b>改变认证方法</b></p>
-
-<p>这个菜单允许您改变特定用户的认证方法。</p>
-
-<p>请注意这依赖于这个网站已经安装能够使用的认证方法以及您对它们所进行的设置。</p>
-
-<p>此处的错误设置，可能会导致用户无法登录甚至删除其帐号，所以使用时请小心。</p>';
+$string['chooseauthmethod_help'] = '此设置决定用户登录时的验证方式。只可以选择启用了的验证插件，否则用户就无法继续登录了。想禁止用户登录，请选择“不要登录”。';
 $string['createpassword'] = '生成密码并通知用户';
 $string['createpasswordifneeded'] = '如果需要则创建密码';
 $string['emailchangecancel'] = '取消 email 变更';

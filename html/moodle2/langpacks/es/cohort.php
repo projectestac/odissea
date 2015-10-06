@@ -83,3 +83,5 @@ $string['uploadcohorts_help'] = 'Las cohortes se pueden cargas a través de arch
 $string['uploadedcohorts'] = 'Subidas {$a} cohortes';
 $string['useradded'] = 'Usuario añadido a la cohorte "{$a}"';
 $string['visible'] = 'Visible';
+$string['visible_help'] = 'Cualquier cohorte puede ser vista por usuarios que tengan la capacidad \'moodle/cohort:view\' en el contexto de cohorte. <br/>
+Las cohortes visibles también pueden ser vistas por usuarios en los cursos subyacentes.';

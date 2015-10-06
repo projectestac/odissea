@@ -46,6 +46,14 @@ class script_enable_service extends agora_script_base{
         $DB->update_record('user', $adminuser);
         // Force change of password of user admin
         set_user_preference('auth_forcepasswordchange', 1, $adminuser);
+        if (!is_siteadmin($adminuser)) {
+            $admins = explode(',', $CFG->siteadmins);
+            $admins[] = $adminuser->id;
+            set_config('siteadmins', implode(',', $admins));
+            mtrace('Set admin as siteadmin', '<br>');
+        }
+
+
         mtrace('Usuari admin configurat', '<br/>');
 
         // Upgrade Moodle

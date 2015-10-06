@@ -40,6 +40,7 @@ $string['choices'] = 'Имеющиеся варианты';
 $string['clozeaid'] = 'Введите пропущенное слово';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
 $string['correctfeedback'] = 'Для любого правильного ответа';
+$string['deletedchoice'] = 'Этот вариант ответа был удален после того, как попытка была начата.';
 $string['errfractionsaddwrong'] = 'Выбранные варианты ответа не составляют 100%. Они составляют {$a}%';
 $string['errfractionsnomax'] = 'Один из вариантов ответа должен составлять 100%, чтобы этот вопрос мог быть оценен.';
 $string['errgradesetanswerblank'] = 'Оценка задана, а ответ пуст';

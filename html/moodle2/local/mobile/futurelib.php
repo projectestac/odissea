@@ -79,19 +79,19 @@ if (!function_exists('chat_get_latest_messages')) {
     }
 }
 
-if (!function_exists('choice_get_my_choice_response')) {
+if (!function_exists('choice_get_my_response')) {
     /**
      * Return my responses on a specific choice.
      * @param object $choice
      * @return array
      */
-    function choice_get_my_choice_response($choice) {
+    function choice_get_my_response($choice) {
         global $DB, $USER;
         return $DB->get_records('choice_answers', array('choiceid' => $choice->id, 'userid' => $USER->id));
     }
 }
 
-if (!function_exists('choice_can_see_results')) {
+if (!function_exists('choice_can_view_results')) {
     /**
      * Return true if we are allowd to see choice results as student
      * @param object $choice Choice
@@ -99,7 +99,7 @@ if (!function_exists('choice_can_see_results')) {
      * @param bool|null $choiceopen choice open
      * @return bool True if we can see results, false if not.
      */
-    function choice_can_see_results($choice, $current = null, $choiceopen = null) {
+    function choice_can_view_results($choice, $current = null, $choiceopen = null) {
 
         if (is_null($choiceopen)) {
             $timenow = time();
@@ -110,7 +110,7 @@ if (!function_exists('choice_can_see_results')) {
             }
         }
         if (is_null($current)) {
-            $current = choice_get_my_choice_response($choice);
+            $current = choice_get_my_response($choice);
         }
 
         if ($choice->showresults == CHOICE_SHOWRESULTS_ALWAYS or

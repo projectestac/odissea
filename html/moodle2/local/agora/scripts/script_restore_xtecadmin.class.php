@@ -60,33 +60,25 @@ class script_restore_xtecadmin extends agora_script_base{
         $xtecadmin->trackforums = 0;
         $DB->update_record('user', $xtecadmin);
 
-        // Set as siteadmin
-        if (!is_siteadmin($xtecadmin)) {
-            // The main admin is the last
-            $admins = explode(',', $CFG->siteadmins);
-            $admins[] = $xtecadmin->id;
-            set_config('siteadmins', implode(',', $admins));
-            mtrace('Set as siteadmin', '<br>');
-            mtrace('Set as main admin', '<br>');
-        } else {
-            mtrace('It is siteadmin', '<br>');
-            $mainadmin = get_admin();
-            if ($xtecadmin->id != $mainadmin->id) {
-                $adminsaux = explode(',', $CFG->siteadmins);
-                $admins = array();
-                // Reorder it to add it at the end
-                foreach ($adminsaux as $admin) {
-                    if ($admin == $xtecadmin->id) {
-                        $admins[] = $admin;
-                    }
-                }
-                $admins[] = $xtecadmin->id;
-                set_config('siteadmins', implode(',', $admins));
-                mtrace('Set as main admin', '<br>');
-            } else {
-                mtrace('It is main admin', '<br>');
+        $newmain = $xtecadmin->id;
+        $adminsaux = explode(',', $CFG->siteadmins);
+
+        foreach ($adminsaux as $admin) {
+            $admin = (int)$admin;
+            if ($admin) {
+                $admins[$admin] = $admin;
             }
         }
+
+        if (isset($admins[$newmain])) {
+            unset($admins[$newmain]);
+        }
+
+        // The main admin it has to be the first of the list
+        array_unshift($admins, $newmain);
+        set_config('siteadmins', implode(',', $admins));
+
+        mtrace('Set as main admin', '<br>');
 
         return true;
     }

@@ -34,11 +34,13 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $KEY_CAS_SESSION = "casSession";
 	static $KEY_OPENANSWER_COMPOUND_ANSWER_GRADE = "gradeCompound";
 	static $KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION = "gradeCompoundDistribution";
+	static $KEY_OPENANSWER_HANDWRITING_CONSTRAINTS = "handwritingConstraints";
 	static $VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE = "true";
 	static $VALUE_OPENANSWER_COMPOUND_ANSWER_FALSE = "false";
 	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR = "inlineEditor";
 	static $VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR = "popupEditor";
 	static $VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT = "textField";
+	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND = "inlineHand";
 	static $VALUE_SHOW_CAS_FALSE = "false";
 	static $VALUE_SHOW_CAS_ADD = "add";
 	static $VALUE_SHOW_CAS_REPLACE_INPUT = "replace";

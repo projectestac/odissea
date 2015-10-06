@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accessnoticesheader'] = 'Sie können diesen Test in der Vorschau ansehen. Wäre dies ein realer Versuch, würde dies abgeblockt, weil:';
 $string['action'] = 'Aktion';
-$string['activityoverview'] = 'Sie haben überfällige Tests.';
+$string['activityoverview'] = 'Sie haben fällige Tests.';
 $string['adaptive'] = 'Mehrfachbeantwortung';
 $string['adaptive_help'] = 'Mit dieser Funktion wird es möglich eine Frage mehrfach innerhalb eines Testversuchs zu beantworten. Ist eine Frage falsch bewertet, können Teilnehmer/innen diese direkt nochmals beantworten. Ist die Option \'Punktabzüge\' aktiviert werden diese berücksichtigt.';
 $string['add'] = 'Hinzufügen';
@@ -163,7 +163,7 @@ $string['comments'] = 'Kommentare';
 $string['completedon'] = 'Beendet am';
 $string['completionattemptsexhausted'] = 'die Zahl der Versuche erreicht wurde';
 $string['completionattemptsexhausted_help'] = 'Der Test wird als abgeschlossen markiert, wenn Teilnehmer/innen die maximale Anzahl von Versuchen erreichen.';
-$string['completionpass'] = 'Bewertung notwendig (oder)';
+$string['completionpass'] = 'Bewertung zum Bestehen';
 $string['completionpass_help'] = 'Diese Option legt fest, dass diese Aktivität als abgeschlossen gilt, wenn Teilnehmer/innen eine Bewertung erhalten haben.';
 $string['configadaptive'] = 'Wenn die Option \'Ja\' gewählt ist, besteht für die Teilnehmer/innen die Möglichkeit, während eines Testversuches mehrere Antworten auf eine Frage zu geben.';
 $string['configattemptsallowed'] = 'Beschränkung der Anzahl an Antwortversuchen  während des Tests.';

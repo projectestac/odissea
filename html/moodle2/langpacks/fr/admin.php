@@ -223,11 +223,11 @@ $string['configenableblogs'] = 'Ce réglage permet de fournir à tous les utilis
 $string['configenablecalendarexport'] = 'Activer l\'exportation et l\'abonnement aux calendriers.';
 $string['configenablecomments'] = 'Activer les commentaires';
 $string['configenablecourserequests'] = 'Vous permettrez ainsi à tous les utilisateurs de faire des demandes de création de cours.';
-$string['configenabledevicedetection'] = 'Active la détection des types d\'appareils utilisés pour accéder au serveur (téléphone mobile, tablette, ordinateur portable ou de bureau, etc.) pour l\'application de réglages spécifiques (thème, etc.)';
+$string['configenabledevicedetection'] = 'Active la détection des types d\'appareils utilisés pour accéder à la plateforme (téléphone mobile, tablette, ordinateur portable ou de bureau, etc.) pour l\'application de réglages spécifiques (thème, etc.)';
 $string['configenablemobilewebservice'] = 'Active le service mobile pour l\'application officielle Moodle ou d\'autres applications le demandant. Pour plus d\'information, lire {$a}';
 $string['configenablerssfeeds'] = 'Si ce réglage est activé, des flux RSS seront générés pour diverses fonctionnalités sur tout le site, par exemple les blogs, forums, bases de données et glossaires. Il sera également nécessaire d\'activer les flux RSS pour chacun des différents modules d’activité.';
 $string['configenablerssfeedsdisabled'] = 'Non disponible, car les flux RSS ne sont pas activés pour le site. Pour les activer, voyez l\'option Paramètres techniques sous Administration -> Configuration.';
-$string['configenablerssfeedsdisabled2'] = 'Les flux RSS sont désactivés au niveau du site. Vous devez d\'abord les activer sous Serveur > RSS.';
+$string['configenablerssfeedsdisabled2'] = 'Les flux RSS sont désactivés au niveau du site. Vous devez d\'abord les activer sous Administration du site > Fonctions avancées.';
 $string['configenablesafebrowserintegration'] = 'Ce réglage permet d\'ajouter l\'option « Nécessite l\'utilisation de Safe Exam Browser » au champ « Sécurité du navigateur » dans les réglages des tests. Voir http://www.safeexambrowser.org/ (en anglais) pour plus d\'informations.';
 $string['configenablestats'] = 'Si vous activez ce réglage, le cron automatique de Moodle traitera les historiques et produira quelques statistiques. Suivant la quantité de trafic sur votre site, le traitement peut prendre du temps. Les statistiques vous fourniront d\'intéressants graphiques et des statistiques sur chaque cours ou sur la totalité du site.';
 $string['configenabletrusttext'] = 'Par défaut, Moodle nettoie soigneusement tous les fichiers déposés et textes saisis par les utilisateurs, afin d\'en retirer les éventuels scripts, médias, etc. pouvant constituer une faille de sécurité. Le système « Contenu fiable » vous permet de donner à certains utilisateurs en qui vous avez confiance la capacité d\'inclure sans interférence de tels éléments dans leurs ressources. Pour faire fonctionner ce système, veuillez d\'abord l\'activer ici, puis accorder la capacité « Se fier aux contenus » à un rôle spécifique. Les textes créés ou déposés par des utilisateurs ayant ce rôle seront marqués comme fiables et ne seront alors pas nettoyés avant leur affichage.';
@@ -269,9 +269,9 @@ $string['configlangstringcache'] = 'Ce réglage active la mise en cache des cha�
 $string['configlatinexcelexport'] = 'Choisir l\'encodage des caractères pour les exportations en format Excel.';
 $string['configlocale'] = 'Indiquer un environnement <em>locale</em> pour l\'affichage des dates. <strong>Laissez ce champ vide</strong>, sauf si vous avez une très bonne raison de faire autrement. Si le champ est renseigné, l\'environnement spécifié sera utilisé pour toutes les langues du site et empêchera l\'adaptation automatique de l\'affichage des dates en fonction de la langue choisie par l\'utilisateur.';
 $string['configloginhttps'] = 'Cette option permet à Moodle d\'utiliser le protocole https sécurisé uniquement pour la page de connexion, ce qui fournit une connexion sécurisée. Moodle revient ensuite au protocole normal http pour gagner en vitesse. ATTENTION ! Ce réglage requiert l\'activation du protocole https sur le serveur web. Sans cela, vous risquez de NE PLUS POUVOIR ACCÉDER À VOTRE SITE.';
-$string['configloglifetime'] = 'Ce champ permet de spécifier la durée de conservation des historiques des utilisateurs. Il est conseillé de choisir une durée aussi longue que possible. Si votre serveur est très fréquenté et que la performance se dégrade, il peut être judicieux de diminuer cette durée. Les valeurs inférieures à 30 ne sont pas recommandées, car les statistiques ne fonctionneraient alors pas correctement.';
+$string['configloglifetime'] = 'Ce champ permet de spécifier la durée de conservation des historiques des utilisateurs. Il est conseillé de choisir une durée aussi longue que possible. Si votre plateforme est très fréquentée et que la performance se dégrade, il peut être judicieux de diminuer cette durée. Les valeurs inférieures à 30 ne sont pas recommandées, car les statistiques ne fonctionneraient alors pas correctement.';
 $string['configlookahead'] = 'Jours à anticiper';
-$string['configmaxbytes'] = 'Taille maximale des fichiers déposés dans le site, en octets. Cette valeur est limitée par les réglages PHP post_max_size et upload_max_filesize, ainsi que par le réglage Apache LimitRequestBody. Le réglage maxbytes limite quant à lui la taille au niveau des cours. Si vous choisissez « Limite serveur », le maximum alloué par le serveur sera utilisé.';
+$string['configmaxbytes'] = 'Taille maximale des fichiers déposés dans la plateforme, en octets. Cette valeur est limitée par les réglages PHP post_max_size et upload_max_filesize, ainsi que par le réglage Apache LimitRequestBody. Le réglage maxbytes limite quant à lui la taille au niveau des cours. Si vous choisissez « Limite serveur », le maximum alloué par le serveur sera utilisé.';
 $string['configmaxconsecutiveidentchars'] = 'Les mots de passe ne doivent pas comporter plus que ce nombre de caractères identiques consécutifs. Indiquez 0 pour désactiver ce contrôle.';
 $string['configmaxeditingtime'] = 'Ce paramètre indique la durée pendant laquelle les utilisateurs ont la possibilité de modifier un message, un article de glossaire, etc. qu\'ils ont écrit. Habituellement, 30 minutes est une bonne valeur.';
 $string['configmaxevents'] = 'Nombre d\'événements à anticiper';
@@ -901,7 +901,7 @@ $string['registermoodleorgli2'] = 'Des statistiques sur votre site sont ajoutée
 $string['registermoodleorgli3'] = 'Vous êtes aussi enregistré sur Moodle.net ({$a}), ce qui permet aux utilisateurs avec la capacité de publier des cours (par défaut, seulement les gestionnaires) de publier des cours sur Moodle.net.';
 $string['registerwithmoodleorg'] = 'Enregistrer votre site';
 $string['registration'] = 'Enregistrement';
-$string['registration_help'] = 'L\'enregistrement de votre site sur Moodle.org est recommandé, afin de recevoir les alertes de sécurité par courriel, de contribuer aux <a href="http://moodle.org/stats">statistiques d\'usage de Moodle</a> ou pour partager des cours sur <a href="http://moodle.net/">Moodle.net</a>.';
+$string['registration_help'] = 'L\'enregistrement de votre site est recommandé, afin de recevoir les alertes de sécurité et pour accéder à Moodle.net, notre plateforme d\'échange de cours.';
 $string['registrationwarning'] = 'Votre site n\'est pas encore enregistré.';
 $string['releasenoteslink'] = 'Pour des informations sur cette version de Moodle, veuillez consulter les <a target="_blank" href="{$a}">Notes de mise à jour</a> en ligne.';
 $string['rememberusername'] = 'Se souvenir du nom de l\'utilisateur';
@@ -1064,6 +1064,7 @@ $string['unsettheme'] = 'Ne pas définir de thème';
 $string['unsupported'] = 'Non supporté';
 $string['unsupporteddbstorageengine'] = 'Le moteur de base de données utilisé n\'est plus supporté.';
 $string['unsupporteddbtablerowformat'] = 'Votre base de données comporte des tables qui utilisent le format de fichier Antelope. Il vous est vivement recommandé de convertir les tables au format de fichier Barracuda. Veuillez consulter la <a href="https://docs.moodle.org/2x/fr/Administration_en_ligne_de_commande">documentation sur l\'Administration en ligne de commande</a> pour des informations détaillées sur l\'<a href="https://docs.moodle.org/2x/fr/Administration_en_ligne_de_commande#Conversion_des_tables_InnoDB_au_format_Barracuda">outil de conversion des tables InnoDB en format Barracuda</a>.';
+$string['unsupportedphpversion7'] = 'La version 7 de PHP n\'est pas supportée.';
 $string['unsuspenduser'] = 'Activez le compte utilisateur';
 $string['updateaccounts'] = 'Modifier des comptes existants';
 $string['updateautocheck'] = 'Chercher automatiquement les mises à jour disponibles';
@@ -1115,7 +1116,7 @@ L\'avertissement peut également être causé par la mise à jour incomplète d\
 
 Vous trouverez plus d\'informations à ce sujet dans la documentation de mise à jour ici : <a href="{$a}">{$a}</a>';
 $string['upgradestart'] = 'Mettre à jour la base de données maintenant';
-$string['upgradesure'] = '<p>Certains fichiers de votre Moodle ont été modifiés, et vous êtes sur le point de lancer la procédure automatique de mise à jour de votre serveur vers cette version :</p>
+$string['upgradesure'] = '<p>Certains fichiers de votre Moodle ont été modifiés, et vous êtes sur le point de lancer la procédure automatique de mise à jour de votre plateforme vers cette version :</p>
 <p><strong>{$a}</strong></p>
 <p>Une fois cette mise à jour effectuée, il sera impossible de revenir en arrière ! Veuillez remarquer que le processus peut durer assez longtemps.</p>
 <p>Voulez-vous vraiment mettre à jour ce Moodle vers cette version ?</p>';

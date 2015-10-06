@@ -21,7 +21,11 @@ body.wrs_modal_open {
 }
 
 .wrs_modal_overlay.wrs_modal_ios {
-	position: absolute;
+	position: inherit;
+}
+
+.wrs_modal_overlay.wrs_modal_ios.moodle {
+	position: fixed;
 }
 
 .wrs_modal_title {
@@ -57,6 +61,8 @@ body.wrs_modal_open {
 }
 
 .wrs_modal_dialogContainer.wrs_modal_desktop {
+	position: relative;
+	top: 10px;
 	margin: 40px auto;
 }
 

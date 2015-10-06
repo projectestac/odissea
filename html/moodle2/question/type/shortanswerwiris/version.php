@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2015030300;
+$plugin->version = 2015082500;
 $plugin->requires = 2011060313;
 $plugin->component = 'qtype_shortanswerwiris';
 $plugin->dependencies = array (
-	 'qtype_wq' => 2015030300
+	 'qtype_wq' => 2015082500
 );

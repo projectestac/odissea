@@ -38,4 +38,4 @@ $string['typeonefile'] = '見出し (Heading) を含む1つのHTMLファイル�
 $string['typezipdirs'] = 'それぞれのフォルダが1章を意味する';
 $string['typezipfiles'] = 'それぞれのHTMLファイルが1章を意味する';
 $string['ziparchive'] = 'ZIPファイル';
-$string['ziparchive_help'] = 'HTMLファイルおよび任意のマルチメディアファイルおよびフォルダを含むZIPファイルを選択してください。「節」をアップロードするには、HTMLファイル名またはフォルダ名の末尾に「_sub」を追加してください。';
+$string['ziparchive_help'] = 'HTMLファイルおよび任意のマルチメディアファイルおよびフォルダを含むZIPファイルを選択してください。「節」をアップロードするにはHTMLファイル名またはフォルダ名の末尾に「_sub」を追加してください。';

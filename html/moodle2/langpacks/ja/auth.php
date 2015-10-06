@@ -39,12 +39,13 @@ $string['authenticationoptions'] = '認証オプション';
 $string['auth_fieldlock'] = '設定値のロック';
 $string['auth_fieldlock_expl'] = '<p><b>設定値のロック:</b> このオプションを有効にした場合、Moodleユーザおよび管理者によるフィールドの直接編集を防ぎます。外部認証システムにデータを保持している場合、このオプションを使用してください。</p>';
 $string['auth_fieldlocks'] = 'ユーザフィールドのロック';
-$string['auth_fieldlocks_help'] = '<p>あなたはユーザデータフィールドをロックすることができます。ユーザレコードを管理者が手動で管理する方法、または「ユーザをアップロードする」機能を使用してユーザレコードをアップロードする方法をとっているサイトに有用です。Moodleが必要とするフィールドをロックする場合、ユーザアカウント作成時にそれらのデータを必ず提供してください。そうでない場合、アカウントを使用できなくなります。</p><p>この問題を避けるため、「空の場合はロックしない」に設定することをお勧めします。</p>';
+$string['auth_fieldlocks_help'] = '<p>あなたはユーザデータフィールドをロックすることができます。ユーザレコードを管理者が手動で管理する方法、または「ユーザをアップロードする」機能を使用してユーザレコードをアップロードする方法をとっているサイトに有用です。Moodleが必要とするフィールドをロックする場合、ユーザアカウント作成時にそのデータを必ず提供してください。そうでない場合、アカウントを使用できなくなります。</p><p>この問題を避けるため、「空の場合はロックしない」に設定することをお勧めします。</p>';
 $string['authinstructions'] = 'ログインページにデフォルトのログインインストラクションを表示したい場合、空白のままにしてください。あなたが特別なログインインストラクションを表示したい場合、ここに入力してください。';
 $string['auth_invalidnewemailkey'] = 'エラー: あなたがメールアドレスの変更確認を試みているのでしたら、あなたに送信されたメール内URLのコピーに失敗しているようです。URLをコピーして、もう一度お試しください。';
 $string['authloginviaemail'] = 'メールによるログインを許可する';
 $string['authloginviaemail_desc'] = 'ユーザのサイトログインにユーザ名およびメールアドレス (ユニークな場合) の両方を使用できるようにします。';
 $string['auth_multiplehosts'] = '複数のホストまたはアドレスを設定できます (例 host1.com;host2.com;host3.com) または (例 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
+$string['auth_notconfigured'] = '認証方法 {$a} が設定されていません。';
 $string['auth_outofnewemailupdateattempts'] = 'あなたはメールアドレスの変更許容回数を超えました。あなたの変更リクエストはキャンセルされました。';
 $string['auth_passwordisexpired'] = 'あなたのパスワード有効期限が切れました。あなたのパスワードを変更しますか?';
 $string['auth_passwordwillexpire'] = 'あなたのパスワードの有効期限は {$a} 日で切れます。あなたのパスワードを変更しますか?';
@@ -75,7 +76,7 @@ $string['emailnowexists'] = 'あなたのプロファイルに割り当てよう
 $string['emailupdate'] = 'メールアドレス更新';
 $string['emailupdatemessage'] = '{$a->fullname} さん
 
-あなたは {$a->site} のアカウントに関するメールアドレス変更をリクエストしました。この変更を確認するには、あなたのブラウザで以下のURLにアクセスしてください。
+あなたは {$a->site} のアカウントに関するメールアドレス変更をリクエストしました。この変更を確認するにはあなたのブラウザで以下のURLにアクセスしてください。
 
 {$a->url}';
 $string['emailupdatesuccess'] = 'ユーザ {$a->fullname} のメールアドレスは正常に {$a->email} に変更されました。';
@@ -145,5 +146,5 @@ $string['update_never'] = 'しない';
 $string['update_oncreate'] = '作成時';
 $string['update_onlogin'] = '毎回ログイン時';
 $string['update_onupdate'] = '更新時';
-$string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() は選択したユーザタイプをサポートしていません: {$a}';
-$string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() は選択したユーザタイプをまだサポートしていません。';
+$string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() は選択された次のusertypeをサポートしていません: {$a}';
+$string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() は選択されたusertypeをサポートしていません。';

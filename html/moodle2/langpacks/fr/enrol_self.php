@@ -79,7 +79,7 @@ $string['nopassword'] = 'Aucune clef d\'inscription requise.';
 $string['password'] = 'Clef d\'inscription';
 $string['password_help'] = 'Une clef d\'inscription permet de restreindre l\'accès au cours aux seuls utilisateurs qui connaissent la clef.
 
-Si le champ n\'est pas renseigné, n\'importe qui peut s\'inscrire au cours.
+Si le champ n\'est pas renseigné, n\'importe quel utilisateur peut s\'inscrire au cours.
 
 Si une clef d\'inscription est spécifiée, les utilisateurs tentant de s\'inscrire au cours devront saisir cette clef, uniquement lors de leur premier accès au cours.';
 $string['passwordinvalid'] = 'Clef d\'inscription incorrecte. Veuillez réessayer';
@@ -97,12 +97,12 @@ $string['sendcoursewelcomemessage'] = 'Envoyer un message de bienvenue';
 $string['sendcoursewelcomemessage_help'] = 'Si ce réglage est activé, les utilisateurs recevront un message de bienvenue par courriel après qu\'ils se sont inscrits dans un cours.';
 $string['showhint'] = 'Afficher l\'indice';
 $string['showhint_desc'] = 'Afficher la première lettre de la clef d\'inscription.';
-$string['status'] = 'Activer les inscriptions existantes';
+$string['status'] = 'Activer cette méthode d\'auto-inscription';
 $string['status_desc'] = 'Activer la méthode d\'auto-inscription dans les nouveaux cours.';
-$string['status_help'] = 'Si ce réglage est désactivé, toutes les auto-inscriptions sont suspendues et de nouveaux utilisateurs ne peuvent pas s\'inscrire.';
+$string['status_help'] = 'Si ce réglage est désactivé, cette méthode d\'auto-inscription sera suspendue : les inscrits n\'auront plus accès au cours, et les autres utilisateurs ne pourront pas s\'inscrire.';
 $string['unenrol'] = 'Désinscrire l\'utilisateur';
-$string['unenrolselfconfirm'] = 'Voulez-vous vraiment vous désinscrire du cours « {$a} »?';
-$string['unenroluser'] = 'Voulez.vous vraiment désinscrire « {$a->user} » du cours « {$a->course} »?';
+$string['unenrolselfconfirm'] = 'Voulez-vous vraiment vous désinscrire du cours « {$a} » ?';
+$string['unenroluser'] = 'Voulez vous vraiment désinscrire « {$a->user} » du cours « {$a->course} » ?';
 $string['usepasswordpolicy'] = 'Utiliser les règles de mots de passe';
 $string['usepasswordpolicy_desc'] = 'Utiliser pour les mots de passe d\'accès anonyme les règles de mots de passe standard.';
 $string['welcometocourse'] = 'Bienvenue sur {$a}';

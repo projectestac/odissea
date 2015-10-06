@@ -30,8 +30,11 @@ class com_wiris_quizzes_api_QuizzesBuilder {
 	public function readQuestion($xml) {
 		return null;
 	}
-	public function newQuestionInstance() {
+	public function newQuestionInstanceImpl($question) {
 		return null;
+	}
+	public function newQuestionInstance($question = null) {
+		return $this->newQuestionInstanceImpl($question);
 	}
 	public function newQuestion() {
 		return null;

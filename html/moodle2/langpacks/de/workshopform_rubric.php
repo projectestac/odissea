@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = '{$A} weitere Kriterien hinzufügen';
+$string['addmoredimensions'] = '{$a} weitere Kriterien hinzufügen';
 $string['configuration'] = 'Konfiguration Gewichtung';
 $string['criteria'] = 'Kriterien';
 $string['dimensiondescription'] = 'Beschreibung';

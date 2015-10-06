@@ -54,7 +54,7 @@ $string['auth_ldap_expireattr_key'] = 'Atribut de venciment';
 $string['auth_ldapextrafields'] = 'Aquests camps són opcionals. Podeu triar d\'omplir alguns camps d\'usuari de Moodle amb informació dels <b>camps LDAP</b> especificats aquí. <p>Si els deixeu en blanc, aleshores s\'utilitzaran valors per defecte.<p>En tot cas, l\'usuari podrà editar tots aquests camps quan es connecti.';
 $string['auth_ldap_graceattr_desc'] = 'Opcional: rectifica l\'atribut gracelogin';
 $string['auth_ldap_gracelogin_key'] = 'Atribut dels inicis de sessió de gràcia';
-$string['auth_ldap_gracelogins_desc'] = 'Fa que funcioni el gracelogin de LDAP. Després que hagi vençut la contrasenya, l\'usuari pot seguir entrant fins que el valor del gracelogin és 0. Si habiliteu aquest paràmetre es visualitzarà un missatge d\'avís quan venci la contrasenya.';
+$string['auth_ldap_gracelogins_desc'] = 'Fa que funcioni el gracelogin de LDAP. Després que hagi vençut la contrasenya, l\'usuari pot seguir entrant fins que el valor del gracelogin sigui 0. Si habiliteu aquest paràmetre, es visualitzarà un missatge d\'avís quan venci la contrasenya.';
 $string['auth_ldap_gracelogins_key'] = 'Inicis de sessió de gràcia';
 $string['auth_ldap_groupecreators'] = 'Llista de grups o contextos als membres dels quals se\'ls permet crear grups. Separeu els grups amb \';\'. Generalment serà una cosa així: \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_groupecreators_key'] = 'Creadors de grups';
@@ -90,7 +90,7 @@ $string['auth_ldap_user_attribute'] = 'Opcional: substitueix l\'atribut utilitza
 $string['auth_ldap_user_attribute_key'] = 'Atribut d\'usuari';
 $string['auth_ldap_user_exists'] = 'Aquest nom d\'usuari LDAP ja existeix.';
 $string['auth_ldap_user_settings'] = 'Paràmetres de consulta d\'usuaris';
-$string['auth_ldap_user_type'] = 'Seleccioneu com s\'emmagatzemen els usuaris en LDAP. Aquest paràmetre també especifica com funcionarà el venciment de les contrasenyes, elnombre d\'inicis de sessió de gràcia i la creació d\'usuaris.';
+$string['auth_ldap_user_type'] = 'Seleccioneu com s\'emmagatzemen els usuaris en LDAP. Aquest paràmetre també especifica com funcionarà el venciment de les contrasenyes, el nombre d\'inicis de sessió de gràcia i la creació d\'usuaris.';
 $string['auth_ldap_user_type_key'] = 'Tipus d\'usuari';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type no està definit, o la funció ldap_expirationtime2unix no és compatible amb el tipus seleccionat!';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type no està definit, o la funció ldap_unixi2expirationtime no és compatible amb el tipus seleccionat!';

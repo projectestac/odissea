@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'Fehler bei der Verbindung zum Server um Zeiten zu konvertieren.';
-$string['description'] = 'Zugriff verhindern bis (oder ab) dem festgelegten Datum und der Uhrzeit.';
+$string['description'] = 'Zugriff verhindern vor (oder nach) dem festgelegten Datum und der Uhrzeit.';
 $string['direction_before'] = 'Datum:';
 $string['direction_from'] = 'von';
 $string['direction_label'] = 'Richtung';
 $string['direction_until'] = 'bis';
-$string['full_from'] = 'Es ist nach <strong>{$a}</strong>';
-$string['full_from_date'] = 'Es ist genau oder nach <strong>{$a}</strong>';
-$string['full_until'] = 'Es ist vor <strong>{$a}</strong>';
-$string['full_until_date'] = 'Es ist vor dem Ende von <strong>{$a}</strong>';
+$string['full_from'] = 'Datum nach <strong>{$a}</strong>';
+$string['full_from_date'] = 'Datum genau oder nach <strong>{$a}</strong>';
+$string['full_until'] = 'Datum vor <strong>{$a}</strong>';
+$string['full_until_date'] = 'Datum vor dem Ende von <strong>{$a}</strong>';
 $string['pluginname'] = 'Voraussetzung: Datum';
 $string['short_from'] = 'Verfügbar ab <strong>{$a}</strong>';
 $string['short_from_date'] = 'Verfügbar ab <strong>{$a}</strong>';

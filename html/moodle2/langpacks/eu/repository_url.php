@@ -31,4 +31,5 @@ $string['pluginname'] = 'URLak jaisteko gailua';
 $string['rename'] = 'Izena';
 $string['url'] = 'URLa';
 $string['url:view'] = 'URLak jaisteko gailua erabili fitxategi-hautatzailean';
+$string['validfiletype'] = 'Irudi-fitxategia duen edo irudiak dituen orri baten URLa idatzi behar duzu.';
 $string['validname'] = 'Fitxategirako izen egokia eman behar duzu';

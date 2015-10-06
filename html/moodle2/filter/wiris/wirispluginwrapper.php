@@ -49,7 +49,7 @@ class WIRISpluginWrapper {
             // Return if editor plugin is not installed.
             if (!$this->installed) {
                 global $COURSE, $PAGE;
-                $coursecontext = get_context_instance(CONTEXT_COURSE, $COURSE->id);
+                $coursecontext = context_course::instance($COURSE->id);
                 if (has_capability('moodle/site:config', $coursecontext)) {
                     // Display missing WIRIS editor plugin dependency error
                     $PAGE->requires->js('/filter/wiris/js/message.js',false);
@@ -93,17 +93,19 @@ class WIRISpluginWrapper {
     }
 
     public function clear_folder($folder) {
-        $dirStructure = (glob(rtrim($folder, "/").'/*'));
-        if (is_array($dirStructure)) {
-            foreach ($dirStructure as $dirElement) {
-                if (is_file($dirElement)) {
-                        unlink($dirElement);
-                } else if (is_dir($dirElement)) {
-                    $this->clear_folder($dirElement);
+        if (!is_null($folder)) {
+            $dirStructure = (glob(rtrim($folder, "/").'/*'));
+            if (is_array($dirStructure)) {
+                foreach ($dirStructure as $dirElement) {
+                    if (is_file($dirElement)) {
+                            unlink($dirElement);
+                    } else if (is_dir($dirElement)) {
+                        $this->clear_folder($dirElement);
+                    }
                 }
             }
-        }
-       rmdir($folder);
+           rmdir($folder);
+       }
     }
 
     /**

@@ -30,6 +30,7 @@ $string['filelockedmailsubject'] = '严重错误：选课文件';
 $string['location'] = '文件位置';
 $string['mapping'] = '文本文件映射';
 $string['messageprovider:flatfile_enrolment'] = '文本文件选课消息';
+$string['notifyenroller'] = '通知已注册用户';
 $string['pluginname'] = '文本文件（CSV）';
 $string['pluginname_desc'] = '该方法会反复在您指定的位置检查和处理一个特殊格式的文本文件。此文件每行应有四个或六个用逗号分隔的字段：
 

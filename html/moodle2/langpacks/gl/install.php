@@ -68,6 +68,7 @@ $string['databasehead'] = 'Axustes da base de datos';
 $string['databasehost'] = 'Enderezo/máquina da base de datos';
 $string['databasename'] = 'Nome de base de datos';
 $string['databasepass'] = 'Contrasinal da base de datos';
+$string['databaseport'] = 'Porto da base de datos';
 $string['databasesocket'] = 'Socket Unix';
 $string['databasetypehead'] = 'Escolla o controlador da base de datos';
 $string['databasetypesub'] = 'Moodle admite varios tipos de servidores de base de datos. Póñase en contacto co administrador do servidor se non sabe que tipo empregar.';
@@ -169,6 +170,11 @@ $string['memorylimithelp'] = '<p>O límite de memoria PHP no seu servidor está 
 </ol>';
 $string['mssqlextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión MSSQL de modo que poida comunicarse co SQL*Server. Comprobe o ficheiro php.ini ou volva a compilar PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión MySQLi de modo que poida comunicarse co MySQL. Comprobe o ficheiro php.ini ou volva a compilar PHP. A extensión MySQLi non está dispoñíbel para PHP 4';
+$string['nativemariadb'] = 'MariaDB (native/mariadb)';
+$string['nativemariadbhelp'] = 'A base de datos é o lugar onde se almacenan os datos e configuracións de Moodle e debe configurarse aquí.</p>
+<p>O nome da base de datos, nome de usuario e contrasinal son campos obrigatorios; o prefixo da táboa é opcional.</p>
+<p>Se actualmente non existira a base de datos, e o usuario que Vostede especifique ten permisos, Moodle intentará crear unha nova base de datos coas configuracións e os permisos correctos.</p>
+<p>Este controlador non é compatíbel co motor antigo MyISAM.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (nativo/mssql)';
 $string['nativemssqlhelp'] = 'Agora necesita configurar a base de datos na que se almacenará a maioría dos datos de Moodle.
 Esta base de datos debe ter sido creada, e dispor dun nome de usuario e dun contrasinal de acceso. O prefixo da táboa é obrigatorio.';

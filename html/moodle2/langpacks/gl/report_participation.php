@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Visto o informe de participación';
+$string['nologreaderenabled'] = 'Non hai un lector de rexistros activado';
 $string['page-report-participation-index'] = 'Informe de participación do curso';
 $string['page-report-participation-x'] = 'Calquera informe de participación';
 $string['participation:view'] = 'Ver o informe de participación do curso';

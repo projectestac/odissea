@@ -45,6 +45,7 @@ $string['auth_invalidnewemailkey'] = 'Fout. Als je probeert een wijziging van e-
 $string['authloginviaemail'] = 'Inloggen via e-mail toestaan';
 $string['authloginviaemail_desc'] = 'Gebruikers zowel gebruikersnaam als e-mailadres laten gebruiken (indien uniek) om aan te melden in de site.';
 $string['auth_multiplehosts'] = 'Je kunt verschillende hosts ingeven (bijv. host1.com;host2.com;host3.com)';
+$string['auth_notconfigured'] = 'Authenticatiemethode {$a} is niet geconfigureerd';
 $string['auth_outofnewemailupdateattempts'] = 'Je hebt het maximale aantal pogingen om je wijziging van e-mailadres te bevestigen bereikt. Je wijzigingsaanvraag is geannuleerd.';
 $string['auth_passwordisexpired'] = 'Je wachtwoord is verlopen. Wil je het nu wijzigen?';
 $string['auth_passwordwillexpire'] = 'Je wachtwoord zal binnen {$a} dagen verlopen. Wil je het nu wijzigen?';

@@ -31,6 +31,15 @@ function wrs_assert_simple($condition) {
     }
 }
 
+function wrs_assert_warning($condition) {
+     if ($condition) {
+        return '<span class="ok">OK</span>';
+    }
+    else {
+        return '<span class="warning">WARNING</span>';
+    }
+}
+
 function wrs_assert($condition, $report_text, $solution_link) {
     if ($condition){
         return $report_text;
@@ -68,6 +77,7 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
         span{font-weight: bold;}
         span.ok {color: #009900;}
         span.error {color: #dd0000;}
+        span.warning {color: #FFFF00;}
         table, th, td, tr {
                 border: solid 1px #000000;
                 border-collapse:collapse;
@@ -78,8 +88,8 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
 </style>
 </head>
 <body>
-	<h1>Moodle 2.x WIRIS quizzes test page</h1>
-	<table>
+    <h1>Moodle 2.x WIRIS quizzes test page</h1>
+    <table>
             <tr>
                 <th>Test</th>
                 <th>Report</th>
@@ -332,9 +342,9 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
                         $data = $p->getVariable('wiris_maxconnections');
 
                         if ($data == null) {
-                        	$e = new Exception("There not exists the file");
+                            $e = new Exception("There not exists the file");
                             $p->unlockVariable('wiris_maxconnections');
-                        	throw $e;
+                            throw $e;
                         }
 
                         $connections = haxe_Unserializer::run($data);
@@ -374,7 +384,7 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
                         <th>Status</th>
                 </tr>
                 <tr>
-                        <td>mod_security1</td>
+                        <td>GET request "<>"</td>
                         <td>
                             <?php
                                 set_error_handler('_hx_error_handler', E_ERROR);
@@ -383,12 +393,12 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
                                 if ($result == ''){
                                         $disabled = false;
                                 }
-                                echo wrs_assert_simple($disabled);
+                                echo wrs_assert_warning($disabled);
                             ?>
                         </td>
                 </tr>
                 <tr>
-                        <td>mod_security2</td>
+                        <td>GET request "><"</td>
                         <td>
                             <?php
                                 $disabled = true;
@@ -396,14 +406,14 @@ function wrs_createTableRow($test_name, $report_text, $solution_link, $condition
                                 if ($result == ''){
                                         $disabled = false;
                                 }
-                                echo wrs_assert_simple($disabled);
+                                echo wrs_assert_warning($disabled);
                             ?>
                         </td>
                 </tr>
         </table>
 
 
-	<p>
+    <p>
         <br/>
         <span style="font-size:14px; font-weight:normal;">For more information or if you have any doubt contact WIRIS Support: (<a href="mailto:support@wiris.com">support@wiris.com</a>)</span>
         </p>

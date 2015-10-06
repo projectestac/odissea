@@ -45,7 +45,7 @@ $string['uploadpicture_cannotprocessdir'] = 'ZIP解凍されたファイルを�
 $string['uploadpicture_cannotsave'] = 'ユーザ {$a} の画像を保存できません。画像ファイルを確認してください。';
 $string['uploadpicture_cannotunzip'] = '画像ファイルを解凍できません。';
 $string['uploadpicture_invalidfilename'] = '画像ファイル {$a} のファイル名に無効な文字があります。スキップします。';
-$string['uploadpicture_overwrite'] = '既存のユーザ画像を上書きしますか?';
+$string['uploadpicture_overwrite'] = '既存のユーザ画像をオーバーライトしますか?';
 $string['uploadpictures'] = 'ユーザ画像をアップロードする';
 $string['uploadpictures_help'] = 'ZIP圧縮したイメージファイルをユーザ画像としてアップロードすることができます。イメージファイルは、「選択されたユーザ属性.拡張子」という形で名前付けをする必要があります。例えば、「user1234.jpg」はusernameが「user1234」のユーザ用となります。';
 $string['uploadpicture_userfield'] = '画像にマッチさせるユーザ属性';
@@ -53,7 +53,7 @@ $string['uploadpicture_usernotfound'] = '「 {$a->userfield} 」の値が「 {$a
 $string['uploadpicture_userskipped'] = 'ユーザ {$a} をスキップします (画像登録済みです)。';
 $string['uploadpicture_userupdated'] = 'ユーザ {$a} の画像が更新されました。';
 $string['uploadusers'] = 'ユーザをアップロードする';
-$string['uploadusers_help'] = 'テキストファイル経由でユーザをアップロード (および任意でコース登録) することができます。
+$string['uploadusers_help'] = 'テキストファイル経由でユーザをアップロード (および任意でコース受講登録) することができます。
 
 * ファイルのそれぞれの行には1レコード含みます。
 * それぞれのレコードはカンマ区切り (または他のデリミタ) の一覧のデータです。

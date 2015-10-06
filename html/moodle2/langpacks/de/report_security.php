@@ -82,7 +82,7 @@ $string['check_openprofiles_details'] = 'Öffentlich sichtbare Nutzerprofile kö
 $string['check_openprofiles_error'] = 'Jeder kann zurzeit Nutzerprofile sehen, ohne sich zuvor einzuloggen.';
 $string['check_openprofiles_name'] = 'Offene Nutzerprofile';
 $string['check_openprofiles_ok'] = 'Ein Login ist erforderlich, um Nutzerprofile sehen zu können.';
-$string['check_passwordpolicy_details'] = '<p>Kennwortregeln sollten unbedingt festgelegt werden. Oft ist es ziemlich einfach, Kennworte zu erraten und so unberechtigten Zugang zu Systemen zu bekommen. Die Regeln sollten aber nicht zu kompliziert sein. Besonders strenge Regeln führen nämlich häufig dazu, dass Nutzer sich die Kennworte nicht merken können und diese daher vergessen oder sie aufschreiben.</p>';
+$string['check_passwordpolicy_details'] = '<p>Kennwortregeln sollten unbedingt festgelegt werden. Oft ist es ziemlich einfach, Kennwörter zu erraten und unberechtigten Zugang zu Systemen zu bekommen. Die Regeln sollten aber nicht zu kompliziert sein. Besonders strenge Regeln führen nämlich häufig dazu, dass Nutzer/innen sich die Kennwörter nicht merken können und diese daher vergessen oder sie aufschreiben.</p>';
 $string['check_passwordpolicy_error'] = 'Die Kennwortregeln sind nicht eingerichtet.';
 $string['check_passwordpolicy_name'] = 'Kennwortregeln';
 $string['check_passwordpolicy_ok'] = 'Die Kennwortregeln sind aktiviert.';
@@ -96,7 +96,7 @@ $string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator(en) u
 $string['check_riskbackup_detailsok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten. Beachten Sie aber, dass Admins mit der Berechtigung "doanything" (alles tun) auch weiterhin dazu befähigt sind.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Diese aktivierten Änderungen geben Nutzern/innen die Möglichkeit, auch Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Die folgenden Systemrollen erlauben es aktuell, Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
-$string['check_riskbackup_details_users'] = '<p>Wegen der obigen Rollen oder lokalen Rollenänderungen besitzen die nachfolgenden Nutzerkonten die Berechtigung, persönliche Daten von allen in ihren Kursen eingetragenen Nutzern/innen in Kurssicherungen einzubeziehen. Stellen Sie unbedingt sicher, dass diese Konten (a) vertrauenswürdig und (b) mit sicheren Kennworten gesichert sind:</p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>Wegen der obigen Rollen oder lokalen Rollenänderungen besitzen die nachfolgenden Nutzerkonten die Berechtigung, persönliche Daten von allen in ihren Kursen eingetragenen Nutzern/innen in Kurssicherungen einzubeziehen. Stellen Sie unbedingt sicher, dass diese Konten (a) vertrauenswürdig und (b) mit sicheren Kennwörtern gesichert sind:</p> {$a}';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Sicherung von Nutzerdaten';

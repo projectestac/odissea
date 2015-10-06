@@ -332,21 +332,24 @@ $string['share_email_admin'] = 'Rendi noto al tool l\'email di chi lo ha lanciat
 $string['share_email_admin_help'] = 'E\' possibile rendere noto al tool provider l\'indirizzo email dell\'utente che lo ha lanciato.
 Il tool provider potrebbe avere bisogno dell\'indirizzo email di colui che lo ha lanciato per distinguere gli utenti aventi lo stesso nome, oppure per inviare email in funzione delle attività svolte dall\'utente.';
 $string['share_email_help'] = 'E\' possibile rendere noto al tool provider l\'indirizzo email dell\'utente che lo ha lanciato.
-Il tool provider potrebbe avere bisogno dell\'indirizzo email di colui che lo ha lanciato per distinguere gli utenti aventi lo stesso nome, oppure per inviare email in funzione delle attività svolte dall\'utente.
 
-Da notare che questa impostazione potrebbe essere reimpostata dalla configurazione del tool.';
+Il tool provider può avere bisogno dell\'indirizzo email di colui che lo ha lanciato per distinguere gli utenti con lo stesso nome, oppure per inviare email in funzione delle attività svolte nel tool dall\'utente.
+
+Da notare che questa impostazione può essere modificata dalla configurazione del tool.';
 $string['share_name'] = 'Rendi noto al tool il nome di chi lo ha lanciato';
 $string['share_name_admin'] = 'Rendi noto al tool il nome di chi lo ha lanciato';
 $string['share_name_admin_help'] = 'E\' possibile rendere noto al tool provider il nome e cognome  dell\'utente che lo ha lanciato. Il tool provider potrebbe avere bisogno del nome e cognome di colui che lo ha lanciato per visualizzare informazioni utili nel tool.';
-$string['share_name_help'] = 'E\' possibile rendere noto al tool provider il nome e cognome  dell\'utente che lo ha lanciato. Il tool provider potrebbe avere bisogno del nome e cognome di colui che lo ha lanciato per visualizzare informazioni utili nel tool.
+$string['share_name_help'] = 'E\' possibile rendere noto al tool provider il nome e cognome  dell\'utente che lo ha lanciato.
 
-Da notare che questa impostazione potrebbe essere reimpostata dalla configurazione del tool.';
+Il tool provider può avere bisogno del nome e cognome di colui che lo ha lanciato per visualizzare informazioni utili all\'interno del tool.
+
+Da notare che questa impostazione può essere modificata dalla configurazione del tool.';
 $string['share_roster'] = 'Consenti al tool di accedere all\'elenco dei partecipanti al corso';
 $string['share_roster_admin'] = 'Il tool può accedere agli iscritti al corso';
 $string['share_roster_admin_help'] = 'E\' possibile consentire al tool di conoscere l\'elenco dei partecipanti al corso da cui viene lanciato il tool stesso.';
-$string['share_roster_help'] = 'E\' possibile consentire al tool di conoscere l\'elenco dei partecipanti al corso da cui viene lanciato il tool stesso.
+$string['share_roster_help'] = 'E\' possibile consentire al tool di conoscere l\'elenco degli iscritti al corso.
 
-Da notare che questa impostazione potrebbe essere reimpostata dalla configurazione del tool.';
+Da notare che questa impostazione può essere modificata dalla configurazione del tool.';
 $string['show_in_course'] = 'Visualizza il tipo di tool durante la creazione di istanze';
 $string['show_in_course_help'] = 'Consente di rendere disponibile questa configurazione di tool ai docenti dei corsi  tramite il menu a discesa "Tipo di tool esterno".
 

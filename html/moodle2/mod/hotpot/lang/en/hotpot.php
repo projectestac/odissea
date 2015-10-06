@@ -55,7 +55,7 @@ $string['configbodystyles'] = 'By default, Moodle theme styles will override Hot
 $string['configenablecache'] = 'Maintaining a cache of HotPot quizzes can dramatically speed up the delivery of quizzes to the students.';
 $string['configenablecron'] = 'Specify the hours in your time zone at which the HotPot cron script may run';
 $string['configenablemymoodle'] = 'This settings controls whether HotPots are listed on the MyMoodle page or not';
-$string['configenableobfuscate'] = 'Obfuscating the javascript code to insert media players makes it more difficult to determine the media file name and guess what the file contains.';
+$string['configenableobfuscate'] = 'Obfuscating the text strings and URLs in javascript code makes it more difficult to guess answers by viewing the source of the HTML page in the browser.';
 $string['configenableswf'] = 'Allow embedding of SWF files in HotPot activities. If enabled, this setting overrides filter_mediaplugin_enable_swf.';
 $string['configfile'] = 'Configuration file';
 $string['configframeheight'] = 'When a quiz is displayed within a frame, this value is the height (in pixels) of the top frame which contains the Moodle navigation bar.';
@@ -179,7 +179,7 @@ $string['duration'] = 'Duration';
 $string['enablecache'] = 'Enable HotPot cache';
 $string['enablecron'] = 'Enable HotPot cron';
 $string['enablemymoodle'] = 'Show HotPots on MyMoodle';
-$string['enableobfuscate'] = 'Enable obfuscation of media player code';
+$string['enableobfuscate'] = 'Enable obfuscation of text and media players';
 $string['enableswf'] = 'Allow embedding of SWF files in HotPot activities';
 $string['entry_attempts'] = 'Attempts';
 $string['entry_dates'] = 'Dates';
@@ -419,14 +419,16 @@ $string['outputformat_help'] = 'The output format specifies how the content will
 The output formats that are available depend on the type of the source file. Some types of source file have just one output format, while other types of source file have several output formats.
 
 The "best" setting will display the content using the optimal output format for the student\'s browser.';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) from html';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) from html';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze (v6) from html';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'ANCT-Scan from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'DropDown from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'FindIt (a) from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_findit_b'] = 'FindIt (b) from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JGloss from HP6 JCloze xml';
-$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze (v6) from HP6 xml';
 $string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze (v6) from HP6 xml (Auto-advance)';
+$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze (v6) from HP6 xml';
 $string['outputformat_hp_6_jcross_html'] = 'JCross (v6) from html';
 $string['outputformat_hp_6_jcross_xml_v6'] = 'JCross (v6) from xml';
 $string['outputformat_hp_6_jmatch_html'] = 'JMatch (v6) from html';

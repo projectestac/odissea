@@ -46,6 +46,7 @@ $string['auth_invalidnewemailkey'] = 'Errore: se stai cercando di confermare un 
 $string['authloginviaemail'] = 'Consenti autenticazione usando l\'email';
 $string['authloginviaemail_desc'] = 'Gli utenti potranno autenticarsi usando sia lo username sia l\'indirizzo email (se univoco).';
 $string['auth_multiplehosts'] = 'Possono essere elencati più macchine remote (es. host1.com;host2.com;host3.com)';
+$string['auth_notconfigured'] = 'Il metodo di autenticazione {$a} non è configurato.';
 $string['auth_outofnewemailupdateattempts'] = 'Hai superato i tentativi permessi per modificare il tuo indirizzo email. La richiesta di modifica è stata annullata.';
 $string['auth_passwordisexpired'] = 'La password è scaduta. Vuoi cambiarla adesso?';
 $string['auth_passwordwillexpire'] = 'La password scadrà tra {$a} giorni. Vuoi cambiarla adesso?';

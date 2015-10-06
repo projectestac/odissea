@@ -108,18 +108,22 @@ if ($ADMIN->fulltree) {
     }
 
     // Clearing cache.
-    if (isset($CFG->filter_wiris_clear_cache) && $CFG->filter_wiris_clear_cache) {
-        $wirisplugin->clear_folder($cache);
-        $wirisplugin->clear_folder($formula);
+    if (get_config('filter_wiris', 'clear_cache')) {
+        if (isset($cache) && !is_null($cache)) {
+            $wirisplugin->clear_folder($cache);
+        }
+        if (isset($formula) && !is_null($formula)) {
+            $wirisplugin->clear_folder($formula);
+        }
         reset_text_filters_cache();
 
         // Disabling the cache clearing for the next request.
-        set_config('filter_wiris_clear_cache', 0, 'config');
+        set_config('clear_cache', false, 'filter_wiris');
         $CFG->filter_wiris_clear_cache = false;
     }
 
-    $settings->add(new admin_setting_configcheckbox('filter_wiris_clear_cache', 'Clear cache', $output, '0'));
     if ($CFG->version>=2012120300) {
+        $settings->add(new admin_setting_configcheckbox('filter_wiris/clear_cache', 'Clear cache', 'Clear wiris filter cache', false, true, false));
         $settings->add(new admin_setting_configcheckbox('filter_wiris/uninstall', 'Uninstall mode', 'Allows WIRIS plugin to be uninstalled', false, true, false));
     }
 

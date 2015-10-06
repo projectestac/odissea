@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configdisplayoptions'] = 'Seleccione todas as opcións que deben estar dispoñíbeis, a configuración existente non se modifica. Manteña premida a tecla CTRL para seleccionar varios campos.';
 $string['content'] = 'Contido da páxina';
 $string['contentheader'] = 'Contido';
+$string['createpage'] = 'Crear un recurso de páxina nova';
 $string['displayoptions'] = 'Opcións dispoñíbeis de presentación';
 $string['displayselect'] = 'Presentar';
 $string['displayselectexplain'] = 'Seleccionar tipo de presentación.';
@@ -35,12 +36,29 @@ $string['legacyfiles'] = 'Migración de ficheiros antigos de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizada';
 $string['modulename'] = 'Páxina';
+$string['modulename_help'] = 'O módulo «páxina» permítelle ao profesor crear unha páxina web empregando o editor de texto. Nunha páxina pódese amosar texto, imaxes, son, vídeo, ligazóns da Internet e código incrustado (como os mapas de Google).
+
+As vantaxes de empregar o módulo páxina, en troques do módulo ficheiro inclúen que o recurso será máis accesíbel (por exemplo, para os usuarios de dispositivos móbiles como tabletas e teléfonos intelixentes), e máis doados de actualizar.
+
+Para grandes contidos, recomendase empregar o módulo libro en troques do módulo páxina.
+
+Unha páxina pode empregarse
+
+* Para presentar os termos e condicións dun curso do programa de estudos
+* Para incluír varios vídeos ou ficheiros de son xunto cun texto explicativo';
 $string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Páxinas';
 $string['optionsheader'] = 'Opcións';
+$string['page:addinstance'] = 'Engadir un novo recurso de páxina';
+$string['page-mod-page-x'] = 'Calquera páxina do módulo páxina';
 $string['page:view'] = 'Ver contido da páxina';
+$string['pluginadministration'] = 'Administración do módulo páxina';
 $string['pluginname'] = 'Páxina';
+$string['popupheight'] = 'Altura da xanela emerxente (en píxeles)';
 $string['popupheightexplain'] = 'Especifica a altura predeterminada das xanelas emerxentes.';
+$string['popupwidth'] = 'Largura da xanela emerxente (en píxeles)';
 $string['popupwidthexplain'] = 'Especifica a largura predeterminada das xanelas emerxentes.';
+$string['printheading'] = 'Presentar o nome da páxina';
+$string['printheadingexplain'] = 'Presentar o nome da páxina sobre o contido?';
 $string['printintro'] = 'Presentar a descrición da páxina';
 $string['printintroexplain'] = 'Presentar a descrición da páxina sobre o contido?';

@@ -4,6 +4,9 @@ var wrs_int_opener;
 var closeFunction;
 
 if (window.opener) {							// For popup mode
+	// Sometimes (yes, sometimes) internet explorer security policies hides  popups
+	// popup window focus should be called from child window.
+	window.focus();
 	wrs_int_opener = window.opener;
 	closeFunction = window.close;
 } else if (window.parent._wrs_conf_modalWindow) {
@@ -31,7 +34,13 @@ if (window.location.href.indexOf("https://")==0) {
 		editorUrl = "https"+editorUrl.substring(4);
 	}
 }
-script.src = editorUrl+"?lang="+lang;
+// /editor stats
+
+statEditor = wrs_int_opener._wrs_conf_editor;
+statSaveMode = wrs_int_opener._wrs_conf_saveMode;
+statVersion = wrs_int_opener._wrs_conf_version;
+
+script.src = editorUrl+"?lang="+lang + '&stats-editor=' + statEditor + '&stats-mode=' + statSaveMode + '&stats-version=' + statVersion;
 document.getElementsByTagName('head')[0].appendChild(script);
 
 // Insert strings

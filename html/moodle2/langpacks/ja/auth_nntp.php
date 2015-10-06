@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nntpchangepasswordurl_key'] = 'パスワード変更URL';
-$string['auth_nntpdescription'] = 'ここではユーザ名およびパスワードが有効であるか確認するため、NNTPサーバを使用します。';
+$string['auth_nntpdescription'] = 'ここでは入力されたユーザ名およびパスワードが有効であるか確認するため、NNTPサーバを使用します。';
 $string['auth_nntphost'] = 'NNTPサーバアドレスです。DNS名ではなく、IPアドレスを使用してください。';
 $string['auth_nntphost_key'] = 'ホスト';
-$string['auth_nntpnotinstalled'] = 'NNTP認証を使用できません。PHP IMAPモジュールがインストールされていません。';
+$string['auth_nntpnotinstalled'] = 'NNTP認証を利用できません。PHP IMAPモジュールがインストールされていません。';
 $string['auth_nntpport'] = 'サーバポート (119が最も一般的です)';
 $string['auth_nntpport_key'] = 'ポート';
 $string['pluginname'] = 'NNTPサーバ';

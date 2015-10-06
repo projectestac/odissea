@@ -38,7 +38,7 @@ $string['mapping'] = 'Correspondance des rôles du fichier plat';
 $string['messageprovider:flatfile_enrolment'] = 'Messages de l\'inscription par fichier plat';
 $string['notifyadmin'] = 'Informer l\'administrateur';
 $string['notifyenrolled'] = 'Informer les utilisateurs inscrits';
-$string['notifyenroller'] = 'Infirmer l\'utilisateur responsable des inscriptions';
+$string['notifyenroller'] = 'Informer l\'utilisateur responsable des inscriptions';
 $string['pluginname'] = 'Fichier plat (CSV)';
 $string['pluginname_desc'] = 'Cette méthode permet une vérification systématique à partir d\'un fichier texte spécialement mis en forme disposé à un emplacement que vous choisissez. Le fichier est en format CSV (séparateurs virgules) avec 4 ou 6 champs par ligne, à savoir :
 

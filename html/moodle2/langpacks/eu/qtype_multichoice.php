@@ -40,6 +40,7 @@ $string['choices'] = 'Eskura dauden aukerak';
 $string['clozeaid'] = 'Sartu galdutako hitza';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
 $string['correctfeedback'] = 'Edozein erantzun zuzenetarako';
+$string['deletedchoice'] = 'Aukera hau saiakera hasi baino lehen ezabatua izan da.';
 $string['errfractionsaddwrong'] = 'Aukeratutako kalifikazio positiboak ez dira % 100era iristen<br />%{$a} -ra bakarrik iristen dira.';
 $string['errfractionsnomax'] = 'Erantzunetako batek % 100 izan beharko luke eta horrela <br />posible izango litzateke galdera honetako gehienezko puntuazioa lortzea.';
 $string['errgradesetanswerblank'] = 'Kalifikazioa ezarrita, baina Erantzuna hutsik dago';

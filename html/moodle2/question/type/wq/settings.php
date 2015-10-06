@@ -34,7 +34,12 @@ if ($quizzes_disabled == '1'){
 $settings->add(new admin_setting_configcheckbox('question/wq_disabled', 'WIRIS quizzes', $output, '0', '0', '1'));
 
 if ($filterexists){
-    $url = $CFG->wwwroot . '/admin/settings.php?section=filtersettingwiris';
+    if ($CFG->version >=2012120300 && $CFG->version < 2013051400) {
+        $settings_link = 'filtersettingfilterwiris';
+    } else {
+        $settings_link = 'filtersettingwiris';
+    }
+    $url = $CFG->wwwroot . '/admin/settings.php?section=' . $settings_link;
     $url = '<a href="' . $url . '">WIRIS filter settings</a>';
     $settings->add(new admin_setting_heading('filter_wirisfilterheading', $url, ''));
 }

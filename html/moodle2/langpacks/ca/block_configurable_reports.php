@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['conditionexprhelp'] = 'Introduïu una condició vàlida, p. ex.: (c1 and c2) or (c4 and c3)';
 $string['disabled'] = 'Inhabilitat';
+$string['statslogins'] = 'Inicis de sessió a la plataforma';

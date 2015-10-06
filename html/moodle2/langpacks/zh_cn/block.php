@@ -43,6 +43,7 @@ $string['defaultweight'] = '缺省重量';
 $string['defaultweight_help'] = '缺省重量使得您可以严格设置此版块在选定区域的上面还是下面显示。最终位置要根据该区域的所有版块计算得出（例如，只有一个版块可以在最顶端）。如果需要，此设置可以在某些特殊页面覆盖。';
 $string['deleteblock'] = '删除 {$a} 版块';
 $string['deleteblockcheck'] = '您确定要删除名为 {$a} 的版块？';
+$string['deleteblockwarning'] = '<p>你要删除一个别的地方使用的模块。</p><p>原始模块位置： {$a->location}<br />在页面显示的类型： {$a->pagetype}</p><p>你确认要删除么？</p>';
 $string['deletecheck'] = '删除版块 {$a}？';
 $string['dockblock'] = '停靠 {$a} 版块';
 $string['hideblock'] = '隐藏 {$a} 版块';

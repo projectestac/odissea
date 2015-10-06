@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_month:addinstance'] = 'Block \'Kalender\' hinzufügen';
+$string['calendar_month:addinstance'] = 'Kalender-Block hinzufügen';
 $string['calendar_month:myaddinstance'] = 'Block \'Kalender\' für \'Meine Startseite\' hinzufügen';
 $string['pluginname'] = 'Kalender';

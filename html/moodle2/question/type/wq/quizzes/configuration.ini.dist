@@ -19,6 +19,11 @@
 ;quizzes.editor.url = "http://www.wiris.net/demo/editor"
 
 ;
+; URL where to load the WIRIS hand.
+
+;quizzes.hand.url = "http://www.wiris.net/demo/hand"
+
+;
 ; URL to connect to WIRIS quizzes service.
 
 ;quizzes.service.url = "http://www.wiris.net/demo/quizzes"
@@ -75,3 +80,8 @@
 ; application domain so the services server can identify the client.
 
 ;quizzes.referer.url = ""
+
+;
+; Enable WIRIS hand (handwriter recognition) as input field type.
+
+;quizzes.hand.enabled = "false"

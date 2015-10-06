@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['authpluginnotfound'] = 'La plugin di autenticazione {$a} non è stata trovata';
+$string['authpluginnotfound'] = 'Il plugin di autenticazione {$a} non è stato trovato.';
 $string['blocknotexist'] = 'Il blocco {$a} non esiste';
 $string['cannotbenull'] = '{$a} non può essere null!';
 $string['cannotdowngrade'] = 'Non è possibile eseguire il downgrade del plugin {$a->plugin} dalla versione {$a->oldversion} alla versione {$a->newversion}.';

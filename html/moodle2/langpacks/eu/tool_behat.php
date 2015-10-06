@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['infoheading'] = 'Informazioa';
 $string['stepsdefinitionscomponent'] = 'Eremua';
+$string['stepsdefinitionsfilters'] = 'Aldien definizioak';
 $string['stepsdefinitionstype'] = 'Mota';
 $string['viewsteps'] = 'Iragazkia';

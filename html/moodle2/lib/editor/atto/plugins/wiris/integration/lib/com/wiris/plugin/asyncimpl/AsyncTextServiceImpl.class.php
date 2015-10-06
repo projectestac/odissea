@@ -38,7 +38,7 @@ class com_wiris_plugin_asyncimpl_AsyncTextServiceImpl implements com_wiris_plugi
 				return;
 			}
 		}
-		$url = $this->plugin->getImageServiceURL($serviceName);
+		$url = $this->plugin->getImageServiceURL($serviceName, true);
 		$h = new com_wiris_plugin_impl_HttpImpl($url, $this);
 		$this->plugin->addReferer($h);
 		$this->plugin->addProxy($h);

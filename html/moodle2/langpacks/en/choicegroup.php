@@ -94,8 +94,8 @@ $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.
 
 If limits are disabled then any number of participants can select each of the options.';
-$string['members/'] = 'Fill';
-$string['members/max'] = 'Fill / Capacity';
+$string['members/'] = 'Members';
+$string['members/max'] = 'Members / Capacity';
 $string['modulename'] = 'Group choice';
 $string['modulename_help'] = 'The Group Choice module allows students to enrol themselves in a group within a course. The teacher can select which groups students can chose from and the maximum number of students allowed in each group.';
 $string['modulenameplural'] = 'Group choices';

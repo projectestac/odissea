@@ -66,8 +66,8 @@ $string['course_summary_updateonsync'] = '同期スクリプトで概要を更�
 $string['course_summary_updateonsync_key'] = '概要を更新する';
 $string['courseupdated'] = 'IDナンバー「 {$a->idnumber} 」のコースが正常に更新されました。';
 $string['courseupdateskipped'] = 'IDナンバー「 {$a->idnumber} 」のコースは更新を必要としません。スキップ ...';
-$string['createcourseextid'] = '存在しないコース「 {$a->courseextid} 」に登録するユーザを作成します。';
-$string['createnotcourseextid'] = '存在しないコース「 {$a->courseextid} 」にユーザが登録されました。';
+$string['createcourseextid'] = '存在しないコース「 {$a->courseextid} 」に受講登録するユーザを作成します。';
+$string['createnotcourseextid'] = '存在しないコース「 {$a->courseextid} 」にユーザが受講登録されました。';
 $string['creatingcourse'] = 'コースの作成 {$a} ...';
 $string['duplicateshortname'] = 'コース作成に失敗しました。省略名が重複しています。IDナンバー「 {$a->idnumber} 」のコースをスキップ ...';
 $string['editlock'] = '設定値をロックする';
@@ -105,11 +105,11 @@ $string['opt_deref'] = 'グループメンバーシップに識別名が含ま�
 $string['opt_deref_key'] = 'エイリアスの修飾参照';
 $string['phpldap_noextension'] = 'PHP LDAPモジュールが存在しないようです。あなたがこの登録プラグインを使用したい場合、当該モジュールがインストールおよび有効化されていることを確認してください。';
 $string['pluginname'] = 'LDAP登録';
-$string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロールするために、LDAPサーバを使用することができます。LDAPの使用は、あなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバーシップエントリを持つことを前提とします。</p>
-<p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む、複数のメンバーシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>
-<p>LDAPを使用してユーザを登録するには、ユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループは、ユーザがコースに登録できるようメンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
-<p>ユーザ登録情報は、ユーザのログイン時に更新されます。登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
-<p>このプラグインでは、新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
+$string['pluginname_desc'] = '<p>あなたのユーザの受講登録をコントロールするためにLDAPサーバを使用することができます。LDAPの使用はあなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバーシップエントリを持つことを前提とします。</p>
+<p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む複数のメンバーシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>
+<p>LDAPを使用してユーザを受講登録するにはユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループはユーザがコースに受講登録できるようメンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
+<p>ユーザ受講登録情報はユーザのログイン時に更新されます。受講登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
+<p>このプラグインでは新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';
 $string['role_mapping'] = '<p>LDAPからそれぞれのロールを割り当てるには、あなたはコースグループに割り当てられているロールのコンテクスト一覧を指定する必要があります。異なるコンテクストは「;」で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するために使用している属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
 $string['role_mapping_attribute'] = '{$a} のLDAPメンバー属性';

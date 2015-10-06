@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcolumnafter'] = '次の後にカラムを追加する';
 $string['addrowafter'] = '次の後に行を追加する';
 $string['both'] = '両方';
-$string['caption'] = '見出し';
+$string['caption'] = '説明';
 $string['columns'] = 'カラム';
 $string['createtable'] = 'テーブルを作成する';
 $string['deletecolumn'] = 'カラムを削除する';

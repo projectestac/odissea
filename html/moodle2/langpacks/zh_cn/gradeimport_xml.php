@@ -32,6 +32,7 @@ $string['errincorrectgradeidnumber'] = '错误：从文件中导入的ID“{$a}�
 $string['errincorrectidnumber'] = '错误：ID不正确';
 $string['errincorrectuseridnumber'] = '错误：从文件中导入的ID“{$a}”与任何用户都不匹配。';
 $string['error'] = '发生错误';
+$string['errorduringimport'] = '尝试导入{$a}时，发生错误。';
 $string['fileurl'] = '远程文件 URL';
 $string['pluginname'] = 'XML 文件';
 $string['xml:publish'] = '发布从 XML 导入成绩';

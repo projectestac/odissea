@@ -309,6 +309,7 @@ $string['quickgradingchangessaved'] = '评分结果已经被保存';
 $string['quickgrading_help'] = '快速评分模式允许您直接在作业列表后面对每个学生进行评分。快速评分与高级评分不兼容，当需要多项反馈评价学生时，不推荐使用此评分方式。';
 $string['quickgradingresult'] = '快速评分';
 $string['recordid'] = '识别码';
+$string['reopenuntilpassincompatiblewithblindmarking'] = '重新开放，直到匿名计分无法进行，因为在学生身份公开之前，成绩不会出现在成绩册中。';
 $string['requireallteammemberssubmit'] = '是否要求每个组成员提交';
 $string['requireallteammemberssubmit_help'] = '如果启用此项，则必须要全部组员都点击提交按钮才视为该组的作业已经提交。如果禁用此项，则任一组员点击提交按钮，该组的作业就视为已经提交了。
 
@@ -346,6 +347,7 @@ $string['setmarkingworkflowstateforlog'] = '设定评分流程状态：(编号={
 $string['settings'] = '作业设置';
 $string['showrecentsubmissions'] = '显示最近提交的作业';
 $string['status'] = '状态';
+$string['studentnotificationworkflowstateerror'] = '评分工作状态必须标识为”发布“以便通知学生。';
 $string['submission'] = '提交的作业';
 $string['submissioncopiedhtml'] = '你已经复制了一份先前提交的作业\'<i>{$a->assignment}</i>\'.<br />
 你可以看到你的<a href="{$a->url}">作业提交</a>.的状态。';

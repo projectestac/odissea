@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = '最新のMoodle 2.6へのアップグレードの一環として、Boxポートフォリオプラグインは無効にされています。再度有効にするには、ドキュメンテーション ( {$a->docsurl} ) に記載されているとおり、あなたは再設定する必要があります。';
+$string['apiv1migration_message_content'] = '最新のMoodle 2.6へのアップグレードの一環として、Boxポートフォリオプラグインは無効にされています。再度有効にするにはドキュメンテーション ( {$a->docsurl} ) に記載されているとおり、あなたは再設定する必要があります。';
 $string['apiv1migration_message_small'] = 'Box APIv1移行ドキュメンテーションで説明されている設定が必要なため、このプラグインは無効にされています。';
 $string['apiv1migration_message_subject'] = 'Boxポートフォリオプラグインに関する重要情報';
 $string['clientid'] = 'クライアントID';
@@ -46,7 +46,7 @@ $string['password'] = 'あなたのBoxパスワード (保存されません)';
 $string['pluginname'] = 'Box';
 $string['sendfailed'] = 'コンテクストをBoxに送信できませんでした: {$a}';
 $string['setupinfo'] = 'セットアップインストラクション';
-$string['setupinfodetails'] = 'クライアントIDおよび秘密鍵を取得するには、Boxにログインした後、<a href="{$a->servicesurl}">Box.net開発者ページ</a>にアクセスしてください。「Create new application」ボタンをクリックして、あなたのMoodleサイト用の新しいアプリケーションを作成してください。クライアントIDおよび秘密鍵はアプリケーション編集フォームの「OAuth2 parameters」セクションに表示されます。あなたのMoodleサイトに関する他の情報を任意に提供することもできます。';
+$string['setupinfodetails'] = 'クライアントIDおよび秘密鍵を取得するにはBoxにログインした後、<a href="{$a->servicesurl}">Box.net開発者ページ</a>にアクセスしてください。「Create new application」ボタンをクリックして、あなたのMoodleサイト用の新しいアプリケーションを作成してください。クライアントIDおよび秘密鍵はアプリケーション編集フォームの「OAuth2 parameters」セクションに表示されます。あなたのMoodleサイトに関する他の情報を任意に提供することもできます。';
 $string['sharedfolder'] = '共有';
 $string['sharefile'] = 'このファイルを共有しますか?';
 $string['sharefolder'] = 'この新しいフォルダを共有しますか?';

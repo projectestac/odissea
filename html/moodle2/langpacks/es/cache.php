@@ -49,6 +49,7 @@ $string['cachedef_groupdata'] = 'Información de grupos del curso';
 $string['cachedef_htmlpurifier'] = 'Depurador de HTML - Limpieza de contenido';
 $string['cachedef_langmenu'] = 'Lista de idiomas disponibles';
 $string['cachedef_locking'] = 'Bloqueando';
+$string['cachedef_navigation_expandcourse'] = 'Cursos expandibles en la navegación';
 $string['cachedef_observers'] = 'Observadores del evento';
 $string['cachedef_plugin_manager'] = 'Gestor de información del plugin';
 $string['cachedef_questiondata'] = 'Definiciones de preguntas';

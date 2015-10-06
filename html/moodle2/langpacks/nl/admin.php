@@ -1069,6 +1069,7 @@ $string['unsettheme'] = 'Zet thema uit';
 $string['unsupported'] = 'Niet ondersteund';
 $string['unsupporteddbstorageengine'] = 'De database storage engine wordt niet meer ondersteund.';
 $string['unsupporteddbtablerowformat'] = 'Je databanktabellen gebruiken Antilope als bestandsformaat. Je wordt aangeraden om ze te converteren naar Barracuda bestandsformaat. Je vindt documentatie op <a href="https://docs.moodle.org/en/cli">Administration via command line</a> met details over een tool om InnoDB-tabellen om te zetten naar Barracuda.';
+$string['unsupportedphpversion7'] = 'PHP versie 7 is niet ondersteund.';
 $string['unsuspenduser'] = 'Activeer gebruikersaccount';
 $string['updateaccounts'] = 'Update bestaande accounts';
 $string['updateautocheck'] = 'Automatisch controleren op beschikbare updates';

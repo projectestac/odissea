@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentheader'] = '内容';
+$string['display'] = '显示文件夹内容';
+$string['displayinline'] = '内嵌在课程页面';
+$string['displaypage'] = '在单独的页面';
 $string['dnduploadmakefolder'] = '解压文件并创建文件夹';
 $string['folder:addinstance'] = '添加一个新文件夹';
 $string['foldercontent'] = '文件和子文件夹';
@@ -37,3 +40,4 @@ $string['page-mod-folder-view'] = '文件夹模块主页';
 $string['page-mod-folder-x'] = '任意文件夹模块页面';
 $string['pluginadministration'] = '文件夹管理';
 $string['pluginname'] = '文件夹';
+$string['showexpanded'] = '显示展开的子文件夹';

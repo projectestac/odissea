@@ -14,7 +14,7 @@ httpRequest.send(null);
 
 if (httpRequest.status == 404) {
 	cell2.innerHTML = "WIRIS Quizzes not installed";
-	cell3.innerHTML = '<a href="http://www.wiris.com/en/quizzes/download/moodle" target="_blank">More info</a>';
+	cell3.innerHTML = '<a href="http://www.wiris.com/en/quizzes/" target="_blank">More info</a>';
 } else if(httpRequest.status == 200) {
 	if (httpRequest.responseText.indexOf("ERROR") == -1) {
 		cell2.innerHTML = "WIRIS Quizzes properly installed";

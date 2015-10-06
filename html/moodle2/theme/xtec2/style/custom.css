@@ -805,33 +805,6 @@ body.path-grade-report-grader #user-grades {
     background: transparent;
 }
 
-/** MDL-42634 */
-.block.invisible {
-    opacity: 1;
-}
-
-.block.invisible .header h2,
-.block.invisible .header .block_action,
-.block.invisible .header .menubar {
-    opacity: .5;
-}
-
-.course-content ul li.section.hidden {
-    opacity: 1;
-}
-
-.course-content ul li.section.hidden .sectionname,
-.course-content ul li.section.hidden .content > div,  /* All the divs but the activities which are in a UL. */
-.course-content ul li.section.hidden .activity .activityinstance,
-.course-content ul li.section.hidden .side,
-.course-content ul li.section.hidden .menubar,
-.course-content ul li.section.hidden .editing_move,
-.course-content ul li.section.hidden .cm-edit-action,
-.course-content ul li.section.hidden .section-modchooser-link {
-    opacity: .5;
-}
-/** END MDL-42634 */
-
 /* Edited atto tables */
 /*
 #region-main div.editor_atto_content table,

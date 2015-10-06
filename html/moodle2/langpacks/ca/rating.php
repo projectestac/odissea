@@ -43,7 +43,7 @@ Si està seleccionat "Sense qualificació", llavors l\'activitat no apareix en e
 $string['allowratings'] = 'Voleu permetre que els elements es qualifiquin?';
 $string['allratingsforitem'] = 'Totes les puntuacions enviades.';
 $string['capabilitychecknotavailable'] = 'La capacitat de comprovació no està disponible fins que l\'activitat sigui desada.';
-$string['couldnotdeleteratings'] = 'Disculpeu, això no és pot eliminar doncs hi ha persones que han estat qualificades amb aquest element.';
+$string['couldnotdeleteratings'] = 'Això no es pot eliminar, perquè hi ha persones que ja han qualificat aquest element.';
 $string['norate'] = 'No es permet la qualificació d\'elements.';
 $string['noratings'] = 'No s\'han enviat qualificacions.';
 $string['noviewanyrate'] = 'Sols podeu veure els resultats per als elements que heu creat.';

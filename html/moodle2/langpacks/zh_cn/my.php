@@ -35,3 +35,5 @@ $string['nocourses'] = '没有可显示的课程信息。';
 $string['noguest'] = '“我的Moodle”页面对访客无效';
 $string['pinblocks'] = '为我的 Moodle 配置固定的版块';
 $string['pinblocksexplan'] = '您在这里设置的任何版块配置将显示（但不可编辑）在所有用户的“我的Moodle”页上';
+$string['reseterror'] = '发生错误正在重置你的页面';
+$string['resetpage'] = '重置页面为默认值';

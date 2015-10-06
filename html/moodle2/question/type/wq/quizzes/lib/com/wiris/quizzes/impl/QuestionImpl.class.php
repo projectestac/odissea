@@ -29,7 +29,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		$this->wirisCasSession = $session;
 	}
 	public function setAnswerFieldType($type) {
-		if(com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR === $type || com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT === $type || com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR === $type) {
+		if(com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR === $type || com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT === $type || com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR === $type || com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND === $type) {
 			$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD, $type);
 		} else {
 			throw new HException("Invalid type parameter.");
@@ -362,6 +362,9 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		}
 		return -1;
 	}
+	public function getCorrectAnswerLength() {
+		return com_wiris_quizzes_impl_QuestionImpl_0($this);
+	}
 	public function getCorrectAnswer($index) {
 		if($this->correctAnswers !== null && $this->correctAnswers->length > $index) {
 			$a = $this->correctAnswers[$index];
@@ -492,7 +495,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		$names = com_wiris_quizzes_impl_Assertion::getParameterNames($name);
 		if($parameters !== null && $names !== null) {
 			$a->parameters = new _hx_array(array());
-			$n = com_wiris_quizzes_impl_QuestionImpl_0($this, $a, $correctAnswer, $name, $names, $parameters, $userAnswer);
+			$n = com_wiris_quizzes_impl_QuestionImpl_1($this, $a, $correctAnswer, $name, $names, $parameters, $userAnswer);
 			$i = null;
 			{
 				$_g = 0;
@@ -573,10 +576,10 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_EXPONENTIAL_E, "e");
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT, "i");
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR, "false");
-		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_NUMBER_PI, com_wiris_quizzes_impl_QuestionImpl_1($dopt));
+		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_NUMBER_PI, com_wiris_quizzes_impl_QuestionImpl_2($dopt));
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION, "4");
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE, "true");
-		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_impl_QuestionImpl_2($dopt));
+		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_impl_QuestionImpl_3($dopt));
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE, "10^(-3)");
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT, "mg");
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, ".");
@@ -622,21 +625,28 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.QuestionImpl'; }
 }
-function com_wiris_quizzes_impl_QuestionImpl_0(&$퍁his, &$a, &$correctAnswer, &$name, &$names, &$parameters, &$userAnswer) {
+function com_wiris_quizzes_impl_QuestionImpl_0(&$퍁his) {
+	if($퍁his->correctAnswers === null) {
+		return 0;
+	} else {
+		return $퍁his->correctAnswers->length;
+	}
+}
+function com_wiris_quizzes_impl_QuestionImpl_1(&$퍁his, &$a, &$correctAnswer, &$name, &$names, &$parameters, &$userAnswer) {
 	if($parameters->length < $names->length) {
 		return $parameters->length;
 	} else {
 		return $names->length;
 	}
 }
-function com_wiris_quizzes_impl_QuestionImpl_1(&$dopt) {
+function com_wiris_quizzes_impl_QuestionImpl_2(&$dopt) {
 	{
 		$s = new haxe_Utf8(null);
 		$s->addChar(960);
 		return $s->toString();
 	}
 }
-function com_wiris_quizzes_impl_QuestionImpl_2(&$dopt) {
+function com_wiris_quizzes_impl_QuestionImpl_3(&$dopt) {
 	{
 		$s = new haxe_Utf8(null);
 		$s->addChar(183);

@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Engadir unha nova tarefa';
+$string['assignmentdisabled'] = 'A antiga actividade «Tarefa 2.2» está desactivada';
 $string['assignment:exportownsubmission'] = 'Exportar a propia entrega';
 $string['assignment:exportsubmission'] = 'Exportar a entrega';
 $string['assignment:grade'] = 'Cualificación da tarefa';
+$string['assignmentneedsupgrade'] = 'A antiga actividade «Tarefa 2.2» foi desactivada. Solicitelle ao administrador do sitio que execute a ferramenta para anovar tarefas para todas as tarefas antigas deste sitio.';
 $string['assignment:submit'] = 'Entregar tarefa';
 $string['assignment:view'] = 'Ver tarefa';
 $string['messageprovider:assignment_updates'] = 'Notificación de tarefas (2.2)';
@@ -38,6 +40,9 @@ $string['modulenameplural'] = 'Tarefas (2.2)';
 $string['page-mod-assignment-submissions'] = 'Páxina de entregas do módulo de tarefas';
 $string['page-mod-assignment-view'] = 'Páxina principal do módulo de tarefas';
 $string['page-mod-assignment-x'] = 'Calquera páxina do módulo de tarefas';
+$string['pendingupgrades_message_content'] = 'Como parte do anovamento a Moodle 2.7, a antiga actividade de Tarefa 2.2 foi desactivada. As copias de seguranza feitas da actividade antiga de Tarefa 2.2 restauraranse transparente e limpamente cara a nova actividade de Tarefa. Todas as instancias restantes da antiga actividade de Tarefa deben de anovarse empregando a ferramenta para anovar as tarefas {$a->docsurl}. Existen {$a->count} instancias da actividade antiga de Tarefa 2.2 neste sitio, que requiren anovarse. Os usuarios non poderán acceder ao contido destas actividades ata que teñan sido anovadas.';
+$string['pendingupgrades_message_small'] = 'Este engadido foi desactivado. Todas as tarefas restantes deben anovarse ao novo módulo de tarefa usando a ferramenta para anovamento de tarefas.';
+$string['pendingupgrades_message_subject'] = 'Información importante respecto da Tarefa 2.2';
 $string['pluginadministration'] = 'Administración de tarefas';
 $string['pluginname'] = 'Tarefa (2.2)';
 $string['upgradenotification'] = 'Esta actividade basease nun módulo de tarefas antigo.';

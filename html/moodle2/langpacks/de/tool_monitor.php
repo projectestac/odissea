@@ -98,5 +98,5 @@ $string['subdeletesuccess'] = 'Abonnement erfolgreich abgeschaltet';
 $string['subhelp'] = 'Abonnementdetails';
 $string['subhelp_help'] = 'Dieses Abonnement überprüdt, ob das Ereignis \'{$a->eventname}\' in \'{$a->moduleinstance}\'  {$a->frequency} fach innerhalb von {$a->minutes} Minute(n) eingetreten ist.';
 $string['subscribeto'] = 'Abonnement für Regel "{$a}"';
-$string['taskcleanevents'] = 'Alle nicht (mehr) erforderlichen Ereignisse der Event-Beobachtung entfernen';
+$string['taskcleanevents'] = 'Event-Beobachtung bereinigen';
 $string['unsubscribe'] = 'Abmelden';

@@ -43,8 +43,8 @@ $string['handlerdisabled'] = 'あなたが接続を試みたメールハンド�
 $string['incomingmailconfiguration'] = '受信メール設定';
 $string['incomingmailserversettings'] = '受信メールサーバ設定';
 $string['incomingmailserversettings_desc'] = 'Moodleは適切に設定されたIMAPサーバに接続することができます。あなたはIMAPサーバに接続するための設定をここで指定することができます。';
-$string['invalidrecipientdescription'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するには、あなたはこのメッセージに返信する必要があります。';
-$string['invalidrecipientdescriptionhtml'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するには、あなたはこのメッセージに返信する必要があります。';
+$string['invalidrecipientdescription'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するにはあなたはこのメッセージに返信する必要があります。';
+$string['invalidrecipientdescriptionhtml'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するにはあなたはこのメッセージに返信する必要があります。';
 $string['invalidrecipientfinal'] = 'あなたが送信した件名「 {$a->subject} 」のメッセージを認証することができませんでした。あなたのプロファイルのメールアドレスを使用してメッセージが送信されたことを確認してください。';
 $string['invalid_recipient_handler'] = '有効なメッセージが受信されて送信者を認証できない場合、メッセージはメールサーバに保存されます。また、ユーザプロファイルのメールアドレスを使用してユーザに連絡されます。 オリジナルメッセージの信頼度を追認するため、ユーザには返信するチャンスが与えられます。
 
@@ -70,7 +70,7 @@ $string['messageinboundhostssl_desc'] = 'いくつかのメールサーバでは
 $string['messageinboundhosttype'] = 'サーバタイプ';
 $string['messageinboundhostuser'] = 'ユーザ名';
 $string['messageinboundhostuser_desc'] = 'これはあなたのメールアカウントにログインするためにサービスプロバイダが提供したユーザ名です。';
-$string['messageinboundmailboxconfiguration_desc'] = 'ユーザがメッセージを送信する場合、「address+data@example.com」 のようなフォーマットで生成されたアドレスに送ります。信頼できるアドレスをMoodleから生成するには、通常あなたが「@」記号の前に使用するアドレス、および「@」記号の後に使用するドメインを分けて指定してください。例えば、例のメールボックス名は「address」、そしてメールドメインは「example.com」となります。この目的のために、あなたは専用のメールアカウントを使用すべきです。';
+$string['messageinboundmailboxconfiguration_desc'] = 'ユーザがメッセージを送信する場合、「address+data@example.com」 のようなフォーマットで生成されたアドレスに送ります。信頼できるアドレスをMoodleから生成するには通常あなたが「@」記号の前に使用するアドレス、および「@」記号の後に使用するドメインを分けて指定してください。例えば、例のメールボックス名は「address」、そしてメールドメインは「example.com」となります。この目的のためにあなたは専用のメールアカウントを使用すべきです。';
 $string['messageprocessingerror'] = 'あなたは最近Moodleに件名「 {$a->subject} 」のメールを送信しましたが、残念なことに、処理されませんでした。
 
 エラー詳細は下記のとおりです。

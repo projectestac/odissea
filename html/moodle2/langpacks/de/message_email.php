@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowattachments'] = 'Anhänge erlauben';
 $string['allowusermailcharset'] = 'Zeichensatz für E-Mails wählbar';
-$string['configallowattachments'] = 'Mit der Aktivierung dieser Einstellung wird ermöglicht, dass Dateianhänge bei E-Mail-Benachrichtigungen verschiedener Aktivitäten (z.B. Auszeichnungen) mit versandt werden.';
+$string['configallowattachments'] = 'Diese Option legt fest, ob Dateianhänge bei E-Mail-Mitteilungen verschiedener Aktivitäten (z.B. Auszeichnungen) mit versandt werden.';
 $string['configallowusermailcharset'] = 'Wenn diese Option aktiviert ist, darf der Zeichensatz für E-Mails selbst festgelegt werden.';
-$string['configemailonlyfromnoreplyaddress'] = 'Diese Option legt fest, dass alle E-Mails mit dem Nicht-Antworten-Absender versandt werden. Auf diese Weise können auch Spam-Filter von externen E-Mail-Systemen zufrieden gestellt werden, die andernfalls die E-Mails von Moodle zurückweisen.';
+$string['configemailonlyfromnoreplyaddress'] = 'Diese Option legt fest, dass alle E-Mails mit dem Nicht-Antworten-Absender versandt werden. Auf diese Weise können auch Spam-Filter von externen E-Mail-Servern zufrieden gestellt werden, die andernfalls die E-Mails von Moodle zurückweisen würden.';
 $string['configmailnewline'] = 'Zeichen für Zeilenschaltung in E-Mails. CRLF ist gemäß RFC 822bis notwendig. Einige Mailserver wandeln LF automatisch in CRLF um, andere konvertieren CRLF falsch in CRCRLF und wieder andere weisen Mails mit reinem LF zurück (z.B. qmail). Probieren Sie unterschiedliche Einstellungen aus, falls Probleme mit dem Mailversand auftreten oder doppelte Zeilenschaltungen angezeigt werden.';
 $string['confignoreplyaddress'] = 'Moodle versendet E-Mails im Auftrage von seinen Nutzer/innen, z.B. aus Foren. Tragen Sie in dieses Feld eine gültige E-Mail-Adresse ein, die als Absender beim Versand genutzt werden soll, wenn die E-Mail-Adresse des Absenders nicht für Rückantworten genutzt werden kann.';
 $string['configsitemailcharset'] = 'Diese Option legt fest, dass alle E-Mails aus dieser Website mit dem standardmäßigen Zeichensatz versendet werden.';

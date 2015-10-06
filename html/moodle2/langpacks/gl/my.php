@@ -25,8 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addpage'] = 'Engadir unha páxina';
+$string['defaultpage'] = 'Páxina predeterminada «O meu Moodle»';
+$string['defaultprofilepage'] = 'Páxina predeterminada de perfil';
+$string['delpage'] = 'Eliminar a páxina';
+$string['managepages'] = 'Xestionar as páxinas';
 $string['mymoodle'] = 'Área persoal';
 $string['nocourses'] = 'Non hai información sobre o curso para mostrar.';
 $string['noguest'] = 'A páxina «Área persoal» non está dispoñible para convidados';
 $string['pinblocks'] = 'Configurar bloques de agarre do meu Moodle';
 $string['pinblocksexplan'] = 'Calquera configuración dos bloques que estableza aquí será visible (e non editable) para calquera usuario do Moodle na súa páxina de vista xeral \'O meu Moodle\'.';
+$string['reseterror'] = 'Produciuse un erro ao restaurar a súa páxina';
+$string['resetpage'] = 'Restaurar á páxina a configuración predeterminada';

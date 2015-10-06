@@ -44,12 +44,15 @@ $string['cronfrequency'] = '处理频率';
 $string['deleteusers'] = '删除IMS数据指定的用户';
 $string['deleteusers_desc'] = '如果启用，IMS企业选课数据可以删除用户帐号（当" recstatus" 的值设为3时，表示删除这一帐号）。其实在Moodle中，用户记录并没有真的从 Moodle数据库删除，而是用一个标记来表示已删除。';
 $string['doitnow'] = '马上进行一次IMS企业导入';
+$string['emptyattribute'] = '此处必须留空';
 $string['filelockedmail'] = '您在IMS文件基础上用的文本文件登陆({$a}) 不能被程序删除。这通常意味着它的许可发生错误了。请确定许可使Moodle可以删除文件，否则程序可能会重复';
 $string['filelockedmailsubject'] = '重大错误：登陆文件';
 $string['fixcasepersonalnames'] = '在标题上更改个人姓名';
 $string['fixcaseusernames'] = '对低的情况更改个人姓名';
 $string['ignore'] = '忽略';
 $string['importimsfile'] = '导入IMS企业文件';
+$string['imsenterprise:config'] = '配置企业选课实例';
+$string['imsenterprisecrontask'] = '选课文件处理';
 $string['imsrolesdescription'] = 'IMS计划规范包括8个截然不同的角色类型。请您选择在Moodle中如何分配这些角色，包括应该忽略那些角色。';
 $string['location'] = '本地文件';
 $string['logtolocation'] = '日志文件输出到本地（空白表示没有日志文件）';
@@ -66,6 +69,12 @@ $string['restricttarget_desc'] = 'IMS企业数据文件可以供多个目标使�
 
 在很多情况下，您不需要担心这些。您可以不更改默认配置，不论这个目标是否已经指定，MOODLE总是会处理文件，否则，您就在<target>中输入准确的名字。';
 $string['roles'] = '角色';
+$string['settingfullname'] = 'IMS描述标签。描述课程全名';
+$string['settingfullnamedescription'] = '全称是必要的课程字段，你需要在你的IMS企业文件中定义选定的描述标签';
+$string['settingshortname'] = 'IMS描述标签。描述课程简称';
+$string['settingshortnamedescription'] = '简称是必须的课程字段，你需要在你的IMS企业文件中定义选定的描述标签';
+$string['settingsummary'] = 'IMS描述标签，描述课程摘要';
+$string['settingsummarydescription'] = '此字段可选。如果你不想填写课程摘要，就选Leave it empty(予以空白)';
 $string['sourcedidfallback'] = '用"来源" 对一个人的用户名如果"userid" 没有找到域';
 $string['sourcedidfallback_desc'] = '在IMS数据中，<sourcedid>域代表了源系统中用户的永久ID码。而<userid>域是一个单独的域，它包含用户登录时使用的ID码。虽然在许多情况下这两个码可能是相同的，但是它们并不是一直相同。
 

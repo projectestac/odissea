@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadas'] = '下载表格数据作为 {$a->formatsmenu} {$a->downloadbutton}';
 $string['downloadcsv'] = '逗号分隔数据的文本文件';
 $string['downloadexcel'] = 'Microsoft Excel电子表格';
 $string['downloadods'] = 'OpenDocument电子表格(ODS)';

@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['commentinline'] = 'Comentar en liña';
+$string['commentinlinedefault'] = 'Comentar en liña como predeterminado';
+$string['commentinlinedefault_help'] = 'Se establece, este método de comentarios en liña será activado como predeterminado para todas as novas tarefas.';
+$string['commentinline_help'] = 'Se se habilita, o texto da entrega será copiado ao campo do comentario durante a cualificación, facendo máis doado comentar en liña (tal vez utilizando unha cor diferente), ou editar o texto orixinal.';
 $string['default'] = 'Activado de xeito predeterminado';
 $string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas asignacións.';
 $string['enabled'] = 'Comentarios';

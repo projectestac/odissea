@@ -31,7 +31,9 @@ class com_wiris_plugin_api_ConfigurationKeys {
 	static $FONT_FAMILY = "wirisfontfamily";
 	static $FILTER_OUTPUT_MATHML = "wirisfilteroutputmathml";
 	static $EDITOR_MATHML_ATTRIBUTE = "wiriseditormathmlattribute";
-	static $EDITOR_PARAMETERS_DEFAULT_LIST = "mml,color,centerbaseline,zoom,dpi,fontSize,fontFamily,defaultStretchy";
+	static $EDITOR_PARAMS = "wiriseditorparameters";
+	static $EDITOR_PARAMETERS_DEFAULT_LIST = "mml,color,centerbaseline,zoom,dpi,fontSize,fontFamily,defaultStretchy,backgroundColor";
+	static $EDITOR_PARAMETERS_NOTRENDER_LIST = "toolbar, toolbarHidden, reservedWords, autoformat, mml, language, rtlLanguages, ltrLanguages, arabicIndicLanguages, easternArabicIndicLanguages, europeanLanguages";
 	static $HTTPPROXY = "wirisproxy";
 	static $HTTPPROXY_HOST = "wirisproxy_host";
 	static $HTTPPROXY_PORT = "wirisproxy_port";

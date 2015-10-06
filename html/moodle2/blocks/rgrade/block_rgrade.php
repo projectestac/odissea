@@ -6,11 +6,11 @@ class block_rgrade extends block_base {
 	function init() {
 		$this->title = rgrade_get_string('rgrade');
 	}
-	
+
 	function instance_allow_multiple() {
         return false;
     }
-    
+
     function has_config() {
         return false;
     }
@@ -27,20 +27,21 @@ class block_rgrade extends block_base {
 		$this->content->text = '';
 		$this->content->footer = '';
 
+		$books = rgrade_get_all_books($COURSE->id);
+		if (empty($books)){
+			return $this->content;
+		}
+
 		$text = "<form id='marsupialReport' method='get' action='".$CFG->wwwroot."/blocks/rgrade/rgrade_table.php'>";
 		$text .= "<fieldset>";
 		$text .= "<input type='hidden' name='courseid' value='{$COURSE->id}'/>";
 
-		$books = rgrade_get_all_books($COURSE->id);
-		if(!empty($books)){
-
-			$text .="<label for='fbook'><span>".rgrade_get_string('book')."</span><br/>";
-			$text .="<select name='bookid' id='fbook' class='fbook' style='width:100%;'>";
-			foreach($books as $book){
-				$text .= "<option value='".$book->id."'>".$book->name."</option>";
-			}
-			$text .="</select></label>";
+		$text .="<label for='fbook'><span>".rgrade_get_string('book')."</span><br/>";
+		$text .="<select name='bookid' id='fbook' class='fbook' style='width:100%;'>";
+		foreach($books as $book){
+			$text .= "<option value='".$book->id."'>".$book->name."</option>";
 		}
+		$text .="</select></label>";
 
 		if (rgrade_check_capability("moodle/grade:viewall")) {
 

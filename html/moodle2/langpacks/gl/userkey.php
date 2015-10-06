@@ -25,4 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['createnewkey'] = 'Crear unha nova chave de usuario';
+$string['createuserkey'] = 'Crear unha chave de usuario';
+$string['deletekeyconfirm'] = 'Confirma que quere eliminar esta chave de usuario?';
+$string['edituserkey'] = 'Editar a chave de usuario';
+$string['keyiprestriction'] = 'Restrición de chave por IP';
+$string['keyiprestriction_help'] = 'Escriba un enderezo IP específico, ou un intervalo de enderezos IP que serán os únicos enderezos IP permitidos para acceder a estes datos. Déixeo baleiro para desactivar a restrición por IP (non recomendábel).';
+$string['keymanager'] = 'Xestor de chaves';
+$string['keyvaliduntil'] = 'Chave válida ata';
+$string['keyvaliduntil_help'] = 'Seleccione unha data opcional após a que as chaves xa non serán válidas (recomendábel para unha maior seguridade).';
+$string['keyvalue'] = 'Valor da chave';
+$string['newuserkey'] = 'Nova chave de usuario';
+$string['userkey'] = 'Chave de usuario';
 $string['userkey_help'] = 'Seleccionar unha chave gardada que lles dará aos usuarios acceso aos datos publicados por este complemento de exportación, sen ter que rexistrarse en Moodle. Seleccione «Crear unha nova chave de usuario» para xerar unha nova chave ao entregar este formulario.';
+$string['userkeys'] = 'Chaves de usuario';

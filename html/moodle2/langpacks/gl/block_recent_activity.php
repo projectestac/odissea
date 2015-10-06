@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Actividade recente';
 $string['recent_activity:addinstance'] = 'Engadir un novo bloque de actividade recente';
+$string['recent_activity:viewaddupdatemodule'] = 'Ver os módulos engadidos e actualizados no bloque de actividade recente';
+$string['recent_activity:viewdeletemodule'] = 'Ver os módulos eliminados no bloque de actividade recente';

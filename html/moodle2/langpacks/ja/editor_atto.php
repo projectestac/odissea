@@ -44,6 +44,7 @@ $string['recover'] = '回復';
 $string['settings'] = 'Attoツールバー設定';
 $string['subplugintype_atto'] = 'Attoプラグイン';
 $string['subplugintype_atto_plural'] = 'Attoプラグイン';
+$string['taskautosavecleanup'] = 'データベースから期限切れ自動保存下書きを削除する';
 $string['textrecovered'] = 'このテキストの下書きバージョンが自動的にリストアされました。';
 $string['toolbarconfig'] = 'ツールバー設定';
 $string['toolbarconfig_desc'] = 'ここでプラグイン一覧および表示順を設定することができます。設定にはグループ (1行あたり1件) およびそのグループに関するプラグインの順番付きリストを含みます。グループは等号によりプラグインと分離され、プラグインはカンマで分離されます。グループ名をユニークにして、ボタンに共通していることを示す必要があります。ボタンおよびグループ名は繰り返さず、半角英数字のみを使用してください。';

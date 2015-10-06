@@ -178,6 +178,7 @@ $string['dbpass'] = 'DB Password';
 $string['dbpassinfo'] = 'Remote Database password (for above username)';
 $string['dbuser'] = 'DB Username';
 $string['dbuserinfo'] = 'Remote Database username (should have SELECT privileges on above DB)';
+$string['decimals'] = 'Number of decimals';
 $string['direction'] = 'Direction';
 $string['disabled'] = 'Disabled';
 $string['displayglobalreports'] = 'Display global reports';
@@ -268,6 +269,7 @@ $string['label_field_help'] = 'The field that provides names for the things repr
 $string['lastexecutiontime'] = 'Execution time = {$a} (Sec)';
 $string['legacylognotenabled'] = 'Legacy logs must be enabled.
  Go to Site administration / Plugins / Logging Enable the Legacy log and inside the log settings check Log legacy data';
+$string['limitcategories'] = 'Limit categories in a graph';
 $string['line'] = 'Line graph';
 $string['linesummary'] = 'A line graph with multiple series of data';
 $string['listofsqlreports'] = 'Press F11 when cursor is in the editor to toggle full screen editing. Esc can also be used to exit full screen editing.<br/><br/><a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank">List of SQL Contributed reports</a>';
@@ -293,6 +295,7 @@ $string['nosemicolon'] = 'No semicolon';
 $string['notallowedwords'] = 'Not allowed words';
 $string['operator'] = 'Operator';
 $string['ordering'] = 'Ordering';
+$string['others'] = 'Others';
 $string['pagination'] = 'Pagination';
 $string['pagination_help'] = 'Number of records to show in each page. Zero means no pagination';
 $string['parentcategory'] = 'Parent category';

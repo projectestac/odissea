@@ -25,9 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Compoñente';
+$string['eventcontext'] = 'Contexto da actividade';
+$string['eventloggedas'] = '{$a->realusername} como {$a->asusername}';
+$string['eventorigin'] = 'Orixe';
+$string['eventrelatedfullnameuser'] = 'Usuario afectado';
+$string['eventreportviewed'] = 'Visto o informe do rexistro';
+$string['eventuserreportviewed'] = 'Visto o informe do rexistro do usuario';
 $string['logsformat'] = 'Formato dos rexistros';
 $string['log:view'] = 'Ver os rexistros do curso';
 $string['log:viewtoday'] = 'Ver os rexistros de hoxe';
+$string['nologreaderenabled'] = 'Non hai un lector de rexistros activado';
 $string['page'] = 'Páxina {$a}';
 $string['page-report-log-index'] = 'Informe do rexistro do curso';
+$string['page-report-log-user'] = 'Informe do rexistro do curso do usuario';
+$string['page-report-log-x'] = 'Calquera informe de rexistro';
 $string['pluginname'] = 'Rexistros';
+$string['selectlogreader'] = 'Seleccionar o lector de rexistros';

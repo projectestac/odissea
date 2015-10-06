@@ -32,6 +32,7 @@ $string['upload_error_cant_write'] = 'Non foi posíbel escribir o ficheiro no di
 $string['upload_error_extension'] = 'Unha extensión de PHP detivo o envío de ficheiros.';
 $string['upload_error_form_size'] = 'O ficheiro enviado excede a directiva MAX_FILE_SIZE que foi especificada no formulario HTML';
 $string['upload_error_ini_size'] = 'O ficheiro enviado excede a directiva de php.ini upload_max_filesize';
+$string['upload_error_invalid_file'] = 'O ficheiro «{$a}» está baleiro ou é un cartafol. Para enviar cartafoles, primeiro debe comprimilos coma ZIP e após envialo.';
 $string['upload_error_no_file'] = 'Non se enviou ningún ficheiro';
 $string['upload_error_no_tmp_dir'] = 'Non se atopa PHP no cartafol temporal';
 $string['upload_error_partial'] = 'O ficheiro enviado foino só parcialmente';

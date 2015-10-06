@@ -104,9 +104,11 @@ $string['aggregation_help'] = 'El Cálculo total determina cómo las calificacio
 * Calificación más alta
 * Moda - La calificación que se produce con más frecuencia
 * Suma  - La suma de todas las calificaciones, ignorando los valores de la escala establecida';
+$string['aggregationhintdropped'] = '( Abandonado )';
 $string['aggregationhintexcluded'] = '( Excluído )';
 $string['aggregationhintextra'] = '( Crédito extra )';
 $string['aggregationhintnovalue'] = '( Vacío )';
+$string['aggregationofa'] = 'Agregación de {$a}';
 $string['aggregationposition'] = 'Posición del resultado del cálculo';
 $string['aggregationposition_help'] = 'Este parámetro valor determina si las columnas de totales de las categorías y los cursos se muestran al principio o al final en los informes del libro de calificaciones.';
 $string['aggregationsvisible'] = 'Tipos de estrategias de cálculo';
@@ -260,8 +262,12 @@ $string['fullview'] = 'Vista completa';
 $string['generalsettings'] = 'Ajustes generales';
 $string['grade'] = 'Calificación';
 $string['gradeadministration'] = 'Administración de calificaciones';
+$string['gradealreadyupdated'] = '{$a} calificaciones no hay sido importadas porque las calificaciones en el archivo de importación son más antiguas que en el informe del calificador. Para proceder con la importación de todos modos, utilice la opción forzar importación.';
 $string['gradeanalysis'] = 'Análsisis de calificaciones';
 $string['gradebook'] = 'Libro de calificaciones';
+$string['gradebookcalculationsfixbutton'] = 'Aceptar cambios en las calificaciones y reparar errores de cálculos';
+$string['gradebookcalculationsuptodate'] = 'Los cálculos en el libro de calificaciones están actualizados. Es posible que necesite recargar la página para ver cambios.';
+$string['gradebookcalculationswarning'] = 'Nota: Se han detectado algunos errores al calcular las calificaciones mostradas en este libro de calificaciones. Es recomendable que los errores sean corregidos haciendo clic en el botón inferior, aunque esto puede llevar a un cambio en las calificaciones. Para más detalles, vea los cambios entre las versiones {$a->gradebookversion} y {$a->currentversion} en <a href="{$a->url}">Cambios en los cálculos del libro de calificaciones</a>.';
 $string['gradebookhiddenerror'] = 'El libro de calificaciones está ajustado de modo que no se mostrará nada a los estudiantes.';
 $string['gradebookhistories'] = 'Historias de calificación';
 $string['gradeboundary'] = 'Límite de la calificación con letra';
@@ -347,6 +353,7 @@ $string['gradetype_help'] = '<p>Especifica el tipo de calificación usado: <b>Ni
    los tipos de calificación de <em>valor</em> y <em>escala</em> pueden ser agregados.
    El tipo de calificación para un ítem de calificación basado en una actividad es
    establecido en la página de actualización de la actividad.</p>';
+$string['gradevaluetoobig'] = 'Uno de los valores de calificación es mayor que la calificación máxima permitida de {$a}';
 $string['gradeview'] = 'Ver calificación';
 $string['gradeweighthelp'] = 'Ayuda sobre ponderación de calificaciones';
 $string['groupavg'] = 'Promedio del grupo';
@@ -740,6 +747,7 @@ $string['userenrolmentsuspended'] = 'Matriculación de usuarios suspendida';
 $string['userfields_show'] = 'Mostrar campos de usuario';
 $string['usergrade'] = 'Usuario {$a->fullname} ({$a->useridnumber}) en el ítem {$a->gradeidnumber}';
 $string['userid'] = 'ID de usuario';
+$string['useridnumberwarning'] = 'Usuarios sin un número de ID son excluidos de la exportación ya que no podrán ser importados.';
 $string['usermappingerror'] = 'Error de asignación: No se pudo encontrar al usuario con {$a->field} de "{$a->value}".';
 $string['usermappingerrorcurrentgroup'] = 'El usuario no es miembro del grupo actual.';
 $string['usermappingerrorusernotfound'] = 'Error de asignación. No se pudo encontrar al usuario.';
@@ -754,9 +762,11 @@ $string['weightedascending'] = 'Clasificar por porcentaje ponderado ascendente';
 $string['weighteddescending'] = 'Clasificar por porcentaje ponderado descendente';
 $string['weightedpct'] = '% ponderada';
 $string['weightedpctcontribution'] = 'contribución % ponderada';
+$string['weight_help'] = 'Un valor utilizado para determinar el valor relativo de elementos de calificación múltiple en un curso o categoría.';
 $string['weightofa'] = 'Peso de {$a}';
 $string['weightorextracredit'] = 'Ponderación o crédito extra';
 $string['weightoverride'] = 'ajuste de peso';
+$string['weightoverride_help'] = 'Desmarcar esta opción para reestablecer el peso de un elemento de calificación a su valor calculado automáticamente. Al marcar esto se evita que el peso se ajuste automáticamente.';
 $string['weights'] = 'Ponderaciones';
 $string['weightsadjusted'] = 'Sus pesos han sido ajustado a un total de 100.';
 $string['weightsedit'] = 'Editar ponderaciones y créditos extra';

@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowattachments'] = 'Permitir anexos';
 $string['allowusermailcharset'] = 'Permitirlle ao usuario cambiar o conxunto de caracteres';
+$string['configallowattachments'] = 'Se o activa, os correos enviados desde o sito poderán levar anexos (coma p. ex. distincións).';
 $string['configallowusermailcharset'] = 'Activando isto, todos os usuarios do sitio poderán especificar o seu propio conxunto de caracteres para o correo.';
+$string['configemailonlyfromnoreplyaddress'] = 'Se o activa, todos os correos enviaranse empregando o enderezo de sen resposta coma o enderezo «De». Isto pode usarse para evitar que os controis contra chatarra (anti-spoofing)en sistemas de correo externos bloqueen os correos.';
 $string['configmailnewline'] = 'Caracteres de liña nova empregados nas mensaxes de correo. Conforme coa RFC 822bis CRLF é necesario; algúns servidores fan unha conversión automática desde LF a CRLF, en tanto que outros fan unha conversión incorrecta de CRLF a CRCRLF e, para rematar, outros rexeitan os correos con LF baleiro(caso de qmail, p.ex.). Tente modificar este axuste se ten problemas con correos sen entregar ou con liñas novas dobres.';
 $string['confignoreplyaddress'] = 'As veces os correos son enviados polo usuario (p.ex. mensaxes a un foro). O enderezo de correo especificado aquí empregarase como enderezo «De» naqueles casos nos que os destinatarios non poidan contestar directamente ao usuario (p.ex. cando un usuario escolle manter agochado o seu enderezo).';
 $string['configsitemailcharset'] = 'Todos os correos xerados polo seu sitio enviaranse no conxunto de caracteres que especifique aquí. En calquera caso, cada usuario individual poderá axustar esta opción se está activada o seguinte axuste.';
@@ -35,6 +38,7 @@ $string['configsmtpmaxbulk'] = 'Número máximo de mensaxes enviados por sesión
 $string['configsmtpsecure'] = 'Se o servidor SMTP require conexión segura, especifique o tipo correcto de protocolo.';
 $string['configsmtpuser'] = 'Se antes especificou un servidor SMTP, e o servidor require autenticación, escriba aquí o nome de usuario e o contrasinal.';
 $string['email'] = 'Enviar notificacións por correo a';
+$string['emailonlyfromnoreplyaddress'] = 'Enviar sempre os correos dende o enderezo de «sen-resposta»?';
 $string['ifemailleftempty'] = 'Deixar baleiro para enviar notificacións a {$a}';
 $string['mailnewline'] = 'Caracteres de liña nova no correo';
 $string['none'] = 'Ningún';

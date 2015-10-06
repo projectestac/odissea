@@ -145,7 +145,7 @@ class agora_script_base{
         return true;
 	}
 
-	protected function output($message, $type) {
+	protected function output($message, $type = "") {
 		if (is_object($message) || is_array($message)) {
 			print_object($message);
 			return;
@@ -167,7 +167,7 @@ class agora_script_base{
 					echo $OUTPUT->notification($message, 'notifysuccess');
 					return;
 			}
-            echo $message;
+            echo $message.'<br>';
         }
 	}
 

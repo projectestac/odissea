@@ -31,6 +31,7 @@ $string['and'] = 'e';
 $string['condition_group'] = 'Conxunto de restricións';
 $string['condition_group_info'] = 'Engadir un conxunto de restricións aniñadas para aplicar lóxica complexa.';
 $string['enableavailability'] = 'Activar o acceso condicional';
+$string['enableavailability_desc'] = 'Cando se activa, permítelle poñer condicións (baseadas en data, cualificación, ou finalización) que controlan se se pode ou non acceder a unha actividade ou recurso.';
 $string['error_list_nochildren'] = 'Os conxuntos de restricións precisan conter polo menos unha condición.';
 $string['hidden_all'] = 'Ocultar por completo se o usuario non cumpre as condicións';
 $string['hidden_individual'] = 'Ocultar por completo se o usuario non cumpre esta condición';

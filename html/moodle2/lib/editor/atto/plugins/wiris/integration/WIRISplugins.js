@@ -720,6 +720,27 @@ com.wiris.plugin.viewer.EditorViewer.prototype = {
 		}
 		return h;
 	}
+	,callService: function(mml,servicename) {
+		var con;
+		var height = 0;
+		var width = 0;
+		var baseline = 0;
+		var text = null;
+		var data;
+		var url;
+		con = new js.XMLHttpRequest();
+		url = (this.absoluteURL.length > 0?this.absoluteURL:this.baseURL + this.localpath) + "/service" + this.extension;
+		data = "service=" + servicename;
+		data += "&metrics=true&centerbaseline=false&mml=" + StringTools.urlEncode(mml);
+		data += "&lang=" + this.lang;
+		if(this.zoom != 1) data += "&zoom=" + this.zoom;
+		if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace("Calling: " + url,{ fileName : "EditorViewer.hx", lineNumber : 388, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callService"});
+		if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace("POST:" + data,{ fileName : "EditorViewer.hx", lineNumber : 390, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callService"});
+		con.open("POST",url,false);
+		con.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset=utf-8");
+		con.send(data);
+		return con.responseText;
+	}
 	,callCreateImage: function(mml,img) {
 		var con;
 		var height = 0;
@@ -730,26 +751,20 @@ com.wiris.plugin.viewer.EditorViewer.prototype = {
 		var url;
 		con = new js.XMLHttpRequest();
 		url = (this.absoluteURL.length > 0?this.absoluteURL:this.baseURL + this.localpath) + "/createimage" + this.extension;
-		data = "accessible=true&metrics=true&centerbaseline=false&mml=" + StringTools.urlEncode(mml);
+		data = "metrics=true&centerbaseline=false&mml=" + StringTools.urlEncode(mml);
 		data += "&lang=" + this.lang;
 		if(this.zoom != 1) data += "&zoom=" + this.zoom;
 		if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace("Calling: " + url,{ fileName : "EditorViewer.hx", lineNumber : 320, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
-		if(data.length < 2000) {
-			if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace("GET:" + data,{ fileName : "EditorViewer.hx", lineNumber : 323, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
-			con.open("GET",url + "?" + data,false);
-			con.send(null);
-		} else {
-			if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace("POST:" + data,{ fileName : "EditorViewer.hx", lineNumber : 327, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
-			con.open("POST",url,false);
-			con.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset=utf-8");
-			con.send(data);
-		}
+		if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace("POST:" + data,{ fileName : "EditorViewer.hx", lineNumber : 322, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
+		con.open("POST",url,false);
+		con.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset=utf-8");
+		con.send(data);
 		var s = con.responseText;
 		var i = s.indexOf("?");
 		if(i >= 0) {
 			var scaleDpi = 1;
 			var h = this.queryToParams(HxOverrides.substr(s,i + 1,null));
-			if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace(h.get("formula"),{ fileName : "EditorViewer.hx", lineNumber : 338, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
+			if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace(h.get("formula"),{ fileName : "EditorViewer.hx", lineNumber : 345, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
 			if(h.exists("dpi")) scaleDpi = this.zoom * (Std.parseInt(h.get("dpi")) / 96);
 			baseline = Std.parseInt(h.get("cb")) / scaleDpi | 0;
 			height = Std.parseInt(h.get("ch")) / scaleDpi | 0;
@@ -758,14 +773,15 @@ com.wiris.plugin.viewer.EditorViewer.prototype = {
 		}
 		img.src = con.responseText;
 		if(height > 0) {
-			if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace(height - baseline,{ fileName : "EditorViewer.hx", lineNumber : 349, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
+			if(com.wiris.plugin.viewer.EditorViewer.DEBUG) haxe.Log.trace(height - baseline,{ fileName : "EditorViewer.hx", lineNumber : 356, className : "com.wiris.plugin.viewer.EditorViewer", methodName : "callCreateImage"});
 			img.style.verticalAlign = "-" + (height - baseline) + "px";
 			img.style.height = "" + height + "px";
 			img.style.width = "" + width + "px";
 		}
 		img.setAttribute("data-mathml",mml);
 		img.setAttribute("class","Wirisformula");
-		if(text != null) img.alt = text;
+		var accessibility = this.callService(mml,"mathml2accessible");
+		if(accessibility != null) img.alt = accessibility;
 	}
 	,getTechnology: function() {
 		if(HxOverrides.substr(com.wiris.plugin.viewer.EditorViewer.TECH,1,null) == "param.js.tech.discover@") {

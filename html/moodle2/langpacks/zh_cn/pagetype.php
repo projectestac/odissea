@@ -27,7 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['page-admin-current'] = '当前网站管理员页面';
 $string['page-admin-x'] = '任意网站管理员页面';
+$string['page-course-index'] = '热门分类视图页面';
+$string['page-course-index-category'] = '当前分类视图页面';
+$string['page-course-index-x'] = '任意类别视图页面';
 $string['page-course-report-x'] = '任意课程报表';
+$string['page-course-search'] = '课程搜索页面';
 $string['page-course-view-x'] = '任意类型课程主页';
 $string['page-course-x'] = '任意课程页面';
 $string['page-mod-x'] = '任意活动模块页面';

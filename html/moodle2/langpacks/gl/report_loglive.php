@@ -25,6 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Compoñente';
+$string['eventcontext'] = 'Contexto da actividade';
+$string['eventloggedas'] = '{$a->realusername} como {$a->asusername}';
+$string['eventorigin'] = 'Orixe';
+$string['eventrelatedfullnameuser'] = 'Usuario afectado';
+$string['eventreportviewed'] = 'Visto o informe do rexistro activo';
 $string['livelogs'] = 'Rexistros activos da última hora';
 $string['loglive:view'] = 'Ver os rexistros activos';
+$string['nologreaderenabled'] = 'Non hai un lector de rexistros activado';
+$string['pause'] = 'Pausar as actualizacións activas';
 $string['pluginname'] = 'Rexistros activos';
+$string['resume'] = 'Resumir as actualizacións activas';
+$string['selectlogreader'] = 'Seleccionar o lector de rexistros';

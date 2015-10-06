@@ -10,6 +10,12 @@ var _wrs_androidRange;
 var _wrs_iosRange;
 // We need a variable to send device properties to editor.js on modal mode.
 var _wrs_deviceProperties = {}
+// Dragable options
+var _wrs_dragDataObject;
+var _wrs_dragObject;
+
+//LaTex client cache
+var _wrs_int_LatexCache = {};
 
 // var _wrs_conf_setSize = true;
 
@@ -64,8 +70,6 @@ if (!(window._wrs_conf_CASClassName)) {
 	_wrs_conf_CASClassName = 'Wiriscas';
 }
 
-// Functions
-
 /**
  * Adds element events.
  * @param object target Target
@@ -108,7 +112,7 @@ function wrs_addElementEvents(target, doubleClickHandler, mousedownHandler, mous
  */
 function wrs_addEvent(element, event, func) {
 	if (element.addEventListener) {
-		element.addEventListener(event, func, false);
+		element.addEventListener(event, func, true);
 	}
 	else if (element.attachEvent) {
 		element.attachEvent('on' + event, func);
@@ -348,6 +352,11 @@ function wrs_createImageSrc(mathml, wirisProperties) {
 		// Request metrics of the generated image
 		data['metrics'] = 'true';
 		data['centerbaseline'] = 'false';
+	}
+
+	// Full base64 method (edit & save)
+	if (_wrs_conf_saveMode == 'base64' && _wrs_conf_editMode == 'default') {
+		data['base64'] = true;
 	}
 	
 	var result = wrs_getContent(_wrs_conf_createimagePath, data);
@@ -669,48 +678,14 @@ function wrs_endParseSaveMode(code) {
 			convertToXml = true;
 		}
 	}
-	
-	var endPosition = 0;
-	var pattern = /<img/gi;
-	var patternLength = pattern.source.length;
-	
-	while (pattern.test(code)) {
-		var startPosition = pattern.lastIndex - patternLength;
-		output += code.substring(endPosition, startPosition);
-		
-		var i = startPosition + 1;
-		
-		while (i < code.length && endPosition <= startPosition) {
-			var character = code.charAt(i);
-			
-			if (character == '"' || character == '\'') {
-				var characterNextPosition = code.indexOf(character, i + 1);
-				
-				if (characterNextPosition == -1) {
-					i = code.length;		// End while.
-				}
-				else {
-					i = characterNextPosition;
-				}
-			}
-			else if (character == '>') {
-				endPosition = i + 1;
-			}
-			
-			++i;
-		}
-		
-		if (endPosition < startPosition) {		// The img tag is stripped.
-			output += code.substring(startPosition, code.length);
-			return output;
-		}
-		
-		var imgCode = code.substring(startPosition, endPosition);
-		output += wrs_getWIRISImageOutput(imgCode, convertToXml, convertToSafeXml);
+
+	if (_wrs_conf_saveMode == 'base64' && _wrs_conf_editMode == 'image') {
+		code = wrs_codeImgTransform(code, 'img264');
+	} else if (convertToXml || convertToSafeXml) {
+		code = wrs_codeImgTransform(code, 'img2mathml');
 	}
 
-	output += code.substring(endPosition, code.length);
-	return output;
+	return code;
 }
 
 /**
@@ -914,6 +889,9 @@ function wrs_getLatexFromTextNode(textNode, caretPosition) {
  * @return string
  */
 function wrs_getMathMLFromLatex(latex, includeLatexOnSemantics) {
+	if (_wrs_int_LatexCache.hasOwnProperty(latex)) {
+		return _wrs_int_LatexCache[latex];
+	}
 	var data = {
 		'service': 'latex2mathml',
 		'latex': latex
@@ -1046,7 +1024,7 @@ function wrs_getSelectedItem(target, isIframe, forceGetSelection) {
 			'node': range.item(0)
 		};
 	}
-1	
+
 	if (windowTarget.getSelection) {
 		var selection = windowTarget.getSelection();
 		
@@ -1180,6 +1158,12 @@ function wrs_httpBuildQuery(properties) {
  */
 function wrs_initParse(code, language) {
 	wrs_initSetSize();
+	if (window._wrs_conf_saveMode) {
+	_wrs_parseXml = _wrs_conf_saveMode == 'safeXml'|| _wrs_conf_saveMode == 'xml';
+		if (window._wrs_conf_parseModes !== undefined) {
+			_wrs_parseXml = _wrs_parseXml || wrs_arrayContains(_wrs_conf_parseModes, 'xml') != -1;
+		}
+	}
 	code = wrs_initParseSaveMode(code, language);
 	return wrs_initParseEditMode(code);
 }
@@ -1261,18 +1245,20 @@ function wrs_initParseEditMode(code) {
  */
 function wrs_initParseSaveMode(code, language) {
 	if (window._wrs_conf_saveMode) {
-		var safeXml = (_wrs_conf_saveMode == 'safeXml');
-		var characters = _wrs_xmlCharacters;
-		
-		if (safeXml) {
-			characters = _wrs_safeXmlCharacters;
-			code = wrs_parseSafeAppletsToObjects(code);
-		}
-		
-		if (safeXml || _wrs_conf_saveMode == 'xml') {
+
+		if (_wrs_parseXml) {
 			// Converting XML to tags.
-			code = wrs_parseMathmlToLatex(code, characters);			
-			code = wrs_parseMathmlToImg(code, characters, language);
+			code = wrs_parseMathmlToLatex(code, _wrs_safeXmlCharacters);
+			code = wrs_parseMathmlToLatex(code, _wrs_xmlCharacters);
+			// safeXml and xml must be parsed regardeless of save mode.
+			// Order is important here, safeXml must be parsed first in order to avoid conflicts with data-mathml img attribute.
+			code = wrs_parseSafeAppletsToObjects(code);
+			code = wrs_parseMathmlToImg(code, _wrs_safeXmlCharacters, language);
+			code = wrs_parseMathmlToImg(code, _wrs_xmlCharacters, language);
+		}
+
+		if (_wrs_conf_saveMode == 'base64' && _wrs_conf_editMode == 'image') {
+			code = wrs_codeImgTransform(code, 'base642showimage');
 		}
 	}
 	
@@ -1616,11 +1602,18 @@ function wrs_mathmlToAccessible(mathml, language) {
 		'service': 'mathml2accessible',
 		'mml': mathml
 	};
-	
+
+	// All render params must be sent to generate same digest as createImage
 	if (language) {
 		data['lang'] = language;
 	}
-	
+
+	if (_wrs_conf_setSize) {
+		// Request metrics of the generated image
+		data['metrics'] = 'true';
+		data['centerbaseline'] = 'false';
+	}
+
 	return wrs_getContent(_wrs_conf_servicePath, data);
 }
 
@@ -1747,7 +1740,7 @@ function wrs_mathmlToImgObject(creator, mathml, wirisProperties, language) {
 		imgObject.setAttribute(_wrs_conf_imageMathmlAttribute, wrs_mathmlEncode(mathml));
 		imgObject.src = result;
 		if (_wrs_conf_setSize) {
-			wrs_setImgSize(imgObject,result);
+			wrs_setImgSize(imgObject,result, (_wrs_conf_saveMode == 'base64' && _wrs_conf_editMode == 'default') ? true : false);
 			//imgObject.width = width;
 			//imgObject.height = height;
 			//imgObject.style.verticalAlign = "-" + (height - baseline) + "px";
@@ -1915,11 +1908,15 @@ function wrs_openEditorWindow(language, target, isIframe) {
 
 		// Device object properties
 		_wrs_deviceProperties['orientation'] = landscape ? 'landscape' : 'portait';
-		_wrs_deviceProperties['isAndroid'] = window.parent._wrs_androidRange ? true : false;
-		_wrs_deviceProperties['isIOS'] = window.parent._wrs_iosRange ? true : false;
+		_wrs_deviceProperties['isAndroid'] = isAndroid ? true : false;
+		_wrs_deviceProperties['isIOS'] = isIOS ? true : false;
 		_wrs_deviceProperties['isMobile'] = isMobile;
 
-		wrs_createModalWindow('WIRIS editor', iframeAttributes, _wrs_deviceProperties);
+		// Modal properties
+		var _wrs_modalProperties = {
+			draggable : true
+		};
+		wrs_createModalWindow('WIRIS editor', iframeAttributes, _wrs_deviceProperties, _wrs_modalProperties);
 	}
 }
 
@@ -1962,6 +1959,8 @@ function wrs_parseMathmlToLatex(content, characters){
 				latex = wrs_mathmlDecode(latex);
 			}
 			output += '$$' + latex + '$$';
+			// Populate latex into cache.
+			wrs_populateLatexCache(latex, mathml);
 		}else{
 			output += mathml;
 		}
@@ -2126,6 +2125,7 @@ function wrs_updateFormula(focusElement, windowTarget, mathml, wirisProperties, 
 	else if (editMode == 'latex') {
 		var latex = wrs_getLatexFromMathML(mathml);
 		var textNode = windowTarget.document.createTextNode('$$' + latex + '$$');
+		wrs_populateLatexCache(latex, mathml);
 		wrs_insertElementOnSelection(textNode, focusElement, windowTarget);
 	}
 	else if (editMode == 'iframes') {
@@ -2207,8 +2207,15 @@ function wrs_urlToAssArray(url) {
 	}
 }
 
-function wrs_setImgSize(img, url) {
-	var ar = wrs_urlToAssArray(url);
+function wrs_setImgSize(img, url, base64) {
+	if (base64) {
+		// Cleaning data:image/png;base64,
+		var base64String = img.src.substr( img.src.indexOf('base64,')+7, img.src.length);
+		bytes = wrs_b64ToByteArray(base64String, 88);
+		var ar = wrs_getMetricsFromBytes(bytes);
+	} else {
+		var ar = wrs_urlToAssArray(url);
+	}
 	var width = ar['cw'];
 	if (!width) {
 		return;
@@ -2231,13 +2238,17 @@ function wrs_fixAfterResize(img) {
 	img.removeAttribute('width');
 	img.removeAttribute('height');
 	if (_wrs_conf_setSize) {
-		wrs_setImgSize(img,img.src);
+		if (_wrs_conf_saveMode == 'base64') {
+			wrs_setImgSize(img,'', true);
+		} else {
+			wrs_setImgSize(img,img.src);
+		}
 	}
 }
 
 function wrs_initSetSize() {
 	// override _wrs_conf_setSize to align formulas when xml or safeXml mode are enabled
-	_wrs_conf_setSize = _wrs_conf_setSize || _wrs_conf_saveMode=='xml' || _wrs_conf_saveMode=='safeXml';
+	_wrs_conf_setSize = _wrs_conf_setSize || _wrs_conf_saveMode=='xml' || _wrs_conf_saveMode=='safeXml' || (_wrs_conf_saveMode=='base64' && _wrs_conf_editMode == 'default');
 }
 
 function wrs_loadConfiguration() {
@@ -2283,9 +2294,10 @@ if (typeof _wrs_conf_configuration_loaded == 'undefined') {
  * @title Modal window title
  * @iframeParams iframe attributes
  * @deviceProperties device properties like orientation, OS..
+ * @modalProperites modal properties (like draggable).
  */
 
-function wrs_createModalWindow(title, iframeParams, deviceProperties) {
+function wrs_createModalWindow(title, iframeParams, deviceProperties, modalProperties) {
 
 	// Adding css stylesheet
     var fileref = document.createElement("link");
@@ -2355,11 +2367,99 @@ function wrs_createModalWindow(title, iframeParams, deviceProperties) {
 	}
 
 	document.body.appendChild(modalDiv);
+	if (modalProperties.draggable) {
+		wrs_addModalListeners();
+	}
 
 	wrs_addEvent(closeDiv, 'click', function() {
 		wrs_closeModalWindow();
 	});
 
+}
+
+/**
+ * Makes an object draggable adding mouse and touch events.
+ *
+ * @param  object draggable object (for example modal dialog).
+ * @param  target target to add the events (for example de titlebar of a modal dialog)
+ */
+function wrs_addModalListeners(object, target) {
+	_wrs_dragObject = document.getElementsByClassName('wrs_modal_dialogContainer')[0];
+
+	//Mouse events
+	wrs_addEvent(document.body, 'mousedown', wrs_startDrag);
+    wrs_addEvent(window, 'mouseup', wrs_stopDrag);
+    wrs_addEvent(document, 'mouseup', wrs_stopDrag);
+    wrs_addEvent(document.getElementsByClassName("wrs_modal_iframe")[0], 'mouseup', wrs_stopDrag);
+	wrs_addEvent(document.body, 'mousemove', wrs_drag);
+
+    // Touch Events
+    wrs_addEvent(document.getElementsByClassName('wrs_modal_title')[0], 'touchstart', wrs_startDrag);
+	wrs_addEvent(document.body, 'touchmove', wrs_drag);
+    wrs_addEvent(window, 'touchend', wrs_stopDrag);
+}
+
+/**
+ * Returns mouse or touch coordinates (on touch events ev.ClientX doesn't exists)
+ * @param event ev mnouse or touch event
+ * @return object with the X and Y coordinates.
+ */
+function wrs_eventClient(ev) {
+	if (typeof(ev.clientX) == 'undefined') {
+		var client = {
+	        X : ev.changedTouches[0].clientX,
+	        Y : ev.changedTouches[0].clientY
+	    };
+		return client;
+    } else {
+    	client = {
+	        X : ev.clientX,
+	        Y : ev.clientY
+    	};
+    	return client;
+    }
+}
+
+/**
+ * Start drag function: set the object _wrs_dragDataObject with the draggable object offsets coordinates.
+ * when drag starts (on touchstart or mousedown events).
+ *
+ * @param event ev touchstart or mousedown event.
+ */
+function wrs_startDrag(ev) {
+	if (ev.target.className == 'wrs_modal_title') {
+	    if(!_wrs_dragDataObject) {
+	        ev = ev||event;
+	        _wrs_dragDataObject = {
+	  	      x: wrs_eventClient(ev).X- (isNaN(parseInt(window.getComputedStyle(_wrs_dragObject)).left && parseInt(window.getComputedStyle(_wrs_dragObject).left >0 )) ? _wrs_dragObject.offsetLeft :  parseInt(window.getComputedStyle(_wrs_dragObject).left)),
+	    	  y: wrs_eventClient(ev).Y- (isNaN(parseInt(window.getComputedStyle(_wrs_dragObject).top)) ? _wrs_dragObject.offsetTop :  parseInt(window.getComputedStyle(_wrs_dragObject).top))
+	        };
+	    };
+	}
+}
+
+/**
+ * Updates_wrs_dragDataObject with the draggable object coordinates when the draggable object is being moved.
+ *
+ * @param event ev touchmouve or mousemove events.
+ */
+function wrs_drag(ev) {
+	if(_wrs_dragDataObject) {
+	  ev.preventDefault();
+	  ev = ev || event;
+	  _wrs_dragObject.style.left = wrs_eventClient(ev).X-_wrs_dragDataObject.x+"px";
+	  _wrs_dragObject.style.top = wrs_eventClient(ev).Y-_wrs_dragDataObject.y+"px";
+	  _wrs_dragObject.style.position = 'absolute';
+	}
+}
+
+/**
+ * Set the _wrs_dragDataObject to null when the drag finish (touchend or mouseup events).
+ *
+ * @param event ev touchend or mouseup event.
+ */
+function wrs_stopDrag(ev) {
+	_wrs_dragDataObject=null;
 }
 
 /**
@@ -2449,6 +2549,10 @@ function wrs_createModalWindowAndroid(modalDiv, containerDiv, iframe, iframePara
 
 function wrs_createModalWindowIos(modalDiv, containerDiv, iframe, iframeParams) {
 	modalDiv.className = modalDiv.className + " wrs_modal_ios";
+	if (typeof _wrs_isMoodle24 != 'undefined') {
+		modalDiv.className = modalDiv.className + " moodle";
+	}
+	
 	containerDiv.className = containerDiv.className + " wrs_modal_ios";
 	iframe.className = iframe.className + " wrs_modal_ios";
 
@@ -2578,3 +2682,279 @@ function wrs_isBadStockAndroid () {
     // anything below 4.4 uses WebKit without *any* viewport support.
     return versionNumber <= 4.3;
   }
+
+/**
+* Populates LaTeX cache into _wrs_int_LatexCache global variable.
+*
+* @latex LaTeX code (with $$ separators)
+* @mathml matml LaTeX translation.*
+*/
+function wrs_populateLatexCache(latex, mathml) {
+	if (mathml.indexOf('semantics') == -1 && mathml.indexOf('annotation') == -1 ) {
+		mathml = wrs_insertSemanticsMathml(mathml, latex);
+	}
+  	if (!_wrs_int_LatexCache.hasOwnProperty(latex)) {
+  		_wrs_int_LatexCache[latex] = mathml;
+  	}
+}
+
+/**
+ * Add annotation tag to mathml without it (mathml comes from LaTeX string)
+ * @param  string mathml
+ * @param  string latex
+ * @return string new mathml containing LaTeX
+ */
+function wrs_insertSemanticsMathml(mathml, latex) {
+
+	var firstEndTag = '>';
+	var mathTagEnd = '<' + '/math' + '>';
+	var openSemantics = '<' + 'semantics' + '>';
+	var closeSemantics = '<' + '/semantics' + '>';
+	var openTarget = '<annotation encoding="LaTeX">';
+	var closeTarget = '<' + '/annotation' + '>';
+
+	var indexMathBegin = mathml.indexOf(firstEndTag);
+	var indexMathEnd = mathml.indexOf(mathTagEnd);
+	var mathBeginExists = mathml.substring(mathml.indexOf('<'), mathml.indexOf('>')).indexOf('math');
+
+	if (indexMathBegin != -1 && indexMathEnd != -1 && mathBeginExists)  {
+		var mathmlContent = mathml.substring(indexMathBegin+1, indexMathEnd);
+		var mathmlContentSemantics = openSemantics + mathmlContent + openTarget + latex + closeTarget + closeSemantics;
+		return mathml.replace(mathmlContent, mathmlContentSemantics);
+	} else {
+		return mathml;
+	}
+
+}
+
+/**
+ * Transform html img tags inside a html code to mathml, base64 img tags (i.e with base64 on src) or showimage img tags (i.e with showimage.php on src)
+ *
+ * @param  String code html code
+ * @param  String mode base642showimage or img2mathml or img264 transform.
+ * @return String html code transformed.
+ */
+function wrs_codeImgTransform(code, mode) {
+	output = '';
+
+	var endPosition = 0;
+	var pattern = /<img/gi;
+	var patternLength = pattern.source.length;
+
+	while (pattern.test(code)) {
+		var startPosition = pattern.lastIndex - patternLength;
+		output += code.substring(endPosition, startPosition);
+
+		var i = startPosition + 1;
+
+		while (i < code.length && endPosition <= startPosition) {
+			var character = code.charAt(i);
+
+			if (character == '"' || character == '\'') {
+				var characterNextPosition = code.indexOf(character, i + 1);
+
+				if (characterNextPosition == -1) {
+					i = code.length;		// End while.
+				}
+				else {
+					i = characterNextPosition;
+				}
+			}
+			else if (character == '>') {
+				endPosition = i + 1;
+			}
+
+			++i;
+		}
+
+		if (endPosition < startPosition) {		// The img tag is stripped.
+			output += code.substring(startPosition, code.length);
+			return output;
+		}
+		var imgCode = code.substring(startPosition, endPosition);
+		var imgObject = wrs_createObject(imgCode);
+		var xmlCode = imgObject.getAttribute(_wrs_conf_imageMathmlAttribute);
+
+		if (mode == 'base642showimage') {
+			if (xmlCode == null) {
+				xmlCode = imgObject.getAttribute('alt');
+			}
+			xmlCode = wrs_mathmlDecode(xmlCode);
+			imgCode = wrs_mathmlToImgObject(document, xmlCode, null, null);
+			output += wrs_createObjectCode(imgCode);
+		} else if (mode == 'img2mathml') {
+			if (window._wrs_conf_saveMode) {
+				if (_wrs_conf_saveMode == 'safeXml') {
+					convertToXml = true;
+					convertToSafeXml = true;
+				}
+				else if (_wrs_conf_saveMode == 'xml') {
+					convertToXml = true;
+					convertToSafeXml = false;
+				}
+			}
+			output += wrs_getWIRISImageOutput(imgCode, convertToXml, convertToSafeXml);
+		} else if (mode == 'img264') {
+
+			if (xmlCode == null) {
+				xmlCode = imgObject.getAttribute('alt');
+			}
+			xmlCode = wrs_mathmlDecode(xmlCode);
+
+			var properties = {};
+			properties['base64'] = 'true';
+			imgCode = wrs_mathmlToImgObject(document, xmlCode, properties, null)
+			// Metrics
+			wrs_setImgSize(imgCode, imgCode.src, true);
+
+			output += wrs_createObjectCode(imgCode);
+		}
+	}
+	output += code.substring(endPosition, code.length);
+	return output;
+}
+
+/**
+ * Decode a base64 to its numeric value
+ *
+ * @param  {String} el base64 character.
+ * @return {int} base64 char numeric value.
+ */
+function wrs_decode64(el) {
+
+	var PLUS = '+'.charCodeAt(0);
+	var SLASH = '/'.charCodeAt(0);
+	var NUMBER = '0'.charCodeAt(0);
+	var LOWER = 'a'.charCodeAt(0);
+	var UPPER = 'A'.charCodeAt(0);
+	var PLUS_URL_SAFE = '-'.charCodeAt(0);
+	var SLASH_URL_SAFE = '_'.charCodeAt(0);
+	var code = el.charCodeAt(0);
+
+	if (code === PLUS || code === PLUS_URL_SAFE) return 62 // '+'
+	if (code === SLASH || code === SLASH_URL_SAFE) return 63 // '/'
+	if (code < NUMBER) return -1 // no match
+	if (code < NUMBER + 10) return code - NUMBER + 26 + 26
+	if (code < UPPER + 26) return code - UPPER
+	if (code < LOWER + 26) return code - LOWER + 26
+}
+
+/**
+ * Converts a base64 string to a array of bytes.
+ * @param  {String} b64String base64 string.
+ * @param  {int} len dimension of byte array (by default whole string).
+ * @return {Array} Byte array.
+ */
+function wrs_b64ToByteArray(b64String, len) {
+
+	var tmp;
+
+	if (b64String.length % 4 > 0) {
+	  throw new Error('Invalid string. Length must be a multiple of 4') ; // Tipped base64. Length is fixed.
+	}
+
+	var arr = new Array()
+
+	if (!len) { // All b64String string
+	    var placeHolders = b64String.charAt(b64String.length - 2) === '=' ? 2 : b64String.charAt(b64String.length - 1) === '=' ? 1 : 0
+	    var l = placeHolders > 0 ? b64String.length - 4 : b64String.length;
+	} else {
+		var l = len;
+	}
+
+	for (var i = 0; i < l; i += 4) {
+	  tmp = (wrs_decode64(b64String.charAt(i)) << 18) | (wrs_decode64(b64String.charAt(i + 1)) << 12) | (wrs_decode64(b64String.charAt(i + 2)) << 6) | wrs_decode64(b64String.charAt(i + 3));
+
+	  arr.push((tmp  >> 16) & 0xFF);
+	  arr.push((tmp >> 8)  & 0xFF);
+	  arr.push(tmp & 0xFF);
+	}
+
+	if (placeHolders) {
+		if (placeHolders === 2) {
+		  tmp = (wrs_decode64(b64String.charAt(i)) << 2) | (wrs_decode64(b64String.charAt(i + 1)) >> 4);
+		  arr.push(tmp & 0xFF)
+		} else if (placeHolders === 1) {
+		  tmp = (wrs_decode64(b64String.charAt(i)) << 10) | (wrs_decode64(b64String.charAt(i + 1)) << 4) | (wrs_decode64(b64String.charAt(i + 2)) >> 2)
+		  arr.push((tmp >> 8) & 0xFF)
+		  arr.push(tmp & 0xFF)
+		}
+	}
+
+	return arr
+}
+
+/**
+ * Returns the first 32-bit signed integer from a byte array.
+ * @param  {Array} bytes array of bytes.
+ * @return {int} 32-bit signed integer.
+ */
+function wrs_readInt32(bytes) {
+	if (bytes.length < 4) {
+		return false;
+	}
+	var int32 = bytes.splice(0,4);
+	return (int32[0] << 24 | int32[1] << 16 | int32[2] <<  8 | int32[3] << 0);
+}
+
+/**
+ * Read the first byte from a byte array.
+ * @param  {array} bytes byte array.
+ * @return
+ */
+function wrs_readByte(bytes) {
+	return bytes.shift() << 0;
+}
+
+/**
+ * Read an arbitrary number of bytes, from a fixed position on a byte array.
+ * @param  {array} bytes byte array.
+ * @param  {int} post start position.
+ * @param  {int} len number of bytes to read.
+ * @return {array} byte array.
+ */
+function wrs_readBytes(bytes, pos, len) {
+	return bytes.splice(pos, len);
+}
+
+/**
+ * Get metrics (width, height, baseline and dpi) from a png's byte array.
+ * @param  {array} bytes png byte array.
+ * @return {array} An array containging the png's metrics.
+ */
+function wrs_getMetricsFromBytes(bytes) {
+	wrs_readBytes(bytes, 0, 8);
+	alloc = 10;
+	i = 0;
+	while (bytes.length >= 4) {
+		len = wrs_readInt32(bytes);
+        typ = wrs_readInt32(bytes);
+        if (typ == 0x49484452) {
+            width = wrs_readInt32(bytes);
+            height = wrs_readInt32(bytes);
+            // read 5 bytes
+            wrs_readInt32(bytes);
+            wrs_readByte(bytes);
+        } else if (typ == 0x62615345) { // 'baSE'
+            baseline = wrs_readInt32(bytes);
+		} else if (typ == 0x70485973) { // 'pHYs' (dpis);
+            dpi = wrs_readInt32(bytes);
+            dpi = (Math.round(dpi / 39.37));
+            wrs_readInt32(bytes);
+            wrs_readByte(bytes);
+         }
+         wrs_readInt32(bytes);
+	}
+
+	if (width) {
+		var arr = new Array();
+		arr['cw'] = width;
+		arr['ch'] = height;
+		arr['dpi'] = dpi;
+		if (baseline) {
+			arr['cb'] = baseline;
+		}
+
+		return arr;
+	}
+}

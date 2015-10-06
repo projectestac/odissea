@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addoutcome'] = 'Afegeix una competència';
 $string['courseoutcomes'] = 'Competències del curs';
 $string['coursespecoutcome'] = 'Competències del curs';
+$string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe de competències de qualificacions';
 $string['outcomes:view'] = 'Veure l\'informe de competències';
 $string['pluginname'] = 'Informe de competències';
 $string['usedgradeitem'] = 'Nombre d\'elements de qualificació';

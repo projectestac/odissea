@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'すべてのカテゴリ';
+$string['apierror'] = 'Youtube APIキーが設定されていません。あなたの管理者に連絡してください。';
+$string['apikey'] = 'APIキー';
+$string['apikeyinfo'] = 'あなたのMoodleサイトの<a href="https://developers.google.com/youtube/v3/getting-started">Google APIキー</a>を取得します。';
 $string['autosvehicles'] = '自動車と乗り物';
 $string['category'] = 'カテゴリ';
 $string['comedy'] = 'コメディ';
@@ -41,7 +44,8 @@ $string['newspolitics'] = 'ニュースと政治';
 $string['numberofvideos'] = 'ビデオ数';
 $string['peopleblogs'] = 'ブログと人';
 $string['petsanimals'] = 'ペットと動物';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
+$string['requesterror'] = 'サーバからデータを取得できませんでした。問題が続く場合、あなたの管理者に連絡してください。';
 $string['scienceandtech'] = '科学と技術';
 $string['sports'] = 'スポーツ';
 $string['tag_youtube:addinstance'] = '新しいYouTubeブロックを追加する';

@@ -37,6 +37,13 @@ final class log4p {
      * @param string $savetofilepath -> path and file name where the log have to be saved when $state is set to true
      */
     private function __construct($savetofile = false, $savetofilepath = '', $debug = false) {
+        $this->debug = $debug;
+
+        if ($savetofile == false) {
+            $this->savetofile = false;
+            $this->add('log4p: its off becouse the parameters to switch it on sets it', 'WARNING');
+            return;
+        }
 
         // Set default path location
         if (empty($savetofilepath)) {
@@ -49,11 +56,10 @@ final class log4p {
             for ($i = 0; $i < count($pwdarray) - 1; $i++) {
                 $pwd .= $pwdarray[$i].'/';
             }
-            $savetofilepath = $pwd.'log/mailsender.log';
+            $savetofilepath = $pwd.'log';
         }
 
-        $this->savetofile = $this->loadsavetofile($savetofile, $savetofilepath);
-        $this->debug = $debug;
+        $this->savetofile = $this->loadsavetofile($savetofilepath);
     }
 
     /**
@@ -130,7 +136,7 @@ final class log4p {
      * @param  string $delimiter -> characters used to diference one line from other
      * @return string            -> string with all the entries in log separated by the delimeter
      */
-    function get_log ($delimiter = "\n") {
+    public function get_log ($delimiter = "\n") {
         if (empty($this->log)) {
             return false;
         }
@@ -156,35 +162,42 @@ final class log4p {
      * @param  string $delimiter      -> characters used to diference one line from other
      * @return bool                   -> true if saver could be switched to on or false if not
      */
-    private function loadsavetofile($state = false, $savetofilepath = "", $delimiter = "\n") {
+    private function loadsavetofile($savetofilepath = "", $delimiter = "\n", $site = false) {
 
         $this->filelogpointer = false;
         // Check if parameters are set to true and are correct
-        if ($state == false || $savetofilepath == '') {
+        if (empty($savetofilepath)) {
             $this->add('log4p: its off becouse the parameters to switch it on sets it', 'WARNING');
-                return false;
+            return false;
         }
 
         // Prepare savetofilepath parameter
         $savetofilepath = str_replace('\\', '/', $savetofilepath);
-        $filepatharray = explode("/", $savetofilepath);
 
-        $pwd = "";
-
-        // Parse the full path
-        for ($i = 0; $i < count($filepatharray) - 1; $i++) {
-            $pwd .= $filepatharray[$i].'/';
+        // Delete filename if needed
+        $stringtosearch = '.log';
+        if (substr($savetofilepath, - strlen($stringtosearch)) === $stringtosearch) {
+            $filepatharray = explode("/", $savetofilepath);
+            array_pop($filepatharray);
+            $savetofilepath = implode("/", $filepatharray);
         }
-        $pwd = substr($pwd, 0, strlen($pwd) - 1);
 
         // Check if exits log folder
-        if (!is_dir($pwd)) {
-            if (!@mkdir($pwd)) {
+        if (!is_dir($savetofilepath)) {
+            if (!@mkdir($savetofilepath)) {
                 $this->add('log4p: folder not exits and its imposible to create it', 'WARNING');
                 return false;
             }
         }
 
+        // Erase old files
+        $site = $site ? '_'.$site : "";
+        $search = $savetofilepath.'/mailsender'.$site.'_'.date("Ym", strtotime("-2 month"));
+        foreach (glob($search.'*.log') as $filename) {
+            unlink($filename);
+        }
+        // Add Filename
+        $savetofilepath .= '/mailsender'.$site.'_'.date("Ymd").'.log';
         // Open or create log file
         if (!$file = fopen($savetofilepath, "a+")) {
             $this->add('log4p: file not exits and its imposible to create it', 'WARNING');

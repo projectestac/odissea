@@ -32,6 +32,6 @@ $string['auth_imaphost_key'] = 'ホスト';
 $string['auth_imapnotinstalled'] = 'IMAP認証を使用できません。PHP IMAPモジュールがインストールされていません。';
 $string['auth_imapport'] = 'IMAPサーバポート番号です。通常、143または993です。';
 $string['auth_imapport_key'] = 'ポート';
-$string['auth_imaptype'] = 'IMAPサーバタイプです。IMAPサーバでは、異なるタイプの認証およびネゴシエーションを使用することができます。';
+$string['auth_imaptype'] = 'IMAPサーバタイプです。IMAPサーバでは異なるタイプの認証およびネゴシエーションを使用することができます。';
 $string['auth_imaptype_key'] = 'タイプ';
 $string['pluginname'] = 'IMAPサーバ';

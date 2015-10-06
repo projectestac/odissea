@@ -325,11 +325,61 @@ $functions = array(
         'capabilities'  => ''
     ),
 
+    'local_mobile_mod_forum_add_discussion' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_forum_add_discussion',
+        'description'   => 'Add a new discussion into an existing forum.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/forum:startdiscussion'
+    ),
+
+    'local_mobile_mod_forum_add_discussion_post' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_forum_add_discussion_post',
+        'description'   => 'Create new posts into an existing discussion.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/forum:replypost'
+    ),
+
+    'local_mobile_mod_forum_get_forums_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_forum_get_forums_by_courses',
+        'description'   => 'Returns a list of forum instances in a provided set of courses, if
+            no courses are provided then all the forum instances the user has access to will be
+            returned.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/forum:viewdiscussion'
+    ),
+
+    'local_mobile_core_group_get_activity_groupmode' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_group_get_activity_groupmode',
+        'description'   => 'Returns effective groupmode used in a given activity.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_core_group_get_activity_allowed_groups' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_group_get_activity_allowed_groups',
+        'description'   => 'Gets a list of groups that the user is allowed to access within the specified activity.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
     'local_mobile_core_completion_mark_course_self_completed' => array(
         'classname'   => 'local_mobile_external',
         'methodname'  => 'core_completion_mark_course_self_completed',
         'description' => 'Update the course completion status for the current user (if course self-completion is enabled).',
         'type'        => 'write',
+    ),
+
+    'local_mobile_mod_choice_delete_choice_responses' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'mod_choice_delete_choice_responses',
+        'description' => 'Delete the given submitted responses in a choice',
+        'type'        => 'write',
+        'capabilities'  => 'mod/choice:choose'
     ),
 
 );
@@ -359,7 +409,6 @@ $services = array(
             'core_grades_get_grades',
             'message_airnotifier_is_system_configured',
             'message_airnotifier_are_notification_preferences_configured',
-            'mod_forum_get_forums_by_courses',
             'mod_forum_get_forum_discussions_paginated',
             'mod_forum_get_forum_discussion_posts',
             'core_files_get_files',
@@ -407,7 +456,13 @@ $services = array(
             'local_mobile_mod_choice_get_choice_options',
             'local_mobile_mod_choice_submit_choice_response',
             'local_mobile_mod_choice_get_choices_by_courses',
+            'local_mobile_mod_forum_add_discussion',
+            'local_mobile_mod_forum_add_discussion_post',
+            'local_mobile_mod_forum_get_forums_by_courses',
+            'local_mobile_core_group_get_activity_groupmode',
+            'local_mobile_core_group_get_activity_allowed_groups',
             'local_mobile_core_completion_mark_course_self_completed',
+            'local_mobile_mod_choice_delete_choice_responses',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

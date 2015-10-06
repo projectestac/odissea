@@ -1272,7 +1272,7 @@ $string['noreplybouncemessage'] = 'Je hebt geantwoord op een niet-beantwoorden e
 
 Dit was de inhoud van je e-mail:';
 $string['noreplybouncesubject'] = '{$a} - geweigerde e-mail';
-$string['noreplyname'] = 'Beantwoord deze e-mail niet door op "beantwoorden" te klikken.';
+$string['noreplyname'] = 'Deze e-mail niet beantwoorden';
 $string['noresetrecord'] = 'We hebben geen weet van deze aanvraag voor een nieuw wachtwoord. Vraag het wachtwoord opnieuw aan.';
 $string['noresults'] = 'Geen resultaten';
 $string['normal'] = 'Normaal';
@@ -1522,7 +1522,7 @@ $string['rssarticles'] = 'Aantal recente RSS-artikels';
 $string['rsserror'] = 'Fout tijdens het lezen van de RSS-gegevens';
 $string['rsserrorauth'] = 'Je RSS-link bevat geen geldig authenticatietoken.';
 $string['rsserrorguest'] = 'Deze feed gebruikt gasttoegang om toegang tot de gegevens te krijgen, maar de gast-account heeft geen rechten om de gegevens te lezen. Bezoek de oorspronkelijke locatie van deze feed als geldige gebruiker en haal daar een nieuwe RSS-link';
-$string['rsskeyshelp'] = '<p>Om veiligheid en privacy te verzekeren, bevatten de RSS feed URL\'s een token dat de gebruiker identificeerd waarvoor ze bestemd zijn. Dit voorkomt dat andere gebruikers toegang hebben tot delen van Moodle die ze niet zouden moeten hebben door RSS feeds te gebruiken.</p><p>Dit token wordt de eerste keer dat je in een zone komt die RSS feeds maakt automatisch gegenereerd. Als je denkt dat jouw RSS feed token misbruikt wordt, dan kun je een nieuw token vragen door te klikken op  \'Link resetten\'. Merk op dat je huidige RSS feed URL\'s niet meer zullen werken.</p>';
+$string['rsskeyshelp'] = '<p>Om veiligheid en privacy te verzekeren, bevatten de RSS-feed-URL\'s een token dat de gebruiker waarvoor ze bestemd zijn identificeert. Dit voorkomt dat andere gebruikers toegang zouden krijgen  door RSS feeds te gebruiken tot delen van Moodle waar ze geen recht op hebben.</p><p>Dit token wordt de eerste keer dat je in een zone komt die RSS feeds maakt automatisch gegenereerd. Als je denkt dat jouw RSS feed token misbruikt wordt, dan kun je een nieuw token vragen door te klikken op  \'Link resetten\'. Merk op dat je huidige RSS feed URL\'s niet meer zullen werken.</p>';
 $string['rsstype'] = 'RSS-feed voor deze activiteit';
 $string['saveandnext'] = 'Bewaar en toon volgende';
 $string['savechanges'] = 'Bewaar de wijzigingen';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'APIキー';
-$string['apiv1migration_message_content'] = '最新のMoodleのアップグレード (2.6, 2.5.3, 2.4.7) の一環として、Boxリポジトリオプラグインは無効にされています。再度有効にするには、ドキュメンテーション ( {$a->docsurl} ) に記載されているとおり、あなたは再設定する必要があります。';
+$string['apiv1migration_message_content'] = '最新のMoodleのアップグレード (2.6, 2.5.3, 2.4.7) の一環として、Boxリポジトリオプラグインは無効にされています。再度有効にするにはドキュメンテーション ( {$a->docsurl} ) に記載されているとおり、あなたは再設定する必要があります。';
 $string['apiv1migration_message_small'] = 'Box APIv1移行ドキュメンテーションで説明されている設定が必要なため、このプラグインは無効にされています。';
 $string['apiv1migration_message_subject'] = 'Boxリポジトリプラグインに関する重要情報';
 $string['boxnet:view'] = 'Boxリポジトリを表示する';

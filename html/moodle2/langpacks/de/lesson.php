@@ -93,6 +93,7 @@ $string['checkquestion'] = 'Frage testen';
 $string['classstats'] = 'Statistik';
 $string['clicktodownload'] = 'Klicken Sie auf den Link, um die Datei herunter zu laden.';
 $string['clicktopost'] = 'Klicken Sie hier, um Ihre Bewertung auf der Bestenliste zu veröffentlichen.';
+$string['closebeforeopen'] = 'Die Lektion konnte nicht aktualisiert werden. Die Endzeit muss nach der Anfangszeit liegen.';
 $string['cluster'] = 'Cluster';
 $string['clusterjump'] = 'Ungesehene Frage innerhalb des Clusters';
 $string['clustertitle'] = 'Cluster';
@@ -271,17 +272,15 @@ $string['maximumnumberofattempts_help'] = 'Dieser Wert legt die Zahl der maximal
 $string['maximumnumberofattemptsreached'] = 'Sie haben die Höchstzahl der Versuche erreicht - weiter zur nächsten Seite';
 $string['maxtime'] = 'Zeitbegrenzung (Minuten)';
 $string['maxtimewarning'] = 'Sie haben noch {$a} Minute(n), um die Lektion zu beenden.';
-$string['mediaclose'] = 'Schließen-Taste:';
+$string['mediaclose'] = 'Taste \'Schließen\' anzeigen';
 $string['mediafile'] = 'Datei-Popup';
 $string['mediafile_help'] = 'Um ein Popup-Fenster für eine Mediendatei in eine Lektion einzufügen, wählen Sie die anzuzeigende Datei aus. Jede Lektionsseite enthält dann einen Link zum Öffnen des Popup-Fensters.';
 $string['mediafilepopup'] = 'Link zur Mediendatei';
-$string['mediaheight'] = 'Höhe des Popup-Fensters:';
-$string['mediawidth'] = 'Breite des Popup-Fensters:';
+$string['mediaheight'] = 'Höhe des Popup-Fensters';
+$string['mediawidth'] = 'Breite des Popup-Fensters';
 $string['messageprovider:graded_essay'] = 'Mitteilung zur Freitextbewertung';
 $string['minimumnumberofquestions'] = 'Mindestzahl der Fragen';
-$string['minimumnumberofquestions_help'] = 'Dieser Wert legt eine untere Grenze für die Anzahl an Fragen fest, die in die Bewertung der Aktivität eingehen. Falls die Lektion mindestens eine Verzweigungsseite enthält, sollte der Wert auf 0 gesetzt werden.
-
-Wenn Sie den Wert auf 20 setzen, so wird empfohlen, dass Sie dies in einem Text auf der Startseite der Lektion ankündigen, beispielsweise so: "In dieser Lektion wird von Ihnen erwartet, dass Sie mindestens 20 Fragen bearbeiten. Sie dürfen auch mehr Fragen versuchen, wenn Sie möchten. Falls Sie allerdings nur weniger als 20 Fragen bearbeiten, so wird Ihre Bewertung trotzdem so berechnet, als ob Sie 20 Fragen versucht hätten."';
+$string['minimumnumberofquestions_help'] = 'Dieser Wert legt eine untere Grenze für die Anzahl an Fragen fest, die in die Bewertung der Aktivität eingehen.';
 $string['missingname'] = 'Bitte geben Sie einen Nicknamen ein';
 $string['modattempts'] = 'Wiederholung erlauben';
 $string['modattempts_help'] = 'Wenn diese Option aktiviert ist, können Teilnehmer/innen erneut durch die Lektion navigieren.';
@@ -335,7 +334,7 @@ $string['numberofpagestoshow_help'] = 'Diese Einstellung legt die Zahl der Seite
 
 Wenn die "Zahl der zu zeigenden Seiten" auf 0 gesetzt wird, dann werden alle Seiten in der Lektion angezeigt.';
 $string['numberofpagesviewed'] = 'Beantwortete Fragen: {$a}';
-$string['numberofpagesviewednotice'] = 'Beantwortete Fragen: {$a->nquestions} (mindestens zu beantworten: {$a->minquestions})';
+$string['numberofpagesviewednotice'] = 'Zahl der beantworteten Fragen: {$a->nquestions} (mindestens zu beantworten: {$a->minquestions})';
 $string['numerical'] = 'Numerisch';
 $string['ongoing'] = 'Aktuelle Bewertung anzeigen';
 $string['ongoingcustom'] = 'Gesamtpunktzahl: {$a->score} / {$a->currenthigh}';

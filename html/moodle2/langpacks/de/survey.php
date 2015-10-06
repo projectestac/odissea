@@ -250,7 +250,7 @@ $string['survey:download'] = 'Antworten herunterladen';
 $string['surveygraph'] = 'Umfragegrafik';
 $string['surveyname'] = 'Name der Umfrage';
 $string['survey:participate'] = 'Umfrage beantworten';
-$string['survey:readresponses'] = 'Antworten ansehen';
+$string['survey:readresponses'] = 'Antworten anzeigen';
 $string['surveysaved'] = 'Umfrage gespeichert';
 $string['surveytype'] = 'Typ der Umfrage';
 $string['surveytype_help'] = 'Es gibt 3 verfügbare Umfragetypen:
@@ -262,4 +262,4 @@ $string['surveytype_help'] = 'Es gibt 3 verfügbare Umfragetypen:
 ';
 $string['thanksforanswers'] = 'Danke {$a}, dass Sie sich an dieser Umfrage beteiligt haben.';
 $string['time'] = 'Zeit';
-$string['viewsurveyresponses'] = 'Zeige {$a} Antworten zur Umfrage';
+$string['viewsurveyresponses'] = '{$a} Antworten zur Umfrage anzeigen';

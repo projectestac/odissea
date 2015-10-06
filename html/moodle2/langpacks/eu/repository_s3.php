@@ -29,5 +29,5 @@ $string['access_key'] = 'Sarbide-giltza';
 $string['configplugin'] = 'Amazon S3-ren ezarpenak';
 $string['needaccesskey'] = 'Sarbide-gitza lortu behar da';
 $string['pluginname'] = 'Amazon S3';
-$string['s3:view'] = 'Amazon S3 biltegia ikusi';
+$string['s3:view'] = 'Ikusi Amazon S3 biltegia';
 $string['secret_key'] = 'Giltza sekretua';

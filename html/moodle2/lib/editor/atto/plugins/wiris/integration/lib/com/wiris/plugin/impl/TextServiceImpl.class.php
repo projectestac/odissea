@@ -64,7 +64,7 @@ class com_wiris_plugin_impl_TextServiceImpl implements com_wiris_plugin_api_Text
 				return com_wiris_system_Utf8::fromBytes($s);
 			}
 		}
-		$url = $this->plugin->getImageServiceURL($serviceName);
+		$url = $this->plugin->getImageServiceURL($serviceName, com_wiris_plugin_impl_TextServiceImpl::hasStats($serviceName));
 		$h = new com_wiris_plugin_impl_HttpImpl($url, null);
 		$this->plugin->addReferer($h);
 		$this->plugin->addProxy($h);
@@ -99,6 +99,12 @@ class com_wiris_plugin_impl_TextServiceImpl implements com_wiris_plugin_api_Text
 	}
 	static function hasCache($serviceName) {
 		if($serviceName === "mathml2accessible") {
+			return true;
+		}
+		return false;
+	}
+	static function hasStats($serviceName) {
+		if($serviceName === "latex2mathml") {
 			return true;
 		}
 		return false;

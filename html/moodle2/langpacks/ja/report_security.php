@@ -96,7 +96,7 @@ $string['check_riskadmin_warning'] = '{$a->admincount} 名のサーバ管理者�
 $string['check_riskbackup_detailsok'] = 'ユーザデータのバックアップを明確に許可しているロールはありません。しかし、「doanything」ケイパビリティを持った管理者は、まだユーザデータをバックアップできることに留意してください。';
 $string['check_riskbackup_details_overriddenroles'] = '<p>これらのアクティブなオーバーライドは、ユーザに対して、バックアップ内にユーザデータを含むことができる能力を与えます。このパーミッションが本当に必要かどうか確認してください。</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>現在、以下のシステムロールは、ユーザに対して、バックアップ内にユーザデータを含むことを許可しています。このパーミッションが本当に必要かどうか確認してください。</p> {$a}';
-$string['check_riskbackup_details_users'] = '<p>上記のロールまたはローカルオーバーライドのため、以下のユーザアカウントは、現在コースに受講登録しているユーザの個人情報を含むバックアップを作成できるパーミッションを持っています。これらのユーザが、(a)信用されて、(b)強度の高いパスワードで守られていることを確認してください:</p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>上記のロールまたはローカルオーバーライドのため、以下のユーザアカウントは現在コースに受講登録しているユーザの個人情報を含むバックアップを作成できるパーミッションを持っています。これらのユーザが、(a)信用されて、(b)強度の高いパスワードで守られていることを確認してください:</p> {$a}';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->contextname} 内の {$a->name}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'ユーザデータのバックアップ';

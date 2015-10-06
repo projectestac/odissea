@@ -157,6 +157,7 @@ $string['advhr:delta_width'] = '';
 $string['advhr_dlg:noshade'] = '无阴影';
 $string['advhr_dlg:size'] = '高度';
 $string['advhr_dlg:width'] = '宽度';
+$string['advhr_dlg:widthunits'] = '单位';
 $string['advimage:delta_height'] = '';
 $string['advimage:delta_width'] = '';
 $string['advimage_dlg:align'] = '对齐方式';

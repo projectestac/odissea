@@ -25,4 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alignment'] = '对齐';
+$string['alignment_bottom'] = '底部';
+$string['alignment_left'] = '左边';
+$string['alignment_middle'] = '中间';
+$string['alignment_right'] = '右边';
+$string['alignment_top'] = '顶部';
+$string['browserepositories'] = '浏览仓库...';
+$string['constrain'] = '自动大小';
+$string['createimage'] = '插入图片';
+$string['customstyle'] = '自定义样式';
+$string['enteralt'] = '向无法看到图片的人描述本图片';
+$string['enterurl'] = '输入网址';
+$string['height'] = '高度';
+$string['imageproperties'] = '图片属性';
+$string['pluginname'] = '图片';
+$string['presentation'] = '不需要描述';
+$string['presentationoraltrequired'] = '图片必须要有一个描述，除非标记了不需描述。';
+$string['preview'] = '预览';
+$string['saveimage'] = '保存图片';
 $string['size'] = '大小';
+$string['width'] = '宽度';

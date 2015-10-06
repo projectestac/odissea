@@ -45,6 +45,7 @@ $string['auth_invalidnewemailkey'] = 'Erreur : si vous avez tenté de confirmer
 $string['authloginviaemail'] = 'Permettre la connexion au moyen de l\'adresse de courriel';
 $string['authloginviaemail_desc'] = 'Permettre aux utilisateurs de se connecter soit avec le nom d\'utilisateur, soit avec l\'adresse de courriel (si elle est unique).';
 $string['auth_multiplehosts'] = 'Vous pouvez indiquer ici plusieurs hôtes ou adresses IP (par exemple host1.com;host2.com;host3.com ou 192.168.1.100;172.23.92.1)';
+$string['auth_notconfigured'] = 'La méthode d\'authentification {$a} n\'est pas configurée.';
 $string['auth_outofnewemailupdateattempts'] = 'Le nombre de tentatives permises pour modifier votre adresse de courriel est dépassé. Votre demande de modification a été annulée.';
 $string['auth_passwordisexpired'] = 'Votre mot de passe est échu. Voulez-vous le changer maintenant ?';
 $string['auth_passwordwillexpire'] = 'Votre mot de passe arrivera à échéance dans {$a} jours. Voulez-vous changer votre mot de passe maintenant ?';

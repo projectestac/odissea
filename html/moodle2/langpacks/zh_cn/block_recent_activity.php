@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '课程动态';
 $string['recent_activity:addinstance'] = '新增课程动态版块';
+$string['recent_activity:viewaddupdatemodule'] = '查看近期活动板块中新增和更新的模块';
+$string['recent_activity:viewdeletemodule'] = '查看近期活动板块中删除的模块';

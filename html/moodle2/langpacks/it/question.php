@@ -240,6 +240,7 @@ $string['linkedfiledoesntexist'] = 'Il file linkato {$a} non esiste';
 $string['makechildof'] = 'Fai figlio di \'{$a}\'';
 $string['makecopy'] = 'Duplica';
 $string['maketoplevelitem'] = 'Muovi al primo livello';
+$string['manualgradeinvalidformat'] = 'Non è un numero valido.';
 $string['manualgradeoutofrange'] = 'la valutazione è al di fuori dell\'intervallo.';
 $string['manuallygraded'] = 'Valutato manualmente {$a->mark} con il commento: {$a->comment}';
 $string['mark'] = 'Punteggio';

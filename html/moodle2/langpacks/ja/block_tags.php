@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = '追加';
 $string['alltags'] = 'すべてのタグ:';
-$string['arrowtitle'] = '推奨テキスト (グレー文字) を入力するには、ここをクリックしてください。';
+$string['arrowtitle'] = '推奨テキスト (グレー文字) を入力するにはここをクリックしてください。';
 $string['configtitle'] = 'ブロックタイトル';
 $string['coursetags'] = 'コースタグ:';
 $string['defaultdisplay'] = '表示するタグタイプ';

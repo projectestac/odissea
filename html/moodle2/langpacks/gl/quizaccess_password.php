@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'O contrasinal introducido non é correcto';
+$string['pluginname'] = 'Regra de acceso por contrasinal';
+$string['quizpassword'] = 'Contrasinal do cuestionario';
 $string['requirepasswordmessage'] = 'Para responder este cuestionario precisa de coñecer o contrasinal';

@@ -90,8 +90,9 @@ $string['checkedthisone'] = 'チェックされました。';
 $string['checknavigation'] = 'ナビゲーションを確認する';
 $string['checkquestion'] = '問題を確認する';
 $string['classstats'] = 'クラス統計';
-$string['clicktodownload'] = 'ファイルをダウンロードするには、次のリンクをクリックしてください。';
-$string['clicktopost'] = 'あなたの得点をハイスコアリストに登録するには、ここをクリックしてください。';
+$string['clicktodownload'] = 'ファイルをダウンロードするには次のリンクをクリックしてください。';
+$string['clicktopost'] = 'あなたの得点をハイスコアリストに登録するにはここをクリックしてください。';
+$string['closebeforeopen'] = 'レッスンを更新できませんでした。あなたは開始日時の前に終了日時を指定しました。';
 $string['cluster'] = 'クラスタ';
 $string['clusterjump'] = 'クラスタ内の未閲覧の問題';
 $string['clustertitle'] = 'クラスタ';
@@ -99,7 +100,7 @@ $string['collapsed'] = '折りたたむ';
 $string['comments'] = 'あなたのコメント';
 $string['completed'] = '完了';
 $string['completederror'] = 'レッスンを完了する';
-$string['completethefollowingconditions'] = '先へ進むには、<b>{$a}</b> レッスンの下記の状態を完了させる必要があります。';
+$string['completethefollowingconditions'] = '先へ進むには、<b>{$a}</b> レッスンの下記コンディションを完了させる必要があります。';
 $string['conditionsfordependency'] = '依存条件';
 $string['configactionaftercorrectanswer'] = '正解後にとられるデフォルトのアクションです。';
 $string['configmaxanswers'] = 'ページごとの答えの最大数のデフォルトです。';
@@ -312,7 +313,7 @@ $string['jump'] = 'ジャンプ';
 $string['jumps'] = 'ジャンプ';
 $string['jumps_help'] = 'それぞれの (問題の) 答えまたは (コンテンツページの) 説明はジャンプするリンク先を持ちます。ジャンプには「このページ」または「次のページ」のような相対ジャンプ、またはレッスン内の1ページを指定する絶対ジャンプがあります。';
 $string['jumpsto'] = '<em>{$a}</em> にジャンプする';
-$string['leftduringtimed'] = 'あなたは制限時間のあるレッスンを途中で終了しました。<br />レッスンを再スタートするには、「続ける」をクリックしてください。';
+$string['leftduringtimed'] = 'あなたは制限時間のあるレッスンを途中で終了しました。<br />レッスンを再スタートするには「続ける」をクリックしてください。';
 $string['leftduringtimednoretake'] = 'あなたは制限時間のあるレッスンを途中で終了しました。<br />レッスンを再受験または継続できません。';
 $string['leftduringtimedsession'] = 'あなたは制限時間のあるレッスンを離れました。';
 $string['lesson:addinstance'] = '新しいレッスンを追加する';
@@ -349,7 +350,7 @@ $string['maximumnumberofattempts_help'] = 'この設定ではそれぞれの問�
 $string['maximumnumberofattemptsreached'] = '最大受験回数に達しました - 次のページに移動しています。';
 $string['maxtime'] = '制限時間 (分)';
 $string['maxtimewarning'] = 'レッスン終了まで {$a} 分です。';
-$string['mediaclose'] = '「ウィンドウを閉じる」ボタンを表示する:';
+$string['mediaclose'] = '「ウィンドウを閉じる」ボタンを表示する';
 $string['mediafile'] = 'ファイルポップアップ';
 $string['mediafile_help'] = '<p>ここではレッスンの最初に表示されるファイル (例: mp3ファイル) またはウェブページへのポップアップウィンドウを作成します。また、必要に応じてポップアップウィンドウを開くことができるようリンクはすべてのレッスンページに表示されます。</p>
 
@@ -369,13 +370,11 @@ $string['mediafile_help'] = '<p>ここではレッスンの最初に表示され
     </ul>
 <p>    他のすべてのタイプのファイルには、デフォルトでダウンロード用のリンクが設定されます。</p>';
 $string['mediafilepopup'] = '閲覧するにはここをクリックしてください。';
-$string['mediaheight'] = 'ポップアップウィンドウ高:';
-$string['mediawidth'] = 'ポップアップウィンドウ幅:';
+$string['mediaheight'] = 'ポップアップウィンドウ高';
+$string['mediawidth'] = 'ポップアップウィンドウ幅';
 $string['messageprovider:graded_essay'] = '作文評定通知';
 $string['minimumnumberofquestions'] = '最小問題数';
-$string['minimumnumberofquestions_help'] = 'ここでは活動の評定計算に使用する問題の最大数を指定します。レッスンが1つまたはそれ以上のコンテンツを含んでいる場合、問題の最大数はゼロに設定してください。
-
-例えば、20に設定した場合、レッスンのオープニングページに次のようなテキストの追加をお勧めします: 「あなたはこのレッスンで少なくとも20問の問題を受験する必要があります。あなたが希望すればさらに問題を受験することができます。しかし、あなたが20問より少なく受験した場合、20問を受験したかのように計算されます」';
+$string['minimumnumberofquestions_help'] = 'ここでは活動の評定計算に使用する問題の最大数を指定します。';
 $string['missingname'] = 'ニックネームを入力してください。';
 $string['modattempts'] = '学生のレビューを許可する';
 $string['modattempts_help'] = '<p>ここでは解答内容を変更するため、学生がレッスンを後戻りすることができるようにします。</p>';
@@ -440,7 +439,7 @@ $string['numberofpagestoshow_help'] = '<p>このパラメータは、フラッ�
 
 <p>このパラメータを実際のページ数よりも大きく設定した場合、すべてのページが表示された後に、レッスンは最後まで到達したことになります。</p>';
 $string['numberofpagesviewed'] = '解答済み問題数: {$a}';
-$string['numberofpagesviewednotice'] = '解答済み問題数: {$a->nquestions}; (あなたは少なくとも {$a->minquestions} 問の問題に解答する必要があります)';
+$string['numberofpagesviewednotice'] = '解答済み問題数: {$a->nquestions} (あなたは少なくとも {$a->minquestions} 問の問題に解答する必要があります)';
 $string['numerical'] = '数値問題';
 $string['ongoing'] = '進行中の評点を表示する';
 $string['ongoingcustom'] = '現在、あなたの評点は {$a->currenthigh} 点中 {$a->score} 点です。';
@@ -541,9 +540,9 @@ $string['studentoneminwarning'] = '警告: レッスンが終了するまでの�
 $string['studentresponse'] = '{$a} のレスポンス';
 $string['submit'] = '送信';
 $string['submitname'] = 'ニックネームの送信';
-$string['teacherjumpwarning'] = 'このレッスンでは、{$a->cluster} ジャンプまたは {$a->unseen} ジャンプが使用されています。これらのジャンプの代わりに「次のページ」へのジャンプが使用されます。これらのジャンプを確認するには、学生としてログインしてください。';
-$string['teacherongoingwarning'] = '進行中の評点は、学生のみに表示されます。進行中のスコアをテストするには、学生としてログインしてください。';
-$string['teachertimerwarning'] = 'タイマーは学生に対してのみ作動します。タイマーをテストするには、学生としてログインしてください。';
+$string['teacherjumpwarning'] = 'このレッスンでは {$a->cluster} ジャンプまたは {$a->unseen} ジャンプが使用されています。これらのジャンプの代わりに「次のページ」へのジャンプが使用されます。これらのジャンプを確認するには学生としてログインしてください。';
+$string['teacherongoingwarning'] = '進行中の評点は、学生のみに表示されます。進行中のスコアをテストするには学生としてログインしてください。';
+$string['teachertimerwarning'] = 'タイマーは学生に対してのみ作動します。タイマーをテストするには学生としてログインしてください。';
 $string['thatsthecorrectanswer'] = '正解です。';
 $string['thatsthewronganswer'] = '不正解です。';
 $string['thefollowingpagesjumptothispage'] = '下記のページは、このページにジャンプします。';

@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe de resum de qualificacions';
 $string['overview:view'] = 'Veure l\'informe global';
 $string['pluginname'] = 'Informe global';

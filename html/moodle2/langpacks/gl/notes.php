@@ -38,6 +38,10 @@ $string['deleteconfirm'] = 'Eliminar esta nota?';
 $string['deletenotes'] = 'Eliminar todas las notas';
 $string['editnote'] = 'Editar a nota';
 $string['enablenotes'] = 'Activar as notas';
+$string['eventnotecreated'] = 'Creouse a nota';
+$string['eventnotedeleted'] = 'Eliminouse a nota';
+$string['eventnotesviewed'] = 'Viuse a nota';
+$string['eventnoteupdated'] = 'Actualizouse a nota';
 $string['groupaddnewnote'] = 'Engadir unha nota comun';
 $string['invalidid'] = 'Especificouse un ID de nota incorrecto';
 $string['invaliduserid'] = 'ID de usuario incorrecto: {$a}';
@@ -59,6 +63,7 @@ $string['publishstate_help'] = 'O contexto dunha nota determina quen pode ver a 
 * Persoal - a nota será visíbel só por vostede
 * Curso - a nota será visíbel polos profesores neste curso
 * Sitio - a nota será visíbel polos profesores en todos os cursos';
+$string['selectnotestate'] = 'Seleccionar o estado da nota';
 $string['site'] = 'sitio';
 $string['sitenotes'] = 'Notas do sitio';
 $string['unknown'] = 'descoñecido';

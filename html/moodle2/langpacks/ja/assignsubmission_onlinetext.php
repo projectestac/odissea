@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowonlinetextsubmissions'] = '有効';
 $string['default'] = 'デフォルトで有効にする';
-$string['default_help'] = '有効にした場合、すべての新しい課題において、この提出方法がデフォルトで有効にされます。';
+$string['default_help'] = 'この設定を有効にした場合、すべての新しい課題において、この提出方法がデフォルトで有効にされます。';
 $string['enabled'] = 'オンラインテキスト';
-$string['enabled_help'] = '有効にした場合、学生は自分の提出時にリッチテキストをエディタフィールドに直接入力することができます。';
+$string['enabled_help'] = 'この設定を有効にした場合、学生は自分の提出時にリッチテキストをエディタフィールドに直接入力することができます。';
 $string['eventassessableuploaded'] = 'オンラインテキストがアップロードされました。';
 $string['nosubmission'] = 'この課題に提出されたものはありません。';
 $string['numwords'] = '({$a} 語)';

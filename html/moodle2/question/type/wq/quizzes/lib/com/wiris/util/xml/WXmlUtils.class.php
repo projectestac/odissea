@@ -408,6 +408,7 @@ class com_wiris_util_xml_WXmlUtils {
 		$opentag = new EReg("^<([\\w-_]+)[^>]*>\$", "");
 		$autotag = new EReg("^<([\\w-_]+)[^>]*/>\$", "");
 		$closetag = new EReg("^</([\\w-_]+)>\$", "");
+		$cdata = new EReg("^<!\\[CDATA\\[[^\\]]*\\]\\]>\$", "");
 		$res = new StringBuf();
 		$end = 0;
 		$start = null;
@@ -468,8 +469,12 @@ class com_wiris_util_xml_WXmlUtils {
 						}
 						$res->add($aux);
 					} else {
-						haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 559, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
-						$res->add($aux);
+						if($cdata->match($aux)) {
+							$res->add($aux);
+						} else {
+							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 570, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+							$res->add($aux);
+						}
 					}
 				}
 			}

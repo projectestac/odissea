@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['autosavefailed'] = 'No s\'ha pogut connectar amb el servidor. Si envieu aquesta pàgina ara, els vostres canvis es poden perdre.';
 $string['autosavefrequency'] = 'Freqüència de desat automàtic';
 $string['autosavefrequency_desc'] = 'Aquest és el temps entre desat i desat automàtic. L\'Atto desarà de forma automàtica el text de l\'editor segons aquest paràmetre; per tant, el text es restaurarà de forma automàtica quan el mateix usuari torni al mateix formulari.';
 $string['autosavesucceeded'] = 'S\'ha desat l\'esborrany.';
@@ -35,6 +36,7 @@ $string['errorgroupisusedtwice'] = 'El grup \'{$a}\' està definit per duplicat;
 $string['errornopluginsorgroupsfound'] = 'No s\'han trobat connectors o grups; afegiu alguns grups i connectors.';
 $string['errorpluginisusedtwice'] = 'El connector \'{$a}\' està duplicat; els connectors només poden definir-se una vegada.';
 $string['errorpluginnotfound'] = 'El connector \'{$a}\' no és pot utilitzar; no sembla qu estigui instal·lat.';
+$string['errortextrecovery'] = 'Malauradament l\'esborrany no s\'ha pogut restaurar.';
 $string['infostatus'] = 'Informació';
 $string['pluginname'] = 'Editor HTML Atto';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
@@ -42,6 +44,7 @@ $string['recover'] = 'Recupera';
 $string['settings'] = 'Configuració de la barra d\'eines Atto';
 $string['subplugintype_atto'] = 'Connector Atto';
 $string['subplugintype_atto_plural'] = 'Connectors Atto';
+$string['textrecovered'] = 'Un esborrany d\'aquest text s\'ha restaurat automàticament.';
 $string['toolbarconfig'] = 'Configuració de la barra d\'eines';
 $string['toolbarconfig_desc'] = 'La llista de connectors i l\'ordre en què es mostren es pot configurar aquí. La configuració consta de grups (un per línia) seguits de la llista ordenada de connectors per a cada grup. El grup està separat dels connectors amb un signe d\'igual i els connectors estan separats per comes. Els noms dels grups han de ser únics i haurien d\'indicar el que els botons tenen en comú. Els noms de botons i de grups no es poden repetir i només poden contenir caràcters alfanumèrics.';
 $string['warningstatus'] = 'Adevertència';

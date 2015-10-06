@@ -165,6 +165,7 @@ $string['restoringcompletiondata'] = 'Escribindo os datos do grado de completado
 $string['roleaggregation'] = 'Condición requirida';
 $string['roleaggregation_all'] = 'TODOS os roles seleccionados marquen cando se cumpren as condicións';
 $string['roleaggregation_any'] = 'CALQUERA dos roles seleccionados marquen cando se cumpren as condicións';
+$string['roleidnotfound'] = 'Non se atopa a matricula co ID {$a}';
 $string['saved'] = 'Gardado';
 $string['seedetails'] = 'Ver detalles';
 $string['self'] = 'Propio';

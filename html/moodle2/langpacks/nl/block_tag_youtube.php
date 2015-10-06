@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Gelijk welke categorie';
+$string['apierror'] = 'De Youtube API sleutel is niet ingesteld. Neem contact op met je systeembeheerder.';
+$string['apikey'] = 'API sleutel';
+$string['apikeyinfo'] = 'Haal een <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> voor jouw Moodle site.';
 $string['autosvehicles'] = 'Auto\'s en voertuigen';
 $string['category'] = 'Categorie';
 $string['comedy'] = 'Humor';
@@ -42,6 +45,7 @@ $string['numberofvideos'] = 'Aantal filmpjes';
 $string['peopleblogs'] = 'Mensen en blogs';
 $string['petsanimals'] = 'Huisdieren';
 $string['pluginname'] = 'Youtube';
+$string['requesterror'] = 'Kon geen gegevens ophalen van de server. Neem contact op met je systeembeheerder als het probleem blijft aanhouden.';
 $string['scienceandtech'] = 'Wetenschap &amp; Techniek';
 $string['sports'] = 'Sport';
 $string['tag_youtube:addinstance'] = 'Voeg een nieuw youtube-blok toe';

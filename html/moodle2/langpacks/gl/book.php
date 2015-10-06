@@ -32,10 +32,19 @@ $string['book:read'] = 'Ler libro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos agochados do libro';
 $string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título do capítulo';
+$string['confchapterdelete'] = 'Confirma que quere eliminar este capítulo «{$a}»?';
 $string['confchapterdeleteall'] = 'Confirma que quere eliminar este capítulo e todos os seus subcapítulos?';
 $string['content'] = 'Contido';
 $string['customtitles'] = 'Títulos personalizados';
+$string['customtitles_help'] = 'Normalmente o título do capítulo amosase na táboa de contidos (TOC) E TAMÉN como cabeceira enriba do contido.
+
+Se activa a caixiña para títulos á medida, no título do capítulo NON SE AMOSARÁ como cabeceira enriba do contido. Pódese escribir un título diferente (posibelmente máis longo que o título do capítulo) como parte do contnido.';
 $string['editingchapter'] = 'Editando o capítulo';
+$string['errorchapter'] = 'Produciuse un erro ao ler o capítulo d libro.';
+$string['eventchaptercreated'] = 'Capítulo creado';
+$string['eventchapterdeleted'] = 'Capítulo eliminado';
+$string['eventchapterupdated'] = 'Capítulo actualizado';
+$string['eventchapterviewed'] = 'Capítulo visto';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'O módulo de libro permítelle a un profesor crear un recurso multipáxina en formato semellante a un libro, con capítulos e subcapítulos. Os libros poden conter ficheiros multimedia así como texto e son prácticos para presentar longos anacos de información que poden subdividirse en seccións.
 
@@ -44,6 +53,7 @@ Un libro pódese usar
 * Para presentar material de lectura para módulos individuais de estudo
 * Como un manual de persoal de departamento
 * Como un modo de presentar un cartafol de traballo do alumno';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Libros';
 $string['navexit'] = 'Saír do libro';
 $string['navnext'] = 'Seguinte';

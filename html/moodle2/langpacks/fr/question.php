@@ -238,6 +238,7 @@ $string['linkedfiledoesntexist'] = 'Le fichier lié {$a} n\'existe pas';
 $string['makechildof'] = 'Déplacer comme descendant de {$a}';
 $string['makecopy'] = 'Copier';
 $string['maketoplevelitem'] = 'Déplacer au plus haut niveau';
+$string['manualgradeinvalidformat'] = 'Ce nombre n\'est pas valide.';
 $string['manualgradeoutofrange'] = 'Cette note est en dehors de la plage de validité.';
 $string['manuallygraded'] = 'Notée manuellement {$a->mark} avec le commentaire : {$a->comment}';
 $string['mark'] = 'Note';

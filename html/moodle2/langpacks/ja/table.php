@@ -30,5 +30,5 @@ $string['downloadcsv'] = 'CSVテキストファイル';
 $string['downloadexcel'] = 'Excelスプレッドシート';
 $string['downloadods'] = 'OpenDocumentスプレッドシート';
 $string['downloadoptions'] = 'ダウンロードオプションを選択する';
-$string['downloadtsv'] = 'タブ区切りのテキスト';
+$string['downloadtsv'] = 'タブ区切りテキストファイル';
 $string['downloadxhtml'] = 'ページなしXHTMLドキュメント';

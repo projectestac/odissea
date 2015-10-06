@@ -32,7 +32,7 @@ class com_wiris_util_xml_XmlSerializer {
 			}
 		} else {
 			if($this->mode === com_wiris_util_xml_XmlSerializer::$MODE_WRITE) {
-				if($elem !== null) {
+				if($elem !== null && $this->ignoreTagStackCount === 0) {
 					$imported = com_wiris_util_xml_WXmlUtils::importXml($elem, $this->element);
 					$this->element->addChild($imported);
 				}

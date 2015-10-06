@@ -44,7 +44,7 @@ $string['choiceoptions'] = 'Choice options';
 $string['choiceoptions_help'] = 'Here is where you specify the options that participants have to choose from.
 
 You can fill in any number of these. If you leave some of the options blank, they will not be displayed. If you need more than 8 options, click the "Add 3 fields to form" button.';
-$string['choice:readresponses'] = 'Read responses';
+$string['choice:readresponses'] = 'View responses';
 $string['choicesaved'] = 'Your choice has been saved';
 $string['choicetext'] = 'Choice text';
 $string['chooseaction'] = 'Choose an action ...';

@@ -351,7 +351,10 @@ class oci_native_moodle_database extends moodle_database {
     protected function parse_query($sql) {
         $stmt = oci_parse($this->oci, $sql);
         if ($stmt == false) {
-            throw new dml_connection_exception('Can not parse sql query'); //TODO: maybe add better info
+            // XTEC AFEGIT: Add more information to parse_query error (TO REPORT)
+            // @pferre22 2015.10.01
+            throw new dml_connection_exception('Can not parse sql query: '.$this->get_last_error()); //TODO: maybe add better info
+            // FI XTEC
         }
         return $stmt;
     }
@@ -704,7 +707,7 @@ class oci_native_moodle_database extends moodle_database {
         if (is_bool($value)) { // Always, convert boolean to int
             $value = (int)$value;
 
-        } else if ($column->meta_type == 'B') { // CLOB detected, we return 'blob' array instead of raw value to allow
+        } else if ($column->meta_type == 'B') { // BLOB detected, we return 'blob' array instead of raw value to allow
             if (!is_null($value)) {             // binding/executing code later to know about its nature
                 $value = array('blob' => $value);
             }
@@ -965,6 +968,18 @@ class oci_native_moodle_database extends moodle_database {
                         $lob->writeTemporary($params[$key]['blob'], OCI_TEMP_BLOB);
                         $descriptors[] = $lob;
                         continue; // Column binding finished, go to next one
+                    }
+                } else {
+                    // If, at this point, the param value > 4000 (bytes), let's assume it's a clob
+                    // passed in an arbitrary sql (not processed by normalise_value() ever,
+                    // and let's handle it as such. This will provide proper binding of CLOBs in
+                    // conditions and other raw SQLs not covered by the above function.
+                    if (strlen($value) > 4000) {
+                        $lob = oci_new_descriptor($this->oci, OCI_DTYPE_LOB);
+                        oci_bind_by_name($stmt, $key, $lob, -1, SQLT_CLOB);
+                        $lob->writeTemporary($this->oracle_dirty_hack($tablename, $columnname, $params[$key]), OCI_TEMP_CLOB);
+                        $descriptors[] = $lob;
+                        continue; // Param binding finished, go to next one.
                     }
                 }
                 // TODO: Put proper types and length is possible (enormous speedup)

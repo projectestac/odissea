@@ -36,3 +36,5 @@ $string['grader:view'] = '查看评分人报表';
 $string['overriddengrade'] = '覆盖成绩';
 $string['pluginname'] = '评分人报表';
 $string['preferences'] = '评分人报表使用偏好';
+$string['useractivityfeedback'] = '{$a}反馈';
+$string['useractivitygrade'] = '{$a}成绩';

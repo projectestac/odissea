@@ -29,4 +29,5 @@ $string['configintrotimezones'] = 'Esta páxina buscará nova información sobre
 $string['importtimezones'] = 'Actualizar a lista completa de fusos horarios';
 $string['importtimezonescount'] = '{$a->count} entradas importadas de {$a->source}';
 $string['importtimezonesfailed'] = 'Fontes non encontradas! (Mala noticia)';
+$string['pluginname'] = 'Actualizador de fusos horarios';
 $string['updatetimezones'] = 'Actualizar zonas horarias';

@@ -65,6 +65,7 @@ $string['output'] = '输出';
 $string['oval'] = '椭圆形';
 $string['pagenumber'] = '第 {$a} 页';
 $string['pagexofy'] = '第 {$a->page} 页，共 {$a->total} 页';
+$string['pathtogspathdesc'] = '请注意，这个说明的pdf文件要在{$a}设定到ghostscript的目录。';
 $string['pen'] = '笔';
 $string['pluginname'] = '批注的PDF文件';
 $string['rectangle'] = '长方形';

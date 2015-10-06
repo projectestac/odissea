@@ -251,6 +251,7 @@ $string['linkedfiledoesntexist'] = 'Linked file {$a} doesn\'t exist';
 $string['makechildof'] = 'Make child of \'{$a}\'';
 $string['makecopy'] = 'Make copy';
 $string['maketoplevelitem'] = 'Move to top level';
+$string['manualgradeinvalidformat'] = 'That is not a valid number.';
 $string['manualgradeoutofrange'] = 'This grade is outside the valid range.';
 $string['manuallygraded'] = 'Manually graded {$a->mark} with comment: {$a->comment}';
 $string['mark'] = 'Mark';

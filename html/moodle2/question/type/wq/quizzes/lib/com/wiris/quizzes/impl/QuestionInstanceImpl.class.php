@@ -9,6 +9,40 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$this->variables = null;
 		$this->checks = null;
 	}}
+	public function setParameter($name, $value) {
+		$this->userData->setParameter($name, $value);
+	}
+	public function getTextVariables() {
+		return $this->getTypeVariables(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT);
+	}
+	public function getMathMLVariables() {
+		return $this->getTypeVariables(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML);
+	}
+	public function getTypeVariables($type) {
+		if($this->hasVariables() && $this->variables->exists($type)) {
+			return $this->variables->get($type);
+		} else {
+			return null;
+		}
+	}
+	public function getHandwritingConstraints() {
+		if($this->handConstraints === null) {
+			$json = $this->getLocalDataImpl(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS);
+			if($json !== null) {
+				$this->handConstraints = com_wiris_quizzes_impl_HandwritingConstraints::readHandwritingConstraints($json);
+			}
+		}
+		return $this->handConstraints;
+	}
+	public function setHandwritingConstraints($question) {
+		$this->handConstraints = com_wiris_quizzes_impl_HandwritingConstraints::newHandwritingConstraints();
+		$this->handConstraints->addQuestionConstraints(_hx_deref(($question))->getImpl());
+	}
+	public function serializeHandConstraints() {
+		if($this->handConstraints !== null) {
+			$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS, $this->handConstraints->toJSON());
+		}
+	}
 	public function areVariablesReady() {
 		if($this->variables !== null) {
 			if($this->variables->exists(com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF)) {
@@ -614,6 +648,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			}
 		}
 	}
+	public function hasHandwritingConstraints() {
+		return $this->handConstraints !== null || $this->getLocalDataImpl(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS) !== null;
+	}
 	public function update($response) {
 		$qs = $response;
 		if($qs !== null && $qs->results !== null) {
@@ -665,6 +702,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					}
 					unset($tag,$s,$r,$i1);
 				}
+			}
+			if($variables && $this->hasHandwritingConstraints()) {
+				$this->getHandwritingConstraints()->addQuestionInstanceConstraints($this);
 			}
 		}
 	}
@@ -725,13 +765,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		return $h->expandVariables($text, $this->variables);
 	}
 	public function defaultLocalData($name) {
-		if($name === com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION) {
-			return null;
-		} else {
-			return null;
-		}
+		return null;
 	}
-	public function getLocalData($name) {
+	public function getLocalDataImpl($name) {
 		if($this->localData !== null) {
 			$i = null;
 			{
@@ -746,6 +782,16 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			}
 		}
 		return $this->defaultLocalData($name);
+	}
+	public function getLocalData($name) {
+		if($name === com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS) {
+			if($this->hasHandwritingConstraints()) {
+				return $this->getHandwritingConstraints()->getNegativeConstraints()->toJSON();
+			} else {
+				return null;
+			}
+		}
+		return $this->getLocalDataImpl($name);
 	}
 	public function setLocalData($name, $value) {
 		if($this->localData === null) {
@@ -779,9 +825,11 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$this->userData = $s->serializeChildName($this->userData, com_wiris_quizzes_impl_UserData::$tagName);
 		$this->checks = $this->checksToHash($s->serializeArrayName($this->hashToChecks($this->checks, null), "checks"), null);
 		$this->variables = $this->variablesToHash($s->serializeArrayName($this->hashToVariables($this->variables, null), "variables"), null);
+		$this->serializeHandConstraints();
 		$this->localData = $s->serializeArrayName($this->localData, "localData");
 		$s->endTag();
 	}
+	public $handConstraints;
 	public $compoundChecks;
 	public $localData;
 	public $checks;

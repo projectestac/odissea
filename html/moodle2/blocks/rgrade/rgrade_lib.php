@@ -403,6 +403,17 @@ function _rgrade_add_where_restriction($param, $value, $op = ''){
 
 /**
  *
+ * Devuelve todas las unidades de un libro
+ *
+ * @param int $bookid
+ */
+function rgrade_get_recordset_units($bookid) {
+	global $DB;
+	return $DB->get_records('rcommon_books_units', array('bookid' => $bookid), 'sortorder, timecreated');
+}
+
+/**
+ *
  * Devuelve todas las actividades de un libro y opcionalmente unidad
  *
  * @param int $bookid

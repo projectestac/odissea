@@ -101,12 +101,17 @@ class com_wiris_plugin_impl_TextFilter {
 	public function filterMath($tags, $text, $prop, $safeXML) {
 		$n0 = null;
 		$n1 = null;
+		$m0 = null;
+		$m1 = null;
 		$output = null;
 		$sub = null;
 		$output = new StringBuf();
 		$n0 = 0;
 		$n1 = _hx_index_of($text, $tags->in_mathopen, $n0);
+		$tag = $this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_MATHML_ATTRIBUTE, "data-mathml");
+		$dataMathml = _hx_index_of($text, $tag, 0);
 		while($n1 >= 0) {
+			$m0 = $n0;
 			$output->add(_hx_substr($text, $n0, $n1 - $n0));
 			$n0 = $n1;
 			$n1 = _hx_index_of($text, $tags->in_mathclose, $n0);
@@ -114,6 +119,21 @@ class com_wiris_plugin_impl_TextFilter {
 				$n1 = $n1 + strlen($tags->in_mathclose);
 				$sub = _hx_substr($text, $n0, $n1 - $n0);
 				if($safeXML) {
+					if($dataMathml !== -1) {
+						$m1 = _hx_index_of($text, "/>", $n1);
+						if($m1 >= 0 && (_hx_index_of($text, "<img", $n1) === -1 || _hx_index_of($text, "<img", $n1) > $m1)) {
+							$m0 = _hx_last_index_of(_hx_substr($text, $m0, $n0 - $m0), "<img", null);
+							if($m0 >= 0) {
+								if(_hx_index_of($text, $tag, $m0) > 0 && _hx_index_of($text, $tag, $m0) < $n1) {
+									$n0 = $n1;
+									$output->add($sub);
+									$n1 = _hx_index_of($text, $tags->in_mathopen, $n0);
+									$m0 = $m1;
+									continue;
+								}
+							}
+						}
+					}
 					if($this->fixUrl === null) {
 						$this->fixUrl = new EReg("<a href=\"[^\"]*\"[^>]*>([^<]*)<\\/a>|<a href=\"[^\"]*\">", "");
 					}

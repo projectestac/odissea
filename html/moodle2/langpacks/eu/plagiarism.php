@@ -31,4 +31,4 @@ $string['configplagiarismplugins'] = 'Mesedez, aukeratu konfiguratu nahi duzun p
 $string['enableplagiarism'] = 'Plagio-pluginak gaitu';
 $string['manageplagiarism'] = 'Plagio-pluginak kudeatu';
 $string['nopluginsinstalled'] = 'Plagio-pluginak ez daude instalatuta';
-$string['plagiarism'] = 'Plagioaren eragozpena';
+$string['plagiarism'] = 'Plagioa';

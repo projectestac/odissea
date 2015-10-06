@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Visto o informe de estatísticas';
+$string['eventuserreportviewed'] = 'Visto o informe de estatísticas do usuario';
 $string['page-report-stats-index'] = 'Informe estatístico do curso';
 $string['page-report-stats-user'] = 'Informe estatístico do usuario do curso';
 $string['page-report-stats-x'] = 'Calquera informe estatístico';

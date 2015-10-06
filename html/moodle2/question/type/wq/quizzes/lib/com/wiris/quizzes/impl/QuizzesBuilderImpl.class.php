@@ -242,6 +242,34 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 		$q->assertions = $assertions;
 		$u->answers = $userAnswers;
 	}
+	public function stripAnnotation($mathml) {
+		$start = null;
+		$end = 0;
+		while(($start = _hx_index_of($mathml, "<semantics>", $end)) !== -1) {
+			$end = _hx_index_of($mathml, "</semantics>", $start);
+			if($end === -1) {
+				throw new HException("Error parsing semantics tag in MathML.");
+			}
+			$a = _hx_index_of($mathml, "<annotation encoding=\"application/json\">", $start);
+			if($a !== -1 && $a < $end) {
+				$b = _hx_index_of($mathml, "</annotation>", $a);
+				if($b === -1 || $b >= $end) {
+					throw new HException("Error parsing annotation tag in MathML.");
+				}
+				$b += 13;
+				$mathml = _hx_substr($mathml, 0, $a) . _hx_substr($mathml, $b, null);
+				$end -= $b - $a;
+				$x = _hx_index_of($mathml, "<annotation", $start);
+				if($x === -1 || $x > $end) {
+					$mathml = _hx_substr($mathml, 0, $start) . _hx_substr($mathml, $start + 11, $end - ($start + 11)) . _hx_substr($mathml, $end + 12, null);
+					$end -= 11;
+				}
+				unset($x,$b);
+			}
+			unset($a);
+		}
+		return $mathml;
+	}
 	public function newEvalMultipleAnswersRequest($correctAnswers, $userAnswers, $question, $instance) {
 		$q = null;
 		$qi = null;
@@ -304,6 +332,14 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 		} else {
 			if($qi !== null) {
 				$uu->answers = $qi->userData->answers;
+			}
+		}
+		{
+			$_g1 = 0; $_g = $uu->answers->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$uu->setUserAnswer($i1, $this->stripAnnotation(_hx_array_get($uu->answers, $i1)->content));
+				unset($i1);
 			}
 		}
 		$syntax = null;
@@ -532,8 +568,16 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 	public function getQuizzesService() {
 		return new com_wiris_quizzes_impl_QuizzesServiceImpl();
 	}
-	public function newQuestionInstance() {
-		return new com_wiris_quizzes_impl_QuestionInstanceImpl();
+	public function newQuestionInstanceImpl($question) {
+		$qi = new com_wiris_quizzes_impl_QuestionInstanceImpl();
+		if($question !== null) {
+			$q = _hx_deref(($question))->getImpl();
+			$type = $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD);
+			if($type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND) {
+				$qi->setHandwritingConstraints($question);
+			}
+		}
+		return $qi;
 	}
 	public function newQuestion() {
 		return new com_wiris_quizzes_impl_QuestionImpl();

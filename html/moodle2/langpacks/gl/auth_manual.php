@@ -26,4 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Este método elimina calquera forma de que os usuarios poidan crear a súa propia conta. Todas as contas deben ser creadas polo usuario administrador.';
+$string['expiration'] = 'Activar a caducidade do contrasinal';
+$string['expiration_desc'] = 'Permitir que os contrasinais caduquen despois dun tempo especificado.';
+$string['expiration_warning'] = 'Limiar de notificación';
+$string['expiration_warning_desc'] = 'Número de días previos á caducidade do contrasinal nos que se debe emitir unha notificación.';
+$string['passwdexpire_settings'] = 'Configuracións de caducidade do contrasinal';
+$string['passwdexpiretime'] = 'Duración do contrasinal';
+$string['passwdexpiretime_desc'] = 'Lapso de tempo no que contrasinal é valido.';
 $string['pluginname'] = 'Contas manuais';

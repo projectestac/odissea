@@ -25,7 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configdndmedia'] = 'Ofrecer crear unha etiqueta cando se arrastren ficheiros multimedia e se solten nun curso';
+$string['configdndresizeheight'] = 'Cando se crea unha etiqueta a partires dunha imaxe arrastrada e soltada, redimensionar o seu tamaño se for mais alto que estes píxeles (0 para non redimensionar)';
+$string['configdndresizewidth'] = 'Cando se crea unha etiqueta a partires dunha imaxe arrastrada e soltada, redimensionar o seu tamaño se for máis largo que estes píxeles (0 para non redimensionar)';
+$string['dndmedia'] = 'Arrastrar e soltar multimedia';
+$string['dndresizeheight'] = 'Redimensionar o alto ao arrastrar e soltar';
+$string['dndresizewidth'] = 'Redimensionar o largo ao arrastrar e soltar';
+$string['dnduploadlabel'] = 'Engadir unha imaxe á páxina do curso';
+$string['dnduploadlabeltext'] = 'Engadir unha etiqueta á páxina do curso';
+$string['label:addinstance'] = 'Engadir unha nova etiqueta';
 $string['labeltext'] = 'Texto da etiqueta';
 $string['modulename'] = 'Etiqueta';
+$string['modulename_help'] = 'O módulo etiqueta permite inserir texto e multimedia nunha páxina de curso xunto con ligazóns a outros recursos e actividades. As etiquetas son moi versátiles e poden axudar a mellorar a aparencia dun curso se se empregan intelixentemente.
+
+As etiquetas poden usarse
+
+* Para dividir unha larga lista de actividades cunha subcabeceira ou unha imaxe
+* Para amosar directamente un ficheiro de son ou vídeo incrustado na páxina do curso
+* Para engadir unha descrición curta a unha sección de curso';
+$string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Etiquetas';
+$string['pluginadministration'] = 'Administración de etiqueta';
 $string['pluginname'] = 'Etiqueta';

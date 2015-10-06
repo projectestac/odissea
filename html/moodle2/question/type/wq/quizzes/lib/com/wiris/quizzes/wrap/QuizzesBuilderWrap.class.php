@@ -164,10 +164,14 @@ class com_wiris_quizzes_wrap_QuizzesBuilderWrap extends com_wiris_quizzes_api_Qu
 			}
 		}
 	}
-	public function newQuestionInstance() {
+	public function newQuestionInstance($question = null) {
 		try {
 			$this->wrapper->start();
-			$r = new com_wiris_quizzes_wrap_QuestionInstanceWrap($this->builder->newQuestionInstance());
+			$qw = $question;
+			if($qw !== null) {
+				$question = $qw->question;
+			}
+			$r = new com_wiris_quizzes_wrap_QuestionInstanceWrap($this->builder->newQuestionInstance($question));
 			$this->wrapper->stop();
 			return $r;
 		}catch(Exception $»e) {

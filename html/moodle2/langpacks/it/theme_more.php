@@ -62,9 +62,7 @@ $string['invertdesc'] = 'Cambia tra bianco e nero lo sfondo ed il testo della ba
 $string['linkcolor'] = 'Colore dei link';
 $string['linkcolor_desc'] = 'Il colore da usare per i link';
 $string['logo'] = 'Logo';
-$string['logodesc'] = 'E\' possibile caricare un logo per l\'intestazione.<br>
-Se l\'altezza del logo è superiore ai 75 pixel, aggiungere la seguente regola nell\'impostazione CSS personalizzato:<br>
-a.logo {height: 100px;} sostituendo a 100 l\'effettiva altezza del logo.';
+$string['logodesc'] = 'Il logo verrà visualizzato solamente nell\'intestazione della pagina home e della pagina di autenticazione.<br />Se l\'altezza del logo è superiore ai 75 pixel, aggiungere la seguente regola nell\'impostazione CSS personalizzato: div.logo {height: 100px;} sostituendo a 100 l\'effettiva altezza del logo.';
 $string['pluginname'] = 'More';
 $string['region-side-post'] = 'Destra';
 $string['region-side-pre'] = 'Sinistra';

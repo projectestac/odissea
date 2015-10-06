@@ -31,4 +31,5 @@ $string['pluginname'] = 'Descargador URL';
 $string['rename'] = 'Nome';
 $string['url'] = 'URL';
 $string['url:view'] = 'Empregar o descargador URL no selector de ficheiros';
+$string['validfiletype'] = 'Debe fornecer un URL cara un ficheiro de imaxe ou unha páxina que conteña imaxes.';
 $string['validname'] = 'Debe fornecer un nome de ficheiro correcto';

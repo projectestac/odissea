@@ -146,6 +146,7 @@ $string['cannotsetupblock'] = 'Las tablas de los bloques NO se pudieron establec
 $string['cannotsetupcapformod'] = 'No se pueden establecer los permisos para {$a}';
 $string['cannotsetupcapforplugin'] = 'No se pueden establecer los permisos para {$a}';
 $string['cannotshowhidecoursesincategory'] = 'No se puede mostrar/ocultar los cursos en la categoría {$a}';
+$string['cannotsignup'] = 'No puede crear una nueva cuenta porque actualmente estás logueado como {$a}.';
 $string['cannotunassigncap'] = 'No se puede revocar la asignación del permiso obsoleto {$a->cap} del rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'No se puede revocar la asignación de este usuario del Id de rol: {$a}';
 $string['cannotunzipfile'] = 'No se puede descomprimir el archivo';

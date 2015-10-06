@@ -9,7 +9,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 	public function printMathML($h, $mathml) {
 		$h->open("span", new _hx_array(array(new _hx_array(array("class", "mathml")))));
 		$safeMathML = com_wiris_quizzes_impl_HTMLTools::encodeUnicodeChars($mathml);
-		$src = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=render&mml=" . rawurlencode($safeMathML);
+		$src = "?service=render&mml=" . rawurlencode($safeMathML);
 		$h->openclose("img", new _hx_array(array(new _hx_array(array("src", $src)), new _hx_array(array("align", "middle")))));
 		$h->close();
 	}
@@ -35,6 +35,13 @@ class com_wiris_quizzes_impl_HTMLGui {
 			$h->input("radio", $id . "[2]", $id, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT, null, null);
 			$h->label($this->t->t("answerinputplaintext"), $id . "[2]", null);
 			$h->close();
+			$handEnabled = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$HAND_ENABLED);
+			if(strtolower($handEnabled) === "true") {
+				$h->openLi();
+				$h->input("radio", $id . "[3]", $id, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND, null, null);
+				$h->label($this->t->t("answerinputinlinehand"), $id . "[3]", null);
+				$h->close();
+			}
 			$h->close();
 			$h->close();
 			$h->openDivClass("wiriscompoundanswerdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
@@ -339,12 +346,18 @@ class com_wiris_quizzes_impl_HTMLGui {
 	public function printAssertionsSummary($h, $q, $index, $unique, $conf) {
 		$syntax = null;
 		$equivalent = null;
+		$inputMethod = null;
 		$properties = new _hx_array(array());
+		$showInputMethod = false;
 		$showSyntax = false;
 		$showComparison = false;
 		$showProperties = false;
 		$showAlgorithm = false;
 		$showOptions = false;
+		if(com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND === $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD)) {
+			$showInputMethod = true;
+			$inputMethod = $this->t->t("answerinputinlinehand");
+		}
 		if($q->assertions !== null) {
 			$i = null;
 			{
@@ -389,15 +402,19 @@ class com_wiris_quizzes_impl_HTMLGui {
 			if(strlen($options) > 0) {
 				$options .= ", ";
 			}
-			$options .= $this->t->t("relativetolerance");
+			$options .= $this->t->t("absolutetolerance");
 			$showOptions = true;
 		}
 		$showAlgorithm = $q->wirisCasSession !== null && strlen($q->wirisCasSession) > 0;
-		if($showSyntax || $showComparison || $showProperties || $showAlgorithm || $showOptions) {
+		if($showSyntax || $showComparison || $showProperties || $showAlgorithm || $showOptions || $showInputMethod) {
 			$h->openDivClass(null, "wirisfieldsetwrapper");
 			$h->openFieldset("validationandvariables" . _hx_string_rec($unique, ""), $this->t->t("validationandvariables"), "wirisfieldsetvalidationandvariables");
 			$h->help("wirisvalidationandvariableshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/short-answer#vav", $this->t->t("manual"));
 			$h->openDl("wirisassertionsummarydl" . _hx_string_rec($unique, ""), "wirisassertionsummarydl");
+			if($showInputMethod) {
+				$h->dt($this->t->t("inputmethod"));
+				$h->dd($inputMethod);
+			}
 			if($showSyntax) {
 				$h->dt($this->t->t("allowedinput"));
 				$h->dd($syntax);

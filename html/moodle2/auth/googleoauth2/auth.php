@@ -414,6 +414,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                     //XTEC ************ AFEGIT - To be able to login even if the auth method is different
                     //2014.09.15 @pferre22
                     $old_authmethod = $user->auth;
+                    $old_password = $user->password;
                     $DB->set_field('user', 'auth', 'googleoauth2', array('id'=>$user->id));
                     ////************ FI
                 }
@@ -426,8 +427,9 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                 $user = authenticate_user_login($username, null);
                 //XTEC ************ AFEGIT - To be able to login even if the auth method is different
                 //2014.09.15 @pferre22
-                if (empty($newuser)) {
+                if (isset($old_authmethod)) {
                     $DB->set_field('user', 'auth', $old_authmethod, array('id'=>$userid));
+                    $DB->set_field('user', 'password', $old_password, array('id'=>$userid));
                 }
                 ////************ FI
                 if ($user) {

@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Qualsiasi categoria';
+$string['apierror'] = 'L\'API ket di TouTube non è impostata, contatta l\'amministratore.';
+$string['apikey'] = 'API key';
+$string['apikeyinfo'] = 'Ottieni una <a href="https://developers.google.com/youtube/v3/getting-started">Google API Key</a> per il tuo sito Moodle.';
 $string['autosvehicles'] = 'Auto &amp; Veicoli';
 $string['category'] = 'Categoria';
 $string['comedy'] = 'Commedia';
@@ -42,6 +45,7 @@ $string['numberofvideos'] = 'Numero di video';
 $string['peopleblogs'] = 'Persone &amp; Blog';
 $string['petsanimals'] = 'Cuccioli &amp; Animali';
 $string['pluginname'] = 'YouTube';
+$string['requesterror'] = 'Non è stato possibile ottenere dati dal server. Se il problema persiste, contatta l\'amministratore.';
 $string['scienceandtech'] = 'Scienza &amp; Tecnologia';
 $string['sports'] = 'Sport';
 $string['tag_youtube:addinstance'] = 'Aggiungere blocco YouTube';

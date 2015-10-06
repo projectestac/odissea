@@ -31,6 +31,7 @@ $string['default'] = 'Activado de xeito predeterminado';
 $string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
 $string['enabled'] = 'Entregas de ficheiros';
 $string['enabled_help'] = 'Se está activado, os alumnos serán quen de enviar un ou máis ficheiros como entrega.';
+$string['eventassessableuploaded'] = 'Foi enviado un ficheiro.';
 $string['file'] = 'Entregas de ficheiros';
 $string['maxbytes'] = 'Tamaño máximo do ficheiro';
 $string['maxfilessubmission'] = 'Número máximo de ficheiros enviados';

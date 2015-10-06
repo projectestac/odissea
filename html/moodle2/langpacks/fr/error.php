@@ -387,6 +387,7 @@ $string['movecatcontentstoroot'] = 'Il n\'est pas permis de déplacer le contenu
 $string['movecategorynotpossible'] = 'Vous ne pouvez pas déplacer la catégorie « {$a} » dans la catégorie sélectionnée.';
 $string['movecategoryownparent'] = 'Vous ne pouvez pas faire de la catégorie « {$a} » un parent d\'elle-même.';
 $string['movecategoryparentconflict'] = 'Vous ne pouvez pas faire de la catégorie « {$a} » une sous-catégorie de l\'une de ses propres sous-catégories.';
+$string['mssqlrcsmodemissing'] = 'La base de données n\'utilise pas le mode attendu READ_COMMITTED_SNAPSHOT, ce qui peut conduire à des résultats erronés, particulièrement lors de situations avec de nombreux accès simultanés. Veuillez activer ce mode pour un fonctionnement correct. Vous trouverez plus d\'informations à ce sujet sur <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP#Configuration">Moodle Docs (en anglais)</a>.';
 $string['multiplerecordsfound'] = 'Plusieurs enregistrement trouvés, alors qu\'un seul enregistrement est attendu.';
 $string['multiplerestorenotallow'] = 'Il n\'est pas autorisé d\'effectuer des restaurations multiples !';
 $string['mustbeloggedin'] = 'Vous devez être connecté pour faire ceci';

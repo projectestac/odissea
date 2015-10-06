@@ -89,7 +89,12 @@ div.wirispopupsimplecontent.wiriseditorwrapper{
 	height: auto;
 	width: auto;
 }
-
+div.wirishandwrapper {
+    height: 300px;
+	min-width: 300px;
+	max-width: 960px;
+    margin-bottom: 5px;
+}
 div.wiristabs .wirishidden{
     display: none;
 }

@@ -25,37 +25,37 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_battlenetclientid'] = 'Your Client ID/Secret can be generated in the <a href="https://dev.battle.net/apps/mykeys">Battle.net API site</a>.
-Enter the following settings when creating an application:
+$string['auth_battlenetclientid'] = 'Your Client ID/Secret can be generated in the <a href="https://dev.battle.net/apps/mykeys" target="_blank">Battle.net API site</a>.
+Enter the following settings when creating an application (note that Battle.net only supports https url, so your Moodle site must support https):
 <br/>Web site: {$a->siteurl}
 <br/>Register callback url: {$a->callbackurl} [it MUST BE a HTTPS url otherwise Battle.net will refuse  to log you in]
 <br/>Franchises: Starcraft II';
 $string['auth_battlenetclientid_key'] = 'Battle.net key';
 $string['auth_battlenetclientsecret'] = '';
 $string['auth_battlenetclientsecret_key'] = 'Battle.net secret';
-$string['auth_dropboxclientid'] = 'Your app Key/Secret are generated in the <a href="https://www.dropbox.com/developers/apps">Dropbox app console</a>.
-Enter the following settings when creating an application:
+$string['auth_dropboxclientid'] = 'Your app Key/Secret are generated in the <a href="https://www.dropbox.com/developers/apps" target="_blank">Dropbox app console</a>.
+Enter the following settings when creating an application (note that Dropbox only supports https url, so your Moodle site must support https):
 <br/>App website: {$a->siteurl}
 <br/>Redirect URIs: {$a->callbackurl}';
 $string['auth_dropboxclientid_key'] = 'Dropbox App key';
 $string['auth_dropboxclientsecret'] = '';
 $string['auth_dropboxclientsecret_key'] = 'Dropbox App secret';
-$string['auth_facebookclientid'] = 'Your App ID/Secret can be generated in your <a href="https://developers.facebook.com/apps/">Facebook developer page</a>:
+$string['auth_facebookclientid'] = 'Your App ID/Secret can be generated in your <a href="https://developers.facebook.com/apps/" target="_blank">Facebook developer page</a>:
 <br/>Add a new app > Website > Enter your site name as app name > Create new facebook app ID > Enter the Site URL - no need to enter Mobile URL >
 On the confirmation page, look for the "Skip to Developer Dashboard" link > on the app dashboard you should find the id/secret > Settings > Advanced > enter the Valid OAuth redirect URIs
 <br/>Site URL: {$a->siteurl}
-<br/>Site domain: {$a->sitedomain}
+<br/>App domains: {$a->sitedomain}
 <br/>Valid OAuth redirect URIs: {$a->callbackurl}';
 $string['auth_facebookclientid_key'] = 'Facebook App ID';
 $string['auth_facebookclientsecret'] = '';
 $string['auth_facebookclientsecret_key'] = 'Facebook App secret';
-$string['auth_githubclientid'] = 'Your client ID/Secret can be generated in your <a href="https://github.com/settings/applications/new">Github register application page</a>:
+$string['auth_githubclientid'] = 'Your client ID/Secret can be generated in your <a href="https://github.com/settings/applications/new" target="_blank">Github register application page</a>:
 <br/>Homepage URL: {$a->siteurl}
 <br/>Authorization callback URL: {$a->callbackurl}';
 $string['auth_githubclientid_key'] = 'Github client ID';
 $string['auth_githubclientsecret'] = '';
 $string['auth_githubclientsecret_key'] = 'Github client secret';
-$string['auth_googleclientid'] = 'Your client ID/Secret can be generated in the <a href="https://code.google.com/apis/console">Google console API</a>:
+$string['auth_googleclientid'] = 'Your client ID/Secret can be generated in the <a href="https://code.google.com/apis/console" target="_blank">Google console API</a>:
 <br/>
 Project > APIS & AUTH > Credentials > Create new Client ID > Web application
 <br/>
@@ -77,19 +77,19 @@ Prevent account creation (authpreventaccountcreation admin setting) when authent
 $string['auth_googlesettings'] = 'Settings';
 $string['auth_googleuserprefix'] = 'The created user\'s username will start with this prefix. On a basic Moodle site you don\'t need to change it.';
 $string['auth_googleuserprefix_key'] = 'Username prefix';
-$string['auth_linkedinclientid'] = 'Your API/Secret keys can be generated in your <a href="https://www.linkedin.com/secure/developer">Linkedin register application page</a>:
+$string['auth_linkedinclientid'] = 'Your API/Secret keys can be generated in your <a href="https://www.linkedin.com/secure/developer" target="_blank">Linkedin register application page</a>:
 <br/>Website URL: {$a->siteurl}
 <br/>OAuth 2.0 Accept Redirect URL: {$a->callbackurl}';
 $string['auth_linkedinclientid_key'] = 'Linkedin API Key';
 $string['auth_linkedinclientsecret'] = '';
 $string['auth_linkedinclientsecret_key'] = 'Linkedin Secret key';
-$string['auth_messengerclientid'] = 'Your Client ID/Secret can be generated in your <a href="https://account.live.com/developers/applications">Windows Live apps page</a>:
+$string['auth_messengerclientid'] = 'Your Client ID/Secret can be generated in your <a href="https://account.live.com/developers/applications" target="_blank">Windows Live apps page</a>:
 <br/>Redirect domain: {$a->domain}';
 $string['auth_messengerclientid_key'] = 'Messenger Client ID';
 $string['auth_messengerclientsecret'] = '';
 $string['auth_messengerclientsecret_key'] = 'Messenger Client secret';
 $string['auth_sign-in_with'] = 'Sign-in with {$a->providername}';
-$string['auth_vkclientid'] = 'Your app id and secret keys can be generated in <a href="https://vk.com/editapp?act=create">VK developer page</a>.<br/>
+$string['auth_vkclientid'] = 'Your app id and secret keys can be generated in <a href="https://vk.com/editapp?act=create" target="_blank">VK developer page</a>.<br/>
 Base domain: {$a->siteurl} (without http://)<br/>
 Site address: {$a->callbackurl}';
 $string['auth_vkclientid_key'] = 'VK app id';
@@ -104,6 +104,8 @@ Please try to login again with your username and password.<br/>
 $string['couldnotgetgoogleaccesstoken'] = 'The authentication provider sent us a communication error. Please try to sign-in again.';
 $string['emailaddressmustbeverified'] = 'Your email address is not verified by the authentication method you selected. You likely have forgotten to click on a "verify email address"
 link that Google or Facebook should have sent you during your subscribtion to their service.';
+$string['faileduserdetails'] = 'The site succeed to connect to the selected provider but failed to retrieve your user details. If you are using Google, check that your site administrator has enabled the Google+ API in the Google developer console. It is the most common reason for this error.';
+$string['login'] = 'LOGIN';
 $string['moreproviderlink'] = 'Sign-in with another service.';
 $string['noaccountyet'] = 'You do not have permission to use the site yet. Please contact your administrator and ask them to activate your account.';
 $string['oauth2displaybuttons'] = 'Display buttons on login page';

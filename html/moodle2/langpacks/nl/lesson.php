@@ -92,6 +92,7 @@ $string['checkquestion'] = 'Controleer de vraag';
 $string['classstats'] = 'Statistieken van de klas';
 $string['clicktodownload'] = 'Klik op de link om het bestand te downloaden';
 $string['clicktopost'] = 'Klik hier om je cijfer op de scorelijst te zetten';
+$string['closebeforeopen'] = 'Kon deze les niet aanpassen. Je hebt een afsluitdatum opgegeven die vroeger valt dan de startdatum.';
 $string['cluster'] = 'Cluster';
 $string['clusterjump'] = 'Ongeziene vraag binnen een cluster';
 $string['clustertitle'] = 'Cluster';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['editquestionshere'] = 'Editar preguntas neste contexto';
+$string['eventreportviewed'] = 'Visto o informe';
 $string['getreport'] = 'Obter o informe';
 $string['hiddenquestions'] = 'Agochado';
 $string['intro'] = 'Este informe lista todos os contextos no sistema onde hai preguntas dun tipo particular.';

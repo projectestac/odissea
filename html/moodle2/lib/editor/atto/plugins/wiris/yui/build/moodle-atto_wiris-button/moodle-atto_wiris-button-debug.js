@@ -87,7 +87,8 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         window._wrs_int_path = window._wrs_int_path.join("/");
         window._wrs_int_path =  window._wrs_int_path.indexOf("/")==0 || window._wrs_int_path.indexOf("http")==0 ? window._wrs_int_path : window._wrs_int_conf_path + "/" + window._wrs_int_path;
 
-
+        // Moodle
+        window._wrs_isMoodle24 = true;
 
         // Load WIRIS plugin core javascript file only once.
         if (!window._wrs_int_coreLoading) {
@@ -117,43 +118,43 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         this._parseContent();
         
         // Add WIRIS buttons to the toolbar.
-		this._addButtons();
+        this._addButtons();
     },
-	/**
-	 * Add buttons depending on configuration.
-	 */
-	_addButtons: function() {
-		if (window._wrs_conf_plugin_loaded) {
-			if (window._wrs_conf_editorEnabled) {
-				this.addButton({
-					title: 'wiris_editor_title',
-					buttonName: 'wiris_editor',
-					icon: 'formula',
-					iconComponent: 'atto_wiris',
-					callback: this._editorButton
-				});
-			}
-			if (window._wrs_conf_CASEnabled) {
-				this.addButton({
-					title: 'wiris_cas_title',
-					buttonName: 'wiris_cas',
-					icon: 'cas',
-					iconComponent: 'atto_wiris',
-					callback: this._casButton
-				});
-			}
-			// We add the buton after the collapse plugin initially hide other
-			// buttons. So we recall it here.
-			var host = this.get('host');
-			if (host.plugins.collapse) {
-				host.plugins.collapse._setVisibility(host.plugins.collapse.buttons.collapse);
-			}
-			
-		}
-		else {
-			Y.later(50, this, this._addButtons);
-		}
-	},
+    /**
+     * Add buttons depending on configuration.
+     */
+    _addButtons: function() {
+        if (window._wrs_conf_plugin_loaded) {
+            if (window._wrs_conf_editorEnabled) {
+                this.addButton({
+                    title: 'wiris_editor_title',
+                    buttonName: 'wiris_editor',
+                    icon: 'formula',
+                    iconComponent: 'atto_wiris',
+                    callback: this._editorButton
+                });
+            }
+            if (window._wrs_conf_CASEnabled) {
+                this.addButton({
+                    title: 'wiris_cas_title',
+                    buttonName: 'wiris_cas',
+                    icon: 'cas',
+                    iconComponent: 'atto_wiris',
+                    callback: this._casButton
+                });
+            }
+            // We add the buton after the collapse plugin initially hide other
+            // buttons. So we recall it here.
+            var host = this.get('host');
+            if (host.plugins.collapse) {
+                host.plugins.collapse._setVisibility(host.plugins.collapse.buttons.collapse);
+            }
+            
+        }
+        else {
+            Y.later(50, this, this._addButtons);
+        }
+    },
     /**
      * WIRIS editor button callback.
      **/

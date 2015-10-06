@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alreadyloggedin'] = '您已经以{$a}的身份登录。如果想登录为另一个用户，您必须先登出。';
+$string['alreadyloggedin'] = '您已经以{$a}的身份登录。如果想登录为另一个用户，您必须先退出。';
 $string['authnotexisting'] = '认证插件不存在';
 $string['backupcontainexternal'] = '此备份文件保护未在本地配置的Moodle网络主机';
 $string['backuptablefail'] = '设置备份表不成功！';
@@ -173,13 +173,13 @@ $string['courseformatnotfound'] = '课程格式“{$a}”不存在，或不可�
 $string['coursegroupunknown'] = '未指定与组 {$a} 关联的课程';
 $string['courseidnotfound'] = '课程ID不存在';
 $string['coursemisconf'] = '课程配置错误';
-$string['courserequestdisabled'] = '抱歉，请求开课功能已经被管理员禁用';
+$string['courserequestdisabled'] = '抱歉，请求课程功能已经被管理员禁用';
 $string['csvcolumnduplicates'] = '发现重复列';
 $string['csvemptyfile'] = 'CSV 文件为空';
 $string['csvfewcolumns'] = '没有足够的列，请检查分隔符设置';
 $string['csvinvalidcols'] = '<b>无效 CSV 文件：</b>第一行必须是"字段标题"并且该文件须符合<br />"扩展字段/逗号分隔"<br />或<br />"带CAVV结果代码的扩展字段/逗号分隔"的类型。';
 $string['csvinvalidcolsnum'] = '无效的CSV文件 － 每一行必须包含49或70个字段';
-$string['csvloaderror'] = '加载CSV文件时发生错误！';
+$string['csvloaderror'] = '加载CSV文件时发生错误：{$a}';
 $string['csvweirdcolumns'] = '无效的 CSV 文件格式-列数不连续';
 $string['dbconnectionfailed'] = '<p>错误：数据库连接失败</p>
 <p>可能是数据库过载或是没有正确运行</p>
@@ -187,8 +187,8 @@ $string['dbconnectionfailed'] = '<p>错误：数据库连接失败</p>
 $string['dbdriverproblem'] = '<p>错误：检测出数据库驱动有问题</p><p>网站管理员应该验证服务器配置
 </p><p>{$a}</p>';
 $string['dbsessionbroken'] = '检测到严重的数据库会话错误。<br /><br />请通知服务器管理员。';
-$string['dbsessionhandlerproblem'] = '建立数据库会话失败。<br /><br />请通知服务器管理员。';
-$string['dbsessionmysqlpacketsize'] = '检测到严重的数据库会话错误。<br /><br />请通知服务器管理员。这个问题最可能是由MySQL设置里的max_allowed_packet值过小引起的.';
+$string['dbsessionhandlerproblem'] = '建立数据库会话失败。请通知服务器管理员。';
+$string['dbsessionmysqlpacketsize'] = '检测到严重的数据库会话错误。请通知服务器管理员。这个问题最可能是由MySQL设置里的max_allowed_packet值过小引起的.';
 $string['dbupdatefailed'] = '数据库更新失败';
 $string['ddldependencyerror'] = '取消';
 $string['ddlexecuteerror'] = 'DDL sql执行错误';
@@ -389,7 +389,7 @@ $string['nofolder'] = '请求的目录不存在';
 $string['noformdesc'] = '找不到此活动的formslib表单描述文件。';
 $string['noguest'] = '没有访客！';
 $string['noinstances'] = '在本课程中没有 {$a}！';
-$string['nologinas'] = '您不可以登录为此用户';
+$string['nologinas'] = '您不允许登录为此用户';
 $string['nonmeaningfulcontent'] = '无意义的内容';
 $string['noparticipants'] = '未找到此项课程的参与者';
 $string['noparticipatorycms'] = '很抱歉，您没有可参与的课程模块来生成报表';

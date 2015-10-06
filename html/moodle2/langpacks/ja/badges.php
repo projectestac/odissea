@@ -30,9 +30,9 @@ $string['activate'] = 'アクセスを有効にする';
 $string['activatesuccess'] = 'バッジへのアクセスが正常に有効にされました。';
 $string['addbadgecriteria'] = 'バッジクライテリアを追加する';
 $string['addcourse'] = 'コースを追加する';
-$string['addcourse_help'] = 'このバッジの必要条件に追加するコースすべてを選択してください。複数アイテムを選択するには、CTRLキーを押したままにしてください。';
+$string['addcourse_help'] = 'このバッジの必要条件に追加するコースすべてを選択してください。複数アイテムを選択するにはCTRLキーを押したままにしてください。';
 $string['addcriteria'] = 'クライテリアを追加する';
-$string['addcriteriatext'] = 'クライテリアの追加を開始するには、ドロップダウンメニューよりオプションを選択してください。';
+$string['addcriteriatext'] = 'クライテリアの追加を開始するにはドロップダウンメニューよりオプションを選択してください。';
 $string['addtobackpack'] = 'バックパックを追加する';
 $string['adminonly'] = 'このページはサイト管理者のみに制限されています。';
 $string['after'] = '- 発効日以降';
@@ -95,7 +95,7 @@ $string['badgedetails'] = 'バッジ詳細';
 $string['badgeimage'] = 'イメージ';
 $string['badgeimage_help'] = 'このバッジが発行される時に使用されるイメージです。
 
-新しいイメージを追加するには、イメージ (JPGまたはPNG) を参照および選択して、「変更を保存する」をクリックしてください。イメージは正方形にトリミングされ、バッジイメージ要件に合致するようリサイズされます。';
+新しいイメージを追加するにはイメージ (JPGまたはPNG) を参照および選択して、「変更を保存する」をクリックしてください。イメージは正方形にトリミングされ、バッジイメージ要件に合致するようリサイズされます。';
 $string['badgeprivacysetting'] = 'バッジプライバシー設定';
 $string['badgeprivacysetting_help'] = 'あなたのアカウントプロファイルページに取得したバッジを表示することができます。この設定において、あなたは新しく取得したバッジの可視性を自動的に設定することができます。
 
@@ -218,7 +218,7 @@ $string['error:clone'] = 'バッジを複製できません。';
 $string['error:connectionunknownreason'] = '接続に成功しませんでしたが、理由は不明です。';
 $string['error:duplicatename'] = '当該名称のバッジはすでにシステム内に登録されています。';
 $string['error:externalbadgedoesntexist'] = 'バッジが見つかりませんでした。';
-$string['error:guestuseraccess'] = '現在、あなたはゲストアクセスを使用しています。バッジを閲覧するには、あなたのユーザアカウントでログインする必要があります。';
+$string['error:guestuseraccess'] = '現在、あなたはゲストアクセスを使用しています。バッジを閲覧するにはあなたのユーザアカウントでログインする必要があります。';
 $string['error:invalidbadgeurl'] = '無効なバッジ発行者URLフォーマットです。';
 $string['error:invalidcriteriatype'] = '無効なクライテリアタイプです。';
 $string['error:invalidexpiredate'] = '有効期限は将来の日付にしてください。';
@@ -227,7 +227,7 @@ $string['error:noactivities'] = 'このコースには完了クライテリア�
 $string['error:noassertion'] = 'ペルソナからアサーションが戻されませんでした。ログインプロセスが完了する前に、あなたがダイアログを閉じた可能性があります。';
 $string['error:nocourses'] = 'このサイト内でコース完了が有効にされているコースがないため、何も表示できません。あなたはコース設定ページにて、コース完了を有効にすることができます。';
 $string['error:nogroups'] = '<p>あなたのバックパックで利用できるパブリックコレクションのバッジはありません。</p>
-<p>パブリックコレクションのみ表示されます。パブリックコレクションを作成するには、<a href="http://backpack.openbadges.org">あなたのバックパックにアクセスしてください</a>。</p>';
+<p>パブリックコレクションのみ表示されます。パブリックコレクションを作成するには<a href="http://backpack.openbadges.org">あなたのバックパックにアクセスしてください</a>。</p>';
 $string['error:nopermissiontoview'] = 'あなたにはバッジ取得者を閲覧するパーミッションがありません。';
 $string['error:nosuchbadge'] = 'ID {$a} のバッジは存在しません。';
 $string['error:nosuchcourse'] = '警告: このコースは利用できません。';
@@ -256,7 +256,7 @@ $string['expirydate_help'] = '特定の日付またはユーザへのバッジ�
 $string['externalbadges'] = '他のウェブサイトからのマイバッジ';
 $string['externalbadges_help'] = 'このエリアではあなたの外部バックパックからのバッジを表示します。';
 $string['externalbadgesp'] = '他のウェブサイトからのバッジ:';
-$string['externalconnectto'] = '外部バッジを表示するには、あなたは<a href="{$a}">バックパックに接続する</a>必要があります。';
+$string['externalconnectto'] = '外部バッジを表示するにはあなたは<a href="{$a}">バックパックに接続する</a>必要があります。';
 $string['fixed'] = '指定期日';
 $string['hidden'] = '非表示';
 $string['hiddenbadge'] = '残念ですが、バッジ所有者はこの情報を利用できるようにしていません。';
@@ -274,7 +274,7 @@ $string['localbadgesh_help'] = 'コース、コース活動および他の要件
 
 あなたのバッジすべてまたは個別のバッジをダウンロードして、あなたのコンピュータに保存することができます。あなたはダウンロードしたバッジを外部バックパックサービスに追加することができます。';
 $string['localbadgesp'] = '{$a} からのバッジ:';
-$string['localconnectto'] = 'これらのバッジをこのウェブサイトの外で共有するには、<a href="{$a}">バックパックに接続してください</a>。';
+$string['localconnectto'] = 'これらのバッジをこのウェブサイトの外で共有するには<a href="{$a}">バックパックに接続してください</a>。';
 $string['makeprivate'] = '非公開にする';
 $string['makepublic'] = '公開する';
 $string['managebadges'] = 'バッジを管理する';
@@ -299,7 +299,7 @@ $string['nobadges'] = '利用できるバッジはありません。';
 $string['nocriteria'] = 'このバッジのクライテリアはまだ設定されていません。';
 $string['noexpiry'] = 'このバッジには有効期限がありません。';
 $string['noparamstoadd'] = 'このバッジ必要条件に追加できる追加パラメータはありません。';
-$string['notacceptedrole'] = 'あなたの現在のロール割り当てはこのバッジを手動で授与することのできるロールではありません。<br/> すでにこのバッジを取得しているユーザを閲覧するには、 {$a} ページにアクセスしてください。';
+$string['notacceptedrole'] = 'あなたの現在のロール割り当てはこのバッジを手動で授与することのできるロールではありません。<br/> すでにこのバッジを取得しているユーザを閲覧するには {$a} ページにアクセスしてください。';
 $string['notconnected'] = '未接続';
 $string['nothingtoadd'] = '追加できるクライテリアはありません。';
 $string['notification'] = 'バッジ作成者に通知する';
@@ -345,7 +345,7 @@ $string['reviewconfirm'] = '<p>あなたのバッジをユーザに表示して�
 $string['save'] = '保存';
 $string['searchname'] = '名称で検索する';
 $string['selectaward'] = 'あなたがこのバッジの授与に使用したいロールを選択してください:';
-$string['selectgroup_end'] = 'パブリックコレクションのみ表示されます。さらにパブリックコレクションを作成するには、<a href="http://backpack.openbadges.org">あなたのバックパックにアクセスしてください</a>。';
+$string['selectgroup_end'] = 'パブリックコレクションのみ表示されます。さらにパブリックコレクションを作成するには<a href="http://backpack.openbadges.org">あなたのバックパックにアクセスしてください</a>。';
 $string['selectgroup_start'] = 'このサイトに表示するため、あなたのバックパックからコレクションを選択してください:';
 $string['selecting'] = '選択したバッジに対して ...';
 $string['setup'] = '接続をセットアップする';

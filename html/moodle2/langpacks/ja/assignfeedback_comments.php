@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'コメントインライン';
 $string['commentinlinedefault'] = 'デフォルトでコメントインラインにする';
-$string['commentinlinedefault_help'] = '設定した場合、すべての新しい課題に関して、このコメントインライン機能がデフォルトで有効にされます。';
+$string['commentinlinedefault_help'] = 'この設定を有効にした場合、すべての新しい課題に関して、このコメントインライン機能がデフォルトで有効にされます。';
 $string['commentinline_help'] = 'この設定を有効にした場合、評定中、送信テキストがフィードバックコメントフィールドにコピーされ、 (恐らく、異なる色を使った) コメントインラインまたはオリジナルテキストの編集を簡単にします。';
 $string['default'] = 'デフォルトで有効にする';
-$string['default_help'] = '有効にした場合、すべての新しい課題において、このフィードバック方法がデフォルトで有効にされます。';
+$string['default_help'] = 'この設定を有効にした場合、すべての新しい課題に関して、このフィードバック方法がデフォルトで有効にされます。';
 $string['enabled'] = 'フィードバックコメント';
-$string['enabled_help'] = '有効にした場合、評定者はそれぞれの提出課題にフィードバックコメントを残すことができます。';
+$string['enabled_help'] = 'この設定を有効にした場合、評定者はそれぞれの提出課題にフィードバックコメントを残すことができます。';
 $string['pluginname'] = 'フィードバックコメント';

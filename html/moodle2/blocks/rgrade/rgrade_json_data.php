@@ -62,6 +62,20 @@ $data['scores'] = $ENUM_SCORES;
 $data['status'] = $ENUM_STATUS;
 $data['book'] = array('id' => $book->id, 'name' => $book->name, 'units' => array());
 
+$units = rgrade_get_recordset_units($book->id);
+foreach ($units as $unit) {
+	$uid = (int) $unit->id;
+
+	if(!isset($data['book']['units'][$uid])){
+		$data['book']['units'][$uid] = array(
+			'id' => $uid,
+			'code' => $unit->code,
+			'name' => $unit->name);
+		$data['book']['units'][$uid]['activities'] = array();
+	}
+}
+
+
 $activities = rgrade_get_recordset_activities($book->id);
 foreach ($activities as $activity) {
 	$uid = (int) $activity->unitid;

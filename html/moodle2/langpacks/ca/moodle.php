@@ -158,7 +158,7 @@ $string['assigncreators'] = 'Assigna creadors de cursos';
 $string['assignedrolecount'] = '{$a->role}: {$a->count}';
 $string['assignsiteroles'] = 'Assigna rols de tot el lloc';
 $string['authenticateduser'] = 'Usuari autenticat';
-$string['authenticateduserdescription'] = 'Tots aquells usuaris que hagin entrat.';
+$string['authenticateduserdescription'] = 'Tots aquells usuaris que hagin iniciat sessió.';
 $string['authentication'] = 'Autenticació';
 $string['authenticationplugins'] = 'Connectors d\'autenticació';
 $string['autosubscribe'] = 'Subscripció automàtica al fòrum';
@@ -284,6 +284,7 @@ $string['collapseall'] = 'Contreu-ho tot';
 $string['collapsecategory'] = 'Redueix {$a}';
 $string['commentincontext'] = 'Mostra aquest comentari en context';
 $string['comments'] = 'Comentaris';
+$string['commentscount'] = 'Comentaris ({$a})';
 $string['commentsnotenabled'] = 'La característica de comentaris no està habilitada';
 $string['commentsrequirelogin'] = 'Us cal entrar amb el nom d\'usuari i contrasenya per veure els comentaris';
 $string['comparelanguage'] = 'Compara i edita l\'idioma actual';
@@ -834,7 +835,7 @@ $string['frontpagedescription'] = 'Descripció per a la pàgina inicial';
 $string['frontpagedescriptionhelp'] = 'Aquesta descripció es pot mostrar a la primera plana fent servir el bloc de resum del curs/lloc, o bé incloent una secció de tema a la pàgina inicial.';
 $string['frontpageenrolledcourselist'] = 'Cursos inscrits';
 $string['frontpageformat'] = 'Format de la pàgina inicial';
-$string['frontpageformatloggedin'] = 'Format per a usuaris autenticats';
+$string['frontpageformatloggedin'] = 'Format de portada per a usuaris que han iniciat sessió';
 $string['frontpagenews'] = 'Mostra notícies';
 $string['frontpagesettings'] = 'Paràmetres de la pàgina inicial';
 $string['fulllistofcourses'] = 'Tots els cursos';
@@ -908,7 +909,7 @@ $string['guest'] = 'Visitant';
 $string['guestdescription'] = 'Els visitants tenen privilegis mínims i generalment no poden introduir text enlloc.';
 $string['guestskey'] = 'Permet visitants amb clau';
 $string['guestsno'] = 'No permetis l\'entrada de visitants';
-$string['guestsnotallowed'] = '\'{$a}\' no permet l\'entrada de visitants';
+$string['guestsnotallowed'] = '«{$a}» no permet l\'entrada de visitants';
 $string['guestsyes'] = 'Permet visitants sense clau';
 $string['guestuser'] = 'Usuari convidat';
 $string['guestuserinfo'] = 'Aquest usuari és un usuari especial que permet entrar a alguns cursos en mode només de lectura (read-only).';
@@ -1031,25 +1032,25 @@ $string['localpluginsmanage'] = 'Gestiona els connectors locals';
 $string['location'] = 'Localització';
 $string['locktimeout'] = 'L\'operació ha esgotat el temps esperant el bloqueig';
 $string['log_excel_date_format'] = 'yyyy mmmm d h:mm';
-$string['loggedinas'] = 'Heu entrat com {$a}';
+$string['loggedinas'] = 'Heu iniciat sessió com a {$a}';
 $string['loggedinasguest'] = 'Esteu accedint com a visitant';
-$string['loggedinnot'] = 'No heu entrat';
+$string['loggedinnot'] = 'No heu iniciat sessió';
 $string['login'] = 'Entrada';
-$string['loginalready'] = 'Ja heu entrat';
-$string['loginas'] = 'Entra com a';
-$string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «entra com a» per a utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
+$string['loginalready'] = 'Ja heu iniciat sessió';
+$string['loginas'] = 'Inicia sessió com a';
+$string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «inicia sessió com a» per a utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
 $string['login_failure_logs'] = 'Registre d\'inicis de sessió fallits';
-$string['loginguest'] = 'Entra com a visitant';
+$string['loginguest'] = 'Inicia sessió com a visitant';
 $string['loginsite'] = 'Entra en aquest lloc';
 $string['loginsteps'] = 'L\'accés complet als cursos requereix que dediqueu un minut a la creació d\'un nou compte d\'usuari vàlid en aquest lloc web. Cada curs pot requerir també una «clau d\'inscripció» d\'un sol ús que no necessitareu fins més tard. Els passos que heu de seguir són els següents:
 <ol>
 <li>Ompliu el formulari de <a href="{$a}">Nou compte</a> amb les vostres dades.</li>
 <li>Se us enviarà immediatament un correu a la vostra adreça electrònica.</li>
 <li>Llegiu el correu i feu clic en l\'enllaç web inclòs.</li>
-<li>Es confirmarà el vostre compte i podreu entrar-hi.</li>
+<li>Es confirmarà el vostre compte i podreu iniciar sessió.</li>
 <li>Llavors, seleccioneu el curs en el qual voleu participar.</li>
 <li>Si se us demana una «clau d\'inscripció», utilitzeu la que us ha donat el professor. Amb això quedareu inscrit al curs.</li>
-<li>En aquest moment ja tindreu accés complet al curs. En endavant només haureu d\'introduir el vostre nom d\'usuari i la contrasenya (en el formulari d\'aquesta pàgina) per tal d\'entrar-hi i tenir accés a qualsevol curs en el qual estigueu inscrit.</li>
+<li>En aquest moment ja tindreu accés complet al curs. En endavant només haureu d\'introduir el vostre nom d\'usuari i la contrasenya (en el formulari d\'aquesta pàgina) per tal d\'iniciar sessió i tenir accés a qualsevol curs en el qual estigueu inscrit.</li>
 </ol>';
 $string['loginstepsnone'] = '<p>Per tal de tenir accés complet als cursos us heu de crear un compte d\'usuari.</p>
 <p>Consisteix simplement a triar un nom d\'usuari i una contrasenya amb els quals us identificareu, després, en aquesta pàgina.</p>
@@ -1212,20 +1213,20 @@ $string['newcourse'] = 'Nou curs';
 $string['newpassword'] = 'Nova contrasenya';
 $string['newpasswordfromlost'] = '<strong>AVÍS:</strong> se us ha enviat la vostra <strong>contrasenya actual</strong> en el <strong>segon</strong> dels dos correus que rebreu com a part del procés de recuperació de la contrasenya. Assegureu-vos que heu rebut la contrasenya nova abans de continuar.';
 $string['newpassword_help'] = 'Introduïu una nova contrasenya o deixeu-ho en blanc per mantenir la contrasenya actual.';
-$string['newpasswordtext'] = 'Hola {$a->firstname},
+$string['newpasswordtext'] = 'Hola, {$a->firstname},
 
-S\'ha anul·lat la contrasenya del vostre compte en \'{$a->sitename}\' i se us n\'ha assignat una de nova provisionalment.
+S\'ha anul·lat la contrasenya del vostre compte a «{$a->sitename}» i se us n\'ha assignat una de nova provisionalment.
 
 Les dades per iniciar la sessió ara són:
     nom d\'usuari: {$a->username}
     contrasenya: {$a->newpassword}
 
-Si us plau aneu a aquesta pàgina per canviar la vostra contrasenya:
+Aneu a aquesta pàgina per canviar la vostra contrasenya:
     {$a->link}
 
-En la majoria de programes de correu, l\'adreça s\'hauria de presentar com un enllaç blau on podeu fer clic. Si això no funciona, copieu i enganxeu l\'adreça al camp d\'adreces de la finestra del vostre navegador web.
+En la majoria de programes de correu, l\'adreça s\'hauria de presentar com un enllaç blau on heu de fer clic. Si això no funciona, copieu i enganxeu l\'adreça al camp d\'adreces de la finestra del vostre navegador web.
 
-Salutacions de l\'administrador de \'{$a->sitename}\',
+Salutacions de l\'administrador de «{$a->sitename}»,
 {$a->signoff}';
 $string['newpicture'] = 'Nova imatge';
 $string['newpicture_help'] = '<p>Podeu penjar al servidor una imatge que tingueu al vostre ordinador que servir&agrave; per representar-vos en diferents llocs.</p>
@@ -1267,9 +1268,9 @@ $string['newsitemsnumber_help'] = '<p>En els formats de curs &quot;setmanal&quot
 <p>Si poseu &quot;0 not&iacute;cies&quot; aleshores no apareixer&agrave; el quadre de not&iacute;cies.</p>';
 $string['newuser'] = 'Nou usuari';
 $string['newusernewpasswordsubj'] = 'Nou compte d\'usuari';
-$string['newusernewpasswordtext'] = 'Hola {$a->firstname},
+$string['newusernewpasswordtext'] = 'Hola, {$a->firstname},
 
-Se us ha creat un nou compte d\'usuari en \'{$a->sitename}\' i se us ha assignat una nova contrasenya temporal.
+Se us ha creat un nou compte d\'usuari a «{$a->sitename}» i se us ha assignat una nova contrasenya temporal.
 
 La vostra informació d\'inici de sessió és ara:
     usuari: {$a->username}
@@ -1279,7 +1280,7 @@ La vostra informació d\'inici de sessió és ara:
 Per començar a utilitzar {$a->sitename}, inicieu la sessió a
         {$a->link}
 
-En la majoria de programes de correu aquesta adreça hauria d\'aparèixer com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
+En la majoria de programes de correu aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
 
 Salutacions de l\'administrador de {$a->sitename},
 {$a->signoff}';
@@ -1666,7 +1667,7 @@ $string['servererror'] = 'S\'ha produït un error mentre es comunicava amb el se
 $string['serverlocaltime'] = 'Hora del servidor local';
 $string['setcategorytheme'] = 'Estableix el tema de la categoria';
 $string['setpassword'] = 'Definició de la contrasenya';
-$string['setpasswordinstructions'] = 'Introduïu i repetiu la nova contrasenya a continuació, feu clic a «Definició de la contrasenya». <br /> La vostra nova contrasenya es desarà, i haureu entrat.';
+$string['setpasswordinstructions'] = 'Introduïu i repetiu la nova contrasenya; a continuació, feu clic a «Definició de la contrasenya». <br /> La vostra nova contrasenya es desarà, i haureu iniciat sessió.';
 $string['settings'] = 'Paràmetres';
 $string['shortname'] = 'Nom curt';
 $string['shortnamecollisionwarning'] = '[*] = Aquest nom curt ja l\'utilitza un altre curs i caldrà canviar-lo quan s\'aprovi';
@@ -1685,7 +1686,7 @@ $string['showblockcourse'] = 'Mostra llista de cursos que contenen el bloc';
 $string['showcategory'] = 'Mostra {$a}';
 $string['showcomments'] = 'Mostra/oculta comentaris';
 $string['showcommentsnonjs'] = 'Mostra comentaris';
-$string['showdescription'] = 'Mostra la descripció en la pàgina principal del curs';
+$string['showdescription'] = 'Mostra la descripció a la pàgina del curs';
 $string['showdescription_help'] = 'Si s\'habilita la descripció de sobre es mostrarà en la pàgina del curs a sota de l\'enllaç a l\'activitat o el recurs.';
 $string['showgrades'] = 'Mostra qualificacions a l\'estudiantat';
 $string['showgrades_help'] = '<p>Moltes activitats poden ser qualificades.</p>
@@ -1803,7 +1804,7 @@ $string['statsuserwrites'] = 'Trameses';
 $string['statswrites'] = 'Enviaments';
 $string['status'] = 'Estat';
 $string['stringsnotset'] = 'Les cadenes següents no estan definides en {$a}';
-$string['studentnotallowed'] = 'No podeu entrar en aquest curs com a \'{$a}\'';
+$string['studentnotallowed'] = 'No podeu entrar en aquest curs com a «{$a}»';
 $string['students'] = 'Estudiants';
 $string['studentsandteachers'] = 'Estudiants i professors';
 $string['subcategories'] = 'Subcategories';

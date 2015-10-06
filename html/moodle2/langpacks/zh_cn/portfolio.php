@@ -147,6 +147,7 @@ $string['multipleinstancesdisallowed'] = '试图用不支持多实例的插件�
 $string['mustsetcallbackoptions'] = '您必须在 portfolio_add_button 的构造器或使用 set_callback_options 方法设置回调选项';
 $string['noavailableplugins'] = '抱歉，没有您可用的云存储，无法导出';
 $string['nocallbackclass'] = '找不到可用的回调类（{$a}）';
+$string['nocallbackcomponent'] = '无法找到指定的组件{$a}。';
 $string['nocallbackfile'] = '你正试图从中导出的模块有些问题——找不到请求的文件（{$a}）';
 $string['noclassbeforeformats'] = '您在调用 portfolio_button 的 set_formats 之前必须设置回调类';
 $string['nocommonformats'] = '调用者 {$a->location} 和可用的云存储插件之间没有共同支持的格式（调用者支持{$a->formates}）';

@@ -63,6 +63,7 @@ $string['mappingdefault'] = '(berezkoa)';
 $string['mode'] = 'Modua';
 $string['mode_1'] = 'Aplikazioa';
 $string['mode_2'] = 'Saioa';
+$string['mode_4'] = 'Eskatu';
 $string['modes'] = 'Moduak';
 $string['none'] = 'Bat ere ez';
 $string['plugin'] = 'Plugina';

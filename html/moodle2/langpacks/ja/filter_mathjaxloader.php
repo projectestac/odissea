@@ -39,7 +39,7 @@ $string['localinstall_help'] = 'デフォルトのMathJax設定ではCDNバー�
 
 これは帯域幅の節約、またはローカルプロクシの制限に対して有用です。
 
-MathJaxのローカルインストレーションを使用するには、最初にhttp://www.mathjax.org/から完全なMathJaxライブラリをダウンロードしてください。それからウェブサーバにインストールしてください。最後にローカルのMathJax.js URLを指すため、MathJaxフィルタ設定「httpurl」および「httpsurl」を更新してください。';
+MathJaxのローカルインストレーションを使用するには最初にhttp://www.mathjax.org/から完全なMathJaxライブラリをダウンロードしてください。それからウェブサーバにインストールしてください。最後にローカルのMathJax.js URLを指すため、MathJaxフィルタ設定「httpurl」および「httpsurl」を更新してください。';
 $string['mathjaxsettings'] = 'MathJax設定';
 $string['mathjaxsettings_desc'] = 'ほとんどのユーザに対して、MathJaxデフォルト設定は適切ですが、MathJaxは高度に設定可能であり、標準MathJax設定オプションをここでどれでも追加することができます。';
 $string['texfiltercompatibility'] = 'TeXフィルタ互換性';

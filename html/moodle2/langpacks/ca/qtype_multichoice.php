@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Una resposta o múltiples respostes?';
-$string['answernumbering'] = 'Numeració de les preguntes';
+$string['answernumbering'] = 'Voleu numerar les opcions?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';

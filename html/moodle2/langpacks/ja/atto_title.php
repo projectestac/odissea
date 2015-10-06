@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['h3'] = '見出し(大)';
-$string['h4'] = '見出し(中)';
-$string['h5'] = '見出し(小)';
+$string['h3'] = 'ヘッディング (大)';
+$string['h4'] = 'ヘッディング  (中)';
+$string['h5'] = 'ヘッディング  (小)';
 $string['p'] = '段落';
 $string['pluginname'] = '段落スタイル';
 $string['pre'] = 'フォーマット済み';

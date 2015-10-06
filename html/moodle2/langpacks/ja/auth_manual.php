@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_manualdescription'] = 'この方法では、ユーザによるユーザアカウント作成機能を停止します。すべてのアカウントは、管理者により手動で作成される必要があります。';
+$string['auth_manualdescription'] = 'この方法ではユーザによるユーザアカウント作成を停止します。すべてのアカウントは管理者により手動で作成される必要があります。';
 $string['expiration'] = 'パスワード有効期限を有効にする';
 $string['expiration_desc'] = '指定された時間以降にパスワードが期限切れになるようにします。';
 $string['expiration_warning'] = '通知閾値';

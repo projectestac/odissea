@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = '章の追加';
 $string['book:addinstance'] = '新しいブックを追加する';
 $string['book:edit'] = 'ブックの章を編集する';
-$string['book:read'] = 'ブックを読む';
+$string['book:read'] = 'ブックを表示する';
 $string['book:viewhiddenchapters'] = '非表示のブックの章を表示する';
 $string['chapters'] = '章';
 $string['chaptertitle'] = '章の題名';

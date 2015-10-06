@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'Non foi posíbel cargar as opcións da pregunta';
+$string['include'] = 'Incluír';
 $string['mustselectcols'] = 'Debe incluír algo.';
 $string['pagesize'] = 'Tamaño da páxina';
 $string['pluginname'] = 'Respostas';
@@ -41,6 +42,7 @@ $string['responsestitle'] = 'Respostas';
 $string['responsex'] = 'Resposta {$a}';
 $string['rightanswer'] = 'resposta correcta';
 $string['rightanswerx'] = 'Resposta correcta {$a}';
+$string['showattempts'] = 'Só amosar / descargar os intentos';
 $string['showthe'] = 'Amosar o';
 $string['summaryofquestiontext'] = 'Resumo da pregunta';
 $string['summaryofresponse'] = 'Resumo da resposta dada';

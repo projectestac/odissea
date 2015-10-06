@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Diese Authentifizierung verhindert, dass Personen ihre Nutzerkonten selbst anlegen können. Jedes Nutzerprofil wird manuell vom Administrator eingerichtet.';
-$string['expiration'] = 'Ablauf von Kennworten';
-$string['expiration_desc'] = 'Diese Option legt fest, dass Kennworte nach einer festgelegten Zeit ungültig werden.';
+$string['expiration'] = 'Ablauf von Kennwörtern';
+$string['expiration_desc'] = 'Diese Option legt fest, dass Kennwörter nach einer festgelegten Zeit ungültig werden.';
 $string['expiration_warning'] = 'Ablaufmitteilung';
-$string['expiration_warning_desc'] = 'Diese Option legt fest, wie viele Tage vor dem Ablauf von Kennworten eine Mitteilung versendet wird.';
-$string['passwdexpire_settings'] = 'Einstellungen für den Ablauf von Kennworten';
+$string['expiration_warning_desc'] = 'Diese Option legt fest, wie viele Tage vor dem Ablauf von Kennwörtern eine Mitteilung versendet wird.';
+$string['passwdexpire_settings'] = 'Einstellungen für den Ablauf von Kennwörtern';
 $string['passwdexpiretime'] = 'Gültigkeitsdauer';
 $string['passwdexpiretime_desc'] = 'Diese Option legt die Zeitdauer fest, in der ein Kennwort gültig ist.';
 $string['pluginname'] = 'Manuelle Konten';

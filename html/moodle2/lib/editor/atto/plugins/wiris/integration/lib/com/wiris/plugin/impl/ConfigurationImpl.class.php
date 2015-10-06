@@ -7,16 +7,20 @@ class com_wiris_plugin_impl_ConfigurationImpl implements com_wiris_plugin_api_Co
 	}}
 	public function getJavaScriptConfiguration() {
 		$sb = new StringBuf();
+		$arrayParse = "[]";
 		$this->appendVarJs($sb, "_wrs_conf_editorEnabled", $this->getProperty("wiriseditorenabled", null), "Specifies if fomula editor is enabled");
 		$this->appendVarJs($sb, "_wrs_conf_imageMathmlAttribute", "'" . $this->getProperty("wiriseditormathmlattribute", null) . "'", "Specifies the image tag where we should save the formula editor mathml code");
-		$this->appendVarJs($sb, "_wrs_conf_saveMode", "'" . $this->getProperty("wiriseditorsavemode", null) . "'", "This value can be 'tags', 'xml' or 'safeXml'");
+		$this->appendVarJs($sb, "_wrs_conf_saveMode", "'" . $this->getProperty("wiriseditorsavemode", null) . "'", "This value can be 'xml', 'safeXml', 'image' or 'base64'");
+		$this->appendVarJs($sb, "_wrs_conf_editMode", "'" . $this->getProperty("wiriseditoreditmode", null) . "'", "This value can be 'default' or 'image'");
 		if($this->getProperty("wiriseditorparselatex", null) === "true") {
-			$this->appendVarJs($sb, "_wrs_conf_parseModes", "['latex']", "This value can contain 'latex'");
-		} else {
-			$this->appendVarJs($sb, "_wrs_conf_parseModes", "[]", "This value can contain 'latex'");
+			$arrayParse = $this->appendElement2JavascriptArray($arrayParse, "latex");
 		}
+		if($this->getProperty("wiriseditorparsexml", null) === "true") {
+			$arrayParse = $this->appendElement2JavascriptArray($arrayParse, "xml");
+		}
+		$this->appendVarJs($sb, "_wrs_conf_parseModes", $arrayParse, "This value can contain 'latex' and 'xml)");
 		$this->appendVarJs($sb, "_wrs_conf_editorAttributes", "'" . $this->getProperty("wiriseditorwindowattributes", null) . "'", "Specifies formula editor window options");
-		$this->appendVarJs($sb, "_wrs_conf_editorUrl", "'" . $this->plugin->getImageServiceURL("editor") . "'", "WIRIS editor");
+		$this->appendVarJs($sb, "_wrs_conf_editorUrl", "'" . $this->plugin->getImageServiceURL("editor", false) . "'", "WIRIS editor");
 		$this->appendVarJs($sb, "_wrs_conf_modalWindow", $this->getProperty("wiriseditormodalwindow", null), "Editor modal window");
 		$this->appendVarJs($sb, "_wrs_conf_CASEnabled", $this->getProperty("wiriscasenabled", null), "Specifies if WIRIS cas is enabled");
 		$this->appendVarJs($sb, "_wrs_conf_CASMathmlAttribute", "'" . $this->getProperty("wiriscasmathmlattribute", null) . "'", "Specifies the image tag where we should save the WIRIS cas mathml code");
@@ -25,33 +29,56 @@ class com_wiris_plugin_impl_ConfigurationImpl implements com_wiris_plugin_api_Co
 		$this->appendVarJs($sb, "_wrs_conf_enableAccessibility", $this->getProperty("wirisaccessibilityenabled", null), "Specifies whether accessibility is enabled");
 		$this->appendVarJs($sb, "_wrs_conf_setSize", $this->getProperty("wiriseditorsetsize", null), "Specifies whether to set the size of the images at edition time");
 		$this->appendVarJs($sb, "_wrs_conf_editorToolbar", "'" . $this->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_TOOLBAR, null) . "'", "Toolbar definition");
-		$h = com_wiris_plugin_api_ConfigurationKeys::$imageConfigPropertiesInv;
-		$attributes = new StringBuf();
-		$confVal = "";
-		$i = 0;
-		$it = $h->keys();
-		$value = null;
-		while($it->hasNext()) {
-			$value = $it->next();
-			if($this->getProperty($value, null) !== null) {
-				if($i !== 0) {
-					$attributes->add(",");
+		if($this->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMS, null) !== null) {
+			$this->appendVarJs($sb, "_wrs_conf_editorParameters", $this->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMS, null), "Editor parameters");
+		} else {
+			$h = com_wiris_plugin_api_ConfigurationKeys::$imageConfigPropertiesInv;
+			$attributes = new StringBuf();
+			$confVal = "";
+			$i = 0;
+			$it = $h->keys();
+			$value = null;
+			while($it->hasNext()) {
+				$value = $it->next();
+				if($this->getProperty($value, null) !== null) {
+					if($i !== 0) {
+						$attributes->add(",");
+					}
+					$i++;
+					$confVal = $this->getProperty($value, null);
+					str_replace("-", "_", $confVal);
+					str_replace("-", "_", $confVal);
+					$attributes->add("'");
+					$attributes->add(com_wiris_plugin_api_ConfigurationKeys::$imageConfigPropertiesInv->get($value));
+					$attributes->add("' : '");
+					$attributes->add($confVal);
+					$attributes->add("'");
 				}
-				$i++;
-				$confVal = $this->getProperty($value, null);
-				str_replace("-", "_", $confVal);
-				str_replace("-", "_", $confVal);
-				$attributes->add("'");
-				$attributes->add(com_wiris_plugin_api_ConfigurationKeys::$imageConfigPropertiesInv->get($value));
-				$attributes->add("' : '");
-				$attributes->add($confVal);
-				$attributes->add("'");
 			}
+			$this->appendVarJs($sb, "_wrs_conf_editorParameters", "{" . $attributes->b . "}", "Editor parameters");
 		}
-		$this->appendVarJs($sb, "_wrs_conf_editorParameters", "{" . $attributes->b . "}", "Editor parameters");
 		$sb->add("var _wrs_conf_configuration_loaded = true;\x0D\x0A");
 		$sb->add("if (typeof _wrs_conf_core_loaded != 'undefined') _wrs_conf_plugin_loaded = true;\x0D\x0A");
+		$version = null;
+		try {
+			$version = com_wiris_system_Storage::newResourceStorage("VERSION")->read();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$ex = $_ex_;
+			{
+				$version = "Missing version";
+			}
+		}
+		$sb->add("var _wrs_conf_version = '" . $version . "';\x0D\x0A");
 		return $sb->b;
+	}
+	public function appendElement2JavascriptArray($array, $value) {
+		$arrayOpen = _hx_index_of($array, "[", null);
+		$arrayClose = _hx_index_of($array, "]", null);
+		if($arrayOpen === -1 || $arrayClose === -1) {
+			throw new HException("Array not valid");
+		}
+		return "[" . "'" . $value . "'" . (com_wiris_plugin_impl_ConfigurationImpl_0($this, $array, $arrayClose, $arrayOpen, $value));
 	}
 	public function appendVarJs($sb, $varName, $value, $comment) {
 		$sb->add("var ");
@@ -120,4 +147,11 @@ class com_wiris_plugin_impl_ConfigurationImpl implements com_wiris_plugin_api_Co
 			throw new HException('Unable to call «'.$m.'»');
 	}
 	function __toString() { return 'com.wiris.plugin.impl.ConfigurationImpl'; }
+}
+function com_wiris_plugin_impl_ConfigurationImpl_0(&$»this, &$array, &$arrayClose, &$arrayOpen, &$value) {
+	if(strlen($array) === 2) {
+		return "]";
+	} else {
+		return "," . _hx_substr($array, $arrayOpen + 1, $arrayClose - $arrayOpen);
+	}
 }

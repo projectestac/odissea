@@ -78,9 +78,9 @@ $string['editing'] = 'S\'està editant la pàgina wiki';
 $string['editingcomment'] = 'S\'està editant el comentari';
 $string['editingpage'] = 'S\'està editant aquesta pàgina \'{$a}\'';
 $string['editsection'] = 'Edita';
-$string['eventdiffviewed'] = 'S\'ha mostrat el diff de la wiki';
-$string['eventhistoryviewed'] = 'S\'ha mostrat l\'historial de la wiki';
-$string['eventmapviewed'] = 'S\'ha mostrat el mapa de pàgines de la wiki';
+$string['eventdiffviewed'] = 'S\'ha visualitzat el diff del wiki';
+$string['eventhistoryviewed'] = 'S\'ha visualitzat l\'historial del wiki';
+$string['eventmapviewed'] = 'S\'ha visualitzat el mapa de pàgines del wiki';
 $string['eventpagecreated'] = 'S\'ha creat la pàgina wiki';
 $string['eventpagedeleted'] = 'S\'ha suprimit la pàgina wiki';
 $string['eventpagelocksdeleted'] = 'S\'han suprimit els bloqueigs de la pàgina wiki';
@@ -93,7 +93,7 @@ $string['filenotuploadederror'] = 'El fitxer \'{$a}\' no s\'ha pogut carregar de
 $string['files'] = 'Fitxers';
 $string['filtername'] = 'Enllaços automàtics a pàgines wiki';
 $string['firstpagetitle'] = 'Nom de la pàgina principal';
-$string['firstpagetitle_help'] = 'Títol de la pàgina principal en la wiki';
+$string['firstpagetitle_help'] = 'Títol de la primera pàgina del wiki';
 $string['forceformat'] = 'Força el format';
 $string['forceformat_help'] = 'Si el format es força (caixa marcada), no hi ha opció d\'escollir un format quan s\'està editant una pàgina wiki';
 $string['format'] = 'Format';
@@ -110,13 +110,13 @@ $string['formatnwiki'] = 'Format Nwiki';
 $string['formatnwiki_help'] = 'Nwiki és Mediawiki - un llenguatge d\'etiquetes utilitzat al mòdul Nwiki.
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudators, per exemple [[Pàgina 2]].';
 $string['history'] = 'Historial';
-$string['history_help'] = 'El historial enllaça amb les versions prèvies de la pàgina.';
+$string['history_help'] = 'L\'historial enllaça amb les versions prèvies de la pàgina.';
 $string['html'] = 'HTML';
 $string['incorrectdeleteversions'] = 'Les versions de la pàgina per suprimir són incorrectes.';
 $string['individualpagedoesnotexist'] = 'Aquesta pàgina wiki no existeix';
 $string['insertcomment'] = 'Insereix comentari';
 $string['insertimage'] = 'Insereix una imatge...';
-$string['insertimage_help'] = 'Aquesta llista desplegable insereix una imatge a l\'editor wiki. Si us cal afegir més imatges a la wiki, si us plau utilitzeu la pestanya \'Fitxers\'.';
+$string['insertimage_help'] = 'Aquesta llista desplegable insereix una imatge a l\'editor wiki. Si us cal afegir més imatges al wiki, utilitzeu la pestanya «Fitxers».';
 $string['invalidlock'] = 'Aquesta pàgina està bloquejada per un altre usuari';
 $string['invalidparameters'] = 'S\'han proporcionat paràmetres invàlids.';
 $string['invalidsection'] = 'La secció no és vàlida';
@@ -134,17 +134,17 @@ $string['migrationfinishednowikis'] = 'La migració ha acabat, no s\'han migrat 
 $string['missingpages'] = 'Pàgines sense contingut';
 $string['modified'] = 'Modificat';
 $string['modulename'] = 'Wiki';
-$string['modulename_help'] = 'El mòdul d\'activitat wiki permet als participants afegir i editar una col·lecció de pàgines web. Una wiki pot ser de col·laboració, on tothom té la possibilitat d\'editar o individual, on cada un té la seva pròpia wiki que només ell/a poden editar.
+$string['modulename_help'] = 'El mòdul d\'activitat wiki permet als participants afegir i editar una col·lecció de pàgines web. Un wiki pot ser de col·laboració, on tothom té la possibilitat d\'editar, o individual, on cadascú té el seu propi wiki que només ell/a poden editar.
 
-Es manté una història de les versions anteriors de cada pàgina en el wiki, enumerant les edicions realitzades per cada participant.
+Es manté un historial de les versions anteriors de cada pàgina en el wiki, que enumera les edicions realitzades per cada participant.
 
-Les wiki tenen molts usos, com ara:
+Els wikis tenen molts usos, com ara:
 
 * Per a les notes de classe de grup o guies d\'estudi
-* Per als membres de la facultat per a planificar un esquema de treball o una reunió junts
-* Per als estudiants per a col·laborar i fer un llibre en línia, o la creació de continguts en un tema establert pel seu tutor
+* Perquè els membres de la facultat planifiquin un esquema de treball o una reunió junts
+* Perquè els estudiants col·laborin i facin un llibre en línia, o creïn continguts en un tema establert pel seu tutor
 * Per a la creació poètica, on cada participant escriu una línia o vers *
-Com un diari personal per a les notes dels exàmens o la revisió (utilitzant un wiki individual)';
+* Com un diari personal per a les notes dels exàmens o la revisió (utilitzant un wiki individual)';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navegació';
 $string['navigationfrom'] = 'Aquesta pàgina prove de';
@@ -162,7 +162,7 @@ $string['nocreatepermission'] = 'Us cal crear la pàgina de permisos';
 $string['noeditcommentpermission'] = 'Us cal editar els permisos dels comentaris';
 $string['noeditpermission'] = 'Us cal editar els permisos de la pàgina';
 $string['nofrompages'] = 'No hi ha enllaços cap aquesta pàgina';
-$string['nohistory'] = 'No hi ha historial per aquesta pàgina';
+$string['nohistory'] = 'No hi ha historial per a aquesta pàgina';
 $string['nomanagecommentpermission'] = 'Cal el permís per gestionar els comentaris';
 $string['nomanagewikipermission'] = 'Us cal gestionar els permisos del wiki';
 $string['noorphanedpages'] = 'No hi ha pàgines orfes';
@@ -172,7 +172,7 @@ $string['norating'] = 'Cap valoració';
 $string['nosearchresults'] = 'Cap resultat';
 $string['noteditblocks'] = 'Desactiva l\'edició de blocs';
 $string['notingroup'] = 'No en grup';
-$string['notmigrated'] = 'La wiki no ha sigut migrada encara. Si us plau poseu-vos en contacte amb l\'administrador.';
+$string['notmigrated'] = 'Aquest wiki encara no s\'ha migrat. Poseu-vos en contacte amb l\'administrador.';
 $string['notopages'] = 'Aquesta pàgina no n\'enllaça cap altra';
 $string['noupdatedpages'] = 'No hi ha pàgines actualitzades';
 $string['noviewcommentpermission'] = 'Us cal veure els permisos del comentaris';
@@ -190,13 +190,13 @@ $string['pageislocked'] = 'Algú està editant la pàgina ara. Proveu a editar-l
 $string['pagelist'] = 'Llista de pàgines';
 $string['pagelist_help'] = 'Llista de pàgines ordenades de forma alfabètica.';
 $string['page-mod-wiki-comments'] = 'Pàgina de comentaris del mòdul wiki';
-$string['page-mod-wiki-history'] = 'Pàgina d\'historial de la wiki';
-$string['page-mod-wiki-map'] = 'Pàgina mapa de la wiki';
+$string['page-mod-wiki-history'] = 'Pàgina d\'historial del wiki';
+$string['page-mod-wiki-map'] = 'Pàgina del mapa del wiki';
 $string['page-mod-wiki-view'] = 'Pàgina principal del mòdul wiki';
 $string['page-mod-wiki-x'] = 'Qualsevol pàgina del mòdul wiki';
 $string['pagename'] = 'Nom de la pàgina';
 $string['peerreview'] = 'Revisió entre iguals';
-$string['pluginadministration'] = 'Administració de la wiki';
+$string['pluginadministration'] = 'Administració del wiki';
 $string['pluginname'] = 'Wiki';
 $string['prettyprint'] = 'Versió fàcilment imprimible';
 $string['previewwarning'] = 'Aquesta és una vista prèvia. Els canvis no s\'han desat encara.';
@@ -240,7 +240,7 @@ $string['version'] = 'Versió';
 $string['versionerror'] = 'La versió ID no existeix';
 $string['versionnum'] = 'Versió #{$a}';
 $string['view'] = 'Mostra';
-$string['viewallhistory'] = 'Mostra tot el historial';
+$string['viewallhistory'] = 'Mostra tot l\'historial';
 $string['viewcurrent'] = 'Versió actual';
 $string['viewperpage'] = 'Mostra les versions {$a} de la pàgina';
 $string['viewversion'] = 'S\'està mostrant la versió #{$a} de la pàgina';
@@ -266,9 +266,9 @@ $string['wiki:managefiles'] = 'Gestiona els fitxers wiki';
 $string['wiki:managewiki'] = 'Gestiona els paràmetres del wiki';
 $string['wikimode'] = 'Mode wiki';
 $string['wikimodecollaborative'] = 'Wiki col·laborativa';
-$string['wikimode_help'] = 'El mode wiki determina de quina forma qualsevol pot editar la wiki - la wiki col·laborativa - o de quina forma qualsevol té la seva pròpia wiki la qual sols ell pot editar - una wiki individual.';
+$string['wikimode_help'] = 'El mode wiki determina de quina forma qualsevol persona pot editar el wiki —el wiki col·laboratiu— o de quina forma cadascú té el seu propi wiki, el qual sols ell pot editar —un wiki individual.';
 $string['wikimodeindividual'] = 'Wiki individual';
-$string['wikiname'] = 'Nom de la wiki';
+$string['wikiname'] = 'Nom del wiki';
 $string['wikinowikitext'] = 'No hi ha text wiki';
 $string['wikiorderedlist'] = 'Llista ordenada';
 $string['wiki:overridelock'] = 'Sobreescriu el blocatge de pàgines';
@@ -278,4 +278,4 @@ $string['wikiunorderedlist'] = 'Llista desordenada';
 $string['wiki:viewcomment'] = 'Mostra els comentaris de la pàgina';
 $string['wiki:viewpage'] = 'Mostra les pàgines wiki';
 $string['wrongversionlock'] = 'Un altre usuari ha editat aquesta pàgina wiki que esteu editant i per això el vostre contingut es obsolet.';
-$string['wrongversionsave'] = 'Un altre usuari ha creat una versió mentre estàveu editant i ha sobreescrit els seus canvis, comproveu el historial de la pàgina.';
+$string['wrongversionsave'] = 'Un altre usuari ha creat una versió mentre estàveu editant i ha sobreescrit els seus canvis, comproveu l\'historial de la pàgina.';

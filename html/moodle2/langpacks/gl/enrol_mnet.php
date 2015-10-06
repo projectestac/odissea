@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'Xa existe algunha instancia do engadido MNet para matriculación neste servidor. Soamente se permite unha instancia por servidor e/ou unha instancia para «Todos os servidores».';
 $string['instancename'] = 'Nome do método de matriculación';
 $string['instancename_help'] = 'Podes renomear opcionalmente esta instancia do método de matriculación MNet. Se deixa este campo baleiro, utilizarase o nome predeterminado da instancia, que contén o nome do servidor remoto e o rol asignado para os seus usuarios.';
+$string['mnet:config'] = 'Configurar as instancias de matriculación MNet';
 $string['mnet_enrol_description'] = 'Publicar este servizo para permitirlles aos administradores de {$a} inscribir os seus alumnos en cursos creados no seu servidor.<br/><ul>
 <li><em>Dependencia</em>: Tamén debe <strong>subscribirse</strong> ao servizo SSO (servizo fornecedor de identidade) en {$a}.</li>
 <li><em>Dependencia</em>: Tamén debe <strong>publicar</strong> o servizo SSO (servizo fornecedor de identidade) en {$a}.</li></ul><br/>Subscribirse a este servizo para poder matricular os seus alumnos nos cursos en {$a}.<br/><ul><li>

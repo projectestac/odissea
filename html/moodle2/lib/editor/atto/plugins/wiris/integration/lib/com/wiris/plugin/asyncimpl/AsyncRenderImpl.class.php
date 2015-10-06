@@ -85,7 +85,7 @@ class com_wiris_plugin_asyncimpl_AsyncRenderImpl implements com_wiris_plugin_asy
 					unset($key,$i1);
 				}
 			}
-			$h = new com_wiris_plugin_impl_HttpImpl($this->plugin->getImageServiceURL(null), null);
+			$h = new com_wiris_plugin_impl_HttpImpl($this->plugin->getImageServiceURL(null, true), null);
 			$h->setHeader("Content-Type", "application/x-www-form-urlencoded");
 			$this->plugin->addReferer($h);
 			$this->plugin->addProxy($h);

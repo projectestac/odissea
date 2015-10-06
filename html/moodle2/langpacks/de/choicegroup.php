@@ -93,8 +93,8 @@ $string['limitanswers'] = 'Obergrenzen für Wahl erlauben';
 $string['limitanswers_help'] = 'Diese Option erlaubt das Setzen von Obergrenzen für die einzelnen Wahloptionen. Sobald eine Obergrenze erreicht ist, kann sich niemand mehr für die jeweilige Wahloption entscheiden.
 
 Wenn die Obergrenzen deaktiviert sind, gibt es keine Beschränkung bei der Gruppenwahl.';
-$string['members/'] = 'Anzahl';
-$string['members/max'] = 'Anzahl / Maximalzahl';
+$string['members/'] = 'Gruppenmitglieder';
+$string['members/max'] = 'Gruppenmitglieder / Maximalzahl';
 $string['modulename'] = 'Gruppenwahl';
 $string['modulename_help'] = 'Mit der \'Gruppenwahl\' ist es möglich, dass sich Teilnehmer/innen selber in Gruppen innerhalb eines Kurses eintragen. Der Trainer wählt die Gruppen im Kurs aus, die als Wahloption verfügbar sind, außerdem die maximale Gruppengröße.';
 $string['modulenameplural'] = 'Gruppenwahlen';

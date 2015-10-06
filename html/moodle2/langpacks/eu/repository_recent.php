@@ -31,4 +31,4 @@ $string['notitle'] = 'Izenbururik gabe';
 $string['pluginname'] = 'Azken fitxategiak';
 $string['pluginname_help'] = 'Oraingo erabiltzaileak duela gutxi erabilitako fitxategiak';
 $string['recentfilesnumber'] = 'Azken fitxategi-kopurua';
-$string['recent:view'] = 'Azken fitxategien biltegi-plugina ikusi';
+$string['recent:view'] = 'Ikusi azken fitxategien biltegi-plugina';

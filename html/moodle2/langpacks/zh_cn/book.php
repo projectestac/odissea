@@ -41,6 +41,10 @@ $string['customtitles_help'] = '章标题通常显示目录中，并做为正文
 如果自定义标题复选框被勾选，就不会在正文上方显示章标题。可以在正文中输入一个不同的标题（可以比章标题长）。';
 $string['editingchapter'] = '编辑章节';
 $string['errorchapter'] = '读取图书章节发生错误。';
+$string['eventchaptercreated'] = '建立章节';
+$string['eventchapterdeleted'] = '删除章节';
+$string['eventchapterupdated'] = '更新章节';
+$string['eventchapterviewed'] = '查看章节';
 $string['modulename'] = '图书';
 $string['modulename_help'] = '通过图书模块，教师可以用类似书本的格式创建一份多页的资源，并且可以分章节和子章节。图书可以包含媒体文件和文本，可以有很长的篇幅，并且可以分节。
 

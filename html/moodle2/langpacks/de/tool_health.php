@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['healthnoproblemsfound'] = 'Es wurde kein Problem in der Serverumgebung gefunden';
+$string['healthnoproblemsfound'] = 'Keine Probleme gefunden!';
 $string['healthproblemsdetected'] = 'Serverumgebungsprobleme entdeckt!';
 $string['healthproblemsolution'] = 'Problemlösung für Serverumgebung';
 $string['healthreturntomain'] = 'Weiter';

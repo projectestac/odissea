@@ -5,6 +5,20 @@ class com_wiris_quizzes_test_Tester {
 		if(!php_Boot::$skip_constructor) {
 		$this->numCalls = 0;
 	}}
+	public function inArray($a, $b) {
+		$i = null;
+		{
+			$_g1 = 0; $_g = $b->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if(_hx_equal($b[$i1], $a)) {
+					return true;
+				}
+				unset($i1);
+			}
+		}
+		return false;
+	}
 	public function onServiceResponse($id, $res, $q, $qi) {
 		try {
 			if($id === "compound1") {
@@ -61,7 +75,23 @@ class com_wiris_quizzes_test_Tester {
 																				if($id === "floateval1") {
 																					$this->responseFloatEval1($res, $q, $qi);
 																				} else {
-																					throw new HException("Unknown test id.");
+																					if($id === "handwritingConstraints") {
+																						$this->responseHandwritingConstraints($res, $q, $qi);
+																					} else {
+																						if($id === "parameters") {
+																							$this->responseParameters($res, $q, $qi);
+																						} else {
+																							if($id === "unicode1") {
+																								$this->responseUnicode1($res, $q, $qi);
+																							} else {
+																								if($id === "unicode2") {
+																									$this->responseUnicode2($res, $q, $qi);
+																								} else {
+																									throw new HException("Unknown test id.");
+																								}
+																							}
+																						}
+																					}
 																				}
 																			}
 																		}
@@ -80,16 +110,75 @@ class com_wiris_quizzes_test_Tester {
 					}
 				}
 			}
-			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 712, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 845, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 			$this->endCall();
 		}catch(Exception $籩) {
 			$_ex_ = ($籩 instanceof HException) ? $籩->e : $籩;
 			$e = $_ex_;
 			{
-				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 715, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 848, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 				throw new HException($e);
 			}
 		}
+	}
+	public function responseUnicode2($s, $q, $qi) {
+		$qi->update($s);
+		if($qi->getAnswerGrade(0, 0, $q) !== 1.0) {
+			throw new HException("Failed test!");
+		}
+	}
+	public function responseUnicode1($s, $q, $qi) {
+		$b = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$qi->update($s);
+		$correctAnswer = $qi->expandVariablesMathML($q->getCorrectAnswer(0));
+		$studentAnswer = "<math><mi>a</mi><mo>&#x2009;</mo><mo>=</mo><mo>&nbsp;</mo><mi mathvariant=\"normal\">&#120128;</mi><mspace linebreak=\"newline\"/><mi>b</mi><mo>&#x2009;</mo><mo>=</mo><mo>&nbsp;</mo><mi mathvariant=\"normal\">&#8474;</mi></math>";
+		$r = $b->newEvalRequest($correctAnswer, $studentAnswer, $q, $qi);
+		$this->numCalls++;
+		$b->getQuizzesService()->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("unicode2", $this, $q, $qi));
+	}
+	public function testUnicode() {
+		$correctAnswer = "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi mathvariant=\"normal\">&#x1d540;</mi><mspace linebreak=\"newline\"/><mi>b</mi><mo>=</mo><mo>#</mo><mi>S</mi></math>";
+		$algorithm = "<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>=</mo><rationals/></math></input></command></group></library></session>";
+		$b = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$q = $b->newQuestion();
+		$q->setCorrectAnswer(0, $correctAnswer);
+		$q->setAlgorithm($algorithm);
+		$qq = _hx_deref(($q))->getImpl();
+		$qq->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE);
+		$qi = $b->newQuestionInstance($q);
+		$r = $b->newVariablesRequest($correctAnswer, $q, $qi);
+		$this->numCalls++;
+		$b->getQuizzesService()->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("unicode1", $this, $q, $qi));
+	}
+	public function responseParameters($res, $q, $qi) {
+		$qi->update($res);
+		$html = "<p>脡s cert o fals?</p><p>#s</p>";
+		$expected = "<p>脡s cert o fals?</p><p>El polinomi <math><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></math> t&#233; grau <math><mrow><mn>3</mn></mrow></math>.</p>";
+		$computed = $qi->expandVariables($html);
+		if(!($computed === $expected)) {
+			throw new HException("Failed test!");
+		}
+	}
+	public function testParameters() {
+		$str = "<question><wirisCasSession><![CDATA[<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>parameter</mi><mo>&nbsp;</mo><mi>sentence</mi><mo>=</mo><mo>&quot;</mo><mi>The</mi><mo>&nbsp;</mo><mi>polynomial</mi><mo>&nbsp;</mo><mo>#</mo><mn>1</mn><mo>&nbsp;</mo><mi>has</mi><mo>&nbsp;</mo><mi>degree</mi><mo>&nbsp;</mo><mo>#</mo><mn>2</mn><mo>.</mo><mo>&quot;</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>parameter</mi><mo>&nbsp;</mo><mi>p</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>1</mn></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi><mo>=</mo><mi>degree</mi><mo>(</mo><mi>p</mi><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>s</mi><mo>=</mo><mi>string_substitution</mi><mo>(</mo><mi>sentence</mi><mo>,</mo><mo>&nbsp;</mo><mi>p</mi><mo>,</mo><mo>&nbsp;</mo><mi>d</mi><mo>)</mo></math></input></command></group></library></session>]]></wirisCasSession></question>";
+		$html = "<p>脡s cert o fals?</p><p>#s</p>";
+		$b = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$q = $b->readQuestion($str);
+		$qi = $b->newQuestionInstance($q);
+		$qi->setParameter("sentence", "<ms>El polinomi #1 t茅 grau #2.</ms>");
+		$qi->setParameter("p", "x^3-x^2+2");
+		$req = $b->newVariablesRequest($html, $q, $qi);
+		$this->numCalls++;
+		$b->getQuizzesService()->executeAsync($req, new com_wiris_quizzes_test_TestIdServiceListener("parameters", $this, $q, $qi));
+	}
+	public function testDeprecated() {
+		$str = "<question><correctAnswers><correctAnswer type=\"mathml\"><![CDATA[<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>s</mi></math>]]></correctAnswer><correctAnswer id=\"1\"></correctAnswer></correctAnswers><assertions><assertion name=\"syntax_expression\"/><assertion name=\"equivalent_set\"/></assertions><options><option name=\"tolerance\">10^(-4)</option><option name=\"relative_tolerance\">false</option><option name=\"precision\">4</option><option name=\"implicit_times_operator\">false</option><option name=\"times_operator\">路</option><option name=\"imaginary_unit\">i</option></options><localData><data name=\"inputField\">inlineEditor</data><data name=\"gradeCompound\">and</data><data name=\"gradeCompoundDistribution\"></data><data name=\"casSession\"/></localData></question>";
+		$b = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$q = $b->readQuestion($str);
+		$qi = $b->newQuestionInstance(null);
+		$eqs = $b->newEvalRequest("{{x=0},{x=1}}", "{{x=1},{x=0}}", $q, $qi);
+		$this->numCalls++;
+		$b->getQuizzesService()->executeAsync($eqs, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, null, null));
 	}
 	public function responseBugs1($s, $q, $qi) {
 		$qi->update($s);
@@ -102,12 +191,20 @@ class com_wiris_quizzes_test_Tester {
 		$str = "<question><wirisCasSession><![CDATA[<session lang=\"fr\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\">library</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>al茅a</mi><mo>(</mo><mn>1</mn><mo>.</mo><mo>.</mo><mn>10</mn><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>=</mo><mi>al茅a</mi><mo>(</mo><mo>-</mo><mn>10</mn><mo>.</mo><mo>.</mo><mn>1</mn><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>=</mo><mi>max</mi><mo>(</mo><mi>b</mi><mo>,</mo><mn>0</mn><mo>)</mo></math></input></command></group></library><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"/></input></command></group></session>]]></wirisCasSession><correctAnswers><correctAnswer type=\"mathml\"><![CDATA[<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>a</mi></math>]]></correctAnswer></correctAnswers><assertions><assertion name=\"syntax_expression\"/><assertion name=\"equivalent_symbolic\"/></assertions><options><option name=\"tolerance\">10^(-4)</option><option name=\"relative_tolerance\">false</option><option name=\"precision\">4</option><option name=\"implicit_times_operator\">false</option><option name=\"times_operator\">路</option><option name=\"imaginary_unit\">i</option>\x09</options>\x09<localData><data name=\"inputField\">inlineEditor</data><data name=\"gradeCompound\">and</data><data name=\"gradeCompoundDistribution\"/><data name=\"casSession\"/></localData></question>";
 		$b = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
 		$q = $b->readQuestion($str);
-		$qi = $b->newQuestionInstance();
+		$qi = $b->newQuestionInstance(null);
 		$qi->setRandomSeed(12345);
 		$r = $b->newVariablesRequest("#a", $q, $qi);
 		$s = $b->getQuizzesService();
 		$this->numCalls++;
 		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("bugs1", $this, $q, $qi));
+		$q = $b->newQuestion();
+		$q->addAssertion("syntax_quantity", 0, 0, new _hx_array(array(null, null, null, null, "true", "", ".", "\\,,\\s", null)));
+		$r = $b->newEvalRequest("<math><mn>1234567</mn><mo>.</mo><mn>8</mn></math>", "<math><mn>1</mn><mo>,</mo><mn>234</mn><mo>,</mo><mn>567</mn><mo>.</mo><mn>8</mn></math>", $q, null);
+		$this->numCalls++;
+		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
+		$r = $b->newEvalRequest("<math><mn>1234567</mn><mo>.</mo><mn>8</mn></math>", "<math><mn>1</mn><mo>&#160;</mo><mn>234</mn><mo>&#160;</mo><mn>567</mn><mo>.</mo><mn>8</mn></math>", $q, null);
+		$this->numCalls++;
+		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
 	}
 	public function testCache() {
 		$qstr = "<question id=\"cachemiss\"><wirisCasSession><![CDATA[<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>random</mi><mo>(</mo><mn>1</mn><mo>.</mo><mo>.</mo><mn>10</mn><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>=</mo><mi>random</mi><mo>(</mo><mn>1</mn><mo>.</mo><mo>.</mo><mn>10</mn><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi></math></input></command></group></library></session>]]></wirisCasSession><correctAnswers><correctAnswer></correctAnswer></correctAnswers><assertions><assertion name=\"syntax_expression\"/><assertion name=\"equivalent_symbolic\"/></assertions><options><option name=\"tolerance\">10^(-4)</option><option name=\"relative_tolerance\">false</option><option name=\"precision\">4</option><option name=\"implicit_times_operator\">false</option><option name=\"times_operator\">路</option><option name=\"imaginary_unit\">i</option></options><localData><data name=\"inputField\">inlineEditor</data><data name=\"gradeCompound\">and</data><data name=\"gradeCompoundDistribution\"></data><data name=\"casSession\"/></localData></question>";
@@ -115,7 +212,7 @@ class com_wiris_quizzes_test_Tester {
 		$b = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
 		$q = $b->readQuestion($qstr);
 		$s = $b->getQuizzesService();
-		$qi = $b->newQuestionInstance();
+		$qi = $b->newQuestionInstance(null);
 		$s1 = Date::now()->getTime();
 		$qi->update($s->execute($b->newVariablesRequest($text, $q, $qi)));
 		$t1 = Date::now()->getTime() - $s1;
@@ -123,7 +220,7 @@ class com_wiris_quizzes_test_Tester {
 		if(_hx_index_of($str1, "#", null) !== -1 || _hx_index_of($str1, "<math", null) === -1) {
 			throw new HException("Failed test");
 		}
-		$qi = $b->newQuestionInstance();
+		$qi = $b->newQuestionInstance(null);
 		$s2 = Date::now()->getTime();
 		$qi->update($s->execute($b->newVariablesRequest($text, $q, $qi)));
 		$t2 = Date::now()->getTime() - $s2;
@@ -132,7 +229,7 @@ class com_wiris_quizzes_test_Tester {
 			throw new HException("Failed test");
 		}
 		if($t2 >= $t1) {
-			haxe_Log::trace("WARNING: Uncached question was faster than cached one! time miss: " . _hx_string_rec($t1, "") . "ms, time hit: " . _hx_string_rec($t2, "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 647, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCache")));
+			haxe_Log::trace("WARNING: Uncached question was faster than cached one! time miss: " . _hx_string_rec($t1, "") . "ms, time hit: " . _hx_string_rec($t2, "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 690, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCache")));
 		}
 	}
 	public function testFilter() {
@@ -151,11 +248,11 @@ class com_wiris_quizzes_test_Tester {
 		$q = $qb->newQuestion();
 		$qq = _hx_deref(($q))->getImpl();
 		$qq->wirisCasSession = $session;
-		$qi = $qb->newQuestionInstance();
+		$qi = $qb->newQuestionInstance(null);
 		$r = $qb->newVariablesRequest($text, $q, $qi);
 		$qi->update($qb->getQuizzesService()->execute($r));
 		$expanded = $qi->expandVariables($text);
-		haxe_Log::trace($expanded, _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 605, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testPerformance")));
+		haxe_Log::trace($expanded, _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 648, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testPerformance")));
 	}
 	public function responseTranslation1($s, $q) {
 		$fr = "<session lang=\"fr\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\">library</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>al茅a</mi><mo>(</mo><mn>1</mn><mo>.</mo><mo>.</mo><mn>10</mn><mo>)</mo></math></input></command></group></library></session>";
@@ -252,7 +349,7 @@ class com_wiris_quizzes_test_Tester {
 		$quizzes->executeAsync($vqr, new com_wiris_quizzes_test_TestIdServiceListener("randomquestion1", $this, $q, $qi));
 	}
 	public function responseTolerance1($s) {
-		$qi = com_wiris_quizzes_api_QuizzesBuilder::getInstance()->newQuestionInstance();
+		$qi = com_wiris_quizzes_api_QuizzesBuilder::getInstance()->newQuestionInstance(null);
 		$qi->update($s);
 		$correct = $qi->isAnswerCorrect(0);
 		if($correct) {
@@ -276,12 +373,21 @@ class com_wiris_quizzes_test_Tester {
 		$s->executeAsync($req, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
 	}
 	public function responseOpenQuestion1($s) {
-		$qi = com_wiris_quizzes_api_QuizzesBuilder::getInstance()->newQuestionInstance();
+		$qi = com_wiris_quizzes_api_QuizzesBuilder::getInstance()->newQuestionInstance(null);
 		$qi->update($s);
 		$correct = $qi->isAnswerCorrect(0);
 		if(!$correct) {
 			throw new HException("Failed test!");
 		}
+	}
+	public function testOpenQuestionHand() {
+		$correctAnswer = "1234";
+		$userAnswer = "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1234</mn></mrow><annotation encoding=\"application/json\">[[[47,74],[48,78],[50,84],[52,100],[53,119],[54,137],[55,153],[56,164],[58,169],[59,171],[60,172]],[[95,92],[96,92],[96,91],[96,90],[98,89],[101,87],[109,83],[129,77],[140,75],[147,74],[150,74],[151,75],[152,82],[152,94],[149,112],[140,130],[132,143],[128,150],[127,154],[128,154],[129,154],[130,154],[133,154],[143,153],[157,152],[170,152],[178,152],[181,152],[181,151]],[[204,85],[204,84],[206,83],[208,81],[210,81],[218,78],[231,76],[237,76],[241,76],[244,78],[246,81],[248,87],[248,94],[248,104],[242,113],[235,120],[230,123],[228,123],[229,123],[231,123],[234,123],[243,123],[252,124],[259,125],[266,130],[270,134],[272,140],[272,149],[268,153],[262,156],[255,157],[249,157],[242,157],[237,155],[234,153],[233,152],[233,151]],[[354,74],[353,75],[351,79],[346,82],[330,98],[319,110],[309,122],[302,130],[300,135],[299,136],[300,136],[302,136],[306,136],[317,136],[333,136],[365,137],[383,139],[390,141],[391,141]],[[366,165],[366,163],[366,159],[366,147],[366,122],[366,114],[361,62],[361,58],[360,50],[360,48]]]</annotation></semantics></math>";
+		$rb = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$eqs = $rb->newEvalRequest($correctAnswer, $userAnswer, null, null);
+		$quizzes = $rb->getQuizzesService();
+		$this->numCalls++;
+		$quizzes->executeAsync($eqs, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, null, null));
 	}
 	public function testOpenQuestion() {
 		$correctAnswer = "1+1";
@@ -316,7 +422,7 @@ class com_wiris_quizzes_test_Tester {
 	public function testFloatEval() {
 		$rb = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
 		$q = $rb->newQuestion();
-		$qi = $rb->newQuestionInstance();
+		$qi = $rb->newQuestionInstance(null);
 		$q->setAlgorithm("<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>1000000</mn><mo>.</mo></math></input></command></group></library></session>");
 		$q->addAssertion(com_wiris_quizzes_impl_Assertion::$SYNTAX_QUANTITY, 0, 0, null);
 		$q->setOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, ",");
@@ -343,7 +449,7 @@ class com_wiris_quizzes_test_Tester {
 		$q->setCorrectAnswer(1, $correctAnswer2);
 		$q->addAssertion(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC, 0, 0, null);
 		$q->addAssertion(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_ALL, 1, 0, null);
-		$qi = $rb->newQuestionInstance();
+		$qi = $rb->newQuestionInstance(null);
 		$qi->setStudentAnswer(0, "++++");
 		$eqs = $rb->newEvalRequest(null, null, $q, $qi);
 		$quizzes = $rb->getQuizzesService();
@@ -380,7 +486,7 @@ class com_wiris_quizzes_test_Tester {
 		$rb = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
 		$q = $rb->newQuestion();
 		$q->setAlgorithm($algorithm);
-		$qi = $rb->newQuestionInstance();
+		$qi = $rb->newQuestionInstance(null);
 		$r = $rb->newVariablesRequest($text, $q, $qi);
 		$s = $rb->getQuizzesService();
 		$this->numCalls++;
@@ -427,7 +533,7 @@ class com_wiris_quizzes_test_Tester {
 		$q = new com_wiris_quizzes_impl_QuestionImpl();
 		$q->wirisCasSession = $algorithm;
 		$rb = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
-		$qi = $rb->newQuestionInstance();
+		$qi = $rb->newQuestionInstance(null);
 		$r = $rb->newVariablesRequest($text, $q, $qi);
 		$s = $rb->getQuizzesService();
 		$this->numCalls++;
@@ -476,7 +582,7 @@ class com_wiris_quizzes_test_Tester {
 				unset($i1);
 			}
 		}
-		$qi = $builder->newQuestionInstance();
+		$qi = $builder->newQuestionInstance(null);
 		$r = $builder->newVariablesRequest($text, $q, null);
 		$this->numCalls++;
 		$builder->getQuizzesService()->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("multianswer", $this, $q, $qi));
@@ -551,7 +657,7 @@ class com_wiris_quizzes_test_Tester {
 		$q = $builder->newQuestion();
 		$qq = _hx_deref(($q))->getImpl();
 		$qq->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE);
-		$qi = $builder->newQuestionInstance();
+		$qi = $builder->newQuestionInstance(null);
 		$r = $builder->newEvalMultipleAnswersRequest(new _hx_array(array($correctAnswer)), new _hx_array(array($userCorrectAnswer, $userIncorectAnswer, $userIncorrectAnswer2, $userCorrectAnswer2)), $q, $qi);
 		$this->numCalls++;
 		$builder->getQuizzesService()->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("compound1", $this, $q, $qi));
@@ -566,18 +672,44 @@ class com_wiris_quizzes_test_Tester {
 		$this->numCalls++;
 		$builder->getQuizzesService()->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("compound3", $this, $q, $qi));
 	}
+	public function responseHandwritingConstraints($s, $q, $qi) {
+		$qi->update($s);
+		$json = com_wiris_util_json_JSon::decode(_hx_deref(($qi))->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS));
+		$symbols = $json->get("symbols");
+		if($this->inArray("s", $symbols) || !$this->inArray("z", $symbols) || !$this->inArray("2", $symbols) || $this->inArray("X", $symbols) || $this->inArray("Y", $symbols) || !$this->inArray("cos", $symbols)) {
+			throw new HException("Failed test!");
+		}
+	}
+	public function testHandwritingConstraints() {
+		$question = "<question><wirisCasSession><![CDATA[<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>=</mo><mi>cos</mi><mo>(</mo><mi>y</mi><mo>)</mo></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mo>=</mo><mn>2</mn><mo>*</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo>*</mo><mi>y</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>*</mo><mi>z</mi></math></input></command></group></library><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"/></input></command></group></session>]]></wirisCasSession><correctAnswers><correctAnswer type=\"mathml\"><![CDATA[<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>a</mi><mo>-</mo><mn>5</mn></math>]]></correctAnswer></correctAnswers><assertions><assertion name=\"syntax_expression\"/><assertion name=\"equivalent_symbolic\"/></assertions><options><option name=\"tolerance\">10^(-3)</option><option name=\"relative_tolerance\">true</option><option name=\"precision\">4</option><option name=\"times_operator\">路</option><option name=\"implicit_times_operator\">false</option><option name=\"imaginary_unit\">i</option></options><localData><data name=\"inputField\">inlineHand</data><data name=\"gradeCompound\">and</data><data name=\"gradeCompoundDistribution\"></data><data name=\"casSession\"/></localData></question>";
+		$qb = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$q = $qb->readQuestion($question);
+		$qi = $qb->newQuestionInstance($q);
+		$json = com_wiris_util_json_JSon::decode($qi->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS));
+		$symbols = $json->get("symbols");
+		if($this->inArray("s", $symbols) || !$this->inArray("a", $symbols) || $this->inArray("cos", $symbols)) {
+			throw new HException("Failed test!");
+		}
+		$r = $qb->newVariablesRequest("#a #b #c", $q, $qi);
+		$this->numCalls++;
+		$qb->getQuizzesService()->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("handwritingConstraints", $this, $q, $qi));
+	}
 	public function run() {
 		$g = new com_wiris_quizzes_impl_HTMLGui("en");
 		$c = new com_wiris_quizzes_impl_HTMLGuiConfig("");
-		haxe_Log::trace("Starting generic integration test...", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 52, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
+		haxe_Log::trace("Starting generic integration test...", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 54, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
 		$this->numCalls++;
 		$this->start = Date::now();
 		$h = new com_wiris_quizzes_impl_HTMLTools();
 		$h->unitTest();
-		haxe_Log::trace("HTML unit test OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 59, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
+		haxe_Log::trace("HTML unit test OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 61, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
+		$this->testUnicode();
+		$this->testParameters();
+		$this->testHandwritingConstraints();
 		$this->testMultiAnswer();
 		$this->testBugs();
 		$this->testOpenQuestion();
+		$this->testOpenQuestionHand();
 		$this->testAnyAnswer();
 		if(!(com_wiris_settings_PlatformSettings::$IS_FLASH || com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT)) {
 			$this->testCache();
@@ -594,6 +726,7 @@ class com_wiris_quizzes_test_Tester {
 		$this->testBugs();
 		$this->testFloatEval();
 		$this->testAssertion();
+		$this->testDeprecated();
 		$this->testLang();
 		$this->endCall();
 	}
@@ -601,7 +734,7 @@ class com_wiris_quizzes_test_Tester {
 		$this->numCalls--;
 		if($this->numCalls <= 0) {
 			$end = Date::now();
-			haxe_Log::trace("Successful test!. Time: " . _hx_string_rec(($end->getTime() - $this->start->getTime()), "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 41, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "endCall")));
+			haxe_Log::trace("Successful test!. Time: " . _hx_string_rec(($end->getTime() - $this->start->getTime()), "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 43, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "endCall")));
 		}
 	}
 	public $numCalls;

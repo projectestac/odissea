@@ -58,6 +58,11 @@ class auth_plugin_db extends auth_plugin_base {
     function user_login($username, $password) {
         global $CFG, $DB;
 
+        if ($this->is_configured() === false) {
+            debugging(get_string('auth_notconfigured', 'auth', $this->authtype));
+            return false;
+        }
+
         $extusername = core_text::convert($username, 'utf-8', $this->config->extencoding);
         $extpassword = core_text::convert($password, 'utf-8', $this->config->extencoding);
 
@@ -124,7 +129,7 @@ class auth_plugin_db extends auth_plugin_base {
             // 2013.07.02 @aginard
             if (is_agora()) {
                 global $school_info;
-                if (($this->config->passtype != 'plaintext') && array_key_exists('id_intranet', $school_info)) {
+                if (($this->config->passtype != 'plaintext') && isset($school_info['id_intranet'])) {
                     $extpassword = '1$$' . $extpassword;
                 }
             }
@@ -157,8 +162,12 @@ class auth_plugin_db extends auth_plugin_base {
      * Connect to external database.
      *
      * @return ADOConnection
+     * @throws moodle_exception
      */
     function db_init() {
+        if ($this->is_configured() === false) {
+            throw new moodle_exception('auth_dbcantconnect', 'auth_db');
+        }
 
         // XTEC ************ AFEGIT - Add automatically external db information if the school has intranet
         // 2012.08.28 @sarjona
@@ -167,7 +176,7 @@ class auth_plugin_db extends auth_plugin_base {
 
             global $agora, $school_info;
 
-            if (array_key_exists('id_intranet', $school_info)) {
+            if (isset($school_info['id_intranet'])) {
                 $this->config->type = $agora['intranet']['dbtype'];
                 $this->config->host = $school_info['dbhost_intranet'];
                 $this->config->user = $agora['intranet']['username'];
@@ -233,18 +242,21 @@ class auth_plugin_db extends auth_plugin_base {
         if ($selectfields) {
             $select = array();
             foreach ($selectfields as $localname=>$externalname) {
-                $select[] = "$externalname AS $localname";
+                $select[] = "$externalname";
             }
             $select = implode(', ', $select);
             $sql = "SELECT $select
                       FROM {$this->config->table}
                      WHERE {$this->config->fielduser} = '".$this->ext_addslashes($extusername)."'";
+
             if ($rs = $authdb->Execute($sql)) {
                 if (!$rs->EOF) {
-                    $fields_obj = $rs->FetchObj();
-                    $fields_obj = (object)array_change_key_case((array)$fields_obj , CASE_LOWER);
-                    foreach ($selectfields as $localname=>$externalname) {
-                        $result[$localname] = core_text::convert($fields_obj->{$localname}, $this->config->extencoding, 'utf-8');
+                    $fields = $rs->FetchRow();
+                    // Convert the associative array to an array of its values so we don't have to worry about the case of its keys.
+                    $fields = array_values($fields);
+                    foreach (array_keys($selectfields) as $index => $localname) {
+                        $value = $fields[$index];
+                        $result[$localname] = core_text::convert($value, $this->config->extencoding, 'utf-8');
                      }
                  }
                  $rs->Close();
@@ -503,15 +515,15 @@ class auth_plugin_db extends auth_plugin_base {
         $authdb = $this->db_init();
 
         // Fetch userlist.
-        $rs = $authdb->Execute("SELECT {$this->config->fielduser} AS username
+        $rs = $authdb->Execute("SELECT {$this->config->fielduser}
                                   FROM {$this->config->table} ");
 
         if (!$rs) {
             print_error('auth_dbcantconnect','auth_db');
         } else if (!$rs->EOF) {
             while ($rec = $rs->FetchRow()) {
-                $rec = (object)array_change_key_case((array)$rec , CASE_LOWER);
-                array_push($result, $rec->username);
+                $rec = array_change_key_case((array)$rec, CASE_LOWER);
+                array_push($result, $rec[strtolower($this->config->fielduser)]);
             }
         }
 
@@ -681,6 +693,18 @@ class auth_plugin_db extends auth_plugin_base {
             return true;
         }
         return ($this->config->passtype === 'internal');
+    }
+
+    /**
+     * Returns false if this plugin is enabled but not configured.
+     *
+     * @return bool
+     */
+    public function is_configured() {
+        if (!empty($this->config->type)) {
+            return true;
+        }
+        return false;
     }
 
     /**

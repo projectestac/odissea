@@ -45,6 +45,7 @@ $string['auth_invalidnewemailkey'] = 'Error: Si está intentando confirmar un ca
 $string['authloginviaemail'] = 'Permitir acceso por email';
 $string['authloginviaemail_desc'] = 'Permitir a los usuarios acceder al sitio indistintamente con su nombre de usuario o con su  dirección de correo (siempre que sea única).';
 $string['auth_multiplehosts'] = 'Es posible especificar múltiples servidores (por ej. servidor1.com;servidor2.com;servidor3.com';
+$string['auth_notconfigured'] = 'El método de autenticación {$a} no está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Ha hecho más intentos de los permitidos para actualizar su dirección email. Su solicitud de actualización ha sido cancelada.';
 $string['auth_passwordisexpired'] = 'Su contraseña ha caducado ¿Desea cambiar su contraseña ahora?';
 $string['auth_passwordwillexpire'] = 'Su contraseña caducará en {$a} días ¿Desea cambiar su contraseña ahora?';

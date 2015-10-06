@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Engadir máis escollas';
+$string['allowmultiple'] = 'Permitir que se seleccione máis dunha escolla';
 $string['allowupdate'] = 'Permitir actualizar a escolla';
 $string['answered'] = 'Respondido';
 $string['atleastoneoption'] = 'Cómpre que forneza cando menos unha resposta posíbel.';
+$string['cannotsubmit'] = 'Xurdiu un problema ao enviar a súa escolla. Tenteo de novo.';
 $string['choice'] = 'Escolla';
 $string['choice:addinstance'] = 'Engadir unha nova escolla';
 $string['choice:choose'] = 'Rexistrar unha escolla';
@@ -54,6 +56,9 @@ $string['description'] = 'Descrición';
 $string['displayhorizontal'] = 'Mostrar horizontalmente';
 $string['displaymode'] = 'Mostrar Modo';
 $string['displayvertical'] = 'Mostrar verticalmente';
+$string['eventanswercreated'] = 'Escolla feita';
+$string['eventanswerupdated'] = 'Escolla actualizada';
+$string['eventreportviewed'] = 'Informe de escolla visto';
 $string['expired'] = 'Desculpe, esta actividade pechouse o {$a} e xa non está dispoñíbel';
 $string['full'] = '(Cheo)';
 $string['havetologin'] = 'Ten que rexistrarse antes de poder enviar a súa escolla';
@@ -76,6 +81,7 @@ Pódese utilizar a actividade de escolla
 $string['modulename_link'] = 'mod/escolla/vista';
 $string['modulenameplural'] = 'Escollas';
 $string['moveselectedusersto'] = 'Mover os usuarios seleccionados a...';
+$string['multiplenotallowederror'] = 'Nesta escolla non están permitidas respostas múltiples';
 $string['mustchooseone'] = 'Debe escoller unha resposta antes de gardar.  Non se gardou nada.';
 $string['noguestchoose'] = 'Aos convidados non lles está permitido facer escollas.';
 $string['noresultsviewable'] = 'Os resultados non están actualmente visibles.';

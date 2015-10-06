@@ -37,6 +37,7 @@ $string['clientshowchannellinklabel'] = 'Deberá mostrarse unha ligazón para o 
 $string['clientshowimagelabel'] = 'Mostrar a imaxe do canal se está dispoñible:';
 $string['configblock'] = 'Configurar este bloque';
 $string['couldnotfindfeed'] = 'Non se pode encontrar unha fonte con id';
+$string['couldnotfindloadrssfeed'] = 'Non é posíbel atopar ou cargar a fonte RSS.';
 $string['customtitlelabel'] = 'Título personalizado (Deixe en branco se desexa utilizar un título fornecido pola fonte):';
 $string['deletefeedconfirm'] = 'Está certo/a de que desexa eliminar esta fonte?';
 $string['disabledrssfeeds'] = 'As fontes RSS están desactivadas';

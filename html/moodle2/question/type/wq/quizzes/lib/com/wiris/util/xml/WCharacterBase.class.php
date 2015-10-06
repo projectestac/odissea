@@ -11,9 +11,12 @@ class com_wiris_util_xml_WCharacterBase {
 	static $ROOT_VERTICAL_LINE = 61761;
 	static $ROUND_BRACKET_LEFT = 40;
 	static $ROUND_BRACKET_RIGHT = 41;
+	static $COMMA = 44;
+	static $FULL_STOP = 46;
 	static $SQUARE_BRACKET_LEFT = 91;
 	static $SQUARE_BRACKET_RIGHT = 93;
 	static $CIRCUMFLEX_ACCENT = 94;
+	static $LOW_LINE = 95;
 	static $CURLY_BRACKET_LEFT = 123;
 	static $VERTICAL_BAR = 124;
 	static $CURLY_BRACKET_RIGHT = 125;
@@ -213,7 +216,7 @@ class com_wiris_util_xml_WCharacterBase {
 		if(1552 <= $c && $c <= 8188) {
 			return true;
 		}
-		if($c === 8450 || $c === 8461 || $c === 8469 || $c === 8472 || $c === 8473 || $c === 8474 || $c === 8477 || $c === 8484) {
+		if($c === 8450 || $c === 8461 || $c === 8469 || $c === 8472 || $c === 8473 || $c === 8474 || $c === 8477 || $c === 8484 || $c === 120128) {
 			return true;
 		}
 		if(com_wiris_util_xml_WCharacterBase::isChinese($c)) {

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_shib_auth_method'] = '認証方法名';
 $string['auth_shib_auth_method_description'] = 'Shibboleth認証方法に関して、あなたのユーザに知られている名称を入力してください。あなたのシボレス連盟の名称を使用することもできます 例) <tt>SWITCHaai Login</tt>または<tt>InCommon Login</tt>または同様の名称。';
-$string['auth_shibbolethdescription'] = 'この方法を使用することで、<a href="http://shibboleth.internet2.edu/">Shibboleth</a>を使用して、ユーザが作成および認証されます。<br />あなたが使用しているMoodleにShibbolethを設定するには、<a href="../auth/shibboleth/README.txt">README</a> をご覧ください。';
+$string['auth_shibbolethdescription'] = 'この方法を使用することにより、<a href="http://shibboleth.internet2.edu/">Shibboleth</a>を使用して、ユーザが作成および認証されます。<br />あなたが使用しているMoodleにShibbolethを設定するには<a href="../auth/shibboleth/README.txt">README</a> をご覧ください。';
 $string['auth_shibboleth_errormsg'] = 'あなたがメンバーになっている組織を選択してください!';
 $string['auth_shibboleth_login'] = 'Shibbolethログイン';
 $string['auth_shibboleth_login_long'] = 'Shibboleth経由でMoodleにログインする';

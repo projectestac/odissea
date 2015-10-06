@@ -107,7 +107,7 @@ $string['email_notification'] = '送信通知を有効にする';
 $string['email_notification_help'] = '有効にした場合、フィードバック送信に関して、教師はメール通知されます。';
 $string['emailteachermail'] = '{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。
 
-下記ページにて内容を閲覧できます:
+あなたは下記ページにて内容を閲覧できます:
 
 {$a->url}';
 $string['emailteachermailhtml'] = '<p>{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。</p>
@@ -147,7 +147,7 @@ $string['insufficient_responses'] = '不十分な回答';
 $string['insufficient_responses_for_this_group'] = 'このグループの回答数は、十分ではありません。';
 $string['insufficient_responses_help'] = 'このグループの回答が不足しています。
 
-フィードバックを匿名にするには、最低2つの回答が必要です。';
+フィードバックを匿名にするには最低2つの回答が必要です。';
 $string['item_label'] = 'ラベル';
 $string['item_name'] = '質問';
 $string['label'] = 'ラベル';

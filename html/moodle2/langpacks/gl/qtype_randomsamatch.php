@@ -25,5 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['insufficientoptions'] = 'Non hai opcións abondo que escoller para esta pregunta; polo tanto, non está dispoñíbel nesta proba. Informe ao seu profesor.';
 $string['nosaincategory'] = 'Non hai preguntas de resposta breve na categoría {$a->catname} que escolleu. Escolla unha categoría diferente, faga algunhas preguntas nesta categoría.';
 $string['notenoughsaincategory'] = 'Hai só {$a->nosaquestions} preguntas de resposta breve na categoría {$a->catname} que escolleu. Escolla unha categoría diferente, faga algunhas preguntas máis nesa mesma categoría ou reduza a cantidade de preguntas seleccionadas.';
+$string['pluginname'] = 'Emparellamento ao chou de respostas curtas';
+$string['pluginnameadding'] = 'Engadir unha pregunta do tipo Emparellamento ao chou de respostas curtas';
+$string['pluginnameediting'] = 'Editar unha pregunta do tipo Emparellamento ao chou de respostas curtas';
+$string['pluginname_help'] = 'Desde a perspectiva do alumno, é moi semellante a unha pregunta de emparellamento. A diferenza é que a lista de nomes ou enunciados (preguntas) para o emparellamento son seleccionados ao chou de entre as preguntas de resposta curta da categoría escollida. Deben ter un número suficiente de preguntas de resposta curta sen usar na categoría, do contrario amosarase unha mensaxe de erro.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
+$string['pluginnamesummary'] = 'Como unha pregunta de emparellamento, mais creada ao chou a partires das preguntas de resposta curta dunha categoría en concreto.';
+$string['randomsamatch'] = 'Emparellamento ao chou de respostas curtas';
+$string['randomsamatchintro'] = 'Para cada unha das seguintes preguntas, escolla a resposta que corresponda do menú.';
+$string['randomsamatchnumber'] = 'Número de preguntas a escoller';
+$string['subcats'] = 'Incluír subcategorías';
+$string['subcats_help'] = 'Se está marcado, as preguntas escolleranse tamén das subcategorías.';

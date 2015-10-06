@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = '更多选项';
+$string['allowmultiple'] = '允许多选';
 $string['allowupdate'] = '是否允许修改投票';
 $string['answered'] = '已答';
 $string['atleastoneoption'] = '您至少要提供一个可能的答案';
+$string['cannotsubmit'] = '对不起，你的提交有误，请再试一次。';
 $string['choice'] = '投票项 {$a}';
 $string['choice:addinstance'] = '添加新投票';
 $string['choice:choose'] = '记录投票';

@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = '从CSV导入成绩';
+$string['pluginname'] = '粘贴自电子表格';
+$string['userdata'] = '有助于将资料复制到此表单';
+$string['userdata_help'] = '你可以从电子表格中将分数复制并粘贴到此成绩簿里。这个电子表格有一栏包含用户的识别资料——可以是用户名称、学号或电子邮箱。导入的每一栏要有栏目标题。';

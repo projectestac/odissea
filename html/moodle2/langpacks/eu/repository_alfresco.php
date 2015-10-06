@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alfresco_url'] = 'Alfresco-ren URLa';
-$string['alfrescourltext'] = 'Afresco-ren API URLak honelakoa behar luke: http://zuregunea.com/alfresco/api';
-$string['alfresco:view'] = 'Alfresco biltegia ikusi';
+$string['alfrescourltext'] = 'Afresco-ren API URLak honelakoa behar luke: http://zuregunea.com/alfresco/api edo or http://zuregunea.com/alfresco/soapapi Alfresco 4.2.d-rako edo goragokoetarako.';
+$string['alfresco:view'] = 'Ikusi Alfresco biltegia';
 $string['configplugin'] = 'Alfresco-ren ezarpenak';
 $string['notitle'] = 'Izenbururik gabe';
 $string['password'] = 'Pasahitza';

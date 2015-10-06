@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configlog'] = 'Cambios de configuración';
 $string['oldvalue'] = 'Valor orixinal';
 $string['plugin'] = 'Engadido';
+$string['pluginname'] = 'Cambios de configuración';
 $string['setting'] = 'Axuste';
 $string['timemodified'] = 'Data';
 $string['value'] = 'Novo valor';

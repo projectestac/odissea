@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Azpiindizea';
+$string['pluginname'] = 'Goi-indizea';
