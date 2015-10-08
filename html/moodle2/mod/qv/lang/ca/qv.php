@@ -38,6 +38,7 @@ $string['availabledate'] = 'Disponible des de';
 $string['closebeforeopen'] = 'No s\'ha pogut actualitzar el QV. Heu especificat una data de venciment anterior a la data d\'apertura.';
 $string['contentheader'] = 'Contingut';
 $string['delivers'] = 'Lliuraments';
+$string['deleteallattempts'] = 'Suprimeix tots els intents';
 $string['displayembed'] = 'Incrustat';
 $string['displayinpopup'] = 'En una finestra emergent';
 $string['displayselect'] = 'Mostra';

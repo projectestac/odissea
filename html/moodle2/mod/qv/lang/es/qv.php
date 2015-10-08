@@ -38,6 +38,7 @@ $string['availabledate'] = 'Disponible desde';
 $string['closebeforeopen'] = 'No se ha podido subir el QV. Se ha especificado una fecha de entrega anterior a la fecha de apertura.';
 $string['contentheader'] = 'Contenido';
 $string['delivers'] = 'Entregas';
+$string['deleteallattempts'] = 'Eliminar todos los intentos';
 $string['displayembed'] = 'Incrustar';
 $string['displayinpopup'] = 'En ventana emergente';
 $string['displayselect'] = 'Mostrar';

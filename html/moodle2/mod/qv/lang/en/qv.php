@@ -37,6 +37,7 @@ $string['assessmentskin'] = 'Skin';
 $string['availabledate'] = 'Available from';
 $string['closebeforeopen'] = 'Could not update the QV. You have specified a due date before the available date.';
 $string['contentheader'] = 'Content';
+$string['deleteallattempts'] = 'Delete all attempts';
 $string['delivers'] = 'Deliveries';
 $string['displayembed'] = 'Embed';
 $string['displayinpopup'] = 'In pop-up';

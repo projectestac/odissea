@@ -662,7 +662,7 @@ function jclic_reset_gradebook($courseid) {
 function jclic_reset_userdata($data) {
     global $CFG, $DB;
 
-    $componentstr = get_string('modulenameplural', 'choice');
+    $componentstr = get_string('modulenameplural', 'jclic');
     $status = array();
 
     if (!empty($data->reset_jclic_deleteallsessions)) {
