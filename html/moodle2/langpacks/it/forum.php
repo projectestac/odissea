@@ -35,7 +35,7 @@ $string['allowdiscussions'] = 'Ad un {$a} è consentito di intervenire in questo
 $string['allowsallsubscribe'] = 'Questo forum è a sottoscrizione facoltativa';
 $string['allowsdiscussions'] = 'Questo forum consente a tutti i partecipati di iniziare una nuova discussione.';
 $string['allsubscribe'] = 'Sottoscrivi tutti i forum';
-$string['allunsubscribe'] = 'Rimuoviti da tutti i forum';
+$string['allunsubscribe'] = 'Revoca la sottoscrizione da tutti i forum';
 $string['alreadyfirstpost'] = 'Questo è già il primo intervento della discussione';
 $string['anyfile'] = 'Qualsiasi file';
 $string['areaattachment'] = 'Allegati';
@@ -76,13 +76,13 @@ $string['cannotreply'] = 'Non puoi rispondere a questo intervento';
 $string['cannotsplit'] = 'Le discussioni non possono essere spostate da questo forum';
 $string['cannotsubscribe'] = 'Spiacente, devi appartenere ad un gruppo per sottoscrivere.';
 $string['cannottrack'] = 'Non è stato possibile interrompere la visualizzazione dei messaggi non letti';
-$string['cannotunsubscribe'] = 'Non è stato possibile rimuoverti dal  forum';
+$string['cannotunsubscribe'] = 'Non è stato possibile revocare la sottoscrizione dal  forum';
 $string['cannotupdatepost'] = 'Non puoi modificare questo intervento';
 $string['cannotviewpostyet'] = 'Non puoi leggere le domande degli altri studenti in questa discussione perché non hai ancora effettuato interventi';
 $string['cannotviewusersposts'] = 'Non ci sono interventi di questo utente che tu possa visualizzare.';
 $string['cleanreadtime'] = 'Ora per spuntare come letti i messaggi vecchi';
 $string['clicktosubscribe'] = 'Non hai sottoscritto questa discussione, Click per sottoscriverla.';
-$string['clicktounsubscribe'] = 'Hai sottoscritto la discussione. Click per rimuovere la sottoscrizione.';
+$string['clicktounsubscribe'] = 'Hai sottoscritto la discussione. Click per revocare la sottoscrizione.';
 $string['completiondiscussions'] = 'L\'utente deve iniziare il seguente numero di discussioni:';
 $string['completiondiscussionsgroup'] = 'Numero minimo discussioni';
 $string['completiondiscussionshelp'] = 'è necessario un numero minimo di discussioni';
@@ -109,8 +109,8 @@ $string['configtrackreadposts'] = 'Impostare a \'Si\' se si desidera tracciare l
 $string['configusermarksread'] = 'Con "Si", l\'utente deve spuntare manualmente un intervento come "letto". Con "No", l\'intervento viene automaticamente considerato "letto" all\'atto della visualizzazione.';
 $string['confirmsubscribe'] = 'Vuoi sottoscrivere il forum \'{$a}\'?';
 $string['confirmsubscribediscussion'] = 'Sei sicuro di sottoscrivere la discussione \'{$a->discussion}\' del forum  \'{$a->forum}\'?';
-$string['confirmunsubscribe'] = 'Vuoi eliminare la sottoscrizione del forum \'{$a}\'?';
-$string['confirmunsubscribediscussion'] = 'Sei sicuro di eliminare la sottoscrizione della discussione \'{$a->discussion}\' del forum  \'{$a->forum}\'?';
+$string['confirmunsubscribe'] = 'Vuoi revocare la sottoscrizione del forum \'{$a}\'?';
+$string['confirmunsubscribediscussion'] = 'Sei sicuro di revocare la sottoscrizione della discussione \'{$a->discussion}\' del forum  \'{$a->forum}\'?';
 $string['couldnotadd'] = 'Non è possibile aggiungere l\'intervento a causa di un errore sconosciuto.';
 $string['couldnotdeletereplies'] = 'Spiacente, l\'intervento non può essere eliminato in quanto altri utenti hanno già risposto ad esso.';
 $string['couldnotupdate'] = 'Non è possibile aggiornare l\'intervento a causa di un errore sconosciuto.';
@@ -208,7 +208,7 @@ $string['exportdiscussion'] = 'Esporta l\'intera discussione nel portfolio';
 $string['forcedreadtracking'] = 'Consenti evidenziamento messaggi forzato';
 $string['forcedreadtracking_desc'] = 'I forum potranno essere impostati per forzare l\'evidenziamento dei messaggi non letti. Può avere un impatto sulle prestazioni, in modo particolare in corsi con molti forum particolarmente attivi. Se l\'impostazione non è attiva, i forum già impostati con l\'evidenziamento dei messaggi forzato saranno impostati con l\'evidenziamento a scelta.';
 $string['forcesubscribed'] = 'Questo forum è a sottoscrizione obbligatoria';
-$string['forcesubscribed_help'] = 'La configurazione di questo forum non consente la rimozione delle sottoscrizioni delle discussioni.';
+$string['forcesubscribed_help'] = 'La configurazione di questo forum non consente la revoca  delle sottoscrizioni delle discussioni.';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Aggiungere forum';
 $string['forum:addnews'] = 'Aggiungere news';
@@ -453,7 +453,7 @@ $string['subscribeall'] = 'Sottoscrivi tutti a questo forum';
 $string['subscribed'] = 'Sottoscritto';
 $string['subscribediscussion'] = 'Sottoscrivi questa discussione';
 $string['subscribeenrolledonly'] = 'Spiacente, solo gli utenti iscritti possono sottoscrivere i forum e ricevere notifiche di nuovi interventi.';
-$string['subscribenone'] = 'Rimuovi tutti da questo forum';
+$string['subscribenone'] = 'Revoca tutte le sottoscrizioni di questo forum';
 $string['subscribers'] = 'Sottoscrittori';
 $string['subscribersto'] = 'Sottoscrittori del forum \'{$a}\'';
 $string['subscribestart'] = 'Desidero ricevere notifiche sui nuovi interventi di questo forum';
@@ -468,8 +468,8 @@ $string['subscriptionmode'] = 'Modalità sottoscrizione';
 $string['subscriptionmode_help'] = 'La sottoscrizione di un forum consente di ricevere copie degli interventi via email. Sono disponibili 4 modalità di sottoscrizione:
 
 * Facoltativa - I partecipanti possono scegliere se sottoscrivere il forum o meno
-* Obbligatoria - La sottoscrizione è attiva per tutti i partecipanti sottoscrivono il forum e non è possibile rimuoverla.
-* Automatica - La sottoscrizione è attiva per tutti i partecipanti ma ciascuno può rimuovere la propria sottoscrizione se lo desidera
+* Obbligatoria - La sottoscrizione è attiva per tutti i partecipanti sottoscrivono il forum e non è possibile revocarla.
+* Automatica - La sottoscrizione è attiva per tutti i partecipanti ma ciascuno può revocare la propria sottoscrizione se lo desidera
 * Disabilitata - Non è possibile sottoscrivere il forum
 
 Nota: eventuali modifiche alla modalità di sottoscrizione influenzerà gli utenti che verranno iscritti al corso dopo la modifica e non gli utenti iscritti in precedenza.';
@@ -493,16 +493,16 @@ $string['unread'] = 'Non letto';
 $string['unreadposts'] = 'Interventi non letti';
 $string['unreadpostsnumber'] = '{$a} interventi non letti';
 $string['unreadpostsone'] = '1 intervento non letto';
-$string['unsubscribe'] = 'Rimuovi la sottoscrizione del forum';
-$string['unsubscribeall'] = 'Rimuovi la sottoscrizione di tutti i forum';
-$string['unsubscribeallconfirm'] = 'Attualmente hai sottoscritto {$a} forum. Confermi la rimozione della sottoscrizione da tutti i forum e la disabilitazione della sottoscrizione automatica dei forum?';
-$string['unsubscribeallconfirmdiscussions'] = 'Attualmente hai sottoscritto{$a->discussions} discussioni. Confermi la rimozione della sottoscrizione da tutte le discussioni e la disabilitazione della sottoscrizione automatica delle discussioni?';
-$string['unsubscribeallconfirmforums'] = 'Attualmente hai sottoscritto {$a} forum. Confermi la rimozione della sottoscrizione da tutti i forum e la disabilitazione della sottoscrizione automatica delle discussioni?';
+$string['unsubscribe'] = 'Revoca la sottoscrizione del forum';
+$string['unsubscribeall'] = 'Revoca la sottoscrizione di tutti i forum';
+$string['unsubscribeallconfirm'] = 'Al momento hai sottoscritto {$a} forum. Confermi la revoca della sottoscrizione da tutti i forum e la disabilitazione della sottoscrizione automatica dei forum?';
+$string['unsubscribeallconfirmdiscussions'] = 'Al momento hai sottoscritto {$a->discussions} discussioni. Confermi la revoca della sottoscrizione da tutte le discussioni e la disabilitazione della sottoscrizione automatica delle discussioni?';
+$string['unsubscribeallconfirmforums'] = 'Al momento hai sottoscritto {$a} forum. Confermi la revoca della sottoscrizione da tutti i forum e la disabilitazione della sottoscrizione automatica delle discussioni?';
 $string['unsubscribealldone'] = 'Tutte le tue sottoscrizioni facoltative ai forum sono state rimosse. Continuerai comunque a ricevere le notifiche dai forum a sottoscrizione obbligatoria. Se desideri gestire le notifiche dai forum, vai nella sezione Messaging del tuo profilo.';
 $string['unsubscribeallempty'] = 'Spiacente, non hai sottoscritto nessun forum. Nel caso tu non voglia più ricevere notifiche da questo server,  ai nella sezione Messaging del tuo profilo.';
 $string['unsubscribed'] = 'Non sottoscritto';
-$string['unsubscribediscussion'] = 'Rimuovi sottoscrizione della discussione';
-$string['unsubscribeshort'] = 'Rimuovimi';
+$string['unsubscribediscussion'] = 'Revoca la sottoscrizione della discussione';
+$string['unsubscribeshort'] = 'Revoca sottoscrizione';
 $string['usermarksread'] = 'Spunta manualmente gli interventi non letti';
 $string['viewalldiscussions'] = 'Visualizza tutti gli argomenti';
 $string['warnafter'] = 'Soglia per l\'avviso';

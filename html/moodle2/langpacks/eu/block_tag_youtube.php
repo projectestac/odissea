@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Edozein kategoria';
+$string['apierror'] = 'Youtube-ren API giltza ez da zehaztu. Jarri harremanetan zure kudeatzailearekin. administrator.';
+$string['apikey'] = 'API gakoa';
+$string['apikeyinfo'] = 'Lortu  <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API gakoa</a>zure Moodle gunerako.';
 $string['autosvehicles'] = 'Autoak &amp; Ibilgailuak';
 $string['category'] = 'Kategoria';
 $string['comedy'] = 'Komedia';
@@ -41,8 +44,8 @@ $string['newspolitics'] = 'Albisteak &amp; Politika';
 $string['numberofvideos'] = 'Bideo-kopurua';
 $string['peopleblogs'] = 'Jendea &amp; blogak';
 $string['petsanimals'] = 'Animaliak';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
 $string['scienceandtech'] = 'Zientzia &amp; Teknika';
 $string['sports'] = 'Kirolak';
-$string['tag_youtube:addinstance'] = 'Gehitu youtube bloke berria';
+$string['tag_youtube:addinstance'] = 'Gehitu YouTube bloke berria';
 $string['travel'] = 'Bidaiak &amp; Herriak';

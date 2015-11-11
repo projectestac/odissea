@@ -43,6 +43,6 @@ $string['missinglangparent'] = 'Ez dago <em>{$a->lang}</em>-ren <em>{$a->parent}
 $string['nolangupdateneeded'] = 'Hizkuntza-pakete guztiak eguneratuta daude: ez dago eguneratu beharrik.';
 $string['pluginname'] = 'Hizkuntza-paketeak';
 $string['remotelangnotavailable'] = 'Moodle-k ezin du download.moodle.org-ekin konektatu eta beraz ezin hizkuntza-paketea automatikoki instalatu. Mesedez, jaitsi  <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>-tik fitxategi egokiak, kopia itzazu zure {$a} direktorioan eta eskuz deskonprimatu.';
-$string['uninstall'] = 'Aukeratutako hizkuntza-paketea desinstalatu';
+$string['uninstall'] = 'Desinstalatu aukeratutako hizkuntza-paketea';
 $string['uninstallconfirm'] = '{$a} hizkuntza desinstalatzera zoaz; ziur al zaude?';
-$string['updatelangs'] = 'Instalatutako hizkuntza-pakete guztiak eguneratu';
+$string['updatelangs'] = 'Eguneratu instalatutako hizkuntza-pakete guztiak';

@@ -1711,7 +1711,7 @@ $string['specifyname'] = 'Devi specificare un nome.';
 $string['standard'] = 'Standard';
 $string['starpending'] = '([*] = corso in attesa di approvazione)';
 $string['startdate'] = 'Data di inizio del corso';
-$string['startdate_help'] = 'L\'impostazione stabilisce l\'inizio della prima settimana nei corsi con formato settimanale. L\'impostazione stabilisce anche la data da cui partono i log delle attività del corso';
+$string['startdate_help'] = 'L\'impostazione stabilisce l\'inizio della prima settimana nei corsi con formato settimanale. L\'impostazione stabilisce anche la data da cui partono i log delle attività del corso. Se il corso viene resettato e le date vengono modificate, tutte le date presenti nel corso verranno spostate in accordo alla nuova data di inizio.';
 $string['startingfrom'] = 'Inizio da';
 $string['startsignup'] = 'Crea un account';
 $string['state'] = 'Stato/Provincia';
@@ -1870,7 +1870,7 @@ $string['uploadnofilefound'] = 'Non è stato trovato alcun file. Sei sicuro di a
 $string['uploadnotallowed'] = 'Gli upload di file non sono consentiti';
 $string['uploadnotempdir'] = 'Manca una cartella temporanea';
 $string['uploadoldfilesdeleted'] = 'I vecchi file sul server sono stati eliminati';
-$string['uploadpartialfile'] = 'Il file era stato solo parzialmente inviato';
+$string['uploadpartialfile'] = 'Il file era stato inviato parzialmente';
 $string['uploadproblem'] = 'Un problema sconosciuto si è verificato salvando il file \'{$a}\' (può essere troppo grande?)';
 $string['uploadrenamedchars'] = 'Il file è stato rinominato da {$a->oldname} a {$a->newname} perché conteneva caratteri non validi.';
 $string['uploadrenamedcollision'] = 'Il file è stato rinominato da {$a->oldname} a {$a->newname} perché il nome era in conflitto con un altro.';

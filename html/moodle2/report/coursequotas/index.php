@@ -77,6 +77,14 @@ $d = new stdClass();
 $d->figure = number_format($backupUsage['figure'], 1, ',', '.');
 $d->unit = $backupUsage['unit'];
 
+// Get quota used by users
+$userSize = report_coursequotas_getUserUsage();
+$disaggregated['user'] = $userSize;
+$userSize = report_coursequotas_formatSize($userSize);
+$g = new stdClass();
+$g->figure = number_format($userSize['figure'], 1, ',', '.');
+$g->unit = $userSize['unit'];
+
 // Get quota used in files in moodledata/temp/ and in moodledata/trashdir/
 $tempSize = report_coursequotas_getTempUsage();
 $disaggregated['temp'] = $tempSize;
@@ -118,6 +126,7 @@ if ($showDiskInfo) {
 $generalContent .='<ul style="margin:auto; width:400px; margin-bottom:20px;">' .
             '<li>' . get_string('disk_consume_courses', 'report_coursequotas', $c) . '</li>' .
             '<li>' . get_string('disk_consume_backups', 'report_coursequotas', $d) . '</li>' .
+            '<li>' . get_string('disk_consume_user', 'report_coursequotas', $g) . '</li>' .
             '<li>' . get_string('disk_consume_repofiles', 'report_coursequotas', $b) . '</li>' .
             '<li>' . get_string('disk_consume_temp', 'report_coursequotas', $e) . '</li>' .
             '<li>' . get_string('disk_consume_trash', 'report_coursequotas', $f) . '</li>' .

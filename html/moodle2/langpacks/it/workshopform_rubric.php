@@ -35,5 +35,6 @@ $string['layoutgrid'] = 'Griglia';
 $string['layoutlist'] = 'Elenco';
 $string['levelgroup'] = 'Voto del livello e definizione';
 $string['levels'] = 'Livelli';
+$string['mustbeunique'] = 'I voti dei livelli devono essere univoci all\'interno di un criterio';
 $string['mustchooseone'] = 'Devi scegliere uno di questi elementi';
 $string['pluginname'] = 'Rubric';

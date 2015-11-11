@@ -100,7 +100,7 @@ $string['badgeprivacysetting_help'] = 'Les badges que vous avez reçus peuvent �
 
 Vous pouvez régler la confidentialité de chaque badge sur votre page « Mes badges ».';
 $string['badgeprivacysetting_str'] = 'Afficher automatiquement mes nouveaux badges sur ma page de profil.';
-$string['badgesalt'] = 'Sel de hachage pour l\'adresse de courriel du détenteur';
+$string['badgesalt'] = 'Sel de hachage pour l\'adresse de courriel du destinataire';
 $string['badgesalt_desc'] = 'L\'utilisation d\'un sel de hachage permet aux services de sacs à badges de confirmer le détenteur du badge sans exposer son adresse de courriel. Ce champ ne doit comporter que des chiffres et des lettres.
 
 Il est important de ne pas modifier ce réglage une fois l\'émission de badges initiée.';

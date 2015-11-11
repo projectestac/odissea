@@ -8,6 +8,7 @@ class script_repair_duplicated_course_sections extends agora_script_base{
 	public $info = "Deletes duplicated course sections deleting the one that is empty";
 	public $cron = false;
 	protected $test = false;
+	protected $category = "Check and repair";
 
 	public function params(){
 		$params = array();

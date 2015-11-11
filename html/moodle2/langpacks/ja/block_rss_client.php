@@ -32,32 +32,26 @@ $string['addnewfeed'] = '新しいフィードを追加する';
 $string['cannotmakemodification'] = '現在、あなたはこのRSSフィードを修正することはできません。';
 $string['choosefeedlabel'] = 'あなたがこのブロックで使用したいフィードを選択してください:';
 $string['clientchannellink'] = 'ソースサイト ...';
-$string['clientnumentries'] = '表示するフィードごとのデフォルトエントリ数です。';
-$string['clientshowchannellinklabel'] = 'オリジナルサイト (チャンネルリンク) のリンクを表示しますか? (ニュースフィードにリンクが提供されていない場合、リンクは表示されませんので注意してください):';
+$string['clientnumentries'] = 'フィードごとに表示するデフォルトエントリ数です。';
+$string['clientshowchannellinklabel'] = 'オリジナルサイト (チャンネルリンク) のリンクを表示しますか? (ニュースフィードにリンクが提供されていない場合、リンクは表示されないことに留意してください):';
 $string['clientshowimagelabel'] = '利用可能な場合、チャンネルイメージを表示する:';
 $string['configblock'] = 'このブロックを設定する';
 $string['couldnotfindfeed'] = '指定されたIDのフィードが見つかりませんでした。';
 $string['couldnotfindloadrssfeed'] = 'RSSフィードが見つからないか、読み込めませんでした。';
 $string['customtitlelabel'] = 'カスタムタイトル (フィードより提供されたタイトルを使用する場合は空白):';
 $string['deletefeedconfirm'] = '本当にこのフィードを削除してもよろしいですか?';
-$string['disabledrssfeeds'] = 'RSSフィードは、無効にされています。';
+$string['disabledrssfeeds'] = 'RSSフィードは無効にされています。';
 $string['displaydescriptionlabel'] = 'それぞれのリンクの説明を表示しますか?';
 $string['editafeed'] = 'フィードを編集する';
 $string['editfeeds'] = 'RSS/Atomニュースフィードを編集、購読または購読解除する';
 $string['editnewsfeeds'] = 'ニュースフィードを編集する';
 $string['editrssblock'] = 'RSSヘッドラインブロックを編集する';
-$string['enableautodiscovery'] = 'オートディスカバリを有効にしますか?';
-$string['enableautodiscovery_help'] = '<p>このオプションを有効にすることで、フィードのリンクが提供されていない場合、Moodleは自動的にウェブページからフィードを探します。</p>
-
-<p>例えば、Moodle DocsのURLを入力した場合:
-<pre>http://docs.moodle.org</pre>
-Moodleは購読するため、自動的に最新の変更に関するフィードを探します:
-<pre>http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss</pre>
-</p>';
+$string['enableautodiscovery'] = 'フィードのオートディスカバリを有効にしますか?';
+$string['enableautodiscovery_help'] = 'この設定を有効にした場合、ウェブページのフィードが自動的に探されます。例えば、http://docs.moodle.orgが入力された場合、http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rssが見つかります。';
 $string['errorloadingfeed'] = 'RSSフィード ({$a}) の読み込み中にエラーが発生しました。';
 $string['feed'] = 'フィード';
-$string['feedadded'] = '新しいフィードが追加されました。';
-$string['feeddeleted'] = 'フィードが削除されました。';
+$string['feedadded'] = 'ニュースフィードが追加されました。';
+$string['feeddeleted'] = 'ニュースフィードが削除されました。';
 $string['feeds'] = 'ニュースフィード';
 $string['feedsaddedit'] = 'フィードを追加/編集する';
 $string['feedsconfigurenewinstance'] = 'このブロックがRSSフィードを表示するよう設定するにはここをクリックしてください。';
@@ -80,9 +74,9 @@ $string['rss_client:myaddinstance'] = '新しいリモートRSSフィードブ�
 $string['seeallfeeds'] = 'すべてのフィードを表示する';
 $string['sharedfeed'] = '共有フィード';
 $string['shownumentrieslabel'] = 'ブロックに表示する最大エントリ数です。';
-$string['submitters'] = '誰が新しいRSSフィードを設定できますか? 設定することで、あなたのサイトのページすべてにフィードを追加することができます。';
+$string['submitters'] = '誰が新しいRSSフィードを設定できますか? 設定されたフィードはあなたのサイトのページすべてで利用できるようになります。';
 $string['submitters2'] = '配信者';
-$string['timeout'] = 'キャッシュ内のRSSフィードの有効期限が切れる時間 (分) です。この時間には有効期限の最短時間を設定します。有効期限後の次のcron実行により、キャッシュ内のRSSフィードがリフレッシュされます。推奨設定値は、30分またはそれ以上です。';
+$string['timeout'] = 'キャッシュ内RSSフィードの有効期限が切れる時間 (分) です。この時間には有効期限の最短時間を設定します。有効期限後の次のcron実行により、キャッシュ内のRSSフィードがリフレッシュされます。推奨設定値は30分またはそれ以上です。';
 $string['timeout2'] = 'タイムアウト';
 $string['timeoutdesc'] = 'RSSフィードキャッシュの保存期間 (分) です。';
 $string['updatefeed'] = 'ニュースフィードURLを更新する:';

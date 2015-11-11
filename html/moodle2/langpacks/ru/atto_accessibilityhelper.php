@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['listimages'] = 'Изображения в текстовом редакторе:';
 $string['listlinks'] = 'Ссылки в текстовом редакторе:';
-$string['liststyles'] = 'Стили для текущего выбора:';
+$string['liststyles'] = 'Стили в выделенном тексте:';
 $string['noimages'] = 'Нет изображений';
 $string['nolinks'] = 'Нет ссылок';
 $string['nostyles'] = 'Нет стилей';

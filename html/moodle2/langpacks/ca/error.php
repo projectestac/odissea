@@ -380,7 +380,7 @@ $string['missingvarname'] = 'Falta el nom de la variable exigida';
 $string['mixedtypesqlparam'] = 'S\'ha produït un error perquè s\'han barrejat diferents tipus de paràmetres de la consulta sql';
 $string['mnetdisable'] = 'MNET està desactivat';
 $string['mnetlocal'] = 'Els usuaris de MNET remot no es poden registrar localment';
-$string['moduledisable'] = 'Per aquest curs en particular s\'ha desactivat el mòdul ({$a})';
+$string['moduledisable'] = 'S\'ha desactivat el mòdul ({$a}) per a aquest curs concret';
 $string['moduledoesnotexist'] = 'Aquest mòdul no existeix';
 $string['moduleinstancedoesnotexist'] = 'La instància d\'aquest mòdul no existeix.';
 $string['modulemissingcode'] = 'El mòdul {$a} no inclou el codi necessari per a la realització d\'aquesta funció';
@@ -454,7 +454,7 @@ $string['redirecterrordetected'] = 'Ha finalitzat l\'execució de l\'script perq
 $string['refoundto'] = 'Poden reemborsar-se a {$a}';
 $string['refoundtoorigi'] = 'S\'ha retornat a la quantitat original: {$a}';
 $string['remotedownloaderror'] = 'No s\'ha pogut baixar el component al vostre servidor. Verifiqueu els paràmetres de servidor intermediari. Es recomana l\'extensió cURL.<br /><br />Haureu de baixar manualment el fitxer <a href="{$a->url}">{$a->url}</a>, copiar-lo a la ubicació "{$a->dest}" del vostre servidor i descomprimir-lo allí.';
-$string['remotedownloadnotallowed'] = 'El vostre servidor no permet baixar components ((allow_url_fopen inhabilitat).<br /><br />Baixeu manualment el fitxer <a href="{$a->url}">{$a->url}</a>, copieu en la ubicació "{$a->dest}" del vostre servidor i descomprimiu-lo allí.';
+$string['remotedownloadnotallowed'] = 'El vostre servidor no permet baixar components ((allow_url_fopen inhabilitat).<br /><br />Heu de baixar manualment el fitxer <a href="{$a->url}">{$a->url}</a>, copiar-lo a la ubicació «{$a->dest}» del vostre servidor i descomprimir-lo allà.';
 $string['reportnotavailable'] = 'Aquest tipus d\'informe només es pot trobar al curs del lloc.';
 $string['requirecorrectaccess'] = 'L\'URL o el port no són vàlids.';
 $string['requireloginerror'] = 'No es pot accedir al curs o l\'activitat.';

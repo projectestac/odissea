@@ -8,6 +8,7 @@ class script_repair_duplicated_quiz_attempts extends agora_script_base{
 	public $info = "Repair duplicated quiz attempts";
 	public $cron = false;
 	protected $test = false;
+	protected $category = "Check and repair";
 
 	public function params(){
 		$params = array();

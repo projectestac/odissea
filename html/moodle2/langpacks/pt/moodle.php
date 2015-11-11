@@ -1144,6 +1144,7 @@ $string['moodlerelease'] = 'Versão Moodle';
 $string['moodleversion'] = 'Versão do Moodle';
 $string['more'] = 'mais';
 $string['morehelp'] = 'Mais ajuda';
+$string['moreinfo'] = 'Mais informação';
 $string['moreinformation'] = 'Mais informações sobre este erro';
 $string['moreprofileinfoneeded'] = 'Conte-nos mais coisas sobre si';
 $string['mostrecently'] = 'mais recentemente';

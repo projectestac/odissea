@@ -230,11 +230,14 @@ function qv_delete_instance($id) {
     }
 
     //Delete files
-	if ($result) {
-		$fs = get_file_storage();
-		$fs->delete_area_files($context->id, 'mod_qv', 'content');
-		$fs->delete_area_files($context->id, 'mod_qv', 'package');
-	}
+    if ($result) {
+        $fs = get_file_storage();
+        $cm = get_coursemodule_from_instance('qv', $id, 0, false, MUST_EXIST);
+        $context = context_module::instance($cm->id);
+        if (!$fs->delete_area_files($context->id) ) {
+            $result = false;
+        }
+    }
 
     $DB->delete_records('event', array('modulename' => 'qv', 'instance' => $qv->id));
 

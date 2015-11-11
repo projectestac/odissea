@@ -26,6 +26,23 @@ defined('MOODLE_INTERNAL') || die;
 
 $functions = array(
 
+    'local_mobile_core_course_search_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'core_course_search_courses',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Search courses by (name, module, block, tag)',
+        'type'          => 'read',
+        'capabilities'  => '',
+    ),
+
+    'local_mobile_enrol_self_enrol_user' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'enrol_self_enrol_user',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Self enrol the current user in the given course.',
+        'type'        => 'write'
+    ),
+
     'local_mobile_core_user_remove_user_device' => array(
         'classname'     => 'local_mobile_external',
         'methodname'    => 'core_user_remove_user_device',
@@ -367,6 +384,34 @@ $functions = array(
         'capabilities'  => ''
     ),
 
+    'local_mobile_mod_lti_get_tool_launch_data' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_lti_get_tool_launch_data',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Return the launch data for a given external tool.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/lti:view'
+    ),
+
+    'local_mobile_mod_lti_get_ltis_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_lti_get_ltis_by_courses',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Returns a list of external tool instances in a provided set of courses, if
+                            no courses are provided then all the external tool instances the user has access to will be returned.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/lti:view'
+    ),
+
+    'local_mobile_mod_lti_view_lti' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_lti_view_lti',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Trigger the course module viewed event and update the module completion status.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/lti:view'
+    ),
+
     'local_mobile_core_completion_mark_course_self_completed' => array(
         'classname'   => 'local_mobile_external',
         'methodname'  => 'core_completion_mark_course_self_completed',
@@ -382,11 +427,50 @@ $functions = array(
         'capabilities'  => 'mod/choice:choose'
     ),
 
+    'local_mobile_mod_survey_get_questions' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_survey_get_questions',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Get the complete list of questions for the survey, including subquestions.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/survey:participate'
+    ),
+
+    'local_mobile_mod_survey_get_surveys_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_survey_get_surveys_by_courses',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Returns a list of survey instances in a provided set of courses,
+                            if no courses are provided then all the survey instances the user has access to will be returned.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_mod_survey_submit_answers' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_survey_submit_answers',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Submit the answers for a given survey.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/survey:participate'
+    ),
+
+    'local_mobile_mod_survey_view_survey' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_survey_view_survey',
+        'classpath'     => 'local/mobile/externallib.php',
+        'description'   => 'Trigger the course module viewed event and update the module completion status.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/survey:participate'
+    ),
+
 );
 
 $services = array(
    'Moodle Mobile additional features service'  => array(
         'functions' => array (
+            'local_mobile_core_course_search_courses',
+            'local_mobile_enrol_self_enrol_user',
             'core_webservice_get_site_info',
             'core_enrol_get_users_courses',
             'core_notes_create_notes',
@@ -406,6 +490,7 @@ $services = array(
             'core_message_get_messages',
             'core_calendar_get_calendar_events',
             'core_user_add_user_device',
+            'core_user_get_users_by_field',
             'core_grades_get_grades',
             'message_airnotifier_is_system_configured',
             'message_airnotifier_are_notification_preferences_configured',
@@ -461,8 +546,15 @@ $services = array(
             'local_mobile_mod_forum_get_forums_by_courses',
             'local_mobile_core_group_get_activity_groupmode',
             'local_mobile_core_group_get_activity_allowed_groups',
+            'local_mobile_mod_lti_get_tool_launch_data',
+            'local_mobile_mod_lti_get_ltis_by_courses',
+            'local_mobile_mod_lti_view_lti',
             'local_mobile_core_completion_mark_course_self_completed',
             'local_mobile_mod_choice_delete_choice_responses',
+            'local_mobile_mod_survey_get_questions',
+            'local_mobile_mod_survey_get_surveys_by_courses',
+            'local_mobile_mod_survey_submit_answers',
+            'local_mobile_mod_survey_view_survey',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

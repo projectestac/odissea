@@ -12,19 +12,35 @@ function rcontent_report_user_attempts($rcontentid, $userid, $filterby = false) 
         $minunit = $DB->get_field('rcontent_grades', 'MIN(unitid) AS min_unit', $conditions);
 
         $conditions = array('rcontentid' => $rcontentid, 'userid' => $userid, 'attempt' => $at, 'unitid' => $minunit);
-        $rcontentusermin = $DB->get_record('rcontent_grades', $conditions, 'MIN(unitid) AS min_unit, MIN(activityid) AS min_activity');
+        $minactivity = $DB->get_field('rcontent_grades', 'MIN(activityid) AS min_activity', $conditions);
 
         // Reload all the data but with min unit and activity values
-        $sql = "rcontentid=$rcontentid AND userid=$userid AND attempt=$at AND unitid=$rcontentusermin->min_unit AND activityid=$rcontentusermin->min_activity";
+        $params = array(
+            'rcontentid' => $rcontentid,
+            'userid' => $userid,
+            'at' => $at,
+            'minunitid' => $minunit,
+            'minactivityid' => $minactivity);
+        $sql = 'rcontentid= :rcontentid AND userid= :userid AND attempt= :at AND unitid= :minunitid AND activityid= :minactivityid';
         // Filter by status, set filter by sql
         if ($filterby) {
-            $sql .= " AND (status = '".$filterby."' OR EXISTS (SELECT * FROM {rcontent_grades} u WHERE u.rcontentid={$rcontentid} AND u.userid=$userid AND u.attempt=$at AND u.unitid <> 0 AND u.status='{$filterby}' AND u.attempt={$at}";
-            if ($userrol[0]->shortname == 'student') {
-                $sql .= " AND u.userid = ".$USER->id;
-            }
-            $sql .= "))";
+            $params['status'] = $filterby;
+            $params['rcontentid2'] = $rcontentid;
+            $params['userid2'] = $rcontentid;
+            $params['at2'] = $at;
+            $params['status2'] = $filterby;
+            $params['at3'] = $at;
+            $sql .= ' AND (status = :status OR EXISTS
+                (SELECT * FROM {rcontent_grades} u
+                    WHERE u.rcontentid=:rcontentid2
+                        AND u.userid=:userid2
+                        AND u.attempt=:at2
+                        AND u.unitid <> 0
+                        AND u.status=:status2
+                        AND u.attempt=:at3
+                ))';
         }
-        if (!$attempts = $DB->get_records_select('rcontent_grades', $sql, null, 'timecreated ASC')) {
+        if (!$attempts = $DB->get_records_select('rcontent_grades', $sql, $params, 'timecreated ASC')) {
             continue;
         }
         $rcontentusersatempts = array_merge($rcontentusersatempts, $attempts);

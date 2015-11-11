@@ -32,5 +32,5 @@ $string['comparisonlevel3'] = 'strikt';
 $string['comparisonlevel5'] = 'redelijk';
 $string['comparisonlevel7'] = 'niet strikt';
 $string['comparisonlevel9'] = 'helemaal niet strikt';
-$string['configcomparison'] = 'Standaar instelling van de factor die de beoordeling van de evaluatie beïnvloed';
+$string['configcomparison'] = 'Standaard instelling van de factor die de beoordeling van de evaluatie beïnvloedt.';
 $string['pluginname'] = 'Vergelijk met de beste beoordeling';

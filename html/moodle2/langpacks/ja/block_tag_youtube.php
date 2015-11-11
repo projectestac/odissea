@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'すべてのカテゴリ';
-$string['apierror'] = 'Youtube APIキーが設定されていません。あなたの管理者に連絡してください。';
+$string['apierror'] = 'YouTube APIキーが設定されていません。あなたの管理者に連絡してください。';
 $string['apikey'] = 'APIキー';
 $string['apikeyinfo'] = 'あなたのMoodleサイトの<a href="https://developers.google.com/youtube/v3/getting-started">Google APIキー</a>を取得します。';
 $string['autosvehicles'] = '自動車と乗り物';

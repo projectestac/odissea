@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'あなたには注意が必要な {$a} があります。';
 $string['alwaysshowall'] = '常にすべてを表示する';
 $string['collapseall'] = 'すべてのコース一覧を折りたたむ';
-$string['configotherexpanded'] = 'この設定を有効にした場合、ユーザプリファレンスでオーバーライドされない限り、他のコースはデフォルトで展開されます。';
+$string['configotherexpanded'] = 'この設定を有効にした場合、ユーザプリファレンスでオーバーライドされない限り、デフォルトで他のコースが展開されます。';
 $string['configpreservestates'] = 'この設定を有効にした場合、ユーザによって設定された「折りたたむ/展開する」設定が保存され、それぞれの読み込みに使用されます。';
 $string['course_overview:addinstance'] = '新しいコース概要ブロックを追加する';
 $string['course_overview:myaddinstance'] = '新しいコース概要ブロックをマイホームに追加する';

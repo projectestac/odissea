@@ -48,7 +48,7 @@ $string['allowcoursebadges_desc'] = 'Permet crear i concedir insígnies en el co
 $string['allowexternalbackpack'] = 'Activa la connexió amb motxilles externes';
 $string['allowexternalbackpack_desc'] = 'Permet als usuaris configurar connexions i mostrar les insígnies de les motxilles dels seus proveïdors externs.
 
-Nota: Es recomana no activar aquesta opció si no es pot accedir al lloc web des d\'Internet (p.ex, perquè hi ha un tallafocs activat)';
+Nota: Es recomana no activar aquesta opció si no es pot accedir al lloc web des d\'Internet (p. ex., perquè hi ha un tallafoc activat).';
 $string['any'] = 'Qualsevol';
 $string['anymethod'] = 'Es compleix qualsevol de les condicions seleccionades';
 $string['anymethodactivity'] = 'S\'ha completat qualsevol de les activitats seleccionades';
@@ -188,7 +188,7 @@ $string['currentstatus'] = 'Estat actual:';
 $string['dateawarded'] = 'Data publicada';
 $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Dia (dies)';
-$string['deactivate'] = 'Deshabilita l\'accés';
+$string['deactivate'] = 'Inhabilita l\'accés';
 $string['deactivatesuccess'] = 'L\'accés a les insígnies s\'ha desactivat amb èxit.';
 $string['defaultissuercontact'] = 'Dades de contacte de l\'emissor de la insígnia per defecte';
 $string['defaultissuercontact_desc'] = 'Una adreça electrònica associada a l\'entitat emissora de la insígnia.';
@@ -245,7 +245,7 @@ $string['error:save'] = 'No es pot desar la insígnia.';
 $string['error:userdeleted'] = '{$a->user} (Aquest usuari ja no existeix al lloc {$a->site})';
 $string['evidence'] = 'Evidència';
 $string['existingrecipients'] = 'Destinataris de la insígnia existents';
-$string['expired'] = 'Expirada';
+$string['expired'] = 'Ha caducat';
 $string['expiredate'] = 'Aquesta insígnia expira el {$a}.';
 $string['expireddate'] = 'Aquesta insígnia va expirar el {$a}.';
 $string['expireperiod'] = 'Aquesta insígnia expira {$a} dies després d\'haver-se emès.';
@@ -341,17 +341,17 @@ Les insígnies per a les activitats relacionades amb els cursos s\'han de crear 
 $string['status'] = 'Estat de la insígnia';
 $string['status_help'] = 'L\'estat d\'una insígnia determina el seu comportament en el sistema:
 
-* **DISPONIBLE** - Vol dir que els usuaris poden guanyar aquesta insígnia. Mentre que una insígnia està disponible per als usuaris, els seus criteris no es poden modificar.
+* **DISPONIBLE**. Vol dir que els usuaris poden guanyar aquesta insígnia. Mentre que una insígnia està disponible per als usuaris, els seus criteris no es poden modificar.
 
-* **NO DISPONIBLE** - Vol dir que aquesta insígnia no està disponible per als usuaris i no es pot guanyar o emetre manualment. Si la insígnia no s\'ha emès abans, els criteris es poden canviar.
+* **NO DISPONIBLE**. Vol dir que aquesta insígnia no està disponible per als usuaris i no es pot guanyar o emetre manualment. Si la insígnia no s\'ha emès abans, els criteris es poden canviar.
 
 Una vegada una insígnia s\'ha emès almenys per a un usuari, es **BLOCA** automàticament. Els usuaris encara poden guanyar les insígnies blocades, però ja no es poden canviar els seus criteris. Si necessiteu modificar els detalls o els criteris d\'una insígnia blocada, podeu duplicar-la i fer tots els canvis requerits.
 
 *Per què bloquem les insígnies?*
 
-Volem assegurar-nos que tots els usuaris completen els mateixos requisits per a guanyar una insígnia. Actualment, no és possible revocar insígnies. Si permetem que els requisits d\'insígnies es puguen modificar en qualsevol moment, probablement acabaríem amb usuaris amb la mateixa insígnia per satisfer completament diferents requisits.';
+Volem assegurar-nos que tots els usuaris completen els mateixos requisits per guanyar una insígnia. Actualment, no és possible revocar insígnies. Si permetem que els requisits d\'insígnies es puguen modificar en qualsevol moment, probablement acabaríem amb usuaris amb la mateixa insígnia per satisfer completament diferents requisits.';
 $string['statusmessage_0'] = 'Actualment aquesta insígnia no està disponible per als usuaris. Habiliteu l\'accés si voleu que els usuaris la puguin guanyar.';
-$string['statusmessage_1'] = 'Actualment aquesta insígnia està disponible per als usuaris. Deshabiliteu l\'accés per fer qualsevol canvi.';
+$string['statusmessage_1'] = 'Actualment aquesta insígnia està disponible per als usuaris. Inhabiliteu l\'accés per fer qualsevol canvi.';
 $string['statusmessage_2'] = 'Actualment aquesta insígnia no està disponible per als usuaris i els criteris estan blocats. Habiliteu l\'accés si voleu que els usuaris la puguin guanyar.';
 $string['statusmessage_3'] = 'Actualment aquesta insígnia està disponible per als usuaris i els criteris estan blocats.';
 $string['statusmessage_4'] = 'Actualment aquesta insígnia està arxivada.';

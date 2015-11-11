@@ -256,6 +256,7 @@ $string['linkedfiledoesntexist'] = 'Ez dago {$a} lotutako fitxategia';
 $string['makechildof'] = 'Bihurtu \'{$a}\'-ren ondorengo';
 $string['makecopy'] = 'Kopia egin';
 $string['maketoplevelitem'] = 'Igo ondorengo mailara';
+$string['manualgradeinvalidformat'] = 'Hau ez da zenbaki baliagarria.';
 $string['manualgradeoutofrange'] = 'Kalifikazio hau ibilartetik kanpo dago.';
 $string['manuallygraded'] = 'Eskuz kalifikatua {$a->mark} eta iruzkina du: {$a->comment}';
 $string['mark'] = 'Puntuazioa';

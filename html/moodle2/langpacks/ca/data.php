@@ -162,7 +162,7 @@ $string['eventtemplateupdated'] = 'S\'ha actualitzat una plantilla';
 $string['eventtemplateviewed'] = 'S\'han visualitzat les plantilles';
 $string['example'] = 'Exemple del mòdul de bases de dades';
 $string['excel'] = 'Excel';
-$string['expired'] = 'Ho sento, aquesta activitat tenia termini a {$a} i no es troba disponible';
+$string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible';
 $string['export'] = 'Exporta';
 $string['exportaszip'] = 'Exporta com a zip';
 $string['exportaszip_help'] = 'La capacitat d\'exportar a fitxer comprimit zip us permet plantilles i camps com a fitxer zip. El comprimit es pot importar més endavant en un altre curs.';
@@ -296,7 +296,7 @@ $string['norecords'] = 'No hi ha entrades en la base de dades';
 $string['nosingletemplate'] = 'Encara no s\'ha definit la plantilla d\'entrada única';
 $string['notapproved'] = 'L\'entrada encara no està aprovada.';
 $string['notinjectivemap'] = 'No hi ha un mapa d\'injecció';
-$string['notopenyet'] = 'Disculpeu, aquesta activitat no estarà disponible fins a {$a}';
+$string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
 $string['number'] = 'Nombre';
 $string['numberrssarticles'] = 'Articles RSS';
 $string['numnotapproved'] = 'Pendents';
@@ -335,7 +335,9 @@ $string['requiredentries_help'] = '<p align="center"><strong>Entrades requerides
 $string['requiredentriestoview'] = 'Entrades requerides per visualitzar';
 $string['requiredentriestoview_help'] = '<p align="center"><strong>Entrades requerides per visualitzar</strong></p>
 
-<p>El nombre d\'entrades que cal que trameti un participant abans que se li permeti visualitzar cap entrada en aquesta activitat de base de dades.</p>';
+<p>El nombre d\'entrades que cal que un estudiant trameti abans que pugui visualitzar entrades d\'altres estudiants.</p>
+
+Nota: Si es requereix que es trametin entrades abans de visualitzar-ne d\'altres, és recomanable inhabilitar el filtre d\'enllaços automàtics a la base de dades. Això és perquè el filtre d\'enllaços automàtics a la base de dades no pot determinar si un usuari ha tramès el nombre requerit d\'entrades.';
 $string['resetsettings'] = 'Reinicialitza els filtres';
 $string['resettemplate'] = 'Reinicia la plantilla';
 $string['resizingimages'] = 'S\'estan redimensionant les miniatures...';

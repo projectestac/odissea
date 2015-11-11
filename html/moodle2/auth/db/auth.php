@@ -701,6 +701,14 @@ class auth_plugin_db extends auth_plugin_base {
      * @return bool
      */
     public function is_configured() {
+        // XTEC ************ AFEGIT - In agora this is always configured
+        // 2015.10.16 @pferre22
+        global $school_info;
+        if (is_agora() && isset($school_info['id_intranet'])) {
+            return true;
+        }
+        //************ FI
+
         if (!empty($this->config->type)) {
             return true;
         }

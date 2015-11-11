@@ -42,6 +42,8 @@ $string['answerquestions'] = 'Respon les preguntes...';
 $string['attempted'] = 'El qüestionari s\'ha enviat.';
 $string['attemptstillinprogress'] = 'En curs. Desat el:';
 $string['autonumbering'] = 'Autonumeració';
+$string['autonumbering_help'] = 'Numeració automàtica de preguntes i de pàgines. És possible que vulgueu desactivar la numeració automàtica
+de qüestionaris amb bifurcació condicional.';
 $string['autonumberno'] = 'No numeris les preguntes ni les pàgines';
 $string['autonumberpages'] = 'Autonumera les pàgines';
 $string['autonumberpagesandquestions'] = 'Autonumera les pàgines i les preguntes';

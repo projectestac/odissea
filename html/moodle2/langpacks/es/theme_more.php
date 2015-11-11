@@ -25,25 +25,34 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosereadme'] = '<div class="clearfix">
-<div class="well">
-<h2>Clean</h2>
-<p><img class=img-polaroid src="clean/pix/screenshot.jpg" /></p>
-</div>
-<div class="well">
-<h3>Acerca de</h3>
-<p>Clean es un tema modificado a partir del tema Bootstrap de Moodle que hereda estilos y reglas de su tema padre.</p>
-<h3>Padres</h3> <p>Este tema está basado en el tema Bootstrap, creado para Moodle 2.5, con la ayuda de:<br>
-Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>
-<h3>Créditos del tema</h3>
-<p>Autores: Bas Brands, David Scotson, Mary Evans<br>
-Contacto: bas@sonsbeekmedia.nl<br>Página web: <a href="http://www.basbrands.nl">www.basbrands.nl</a> </p>
-<h3>Informar de un error:</h3>
-<p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
-<h3>Más información</h3>
-<p><a href="clean/README.txt">Cómo copiar y personalizar este tema.</a></p>
-</div></div>';
-$string['configtitle'] = 'Clean';
+$string['backgroundfixed'] = 'Fondo de pantalla fijo';
+$string['backgroundfixed_desc'] = 'Use este ajuste para fijar la imagen de fondo de pantalla a la página.';
+$string['backgroundimage'] = 'Imagen de fondo de pantalla';
+$string['backgroundimage_desc'] = 'La imagen a mostrar como fondo de pantalla del sitio.';
+$string['backgroundposition'] = 'Posición del fondo de pantalla';
+$string['backgroundpositioncenterbottom'] = 'Centrado al pie de página';
+$string['backgroundpositioncentercenter'] = 'Centrado en la parte media';
+$string['backgroundpositioncentertop'] = 'Centrado al inicio de página';
+$string['backgroundposition_desc'] = 'La posición de la imagen de fondo de pantalla.';
+$string['backgroundpositionleftbottom'] = 'A la izquierda del pie de página';
+$string['backgroundpositionleftcenter'] = 'A la izquierda en la parte media';
+$string['backgroundpositionlefttop'] = 'A la izquierda al inicio de página';
+$string['backgroundpositionrightbottom'] = 'A la derecha del pie de página';
+$string['backgroundpositionrightcenter'] = 'A la derecha en la parte media';
+$string['backgroundpositionrighttop'] = 'A la derecha al inicio de página';
+$string['backgroundrepeat'] = 'Repetición del fondo de pantalla';
+$string['backgroundrepeat_desc'] = 'Define la forma en que se repetirá la imagen de fondo de pantalla';
+$string['backgroundrepeatnorepeat'] = 'Sin repetición';
+$string['backgroundrepeatrepeat'] = 'Repetición';
+$string['backgroundrepeatrepeatx'] = 'Repetición en horizontal';
+$string['backgroundrepeatrepeaty'] = 'Repetición en vertical';
+$string['bodybackground'] = 'Color de fondo de página';
+$string['bodybackground_desc'] = 'El color principal que se utilizará como fondo de página.';
+$string['choosereadme'] = '<p>More es un tema que permite modificar fácilmente el aspecto de Moodle desde la propia interfaz web.</p>
+<p>Visite los ajustes de administración para cambiar colores, añadir una imagen como fondo de pantalla, añadir un logo, etc.</p>';
+$string['configtitle'] = 'More';
+$string['contentbackground'] = 'Color de fondo de página del contenido principal';
+$string['contentbackground_desc'] = 'El color de fondo de página del contenido principal del sitio; dejar vacío para que no tenga color.';
 $string['customcss'] = 'CSS personalizado';
 $string['customcssdesc'] = 'Todas las reglas CSS que añada a esta área de texto se reflejarán en todas las páginas, lo que facilita la personalización de este tema.';
 $string['footnote'] = 'Nota a pie de página';
@@ -54,8 +63,10 @@ $string['linkcolor'] = 'Color del enlace';
 $string['linkcolor_desc'] = 'Color de los enlaces';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Por favor, suba aquí su logo personalizado si quieres añadirlo a la cabecera. <br> Si la altura de su logo es mayor que 75px añada la siguiente regla CSS en la caja de texto de CSS personalizado que hay a continuación. <br> a.logo {height: 100px;} o el valor de la altura en píxeles que tenga el logo.';
-$string['pluginname'] = 'Clean';
+$string['pluginname'] = 'More';
 $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';
+$string['secondarybackground'] = 'Color secundario de fondo de página';
+$string['secondarybackground_desc'] = 'El color de fondo de cualquier contenido secundario, tal como los bloques.';
 $string['textcolor'] = 'Color del texto';
 $string['textcolor_desc'] = 'Color del texto';

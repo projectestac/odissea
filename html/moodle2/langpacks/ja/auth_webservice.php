@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_webservicedescription'] = 'この認証メソッドはウェブサービスクライアントによる排他利用アカウントのため使用されるべきです。';
+$string['auth_webservicedescription'] = 'この認証方法はウェブサービスクライアントによる排他利用アカウントのため使用されるべきです。';
 $string['pluginname'] = 'ウェブサービス認証';

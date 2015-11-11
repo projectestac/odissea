@@ -46,6 +46,7 @@ $string['addnewuseroverride'] = 'Gehitu erabiltzaile-baliogabetzea';
 $string['addpagebreak'] = 'Gehitu orri-jauzia';
 $string['addpagehere'] = 'Gehitu orria hemen';
 $string['addquestion'] = 'Gehitu galdera';
+$string['addquestionfrombankatend'] = 'Gehitu galdera-bankutik bukaeran';
 $string['addquestionfrombanktopage'] = 'Gehitu galdera-bankutik {$a} orrira';
 $string['addquestions'] = 'Gehitu galderak';
 $string['addquestionstoquiz'] = 'Gehitu galderak oraingo galdetegiari';
@@ -54,6 +55,7 @@ $string['addrandom1'] = '<< Gehitu';
 $string['addrandom2'] = 'ausazko galderak';
 $string['addrandomfromcategory'] = 'Gehitu ausazko galderak kategoria honetatik:';
 $string['addrandomquestion'] = 'Gehitu ausazko galdera';
+$string['addrandomquestionatend'] = 'Gehitu ausazko galdera bukaeran';
 $string['addrandomquestiontopage'] = 'Gehitu ausazko galdera {$a} orrian';
 $string['addrandomquestiontoquiz'] = 'Gehitu ausazko galdera {$a} galdetegira';
 $string['addselectedquestionstoquiz'] = 'Gehitu aukeratutako galderak galdetegian';
@@ -290,7 +292,9 @@ $string['emailconfirmsmall'] = 'Eskerrik asko \'{$a->quizname}\' galdetegiari er
 $string['emailconfirmsubject'] = 'Bidalketaren berrespena: {$a->quizname}';
 $string['emailnotifybody'] = 'Kaixo {$a->username},
 
-{$a->studentname} -k \'{$a->quizname}\' ({$a->quizurl}) galdetegia osatu du \'{$a->coursename}\' ikastaroan
+{$a->studentname} -k osatu du
+\'{$a->quizname}\' ({$a->quizurl}) galdetegia
+\'{$a->coursename}\' ikastaroan
 
 Saiakera hau hemen {$a->quizreviewurl} berrikusi ahal duzu.';
 $string['emailnotifysmall'] = '{$a->studentname}-(e)k {$a->quizname} osatu du. Ikusi {$a->quizreviewurl}';
@@ -752,7 +756,7 @@ $string['reportregrade'] = 'Saiakerak berriz kalifikatu';
 $string['reportresponses'] = 'Zehaztutako ebazpenak';
 $string['reports'] = 'Txostenak';
 $string['reportshowonly'] = 'Erakutsi saiakerak baino ez';
-$string['reportshowonlyfinished'] = 'Erakutsi gehienez amaitutako saiaketa bat erabiltzaileko  ({$a})';
+$string['reportshowonlyfinished'] = 'Erakutsi gehienez amaitutako saiakera bat erabiltzaileko  ({$a})';
 $string['reportsimplestat'] = 'Estatistika oinarrizkoak';
 $string['reportusersall'] = 'galdetegiari erantzuten saiatu diren erabiltzaile guztiak';
 $string['reportuserswith'] = 'galdetegiari erantzuten saiatu diren matrikulatutako erabiltzaileak';

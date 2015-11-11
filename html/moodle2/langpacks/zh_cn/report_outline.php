@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventactivityreportviewed'] = '查看了活动报表';
 $string['neverseen'] = '从未查看';
 $string['outline:view'] = '查看课程活跃度报表';
 $string['page-report-outline-index'] = '课程大纲报告';

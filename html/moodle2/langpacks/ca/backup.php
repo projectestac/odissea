@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['autoactivedescription'] = 'Escolliu si voleu fer o no còpies de seguretat automàtiques. Si escolliu \'manual\' aleshores les còpies de seguretat automàtiques només podran fer-se a través de l\'script CLI de còpies de seguretat automàtiques. aquest es pot executar bé manualment al terminal o bé a través del cron.';
-$string['autoactivedisabled'] = 'Deshabilitat';
+$string['autoactivedisabled'] = 'Inhabilitat';
 $string['autoactiveenabled'] = 'Habilitat';
 $string['autoactivemanual'] = 'Manual';
 $string['automatedbackupschedule'] = 'Planificació';
@@ -90,7 +90,7 @@ $string['configgeneralfilters'] = 'Estableix el valor per defecte per incloure f
 $string['configgeneralhistories'] = 'Estableix el valor per defecte per incloure l\'historial de l\'usuari en una còpia de seguretat.';
 $string['configgenerallogs'] = 'Si està habilitat, s\'inclouran per omissió els registres dins de la còpia de seguretat.';
 $string['configgeneralquestionbank'] = 'Si s\'habilita, el banc de preguntes s\'inclourà en les còpies de seguretat per defecte.
-NOTA: Inhabilitar aquest paràmetre inhabilitarà la còpia de seguretat de les activitats que utilitzin el banc de preguntes, com ara el qüestionari.';
+TINGUEU EN COMPTE que inhabilitar aquest paràmetre inhabilitarà la còpia de seguretat de les activitats que utilitzin el banc de preguntes, com ara el qüestionari.';
 $string['configgeneralroleassignments'] = 'Si està habilitat, s\'inclouran per omissió les assignacions de rols dins de la còpia de seguretat.';
 $string['configgeneralusers'] = 'Estableix el valor per defecte per incloure els usuaris en una còpia de seguretat.';
 $string['configgeneraluserscompletion'] = 'Si està habilitat, s\'inclourà per omissió la informació de progrés de l\'usuari dins de la còpia de seguretat.';
@@ -225,7 +225,7 @@ $string['restoretoexistingcoursedeleting'] = 'Esborra els continguts del curs ex
 $string['restoretonewcourse'] = 'Restaura com un nou curs';
 $string['restoringcourse'] = 'S\'està restaurant el curs';
 $string['restoringcourseshortname'] = 's\'està restaurant';
-$string['rootenrolmanual'] = 'Restaura com a inscripcions manuals.';
+$string['rootenrolmanual'] = 'Restaura com a inscripcions manuals';
 $string['rootsettingactivities'] = 'Inclou les activitats';
 $string['rootsettinganonymize'] = 'Anonimitza la informació de l\'usuari';
 $string['rootsettingbadges'] = 'Inclou insígnies';
@@ -237,7 +237,7 @@ $string['rootsettinggradehistories'] = 'Inclou l\'historial de qualificacions';
 $string['rootsettingimscc1'] = 'Converteix a IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Converteix a IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Inclou els registres del curs';
-$string['rootsettingquestionbank'] = 'Inclou el banc de qüestions';
+$string['rootsettingquestionbank'] = 'Inclou el banc de preguntes';
 $string['rootsettingroleassignments'] = 'Inclou les assignacions de rols de l\'usuari';
 $string['rootsettings'] = 'Configuració de les còpies de seguretat';
 $string['rootsettingusers'] = 'Inclou els usuaris registrats';

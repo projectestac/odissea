@@ -31,4 +31,4 @@ $string['responsex'] = 'Risposta data: {$a}';
 $string['rightanswerx'] = 'Risposta corretta {$a}';
 $string['summaryofquestiontext'] = 'Sintesi delle domande';
 $string['summaryofresponse'] = 'Sintesi delle risposte date';
-$string['summaryofrightanswer'] = 'Sintesi delle risposte corrette';
+$string['summaryofrightanswer'] = 'Sintesi delle risposte esatte';

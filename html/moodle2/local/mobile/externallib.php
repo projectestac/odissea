@@ -34,6 +34,357 @@ require_once("$CFG->dirroot/notes/lib.php");
 
 class local_mobile_external extends external_api {
 
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function core_course_search_courses_parameters() {
+        return new external_function_parameters(
+            array(
+                'criterianame'  => new external_value(PARAM_ALPHA, 'criteria name
+                                                        (search, modulelist (only admins), blocklist (only admins), tagid)'),
+                'criteriavalue' => new external_value(PARAM_RAW, 'criteria value'),
+                'page'          => new external_value(PARAM_INT, 'page number (0 based)', VALUE_DEFAULT, 0),
+                'perpage'       => new external_value(PARAM_INT, 'items per page', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Search courses following the specified criteria.
+     *
+     * @param string $criterianame  Criteria name (search, modulelist (only admins), blocklist (only admins), tagid)
+     * @param string $criteriavalue Criteria value
+     * @param int $page             Page number (for pagination)
+     * @param int $perpage          Items per page
+     * @return array of course objects and warnings
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function core_course_search_courses($criterianame, $criteriavalue, $page=0, $perpage=0) {
+        global $CFG;
+        require_once($CFG->libdir . '/coursecatlib.php');
+
+        $warnings = array();
+
+        $parameters = array(
+            'criterianame'  => $criterianame,
+            'criteriavalue' => $criteriavalue,
+            'page'          => $page,
+            'perpage'       => $perpage
+        );
+        $params = self::validate_parameters(self::core_course_search_courses_parameters(), $parameters);
+
+        $allowedcriterianames = array('search', 'modulelist', 'blocklist', 'tagid');
+        if (!in_array($params['criterianame'], $allowedcriterianames)) {
+            throw new invalid_parameter_exception('Invalid value for criterianame parameter (value: '.$params['criterianame'].'),' .
+                'allowed values are: '.implode(',', $allowedcriterianames));
+        }
+
+        if ($params['criterianame'] == 'modulelist' or $params['criterianame'] == 'blocklist') {
+            require_capability('moodle/site:config', context_system::instance());
+        }
+
+        $paramtype = array(
+            'search' => PARAM_RAW,
+            'modulelist' => PARAM_PLUGIN,
+            'blocklist' => PARAM_INT,
+            'tagid' => PARAM_INT
+        );
+        $params['criteriavalue'] = clean_param($params['criteriavalue'], $paramtype[$params['criterianame']]);
+
+        // Prepare the search API options.
+        $searchcriteria = array();
+        $searchcriteria[$params['criterianame']] = $params['criteriavalue'];
+
+        $options = array();
+        if ($params['perpage'] != 0) {
+            $offset = $params['page'] * $params['perpage'];
+            $options = array('offset' => $offset, 'limit' => $params['perpage']);
+        }
+
+        // Search the courses.
+        $courses = coursecat::search_courses($searchcriteria, $options);
+        $totalcount = coursecat::search_courses_count($searchcriteria);
+
+        $finalcourses = array();
+        $categoriescache = array();
+
+        foreach ($courses as $course) {
+
+            $coursecontext = context_course::instance($course->id);
+
+            // Category information.
+            if (!isset($categoriescache[$course->category])) {
+                $categoriescache[$course->category] = coursecat::get($course->category);
+            }
+            $category = $categoriescache[$course->category];
+
+            // Retrieve course overfiew used files.
+            $files = array();
+            foreach ($course->get_course_overviewfiles() as $file) {
+                $fileurl = moodle_url::make_webservice_pluginfile_url($file->get_contextid(), $file->get_component(),
+                                                                        $file->get_filearea(), null, $file->get_filepath(),
+                                                                        $file->get_filename())->out(false);
+                $files[] = array(
+                    'filename' => $file->get_filename(),
+                    'fileurl' => $fileurl,
+                    'filesize' => $file->get_filesize()
+                );
+            }
+
+            // Retrieve the course contacts,
+            // we need here the users fullname since if we are not enrolled can be difficult to obtain them via other Web Services.
+            $coursecontacts = array();
+            foreach ($course->get_course_contacts() as $contact) {
+                 $coursecontacts[] = array(
+                    'id' => $contact['user']->id,
+                    'fullname' => $contact['username']
+                );
+            }
+
+            // Allowed enrolment methods (maybe we can self-enrol).
+            $enroltypes = array();
+            $instances = enrol_get_instances($course->id, true);
+            foreach ($instances as $instance) {
+                $enroltypes[] = $instance->enrol;
+            }
+
+            // Format summary.
+            list($summary, $summaryformat) =
+                external_format_text($course->summary, $course->summaryformat, $coursecontext->id, 'course', 'summary', null);
+
+            $coursereturns = array();
+            $coursereturns['id']                = $course->id;
+            $coursereturns['fullname']          = $course->get_formatted_fullname();
+            $coursereturns['shortname']         = $course->get_formatted_shortname();
+            $coursereturns['categoryid']        = $course->category;
+            $coursereturns['categoryname']      = $category->name;
+            $coursereturns['summary']           = $summary;
+            $coursereturns['summaryformat']     = $summaryformat;
+            $coursereturns['overviewfiles']     = $files;
+            $coursereturns['contacts']          = $coursecontacts;
+            $coursereturns['enrollmentmethods'] = $enroltypes;
+            $finalcourses[] = $coursereturns;
+        }
+
+        return array(
+            'total' => $totalcount,
+            'courses' => $finalcourses,
+            'warnings' => $warnings
+        );
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function core_course_search_courses_returns() {
+
+        return new external_single_structure(
+            array(
+                'total' => new external_value(PARAM_INT, 'total course count'),
+                'courses' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id' => new external_value(PARAM_INT, 'course id'),
+                            'fullname' => new external_value(PARAM_TEXT, 'course full name'),
+                            'shortname' => new external_value(PARAM_TEXT, 'course short name'),
+                            'categoryid' => new external_value(PARAM_INT, 'category id'),
+                            'categoryname' => new external_value(PARAM_TEXT, 'category name'),
+                            'summary' => new external_value(PARAM_RAW, 'summary'),
+                            'summaryformat' => new external_format_value('summary'),
+                            'overviewfiles' => new external_multiple_structure(
+                                new external_single_structure(
+                                    array(
+                                        'filename' => new external_value(PARAM_FILE, 'overview file name'),
+                                        'fileurl'  => new external_value(PARAM_URL, 'overview file url'),
+                                        'filesize'  => new external_value(PARAM_INT, 'overview file size'),
+                                    )
+                                ),
+                                'additional overview files attached to this course'
+                            ),
+                            'contacts' => new external_multiple_structure(
+                                new external_single_structure(
+                                    array(
+                                        'id' => new external_value(PARAM_INT, 'contact user id'),
+                                        'fullname'  => new external_value(PARAM_NOTAGS, 'contact user fullname'),
+                                    )
+                                ),
+                                'contact users'
+                            ),
+                            'enrollmentmethods' => new external_multiple_structure(
+                                new external_value(PARAM_PLUGIN, 'enrollment method'),
+                                'enrollment methods list'
+                            ),
+                        )
+                    ), 'course'
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function enrol_self_enrol_user_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseid' => new external_value(PARAM_INT, 'Id of the course'),
+                'password' => new external_value(PARAM_RAW, 'Enrolment key', VALUE_DEFAULT, ''),
+                'instanceid' => new external_value(PARAM_INT, 'Instance id of self enrolment plugin.', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Self enrol the current user in the given course.
+     *
+     * @param int $courseid id of course
+     * @param string $password enrolment key
+     * @param int $instanceid instance id of self enrolment plugin
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function enrol_self_enrol_user($courseid, $password = '', $instanceid = 0) {
+        global $CFG;
+
+        require_once($CFG->libdir . '/enrollib.php');
+
+        $params = self::validate_parameters(self::enrol_self_enrol_user_parameters(),
+                                            array(
+                                                'courseid' => $courseid,
+                                                'password' => $password,
+                                                'instanceid' => $instanceid
+                                            ));
+
+        $warnings = array();
+
+        $course = get_course($params['courseid']);
+        $context = context_course::instance($course->id);
+        // Note that we can't use validate_context because the user is not enrolled in the course.
+        require_login(null, false, null, false, true);
+
+        if (!$course->visible and !has_capability('moodle/course:viewhiddencourses', $context)) {
+            throw new moodle_exception('coursehidden');
+        }
+
+        // Retrieve the self enrolment plugin.
+        $enrol = enrol_get_plugin('self');
+        if (empty($enrol)) {
+            throw new moodle_exception('canntenrol', 'enrol_self');
+        }
+
+        // We can expect multiple self-enrolment instances.
+        $instances = array();
+        $enrolinstances = enrol_get_instances($course->id, true);
+        foreach ($enrolinstances as $courseenrolinstance) {
+            if ($courseenrolinstance->enrol == "self") {
+                // Instance specified.
+                if (!empty($params['instanceid'])) {
+                    if ($courseenrolinstance->id == $params['instanceid']) {
+                        $instances[] = $courseenrolinstance;
+                        break;
+                    }
+                } else {
+                    $instances[] = $courseenrolinstance;
+                }
+
+            }
+        }
+        if (empty($instances)) {
+            throw new moodle_exception('canntenrol', 'enrol_self');
+        }
+
+        // Try to enrol the user in the instance/s.
+        $enrolled = false;
+        foreach ($instances as $instance) {
+            $enrolstatus = $enrol->can_self_enrol($instance);
+            if ($enrolstatus === true) {
+                if ($instance->password and $params['password'] !== $instance->password) {
+
+                    // Check if we are using group enrolment keys.
+                    if ($instance->customint1) {
+                        require_once($CFG->dirroot . "/enrol/self/locallib.php");
+
+                        if (!enrol_self_check_group_enrolment_key($course->id, $params['password'])) {
+                            $warnings[] = array(
+                                'item' => 'instance',
+                                'itemid' => $instance->id,
+                                'warningcode' => '2',
+                                'message' => get_string('passwordinvalid', 'enrol_self')
+                            );
+                            continue;
+                        }
+                    } else {
+                        if ($enrol->get_config('showhint')) {
+                            $hint = core_text::substr($instance->password, 0, 1);
+                            $warnings[] = array(
+                                'item' => 'instance',
+                                'itemid' => $instance->id,
+                                'warningcode' => '3',
+                                'message' => s(get_string('passwordinvalidhint', 'enrol_self', $hint)) // message is PARAM_TEXT.
+                            );
+                            continue;
+                        } else {
+                            $warnings[] = array(
+                                'item' => 'instance',
+                                'itemid' => $instance->id,
+                                'warningcode' => '4',
+                                'message' => get_string('passwordinvalid', 'enrol_self')
+                            );
+                            continue;
+                        }
+                    }
+                }
+
+                // Do the enrolment.
+                $data = array('enrolpassword' => $params['password']);
+                $enrol->enrol_self($instance, (object) $data);
+                $enrolled = true;
+                break;
+            } else {
+                $warnings[] = array(
+                    'item' => 'instance',
+                    'itemid' => $instance->id,
+                    'warningcode' => '1',
+                    'message' => $enrolstatus
+                );
+            }
+        }
+
+        $result = array();
+        $result['status'] = $enrolled;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function enrol_self_enrol_user_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if the user is enrolled, false otherwise'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+
     /**
      * Returns description of method parameters.
      *
@@ -4214,7 +4565,7 @@ class local_mobile_external extends external_api {
         return new external_function_parameters(
             array(
                 'cmid' => new external_value(PARAM_INT, 'course module id'),
-                'userid' => new external_value(PARAM_INT, 'id of user, empty for current user', VALUE_OPTIONAL, 0)
+                'userid' => new external_value(PARAM_INT, 'id of user, empty for current user', VALUE_DEFAULT, 0)
             )
         );
     }
@@ -4310,6 +4661,300 @@ class local_mobile_external extends external_api {
             array(
                 'groups' => new external_multiple_structure(self::core_group_group_description()),
                 'warnings' => new external_warnings(),
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_get_tool_launch_data_parameters() {
+        return new external_function_parameters(
+            array(
+                'toolid' => new external_value(PARAM_INT, 'external tool instance id')
+            )
+        );
+    }
+
+    /**
+     * Return the launch data for a given external tool.
+     *
+     * @param int $toolid the external tool instance id
+     * @return array of warnings and launch data
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_lti_get_tool_launch_data($toolid) {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . '/mod/lti/lib.php');
+
+        $params = self::validate_parameters(self::mod_lti_get_tool_launch_data_parameters(),
+                                            array(
+                                                'toolid' => $toolid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $lti = $DB->get_record('lti', array('id' => $params['toolid']), '*', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($lti, 'lti');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        require_capability('mod/lti:view', $context);
+
+        $lti->cmid = $cm->id;
+        list($endpoint, $parms) = lti_get_launch_data($lti);
+
+        $parameters = array();
+        foreach ($parms as $name => $value) {
+            $parameters[] = array(
+                'name' => $name,
+                'value' => $value
+            );
+        }
+
+        $result = array();
+        $result['endpoint'] = $endpoint;
+        $result['parameters'] = $parameters;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_get_tool_launch_data_returns() {
+        return new external_single_structure(
+            array(
+                'endpoint' => new external_value(PARAM_RAW, 'Endpoint URL'), // Using PARAM_RAW as is defined in the module.
+                'parameters' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'name' => new external_value(PARAM_NOTAGS, 'Parameter name'),
+                            'value' => new external_value(PARAM_RAW, 'Parameter value')
+                        )
+                    )
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Describes the parameters for get_ltis_by_courses.
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_get_ltis_by_courses_parameters() {
+        return new external_function_parameters (
+            array(
+                'courseids' => new external_multiple_structure(
+                    new external_value(PARAM_INT, 'course id'), 'Array of course ids', VALUE_DEFAULT, array()
+                ),
+            )
+        );
+    }
+
+    /**
+     * Returns a list of external tools in a provided list of courses,
+     * if no list is provided all external tools that the user can view will be returned.
+     *
+     * @param array $courseids the course ids
+     * @return array the lti details
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_get_ltis_by_courses($courseids = array()) {
+        global $CFG;
+
+        $returnedltis = array();
+        $warnings = array();
+
+        $params = self::validate_parameters(self::mod_lti_get_ltis_by_courses_parameters(), array('courseids' => $courseids));
+
+        if (empty($params['courseids'])) {
+            $params['courseids'] = array_keys(enrol_get_my_courses());
+        }
+
+        // Ensure there are courseids to loop through.
+        if (!empty($params['courseids'])) {
+
+            list($courses, $warnings) = external_util::validate_courses($params['courseids']);
+
+            // Get the ltis in this course, this function checks users visibility permissions.
+            // We can avoid then additional validate_context calls.
+            $ltis = get_all_instances_in_courses("lti", $courses);
+
+            foreach ($ltis as $lti) {
+
+                $context = context_module::instance($lti->coursemodule);
+
+                // Entry to return.
+                $module = array();
+
+                // First, we return information that any user can see in (or can deduce from) the web interface.
+                $module['id'] = $lti->id;
+                $module['coursemodule'] = $lti->coursemodule;
+                $module['course'] = $lti->course;
+                $module['name']  = external_format_string($lti->name, $context->id);
+
+                $viewablefields = [];
+                if (has_capability('mod/lti:view', $context)) {
+                    list($module['intro'], $module['introformat']) =
+                        external_format_text($lti->intro, $lti->introformat, $context->id, 'mod_lti', 'intro', $lti->id);
+
+                    $viewablefields = array('launchcontainer', 'showtitlelaunch', 'showdescriptionlaunch', 'icon', 'secureicon');
+                }
+
+                // Check additional permissions for returning optional private settings.
+                if (has_capability('moodle/course:manageactivities', $context)) {
+
+                    $additionalfields = array('timecreated', 'timemodified', 'typeid', 'toolurl', 'securetoolurl',
+                        'instructorchoicesendname', 'instructorchoicesendemailaddr', 'instructorchoiceallowroster',
+                        'instructorchoiceallowsetting', 'instructorcustomparameters', 'instructorchoiceacceptgrades', 'grade',
+                        'resourcekey', 'password', 'debuglaunch', 'servicesalt', 'visible', 'groupmode', 'groupingid');
+                    $viewablefields = array_merge($viewablefields, $additionalfields);
+
+                }
+
+                foreach ($viewablefields as $field) {
+                    $module[$field] = $lti->{$field};
+                }
+
+                $returnedltis[] = $module;
+            }
+        }
+
+        $result = array();
+        $result['ltis'] = $returnedltis;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Describes the get_ltis_by_courses return value.
+     *
+     * @return external_single_structure
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_get_ltis_by_courses_returns() {
+
+        return new external_single_structure(
+            array(
+                'ltis' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id' => new external_value(PARAM_INT, 'External tool id'),
+                            'coursemodule' => new external_value(PARAM_INT, 'Course module id'),
+                            'course' => new external_value(PARAM_INT, 'Course id'),
+                            'name' => new external_value(PARAM_RAW, 'LTI name'),
+                            'intro' => new external_value(PARAM_RAW, 'The LTI intro', VALUE_OPTIONAL),
+                            'introformat' => new external_format_value('intro', VALUE_OPTIONAL),
+                            'timecreated' => new external_value(PARAM_INT, 'Time of creation', VALUE_OPTIONAL),
+                            'timemodified' => new external_value(PARAM_INT, 'Time of last modification', VALUE_OPTIONAL),
+                            'typeid' => new external_value(PARAM_INT, 'Type id', VALUE_OPTIONAL),
+                            'toolurl' => new external_value(PARAM_URL, 'Tool url', VALUE_OPTIONAL),
+                            'securetoolurl' => new external_value(PARAM_RAW, 'Secure tool url', VALUE_OPTIONAL),
+                            'instructorchoicesendname' => new external_value(PARAM_TEXT, 'Instructor choice send name',
+                                                                               VALUE_OPTIONAL),
+                            'instructorchoicesendemailaddr' => new external_value(PARAM_INT, 'instructor choice send mail address',
+                                                                                    VALUE_OPTIONAL),
+                            'instructorchoiceallowroster' => new external_value(PARAM_INT, 'Instructor choice allow roster',
+                                                                                VALUE_OPTIONAL),
+                            'instructorchoiceallowsetting' => new external_value(PARAM_INT, 'Instructor choice allow setting',
+                                                                                 VALUE_OPTIONAL),
+                            'instructorcustomparameters' => new external_value(PARAM_RAW, 'instructor custom parameters',
+                                                                                VALUE_OPTIONAL),
+                            'instructorchoiceacceptgrades' => new external_value(PARAM_INT, 'instructor choice accept grades',
+                                                                                    VALUE_OPTIONAL),
+                            'grade' => new external_value(PARAM_INT, 'Enable grades', VALUE_OPTIONAL),
+                            'launchcontainer' => new external_value(PARAM_INT, 'Launch container mode', VALUE_OPTIONAL),
+                            'resourcekey' => new external_value(PARAM_RAW, 'Resource key', VALUE_OPTIONAL),
+                            'password' => new external_value(PARAM_RAW, 'Shared secret', VALUE_OPTIONAL),
+                            'debuglaunch' => new external_value(PARAM_INT, 'Debug launch', VALUE_OPTIONAL),
+                            'showtitlelaunch' => new external_value(PARAM_INT, 'Show title launch', VALUE_OPTIONAL),
+                            'showdescriptionlaunch' => new external_value(PARAM_INT, 'Show description launch', VALUE_OPTIONAL),
+                            'servicesalt' => new external_value(PARAM_RAW, 'Service salt', VALUE_OPTIONAL),
+                            'icon' => new external_value(PARAM_URL, 'Alternative icon URL', VALUE_OPTIONAL),
+                            'secureicon' => new external_value(PARAM_URL, 'Secure icon URL', VALUE_OPTIONAL),
+                            'section' => new external_value(PARAM_INT, 'course section id', VALUE_OPTIONAL),
+                            'visible' => new external_value(PARAM_INT, 'visible', VALUE_OPTIONAL),
+                            'groupmode' => new external_value(PARAM_INT, 'group mode', VALUE_OPTIONAL),
+                            'groupingid' => new external_value(PARAM_INT, 'group id', VALUE_OPTIONAL),
+                        ), 'Tool'
+                    )
+                ),
+                'warnings' => new external_warnings(),
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_view_lti_parameters() {
+        return new external_function_parameters(
+            array(
+                'ltiid' => new external_value(PARAM_INT, 'lti instance id')
+            )
+        );
+    }
+
+    /**
+     * Trigger the course module viewed event and update the module completion status.
+     *
+     * @param int $ltiid the lti instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_lti_view_lti($ltiid) {
+        global $DB;
+
+        $params = self::validate_parameters(self::mod_lti_view_lti_parameters(),
+                                            array(
+                                                'ltiid' => $ltiid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $lti = $DB->get_record('lti', array('id' => $params['ltiid']), '*', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($lti, 'lti');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+        require_capability('mod/lti:view', $context);
+
+        // Trigger course_module_viewed event and completion.
+        mod_lti_view($lti, $course, $cm, $context);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_lti_view_lti_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
             )
         );
     }
@@ -4447,7 +5092,8 @@ class local_mobile_external extends external_api {
         // If we have the capability, delete all the passed responses.
         if (has_capability('mod/choice:deleteresponses', $context)) {
             if (empty($params['responses'])) {
-                $params['responses'] = array_keys(choice_get_my_response($choice));
+                // Get all the responses for the choice.
+                $params['responses'] = array_keys(choice_get_all_responses($choice));
             }
             $status = choice_delete_responses($params['responses'], $choice, $cm, $course);
         } else if ($choice->allowupdate) {
@@ -4502,6 +5148,372 @@ class local_mobile_external extends external_api {
             array(
                 'status' => new external_value(PARAM_BOOL, 'status, true if everything went right'),
                 'warnings' => new external_warnings(),
+            )
+        );
+    }
+
+
+    /**
+     * Describes the parameters for get_surveys_by_courses.
+     *
+     * @return external_external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_get_surveys_by_courses_parameters() {
+        return new external_function_parameters (
+            array(
+                'courseids' => new external_multiple_structure(
+                    new external_value(PARAM_INT, 'course id'), 'Array of course ids', VALUE_DEFAULT, array()
+                ),
+            )
+        );
+    }
+
+    /**
+     * Returns a list of surveys in a provided list of courses,
+     * if no list is provided all surveys that the user can view will be returned.
+     *
+     * @param array $courseids the course ids
+     * @return array of surveys details
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_get_surveys_by_courses($courseids = array()) {
+        global $CFG, $USER, $DB;
+
+        $returnedsurveys = array();
+        $warnings = array();
+
+        $params = self::validate_parameters(self::mod_survey_get_surveys_by_courses_parameters(), array('courseids' => $courseids));
+
+        if (empty($params['courseids'])) {
+            $params['courseids'] = array_keys(enrol_get_my_courses());
+        }
+
+        // Ensure there are courseids to loop through.
+        if (!empty($params['courseids'])) {
+
+            list($courses, $warnings) = external_util::validate_courses($params['courseids']);
+
+            // Get the surveys in this course, this function checks users visibility permissions.
+            // We can avoid then additional validate_context calls.
+            $surveys = get_all_instances_in_courses("survey", $courses);
+            foreach ($surveys as $survey) {
+                $context = context_module::instance($survey->coursemodule);
+                // Entry to return.
+                $surveydetails = array();
+                // First, we return information that any user can see in the web interface.
+                $surveydetails['id'] = $survey->id;
+                $surveydetails['coursemodule']      = $survey->coursemodule;
+                $surveydetails['course']            = $survey->course;
+                $surveydetails['name']              = external_format_string($survey->name, $context->id);
+
+                if (has_capability('mod/survey:participate', $context)) {
+                    $trimmedintro = trim($survey->intro);
+                    if (empty($trimmedintro)) {
+                        $tempo = $DB->get_field("survey", "intro", array("id" => $survey->template));
+                        $survey->intro = get_string($tempo, "survey");
+                    }
+
+                    // Format intro.
+                    list($surveydetails['intro'], $surveydetails['introformat']) =
+                        external_format_text($survey->intro, $survey->introformat, $context->id, 'mod_survey', 'intro', null);
+
+                    $surveydetails['template']  = $survey->template;
+                    $surveydetails['days']      = $survey->days;
+                    $surveydetails['questions'] = $survey->questions;
+                    $surveydetails['surveydone'] = survey_already_done($survey->id, $USER->id) ? 1 : 0;
+
+                }
+
+                if (has_capability('moodle/course:manageactivities', $context)) {
+                    $surveydetails['timecreated']   = $survey->timecreated;
+                    $surveydetails['timemodified']  = $survey->timemodified;
+                    $surveydetails['section']       = $survey->section;
+                    $surveydetails['visible']       = $survey->visible;
+                    $surveydetails['groupmode']     = $survey->groupmode;
+                    $surveydetails['groupingid']    = $survey->groupingid;
+                }
+                $returnedsurveys[] = $surveydetails;
+            }
+        }
+        $result = array();
+        $result['surveys'] = $returnedsurveys;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Describes the get_surveys_by_courses return value.
+     *
+     * @return external_single_structure
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_get_surveys_by_courses_returns() {
+        return new external_single_structure(
+            array(
+                'surveys' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id' => new external_value(PARAM_INT, 'Survey id'),
+                            'coursemodule' => new external_value(PARAM_INT, 'Course module id'),
+                            'course' => new external_value(PARAM_INT, 'Course id'),
+                            'name' => new external_value(PARAM_RAW, 'Survey name'),
+                            'intro' => new external_value(PARAM_RAW, 'The Survey intro', VALUE_OPTIONAL),
+                            'introformat' => new external_format_value('intro', VALUE_OPTIONAL),
+                            'template' => new external_value(PARAM_INT, 'Survey type', VALUE_OPTIONAL),
+                            'days' => new external_value(PARAM_INT, 'Days', VALUE_OPTIONAL),
+                            'questions' => new external_value(PARAM_RAW, 'Question ids', VALUE_OPTIONAL),
+                            'surveydone' => new external_value(PARAM_INT, 'Did I finish the survey?', VALUE_OPTIONAL),
+                            'timecreated' => new external_value(PARAM_INT, 'Time of creation', VALUE_OPTIONAL),
+                            'timemodified' => new external_value(PARAM_INT, 'Time of last modification', VALUE_OPTIONAL),
+                            'section' => new external_value(PARAM_INT, 'Course section id', VALUE_OPTIONAL),
+                            'visible' => new external_value(PARAM_INT, 'Visible', VALUE_OPTIONAL),
+                            'groupmode' => new external_value(PARAM_INT, 'Group mode', VALUE_OPTIONAL),
+                            'groupingid' => new external_value(PARAM_INT, 'Group id', VALUE_OPTIONAL),
+                        ), 'Surveys'
+                    )
+                ),
+                'warnings' => new external_warnings(),
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_view_survey_parameters() {
+        return new external_function_parameters(
+            array(
+                'surveyid' => new external_value(PARAM_INT, 'survey instance id')
+            )
+        );
+    }
+
+    /**
+     * Trigger the course module viewed event and update the module completion status.
+     *
+     * @param int $surveyid the survey instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_survey_view_survey($surveyid) {
+        global $DB, $USER;
+
+        $params = self::validate_parameters(self::mod_survey_view_survey_parameters(),
+                                            array(
+                                                'surveyid' => $surveyid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $survey = $DB->get_record('survey', array('id' => $params['surveyid']), '*', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($survey, 'survey');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+        require_capability('mod/survey:participate', $context);
+
+        $viewed = survey_already_done($survey->id, $USER->id) ? 'graph' : 'form';
+
+        // Trigger course_module_viewed event and completion.
+        survey_view($survey, $course, $cm, $context, $viewed);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_view_survey_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_get_questions_parameters() {
+        return new external_function_parameters(
+            array(
+                'surveyid' => new external_value(PARAM_INT, 'survey instance id')
+            )
+        );
+    }
+
+    /**
+     * Get the complete list of questions for the survey, including subquestions.
+     *
+     * @param int $surveyid the survey instance id
+     * @return array of warnings and the question list
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_survey_get_questions($surveyid) {
+        global $DB, $USER;
+
+        $params = self::validate_parameters(self::mod_survey_get_questions_parameters(),
+                                            array(
+                                                'surveyid' => $surveyid
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $survey = $DB->get_record('survey', array('id' => $params['surveyid']), '*', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($survey, 'survey');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+        require_capability('mod/survey:participate', $context);
+
+        $mainquestions = survey_get_questions($survey);
+
+        foreach ($mainquestions as $question) {
+            if ($question->type >= 0) {
+                // Parent is used in subquestions.
+                $question->parent = 0;
+                $questions[] = survey_translate_question($question);
+
+                // Check if the question has subquestions.
+                if ($question->multi) {
+                    $subquestions = survey_get_subquestions($question);
+                    foreach ($subquestions as $sq) {
+                        $sq->parent = $question->id;
+                        $questions[] = survey_translate_question($sq);
+                    }
+                }
+            }
+        }
+
+        $result = array();
+        $result['questions'] = $questions;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_get_questions_returns() {
+        return new external_single_structure(
+            array(
+                'questions' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id' => new external_value(PARAM_INT, 'Question id'),
+                            'text' => new external_value(PARAM_RAW, 'Question text'),
+                            'shorttext' => new external_value(PARAM_RAW, 'Question short text'),
+                            'multi' => new external_value(PARAM_RAW, 'Subquestions ids'),
+                            'intro' => new external_value(PARAM_RAW, 'The question intro'),
+                            'type' => new external_value(PARAM_INT, 'Question type'),
+                            'options' => new external_value(PARAM_RAW, 'Question options'),
+                            'parent' => new external_value(PARAM_INT, 'Parent question (for subquestions)'),
+                        ), 'Questions'
+                    )
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Describes the parameters for submit_answers.
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_submit_answers_parameters() {
+        return new external_function_parameters(
+            array(
+                'surveyid' => new external_value(PARAM_INT, 'Survey id'),
+                'answers' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'key' => new external_value(PARAM_RAW, 'Answer key'),
+                            'value' => new external_value(PARAM_RAW, 'Answer value')
+                        )
+                    )
+                ),
+            )
+        );
+    }
+
+    /**
+     * Submit the answers for a given survey.
+     *
+     * @param int $surveyid the survey instance id
+     * @param array $answers the survey answers
+     * @return array of warnings and status result
+     * @since Moodle 3.0
+     * @throws moodle_exception
+     */
+    public static function mod_survey_submit_answers($surveyid, $answers) {
+        global $DB, $USER;
+
+        $params = self::validate_parameters(self::mod_survey_submit_answers_parameters(),
+                                            array(
+                                                'surveyid' => $surveyid,
+                                                'answers' => $answers
+                                            ));
+        $warnings = array();
+
+        // Request and permission validation.
+        $survey = $DB->get_record('survey', array('id' => $params['surveyid']), '*', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($survey, 'survey');
+
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+        require_capability('mod/survey:participate', $context);
+
+        if (survey_already_done($survey->id, $USER->id)) {
+            throw new moodle_exception("alreadysubmitted", "survey");
+        }
+
+        // Build the answers array. Data is cleaned inside the survey_save_answers function.
+        $answers = array();
+        foreach ($params['answers'] as $answer) {
+            $key = $answer['key'];
+            $answers[$key] = $answer['value'];
+        }
+
+        survey_save_answers($survey, $answers, $course, $context);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.0
+     */
+    public static function mod_survey_submit_answers_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings()
             )
         );
     }

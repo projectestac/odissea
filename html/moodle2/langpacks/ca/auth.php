@@ -129,7 +129,7 @@ $string['recaptcha_help'] = 'El CAPTCHA s\'usa per evitar l\'abús dels programe
 
 Si no sabeu segur quines paraules són, podeu provar un altre CAPTCHA o bé un CAPTCHA sonor.';
 $string['selfregistration'] = 'Autoregistre';
-$string['selfregistration_help'] = 'Si seleccioneu un connector d\'autenticació, per exemple l\'autoregistre basat en correu electrònic, usuaris potencials es podran inscriure i crear comptes. Això fa possible que s\'enviï brossa a fòrums, blogs, etc. Per evitar aquest perill, inhabiliteu l\'autoregistre o limiteu-lo mitjançant el paràmetre <em>Dominis de correu permesos</em>';
+$string['selfregistration_help'] = 'Si seleccioneu un connector d\'autenticació, com ara l\'autoregistre basat en correu electrònic, llavors es permet que usuaris potencials s\'inscriguin i creïn comptes. Això fa possible que s\'enviï brossa a fòrums, blogs, etc. Per evitar aquest perill, inhabiliteu l\'autoregistre o limiteu-lo mitjançant el paràmetre <em>Dominis de correu permesos</em>.';
 $string['sha1'] = 'Resum SHA-1';
 $string['showguestlogin'] = 'Podeu ocultar o mostrar el botó d\'inici de sessió com a visitant a la pàgina d\'inici de sessió.';
 $string['stdchangepassword'] = 'Utilitza la pàgina estàndard de canvi de contrasenya';
@@ -146,4 +146,4 @@ $string['update_oncreate'] = 'En crear';
 $string['update_onlogin'] = 'En cada inici de sessió';
 $string['update_onupdate'] = 'En actualitzar';
 $string['user_activatenotsupportusertype'] = 'auth: l\'user_activate() de l\'ldap no suporta el tipus d\'usuari seleccionat: {$a}';
-$string['user_disablenotsupportusertype'] = 'auth: l\'user_disable() de l\'ldap no suporta el tipus d\'usuari seleccionat (..encara)';
+$string['user_disablenotsupportusertype'] = 'auth: l\'user_disable() de l\'ldap no admet el tipus d\'usuari seleccionat (...encara)';

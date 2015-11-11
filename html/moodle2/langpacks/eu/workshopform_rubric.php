@@ -35,5 +35,6 @@ $string['layoutgrid'] = 'Sareta';
 $string['layoutlist'] = 'Zerrenda';
 $string['levelgroup'] = 'Mailarako kalifikazioa eta definizioa';
 $string['levels'] = 'Mailak';
+$string['mustbeunique'] = 'Mailarako kalifikazioek bakarrak izan behar dute irizpide baten barruan';
 $string['mustchooseone'] = 'Elementu hauetako bat aukeratu behar duzu';
 $string['pluginname'] = 'Errubrika';

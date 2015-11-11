@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['comp_calcs_help'] = '<p>您可以此栏位增加计算结果，例如注册于此课程的平均人数</p>
+<p>更多帮助: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">外链文档</a></p>';
 $string['componenthelp'] = '组件帮助';
 $string['dbpass'] = '数据库密码';
 $string['filteruser'] = '当前课程用户';

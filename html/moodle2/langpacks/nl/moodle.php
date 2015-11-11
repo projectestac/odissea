@@ -1734,7 +1734,7 @@ $string['starpending'] = '[*]=cursus wacht op goedkeuring';
 $string['startdate'] = 'Begindatum van de cursus';
 $string['startdate_help'] = 'Deze instelling bepaalt de start van de eerste week voor een cursus in weekformat. Ze bepaalt ook de vroegste datum waarvoor logs voor deze cursus beschikbaar zullen zijn.';
 $string['startingfrom'] = 'Starten vanaf';
-$string['startsignup'] = 'Nieuwe account maken';
+$string['startsignup'] = 'Nieuw account maken';
 $string['state'] = 'Staat / Provincie';
 $string['statistics'] = 'Statistieken';
 $string['statisticsgraph'] = 'Statistieken: grafiek';

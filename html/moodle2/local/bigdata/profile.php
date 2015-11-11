@@ -33,7 +33,11 @@ switch($action) {
             'log.time', 'log.userid', 'log.course', 'log.module', 'log.cmid', 'log.action', 'context.contextlevel', 'context.instanceid', 'course_modules.course',
             'course_modules.module', 'course_modules.instance', 'course_modules.added', 'assignment_submissions.assignment', 'assignment_submissions.userid',
             'assignment_submissions.timecreated', 'assign_submission.assignment', 'assign_submission.userid', 'assign_submission.timecreated', 'files.userid',
-            'files.status', 'files.timecreated', 'files.timemodified');
+            'files.status', 'files.timecreated', 'files.timemodified',
+            'logstore_standard_log.eventname', 'logstore_standard_log.component', 'logstore_standard_log.action', 'logstore_standard_log.objecttable',
+            'logstore_standard_log.objectid', 'logstore_standard_log.edulevel', 'logstore_standard_log.contextid', 'logstore_standard_log.contextlevel',
+            'logstore_standard_log.contextinstanceid', 'logstore_standard_log.contextlevel', 'logstore_standard_log.userid', 'logstore_standard_log.courseid',
+            'logstore_standard_log.timecreated', 'logstore_standard_log.crud');
 
         $modules = $DB->get_fieldset_select('modules', 'name', "");
         foreach ($modules as $module) {

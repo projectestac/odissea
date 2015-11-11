@@ -117,12 +117,11 @@ $string['basicideasofquiz'] = '小テスト作成の基本的な考え方';
 $string['bestgrade'] = '最高評点';
 $string['bothattempts'] = '受験済みおよび未受験の学生を表示';
 $string['browsersecurity'] = 'ブラウザセキュリティ';
-$string['browsersecurity_help'] = 'Javaスクリプトセキュリティ対策を含んだフルスクリーンポップアップを選択した場合:
+$string['browsersecurity_help'] = 'JavaScriptセキュリティ対策を含んだフルスクリーンポップアップを選択した場合:
 
-* 学生がJavaスクリプトの利用を有効にしているブラウザのみ、小テスト受験を開始することができます。
+* 学生がJavaScriptの利用を有効にしているブラウザのみ、小テスト受験を開始することができます。
 * 小テストはフルスクリーンのポップアップウィンドウ上に表示され、ナビゲーションコントロールはありません。
-* 可能な範囲でコピー&ペーストのような機能を学生が使用できないようにします。
-';
+* 可能な範囲でコピー&ペーストのような機能を学生が使用できないようにします。';
 $string['calculated'] = '計算問題';
 $string['calculatedquestion'] = '{$a} 行の計算された問題はサポートされていません。問題は無視されました。';
 $string['cannotcreatepath'] = 'パス ({$a}) が作成できません。';
@@ -141,7 +140,7 @@ $string['cannotsavenumberofquestion'] = 'ページごとの問題数を保存で
 $string['cannotsavequestion'] = '問題リストを保存できません。';
 $string['cannotsetgrade'] = '小テストの新たな最大評点を設定できませんでした。';
 $string['cannotsetsumgrades'] = '評点合計を設定できませんでした。';
-$string['cannotstartgradesmismatch'] = 'この小テストの受験を開始できません。小テストは最大評点 {$a->grade} に設定されているようですが、小テスト内に評定できる問題が存在しません。これは「小テストの編集」ページにて修正することができます。';
+$string['cannotstartgradesmismatch'] = 'この小テストの受験を開始できません。小テストは最大評点 {$a->grade} に設定されているようですが、小テスト内に評定できる問題が存在しません。これは「小テストの編集」ページで修正することができます。';
 $string['cannotstartmissingquestion'] = 'この小テストの受験を開始できません。小テストの定義に存在しない問題が含まれています。';
 $string['cannotstartnoquestions'] = 'この小テストの受験を開始できません。まだ、小テストが設定されていません。問題が追加されていません。';
 $string['cannotwrite'] = 'エクスポートファイル ({$a}) を書き込めません。';
@@ -184,7 +183,7 @@ $string['confignavmethod'] = 'フリーナビゲーションでは、ナビゲ�
 $string['confignewpageevery'] = '問題を小テストに追加する場合、あなたがここで選択した設定に基づき、改ページ (Page break) が自動的に挿入されます。';
 $string['configoutcomesadvanced'] = 'このオプションを有効にした場合、小テスト編集フォームのアウトカムは高度な設定になります。';
 $string['configpenaltyscheme'] = 'アダプティブモードの場合、それぞれの誤答に関して、ペナルティーが差し引かれます。';
-$string['configpopup'] = '小テストの受験時、ポップアップウィンドを開きます。また、小テストの受験中、コピー&ペースト等を制限するため、Javaスクリプトを使用します。';
+$string['configpopup'] = '小テストの受験時、ポップアップウィンドを開きます。また、小テストの受験中、コピー&ペースト等を制限するため、JavaScriptを使用します。';
 $string['configrequirepassword'] = '学生が小テストを受験するにはこのパスワードを事前に入力する必要があります。';
 $string['configrequiresubnet'] = '学生は、これらのコンピュータからのみ小テストを受験することができます。';
 $string['configreviewoptions'] = 'これらのオプションでは、ユーザが小テスト受験をレビューまたは小テストレポートを閲覧する場合、どの情報を閲覧できるかコントロールします。';
@@ -291,7 +290,7 @@ $string['emailconfirmbody'] = '{$a->username} さん
 
 私たちがあなたの解答を正常に受信しましたので、この確認メールをお送りします。
 
-あなたは {$a->quizurl} にて、小テストにアクセスすることができます。';
+あなたは {$a->quizurl} で小テストにアクセスすることができます。';
 $string['emailconfirmsmall'] = '「 {$a->quizname} 」へのあなたの解答送信、ありがとうございます。';
 $string['emailconfirmsubject'] = '送信確認: {$a->quizname}';
 $string['emailnotifybody'] = '{$a->username} さん
@@ -510,7 +509,7 @@ $string['neverallononepage'] = 'なし、すべての問題を1ページに表�
 $string['newattemptfail'] = 'エラー: 小テストの新しい受験を開始できませんでした。';
 $string['newpage'] = '新しいページ';
 $string['newpageevery'] = '新しいページを自動的に開始する';
-$string['newpage_help'] = '<p>問題数の多い小テストの場合、1ページあたりの問題数を制限して、小テストを複数のページに分けることは理にかなっています。小テストのページに問題を追加する場合、この設定にしたがって改ページ (Page break) が自動的に挿入されます。後で小テストの編集ページにて、手動で改ページ (Page break) の位置を変えることもできます。 </p>';
+$string['newpage_help'] = '問題数の多い小テストの場合、1ページあたりの問題数を制限して、小テストを複数のページに分けることは理にかなっています。小テストのページに問題を追加する場合、この設定にしたがって改ページ (Page break) が自動的に挿入されます。後で小テストの編集ページで手動で改ページ (Page break) の位置を変えることもできます。';
 $string['noanswers'] = '答えが選択されていません!';
 $string['noattempts'] = 'この小テストは受験されていません。';
 $string['noattemptsfound'] = '受験は見つかりませんでした。';
@@ -540,7 +539,7 @@ $string['noreviewattempt'] = 'あなたはこの受験のレビューを許可�
 $string['noreviewshort'] = '許可なし';
 $string['noreviewuntil'] = 'あなたは {$a} までこの小テストのレビューはできません。';
 $string['noreviewuntilshort'] = '利用可能 {$a}';
-$string['noscript'] = '続けるにはJavaスクリプトを有効にしてください!';
+$string['noscript'] = '続けるにはJavaScriptを有効にしてください!';
 $string['notavailabletostudents'] = '注意: 現在あなたの学生は、この小テストを利用できません。';
 $string['notenoughrandomquestions'] = '問題 {$a->name} ({$a->id}) を作成するために十分な問題がカテゴリ {$a->category} 内にありません。';
 $string['notenoughsubquestions'] = '十分な副問題が定義されていません！<br />この問題を修正しますか？';
@@ -659,7 +658,7 @@ $string['questions'] = '問題';
 $string['questionsinclhidden'] = '問題 (隠された問題を含む)';
 $string['questionsinthisquiz'] = 'この小テストの問題';
 $string['questionsperpage'] = '1ページあたりの問題数';
-$string['questionsperpageselected'] = '1ページあたりの問題数が設定されたため、現在ページングは固定されています。結果として「改ページ調整」ボタンは、無効にされました。あなたは {$a} にて、この設定を変更することができます。';
+$string['questionsperpageselected'] = '1ページあたりの問題数が設定されたため、現在ページングは固定されています。結果として「改ページ調整」ボタンは無効にされました。あなたは {$a} でこの設定を変更することができます。';
 $string['questionsperpagex'] = '1ページあたりの問題数: {$a}';
 $string['questiontext'] = '問題テキスト';
 $string['questiontextisempty'] = '[空の問題テキスト]';
@@ -919,7 +918,7 @@ $string['timedelay'] = '次の小テストを受験するまでの待ち時間�
 $string['timeleft'] = '残り時間';
 $string['timelimit'] = '制限時間';
 $string['timelimitexeeded'] = '申し訳ございません! 小テストの制限時間を経過しました!';
-$string['timelimit_help'] = '有効にした場合、小テストの初期ページにて時間制限が開始されます。同時に小テストナビゲーションブロックにカウントダウンタイマーが表示されます。';
+$string['timelimit_help'] = '有効にした場合、小テストの初期ページで時間制限が開始されます。同時に小テストナビゲーションブロックにカウントダウンタイマーが表示されます。';
 $string['timelimitmin'] = '制限時間 (分)';
 $string['timelimitsec'] = '制限時間 (秒)';
 $string['timestr'] = '%y/%m/%d  %H:%M:%S';

@@ -10,6 +10,7 @@ class script_purgecaches extends agora_script_base{
 	protected $test = false;
 	public $cli = true;
 	public $api = true;
+	protected $category = "Utils";
 
 	protected function _execute($params = array(), $execute = true){
 		purge_all_caches();

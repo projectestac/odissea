@@ -105,13 +105,15 @@ $string['couldnotgetgoogleaccesstoken'] = 'The authentication provider sent us a
 $string['emailaddressmustbeverified'] = 'Your email address is not verified by the authentication method you selected. You likely have forgotten to click on a "verify email address"
 link that Google or Facebook should have sent you during your subscribtion to their service.';
 $string['faileduserdetails'] = 'The site succeed to connect to the selected provider but failed to retrieve your user details. If you are using Google, check that your site administrator has enabled the Google+ API in the Google developer console. It is the most common reason for this error.';
-$string['login'] = 'LOGIN';
 $string['moreproviderlink'] = 'Sign-in with another service.';
 $string['noaccountyet'] = 'You do not have permission to use the site yet. Please contact your administrator and ask them to activate your account.';
 $string['oauth2displaybuttons'] = 'Display buttons on login page';
 $string['oauth2displaybuttonshelp'] = 'Display the Google/Facebook/... logo buttons on the top of the login page.
 If you want to position the buttons yourself in your login page, you can keep this option disabled and add the following code: {$a}';
+$string['othermoodle'] = 'Other Moodle auth';
 $string['pluginname'] = 'Oauth2';
-$string['signinwithanaccount'] = 'Log in with:';
+$string['signinwithanaccount'] = 'Log in with {$a}';
+$string['stattitle'] = 'Login statistics for the last {$a->periodindays} days (starting from the plugin installation/upgrade time)';
+$string['supportmaintenance'] = 'To support the maintenance of this plugin, login to the <a target="_blank" href="https://moodle.org/plugins/view/auth_googleoauth2">Moodle.org plugin page</a> and click \'Add to my favourites\'. Thanks!';
 $string['unknownfirstname'] = 'Unknown Firstname';
 $string['unknownlastname'] = 'Unknown Lastname';

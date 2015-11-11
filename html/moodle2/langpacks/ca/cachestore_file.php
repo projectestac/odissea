@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['autocreate'] = 'Crea directori automàticament';
+$string['autocreate'] = 'Crea un directori automàticament';
 $string['autocreate_help'] = 'Si s\'habilita, el directori especificat al camí es crearà de forma automàtica si no existeix.';
 $string['path'] = 'Camí a la memòria cau';
 $string['path_help'] = 'El directori que serà utilitzat per emmagatzemar fitxers per aquesta memòria cau. Si es deixa en blanc (per defecte) es crearà un directori de forma automàtica al directori moodledata. Aquest pot utilitzar-se per dirigir el desament de fitxers cap a un directori en un disc de major rendiment (com ara un en memòria).';

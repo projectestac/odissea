@@ -470,7 +470,7 @@ Il docente può impostare il quiz affinché sia possibile tentarlo più volte co
 
 Ogni tentativo viene valutato automaticamente (ad eccezione delle domande componimento) e la valutazione viene memorizzata nel registro del valutatore.
 
-Il docente può decidere quando e come far vedere agli studenti le risposte corrette, i feedback ed eventuali suggerimenti.
+Il docente può decidere quando e come far vedere agli studenti le risposte esatte, i feedback ed eventuali suggerimenti.
 
 E\' possibile usare il quiz per:
 
@@ -631,7 +631,7 @@ $string['questionsinthisquiz'] = 'Domande in questo quiz';
 $string['questionsperpage'] = 'Domande per pagina';
 $string['questionsperpageselected'] = 'E\' stato definito il numero di domande per pagina per cui l\'impaginazione è al momento bloccata. Come risultato, i controlli per l\'impaginazione sono stati disabilitati. Questo si può cambiare in {$a}.';
 $string['questionsperpagex'] = 'Domande per pagina: {$a}';
-$string['questiontext'] = 'Testo domanda';
+$string['questiontext'] = 'Testo della domanda';
 $string['questiontextisempty'] = '[Testo della domanda mancante]';
 $string['questiontype'] = 'Tipo domanda {$a}';
 $string['questiontypesetupoptions'] = 'Opzioni di impostazione per i tipi domanda:';
@@ -803,7 +803,7 @@ $string['showblocks'] = 'Visualizza i blocchi durante lo svolgimento del quiz';
 $string['showblocks_help'] = 'Se impostato a si, i blocchi saranno visualizzati durante lo svolgimento del quiz.';
 $string['showbreaks'] = 'Visualizza salti pagina';
 $string['showcategorycontents'] = 'Visualizza il contenuto della categoria {$a->arrow}';
-$string['showcorrectanswer'] = 'Visualizzare le risposte corrette nel feedback?';
+$string['showcorrectanswer'] = 'Visualizzare le risposte esatte nel feedback?';
 $string['showdetailedmarks'] = 'Visualizza dettagli punteggio';
 $string['showeachpage'] = 'Visualizza una pagina alla volta';
 $string['showfeedback'] = 'Visualizzare il feedback dopo le risposte?';

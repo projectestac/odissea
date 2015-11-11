@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = '増分値';
-$string['incby1_help'] = 'この値は毎回セクションリンクが1から開始される場合に増分されるセクションです。';
+$string['incby1_help'] = 'この値は毎回セクションリンクが1から表示される場合に増分されるセクションです。';
 $string['incby2'] = '代替増分値';
-$string['incby2_help'] = 'この値は毎回セクションリンクが1から開始される場合に増分されるセクションです。';
-$string['jumptocurrenttopic'] = '現在のトピックへ移動する';
-$string['jumptocurrentweek'] = '現在の週へ移動する';
+$string['incby2_help'] = 'この値は毎回セクションリンクが1から表示される場合に増分されるセクションです。';
+$string['jumptocurrenttopic'] = '現在のトピックへジャンプする';
+$string['jumptocurrentweek'] = '現在の週へジャンプする';
 $string['numsections1'] = 'セクション数';
 $string['numsections1_help'] = 'この値にコース内セクション数が到達した場合、増分値が使用されます。';
 $string['numsections2'] = '代替セクション数';

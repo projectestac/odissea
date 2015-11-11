@@ -138,7 +138,7 @@ $string['importgroups_help'] = 'テキストファイル経由でグループを
 * 先頭レコードには、残りのデータのフォーマットを定義したフィールド名を記述してください。
 * 必須フィールド名は「groupname」です。
 * 任意フィールド名は「description」「enrolmentkey」「picture」「hidepicture」です。';
-$string['javascriptrequired'] = 'このページではJavaスクリプトを有効にする必要があります。';
+$string['javascriptrequired'] = 'このページではJavaScriptを有効にする必要があります。';
 $string['members'] = 'グループあたりのメンバー数';
 $string['membersofselectedgroup'] = 'メンバー:';
 $string['namingscheme'] = 'ネーミングスキーム';

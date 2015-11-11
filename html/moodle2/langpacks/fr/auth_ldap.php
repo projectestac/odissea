@@ -47,7 +47,7 @@ $string['auth_ldap_expiration_desc'] = 'Si vous voulez désactiver le contrôle 
 $string['auth_ldap_expiration_key'] = 'Échéance';
 $string['auth_ldap_expiration_warning_desc'] = 'Nombre de jours avant que l\'avertissement d\'échéance soit affiché.';
 $string['auth_ldap_expiration_warning_key'] = 'Avertissement d\'échéance';
-$string['auth_ldap_expireattr_desc'] = 'Facultatif : ne pas tenir compte de l\'attribut ldap contenant la durée d\'échéance du mot de passe';
+$string['auth_ldap_expireattr_desc'] = 'Facultatif : court-circuite l\'attribut LDAP contenant la durée d\'échéance du mot de passe.';
 $string['auth_ldap_expireattr_key'] = 'Attribut d\'échéance';
 $string['auth_ldapextrafields'] = '<p>Ces zones sont facultatives. Il vous est possible de remplir certains champs de Moodle avec des données provenant des <strong>attributs de l\'annuaire LDAP</strong>.</p><p>Si vous laissez ces zones vides, aucune donnée ne sera récupérée de l\'annuaire LDAP et les valeurs par défaut de Moodle seront utilisées.</p><p>Dans tous les cas, l\'utilisateur a la possibilité de modifier tous ces champs, une fois connecté.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Facultatif : ne pas tenir compte de l\'attribut gracelogin';
@@ -70,7 +70,7 @@ $string['auth_ldap_noconnect_all'] = 'Le module LDAP ne peut pas se connecter à
 $string['auth_ldap_noextension'] = '<em>Le module LDAP de PHP ne semble pas être installé. Veuillez vous assurer qu\'il est bien installé et activé si vous voulez utiliser ce plugin d\'authentification.</em>';
 $string['auth_ldap_no_mbstring'] = 'L\'extension mbstring est nécessaire pour créer des utilisateurs dans Active Directory.';
 $string['auth_ldapnotinstalled'] = 'Impossible d\'utiliser l\'authentification LDAP. Le module PHP LDAP n\'est pas installé.';
-$string['auth_ldap_objectclass'] = 'Le filtre utilisé pour rechercher/renommer des utilisateurs. On y mettra d\'habitude quelque chose comme objectClass=posixAccount. La valeur par défaut est objectClass=*, ce qui retournera tous les objets du serveur LDAP.';
+$string['auth_ldap_objectclass'] = 'Facultatif : court-circuite la classe objectClass utilisée pour rechercher/renommer des utilisateurs sur ldap_user_type. Il n\'est habituellement pas nécessaire de modifier ce réglage.';
 $string['auth_ldap_objectclass_key'] = 'Classe objet';
 $string['auth_ldap_opt_deref'] = 'Détermine le traitement des alias durant la recherche. Veuillez sélectionner une des valeurs suivantes : « Non » (LDAP_DEREF_NEVER) ou « Oui » (LDAP_DEREF_ALWAYS)';
 $string['auth_ldap_opt_deref_key'] = 'Dé-référencer les alias';

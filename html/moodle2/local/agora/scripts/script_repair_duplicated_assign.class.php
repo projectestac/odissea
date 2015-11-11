@@ -9,6 +9,7 @@ class script_repair_duplicated_assign extends agora_script_base{
 	public $cron = false;
 	public $cli = true;
 	protected $test = true;
+	protected $category = "Check and repair";
 
 	public function params(){
 		$params = array();

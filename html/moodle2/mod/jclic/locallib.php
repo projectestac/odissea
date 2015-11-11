@@ -474,11 +474,11 @@ function jclic_view_dates($jclic, $cm) {
 
     echo $OUTPUT->box_start('generalbox boxaligncenter jclicdates', 'dates');
     if ($jclic->timeavailable) {
-        echo '<div class="title-time">'.get_string('availabledate', 'assignment').': </div>';
+        echo '<div class="title-time">'.get_string('availabledate', 'jclic').': </div>';
         echo '<div class="data-time">'.userdate($jclic->timeavailable).'</div>';
     }
     if ($jclic->timedue) {
-        echo '<div class="title-time">'.get_string('duedate', 'assignment').': </div>';
+        echo '<div class="title-time">'.get_string('duedate', 'jclic').': </div>';
         echo '<div class="data-time">'.userdate($jclic->timedue).'</div>';
     }
     echo $OUTPUT->box_end();

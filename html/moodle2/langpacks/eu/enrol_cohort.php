@@ -32,3 +32,4 @@ $string['cohort:unenrol'] = 'Desmatrikulatu kontua etenda duten erabiltzaileak';
 $string['instanceexists'] = 'Kohortea dagoeneko sinkronizatu da aukeratutako rolarekin';
 $string['pluginname'] = 'Sinkronizatu kohortea';
 $string['pluginname_desc'] = 'Kohorteak matrikulatzeko pluginak kohorte jakin bateko partaideak ikastaroko partaideekin sinkronizatzen ditu.';
+$string['status'] = 'Aktiboa';

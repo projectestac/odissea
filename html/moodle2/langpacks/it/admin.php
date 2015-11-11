@@ -262,7 +262,7 @@ $string['configintroadmin'] = 'In questa pagina devi configurare l\'account dell
 $string['configintrosite'] = 'Questa pagina consente di configurare la pagina home e il nome di questo sito.
 In un secondo momento sarà possibile tornare su questa pagina e modificare le impostazioni tramite il menu Amministrazione';
 $string['configiplookup'] = 'Quando si clicca su un indirizzo IP (come per es. 34.12.222.93), come riportato nei log, viene visualizzata una mappa con la localizzazione più probabile di quel IP. Ci sono diversi plugin che si possono scegliere per ottenere questo, ciascuno con i suoi pro e contro.';
-$string['configkeeptagnamecase'] = 'Spunta questa opzione se vuoi che i nomi delle Tag mantengano i caratteri maiuscoli/minuscoli come definiti dall\'utente che li ha creati.';
+$string['configkeeptagnamecase'] = 'I tag inseriti manterranno i caratteri maiuscoli/minuscoli.';
 $string['configlang'] = 'La lingua di default del sito. Gli utenti che lo desiderano potranno modificare l\'impostazione nel proprio profilo.';
 $string['configlanglist'] = 'Lascia vuoto se vuoi consentire agli utenti di scegliere tra tutte le lingue installate. Se preferisci, si può abbreviare il menu delle lingue inserendo un elenco dei codici lingua separati da virgole.
 Per esempio: en, es_es, it, fr';
@@ -353,8 +353,7 @@ $string['configsitedefaultlicense'] = 'Licenza di default del sito';
 $string['configsitedefaultlicensehelp'] = 'La licenza di default sarà quella usata per pubblicare contenuti in questo sito';
 $string['configsitemaxcategorydepth'] = 'Numero max. sotto categorie';
 $string['configsitemaxcategorydepthhelp'] = 'La profondità massima di sotto categorie visualizzate aperte nelle pagine contenenti elenchi di categorie o  elenchi combinati. Le sotto categorie nidificate più profondamente del valore impostato saranno visualizzate come link e potranno essere aperte tramite richieste AJAX.';
-$string['configslasharguments'] = 'I file e le immagini vengono serviti mediante uno script che utilizza gli \'slash arguments\', impostazione che consente di migliorare la gestione dei file nella cache del browser o del proxy server.
-Sfortunatamente alcuni server PHP non consentono l\'utilizzo di tale impostazione, quindi se riscontri  problemi nel visualizzare file e/o immagini (ad esempio le immagini del profilo utente), disabilita questa impostazione.';
+$string['configslasharguments'] = 'L\'impostazione \'slash arguments\' (che utilizza <em>PATH_INFO</em>) è necessaria per eseguire pacchetti SCORM e per visualizzare correttamente risorse con più file. Qualora il web server dove è installato Moodle non supporti gli \'slash arguments\' è possibile disabilitare l\'impostazione sebbene questo comprometterà il mancato funzionamento di alcuni elementi.<br />Nota: l\'impostazione \'slash arguments\' diventerà obbligatoria in future versioni di Moodle.';
 $string['configsmartpix'] = 'Con questa impostazione, le icone sono gestite tramite uno script PHP che le cerca prima nel tema grafico corrente, poi in tutti i temi a livello superiore i quindi nella cartella di Moodle /pix. Questo riduce il bisogno di duplicare le immagini all\'interno dei temi, anche se con un piccolo costo di performance.';
 $string['configstartwday'] = 'Inizio settimana';
 $string['configstatsfirstrun'] = 'Questa impostazione definisce, per la <b>prima elaborazione</b> delle statistiche dei log, da quanto indietro nel tempo devono essere elaborati i log. Se avete molto traffico e non avete un server dedicato, probabilmente non è una buona idea tornare troppo indietro nel tempo, l\'elaborazione potrebbe essere abbastanza lunga ed esosa in termini di risorse necessarie. (Notare che nell\'impostazione , 1 mese = 28 giorni. Nei grafici e nei report generati, 1 mese = 1 mese del calendario.)';
@@ -622,7 +621,7 @@ $string['iplookupgeoplugin'] = 'Per ricavare le informazioni geografiche viene u
 $string['iplookupinfo'] = 'Per default Moodle usa il server online gratuito NetGeo (The Internet Geographic Database) per cercare le località degli indirizzi IP. Sfortunatamente questo server non è più aggiornato e può rispondere con dati <em>non corretti</em>. Si raccomanda di installare localmente una copia del database gratuito GeoLite City da MaxMind.<br/>
 Le località degli indirizzi IP sono visualizzate su una semplice mappa o usando Google Maps. Notare che bisogna avere un Google account e richiedere una Google Maps API key gratuita per abilitare le mappe interattive.';
 $string['iplookupmaxmindnote'] = 'Questo prodotto include dati GeoLite creati da MaxMind, disponibili su <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
-$string['keeptagnamecase'] = 'Caratteri nomi Tag originali';
+$string['keeptagnamecase'] = 'Mantieni maiuscole/minuscole nei tag';
 $string['lang'] = 'Lingua di default';
 $string['langcache'] = 'Cache del menu delle lingue';
 $string['langcache_desc'] = 'Cache del menu del lingue. Consente di avere in cache l\'elenco delle traduzioni disponibili. La cache viene aggiornata tutte le volte che si installa o si elimina in language pack tramite il gestore dei language pack di Moodle. Se installi un language pack a mano, per aggiornare la cache dovrai ricordarti di usare la funzione "Svuota tutte le cache".';

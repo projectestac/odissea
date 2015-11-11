@@ -110,7 +110,7 @@ $string['configusermarksread'] = '「Yes」に設定した場合、ユーザは�
 $string['confirmsubscribe'] = '本当にフォーラム「 {$a} 」を購読してもよろしいですか?';
 $string['confirmsubscribediscussion'] = '本当にフォーラム「 {$a->forum} 」内のディスカッション「 {$a->discussion} 」を購読してもよろしいですか?';
 $string['confirmunsubscribe'] = '本当にフォーラム「 {$a} 」から購読解除してもよろしいですか?';
-$string['confirmunsubscribediscussion'] = '本当にフォーラム「 {$a->forum} 」内のディスカッション「 {$a->discussion} 」を購読解除してもよろしいですか?';
+$string['confirmunsubscribediscussion'] = '本当にフォーラム「 {$a->forum} 」内のディスカッション「 {$a->discussion} 」から購読解除してもよろしいですか?';
 $string['couldnotadd'] = 'エラーのため投稿できませんでした。';
 $string['couldnotdeletereplies'] = '申し訳ございません、返信済みのため削除できませんでした。';
 $string['couldnotupdate'] = '未確認エラーのため投稿を更新できませんでした。';
@@ -285,9 +285,7 @@ $string['markunreadbutton'] = '未読<br />にする';
 $string['maxattachments'] = '最大添付ファイル数';
 $string['maxattachments_help'] = '<p>この設定では、このフォーラム内のそれぞれの投稿に対して、いくつのファイル添付を許可するかコントロールします。</p>';
 $string['maxattachmentsize'] = '最大添付ファイルサイズ';
-$string['maxattachmentsize_help'] = '<p>フォーラムを作成した人が選択することにより、添付ファイルのファイルサイズに制限を設けることができます。</p>
-
-<p>制限サイズよりも大きなファイルをアップロードすることもできますが、実際にはサーバに保存されず、エラーメッセージが表示されます。</p>';
+$string['maxattachmentsize_help'] = 'この設定ではフォーラム投稿に添付できる最大ファイルサイズを指定します。';
 $string['maxtimehaspassed'] = '申し訳ございません、この投稿 ({$a}) に対する最大編集回数を超えました!';
 $string['message'] = 'メッセージ';
 $string['messageinboundattachmentdisallowed'] = 'あなたの返信が添付を含み、フォーラムは添付を許可していないため、投稿することができません。';
@@ -384,7 +382,7 @@ $string['postadded'] = '<p>あなたの投稿が追加されました。</p>
 <p>あなたが内容を変更したい場合、 {$a} 編集できます。</p>';
 $string['postaddedsuccess'] = 'あなたの投稿が追加されました。';
 $string['postaddedtimeleft'] = '<p>あなたが内容を変更したい場合、 {$a} 編集できます。</p>';
-$string['postbymailsuccess'] = 'おめでとうございます、あなたの件名「 {$a->subject} 」のフォーラム投稿が正常に追加されました。あなたは {$a->discussionurl} にて投稿を閲覧することができます。';
+$string['postbymailsuccess'] = 'おめでとうございます、あなたの件名「 {$a->subject} 」のフォーラム投稿が正常に追加されました。あなたは {$a->discussionurl} で投稿を閲覧することができます。';
 $string['postbymailsuccess_html'] = 'おめでとうございます、あなたの件名「 $a->subject 」の<a href="{$a->discussionurl}">フォーラム</a>記事が正常に投稿されました。';
 $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'この投稿をコンテクスト内に表示する';
@@ -417,7 +415,7 @@ $string['repliesmany'] = '返信数: {$a} 件';
 $string['repliesone'] = '返信数: {$a} 件';
 $string['reply'] = '返信';
 $string['replyforum'] = 'フォーラムに返信';
-$string['reply_handler'] = 'メールでフォーラムに返信する';
+$string['reply_handler'] = 'フォーラム投稿にメールで返信します。';
 $string['reply_handler_name'] = 'フォーラム投稿に返信する';
 $string['replytoforumpost'] = 'あなたはこのフォーラム投稿にメールで返信することができます。';
 $string['replytopostbyemail'] = 'あなたはこのメールによって返信することができます。';
@@ -520,7 +518,7 @@ $string['unsubscribeallconfirmforums'] = '現在、ああたは {$a->forums} 件
 $string['unsubscribealldone'] = 'すべてのフォーラムのメール購読が解除されました。まだ、あなたにはメール購読が強制されているフォーラムから通知が送信されます。フォーラム通知を管理するにはマイプロファイル設定のメッセージングにアクセスしてください。';
 $string['unsubscribeallempty'] = '申し訳ございません、あなたがメール購読しているフォーラムはありません。すべてのフォーラム通知を無効するにはマイプロファイル設定のメッセージングにアクセスしてください。';
 $string['unsubscribed'] = 'メール購読を解除しました。';
-$string['unsubscribediscussion'] = 'このディスカッションを購読解除する';
+$string['unsubscribediscussion'] = 'このディスカッションから購読解除する';
 $string['unsubscribeshort'] = 'メール購読解除';
 $string['usermarksread'] = '投稿を手動で既読にする';
 $string['viewalldiscussions'] = 'すべてのディスカッションを表示する';

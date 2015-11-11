@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['encoding'] = 'Codificació del fitxer';
 $string['expiredaction'] = 'Acció de venciment de la inscripció';
 $string['expiredaction_help'] = 'Seleccioneu l\'acció que es durà a terme quan venci la inscripció de l\'usuari. Si us plau, teniu en compte que alguns paràmetres i dades d\'usuari es purguen del curs durant la cancel·lació de la inscripció.';
-$string['filelockedmail'] = 'El fitxer de text que esteu utilitzant per les inscripcions basades en fitxer ({$a}) no pot ser esborrat pel procés cron. Això significa que no té permisos sobre aquest fitxer. Si us plau modifiqueu els permisos de forma que Moodle pugui esborrar el fitxer, d\'altra forma es processarà de forma repetida.';
+$string['filelockedmail'] = 'El fitxer de text que esteu utilitzant per a les inscripcions basades en fitxer ({$a}) no pot ser esborrat pel procés cron. Això significa que no té permisos sobre aquest fitxer. Modifiqueu els permisos de forma que Moodle pugui esborrar el fitxer; en cas contrari, es processarà de forma repetida.';
 $string['filelockedmailsubject'] = 'Error greu: Fitxer d\'inscripció';
 $string['flatfile:manage'] = 'Gestiona les inscripcions d\'usuari de forma manual.';
 $string['flatfile:unenrol'] = 'Cancel·la la inscripció d\'usuaris del curs de forma manual.';

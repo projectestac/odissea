@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Afegeix més opcions';
+$string['allowmultiple'] = 'Permet seleccionar més d\'una resposta';
 $string['allowupdate'] = 'Permet canviar la resposta';
 $string['answered'] = 'Contestades';
 $string['atleastoneoption'] = 'Heu de proporcionar almenys una possible resposta.';

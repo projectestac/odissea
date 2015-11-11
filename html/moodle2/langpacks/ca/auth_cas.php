@@ -65,5 +65,5 @@ $string['auth_cas_text'] = 'Connexió segura';
 $string['auth_cas_use_cas'] = 'Utilitza CAS';
 $string['auth_cas_version'] = 'Versió de CAS';
 $string['CASform'] = 'Opció d\'autenticació';
-$string['noldapserver'] = 'No hi ha cap servidor LDAP configurat per CAS! Sincronització deshabilitada.';
+$string['noldapserver'] = 'No hi ha cap servidor LDAP configurat per CAS! Sincronització inhabilitada.';
 $string['pluginname'] = 'Servidor CAS (SSO)';

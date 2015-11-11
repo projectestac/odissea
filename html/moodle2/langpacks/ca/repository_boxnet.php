@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Clau d\'API';
-$string['apiv1migration_message_content'] = 'El connector de repositori Box s\'ha deshabiitat en les actualitzacions més recents de Moodle (2.6, 2.5.3, 2.4.7). Per tal de tornar-lo a habilitar cal que el reconfigureu com s\'explica a la documentació {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'Aquest connector s\'ha deshabilitat perquè requereix configuració, tal i com es descriu a la documentació de la migració Box APIv1.';
+$string['apiv1migration_message_content'] = 'S\'ha inhabilitat el connector del repositori Box en les actualitzacions més recents de Moodle (2.6, 2.5.3, 2.4.7). Per tal de tornar-lo a habilitar, cal que el reconfigureu com s\'explica a la documentació {$a->docsurl}.';
+$string['apiv1migration_message_small'] = 'S\'ha inhabilitat aquest connector perquè requereix configuració, tal com es descriu a la documentació de la migració Box APIv1.';
 $string['apiv1migration_message_subject'] = 'Informació important sobre el connector de repositori Box';
 $string['boxnet:view'] = 'Mostra el repositori BOX';
 $string['cannotcreatereference'] = 'No es pot crear una referencia, no teniu prou permisos per compartir el fitxer a Box.';

@@ -176,7 +176,7 @@ $string['editscale'] = '評価尺度を編集する';
 $string['edittree'] = '設定';
 $string['editverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} を編集する';
 $string['enableajax'] = 'AJAXを有効にする';
-$string['enableajax_help'] = '一般的な操作を単純化および高速化するAJAX機能のレイヤーを評定者レポートに追加します。ユーザのブラウザレベルでJavaスクリプトが有効にされているかどうかに依存します。';
+$string['enableajax_help'] = '一般的な操作を単純化および高速化するAJAX機能のレイヤーを評定者レポートに追加します。ユーザのブラウザレベルでJavaScriptが有効にされているかどうかに依存します。';
 $string['enableoutcomes'] = 'アウトカムを有効にする';
 $string['enableoutcomes_help'] = 'アウトカム (別名 コンピテンシー、ゴール、スタンダード、クライテリア) のサポートでは、アウトカム記述に関する１つまたはそれ以上の評価尺度を使用して評定項目を評定することができます。アウトカムを有効にすることで、サイト全体を通して特別な評定を可能にします。';
 $string['encoding'] = 'エンコーディング';
@@ -240,7 +240,9 @@ $string['gradeanalysis'] = '評定分析';
 $string['gradebook'] = '評定表';
 $string['gradebookcalculationsfixbutton'] = '評点変更を受け入れて計算エラーを修正する';
 $string['gradebookcalculationsuptodate'] = '評定表の計算は最新です。変更を表示するにはあなたはこのページをリロードする必要があります。';
-$string['gradebookcalculationswarning'] = '注意: 評定表に表示されている評点の計算にエラーが検出されました。結果としていくつかの評点が変更されることになりますが、以下のボタンをクリックしてエラーを修正することをお勧めします。詳細は<a href="{$a->url}">表定評計算の変更</a>内のバージョン {$a->gradebookversion} および {$a->currentversion} 間の変更点をご覧ください。';
+$string['gradebookcalculationswarning'] = '注意: 評定表に表示されている評点の計算にエラーが検出されました。あなたのコースが開始していない場合または進行中の場合、結果としていくつかの評点が変更されることになりますが、以下のボタンをクリックしてエラーを修正することをお勧めします。コースがすでに終了して評点が送信されている場合、あなたは恐らくこの問題を修正したくないことでしょう。
+
+新しいバージョンは {$a->currentversion} です。あなたはバージョン {$a->gradebookversion} の評定表を使用しています。あなたは<a href="{$a->url}">評定計算変更</a>で変更一覧を確認することができます。';
 $string['gradebookhiddenerror'] = '現在、評定表は学生からすべて隠されています。';
 $string['gradebookhistories'] = '評定履歴';
 $string['gradeboundary'] = '評定文字の境界';

@@ -242,6 +242,7 @@ $string['field1061501'] = 'Erradiografia';
 $string['field10617'] = 'Errehabilitazio-terapiak';
 $string['field1061701'] = 'Fisioterapia';
 $string['field1061703'] = 'Okupazio-terapia';
+$string['field1061705'] = 'Kiropraktika eta Osteopatia';
 $string['field1061707'] = 'Hizketa-patologia';
 $string['field1061709'] = 'Audiologia';
 $string['field1061713'] = 'Podologia';

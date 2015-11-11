@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '最近の活動';
 $string['recent_activity:addinstance'] = '新しい最近の活動ブロックを追加する';
-$string['recent_activity:viewaddupdatemodule'] = '最近の活動ブロック内に更新されたモジュールを表示する';
+$string['recent_activity:viewaddupdatemodule'] = '最近の活動ブロック内に追加および更新されたモジュールを表示する';
 $string['recent_activity:viewdeletemodule'] = '最近の活動ブロック内に削除されたモジュールを表示する';

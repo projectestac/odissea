@@ -29,6 +29,6 @@ $string['configtimetosee'] = 'ユーザがオンライン状態ではないと�
 $string['online_users:addinstance'] = '新しいオンラインユーザブロックを追加する';
 $string['online_users:myaddinstance'] = '新しいオンラインユーザブロックをマイホームに追加する';
 $string['online_users:viewlist'] = 'オンラインユーザリストを表示する';
-$string['periodnminutes'] = '{$a} 分';
+$string['periodnminutes'] = '直近 {$a} 分';
 $string['pluginname'] = 'オンラインユーザ';
 $string['timetosee'] = '休眠状態 (分) の後、除外する';

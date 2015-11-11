@@ -98,5 +98,5 @@ $string['subdeletesuccess'] = 'La sottoscrizione è stata eliminata correttament
 $string['subhelp'] = 'Dettagli della sottoscrizione';
 $string['subhelp_help'] = 'Questa sottoscrizione controlla che l\'evento  \'{$a->eventname}\' si verifichi in \'{$a->moduleinstance}\' per {$a->frequency} volte  in {$a->minutes} minuti.';
 $string['subscribeto'] = 'Sottoscrivi la regola "{$a}"';
-$string['taskcleanevents'] = 'Elimina monitoraggio eventi non necessari';
-$string['unsubscribe'] = 'Elimina sottoscrizione';
+$string['taskcleanevents'] = 'Eliminazione monitoraggio eventi non necessari';
+$string['unsubscribe'] = 'Revoca sottoscrizione';

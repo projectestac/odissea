@@ -10,7 +10,7 @@ class script_enable_service extends agora_script_base{
     protected $test = false;
     public $api = true;
     public $cli = true;
-
+    protected $category = "Upgrade";
 
     public function params(){
         $params = array();

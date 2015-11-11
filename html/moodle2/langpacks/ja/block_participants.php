@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['participants:addinstance'] = '新しい参加者ブロックを追加する';
+$string['participants:addinstance'] = '新しい人ブロックを追加する';
 $string['pluginname'] = '人';

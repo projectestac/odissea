@@ -35,5 +35,5 @@ $string['upload_error_ini_size'] = 'Il file caricato è più grande di quanto co
 $string['upload_error_invalid_file'] = 'Il file \'{$a}\' è vuoto oppure è una cartella. Per caricare le cartelle, è necessario comprimerle in formato zip.';
 $string['upload_error_no_file'] = 'Nessun file è stato caricato.';
 $string['upload_error_no_tmp_dir'] = 'Manca una cartella temporanea per il PHP';
-$string['upload_error_partial'] = 'Il file è stato caricato parzialmente.';
+$string['upload_error_partial'] = 'Il file è stato caricato solo in parte.';
 $string['upload:view'] = 'Usare Upload file nel file picker';

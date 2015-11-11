@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = 'El connector Box portfolio s\'ha deshabilitat com a part de la recent actualització de Moodle a la versió 2.6. Per rehabilitar-lo us cal reconfigurar-lo com es descriu a la documentació  {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'El connector s\'ha deshabilitat ja que cal configurar-lo com es descriu en la documentació de la migració Box APIv1.';
+$string['apiv1migration_message_content'] = 'El connector Box portfolio s\'ha inhabilitat com a part de la recent actualització de Moodle a la versió 2.6. Per tornar-lo a habilitar, cal que el reconfigureu com es descriu a la documentació  {$a->docsurl}.';
+$string['apiv1migration_message_small'] = 'S\'ha inhabilitat aquest connector perquè requereix configuració, tal com es descriu a la documentació de la migració Box APIv1.';
 $string['apiv1migration_message_subject'] = 'Informació important sobre el connector Box portfolio';
 $string['clientid'] = 'ID del client';
 $string['clientsecret'] = 'Clau secreta del client';

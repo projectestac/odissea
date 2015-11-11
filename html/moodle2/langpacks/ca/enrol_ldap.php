@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'S\'està assignant el rol  \'{$a->role_shortname}\' de l\'usuari \'{$a->user_username}\' al curs \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['assignrolefailed'] = 'No s\'ha pogut assignar el rol \'{$a->role_shortname}\'  a l\'usuari \'{$a->user_username}\' en el curs \'{$a->course_shortname}\' (id {$a->course_id})';
-$string['autocreate'] = '<p>Els cursos poden crear-se automàticament si hi ha inscripcions a un curs que encara no existeix en Moodle.</p><p>Si utilitzeu creació de cursos automàtica, es recomana que suprimiu les següents capacitats:
-moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname i moodle/course:changesummary, dels rols pertinents per tal d\'evitar modificacions dels quatre camps de curs especificats abans (número ID, nom curt, nom complet i resum).</p>';
+$string['autocreate'] = '<p>Els cursos poden crear-se automàticament si hi ha inscripcions a un curs que encara no existeix a Moodle.</p><p>Si utilitzeu la creació de cursos automàtica, es recomana que suprimiu les capacitats següents:
+moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname i moodle/course:changesummary dels rols pertinents, per tal d\'evitar modificacions dels quatre camps de curs especificats abans (número ID, nom curt, nom complet i resum).</p>';
 $string['autocreate_key'] = 'Auto crea';
 $string['autocreation_settings'] = 'Paràmetres de creació automàtica de cursos';
 $string['autoupdate_settings'] = 'Configuració de l\'actualització automàtica dels cursos';
@@ -51,7 +51,7 @@ $string['course_fullname_updateonsync'] = 'Actualitza el nom complet durant l\'e
 $string['course_fullname_updateonsync_key'] = 'Actualitza el nom complet';
 $string['course_idnumber'] = 'Identificador únic en el LDAP, generalment <em>cn</em> o <em>uid</em>. Es recomana blocar aquest valor si utilitzeu la creació automàtica de cursos.';
 $string['course_idnumber_key'] = 'Nombre d\'identificació';
-$string['coursenotexistskip'] = 'El curs \'{$a}\' no existeix i la creació automàtica està inhabilitada. S\'ha omès.';
+$string['coursenotexistskip'] = 'El curs «{$a}» no existeix, i la creació automàtica està inhabilitada. S\'ha omès.';
 $string['course_search_sub'] = 'Cerca membres del grup al subcontext';
 $string['course_search_sub_key'] = 'Cerca subcontexts';
 $string['course_settings'] = 'Paràmetres d\'inscripció de cursos';
@@ -76,8 +76,8 @@ $string['enroluser'] = 'Inscriu l\'usuari \'{$a->user_username}\' al curs \'{$a-
 $string['enroluserenable'] = 'Habilitada l\'inscripció per l\'usuari  \'{$a->user_username}\' al curs \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['explodegroupusertypenotsupported'] = 'ldap_explode_group() no suporta el tipus seleccionat per l\'usuari: {$a}';
 $string['extcourseidinvalid'] = 'La identificació externa del curs és invalida!';
-$string['extremovedsuspend'] = 'Inhabilitada la inscripció de l\'usuari  \'{$a->user_username}\' al curs \'{$a->course_shortname}\' (id {$a->course_id})';
-$string['extremovedsuspendnoroles'] = 'S\'ha suprimit la inscripció i els rols de l\'usuari \'{$a->user_username}\' al curs  \'{$a->course_shortname}\' (id {$a->course_id})';
+$string['extremovedsuspend'] = 'S\'ha inhabilitat la inscripció de l\'usuari  «{$a->user_username}» al curs «{$a->course_shortname}» (ID {$a->course_id})';
+$string['extremovedsuspendnoroles'] = 'S\'ha inhabilitat la inscripció de l\'usuari «{$a->user_username}» i se n\'han suprimit els rols al curs  «{$a->course_shortname}» (ID {$a->course_id})';
 $string['extremovedunenrol'] = 'Suprimeix la inscripció de l\'usuari \'{$a->user_username}\' al curs \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['failed'] = 'Fallada !';
 $string['general_options'] = 'Opcions generals';

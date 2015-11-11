@@ -74,7 +74,7 @@ $string['cannotpurgecachedrss'] = 'No s\'ha pogut eliminar de la memòria CAU el
 $string['cannotremovesubscriber'] = 'No s\'ha pogut cancel·lar la subscripció de l\'usuari ID {$a} en aquest fòrum.';
 $string['cannotreply'] = 'No podeu respondre aquest missatge';
 $string['cannotsplit'] = 'Els debats d\'aquest fòrum no es poden partir';
-$string['cannotsubscribe'] = 'Només els membres del grup es poden subscriure';
+$string['cannotsubscribe'] = 'Només els membres del grup es poden subscriure.';
 $string['cannottrack'] = 'El seguiment d\'aquest fòrum no es pot interrompre';
 $string['cannotunsubscribe'] = 'La vostra subscripció a aquest fòrum no es pot cancel·lar';
 $string['cannotupdatepost'] = 'No podeu actualitzar aquest missatge';
@@ -186,7 +186,7 @@ $string['eventdiscussionviewed'] = 'S\'ha mostrat el debat';
 $string['eventpostcreated'] = 'S\'ha creat el missatge';
 $string['eventpostdeleted'] = 'S\'ha suprimit el missatge';
 $string['eventpostupdated'] = 'S\'ha actualitzat el missatge';
-$string['eventreadtrackingdisabled'] = 'S\'ha deshabilitat el seguiment de lectures';
+$string['eventreadtrackingdisabled'] = 'S\'ha inhabilitat el seguiment de lectures';
 $string['eventreadtrackingenabled'] = 'S\'ha habilitat el seguiment de lectures';
 $string['eventsubscribersviewed'] = 'S\'han mostrat el subscriptors';
 $string['eventsubscriptioncreated'] = 'S\'ha creat la subscripció';
@@ -319,6 +319,7 @@ $string['nodiscussions'] = 'Encara no hi ha cap tema de debat en aquest fòrum';
 $string['nodiscussionsstartedby'] = 'L\'usuari {$a} no ha iniciat cap debat';
 $string['nodiscussionsstartedbyyou'] = 'Encara no heu iniciat cap debat';
 $string['noguestpost'] = 'Els visitants no poden enviar missatges.';
+$string['noguestsubscribe'] = 'Els convidats no es poden subscriure.';
 $string['noguesttracking'] = 'Els visitants no poden definir opcions de seguiment.';
 $string['nomorepostscontaining'] = 'No s\'han trobat més missatges que continguin «{$a}»';
 $string['nonews'] = 'Encara no s\'han enviat notícies';
@@ -360,6 +361,8 @@ $string['pluginname'] = 'Fòrum';
 $string['postadded'] = '<p>S\'ha afegit el vostre missatge.</p> <p>Teniu {$a} per editar-lo si voleu fer algun canvi.</p>';
 $string['postaddedsuccess'] = 'S\'ha afegit correctament el vostre missatge.';
 $string['postaddedtimeleft'] = 'Teniu {$a} per a editar-lo si voleu fer-hi algun canvi.';
+$string['postbymailsuccess'] = 'El vostre missatge de fòrum amb l\'assumpte «{$a->subject}» s\'ha afegit amb èxit. El podeu visualitzar a {$a->discussionurl}';
+$string['postbymailsuccess_html'] = 'El vostre missatge de fòrum <a href="{$a->discussionurl}"> amb l\'assumpte «{$a->subject}» s\'ha publicat amb èxit.';
 $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Mostra aquest missatge en el seu context';
 $string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat al lloc web {$a}.
@@ -437,6 +440,7 @@ $string['subject'] = 'Assumpte';
 $string['subscribe'] = 'Subscriu-me a aquest fòrum';
 $string['subscribeall'] = 'Subscriu a tothom a aquest fòrum';
 $string['subscribed'] = 'Subscrit';
+$string['subscribediscussion'] = 'Subscriu-me a aquest debat';
 $string['subscribeenrolledonly'] = 'Només els usuaris inscrits al curs es poden subscriure al fòrum i rebre els missatges per correu electrònic.';
 $string['subscribenone'] = 'Cancel·la totes les subscripcions a aquest fòrum';
 $string['subscribers'] = 'Subscriptors';
@@ -454,10 +458,12 @@ $string['subscriptionmode_help'] = 'La subscripció a un fòrum significa que la
 
 Hi ha 4 modalitats de subscripció:
 
-* Subscripció voluntària - Els participants poden triar si es subscriuen o no
-* Subscripció obligatòria - Tothom hi està subscrit i no pot esborrar-se\'n
-* Subscripció inicial - D\'entrada, tothom hi està subscrit, però hi ha la possibilitat d\'esborrar-se\'n quan es vulgui
-* Subscripció inhabilitada - No s\'hi permeten les subscripcions.';
+* Subscripció voluntària. Els participants poden triar si es subscriuen o no
+* Subscripció obligatòria. Tothom hi està subscrit i no pot esborrar-se\'n
+* Subscripció inicial. D\'entrada, tothom hi està subscrit, però hi ha la possibilitat d\'esborrar-se\'n quan es vulgui
+* Subscripció inhabilitada. No s\'hi permeten les subscripcions.
+
+Nota: Qualssevol canvis en la modalitat de subscripcio afecten només els usuaris que s\'inscriguin al curs en el futur i els usuaris no existents.';
 $string['subscriptionoptional'] = 'Subscripció voluntària';
 $string['subscriptions'] = 'Subscripcions';
 $string['thisforumisthrottled'] = 'Aquest fòrum té limitat el nombre de missatges que podeu enviar-hi en un període de temps determinat. Actualment el límit són {$a->blockafter} missatges en {$a->blockperiod}';
@@ -481,9 +487,11 @@ $string['unreadpostsone'] = 'Un missatge no llegit';
 $string['unsubscribe'] = 'Cancel·la la meva subscripció a aquest fòrum';
 $string['unsubscribeall'] = 'Cancel·la la meva subscripció a tots els fòrum';
 $string['unsubscribeallconfirm'] = 'Esteu subscrit/a a {$a} fòrums. Segur que voleu cancel·lar la vostra subscripció a tots els fòrums i inhabilitar la subscripció automàtica?';
+$string['unsubscribeallconfirmdiscussions'] = 'Esteu subscrit a {$a->discussions} debats. Segur que voleu cancel·lar la vostra subscripció a tots els debats i inhabilitar-hi la subscripció automàtica?';
+$string['unsubscribeallconfirmforums'] = 'Esteu subscrit a {$a->forums} fòrums. Segur que voleu cancel·lar la vostra subscripció a tots els fòrums i inhabilitar-hi la subscripció automàtica?';
 $string['unsubscribealldone'] = 'S\'han cancel·lat totes les vostres subscripcions a fòrums, però encara rebreu notificacions dels fòrums que imposin la subscripció. Per a gestionar les notificacions del fòrum aneu a la Missatgeria de la Configuració del meu perfil, en el bloc Configuració.';
 $string['unsubscribeallempty'] = 'No esteu subscrit a cap fòrum.
-Per a desactivar totes les notificacions del servidor aneu a la Missatgeria de la Configuració del meu perfil, en el bloc Configuració.';
+Per desactivar totes les notificacions del servidor, aneu a la Missatgeria de la Configuració del meu perfil, al bloc Configuració.';
 $string['unsubscribed'] = 'La vostra subscripció ha estat cancel·lada';
 $string['unsubscribeshort'] = 'Cancel·la subscripció';
 $string['usermarksread'] = 'Marcatge manual de missatges llegits';

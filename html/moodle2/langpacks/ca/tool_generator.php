@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['bigfile'] = 'Fitxer gran {$a}';
-$string['courseexplanation'] = 'Aquesta eina crea cursos de prova estàndard que inclouen moltes seccions, activitats i fitxers.
+$string['courseexplanation'] = 'Aquesta eina crea cursos de prova estàndards que inclouen moltes seccions, activitats i fitxers.
 
-Està destinat a proporcionar una mesura estandarditzada per a comprovar la fiabilitat i el rendiment de diversos components del sistema (per exemple, les còpies de seguretat i la restauració).
+Està destinada a proporcionar una mesura estandarditzada per comprovar la fiabilitat i el rendiment de diversos components del sistema (per exemple, les còpies de seguretat i la restauració).
 
-Aquesta prova és important perquè hi ha hagut prèviament molts casos en què, davant de casos d\'ús reals (p. ex. un curs amb 1.000 activitats), el sistema no ha funcionat.
+Aquesta prova és important, perquè hi ha hagut prèviament molts casos en què, davant de casos d\'ús reals (p. ex., un curs amb 1.000 activitats), el sistema no ha funcionat.
 
 Els cursos creats amb aquesta funció poden ocupar un gran espai de bases de dades i d\'emmagatzematge (desenes de gigabytes). Necessitareu eliminar els cursos (i esperar diversos cicles de neteja) per alliberar de nou aquest espai.
 
-**No feu servir aquesta funció en un sistema que s\'estigui utilitzant amb usuaris.** Utilitzeu-ls només en un servidor de desenvolupament. (Per a evitar l\'ús accidental, aquesta funció està inhabilitada si no heu seleccionat també el nivell de depuració DESENVOLUPADOR.)';
+**No feu servir aquesta funció en un sistema que s\'estigui utilitzant amb usuaris.** Utilitzeu-la només en un servidor de desenvolupament. (Per evitar-ne l\'ús accidental, aquesta funció està inhabilitada si no heu seleccionat també el nivell de depuració DESENVOLUPADOR.)';
 $string['coursesize_0'] = 'XS (~10KB; creat en ~1 segon)';
 $string['coursesize_1'] = 'S (~10MB; creat en ~30 segons)';
 $string['coursesize_2'] = 'M (~100MB; creat en ~5 minuts)';

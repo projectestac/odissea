@@ -45,7 +45,7 @@ $string['auth_ldap_creators_key'] = 'Creadors';
 $string['auth_ldapdescription'] = 'Aquest mètode proporciona autenticació contra un servidor LDAP extern.
 
 Si un nom d\'usuari i una contrasenya són vàlids, Moodle crea una entrada per a un nou usuari a la seva base de dades. Aquest mòdul pot llegir atributs de l\'usuari del LDAP i omplir els camps corresponents de Moodle. En els successius inicis de sessió només es comproven el nom d\'usuari i la contrasenya.';
-$string['auth_ldap_expiration_desc'] = 'Seleccioneu \'No\' per inhabilitar la comprovació de contrasenyes vençudes o \'LDAP\' per consultar la data de venciment de la contrasenya directament a l\'LDAP.';
+$string['auth_ldap_expiration_desc'] = 'Seleccioneu «No» per inhabilitar la comprovació de contrasenyes vençudes o «LDAP» per consultar la data de venciment de la contrasenya directament a l\'LDAP.';
 $string['auth_ldap_expiration_key'] = 'Venciment';
 $string['auth_ldap_expiration_warning_desc'] = 'Nombre de dies abans que surti l\'avís de venciment de la contrasenya.';
 $string['auth_ldap_expiration_warning_key'] = 'Avís de venciment';
@@ -148,7 +148,7 @@ $string['updateremfailamb'] = 'Errada a l\'actualitzar LDAP amb un camp ambigu {
 $string['updateusernotfound'] = 'No s\'ha pogut trobar l\'usuari mentres s\'actualitzava externament. Detalls: cerca a la base: \'{$a->userdn}\'; filtre de cerca: \'(objectClass=*)\'; atributs de cerca: {$a->attribs}';
 $string['useracctctrlerror'] = 'Error mentre s\'estava obtenint userAccountControl per a {$a}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() no suporta el tipus d\'usuari seleccionat: {$a}';
-$string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() no suporta el tipus d\'usuari seleccionat: {$a}';
+$string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() no admet el tipus d\'usuari seleccionat: {$a}';
 $string['userentriestoadd'] = 'Entrades de l\'usuari a afegir: {$a}';
 $string['userentriestoremove'] = 'Entrades de l\'usuari a suprimir: {$a}';
 $string['userentriestorevive'] = 'Entrades de l\'usuari a recuperar: {$a}';

@@ -9,6 +9,7 @@ class script_assignments_upgrade extends agora_script_base{
 	public $cron = true;
 	public $cli = true;
 	protected $test = false;
+	protected $category = "Upgrade";
 
 	protected function _execute($params = array(), $execute = true){
 		global $CFG, $DB;

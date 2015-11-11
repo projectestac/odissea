@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = 'Esteu segur que voler eliminar tots les assignacions de rols que no funcionin per al rol "{$a->role}" en el nivell de context"{$a->level}"?';
+$string['confirmdelete'] = 'Confirmeu que voleu eliminar totes les assignacions de rols que no funcionin per al rol «{$a->role}» en el nivell de context «{$a->level}»?';
 $string['contextlevel'] = 'Nivell de context';
 $string['count'] = 'Compte';
 $string['noprolbems'] = 'No s\'han trobat assignacions de rol que no funcionin.';

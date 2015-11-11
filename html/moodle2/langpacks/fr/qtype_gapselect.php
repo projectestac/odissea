@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = 'Vides pour {no} choix supplémentaires';
+$string['addmorechoiceblanks'] = 'Espaces vides pour {no} choix supplémentaires';
 $string['answer'] = 'Réponse';
 $string['choices'] = 'Choix';
 $string['choicex'] = 'Choix {no}';
 $string['combinedcontrolnamegapselect'] = 'liste déroulante';
 $string['combinedcontrolnamegapselectplural'] = 'listes déroulantes';
-$string['correctansweris'] = 'La réponse correcte est : {$a}';
+$string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['errorblankchoice'] = 'Veuillez sélectionner un choix : le choix {$a} est vide.';
 $string['errormissingchoice'] = 'Veuillez sélectionner le texte de la question : {$a} n\'a pas été trouvé parmi les choix possibles! Seuls les numéros de choix existants peuvent être utilisés dans les espaces réservés.';
 $string['errornoslots'] = 'Le texte de la question doit contenir des espaces reservés du type [[1]] pour définir l\'emplacement des mots qui seront choisis.';
-$string['errorquestiontextblank'] = 'Vous devez entrer le texte de la question.';
+$string['errorquestiontextblank'] = 'Veuillez saisir le texte de la question.';
 $string['group'] = 'Groupe';
-$string['pleaseputananswerineachbox'] = 'Veuillez entrer une réponse dans chaque champ.';
-$string['pluginname'] = 'Sélectionnez les mots manquants';
+$string['pleaseputananswerineachbox'] = 'Veuillez placer une réponse dans chaque boîte';
+$string['pluginname'] = 'Sélectionner les mots manquants';
 $string['pluginnameadding'] = 'Ajout d\'une question permettant de sélectionner le mot manquant';
 $string['pluginnameediting'] = 'Modification d\'une question permettant de sélectionner le mot manquant';
 $string['pluginname_help'] = 'Entrez une question du type « Le [[1]] saute par-dessus le [[2]] », puis entrez les différents mots possibles pour les trous 1 et 2.';

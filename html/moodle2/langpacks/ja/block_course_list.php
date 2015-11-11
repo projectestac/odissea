@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['adminview'] = '管理者ビュー';
 $string['allcourses'] = '管理者はすべてのコースを閲覧可';
 $string['configadminview'] = 'コース一覧ブロックで管理者に何を表示しますか?';
-$string['confighideallcourseslink'] = 'コース一覧下部の「すべてのコース」リンクを削除します (この設定は管理表示に影響しません)。';
+$string['confighideallcourseslink'] = 'コース一覧下部の「すべてのコース」リンクを削除します (この設定は管理者ビューに影響しません)。';
 $string['course_list:addinstance'] = '新しいコースブロックを追加する';
 $string['course_list:myaddinstance'] = '新しいコースブロックをマイホームに追加する';
 $string['hideallcourseslink'] = '「すべてのコースリンク」を隠す';

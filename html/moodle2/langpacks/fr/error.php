@@ -108,7 +108,7 @@ $string['cannotinsertrecord'] = 'Impossible d\'insérer le nouvel enregistrement
 $string['cannotmailconfirm'] = 'Erreur lors de l\'envoi du courriel de confirmation de modification de mot de passe';
 $string['cannotmanualctrack'] = 'L\'activité ne permet pas le suivi manuel de l\'achèvement';
 $string['cannotmapfield'] = 'Collision détectée : deux champs correspondent au même élément d\'évaluation {$a}';
-$string['cannotmarktopic'] = 'Impossible de marquer cette section comme actuelle dans ce cours';
+$string['cannotmarktopic'] = 'Impossible de marquer cette section';
 $string['cannotmigratedatacomments'] = 'Impossible de migrer les commentaires du module base de données';
 $string['cannotmodulename'] = 'Impossible d\'obtenir le nom du module dans la navigation';
 $string['cannotmoduletype'] = 'Impossible d\'obtenir le type du module dans la navigation';
@@ -303,7 +303,7 @@ $string['invalidcourselevel'] = 'Niveau de contexte incorrect';
 $string['invalidcoursemodule'] = 'Identifiant de module de cours non valide';
 $string['invalidcoursenameshort'] = 'Le nom abrégé du cours n\'est pas valide';
 $string['invaliddata'] = 'Les données envoyées ne sont pas valides';
-$string['invaliddatarootpermissions'] = 'Des droits d\'accès non valides ont été détectées dans le dossier $CFG->dataroot. Il est impératif que l\'administrateur corrige ces droits d\'accès.';
+$string['invaliddatarootpermissions'] = 'Des droits d\'accès non valides ont été détectées lors de la création d\'un dossier. Veuillez activer le débogage pour plus de détails.';
 $string['invaliddevicetype'] = 'Type d\'appareil non valide';
 $string['invalidelementid'] = 'Identifiant d\'élément incorrect !';
 $string['invalidentry'] = 'Article non valide';
@@ -387,7 +387,7 @@ $string['movecatcontentstoroot'] = 'Il n\'est pas permis de déplacer le contenu
 $string['movecategorynotpossible'] = 'Vous ne pouvez pas déplacer la catégorie « {$a} » dans la catégorie sélectionnée.';
 $string['movecategoryownparent'] = 'Vous ne pouvez pas faire de la catégorie « {$a} » un parent d\'elle-même.';
 $string['movecategoryparentconflict'] = 'Vous ne pouvez pas faire de la catégorie « {$a} » une sous-catégorie de l\'une de ses propres sous-catégories.';
-$string['mssqlrcsmodemissing'] = 'La base de données n\'utilise pas le mode attendu READ_COMMITTED_SNAPSHOT, ce qui peut conduire à des résultats erronés, particulièrement lors de situations avec de nombreux accès simultanés. Veuillez activer ce mode pour un fonctionnement correct. Vous trouverez plus d\'informations à ce sujet sur <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP#Configuration">Moodle Docs (en anglais)</a>.';
+$string['mssqlrcsmodemissing'] = 'La base de données n\'utilise pas le mode attendu READ_COMMITTED_SNAPSHOT, ce qui peut conduire à des résultats erronés, particulièrement lors de situations avec de nombreux accès simultanés. Veuillez activer ce mode pour un fonctionnement correct. Vous trouverez plus d\'informations à ce sujet sur <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Moodle Docs (en anglais)</a>.';
 $string['multiplerecordsfound'] = 'Plusieurs enregistrement trouvés, alors qu\'un seul enregistrement est attendu.';
 $string['multiplerestorenotallow'] = 'Il n\'est pas autorisé d\'effectuer des restaurations multiples !';
 $string['mustbeloggedin'] = 'Vous devez être connecté pour faire ceci';

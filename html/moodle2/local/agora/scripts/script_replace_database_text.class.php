@@ -9,6 +9,7 @@ class script_replace_database_text extends agora_script_base{
     public $cron = false;
     public $cli = true;
     protected $test = false;
+    protected $category = "Upgrade";
 
     public function params(){
         global $CFG;

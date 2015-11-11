@@ -240,7 +240,9 @@ $string['gradeanalysis'] = 'Analyse de l\'évaluation';
 $string['gradebook'] = 'Carnet de notes';
 $string['gradebookcalculationsfixbutton'] = 'Accepter les modifications de notes et corriger les erreurs de calcul';
 $string['gradebookcalculationsuptodate'] = 'Les calculs du carnet de notes sont à jour. Veuillez recharger cette page pour voir les modifications.';
-$string['gradebookcalculationswarning'] = 'Des erreurs ont été détectées dans le calcul des notes affichées dans le carnet de notes. Il est recommandé de corriger ces erreurs en cliquant sur le bouton ci-dessous. Cette opération aura pour résultat de modifier certaines notes. Pour plus d\'information, veuillez consulter les changements entre les versions {$a->gradebookversion} et {$a->currentversion}, sur la page <a href="{$a->url}">Modifications du calcul du carnet de notes</a>.';
+$string['gradebookcalculationswarning'] = 'Des erreurs ont été détectées dans le calcul des notes affichées dans le carnet de notes. Si votre cours n\'a pas commencé ou est en cours, il vous est recommandé de corriger ces erreurs en cliquant sur le bouton ci-dessous. Cette opération aura pour résultat de modifier certaines notes. Si votre cours est terminé et que les notes ont été données, il n\'est probablement pas judicieux de corriger ce problème.
+
+La nouvelle version du carnet de note est {$a->currentversion} ; vous utilisez la version {$a->gradebookversion}. Vous pouvez consulter les changements entre les versions {$a->gradebookversion} et {$a->currentversion}, sur la page <a href="{$a->url}">Modifications du calcul du carnet de notes</a>.';
 $string['gradebookhiddenerror'] = 'Le carnet de notes est configuré de façon à cacher toutes ses données aux étudiants.';
 $string['gradebookhistories'] = 'Historiques d\'évaluation';
 $string['gradeboundary'] = 'Limite pour note lettre';

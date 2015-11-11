@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = 'ブロックタイトル';
 $string['configtitleblankhides'] = 'ブロックタイトル (空白の場合、タイトルなし)';
-$string['leaveblanktohide'] = '空白でタイトルを非表示';
+$string['leaveblanktohide'] = '空白の場合、タイトルを隠す';
 $string['mentees:addinstance'] = '新しいメンティブロックを追加する';
 $string['mentees:myaddinstance'] = '新しいメンティブロックをマイホームに追加する';
 $string['newmenteesblock'] = '(新しいメンティブロック)';

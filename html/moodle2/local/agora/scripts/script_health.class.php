@@ -9,6 +9,7 @@ class script_health extends agora_script_base{
     public $cron = false;
     protected $test = false;
     public $api = false;
+    protected $category = "Utils";
 
     public function params(){
         $params = array();

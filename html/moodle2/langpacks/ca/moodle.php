@@ -98,7 +98,7 @@ $string['adminhelpmanagedatabase'] = 'Accediu directament a la base de dades (ti
 $string['adminhelpmanagefilters'] = 'Trieu els filtres de text i paràmetres relacionats';
 $string['adminhelpmanagemodules'] = 'Gestioneu els mòduls instal·lats i els seus paràmetres';
 $string['adminhelpmanageroles'] = 'Creeu i definiu rols que poden aplicar-se als usuaris';
-$string['adminhelpmymoodle'] = 'Configureu els blocs "El meu moodle" dels usuaris';
+$string['adminhelpmymoodle'] = 'Configureu els blocs «El meu Moodle» dels usuaris';
 $string['adminhelpreports'] = 'Informes del lloc';
 $string['adminhelpsitefiles'] = 'Publiqueu fitxers generals o pengeu còpies de seguretat externes';
 $string['adminhelpsitesettings'] = 'Definiu l\'aparença de la pàgina inicial del lloc';
@@ -286,7 +286,7 @@ $string['commentincontext'] = 'Mostra aquest comentari en context';
 $string['comments'] = 'Comentaris';
 $string['commentscount'] = 'Comentaris ({$a})';
 $string['commentsnotenabled'] = 'La característica de comentaris no està habilitada';
-$string['commentsrequirelogin'] = 'Us cal entrar amb el nom d\'usuari i contrasenya per veure els comentaris';
+$string['commentsrequirelogin'] = 'Us cal autenticar-vos per veure els comentaris.';
 $string['comparelanguage'] = 'Compara i edita l\'idioma actual';
 $string['complete'] = 'Complet';
 $string['completereport'] = 'Informe complet';
@@ -492,7 +492,7 @@ $string['deletecategorycheck2'] = 'Si voleu suprimir aquesta categoria, heu de d
 $string['deletecategoryempty'] = 'Categoria buida';
 $string['deletecheck'] = 'Suprimiu {$a} ?';
 $string['deletecheckfiles'] = 'Esteu absolutament segur que voleu suprimir aquests fitxers?';
-$string['deletecheckfull'] = 'Esteu absolutament segur que voleu suprimir completament {$a} ?';
+$string['deletecheckfull'] = 'Esteu absolutament segur que voleu suprimir completament {$a}, incloent les seves inscripcions, activitat i altres dades d\'usuari?';
 $string['deletechecktype'] = 'Esteu segurs que voleu suprimir aquest {$a->type}?';
 $string['deletechecktypename'] = 'Esteu segurs que voleu suprimir  {$a->type} "{$a->name}"?';
 $string['deletecheckwarning'] = 'Ara suprimireu aquests fitxers';
@@ -651,9 +651,9 @@ Si necessiteu ajuda, si us plau contacteu amb l\'administrador del lloc:
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = '{$a->firstname},
 
-Algú (probablement vós) ha sol·licitat una nova contrasenya per al vostre compte en \'{$a->sitename}\'.
+Algú (probablement vós) ha sol·licitat una nova contrasenya per al vostre compte a «{$a->sitename}».
 
-Malauradament el vostre compte d\'aquest lloc ha estat inhabilitat i no es pot reinicialitzar. Si us plau contacteu amb l\'administrador del lloc:
+Malauradament, el vostre compte d\'aquest lloc ha estat inhabilitat i no es pot reinicialitzar. Contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordchangeinfofail'] = '{$a->firstname},
@@ -707,7 +707,7 @@ $string['emailresetconfirmsent'] = 'S\'ha enviat un correu electrònic a la seva
 <br/> Conté instruccions senzilles per completar i confirmar el canvi de contrasenya.
 Si continueu tenint problemes, poseu-vos en contacte amb l\'administrador del lloc.';
 $string['emailtoprivatefiles'] = 'També podeu enviar fitxers per correu electrònic com a fitxers adjunts directament al vostre espai de fitxers privats. Adjunteu els vostres fitxers a un missatge de correu electrònic i envieu-ho a {$a}';
-$string['emailtoprivatefilesdenied'] = 'El vostre administrador ha deshabilitat la opció de pujar els vostres fitxers personals';
+$string['emailtoprivatefilesdenied'] = 'El vostre administrador ha inhabilitat l\'opció de pujar els vostres fitxers personals.';
 $string['emptydragdropregion'] = 'regió buida';
 $string['enable'] = 'Habilita';
 $string['encryptedcode'] = 'Codi xifrat';
@@ -831,8 +831,8 @@ $string['frontpagecategorycombo'] = 'Llista combinada';
 $string['frontpagecategorynames'] = 'Mostra llista de categories';
 $string['frontpagecourselist'] = 'Mostra llista de cursos';
 $string['frontpagecoursesearch'] = 'Caixa de cerca del curs';
-$string['frontpagedescription'] = 'Descripció per a la pàgina inicial';
-$string['frontpagedescriptionhelp'] = 'Aquesta descripció es pot mostrar a la primera plana fent servir el bloc de resum del curs/lloc, o bé incloent una secció de tema a la pàgina inicial.';
+$string['frontpagedescription'] = 'Resum per a la pàgina inicial';
+$string['frontpagedescriptionhelp'] = 'Aquest resum es pot mostrar a la primera plana fent servir el bloc de resum del curs/lloc.';
 $string['frontpageenrolledcourselist'] = 'Cursos inscrits';
 $string['frontpageformat'] = 'Format de la pàgina inicial';
 $string['frontpageformatloggedin'] = 'Format de portada per a usuaris que han iniciat sessió';
@@ -846,7 +846,7 @@ $string['fullnamedisplay'] = '{$a->firstname} {$a->lastname}';
 $string['fullnameuser'] = 'Nom complet de l\'usuari';
 $string['fullprofile'] = 'Perfil complet';
 $string['fullsitename'] = 'Nom complet del lloc';
-$string['functiondisabled'] = 'Aquesta funcioonalitat està inhabilitada';
+$string['functiondisabled'] = 'Aquesta funcionalitat està inhabilitada';
 $string['general'] = 'General';
 $string['geolocation'] = 'latitud - longitud';
 $string['gettheselogs'] = 'Obté aquests registres';
@@ -942,7 +942,7 @@ $string['howtomakethemes'] = 'Com crear nous temes';
 $string['htmleditor'] = 'Utilitza l\'editor HTML';
 $string['htmleditoravailable'] = 'L\'editor HTML està disponible';
 $string['htmleditordisabled'] = 'Teniu inhabilitat l\'editor HTML en el vostre perfil d\'usuari';
-$string['htmleditordisabledadmin'] = 'L\'administrator ha inhabilitat l\'editor HTML en aquest lloc';
+$string['htmleditordisabledadmin'] = 'L\'administrador ha inhabilitat l\'editor HTML en aquest lloc';
 $string['htmleditordisabledbrowser'] = 'L\'editor HTML no està disponible perquè el vostre navegador web no és compatible';
 $string['htmlfilesonly'] = 'Només fitxers HTML';
 $string['htmlformat'] = 'Format HTML';
@@ -1035,13 +1035,13 @@ $string['log_excel_date_format'] = 'yyyy mmmm d h:mm';
 $string['loggedinas'] = 'Heu iniciat sessió com a {$a}';
 $string['loggedinasguest'] = 'Esteu accedint com a visitant';
 $string['loggedinnot'] = 'No heu iniciat sessió';
-$string['login'] = 'Entrada';
+$string['login'] = 'Entra';
 $string['loginalready'] = 'Ja heu iniciat sessió';
 $string['loginas'] = 'Inicia sessió com a';
 $string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «inicia sessió com a» per a utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
 $string['login_failure_logs'] = 'Registre d\'inicis de sessió fallits';
 $string['loginguest'] = 'Inicia sessió com a visitant';
-$string['loginsite'] = 'Entra en aquest lloc';
+$string['loginsite'] = 'Inicia sessió en aquest lloc';
 $string['loginsteps'] = 'L\'accés complet als cursos requereix que dediqueu un minut a la creació d\'un nou compte d\'usuari vàlid en aquest lloc web. Cada curs pot requerir també una «clau d\'inscripció» d\'un sol ús que no necessitareu fins més tard. Els passos que heu de seguir són els següents:
 <ol>
 <li>Ompliu el formulari de <a href="{$a}">Nou compte</a> amb les vostres dades.</li>
@@ -1056,7 +1056,7 @@ $string['loginstepsnone'] = '<p>Per tal de tenir accés complet als cursos us he
 <p>Consisteix simplement a triar un nom d\'usuari i una contrasenya amb els quals us identificareu, després, en aquesta pàgina.</p>
 <p>Si algú ja ha triat abans el mateix nom d\'usuari, n\'haureu de provar un altre diferent.</p>';
 $string['loginto'] = 'Entra en {$a}';
-$string['logout'] = 'Sortida';
+$string['logout'] = 'Surt';
 $string['logoutconfirm'] = 'Segur que voleu sortir?';
 $string['logs'] = 'Registres';
 $string['logtoomanycourses'] = '[ <a href="{$a->url}">més</a> ]';
@@ -1163,6 +1163,7 @@ $string['moodlerelease'] = 'Alliberament de Moodle';
 $string['moodleversion'] = 'Versió de Moodle';
 $string['more'] = 'més';
 $string['morehelp'] = 'Més ajuda';
+$string['moreinfo'] = 'Més informació';
 $string['moreinformation'] = 'Més informació d\'aquest error';
 $string['moreprofileinfoneeded'] = 'Doneu-nos més informació sobre vós';
 $string['mostrecently'] = 'més recent';
@@ -1335,9 +1336,9 @@ $string['notavailablecourse'] = '{$a} no és disponible';
 $string['noteachersyet'] = 'Encara no hi ha cap professor en aquest curs';
 $string['notenrolled'] = '{$a} no està inscrit en aquest curs.';
 $string['notenrolledprofile'] = 'El perfil no està disponible perquè aquest usuari no està inscrit en aquest curs.';
-$string['noteusercannotrolldatesoncontext'] = '<strong>Nota:</strong> La capacitat de canviar les dates quan es restaura un backpup ha estat desactivada ja que no teniu els permisos que calen';
+$string['noteusercannotrolldatesoncontext'] = '<strong>Nota:</strong> La capacitat de canviar les dates quan es restaura una còpia de seguretat ha estat desactivada, ja que no teniu els permisos que calen.';
 $string['noteuserschangednonetocourse'] = '<strong>Nota:</strong> Els usuaris d\'un curs s\'han de restaurar quan es restauren les dades d\'usuaris (en activitats, fitxers o missatges). Aquest paràmetre s\'ha canviat automàticament.';
-$string['nothingnew'] = 'Cap novetat des de l\'última entrada';
+$string['nothingnew'] = 'Sense activitat recent';
 $string['nothingtodisplay'] = 'No hi ha res per visualitzar';
 $string['notice'] = 'Avís';
 $string['noticenewerbackup'] = 'Aquesta còpia de seguretat ha estat creada amb Moodle {$a->backuprelease} ({$a->backupversion}) i és més nova que la vostra instal·lació de Moodle {$a->serverrelease} ({$a->serverversion}). Això pot donar lloc a algunes inconsistències perquè no es pot garantir la compatibilitat de les còpies cap enrere.';
@@ -1457,6 +1458,8 @@ $string['previous'] = 'Anterior';
 $string['previouslyselectedusers'] = 'Els usuaris seleccionats prèviament no concorden amb \'{$a}\'';
 $string['previoussection'] = 'Secció anterior';
 $string['primaryadminsetup'] = 'Configuració del compte d\'administració';
+$string['private_files_handler'] = 'Desa els adjunts dels correus-e a l\'espai d\'emmagatzematge de fitxers privat de l\'usuari.';
+$string['private_files_handler_name'] = 'Correu-e a fitxers privats';
 $string['profile'] = 'Perfil';
 $string['profilenotshown'] = 'Aquesta descripció del perfil no es mostrarà fins que la persona no estigui inscrita almenys en un curs.';
 $string['publicprofile'] = 'Perfil públic';
@@ -1566,7 +1569,7 @@ $string['rssarticles'] = 'Nombre d\'articles RSS recents';
 $string['rsserror'] = 'Error en la lectura de les dades RSS';
 $string['rsserrorauth'] = 'El vostre enllaç RSS no conté un testimoni d\'autenticació vàlid.';
 $string['rsserrorguest'] = 'Aquest canal utilitza accés de visitant per a accedir a les dades, però l\'usuari visitant no té permís per a llegir les dades. Aneu a la ubicació original d\'aquest canal com a un usuari vàlid i obteniu un nou URL del canal RSS.';
-$string['rsskeyshelp'] = 'Per assegurar la seguretat i la privacitat, les alimentacions RSS contenen un token especial que identifica l\'usuari. Això impedeix que altres usuaris accedeixen a àrees de Moodle a les qual no haurien de tindre accés mitjançant l\'alimentació RSS.</p><p> Aquest token es crea la primera vegada que accediu a un àrea de Moodle que produeixi alimentació RSS. Si penseu que el vostre token ha estat compromès d\'alguna forma podeu demanar-ne un altre prement l\'enllaç aquí. Fixeu-vos que la vostra URL de l\'alimentació RSS serà invalidada.';
+$string['rsskeyshelp'] = '<p>Per assegurar la seguretat i la privacitat, les URL d\'alimentacions RSS contenen un token especial que identifica l\'usuari a qui van dirigides. Això impedeix que altres usuaris accedeixen a àrees de Moodle a les qual no haurien de tenir accés.</p><p> Aquest token es crea automàticament la primera vegada que accediu a un àrea de Moodle que produeixi una alimentació RSS. Si penseu que el vostre token ha estat compromès d\'alguna forma podeu demanar-ne un altre prement l\'enllaç de reinici. Fixeu-vos que la vostra URL de l\'alimentació RSS actual serà invalidada.</p>';
 $string['rsstype'] = 'Canal RSS d\'aquesta activitat';
 $string['saveandnext'] = 'Desa i mostra el següent';
 $string['savechanges'] = 'Desa els canvis';
@@ -1755,7 +1758,7 @@ $string['specifyname'] = 'Heu d\'especificar un nom.';
 $string['standard'] = 'Estàndard';
 $string['starpending'] = '([*] = curs pendent d\'aprovació)';
 $string['startdate'] = 'Data d\'inici del curs';
-$string['startdate_help'] = 'Aquest paràmetre determina el començament de la primera setmana per a un curs en format setmanal. També determina la data inicial dels registres d\'activitat del curs.';
+$string['startdate_help'] = 'Aquest paràmetre determina el començament de la primera setmana per a un curs en format setmanal. També determina la data a partir de la qual estaran disponibles els registres d\'activitat del curs. Si es reinicia el curs i es canvia la seva data inicial, totes les dates del curs es mouran de forma relativa a la nova data inicial.';
 $string['startingfrom'] = 'Comença';
 $string['startsignup'] = 'Crea un compte d\'usuari nou';
 $string['state'] = 'Comarca/Província';
@@ -1873,6 +1876,7 @@ $string['trackforumsyes'] = 'Sí: destaca\'m els missatges nous';
 $string['trysearching'] = 'Podeu provar a cercar.';
 $string['turneditingoff'] = 'Desactiva edició';
 $string['turneditingon'] = 'Activa edició';
+$string['unauthorisedlogin'] = 'El compte d\'usuari «{$a}» no està disponible en aquest lloc';
 $string['undecided'] = 'No decidit';
 $string['unfinished'] = 'Inacabat';
 $string['unknowncategory'] = 'Categoria desconeguda';

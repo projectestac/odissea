@@ -54,5 +54,5 @@ $string['selectedusers'] = 'Выбранные пользователи';
 $string['selectuser'] = 'Выбрать пользователя';
 $string['selectusers'] = 'Выбрать пользователей';
 $string['source'] = 'Источник';
-$string['useractivityfeedback'] = '{$a} отзыв';
-$string['useractivitygrade'] = '{$a} оценка';
+$string['useractivityfeedback'] = 'отзыв {$a}';
+$string['useractivitygrade'] = 'оценка {$a}';

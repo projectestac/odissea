@@ -300,12 +300,12 @@ $string['continue'] = 'Jarraitu';
 $string['continuetocourse'] = 'Sakatu hemen ikastaroan sartzeko';
 $string['convertingwikitomarkdown'] = 'Wikia Markdown-era bihurtzen';
 $string['cookiesenabled'] = 'Cookie-ak gaituta izan behar dituzu zure nabigatzailean';
-$string['cookiesenabled_help'] = 'Gune honek bi "kuki" erabiltzen ditu:
+$string['cookiesenabled_help'] = 'Gune honek bi cookie erabiltzen ditu:
 
-Funtsezkoa saioarena da eta honen ohiko izena MoodleSession. Zure nabigatzaileari berau onartzen utzi behar diozu orritik orrira zerbitzua manten dadin. Plataformatik irtetean edo nabigatzailea ixtean kukia deuseztatu egingo da (nabigatzailean eta zerbitzarian).
+Funtsezkoa saioarena da eta honen ohiko izena MoodleSession. Zure nabigatzaileari berau onartzen utzi behar diozu orritik orrira zerbitzua manten dadin. Plataformatik irtetean edo nabigatzailea ixtean cookie-a deuseztatu egingo da (nabigatzailean eta zerbitzarian).
 
-Beste kukia zure erraztasunerako da eta honen izena MOODLEID. Nabigatzailean duzun erabiltzaile izena baino ez du gogoratzen. Berriz gunean sartzen zarenean zure izena automatikoki sortuko du erabiltzaile-izena eremuan (userid). Segurtasun handiagoa nahi baduzu ez erabili aukera hau, sartzen zaren bakoitzean eskuz sartu izena eta kitto.';
-$string['cookiesnotenabled'] = 'Zoritxarrez, kukiak ez daude gaituta zure nabigatzailean';
+Beste cookie-a zure erraztasunerako da eta honen izena MOODLEID. Nabigatzailean duzun erabiltzaile izena baino ez du gogoratzen. Berriz gunean sartzen zarenean zure izena automatikoki sortuko du erabiltzaile-izena eremuan (userid). Segurtasun handiagoa nahi baduzu ez erabili aukera hau, sartzen zaren bakoitzean eskuz sartu izena eta kitto.';
+$string['cookiesnotenabled'] = 'Zoritxarrez, cookie-ak ez daude gaituta zure nabigatzailean';
 $string['copy'] = 'kopiatu';
 $string['copyasnoun'] = 'kopiatu';
 $string['copyingcoursefiles'] = 'Ikastaroko fitxategiak kopiatzen';
@@ -1187,7 +1187,7 @@ $string['mycourses'] = 'Nire ikastaroak';
 $string['myfiles'] = 'Nire fitxategi pribatuak';
 $string['myfilesmanage'] = 'Nire fitxategi pribatuak kudeatu';
 $string['myhome'] = 'Nire hasiera';
-$string['mymoodledashboard'] = 'Nire Moodle-ren aginte-mahaia';
+$string['mymoodledashboard'] = 'Nire Moodle-ren aginte-panela';
 $string['myprofile'] = 'Nire profila';
 $string['name'] = 'Izena';
 $string['nameforlink'] = 'Zein izen eman nahi diozu esteka honi?';

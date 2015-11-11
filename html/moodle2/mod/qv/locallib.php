@@ -335,11 +335,11 @@ class qv{
 
         $content = $OUTPUT->box_start('generalbox boxaligncenter qvdates', 'dates');
         if ($this->timeavailable) {
-            $content .= $OUTPUT->box(get_string('availabledate', 'assignment'), 'title-time');
+            $content .= $OUTPUT->box(get_string('availabledate', 'qv'), 'title-time');
             $content .= $OUTPUT->box(userdate($this->timeavailable), 'data-time');
         }
         if ($this->timedue) {
-            $content .= $OUTPUT->box(get_string('duedate', 'assignment'), 'title-time');
+            $content .= $OUTPUT->box(get_string('duedate', 'qv'), 'title-time');
             $content .= $OUTPUT->box(userdate($this->timedue), 'data-time');
         }
         $content .= $OUTPUT->box_end();

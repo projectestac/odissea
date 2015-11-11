@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Leerfeld für {no} weitere Auswahlmöglichkeiten';
 $string['answer'] = 'Antwort';
-$string['choices'] = 'Auswahlmöglichkeiten';
-$string['choicex'] = 'Auswahlmöglichkeit {no}';
+$string['choices'] = 'Auswahl';
+$string['choicex'] = 'Auswahl {no}';
 $string['combinedcontrolnamegapselect'] = 'Drop Down Box';
 $string['combinedcontrolnamegapselectplural'] = 'Drop Down Boxen';
 $string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';

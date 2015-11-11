@@ -306,7 +306,7 @@ $string['invalidcourselevel'] = '無効なコンテクストレベルです。';
 $string['invalidcoursemodule'] = '無効なコースモジュールIDです。';
 $string['invalidcoursenameshort'] = '無効なコース省略名です。';
 $string['invaliddata'] = '送信されたデータが無効です。';
-$string['invaliddatarootpermissions'] = '$CFG->datarootで無効なパーミッションが検出されました。管理者はパーミッションを修正する必要があります。';
+$string['invaliddatarootpermissions'] = 'ディレクトリ作成時の無効なパーミッションが検出されました。詳細はデバッグを有効にしてください。';
 $string['invaliddevicetype'] = '無効なデバイスタイプです。';
 $string['invalidelementid'] = '無効なエレメントIDです。';
 $string['invalidentry'] = '有効なエントリではありません!';
@@ -390,7 +390,7 @@ $string['movecatcontentstoroot'] = 'カテゴリコンテンツをルートに�
 $string['movecategorynotpossible'] = 'あなたは選択したカテゴリにカテゴリ「 {$a} 」を移動することはできません。';
 $string['movecategoryownparent'] = 'あなたは親カテゴリ自体にカテゴリ「 {$a} 」を作成することはできません。';
 $string['movecategoryparentconflict'] = 'あなたはカテゴリ「 {$a} 」をサブカテゴリのサブカテゴリにすることはできません。';
-$string['mssqlrcsmodemissing'] = 'データベースが期待されるREAD_COMMITTED_SNAPSHOTモードを使用していないため、 特に高い実効性の状況では間違った結果となる可能性があります。正しく動作させるため、有効にしてください。詳細情報は<a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP#Configuration">Moodle Docs</a>をご覧ください。';
+$string['mssqlrcsmodemissing'] = 'データベースが期待されるREAD_COMMITTED_SNAPSHOTモードを使用していないため、 特に高い実効性の状況では間違った結果となる可能性があります。正しく動作させるため、有効にしてください。詳細情報はドキュメンテーション<a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Installing MSSQL for PHP</a>をご覧ください。';
 $string['multiplerecordsfound'] = '複数のレコードが見つかりました。1レコードのみ必要です。';
 $string['multiplerestorenotallow'] = '複数のリストア実行は許可されていません!';
 $string['mustbeloggedin'] = 'この処理を実行するにはあなたはログインする必要があります。';

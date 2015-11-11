@@ -10,6 +10,7 @@ class script_test_mail extends agora_script_base{
     protected $test = false;
     public $cli = false;
     public $api = false;
+    protected $category = "Test";
 
     public function params() {
         $params = array();

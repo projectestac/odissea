@@ -10,6 +10,7 @@ class script_upgrade_moodle extends agora_script_base{
 	protected $test = false;
 	public $cli = true;
 	public $api = true;
+	protected $category = "Upgrade";
 
 	protected function _execute($params = array(), $execute = true){
 		global $CFG, $DB, $OUTPUT, $agora;

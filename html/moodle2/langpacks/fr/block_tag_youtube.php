@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Toute catégorie';
-$string['apierror'] = 'Votre clef API Youtube n\'est pas définie. Veuillez contacter l\'administrateur de la plateforme.';
+$string['apierror'] = 'Votre clef API YouTube n\'est pas définie. Veuillez contacter l\'administrateur de la plateforme.';
 $string['apikey'] = 'Clef API';
 $string['apikeyinfo'] = 'Obtenir une <a href="https://developers.google.com/youtube/v3/getting-started">clef API Google</a> pour votre plateforme Moodle.';
 $string['autosvehicles'] = 'Autos &amp; véhicules';
@@ -45,7 +45,7 @@ $string['numberofvideos'] = 'Nombre de vidéos';
 $string['peopleblogs'] = 'Personnes &amp; blogs';
 $string['petsanimals'] = 'Animaux domestiques &amp; autres animaux';
 $string['pluginname'] = 'YouTube';
-$string['requesterror'] = 'Impossible d\'obtenir les données à partir du serveur. Si le problème persiste, veuillez contacter l\'administrateur de la plateforme.';
+$string['requesterror'] = 'Impossible d\'obtenir les données à partir du serveur. Veuillez contacter l\'administrateur de la plateforme si le problème persiste.';
 $string['scienceandtech'] = 'Science &amp; Technologie';
 $string['sports'] = 'Sports';
 $string['tag_youtube:addinstance'] = 'Ajouter un bloc YouTube';

@@ -55,7 +55,7 @@ $string['assessmentdeleted'] = 'Esleipena kendutako ebaluazioa';
 $string['assessmentend'] = 'Ebaluazioetarako amaierako data';
 $string['assessmentendbeforestart'] = 'Ezin da ebaluazioa egiteko epea zehaztu, ebaluaziorako data ireki baino lehen';
 $string['assessmentenddatetime'] = 'Ebaluaziorako azken eguna: {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentendevent'] = '{$a} (baluaziorako azken eguna)';
+$string['assessmentendevent'] = '{$a} (ebaluaziorako azken eguna)';
 $string['assessmentform'] = 'Ebaluaziorako formularioa';
 $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Ebaluazioa</a> of <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Erreferentziazko ebaluazioa';

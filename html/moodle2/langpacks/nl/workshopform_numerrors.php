@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Lege plaatsen voor {$a} meer stellingen';
-$string['configgrade0'] = 'Het standaad woord dat een negatieve beoordeling beschrijft.';
+$string['configgrade0'] = 'Het standaard woord dat een negatieve beoordeling beschrijft.';
 $string['configgrade1'] = 'Het standaard woord dat een positieve beoordeling beschrijft';
 $string['dimensioncomment'] = 'Opmerking';
 $string['dimensiondescription'] = 'Beschrijving';

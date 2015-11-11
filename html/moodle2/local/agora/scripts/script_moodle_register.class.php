@@ -10,6 +10,7 @@ class script_moodle_register extends agora_script_base{
     protected $test = false;
     public $cli = true;
     public $api = true;
+    protected $category = "Utils";
 
     public function params() {
         $params = array();

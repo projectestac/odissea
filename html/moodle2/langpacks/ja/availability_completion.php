@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = '学生は別の活動を完了 (または未完了) する必要があります。';
+$string['description'] = '学生は別の活動を完了する (または完了しない) 必要があります。';
 $string['error_selectcmid'] = 'あなたは完了条件に活動を選択する必要があります。';
 $string['label_cm'] = '活動またはリソース';
 $string['label_completion'] = '必須完了ステータス';
@@ -40,5 +40,5 @@ $string['requires_complete_fail'] = '活動「 <strong>{$a}</strong> 」が完�
 $string['requires_complete_pass'] = '活動「 <strong>{$a}</strong> 」が完了して合格の場合';
 $string['requires_incomplete'] = '活動「 <strong>{$a}</strong> 」が未完了の場合';
 $string['requires_not_complete_fail'] = '活動「 <strong>{$a}</strong> 」が完了せずに不合格の場合';
-$string['requires_not_complete_pass'] = '活動「 <strong>{$a}</strong> 」が完了せずに合格した場合';
+$string['requires_not_complete_pass'] = '活動「 <strong>{$a}</strong> 」が完了せずに合格の場合';
 $string['title'] = '活動完了';

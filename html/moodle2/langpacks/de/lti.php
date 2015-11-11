@@ -59,7 +59,7 @@ $string['cancel'] = 'Abbrechen';
 $string['cancelled'] = 'Abgebrochen';
 $string['cannot_delete'] = 'Sie sollten diese Tool-Konfiguration nicht löschen';
 $string['cannot_edit'] = 'Sie können diese Tool-Konfiguration nicht löschen';
-$string['capabilities'] = 'Berchtigungen';
+$string['capabilities'] = 'Berechtigungen';
 $string['capabilities_help'] = 'Wählen Sie die Berechtigungen, die Sie dem Tool-Anbieter übergeben möchten. Sie können mehrere Optionen auswählen.';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Weiter</a>';
 $string['comment'] = 'Kommentar';
@@ -146,7 +146,7 @@ Dies gilt auch für alle Web Service Anfrage zu dem Anbieter.
 Hierzu ist es erforderelich, dass sowohl das Moodle-System als auch der Anbieter SSL unterstützen.';
 $string['generaltool'] = 'Allgemeines Tool';
 $string['global_tool_types'] = 'Globale Tooltypen';
-$string['grading'] = 'Bewerungsweiterleitung';
+$string['grading'] = 'Bewertungsweiterleitung';
 $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'Die Funktion Icon URl ermöglich es, das für die Aktivität verwandte Icon auszutauschen.  An Stelle des Standard LTI Icons kann ein Icon, das zur eingebundenen Aktivität passt, gewählt werden.';
 $string['id'] = 'ID';
@@ -338,7 +338,7 @@ Die registrierten Tools  werden in vier Kategorien angezeigt:
 $string['toolproxyregistration'] = 'Registrierung eines externen Tools';
 $string['toolregistration'] = 'Registrierung eines externen Tools';
 $string['tool_settings'] = 'Tool-Einstellungen';
-$string['toolsetup'] = 'Konfiguration eines externes Tools';
+$string['toolsetup'] = 'Konfiguration externes Tool';
 $string['toolurl'] = 'Basis-URL des Tools';
 $string['toolurl_help'] = 'Die Basis-URL des Tools wird verwendet um die Start URLs mit der korrekten Konfiguration zu verknüpfen. Die Verwendung von http(s) am Beginn ist optional.
 

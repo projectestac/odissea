@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Afegeix una tasca nova';
-$string['assignmentdisabled'] = 'L\'activitat antiga "Tasca 2.2" està inhabilitada.';
+$string['assignmentdisabled'] = 'L\'activitat antiga «Tasca 2.2» està inhabilitada.';
 $string['assignment:exportownsubmission'] = 'Exporta les trameses pròpies';
 $string['assignment:exportsubmission'] = 'Exporta tramesa';
 $string['assignment:grade'] = 'Qualificar tasca';
-$string['assignmentneedsupgrade'] = 'L\'activitat antiga "Tasca 2.2" ha estat inhabilitada. Demaneu a l\'administració del lloc que executi l\'eina d\'actualització de tasques per a totes les tasques antigues d\'aquest lloc.';
+$string['assignmentneedsupgrade'] = 'L\'activitat antiga «Tasca 2.2» ha estat inhabilitada. Demaneu a l\'administració del lloc que executi l\'eina d\'actualització de tasques per a totes les tasques antigues d\'aquest lloc.';
 $string['assignment:submit'] = 'Trametre tasca';
 $string['assignment:view'] = 'Veure tasca';
 $string['messageprovider:assignment_updates'] = 'Notificacions de tasques (2.2)';
@@ -40,7 +40,7 @@ $string['modulenameplural'] = 'Tasques 2.2 (inhabilitades)';
 $string['page-mod-assignment-submissions'] = 'Pàgina de trameses del mòdul de tasques';
 $string['page-mod-assignment-view'] = 'Pàgina principal del mòdul de tasques';
 $string['page-mod-assignment-x'] = 'Pàgina de qualsevol mòdul de tasques';
-$string['pendingupgrades_message_content'] = 'Com a part de l\'actualització a Moodle 2.7, l\'activitat antiga Tasques 2.2 ha estat inhabilitada. Les còpies de seguretat de l\'activitat antiga Tasques 2.2 es restauraran perfectament a la nova activitat de tasques. Totes les instàncies restants de l\'activitat antiga Tasca 2.2 s\'han d\'actualitzar utilitzant l\'eina d\'actualització de tasques {$a->docsurl}. Hi ha {$a->count} instancies de l\'activitat antiga Tasca 2.2 en aquest lloc que requereixen actualització. Els usuaris no podran accedir al contingut d\'aquestes activitats fins que s\'actualitzin.';
+$string['pendingupgrades_message_content'] = 'Com a part de l\'actualització a Moodle 2.7, s\'ha inhabilitat l\'activitat antiga Tasques 2.2. Les còpies de seguretat de l\'activitat antiga Tasques 2.2 es restauraran perfectament a la nova activitat de tasques. Totes les instàncies restants de l\'activitat antiga Tasca 2.2 s\'han d\'actualitzar utilitzant l\'eina d\'actualització de tasques {$a->docsurl}. Hi ha {$a->count} instàncies de l\'activitat antiga Tasca 2.2 en aquest lloc que requereixen actualització. Els usuaris no podran accedir al contingut d\'aquestes activitats fins que s\'actualitzin.';
 $string['pendingupgrades_message_small'] = 'Aquest connector ha estat inhabilitat. Totes les tasques restants s\'han d\'actualitzar al nou mòdul de tasques utilitzant l\'eina d\'actualització de tasques.';
 $string['pendingupgrades_message_subject'] = 'Informació important sobre les Tasques 2.2';
 $string['pluginadministration'] = 'Administració de Tasques 2.2 (inhabilitat)';

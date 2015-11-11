@@ -18,8 +18,7 @@ class script_autoset_settings extends agora_script_base{
 	protected $test = true;
 	public $cli = true;
 	public $api = true;
-
-
+	protected $category = "Upgrade";
 
 	protected function _execute($params = array(), $execute = true) {
 		global $CFG;

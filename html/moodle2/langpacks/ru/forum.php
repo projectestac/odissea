@@ -81,7 +81,7 @@ $string['cannotupdatepost'] = 'Вы не можете обновлять это 
 $string['cannotviewpostyet'] = 'Вы не можете смотреть вопросы других участников этого обсуждения, т.к. еще не разместили свой';
 $string['cannotviewusersposts'] = 'Нет сообщений этого пользователя, которые Вы можете просмотреть.';
 $string['cleanreadtime'] = 'Время отметки старых сообщений как прочитанных, час';
-$string['clicktosubscribe'] = 'Вы не подписаны. Нажмите, чтобы подписаться.';
+$string['clicktosubscribe'] = 'Вы не подписаны на это обсуждение. Нажмите, чтобы подписаться.';
 $string['clicktounsubscribe'] = 'Вы подписаны на это обсуждение. Нажмите, чтобы отказаться от подписки.';
 $string['completiondiscussions'] = 'Студент должен создать обсуждения:';
 $string['completiondiscussionsgroup'] = 'Требуются обсуждения';
@@ -136,8 +136,8 @@ $string['discussion'] = 'Обсуждение';
 $string['discussionmoved'] = 'Обсуждение перемещено в «{$a}»';
 $string['discussionmovedpost'] = 'Это обсуждение перенесено <a href="{$a->discusshref}">сюда</a> в форум <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Название обсуждения';
-$string['discussionnownotsubscribed'] = '{$a->name} НЕ будет получать уведомления о новых сообщениях темы «{$a->name}» из форума «{$a->forum}»';
-$string['discussionnowsubscribed'] = '{$a->name} будет получать уведомления о новых сообщениях темы «{$a->name}» из форума «{$a->forum}»';
+$string['discussionnownotsubscribed'] = '{$a->name} НЕ будет получать уведомления о новых сообщениях в обсуждении «{$a->discussion}» из форума «{$a->forum}»';
+$string['discussionnowsubscribed'] = '{$a->name} будет получать уведомления о новых сообщениях в обсуждении «{$a->discussion}» из форума «{$a->forum}»';
 $string['discussions'] = 'Обсуждения';
 $string['discussionsstartedby'] = 'Обсуждения, начатые  {$a}';
 $string['discussionsstartedbyrecent'] = 'Последние обсуждения, начатые пользователем {$a}';
@@ -156,7 +156,7 @@ $string['displayend_help'] = '<h2>Период отображения форум
 
 <p>Заметьте, что пользователи с правами администратора могут видеть сообщения до их появления на форуме и после завершения срока показа.</p>';
 $string['displaymode'] = 'Режим отображения';
-$string['displayperiod'] = 'Период отображения';
+$string['displayperiod'] = 'Отображаемый период';
 $string['displaystart'] = 'Начало отображения';
 $string['displaystart_help'] = '<h2>Период отображения форума</h2>
 
@@ -216,7 +216,7 @@ $string['everyonecannowchoose'] = 'Каждый участник может вы
 $string['everyoneisnowsubscribed'] = 'На этот форум подписаны все';
 $string['everyoneissubscribed'] = 'На этот форум подписаны все';
 $string['existingsubscribers'] = 'Текущие подписчики';
-$string['exportdiscussion'] = 'Экспортировать обсуждение целиком';
+$string['exportdiscussion'] = 'Экспортировать в портфолио всё обсуждение целиком';
 $string['forcedreadtracking'] = 'Разрешить принудительное отслеживание непрочитанных сообщений';
 $string['forcedreadtracking_desc'] = 'Позволяет установить принудительное отслеживание непрочитанных сообщений форумов.
 Это может привести к снижению производительности для некоторых пользователей, в частности на курсах с многочисленными форумами и сообщениями.
@@ -240,7 +240,7 @@ $string['forum:editanypost'] = 'Редактировать любые сообщ
 $string['forum:exportdiscussion'] = 'Экспортировать обсуждение целиком';
 $string['forum:exportownpost'] = 'Экспортировать свои сообщения';
 $string['forum:exportpost'] = 'Экспортировать сообщения';
-$string['forumintro'] = 'Вступление для форума';
+$string['forumintro'] = 'Описание';
 $string['forum:managesubscriptions'] = 'Редактировать список подписчиков';
 $string['forum:movediscussions'] = 'Перемещать обсуждения';
 $string['forumname'] = 'Название форума';
@@ -427,7 +427,7 @@ $string['replyforum'] = 'Ответить в форум';
 $string['reply_handler'] = 'Ответ на сообщение форума по электронной почте';
 $string['reply_handler_name'] = 'Позволяет отвечать на сообщения в форуме по электронной почте';
 $string['replytoforumpost'] = 'Вы можете ответить на сообщение форума по электронной почте.';
-$string['replytopostbyemail'] = 'Вы можете ответить на это по электронной почте';
+$string['replytopostbyemail'] = 'Вы можете дать ответ по электронной почте';
 $string['replytouser'] = 'Ипользовать адреса email в ответе';
 $string['resetdigests'] = 'Удалить предпочтения дайджеста сообщений форума для всех пользователей';
 $string['resetforums'] = 'Удалить все сообщения из этих типов форумов';

@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calls'] = 'Crides a funcions';
-$string['cannotfindanyrunforrunid'] = 'Disculpeu, no es pot trobar el perfil d\'execució de \'{$a}\'';
-$string['cannotfindanyrunforurl'] = 'Disculpeu, no es pot trobar cap perfil d\'execució de l\'URL \'{$a}\'';
+$string['cannotfindanyrunforrunid'] = 'No es pot trobar el perfil d\'execució de «{$a}»';
+$string['cannotfindanyrunforurl'] = 'No es pot trobar cap perfil d\'execució de l\'URL «{$a}»';
 $string['comment'] = 'Comentari';
 $string['cputime'] = 'Data CPU';
 $string['differencesbetween2runsof'] = 'Diferencies entre dos execucions de {$a}';

@@ -8,6 +8,7 @@ class script_repair_gradebook extends agora_script_base{
 	public $info = "Repair gradebook with activities without gradeitems";
 	public $cron = false;
 	protected $test = false;
+	protected $category = "Check and repair";
 
 	public function params(){
 		$params = array();

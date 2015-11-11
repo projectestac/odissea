@@ -35,5 +35,6 @@ $string['layoutgrid'] = 'Сетка';
 $string['layoutlist'] = 'Список';
 $string['levelgroup'] = 'Уровень оценки и определения';
 $string['levels'] = 'Уровни';
+$string['mustbeunique'] = 'Уровни оценки должны быть уникальными в самом критерии';
 $string['mustchooseone'] = 'Вы должны выбрать один из этих элементов';
 $string['pluginname'] = 'Рубрика';

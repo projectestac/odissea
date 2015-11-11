@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pdw:desc'] = 'Afficher/masquer la barre d\'outils';
-$string['pluginname'] = 'Afficher/masquer la barre d\'outils';
+$string['pdw:desc'] = 'Développer/réduire la barre d\'outils';
+$string['pluginname'] = 'Développer/réduire la barre d\'outils';

@@ -31,5 +31,5 @@ $string['allocationadded'] = 'De inzending is toegewezen';
 $string['allocationexists'] = 'De toewijzing bestaat al';
 $string['areyousuretodeallocate'] = 'Ben je er zeker van dat je de toewijzign van de geselecteerde evaluatie wil ongedaan maken?';
 $string['areyousuretodeallocategraded'] = 'Je gaat deze evaluatie met cijfers verwijderen. Ben je er zeker van dat je dit wil doen?';
-$string['pluginname'] = 'Manueel toewijzen';
+$string['pluginname'] = 'Handmatig toewijzen';
 $string['showallparticipants'] = 'Toon alle deelnemers';

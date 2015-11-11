@@ -43,7 +43,7 @@ $string['deleteinstanceconfirmself'] = 'Esteu segur que voleu suprimir la instà
 $string['deleteinstancenousersconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}».
 
 Esteu segur que voleu continuar?';
-$string['disableinstanceconfirmself'] = 'Esteu segur que voler inhabilitar la instància "{$a->name}" que us dona accés a aquest curs? És possible que no pugueu tornar a entrar al curs si continueu.';
+$string['disableinstanceconfirmself'] = 'Esteu segur que voleu inhabilitar la instància «{$a->name}» que us dóna accés a aquest curs? És possible que no pugueu tornar a accedir al curs si continueu.';
 $string['durationdays'] = '{$a} dies';
 $string['editenrolment'] = 'Editeu la inscripció';
 $string['enrol'] = 'Inscriu';

@@ -10,7 +10,7 @@ class script_repair_orphan_assign extends agora_script_base{
 	public $cli = true;
 	public $api = true;
 	protected $test = true;
-
+    protected $category = "Check and repair";
 
 	protected function _execute($params = array(), $execute = true){
 		global $DB, $CFG;

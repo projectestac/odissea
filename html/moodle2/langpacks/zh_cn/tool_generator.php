@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_noforumdiscussions'] = '所选课程不含有论坛讨论区';
 $string['pluginname'] = '随机课程生成器';

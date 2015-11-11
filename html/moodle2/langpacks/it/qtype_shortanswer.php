@@ -40,5 +40,5 @@ $string['pleaseenterananswer'] = 'Per favore inserisci una risposta.';
 $string['pluginname'] = 'Risposta breve';
 $string['pluginnameadding'] = 'Creazione domanda Risposta breve';
 $string['pluginnameediting'] = 'Modifica domanda Risposta breve';
-$string['pluginname_help'] = 'In risposta a una domanda (che può comprendere anche un\'immagine) lo studente scriverà una parola o una breve frase. Ci possono essere anche più risposte corrette, ciascuna con un voto diverso. Se è selezionata l\'opzione "case sensitive,"si può avere un punteggio differente per "Parola" e "parola".';
+$string['pluginname_help'] = 'In risposta a una domanda (che può comprendere anche un\'immagine) lo studente scriverà una parola o una breve frase. Ci possono essere anche più risposte esatte, ciascuna con un voto diverso. Se è selezionata l\'opzione "case sensitive,"si può avere un punteggio differente per "Parola" e "parola".';
 $string['pluginnamesummary'] = 'Consente la risposta con una o più parole. La valutazione avviene confrontando la risposta con modelli di risposta che possono anche contenere caratteri jolly.';

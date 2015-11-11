@@ -9,6 +9,7 @@ class script_test_cli extends agora_script_base{
 	public $cron = false;
 	public $api = false;
 	protected $test = false;
+	protected $category = "Test";
 
 	protected function _execute($params = array(), $execute = true){
 		global $CFG;

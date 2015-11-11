@@ -236,6 +236,7 @@ $string['linkedfiledoesntexist'] = 'Het gelinkte bestand {$a} bestaat niet';
 $string['makechildof'] = 'Maak ondergeschikt aan \'{$a}\'';
 $string['makecopy'] = 'Maak kopie';
 $string['maketoplevelitem'] = 'Verplaats naar top';
+$string['manualgradeinvalidformat'] = 'Dat is geen geldig nummer.';
 $string['manualgradeoutofrange'] = 'Dit cijfer is buiten het geldig bereik';
 $string['manuallygraded'] = 'Manueel beoordeeld {$a->mark} met opmerking: {$a->comment}';
 $string['mark'] = 'Cijfer';

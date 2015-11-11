@@ -221,89 +221,7 @@ $string['highscores'] = 'ハイスコア';
 $string['hightime'] = '最長時間';
 $string['importcount'] = '{$a} の問題をインポート';
 $string['importquestions'] = '問題をインポートする';
-$string['importquestions_help'] = '<p>フォームを通してアップロードされた外部テキストファイルから問題をインポートすることができます。</p>
-
-<p>下記のように多くのファイルフォーマットをサポートします:</p>
-
-<h2>GIFTフォーマット</h2>
-<div class="indent">
-<p>GIFTは、テキストファイルからMoodle小テストに問題をインポートするための、最も統合的なインポートフォーマットです。GIFTは、教師が問題をテキストファイルで簡単に書くことができるよう設計されています。多肢選択問題、、○/×問題、記述問題、組み合わせ問題、数値問題、_____を挿入することで「穴埋め問題」をサポートします。様々なタイプの問題およびコメント、問題名、フィードバック、評点の加重割合を1つのテキストファイルに記述することができます。以下に例をあげます:</p>
-<pre>
-グラントの墓には誰が埋められていますか?{~グラント ~ジェファーソン =誰も埋められていない}
-
-グラントはグラントの墓に {~埋められている =埋葬されている ~生きている} 。
-
-グラントはグラントの墓に埋められている。{FALSE}
-
-グラントの墓には誰が埋められていますか?{=誰も埋められていない =1人も埋められていない}
-
-ユリシーズ S. グラントは、いつ生まれましたか?{#1822}
-</pre>
-
-<p class="moreinfo"><a href="help.php?file=formatgift.html&module=quiz">「GIFT」フォーマットの詳細情報</a></p>
-</div>
-
-<h2>Aikenフォーマット</h2>
-<div class="indent">
-<p>Aikenフォーマットは、人間が理解できるフォーマットで多肢選択問題を作成する非常にシンプルな方法です。次にフォーマットの例をあげます:</p>
-<pre>
-応急手当の目的は?
-A. 命を救う、より深刻な怪我を防ぐ、健康を維持する
-B. 怪我をした人に治療を提供する
-C. より深刻な怪我を防ぐ
-D. 助けを求めている被害者を支援する
-ANSWER: A
-</pre>
-
-<p class="moreinfo"><a href="help.php?file=formataiken.html&module=quiz">「Aiken」フォーマットの詳細情報</a></p>
-</div>
-
-<h2>Missing Wordフォーマット</h2>
-<div class="indent">
-<p>このフォーマットは、多肢選択問題のみをサポートします。それぞれの答えはチルド (~) で分離され、正解の前には等号 (=) を付けます。次に例をあげます:</p>
-
-<blockquote>私たちは、幼児のときに身体の部分を探索し始めるとすぐに、{=解剖学と生理学 ~反射学
-~科学 ~実験}の生徒となります。ある意味、私たちは生涯生徒であり続けます。
-</blockquote>
-
-<p class="moreinfo"><a href="help.php?file=formatmissingword.html&module=quiz">「Missing Word」フォーマットの詳細情報</a></p>
-</div>
-
-<h2>AON</h2>
-<div class="indent">
-<p>これはMissing Wordフォーマットと同じですが、問題がインポートされた後、すべての記述式問題が組み合わせ問題に変換されます。</p>
-<p>また、インポート時に多肢選択問題の答えがランダムにシャッフルされます。</p>
-<p>多くの小テスト機能の開発を後援している機関にちなんで、フォーマットの名称が付けられました。</p>
-</div>
-
-<h2>Blackboard</h2>
-<div class="indent">
-<p>このモジュールは、Blackboardのエクスポート機能によって保存された問題をインポートすることができます。あなたのPHPに組み込まれたXML機能を利用します。</p>
-
-<p class="moreinfo"><a href="help.php?file=formatblackboard.html&module=quiz">「Blackboard」フォーマットの詳細情報</a></p>
-</div>
-
-<h2>Course Test Manager</h2>
-<div class="indent">
-<p>このモジュールはCourse Test Manager test bankに保存された問題をインポートすることができます。
-MoodleがWindowsで動作しているか、Linuxウェブサーバで動作しているかによって、Microsoft Accessデータベースに保存されているtest bankへのアクセス方法が異なります。</p>
-<p>Windows環境では、他のデータインポートファイルと同じようにサーバにアップロードしてください。</p>
-<p>Linux環境では、LinuxサーバのmoodleにXMLデータを転送するODBCソケットとCourse Test Manager test bankを入れたWindowsマシンを同じネットワークに設置する必要があります。</p>
-<p>このインポートクラスを使用する前に、下記の詳細ヘルプをお読みください。</p>
-
-<p class="moreinfo"><a href="help.php?file=formatctm.html&module=quiz">「CTM」フォーマットの詳細情報</a></p>
-</div>
-
-<h2>カスタム</h2>
-<div class="indent">
-<p>インポートしたいフォーマットがある場合は、/mod/quiz/format/custom.phpを編集することで独自にインプリメントすることができます。</p>
-
-<p>新たに記述する必要のあるコードの量は非常に小さいものです - 与えられたテキストから1つの問題のみを解析できるコードです。</p>
-
-<p class="moreinfo"><a href="help.php?file=formatcustom.html&module=quiz">「カスタム」フォーマットの詳細情報</a></p>
-</div>
-
-<p>WebCT、IMS QTIを含んだ新たなフォーマットがさらに追加されます。どのようなフォーマットでも、Moodleユーザが貢献することができます! </p>';
+$string['importquestions_help'] = 'この機能では様々なフォーマットの問題をテキストファイル経由でインポートすることができます。';
 $string['insertedpage'] = 'ページが追加されました';
 $string['invalidfile'] = '無効なファイル';
 $string['invalidid'] = 'コースモジュールIDまたはレッスンIDがパスしていません。';
@@ -545,7 +463,7 @@ $string['teacherongoingwarning'] = '進行中の評点は、学生のみに表�
 $string['teachertimerwarning'] = 'タイマーは学生に対してのみ作動します。タイマーをテストするには学生としてログインしてください。';
 $string['thatsthecorrectanswer'] = '正解です。';
 $string['thatsthewronganswer'] = '不正解です。';
-$string['thefollowingpagesjumptothispage'] = '下記のページは、このページにジャンプします。';
+$string['thefollowingpagesjumptothispage'] = '以下ののページはこのページにジャンプします。';
 $string['thispage'] = 'このページ';
 $string['timeisup'] = '時間終了';
 $string['timeremaining'] = '残り時間';

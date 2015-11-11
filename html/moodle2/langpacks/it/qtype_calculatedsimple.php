@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['atleastonewildcard'] = 'Almeno un Jolly <strong>{x..}</strong> dovrebbe essere presente nelle formule delle risposte corrette.';
+$string['atleastonewildcard'] = 'Almeno un Jolly <strong>{x..}</strong> dovrebbe essere presente nelle formule delle risposte esatte.';
 $string['converttocalculated'] = 'Salva come nuova domanda Calcolata semplice standard';
-$string['findwildcards'] = 'Trova i Jolly  {x..} presenti nelle formule delle risposte corrette';
+$string['findwildcards'] = 'Trova i Jolly  {x..} presenti nelle formule delle risposte esatte';
 $string['generatenewitemsset'] = 'Genera';
 $string['newsetwildcardvalues'] = 'nuovo set di valori Jolly';
 $string['pluginname'] = 'Calcolata semplice';

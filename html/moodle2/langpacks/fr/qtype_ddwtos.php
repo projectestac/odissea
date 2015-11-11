@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = 'Vides pour {no} choix supplémentaires';
+$string['addmorechoiceblanks'] = 'Espaces vides pour {no} choix supplémentaires';
 $string['answer'] = 'Réponse';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
-$string['infinite'] = 'Infini';
+$string['infinite'] = 'Réutilisable';
 $string['pleaseputananswerineachbox'] = 'Veuillez entrer une réponse dans chaque boîte.';
 $string['pluginname'] = 'Glisser-déposer sur texte';
 $string['pluginnameadding'] = 'Ajouter un glisser-déposer sur texte';

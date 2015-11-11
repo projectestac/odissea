@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admin_bookmarks:addinstance'] = '新しい管理ブックマークブロックを追加する';
 $string['admin_bookmarks:myaddinstance'] = '新しい管理ブックマークブロックをマイホームに追加する';
-$string['pluginname'] = 'ブックマーク管理';
+$string['pluginname'] = '管理ブックマーク';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = 'クライアントID';
 $string['noauthtoken'] = 'Googleから認証トークンが受信されませんでした。あなたのGoogleアカウントにMoodleのアクセスが許可されているかどうか確認してください。';
 $string['nooauthcredentials'] = 'OAuth認証情報が必要です。';
-$string['nooauthcredentials_help'] = 'Google Driveポートフォリオプラグインを使用するにはあなたはポートフォリオ設定にてOAuth認証情報を設定する必要があります。';
+$string['nooauthcredentials_help'] = 'Google Driveポートフォリオプラグインを使用するにはあなたはポートフォリオ設定でOAuth認証情報を設定する必要があります。';
 $string['nosessiontoken'] = 'Googleへのエクスポートを抑制するセッショントークンがありません。';
 $string['oauth2upgrade_message_content'] = 'Moodle 2.3へのアップグレードの一環として、Google Driveポートフォリオプラグインは無効にされました。プラグインを再度有効にするにはクライアントIDおよび秘密鍵を取得するため、ドキュメンテーション「 {$a->docsurl} 」に記述されているようにあなたのサイトをGoogleに登録する必要があります。クライアントIDおよび秘密鍵はすべてのGoogle DriveおよびPicasaプラグイン設定に使用することができます。';
 $string['oauth2upgrade_message_small'] = 'Google OAuth 2.0に記載されている設定が必要なため、このプラグインは無効にされます。';

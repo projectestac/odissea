@@ -820,7 +820,7 @@ $string['format_help'] = 'Die Kursformate legen das Layout der Kursseite fest.
 * Wochenformat - Die Kursseite wird in Wochenabschnitte eingeteilt, beginnend mit der ersten Woche nach dem Kursbeginn';
 $string['formathtml'] = 'HTML-Format';
 $string['formatmarkdown'] = 'Markdown-Format';
-$string['formatplain'] = 'Reines Textformat';
+$string['formatplain'] = 'Unformatierter Text';
 $string['formattext'] = 'Moodle-Text-Format';
 $string['formattexttype'] = 'Formatierung';
 $string['framesetinfo'] = 'Dieses Frameset-Dokument enthält:';
@@ -1489,7 +1489,7 @@ $string['resetinfo'] = 'Diese Seite ermöglicht es Ihnen, nutzerspezifische Date
 
 Achtung: Wenn Sie hier Daten zum Löschen auswählen und Ihre Auswahl bestätigen, werden diese Daten unwiederbringlich aus dem Kurs gelöscht.';
 $string['resetnotimplemented'] = 'Zurücksetzen ist nicht vorgesehen';
-$string['resetrecordexpired'] = 'Der Link zum Zurücksetzen des Kennworts ist älter als {$a} Minuten und verfallen. Veranlassen Sie das Zurücksetzen des Kennworts erneut!';
+$string['resetrecordexpired'] = 'Der Link zum Zurücksetzen des Kennworts ist älter als {$a} Minuten und abgelaufen. Veranlassen Sie das Zurücksetzen des Kennworts erneut!';
 $string['resetstartdate'] = 'Startdatum zurücksetzen';
 $string['resetstatus'] = 'Status';
 $string['resettask'] = 'Aufgabe';
@@ -1806,7 +1806,7 @@ $string['teacherroles'] = '{$a} Rollen';
 $string['teachers'] = 'Trainer/innen';
 $string['textediting'] = 'Texteditor';
 $string['texteditor'] = 'Standard-Web-Formulare benutzen';
-$string['textformat'] = 'Reines Textformat';
+$string['textformat'] = 'Unformatierter Text';
 $string['thanks'] = 'Danke';
 $string['theme'] = 'Design';
 $string['themes'] = 'Designs';

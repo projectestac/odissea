@@ -302,7 +302,7 @@ $string['reportcountallattempts'] = 'Попыток - {$a->nbattempts} для п
 $string['reportcountattempts'] = 'результатов - {$a->nbresults} (пользователей - {$a->nbusers})
 ';
 $string['reports'] = 'Отчеты';
-$string['repositorynotsupported'] = 'При ссылке непосредственно на файл imsmanifest.xml. поддерживаются только хранилища файловой системы.';
+$string['repositorynotsupported'] = 'Это хранилище не поддерживает прямые ссылки на файл imsmanifest.xml.';
 $string['response'] = 'Ответ';
 $string['result'] = 'Результат';
 $string['results'] = 'Результаты';

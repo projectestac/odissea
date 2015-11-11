@@ -35,5 +35,6 @@ $string['layoutgrid'] = 'Horizontal';
 $string['layoutlist'] = 'Vertikal';
 $string['levelgroup'] = 'Gewichtung und Beschreibung';
 $string['levels'] = 'Bereiche';
+$string['mustbeunique'] = 'Bewertungsstufen müssen innerhalb eines Kriteriums eindeutig sein.';
 $string['mustchooseone'] = 'Sie müssen eins dieser Elemente auswählen';
-$string['pluginname'] = 'Gewichtung';
+$string['pluginname'] = 'Bewertungskriterien';

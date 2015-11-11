@@ -77,6 +77,10 @@ $string['clicktrailreport'] = 'Click trails';
 $string['closed'] = 'This activity has closed';
 $string['clues'] = 'Clues';
 $string['completed'] = 'Completed';
+$string['completioncompleted'] = 'Require completed status';
+$string['completionmingrade'] = 'Require minimum grade';
+$string['completionpass'] = 'Require passing grade';
+$string['completionwarning'] = 'These fields are disabled if the grade limit for this activity is "No grade" or the grade weighting is "No weighting"';
 $string['configbodystyles'] = 'By default, Moodle theme styles will override HotPot activity styles. However, for any styles selected here, the HotPot activity styles will be given priority over the Moodle theme styles.';
 $string['configenablecache'] = 'Maintaining a cache of HotPot quizzes can dramatically speed up the delivery of quizzes to the students.';
 $string['configenablecron'] = 'Specify the hours in your time zone at which the HotPot cron script may run';
@@ -408,6 +412,8 @@ The output formats that are available depend on the type of the source file. Som
 
 The "best" setting will display the content using the optimal output format for the student\'s browser.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze (v6) from html';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) from html';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) from html';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'ANCT-Scan from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'DropDown from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'FindIt (a) from HP6 JCloze xml';

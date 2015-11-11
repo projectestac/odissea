@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventcomponent'] = '组件';
 $string['eventcontext'] = '事件情境';
 $string['eventrelatedfullnameuser'] = '受影响的用户';
+$string['eventreportviewed'] = '查看了实时日志报表';
 $string['livelogs'] = '一小时内的实时日志';
 $string['loglive:view'] = '查看实时日志';
 $string['pluginname'] = '实时日志';

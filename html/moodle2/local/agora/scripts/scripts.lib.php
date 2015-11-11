@@ -81,12 +81,24 @@ function scripts_cli_get_params($scriptclass) {
 function scripts_list_scripts() {
 	global $OUTPUT;
 	$scripts = get_all_scripts();
-	echo $OUTPUT->box_start('generalbox');
-	echo '<ul>';
+
+	$scripts_cat = array();
 	foreach ($scripts as $script_name => $script) {
-		echo "<li><strong><a href=\"?script=$script_name\">$script->title:</a></strong> <i>$script->info</i></li>";
+		$category = $script->get_category();
+		if (!isset($scripts_cat[$category])) {
+			$scripts_cat[$category] = array();
+		}
+		$scripts_cat[$category][$script_name] = $script;
 	}
-	echo '</ul>';
+	echo $OUTPUT->box_start('generalbox');
+	foreach($scripts_cat as $catname => $cat) {
+		echo "<h3>$catname</h3>";
+		echo '<ul>';
+		foreach ($cat as $script_name => $script) {
+			echo "<li><strong><a href=\"?script=$script_name\">$script->title:</a></strong> <i>$script->info</i></li>";
+		}
+		echo '</ul>';
+	}
 	echo $OUTPUT->box_end();
 }
 

@@ -44,6 +44,7 @@ $string['recover'] = 'Herstellen';
 $string['settings'] = 'Atto werkbalkinstellingen';
 $string['subplugintype_atto'] = 'Atto plugin';
 $string['subplugintype_atto_plural'] = 'Atto plugins';
+$string['taskautosavecleanup'] = 'Verwijder verlopen automatisch bewaarde kladjes uit de databank.';
 $string['textrecovered'] = 'Een bewaarde versie van deze tekst werd automatisch teruggezet.';
 $string['toolbarconfig'] = 'Werkbalkinstellingen';
 $string['toolbarconfig_desc'] = 'De lijst van plugins en de volgorde waarin ze worden weergegeven kan hier worden geconfigureerd. De configuratie bestaat uit groepen (een per regel), gevolgd door de geordende lijst van plugins voor die groep. De groepsnaam wordt gescheiden van de plugins met een gelijkheidsteken en de plugins worden met komma\'s gescheiden. De groepsnaam moet uniek zijn en moeten aangeven wat de knoppen met elkaar gemeen hebben. Knop- en groepsnamen mogen niet worden herhaald en mogen alleen alfanumerieke tekens bevatten.';

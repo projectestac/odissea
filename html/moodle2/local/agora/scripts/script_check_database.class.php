@@ -9,6 +9,7 @@ class script_check_database extends agora_script_base{
     public $cli = true;
     protected $test = true;
     protected $handler = true;
+    protected $category = "Check and repair";
 
     protected function _execute($params = array(), $execute = true){
         global $CFG, $XMLDB, $DB, $OUTPUT, $SESSION;

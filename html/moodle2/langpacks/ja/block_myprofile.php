@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['contentsettings'] = 'コンテンツエリアに設定を表示する';
+$string['contentsettings'] = 'コンテンツエリアの設定を表示する';
 $string['display_address'] = '住所を表示する';
 $string['display_aim'] = 'AIMを表示する';
 $string['display_city'] = '都道府県を表示する';
@@ -38,8 +38,8 @@ $string['display_institution'] = 'インスティテューションを表示す�
 $string['display_lastaccess'] = '最終アクセスを表示する';
 $string['display_lastip'] = '最終IPアドレスを表示する';
 $string['display_msn'] = 'MSNを表示する';
-$string['display_phone1'] = '電話番号1を表示する';
-$string['display_phone2'] = '電話番号2を表示する';
+$string['display_phone1'] = '電話番号を表示する';
+$string['display_phone2'] = '携帯電話番号を表示する';
 $string['display_picture'] = '写真を表示する';
 $string['display_skype'] = 'Skypeを表示する';
 $string['display_un'] = '氏名を表示する';

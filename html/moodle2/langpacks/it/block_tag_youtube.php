@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Qualsiasi categoria';
-$string['apierror'] = 'L\'API ket di TouTube non è impostata, contatta l\'amministratore.';
+$string['apierror'] = 'L\'API key di TouTube non è impostata, contatta l\'amministratore.';
 $string['apikey'] = 'API key';
 $string['apikeyinfo'] = 'Ottieni una <a href="https://developers.google.com/youtube/v3/getting-started">Google API Key</a> per il tuo sito Moodle.';
 $string['autosvehicles'] = 'Auto &amp; Veicoli';

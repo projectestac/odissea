@@ -10,7 +10,7 @@ class script_fmo_migration extends agora_script_base{
     protected $test = false;
     public $api = true;
     public $cli = true;
-
+    protected $category = "Upgrade";
 
     protected function _execute($params = array(), $execute = true) {
         global $CFG, $DB, $OUTPUT;

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'あなたには注意が必要な課題があります。';
 $string['addattempt'] = '別の提出を許可する';
 $string['addnewattempt'] = '新しい提出を追加する';
-$string['addnewattemptfromprevious'] = '前の提出を基に新しい提出を追加する';
+$string['addnewattemptfromprevious'] = '前回の提出をもとに新しい提出を追加する';
 $string['addnewattemptfromprevious_help'] = 'ここではあなたの作業のため、前回提出のコンテンツを新しい提出にコピーします。';
 $string['addnewattempt_help'] = 'ここではあなたの作業のため、空の提出を作成します。';
 $string['addsubmission'] = '課題を追加する';
@@ -75,7 +75,7 @@ $string['assign:view'] = '課題を表示する';
 $string['assign:viewblinddetails'] = 'ブラインド評定が有効にされた場合、学生IDを表示する';
 $string['assign:viewgrades'] = '評定を表示する';
 $string['attemptheading'] = '提出 {$a->attemptnumber}: {$a->submissionsummary}';
-$string['attempthistory'] = '前の提出';
+$string['attempthistory'] = '前回の提出';
 $string['attemptnumber'] = '提出回数';
 $string['attemptreopenmethod'] = '提出再オープン';
 $string['attemptreopenmethod_help'] = '学生の提出をどのように再オープンするか決定します。利用可能なオプションは下記のとおりです:
@@ -90,7 +90,7 @@ $string['attemptreopenmethod_untilpass'] = '合格するまで自動';
 $string['attemptsettings'] = '受験設定';
 $string['availability'] = '利用';
 $string['backtoassignment'] = '課題に戻る';
-$string['batchoperationconfirmaddattempt'] = '選択した提出に関して、別の提出を許可しますか?';
+$string['batchoperationconfirmaddattempt'] = '選択した提出に関して別の提出を許可しますか?';
 $string['batchoperationconfirmgrantextension'] = '選択されたすべての提出に対して延長を許可しますか?';
 $string['batchoperationconfirmlock'] = '選択された提出すべてをロックしますか?';
 $string['batchoperationconfirmreverttodraft'] = '選択された提出を下書きに戻しますか?';
@@ -211,17 +211,17 @@ $string['gradeoutof'] = '{$a} 点中の評点';
 $string['gradeoutofhelp'] = '評定';
 $string['gradeoutofhelp_help'] = 'ここで学生の提出に関する評点を入力してください。あなたは小数点を含むことができます。';
 $string['gradersubmissionupdatedhtml'] = '{$a->username} が「 {$a->assignment} 」の提出課題を更新しました (更新日時: {$a->timeupdated} )。<br /><br />
-<a href="{$a->url}">ウェブサイトにて閲覧可能です</a>。';
+<a href="{$a->url}">ウェブサイトで閲覧可能です</a>。';
 $string['gradersubmissionupdatedsmall'] = '{$a->username} が課題「 {$a->assignment} 」への提出を更新しました。';
 $string['gradersubmissionupdatedtext'] = '{$a->username} が「 {$a->assignment} 」の提出課題を更新しました (更新日時: {$a->timeupdated} )。
 
-以下にて閲覧可能です:
+以下で閲覧可能です:
 
 {$a->url}';
 $string['gradestudent'] = '学生を評定する: (id={$a->id}, フルネーム={$a->fullname})';
 $string['gradeuser'] = '{$a} を評定する';
 $string['grading'] = '評定';
-$string['gradingchangessaved'] = '評点の変更が保存されました。';
+$string['gradingchangessaved'] = '評定の変更が保存されました。';
 $string['gradingmethodpreview'] = '評定クライテリア';
 $string['gradingoptions'] = 'オプション';
 $string['gradingstatus'] = '評定ステータス';
@@ -314,7 +314,7 @@ $string['preventsubmissions'] = 'この課題に関して、ユーザがさら�
 $string['preventsubmissionsshort'] = '提出の変更を禁止する';
 $string['previous'] = '前へ';
 $string['quickgrading'] = 'クイック評定';
-$string['quickgradingchangessaved'] = '評点の変更が保存されました。';
+$string['quickgradingchangessaved'] = '評定の変更が保存されました。';
 $string['quickgrading_help'] = 'クイック評定において、あなたは提出テーブル内に直接評点 (およびアウトカム) を入力することができます。クイック評定には高度な評定との互換性がありません。また、複数の評定者がいる場合、お勧めできません。';
 $string['quickgradingresult'] = 'クイック評定';
 $string['recordid'] = 'ID';
@@ -393,7 +393,7 @@ $string['submissions'] = '提出課題';
 $string['submissionsclosed'] = '提出は終了しています。';
 $string['submissionsettings'] = '提出設定';
 $string['submissionslocked'] = 'この課題は提出を受け付けていません。';
-$string['submissionslockedshort'] = '提出の変更は許可されていません。';
+$string['submissionslockedshort'] = '提出変更不許可';
 $string['submissionsnotgraded'] = '未評定の提出: {$a}';
 $string['submissionstatement'] = '提出同意書';
 $string['submissionstatementacceptedlog'] = 'ユーザ {$a} によって承諾された提出同意書';
@@ -406,7 +406,7 @@ $string['submissionstatusheading'] = '提出ステータス';
 $string['submissionstatus_marked'] = '評定済み';
 $string['submissionstatus_new'] = '提出なし';
 $string['submissionstatus_reopened'] = '再オープン';
-$string['submissionstatus_submitted'] = '評定のため提出';
+$string['submissionstatus_submitted'] = '評定のため提出済み';
 $string['submissionsummary'] = '{$a->status} - 最終更新日時: {$a->timemodified}';
 $string['submissionteam'] = 'グループ';
 $string['submissiontypes'] = '提出タイプ';

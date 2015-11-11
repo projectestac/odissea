@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = 'convertまたはdvisvgmに加えて、latexおよびdvipsが利用可能な場合、希望するイメージタイプを選択してください (convertはGIFまたはPNG、dvisvgmはSVGを生成します)。そうでない場合、、GIFイメージを作成するためにmimeTeXが使用されます。';
+$string['configconvertformat'] = 'convertまたはdvisvgmに加えて、latexおよびdvipsが利用可能な場合、希望するイメージタイプを選択してください (convertはGIFまたはPNG、dvisvgmはSVGを生成します)。そうでない場合、GIFイメージを作成するためにmimeTeXが使用されます。';
 $string['convertformat'] = '出力イメージフォーマット';
 $string['filtername'] = 'TeX表記法';
 $string['latexpreamble'] = 'LaTeXプリアンブル';

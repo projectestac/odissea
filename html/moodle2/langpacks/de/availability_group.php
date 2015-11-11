@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['anygroup'] = '(Jede Gruppe)';
+$string['anygroup'] = '(Irgendeine Gruppe)';
 $string['description'] = 'Nur für Teilnehmer/innen einer spezifischen Gruppe oder aller Gruppen zulassen.';
 $string['error_selectgroup'] = 'Sie müssen eine Gruppe auswählen.';
 $string['missing'] = '(Fehlende Gruppe)';
 $string['pluginname'] = 'Voraussetzung: Gruppe';
-$string['requires_anygroup'] = 'Sie gehören zu jeder Gruppe.';
+$string['requires_anygroup'] = 'Sie gehören zu irgendeiner Gruppe.';
 $string['requires_group'] = 'Sie gehören zur Gruppe <strong>{$a}</strong>.';
 $string['requires_notanygroup'] = 'Sie gehören zu keiner Gruppe.';
 $string['requires_notgroup'] = 'Sie gehören nicht zu <strong>{$a}</strong>';

@@ -107,7 +107,7 @@ $string['email_notification'] = '送信通知を有効にする';
 $string['email_notification_help'] = '有効にした場合、フィードバック送信に関して、教師はメール通知されます。';
 $string['emailteachermail'] = '{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。
 
-あなたは下記ページにて内容を閲覧できます:
+あなたは下記ページで内容を閲覧できます:
 
 {$a->url}';
 $string['emailteachermailhtml'] = '<p>{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。</p>
@@ -221,7 +221,7 @@ $string['pluginadministration'] = 'フィードバック管理';
 $string['pluginname'] = 'フィードバック';
 $string['position'] = 'ポジション';
 $string['preview'] = 'プレビュー';
-$string['preview_help'] = 'このプレビューにて、あなたは質問の順番を変更することができます。';
+$string['preview_help'] = 'このプレビューであなたは質問の順番を変更することができます。';
 $string['previous_page'] = '前のページ';
 $string['public'] = '公開';
 $string['question'] = '質問';

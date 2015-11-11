@@ -181,5 +181,5 @@ $string['thirdpartyexception'] = 'Une exception d\'un logiciel additionnel a ét
 $string['transfertime'] = 'Durée de transfert';
 $string['unknownplugin'] = 'Inconnu (a été peut-être supprimé par l\'administrateur)';
 $string['wait'] = 'Attendre';
-$string['wanttowait_high'] = 'Il n\'est pas recommandé la fin du transfert. Vous pouvez cependant le faire, si vous êtes sûr de ce que vous faites';
+$string['wanttowait_high'] = 'Il n\'est pas recommandé d\'attendre la fin de ce transfert, mais vous pouvez si vous êtes sûr et que vous savez ce que vous faites';
 $string['wanttowait_moderate'] = 'Voulez-vous attendre la fin de ce transfert ? Cela pourrait prendre quelques minutes';

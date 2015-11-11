@@ -249,6 +249,7 @@ $string['linkedfiledoesntexist'] = 'Связанный файл {$a} не сущ
 $string['makechildof'] = 'Сделать подкатегорией «{$a}»';
 $string['makecopy'] = 'Сделать копию вопроса';
 $string['maketoplevelitem'] = 'Переместить на верхний уровень';
+$string['manualgradeinvalidformat'] = 'Неправильное число.';
 $string['manualgradeoutofrange'] = 'Оценка вне допустимого диапазона';
 $string['manuallygraded'] = 'Оценено вручную на {$a->mark} со следующим комментарием: {$a->comment}';
 $string['mark'] = 'Балл';

@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventcomponent'] = '组件';
 $string['eventcontext'] = '事件情境';
 $string['eventrelatedfullnameuser'] = '受影响的用户';
+$string['eventreportviewed'] = '查看了日志报表';
+$string['eventuserreportviewed'] = '查看了用户日志报表';
 $string['logsformat'] = '日志格式';
 $string['log:view'] = '查看课程日志';
 $string['log:viewtoday'] = '查看今日日志';

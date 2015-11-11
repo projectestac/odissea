@@ -58,12 +58,10 @@ mtrace("End server Time: ".date('r', time())."\n");
 if ($success) {
 	mtrace('Script '.$script.' succeed');
     echo "\n";
+    echo 'success';
 	exit (0);
 } else {
 	mtrace('Script '.$script.' failed');
     echo "\n";
     exit ('error');
 }
-
-
-

@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'フィードバック';
 $string['feedback:addinstance'] = '新しいフィードバックブロックを追加する';
-$string['missing_feedback_module'] = 'このブロックはフィードバック活動モジュールに依存します。しかし、フィードバック活動モジュールがありません!';
+$string['missing_feedback_module'] = 'このブロックはフィードバック活動モジュールに依存しますが、フィードバック活動モジュールがありません!';
 $string['pluginname'] = 'フィードバック';

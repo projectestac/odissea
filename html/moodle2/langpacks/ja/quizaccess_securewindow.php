@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Javaスクリプトセキュリティ - 小テストアクセスルール';
-$string['popupwithjavascriptsupport'] = 'Javaスクリプトセキュリティ対策を含んだフルスクリーンポップアップ';
+$string['pluginname'] = 'JavaScriptセキュリティ - 小テストアクセスルール';
+$string['popupwithjavascriptsupport'] = 'JavaScriptセキュリティ対策を含んだフルスクリーンポップアップ';

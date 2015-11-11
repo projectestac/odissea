@@ -201,8 +201,8 @@ $string['wronglengthforenum'] = 'Falsche Feldlänge (enum)';
 $string['wrongnumberofreffields'] = 'Falsche Anzahl von Referenzfeldern';
 $string['wrongoraclesemantics'] = 'Falsche Orcale BYTE Semantic sgefunden';
 $string['wrongreservedwords'] = 'Derzeit verwendete reservierte Wörter <br />(die Tabellennamen sind nicht wichtig, wenn $CFG->prefix genutzt wird)';
-$string['yesmissingindexesfound'] = '<p>Einige fehlende Indizes wurden in Ihrer Datenbank gefunden. Es folgen genauere Einzelheiten und die nötigen SQL-Anweisungen, die Sie mit Ihrem bevorzugten SQL-Werkzeug ausführen müssen, um alle Indizes zu erzeugen.</p><p>
-Es wird dringend empfohlen, die Suche nach fehlenden Indizes danach noch einmal auszuführen.</p>';
+$string['yesmissingindexesfound'] = '<p>In der Datenbank wurden fehlende Indizes gefunden. Mit einem externen SQL-Werkzeug und den nachfolgenden SQL-Anweisungen können Sie die Indizes erzeugen.</p><p>
+Die Suche nach fehlenden Indizes sollte anschließend noch einmal ausgeführt werden.</p>';
 $string['yeswrongdefaultsfound'] = '<p>In der Datenbank wurden inkonsistente Standardwerte gefunden. Die nachfolgenden Details und die auszuführenden SQL Statements sollen Ihnen helfen, die Fehler in Ihrer Datenbank zu beheben. Vergessen Sie nicht eine Datenbanksicherung zu erstellen, bevor Sie diese Anweisungen ausführen.</p> <p>
 Nachdem Sie das jeweilige Statement ausgeführt haben, sollten Sie die Prüfung erneut durchführen, um wirklich alle Inkonsistenzen aufzudecken.</p>';
 $string['yeswrongintsfound'] = '<p>In Ihrer Datenbank wurden mehrere ungültige Zahlenwerte gefunden. Es folgen die Details und die benötigten SQL-Befehle, die Sie in Ihrer bevorzugten SQL-Oberfläche ausführen müssen, um die Fehler zu beheben (vergessen Sie bitte nicht, vor der Korrektur eine Sicherungskopie Ihrer Daten anzulegen!!)</p><p>Nach der Ausführung wird dringend empfohlen, dieses Werkzeug erneut aufzurufen, um sicher zu stellen, dass keine ungültige Zahlenwerte mehr gefunden werden.</p>';

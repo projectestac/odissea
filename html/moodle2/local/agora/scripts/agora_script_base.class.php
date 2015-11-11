@@ -8,6 +8,7 @@ class agora_script_base{
 	public $cli = false;
 	public $api = true;
 	protected $test = true;
+	protected $category = "Misc";
 
 	public function params() {
 		$params = array();
@@ -78,6 +79,10 @@ class agora_script_base{
 			}
 		}
 		return false;
+	}
+
+	public function get_category() {
+		return $this->category;
 	}
 
 	protected function _execute($params = array(), $execute = true) {
@@ -160,6 +165,9 @@ class agora_script_base{
         } else {
         	global $OUTPUT;
         	switch ($type) {
+        		case 'INFO' :
+        			echo $OUTPUT->notification($message, 'notifymessage');
+        			return;
 				case 'ERROR':
 					echo $OUTPUT->notification($message);
 					return;
@@ -175,6 +183,7 @@ class agora_script_base{
         $function = 'script_'.$function;
         $filename = $function.'.class.php';
         if (!file_exists($filename)) {
+        	$this->output("File $filename does not exists", 'ERROR');
             return false;
         }
         require_once($filename);

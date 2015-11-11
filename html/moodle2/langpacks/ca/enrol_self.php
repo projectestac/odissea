@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['canntenrol'] = 'La inscripció està deshabilitada o inactiva';
+$string['canntenrol'] = 'La inscripció està inhabilitada o inactiva';
 $string['cohortnonmemberinfo'] = 'Només el membres de la cohort \'{$a}\' poden inscriure\'s ells mateixos.';
 $string['cohortonly'] = 'Només membres de la cohort';
 $string['cohortonly_help'] = 'L\'autoinscripció pot estar restringida als membres de la cohort especificada. Fixeu-vos que canviar aquest paràmetre no té cap efecte sobre les inscripcions que ja existeixen.';
@@ -44,7 +44,7 @@ $string['enrolenddaterror'] = 'La fi del període d\'inscripció no pot ser aban
 $string['enrolme'] = 'Inscriu-me';
 $string['enrolperiod'] = 'Duració de la inscripció';
 $string['enrolperiod_desc'] = 'La duració del temps d\'inscripció per defecte. Si es configura amb el valor zero, la duració de la inscripció esdevé il·limitada.';
-$string['enrolperiod_help'] = 'La data en que la inscripció és vàlida, que comença al moment en que l\'usuari s\'inscriu ell mateix. Si es deshabilita, la duració de la inscripció esdevé il·limitada.';
+$string['enrolperiod_help'] = 'Període de temps durant el qual la inscripció és vàlida; comença en el moment en què l\'usuari s\'inscriu ell mateix. Si s\'inhabilita, la durada de la inscripció esdevé il·limitada.';
 $string['enrolstartdate'] = 'Data d\'inici';
 $string['enrolstartdate_help'] = 'Si s\'habilita, els usuaris només es poden inscriure a partir d\'aquest període';
 $string['expiredaction'] = 'Acció de venciment de la inscripció';
@@ -101,7 +101,7 @@ $string['showhint'] = 'Mostra la pista';
 $string['showhint_desc'] = 'Mostra la primera lletra de la contrasenya d\'accés del convidat.';
 $string['status'] = 'Habilita els mètodes d\'inscripció existents';
 $string['status_desc'] = 'Habilita el mètode d\'autoinscripció per als nous cursos.';
-$string['status_help'] = 'Si es deshabilita, totes les autoinscripcions existents queden suspeses i no es podran autoinscriure nous usuaris.';
+$string['status_help'] = 'Si s\'inhabilita, totes les autoinscripcions existents queden suspeses i els nous usuaris no es poden inscriure.';
 $string['unenrol'] = 'Cancel·la la inscripció de l\'usuari.';
 $string['unenrolselfconfirm'] = 'De veritat voleu cancel·lar la vostra inscripció al curs "{$a}"?';
 $string['unenroluser'] = 'De veritat voleu cancel·lar la inscripció de l\'usuari "{$a->user}" al curs  "{$a->course}"?';

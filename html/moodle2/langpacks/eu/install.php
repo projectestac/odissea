@@ -93,7 +93,7 @@ baina ez da komenigarria webetik zuzenean sartu ahal izatea.';
 $string['dirroot'] = 'Moodle direktorioa';
 $string['dirrooterror'] = '\'Moodle-ren direktorioa\' zuzena ez dela dirudi. Ezin izan da Moodle-ren instalaziorik aurkitu. Jatorrizko balorea berrezarri da.';
 $string['download'] = 'Jaitsi';
-$string['downloadlanguagebutton'] = '"{$a}" hizkuntza-paketea jaitsi';
+$string['downloadlanguagebutton'] = 'Jaitsi "{$a}" hizkuntza-paketea';
 $string['downloadlanguagehead'] = 'Jaitsi hizkuntza-paketea';
 $string['downloadlanguagenotneeded'] = 'Instalazio-prozesua lehenetsitako hizkuntzaz jarrai dezakezu, "{$a}".';
 $string['downloadlanguagesub'] = 'Orain zure hizkuntza-paketea jaisteko eta hizkuntza horretan instalazioarekin jarraitzeko aukera daukazu.<br /><br />Jaitsiera eskuragarri ez balitz, prozesuak ingelesez jarraituko luke (instalazioa burututakoan, beste hizkuntzak jaitsi eta instalatu ahal izango dituzu).';

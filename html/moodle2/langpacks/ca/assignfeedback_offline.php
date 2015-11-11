@@ -39,7 +39,7 @@ $string['gradesfile_help'] = 'Full de qualificacions amb les qualificacions modi
 El fitxer ha d\'estar codificat en &quot;UTF-8&quot;';
 $string['gradeupdate'] = 'Estableix la qualificació de "{$a->student}" a "{$a->grade}"';
 $string['ignoremodified'] = 'Permet l\'actualització de registres que s\'hagin modificat al Moodle després de al full de càlcul.';
-$string['ignoremodified_help'] = 'Quan es descarrega el full de qualificacions de Moodle, conté la darrera data de modificació de cadascuna de les qualificacions. Si s\'actualitza qualsevol qualificació després d\'haver descarregat aquest full de càlcul, per defecte el Moodle refusarà sobreescriure la informació modificada en importar qualificacions. Si establiu aquesta opció el Moodle deshabilitarà aquesta comprovació de seguretat i podria passar que diversos qualificadors sobreescrivissin les notes dels altres.';
+$string['ignoremodified_help'] = 'Quan es descarrega el full de qualificacions de Moodle, conté la darrera data de modificació de cadascuna de les qualificacions. Si s\'actualitza qualsevol qualificació després d\'haver descarregat aquest full de càlcul, per defecte Moodle refusarà sobreescriure la informació modificada en importar qualificacions. Si establiu aquesta opció, Moodle inhabilitarà aquesta comprovació de seguretat, i podria passar que diversos qualificadors sobreescrivissin les notes dels altres.';
 $string['importgrades'] = 'Confirmeu els canvis en el full de qualificació';
 $string['invalidgradeimport'] = 'Moodle no ha pogut llegir el full de qualificació pujat. Assegureu-vos que estigui desat en el format de valors separats per comes (CSV) i torneu-ho a provar.';
 $string['nochanges'] = 'No s\'han trobat qualificacions modificades en el full de càlcul pujat';
