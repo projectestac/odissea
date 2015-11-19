@@ -14,6 +14,7 @@ html/moodle2/sftp-config.json
 moodledata*/*
 .Trash*/*
 nbproject
+.idea
 cache_ins/
 html/moodle/mod/eoicampus/action/wsdl/EOICampusWS_generat-ESB-LOCAL.wsdl
 html/moodle2/mod/eoicampus/action/wsdl/EOICampusWS_generat-ESB-LOCAL.wsdl
