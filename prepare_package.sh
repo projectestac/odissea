@@ -28,6 +28,7 @@ cp html/moodle2_old/theme/xtec2/pix/favicon.ico html/moodle2/theme/xtec2/pix/fav
 cp html/moodle2_old/theme/xtec2/pix/logo_main.png html/moodle2/theme/xtec2/pix/logo_main.png
 
 cp html/moodle2_old/config.php html/moodle2/config.php
+cp html/moodle2_old/monitor.php html/moodle2/monitor.php
 cp html/moodle2_old/opcache.php html/moodle2/opcache.php
 cp html/moodle2_old/testapp.php html/moodle2/testapp.php
 cp html/moodle2_old/CHANGES.txt html/moodle2/CHANGES.txt
