@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Metodo honek erabiltzaileen sorrera automatizatua ahalbidetzen du. Erabiltzaile guztiak kudeatzaileak sortu behar ditu.';
 $string['expiration_warning'] = 'Jakinarazpenen ataria';
+$string['passwdexpire_settings'] = 'Pasahitzaren iraungitzerako ezarpenak';
 $string['passwdexpiretime'] = 'Pasahitzaren iraupena';
 $string['pluginname'] = 'Eskuzko kontuak';

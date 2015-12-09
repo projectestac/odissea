@@ -81,6 +81,8 @@ $string['cannotupdatepost'] = '您不能更新这个帖子';
 $string['cannotviewpostyet'] = '在这个讨论中您不能阅读别的同学的问题因为您没有权限';
 $string['cannotviewusersposts'] = '您能查看的帖子里没有此用户发表的。';
 $string['cleanreadtime'] = '标记旧帖为已读的时间';
+$string['clicktosubscribe'] = '你没有订阅这一话题。点击订阅。';
+$string['clicktounsubscribe'] = '你已订阅该话题。点击取消订阅';
 $string['completiondiscussions'] = '学生必须开启话题：';
 $string['completiondiscussionsgroup'] = '必须开话题';
 $string['completiondiscussionshelp'] = '开新话题后才算完成';
@@ -106,17 +108,20 @@ $string['configtrackingtype'] = '阅读跟踪信息的默认设置';
 $string['configtrackreadposts'] = '如果希望跟踪每一个用户的已读/未读信息则设定为“是”。';
 $string['configusermarksread'] = '若设定为“是”则用户必须手动将帖子标记为已读。如果设定为“否”，则帖子被浏览时自动标记为已读。';
 $string['confirmsubscribe'] = '您确定要订阅讨论区“{$a}”吗？';
+$string['confirmsubscribediscussion'] = '你确定要订阅\'{$a->forum}讨论区的\'{$a->discussion}\' 话题？';
 $string['confirmunsubscribe'] = '您确定要取消订阅讨论区“{$a}”吗？';
+$string['confirmunsubscribediscussion'] = '你确定要取消对\'{$a->forum}讨论区的\'{$a->discussion}\' 话题订阅？';
 $string['couldnotadd'] = '由于一个未知的错误，您的帖子无法发表';
 $string['couldnotdeletereplies'] = '很抱歉，已经有跟帖的帖子不能删除';
 $string['couldnotupdate'] = '由于一个未知的错误，您的帖子无法更新';
+$string['crontask'] = '讨论区的邮件和维护工作';
 $string['delete'] = '删除';
 $string['deleteddiscussion'] = '讨论话题已被删除';
 $string['deletedpost'] = '帖子已删除';
 $string['deletedposts'] = '那些帖子已删除';
 $string['deletesure'] = '您确定要删除该帖吗?';
 $string['deletesureplural'] = '您确定要删除这个帖子及其回复吗？({$a} 个帖子)';
-$string['digestmailheader'] = '这是 {$a->sitename} 讨论区的每日新帖摘要。要修改您的关于讨论区的偏好，请访问 {$a->userprefs}。';
+$string['digestmailheader'] = '这是来自 {$a->sitename} 网站讨论区的每日新帖摘要。要修改您的关于讨论区的偏好设置，请访问 {$a->userprefs}。';
 $string['digestmailpost'] = '更改讨论区摘要的默认设置';
 $string['digestmailprefs'] = '您的用户信息';
 $string['digestmailsubject'] = '{$a}: 讨论区摘要';
@@ -124,14 +129,22 @@ $string['digestmailtime'] = '发送邮件摘要的时间（整点）';
 $string['digestsentusers'] = '已经成功地向 {$a} 位用户发送了Email摘要。';
 $string['disallowsubscribe'] = '不允许订阅';
 $string['disallowsubscribeteacher'] = '不允许订阅(教师除外)';
+$string['disallowsubscription'] = '订阅';
+$string['disallowsubscription_help'] = '该讨论区已被设置为你无法订阅话题。';
 $string['discussion'] = '话题';
 $string['discussionmoved'] = '该讨论已被移到“{$a}”。';
 $string['discussionmovedpost'] = '此话题已经移到</a>讨论区<a href="{$a->forumhref}">{$a->forumname}</a>中的<a href="{$a->discusshref}">这里了</a>';
 $string['discussionname'] = '话题名称';
+$string['discussionnownotsubscribed'] = '在\'{$a->forum}\'的 \'{$a->discussion}\'有新贴文将不会通知{$a->name} 。';
+$string['discussionnowsubscribed'] = '在\'{$a->forum}\'的 \'{$a->discussion}\'有新贴文将会通知{$a->name} 。';
 $string['discussions'] = '话题';
 $string['discussionsstartedby'] = '由 {$a} 发起的话题';
 $string['discussionsstartedbyrecent'] = '最近由 {$a} 发起的话题';
 $string['discussionsstartedbyuserincourse'] = '{$a->fullname}在{$a->coursename}中发起的话题';
+$string['discussionsubscribestart'] = '该话题有新贴文时，请通知我。';
+$string['discussionsubscribestop'] = '该话题有新贴文时，不要通知我。';
+$string['discussionsubscription'] = '话题订阅';
+$string['discussionsubscription_help'] = '订阅一个话题，即表示在这个话题上有新贴文时，你将会收到email通知。';
 $string['discussthistopic'] = '讨论这个话题';
 $string['displayend'] = '结束时间';
 $string['displayend_help'] = '<p align="center"><b>讨论区显示时期</b></p>
@@ -181,15 +194,33 @@ $string['erroremptysubject'] = '帖子标题不能为空。';
 $string['errorenrolmentrequired'] = '您必须先选修此课才能访问此内容';
 $string['errorwhiledelete'] = '删除记录时发生错误。';
 $string['eventassessableuploaded'] = '某些已经发到讨论区';
+$string['eventcoursesearched'] = '已搜寻课程';
+$string['eventdiscussioncreated'] = '话题已建立';
+$string['eventdiscussiondeleted'] = '话题已删除';
+$string['eventdiscussionmoved'] = '话题已移动';
+$string['eventdiscussionsubscriptioncreated'] = '已建立话题订阅';
+$string['eventdiscussionsubscriptiondeleted'] = '已删除话题订阅';
+$string['eventdiscussionupdated'] = '话题已更新';
+$string['eventdiscussionviewed'] = '话题已阅读';
+$string['eventpostcreated'] = '帖文已建立';
+$string['eventpostdeleted'] = '贴文已删除';
+$string['eventpostupdated'] = '贴文已更新';
+$string['eventreadtrackingdisabled'] = '禁用阅读跟踪';
+$string['eventreadtrackingenabled'] = '启用阅读跟踪';
+$string['eventsubscribersviewed'] = '查看订阅者';
+$string['eventsubscriptioncreated'] = '订阅已建立';
+$string['eventsubscriptiondeleted'] = '订阅已删除';
+$string['eventuserreportviewed'] = '查看用户报告';
 $string['everyonecanchoose'] = '任何人均可选择订阅';
 $string['everyonecannowchoose'] = '现在任何人均可选择订阅';
 $string['everyoneisnowsubscribed'] = '现在所有人都订阅了该讨论区';
 $string['everyoneissubscribed'] = '所有人都订阅了该讨论区';
 $string['existingsubscribers'] = '个订阅者';
-$string['exportdiscussion'] = '导出整个话题';
+$string['exportdiscussion'] = '导出整个讨论区话题到学习文件';
 $string['forcedreadtracking'] = '强制阅读跟踪';
 $string['forcedreadtracking_desc'] = '允许讨论区设置为“强制阅读跟踪”，可能导致某些课程运行效能降低，特别是在含有多个讨论区和帖子的课程中。若以后关闭此选项，以前的设置为“强制的”都会更改为“自行选择”。';
 $string['forcesubscribed'] = '该讨论区强制每个人都订阅';
+$string['forcesubscribed_help'] = '该讨论区已被设置为无法取消订阅';
 $string['forum'] = '讨论区';
 $string['forum:addinstance'] = '添加新讨论区';
 $string['forum:addnews'] = '发布新闻';
@@ -271,6 +302,12 @@ $string['maxattachmentsize_help'] = '<p align="center"><b>最大附件尺寸</b>
 <p>有时，您可以提交一个比这个尺寸大的文件，但这个文件不会被保存下来，且您会看到一个错误信息。</p>';
 $string['maxtimehaspassed'] = '很抱歉，编辑该帖的时间限制({$a})已过！';
 $string['message'] = '正文';
+$string['messageinboundattachmentdisallowed'] = '无法提交你的回复，因为它包含了附件，而讨论区不允许有附件。';
+$string['messageinboundfilecountexceeded'] = '无法提交你的回复，因为它包含的附件数量多于该讨论区允许的最高数量({$a->forum->maxattachments})。';
+$string['messageinboundfilesizeexceeded'] = '无法提交你的回复，因为全部附件的大小({$a->filesize})超过了讨论区允许的最大字节数({$a->maxbytes})。';
+$string['messageinboundforumhidden'] = '无法提交你的回复，因为该讨论区目前无法使用。';
+$string['messageinboundnopostforum'] = '无法提交你的回复，因为你在这个{$a->forum->name}讨论区上没有权限提交帖子。';
+$string['messageinboundthresholdhit'] = '无法提交你的回复，因为你的帖子数量已经超过讨论区设定的最高限制。';
 $string['messageprovider:digests'] = '订阅讨论区摘要';
 $string['messageprovider:posts'] = '订阅的讨论区帖子';
 $string['missingsearchterms'] = '下列搜索词只出现在正文的 HTML 标记中：';
@@ -279,7 +316,28 @@ $string['modeflatoldestfirst'] = '列表显示回帖内容，旧帖在前';
 $string['modenested'] = '嵌套显示回帖内容';
 $string['modethreaded'] = '树状显示回帖标题';
 $string['modulename'] = '讨论区';
-$string['modulename_help'] = '在讨论区模块用户可以进行异步的讨论。';
+$string['modulename_help'] = '在讨论区模块用户可以进行异步的讨论，也就是说讨论是发生在一段很长的时间中。
+
+讨论区可以按照多种不同的方式加以组织，比如，强制订阅的新闻讨论区；要先回答才能看到别人贴文的Q&A讨论区；每人只能提出一个话题的讨论区。
+
+帖文可以用多种不同的格式浏览，也可以包含附件。附件附加的图像会显示在帖子上。
+
+教师也可以为某课程的所有学生订阅讨论区且不允许取消(強制)，或允许取消(自动)，或者一开始就由学生自行决定(自选)，或者完全关闭订阅功能(关闭)。
+
+订阅一个讨论区后，订阅者可以通过电子邮件接受到每一个新的帖子。
+
+教师和学生(同行互评)可以对讨论区的帖文进行评比。评比的结果可以聚集成一个个人在讨论区的最终分数，然后记录到成绩册中。
+
+讨论区有许多的用途，比如：
+
+* 当作社交空间，让学生互相认识。<br/>
+* 当作课程公告栏(使用新闻讨论区并强制订阅)。<br/>
+* 用来讨论课程内容和阅读材料。<br/>
+* 用来继续课堂上没有讨论完的话题。<br/>
+* 用作只有教师之间的讨论 使用隐藏的讨论区)<br/>
+*当作意见簿，收集助教及学生对于教材或教学方式的建议。<br/>
+* 作为一对一的个别辅导区，让师生间的私密的沟通 (在讨论区中使用分隔小组，且让每人一组)。
+* 作为"脑筋急转弯"的场所，让学生提出难题和各种解决方案。<br/>';
 $string['modulenameplural'] = '讨论区';
 $string['more'] = '更多';
 $string['movedmarker'] = '（移动）';
@@ -290,11 +348,13 @@ $string['namenews_help'] = '新闻讨论区，是一个用来发布消息的特�
 $string['namesocial'] = '公众讨论区';
 $string['nameteacher'] = '教师讨论区';
 $string['newforumposts'] = '新帖子';
+$string['nextdiscussiona'] = '下一个话题：{$a}';
 $string['noattachments'] = '此帖没有附件';
 $string['nodiscussions'] = '该讨论区尚无讨论话题';
 $string['nodiscussionsstartedby'] = '{$a}未发起任何话题';
 $string['nodiscussionsstartedbyyou'] = '您还没有发起任何话题';
 $string['noguestpost'] = '很抱歉，访客不允许发帖';
+$string['noguestsubscribe'] = '抱歉，访客无法订阅';
 $string['noguesttracking'] = '很抱歉，访客不能设定跟踪选项。';
 $string['nomorepostscontaining'] = '未找到关键词是“{$a}”的帖子';
 $string['nonews'] = '尚无消息发布';
@@ -313,6 +373,7 @@ $string['notingroup'] = '很抱歉, 您需要是一个组的成员才能浏览�
 $string['notinstalled'] = '讨论区模块没有被安装';
 $string['notpartofdiscussion'] = '此帖不是话题的一部分';
 $string['notrackforum'] = '不跟踪未读帖子';
+$string['notsubscribed'] = '订阅';
 $string['noviewdiscussionspermission'] = '您无权查看这个讨论区的话题';
 $string['nowallsubscribed'] = '已订阅 {$a} 中的所有讨论区。';
 $string['nowallunsubscribed'] = '已退订 {$a} 中的所有讨论区';
@@ -337,12 +398,15 @@ $string['postadded'] = '<p>您的帖子已经成功发表。</p>
 <p>如果需要，可以在 {$a} 内修改它。</p>';
 $string['postaddedsuccess'] = '您的帖子已成功发布';
 $string['postaddedtimeleft'] = '{$a}内您可以继续编辑它，如果您想修改的话。';
+$string['postbymailsuccess'] = '恭喜，你的讨论区帖子其主题为 "{$a->subject}" 已经成功提交。你可以在"{$a->discussionurl}"浏览。';
+$string['postbymailsuccess_html'] = '恭喜，你的<a href="{$a->discussionurl}">讨论区帖子</a> 主题为 "{$a->subject}" 已经成功提交。';
 $string['postbyuser'] = '{$a->post} 由 {$a->user} 所发';
 $string['postincontext'] = '在上下文中看此帖';
 $string['postmailinfo'] = '这是一份来自网站 {$a} 的帖子。
 
 点击此链接回复：';
 $string['postmailnow'] = '<p>这个帖子将会被立即发给所有讨论订阅者。</p>';
+$string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = '极端独立型';
 $string['postrating2'] = '独立型与情景型兼备';
 $string['postrating3'] = '极端情景型';
@@ -352,6 +416,7 @@ $string['postsmadebyuserincourse'] = '{$a->fullname}在{$a->coursename}中的帖
 $string['posttoforum'] = '发到讨论区上';
 $string['postupdated'] = '您的帖子已经更新';
 $string['potentialsubscribers'] = '潜在订阅者';
+$string['prevdiscussiona'] = '前面的话题:{$a}';
 $string['processingdigest'] = '正在为用户 {$a} 处理邮件摘要';
 $string['processingpost'] = '正在处理帖子 {$a}';
 $string['prune'] = '分割';
@@ -366,7 +431,11 @@ $string['repliesmany'] = '迄今有 {$a} 个回帖';
 $string['repliesone'] = '迄今有 {$a} 个回帖';
 $string['reply'] = '回复';
 $string['replyforum'] = '回复到讨论区上';
+$string['reply_handler'] = '通过email回复帖子';
+$string['reply_handler_name'] = '回复讨论区的帖子';
+$string['replytopostbyemail'] = '你可以通过email回复这个帖子';
 $string['replytouser'] = '在回复中使用Email地址';
+$string['resetdigests'] = '删除每一用户的帖子摘要';
 $string['resetforums'] = '删除哪类讨论区类型中帖子';
 $string['resetforumsall'] = '删除所有的帖子';
 $string['resetsubscriptions'] = '删除所有讨论区订阅';
@@ -416,12 +485,13 @@ $string['subject'] = '主题';
 $string['subscribe'] = '订阅此讨论区';
 $string['subscribeall'] = '为所有人订阅此讨论区';
 $string['subscribed'] = '订阅';
+$string['subscribediscussion'] = '订阅这个话题';
 $string['subscribeenrolledonly'] = '抱歉，只有已选课用户才能订阅讨论区帖子通知。';
 $string['subscribenone'] = '让所有人退订此讨论区';
 $string['subscribers'] = '订阅者';
 $string['subscribersto'] = '订阅“{$a}”的用户';
-$string['subscribestart'] = '通过email发讨论区帖子给我';
-$string['subscribestop'] = '我不想通过email接收讨论区帖子';
+$string['subscribestart'] = '该讨论区有新帖子时，通知我';
+$string['subscribestop'] = '该讨论区有新帖子时，不要通知我';
 $string['subscription'] = '订阅';
 $string['subscriptionandtracking'] = '订阅和跟踪';
 $string['subscriptionauto'] = '自动订阅';
@@ -445,7 +515,7 @@ $string['timestartenderror'] = '可视时段的结束时间不能早于开始时
 $string['trackforum'] = '跟踪未读帖子';
 $string['tracking'] = '跟踪';
 $string['trackingoff'] = '关闭';
-$string['trackingon'] = '开启';
+$string['trackingon'] = '强制';
 $string['trackingoptional'] = '可选';
 $string['trackingtype'] = '是否跟踪此讨论区的阅读情况';
 $string['trackingtype_help'] = '如果激活，用户可以跟踪讨论区和话题里已阅读和没阅读的消息。
@@ -462,6 +532,7 @@ $string['unreadpostsone'] = '1 条未读帖子';
 $string['unsubscribe'] = '不再订阅该讨论区';
 $string['unsubscribeall'] = '取消所有讨论区订阅';
 $string['unsubscribeallconfirm'] = '您目前订阅了{$a}。您确认要取消所有讨论区的订阅，并禁止自动订阅吗？';
+$string['unsubscribeallconfirmdiscussions'] = '你目前有订阅{$a->discussions}话题。你真的要取消对所有话题的订阅，并关闭话题的自动订阅吗？';
 $string['unsubscribeallconfirmforums'] = '你当前已经订阅{$a->forums}论坛。你确认取消所有论坛的订阅，并禁用自动订阅讨论区？';
 $string['unsubscribealldone'] = '已为您取消所有可选的订阅，但仍能收到强制订阅的通知。到“我的个人资料”设置中的消息页面管理讨论区通知。';
 $string['unsubscribeallempty'] = '您没有订阅任何讨论区。到“我的个人资料”设置中的消息页面可以设置不接收本站的任何通知。';

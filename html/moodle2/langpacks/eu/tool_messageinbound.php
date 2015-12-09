@@ -27,9 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['component'] = 'Osagaia';
 $string['description'] = 'Deskribapena';
+$string['domain'] = 'E-postaren domeinua';
 $string['edit'] = 'Editatu';
 $string['editinghandler'] = '{$a} editatzen';
 $string['enabled'] = 'Gaituta';
+$string['mailbox'] = 'Postontziaren izena';
+$string['mailboxconfiguration'] = 'Postontziaren ezarpenak';
 $string['mailsettings'] = 'Postaren ezarpenak';
 $string['messageinboundgeneralconfiguration'] = 'Ezarpen orokorra';
 $string['messageinboundhostpass'] = 'Pasahitza';

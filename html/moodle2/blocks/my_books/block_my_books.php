@@ -74,13 +74,6 @@ class block_my_books extends block_list {
         $mybooksconfig = get_config('mybooks');
         if (!isset($mybooksconfig->viewer_opening)) {
             $mybooksconfig->viewer_opening = 1;
-            $mybooksconfig->width = 800;
-            $mybooksconfig->height = 600;
-            $mybooksconfig->activity_opening = 0;
-            $mybooksconfig->scrollbars = 1;
-            $mybooksconfig->menubar = 0;
-            $mybooksconfig->toolbar = 0;
-            $mybooksconfig->status = 1;
             $mybooksconfig->addkey = 1;
         }
         return $mybooksconfig;
@@ -118,16 +111,16 @@ class block_my_books extends block_list {
             $add->intro          = 'Auto added from my_books block';
             $add->introformat    = FORMAT_MOODLE;
             $add->whatgrade      = 0;
-            $add->frame      = 0;
+            $add->frame          = 0;
             $add->coursemodule   = 0;
             $add->cmidnumber     = 0;
-            $add->popup          = $mybooksconfig->activity_opening;
-            $add->scrollbars     = $mybooksconfig->scrollbars;
-            $add->menubar        = $mybooksconfig->menubar;
-            $add->toolbar        = $mybooksconfig->toolbar;
-            $add->status         = $mybooksconfig->status;
-            $add->width          = $mybooksconfig->width;
-            $add->height         = $mybooksconfig->height;
+            $add->popup          = 0;
+            $add->scrollbars     = 1;
+            $add->menubar        = 0;
+            $add->toolbar        = 1;
+            $add->status         = 1;
+            $add->width          = 800;
+            $add->height         = 600;
             $add->section        = 2;
             $add->visible        = 1;
             $add->module         = $DB->get_field('modules', 'id', array('name' => 'rcontent'));

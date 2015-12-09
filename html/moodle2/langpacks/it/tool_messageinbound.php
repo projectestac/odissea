@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'Nome classe';
 $string['component'] = 'Componente';
-$string['configmessageinboundhost'] = 'L\'indirizzo del server dove Moodle controllerà la presenza di email inarrivo. Per indicare porte non standard è possibile usare la sintassi [server]:[port], ade esempio "mail.example.com:587". Se il campo è vuoto Moodle userà la porta standard in accordo al mail server specificato.';
+$string['configmessageinboundhost'] = 'L\'indirizzo del server dove Moodle controllerà la presenza di email in arrivo. Per indicare porte non standard è possibile usare la sintassi [server]:[port], ad esempio "mail.example.com:587". Se il campo è vuoto Moodle userà la porta standard in accordo al mail server specificato.';
 $string['defaultexpiration'] = 'Periodo di default di scadenza dell\'indirizzo';
 $string['defaultexpiration_help'] = 'Quando un gestore genera un indirizzo email, è possibile cionfigfurare il periodo trascorso il quale l\'indirizzo scadrà e non sarà più valido. Si raccomanda di impostare il periodo di scadenza.';
 $string['description'] = 'Descrizione';

@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = '简略视图报告已检查分数';
+$string['noscreens'] = '无法找到一个合适的简略视图屏幕';
+$string['notvalid'] = '不是一个有效的简略视图屏幕: {$a}';
 $string['override'] = '覆盖';
+$string['pluginname'] = '简略视图';

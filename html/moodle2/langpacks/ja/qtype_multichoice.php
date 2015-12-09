@@ -65,6 +65,6 @@ $string['pluginnamesummary'] = '所定の一覧より単一または複数の解
 $string['selectmulti'] = '1つまたはそれ以上選択してください:';
 $string['selectone'] = '1つ選択してください:';
 $string['shuffleanswers'] = '選択肢をシャッフルしますか?';
-$string['shuffleanswers_help'] = 'このオプションを「Yes」にした場合、それぞれの受験で答えの順番がランダムにシャッフルされます。小テスト設定の「問題内部をシャッフルする」を「Yes」にする必要があります。';
+$string['shuffleanswers_help'] = 'この設定を有効にした場合、それぞれの受験で答えの順番がランダムにシャッフルされます。小テスト設定の「問題内部をシャッフルする」を「Yes」にする必要があります。';
 $string['singleanswer'] = '1つの答えを選択してください。';
 $string['toomanyselected'] = 'あなたはオプションを選択しすぎました。';

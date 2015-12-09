@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aacute'] = 'a-尖锐';
+$string['aacute_caps'] = 'A-尖锐';
 $string['trademarksign'] = '贸易标识符(TM)';
 $string['upwardsarrow'] = '向上的箭头';

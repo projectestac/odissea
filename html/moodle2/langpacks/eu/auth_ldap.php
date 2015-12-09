@@ -48,8 +48,7 @@ $string['auth_ldap_expiration_desc'] = 'Pasahitza iraungi ote den indargabetzeko
 $string['auth_ldap_expiration_key'] = 'Epe-muga';
 $string['auth_ldap_expiration_warning_desc'] = 'Pasahitzaren kaduzitate-oharra agertu aurretiko egun-kopurua.';
 $string['auth_ldap_expiration_warning_key'] = 'Epe-mugaren abisua';
-$string['auth_ldap_expireattr_desc'] = 'Aukerazkoa: Pasahitzaren kaduzitatea metatzen duen ldap atributua indargabetzen du
-PasswordExpirationTime';
+$string['auth_ldap_expireattr_desc'] = 'Aukerakoa: Pasahitzaren kaduzitatea metatzen duen ldap atributua indargabetzen du.';
 $string['auth_ldap_expireattr_key'] = 'Iraungitze-atributua';
 $string['auth_ldapextrafields'] = '<p>Eremu hauek aukerazkoak dira. Moodle erabiltzaile eremu batzuk hemen zehaztutako <b>LDAP eremu</b>etako informazioz betetzea aukeratu dezakezu.</p><p>Zurian uzten badituzu, ez da ezer transferituko LDAP-tik eta Moodlek lehenetsitako balioak erabiliko dira ordez.</p><p>Edozein kasutan, erabiltzaileak eremu guzti hauek editatzeko gaitasuna izango du behin saioa hasita.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Aukerazkoa: Sarrera librearen atributua indargabetzen du';

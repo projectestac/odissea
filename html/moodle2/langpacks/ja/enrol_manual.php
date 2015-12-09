@@ -38,7 +38,7 @@ $string['defaultperiod_help'] = '受講登録が有効な場合のデフォル�
 $string['deleteselectedusers'] = '選択されたユーザ登録を削除する';
 $string['editselectedusers'] = '選択したユーザ登録を編集する';
 $string['enrolledincourserole'] = '「 {$a->course} 」に「 {$a->role} 」として受講登録されました。';
-$string['enrolusers'] = 'ユーザを登録する';
+$string['enrolusers'] = 'ユーザを受講登録する';
 $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除時、コースからユーザデータおよび設定が削除されることに留意してください。';
 $string['expirymessageenrolledbody'] = '{$a->user} さん
@@ -54,7 +54,7 @@ $string['expirymessageenrollerbody'] = '下記ユーザに関して、次の {$a
 登録期限を延長するには {$a->extendurl} にアクセスしてください。';
 $string['expirymessageenrollersubject'] = '登録期限切れ通知';
 $string['manual:config'] = '手動登録インスタンスを設定する';
-$string['manual:enrol'] = 'ユーザを登録する';
+$string['manual:enrol'] = 'ユーザを受講登録する';
 $string['manual:manage'] = 'ユーザ登録を管理する';
 $string['manual:unenrol'] = 'コースからユーザを登録解除する';
 $string['manual:unenrolself'] = 'コースから自分自身を登録解除する';
@@ -71,6 +71,6 @@ $string['unenrolselectedusers'] = '選択したユーザの受講登録を解除
 $string['unenrolselfconfirm'] = '本当にコース「 {$a} 」からあなたを登録解除してもよろしいですか?';
 $string['unenroluser'] = '本当に「 {$a->user} 」をコース「 {$a->course} 」から登録解除してもよろしいですか?';
 $string['unenrolusers'] = 'ユーザを登録解除する';
-$string['wscannotenrol'] = 'コース(id = {$a->courseid})では、プラグインインスタンスが手動でユーザを登録することはできません。';
+$string['wscannotenrol'] = 'コース (id = {$a->courseid}) ではプラグインインスタンスが手動でユーザを受講登録することはできません。';
 $string['wsnoinstance'] = 'コース (id = {$a->courseid}) の手動登録プラグインインスタンスが存在しないか、無効にされています。';
 $string['wsusercannotassign'] = 'あなたにはこのコース ({$a->courseid}) 内でロール ({$a->roleid}) をユーザ ({$a->userid}) に割り当てるパーミッションがありません。';

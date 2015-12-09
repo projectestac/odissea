@@ -104,7 +104,7 @@ $string['drop_feedback'] = 'このコースから削除する';
 $string['edit_item'] = '質問を編集する';
 $string['edit_items'] = '質問を編集する ...';
 $string['email_notification'] = '送信通知を有効にする';
-$string['email_notification_help'] = '有効にした場合、フィードバック送信に関して、教師はメール通知されます。';
+$string['email_notification_help'] = 'この設定を有効にした場合、フィードバック送信に関して、教師はメール通知されます。';
 $string['emailteachermail'] = '{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。
 
 あなたは下記ページで内容を閲覧できます:
@@ -185,7 +185,7 @@ $string['multichoicerated'] = '多肢選択 (評定)';
 $string['multichoicetype'] = '多肢選択タイプ';
 $string['multichoice_values'] = '多肢選択値';
 $string['multiplesubmit'] = '複数回答を許可する';
-$string['multiplesubmit_help'] = '匿名調査に有効にした場合、ユーザは無制限でフィードバックを送信することができます。';
+$string['multiplesubmit_help'] = '匿名調査を有効にした場合、ユーザは無制限でフィードバックを送信することができます。';
 $string['name'] = '名称';
 $string['name_required'] = '名称を入力してください。';
 $string['next_page'] = '次のページ';

@@ -386,7 +386,7 @@ $string['country'] = 'デフォルトの国';
 $string['coursecontact'] = 'コース管理者';
 $string['coursecontact_desc'] = 'ここでは誰がコース説明に表示されるか設定することができます。ユーザがコース説明に表示されるためには、これらの中から少なくとも１つのコースロールを割り当てる必要があります。';
 $string['courselistshortnames'] = '拡張コース名をを表示する';
-$string['courselistshortnames_desc'] = '有効にした場合、コース一覧においてコースフルネームに加えてコース省略名が表示されます。必要であれば、言語カスタマイゼーション機能を使用して「courseextendednamedisplay」言語ストリングを編集することで、拡張コース名をカスタマイズすることができます。';
+$string['courselistshortnames_desc'] = 'この設定を有効にした場合、コース一覧においてコースフルネームに加えてコース省略名が表示されます。必要であれば、言語カスタマイゼーション機能を使用して「courseextendednamedisplay」言語ストリングを編集することで、拡張コース名をカスタマイズすることができます。';
 $string['coursemgmt'] = 'コースおよびカテゴリを管理する';
 $string['courseoverview'] = 'コース概要';
 $string['courserequestnotify'] = 'コースリクエスト通知';
@@ -496,7 +496,7 @@ $string['enablecssoptimiser_desc'] = 'この設定を有効にした場合、キ
 $string['enabled'] = '有効';
 $string['enabledevicedetection'] = 'デバイス検出を有効にする';
 $string['enablegravatar'] = 'Gravatarを有効にする';
-$string['enablegravatar_help'] = 'この設定を有効にした場合、ユーザのイメージがアップロードされていない場合にMoodleがGravatartからユーザ写真を取得します。';
+$string['enablegravatar_help'] = 'この設定を有効にした場合、ユーザのイメージがアップロードされていない場合にMoodleがGravatartからユーザ画像を取得します。';
 $string['enablemobilewebservice'] = 'モバイルデバイスのウェブサービスを有効にする';
 $string['enablerecordcache'] = 'レコードキャッシュを有効にする';
 $string['enablerssfeeds'] = 'RSSフィードを有効にする';
@@ -546,8 +546,8 @@ $string['filtersettings'] = 'フィルタ設定';
 $string['filtersettingsgeneral'] = '一般フィルタ設定';
 $string['filteruploadedfiles'] = 'アップロードファイルをフィルタする';
 $string['forcelogin'] = 'ユーザにログインを強制する';
-$string['forceloginforprofileimage'] = 'ユーザ写真の閲覧にユーザのログインを強制する';
-$string['forceloginforprofileimage_help'] = 'この設定を有効にした場合、ユーザプロファイル写真の閲覧時にユーザはログインする必要があります。また、すべての通知メールにおいて、デフォルトのユーザ写真が使用されます。';
+$string['forceloginforprofileimage'] = 'ユーザ画像の閲覧にユーザのログインを強制する';
+$string['forceloginforprofileimage_help'] = 'この設定を有効にした場合、ユーザプロファイル画像の閲覧時にユーザはログインする必要があります。また、すべての通知メールにおいて、デフォルトのユーザ画像が使用されます。';
 $string['forceloginforprofiles'] = 'プロファイル閲覧にユーザのログインを強制する';
 $string['forcetimezone'] = 'タイムゾーンを強制する';
 $string['formatuninstallwithcourses'] = '{$a->format} を使用しているコースが {$a->count} 件あります。これらのフォーマットは {$a->defaultformat} (このサイトのデフォルトフォーマット) に変更されます。いくつかのフォーマット特有のデータを喪失する場合があります。本当に処理を進めてもよろしいですか?';
@@ -574,7 +574,7 @@ $string['gradebook'] = '評定表';
 $string['gradebookroles'] = '評定ロール';
 $string['gradeexport'] = '主要な評定表エクスポート方法';
 $string['gravatardefaulturl'] = 'GravatarデフォルトイメージURL';
-$string['gravatardefaulturl_help'] = 'Gravatarではユーザの写真が見つからない場合に表示するデフォルトイメージが必要です。イメージの完全なURLを提供してください。この設定を空白にした場合、あなたが閲覧しているページに対して、Moodleは最も適切なデフォルトイメージの使用を試みます。Gravatarには<a href="https://en.gravatar.com/site/implement/images/#default-image">デフォルトイメージを生成するため</a>の多くのコードが含まれていることにも留意してください。';
+$string['gravatardefaulturl_help'] = 'Gravatarではユーザ画像が見つからない場合に表示するデフォルトイメージが必要です。イメージの完全なURLを提供してください。この設定を空白にした場合、あなたが閲覧しているページに対して、Moodleは最も適切なデフォルトイメージの使用を試みます。Gravatarには<a href="https://en.gravatar.com/site/implement/images/#default-image">デフォルトイメージを生成するため</a>の多くのコードが含まれていることにも留意してください。';
 $string['groupenrolmentkeypolicy'] = 'デフォルト登録キーポリシー';
 $string['groupenrolmentkeypolicy_desc'] = 'この設定を有効にすることで、有効なパスワードポリシーに基づきMoodleがグループ登録キーをチェックするようにします。';
 $string['guestroleid'] = 'ゲストのロール';
@@ -584,7 +584,7 @@ $string['helpcalendarcustomexport'] = 'カレンダーエクスポートに関�
 $string['helpexportlookahead'] = 'カスタムエクスポートオプションによるエクスポート中、イベントに関して、カレンダーは将来の日数を何日考慮しますか?';
 $string['helpexportlookback'] = 'カスタムエクスポートオプションによるエクスポート中、イベントに関して、カレンダーは過去の日数を何日考慮しますか?';
 $string['helpforcetimezone'] = 'あなたはユーザに独自のタイムゾーンを選択させることができます。または、すべてのユーザに対してタイムゾーンを強制します。';
-$string['helpshowicalsource'] = 'このオプションを有効にした場合、iCalインポートイベントのiCal購読名およびリンクが表示されます。';
+$string['helpshowicalsource'] = 'この設定を有効にした場合、iCalインポートイベントのiCal購読名およびリンクが表示されます。';
 $string['helpsitemaintenance'] = 'アップグレードやその他の作業時に使用します。';
 $string['helpstartofweek'] = '何曜日をカレンダーの週の始めとしますか?';
 $string['helpupcominglookahead'] = '何日前のイベントをデフォルトで直近イベントとして表示しますか?';
@@ -647,7 +647,7 @@ $string['lockoutemailbody'] = 'サーバ「 {$a->sitename} 」内のあなたの
 
 {$a->link}
 
-ほとんどのメールプログラムでは、あなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのブラウザウインドウのアドレス欄にアドレスをコピー＆ペーストしてください。
+ほとんどのメールプログラムでは、あなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
 分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['lockoutemailsubject'] = '{$a} のあなたのアカウントはロックアウトされました。';
@@ -663,7 +663,7 @@ $string['loginhttps'] = 'ログインにHTTPSを使用する';
 $string['loginpageautofocus'] = 'ログインページフォームのオートフォーカス';
 $string['loginpageautofocus_help'] = 'この設定を有効にした場合、ログインページのユーザビリティを改善します。しかし、フィールドにオートフォーカスさせる場合、アクセシビリティ問題に関して考慮した方が良いでしょう。';
 $string['loginpasswordautocomplete'] = 'ログインフォームのパスワード自動補完を防ぐ';
-$string['loginpasswordautocomplete_help'] = 'このオプションを有効にした場合、ユーザはブラウザにアカウントのパスワードを保存できないようになります。';
+$string['loginpasswordautocomplete_help'] = 'この設定を有効にした場合、ユーザはブラウザにアカウントのパスワードを保存できないようになります。';
 $string['loglifetime'] = 'ログの保存期間';
 $string['logstorenotrequired'] = 'ログストアは必須ではありません';
 $string['logstoressupported'] = 'このレポートをサポートするログストア';

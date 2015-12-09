@@ -2,29 +2,13 @@
 $string['pluginname'] ='Els meus llibres';
 
 
-$string['activitytypeopen'] = 'Visualitza l\'activitat';
-$string['activitytypeopeninfo'] = 'On se li ha d\'obrir l\'activitat a l\'alumnat?';
 $string['error_loading_data'] = 'Error en carregar dades del llibre {$a}. Si us plau posi\'s en contacte amb l\'administrador/a.';
-$string['height'] = 'Alçada';
-$string['heightinfo'] = 'Quina alçada per defecte han de tenir les finestres emergents noves?';
-$string['menubar'] = 'Mostra la barra de menús';
-$string['menubarinfo'] = 'Les finestres emergents han de mostrar la barra de menús?';
 $string['my_books'] = 'Els meus llibres';
 $string['nobooks'] = 'No hi ha cap llibre per mostrar';
 $string['popup'] = 'Finestra nova';
-$string['popupconfig'] = 'Configuraci&oacute; de la finestra d\'activitat';
 $string['samewindow'] = 'Mateixa finestra';
-$string['scrollbars'] = 'Permet el desplaçament de la finestra';
-$string['scrollbarsinfo'] = 'Les finestres emergents han de permetre el desplaçament?';
-$string['status'] = 'Estat';
-$string['statusinfo'] = 'Les finestres emergents han de mostrar la barra d\'estat?';
-$string['toolbar'] = 'Mostra la barra d\'eines';
-$string['toolbarinfo'] = 'Les finestres emergents han de mostrar la barra d\'eines?';
-$string['viewertypeopen'] = 'Visualitza enllaç';
-$string['viewertypeopeninfo'] = 'On se li ha d\'obrir l\'enllaç del bloc a l\'alumnat?';
-$string['width'] = 'Amplada';
-$string['widthinfo'] = 'Quina amplada per defecte han de tenir les noves finestres emergents?';
-
+$string['viewertypeopen'] = 'Visualitza l\'activitat';
+$string['viewertypeopeninfo'] = 'On se li ha d\'obrir l\'activitat a l\'alumnat?';
 
 $string['addkey_button'] = 'Afegeix';
 $string['addkey_button_title'] = 'Afegeix credencial';

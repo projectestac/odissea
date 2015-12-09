@@ -106,7 +106,7 @@ $string['cannotinsertrecord'] = 'Der neue Datensatz ID {$a} wurde nicht eingetra
 $string['cannotmailconfirm'] = 'Fehler beim E-Mail-Versand zur Bestätigung der Kennwortänderung';
 $string['cannotmanualctrack'] = 'Die Aktivität unterstützt keine manuelle Abschlussverfolgung';
 $string['cannotmapfield'] = 'Problem bei der Zuordnung aufgetreten. Zwei Felder sind der gleichen Bewertung {$a} zugeordnet.';
-$string['cannotmarktopic'] = 'Kursabschnitt konnte nicht markiert werden';
+$string['cannotmarktopic'] = 'Abschnitt konnte nicht markiert werden';
 $string['cannotmigratedatacomments'] = 'Kommentare zum Datenmodul können nicht migriert werden';
 $string['cannotmodulename'] = 'Bei der Navigationserstellung kann der Modulname nicht festgestellt werden.';
 $string['cannotmoduletype'] = 'Bei der Navigationserstellung kann der Modultyp  nicht festgestellt werden.';
@@ -389,7 +389,7 @@ $string['movecatcontentstoroot'] = 'Das Verschieben des Inhalts in den Root-Bere
 $string['movecategorynotpossible'] = 'Sie können den Kursbereich \'{$a}\' nicht in den ausgewählten Kursbereich verschieben.';
 $string['movecategoryownparent'] = 'Sie können den Kursbereich \'{$a}\' nicht zu einem Unterbereich von sich selber machen..';
 $string['movecategoryparentconflict'] = 'Sie können den Kursbereich \'{$a}\' nicht zu einem Unterbereich innerhalb seiner eigenen Unterbereiche machen.';
-$string['mssqlrcsmodemissing'] = 'Die Datenbank verwendet den Modus READ_COMMITTED_SNAPSHOT nicht. Dies kann zu falschen Ergebnissen - besonders bei vielen zeitgleichen Zugriffen - führen. Aktivieren Sie dies für das korrekte Verhalten. Weitere Informationen finden Sie unter  <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP#Configuration">Moodle Docs</a>.';
+$string['mssqlrcsmodemissing'] = 'Die Datenbank verwendet nicht den Modus READ_COMMITTED_SNAPSHOT. Dies kann zu falschen Ergebnissen - besonders bei vielen zeitgleichen Zugriffen - führen. Aktivieren Sie dies für das korrekte Verhalten. Weitere Informationen finden Sie unter  <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Moodle Docs</a>.';
 $string['multiplerecordsfound'] = 'Mehrere Datensätze gefunden, aber nur ein Datensatz wird erwartet';
 $string['multiplerestorenotallow'] = 'Eine mehrfache Ausführung der Wiederherstellung ist nicht erlaubt!';
 $string['mustbeloggedin'] = 'Sie müssen sich anmelden, um dies zu tun.';

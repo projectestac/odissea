@@ -40,5 +40,5 @@ $string['pleaseenterananswer'] = 'Introduïu una resposta.';
 $string['pluginname'] = 'Resposta breu';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de resposta breu';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de resposta breu';
-$string['pluginname_help'] = 'En resposta a una pregunta (que pot incloure una imatge), l\'estudiant escriu una paraula o frase curta. Poden haver-hi diverses respostes correctes, cadascuna amb la seva qualificació. Si s\'ha seleccionat l\'opció "Sensible les majúscules", aleshores podeu assignar diferents puntuacions a "Paraula" i "paraula".';
+$string['pluginname_help'] = 'En resposta a una pregunta (que pot incloure una imatge), l\'estudiant escriu una paraula o frase curta. Poden haver-hi diverses respostes correctes, cadascuna amb la seva qualificació. Si s\'ha seleccionat l\'opció «Distingeix majúscules i minúscules», aleshores podeu assignar diferents puntuacions a «Paraula» i «paraula».';
 $string['pluginnamesummary'] = 'Permet una resposta d\'una o poques paraules, que es qualifica comparant-la amb diverses respostes-patró, les quals poden contenir comodins.';

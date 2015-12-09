@@ -84,9 +84,7 @@ foreach ($tokens as $key => $token) {
     $unsettoken = false;
     // If sid is set then there must be a valid associated session no matter the token type.
     if (!empty($token->sid)) {
-        // TODO, this has changed in 2.6.
-        $session = session_get_instance();
-        if (!$session::session_exists($token->sid)) {
+        if (!\core\session\manager::session_exists($token->sid)) {
             // This token will never be valid anymore, delete it.
             $DB->delete_records('external_tokens', array('sid' => $token->sid));
             $unsettoken = true;

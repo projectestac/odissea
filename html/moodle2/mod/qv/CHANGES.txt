@@ -3,6 +3,12 @@ Release notes for QV Module for Moodle (https://github.com/projectestac/moodle-m
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_qv
 
+Changes in 2.7.0 - 2015120300 (2015/12/03)
+---------------------------------------------------------------------------------------
+ - Changed version numbering method, now the first two numbers are the minimum Moodle required version
+ - Solved two missing string identifiers and warnings
+ - Solved string on reset
+
 Changes in 0.1.0 - 2015061500 (2015/06/15)
 ---------------------------------------------------------------------------------------
  - Added CHANGES.txt

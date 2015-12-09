@@ -76,13 +76,13 @@ $string['comp_customsql_help'] = '<p>Ajouter une requête SQL active. N\'utilise
 
 <p>N\'oubliez pas d\'ajouter un « filtre temporel » si vous utilisez les rapports avec des jetons de temps. </p>
 
-<p>Pour l\'utilisation des filtres, voir sous : <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Créer un tutoriel sur les rapports SQL</a></p>';
+<p>Pour l\'utilisation des filtres, voir sous : <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Tutoriel sur la création de rapports SQL</a></p>';
 $string['comp_filters'] = 'Filtres';
 $string['comp_filters_help'] = '<p>Ici, vous pouvez choisir les filtres qui seront affichés.</p>
 
 <p>Un filtre permet à l\'utilisateur de choisir des colonnes du rapport pour filtrer les résultats du rapport.</p>
 
-<p>Pour utiliser les filtres si votre type de rapport est SQL, voir sous : <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Créer un tutoriel sur les rapports SQL</a></p>
+<p>Pour utiliser les filtres si votre type de rapport est SQL, voir sous : <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Tutoriel sur la création de rapports SQL</a></p>
 
 <p>Aide supplémentaire : <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Documentation du module d\'extension</a></p>';
 $string['componenthelp'] = 'Aide sur le composant';
@@ -147,7 +147,7 @@ $string['currentusercourses_summary'] = 'Liste des cours auxquels l\'utilisateur
 $string['currentuserfinalgrade'] = 'Note finale du cours pour l\'utilisateur courant';
 $string['currentuserfinalgrade_summary'] = 'Cette colonne affiche la note finale de l\'utilisateur courant dans la rangée du cours';
 $string['currentuser_summary'] = 'L\'utilisateur qui consulte le rapport';
-$string['cuserfield'] = 'Condition appliquée à un champ Utilisateur';
+$string['cuserfield'] = 'Condition appliquée à un champ utilisateur';
 $string['custom'] = 'Personnalisé';
 $string['customdateformat'] = 'Format de date personnalisé';
 $string['customsql'] = 'Rapport SQL personnalisé';
@@ -155,11 +155,11 @@ $string['datatables'] = 'Autoriser la librairie JS DataTables';
 $string['datatables_emptytable'] = 'Pas de données disponibles dans le tableau';
 $string['datatables_first'] = 'Premier';
 $string['datatablesinfo'] = 'Librairie JS DataTables (tri des colonnes, entête fixe, recherche, pagination...)';
-$string['datatables_info'] = 'Affichage des entrées START_to_END_of_TOTAL';
+$string['datatables_info'] = 'Affichage des entrées _START_ à _END_ sur _TOTAL_';
 $string['datatables_infoempty'] = 'Affichage des entrées 0 à 0 de 0';
-$string['datatables_infofiltered'] = '(filtré depuis les entrées MAX_total)';
+$string['datatables_infofiltered'] = '(filtré depuis _MAX_ entrées au total)';
 $string['datatables_last'] = 'Dernier';
-$string['datatables_lengthmenu'] = 'Affichage des entrées MENU';
+$string['datatables_lengthmenu'] = 'Affichage  _MENU_ entrées';
 $string['datatables_loadingrecords'] = 'Chargement...';
 $string['datatables_next'] = 'Suivant';
 $string['datatables_previous'] = 'Précédent';
@@ -250,7 +250,7 @@ $string['forcemidnight'] = 'Forcer plage horaire à minuit';
 $string['fsearchuserfield'] = 'Boîte de recherche du champ Utilisateur';
 $string['fuserfield'] = 'Filtre du champ Utilisateur';
 $string['global'] = 'Rapport global';
-$string['global_help'] = 'Le rapport global peut être accessible à partir de n\'importe quel cours dans la plate-forme juste ajoutant & courseid=MY_COURSE_ID dans le rapport URL';
+$string['global_help'] = 'Le rapport global peut être accessible à partir de n\'importe quel cours dans la plate-forme juste en ajoutant &courseid=ID_DU_COURS dans l\'URL du rapport';
 $string['globalstatsshouldbeenabled'] = 'Les statistiques relatives au site doivent être activées. Aller à Admin. -> Serveur -> Statistiques';
 $string['groupseries'] = 'Grouper séries';
 $string['groupvalues'] = 'Groupe de mêmes valeurs (somme)';
@@ -268,11 +268,11 @@ $string['label_field'] = 'Champ d\'étiquette';
 $string['label_field_help'] = 'Le champ qui fourni les noms pour les éléments représentés dans le graphique';
 $string['lastexecutiontime'] = 'Temps d\'exécution = {$a} (Sec)';
 $string['legacylognotenabled'] = 'Les historiques obsolètes doivent être activés.
-Aller dans Administration du site / Plugins / Historiques / Historiques obsolètes et activer l\'enregistrement des données dans la table obsolète';
+Aller dans Administration du site > Plugins > Historiques > Historiques obsolètes et activer l\'enregistrement des données dans la table obsolète';
 $string['limitcategories'] = 'Limiter les catégories dans un graphique';
 $string['line'] = 'Graphique linéaire';
 $string['linesummary'] = 'Un graphique linéaire avec plusieurs séries de données';
-$string['listofsqlreports'] = '<a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank">Liste des rapports SQL contribués</a>';
+$string['listofsqlreports'] = 'Appuyez sur F11 lorsque le curseur est dans l\'éditeur pour passer en édition plein écran. Echap peut être utilisé pour quitter l\'édition plein écran.<a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank">Liste des rapports SQL contribués</a>';
 $string['managereports'] = 'Gérer les rapports';
 $string['max'] = 'Maximum';
 $string['min'] = 'Minimum';
@@ -362,7 +362,7 @@ $string['startendtime'] = 'Filtre date de début ou de fin';
 $string['starttime'] = 'Date de début';
 $string['stat'] = 'Statistiques';
 $string['statsactiveenrolments'] = 'Inscriptions actives (dernière semaine)';
-$string['statslogins'] = 'Connexion à la plateforme';
+$string['statslogins'] = 'Connexions à la plateforme';
 $string['statstotalenrolments'] = 'Nombre total d\'inscriptions';
 $string['student'] = 'Étudiant';
 $string['subcategories'] = 'Catégorie (incluant les sous catégories)';
@@ -378,7 +378,7 @@ $string['template_marks_help'] = '<p>Vous pouvez utiliser n\'importe laquelle de
 
 <ul>
 <li>##reportname## - Pour inclure le nom du rapport</li>
-<li>##reportsummary## - Pour inclure le rapport sommaire</li>
+<li>##reportsummary## - Pour inclure le résumé du rapport</li>
 <li>##graphs## - Pour inclure les graphiques</li>
 <li>##exportoptions## - Pour inclure les options d\'exportation</li>
 <li>##calculationstable## - Pour inclure la table des calculs</li>
@@ -395,7 +395,7 @@ $string['typeofreport'] = 'Type de rapport';
 $string['typeofreport_help'] = 'Choisissez le type de rapport que vous voulez créer.
 Par sécurité, le rapport SQL nécessite une capacité supplémentaire';
 $string['user'] = 'Utilisateur du cours (id)';
-$string['usercompletion'] = 'État d\'achèvement du cours par l\'utilisateur';
+$string['usercompletion'] = 'État d\'achèvement du cours de l\'utilisateur';
 $string['usercompletionsummary'] = 'État d\'achèvement du cours';
 $string['userfield'] = 'Champ de profil d\'utilisateur';
 $string['userfieldorder'] = 'Tri par champ utilisateur';

@@ -168,7 +168,7 @@ $string['displayformats'] = 'Formatos de visualización';
 $string['displayformatssetup'] = 'Ajustar formatos de visualización';
 $string['duplicatecategory'] = 'Categoría duplicada';
 $string['duplicateentry'] = 'Entrada duplicada';
-$string['editalways'] = 'Editar siempre';
+$string['editalways'] = 'Permitir editar siempre';
 $string['editalways_help'] = '<P>Esta opción permite decidir si los estudiantes pueden editar sus entradas
 en cualquier momento.
 
@@ -201,6 +201,15 @@ $string['errconceptalreadyexists'] = 'Este concepto ya existe. En este glosario 
 $string['errdeltimeexpired'] = 'No puede eliminar esto: el tiempo ha expirado.';
 $string['erredittimeexpired'] = 'El tiempo de edición de esta entrada ha expirado.';
 $string['errorparsingxml'] = 'Error al analizar el fichero. Asegúrese de que la sintaxis XML es válida.';
+$string['eventcategorycreated'] = 'La categoría ha sido creada';
+$string['eventcategorydeleted'] = 'La categoría ha sido borrada';
+$string['eventcategoryupdated'] = 'La categoría ha sido actualizada';
+$string['evententryapproved'] = 'La entrada ha sido aprobada';
+$string['evententrycreated'] = 'La entrada ha sido creada';
+$string['evententrydeleted'] = 'La entrada ha sido borrada';
+$string['evententrydisapproved'] = 'La entrada ha sido desaprobada';
+$string['evententryupdated'] = 'La entrada ha sido actualizada';
+$string['evententryviewed'] = 'La entrada ha sido vista';
 $string['explainaddentry'] = 'Añadir una nueva entrada al glosario actual.<br />Concepto y Definición son campos obligatorios.';
 $string['explainall'] = 'Muestra TODAS las entradas en una página.';
 $string['explainalphabet'] = 'Navegue por el glosario usando este índice.';

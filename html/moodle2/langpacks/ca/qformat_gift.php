@@ -35,4 +35,4 @@ $string['giftrightbraceerror'] = 'No es troba un }';
 $string['importminerror'] = 'Hi ha un error a la pregunta. No hi ha prou respostes per a aquest tipus de pregunta.';
 $string['nohandler'] = 'No hi ha una capçalera per al tipus de pregunta {$a}';
 $string['pluginname'] = 'Format Gift';
-$string['pluginname_help'] = 'El format Gift permet la selecció múltiple, vertader-fals , resposta breu, la cerca, emplenar paraules buides, preguntes numèriques i assajos que s\'han d\'importar o exportar amb el fitxer de text.';
+$string['pluginname_help'] = 'El format Gift permet importar o exportar amb el fitxer de text preguntes de selecció múltiple, vertader-fals, resposta breu, d\'aparellament, d\'emplenar paraules omeses, preguntes numèriques i preguntes de resposta oberta.';

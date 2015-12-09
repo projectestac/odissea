@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cancel'] = 'Avbryt';
 $string['comment'] = 'Kommentar';
 $string['custom'] = 'Anpassade parametrar';
 $string['custom_help'] = 'Anpassade parametrar är inställningar som används av den som levererar verktyg. Till exempel, en anpassad parameter kan användas till att visa en specifik resurs från leverantören.';

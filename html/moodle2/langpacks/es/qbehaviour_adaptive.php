@@ -32,5 +32,10 @@ $string['gradingdetailsadjustment'] = 'Con las penalizaciones previas da como re
 <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Este envío supone una penalización de {$a}.';
 $string['gradingdetailspenaltytotal'] = 'Total de penalizaciones hasta ahora: {$a}.';
+$string['gradingdetailswithadjustment'] = 'Puntos para este envío: {$a->raw}/{$a->max}. Contando con los intentos anteriores, daría <strong>{$a->cur}/{$a->max}</strong>.';
+$string['gradingdetailswithadjustmentpenalty'] = 'Puntos para este envío: {$a->raw}/{$a->max}. Contando con los intentos anteriores, daría <strong>{$a->cur}/{$a->max}</strong>. A este envío se le aplicó una penalización de {$a->penalty}.';
+$string['gradingdetailswithadjustmenttotalpenalty'] = 'Puntos para este envío: {$a->raw}/{$a->max}. Contando con los intentos anteriores, daría <strong>{$a->cur}/{$a->max}</strong>.  A este envío se le aplicó una penalización de {$a->penalty}. Penalizaciones totales hasta el momento: {$a->totalpenalty}.';
+$string['gradingdetailswithpenalty'] = 'Puntos para este envío: {$a->raw}/{$a->max}. A este envío se le aplicó una penalización de {$a->penalty}.';
+$string['gradingdetailswithtotalpenalty'] = 'Puntos para este envío: {$a->raw}/{$a->max}. A este envío se le aplicó una penalización de {$a->penalty}. Penalizaciones totales hasta el momento: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Sin finalizar';
 $string['pluginname'] = 'Modo adaptativo';

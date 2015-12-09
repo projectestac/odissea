@@ -61,7 +61,7 @@ $string['completionenabled'] = '有効、完了設定および活動設定によ
 $string['completionexpected'] = '期待される完了日';
 $string['completionexpected_help'] = 'この設定では期待される活動完了日を指定します。日付は学生に表示されず、活動完了レポートのみに表示されます。';
 $string['completion-fail'] = '完了 (合格点未到達)';
-$string['completion_help'] = '有効にした場合、コンディションに基づき手動または自動の活動完了がトラッキングされます。必要に応じて、複数のコンディションを設定することができます。その場合、すべてのコンディションに合致したときのみ活動が完了したとみなされます。
+$string['completion_help'] = 'この設定を有効にした場合、コンディションに基づき手動または自動の活動完了がトラッキングされます。必要に応じて、複数のコンディションを設定することができます。その場合、すべてのコンディションに合致したときのみ活動が完了したとみなされます。
 
 活動が完了した場合、コースページの活動名の横にチェックが表示されます。';
 $string['completionicons'] = '完了チェックボックス';
@@ -116,7 +116,7 @@ $string['dependencies'] = '依存関係';
 $string['dependenciescompleted'] = '他のコースの完了';
 $string['editcoursecompletionsettings'] = 'コース完了設定を編集する';
 $string['enablecompletion'] = '完了トラッキングを有効にする';
-$string['enablecompletion_help'] = '有効にした場合、活動完了コンディションが活動設定内に設定されます。また、コース完了コンディションも設定されます。';
+$string['enablecompletion_help'] = 'この設定を有効にした場合、活動完了コンディションが活動設定内に設定されます。また、コース完了コンディションも設定されます。';
 $string['enrolmentduration'] = '登録持続期間';
 $string['enrolmentdurationlength'] = 'ユーザは次の期間受講登録を保持する必要があります';
 $string['err_noactivities'] = 'すべての活動で完了情報が有効にされていないため、何も表示されません。活動の設定画面により、あなたは完了情報を有効にすることができます。';

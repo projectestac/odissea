@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
-$string['pluginname_help'] = 'El format Examview permet importar preguntes dels fitxers XML de l\'Examview 4. Per verions més noves de l\'Examview caldria usar el format Blackboard.';
+$string['pluginname_help'] = 'El format Examview permet importar preguntes dels fitxers XML de l\'Examview 4. Per a versions més noves de l\'Examview caldria usar el format Blackboard.';

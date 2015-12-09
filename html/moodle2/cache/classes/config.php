@@ -113,6 +113,13 @@ class cache_config {
         global $CFG;
         if (!empty($CFG->altcacheconfigpath)) {
             $path = $CFG->altcacheconfigpath;
+            // XTEC ************ AFEGIT - To have MUC configured.
+            // @pferre22 2015.11.19
+            if (is_dir($path)) {
+                return $path.'/cacheconfig.php';
+            }
+            return $path;
+            //************* FI
             if (is_dir($path) && is_writable($path)) {
                 // Its a writable directory, thats fine.
                 return $path.'/cacheconfig.php';

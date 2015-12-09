@@ -25,6 +25,42 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addreport'] = 'Afegeix un informe';
+$string['anyone_summary'] = 'Qualsevol usuari del campus podrà visualitzar aquest informe';
+$string['badsize'] = 'Mida incorrecta, ha de ser en percentatge (%) o píxels (px)';
+$string['badtablewidth'] = 'Amplada incorrecta, ha de ser en percentatge (%) o valor absolut';
+$string['bar'] = 'Barra';
+$string['barsummary'] = 'Diagrama de barres';
+$string['blockname'] = 'Informes configurables';
+$string['calcs'] = 'Càlculs';
+$string['categories'] = 'Categories';
+$string['categoryfield'] = 'Camp de categoria';
+$string['categoryfieldorder'] = 'Ordre dels camps de categoria';
+$string['cellalign'] = 'Alineació de la cel·la';
+$string['cellsize'] = 'Mida de la cel·la';
+$string['cellwrap'] = 'Ajustament de la cel·la';
+$string['column'] = 'Columna';
+$string['columnandcellproperties'] = 'Propietats de les columnes i les cel·les';
+$string['columncalculations'] = 'Càlculs de columna';
+$string['columns'] = 'Columnes';
+$string['comp_calcs'] = 'Calculadores';
+$string['comp_calcs_help'] = '<p>Aquí podeu afegir càlculs per columnes. Per exemple: mitjana d\'usuaris matriculats als cursos</p>
+
+<p>Més ajuda: <a href="http://docs.moodle.org/ca/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
+$string['comp_calculations'] = 'Calculadores';
+$string['comp_calculations_help'] = '<p>Aquí podeu afegir càlculs per columnes. Per exemple: mitjana d\'usuaris matriculats als cursos</p>';
+$string['comp_columns'] = 'Columnes';
+$string['conditionexpr'] = 'Condició';
+$string['conditionexpr_conditions'] = 'Condició';
 $string['conditionexprhelp'] = 'Introduïu una condició vàlida, p. ex.: (c1 and c2) or (c4 and c3)';
+$string['conditionexpr_permissions'] = 'Condició';
+$string['conditions'] = 'Condicions';
+$string['courses'] = 'Cursos';
+$string['currentuser'] = 'Usuari actual';
+$string['datatables'] = 'Habilita la llibreria DataTables JS';
+$string['datatables_loadingrecords'] = 'S\'està carregant...';
+$string['datatables_next'] = 'Següent';
+$string['datatables_previous'] = 'Anterior';
+$string['datatables_processing'] = 'S\'està processant...';
 $string['disabled'] = 'Inhabilitat';
 $string['statslogins'] = 'Inicis de sessió a la plataforma';

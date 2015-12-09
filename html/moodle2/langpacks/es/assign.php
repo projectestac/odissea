@@ -232,6 +232,7 @@ $string['manageassignfeedbackplugins'] = 'Gestionar extensiones de retroalimenta
 $string['manageassignsubmissionplugins'] = 'Gestionar extensiones de entrega en tareas';
 $string['marker'] = 'Marcador';
 $string['markerfilter'] = 'Filtor de marcadores';
+$string['markerfilternomarker'] = 'Sin marcador';
 $string['markingallocation'] = 'Usar asignación de marcas';
 $string['markingallocation_help'] = 'Si está habilitado, permite que los marcadores sean asignados a alumnos individuales - requiere que el worflow de marcadores esté habilitado';
 $string['markingworkflow'] = 'Usar workflow de marcas';

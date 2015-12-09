@@ -6,6 +6,7 @@ function set_marsupial_state($enable) {
     $DB->set_field('block', 'visible', $enable, array('name' => 'my_books'));
     $DB->set_field('block', 'visible', $enable, array('name' => 'rgrade'));
     set_config('enabled', $enable, 'rcommon');
+    purge_all_caches();
 }
 
 function is_marsupial_enabled() {

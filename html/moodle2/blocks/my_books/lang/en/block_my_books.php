@@ -2,28 +2,13 @@
 $string['pluginname'] ='My books';
 
 
-$string['activitytypeopen'] = 'How activity have to be open';
-$string['activitytypeopeninfo'] = 'How do you want that people see the activity';
 $string['error_loading_data'] = 'Error loading data of the book {$a}. Please contact the administrator.';
-$string['height'] = 'Height';
-$string['heightinfo'] = 'What height should be the default height for the frame or the new popup windows?';
-$string['menubar'] = 'Show the menu bar';
-$string['menubarinfo'] = 'Should popup windows show the menu bar by default?';
 $string['my_books'] = 'My books';
 $string['nobooks'] = 'There isn\'t any book to show';
 $string['popup'] = 'Popup';
-$string['popupconfig'] = 'Activity popup config';
 $string['samewindow'] = 'Same window';
-$string['scrollbars'] = 'Allow the window to be scrolled';
-$string['scrollbarsinfo'] = 'Should popup windows be scrollable by default?';
-$string['status'] = 'Status';
-$string['statusinfo'] = 'Should popup windows show the status bar by default?';
-$string['toolbar'] = 'Show the toolbar';
-$string['toolbarinfo'] = 'Should popup windows show the tool bar by default?';
-$string['viewertypeopen'] = 'How viewer have to be open';
-$string['viewertypeopeninfo'] = 'How do you want that people see the viewer';
-$string['width'] = 'Width';
-$string['widthinfo'] = 'What width should be the default width for the frame or the new popup windows?';
+$string['viewertypeopen'] = 'How activity have to be open';
+$string['viewertypeopeninfo'] = 'How do you want that people see the activity';
 
 $string['addkey_button'] = 'Add';
 $string['addkey_button_title'] = 'Add credential';

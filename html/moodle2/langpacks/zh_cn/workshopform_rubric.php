@@ -35,5 +35,6 @@ $string['layoutgrid'] = '网格';
 $string['layoutlist'] = '列表';
 $string['levelgroup'] = '此等级的成绩和定义';
 $string['levels'] = '等级';
+$string['mustbeunique'] = '在一个评判标准中，层级分数必须是唯一的';
 $string['mustchooseone'] = '您必须从这些项目中选择一项';
 $string['pluginname'] = '量规';

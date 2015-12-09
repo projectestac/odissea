@@ -35,6 +35,7 @@ $string['auth_shibboleth_manual_login'] = '手工登录';
 $string['auth_shibboleth_select_member'] = '我是成员之一';
 $string['auth_shibboleth_select_organization'] = '对于通过口令惊醒验证，请在下拉列表中选择您所在的组织。';
 $string['auth_shib_changepasswordurl'] = '更改密码 URL';
+$string['auth_shib_contact_administrator'] = '如果你与所提到的组织没有关系，但是你需要访问此服务器上的一个课程，那么请联系<a href="mailto:{$a}">Moodle管理员</a>。';
 $string['auth_shib_convert_data'] = '数据修改 API';
 $string['auth_shib_convert_data_description'] = '您可以是用此 API 将修改过的数据提交给 Shibboleth。要了解细节，请参考<a href="../auth/shibboleth/README.txt" target="_blank">README</a>。';
 $string['auth_shib_convert_data_warning'] = '此文件不存在或无法被 Web 服务器读取！';

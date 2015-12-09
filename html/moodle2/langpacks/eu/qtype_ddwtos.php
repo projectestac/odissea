@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Zuriuneak {no} aukera gehiagotarako';
+$string['answer'] = 'Erantzuna';
+$string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
+$string['pluginname'] = 'Hartu eta eraman testura';
+$string['pluginnameadding'] = 'Hartu eta eraman testura gehitzen';
+$string['pluginnameediting'] = 'Hartu eta eraman testura editatzen';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID del client';
-$string['noauthtoken'] = 'No s\'ha rebut el testimoni d\'autenticació de google. Assegureu-vos que esteu permetent a Moodle accedir al vostre compte de Google.';
+$string['noauthtoken'] = 'No s\'ha rebut el testimoni d\'autenticació de Google. Assegureu-vos que esteu permetent que Moodle accedeixi al vostre compte de Google.';
 $string['nooauthcredentials'] = 'Es requereixen credencials OAuth';
 $string['nooauthcredentials_help'] = 'Per a utilitzar el connector de portafolis de Picasa heu de configurar les credencials OAuth en la configuració del portafolis.';
 $string['oauth2upgrade_message_content'] = 'Com a part de l\'actualització a Moodle 2.3, s\'ha inhabilitat el connector de portafolis de Picasa. Per tornar-lo a habilitar, heu de registrar el vostre lloc Moodle amb Google, com es descriu a la documentació {$a->docsurl}, a fi d\'obtenir un ID de client i una contrasenya secreta. L\'ID de client i la contrasenya secreta es poden utilitzar per configurar tots els connectors de Picasa i Google Docs.';

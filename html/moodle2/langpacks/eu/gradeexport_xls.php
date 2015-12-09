@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Excel kalkulu-orria';
+$string['timeexported'] = 'Azkenik jaitsi da ikastaro honetatik';
 $string['xls:publish'] = 'XLS kalifikazioen esportazioa argitaratu';
 $string['xls:view'] = 'Kalifikazioak esportatzeko Excel erabili';

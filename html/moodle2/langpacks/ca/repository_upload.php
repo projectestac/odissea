@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuració per al connector de càrrega';
 $string['pluginname'] = 'Penja un fitxer';
-$string['pluginname_help'] = 'Penja un fitxer en Moodle';
+$string['pluginname_help'] = 'Penja un fitxer a Moodle';
 $string['upload_error_cant_write'] = 'Error en escriure el fitxer al disc';
 $string['upload_error_extension'] = 'Una extensió de PHP ha aturat la càrrega del fitxer.';
 $string['upload_error_form_size'] = 'La mida del fitxer per a penjar supera el valor MAX_FILE_SIZE definit al formulari HTML.';

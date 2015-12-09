@@ -97,11 +97,11 @@ $string['couldnotdelresp'] = 'Non è stato possibile eliminare la risposta';
 $string['createcontent'] = 'Definisce nuovo contenuto';
 $string['createcontent_help'] = 'Per creare un nuovo questionario selezionare uno dei tre pulsanti radio e quindi \'Continua\'. \'Crea nuovo\' è l\'opzione di default. Ai tre bottoni radio sono associate tre differenti modalità di realizzazione di un nuovo questionario: <br >
 
-    * <strong>Crea nuovo:</strong> Questa opzione consente di realizzare un questionario cominciando da zero.
-    * <strong>Copia esistente:</strong> Questa opzione consente di realizzare un questionario a partire dalla copia di un questionario preesistente. E\' possibile copiare sia un altro questionario del corso sia un qualunque altro questionario di tipo "modello". Le domande del questionario potranno essere visualizzate in anteprima e modificate selezionandole dal loro nome.
-    * <strong>Usa Pubblico:</strong> Se un questionario di tipo Pubblico è già stato creato (in un altro corso dello stessa installazione di Moodle), questa opzione consente di usare tale questionario in questa attività. Il numero di opzioni disponibili, per questo tipo di questionario, ai docenti di questo corso è ridotto e non è possibile né modificarne il contenuto né visualizzarne le risposte.
+    * **Crea nuovo:** Questa opzione consente di realizzare un questionario cominciando da zero.
+    * **Copia esistente:** Questa opzione consente di realizzare un questionario a partire dalla copia di un questionario preesistente. E\' possibile copiare sia un altro questionario del corso sia un qualunque altro questionario di tipo "modello". Le domande del questionario potranno essere visualizzate in anteprima e modificate selezionandole dal loro nome.
+    * **Usa Pubblico:** Se un questionario di tipo Pubblico è già stato creato (in un altro corso dello stessa installazione di Moodle), questa opzione consente di usare tale questionario in questa attività. Il numero di opzioni disponibili, per questo tipo di questionario, ai docenti di questo corso è ridotto e non è possibile né modificarne il contenuto né visualizzarne le risposte.
 
-    <br /><strong>Esempio:</strong> Se un questionario di tipo "Pubblico" è stato creato nel corso A, esso può essere erogato nei corsi B, C... Tutte le risposte dagli utenti dei corsi A, B, C... saranno raccolte nel questionario pubblico creato nel corso A e saranno visualizzabili solamente nel contesto del corso A dagli amministratori o docenti che lo hanno realizzato.';
+    <br />**Esempio:** Se un questionario di tipo "Pubblico" è stato creato nel corso A, esso può essere erogato nei corsi B, C... Tutte le risposte dagli utenti dei corsi A, B, C... saranno raccolte nel questionario pubblico creato nel corso A e saranno visualizzabili solamente nel contesto del corso A dagli amministratori o docenti che lo hanno realizzato.';
 $string['createnew'] = 'Crea nuovo';
 $string['date'] = 'Data';
 $string['dateformatting'] = 'E\' possibile usare il formato gg/mm/aaaa, es: 14 Marzo, 1945 <strong>14/3/1945</strong>';
@@ -413,7 +413,6 @@ $string['responses'] = 'Risposte';
 $string['responseview'] = 'Visibilità dei questionari inviati';
 $string['responseview_help'] = 'E\' possibile specificare in quale circostanza si consente la visualizzazione della totalità dei questionari inviati dagli utenti (statistiche generali)
 
--	Se si desidera che solo i docenti del corso possano vedere la totalità dei questionari inviati si selezioni **Mai**, ovvero il default.
 -	Per consentire agli studenti di vedere tutti i questionari inviati a posteriori dell\'invio del proprio questionario si scelga **Dopo aver risposto al questionario**. Ovviamente l\'accesso alla totalità dei questionari inviati sarà consentita solo se il parametro **Diritto di rispondere** risulterà impostato a **Rispondi una sola volta**.
 - Se il parametro **Diritto di rispondere** dovesse essere impostato, invece, a **Rispondi più volte** (o comunque ad una voce diversa da **Rispondi una sola volta**), allora gli studenti potrebbero vedere le risposte inviate soltanto se una delle seguenti due opzioni venisse selezionata per il parametro **Visibilità dei questionari inviati**:
 

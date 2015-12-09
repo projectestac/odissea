@@ -236,7 +236,9 @@ $string['gradeanalysis'] = 'Analisi delle valutazioni';
 $string['gradebook'] = 'Registro Valutazioni';
 $string['gradebookcalculationsfixbutton'] = 'Accetta le modifiche alle valutazione e risolvi gli errori di calcolo';
 $string['gradebookcalculationsuptodate'] = 'I calcoli nel registro valutatore sono aggiornati. Per visualizzare i cambiamenti, ricaricare la pagaina.';
-$string['gradebookcalculationswarning'] = 'Nota: sono stati rilevati degli errori nei calcoli delle valutazioni visualizzate nel registro del valutatore. Si raccomanda di rimuovere gli errori cliccando sul pulsante sottostante, cosa che tuttavia comporterà variazioni nelle valutazioni. Per ulteriori informazioni sulle modifiche tra la versione {$a->gradebookversion} e {$a->currentversion}. <a href="{$a->url}">Gradebook calculation changes</a>.';
+$string['gradebookcalculationswarning'] = 'Nota: sono stati rilevati degli errori nei calcoli delle valutazioni visualizzate nel registro del valutatore. Se il tuo corso non è iniziato o è in svolgimento, si raccomanda di rimuovere gli errori cliccando sul pulsante sottostante, cosa che tuttavia comporterà variazioni nelle valutazioni. Qualora il corso sia già terminato, allora può non essere necessario correggere le valutazioni.
+
+Per ulteriori informazioni sulle modifiche tra la versione {$a->gradebookversion} e {$a->currentversion}. <a href="{$a->url}">Gradebook calculation changes</a>.';
 $string['gradebookhiddenerror'] = 'Al momento il registro è impostato in modo da non visualizzare nessun elemento agli studenti.';
 $string['gradebookhistories'] = 'Storico delle valutazioni';
 $string['gradeboundary'] = 'Soglia per il livello';

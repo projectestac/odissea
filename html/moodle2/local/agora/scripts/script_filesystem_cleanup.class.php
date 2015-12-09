@@ -91,7 +91,7 @@ class script_filesystem_cleanup extends agora_script_base{
         $fs = get_file_storage();
         foreach ($filenames as $filehash) {
             $fs->deleted_file_cleanup($filehash);
-            $this->output(" -> Delete $contentfile");
+            $this->output(" -> Delete $filehash");
         }
     }
 

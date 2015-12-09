@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'グレゴリオ暦';
-$string['pluginname'] = 'グレゴリオ暦タイプ';
+$string['pluginname'] = 'グレゴリオ暦カレンダータイプ';

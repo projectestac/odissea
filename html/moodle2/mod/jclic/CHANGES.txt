@@ -3,6 +3,13 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
+Changes in 2.7.0 - 2015120300 (2015/12/03)
+---------------------------------------------------------------------------------------
+ - Changed version numbering method, now the first two numbers are the minimum Moodle required version
+ - Solved two missing string identifiers
+ - Solved string on reset
+ - Changed links to lafarga
+
 Changes in 0.2.6 - 2015061500 (2015/06/15)
 ---------------------------------------------------------------------------------------
  - Changed HTTP_RAW_POST_DATA by php://input

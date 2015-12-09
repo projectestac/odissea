@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Правило ограничения времени при прохождении теста';
+$string['pluginname'] = 'Правило доступа к тесту: ограничение по времени';
 $string['quiztimelimit'] = 'Ограничение по времени: {$a}';

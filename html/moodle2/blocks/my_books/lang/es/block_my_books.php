@@ -2,28 +2,13 @@
 $string['pluginname'] ='Mis libros';
 
 
-$string['activitytypeopen'] = 'C&oacute;mo se ha de abrir la actividad';
-$string['activitytypeopeninfo'] = 'C&oacute;mo quieres que se le abra al alumno la actividad';
 $string['error_loading_data'] = 'Error al cargar datos del libro {$a}. Por favor pongase en contacto con el administrador.';
-$string['height'] = 'Alto';
-$string['heightinfo'] = 'Esta preferencia determina la altura por defecto del marco o ventana';
-$string['menubar'] = 'Mostrar la barra de menú';
-$string['menubarinfo'] = 'Las ventanas \"popup\", ¿deben por defecto mostrar la barra de menú?';
 $string['my_books'] = 'Mis libros';
 $string['nobooks'] = 'No hay ning&uacute;n libro para mostrar';
 $string['popup'] = 'Ventana nueva';
-$string['popupconfig'] = 'Configuraci&oacute;n de la nueva ventana de actividad';
 $string['samewindow'] = 'Misma ventana';
-$string['scrollbars'] = 'Permitir desplazamiento de la ventana';
-$string['scrollbarsinfo'] = 'Las ventanas \"popup\", ¿deben por defecto mostrar las barras de desplazamiento?';
-$string['status'] = 'Estatus';
-$string['statusinfo'] = 'Las ventanas \"popup\", ¿deben por defecto mostrar la barra de estado?';
-$string['toolbar'] = 'Mostrar la barra de herramientas';
-$string['toolbarinfo'] = 'Las ventanas \"popup\", ¿deben por defecto mostrar la barra de herramientas?';
-$string['viewertypeopen'] = 'C&oacute;mo se ha de abrir el visor';
-$string['viewertypeopeninfo'] = 'C&oacute;mo quieres que se le abra al alumno el visor';
-$string['width'] = 'Ancho';
-$string['widthinfo'] = 'Esta preferencia ajusta la anchura por defecto del marco o ventana';
+$string['viewertypeopen'] = 'C&oacute;mo se ha de abrir la actividad';
+$string['viewertypeopeninfo'] = 'C&oacute;mo quieres que se le abra al alumno la actividad';
 
 $string['addkey_button'] = 'A&ntilde;adir';
 $string['addkey_button_title'] = 'A&ntilde;adir credencial';

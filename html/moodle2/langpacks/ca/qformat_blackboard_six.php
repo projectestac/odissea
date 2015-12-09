@@ -33,5 +33,5 @@ $string['importedcategory'] = 'Categoria importada {$a}';
 $string['importnotext'] = 'S\'ha perdut el text de la pregunta en el fitxer XML';
 $string['notenoughtsubans'] = 'No s\'ha pogut importar la pregunta \'{$a}\' perquè una pregunta d\'aparellaments ha de tenir almenys dues preguntes i tres respostes.';
 $string['pluginname'] = 'Blackboard';
-$string['pluginname_help'] = 'El format Blackboard V6+ permet importar a través d\'un fitxer zip les preguntes desades en el format d\'exportació del Blackboard. Ofereix un suport limitat per les versions 6 i 7 del Blackboard.';
+$string['pluginname_help'] = 'El format Blackboard V6+ permet importar a través d\'un fitxer zip les preguntes desades en el format d\'exportació del Blackboard. Ofereix un suport limitat per a les versions 6 i 7 del Blackboard.';
 $string['unhandledpresblock'] = 'Bloc de presentació no gestionat';

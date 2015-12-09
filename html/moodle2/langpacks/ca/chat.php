@@ -140,32 +140,32 @@ $string['updatemethod'] = 'Mètode d\'actualització';
 $string['updaterate'] = 'Freqüència d\'actualització:';
 $string['userlist'] = 'Llista d\'usuaris/àries';
 $string['usingchat'] = 'Ús del xat';
-$string['usingchat_help'] = '<p>El m&ograve;dul de xat t&eacute; algunes caracter&iacute;stiques que fan m&eacute;s una mica m&eacute;s agradables les tert&uacute;lies.</p>
+$string['usingchat_help'] = 'p>El mòdul de xat té algunes característiques que fan una mica més agradables les tertúlies.</p>
 
 <dl>
 
   <dt><b>Emoticones</b></dt>
 
-  <dd>Totes les emoticones que es poden teclejar en altres parts de Moodle tamb&eacute; es poden teclejar als xats i es visualitzaran correctament. Per exemple: :-) = <img alt="" src="pix/s/smiley.gif" />
+  <dd>Totes les emoticones que es poden teclejar en altres parts de Moodle també es poden teclejar als xats i es visualitzaran correctament. Per exemple: :-) = <img alt="" src="pix/s/smiley.gif" />
 
   </dd>
 
 
-  <dt><b>Enlla&ccedil;os</b></dt>
+  <dt><b>Enllaços</b></dt>
 
-  <dd>Les adreces d\'Internet es transformen autom&agrave;ticament en enlla&ccedil;os.</dd>
+  <dd>Les adreces d\'Internet es transformen automàticament en enllaços.</dd>
 
   <dt><b>Emocions</b></dt>
 
-  <dd>Podeu comen&ccedil;ar una l&iacute;nia amb "/me" o":" per expressar emocions. Per exemple, si el vostre nom &eacute;s Joan i escriviu ":riu!" o"/me riu!" aleshores tothom veur&agrave; "Joan riu!"</dd>
+  <dd>Podeu començar una línia amb «/me» o «:» per expressar emocions. Per exemple, si el vostre nom és Joan i escriviu «:riu!» o «/me riu!» aleshores tothom veurà «Joan riu!»</dd>
 
   <dt><b>Bips</b></dt>
 
-  <dd>Podeu enviar un so a una altra persona prement l\'enlla&ccedil; "bip" del costat del seu nom. Una drecera &uacute;til per fer bip a tothom alhora &eacute;s escriure "beep all".</dd>
+  <dd>Podeu enviar un so a una altra persona prement l\'enllaç «bip» del costat del seu nom. Una drecera útil per fer bip a tothom alhora és escriure «beep all».</dd>
 
 <dt><b>HTML</b></dt>
 
-  <dd>Si sabeu una mica de codi HTML, el podeu utilitzar per fer coses com ara inserir imatges en el text, fer sons o crear text de diverses mides i colors.</dd>
+  <dd>Si sabeu una mica de codi HTML, el podeu utilitzar per fer coses com ara inserir imatges en el text, fer sons o crear text de mides i colors diversos.</dd>
 
 </dl>';
 $string['viewreport'] = 'Visualitza les sessions de xat anteriors';

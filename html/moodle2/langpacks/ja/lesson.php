@@ -123,7 +123,7 @@ $string['correctresponse'] = '正解に対するレスポンス';
 $string['createaquestionpage'] = '問題ページを作成する';
 $string['credit'] = '承認';
 $string['customscoring'] = 'カスタムスコア';
-$string['customscoring_help'] = '<p>ここではそれそれの答えに評点を設定することができます。評点には、マイナスまたはプラスの値を使用することができます。インポートされた問題には、自動的に正解に1点、不正解に0点が割り当てられますが、インポートの後で変更することができます。</p>';
+$string['customscoring_help'] = 'この設定を有効にした場合、それぞれの答えには数字の点数 (プラスまたはマイナス) が与えられます。';
 $string['deadline'] = '終了日時';
 $string['defaultessayresponse'] = 'あなたの作文は、あなたの教師によって評定されます。';
 $string['deleteallattempts'] = 'すべてのレッスン受験を削除する';
@@ -139,8 +139,7 @@ $string['detailedstats'] = '詳細統計';
 $string['didnotanswerquestion'] = 'この問題に答えていません。';
 $string['didnotreceivecredit'] = '承認なし';
 $string['displaydefaultfeedback'] = 'デフォルトフィードバックを使用する';
-$string['displaydefaultfeedback_help'] = '<p>「<strong>Yes</strong>」を選択すると、問題のレスポンスが見つからない場合、デフォルトレスポンスの「正解です」および「不正解です」が使用されます。</p>
-<p>「<strong>No</strong>」を選択すると、 問題のレスポンスが見つからない場合、フィードバックは表示されません。レッスンを受験しているユーザは、自動的に次のレッスンページにリダイレクトされます。</p>';
+$string['displaydefaultfeedback_help'] = 'この設定を有効にした場合、問題のレスポンスが見つからない場合にデフォルトレスポンスの「正解です」および「不正解です」が使用されます。<';
 $string['displayhighscores'] = 'ハイスコアを表示する';
 $string['displayinleftmenu'] = 'メニューに表示しますか?';
 $string['displayleftif'] = 'メニューを表示するための最小評点';
@@ -149,7 +148,7 @@ $string['displayleftmenu'] = 'メニューを表示する';
 $string['displayleftmenu_help'] = 'この設定を有効にした場合、移動することのできるページ一覧を学生が表示できるようにします。';
 $string['displayofgrade'] = '評点を表示する (学生のみ)';
 $string['displayreview'] = '問題の再受験オプションを提供する';
-$string['displayreview_help'] = '有効にした場合、問題が不正解のときに学生が評点なしで再受験する、またはレッスンを続けるオプションを提供します。';
+$string['displayreview_help'] = 'この設定を有効にした場合、問題が不正解のときに学生が評点なしで再受験する、またはレッスンを続けるオプションを提供します。';
 $string['displayscorewithessays'] = '<p>自動評定によるあなたの評点は、{$a->tempmaxgrade} 点中 {$a->score} 点です。</p>
 <p> 作文問題 {$a->essayquestions} が評定され、後日あなたの最終評点に追加されます。</p>
 <p> 作文問題を除くあなたの現在の評点は、{$a->grade} 点中 {$a->score} 点です。</p>';
@@ -295,7 +294,7 @@ $string['minimumnumberofquestions'] = '最小問題数';
 $string['minimumnumberofquestions_help'] = 'ここでは活動の評定計算に使用する問題の最大数を指定します。';
 $string['missingname'] = 'ニックネームを入力してください。';
 $string['modattempts'] = '学生のレビューを許可する';
-$string['modattempts_help'] = '<p>ここでは解答内容を変更するため、学生がレッスンを後戻りすることができるようにします。</p>';
+$string['modattempts_help'] = 'この設定を有効にした場合、学生は再度レッスンを最初から通すことができます。';
 $string['modattemptsnoteacher'] = '学生レビューは学生のみに表示されます。';
 $string['modulename'] = 'レッスン';
 $string['modulename_help'] = 'レッスン活動において、教師は楽しくフレキシブルな方法でコンテンツおよび実践活動を提供することができます。教師は一連の線形のコンテンツパッケージまたは学習者に様々なパスまたはオプションを提供する教育活動のためにレッスンを使用することができます。どちらの場合でも、教師は参加を増やすこと、および多肢選択問題、組み合わせ問題、記述問題等の様々な問題を含むことで、理解を確かめることができます。学生の選択した答えおよび教師のレッスン開発により、学生を次のページに移動させる、、前のページに戻す、または完全に異なるパスにリダイレクトさせることができます。
@@ -361,7 +360,7 @@ $string['numberofpagesviewednotice'] = '解答済み問題数: {$a->nquestions} 
 $string['numerical'] = '数値問題';
 $string['ongoing'] = '進行中の評点を表示する';
 $string['ongoingcustom'] = '現在、あなたの評点は {$a->currenthigh} 点中 {$a->score} 点です。';
-$string['ongoing_help'] = '<p>この設定を「Yes」にすると、現時点で考えられる学生の合計評点が各ページに表示されます。例:  学生が評点5点の問題4問に答えて、1問が間違っている場合、表示される進行中の評点は、15/20点になります。</p>';
+$string['ongoing_help'] = 'この設定を有効にした場合、現時点で考えられる学生の合計評点が各ページに表示されます。';
 $string['ongoingnormal'] = 'あなたは {$a->viewed} 問中 {$a->correct} 問を正しく答えました。';
 $string['onpostperpage'] = '1評点あたり1回のみ登録してください。';
 $string['options'] = 'オプション';
@@ -401,7 +400,7 @@ $string['previewpagenamed'] = 'ページをプレビューする: {$a}';
 $string['previouspage'] = '前のページ';
 $string['processerror'] = '処理中にエラーが発生しました!';
 $string['progressbar'] = 'プログレスバー';
-$string['progressbar_help'] = '有効にした場合、レッスンページ最下部におおよその完了パーセンテージを表示したバーが表示されます。';
+$string['progressbar_help'] = 'この設定を有効にした場合レッスンページ最下部におおよその完了パーセンテージを表示したバーが表示されます。';
 $string['progressbarteacherwarning'] = 'プログレスバーは {$a} に表示されません。';
 $string['progressbarteacherwarning2'] = 'あなたはこのレッスンを編集できるため、プログレスバーは表示されません。';
 $string['progresscompleted'] = 'あなたは {$a}% のレッスンを完了しました。';
@@ -419,13 +418,7 @@ $string['report'] = 'レポート';
 $string['reports'] = 'レポート';
 $string['response'] = 'レスポンス';
 $string['retakesallowed'] = '再受験を許可する';
-$string['retakesallowed_help'] = '<p>ここでは学生がレッスンを1回以上または1回のみ受験できるか設定します。教師は、学生が完全に理解すべき教材がレッスンに含まれることを決定できます。この場合、教材の繰り返し閲覧を許可すべきです。しかし、教材がテストのような性質を持っている場合、学生に再受験を許可してはいけません。</p>
-
-<p>学生がレッスンの再受験を許可された場合、評定ページに表示される<b>評点</b>は、再受験の<b>平均</b>評点、またはレッスンの<b>最高</b>評点です。次のオプションでは、どちらの評定方法を使用するか選択します。</p>
-
-<p><b>問題分析</b>では、常にレッスンの最初の受験内容を使用し、学生による再受験は無視されますので注意してください。</p>
-
-<p>このオプションは、デフォルトで学生が再受験できない「No」に設定されています。 特別な事情がある場合のみ、このオプションを「Yes」にすることをお勧めします。</p>';
+$string['retakesallowed_help'] = 'この設定を有効にした場合、学生は1回以上レッスンを受験することができます。';
 $string['returnto'] = '{$a} に戻る';
 $string['returntocourse'] = 'コースに戻る';
 $string['review'] = 'レビュー';
@@ -449,7 +442,7 @@ $string['skip'] = 'ナビゲーションをスキップする';
 $string['slideshow'] = 'スライドショー';
 $string['slideshowbgcolor'] = 'スライドショー背景色';
 $string['slideshowheight'] = 'スライドショー高';
-$string['slideshow_help'] = '<p>この設定を「Yes」にすると、固定した幅、高さ、独自の背景色のスライドショーとして、レッスンを表示することができます。コンテンツページの幅または高さが指定した範囲を超えた場合、CSSベースのスクロールバーが表示されます。問題は、スライドショーモードでは「除外」され、デフォルトでページ (ブランチテーブル) のみスライド表示されます。オプションが選択された場合、デフォルト言語のラベル付きボタン「次へ」および「戻る」ボタンが、ページの右端および左端に表示されます。他のボタンは、スライドショー下部中央に配置されます。</p>';
+$string['slideshow_help'] = 'この設定を有効にした場合、レッスンは固定幅および高さのスライドショーとして表示されます。';
 $string['slideshowwidth'] = 'スライドショー幅';
 $string['startlesson'] = 'レッスンの開始';
 $string['studentattemptlesson'] = '{$a->lastname}, {$a->firstname} さんの受験回数:  {$a->attempt}';
@@ -483,7 +476,7 @@ $string['updatepagenamed'] = 'ページを更新する: {$a}';
 $string['usemaximum'] = '最大評点を使用する';
 $string['usemean'] = '評点平均を使用する';
 $string['usepassword'] = 'レッスンをパスワードで保護する';
-$string['usepassword_help'] = '<p>「Yes」を選択すると、パスワードの入力なしでは、学生はレッスンにアクセスできません。</p>';
+$string['usepassword_help'] = 'この設定を有効にした場合、レッスンにアクセスするためにパスワードが必要となります。';
 $string['viewgrades'] = '評点を表示する';
 $string['viewhighscores'] = 'ハイスコアリストを表示する';
 $string['viewreports'] = '{$a->student} の {$a->attempts} 件の受験を表示';

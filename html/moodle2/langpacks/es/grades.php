@@ -296,6 +296,7 @@ $string['gradeexportdisplaytype_desc'] = 'Las calificaciones pueden mostrarse co
 $string['gradeexportuserprofilefields'] = 'Campos de perfil de usuario en exportación de calificaciones';
 $string['gradeexportuserprofilefields_desc'] = 'Incluir estos campos de perfil de usuario en la exportación de calificaciones, separados por comas.';
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}$a->feedback';
+$string['gradegrademinmax'] = 'No recalcula calificaciones, aparece la calificación con el máximo y/o mínimo anterior hasta que esta se actualiza manualmente por el profesor';
 $string['gradehelp'] = 'Ayuda sobre las calificaciones';
 $string['gradehistorylifetime'] = 'Duración del historial de calificaciones';
 $string['gradehistorylifetime_help'] = 'Esta opción especifica durante cuánto tiempo desea mantener el historial de cambios en las tablas de calificaciones relacionadas. Se recomienda mantenerlo todo el tiempo posible. Si experimenta problemas de funcionamiento o tiene un espacio limitado en la base de datos, pruebe con un valor más bajo.';
@@ -308,6 +309,7 @@ $string['gradeitemadvanced_help'] = 'Seleccionar todos los ítems que se mostrar
 $string['gradeitemislocked'] = 'Esta actividad está bloqueada en el libro de calificaciones. Los cambios realizados a las calificaciones en esta actividad no se copiarán al libro de calificaciones hasta que no se desbloquée.';
 $string['gradeitemlocked'] = 'Calificación bloqueada';
 $string['gradeitemmembersselected'] = 'Excluídos de calificación';
+$string['gradeitemminmax'] = 'No recalcula las calificaciones pero aparece en relación al nuevo máximo y/o mínimo';
 $string['gradeitemnonmembers'] = 'Incluídos en calificación';
 $string['gradeitemremovemembers'] = 'Incluir en calificación';
 $string['gradeitems'] = 'Ítems de calificación';
@@ -462,11 +464,21 @@ $string['median'] = 'Mediana';
 $string['min'] = 'Más baja';
 $string['minimum_show'] = 'Mostrar la calificación mínima';
 $string['minimum_show_help'] = 'Calificación mínima se utiliza en el cálculo de las calificaciones y pesos. Si no se muestra su calificación mínima por defecto será cero y no podrá ser editada.';
+$string['minmaxtouse'] = 'Cálculo al cambiar el mínimo y/o el máximo de una calificación';
+$string['minmaxtouse_desc'] = 'Esta opción se aplica para controlar el comportamiento de las calificaciones de un elemento calificable cuando cambiamos su valor mínimo y/o máximo. Poniendo un ejemplo: <br />
+Creamos una tarea con una calificación máxima de 10. La alumna Carla, recibe una puntuación de 5 sobre 10 (50%).  La calificación máxima de la tarea es cambiada a 20.<br />
+- Si tenemos marcado "No recalcula las calificaciones pero aparece en relación al nuevo máximo y/o mínimo", Carla tendrá una puntuación de 5 sobre 20 (25%).<br />
+- Si tenemos marcado "No recalcula calificaciones, aparece la calificación con el máximo y/o mínimo anterior hasta que esta se actualiza manualmente por el profesor", Carla tendrá una puntuación de 5 sobre 10 (50%) hasta que el profesor recalifique manualmente a Carla sobre 20.<br/><br/>
+Se recomienda que esta configuración NO se modifique en horas punta de uso,  ya que se volverán a calcular todos las calificaciones, lo que puede dar lugar carga elevada del servidor.';
+$string['minmaxtouse_help'] = 'Esta opción se aplica para controlar el comportamiento de las calificaciones de un elemento calificable cuando cambiamos su valor mínimo y/o máximo. Poniendo un ejemplo: <br />
+Creamos una tarea con una calificación máxima de 10. La alumna Carla, recibe una puntuación de 5 sobre 10 (50%).  La calificación máxima de la tarea es cambiada a 20.<br />
+- Si tenemos marcado "No recalcula las calificaciones pero aparece en relación al nuevo máximo y/o mínimo", Carla tendrá una puntuación de 5 sobre 20 (25%).<br />
+- Si tenemos marcado "No recalcula calificaciones, aparece la calificación con el máximo y/o mínimo anterior hasta que esta se actualiza manualmente por el profesor", Carla tendrá una puntuación de 5 sobre 10 (50%) hasta que el profesor recalifique manualmente a Carla sobre 20.';
 $string['minmaxupgradefixbutton'] = 'Resolver incoherencias';
 $string['missingscale'] = 'La escala debe estar seleccionada';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Calificación';
-$string['modgradeerrorbadpoint'] = 'Valor de calificación no válido. Debe ser un número entero entre 0 y {$a}';
+$string['modgradeerrorbadpoint'] = 'Valor de calificación no válido. Debe ser un número entero entre 1 y {$a}';
 $string['modgradeerrorbadscale'] = 'Escala no válida. Por favor, asegúrese de seleccionar una escala de las incluidas abajo.';
 $string['modgrade_help'] = 'Seleccione el tipo de calificación que desea utilizar para esta actividad. Si elige "escala", a continuación podrá elegirla de una lista desplegable. Si prefiere "puntuación", podrá elegir la puntuación máxima para esta actividad.';
 $string['modgrademaxgrade'] = 'Puntuación máxima';
@@ -597,7 +609,7 @@ $string['rangesdecimalpoints_help'] = '<p>Especifica el número de puntos decima
 $string['rangesdisplaytype'] = 'Tipo de visualización del rango';
 $string['rangesdisplaytype_help'] = '<p>Especifica como visualizar los rangos. Sí Heredar es seleccionada,
    el tipo de visualización para cada columna es usado.</p>';
-$string['rank'] = 'Rango';
+$string['rank'] = 'Ranking';
 $string['rawpct'] = '% bruto';
 $string['real'] = 'Real';
 $string['realletter'] = 'Real (letra)';
@@ -685,7 +697,7 @@ $string['showrange'] = 'Mostrar rangos';
 $string['showrange_help'] = '¿Mostrar la columna de rangos?';
 $string['showranges'] = 'Mostrar rangos';
 $string['showranges_help'] = 'Muestra una fila que contiene el rango de calificaciones posibles para cada ítem en el informe del calificador.';
-$string['showrank'] = 'Mostrar rango';
+$string['showrank'] = 'Mostrar ranking';
 $string['showrank_help'] = '¿Mostrar la posición del estudiante en relación con el resto de la clase para cada elemento de calificación?';
 $string['showuserimage'] = 'Mostrar imágenes de perfil del usuario';
 $string['showuserimage_help'] = 'Mostrar o no la imagen del perfil del usuario junto a su nombre en el informe del calificador.';

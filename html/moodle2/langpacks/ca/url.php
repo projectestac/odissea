@@ -53,7 +53,7 @@ $string['modulename_help'] = 'El mòdul URL permet al professor subministrar un 
 
 Hi ha certes opcions de visualització per a l\'URL, com ara incrustat o en una nova finestra, i opcions avançades per passar informació —com ara el nom de l\'estudiant— a l\'URL, si és necessari.
 
-Noteu que els URL també es poden afegir a qualsevol altre recurs o activitat a través de l\'editor de textos.';
+Tingueu en compte que els URL també es poden afegir a qualsevol altre recurs o activitat a través de l\'editor de textos.';
 $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'Qualsevol pàgina del mòdul URL';
 $string['parameterinfo'] = '&amp;parameter=variable';

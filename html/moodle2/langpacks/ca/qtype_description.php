@@ -29,7 +29,7 @@ $string['informationtext'] = 'Text informatiu';
 $string['pluginname'] = 'Descripció';
 $string['pluginnameadding'] = 'S\'està afegint una descripció';
 $string['pluginnameediting'] = 'S\'està editant una descripció';
-$string['pluginname_help'] = 'Una descripció no és pròpiament cap tipus de pregunta. Simplement permet mostrar text sense haver de demanar cap resposta, de forma similar a una etiqueta a la pàgina del curs.
+$string['pluginname_help'] = 'Una descripció no és pròpiament cap tipus de pregunta. Permet mostrar text sense haver de demanar cap resposta, de forma similar a una etiqueta a la pàgina del curs.
 
-El text de la pregunta es mostrarà mentre responem el qüestionari i també a la pàgina de revisió. En canvi, la retroacció general només es mostra a la pàgina de revisió.';
+El text de la pregunta es mostrarà mentre responem el qüestionari i, també, a la pàgina de revisió. En canvi, la retroacció general només es mostra a la pàgina de revisió.';
 $string['pluginnamesummary'] = 'Aquest tipus de pregunta no és realment cap pregunta. És una manera d\'afegir al qüestionari algunes instruccions, rúbriques o altres continguts. S\'assembla a la manera en què podem emprar les etiquetes per afegir contingut a la pàgina del curs.';

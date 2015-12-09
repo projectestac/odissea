@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Inportatu kalifikazioa CSVtik';
+$string['pluginname'] = 'Itsatsi kalkulu-orritik';
+$string['userdata'] = 'Datuak formulario honetara kopiatzeko laguntza';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuració del tipus de repositori Youtube';
+$string['information'] = 'Obteniu una <a href="https://developers.google.com/youtube/v3/getting-started">clau API de Google</a> per al vostre lloc Moodle.';
 $string['pluginname'] = 'Vídeos de Youtube';
 $string['search'] = 'Cerca vídeos';
 $string['sortby'] = 'Ordenat per';

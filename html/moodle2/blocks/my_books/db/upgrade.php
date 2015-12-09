@@ -82,5 +82,23 @@ function xmldb_block_my_books_upgrade($oldversion=0) {
         upgrade_block_savepoint(true, 2015051900, 'my_books');
     }
 
+    if ($oldversion < 2015111700) {
+        unset_config('status', 'mybooks');
+        unset_config('toolbar', 'mybooks');
+        unset_config('menubar', 'mybooks');
+        unset_config('scrollbars', 'mybooks');
+        unset_config('activity_opening', 'mybooks');
+        unset_config('height', 'mybooks');
+        unset_config('width', 'mybooks');
+
+        $popupoptions = "scrollbars=1,menubar=0,toolbar=1,status=1,height=800,width=600";
+        $DB->set_field('rcontent', 'popup', 0, array('course' => SITEID));
+        $DB->set_field('rcontent', 'popup_options', $popupoptions, array('course' => SITEID));
+        $DB->set_field('rcontent', 'width', 800, array('course' => SITEID));
+        $DB->set_field('rcontent', 'height', 600, array('course' => SITEID));
+
+        upgrade_block_savepoint(true, 2015111700, 'my_books');
+    }
+
     return true;
 }

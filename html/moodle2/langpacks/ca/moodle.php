@@ -1035,7 +1035,7 @@ $string['log_excel_date_format'] = 'yyyy mmmm d h:mm';
 $string['loggedinas'] = 'Heu iniciat sessió com a {$a}';
 $string['loggedinasguest'] = 'Esteu accedint com a visitant';
 $string['loggedinnot'] = 'No heu iniciat sessió';
-$string['login'] = 'Entra';
+$string['login'] = 'Inicia la sessió';
 $string['loginalready'] = 'Ja heu iniciat sessió';
 $string['loginas'] = 'Inicia sessió com a';
 $string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «inicia sessió com a» per a utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
@@ -1055,7 +1055,7 @@ $string['loginsteps'] = 'L\'accés complet als cursos requereix que dediqueu un 
 $string['loginstepsnone'] = '<p>Per tal de tenir accés complet als cursos us heu de crear un compte d\'usuari.</p>
 <p>Consisteix simplement a triar un nom d\'usuari i una contrasenya amb els quals us identificareu, després, en aquesta pàgina.</p>
 <p>Si algú ja ha triat abans el mateix nom d\'usuari, n\'haureu de provar un altre diferent.</p>';
-$string['loginto'] = 'Entra en {$a}';
+$string['loginto'] = 'Inicia la sessió a {$a}';
 $string['logout'] = 'Surt';
 $string['logoutconfirm'] = 'Segur que voleu sortir?';
 $string['logs'] = 'Registres';

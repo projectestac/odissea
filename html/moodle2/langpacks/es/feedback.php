@@ -36,7 +36,7 @@ $string['anonymous_edit'] = 'Registrar nombres de usuario';
 $string['anonymous_entries'] = 'Respuestas anónimas';
 $string['anonymous_user'] = 'Usuario anónimo';
 $string['append_new_items'] = 'Agregar ítems nuevos';
-$string['autonumbering'] = 'Números automatizados';
+$string['autonumbering'] = 'Auto numerar preguntas';
 $string['autonumbering_help'] = 'Activa o desactiva la numeración automática para cada pregunta';
 $string['average'] = 'Promedio';
 $string['bold'] = 'Negrita';
@@ -69,7 +69,7 @@ $string['delete_item'] = 'Borrar pregunta';
 $string['delete_old_items'] = 'Borrar ítems antiguos';
 $string['delete_template'] = 'Borrar plantilla';
 $string['delete_templates'] = 'Borrar plantilla...';
-$string['depending'] = 'ítems dependientes';
+$string['depending'] = 'Dependencias';
 $string['depending_help'] = 'Ítems (preguntas de la encuesta) dependientes le permiten ver los elementos que dependen de los valores de otros elementos <br />
 <strong> Un ejemplo de cómo crearlos: </ strong> <br />
 <li> En primer lugar cree el ítem (la pregunta) de cuyo valor dependerán otros ítems. </li>
@@ -94,20 +94,22 @@ $string['dropdown_values'] = 'Valores de la lista desplegable';
 $string['drop_feedback'] = 'Eliminar de este curso';
 $string['edit_item'] = 'Editar pregunta';
 $string['edit_items'] = 'Editar preguntas';
-$string['email_notification'] = 'Enviar notificaciones por correo electrónico';
-$string['email_notification_help'] = 'Si está habilitado, los administradores recibirán notificaciones por correo electrónico al enviarse las respuestas a la encuesta.';
+$string['email_notification'] = 'Activar notificaciones de las entregas';
+$string['email_notification_help'] = 'Si está habilitado, los profesores recibirán notificaciones al enviarse las respuestas de la encuesta.';
 $string['emailteachermail'] = '{$a->username} ha cumplimentado y enviado la encuesta: \'{$a->feedback}\'
 
 Puede verla aquí
 
 {$a->url}';
-$string['emailteachermailhtml'] = '{$a->username} ha cumplimentado y enviado la encuesta: <i>\'{$a->feedback}\'</i><br/><br/>
-Puede verla <a href="{$a->url}">aquí/a>.';
+$string['emailteachermailhtml'] = '<p>{$a->username} ha cumplimentado y enviado la encuesta: <i>\'{$a->feedback}\'</i></p>
+<p>Está disponible <a href="{$a->url}">aquí</a>.</p>';
 $string['entries_saved'] = 'Sus respuestas han sido guardadas. Gracias.';
+$string['eventresponsedeleted'] = 'Respuesta eliminada';
+$string['eventresponsesubmitted'] = 'Respuesta enviada';
 $string['export_questions'] = 'Exportar preguntas';
 $string['export_to_excel'] = 'Exportar a Excel';
 $string['feedback:addinstance'] = 'Añadir una nueva encuesta';
-$string['feedbackclose'] = 'Cerrar la encuesta en';
+$string['feedbackclose'] = 'Permitir respuestas a';
 $string['feedback:complete'] = 'Cumplimente la encuesta';
 $string['feedback:createprivatetemplate'] = 'Crear plantilla privada';
 $string['feedback:createpublictemplate'] = 'Crear plantilla pública';
@@ -117,7 +119,7 @@ $string['feedback:edititems'] = 'Editar ítems';
 $string['feedback_is_not_for_anonymous'] = 'la encuesta no es anónima';
 $string['feedback_is_not_open'] = 'La encuesta no está disponible';
 $string['feedback:mapcourse'] = 'Asignar cursos a encuestas globales';
-$string['feedbackopen'] = 'Abrir la encuesta en';
+$string['feedbackopen'] = 'Permitir respuestas de';
 $string['feedback:receivemail'] = 'Recibir notificación por correo electrónico';
 $string['feedback:view'] = 'Ver una encuesta';
 $string['feedback:viewanalysepage'] = 'Ver página de análisis después del envío';
@@ -270,7 +272,7 @@ $string['there_are_no_settings_for_recaptcha'] = 'No se ha configurado el captch
 $string['this_feedback_is_already_submitted'] = 'Usted ya ha finalizado esta actividad.';
 $string['typemissing'] = 'valor ausente "type"';
 $string['update_item'] = 'Guardar cambios en la pregunta';
-$string['url_for_continue'] = 'URL para el botón Continuar';
+$string['url_for_continue'] = 'Enlace a la siguiente actividad';
 $string['url_for_continue_help'] = 'De manera predeterminada, cuando se envía una encuesta, el botón Continuar lleva a la página del curso. Usted puede definir aquí otra dirección URL de destino para el botón Continuar.';
 $string['use_one_line_for_each_value'] = '<br>¡Use una línea por cada respuesta!';
 $string['use_this_template'] = 'Utilizar esta plantilla';

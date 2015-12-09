@@ -58,8 +58,8 @@ $string['assignmentmail'] = '{$a->grader}已经就您提交的作业“{$a->assi
 您可以在您的作业下方看到：
 
 {$a->url}';
-$string['assignmentmailhtml'] = '{$a->grader}已经就您提交的作业“<i>{$a->assignment}</i>”给出了反馈意见。<br /><br />
-您可以在<a href="{$a->url}">您的作业</a>下方看到。';
+$string['assignmentmailhtml'] = '{$a->grader}已经就您提交的作业“<i>{$a->assignment}</i>”给出了反馈意见。<br />
+<br />您可以在<a href="{$a->url}">您的作业</a>下方看到。';
 $string['assignmentmailsmall'] = '{$a->grader}已经就您提交的作业“{$a->assignment}”填写了反馈意见，您可以打开作业查看它。';
 $string['assignmentname'] = '作业名称';
 $string['assignmentplugins'] = '作业插件';
@@ -276,7 +276,7 @@ $string['noattempt'] = '没有提交作业';
 $string['nofiles'] = '没有文件。';
 $string['nograde'] = '没有成绩。';
 $string['nolatesubmissions'] = '没有再收到迟交的作业';
-$string['nomoresubmissionsaccepted'] = '没有再收到更多的作业';
+$string['nomoresubmissionsaccepted'] = '只接受已被宽延期限的学生提交作业';
 $string['noonlinesubmissions'] = '这个作业不需要您在网上提交任何东西';
 $string['nosavebutnext'] = '向后';
 $string['nosubmission'] = '这个作业还没有任何提交';
@@ -317,7 +317,7 @@ $string['requireallteammemberssubmit_help'] = '如果启用此项，则必须要
 $string['requiresubmissionstatement'] = '要求学生接受交作业条款';
 $string['requiresubmissionstatement_help'] = '针对整个网站提交的作业，要求学生授受提交作业的条款。如果未启用该设置，可在每个作业设置中启用或停用提交作业条款。';
 $string['revealidentities'] = '展示学生身份';
-$string['revealidentitiesconfirm'] = '你确定要在此项作业里公开学生姓名？该操作无法撤消。一旦公开学生姓名将无法复原，成绩出现在分数栏里。';
+$string['revealidentitiesconfirm'] = '你确定要在此项作业里公开学生姓名？该操作无法撤消。一旦公开学生姓名将无法恢复，成绩会出现在分数栏里。';
 $string['reverttodraft'] = '退回为草稿状态。';
 $string['reverttodraftforstudent'] = '将该学生的作业退回到草稿状态：（学生ID={$a->id}，姓名={$a->fullname}）。';
 $string['reverttodraftshort'] = '退回到草稿';
@@ -394,7 +394,7 @@ $string['submissionstatus_'] = '未提交';
 $string['submissionstatus_draft'] = '草稿（未提交）';
 $string['submissionstatusheading'] = '作业提交状态';
 $string['submissionstatus_marked'] = '已评分';
-$string['submissionstatus_new'] = '新提交';
+$string['submissionstatus_new'] = '没有提交的作业';
 $string['submissionstatus_reopened'] = '已开启重交';
 $string['submissionstatus_submitted'] = '已经提交等待评分';
 $string['submissionsummary'] = '{$a->status}。最后修改时间： {$a->timemodified}';

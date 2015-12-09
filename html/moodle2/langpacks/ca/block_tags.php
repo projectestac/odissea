@@ -46,7 +46,7 @@ $string['entry'] = 'entrada';
 $string['jserror1'] = 'Les etiquetes han de contindre entre un i cinquanta caràcters. Si us plau ajusteu la vostra etiqueta.';
 $string['jserror2'] = 'Les etiquetes no poden contindre aquests caràcters especials
 barra obliqua inversa, menor que (<), o major que (>). Si us plau ajusteu la vostra etiqueta.';
-$string['login'] = 'entreu al sistema';
+$string['login'] = 'Inicia la sessió';
 $string['more'] = 'més...';
 $string['moreorder'] = 'Ordre:';
 $string['moreorderalpha'] = 'Alfabètic';

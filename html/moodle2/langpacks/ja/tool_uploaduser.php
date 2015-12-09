@@ -61,7 +61,7 @@ $string['uploadusers_help'] = 'テキストファイル経由でユーザをア�
 * 必須フィールド名は次のとおりです: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'アップロードユーザプレビュー';
 $string['uploadusersresult'] = 'アップロードユーザ結果';
-$string['uploaduser:uploaduserpictures'] = 'ユーザ写真をアップロードする';
+$string['uploaduser:uploaduserpictures'] = 'ユーザ画像をアップロードする';
 $string['useraccountupdated'] = 'ユーザが更新されました。';
 $string['useraccountuptodate'] = '最新ユーザ';
 $string['userdeleted'] = 'ユーザが削除されました。';

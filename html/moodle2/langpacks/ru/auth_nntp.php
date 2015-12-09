@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nntpchangepasswordurl_key'] = 'Адрес страницы смены пароля';
-$string['auth_nntpdescription'] = 'Этот метод использует NNTP-сервер для определения соответствия логина и пароля.';
-$string['auth_nntphost'] = 'Адрес NNTP-сервера. Используйте IP-адрес, не DNS-имя.';
-$string['auth_nntphost_key'] = 'Хост';
-$string['auth_nntpnotinstalled'] = 'Невозможно использовать NNTP-аутентификацию. Модуль PHP IMAP не установлен.';
+$string['auth_nntpdescription'] = 'Этот метод аутентификации использует NNTP-сервер для проверки соответствия логина и пароля.';
+$string['auth_nntphost'] = 'Адрес NNTP-сервера. Используйте IP-адрес, а не DNS-имя.';
+$string['auth_nntphost_key'] = 'Сервер';
+$string['auth_nntpnotinstalled'] = 'Невозможно использовать NNTP-аутентификацию. Не установлено расширение IMAP языка PHP.';
 $string['auth_nntpport'] = 'Номер порта сервера (обычно 119)';
 $string['auth_nntpport_key'] = 'Порт';
 $string['pluginname'] = 'Сервер NNTP';

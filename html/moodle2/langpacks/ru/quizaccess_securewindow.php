@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Правило защиты JavaScript при доступе к тесту';
+$string['pluginname'] = 'Правило доступа к тесту: JavaScript-защита';
 $string['popupwithjavascriptsupport'] = 'Полноэкранное всплывающее окно с защитой JavaScript';

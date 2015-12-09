@@ -26,8 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Onarpena';
+$string['featuredisabled'] = 'Plugin-instalatzailea desgaituta dago gune honetan.';
 $string['installaddon'] = 'Instalatu plugina!';
-$string['installaddons'] = 'Instalatu pluginak!';
+$string['installaddons'] = 'Instalatu pluginak';
 $string['installfromrepo'] = 'Instalatu pluginak Moodle-ren plugin-bilgunetik';
 $string['installfromzip'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromzipfile'] = 'ZIP paketea';

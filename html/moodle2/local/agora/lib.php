@@ -577,7 +577,10 @@ function external_db($service) {
     $host = $school_info['dbhost_'.$service];
     $username = $agora[$service]['username'];
     $password = $agora[$service]['userpwd'];
-    $prefix = $agora[$service]['prefix'].'_';
+    $prefix = $agora[$service]['prefix'];
+    if (!empty($prefix)) {
+        $prefix .= '_';
+    }
     $dbname = $agora[$service]['userprefix'].$school_info['id_'.$service];
 
     try {

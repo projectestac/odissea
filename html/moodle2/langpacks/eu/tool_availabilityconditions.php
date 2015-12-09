@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Kudeatu baldintzak';
-$string['pluginname'] = 'Eskuragarritasun baldintzen kudeaketa';
+$string['pluginname'] = 'Eskuragarritasun-baldintzen kudeaketa';

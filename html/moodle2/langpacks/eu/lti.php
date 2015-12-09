@@ -90,6 +90,7 @@ $string['embed_no_blocks'] = 'Enbotatu, blokerik gabe';
 $string['enableemailnotification'] = 'Bidali jakinarazteko e-postak';
 $string['enableemailnotification_help'] = 'Gaituz gero, ikasleek e-posta bidezko jakinarazpena jasoko dute bidalketak kalifikatzen direnean.';
 $string['errormisconfig'] = 'Tresna gaizki konfiguratu da. Mesedez, jarri harremanetan zure Moodle instalazioko kudeatzailearekin tresna ondo konfiguratzeko.';
+$string['existing_window'] = 'Existitzen den leihoa';
 $string['extensions'] = 'LTI luzapenaren zerbitzuak';
 $string['external_tool_type'] = 'Kanpoko tresna-mota';
 $string['external_tool_types'] = 'Kanpoko tresna-motak';

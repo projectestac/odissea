@@ -31,5 +31,5 @@ $string['page-course-view-topics'] = 'Jede Kurshauptseite im Themenformat';
 $string['page-course-view-topics-x'] = 'Jede Kursseite im Themenformat';
 $string['pluginname'] = 'Themenformat';
 $string['section0name'] = 'Allgemeines';
-$string['sectionname'] = 'Abschnitt';
+$string['sectionname'] = 'Thema';
 $string['showfromothers'] = 'Abschnitt anzeigen';

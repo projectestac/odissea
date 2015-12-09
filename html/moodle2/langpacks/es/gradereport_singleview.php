@@ -25,8 +25,32 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['all_grades'] = 'Todas las calificaciones';
+$string['assessmentname'] = 'Elemento de calificación';
+$string['blanks'] = 'Calificaciones vacías';
+$string['bulkappliesto'] = 'Para';
+$string['bulkfor'] = 'Calificaciones para {$a}';
+$string['bulkinsertvalue'] = 'Insertar valor';
+$string['bulklegend'] = 'Inserción masiva';
+$string['bulkperform'] = 'Realizar inserción masiva';
+$string['eventgradereportviewed'] = 'Informe de calificación de vista simple visto.';
 $string['exclude'] = 'Excluir';
 $string['excludeall'] = 'Excluir todas las calificaciones';
 $string['excludefor'] = 'Excluir para {$a}';
 $string['excludenone'] = 'No excluir calificaciones';
+$string['feedbackfor'] = 'Retroalimentación para {a}';
+$string['filtergrades'] = 'Mostrar calificaciones para {a}.';
+$string['gradefor'] = 'Calificación para {a}';
+$string['gradeitemcannotbeoverridden'] = 'Esta calificación no puede ser anulado.';
+$string['noscreens'] = 'No se pudo encontrar una pantalla de vista simple adecuada.';
+$string['notvalid'] = 'Es una una pantalla de Vista Simple válida: {$a}';
 $string['override'] = 'Anular';
+$string['overrideall'] = 'Anular todas las calificaciones';
+$string['overridefor'] = 'Anular {$a}';
+$string['overridenone'] = 'No sobreescribir ninguna calificación';
+$string['pluginname'] = 'Vista Simple';
+$string['savegrades'] = 'Guardando calificaciones';
+$string['savegradessuccess'] = 'Calificaciones aplicadas a {$a} elemento/s';
+$string['singleview:view'] = 'Ver informe';
+$string['summarygrade'] = 'Una tabla de usuarios, con columnas de rango, calificación, retroalimentación, y si se anula o excluye una calificación en particular.';
+$string['summaryuser'] = 'Una tabla de elementos calificables, con columnas de categoría, rango, calificación, retroalimentación, y si se anula o excluye una calificación en particular.';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID del client';
-$string['noauthtoken'] = 'No s\'ha rebut el testimoni d\'autenticació de google. Assegureu-vos que esteu permetent a Moodle accedir al vostre compte de Google.';
+$string['noauthtoken'] = 'No s\'ha rebut el testimoni d\'autenticació de Google. Assegureu-vos que esteu permetent que Moodle accedeixi al vostre compte de Google.';
 $string['nooauthcredentials'] = 'Es requereixen credencials OAuth';
 $string['nooauthcredentials_help'] = 'Per a utilitzar el connector de portafolis de Google Docs heu de configurar les credencials OAuth en la configuració del portafolis.';
 $string['nosessiontoken'] = 'No és possible l\'exportació a Google perquè no existieix el testimoni de sessió.';

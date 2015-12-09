@@ -50,6 +50,7 @@ $string['resultfailedconfig'] = '预计划分配配置错误';
 $string['resultfaileddeadline'] = '互动评价没有定义提交截止日期';
 $string['resultfailedphase'] = '互动评价不处于提交阶段';
 $string['resultvoid'] = '没有作业被分配';
+$string['resultvoiddeadline'] = '不可以在提交截止日之后';
 $string['resultvoidexecuted'] = '分配已经被执行';
 $string['scheduledallocationsettings'] = '预计划分配设置';
 $string['scheduledallocationsettings_help'] = '如果启用，预计划分配方式将会在提交阶段结束后自动分配作业进行评价。此阶段的结束时间在互动评价设置的“提交截止日期”中定义。

@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Testu lauko fitxategia';
+$string['timeexported'] = 'Azkenik jaitsi da ikastaro honetatik';
 $string['txt:publish'] = 'TXT kalifikazioen esportazioa argitaratu';
 $string['txt:view'] = 'Kalifikazioak esportatzeko testu laua erabili';

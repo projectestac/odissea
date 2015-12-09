@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = 'ODS kalifikazioen esportazioa argitaratu';
 $string['ods:view'] = 'Kalifikazioak esportatzeko OpenDocument erabili';
 $string['pluginname'] = 'OpenDocument-en kalkulu-orria';
+$string['timeexported'] = 'Azkenik jaitsi da ikastaro honetatik';

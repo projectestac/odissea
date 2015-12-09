@@ -3,6 +3,24 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 15.12.14
+---------------------------------------------------------------------------------------
+- Settings: Enable html5 audio and video
+- Do not block cache if cacheconfig is not writable
+- Marsupial: Solve problem opening activities in a popup from my_books
+- Updated LangPacks
+- Local Agora:
+  - Scripts: Repair undefined variable in filesystem cleanup
+  - Scripts: Add script to disable intranet login
+- Updated Local Mobile
+- Jclic: Changed version numbering method, now the first two numbers are the minimum Moodle required version
+- QV: Changed version numbering method, now the first two numbers are the minimum Moodle required version
+- Configurable reports: Updated
+- Added fist version of Monitor
+- Odissea GTAF sync: Solved warnings and deprecations
+- Deleted warnings on memcache
+
+
 Changes 15.11.16
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 2.8.9

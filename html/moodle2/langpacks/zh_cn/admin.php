@@ -95,7 +95,7 @@ $string['bookmarkalreadyexists'] = '您已经为此页设置了书签。';
 $string['bookmarkdeleted'] = '删除书签';
 $string['bookmarkthispage'] = '将本页加入书签';
 $string['cacheapplication'] = '应用程序缓存';
-$string['cacheapplicationhelp'] = '缓存的项目在所有用户中共享，在指定的 TTL 后过期。';
+$string['cacheapplicationhelp'] = '缓存的项目能被所有用户共享，期限由指定的TTL决定。';
 $string['cachejs'] = '缓存Javascript';
 $string['cachejs_help'] = 'JavaScript的缓存和压缩能大大提高页面的加载速度。我们强烈建议正式运营的网站使用它。开发者可能需要禁用此功能。
 ';
@@ -1076,7 +1076,7 @@ $string['updateautodeploy_desc'] = '如果启用，您可以直接从 Moodle 管
 $string['updateavailable'] = '有一个新版本的 Moodle 可用！';
 $string['updateavailabledetailslink'] = '去 {$a->url} 查看更多细节';
 $string['updateavailableforplugin'] = '您的一些插件有新版本可用！';
-$string['updateavailableinstall'] = '安装更新';
+$string['updateavailableinstall'] = '安装这一更新';
 $string['updateavailable_moreinfo'] = '更多信息...';
 $string['updateavailablenot'] = '您的 Moodle 代码是最新的！';
 $string['updateavailable_release'] = 'Moodle {$a}';
