@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Cualquier categoría';
+$string['apikey'] = 'Clave de la API';
 $string['autosvehicles'] = 'Coches y vehículos';
 $string['category'] = 'Categoría';
 $string['comedy'] = 'Comedia';
@@ -41,8 +42,8 @@ $string['newspolitics'] = 'Noticias y política';
 $string['numberofvideos'] = 'Número de videos';
 $string['peopleblogs'] = 'Gente y blogs';
 $string['petsanimals'] = 'Animales';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
 $string['scienceandtech'] = 'Ciencia y Tecnología';
 $string['sports'] = 'Deportes';
-$string['tag_youtube:addinstance'] = 'Añadir un nuevo bloque Youtube';
+$string['tag_youtube:addinstance'] = 'Añadir un nuevo bloque YouTube';
 $string['travel'] = 'Viajes y lugares';

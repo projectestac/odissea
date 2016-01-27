@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Adicionar página';
 $string['defaultpage'] = 'Configuração predefinida da Minha página principal';
-$string['defaultprofilepage'] = 'Predefinir página de perfil';
+$string['defaultprofilepage'] = 'Página de perfil predefinida';
 $string['delpage'] = 'Apagar página';
 $string['managepages'] = 'Gerir páginas';
 $string['mymoodle'] = 'Minha página principal';

@@ -238,6 +238,7 @@ $string['linkedfiledoesntexist'] = 'O ficheiro, convertido em hiperligação {$a
 $string['makechildof'] = 'Tornar subcategoria de \'{$a}';
 $string['makecopy'] = 'Gravar como nova pergunta';
 $string['maketoplevelitem'] = 'Tornar categoria de topo';
+$string['manualgradeinvalidformat'] = 'Esse número não é válido.';
 $string['manualgradeoutofrange'] = 'Esta nota está fora do intervalo válido.';
 $string['manuallygraded'] = 'Avaliada manualmente {$a->mark} com o comentário: {$a->comment}';
 $string['mark'] = 'Nota';

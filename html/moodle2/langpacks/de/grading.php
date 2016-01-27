@@ -70,6 +70,6 @@ $string['templateedit'] = 'Bearbeiten';
 $string['templatepick'] = 'Vorlage verwenden';
 $string['templatepickconfirm'] = 'Wollen Sie die Bewertungsvorlage \'{$a->formname}\' als Vorlage für das Bewertungsformular in \'{$a->component} ({$a->area})\' verwenden?';
 $string['templatepickownform'] = 'Formular als Vorlage verwenden';
-$string['templatesource'] = 'Ort: {$a-component} ({$a->area})';
+$string['templatesource'] = 'Ort: {$a->component} ({$a->area})';
 $string['templatetypeown'] = 'Eigenes Formular';
 $string['templatetypeshared'] = 'Geteilte Vorlage';

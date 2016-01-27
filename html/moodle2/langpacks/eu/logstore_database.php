@@ -32,6 +32,7 @@ $string['databasesettings'] = 'Datu-basearen ezarpenak';
 $string['databasetable'] = 'Datu-basearen taula';
 $string['other'] = 'Bestelako bat';
 $string['participating'] = 'Partaidetza';
+$string['pluginname'] = 'Kanpoko datu-basearen log-a';
 $string['read'] = 'Irakurri';
 $string['teaching'] = 'Irakaskuntza';
 $string['update'] = 'Eguneratu';

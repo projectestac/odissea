@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['currentsection'] = 'この週';
 $string['hidefromothers'] = '週を隠す';
 $string['page-course-view-weeks'] = 'ウィークリーフォーマット内のコースメインページすべて';
-$string['page-course-view-weeks-x'] = 'ウィークリーフォーマット内すべてのコースページ';
+$string['page-course-view-weeks-x'] = 'ウィークリーフォーマット内のコースページすべて';
 $string['pluginname'] = 'ウィークリーフォーマット';
 $string['section0name'] = '一般';
 $string['sectionname'] = '週';

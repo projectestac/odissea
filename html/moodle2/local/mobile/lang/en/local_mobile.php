@@ -31,3 +31,6 @@ $string['local_mobiletypeoflogin'] = 'Choose the type of login';
 $string['local_mobiletypeoflogin_key'] = 'Type of login';
 $string['loginintheapp'] = 'Via the app';
 $string['logininthebrowser'] = 'Via a browser window (for SSO plugins)';
+$string['mod_scorm_protectpackagedownloads'] = 'Protect package downloads';
+$string['mod_scorm_protectpackagedownloads_desc'] = 'If enabled, SCORM packages can be downloaded only if the user has the course:manageactivities capability. If disabled, SCORM packages can always be downloaded (by mobile or other means).';
+$string['mod_scorm_settings'] = 'SCORM module specific settings';

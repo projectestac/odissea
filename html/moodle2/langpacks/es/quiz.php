@@ -47,6 +47,7 @@ $string['addnewuseroverride'] = 'Agregar anulación de usuario';
 $string['addpagebreak'] = 'Añadir salto de página';
 $string['addpagehere'] = 'Agregar una página aquí';
 $string['addquestion'] = 'Agregar pregunta';
+$string['addquestionfrombankatend'] = 'Añadir del banco de preguntas al final';
 $string['addquestionfrombanktopage'] = 'Agregar del banco de preguntas a la página {$a}';
 $string['addquestions'] = 'Agregar preguntas';
 $string['addquestionstoquiz'] = 'Agregar preguntas al presente cuestionario';
@@ -55,6 +56,7 @@ $string['addrandom1'] = '<< Agregar';
 $string['addrandom2'] = 'preguntas aleatorias';
 $string['addrandomfromcategory'] = 'Agregar preguntas aleatorias de la categoría:';
 $string['addrandomquestion'] = 'Agregar pregunta aleatoria';
+$string['addrandomquestionatend'] = 'Añadir una pregunta aleatoria al final';
 $string['addrandomquestiontopage'] = 'Añadir una pregunta al azar a la página {$a}';
 $string['addrandomquestiontoquiz'] = 'Agregar pregunta aleatoria al cuestionario {$a}';
 $string['addselectedquestionstoquiz'] = 'Añadir preguntas seleccionadas para el cuestionario';
@@ -783,15 +785,15 @@ $string['reviewofpreview'] = 'Revisión de la vista previa';
 $string['reviewopen'] = 'Más tarde, mientras el cuestionario está aún abierto';
 $string['reviewoptions'] = 'Los estudiantes pueden revisar';
 $string['reviewoptionsheading'] = 'Revisar opciones';
-$string['reviewoptionsheading_help'] = 'Estas opciones controlan qué información pueden ver los estudiantes cuando revisan un intento de resolver el cuestionario o cuando consultan los informes del cuestionario.
+$string['reviewoptionsheading_help'] = 'Estas opciones controlan qué información pueden ver los estudiantes cuando revisan un intento del cuestionario o cuando consultan los informes del cuestionario.
 
-** Durante el intento: los ajustes solo son relevantes en algunas situaciones, como en el caso  "interactivo con varios intentos", que pueden mostrar información durante el intento.
+** Durante el intento** los ajustes solo son relevantes en algunas situaciones, como en el caso  "interactivo con varios intentos", que pueden mostrar información durante el intento.
 
-** Inmediatamente después del intento: los ajustes se aplican los dos primeros minutos después de que se haya pulsado "Enviar todo y terminar"
+** Inmediatamente después del intento** los ajustes se aplican los dos primeros minutos después de que se haya pulsado "Enviar todo y terminar".
 
-** Posteriormente, cuando el intento aún está abierto: los ajustes se aplican después de esto, y antes de la fecha de cierre del cuestionario
+** Posteriormente, cuando el intento aún está abierto** los ajustes se aplican después de esto, y antes de la fecha de cierre del cuestionario.
 
-** Después de que el intento esté cerrado: los ajustes se aplican después de que a fecha de cierre del cuestionario haya pasado. Si la prueba no tiene una fecha de cierre, este estado no se alcanza nunca.';
+** Una vez el cuestionario esté cerrado** los ajustes se aplican después de que la fecha de cierre del cuestionario haya pasado. Si la prueba no tiene una fecha de cierre, este estado no se alcanza nunca.';
 $string['reviewoverallfeedback'] = 'Retroalimentación global';
 $string['reviewoverallfeedback_help'] = 'La retroalimentación que se da al final del intento, según la puntuación final del alumno.';
 $string['reviewresponse'] = 'Revisar respuesta';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['linkedcourse'] = 'Disciplina ligada';
 $string['meta:config'] = 'Configurar instâncias de inscrição em meta-disciplinas';
 $string['meta:selectaslinked'] = 'Definir disciplina como meta-disciplina ligada';
-$string['meta:unenrol'] = 'Desiscrever utilizadores suspensos';
+$string['meta:unenrol'] = 'Desinscrever utilizadores suspensos';
 $string['nosyncroleids'] = 'Papéis que não são sincronizados';
 $string['nosyncroleids_desc'] = 'Por definição todas as atribuições de papéis feitas ao nível da disciplinas são sincronizadas da disciplina pai para as disciplinas filhas. Os papéis aqui indicados não serão sincronizados. Os papéis atuais serão atualizados durante a próxima execução do cron.';
 $string['pluginname'] = 'Meta-disciplinas';

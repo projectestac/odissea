@@ -70,6 +70,7 @@ $string['check_riskadmin_detailswarning'] = '<p>Mesedez, egiazta ezazu sistemako
 <p>Gomendagarria da kudeatzaile-rola sistemaren testuinguruan baino ez esleitzea. Ondoko erabiltzaileek izan dute kudeatzaile-rola esleituta:</p>{$a->unsupporte}';
 $string['check_riskadmin_name'] = 'Kudeatzaileak';
 $string['check_riskadmin_ok'] = 'Zerbitzariko {$a} kudeatzaile aurkituta.';
+$string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) berrikusi rol-esleipena</a>';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Erabiltzaileen datuen segurtasun-kopia';

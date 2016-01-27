@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Bezeroaren IDa';
-$string['noauthtoken'] = 'Ez da autentifikazio tokenik jaso google-tik. Mesedez, ziurtatu baimena duzula moodle-n zure google kontura sartzeko';
+$string['noauthtoken'] = 'Ez da autentifikazio tokenik jaso Google-tik. Mesedez, ziurtatu baimena duzula Moodle-n zure Google kontura sartzeko';
 $string['nosessiontoken'] = 'Saioko tokenik ez dago google-ra esportatzea debekatuz';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = 'Sekretua';

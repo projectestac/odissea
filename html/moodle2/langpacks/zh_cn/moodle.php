@@ -68,13 +68,13 @@ $string['addnewcategory'] = '添加新类别';
 $string['addnewcourse'] = '添加新课程';
 $string['addnewuser'] = '添加用户';
 $string['addnousersrecip'] = '把还没有进入这个{$a}的用户添加到收件人名单中';
-$string['addpagehere'] = '向此处添加页面';
+$string['addpagehere'] = '此处添加页面文字';
 $string['addresource'] = '添加资源...';
 $string['addresourceoractivity'] = '添加一个活动或资源';
 $string['addresourcetosection'] = '新增一个资源到小节 {$a}';
 $string['address'] = '地址';
 $string['addstudent'] = '添加学生';
-$string['addsubcategory'] = '添加子类别';
+$string['addsubcategory'] = '添加子类';
 $string['addteacher'] = '添加教师';
 $string['admin'] = '管理';
 $string['adminhelpaddnewuser'] = '手动创建一个新用户帐号';
@@ -162,8 +162,8 @@ $string['authenticateduserdescription'] = '所有已登录用户。';
 $string['authentication'] = '身份认证';
 $string['authenticationplugins'] = '身份认证插件';
 $string['autosubscribe'] = '讨论区自动订阅';
-$string['autosubscribeno'] = '不：不要自动订阅讨论区';
-$string['autosubscribeyes'] = '是：当我发帖时，就自动订阅该讨论区';
+$string['autosubscribeno'] = '不：不要自动为我订阅讨论区';
+$string['autosubscribeyes'] = '是：发帖后为我订阅该讨论区';
 $string['availability'] = '有效性';
 $string['availablecourses'] = '现有课程';
 $string['back'] = '返回';
@@ -286,7 +286,7 @@ $string['commentincontext'] = '在上下文中查找此条评论';
 $string['comments'] = '评论';
 $string['commentscount'] = '评论({$a})';
 $string['commentsnotenabled'] = '未启用评论功能';
-$string['commentsrequirelogin'] = '登录后才能查看评论';
+$string['commentsrequirelogin'] = '查看评论，需要你登录。';
 $string['comparelanguage'] = '比较并编辑当前语言';
 $string['complete'] = '完全';
 $string['completereport'] = '完整报表';
@@ -346,7 +346,7 @@ $string['coursecreators'] = '课程创建者';
 $string['coursecreatorsdescription'] = '课程创建者可以创建新课程。';
 $string['coursedeleted'] = '已删除课程 {$a}';
 $string['coursedisplay'] = '课程布局';
-$string['coursedisplay_help'] = '此设置决定整个课程是在一页显示还是分几页显示。该设置对某些课程格式没有影响，如 SCORM 格式。';
+$string['coursedisplay_help'] = '此设置决定整个课程是在一页显示或是分几页显示。';
 $string['coursedisplay_multi'] = '在每页显示一个小节';
 $string['coursedisplay_single'] = '在一页显示所有小节';
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
@@ -598,7 +598,7 @@ $string['emailcharset'] = 'Email字符集';
 $string['emailconfirm'] = '确认您的帐号';
 $string['emailconfirmation'] = '{$a->firstname}，您好：
 
-刚才您用您的电子邮箱地址在“{$a->sitename}上”申请了一个新帐号。
+刚才您用您的电子邮箱地址在“{$a->sitename}”上申请了一个新帐号。
 
 如果要确认您的新帐号，请点击以下链接：
 
@@ -1181,7 +1181,7 @@ $string['mymoodledashboard'] = '我的Moodle控制台';
 $string['myprofile'] = '个人资料';
 $string['name'] = '名称';
 $string['nameforlink'] = '您想怎么命名这个链接？';
-$string['nameforpage'] = '您想怎么命名这个页面？';
+$string['nameforpage'] = '名称';
 $string['navigation'] = '导航';
 $string['needed'] = '需要的';
 $string['networkdropped'] = '我们检测到你的网络不稳定或者已中断。<br/>注意如果不改善你的网络状况，你所作的更改可能没有保存。';
@@ -1609,7 +1609,8 @@ $string['selectedcategories'] = '选定的类别';
 $string['selectedfile'] = '已选文件';
 $string['selectednowmove'] = '{$a}个文件要被移动位置。现在请前往目的地址点击“移动文件到这里”';
 $string['selectfiles'] = '选择文件';
-$string['selectmoduletoviewhelp'] = '选择一个模块来查看帮助。';
+$string['selectmoduletoviewhelp'] = '选择一个活动或资源来查看其帮助。
+在活动或资源名称上双击可以快速添加。';
 $string['selectnos'] = '都选“不”';
 $string['selectperiod'] = '选择时间';
 $string['senddetails'] = '用Email发送我的详细资料';

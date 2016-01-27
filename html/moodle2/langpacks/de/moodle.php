@@ -517,19 +517,19 @@ $string['displayingfirst'] = 'Nur die ersten {$a->count} {$a->things} werden ang
 $string['displayingrecords'] = '{$a} Einträge werden angezeigt';
 $string['displayingusers'] = 'Nutzer/innen werden von {$a->start} bis {$a->end} angezeigt';
 $string['displayonpage'] = 'Auf einer Seite anzeigen';
-$string['dndcourse'] = 'Sie können diesen Kurs per Drag&Drop verschieben, um eine andere Reihenfolge zu erreichen oder ihn in ein anderes Kursverzeichnis zu legen.';
-$string['dndenabled_inbox'] = 'Bewegen Sie Dateien in dieses Feld (Drag&Drop)';
-$string['dndnotsupported'] = 'Drag&Drop wird nicht unterstützt';
-$string['dndnotsupported_help'] = 'Der Browser unterstützt kein Hochladen von Dateien per Drag&Drop. <br />Dieses Feature ist bei allen aktuellen Versionen von Chrome, Firefox und Safari verfügbar, außerdem beim Internet Explorer ab v10.';
-$string['dndnotsupported_insentence'] = 'Drag&Drop wird nicht unterstützt';
+$string['dndcourse'] = 'Sie können diesen Kurs per Drag-and-drop verschieben, um eine andere Reihenfolge zu erreichen oder ihn in ein anderes Kursverzeichnis zu legen.';
+$string['dndenabled_inbox'] = 'Bewegen Sie Dateien in dieses Feld (Drag-and-drop)';
+$string['dndnotsupported'] = 'Drag-and-drop wird nicht unterstützt';
+$string['dndnotsupported_help'] = 'Der Browser unterstützt kein Hochladen von Dateien per Drag-and-drop. <br />Dieses Feature ist bei allen aktuellen Versionen von Chrome, Firefox und Safari verfügbar, außerdem beim Internet Explorer ab v10.';
+$string['dndnotsupported_insentence'] = 'Drag-and-drop wird nicht unterstützt';
 $string['dnduploadwithoutcontent'] = 'Dieser Upload enthält keine Daten';
-$string['dndworkingfile'] = 'Dateien im Kurs einfügen (Drag&Drop)';
-$string['dndworkingfilelink'] = 'Links/URLs im Kurs einfügen (Drag&Drop)';
-$string['dndworkingfiletext'] = 'Dateien oder Text im Kurs einfügen (Drag&Drop)';
-$string['dndworkingfiletextlink'] = 'Dateien, Text oder Links im Kurs einfügen (Drag&Drop)';
-$string['dndworkinglink'] = 'Links im Kurs einfügen (Drag&Drop)';
-$string['dndworkingtext'] = 'Text im Kurs einfügen (Drag&Drop)';
-$string['dndworkingtextlink'] = 'Text oder Links im Kurs einfügen (Drag&Drop)';
+$string['dndworkingfile'] = 'Dateien im Kurs einfügen (Drag-and-drop)';
+$string['dndworkingfilelink'] = 'Links/URLs im Kurs einfügen (Drag-and-drop)';
+$string['dndworkingfiletext'] = 'Dateien oder Text im Kurs einfügen (Drag-and-drop)';
+$string['dndworkingfiletextlink'] = 'Dateien, Text oder Links im Kurs einfügen (Drag-and-drop)';
+$string['dndworkinglink'] = 'Links im Kurs einfügen (Drag-and-drop)';
+$string['dndworkingtext'] = 'Text im Kurs einfügen (Drag-and-drop)';
+$string['dndworkingtextlink'] = 'Text oder Links im Kurs einfügen (Drag-and-drop)';
 $string['documentation'] = 'Moodle-Dokumentation';
 $string['dontsortcategories'] = 'Kursbereiche nicht neu ordnen';
 $string['dontsortcourses'] = 'Kurse nicht neu ordnen';
@@ -1451,13 +1451,10 @@ $string['registrationcontact'] = 'Öffentliche Kontakte';
 $string['registrationcontactno'] = 'Nein, kein Kontaktformular bereitstellen';
 $string['registrationcontactyes'] = 'Ja, ein Kontaktformular für Interessierte bereitstellen';
 $string['registrationemail'] = 'E-Mail-Mitteilungen';
-$string['registrationinfo'] = '<p>Diese Seite ermöglicht es Ihnen, Ihre Website auf moodle.org zu registrieren.
-Die Registrierung ist kostenlos.
-Der Vorteil besteht darin, dass Sie in einer Mailingliste aufgenommen werden,
-um sicherheitsrelevante Informationen und  Nachrichten über neue Versionen zu bekommen.</p>
-<p>Standardmäßig werden Ihre Informationen nicht veröffentlicht oder an dritte Personen weitergegeben. Die einzigen Gründe, diese Informationen zu sammeln, sind Supportaspekte sowie der Wunsch, ein Statistik von der Moodle-Community als Gesamtheit abzubilden.</p>
-<p>Wenn Sie Ihre Moodle-Website registrieren, können Sie den Seitennamen, das Land und die URL zur öffentlichen Liste der Moodle-Seiten hinzufügen.</p>
-<p>Jede neue Registrierung wird manuell geprüft, bevor sie zur Liste hinzugefügt wird. Sie können Ihre Registrierung (und den Eintrag in der öffentlichen Liste) jederzeit aktualisieren, indem Sie dieses Formular erneut absenden.</p>';
+$string['registrationinfo'] = '<p>Diese Seite ermöglicht Ihnen die Registrierung Ihrer Website bei moodle.org. Die Registrierung ist kostenlos. Mit der Registrierung werden Sie in einer Mailingliste eingetragen, über die Sie regelmäßig Nachrichten zu Sicherheitsproblemen und neuen Versionen erhalten.</p>
+<p>Ihre Daten werden nicht veröffentlicht oder an dritte Personen weitergegeben. Die Daten werden erhoben, um Support anbieten zu können und eine Statistik zur Moodle-Community als Gesamtheit darzustellen.</p>
+<p>Wenn Sie Ihre Website registrieren, können Sie den Seitennamen, das Land und die URL in einer öffentlichen Liste von Moodle-Websites anzeigen.</p>
+<p>Jede Registrierung wird manuell geprüft, bevor sie zur Liste hinzugefügt wird. Sie können Ihre Registrierung aktualisieren, indem Sie dieses Formular erneut absenden.</p>';
 $string['registrationinfotitle'] = 'Registrierungsdaten';
 $string['registrationno'] = 'Nein, ich möchte keine E-Mails erhalten';
 $string['registrationsend'] = 'Registrierung an moodle.org senden';

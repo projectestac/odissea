@@ -286,7 +286,7 @@ $string['commentincontext'] = 'Encontrar este comentario en el contexto';
 $string['comments'] = 'Comentarios';
 $string['commentscount'] = 'Comentarios ({$a})';
 $string['commentsnotenabled'] = 'La característica de Comentarios no está habilitada';
-$string['commentsrequirelogin'] = 'Necesita identificarse para ver los comentarios';
+$string['commentsrequirelogin'] = 'Necesita identificarse para ver los comentarios.';
 $string['comparelanguage'] = 'Comparar y editar el presente idioma';
 $string['complete'] = 'Completado';
 $string['completereport'] = 'Informe completo';
@@ -1339,7 +1339,7 @@ $string['notenrolled'] = '{$a} no está matriculado en este curso.';
 $string['notenrolledprofile'] = 'Este perfil no está disponible porque el usuario no está matriculado en este curso.';
 $string['noteusercannotrolldatesoncontext'] = '<strong>Nota:<strong>La posibilidad de mover fechas al restaurar esta copia de seguridad se ha desactivado porque no tiene los permisos necesarios.';
 $string['noteuserschangednonetocourse'] = '<strong>Nota:<strong>Los usuarios de los cursos deben ser restaurados cuando se restauran los datos de usuario (en actividades, archivos o mensajes). Esta configuración ha sido cambiada para usted.';
-$string['nothingnew'] = 'Sin novedades desde el último acceso';
+$string['nothingnew'] = 'Sin actividad reciente';
 $string['nothingtodisplay'] = 'Nada que mostrar';
 $string['notice'] = 'Noticia';
 $string['noticenewerbackup'] = 'Esta copia de seguridad ha sido creada con Moodle {$a->backuprelease} ({$a->backupversion}) y es más reciente que la versión instalada de Moodle {$a->serverrelease} ({$a->serverversion}). Esto podría ocasionar algunas inconsistencias debido a que no se puede garantizar la compatibilidad retrospectiva de las copias de seguridad.';
@@ -1574,7 +1574,7 @@ $string['rssarticles'] = 'Número de artículos recientes RSS';
 $string['rsserror'] = 'Error al leer datos RSS';
 $string['rsserrorauth'] = 'Su enlace RSS no contiene una ficha de identificación válida.';
 $string['rsserrorguest'] = 'Esta fuente utiliza el acceso de invitados para acceder a los datos, pero el invitado no tiene permiso para leer los datos. Visite la ubicación original de la que esta fuente proviene (URL) como un usuario válido y obtenga de allí un nuevo enlace RSS.';
-$string['rsskeyshelp'] = 'Para garantizar la seguridad y la privacidad, las direcciones URL RSS feed contienen un \'testigo\' especial que identifica al usuario para el que son. Esto impide que otros usuarios accedan a áreas de Moodle a las que no deben tener acceso a través de fuentes RSS. </ P> Este \'testigo\' se crea automáticamente la primera vez que accede a un área de Moodle, que produce una fuente RSS. Si usted piensa que su \'testigo\' de fuente RSS ha sido comprometido de alguna manera, usted puede solicitar uno nuevo haciendo clic en el vínculo Restablecer enlace. Tenga en cuenta que la URL de la fuente RSS actual dejará de ser válida.';
+$string['rsskeyshelp'] = '<p>Para garantizar la seguridad y la privacidad, las direcciones URL RSS feed contienen un \'testigo\' especial que identifica al usuario para el que son. Esto impide que otros usuarios accedan a áreas de Moodle a las que no deben tener acceso.</p><p>Este \'testigo\' se crea automáticamente la primera vez que accede a un área que produce una fuente RSS. Si usted piensa que su \'testigo\' de fuente RSS ha sido comprometido de alguna manera, usted puede solicitar uno nuevo haciendo clic en el vínculo restablecer enlace. Tenga en cuenta que la URL de la fuente RSS actual dejará de ser válida.</p>';
 $string['rsstype'] = 'Canal RSS para esta actividad';
 $string['saveandnext'] = 'Guardar y mostrar siguiente';
 $string['savechanges'] = 'Guardar cambios';
@@ -1623,7 +1623,12 @@ $string['searchagain'] = 'Volver a buscar';
 $string['searchbyemail'] = 'Buscar por dirección email';
 $string['searchbyusername'] = 'Buscar por nombre de usuario';
 $string['searchcourses'] = 'Buscar cursos';
-$string['searchhelp'] = 'Puede buscar muchas palabras al mismo tiempo.<p>Si escribe una o más palabras, el buscador encuentra todos los mensajes que contengan esa o esas palabras en cualquier lugar.<br />Si escribe varias palabras separadas por el signo de adición (+) aparecerán los resultados que contengan todas esas palabras en el orden exacto en el que fueron escritas.<br />Si escribe un signo de sustracción (-) antes de una palabra se mostrarán todos los mensajes que contengan la o las otras plabras pero que no contengan la palabra antecedida por este signo.';
+$string['searchhelp'] = '<p>Puede buscar muchas palabras al mismo tiempo y puede refinar la búsqueda del siguiente modo:</p>
+<ul>
+<li>palabra - buscar cualquier coincidencia de ésta palabra en el texto.</li>
+<li>+palabra - se encontrarán sólo las palabras que coincidan exactamente.</li>
+<li>-palabra - no incluir resultados que contengan ésta palabra.</li>
+</ul>';
 $string['search_help'] = 'Para realizar una búsqueda básica de una o más palabras en cualquier lugar del texto, simplemente escríbalas separadas por espacios. Se usarán todas las palabras de más de dos caracteres.
 
 Para realizar una búsqueda avanzada, pulse el botón de búsqueda sin teclear nada en la caja de texto.';
@@ -1778,7 +1783,7 @@ $string['specifyname'] = 'Debe especificar un nombre.';
 $string['standard'] = 'Estándar';
 $string['starpending'] = '([*] = curso pendiente de aprobación)';
 $string['startdate'] = 'Fecha de inicio del curso';
-$string['startdate_help'] = 'Este ajuste determina el comienzo de la primera semana para un curso en formato semanal. También determina la fecha más temprana para la que existirá registro de las actividades del curso.';
+$string['startdate_help'] = 'Este ajuste determina el comienzo de la primera semana para un curso en formato semanal. También determina la fecha más temprana para la que existirá registro de las actividades del curso. Si el curso es restablecido y la fecha de inicio del curso modificada, todas las fechas en el curso se moverán en relación a la nueva fecha de inicio.';
 $string['startingfrom'] = 'Comienzo en';
 $string['startsignup'] = 'Crear nueva cuenta';
 $string['state'] = 'Estado/Municipio';
@@ -1968,7 +1973,7 @@ $string['userpic'] = 'Imagen del usuario';
 $string['users'] = 'Usuarios';
 $string['userselectorautoselectunique'] = 'Si sólo un usuario coincide con la búsqueda, seleccionarlo automáticamente';
 $string['userselectorpreserveselected'] = 'Mantener los usuarios seleccionados, incluso si no coinciden más con la búsqueda';
-$string['userselectorsearchanywhere'] = 'Coincidencia del texto de búsqueda en cualquier parte del nombre del usuario';
+$string['userselectorsearchanywhere'] = 'Coincidencia del texto de búsqueda en cualquier parte del los campos visibles';
 $string['usersnew'] = 'Usuarios nuevos';
 $string['usersnoaccesssince'] = 'Mostrar usuarios que han estado inactivos durante más de';
 $string['userswithfiles'] = 'Usuarios con archivos';

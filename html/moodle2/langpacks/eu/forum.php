@@ -489,7 +489,7 @@ $string['subscriptionmode_help'] = 'Foroan harpidetzen direnek bidalitako mezuen
 Oharra: Harpidetza-motan egindako edozein aldaketek eotrkizunean matrikulatzen diren erabiltzaileengan bakarrik izango du eragina, ez ordea jada matrikulaturik daudenengan.';
 $string['subscriptionoptional'] = 'Harpidetza aukeran';
 $string['subscriptions'] = 'Harpidetzak';
-$string['thisforumisthrottled'] = 'Foro honek mezu-kopuru mugatua du halako denbora tarte jakinean. Doikuntza {$a->blockafter} mezuetan egiten da {$a->blockperiod} -n';
+$string['thisforumisthrottled'] = 'Foro honek mezu-kopuru mugatua du denbora-tarte jakin batean. Une honetan honela ezarrita dago:   {$a->blockafter} mezu bidaltzea {$a->blockperiod}-(e)ko epean';
 $string['timedposts'] = 'Programatutako mezuak';
 $string['timestartenderror'] = 'Amaiera-data ezin da izan hasiera-data baino lehenagokoa';
 $string['trackforum'] = 'Nabarmendu irakurri gabeko mezuak';

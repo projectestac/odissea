@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addedotag'] = '「 {$a} 」がオフィシャルタグとして追加されました。';
 $string['addotags'] = 'オフィシャルタグを追加する';
-$string['addtagtomyinterests'] = '「 {$a} 」を私の「興味があること」に追加する';
+$string['addtagtomyinterests'] = '私の「興味のあること」に「 {$a} 」を追加する';
 $string['alltagpages'] = 'すべてのタグページ';
 $string['changename'] = 'タグ名を変更する';
 $string['changetype'] = 'タグタイプを変更する';
@@ -68,7 +68,7 @@ $string['page-tag-x'] = 'すべてのタグページ';
 $string['ptags'] = 'ユーザ定義タグ (カンマ区切り)';
 $string['relatedblogs'] = '最新のブログエントリ';
 $string['relatedtags'] = '関連タグ';
-$string['removetagfrommyinterests'] = '「 {$a} 」を私の「興味があること」から削除する';
+$string['removetagfrommyinterests'] = '「 {$a} 」を私の「興味のあること」から削除する';
 $string['reset'] = 'リセット';
 $string['resetflag'] = 'フラグをリセットする';
 $string['responsiblewillbenotified'] = '責任者に通知されます。';

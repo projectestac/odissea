@@ -36,4 +36,4 @@ $string['noguest'] = 'Los invitados no pueden acceder a la página \'Área perso
 $string['pinblocks'] = 'Configurar bloques actualizados para mi Moodle';
 $string['pinblocksexplan'] = 'Cualesquiera ajustes de bloque que configure aquí serán visibles (y no editables) por cualquier usuario de Moodle en su página general de \'Mi Moodle\'';
 $string['reseterror'] = 'Hubo un error al restablecer su página';
-$string['resetpage'] = 'Reseteo página a por defecto';
+$string['resetpage'] = 'Restablecer página a por defecto';

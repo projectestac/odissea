@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Incomplet';
-$string['pluginname'] = 'Interactiu amb múltiples intents';
+$string['pluginname'] = 'Interactiu amb intents múltiples';
 $string['triesremaining'] = 'Intents restants: {$a}';
 $string['tryagain'] = 'Inicia un altre intent';

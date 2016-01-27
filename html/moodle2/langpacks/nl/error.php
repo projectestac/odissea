@@ -390,6 +390,7 @@ $string['movecatcontentstoroot'] = 'De categorie-inhoud naar root verplaatsen is
 $string['movecategorynotpossible'] = 'Je kunt categorie \'{$a}\' niet naar de geselecteerde categorie verplaatsen.';
 $string['movecategoryownparent'] = 'Je kunt categorie \'{$a}\' geen bovenliggende categorie van zichzelf maken.';
 $string['movecategoryparentconflict'] = 'Je kunt categorie \'{$a}\' geen subcategorie maken van één van zijn eigen subcategorieën.';
+$string['mssqlrcsmodemissing'] = 'De databank gebruikt de verwachte READ_COMMITTED_SNAPSHOT niet, wat kan leiden tot foute resultaten, zeker onder hoge belasting. Schakel het in om juist gedrag van de databank te verzekeren. Kijk voor meer informatie in de documentatie op <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Installing MSSQL for PHP</a>.';
 $string['multiplerecordsfound'] = 'Meerdere records gevonden, slechts één verwacht.';
 $string['multiplerestorenotallow'] = 'Het meer dan eens uitvoeren van terugplaatsen is hier niet toegelaten!';
 $string['mustbeloggedin'] = 'Je moet aangemeld zijn om dit te doen';

@@ -143,6 +143,6 @@ $string['unblockcontact'] = 'Desbloca contacte';
 $string['unreadmessages'] = 'Missatges no llegits ({$a})';
 $string['unreadnewmessage'] = 'Missatges nous de {$a}';
 $string['unreadnewmessages'] = 'Missatges nous ({$a})';
-$string['userisblockingyou'] = 'Aquest usuari ha blocat els missatges enviats per vós';
+$string['userisblockingyou'] = 'Aquest usuari us ha blocat; no podeu enviar-li missatges';
 $string['userisblockingyounoncontact'] = '{$a} només accepta missatges de persones que siguin a la seva llista de contactes.';
 $string['userssearchresults'] = 'Usuaris trobats: {$a}';

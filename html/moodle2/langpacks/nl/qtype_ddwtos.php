@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmorechoiceblanks'] = 'Blanco voor {no} meer keuzes';
 $string['answer'] = 'Antwoord';
 $string['correctansweris'] = 'Het goede antwoord is: {$a}';
 $string['infinite'] = 'Oneindig';
+$string['pleaseputananswerineachbox'] = 'Zet een antwoord in elke box';
+$string['pluginname'] = 'Slepen en neerzetten in tekst';
+$string['pluginnameadding'] = 'Slepen en neerzetten in tekst toevoegen';
+$string['pluginnameediting'] = 'Slepen en neerzetten in tekst bewerken';

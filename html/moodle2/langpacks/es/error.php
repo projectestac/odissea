@@ -390,6 +390,7 @@ $string['movecatcontentstoroot'] = 'No se permite mover el contenido de la categ
 $string['movecategorynotpossible'] = 'No puede mover la categoría \'{$a}\' a la categoría seleccionada.';
 $string['movecategoryownparent'] = 'No puede hacer que la categoría \'{$a}\' sea "padre" de si misma.';
 $string['movecategoryparentconflict'] = 'No se puede hacer que la categoría \'{$a}\' sea una subcategoría de una de sus propias subcategorías.';
+$string['mssqlrcsmodemissing'] = 'La base de datos no está usando el modo READ_COMMITTED_SNAPSHOT esperado, lo que puede llevar a resultados erróneos, especialmente en escenarios de alta concurrencia. Por favor habilítelo para un correcto comportamiento. Para más información vea la documentación <a href="https://docs.moodle.org/es/Installing_MSSQL_for_PHP">Instalando MSSQL para PHP</a>.';
 $string['multiplerecordsfound'] = 'Múltiples registros encontrados, sólo un registro se esperaba.';
 $string['multiplerestorenotallow'] = 'Múltiples ejecuciones de restaurar no son permitidas!';
 $string['mustbeloggedin'] = 'Usted debe haber iniciado sesión para poder hacer esto';

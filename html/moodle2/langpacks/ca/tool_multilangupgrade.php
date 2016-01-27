@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['multilangupgradeinfo'] = 'El filtre de sintaxi multi-llengua va ser canviat en la versió in 1.8, <lang> l\'etiqueta no ja no és suportada. <br /><br />Exemple: <span lang="en" class="multilang">Hello!</span><span lang="es" class="multilang">Hola!</span><br /><br /><strong>Voleu actualitzar de versió la sintaxi en tots els texts ara ?</strong>';
-$string['pluginname'] = 'Actualització de versió multi-llengua';
+$string['pluginname'] = 'Actualització de la versió multilingüe';

@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = 'Bezeroaren IDa';
 $string['configplugin'] = 'Konfiguratu Google Drive plugina';
 $string['googledocs:view'] = 'Ikusi Google Drive biltegia';
-$string['oauth2upgrade_message_subject'] = 'Google Docs biltegi-pluginari buruzko informazio garrantzitsua';
+$string['oauth2upgrade_message_subject'] = 'Google Drive biltegi-pluginari buruzko informazio garrantzitsua';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = 'Sekretua';

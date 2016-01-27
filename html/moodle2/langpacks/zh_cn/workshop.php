@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aggregategrades'] = '重新计算成绩';
 $string['aggregation'] = '成绩汇总';
-$string['allocate'] = '分配作业';
+$string['allocate'] = '指派互评任务';
 $string['allocatedetails'] = '预计：{$a->expected}<br />已提交：{$a->submitted}<br />待分配：{$a->allocate}';
-$string['allocation'] = '分配作业';
+$string['allocation'] = '互评任务分配';
 $string['allocationconfigured'] = '分配已配置';
 $string['allocationdone'] = '分配完成';
 $string['allocationerror'] = '分配错误';

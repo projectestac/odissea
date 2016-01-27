@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'テキストファイル';
+$string['pluginname'] = 'プレインテキストファイル';
 $string['timeexported'] = 'このコースからの最新ダウンロード';
 $string['txt:publish'] = 'TXT評定エクスポートを公開する';
 $string['txt:view'] = 'テキスト評定エクスポートを使用する';

@@ -689,7 +689,7 @@ Er is een nieuw wachtwoord gevraagd voor jouw account \'{$a->username}\' op {$a-
 Ga naar volgend adres om deze vraag te bevestigen en een nieuw wachtwoord voor je account te krijgen:
 
 {$a->link}
-(Deze link is {$a->resetminutes} geldig vanaf het moment dat de aanvraag voor het nieuwe wachtwoord is gebeurd)
+(Deze link is {$a->resetminutes} minuten geldig vanaf het moment dat de aanvraag voor het nieuwe wachtwoord is gebeurd)
 
 Als je geen nieuw wachtwoord gevraagd hebt, dan hoef je verder niets te doen.
 

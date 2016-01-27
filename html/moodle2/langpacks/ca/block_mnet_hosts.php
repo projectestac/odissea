@@ -30,5 +30,5 @@ $string['error_localusersonly'] = 'El usuaris remots no poden saltar a altres se
 $string['error_roamcapabilityneeded'] = 'Als usuaris els cal la capacitat \'Anar a una aplicació remota mitjançant MNet\' per veure la llista de servidors de xarxa MNet.';
 $string['mnet_hosts:addinstance'] = 'Afegeix un bloc nou de servidors en xarxa';
 $string['mnet_hosts:myaddinstance'] = 'Afegeix un bloc nou de servidors en xarxa a la pàgina «El meu Moodle»';
-$string['pluginname'] = 'Servidors en Xarxa';
+$string['pluginname'] = 'Servidors en xarxa';
 $string['server'] = 'Servidor';

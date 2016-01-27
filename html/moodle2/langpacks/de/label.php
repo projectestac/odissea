@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Möglichkeit anbieten, einen Titel einzutragen, wenn Mediendateien per Drag&Drop in den Kurs geschoben werden.';
-$string['configdndresizeheight'] = 'Wenn ein Titel für eine Bilddatei angelegt wurde, die durch Drag&Drop in den Kurs übernommen wird, soll die Bilddatei in der Höhe angepasst werden wenn sie größer ist als diese Pixelzahl (0 für keinen Größenänderung)';
-$string['configdndresizewidth'] = 'Wenn ein Titel für eine Bilddatei angelegt wurde, die durch Drag&Drop in den Kurs übernommen wird, soll die Bilddatei in der Breite angepasst werden wenn sie größer ist als diese Pixelzahl (0 für keinen Größenänderung)';
-$string['dndmedia'] = 'Drag&Drop für Medien';
-$string['dndresizeheight'] = 'Drag&Drop Höhe anpassen';
-$string['dndresizewidth'] = 'Drag&Drop Beite anpassen';
+$string['configdndmedia'] = 'Möglichkeit anbieten, einen Titel einzutragen, wenn Mediendateien per Drag-and-drop in den Kurs geschoben werden.';
+$string['configdndresizeheight'] = 'Wenn ein Titel für eine Bilddatei angelegt wurde, die durch Drag-and-drop in den Kurs übernommen wird, soll die Bilddatei in der Höhe angepasst werden wenn sie größer ist als diese Pixelzahl (0 für keinen Größenänderung)';
+$string['configdndresizewidth'] = 'Wenn ein Titel für eine Bilddatei angelegt wurde, die durch Drag-and-drop in den Kurs übernommen wird, soll die Bilddatei in der Breite angepasst werden wenn sie größer ist als diese Pixelzahl (0 für keinen Größenänderung)';
+$string['dndmedia'] = 'Drag-and-drop für Medien';
+$string['dndresizeheight'] = 'Drag-and-drop Höhe anpassen';
+$string['dndresizewidth'] = 'Drag-and-drop Beite anpassen';
 $string['dnduploadlabel'] = 'Bild zur Kursseite hinzufügen';
 $string['dnduploadlabeltext'] = 'Textfeld zur Kursseite hinzufügen';
 $string['label:addinstance'] = 'Textfeld hinzufügen';

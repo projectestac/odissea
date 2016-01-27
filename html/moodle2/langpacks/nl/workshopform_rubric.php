@@ -35,5 +35,6 @@ $string['layoutgrid'] = 'Tabel';
 $string['layoutlist'] = 'Lijst';
 $string['levelgroup'] = 'Niveau cijfer en definitie';
 $string['levels'] = 'Niveaus';
+$string['mustbeunique'] = 'De cijferniveau\'s moeten uniek zijn binnen een criterion.';
 $string['mustchooseone'] = 'Je moet één van deze items selecteren';
 $string['pluginname'] = 'Rubriek';

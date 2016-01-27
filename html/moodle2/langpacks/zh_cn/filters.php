@@ -72,6 +72,7 @@ $string['nofiltersenabled'] = '本站没有打开任何过滤器插件。';
 $string['off'] = '关闭';
 $string['offbutavailable'] = '关闭，但是可以使用';
 $string['on'] = '打开';
+$string['profilefilterfield'] = '简介字段名';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = '移除所有过滤器';

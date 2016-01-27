@@ -99,7 +99,7 @@ $string['batchoperationunlock'] = '解锁';
 $string['batchsetallocatedmarker'] = '为{$a}位选定的用户安排评分者';
 $string['batchsetmarkingworkflowstateforusers'] = '为{$a}位选定的用户设定评分流程状态';
 $string['blindmarking'] = '评分时屏蔽学生信息';
-$string['blindmarking_help'] = '启用此项设置时，评分人看不到学生的身份信息。当有学生提交了作业或者有学生被打分时，此项设置会被锁定（无法修改）。';
+$string['blindmarking_help'] = '盲评，评分人看不到学生的身份信息。针对某项作业，一旦提交作业或者评分产生，盲评设置会被锁定。';
 $string['changegradewarning'] = '该作业有已评分的提交，修改成绩不会自动重新计算每个提交的分数。如果您确定要修改分数，那么您必须对现有提交重新评分。';
 $string['choosegradingaction'] = '评分动作';
 $string['choosemarker'] = '选择……';
@@ -108,7 +108,7 @@ $string['comment'] = '评论';
 $string['completionsubmit'] = '学生必须提交才可以完成此活动。';
 $string['configshowrecentsubmissions'] = '任何人可以看到最近活动报表中提交作业的信息';
 $string['confirmbatchgradingoperation'] = '您确定您要对 {$a->count} 名学生进行{$a->operation}操作吗?';
-$string['confirmsubmission'] = '您确定要提交作业并请求评分吗？一旦这么做，您将不能再修改作业。';
+$string['confirmsubmission'] = '您确定要提交作业以评分吗？提交后，不可再进行任何修改。';
 $string['conversionexception'] = '无法转换作业。例外情况是：{$a}。';
 $string['couldnotconvertgrade'] = '无法转换用户{$a}的作业成绩。';
 $string['couldnotconvertsubmission'] = '无法为用户{$a}转换提交的作业。';
@@ -137,7 +137,7 @@ $string['editaction'] = '动作…';
 $string['editattemptfeedback'] = '为第{$a}次提交的作业编辑成绩和反馈';
 $string['editingpreviousfeedbackwarning'] = '你正在为一个先前提交的作业编辑反馈。这是第{$a->attemptnumber} 次，总共有 {$a->totalattempts}次。';
 $string['editingstatus'] = '编辑状态';
-$string['editsubmission'] = '编辑我已提交的作业';
+$string['editsubmission'] = '编辑提交的作业';
 $string['editsubmission_help'] = '修改提交作业';
 $string['editsubmissionother'] = '对{$a}的提交进行编辑';
 $string['enabled'] = '开启';
@@ -232,7 +232,7 @@ $string['invalidgradeforscale'] = '所提供的分数对于当前等级不适用
 $string['lastmodifiedgrade'] = '最后修改（教师）';
 $string['lastmodifiedsubmission'] = '最后修改（学生）';
 $string['latesubmissions'] = '迟交的作业';
-$string['latesubmissionsaccepted'] = '只有被宽限迟交的学生，才可以继续提交作业';
+$string['latesubmissionsaccepted'] = '允许迟交，直到提交截止的时间';
 $string['locksubmissionforstudent'] = '禁止该生再提交作业：（id={$a->id}, 姓名={$a->fullname}）。';
 $string['locksubmissions'] = '锁定作业';
 $string['manageassignfeedbackplugins'] = '管理作业反馈插件';
@@ -263,11 +263,11 @@ $string['maxattempts_help'] = '学生能够重试提交的最多次数。重新�
 $string['maxgrade'] = '最高成绩';
 $string['messageprovider:assign_notification'] = '作业通知';
 $string['modulename'] = '作业';
-$string['modulename_help'] = '作业活动模块允许教师给学生分配任务，收集作业，并可以对作业评分和写评语。
+$string['modulename_help'] = '作业活动模块允许教师布置任务，收集作业并进行评分和反馈。
 
-学生可以提交任意电子文档（文件），比如文字处理文档、电子表格、图片或音频视频。此外，或同时，作业还可以要求学生直接在文本框里面输入文字。作业还可以仅仅用来提醒学生去做“现实”中的作业，例如手工作品，而不需要任何电子文档。
+学生可以提交任意数字化内容（文件），比如文字处理文档、电子表格、图片或音频视频。此外，或同时，作业还可以要求学生直接在文本编辑器里面输入文字。作业还可以用来提醒学生去完成“真实世界”中的作业，例如手工作品，而不需要任何电子文档。学生可以独自提交作业也可作为一个组的组员提交作业。
 
-批改作业时，老师可以写评语，还可以上传文件，例如加了批注的学生作业、有评语的文档或语音反馈。可以用数值或等级对作业评分，也可以用量规进行高级评分。最终成绩记录在成绩单中。';
+检查作业时，老师可以写反馈评语，还可以上传文件，例如加了批注的学生作业、有评语的文档或语音反馈。可以用数值或等级对作业评分，也可以用量规进行高级评分。最终评分记录在成绩单中。';
 $string['modulenameplural'] = '作业';
 $string['moreusers'] = '{$a} 更多…';
 $string['mysubmission'] = '我的作业：';
@@ -363,8 +363,8 @@ $string['submissionnotcopiedinvalidstatus'] = '提交的作业已经修改过，
 $string['submissionnoteditable'] = '学生不能编辑提交的作业';
 $string['submissionnotready'] = '此作业还没有做好接受提交准备：';
 $string['submissionplugins'] = '提交插件';
-$string['submissionreceipthtml'] = '您已经提交了作业“<i>{$a->assignment}</i>”<br /><br />
-您可以查看<a href="{$a->url}">作业</a>状态。';
+$string['submissionreceipthtml'] = '<p>您已经向“<i>{$a->assignment}</i>”提交了作业。</p>
+<p>您可以查看<a href="{$a->url}">作业</a>状态。</p>';
 $string['submissionreceiptotherhtml'] = '您已经提交了作业“<i>{$a->assignment}</i>”<br /><br />
 您可以查看<a href="{$a->url}">作业</a>状态。';
 $string['submissionreceiptothersmall'] = '您已经提交作业： {$a->assignment}';
@@ -396,7 +396,7 @@ $string['submissionstatusheading'] = '作业提交状态';
 $string['submissionstatus_marked'] = '已评分';
 $string['submissionstatus_new'] = '没有提交的作业';
 $string['submissionstatus_reopened'] = '已开启重交';
-$string['submissionstatus_submitted'] = '已经提交等待评分';
+$string['submissionstatus_submitted'] = '已经提交';
 $string['submissionsummary'] = '{$a->status}。最后修改时间： {$a->timemodified}';
 $string['submissionteam'] = '群组';
 $string['submissiontypes'] = '作业类型';

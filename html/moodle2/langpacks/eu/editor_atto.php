@@ -44,5 +44,5 @@ $string['settings'] = 'Atto tresna-barraren ezarpenak';
 $string['subplugintype_atto'] = 'Atto plugina';
 $string['subplugintype_atto_plural'] = 'Atto pluginak';
 $string['textrecovered'] = 'Testu honen zirriborroa automatikoki berrezarri da.';
-$string['toolbarconfig'] = 'Konfihuratu tresna-barra';
+$string['toolbarconfig'] = 'Konfiguratu tresna-barra';
 $string['warningstatus'] = 'Kontuz';

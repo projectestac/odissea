@@ -36,6 +36,6 @@ $string['pluginname'] = '○/×問題';
 $string['pluginnameadding'] = '○/×問題の追加';
 $string['pluginnameediting'] = '○/×問題の編集';
 $string['pluginname_help'] = '問題 (イメージを含む) の解答に対して、解答者は「○」または「×」を選択します。';
-$string['pluginnamesummary'] = '2つの選択肢「○」および「×」のみ持った、シンプルな形の多肢選択問題です。';
+$string['pluginnamesummary'] = '2つの選択肢「○」および「×」のみ持ったシンプルな形の多肢選択問題です。';
 $string['selectone'] = '1つ選択してください:';
 $string['true'] = '○';

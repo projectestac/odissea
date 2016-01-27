@@ -37,7 +37,7 @@ $string['accept_grades_help'] = 'Indique se o fornecedor da ferramenta pode adic
 
 Alguns fornecedores de ferramentas podem informar as notas ao Moodle com base em ações realizadas dentro da ferramenta, criando assim uma experiência mais integrada.
 
-Note que esta opção de configuração pode ser sobreposta na configuração da ferramenta.';
+Note que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['action'] = 'Ação';
 $string['active'] = 'Ativo';
 $string['activity'] = 'Atividade';
@@ -359,22 +359,25 @@ $string['share_email_admin_help'] = 'Especifique se o endereço de e-mail do uti
 O fornecedor de ferramenta pode precisar do e-mail para distinguir os utilizadores com o mesmo nome na UI, ou enviar e-mails
 para utilizadores com base nas suas ações dentro da ferramenta.';
 $string['share_email_help'] = 'Especifique se o endereço de e-mail do utilizador que inicia a ferramenta será partilhado junto com o fornecedor da ferramenta.
-O fornecedor de ferramenta pode precisar do e-mail para distinguir os utilizadores com o mesmo nome, ou enviar e-mails
-para utilizadores com base nas suas ações dentro da ferramenta.';
+
+O fornecedor de ferramenta pode precisar do e-mail para distinguir os utilizadores com o mesmo nome, ou enviar e-mails para utilizadores com base nas suas ações dentro da ferramenta.
+
+Note que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['share_name'] = 'Partilhar nome do utilizador com a ferramenta';
 $string['share_name_admin'] = 'Partilhar nome do utilizador com a ferramenta';
 $string['share_name_admin_help'] = 'Define se o nome completo do utilizador que inicia a ferramenta deve ser partilhado com o fornecedor da ferramenta.
 O fornecedor de ferramenta pode precisar dos nomes dos utilizadores para mostrar informações significativas dentro da ferramenta.';
 $string['share_name_help'] = 'Define se o nome completo do utilizador que inicia a ferramenta deve ser partilhado com o fornecedor da ferramenta.
+
 O fornecedor de ferramenta pode precisar dos nomes dos utilizadores para mostrar informações significativas dentro da ferramenta.
 
-Esta opção pode estar oculta das opções da ferramenta.';
+Note que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['share_roster'] = 'Permitir à ferramenta aceder ao roster da disciplina';
 $string['share_roster_admin'] = 'A ferramenta pode aceder ao roster da disciplina';
 $string['share_roster_admin_help'] = 'Define se a ferramenta pode aceder à lista de utilizadores inscritos em disciplinas a partir do qual este tipo de ferramenta é iniciado.';
 $string['share_roster_help'] = 'Define se a ferramenta pode aceder à lista de utilizadores inscritos nesta disciplina.
 
-Esta configuração pode ser alterada na configuração da ferramenta.';
+Note que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['show_in_course'] = 'Mostrar tipo de ferramenta ao criar instâncias de ferramentas';
 $string['show_in_course_help'] = 'Se selecionada, esta ferramenta de configuração irá aparecer na caixa de seleção "Tipo de "ferramenta LTI" quando os professores
 configurarem as ferramentas LTI nas suas disciplinas.

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Ekintza';
 $string['all'] = 'Guztiak';
+$string['clear'] = 'Garbitu';
 $string['component'] = 'Osagaia';
 $string['create'] = 'sortu';
 $string['delete'] = 'ezabatu';
@@ -43,5 +44,6 @@ $string['otherinformation'] = 'Bestelako informazioa:';
 $string['parentevent'] = 'Goragoko ekitaldia';
 $string['pluginname'] = 'Ekitaldi-zerrenda';
 $string['read'] = 'irakurri';
+$string['since'] = 'Noiztik';
 $string['update'] = 'eguneratu';
 $string['yes'] = 'bai';

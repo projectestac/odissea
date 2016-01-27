@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Importa qualificacions des de CSV';
-$string['pluginname'] = 'Enganxa des de full de càlcul';
+$string['pluginname'] = 'Enganxa des d\'un full de càlcul';

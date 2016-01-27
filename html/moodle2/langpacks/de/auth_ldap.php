@@ -52,7 +52,7 @@ $string['auth_ldap_expiration_desc'] = 'Setzen Sie \'Nein\' (\'no\'), um das Gü
 $string['auth_ldap_expiration_key'] = 'Gültigkeitsende';
 $string['auth_ldap_expiration_warning_desc'] = 'Diese Zahl gibt an, wie viele Tage vor dem Gültigkeitsende von Kennwörtern eine Warnung versendet wird.';
 $string['auth_ldap_expiration_warning_key'] = 'Warnung zum Gültigkeitsende';
-$string['auth_ldap_expireattr_desc'] = 'Optional: Merkmal für Gültigkeitsende ändern';
+$string['auth_ldap_expireattr_desc'] = 'Optional: Überschreibt die LDAP Attribute, die das Ablaufdatum für Kennwörter enthält.';
 $string['auth_ldap_expireattr_key'] = 'Merkmal für Gültigkeitsende';
 $string['auth_ldapextrafields'] = 'Die folgenden Felder sind optional. Im Nutzerprofil können automatisch einige Moodle-Felder mit ausgewählten Nutzerdaten aus <b>LDAP-Feldern</b> vorbelegt werden. <p>Wenn Sie die nachfolgenden Einträge leer lassen, wird nichts von LDAP übertragen und die Moodle-Voreinstellungen werden verwendet. In diesem Fall muss das Nutzerprofil beim ersten Login selbst fertig ausgefüllt werden. <p>Zusätzlich wird eingestellt, welche Felder im Nutzerprofil bearbeitbar sein sollen.';
 $string['auth_ldap_graceattr_desc'] = 'Optional: Merkmal für GraceLogin ändern';
@@ -75,7 +75,7 @@ $string['auth_ldap_noconnect_all'] = 'Das LDAP-Modul kann keine Serververbindung
 $string['auth_ldap_noextension'] = 'Die PHP-Extension LDAP ist nicht verfügbar. Um die LDAP-Authentifizierung nutzen zu können, muss die Extension LDAP installiert und aktiviert sein.';
 $string['auth_ldap_no_mbstring'] = 'Die PHP-Extension mbstring ist erforderlich, um Nutzer/innen in LDAP anzulegen.';
 $string['auth_ldapnotinstalled'] = 'Die LDAP-Authentifizierung kann nicht genutzt werden, weil die PHP-Extension LDAP nicht installiert ist.';
-$string['auth_ldap_objectclass'] = 'Optional: ObjectClass zur Nutzersuche in LDAP (ldap_user_type) ändern. Die Voreinstellung ist \'objectClass=*\' und liefert alle Objekte aus LDAP, was normalerweise nicht geändert werden muss.';
+$string['auth_ldap_objectclass'] = 'Optional: Überschreibt die ObjectClass zur Nutzersuche in LDAP (ldap_user_type). Die Voreinstellung muss normalerweise nicht geändert werden.';
 $string['auth_ldap_objectclass_key'] = 'ObjectClass';
 $string['auth_ldap_opt_deref'] = 'Legt fest wie Aliasbezeichnungen bei der Suche behandelt werden. Wählen Sie einen der folgenden Werte: \'Nein\' (ldap_deref_never) oder \'Ja\' (ldap_deref_always)';
 $string['auth_ldap_opt_deref_key'] = 'Aliase berücksichtigen';

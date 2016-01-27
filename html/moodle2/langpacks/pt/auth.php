@@ -45,6 +45,7 @@ $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alte
 $string['authloginviaemail'] = 'Permitir autenticação por e-mail';
 $string['authloginviaemail_desc'] = 'Permitir que os utilizadores usem o nome de utilizador ou endereço de e-mail (se for único) para se autenticarem no site.';
 $string['auth_multiplehosts'] = 'Podem ser especificados vários servidores OU endereços (por exemplo, serv1.com;serv2.com;serv3.com OU xxx.xxx.xxx.xxx;yyy.yyy.yyy.yyy)';
+$string['auth_notconfigured'] = 'O método de autenticação {$a} não está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Esgotou o número de tentativas disponíveis para atualizar o seu e-mail. O seu pedido de atualização foi cancelado.';
 $string['auth_passwordisexpired'] = 'A sua senha expirou. Quer alterá-la agora?';
 $string['auth_passwordwillexpire'] = 'A sua senha vai expirar dentro de {$a} dias. Quer alterá-la agora?';

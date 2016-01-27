@@ -27,22 +27,22 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['encoding'] = 'ファイルエンコーディング';
 $string['expiredaction'] = '登録期限切れ処理';
-$string['expiredaction_help'] = 'ユーザの登録期限が切れた場合、実行される処理を選択してください。コース登録解除中、一部のユーザデータおよび設定が削除されてしまうことに留意してください。';
-$string['filelockedmail'] = 'ファイルベースのユーザ登録で使用しているテキストファイル ({$a}) は、cronプロセスにより削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
-$string['filelockedmailsubject'] = '重大なエラー: エンロールメントファイル';
+$string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除中に一部のユーザデータおよび設定が削除されてしまうことに留意してください。';
+$string['filelockedmail'] = 'ファイルベースのユーザ登録で使用しているテキストファイル ({$a}) はcronプロセスにより削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
+$string['filelockedmailsubject'] = '重大なエラー: 登録ファイルファイル';
 $string['flatfile:manage'] = 'ユーザ登録を手動で管理する';
-$string['flatfile:unenrol'] = 'コースからユーザを手動で登録解除する';
+$string['flatfile:unenrol'] = 'ユーザをコースから手動で登録解除する';
 $string['location'] = 'ファイルロケーション';
 $string['location_desc'] = '登録ファイルのフルパスを指定してください。処理の後、ファイルは自動的に削除されます。';
 $string['mapping'] = 'フラットファイルロールマッピング';
 $string['messageprovider:flatfile_enrolment'] = 'フラットファイル登録メッセージ';
 $string['notifyadmin'] = '管理者に通知する';
-$string['notifyenrolled'] = '受講登録済みユーザに通知する';
+$string['notifyenrolled'] = '登録済みユーザに通知する';
 $string['notifyenroller'] = '登録に責任のあるユーザに通知する';
 $string['pluginname'] = 'フラットファイル (CSV)';
 $string['pluginname_desc'] = 'この方法ではあなたが指定した場所に置いた特別にフォーマットされたテキストファイルを繰り返しチェックおよび処理します。ファイルはカンマ区切りのファイル、1行あたり4個または6個のフィールドを持つと想定されます:
 
-* 処理, ロール, IDナンバー (ユーザ), IDナンバー (コース) [, 開始日時, 終了日時]
+処理, ロール, IDナンバー (ユーザ), IDナンバー (コース) [, 開始日時, 終了日時]
 
 詳細:
 

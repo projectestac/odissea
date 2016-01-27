@@ -47,7 +47,7 @@ $string['addnewuseroverride'] = 'ユーザオーバーライドを追加する';
 $string['addpagebreak'] = '改ページを追加する';
 $string['addpagehere'] = 'ここにページを追加する';
 $string['addquestion'] = '問題を追加する';
-$string['addquestionfrombankatend'] = '最後に問題バンクから追加する';
+$string['addquestionfrombankatend'] = '問題バンクから末尾へ追加する';
 $string['addquestionfrombanktopage'] = '問題バンクからページ {$a} に追加する';
 $string['addquestions'] = '問題を追加する';
 $string['addquestionstoquiz'] = '現在の小テストに問題を追加する';
@@ -349,10 +349,10 @@ $string['exportquestions'] = '問題をファイルにエクスポートする';
 $string['extraattemptrestrictions'] = '受験に関する特別制限';
 $string['false'] = '×';
 $string['feedback'] = 'フィードバック';
-$string['feedbackerrorboundaryformat'] = 'フィードバック評点境界は、パーセンテージまたは数値で入力してください。あなたが入力した境界 {$a} は認められません。';
-$string['feedbackerrorboundaryoutofrange'] = 'フィードバック評点境界は、0%から100%の間で入力してください。あなたが入力した境界 {$a} は範囲外です。';
-$string['feedbackerrorjunkinboundary'] = 'あなたは評点境界ボックスに対して、ギャップなしで入力する必要があります。';
-$string['feedbackerrorjunkinfeedback'] = 'フィードバックボックスには、ギャップなしで入力してください。';
+$string['feedbackerrorboundaryformat'] = 'フィードバック評点境界はパーセンテージまたは数値で入力してください。あなたが入力した境界 {$a} は認められません。';
+$string['feedbackerrorboundaryoutofrange'] = 'フィードバック評点境界は0%から100%の間で入力してください。あなたが入力した境界 {$a} は範囲外です。';
+$string['feedbackerrorjunkinboundary'] = 'あなたは評点境界ボックスに対してギャップなしで入力する必要があります。';
+$string['feedbackerrorjunkinfeedback'] = 'フィードバックボックスには空白なしで入力してください。';
 $string['feedbackerrororder'] = 'フィードバック評点境界は最初に最高値から順に入力してください。あなたが入力した境界 {$a} の順番は正しくありません。';
 $string['file'] = 'ファイル';
 $string['fileformat'] = 'ファイルフォーマット';
@@ -573,20 +573,7 @@ $string['outof'] = '{$a->grade} / {$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade} / {$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade} / {$a->maxgrade}';
 $string['overallfeedback'] = '全体のフィードバック';
-$string['overallfeedback_help'] = '<p>全体のフィードバックは小テストの受験終了後、学生に表示されるテキストです。表示されるテキストは学生の評点によって表示内容を変えることができます。</p>
-
-<p>例えば、あなたが下記のように入力したとします:</p>
-
-<p>評点境界: 100%<br />
-フィードバック: よくできました。<br />
-評点境界: 40%<br />
-フィードバック: 今週の課題をもう一度学習してください。<br />
-...<br />
-評点境界: 0%</p>
-
-<p>この場合、評点が100%から40%の学生にはメッセージ「よくできました。」が表示され、39.9%から0%の学生には他のメッセージが表示されます。つまり、評点境界は評点の幅を決定し、該当する範囲に入る評点に対して、それぞれのフィードバックが表示されます。</p>
-
-<p>評点境界には「31.41%」のようなパーセンテージ、または「7」のような数値を指定することができます。あなたの小テストが最大評点10点で評点境界が7の場合、7/10またはそれ以上を意味します。</p>';
+$string['overallfeedback_help'] = '全体のフィードバックは小テストの受験終了後、学生に表示されるテキストです。表示されるテキストは学生の評点によって表示内容を変えることができます。';
 $string['overdue'] = '期限切れ';
 $string['overduehandling'] = '制限時間を経過した場合';
 $string['overduehandlingautoabandon'] = '受験は制限時間内に送信される必要がありますが、そうでない場合はカウントされません';
@@ -753,9 +740,9 @@ $string['reportshowonly'] = '受験のみ表示する';
 $string['reportshowonlyfinished'] = 'ユーザごとに最大1件の終了した受験を表示する ({$a})';
 $string['reportsimplestat'] = '単純統計';
 $string['reportusersall'] = '小テストを受験したユーザすべて';
-$string['reportuserswith'] = '小テストを受験したことのある受講登録済みユーザ';
+$string['reportuserswith'] = '小テストを受験したことのある登録済みユーザ';
 $string['reportuserswithorwithout'] = '小テストを受験したことのある、または受験したことのない受講登済み録ユーザ';
-$string['reportuserswithout'] = '小テストを受験したことのない受講登録済みユーザ';
+$string['reportuserswithout'] = '小テストを受験したことのない登録済みユーザ';
 $string['reportwhattoinclude'] = 'レポートに含む内容';
 $string['requirepassword'] = 'パスワード';
 $string['requirepassword_help'] = 'ここにパスワードを設定した場合、参加者は小テストを受ける前に同じパスワードを入力する必要があります。';
@@ -906,7 +893,7 @@ $string['subplugintype_quizaccess_plural'] = 'アクセスルール';
 $string['subplugintype_quiz_plural'] = 'レポート';
 $string['substitutedby'] = 'が次の値と置換されます:';
 $string['summaryofattempt'] = '受験概要';
-$string['summaryofattempts'] = 'あなたの前回受験の概要';
+$string['summaryofattempts'] = 'あなたの前回の受験概要';
 $string['temporaryblocked'] = 'あなたは小テストを一時的に受験することができません。<br /> 次に小テストを受験できる日時は:';
 $string['theattempt'] = '受験';
 $string['theattempt_help'] = '学生が受験すべてをレビューできるかどうか設定します。';
@@ -959,5 +946,5 @@ $string['windowclosing'] = 'このウィンドウは間もなく閉じられま�
 $string['withsummary'] = '(統計概要を含む)';
 $string['wronguse'] = 'あなたはこのページをそのように使うことはできません。';
 $string['xhtml'] = 'XHTML';
-$string['youneedtoenrol'] = 'この小テストを受験する前に、あなたがこのコースに受講登録している必要があります。';
+$string['youneedtoenrol'] = 'この小テストを受験する前に、あなたがこのコースに登録している必要があります。';
 $string['yourfinalgradeis'] = 'あなたの小テスト最終評点は {$a} です。';

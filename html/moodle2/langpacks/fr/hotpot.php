@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'Abandonné';
+$string['abandonhotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici, mais vous ne pourrez pas reprendre ou redémarrer cette activité plus tard.';
 $string['activitygrade'] = 'Note de l\'activité';
 $string['added'] = 'Ajouté';
 $string['addquizchain'] = 'Ajouter un enchaînement d\'activités';
@@ -301,6 +302,17 @@ $string['mediafilter_moodle'] = 'Filtre multimédia standard de Moodle';
 $string['migratingfiles'] = 'Migration des fichiers du test HotPotatoes';
 $string['missingsourcetype'] = 'Fichier source manquant pour l\'enregistrement HotPotatoes';
 $string['modulename'] = 'Hot Potatoes';
+$string['modulename_help'] = 'Le module HotPot permet aux enseignants de distribuer du matériel d\'apprentissage interactif à leurs étudiants via Moodle et afficher des rapports sur les réponses et les résultats des élèves.
+
+Une activité HotPot unique se compose d\'une page d\'entrée optionnelle, un seul exercice, et une page de sortie optionnelle. L\'exercice peut être une page Web statique ou une page Web interactive qui offre aux élèves du contenu texte, audio et visuels et enregistre leurs réponses. L\'exercice est créé sur ordinateur en utilisant le logiciel de création de l\'enseignant, puis téléchargé sur Moodle.
+
+Une activité HotPot peut gérer les exercices créés avec les logiciels de création qui suivent :
+
+* Hot Potatoes (version 6)
+* Qedoc
+* Xerte
+* iSpring
+* Un éditeur HTML';
 $string['modulenameplural'] = 'Hot Potatoes';
 $string['nameadd'] = 'Nom';
 $string['nameadd_help'] = 'Le nom peut être un texte saisi par l\'enseignant ou généré automatiquement.

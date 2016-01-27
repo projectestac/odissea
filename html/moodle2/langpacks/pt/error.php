@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alreadyloggedin'] = 'Está autenticado como {$a},precisa de sair antes de se autenticar como um utilizador diferente.';
+$string['alreadyloggedin'] = 'Está autenticado como {$a}, precisa de sair antes de se autenticar como um utilizador diferente.';
 $string['authnotexisting'] = 'O módulo de autorização não existe';
 $string['backupcontainexternal'] = 'Esta cópia de segurança contém servidores de rede externos Moodle que não estão configurados localmente';
 $string['backuptablefail'] = 'As tabelas da cópia de segurança não foram configuradas com sucesso!';
@@ -304,7 +304,7 @@ $string['invalidcourselevel'] = 'Nível de contexto inválido';
 $string['invalidcoursemodule'] = 'O ID do módulo da disciplina é inválido';
 $string['invalidcoursenameshort'] = 'O nome curto da disciplina é inválido';
 $string['invaliddata'] = 'Os dados submetidos são inválidos';
-$string['invaliddatarootpermissions'] = 'Foram detetadas permissões inválidas na pasta "{$CFG->dataroot}". Contacte o administrador para alterar as permissões desta pasta.';
+$string['invaliddatarootpermissions'] = 'Foram detetadas permissões inválidas ao tentar criar a pasta. Ative a exibição de mensagens de erro para mais detalhes.';
 $string['invaliddevicetype'] = 'O tipo é inválido';
 $string['invalidelementid'] = 'ID do elemento incorreto!';
 $string['invalidentry'] = 'Esta não é uma entrada válida!';
@@ -388,6 +388,7 @@ $string['movecatcontentstoroot'] = 'Mover os conteúdos da categoria para a raiz
 $string['movecategorynotpossible'] = 'Não pode mover a categoria \'{$a}\' para a categoria selecionada.';
 $string['movecategoryownparent'] = 'Não pode fazer da categoria \'{$a}\' uma categoria ascendente de si mesma.';
 $string['movecategoryparentconflict'] = 'Não pode fazer da categoria \'{$a}\' uma subcategoria de uma das suas próprias subcategorias.';
+$string['mssqlrcsmodemissing'] = 'A base de dados não está a utilizar o modo READ_COMMITTED_SNAPSHOT esperado, o que poderá conduzir a resultados inesperados, principalmente em cenários de alta concorrência. Por favor proceda à sua ativação para um funcionamento correto. Para mais informações, consulte a documentação <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Instalação MSSQL para PHP</a>.';
 $string['multiplerecordsfound'] = 'Foram encontrados vários registos, apenas era esperado um registo.';
 $string['multiplerestorenotallow'] = 'Não são permitidas várias restaurações!';
 $string['mustbeloggedin'] = 'Tem que ter uma sessão ativa para fazer isto';

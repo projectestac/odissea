@@ -63,4 +63,6 @@ $string['datatables_next'] = 'Següent';
 $string['datatables_previous'] = 'Anterior';
 $string['datatables_processing'] = 'S\'està processant...';
 $string['disabled'] = 'Inhabilitat';
+$string['download'] = 'Descarrega';
 $string['statslogins'] = 'Inicis de sessió a la plataforma';
+$string['viewreport'] = 'Mostra l\'informe';

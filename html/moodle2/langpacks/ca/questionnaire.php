@@ -156,7 +156,7 @@ Si establiu el mínim i/o el màxim de quadres marcats i la resposta no s\'ajust
 $string['misconfigured'] = 'El curs no està ben configurat';
 $string['modulename'] = 'Questionnaire';
 $string['modulename_help'] = 'El mòdul Questionnaire permet construir enquestes utilitzant diferents tipologies de preguntes, amb la finalitat de recopilar dades dels usuaris.';
-$string['modulenameplural'] = 'Questionnaires';
+$string['modulenameplural'] = 'Qüestionaris';
 $string['myresponses'] = 'Totes les respostes';
 $string['myresponsetitle'] = 'Les vostres {$a} respostes';
 $string['myresults'] = 'Els vostres resultats';
@@ -220,7 +220,7 @@ $string['page'] = 'Pàgina';
 $string['pageof'] = 'Pàgina {$a->page} de {$a->totpages}';
 $string['participant'] = 'Participant';
 $string['pluginadministration'] = 'Administració del Questionnaire';
-$string['pluginname'] = 'Questionnaire';
+$string['pluginname'] = 'Qüestionari';
 $string['position'] = 'posició';
 $string['possibleanswers'] = 'Respostes possibles';
 $string['posteddata'] = 'S\'ha obtingut una pàgina amb dades:';

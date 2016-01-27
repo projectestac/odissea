@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradereportviewed'] = '概要レポートが閲覧されました。';
+$string['eventgradereportviewed'] = '評定概要レポートが閲覧されました。';
 $string['overview:view'] = '概要レポートを表示する';
 $string['pluginname'] = '概要レポート';

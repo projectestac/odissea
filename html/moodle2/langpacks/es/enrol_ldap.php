@@ -65,6 +65,7 @@ $string['course_shortname_updateonsync'] = 'Actualizar nombre corto durante el s
 $string['course_shortname_updateonsync_key'] = 'Actualizar nombre corto';
 $string['course_summary'] = 'Opcional: campo LDAP del que conseguir el sumario.';
 $string['course_summary_key'] = 'Resumen';
+$string['course_summary_updateonsync_key'] = 'Actualizar resumen';
 $string['courseupdated'] = 'El curso con idnumber  \'{$a->idnumber}\'  ha sido actualizado correctamente.';
 $string['createcourseextid'] = 'CREAR usuario matriculado en un curso inexistente \'{$a->courseextid}\'';
 $string['createnotcourseextid'] = 'Usuario matriculado en un curso inexistente \'{$a->courseextid}\'';

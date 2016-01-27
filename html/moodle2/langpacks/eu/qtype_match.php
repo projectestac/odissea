@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['answer'] = '{$a} erantzuna';
 $string['availablechoices'] = 'Eskura dauden aukerak';
-$string['blanksforxmorequestions'] = 'Zuriuneak {no} aukera gehiagotarako';
+$string['blanksforxmorequestions'] = 'Zuriuneak {no} galdera gehiagotarako';
 $string['correctansweris'] = 'Erantzun zuzena {$a} da';
 $string['deletedchoice'] = '[Ezabatutako aukera]';
 $string['deletedsubquestion'] = 'Galderaren atal hau saiakera hasi baino lehen ezabatua izan da.';

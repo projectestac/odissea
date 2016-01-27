@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['direct:view'] = 'CSVから評点をインポートする';
+$string['direct:view'] = 'CSVから評定をインポートする';
 $string['pluginname'] = 'スプレッドシートから貼り付ける';
 $string['userdata'] = 'このフォームにデータをコピーする';
 $string['userdata_help'] = 'スプレッドシートから評点を評定表にコピー＆ペーストすることができます。スプレッドシートにはユーザ識別データを含むカラムが必要です - ユーザ名またはIDナンバーまたはメールアドレス。また、インポートするカラムそれぞれにカラムヘッダが必要です。';

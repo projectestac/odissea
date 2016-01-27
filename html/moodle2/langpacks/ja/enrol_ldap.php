@@ -50,7 +50,7 @@ $string['course_fullname'] = '任意:「名称」を取得するLDAPフィール
 $string['course_fullname_key'] = '名称';
 $string['course_fullname_updateonsync'] = '同期スクリプトでフルネームを更新する';
 $string['course_fullname_updateonsync_key'] = 'フルネームを更新する';
-$string['course_idnumber'] = 'LDAPのユニークなIDにマップしてください。通常、<em>cn</em>または<em>uid</em>です。コース自動作成を使用する場合、設定値のロックをお勧めします。';
+$string['course_idnumber'] = 'コースIDナンバーを取得するLDAP属性です。通常、<em>cn</em>または<em>uid</em>です。';
 $string['course_idnumber_key'] = 'IDナンバー';
 $string['coursenotexistskip'] = 'コース「 {$a} 」が存在しないか、自動作成が無効にされています。スキップします。';
 $string['course_search_sub'] = 'サブコンテクストよりグループメンバーシップを検索する';
@@ -66,16 +66,16 @@ $string['course_summary_updateonsync'] = '同期スクリプトで概要を更�
 $string['course_summary_updateonsync_key'] = '概要を更新する';
 $string['courseupdated'] = 'IDナンバー「 {$a->idnumber} 」のコースが正常に更新されました。';
 $string['courseupdateskipped'] = 'IDナンバー「 {$a->idnumber} 」のコースは更新を必要としません。スキップ ...';
-$string['createcourseextid'] = '存在しないコース「 {$a->courseextid} 」に受講登録するユーザを作成します。';
-$string['createnotcourseextid'] = '存在しないコース「 {$a->courseextid} 」にユーザが受講登録されました。';
-$string['creatingcourse'] = 'コースの作成 {$a} ...';
+$string['createcourseextid'] = '存在しないコース「 {$a->courseextid} 」に登録するユーザを作成します。';
+$string['createnotcourseextid'] = '存在しないコース「 {$a->courseextid} 」にユーザが登録されました。';
+$string['creatingcourse'] = 'コース作成「 {$a} 」 ...';
 $string['duplicateshortname'] = 'コース作成に失敗しました。省略名が重複しています。IDナンバー「 {$a->idnumber} 」のコースをスキップ ...';
 $string['editlock'] = '設定値をロックする';
 $string['emptyenrolment'] = 'コース「 {$a->course_shortname} 」内のロール「 {$a->role_shortname} 」に関する登録を削除します。';
 $string['enrolname'] = 'LDAP';
 $string['enroluser'] = 'コース「 {$a->course_shortname} (id {$a->course_id}) 」にユーザ「 {$a->user_username} 」を登録します。';
 $string['enroluserenable'] = 'コース「 {$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」の登録を有効にしました。';
-$string['explodegroupusertypenotsupported'] = 'ldap_explode_group() は選択されたユーザタイプをサポートしません: {$a}';
+$string['explodegroupusertypenotsupported'] = 'ldap_explode_group()は選択されたユーザタイプをサポートしません: {$a}';
 $string['extcourseidinvalid'] = 'コース外部IDが正しくありません!';
 $string['extremovedsuspend'] = 'コース「 {$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」の登録を無効にしました。';
 $string['extremovedsuspendnoroles'] = 'コース「 {$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」の登録を無効にしてロールを削除しました。';
@@ -101,24 +101,24 @@ $string['nosuchrole'] = 'このようなロールはありません: {$a}';
 $string['objectclass'] = 'コース検索に使用するobjectClassです。通常、「group」または「posixGroup」です。';
 $string['objectclass_key'] = 'オブジェクトクラス';
 $string['ok'] = 'OK!';
-$string['opt_deref'] = 'グループメンバーシップに識別名が含まれている場合、検索時にどのようにエイリアスが処理されるか指定してください。次の値を選択してください:NO = LDAP_DEREF_NEVER またはYes = LDAP_DEREF_ALWAYS';
+$string['opt_deref'] = 'グループメンバーシップに識別名が含まれている場合、検索時にどのようにエイリアスが処理されるか指定してください。次の値を選択してください: NO = LDAP_DEREF_NEVERまたはYes = LDAP_DEREF_ALWAYS';
 $string['opt_deref_key'] = 'エイリアスの修飾参照';
 $string['phpldap_noextension'] = 'PHP LDAPモジュールが存在しないようです。あなたがこの登録プラグインを使用したい場合、当該モジュールがインストールおよび有効化されていることを確認してください。';
 $string['pluginname'] = 'LDAP登録';
-$string['pluginname_desc'] = '<p>あなたのユーザの受講登録をコントロールするためにLDAPサーバを使用することができます。LDAPの使用はあなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバーシップエントリを持つことを前提とします。</p>
+$string['pluginname_desc'] = '<p>あなたのユーザの登録をコントロールするためにLDAPサーバを使用することができます。LDAPの使用はあなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバーシップエントリを持つことを前提とします。</p>
 <p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む複数のメンバーシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>
-<p>LDAPを使用してユーザを受講登録するにはユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループはユーザがコースに受講登録できるようメンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
-<p>ユーザ受講登録情報はユーザのログイン時に更新されます。受講登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
+<p>LDAPを使用してユーザを登録するにはユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループはユーザがコースに登録できるようメンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
+<p>ユーザ登録情報はユーザのログイン時に更新されます。登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
 <p>このプラグインでは新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';
-$string['role_mapping'] = '<p>LDAPからそれぞれのロールを割り当てるには、あなたはコースグループに割り当てられているロールのコンテクスト一覧を指定する必要があります。異なるコンテクストは「;」で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するために使用している属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
+$string['role_mapping'] = '<p>LDAPからそれぞれのロールを割り当てる場合、あなたはコースグループに割り当てられているロールのコンテクスト一覧を指定する必要があります。異なるコンテクストは「;」で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するために使用している属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
 $string['role_mapping_attribute'] = '{$a} のLDAPメンバー属性';
 $string['role_mapping_context'] = '{$a} のLDAPコンテクスト';
 $string['role_mapping_key'] = 'LDAPからロールをマップする';
 $string['roles'] = 'ロールマッピング';
 $string['server_settings'] = 'LDAPサーバ設定';
 $string['synccourserole'] = '== コース「 {$a->idnumber} 」をロール「 {$a->role_shortname} 」に同期';
-$string['template'] = '任意: 自動的に作成されるコースでは、テンプレートコースより設定をコピーすることができます。';
+$string['template'] = '任意: 自動的に作成されるコースではテンプレートコースより設定をコピーすることができます。';
 $string['template_key'] = 'テンプレート';
 $string['unassignrole'] = 'コース 「{$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」からロール「 {$a->role_shortname} 」を割り当て解除';
 $string['unassignrolefailed'] = 'コース 「{$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」のロール「 {$a->role_shortname} 」の割り当て解除に失敗しました。';

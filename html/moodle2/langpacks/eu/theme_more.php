@@ -26,7 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backgroundimage'] = 'Atzeko planoaren irudia';
-$string['backgroundposition'] = 'Atzeko planoaren kokapena';
+$string['backgroundposition'] = 'Atzeko planoaren kokalekua';
+$string['backgroundposition_desc'] = 'Atzeko planoaren irudiaren kokalekua';
 $string['backgroundrepeatnorepeat'] = 'Ez errepikatu';
 $string['backgroundrepeatrepeat'] = 'Errepikatu';
 $string['backgroundrepeatrepeatx'] = 'Errepikatu horizontalki';

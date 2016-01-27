@@ -151,6 +151,10 @@ class agora_script_base{
 	}
 
 	protected function output($message, $type = "") {
+		self::notify($message, $type);
+	}
+
+	protected static function notify($message, $type = "") {
 		if (is_object($message) || is_array($message)) {
 			print_object($message);
 			return;

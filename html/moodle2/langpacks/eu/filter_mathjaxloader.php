@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'HTTPS MathJax URL';
 $string['httpurl'] = 'HTTPS MathJax URL';
+$string['localinstall'] = 'MathJax-en instalazio lokala';
 $string['mathjaxsettings'] = 'MathJax-en ezarpenak';

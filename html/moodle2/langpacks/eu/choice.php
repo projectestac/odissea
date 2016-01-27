@@ -44,7 +44,7 @@ $string['choiceoptions_help'] = '<p>Hemen partaideek hauta ditzaketen aukerak ja
 
 <p>Hauetako nahi beste bete ditzakezu, hau da, baten bat zuritan utz dezakezu 10 aukerak behar ez
 badituzu. Bete gabeko aukerak ez dira agertuko.</p>';
-$string['choice:readresponses'] = 'Erantzunak irakurri';
+$string['choice:readresponses'] = 'Ikusi erantzunak';
 $string['choicesaved'] = 'Zure aukera ondo gorde da';
 $string['choicetext'] = 'Kontsultaren testua';
 $string['chooseaction'] = 'Aukera ezazu ekintza bat...';

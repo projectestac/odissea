@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Estatistika-txostena ikusi da';
 $string['page-report-stats-index'] = 'Ikastaroko estatistika-txostena';
 $string['page-report-stats-user'] = 'Ikastaroko estatistika-txostena';
 $string['page-report-stats-x'] = 'Edozein estatistika-txosten';

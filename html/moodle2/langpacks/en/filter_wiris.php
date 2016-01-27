@@ -25,5 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'WIRIS filter - Maths';
-$string['pluginname'] = 'WIRIS filter - Maths';
+$string['clearcache'] = 'Clear cache';
+$string['clearcachedesc'] = 'Clear wiris filter cache';
+$string['filtername'] = 'Math & Science by WIRIS';
+$string['pluginname'] = 'WIRIS filter';
+$string['uninstallmode'] = 'Uninstall mode';
+$string['uninstallmodedesc'] = 'Allows WIRIS plugin to be uninstalled';
+$string['wiriscas'] = 'Calculator';
+$string['wirischemeditor'] = 'Chemistry editor';
+$string['wirismatheditor'] = 'Math editor';

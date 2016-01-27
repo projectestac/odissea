@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answer'] = 'Risposta {$a}';
-$string['availablechoices'] = 'Scelte dsiponibili';
+$string['availablechoices'] = 'Scelte disponibili';
 $string['blanksforxmorequestions'] = '{no} altre coppie vuote';
 $string['correctansweris'] = 'La risposta corretta è: {$a}';
 $string['deletedchoice'] = '[Scelta eliminata]';

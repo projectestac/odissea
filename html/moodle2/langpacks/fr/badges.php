@@ -57,7 +57,8 @@ $string['anymethodmanual'] = 'Un des rôles sélectionnés décerne le badge';
 $string['anymethodprofile'] = 'Un des champs de profil sélectionnés a été renseigné';
 $string['archivebadge'] = 'Voulez-vous supprimer le badge « {$a} », tout en conservant les badges déjà délivrés ?';
 $string['archiveconfirm'] = 'Supprimer et conserver les badges délivrés';
-$string['archivehelp'] = '';
+$string['archivehelp'] = '<p>Cette option signifie que le badge sera marqué comme "retiré" et n\'apparaîtra plus dans la liste des badges. Les utilisateurs ne pourront plus obtenir ce badge, mais ceux à qui il a déjà été décerné seront toujours capables de l\'afficher sur leur page de profil et de l\'exporter dans un sac à badge externe.</p>
+<p>Si vous souhaitez que les utilisateurs conservent un accès aux badges qu\'ils ont déjà obtenus, il est important de choisir cette option, et pas celle qui supprime complètement le badge</p>';
 $string['attachment'] = 'Joindre le badge à un courriel';
 $string['attachment_help'] = 'Si ce réglage est activé, le badge décerné sera joint à un message par courriel pour téléchargement (les annexes de courriel doivent être activées dans Administration du site > Plugins > Notification des messages > Courriel.';
 $string['award'] = 'Décerner le badge';

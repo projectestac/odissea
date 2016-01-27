@@ -99,7 +99,7 @@ $string['badgeprivacysetting'] = '勋章私密设置';
 $string['badgeprivacysetting_help'] = '你获得的徽章可以显示在您的帐户页面。这个设置允许你自动设定的新赚取徽章的可见性。
 你仍然可以控制个人徽章隐私设置您的“我的徽章”页面。';
 $string['badgeprivacysetting_str'] = '自动在我的个人资料页面上展示我荣获的勋章';
-$string['badgesalt'] = '获得者 email 的哈希盐';
+$string['badgesalt'] = '接受者email的哈希盐值';
 $string['badgesalt_desc'] = '提供一个哈希串给勋章服务中心，以便确保勋章获得者不会暴露他们的 email 地址。此项设计只能填入数字和字母。
 注意：为了保证有效验证收件人，一旦你开始发行勋章请避免更改此设置。';
 $string['badgesdisabled'] = '徽章没有被启用。';
@@ -276,7 +276,7 @@ $string['managebadges'] = '勋章管理';
 $string['message'] = '内容';
 $string['messagebody'] = '<p>您被授予一枚 "%badgename%" 的勋章！</p>
 <p>通过此链接可以看到此勋章的详细信息： %badgelink%。</p>
-<p>如果此邮件里面看不到作为附件发送过来的勋章，您可以从 {$a} 页面管理此勋章，也可以下载它。</p>';
+<p>您能从 {$a} 管理和下载勋章</p>';
 $string['messagesubject'] = '热烈祝贺！您刚刚获得一枚勋章！';
 $string['method'] = '当完成...此规则即生效';
 $string['mingrade'] = '至少获得成绩';

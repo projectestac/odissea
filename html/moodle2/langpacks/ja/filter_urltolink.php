@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['embedimages'] = '埋め込みイメージ';
-$string['embedimages_desc'] = '選択されたテキストフォーマットに関して、イメージURLがイメージと置換されます。';
+$string['embedimages_desc'] = '選択されたテキストフォーマットに関してイメージURLがイメージと置換されます。';
 $string['filtername'] = 'URLをリンクおよびイメージに変換する';
 $string['settingformats'] = 'フォーマットに適用する';
-$string['settingformats_desc'] = '選択されたフォーマットにオリジナルテキストが追加された場合のみフィルタが適用されます。';
+$string['settingformats_desc'] = '選択されたフォーマットの1つにオリジナルテキストが追加された場合のみフィルタが適用されます。';

@@ -102,8 +102,8 @@ $string['aggregation_help'] = 'Die Aggregation legt fest, wie die Bewertungen in
 * Höchster Wert
 * Häufigster Wert: Der Wert, der am häufigsten vorkommt (wird oft bei Bewertungen ohne Zahlen verwandt)
 * Natürlich: Die Punktwerte der einzelnen Bewertungen werden addiert.';
-$string['aggregationhintdropped'] = '(Verworfen)';
-$string['aggregationhintexcluded'] = '(Ausgeschlossen)';
+$string['aggregationhintdropped'] = '(Unberücksichtigt)';
+$string['aggregationhintexcluded'] = '(Unberücksichtigt)';
 $string['aggregationhintextra'] = '(Zusatzbewertung)';
 $string['aggregationhintnovalue'] = '(Leer)';
 $string['aggregationofa'] = 'Zusammenfassung von {$a}';
@@ -191,8 +191,7 @@ $string['dropdown'] = 'Dropdown-Menü';
 $string['droplow'] = 'Niedrigste Bewertungen herausnehmen';
 $string['droplowestvalue'] = 'Niedrigste Bewertungen verwerfen';
 $string['droplowestvalues'] = '{$a} niedrigste Werte entfernen';
-$string['droplow_help'] = '<h2>Niedrigste Bewertungen auslassen</h2>
-<p>Mit dieser Funktion werden die x niedrigsten Bewertungen einfach ignoriert und bei der Berechnung der Gesamtnote übersprungen. X steht für die Zahl der niedrigsten Resultate. Damit kann folgendes Szenario umgesetzt werden: Bei fünf Tests eines Kurses werden die schlechtesten beiden Ergebnisse nicht für die Gesamtnote berücksichtigt.  </p>';
+$string['droplow_help'] = 'Diese Option legt fest, ob eine festgelegte Anzahl niedriger Bewertung bei der Gesamtberechnung unberücksichtigt bleibt.';
 $string['dropped'] = 'herausgenommen';
 $string['dropxlowest'] = 'Die X niedrigsten <br />herausnehmen';
 $string['dropxlowestwarning'] = 'Anmerkung: Wenn Sie die Option "die X niedrigsten herausnehmen" verwenden, wird angenommen, dass alle Elemente der Kategorie die gleiche Punktzahl haben. Wenn die Punktwerte differieren, werden die Ergebnisse unkalkulierbar.';
@@ -231,8 +230,7 @@ $string['eventgradedeleted'] = 'Bewertung gelöscht';
 $string['eventgradeviewed'] = 'Bewertungen angezeigt';
 $string['eventusergraded'] = 'Nutzer/in bewertet';
 $string['excluded'] = 'Unberücksichtigt';
-$string['excluded_help'] = '<h2>Bewertung ausgrenzen</h2>
-<p>Wenn - ausgrenzen/ausschließen - aktiviert ist, werden diese Bewertungen bei der weiteren Gesamtnotenberechnung übersprungen und nicht einbezogen.</p>';
+$string['excluded_help'] = 'Diese Option legt fest, ob diese Bewertung bei der weiteren Gesamtberechnung einbezogen wird oder unberücksichtigt bleibt.';
 $string['expand'] = 'Kategorie erweitern';
 $string['export'] = 'Export';
 $string['exportalloutcomes'] = 'Alle Lernziele exportieren';
@@ -276,7 +274,9 @@ $string['gradeanalysis'] = 'Bewertungsanalyse';
 $string['gradebook'] = 'Bewertungen';
 $string['gradebookcalculationsfixbutton'] = 'Bewertungsänderungen akzeptieren und Berechnungsfehler korrigieren';
 $string['gradebookcalculationsuptodate'] = 'Die Berechnungen der Bewertungen sind korrekt. Um die Änderungen zu sehen, muss die Seite neu geladen werden.';
-$string['gradebookcalculationswarning'] = 'Hinweis: Es wurden einige Fehler in den Berechnungen der Bewertungen gefunden.  Durch Anklicken des unten stehenden Buttons können diese korrigiert werden. Einige Bewertungen werden dadurch verändert.  Details werden für die Änderungen zwischen der Version {$a->gradebookversion} und {$a->currentversion} in <a href="{$a->url}">Gradebook calculation changes</a> beschrieben.';
+$string['gradebookcalculationswarning'] = 'Hinweis: Es wurden einige Fehler in den Berechnungen der Bewertungen gefunden.  Wenn Ihr Kurs noch nicht begonnen hat oder noch läuft, empfiehlt es sich den Button unten anzuklicken. Dadurch werden einige Bewertungen geändert. Sollte der Kurs bereits abgeschlossen sein, müssen Sie entscheiden, ob Bewertungen nachträglich geändert werden sollen.
+
+Die neuere Version ist {$a->currentversion}. Sie nutzen Gradebook-Version {$a->gradebookversion}. Informationen über Änderungen finden Sie unter <a href="{$a->url}">Gradebook calculation changes</a>.';
 $string['gradebookhiddenerror'] = 'Die Bewertungen sind zur Zeit für die Teilnehmer/innen nicht sichtbar.';
 $string['gradebookhistories'] = 'Bewertungsverlauf';
 $string['gradeboundary'] = 'Untere Grenze für Note';
@@ -641,7 +641,7 @@ $string['selectalloroneuser'] = 'Alle oder einen auswählen';
 $string['selectauser'] = 'Nutzer/in wählen';
 $string['selectdestination'] = 'Ziel für {$a} auswählen';
 $string['separator'] = 'Trennzeichen';
-$string['sepcolon'] = 'Komma';
+$string['sepcolon'] = 'Doppelpunkt';
 $string['sepcomma'] = 'Komma';
 $string['sepsemicolon'] = 'Semikolon';
 $string['septab'] = 'Tab';

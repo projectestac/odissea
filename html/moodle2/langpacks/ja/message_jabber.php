@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configjabberhost'] = 'Jabber メッセージ通知を送信するために接続するサーバです。';
+$string['configjabberhost'] = 'Jabberメッセージ通知を送信するために接続するサーバです。';
 $string['configjabberpassword'] = 'Jabberサーバへの接続時に使用するパスワードです。';
 $string['configjabberport'] = 'Jabberサーバへの接続時に使用するポートです。';
 $string['configjabberserver'] = 'XMPPホストID (Jabberホストと同じ場合、空白のままにすることができます)';

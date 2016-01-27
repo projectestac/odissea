@@ -248,12 +248,12 @@ $string['sortasc'] = 'Aufsteigend sortieren';
 $string['sortdesc'] = 'Abwärts sortieren';
 $string['strategy'] = 'Punktestrategie';
 $string['strategyhaschanged'] = 'Die Punktestrategie des Workshops würde seit dem Beginn der Änderungen geändert.';
-$string['strategy_help'] = 'Die Bewertungsstrategie das verwendete Bewertungsformular und die Bewertungsmethode der Einreichungen. Es gibt vier Optionen:
+$string['strategy_help'] = 'Die Bewertungsstrategie legt das verwendete Bewertungsformular und die Bewertungsmethode der Einreichungen fest. Es gibt vier Optionen:
 
-* Akkumulative Bewertung: Kommentare und Bewertungen für vordefinierte Aspekte
+* Beurteilen mit Kommentaren und Punkten: Kommentare und Bewertungen für vordefinierte Aspekte
 * Kommentare: Es gibt nur Kommentare zu vordefinierten Aspekten, jedoch keine Bewertungen
-* Anzahl der Fehler: Kommentare und Ja/Nein Bewertungen zu vordefinierten Aussagen
-* Rubriken: Verschiedene Level zu vordefinierten Aspekten';
+* Aussagen zustimmen oder ablehnen: Kommentare und Ja/Nein Bewertungen zu vordefinierten Aussagen
+* Bewertungskriterien: Verschiedene Level zu vordefinierten Aspekten';
 $string['submission'] = 'Einreichung';
 $string['submissionattachment'] = 'Dateianhang';
 $string['submissionby'] = 'Eingereicht von {$a}';

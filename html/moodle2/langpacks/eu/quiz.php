@@ -659,7 +659,7 @@ $string['questionnonav'] = '<span class="accesshide">Galdera</span>{$a->number}<
 $string['questionnonavinfo'] = '<span class="accesshide">Informazioa </span>{$a->number}<span class="accesshide"> {$a->attributes}</span>';
 $string['questionnotloaded'] = '{$a} galdera ez da aurkitu datu-basean.';
 $string['questionorder'] = 'Galderaren ordena';
-$string['questionposition'] = 'Posizio berria {$a} galderarentzat';
+$string['questionposition'] = 'Kokaleku berria {$a} galderarentzat';
 $string['questions'] = 'Galderak';
 $string['questionsinclhidden'] = 'Galderak (ezkutukoak barne)';
 $string['questionsinthisquiz'] = 'Galderak galdetegi honetan';

@@ -652,3 +652,93 @@ if (!function_exists('enrol_self_check_group_enrolment_key')) {
         return $found;
     }
 }
+
+require_once($CFG->libdir . '/enrollib.php');
+
+function enrol_guest_get_enrol_info($enrolinstance) {
+    $enrolplugin = enrol_get_plugin('guest');
+
+    $instanceinfo = new stdClass();
+    $instanceinfo->id = $enrolinstance->id;
+    $instanceinfo->courseid = $enrolinstance->courseid;
+    $instanceinfo->type = $enrolplugin->get_name();
+    $instanceinfo->name = $enrolplugin->get_instance_name($enrolinstance);
+    $instanceinfo->status = $enrolinstance->status == ENROL_INSTANCE_ENABLED;
+    // Specifics enrolment method parameters.
+    $instanceinfo->requiredparam = new stdClass();
+    $instanceinfo->requiredparam->passwordrequired = !empty($enrolinstance->password);
+
+    // If the plugin is enabled, return the URL for obtaining more information.
+    if ($instanceinfo->status) {
+        $instanceinfo->wsfunction = 'enrol_guest_get_instance_info';
+    }
+    return $instanceinfo;
+}
+
+require_once($CFG->dirroot . '/mod/scorm/lib.php');
+require_once($CFG->dirroot . '/mod/scorm/locallib.php');
+
+if (!function_exists('scorm_get_availability_status')) {
+
+    /**
+     * Check if a SCORM is available for the current user.
+     *
+     * @param  stdClass  $scorm            SCORM record
+     * @param  boolean $checkviewreportcap Check the scorm:viewreport cap
+     * @param  stdClass  $context          Module context, required if $checkviewreportcap is set to true
+     * @return array                       status (available or not and possible warnings)
+     * @since  Moodle 3.0
+     */
+    function scorm_get_availability_status($scorm, $checkviewreportcap = false, $context = null) {
+        $open = true;
+        $closed = false;
+        $warnings = array();
+
+        $timenow = time();
+        if (!empty($scorm->timeopen) and $scorm->timeopen > $timenow) {
+            $open = false;
+        }
+        if (!empty($scorm->timeclose) and $timenow > $scorm->timeclose) {
+            $closed = true;
+        }
+
+        if (!$open or $closed) {
+            if ($checkviewreportcap and !empty($context) and has_capability('mod/scorm:viewreport', $context)) {
+                return array(true, $warnings);
+            }
+
+            if (!$open) {
+                $warnings['notopenyet'] = userdate($scorm->timeopen);
+            }
+            if ($closed) {
+                $warnings['expired'] = userdate($scorm->timeclose);
+            }
+            return array(false, $warnings);
+        }
+
+        // Scorm is available.
+        return array(true, $warnings);
+    }
+}
+
+if (!function_exists('scorm_require_available')) {
+    /**
+     * Requires a SCORM package to be available for the current user.
+     *
+     * @param  stdClass  $scorm            SCORM record
+     * @param  boolean $checkviewreportcap Check the scorm:viewreport cap
+     * @param  stdClass  $context          Module context, required if $checkviewreportcap is set to true
+     * @throws moodle_exception
+     * @since  Moodle 3.0
+     */
+    function scorm_require_available($scorm, $checkviewreportcap = false, $context = null) {
+
+        list($available, $warnings) = scorm_get_availability_status($scorm, $checkviewreportcap, $context);
+
+        if (!$available) {
+            $reason = current(array_keys($warnings));
+            throw new moodle_exception($reason, 'scorm', '', $warnings[$reason]);
+        }
+
+    }
+}

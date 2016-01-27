@@ -36,8 +36,7 @@ $string['aicchacpkeepsessiondata_desc'] = 'Durée en jours pendant laquelle cons
 $string['aicchacptimeout'] = 'Délai AICC HACP';
 $string['aicchacptimeout_desc'] = 'Durée en minutes pendant laquelle une session AICC HACP externe peut rester ouverte';
 $string['aiccuserid'] = 'Transmettre à AICC les identifiants numériques des utilisateurs';
-$string['aiccuserid_desc'] = 'Le standard AICC est très restrictif pour les noms d\'utilisateur, en comparaison avec Moodle. Si ce réglage est activé (défaut), l\'identifiant numérique (user->id) est passé au paquetage AICC au lieu du nom d\'utilisateur.
-AICC autorise pour les noms d\'utilisateur les caractères alphanumériques les caractères tirets (-) et souligné (_). Les points, espaces et l\'arobase (@) ne sont pas acceptés.';
+$string['aiccuserid_desc'] = 'En comparaison avec Moodle, le standard AICC est très restrictif pour les noms d\'utilisateur et n\'autorise que les caractères alphanumériques, les tirets (-) et caractères souligné (_). Les points, espaces et l\'arobase (@) ne sont pas acceptés. Si ce réglage est activé, l\'identifiant numérique (user->id) est passé au paquetage AICC au lieu du nom d\'utilisateur.';
 $string['aliasonly'] = 'Lors de la sélection d\'un fichier imsmanifest.xml dans un dépôt, vous devez utiliser un alias de ce fichier.';
 $string['allowapidebug'] = 'Activer l\'API de débogage et de tracement (veuillez spécifier le masque de capture)';
 $string['allowtypeaicchacp'] = 'Autoriser AICC HACP externe';

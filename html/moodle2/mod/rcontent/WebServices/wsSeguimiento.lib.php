@@ -259,7 +259,6 @@ function get_ResultadoDetalleExtendido($ResultadoExtendido, $user, $passwd) {
         //*********** FI
 
         $cm = get_coursemodule_from_instance('rcontent', $rcontent->id, $rcontent->course);
-        $contextmodule = context_module::instance($cm->id);
 
         if (!rcommon_book::check_auth($book->id, $user, $passwd)) {
             return generate_error("Autenticacion", "", "ResultadoDetalleExtendido", $cm->id);
@@ -287,6 +286,7 @@ function get_ResultadoDetalleExtendido($ResultadoExtendido, $user, $passwd) {
                 return generate_error("UsrNoExisteEnCurso", get_string('user') . ": {$ResultadoExtendido->idUsuario} - " . get_string('course') . ": {$rcontent->course}", "ResultadoDetalleExtendido",$cm->id);
             }
 
+            $contextmodule = context_module::instance($cm->id);
             if (!has_capability('mod/rcontent:savetrack', $contextmodule, $ResultadoExtendido->idUsuario)) {
                 return generate_error("SinPermisosGuardarSeguimiento", get_string('user') . ": {$ResultadoExtendido->idUsuario}", "ResultadoDetalleExtendido",$cm->id);
             }

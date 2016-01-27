@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cursorinfo'] = 'Gezi batek adierazten du elementuen-biltegiko elementu berriak txertatzeko kokapena';
+$string['cursorinfo'] = 'Gezi batek adierazten du elementuen-biltegiko elementu berriak txertatzeko kokalekua';
 $string['editequation'] = 'Editatu ekuazioa <a href="{$a}" target="_blank">TeX</a> erabiliz';
 $string['librarygroup1'] = 'Eragiketak';
 $string['librarygroup1_desc'] = 'Eragiketen fitxan dauden TeX komandoen zerrenda.';

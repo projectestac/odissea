@@ -46,6 +46,7 @@ $string['auth_invalidnewemailkey'] = '错误：URL 不正确，请完整拷贝�
 $string['authloginviaemail'] = '允许无效的电子邮件地址';
 $string['authloginviaemail_desc'] = '允许用户使用用户名和电子邮件地址（如果唯一）进行网站登录。';
 $string['auth_multiplehosts'] = '可以指定多个主机名或地址（如 host1.com;host2.com;host3.com 或 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx）';
+$string['auth_notconfigured'] = '认证方法{$a}尚未配置。';
 $string['auth_outofnewemailupdateattempts'] = '更改Email地址的许可次数已到，您的请求被取消。';
 $string['auth_passwordisexpired'] = '您的密码已经过期，要现在修改么?';
 $string['auth_passwordwillexpire'] = '您的密码将在{$a}天后过期，现在要修改么?';

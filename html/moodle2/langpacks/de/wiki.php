@@ -57,11 +57,11 @@ $string['createpage'] = 'Seite erstellen';
 $string['creating'] = 'Wikiseite wird erstellt';
 $string['creole'] = 'Creole';
 $string['defaultformat'] = 'Standardformat';
-$string['defaultformat_help'] = 'Diese Option legt das standardmäßige Format zum Bearbeiten von Wikiseiten fest.
+$string['defaultformat_help'] = 'Diese Option legt das Bearbeitungsformat von Wikiseiten fest.
 
 * HTML - Der Texteditor ist verfügbar
-* Creole - Eine übliche Markup-Sprache für Wikis ist zusammen mit einer kleinen Bearbeitungsleiste verfügbar
-* NWiki - Die spezifische Markup-Sprache des verwendeten NWiki ist verfügbar';
+* Creole - Markup-Editor für Wikis mit Werkzeugleiste
+* NWiki - MediaWiki-ähnlicher Markup-Editor';
 $string['deletecomment'] = 'Kommentar wird gelöscht';
 $string['deletecommentcheck'] = 'Kommentar löschen';
 $string['deletecommentcheckfull'] = 'Möchten Sie den Kommentar wirklich löschen?';
@@ -102,12 +102,9 @@ $string['formatcreole'] = 'Creole-Format';
 $string['formatcreole_help'] = 'Creole ist eine Markup-Sprache für Wikis mit einer Werkzeugleiste zum Einfügen der entsprechenden Formatierungszeichen.
 
 Um eine neue Seite zu erstellen, geben Sie den neuen Seitennamen in doppelte Eckige Klammern ein, z.B. [[Neue Seite]].';
-$string['format_help'] = 'Format zur Bearbeitung von Wikiseiten
-
-* HTML - Der Texteditor ist verfügbar
-* Creole - Eine übliche Markup-Sprache für Wikis ist zusammen mit einer kleinen Werkzeugleiste verfügbar
-* NWiki - Die spezifische Markup-Sprache des verwendeten NWiki ist verfügbar
-';
+$string['format_help'] = '* HTML - Der Texteditor ist verfügbar
+* Creole - Markup-Editor für Wikis mit Werkzeugleiste
+* NWiki - MediaWiki-ähnlicher Markup-Editor';
 $string['formathtml'] = 'HTML-Format';
 $string['formathtml_help'] = 'Der HTML-Editor kann benutzt werden, um Inhalte zu formatieren.
 

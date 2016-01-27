@@ -51,4 +51,5 @@ $string['paypal:unenrolself'] = 'Norbera ikastararotik desmatrikulatu';
 $string['pluginname'] = 'PayPal';
 $string['sendpaymentbutton'] = 'Paypal bidezko ordainketa bidali';
 $string['status'] = 'Baimendu PayPal bidezko matrikulazioa';
+$string['status_desc'] = 'Baimendu erabiltzaileak PayPal erabiltzen ikastaro batean matrikulatzeko berezko balore gisa.';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';

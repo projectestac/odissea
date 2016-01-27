@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Fóra de línia';
+$string['pluginname'] = 'Fora de línia';

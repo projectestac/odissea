@@ -170,7 +170,7 @@ Les activitats de retroacció es poden utilitzar:
 * Per a permetre als participants inscriure\'s a mòduls del curs, esdeveniments, etc.
 * Per a enquestes a visitants sobre opcions de cursos, polítiques de la institució educativa, etc.
 * Per a enquestes contra l\'assetjament escolar on l\'estudiantat pugui informar sobre incidències de manera anònima.';
-$string['modulenameplural'] = 'retroacció';
+$string['modulenameplural'] = 'Retroacció';
 $string['movedown_item'] = 'Mou aquesta pregunta avall';
 $string['move_here'] = 'Mou aquí';
 $string['move_item'] = 'Mou aquesta pregunta';

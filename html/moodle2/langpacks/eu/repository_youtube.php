@@ -29,7 +29,7 @@ $string['apierror'] = '{$a}';
 $string['apikey'] = 'API giltza';
 $string['configplugin'] = 'YouTube biltegi-motaren ezarpenak';
 $string['information'] = 'Lortu <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API giltza</a> zure  Moodle gunerako.';
-$string['pluginname'] = 'Youtube bideoak';
+$string['pluginname'] = 'YouTube bideoak';
 $string['search'] = 'Bilatu bideoak';
 $string['sortby'] = 'Ordenatu honela';
 $string['sortpublished'] = 'Argitaratze-data';

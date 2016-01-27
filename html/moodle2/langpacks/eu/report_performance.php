@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_backup'] = 'Automatizatutako segurtasun-kopia';
 $string['comments'] = 'Iruzkinak';
 $string['disabled'] = 'Desgaituta';
 $string['edit'] = 'Editatu';

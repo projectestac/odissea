@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptederror'] = 'Onartutako errorea';
-$string['addmoreanswerblanks'] = 'Zuriguneak {no} aukera gehiagotarako';
+$string['addmoreanswerblanks'] = 'Zuriguneak {no} erantzun gehiagotarako';
 $string['addmoreunitblanks'] = 'Zuriguneak {no} unitate gehiagotarako';
 $string['answercolon'] = 'Erantzuna:';
 $string['answererror'] = 'Errorea';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'エモーティコンをイメージとして表示する';
 $string['settingformats'] = '適用対象フォーマット';
-$string['settingformats_desc'] = '選択されたフォーマットの1つにオリジナルテキストが入力された場合のみ、フィルタが適用されます。';
+$string['settingformats_desc'] = '選択されたフォーマットの1つがオリジナルテキストに入力された場合のみ、フィルタが適用されます。';

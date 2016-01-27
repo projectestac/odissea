@@ -50,6 +50,7 @@ $string['newcoursetable'] = 'Urrutiko ikastaro berrien taula';
 $string['pluginname'] = 'Kanpoko datu-basea';
 $string['remotecoursefield'] = 'Urrutiko ikastaroen eremua';
 $string['remotecoursefield_desc'] = 'Ikastaroen taulan sarrerak parekatzeko erabiltzen den eremuaren izena urrutiko taulan.';
+$string['remoteenroltable'] = 'Urrutiko erabiltzaileen matrikulaziorako taula';
 $string['remoterolefield'] = 'Urrutiko rolaren eremua';
 $string['remoterolefield_desc'] = 'Rolen taulan sarrerak parekatzeko erabiltzen den eremuaren izena urrutiko taulan.';
 $string['remoteuserfield'] = 'Urrutiko erabiltzailearen eremua';

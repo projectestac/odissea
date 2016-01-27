@@ -40,4 +40,7 @@ $string['messageinboundhostssl'] = 'Erabili SSL';
 $string['messageinboundhosttype'] = 'Zerbitzari-mota';
 $string['messageinboundhostuser'] = 'Erabiltzaile-izena';
 $string['name'] = 'Izena';
+$string['onehour'] = 'Ordubete';
+$string['oneweek'] = 'Astebete';
+$string['oneyear'] = 'Urtebete';
 $string['replysubjectprefix'] = 'Er:';

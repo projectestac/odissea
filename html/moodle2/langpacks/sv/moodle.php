@@ -627,7 +627,7 @@ Klicka sedan på Gå eller tryck på radmatningen (Enter).
 OBS! Genom att Du bekräftar kontot så samtycker
 Du till databehandling enligt Personuppgiftslagen.
 Om Du är osäker på vad det innebär så kan Du hitta
-mer information här: \'http://www.foi.se/FOI/templates/Page____3714.aspx
+mer information här: \'http://www.datainspektionen.se/lagar-och-regler/personuppgiftslagen/
 \'
 
 Om Du behöver hjälp så kan Du kontakta
@@ -1154,7 +1154,7 @@ som Du är registrerad på.</li>
 OBS! Genom att Du bekräftar kontot så samtycker
 Du till databehandling enligt Personuppgiftslagen.
 Om Du är osäker på vad det innebär så kan Du hitta
-mer information här: \'http://www.foi.se/FOI/templates/Page____3714.aspx
+mer information här: \'http://www.datainspektionen.se/lagar-och-regler/personuppgiftslagen/
 \'
 
 Lycka till!';
@@ -1582,9 +1582,9 @@ $string['potentialadmins'] = 'Möjliga administratörer';
 $string['potentialcreators'] = 'Möjliga kursutvecklare';
 $string['potentialstudents'] = 'Möjliga studenter/elever/deltagare/lärande';
 $string['potentialteachers'] = 'Möjliga distanslärare/handledare/coacher';
-$string['preferences'] = 'De val Du föredrar';
-$string['preferredlanguage'] = 'Det språk Du föredrar att använda';
-$string['preferredtheme'] = 'Det tema Du föredrar att använda';
+$string['preferences'] = 'De val du föredrar';
+$string['preferredlanguage'] = 'Det språk du föredrar att använda';
+$string['preferredtheme'] = 'Det tema du föredrar att använda';
 $string['preprocessingbackupfile'] = 'Förbehandlar säkerhetskopian';
 $string['prev'] = 'Föreg';
 $string['preview'] = 'Förhandsgranska';

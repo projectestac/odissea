@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['nobackupsfound'] = 'Ez da segurtasun-kopiarik aurkitu.';
 $string['pluginname'] = 'Segurtasun-kopien txostena';
 $string['viewlogs'] = 'Ikusi agerraldiak';

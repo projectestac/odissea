@@ -25,6 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmorechoiceblanks'] = 'Blanco voor {no} meer keuzes';
 $string['answer'] = 'Antwoord';
+$string['choices'] = 'Keuzes';
+$string['choicex'] = 'Keuze {no}';
+$string['combinedcontrolnamegapselect'] = 'Rolmenu';
+$string['combinedcontrolnamegapselectplural'] = 'Rolmenu\'s';
 $string['correctansweris'] = 'Het goede antwoord is: {$a}';
+$string['errornoslots'] = 'De vraagtekst moet plaatshouders bevatten zoals [[1]] om aan te geven waar de ontbrekende woorden moeten komen.';
+$string['errorquestiontextblank'] = 'Je moet een vraagtekst ingeven.';
 $string['group'] = 'Groep';
+$string['pleaseputananswerineachbox'] = 'Zet een antwoord in elke box.';
+$string['pluginname'] = 'Ontbrekende woorden selecteren';
+$string['pluginnameadding'] = 'Een "ontbrekende woorden selecteren"-vraag toevoegen';
+$string['pluginnameediting'] = 'Een "ontbrekende woorden selecteren"-vraag bewerken';
+$string['shuffle'] = 'Door elkaar halen';
+$string['tagsnotallowed'] = '{$a->tag} is niet toegestaan. (Enkel {$a->allowed} zijn toegestaan.)';
+$string['tagsnotallowedatall'] = '{$a->tag} is niet toegestaan. (Hier geen HTML gebruiken.)';

@@ -53,7 +53,7 @@ $string['uploadpicture_usernotfound'] = '「 {$a->userfield} 」の値が「 {$a
 $string['uploadpicture_userskipped'] = 'ユーザ {$a} をスキップします (画像登録済みです)。';
 $string['uploadpicture_userupdated'] = 'ユーザ {$a} の画像が更新されました。';
 $string['uploadusers'] = 'ユーザをアップロードする';
-$string['uploadusers_help'] = 'テキストファイル経由でユーザをアップロード (および任意でコース受講登録) することができます。
+$string['uploadusers_help'] = 'テキストファイル経由でユーザをアップロード (および任意でコース登録) することができます。
 
 * ファイルのそれぞれの行には1レコード含みます。
 * それぞれのレコードはカンマ区切り (または他のデリミタ) の一覧のデータです。

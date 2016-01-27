@@ -31,5 +31,5 @@ $string['cohort:config'] = 'コーホートインスタンスを設定する';
 $string['cohort:unenrol'] = '利用停止ユーザを登録解除する';
 $string['instanceexists'] = 'すでに選択されたロールにコーホートは同期されています。';
 $string['pluginname'] = 'コーホート同期';
-$string['pluginname_desc'] = 'コーホート登録プラグインでは、コーホートメンバーとコース参加者を同期します。';
+$string['pluginname_desc'] = 'コーホート登録プラグインではコーホートメンバーとコース参加者を同期します。';
 $string['status'] = 'アクティブ';

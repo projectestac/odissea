@@ -427,6 +427,66 @@ $functions = array(
         'capabilities'  => 'mod/choice:choose'
     ),
 
+    'local_mobile_mod_scorm_view_scorm' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_scorm_view_scorm',
+        'description'   => 'Trigger the course module viewed event.',
+        'type'          => 'write',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_mod_scorm_get_scorm_attempt_count' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_scorm_get_scorm_attempt_count',
+        'description'   => 'Return the number of attempts done by a user in the given SCORM.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
+    'local_mobile_mod_scorm_get_scorm_scoes' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_scorm_get_scorm_scoes',
+        'description' => 'Returns a list containing all the scoes data related to the given scorm id',
+        'type' => 'read',
+        'capabilities' => ''
+    ),
+
+    'local_mobile_mod_scorm_get_scorm_user_data' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_scorm_get_scorm_user_data',
+        'description' => 'Retrieves user tracking and SCO data and default SCORM values',
+        'type' => 'read',
+        'capabilities' => ''
+    ),
+
+    'local_mobile_mod_scorm_insert_scorm_tracks' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_scorm_insert_scorm_tracks',
+        'description' => 'Saves a scorm tracking record.
+                          It will overwrite any existing tracking data for this attempt.
+                          Validation should be performed before running the function to ensure the user will not lose any existing
+                          attempt data.',
+        'type' => 'write',
+        'capabilities' => 'mod/scorm:savetrack'
+    ),
+
+    'local_mobile_mod_scorm_get_scorm_sco_tracks' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_scorm_get_scorm_sco_tracks',
+        'description' => 'Retrieves SCO tracking data for the given user id and attempt number',
+        'type' => 'read',
+        'capabilities' => ''
+    ),
+
+    'local_mobile_mod_scorm_get_scorms_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_scorm_get_scorms_by_courses',
+        'description'   => 'Returns a list of scorm instances in a provided set of courses, if
+                            no courses are provided then all the scorm instances the user has access to will be returned.',
+        'type'          => 'read',
+        'capabilities'  => ''
+    ),
+
     'local_mobile_mod_survey_get_questions' => array(
         'classname'     => 'local_mobile_external',
         'methodname'    => 'mod_survey_get_questions',
@@ -462,6 +522,30 @@ $functions = array(
         'description'   => 'Trigger the course module viewed event and update the module completion status.',
         'type'          => 'write',
         'capabilities'  => 'mod/survey:participate'
+    ),
+
+    'local_mobile_core_enrol_get_course_enrolment_methods' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_enrol_get_course_enrolment_methods',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Get the list of course enrolment methods',
+        'type'        => 'read',
+    ),
+
+    'local_mobile_enrol_guest_get_instance_info' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'enrol_guest_get_instance_info',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Return guest enrolment instance information.',
+        'type'        => 'read'
+    ),
+
+    'local_mobile_mod_forum_can_add_discussion' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'mod_forum_can_add_discussion',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Check if the current user can add discussions in the given forum (and optionally for the given group).',
+        'type' => 'read'
     ),
 
 );
@@ -551,10 +635,20 @@ $services = array(
             'local_mobile_mod_lti_view_lti',
             'local_mobile_core_completion_mark_course_self_completed',
             'local_mobile_mod_choice_delete_choice_responses',
+            'local_mobile_mod_scorm_get_scorm_attempt_count',
+            'local_mobile_mod_scorm_get_scorm_sco_tracks',
+            'local_mobile_mod_scorm_get_scorm_scoes',
+            'local_mobile_mod_scorm_get_scorm_user_data',
+            'local_mobile_mod_scorm_get_scorms_by_courses',
+            'local_mobile_mod_scorm_insert_scorm_tracks',
+            'local_mobile_mod_scorm_view_scorm',
             'local_mobile_mod_survey_get_questions',
             'local_mobile_mod_survey_get_surveys_by_courses',
             'local_mobile_mod_survey_submit_answers',
             'local_mobile_mod_survey_view_survey',
+            'local_mobile_core_enrol_get_course_enrolment_methods',
+            'local_mobile_enrol_guest_get_instance_info',
+            'local_mobile_mod_forum_can_add_discussion',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

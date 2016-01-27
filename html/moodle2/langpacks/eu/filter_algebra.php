@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['algebraicexpression'] = 'Adierazpen aljebraikoa';
 $string['filtername'] = 'Idazketa aljebraikoa';

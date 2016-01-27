@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Dieser Test steht zur Zeit nicht zur Verfügung.';
 $string['pluginname'] = 'Start-/Enddatum';
-$string['quiznotavailable'] = 'Der Test ist verfügbar ab {$a}';
+$string['quiznotavailable'] = 'Der Test ist nicht verfügbar bis {$a}';

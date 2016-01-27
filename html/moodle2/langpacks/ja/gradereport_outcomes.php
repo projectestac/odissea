@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addoutcome'] = 'アウトカムを追加する';
 $string['courseoutcomes'] = 'コースアウトカム';
 $string['coursespecoutcome'] = 'コースアウトカム';
-$string['eventgradereportviewed'] = 'アウトカムレポートが閲覧されました。';
+$string['eventgradereportviewed'] = '評定アウトカムレポートが閲覧されました。';
 $string['outcomes:view'] = 'アウトカムレポートを表示する';
 $string['pluginname'] = 'アウトカムレポート';
 $string['usedgradeitem'] = '評定項目数';

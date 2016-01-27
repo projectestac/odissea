@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Netejador de brossa';
+$string['pluginname'] = 'Netejador de correu brossa';
 $string['spamauto'] = 'Detecta automàticament els patrons de brossa habituals';
 $string['spamcannotdelete'] = 'No es pot suprimir aquest usuari';
 $string['spamcannotfinduser'] = 'La cerca no coincideix amb cap usuari';

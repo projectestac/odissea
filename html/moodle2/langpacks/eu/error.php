@@ -325,6 +325,7 @@ $string['missing_moodle_backup_xml_file'] = 'Segurtasun-kopian XML fitxategia fa
 $string['missingparam'] = 'Behar den ({$a}) parametroa falta da';
 $string['missingparameter'] = 'Parametroa falta da';
 $string['missingrequiredfield'] = 'Beharrezko eremuren bat falta da.';
+$string['missinguseranditemid'] = 'userid eta itemid falta dira';
 $string['mnetdisable'] = 'MNET desgaituta dago';
 $string['mnetlocal'] = 'Urrutiko MNET erabiltzaileek ezin dute saioa lokalean hasi';
 $string['moduledisable'] = 'Modulu hau ({$a}) desgaituta dago ikastaro jakin honetarako';

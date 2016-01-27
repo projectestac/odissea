@@ -29,7 +29,7 @@
 define('AJAX_SCRIPT', true);
 define('NO_MOODLE_COOKIES', true);
 
-require('../../config.php');
+require('../../../config.php');
 require_once($CFG->libdir . '/filelib.php');
 require_once($CFG->dirroot . '/webservice/lib.php');
 
@@ -47,5 +47,21 @@ if (empty($enabledfiledownload)) {
 // Finally we can serve the file :).
 $relativepath = get_file_argument();
 
-header('Access-Control-Allow-Origin: *');
-file_pluginfile($relativepath, 0);
+// Serve the SCORM file.
+if (strpos($relativepath, 'mod_scorm/package') !== false) {
+
+    $contextid = (int)array_shift(explode('/', ltrim($relativepath, '/')));
+    list($context, $course, $cm) = get_context_info_array($contextid);
+
+    require_login($course, true, $cm);
+
+    $fs = get_file_storage();
+    if (!$file = $fs->get_file_by_hash(sha1($relativepath)) or $file->is_directory()) {
+        send_header_404();
+        die;
+    }
+    send_stored_file($file, $lifetime, 0, false, array());
+} else {
+    header('Access-Control-Allow-Origin: *');
+    file_pluginfile($relativepath, 0);
+}

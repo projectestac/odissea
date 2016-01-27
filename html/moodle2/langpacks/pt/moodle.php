@@ -34,7 +34,7 @@ $string['activeusers'] = 'Utilizadores ativos';
 $string['activities'] = 'Atividades';
 $string['activities_help'] = 'Atividades, como fóruns, testes e wikis permitem que seja adicionado conteúdo interativo à disciplina.';
 $string['activity'] = 'Atividade';
-$string['activityclipboard'] = 'Deslocando esta atividade: {$a}';
+$string['activityclipboard'] = 'A mover a atividade: {$a}';
 $string['activityiscurrentlyhidden'] = 'Esta atividade encontra-se oculta';
 $string['activitymodule'] = 'Módulo de atividade';
 $string['activitymodules'] = 'Atividades';
@@ -1492,7 +1492,7 @@ $string['resourcedisplaypopup'] = 'Janela de pop-up';
 $string['resources'] = 'Recursos';
 $string['resources_help'] = 'Os Recursos permitem inserir na disciplina quase todo o tipo de conteúdo.';
 $string['restore'] = 'Restaurar';
-$string['restorecancelled'] = 'Restauração cancelada';
+$string['restorecancelled'] = 'Restauro cancelado';
 $string['restorecannotassignroles'] = 'Para restaurar necessita de atribuir papéis e não possui permissão para fazê-lo.';
 $string['restorecannotcreateorassignroles'] = 'Ao restaurar necessita de criar ou atribuir papéis na disciplina e não tem permissões para tal';
 $string['restorecannotcreateuser'] = 'Ao restaurar necessita de criar o utilizador \'{$a}\' a partir do ficheiro da cópia de segurança e não tem permissões para tal';
@@ -1560,7 +1560,7 @@ $string['searchhelp'] = '<p>Pode procurar várias palavras de uma só vez e refi
 <li>"+palavra" - apenas correspondências exatas das palavras serão encontradas.</li>
 <li>"-palavra" - não incluir resultados que contenham esta palavra.</li>
 </ul>';
-$string['search_help'] = 'Para fazer uma pesquisa básica de uma ou mais palavras no texto digite as palavras a pesquisar, separadas por espaços. São consideradas para pesquisa todas as palavras com mais de dois caracteres.
+$string['search_help'] = 'Para fazer uma pesquisa básica de uma ou mais palavras no texto, digite as palavras a pesquisar separadas por espaços. São consideradas para pesquisa todas as palavras com mais de dois caracteres.
 
 Para fazer pesquisas avançadas clique no botão de pesquisa sem digitar nenhuma palavra na caixa de texto para ter acesso ao formulário de pesquisa avançada.';
 $string['searchoptions'] = 'Opções de pesquisa';
@@ -1647,7 +1647,7 @@ $string['showreports'] = 'Mostrar relatórios de atividade';
 $string['showreports_help'] = 'São disponibilizados relatórios de atividade para cada participante, mostrando a sua atividade na disciplina atual. Esses relatórios incluem o registo das suas contribuições nos fóruns, trabalhos e relatórios de acesso. Esta configuração determina se o aluno pode ter acesso a estes relatórios através da página do seu perfil.';
 $string['showsettings'] = 'Mostrar configuração';
 $string['showtheselogs'] = 'Mostrar estatísticas de acesso';
-$string['showthishelpinlanguage'] = 'Língua na qual mostrar esta ajuda: {$a}';
+$string['showthishelpinlanguage'] = 'Mostrar esta ajuda no idioma: {$a}';
 $string['since'] = 'Desde';
 $string['sincelast'] = 'desde a última entrada';
 $string['site'] = 'Site';

@@ -25,10 +25,35 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmoredropzones'] = 'Zuriuneak {no} eramateko toki gehiagotarako';
+$string['addmoreimages'] = 'Zuriuneak {no} eramateko elementu gehiagotarako';
 $string['answer'] = 'Erantzuna';
+$string['bgimage'] = 'Atzeko planoaren irudia';
+$string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
+$string['draggableimage'] = 'Eramateko irudia';
+$string['draggableitem'] = 'Eramateko elementua';
+$string['draggableitemheader'] = 'Eramateko elementua {$a}';
+$string['draggableitems'] = 'Eramateko elementuak';
 $string['draggableitemtype'] = 'Mota';
+$string['draggableword'] = 'Eramateko testua';
+$string['dropbackground'] = 'Atzeko planoaren irudia, bertara markatzaileak eramateko';
+$string['dropzone'] = 'Eramateko tokia {$a}';
+$string['dropzoneheader'] = 'Eramateko tokiak';
+$string['formerror_nobgimage'] = 'Irudi bat aukeratu behar duzu atzeko planoan hartu eta eramateko tokiak zehazteko.';
 $string['formerror_nofile'] = 'Fitxategi bat igo edo aukeratu behar duzu hemen erabiltzeko.';
+$string['formerror_noimageselected'] = 'Eramateko elementu bat aukeratu behar duzu aukera zuzen gisa ermateko toki honetarako.';
 $string['label'] = 'Testua';
+$string['nolabel'] = 'Ez dago testurik etiketan';
 $string['pluginname'] = 'Hartu eta eraman irudira';
-$string['pluginnameadding'] = 'Hartu eta eraman irudira gehitzen';
-$string['pluginnameediting'] = 'Hartu eta eraman irudira editatzen';
+$string['pluginnameadding'] = 'Hartu eta eraman irudira motako galdera gehitzen';
+$string['pluginnameediting'] = 'Hartu eta eraman irudira motako galdera editatzen';
+$string['pluginnamesummary'] = 'Irudiak edo testu-etiketak hartu eta eraman dira atzeko planoaren irudira.';
+$string['previewareaheader'] = 'Aurreikusi';
+$string['refresh'] = 'Freskatu aurrebista';
+$string['shuffleimages'] = 'Nahastu eramateko elementuak galderari erantzuten zaion bakoitzean';
+$string['summarisechoice'] = '{$a->no}. {$a->text}';
+$string['summarisechoiceno'] = '{$a} elementua';
+$string['summariseplace'] = '{$a->no}. {$a->text}';
+$string['summariseplaceno'] = 'Eramateko tokia {$a}';
+$string['xleft'] = 'Ezkerra';
+$string['ytop'] = 'Goian';

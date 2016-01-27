@@ -31,18 +31,18 @@ $string['additionaldelimiters_help'] = 'MathJaxフィルタはデリミタ文字
 認められるデリミタ文字をここに追加することができます (例 AsciiMathは「`」を使用します)。デリミタには複数文字を含むことができます。また、複数デリミタをカンマで区切ることもできます。';
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'HTTPS MathJax URL';
-$string['httpsurl_help'] = 'MathJaxライブラリのフルURLです。https (セキュア) 経由でページがロードされる場合に使用されます。';
+$string['httpsurl_help'] = 'MathJaxライブラリのフルURLです。https (セキュア) 経由でページが読み込まれる場合に使用されます。';
 $string['httpurl'] = 'HTTP MathJax URL';
-$string['httpurl_help'] = 'MathJaxライブラリのフルURLです。http経由でページがロードされる場合に使用されます。';
+$string['httpurl_help'] = 'MathJaxライブラリのフルURLです。http経由でページが読み込まれる場合に使用されます。';
 $string['localinstall'] = 'ローカルMathJaxインストレーション';
 $string['localinstall_help'] = 'デフォルトのMathJax設定ではCDNバージョンのMathJaxを使用しますが、必要であればローカルにMathJaxをインストールすることもできます。
 
-これは帯域幅の節約、またはローカルプロクシの制限に対して有用です。
+これは帯域幅の節約またはローカルプロクシの制限に対して有用です。
 
 MathJaxのローカルインストレーションを使用するには最初にhttp://www.mathjax.org/から完全なMathJaxライブラリをダウンロードしてください。それからウェブサーバにインストールしてください。最後にローカルのMathJax.js URLを指すため、MathJaxフィルタ設定「httpurl」および「httpsurl」を更新してください。';
 $string['mathjaxsettings'] = 'MathJax設定';
-$string['mathjaxsettings_desc'] = 'ほとんどのユーザに対して、MathJaxデフォルト設定は適切ですが、MathJaxは高度に設定可能であり、標準MathJax設定オプションをここでどれでも追加することができます。';
+$string['mathjaxsettings_desc'] = 'ほとんどのユーザに対してMathJaxデフォルト設定は適切ですが、MathJaxは高度に設定可能であり標準MathJax設定オプションをここでどれでも追加することができます。';
 $string['texfiltercompatibility'] = 'TeXフィルタ互換性';
-$string['texfiltercompatibility_help'] = 'MathJaxフィルタはTeX表記法フィルタの代わりに使用することができます。
+$string['texfiltercompatibility_help'] = 'TeX表記法フィルタの代わりにMathJaxフィルタを使用することができます。
 
 TeX表記法フィルタで使用されるデリミタすべてをサポートするため、MathJaxはすべての数式をテキストに「インライン」表示するよう設定されます。';

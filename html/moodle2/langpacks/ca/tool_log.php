@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Gestor del magatzem de bitàcoles';
+$string['pluginname'] = 'Gestor del magatzem de registres';

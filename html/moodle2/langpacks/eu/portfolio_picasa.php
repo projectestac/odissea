@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Bezeroaren IDa';
-$string['noauthtoken'] = 'Ez da autentifikazio-tokena jaso Google-tik. Mesedez, ziurta ezazu Moodle-n zure Google-ren kontura sartzeko baimena duzula';
+$string['noauthtoken'] = 'Ez da autentifikazio-tokena jaso Google-tik. Mesedez, ziurta ezazu Moodle-n zure Google-ren kontura sartzeko baimena duzula.';
 $string['pluginname'] = 'Picasa';
 $string['secret'] = 'Sekretua';
-$string['sendfailed'] = '{$a} fitxategiak kale egiten du picasa-ra eramatean';
+$string['sendfailed'] = '{$a} fitxategiak kale egiten du Picasa-ra eramatean';
