@@ -52,6 +52,12 @@ class qtype_wq_renderer extends qtype_renderer {
             $question = $qa->get_question();
             $sqi = $question->wirisquestioninstance->getStudentQuestionInstance();
             $xml = $sqi->serialize();
+        }else {
+            $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
+            $sqi = $builder->readQuestionInstance($xml);
+            $question = $qa->get_question();
+            $question->wirisquestioninstance->updateFromStudentQuestionInstance($sqi);
+            $xml = $question->wirisquestioninstance->serialize();           
         }
         
         $sqi_name = $qa->get_qt_field_name('_sqi');

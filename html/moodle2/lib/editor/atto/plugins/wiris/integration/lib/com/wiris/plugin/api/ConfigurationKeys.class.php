@@ -32,7 +32,7 @@ class com_wiris_plugin_api_ConfigurationKeys {
 	static $FILTER_OUTPUT_MATHML = "wirisfilteroutputmathml";
 	static $EDITOR_MATHML_ATTRIBUTE = "wiriseditormathmlattribute";
 	static $EDITOR_PARAMS = "wiriseditorparameters";
-	static $EDITOR_PARAMETERS_DEFAULT_LIST = "mml,color,centerbaseline,zoom,dpi,fontSize,fontFamily,defaultStretchy,backgroundColor";
+	static $EDITOR_PARAMETERS_DEFAULT_LIST = "mml,color,centerbaseline,zoom,dpi,fontSize,fontFamily,defaultStretchy,backgroundColor,format";
 	static $EDITOR_PARAMETERS_NOTRENDER_LIST = "toolbar, toolbarHidden, reservedWords, autoformat, mml, language, rtlLanguages, ltrLanguages, arabicIndicLanguages, easternArabicIndicLanguages, europeanLanguages";
 	static $HTTPPROXY = "wirisproxy";
 	static $HTTPPROXY_HOST = "wirisproxy_host";
@@ -40,6 +40,7 @@ class com_wiris_plugin_api_ConfigurationKeys {
 	static $HTTPPROXY_USER = "wirisproxy_user";
 	static $HTTPPROXY_PASS = "wirisproxy_password";
 	static $REFERER = "wirisreferer";
+	static $IMAGE_FORMAT = "wirisimageformat";
 	static $imageConfigProperties;
 	static $imageConfigPropertiesInv;
 	static function computeInverse($dict) {
@@ -70,5 +71,6 @@ class com_wiris_plugin_api_ConfigurationKeys {
 	com_wiris_plugin_api_ConfigurationKeys::$imageConfigProperties->set("europeanLanguages", "wiriseuropeanlanguages");
 	com_wiris_plugin_api_ConfigurationKeys::$imageConfigProperties->set("defaultStretchy", "wirisimagedefaultstretchy");
 	com_wiris_plugin_api_ConfigurationKeys::$imageConfigProperties->set("parseMemoryLimit", "wirisparsememorylimit");
+	com_wiris_plugin_api_ConfigurationKeys::$imageConfigProperties->set("format", com_wiris_plugin_api_ConfigurationKeys::$IMAGE_FORMAT);
 	com_wiris_plugin_api_ConfigurationKeys::$imageConfigPropertiesInv = com_wiris_plugin_api_ConfigurationKeys::computeInverse(com_wiris_plugin_api_ConfigurationKeys::$imageConfigProperties);
 }

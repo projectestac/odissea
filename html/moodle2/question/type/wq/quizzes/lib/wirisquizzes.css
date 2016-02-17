@@ -95,7 +95,7 @@ div.wirishandwrapper {
 	max-width: 960px;
     margin-bottom: 5px;
 }
-div.wiristabs .wirishidden{
+.wirishidden{
     display: none;
 }
 div.wiristabs div.wirisselected {
@@ -362,6 +362,30 @@ div.wiristabs ul.wirisactionslist li a {
 div.wiristabs ul.wirisactionslist li a:hover {
     background-color: #fff;
 }
+
+div.wiristabs div.wirisjnlp {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+div.wirisjnlp {
+    border: solid 1px #999;
+    border-radius: 8px;
+    padding: 20px 15px;
+}
+
+div.wirisjnlptext {
+	margin-bottom: 10px;
+}
+div.wirisjnlpform {
+	margin-bottom: 10px;
+}
+div.wirisjnlpnotes span{
+	font-size: 10pt;
+	vertical-align: top;
+	margin-right: 5px;
+}
 /**
  *  Styles for new JsComponent model HTML
  **/
@@ -558,28 +582,160 @@ div.wirisalgorithmlanguage {
 /**
 This three are used both in studio and in main page.
 **/
-ul.wiristestassertionslist span.wiriscorrect {
-    background: url('?service=resource&name=correct.gif') no-repeat left;
-    padding-left:  18px;
-}
-ul.wiristestassertionslist span.wirisincorrect {
-    background: url('?service=resource&name=incorrect.gif') no-repeat left;
-    padding-left:  18px;
-}
-ul.wiristestassertionslist span.wirispartiallycorrect {
-    background: url('?service=resource&name=percent.gif') no-repeat left;
-    padding-left:  18px;
-}
+
 ul.wiristestassertionslist{
     margin:  0;
     padding: 0;
     list-style: none outside none;
 }
 
-.wirissmalllabel{
+ul.wiristestassertionslist span.wiriscorrect {
+    background: url('?service=resource&name=correct.gif') no-repeat left;
+}
+
+ul.wiristestassertionslist span.wirisincorrect {
+    background: url('?service=resource&name=incorrect.gif') no-repeat left;
+}
+
+ul.wiristestassertionslist span.wirispartiallycorrect {
+    background: url('?service=resource&name=percent.gif') no-repeat left;    
+}
+
+ul.wiristestassertionslist span {
+    padding-top: 2px;
+	padding-left:  18px;
+}
+
+span.wirisembeddedmathinput,
+input.wirisembeddedmathinput,
+img.wirisembeddedmathinput,
+input.wirisembeddedauthoringfield,
+img.wirisembeddedauthoringfield {
+    border: solid 1px #bbb;
+    padding: 3px 21px 3px 3px;
+    border-radius: 3px;
+    font-size: 11pt;
+	vertical-align: middle;
+    margin: 0px;
+}
+input.wirisembeddedtextinput{
+	border: solid 1px #bbb;
+	border-radius: 3px;
+	padding: 3px;
+	font-size: 11pt;
+	vertical-align: middle;
+	height: 16px;
+    width: 100px;
+}
+
+input.wirisembeddedmathinput,
+img.wirisembeddedmathinput {
+	background: #fff url("?service=resource&name=editor.gif") no-repeat;	
+}
+input.wirisembeddedauthoringfield ,
+img.wirisembeddedauthoringfield {
+	background: #fff url("?service=resource&name=quizzes.gif") no-repeat;
+}
+
+input.wirisembeddedstudioinput,
+img.wirisembeddedstudioinput,
+span.wirisembeddedstudioinput {
+	background: #fff url("?service=resource&name=studio.gif") no-repeat;
+}
+input.wirisembeddedstudioinput,
+img.wirisembeddedstudioinput {
+	padding: 3px 29px 3px 3px;
+}
+span.wirisembeddedstudioinput {
+	height: 18px;
+    padding: 7px 30px 7px 0px;
+    background-position: center center;
+}
+
+input.wirisembeddedmathinput,
+input.wirisembeddedauthoringfield {
+	height: 16px;
+    width: 100px;
+	background-position: 105px 3px;
+}
+.formulation input.wirisembeddedmathinput[type="text"] {
+width: 100px;
+}
+input.wirisembeddedstudioinput {
+	height: 24px;
+}
+
+.wirisassertionfeedback {
+    background: #fff;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    line-height: 15pt;
+    margin: 10px 0px 10px 0px;
+    width: 428px;
+}
+
+.wirisembeddedfeedback {
+	position: absolute;
+	margin: 20px;
+	z-index: 1000;
+	width: auto;
+}
+
+.wiriscorrectanswerfeedback span.wiriscorrect {
+    font-weight: bold;
+	color: #57a005;
+}
+.wiriscorrectanswerfeedback span.wirisincorrect {
+    font-weight: bold;
+	color: #c02705;
+}
+.wiriscorrectanswerfeedback span.wirispartiallycorrect {
+    font-weight: bold;
+	color: #c99a08;
+}
+
+.wirissmalllabel {
 	font-size: 0.9em;
 	vertical-align: text-top;
 }
+
+div.wirisanswerfielddecoration {
+	margin: 0;
+	padding: 0 19px 0 0;
+	background: no-repeat right;
+}
+div.wirisanswerfielddecoration.wirisembeddeddecoration {
+	display: inline-block;
+}
+
+div.wirisanswerfielddecoration.wiriscorrect {
+	background-image: url("?service=resource&name=correct.gif");
+}
+div.wirisanswerfielddecoration.wiriscorrect input[type="text"],
+div.wirisanswerfielddecoration.wiriscorrect img.wirisembeddedmathinput {
+	border-color: #b0cbc4;
+	background-color: #e9f2c4;
+}
+
+div.wirisanswerfielddecoration.wirisincorrect {
+	background-image: url("?service=resource&name=incorrect.gif");
+}
+div.wirisanswerfielddecoration.wirisincorrect input[type="text"],
+div.wirisanswerfielddecoration.wirisincorrect img.wirisembeddedmathinput {
+	border-color: #e69885;
+	background-color: #ffe8e3;
+}
+
+div.wirisanswerfielddecoration.wirispartiallycorrect {
+	background-image: url("?service=resource&name=percent.gif");
+}
+div.wirisanswerfielddecoration.wirispartiallycorrect input[type="text"],
+div.wirisanswerfielddecoration.wirispartiallycorrect img.wirisembeddedmathinput {
+	border-color: #cfbb76;
+	background-color: #f7f3bc;
+}
+
 /***
 Some CSS specially for moodle 2 standard theme.
 **/

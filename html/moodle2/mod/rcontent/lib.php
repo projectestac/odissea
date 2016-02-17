@@ -144,10 +144,6 @@ function rcontent_print_recent_activity($course,$isteacher,$timestart){
 	return true;
 }
 
-function rcontent_cron(){
-	return true;
-}
-
 /**
  * Update/create grade item for given rcontent
  * @param object $rcontent object with extra cmidnumber

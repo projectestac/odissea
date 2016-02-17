@@ -51,6 +51,21 @@ class com_wiris_quizzes_wrap_QuestionInstanceWrap implements com_wiris_quizzes_a
 			}
 		}
 	}
+	public function getStudentAnswersLength() {
+		try {
+			$this->wrapper->start();
+			$r = $this->instance->getStudentAnswersLength();
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function getStudentAnswer($index) {
 		try {
 			$this->wrapper->start();
@@ -138,6 +153,25 @@ class com_wiris_quizzes_wrap_QuestionInstanceWrap implements com_wiris_quizzes_a
 			}
 		}
 	}
+	public function getCompoundAnswerGrade($correctAnswer, $studentAnswer, $index, $question) {
+		try {
+			$qw = $question;
+			if($qw !== null) {
+				$question = $qw->question;
+			}
+			$this->wrapper->start();
+			$r = $this->instance->getCompoundAnswerGrade($correctAnswer, $studentAnswer, $index, $question);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function getAnswerGrade($correctAnswer, $studentAnswer, $question) {
 		try {
 			$qw = $question;
@@ -208,6 +242,24 @@ class com_wiris_quizzes_wrap_QuestionInstanceWrap implements com_wiris_quizzes_a
 			$r = $this->instance->isAnswerCorrect($answerIndex);
 			$this->wrapper->stop();
 			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function updateFromStudentQuestionInstance($instance) {
+		try {
+			$qiw = $instance;
+			if($qiw !== null) {
+				$instance = $qiw->instance;
+			}
+			$this->wrapper->start();
+			$this->instance->updateFromStudentQuestionInstance($instance);
+			$this->wrapper->stop();
 		}catch(Exception $»e) {
 			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
 			$e = $_ex_;

@@ -116,14 +116,14 @@ class agora_script_base{
 	 */
 	function cron() {
 		if ($this->cron && $this->can_be_executed()) {
-			mtrace('Script: '.$this->title);
+			mtrace('Execute script: '.$this->title);
 
 			$success = $this->_cron();
 
 			if ($success) {
-				mtrace('Done');
+				mtrace('Success script: '.$this->title);
 			} else {
-				mtrace('Failed');
+				mtrace('Failed script: '.$this->title);
 			}
 
 			return $success;

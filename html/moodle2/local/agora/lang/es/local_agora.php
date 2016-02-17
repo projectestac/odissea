@@ -41,3 +41,6 @@ $string['apligestlogdebug'] = 'Activa Debug Log';
 $string['apligestlogpath'] = 'Ruta de Log';
 $string['environment_url'] = 'WSDL URL';
 $string['environment_url_desc'] = 'Si está activada, se usará el WSDL para enviar correo, sinó, se usará la url por defecto para en entorno {$a}';
+
+$string['clean_adware'] = 'Limpia Adware';
+$string['detect_adware'] = 'Detecta Adware';

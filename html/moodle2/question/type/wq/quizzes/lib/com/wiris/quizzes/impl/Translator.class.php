@@ -36,7 +36,7 @@ class com_wiris_quizzes_impl_Translator {
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $languages;
+	static $languages = null;
 	static function getInstance($lang) {
 		if(com_wiris_quizzes_impl_Translator::$languages === null) {
 			com_wiris_quizzes_impl_Translator::$languages = new Hash();

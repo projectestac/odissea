@@ -1,3 +1,4 @@
+(function(){
 var $hxClasses = $hxClasses || {},$estr = function() { return js.Boot.__string_rec(this,''); };
 var Hash = $hxClasses["Hash"] = function() {
 	this.h = { };
@@ -2197,3 +2198,4 @@ haxe.Unserializer.CODES = null;
 haxe.remoting.HttpConnection.TIMEOUT = 10;
 js.Lib.onerror = null;
 com.wiris.plugin.viewer.EditorViewer.main();
+ }());

@@ -3,14 +3,14 @@
 class com_wiris_quizzes_impl_HandwritingConstraints {
 	public function __construct() {
 		if(!php_Boot::$skip_constructor) {
-		if(com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS === null) {
-			com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS = _hx_explode(" ", com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING);
+		if(com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols === null) {
+			com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols = _hx_explode(" ", com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING);
 		}
-		if(com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_CONFLICTS === null) {
-			com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_CONFLICTS = new _hx_array(array(new _hx_array(array("x", "X", "×")), new _hx_array(array(".", ",")), new _hx_array(array("2", "z")), new _hx_array(array("5", "s", "S", "\$")), new _hx_array(array("1", ",", "|", "'")), new _hx_array(array("i", "j")), new _hx_array(array("y", "4", "Y")), new _hx_array(array("p", "P")), new _hx_array(array("c", "C", "(")), new _hx_array(array("0", "o", "O", "°")), new _hx_array(array("Δ", "A")), new _hx_array(array("B", "β")), new _hx_array(array("∃", "3")), new _hx_array(array("9", "q", "g")), new _hx_array(array("9", "a")), new _hx_array(array("v", "V")), new _hx_array(array("r", "σ")), new _hx_array(array("t", "+")), new _hx_array(array("∈", "E")), new _hx_array(array("n", "h"))));
+		if(com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts === null) {
+			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts = new _hx_array(array(new _hx_array(array("x", "X", "×")), new _hx_array(array(".", ",")), new _hx_array(array("2", "z", "Z")), new _hx_array(array("5", "s", "S", "\$")), new _hx_array(array("1", ",", "|", "'")), new _hx_array(array("i", "j")), new _hx_array(array("y", "4", "Y")), new _hx_array(array("p", "P")), new _hx_array(array("c", "C", "(")), new _hx_array(array("0", "o", "O", "°")), new _hx_array(array("Δ", "A")), new _hx_array(array("B", "β")), new _hx_array(array("∃", "3")), new _hx_array(array("9", "q", "g")), new _hx_array(array("9", "a")), new _hx_array(array("v", "V")), new _hx_array(array("r", "σ")), new _hx_array(array("t", "+")), new _hx_array(array("∈", "E")), new _hx_array(array("n", "h")), new _hx_array(array("k", "K")), new _hx_array(array("u", "U")), new _hx_array(array("w", "W"))));
 		}
-		if(com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_DEFAULT_EXCLUDED === null) {
-			com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_DEFAULT_EXCLUDED = new _hx_array(array(new _hx_array(array("sin", "cos", "tan"))));
+		if(com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded === null) {
+			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded = new _hx_array(array(new _hx_array(array("sin", "cos", "tan", "log"))));
 		}
 	}}
 	public function getNegativeConstraints() {
@@ -20,10 +20,10 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 		$blocked = new _hx_array(array());
 		$i = null;
 		{
-			$_g1 = 0; $_g = com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_CONFLICTS->length;
+			$_g1 = 0; $_g = com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				$conflictSet = com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_CONFLICTS[$i1];
+				$conflictSet = com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts[$i1];
 				$exclude = new _hx_array(array());
 				$j = null;
 				{
@@ -50,10 +50,10 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 			}
 		}
 		{
-			$_g1 = 0; $_g = com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_DEFAULT_EXCLUDED->length;
+			$_g1 = 0; $_g = com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				$defaultExcluded = com_wiris_quizzes_impl_HandwritingConstraints::$SYMBOL_DEFAULT_EXCLUDED[$i1];
+				$defaultExcluded = com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded[$i1];
 				$exclude = true;
 				$j = null;
 				{
@@ -80,11 +80,11 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 			}
 		}
 		{
-			$_g1 = 0; $_g = com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS->length;
+			$_g1 = 0; $_g = com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				if(!com_wiris_quizzes_impl_HandwritingConstraints::inArray(com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS[$i1], $blocked)) {
-					$h->symbols->push(com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS[$i1]);
+				if(!com_wiris_quizzes_impl_HandwritingConstraints::inArray(com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols[$i1], $blocked)) {
+					$h->symbols->push(com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols[$i1]);
 				}
 				unset($i1);
 			}
@@ -209,7 +209,7 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 		$h = new com_wiris_quizzes_impl_HTMLTools();
 		$i = null;
 		{
-			$_g1 = 0; $_g = $q->getCorrectAnswerLength();
+			$_g1 = 0; $_g = $q->getCorrectAnswersLength();
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
 				$answer = $q->getCorrectAnswer($i1);
@@ -238,9 +238,9 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 			throw new HException('Unable to call �'.$m.'�');
 	}
 	static $ALL_SYMBOLS_STRING;
-	static $ALL_SYMBOLS;
-	static $SYMBOL_CONFLICTS;
-	static $SYMBOL_DEFAULT_EXCLUDED;
+	static $all_symbols;
+	static $symbol_conflicts;
+	static $symbol_default_excluded;
 	static $GENERAL = "General";
 	static $FRACTIONS = "Fraction";
 	static $BIGOPERATORS = "BigOperator";
@@ -278,7 +278,7 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HandwritingConstraints'; }
 }
-com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING = "0 1 2 3 4 5 6 7 8 9 a A α b B β c C . , ... : cos cm d dm Δ ÷ / e E = ∃ f " . "F ∀ g G γ ≥ > h H i I ∈ ∞ ∫ j k l L λ ≤ lim log { [ ( < m M μ n N ≠ o p " . "P φ π ± ′ q r R → } ] ) s S σ sin √ ∑ ∏ t T tan θ × u v V w x X y Y z | - " . "! + ^ ° € \$ £ %";
+com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING = "0 1 2 3 4 5 6 7 8 9 a A α b B β c C . , ... : cos cm d D dm Δ ÷ / e E = ∃ f " . "F ∀ g G γ ≥ > h H i I ∈ ∞ ∫ j J k K l L λ ≤ lim log { [ ( < m M μ n N ≠ o O p " . "P φ π ± ′ q Q r R → } ] ) s S σ sin √ ∑ ∏ t T tan θ × u U v V w W x X y Y z Z | - " . "! + ^ ° € \$ £ % frac";
 function com_wiris_quizzes_impl_HandwritingConstraints_0(&$�this, &$content, &$end, &$i, &$s, &$split, &$start, &$tag) {
 	{
 		$s1 = new haxe_Utf8(null);

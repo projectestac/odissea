@@ -19,8 +19,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2015082500;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->release = '3.54.1.1161';
+$plugin->version   = 2016020100;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->release = '3.55.2.1167';
 $plugin->requires  = 2014050800;        // Requires this Moodle version.
 $plugin->component = 'atto_wiris';      // Full name of the plugin (used for diagnostics).
 
@@ -31,7 +31,7 @@ $dbman = $DB->get_manager();
 if ($dbman->table_exists('config_plugins')) {
 	if (!get_config('atto_wiris', 'uninstall')) {
 		$plugin->dependencies = array (
-			 'filter_wiris' => 2015082500
+			 'filter_wiris' => 2016020100
 		);
 	}
 }

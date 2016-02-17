@@ -144,7 +144,7 @@ class script_health extends agora_script_base{
         print_collapsible_region_start('', 'cfg',$OUTPUT->heading('Variable $CFG'), '', true);
         $cf = $CFG;
         unset($cf->dbpass);
-        if(isset($cf->config_php_settings) && isset($cf->config_php_settings['dbpass'])){
+        if(isset($cf->config_php_settings) && isset($cf->config_php_settings['dbpass']) && (is_agora() || ($params['get'] != 'agora')) ){
             unset($cf->config_php_settings['dbpass']);
         }
         print_object($cf);

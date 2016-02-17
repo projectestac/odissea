@@ -70,19 +70,35 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 
 	// Class for modal dialog.
 	if (window.parent._wrs_conf_modalWindow) {
-		document.body.className += document.body.className + "wrs_modal_open";
+		document.body.className = !(document.body.className) ? "wrs_modal_open" : document.body.className + " wrs_modal_open";
 	}
 
 	var queryParams = wrs_int_opener.wrs_getQueryParams(window);
+	var customEditor;
 	var editor;
 	
 	wrs_attributes = wrs_int_opener._wrs_conf_editorParameters;
 	wrs_attributes.language = queryParams['lang'];
 
+	wrs_attributes['toolbar'] = null;
+
 	if (wrs_int_opener._wrs_conf_editorToolbar.length>0) {
 		wrs_attributes['toolbar'] = wrs_int_opener._wrs_conf_editorToolbar;
 	}
+	
+	if (customEditor = wrs_int_opener.wrs_int_getCustomEditorEnabled()) {		
+		wrs_attributes['toolbar'] = customEditor.toolbar ? customEditor.toolbar : wrs_attributes['toolbar'];
+	} 
 
+	
+
+	if (typeof(wrs_int_opener._wrs_int_wirisProperties) != 'undefined') {
+		for (var key in wrs_int_opener._wrs_int_wirisProperties) {
+			 if (wrs_int_opener._wrs_int_wirisProperties.hasOwnProperty(key) && typeof(wrs_int_opener._wrs_int_wirisProperties[key]) != 'undefined') {
+	    		 wrs_attributes[key] = wrs_int_opener._wrs_int_wirisProperties[key];
+	   		}
+		}
+	}
 	if (com.wiris.jsEditor.defaultBasePath) {
 		editor = com.wiris.jsEditor.JsEditor.newInstance(wrs_attributes);
 	}	
@@ -132,6 +148,9 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 		submitButton.value = 'Accept';
 	}
 	
+	wrs_int_opener.wrs_addEvent(window, 'beforeunload', function() {
+		wrs_int_opener.wrs_int_disableCustomEditors();
+	});
 	
 	wrs_int_opener.wrs_addEvent(submitButton, 'click', function () {
 		// In order to avoid n-formulas on n-clicks
@@ -145,8 +164,11 @@ wrs_int_opener.wrs_addEvent(window, 'load', function () {
 		var mathml = '';
 
 		if (!editor.isFormulaEmpty()) {
-			mathml += editor.getMathML();							// If isn't empty, get mathml code to mathml variable.
-			mathml = wrs_int_opener.wrs_mathmlEntities(mathml);		// Apply a parse.
+			mathml += editor.getMathML(); // If isn't empty, get mathml code to mathml variable.
+			if (customEditor) {
+				mathml = wrs_int_opener.wrs_mathmlAddEditorAttribute(mathml);	
+			}
+			mathml = wrs_int_opener.wrs_mathmlEntities(mathml);	// Apply a parse.
 		}
 	
 		/* FCKeditor integration begin */

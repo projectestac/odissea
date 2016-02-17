@@ -1,12 +1,6 @@
 <?php
 
 $string['pluginname'] = 'Analytics data Export';
-$string['enabled'] = 'Enabled';
-$string['enabled_desc'] = 'Enables analytics export for this site';
-$string['from_time']      = 'Only execute from this hour';
-$string['from_time_desc']      = 'Restrict execution time from this hour';
-$string['to_time']      = 'Only execute until this hour';
-$string['to_time_desc']      = 'Restrict execution time to this hour';
 
 $string['courses'] = 'Courses to export';
 $string['courses_help'] = 'The selected courses will be exported for analytics, if none selected, all courses will be exported.';
@@ -32,4 +26,3 @@ $string['profile_updated']		= 'Profile successfully updated';
 $string['profile_deleted']		= 'Profile successfully deleted';
 
 $string['export_data_settings']      = 'Export data settings';
-$string['cron_settings']      = 'Cron settings';

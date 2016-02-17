@@ -1,0 +1,10 @@
+.wirisincorrect  {	
+    background: url([[pix:core|i/grade_incorrect]]) no-repeat right !important;    
+}
+.wiriscorrect { 
+    background: url([[pix:core|i/grade_correct]]) no-repeat right !important;
+}
+
+.wirispartiallycorrect { 
+    background: url([[pix:core|i/grade_partiallycorrect]]) no-repeat right !important;   
+}

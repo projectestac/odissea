@@ -83,7 +83,7 @@ class com_wiris_quizzes_impl_UserData extends com_wiris_util_xml_SerializableImp
 		return new com_wiris_quizzes_impl_UserData();
 	}
 	public function onSerialize($s) {
-		$s->beginTag(com_wiris_quizzes_impl_UserData::$tagName);
+		$s->beginTag(com_wiris_quizzes_impl_UserData::$TAGNAME);
 		$this->randomSeed = $s->childInt("randomSeed", $this->randomSeed, -1);
 		$this->answers = $s->serializeArrayName($this->answers, "answers");
 		$this->parameters = $s->serializeArrayName($this->parameters, "parameters");
@@ -102,6 +102,6 @@ class com_wiris_quizzes_impl_UserData extends com_wiris_util_xml_SerializableImp
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $tagName = "userData";
+	static $TAGNAME = "userData";
 	function __toString() { return 'com.wiris.quizzes.impl.UserData'; }
 }

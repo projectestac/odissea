@@ -58,6 +58,7 @@ if ($ADMIN->fulltree) {
         $wirisplugin->begin();
         $was_editor_enabled = $wirisplugin->was_editor_enabled();
         $was_cas_enabled = $wirisplugin->was_cas_enabled();
+        $was_chem_editor_enabled = $wirisplugin->was_chem_editor_enabled();
         $conf = $wirisplugin->get_instance()->getConfiguration();
         $cache = $conf->getProperty("wiriscachedirectory",null);
         $formula = $conf->getProperty("wirisformuladirectory",null);
@@ -81,7 +82,7 @@ if ($ADMIN->fulltree) {
 
         $output = '';
         if ($was_editor_enabled) {
-            $settings->add(new admin_setting_configcheckbox('filter_wiris_editor_enable', 'WIRIS editor', '', '1'));
+            $settings->add(new admin_setting_configcheckbox('filter_wiris_editor_enable', get_string('wirismatheditor', 'filter_wiris'), '', '1'));
         } else {
             if (isset($CFG->filter_wiris_editor_enable) && $CFG->filter_wiris_editor_enable) {
                 set_config('filter_wiris_editor_enable', 0, 'config');
@@ -89,14 +90,24 @@ if ($ADMIN->fulltree) {
             }
         }
 
+        if ($was_chem_editor_enabled) {
+            $settings->add(new admin_setting_configcheckbox('filter_wiris_chem_editor_enable', get_string('wirischemeditor', 'filter_wiris'), '', '0'));
+        } else {
+            if (isset($CFG->filter_wiris_chem_editor_enable) && $CFG->filter_wiris_chem_editor_enable) {
+                set_config('filter_wiris_chem_editor_enable', 0, 'config');
+                $CFG->filter_wiris_chem_editor_enable = false;
+            }
+        }
+
         if ($was_cas_enabled) {
-            $settings->add(new admin_setting_configcheckbox('filter_wiris_cas_enable', 'WIRIS cas', '', '1'));
+            $settings->add(new admin_setting_configcheckbox('filter_wiris_cas_enable', get_string('wiriscas', 'filter_wiris'), '', '1'));
         } else {
             if (isset($CFG->filter_wiris_cas_enable) && $CFG->filter_wiris_cas_enable) {
                 set_config('filter_wiris_cas_enable', 0, 'config');
                 $CFG->filter_wiris_cas_enable = false;
             }
         }
+
     } else {
         $title = '<br /><br /><br /><span style="color:#aa0000; font-size:18px;">Attention! A component is missing for WIRIS filter to function correctly</span>';
         $output = $title . 
@@ -123,8 +134,8 @@ if ($ADMIN->fulltree) {
     }
 
     if ($CFG->version>=2012120300) {
-        $settings->add(new admin_setting_configcheckbox('filter_wiris/clear_cache', 'Clear cache', 'Clear wiris filter cache', false, true, false));
-        $settings->add(new admin_setting_configcheckbox('filter_wiris/uninstall', 'Uninstall mode', 'Allows WIRIS plugin to be uninstalled', false, true, false));
+        $settings->add(new admin_setting_configcheckbox('filter_wiris/clear_cache', get_string('clearcache', 'filter_wiris'), get_string('clearcachedesc', 'filter_wiris'), false, true, false));
+        $settings->add(new admin_setting_configcheckbox('filter_wiris/uninstall', get_string('uninstallmode', 'filter_wiris'), get_string('uninstallmodedesc', 'filter_wiris'), false, true, false));
     }
 
     //$output = '<a href="../filter/wiris/info.php">Visit plugin test page.</a>';

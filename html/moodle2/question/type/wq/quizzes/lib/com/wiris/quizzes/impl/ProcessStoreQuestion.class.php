@@ -8,9 +8,9 @@ class com_wiris_quizzes_impl_ProcessStoreQuestion extends com_wiris_quizzes_impl
 		return new com_wiris_quizzes_impl_ProcessGetCheckAssertions();
 	}
 	public function onSerialize($s) {
-		$s->beginTag(com_wiris_quizzes_impl_ProcessStoreQuestion::$tagName);
+		$s->beginTag(com_wiris_quizzes_impl_ProcessStoreQuestion::$TAGNAME);
 		$s->endTag();
 	}
-	static $tagName = "storeQuestion";
+	static $TAGNAME = "storeQuestion";
 	function __toString() { return 'com.wiris.quizzes.impl.ProcessStoreQuestion'; }
 }

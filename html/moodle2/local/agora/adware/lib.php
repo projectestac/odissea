@@ -78,21 +78,3 @@ function detect_adware($notused = false) {
 
 	return $adware;
 }
-
-function detect_adware_cron() {
-
-	// Only detects once a week
-	$last = get_config('local_agora', 'lastadware');
-    $cronperiod = 7*24*60*60;
-    if ($last + $cronperiod > time()) {
-        return;
-    }
-    set_config('lastadware', time(), 'local_agora');
-
-	$adware = detect_adware();
-	if ($adware) {
-		mtrace('WARNING: Adware detected');
-	}
-
-	return;
-}

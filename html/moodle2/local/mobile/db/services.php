@@ -26,6 +26,22 @@ defined('MOODLE_INTERNAL') || die;
 
 $functions = array(
 
+    'local_mobile_core_course_get_course_module' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_course_get_course_module',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Return information about a course module',
+        'type'        => 'read'
+    ),
+
+    'local_mobile_core_course_get_course_module_by_instance' => array(
+        'classname'   => 'local_mobile_external',
+        'methodname'  => 'core_course_get_course_module_by_instance',
+        'classpath'   => 'local/mobile/externallib.php',
+        'description' => 'Return information about a given module name and instance id',
+        'type'        => 'read'
+    ),
+
     'local_mobile_core_course_search_courses' => array(
         'classname'     => 'local_mobile_external',
         'methodname'    => 'core_course_search_courses',
@@ -548,6 +564,131 @@ $functions = array(
         'type' => 'read'
     ),
 
+    'local_mobile_mod_glossary_get_glossaries_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_glossaries_by_courses',
+        'description'   => 'Retrieve a list of glossaries from several courses.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_view_glossary' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_view_glossary',
+        'description'   => 'Notify the glossary as being viewed.',
+        'type'          => 'write',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_view_entry' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_view_entry',
+        'description'   => 'Notify a glossary entry as being viewed.',
+        'type'          => 'write',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_letter' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_letter',
+        'description'   => 'Browse entries by letter.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_date' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_date',
+        'description'   => 'Browse entries by date.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_categories' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_categories',
+        'description'   => 'Get the categories.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_category' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_category',
+        'description'   => 'Browse entries by category.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_authors' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_authors',
+        'description'   => 'Get the authors.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_author' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_author',
+        'description'   => 'Browse entries by author.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_author_id' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_author_id',
+        'description'   => 'Browse entries by author ID.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_search' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_search',
+        'description'   => 'Browse entries by search query.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_by_term' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_by_term',
+        'description'   => 'Browse entries by term (concept or alias).',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
+
+    'local_mobile_mod_glossary_get_entries_to_approve' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entries_to_approve',
+        'description'   => 'Browse entries to be approved.',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:approve'
+    ),
+
+    'local_mobile_mod_glossary_get_entry_by_id' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_glossary_get_entry_by_id',
+        'description'   => 'Get an entry by ID',
+        'type'          => 'read',
+        'classpath'     => 'local/mobile/externallib.php',
+        'capabilities'  => 'mod/glossary:view'
+    ),
 );
 
 $services = array(
@@ -558,6 +699,7 @@ $services = array(
             'core_webservice_get_site_info',
             'core_enrol_get_users_courses',
             'core_notes_create_notes',
+            'core_notes_delete_notes',
             'core_message_send_instant_messages',
             'core_enrol_get_enrolled_users',
             'core_user_get_course_user_profiles',
@@ -649,6 +791,22 @@ $services = array(
             'local_mobile_core_enrol_get_course_enrolment_methods',
             'local_mobile_enrol_guest_get_instance_info',
             'local_mobile_mod_forum_can_add_discussion',
+            'local_mobile_core_course_get_course_module',
+            'local_mobile_core_course_get_course_module_by_instance',
+            'local_mobile_mod_glossary_get_glossaries_by_courses',
+            'local_mobile_mod_glossary_view_glossary',
+            'local_mobile_mod_glossary_view_entry',
+            'local_mobile_mod_glossary_get_entries_by_letter',
+            'local_mobile_mod_glossary_get_entries_by_date',
+            'local_mobile_mod_glossary_get_categories',
+            'local_mobile_mod_glossary_get_entries_by_category',
+            'local_mobile_mod_glossary_get_authors',
+            'local_mobile_mod_glossary_get_entries_by_author',
+            'local_mobile_mod_glossary_get_entries_by_author_id',
+            'local_mobile_mod_glossary_get_entries_by_search',
+            'local_mobile_mod_glossary_get_entries_by_term',
+            'local_mobile_mod_glossary_get_entries_to_approve',
+            'local_mobile_mod_glossary_get_entry_by_id',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

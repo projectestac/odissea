@@ -5,30 +5,53 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct();
 	}}
-	public function isCheck() {
-		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$checks);
-	}
-	public function isEquivalence() {
-		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$equivalent) || com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SET === $this->name;
-	}
-	public function isSyntactic() {
-		return $this->inArray($this->name, com_wiris_quizzes_impl_Assertion::$syntactic);
-	}
-	public function inIntArray($e, $a) {
+	public function copyArrayInt($a) {
+		$b = new _hx_array(array());
 		$i = null;
 		{
 			$_g1 = 0; $_g = $a->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				if($e === $a[$i1]) {
-					return true;
-				}
+				$b[$i1] = $a[$i1];
 				unset($i1);
 			}
 		}
-		return false;
+		return $b;
 	}
-	public function inArray($e, $a) {
+	public function copy() {
+		$a = new com_wiris_quizzes_impl_Assertion();
+		$a->name = $this->name;
+		$a->correctAnswer = $this->copyArrayInt($this->correctAnswer);
+		$a->answer = $this->copyArrayInt($this->answer);
+		if($this->parameters !== null) {
+			$a->parameters = new _hx_array(array());
+			$i = null;
+			{
+				$_g1 = 0; $_g = $this->parameters->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$p = $this->parameters[$i1];
+					$q = new com_wiris_quizzes_impl_AssertionParam();
+					$q->name = $p->name;
+					$q->type = $p->type;
+					$q->content = $p->content;
+					$a->parameters->push($q);
+					unset($q,$p,$i1);
+				}
+			}
+		}
+		return $a;
+	}
+	public function isCheck() {
+		return com_wiris_quizzes_impl_Assertion::inArray($this->name, com_wiris_quizzes_impl_Assertion::$checks);
+	}
+	public function isEquivalence() {
+		return com_wiris_quizzes_impl_Assertion::inArray($this->name, com_wiris_quizzes_impl_Assertion::$equivalent) || com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SET === $this->name;
+	}
+	public function isSyntactic() {
+		return com_wiris_quizzes_impl_Assertion::isSyntacticName($this->name);
+	}
+	public function inIntArray($e, $a) {
 		$i = null;
 		{
 			$_g1 = 0; $_g = $a->length;
@@ -53,7 +76,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 			$_g1 = 0; $_g = $aa->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				if(!$this->inArray($aa[$i1], $bb)) {
+				if(!com_wiris_quizzes_impl_Assertion::inArray($aa[$i1], $bb)) {
 					return false;
 				}
 				unset($i1);
@@ -386,6 +409,23 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 			$value = "";
 		}
 		return $value;
+	}
+	static function inArray($e, $a) {
+		$i = null;
+		{
+			$_g1 = 0; $_g = $a->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if($e === $a[$i1]) {
+					return true;
+				}
+				unset($i1);
+			}
+		}
+		return false;
+	}
+	static function isSyntacticName($name) {
+		return com_wiris_quizzes_impl_Assertion::inArray($name, com_wiris_quizzes_impl_Assertion::$syntactic);
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.Assertion'; }
 }

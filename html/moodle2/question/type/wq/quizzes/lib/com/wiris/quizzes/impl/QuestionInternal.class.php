@@ -9,6 +9,9 @@ class com_wiris_quizzes_impl_QuestionInternal extends com_wiris_util_xml_Seriali
 	}
 	public function setAlgorithm($session) {
 	}
+	public function getCorrectAnswersLength() {
+		return 0;
+	}
 	public function getCorrectAnswer($index) {
 		return null;
 	}

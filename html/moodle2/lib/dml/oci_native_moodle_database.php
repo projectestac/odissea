@@ -353,7 +353,11 @@ class oci_native_moodle_database extends moodle_database {
         if ($stmt == false) {
             // XTEC AFEGIT: Add more information to parse_query error (TO REPORT)
             // @pferre22 2015.10.01
-            throw new dml_connection_exception('Can not parse sql query: '.$this->get_last_error()); //TODO: maybe add better info
+            $error = $this->get_last_error();
+            $error = $error ? '" Error description:( '.$this->get_last_error() .')' : "";
+            throw new dml_exception('dbdriverproblem','Can not parse sql query: "'.$sql. $error); //TODO: maybe add better info
+            // ORIGINAL
+            //throw new dml_connection_exception('Can not parse sql query'); //TODO: maybe add better info
             // FI XTEC
         }
         return $stmt;

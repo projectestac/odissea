@@ -169,6 +169,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
             
             $this->step->set_var('_matching_answer', $matchinganswerid, true);
             $this->step->set_var('_response_hash', $responsehash, true);
+            $this->step->set_var('_qi', $qi->serialize(), true);
             $this->step->reset_attempts();
 
             return $answer;

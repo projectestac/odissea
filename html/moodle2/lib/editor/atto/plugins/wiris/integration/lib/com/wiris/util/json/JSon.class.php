@@ -78,25 +78,33 @@ class com_wiris_util_json_JSon extends com_wiris_util_json_StringParser {
 		$this->nextToken();
 		return $h;
 	}
-	public function decodeInteger() {
+	public function decodeNumber() {
 		$sb = new StringBuf();
-		$hex = null;
 		$hex = false;
+		$floating = false;
 		do {
-			$sb->add(com_wiris_util_json_JSon_0($this, $hex, $sb));
+			$sb->add(com_wiris_util_json_JSon_0($this, $floating, $hex, $sb));
 			$this->nextToken();
 			if($this->c === 120) {
 				$hex = true;
-				$sb->add(com_wiris_util_json_JSon_1($this, $hex, $sb));
+				$sb->add(com_wiris_util_json_JSon_1($this, $floating, $hex, $sb));
 				$this->nextToken();
 			}
-		} while($this->c >= 48 && $this->c <= 58 || $hex && $this->isHexDigit($this->c));
-		return Std::parseInt($sb->b);
+			if($this->c === 46 || $this->c === 69 || $this->c === 101) {
+				$floating = true;
+			}
+		} while($this->c >= 48 && $this->c <= 58 || $hex && $this->isHexDigit($this->c) || $floating && ($this->c === 46 || $this->c === 69 || $this->c === 101 || $this->c === 45));
+		if($floating) {
+			return Std::parseFloat($sb->b);
+		} else {
+			return Std::parseInt($sb->b);
+		}
 	}
 	public function decodeString() {
 		$sb = new StringBuf();
 		$d = $this->c;
 		$this->nextToken();
+		$this->skipBlanks();
 		while($this->c !== $d) {
 			if($this->c === 92) {
 				$this->nextToken();
@@ -133,6 +141,27 @@ class com_wiris_util_json_JSon extends com_wiris_util_json_StringParser {
 		$this->nextToken();
 		return $sb->b;
 	}
+	public function decodeBooleanOrNull() {
+		$sb = new StringBuf();
+		while(com_wiris_util_xml_WCharacterBase::isLetter($this->c)) {
+			$sb->b .= chr($this->c);
+			$this->nextToken();
+		}
+		$word = $sb->b;
+		if($word === "true") {
+			return true;
+		} else {
+			if($word === "false") {
+				return false;
+			} else {
+				if($word === "null") {
+					return null;
+				} else {
+					throw new HException("Unrecognized keyword \"" . $word . "\".");
+				}
+			}
+		}
+	}
 	public function localDecode() {
 		$this->skipBlanks();
 		if($this->c === 123) {
@@ -148,9 +177,13 @@ class com_wiris_util_json_JSon extends com_wiris_util_json_StringParser {
 						return $this->decodeString();
 					} else {
 						if($this->c === 45 || $this->c >= 48 && $this->c <= 58) {
-							return $this->decodeInteger();
+							return $this->decodeNumber();
 						} else {
-							throw new HException("Unrecognized char " . _hx_string_rec($this->c, ""));
+							if($this->c === 116 || $this->c === 102 || $this->c === 110) {
+								return $this->decodeBooleanOrNull();
+							} else {
+								throw new HException("Unrecognized char " . _hx_string_rec($this->c, ""));
+							}
 						}
 					}
 				}
@@ -166,6 +199,12 @@ class com_wiris_util_json_JSon extends com_wiris_util_json_StringParser {
 	}
 	public function encodeLong($sb, $i) {
 		$sb->add("" . Std::string($i));
+	}
+	public function encodeFloat($sb, $d) {
+		$sb->add(com_wiris_system_TypeTools::floatToString($d));
+	}
+	public function encodeBoolean($sb, $b) {
+		$sb->add((($b) ? "true" : "false"));
 	}
 	public function encodeInteger($sb, $i) {
 		$sb->add("" . _hx_string_rec($i, ""));
@@ -284,7 +323,15 @@ class com_wiris_util_json_JSon extends com_wiris_util_json_StringParser {
 							if(Std::is($o, _hx_qtype("com.wiris.util.json.JSonIntegerFormat"))) {
 								$this->encodeIntegerFormat($sb, $o);
 							} else {
-								throw new HException("Impossible to convert to json object of type " . Std::string(Type::getClass($o)));
+								if(Std::is($o, _hx_qtype("Bool"))) {
+									$this->encodeBoolean($sb, $o);
+								} else {
+									if(Std::is($o, _hx_qtype("Float"))) {
+										$this->encodeFloat($sb, $o);
+									} else {
+										throw new HException("Impossible to convert to json object of type " . Std::string(Type::getClass($o)));
+									}
+								}
 							}
 						}
 					}
@@ -358,16 +405,50 @@ class com_wiris_util_json_JSon extends com_wiris_util_json_StringParser {
 			}
 		}
 	}
+	static function getString($o) {
+		return $o;
+	}
+	static function getFloat($n) {
+		if(Std::is($n, _hx_qtype("Float"))) {
+			return $n;
+		} else {
+			if(Std::is($n, _hx_qtype("Int"))) {
+				return $n + 0.0;
+			} else {
+				return 0.0;
+			}
+		}
+	}
+	static function getInt($n) {
+		if(Std::is($n, _hx_qtype("Float"))) {
+			return Math::round($n);
+		} else {
+			if(Std::is($n, _hx_qtype("Int"))) {
+				return $n;
+			} else {
+				return 0;
+			}
+		}
+	}
+	static function getBoolean($b) {
+		return $b;
+	}
+	static function getArray($a) {
+		return $a;
+	}
+	static function getHash($a) {
+		return $a;
+	}
 	function __toString() { return 'com.wiris.util.json.JSon'; }
 }
-function com_wiris_util_json_JSon_0(&$퍁his, &$hex, &$sb) {
+function com_wiris_util_json_JSon_0(&$퍁his, &$floating, &$hex, &$sb) {
 	{
 		$s = new haxe_Utf8(null);
 		$s->addChar($퍁his->c);
 		return $s->toString();
 	}
 }
-function com_wiris_util_json_JSon_1(&$퍁his, &$hex, &$sb) {
+function com_wiris_util_json_JSon_1(&$퍁his, &$floating, &$hex, &$sb) {
 	{
 		$s = new haxe_Utf8(null);
 		$s->addChar($퍁his->c);

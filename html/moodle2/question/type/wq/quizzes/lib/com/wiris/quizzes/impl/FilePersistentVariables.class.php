@@ -45,6 +45,6 @@ class com_wiris_quizzes_impl_FilePersistentVariables implements com_wiris_quizze
 			return null;
 		}
 	}
-	static $h;
+	static $h = null;
 	function __toString() { return 'com.wiris.quizzes.impl.FilePersistentVariables'; }
 }

@@ -14,9 +14,9 @@ if ($hassiteconfig) {
 
     $detected = get_config('local_agora', 'adware_detected');
     if (!empty($detected)) {
-        $ADMIN->add('root', new admin_externalpage('agora_adware', 'Neteja Adware', $CFG->wwwroot . '/local/agora/adware/index.php'));
+        $ADMIN->add('root', new admin_externalpage('agora_adware', get_string('clean_adware', 'local_agora'), $CFG->wwwroot . '/local/agora/adware/index.php'));
     } else {
-        $ADMIN->add('server', new admin_externalpage('agora_adware', 'Detecta Adware', $CFG->wwwroot . '/local/agora/adware/index.php'));
+        $ADMIN->add('server', new admin_externalpage('agora_adware', get_string('detect_adware', 'local_agora'), $CFG->wwwroot . '/local/agora/adware/index.php'));
     }
 
     //****************** SETTINGS ******************//

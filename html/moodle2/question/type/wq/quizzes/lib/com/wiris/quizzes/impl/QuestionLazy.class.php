@@ -75,6 +75,9 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 	public function getCorrectAnswer($index) {
 		return $this->getImpl()->getCorrectAnswer($index);
 	}
+	public function getCorrectAnswersLength() {
+		return $this->getImpl()->getCorrectAnswersLength();
+	}
 	public function setCorrectAnswer($index, $answer) {
 		$this->getImpl()->setCorrectAnswer($index, $answer);
 	}

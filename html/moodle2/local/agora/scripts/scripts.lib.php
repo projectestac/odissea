@@ -37,12 +37,11 @@ function get_all_scripts($param = false) {
 
 function scripts_execute_crons() {
 	$scripts = get_all_scripts('cron');
-	if (!empty($scripts)) {
-		mtrace('Executing Àgora Scripts crons...');
-		foreach ($scripts as $script) {
-			$script->cron();
-		}
-		mtrace('Àgora Scripts crons done!');
+	if (empty($scripts)) {
+		mtrace('No scripts to execute...');
+	}
+	foreach ($scripts as $script) {
+		$script->cron();
 	}
 }
 

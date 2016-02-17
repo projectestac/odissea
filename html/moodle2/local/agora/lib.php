@@ -600,18 +600,3 @@ function external_db($service) {
 
     return $handler;
 }
-
-function local_agora_cron() {
-    global $CFG;
-
-    require_once('scripts/scripts.lib.php');
-
-    mtrace("Executing Agora cron...", "\n");
-
-    scripts_execute_crons();
-
-    require_once('adware/lib.php');
-    detect_adware_cron();
-
-    mtrace("Agora cron done.", "\n");
-}

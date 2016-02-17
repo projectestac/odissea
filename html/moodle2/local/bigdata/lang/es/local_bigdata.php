@@ -1,12 +1,6 @@
 <?php
 
 $string['pluginname'] = 'Exportar datos para analizar';
-$string['enabled'] = 'Activado';
-$string['enabled_desc'] = 'Activa la exportación de datos para el análisis de este sitio';
-$string['from_time']      = 'Sólo ejecuta des de esta hora';
-$string['from_time_desc']      = 'Restringe la ejecución del cron a las horas seleccionadas';
-$string['to_time']      = 'Sólo ejecuta hasta esta hora';
-$string['to_time_desc']      = 'Restringe la ejecución del cron a las horas seleccionadas';
 
 $string['courses'] = 'Cursos a exportar';
 $string['courses_help'] = 'Los cursos seleccionados se exportaran para el análisis, si no se selecciona ninguno, se exportan todos los cursos.';
@@ -32,4 +26,3 @@ $string['profile_updated']		= 'Perfil actualizado correctamente';
 $string['profile_deleted']		= 'Perfil eliminado correctamente';
 
 $string['export_data_settings']      = 'Parámetros de datos para exportar';
-$string['cron_settings']      = 'Parámetros de cron';

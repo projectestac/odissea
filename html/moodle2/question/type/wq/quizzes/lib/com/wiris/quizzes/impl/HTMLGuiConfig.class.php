@@ -22,6 +22,18 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 					} else {
 						if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISESSAY) {
 							$this->essayConfig();
+						} else {
+							if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFEEDBACK) {
+								$this->showCorrectAnswerFeedback = false;
+								$this->showAssertionsFeedback = true;
+								$this->showFieldDecorationFeedback = false;
+							} else {
+								if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISEMBEDDEDFEEDBACK) {
+									$this->showCorrectAnswerFeedback = false;
+									$this->showAssertionsFeedback = false;
+									$this->showFieldDecorationFeedback = true;
+								}
+							}
 						}
 					}
 				}
@@ -57,6 +69,14 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 										} else {
 											if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISGRADINGFUNCTION) {
 												$this->optGradingFunction = true;
+											} else {
+												if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISASSERTIONSFEEDBACK) {
+													$this->showAssertionsFeedback = true;
+												} else {
+													if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISCORRECTFEEDBACK) {
+														$this->showCorrectAnswerFeedback = true;
+													}
+												}
 											}
 										}
 									}
@@ -124,7 +144,23 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 		$this->optAuxiliarCas = false;
 		$this->optAuxiliarCasReplaceEditor = false;
 		$this->optGradingFunction = false;
+		$this->optAnswerFieldInlineEditor = true;
+		$this->optAnswerFieldInlineHand = true;
+		$this->optAnswerFieldPlainText = true;
+		$this->optAnswerFieldPopupEditor = true;
+		$this->optCompoundAnswer = true;
+		$this->showCorrectAnswerFeedback = false;
+		$this->showAssertionsFeedback = true;
+		$this->showFieldDecorationFeedback = true;
 	}
+	public $showFieldDecorationFeedback;
+	public $showAssertionsFeedback;
+	public $showCorrectAnswerFeedback;
+	public $optAnswerFieldInlineHand;
+	public $optAnswerFieldPlainText;
+	public $optAnswerFieldPopupEditor;
+	public $optAnswerFieldInlineEditor;
+	public $optCompoundAnswer;
 	public $optGradingFunction;
 	public $optAuxiliarCasReplaceEditor;
 	public $optAuxiliarCas;
@@ -154,5 +190,9 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 	static $WIRISAUXILIARCAS = "wirisauxiliarcas";
 	static $WIRISAUXILIARCASREPLACEEDITOR = "wirisauxiliarcasreplaceeditor";
 	static $WIRISGRADINGFUNCTION = "wirisgradingfunction";
+	static $WIRISANSWERFEEDBACK = "wirisanswerfeedback";
+	static $WIRISEMBEDDEDFEEDBACK = "wirisembeddedfeedback";
+	static $WIRISASSERTIONSFEEDBACK = "wirisassertionsfeedback";
+	static $WIRISCORRECTFEEDBACK = "wiriscorrectfeedback";
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLGuiConfig'; }
 }

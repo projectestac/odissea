@@ -6,7 +6,7 @@ class script_delete_temporary_tables extends agora_script_base{
 
 	public $title = 'Esborra taules temporals';
 	public $info = "Esborra taules temporals de Moodle";
-	public $cron = false;
+	public $cron = true;
 	protected $test = false;
 	public $cli = true;
 	public $api = true;
@@ -14,6 +14,22 @@ class script_delete_temporary_tables extends agora_script_base{
 
 	protected function _execute($params = array(), $execute = true){
 		global $DB;
+
+		if($DB->get_dbfamily() != 'oracle') {
+			self::notify(' This script can only work with oracle databases');
+			return false;
+		}
+
+		// Only execute once a day (via CLI, assumes is cron)
+		if (CLI_SCRIPT) {
+			$last = get_config('local_agora', 'lastdeletetemptablescron');
+			$cronperiod = 24 * 60 * 60; // Once a day
+			if ($last + $cronperiod > time()) {
+				self::notify(' This script can only be run once a day via CLI');
+				return true;
+			}
+			set_config('lastdeletetemptablescron', time(), 'local_agora');
+		}
 
 		$time = time() - 60 * 60 * 24; // One day
 
@@ -53,4 +69,11 @@ class script_delete_temporary_tables extends agora_script_base{
 		self::notify('- '.$sql);
 	}
 
+	public function is_visible() {
+		global $DB;
+		if($DB->get_dbfamily() == 'oracle') {
+			return parent::is_visible();
+		}
+		return false;
+	}
 }

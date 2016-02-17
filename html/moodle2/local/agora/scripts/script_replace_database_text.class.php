@@ -180,7 +180,7 @@ class script_replace_database_text extends agora_script_base{
         // Commit the changes
         $r = oci_commit($con);
         if (!$r) {
-            $e = oci_error($conn);
+            $e = oci_error($con);
             trigger_error(htmlentities($e['message']), E_USER_ERROR);
         }
 

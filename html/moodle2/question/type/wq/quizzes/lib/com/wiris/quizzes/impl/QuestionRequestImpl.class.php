@@ -51,8 +51,8 @@ class com_wiris_quizzes_impl_QuestionRequestImpl extends com_wiris_util_xml_Seri
 	}
 	public function onSerialize($s) {
 		$s->beginTag(com_wiris_quizzes_impl_QuestionRequestImpl::$tagName);
-		$this->question = $s->serializeChildName($this->question, com_wiris_quizzes_impl_QuestionImpl::$tagName);
-		$this->userData = $s->serializeChildName($this->userData, com_wiris_quizzes_impl_UserData::$tagName);
+		$this->question = $s->serializeChildName($this->question, com_wiris_quizzes_impl_QuestionImpl::$TAGNAME);
+		$this->userData = $s->serializeChildName($this->userData, com_wiris_quizzes_impl_UserData::$TAGNAME);
 		$this->processes = $s->serializeArrayName($this->processes, "processes");
 		$this->meta = $s->serializeArrayName($this->meta, "meta");
 		$s->endTag();

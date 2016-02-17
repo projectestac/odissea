@@ -42,4 +42,8 @@ if ($hassiteconfig) {
     $settings->add(new admin_setting_configcheckbox('local_mobile/mod_scorm_protectpackagedownloads',
                         get_string('mod_scorm_protectpackagedownloads', 'local_mobile'),
                         get_string('mod_scorm_protectpackagedownloads_desc', 'local_mobile'), 0));
+
+    $url = new moodle_url('/local/mobile/checkconfiguration.php', array('sesskey' => sesskey()));
+    $link = html_writer::link($url, get_string('checkpluginconfiguration', 'local_mobile'));
+    $settings->add(new admin_setting_heading('checkpluginconfiguration', '', $link));
 }

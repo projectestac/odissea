@@ -9,7 +9,7 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 		return new com_wiris_quizzes_impl_LocalData();
 	}
 	public function onSerialize($s) {
-		$s->beginTag(com_wiris_quizzes_impl_LocalData::$tagName);
+		$s->beginTag(com_wiris_quizzes_impl_LocalData::$TAGNAME);
 		$this->name = $s->attributeString("name", $this->name, null);
 		$this->value = $s->textContent($this->value);
 		$s->endTag();
@@ -26,7 +26,7 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $tagName = "data";
+	static $TAGNAME = "data";
 	static $KEY_OPENANSWER_COMPOUND_ANSWER = "inputCompound";
 	static $KEY_OPENANSWER_INPUT_FIELD = "inputField";
 	static $KEY_SHOW_CAS = "cas";

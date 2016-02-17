@@ -5,12 +5,12 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct($url,$listener);
 		try {
-			$this->MAX_CONNECTIONS = Std::parseInt(com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS));
+			$this->max_connections = Std::parseInt(com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS));
 		}catch(Exception $»e) {
 			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
 			$t = $_ex_;
 			{
-				$this->MAX_CONNECTIONS = 10;
+				$this->max_connections = 10;
 			}
 		}
 	}}
@@ -33,7 +33,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		if($connections === null) {
 			$connections = new _hx_array(array());
 		}
-		while($connections->length > $this->MAX_CONNECTIONS) {
+		while($connections->length > $this->max_connections) {
 			$connections->remove($connections[$connections->length - 1]);
 		}
 		$n = Math::floor(haxe_Timer::stamp());
@@ -53,7 +53,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 				unset($i1,$con);
 			}
 		}
-		if($this->slot === -1 && $connections->length < $this->MAX_CONNECTIONS) {
+		if($this->slot === -1 && $connections->length < $this->max_connections) {
 			$this->slot = $connections->length;
 			$connections->push($this->current);
 		}
@@ -78,7 +78,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		$p->unlockVariable(com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$DATA_KEY_MAX_CONNECTIONS);
 	}
 	public function request($post) {
-		if($this->MAX_CONNECTIONS === -1) {
+		if($this->max_connections === -1) {
 			parent::request($post);
 		} else {
 			if($this->getConnectionSlot()) {
@@ -91,7 +91,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 	}
 	public $current;
 	public $slot;
-	public $MAX_CONNECTIONS;
+	public $max_connections;
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))
 			return call_user_func_array($this->$m, $a);

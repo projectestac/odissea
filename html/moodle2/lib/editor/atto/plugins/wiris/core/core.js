@@ -70,6 +70,18 @@ if (!(window._wrs_conf_CASClassName)) {
 	_wrs_conf_CASClassName = 'Wiriscas';
 }
 
+// Mutation observers to avoid wiris image formulas class be removed.
+
+var wrs_observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.oldValue == _wrs_conf_imageClassName && mutation.attributeName == 'class' ) {
+    	mutation.target.className = _wrs_conf_imageClassName ;
+    }
+  });
+});
+
+var wrs_observer_config = { attributes: true, attributeOldValue:true };
+
 /**
  * Adds element events.
  * @param object target Target
@@ -340,19 +352,7 @@ function wrs_createImageCASSrc(image, appletCode) {
  * @param wirisProperties
  * @return string Image src
  */
-function wrs_createImageSrc(mathml, wirisProperties) {
-	var data = (wirisProperties) ? wirisProperties : {};
-	data['mml'] = mathml;
-	
-	if (window._wrs_conf_useDigestInsteadOfMathml && _wrs_conf_useDigestInsteadOfMathml) {
-		data['returnDigest'] = 'true';
-	}
-	
-	if (_wrs_conf_setSize) {
-		// Request metrics of the generated image
-		data['metrics'] = 'true';
-		data['centerbaseline'] = 'false';
-	}
+function wrs_createImageSrc(mathml, data) {
 
 	// Full base64 method (edit & save)
 	if (_wrs_conf_saveMode == 'base64' && _wrs_conf_editMode == 'default') {
@@ -360,14 +360,14 @@ function wrs_createImageSrc(mathml, wirisProperties) {
 	}
 	
 	var result = wrs_getContent(_wrs_conf_createimagePath, data);
-	
+
 	if (result.indexOf('@BASE@') != -1) {
 		// Replacing '@BASE@' with the base URL of createimage.
 		var baseParts = _wrs_conf_createimagePath.split('/');
 		baseParts.pop();
 		result = result.split('@BASE@').join(baseParts.join('/'));
 	}
-	
+
 	return result;
 }
 
@@ -1357,7 +1357,7 @@ function wrs_insertElementOnSelection(element, focusElement, windowTarget) {
 		focusElement.focus();
 		
 		if (_wrs_isNewElement) {
-			if (document.selection) {
+			if (document.selection && document.getSelection != 0) {
 				var range = windowTarget.document.selection.createRange();
 				windowTarget.document.execCommand('InsertImage', false, element.src);
 				
@@ -1576,7 +1576,7 @@ function wrs_mathmlEntities(mathml) {
 			if (end >= 0) {
 				var container = document.createElement('span');
 				container.innerHTML = mathml.substring(i, end + 1);
-				toReturn += '&#' + (container.innerText || container.textContent).charCodeAt(0) + ';';
+				toReturn += '&#' + wrs_fixedCharCodeAt((container.innerText || container.textContent),0) + ';';
 				i = end;
 			}
 			else {
@@ -1592,27 +1592,64 @@ function wrs_mathmlEntities(mathml) {
 }
 
 /**
+ * Add wrs::type attribute to mathml if the mathml has been created with a custom editor
+ * for example, chemistry.
+ */
+function wrs_mathmlAddEditorAttribute(mathml) {
+	var toReturn = '';
+
+	var start = mathml.indexOf('<math');
+	if (start == 0 ) {
+		end = mathml.indexOf('>');
+		if (mathml.indexOf("class") == -1 ) {
+			// Adding custom editor type
+			toReturn = mathml.substr(start, end) + ' class="wrs_' + wrs_int_getCustomEditorEnabled().toolbar + '">';		
+			toReturn += mathml.substr(end+1, mathml.length);
+		}
+		return toReturn;
+	}
+	return mathml;
+
+}
+
+/**
+ * Fix charCodeAt() javascript function to handle non-Basic-Multilingual-Plane characters.
+ * @param string string
+ * @param int idx
+ * @return int
+ */
+
+function wrs_fixedCharCodeAt(str, idx) {  
+  idx = idx || 0;
+  var code = str.charCodeAt(idx);
+  var hi, low;
+  
+  // High surrogate (could change last hex to 0xDB7F to treat high
+  // private surrogates as single characters)
+  if (0xD800 <= code && code <= 0xDBFF) {
+    hi = code;
+    low = str.charCodeAt(idx + 1);
+    if (isNaN(low)) {
+      throw 'High surrogate not followed by low surrogate in fixedCharCodeAt()';
+    }
+    return ((hi - 0xD800) * 0x400) + (low - 0xDC00) + 0x10000;
+  }
+  if (0xDC00 <= code && code <= 0xDFFF) { // Low surrogate
+    // We return false to allow loops to skip this iteration since should have
+    // already handled high surrogate above in the previous iteration
+    return false;    
+  }
+  return code;
+}
+
+/**
  * Gets the accessible text of a given formula.
  * @param string mathml
  * @param string language
  * @return string
  */
-function wrs_mathmlToAccessible(mathml, language) {
-	var data = {
-		'service': 'mathml2accessible',
-		'mml': mathml
-	};
-
-	// All render params must be sent to generate same digest as createImage
-	if (language) {
-		data['lang'] = language;
-	}
-
-	if (_wrs_conf_setSize) {
-		// Request metrics of the generated image
-		data['metrics'] = 'true';
-		data['centerbaseline'] = 'false';
-	}
+function wrs_mathmlToAccessible(mathml, language, data) {
+	data['service'] = 'mathml2accessible';
 
 	return wrs_getContent(_wrs_conf_servicePath, data);
 }
@@ -1709,14 +1746,58 @@ function wrs_mathmlToImgObject(creator, mathml, wirisProperties, language) {
 	var imgObject = creator.createElement('img');
 	//imgObject.title = 'Double click to edit';
 	imgObject.align = 'middle';
-	
+
+	// data
+	var data = (wirisProperties) ? wirisProperties : {};
+
+	if (window._wrs_conf_useDigestInsteadOfMathml && _wrs_conf_useDigestInsteadOfMathml) {
+		data['returnDigest'] = 'true';
+	}
+
+	data['mml'] = mathml;
+
+	if (_wrs_conf_setSize) {
+		// Request metrics of the generated image
+		data['metrics'] = 'true';
+		data['centerbaseline'] = 'false';
+	}
+
+	// Full base64 method (edit & save)
+	if (_wrs_conf_saveMode == 'base64' && _wrs_conf_editMode == 'default') {
+		data['base64'] = true;
+	}
+
+	// _wrs_int_wirisProperties contains some js render params. Since mathml can support render params, js params should be send only to editor, not to render.
+	// Render js params
+	// if (typeof(_wrs_int_wirisProperties != undefined)) {
+	// 	for (var key in _wrs_int_wirisProperties) {
+	// 		 if (_wrs_int_wirisProperties.hasOwnProperty(key)) {
+	//     		 data[key] = _wrs_int_wirisProperties[key];
+	//    		}
+	// 	}
+	// }
+
 	if (window._wrs_conf_enableAccessibility && _wrs_conf_enableAccessibility) {
-		imgObject.alt = wrs_mathmlToAccessible(mathml, language);
+		imgObject.alt = wrs_mathmlToAccessible(mathml, language, data);
 	}
 	
 	imgObject.className = _wrs_conf_imageClassName;
+
 	
-	var result = wrs_createImageSrc(mathml, wirisProperties);
+	// TODO Custom Editors: class="wrs_toolbar" should be given by the editor
+	// so the first condition shouldn't be longer necessary.
+	if (customEditor = wrs_int_getCustomEditorEnabled()) {
+		imgObject.setAttribute('data-custom-editor', customEditor.toolbar);
+	} else if (mathml.indexOf('class="') != -1) { // We check here if the mathmnl has been created from a customEditor (such chemistry) 
+		//  to add data-custom-editor attribute to img object (if necessary).
+		mathmlSubstring = mathml.substring(mathml.indexOf('class="')+'class="'.length, mathml.length);
+		mathmlSubstring = mathmlSubstring.substring(0, mathmlSubstring.indexOf('"'))
+		// class=wrs_toolbar (wrs_.length = 4)
+		mathmlSubstring = mathmlSubstring.substring(4,mathmlSubstring.length);		
+		imgObject.setAttribute('data-custom-editor', mathmlSubstring);
+	}
+	
+	var result = wrs_createImageSrc(mathml, data);
 	/* if (_wrs_conf_setSize) {
 		var ar = wrs_urlToAssArray(result);
 		width = ar['cw'];
@@ -1730,7 +1811,7 @@ function wrs_mathmlToImgObject(creator, mathml, wirisProperties, language) {
 		}
 		// result = wrs_assArrayToUrl(ar);
 	}*/
-	
+
 	if (window._wrs_conf_useDigestInsteadOfMathml && _wrs_conf_useDigestInsteadOfMathml) {
 		var parts = result.split(':', 2);
 		imgObject.setAttribute(_wrs_conf_imageMathmlAttribute, parts[0]);
@@ -1747,6 +1828,7 @@ function wrs_mathmlToImgObject(creator, mathml, wirisProperties, language) {
 		}
 	}
 	
+	wrs_observer.observe(imgObject, wrs_observer_config);
 	return imgObject;
 }
 
@@ -1986,16 +2068,22 @@ function wrs_parseMathmlToImg(content, characters, language) {
 	
 	while (start != -1) {
 		output += content.substring(end, start);
+		// Avoid WIRIS images to be parsed.
+		imageMathmlAtrribute = content.indexOf(_wrs_conf_imageMathmlAttribute);
 		end = content.indexOf(mathTagEnd, start);
 		
 		if (end == -1) {
 			end = content.length - 1;
+		} else if (imageMathmlAtrribute != -1) {
+			// First close tag of img attribute 
+			// If a mathmlAttribute exists should be inside a img tag.
+			end += content.indexOf("/>", start);
 		}
 		else {
 			end += mathTagEnd.length;
 		}
-		
-		if (!wrs_isMathmlInAttribute(content, start)){
+
+		if (!wrs_isMathmlInAttribute(content, start) && imageMathmlAtrribute == -1){
 			var mathml = content.substring(start, end);
 			mathml = (characters == _wrs_safeXmlCharacters) ? wrs_mathmlDecode(mathml) : wrs_mathmlEntities(mathml);
 			output += wrs_createObjectCode(wrs_mathmlToImgObject(document, mathml, null, language));
@@ -2347,7 +2435,7 @@ function wrs_createModalWindow(title, iframeParams, deviceProperties, modalPrope
 	}
 	containerDiv.appendChild(iframe);
 
-	document.body.className = document.body.className + "wrs_modal_open";
+	document.body.className = !(document.body.className) ? "wrs_modal_open" : document.body.className + " wrs_modal_open";
 
 	if (!deviceProperties['isMobile'] && !deviceProperties['isIOS'] && !deviceProperties['isAndroid']) { // Desktop
 		wrs_createModalWindowDesktop(modalDiv, containerDiv, iframe, iframeParams);
@@ -2654,7 +2742,7 @@ function wrs_closeModalWindow() {
 		if (document.querySelector('meta[name=viewport]')) {
 			document.querySelector('meta[name=viewport]').content = "";
 		}
-		document.body.className = document.body.className.replace('wrs_modal_open', '');
+		document.body.className = document.body.className != 'wrs_modal_open' ? document.body.className.replace(' wrs_modal_open', '') : document.body.className = ""
 		var modalDiv = document.getElementsByClassName('wrs_modal_overlay')[0];
 		closeFunction = document.body.removeChild(modalDiv);
 }
@@ -2956,5 +3044,40 @@ function wrs_getMetricsFromBytes(bytes) {
 		}
 
 		return arr;
+	}
+}
+
+/**
+ * Get custom active editor
+ */
+function wrs_int_getCustomEditorEnabled() {
+	var customEditorEnabled = null;
+	Object.keys(_wrs_int_customEditors).forEach(function(key) {		
+			if (_wrs_int_customEditors[key].enabled) {
+				customEditorEnabled = _wrs_int_customEditors[key]
+			}
+	});
+
+	return customEditorEnabled;	
+}
+
+/**
+ * Disable all custom editors
+ */
+function wrs_int_disableCustomEditors(){
+	Object.keys(_wrs_int_customEditors).forEach(function(key) {
+			_wrs_int_customEditors[key].enabled = false;								
+	}); 
+}
+
+/**
+ * Enable a custom editor
+ * @param string editor
+ */
+function wrs_int_enableCustomEditor(editor) {
+	// Only one custom editor enabled at the same time.
+	wrs_int_disableCustomEditors();
+	if (_wrs_int_customEditors[editor]) {
+		_wrs_int_customEditors[editor].enabled = true;
 	}
 }

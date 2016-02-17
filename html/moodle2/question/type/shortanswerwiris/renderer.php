@@ -13,16 +13,7 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer{
         $question = $qa->get_question();
         $currentanswer = $qa->get_last_qt_var('answer');
         
-        $inputname = $qa->get_qt_field_name('answer');
-        $inputattributes = array(
-            'type' => 'text',
-            'name' => $inputname,
-            'value' => $currentanswer,
-            'id' => $inputname,
-            'size' => 80,
-            'class' => 'wirisanswerfield',
-            'style' => 'display:none;',
-        );
+        $inputname = $qa->get_qt_field_name('answer');        
 
         if ($options->readonly) {
             $inputattributes['readonly'] = 'readonly';
@@ -32,7 +23,28 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer{
         if ($options->correctness) {
             list($fraction, $state) = $question->grade_response(array('answer' => $currentanswer));
             $inputattributes['class'] .= ' ' . $this->feedback_class($fraction);
-            $feedbackimg = $this->feedback_image($fraction);
+            // Feedback image delegate to wirisembeddedfeedback class.
+            //$feedbackimg = $this->feedback_image($fraction);
+            // Embeddedfeedback
+            $inputattributes = array(
+                'type' => 'text',
+                'name' => $inputname,
+                'value' => $currentanswer,
+                'id' => $inputname,
+                'size' => 80,
+                'class' => 'wirisanswerfield wirisembeddedfeedback',
+                'style' => 'display:none;',
+            );
+        } else {
+            $inputattributes = array(
+                'type' => 'text',
+                'name' => $inputname,
+                'value' => $currentanswer,
+                'id' => $inputname,
+                'size' => 80,
+                'class' => 'wirisanswerfield',
+                'style' => 'display:none;',
+            );
         }
 
         $questiontext = $question->format_questiontext($qa);

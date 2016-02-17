@@ -24,10 +24,11 @@ class com_wiris_plugin_configuration_MoodleConfigurationUpdater implements com_w
 
     public $was_editor_enabled;
     public $was_cas_enabled;
+    public $was_chem_editor_enabled;
     
     public $editor_plugin;
 
-    public function com_wiris_plugin_configuration_MoodleConfigurationUpdater() {
+    public function __construct() {
         $scriptName = explode('/', $_SERVER["SCRIPT_FILENAME"]);
         $scriptName = array_pop($scriptName);
         
@@ -100,6 +101,15 @@ class com_wiris_plugin_configuration_MoodleConfigurationUpdater implements com_w
         } else {
             $configuration['wiriscasenabled'] = false;
         }
+
+        // WIRIS Chem editor.
+        $this->was_chem_editor_enabled = $this->evalParameter($configuration['wirischemeditorenabled']);
+        if (isset($CFG->filter_wiris_chem_editor_enable)) {
+            $configuration['wirischemeditorenabled'] = $this->was_chem_editor_enabled && $this->evalParameter($CFG->filter_wiris_chem_editor_enable) && $filter_enabled;
+        } else {
+            $configuration['wirischemeditorenabled'] = false;
+        }
+
         // Where is the plugin.
         $configuration['wiriscontextpath'] = $this->editor_plugin->url;
         // Encoded XML

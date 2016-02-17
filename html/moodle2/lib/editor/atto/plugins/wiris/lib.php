@@ -9,6 +9,7 @@ function atto_wiris_strings_for_js() {
       array(
         'wiris_editor_title',
         'wiris_cas_title',
+        'wiris_chem_editor_title',
       ),
       'atto_wiris');
 }

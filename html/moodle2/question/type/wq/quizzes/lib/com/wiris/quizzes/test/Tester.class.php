@@ -110,13 +110,13 @@ class com_wiris_quizzes_test_Tester {
 					}
 				}
 			}
-			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 845, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 850, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 			$this->endCall();
 		}catch(Exception $ªe) {
 			$_ex_ = ($ªe instanceof HException) ? $ªe->e : $ªe;
 			$e = $_ex_;
 			{
-				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 848, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 853, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 				throw new HException($e);
 			}
 		}
@@ -153,10 +153,10 @@ class com_wiris_quizzes_test_Tester {
 	public function responseParameters($res, $q, $qi) {
 		$qi->update($res);
 		$html = "<p>√âs cert o fals?</p><p>#s</p>";
-		$expected = "<p>√âs cert o fals?</p><p>El polinomi <math><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></math> t&#233; grau <math><mrow><mn>3</mn></mrow></math>.</p>";
+		$expected = "<p>√âs cert o fals?</p><p>El polinomi <math><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></math> t√© grau <math><mrow><mn>3</mn></mrow></math>.</p>";
 		$computed = $qi->expandVariables($html);
 		if(!($computed === $expected)) {
-			throw new HException("Failed test!");
+			throw new HException("Failed test! \x0AComputed: " . $computed . "\x0A" . "Expected: " . $expected);
 		}
 	}
 	public function testParameters() {
@@ -203,6 +203,9 @@ class com_wiris_quizzes_test_Tester {
 		$this->numCalls++;
 		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
 		$r = $b->newEvalRequest("<math><mn>1234567</mn><mo>.</mo><mn>8</mn></math>", "<math><mn>1</mn><mo>&#160;</mo><mn>234</mn><mo>&#160;</mo><mn>567</mn><mo>.</mo><mn>8</mn></math>", $q, null);
+		$this->numCalls++;
+		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
+		$r = $b->newEvalRequest("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>4</mn><mn>9</mn></mfrac><mo>+</mo><mfenced open=\"[\" close=\"]\"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfenced close=\")\" open=\"(\"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></mfenced><mo>&#183;</mo><mfenced close=\")\" open=\"(\"><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>+</mo><mn>2</mn></mrow></mfenced></mrow></mfenced><mo>:</mo><mfenced close=\")\" open=\"(\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mfenced></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>4</mn><mn>9</mn></mfrac><mo>+</mo><mfenced open=\"[\" close=\"]\"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfenced close=\")\" open=\"(\"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></mfenced><mo>&#183;</mo><mfenced close=\")\" open=\"(\"><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>+</mo><mn>2</mn></mrow></mfenced></mrow></mfenced><mo>:</mo><mfenced close=\")\" open=\"(\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mfenced></math>", $q, null);
 		$this->numCalls++;
 		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
 	}

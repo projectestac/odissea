@@ -77,6 +77,23 @@ class com_wiris_plugin_impl_RenderImpl implements com_wiris_plugin_api_Render{
 		}
 		return $r;
 	}
+	public function getMetricsFromSvg($svg, &$output) {
+		$output = $output;
+		$svgXml = com_wiris_util_xml_WXmlUtils::parseXML($svg);
+		$width = $svgXml->firstElement()->get("width");
+		$height = $svgXml->firstElement()->get("height");
+		$baseline = $svgXml->firstElement()->get("wrs:baseline");
+		$r = null;
+		if($output !== null) {
+			$output["width"] = "" . $width;
+			$output["height"] = "" . $height;
+			$output["baseline"] = "" . $baseline;
+			$r = "";
+		} else {
+			$r = "&cw=" . $width . "&ch=" . $height . "&cb=" . $baseline;
+		}
+		return $r;
+	}
 	public function getMetrics($digest, &$output) {
 		$output = $output;
 		$bs = null;
@@ -89,7 +106,12 @@ class com_wiris_plugin_impl_RenderImpl implements com_wiris_plugin_api_Render{
 				return "";
 			}
 		}
-		return $this->getMetricsFromBytes($bs, $output);
+		if(_hx_index_of($this->plugin->getConfiguration()->getProperty("wirisimageformat", "png"), "svg", null) !== -1) {
+			$b = haxe_io_Bytes::ofData($bs);
+			return $this->getMetricsFromSvg($b->toString(), $output);
+		} else {
+			return $this->getMetricsFromBytes($bs, $output);
+		}
 	}
 	public function getEditorParametersList() {
 		$pl = $this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMETERS_LIST, com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMETERS_DEFAULT_LIST);
@@ -142,7 +164,7 @@ class com_wiris_plugin_impl_RenderImpl implements com_wiris_plugin_api_Render{
 		}
 		$store = $this->plugin->getStorageAndCache();
 		$bs = null;
-		$bs = $store->retreiveData($digest, "png");
+		$bs = $store->retreiveData($digest, $this->plugin->getConfiguration()->getProperty("wirisimageformat", "png"));
 		if($bs === null) {
 			if($this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMS, null) !== null) {
 				$json = com_wiris_util_json_JSon::decode($this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMS, null));
@@ -186,7 +208,7 @@ class com_wiris_plugin_impl_RenderImpl implements com_wiris_plugin_api_Render{
 			}
 			$h->request(true);
 			$b = haxe_io_Bytes::ofString($h->getData());
-			$store->storeData($digest, "png", $b->b);
+			$store->storeData($digest, $this->plugin->getConfiguration()->getProperty("wirisimageformat", "png"), $b->b);
 			$bs = $b->b;
 		}
 		return $bs;

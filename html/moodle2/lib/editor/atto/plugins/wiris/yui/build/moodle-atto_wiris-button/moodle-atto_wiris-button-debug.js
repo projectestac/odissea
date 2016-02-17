@@ -90,6 +90,9 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         // Moodle
         window._wrs_isMoodle24 = true;
 
+        // Custom editors
+        window._wrs_int_customEditors = {chemistry : {name: 'Chemistry', toolbar : 'chemistry', icon : 'chem.gif', enabled : false, confVariable : '_wrs_conf_chemEnabled'}}
+
         // Load WIRIS plugin core javascript file only once.
         if (!window._wrs_int_coreLoading) {
             window._wrs_int_coreLoading = true;
@@ -134,6 +137,15 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                     callback: this._editorButton
                 });
             }
+            if (window[_wrs_int_customEditors['chemistry'].confVariable]) {
+                this.addButton({
+                    title: 'wiris_chem_editor_title',
+                    buttonName: 'wiris_chem_editor',
+                    icon:'chem',
+                    iconComponent: 'atto_wiris',
+                    callback: this._chemEditorButton
+                });
+            }
             if (window._wrs_conf_CASEnabled) {
                 this.addButton({
                     title: 'wiris_cas_title',
@@ -165,6 +177,18 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         else {
             var host = this.get('host');
             _wrs_int_currentPlugin = this;
+            _wrs_int_popup = wrs_openEditorWindow(this._lang, host.editor.getDOMNode(), false);
+        }
+    },
+
+    _chemEditorButton: function() {
+        if (_wrs_int_popup) {
+            _wrs_int_popup.focus();
+        }
+        else {
+            var host = this.get('host');
+            _wrs_int_currentPlugin = this;
+            wrs_int_enableCustomEditor('chemistry');
             _wrs_int_popup = wrs_openEditorWindow(this._lang, host.editor.getDOMNode(), false);
         }
     },
@@ -217,6 +241,11 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
      * */
     _handleFormulaDoubleClick: function(e) {
         window._wrs_temporalImage = e.currentTarget.getDOMNode();
+        if (customEditor = window._wrs_temporalImage.getAttribute('data-custom-editor')) {                
+                if (window[_wrs_int_customEditors[customEditor].confVariable]) {
+                    wrs_int_enableCustomEditor(customEditor);               
+                }
+        }
         window._wrs_isNewElement = false;
         this._editorButton();
         e.stopPropagation();

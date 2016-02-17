@@ -92,6 +92,11 @@ class WIRISpluginWrapper {
         return $this->moodleConfig->was_editor_enabled;
     }
 
+    public function was_chem_editor_enabled() {
+        $this->get_instance()->getConfiguration()->getProperty("wirischemeditorenabled",null); // force configuration load
+        return $this->moodleConfig->was_chem_editor_enabled;
+    }
+
     public function clear_folder($folder) {
         if (!is_null($folder)) {
             $dirStructure = (glob(rtrim($folder, "/").'/*'));

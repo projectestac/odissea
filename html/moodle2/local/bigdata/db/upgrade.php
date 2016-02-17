@@ -57,6 +57,17 @@ function xmldb_local_bigdata_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2015021700, 'local', 'bigdata');
     }
 
+    if ($oldversion < 2016021601) {
+        $task = \core\task\manager::get_scheduled_task('\local_bigdata\task\export');
+        if ($task) {
+            $config = get_config('local_bigdata');
+            $enabled = $config && $config->enabled;
+            $task->set_disabled(!$enabled);
+        }
+
+        upgrade_plugin_savepoint(true, 2016021601, 'local', 'bigdata');
+    }
+
 
     return true;
 }

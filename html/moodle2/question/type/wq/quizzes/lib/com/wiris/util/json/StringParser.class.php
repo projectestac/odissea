@@ -25,7 +25,7 @@ class com_wiris_util_json_StringParser {
 	public function nextSafeToken() {
 		if($this->i < $this->n) {
 			$this->c = haxe_Utf8::charCodeAt(_hx_substr($this->str, $this->i, null), 0);
-			$this->i += haxe_Utf8::length(com_wiris_util_json_StringParser_0($this));
+			$this->i += strlen((com_wiris_util_json_StringParser_0($this)));
 		} else {
 			$this->c = -1;
 		}

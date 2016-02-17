@@ -41,3 +41,6 @@ $string['apligestlogdebug'] = 'Enable Debug Log';
 $string['apligestlogpath'] = 'Log path';
 $string['environment_url'] = 'WSDL URL';
 $string['environment_url_desc'] = 'If set, this WSDL Mailsender will be used, if not, the default url for {$a} environment will be used';
+
+$string['clean_adware'] = 'Clean Adware';
+$string['detect_adware'] = 'Detect Adware';

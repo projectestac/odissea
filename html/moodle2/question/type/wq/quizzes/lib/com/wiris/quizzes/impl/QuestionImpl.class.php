@@ -8,6 +8,108 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 			com_wiris_quizzes_impl_QuestionImpl::$defaultOptions = com_wiris_quizzes_impl_QuestionImpl::getDefaultOptions();
 		}
 	}}
+	public function moveAnswers($correct, $user) {
+		$i = null;
+		$answers = new _hx_array(array());
+		{
+			$_g1 = 0; $_g = $correct->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if($i1 !== $correct[$i1]) {
+					$answers[$i1] = $this->getCorrectAnswer($correct[$i1]);
+					if($answers[$i1] === null) {
+						$answers[$i1] = "";
+					}
+				}
+				unset($i1);
+			}
+		}
+		{
+			$_g1 = 0; $_g = $correct->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if($correct[$i1] !== $i1) {
+					$this->setCorrectAnswer($i1, $answers[$i1]);
+				}
+				unset($i1);
+			}
+		}
+		if($this->correctAnswers !== null) {
+			$i = $this->correctAnswers->length - 1;
+			while($i >= $correct->length) {
+				$this->correctAnswers->remove($this->correctAnswers[$i]);
+				$i--;
+			}
+		}
+		if($this->assertions !== null) {
+			$newAssertions = new _hx_array(array());
+			{
+				$_g1 = 0; $_g = $this->assertions->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$a = $this->assertions[$i1];
+					$correctAnswers = $a->getCorrectAnswers();
+					$newCorrectAnswersArray = new _hx_array(array());
+					$j = null;
+					{
+						$_g3 = 0; $_g2 = $correctAnswers->length;
+						while($_g3 < $_g2) {
+							$j1 = $_g3++;
+							$k = null;
+							{
+								$_g5 = 0; $_g4 = $correct->length;
+								while($_g5 < $_g4) {
+									$k1 = $_g5++;
+									if($correct[$k1] === $correctAnswers[$j1]) {
+										$newCorrectAnswersArray->push($k1);
+									}
+									unset($k1);
+								}
+								unset($_g5,$_g4);
+							}
+							unset($k,$j1);
+						}
+						unset($_g3,$_g2);
+					}
+					if($newCorrectAnswersArray->length > 0) {
+						$newCorrectAnswers = new _hx_array(array());
+						{
+							$_g3 = 0; $_g2 = $newCorrectAnswersArray->length;
+							while($_g3 < $_g2) {
+								$j1 = $_g3++;
+								$newCorrectAnswers[$j1] = $newCorrectAnswersArray[$j1];
+								unset($j1);
+							}
+							unset($_g3,$_g2);
+						}
+						if($correctAnswers->length > 1 || $newCorrectAnswers->length === 1) {
+							$a->setCorrectAnswers($newCorrectAnswers);
+							$a->setAnswers($newCorrectAnswers);
+							$newAssertions->push($a);
+						} else {
+							$k = null;
+							{
+								$_g3 = 0; $_g2 = $newCorrectAnswers->length;
+								while($_g3 < $_g2) {
+									$k1 = $_g3++;
+									$b = $a->copy();
+									$b->setCorrectAnswer($newCorrectAnswers[$k1]);
+									$b->setAnswer($newCorrectAnswers[$k1]);
+									$newAssertions->push($b);
+									unset($k1,$b);
+								}
+								unset($_g3,$_g2);
+							}
+							unset($k);
+						}
+						unset($newCorrectAnswers);
+					}
+					unset($newCorrectAnswersArray,$j,$i1,$correctAnswers,$a);
+				}
+			}
+			$this->assertions = $newAssertions;
+		}
+	}
 	public function isImplicitOption($name, $value) {
 		$i = 0;
 		while($i < com_wiris_quizzes_impl_Option::$options->length) {
@@ -362,7 +464,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		}
 		return -1;
 	}
-	public function getCorrectAnswerLength() {
+	public function getCorrectAnswersLength() {
 		return com_wiris_quizzes_impl_QuestionImpl_0($this);
 	}
 	public function getCorrectAnswer($index) {
@@ -544,7 +646,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		return new com_wiris_quizzes_impl_QuestionImpl();
 	}
 	public function onSerialize($s) {
-		$s->beginTag(com_wiris_quizzes_impl_QuestionImpl::$tagName);
+		$s->beginTag(com_wiris_quizzes_impl_QuestionImpl::$TAGNAME);
 		$this->id = $s->cacheAttribute("id", $this->id, null);
 		$this->wirisCasSession = $s->childString("wirisCasSession", $this->wirisCasSession, null);
 		$this->correctAnswers = $s->serializeArrayName($this->correctAnswers, "correctAnswers");
@@ -569,8 +671,8 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $defaultOptions;
-	static $tagName = "question";
+	static $defaultOptions = null;
+	static $TAGNAME = "question";
 	static function getDefaultOptions() {
 		$dopt = new Hash();
 		$dopt->set(com_wiris_quizzes_api_QuizzesConstants::$OPTION_EXPONENTIAL_E, "e");

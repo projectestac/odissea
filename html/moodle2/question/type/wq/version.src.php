@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->version = @moodle.date@;
 $plugin->requires = 2011120500; // Moodle 2.2
 $plugin->wirisversion = '@quizzes.version@';
+$plugin->component = 'qtype_wq';
 $plugin->dependencies = array (
 	 'filter_wiris' => ANY_VERSION
 );

@@ -18,5 +18,6 @@
 //
 
 $string['pluginname'] = 'WIRIS plugin for Atto';
-$string['wiris_editor_title'] = 'WIRIS editor';
-$string['wiris_cas_title'] = 'WIRIS cas';
+$string['wiris_editor_title'] = 'Math editor';
+$string['wiris_cas_title'] = 'Calculator';
+$string['wiris_chem_editor_title'] = 'Chemistry editor';

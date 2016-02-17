@@ -55,6 +55,9 @@ class com_wiris_plugin_impl_FolderTreeStorageAndCache implements com_wiris_plugi
 		if($service === "png") {
 			return "png";
 		}
+		if($service === "svg") {
+			return "svg";
+		}
 		return $service . ".txt";
 	}
 	public function getAndCheckFolder($key) {

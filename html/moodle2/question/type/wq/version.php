@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2015082500;
+$plugin->version = 2016020100;
 $plugin->requires = 2011120500; // Moodle 2.2
-$plugin->wirisversion = '3.35.0.0900';
+$plugin->wirisversion = '3.38.0.0906';
+$plugin->component = 'qtype_wq';
 $plugin->dependencies = array (
 	 'filter_wiris' => ANY_VERSION
 );

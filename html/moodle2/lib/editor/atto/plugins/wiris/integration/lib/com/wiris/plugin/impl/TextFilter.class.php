@@ -44,6 +44,13 @@ class com_wiris_plugin_impl_TextFilter {
 		$height = com_wiris_system_PropertiesTools::getProperty($output, "height", null);
 		$baseline = com_wiris_system_PropertiesTools::getProperty($output, "baseline", null);
 		$dpi = Std::parseFloat($this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$WIRIS_DPI, "96"));
+		if($this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMS, null) !== null) {
+			$json = com_wiris_util_json_JSon::decode($this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$EDITOR_PARAMS, null));
+			$decodedHash = $json;
+			if($decodedHash->exists("dpi")) {
+				$dpi = Std::parseFloat($decodedHash->get("dpi"));
+			}
+		}
 		$mml = $this->plugin->getConfiguration()->getProperty(com_wiris_plugin_api_ConfigurationKeys::$FILTER_OUTPUT_MATHML, "false") === "true";
 		$f = 96 / $dpi;
 		$dwidth = $f * Std::parseFloat($width);
