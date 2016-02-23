@@ -1,12 +1,14 @@
 <?php
 
-//XTEC ************ FITXER AFEGIT - Fitxer del Nagios per comprovar funciona l'espai web
+//XTEC ************ FITXER AFEGIT - Fitxer del Nagios per comprovar el funcionament de l'espai web
 //2014.01.28
 
 require_once('config-works.php');
 
 $state = '';
-$con = oci_connect($CFG->dbuser, $CFG->dbpass, $CFG->dbname);
+$dirToCheck = $CFG->dataroot . '/';
+
+$con = oci_pconnect($CFG->dbuser, $CFG->dbpass, $CFG->dbname);
 
 if ($con) {
     $sql = 'SELECT count(*) FROM ' . $CFG->prefix . 'course WHERE category = 0';
@@ -32,5 +34,11 @@ if ($con) {
 }
 
 oci_close($con);
+
+// Check moodledata
+if (!is_writable($dirToCheck)) {
+    $state = ($state == 'Aplicacio:OK') ? '' : $state;
+    $state .= "<br />El directori de dades del <strong>Moodle</strong> ($dirToCheck), o bé no està muntat o bé no té permís d'escriptura.<br>";
+}
 
 echo $state;

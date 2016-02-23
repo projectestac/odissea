@@ -3,6 +3,11 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes in progress
+---------------------------------------------------------------------------------------
+- Works.php: Added check for data directories (Trello #1110)
+
+
 Changes 16.02.22
 ---------------------------------------------------------------------------------------
 - Updated all related wiris plugins
@@ -10,6 +15,7 @@ Changes 16.02.22
 - Updates to prepare for Moodle 3 version
 - Updated Local Mobile
 - Odissea GTAF Sync: Change remote file deletion and add log and Solve problem changing directories inside ftp
+
 
 Changes 16.02.01
 ---------------------------------------------------------------------------------------
