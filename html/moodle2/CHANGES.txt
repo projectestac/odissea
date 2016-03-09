@@ -3,9 +3,15 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
-Changes in progress
+Changes 16.03.14
 ---------------------------------------------------------------------------------------
 - Works.php: Added check for data directories (Trello #1110)
+- GTAF: Fixed bug changing directories inside FTP
+- Configurable-reports: updated version to 2.3.8
+- Updated LangPacks
+- Added progress bar block and updated submodules in order to get progress bar working
+- MDL-48778 assign: Use proper latest attempt for quickgrading prechecks
+- Added delete temporary tables to cron
 
 
 Changes 16.02.22
