@@ -45,6 +45,7 @@ $string['auth_invalidnewemailkey'] = 'Error: si esteu intentant confirmar un can
 $string['authloginviaemail'] = 'Permet l\'inici de sessió mitjançant el correu electrònic';
 $string['authloginviaemail_desc'] = 'Permet als usuaris utilitzar indistintament el nom d\'usuari i l\'adreça electrònica (mentre sigui única) per iniciar la sessió.';
 $string['auth_multiplehosts'] = 'Podeu especificar diversos ordinadors (p. e. host1.com; host2.com; host3.com)';
+$string['auth_notconfigured'] = 'El mètode d\'autenticació {$a} no està configurat.';
 $string['auth_outofnewemailupdateattempts'] = 'Heu esgotat els intents d\'actualització de la vostra adreça de correu electrònic. La vostra sol·licitud s\'ha cancel·lat.';
 $string['auth_passwordisexpired'] = 'La vostra contrasenya ha caducat. Voleu canviar-la ara?';
 $string['auth_passwordwillexpire'] = 'La vostra contrasenya caducarà aviat ({$a} dies). Voleu canviar-la ara?';

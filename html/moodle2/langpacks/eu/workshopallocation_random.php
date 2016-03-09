@@ -39,7 +39,7 @@ $string['nogroupusers'] = '<p>Oharra: Tailerra \'Taldeek elkar ikusten dute\' mo
 
 <p>Hurrengo erabiltzaileek une honetan ez daude inongo taldetan: {$a}</p>';
 $string['numofdeallocatedassessment'] = '{$a} esleipen kentzen';
-$string['numofrandomlyallocatedsubmissions'] = 'Ausaz {$a} bidalketa esleitzen ari dira';
+$string['numofrandomlyallocatedsubmissions'] = 'Ausaz {$a} bidalketak esleitzen';
 $string['numofreviews'] = 'Berrikusketa-kopurua';
 $string['numofselfallocatedsubmissions'] = '{$a} bidalketa automatikoki esleitzen';
 $string['numperauthor'] = 'bidalketako';

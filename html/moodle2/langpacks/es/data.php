@@ -135,6 +135,7 @@ $string['deletenotenrolled'] = 'Eliminar entradas de usuarios no matriculados';
 $string['deletewarning'] = '¿Está seguro de que desea eliminar estos ajustes previos?';
 $string['descending'] = 'Descendente';
 $string['directorynotapreset'] = '{$a->directory} No preset: archivos perdidos: {$a->missing_files}';
+$string['disapprove'] = 'Desaprobar';
 $string['download'] = 'Descargar';
 $string['edit'] = 'Edición';
 $string['editcomment'] = 'Editar comentario';

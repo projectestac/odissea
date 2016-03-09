@@ -76,4 +76,8 @@ class script_delete_temporary_tables extends agora_script_base{
 		}
 		return false;
 	}
+
+	protected function _cron(){
+		return $this->_execute();
+	}
 }

@@ -36,7 +36,7 @@ $string['legacyfiles'] = 'Migração de ficheiro de disciplina antiga';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
 $string['modulename'] = 'Página';
-$string['modulename_help'] = 'O recurso Página permite criar uma página web usando o editor html. A página pode exibir texto, imagens, som, video, links e código html incorporado, como o Google Maps.
+$string['modulename_help'] = 'O recurso Página permite criar uma página web usando o editor html. A página pode exibir texto, imagens, som, video, hiperligações e código html incorporado, como o Google Maps.
 
 As vantagens de utilizar o recurso página em vez do recurso ficheiro é que a Página pode ser mais fácil de aceder (por exemplo, para utilizadores que acedem a partir de dispostivos móveis) e mais fácil de atualizar.
 

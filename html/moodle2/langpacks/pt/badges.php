@@ -57,7 +57,7 @@ $string['archivebadge'] = 'Gostaria de apagar a Medalha \'{$a}\', mas manter as 
 $string['archiveconfirm'] = 'Apagar e manter as Medalhas existentes que foram emitidas';
 $string['archivehelp'] = '<p>Esta opção significa que a Medalha será marcada como "retirada" e não aparecerá mais na lista de Medalhas. Os utilizadores deixarão de poder obter esta Medalha, no entanto, os atuais destinatários de Medalhas continuarão a poder exibir esta Medalha na sua página de perfil e nas suas backpacks externas. </p><p> Se pretende que os utilizadores mantenham o acesso às Medalhas recebidas, é importante selecionar esta opção em vez de excluir totalmente as Medalhas.</p>';
 $string['attachment'] = 'Anexar Medalha à mensagem';
-$string['attachment_help'] = 'Se ativar esta opção, uma Medalha emitida será anexada ao email para que os destinatários possam fazer o seu download. Para usar esta opção, a funcionalidade de anexos de email tem de ser ativada nas configurações do site.';
+$string['attachment_help'] = 'Se ativar esta opção, uma Medalha emitida será anexada ao email para que os destinatários a possam descarregar. Para usar esta opção, a funcionalidade de anexos de email tem de ser ativada nas configurações do site.';
 $string['award'] = 'Atribuir Medalha';
 $string['awardedtoyou'] = 'Atribuídas a mim';
 $string['awardoncron'] = 'O acesso às Medalhas foi ativado com sucesso. Esta Medalha pode ser recebida por um grande número de utilizadores. Para assegurar o desempenho do site, esta ação levará algum tempo a processar.';
@@ -266,7 +266,7 @@ $string['localbadgesh_help'] = 'Todas as Medalhas ganhas dentro deste web site p
 
 Pode gerir as suas Medalhas aqui e torná-las públicas ou privadas na página do seu perfil.
 
-Pode fazer o download de todas as Medalhas, ou de cada Medalha separadamente, e guardá-las no seu computador. As Medalhas das quais fez download podem ser adicionadas ao seu serviço externo de Backpack.';
+Pode descarregar todas as Medalhas, ou de cada Medalha separadamente, e guardá-las no seu computador. As Medalhas que descarregou podem ser adicionadas ao seu serviço externo de Backpack.';
 $string['localbadgesp'] = 'Medalhas de {$a}:';
 $string['localconnectto'] = 'Para partilhar estas Medalhas para além deste web site tem de <a href="{$a}">ligar a uma Backpack</a>.';
 $string['makeprivate'] = 'Tornar privadas';

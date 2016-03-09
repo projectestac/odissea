@@ -29,6 +29,9 @@ $string['pluginnotenabledorconfigured'] = 'The Moodle Mobile local plugin must b
 $string['local_mobilesettings'] = 'Settings';
 $string['local_mobiletypeoflogin'] = 'Choose the type of login';
 $string['local_mobiletypeoflogin_key'] = 'Type of login';
+$string['local_mobileurlscheme'] = 'URL scheme for login via a browser window.';
+$string['local_mobileurlscheme_key'] = 'URL scheme';
+
 $string['loginintheapp'] = 'Via the app';
 $string['logininthebrowser'] = 'Via a browser window (for SSO plugins)';
 $string['mod_scorm_protectpackagedownloads'] = 'Protect package downloads';

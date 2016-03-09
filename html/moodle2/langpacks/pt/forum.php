@@ -248,7 +248,7 @@ $string['forumtype_help'] = 'Existem 5 tipos de fóruns:
 * Um único tópico de discussão - Discussão com um só tópico ao qual todos podem responder (não pode ser usado com grupos separados)
 * Cada participante cria um tópico - Cada aluno pode colocar apenas um tópico de discussão ao qual todos podem responder
 * Fórum de perguntas e respostas - Os alunos devem responder primeiro à pergunta antes de poder visualizar as respostas dos colegas
-* Fórum standard em formato blogue - Fórum aberto no qual todos os participantes podem criar novos tópicos e em que cada tópico de discussão é exibido numa página com o link "Discutir este tópico".
+* Fórum standard em formato blogue - Fórum aberto no qual todos os participantes podem criar novos tópicos e em que cada tópico de discussão é exibido numa página com a hiperligação "Discutir este tópico".
 * Fórum standard para utilização geral - Fórum aberto no qual todos os participantes podem criar novos tópicos.';
 $string['forum:viewallratings'] = 'Ver as avaliações atribuídas por cada participante';
 $string['forum:viewanyrating'] = 'Ver a avaliação global de cada participante';

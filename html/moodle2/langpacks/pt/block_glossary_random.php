@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addentry'] = 'Adicionar uma nova entrada';
-$string['askaddentry'] = 'Quando os utilizadores puderem adicionar termos ao glossário, exibir um link com este texto';
-$string['askinvisible'] = 'Quando os utilizadores não puderem editar nem ver o glossário, exibir este texto (sem link)';
-$string['askviewglossary'] = 'Quando os utilizadores puderem ver o glossário mas não puderem adicionar termo, exibir um link com este texto';
+$string['askaddentry'] = 'Quando os utilizadores puderem adicionar termos ao glossário, exibir uma hiperligação com este texto';
+$string['askinvisible'] = 'Quando os utilizadores não puderem editar nem ver o glossário, exibir este texto (sem hiperligação)';
+$string['askviewglossary'] = 'Quando os utilizadores puderem ver o glossário mas não puderem adicionar termo, exibir uma hiperligação com este texto';
 $string['glossary_random:addinstance'] = 'Adicionar um novo bloco de Termo aleatório do glossário';
 $string['glossary_random:myaddinstance'] = 'Adicionar um novo bloco Termo aleatório do glossário à Minha página principal';
 $string['intro'] = 'Verifique que esta disciplina tem pelo menos um glossário, com pelo menos um termo. Depois, poderá ajustar as configurações seguintes';
@@ -47,4 +47,4 @@ $string['showconcept'] = 'Exibir conceito (nome) de cada termo';
 $string['title'] = 'Título';
 $string['type'] = 'Como é selecionado um novo termo';
 $string['viewglossary'] = 'Ver todos os termos';
-$string['whichfooter'] = 'É possível exibir links para ações do glossário associado a este bloco. O bloco exibirá apenas links para ações que estejam ativas para esse glossário.';
+$string['whichfooter'] = 'É possível exibir hiperligações para ações do glossário associado a este bloco. O bloco exibirá apenas hiperligações para ações que estejam ativas para esse glossário.';

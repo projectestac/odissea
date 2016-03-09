@@ -29,10 +29,10 @@ $string['activities'] = 'Atividades';
 $string['add'] = 'Adicionar';
 $string['addcommunitycourse'] = 'Adicionar disciplina';
 $string['addcourse'] = 'Procurar';
-$string['addedtoblock'] = 'O link para esta disciplina foi adicionado ao seu bloco Procurar comunidades';
+$string['addedtoblock'] = 'A hiperligação para esta disciplina foi adicionada ao seu bloco Procurar comunidades';
 $string['additionalcoursedesc'] = '{$a->lang} Criador: {$a->creatorname} - Editor: {$a->publishername} - Assunto: {$a->subject}
 - Público: {$a->audience} - Nível de ensino: {$a->educationallevel} - Licença: {$a->license}';
-$string['addtocommunityblock'] = 'Guardar o link para esta disciplina';
+$string['addtocommunityblock'] = 'Guardar a hiperligação para esta disciplina';
 $string['audience'] = 'Direcionado para';
 $string['audience_help'] = 'Que tipo de disciplina procura? Á semelhança das disciplinas tradicionais destinadas a alunos, pode também pesquisar por disciplinas para professores e administradores Moodle.';
 $string['blocks'] = 'Blocos';

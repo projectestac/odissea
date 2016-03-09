@@ -43,7 +43,7 @@ $string['missinglangparent'] = 'Das Sprachpaket \'{$a->parent}\' fehlt für \'{$
 $string['nolangupdateneeded'] = 'Alle Sprachpakete sind aktuell.';
 $string['pluginname'] = 'Sprachpakete';
 $string['purgestringcaches'] = 'Sprachcache löschen';
-$string['remotelangnotavailable'] = 'Moodle kann keine Serververbindung herstellen, um Sprachpakete automatisch zu installieren. Sie müssen die Sprachpakete manuell von <a href="http://download.moodle.org/langpack/">download.moodle.org/langpack</a> herunterladen und im Serververzeichnis \'{$a}\' speichern.';
+$string['remotelangnotavailable'] = 'Moodle kann keine Serververbindung herstellen, um Sprachpakete automatisch zu installieren. Laden Sie die Sprachpakete manuell von <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> herunter und speichern Sie diese im Serververzeichnis \'{$a}\'.';
 $string['uninstall'] = 'Ausgewähltes Sprachpaket deinstallieren';
 $string['uninstallconfirm'] = 'Möchten Sie das Sprachpaket \'{$a}\' wirklich deinstallieren?';
 $string['updatelangs'] = 'Sprachpakete aktualisieren';

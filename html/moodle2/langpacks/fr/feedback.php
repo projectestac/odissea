@@ -158,7 +158,7 @@ $string['messageprovider:message'] = 'Rappel de feedback';
 $string['messageprovider:submission'] = 'Notification de feedback';
 $string['mode'] = 'Mode';
 $string['modulename'] = 'Feedback';
-$string['modulename_help'] = 'Le module d\'activité feedback permet à l\'enseignant de créer un questionnaire d\'enquête personnalisé pour collecter des informations de la part des participants au moyen de divers types de questions, notamment à choix multiples ou à réponses courtes.
+$string['modulename_help'] = 'Le module d\'activité feedback permet à l\'enseignant de créer un questionnaire d\'enquête personnalisé pour collecter des informations de la part des participants au moyen de divers types de questions, notamment à choix multiple ou à réponses courtes.
 
 Si désiré, les réponses peuvent être anonymes et les résultats affichés à tous les participants ou aux enseignants seulement. Une activité feedback affichée sur la page d\'accueil du site peut également être remplie par des utilisateurs non connectés.
 

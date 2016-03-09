@@ -32,7 +32,7 @@ $string['correctanswerandfeedback'] = 'Resposta correta e feedback';
 $string['decodeverifyquestiontext'] = 'Descodificar e verificar o texto da pergunta';
 $string['layout'] = 'Aparência';
 $string['layouthorizontal'] = 'Botões de rádio dispostos horizontalmente';
-$string['layoutselectinline'] = 'Caixa de seleção';
+$string['layoutselectinline'] = 'Lista pendentes incorporadas no texto';
 $string['layoutundefined'] = 'Aparência indefinida';
 $string['layoutvertical'] = 'Botões de rádio dispostos verticalmente';
 $string['nooptionsforsubquestion'] = 'Não foi possível obter as opções para a parte # {$a->sub} (question->id={$a->id}) da pergunta';

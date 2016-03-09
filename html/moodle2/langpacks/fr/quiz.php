@@ -164,7 +164,7 @@ $string['comments'] = 'Commentaires';
 $string['completedon'] = 'Terminé le';
 $string['completionattemptsexhausted'] = 'Ou toutes les tentatives terminées';
 $string['completionattemptsexhausted_help'] = 'Marquer le test comme terminé lorsque l\'étudiant a épuisé le nombre maximal de tentatives.';
-$string['completionpass'] = 'Requiert une note';
+$string['completionpass'] = 'Requiert la note de passage';
 $string['completionpass_help'] = 'Si ce réglage est activé, l\'activité est considérée comme terminée lorsque l\'étudiant reçoit une note suffisante, cette note étant définie dans le carnet de notes.';
 $string['configadaptive'] = 'Si cette option est activée, le participant pourra donner plusieurs réponses à une question lors de la même tentative du test.';
 $string['configattemptsallowed'] = 'La restriction du nombre des tentatives des participants est autorisée.';
@@ -466,7 +466,7 @@ $string['missingcorrectanswer'] = 'La réponse correcte doit être indiquée';
 $string['missingitemtypename'] = 'Nom manquant';
 $string['missingquestion'] = 'La question n\'existe plus.';
 $string['modulename'] = 'Test';
-$string['modulename_help'] = 'Le module d\'activité test permet à l\'enseignant de créer des tests comportant des questions de divers types, notamment des questions à choix multiples, vrai-faux, de correspondances, à réponses courtes ou calculées.
+$string['modulename_help'] = 'Le module d\'activité test permet à l\'enseignant de créer des tests comportant des questions de divers types, notamment des questions à choix multiple, vrai-faux, d\'appariement, à réponses courtes ou calculées.
 
 L\'enseignant peut autoriser plusieurs tentatives pour un test, les questions étant mélangées ou choisies aléatoirement dans une banque de questions. Une limite de temps peut être fixée.
 
@@ -483,7 +483,7 @@ Les tests peuvent notamment être utilisés :
 * pour l\'auto-évaluation.';
 $string['modulenameplural'] = 'Tests';
 $string['moveselectedonpage'] = 'Déplacer les questions sélectionnées vers la page {$a}';
-$string['multichoice'] = 'Choix multiples';
+$string['multichoice'] = 'Choix multiple';
 $string['multipleanswers'] = 'Veuillez choisir au moins une réponse.';
 $string['multiplier'] = 'Coefficient';
 $string['mustbesubmittedby'] = 'Cette tentative doit être envoyée avant {$a}.';
@@ -825,7 +825,7 @@ $string['shuffledrandomly'] = 'Mélangées aléatoirement';
 $string['shufflequestions'] = 'Mélanger les questions';
 $string['shufflequestionsselected'] = 'Le mélange des questions a été activé. Certaines options relatives aux pages ne sont pas disponibles. Pour changer le réglage du mélange des questions, {$a}';
 $string['shufflewithin'] = 'Mélanger les éléments des questions';
-$string['shufflewithin_help'] = 'Si cette option est activée, les propositions de réponses aux questions seront mélangées aléatoirement à chaque nouvelle tentative du test, à condition que l\'option correspondant ait également été activée dans les paramètres de la question. Le réglage ne s\'applique qu\'aux questions qui comportent des propositions de réponses, telles que les questions à choix multiples ou les questions d\'appariement.';
+$string['shufflewithin_help'] = 'Si cette option est activée, les propositions de réponses aux questions seront mélangées aléatoirement à chaque nouvelle tentative du test, à condition que l\'option correspondant ait également été activée dans les paramètres de la question. Le réglage ne s\'applique qu\'aux questions qui comportent des propositions de réponses, telles que les questions à choix multiple ou les questions d\'appariement.';
 $string['singleanswer'] = 'Veuillez choisir une réponse.';
 $string['sortage'] = 'Trier par date';
 $string['sortalpha'] = 'Trier par nom';

@@ -34,7 +34,7 @@ $string['errordataroot'] = '$CFG->behat_dataroot não está definido ou é invá
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necessita de ser configurado em config.php.';
 $string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot os valores devem ser diferentes de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e dos valores $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Argumentos do valor do campo';
-$string['fieldvalueargument_help'] = 'Este argumento deve ser completo por um campo de valor, existem muitos tipos de campos, simples como as caixas de verificação, seleção ou áreas de texto, ou mais complexos como os selecionadores de datas. Pode verificar os campos de valor em <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a> para ver o campo de valor esperado no tipo de campo que indicar.';
+$string['fieldvalueargument_help'] = 'Este argumento deve ser completo por um campo de valor, existem muitos tipos de campos, simples como as caixas de seleção ou áreas de texto, ou mais complexos como os selecionadores de datas. Pode verificar os campos de valor em <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a> para ver o campo de valor esperado no tipo de campo que indicar.';
 $string['giveninfo'] = 'Dado: Processos para configurar o ambiente';
 $string['infoheading'] = 'Informação';
 $string['installinfo'] = 'Leia {$a} para obter informação sobre instalação e execução de testes';

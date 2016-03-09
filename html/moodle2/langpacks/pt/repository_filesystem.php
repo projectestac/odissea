@@ -38,5 +38,5 @@ $string['path'] = 'Selecionar uma subpasta';
 $string['pluginname'] = 'Pasta no servidor';
 $string['pluginname_help'] = 'Criar um repositório a partir da pasta local do servidor';
 $string['relativefiles'] = 'Permitir ficheiros relativos';
-$string['relativefiles_desc'] = 'Isto permite que todos os ficheiros do repositório estejam acessíveis a partir de links relativos.';
+$string['relativefiles_desc'] = 'Isto permite que todos os ficheiros do repositório estejam acessíveis a partir de hiperligações relativas.';
 $string['root'] = 'Raiz';

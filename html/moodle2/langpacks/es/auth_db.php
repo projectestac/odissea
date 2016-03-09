@@ -61,7 +61,7 @@ $string['auth_dbsybasequoting'] = 'Utilizar citaciones (quotes) de sybase';
 $string['auth_dbsybasequotinghelp'] = 'Escapado de comilla simple al estilo Sybase - necesario para Oracle, MS SQL y algunas otras bases de datos. ¡No lo utilice para MySQL!';
 $string['auth_dbtable'] = 'Nombre de la tabla en la base de datos';
 $string['auth_dbtable_key'] = 'Tabla';
-$string['auth_dbtype'] = 'El tipo de base de datos (Vea la <a href=../lib/adodb/readme.htm#drivers>documentación de ADOdb</a> para obtener más detalles)';
+$string['auth_dbtype'] = 'El tipo de base de datos (Vea la <a href="http://phplens.com/adodb/supported.databases.html">documentación de ADOdb</a> para obtener más detalles)';
 $string['auth_dbtype_key'] = 'Base de datos';
 $string['auth_dbupdatinguser'] = 'Actualizando al usuario {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Nombre de usuario con acceso de lectura a la base de datos';

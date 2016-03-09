@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Caixa de verificação';
+$string['pluginname'] = 'Caixa de seleção';

@@ -128,7 +128,7 @@ $string['clistatusdisabled'] = 'Estat: desactivat';
 $string['clistatusenabled'] = 'Estat: activat';
 $string['clistatusenabledlater'] = 'estat: el mode de manteniment CLI s\'habilitarà en {$a}';
 $string['clitypevalue'] = 'Valor de tipus';
-$string['clitypevaluedefault'] = 'valor de tipus, premeu Intro per fer servir un valor per defecte ({$a})';
+$string['clitypevaluedefault'] = 'valor de tipus, premeu la tecla de retorn (<em>Enter</em>) per fer servir un valor per defecte ({$a})';
 $string['cliunknowoption'] = 'Opcions invàlides:
  {$a}
 L\'opció --help us orientarà.';
@@ -999,7 +999,7 @@ $string['statsuserthreshold'] = 'Llindar d\'usuari';
 $string['stickyblocks'] = 'Blocs fixos';
 $string['stickyblockscourseview'] = 'Pàgina de curs';
 $string['stickyblocksduplicatenotice'] = 'Si qualsevol bloc que afegiu aquí ja és present en una pàgina, en resultarà un duplicat.<br />Només el bloc fix serà no editable. El duplicat sí que es podrà editar.';
-$string['stickyblocksmymoodle'] = 'El meu Moodle';
+$string['stickyblocksmymoodle'] = 'Tauler';
 $string['stickyblockspagetype'] = 'Tipus de pàgina a configurar';
 $string['strictformsrequired'] = 'Validació estricta dels camps obligatoris';
 $string['stripalltitletags'] = 'Elimina les etiquetes HTML de tots els noms de les activitats';
@@ -1072,6 +1072,7 @@ $string['unsettheme'] = 'Inhabilita el tema';
 $string['unsupported'] = 'No implementat';
 $string['unsupporteddbstorageengine'] = 'El motor d\'emmagatzematge de la base de dades que esteu utilitzant ja no és compatible.';
 $string['unsupporteddbtablerowformat'] = 'La vostra base de dades té taules que empren Antelope com a format de fitxers. Us recomanem que convertiu les taules al format de fitxers Barracuda. Per a més detalls sobre una eina per convertir taules d\'InnoDB a Barracuda, vegeu la documentació següent: <a href="https://docs.moodle.org/en/cli">Administration via command line</a>.';
+$string['unsupportedphpversion7'] = 'No està suportada la versió 7 de PHP';
 $string['unsuspenduser'] = 'Activeu el compte d\'usuari';
 $string['updateaccounts'] = 'Actualitza els comptes existents';
 $string['updateautocheck'] = 'Comprova automàticament si hi ha actualitzacions disponibles';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Teilnehmer/innen müssen andere Aktivität abschließen (oder nicht abgeschlossen haben).';
-$string['error_selectcmid'] = 'Sie müssen eine Aktivität als Abschlussbedingung ausgewählt haben.';
+$string['description'] = 'Zugriff über den Abschlussstatus einer anderen Aktivität steuern';
+$string['error_selectcmid'] = 'Sie müssen eine Aktivität für die Zugriffssteuerung auswählen.';
 $string['label_cm'] = 'Aktivität oder Material';
 $string['label_completion'] = 'Erforderlicher Abschlussstatus';
 $string['missing'] = '(Fehlende Aktivität)';

@@ -40,13 +40,13 @@ $string['auth_fieldlock'] = 'Bloquear valor';
 $string['auth_fieldlock_expl'] = '<p><b>Bloquear valor:</b> Si se activa, los usuarios y administradores de Moodle no podrán editar directamente el campo. Utilice esta opción si mantiene estos datos en el sistema de identificación externo. </p>';
 $string['auth_fieldlocks'] = 'Bloquear campos de usuario';
 $string['auth_fieldlocks_help'] = '<p>Usted puede bloquear los campos de datos de los usuarios, lo que resulta útil en sitios donde esos datos están mantenidos por administradores de forma manual, editando los registros de los usuarios o subiéndolos mediante la utilidad \'Subir usuarios\'. Si usted bloquea campos requeridos por Moodle, asegúrese de que proporciona esos datos al crear las cuentas de los usuarios; de otro modo las cuentas no serán utilizables.</p><p>Considere fijar esta opción de bloqueo en \'Desbloqueado si está vacío\', para evitar este problema.</p>';
-$string['authinstructions'] = 'Aquí puede proporcionar instrucciones a sus usuarios, de forma que sepan qué usuario y contraseña deben usar. El texto que incluya aquí aparecerá en la página de acceso. Si deja esto en blanco no aparecerá ninguna instrucción.';
+$string['authinstructions'] = 'Deje esta opción en blanco para mostrar las instrucciones por defecto de entrada al sitio en la página de entrada. Si desea proporcionar instrucciones personalizadas introdúzcalas aquí.';
 $string['auth_invalidnewemailkey'] = 'Error: Si está intentando confirmar un cambio de dirección email. debe haber cometido un error al copiar la URL que le enviamos por email. Por favor, copie la dirección y pruebe de nuevo.';
 $string['authloginviaemail'] = 'Permitir acceso por email';
 $string['authloginviaemail_desc'] = 'Permitir a los usuarios acceder al sitio indistintamente con su nombre de usuario o con su  dirección de correo (siempre que sea única).';
 $string['auth_multiplehosts'] = 'Es posible especificar múltiples servidores (por ej. servidor1.com;servidor2.com;servidor3.com';
 $string['auth_notconfigured'] = 'El método de autenticación {$a} no está configurado.';
-$string['auth_outofnewemailupdateattempts'] = 'Ha hecho más intentos de los permitidos para actualizar su dirección email. Su solicitud de actualización ha sido cancelada.';
+$string['auth_outofnewemailupdateattempts'] = 'Ha hecho más intentos de los permitidos para actualizar su dirección de email. Su solicitud de actualización ha sido cancelada.';
 $string['auth_passwordisexpired'] = 'Su contraseña ha caducado ¿Desea cambiar su contraseña ahora?';
 $string['auth_passwordwillexpire'] = 'Su contraseña caducará en {$a} días ¿Desea cambiar su contraseña ahora?';
 $string['auth_remove_delete'] = 'Borrado completo';
@@ -67,17 +67,7 @@ $string['auto_add_remote_users'] = 'Añadir automáticamente usuarios remotos';
 $string['changepassword'] = 'Cambiar contraseña URL';
 $string['changepasswordhelp'] = 'Aquí puede especificar dónde pueden sus usuarios recuperar o cambiar su nombre de usuario/contraseña si lo han olvidado. Para ello, aparecerá un botón en la página de entrada. Si deja esto en blanco, este botón no se mostrará.';
 $string['chooseauthmethod'] = 'Escoger un método de identificación:';
-$string['chooseauthmethod_help'] = '<p>Este menú le permite modificar el método de identificación
-   para este usuario en particular.</p>
-
-<p>Por favor, tenga cuidado porque este ajuste depende directamente
-   de los métodos de identificación que haya definido en el sitio,
-   y de los ajustes que estén siendo utilizados.</p>
-
-<p>Una modificación incorrecta aquí podría impedir el acceso de
-   la persona al servidor o incluso el borrado de su cuenta
-   de forma completa, así que, por favor, utilice esta opción
-   si sabe qué es lo que está haciendo.</p>';
+$string['chooseauthmethod_help'] = 'Este elemento determina el método de autentificación utilizado cuando el usuario entra en el sitio. Sólo deben elegirse los plugins de actualización que hayan sido habilitados, si no fuera así el usuario no podría conectarse. Para bloquear la entrada del usuario, seleccione \'Sin login\'.';
 $string['createpassword'] = 'Generar contraseña y notificar al usuario';
 $string['createpasswordifneeded'] = 'Crear contraseña si es necesario';
 $string['emailchangecancel'] = 'Cancelar cambio de email';

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Größe des Schreibpuffers';
-$string['pluginname'] = 'Standardlogdaten';
+$string['pluginname'] = 'Logdaten Standard';
 $string['pluginname_desc'] = 'Das Plugin speichert die Logdaten in der Moodle-Datenbank.';
 $string['taskcleanup'] = 'Logdaten bereinigen';

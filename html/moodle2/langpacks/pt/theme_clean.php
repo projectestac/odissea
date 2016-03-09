@@ -29,10 +29,10 @@ $string['choosereadme'] = '<div class="clearfix"><div class="well"><h2> Limpar <
 $string['configtitle'] = 'Tema Clean';
 $string['customcss'] = 'Personalizar CSS';
 $string['customcssdesc'] = 'As regras de CSS que adicionar nesta caixa de CSS personalizado serão assumidas em todas as páginas para facilitar a personalização deste tema.';
-$string['footnote'] = 'Nota de rodapé';
+$string['footnote'] = 'Conteúdo do rodapé';
 $string['footnotedesc'] = 'Todo o conteúdo que inserir nesta área de texto será exibido no rodapé em todo o site Moodle.';
 $string['invert'] = 'Inverter barra de navegação';
-$string['invertdesc'] = 'Alterna o texto e fundo da barra de navegação no topo da página, entre o preto e o branco.';
+$string['invertdesc'] = 'Alterna a cor do o texto e do fundo da barra de navegação no topo da página, entre o preto e o branco.';
 $string['logo'] = 'Logótipo';
 $string['logodesc'] = 'Adicione nesta área o logótipo personalizado que pretende que seja exibido no cabeçalho. <br /> Se a altura do logótipo for maior do que 75px, adicione a seguinte regra de CSS na caixa \'Personalizar CSS\' abaixo "a.logo {height: 100px;}" (ou qualquer outro valor em pixeis para a altura do logotipo).';
 $string['pluginname'] = 'Tema Clean';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_item'] = '質問を追加する';
-$string['add_pagebreak'] = '改ページ (Page break) を追加する';
+$string['add_pagebreak'] = '改ページを追加する';
 $string['adjustment'] = '表示方向';
 $string['after_submit'] = '回答送信後';
 $string['allowfullanonymous'] = '完全な匿名を許可する';
@@ -42,7 +42,7 @@ $string['average'] = '平均';
 $string['bold'] = '太字';
 $string['cancel_moving'] = '移動をキャンセルする';
 $string['cannotmapfeedback'] = 'データベーストラブル、フィードバックをコースにマップできません。';
-$string['cannotsavetempl'] = 'テンプレートの保存は、許可されていません。';
+$string['cannotsavetempl'] = 'テンプレートの保存は許可されていません。';
 $string['cannotunmap'] = 'データベーストラブル、マップ解除できません。';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captchaが設定されていません。';
@@ -76,13 +76,13 @@ $string['depending_help'] = '依存アイテムを使用して他のアイテム
 <br />
  <ul>
  <li>最初に他のアイテムが値を依存することになるアイテムを作成してください。</li>
-<li>次に改ページ (Page break) を追加してください。</li>
+<li>次に改ページを追加してください。</li>
 <li>そして、最初に作成したアイテムの値に依存するアイテムを追加してください。アイテム作成フォーム内の「依存アイテム」リストから依存アイテム、そして「依存値」テキストボックスに必要な値を入力してください。</li>
 </ul>
 <strong>構造は次のようになります:</strong>
 <ol>
 <li>Item Q: あなたは自動車を所有していますか? A: yes/no</li>
-<li>改ページ (Page break)</li>
+<li>改ページ</li>
 <li>Item Q: あなたの自動車の色は何色ですか?
 <br />
 (このアイテムはアイテム1の値=yesに依存します)</li>
@@ -102,16 +102,16 @@ $string['dropdownrated'] = 'ドロップダウンリスト (評定)';
 $string['dropdown_values'] = '回答';
 $string['drop_feedback'] = 'このコースから削除する';
 $string['edit_item'] = '質問を編集する';
-$string['edit_items'] = '質問を編集する ...';
+$string['edit_items'] = '質問を編集する';
 $string['email_notification'] = '送信通知を有効にする';
-$string['email_notification_help'] = 'この設定を有効にした場合、フィードバック送信に関して、教師はメール通知されます。';
+$string['email_notification_help'] = 'この設定を有効にした場合、フィードバック送信に関して教師にメール通知されます。';
 $string['emailteachermail'] = '{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。
 
-あなたは下記ページで内容を閲覧できます:
+あなたはここで閲覧できます:
 
 {$a->url}';
 $string['emailteachermailhtml'] = '<p>{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。</p>
-<p><a href="{$a->url}">このページ</a>で詳細を閲覧できます。</p>';
+<p>あなたは<a href="{$a->url}">ここで閲覧</a>できます。</p>';
 $string['entries_saved'] = 'あなたの回答が保存されました。ありがとうございます。';
 $string['eventresponsedeleted'] = '回答が削除されました。';
 $string['eventresponsesubmitted'] = '回答が送信されました。';
@@ -125,7 +125,7 @@ $string['feedback:createpublictemplate'] = 'パブリックテンプレートを
 $string['feedback:deletesubmissions'] = '完了した送信を削除する';
 $string['feedback:deletetemplate'] = 'テンプレートを削除する';
 $string['feedback:edititems'] = 'アイテムを編集する';
-$string['feedback_is_not_for_anonymous'] = '匿名ユーザは、フィードバックを利用できません。';
+$string['feedback_is_not_for_anonymous'] = '匿名ユーザはフィードバックを利用できません。';
 $string['feedback_is_not_open'] = 'フィードバックは利用できません。';
 $string['feedback:mapcourse'] = 'コースをグローバルフィードバックにマップする';
 $string['feedbackopen'] = 'フィードバック開始日時';
@@ -144,7 +144,7 @@ $string['import_successfully'] = '正常にインポートされました。';
 $string['info'] = '情報';
 $string['infotype'] = '情報タイプ';
 $string['insufficient_responses'] = '不十分な回答';
-$string['insufficient_responses_for_this_group'] = 'このグループの回答数は、十分ではありません。';
+$string['insufficient_responses_for_this_group'] = 'このグループの回答数は十分ではありません。';
 $string['insufficient_responses_help'] = 'このグループの回答が不足しています。
 
 フィードバックを匿名にするには最低2つの回答が必要です。';
@@ -153,11 +153,11 @@ $string['item_name'] = '質問';
 $string['label'] = 'ラベル';
 $string['line_values'] = '評定';
 $string['mapcourse'] = 'コースにフィードバックをマップする';
-$string['mapcourse_help'] = 'デフォルトでは、あなたのMoodleメインページで作成したフィードバックフォームはサイト全体およびすべてのコースにフィードバックブロックを設置することで利用することができます。あなたはフィードバックをスティッキーブロックにすることで、強制的に表示することもできます。また、特定のコースにマッピングすることで、フィードバックフォームが表示されるコースを制限することもできます。';
+$string['mapcourse_help'] = 'デフォルトではあなたのMoodleメインページで作成したフィードバックフォームはサイト全体およびすべてのコースにフィードバックブロックを設置することで利用することができます。あなたはフィードバックをスティッキーブロックにすることで強制的に表示することもできます。また、特定のコースにマッピングすることでフィードバックフォームが表示されるコースを制限することもできます。';
 $string['mapcourseinfo'] = 'このフィードバックはフィードバックブロックを使用してサイト全体で利用することができます。フィードバックをコースにマップすることにより、このフィードバックを利用できるコースを制限することができます。コースを検索して、このフィードバックをマップしてください。';
-$string['mapcoursenone'] = 'マップされたコースはありません。このフィードバックは、すべてのコースで利用できます。';
+$string['mapcoursenone'] = 'マップされたコースはありません。このフィードバックはすべてのコースで利用できます。';
 $string['mapcourses'] = 'フィードバックをコースにマップする';
-$string['mapcourses_help'] = 'あなたの検索結果からコースを選択した後、コースにマップすることで、選択したコースとこのフィードバックを関連付けることができます。Ctrlキーを押しながら複数のコースを選択することも、Shiftキーを押しながら一連のコースを選択することもできます。コースに関連付けたフィードバックはいつでも関連付けを解除することができます。';
+$string['mapcourses_help'] = 'あなたの検索結果からコースを選択した後、コースにマップすることで選択したコースとこのフィードバックを関連付けることができます。Ctrlキーを押しながら複数のコースを選択することも、Shiftキーを押しながら一連のコースを選択することもできます。コースに関連付けたフィードバックはいつでも関連付けを解除することができます。';
 $string['mappedcourses'] = 'マップ済みコース';
 $string['max_args_exceeded'] = '最大6つの引数を処理することができます。引数が多すぎます:';
 $string['maximal'] = '最大';
@@ -167,14 +167,14 @@ $string['mode'] = 'モード';
 $string['modulename'] = 'フィードバック';
 $string['modulename_help'] = 'フィードバック活動モジュールにおいて、教師は多肢選択、○/×またはテキスト入力を含む様々な質問タイプを使用して参加者からフィードバックを収集することのできる独自調査を作成することができます。
 
-必要であれば、フィードバック回等を匿名にすることができます。そして、結果を学生すべてに表示、または教師のみに閲覧制限することができます。サイトフロントページのフィードバックは非ログインユーザにより入力させることもできます。
+必要であればフィードバック回等を匿名にすることができます。そして、結果を学生すべてに表示、または教師のみに閲覧制限することができます。サイトフロントページのフィードバックは非ログインユーザにより入力させることもできます。
 
 フィードバック活動は下記のように使用することができます:
 
 * 今後の参加者へのコンテンツ改善のためのコース評価として
 * 参加者がコースモジュール、イベント等に参加できるようにするため
 * コース選択、学校方針等のゲスト調査として
-* 学生が内容を匿名で報告できるイジメ対策として';
+* 学生が匿名で内容を報告できるイジメ対策として';
 $string['modulenameplural'] = 'フィードバック';
 $string['movedown_item'] = 'この質問を下げる';
 $string['move_here'] = 'ここに移動する';
@@ -193,10 +193,10 @@ $string['no_handler'] = 'アクションハンドラがありません:';
 $string['no_itemlabel'] = 'ラベルなし';
 $string['no_itemname'] = '無題';
 $string['no_items_available_yet'] = '質問はまだ設定されていません。';
-$string['non_anonymous'] = 'ユーザ名を記録して、回答と共に表示する';
+$string['non_anonymous'] = 'ユーザ名を記録して回答と共に表示する';
 $string['non_anonymous_entries'] = '非匿名エントリ';
 $string['non_respondents_students'] = '未回答の学生';
-$string['notavailable'] = 'このフィードバックは、利用できません。';
+$string['notavailable'] = 'このフィードバックは利用できません。';
 $string['not_completed_yet'] = 'まだ完了していません。';
 $string['no_templates_available_yet'] = 'テンプレートはまだ利用できません。';
 $string['not_selected'] = '未選択';
@@ -207,11 +207,11 @@ $string['numeric_range_to'] = '終了数値';
 $string['of'] = '/';
 $string['oldvaluespreserved'] = 'すべての古い問題および割り当てられた値は保持されます';
 $string['oldvalueswillbedeleted'] = '現在の問題およびすべてのユーザ回答が削除されます';
-$string['only_one_captcha_allowed'] = '1フィードバックあたり、1つのCAPTCHAのみ許可されています。';
+$string['only_one_captcha_allowed'] = '1フィードバックあたり1つのCAPTCHAのみ許可されています。';
 $string['overview'] = '概要';
 $string['page'] = 'ページ';
 $string['page_after_submit'] = '完了メッセージ';
-$string['pagebreak'] = 'ページブレーク';
+$string['pagebreak'] = '改ページ';
 $string['page-mod-feedback-x'] = 'すべてのフィードバックモジュールページ';
 $string['parameters_missing'] = 'パラメータが入力されていません:';
 $string['picture'] = '画像';
@@ -233,9 +233,9 @@ $string['radiobutton_rated'] = 'ラジオボタン (評定)';
 $string['radiorated'] = 'ラジオボタン (評定)';
 $string['radio_values'] = '回答';
 $string['ready_feedbacks'] = '準備済みフィードバック';
-$string['relateditemsdeleted'] = 'この問題に関する、すべてのユーザの回答も削除されます。';
+$string['relateditemsdeleted'] = 'この問題のすべてのユーザの回答も削除されます。';
 $string['required'] = '必須';
-$string['resetting_data'] = 'フィードバックをリセットする';
+$string['resetting_data'] = 'フィードバック回答をリセットする';
 $string['resetting_feedbacks'] = 'フィードバックのリセット';
 $string['response_nr'] = '回答No';
 $string['responses'] = '回答';
@@ -249,7 +249,7 @@ $string['saving_failed_because_missing_or_false_values'] = '値が入力され�
 $string['search_course'] = 'コースを検索する';
 $string['searchcourses'] = 'コースを検索する';
 $string['searchcourses_help'] = 'あなたがこのフィードバックに関連付けたいコースのコードまたは名称を使用して検索してください。';
-$string['selected_dump'] = '選択された$SESSION変数のインデックスは、以下にダンプされます:';
+$string['selected_dump'] = '選択された$SESSION変数のインデックスは以下にダンプされます:';
 $string['send'] = '送信';
 $string['send_message'] = 'メッセージを送信する';
 $string['separator_decimal'] = '.';

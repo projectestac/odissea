@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentdatedefault'] = 'Usar a data atual como valor predefinido';
-$string['defaultdate'] = 'Data por omissão';
+$string['defaultdate'] = 'Data predefinida';
 $string['endyear'] = 'Ano final';
 $string['notset'] = 'Não definido(a)';
 $string['pluginname'] = 'Data/Hora';

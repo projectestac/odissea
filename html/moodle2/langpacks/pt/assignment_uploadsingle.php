@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Upload de um único ficheiro';
+$string['pluginname'] = 'Carregar um único ficheiro';

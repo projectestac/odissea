@@ -42,7 +42,7 @@ $string['availableq'] = 'Disponível?';
 $string['badbase'] = 'Má base antes de  **: {$a}**';
 $string['behaviour'] = 'Comportamento';
 $string['behaviourbeingused'] = 'comportamento em uso:  {$a}';
-$string['broken'] = 'É um "link quebrado", aponta para um ficheiro que não existe.';
+$string['broken'] = 'É uma "hiperligação quebrada", aponta para um ficheiro que não existe.';
 $string['byandon'] = 'por <em>{$a->user}</em> em <em>{$a->time}</em>';
 $string['cannotcopybackup'] = 'Não foi possível copiar a cópia de segurança';
 $string['cannotcreate'] = 'Não foi possível criar uma nova entrada na tabela question_attempts';
@@ -174,7 +174,7 @@ $string['exporterror'] = 'Ocorreram erros durante a exportação!';
 $string['exportfilename'] = 'perguntas';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportquestions'] = 'Exportar perguntas para o ficheiro';
-$string['exportquestions_help'] = 'Esta função permite a exportação de uma categoria completa (e qualquer subcategorias) de perguntas. Por favor note que, dependendo do formato de arquivo selecionado, alguns dados  e certos tipos de perguntas podem não ser exportados.';
+$string['exportquestions_help'] = 'Esta função permite a exportação de uma categoria completa (e qualquer subcategorias) de perguntas. Por favor note que, dependendo do formato de ficheiro selecionado, alguns dados  e certos tipos de perguntas podem não ser exportados.';
 $string['exportquestions_link'] = 'pergunta/exportar';
 $string['feedback'] = 'Feedback';
 $string['filecantmovefrom'] = 'Os ficheiros das perguntas não podem ser movidos porque não tem permissões para apagar ficheiros do local para onde deseja mover as perguntas.';
@@ -192,7 +192,7 @@ $string['fractionsnomax'] = 'Uma das respostas deve ter a pontuação de 100% pa
 $string['generalfeedback'] = 'Feedback geral';
 $string['generalfeedback_help'] = 'O feedback geral é exibido ao aluno depois de ter concluído a pergunta. Ao contrário do feedback específico, que depende do tipo de pergunta e da resposta dada pelo aluno, o feedback geral exibido é igual para todos os alunos.
 
-Pode usar o feedback geral para dar ao aluno uma explicação completa da resposta e links para informação relevante para a sua compreensão.';
+Pode usar o feedback geral para dar ao aluno uma explicação completa da resposta e hiperligações para informação relevante para a sua compreensão.';
 $string['getcategoryfromfile'] = 'Obter categoria a partir de ficheiro';
 $string['getcontextfromfile'] = 'Obter contexto a partir de ficheiro';
 $string['hidden'] = 'Oculto';
@@ -214,7 +214,7 @@ $string['importfromupload'] = 'Selecione um ficheiro…';
 $string['importingquestions'] = 'A importar {$a} perguntas do ficheiro';
 $string['importparseerror'] = 'Foram encontrados erro(s) ao analisar o ficheiro de importação, não sendo possível importar nenhuma pergunta. Para importar perguntas sem erros tente novamente alterando a configuração Parar em caso de erro para Não';
 $string['importquestions'] = 'Importar perguntas a partir do ficheiro';
-$string['importquestions_help'] = 'Esta função permite importar via ficheiro de texto uma variedade de formatos de perguntas. Note que o arquivo deverá usar a codificação UTF-8.';
+$string['importquestions_help'] = 'Esta função permite importar via ficheiro de texto uma variedade de formatos de perguntas. Note que o ficheiro deverá usar a codificação UTF-8.';
 $string['importquestions_link'] = 'pergunta/importar';
 $string['importwrongfiletype'] = 'O tipo de ficheiro que selecionou ({$a->actualtype}) não corresponde ao tipo esperado neste formato de importação. ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Foi detetado um carácter como parêntesis, não compatível {$a}';
@@ -332,9 +332,9 @@ $string['questionaffected'] = 'A <a href="{$a->qurl}">pergunta "{$a->name}" ({$a
 $string['questionbank'] = 'Base de dados de perguntas';
 $string['questionbehaviouradminsetting'] = 'Configurações do comportamento das perguntas';
 $string['questionbehavioursdisabled'] = 'Comportamentos das perguntas a desativar';
-$string['questionbehavioursdisabledexplained'] = 'Insira os comportamentos que deseja que não sejam selecionáveis, separados por vírgulas';
+$string['questionbehavioursdisabledexplained'] = 'Insira os comportamentos que deseja que não surjam na lista pendente, separados por vírgulas';
 $string['questionbehavioursorder'] = 'Ordem dos comportamentos das perguntas';
-$string['questionbehavioursorderexplained'] = 'Insira uma lista de comportamentos separados por vírgulas, pela ordem que deseja que apareçam no menu de seleção';
+$string['questionbehavioursorderexplained'] = 'Insira uma lista de comportamentos separados por vírgulas, pela ordem que deseja que apareçam na lista pendente';
 $string['questioncategory'] = 'Categoria de perguntas';
 $string['questioncatsfor'] = 'Categorias de perguntas para \'{$a}';
 $string['questiondoesnotexist'] = 'Esta pergunta não existe';

@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Menu de seleção';
+$string['pluginname'] = 'Lista pendente';

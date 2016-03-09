@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_emaildescription'] = '<p>El auto-registro mediante correo electrónico permite al usuario crear su propia cuenta mediante el botón \'Crear nueva cuenta\' en la página de inicio de sesión. El usuario recibe a continuación un correo electrónico con un enlace seguro a una página donde puede confirmar su cuenta. En futuros accesos, solamente se compara el usuario y contraseña respecto a los almacenados en la base de datos de Moodle.</p><p>Nota: Además de activar el plugin, para el auto-registro basado en correo electrónico también se debe seleccionar este método en el menú desplegable de la página \'Administrar autentificación\' </p>';
 $string['auth_emailnoemail'] = 'Se ha intentado enviarle un email sin éxito.';
-$string['auth_emailrecaptcha'] = 'Agrega un formulacio de confirmación visual o auditiva a la página de acceso para los usuarios auto-registrados vía email. Esta opción protege su sitio contra los creadores de spam y contribuye a una buena causa. Para más detalles, visite http://recaptcha.net/learnmore.html for more details. <br /><em>Se requiere tener instalada la extensión de PHP cURL.</em>';
+$string['auth_emailrecaptcha'] = 'Agrega elemento de formulario de confirmación visual o auditiva a la página de acceso para los usuarios auto-registrados vía email. Esta opción protege su sitio contra los creadores de spam y contribuye a una buena causa. Para más detalles, visite http://www.google.com/recaptcha.';
 $string['auth_emailrecaptcha_key'] = 'Habilitar elemento reCAPTCHA';
 $string['auth_emailsettings'] = 'Ajustes';
 $string['pluginname'] = 'Identificación basada en Email';

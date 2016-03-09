@@ -47,9 +47,14 @@ class script_filesystem_cleanup extends agora_script_base{
         if (!empty($deletefromdb)) {
             if ($execute) {
                 $this->output(' -> not implemented, only showing...', 'INFO');
-            }
-            foreach ($deletefromdb as $file) {
-               $this->output(" -> $file");
+                foreach ($deletefromdb as $file) {
+                   // $DB->delete_records('files', array('contenthash' => $file));
+                   $this->output(" -> $file");
+                }
+            } else {
+                foreach ($deletefromdb as $file) {
+                   $this->output(" -> $file");
+                }
             }
         } else {
             $this->output('No files to delete', 'OK');

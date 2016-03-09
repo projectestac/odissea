@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Tem {$a}s que requerem atenção';
+$string['activityoverview'] = 'Há atividades do tipo [{$a}] que requerem atenção.';
 $string['alwaysshowall'] = 'Mostrar sempre todos';
 $string['collapseall'] = 'Contrair Todas as listas de disciplinas';
 $string['configotherexpanded'] = 'Se ativar esta opção, as outras disciplinas serão expandidas por predefinição, exceto se o utilizador alterar esta configuração nas suas preferências.';

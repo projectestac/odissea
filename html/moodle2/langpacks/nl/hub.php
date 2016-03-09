@@ -264,4 +264,4 @@ $string['wrongtoken'] = 'De registratie is mislukt om een onbekende reden (netwe
 $string['wrongurlformat'] = 'Slecht URL formaat';
 $string['xmlrpcdisabledcommunity'] = 'De XML-RPC-extentie is niet ingeschakeld op de server. Je kunt geen cursussen zoeken en downloaden.';
 $string['xmlrpcdisabledpublish'] = 'De XML-RPC-extentie is niet ingeschakeld op de server. Je kunt geen cursussen publiceren of gepubliceerde cursussen beheren.';
-$string['xmlrpcdisabledregistration'] = 'De XML-RPC-extentie is niet ingeschakeld op de server. Je zult je registratie niet ongedaan kunnen maken of aanpassen zolang je dit niet inschakeld.';
+$string['xmlrpcdisabledregistration'] = 'xmlrpcdisabledregistrationDe XML-RPC-extentie is niet ingeschakeld op de server. Je zult je registratie niet ongedaan kunnen maken of aanpassen zolang je dit niet inschakelt.';

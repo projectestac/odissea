@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventlegacylogged'] = 'Alter Event geloggt';
-$string['loglegacy'] = 'Alte Logdaten';
+$string['loglegacy'] = 'Logdaten Alt';
 $string['loglegacy_help'] = 'Dieses Plugin speichert die Logdaten in der alten Logtabelle (mdl_log).
 
-Die Funktion wurde durch eine neue effizientere Methode ersetzt. Sie sollten die alte Funktion nur dann weiter benutzen, wenn Sie die alten Logdaten mit einer Software auswerten, die noch nicht angepasst wurde. Andernfalls sollten Sie dieses Plugin aus Performance-Gründen deaktivieren.';
-$string['pluginname'] = 'Alte Logdaten';
+Das Plugin wurde inzwischen durch ein neues Plugin mit effizientere Methoden ersetzt. Sie sollten die alte Funktion nur dann weiter verwenden, wenn Sie die alten Logdaten mit einer Software auswerten, die noch nicht angepasst wurde. Andernfalls sollten Sie das alte Plugin unbedingt zur Steigerung der Performance deaktivieren.';
+$string['pluginname'] = 'Logdaten Alt';
 $string['pluginname_desc'] = 'Das Plugin speichert die Logdaten in der alten Logdaten-Tabelle.';
-$string['taskcleanup'] = 'Alte Logdaten bereinigen';
+$string['taskcleanup'] = '\'Logdaten Alt\' bereinigen';

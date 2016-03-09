@@ -80,11 +80,13 @@ $string['dbtype'] = 'Tipo';
 $string['directorysettings'] = '<p>Por favor, confirme las direcciones de la instalación de Moodle.</p>
 
 <p><b>Dirección Web:</b>
-Especifique la dirección web completa en la que se accederá a Moodle. Si su sitio web es accesible a través de varias URLs, seleccione la que resulte de acceso más natural a sus estudiantes.  No incluya la diagonal invertida final ().</p>
+Especifique la dirección web completa en la que se accederá a Moodle. Si su sitio web es accesible a través de varias URLs, seleccione la que resulte de acceso más natural a sus estudiantes.  No incluya la diagonal invertida final (/).</p>
+
 <p><b>Directorio de Moodle:</b>
 Especifique la ruta completa de esta instalación. Asegúrese de que las mayúsculas/minúsculas son correctas.
+
 <p><b>Directorio de datos:</b>
-Usted necesita un lugar en el que Moodle pueda guardar los archivos subidos. Este directorio debe ser leible Y ESCRIBIBLE por el usuario del servidor web (normalmente \'nobody\', \'apache\', \'www-data\'), pero no debería ser directamente accesible desde la web. El instalador tratará crearlo si no existe.</p>';
+Usted necesita un lugar en el que Moodle pueda guardar los archivos subidos. Este directorio debe ser leíble Y ESCRIBIBLE por el usuario del servidor web (normalmente \'nobody\', \'apache\', \'www-data\'), pero no debería ser directamente accesible desde la web. El instalador tratará crearlo si no existe.</p>';
 $string['directorysettingshead'] = 'Por favor, confirme las siguientes direcciones de la instalación de Moodle';
 $string['directorysettingssub'] = '<b>Dirección Web:</b>
 Especifique la dirección web completa en la que se accederá a Moodle.

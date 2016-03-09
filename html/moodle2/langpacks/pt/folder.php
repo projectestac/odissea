@@ -41,7 +41,7 @@ $string['foldercontent'] = 'Ficheiros e subpastas';
 $string['folder:managefiles'] = 'Gerir ficheiros no recurso pasta';
 $string['folder:view'] = 'Ver conteúdo da pasta';
 $string['modulename'] = 'Pasta';
-$string['modulename_help'] = 'O recurso Pasta permite que o professor disponibilize uma série de ficheiros apenas num link, evitando assim o excesso de ficheiros na página principal da disciplina. Pode criar uma pasta e carregar ficheiro a ficheiro ou carregar um único zip com vários ficheiros e extrair os mesmos dentro da pasta.
+$string['modulename_help'] = 'O recurso Pasta permite que o professor disponibilize uma série de ficheiros apenas numa hiperligação, evitando assim o excesso de ficheiros na página principal da disciplina. Pode criar uma pasta e carregar ficheiro a ficheiro ou carregar um único zip com vários ficheiros e extrair os mesmos dentro da pasta.
 
 A pasta pode ser utilizada para:
 

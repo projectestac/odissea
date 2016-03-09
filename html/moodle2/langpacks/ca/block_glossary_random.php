@@ -45,6 +45,6 @@ $string['refresh'] = 'Dies a passar abans de seleccionar una nova entrada';
 $string['select_glossary'] = 'Agafa les entrades d\'aquest glossari';
 $string['showconcept'] = 'Mostra el concepte (capçalera) per cada entrada';
 $string['title'] = 'Títol ';
-$string['type'] = 'Com es selecciona una nova entrada';
+$string['type'] = 'Com se selecciona una nova entrada';
 $string['viewglossary'] = 'Mostra totes les entrades';
 $string['whichfooter'] = 'Podeu mostrar els enllaços a les accions del glossari associat a aquest bloc. El bloc sols mostrarà enllaços a les accions que estiguin habilitades per a aquest glossari.';

@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completionprogressdetails'] = 'Detalhes do processo de conclusão';
-$string['completionstatus:addinstance'] = 'Adicionar um novo bloco Estado da conclusão da disciplina';
+$string['completionstatus:addinstance'] = 'Adicionar um novo bloco Conclusão da disciplina';
 $string['criteriagroup'] = 'Critério de grupo';
 $string['firstofsecond'] = '{$a->first} de {$a->second}';
-$string['pluginname'] = 'Estado da conclusão da disciplina';
+$string['pluginname'] = 'Conclusão da disciplina';
 $string['requirement'] = 'Requisito';
 $string['returntocourse'] = 'Voltar à disciplina';

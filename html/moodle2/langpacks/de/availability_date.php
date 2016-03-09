@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['ajaxerror'] = 'Fehler bei der Verbindung zum Server um Zeiten zu konvertieren.';
-$string['description'] = 'Zugriff verhindern vor (oder nach) dem festgelegten Datum und der Uhrzeit.';
-$string['direction_before'] = 'Datum:';
-$string['direction_from'] = 'von';
+$string['ajaxerror'] = 'Fehler bei der Verbindung zum Server, um die Zeiten zu konvertieren.';
+$string['description'] = 'Zugriff über ein festgelegtes Datum und die Uhrzeit steuern';
+$string['direction_before'] = 'Datum';
+$string['direction_from'] = 'ab';
 $string['direction_label'] = 'Richtung';
 $string['direction_until'] = 'bis';
-$string['full_from'] = 'Datum nach <strong>{$a}</strong>';
-$string['full_from_date'] = 'Datum genau oder nach <strong>{$a}</strong>';
-$string['full_until'] = 'Datum vor <strong>{$a}</strong>';
-$string['full_until_date'] = 'Datum vor dem Ende von <strong>{$a}</strong>';
+$string['full_from'] = 'Zeit nach <strong>{$a}</strong>';
+$string['full_from_date'] = 'Zeit genau oder nach <strong>{$a}</strong>';
+$string['full_until'] = 'Zeit vor <strong>{$a}</strong>';
+$string['full_until_date'] = 'Zeit vor Ende <strong>{$a}</strong>';
 $string['pluginname'] = 'Voraussetzung: Datum';
 $string['short_from'] = 'Verfügbar ab <strong>{$a}</strong>';
 $string['short_from_date'] = 'Verfügbar ab <strong>{$a}</strong>';
 $string['short_until'] = 'Verfügbar bis <strong>{$a}</strong>';
-$string['short_until_date'] = 'Verfügbar bis zum Ende von <strong>{$a}</strong>';
+$string['short_until_date'] = 'Verfügbar bis Ende <strong>{$a}</strong>';
 $string['title'] = 'Datum';

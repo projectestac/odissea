@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_submitted'] = 'Uma submissão de upload foi submetida.';
+$string['event_assessable_submitted'] = 'O carregamento de uma submissão foi submetido.';
 $string['event_assessable_uploaded'] = 'Um ficheiro foi carregado.';
-$string['pluginname'] = 'Upload';
+$string['pluginname'] = 'Carregar ficheiros';

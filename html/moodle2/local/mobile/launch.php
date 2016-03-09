@@ -44,7 +44,6 @@ if (empty($service)) {
 
 // Check if the plugin is properly configured.
 $typeoflogin = get_config('local_mobile', 'typeoflogin');
-
 if (empty($typeoflogin)) {
     throw new moodle_exception('pluginnotenabledorconfigured', 'local_mobile');
 }
@@ -168,6 +167,10 @@ $siteid = md5($CFG->wwwroot . $passport);   // Passport is used here as salt.
 $apptoken = base64_encode($siteid . ':::' . $token->token);
 
 // Redirect using the custom URL scheme.
-$location = "Location: moodlemobile://token=$apptoken";
+$urlscheme = get_config('local_mobile', 'urlscheme');
+if (empty($urlscheme)) {
+    $urlscheme = 'moodlemobile';
+}
+$location = "Location: $urlscheme://token=$apptoken";
 header($location);
 die;

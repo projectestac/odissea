@@ -43,6 +43,8 @@ defined('MOODLE_INTERNAL') || die();
       'features' => 14,
       'modes' => 4,
       'default' => true,
+      'class' => 'cachestore_static',
+      'lock' => 'cachelock_file_default',
     ),
     'localmemcache' =>
     array (
@@ -65,8 +67,8 @@ defined('MOODLE_INTERNAL') || die();
   array (
     0 =>
     array (
-      'mode' => 1,
-      'store' => 'localmemcache',
+      'mode' => 4,
+      'store' => 'default_request',
       'sort' => -1,
     ),
     1 =>
@@ -77,8 +79,8 @@ defined('MOODLE_INTERNAL') || die();
     ),
     2 =>
     array (
-      'mode' => 4,
-      'store' => 'default_request',
+      'mode' => 1,
+      'store' => 'localmemcache',
       'sort' => -1,
     ),
   ),
@@ -95,7 +97,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'string',
       'selectedsharingoption' => 1,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/langmenu' =>
     array (
@@ -107,7 +108,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'langmenu',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/databasemeta' =>
     array (
@@ -122,7 +122,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'databasemeta',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/eventinvalidation' =>
     array (
@@ -134,7 +133,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'eventinvalidation',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/questiondata' =>
     array (
@@ -147,7 +145,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'questiondata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/htmlpurifier' =>
     array (
@@ -156,7 +153,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'htmlpurifier',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/config' =>
     array (
@@ -167,7 +163,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'config',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/groupdata' =>
     array (
@@ -180,7 +175,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'groupdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/calendar_subscriptions' =>
     array (
@@ -192,7 +186,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'calendar_subscriptions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/yuimodules' =>
     array (
@@ -201,7 +194,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'yuimodules',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/observers' =>
     array (
@@ -268,18 +260,17 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'coursecatrecords',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/coursecontacts' =>
     array (
       'mode' => 1,
       'staticacceleration' => true,
       'simplekeys' => true,
+      'ttl' => 3600,
       'component' => 'core',
       'area' => 'coursecontacts',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/repositories' =>
     array (
@@ -288,7 +279,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'repositories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/externalbadges' =>
     array (
@@ -299,7 +289,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'externalbadges',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/coursemodinfo' =>
     array (
@@ -309,7 +298,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'coursemodinfo',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/userselections' =>
     array (
@@ -354,7 +342,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'suspended_userids',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'availability_grade/scores' =>
     array (
@@ -366,7 +353,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'scores',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'availability_grade/items' =>
     array (
@@ -378,7 +364,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'mod_glossary/concepts' =>
     array (
@@ -391,7 +376,19 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'concepts',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
+    ),
+    'block_progress/cachedlogs' =>
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'invalidationevents' =>
+      array (
+        0 => 'changesincourse',
+      ),
+      'component' => 'block_progress',
+      'area' => 'cachedlogs',
     ),
     'repository_skydrive/foldername' =>
     array (
@@ -400,7 +397,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'foldername',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'tool_monitor/eventsubscriptions' =>
     array (
@@ -413,7 +409,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'eventsubscriptions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_uploadcourse/helper' =>
     array (
@@ -422,7 +417,6 @@ defined('MOODLE_INTERNAL') || die();
       'area' => 'helper',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
   ),
   'definitionmappings' =>
@@ -430,7 +424,7 @@ defined('MOODLE_INTERNAL') || die();
   ),
   'locks' =>
   array (
-    'default_file_lock' =>
+    'cachelock_file_default' =>
     array (
       'name' => 'cachelock_file_default',
       'type' => 'cachelock_file',

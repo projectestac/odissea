@@ -99,7 +99,7 @@ $string['deleteattemptcheck'] = 'Tem a certeza que deseja apagar estas tentativa
 $string['deleteselected'] = 'Apagar as tentativas selecionadas';
 $string['deleteuserattemptcheck'] = 'Tem a certeza absoluta de que quer apagar completamente todas as suas tentativas?';
 $string['details'] = 'Detalhe do percurso';
-$string['directories'] = 'Mostrar links para pastas';
+$string['directories'] = 'Mostrar hiperligações para pastas';
 $string['disabled'] = 'Inativa';
 $string['display'] = 'Exibir pacote de conteúdos';
 $string['displayactivityname'] = 'Exibir nome da atividade';
@@ -178,7 +178,7 @@ $string['hidden'] = 'Oculto';
 $string['hidebrowse'] = 'Desativar modo de pré-visualização';
 $string['hidebrowsedesc'] = 'O modo de pré-visualização permite que o aluno navegue na atividade antes de iniciar a sua tentativa de realização.';
 $string['hidebrowse_help'] = 'O modo de pré-visualização permite ao aluno ver a atividade antes de efetuar uma tentativa de realização. Se este modo estiver desativado, o botão de pré-visualização não é disponibilizado.';
-$string['hideexit'] = 'Ocultar link de saída';
+$string['hideexit'] = 'Ocultar hiperligação de saída';
 $string['hidereview'] = 'Ocultar botão de revisão';
 $string['hidetoc'] = 'Exibir a tabela de conteúdos na página do SCORM';
 $string['hidetocdesc'] = 'Esta configuração determina a forma como a tabela de conteúdos é exibida na janela de reprodução do SCORM.';
@@ -237,8 +237,8 @@ Existem 3 opções:
 $string['navigation'] = 'Navegação';
 $string['navpositionleft'] = 'Posição dos botões de navegação a partir da esquerda em pixeis.';
 $string['navpositiontop'] = 'Posição dos botões de navegação de cima em pixeis.';
-$string['networkdropped'] = 'O player do SCORM determinou que a sua ligação de Internet é insegura ou foi interrompida. Se continuar nesta atividade SCORM, o registo do seu progresso poderá não ficar gravado.<br />
-Deverá sair agora da atividade e voltar quando tiver uma ligação de Internet segura.';
+$string['networkdropped'] = 'O player do SCORM determinou que a sua ligação de Internet está instável ou foi interrompida. Se continuar nesta atividade SCORM, o registo do seu progresso poderá não ficar guardado.<br />
+Recomendamos que termine a atividade e volte quando tiver uma ligação de Internet fiável.';
 $string['newattempt'] = 'Iniciar uma nova tentativa';
 $string['next'] = 'Continuar';
 $string['noactivity'] = 'Nada a registar';
@@ -280,7 +280,7 @@ $string['pluginadministration'] = 'Administração do pacote SCORM';
 $string['pluginname'] = 'Pacote SCORM';
 $string['popup'] = 'Nova janela';
 $string['popuplaunched'] = 'Este Pacote SCORM foi carregado numa janela de pop-up, se já terminou de ver este conteúdo, clique aqui para voltar à página da disciplina.';
-$string['popupmenu'] = 'Numa caixa de seleção';
+$string['popupmenu'] = 'Numa lista pendente';
 $string['popupopen'] = 'Abrir pacote numa nova janela';
 $string['popupsblocked'] = 'Aparentemente, as janelas pop-up estão bloqueadas, impedindo o pacote SCORM de ser exibido. Verifique as configurações do seu navegador antes de tentar de novo.';
 $string['position_error'] = 'A tag {$a->tag} não pode ser descendente da tag {$a->parent}';
@@ -406,7 +406,7 @@ $string['whatgrade_help'] = 'Se forem permitidas múltiplas tentativas de realiz
 
 Notas sobre a gestão de Múltiplas Tentativas:
 
-* A possibilidade de iniciar nova tentativa é facultada através de uma caixa de verificação acima do botão \'Entrar\' na página com a tabela de conteúdos, por isso certifique-se de que permite o acesso a esta página se pretende permitir mais do que uma tentativa.
+* A possibilidade de iniciar nova tentativa é facultada através de uma caixa de seleção acima do botão \'Entrar\' na página com a tabela de conteúdos, por isso certifique-se de que permite o acesso a esta página se pretende permitir mais do que uma tentativa.
 
 * Alguns pacotes SCORM reconhecem as novas tentativas, outros não. Isto significa que se o aluno entra numa tentativa existente, e o pacote SCORM não possuir lógica interna para evitar a sobreposição dos dados anteriores,  estes poderão ser substituídos mesmo que à tentativa já tenha sido atribuído o estado \'completa\' ou \'com aprovação\'.
 

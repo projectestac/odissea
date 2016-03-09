@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotfit'] = '置換はオリジナルより長く、短縮できないため、続けることはできません。';
-$string['disclaimer'] = '私はこの処理のリスクを理解しています。';
+$string['disclaimer'] = '私はこの処理のリスクを理解しています';
 $string['doit'] = 'はい、実行してください!';
 $string['excludedtables'] = 'テキスト置換の一環として、いくつかのテーブルは更新されません。これには設定、ログ、イベントおよびセッションテーブルを含みます。';
 $string['notifyfinished'] = '... 完了';
@@ -36,7 +36,7 @@ $string['notsupported'] = 'このスクリプトはサポート対象外です�
 $string['pageheader'] = 'データベース全体のテキスト検索および置換';
 $string['pluginname'] = 'DB検索および置換';
 $string['replacewith'] = 'このストリングで置換する';
-$string['replacewithhelp'] = '通常、新しいサーバのURLです';
+$string['replacewithhelp'] = '通常、新しいサーバのURLです。';
 $string['searchwholedb'] = 'このストリングでデータベース全体を検索する';
-$string['searchwholedbhelp'] = '通常、前のサーバのURLです';
+$string['searchwholedbhelp'] = '通常、前のサーバのURLです。';
 $string['shortenoversized'] = '必要に応じて結果を短くする';

@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Nur für Teilnehmer/innen einer Gruppe in einer ausgewählten Gruppierung zulassen.';
+$string['description'] = 'Zugriff für Mitglieder einer Gruppe in einer ausgewählten Gruppierung erlauben';
 $string['error_selectgrouping'] = 'Sie müssen eine Gruppierung auswählen.';
 $string['missing'] = '(Fehlende Gruppierung)';
 $string['pluginname'] = 'Voraussetzung: Gruppierung';
-$string['requires_grouping'] = 'Sie gehören zur Gruppierung <strong>{$a}</strong>.';
-$string['requires_notgrouping'] = 'Sie gehören nicht zur Gruppierung <strong>{$a}</strong>.';
+$string['requires_grouping'] = 'Sie gehören zu einer Gruppe in <strong>{$a}</strong>.';
+$string['requires_notgrouping'] = 'Sie gehören nicht zu einer Gruppe in <strong>{$a}</strong>.';
 $string['title'] = 'Gruppierung';

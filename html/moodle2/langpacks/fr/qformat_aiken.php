@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Format Aiken';
-$string['pluginname_help'] = 'Le format Aiken fournit une manière très simple d\'importer des questions à choix multiples à partir d\'un fichier texte.';
+$string['pluginname_help'] = 'Le format Aiken fournit une manière très simple d\'importer des questions à choix multiple à partir d\'un fichier texte.';

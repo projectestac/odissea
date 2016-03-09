@@ -25,21 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addafter'] = '章の追加';
+$string['addafter'] = '章を追加する';
 $string['book:addinstance'] = '新しいブックを追加する';
 $string['book:edit'] = 'ブックの章を編集する';
 $string['book:read'] = 'ブックを表示する';
-$string['book:viewhiddenchapters'] = '非表示のブックの章を表示する';
+$string['book:viewhiddenchapters'] = 'ブックの非表示の章を表示する';
 $string['chapters'] = '章';
-$string['chaptertitle'] = '章の題名';
-$string['confchapterdelete'] = 'ほんとうにこの章を削除しますか?';
-$string['confchapterdeleteall'] = 'ほんとうにこの章とその下にある節を削除しますか?';
-$string['content'] = '内容';
+$string['chaptertitle'] = '章題';
+$string['confchapterdelete'] = '本当にこの章を削除してもよろしいですか?';
+$string['confchapterdeleteall'] = '本当にこの章およびすべての節を削除してもよろしいですか?';
+$string['content'] = 'コンテンツ';
 $string['customtitles'] = 'カスタムタイトル';
 $string['customtitles_help'] = '通常、章題は自動的に目次 (TOC) およびコンテンツ上の見出しに表示されます。
 
 「カスタムタイトル」チェックボックスがチェックされた場合、章題はコンテンツの上の見出しとしては表示されません。コンテンツの一部として、異なるタイトル (恐らく、章題よりも長いタイトル) を入力することができます。';
-$string['editingchapter'] = '章を編集';
+$string['editingchapter'] = '章を編集する';
 $string['errorchapter'] = 'ブックの章の読み込み中にエラーが発生しました。';
 $string['eventchaptercreated'] = '章が作成されました。';
 $string['eventchapterdeleted'] = '章が削除されました。';
@@ -63,12 +63,12 @@ $string['numbering0'] = 'なし';
 $string['numbering1'] = '番号';
 $string['numbering2'] = '点';
 $string['numbering3'] = 'インデント';
-$string['numbering_help'] = '* なし - 章および節のタイトルは一切フォーマットされません。..
-* 数字 - 章および節は次のようにナンバリングされます: 1, 1.1, 1.2, 2,
+$string['numbering_help'] = '* なし - 章および節のタイトルは一切フォーマットされません。
+* 数字 - 章および節は次のようにナンバリングされます: 1, 1.1, 1.2, 2, ...
 * 黒丸 - 節がインデントされて、黒丸と共に目次内に表示されます。
 * インデント - 目次内の節がインデントされます。';
 $string['numberingoptions'] = '利用可能な章のフォーマット';
-$string['numberingoptions_desc'] = '新しいブック作成時に利用できるナンバリングオプションを選択してください。';
+$string['numberingoptions_desc'] = '目次内の章および節の表示オプションです。';
 $string['page-mod-book-x'] = 'すべてのブックモジュールページ';
 $string['pluginadministration'] = 'ブック管理';
 $string['pluginname'] = 'ブック';

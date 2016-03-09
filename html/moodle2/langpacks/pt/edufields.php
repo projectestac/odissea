@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['field101'] = 'CiênciasNaturais e Físicas';
+$string['field101'] = 'Ciências Naturais e Física';
 $string['field10101'] = 'Ciências Matemáticas';
 $string['field1010101'] = 'Matemática';
 $string['field1010103'] = 'Estatísticas';

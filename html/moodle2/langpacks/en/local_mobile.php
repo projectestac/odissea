@@ -25,11 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Grant permissions to the authenticated user role';
+$string['allowpermissionsdescription'] = 'Edit the Authenticated user role and allow the capability moodle/webservice:createtoken';
 $string['cannotcreatetoken'] = 'Automatically token generation is not available to site administrators (they must create a token manually in the site)';
+$string['checkpluginconfiguration'] = 'Check plugin configuration';
+$string['enableadditionalservice'] = 'Enable the Moodle Mobile additional features service';
+$string['enableadditionalservicedescription'] = 'This service must be enabled.';
 $string['local_mobiledescription'] = 'Plugin that extends the Mobile service features';
 $string['local_mobilesettings'] = 'Settings';
 $string['local_mobiletypeoflogin'] = 'Choose the type of login';
 $string['local_mobiletypeoflogin_key'] = 'Type of login';
+$string['local_mobileurlscheme'] = 'URL scheme for login via a browser window.';
+$string['local_mobileurlscheme_key'] = 'URL scheme';
 $string['loginintheapp'] = 'Via the app';
 $string['logininthebrowser'] = 'Via a browser window (for SSO plugins)';
 $string['mod_scorm_protectpackagedownloads'] = 'Protect package downloads';

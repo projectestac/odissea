@@ -63,7 +63,7 @@ $string['addinganew'] = 'Adicionar "{$a}"';
 $string['addinganewto'] = 'Adicionar "{$a->what}" em "{$a->to}"';
 $string['addingdatatoexisting'] = 'Adicionar dados à existente';
 $string['additionalnames'] = 'Nomes adicionais';
-$string['addlinkhere'] = 'Adicionar link aqui';
+$string['addlinkhere'] = 'Adicionar uma hiperligação aqui';
 $string['addnewcategory'] = 'Adicionar nova categoria';
 $string['addnewcourse'] = 'Adicionar nova disciplina';
 $string['addnewuser'] = 'Adicionar novo utilizador';
@@ -163,7 +163,7 @@ $string['authentication'] = 'Autenticação';
 $string['authenticationplugins'] = 'Módulos de Autenticação';
 $string['autosubscribe'] = 'Subscrição de fóruns';
 $string['autosubscribeno'] = 'Não: Não quero subscrever tópicos dos fóruns automaticamente';
-$string['autosubscribeyes'] = 'Sim: Quero subscrever o tópico do fórum quando nele intervenho';
+$string['autosubscribeyes'] = 'Sim: Quero subscrever o tópico do fórum quando submeto uma mensagem';
 $string['availability'] = 'Disponibilidade';
 $string['availablecourses'] = 'Disciplinas disponíveis';
 $string['back'] = 'Voltar';
@@ -315,7 +315,7 @@ $string['copyingzipfile'] = 'A copiar os ficheiros .zip';
 $string['copyrightnotice'] = 'Nota de direitos de autor';
 $string['coresystem'] = 'sistema';
 $string['cost'] = 'Custo';
-$string['costdefault'] = 'Custo por omissão';
+$string['costdefault'] = 'Custo predefinido';
 $string['counteditems'] = '{$a->count} {$a->items}';
 $string['country'] = 'País';
 $string['course'] = 'Disciplina';
@@ -363,7 +363,7 @@ $string['coursehelpshowgrades'] = 'Permitir que a pauta esteja disponível para 
 $string['coursehidden'] = 'Esta disciplina está atualmente indisponível para alunos';
 $string['courseinfo'] = 'Informações sobre a disciplina';
 $string['courselegacyfiles'] = 'Ficheiros da disciplina (retrocompatibilidade com versões anteriores do Moodle)';
-$string['courselegacyfiles_help'] = 'A área Ficheiros da disciplina fornece alguma retrocompatibilidade com a versão 1.9 do Moodle e anteriores. Note que todos os ficheiros nesta área estão sempre acessíveis a todos os participantes da disciplina (quer estabeleça, ou não, um link para eles) e não existe forma de saber se, nem onde, estes ficheiros estão a ser usados no Moodle.
+$string['courselegacyfiles_help'] = 'A área Ficheiros da disciplina fornece alguma retrocompatibilidade com a versão 1.9 do Moodle e anteriores. Note que todos os ficheiros nesta área estão sempre acessíveis a todos os participantes da disciplina (quer estabeleça, ou não, uma hiperligação para eles) e não existe forma de saber se, nem onde, estes ficheiros estão a ser usados no Moodle.
 
 Se usar esta área para guardar ficheiros da disciplina, pode estar a correr riscos de violação de privacidade e segurança, assim como sujeito a falta de ficheiros nas cópias de segurança, importação de disciplinas e na partilha de conteúdos. Assim, não é aconselhável a utilização desta área a não ser que tenha de facto a certeza do que está a fazer.';
 $string['courselegacyfiles_link'] = 'coursefiles2';
@@ -418,7 +418,7 @@ $string['createnewsubcategory'] = 'Criar nova subcategoria';
 $string['createsubcategoryof'] = 'Criar subcategoria de {$a}';
 $string['createuser'] = 'Criar utilizador';
 $string['createuserandpass'] = 'Escolha um nome de utilizador e senha';
-$string['createziparchive'] = 'Criar um arquivo zip';
+$string['createziparchive'] = 'Criar um ficheiro zip';
 $string['creatingblocks'] = 'A criar blocos';
 $string['creatingblocksroles'] = 'A criar atribuições e revogações de papéis ao nível de blocos.';
 $string['creatingblogsinfo'] = 'A criar informação dos blogues';
@@ -520,17 +520,17 @@ $string['displayingusers'] = 'Listagem dos utilizadores desde {$a->start} até {
 $string['displayonpage'] = 'Mostrar na página';
 $string['dndcourse'] = 'Pode arrastar e largar esta disciplina para alterar a sua posição ou para a mover para outra categoria.';
 $string['dndenabled_inbox'] = 'arraste para aqui os ficheiros para os carregar';
-$string['dndnotsupported'] = 'Carregar ficheiros através de agarrar e arrastar não é suportado';
-$string['dndnotsupported_help'] = 'O seu navegador não suporta o carregamento de ficheiros através de agarrar e arrastar.<br/> Esta funcionalidade está disponível em todas as versões recentes do Chrome, Firefox e Safari, bem como no Internet Explorer 10 e posterior';
-$string['dndnotsupported_insentence'] = 'Agarrar e arrastar não suportado';
+$string['dndnotsupported'] = 'Carregar ficheiros através de arrastar e largar não é suportado';
+$string['dndnotsupported_help'] = 'O seu navegador não suporta o carregamento de ficheiros através de arrastar e largar.<br/> Esta funcionalidade está disponível em todas as versões recentes do Chrome, Firefox e Safari, bem como no Internet Explorer 10 e posterior';
+$string['dndnotsupported_insentence'] = 'Arrastar e largar não suportado';
 $string['dnduploadwithoutcontent'] = 'Este carregamento não tem conteúdo nenhum';
 $string['dndworkingfile'] = 'Para adicionar ficheiros nos tópicos arraste-os do seu computador para o local pretendido';
-$string['dndworkingfilelink'] = 'Para adicionar ficheiros ou links nos tópicos arraste-os do seu computador para o local pretendido';
+$string['dndworkingfilelink'] = 'Para adicionar ficheiros ou hiperligações nos tópicos arraste-os do seu computador para o local pretendido';
 $string['dndworkingfiletext'] = 'Para adicionar ficheiros ou textos nos tópicos arraste-os do seu computador para o local pretendido';
-$string['dndworkingfiletextlink'] = 'Arraste do seu computador ficheiros, textos ou links para dentro dos tópicos';
-$string['dndworkinglink'] = 'Para adicionar links nos tópicos arraste-os do seu computador para o local pretendido';
+$string['dndworkingfiletextlink'] = 'Arraste do seu computador ficheiros, textos ou hiperligações para dentro dos tópicos';
+$string['dndworkinglink'] = 'Para adicionar hiperligações nos tópicos arraste-os do seu computador para o local pretendido';
 $string['dndworkingtext'] = 'Para adicionar texto nos tópicos arraste-o do seu computador para o local pretendido';
-$string['dndworkingtextlink'] = 'Para adicionar textos ou links nos tópicos arraste-os do seu computador para o local pretendido';
+$string['dndworkingtextlink'] = 'Para adicionar textos ou hiperligações nos tópicos arraste-os do seu computador para o local pretendido';
 $string['documentation'] = 'Documentação do Moodle';
 $string['dontsortcategories'] = 'Não ordenar categorias';
 $string['dontsortcourses'] = 'Não ordenar disciplinas';
@@ -549,7 +549,7 @@ $string['edhelpbgcolor'] = 'Definir a área de edição de cor de fundo.<br />Os
 $string['edhelpcleanword'] = 'Esta configuração ativa ou desativa o formato Word específico de filtragem.';
 $string['edhelpenablespelling'] = 'Ativa ou desativa a verificação ortográfica no editor. Quando a opção está ativa, <strong>aspell</strong> deve ser instalado no servidor. O segundo valor é o <strong>dicionário predefinido</strong>. Tal será usado se o aspell não tiver o dicionário da linguagem do utilizador.';
 $string['edhelpfontfamily'] = 'A família da fonte é uma lista de fontes de nomes e/ou nomes genéricos de famílias. Os nomes das famílias devem ser separados por vírgulas.';
-$string['edhelpfontlist'] = 'Definir as fontes usadas em editores com menu de seleção.';
+$string['edhelpfontlist'] = 'Definir as fontes usadas em editores com lista pendente.';
 $string['edhelpfontsize'] = 'O tamanho da fonte predefinido define o tamanho da fonte no editor. <br />São exemplos de valores válidos:médio, grande, menor, maior, 10pt, 11px.';
 $string['edit'] = 'Editar';
 $string['edita'] = 'Editar {$a}';
@@ -598,7 +598,7 @@ Para confirmar a sua nova conta, clique em:
 
 {$a->link}
 
-Na maioria dos programas de e-mail este endereço aparece como um link a azul que basta clicar. Se tal não funcionar,
+Na maioria dos programas de e-mail este endereço aparece como uma hiperligação a azul que basta clicar. Se tal não funcionar,
 então corte e cole o endereço na linha de Endereço no topo da janela do seu browser de internet.
 
 Se necessitar de ajuda, contacte o administrador do site,
@@ -641,7 +641,7 @@ Para mudar a sua senha, aceda a:
 
 {$a->link}
 
-Na maioria dos programas de e-mail basta clicar neste endereço que deverá aparecer como um link a azul. Se isto não funcionar, copie e cole o endereço na barra de endereço no topo da janela do seu browser de Internet.
+Na maioria dos programas de e-mail basta clicar neste endereço que deverá aparecer como uma hiperligação a azul. Se isto não funcionar, copie e cole o endereço na barra de endereço no topo da janela do seu browser de Internet.
 
 Se necessitar de ajuda, contacte o administrador do site:
 {$a->admin}';
@@ -669,7 +669,7 @@ Para confirmar este pedido e receber a nova senha por e-mail, clique em:
 
 {$a->link}
 
-Na maioria dos programas de e-mail este endereço aparece como um link a azul que basta clicar. Se tal não funcionar,
+Na maioria dos programas de e-mail este endereço aparece como uma hiperligação a azul que basta clicar. Se tal não funcionar,
 então corte e cole o endereço na linha de Endereço no topo da janela do seu browser de internet.
 
 Se necessitar de ajuda, contacte o administrador do site,
@@ -691,7 +691,7 @@ $string['emailresetconfirmation'] = 'Olá {$a->firstname},
 
 Uma reposição de senha foi pedida para a sua conta \'{$a->username}\' em {$a->sitename}.
 
-Para confirmar este pedido e definir uma nova senha, por favor aceda ao seguinte endereço: {$a->link} (Este link é válido por {$a->resetminutes} minutos a partir do momento em que a reposição de senha foi pedida pela primeira vez).
+Para confirmar este pedido e definir uma nova senha, por favor aceda ao seguinte endereço: {$a->link} (Esta hiperligação é válida por {$a->resetminutes} minutos a partir do momento em que a reposição de senha foi pedida pela primeira vez).
 
 Se este pedido de reposição de senha não foi feito por si, ignore esta mensagem.
 
@@ -699,7 +699,7 @@ Se precisar de ajuda, por favor contacte o administrador do site, {$a->admin}.';
 $string['emailresetconfirmationsubject'] = '{$a}: Pedido de reposição de senha';
 $string['emailresetconfirmsent'] = 'Foi enviado um e-mail para o seu endereço em <b>{$a}</b>.<br />Este contém instruções para confirmar e completar a alteração da sua senha. Se precisar de ajuda, por favor contacte o administrador do site, {$a->admin}.';
 $string['emailtoprivatefiles'] = 'Também pode enviar ficheiros como anexos de email diretamente para a sua área de ficheiros privados. Basta anexar os seus ficheiros a um email e enviá-lo para {$a}.';
-$string['emailtoprivatefilesdenied'] = 'O administrador desativou a opção de upload dos seus próprios ficheiros privados.';
+$string['emailtoprivatefilesdenied'] = 'O administrador desativou a possibilidade de carregar ficheiros privados.';
 $string['emptydragdropregion'] = 'região vazia';
 $string['enable'] = 'Ativar';
 $string['encryptedcode'] = 'Código encriptado';
@@ -715,7 +715,7 @@ $string['error'] = 'Erro';
 $string['errorcreatingactivity'] = 'Não é possível criar a instância da atividade \'{$a}';
 $string['errorfiletoobig'] = 'O ficheiro é maior do que o limite permitido de {$a} bytes';
 $string['errornouploadrepo'] = 'Não existe repositórios para este site';
-$string['errorwhenconfirming'] = 'A sua conta ainda não está confirmada porque ocorreu um erro. Se clicou num link numa mensagem para chegar aqui, assegure-se de que não havia um parágrafo ou retorno de linha na linha da sua mensagem. Tem que usar a opção cortar-colar para reconstruir o apontador completo.';
+$string['errorwhenconfirming'] = 'A sua conta ainda não está confirmada porque ocorreu um erro. Se clicou numa hiperligação numa mensagem para chegar aqui, assegure-se de que não havia um parágrafo ou retorno de linha na linha da sua mensagem. Tem que usar a opção cortar-colar para reconstruir o apontador completo.';
 $string['eventcommentcreated'] = 'Comentário criado';
 $string['eventcommentdeleted'] = 'Comentário apagado';
 $string['eventcommentsviewed'] = 'Comentários visualizados';
@@ -771,7 +771,7 @@ $string['file'] = 'Ficheiro';
 $string['fileexists'] = 'Já existe um ficheiro com nome {$a}';
 $string['filemissing'] = '{$a} não existe';
 $string['files'] = 'Ficheiros';
-$string['filesanduploads'] = 'Ficheiros e uploads';
+$string['filesanduploads'] = 'Ficheiros e carregamentos';
 $string['filesfolders'] = 'Ficheiros/pastas';
 $string['filetoolarge'] = 'é muito grande para carregar';
 $string['fileuploadwithcontent'] = 'O carregamento de ficheiros não deve incluir o parâmetro conteúdo';
@@ -1074,7 +1074,7 @@ $string['maximumshort'] = 'Máx';
 $string['maximumupload'] = 'Tamanho máximo dos ficheiros enviados';
 $string['maximumupload_help'] = 'Esta configuração determina o tamanho máximo dos ficheiros que podem ser enviados para a disciplina, limitado pelas configurações definidas pelo administrador. Os módulos de atividades também incluem uma configuração do tamanho máximo de forma a restringir ainda mais o tamanho dos ficheiros.';
 $string['maxnumberweeks'] = 'Número máximo de secções';
-$string['maxnumberweeks_desc'] = 'Número máximo disponível na opção "Número de Semanas/Tópicos" nas configurações da disciplina (aplica-se apenas a certos formaros da disciplina).';
+$string['maxnumberweeks_desc'] = 'Número máximo disponível na lista pendente "Número de Semanas/Tópicos" nas configurações da disciplina (aplica-se apenas a certos formatos de disciplina).';
 $string['maxnumcoursesincombo'] = 'Procurar <a href="{$a->link}">{$a->numberofcourses} disciplinas</a>.';
 $string['maxsize'] = 'Tamanho máximo:{$a}';
 $string['maxsizeandareasize'] = 'Tamanho máximo para novos ficheiros: {$a->size}, overall limit: {$a->areasize}';
@@ -1181,12 +1181,12 @@ $string['myhome'] = 'Minha página principal';
 $string['mymoodledashboard'] = 'Meu painel Moodle';
 $string['myprofile'] = 'Meu perfil';
 $string['name'] = 'Designação';
-$string['nameforlink'] = 'Que nome deseja dar a este link?';
+$string['nameforlink'] = 'Que nome deseja dar a esta hiperligação?';
 $string['nameforpage'] = 'Nome';
 $string['navigation'] = 'Navegação';
 $string['needed'] = 'Necessários';
-$string['networkdropped'] = 'Foi detetado que a ligação à Internet não é confiável ou foi interrompida. <br />
-Por favor, esteja ciente de que as alterações não podem ser guardadas corretamente até que a sua ligação melhore.';
+$string['networkdropped'] = 'A sua ligação à Internet está instável ou foi interrompida.<br />
+Por favor, esteja ciente que as alterações podem não ser guardadas corretamente até que a sua ligação melhore.';
 $string['never'] = 'Nunca';
 $string['neverdeletelogs'] = 'Nunca apague os registos';
 $string['new'] = 'Novo';
@@ -1338,7 +1338,7 @@ $string['page'] = 'Página';
 $string['pagea'] = 'Página {$a}';
 $string['pageheaderconfigablock'] = 'A configurar um bloco em {$a->fullname}';
 $string['pagepath'] = 'Caminho da página';
-$string['pageshouldredirect'] = 'Esta página será redirecionada automaticamente. Se tal não acontecer use o link de continuar abaixo.';
+$string['pageshouldredirect'] = 'Esta página será redirecionada automaticamente. Se tal não acontecer use a hiperligação de continuar abaixo.';
 $string['parentcategory'] = 'Categoria ascendente';
 $string['parentcoursenotfound'] = 'Disciplina ascendente desconhecida';
 $string['parentfolder'] = 'Pasta ascendente';
@@ -1419,7 +1419,7 @@ $string['profile'] = 'Perfil';
 $string['profilenotshown'] = 'Esta descrição do perfil não será mostrada até que este utilizador esteja inscrito em pelo menos uma disciplina.';
 $string['publicprofile'] = 'Perfil público';
 $string['publicsitefileswarning'] = 'Nota: Os ficheiros aqui colocados poderão ser acedidos por todos';
-$string['publicsitefileswarning2'] = 'Nota: Os ficheiros colocados aqui podem ser acessados todos que saibam (ou adivinhem) o URL. Por razões de segurança, é recomendado que todos os arquivos de cópias de segurança sejam apagados imediatamente após a sua restauração.';
+$string['publicsitefileswarning2'] = 'Nota: Os ficheiros colocados aqui podem ser acessados todos que saibam (ou adivinhem) o URL. Por razões de segurança, é recomendado que todos os ficheiros de cópias de segurança sejam apagados imediatamente após a sua restauração.';
 $string['publicsitefileswarning3'] = 'Nota: Os ficheiros colocados aqui podem ser acessados todos que saibam (ou adivinhem) o URL.<br />Por razões de segurança, os ficheiros das cópias de segurança devem ser guardados apenas numa pasta segura.';
 $string['publish'] = 'Publicar';
 $string['question'] = 'Pergunta';
@@ -1473,7 +1473,7 @@ $string['resetcomponent'] = 'Componente';
 $string['resetcourse'] = 'Reiniciar disciplina';
 $string['resetinfo'] = 'Esta página permite-lhe limpar os dados de utilizadores numa disciplina, mantendo as atividades e outras configurações. Por favor tenha em atenção que após submeter o seu pedido nesta página, os dados apagados serão perdidos para sempre!';
 $string['resetnotimplemented'] = 'Reiniciação não implementada';
-$string['resetrecordexpired'] = 'O link que usou para repor a senha foi gerado há mais de {$a} minutos e expirou. Por favor, inicie um novo pedido de reposição de senha.';
+$string['resetrecordexpired'] = 'A hiperligação que usou para repor a senha foi gerada há mais de {$a} minutos e expirou. Por favor, inicie um novo pedido de reposição de senha.';
 $string['resetstartdate'] = 'Reiniciar data de início';
 $string['resetstatus'] = 'Estado';
 $string['resettask'] = 'Tarefa';
@@ -1521,9 +1521,9 @@ $string['roles'] = 'Papéis atribuídos';
 $string['rss'] = 'RSS';
 $string['rssarticles'] = 'Número de artigos RSS recentes';
 $string['rsserror'] = 'Erro na leitura de dados RSS';
-$string['rsserrorauth'] = 'O seu link de RSS não contém um token de autenticação válido.';
-$string['rsserrorguest'] = 'Esta lista usa o acesso de visitante para aceder à informação, mas o visitante não tem permissões de leitura dessa informação. Visite o URL de origem desta lista autenticado com uma conta válida para obter um novo link de RSS.';
-$string['rsskeyshelp'] = '<p>Para garantir a segurança e privacidade, os URLs das listas RSS possuem um token especial identificador. Desta forma, evita-se que outros utilizadores acedam a áreas indevidas do Moodle através das listas. </p><p> Este token é criado automaticamente da primeira vez que aceder a uma área de Moodle que produz uma lista RSS. Se sentir que o seu token lista RSS foi comprometido de alguma forma, pode solicitar um novo clicando no link aqui de Recomeço. Após isto repare que os seus URLs de listas RSS ficarão inválidos. </p>';
+$string['rsserrorauth'] = 'A sua hiperligação de RSS não contém um token de autenticação válido.';
+$string['rsserrorguest'] = 'Esta lista usa o acesso de visitante para aceder à informação, mas o visitante não tem permissões de leitura dessa informação. Visite o URL de origem desta lista autenticado com uma conta válida para obter uma nova hiperligação de RSS.';
+$string['rsskeyshelp'] = '<p>Para garantir a segurança e privacidade, os URLs das listas RSS possuem um token especial identificador. Desta forma, evita-se que outros utilizadores acedam a áreas indevidas do Moodle através das listas. </p><p> Este token é criado automaticamente da primeira vez que aceder a uma área de Moodle que produz uma lista RSS. Se sentir que o seu token lista RSS foi comprometido de alguma forma, pode solicitar um novo clicando na hiperligação aqui de Recomeço. Após isto repare que os seus URLs de listas RSS ficarão inválidos. </p>';
 $string['rsstype'] = 'Lista RSS para esta atividade';
 $string['saveandnext'] = 'Gravar e mostrar o seguinte';
 $string['savechanges'] = 'Gravar alterações';
@@ -1635,7 +1635,7 @@ $string['showcommentsnonjs'] = 'Mostrar comentários';
 $string['showdescription'] = 'Mostrar descrição na página da disciplina.';
 $string['showdescription_help'] = 'Se ativar esta opção, a descrição acima será exibida na página da disciplina logo abaixo da hiperligação para a atividade ou recurso.';
 $string['showgrades'] = 'Mostrar pauta aos alunos';
-$string['showgrades_help'] = 'Muitas das atividades permitem que seja atribuída avaliação. Esta configuração determina se o aluno pode ver uma lista das suas notas na disciplina através de um link disponível no bloco administração.';
+$string['showgrades_help'] = 'Muitas das atividades permitem que seja atribuída avaliação. Esta configuração determina se o aluno pode ver uma lista das suas notas na disciplina através de uma hiperligação disponível no bloco administração.';
 $string['showingacourses'] = 'Mostrar todas as {$a} disciplinas';
 $string['showingxofycourses'] = 'A mostrar disciplinas de {$a->start} a {$a->end} num total de  {$a->total} disciplinas';
 $string['showlistofcourses'] = 'Mostrar todas as disciplinas';
@@ -1839,7 +1839,7 @@ $string['uploadfailednotrecovering'] = 'A recepção do ficheiro que enviou falh
 $string['uploadfilelog'] = 'Relatório de envio do ficheiro {$a}';
 $string['uploadformlimit'] = 'O ficheiro enviado {$a} excedeu o limite máximo permitido no formulário';
 $string['uploadlabel'] = 'Título:';
-$string['uploadlimitwithsize'] = 'Tamanho limite do upload no contexto {$a->contextname} ({$a->displaysize})';
+$string['uploadlimitwithsize'] = 'Tamanho limite do carregamento de ficheiros no contexto {$a->contextname} ({$a->displaysize})';
 $string['uploadnewfile'] = 'Carregar novo ficheiro';
 $string['uploadnofilefound'] = 'Nenhum ficheiro encontrado - tem a certeza que selecionou algum ficheiro para enviar?';
 $string['uploadnotallowed'] = 'Não é permitido anexar ficheiros';
@@ -1898,7 +1898,7 @@ $string['viewfileinpopup'] = 'Ver ficheiro numa janela pop-up';
 $string['viewing'] = 'A visualizar:';
 $string['viewmore'] = 'Ver mais';
 $string['viewprofile'] = 'Ver perfil';
-$string['views'] = 'Visusalizações';
+$string['views'] = 'Visualizações';
 $string['viewsolution'] = 'ver solução';
 $string['virusfound'] = 'Atenção Sr. Administrador! O antivírus Clam detetou a presença dum vírus num ficheiro enviado por {$a->user}  para a disciplina {$a->course}. Segue-se a mensagem de saída do clamscan:';
 $string['virusfoundlater'] = 'No ficheiro  {$a->filename} que enviou em {$a->date}, para a disciplina {$a->course}, foi posteriormente encontrado um vírus. Segue-se um sumário do que foi feito ao ficheiro:
@@ -1936,7 +1936,7 @@ $string['welcometocoursetext'] = 'Bem-vindo à página da disciplina {$a->course
 Uma das primeiras coisas que deveria fazer é editar a sua página de perfil dentro da disciplina, para que possamos conhecê-lo(a) melhor:
 
  {$a->profileurl}';
-$string['whatforlink'] = 'O que pretende fazer com o link?';
+$string['whatforlink'] = 'O que pretende fazer com a hiperligação?';
 $string['whatforpage'] = 'O que pretende fazer com o texto?';
 $string['whattocallzip'] = 'Qual o nome para o ficheiro .zip?';
 $string['whattodo'] = 'O que fazer';

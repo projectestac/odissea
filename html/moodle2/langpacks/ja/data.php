@@ -45,7 +45,7 @@ $string['autogenallforms'] = 'すべてのデフォルトテンプレートを�
 $string['autolinkurl'] = 'URLにオートリンクする';
 $string['availablefromdate'] = '開始日時';
 $string['availabletags'] = '利用可能なタグ';
-$string['availabletags_help'] = 'タグはエントリが編集または閲覧されるときに、フィールドや他のアイテムと置換されるテンプレート内の入れ物です。
+$string['availabletags_help'] = 'タグはエントリが編集または閲覧されるときにフィールドや他のアイテムと置換されるテンプレート内の入れ物です。
 
 フィールドは次のようなフォーマットとなります: [fieldname]]。他のタグすべては次のようなフォーマットとなります:  ##sometag##
 
@@ -70,9 +70,9 @@ $string['commentdeleted'] = 'コメントが削除されました。';
 $string['commentempty'] = 'コメントが空です。';
 $string['comments'] = 'コメント';
 $string['commentsaved'] = 'コメントが保存されました。';
-$string['commentsn'] = 'コメント数: {$a}';
+$string['commentsn'] = '{$a} コメント';
 $string['commentsoff'] = 'コメント機能は有効にされていません。';
-$string['configenablerssfeeds'] = 'ここではすべてのデータベースに関するRSSフィードを有効にします。さらに、あなたは手動で各データベースのRSSフィード設定を有効にする必要があります。';
+$string['configenablerssfeeds'] = 'ここではすべてのデータベースに関するRSSフィードを有効にします。さらに、あなたはそれぞれの各データベースのRSSフィード設定を手動で有効にする必要があります。';
 $string['confirmdeletefield'] = 'あなたはこのフィールドを削除しようとしています。よろしいですか?';
 $string['confirmdeleterecord'] = '本当にこのエントリを削除してもよろしいですか?';
 $string['confirmdeleterecords'] = '本当にこれらのエントリを削除してもよろしいですか?';
@@ -84,7 +84,7 @@ $string['csvimport_help'] = 'エントリは最初の行にフィールド名の
 $string['csvwithselecteddelimiter'] = '選択したデリミタによる<acronym title="カンマ区切り">CSV</acronym>テキスト:';
 $string['data:addinstance'] = '新しいデータベースを追加する';
 $string['data:approve'] = 'エントリを承認または承認済みエントリを取り消す';
-$string['data:comment'] = 'コメントを追加する';
+$string['data:comment'] = 'コメントを書く';
 $string['data:exportallentries'] = 'すべてのデータベースエントリをエクスポートする';
 $string['data:exportentry'] = 'データベースエントリをエクスポートする';
 $string['data:exportownentry'] = '自分のデータベースエントリをエクスポートする';
@@ -95,12 +95,12 @@ $string['data:managetemplates'] = 'テンプレートを管理する';
 $string['data:manageuserpresets'] = 'すべてのテンプレートプリセットを管理する';
 $string['data:rate'] = 'エントリを評価する';
 $string['data:readentry'] = 'エントリを読む';
-$string['data:viewallratings'] = '個々のユーザから与えられた実評価すべてを表示する';
+$string['data:viewallratings'] = '個別のユーザから与えられた実評価すべてを表示する';
 $string['data:viewalluserpresets'] = 'すべてのユーザのプリセットを表示する';
 $string['data:viewanyrating'] = 'すべてのユーザが受けた評価合計を表示する';
 $string['data:viewentry'] = 'エントリを表示する';
 $string['data:viewrating'] = 'あなたが受けた評価合計を表示する';
-$string['data:writeentry'] = 'エントリを追加する';
+$string['data:writeentry'] = 'エントリを書く';
 $string['date'] = '日付';
 $string['dateentered'] = '入力日時';
 $string['defaultfielddelimiter'] = '(デフォルト: カンマ)';
@@ -129,9 +129,9 @@ $string['entries'] = 'エントリ';
 $string['entrieslefttoadd'] = 'この活動を完了するにはさらに {$a->entriesleft} 件以上のエントリを追加してください。';
 $string['entrieslefttoaddtoview'] = '他の参加者のエントリを閲覧するにはさらに {$a->entrieslefttoview} 件以上のエントリを追加してください。';
 $string['entry'] = 'エントリ';
-$string['entrysaved'] = 'エントリが保存されました。';
-$string['errormustbeteacher'] = 'このページは教師のみ使用できます!';
-$string['errorpresetexists'] = '選択した名称のプリセットはすでに存在します。';
+$string['entrysaved'] = 'あなたのエントリが保存されました。';
+$string['errormustbeteacher'] = 'このページを使用するにはあなたは教師である必要があります!';
+$string['errorpresetexists'] = '選択された名称のプリセットはすでに存在します。';
 $string['eventfieldcreated'] = 'フィールドが作成されました。';
 $string['eventfielddeleted'] = 'フィールドが削除されました。';
 $string['eventfieldupdated'] = 'フィールドが更新されました。';
@@ -145,7 +145,7 @@ $string['excel'] = 'Excel';
 $string['expired'] = '申し訳ございません、この活動は {$a} に終了して利用することはできません。';
 $string['export'] = 'エクスポート';
 $string['exportaszip'] = 'ZIPファイルとしてエクスポートする';
-$string['exportaszip_help'] = 'ZIPファイルとしてエクスポートする機能では、あなたはテンプレートおよびフィールドをダウンロードするためのプリセットZIPとして保存することができます。その後、ZIPファイルを別のコースにインポートすることができます。';
+$string['exportaszip_help'] = 'ZIPファイルとしてエクスポートする機能ではあなたはテンプレートおよびフィールドをダウンロードするためのプリセットZIPとして保存することができます。その後、ZIPファイルを別のコースにインポートすることができます。';
 $string['exportedtozip'] = 'ZIPファイルとして一時的にエクスポートしました ...';
 $string['exportentries'] = 'エントリをエクスポートする';
 $string['exportownentries'] = 'あなたのエントリのみエクスポートしますか? ({$a->mine}/{$a->all})';
@@ -161,11 +161,11 @@ $string['fieldheightlistview'] = '一覧表示の高さ';
 $string['fieldheightsingleview'] = '個別表示の高さ';
 $string['fieldids'] = 'フィールドID';
 $string['fieldmappings'] = 'フィールドマッピング';
-$string['fieldmappings_help'] = 'このメニューでは既存のデータベースのデータを保持することができます。フィールドのデータを保持するにはそのフィールドをデータが表示されることになる新しいフィールドにマップする必要があります。どのフィールドでも空白のままして、データをコピーしないこともできます。新しいフィールドにマップされない古いフィールドは喪失し、関連するすべてのデータは削除されます。
+$string['fieldmappings_help'] = 'このメニューでは既存のデータベースのデータを保持することができます。フィールドのデータを保持するにはそのフィールドをデータが表示されることになる新しいフィールドにマップする必要があります。どのフィールドでも空白のまましてデータをコピーしないこともできます。新しいフィールドにマップされない古いフィールドおよび関連するすべてのデータは削除されます。
 
-あなたは同じタイプのフィールドのみマップできますので、それぞれのドロップダウンには他のフィールドも表示される場合があります。また、古いフィールドを1個以上の新しいフィールドにマップしないよう気をつけてください。';
+あなたは同じタイプのフィールドのみマップできます。そのため、それぞれのドロップダウンには他のフィールドも表示される場合があります。古いフィールドを1個以上の新しいフィールドにマップしないよう気をつけてください。';
 $string['fieldname'] = 'フィールド名';
-$string['fieldnotmatched'] = 'あなたのファイル内の次のフィールドは、不明なフィールドです: {$a}';
+$string['fieldnotmatched'] = 'あなたのファイル内の次のフィールドは不明なフィールドです: {$a}';
 $string['fieldoptions'] = 'オプション (1行あたり1つ)';
 $string['fields'] = 'フィールド';
 $string['fieldupdated'] = 'フィールドが更新されました。';
@@ -198,20 +198,20 @@ $string['includetime'] = '追加/修正時間を含む';
 $string['includeuserdetails'] = 'ユーザ詳細を含む';
 $string['insufficiententries'] = 'このデータベースを閲覧するにはさらにエントリが必要です。';
 $string['intro'] = '説明';
-$string['invalidaccess'] = 'このページは、正しくアクセスされていません。';
+$string['invalidaccess'] = 'このページは正しくアクセスされていません。';
 $string['invalidfieldid'] = 'フィールドIDが正しくありません。';
 $string['invalidfieldname'] = 'このフィールドに別の名称を選択してください。';
 $string['invalidfieldtype'] = 'フィールドタイプが正しくありません。';
 $string['invalidid'] = 'データIDが正しくありません。';
-$string['invalidpreset'] = '{$a} は、プリセットではありません。';
+$string['invalidpreset'] = '{$a} はプリセットではありません。';
 $string['invalidrecord'] = 'レコードが正しくありません。';
-$string['invalidurl'] = '入力されたURLが正しくありません。';
+$string['invalidurl'] = 'あなたが入力したURLは正しくありません。';
 $string['jstemplate'] = 'JavaScriptテンプレート';
 $string['latitude'] = '経度';
 $string['latlong'] = '緯度/経度';
 $string['latlongdownloadallhint'] = 'すべてのエントリのリンクをKMLとしてダウンロードする';
 $string['latlongkmllabelling'] = 'KMLファイル (Google Earth) でのラベルのつけ方';
-$string['latlonglinkservicesdisplayed'] = '表示するLinkOutサービス';
+$string['latlonglinkservicesdisplayed'] = '表示するLink-outサービス';
 $string['latlongotherfields'] = '他のフィールド';
 $string['list'] = '一覧表示';
 $string['listtemplate'] = '一覧表示用テンプレート';
@@ -220,14 +220,14 @@ $string['mapexistingfield'] = '{$a} にマップする';
 $string['mapnewfield'] = '新しいフィールドを作成する';
 $string['mappingwarning'] = '新しいフィールドにマップされない古いフィールドは喪失します。古いフィールドのすべてのデータは削除されます。';
 $string['maxentries'] = '最大エントリ数';
-$string['maxentries_help'] = '<p>参加者が、このデータベースに登録できる最大エントリ数です。</p>';
+$string['maxentries_help'] = '参加者がこのデータベースに登録できる最大エントリ数です。';
 $string['maxsize'] = '最大サイズ';
 $string['menu'] = 'メニュー';
 $string['menuchoose'] = '選択 ...';
-$string['missingdata'] = 'フィールドクラスには、データIDまたはオブジェクトを提供してください。';
-$string['missingfield'] = 'プログラミングエラー: フィールドクラスを定義するにはフィールドおよびデータを指定してください。';
+$string['missingdata'] = 'フィールドクラスにはデータIDまたはオブジェクトを提供してください。';
+$string['missingfield'] = 'プログラマエラー: フィールドクラスを定義するにはあなたはフィールドおよびデータを指定してください。';
 $string['modulename'] = 'データベース';
-$string['modulename_help'] = 'データベース活動モジュールにおいて、参加者は一連のエントリ (例 レコード) を作成、管理および検索することができます。エントリの構造は多くのフィールドとして、教師によって定義されます。フィールドタイプにはチェックボックス、ラジオボタン、ドロップダウンメニュー、テキストエリア、URL、写真およびアップロードファイルを含みます。
+$string['modulename_help'] = 'データベース活動モジュールにおいて、参加者は一連のエントリ (例 レコード) を作成、管理および検索することができます。エントリの構造は多くのフィールドとして教師によって定義されます。フィールドタイプにはチェックボックス、ラジオボタン、ドロップダウンメニュー、テキストエリア、URL、写真およびアップロードファイルを含みます。
 
 一覧表示、閲覧またはデータベースエントリの編集時の視覚レイアウト情報はデーターベーステンプレートによりコントロールされます。データベース活動はコース間においてプリセットとして共有することができます。教師はデータベースエントリをインポートおよびエクスポートすることもできます。
 
@@ -260,19 +260,19 @@ $string['nametextarea'] = 'テキストエリアフィールド';
 $string['nameurl'] = 'URLフィールド';
 $string['newentry'] = '新しいエントリ';
 $string['newfield'] = '新しいフィールドを作成する';
-$string['newfield_help'] = 'フィールドにはデータを入力することができます。データベース活動内のそれぞれのエントリには参加者が年月日をドロップダウンメニューから選択することのできる日付フィールド、イメージをアップロードすることのできる写真フィールド、1つまたはそれ以上のオプションを選択することのできるチェックボックスフィールドのように、複数タイプのフィールドを配置することができます。
+$string['newfield_help'] = 'フィールドにはデータを入力することができます。データベース活動内のそれぞれのエントリには参加者が年月日をドロップダウンメニューから選択することのできる日付フィールド、イメージをアップロードすることのできる写真フィールド、1つまたはそれ以上のオプションを選択することのできるチェックボックスフィールドのように複数タイプのフィールドを配置することができます。
 
 それぞれのフィールドには固有のフィールド名を設定してください。フィールド説明は任意です。';
 $string['noaccess'] = 'あなたはこのページにアクセスできません。';
 $string['nodefinedfields'] = '新しいプリセットにフィールドが定義されていません!';
 $string['nofieldcontent'] = 'フィールドコンテンツが見つかりませんでした。';
-$string['nofieldindatabase'] = 'このデータベースには、フィールドが定義されていません。';
-$string['nolisttemplate'] = 'テンプレート一覧は、まだ定義されていません。';
+$string['nofieldindatabase'] = 'このデータベースにはフィールドが定義されていません。';
+$string['nolisttemplate'] = 'テンプレート一覧はまだ定義されていません。';
 $string['nomatch'] = '該当するエントリが見つかりませんでした!';
 $string['nomaximum'] = '最大数なし';
 $string['norecords'] = 'データベースにエントリがありません。';
-$string['nosingletemplate'] = 'テンプレートは、まだ定義されていません。';
-$string['notapproved'] = 'エントリは、まだ承認されていません。';
+$string['nosingletemplate'] = 'テンプレートはまだ定義されていません。';
+$string['notapproved'] = 'エントリはまだ承認されていません。';
 $string['notinjectivemap'] = 'エントリを追加できるマップではありません。';
 $string['notopenyet'] = '申し訳ございません、この活動は {$a} まで利用できません。';
 $string['number'] = '数値';
@@ -290,11 +290,11 @@ $string['page-mod-data-x'] = 'すべてのデータベース活動ページ';
 $string['pagesize'] = '1ページあたりのエントリ数';
 $string['participants'] = '参加者';
 $string['picture'] = '画像';
-$string['pleaseaddsome'] = '始めるには、下で新しいフィールドを追加するか、<a href="{$a}">定義済みフィールドセットを選択</a>してください。';
+$string['pleaseaddsome'] = '始めるには下で新しいフィールドを追加するか、<a href="{$a}">定義済みフィールドセットを選択</a>してください。';
 $string['pluginadministration'] = 'データベース活動管理';
 $string['pluginname'] = 'データベース';
 $string['portfolionotfile'] = 'ファイル (csvおよびleap2aのみ) ではなく、ポートフォリオにエクスポートする';
-$string['presetinfo'] = 'プリセットとして保存することで、このテンプレートが公開されます。他のユーザは、このテンプレートを自分のデータベースで使用することができます。';
+$string['presetinfo'] = 'プリセットとして保存することにより、このテンプレートが公開されます。他のユーザはこのテンプレートを自分のデータベースで使用することができます。';
 $string['presets'] = 'プリセット';
 $string['radiobutton'] = 'ラジオボタン';
 $string['recordapproved'] = 'エントリが承認されました。';
@@ -302,14 +302,14 @@ $string['recorddeleted'] = 'エントリが削除されました。';
 $string['recorddisapproved'] = 'エントリ未承認';
 $string['recordsnotsaved'] = 'エントリは保存されませんでした。アップロードファイルのフォーマットを確認してください。';
 $string['recordssaved'] = 'エントリが保存されました。';
-$string['requireapproval'] = '承認必要';
-$string['requireapproval_help'] = 'この設定を有効にした場合、学生が閲覧できる前に、教師からエントリの承認を受ける必要があります。';
+$string['requireapproval'] = '要承認';
+$string['requireapproval_help'] = 'この設定を有効にした場合、学生が閲覧できる前に教師からエントリの承認を受ける必要があります。';
 $string['requiredentries'] = '完了のための必須エントリ数';
-$string['requiredentries_help'] = '活動が完了したとみなされるまでに、学生が送信する必要のあるエントリ数です。';
+$string['requiredentries_help'] = '活動が完了したとみなされるまでに学生が送信する必要のあるエントリ数です。';
 $string['requiredentriestoview'] = '閲覧前に必要な入力エントリ数';
-$string['requiredentriestoview_help'] = 'このデータベースエントリの閲覧が許可されるまでに、参加者が登録する必要のある入力エントリ数です。
+$string['requiredentriestoview_help'] = 'このデータベースエントリの閲覧が許可されるまでに参加者が登録する必要のある入力エントリ数です。
 
-注意: 閲覧前にエントリが必要な場合、データベースオートリンクフィルタを無効にしてください。データベースオートリンクフィルタでは、ユーザにより必要な入力エントリ数が送信されたかどうか判定することができません。';
+注意: 閲覧前にエントリが必要な場合、データベースオートリンクフィルタを無効にしてください。データベースオートリンクフィルタではユーザにより必要な入力エントリ数が送信されたかどうか判定することができません。';
 $string['resetsettings'] = 'フィルタをリセットする';
 $string['resettemplate'] = 'テンプレートをリセットする';
 $string['resizingimages'] = 'イメージサムネイルのリサイズ...';
@@ -321,9 +321,9 @@ $string['save'] = '保存';
 $string['saveandadd'] = '保存して次を追加する';
 $string['saveandview'] = '保存して表示する';
 $string['saveaspreset'] = 'プリセットとして保存する';
-$string['saveaspreset_help'] = 'プリセットとして保存する機能では、サイトの誰でも使用できるようプリセットおよびフィールドを公開します (あなたは保存したプリセットをプリセット一覧よりいつでも削除することができます)。';
+$string['saveaspreset_help'] = 'プリセットとして保存する機能ではサイトの誰でも使用できるようプリセットおよびフィールドを公開します (あなたは保存したプリセットをプリセット一覧よりいつでも削除することができます)。';
 $string['savesettings'] = '設定を保存する';
-$string['savesuccess'] = '正常に保存されました。あなたのプリセットは、サイト全体で利用できます。';
+$string['savesuccess'] = '正常に保存されました。あなたのプリセットはサイト全体で利用できます。';
 $string['savetemplate'] = 'テンプレートを保存する';
 $string['search'] = '検索';
 $string['selectedrequired'] = '選択したすべてを含む';
@@ -344,13 +344,13 @@ $string['timemodified'] = '修正日時';
 $string['todatabase'] = '>> データベース';
 $string['type'] = 'フィールドタイプ';
 $string['undefinedprocessactionmethod'] = 'アクション「 {$a} 」を処理するためのメソッドがData_Presetに定義されていません。';
-$string['unsupportedexport'] = '({$a->fieldtype}) をエクスポートできませんでした。';
+$string['unsupportedexport'] = '({$a->fieldtype}) をエクスポートできません。';
 $string['updatefield'] = '既存のフィールドを更新します。';
 $string['uploadfile'] = 'ファイルをアップロードする';
 $string['uploadrecords'] = 'ファイルからエントリをアップロードする';
 $string['uploadrecords_help'] = 'エントリはテキストファイル経由でアップロードすることができます。ファイルのフォーマットは下記のとおりです:
 
-* それぞれの行には1レコード含みます。
+* それぞれの行には1レコードを含みます。
 * それぞれのレコードはカンマ (または他のデリミタ) で区切られた一連のデータです。
 * 最初のレコードにはファイル内の残りのレコードを定義するフィールド名一覧を含みます。
 

@@ -66,8 +66,8 @@ $string['messageprovider:notification'] = 'Notificações de subscrições de re
 $string['messagetemplate'] = 'Mensagem de notificação';
 $string['messagetemplate_help'] = 'Uma mensagem de notificação é enviada aos subscritores assim que o limite de notificação tenha sido atingido. A notificação pode incluir qualquer um, ou todos, os seguintes espaços reservados:
 <br /><br />
-* Link para a localização do evento {link}<br />
-* Link para a área de monitorização {modulelink}<br />
+* Hiperligação para a localização do evento {link}<br />
+* Hiperligação para a área de monitorização {modulelink}<br />
 * Nome da regra {rulename}<br />
 * Descrição {description}<br />
 * Evento {eventname}';

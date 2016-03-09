@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Escolha uma variável…';
-$string['clicktoopen'] = 'Clique no link {$a} para abrir o URL.';
+$string['clicktoopen'] = 'Clique na hiperligação {$a} para abrir o URL.';
 $string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
 $string['configframesize'] = 'Quando uma página web ou um ficheiro é exibido numa frame, este valor é a altura (em pixels) da frame superior (que contém a barra de navegação).';
 $string['configrolesinparams'] = 'Ative esta opção se deseja incluir os nomes dos papéis locais na listagem das variáveis de disponíveis nos parâmetros.';
@@ -42,7 +42,7 @@ $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de 
 
 * Incorporar. o ficheiro é incorporado e exibido na página, mantendo a barra de navegação, a descrição do ficheiro e os blocos laterais;
 
-* Forçar download: é aberta uma janela de diálogo para o utilizador abrir ou guardar o ficheiro;
+* Forçar descarga: é aberta uma janela de diálogo para o utilizador abrir ou guardar o ficheiro;
 
 * Mesma janela: apenas o ficheiro é exibido na janela do navegador;
 
@@ -56,7 +56,7 @@ $string['framesize'] = 'Altura da frame';
 $string['invalidstoredurl'] = 'Não é possível mostrar este recurso, o URL é inválido';
 $string['invalidurl'] = 'Insira um URL válido';
 $string['modulename'] = 'URL';
-$string['modulename_help'] = 'O URL permite ao professor disponibilizar um link para um conteúdo externo na página principal da disciplina, Tudo o que esteja disponível livremente online, como documentos ou imagens, pode ser partilhado, o URL não necessita de ser a página de um site. Pode copiar e colar o link de qualquer página online ou escolher um link específico de um repositório como o Flickr, YouTube ou Wikimedia (dependendo dos repositórios que estão disponíveis na plataforma).
+$string['modulename_help'] = 'O URL permite ao professor disponibilizar uma hiperligação para um conteúdo externo na página principal da disciplina, Tudo o que esteja disponível livremente online, como documentos ou imagens, pode ser partilhado, o URL não necessita de ser a página de um site. Pode copiar e colar a hiperligação de qualquer página online ou escolher uma hiperligação específica de um repositório como o Flickr, YouTube ou Wikimedia (dependendo dos repositórios que estão disponíveis na plataforma).
 
 Existe uma série de opções de visualização do URL. Este pode ser incorporado, pode surgir numa nova janela ou, mediante opções avançadas, pode passar informações como o nome do aluno, se necessário.';
 $string['modulename_link'] = 'mod/url/view';

@@ -42,7 +42,7 @@ $string['legacyreal_desc'] = 'Ficheiros com a extensão *.rm, *.ra, *.ram, *.rp 
 $string['legacywmp'] = 'Windows media player';
 $string['legacywmp_desc'] = 'Ficheiros com a extensão *.avi e *.wmv. Totalmente compatível com o Internet Explorer no Windows, pode não funcionar em outros navegadores ou sistemas operacionais.';
 $string['mediaformats'] = 'Players disponíveis';
-$string['mediaformats_desc'] = 'Quando os players estão ativos nestas configurações, os respetivos formatos de ficheiros podem ser incorporados usando o filtro multimédia (se ativo) ou usando os recursos ficheiro ou URL com a opção Incorporar. Quando um player não estiver ativo, os respetivos formatos não serão incorporados e os utilizadores podem descarregá-los manualmente ou seguir links para estes recursos.
+$string['mediaformats_desc'] = 'Quando os players estão ativos nestas configurações, os respetivos formatos de ficheiros podem ser incorporados usando o filtro multimédia (se ativo) ou usando os recursos ficheiro ou URL com a opção Incorporar. Quando um player não estiver ativo, os respetivos formatos não serão incorporados e os utilizadores podem descarregá-los manualmente ou seguir hiperligações para estes recursos.
 
 Quando dois players suportam o mesmo formato, ao ativar os dois, aumenta a compatibilidade entre os diferentes dispositivos, tais como telemóveis. É possível aumentar ainda mais a compatibilidade, fornecendo vários ficheiros em diferentes formatos quando disponibiliza um áudio ou clip de vídeo.';
 $string['mediasettings'] = 'Incorporação de multimédia';

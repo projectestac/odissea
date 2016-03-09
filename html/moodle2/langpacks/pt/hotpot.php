@@ -26,7 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'Abandonado(s)';
+$string['abandonhotpot'] = 'Os seus resultados até agora serão guardados, mas não poderá retomar ou reiniciar esta atividade mais tarde.';
+$string['activitycloses'] = 'Atividade fecha a';
 $string['activitygrade'] = 'Nota da atividade';
+$string['activityopens'] = 'Atividade abre a';
 $string['added'] = 'Adicionado';
 $string['addquizchain'] = 'Adicionar cadeia de testes';
 $string['addquizchain_help'] = 'Devem ser adicionados todos os testes em cadeia?
@@ -39,10 +42,13 @@ $string['addquizchain_help'] = 'Devem ser adicionados todos os testes em cadeia?
 
 Se o ficheiro de origem é uma **pasta**, todos os testes na pasta são adicionados à disciplina para formar uma cadeia de testes com configurações idênticas.
 
-Se o ficheiro de origem é um **ficheiro de unidade**, como um ficheiro Hot Potatoes ou index.html, os testes do ficheiro serão adicionados à disciplina curso como uma cadeia de cadeia de testes com configurações idênticas.';
+Se o ficheiro de origem é um **ficheiro de unidade**, como um ficheiro Hot Potatoes ou index.html, os testes do ficheiro serão adicionados à disciplina como uma cadeia de cadeia de testes com configurações idênticas.';
+$string['allowpaste'] = 'Permitir colar';
+$string['allowpaste_help'] = 'Se essa configuração estiver ativa, os alunos terão permissão para copiar, colar e arrastar texto para caixas de texto.';
 $string['allowreview'] = 'Permitir revisão';
 $string['allowreview_help'] = 'Se ativar esta opção, os alunos podem rever as suas tentativas de resposta após o teste fechar';
 $string['analysisreport'] = 'Análise de item';
+$string['attempted'] = 'Tentado';
 $string['attemptlimit'] = 'Limite da tentativa';
 $string['attemptlimit_help'] = 'O máximo de tentativas que um aluno pode realizar num teste HotPotatoes';
 $string['attemptnumber'] = 'Número da tentativa';
@@ -51,7 +57,14 @@ $string['attemptscore'] = 'Nota da tentativa';
 $string['attemptsunlimited'] = 'Tentativas ilimitadas';
 $string['average'] = 'Média';
 $string['averagescore'] = 'Nota média';
+$string['bodystyles'] = 'Estilo do corpo';
+$string['bodystylesbackground'] = 'Cor de fundo e imagem';
+$string['bodystylescolor'] = 'Cor do texto';
+$string['bodystylesfont'] = 'Tipo e tamanho da letra';
+$string['bodystylesmargin'] = 'Margem esquerda e direita';
 $string['cacherecords'] = 'Cache de registos';
+$string['canrestarthotpot'] = 'Os seus resultados até agora serão guardados e poderá refazer "{$a}" mais tarde';
+$string['canresumehotpot'] = 'Os seus resultados até agora serão guardados e poderá reiniciar "{$a}" mais tarde.';
 $string['checks'] = 'Verificações';
 $string['checksomeboxes'] = 'Verifique as caixas';
 $string['clearcache'] = 'Limpar cache HotPot';
@@ -64,10 +77,15 @@ $string['clicktrailreport'] = 'Relatório de cliques';
 $string['closed'] = 'A atividade já fechou';
 $string['clues'] = 'Pistas';
 $string['completed'] = 'Completo';
+$string['completioncompleted'] = 'Requer conclusão';
+$string['completionmingrade'] = 'Requer nota mínima';
+$string['completionpass'] = 'Requer nota de aprovação';
+$string['completionwarning'] = 'Estes campos são desativados se o limite da nota para esta atividade é "Sem avaliação" ou a ponderação é "Sem ponderação"';
+$string['configbodystyles'] = 'Por predefinição, os estilos do tema Moodle substituem os estilos da atividade Hotpot. No entanto, para todos os estilos selecionados aqui, os estilos da atividade HotPot têm prioridade sobre os estilos do tema Moodle .';
 $string['configenablecache'] = 'Manter uma cache de testes HotPot pode acelerar drasticamente a entrega dos testes aos alunos.';
 $string['configenablecron'] = 'Especifique as horas no seu fuso horário em que o script cron pode correr';
 $string['configenablemymoodle'] = 'Estas configurações controlam se o HotPOt é listado na página do Moodle ou não';
-$string['configenableobfuscate'] = 'Ofuscando o código javascript para inserir players de mídia torna mais difícil determinar o nome do arquivo de mídia e adivinhar o que o arquivo contém.';
+$string['configenableobfuscate'] = 'Ofuscando as strings de texto e URLs no código javascript torna mais difícil advinhar as respostas visualizando o código fonte da página HTML no navegador.';
 $string['configenableswf'] = 'Permitir incorporar ficheiros SWF nas atividades HotPot. Se ativo, esta definição substitui filter_mediaplugin_enable_swf.';
 $string['configfile'] = 'Ficheiro de configuração';
 $string['configframeheight'] = 'Quando um teste é exibido dentro de uma janela, este valor é a altura (em pixels) do topo superior, que contém a barra de navegação Moodle.';
@@ -106,9 +124,10 @@ As notas obtidas no teste são reportadas sempre ao moodle após o aluno sair ou
 $string['delay3specific'] = 'Usar tempo específico (em segundos)';
 $string['delay3summary'] = 'Tempo de intervalo no final do teste';
 $string['delay3template'] = 'Usar configurações do ficheiro de origem/modelo';
+$string['deleteallattempts'] = 'Apagar todas as tentativas';
 $string['deleteattempts'] = 'Apagar tentativas';
 $string['detailsrecords'] = 'Registos dos detalhes HotPot';
-$string['d_index'] = 'índice de discriminação';
+$string['d_index'] = 'Índice de discriminação';
 $string['duration'] = 'Duração';
 $string['enablecache'] = 'Ativar cache HotPot';
 $string['enablecron'] = 'Ativar cron HotPot';
@@ -135,7 +154,7 @@ $string['entry_grading'] = 'Avaliação';
 $string['entryhotpotcourse'] = 'Teste HotPot anterior nesta disciplina';
 $string['entryhotpotsection'] = 'Teste HotPot anterior neste tópico da disciplina';
 $string['entryoptions'] = 'Opções da página de entrada';
-$string['entryoptions_help'] = 'As caixas de verificação ativam ou desativam as opções da página de entrada dos testes HotPot.
+$string['entryoptions_help'] = 'As caixas de seleção ativam ou desativam as opções da página de entrada dos testes HotPot.
 
 **Nome da unidade como título**
 : se ativo, o nome da unidade será exibido como o título da página de entrada.
@@ -161,6 +180,21 @@ $string['entrypage_help'] = 'Deve ser apresentado aos alunos uma página inicial
 Uma página de entrada é sempre apresentada ao professor, de forma a exibir os relatórios e possibilidade de editar as páginas do teste';
 $string['entrytext'] = 'Texto da página de entrada';
 $string['entry_title'] = 'Nome da unidade como título';
+$string['event_attempt_reviewed'] = 'Tentativa HotPot reverificada';
+$string['event_attempt_reviewed_description'] = 'O utilizador com id "{$a->userid}" reverificou uma tentativa da atividade "HotPot" no módulo da disciplina com id "{$a->cmid}"';
+$string['event_attempt_reviewed_explanation'] = 'Um utilizador reverificou uma tentativa na atividade HotPot';
+$string['event_attempt_started'] = 'Tentativa HotPot iniciada';
+$string['event_attempt_started_description'] = 'O utilizador com id "{$a->userid}" iniciou uma tentativa da atividade "HotPot" no módulo da disciplina com id "{$a->cmid}"';
+$string['event_attempt_started_explanation'] = 'Um utilizador acaba de iniciar uma tentativa de uma atividade HotPot';
+$string['event_attempt_submitted'] = 'Tentativa HotPot submetida';
+$string['event_attempt_submitted_description'] = 'O utilizador com id "{$a->userid}" submeteu uma tentativa da atividade "HotPot" no módulo da disciplina com id "{$a->cmid}"';
+$string['event_attempt_submitted_explanation'] = 'Um utilizador acaba de submeter uma tentativa de uma atividade HotPot';
+$string['event_base'] = 'Evento HotPot detetada';
+$string['event_base_description'] = 'O utilizador com id "{$a->userid}" iniciou evento na atividade "HotPot" do módulo da disciplina com id "{$a->cmid}"';
+$string['event_base_explanation'] = 'Foi detetado um evento pelo módulo HotPot';
+$string['event_report_viewed'] = 'Visualizado relatório HotPot';
+$string['event_report_viewed_description'] = 'O utilizador com id "{$a->userid}" visualizou o relatório das tentativas  na atividade "HotPot" do módulo da disciplina com id "{$a->cmid}"';
+$string['event_report_viewed_explanation'] = 'Um utilizador visualizou o relatório das tentativas de uma atividade HotPot';
 $string['exit_areyouok'] = 'Olá, ainda está ai?';
 $string['exit_attemptscore'] = 'A sua nota para a tentativa foi de  {$a}';
 $string['exitcm'] = 'Próxima atividade';
@@ -188,10 +222,10 @@ $string['exit_feedback_help'] = 'Estas opções ativam ou desativam a exibição
 
 **Encorajamento**
 : se ativo, são exibidas algumas mensagens para encorajar os alunos na página de saída. As mensagens dependem da nota obtida:
-: **&gt; 90%**: Excelente!
-: **&gt; 60%**: Muito bom
-: **&gt; 0%**: Boa tentativa
-: **= 0%**: Voçê está bem?
+: **> 90%**: Excelente!
+: **> 60%**: Muito bom
+: **> 0%**: Boa tentativa
+: **= 0%**: Está tudo bem?
 
 **Exibir nota da tentativa**
 : se ativo, a nota da tentativa completa será exibida na página de saída.
@@ -201,6 +235,7 @@ $string['exit_feedback_help'] = 'Estas opções ativam ou desativam a exibição
 
 In addition, if the unit grading method is highest a message to tell the user if the most recent attempt was equal to or better than their previous will be displayed.';
 $string['exit_goodtry'] = '';
+$string['exitgrade'] = 'Próxima nota da actividade';
 $string['exit_grades'] = 'Notas';
 $string['exit_grades_text'] = 'Veja as suas notas até ao momento na disciplina';
 $string['exithotpotcourse'] = 'Próximo Teste HotPot nesta disciplina';
@@ -209,7 +244,7 @@ $string['exit_hotpotgrade_average'] = 'A sua nota média para esta atividade at�
 $string['exit_hotpotgrade_highest'] = 'A sua nota mais alta nesta atividade até ao momento é de {$a}';
 $string['exit_hotpotgrade_highest_equal'] = 'Igualou a sua melhor nota nesta atividade!';
 $string['exit_hotpotgrade_highest_previous'] = 'A sua nota anterior mais alta nesta atividade foi {$a}';
-$string['exit_hotpotgrade_highest_zero'] = 'Ainda não obteve uma nota superior a  {$a} nesta atividade';
+$string['exit_hotpotgrade_highest_zero'] = 'Ainda não obteve uma nota superior a {$a} nesta atividade';
 $string['exithotpotsection'] = 'Próximo Teste HotPot neste tópico';
 $string['exit_index'] = 'Índice';
 $string['exit_index_text'] = 'Ir para o índice de atividades';
@@ -277,6 +312,7 @@ $string['gradeweighting'] = 'Ponderação da nota';
 $string['gradeweighting_help'] = 'As notas deste teste serão recalculadas para uma escala numérica no relatório de avaliação.';
 $string['highestscore'] = 'Nota mais alta';
 $string['hints'] = 'Ajudas';
+$string['hotpot:addinstance'] = 'Adicionar nova atividade HotPot';
 $string['hotpot:attempt'] = 'Tentar realizar um teste';
 $string['hotpot:deleteallattempts'] = 'Apagar tentativas dos utilizadores';
 $string['hotpot:deletemyattempts'] = 'Apagar a sua tentativa';
@@ -296,10 +332,22 @@ $string['lastattempt'] = 'Última tentativa';
 $string['lockframe'] = 'Bloquear janela';
 $string['maxeventlength'] = 'Número máximo de dias do evento no calendário';
 $string['mediafilter_hotpot'] = 'Filtro HotPot conteúdo multimédia';
-$string['mediafilter_moodle'] = 'Filtros standard conteúdo multimédia';
+$string['mediafilter_moodle'] = 'Filtros standard de conteúdo multimédia';
 $string['migratingfiles'] = 'A migrar ficheiros do teste Hot Potatoes';
+$string['migratinglogs'] = 'A migrar registos Hot Potatoes';
 $string['missingsourcetype'] = 'Está em falta o ficheiro de origem HotPot';
 $string['modulename'] = 'Teste Hot Potatoes';
+$string['modulename_help'] = 'O módulo HotPot permite aos professores distribuir materiais de aprendizagem interactiva aos seus alunos através do Moodle e visualizar relatórios das respostas e dos resultados dos alunos.
+
+Uma única atividade HotPot consiste numa página de entrada opcional, um único exercício e-learning e uma página de saída opcional. O exercício e-learning pode ser uma página Web estática ou interativa que oferece aos texto alunos, áudio e avisos visuais além de registar as respostas dos alunos. O exercício e-learning é criado pelo professor e, em seguida, enviado para o Moodle.
+
+A atividade HotPot pode lidar com exercícios criados com os seguintes software de criação:
+
+* Hot Potatoes (versão 6)
+* Qedoc
+* Xerte
+* iSpring
+* e qualquer editor HTML';
 $string['modulenameplural'] = 'Testes Hot Potatoes';
 $string['nameadd'] = 'Nome';
 $string['nameadd_help'] = 'O nome poderá ser um texto específico inserido pelo professor ou criado automaticamente.
@@ -341,6 +389,7 @@ $string['noreview'] = 'Não possui permissões para ver os detalhes da tentativa
 $string['noreviewafterclose'] = 'O teste encontra-se fechado. Já não pode visualizar os detalhes da tentativa do teste.';
 $string['noreviewbeforeclose'] = 'Não possui permissões para ver os detalhes da tentativa até {$a}.';
 $string['nosourcefilesettings'] = 'Falta informação do ficheiro de origem HotPot';
+$string['notattemptedyet'] = 'Ainda sem qualquer tentativa';
 $string['notavailable'] = 'A atividade já não se encontra disponível.';
 $string['outputformat'] = 'Formato de saída';
 $string['outputformat_best'] = 'Mais adequado';
@@ -350,23 +399,29 @@ Os tipos de formatos disponíveis dependem do tipo de ficheiro de origem. Alguns
 
 A configuração "Mais adequado" irá exibir o tipo de formato mais adequado ao navegador do aluno.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: Standard';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) a partir de html';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) a partir de html';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze from HP6 xml: ANCT-Scan';
-$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze from HP6 xml: Rottmeier DropDown';
+$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'Lista pendente de HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze from HP6 xml: Rottmeier FindIt (a)';
 $string['outputformat_hp_6_jcloze_xml_findit_b'] = 'JCloze from HP6 xml: Rottmeier FindIt (b)';
 $string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JCloze from HP6 xml: Rottmeier JGloss';
 $string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze from HP6 xml: Standard';
+$string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze (v) a partir de HP6 xml (auto-avanço)';
 $string['outputformat_hp_6_jcross_html'] = 'JCross HP6 html';
 $string['outputformat_hp_6_jcross_xml_v6'] = 'JCross from HP6 xml';
 $string['outputformat_hp_6_jmatch_html'] = 'JMatch from html';
+$string['outputformat_hp_6_jmatch_html_sort'] = 'JMatch Sort a partir de html';
 $string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch from HP6 xml: Flashcard';
 $string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMatch from HP6 xml: Rottmeier JMemori';
+$string['outputformat_hp_6_jmatch_xml_sort'] = 'JMatch Sort a partir de xml';
 $string['outputformat_hp_6_jmatch_xml_v6'] = 'JMatch from HP6 xml: Standard';
-$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch from HP6 xml: Drag and Drop';
+$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch (v6+) de xml';
 $string['outputformat_hp_6_jmix_html'] = 'JMix from HP6 html';
 $string['outputformat_hp_6_jmix_xml_v6'] = 'JMix from HP6 xml: Standard';
-$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMix from HP6 xml: Drag and Drop';
-$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMix from HP6 xml: Drag and Drop with key press';
+$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMatch (v6+) de xml';
+$string['outputformat_hp_6_jmix_xml_v6_plus_deluxe'] = 'JMix (v6+ with prefix, suffix with distractors) a partir de xml';
+$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMatch (v6+) de xml';
 $string['outputformat_hp_6_jquiz_html'] = 'JQuiz HP6 html';
 $string['outputformat_hp_6_jquiz_xml_v6'] = 'JQuiz from HP6 xml: Standard';
 $string['outputformat_hp_6_jquiz_xml_v6_autoadvance'] = 'JQuiz from HP6 xml: Auto-advance';
@@ -377,12 +432,16 @@ $string['outputformat_hp_6_sequitur_html'] = 'WebSequitur (v6) from html';
 $string['outputformat_hp_6_sequitur_html_incremental'] = 'WebSequitur (v6) from html, incremental scoring';
 $string['outputformat_hp_6_sequitur_xml'] = 'WebSequitur (v6) from xml';
 $string['outputformat_hp_6_sequitur_xml_incremental'] = 'WebSequitur (v6) from xml, incremental scoring';
+$string['outputformat_html_ispring'] = 'Ficheiro HTML iSpring';
+$string['outputformat_html_xerte'] = 'Ficheiro HTML Xerte';
+$string['outputformat_html_xhtml'] = 'Ficheiro HTML Standard';
+$string['outputformat_qedoc'] = 'Ficheiro Qedoc';
 $string['overviewreport'] = 'Vista global';
 $string['penalties'] = 'Penalizações';
 $string['percent'] = 'Percentagem';
 $string['pluginadministration'] = 'Administração HotPot';
 $string['pluginname'] = 'Teste Hot Potatoes';
-$string['pressoktocontinue'] = 'Prima OK para continuar, ou Cancelar para ficar na página atual.';
+$string['pressoktocontinue'] = 'Prima OK para continuar ou Cancelar para ficar na página atual.';
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texto de ajuda para o nome do teste';
 $string['quizzes'] = 'Testes';
@@ -394,7 +453,12 @@ $string['removegradeitem_help'] = 'O item da nota desta atividade deve ser apaga
 
 **Sim**
 : se a nota máxima ou a ponderação da nota para este teste estiver definida como zero, o item de avaliação para esta atividade será apagado do relatório de avaliação';
+$string['responses'] = 'Respostas';
 $string['responsesreport'] = 'Respostas';
+$string['reviewafterattempt'] = 'Permitir a revisão após a tentativa';
+$string['reviewafterclose'] = 'Permitir a revisão após o fecho da atividade HotPot';
+$string['reviewduringattempt'] = 'Permitir a revisão durante a tentativa';
+$string['reviewoptions'] = 'Opções da revisão';
 $string['score'] = 'Avaliação';
 $string['scoresreport'] = 'Avaliações';
 $string['selectattempts'] = 'Selecionar tentativas';
@@ -424,13 +488,19 @@ $string['stopbutton_specific'] = 'Texto específico';
 $string['stoptext'] = 'Texto de botão de parar';
 $string['storedetails'] = 'Guardar os detalhes de XML das tentativas do teste Hotpot';
 $string['studentfeedback'] = 'Comentário(s) do(s) aluno(s)';
-$string['studentfeedback_help'] = 'Se ativar esta opção, será exibido um link para uma janela pop-up de feedback sempre que o aluno clica no botão "Verificar". A janela de feedback permite aos alunos enviar comentários para o professor através de 4 formas:
+$string['studentfeedback_help'] = 'Se ativar esta opção, será exibida uma hiperligação para uma janela pop-up de feedback sempre que o aluno clica no botão "Verificar". A janela de feedback permite aos alunos enviar comentários para o professor através de 4 formas:
 
 * Página web (é necessário inserir o URL da página, como por exemplo http://myserver.com/feedbackform.html)
 * Formulário para comentário(s) (é necessário inserir o URL do script, como por exemplo  http://myserver.com/cgi-bin/formmail.pl)
 * Fórum Moodle - É exibido o fórum da disciplina
 * Mensagens Moodle - É exibida a janela de mensagens instantâneas. Se a disciplina tiver vários professores, o aluno tem de selecionar um professor antes de aparecer a janela de mensagem .';
 $string['submits'] = 'Submissões';
+$string['subplugintype_hotpotattempt'] = 'Formato de saída';
+$string['subplugintype_hotpotattempt_plural'] = 'Formatos de saída';
+$string['subplugintype_hotpotreport'] = 'Relatório';
+$string['subplugintype_hotpotreport_plural'] = 'Relatórios';
+$string['subplugintype_hotpotsource'] = 'Ficheiro de origem';
+$string['subplugintype_hotpotsource_plural'] = 'Ficheiros de origem';
 $string['textsourcefile'] = 'A partir do ficheiro de origem';
 $string['textsourcefilename'] = 'Utilizar nome de ficheiro';
 $string['textsourcefilepath'] = 'Utilizar caminho para o ficheiro';
@@ -468,12 +538,15 @@ $string['title_help'] = 'Esta configuração especifica o título a ser exibido 
 : O título, se houver, definido no ficheiro de fonte será usado como o título da página web.
 
 **Usar nome do ficheiro de origem**
-: O nome do arquivo fonte, excluindo os nomes de pastas, será usado como o título da página web.
+: O nome do ficheiro fonte, excluindo os nomes de pastas, será usado como o título da página web.
 
 **Usar caminho do ficheiro de origem**
-: O caminho do arquivo de origem, incluindo os nomes de pastas, será usado como o título da página web.';
+: O caminho do ficheiro de origem, incluindo os nomes de pastas, será usado como o título da página web.';
+$string['toolsindex'] = 'Índice das ferramentas HotPot';
 $string['unitname_help'] = 'texto de ajuda para o nome';
+$string['unrecognizedsourcefile'] = 'O módulo HotPot não consegue detetar o tipo de ficheiro de origem: {$a}';
 $string['updated'] = 'Atualizado';
+$string['updatinggrades'] = 'A atualizar as avaliações HotPot';
 $string['usefilters'] = 'Usar filtros';
 $string['usefilters_help'] = 'Se ativo, o conteúdo irá passar através dos filtros do Moodle antes de ser enviado para o navegador.';
 $string['useglossary'] = 'Usar glossário';
@@ -487,10 +560,10 @@ $string['usemediafilter_help'] = 'Esta configuração define quando é usado o f
 : o conteúdo não passa pelo filtro conteúdo multimédia.
 
 **Filtros conteúdo multimédia standard do Moodle**
-: o conteúdo irá passar pelos filtros conteúdo multimédia. Estes filtros procuram por links para sons e ficheiros de vídeo de filme, e convertem-nos para players adequados.
+: o conteúdo irá passar pelos filtros conteúdo multimédia. Estes filtros procuram por hiperligações para sons e ficheiros de vídeo de filme, e convertem-nos para players adequados.
 
 **Filtro conteúdo multimédia HotPot**
-:o conteúdo será transmitido através de filtros que detectam links, imagens, sons e filmes a serem especificados usando uma notação de colchetes.
+:o conteúdo será transmitido através de filtros que detectam hiperligações, imagens, sons e filmes a serem especificados usando uma notação de colchetes.
 
 A notação de colchetes tem a seguinte sintaxe:
 <code>[url player width height options]</code>
@@ -513,7 +586,7 @@ A notação de colchetes tem a seguinte sintaxe:
 : altura do player. Se ficar em branco terá o mesmo valor definido para a largura.
 
 **opções** (opcional)
-: lista de opções para o player separadas por ponto e virgula. Cada opção pode ter um link para on/off ou um par de valores.
+: lista de opções para o player separadas por ponto e virgula. Cada opção pode ter uma hiperligação para on/off ou um par de valores.
 : **nome=valor
 : **nome="valor com espaços"';
 $string['viewreports'] = 'Ver relatórios de {$a} utilizador(s)';

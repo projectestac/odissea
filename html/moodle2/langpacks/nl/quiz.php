@@ -262,7 +262,7 @@ $string['dragtostart'] = 'Naar start';
 $string['duplicateresponse'] = 'De inzending werd genegeerd omdat je eerder al een gelijkaardig antwoord gaf.';
 $string['eachattemptbuildsonthelast'] = 'Elke poging bouwt voort op de vorige';
 $string['eachattemptbuildsonthelast_help'] = '<p>Als meerdere pogingen toegestaan worden en deze instelling wordt op <b>ja</b> gezet, dan zal elke nieuwe poging
-de resultaten van de vorige poging bevatten. Dit maakt het mogelijk een begonnen test later verder af te werken.</p>
+de resultaten van de vorige poging bevatten. Dit maakt het mogelijk een begonnen test later te voltooien.</p>
 
 <p>Om bij elke poging een lege test te tonen, kies je <b>Nee</b> voor deze instelling.</p>';
 $string['editcategories'] = 'Bewerk de categorieën';

@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clicktodownload'] = 'Clique no link {$a} para descarregar o ficheiro.';
-$string['clicktoopen2'] = 'Clique no link {$a} para ver o ficheiro.';
+$string['clicktodownload'] = 'Clique na hiperligação {$a} para descarregar o ficheiro.';
+$string['clicktoopen2'] = 'Clique na hiperligação {$a} para ver o ficheiro.';
 $string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
 $string['configframesize'] = 'Quando uma página web ou um ficheiro são visualizados numa frame, este valor corresponde à altura (em pixeis) da frame superior (que contém a navegação).';
 $string['configparametersettings'] = 'Esta opção define o valor predefinido que é introduzido no painel de configuração de parâmetros quando adiciona um novo recurso. Depois da primeira vez, este valor é substituído pelas preferências individuais do utilizador.';
 $string['configpopup'] = 'Quando se adiciona um recurso que pode ser apresentado numa nova janela, deve ser essa a opção predefinida?';
-$string['configpopupdirectories'] = 'Devem as janelas de pop-up apresentar links para as pastas por predefinição?';
+$string['configpopupdirectories'] = 'Devem as janelas de pop-up apresentar hiperligações para as pastas por predefinição?';
 $string['configpopupheight'] = 'Qual deve ser a altura predefinida para as janelas de pop-up?';
 $string['configpopuplocation'] = 'Devem as janelas de pop-up apresentar, por predefinição, a barra de endereço?';
 $string['configpopupmenubar'] = 'Devem as janelas de pop-up apresentar, por predefinição, a barra de menus?';
@@ -50,7 +50,7 @@ $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de 
 
 * Incorporar. o ficheiro é incorporado e exibido na página, mantendo a barra de navegação, a descrição do ficheiro e os blocos laterais;
 
-* Forçar download: é aberta uma janela de diálogo para o utilizador abrir ou guardar o ficheiro;
+* Forçar descarga: é aberta uma janela de diálogo para o utilizador abrir ou guardar o ficheiro;
 
 * Mesma janela: apenas o ficheiro é exibido na janela do navegador;
 
@@ -66,13 +66,13 @@ $string['filenotfound'] = 'Ficheiro não encontrado';
 $string['filterfiles'] = 'Aplicar filtros ao conteúdo do ficheiro';
 $string['filterfilesexplain'] = 'Selecione quais os ficheiros a serem filtrados, tendo em conta que pode causar problemas em alguns applets Java e Flash. Certifique-se que todos os ficheiros de texto se encontram na codificação UTF-8.';
 $string['filtername'] = 'Hiperligações automáticas para nomes dos recursos';
-$string['forcedownload'] = 'Forçar download';
+$string['forcedownload'] = 'Forçar descarga';
 $string['framesize'] = 'Largura da frame';
 $string['legacyfiles'] = 'Migração de ficheiro antigo de disciplina';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
 $string['modulename'] = 'Ficheiro';
-$string['modulename_help'] = 'O recurso Ficheiro permite que um professor insira um ficheiro como um recurso de uma disciplina. Sempre que o navegador o permitir, o ficheiro será exibido dentro da interface da disciplina, caso contrário os alunos poderão fazer o seu download. Este recurso pode incluir ficheiros de suporte, como por exemplo uma página HTML com imagens ou conteúdos em Flash.
+$string['modulename_help'] = 'O recurso Ficheiro permite que um professor insira um ficheiro como um recurso de uma disciplina. Sempre que o navegador o permitir, o ficheiro será exibido dentro da interface da disciplina, caso contrário os alunos poderão descarregar. Este recurso pode incluir ficheiros de suporte, como por exemplo uma página HTML com imagens ou conteúdos em Flash.
 
 Note que os alunos precisam de ter os programas apropriados instalados nos seus computadores para visualizarem os ficheiros.
 
@@ -103,12 +103,12 @@ $string['resource:view'] = 'Ver recurso';
 $string['selectmainfile'] = 'Selecione o ficheiro principal clicando no ícone ao lado do nome do ficheiro.';
 $string['showsize'] = 'Mostrar tamanho';
 $string['showsize_desc'] = 'Mostrar tamanho do ficheiro na página principal da disciplina?';
-$string['showsize_help'] = 'Mostra o tamanho do ficheiro, como  \'3.1 MB\', junto ao link para o ficheiro.
+$string['showsize_help'] = 'Mostra o tamanho do ficheiro, como  \'3.1 MB\', junto à hiperligação para o ficheiro.
 
-Se existerem mais que um ficheiro no recurso, é exibido o tamanho total dos ficheiros.';
+Se existirem mais que um ficheiro no recurso, é exibido o tamanho total dos ficheiros.';
 $string['showtype'] = 'Mostrar tipo';
 $string['showtype_desc'] = 'Mostrar o tipo do ficheiro (ex. \'Word\') na página principal da disciplina?';
-$string['showtype_help'] = 'Mostra a extensão do ficheiro, como \'Word\', junto ao link para o ficheiro.
+$string['showtype_help'] = 'Mostra a extensão do ficheiro, como \'Word\', junto à hiperligação para o ficheiro.
 
 Se existirem vários ficheiros neste recurso, é exibido o tipo do ficheiro principal.
 

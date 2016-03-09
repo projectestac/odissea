@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Questions Cloze à réponses intégrées';
-$string['pluginname_help'] = 'Les questions Cloze à réponses intégrées permettent l\'importation d\'un passage de texte dans lequel sont intégrées des questions, par exemple à choix multiples ou à réponse courte.';
+$string['pluginname_help'] = 'Les questions Cloze à réponses intégrées permettent l\'importation d\'un passage de texte dans lequel sont intégrées des questions, par exemple à choix multiple ou à réponse courte.';

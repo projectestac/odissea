@@ -177,7 +177,7 @@ function run_cli_cron($background = true) {
     $force = optional_param('forcecron', false, PARAM_BOOL);
     if (!$force) {
         $cronstart = get_config(null, 'cronstart');
-        $cronperiod = 900; // 15 minutes minimum
+        $cronperiod = 840; // 14 minutes minimum
         if ($cronstart + $cronperiod > time()) {
             echo "Moodle cron was executed recently.\n";
             exit(1);

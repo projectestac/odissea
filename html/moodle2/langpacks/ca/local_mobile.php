@@ -32,5 +32,6 @@ $string['local_mobiletypeoflogin'] = 'Tria tipus d\'accés';
 $string['local_mobiletypeoflogin_key'] = 'Tipus d\'accés';
 $string['loginintheapp'] = 'Mitjançant l\'aplicació';
 $string['logininthebrowser'] = 'Mitjançant una finestra del navegador (per a connectors SSO)';
+$string['mod_scorm_settings'] = 'Característiques específiques del mòdul SCORM';
 $string['pluginname'] = 'Característiques addicionals de Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'El connector local de Moodle Mobile ha d\'estar habilitat i configurat per a poder llançar l\'aplicació';

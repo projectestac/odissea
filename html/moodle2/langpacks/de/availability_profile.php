@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['conditiontitle'] = 'Nutzerprofilfeld';
-$string['description'] = 'Zugriffssteuerung basiert auf Profilfeldern im Nutzerprofil der Teilnehmer/innen';
-$string['error_selectfield'] = 'Sie müssen ein Profilfeld auswählen';
+$string['description'] = 'Zugriff über Felder im Nutzerprofil der Teilnehmer/innen steuern';
+$string['error_selectfield'] = 'Sie müssen ein Profilfeld auswählen.';
 $string['error_setvalue'] = 'Sie müssen einen Wert eingeben.';
 $string['label_operator'] = 'Vergleichsmethode';
 $string['label_value'] = 'Vergleichswert';
@@ -39,7 +39,7 @@ $string['op_isempty'] = 'ist leer';
 $string['op_isequalto'] = 'ist gleich mit';
 $string['op_isnotempty'] = 'ist nicht leer';
 $string['op_startswith'] = 'beginnt mit';
-$string['pluginname'] = 'Voraussetzung: Profilwert';
+$string['pluginname'] = 'Voraussetzung: Nutzerprofil';
 $string['requires_contains'] = 'Ihr Profilfeld <strong>{$a->field}</strong> enthält <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Ihr Profilfeld <strong>{$a->field}</strong> enthält nicht <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Ihr Profilfeld <strong>{$a->field}</strong> endet mit <strong>{$a->value}</strong>';

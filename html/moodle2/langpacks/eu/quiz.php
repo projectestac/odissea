@@ -806,15 +806,15 @@ $string['reviewofpreview'] = 'Aurrebistaren berrikusketa';
 $string['reviewopen'] = 'Beranduago, galdetegia irekita dagoen bitartean';
 $string['reviewoptions'] = 'Ikasleek berrikus dezakete';
 $string['reviewoptionsheading'] = 'Aukerak berrikusi';
-$string['reviewoptionsheading_help'] = 'Aukera honek kontrolatzen du erabiltzaileek galdetegi baten saiakera bat berrikustean edo galdetegi baten txostenean ikus dezaketen informazioa.
+$string['reviewoptionsheading_help'] = 'Aukera hauek kontrolatzen dute ikasleek galdetegi baten saiakera bat berrikustean edo galdetegi baten txostenetan ikus dezaketen informazioa.
 
-**Saikera egin bitartean** ezapena ondorio jakin batzuetarako bakarrik da esanguratsua, adibidez \'interaktiboa hainbat saiakerarekin\', horietan saikera egin bitartean erakutsi baitaiteke feedbacka.
+**Saiakera egin bitartean** aukerak jokaera zehatz batzuetan bakarrik erabiltzen da, \'Interaktiboa hainbat saiakerarekin\' kasuan adibidez, saiakera egin bitartean feedbackak erakusteko aukera dutelako.
 
-**Berehala saiakeraren ondoren** ezarpenak \'Bidali dena eta bukatu\'-ri sakatu eta bi minutura eragiten du.</p>
+**Saiakera bakoitzaren ondoren** aukerak \'Bidali dena eta bukatu\' sakatu ondorengo bi minutuetan soilik aplikatzen da.
 
-**Ondoren, galdetegia irekita dagoen bitartean** honen eta bukaera-data bitartean eragiten du.</p>
+**Beranduago, galdetegia irekita dagoen bitartean** aukerak aurrekoaren ondoren aplikatzen da, galdetegiaren itxiera-data heldu arte.
 
-**Galdetegia itxita dagoen unetik aurrera**  bukaera-data igarota eragiten du. Galdetegiak ez badu bukaera-datarik, ez da egoera hau emango.';
+**Galdetegia itxi ondoren** aukera galdetegiaren itxiera-data igaro ondoren aplikatzen da. Galdetegiak ez badu itxiera-datarik egoera honetara ez da inoiz heltzen.';
 $string['reviewoverallfeedback'] = 'Feedback orokorra';
 $string['reviewoverallfeedback_help'] = 'Saiakeraren amaieran emandako feedbacka, ikasleak denera jasotako kalifikazio orokorraren araberakoa.';
 $string['reviewresponse'] = 'Ebazpena berrikusi';

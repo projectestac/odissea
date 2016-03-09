@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['currentsection'] = 'Dieser Abschnitt';
-$string['hidefromothers'] = 'Abschnitt verbergen';
+$string['currentsection'] = 'Dieses Thema';
+$string['hidefromothers'] = 'Thema verbergen';
 $string['page-course-view-topics'] = 'Jede Kurshauptseite im Themenformat';
 $string['page-course-view-topics-x'] = 'Jede Kursseite im Themenformat';
 $string['pluginname'] = 'Themenformat';
 $string['section0name'] = 'Allgemeines';
 $string['sectionname'] = 'Thema';
-$string['showfromothers'] = 'Abschnitt anzeigen';
+$string['showfromothers'] = 'Thema anzeigen';

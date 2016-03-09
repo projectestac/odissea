@@ -226,7 +226,7 @@ $string['groupsubmissionsettings'] = 'Paràmetres de la tramesa en grup';
 $string['hiddenuser'] = 'Participant';
 $string['hideshow'] = 'Mostra/Oculta';
 $string['instructionfiles'] = 'Fitxers amb instruccions';
-$string['introattachments'] = 'Arxius addicionals';
+$string['introattachments'] = 'Fitxers addicionals';
 $string['introattachments_help'] = 'Es poden afegir fitxers addicionals per a emprar-los en la tasca, com ara plantilles de resposta. Els enllaços de descàrrega dels arxius es mostraran a la pàgina de la tasca, sota la descripció.';
 $string['invalidfloatforgrade'] = 'La qualificació donada no es comprèn: {$a}';
 $string['invalidgradeforscale'] = 'La qualificació proporcionada no era vàlida per a l\'escala actual';
@@ -355,7 +355,7 @@ $string['submissioncopiedtext'] = 'Heu fet una còpia de la vostra tramesa prèv
 
 Podeu veure l\'estat de la tasca tramesa:
 {$a->url}';
-$string['submissiondrafts'] = 'Requereix que l\'estudiantat faci clic al botó Tramet';
+$string['submissiondrafts'] = 'Requereix que els estudiants facin clic al botó Tramet';
 $string['submissiondrafts_help'] = 'Si està activat, l\'estudiantat haurà de fer clic al botó Tramet per a establir la seva tramesa com a final. Això permet a l\'estudiantat mantenir una versió d\'esborrany de la tramesa en el sistema.
 Si es canvia aquest paràmetre de «No» a «Sí» després que l\'estudiantat hagi tramès algun treball, la tramesa es considerarà com a definitiva.';
 $string['submissioneditable'] = 'L\'estudiant pot editar aquesta tramesa';
@@ -412,8 +412,8 @@ $string['subplugintype_assignfeedback'] = 'Connector de retroacció';
 $string['subplugintype_assignfeedback_plural'] = 'Connectors de retroacció';
 $string['subplugintype_assignsubmission'] = 'Connector de tramesa';
 $string['subplugintype_assignsubmission_plural'] = 'Connectors de tramesa';
-$string['teamsubmission'] = 'L\'estudiantat tramet en grups';
-$string['teamsubmissiongroupingid'] = 'Agrupament per als grups d\'estudiantat';
+$string['teamsubmission'] = 'Els estudiants trameten en grups';
+$string['teamsubmissiongroupingid'] = 'Agrupament per als grups d\'estudiants';
 $string['teamsubmissiongroupingid_help'] = 'Aquest és l\'agrupament que utilitzarà la tasca per trobar grups d\'estudiants. Si no s\'estableix, s\'utilitzarà el conjunt de grups per omissió.';
 $string['teamsubmission_help'] = 'Si s\'habilita els estudiants es dividiran en grups basats en el conjunt de grups per omissió o bé en un agrupament personalitzat. Una tramesa en grup serà compartida entre els membres del grup i tots els membres del grup podran veure els canvis a la tramesa que facin els altres.';
 $string['textinstructions'] = 'Instruccions de la tasca';

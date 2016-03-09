@@ -65,4 +65,5 @@ $string['datatables_processing'] = 'S\'està processant...';
 $string['disabled'] = 'Inhabilitat';
 $string['download'] = 'Descarrega';
 $string['statslogins'] = 'Inicis de sessió a la plataforma';
+$string['type'] = 'Tipus d\'informes';
 $string['viewreport'] = 'Mostra l\'informe';

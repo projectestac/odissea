@@ -35,4 +35,4 @@ $string['giftrightbraceerror'] = 'Impossible de trouver une }';
 $string['importminerror'] = 'Il y a une erreur dans la question. Il n\'y a pas assez de réponses pour ce type de question';
 $string['nohandler'] = 'Pas de traitement pour le type de question {$a}';
 $string['pluginname'] = 'Format Gift';
-$string['pluginname_help'] = 'Le format Gift permet l\'importation et l\'exportation de questions à choix multiples, vrai/faux, à réponses courtes, d\'appariement, mot manquant, numériques et de composition par l\'intermédiaire d\'un fichier texte.';
+$string['pluginname_help'] = 'Le format Gift permet l\'importation et l\'exportation de questions à choix multiple, vrai/faux, à réponses courtes, d\'appariement, mot manquant, numériques et de composition par l\'intermédiaire d\'un fichier texte.';

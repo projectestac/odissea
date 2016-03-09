@@ -38,7 +38,7 @@ $string['chat:exportparticipatedsession'] = 'Exportar sessão de chat em que par
 $string['chat:exportsession'] = 'Exportar qualquer sessão de chat';
 $string['chatintro'] = 'Descrição';
 $string['chatname'] = 'Nome da sala de chat';
-$string['chat:readlog'] = 'Ler gravações do chat';
+$string['chat:readlog'] = 'Ver gravações do chat';
 $string['chatreport'] = 'Sessões de chat';
 $string['chat:talk'] = 'Submeter mensagens no chat';
 $string['chattime'] = 'Próxima sessão de chat';
@@ -143,7 +143,7 @@ $string['userlist'] = 'Lista de utilizadores';
 $string['usingchat'] = 'A usar o chat';
 $string['usingchat_help'] = 'O módulo de chat inclui algumas caraterísticas para tornar o chat mais agradável.
 * Ícones expressivos - Qualquer ícone expressivo (emoticon) que pode usar noutras partes do Moodle pode ser usada também aqui e será substituída pela imagem correspondente. Por exemplo, :-)
-* Links - Os endereços da Web serão transformados automaticamente em links.
+* Hiperligações - Os endereços da Web serão transformados automaticamente em hiperligações.
 * Personalização - Pode começar uma linha com "/me" ou ":" para personalizar a mensagem. Por exemplo, se o seu nome for Joaquim, e escrever ":sorriu!" ou "/me sorri!", todos os outros participantes verão "Joaquim sorriu!"
 * Beeps - Pode enviar um som a os outros participantes clicando em "chamar" junto dos seus nomes. Um atalho útil para chamar todos os participantes consiste em escrever "beep all".
 * HTML - Se souber algum código HTML, poderá usá-lo no seu texto para fazer coisas como, por exemplo, inserir imagens, tocar sons, ou enviar texto com cores diferentes.';

@@ -65,7 +65,7 @@ $string['courseshortnamegenerated'] = 'Nomes curtos de disciplinas gerados: {$a}
 $string['courseshortnameincremented'] = 'Nomes curtos de disciplinas incrementados {$a->from} -> {$a->to}';
 $string['coursestotal'] = 'Total de disciplinas: {$a}';
 $string['coursesupdated'] = 'Disciplina atualizada: {$a}';
-$string['coursetemplatename'] = 'Restaurar a partir desta disciplina depois do upload';
+$string['coursetemplatename'] = 'Restaurar a partir desta disciplina depois do carregamento';
 $string['coursetemplatename_help'] = 'Introduza o nome curto de uma disciplina existente para usar como um modelo para a criação de todas as disciplinas';
 $string['coursetorestorefromdoesnotexist'] = 'A disciplina a partir da qual pretende fazer o restauro não existe';
 $string['courseupdated'] = 'Disciplina atualizada';
@@ -96,12 +96,12 @@ $string['invalidroles'] = 'Nomes de papel inválidos: {$a}';
 $string['invalidshortname'] = 'Nome curto inválido';
 $string['missingmandatoryfields'] = 'Valor em falta para campos obrigatórios: {$a}';
 $string['missingshortnamenotemplate'] = 'Não foram definidos o nome curto e o modelo de nome curto em falta';
-$string['mode'] = 'Modo de upload';
+$string['mode'] = 'Modo de carregamento';
 $string['mode_help'] = 'Esta opção especifica se as disciplinas podem ser criadas e/ou atualizadas.';
 $string['nochanges'] = 'Sem alterações';
-$string['pluginname'] = 'Upload de Disciplina';
+$string['pluginname'] = 'Carregamento de Disciplina';
 $string['preview'] = 'Pré-visualização';
-$string['reset'] = 'Reiniciar disciplina depois do upload';
+$string['reset'] = 'Reiniciar disciplina depois do carregamento';
 $string['reset_help'] = 'Define se a disciplina é reiniciada depois de criada/atualizada';
 $string['restoreafterimport'] = 'Restaurar depois de importar';
 $string['result'] = 'Resultado';
@@ -109,7 +109,7 @@ $string['rowpreviewnum'] = 'Pré-visualizar linhas';
 $string['rowpreviewnum_help'] = 'Número de linhas do ficheiro CSV que será visualizado na página seguinte. Esta opção existe para limitar o tamanho da página seguinte.';
 $string['shortnametemplate'] = 'Modelo para gerar um nome curto';
 $string['shortnametemplate_help'] = 'O nome curto da disciplina é exibido na navegação. Pode usar a sintaxe modelo aqui (%f = fullname, %i = idnumber), ou introduzir um valor inicial que é incrementado.';
-$string['templatefile'] = 'Restaurar a partir deste ficheiro depois do upload';
+$string['templatefile'] = 'Restaurar a partir deste ficheiro depois do carregamento';
 $string['templatefile_help'] = 'Selecione um ficheiro para ser usado como modelo para a criação de todas as disciplinas.';
 $string['unknownimportmode'] = 'Modo de importação desconhecido';
 $string['updatemissing'] = 'Preencha os itens em falta a partir de dados e predefinições de CSV';
@@ -120,7 +120,7 @@ $string['updateonly'] = 'Apenas atualizar disciplinas existentes';
 $string['updatewithdataonly'] = 'Atualize apenas com dados CSV';
 $string['updatewithdataordefaults'] = 'Atualize com dados e predefinições de CSV';
 $string['uploadcourses'] = 'Carregar disciplinas';
-$string['uploadcourses_help'] = 'O upload das disciplinas pode ser feito via ficheiro de texto. O formato deste ficheiro deve estar de acordo com as seguintes indicações:
+$string['uploadcourses_help'] = 'O carregamento das disciplinas pode ser feito via ficheiro de texto. O formato deste ficheiro deve estar de acordo com as seguintes indicações:
 
 *Cada linha do ficheiro deve conter um registo;
 
@@ -129,5 +129,5 @@ $string['uploadcourses_help'] = 'O upload das disciplinas pode ser feito via fic
 *O primeiro registo deve conter uma lista de campos do tipo \'nome\' definindo o formato do resto do ficheiro;
 
 *Os campos do tipo \'nome\' necessários são: nome curto, nome completo e categoria.';
-$string['uploadcoursespreview'] = 'Pré-visualizar upload de disciplinas';
-$string['uploadcoursesresult'] = 'Resultados do upload de disciplinas';
+$string['uploadcoursespreview'] = 'Pré-visualizar carregamento de disciplinas';
+$string['uploadcoursesresult'] = 'Resultados do carregamento de disciplinas';

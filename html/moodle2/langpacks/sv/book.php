@@ -33,20 +33,24 @@ $string['book:viewhiddenchapters'] = 'Visa dolda bokkapitel';
 $string['chapters'] = 'Kapitel';
 $string['chaptertitle'] = 'Titel på kapitel';
 $string['confchapterdelete'] = 'Är Du säker på att vill ta bort det här kapitlet?';
-$string['confchapterdeleteall'] = 'Är Du säker på att vill ta bort det här kapitlet och alla underavdelningar?';
+$string['confchapterdeleteall'] = 'Är Du säker på att vill ta bort det här kapitlet och alla underkapitlar?';
 $string['content'] = 'Innehåll';
-$string['customtitles'] = 'Standardtitlar';
+$string['customtitles'] = 'Anpassade titlar';
 $string['customtitles_help'] = 'Normalt visas kapitelrubriken i innehållsförteckningen och som rubrik ovanför innehållet. Om kryssrutan för att kunna anpassa titlar är markerad, visas kapitelrubriken inte som rubrik ovanför innehållet.
 En annan titel (kanske längre än kapitelrubriken) kan anges som en del av innehållet.';
 $string['editingchapter'] = 'Redigerar kapitel';
 $string['errorchapter'] = 'Fel vid läsning av bokkapitel';
+$string['eventchaptercreated'] = 'Kapitel skapat';
+$string['eventchapterdeleted'] = 'Kapitel raderat';
+$string['eventchapterupdated'] = 'Kapitel uppdaterat';
+$string['eventchapterviewed'] = 'Kapitel visat';
 $string['modulename'] = 'Bok';
 $string['modulename_help'] = 'Bok-modulen möjliggör för en lärare att skapa en flersidig resurs i ett bok-liknande format inklusive kapitel och underkapitel. Böcker kan innehålla media och text och är användbara för att visa långa passager av information som kan delas in i sektioner. En bok kan t.ex. användas
 * För att visa litteratur för enskilda studiemoment
 * Som en personalhandbok
 * Som en portfölj/presentation av studentarbeten';
 $string['modulenameplural'] = 'Böcker';
-$string['navexit'] = 'Exit Book';
+$string['navexit'] = 'Stäng boken';
 $string['navnext'] = 'Nästa';
 $string['navprev'] = 'Föregående';
 $string['nocontent'] = 'Inget innehåll har lagts till den här boken än.';
@@ -64,7 +68,7 @@ $string['numberingoptions_desc'] = 'Inställningsalternativ för att visa kapite
 $string['page-mod-book-x'] = 'Valfri bokmodulsida';
 $string['pluginadministration'] = 'Bok administration';
 $string['pluginname'] = 'Bok';
-$string['subchapter'] = 'Underavdelning';
+$string['subchapter'] = 'Underkapitel';
 $string['subchapternotice'] = '(Endast tillgängligt när det första kapitlet har skapats)';
 $string['subplugintype_booktool'] = 'Bok verktyg';
 $string['subplugintype_booktool_plural'] = 'Bok verktyg';

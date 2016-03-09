@@ -48,8 +48,8 @@ $string['createcourse'] = 'Criar disciplina';
 $string['createtestplan'] = 'Criar plano de teste';
 $string['creating'] = 'A criar disciplina';
 $string['done'] = 'completo ({$a}s)';
-$string['downloadtestplan'] = 'Fazer o download do plano de teste';
-$string['downloadusersfile'] = 'Fazer o download do ficheiro de utilizadores';
+$string['downloadtestplan'] = 'Descarregar o plano de teste';
+$string['downloadusersfile'] = 'Descarregar o ficheiro de utilizadores';
 $string['error_nocourses'] = 'Não há disciplinas para gerar o plano de teste';
 $string['error_noforumdiscussions'] = 'A disciplina selecionada não contém fóruns de discussão';
 $string['error_noforuminstances'] = 'A disciplina selecionada não contém instâncias do módulo Fórum';
@@ -91,7 +91,7 @@ $string['smallfiles'] = 'Ficheiros pequenos';
 $string['targetcourse'] = 'Disciplina alvo de teste';
 $string['testplanexplanation'] = 'Esta ferramenta cria um ficheiro JMeter de plano de teste juntamente com o ficheiro de credenciais do utilizador.
 
-Este plano de teste é concebido para funcionar em conjunto com {$a}, o que facilita a execução do plano de teste num ambiente Moodle em específico, reúne informação sobre os procedimentos e compara os resultados. Por isso, é necessário fazer o download e usar o script \'test_runner.sh\' ou acompanhar a instalação e instruções de uso.
+Este plano de teste é concebido para funcionar em conjunto com {$a}, o que facilita a execução do plano de teste num ambiente Moodle em específico, reúne informação sobre os procedimentos e compara os resultados. Por isso, é necessário descarregar e usar o script \'test_runner.sh\' ou acompanhar a instalação e instruções de uso.
 
 É necessário definir uma senha para os utilizadores da disciplina em \'config.php\' (p. ex. $CFG->tool_generator_users_password = \'moodle\';). Não existe nenhum valor predefinido para esta senha para impedir utilizações não intencionais da ferramenta. É necessário usar a opção de atualização de senhas no caso de os utilizadores da sua disciplina terem outra senha ou caso as senhas tenham sido geradas pelo \'tool_generator\' sem definir um valor $CFG->tool_generator_users_password.
 

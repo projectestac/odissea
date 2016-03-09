@@ -581,7 +581,7 @@ $string['editsummary'] = 'Edita un resum';
 $string['editthisactivity'] = 'Edita aquesta activitat';
 $string['editthiscategory'] = 'Edita aquesta categoria';
 $string['edittitle'] = 'Edita el títol';
-$string['edittitleinstructions'] = 'Prem Escape per a cancel·lar i Enter quan acabis';
+$string['edittitleinstructions'] = 'Premeu la tecla d\'escapada (<em>Escape</em>) per cancel·lar i la tecla de retorn (<em>Enter</em>) quan acabeu';
 $string['edituser'] = 'Edita els comptes d\'usuari';
 $string['edulevel'] = 'Nivell educatiu';
 $string['edulevelother'] = 'Altres';
@@ -1038,7 +1038,7 @@ $string['loggedinnot'] = 'No heu iniciat sessió';
 $string['login'] = 'Inicia la sessió';
 $string['loginalready'] = 'Ja heu iniciat sessió';
 $string['loginas'] = 'Inicia sessió com a';
-$string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «inicia sessió com a» per a utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
+$string['loginaspasswordexplain'] = '<p>Heu d\'introduir la contrasenya especial «inicia sessió com a» per utilitzar aquesta característica.<br />Si no la sabeu, pregunteu-la a l\'administrador del servidor.</p>';
 $string['login_failure_logs'] = 'Registre d\'inicis de sessió fallits';
 $string['loginguest'] = 'Inicia sessió com a visitant';
 $string['loginsite'] = 'Inicia sessió en aquest lloc';
@@ -1089,9 +1089,9 @@ $string['maximumgrade'] = 'Qualificació màxima';
 $string['maximumgradex'] = 'Nota màxima: {$a}';
 $string['maximumshort'] = 'Max';
 $string['maximumupload'] = 'Mida màxima de càrrega';
-$string['maximumupload_help'] = '<p>Aquest paràmetre defineix la mida màxima dels fitxers que poden penjar els estudiants en aquest curs (l\'administrador defineix un límit màxim vàlid per a tot el lloc).</p>
+$string['maximumupload_help'] = '<p>Aquest paràmetre defineix la mida màxima dels fitxers que es poden penjar en aquest curs (l\'administrador defineix un límit màxim vàlid per a tot el lloc).</p>
 
-<p>És possible posar límits inferiors dins dels diversos mòdul d\'activitats.</p>';
+<p>És possible posar límits inferiors dins dels diversos mòduls d\'activitats.</p>';
 $string['maxnumberweeks'] = 'Nombre màxim de seccions';
 $string['maxnumberweeks_desc'] = 'El valor màxim en el menú desplegable del nombre de seccions (només és aplicable a certs formats de curs).';
 $string['maxnumcoursesincombo'] = 'Navega per els<a href="{$a->link}">{$a->numberofcourses} cursos</a>.';
