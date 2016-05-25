@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Escrever tamanho do buffer';
-$string['pluginname'] = 'Registo padrão';
-$string['pluginname_desc'] = 'Um módulo de registo armazena entradas de registo numa tabela de base de dados Moodle.';
-$string['taskcleanup'] = 'Limpeza da tabela de registos';
+$string['pluginname'] = 'Registo de atividade padrão';
+$string['pluginname_desc'] = 'Um módulo de registo armazena entradas de registo de atividade numa tabela de base de dados Moodle.';
+$string['taskcleanup'] = 'Limpeza da tabela de registos de atividade';

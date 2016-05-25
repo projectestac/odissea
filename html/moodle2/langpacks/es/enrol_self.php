@@ -63,8 +63,8 @@ Para extender su inscripción, vaya a {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificación de expiración del periodo de auto-matrícula';
 $string['groupkey'] = 'Clave de matriculación del grupo de usuarios';
 $string['groupkey_desc'] = 'Por defecto, utilice claves de matriculación de grupo.';
-$string['groupkey_help'] = '<p>Además de restringir el acceso al curso a sólo aquellos que conocen la clave, el uso de una clave de acceso de grupo significa que los usuarios se agregan automáticamente al grupo cuando se inscriben en el curso. </p>
-<p>Para utilizar una clave de acceso de grupo, se debe especificar que se precisa clave en la configuración de los cursos, y también en la configuración del grupo.</p>';
+$string['groupkey_help'] = 'Además de restringir el acceso al curso a sólo aquellos que conocen la clave, el uso de una clave de acceso de grupo significa que los usuarios se agregan automáticamente al grupo cuando se inscriben en el curso.
+Nota: Una clave de acceso al curso debe especificarse en la configuración de la auto-matriculación, así como la clave de acceso a grupos en la configuración del grupo.';
 $string['longtimenosee'] = 'Dar de baja los inactivos después de';
 $string['longtimenosee_help'] = 'Si los usuarios no acceden a un curso durante mucho tiempo, entonces se les da de baja automáticamente. Este parámetro especifica este plazo de tiempo.';
 $string['maxenrolled'] = 'Número máximo de usuarios matriculados';
@@ -98,7 +98,7 @@ $string['sendcoursewelcomemessage'] = 'Enviar mensaje de bienvenida al curso';
 $string['sendcoursewelcomemessage_help'] = 'Si esta opción está activada, los usuarios recibirán un mensaje de bienvenida por email cuando se automatriculen en un curso.';
 $string['showhint'] = 'Mostrar pista';
 $string['showhint_desc'] = 'Mostrar la primera letra de la contraseña de acceso de invitados.';
-$string['status'] = 'Habilitar las auto-matriculaciones existentes';
+$string['status'] = 'Habilitar las matriculaciones existentes';
 $string['status_desc'] = 'Habilita el metodo de auto-matriculación para los cursos nuevos.';
 $string['status_help'] = 'Si se encuentra deshabilitado, todas las auto-matriculaciones existentes se suspenden y los nuevos usuarios no se pueden inscribir.';
 $string['unenrol'] = 'Dar de baja usuario';

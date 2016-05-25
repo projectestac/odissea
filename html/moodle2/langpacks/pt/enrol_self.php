@@ -39,7 +39,7 @@ $string['enrolenddaterror'] = 'A data de fim de inscrição não pode ser anteri
 $string['enrolme'] = 'Inscrever-me';
 $string['enrolperiod'] = 'Duração da inscrição';
 $string['enrolperiod_desc'] = 'Duração predefinida da inscrição.  Se for definida para zero, a validade da inscrição será ilimitada por predefinição.';
-$string['enrolperiod_help'] = 'Período de tempo que a inscrição é válida, a partir do momento em que o utilizador se inscreve. Se inativo a duração da inscrição será ilimitada.';
+$string['enrolperiod_help'] = 'Período de tempo que a inscrição é válida, a partir do momento em que o utilizador se inscreve. Se desativado a duração da inscrição será ilimitada.';
 $string['enrolstartdate'] = 'Data de início';
 $string['enrolstartdate_help'] = 'Se ativo, os utilizadores apenas se podem auto-inscrever a partir desta data.';
 $string['expiredaction'] = 'Ação para expiração da inscrição';
@@ -79,7 +79,7 @@ Se este campo não estiver preenchido, então qualquer utilizador poderá inscre
 Se for especificada uma senha, qualquer utilizador que tente aceder à disciplina terá que indicar essa senha. Este procedimento só acontece no momento da inscrição nas disciplinas, os acessos posteriores dos alunos inscritos dispensam a indicação desta senha.';
 $string['passwordinvalid'] = 'A senha de inscrição que indicou não é a correta, por favor, tente novamente';
 $string['passwordinvalidhint'] = 'A senha de inscrição que indicou não é a correta, por favor, tente novamente. Sugestão: A primeira letra é "{$a}"';
-$string['pluginname'] = 'Auto-inscrição';
+$string['pluginname'] = 'Autoinscrição';
 $string['pluginname_desc'] = 'Este módulo permite aos utilizadores decidir em que disciplinas se pretendem inscrever. As disciplinas podem ser protegidas por uma senha de inscrição. Internamente a inscrição é feita através do módulo de inscrições manuais, pelo que este módulo tem que estar igualmente ativo na disciplina.';
 $string['requirepassword'] = 'Pedir senha de inscrição';
 $string['requirepassword_desc'] = 'Esta configuração faz com que as novas disciplinas criadas peçam sempre senha de inscrição e evita que as disciplinas que já existem possam deixar de pedir essa senha.';

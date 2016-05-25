@@ -184,4 +184,4 @@ $string['viewmyentriesaboutmodule'] = 'Ver as minhas mensagens sobre {$a}';
 $string['viewsiteentries'] = 'Ver todas as mensagens';
 $string['viewuserentries'] = 'Ver todas as mensagens por {$a}';
 $string['worldblogs'] = 'Todos podem ler as mensagens configuradas para estarem acessíveis a todos';
-$string['wrongpostid'] = 'id da mensagem incorreto';
+$string['wrongpostid'] = 'ID da mensagem incorreto';

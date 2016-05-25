@@ -352,7 +352,7 @@ $string['configsitemaxcategorydepthhelp'] = 'ここではカテゴリまたは�
 $string['configslasharguments'] = '「スラッシュ引数」 (<em>PATH_INFO</em>に使用) はSCORMパッケージおよび複数ファイルリソースを正しく表示するために必要です。あなたのウェブサーバがスラッシュ引数をサポートしない場合、そしてあなたが設定できない場合、結果として動作しないものが発生する可能性もありますが、この設定を無効にすることはできます。<br />注意: 「スラッシュ引数」の使用は将来的なMoodleのバージョンに必須となります。';
 $string['configsmartpix'] = 'この設定を有効にした場合、PHPスクリプトが現在のテーマ、そしてすべてのテーマ、最後にMoodle/pixフォルダを検索して、アイコンを表示します。これにより、テーマ間の重複するイメージファイルを減らすことができますが、パフォーマンスにおいてわずかな負荷がかかります。';
 $string['configstartwday'] = '週の始め';
-$string['configstatsfirstrun'] = 'ここではcronジョブが<b>最初の</b>統計処理で、どのくらい過去にさかのぼるか指定します。トラフィックが多く、共有ホスティングを利用している場合、あまりにも過去にさかのぼることは良い考えではありません。統計処理は長時間を必要とし、リソースに過大な負荷がかかります (この設定では1ヵ月 = 28日となることに留意してください。グラフおよびレポートの生成には1ヶ月 = 1カレンダー月が使用されます)。';
+$string['configstatsfirstrun'] = 'ここではcronジョブが<b>最初の</b>統計処理で、どのくらい過去にさかのぼるか指定します。トラフィックが多く、共有ホスティングを利用している場合、あまりにも過去にさかのぼることは良い考えではありません。統計処理は長時間を要してリソースに過大な負荷がかかります (この設定では1ヵ月 = 28日となることに留意してください。グラフおよびレポートの生成には1ヶ月 = 1カレンダー月が使用されます)。';
 $string['configstatsmaxruntime'] = '統計処理ではサーバに大きな負荷がかかる場合があります。このオプションおよび次のオプションの組み合わせで、「いつ」および「どのくらい」稼動させるか設定してください。';
 $string['configstatsmaxruntime2'] = '統計処理ではサーバに大きな負荷がかかる場合があります。1日の統計データの収集で許可する最大時間を指定してください。1回のcron実行で処理できる最大日数は31です。';
 $string['configstatsmaxruntime3'] = '1日のうち、統計の計算に許される最大時間を指定してください。統計処理はサーバに対して大きな負荷がかかることに留意してください。1つのcronで処理する最大日数は次の設定で指定することができます。';
@@ -667,7 +667,7 @@ $string['loginpasswordautocomplete_help'] = 'この設定を有効にした場�
 $string['loglifetime'] = 'ログの保存期間';
 $string['logstorenotrequired'] = 'ログストアは必須ではありません';
 $string['logstoressupported'] = 'このレポートをサポートするログストア';
-$string['longtimewarning'] = '<b>この処理には長時間がかかりますので注意してください。</b>';
+$string['longtimewarning'] = '<bこの処理には長時間を要することに留意してください。</b>';
 $string['maintenancemode'] = 'メンテナンスモード';
 $string['maintenancemodeisscheduled'] = 'このサイトは {$a}  分 {$a->sec} 秒でメンテナンスモードにスイッチします。';
 $string['maintfileopenerror'] = 'メンテナンスファイルのオープン中にエラーが発生しました！';
@@ -1059,7 +1059,7 @@ $string['timezoneisforcedto'] = 'すべてのユーザに使用を強制する';
 $string['timezonenotforced'] = 'ユーザは独自のタイムゾーンを使用できる';
 $string['tokenizerrecommended'] = 'PHP Tokenizer拡張モジュールのインストールをお勧めします - Moodleネットーワーキングの機能性を改善します。';
 $string['tools'] = '管理ツール';
-$string['toolsmanage'] = '管理ツールの管理';
+$string['toolsmanage'] = '管理ツール管理';
 $string['unattendedoperation'] = '無人オペレーション';
 $string['unbookmarkthispage'] = 'このページをブックマーク解除する';
 $string['unicoderequired'] = 'あなたのすべてのデータをユニコードフォーマット (UTF-8) で保存する必要があります。Moodleの新しいインストールはユニコードをデフォルトキャラクタにセットしたデータベースで実行してください。アップグレードの場合、UTF-8移行処理を実行してださい (詳細は管理ページをご覧ください)。';

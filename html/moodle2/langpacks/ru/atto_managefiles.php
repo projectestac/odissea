@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['deleteselected'] = 'Удалить выбранные файлы';
-$string['filemanager'] = 'Файловый менеджер';
+$string['filemanager'] = 'Менеджер файловый';
 $string['hasmissingfiles'] = 'Внимание! Отсутствуют следующие файлы, на которые есть ссылки в тексте:';
 $string['managefiles'] = 'Управление файлами';
-$string['missingfiles'] = 'Потерянные файлы';
+$string['missingfiles'] = 'Отсутствующие файлы';
 $string['pluginname'] = 'Управление файлами';
-$string['unusedfilesdesc'] = 'Эти встроенные файлы не используются в тексте:';
+$string['unusedfilesdesc'] = 'Следующие вложенные файлы не используются в тексте:';
 $string['unusedfilesheader'] = 'Неиспользуемые файлы';

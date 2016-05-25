@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nonedescription'] = 'Os utilizadores podem registar-se e criar contas válidas imediatamente, sem autenticação em nenhum servidor externo e sem nenhuma confirmação por e-mail. Este plugin levanta questões de segurança que devem ser devidamente analisadas antes da sua utilização.';
+$string['auth_nonedescription'] = 'Os utilizadores podem registar-se e criar contas válidas imediatamente, sem autenticação em nenhum servidor externo e sem nenhuma confirmação por e-mail. Este módulo levanta questões de segurança que devem ser devidamente analisadas antes da sua utilização.';
 $string['pluginname'] = 'Sem autenticação';

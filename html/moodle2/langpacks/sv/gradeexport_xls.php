@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Kalkylblad av Excel-typ';
+$string['timeexported'] = 'Senast nedladdad från denna kurs';
 $string['xls:publish'] = 'Publicera export av betyg i XLS-format';
 $string['xls:view'] = 'Använd kalkylblad av Excel-typ för export av betyg';

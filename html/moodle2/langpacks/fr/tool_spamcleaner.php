@@ -43,5 +43,5 @@ $string['spamfrommessages'] = 'Dans les messages :';
 $string['spaminvalidresult'] = 'Résultat inconnu, mais non valide';
 $string['spamkeyword'] = 'Mot-clef';
 $string['spamoperation'] = 'Opération';
-$string['spamresult'] = 'Résultat de la recherche des profils utilisateurs contenant';
+$string['spamresult'] = 'Résultat de la recherche des profils utilisateurs contenant&nbsp;';
 $string['spamsearch'] = 'Recherche de ces termes';

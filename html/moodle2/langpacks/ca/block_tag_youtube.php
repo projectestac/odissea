@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Qualsevol categoria';
+$string['apikeyinfo'] = 'Obteniu una <a href="https://developers.google.com/youtube/v3/getting-started">clau Google API</a> per al vostre lloc Moodle.';
 $string['autosvehicles'] = 'Cotxes i vehicles';
 $string['category'] = 'Categoria';
 $string['comedy'] = 'Comèdia';

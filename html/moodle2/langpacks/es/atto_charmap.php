@@ -66,6 +66,7 @@ $string['kappa'] = 'kappa';
 $string['kappa_caps'] = 'Kappa';
 $string['lambda'] = 'lambda';
 $string['lambda_caps'] = 'Lambda';
+$string['minutesfeet'] = 'minutos / pies';
 $string['ocircumflex'] = 'o - circunflejo';
 $string['ocircumflex_caps'] = 'O - circunflejo';
 $string['odiaeresis'] = 'o - diéresis';

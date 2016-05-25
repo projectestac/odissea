@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Cache de requête statique';
+$string['pluginname'] = 'Cache de requêtes statique';

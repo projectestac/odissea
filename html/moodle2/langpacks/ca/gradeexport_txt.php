@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fitxer de text net';
+$string['timeexported'] = 'Darrera descàrrega des d\'aquest curs';
 $string['txt:publish'] = 'Publicar qualificacions exportades en format text';
 $string['txt:view'] = 'Utilitzar qualificacions exportades en format text';

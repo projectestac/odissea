@@ -37,4 +37,4 @@ $string['reportformissingqtypes'] = 'Galdera-mota ezezagunetarako txostena';
 $string['reportforqtype'] = '\'{$a}\' motako galderetarako txostena';
 $string['reportsettings'] = 'Txostenaren ezarpenak';
 $string['totalquestions'] = 'Denera';
-$string['visiblequestions'] = 'Agerian jarri';
+$string['visiblequestions'] = 'Ikusgai';

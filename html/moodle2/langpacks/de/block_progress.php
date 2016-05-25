@@ -51,17 +51,23 @@ $string['config_header_expected'] = 'Erwartet bis';
 $string['config_header_icon'] = 'Symbol';
 $string['config_header_locked'] = 'Gesperrt bis zum Termin';
 $string['config_header_monitored'] = 'Überwacht';
+$string['config_header_showsubmitted'] = 'Zeige \'eingereicht\' vor der Aktion';
 $string['config_icons'] = 'Symbole benutzen';
+$string['config_longbars'] = 'Darstellung von langen Fortschrittsbalken';
 $string['config_now'] = 'Anzeiger';
 $string['config_orderby'] = 'Balkenelemente anordnen nach';
 $string['config_orderby_course_order'] = 'Anordnung im Kurs';
 $string['config_orderby_due_time'] = '"Fällig bis"-Datum';
 $string['config_percentage'] = 'Prozentsatz für Teilnehmer/innen anzeigen';
+$string['config_scroll'] = 'Scrollen';
+$string['config_squeeze'] = 'Quetschen';
 $string['config_title'] = 'Alternativer Titel';
 $string['config_warning_loglifetime'] = 'Warnung: Logs werden nach {$a} Tag(en) gelöscht. Aktionen, die darauf beruhen, dass Aktivitäten / Materialien angeschaut wurden, sind davon betroffen.';
 $string['config_warning_logstores'] = 'Warnung: Logging ist deaktiviert. Dadurch werden Aktionen, die darauf beruhen, dass Aktivitäten / Materialien angeschaut wurden nicht überprüft.';
+$string['config_wrap'] = 'Umbrechen';
 $string['coursenametoshow'] = 'Kursname, der auf dem Dashboard angezeigt wird';
 $string['data'] = 'Datenbank';
+$string['defaultlongbars'] = 'Standarddarstellung für lange Fortschrittsbalken';
 $string['dmelearn'] = 'Digital Media e-Learning';
 $string['equella'] = 'Equella';
 $string['feedback'] = 'Feedback';
@@ -73,11 +79,20 @@ $string['fullname'] = 'Vollständiger Kursname';
 $string['futureNotAttempted_colour'] = '#025187';
 $string['futurenotattempted_colour_descr'] = 'HTML Farbcode für zukünftige Elemente, bei denen noch kein Versuch unternommen wurde';
 $string['futurenotattempted_colour_title'] = 'Farbe für künftige, noch nicht versuchte Elemente';
+$string['geogebra'] = 'Geogebra';
 $string['glossary'] = 'Glossar';
 $string['graded'] = 'bewertet';
 $string['hotpot'] = 'Hotpot';
 $string['how_group_works'] = 'Wie sichtbare Gruppen funktionieren';
 $string['how_group_works_help'] = '<p>Wenn Sie eine Gruppe auswählen, wird das die Sichtbarkeit des Blocks so einschränken, dass nur diese Gruppe den Block sehen kann</p>';
+$string['how_longbars_works'] = 'Wie sollen lange Fortschrittsbalken dargestellt werden?';
+$string['how_longbars_works_help'] = '<p>Wenn der Fortschrittsbalken eine bestimmte Länge überschreitet, kann dieser in einer der folgenden Weisen dargestellt werden.</p>
+<ul>
+    <li>Alle Elemente werden in einem Balken angezeigt und zurecht gequetscht</li>
+    <li>Seitwärtiges Scrollen, um überhängende Elemente anzuzeigen</li>
+    <li>Umbrechen, um alle Elemente in mehreren Zeilen darzustellen</li>
+</ul>
+<p>Bitte beachten Sie im Fall \'Umbrechen\', dass der Jetzt-Anzeiger nicht dargestellt wird.</p>';
 $string['how_ordering_works'] = 'Wie die Anordnung funktioniert';
 $string['how_ordering_works_help'] = '<p>Es gibt zwei Möglichkeiten, wie die Elemente in dem Fortschrittsbalken angeordnet werden können</p>
 <ul>
@@ -90,6 +105,7 @@ $string['how_ordering_works_help'] = '<p>Es gibt zwei Möglichkeiten, wie die El
 </ul>';
 $string['hsuforum'] = 'Fortschrittliches Forum';
 $string['imscp'] = 'IMS Content Package';
+$string['jclic'] = 'JClic';
 $string['journal'] = 'Journal';
 $string['lastonline'] = 'Zuletzt online';
 $string['lesson'] = 'Lektion';
@@ -127,9 +143,13 @@ $string['responded_to'] = 'beantwortet';
 $string['scorm'] = 'Lernpaket';
 $string['selectitemstobeadded'] = 'Wählen Sie Aktivitäten aus';
 $string['shortname'] = 'Kurzer Kursname';
+$string['showallinfo'] = 'Alle Informationen anzeigen';
 $string['showinactive'] = 'Inaktive Teilnehmer/innen in der Übersicht anzeigen';
 $string['subcourse'] = 'Unterkurs';
 $string['submitted'] = 'eingereicht';
+$string['submittednotcomplete_colour'] = '#FFCC00';
+$string['submittednotcomplete_colour_descr'] = 'HTML Farbcode für die Elemente wurden übermittelt, sind aber noch nicht komplett';
+$string['submittednotcomplete_colour_title'] = 'Farbe für \'eingereicht, aber nicht abgeschlossen\'';
 $string['survey'] = 'Umfrage';
 $string['time_expected'] = 'Erwartet';
 $string['turnitintool'] = 'Turnitin Tool';
@@ -139,11 +159,18 @@ $string['video'] = 'Video';
 $string['viewed'] = 'gesehen';
 $string['vpl'] = 'Virtual Programming Lab';
 $string['what_actions_can_be_monitored'] = 'Welche Aktionen können überwacht werden?';
-$string['what_actions_can_be_monitored_help'] = '<p>Unterschiedlichste Aktivitäten und Dateien können überwacht werden.</p>
-<p>Da diese sehr unterschiedlich sind, ist auch sehr verschieden, was jeweils überwacht wird. Bei Aufgaben können z.B. die Einreichungen durch Teilnehmer/innen beobachtet werden, Tests werden auf einen Abschluss hin geprüft, bei Foren wird gemeldet ob ein Eintrag getätigt wurde usw. </p>
-<p>Überwachte Elemente müssen sichtbar sein, um im Fortschrittsbalken angezeigt zu werden. Ausblenden einer Aktivität oder Quelle versteckt das Ereignis im Fortschrittsbalken.</p>
-<p>Einige Aktivitäten können mehrmals vorkommen. In solchen Fällen können Sie die entsprechende Tätigkeit für jede Instanz der betreffenden Aktivität auswählen.</p>
-<p>Für die Aufgabe und Test-Module, setzt der Begriff der Weitergabe einer "Grade zu passieren" wird für die Sorte Artikel im Notenbuch gesetzt. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">Mehr Hilfe...</a></p>';
+$string['what_actions_can_be_monitored_help'] = '<p>Es sind mehrere Aktionen für eine Aktivität möglich.</p>
+<p>Zum Beispiel gibt es bei der Aufgaben-Aktivität folgende mögliche Aktionen:
+    <ul>
+        <li>eingereicht,</li>
+        <li>markiert,</li>
+        <li>bestanden (siehe dazu den Hinweis zum \'Bestehen\' weiter unten),</li>
+        <li>bestanden durch die Abgabefrist (siehe dazu den Hinweis zum \'Bestehen\' weiter unten) und</li>
+        <li>Aktivitätsabschluss (wenn dies im Kurs eingeschaltet und für die Aktivität aktiviert).</li>
+    </ul>
+</p>
+<h3>Bestehen</h3>
+<p>Bei den Aktivitäten Aufgabe, Lektion und Test gibt es eine "Bewertung zum Bestehen".<a href="https://docs.moodle.org/30/de/Bewertungsaspekte" target="_blank">Weitere Hilfe...</a></p>';
 $string['what_does_monitored_mean'] = 'Was das „Überwachen” bedeutet?';
 $string['what_does_monitored_mean_help'] = '<p>Zweck dieses Blocks ist es, Lernende zu ermutigen, ihre Zeit effektiv zu nutzen. Jeder Lernende kann seine Fortschritte bei der Vollendung von Aktivitäten und dem Ansehen von Dateien überwachen.</p>
 <p>Auf der Konfigurationsseite finden Sie eine Liste aller Module, die Sie erstellt haben, die durch den Fortschrittsbalken überwacht werden können. Das Modul wird nur überwacht werden und als kleiner Block in der Statusleiste erscheinen, wenn es entsprechend markiert wurde .</p>';
@@ -162,6 +189,8 @@ $string['what_locked_means'] = 'Was heißt „Gesperrt bis zum Termin”?';
 $string['what_locked_means_help'] = '<p>Wenn in den Einstellungen einer Aktivität ein Stichtag gesetzt ist, wird es freigestellt, den Stichtag der Tätigkeit zu verwenden oder eine andere unabhängige Zeit für die Tätigkeit im Fortschrittsbalken anzuzeigen.</p>
 <p>Um den Fortschrittsbalken bis zu dem Stichtag einer Aktivität zu sperren, muss ein Stichtag aktiviert und gesetzt sein. Wenn der Stichtag gesperrt ist, wird die Ãnderung der Frist in den Aktivitätseinstellungen automatisch die Zeit verändern, die im Fortschrittsbalken gezeigt wird.</p>
 <p>Wenn eine Aktivität nicht gesperrt ist wird die Ã„nderung von Datum und Zeit in der Aktivität selbst auf die Anzeige im Fortschrittsbalken keinen Effekt haben.</p>';
+$string['what_show_submitted_means'] = 'Was \'Zeige eingereicht vor der Aktion\' bedeutet.';
+$string['what_show_submitted_means_help'] = 'Bei manchen Aktivitäten können Teilnehmer/innen Lösungen einreichen. Wenn diese etwas eingereicht haben, aber die abschließende Aktion, z.B. die Bewertung, noch nicht erfolgt ist, wird sich die Farbe des Balkens ändern. Dies zeigt an, dass eine Einreichung gemacht wurde.';
 $string['why_display_now'] = 'Warum Sie vielleicht den „JETZT Anzeiger” verbergen/zeigen wollen?';
 $string['why_display_now_help'] = '<p>Nicht alle Kurse sind dafür gedacht, Aufgabenstellungen zu bestimmten Zeitabschnitten durchzuführen. Einige Kurse können eine offene Anmeldung haben, wo sich Teilnehmer einschreiben und die Aktivitäten durchführen können, wann sie wollen.</p>
 <p>Um den Fortschrittsbalken in solchen Kursen als ein Hilfsmittel zu benutzen, erstellen Sie Daten mit „erwartet bis” für Zeiten in ferner Zukunft und setzen Sie die „JETZT” Einstellung auf Nein.</p>';
@@ -176,3 +205,4 @@ $string['why_use_icons_help'] = '<p>Vielleicht möchten Sie Häkchen und Kreuz-S
 <p>Die Bedeutung des Blocks kann auch klarer werden, wenn Sie meinen, Farben seien nicht intuitiv, entweder aus kulturellen oder persönlichen Gründen.</p>';
 $string['wiki'] = 'Wiki';
 $string['workshop'] = 'Workshop';
+$string['wrapafter'] = 'Wenn Umbruch, begrenze Zeilen auf';

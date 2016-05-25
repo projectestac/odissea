@@ -195,16 +195,29 @@ function run_cli_cron($background = true) {
     }
     if (!empty($savecronlog)) {
         $outputdir = get_admin_datadir_folder('crons', false);
-        if ($outputdir) {
-            $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
+        $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
+
+        // Zip old files
+        $search = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Y", strtotime("-1 day"));
+        foreach (glob($search.'*.log') as $filename) {
+            if ($outputfile != $filename) {
+                // If not is current cron file, zip it
+                $gzfilename = $filename.'.gz';
+                $fp = gzopen ($gzfilename, 'w9');
+                gzwrite ($fp, file_get_contents($filename));
+                gzclose($fp);
+                if (filesize($gzfilename) > 0) {
+                    // If gz file is created, remove unzipped origin file
+                    unlink($filename);
+                }
+            }
         }
 
         // Erase old files
         $search = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ym", strtotime("-2 month"));
-        foreach (glob($search.'*.log') as $filename) {
+        foreach (glob($search.'*.log.gz') as $filename) {
             unlink($filename);
         }
-        $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
     }
     $append = true;
 

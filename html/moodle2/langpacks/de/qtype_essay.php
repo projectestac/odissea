@@ -53,4 +53,4 @@ $string['responseoptions'] = 'Antwortoptionen';
 $string['responserequired'] = 'Texteingabe erforderlich';
 $string['responsetemplate'] = 'Antwortvorlage';
 $string['responsetemplateheader'] = 'Antwortvorlage';
-$string['responsetemplate_help'] = 'Der hier eingegebene Text wird in Textfeld für die Antwort angehe';
+$string['responsetemplate_help'] = 'Der hier eingegebene Text wird im Antwortfeld für Teilnehmer angezeigt wenn diese/r die Frage beantworten will.';

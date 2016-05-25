@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Lägg till fler opinionsundersökningar';
+$string['allowmultiple'] = 'Tillåt mer än ett alternativ som kan väljas';
 $string['allowupdate'] = 'Tillåt uppdatering av opinionsundersökning';
 $string['answered'] = 'Besvarade';
 $string['atleastoneoption'] = 'Du måste lämna minst ett möjligt svar';
+$string['cannotsubmit'] = 'Tyvärr fanns det ett problem att lämna ditt val . Var god försök igen.';
 $string['choice'] = 'Svarsalternativ {$a}';
 $string['choice:addinstance'] = 'Lägg till ett nytt val';
 $string['choice:choose'] = 'Registrera en opinionsundersökning';
@@ -51,6 +53,9 @@ $string['description'] = 'Introduktion';
 $string['displayhorizontal'] = 'Visa horisontellt';
 $string['displaymode'] = 'Visningsläge';
 $string['displayvertical'] = 'Visa vertikalt';
+$string['eventanswercreated'] = 'Val genomförd';
+$string['eventanswerupdated'] = 'Val uppdaterad';
+$string['eventreportviewed'] = 'Opinionsundersökning rapport visades';
 $string['expired'] = 'Den här aktiviteten är stängd på {$a} och den är inte längre tillgänglig.';
 $string['full'] = '(Full)';
 $string['havetologin'] = 'Du måste logga in innan Du kan skicka Ditt/Dina svar';
@@ -63,10 +68,12 @@ varje specifikt alternativ.</p>
 markera det. Om Du st&auml;ller in det till 0 s&aring; kan ingen v&auml;lja det.</p>
 
 <p>Om Du inte aktiverar n&aring;gra begr&auml;nsningar s&aring; kan hur m&aring;nga deltagare som helst v&auml;lja alternativet.</p>';
+$string['limitno'] = 'Max antal {no}';
 $string['modulename'] = 'Opinionsundersökning';
 $string['modulename_help'] = 'Modulen opinionsundersökning gör det möjligt för distansläraren att ställa en fråga och ange ett urval av svarsalternativ. ';
 $string['modulenameplural'] = 'Opinionsundersökningar';
 $string['moveselectedusersto'] = 'Flytta de valda användarna till...';
+$string['multiplenotallowederror'] = 'Flera val är inte tillåtna i denna opinionsundersökning';
 $string['mustchooseone'] = 'Du måste välja ett svar innan Du kan svara. Ingenting sparades.';
 $string['noguestchoose'] = 'Gäster får tyvärr inte delta i opinionsundersökningar.';
 $string['noresultsviewable'] = 'Det går f.n. inte att visa resultaten.';
@@ -76,6 +83,8 @@ $string['notopenyet'] = 'Den här aktiviteten är tyvärr inte tillgänglig för
 $string['numberofuser'] = 'Antal användare';
 $string['numberofuserinpercentage'] = 'Antalet användare i procent.';
 $string['option'] = 'Alternativ';
+$string['optionno'] = 'Alternativ {no}';
+$string['options'] = 'Alternativer';
 $string['page-mod-choice-x'] = 'Varje sida för valmodulen';
 $string['pluginadministration'] = 'Administration av opinionsundersökning';
 $string['pluginname'] = 'Opinionsundersökning';
@@ -92,6 +101,7 @@ $string['removeresponses'] = 'Ta bort alla svar';
 $string['responses'] = 'Svar';
 $string['responsesresultgraphheader'] = 'Visa en graf';
 $string['responsesto'] = 'Svar till {$a}';
+$string['results'] = 'Resultat';
 $string['savemychoice'] = 'Spara min opinionsundersökning';
 $string['showunanswered'] = 'Visa kolumn för icke besvarade';
 $string['skipresultgraph'] = 'Hoppa över diagrammet över resultat';

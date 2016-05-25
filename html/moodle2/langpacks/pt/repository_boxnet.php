@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Chave da API';
-$string['apiv1migration_message_content'] = 'Como parte da recente atualização do Moodle (2.6, 2.5.3, 2.4.7), o repositório do plugin Box foi desativado. Para o reativar, tem de o reconfigurar tal como descrito na documentação: {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'Este plugin foi desativado, uma vez que requer configuração, tal como descrito na documentação de migração Box APIv1.';
-$string['apiv1migration_message_subject'] = 'Informações importantes sobre o repositório do plugin Box';
+$string['apiv1migration_message_content'] = 'Como parte da recente atualização do Moodle (2.6, 2.5.3, 2.4.7), o repositório do módulo Box foi desativado. Para o reativar, tem de o reconfigurar tal como descrito na documentação: {$a->docsurl}.';
+$string['apiv1migration_message_small'] = 'Este módulo foi desativado, uma vez que requer configuração, tal como descrito na documentação de migração Box APIv1.';
+$string['apiv1migration_message_subject'] = 'Informações importantes sobre o repositório do módulo Box';
 $string['boxnet:view'] = 'Ver repositório Box';
 $string['cannotcreatereference'] = 'Não é possível criar uma referência, não há permissões suficientes para compartilhar o ficheiro no Box.';
 $string['clientid'] = 'ID do Cliente';
@@ -38,7 +38,7 @@ $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
 $string['information'] = 'Obter um ID de Cliente e senha chave em <a href="http://www.box.net/developers/services">página da box.net para programadores</a> para o seu site Moodle.';
 $string['invalidpassword'] = 'Senha inválida';
 $string['migrationadvised'] = 'Parece que estava a usar o Box com a versão da API 1. Executou a ferramenta de migração<a href="{$a}"></a> para converter as referências antigas?';
-$string['migrationinfo'] = '<p> Como parte da migração para a nova API fornecida pelo Box, as referências do seu ficheiro têm de ser migradas. Infelizmente, o sistema de referência não é compatível com a API v2, por isso será feito o seu download e posterior conversão para ficheiros reais.</p>
+$string['migrationinfo'] = '<p> Como parte da migração para a nova API fornecida pelo Box, as referências do seu ficheiro têm de ser migradas. Infelizmente, o sistema de referência não é compatível com a API v2, por isso será descarregado e posteriormente convertido para ficheiros reais.</p>
 
 <p> Lembre-se também que a migração pode <strong>demorar muito tempo muito,</strong> dependendo da quantidade de referências e do tamanho dos ficheiros.</p>
 

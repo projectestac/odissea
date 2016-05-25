@@ -367,7 +367,7 @@ $string['loginasonecourse'] = 'No podeu entrar en aquest curs.<br />Heu d\'acaba
 $string['maxareabytes'] = 'No hi ha prou espai disponible per emmagatzemar aquest fitxer';
 $string['maxbytes'] = 'Aquest fitxer excedeix la mida màxima';
 $string['messagingdisable'] = 'La missatgeria d\'aquest lloc està desactivada.';
-$string['mimetexisnotexist'] = 'El vostre sistema no està configurat per fer funcionar mimeTeX. Cal que descarregueu l\'executable corresponent a la vostra plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, o obtenir les fonts de C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilar-les i posar l\'executable al vostre directori moodle/filter/tex/';
+$string['mimetexisnotexist'] = 'El vostre sistema no està configurat per executar mimeTeX. Cal que descarregueu l\'executable corresponent a la vostra plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, o obtenir les fonts de C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilar-les i posar l\'executable al vostre directori moodle/filter/tex/';
 $string['mimetexnotexecutable'] = 'El mimeTeX instal·lat no és executable';
 $string['missingfield'] = 'Falta el camp "{$a}"';
 $string['missingkeyinsql'] = 'S\'ha produït un error a causa del paràmetre perdut "{$a}" a la consulta.';
@@ -444,7 +444,7 @@ $string['orderidnotfound'] = 'No s\'ha trobat l\'ID d\'ordre {$a}';
 $string['pagenotexist'] = 'S\'ha esdevingut un error poc comú (heu intentat anar a una pàgina que no existeix).';
 $string['pathdoesnotstartslash'] = 'Heu donat uns argument no vàlids, el camí no pot començar amb una barra (/)';
 $string['pleasereport'] = 'Si teniu temps, us agrairem que ens informeu de què estàveu fent quan s\'ha esdevingut aquest error:';
-$string['pluginrequirementsnotmet'] = 'El connector "{$a->pluginname}" ({$a->pluginversion}) no s\'ha pogut instal·lar. Necessita una versió més nova de Moodle (esteu utilitzant la {$a->currentmoodle} i necessiteu la {$a->requiremoodle}).';
+$string['pluginrequirementsnotmet'] = 'El connector «{$a->pluginname}» ({$a->pluginversion}) no s\'ha pogut instal·lar. Necessita una versió més nova de Moodle (esteu utilitzant la {$a->currentmoodle} i necessiteu la {$a->requiremoodle}).';
 $string['prefixcannotbeempty'] = '<p>S\'ha produït un error: el prefix de les taules de la base de dades no pot ser buit({$a})</p> <p>L\'administrador del lloc ha de solucionar aquest problema.</p>';
 $string['prefixtoolong'] = '<p>S\'ha produït un error: el prefix de les taules de la base de dades és massa llarg ({$a->dbfamily})</p> <p>L\'administrador del lloc ha de solucionar aquest problema. La longitud màxima dels prefixos de les taules a {$a->dbfamily} és de {$a->maxlength} caràcters.</p>';
 $string['processingstops'] = 'El processament acaba aquí. Els registres que resten s\'ignoraran.';
@@ -476,7 +476,7 @@ $string['sessiondiskfull'] = 'La partició de la sessió és plena. No és possi
 $string['sessionerroruser'] = 'Heu excedit el termini de la vostra sessió o s\'ha produït un error. Si us plau torneu a entrar-hi.';
 $string['sessionerroruser2'] = 'S\'ha detectat un error del servidor que afecta la vostra sessió. Heu d\'iniciar de nou la sessió o reiniciar el vostre navegador.';
 $string['sessionhandlerproblem'] = 'El gestor de sessions està mal configurat';
-$string['sessionipnomatch'] = 'Sembla que el vostre número IP ha canviat des que heu iniciat sessió. Aquesta característica de seguretat impedeix que un <i>cracker</i> suplanti la vostra identitat mentre teniu iniciada la sessió a Moodle. Els usuaris normals no haurien de veure aquest missatge: demaneu ajuda a l\'administrador del lloc.';
+$string['sessionipnomatch'] = 'Sembla que el vostre número IP ha canviat des que heu iniciat sessió. Aquesta característica de seguretat impedeix que un pirata (<i>cracker</i>) suplanti la vostra identitat després que hàgiu iniciat sessió a Moodle. Els usuaris normals no haurien de veure aquest missatge: demaneu ajuda a l\'administrador del lloc.';
 $string['sessionipnomatch2'] = 'Sembla que la vostra adreça IP ha canviat des del moment en què heu iniciat sessió per primer cop. Aquesta funció de seguretat impedeix el robatori de la vostra identitat mentre teniu iniciada la sessió en aquest lloc. Podeu veure aquest error si utilitzeu xarxes sense fils o si esteu en itinerància (<em>roaming</em>) entre xarxes diferents. Demaneu més ajuda a l\'administrador del lloc.  <br /> <br /> Si voleu continuar, premeu la tecla F5 per refrescar aquesta pàgina.';
 $string['sessionwaiterr'] = 'S\'ha excedit el temps mentre s\'esperava a tancar la sessió.<br />Espereu que acabi la sol·licitud en curs i torneu-ho a provar més tard.';
 $string['shortnametaken'] = 'El nom curt ja està essent utilitzat per a un altre curs  ({$a})';

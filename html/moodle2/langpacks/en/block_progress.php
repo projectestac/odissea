@@ -35,7 +35,7 @@ $string['assignment'] = 'Assignment';
 $string['attempted'] = 'attempted';
 $string['attempted_colour'] = '#73A839';
 $string['attempted_colour_descr'] = 'HTML Colour code for elements that have been attempted';
-$string['attempted_colour_title'] = 'Attempted Colour';
+$string['attempted_colour_title'] = 'Attempted colour';
 $string['awarded'] = 'awarded';
 $string['bigbluebuttonbn'] = 'Big Blue Button';
 $string['book'] = 'Book';
@@ -51,17 +51,23 @@ $string['config_header_expected'] = 'Expected by';
 $string['config_header_icon'] = 'Icon';
 $string['config_header_locked'] = 'Locked to deadline';
 $string['config_header_monitored'] = 'Monitored';
+$string['config_header_showsubmitted'] = 'Show submitted before action';
 $string['config_icons'] = 'Use icons in bar';
+$string['config_longbars'] = 'How to present long bars';
 $string['config_now'] = 'Use';
 $string['config_orderby'] = 'Order bar items by';
 $string['config_orderby_course_order'] = 'Ordering in course';
 $string['config_orderby_due_time'] = '"Expected by" date-time';
 $string['config_percentage'] = 'Show percentage to students';
+$string['config_scroll'] = 'Scroll';
+$string['config_squeeze'] = 'Squeeze';
 $string['config_title'] = 'Alternate title';
 $string['config_warning_loglifetime'] = 'Warning: Logs are cleared after {$a} day(s). Actions relying on views will be affected by this.';
 $string['config_warning_logstores'] = 'Warning: Logging is disabled so actions relying on views will not be checked.';
+$string['config_wrap'] = 'Wrap';
 $string['coursenametoshow'] = 'Course name to show on Dashboard';
 $string['data'] = 'Database';
+$string['defaultlongbars'] = 'Default presentation for long bars';
 $string['dmelearn'] = 'Digital Media e-Learning';
 $string['equella'] = 'Equella';
 $string['feedback'] = 'Feedback';
@@ -71,13 +77,22 @@ $string['folder'] = 'Folder';
 $string['forum'] = 'Forum';
 $string['fullname'] = 'Full course name';
 $string['futureNotAttempted_colour'] = '#025187';
-$string['futurenotattempted_colour_descr'] = 'HTML Colour code for future elements that have not yet been attemted';
-$string['futurenotattempted_colour_title'] = 'Future Not-attempted Colour';
+$string['futurenotattempted_colour_descr'] = 'HTML colour code for future elements that have not yet been attemted';
+$string['futurenotattempted_colour_title'] = 'Future Not-attempted colour';
+$string['geogebra'] = 'Geogebra';
 $string['glossary'] = 'Glossary';
 $string['graded'] = 'graded';
 $string['hotpot'] = 'Hot Potatoes';
 $string['how_group_works'] = 'How visible group works';
 $string['how_group_works_help'] = '<p>Selecting a group will limit the display of the this block to that group only.</p>';
+$string['how_longbars_works'] = 'How long bars are presented';
+$string['how_longbars_works_help'] = '<p>When bars exceed a set length, how they can be presented in one of the following ways.</p>
+<ul>
+    <li>Squeezed into one horizontal bar</li>
+    <li>Scrolling sideways to show overflowing bar segments</li>
+    <li>Wrapping to show all bar segments on multiple lines</li>
+</ul>
+<p>Note that when the bar is wrapped, the NOW indicator will not be shown.</p>';
 $string['how_ordering_works'] = 'How ordering works';
 $string['how_ordering_works_help'] = '<p>There are two ways items in the Progress Bar can be ordered.</p>
 <ul>
@@ -90,18 +105,19 @@ $string['how_ordering_works_help'] = '<p>There are two ways items in the Progres
 </ul>';
 $string['hsuforum'] = 'Advanced Forum';
 $string['imscp'] = 'IMS Content Package';
+$string['jclic'] = 'JClic';
 $string['journal'] = 'Journal';
 $string['lastonline'] = 'Last in course';
 $string['lesson'] = 'Lesson';
 $string['lti'] = 'External tool';
 $string['marked'] = 'marked';
-$string['mouse_over_prompt'] = 'Mouse over block for info.';
+$string['mouse_over_prompt'] = 'Mouse over or touch bar for info.';
 $string['no_blocks'] = 'No Progress Bar blocks are set up for your courses.';
 $string['no_events_config_message'] = 'There are no activities or resources to monitor the progress of. Create some activities and/or resources then configure this block.';
 $string['no_events_message'] = 'No activities or resources are being monitored. Use config to set up monitoring.';
 $string['notAttempted_colour'] = '#C71C22';
-$string['notattempted_colour_descr'] = 'HTML Colour code for current elements that have not yet been attempted';
-$string['notattempted_colour_title'] = 'Not-attempted Colour';
+$string['notattempted_colour_descr'] = 'HTML colour code for current elements that have not yet been attempted';
+$string['notattempted_colour_title'] = 'Not-attempted colour';
 $string['no_visible_events_message'] = 'None of the monitored events are currently visible.';
 $string['now_indicator'] = 'NOW';
 $string['ouwiki'] = 'OU Wiki';
@@ -127,9 +143,13 @@ $string['responded_to'] = 'responded to';
 $string['scorm'] = 'SCORM';
 $string['selectitemstobeadded'] = 'Select activities/resources';
 $string['shortname'] = 'Short course name';
+$string['showallinfo'] = 'Show all info';
 $string['showinactive'] = 'Show inactive students in Overview';
 $string['subcourse'] = 'Subcourse';
 $string['submitted'] = 'submitted';
+$string['submittednotcomplete_colour'] = '#FFCC00';
+$string['submittednotcomplete_colour_descr'] = 'HTML colour code for elements that have been submitted, but are not yet complete';
+$string['submittednotcomplete_colour_title'] = 'Submitted but not complete colour';
 $string['survey'] = 'Survey';
 $string['time_expected'] = 'Expected';
 $string['turnitintool'] = 'Turnitin Tool';
@@ -139,8 +159,16 @@ $string['video'] = 'Video';
 $string['viewed'] = 'viewed';
 $string['vpl'] = 'Virtual Programming Lab';
 $string['what_actions_can_be_monitored'] = 'What actions can be monitored?';
-$string['what_actions_can_be_monitored_help'] = '<p>Different activities and resources can be monitored.</p>
-<p>Because different activities and resources are used differently, what is monitored for each module varies. For example, for assignments, submission can be monitored; quizzes can be monitored on attempt; forums can be monitored for student postings; choice activities can monitored for answering and viewing resources is monitored.</p>
+$string['what_actions_can_be_monitored_help'] = '<p>A number of different actions may be possible for an activity.</p>
+<p>For example, with the Assignment module possible actions are:
+    <ul>
+        <li>submitted,</li>
+        <li>marked,</li>
+        <li>passed (see note on passing below),</li>
+        <li>passed by deadline (see note on passing below) and</li>
+        <li>activity completion (when enabled in the site, course and set for the activity).</li>
+    </ul>
+</p>
 <h3>Passing</h3>
 <p>For the assignment, lesson and quiz modules, the notion of passing relies on a "Grade to pass" being set for the grade item in the Gradebook. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">More help...</a></p>';
 $string['what_does_monitored_mean'] = 'What monitored means?';
@@ -161,6 +189,8 @@ $string['what_locked_means'] = 'What locked to deadline means?';
 $string['what_locked_means_help'] = '<p>Where an activity can, in its own settings, have a deadline, and a deadline is set, it is optional to use the deadline of the activity, or to set another separate time used for the activity in the Progress Bar.</p>
 <p>To lock the Progress Bar to an activity\'s deadline it must have a deadline enabled and set. If the deadline is locked, changing the deadline in the activity\'s settings will automatically change the time associated with the activity in the Progress Bar.</p>
 <p>When an activity is not locked to a deadline of the activity, changing the date and time in the Progress Bar settings will not affect the deadline of the activity.</p>';
+$string['what_show_submitted_means'] = 'What show submitted before action means.';
+$string['what_show_submitted_means_help'] = 'Some activities allow students to submit. When students have submitted, but the final action (eg. marking) for the activity has not been completed, the Progress bar will change colour to show a submission has been made.';
 $string['why_display_now'] = 'Why you might want to hide/show the NOW indicator?';
 $string['why_display_now_help'] = '<p>Not all course are focussed on completion of tasks by specific times. Some courses may have an open-enrolment, allowing students to enrol and complete when they can.</p>
 <p>To use the Progress Bar as a tool in such courses, create "Expected by" dates in the far-future and set the "Use NOW" setting to No.</p>';
@@ -175,3 +205,4 @@ $string['why_use_icons_help'] = '<p>You may wish to add tick and cross icons in 
 <p>It may also make the meaning of the block clearer if you believe colours are not intuitive, either for cultural or personal reasons.</p>';
 $string['wiki'] = 'Wiki';
 $string['workshop'] = 'Workshop';
+$string['wrapafter'] = 'When wrapping, limit rows to';

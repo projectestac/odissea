@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Hoja de cálculo Excel';
+$string['timeexported'] = 'Última descarga de este curso';
 $string['xls:publish'] = 'Publicar exportación de calificaciones XLS';
 $string['xls:view'] = 'Usar exportación de calificaciones Excel';

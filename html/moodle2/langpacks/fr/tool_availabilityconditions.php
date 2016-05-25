@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Gérer les restrictions';
-$string['pluginname'] = 'Gestion des conditions de disponibilité';
+$string['pluginname'] = 'Gestion des restrictions d\'accès';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Trieu una variable...';
 $string['clicktoopen'] = 'Feu clic a l\'enllaç {$a} per a obrir el recurs.';
-$string['configdisplayoptions'] = 'Seleccioneu totes les opcions que hagin d\'estar disponibles. Els paràmetres existents no es modificaran. Premeu la tecla CTRL per a fer una selecció múltiple.';
+$string['configdisplayoptions'] = 'Seleccioneu totes les opcions que hagin d\'estar disponibles. Els paràmetres existents no es modificaran. Premeu la tecla CTRL per fer una selecció múltiple.';
 $string['configframesize'] = 'Quan una pàgina web o un fitxer es visualitzen dins d\'un marc, aquest valor és l\'alçada (en píxels) del marc del capdamunt (el que conté la navegació).';
 $string['configrolesinparams'] = 'Habiliteu aquesta opció per a incloure noms de rol personalitzats en la llista de variables disponibles.';
 $string['configsecretphrase'] = 'Aquesta frase secreta s\'utilitza per a generar un codi encriptat que es pot enviar com a paràmetre a alguns servidors. Aquest codi encriptat es genera com a empremta md5 amb l\'adreça IP de l\'usuari concatenada amb la frase secreta. És dir: md5(IP.secretphrase). Teniu en compte que això no és totalment segur perquè l\'adreça IP pot canviar i sovint és compartida per diferents ordinadors.';

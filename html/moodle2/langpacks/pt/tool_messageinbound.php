@@ -83,7 +83,7 @@ $string['messageprocessingfailed'] = 'O email "{$a->subject}" não pôde ser pro
 $string['messageprocessingfailedunknown'] = 'O email "{$a->subject}" não pôde ser processado. Contacte o administrador do site para mais informação.';
 $string['messageprocessingsuccess'] = '{$a->plain}
 
-Se não pretende receber mais notificações, pode editar as suas preferências pessoais de mensagem ao aceder a {$a->messagepreferencesurl} no seu browser.';
+Se não pretende receber mais notificações, pode editar as suas preferências pessoais de mensagem ao aceder a {$a->messagepreferencesurl} no seu navegador.';
 $string['messageprocessingsuccesshtml'] = '{$a->html}
 <p>If you do not wish to receive these notifications in the future, you can <a href="{$a->messagepreferencesurl}">edit your personal messaging preferences</a>.</p>';
 $string['messageprovider:invalidrecipienthandler'] = 'Mensagem para confirmar que uma mensagem de entrada veio de si';

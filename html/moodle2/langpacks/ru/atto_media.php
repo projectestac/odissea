@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['browserepositories'] = 'Просмотр репозиториев...';
+$string['browserepositories'] = 'Выбрать из хранилища...';
 $string['createmedia'] = 'Вставить медиа-файл';
-$string['entername'] = 'Введите имя';
-$string['enterurl'] = 'Введите адрес ссылки';
+$string['entername'] = 'Введите название';
+$string['enterurl'] = 'Введите URL';
 $string['height'] = 'Высота';
 $string['pluginname'] = 'Медиа';
 $string['width'] = 'Ширина';

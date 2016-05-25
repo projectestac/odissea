@@ -118,13 +118,13 @@ $string['errorfilenamemustbezip'] = 'El nom de fitxer que introduïu ha d\'ésse
 $string['errorfilenamerequired'] = 'Cal que introduïu un nom de fitxer vàlid per a aquesta còpia de seguretat';
 $string['errorinvalidformat'] = 'Format de còpia de seguretat desconegut';
 $string['errorinvalidformatinfo'] = 'El fitxer seleccionat no és un fitxer de còpia de seguretat vàlid per a Moodle i no pot ser restaurat.';
-$string['errorminbackup20version'] = 'Aquest fitxer de còpia de seguretat s\'ha creat amb una versió de desenvolupament de Moodle ({$a->backup}). Com a mínim cal la {$a->min}. No es pot restaurar.';
+$string['errorminbackup20version'] = 'Aquest fitxer de còpia de seguretat s\'ha creat amb una versió de desenvolupament de Moodle ({$a->backup}). Com a mínim, cal la {$a->min}. No es pot restaurar.';
 $string['errorrestorefrontpage'] = 'No es permet restaurar res sobre la pàgina principal.';
 $string['executionsuccess'] = 'El fitxer de còpia de seguretat s\'ha creat amb èxit.';
 $string['filealiasesrestorefailures'] = 'La restauració dels àlies ha fallat';
-$string['filealiasesrestorefailures_help'] = 'Els àlies són enllaços simbòlics a altres fitxers, inclosos els emmagatzemats en repositoris externs. En alguns casos, Moodle no els pot restaurar - per exemple, en restaurar la còpia de seguretat en un altre lloc web o quan el fitxer a què es fa referència no existeix.
+$string['filealiasesrestorefailures_help'] = 'Els àlies són enllaços simbòlics a altres fitxers, inclosos els emmagatzemats en repositoris externs. En alguns casos, Moodle no els pot restaurar —per exemple, en restaurar la còpia de seguretat en un altre lloc web o quan el fitxer a què es fa referència no existeix.
 
-Més detalls i el motiu real de l\'errada es poden trobar al fitxer de registre de restauració.';
+Podeu trobar més detalls sobre això i el motiu real de l\'errada al fitxer de registre de restauració.';
 $string['filealiasesrestorefailuresinfo'] = 'Alguns àlies inclosos en el fitxer de còpia de seguretat no poden ser restaurats. La següent llista conté la seva ubicació prevista i el fitxer d\'origen on es referien en el lloc web original.';
 $string['filename'] = 'Nom del fitxer';
 $string['filereferencesincluded'] = 'Les referències de fitxer a continguts externs inclosos en el paquet de còpia de seguretat no funcionaran en altres llocs web.';

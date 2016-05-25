@@ -56,6 +56,7 @@ $string['err_nodescriptionmarkers'] = 'La descricpción para los evaluadores no 
 $string['err_nomaxscore'] = 'La puntuación máxima del criterio no puede dejarse en blanco';
 $string['err_noshortname'] = 'El nombre del criterio no puede dejarse en blanco';
 $string['err_scoreinvalid'] = 'La puntuación dada a {$a->criterianame} no es válida, la puntuación máxima es: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'El criterio para establecer un nombre obliga a incluir menos de 256 caracteres';
 $string['gradingof'] = 'Calificando {$a}';
 $string['guidemappingexplained'] = 'ADVERTENCIA: Esta guía de evaluación puede puntuarse como máximo hasta {$a->maxscore} puntos, pero la puntuación máxima establecida para la actividad es de {$a->modulegrade} puntos.
 

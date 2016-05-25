@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nologindescription'] = 'Plug-in auxiliar que impede os utilizadores de entrar no Moodle e bloqueia o envio de qualquer e-mail a utilizadores nesta situação. Pode ser usado para suspender temporariamente contas de utilizador.';
-$string['pluginname'] = 'Impedir acesso';
+$string['auth_nologindescription'] = 'Plug-in auxiliar que impede os utilizadores de se autenticarem no Moodle e bloqueia o envio de qualquer e-mail a utilizadores nesta situação. Pode ser usado para suspender temporariamente contas de utilizador.';
+$string['pluginname'] = 'Impedir autenticação';

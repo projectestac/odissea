@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bufferwrites_help'] = 'Habilita o deshabilita un periférico de Entrada/Salida (E/S). Habilitar E/S obliga a los comandos de almacenamiento a "cargar" en lugar de ser enviados. Cualquier acción que recupere información causa que esta carga se envíe a una conexión remota. Cerrar o terminar la conexión también hará que los datos cargados se envíen a una conexión remota.';
+$string['clustered'] = 'Habilitar servidores agrupados';
+$string['clusteredheader'] = 'Separar servidores';
 $string['hash'] = 'Método hash';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Por defecto (una a la vez)';
@@ -38,9 +41,37 @@ $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Clave de prefijo';
+$string['prefix_help'] = 'Esto se puede utilizar para crear un "dominio" para sus claves de posición, permitiendo crear múltiples sistemas de almacenaje memcached en una única instalación memcached. No debe contener más de 16 caracteres para evitar problemas de longitud de clave.';
+$string['prefixinvalid'] = 'Prefijo no válido. Sólo puede usar a-z A-Z 0-9-_.';
+$string['serialiser_json'] = 'Serializador de JSON.';
+$string['serialiser_php'] = 'Serializador PHP predeterminado.';
 $string['servers'] = 'Servidores';
+$string['serversclusterinvalid'] = 'Se requiere un servidor cuando la agrupación está activada.';
+$string['servers_help'] = 'Este ajuste configura los servidores utilizados por el adaptador memcache.
+Los servidores deben definirse uno por línea, indicando la dirección de servidor y, opcionalmente, un puerto y peso.
+Si no se proporciona ningún puerto se utilizará el puerto predeterminado (11211).
+
+Por ejemplo:
+<pre>
+server.url.com
+IP address:port
+nombre_servidor:puerto:peso
+</pre>
+
+Si *habilitar servidores agrupados* está habilitado, sólo puede haber un servidor en esta lista. Normalmente será un nombre que siempre determina el equipo local, como 127.0.0.1 o localhost.';
+$string['sessionhandlerconflict'] = 'Advertencia: Un caso memcached ({$a}) se ha configurado para utilizar el mismo servidor memcached como sesiones. Eliminar toda la caché redirigirá a sesiones que estén siendo eliminadas.';
 $string['setservers'] = 'Configurar Servidores';
+$string['setservers_help'] = 'Esta es la lista de servidores que se actualizarán cuando los datos se modifican en la caché. Normalmente el nombre completo de cada servidor en el inventario. **Debe** incluir el servidor especificado en *servidores* encima, incluso si es con un nombre de equipo diferente.
+Los servidores deben definirse uno por línea y consisten en una dirección de servidor y, opcionalmente, un puerto.
+Si no se proporciona ningún puerto se utilizará el puerto predeterminado (11211).
+
+Por ejemplo:
+<pre>
+server.url.com
+ipaddress:port
+</pre>';
 $string['testservers'] = 'Servidores de prueba';
 $string['testservers_desc'] = 'Los servidores de prueba se utilizan para las pruebas unitarias y las pruebas de rendimiento. Es totalmente opcional utilizar servidores de prueba. Cada servidor se define en una por línea mediante una dirección de servidor y opcionalmente un puerto y su relevancia. Si no se especifica un puerto se usa el puerto por defecto (11211).';
 $string['usecompression'] = 'Usar compresión';
 $string['usecompression_help'] = 'Activa o desactiva la compresión. Cuando está activado, los elementos de más de un cierto umbral (actualmente 100 bytes) se comprimen durante el almacenamiento y se descomprime durante la recuperación de forma transparente.';
+$string['useserialiser'] = 'Usar serializador';

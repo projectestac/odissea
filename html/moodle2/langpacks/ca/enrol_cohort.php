@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addgroup'] = 'Afegeix al grup';
 $string['assignrole'] = 'Assigna rol';
 $string['cohort:config'] = 'Configura les instàncies de cohorts';
-$string['cohort:unenrol'] = 'Cancel·la la inscripció dels usuaris suspesos';
+$string['cohort:unenrol'] = 'Anul·la la inscripció dels usuaris amb la inscripció suspesa';
 $string['instanceexists'] = 'La cohort està sincronitzada amb el rol seleccionat';
 $string['pluginname'] = 'Sincronització de la cohort';
 $string['pluginname_desc'] = 'El connector d\'inscripció per cohorts sincronitza els membres de la cohort amb els participants del curs.';

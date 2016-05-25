@@ -71,7 +71,7 @@ $string['chooseauthmethod_help'] = '<p align="center"><b>Autentifikazio-metodoa 
 
 <p>Aldaketa okerren bat egiten baduzu, erabiltzailea ezingo da zerbitzarira sartu; kontua erabat ezabatzea ere gerta daiteke. Beraz, aukera hau zer egiten ari zaren ondo badakizu bakarrik erabili.</p>';
 $string['createpassword'] = 'Sortu pasahitza eta jakinarazi erabiltzaileari';
-$string['createpasswordifneeded'] = 'Pasahitza sortu, beharrezkoa bada.';
+$string['createpasswordifneeded'] = 'Pasahitza sortu eta postaz bidali, beharrezkoa bada.';
 $string['emailchangecancel'] = 'Utzi e-postaren aldaketa';
 $string['emailchangepending'] = 'Egin gabeko aldaketa. Ireki bidalitako esteka hemen {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Zure profilari ezarri nahi diozun e-posta helbidea beste erabiltzaile bat ezarri zaio zuk eskari egin zenuenetik. E-posta helbidea aldatzeko eskaera bertan behera geratu da, beraz; baina, nahi izanez gero beste e-posta helbide batekin egin dezakezu eskaera berria.';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = 'Como parte da recente atualização do Moodle 2.6, o plugin portfolio Box foi desativado. Para reativá-lo, precisa de o configurar novamente como descrito na documentação disponível em {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'Este plugin foi desativado, pois requer configuração conforme descrito na documentação de migração Box APIv1.';
+$string['apiv1migration_message_content'] = 'Como parte da recente atualização do Moodle 2.6, o módulo portfolio Box foi desativado. Para reativá-lo, precisa de o configurar novamente como descrito na documentação disponível em {$a->docsurl}.';
+$string['apiv1migration_message_small'] = 'Este módulo foi desativado, pois requer configuração conforme descrito na documentação de migração Box APIv1.';
 $string['apiv1migration_message_subject'] = 'Informações importantes sobre o módulo Box portfolio';
 $string['clientid'] = 'ID do cliente';
 $string['clientsecret'] = 'Senha do cliente';
@@ -37,7 +37,7 @@ $string['folderlistfailed'] = 'Não foi possível obter a lista de pastas do sit
 $string['missinghttps'] = 'HTTPS necessários';
 $string['missinghttps_help'] = 'O Box só irá funcionar com um site HTTPS ativado.';
 $string['missingoauthkeys'] = 'Falta ID e senha do cliente';
-$string['missingoauthkeys_help'] = 'Não há ID nem senha de cliente configurado para este plugin. Poderá obtê-los a partir da página de desenvolvimento Box.';
+$string['missingoauthkeys_help'] = 'Não há ID nem senha de cliente configurado para este módulo. Poderá obtê-los a partir da página de desenvolvimento Box.';
 $string['newfolder'] = 'Novo ficheiro onde devem ser colocados os ficheiros';
 $string['noauthtoken'] = 'Não foi possível obter um token de autenticação para esta sessão';
 $string['notarget'] = 'Deve indicar uma pasta que já exista ou um novo onde possam ser colocados os ficheiros';
@@ -46,7 +46,7 @@ $string['password'] = 'Senha Box (não será guardada)';
 $string['pluginname'] = 'Box';
 $string['sendfailed'] = 'Não foi possível enviar conteúdo para Box: {$a}';
 $string['setupinfo'] = 'Instruções de configuração';
-$string['setupinfodetails'] = 'Para obter uma chave de acesso e ID inicie sessão no site Box e consulte a página <a href="{$a->servicesurl}">Box developers page</a>. Clique em "Create new application" e crie uma nova aplicação para o seu site Moodle. A chave de acesso e ID são mostradas na secção \'OAuth2 parameters\' do formulário de edição da aplicação. Pode também fornecer outra informação sobre o seu site Moodle.';
+$string['setupinfodetails'] = 'Para obter uma chave de acesso e ID autentique-se no site Box e consulte a página <a href="{$a->servicesurl}">Box developers page</a>. Clique em "Create new application" e crie uma nova aplicação para o seu site Moodle. A chave de acesso e ID são mostradas na secção \'OAuth2 parameters\' do formulário de edição da aplicação. Pode também fornecer outra informação sobre o seu site Moodle.';
 $string['sharedfolder'] = 'Partilhado';
 $string['sharefile'] = 'Partilhar este ficheiro?';
 $string['sharefolder'] = 'Partilhar este nova pasta?';

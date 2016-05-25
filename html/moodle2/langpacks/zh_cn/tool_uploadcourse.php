@@ -38,6 +38,7 @@ $string['cannotreadbackupfile'] = '无法读取备份包';
 $string['cannotrenamecoursenotexist'] = '无法重新命名一个不存在的课程';
 $string['cannotrenameidnumberconflict'] = '无法重命名该课程，编号与现有课程相冲突';
 $string['cannotrenameshortnamealreadyinuse'] = '无法重命名该课程，简称已经被使用';
+$string['cannotupdatefrontpage'] = '禁止修改首页';
 $string['canonlyrenameinupdatemode'] = '只有允许更新时，才能重命名一课程';
 $string['canonlyresetcourseinupdatemode'] = '只有在更新模式时才能重置一课程';
 $string['couldnotresolvecatgorybyid'] = '不能以ID来决定类别';

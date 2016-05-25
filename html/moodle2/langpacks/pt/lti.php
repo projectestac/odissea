@@ -87,9 +87,9 @@ $string['custom_help'] = 'Os parâmetros personalizados são configurações uti
 
 É seguro deixar este campo inalterado, exceto se tiver instruções do fornecedor em contrário.';
 $string['custominstr'] = 'Parâmetros personalizados';
-$string['debuglaunch'] = 'Opção de debug';
+$string['debuglaunch'] = 'Opção de depuração';
 $string['debuglaunchoff'] = 'Arranque normal';
-$string['debuglaunchon'] = 'Arranque em Debug';
+$string['debuglaunchon'] = 'Arrancar depuração';
 $string['default'] = 'Predefinido';
 $string['default_launch_container'] = 'Recipiente de arranque predefinido';
 $string['default_launch_container_help'] = 'O modo de visualização afeta forma como é exibida a ferramenta quando iniciada a partir da disciplina. Alguns modos permitem maior espaço de ecrã disponível para a ferramenta enquanto outros aparentam maior integração com o ambiente Moodle.
@@ -174,7 +174,7 @@ $string['global_tool_types'] = 'Tipos de ferramenta global';
 $string['grading'] = 'Encaminhamento de notas';
 $string['icon_url'] = 'URL do Ícone';
 $string['icon_url_help'] = 'O URL do ícone  permite que o ícone que aparece na lista de disciplinas para essa atividade seja alterado. Em vez de usar o ícone LTI predefinido, o ícone que representa este tipo de atividade pode ser especificado.';
-$string['id'] = 'id';
+$string['id'] = 'ID';
 $string['invalidid'] = 'O ID do LTI está incorreto';
 $string['launch_in_moodle'] = 'Arrancar ferramenta no moodle';
 $string['launchinpopup'] = 'Recipiente de arranque';
@@ -219,7 +219,7 @@ $string['lti:view'] = 'Arrancar atividades Ferramenta LTI';
 $string['main_admin'] = 'Ajuda geral';
 $string['main_admin_help'] = 'As ferramentas externas permitem que os utilizadores do Moodle acedam a recursos de aprendizagem alojados remotamente. Através de um protocolo especial
 de arranque, a ferramenta remota terá acesso a algumas informações gerais sobre o utilizador que iniciou a ferramento. Por exemplo,
-o nome da instituição, id da disciplina, ID do aluno e outras informações, como o nome do aluno ou o endereço de correio eletrónico.
+o nome da instituição, ID da disciplina, ID do aluno e outras informações, como o nome do aluno ou o endereço de correio eletrónico.
 
 Os tipos de ferramentas listadas nesta página são separadas em três categorias:
 
@@ -397,7 +397,7 @@ $string['subplugintype_ltiservice'] = 'Serviço LTI';
 $string['subplugintype_ltiservice_plural'] = 'Serviços LTI';
 $string['subplugintype_ltisource'] = 'Fonte LTI';
 $string['subplugintype_ltisource_plural'] = 'Fontes LTI';
-$string['toggle_debug_data'] = 'Alternar dados de debug';
+$string['toggle_debug_data'] = 'Alternar dados de depuração';
 $string['tool_config_not_found'] = 'A configuração não foi encontrada neste URL.';
 $string['toolproxy'] = 'Registos da ferramenta externa';
 $string['toolproxy_help'] = 'Os registos de ferramenta externa permitem aos administradores de sites Moodle configurar ferramentas externas a partir de um proxy de ferramenta obtido a partir de um fornecedor de ferramenta que suporte LTI 2.0. Um URL de registo fornecido pelo fornecedor de ferramenta consiste em tudo o que é requerido para iniciar o processo. As capacidades e os serviços disponibilizados pelo fornecedor de ferramenta são selecionados ao configurar um novo registo.

@@ -44,6 +44,7 @@ $string['recover'] = 'Recuperar';
 $string['settings'] = 'Opciones de la barra herramienta de Atto';
 $string['subplugintype_atto'] = 'Atto plugin';
 $string['subplugintype_atto_plural'] = 'Atto plugins';
+$string['taskautosavecleanup'] = 'Eliminar de la base de datos borradores caducados automáticamente guardados.';
 $string['textrecovered'] = 'Una versión en borrador de este texto ha sido automáticamente restaurada.';
 $string['toolbarconfig'] = 'Configurar barra de herramientas';
 $string['toolbarconfig_desc'] = 'El listado de plugings y el orden en el que se muestran puede configurarse desde aquí. La configuración consiste en indicar grupos (uno por línea), seguidos de la lista ordenada de plugings para ese grupo. El grupo se separa de los plugins con un símbolo de igual mientras que los plugins se separan por comas. Los nombre de los grupos deben ser únicos y deben indicar lo que los botones tienen en común. Los nombres de los botones y del grupo no deben repetirse y sólo pueden contener caracteres alfanuméricos.';

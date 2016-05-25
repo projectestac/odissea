@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = 'Publicar exportação de notas ODS';
 $string['ods:view'] = 'Usar exportação de notas em OpenOffice';
 $string['pluginname'] = 'Folha de cálculo OpenOffice';
-$string['timeexported'] = 'Última descarregada a partir desta disciplina';
+$string['timeexported'] = 'Última exportação desta disciplina';

@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fontselectlist'] = 'Eskuragarri dauden hizki-motak';
 $string['pluginname'] = 'Letra-mota';
-$string['settings'] = 'Letra-motaren ezarpenak';
+$string['settings'] = 'Letra-tipoen ezarpenak';

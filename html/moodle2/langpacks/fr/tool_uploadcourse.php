@@ -108,7 +108,7 @@ $string['result'] = 'Résultat';
 $string['rowpreviewnum'] = 'Rangées à prévisualiser';
 $string['rowpreviewnum_help'] = 'Le nombre de rangées du fichier CSV à prévisualiser sur la page suivante. Cette option a pour but de limiter la taille de la page.';
 $string['shortnametemplate'] = 'Modèle pour génération des noms abrégés';
-$string['shortnametemplate_help'] = 'Le nom abrégé du cours est affiché dans la piste de navigation. Vous pouvez indiquer ici un modèle pour ces noms abrégés avec des variables (%f = nom complet, %i = identifiant) ou saisir une valeur initiale qui sera incrémentée.';
+$string['shortnametemplate_help'] = 'Le nom abrégé du cours est affiché dans la navigation. Vous pouvez indiquer ici un modèle pour ces noms abrégés avec des variables (%f = nom complet, %i = identifiant) ou saisir une valeur initiale qui sera incrémentée.';
 $string['templatefile'] = 'Fichier de sauvegarde de cours modèle';
 $string['templatefile_help'] = 'Le fichier de cours sélectionné sera utilisé comme modèle pour tous les cours créés.';
 $string['unknownimportmode'] = 'Mode d\'importation inconnu';

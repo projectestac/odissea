@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtoquicklist'] = 'クイックリストを追加する';
-$string['annotationcolour'] = '注釈色';
+$string['annotationcolour'] = 'アノテーション色';
 $string['black'] = '黒';
 $string['blue'] = '青';
 $string['cannotopenpdf'] = 'PDFファイルを開くことができません。ファイルが破損しているか、未サポートのフォーマットです。';
@@ -38,7 +38,7 @@ $string['commentcolour'] = 'コメント色';
 $string['commentcontextmenu'] = 'コメントコンテクストメニュー';
 $string['couldnotsavepage'] = 'ページ {$a} を保存できませんでした。';
 $string['currentstamp'] = 'スタンプ';
-$string['deleteannotation'] = '注釈を削除する';
+$string['deleteannotation'] = 'アノテーションを削除する';
 $string['deletecomment'] = 'コメントを削除する';
 $string['deletefeedback'] = 'フィードバックPDFを削除する';
 $string['downloadablefilename'] = 'feedback.pdf';

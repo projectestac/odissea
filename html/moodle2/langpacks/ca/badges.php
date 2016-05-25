@@ -196,12 +196,12 @@ $string['defaultissuername'] = 'Nom de l\'emissor de la insígnia per defecte';
 $string['defaultissuername_desc'] = 'Nom de l\'autoritat que l\'expedeix.';
 $string['delbadge'] = 'Voleu suprimir la insígnia \'{$a}\'  i eliminar les insígnies ja emeses?';
 $string['delconfirm'] = 'Esteu segur que voleu suprimir la insígnia \'{$a}\' i eliminar les insígnies ja emeses?';
-$string['delcritconfirm'] = 'Esteu segur que voleu suprimir aquest criteri?';
+$string['delcritconfirm'] = 'Confirmeu que voleu suprimir aquest criteri?';
 $string['deletehelp'] = '<p>Suprimir completament una insígnia vol dir que tots els seus registres d\'informació i criteris s\'eliminaran de forma permanent. Els usuaris que hagin guanyat aquesta insígnia ja no hi tindran accés i no es visualitzarà en les seves pàgines de perfil. </p>
 <p>
 Nota: Els usuaris que hagin guanyat aquesta insígnia i l\'hagin promoguda a la seva motxilla externa, conservaran aquesta insígnia en la motxilla externa. No obstant això, no funcionaran els enllaços a les pàgines de criteris i evidències en aquest lloc web.
 </p>';
-$string['delparamconfirm'] = 'Esteu segur que voleu suprimir aquest paràmetre?';
+$string['delparamconfirm'] = 'Confirmeu que voleu suprimir aquest paràmetre?';
 $string['description'] = 'Descripció';
 $string['disconnect'] = 'Desconnecta';
 $string['donotaward'] = 'Actualment, aquesta insígnia no està activa, per la qual cosa no es pot concedir als usuaris. Si voleu atorgar aquesta insígnia, configureu el seu estat a actiu.';

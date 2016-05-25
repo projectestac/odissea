@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['database'] = 'Base de Dados';
 $string['database_help'] = 'Nome da Base de Dados a utilizar';
 $string['extendedmode'] = 'Usar chaves alargadas';
-$string['extendedmode_help'] = 'Se ativado, serão usados conjuntos de chaves completos quando se trabalha com o plugin. Isto não é usado internamente, mas permite pesquisar e investigar manualmente o plugin MongoDB, se assim pretender. Ativar isto irá adicionar uma pequena sobrecarga, o que só deve ser feito se for de facto necessário.';
+$string['extendedmode_help'] = 'Se ativado, serão usados conjuntos de chaves completos quando se trabalha com o módulo. Isto não é usado internamente, mas permite pesquisar e investigar manualmente o plugin MongoDB, se assim pretender. Ativar isto irá adicionar uma pequena sobrecarga, o que só deve ser feito se for de facto necessário.';
 $string['password'] = 'Senha';
 $string['password_help'] = 'Senha do utilizador a ser usada para a ligação';
 $string['pleaseupgrademongo'] = 'Está a usar uma versão antiga da extensão PHP Mongo (< 1.3). O suporte para versões antigas da extensão Mongo será descontinuado no futuro. Por favor, considere atualizar esta extensão.';

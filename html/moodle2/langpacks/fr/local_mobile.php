@@ -25,11 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Accorder les permissions au rôle utilisateur authentifié';
+$string['allowpermissionsdescription'] = 'Modifier le rôle utilisateur authentifié et autoriser la capacité moodle/webservice:createtoken';
 $string['cannotcreatetoken'] = 'La génération automatique de jetons n\'est pas disponible pour les administrateurs du site ; ils doivent créer manuellement un jeton dans le site)';
+$string['checkpluginconfiguration'] = 'Vérifier la configuration du plugin';
+$string['enableadditionalservice'] = 'Activer le service fonctionnalités supplémentaires Moodle Mobile';
+$string['enableadditionalservicedescription'] = 'Ce service doit être activé.';
 $string['local_mobiledescription'] = 'Plugin qui étend les fonctionnalités du service mobile';
 $string['local_mobilesettings'] = 'Réglages';
 $string['local_mobiletypeoflogin'] = 'Sélectionner un type de connexion';
 $string['local_mobiletypeoflogin_key'] = 'Type de connexion';
+$string['local_mobileurlscheme'] = 'Schéma d\'URL pour la connexion via une fenêtre de navigateur.';
+$string['local_mobileurlscheme_key'] = 'Schéma d\'URL';
 $string['loginintheapp'] = 'Via l\'app';
 $string['logininthebrowser'] = 'Via un navigateur (pour les plugins SSO)';
 $string['mod_scorm_protectpackagedownloads'] = 'Protéger le téléchargement des paquetages';

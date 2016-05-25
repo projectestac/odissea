@@ -47,7 +47,7 @@ $string['backgroundrepeatrepeat'] = 'Ripetizione';
 $string['backgroundrepeatrepeatx'] = 'Ripeti orizzontalmente';
 $string['backgroundrepeatrepeaty'] = 'Ripeti verticalmente';
 $string['bodybackground'] = 'Colore di sfondo';
-$string['bodybackground_desc'] = 'Il colore principale da usare per il background';
+$string['bodybackground_desc'] = 'Il colore principale da usare per lo sfondo';
 $string['choosereadme'] = '<p>More è un tema che consente di personalizzare Moodle facilmente e direttamente dall\'interfaccia web.</p>
 <p>Visita le impostazioni amministrative per cambiare i colori, aggiungere un\'immagine di sfondo, un logo e molto altro.</p>';
 $string['configtitle'] = 'More';

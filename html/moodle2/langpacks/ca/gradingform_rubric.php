@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcriterion'] = 'Afegeix criteri';
 $string['alwaysshowdefinition'] = 'Permet als usuaris previsualitzar rúbriques utilitzades al mòdul (en cas contrari les rúbriques sols són visibles després de qualificar)';
 $string['backtoediting'] = 'Torna a l\'edició';
-$string['confirmdeletecriterion'] = 'Esteu segur de voler suprimir aquest criteri?';
+$string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest criteri?';
 $string['confirmdeletelevel'] = 'Esteu segur de voler suprimir aquest nivell ?';
 $string['criterionaddlevel'] = 'Afegeix nivell';
 $string['criteriondelete'] = 'Suprimeix criteri';

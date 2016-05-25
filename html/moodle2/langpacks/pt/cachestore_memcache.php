@@ -61,7 +61,7 @@ Deve incluir o servidor listado acima em Servers, ainda que por um hostname dife
 
 Os servidores devem ser definidos um por linha e consistir num endereço de servidor e, opcionalmente, uma porta.
 
-Se nenhuma porta for defenidadefinida, então será usada a porta padrão (11211).
+Se nenhuma porta for definida, então será usada a porta predefinida (11211).
 
 Por exemplo: <pre> server.url.com ipaddress: port </pre>';
 $string['testservers'] = 'Servidores de teste';

@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addoutcome'] = 'Gehitu helburua';
-$string['courseoutcomes'] = 'Ikastaroaren helburuak';
-$string['coursespecoutcome'] = 'Ikastaroaren helburuak';
-$string['outcomes:view'] = 'Helburuen txostena ikusi';
-$string['pluginname'] = 'Helburuen txostena';
+$string['addoutcome'] = 'Gehitu ikas-emaitza';
+$string['courseoutcomes'] = 'Ikastaroaren ikas-emaitzak';
+$string['coursespecoutcome'] = 'Ikastaroaren ikas-emaitzak';
+$string['outcomes:view'] = 'Ikusi ikas-emaitzen txostena';
+$string['pluginname'] = 'Ikas-emaitzen txostena';
 $string['usedgradeitem'] = 'Kalifikazio-elementuen kopurua';

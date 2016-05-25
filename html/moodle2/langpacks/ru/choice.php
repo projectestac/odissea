@@ -57,7 +57,7 @@ $string['displaymode'] = 'Режим отображения';
 $string['displayvertical'] = 'Отображать вертикально';
 $string['eventanswercreated'] = 'Выбор сделан';
 $string['eventanswerupdated'] = 'Выбор обновлен';
-$string['eventreportviewed'] = 'Просмотрен отчет о выбранных вариантах';
+$string['eventreportviewed'] = 'Отчет о выбранных вариантах просмотрен';
 $string['expired'] = 'Извините эта активность закрыта {$a} и более недоступна';
 $string['full'] = '(Заполнено)';
 $string['havetologin'] = 'Для того, чтобы Вы могли участвовать в опросе, Вам необходимо войти под Вашей учетной записью, либо <a title="Создать новую учетную запись в системе" href="http://www.cdp.tsure.ru/moodle/login/signup.php">создать новую</a>, если у Вас ее нет.';

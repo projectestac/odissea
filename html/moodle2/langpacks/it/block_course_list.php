@@ -31,6 +31,6 @@ $string['configadminview'] = 'Il tipo di vista dell\'amministratore nel blocco "
 $string['confighideallcourseslink'] = 'Rimuove il link "Tutti i corsi" sotto l\'elenco dei corsi. (L\'impostazione non influenza la vista dell\'amministratore)';
 $string['course_list:addinstance'] = 'Aggiungere blocco Corsi';
 $string['course_list:myaddinstance'] = 'Aggiungere blocco Corsi nella pagina My home';
-$string['hideallcourseslink'] = 'Nascondi link Tutti i corsi\'';
+$string['hideallcourseslink'] = 'Nascondi link \'Tutti i corsi\'';
 $string['owncourses'] = 'L\'amministratore vede solo i corsi ai quali è iscritto';
 $string['pluginname'] = 'Corsi';

@@ -32,6 +32,7 @@ $string['errincorrectgradeidnumber'] = 'Fel - id-numret \'{$a}\' från importfil
 $string['errincorrectidnumber'] = 'Fel - ogiltigt id-nummer';
 $string['errincorrectuseridnumber'] = 'Fel - id-numret \'{$a}\' från importfilen matchar inte någon användare.';
 $string['error'] = 'Det uppstår fel';
+$string['errorduringimport'] = 'Ett fel inträffade när vid försök av import: {$a}';
 $string['fileurl'] = 'URL till fjärrfil';
 $string['pluginname'] = 'XML-fil';
 $string['xml:publish'] = 'Publicera betyg som importerats från XML';

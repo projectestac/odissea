@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['editquestionshere'] = 'Редактировать вопросы в этом контексте';
-$string['eventreportviewed'] = 'Просмотрен отчет «Экземпляры вопроса»';
+$string['eventreportviewed'] = 'Отчет «Экземпляры вопроса» просмотрен';
 $string['getreport'] = 'Получить отчет';
 $string['hiddenquestions'] = 'Скрытые';
 $string['intro'] = 'В этом отчете перечисляются все контексты системы, в которых есть вопросы определенного типа.';

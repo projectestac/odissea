@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = 'Publicera export av betyg i formatet ODS';
 $string['ods:view'] = 'Använd OpenDocument-formatet för export av betyg';
 $string['pluginname'] = 'Kalkylblad av formatet OpenDocument';
+$string['timeexported'] = 'Senast nedladdad från denna kurs';

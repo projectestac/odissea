@@ -29,6 +29,15 @@ $string['accept'] = 'Aceptar';
 $string['accepted'] = 'Aceptado';
 $string['accept_grades'] = 'Aceptar calificaciones desde la herramienta';
 $string['accept_grades_admin'] = 'Aceptar calificaciones desde la herramienta';
+$string['accept_grades_admin_help'] = 'Especifique si el proveedor de herramientas puede añadir, actualizar, leer y eliminar las calificaciones vinculadas a las instancias de este tipo de herramienta.
+
+Algunos proveedores de herramientas admiten la opción de notificar las calificaciones en Moodle en función de las acciones realizadas en la herramienta, lo que genera una experiencia más
+integrada.';
+$string['accept_grades_help'] = 'Especifique si el proveedor de herramientas puede añadir, actualizar, leer y eliminar las calificaciones vinculadas solo a esta instancia de la herramienta externa.
+
+Algunos proveedores de herramientas admiten la opción de notificar las calificaciones a Moodle en función de las acciones realizadas en la herramienta, lo que genera una experiencia más integrada.
+
+Tenga en cuenta que este ajuste puede estar invalidado en la configuración de la herramienta.';
 $string['action'] = 'Acción';
 $string['active'] = 'Activar';
 $string['activity'] = 'Actividad';
@@ -37,17 +46,27 @@ $string['addserver'] = 'Añadir un nuevo servidor de confianza';
 $string['addtype'] = 'Añadir configuración de la herramienta externa';
 $string['allow'] = 'Permitir';
 $string['allowinstructorcustom'] = 'Permitir a los instructores añadir parámetros personalizados';
+$string['allowsetting'] = 'Permitir que la herramienta almacene 8 K de ajustes en Moodle';
 $string['always'] = 'Siempre';
 $string['automatic'] = 'Automático, basado en la URL de inicio';
 $string['baseurl'] = 'URL Base';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'Actividades LTI';
+$string['basiclti_base_string'] = 'Cadena base LTI OAuth';
+$string['basiclti_endpoint'] = 'Extremo Iniciar LTI';
+$string['basicltifieldset'] = 'Personalizar conjunto de campos del ejemplo';
 $string['basiclti_in_new_window'] = 'Su actividad se ha abierto en una nueva ventana';
 $string['basicltiintro'] = 'Descripción de la actividad';
 $string['basicltiname'] = 'Nombre de la actividad';
 $string['basiclti_parameters'] = 'Parámetros de inicio LTI';
+$string['basicltisettings'] = 'Ajustes de interoperabilidad básica de herramientas de aprendizaje (LTI)';
 $string['cancel'] = 'Cancelar';
 $string['cancelled'] = 'Cancelado';
+$string['cannot_delete'] = 'No puede eliminar esta configuración de la herramienta.';
+$string['cannot_edit'] = 'No puede editar esta configuración de la herramienta.';
+$string['capabilities'] = 'Capacidades';
+$string['capabilities_help'] = 'Seleccione las capacidades que desee ofrecer al proveedor de la herramienta.  Se puede seleccionar más de una capacidad.';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Haga clic para continuar</a>';
 $string['comment'] = 'Comentario';
 $string['configpassword'] = 'Contraseña de Herramienta Externa por defecto';
 $string['configpreferheight'] = 'Altura preferida por defecto';
@@ -73,12 +92,31 @@ $string['debuglaunchoff'] = 'Inicio normal';
 $string['debuglaunchon'] = 'Depurar el inicio';
 $string['default'] = 'Defecto';
 $string['default_launch_container'] = 'Contenedor de inicio por defecto';
+$string['default_launch_container_help'] = 'El contenedor de inicio afecta a la visualización de la herramienta cuando se inicia desde el curso. Algunos contenedores de inicio proporcionan un mayor espacio de pantalla real a la herramienta, mientras que otros ofrecen una sensación más integrada en el entorno de Moodle.
+
+* **Predeterminado**: utilice el contenedor de inicio que especifique la configuración de la herramienta.
+* **Incrustar**: la herramienta se visualiza en la ventana de Moodle ya existente de una forma similar al resto de tipos de actividades.
+* **Incrustar sin bloques**: la herramienta se muestra en la ventana de Moodle ya existente solo con los controles de navegación en la parte superior de la página.
+* **Nueva ventana**: la herramienta se abre en una nueva ventana que ocupa todo el espacio disponible.
+        En función del navegador que se utilice, se abrirá en una nueva pestaña o en una ventana emergente.
+        Es posible que los navegadores impidan que se abra la nueva ventana.';
 $string['delegate'] = 'Delegar al profesor';
 $string['delete'] = 'Borrar';
 $string['delete_confirmation'] = '¿Está seguro que quiere eliminar esta configuración de la herramienta externa?';
 $string['deletetype'] = 'Eliminar configuración de la herramienta externa';
 $string['display_description'] = 'Mostrar la descripción de la actividad cuando se inicia';
+$string['display_description_help'] = 'Si está seleccionada, se mostrará la descripción de la actividad (especificada previamente) encima del contenido del proveedor de la herramienta.
+
+Se puede utilizar la descripción para proporcionar instrucciones adicionales a los iniciadores de la herramienta, pero no es necesario.
+
+La descripción nunca se muestra cuando el contenedor de inicio de la herramienta se encuentra en una nueva ventana.';
 $string['display_name'] = 'Nombre para mostrar la actividad cuando se inicia';
+$string['display_name_help'] = 'Si está seleccionado, se mostrará el nombre de la actividad (especificado previamente) encima del contenido del proveedor de la herramienta.
+
+Es posible que el proveedor de la herramienta también muestre el título. Esta opción puede evitar que el título de la actividad se muestre dos veces.
+
+El título nunca se muestra cuando el contenedor de inicio de la herramienta se encuentra en una nueva ventana.';
+$string['domain_mismatch'] = 'El dominio de la URL de inicio no coincide con la configuración de la herramienta.';
 $string['donot'] = 'No envíe';
 $string['donotaccept'] = 'No acepte';
 $string['donotallow'] = 'No permita que';
@@ -127,6 +165,7 @@ $string['force_ssl_help'] = 'Seleccionando esta opción fuerza a usar SSL en tod
 Además, todas las solicitudes de servicios Web desde el proveedor de la herramienta utilizarán SSL.
 
 Si se utiliza esta opción, asegúrese de que su sitio Moodle y el proveedor de herramientas son compatibles con SSL';
+$string['generaltool'] = 'Herramienta general';
 $string['global_tool_types'] = 'Tipos de herramientas globales';
 $string['grading'] = 'Rutas de calificación';
 $string['icon_url'] = 'URL de icono';
@@ -156,10 +195,15 @@ $string['lti_errormsg'] = 'La herramienta devolvió el siguiente mensaje de erro
 $string['lti:grade'] = 'Calificar actividades LTI';
 $string['lti_launch_error'] = 'Ha ocurrido un error al iniciar la herramienta externa:';
 $string['lti_launch_error_tool_request'] = '<p> Para solicitar al administrador que complete la configuración de la herramienta, pulse <a href="{$a->admin_request_url}" target="_top">aquí</a>. </p>';
+$string['lti_launch_error_unsigned_help'] = '<p>Este error puede deberse a que falta la clave del consumidor y el secreto compartido para el proveedor de herramientas.</p>
+<p>Si tiene una clave del consumidor y un secreto compartido, puede introducirlos al editar la instancia de la herramienta externa (asegúrese de que estén visibles las opciones avanzadas).</p>
+<p>Otra opción es <a href="{$a->course_tool_editor}">crear una configuración para el proveedor de herramientas al nivel del curso</a>.</p>';
 $string['lti:manage'] = 'Editar actividades LTI';
 $string['lti:requesttooladd'] = 'Proporcionar una herramienta de configuración a los administradores';
+$string['ltisettings'] = 'Ajustes LTI';
 $string['lti_tool_request_added'] = 'Solicitud de configuración de la herramienta enviada de forma correcta. Puede que tenga que contactar con el administrador del sitio para completar la configuración.';
 $string['lti_tool_request_existing'] = 'La configuración para el dominio de la herramienta ya ha sido enviada.';
+$string['ltiunknownserviceapicall'] = 'Llamada de API a servicio LTI desconocido.';
 $string['lti:view'] = 'Ver actividades LTI';
 $string['main_admin'] = 'Ayuda general';
 $string['main_admin_help'] = 'Las herramientas externas permiten a los usuarios de Moodle interactuar directamente con recursos educativos alojados en servidores externos.
@@ -173,6 +217,8 @@ Los tipos de herramienta se clasifican en tres categorías:
 **Pendiente** Estos proveedores no han sido configurados por el administrador. Los docentes podrán usar herramientas de ese proveedor si disponen de una clave de usuario y clave compartida o si no se requieren.
 
 **Rechazado** Estos proveedores están marcados como no disponibles en el sitio Moodle. Los docentes podrán usar herramientas de ese proveedor si disponen de una clave de usuario y clave compartida o si no se requieren.';
+$string['manage_tool_proxies'] = 'Administrar registros de la herramienta externa';
+$string['manage_tools'] = 'Administrar tipos de herramienta externa';
 $string['miscellaneous'] = '';
 $string['misconfiguredtools'] = 'Se detectaron instancias de herramientas mal configuradas';
 $string['missingparameterserror'] = 'La página está mal configurada: "{$a}"';
@@ -191,8 +237,13 @@ Las herramientas externas difieren se los recursos URL en varias formas:
 * Las configuraciones de la herramienta externa crean una relación de confianza entre su sitio Moodle y el provedor de la herramienta, permitiendo la comunicación segura entre ambos';
 $string['modulenameplural'] = 'basicltis';
 $string['modulenamepluralformatted'] = 'Instancias LTI';
+$string['name'] = 'Nombre';
 $string['never'] = 'Nunca';
 $string['new_window'] = 'Nueva ventana';
+$string['noattempts'] = 'No se ha realizado ningún intento en esta instancia de la herramienta';
+$string['no_lti_configured'] = 'No existen herramientas externas activas configuradas.';
+$string['no_lti_pending'] = 'No existen herramientas externas pendientes.';
+$string['no_lti_rejected'] = 'No existen herramientas externas rechazadas.';
 $string['noservers'] = 'No se han encontrado servidores';
 $string['pagesize'] = 'Entregas mostradas por página';
 $string['pending'] = 'Pendiente';
@@ -207,6 +258,7 @@ $string['rejected'] = 'Rechazado';
 $string['resource'] = 'Recurso';
 $string['resourcekey'] = 'Clave de cliente';
 $string['resourcekey_admin'] = 'Clave de cliente';
+$string['resourceurl'] = 'URL del recurso';
 $string['send'] = 'Enviar';
 $string['services'] = 'Servicios';
 $string['setupoptions'] = 'Opciones de configuración';

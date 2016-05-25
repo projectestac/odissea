@@ -420,6 +420,6 @@ $string['whichtries'] = 'Choix des tentatives';
 $string['withselected'] = 'Avec la sélection';
 $string['wrongprefix'] = 'Le préfixe est mal formatté {$a}';
 $string['xoutofmax'] = '{$a->mark} sur {$a->max}';
-$string['yougotnright'] = 'Vous avez séléctionné correctement {$a->num}.';
+$string['yougotnright'] = 'Vous en avez sélectionné correctement {$a->num}.';
 $string['youmustselectaqtype'] = 'Vous devez choisir un type de question.';
 $string['yourfileshoulddownload'] = 'Le téléchargement de votre fichier d\'exportation va commencer. Si rien ne se passe, veuillez <a href="{$a}">cliquer ici</a>.';

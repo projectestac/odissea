@@ -76,4 +76,4 @@ $string['unknowncohort'] = 'Kohorte ezezaguna: ({$a})';
 $string['uploadcohorts'] = 'Eguneratu kohorteak';
 $string['uploadedcohorts'] = 'Eguneratutako  {$a} kohorte';
 $string['useradded'] = 'Erabiltzailea "{$a}" kohortera gehitu da';
-$string['visible'] = 'Agerian jarri';
+$string['visible'] = 'Ikusgai';

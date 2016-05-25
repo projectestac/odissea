@@ -167,8 +167,8 @@ $string['gradingsettings'] = 'Paràmetres de qualificació';
 $string['groupnoallowed'] = 'No teniu permís per accedir a cap grup en aquest taller';
 $string['iamsure'] = 'Si, n\'estic segur(a)';
 $string['info'] = 'Info';
-$string['instructauthors'] = 'Instruccions per la tramesa';
-$string['instructreviewers'] = 'Instruccions per l\'avaluació';
+$string['instructauthors'] = 'Instruccions per a la tramesa';
+$string['instructreviewers'] = 'Instruccions per a l\'avaluació';
 $string['introduction'] = 'Descripció';
 $string['latesubmissions'] = 'Trameses fora de termini';
 $string['latesubmissionsallowed'] = 'Es permeten les trameses fora de termini';
@@ -176,12 +176,12 @@ $string['latesubmissions_desc'] = 'Permet les trameses fora de termini';
 $string['latesubmissions_help'] = 'Si s\'habilita, un autor podrà enviar la seva feina després del termini establert, o durant la fase d\'avaluació. Tanmateix, les trameses fora de termini no poden editar-se.';
 $string['maxbytes'] = 'Mida màxima de fitxer';
 $string['modulename'] = 'Taller';
-$string['modulename_help'] = 'El mòdul d\'activitat del taller permet la recollida, anàlisi i col·laboració dels dels estudiants.
-Els estudiants poden presentar qualsevol contingut digital (fitxers), com documents o fulls de càlcul en Word o LibreOffice , i també es pot escriure text directament en un camp utilitzant l\'editor de text.
+$string['modulename_help'] = 'El mòdul d\'activitat del taller permet la recollida, l\'anàlisi i l\'avaluació entre iguals del treball dels estudiants.
+Els estudiants poden presentar qualsevol contingut digital (fitxers), com ara documents de processador de textos o fulls de càlcul, i també poden escriure text directament en un camp utilitzant l\'editor de text.
 
-Les contribucions seran avaluades mitjançant un formulari d\'avaluació de múltiples criteris definits pel professor. El procés d\'avaluació per parells i la comprensió de la forma d\'avaluació es pot practicar amb exemples de presentacions proporcionades pel professor, així com una avaluació de referència. Els estudiants tenen l\'oportunitat d\'avaluar una o diverses de les presentacions dels seus companys. Els enviaments i revisions poden ser anònimes si cal.
+Les contribucions seran avaluades mitjançant un formulari d\'avaluació de múltiples criteris definits pel professor. El procés d\'avaluació entre iguals i la comprensió del formulari d\'avaluació es pot practicar per endavant amb exemples de trameses proporcionades pel professor, acompanyades d\'una avaluació de referència. Els estudiants tenen l\'oportunitat d\'avaluar una o més trameses dels seus companys. Les trameses i els revisors poden ser anònims, si cal.
 
-Els estudiants obtenen dues notes en una activitat de taller - un qualificació per a la seva presentació i una qualificació per la seva avaluació de les presentacions dels seus companys. Ambdós qualificacions es registren en el llibre de qualificacions.';
+Els estudiants obtenen dues notes en una activitat de taller: una qualificació per la seva tramesa i una qualificació per la seva tasca d\'avaluació de les trameses dels seus companys. Ambdues qualificacions es registren en el llibre de qualificacions.';
 $string['modulenameplural'] = 'Tallers';
 $string['mysubmission'] = 'La meva tramesa';
 $string['nattachments'] = 'Nombre màxim d\'adjuncions a la tramesa';
@@ -197,7 +197,7 @@ $string['noworkshops'] = 'Aquest curs no té tallers';
 $string['noyoursubmission'] = 'Encara no heu enviat la vostra feina';
 $string['nullgrade'] = '-';
 $string['overallfeedback'] = 'Retroalimentació global';
-$string['overallfeedbackfiles'] = 'Nombre màxim d\'adjunts en la retroalimentació global';
+$string['overallfeedbackfiles'] = 'Nombre màxim d\'adjuncions en la retroalimentació global';
 $string['overallfeedbackmaxbytes'] = 'Mida màxima de fitxer';
 $string['overallfeedbackmode'] = 'Mode de retroalimentació global';
 $string['overallfeedbackmode_0'] = 'Inhabilitat';
@@ -285,8 +285,8 @@ $string['taskassesspeers'] = 'Avalueu els companys';
 $string['taskassesspeersdetails'] = 'total: {$a->total}<br />pendents: {$a->todo}';
 $string['taskassessself'] = 'Autoavalueu-vos';
 $string['taskconclusion'] = 'Proporcioneu una conclusió de l\'activitat';
-$string['taskinstructauthors'] = 'Especifiqueu les instruccions per la tramesa';
-$string['taskinstructreviewers'] = 'Especifiqueu les instruccions per l\'avaluació';
+$string['taskinstructauthors'] = 'Especifiqueu les instruccions per a la tramesa';
+$string['taskinstructreviewers'] = 'Especifiqueu les instruccions per a l\'avaluació';
 $string['taskintro'] = 'Establiu la descripció del taller';
 $string['tasksubmit'] = 'Trameteu la vostra feina';
 $string['toolbox'] = 'Eines del taller';

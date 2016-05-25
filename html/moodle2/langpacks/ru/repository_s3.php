@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access_key'] = 'Ключ доступа';
 $string['configplugin'] = 'Настройки Amazon S3';
+$string['endpoint'] = 'Конечная точка Amazon S3';
 $string['needaccesskey'] = 'Необходимо предоставить ключ доступа';
 $string['pluginname'] = 'Amazon S3';
 $string['s3:view'] = 'Просматривать хранилище файлов «Amazon S3»';

@@ -689,6 +689,216 @@ $functions = array(
         'classpath'     => 'local/mobile/externallib.php',
         'capabilities'  => 'mod/glossary:view'
     ),
+
+    'local_mobile_mod_wiki_get_wikis_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_get_wikis_by_courses',
+        'description'   => 'Returns a list of wiki instances in a provided set of courses, if ' .
+                           'no courses are provided then all the wiki instances the user has access to will be returned.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+
+    'local_mobile_mod_wiki_view_wiki' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_view_wiki',
+        'description'   => 'Trigger the course module viewed event and update the module completion status.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+
+    'local_mobile_mod_wiki_view_page' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_view_page',
+        'description'   => 'Trigger the page viewed event and update the module completion status.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+
+    'local_mobile_mod_wiki_get_subwikis' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_get_subwikis',
+        'description'   => 'Returns the list of subwikis the user can see in a specific wiki.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+    'local_mobile_mod_wiki_get_subwiki_pages' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_get_subwiki_pages',
+        'description'   => 'Returns the list of pages for a specific subwiki.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+
+    'local_mobile_mod_wiki_get_page_contents' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_get_page_contents',
+        'description'   => 'Returns the contents of a page.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+
+    'local_mobile_mod_wiki_get_subwiki_files' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_wiki_get_subwiki_files',
+        'description'   => 'Returns the list of files for a specific subwiki.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/wiki:viewpage',
+        'classpath'     => 'local/mobile/externallib.php',
+    ),
+
+    'local_mobile_mod_quiz_get_quizzes_by_courses' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_quizzes_by_courses',
+        'description'   => 'Returns a list of quizzes in a provided list of courses,
+                            if no list is provided all quizzes that the user can view will be returned.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_view_quiz' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_view_quiz',
+        'description'   => 'Trigger the course module viewed event and update the module completion status.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_get_user_attempts' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_user_attempts',
+        'description'   => 'Return a list of attempts for the given quiz and user.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_get_user_best_grade' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_user_best_grade',
+        'description'   => 'Get the best current grade for the given user on a quiz.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_get_combined_review_options' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_combined_review_options',
+        'description'   => 'Combines the review options from a number of different quiz attempts.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_start_attempt' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_start_attempt',
+        'description'   => 'Starts a new attempt at a quiz.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_get_attempt_data' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_attempt_data',
+        'description'   => 'Returns information for the given attempt page for a quiz attempt in progress.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_get_attempt_summary' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_attempt_summary',
+        'description'   => 'Returns a summary of a quiz attempt before it is submitted.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_save_attempt' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_save_attempt',
+        'description'   => 'Processes save requests during the quiz.
+                            This function is intended for the quiz auto-save feature.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_process_attempt' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_process_attempt',
+        'description'   => 'Process responses during an attempt at a quiz and also deals with attempts finishing.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_get_attempt_review' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_attempt_review',
+        'description'   => 'Returns review information for the given finished attempt, can be used by users or teachers.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:reviewmyattempts',
+    ),
+
+    'local_mobile_mod_quiz_view_attempt' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_view_attempt',
+        'description'   => 'Trigger the attempt viewed event.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_view_attempt_summary' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_view_attempt_summary',
+        'description'   => 'Trigger the attempt summary viewed event.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:attempt',
+    ),
+
+    'local_mobile_mod_quiz_view_attempt_review' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_view_attempt_review',
+        'description'   => 'Trigger the attempt reviewed event.',
+        'type'          => 'write',
+        'capabilities'  => 'mod/quiz:reviewmyattempts',
+    ),
+
+    'local_mobile_mod_quiz_get_quiz_feedback_for_grade' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_quiz_feedback_for_grade',
+        'description'   => 'Get the feedback text that should be show to a student who got the given grade in the given quiz.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_get_quiz_access_information' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_quiz_access_information',
+        'description'   => 'Return access information for a given quiz.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_get_attempt_access_information' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_attempt_access_information',
+        'description'   => 'Return access information for a given attempt in a quiz.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
+    'local_mobile_mod_quiz_get_quiz_required_qtypes' => array(
+        'classname'     => 'local_mobile_external',
+        'methodname'    => 'mod_quiz_get_quiz_required_qtypes',
+        'description'   => 'Return the potential question types that would be required for a given quiz.',
+        'type'          => 'read',
+        'capabilities'  => 'mod/quiz:view',
+    ),
+
 );
 
 $services = array(
@@ -737,6 +947,8 @@ $services = array(
             'local_mobile_core_user_remove_user_device',
             'mod_assign_get_assignments',
             'mod_assign_get_submissions',
+            'mod_assign_save_submission',
+            'mod_assign_submit_for_grading',
             'local_mobile_core_completion_update_activity_completion_status_manually',
             'local_mobile_core_completion_get_course_completion_status',
             'local_mobile_core_completion_get_activities_completion_status',
@@ -807,6 +1019,31 @@ $services = array(
             'local_mobile_mod_glossary_get_entries_by_term',
             'local_mobile_mod_glossary_get_entries_to_approve',
             'local_mobile_mod_glossary_get_entry_by_id',
+            'local_mobile_mod_quiz_get_quizzes_by_courses',
+            'local_mobile_mod_quiz_view_quiz',
+            'local_mobile_mod_quiz_get_user_attempts',
+            'local_mobile_mod_quiz_get_user_best_grade',
+            'local_mobile_mod_quiz_get_combined_review_options',
+            'local_mobile_mod_quiz_start_attempt',
+            'local_mobile_mod_quiz_get_attempt_data',
+            'local_mobile_mod_quiz_get_attempt_summary',
+            'local_mobile_mod_quiz_save_attempt',
+            'local_mobile_mod_quiz_process_attempt',
+            'local_mobile_mod_quiz_get_attempt_review',
+            'local_mobile_mod_quiz_view_attempt',
+            'local_mobile_mod_quiz_view_attempt_summary',
+            'local_mobile_mod_quiz_view_attempt_review',
+            'local_mobile_mod_quiz_get_quiz_feedback_for_grade',
+            'local_mobile_mod_quiz_get_quiz_access_information',
+            'local_mobile_mod_quiz_get_attempt_access_information',
+            'local_mobile_mod_quiz_get_quiz_required_qtypes',
+            'local_mobile_mod_wiki_get_wikis_by_courses',
+            'local_mobile_mod_wiki_view_wiki',
+            'local_mobile_mod_wiki_view_page',
+            'local_mobile_mod_wiki_get_subwikis',
+            'local_mobile_mod_wiki_get_subwiki_pages',
+            'local_mobile_mod_wiki_get_page_contents',
+            'local_mobile_mod_wiki_get_subwiki_files',
         ),
         'enabled' => 0,
         'restrictedusers' => 0,

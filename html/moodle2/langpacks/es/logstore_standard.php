@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['buffersize'] = 'Escribir tamaño de buffer';
 $string['pluginname'] = 'Log estándar';
+$string['pluginname_desc'] = 'Un complemento que registra las entradas en una tabla de base de datos de Moodle';
+$string['taskcleanup'] = 'Limpiar la tabla de registros';

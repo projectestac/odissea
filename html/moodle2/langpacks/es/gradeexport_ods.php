@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = 'Publicar exportación de calificaciones ODS';
 $string['ods:view'] = 'Usar exportación de calificaciones OpenDocument';
 $string['pluginname'] = 'Hoja de cálculo OpenOffice';
+$string['timeexported'] = 'Última descarga de este curso';

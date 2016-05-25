@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Очистить формат';
+$string['pluginname'] = 'Очистить форматирование';

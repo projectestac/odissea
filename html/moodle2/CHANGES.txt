@@ -3,6 +3,20 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 16.05.30
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 2.8.12 (Trello #1213)
+- Updated local_mobile to 2.8.310
+- Updated mod/questionaire
+- Updated local/oauth
+- local_agora: Changed default exceptionerror to avoid error in admin pages when datadir is not writable
+- Zipped old log cron and mailer files until they will be deleted (Trello #1234)
+- Updated mod/hotpot
+- Added Quiz access rules: Offline attempts access rule to enable offline quizzes from the app
+- odisseagtafsync: Fixed bug when sending error messages from this tool. Added also some improvements
+- Updated blocks/configurablereports
+
+
 Changes 16.03.14
 ---------------------------------------------------------------------------------------
 - Works.php: Added check for data directories (Trello #1110)

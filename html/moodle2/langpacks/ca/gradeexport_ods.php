@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['ods:publish'] = 'Publicar qualificacions exportades en format ODS';
 $string['ods:view'] = 'Utilitzar exportació de qualificacions en format ODS';
 $string['pluginname'] = 'Full de càlcul OpenOffice';
+$string['timeexported'] = 'Darrera descàrrega des d\'aquest curs';

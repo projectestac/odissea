@@ -35,5 +35,6 @@ $string['layoutgrid'] = 'Rejilla';
 $string['layoutlist'] = 'Lista';
 $string['levelgroup'] = 'Calificación de nivel y definición';
 $string['levels'] = 'Niveles';
+$string['mustbeunique'] = 'Las calificaciones de nivel deben ser únicas siguiendo un criterio';
 $string['mustchooseone'] = 'Tiene que seleccionar uno de estos ítems';
 $string['pluginname'] = 'Rúbrica';

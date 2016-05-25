@@ -57,3 +57,4 @@ $string['ratings'] = 'Calificaciones';
 $string['ratingtime'] = 'Limitar las calificaciones a los elementos con fechas en este rango:';
 $string['rolewarning'] = 'Roles con permiso para calificar';
 $string['rolewarning_help'] = 'Para enviar calificaciones de usuario se requiere el permiso \'moodle/rating:rate\'  y cualquier permiso específico sobre el módulo. Los usuarios asignados a los roles siguientes deberían poder calificar items. La lista de roles puede ser modificada a través del enlace a permisos en el bloque de configuración.';
+$string['scaleselectionrequired'] = 'Cuando seleccione un tipo de agregación de valoraciones también debe elegir si usar una escala o establecer una puntuación máxima.';

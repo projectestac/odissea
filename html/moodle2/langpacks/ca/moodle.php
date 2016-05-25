@@ -238,7 +238,7 @@ $string['categorysubcategoryof'] = '{$a->category} - subcategoria de {$a->parent
 $string['categoryupdated'] = 'S\'ha actualitzat la categoria \'{$a}\'.';
 $string['changedpassword'] = 'S\'ha canviat la contrasenya';
 $string['changepassword'] = 'Canvia la contrasenya';
-$string['changesmadereallygoaway'] = 'Heu fet canvis. Esteu segurs que voleu navegar fóra i perdre els canvis?';
+$string['changesmadereallygoaway'] = 'Heu fet canvis. Confirmeu que voleu navegar fora i perdre els canvis?';
 $string['changessaved'] = 'S\'han desat els canvis';
 $string['check'] = 'Reviseu';
 $string['checkall'] = 'Activa tot';
@@ -293,7 +293,7 @@ $string['completereport'] = 'Informe complet';
 $string['configuration'] = 'Configuració';
 $string['confirm'] = 'Confirma';
 $string['confirmcheckfull'] = 'Esteu absolutament segur que voleu confirmar {$a}?';
-$string['confirmcoursemove'] = 'Esteu segur de voler moure aquest curs ({$a->course}) dins d\'aquesta categoria  ({$a->category})?';
+$string['confirmcoursemove'] = 'Confirmeu que voleu moure aquest curs ({$a->course}) dins d\'aquesta categoria  ({$a->category})?';
 $string['confirmed'] = 'S\'ha confirmat el vostre registre';
 $string['confirmednot'] = 'Encara no s\'ha confirmat el vostre registre!';
 $string['content'] = 'Contingut';
@@ -368,7 +368,7 @@ $string['coursehelpshowgrades'] = 'Habiliteu la visualització del butlletí de 
 $string['coursehidden'] = 'Aquest curs no està disponible actualment per als estudiants';
 $string['courseinfo'] = 'Informació del curs';
 $string['courselegacyfiles'] = 'Fitxers del curs heretats';
-$string['courselegacyfiles_help'] = 'L\'àrea de fitxers del curs proporciona alguna compatibilitat amb Moodle 1.9 i anteriors versions. Tots els fitxers situats en aquesta àrea són accessibles per tots els participants del curs (tant si els enllaceu com si no) i no hi ha manera de saber com seran utilitzats aquests fitxers en Moodle.
+$string['courselegacyfiles_help'] = 'L\'àrea de fitxers del curs proporciona alguna compatibilitat amb Moodle 1.9 i versions anteriors. Tots els fitxers situats en aquesta àrea són accessibles per tots els participants del curs (tant si els enllaceu com si no) i no hi ha manera de saber com seran utilitzats aquests fitxers a Moodle.
 
 Si utilitzeu aquesta àrea per emmagatzemar fitxers de curs, us exposeu a alguns problemes de privacitat i seguretat, així com a la manca de fitxers en còpies de seguretat, importació de cursos, cada vegada que compartiu o re-utilitzeu  continguts. Per tant, es recomana que no utilitzeu aquesta àrea tret que sapigueu el que esteu fent.';
 $string['courselegacyfilesofcourse'] = 'Fitxers del curs heretats: {$a}';
@@ -493,8 +493,8 @@ $string['deletecategoryempty'] = 'Categoria buida';
 $string['deletecheck'] = 'Suprimiu {$a} ?';
 $string['deletecheckfiles'] = 'Esteu absolutament segur que voleu suprimir aquests fitxers?';
 $string['deletecheckfull'] = 'Esteu absolutament segur que voleu suprimir completament {$a}, incloent les seves inscripcions, activitat i altres dades d\'usuari?';
-$string['deletechecktype'] = 'Esteu segurs que voleu suprimir aquest {$a->type}?';
-$string['deletechecktypename'] = 'Esteu segurs que voleu suprimir  {$a->type} "{$a->name}"?';
+$string['deletechecktype'] = 'Confirmeu que voleu suprimir aquest {$a->type}?';
+$string['deletechecktypename'] = 'Confirmeu que voleu suprimir  {$a->type} «{$a->name}»?';
 $string['deletecheckwarning'] = 'Ara suprimireu aquests fitxers';
 $string['deletecomment'] = 'Elimina aquest comentari';
 $string['deletecompletely'] = 'Suprimeix-los completament';
@@ -851,36 +851,26 @@ $string['general'] = 'General';
 $string['geolocation'] = 'latitud - longitud';
 $string['gettheselogs'] = 'Obté aquests registres';
 $string['go'] = 'Endavant';
-$string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
+$string['gpl'] = 'Drets d\'autor (C) 1999 en endavant Martin Dougiamas (http://moodle.com).
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la Llicència Pública General de GNU publicada per la Free Software Foundation, ja sigui la versió 2 de la Llicència o qualsevol altra de posterior (ho deixem a la vostra elecció).
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Aquest programa es distribueix amb l\'esperança de ser útil, però SENSE CAP GARANTIA; sense ni tan sols la garantia implícita de ser COMERCIALITZABLE o APTE PER A UN PROPÒSIT DETERMINAT.
 
-See the Moodle License information page for full details:
+Vegeu la Llicència Pública General de GNU per a més detalls:
 http://docs.moodle.org/dev/License';
-$string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
+$string['gpl3'] = 'Drets d\'autor (C) 1999 en endavant Martin Dougiamas (http://moodle.com).
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la Llicència Pública General de GNU publicada per la Free Software Foundation, ja sigui la versió 3 de la Llicència o qualsevol altra de posterior (ho deixem a la vostra elecció).
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Aquest programa es distribueix amb l\'esperança de ser útil, però SENSE CAP GARANTIA; sense ni tan sols la garantia implícita de ser COMERCIALITZABLE o APTE PER A UN PROPÒSIT DETERMINAT.
 
-See the Moodle License information page for full details:
+Vegeu la Llicència Pública General de GNU per a més detalls:
 http://docs.moodle.org/dev/License';
 $string['gpllicense'] = 'Llicència GPL';
 $string['grade'] = 'Qualificació';
 $string['grades'] = 'Qualificacions';
-$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> ha sigut habilitat per a aquest lloc. Si no carregueu una imatge per al perfil Moodle carregarà una imatge per al vostre perfil des de Gravatar';
+$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> ha estat habilitat per a aquest lloc. Si no carregueu una imatge per al perfil, Moodle carregarà una imatge per al vostre perfil des de Gravatar';
 $string['group'] = 'Grup';
 $string['groupadd'] = 'Afegeix nou grup';
 $string['groupaddusers'] = 'Afegeix la selecció al grup';
@@ -1014,7 +1004,7 @@ $string['lastname'] = 'Cognoms';
 $string['lastnamephonetic'] = 'Cognom - fonètica';
 $string['lastsiteaccess'] = 'Darrer accés al lloc';
 $string['lastyear'] = 'L\'any passat';
-$string['latestlanguagepack'] = 'Comprova el darrer paquet d\'idioma en moodle.org';
+$string['latestlanguagepack'] = 'Comprova el darrer paquet d\'idioma a moodle.org';
 $string['layouttable'] = 'Taula de format';
 $string['leavetokeep'] = 'Deixeu en blanc per tal de mantenir la contrasenya actual';
 $string['legacythemeinuse'] = 'Aquest lloc web es mostra en mode compatibilitat ja que el vostre navegador molt antic.';
@@ -1396,7 +1386,7 @@ $string['passwordchanged'] = 'S\'ha canviat la contrasenya';
 $string['passwordconfirmchange'] = 'Confirma el canvi de la contrasenya';
 $string['passwordextlink'] = 'Seguiu aquest enllaç per recuperar la vostra contrasenya. Us portarà fora de Moodle.';
 $string['passwordforgotten'] = 'Heu oblidat la contrasenya';
-$string['passwordforgotteninstructions'] = 'En primer lloc cal trobar les vostres dades en la base de dades d\'usuaris. Introduïu en el camp apropiat el vostre nom d\'usuari de Moodle <strong>o bé</strong> l\'adreça de correu amb què us vau registrar. No cal que ompliu els dos camps.';
+$string['passwordforgotteninstructions'] = 'En primer lloc, cal trobar les vostres dades a la base de dades d\'usuaris. Introduïu en el camp apropiat el vostre nom d\'usuari de Moodle <strong>o bé</strong> l\'adreça de correu amb què us vau registrar. No cal que ompliu els dos camps.';
 $string['passwordforgotteninstructions2'] = 'Per reiniciar la vostra contrasenya, envieu el vostre nom d\'usuari o el vostre correu electrònic a sota. Si el podem trobar a la base de dades, us enviarem un correu amb instruccions per tornar a entrar.';
 $string['passwordnohelp'] = 'No es pot recuperar la vostra contrasenya. Contacteu amb l\'administrador o administradora.';
 $string['passwordrecovery'] = 'Sí, ajuda\'m a entrar-hi';
@@ -1482,13 +1472,13 @@ $string['refreshingevents'] = 'S\'estan refrescant els esdeveniments';
 $string['registration'] = 'Registre de Moodle';
 $string['registrationcontact'] = 'Contacte públic';
 $string['registrationcontactno'] = 'No, no vull un formulari de contacte en la llista de llocs';
-$string['registrationcontactyes'] = 'Sí, vull un formulari perquè em contactin altres possibles usuaris de Moodle';
+$string['registrationcontactyes'] = 'Sí, vull un formulari perquè altres possibles usuaris de Moodle es posin en contacte amb mi';
 $string['registrationemail'] = 'Notificacions per correu';
-$string['registrationinfo'] = '<p>Aquesta pàgina us permet registrar el vostre lloc  Moodle en moodle.org.  El registre és gratuït.
-El principal benefici del registre és que se us afegirà a una llista de correu de poc tràfic per rebre les notificacions més importants, com ara alertes de seguretat o l\'aparició de noves versions de Moodle.</p>
-<p>Per defecte la vostra informació serà privada i mai no es vendrà o cedirà a ningú més. L\'única raó per recollir aquesta informació és per motius de suport i per ajudar a construir una imatge estadística de la comunitat Moodle com un tot.
+$string['registrationinfo'] = '<p>Aquesta pàgina us permet registrar el vostre lloc Moodle a moodle.org.  El registre és gratuït.
+El principal benefici del registre és que sereu afegit a una llista de correu de poc tràfic per rebre les notificacions més importants, com ara alertes de seguretat o l\'aparició de noves versions de Moodle.</p>
+<p>Per defecte la vostra informació serà privada i mai no es vendrà ni es cedirà a ningú més. L\'única raó de recollir aquesta informació és per motius de suport i per ajudar a construir una imatge estadística de la comunitat Moodle com un tot.
 <p>Si ho trieu així, el nom del vostre lloc, el país i l\'adreça web s\'afegiran a la llista pública de llocs Moodle.</p>
-<p>Tots el registres nous són verificats manualment abans d\'afegir-se a la llista, però un cop afegits podeu modificar el vostre registre i les dades de la llista pública en el moment en què ho desitgeu tot reenviant aquest formulari.</p>';
+<p>Tots el registres nous són verificats manualment abans d\'afegir-se a la llista, però un cop afegits podeu actualitzar el vostre registre i les dades de la llista pública en el moment en què vulgueu fer-ho tot reenviant aquest formulari.</p>';
 $string['registrationinfotitle'] = 'Informació de registre';
 $string['registrationno'] = 'No, no vull rebre correu electrònic';
 $string['registrationsend'] = 'Envia la informació de registre a moodle.org';
@@ -1569,7 +1559,7 @@ $string['rssarticles'] = 'Nombre d\'articles RSS recents';
 $string['rsserror'] = 'Error en la lectura de les dades RSS';
 $string['rsserrorauth'] = 'El vostre enllaç RSS no conté un testimoni d\'autenticació vàlid.';
 $string['rsserrorguest'] = 'Aquest canal utilitza accés de visitant per a accedir a les dades, però l\'usuari visitant no té permís per a llegir les dades. Aneu a la ubicació original d\'aquest canal com a un usuari vàlid i obteniu un nou URL del canal RSS.';
-$string['rsskeyshelp'] = '<p>Per assegurar la seguretat i la privacitat, les URL d\'alimentacions RSS contenen un token especial que identifica l\'usuari a qui van dirigides. Això impedeix que altres usuaris accedeixen a àrees de Moodle a les qual no haurien de tenir accés.</p><p> Aquest token es crea automàticament la primera vegada que accediu a un àrea de Moodle que produeixi una alimentació RSS. Si penseu que el vostre token ha estat compromès d\'alguna forma podeu demanar-ne un altre prement l\'enllaç de reinici. Fixeu-vos que la vostra URL de l\'alimentació RSS actual serà invalidada.</p>';
+$string['rsskeyshelp'] = '<p>Per assegurar la seguretat i la privacitat, els URL de canals de continguts RSS contenen un testimoni (<em>token</em>) especial que identifica l\'usuari a qui van adreçats. Això impedeix que altres usuaris accedeixen a àrees de Moodle a les quals no haurien de tenir accés.</p><p> Aquest testimoni es crea automàticament la primera vegada que accediu a una àrea de Moodle que produeixi un canal de continguts RSS. Si penseu que el vostre testimoni s\'ha posat en perill d\'alguna forma, podeu demanar-ne un altre fent clic a l\'enllaç de reinici. Fixeu-vos que el vostre URL de canals de continguts RSS actual serà invalidat.</p>';
 $string['rsstype'] = 'Canal RSS d\'aquesta activitat';
 $string['saveandnext'] = 'Desa i mostra el següent';
 $string['savechanges'] = 'Desa els canvis';
@@ -1824,7 +1814,7 @@ $string['summary_help'] = '<p>La idea d\'un resum del tema &eacute;s un text mol
 $string['summaryof'] = 'Resum de {$a}';
 $string['supplyinfo'] = 'Més detalls';
 $string['suspended'] = 'Suspès';
-$string['suspendedusers'] = 'Usuaris suspesos';
+$string['suspendedusers'] = 'Usuaris amb la inscripció suspesa';
 $string['switchdevicedefault'] = 'Canvia al tema estàndard.';
 $string['switchdevicerecommended'] = 'Canvia al tema recomanat per al teu dispositiu.';
 $string['switchrolereturn'] = 'Torna al meu rol normal';

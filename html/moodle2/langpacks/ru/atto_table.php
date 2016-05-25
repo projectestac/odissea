@@ -27,14 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcolumnafter'] = 'Вставить столбец после';
 $string['addrowafter'] = 'Вставить строку после';
-$string['both'] = 'Оба';
-$string['caption'] = 'Заголовок';
+$string['both'] = 'Строки и столбцы';
+$string['caption'] = 'Название таблицы';
 $string['columns'] = 'Столбцы';
 $string['createtable'] = 'Создать таблицу';
 $string['deletecolumn'] = 'Удалить столбец';
 $string['deleterow'] = 'Удалить строку';
 $string['edittable'] = 'Редактировать таблицу';
-$string['headers'] = 'Задать заголовки';
+$string['headers'] = 'Разметить заголовки';
 $string['movecolumnleft'] = 'Переместить столбец влево';
 $string['movecolumnright'] = 'Переместить столбец вправо';
 $string['moverowdown'] = 'Переместить строку вниз';

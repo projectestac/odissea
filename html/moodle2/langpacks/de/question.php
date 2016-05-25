@@ -486,6 +486,6 @@ $string['whichtries'] = 'Welche Versuche';
 $string['withselected'] = 'Mit Auswahl';
 $string['wrongprefix'] = 'Falsch formatiertes Präfix-Wort';
 $string['xoutofmax'] = '{$a->mark} von {$a->max}';
-$string['yougotnright'] = 'Sie haben {$a->num} richtig ausgewählt';
-$string['youmustselectaqtype'] = 'Wählen Sie zunächst einen Fragetyp aus';
+$string['yougotnright'] = 'Sie haben {$a->num} richtig ausgewählt.';
+$string['youmustselectaqtype'] = 'Wählen Sie zunächst einen Fragetyp aus.';
 $string['yourfileshoulddownload'] = 'Der Download Ihrer Exportdatei sollte in Kürze beginnen. Falls nicht, dann klicken Sie  <a href="{$a}">hier</a>.';

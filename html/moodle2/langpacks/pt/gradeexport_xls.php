@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Folha de cálculo Excel';
-$string['timeexported'] = 'Última descarregada a partir desta disciplina';
+$string['timeexported'] = 'Última exportação desta disciplina';
 $string['xls:publish'] = 'Publicar exportação de notas XLS';
 $string['xls:view'] = 'Usar exportação de notas Excel';

@@ -70,6 +70,6 @@ $string['thisspecificpage'] = 'Orri zehatz hau';
 $string['undockall'] = 'Banatu guztia';
 $string['undockblock'] = 'Banatu {$a} blokea';
 $string['undockitem'] = 'Banatu elementu hau';
-$string['visible'] = 'Ikusteko moduan';
+$string['visible'] = 'Ikusgai';
 $string['weight'] = 'Pisua';
 $string['wherethisblockappears'] = 'Non agertuko den bloke hau';

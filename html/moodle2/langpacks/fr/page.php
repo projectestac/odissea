@@ -40,6 +40,8 @@ $string['modulename_help'] = 'Le module page permet à l\'enseignant de créer u
 
 L\'avantage d\'utiliser une page plutôt qu\'un fichier réside dans le fait que la ressource est plus accessible, par exemple pour les utilisateurs avec des appareils mobiles, et plus facile à modifier.
 
+Pour des contenus de grande ampleur, il est recommandé d\'utiliser plutôt un livre qu\'une page.
+
 Une page peut être utilisée pour :
 
 * présenter les conditions et objectifs d\'un cours ou d\'un module de formation

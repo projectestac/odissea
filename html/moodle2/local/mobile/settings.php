@@ -31,7 +31,8 @@ if ($hassiteconfig) {
 
     $options = array(
         1 => new lang_string('loginintheapp', 'local_mobile'),
-        2 => new lang_string('logininthebrowser', 'local_mobile')
+        2 => new lang_string('logininthebrowser', 'local_mobile'),
+        3 => new lang_string('loginintheinappbrowser', 'local_mobile'),
     );
 
     $settings->add(new admin_setting_configselect('local_mobile/typeoflogin',
@@ -40,7 +41,7 @@ if ($hassiteconfig) {
 
     $settings->add(new admin_setting_configtext('local_mobile/urlscheme',
                         get_string('local_mobileurlscheme_key', 'local_mobile'),
-                        get_string('local_mobileurlscheme', 'local_mobile'), 'moodlemobile', PARAM_ALPHA));
+                        get_string('local_mobileurlscheme', 'local_mobile'), '', PARAM_NOTAGS));
 
     $settings->add(new admin_setting_heading('local_mobile/mod_scorm', get_string('mod_scorm_settings', 'local_mobile'), ''));
     $settings->add(new admin_setting_configcheckbox('local_mobile/mod_scorm_protectpackagedownloads',

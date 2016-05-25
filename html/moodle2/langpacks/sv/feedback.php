@@ -106,6 +106,8 @@ Du kan se den här:
 $string['emailteachermailhtml'] = '{$a->username} har fullgjort en Egen enkät enligt: <i>\'{$a->feedback}\'</i><br /><br />
 Du kan se den: <a href="{$a->url}">här</a>.';
 $string['entries_saved'] = 'Inläggen har sparats';
+$string['eventresponsedeleted'] = 'Svar borttagen';
+$string['eventresponsesubmitted'] = 'Svar inlämnad';
 $string['export_questions'] = 'Exportera frågor';
 $string['export_to_excel'] = 'Exportera till Excel';
 $string['feedback:addinstance'] = 'Lägg till ny enkät';

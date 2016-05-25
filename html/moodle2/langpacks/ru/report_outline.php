@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventactivityreportviewed'] = 'Просмотрен «Отчет о деятельности» по курсу';
-$string['eventoutlinereportviewed'] = 'Просмотрен «Отчет о деятельности» по пользователю';
+$string['eventactivityreportviewed'] = 'Отчет «Отчет о деятельности» по курсу просмотрен';
+$string['eventoutlinereportviewed'] = 'Отчет «Отчет о деятельности» по пользователю просмотрен';
 $string['neverseen'] = 'Не просмотрена ни разу';
 $string['nologreaderenabled'] = 'ПО для чтения журналов не включено';
 $string['outline:view'] = 'Просматривать отчет «Отчет о деятельности»';

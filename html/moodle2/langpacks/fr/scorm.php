@@ -214,7 +214,7 @@ $string['missingparam'] = 'Un paramètre requis est manquant ou incorrect';
 $string['missing_tag'] = 'Balise {$a->tag} manquante';
 $string['mode'] = 'Mode';
 $string['modulename'] = 'Paquetage SCORM';
-$string['modulename_help'] = 'Un paquetage SCORM est constitué d\'un ensemble de fichiers assemblés suivant un standard défini pour les objets d\'apprentissages. Le module d\'activité SCORM permet de déposer des paquetages SCORM ou AICC sours la forme d\'archives ZIP et de les ajouter à un cours.
+$string['modulename_help'] = 'Un paquetage SCORM est constitué d\'un ensemble de fichiers assemblés suivant un standard défini pour les objets d\'apprentissages. Le module d\'activité SCORM permet de déposer des paquetages SCORM ou AICC sous la forme d\'archives ZIP et de les ajouter à un cours.
 
 Le contenu est en principe affiché sur plusieurs pages avec une navigation permettant de passer d\'une page à l\'autre. Il y a diverses options d\'affichage, dans une fenêtre surgissante, avec une table des matières, avec des boutons de navigation, etc. Les activités SCORM comportent en général des questions et les notes sont enregistrées dans le carnet de notes.
 

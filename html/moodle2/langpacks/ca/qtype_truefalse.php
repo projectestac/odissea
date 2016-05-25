@@ -36,6 +36,6 @@ $string['pluginname'] = 'Vertader/Fals';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de vertader/fals';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de vertader/fals';
 $string['pluginname_help'] = 'En resposta a una pregunta (que pot incloure una imatge), l\'estudiant ha d\'escollir entre vertader i fals.';
-$string['pluginnamesummary'] = 'Un senzill formulari equivalent a una pregunta d\'opcions múltiples, amb únicament les opcions \'Vertader\' i \'Fals\'';
+$string['pluginnamesummary'] = 'Un senzill formulari equivalent a una pregunta d\'opció múltiple únicament amb les opcions «Vertader» i «Fals»';
 $string['selectone'] = 'Trieu-ne una:';
 $string['true'] = 'Vertader';

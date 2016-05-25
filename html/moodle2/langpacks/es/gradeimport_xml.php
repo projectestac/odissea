@@ -32,6 +32,7 @@ $string['errincorrectgradeidnumber'] = 'Error: el número de identificación \'{
 $string['errincorrectidnumber'] = 'Error: número de id incorrecto';
 $string['errincorrectuseridnumber'] = 'Error: el número de identificación \'{$a}\' del fichero de importación no coincide con ningún usuario.';
 $string['error'] = 'Ha habido errores';
+$string['errorduringimport'] = 'Ha ocurrido un error al importar: {$a}';
 $string['fileurl'] = 'URL de archivo remoto';
 $string['pluginname'] = 'Archivo XML';
 $string['xml:publish'] = 'Publicar importación de calificaciones XML';

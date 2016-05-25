@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = '新しいマイ最新バッジブロックを追加する';
 $string['badges:myaddinstance'] = '新しいマイ最新バッジブロックをマイホームに追加する';
-$string['nothingtodisplay'] = 'あなたには表示するバッジがありません。';
+$string['nothingtodisplay'] = 'あなたに表示するバッジはありません。';
 $string['numbadgestodisplay'] = '最新バッジの表示数';
 $string['pluginname'] = 'マイ最新バッジ';

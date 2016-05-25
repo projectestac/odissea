@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['database:unenrol'] = 'Cancel·la la inscripció dels usuaris suspesos';
+$string['database:unenrol'] = 'Anul·la la inscripció dels usuaris amb la inscripció suspesa';
 $string['dbencoding'] = 'Codificació de la base de dades.';
 $string['dbhost'] = 'Servidor de la base de dades';
 $string['dbhost_desc'] = 'Escriu la IP del servidor de la base de dades o el nom del servidor';

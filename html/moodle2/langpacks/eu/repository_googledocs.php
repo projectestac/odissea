@@ -31,3 +31,4 @@ $string['googledocs:view'] = 'Ikusi Google Drive biltegia';
 $string['oauth2upgrade_message_subject'] = 'Google Drive biltegi-pluginari buruzko informazio garrantzitsua';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = 'Sekretua';
+$string['servicenotenabled'] = 'Sarbidea ez dago konfiguratuta. Ziurtatu \'Drive API\' zerbitzua gaituta dagoela.';

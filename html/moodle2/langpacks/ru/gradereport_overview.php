@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradereportviewed'] = 'Просмотрен отчет «Обзорный отчет»';
+$string['eventgradereportviewed'] = 'Отчет «Обзорный отчет» просмотрен';
 $string['overview:view'] = 'Просматривать обзорный отчет';
 $string['pluginname'] = 'Обзорный отчет';

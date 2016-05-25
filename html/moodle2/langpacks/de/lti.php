@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accept'] = 'Annehmen';
+$string['accept'] = 'Akzeptieren';
 $string['accepted'] = 'Akzeptiert';
-$string['accept_grades'] = 'Bewertungen des Tools akzeptieren';
-$string['accept_grades_admin'] = 'Bewertungen des Tools akzeptieren';
+$string['accept_grades'] = 'Bewertungen aus dem Tool akzeptieren';
+$string['accept_grades_admin'] = 'Bewertungen aus dem Tool akzeptieren';
 $string['accept_grades_admin_help'] = 'Legen Sie fest, ob der Tool Provider Bewertungen der Instanzen des Tools hinzufügen, aktualisieren, lesen und löschen darf. Enige tool Provider ermöglichen, dass Bewertungen aus den Aktivitäten im Tool an Moodle berichtet werden. Dadurch erscheint das Tool noch besser integriert.';
 $string['accept_grades_help'] = 'Diese Option legt fest, ob der Tool-Provider Bewertungen hinzufügen, aktualisieren, lesen und löschen darf, die mit der Tool-Instanz zusammenhängen. Manche Tool-Provider ermöglichen die Übernahme von Bewertungen aus den Tool-Aktivitäten und schaffen so eine bessere Integration in Moodle.
 
@@ -36,12 +36,12 @@ Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
 $string['action'] = 'Aktion';
 $string['active'] = 'Aktiv';
 $string['activity'] = 'Aktivität';
-$string['addnewapp'] = 'Externe Anwendung aktivieren';
+$string['addnewapp'] = 'Externes Programm aktivieren';
 $string['addserver'] = 'Neuen vertrauensvollen Server hinzufügen';
 $string['addtype'] = 'Externes Tool - Konfiguration hinzufügen';
 $string['allow'] = 'Erlauben';
-$string['allowinstructorcustom'] = 'Trainer/innen erlauben, angepasste Parameter einzugeben';
-$string['allowsetting'] = 'Tool erlauben 8K Einstellungen in Moodle zu speichern';
+$string['allowinstructorcustom'] = 'Trainer/innen erlauben,  Parameter anzupassen';
+$string['allowsetting'] = 'Dem Tool erlauben, Einstellungen (8 KB) in Moodle zu speichern';
 $string['always'] = 'Immer';
 $string['automatic'] = 'Automatisch, entsprechend der Start-URL';
 $string['baseurl'] = 'Basis URL / Tool Registrierungsname';
@@ -49,7 +49,7 @@ $string['basiclti'] = 'Externes Tool';
 $string['basicltiactivities'] = 'LTI Aktivitäten';
 $string['basiclti_base_string'] = 'LTI OAuth base string';
 $string['basiclti_endpoint'] = 'LTI launch endpoint';
-$string['basicltifieldset'] = 'Angepasste Werte';
+$string['basicltifieldset'] = 'Angepasste Beispielwerte';
 $string['basiclti_in_new_window'] = 'Ihre Aktivität wurde in einem neuen Fenster geöffnet';
 $string['basicltiintro'] = 'Beschreibung der Aktivität';
 $string['basicltiname'] = 'Name der Aktivität';
@@ -63,7 +63,7 @@ $string['capabilities'] = 'Berechtigungen';
 $string['capabilities_help'] = 'Wählen Sie die Berechtigungen, die Sie dem Tool-Anbieter übergeben möchten. Sie können mehrere Optionen auswählen.';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Weiter</a>';
 $string['comment'] = 'Kommentar';
-$string['configpassword'] = 'Standardmäßiges Remote Tool Kennwort';
+$string['configpassword'] = 'Standardmäßiges Kennwort für Remote Tool';
 $string['configpreferheight'] = 'Höhe (Vorgabe)';
 $string['configpreferwidget'] = 'Widget als Standard zum Start setzen';
 $string['configpreferwidth'] = 'Breite (Vorgabe)';
@@ -94,7 +94,7 @@ $string['default_launch_container_help'] = 'Der Startcontainer beeinflusst die A
 * **Einbetten** - Das Tool wird in einem bestehenden Moodle-Fenster angezeigt, ählich wie andere Aktivitäten.
 * **Eingebettet, ohne Blöcke** - Das Tool wird in einem bestehenden Moodle-Fenster ohne Blöcke, nur mit der Navigation im Kopf angezeigt.
 * **Neues Fenster** - Das Tool öffnet in einem neuen Fenster und nutzt den gesamten Raum im Fenster aus. Abhängig vom Browser  wird ein neuer Tab angelegt oder ein neues Fenster geöffnet.';
-$string['delegate'] = 'An Trainer/in weitergeben';
+$string['delegate'] = 'An Trainer/in zuweisen';
 $string['delete'] = 'Löschen';
 $string['delete_confirmation'] = 'Möchten Sie diese Konfiguration für externe Tools wirklich löschen?';
 $string['deletetype'] = 'Konfiguration des externen Tools löschen.';
@@ -130,10 +130,10 @@ Drei Icons erscheinen in der Liste
 * **Bearbeiten** - Typ aus Dropdownmneu auswählen und die Details konfigurieren.
 * **Löschen** - Ausgewählten Typ im Kurs löschen.';
 $string['external_tool_types'] = 'Typen von externen Tools';
-$string['failedtoconnect'] = 'Moodle konnte nicht mit dem System \'{$a}\' kommunizieren';
+$string['failedtoconnect'] = 'Moodle konnte keine Kommunikation mit dem System \'{$a}\' aufbauen.';
 $string['filter_basiclti_configlink'] = 'Konfigurieren Sie die bevorzugten Seiten und deren Kennwörter';
 $string['filter_basiclti_password'] = 'Kennwort ist erforderlich';
-$string['filterconfig'] = 'Externes Tool Administration';
+$string['filterconfig'] = 'LTI Administration';
 $string['filtername'] = 'Externes Tool';
 $string['fixexistingconf'] = 'Verwenden Sie eine bestehende Konfiguration für die fehlerhafte Instanz';
 $string['fixnew'] = 'Neue Konfiguration';
@@ -164,7 +164,7 @@ $string['launchoptions'] = 'Startoptionen';
 $string['launch_url'] = 'Start URL';
 $string['launch_url_help'] = 'Die Start-URL bezeichnet die Webadresse des externen Tools. Sie kann zusätzliche Informationen entalten, welche Ressource geanu aufgerufen werden soll. Genauere Informationen gibt der Tool-Anbieter.
 Falls ein spezieller Tool-Typ gewählt wurde, kann u.U. auf die Start URL verzichtet werden.';
-$string['lti'] = 'Externes Toool';
+$string['lti'] = 'Externes Tool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
 $string['lti:addinstance'] = 'Aktivität \'Externes Tool\' hinzufügen';
 $string['lti_administration'] = 'LTI Administration';
@@ -365,7 +365,7 @@ Die Basis-URL von *quiz.tool.com* hingegen passt für folgendes:
 
 Wenn es zwei unterschiedliche Tool-Konfigurationen für die gleiche Domain gibt, wird diespezifischere verwandt..';
 $string['typename'] = 'Name des Tools';
-$string['typename_help'] = 'Die Toolbezeichnung wird genutzt um den Toolanbieter in Moodle zu identifizieren. Die Bezeichnung wird Trainern gezeigt, wenn sie das Tool in ihren Kursen einbinden.';
+$string['typename_help'] = 'Die Toolbezeichnung wird genutzt, um den Toolanbieter in Moodle zu identifizieren. Die Bezeichnung wird Trainer/innen gezeigt, wenn sie das Tool in ihren Kursen einbinden.';
 $string['types'] = 'Typen';
 $string['update'] = 'Update';
 $string['using_tool_configuration'] = 'Tool-Konfiguration verwenden:';

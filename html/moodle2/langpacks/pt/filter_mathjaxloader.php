@@ -41,7 +41,7 @@ $string['localinstall_help'] = 'A configuração predefinida de MathJax usa a ve
 
 Isto pode ser útil para economizar largura de banda ou por causa das restrições de proxy local.
 
-Para utilizar uma instalação local do MathJax, primeiro faça download da biblioteca MathJax completa a partir de http://www.mathjax.org/. Em seguida, instale-o num servidor web. Por fim, atualize as configurações de filtro MathJax httpurl e/ou httpsurl para apontar para o MathJax.js URL local.';
+Para utilizar uma instalação local do MathJax, primeiro descarregue a biblioteca MathJax completa a partir de http://www.mathjax.org/. Em seguida, instale-o num servidor web. Por fim, atualize as configurações de filtro MathJax httpurl e/ou httpsurl para apontar para o MathJax.js URL local.';
 $string['mathjaxsettings'] = 'Configuração MathJax';
 $string['mathjaxsettings_desc'] = 'A configuração predefinida do MathJax deve adequar-se à maioria dos utilizadores, no entanto, o MathJax é altamente configurável e qualquer uma das opções de configuração predefinida do MathJax podem ser adicionadas aqui.';
 $string['texfiltercompatibility'] = 'Compatibilidade do filtro TeX';

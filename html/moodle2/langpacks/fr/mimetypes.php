@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['application/epub_zip'] = 'Ebook EPUB';
-$string['application/msword'] = 'document Word';
-$string['application/pdf'] = 'document PDF';
+$string['application/msword'] = 'Document Word';
+$string['application/pdf'] = 'Document PDF';
 $string['application/vnd.moodle.backup'] = 'Sauvegarde Moodle';
-$string['application/vnd.ms-excel'] = 'feuille de calcul Excel';
-$string['application/vnd.ms-powerpoint'] = 'présentation Powerpoint';
+$string['application/vnd.ms-excel'] = 'Feuille de calcul Excel';
+$string['application/vnd.ms-powerpoint'] = 'Présentation Powerpoint';
 $string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Présentation Powerpoint';
 $string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Diaporama Powerpoint';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Feuille de calcul Excel';
@@ -43,4 +43,4 @@ $string['document/unknown'] = 'Fichier';
 $string['image'] = 'Image ({$a->MIMETYPE2})';
 $string['text/html'] = 'Document HTML';
 $string['text/plain'] = 'Fichier texte';
-$string['text/rtf'] = 'document RTF';
+$string['text/rtf'] = 'Document RTF';

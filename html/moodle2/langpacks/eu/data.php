@@ -51,7 +51,7 @@ $string['availabletags_help'] = '<p>Markak txantiloian dauden edukigailuak dira.
 <p>Bakarrik &quot;Marka eskuragarriak&quot; izeneko zerrendan dauden markak erabil daitezke txantiloi honetan.</p>';
 $string['availabletodate'] = 'Noiz arte eskuragarri';
 $string['blank'] = 'Hutsik';
-$string['buttons'] = 'Botoiak';
+$string['buttons'] = 'Ekintzak';
 $string['bynameondate'] = 'Egilea eta data: {$a->name} - {$a->date}';
 $string['cancel'] = 'Utzi';
 $string['cannotaccesspresentsother'] = 'Ez duzu beste erabiltzaile batzuen aurretiko ezarpenetara sartzeko baimenik';

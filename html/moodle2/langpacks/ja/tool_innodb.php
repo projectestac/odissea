@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'InnoDBに変換する';
+$string['pluginname'] = 'InnoDB変換';

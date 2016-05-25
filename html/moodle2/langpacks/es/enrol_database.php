@@ -30,6 +30,7 @@ $string['dbencoding'] = 'Codificación de base de datos';
 $string['dbhost'] = 'Host de la base de datos';
 $string['dbhost_desc'] = 'Escriba la dirección IP del servidor de la base de datos o el nombre del host. Use el nombre del sistema DSN si está usando ODBC.';
 $string['dbname'] = 'Nombre de la base de datos';
+$string['dbname_desc'] = 'Dejar en blanco si se utiliza un nombre DSN en la base de datos.';
 $string['dbpass'] = 'Contraseña de la base de datos';
 $string['dbsetupsql'] = 'Comando de configuración de la base de datos';
 $string['dbsetupsql_desc'] = 'Comando SQL para la instalación de bases de datos especiales, a menudo utilizado para establecer la codificación de comunicación - ejemplo para MySQL y PostgreSQL: <em>SET NAMES \'utf8\'</em>';

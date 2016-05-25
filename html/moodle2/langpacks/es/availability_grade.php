@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_items'] = 'Unidad guardada en caché para evaluar la disponibilidad condicional';
+$string['cachedef_scores'] = 'Calificaciones de usuario guardadas en caché para evaluar la disponibilidad condicional';
 $string['description'] = 'Los alumnos deben lograr una calificación específica.';
 $string['error_backwardrange'] = 'Cuando se indica un rango de calificación, el mínimo debe ser inferior que el máximo.';
 $string['error_invalidnumber'] = 'Los rangos de calificación deben indicarse con porcentajes válidos.';

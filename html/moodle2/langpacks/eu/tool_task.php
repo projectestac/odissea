@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asap'] = 'ASAP';
 $string['component'] = 'Osagaia';
+$string['corecomponent'] = 'Sistema';
 $string['default'] = 'Berezkoa';
 $string['disabled'] = 'Desgaituta';
 $string['taskscheduleday'] = 'Eguna';

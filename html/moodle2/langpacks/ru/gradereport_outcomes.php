@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addoutcome'] = 'Добавить показатель';
 $string['courseoutcomes'] = 'Показатели курса';
 $string['coursespecoutcome'] = 'Показатели курса';
-$string['eventgradereportviewed'] = 'Просмотрен отчет «Отчет по показателям»';
+$string['eventgradereportviewed'] = 'Отчет «Отчет по показателям» просмотрен';
 $string['outcomes:view'] = 'Просматривать отчет по показателям';
 $string['pluginname'] = 'Отчет по показателям';
 $string['usedgradeitem'] = 'Количество оценок';

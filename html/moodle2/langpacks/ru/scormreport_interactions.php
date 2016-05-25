@@ -31,4 +31,4 @@ $string['responsex'] = 'Ответ {$a}';
 $string['rightanswerx'] = 'Правильный ответ {$a}';
 $string['summaryofquestiontext'] = 'Обзор вопроса';
 $string['summaryofresponse'] = 'Обзор ответов';
-$string['summaryofrightanswer'] = 'Обзор правильного ответа';
+$string['summaryofrightanswer'] = 'Резюме правильного ответа';

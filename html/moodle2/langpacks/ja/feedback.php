@@ -105,13 +105,13 @@ $string['edit_item'] = '質問を編集する';
 $string['edit_items'] = '質問を編集する';
 $string['email_notification'] = '送信通知を有効にする';
 $string['email_notification_help'] = 'この設定を有効にした場合、フィードバック送信に関して教師にメール通知されます。';
-$string['emailteachermail'] = '{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。
+$string['emailteachermail'] = '{$a->username} がフィードバック活動「 {$a->feedback} 」を完了しました。
 
-あなたはここで閲覧できます:
+あなたはここで閲覧することができます:
 
 {$a->url}';
-$string['emailteachermailhtml'] = '<p>{$a->username} がフィードバック「 {$a->feedback} 」を完了しました。</p>
-<p>あなたは<a href="{$a->url}">ここで閲覧</a>できます。</p>';
+$string['emailteachermailhtml'] = '<p>{$a->username} がフィードバック活動「 {$a->feedback} 」を完了しました。</p>
+<p>あなたは<a href="{$a->url}">ここ</a>で閲覧することができます。</p>';
 $string['entries_saved'] = 'あなたの回答が保存されました。ありがとうございます。';
 $string['eventresponsedeleted'] = '回答が削除されました。';
 $string['eventresponsesubmitted'] = '回答が送信されました。';
@@ -278,14 +278,14 @@ $string['textfield'] = '短文回答';
 $string['textfield_maxlength'] = '最大文字数';
 $string['textfield_size'] = 'テキストフィールド幅';
 $string['there_are_no_settings_for_recaptcha'] = 'CAPTCHAが設定されていません。';
-$string['this_feedback_is_already_submitted'] = 'あなたはすでにこのフィードバックを完了しています。';
+$string['this_feedback_is_already_submitted'] = 'あなたはすでにこの活動を完了しています。';
 $string['typemissing'] = '「type」の値がありません。';
 $string['update_item'] = '質問の変更を保存する';
 $string['url_for_continue'] = '次の活動にリンクする';
 $string['url_for_continue_help'] = 'フィードバック送信後、デフォルトではコースページにリンクされる「続ける」ボタンが表示されます。ここに活動のURLを入力した場合、代わりに次の活動へリンクすることができます。';
 $string['use_one_line_for_each_value'] = '<br />1行に1つの回答を入力してください!';
 $string['use_this_template'] = 'このテンプレートを使用する';
-$string['using_templates'] = 'テンプレートの使用';
+$string['using_templates'] = 'テンプレートを使用する';
 $string['vertical'] = '垂直';
 $string['viewcompleted'] = '完了済みフィードバック';
-$string['viewcompleted_help'] = 'あなたはコースまたは質問により検索可能な完了済みフィードバックフォームを閲覧することができます。フィードバックの回答はExcelにエクスポートすることができます。';
+$string['viewcompleted_help'] = 'あなたはコースまたは質問により検索することのできる完了済みフィードバックフォームを閲覧することができます。フィードバックの回答はExcelにエクスポートすることができます。';

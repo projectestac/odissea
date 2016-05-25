@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['browserepositories'] = 'Просмотр репозиториев...';
-$string['createlink'] = 'Создать ссылку';
-$string['enterurl'] = 'Ввести адрес ссылки';
+$string['browserepositories'] = 'Выбрать из хранилища...';
+$string['createlink'] = 'Создать гиперссылку';
+$string['enterurl'] = 'Введите URL';
 $string['openinnewwindow'] = 'Открывать в новом окне';
-$string['pluginname'] = 'Ссылка';
-$string['unlink'] = 'Удалить ссылку';
+$string['pluginname'] = 'Гиперссылка';
+$string['unlink'] = 'Удалить гиперссылку';

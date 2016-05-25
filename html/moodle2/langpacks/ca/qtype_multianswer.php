@@ -49,7 +49,7 @@ $string['questiondeleted'] = 'Pregunta esborrada';
 $string['questioninquiz'] = '<ul>
  <li>afegeix o esborra preguntes;</li>
  <li>canvia l\'ordre de les preguntes al text;</li>
- <li>canvia el tipus de la pregunta (numèrica, resposta breu, selecció múltiple). </li>
+ <li>canvia el tipus de la pregunta (numèrica, resposta breu, opció múltiple). </li>
 </ul>';
 $string['questionnotfound'] = 'No es pot trobar una pregunta o una seva part #{$a}';
 $string['questionsadded'] = 'Pregunta afegida';

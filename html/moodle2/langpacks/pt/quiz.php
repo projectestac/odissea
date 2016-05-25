@@ -119,7 +119,7 @@ $string['bothattempts'] = 'Mostrar todos os alunos';
 $string['browsersecurity'] = 'Segurança do Navegador';
 $string['browsersecurity_help'] = 'Se escolher a opção "Ecrã inteiro em janela pop-up e segurança JavaScript",
 
-* O teste apenas começa se o aluno tiver um browser que suporte JavaScript
+* O teste apenas começa se o aluno tiver um navegador que suporte JavaScript
 * O teste surge num ecrã inteiro numa janela pop-up que sobrepõe todas as outras janelas, não havendo possibilidade de aceder a outros controlos de navegação
 * Os alunos são impedidos de utilizar opções como copiar e colar';
 $string['calculated'] = 'Calculada';
@@ -314,7 +314,7 @@ $string['enabled'] = 'Ativado';
 $string['endtest'] = 'Terminar tentativa';
 $string['erroraccessingreport'] = 'Não pode consultar este relatório';
 $string['errorinquestion'] = 'Erro na pergunta';
-$string['errormissingquestion'] = 'Erro: A pergunta com id {$a} está em falta no sistema.';
+$string['errormissingquestion'] = 'Erro: A pergunta com ID {$a} está em falta no sistema.';
 $string['errornotnumbers'] = 'Erro - as respostas têm de ser numéricas';
 $string['errorunexpectedevent'] = 'Foi encontrado um código de evento inesperado {$a->event} para a pergunta {$a->questionid} na tentativa {$a->attemptid}.';
 $string['essay'] = 'Desenvolvimento';
@@ -428,18 +428,18 @@ $string['info'] = 'Informação';
 $string['infoshort'] = 'i';
 $string['inprogress'] = 'Em progresso';
 $string['introduction'] = 'Descrição';
-$string['invalidattemptid'] = 'Não existe nenhuma tentativa com esse id';
-$string['invalidcategory'] = 'O id da categoria não é válido';
+$string['invalidattemptid'] = 'Não existe nenhuma tentativa com esse ID';
+$string['invalidcategory'] = 'O ID da categoria não é válido';
 $string['invalidnumericanswer'] = 'Uma das respostas introduzidas não é um número válido.';
 $string['invalidnumerictolerance'] = 'Uma das margens introduzidas não é um número válido.';
-$string['invalidoverrideid'] = 'O id da exceção não é válido';
-$string['invalidquestionid'] = 'O id da pergunta não é válido';
-$string['invalidquizid'] = 'O id do teste não é válido';
+$string['invalidoverrideid'] = 'O ID da exceção não é válido';
+$string['invalidquestionid'] = 'O ID da pergunta não é válido';
+$string['invalidquizid'] = 'O ID do teste não é válido';
 $string['invalidsource'] = 'A origem não é aceite como válida.';
 $string['invalidsourcetype'] = 'O tipo de origem não é válido';
-$string['invalidstateid'] = 'O id do estado não é válido';
+$string['invalidstateid'] = 'O ID do estado não é válido';
 $string['lastanswer'] = 'A sua última resposta foi';
-$string['layout'] = 'Aparência';
+$string['layout'] = 'Estrutura';
 $string['layoutasshown'] = 'Pré-visualização da aparência';
 $string['layoutasshownwithpages'] = 'Pré-visualização da aparência. <small>(Uma nova página é inserida automaticamente a cada {$a} perguntas inseridas.)</small>';
 $string['layoutshuffledandpaged'] = 'Perguntas baralhadas aleatoriamente com {$a} perguntas exibidas por página';
@@ -785,7 +785,7 @@ $string['savenosubmit'] = 'Guardar, sem submeter';
 $string['saveoverrideandstay'] = 'Guardar e adicionar outra exceção';
 $string['savequiz'] = 'Guardar todo o teste';
 $string['saving'] = 'A guardar';
-$string['savingnewgradeforquestion'] = 'A guardar nova nota para a pergunta id {$a}.';
+$string['savingnewgradeforquestion'] = 'A guardar nova nota para a pergunta ID {$a}.';
 $string['savingnewmaximumgrade'] = 'A guardar nova nota máxima.';
 $string['score'] = 'Nota bruta';
 $string['scores'] = 'Avaliações';

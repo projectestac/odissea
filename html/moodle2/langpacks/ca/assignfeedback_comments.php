@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Comentaris en línia';
-$string['commentinlinedefault'] = 'Comentarisen línia per defecte';
+$string['commentinlinedefault'] = 'Comentaris en línia per defecte';
 $string['commentinlinedefault_help'] = 'Si activeu aquesta opció, la funció de comentaris en línia s\'habilitarà per defecte en totes les tasques noves.';
 $string['commentinline_help'] = 'Si activeu aquesta opció, el text de la tramesa es copiarà durant la qualificació en el camp de comentaris de retroacció, de manera que resulti fàcil inserir comentaris en línia (utilitzant un color diferent, potser) o editar el text original.';
 $string['default'] = 'Habilitat per defecte';

@@ -199,7 +199,7 @@ $string['confirmremovequestion'] = 'Esteu segur que voleu suprimir aquesta pregu
 $string['confirmserverdelete'] = 'Esteu segur que voleu suprimir el servidor <b>{$a}</b> de la llista?';
 $string['confirmstartattemptlimit'] = 'Nombre d\'intents permesos: {$a}. Ara iniciareu un nou intent. Voleu continuar?';
 $string['confirmstartattempttimelimit'] = 'Aquest qüestionari té un límit de temps i està limitat a {$a} intent/s. Ara començareu un nou intent. Voleu continuar?';
-$string['confirmstarttimelimit'] = 'Aquest qüestionari té un límit de temps. Segur que voleu començar?';
+$string['confirmstarttimelimit'] = 'Aquest qüestionari té un límit de temps. Confirmeu que voleu començar?';
 $string['connectionerror'] = 'S\'ha perdut la connexió a la xarxa. (Ha fallat l\'autodesament.)
 
 Preneu nota de les respostes introduïdes en aquesta pàgina en els últims minuts i, després, procureu tornar a connectar-vos-hi.
@@ -465,21 +465,21 @@ $string['missingcorrectanswer'] = 'S\'ha d\'especificar la resposta correcta';
 $string['missingitemtypename'] = 'Falta el nom';
 $string['missingquestion'] = 'Sembla que aquesta pregunta ja no existeix';
 $string['modulename'] = 'Qüestionari';
-$string['modulename_help'] = 'El mòdul de qüestionaris permet al professor crear qüestionaris amb preguntes de tipus diversos, que inclouen les preguntes d\'opció múltiple, d\'aparellament, de resposta breu i numèriques.
+$string['modulename_help'] = 'El mòdul de qüestionaris permet al professor crear qüestionaris amb preguntes de diversos tipus, com ara d\'opció múltiple, vertader/fals, aparellament, resposta breu i numèriques.
 
 El professor pot permetre múltiples intents del qüestionari, amb les preguntes barrejades o escollides a l\'atzar d\'entre un banc de preguntes. Es pot establir un límit de temps.
 
-Cada intent es puntua automàticament, amb l\'excepció de les preguntes de tipus «assaig», i la nota es registra al llibre de qualificacions.
+Cada intent es puntua automàticament, amb l\'excepció de les preguntes de tipus «resposta oberta», i la nota es registra al llibre de qualificacions.
 
-El professor pot decidir si es mostren als alumnes (i quan) els comentaris, la retroacció i les respostes correctes.
+El professor pot decidir si es mostren als alumnes (i quan) comentaris, retroacció i les respostes correctes.
 
 Els qüestionaris es poden utilitzar:
 
 * Com a exàmens del curs.
 * Com a minitests després de tasques de lectura, o al final d\'un tema.
 * Com a examen de repàs si s\'utilitzen preguntes de qüestionaris anteriors.
-* Per a oferir retroacció immediata sobre les capacitats dels alumnes.
-* Per a l\'autoavaluació.';
+* Per oferir retroacció immediata sobre les capacitats de l\'alumne.
+* Per a autoavaluació.';
 $string['modulenameplural'] = 'Qüestionaris';
 $string['moveselectedonpage'] = 'Mou les preguntes seleccionades a la pàgina: {$a}';
 $string['multichoice'] = 'Opció múltiple';

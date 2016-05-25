@@ -180,7 +180,7 @@ $string['configintro'] = 'Hemen ezartzen dituzun baloreek definituko dituzte eza
 $string['configmaximumgrade'] = 'Galdetegiak izango duen lehenetsitako kalifikazioa.';
 $string['confignavmethod'] = 'Nabigazio librean, galderak edozein ordenatan erantzun daitezke. Sekuentzialean, galderak ordena hertsian erantzun behar dira.';
 $string['confignewpageevery'] = 'Galderak galdetegira gehitzeko unean, orri-jauziak sartuko dira hemen aukeratutakoaren arabera.';
-$string['configoutcomesadvanced'] = 'Aukera hau gaituta badago, helburuak azalduko dira galdetegiaren edizio-formularioaren ezarpen aurreratuetan.';
+$string['configoutcomesadvanced'] = 'Aukera hau gaituta badago, ikas-emaitzak azalduko dira galdetegiaren edizio-formularioaren ezarpen aurreratuetan.';
 $string['configpenaltyscheme'] = 'Egokitze-moduan erantzun okerrei ezarritako penalizazioa.';
 $string['configpopup'] = 'Behartu saiakera popup leiho batean irekitzera, eta, galdetegiaren saiakeretan, JavaScript trikimailuen bidez, copy, paste eta antzeko ekintzen erabilera murriztu.';
 $string['configrequirepassword'] = 'Ikasleek pasahitz hau idatzi behar dute galdetegiari erantzuten hasi hala izateko.';
@@ -567,7 +567,7 @@ Orri-jauziak ezartzeko galdera jakin baten ondoren, galderen aldamenean dauden k
 Galderak orri-kopuru jakin baten artean banatzeko, "Berriz orrikatu" botoian klikatu eta aukeratu orri bakoitzeko nahi den galdera-kopurua.';
 $string['orderingquiz'] = 'Ordenatu eta orrikatu';
 $string['orderingquizx'] = 'Ordenatu eta orrikatu: {$a}';
-$string['outcomesadvanced'] = 'Helburuak ezarpen aurreratuak dira';
+$string['outcomesadvanced'] = 'Ikas-emaitzak ezarpen aurreratuak dira';
 $string['outof'] = 'Emaitza:{$a->grade} eta gehienekoa, berriz, {$a->maxgrade}';
 $string['outofpercent'] = 'Emaitza:{$a->grade} eta gehienekoa, berriz, {$a->maxgrade} (%{$a->percent})';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';

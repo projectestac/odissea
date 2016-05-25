@@ -304,7 +304,7 @@ $string['cookiesenabled_help'] = 'Moodle benutzt zwei Cookies:
 
 Das wichtige Cookie heißt <b>MoodleSession</b>. Dieses Cookie muss erlaubt sein, damit Ihr Login bei den Zugriffen von Seite zu Seite erhalten bleibt. Beim Abmelden oder beim Beenden des Webbrowsers wird das Cookie automatisch gelöscht.
 
-Das andere Cookie dient der Bequemlichkeitund heißt standardmäßig <b>MoodleID</b>. Dieses Cookie speichert den Anmeldenamen im Webbrowser und bleibt auch nach dem Abmelden erhalten. Beim nächsten Login ist dann Ihr Anmeldename bereits eingetragen. Dieses Cookie können Sie verbieten, müssen dann aber bei jedem Login Ihren Anmeldenamen neu eingeben.';
+Das andere Cookie dient der Bequemlichkeit und heißt standardmäßig <b>MoodleID</b>. Dieses Cookie speichert den Anmeldenamen im Webbrowser und bleibt auch nach dem Abmelden erhalten. Beim nächsten Login ist dann Ihr Anmeldename bereits eingetragen. Dieses Cookie können Sie verbieten, müssen dann aber bei jedem Login Ihren Anmeldenamen neu eingeben.';
 $string['cookiesnotenabled'] = 'Cookies sind in Ihrem Browser leider deaktiviert';
 $string['copy'] = 'Kopieren';
 $string['copyasnoun'] = 'Kopie';

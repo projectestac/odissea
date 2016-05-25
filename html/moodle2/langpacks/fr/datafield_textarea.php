@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['maxbytes'] = 'Taille maximale en octets des fichiers incorporés';
+$string['maxbytes'] = 'Taille maximale en octets des fichiers intégrés';
 $string['maxbytes_desc'] = 'Si cette valeur est 0, la taille sera illimitée par défaut.';
 $string['pluginname'] = 'Zone de texte';

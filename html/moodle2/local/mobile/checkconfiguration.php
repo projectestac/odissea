@@ -93,7 +93,7 @@ $url = new moodle_url("/admin/roles/define.php?action=edit&roleid=" . $CFG->defa
 $row[0] = "4. " . html_writer::tag('a', get_string('allowpermissions', 'local_mobile'), array('href' => $url));
 $status = html_writer::tag('span', get_string('no'), array('class' => 'statuscritical'));
 if ($DB->record_exists('role_capabilities', array('permission' => CAP_ALLOW, 'roleid' => $CFG->defaultuserroleid,
-                                                    'capability' => 'moodle/webservice:createmobiletoken'))) {
+                                                    'capability' => 'moodle/webservice:createtoken'))) {
     $status = get_string('yes');
 }
 $row[1] = $status;

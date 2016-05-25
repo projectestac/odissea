@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ren textfil';
+$string['timeexported'] = 'Senast nedladdad från denna kurs';
 $string['txt:publish'] = 'Publicera export av betyg i formatet TXT';
 $string['txt:view'] = 'Använd en ren textfil för export av betyg';

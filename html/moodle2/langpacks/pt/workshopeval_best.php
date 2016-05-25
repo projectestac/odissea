@@ -32,5 +32,5 @@ $string['comparisonlevel3'] = 'rigorosa';
 $string['comparisonlevel5'] = 'justa';
 $string['comparisonlevel7'] = 'vaga';
 $string['comparisonlevel9'] = 'muito vaga';
-$string['configcomparison'] = 'Valor padrão do fator que influencia a avaliação da classificação pelo avaliador.';
+$string['configcomparison'] = 'Valor predefinido do fator que influencia a avaliação da classificação pelo avaliador.';
 $string['pluginname'] = 'Comparar com a melhor avaliação';

@@ -92,7 +92,7 @@ $string['testplanexplanation'] = 'Cet outil crée un plan de test JMeter, ainsi 
 
 Le plan de test est conçu pour fonctionner avec {$a}, qui rend plus simple le déroulement du plan de test dans un environnement Moodle spécifique, récolte les informations des tests et compare les résultats. Vous devrez donc le télécharger et utiliser son script test_runner.sh ou suivre les instructions d\'installation et d\'utilisation.
 
-Vous devez également définir un mot de passe pour les utilisateurs de cours dans le fichier config.php (p. ex. $CFG->tool_generator_users_password = \'moodle\';). Il n\'y a pas de valeur par défaut pour ce mot de passe, afin d\'éviter l\'utilisation involontaire de l\'outil. Vous devez aussi utiliser l\'option de mise à jour des mots de passe si vous utilisateurs de cours ont d\'autres mots de passe ou s\'ils ont été générés par tool_generator, mais sans définir une valeur pour $CFG->tool_generator_users_password.
+Vous devez également définir un mot de passe pour les utilisateurs de cours dans le fichier config.php (p. ex. $CFG->tool_generator_users_password = \'moodle\';). Il n\'y a pas de valeur par défaut pour ce mot de passe, afin d\'éviter l\'utilisation involontaire de l\'outil. Vous devez aussi utiliser l\'option de mise à jour des mots de passe si vos utilisateurs de cours ont d\'autres mots de passe ou s\'ils ont été générés par tool_generator, mais sans définir une valeur pour $CFG->tool_generator_users_password.
 
 Il est partie intégrante de tool_generator, et fonctionne donc bien avec les générateurs de cours et de site. Il peut également être utilisé avec tous les cours qui contiennent au moins :
 

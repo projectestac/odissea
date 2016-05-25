@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Full de càlcul Excel';
+$string['timeexported'] = 'Darrera descàrrega des d\'aquest curs';
 $string['xls:publish'] = 'Publicar qualificacions exportades en format Excel';
 $string['xls:view'] = 'Utilitzar qualificacions exportades en format Excel';

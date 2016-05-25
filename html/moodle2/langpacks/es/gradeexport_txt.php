@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Archivo en texto plano';
+$string['timeexported'] = 'Última descarga de este curso';
 $string['txt:publish'] = 'Publicar exportación de calificaciones TXT';
 $string['txt:view'] = 'Usar exportación de calificaciones en texto';

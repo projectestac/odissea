@@ -1233,13 +1233,13 @@ $string['newusernewpasswordtext'] = 'Kaixo {$a->firstname},
 Kontu berria ireki zaizu \'{$a->sitename}\'-(e)n eta behin behineko pasahitza ezarri zaizu.
 
 Sartzeko informazioa hauxe duzu:
-erabiltzailea: {$a->username}
-pasahitza:{$a->newpassword}
-(aldatu egin beharko duzu pasahitza lehen aldiz sartzen zarenean)
+   erabiltzailea: {$a->username}
+   pasahitza: {$a->newpassword}
+             (aldatu egin beharko duzu pasahitza lehen aldiz sartzen zarenean)
 
 \'{$a->sitename}\' erabiltzen hasteko, sakatu {$a->link}
 
-E-posta programa gehienetan, sakatu beharreko esteka urdina agertzen da. Ez bada horrela agertzen, kopiatu helbidea eta itsasi nabigatzailearen helbide-barran.
+E-posta programa gehienetan, sakatu daitekeen esteka urdina agertzen da. Ez bada horrela agertzen, kopiatu helbidea eta itsasi nabigatzailearen helbide-barran.
 
 Jaso \'{$a->sitename}\' gunearen kudeatzailearen agur bero bat.
 
@@ -1925,9 +1925,9 @@ Hona hemen fitxategiarekin gertatutakoaren laburpena:
 $string['virusfoundsubject'] = '{$a}: Birusa aurkitu egin da!';
 $string['virusfounduser'] = 'Igotako fitxategia, {$a->filename}, antibirusak eskaneatu du eta birusa dauka. EZ da igo.';
 $string['virusplaceholder'] = 'Igotako fitxategiak birusak zituen eta ez da igo. Erabiltzaileari jakinarazi zaio.';
-$string['visible'] = 'Agerian jarri';
+$string['visible'] = 'Ikusgai';
 $string['visible_help'] = 'Ezarpen honek adierazten du ikastaroa nola agertuko den ikastaroen zerrendan. Irakasle eta kudeatzaileez aparte, erabiltzaileek ez dute baimenik ikastaroan sartzeko.';
-$string['visibletostudents'] = '{$a}-(r)entzat agerian';
+$string['visibletostudents'] = 'Ikusgai {$a}-(r)entzat';
 $string['warning'] = 'Kontuz';
 $string['warningdeleteresource'] = 'Kontuz: baliabide batek {$a}-ri egiten dio erreferentzia. Baliabidea eguneratu nahi duzu?';
 $string['webpage'] = 'Web-orria';

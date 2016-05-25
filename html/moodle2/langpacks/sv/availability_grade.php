@@ -25,10 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_items'] = 'Betygskomponenter i cache för utvärdering av villkorad tillgänglighet';
+$string['cachedef_scores'] = 'Användares betyg i cache för utvärdering av villkorad tillgänglighet';
 $string['description'] = 'Kräv studenter att uppnå ett visst betyg';
 $string['error_backwardrange'] = 'När du anger ett betygsintervall måste det lägsta värdet vara mindre än det högsta';
 $string['error_invalidnumber'] = 'Betygsintervall måste anges med giltiga procentenheter';
+$string['error_selectgradeid'] = 'Du måste välja en betygskomponent för betygets villkor';
 $string['label_max'] = '';
+$string['label_min'] = 'Minsta betygsprocent (inklusiv)';
+$string['missing'] = '(aktivitet saknas)';
 $string['option_max'] = 'måste vara<';
 $string['option_min'] = 'måste vara≥';
 $string['pluginname'] = 'Begränsning utifrån betyg';

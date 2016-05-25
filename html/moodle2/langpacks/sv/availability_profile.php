@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['conditiontitle'] = 'Fält för användarprofil';
+$string['description'] = 'Styr åtkomst baserad på fält i studentenprofilen';
 $string['op_contains'] = 'innehåller';
 $string['op_doesnotcontain'] = 'innehåller inte';
 $string['op_endswith'] = 'slutar med';
@@ -33,3 +35,4 @@ $string['op_isequalto'] = 'är lika med';
 $string['op_isnotempty'] = 'är inte tomt';
 $string['op_startswith'] = 'inleds med';
 $string['pluginname'] = 'Begränsning genom profil';
+$string['title'] = 'Användarprofil';

@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backupofcourselogs'] = 'Registos de cópia de segurança de {$a}';
-$string['logsofbackupexecutedon'] = 'Registos de cópia de segurança executados em {$a}';
+$string['backupofcourselogs'] = 'Registos de atividade de cópia de segurança de {$a}';
+$string['logsofbackupexecutedon'] = 'Registos de atividade da cópia de segurança executada em {$a}';
 $string['nobackupsfound'] = 'Não foram encontradas cópias de segurança.';
-$string['nologsfound'] = 'Não foram encontrados registos para esta cópia de segurança.';
+$string['nologsfound'] = 'Não foram encontrados registos de atividade para esta cópia de segurança.';
 $string['pluginname'] = 'Relatório de cópias de segurança';
 $string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Ver registos';

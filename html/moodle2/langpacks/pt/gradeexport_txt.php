@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ficheiro de texto simples';
-$string['timeexported'] = 'Última descarregada a partir desta disciplina';
+$string['timeexported'] = 'Última exportação desta disciplina';
 $string['txt:publish'] = 'Publicar exportação de notas TXT';
 $string['txt:view'] = 'Usar exportação de notas em texto';

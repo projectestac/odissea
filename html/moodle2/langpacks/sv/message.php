@@ -54,8 +54,15 @@ $string['emailmessages'] = 'E-postmeddelanden när jag arbetar i frånkopplat l�
 $string['emailtagline'] = 'Det här e-postmeddelandet är en kopia av ett meddelande som har skickats till Dig på "{$a>sitename}". Gå till  {$a->url} för att svara.
 ';
 $string['emptysearchstring'] = 'Du måste söka efter någonting';
+$string['enabled'] = 'Aktiverat';
 $string['errorcallingprocessor'] = 'Fel i sb m anrop till den definierade processorn';
 $string['errortranslatingdefault'] = 'Fel vid översättningen av standardinställningar från plugin, använder systemets standard istället.';
+$string['eventmessagecontactadded'] = 'En kontakt har lagts till.';
+$string['eventmessagecontactblocked'] = 'En kontakt har blockerats.';
+$string['eventmessagecontactremoved'] = 'En kontakt har tagits bort.';
+$string['eventmessagecontactunblocked'] = 'En kontakt har avblockerats.';
+$string['eventmessagesent'] = 'Meddelandet har skickats.';
+$string['eventmessageviewed'] = 'Meddelandet har öppnats.';
 $string['forced'] = 'Tvingad';
 $string['formorethan'] = 'I mer än';
 $string['gotomessages'] = 'Gå till meddelanden';

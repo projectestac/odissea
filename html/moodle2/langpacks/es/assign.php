@@ -67,6 +67,7 @@ Puede verla adjunta a su entrega';
 $string['assignmentname'] = 'Nombre de la tarea';
 $string['assignmentplugins'] = 'Extensiones de tarea';
 $string['assignmentsperpage'] = 'Tareas por página';
+$string['assign:receivegradernotifications'] = 'Recibir notificaciones de envíos del calificador';
 $string['assign:releasegrades'] = 'Publicación de calificaciones';
 $string['assign:revealidentities'] = 'Mostrar las identidades de los estudiantes';
 $string['assign:reviewgrades'] = 'Revisión de calificaciones';
@@ -74,6 +75,7 @@ $string['assignsubmission'] = 'Extensión de entregas';
 $string['assignsubmissionpluginname'] = 'Extensión de entregas';
 $string['assign:submit'] = 'Enviar tarea';
 $string['assign:view'] = 'Ver tarea';
+$string['assign:viewblinddetails'] = 'Ver la identidad de los estudiantes cuando la ocultación de identidad está activada';
 $string['assign:viewgrades'] = 'Ver calificaciones';
 $string['attemptheading'] = 'Intento {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Intentos previos';
@@ -351,6 +353,15 @@ $string['submissionnotready'] = 'Esta tarea no está lista para enviar.';
 $string['submissionplugins'] = 'Extensiones de entrega';
 $string['submissionreceipthtml'] = 'Usted ha realizado una entrega en la tarea \'<i>{$a->assignment}</i>\'<br /><br />
 Puede ver el estado de su <a href="{$a->url}">entrega</a>.';
+$string['submissionreceiptotherhtml'] = 'Su envío de la tarea para
+\'<i>{$a->assignment}</i>\' ha sido enviado.<br /><br />
+Puede comprobar el estado del <a href="{$a->url}">envío de la tarea</a>.';
+$string['submissionreceiptothersmall'] = 'Su envío de la tarea {$a->assignment} ha sido entregado.';
+$string['submissionreceiptothertext'] = 'Su envío de la tarea \'{$a->assignment}\' ha sido entregado.
+
+Puede comprobar el estado del envío de su tarea:
+
+    {$a->url}';
 $string['submissionreceipts'] = 'Enviar recibo de entrega';
 $string['submissionreceiptsmall'] = 'Usted ha realizado su entrega en la tarea {$a->assignment}';
 $string['submissionreceipttext'] = 'Usted ha realizado una entrega en la tarea {$a->assignment}

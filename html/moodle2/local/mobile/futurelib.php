@@ -155,7 +155,7 @@ if (!class_exists("external_util")) {
          * @param  array $courseids A list of course ids
          * @return array            An array of courses and the validation warnings
          */
-        public static function validate_courses($courseids) {
+        public static function validate_courses($courseids, $notused = array()) {
             // Delete duplicates.
             $courseids = array_unique($courseids);
             $courses = array();
@@ -1856,5 +1856,891 @@ if (!function_exists('glossary_get_visible_tabs')) {
         }
         $showtabs = preg_split('/,/', $displayformat->showtabs, -1, PREG_SPLIT_NO_EMPTY);
         return $showtabs;
+    }
+}
+
+require_once("$CFG->dirroot/mod/wiki/lib.php");
+require_once("$CFG->dirroot/mod/wiki/locallib.php");
+
+if (!function_exists('wiki_can_create_pages')) {
+    /**
+     * Check if the user can create pages in a certain wiki.
+     * @param context $context Wiki's context.
+     * @param integer|stdClass $user A user id or object. By default (null) checks the permissions of the current user.
+     * @return bool True if user can create pages, false otherwise.
+     * @since Moodle 3.1
+     */
+    function wiki_can_create_pages($context, $user = null) {
+        return has_capability('mod/wiki:createpage', $context, $user);
+    }
+}
+
+if (!function_exists('wiki_view')) {
+    /**
+     * Mark the activity completed (if required) and trigger the course_module_viewed event.
+     *
+     * @param  stdClass $wiki       Wiki object.
+     * @param  stdClass $course     Course object.
+     * @param  stdClass $cm         Course module object.
+     * @param  stdClass $context    Context object.
+     * @since Moodle 3.1
+     */
+    function wiki_view($wiki, $course, $cm, $context) {
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $wiki->id
+        );
+        $event = \mod_wiki\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('wiki', $wiki);
+        $event->trigger();
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+    }
+}
+
+if (!function_exists('wiki_page_view')) {
+    /**
+     * Mark the activity completed (if required) and trigger the page_viewed event.
+     *
+     * @param  stdClass $wiki       Wiki object.
+     * @param  stdClass $page       Page object.
+     * @param  stdClass $course     Course object.
+     * @param  stdClass $cm         Course module object.
+     * @param  stdClass $context    Context object.
+     * @param  int $uid             Optional User ID.
+     * @param  array $other         Optional Other params: title, wiki ID, group ID, groupanduser, prettyview.
+     * @param  stdClass $subwiki    Optional Subwiki.
+     * @since Moodle 3.1
+     */
+    function wiki_page_view($wiki, $page, $course, $cm, $context, $uid = null, $other = null, $subwiki = null) {
+        // Trigger course_module_viewed event.
+        $params = array(
+            'context' => $context,
+            'objectid' => $page->id
+        );
+        if ($uid != null) {
+            $params['relateduserid'] = $uid;
+        }
+        if ($other != null) {
+            $params['other'] = $other;
+        }
+        $event = \mod_wiki\event\page_viewed::create($params);
+        $event->add_record_snapshot('wiki_pages', $page);
+        $event->add_record_snapshot('course_modules', $cm);
+        $event->add_record_snapshot('course', $course);
+        $event->add_record_snapshot('wiki', $wiki);
+        if ($subwiki != null) {
+            $event->add_record_snapshot('wiki_subwikis', $subwiki);
+        }
+        $event->trigger();
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+    }
+}
+
+if (!function_exists('wiki_get_possible_subwiki_by_group')) {
+    /**
+     * Get a sub wiki instance by wiki id, group id and user id.
+     * If the wiki doesn't exist in DB it will return an isntance with id -1.
+     *
+     * @param int $wikiid  Wiki ID.
+     * @param int $groupid Group ID.
+     * @param int $userid  User ID.
+     * @return object      Subwiki instance.
+     * @since Moodle 3.1
+     */
+    function wiki_get_possible_subwiki_by_group($wikiid, $groupid, $userid = 0) {
+        if (!$subwiki = wiki_get_subwiki_by_group($wikiid, $groupid, $userid)) {
+            $subwiki = new stdClass();
+            $subwiki->id = -1;
+            $subwiki->wikiid = $wikiid;
+            $subwiki->groupid = $groupid;
+            $subwiki->userid = $userid;
+        }
+        return $subwiki;
+    }
+}
+
+if (!function_exists('wiki_get_visible_subwikis')) {
+    /**
+     * Get all the possible subwikis visible to the user in a wiki.
+     * It will return all the subwikis that can be created in a wiki, even if they don't exist in DB yet.
+     *
+     * @param  stdClass $wiki          Wiki to get the subwikis from.
+     * @param  cm_info|stdClass $cm    Optional. The course module object.
+     * @param  context_module $context Optional. Context of wiki module.
+     * @return array                   List of subwikis.
+     * @since Moodle 3.1
+     */
+    function wiki_get_visible_subwikis($wiki, $cm = null, $context = null) {
+        global $USER;
+        $subwikis = array();
+        if (empty($wiki) or !is_object($wiki)) {
+            // Wiki not valid.
+            return $subwikis;
+        }
+        if (empty($cm)) {
+            $cm = get_coursemodule_from_instance('wiki', $wiki->id);
+        }
+        if (empty($context)) {
+            $context = context_module::instance($cm->id);
+        }
+        if (!has_capability('mod/wiki:viewpage', $context)) {
+            return $subwikis;
+        }
+        $manage = has_capability('mod/wiki:managewiki', $context);
+        if (!$groupmode = groups_get_activity_groupmode($cm)) {
+            // No groups.
+            if ($wiki->wikimode == 'collaborative') {
+                // Only 1 subwiki.
+                $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, 0, 0);
+            } else if ($wiki->wikimode == 'individual') {
+                // There's 1 subwiki per user.
+                if ($manage) {
+                    // User can view all subwikis.
+                    $users = get_enrolled_users($context);
+                    foreach ($users as $user) {
+                        $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, 0, $user->id);
+                    }
+                } else {
+                    // User can only see his subwiki.
+                    $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, 0, $USER->id);
+                }
+            }
+        } else {
+            if ($wiki->wikimode == 'collaborative') {
+                // 1 subwiki per group.
+                $aag = has_capability('moodle/site:accessallgroups', $context);
+                if ($aag || $groupmode == VISIBLEGROUPS) {
+                    // User can see all groups.
+                    $allowedgroups = groups_get_all_groups($cm->course, 0, $cm->groupingid);
+                    $allparticipants = new stdClass();
+                    $allparticipants->id = 0;
+                    array_unshift($allowedgroups, $allparticipants); // Add all participants.
+                } else {
+                    // User can only see the groups he belongs to.
+                    $allowedgroups = groups_get_all_groups($cm->course, $USER->id, $cm->groupingid);
+                }
+                foreach ($allowedgroups as $group) {
+                    $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, $group->id, 0);
+                }
+            } else if ($wiki->wikimode == 'individual') {
+                // 1 subwiki per user and group.
+                if ($manage || $groupmode == VISIBLEGROUPS) {
+                    // User can view all subwikis.
+                    $users = get_enrolled_users($context);
+                    foreach ($users as $user) {
+                        // Get all the groups this user belongs to.
+                        $groups = groups_get_all_groups($cm->course, $user->id);
+                        if (!empty($groups)) {
+                            foreach ($groups as $group) {
+                                $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, $group->id, $user->id);
+                            }
+                        } else {
+                            // User doesn't belong to any group, add it to group 0.
+                            $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, 0, $user->id);
+                        }
+                    }
+                } else {
+                    // The user can only see the subwikis of the groups he belongs.
+                    $allowedgroups = groups_get_all_groups($cm->course, $USER->id, $cm->groupingid);
+                    foreach ($allowedgroups as $group) {
+                        $users = groups_get_members($group->id);
+                        foreach ($users as $user) {
+                            $subwikis[] = wiki_get_possible_subwiki_by_group($wiki->id, $group->id, $user->id);
+                        }
+                    }
+                }
+            }
+        }
+        return $subwikis;
+    }
+}
+
+/**
+ * Get pages list in wiki
+ * @param int $swid sub wiki id
+ * @param string $sort How to sort the pages. By default, title ASC.
+ */
+function local_mobile_wiki_get_page_list($swid, $sort = 'title ASC') {
+    global $DB;
+    $records = $DB->get_records('wiki_pages', array('subwikiid' => $swid), $sort);
+    return $records;
+}
+
+function local_mobile_external_format_text($text, $textformat, $contextid, $component, $filearea, $itemid, $options = null) {
+    global $CFG;
+    // Get settings (singleton).
+    $settings = external_settings::get_instance();
+    if ($settings->get_fileurl()) {
+        require_once($CFG->libdir . "/filelib.php");
+        $text = file_rewrite_pluginfile_urls($text, $settings->get_file(), $contextid, $component, $filearea, $itemid);
+    }
+    if (!$settings->get_raw()) {
+        $options = (array)$options;
+        $options['filter'] = isset($options['filter']) ? $options['filter'] : $settings->get_filter();
+        $options['para'] = isset($options['para']) ? $options['para'] : false;
+        $options['context'] = context::instance_by_id($contextid);
+        $options['allowid'] = isset($options['allowid']) ? $options['allowid'] : true;
+        $text = format_text($text, $textformat, $options);
+        $textformat = FORMAT_HTML; // Once converted to html (from markdown, plain... lets inform consumer this is already HTML).
+    }
+    return array($text, $textformat);
+}
+
+
+require_once("$CFG->dirroot/mod/quiz/locallib.php");
+
+if (!function_exists('quiz_view')) {
+    /**
+     * Mark the activity completed (if required) and trigger the course_module_viewed event.
+     *
+     * @param  stdClass $quiz       quiz object
+     * @param  stdClass $course     course object
+     * @param  stdClass $cm         course module object
+     * @param  stdClass $context    context object
+     * @since Moodle 3.1
+     */
+    function quiz_view($quiz, $course, $cm, $context) {
+
+        $params = array(
+            'objectid' => $quiz->id,
+            'context' => $context
+        );
+
+        $event = \mod_quiz\event\course_module_viewed::create($params);
+        $event->add_record_snapshot('quiz', $quiz);
+        $event->trigger();
+
+        // Completion.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+    }
+
+}
+
+if (!function_exists('quiz_validate_new_attempt')) {
+    /**
+     * Validate permissions for creating a new attempt and start a new preview attempt if required.
+     *
+     * @param  quiz $quizobj quiz object
+     * @param  quiz_access_manager $accessmanager quiz access manager
+     * @param  bool $forcenew whether was required to start a new preview attempt
+     * @param  int $page page to jump to in the attempt
+     * @param  bool $redirect whether to redirect or throw exceptions (for web or ws usage)
+     * @return array an array containing the attempt information, access error messages and the page to jump to in the attempt
+     * @throws moodle_quiz_exception
+     * @since Moodle 3.1
+     */
+    function quiz_validate_new_attempt(quiz $quizobj, quiz_access_manager $accessmanager, $forcenew, $page, $redirect) {
+        global $DB, $USER;
+        $timenow = time();
+
+        if ($quizobj->is_preview_user() && $forcenew) {
+            $accessmanager->current_attempt_finished();
+        }
+
+        // Check capabilities.
+        if (!$quizobj->is_preview_user()) {
+            $quizobj->require_capability('mod/quiz:attempt');
+        }
+
+        // Check to see if a new preview was requested.
+        if ($quizobj->is_preview_user() && $forcenew) {
+            // To force the creation of a new preview, we mark the current attempt (if any)
+            // as finished. It will then automatically be deleted below.
+            $DB->set_field('quiz_attempts', 'state', quiz_attempt::FINISHED,
+                    array('quiz' => $quizobj->get_quizid(), 'userid' => $USER->id));
+        }
+
+        // Look for an existing attempt.
+        $attempts = quiz_get_user_attempts($quizobj->get_quizid(), $USER->id, 'all', true);
+        $lastattempt = end($attempts);
+
+        $attemptnumber = null;
+        // If an in-progress attempt exists, check password then redirect to it.
+        if ($lastattempt && ($lastattempt->state == quiz_attempt::IN_PROGRESS ||
+                $lastattempt->state == quiz_attempt::OVERDUE)) {
+            $currentattemptid = $lastattempt->id;
+            $messages = $accessmanager->prevent_access();
+
+            // If the attempt is now overdue, deal with that.
+            $quizobj->create_attempt_object($lastattempt)->handle_if_time_expired($timenow, true);
+
+            // And, if the attempt is now no longer in progress, redirect to the appropriate place.
+            if ($lastattempt->state == quiz_attempt::ABANDONED || $lastattempt->state == quiz_attempt::FINISHED) {
+                if ($redirect) {
+                    redirect($quizobj->review_url($lastattempt->id));
+                } else {
+                    throw new moodle_quiz_exception($quizobj, 'attemptalreadyclosed');
+                }
+            }
+
+            // If the page number was not explicitly in the URL, go to the current page.
+            if ($page == -1) {
+                $page = $lastattempt->currentpage;
+            }
+
+        } else {
+            while ($lastattempt && $lastattempt->preview) {
+                $lastattempt = array_pop($attempts);
+            }
+
+            // Get number for the next or unfinished attempt.
+            if ($lastattempt) {
+                $attemptnumber = $lastattempt->attempt + 1;
+            } else {
+                $lastattempt = false;
+                $attemptnumber = 1;
+            }
+            $currentattemptid = null;
+
+            $messages = $accessmanager->prevent_access() +
+                $accessmanager->prevent_new_attempt(count($attempts), $lastattempt);
+
+            if ($page == -1) {
+                $page = 0;
+            }
+        }
+        return array($currentattemptid, $attemptnumber, $lastattempt, $messages, $page);
+    }
+
+}
+
+if (!function_exists('quiz_prepare_and_start_new_attempt')) {
+    /**
+     * Prepare and start a new attempt deleting the previous preview attempts.
+     *
+     * @param  quiz $quizobj quiz object
+     * @param  int $attemptnumber the attempt number
+     * @param  object $lastattempt last attempt object
+     * @return object the new attempt
+     * @since  Moodle 3.1
+     */
+    function quiz_prepare_and_start_new_attempt(quiz $quizobj, $attemptnumber, $lastattempt) {
+        global $DB, $USER;
+
+        // Delete any previous preview attempts belonging to this user.
+        quiz_delete_previews($quizobj->get_quiz(), $USER->id);
+
+        $quba = question_engine::make_questions_usage_by_activity('mod_quiz', $quizobj->get_context());
+        $quba->set_preferred_behaviour($quizobj->get_quiz()->preferredbehaviour);
+
+        // Create the new attempt and initialize the question sessions
+        $timenow = time(); // Update time now, in case the server is running really slowly.
+        $attempt = quiz_create_attempt($quizobj, $attemptnumber, $lastattempt, $timenow, $quizobj->is_preview_user());
+
+        if (!($quizobj->get_quiz()->attemptonlast && $lastattempt)) {
+            $attempt = quiz_start_new_attempt($quizobj, $quba, $attempt, $attemptnumber, $timenow);
+        } else {
+            $attempt = quiz_start_attempt_built_on_last($quba, $attempt, $lastattempt);
+        }
+
+        $transaction = $DB->start_delegated_transaction();
+
+        $attempt = quiz_attempt_save_started($quizobj, $quba, $attempt);
+
+        $transaction->allow_commit();
+
+        return $attempt;
+    }
+}
+
+if (!function_exists('quiz_feedback_record_for_grade')) {
+    /**
+     * Get the feedback object for this grade on this quiz.
+     *
+     * @param float $grade a grade on this quiz.
+     * @param object $quiz the quiz settings.
+     * @return false|stdClass the record object or false if there is not feedback for the given grade
+     * @since  Moodle 3.1
+     */
+    function quiz_feedback_record_for_grade($grade, $quiz) {
+        global $DB;
+
+        // With CBM etc, it is possible to get -ve grades, which would then not match
+        // any feedback. Therefore, we replace -ve grades with 0.
+        $grade = max($grade, 0);
+
+        $feedback = $DB->get_record_select('quiz_feedback',
+                'quizid = ? AND mingrade <= ? AND ? < maxgrade', array($quiz->id, $grade, $grade));
+
+        return $feedback;
+    }
+}
+
+class local_mobile_quiz extends quiz {
+
+    /**
+     * Static function to create a new quiz object for a specific user.
+     *
+     * @param int $quizid the the quiz id.
+     * @param int $userid the the userid.
+     * @return quiz the new quiz object
+     */
+    public static function create($quizid, $userid = null) {
+        global $DB;
+
+        $quiz = local_mobile_quiz_access_manager::load_quiz_and_settings($quizid);
+        $course = $DB->get_record('course', array('id' => $quiz->course), '*', MUST_EXIST);
+        $cm = get_coursemodule_from_instance('quiz', $quiz->id, $course->id, false, MUST_EXIST);
+
+        // Update quiz with override information.
+        if ($userid) {
+            $quiz = quiz_update_effective_access($quiz, $userid);
+        }
+
+        return new local_mobile_quiz($quiz, $cm, $course);
+    }
+
+    /**
+     * Return quiz_access_manager and instance of the quiz_access_manager class
+     * for this quiz at this time.
+     * @param int $timenow the current time as a unix timestamp.
+     * @return quiz_access_manager and instance of the quiz_access_manager class
+     *      for this quiz at this time.
+     */
+    public function get_access_manager($timenow) {
+        if (is_null($this->accessmanager)) {
+            $this->accessmanager = new local_mobile_quiz_access_manager($this, $timenow,
+                    has_capability('mod/quiz:ignoretimelimits', $this->context, null, false));
+        }
+        return $this->accessmanager;
+    }
+
+    /**
+     * Return all the question types used in this quiz.
+     *
+     * @param  boolean $includepotential if the quiz include random questions, setting this flag to true will make the function to
+     * return all the possible question types in the random questions category
+     * @return array a sorted array including the different question types
+     * @since  Moodle 3.1
+     */
+    public function get_all_question_types_used($includepotential = false) {
+        $questiontypes = array();
+        // To control if we need to look in categories for questions.
+        $qcategories = array();
+
+        // We must be careful with random questions, if we find a random question we must assume that the quiz may content
+        // any of the questions in the referenced category (or subcategories).
+        foreach ($this->get_questions() as $questiondata) {
+            if ($questiondata->qtype == 'random' and $includepotential) {
+                $includesubcategories = (bool) $questiondata->questiontext;
+                if (!isset($qcategories[$questiondata->category])) {
+                    $qcategories[$questiondata->category] = false;
+                }
+                if ($includesubcategories) {
+                    $qcategories[$questiondata->category] = true;
+                }
+            } else {
+                if (!in_array($questiondata->qtype, $questiontypes)) {
+                    $questiontypes[] = $questiondata->qtype;
+                }
+            }
+        }
+
+        if (!empty($qcategories)) {
+            // We have to look for all the question types in these categories.
+            $categoriestolook = array();
+            foreach ($qcategories as $cat => $includesubcats) {
+                if ($includesubcats) {
+                    $categoriestolook = array_merge($categoriestolook, question_categorylist($cat));
+                } else {
+                    $categoriestolook[] = $cat;
+                }
+            }
+            $questiontypesincategories = local_mobile_question_bank::get_all_question_types_in_categories($categoriestolook);
+            $questiontypes = array_merge($questiontypes, $questiontypesincategories);
+        }
+        $questiontypes = array_unique($questiontypes);
+        sort($questiontypes);
+
+        return $questiontypes;
+    }
+}
+
+class local_mobile_quiz_attempt extends quiz_attempt {
+
+    /**
+     * Constructor assuming we already have the necessary data loaded.
+     *
+     * @param object $attempt the row of the quiz_attempts table.
+     * @param object $quiz the quiz object for this attempt and user.
+     * @param object $cm the course_module object for this quiz.
+     * @param object $course the row from the course table for the course we belong to.
+     * @param bool $loadquestions (optional) if true, the default, load all the details
+     *      of the state of each question. Else just set up the basic details of the attempt.
+     */
+    public function __construct($attempt, $quiz, $cm, $course, $loadquestions = true) {
+        global $DB;
+
+        $this->attempt = $attempt;
+        $this->quizobj = new local_mobile_quiz($quiz, $cm, $course);
+
+        if (!$loadquestions) {
+            return;
+        }
+
+        $this->quba = question_engine::load_questions_usage_by_activity($this->attempt->uniqueid);
+
+        $this->determine_layout();
+        $this->number_questions();
+    }
+
+    /**
+     * Static function to create a new quiz_attempt object given an attemptid.
+     *
+     * @param int $attemptid the attempt id.
+     * @return quiz_attempt the new quiz_attempt object
+     */
+    public static function create($attemptid) {
+        return self::create_helper(array('id' => $attemptid));
+    }
+
+    /**
+     * Used by {create()} and {create_from_usage_id()}.
+     * @param array $conditions passed to $DB->get_record('quiz_attempts', $conditions).
+     */
+    protected static function create_helper($conditions) {
+        global $DB;
+
+        $attempt = $DB->get_record('quiz_attempts', $conditions, '*', MUST_EXIST);
+        $quiz = quiz_access_manager::load_quiz_and_settings($attempt->quiz);
+        $course = $DB->get_record('course', array('id' => $quiz->course), '*', MUST_EXIST);
+        $cm = get_coursemodule_from_instance('quiz', $quiz->id, $course->id, false, MUST_EXIST);
+
+        // Update quiz with override information.
+        $quiz = quiz_update_effective_access($quiz, $attempt->userid);
+        return new local_mobile_quiz_attempt($attempt, $quiz, $cm, $course);
+    }
+
+    /**
+     * Return the question type name for a given slot within the current attempt.
+     *
+     * @param int $slot the number used to identify this question within this attempt.
+     * @return string the question type name
+     * @since  Moodle 3.1
+     */
+    public function get_question_type_name($slot) {
+        return $this->quba->get_question($slot)->get_type_name();
+    }
+
+    /**
+     * Process responses during an attempt at a quiz.
+     *
+     * @param  int $timenow time when the processing started
+     * @param  bool $finishattempt whether to finish the attempt or not
+     * @param  bool $timeup true if form was submitted by timer
+     * @param  int $thispage current page number
+     * @return string the attempt state once the data has been processed
+     * @since  Moodle 3.1
+     * @throws  moodle_exception
+     */
+    public function process_attempt($timenow, $finishattempt, $timeup, $thispage) {
+        global $DB;
+
+        $transaction = $DB->start_delegated_transaction();
+
+        // If there is only a very small amount of time left, there is no point trying
+        // to show the student another page of the quiz. Just finish now.
+        $graceperiodmin = null;
+        $accessmanager = $this->get_access_manager($timenow);
+        $timeclose = $accessmanager->get_end_time($this->get_attempt());
+
+        // Don't enforce timeclose for previews.
+        if ($this->is_preview()) {
+            $timeclose = false;
+        }
+        $toolate = false;
+        if ($timeclose !== false && $timenow > $timeclose - QUIZ_MIN_TIME_TO_CONTINUE) {
+            $timeup = true;
+            $graceperiodmin = get_config('quiz', 'graceperiodmin');
+            if ($timenow > $timeclose + $graceperiodmin) {
+                $toolate = true;
+            }
+        }
+
+        // If time is running out, trigger the appropriate action.
+        $becomingoverdue = false;
+        $becomingabandoned = false;
+        if ($timeup) {
+            if ($this->get_quiz()->overduehandling == 'graceperiod') {
+                if (is_null($graceperiodmin)) {
+                    $graceperiodmin = get_config('quiz', 'graceperiodmin');
+                }
+                if ($timenow > $timeclose + $this->get_quiz()->graceperiod + $graceperiodmin) {
+                    // Grace period has run out.
+                    $finishattempt = true;
+                    $becomingabandoned = true;
+                } else {
+                    $becomingoverdue = true;
+                }
+            } else {
+                $finishattempt = true;
+            }
+        }
+
+        // Don't log - we will end with a redirect to a page that is logged.
+
+        if (!$finishattempt) {
+            // Just process the responses for this page and go to the next page.
+            if (!$toolate) {
+                try {
+                    $this->process_submitted_actions($timenow, $becomingoverdue);
+
+                } catch (question_out_of_sequence_exception $e) {
+                    throw new moodle_exception('submissionoutofsequencefriendlymessage', 'question',
+                            $this->attempt_url(null, $thispage));
+
+                } catch (Exception $e) {
+                    // This sucks, if we display our own custom error message, there is no way
+                    // to display the original stack trace.
+                    $debuginfo = '';
+                    if (!empty($e->debuginfo)) {
+                        $debuginfo = $e->debuginfo;
+                    }
+                    throw new moodle_exception('errorprocessingresponses', 'question',
+                            $this->attempt_url(null, $thispage), $e->getMessage(), $debuginfo);
+                }
+
+                if (!$becomingoverdue) {
+                    foreach ($this->get_slots() as $slot) {
+                        if (optional_param('redoslot' . $slot, false, PARAM_BOOL)) {
+                            $this->process_redo_question($slot, $timenow);
+                        }
+                    }
+                }
+
+            } else {
+                // The student is too late.
+                $this->process_going_overdue($timenow, true);
+            }
+
+            $transaction->allow_commit();
+
+            return $becomingoverdue ? self::OVERDUE : self::IN_PROGRESS;
+        }
+
+        // Update the quiz attempt record.
+        try {
+            if ($becomingabandoned) {
+                $this->process_abandon($timenow, true);
+            } else {
+                $this->process_finish($timenow, !$toolate);
+            }
+
+        } catch (question_out_of_sequence_exception $e) {
+            throw new moodle_exception('submissionoutofsequencefriendlymessage', 'question',
+                    $this->attempt_url(null, $thispage));
+
+        } catch (Exception $e) {
+            // This sucks, if we display our own custom error message, there is no way
+            // to display the original stack trace.
+            $debuginfo = '';
+            if (!empty($e->debuginfo)) {
+                $debuginfo = $e->debuginfo;
+            }
+            throw new moodle_exception('errorprocessingresponses', 'question',
+                    $this->attempt_url(null, $thispage), $e->getMessage(), $debuginfo);
+        }
+
+        // Send the user to the review page.
+        $transaction->allow_commit();
+
+        return $becomingabandoned ? self::ABANDONED : self::FINISHED;
+    }
+
+    /**
+     * Check a page access to see if is an out of sequence access.
+     *
+     * @param  int $page page number
+     * @return boolean false is is an out of sequence access, true otherwise.
+     * @since Moodle 3.1
+     */
+    public function check_page_access($page) {
+        global $DB;
+
+        if ($this->get_currentpage() != $page) {
+            if ($this->get_navigation_method() == QUIZ_NAVMETHOD_SEQ && $this->get_currentpage() > $page) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Update attempt page.
+     *
+     * @param  int $page page number
+     * @return boolean true if everything was ok, false otherwise (out of sequence access).
+     * @since Moodle 3.1
+     */
+    public function set_currentpage($page) {
+        global $DB;
+
+        if ($this->check_page_access($page)) {
+            $DB->set_field('quiz_attempts', 'currentpage', $page, array('id' => $this->get_attemptid()));
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Trigger the attempt_viewed event.
+     *
+     * @since Moodle 3.1
+     */
+    public function fire_attempt_viewed_event() {
+        $params = array(
+            'objectid' => $this->get_attemptid(),
+            'relateduserid' => $this->get_userid(),
+            'courseid' => $this->get_courseid(),
+            'context' => context_module::instance($this->get_cmid()),
+            'other' => array(
+                'quizid' => $this->get_quizid()
+            )
+        );
+        $event = \mod_quiz\event\attempt_viewed::create($params);
+        $event->add_record_snapshot('quiz_attempts', $this->get_attempt());
+        $event->trigger();
+    }
+
+    /**
+     * Trigger the attempt_summary_viewed event.
+     *
+     * @since Moodle 3.1
+     */
+    public function fire_attempt_summary_viewed_event() {
+
+        $params = array(
+            'objectid' => $this->get_attemptid(),
+            'relateduserid' => $this->get_userid(),
+            'courseid' => $this->get_courseid(),
+            'context' => context_module::instance($this->get_cmid()),
+            'other' => array(
+                'quizid' => $this->get_quizid()
+            )
+        );
+        $event = \mod_quiz\event\attempt_summary_viewed::create($params);
+        $event->add_record_snapshot('quiz_attempts', $this->get_attempt());
+        $event->trigger();
+    }
+
+    /**
+     * Trigger the attempt_reviewed event.
+     *
+     * @since Moodle 3.1
+     */
+    public function fire_attempt_reviewed_event() {
+
+        $params = array(
+            'objectid' => $this->get_attemptid(),
+            'relateduserid' => $this->get_userid(),
+            'courseid' => $this->get_courseid(),
+            'context' => context_module::instance($this->get_cmid()),
+            'other' => array(
+                'quizid' => $this->get_quizid()
+            )
+        );
+        $event = \mod_quiz\event\attempt_reviewed::create($params);
+        $event->add_record_snapshot('quiz_attempts', $this->get_attempt());
+        $event->trigger();
+    }
+
+    /**
+     * Return the {@link question_state} that this question is in.
+     *
+     * @param int $slot the number used to identify this question within this attempt.
+     * @return question_state the state this question is in.
+     * @since Moodle 2.9
+     */
+    public function get_question_state($slot) {
+        return $this->quba->get_question_state($slot);
+    }
+
+}
+
+class local_mobile_quiz_access_manager extends quiz_access_manager {
+
+    /**
+     * Run the preflight checks using the given data in all the rules supporting them.
+     *
+     * @param array $data passed data for validation
+     * @param array $files un-used, Moodle seems to not support it anymore
+     * @param int|null $attemptid the id of the current attempt, if there is one,
+     *      otherwise null.
+     * @return array of errors, empty array means no erros
+     * @since  Moodle 3.1
+     */
+    public function validate_preflight_check($data, $files, $attemptid) {
+        $errors = array();
+        foreach ($this->rules as $rule) {
+            if ($rule->is_preflight_check_required($attemptid)) {
+                $errors = $rule->validate_preflight_check($data, $files, $errors, $attemptid);
+            }
+        }
+        return $errors;
+    }
+}
+
+class local_mobile_question_bank extends question_bank {
+    /**
+     * Return a list of the different question types present in the given categories.
+     *
+     * @param  array $categories a list of category ids
+     * @return array the list of question types in the categories
+     * @since  Moodle 3.1
+     */
+    public static function get_all_question_types_in_categories($categories) {
+        global $DB;
+
+        list($categorysql, $params) = $DB->get_in_or_equal($categories);
+        $sql = "SELECT DISTINCT q.qtype
+                FROM {question} q
+                WHERE q.category $categorysql";
+
+        $qtypes = $DB->get_fieldset_sql($sql, $params);
+        return $qtypes;
+    }
+}
+
+/**
+ * Check if the given user is an active user in the site.
+ *
+ * @param  stdClass  $user         user object
+ * @param  boolean $checksuspended whether to check if the user has the account suspended
+ * @param  boolean $checknologin   whether to check if the user uses the nologin auth method
+ * @throws moodle_exception
+ * @since  Moodle 3.0
+ */
+function local_mobile_require_active_user($user, $checksuspended = false, $checknologin = false) {
+
+    if (!core_user::is_real_user($user->id)) {
+        throw new moodle_exception('invaliduser', 'error');
+    }
+
+    if ($user->deleted) {
+        throw new moodle_exception('userdeleted');
+    }
+
+    if (empty($user->confirmed)) {
+        throw new moodle_exception('usernotconfirmed', 'moodle', '', $user->username);
+    }
+
+    if (isguestuser($user)) {
+        throw new moodle_exception('guestsarenotallowed', 'error');
+    }
+
+    if ($checksuspended and $user->suspended) {
+        throw new moodle_exception('suspended', 'auth');
+    }
+
+    if ($checknologin and $user->auth == 'nologin') {
+        throw new moodle_exception('suspended', 'auth');
     }
 }

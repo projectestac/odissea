@@ -1458,6 +1458,14 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
             $type = ''; // shouldn't happen !!
     }
 
+    // "user" and "coursefiles" repositories
+    // will set this flag to TRUE
+    $encodepath = false;
+
+    // "filesytem" repository on Moodle >= 3.1
+    // will set this flag to 'browse'
+    $nodepathmode = '';
+
     // set paths (within repository) to required file
     // how we do this depends on the repository $typename
     // "filesystem" path is in plain text, others are encoded
@@ -1465,14 +1473,16 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
     $mainreference = $mainfile->get_reference();
     switch ($type) {
         case 'filesystem':
-            $maindirname   = dirname($mainreference);
-            $encodepath    = false;
+            $maindirname = dirname($mainreference);
+            if (method_exists($repository, 'build_node_path')) {
+                $nodepathmode = 'browse';
+            }
             break;
         case 'coursefiles':
         case 'user':
-            $params        = file_storage::unpack_reference($mainreference, true);
-            $maindirname   = $params['filepath'];
-            $encodepath    = true;
+            $params      = file_storage::unpack_reference($mainreference, true);
+            $maindirname = $params['filepath'];
+            $encodepath  = true;
             break;
         default:
             echo 'unknown repository type in hotpot_pluginfile_externalfile(): '.$type;
@@ -1550,7 +1560,7 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
 
     foreach ($paths as $path => $source) {
 
-        if (! hotpot_pluginfile_dirpath_exists($path, $repository, $type, $encodepath, $params)) {
+        if (! hotpot_pluginfile_dirpath_exists($path, $repository, $type, $encodepath, $nodepathmode, $params)) {
             continue;
         }
 
@@ -1558,6 +1568,13 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
             $params['filepath'] = '/'.$path.($path=='' ? '' : '/');
             $params['filename'] = '.'; // "." signifies a directory
             $path = base64_encode(json_encode($params));
+        }
+
+        if ($nodepathmode) {
+            // for "filesystem" repository on Moodle >= 3.1
+            // the following code mimics the protected method
+            // $repository->build_node_path($nodepathmode, $dirpath)
+            $path = $nodepathmode.':'.base64_encode($path).':';
         }
 
         $listing = $repository->get_listing($path);
@@ -1608,7 +1625,7 @@ function hotpot_pluginfile_externalfile($context, $component, $filearea, $filepa
  * @param array    $params
  * @return boolean true if dir path exists in repository, false otherwise
  */
-function hotpot_pluginfile_dirpath_exists($dirpath, $repository, $type, $encodepath, $params) {
+function hotpot_pluginfile_dirpath_exists($dirpath, $repository, $type, $encodepath, $nodepathmode, $params) {
     $dirs = explode('/', $dirpath);
     foreach ($dirs as $i => $dir) {
         $dirpath = implode('/', array_slice($dirs, 0, $i));
@@ -1617,6 +1634,13 @@ function hotpot_pluginfile_dirpath_exists($dirpath, $repository, $type, $encodep
             $params['filepath'] = '/'.$dirpath.($dirpath=='' ? '' : '/');
             $params['filename'] = '.'; // "." signifies a directory
             $dirpath = base64_encode(json_encode($params));
+        }
+
+        if ($nodepathmode) {
+            // for "filesystem" repository on Moodle >= 3.1
+            // the following code mimics the protected method
+            // $repository->build_node_path($nodepathmode, $dirpath)
+            $dirpath = $nodepathmode.':'.base64_encode($dirpath).':';
         }
 
         $exists = false;
@@ -2200,7 +2224,8 @@ function hotpot_add_to_log($courseid, $module, $action, $url='', $info='', $cmid
  * @param  object  $course record from "course" table
  * @param  object  $cm     record from "course_modules" table
  * @param  integer $userid id from "user" table
- * @param  bool    $type   of comparison (or/and; used as return value if there are no conditions)
+ * @param  bool    $type   of comparison (used as return value if there are no conditions)
+ *                         COMPLETION_AND (=true) or COMPLETION_OR (=false)
  * @return mixed   TRUE if completed, FALSE if not, or $type if no conditions are set
  */
 function hotpot_get_completion_state($course, $cm, $userid, $type) {
@@ -2215,7 +2240,7 @@ function hotpot_get_completion_state($course, $cm, $userid, $type) {
 
         // get grade, if necessary
         $grade = false;
-        if ($hotpot->completionmingrade || $hotpot->completionpass) {
+        if ($hotpot->completionmingrade > 0.0 || $hotpot->completionpass) {
             require_once($CFG->dirroot.'/lib/gradelib.php');
             $params = array('courseid'     => $course->id,
                             'itemtype'     => 'mod',
@@ -2237,7 +2262,9 @@ function hotpot_get_completion_state($course, $cm, $userid, $type) {
                             'completioncompleted');
 
         foreach ($conditions as $condition) {
-            if (empty($hotpot->$condition)) {
+            // decimal (e.g. completionmingrade) fields are returned by MySQL as a string
+            // and since empty('0.0') returns false (!!), so we must use numeric comparison
+            if (empty($hotpot->$condition) || floatval($hotpot->$condition)==0.0) {
                 continue;
             }
             switch ($condition) {

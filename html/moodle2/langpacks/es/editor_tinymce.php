@@ -711,6 +711,7 @@ $string['style_dlg:top'] = 'Arriba';
 $string['style_dlg:visibility'] = 'Visibilidad';
 $string['style_dlg:width'] = 'Ancho';
 $string['style_dlg:zindex'] = 'Z-index';
+$string['subplugintype_tinymce'] = 'Complemento';
 $string['subplugintype_tinymce_plural'] = 'Extensiones';
 $string['table:cell'] = 'Celda';
 $string['table:cell_desc'] = 'Propiedades de la celda';

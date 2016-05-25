@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = 'Relatório de atividade visualizado';
 $string['eventoutlinereportviewed'] = 'Relatório geral visualizado';
 $string['neverseen'] = 'Nunca visto';
-$string['nologreaderenabled'] = 'Nenhum leitor de registo ativado';
+$string['nologreaderenabled'] = 'Nenhum leitor de registos ativado';
 $string['outline:view'] = 'Ver relatório de atividades';
 $string['page-report-outline-index'] = 'Relatório geral da disciplina';
 $string['page-report-outline-user'] = 'Relatório geral da disciplina do utilizador';

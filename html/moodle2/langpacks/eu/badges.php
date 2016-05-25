@@ -387,6 +387,6 @@ $string['variablesubstitution_help'] = 'Domina-mezu batean, hainbat aldagai txer
 %badgelink%
 : emandako dominaren inguruko informazioa duen URL publikoa agertuko da honen ordez.';
 $string['viewbadge'] = 'Ikusi emandako domina';
-$string['visible'] = 'Ikusgarria';
+$string['visible'] = 'Ikusgai';
 $string['warnexpired'] = '(Domina hau iraungita dago!)';
 $string['year'] = 'Urte';

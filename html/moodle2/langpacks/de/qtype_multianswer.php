@@ -37,7 +37,7 @@ $string['layoutundefined'] = 'Undefiniertes Layout';
 $string['layoutvertical'] = 'Eine vertikale Spalte mit Einfach-Auswahl-Möglichkeiten';
 $string['nooptionsforsubquestion'] = 'Optionen für den Frageteil # {$a->sub} (question->id={$a->id}) konnten nicht gefunden werden';
 $string['noquestions'] = 'Die Lückentext-Frage "<strong>{$a}</strong>" enthält keine Frage.';
-$string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage';
+$string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage.';
 $string['pluginname'] = 'Lückentext-Frage';
 $string['pluginnameadding'] = 'Lückentext-Frage hinzufügen';
 $string['pluginnameediting'] = 'Lückentext-Frage bearbeiten';
