@@ -3,6 +3,14 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 16.07.04
+---------------------------------------------------------------------------------------
+- Updated LangPacks
+- GeoGebra: Fixed bug when saving manual-grade and comments for each attempt (Trello #1276)
+- Updated local_mobile
+- Updated mod/hotpot to 2016-06-14 (96)
+
+
 Changes 16.05.30
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 2.8.12 (Trello #1213)

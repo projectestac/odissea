@@ -32,4 +32,4 @@ $string['page-course-view-topics-x'] = 'Qualsevol pàgina del curs en format de 
 $string['pluginname'] = 'Format per temes';
 $string['section0name'] = 'General';
 $string['sectionname'] = 'Tema';
-$string['showfromothers'] = 'Mostra tema';
+$string['showfromothers'] = 'Mostra el tema';

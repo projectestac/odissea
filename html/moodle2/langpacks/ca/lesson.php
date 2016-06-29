@@ -29,7 +29,7 @@ $string['accesscontrol'] = 'Control d\'accés';
 $string['actionaftercorrectanswer'] = 'Acció després d\'una resposta correcta';
 $string['actionaftercorrectanswer_help'] = 'Després de respondre correctament una pregunta, hi ha 3 opcions per a  la pàgina següent:
 
-* Normal - Seguiu el camí de la lliçó.
+* Normal - Segueix el camí de la lliçó.
 * Mostra una pàgina no vista - Les pàgines es mostren en un ordre aleatori sense mostrar la mateixa pàgina  dues vegades.
 * Mostra una pàgina sense contestar - Les pàgines es mostren aleatòriament i es tornen a mostrar les pàgines que contenen preguntes encara no respostes.';
 $string['actions'] = 'Accions';
@@ -187,7 +187,7 @@ $string['eventlessonstarted'] = 'S\'ha començat la lliçó';
 $string['false'] = 'Fals';
 $string['fileformat'] = 'Format de fitxer';
 $string['finish'] = 'Acaba';
-$string['firstanswershould'] = 'La primera resposta hauria de saltar a la pàgina "Correcta"';
+$string['firstanswershould'] = 'La primera resposta hauria de saltar a la pàgina «Correcta»';
 $string['firstwrong'] = 'La vostra resposta no és correcta. Voleu reintentar-ho? (Si ara responeu correctament, no s\'incrementarà la puntuació final).';
 $string['flowcontrol'] = 'Control de flux';
 $string['fractionsaddwrong'] = 'Les notes que heu donat no sumen 100% (sumen {$a}%).
@@ -267,10 +267,7 @@ $string['mediaheight'] = 'Alçada de la finestra emergent';
 $string['mediawidth'] = 'Amplada de la finestra emergent';
 $string['messageprovider:graded_essay'] = 'Notificació de qualificació de treball';
 $string['minimumnumberofquestions'] = 'Nombre mínim de preguntes';
-$string['minimumnumberofquestions_help'] = 'Aquest paràmetre especifica el nombre mínim de preguntes que s\'utilitzaran per calcular la qualificació de l\'activitat. Si la lliçó conté una o més pàgines de contingut, el nombre mínim de preguntes ha de ser posat a zero.
-
-Si, per exemple, es posa a 20, pot ser interessant afegir a la pàgina d\'inici de la lliçó un text semblant a aquest:
-«En aquesta lliçó heu de respondre com a mínim a 20 preguntes, tot i que en podeu respondre més si ho desitgeu. No obstant això, si responeu menys de 20 preguntes, la vostra qualificació serà calculada com si n\'haguéssiu respost 20.»';
+$string['minimumnumberofquestions_help'] = 'Aquest paràmetre especifica el nombre mínim de preguntes que s\'utilitzaran per calcular la qualificació de l\'activitat.';
 $string['missingname'] = 'Introduïu un àlies';
 $string['modattempts'] = 'Permet a l\'estudiant la revisió';
 $string['modattempts_help'] = 'Si s\'activa, els estudiants poden navegar per la lliçó de nou i des del principi.';
@@ -294,7 +291,7 @@ $string['moving'] = 'S\'està movent la pàgina: {$a}';
 $string['multianswer'] = 'Resposta múltiple';
 $string['multianswer_help'] = 'Marqueu la casella de verificació si hi ha més d\'una resposta correcta.';
 $string['multichoice'] = 'Opcions múltiples';
-$string['multipleanswer'] = 'Múltiples respostes';
+$string['multipleanswer'] = 'Resposta múltiple';
 $string['nameapproved'] = 'Nom autoritzat';
 $string['namereject'] = 'El nom que heu escrit ha estat rebutjat.<br>Trieu-ne un altre.';
 $string['new'] = 'Nou';
@@ -408,7 +405,7 @@ $string['selectaqtype'] = 'Seleccioneu un tipus de pregunta';
 $string['shortanswer'] = 'Resposta breu';
 $string['showanunansweredpage'] = 'Mostra una pàgina no contestada';
 $string['showanunseenpage'] = 'Mostra una pàgina no vista';
-$string['singleanswer'] = 'Només una resposta';
+$string['singleanswer'] = 'Resposta única';
 $string['skip'] = 'Omet la navegació';
 $string['slideshow'] = 'Diapositives.';
 $string['slideshowbgcolor'] = 'Color de fons de les diapositives.';
@@ -434,7 +431,7 @@ $string['timeremaining'] = 'Temps restant';
 $string['timespenterror'] = 'Heu de dedicar almenys {$a} minuts en la lliçó';
 $string['timespentminutes'] = 'Temps dedicat (minuts).';
 $string['timetaken'] = 'Temps dedicat';
-$string['topscorestitle'] = 'Les {$a} puntuacions màximes de la lliçó.';
+$string['topscorestitle'] = 'Les {$a} puntuacions màximes de la lliçó';
 $string['true'] = 'Vertader';
 $string['truefalse'] = 'Vertader/Fals';
 $string['unabledtosavefile'] = 'No es pot desar el fitxer que heu carregat.';

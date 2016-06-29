@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = 'Åtgärder';
 $string['cacheconfig'] = 'Konfiguration';
 $string['cachedef_config'] = 'Konfigurationsinställningar';
+$string['cachedef_externalbadges'] = 'Externa märken för en särskild användare';
 $string['cachedef_yuimodules'] = 'Definitioner för YUI modul';
 $string['component'] = 'Komponent';
 $string['definition'] = 'Definition';

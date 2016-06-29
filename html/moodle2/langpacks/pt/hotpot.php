@@ -445,14 +445,6 @@ $string['pressoktocontinue'] = 'Prima OK para continuar ou Cancelar para ficar n
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texto de ajuda para o nome do teste';
 $string['quizzes'] = 'Testes';
-$string['removegradeitem'] = 'Apagar nota';
-$string['removegradeitem_help'] = 'O item da nota desta atividade deve ser apagado?
-
-**Não**
-: o item para a nota desta atividade no relatório de avaliação não deve ser apagado
-
-**Sim**
-: se a nota máxima ou a ponderação da nota para este teste estiver definida como zero, o item de avaliação para esta atividade será apagado do relatório de avaliação';
 $string['responses'] = 'Respostas';
 $string['responsesreport'] = 'Respostas';
 $string['reviewafterattempt'] = 'Permitir a revisão após a tentativa';

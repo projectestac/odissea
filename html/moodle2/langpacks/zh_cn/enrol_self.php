@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cohortonly_help'] = '自助选课仅限于指定群组中的成员。注意，修改这个设置不会影响已经存在的选课。';
+$string['cohortnonmemberinfo'] = '只有群\'{$a}\'的成员可以自主选课';
+$string['cohortonly'] = '只有群成员';
+$string['cohortonly_help'] = '自助选课仅限于指定群中的成员。注意，修改这个设置不会影响已经存在的选课。';
 $string['customwelcomemessage'] = '自定义欢迎信息';
 $string['defaultrole'] = '缺省分配的角色';
 $string['defaultrole_desc'] = '选择用户自助选课后被分配的角色';

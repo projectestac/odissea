@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'قد تم تحميل نص الكتروني';
+$string['event_assessable_uploaded'] = 'قد تم تحميل النص الكتروني';
 $string['pluginname'] = 'الكترونيا';

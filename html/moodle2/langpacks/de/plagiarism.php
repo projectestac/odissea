@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availableplugins'] = 'Verfügbare Plugins';
 $string['configenableplagiarism'] = 'Diese Option erlaubt  es Administratoren, Plugins zur Plagiatsuche zu konfigurieren (falls welche installiert sind)';
 $string['configplagiarismplugins'] = 'Bitte wählen Sie das Plugin zur Plagiatsuche, das Sie konfigurieren möchten';
-$string['enableplagiarism'] = 'Plagiatsuche';
+$string['enableplagiarism'] = 'Plagiatsuche aktivieren';
 $string['manageplagiarism'] = 'Plugins zur Plagiatsuche verwalten';
 $string['nopluginsinstalled'] = 'Keine Plugins zur Plagiatsuche installiert';
 $string['plagiarism'] = 'Plagiatsuche';

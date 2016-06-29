@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = '密码不正确';
+$string['pluginname'] = '使用密码的测验的访问规则';
+$string['quizpassword'] = '测验密码';
 $string['requirepasswordmessage'] = '知道密码才能试答此测验';

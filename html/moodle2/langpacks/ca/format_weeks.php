@@ -31,5 +31,5 @@ $string['page-course-view-weeks'] = 'Qualsevol pàgina del curs principal en for
 $string['page-course-view-weeks-x'] = 'Qualsevol pàgina del curs en format setmanal';
 $string['pluginname'] = 'Format setmanal';
 $string['section0name'] = 'General';
-$string['sectionname'] = 'setmana';
-$string['showfromothers'] = 'Mostra setmana';
+$string['sectionname'] = 'Setmana';
+$string['showfromothers'] = 'Mostra la setmana';

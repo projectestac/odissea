@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = '使用倒计时的测验的访问规则';
 $string['quiztimelimit'] = '时间限制：{$a}';

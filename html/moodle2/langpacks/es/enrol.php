@@ -34,7 +34,7 @@ $string['assignnotpermitted'] = 'No tiene permiso o no puede asignar roles en es
 $string['bulkuseroperation'] = 'Operación de usuario masiva';
 $string['configenrolplugins'] = 'Por favor, seleccione todos los conectores requeridos y colóquelos en orden adecuado.';
 $string['custominstancename'] = 'Personalizar nombre';
-$string['defaultenrol'] = 'Añadir ejemplo a cursos nuevos';
+$string['defaultenrol'] = 'Añadir instancia a cursos nuevos';
 $string['defaultenrol_desc'] = 'Es posible añadir esta extensión, por defecto, a todos los cursos nuevos.';
 $string['deleteinstanceconfirm'] = 'Está a punto de eliminar el método de matriculación "{$a->name}". Todos los  {$a->users} usuarios actualmente matriculados con este método serán dados de baja y cualquier información suya relativa a sus cursos, como las calificaciones, pertenencia a grupos o suscripción a foros será eliminada.
 

@@ -46,39 +46,39 @@ $string['uploadpicture_cannotsave'] = 'No s\'ha pogut desar la imatge de l\'usua
 $string['uploadpicture_cannotunzip'] = 'No es pot descomprimir el fitxer de les imatges';
 $string['uploadpicture_invalidfilename'] = 'El nom del fitxer d\'imatge {$a} té caràcters no vàlids. Aquest fitxer s\'ha omès.';
 $string['uploadpicture_overwrite'] = 'Voleu sobreescriure les imatges d\'usuari existents?';
-$string['uploadpictures'] = 'Càrrega d\'imatges d\'usuaris';
+$string['uploadpictures'] = 'Carrega imatges d\'usuaris';
 $string['uploadpictures_help'] = 'Les imatges dels usuaris poden ser pujades en un fitxer zip d\'imatges.  Els fitxers d\'imatges es solen anomenar atribut-escollit-usuari.extensió , per exemple usuari1234.jpg per a l\'usuari amb nom d\'usuari usuari1234.';
 $string['uploadpicture_userfield'] = 'Atribut d\'usuari utilitzat per aparellar les imatges:';
 $string['uploadpicture_usernotfound'] = 'No existeix l\'usuari amb camp \'{$a->userfield}\' igual a \'{$a->uservalue}\'. Aquest usuari s\'ha omès.';
 $string['uploadpicture_userskipped'] = 'S\'ha omès l\'usuari {$a} (ja té una imatge).';
 $string['uploadpicture_userupdated'] = 'S\'ha actualitzat la imatge de l\'usuari {$a}.';
 $string['uploadusers'] = 'Carrega usuaris';
-$string['uploadusers_help'] = '<p>En primer lloc, fixeu-vos que <strong>generalment no &eacute;s necessari importar usuaris en massa</strong>. Si voleu minorar les tasques de manteniment abans haur&iacute;eu d\'explorar les formes d\'autenticaci&oacute; que no requereixen un manteniment manual, per exemple la connexi&oacute; amb bases de dades externes o la possibilitat que els usuaris cre&iuml;n els seus comptes. Vg. la secci&oacute; d\'Autenticaci&oacute; dels men&uacute;s d\'administraci&oacute;.</p>
+$string['uploadusers_help'] = '<p>En primer lloc, fixeu-vos que <strong>generalment no és necessari importar usuaris en massa</strong>. Si voleu minorar les tasques de manteniment, abans hauríeu d\'explorar les formes d\'autenticació que no requereixen un manteniment manual; per exemple, la connexió amb bases de dades externes o la possibilitat que els usuaris creïn els seus comptes (veg. la secció d\'autenticació dels menús d\'administració).</p>
 
-<p>Si esteu segur que voleu importar molts comptes d\'usuari des d\'un fitxer de text, aleshores heu de formatar aix&iacute; el fitxer:</p>
+<p>Si esteu segur que voleu importar molts comptes d\'usuari des d\'un fitxer de text, aleshores heu de formatar així el fitxer:</p>
 
 <ul>
-  <li>Cada l&iacute;nia del fitxer cont&eacute; un registre.</li>
-  <li>Cada registre &eacute;s una seq&uuml;&egrave;ncia de dades separades per comes.</li>
-  <li>El primer registre del fitxer &eacute;s especial i cont&eacute; la llista de noms dels camps. Aix&ograve; defineix el format de la resta del fitxer.
+  <li>Cada línia del fitxer conté un registre.</li>
+  <li>Cada registre és una seqüència de dades separades per comes.</li>
+  <li>El primer registre del fitxer és especial i conté la llista de noms dels camps. Això defineix el format de la resta del fitxer.
     <blockquote>
-      <p><strong>Noms de camps necessaris:</strong> aquests camps s\'han d\'incloure al primer registre i han d\'estar definits per a cada usuari</p>
+      <p><strong>Noms de camps necessaris</strong>: aquests camps s\'han d\'incloure al primer registre i han d\'estar definits per a cada usuari</p>
       <p></p>
       <font color="#990000" face="Courier New, Courier, mono">username, password, firstname, lastname, email</font></p>
 </p>
-      <p><strong>Noms de camps per defecte:</strong> aquests s&oacute;n opcionals - si no s&oacute;n inclosos, aleshores s\'agafen del perfil de l\'administrador principal</p>
+      <p><strong>Noms de camps per defecte</strong>: aquests són opcionals; si no s\'inclouen, aleshores s\'agafen del perfil de l\'administrador principal</p>
       <p><font color="#990000" face="Courier New, Courier, mono">institution, department, city, country, lang, timezone</font> </p>
-      <p><strong>Noms de camps opcionals: </strong>tots aquests s&oacute;n completament opcionals. Els noms dels cursos s&oacute;n els &quot;noms curts&quot; dels cursos - si s\'inclouen, aleshores l\'usuari &eacute;s inscrit com a estudiant en aquests cursos. Els noms de grups s\'han d\'associar als cursos corresponents, p. e. group1 a course1, etc.</p>
+      <p><strong>Noms de camps opcionals</strong>: tots aquests són completament opcionals. Els noms dels cursos són els «noms curts» dels cursos; si s\'inclouen, aleshores l\'usuari és inscrit com a estudiant en aquests cursos. Els noms de grups s\'han d\'associar als cursos corresponents; p. e., group1 a course1, etc.</p>
       <p> <font color="#990000" face="Courier New, Courier, mono">idnumber, icq, phone1, phone2, address, url, description, mailformat, maildisplay, htmleditor, autosubscribe, course1, course2, course3, course4, course5, group1, group2, group3, group4, group5</font></p>
     </blockquote>
     </li>
-  <li>Les comes dins de les dades s\'han de codificar com &amp;#44. El programa far&agrave; autom&agrave;ticament la descodificaci&oacute;. </li>
+  <li>Les comes dins de les dades s\'han de codificar com a ,. El programa farà automàticament la descodificació. </li>
   <li>En els camps booleans, feu servir 0 per a fals i 1 per a vertader.</li>
-  <li>Nota: si un usuari ja est&agrave; registrat en la base de dades d\'usuaris de Moodle, aquest programa torna el n&uacute;mero userid de l\'usuari (l\'&iacute;ndex de la base de dades) i l\'inscriu com a estudiant en els cursos especificats SENSE actualitzar les altres dades.</li>
+  <li>Nota: si un usuari ja està registrat a la base de dades d\'usuaris de Moodle, aquest programa torna el número userid de l\'usuari (l\'índex de la base de dades) i l\'inscriu com a estudiant en els cursos especificats SENSE actualitzar les altres dades.</li>
 </ul>
 
 
-<p>Heus ac&iacute; un exemple d\'un fitxer d\'importaci&oacute; v&agrave;lid:</p>
+<p>Heus aquí un exemple d\'un fitxer d\'importació vàlid:</p>
 <p><font size="-1" face="Courier New, Courier, mono">username, password, firstname, lastname, email, lang, idnumber, maildisplay, course1, group1<br />
 jonest, verysecret, Tom, Jones, jonest@someplace.edu, en, 3663737, 1, Intro101, Section 1<br />
 reznort, somesecret, Trent, Reznor, reznort@someplace.edu, en_us, 6736733, 0, Advanced202, Section 3</font></p>';
@@ -110,7 +110,7 @@ $string['uuoptype_addnew'] = 'Afegeix només usuaris nous, omet els ja existents
 $string['uuoptype_addupdate'] = 'Afegeix usuaris nous i actualitza els ja existents';
 $string['uuoptype_update'] = 'Només actualiza els usuaris ja existents';
 $string['uupasswordcron'] = 'Generat en cron';
-$string['uupasswordnew'] = 'Nova contrasenya d\'usuari';
+$string['uupasswordnew'] = 'Contrasenya nova d\'usuari';
 $string['uupasswordold'] = 'Contrasenya d\'usuari existent';
 $string['uustandardusernames'] = 'Estandarditza els noms d\'usuari';
 $string['uuupdateall'] = 'Sobreescriu amb el fitxer i els valors predeterminats';

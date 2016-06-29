@@ -30,6 +30,7 @@ $string['component'] = 'Osagaia';
 $string['corecomponent'] = 'Sistema';
 $string['default'] = 'Berezkoa';
 $string['disabled'] = 'Desgaituta';
+$string['taskdisabled'] = 'Ataza desgaituta';
 $string['taskscheduleday'] = 'Eguna';
 $string['taskscheduledayofweek'] = 'Asteko eguna';
 $string['taskschedulehour'] = 'Ordua';

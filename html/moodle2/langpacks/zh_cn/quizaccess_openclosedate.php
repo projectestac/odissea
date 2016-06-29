@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = '此测验现在不可用';
+$string['pluginname'] = '开放和关闭日期的测验访问规则';
 $string['quiznotavailable'] = '测验将开放于：{$a}';

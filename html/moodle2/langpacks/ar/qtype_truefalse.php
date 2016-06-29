@@ -26,9 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctanswer'] = 'الجواب الصحيح';
+$string['correctanswerfalse'] = 'الإجابة الصحيحة هي "خطأ"';
+$string['correctanswertrue'] = 'الإجابة الصحيحة هي "صح"';
 $string['false'] = 'خطأ';
 $string['pluginname'] = 'صح/خطأ';
 $string['pluginnameadding'] = 'إضافة سؤال صح/خطأ';
 $string['pluginnameediting'] = 'تحرير سؤال صح/خطأ';
 $string['pluginnamesummary'] = 'نوع بسيط من الأسئلة متعددة الخيارات مع خيارين فقط \'صح\' و \'خطأ\'';
+$string['selectone'] = 'اخترأحد الخيارات';
 $string['true'] = 'صح';

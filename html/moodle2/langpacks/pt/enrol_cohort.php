@@ -30,6 +30,6 @@ $string['assignrole'] = 'Atribuir papel';
 $string['cohort:config'] = 'Configurar instâncias de grupos globais';
 $string['cohort:unenrol'] = 'Desinscrever utilizadores suspensos';
 $string['instanceexists'] = 'O grupo global já está sincronizado com o papel selecionado';
-$string['pluginname'] = 'Sincronização de inscrição de grupos globais';
+$string['pluginname'] = 'Sincronização com grupos globais';
 $string['pluginname_desc'] = 'Este módulo de inscrição sincroniza os membros de grupos globais com os participantes da disciplina.';
 $string['status'] = 'Ativo';

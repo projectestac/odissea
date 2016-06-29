@@ -83,7 +83,6 @@ $string['penalties'] = 'ペナルティ';
 $string['percent'] = 'パーセント';
 $string['pluginname'] = 'Hot Potatoes';
 $string['questionshort'] = 'Q-{$a}';
-$string['removegradeitem'] = '評定項目を削除する';
 $string['score'] = 'スコア';
 $string['status'] = 'ステータス';
 $string['studentfeedback'] = '学生のフィードバック';

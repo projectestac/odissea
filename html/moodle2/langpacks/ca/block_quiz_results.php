@@ -25,28 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['bestgrade'] = 'La nota més alta';
+$string['bestgrade'] = 'La nota més alta:';
 $string['bestgrades'] = 'Les {$a} notes més altes:';
 $string['bestgroupgrade'] = 'El grup amb la mitjana més alta:';
 $string['bestgroupgrades'] = 'Els {$a} grups amb la mitjana més alta:';
 $string['config_format_absolute'] = 'Nombres absoluts';
 $string['config_format_fraction'] = 'Fraccions';
 $string['config_format_percentage'] = 'Percentatges';
-$string['config_grade_format'] = 'Visualitza les notes com:';
+$string['config_grade_format'] = 'Visualitza les notes com a:';
 $string['config_name_format'] = 'Nivell de privacitat per mostrar els resultats.';
 $string['config_names_anon'] = 'Resultats anònims';
 $string['config_names_full'] = 'Mostra els noms complets';
 $string['config_names_id'] = 'Mostra sols els nombres ID';
 $string['config_no_quizzes_in_course'] = 'Aquest curs no conté cap activitat quiz. Us cal afegir al menys una per poder utilitzar aquest bloc de forma correcta.';
 $string['config_select_quiz'] = 'De quina forma s\'haurien de mostrar els resultats d\'aquest bloc ?';
-$string['config_show_best'] = 'Quina és la quantitat de notes altes que s\'haurien de mostrar (0 per inhabilitar)?';
-$string['config_show_worst'] = 'Quina és la quantitat de notes baixes que s\'haurien de mostrar (0 per inhabilitar)?';
-$string['configuredtoshownothing'] = 'La configuració d\'aquest bloc no us permet visualitzar cap resultat. Us caldrà configurar-ho per mostrar-ho o amagar-ho.';
-$string['config_use_groups'] = 'Visualitza grups en lloc d\'alumnes (sols si el qüestionari suporta grups) ?';
+$string['config_show_best'] = 'Quantes qualificacions de les més altes s\'haurien de mostrar (0 per inhabilitar)?';
+$string['config_show_worst'] = 'Quantes qualificacions de les més baixes s\'haurien de mostrar (0 per inhabilitar)?';
+$string['configuredtoshownothing'] = 'Actualment, la configuració d\'aquest bloc no permet mostrar cap resultat. És possible que vulgueu configurar-ho o amagar-ho.';
+$string['config_use_groups'] = 'Mostra els grups en lloc dels estudiants (només si l\'activitat admet grups)?';
 $string['error_emptyquizid'] = 'Hi ha un error en aquest bloc: us cal seleccionar de quin qüestionari us cal mostrar els resultats.';
 $string['error_emptyquizrecord'] = 'Hi ha un error en aquest bloc: el qüestionari seleccionat no existeix a la base de dades.';
 $string['error_nogroupsexist'] = 'Hi ha un error en aquest bloc:
-Heu configurar mostrar notes en el mode grups, però no heu definit cap grup.';
+està configurat per mostrar qualificacions en mode de grup, però no heu definit cap grup.';
 $string['pluginname'] = 'Resultats del qüestionari';
 $string['quiz_results:addinstance'] = 'Afegir un bloc nou de resultats del qüestionari';
 $string['worstgrade'] = 'La nota més baixa:';

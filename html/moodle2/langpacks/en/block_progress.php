@@ -113,6 +113,7 @@ $string['lti'] = 'External tool';
 $string['marked'] = 'marked';
 $string['mouse_over_prompt'] = 'Mouse over or touch bar for info.';
 $string['no_blocks'] = 'No Progress Bar blocks are set up for your courses.';
+$string['no_courses'] = 'You are not enrolled in any courses. Only bars from enrolled courses will be shown.';
 $string['no_events_config_message'] = 'There are no activities or resources to monitor the progress of. Create some activities and/or resources then configure this block.';
 $string['no_events_message'] = 'No activities or resources are being monitored. Use config to set up monitoring.';
 $string['notAttempted_colour'] = '#C71C22';

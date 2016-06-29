@@ -239,6 +239,7 @@ $string['linkedfiledoesntexist'] = '链接文件 {$a} 不存在';
 $string['makechildof'] = '“{$a}”的子文件';
 $string['makecopy'] = '克隆一份';
 $string['maketoplevelitem'] = '移动至顶层';
+$string['manualgradeinvalidformat'] = '这不是一个有效的数字';
 $string['manualgradeoutofrange'] = '此成绩在有效范围之外。';
 $string['manuallygraded'] = '人工评为{$a->mark}分，评语：{$a->comment}';
 $string['mark'] = '得分';

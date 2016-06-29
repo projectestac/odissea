@@ -953,6 +953,7 @@ $string['tablenosave'] = 'Ändringarna i den ovanstående tabellen sparas automa
 $string['tablesnosave'] = 'Ändringarna i de ovanstående tabellerna sparas automatiskt.';
 $string['tabselectedtofront'] = 'På tabeller med tabbar bör raden med den för tillfället valda taggen placeras längst fram.';
 $string['tabselectedtofronttext'] = 'Flytta den markerade tab-raden till förgrunden';
+$string['taskbadgescron'] = 'Tilldela märken';
 $string['themedesignermode'] = 'Läge för design av teman';
 $string['themelist'] = 'Lista över teman';
 $string['themenoselected'] = 'Inget tema har valts';

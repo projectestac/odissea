@@ -27,23 +27,23 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clicktodownload'] = 'ファイルをダウンロードするには {$a} リンクをクリックしてください。';
 $string['clicktoopen2'] = 'ファイルを表示するには {$a} リンクをクリックしてください。';
-$string['configdisplayoptions'] = '利用可能にしたいオプションすべてを選択してください。既存の設定は、変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
+$string['configdisplayoptions'] = '利用可能にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
 $string['configframesize'] = 'フレーム内にウェブページやアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
-$string['configparametersettings'] = '新しいリソースを登録する場合、パラメータ設定に関するデフォルト値を設定できるウィンドウ枠を表示します。最初にリソースを登録した後、この値は各ユーザのプリファレンスとなります。';
+$string['configparametersettings'] = '新しいリソースを登録する場合のパラメータ設定に関するデフォルト値を設定できるウィンドウ枠を表示します。最初にリソースを登録した後、この値は各ユーザのプリファレンスとなります。';
 $string['configpopup'] = 'ポップアップウィンドウに表示できる新しいリソースを追加する場合、このオプションをデフォルトで有効にしますか?';
-$string['configpopupdirectories'] = 'ダイレクトリンクをポップデフォルトでアップウィンドウに表示しますか?';
+$string['configpopupdirectories'] = 'デフォルトでディレクトリリンクをポップアップウィンドウに表示しますか?';
 $string['configpopupheight'] = '新しいポップアップウィンドウのデフォルトの高さは?';
-$string['configpopuplocation'] = 'ポップアップウィンドウにデフォルトでアドレスバーを表示しますか?';
-$string['configpopupmenubar'] = 'ポップアップウィンドウにデフォルトでメニューバーを表示しますか?';
-$string['configpopupresizable'] = 'ポップアップウィンドウをデフォルトでリサイズさせますか?';
-$string['configpopupscrollbars'] = 'ポップアップウィンドウをデフォルトでスクロールさせますか?';
-$string['configpopupstatus'] = 'ポップアップウィンドウにデフォルトでステータスバーを表示しますか?';
-$string['configpopuptoolbar'] = 'ポップアップウィンドウにデフォルトでツールバーを表示しますか?';
+$string['configpopuplocation'] = 'デフォルトでポップアップウィンドウにアドレスバーを表示しますか?';
+$string['configpopupmenubar'] = 'デフォルトでポップアップウィンドウにメニューバーを表示しますか?';
+$string['configpopupresizable'] = 'デフォルトでポップアップウィンドウをリサイズできるようにしますか?';
+$string['configpopupscrollbars'] = 'デフォルトでポップアップウィンドウをスクロールできるようにしますか?';
+$string['configpopupstatus'] = 'デフォルトでポップアップウィンドウにステータスバーを表示しますか?';
+$string['configpopuptoolbar'] = 'デフォルトでポップアップウィンドウにツールバーを表示しますか?';
 $string['configpopupwidth'] = '新しいポップアップウィンドウのデフォルトの幅は?';
 $string['contentheader'] = 'コンテンツ';
 $string['displayoptions'] = '利用可能な表示オプション';
 $string['displayselect'] = '表示';
-$string['displayselectexplain'] = '表示タイプを選択してください。残念ですが、すべてのタイプが、すべてのファイルに適しているということではありません。';
+$string['displayselectexplain'] = '表示タイプを選択してください。残念ですが、すべてのタイプがすべてのファイルに適しているということではありません。';
 $string['displayselect_help'] = 'ファイルタイプおよびブラウザが埋め込みを許可するかどうかも含めて、この設定ではファイルがどのように表示されるか決定します。以下のオプションを含みます:
 
 * 自動- 選択されたファイルタイプを自動的に検出する最良の表示オプションです。
@@ -57,7 +57,7 @@ $string['dnduploadresource'] = 'ファイルリソースを作成する';
 $string['encryptedcode'] = '暗号化コード';
 $string['filenotfound'] = '申し訳ございません、ファイルが見つかりませんでした。';
 $string['filterfiles'] = 'ファイルコンテンツにフィルタを使用する';
-$string['filterfilesexplain'] = 'コンテンツフィルタのタイプを選択してください。この設定により、いくつかのFlashおよびJapaアプレットに問題が生じる可能性があることに留意してください。また、すべてのテキストファイルが、UTF-8エンコーディングされていることを確認してください。';
+$string['filterfilesexplain'] = 'コンテンツフィルタのタイプを選択してください。この設定により、いくつかのFlashおよびJapaアプレットに問題が生じる可能性があることに留意してください。また、すべてのテキストファイルがUTF-8エンコーディングされていることを確認してください。';
 $string['filtername'] = 'リソース名オートリンク';
 $string['forcedownload'] = 'ダウンロードを強制する';
 $string['framesize'] = 'フレーム高';
@@ -65,7 +65,7 @@ $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
 $string['modulename'] = 'ファイル';
-$string['modulename_help'] = 'ファイルモジュールにおいて、教師はコースリソースとしてファイルを提供することができます。可能な場合、ファイルはコースインターフェース内に表示されます。そうでない場合、学生にファイルのダウンロードが促されます。例えばHTMLページにイメージまたはフラッシュオブジェクトを埋め込むことができるように、ファイルモジュールではファイルの組み込みがサポートされます。
+$string['modulename_help'] = 'ファイルモジュールにおいて、教師はコースリソースとしてファイルを提供することができます。可能な場合、ファイルはコースインターフェース内に表示されます。そうでない場合、学生にファイルのダウンロードが促されます。例えばHTMLページにイメージまたはフラッシュオブジェクトを埋め込むことができるようにファイルモジュールではファイルの組み込みがサポートされます。
 
 ファイルを開くために、学生は自分のコンピュータに適切なソフトウェアをインストールする必要があります。
 
@@ -73,21 +73,21 @@ $string['modulename_help'] = 'ファイルモジュールにおいて、教師�
 
 * クラスで実施するプレゼンテーションの共有のため
 * コースリソースとしてミニウェブサイトを含むため
-* 特定のソフトウェアプログラムの下書きファイル (例 Photoshop .psd) を提供して、学生が編集および評価のために提出できるようにするため';
+* 特定のソフトウェアプログラムの下書きファイル (例 Photoshop .psd) を提供して学生が編集および評価のために提出できるようにするため';
 $string['modulenameplural'] = 'ファイル';
-$string['notmigrated'] = '申し訳ございません、このレガシーリソースタイプ ({$a}) は、まだ移行されていません。';
+$string['notmigrated'] = '申し訳ございません、このレガシーリソースタイプ ({$a}) はまだ移行されていません。';
 $string['optionsheader'] = '表示オプション';
 $string['page-mod-resource-x'] = 'すべてのファイルモジュールページ';
-$string['pluginadministration'] = 'リソース管理';
-$string['pluginname'] = 'リソース';
+$string['pluginadministration'] = 'ファイルモジュール管理';
+$string['pluginname'] = 'ファイル';
 $string['popupheight'] = 'ポップアップ高 (ピクセル)';
 $string['popupheightexplain'] = 'ポップアップウィンドウのデフォルト高を指定してください。';
-$string['popupresource'] = 'このリソースは、ポップアップウィンドウに表示されます。';
+$string['popupresource'] = 'このリソースはポップアップウィンドウに表示されます。';
 $string['popupresourcelink'] = 'ウィンドウが表示されない場合はここをクリック： {$a}';
 $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
 $string['printintro'] = 'ページ説明を表示する';
-$string['printintroexplain'] = 'コンテンツの下にページ説明を表示しますか? 有効にしても、いくつかの表示タイプでは、説明を表示することができません。';
+$string['printintroexplain'] = 'コンテンツの下にページ説明を表示しますか? 有効にしてもいくつかの表示タイプでは説明を表示することができません。';
 $string['resource:addinstance'] = '新しいリソースを追加する';
 $string['resourcecontent'] = 'ファイルおよびサブフォルダ';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
@@ -99,4 +99,8 @@ $string['showsize_desc'] = 'コースページにファイルサイズを表示�
 $string['showsize_help'] = 'ファイルへのリンクの横に「3.1 MB」のようにファイルサイズが表示されます。このリソースに複数ファイルが含まれている場合、ファイルの合計サイズが表示されます。';
 $string['showtype'] = 'タイプを表示する';
 $string['showtype_desc'] = 'コースページにファイルタイプ (例 「Wordドキュメント」) を表示しますか?';
-$string['showtype_help'] = '「Wordドキュメント」のようなファイルタイプをファイルへのリンクの横に表示します。このリソースに複数ファイルが含まれている場合、最初のファイルタイプが表示されます。ファイルタイプがシステムに未知の場合、表示されません。';
+$string['showtype_help'] = '「Wordドキュメント」のようなファイルタイプをファイルへのリンクの横に表示します。
+
+このリソースに複数ファイルが含まれている場合、最初のファイルタイプが表示されます。
+
+ファイルタイプがシステムに未知の場合、表示されません。';

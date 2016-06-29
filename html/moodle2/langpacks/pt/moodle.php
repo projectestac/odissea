@@ -117,7 +117,7 @@ $string['administratorsandteachers'] = 'Administradores e professores';
 $string['advanced'] = 'Avançado';
 $string['advancedfilter'] = 'Filtro avançado';
 $string['advancedsettings'] = 'Configurações avançadas';
-$string['afterresource'] = 'A seguir ao recurso "{$a}"';
+$string['afterresource'] = 'A seguir ao recurso: "{$a}"';
 $string['aftersection'] = 'A seguir à secção "{$a}"';
 $string['again'] = 'novamente';
 $string['aimid'] = 'ID do AIM';
@@ -483,7 +483,7 @@ $string['deleteallcannotundo'] = 'Apagar todos - não pode ser recuperado';
 $string['deleteallcomments'] = 'Apagar todos os comentários';
 $string['deleteallratings'] = 'Apagar todas as classificações';
 $string['deletecategory'] = 'Apagar categoria: {$a}';
-$string['deletecategorycheck'] = 'Tem a certeza absoluta que quer apagar completamente esta categoria  <b>\'{$a}\'</b>?<br />As disciplinas nesta categoria serão deslocadas para a categoria superior, se existir, ou para a categoria Geral.';
+$string['deletecategorycheck'] = 'Tem a certeza absoluta que quer apagar completamente esta categoria  <b>\'{$a}\'</b>?<br />As disciplinas nesta categoria serão deslocadas para a categoria ascendente, se existir, ou para a categoria Geral.';
 $string['deletecategorycheck2'] = 'Se apagar esta categoria, deve decidir o que fazer às disciplinas e subcategorias nela contidas.';
 $string['deletecategoryempty'] = 'Esta categoria está vazia.';
 $string['deletecheck'] = 'Apagar {$a} ?';
@@ -1042,12 +1042,12 @@ $string['loginto'] = 'Entrar em {$a}';
 $string['logout'] = 'Sair';
 $string['logoutconfirm'] = 'Tem a certeza que quer sair?';
 $string['logs'] = 'Registos de atividade';
-$string['logtoomanycourses'] = '[ <a href="{$a->url}">more</a> ]';
-$string['logtoomanyusers'] = '[ <a href="{$a->url}">more</a> ]';
+$string['logtoomanycourses'] = '[ <a href="{$a->url}">mais</a> ]';
+$string['logtoomanyusers'] = '[ <a href="{$a->url}">mais</a> ]';
 $string['lookback'] = 'Desde há';
 $string['mailadmins'] = 'Informe os administradores';
 $string['mailstudents'] = 'Informar os alunos';
-$string['mailteachers'] = 'Informe os professores';
+$string['mailteachers'] = 'Informar os professores';
 $string['maincoursepage'] = 'Página principal da disciplina';
 $string['makeafolder'] = 'Criar pasta';
 $string['makeeditable'] = 'Se mudar as permissões de \'{$a}\' para que o servidor de http (por exemplo Apache) possa modificá-lo, este ficheiro poderá ser editado diretamente nesta página';
@@ -1059,7 +1059,7 @@ $string['managedatabase'] = 'Gestão da base de dados';
 $string['manageeditorfiles'] = 'Gerir ficheiros usados pelo editor';
 $string['managefilters'] = 'Filtros';
 $string['managemodules'] = 'Módulos';
-$string['manageroles'] = 'papéis e permissões';
+$string['manageroles'] = 'Papéis e permissões';
 $string['markedthistopic'] = 'Este tópico está marcado como o tópico atual';
 $string['markthistopic'] = 'Marque este tópico como o tópico atual';
 $string['matchingsearchandrole'] = 'Corresponder \'{$a->search}\' e {$a->role}';
@@ -1078,7 +1078,7 @@ $string['maxnumberweeks_desc'] = 'Número máximo disponível na lista pendente 
 $string['maxnumcoursesincombo'] = 'Procurar <a href="{$a->link}">{$a->numberofcourses} disciplinas</a>.';
 $string['maxsize'] = 'Tamanho máximo:{$a}';
 $string['maxsizeandareasize'] = 'Tamanho máximo para novos ficheiros: {$a->size}, overall limit: {$a->areasize}';
-$string['maxsizeandattachments'] = 'Tamanho máximo para novos ficheiros: {$a->size}, máximo de anexos: {$a->attachments}';
+$string['maxsizeandattachments'] = 'Tamanho máximo para novos ficheiros: {$a->size}, número máximo de anexos: {$a->attachments}';
 $string['maxsizeandattachmentsandareasize'] = 'Tamanho máximo para novos ficheiros: {$a->size}, número máximo de anexos: {$a->attachments}, limite global: {$a->areasize}';
 $string['memberincourse'] = 'Participantes na disciplina';
 $string['messagebody'] = 'Conteúdo da mensagem';
@@ -1150,7 +1150,7 @@ $string['moreprofileinfoneeded'] = 'Conte-nos mais coisas sobre si';
 $string['mostrecently'] = 'mais recentemente';
 $string['move'] = 'Mover';
 $string['movecategoriessuccess'] = 'Foram movidas com sucesso {$a->count} categorias para a categoria \'{$a->to}\'';
-$string['movecategoriestotopsuccess'] = 'Foram movidas com sucesso {$a->count} categorias para o nível superior';
+$string['movecategoriestotopsuccess'] = 'Foram movidas com sucesso {$a->count} categorias para o nível de topo';
 $string['movecategorycontentto'] = 'Mover para';
 $string['movecategorysuccess'] = 'Foi movida com sucesso a categoria \'{$a->moved}\' para a categoria \'{$a->to}\'';
 $string['movecategoryto'] = 'Mover categoria para:';
@@ -1196,12 +1196,12 @@ $string['newpassword'] = 'Nova senha';
 $string['newpasswordfromlost'] = '<strong>ATENÇÃO:</strong> A sua <strong>senha atual</strong> deverá ter sido enviada para si na <strong>segunda</strong> de duas mensagens que lhe foram enviadas como parte do processo de recuperação de senha. Verifique que já recebeu a mensagem com a senha de substituição antes de continuar com esta página.';
 $string['newpassword_help'] = 'Insira uma nova senha ou deixe em branco para manter a atual.';
 $string['newpasswordtext'] = 'Viva {$a->firstname},
-Tal como foi pedido, a senha da sua conta em  \'{$a->sitename}\' foi substituída por uma nova senha provisória.
+Tal como foi pedido, a senha da sua conta em \'{$a->sitename}\' foi substituída por uma nova senha provisória.
 
 A informação atual da sua conta de utilizador é:
 
   Nome de utilizador: {$a->username}
-  senha: {$a->newpassword}
+  Senha: {$a->newpassword}
 
 Por favor visite a página que se segue, para modificar a senha provisória:
    {$a->link}
@@ -1800,10 +1800,10 @@ $string['topicoutline'] = 'Lista de tópicos';
 $string['topicshow'] = 'Mostre este tópico a {$a}';
 $string['toplevelcategory'] = 'Categoria de nível superior';
 $string['total'] = 'Total';
-$string['totopofsection'] = 'Para o topo da secção "{$a}"';
+$string['totopofsection'] = 'Para o topo da secção: "{$a}"';
 $string['trackforums'] = 'Monitorização de fóruns';
 $string['trackforumsno'] = 'Não: não assinalar mensagens não lidas';
-$string['trackforumsyes'] = 'Sim: Assinalar mensagens não lidas';
+$string['trackforumsyes'] = 'Sim: assinalar mensagens não lidas';
 $string['trysearching'] = 'Tente melhor fazer uma pesquisa.';
 $string['turneditingoff'] = 'Desativar modo de edição';
 $string['turneditingon'] = 'Ativar modo de edição';
@@ -1848,7 +1848,7 @@ $string['uploadnotallowed'] = 'Não é permitido anexar ficheiros';
 $string['uploadnotempdir'] = 'Não existe pasta temporária';
 $string['uploadoldfilesdeleted'] = 'O(s) ficheiro(s) antigo(s) na sua área de ficheiros enviados foi apagado';
 $string['uploadpartialfile'] = 'Foi recebida apenas uma parte do ficheiro';
-$string['uploadproblem'] = 'Ocorreu m problema desconhecido no envio do ficheiro \'{$a}\' (talvez fosse demasiado grande?)';
+$string['uploadproblem'] = 'Ocorreu um problema desconhecido ao carregar o ficheiro \'{$a}\' (verifique se excedeu o tamanho permitido)';
 $string['uploadrenamedchars'] = 'O ficheiro foi renomeado de {$a->oldname} para {$a->newname} para substituir caracteres não válidos.';
 $string['uploadrenamedcollision'] = 'O ficheiro foi renomeado de  {$a->oldname} para {$a->newname} devido a um conflito no nome.';
 $string['uploadserverlimit'] = 'O ficheiro enviado excedeu o limite de tamanho máximo imposto pelo servidor';

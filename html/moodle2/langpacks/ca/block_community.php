@@ -65,7 +65,7 @@ $string['enroldownload_help'] = 'Alguns dels cursos enumerats en la col·lectivi
 D\'altres, són plantilles de cursos proporcionats perquè els descarregueu i els empreu al vostre lloc Moodle.';
 $string['enrollable'] = 'cursos als quals em puc inscriure';
 $string['enrollablecourses'] = 'Cursos que admeten inscripcions';
-$string['errorcourselisting'] = 'S\'ha produït un error mentre es recuperava la llista de cursos de la col·lectivitat escollida; si us plau, torneu-ho a intentar més tard. ({$a})';
+$string['errorcourselisting'] = 'S\'ha produït un error mentre es recuperava la llista de cursos de la col·lectivitat escollida; torneu-ho a intentar més tard. ({$a})';
 $string['errorhublisting'] = 'S\'ha produït un error mentre es recuperava la llista de la col·lectivitat a Moodle.org; torneu-ho a intentar més tard. ({$a})';
 $string['fileinfo'] = 'Idioma: {$a->lang} - Llicència: {$a->license} - Darrera revisió: {$a->timeupdated}';
 $string['hideall'] = 'Amaga els hubs';

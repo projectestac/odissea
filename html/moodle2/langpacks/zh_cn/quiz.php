@@ -35,7 +35,7 @@ $string['addaquestion'] = '添加一道试题';
 $string['addarandomquestion'] = '添加一道随机题';
 $string['addarandomquestion_help'] = '添加随机题后，会从类别中随机选出一道题，插入到测验中。也就是说，不同学生会得到不同的题。如果测验允许多次答题，那么每次答题都会看到不同的题。';
 $string['addarandomselectedquestion'] = '添加一个随机选择的问题...';
-$string['adddescriptionlabel'] = '添加描述/标签';
+$string['adddescriptionlabel'] = '添加描述项目';
 $string['addingquestion'] = '添加一道试题';
 $string['addingquestions'] = '<p>页面的这一边用来管理题库。试题分门别类，以便管理。题库中的试题可用于您课程中的任何一次测验。如果您选择“发布”它们，则任何课程都可以使用这些题目。<br /><br />您在选择或创建类别后才能创建或编辑试题。您可以选择任何题目加入到另一边的测验中。</p>';
 $string['addmoreoverallfeedbacks'] = '再添加{no}个反馈域';
@@ -180,7 +180,7 @@ $string['configintro'] = '这里设置的值是您创建新测验时设置表单
 $string['configmaximumgrade'] = '测验成绩最高分的缺省值。';
 $string['confignavmethod'] = '在自由模式下，所有问题可以通过导航控件自由切换答题顺序。在顺序模式下，则必须按指定顺序答题。';
 $string['confignewpageevery'] = '在向测验添加试题时，会根据您在这里的设置决定是否自动插入分页符。';
-$string['configoutcomesadvanced'] = '';
+$string['configoutcomesadvanced'] = '若启用这选项，那这测验编辑表单上的成果，是属于高级设置。';
 $string['configpenaltyscheme'] = '在适应模式下，每次回答错误都会导致罚分。';
 $string['configpopup'] = '强制在弹出窗口中打开试卷，并尝试用 JavaScript 限制拷贝和粘贴等操作。';
 $string['configrequirepassword'] = '学生必须输入这个密码才可以尝试测验。';
@@ -460,7 +460,20 @@ $string['missingcorrectanswer'] = '必须指定正确答案';
 $string['missingitemtypename'] = '缺少名称';
 $string['missingquestion'] = '此题目好像不会再存在';
 $string['modulename'] = '测验';
-$string['modulename_help'] = '教师可以在测验模块中设计选择、判断、匹配等多种类型的题目。所有回答都会被自动评分。教师可以选择是否给予反馈、是否显示正确答案。';
+$string['modulename_help'] = '教师可以在测验模块中设计选择、填空、匹配、数字、判断、讨论等多种类型的题目。
+
+教师可以允许同一测验作答多次，并使用从题库随机抽题，试题顺序随机排列、选择题或匹配题选项随机排列等方式，以减少作弊的可能性。教师也可以设置测验开放日期，或每次作答的时间限制(会有倒计时)。
+
+除了讨论题外，每次作答都会自动评分，而分数会保存到成绩册上。
+
+教师可以提供三种反馈，答题时的提示（依选项而不同），做完该题后的一般反馈（都相同），以及做完测验之后的整体反馈（分成几个等级）。
+
+此测验用于：
+* 课程的正式考试
+* 每一单元的单元测验
+* 使用以往的旧题目做练习性测验
+* 提供学生表现立即反馈
+* 让学生自我评价';
 $string['modulenameplural'] = '测验';
 $string['moveselectedonpage'] = '移动已选定试题到 {$a} 页';
 $string['multichoice'] = '选择题';
@@ -536,7 +549,7 @@ $string['orderandpaging_help'] = '每道题目后面的10、20、30这样的数�
 要将题目分配在几个页面，点击重新分页按钮，然后选择期望每页几道题。';
 $string['orderingquiz'] = '顺序与分页';
 $string['orderingquizx'] = '顺序和分页：{$a}';
-$string['outcomesadvanced'] = '结果是高级设置';
+$string['outcomesadvanced'] = '成果是高级设置';
 $string['outof'] = '{$a->grade}/满分{$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade}/满分{$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
@@ -736,7 +749,13 @@ $string['reviewoptions'] = '学生可以回顾';
 $string['reviewoptionsheading'] = '回顾设置';
 $string['reviewoptionsheading_help'] = '当用户回顾试卷或看测验报告时，这些选项可以控制用户能看到什么信息。
 
-“刚刚答完”的意思是答完题目后的两分钟内。“晚一些，但测验仍然开放”的意思是答完2分钟后到测验关闭的这段时间。“测验关闭后”指的是已经过了测验关闭时间的时候。如果测验没有设定关闭时间，此状态不会生效。';
+**作答过程中**只能在某种作答方式上有效，如“直到答对法”在每次作答时都会显示反馈。
+
+**刚刚答完**的意思是答完题目后的两分钟内。
+
+**晚一些，但测验仍然开放**的意思是答完2分钟后到测验关闭的这段时间。
+
+**测验关闭后**指的是已经过了测验关闭时间的时候。如果测验没有设定关闭时间，此状态不会生效。';
 $string['reviewoverallfeedback'] = '总体反馈';
 $string['reviewoverallfeedback_help'] = '本反馈出现在试卷的最后，根据学生的的总分有不同的反馈。';
 $string['reviewresponse'] = '检查答案';

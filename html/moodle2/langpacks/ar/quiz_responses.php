@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'لا يمكن تحميل خيارات السؤال';
 $string['pagesize'] = 'قياس الصفحة';
+$string['questiontext'] = 'نص السؤال';
 $string['reportresponses'] = 'الإجابات';
 $string['responses'] = 'الإجابات';
 $string['responsesdownload'] = 'تحميل الإجابات';

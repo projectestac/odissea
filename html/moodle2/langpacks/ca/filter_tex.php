@@ -35,5 +35,5 @@ $string['pathconvert'] = 'Camí del binari del <i>convert</i>';
 $string['pathdvips'] = 'Camí del binari del <i>dvips</i>';
 $string['pathlatex'] = 'Camí del binari del <i>latex</i>';
 $string['pathmimetex'] = 'Camí del binari <i>mimetex</i>';
-$string['pathmimetexdesc'] = 'Moodle utilitza el seu propi binari mimetex llevat que especifiqueu un altre camí vàlid.';
+$string['pathmimetexdesc'] = 'Moodle utilitzarà el seu propi binari mimeTeX, llevat que especifiqueu un altre camí vàlid.';
 $string['source'] = 'Font TeX';

@@ -131,13 +131,13 @@ $string['groupsvisible'] = 'Grupos visíveis';
 $string['grouptemplate'] = 'Grupo @';
 $string['hidepicture'] = 'Ocultar imagem';
 $string['importgroups'] = 'Importar grupos';
-$string['importgroups_help'] = 'Os grupos podem ser importados através de ficheiros de texto. O formato do ficheiro deve ser o seguinte:
+$string['importgroups_help'] = 'Os grupos podem ser importados a partir de um ficheiro de texto. O formato do ficheiro deve ser o seguinte:
 
 * Cada linha do ficheiro contém um registo
 * Cada registo é uma série de dados separados por vírgulas
-* O primeiro registo contém uma lista de nomes de campos que definem o formato do resto do ficheiro
-* Obrigatoriamente o nome do ficheiro é o nome do grupo.
-* os campos opcionais são a descrição, senha de inscrição, imagem, imagem oculta';
+* O primeiro registo contém uma lista de nomes dos campos que definem o formato do resto do ficheiro
+* O campo fieldname (nome do grupo) é obrigatório.
+* Os campos opcionais são description, enrolmentkey, picture, hidepicture (descrição, senha de inscrição, imagem, ocultar imagem).';
 $string['importgroups_link'] = 'grupo/importar';
 $string['javascriptrequired'] = 'Esta página requer a ativação do Javascript.';
 $string['members'] = 'Membros por grupo';

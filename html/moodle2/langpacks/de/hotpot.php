@@ -424,14 +424,6 @@ $string['pressoktocontinue'] = 'Drücken Sie \'OK\', um weiterzumachen, oder \'A
 $string['questionshort'] = 'Frage {$a}';
 $string['quizname_help'] = 'Hilfetext für den Quiznamen';
 $string['quizzes'] = 'Quizes';
-$string['removegradeitem'] = 'Wertung löschen';
-$string['removegradeitem_help'] = 'Soll die Wertung für diese Aktivität gelöscht werden?
-
-**Nein**
-: Die Bewertung für diese Aktivität wird nicht aus der Bewertungsübersicht entfernt
-
-**Ja**
-: Wenn die maximale Bewertung oder die Gewichtung für dieses HotPot-Quiz auf Null gesetzt wurde, dann wird die Bewertung für diese Aktivität aus der Bewertungsübersicht entfernt';
 $string['responsesreport'] = 'Antworten';
 $string['score'] = 'Bewertung';
 $string['scoresreport'] = 'Bewertungsübersicht';

@@ -54,7 +54,9 @@ $string['serialiser_json'] = 'O serializador JSON.';
 $string['serialiser_php'] = 'O serializador predefinido de PHP.';
 $string['servers'] = 'Servidores';
 $string['serversclusterinvalid'] = 'É necessário precisamente um servidor quando o clustering está ativado.';
-$string['servers_help'] = 'Isto define os servidores que devem ser utilizados por este adaptador de memcached. Os servidores devem ser definidos um por linha e constituídos por um endereço de servidor e, opcionalmente, uma porta e peso. Se nenhuma porta for fornecida será utilizada a porta predefinida (11211).
+$string['servers_help'] = 'Esta configuração define os servidores que devem ser utilizados por este adaptador memcache.
+Os servidores devem ser indicados um por linha e consiste no endereço do servidor e, opcionalmente, uma porta e importância.
+Caso nenhuma porta seja indicada, será utilizada a porta padrão (11211).
 
 Por exemplo:
 <pre>
@@ -63,7 +65,7 @@ ipaddress:port
 servername:port:weight
 </pre>
 
-Se *Ativar servidores em cluster* for ativado abaixo, deve haver apenas um servidor listado aqui. Isto normalmente seria um nome que sempre resolve para a máquina local, como 127.0.0.1 ou localhost.';
+Se ativar a configuração *Ativar servidores em cluster*, apenas poderá estar listado um servidor. Normalmente é o nome da máquina local, como por exemplo 127.0.0.1 ou localhost.';
 $string['sessionhandlerconflict'] = 'Aviso: uma instância de memcache ({$a}) foi configurada para usar o mesmo servidor de memcache que as sessões. Apagar o conteúdo de todas as caches fará com que também sejam apagadas as sessões.';
 $string['setservers'] = 'Definir servidores';
 $string['setservers_help'] = 'Esta é a lista de servidores que serão atualizados quando os dados são modificados na cache. Geralmente o nome completo de cada servidor na pool.

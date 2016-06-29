@@ -49,7 +49,7 @@ $string['backgroundrepeatrepeaty'] = 'Es repetirà verticalment';
 $string['bodybackground'] = 'Color de fons';
 $string['bodybackground_desc'] = 'El color principal que s\'utilitzarà com a fons.';
 $string['choosereadme'] = '<p>More és un tema que permet personalitzar fàcilment l\'aspecte de Moodle des de la interfície web.</p>
-<p>Aneu als paràmetres d\'administració per a canviar els colors, afegir una imatge de fons, el vostre logo i més. </p>';
+<p>Aneu als paràmetres d\'administració per a canviar els colors, afegir una imatge de fons, el vostre logotip i d\'altres. </p>';
 $string['configtitle'] = 'Clean';
 $string['contentbackground'] = 'Color de fons del contingut principal';
 $string['contentbackground_desc'] = 'El color de fons del contingut principal del lloc. Deixeu-lo buit per a no posar-ne cap.';
@@ -58,10 +58,10 @@ $string['customcssdesc'] = 'Qualsevol regla de CSS que afegiu a aquesta àrea de
 $string['footnote'] = 'Nota a peu de pàgina';
 $string['footnotedesc'] = 'Qualsevol cosa que escriviu en aquesta àrea de text es mostrarà al peu de pàgina al vostre lloc Moodle.';
 $string['invert'] = 'Inverteix la barra de navegació';
-$string['invertdesc'] = 'Intercanvia el text i el fons de la barra de navegació en la part superior de la pàgina entre blanc i negre.';
+$string['invertdesc'] = 'Intercanvia el text i el fons de la barra de navegació a la part superior de la pàgina entre blanc i negre.';
 $string['linkcolor'] = 'Color d\'enllaç';
 $string['linkcolor_desc'] = 'El color dels enllaços';
-$string['logo'] = 'Logo';
+$string['logo'] = 'Logotip';
 $string['logodesc'] = 'Si us plau carregueu el vostre logo personalitzat aquí si voleu afegir-lo a la capçalera.<br>
 Si l\'altura del del vostre logo és major que 75 píxels afegiu la següent regla CSS a la caixa de CSS personalitzat que hi ha a continuació.<br>
 a.logo {height: 100px;} o el que tingui d\'altura el logo.';

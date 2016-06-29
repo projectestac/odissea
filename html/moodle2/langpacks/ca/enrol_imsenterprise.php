@@ -35,7 +35,7 @@ $string['createnewcategories_desc'] = 'Si l\'<org><orgunit>element és present a
 
 Si no existeix cap categoria amb el nom desitjat es crearà una categoria oculta.';
 $string['createnewcourses'] = 'Crea nous cursos (ocults) si no existeixen a Moodle';
-$string['createnewcourses_desc'] = 'Si s\'habilita el connector d\'inscripció IMS Enterprise podrà crear cursos nous per a qualsevol que trobi a les dades IMS però no en la base de dades de Moodle. Qualsevol curs nou creat estarà inicialment ocult.';
+$string['createnewcourses_desc'] = 'Si s\'habilita, el connector d\'inscripció IMS Enterprise podrà crear cursos nous per a qualsevol que trobi a les dades IMS, però no en la base de dades de Moodle. Qualsevol curs nou creat estarà inicialment ocult.';
 $string['createnewusers'] = 'Crea comptes d\'usuari per a usuaris no registrats a Moodle';
 $string['createnewusers_desc'] = 'La inscripció de dades IMS Enterprise descriu de forma típica un conjunt d\'usuaris. Si està habilitada, es poden crear comptes d\'usuaris per a usuaris que no es troben a la base de dades de Moodle.
 

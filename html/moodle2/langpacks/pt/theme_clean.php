@@ -32,7 +32,7 @@ $string['choosereadme'] = '<div class="clearfix">
 </div>
 <div class="well">
 <h3>Sobre</h3>
-<p>Clean é um tema modificado de bootstrap para o Moodle que herda estilos e renderers do seu tema principal.</p>
+<p>Clean é um tema modificado de bootstrap para o Moodle que herda estilos e renderers do seu tema ascendente.</p>
 <h3>Origem</h3>
 <p>Este tema é baseado no tema Bootstrap, que foi criado para o Moodle 2.5, com a ajuda de:<br>
 Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>

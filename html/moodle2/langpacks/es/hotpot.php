@@ -396,14 +396,6 @@ $string['pressoktocontinue'] = 'Presione OK para cotinuar, o Cancelar para perma
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texto de ayuda para el nombre del cuestionario';
 $string['quizzes'] = 'Preguntas';
-$string['removegradeitem'] = 'Eliminar ítem de calificación';
-$string['removegradeitem_help'] = '¿Se puede eliminar el elemento de calificación para esta actividad?
-
-**No**
-:el elemento de calificación para esta actividad en el libro de calificaciones de Moodle no se eliminará
-
-**Sí**
-: si la calificación máxima o la ponderación de calificaciones para este HotPot se ajusta a cero, entonces el elemento de calificación para esta actividad será eliminado del libro de calificaciones de Moodle.';
 $string['responsesreport'] = 'Respuestas';
 $string['score'] = 'Puntuación';
 $string['scoresreport'] = 'Puntuaciones';

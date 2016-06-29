@@ -203,7 +203,7 @@ $string['description'] = 'Beschreibung';
 $string['disconnect'] = 'Verbindung aufheben';
 $string['donotaward'] = 'Derzeit ist die Auszeichnung nicht verfügbar, d.h. sie kann nicht an Nutzer/innen verliehen werden. Wenn Sie die Auszeichnung verleihen wollen, müssen Sie sie aktivieren. Klicken Sie dazu auf den Button \'\'Zugriff erlauben\'\'.';
 $string['editsettings'] = 'Einstellungen bearbeiten';
-$string['enablebadges'] = 'Auszeichnungen';
+$string['enablebadges'] = 'Auszeichnungen aktivieren';
 $string['error:backpackdatainvalid'] = 'Die vom Backpack gelieferten Daten sind ungültig!';
 $string['error:backpackemailnotfound'] = 'Die E-Mail \'{$a}\' ist nicht mit einem Backpack verbunden. Sie müssen sich für dieses Konto ein <a href="http://backpack.openbadges.org">Backpack anlegen</a> oder sich mit einem anderen E-Mail-Adresse anmelden.';
 $string['error:backpackloginfailed'] = 'Sie konnten nicht mit einem externen Backpack verbunden werden: {$a}';

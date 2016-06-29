@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = '使用安全考试浏览器的测验访问规则';
 $string['requiresafeexambrowser'] = '必须使用Safe Exam Browser';
+$string['safebrowsererror'] = '这个测验已经被设置，因此它只能使用安全浏览器作答。你不能使用这一浏览器作答。';
+$string['safebrowsernotice'] = '这个测验已经被设置，因此学生只能使用安全浏览器作答。';

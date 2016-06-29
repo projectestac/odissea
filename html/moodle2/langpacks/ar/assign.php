@@ -45,6 +45,7 @@ $string['errornosubmissions'] = 'لا يوجد تسليمات ليتم تنزي�
 $string['feedback'] = 'اجابة تقييمية';
 $string['filtersubmitted'] = 'تم التسليم';
 $string['graded'] = 'تم رصد درجة';
+$string['gradeoutof'] = 'الدرجة من {$a}';
 $string['gradersubmissionupdatedhtml'] = '{$a->username} قام بتحديث المهمةالمقدمة لـ <i>\'{$a->assignment}\'</i><br /><br /> وهي <a href="{$a->url}">available on the web site</a>.';
 $string['gradersubmissionupdatedtext'] = '{$a->username} قام بتحديث المهمةالمقدمة لـ \'{$a->assignment}\' وهذه المهمة موجودة في: {$a->url}';
 $string['gradingstatus'] = 'حالة التقييم';

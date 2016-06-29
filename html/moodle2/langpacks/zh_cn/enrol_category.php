@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:synchronised'] = '角色分配与选课同步';
 $string['pluginname'] = '类别选课';
-$string['pluginname_desc'] = '类别选课插件是旧版本使用的基于角色分配的课程分类级的选课解决方案。建议使用群组同步插件代替它。';
+$string['pluginname_desc'] = '类别选课插件是旧版本使用的基于角色分配的课程分类级的选课解决方案。建议使用群同步插件代替它。';

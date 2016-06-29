@@ -61,7 +61,7 @@ $string['description'] = 'Beschreibung';
 $string['duplicate_usernames'] = 'Beim Anlegen eines Index für die Spalten "mnethostid" und "username" in Ihrer Nutzertabelle ist ein Fehler aufgetreten. <br />
 Dies kann passieren, wenn ein  <a href="{$a}" target="_blank">doppelter Anmeldename in der Nutzertabelle</a> vorhanden ist.<br />
 Das Update sollte dennoch erfolgreich abgeschlossen worden sein. Klicken Sie auf den Link und die Hinweise zur Problemlösung öffnen sich in einem neuen Fenster. Sie können sich mit diesem Problem nach Abschluss des Updates befassen.<br/>';
-$string['enabled_for_all'] = '(Dieser Dienst wurde für alle Rechner freigegeben.)';
+$string['enabled_for_all'] = 'Dieser Dienst wurde für alle Hosts aktiviert.';
 $string['enterausername'] = 'Bitte geben Sie einen Anmeldenamen ein (oder eine kommagetrennte Liste von Anmeldenamen)';
 $string['error7020'] = 'Dieser Fehler tritt normalerweise auf, wenn die Remote-Server einen Dateneintrag für wwwroot falsch erzeugt hat, z.B. http://domain.de statt http://www.domain.de. Sie sollten den Administrator der Remote-Servers über die richtige Einstellung für wwwroot  informieren (so wie in config.php angegeben), damit dortige Dateneintrag für Ihren Server korrigiert werden kann.';
 $string['error7022'] = 'Die von Ihnen an den Remote-Server übermittelte Nachricht war richtig verschlüsselt, aber nicht signiert. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';

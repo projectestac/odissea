@@ -25,41 +25,41 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcohort'] = '新建群组';
-$string['allcohorts'] = '所有群组';
+$string['addcohort'] = '新建群';
+$string['allcohorts'] = '所有群';
 $string['anycohort'] = '任意';
 $string['assign'] = '分配';
-$string['assigncohorts'] = '分配群组成员';
+$string['assigncohorts'] = '分配群成员';
 $string['assignto'] = '群“{$a}”的成员';
-$string['backtocohorts'] = '回到群组';
-$string['bulkadd'] = '添加到群组';
-$string['bulknocohort'] = '没有可用的群组';
-$string['categorynotfound'] = '分类 <b>{$a}</b>未找到，或者你没有在这里创建队列的权限。将使用默认值。';
-$string['cohort'] = '群组';
-$string['cohorts'] = '群组';
-$string['cohortsin'] = '{$a}：可用群组';
+$string['backtocohorts'] = '回到群';
+$string['bulkadd'] = '添加到群';
+$string['bulknocohort'] = '没有可用的群';
+$string['categorynotfound'] = '分类 <b>{$a}</b>未找到，或者你没有在这里创建群的权限。将使用默认值。';
+$string['cohort'] = '群';
+$string['cohorts'] = '群';
+$string['cohortsin'] = '{$a}：可用群';
 $string['component'] = '来源';
-$string['contextnotfound'] = '情况 <b>{$a}</b>未找到，或者你没有在这里创建队列的权限。将使用默认值。';
+$string['contextnotfound'] = '情况 <b>{$a}</b>未找到，或者你没有在这里创建群的权限。将使用默认值。';
 $string['csvcontainserrors'] = '在CSV中发现错误。详见下面。';
 $string['csvcontainswarnings'] = '在CSV中发现警告。详见下面。';
 $string['csvextracolumns'] = '列<b>{$a}</b>将被忽略';
 $string['currentusers'] = '当前用户';
 $string['currentusersmatching'] = '匹配的当前用户';
 $string['defaultcontext'] = '默认情况';
-$string['delcohort'] = '删除群组';
-$string['delconfirm'] = '您真的要删除群组“{$a}”吗？';
+$string['delcohort'] = '删除群';
+$string['delconfirm'] = '您真的要删除群“{$a}”吗？';
 $string['description'] = '描述';
 $string['displayedrows'] = '{$a->displayed}行显示超过了{$a->total}。';
-$string['duplicateidnumber'] = '已有使用相同ID的群组存在';
-$string['editcohort'] = '编辑群组';
-$string['eventcohortcreated'] = '队列已创建';
-$string['eventcohortdeleted'] = '队列已删除';
-$string['eventcohortmemberadded'] = '用户添加到队列';
-$string['eventcohortmemberremoved'] = '用户从队列中移除';
-$string['eventcohortupdated'] = '队列更新';
-$string['external'] = '外部群组';
-$string['idnumber'] = '群组ID';
-$string['memberscount'] = '群组大小';
+$string['duplicateidnumber'] = '已有使用相同ID的群存在';
+$string['editcohort'] = '编辑群';
+$string['eventcohortcreated'] = '群已创建';
+$string['eventcohortdeleted'] = '群已删除';
+$string['eventcohortmemberadded'] = '用户添加到群';
+$string['eventcohortmemberremoved'] = '用户从群中移除';
+$string['eventcohortupdated'] = '群更新';
+$string['external'] = '外部群';
+$string['idnumber'] = '群ID';
+$string['memberscount'] = '群大小';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSV文件出现了一些问题，请检查它包含的列名称';
 $string['namefieldempty'] = '字段名称不能为空';
@@ -67,22 +67,22 @@ $string['nocomponent'] = '人工建立';
 $string['potusers'] = '潜在用户';
 $string['potusersmatching'] = '潜在的匹配用户';
 $string['preview'] = '预览';
-$string['removeuserwarning'] = '从群组删除用户可能会导致撤销该用户在多个课程的选课，也就是说会删除用户在这些课程的个人设置、成绩、分组和其它用户信息。';
+$string['removeuserwarning'] = '从群删除用户可能会导致撤销该用户在多个课程的选课，也就是说会删除用户在这些课程的个人设置、成绩、分组和其它用户信息。';
 $string['search'] = '搜索';
-$string['searchcohort'] = '搜索群组';
-$string['selectfromcohort'] = '从群组选择成员';
-$string['systemcohorts'] = '系统群组';
-$string['unknowncohort'] = '未知群组（{$a}）！';
-$string['uploadcohorts'] = '上传群组';
-$string['uploadcohorts_help'] = '群组可以用过文本文件上传。文件格式应当是：
+$string['searchcohort'] = '搜索群';
+$string['selectfromcohort'] = '从群选择成员';
+$string['systemcohorts'] = '系统群';
+$string['unknowncohort'] = '未知群（{$a}）！';
+$string['uploadcohorts'] = '上传群';
+$string['uploadcohorts_help'] = '群可以用过文本文件上传。文件格式应当是：
 
 * 每行包含一条记录
 * 每条记录是由逗号 (或其他分隔符) 分隔的一系列数据
 * 第一条记录为字段名称的列表，用于定义文件其它部分的格式
 * 必填的字段是 name
 * 可选的字段是 idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
-$string['uploadedcohorts'] = '上传 {$a} 个群组';
-$string['useradded'] = '用户已加入群组“{$a}”';
+$string['uploadedcohorts'] = '上传 {$a} 个群';
+$string['useradded'] = '用户已加入群“{$a}”';
 $string['visible'] = '是否可见';
-$string['visible_help'] = '任何队列都可以允许在队列内容中拥有\'moodle/cohort:view\'能力的人查看。<br/>
-可见队列还可以被基本课程中的用户查看。';
+$string['visible_help'] = '任何群都可以允许拥有该群\'moodle/cohort:view\'能力的人查看。<br/>
+可见群还可以被基本课程中的用户查看。';

@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Hi ha missatges nous al fòrum';
-$string['addanewdiscussion'] = 'Afegeix un nou tema de debat';
+$string['addanewdiscussion'] = 'Afegeix un tema de debat nou';
 $string['addanewquestion'] = 'Afegeix una nova pregunta';
-$string['addanewtopic'] = 'Afegeix un nou tema';
+$string['addanewtopic'] = 'Afegeix un tema nou';
 $string['advancedsearch'] = 'Cerca avançada';
 $string['allforums'] = 'Tots els fòrums';
 $string['allowdiscussions'] = 'Pot un {$a} enviar un missatge a aquest fòrum?';
@@ -54,7 +54,7 @@ $string['blogforum'] = 'Fòrum estàndard mostrat com si fos un blog';
 $string['bynameondate'] = 'per {$a->name} - {$a->date}';
 $string['cannotadd'] = 'No s\'ha pogut afegir el debat al fòrum';
 $string['cannotadddiscussion'] = 'Afegir debats en aquest fòrum requereix pertànyer al grup.';
-$string['cannotadddiscussionall'] = 'No teniu permís per a afegir un nou tema de debat per a tots els participants.';
+$string['cannotadddiscussionall'] = 'No teniu permís per a afegir un tema de debat nou per a tots els participants.';
 $string['cannotaddsubscriber'] = 'No es pot afegir la subscripció de l\'usuari ID {$a} en aquest fòrum.';
 $string['cannotaddteacherforumto'] = 'No s\'ha pogut agregar instància al fòrum del professor en la secció 0 del curs.';
 $string['cannotcreatediscussion'] = 'No s\'ha pogut obrir un nou debat';
@@ -500,5 +500,5 @@ $string['warnafter'] = 'Llindar de missatges per a l\'avís';
 $string['warnafter_help'] = 'L\'estudiant pot rebre un avís quan s\'acosti al nombre màxim de missatges enviats a un fòrum en un temps determinat. Aquest paràmetre especifica quants missatges pot enviar-hi abans de rebre l\'avís. Aquest límit no afecta els usuaris amb privilegis mod/forum:postwithoutthrottling (usualment els administradors o professors).';
 $string['warnformorepost'] = 'Hi ha més d\'un debat obert en aquest fòrum. S\'utilitzarà el més recent';
 $string['yournewquestion'] = 'La vostra pregunta';
-$string['yournewtopic'] = 'Nou tema de debat';
+$string['yournewtopic'] = 'El vostre tema de debat nou';
 $string['yourreply'] = 'La vostra resposta';

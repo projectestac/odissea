@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'لم يتم الاجابة علية';
 $string['addquizchain'] = 'أضافة سلسلة أختبار';
+$string['attempts'] = 'محاولات';
 $string['average'] = 'المتوسط';
 $string['completed'] = 'تم';
 $string['correct'] = 'صح';

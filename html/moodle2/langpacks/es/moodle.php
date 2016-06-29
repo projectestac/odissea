@@ -1086,7 +1086,7 @@ $string['maximumupload_help'] = '<P>Esta variable determina el tamaño máximo p
 <P>También es posible limitar el tamaño en las variables presentes en cada módulo de actividades.';
 $string['maxnumberweeks'] = 'Número máximo de secciones';
 $string['maxnumberweeks_desc'] = 'El valor máximo del número de secciones del menú desplegable (se aplica sólo a ciertos formatos de curso).';
-$string['maxnumcoursesincombo'] = 'Ojear <a href="{$a->link}">{$a->numberofcourses} cursos</a>.';
+$string['maxnumcoursesincombo'] = 'Examinar <a href="{$a->link}">{$a->numberofcourses} cursos</a>.';
 $string['maxsize'] = 'Tamaño máximo: {$a}';
 $string['maxsizeandareasize'] = 'El tamaño máximo para los archivos nuevos es: {$a->size},para el límite global es: {$a->areasize}';
 $string['maxsizeandattachments'] = 'Tamaño máximo para nuevos archivos: {$a->size}, número máximo de archivos adjuntos: {$a->attachments}';

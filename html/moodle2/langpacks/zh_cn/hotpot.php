@@ -380,14 +380,6 @@ $string['pressoktocontinue'] = '按 “确定” 继续，按 “取消” 停�
 $string['questionshort'] = '{$a}问题';
 $string['quizname_help'] = '测验名称的帮助文本';
 $string['quizzes'] = '测验';
-$string['removegradeitem'] = '删除成绩项';
-$string['removegradeitem_help'] = '此活动的成绩项应该移除吗？
-
-**否**
-：此活动在 Moodle 成绩册中的成绩将不会移除
-
-**是**
-：如果此 HotPot 活动最高成绩或成绩加权设置为零，那么此活动在 Moodle 成绩册中的成绩将会被移除';
 $string['responsesreport'] = '回复';
 $string['score'] = '分数';
 $string['scoresreport'] = '分数';

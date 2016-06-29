@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addoutcome'] = '添加一个能力';
-$string['courseoutcomes'] = '课程能力';
-$string['coursespecoutcome'] = '课程能力';
-$string['outcomes:view'] = '查看能力报表';
+$string['addoutcome'] = '添加一个成果';
+$string['courseoutcomes'] = '课程成果';
+$string['coursespecoutcome'] = '课程成果';
+$string['outcomes:view'] = '查看成果报表';
 $string['pluginname'] = '能力报表';
 $string['usedgradeitem'] = '成绩项数目';

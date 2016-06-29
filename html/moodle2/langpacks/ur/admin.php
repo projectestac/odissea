@@ -51,6 +51,7 @@ $string['bookmarkalreadyexists'] = 'آپ پہلے ہی اس صفحہ کی یا
 $string['bookmarkdeleted'] = 'یاد داشت کا اخراج ہو چکا';
 $string['bookmarkthispage'] = 'اس صفحہ کو یاد داشت میں اندراج کرو';
 $string['calendarsettings'] = 'تقویم';
+$string['calendartype'] = 'کیلنڈر کی قسم';
 $string['calendar_weekend'] = 'ہفتے کے آخری ایام';
 $string['change'] = 'تبدیل کریں';
 $string['checkboxno'] = 'نہیں';

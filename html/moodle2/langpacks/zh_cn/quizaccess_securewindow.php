@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = '使用JavaScript安全的测验的访问规则';
 $string['popupwithjavascriptsupport'] = '全屏幕弹出窗口（JavaScript保障安全）';

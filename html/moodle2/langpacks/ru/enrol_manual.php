@@ -49,7 +49,7 @@ $string['expirymessageenrollerbody'] = 'Зачисление в курсе «{$a
 
 Чтобы продлить их зачисление, перейдите на {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Уведомление об окончании обучения';
-$string['manual:config'] = 'Настраивать зачисление вручную';
+$string['manual:config'] = 'Настраивать экземпляры способа записи на курс «Зачисление вручную»';
 $string['manual:enrol'] = 'Записывать пользователей на курсы';
 $string['manual:manage'] = 'Управлять зачислением пользователей на курс';
 $string['manual:unenrol'] = 'Отчислять пользователей из курса';

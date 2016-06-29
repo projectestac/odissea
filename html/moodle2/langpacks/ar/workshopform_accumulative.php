@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['correct'] = 'صحيح';
 $string['dimensionmaxgrade'] = 'افضل درجة محتملة  / المقياس الممكن أستخدام';
 $string['dimensionnumber'] = 'اوجه الدولار  {$a}';
+$string['incorrect'] = 'خطأ';
 $string['mustchoosegrade'] = 'يجب انتقاء درجة لهذا الوجه';
 $string['pluginname'] = 'التدرج   التراكمي';
 $string['poor'] = 'ضعيف';

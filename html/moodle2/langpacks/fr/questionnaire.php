@@ -174,9 +174,9 @@ $string['feedbacknotes_help'] = 'Le texte entré ici sera affiché à la fin du 
 $string['feedbackoptions'] = 'Options de feedback';
 $string['feedbackoptions_help'] = 'Les options de feedback sont disponibles seulement si votre questionnaire contient des questions des types suivants et si ces questions sont paramétrées comme indiqué :
 Boutons radio, Liste déroulante ou Échelle de Likert.
-Ces questions doivent être paramétrées comme "Réponse obligatoire", leur nom de question ne doit pas être vide et chaque choix dans le champ des réponses possibles doit avoir une valeur numérique.';
-$string['feedbackremovequestionfromsection'] = '---';
-$string['feedbackremovesection'] = '---';
+Ces questions doivent être paramétrées comme « Réponse obligatoire », leur nom de question ne doit pas être vide et chaque choix dans le champ des réponses possibles doit avoir une valeur numérique.';
+$string['feedbackremovequestionfromsection'] = 'Cette question fait partie de la section de feedback [{$a}]';
+$string['feedbackremovesection'] = 'Retirer cette question supprimera définitivement la section du feedback [{$a}]';
 $string['feedbackreport'] = 'Rapport de feedback';
 $string['feedbackscore'] = 'Score du feedback';
 $string['feedbackscoreboundary'] = 'Limite de score du feedback';

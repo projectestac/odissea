@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['linkedcourse'] = 'Disciplina ligada';
-$string['meta:config'] = 'Configurar instâncias de inscrição em meta-disciplinas';
-$string['meta:selectaslinked'] = 'Definir disciplina como meta-disciplina ligada';
+$string['linkedcourse'] = 'Sincronizar inscrições com';
+$string['meta:config'] = 'Configurar instâncias de Sincronização com Disciplina';
+$string['meta:selectaslinked'] = 'Selecionar disciplina a sincronizar inscrições';
 $string['meta:unenrol'] = 'Desinscrever utilizadores suspensos';
 $string['nosyncroleids'] = 'Papéis que não são sincronizados';
-$string['nosyncroleids_desc'] = 'Por definição todas as atribuições de papéis feitas ao nível da disciplinas são sincronizadas da disciplina pai para as disciplinas filhas. Os papéis aqui indicados não serão sincronizados. Os papéis atuais serão atualizados durante a próxima execução do cron.';
-$string['pluginname'] = 'Meta-disciplinas';
-$string['pluginname_desc'] = 'Este módulo de inscrição permite sincronizar inscrições e atribuições de papéis entre várias disciplinas ligadas entre si.';
+$string['nosyncroleids_desc'] = 'Por predefinição todas as atribuições de papéis feitas ao nível da disciplina são sincronizadas. Os papéis aqui indicados não serão sincronizados. Os papéis atuais serão atualizados durante a próxima execução do cron.';
+$string['pluginname'] = 'Sincronização com Disciplina';
+$string['pluginname_desc'] = 'Este módulo de inscrição permite sincronizar inscrições e atribuições de papéis entre duas disciplinas.';
 $string['syncall'] = 'Sincronizar todos os utilizadores inscritos';
-$string['syncall_desc'] = 'Se ativo, todos os utilizadores inscritos são sincronizados mesmo que não possuam nenhum papel na disciplina pai, se inativo apenas os utilizadores que possuem pelo menos um papel sincronizado serão inscritos.';
+$string['syncall_desc'] = 'Se ativar esta opção, todos os utilizadores inscritos são sincronizados mesmo que não possuam nenhum papel na disciplina de origem das inscrições. Caso contrário, apenas os utilizadores que possuem pelo menos um papel sincronizado na disciplina de origem serão inscritos na disciplina.';

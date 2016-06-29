@@ -46,7 +46,7 @@ $string['choiceoptions_help'] = '<h2>Варианты ответа</h2>
 <P>Здесь вы можете написать варианты, из которых учеником будет выбираться ответ.
 
 <P>Вы можете заполнить любое количество вариантов (допускается оставлять поля пустыми).';
-$string['choice:readresponses'] = 'Просматривать ответы';
+$string['choice:readresponses'] = 'Просматривать ответы на опрос';
 $string['choicesaved'] = 'Ваш выбор сохранен';
 $string['choicetext'] = 'Текст опроса';
 $string['chooseaction'] = 'Выберите действие...';
@@ -116,7 +116,7 @@ $string['spaceleft'] = 'доступное место';
 $string['spacesleft'] = 'доступные места';
 $string['taken'] = 'Использовано';
 $string['timerestrict'] = 'Ограничить время проведения опроса';
-$string['userchoosethisoption'] = 'Пользователи, выбравшие этот вариант';
+$string['userchoosethisoption'] = 'Пользователи, которые выбрали этот вариант';
 $string['viewallresponses'] = 'Просмотреть ответы: {$a}';
 $string['withselected'] = 'С выбранными';
 $string['yourselection'] = 'Ваш выбор';

@@ -46,7 +46,7 @@ $string['activityweighted'] = 'Activitat per usuari';
 $string['add'] = 'Afegeix';
 $string['addactivity'] = 'Afegeix una activitat...';
 $string['addactivitytosection'] = 'Afegeix una activitat a la secció  \'{$a}\'';
-$string['addadmin'] = 'Afegeix administrador/a';
+$string['addadmin'] = 'Afegeix un administrador';
 $string['addblock'] = 'Afegeix un bloc';
 $string['addcomment'] = 'Afegeix un comentari...';
 $string['addcountertousername'] = 'Crea usuari afegint un número al nom d\'usuari';
@@ -64,9 +64,9 @@ $string['addinganewto'] = 'S\'està afegint un nou {$a->what} a {$a->to}';
 $string['addingdatatoexisting'] = 'S\'estan afegint dades a les existents';
 $string['additionalnames'] = 'Noms addicionals';
 $string['addlinkhere'] = 'Afegeix un enllaç aquí';
-$string['addnewcategory'] = 'Afegeix una nova categoria';
+$string['addnewcategory'] = 'Afegeix una categoria nova';
 $string['addnewcourse'] = 'Afegeix un nou curs';
-$string['addnewuser'] = 'Afegeix un nou usuari';
+$string['addnewuser'] = 'Afegeix un usuari nou';
 $string['addnousersrecip'] = 'Afegeix a la llista de destinataris els usuaris que no han accedit a aquest {$a}';
 $string['addpagehere'] = 'Afegeix text aquí';
 $string['addresource'] = 'Afegeix un recurs...';
@@ -162,8 +162,8 @@ $string['authenticateduserdescription'] = 'Tots aquells usuaris que hagin inicia
 $string['authentication'] = 'Autenticació';
 $string['authenticationplugins'] = 'Connectors d\'autenticació';
 $string['autosubscribe'] = 'Subscripció automàtica al fòrum';
-$string['autosubscribeno'] = 'No: no em subscriguis automàticament als fòrums';
-$string['autosubscribeyes'] = 'Sí: quan escrigui en un fòrum, subscriu-me a aquest fòrum';
+$string['autosubscribeno'] = 'No: no em subscriguis automàticament a les discussions dels fòrums';
+$string['autosubscribeyes'] = 'Sí: quan escrigui en un fòrum, subscriu-me a aquell fil de discussió del fòrum';
 $string['availability'] = 'Disponibilitat';
 $string['availablecourses'] = 'Cursos disponibles';
 $string['back'] = 'Enrere';
@@ -264,7 +264,7 @@ $string['clambroken'] = 'L\'administrador ha habilitat la comprovació de virus,
 $string['clamdeletedfile'] = 'S\'ha suprimit el fitxer';
 $string['clamdeletedfilefailed'] = 'No s\'ha pogut suprimir el fitxer';
 $string['clamemailsubject'] = '{$a} :: Notificació Clam AV';
-$string['clamfailed'] = 'No s\'ha pogut executar Clam AV. El missatge d\'error retornat es {$a}. Heus aquí la sortida de Clam:';
+$string['clamfailed'] = 'No s\'ha pogut executar Clam AV. El missatge d\'error retornat és {$a}. Heus aquí la sortida de Clam:';
 $string['clamlost'] = 'Moodle ha estat configurat per executar Clam amb cada fitxer que es pengi, pero el camí de Clam AV proporcionat, {$a}, no és vàlid.';
 $string['clamlostandactinglikevirus'] = 'A més a més, Moodle està configurat de manera que si Clam no es pot executar, els fitxers es tracten com si fossin virus. Això significa que els estudiants no podran penjar cap fitxer mentre no solucioneu el problema.';
 $string['clammovedfile'] = 'S\'ha mogut el fitxer al directori de quarantena especificat. La nova ubicació és {$a}.';
@@ -638,44 +638,44 @@ $string['emailnotfound'] = 'No s\'ha trobat l\'adreça de correu en la base de d
 $string['emailonlyallowed'] = 'Aquest correu no és un dels permesos ({$a})';
 $string['emailpasswordchangeinfo'] = '{$a->firstname},
 
-Algú (probablement vós) ha sol·licitat una nova contrasenya per al vostre compte en \'{$a->sitename}\'.
+Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte a «{$a->sitename}».
 
 Si voleu canviar la contrasenya, aneu a l\'adreça web següent:
 
 {$a->link}
 
-En la majoria de programes de correu, la línia de dalt s\'hauria de veure com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la al camp d\'adreces de la finestra del vostre nvegador web.
+En la majoria de programes de correu, la línia de dalt s\'hauria de veure com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la al camp d\'adreces de la finestra del vostre navegador web.
 
-Si necessiteu ajuda, si us plau contacteu amb l\'administrador del lloc:
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = '{$a->firstname},
 
-Algú (probablement vós) ha sol·licitat una nova contrasenya per al vostre compte a «{$a->sitename}».
+Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte a «{$a->sitename}».
 
 Malauradament, el vostre compte d\'aquest lloc ha estat inhabilitat i no es pot reinicialitzar. Contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordchangeinfofail'] = '{$a->firstname},
 
-Algú (probablement vós) ha sol·licitat una nova contrasenya per al vostre compte en \'{$a->sitename}\'.
+Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte a «{$a->sitename}».
 
-Malauradament en aquest lloc no es poden canviar les contrasenyes. Si us plau contacteu amb l\'administrador del lloc:
+Malauradament, en aquest lloc no es poden canviar les contrasenyes. Contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: informació de canvi de contrasenya';
 $string['emailpasswordconfirmation'] = '{$a->firstname},
 
-Algú (probablement vós) ha demanat una nova contrasenya
-per al vostre compte en \'{$a->sitename}\'.
+Algú (probablement vós) ha demanat una contrasenya nova
+per al vostre compte a «{$a->sitename}».
 
-Per a confirmar aquesta sol·licitud i rebre la nova contrasenya per correu electrònic, aneu a l\'adreça web següent:
+Per a confirmar aquesta sol·licitud i rebre la contrasenya nova per correu electrònic, aneu a l\'adreça web següent:
 
   {$a->link}
 
-En la majoria de programes de correu, la línia de dalt s\'hauria de veure com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la al camp d\'adreces de la finestra del vostre nvegador web.
+En la majoria de programes de correu, la línia de dalt s\'hauria de veure com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la al camp d\'adreces de la finestra del vostre navegador web.
 
-Si necessiteu ajuda, si us plau contacteu amb l\'administrador del lloc:
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: confirmació de canvi de contrasenya';
@@ -693,13 +693,13 @@ $string['emailpasswordsent'] = 'Gràcies per confirmar el canvi de contrasenya.
 <br />La contrasenya nova s\'ha generat automàticament - potser voldreu <a href="{$a->link}">canviar-la</a> per una altra més fàcil de recordar.';
 $string['emailresetconfirmation'] = 'Hola, {$a->firstname}.
 
-S\'ha sol·licitat un restabliment de contrasenya per al compte de \'{$a->username}\' al lloc {$a->sitename}.
+S\'ha sol·licitat un restabliment de contrasenya per al compte de «{$a->username}» al lloc {$a->sitename}.
 
-Per confirmar aquesta petició, i establir una nova contrasenya per al compte, aneu a la següent adreça d\'Internet:
+Per confirmar aquesta petició, i establir una contrasenya nova per al compte, aneu a l\'adreça d\'Internet següent:
 
- {$a->link} (Aquest enllaç és vàlid per {$a->resetminutes} minuts  des del moment en què es va sol·licitar per primera vegada aquest reajustament)
+ {$a->link} (Aquest enllaç és vàlid durant {$a->resetminutes} minuts des del moment en què es va sol·licitar per primera vegada aquest reajustament)
 
-Si aquest restabliment de contrasenya no s\'ha sol·licitat per vostè, no es necessita cap acció.
+Si no heu sol·licitat aquest restabliment de contrasenya, no es necessita cap acció.
 
 Per obtenir ajuda, poseu-vos en contacte amb l\'administrador del lloc, {$a->admin}';
 $string['emailresetconfirmationsubject'] = 'Sol·licitud de restabliment de contrasenya: {$a}';
@@ -808,7 +808,7 @@ $string['forcepasswordchangenotice'] = 'Heu de canviar la contrasenya abans de c
 $string['forcetheme'] = 'Imposa tema';
 $string['forgotaccount'] = 'Heu oblidat la contrasenya?';
 $string['forgotten'] = 'Heu oblidat el nom d\'usuari o la contrasenya?';
-$string['forgottenduplicate'] = 'L\'adreça de correu és compartida per diversos comptes. En lloc de l\'adreça, introduïu el nom d\'usuari/ària';
+$string['forgottenduplicate'] = 'L\'adreça de correu és compartida per diversos comptes. En lloc de l\'adreça, introduïu el nom d\'usuari';
 $string['forgotteninvalidurl'] = 'L\'URL de canvi de contrasenya no és vàlid';
 $string['format'] = 'Format';
 $string['format_help'] = 'El format del curs determina la disposició de la pàgina del curs.
@@ -1123,7 +1123,7 @@ $string['missingfromdisk'] = 'Falta al disc';
 $string['missingfullname'] = 'Falta el nom complet';
 $string['missinglastname'] = 'Falten els cognoms';
 $string['missingname'] = 'Falta el nom';
-$string['missingnewpassword'] = 'Falta la nova contrasenya';
+$string['missingnewpassword'] = 'Falta la contrasenya nova';
 $string['missingpassword'] = 'Falta la contrasenya';
 $string['missingrecaptchachallengefield'] = 'Falta el camp reCAPTCHA';
 $string['missingreqreason'] = 'Falta la raó';
@@ -1181,7 +1181,7 @@ $string['moveselectedcoursesto'] = 'Mou els cursos seleccionats a...';
 $string['movetoanotherfolder'] = 'Mou-los a una altra carpeta';
 $string['moveup'] = 'amunt';
 $string['msnid'] = 'MSN ID';
-$string['mustchangepassword'] = 'La nova contrasenya ha de ser diferent de l\'actual';
+$string['mustchangepassword'] = 'La contrasenya nova ha de ser diferent de l\'actual';
 $string['mustconfirm'] = 'Necessiteu confirmar el vostre inici de sessió';
 $string['mycourses'] = 'Els meus cursos';
 $string['myfiles'] = 'Els meus fitxers privats';
@@ -1201,9 +1201,9 @@ $string['neverdeletelogs'] = 'No suprimeixis mai els registres';
 $string['new'] = 'Nou';
 $string['newaccount'] = 'Nou compte';
 $string['newcourse'] = 'Nou curs';
-$string['newpassword'] = 'Nova contrasenya';
+$string['newpassword'] = 'Contrasenya nova';
 $string['newpasswordfromlost'] = '<strong>AVÍS:</strong> se us ha enviat la vostra <strong>contrasenya actual</strong> en el <strong>segon</strong> dels dos correus que rebreu com a part del procés de recuperació de la contrasenya. Assegureu-vos que heu rebut la contrasenya nova abans de continuar.';
-$string['newpassword_help'] = 'Introduïu una nova contrasenya o deixeu-ho en blanc per mantenir la contrasenya actual.';
+$string['newpassword_help'] = 'Introduïu una contrasenya nova o deixeu-ho en blanc per mantenir la contrasenya actual.';
 $string['newpasswordtext'] = 'Hola, {$a->firstname},
 
 S\'ha anul·lat la contrasenya del vostre compte a «{$a->sitename}» i se us n\'ha assignat una de nova provisionalment.
@@ -1257,11 +1257,11 @@ $string['newsitemsnumber_help'] = '<p>En els formats de curs &quot;setmanal&quot
 <p>Aquest par&agrave;metre determina quants &iacute;tems apareixen a la p&agrave;gina inicial del curs, en un quadre de not&iacute;cies a la banda dreta.</p>
 
 <p>Si poseu &quot;0 not&iacute;cies&quot; aleshores no apareixer&agrave; el quadre de not&iacute;cies.</p>';
-$string['newuser'] = 'Nou usuari';
+$string['newuser'] = 'Usuari nou';
 $string['newusernewpasswordsubj'] = 'Nou compte d\'usuari';
 $string['newusernewpasswordtext'] = 'Hola, {$a->firstname},
 
-Se us ha creat un nou compte d\'usuari a «{$a->sitename}» i se us ha assignat una nova contrasenya temporal.
+Se us ha creat un compte d\'usuari nou a «{$a->sitename}» i se us ha assignat una contrasenya nova temporal.
 
 La vostra informació d\'inici de sessió és ara:
     usuari: {$a->username}
@@ -1335,7 +1335,7 @@ $string['noticenewerbackup'] = 'Aquesta còpia de seguretat ha estat creada amb 
 $string['notifications'] = 'Notificacions';
 $string['notifyloginfailuresmessage'] = '{$a->time}, IP: {$a->ip}, usuari: {$a->info}';
 $string['notifyloginfailuresmessageend'] = 'Podeu veure aquests registres a {$a}';
-$string['notifyloginfailuresmessagestart'] = 'Heus aquí una llista d\'intents fallits d\'inici de sessió en {$a} des de la darrera notificació';
+$string['notifyloginfailuresmessagestart'] = 'Heus aquí una llista d\'intents fallits d\'inici de sessió a {$a} des de la darrera notificació';
 $string['notifyloginfailuressubject'] = '{$a} :: Notificació d\'intents fallits d\'inici de sessió';
 $string['notincluded'] = 'No inclòs';
 $string['notingroup'] = 'Heu de ser part d\'un grup per veure aquesta activitat.';
@@ -1660,7 +1660,7 @@ $string['servererror'] = 'S\'ha produït un error mentre es comunicava amb el se
 $string['serverlocaltime'] = 'Hora del servidor local';
 $string['setcategorytheme'] = 'Estableix el tema de la categoria';
 $string['setpassword'] = 'Definició de la contrasenya';
-$string['setpasswordinstructions'] = 'Introduïu i repetiu la nova contrasenya; a continuació, feu clic a «Definició de la contrasenya». <br /> La vostra nova contrasenya es desarà, i haureu iniciat sessió.';
+$string['setpasswordinstructions'] = 'Introduïu i repetiu la contrasenya nova a continuació, feu clic a «Definició de la contrasenya». <br /> La vostra contrasenya nova es desarà, i haureu iniciat sessió.';
 $string['settings'] = 'Paràmetres';
 $string['shortname'] = 'Nom curt';
 $string['shortnamecollisionwarning'] = '[*] = Aquest nom curt ja l\'utilitza un altre curs i caldrà canviar-lo quan s\'aprovi';
@@ -1833,7 +1833,7 @@ $string['textformat'] = 'Text net';
 $string['thanks'] = 'Gràcies';
 $string['theme'] = 'Tema';
 $string['themes'] = 'Temes';
-$string['themesaved'] = 'S\'ha desat el nou tema';
+$string['themesaved'] = 'S\'ha desat el tema nou';
 $string['therearecourses'] = 'Hi ha {$a} cursos';
 $string['thereareno'] = 'No hi ha cap {$a} en aquest curs';
 $string['thiscategory'] = 'Aquesta categoria';

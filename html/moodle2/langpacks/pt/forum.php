@@ -105,7 +105,7 @@ $string['configoldpostdays'] = 'Número de dias para uma mensagem ser considerad
 $string['configreplytouser'] = 'Quando um tópico de fórum é enviado por e-mail, deverá conter o endereço de e-mail do autor para que os destinatários possam responder diretamente em vez de usarem o fórum? Se selecionar \'Sim\', os utilizadores poderão, a partir do seu perfil, optar por manter o seu endereço de e-mail provado.';
 $string['configshortpost'] = 'Qualquer mensagem abaixo deste tamanho (número de caracteres, sem incluir HTML) será considerada curta.';
 $string['configtrackingtype'] = 'Configuração predefinida para "Assinalar mensagens".';
-$string['configtrackreadposts'] = 'Selecione \'sim\' para permitir assinalar mensagens não lidas para cada utilizador.';
+$string['configtrackreadposts'] = 'Selecione \'Sim\' para permitir assinalar mensagens não lidas para cada utilizador.';
 $string['configusermarksread'] = 'Se selecionar \'Sim\', o utilizador deverá marcar manualmente as mensagens como lidas. Se selecionar \'Não\', as mensagens serão marcadas como lidas após a sua visualização.';
 $string['confirmsubscribe'] = 'Tem a certeza que deseja subscrever o fórum \'{$a}\'?';
 $string['confirmsubscribediscussion'] = 'Tem a certeza de que pretende subscrever o tópico de discussão \'{$a->discussion}\' no fórum \'{$a->forum}\'?';
@@ -262,7 +262,7 @@ $string['generalforums'] = 'Fóruns gerais';
 $string['hiddenforumpost'] = 'Tópico do fórum oculto';
 $string['inforum'] = 'em {$a}';
 $string['introblog'] = 'As mensagens neste fórum foram copiadas automaticamente de blogues de utilizadores desta disciplina e já não se encontram disponíveis';
-$string['intronews'] = 'Notícias gerais e avisos';
+$string['intronews'] = 'Notícias gerais e anúncios';
 $string['introsocial'] = 'Um fórum aberto para conversar sobre qualquer assunto';
 $string['introteacher'] = 'Um fórum reservado aos professores';
 $string['invalidaccess'] = 'Esta página não foi acedida corretamente';
@@ -314,7 +314,7 @@ As mensagens podem ser avaliadas por professores ou alunos (avaliação pelos pa
 Os fóruns podem ser utilizados com várias finalidades, tais como:
 
 * Espaço introdutório para possibilitar que os alunos se conheçam;
-* Local para divulgar informação relativa à disciplina (usando o fórum notícias, que tem subscrição obrigatória);
+* Local para divulgar informação relativa à disciplina (usando o fórum de anúncios, que tem subscrição obrigatória);
 * Um meio de ajuda, onde professores e alunos podem dar conselhos;
 * Um método informal de partilha de documentos entre alunos;
 * Para continuar a discussão de um assunto iniciado presencialmente na sala de aula;

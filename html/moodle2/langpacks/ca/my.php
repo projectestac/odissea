@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Afegeix pàgina';
-$string['defaultpage'] = 'Pàgina per defecte d\'"El meu Moodle"';
+$string['defaultpage'] = 'Pàgina per defecte d\'«El meu Moodle»';
 $string['defaultprofilepage'] = 'Pàgina per defecte del perfil';
 $string['delpage'] = 'Suprimeix la pàgina';
 $string['managepages'] = 'Gestiona pàgines';

@@ -83,7 +83,7 @@ $string['deletestorehasmappings'] = 'Usted no puede eliminar este almacén porqu
 $string['deletestoresuccess'] = 'Se eliminó exitosamente el almacén de caché';
 $string['editdefinitionmappings'] = 'Mapeos de almacén definiciones
 {$a}';
-$string['editdefinitionsharing'] = 'Editar la definición de compartición para {a}';
+$string['editdefinitionsharing'] = 'Editar la definición de compartición para {$a}';
 $string['editmappings'] = 'Editar mapeos';
 $string['editsharing'] = 'Editar compartir';
 $string['editstore'] = 'Editar almacén';

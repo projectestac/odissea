@@ -35,6 +35,7 @@ $string['installfromzipfile'] = 'ZIP paketea';
 $string['installfromziprootdir'] = 'Berrizendatu root karpeta';
 $string['installfromzipsubmit'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromziptype'] = 'Plugin-mota';
+$string['permcheckprogress'] = 'Egiaztatzen idazteko baimena...';
 $string['pluginname'] = 'Plugin-instalatzailea';
 $string['validationmsg_componentmatch'] = 'Osagaiaren izen osoa';
 $string['validationmsglevel_error'] = 'Errorea';

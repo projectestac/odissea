@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'Kalifikazioen erabiltzailearen txostena ikusi da';
 $string['pluginname'] = 'Erabiltzailearen txostena';
 $string['tablesummary'] = 'Taula antolatuta dago kalifikatutako elementu-zerrenda bat jarraituz, horien kategoria barne hartuta. Elementuak kategoria baten barruan daudenean, hala adieraziko da.';
 $string['user:view'] = 'Nork bere kalifikazio-txostena ikusi';

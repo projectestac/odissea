@@ -236,7 +236,6 @@ $string['pluginname'] = 'HotPot modulua';
 $string['pressoktocontinue'] = 'Sakatu OK aurrera egiteko, edo UTZI orri honetan jarraitzeko.';
 $string['questionshort'] = 'Q-{$a}';
 $string['quizzes'] = 'Galdetegiak';
-$string['removegradeitem'] = 'Ezabatu kalifikazio-elementua';
 $string['responses'] = 'Erantzunak';
 $string['responsesreport'] = 'Erantzunak';
 $string['reviewafterattempt'] = 'Baimendu berrikusketa saiakeraren ondoren';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['healthnoproblemsfound'] = 'Ez da osasun-arazorik aurkitu';
+$string['healthnoproblemsfound'] = 'Ez da osasun-arazorik aurkitu!';
 $string['healthproblemsdetected'] = 'Osasun-arazoak aurkitu dira!';
 $string['healthproblemsolution'] = 'Osasun-arazoaren soluziobidea';
 $string['healthreturntomain'] = 'Jarraitu';

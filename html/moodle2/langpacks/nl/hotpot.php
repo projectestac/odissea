@@ -368,7 +368,6 @@ $string['pressoktocontinue'] = 'Klik OK om verder te gaan of Annuleer om op de h
 $string['questionshort'] = 'Vr-{$a}';
 $string['quizname_help'] = 'helptekst voor Test naam';
 $string['quizzes'] = 'Testen';
-$string['removegradeitem'] = 'Verwijder cijfer';
 $string['responsesreport'] = 'Antwoorden';
 $string['score'] = 'cijfer';
 $string['scoresreport'] = 'Cijfers';

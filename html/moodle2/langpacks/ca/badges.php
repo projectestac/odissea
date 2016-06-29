@@ -135,7 +135,7 @@ $string['copyof'] = 'Còpia de {$a}';
 $string['coursebadges'] = 'Insígnies';
 $string['coursebadgesdisabled'] = 'Les insígnies de curs no estan habilitades en aquest lloc.';
 $string['coursecompletion'] = 'Els usuaris han de completar aquest curs.';
-$string['create'] = 'Nova insígnia';
+$string['create'] = 'Insígnia nova';
 $string['createbutton'] = 'Crea una insígnia';
 $string['creatorbody'] = '<p> {$a->user} ha completat tots els requisits per a la insígnia i se li ha concedit. Vegeu la insígnia emesa en {$a->link} </p>';
 $string['creatorsubject'] = '«{$a}» ha estat guardonat!';
@@ -219,7 +219,7 @@ $string['error:clone'] = 'No es pot duplicar la insígnia.';
 $string['error:connectionunknownreason'] = 'La connexió no ha prosperat, però no s\'ha donat cap raó.';
 $string['error:duplicatename'] = 'Ja existeix al sistema una insígnia amb el mateix nom.';
 $string['error:externalbadgedoesntexist'] = 'No s\'ha trobat la insígnia';
-$string['error:guestuseraccess'] = 'Esteu utilitzant l\'accés de visitants. Per veure les insígnies cal que entreu amb el vostre compte d\'usuari/ària.';
+$string['error:guestuseraccess'] = 'Esteu utilitzant l\'accés de visitants. Per veure les insígnies cal que entreu amb el vostre compte d\'usuari.';
 $string['error:invalidbadgeurl'] = 'El format d\'URL de l\'emissor de la insígnia no és vàlid.';
 $string['error:invalidcriteriatype'] = 'Tipus de criteri invàlid.';
 $string['error:invalidexpiredate'] = 'La data de caducitat ha d\'estar en el futur.';
@@ -286,7 +286,7 @@ $string['month'] = 'Mes(os)';
 $string['mybackpack'] = 'Configuració de la meva motxilla';
 $string['mybadges'] = 'Les meves insígnies';
 $string['never'] = 'Mai';
-$string['newbadge'] = 'Afegeix una nova insígnia';
+$string['newbadge'] = 'Afegeix una insígnia nova';
 $string['newimage'] = 'Nova imatge';
 $string['noawards'] = 'Aquesta insígnia encara no s\'ha guanyat.';
 $string['nobackpack'] = 'No hi ha cap servei de motxilla connectat amb aquest compte.<br />';
@@ -326,7 +326,13 @@ $string['recipientvalidationproblem'] = 'L\'usuari actual no pot ser verificat c
 $string['relative'] = 'Data relativa';
 $string['requiredcourse'] = 'Heu d\'afegir almenys un curs al criteri de configuració del curs';
 $string['reviewbadge'] = 'Canvis en l\'accés a la insígnia';
-$string['reviewconfirm'] = '<p> Aquesta acció realitzarà una comprovació de si qualsevol dels usuaris ja ha completat tots els requisits per a la \'{$a}\' insígnia? </p><p> Voleu continuar? </p>';
+$string['reviewconfirm'] = '<p> Això farà la vostra insígnia visible per als usuaris i els permet començar a guanyar-la. </p>
+
+<p> És possible que alguns usuaris ja compleixin amb els criteris d\'aquesta insígnia i l\'obtinguin immediatament després que s\'activi. </p>
+
+<p> Una vegada que una insígnia ha estat aconseguida serà <strong> bloquejada </strong> - Certs ajustos incloent els criteris i les opcions de caducitat ja no podran ser canviats </p>
+
+<p> Esteu segur que voleu habilitar l\'accés a la insígnia «{$a}»? </p>';
 $string['save'] = 'Desa';
 $string['searchname'] = 'Cerca per nom';
 $string['selectaward'] = 'Seleccioneu el rol que voleu utilitzar per concedir aquesta insígnia:';

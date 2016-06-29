@@ -75,5 +75,5 @@ $string['showremarksstudent'] = 'Mostrar observações aos que estão a ser aval
 $string['showscorestudent'] = 'Exibir pontos para cada nível aos que estão a ser avaliados';
 $string['showscoreteacher'] = 'Exibir pontos para cada nível durante a avaliação';
 $string['sortlevelsasc'] = 'Ordem de classificação para os níveis:';
-$string['sortlevelsasc0'] = 'Descendente por número de pontos';
+$string['sortlevelsasc0'] = 'Decrescente por número de pontos';
 $string['sortlevelsasc1'] = 'Ascendente por número de pontos';

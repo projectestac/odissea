@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Qualsevol categoria';
+$string['apierror'] = 'La clau API de youtube no està configurada. Contacteu amb el vostre administrador.';
+$string['apikey'] = 'Clau API';
 $string['apikeyinfo'] = 'Obteniu una <a href="https://developers.google.com/youtube/v3/getting-started">clau Google API</a> per al vostre lloc Moodle.';
 $string['autosvehicles'] = 'Cotxes i vehicles';
 $string['category'] = 'Categoria';
@@ -43,7 +45,8 @@ $string['numberofvideos'] = 'Nombre de vídeos';
 $string['peopleblogs'] = 'Persones i blogs';
 $string['petsanimals'] = 'Animals i animals domèstics';
 $string['pluginname'] = 'YouTube';
+$string['requesterror'] = 'No es poden obtenir les dades del servidor. Contacteu amb l\'administrador si el problema persisteix.';
 $string['scienceandtech'] = 'Ciència i tecnologia';
 $string['sports'] = 'Esports';
-$string['tag_youtube:addinstance'] = 'Afegir un bloc nou de youtube';
+$string['tag_youtube:addinstance'] = 'Afegeix un bloc nou de youtube';
 $string['travel'] = 'Viatges i llocs';

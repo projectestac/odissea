@@ -58,7 +58,6 @@ $string['outputformat_best'] = 'καλύτερο';
 $string['penalties'] = 'Ποινές';
 $string['pluginname'] = 'Το Hot Potatoes Κουίζ';
 $string['questionshort'] = 'Ε-{$a}';
-$string['removegradeitem'] = 'Αφαίρεση στοιχείου βαθμολόγησης';
 $string['score'] = 'Βαθμός';
 $string['studentfeedback'] = 'Ανάδραση φοιτητών';
 $string['textsourcefilename'] = 'Χρήση ονόματος αρχείου';

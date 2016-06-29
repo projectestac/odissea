@@ -28,10 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['comp_calcs_help'] = '<p>您可以此栏位增加计算结果，例如注册于此课程的平均人数</p>
 <p>更多帮助: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">外链文档</a></p>';
 $string['componenthelp'] = '组件帮助';
+$string['confirmdeletereport'] = '你确定要删除这个报告吗？';
 $string['dbpass'] = '数据库密码';
+$string['email_message'] = '消息';
 $string['filteruser'] = '当前课程用户';
 $string['filteruser_summary'] = '从当前用户中过滤用户（ID）';
 $string['includesubcats'] = '包含子类别';
 $string['previousdays'] = '前几天';
 $string['previousend'] = '上一个结束';
 $string['previousstart'] = '上一个开始';
+$string['usersincohorts'] = '一个或多个群成员的用户';
+$string['usersincohorts_summary'] = '只是选定群成员的用户';

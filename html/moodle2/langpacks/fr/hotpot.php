@@ -414,14 +414,6 @@ $string['pressoktocontinue'] = 'Cliquer sur OK pour continuer, ou Annuler pour r
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texte d\'aide pour le nom du test';
 $string['quizzes'] = 'Tests';
-$string['removegradeitem'] = 'Retirer l\'élément d\'évaluation';
-$string['removegradeitem_help'] = 'Détermine si la note de cette activité doit être supprimée.
-
-**Non**
-: La note de cette activité ne sera pas supprimée du carnet de note de Moodle.
-
-**Oui**
-: Si la note maximale ou la pondération de cette note est à définie à zéro, alors la note de cette activité sera supprimée du carnet de note de Moodle.';
 $string['responsesreport'] = 'Réponses';
 $string['score'] = 'Score';
 $string['scoresreport'] = 'Scores';

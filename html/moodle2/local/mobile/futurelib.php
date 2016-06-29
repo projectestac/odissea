@@ -2663,6 +2663,37 @@ class local_mobile_quiz_attempt extends quiz_attempt {
         return $this->quba->get_question_state($slot);
     }
 
+    /*
+     * Update the timemodifiedoffline field in the quiz_attempts table.
+     * This function should be used only when web services are being used.
+     *
+     * @param int $time time stamp
+     * @return boolean false if the field is not updated becase web services aren't being used.
+     * @since Moodle 3.1
+     */
+    public function set_offline_modified_time($time) {
+        global $DB;
+
+        // Update the timemodifiedoffline field only if web services are being used.
+        if (WS_SERVER) {
+            $dbman = $DB->get_manager();
+            $attemptstable = new xmldb_table('quizaccess_offlineattempts_a');
+            if ($dbman->table_exists($attemptstable)) {
+                $attemptid = $this->get_attemptid();
+                if ($attempt = $DB->get_record('quizaccess_offlineattempts_a', array('attemptid' => $attemptid))) {
+                    $attempt->timemodifiedoffline = $time;
+                    $DB->update_record('quizaccess_offlineattempts_a', $attempt);
+                } else {
+                    $attempt = new stdClass;
+                    $attempt->attemptid = $attemptid;
+                    $attempt->timemodifiedoffline = $time;
+                    $DB->insert_record('quizaccess_offlineattempts_a', $attempt);
+                }
+            }
+        }
+        return false;
+    }
+
 }
 
 class local_mobile_quiz_access_manager extends quiz_access_manager {
@@ -2707,6 +2738,22 @@ class local_mobile_question_bank extends question_bank {
         $qtypes = $DB->get_fieldset_sql($sql, $params);
         return $qtypes;
     }
+}
+
+function local_mobile_mod_quiz_add_timemodifiedoffline($attempt) {
+    global $DB;
+
+    $dbman = $DB->get_manager();
+    $attemptstable = new xmldb_table('quizaccess_offlineattempts_a');
+    if (!$dbman->table_exists($attemptstable)) {
+        return $attempt;
+    }
+
+    if ($timemodifiedoffline = $DB->get_field('quizaccess_offlineattempts_a', 'timemodifiedoffline', array('attemptid' => $attempt->id))) {
+        $attempt->timemodifiedoffline = $timemodifiedoffline;
+    }
+
+    return $attempt;
 }
 
 /**

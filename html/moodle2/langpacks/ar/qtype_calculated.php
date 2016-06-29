@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additem'] = 'أضف عنصر';
+$string['addmoreanswerblanks'] = 'أضف إجابة أخرى فارغة';
+$string['addsets'] = 'أضف مجموعة / مجموعات';
+$string['incorrectfeedback'] = 'لأي إجابة غير صحيحة';
 $string['minmax'] = 'مجال من القيم';

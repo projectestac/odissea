@@ -198,6 +198,7 @@ $string['prevent'] = 'منع';
 $string['prohibit'] = 'تحريم';
 $string['prohibitedroles'] = 'تم تحريمه';
 $string['question:add'] = 'أضف سؤال جديد';
+$string['question:config'] = 'أعد أنواع الأسئلة';
 $string['question:editall'] = 'حرر كل الأسئله';
 $string['question:editmine'] = 'حرر أسئلتك الخاصة';
 $string['question:managecategory'] = 'تحرير تصنيفات السؤال';

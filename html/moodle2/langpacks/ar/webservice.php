@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['createuser'] = 'إنشاء مستخدم محدد';
 $string['key'] = 'المعرف';
 $string['operation'] = 'عملية';
 $string['securitykeys'] = 'مفاتيح الأمان';

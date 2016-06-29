@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['essayonly'] = 'التصحيح اليدوي حتى الآن ممكن فقط للأسئلة المقاليه';
 $string['grading'] = 'تصحيح يدوي';
+$string['inprogress'] = 'قيد التنفيذ';

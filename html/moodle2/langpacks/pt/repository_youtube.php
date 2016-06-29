@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['apierror'] = '{$a}';
 $string['apikey'] = 'Chave API';
 $string['configplugin'] = 'Configurar repositório "YouTube"';
-$string['information'] = 'Obter uma <a href="https://developers.google.com/youtube/v3/getting-started">chave da API do Google</a>para o seu Moodle.';
+$string['information'] = 'Obter uma <a href="https://developers.google.com/youtube/v3/getting-started">chave da API do Google</a> para o seu Moodle.';
 $string['pluginname'] = 'Vídeos do YouTube';
 $string['search'] = 'Procurar vídeos';
 $string['sortby'] = 'Dispor por';

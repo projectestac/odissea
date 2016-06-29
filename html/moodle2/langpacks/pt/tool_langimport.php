@@ -39,8 +39,8 @@ $string['langpackupdateskipped'] = 'Atualização do pacote linguistico \'{$a}\'
 $string['langpackuptodate'] = 'O pacote linguístico \'{$a}\' está atualizado';
 $string['langupdatecomplete'] = 'Atualização do pacote linguístico completa';
 $string['missingcfglangotherroot'] = 'Falta o valor de configuração $CFG->langotherroot';
-$string['missinglangparent'] = 'Falta a lingua-mãe <em>{$a->parent}</em> em <em>{$a->lang}</em>.';
-$string['nolangupdateneeded'] = 'Todos os seus pacotes linguísticos estão atualizados, não é necessária nenhuma atualização';
+$string['missinglangparent'] = 'Falta o idioma ascendente <em>{$a->parent}</em> em <em>{$a->lang}</em>.';
+$string['nolangupdateneeded'] = 'Todos os pacotes linguísticos instalados estão atualizados, não é necessária qualquer atualização';
 $string['pluginname'] = 'Pacotes linguísticos';
 $string['purgestringcaches'] = 'Limpar caches das strings';
 $string['remotelangnotavailable'] = 'O Moodle não consegue ligar a download.moodle.org e, por isso, não é possível fazer a instalação automática do pacote linguístico. Descarregue o ficheiro ZIP a partir de <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> copie-o para a diretoria {$a} e descompacte-o manualmente.';

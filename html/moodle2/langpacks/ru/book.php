@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = 'Добавить главу';
 $string['book:addinstance'] = 'Добавлять новую книгу';
 $string['book:edit'] = 'Редактировать главы книги';
-$string['book:read'] = 'Читать книгу';
+$string['book:read'] = 'Просматривать книгу';
 $string['book:viewhiddenchapters'] = 'Просматривать скрытые главы книги';
 $string['chapters'] = 'Главы';
 $string['chaptertitle'] = 'Название главы';

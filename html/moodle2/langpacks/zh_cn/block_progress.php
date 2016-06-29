@@ -25,4 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity_completion'] = '活动完成';
 $string['page'] = '网页模块';
+$string['what_actions_can_be_monitored_help'] = '<p>一项活动可能有不同的操作</p>
+<p>例如，与作业模块可能的操作有：
+<ul>
+   <li>提交</li>
+   <li>标记</li>
+   <li>通过（见下面的说明）</li>
+   <li>通过截止期限（见下面的说明）和</li>
+   <li>活动完成（在网站、课程和活动的设置启用）</li>
+</ul>
+</p>
+<h3>通过</h3>
+<p>对于作业、练习和测验模块，依赖于成绩册里设置为“等级通过”的项目。<a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">更多帮助...</a></p>';
