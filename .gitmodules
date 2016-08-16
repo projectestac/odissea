@@ -9,4 +9,4 @@
 	url = https://github.com/projectestac/moodle-auth_odissea.git
 [submodule "html/moodle2/blocks/configurable_reports"]
 	path = html/moodle2/blocks/configurable_reports
-	url = https://github.com/jleyva/moodle-block_configurablereports.git
+	url = https://github.com/projectestac/moodle-block_configurablereports.git
