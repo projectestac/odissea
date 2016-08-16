@@ -23,6 +23,8 @@
  */
 
 $string['canntenrol'] = 'Enrolment is disabled or inactive';
+$string['canntenrolearly'] = 'You cannot enrol yet; enrolment starts on {$a}.';
+$string['canntenrollate'] = 'You cannot enrol any more, since enrolment ended on {$a}.';
 $string['cohortnonmemberinfo'] = 'Only members of cohort \'{$a}\' can self-enrol.';
 $string['cohortonly'] = 'Only cohort members';
 $string['cohortonly_help'] = 'Self enrolment may be restricted to members of a specified cohort only. Note that changing this setting has no effect on existing enrolments.';
@@ -32,7 +34,9 @@ $string['customwelcomemessage_help'] = 'A custom welcome message may be added as
 The following placeholders may be included in the message:
 
 * Course name {$a->coursename}
-* Link to user\'s profile page {$a->profileurl}';
+* Link to user\'s profile page {$a->profileurl}
+* User email {$a->email}
+* User fullname {$a->fullname}';
 $string['defaultrole'] = 'Default role assignment';
 $string['defaultrole_desc'] = 'Select role which should be assigned to users during self enrolment';
 $string['enrolenddate'] = 'End date';
@@ -63,6 +67,7 @@ $string['groupkey_desc'] = 'Use group enrolment keys by default.';
 $string['groupkey_help'] = 'In addition to restricting access to the course to only those who know the key, use of group enrolment keys means users are automatically added to groups when they enrol in the course.
 
 Note: An enrolment key for the course must be specified in the self enrolment settings as well as group enrolment keys in the group settings.';
+$string['keyholder'] = 'You should have received this enrolment key from:';
 $string['longtimenosee'] = 'Unenrol inactive after';
 $string['longtimenosee_help'] = 'If users haven\'t accessed a course for a long time, then they are automatically unenrolled. This parameter specifies that time limit.';
 $string['maxenrolled'] = 'Max enrolled users';
@@ -88,6 +93,7 @@ $string['requirepassword'] = 'Require enrolment key';
 $string['requirepassword_desc'] = 'Require enrolment key in new courses and prevent removing of enrolment key from existing courses.';
 $string['role'] = 'Default assigned role';
 $string['self:config'] = 'Configure self enrol instances';
+$string['self:holdkey'] = 'Appear as the self enrolment key holder';
 $string['self:manage'] = 'Manage enrolled users';
 $string['self:unenrol'] = 'Unenrol users from course';
 $string['self:unenrolself'] = 'Unenrol self from the course';

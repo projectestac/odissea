@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'editor_tinymce', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -770,7 +770,7 @@ $string['table_dlg:langdir'] = 'Taalrichting';
 $string['table_dlg:ltr'] = 'Van links naar rechts';
 $string['table_dlg:merge_cells_title'] = 'Cellen samenvoegen';
 $string['table_dlg:mime'] = 'Doel MIME type';
-$string['table_dlg:missing_scope'] = 'Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens.';
+$string['table_dlg:missing_scope'] = 'Weet je zeker dat je door wil gaan met het toewijzen van een kop zonder een bereik op te geven? Voor mensen met een handicap wordt het hierdoor moeilijk om de inhoud of de gegevens in de tabel te begrijpen.';
 $string['table_dlg:row_all'] = 'Alle rijen bijwerken';
 $string['table_dlg:row_even'] = 'Even rijen bijwerken';
 $string['table_dlg:rowgroup'] = 'Rijgroep';

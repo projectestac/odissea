@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_weeks', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'この週';
+$string['deletesection'] = '週を削除する';
+$string['editsection'] = '週を編集する';
+$string['editsectionname'] = '週名を編集する';
 $string['hidefromothers'] = '週を隠す';
+$string['newsectionname'] = '週 {$a} の新しい名称';
 $string['page-course-view-weeks'] = 'ウィークリーフォーマット内のコースメインページすべて';
 $string['page-course-view-weeks-x'] = 'ウィークリーフォーマット内のコースページすべて';
 $string['pluginname'] = 'ウィークリーフォーマット';

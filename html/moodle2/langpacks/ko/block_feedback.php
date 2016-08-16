@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_feedback', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_feedback', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   block_feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = '피드백';
 $string['feedback:addinstance'] = '새 피드백 블록 추가';
-$string['missing_feedback_module'] = '이 블록은 피드백 활동에 기반하는데, 피드백 모듈이 존재하지 않습니다. ';
 $string['pluginname'] = '피드백';

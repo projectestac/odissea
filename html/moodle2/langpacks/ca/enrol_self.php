@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,16 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'La inscripció està inhabilitada o inactiva';
+$string['canntenrolearly'] = 'No us podeu inscriure encara; la inscripció comença el {$a}.';
+$string['canntenrollate'] = 'Ja no us podeu inscriure, atès que el termini es va tancar el {$a}.';
 $string['cohortnonmemberinfo'] = 'Només el membres de la cohort \'{$a}\' poden inscriure\'s ells mateixos.';
 $string['cohortonly'] = 'Només membres de la cohort';
 $string['cohortonly_help'] = 'L\'autoinscripció pot estar restringida als membres de la cohort especificada. Fixeu-vos que canviar aquest paràmetre no té cap efecte sobre les inscripcions que ja existeixen.';
 $string['customwelcomemessage'] = 'Missatge de benvinguda personalitzat';
-$string['customwelcomemessage_help'] = 'Podeu afegir un missatge personalitzat de benvinguda en text pla o en autoformat de Moodle, incloent-hi etiquetes HTML i etiquetes en múltiples llegües.
+$string['customwelcomemessage_help'] = 'Podeu afegir un missatge personalitzat de benvinguda en text net o en format automàtic de Moodle, incloses les etiquetes HTML i les etiquetes en múltiples llengües.
 
-Els següents marcadors de posició poden ser inclosos en el missatge:
+Els marcadors de posició següents poden ser inclosos en el missatge:
 
-* Nom del Curs {$a->coursename}
-* Enllaç a la pàgina de perfil de l\'usuari {$a->profileurl}';
+* Nom del curs {$a->coursename}
+* Enllaç a la pàgina de perfil de l\'usuari {$a->profileurl}
+*Adreça electrònica de l\'usuari {$a->email}
+*Nom complet de l\'usuari {$a->fullname}';
 $string['defaultrole'] = 'Assignació de rol per defecte';
 $string['defaultrole_desc'] = 'Trieu el rol que serà assignat als usuaris durant el procés d\'inscripció';
 $string['enrolenddate'] = 'Data final';
@@ -66,6 +70,7 @@ $string['groupkey_desc'] = 'Utilitza les claus d\'inscripció de grup per defect
 $string['groupkey_help'] = 'A més a més de restringir l\'accés  al curs a únicament qui coneix la clau, l\'ús d\'una clau d\'inscripció de grup possibilita que els usuaris s\'afegixin a grups concrets de forma automàtica quan s\'inscriuen al curs.
 
 Nota: Cal especificar una clau d\'inscripció als paràmetres de l\'autoinscripció així com la clau d\'inscripció de grup als paràmetres del grup.';
+$string['keyholder'] = 'Hauríeu d\'haver rebut aquesta clau d\'inscripció de:';
 $string['longtimenosee'] = 'Cancel·la la inscripció si roman inactiu des de';
 $string['longtimenosee_help'] = 'Si els usuaris no han accedit a un curs després d\'un llarg període de temps, se\'ls cancel·larà la inscripció de forma automàtica.
 Aquest paràmetre especifica aquest temps límit.';
@@ -92,6 +97,7 @@ $string['requirepassword'] = 'És necessària una clau d\'inscripció';
 $string['requirepassword_desc'] = 'Força la clau d\'inscripció per als cursos nous i impedeix la cancel·lació de la inscripció als cursos que ja existien.';
 $string['role'] = 'Rol assignat per defecte';
 $string['self:config'] = 'Auto-configura instàncies d\'inscripció';
+$string['self:holdkey'] = 'Apareixerà com el titular de la clau d\'auto inscripció';
 $string['self:manage'] = 'Gestiona els usuaris inscrits';
 $string['self:unenrol'] = 'Cancel·la la inscripció d\'usuaris del curs';
 $string['self:unenrolself'] = 'Cancel·la la vostra inscripció al curs';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,5 +33,5 @@ $string['pleaseputananswerineachbox'] = 'それぞれのテキストボックス
 $string['pluginname'] = 'ドラッグ＆ドロップテキスト';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップテキストの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップテキストの編集';
-$string['pluginname_help'] = '「[[1]] は [[2]] を飛び越えました」のような問題テキストを記述して、空白1および空白2に使用できる言葉を以下で入力してください。';
-$string['pluginnamesummary'] = 'ドロップダウンメニューを使ってテキスト内のミッシングワードを埋めます。';
+$string['pluginname_help'] = 'ドラッグ＆ドロップテキストは問題テキスト内の正しい空白部分に単語またはフレーズをドラッグするためのレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して、[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。正解の選択肢は特定のグループ内の答えすべてを問題テキスト内の空白部分で同じ色にするためグループ分けすることができます。無制限にマークされた答えの選択肢は1つの以上の空白部分で使用することができます。';
+$string['pluginnamesummary'] = 'ドロップダウンメニューを使って問題テキスト内のミッシングワードを埋めます。';

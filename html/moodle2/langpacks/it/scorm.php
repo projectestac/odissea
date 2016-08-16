@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['aicchacpkeepsessiondata_desc'] = 'La durata del mantenimento, espressa 
 $string['aicchacptimeout'] = 'Timeout AICC HACP';
 $string['aicchacptimeout_desc'] = 'La durata in minuti in cui una sessione AICC HACP può rimanere aperta';
 $string['aiccuserid'] = 'Passa ad AICC gli user id numerici';
-$string['aiccuserid_desc'] = 'Poiché lo standard AICC rispetto a Moodle è molto restrittivo sugli username, questa impostazione consente di passare al pacchetto AICC lo user->id di Moodle al posto dello username. Lo standard AICC per gli username consente l\'uso di caratteri alfanumerici e di due caratteri addizionali, il segno meno (-) ed il segno di sottolineatura (_). Punti, spazi e il simbolo @ non sono consentiti.';
+$string['aiccuserid_desc'] = 'Lo standard AICC rispetto a Moodle è molto restrittivo sugli username, consentendo solo l\'uso di caratteri alfanumerici del segno meno (-) e del segno di sottolineatura (_). Punti, spazi e il simbolo @ non sono consentiti. Questa impostazione consente di passare al pacchetto AICC il codice identificativo dell\'utente al posto dello username.';
 $string['aliasonly'] = 'Aggiornamento autorizzati a cambiare ruolo';
 $string['allowapidebug'] = 'Attiva l\'API di debug e tracking (Imposta la capture mask con apidebugmasjk)';
 $string['allowtypeaicchacp'] = 'Abilita AICC HACP esterna';
@@ -54,9 +54,9 @@ $string['attempt'] = 'Tentativo';
 $string['attempt1'] = '1 tentativo';
 $string['attempts'] = 'Tentativi';
 $string['attemptsmanagement'] = 'Gestione tentativi';
-$string['attemptstatusall'] = 'My home e pagina di ingresso';
+$string['attemptstatusall'] = 'Dashboard e pagina di ingresso';
 $string['attemptstatusentry'] = 'Solo pagina di ingresso';
-$string['attemptstatusmy'] = 'Solo My home';
+$string['attemptstatusmy'] = 'Solo Dashboard';
 $string['attemptsx'] = '{$a} tentativi';
 $string['attr_error'] = 'Valore non valido per l\'attributo ({$a->attr}) nel tag {$a->tag}.';
 $string['autocommit'] = 'Auto-commit';
@@ -74,6 +74,7 @@ $string['browsed'] = 'Visitato';
 $string['browsemode'] = 'Modalità anteprima';
 $string['browserepository'] = 'Visita repository';
 $string['calculatedweight'] = 'Peso calcolato';
+$string['cannotaccess'] = 'Non è possibile chiamare lo script in quel modo';
 $string['cannotfindsco'] = 'SCO non trovato';
 $string['chooseapacket'] = 'Scegli o aggiorna un pacchetto';
 $string['collapsetocwinsize'] = 'Riduci TOC se la dimensione della finestra è minore di';
@@ -106,8 +107,8 @@ $string['display'] = 'Visualizzazione pacchetto';
 $string['displayactivityname'] = 'Visualizza nome dell\'attività';
 $string['displayactivityname_help'] = 'Consente di viuaslizzare il nome dell\'attività sopra lo SCORM player.';
 $string['displayattemptstatus'] = 'Visualizza  lo stato dei tentativi';
-$string['displayattemptstatusdesc'] = 'Imposta la visualizzazione del riepilogo dei tentativi dell\'utente nella pagina  My home all\'interno del blocco Panoramica corsi oppure nella pagina di ingresso dell\'attività SCORM.';
-$string['displayattemptstatus_help'] = 'Consente di visualizzare un riepilogo dello stato dei nel blocco Panoramica corsi della pagina My home e/o nella pagina con la struttura del pacchetto del modulo SCORM.';
+$string['displayattemptstatusdesc'] = 'Imposta la visualizzazione del riepilogo dei tentativi dell\'utente nella Dashboard all\'interno del blocco Panoramica corsi e/o nella pagina di ingresso dell\'attività SCORM.';
+$string['displayattemptstatus_help'] = 'Consente di visualizzare un riepilogo dello stato dei nel blocco Panoramica corsi nella Dashboard e/o nella pagina con la struttura del pacchetto del modulo SCORM.';
 $string['displaycoursestructure'] = 'Visualizza la struttura del corso nella pagina di ingresso';
 $string['displaycoursestructuredesc'] = 'Imposta la visualizzazione della struttura del corso nella pagina di ingresso';
 $string['displaycoursestructure_help'] = 'Visualizza la struttura del corso nella pagina di riepilogo SCORM.';
@@ -124,6 +125,8 @@ $string['eventattemptdeleted'] = 'Eliminato tentativo';
 $string['eventinteractionsviewed'] = 'Visualizzata interazione';
 $string['eventreportviewed'] = 'Visualizzato report';
 $string['eventscolaunched'] = 'Lanciato SCO';
+$string['eventscorerawsubmitted'] = 'Inviato punteggio SCORM grezzo';
+$string['eventstatussubmitted'] = 'Inviato stato SCORM';
 $string['eventtracksviewed'] = 'Visualizzato tracciamento';
 $string['eventuserreportviewed'] = 'Visualizzato report utente';
 $string['everyday'] = 'Ogni giorno';
@@ -202,6 +205,9 @@ $string['lastattemptlock'] = 'Blocca dopo l\'ultimo tentativo';
 $string['lastattemptlockdesc'] = 'Impedisce i lancio del player SCORM dopo l\'esaurimento di tutti i tentativi disponibili.';
 $string['lastattemptlock_help'] = 'Gli studenti non potranno più lanciare il player SCORM se avranno esaurito tutti i tentativi a loro disposizione.';
 $string['location'] = 'Visualizza la barra dell\'indirizzo';
+$string['masteryoverride'] = 'Il mastery score sovrascrive lo stato';
+$string['masteryoverridedesc'] = 'Il default per l\'impostazione di sovrascrittura del mastery score';
+$string['masteryoverride_help'] = 'Abitando l\'impostazione ed in presenza di mastery score, alla chiamata di LMSFinish con l\'impostazione di un punteggio grezzo, lo stato verrà ricalcolato utilizzando il punteggio grezzo ed il mastery score. Qualsiasi stato comunicato dal pacchetto SCORM (incluso "incompleto") sarà sovrascritto.';
 $string['max'] = 'Punteggio massimo';
 $string['maximumattempts'] = 'Numero massimo di tentativi';
 $string['maximumattemptsdesc'] = 'Imposta il valore di default per il numero massimo di tentativi';
@@ -285,6 +291,8 @@ $string['position_error'] = 'Il tag {$a->tag} non può essere figlio del tag {$a
 $string['preferencespage'] = 'Preferenze per questa pagina';
 $string['preferencesuser'] = 'Preferenze per questo report';
 $string['prev'] = 'Precedente';
+$string['protectpackagedownloads'] = 'Evita il download del pacchetto';
+$string['protectpackagedownloads_desc'] = 'Consente lo scaricamento dei pacchetti SCORM solo a coloro che hanno il privilegio course:manageactivities. Se l\'impostazione è disabilitata, i pacchetti SCORM potranno essere scaricati, ad esempio da dispositivi mobili.';
 $string['raw'] = 'Punteggio grezzo';
 $string['regular'] = 'Manifest corretto';
 $string['report'] = 'Report';
@@ -324,6 +332,7 @@ $string['scormtype_help'] = 'L\'impostazione stabilisce come sarà incluso il pa
 $string['scorm:viewreport'] = 'Visualizzare report';
 $string['scorm:viewscores'] = 'Visualizzare punteggi';
 $string['scrollbars'] = 'Consenti lo scorrimento della finestra';
+$string['search:activity'] = 'Pacchetto SCORM - informazioni sull\'attività';
 $string['selectall'] = 'Seleziona tutto';
 $string['selectnone'] = 'Deseleziona tutto';
 $string['show'] = 'Visualizza';

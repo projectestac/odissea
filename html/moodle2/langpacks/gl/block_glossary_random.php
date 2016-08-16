@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_glossary_random', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'Cando se lle permita aos usuarios engadir entradas ao 
 $string['askinvisible'] = 'Cando os usuarios non poidan editar ou ver o glosario, amosar este texto (sen ligazón)';
 $string['askviewglossary'] = 'Cando os usuarios poidan ver o glosario nais non engadir entradas, amosar unha ligazón con este texto';
 $string['glossary_random:addinstance'] = 'Engadir un bloque de entrada aleatoria do glosario';
-$string['glossary_random:myaddinstance'] = 'Engadir un novo bloque de entrada aleatoria do glosario na área persoal';
+$string['glossary_random:myaddinstance'] = 'Engadir un novo bloque de entrada aleatoria do glosario ao meu cartafol';
 $string['intro'] = 'Asegúrese de que ten polo menos un glosario cunha entrada. Entón poderá determinar a seguinte configuración';
 $string['invisible'] = '(continuará)';
 $string['lastmodified'] = 'Última entrada modificada';

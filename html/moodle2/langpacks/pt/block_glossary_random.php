@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_glossary_random', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'Quando os utilizadores puderem adicionar termos ao glo
 $string['askinvisible'] = 'Quando os utilizadores não puderem editar nem ver o glossário, exibir este texto (sem hiperligação)';
 $string['askviewglossary'] = 'Quando os utilizadores puderem ver o glossário mas não puderem adicionar termo, exibir uma hiperligação com este texto';
 $string['glossary_random:addinstance'] = 'Adicionar um novo bloco de Termo aleatório do glossário';
-$string['glossary_random:myaddinstance'] = 'Adicionar um novo bloco Termo aleatório do glossário à Minha página principal';
+$string['glossary_random:myaddinstance'] = 'Adicionar um novo bloco Termo aleatório do glossário ao Painel do utilizador';
 $string['intro'] = 'Verifique que esta disciplina tem pelo menos um glossário, com pelo menos um termo. Depois, poderá ajustar as configurações seguintes';
 $string['invisible'] = '(continua...)';
 $string['lastmodified'] = 'Último termo criado/modificado';

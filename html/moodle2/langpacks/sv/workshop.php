@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshop', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -98,8 +98,8 @@ $string['deadlinesignored'] = 'Tidsbegränsningar gäller inte dig';
 $string['editassessmentform'] = 'Redigera formulär för bedömning/värdering/betygssättning';
 $string['editassessmentformstrategy'] = 'Redigera bedömningsformulär ({$a})';
 $string['editingassessmentform'] = 'Redigerar formulär för bedömning/värdering/betygssättning';
-$string['editingsubmission'] = 'Redigerar inskickad uppgift';
-$string['editsubmission'] = 'Redigera inskickad uppgift';
+$string['editingsubmission'] = 'Redigerar inskickad uppgiftslösning';
+$string['editsubmission'] = 'Redigera inskickad uppgiftslösning';
 $string['err_multiplesubmissions'] = 'Medan du redigerade detta formulär har en annan version av inlämningen sparats. Multipla inlämningar per användare är inte tillåtna.';
 $string['err_removegrademappings'] = 'Kunde inte ta bort oanvända betygsmappningar';
 $string['evaluategradeswait'] = 'Vänta tills bedömningarna är utvärderade och betygen beräknade.';
@@ -123,7 +123,7 @@ $string['exampleneedsubmission'] = 'Du måste först lämna in ditt arbete och b
 $string['examplesbeforeassessment'] = 'Exempel är tillgängliga efter egen inlämning och måste bedömas innan inbördes utvärdering';
 $string['examplesbeforesubmission'] = 'Exempel måste bedömas innan egen inlämning';
 $string['examplesmode'] = 'Inställning för exempelbedömning';
-$string['examplesubmissions'] = 'Exempel på inskickade uppgifter';
+$string['examplesubmissions'] = 'Prov på inskickade uppgiftslösningar';
 $string['examplesvoluntary'] = 'Bedömning av exempelinlämning är frivillig';
 $string['feedbackauthor'] = 'Återkoppling för författaren';
 $string['feedbackauthorattachment'] = 'Bilaga';
@@ -142,7 +142,7 @@ $string['gradedecimals'] = 'Antal decimaler i betyg/omdöme';
 $string['gradegivento'] = '&gt;';
 $string['gradeinfo'] = 'Betyg /omdöme: {$a->received} av {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (bedömning/värdering/betygssättning)';
-$string['gradeitemsubmission'] = '{$a->workshopname} (inskickad uppgift)';
+$string['gradeitemsubmission'] = '{$a->workshopname} (inskickad uppgiftslösning)';
 $string['gradeover'] = 'Åsidosätt betyg för inlämning';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Betygsrapport för workshop';
@@ -155,12 +155,12 @@ $string['gradingsettings'] = 'Betygsinställningar';
 $string['groupnoallowed'] = 'Du har inte tillåtelse att bedöma någon grupp i denna workshop';
 $string['iamsure'] = 'Ja, jag är säker';
 $string['info'] = 'Info';
-$string['instructauthors'] = 'Instruktioner för inskickning av uppgifter';
+$string['instructauthors'] = 'Instruktioner för inskickning av uppgiftslösningar';
 $string['instructreviewers'] = 'Instruktioner för bedömning/värdering/betygssättning';
 $string['introduction'] = 'Introduktioon';
-$string['latesubmissions'] = 'Sent inskickade uppgifter';
-$string['latesubmissionsallowed'] = 'Sent inskickade uppgifter accepteras';
-$string['latesubmissions_desc'] = 'Tillåt inskickning av uppgifter efter sluttiden.';
+$string['latesubmissions'] = 'Sent inskickade uppgiftslösningar';
+$string['latesubmissionsallowed'] = 'Sent inskickade uppgiftslösningar accepteras';
+$string['latesubmissions_desc'] = 'Tillåt inskickning av uppgiftslösningar efter sluttiden.';
 $string['latesubmissions_help'] = 'Om aktiverat kan en workshopdeltagare lämna in sitt arbete efter tidsfristen för inlämning eller under bedömningsfasen. För sent inlämnade arbeten kan däremot inte redigeras.';
 $string['maxbytes'] = 'Maximal filstorlek';
 $string['modulename'] = 'Workshop';
@@ -172,7 +172,7 @@ Inlämningarna bedöms med hjälp av ett formulär där läraren definierat ett 
 
 Eleverna får två betyg i en workshop - ett betyg för sin inlämnade uppgift och ett betyg för sina medarbetarbedömningar. Båda betygen sparas i betygsboken.';
 $string['modulenameplural'] = 'Workshops';
-$string['mysubmission'] = 'Min inskickade uppgift';
+$string['mysubmission'] = 'Min inskickade uppgiftslösning';
 $string['nattachments'] = 'Maximalt antal bilagor till inlämningsuppgift';
 $string['noexamples'] = 'Det finns inga exempel i denna workshop än';
 $string['noexamplesformready'] = 'Du måste definiera bedömningsformuläret innan du ger exempel på inlämningsuppgift';
@@ -200,7 +200,7 @@ $string['pluginadministration'] = 'Administration av workshop';
 $string['pluginname'] = 'Workshop';
 $string['prepareexamples'] = 'Förbered exempelinlämningar';
 $string['previewassessmentform'] = 'Förhandsgranska';
-$string['publishedsubmissions'] = 'Inskickade uppgifter som har offentliggjorts';
+$string['publishedsubmissions'] = 'Inskickade uppgiftslösningar som har offentliggjorts';
 $string['publishsubmission'] = 'Publicera inlämning';
 $string['publishsubmission_help'] = 'Publicerade inlämningar är tillgängliga för andra när workshopen är stängd.';
 $string['reassess'] = 'Bedöm/värdera/betygssätt igen';
@@ -225,13 +225,13 @@ $string['strategy_help'] = 'Betygsstrategin avgör vilket bedömningsformulär s
 * Kommentarer - Kommentarer ges om specificerade aspekter, men inget betyg kan ges
 * Antal fel - Kommentarer och ja / nej bedömning ges beträffande specificerade påståenden
 * Rubrik - En nivåbedömning ges beträffande angivna kriterier';
-$string['submission'] = 'Inskickad  uppgift';
+$string['submission'] = 'Inskickad  uppgiftslösning';
 $string['submissionattachment'] = 'Bilaga';
-$string['submissionby'] = 'Inskickad uppgift av {$a}';
+$string['submissionby'] = 'Inskickad uppgiftslösning av {$a}';
 $string['submissioncontent'] = 'Innehåll för inlämnad uppgift';
-$string['submissionend'] = 'Sluttid för inskickning av uppgifter';
+$string['submissionend'] = 'Sluttid för inskickning av uppgiftslösningar';
 $string['submissionendbeforestart'] = 'Sluttid för inlämning kan inte anges som före tid för början av inlämning';
-$string['submissionenddatetime'] = 'Sluttid för inskickning av uppgifter: {$a->daydatetime} ({$a->distanceday})';
+$string['submissionenddatetime'] = 'Sluttid för inskickning av uppgiftslösningar: {$a->daydatetime} ({$a->distanceday})';
 $string['submissionendevent'] = '{$a} (sluttid för inlämning)';
 $string['submissionendswitch'] = 'Växla till nästa fas efter att sluttid för inlämning inträffat';
 $string['submissionendswitch_help'] = 'Om sluttid för inlämning är angiven och dess kryssruta är markerad, kommer workshopen automatiskt att växla till bedömningsfasen när sluttiden inträffar.';
@@ -239,8 +239,8 @@ $string['submissiongrade'] = 'Bedömning/värdering/betygssättning av inskickat
 $string['submissiongrade_help'] = 'Denna inställning anger maximalt betyg som kan erhållas för inlämnat arbete.';
 $string['submissiongradeof'] = 'Betyg för inlämning (från {$a})';
 $string['submissionsettings'] = 'Inlämningsinställningar';
-$string['submissionstart'] = 'Öppen för inskickning av uppgift';
-$string['submissionstartdatetime'] = 'Öppen för inskickning av uppgifter från {$a->daydatetime} ({$a->distanceday})';
+$string['submissionstart'] = 'Öppen för inskickning av uppgiftslösningar';
+$string['submissionstartdatetime'] = 'Öppen för inskickning av uppgiftslösningar från {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (öppnas för inlämningar)';
 $string['submissiontitle'] = 'Titel';
 $string['subplugintype_workshopallocation'] = 'Fördelningsmetod för inlämningar';

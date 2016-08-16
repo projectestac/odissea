@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = '带附件的HTML';
 $string['format_spreadsheet'] = '电子表格';
 $string['format_text'] = '纯文本';
 $string['format_video'] = '视频';
-$string['hidden'] = '隐藏';
 $string['highdbsizethreshold'] = '大量传送数据大小';
 $string['highdbsizethresholddesc'] = '数据库记录数超过多少将被认为会使用大量传送时间';
 $string['highfilesizethreshold'] = '大量传送文件大小';
@@ -111,6 +110,8 @@ $string['instanceismisconfigured'] = '云存储实例配置不正确，跳过。
 $string['instancenotdelete'] = '删除云存储失败';
 $string['instancenotsaved'] = '保存云存储出错';
 $string['instancesaved'] = '云存储成功保存';
+$string['intro'] = '你所创建的内容，如提交的作业，论坛帖子，博客文章，可以导出到产品组合或下载。<br>
+你不希望使用的任何产品组合可能会被隐藏，使其不被列为导出内容的选项中。';
 $string['invalidaddformat'] = '传递给 portfolio_add_button 的添加格式无效。（{$a}）必须是 PORTFOLIO_ADD_XXX 中的一个';
 $string['invalidbuttonproperty'] = '找不到 portfolio_button 的属性（{$a}）';
 $string['invalidconfigproperty'] = '找不到配置属性（{$a->class} 的 {$a->property}）';
@@ -174,6 +175,7 @@ $string['save'] = '保存';
 $string['selectedformat'] = '选择导出格式';
 $string['selectedwait'] = '等待吗？';
 $string['selectplugin'] = '选择目标';
+$string['showhide'] = '显示 / 隐藏';
 $string['singleinstancenomultiallowed'] = '只有一个可用的云存储插件实例，它不支持每次会话多次导出，并且已经有一个处于活动状态的导出正在该插件的会话中！';
 $string['somepluginsdisabled'] = '有些云存储插件已完全禁用，因为它们配置错误或依赖于别的什么：';
 $string['sure'] = '您确信要删除“{$a}”吗？此操作不可逆。';

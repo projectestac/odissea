@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'install', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,6 +47,7 @@ $string['caution'] = 'Precaución';
 $string['chooselanguage'] = 'Escolla un idioma';
 $string['chooselanguagehead'] = 'Escolla un idioma';
 $string['chooselanguagesub'] = 'Escolla un idioma para o proceso de instalación. Este idioma empregarase tamén como idioma predeterminado do sitio, se ben pode cambiarse máis adiante.';
+$string['cliadminemail'] = 'Novos enderezos de correo de usuario administrador';
 $string['cliadminpassword'] = 'Novo contrasinal de usuario administrador';
 $string['cliadminusername'] = 'Nome de usuario da conta do administrador';
 $string['clialreadyconfigured'] = 'Xa existe o ficheiro config.php. Empregue admin/cli/install_database.php se quere actualizar o seu sitio web.';

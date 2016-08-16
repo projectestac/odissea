@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lti', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -179,7 +179,6 @@ $string['share_name'] = '도구에서 도구 기동자의 이메일 공유';
 $string['share_name_admin'] = '도구에서 도구 기동자의 이메일 공유';
 $string['share_roster'] = '도구의 강좌 수강생 명단 접근 허용';
 $string['share_roster_admin'] = '도구가 강좌 수강생 명단을 접근할 수도 있습니다';
-$string['show_in_course'] = '도구 인스턴스를 만들때 도구 유형 보여주기';
 $string['size'] = '크기 파라메터';
 $string['submission'] = '제출';
 $string['submissions'] = '제출물들';

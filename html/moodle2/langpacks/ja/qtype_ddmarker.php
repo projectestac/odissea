@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,6 @@ $string['alttext'] = '代替テキスト';
 $string['answer'] = '答え';
 $string['bgimage'] = '背景イメージ';
 $string['clearwrongparts'] = '間違って置かれたマーカーをイメージのデフォルトスタートポジションに戻す';
-$string['confirmimagetargetconversion'] = 'あなたは上記のイメージターゲット問題をドラッグ＆ドロップマーカー問題タイプに変換しようとしています。';
-$string['convertingimagetargetquestion'] = '変換済み問題「 {$a->name} 」';
 $string['coords'] = '座標';
 $string['correctansweris'] = '正解: {$a}';
 $string['draggableimage'] = 'ドラッグ可能イメージ';
@@ -56,46 +54,35 @@ $string['formerror_nosemicolons'] = 'あなたの座標ストリングにはセ�
 $string['formerror_onlysometagsallowed'] = 'マーカーのラベルとして「 {$a} 」タグのみ許可されます。';
 $string['formerror_onlyusewholepositivenumbers'] = '形状のxy座標および幅および高さを指定する場合、正の整数のみを使用してください。あなたの {$a->shape} の座標は次のようになります - {$a->coordsstring}。';
 $string['formerror_polygonmusthaveatleastthreepoints'] = '多角形の場合、少なくとも3点を指定する必要があります。あなたの {$a->shape} の座標は次のようになります - {$a->coordsstring}。';
-$string['formerror_repeatedpoint'] = 'あなたは同じ点を2回指定しました。重複を削除してください。あなたの {$a->shape} の座標は次のようになります - {$a->coordsstring}。';
+$string['formerror_repeatedpoint'] = 'あなたは同じ座標を2回入力しました。それぞれの点はユニークである必要があります。あなたの {$a->shape} の座標は次のようになります - {$a->coordsstring}。';
 $string['formerror_shapeoutsideboundsofbgimage'] = 'あなたが定義した形状は背景イメージの境界を越えてしまいます。';
 $string['formerror_toomanysemicolons'] = 'あなたが指定した座標の分離部分にセミコロンが使われすぎています。あなたの {$a->shape} の座標は次のようになります - {$a->coordsstring}。';
-$string['formerror_unrecognisedwidthheightpart'] = '私たちはあなたが指定した幅および高さを認識できませんでした。あなたの {$a->shape} の座標は次のように記述してください - {$a->coordsstring}';
-$string['formerror_unrecognisedxypart'] = '私たちはあなたが指定したxy座標を認識できませんでした。あなたの {$a->shape} の座標は次のように記述してください - {$a->coordsstring}';
-$string['imagetargetconverter'] = 'イメージターゲット問題をドラッグ＆ドロップマーカーに変換する';
+$string['formerror_unrecognisedwidthheightpart'] = 'あなたが指定した幅および高さを認識できませんでした。あなたの {$a->shape} の座標は次のように記述してください - {$a->coordsstring}';
+$string['formerror_unrecognisedxypart'] = 'あなたが指定したxy座標を認識できませんでした。あなたの {$a->shape} の座標は次のように記述してください - {$a->coordsstring}';
 $string['infinite'] = '無制限';
-$string['listitemconfirmcategory'] = 'カテゴリ「 {$a->name} 」 ({$a->qcount} 件のイメージターゲット問題を含む) 内のイメージターゲット問題すべてを変換予定';
-$string['listitemconfirmcontext'] = 'コンテクスト「 {$a->name} 」 ({$a->qcount} 件のイメージターゲット問題を含む) 内のイメージターゲット問題すべてを変換予定';
-$string['listitemconfirmquestion'] = '問題「 {$a->name} 」を変換予定';
-$string['listitemlistallcategory'] = 'カテゴリ「 {$a->name} 」 ({$a->qcount} 件のイメージターゲット問題を含む) 内のイメージターゲット問題すべてを選択する';
-$string['listitemlistallcontext'] = 'コンテクスト「 {$a->name} 」 ({$a->qcount} 件のイメージターゲット問題を含む) 内のイメージターゲット問題すべてを選択する';
-$string['listitemlistallquestion'] = '問題「 {$a->name} 」を選択する';
-$string['listitemprocessingcategory'] = 'カテゴリ「 {$a->name} 」 ({$a->qcount} 件のイメージターゲット問題を含む) 内のイメージターゲット問題すべての変換';
-$string['listitemprocessingcontext'] = 'コンテクスト「 {$a->name} 」 ({$a->qcount} 件のイメージターゲット問題を含む) 内のイメージターゲット問題すべての変換';
-$string['listitemprocessingquestion'] = '変換済み問題「 {$a->name} 」';
 $string['marker'] = 'マーカー';
 $string['marker_n'] = 'マーカー {no}';
 $string['markers'] = 'マーカー';
 $string['nolabel'] = 'ラベルテキストなし';
 $string['noofdrags'] = 'マーカー数';
-$string['noquestionsfound'] = 'ここで変換する問題は見つかりませんでした。';
 $string['pleasedragatleastonemarker'] = 'あなたの解答は完了していません。あなたはイメージに少なくとも1つのマーカーを置く必要があります。';
 $string['pluginname'] = 'ドラッグ＆ドロップマーカー';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップマーカーの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップマーカーの編集';
-$string['pluginname_help'] = '背景イメージファイルを選択してマーカーのテキストラベルを入力した後、ドラッグされるための背景イメージのドロップゾーンを定義してください。';
+$string['pluginname_help'] = 'ドラッグ＆ドロップマーカーは背景イメージに定義されたドロップゾーンにテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。';
 $string['pluginnamesummary'] = '背景イメージにマーカーをドラッグ＆ドロップします。';
 $string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージファイルを選択してマーカーのテキストラベルを入力した後、ドラッグされるための背景イメージのドロップゾーンを定義してください。';
 $string['refresh'] = 'プレビューをリフレッシュする';
 $string['shape'] = '形状';
 $string['shape_circle'] = '円';
-$string['shape_circle_coords'] = 'x,y;r (xおよびyは円の中心のxy座標、rは半径です)';
+$string['shape_circle_coords'] = 'x,y;r (xおよびyは円の中心の座標、rは半径です)';
 $string['shape_circle_lowercase'] = '円';
 $string['shape_polygon'] = '多角形';
-$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4....(x1, y1は最初の頂点のx,y座標、x2, y2は2番目の頂点のx,y座標です。あなたは多角形を閉じるために最初の頂点の座標を繰り返す必要はありません)';
+$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4....(x1, y1は最初の頂点の座標、x2, y2は2番目の頂点の座標です。多角形を閉じるために最初の頂点の座標を繰り返す必要はありません)';
 $string['shape_polygon_lowercase'] = '多角形';
 $string['shape_rectangle'] = '長方形';
-$string['shape_rectangle_coords'] = 'x,y;w,h (x,yは多角形の左上隅のxy座標、wおよびhは多角形の幅および高さです)';
+$string['shape_rectangle_coords'] = 'x,y;w,h (x,yは多角形の左上隅の座標、wおよびhは多角形の幅および高さです)';
 $string['shape_rectangle_lowercase'] = '長方形';
 $string['showmisplaced'] = '正しいマーカーがドロップされていないドロップゾーンをハイライトする';
 $string['shuffleimages'] = '問題の受験ごとにドラッグアイテムをシャッフルする';

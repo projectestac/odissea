@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_topics', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   format_topics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Текущая тема';
+$string['deletesection'] = 'Удалить тему';
+$string['editsection'] = 'Редактировать тему';
+$string['editsectionname'] = 'Редактировать название темы';
 $string['hidefromothers'] = 'Скрыть тему';
+$string['newsectionname'] = 'Новое название для темы {$a}';
 $string['page-course-view-topics'] = 'Главная страница любого курса формата «Разделы по темам»';
 $string['page-course-view-topics-x'] = 'Любая страница курса формата «Разделы по темам»';
 $string['pluginname'] = 'Разделы по темам';

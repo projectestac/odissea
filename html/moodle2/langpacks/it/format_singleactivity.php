@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_singleactivity', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   format_singleactivity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,4 @@ $string['orphaned'] = 'Orfane';
 $string['orphanedwarning'] = 'Queste attività non sono raggiungibili dagli utenti!';
 $string['pluginname'] = 'Formato attività singola';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'Quando si cambia il formato in uso con il formato "Attività singola" accertarsi di eliminare tutte le attività del corso, incluso il forum news. Da notare che la struttura delle sezioni può essere modificata.';
+$string['warningchangeformat'] = 'Quando si cambia il formato in uso con il formato "Attività singola" accertarsi di eliminare tutte le attività del corso, inclusi gli "Annunci". Da notare che la struttura delle sezioni potrà essere modificata.';

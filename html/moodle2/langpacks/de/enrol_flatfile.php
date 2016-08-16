@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_flatfile', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['expiredaction_help'] = 'Wählen Sie, was passieren soll, wenn die Nutze
 $string['filelockedmail'] = 'Die Textdatei \'{$a}\' für die Kurseinschreibung kann nicht vom Cronjob gelöscht werden. Dieses Problem tritt meistens bei falschen Zugriffsrechten auf. Bitte korrigieren Sie die Zugriffsrechte, damit die Datei gelöscht werden kann und nicht  erneut ausgeführt wird.';
 $string['filelockedmailsubject'] = 'Fehler: Datei für Kursanmeldung';
 $string['flatfile:manage'] = 'Nutzer/innen manuell in den Kurs einschreiben';
+$string['flatfilesync'] = 'CSV-Einschreibung (Flat file)';
 $string['flatfile:unenrol'] = 'Nutzer/innen manuell aus dem Kurs abmelden';
 $string['location'] = 'Dateiverzeichnis';
 $string['location_desc'] = 'Geben Sie den vollständigen Pfad der Einschreibedatei an. Die Datei wird nach der Verarbeitung automatisch gelöscht.';

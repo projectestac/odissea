@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,11 +35,15 @@ Note também que as ações de visualização dos participantes não poderão se
 $string['displayinline'] = 'Na página da disciplina';
 $string['displaypage'] = 'Numa página separada';
 $string['dnduploadmakefolder'] = 'Extrair zip e criar pasta';
+$string['downloadfolder'] = 'Descarregar pasta';
+$string['eventallfilesdownloaded'] = 'Foi descarregado um ficheiro ZIP da pasta';
 $string['eventfolderupdated'] = 'Pasta atualizada';
 $string['folder:addinstance'] = 'Adicionar nova pasta';
 $string['foldercontent'] = 'Ficheiros e subpastas';
 $string['folder:managefiles'] = 'Gerir ficheiros no recurso pasta';
 $string['folder:view'] = 'Ver conteúdo da pasta';
+$string['maxsizetodownload'] = 'Tamanho máximo da pasta a descarregar (MB)';
+$string['maxsizetodownload_help'] = 'O tamanho máximo da pasta que pode ser descarregada como um ficheiro ZIP. Se definir como zero, o tamanho da pasta é ilimitado.';
 $string['modulename'] = 'Pasta';
 $string['modulename_help'] = 'O recurso Pasta permite que o professor disponibilize uma série de ficheiros apenas numa hiperligação, evitando assim o excesso de ficheiros na página principal da disciplina. Pode criar uma pasta e carregar ficheiro a ficheiro ou carregar um único zip com vários ficheiros e extrair os mesmos dentro da pasta.
 
@@ -54,5 +58,8 @@ $string['page-mod-folder-view'] = 'Página principal do recurso pasta';
 $string['page-mod-folder-x'] = 'Qualquer pasta';
 $string['pluginadministration'] = 'Administração da Pasta';
 $string['pluginname'] = 'Pasta';
+$string['search:activity'] = 'Pasta';
+$string['showdownloadfolder'] = 'Mostrar o botão para descarregar pasta';
+$string['showdownloadfolder_help'] = 'Se definir como \'Sim\', será mostrado um botão que permite que o conteúdo da pasta possa ser descarregado como um ficheiro ZIP.';
 $string['showexpanded'] = 'Mostrar as subpastas expandidas';
 $string['showexpanded_help'] = 'Se selecionar \'sim\', as subpastas serão exibidas de forma expandida por predefinição. Caso contrário, serão exibidas de forma contraída.';

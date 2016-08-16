@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'rating', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,3 +56,4 @@ $string['ratings'] = 'Puntuacions';
 $string['ratingtime'] = 'Restringeix la qualificació a les entrades fetes entre aquestes dates:';
 $string['rolewarning'] = 'Rols amb permís per qualificar';
 $string['rolewarning_help'] = 'Per trametre qualificacions els usuaris necessiten la capacitat moodle/rating:rate i totes les capacitats específiques del mòdul. Els usuaris que tinguin assignats els rols següents tindran capacitat per puntuar activitats. La llista de rols pot ser modificada mitjançant els permisos seguint l\'enllaç al bloc de configuracions.';
+$string['scaleselectionrequired'] = 'Quan es selecciona un tipus d\'agregació de valoracions, heu de seleccionar una escala o establir una puntuació màxima.';

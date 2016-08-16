@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['aicchacpkeepsessiondata_desc'] = 'Length of time in days to keep the ex
 $string['aicchacptimeout'] = 'AICC HACP timeout';
 $string['aicchacptimeout_desc'] = 'Length of time in minutes that an external AICC HACP session can remain open';
 $string['aiccuserid'] = 'AICC pass numeric user id';
-$string['aiccuserid_desc'] = 'The AICC standard for usernames is very restrictive compared with Moodle. It allows for alpha-numeric characters, dash and underscore only. Periods, spaces and the @ symbol are not permitted. If enabled, user ID numbers are passed to the AICC package instead of usernames.';
+$string['aiccuserid_desc'] = 'The AICC standard for usernames is very restrictive compared with Moodle, and allows for alphanumeric characters, dash and underscore only. Periods, spaces and the @ symbol are not permitted. If enabled, user ID numbers are passed to the AICC package instead of usernames.';
 $string['aliasonly'] = 'When selecting an imsmanifest.xml file from a repository you must use an alias/shortcut for this file.';
 $string['allowapidebug'] = 'Activate API debug and tracing (set the capture mask with apidebugmask)';
 $string['allowtypeaicchacp'] = 'Enable external AICC HACP';
@@ -54,9 +54,9 @@ $string['attempt'] = 'Attempt';
 $string['attempt1'] = '1 attempt';
 $string['attempts'] = 'Attempts';
 $string['attemptsmanagement'] = 'Attempts management';
-$string['attemptstatusall'] = 'My home and entry page';
+$string['attemptstatusall'] = 'Dashboard and entry page';
 $string['attemptstatusentry'] = 'Entry page only';
-$string['attemptstatusmy'] = 'My home only';
+$string['attemptstatusmy'] = 'Dashboard only';
 $string['attemptsx'] = '{$a} attempts';
 $string['attr_error'] = 'Bad value for attribute ({$a->attr}) in tag {$a->tag}.';
 $string['autocommit'] = 'Auto-commit';
@@ -74,8 +74,10 @@ $string['browsed'] = 'Browsed';
 $string['browsemode'] = 'Preview mode';
 $string['browserepository'] = 'Browse repository';
 $string['calculatedweight'] = 'Calculated weight';
+$string['cannotaccess'] = 'You cannot call this script in that way';
 $string['cannotfindsco'] = 'Could not find SCO';
 $string['chooseapacket'] = 'Choose or update a package';
+$string['closebeforeopen'] = 'You have specified a close date before the open date.';
 $string['collapsetocwinsize'] = 'Collapse TOC when window size below';
 $string['collapsetocwinsizedesc'] = 'This setting lets you specify the window size below which the TOC should automatically collapse.';
 $string['compatibilitysettings'] = 'Compatibility settings';
@@ -106,8 +108,8 @@ $string['display'] = 'Display package';
 $string['displayactivityname'] = 'Display activity name';
 $string['displayactivityname_help'] = 'Whether or not to display the activity name above the SCORM player.';
 $string['displayattemptstatus'] = 'Display attempt status';
-$string['displayattemptstatusdesc'] = 'Whether a summary of the user\'s attempts is shown in the course overview block in My home and/or the SCORM entry page.';
-$string['displayattemptstatus_help'] = 'This preference allows a summary of the users attempts to show in the course overview block in My home and/or the SCORM entry page.';
+$string['displayattemptstatusdesc'] = 'Whether a summary of the user\'s attempts is shown in the course overview block in Dashboard and/or the SCORM entry page.';
+$string['displayattemptstatus_help'] = 'This preference allows a summary of the users attempts to show in the course overview block in Dashboard and/or the SCORM entry page.';
 $string['displaycoursestructure'] = 'Display course structure on entry page';
 $string['displaycoursestructuredesc'] = 'If enabled, the table of contents is displayed on the SCORM outline page.';
 $string['displaycoursestructure_help'] = 'If enabled, the table of contents is displayed on the SCORM outline page.';
@@ -124,6 +126,8 @@ $string['eventattemptdeleted'] = 'Attempt deleted';
 $string['eventinteractionsviewed'] = 'Interactions viewed';
 $string['eventreportviewed'] = 'Report viewed';
 $string['eventscolaunched'] = 'Sco launched';
+$string['eventscorerawsubmitted'] = 'Submitted SCORM raw score';
+$string['eventstatussubmitted'] = 'Submitted SCORM status';
 $string['eventtracksviewed'] = 'Tracks viewed';
 $string['eventuserreportviewed'] = 'User report viewed';
 $string['everyday'] = 'Every day';
@@ -202,6 +206,9 @@ $string['lastattemptlock'] = 'Lock after final attempt';
 $string['lastattemptlockdesc'] = 'If enabled, a student is prevented from launching the SCORM player after using up all their allocated attempts.';
 $string['lastattemptlock_help'] = 'If enabled, a student is prevented from launching the SCORM player after using up all their allocated attempts.';
 $string['location'] = 'Show the location bar';
+$string['masteryoverride'] = 'Mastery score overrides status';
+$string['masteryoverridedesc'] = 'This preference sets the default for the mastery score override setting';
+$string['masteryoverride_help'] = 'If enabled and a mastery score is provided, when LMSFinish is called and a raw score has been set, status will be recalculated using the raw score and mastery score and any status provided by the SCORM (including "incomplete") will be overridden.';
 $string['max'] = 'Max score';
 $string['maximumattempts'] = 'Number of attempts';
 $string['maximumattemptsdesc'] = 'This preference sets the default maximum attempts for an activity';
@@ -286,6 +293,8 @@ $string['position_error'] = 'The {$a->tag} tag can\'t be child of {$a->parent} t
 $string['preferencespage'] = 'Preferences just for this page';
 $string['preferencesuser'] = 'Preferences for this report';
 $string['prev'] = 'Previous';
+$string['protectpackagedownloads'] = 'Protect package downloads';
+$string['protectpackagedownloads_desc'] = 'If enabled, SCORM packages can be downloaded only if the user has the course:manageactivities capability. If disabled, SCORM packages can always be downloaded (by mobile or other means).';
 $string['raw'] = 'Raw score';
 $string['regular'] = 'Regular manifest';
 $string['report'] = 'Report';
@@ -325,6 +334,7 @@ $string['scormtype_help'] = 'This setting determines how the package is included
 $string['scorm:viewreport'] = 'View reports';
 $string['scorm:viewscores'] = 'View scores';
 $string['scrollbars'] = 'Allow the window to be scrolled';
+$string['search:activity'] = 'SCORM package - activity information';
 $string['selectall'] = 'Select all';
 $string['selectnone'] = 'Deselect all';
 $string['show'] = 'Show';

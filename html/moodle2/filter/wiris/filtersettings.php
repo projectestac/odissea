@@ -27,32 +27,8 @@ if ($ADMIN->fulltree) {
 
     $wirisplugin = new WIRISpluginWrapper();
 
-    // If "uninstall" status changes, plugins caches must be reloaded in order to read new dependencies.
-    // Moodle 2.4 and upwards
-    if ($CFG->version>=2012120300) {
-        if (get_config('filter_wiris', 'uninstall') !== get_config('filter_wiris', 'uninstallchange')) {
-            set_config('uninstallchange', get_config('filter_wiris', 'uninstall'), 'filter_wiris');
-            if ($CFG->version>=2013111800) {
-                $cache = cache::make('core', 'plugin_manager');
-                $cache->purge();
-                $pluginmanager = core_plugin_manager::instance();
-
-                if ($plugininfo = $pluginmanager->get_plugin_info('tinymce_tiny_mce_wiris')) {
-                    set_config('uninstall',  get_config('filter_wiris', 'uninstall'), 'tinymce_tiny_mce_wiris');
-
-                }
-
-                if ($plugininfo = $pluginmanager->get_plugin_info('atto_wiris')) {
-                    set_config('uninstall',  get_config('filter_wiris', 'uninstall'), 'atto_wiris');
-                }
-            } else { // tinymce plugin allways installed on Moodle 2.4 and 2.5
-                set_config('uninstall', 'tinymce_tiny_mce_wiris', get_config('filter_wiris', 'uninstall'));
-
-            }
-        }
-    }
-
-    if ($wirisplugin->is_installed()) {
+    $editor_plugin_installed = WIRISpluginWrapper::get_wiris_plugin();
+    if (!empty($editor_plugin_installed)) {
         //Editor and CAS checkbox
         $output = '';
         $wirisplugin->begin();
@@ -64,6 +40,16 @@ if ($ADMIN->fulltree) {
         $formula = $conf->getProperty("wirisformuladirectory",null);
         $wirisplugin->end();
 
+        if ($oldconfile = WIRISpluginWrapper::get_old_configuration()) {
+            $warning_output =
+                '<center><br />
+                <div style="border-style: solid; border-color: red;">'.
+                'An old configuration.ini file has been detected on ' . $oldconfile .
+                '<br> Please move it to ' .  $CFG->wwwroot . '/filter/wiris/configuration.ini.' . 'For further information go to: xxx' .
+                '</div></center>';
+            $settings->add(new admin_setting_heading('filter_wiris_old_configuration', '', $warning_output));
+        }
+
         //Text to be shown when editor and cas are disabled in MoodleConfigurationUpdater
         if (!$was_editor_enabled) {
             $output = '<div class="form-item clearfix">'.
@@ -71,14 +57,6 @@ if ($ADMIN->fulltree) {
                 'filter_wiris_editor_enable</span></div><div class="form-setting"><div class="form-checkbox defaultsnext">'.
                 '<input type="checkbox" disabled="disabled"></div></div><div class="form-description"></div></div>';
         }
-        /* if (!$was_cas_enabled) {
-            $output .= '<div class="form-item clearfix"><div class="form-label" style="color:#aaaaaa;">WIRIS cas'.
-                '<span class="form-shortname" style="color:#aaaaaa;">filter_wiris_cas_enable</span></div><div class="form-setting">'.
-                '<div class="form-checkbox defaultsnext"><input type="checkbox" disabled="disabled"></div></div>'.
-                '<div class="form-description"></div></div>';
-        } */
-
-        $settings->add(new admin_setting_heading('filter_wiris_disabled', '', $output));
 
         $output = '';
         if ($was_editor_enabled) {
@@ -100,7 +78,7 @@ if ($ADMIN->fulltree) {
         }
 
         if ($was_cas_enabled) {
-            $settings->add(new admin_setting_configcheckbox('filter_wiris_cas_enable', get_string('wiriscas', 'filter_wiris'), '', '1'));
+            $settings->add(new admin_setting_configcheckbox('filter_wiris_cas_enable', get_string('wiriscas', 'filter_wiris'), '', '0'));
         } else {
             if (isset($CFG->filter_wiris_cas_enable) && $CFG->filter_wiris_cas_enable) {
                 set_config('filter_wiris_cas_enable', 0, 'config');
@@ -109,13 +87,19 @@ if ($ADMIN->fulltree) {
         }
 
     } else {
-        $title = '<br /><br /><br /><span style="color:#aa0000; font-size:18px;">Attention! A component is missing for WIRIS filter to function correctly</span>';
-        $output = $title . 
-            '<br />WIRIS filter requires that <a target="_blank" href="http://www.wiris.com/plugins/docs/moodle">'.
-            'WIRIS plugin for Moodle and TinyMCE or Atto '.
-            '<img style="vertical-align:-3px;" alt="" src="https://www.wiris.com/system/files/attachments/1689/WIRIS_manual_icon_17_17.png" />'.
-            '</a>'.
-            ' is also installed.';
+        if (!get_config('filter_wiris', 'filter_standalone')) {
+            $output =
+                '<center><br />
+                <div style="border-style: solid; border-color: red;">A plugin dependency is broken:  WIRIS filter requires that either <a target="_blank" href="https://moodle.org/plugins/atto_wiris">WIRIS plugin for Atto</a> or <a target="_blank" href="https://moodle.org/plugins/tinymce_tiny_mce_wiris">WIRIS plugin for TinyMCE</a> is installed. For further information see our documentation page <a target="_blank" href="http://www.wiris.com/plugins/docs/moodle/troubleshooting">'.
+                '<img style="vertical-align:-3px;" alt="" src="https://www.wiris.com/system/files/attachments/1689/WIRIS_manual_icon_17_17.png" />'.
+                '</a>'.
+                '</div></center>';
+            $settings->add(new admin_setting_heading('filter_wiris_disabled', '', $output));
+            if (strrpos($_SERVER["SCRIPT_FILENAME"], 'upgradesettings.php')) {
+               echo $output;
+            }
+        }
+        $settings->add(new admin_setting_configcheckbox('filter_wiris/filter_standalone', get_string('filter_standalone', 'filter_wiris'), get_string('filter_standalonedesc', 'filter_wiris'), false, true, false));
     }
 
     // Clearing cache.
@@ -135,8 +119,8 @@ if ($ADMIN->fulltree) {
 
     if ($CFG->version>=2012120300) {
         $settings->add(new admin_setting_configcheckbox('filter_wiris/clear_cache', get_string('clearcache', 'filter_wiris'), get_string('clearcachedesc', 'filter_wiris'), false, true, false));
-        $settings->add(new admin_setting_configcheckbox('filter_wiris/uninstall', get_string('uninstallmode', 'filter_wiris'), get_string('uninstallmodedesc', 'filter_wiris'), false, true, false));
     }
+
 
     //$output = '<a href="../filter/wiris/info.php">Visit plugin test page.</a>';
     //$settings->add(new admin_setting_heading('filter_wiris_link_test', '', $output));

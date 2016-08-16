@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,8 +135,6 @@ $string['cannotwrite'] = '내보내기 파일({$a})에 쓸 수 없음';
 $string['caseno'] = '아니오, 대소문자는 중요치 않음';
 $string['casesensitive'] = '대소문자 구별';
 $string['caseyes'] = '네, 대소문자는 정확히 일치해야 함';
-$string['categories'] = '범주들';
-$string['category'] = '범주';
 $string['categoryadded'] = '범주 \'{$a}\' 추가됨';
 $string['categorydeleted'] = '범주 \'{$a}\' 삭제됨';
 $string['categorynoedit'] = '\'{$a}\'범주를 편집할 수 있는 권한이 없습니다.';
@@ -171,16 +169,12 @@ $string['configrequiresubnet'] = '학생들이 특정 컴퓨터로만 응시할 
 $string['configreviewoptions'] = '시험을 검토할 때 혹은 시험 보고서를 살펴볼 때 사용자들이 볼 수 있는 정보를 조정';
 $string['configshowblocks'] = '퀴즈 푸는 중 블록 보임';
 $string['configshowuserpicture'] = '시도 중 화면에 사용자 사진 보임';
-$string['configshufflequestions'] = '이 기능을 켜면, 시험지의  질문 순서가 학생들이 시도할 때마다 매번 무작위로 바뀌게 될 것임';
 $string['configshufflewithin'] = '이 기능을 활성화하고, 질문 설정에서 옵션이 활성화하면, 학생이 퀴즈에서 시도할 때마다 개개  질문을 구성하는 부분들이 매번 무작위로 섞이게 됩니다.';
 $string['configtimelimit'] = '분 단위의 기본 응시 시간. 0은 무제한';
 $string['configtimelimitsec'] = '초 단위의 기본 응시 시간. 0은 무제한';
 $string['configurerandomquestion'] = '질문 구성';
 $string['confirmclose'] = '당신은 이 시도를 끝내려고 합니다. 일단 시도를 종료하면 더 이상 답을 고칠 수 없습니다.';
 $string['confirmserverdelete'] = '당신은 정말 서버 <b>{$a}</b>를 목록에서 삭제하겠습니까?';
-$string['confirmstartattemptlimit'] = '허용된 시도 수: {$a}. 퀴즈에 들어가면 1회의 기회를 쓰게 됩니다. 계속 하겠습니까?';
-$string['confirmstartattempttimelimit'] = '이 퀴즈는 시간 제한이 있으며 {$a} 회의 시도만 허용됩니다. 퀴즈에 들어가면 1회의 기회를 쓰게 됩니다. 계속 하시겠습니까?';
-$string['confirmstarttimelimit'] = '이 퀴즈는 시간 제한이 있습니다. 정말 시작하시겠습니까?';
 $string['containercategorycreated'] = '처음 만들어진 범주 안에 생성된 모든 것들은 그 범주가 사라지더라도 그 상위 범주에 모두 저장됩니다.';
 $string['continueattemptquiz'] = '지난번 시도 계속';
 $string['continuepreview'] = '미리보기 계속';
@@ -299,7 +293,6 @@ $string['eventreportviewed'] = '퀴즈 보고서 봄';
 $string['everynquestions'] = '매 {$a} 질문당';
 $string['everyquestion'] = '모든 질문';
 $string['everythingon'] = '모두 켬';
-$string['export'] = '내보내기';
 $string['exportcategory'] = '범주 내보내기';
 $string['exporterror'] = '내보내기 과정에서 오류 발생';
 $string['exportingquestions'] = '질문을 파일로 내보내는 중';
@@ -324,7 +317,6 @@ $string['finishattemptdots'] = '시도 종료';
 $string['finishreview'] = '검토 마침';
 $string['forceregeneration'] = '다시 생성';
 $string['formatnotfound'] = '{$a} 형식에 대한 가져오기/내보내기를 찾을 수 없음';
-$string['formatnotimplemented'] = '이 형식은 정확하게 구현되지 않았습니다. 버그 보고서를 제출하기 바람';
 $string['formulaerror'] = '수식 오류!';
 $string['fractionsaddwrong'] = '당신이 선택한 점수 총계는 100% 가 아닙니다.<br /> 현재 합계가 {$a} % 입니다. <br />질문를 수정하기 위해 되돌아가겠습니까?';
 $string['fractionsnomax'] = '정답은 100%가 되어야 합니다.<br /> 그래야 이 질문에 대한 등급 처리가 가능합니다.<br /> 이 문제를 수정하기 위해 되돌아 가겠습니까?';
@@ -364,7 +356,6 @@ $string['hidereordertool'] = '재정렬 도구 감춤';
 $string['history'] = '응답 이력:';
 $string['howquestionsbehave_desc'] = '퀴즈에서 질문들이 동작할지에 대한 기본 설정';
 $string['imagedisplay'] = '보일 그림';
-$string['import'] = '가져오기';
 $string['importcategory'] = '범주 가져오기';
 $string['importerror'] = '가져오기 과정에서 오류 발생';
 $string['importfilearea'] = '강좌에 있는 기존 파일에서 가져오기';
@@ -388,8 +379,6 @@ $string['inprogress'] = '진행 중';
 $string['introduction'] = '소개';
 $string['invalidattemptid'] = '그런 시도 ID가 존재하지 않음';
 $string['invalidcategory'] = '범주 ID가 올바르지 않음';
-$string['invalidnumericanswer'] = '입력한 답 가운데 하나는 적절한 숫자가 아닙니다.';
-$string['invalidnumerictolerance'] = '입력한 허용오차 중 하나는 알맞는 숫자가 아닙니다.';
 $string['invalidoverrideid'] = '잘못된 덮어쓰기 id';
 $string['invalidquestionid'] = '맞지 않는 질문 ID';
 $string['invalidquizid'] = '맞지 않는 퀴즈 ID';
@@ -431,7 +420,6 @@ $string['modulenameplural'] = '퀴즈';
 $string['moveselectedonpage'] = '선택한 질문을 {$a} 페이지로 옮김';
 $string['multichoice'] = '선다형';
 $string['multipleanswers'] = '최소 한 개의 답을 선택하시오.';
-$string['multiplier'] = '배수';
 $string['mustbesubmittedby'] = '이 시도는  {$a}가 제출해야 합니다.';
 $string['name'] = '명칭';
 $string['navmethod'] = '찾아가기 방법';
@@ -779,7 +767,6 @@ $string['shuffle'] = '섞기';
 $string['shuffleanswers'] = '답안 섞기';
 $string['shuffledrandomly'] = '무작위로 섞임';
 $string['shufflequestions'] = '질문 섞기';
-$string['shufflequestionsselected'] = '질문 뒤섞음이 설정되어 있습니다. 페이지와 관련된 어떤 동작이 사용가능하지 않습니다. 뒤섞임 옵션 변경 {$a}';
 $string['shufflewithin'] = '답안 뒤섞기';
 $string['shufflewithin_help'] = '활성화되고 질문 설정에서 옵션이 활성화되면, 학생들이 퀴즈를 시도할 때마다 질문을 구성하는 부분들이 무작위로 뒤섞이게 됩니다. 이 설정은 선다형 질문이나 짝찾기형 질문과 같이 여러 부분으로 되어 있는 경우에만 적용됩니다.
 
@@ -854,7 +841,6 @@ $string['unfinished'] = '열기';
 $string['ungraded'] = '채점 안됨';
 $string['unit'] = '단위';
 $string['unknowntype'] = '{$a} 줄에 지원되지 않는 질문 유형. 질문 무시됨.';
-$string['unusedcategorydeleted'] = '강좌가 삭제된 이후, 쓰였던  질문들이 더 이상 사용되지 않았기 때문에, 이 범주는 삭제되었습니다.';
 $string['updatesettings'] = '퀴즈 설정 업데이트';
 $string['updatingatttemptgrades'] = '시도 성적 업데이트';
 $string['updatingfinalgrades'] = '최종 성적 업데이트';

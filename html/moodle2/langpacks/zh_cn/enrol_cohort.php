@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_cohort', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addgroup'] = '加到小组';
 $string['assignrole'] = '赋予角色';
 $string['cohort:config'] = '配置群实例';
 $string['cohort:unenrol'] = '移除禁用的用户';
+$string['defaultgroupnametext'] = '{$a->name} 群{$a->increment}';
 $string['instanceexists'] = '群已与选定角色同步。';
 $string['pluginname'] = '群同步';
 $string['pluginname_desc'] = '群选课插件同步课程成员和群成员';

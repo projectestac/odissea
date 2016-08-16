@@ -1,14 +1,25 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-// The version change from now will just be in
-// the last NN increasing it one by one. All lower
-// major versions version values will be lower
-// than this. Only when master becomes a stable
-// version the version value will be changed for
-// time() date.
+// Only when master becomes a stable the version value will be changed for
+// the current date. Otherwise we just increase the last NN by one.
+
 $plugin->component = 'mod_journal';
-$plugin->version  = 2015011301;
-$plugin->requires = 2014111000;  // Moodle 2.8
-$plugin->release = '1.28.1 (Build: 2015011301)';
+$plugin->version  = 2016062800;
+$plugin->requires = 2016052300;  // Moodle 3.1
+$plugin->release = '31.0 (Build: 2016062800)';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->cron     = 60;

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Editar fontes de noticias';
 $string['editrssblock'] = 'Editar bloque de cabeceira RSS';
 $string['enableautodiscovery'] = 'Activar a autodescuberta de fontes?';
 $string['enableautodiscovery_help'] = 'De estaren activadas, as fontes das páxinas atópanse automaticamente. Por exemplo, de se introducir http://docs.moodle.org, entón atoparíase http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
-$string['errorloadingfeed'] = 'Produciuse un erro ao cargar esta fonte RSS ({$a})';
 $string['feed'] = 'Fontes';
 $string['feedadded'] = 'Novas fontes engadidas';
 $string['feeddeleted'] = 'Novas fontes eliminadas';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Crear fontes RSS privadas';
 $string['rss_client:createsharedfeeds'] = 'Crear fontes RSS compartidas';
 $string['rss_client:manageanyfeeds'] = 'Xestionar algunhas fontes RSS';
 $string['rss_client:manageownfeeds'] = 'Xestionar as propias fontes RSS';
-$string['rss_client:myaddinstance'] = 'Engadir un novo bloque de fontes RSS remotas na área persoal';
+$string['rss_client:myaddinstance'] = 'Engadir un novo bloque de fontes RSS remotas ao meu cartafol persoal';
 $string['seeallfeeds'] = 'Ver todas as fontes';
 $string['sharedfeed'] = 'Fontes compartidas';
 $string['shownumentrieslabel'] = 'Número máximo de entradas para mostrar por bloque.';

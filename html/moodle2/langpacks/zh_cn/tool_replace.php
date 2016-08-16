@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_replace', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['cannotfit'] = '这个替换比原始的长，且不允许缩短，无�
 $string['disclaimer'] = '我明白这个操作的风险';
 $string['doit'] = '是的，执行！';
 $string['excludedtables'] = '部分数据库表没有在替换中以字符替换方式更新，这些表包括 configuration, log, events 和 session 表。';
+$string['invalidcharacter'] = '在搜索或替换字符时，发现无效字符。';
 $string['notifyfinished'] = '……完成';
 $string['notifyrebuilding'] = '重建课程缓存……';
 $string['notimplemented'] = '对不起，这个功能无法在你的数据库系统中使用。';

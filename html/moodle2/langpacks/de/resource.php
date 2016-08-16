@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['framesize'] = 'Framegröße';
 $string['legacyfiles'] = 'Migration einer alten Kursdatei';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
+$string['modifieddate'] = 'Geändert {$a}';
 $string['modulename'] = 'Datei';
 $string['modulename_help'] = 'Wenn ein Lernmaterial als Datei vorliegt, kann es einfach in den Kurs eingebunden werden. Achten Sie darauf, dass Ihre Teilnehmer/innen die genutzten Dateiformate auch öffnen können.
 
@@ -89,10 +90,17 @@ $string['printintro'] = 'Beschreibung anzeigen';
 $string['printintroexplain'] = 'Beschreibung unterhalb des Inhalts anzeigen? Einige Anzeigetypen können die Beschreibung nicht anzeigen, selbst wenn diese Option aktiviert ist.';
 $string['resource:addinstance'] = 'Datei hinzufügen';
 $string['resourcecontent'] = 'Dateien und Unterverzeichnisse';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Material exportieren';
 $string['resource:view'] = 'Material sehen';
+$string['search:activity'] = 'Datei';
 $string['selectmainfile'] = 'Bitte wählen Sie die Datei durch einen Klick auf das Icon neben dem Dateinamen aus';
+$string['showdate'] = 'Datum anzeigen';
+$string['showdate_desc'] = 'Soll das Datum für das Hochladen bzw. die letzte Änderung der Datei auf der Kursseite angezeigt werden?';
+$string['showdate_help'] = 'Diese Option zeigt das Datum für das Hochladen bzw. die letzte Änderung neben den Links zur Datei an. Falls die Ressource mehrere Dateien enthält, wird das Datum der Hauptdatei angezeigt.';
 $string['showsize'] = 'Größe anzeigen';
 $string['showsize_desc'] = 'Dateigröße auf Kursseite anzeigen';
 $string['showsize_help'] = 'Zeigt die Dateigröße neben dem Link zur Datei an., z.B. 3,1 MB.
@@ -100,3 +108,4 @@ Wenn zu einem Arbeitsmaterial mehrere Dateien gehören wird die Gesamtgröße al
 $string['showtype'] = 'Typ anzeigen';
 $string['showtype_desc'] = 'Zeigt den Dateityp (z.B. Word-Datei) auf der Kursseite an.';
 $string['showtype_help'] = 'Zeigt den Dateityp neben dem Link zur Datei an (z.B. Word-Datei). Falls mehrere Dateien zu einem Arbeitsmaterial gehören wird der Typ der ersten Datei angezeigt. Ist der Dateityp nicht bekannt, wird nichts angezeigt.';
+$string['uploadeddate'] = 'Hochgeladen {$a}';

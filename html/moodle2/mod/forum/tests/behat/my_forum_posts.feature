@@ -24,9 +24,11 @@ Feature: A user can view their posts and discussions
       | Message | How awesome is this forum discussion? |
     And I reply "Forum discussion 1" post from "Test forum name" forum with:
       | Message | Actually, I've seen better. |
-    When I navigate to "Posts" node in "My profile > Forum posts"
+    When I follow "Profile" in the user menu
+    And I follow "Forum posts"
     Then I should see "How awesome is this forum discussion?"
     And I should see "Actually, I've seen better."
-    And I navigate to "Discussions" node in "My profile > Forum posts"
+    And I follow "Profile" in the user menu
+    And I follow "Forum discussions"
     And I should see "How awesome is this forum discussion?"
     And I should not see "Actually, I've seen better."

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowdeletes'] = 'Permet supressions';
 $string['allowrenames'] = 'Permet canvis de nom';
 $string['allowsuspends'] = 'Permet la suspensió i activació de comptes.';
+$string['assignedsysrole'] = 'S\'ha assignat el rol del sistema {$a}';
 $string['csvdelimiter'] = 'Delimitador CSV';
 $string['defaultvalues'] = 'Valors per defecte';
 $string['deleteerrors'] = 'Suprimeix errors';
@@ -39,6 +40,7 @@ $string['pluginname'] = 'Càrrega d\'usuari';
 $string['renameerrors'] = 'S\'han produït errors en els canvis de nom';
 $string['requiredtemplate'] = 'Requerit. Podeu usar-hi la sintaxi de plantilles (%l = cognom, %f = nom, %u = nom d\'usuari). Per a més detalls i exemples consulteu l\'ajuda.';
 $string['rowpreviewnum'] = 'Previsualització de files';
+$string['unassignedsysrole'] = 'S\'ha desassignat el rol del sistema {$a}';
 $string['uploadpicture_baduserfield'] = 'L\'atribut d\'usuari que heu especificat no és vàlid. Torneu a intentar-ho.';
 $string['uploadpicture_cannotmovezip'] = 'No s\'ha pogut moure el fitxer zip al directori temporal.';
 $string['uploadpicture_cannotprocessdir'] = 'No s\'han pogut processar els fitxers descomprimits.';

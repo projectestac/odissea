@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,6 @@ $string['modulenameplural'] = '課題2.2 (無効)';
 $string['page-mod-assignment-submissions'] = '課題モジュール提出ページ';
 $string['page-mod-assignment-view'] = '課題モジュールメインページ';
 $string['page-mod-assignment-x'] = 'すべての課題モジュールページ';
-$string['pendingupgrades_message_content'] = 'Moodle 2.7へのアップグレードの一環として、レガシー課題2.2活動は無効にされました。レガシー課題2.2活動からのバックアップは途切れなく新しい課題タイプにリストアされます。レガシー課題2.2活動の既存インスタンスすべては課題アップグレードツール {$a->docsurl} を使ってアップグレードする必要があります。 このサイトにはアップグレードを必要とするレガシー課題2.2活動のインスタンスが {$a->count} 件あります。アップグレードされるまでユーザはこれらの活動のコンテンツにアクセスすることはできません。';
-$string['pendingupgrades_message_small'] = 'このプラグインは無効にされました。課題アップグレードツールを使用して既存の課題すべてを新しい課題モジュールにアップグレードする必要があります。';
-$string['pendingupgrades_message_subject'] = '課題2.2に関する重要情報';
 $string['pluginadministration'] = '課題2.2 (無効) 管理';
 $string['pluginname'] = '課題2.2 (無効)';
 $string['upgradenotification'] = 'この活動は古い課題モジュールに基づきます。';

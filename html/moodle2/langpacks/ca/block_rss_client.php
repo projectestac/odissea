@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Edita canals d\'informació';
 $string['editrssblock'] = 'Edita bloc de titulars RSS';
 $string['enableautodiscovery'] = 'Habilitar l\'auto-descobriment de canals?';
 $string['enableautodiscovery_help'] = 'Quan s\'habilita aquesta opció, els canals RSS de les pàgines es poden detectar automàticament. Per exemple, si introduïu http://docs.moodle.org, es trobarà el canal RSS http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
-$string['errorloadingfeed'] = 'S\'ha produït un error en carregar aquest canal RSS ({$a})';
 $string['feed'] = 'Canal d\'informació';
 $string['feedadded'] = 'S\'ha afegit un canal d\'informació';
 $string['feeddeleted'] = 'S\'ha suprimit un canal d\'informació';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Crea canals RSS privats';
 $string['rss_client:createsharedfeeds'] = 'Crea canals RSS compartits';
 $string['rss_client:manageanyfeeds'] = 'Gestiona qualsevol canal RSS';
 $string['rss_client:manageownfeeds'] = 'Gestiona canals RSS propis';
-$string['rss_client:myaddinstance'] = 'Afegir un bloc nou de canals RSS remots a la pàgina «El meu Moodle»';
+$string['rss_client:myaddinstance'] = 'Afegeix un bloc nou de canals RSS remots a la pàgina del Tauler';
 $string['seeallfeeds'] = 'Mostra tots els canals';
 $string['sharedfeed'] = 'Canal compartit';
 $string['shownumentrieslabel'] = 'Nombre màxim d\'entrades que es pot visualitzar en un bloc';

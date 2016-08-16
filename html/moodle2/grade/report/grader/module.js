@@ -477,7 +477,7 @@ M.gradereport_grader.classes.ajax.prototype.submission_outcome = function(tid, o
     try {
         outcome = this.report.Y.JSON.parse(outcome.responseText);
     } catch(e) {
-        var message = M.str.gradereport_grader.ajaxfailedupdate;
+        var message = M.util.get_string('ajaxfailedupdate', 'gradereport_grader');
         message = message.replace(/\[1\]/, args.type);
         message = message.replace(/\[2\]/, this.report.users[args.properties.userid]);
 
@@ -552,7 +552,7 @@ M.gradereport_grader.classes.ajax.prototype.submission_outcome = function(tid, o
                         // If we are here the grade value of the cell currently being edited has changed !!!!!!!!!
                         // If the user has not actually changed the old value yet we will automatically correct it
                         // otherwise we will prompt the user to choose to use their value or the new value!
-                        if (!this.current.has_changed() || confirm(M.str.gradereport_grader.ajaxfieldchanged)) {
+                        if (!this.current.has_changed() || confirm(M.util.get_string('ajaxfieldchanged', 'gradereport_grader'))) {
                             this.current.set_grade(finalgrade);
                             if (this.current.grade) {
                                 this.current.grade.set('value', finalgrade);
@@ -602,7 +602,7 @@ M.gradereport_grader.classes.ajax.prototype.submission_outcome = function(tid, o
  */
 M.gradereport_grader.classes.ajax.prototype.display_submission_error = function(message, cell) {
     var erroroverlay = new this.report.Y.Overlay({
-        headerContent : '<div><strong class="error">'+M.str.gradereport_grader.ajaxerror+'</strong>  <em>'+M.str.gradereport_grader.ajaxclicktoclose+'</em></div>',
+        headerContent : '<div><strong class="error">'+M.util.get_string('ajaxerror', 'gradereport_grader')+'</strong>  <em>'+M.util.get_string('ajaxclicktoclose', 'gradereport_grader')+'</em></div>',
         bodyContent : message,
         visible : false,
         zIndex : 3
@@ -674,17 +674,29 @@ M.gradereport_grader.classes.existingfield = function(ajax, userid, itemid) {
             this.feedback.on('blur', this.submit, this);
 
             // Override the default tab movements when moving between cells
-            this.keyevents.push(this.report.Y.on('key', this.keypress_tab, this.feedback, 'press:9', this, true));             // Handle Tab
-            this.keyevents.push(this.report.Y.on('key', this.keypress_enter, this.feedback, 'press:13', this));                // Handle the Enter key being pressed
-            this.keyevents.push(this.report.Y.on('key', this.keypress_arrows, this.feedback, 'press:37,38,39,40+ctrl', this)); // Handle CTRL + arrow keys
+            // Handle Tab.
+            this.keyevents.push(this.report.Y.on('key', this.keypress_tab, this.feedback, 'press:9', this, true));
+            // Handle the Enter key being pressed.
+            this.keyevents.push(this.report.Y.on('key', this.keypress_enter, this.feedback, 'press:13', this));
+            // Handle CTRL + arrow keys.
+            this.keyevents.push(this.report.Y.on('key', this.keypress_arrows, this.feedback, 'press:37,38,39,40+ctrl', this));
 
             if (this.grade) {
                 // Override the default tab movements when moving between cells
-                this.keyevents.push(this.report.Y.on('key', this.keypress_tab, this.grade, 'press:9+shift', this));            // Handle Shift+Tab
+                // Handle Shift+Tab.
+                this.keyevents.push(this.report.Y.on('key', this.keypress_tab, this.grade, 'press:9+shift', this));
 
                 // Override the default tab movements for fields in the same cell
-                this.keyevents.push(this.report.Y.on('key', function(e){e.preventDefault();this.grade.focus();}, this.feedback, 'press:9+shift', this));
-                this.keyevents.push(this.report.Y.on('key', function(e){if (e.shiftKey) {return;}e.preventDefault();this.feedback.focus();}, this.grade, 'press:9', this));
+                this.keyevents.push(this.report.Y.on('key',
+                        function(e){e.preventDefault();this.grade.focus();},
+                        this.feedback,
+                        'press:9+shift',
+                        this));
+                this.keyevents.push(this.report.Y.on('key',
+                        function(e){if (e.shiftKey) {return;}e.preventDefault();this.feedback.focus();},
+                        this.grade,
+                        'press:9',
+                        this));
             }
         }
     } else if (this.grade) {
@@ -1082,8 +1094,9 @@ M.gradereport_grader.classes.textfield.prototype.attach_key_events = function() 
         }
     }
 
-    // Setup the arrow key events
-    this.keyevents.push(this.report.Y.on('key', a.keypress_arrows, this.inputdiv.ancestor('td'), 'down:37,38,39,40+ctrl', a));       // Handle CTRL + arrow keys
+    // Setup the arrow key events.
+    // Handle CTRL + arrow keys.
+    this.keyevents.push(this.report.Y.on('key', a.keypress_arrows, this.inputdiv.ancestor('td'), 'down:37,38,39,40+ctrl', a));
 
     if (this.grade) {
         // Handle the Enter key being pressed.
@@ -1170,7 +1183,8 @@ M.gradereport_grader.classes.scalefield = function(report, node) {
     this.gradespan = node.one('.gradevalue');
     this.inputdiv = this.report.Y.Node.create('<div></div>');
     this.editfeedback = this.report.ajax.showquickfeedback;
-    this.grade = this.report.Y.Node.create('<select type="text" class="text" name="ajaxgrade" /><option value="-1">'+M.str.gradereport_grader.ajaxchoosescale+'</option></select>');
+    this.grade = this.report.Y.Node.create('<select type="text" class="text" name="ajaxgrade" /><option value="-1">'+
+            M.util.get_string('ajaxchoosescale', 'gradereport_grader')+'</option></select>');
     this.gradetype = 'scale';
     this.inputdiv.append(this.grade);
     if (this.editfeedback) {

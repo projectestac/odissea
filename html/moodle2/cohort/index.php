@@ -122,6 +122,8 @@ $editcolumnisempty = true;
 foreach($cohorts['cohorts'] as $cohort) {
     $line = array();
     $cohortcontext = context::instance_by_id($cohort->contextid);
+    $cohort->description = file_rewrite_pluginfile_urls($cohort->description, 'pluginfile.php', $cohortcontext->id,
+            'cohort', 'description', $cohort->id);
     if ($showall) {
         if ($cohortcontext->contextlevel == CONTEXT_COURSECAT) {
             $line[] = html_writer::link(new moodle_url('/cohort/index.php' ,
@@ -130,8 +132,10 @@ foreach($cohorts['cohorts'] as $cohort) {
             $line[] = $cohortcontext->get_context_name(false);
         }
     }
-    $line[] = format_string($cohort->name);
-    $line[] = s($cohort->idnumber); // All idnumbers are plain text.
+    $tmpl = new \core_cohort\output\cohortname($cohort);
+    $line[] = $OUTPUT->render_from_template('core/inplace_editable', $tmpl->export_for_template($OUTPUT));
+    $tmpl = new \core_cohort\output\cohortidnumber($cohort);
+    $line[] = $OUTPUT->render_from_template('core/inplace_editable', $tmpl->export_for_template($OUTPUT));
     $line[] = format_text($cohort->description, $cohort->descriptionformat);
 
     $line[] = $DB->count_records('cohort_members', array('cohortid'=>$cohort->id));

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,6 +100,7 @@ $string['badgeprivacysetting_help'] = 'Märken som du tar kan visas på din kont
 
 Du kan fortfarande göra individuella sekretessinställningar för märken på din "Mina märken"-sida.';
 $string['badgeprivacysetting_str'] = 'Visa automatiskt märken jag tagit på min profilsida';
+$string['badges'] = 'Märken';
 $string['badgesalt'] = 'Salt för att hasha mottagarens epost-adress';
 $string['badgesalt_desc'] = 'Användningen av en hash ger ryggsäcks-tjänster möjligheten att bekräfta den som tagit ett märke utan att exponera dennes epost-adress. Den här inställningen ska bara använda siffror och bokstäver.';
 $string['badgesdisabled'] = 'Märken är inte aktiverade på den här webbplatsen.';
@@ -222,6 +223,7 @@ $string['error:nosuchuser'] = 'Användaren med den här e-postadressen har inget
 $string['error:notifycoursedate'] = 'Varning: Märken associerade med kursen och slutförande av aktiviteter kommer inte att utfärdas förrän kursens startdatum.';
 $string['error:parameter'] = 'Varning: Minst en parameter måste väljas för att garantera ett korrekt arbetsflöde för utfärdande av märken.';
 $string['error:save'] = 'Kan inte spara märket.';
+$string['eventbadgeawarded'] = 'Märke belönat till';
 $string['evidence'] = 'Bevis';
 $string['existingrecipients'] = 'Existerande mottagare av märke';
 $string['expired'] = 'Förfallen';
@@ -238,7 +240,6 @@ $string['externalbadges_help'] = 'Den här arean visar märken från din externa
 $string['externalbadgesp'] = 'Märken från andra webbplatser:';
 $string['externalconnectto'] = 'För att visa externa märken så behöver du <a href="{$a}">ansluta till en ryggsäck</a>.';
 $string['fixed'] = 'Fast datum';
-$string['hidden'] = 'Dold';
 $string['hiddenbadge'] = 'Tyvärr, ägaren av märket har inte gjort den här informationen tillgänglig.';
 $string['issuancedetails'] = 'Förfallande av märke';
 $string['issuedbadge'] = 'Information för utfärdat märke';

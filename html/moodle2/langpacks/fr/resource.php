@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['framesize'] = 'Hauteur du cadre';
 $string['legacyfiles'] = 'Migration des anciens fichiers du cours';
 $string['legacyfilesactive'] = 'Activée';
 $string['legacyfilesdone'] = 'Terminée';
+$string['modifieddate'] = 'Modifié {$a}';
 $string['modulename'] = 'Fichier';
 $string['modulename_help'] = 'Le module fichier permet à l\'enseignant de fournir un fichier comme ressource d\'apprentissage dans un cours. Lorsque c\'est possible, le fichier est affiché dans la page du cours ; sinon, les participants auront le choix de le télécharger. Le fichier peut comporter des fichiers dépendants, par exemple un fichier HTML pourra contenir des images ou des objets Flash.
 
@@ -90,10 +91,19 @@ $string['printintro'] = 'Afficher la description de la ressource';
 $string['printintroexplain'] = 'Indique s\'il faut afficher la description de la ressource au-dessus du contenu. Certains types d\'affichage n\'afficheront toutefois pas cette description, même lorsque l\'option est activée.';
 $string['resource:addinstance'] = 'Ajouter une ressource';
 $string['resourcecontent'] = 'Fichiers et sous-dossiers';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Exporter des ressources';
 $string['resource:view'] = 'Voir les ressources';
+$string['search:activity'] = 'Fichier';
 $string['selectmainfile'] = 'Veuillez choisir le fichier principal en cliquant sur son icône.';
+$string['showdate'] = 'Afficher la date de dépôt/de modification';
+$string['showdate_desc'] = 'Si ce réglage est activé, la date de dépôt/de modification est affichée sur la page du cours';
+$string['showdate_help'] = 'Affiche la date de dépôt ou de modification à côté du lien vers le fichier.
+
+Si la ressource comprend plusieurs fichiers, la date dépôt ou de modification du premier fichier est affichée.';
 $string['showsize'] = 'Afficher la taille';
 $string['showsize_desc'] = 'Afficher la taille sur la page du cours ?';
 $string['showsize_help'] = 'Permet d\'afficher la taille, par exemple « 3.1 Mo », à côté du lien vers le fichier.
@@ -106,3 +116,4 @@ $string['showtype_help'] = 'Permet d\'afficher le type du fichier, par exemple �
 Si la ressource contient plusieurs fichiers, le type du premier d\'entre eux est affiché.
 
 Si le système ne reconnaît pas le type du fichier, ce dernier ne sera pas affiché.';
+$string['uploadeddate'] = 'Déposé le {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_quiz_results', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['config_use_groups'] = '¿Mostrar grupos en lugar de estudiantes? (sólo
 $string['error_emptyquizid'] = 'Por favor, configure este bloque seleccionando el cuestionario cuyos resultados se mostrarán.';
 $string['error_emptyquizrecord'] = 'Hay un error con este bloque: el cuestionario seleccionado no parece existir en la base de datos.';
 $string['error_nogroupsexist'] = 'Hay un error con este bloque: está configurado para mostrar calificaciones en modo de grupo, pero el curso no tiene grupos definidos.';
-$string['pluginname'] = 'Resultados del cuestionario';
+$string['pluginname'] = 'Resultados del cuestionario (desactivado)';
 $string['quiz_results:addinstance'] = 'Añadir un nuevo bloque de resultado del cuestionario';
 $string['worstgrade'] = 'Calificación más baja:';
 $string['worstgrades'] = '{$a} calificaciones más bajas:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['addrestriction'] = 'Voeg beperking toe...';
 $string['and'] = 'en';
 $string['condition_group'] = 'Beperkingenset';
 $string['condition_group_info'] = 'Voeg een reeks geneste beperkingen toe om een complexe logica te bekomen.';
-$string['enableavailability'] = 'Voorwaardelijke toegang inschakelen';
+$string['enableavailability'] = 'Beperkte toegang inschakelen';
 $string['enableavailability_desc'] = 'Wanneer dit ingeschakeld is, dan kun je voorwaarden instellen (gebaseerd op datum, cijfer of voltooid) die controleren wanneer toegang tot een activiteit of bron mogelijk is.';
 $string['error_list_nochildren'] = 'Beperkingssets moeten minstens één voorwaarde bevatten.';
 $string['hidden_all'] = 'Onzichtbaar voor de gebruiker als die niet aan alle voorwaarden voldoet';
@@ -62,6 +62,7 @@ $string['manageplugins'] = 'Beheer beperkingen';
 $string['missingplugin'] = 'Beperkings-plugin ontbreekt';
 $string['or'] = 'of';
 $string['restrictaccess'] = 'Beperk toegang';
+$string['restrictbygroup'] = 'Voeg toegangsrestrictie voor groep/groepering toe';
 $string['setheading'] = '{$a->number} Set van {$a->count} beperking(en)';
 $string['shown_all'] = 'Wordt in het grijs getoond als de gebruiker niet aan de voorwaarden voldoet.';
 $string['shown_individual'] = 'Wordt in het grijs getoond als de gebruiker niet aan deze voorwaarde voldoet.';

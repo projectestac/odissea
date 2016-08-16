@@ -27,14 +27,14 @@ class com_wiris_quizzes_impl_HTMLGui {
 				unset($value);
 			} else {
 				if($mode === com_wiris_quizzes_api_ui_QuizzesUIConstants::$DELIVERY) {
-					$sb->add("<input type=\"hidden\" class=\"wirisanswerfield\" value=\"\" />");
+					$sb->add("<input type=\"hidden\" class=\"wirisanswerfield wirisembedded\" value=\"\" />");
 				} else {
 					if($mode === com_wiris_quizzes_api_ui_QuizzesUIConstants::$REVIEW) {
 						$value = $qi->getStudentAnswer($i);
 						if($value === null) {
 							$value = "";
 						}
-						$sb->add("<input type=\"hidden\" class=\"wirisanswerfield wirisembeddedfeedback wirisassertionsfeedback wiriscorrectfeedback\" value=\"" . com_wiris_util_xml_WXmlUtils::htmlEscape($value) . "\" />");
+						$sb->add("<input type=\"hidden\" class=\"wirisanswerfield wirisembedded wirisembeddedfeedback wirisassertionsfeedback wiriscorrectfeedback\" value=\"" . com_wiris_util_xml_WXmlUtils::htmlEscape($value) . "\" />");
 						unset($value);
 					}
 				}
@@ -89,15 +89,6 @@ class com_wiris_quizzes_impl_HTMLGui {
 				$h->input("radio", $id . "[2]", $id, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT, null, null);
 				$h->label($this->t->t("answerinputplaintext"), $id . "[2]", null);
 				$h->close();
-			}
-			$handEnabled = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$HAND_ENABLED);
-			if(strtolower($handEnabled) === "true") {
-				if($conf->optAnswerFieldInlineHand) {
-					$h->openLi();
-					$h->input("radio", $id . "[3]", $id, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND, null, null);
-					$h->label($this->t->t("answerinputinlinehand"), $id . "[3]", null);
-					$h->close();
-				}
 			}
 			$h->close();
 			$h->close();
@@ -779,8 +770,8 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->openSpan("wirissyntaxfunctionvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
 		$id = "wirisassertionparampart" . _hx_string_rec($unique, "") . "[syntax_expression][functions]" . $answers;
 		$this->syntaxCheckbox($h, $id . "[0]", "exp, log, ln", $this->t->t("explog"), false);
-		$this->syntaxCheckbox($h, $id . "[1]", "sin, cos, tan, asin, acos, atan, cosec, sec, cotan, acosec, asec, acotan", $this->t->t("trigonometric"), false);
-		$this->syntaxCheckbox($h, $id . "[2]", "sinh, cosh, tanh, asinh, acosh, atanh", $this->t->t("hyperbolic"), false);
+		$this->syntaxCheckbox($h, $id . "[1]", "sin, cos, tan, asin, acos, atan, arcsin, arccos, arctan, cosec, csc, sec, cotan, cot, acosec, acsc, asec, acotan, acot, sen, asen, arcsen", $this->t->t("trigonometric"), false);
+		$this->syntaxCheckbox($h, $id . "[2]", "sinh, cosh, tanh, asinh, acosh, atanh, arcsinh, arccosh, arctanh, cosech, csch, sech, cotanh, coth, acosech, acsch, asech, acotanh, acoth, senh, asenh, arcsenh", $this->t->t("hyperbolic"), false);
 		$this->syntaxCheckbox($h, $id . "[3]", "min, max, sign", $this->t->t("arithmetic"), false);
 		$h->close();
 		$h->close();

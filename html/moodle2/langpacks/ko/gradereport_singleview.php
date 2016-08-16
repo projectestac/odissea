@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['override'] = '덮어쓰기';
+$string['save'] = '저장';

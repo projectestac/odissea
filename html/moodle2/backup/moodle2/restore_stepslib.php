@@ -89,6 +89,10 @@ class restore_gradebook_structure_step extends restore_structure_step {
      protected function execute_condition() {
         global $CFG, $DB;
 
+        if ($this->get_courseid() == SITEID) {
+            return false;
+        }
+
         // No gradebook info found, don't execute
         $fullpath = $this->task->get_taskbasepath();
         $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
@@ -117,6 +121,21 @@ class restore_gradebook_structure_step extends restore_structure_step {
             return false;
         }
 
+        // Identify the backup we're dealing with.
+        $backuprelease = floatval($this->get_task()->get_info()->backup_release); // The major version: 2.9, 3.0, ...
+        $backupbuild = 0;
+        preg_match('/(\d{8})/', $this->get_task()->get_info()->moodle_release, $matches);
+        if (!empty($matches[1])) {
+            $backupbuild = (int) $matches[1]; // The date of Moodle build at the time of the backup.
+        }
+
+        // On older versions the freeze value has to be converted.
+        // We do this from here as it is happening right before the file is read.
+        // This only targets the backup files that can contain the legacy freeze.
+        if ($backupbuild > 20150618 && ($backuprelease < 3.0 || $backupbuild < 20160527)) {
+            $this->rewrite_step_backup_file_for_legacy_freeze($fullpath);
+        }
+
         // Arrived here, execute the step
         return true;
      }
@@ -125,7 +144,7 @@ class restore_gradebook_structure_step extends restore_structure_step {
         $paths = array();
         $userinfo = $this->task->get_setting_value('users');
 
-        $paths[] = new restore_path_element('gradebook', '/gradebook');
+        $paths[] = new restore_path_element('attributes', '/gradebook/attributes');
         $paths[] = new restore_path_element('grade_category', '/gradebook/grade_categories/grade_category');
         $paths[] = new restore_path_element('grade_item', '/gradebook/grade_items/grade_item');
         if ($userinfo) {
@@ -137,7 +156,7 @@ class restore_gradebook_structure_step extends restore_structure_step {
         return $paths;
     }
 
-    protected function process_gradebook($data) {
+    protected function process_attributes($data) {
         // For non-merge restore types:
         // Unset 'gradebook_calculations_freeze_' in the course and replace with the one from the backup.
         $target = $this->get_task()->get_target();
@@ -489,6 +508,8 @@ class restore_gradebook_structure_step extends restore_structure_step {
         $gradebookcalculationsfreeze = get_config('core', 'gradebook_calculations_freeze_' . $this->get_courseid());
         preg_match('/(\d{8})/', $this->get_task()->get_info()->moodle_release, $matches);
         $backupbuild = (int)$matches[1];
+        // The function floatval will return a float even if there is text mixed with the release number.
+        $backuprelease = floatval($this->get_task()->get_info()->backup_release);
 
         // Extra credits need adjustments only for backups made between 2.8 release (20141110) and the fix release (20150619).
         if (!$gradebookcalculationsfreeze && $backupbuild >= 20141110 && $backupbuild < 20150619) {
@@ -500,6 +521,14 @@ class restore_gradebook_structure_step extends restore_structure_step {
             require_once($CFG->libdir . '/db/upgradelib.php');
             upgrade_calculated_grade_items($this->get_courseid());
         }
+        // Courses from before 3.1 (20160518) may have a letter boundary problem and should be checked for this issue.
+        // Backups from before and including 2.9 could have a build number that is greater than 20160518 and should
+        // be checked for this problem.
+        if (!$gradebookcalculationsfreeze && ($backupbuild < 20160518 || $backuprelease <= 2.9)) {
+            require_once($CFG->libdir . '/db/upgradelib.php');
+            upgrade_course_letter_boundary($this->get_courseid());
+        }
+
     }
 
     /**
@@ -520,6 +549,8 @@ class restore_gradebook_structure_step extends restore_structure_step {
         $minmaxtouse = $DB->get_field('grade_settings', 'value', array('courseid' => $courseid, 'name' => $settingname));
         $version28start = 2014111000.00;
         $version28last = 2014111006.05;
+        $version29start = 2015051100.00;
+        $version29last = 2015060400.02;
 
         $target = $this->get_task()->get_target();
         if ($minmaxtouse === false &&
@@ -534,7 +565,8 @@ class restore_gradebook_structure_step extends restore_structure_step {
                     grade_set_setting($courseid, $settingname, GRADE_MIN_MAX_FROM_GRADE_ITEM);
                 }
 
-            } else if ($version >= $version28start && $version < $version28last) {
+            } else if (($version >= $version28start && $version < $version28last) ||
+                    ($version >= $version29start && $version < $version29last)) {
                 // They should be using grade_grade when the course has inconsistencies.
 
                 $sql = "SELECT gi.id
@@ -564,6 +596,85 @@ class restore_gradebook_structure_step extends restore_structure_step {
             }
         }
     }
+
+    /**
+     * Rewrite step definition to handle the legacy freeze attribute.
+     *
+     * In previous backups the calculations_freeze property was stored as an attribute of the
+     * top level node <gradebook>. The backup API, however, do not process grandparent nodes.
+     * It only processes definitive children, and their parent attributes.
+     *
+     * We had:
+     *
+     * <gradebook calculations_freeze="20160511">
+     *   <grade_categories>
+     *     <grade_category id="10">
+     *       <depth>1</depth>
+     *       ...
+     *     </grade_category>
+     *   </grade_categories>
+     *   ...
+     * </gradebook>
+     *
+     * And this method will convert it to:
+     *
+     * <gradebook >
+     *   <attributes>
+     *     <calculations_freeze>20160511</calculations_freeze>
+     *   </attributes>
+     *   <grade_categories>
+     *     <grade_category id="10">
+     *       <depth>1</depth>
+     *       ...
+     *     </grade_category>
+     *   </grade_categories>
+     *   ...
+     * </gradebook>
+     *
+     * Note that we cannot just load the XML file in memory as it could potentially be huge.
+     * We can also completely ignore if the node <attributes> is already in the backup
+     * file as it never existed before.
+     *
+     * @param string $filepath The absolute path to the XML file.
+     * @return void
+     */
+    protected function rewrite_step_backup_file_for_legacy_freeze($filepath) {
+        $foundnode = false;
+        $newfile = make_request_directory(true) . DIRECTORY_SEPARATOR . 'file.xml';
+        $fr = fopen($filepath, 'r');
+        $fw = fopen($newfile, 'w');
+        if ($fr && $fw) {
+            while (($line = fgets($fr, 4096)) !== false) {
+                if (!$foundnode && strpos($line, '<gradebook ') === 0) {
+                    $foundnode = true;
+                    $matches = array();
+                    $pattern = '@calculations_freeze=.([0-9]+).@';
+                    if (preg_match($pattern, $line, $matches)) {
+                        $freeze = $matches[1];
+                        $line = preg_replace($pattern, '', $line);
+                        $line .= "  <attributes>\n    <calculations_freeze>$freeze</calculations_freeze>\n  </attributes>\n";
+                    }
+                }
+                fputs($fw, $line);
+            }
+            if (!feof($fr)) {
+                throw new restore_step_exception('Error while attempting to rewrite the gradebook step file.');
+            }
+            fclose($fr);
+            fclose($fw);
+            if (!rename($newfile, $filepath)) {
+                throw new restore_step_exception('Error while attempting to rename the gradebook step file.');
+            }
+        } else {
+            if ($fr) {
+                fclose($fr);
+            }
+            if ($fw) {
+                fclose($fw);
+            }
+        }
+    }
+
 }
 
 /**
@@ -577,6 +688,10 @@ class restore_grade_history_structure_step extends restore_structure_step {
 
      protected function execute_condition() {
         global $CFG, $DB;
+
+        if ($this->get_courseid() == SITEID) {
+            return false;
+        }
 
         // No gradebook info found, don't execute.
         $fullpath = $this->task->get_taskbasepath();
@@ -789,7 +904,7 @@ class restore_update_availability extends restore_execution_step {
             if (!is_null($section->availability)) {
                 $info = new \core_availability\info_section($section);
                 $info->update_after_restore($this->get_restoreid(),
-                        $this->get_courseid(), $this->get_logger(), $dateoffset);
+                        $this->get_courseid(), $this->get_logger(), $dateoffset, $this->task);
             }
         }
         $rs->close();
@@ -809,7 +924,7 @@ class restore_update_availability extends restore_execution_step {
             if (!is_null($cm->availability)) {
                 $info = new \core_availability\info_module($cm);
                 $info->update_after_restore($this->get_restoreid(),
-                        $this->get_courseid(), $this->get_logger(), $dateoffset);
+                        $this->get_courseid(), $this->get_logger(), $dateoffset, $this->task);
             }
         }
         $rs->close();
@@ -1043,10 +1158,13 @@ class restore_groups_structure_step extends restore_structure_step {
 
         $paths = array(); // Add paths here
 
-        $paths[] = new restore_path_element('group', '/groups/group');
-        $paths[] = new restore_path_element('grouping', '/groups/groupings/grouping');
-        $paths[] = new restore_path_element('grouping_group', '/groups/groupings/grouping/grouping_groups/grouping_group');
-
+        // Do not include group/groupings information if not requested.
+        $groupinfo = $this->get_setting_value('groups');
+        if ($groupinfo) {
+            $paths[] = new restore_path_element('group', '/groups/group');
+            $paths[] = new restore_path_element('grouping', '/groups/groupings/grouping');
+            $paths[] = new restore_path_element('grouping_group', '/groups/groupings/grouping/grouping_groups/grouping_group');
+        }
         return $paths;
     }
 
@@ -1175,7 +1293,7 @@ class restore_groups_members_structure_step extends restore_structure_step {
 
         $paths = array(); // Add paths here
 
-        if ($this->get_setting_value('users')) {
+        if ($this->get_setting_value('groups') && $this->get_setting_value('users')) {
             $paths[] = new restore_path_element('group', '/groups/group');
             $paths[] = new restore_path_element('member', '/groups/group/group_members/group_member');
         }
@@ -1675,6 +1793,9 @@ class restore_course_structure_step extends restore_structure_step {
         // Apply for local plugins optional paths at course level
         $this->add_plugin_structure('local', $course);
 
+        // Apply for admin tool plugins optional paths at course level.
+        $this->add_plugin_structure('tool', $course);
+
         return array($course, $category, $tag, $allowed_module);
     }
 
@@ -1791,22 +1912,8 @@ class restore_course_structure_step extends restore_structure_step {
 
         $data = (object)$data;
 
-        if (!empty($CFG->usetags)) { // if enabled in server
-            // TODO: This is highly inneficient. Each time we add one tag
-            // we fetch all the existing because tag_set() deletes them
-            // so everything must be reinserted on each call
-            $tags = array();
-            $existingtags = tag_get_tags('course', $this->get_courseid());
-            // Re-add all the existitng tags
-            foreach ($existingtags as $existingtag) {
-                $tags[] = $existingtag->rawname;
-            }
-            // Add the one being restored
-            $tags[] = $data->rawname;
-            // Send all the tags back to the course
-            tag_set('course', $this->get_courseid(), $tags, 'core',
-                context_course::instance($this->get_courseid())->id);
-        }
+        core_tag_tag::add_item_tag('core', 'course', $this->get_courseid(),
+                context_course::instance($this->get_courseid()), $data->rawname);
     }
 
     public function process_allowed_module($data) {
@@ -1981,8 +2088,14 @@ class restore_ras_and_caps_structure_step extends restore_structure_step {
  * If no instances yet add default enrol methods the same way as when creating new course in UI.
  */
 class restore_default_enrolments_step extends restore_execution_step {
+
     public function define_execution() {
         global $DB;
+
+        // No enrolments in front page.
+        if ($this->get_courseid() == SITEID) {
+            return;
+        }
 
         $course = $DB->get_record('course', array('id'=>$this->get_courseid()), '*', MUST_EXIST);
 
@@ -2019,6 +2132,10 @@ class restore_enrolments_structure_step extends restore_structure_step {
      * @return bool true is safe to execute, false otherwise
      */
     protected function execute_condition() {
+
+        if ($this->get_courseid() == SITEID) {
+            return false;
+        }
 
         // Check it is included in the backup
         $fullpath = $this->task->get_taskbasepath();
@@ -2415,9 +2532,11 @@ class restore_badges_structure_step extends restore_structure_step {
         $data = (object)$data;
 
         $params = array(
-                'badgeid'      => $this->get_new_parentid('badge'),
-                'criteriatype' => $data->criteriatype,
-                'method'       => $data->method
+                'badgeid'           => $this->get_new_parentid('badge'),
+                'criteriatype'      => $data->criteriatype,
+                'method'            => $data->method,
+                'description'       => isset($data->description) ? $data->description : '',
+                'descriptionformat' => isset($data->descriptionformat) ? $data->descriptionformat : 0,
         );
         $newid = $DB->insert_record('badge_criteria', $params);
         $this->set_mapping('criterion', $data->id, $newid);
@@ -2599,15 +2718,21 @@ class restore_course_completion_structure_step extends restore_structure_step {
      *   2. The backup includes course completion information
      *   3. All modules are restorable
      *   4. All modules are marked for restore.
+     *   5. No completion criteria already exist for the course.
      *
      * @return bool True is safe to execute, false otherwise
      */
     protected function execute_condition() {
-        global $CFG;
+        global $CFG, $DB;
 
         // First check course completion is enabled on this site
         if (empty($CFG->enablecompletion)) {
             // Disabled, don't restore course completion
+            return false;
+        }
+
+        // No course completion on the front page.
+        if ($this->get_courseid() == SITEID) {
             return false;
         }
 
@@ -2624,8 +2749,13 @@ class restore_course_completion_structure_step extends restore_structure_step {
             return false;
         }
 
-        // Finally check all modules within the backup are being restored.
+        // Check all modules within the backup are being restored.
         if ($this->task->is_excluding_activities()) {
+            return false;
+        }
+
+        // Check that no completion criteria is already set for the course.
+        if ($DB->record_exists('course_completion_criteria', array('course' => $this->get_courseid()))) {
             return false;
         }
 
@@ -2987,6 +3117,296 @@ class restore_activity_logs_structure_step extends restore_course_logs_structure
     }
 }
 
+/**
+ * Structure step in charge of restoring the logstores.xml file for the course logs.
+ *
+ * This restore step will rebuild the logs for all the enabled logstore subplugins supporting
+ * it, for logs belonging to the course level.
+ */
+class restore_course_logstores_structure_step extends restore_structure_step {
+
+    /**
+     * Conditionally decide if this step should be executed.
+     *
+     * This function checks the following parameter:
+     *
+     *   1. the logstores.xml file exists
+     *
+     * @return bool true is safe to execute, false otherwise
+     */
+    protected function execute_condition() {
+
+        // Check it is included in the backup.
+        $fullpath = $this->task->get_taskbasepath();
+        $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
+        if (!file_exists($fullpath)) {
+            // Not found, can't restore logstores.xml information.
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Return the elements to be processed on restore of logstores.
+     *
+     * @return restore_path_element[] array of elements to be processed on restore.
+     */
+    protected function define_structure() {
+
+        $paths = array();
+
+        $logstore = new restore_path_element('logstore', '/logstores/logstore');
+        $paths[] = $logstore;
+
+        // Add logstore subplugin support to the 'logstore' element.
+        $this->add_subplugin_structure('logstore', $logstore, 'tool', 'log');
+
+        return array($logstore);
+    }
+
+    /**
+     * Process the 'logstore' element,
+     *
+     * Note: This is empty by definition in backup, because stores do not share any
+     * data between them, so there is nothing to process here.
+     *
+     * @param array $data element data
+     */
+    protected function process_logstore($data) {
+        return;
+    }
+}
+
+/**
+ * Structure step in charge of restoring the logstores.xml file for the activity logs.
+ *
+ * Note: Activity structure is completely equivalent to the course one, so just extend it.
+ */
+class restore_activity_logstores_structure_step extends restore_course_logstores_structure_step {
+}
+
+/**
+ * Restore course competencies structure step.
+ */
+class restore_course_competencies_structure_step extends restore_structure_step {
+
+    /**
+     * Returns the structure.
+     *
+     * @return array
+     */
+    protected function define_structure() {
+        $userinfo = $this->get_setting_value('users');
+        $paths = array(
+            new restore_path_element('course_competency', '/course_competencies/competencies/competency'),
+            new restore_path_element('course_competency_settings', '/course_competencies/settings'),
+        );
+        if ($userinfo) {
+            $paths[] = new restore_path_element('user_competency_course',
+                '/course_competencies/user_competencies/user_competency');
+        }
+        return $paths;
+    }
+
+    /**
+     * Process a course competency settings.
+     *
+     * @param array $data The data.
+     */
+    public function process_course_competency_settings($data) {
+        global $DB;
+        $data = (object) $data;
+
+        // We do not restore the course settings during merge.
+        $target = $this->get_task()->get_target();
+        if ($target == backup::TARGET_CURRENT_ADDING || $target == backup::TARGET_EXISTING_ADDING) {
+            return;
+        }
+
+        $courseid = $this->task->get_courseid();
+        $exists = \core_competency\course_competency_settings::record_exists_select('courseid = :courseid',
+            array('courseid' => $courseid));
+
+        // Strangely the course settings already exist, let's just leave them as is then.
+        if ($exists) {
+            $this->log('Course competency settings not restored, existing settings have been found.', backup::LOG_WARNING);
+            return;
+        }
+
+        $data = (object) array('courseid' => $courseid, 'pushratingstouserplans' => $data->pushratingstouserplans);
+        $settings = new \core_competency\course_competency_settings(0, $data);
+        $settings->create();
+    }
+
+    /**
+     * Process a course competency.
+     *
+     * @param array $data The data.
+     */
+    public function process_course_competency($data) {
+        $data = (object) $data;
+
+        // Mapping the competency by ID numbers.
+        $framework = \core_competency\competency_framework::get_record(array('idnumber' => $data->frameworkidnumber));
+        if (!$framework) {
+            return;
+        }
+        $competency = \core_competency\competency::get_record(array('idnumber' => $data->idnumber,
+            'competencyframeworkid' => $framework->get_id()));
+        if (!$competency) {
+            return;
+        }
+        $this->set_mapping(\core_competency\competency::TABLE, $data->id, $competency->get_id());
+
+        $params = array(
+            'competencyid' => $competency->get_id(),
+            'courseid' => $this->task->get_courseid()
+        );
+        $query = 'competencyid = :competencyid AND courseid = :courseid';
+        $existing = \core_competency\course_competency::record_exists_select($query, $params);
+
+        if (!$existing) {
+            // Sortorder is ignored by precaution, anyway we should walk through the records in the right order.
+            $record = (object) $params;
+            $record->ruleoutcome = $data->ruleoutcome;
+            $coursecompetency = new \core_competency\course_competency(0, $record);
+            $coursecompetency->create();
+        }
+    }
+
+    /**
+     * Process the user competency course.
+     *
+     * @param array $data The data.
+     */
+    public function process_user_competency_course($data) {
+        global $USER, $DB;
+        $data = (object) $data;
+
+        $data->competencyid = $this->get_mappingid(\core_competency\competency::TABLE, $data->competencyid);
+        if (!$data->competencyid) {
+            // This is strange, the competency does not belong to the course.
+            return;
+        } else if ($data->grade === null) {
+            // We do not need to do anything when there is no grade.
+            return;
+        }
+
+        $data->userid = $this->get_mappingid('user', $data->userid);
+        $shortname = $DB->get_field('course', 'shortname', array('id' => $this->task->get_courseid()), MUST_EXIST);
+
+        // The method add_evidence also sets the course rating.
+        \core_competency\api::add_evidence($data->userid,
+                                           $data->competencyid,
+                                           $this->task->get_contextid(),
+                                           \core_competency\evidence::ACTION_OVERRIDE,
+                                           'evidence_courserestored',
+                                           'core_competency',
+                                           $shortname,
+                                           false,
+                                           null,
+                                           $data->grade,
+                                           $USER->id);
+    }
+
+    /**
+     * Execute conditions.
+     *
+     * @return bool
+     */
+    protected function execute_condition() {
+
+        // Do not execute if competencies are not included.
+        if (!$this->get_setting_value('competencies')) {
+            return false;
+        }
+
+        // Do not execute if the competencies XML file is not found.
+        $fullpath = $this->task->get_taskbasepath();
+        $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
+        if (!file_exists($fullpath)) {
+            return false;
+        }
+
+        return true;
+    }
+}
+
+/**
+ * Restore activity competencies structure step.
+ */
+class restore_activity_competencies_structure_step extends restore_structure_step {
+
+    /**
+     * Defines the structure.
+     *
+     * @return array
+     */
+    protected function define_structure() {
+        $paths = array(
+            new restore_path_element('course_module_competency', '/course_module_competencies/competencies/competency')
+        );
+        return $paths;
+    }
+
+    /**
+     * Process a course module competency.
+     *
+     * @param array $data The data.
+     */
+    public function process_course_module_competency($data) {
+        $data = (object) $data;
+
+        // Mapping the competency by ID numbers.
+        $framework = \core_competency\competency_framework::get_record(array('idnumber' => $data->frameworkidnumber));
+        if (!$framework) {
+            return;
+        }
+        $competency = \core_competency\competency::get_record(array('idnumber' => $data->idnumber,
+            'competencyframeworkid' => $framework->get_id()));
+        if (!$competency) {
+            return;
+        }
+
+        $params = array(
+            'competencyid' => $competency->get_id(),
+            'cmid' => $this->task->get_moduleid()
+        );
+        $query = 'competencyid = :competencyid AND cmid = :cmid';
+        $existing = \core_competency\course_module_competency::record_exists_select($query, $params);
+
+        if (!$existing) {
+            // Sortorder is ignored by precaution, anyway we should walk through the records in the right order.
+            $record = (object) $params;
+            $record->ruleoutcome = $data->ruleoutcome;
+            $coursemodulecompetency = new \core_competency\course_module_competency(0, $record);
+            $coursemodulecompetency->create();
+        }
+    }
+
+    /**
+     * Execute conditions.
+     *
+     * @return bool
+     */
+    protected function execute_condition() {
+
+        // Do not execute if competencies are not included.
+        if (!$this->get_setting_value('competencies')) {
+            return false;
+        }
+
+        // Do not execute if the competencies XML file is not found.
+        $fullpath = $this->task->get_taskbasepath();
+        $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
+        if (!file_exists($fullpath)) {
+            return false;
+        }
+
+        return true;
+    }
+}
 
 /**
  * Defines the restore step for advanced grading methods attached to the activity module
@@ -2997,6 +3417,10 @@ class restore_activity_grading_structure_step extends restore_structure_step {
      * This step is executed only if the grading file is present
      */
      protected function execute_condition() {
+
+        if ($this->get_courseid() == SITEID) {
+            return false;
+        }
 
         $fullpath = $this->task->get_taskbasepath();
         $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
@@ -3131,6 +3555,14 @@ class restore_activity_grading_structure_step extends restore_structure_step {
  * available there
  */
 class restore_activity_grades_structure_step extends restore_structure_step {
+
+    /**
+     * No grades in front page.
+     * @return bool
+     */
+    protected function execute_condition() {
+        return ($this->get_courseid() != SITEID);
+    }
 
     protected function define_structure() {
 
@@ -3273,6 +3705,11 @@ class restore_activity_grade_history_structure_step extends restore_structure_st
      * This step is executed only if the grade history file is present.
      */
      protected function execute_condition() {
+
+        if ($this->get_courseid() == SITEID) {
+            return false;
+        }
+
         $fullpath = $this->task->get_taskbasepath();
         $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
         if (!file_exists($fullpath)) {
@@ -3502,6 +3939,8 @@ class restore_module_structure_step extends restore_structure_step {
             $paths[] = new restore_path_element('availability_field', '/module/availability_info/availability_field');
         }
 
+        $paths[] = new restore_path_element('tag', '/module/tags/tag');
+
         // Apply for 'format' plugins optional paths at module level
         $this->add_plugin_structure('format', $module);
 
@@ -3510,6 +3949,9 @@ class restore_module_structure_step extends restore_structure_step {
 
         // Apply for 'local' plugins optional paths at module level
         $this->add_plugin_structure('local', $module);
+
+        // Apply for 'admin tool' plugins optional paths at module level.
+        $this->add_plugin_structure('tool', $module);
 
         return $paths;
     }
@@ -3610,6 +4052,25 @@ class restore_module_structure_step extends restore_structure_step {
     }
 
     /**
+     * Fetch all the existing because tag_set() deletes them
+     * so everything must be reinserted on each call.
+     *
+     * @param stdClass $data Record data
+     */
+    protected function process_tag($data) {
+        global $CFG;
+
+        $data = (object)$data;
+
+        if (core_tag_tag::is_enabled('core', 'course_modules')) {
+            $modcontext = context::instance_by_id($this->task->get_contextid());
+            $instanceid = $this->task->get_moduleid();
+
+            core_tag_tag::add_item_tag('core', 'course_modules', $instanceid, $modcontext, $data->rawname);
+        }
+    }
+
+    /**
      * Process the legacy availability table record. This table does not exist
      * in Moodle 2.7+ but we still support restore.
      *
@@ -3677,6 +4138,20 @@ class restore_module_structure_step extends restore_structure_step {
                     array('id' => $availfield->coursemoduleid));
         }
     }
+    /**
+     * This method will be executed after the rest of the restore has been processed.
+     *
+     * Update old tag instance itemid(s).
+     */
+    protected function after_restore() {
+        global $DB;
+
+        $contextid = $this->task->get_contextid();
+        $instanceid = $this->task->get_activityid();
+        $olditemid = $this->task->get_old_activityid();
+
+        $DB->set_field('tag_instance', 'itemid', $instanceid, array('contextid' => $contextid, 'itemid' => $olditemid));
+    }
 }
 
 /**
@@ -3699,6 +4174,11 @@ class restore_userscompletion_structure_step extends restore_structure_step {
          if (empty($CFG->enablecompletion)) {
              return false;
          }
+
+        // No completion on the front page.
+        if ($this->get_courseid() == SITEID) {
+            return false;
+        }
 
          // No user completion info found, don't execute
         $fullpath = $this->task->get_taskbasepath();
@@ -3750,47 +4230,10 @@ class restore_userscompletion_structure_step extends restore_structure_step {
 }
 
 /**
- * Abstract structure step, parent of all the activity structure steps. Used to suuport
- * the main <activity ...> tag and process it. Also provides subplugin support for
- * activities.
+ * Abstract structure step, parent of all the activity structure steps. Used to support
+ * the main <activity ...> tag and process it.
  */
 abstract class restore_activity_structure_step extends restore_structure_step {
-
-    protected function add_subplugin_structure($subplugintype, $element) {
-
-        global $CFG;
-
-        // Check the requested subplugintype is a valid one
-        $subpluginsfile = $CFG->dirroot . '/mod/' . $this->task->get_modulename() . '/db/subplugins.php';
-        if (!file_exists($subpluginsfile)) {
-             throw new restore_step_exception('activity_missing_subplugins_php_file', $this->task->get_modulename());
-        }
-        include($subpluginsfile);
-        if (!array_key_exists($subplugintype, $subplugins)) {
-             throw new restore_step_exception('incorrect_subplugin_type', $subplugintype);
-        }
-        // Get all the restore path elements, looking across all the subplugin dirs
-        $subpluginsdirs = core_component::get_plugin_list($subplugintype);
-        foreach ($subpluginsdirs as $name => $subpluginsdir) {
-            $classname = 'restore_' . $subplugintype . '_' . $name . '_subplugin';
-            $restorefile = $subpluginsdir . '/backup/moodle2/' . $classname . '.class.php';
-            if (file_exists($restorefile)) {
-                require_once($restorefile);
-                $restoresubplugin = new $classname($subplugintype, $name, $this);
-                // Add subplugin paths to the step
-                $this->prepare_pathelements($restoresubplugin->define_subplugin_structure($element));
-            }
-        }
-    }
-
-    /**
-     * As far as activity restore steps are implementing restore_subplugin stuff, they need to
-     * have the parent task available for wrapping purposes (get course/context....)
-     * @return restore_task
-     */
-    public function get_task() {
-        return $this->task;
-    }
 
     /**
      * Adds support for the 'activity' path that is common to all the activities
@@ -4014,25 +4457,17 @@ class restore_create_categories_and_questions extends restore_structure_step {
             return;
         }
 
-        if (!empty($CFG->usetags)) { // if enabled in server
-            // TODO: This is highly inefficient. Each time we add one tag
-            // we fetch all the existing because tag_set() deletes them
-            // so everything must be reinserted on each call
-            $tags = array();
-            $existingtags = tag_get_tags('question', $newquestion);
-            // Re-add all the existitng tags
-            foreach ($existingtags as $existingtag) {
-                $tags[] = $existingtag->rawname;
-            }
-            // Add the one being restored
-            $tags[] = $data->rawname;
+        if (core_tag_tag::is_enabled('core_question', 'question')) {
+            $tagname = $data->rawname;
             // Get the category, so we can then later get the context.
             $categoryid = $this->get_new_parentid('question_category');
             if (empty($this->cachedcategory) || $this->cachedcategory->id != $categoryid) {
                 $this->cachedcategory = $DB->get_record('question_categories', array('id' => $categoryid));
             }
-            // Send all the tags back to the question
-            tag_set('question', $newquestion, $tags, 'core_question', $this->cachedcategory->contextid);
+            // Add the tag to the question.
+            core_tag_tag::add_item_tag('core_question', 'question', $newquestion,
+                    context::instance_by_id($this->cachedcategory->contextid),
+                    $tagname);
         }
     }
 

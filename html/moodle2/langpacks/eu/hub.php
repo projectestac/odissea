@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'hub', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -141,7 +141,7 @@ $string['publicationinfo'] = 'Ikastaro-argitalpenaren informazioa';
 $string['publichub'] = 'Bilgune publikoa';
 $string['publishcourse'] = 'Argitaratu {$a}';
 $string['publishcourseon'] = 'Argitaratu hemen: {$a}';
-$string['publishedon'] = 'Argitaratu hemen: ';
+$string['publishedon'] = 'Hemen argitaratuta';
 $string['publisheremail'] = 'Editorearen e-posta';
 $string['publisheremail_help'] = 'Editorearen e-posta helbideak aukera emateko dio bilguneko kudeatzaileari argitara emandako ikastaroak izan dezakeen edozein aldaketaz editorea ohartarazteko.';
 $string['publishername'] = 'Editorea';

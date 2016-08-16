@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'error', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,7 @@ $string['cannoteditcomment'] = 'Non puoi modificare commenti che non sono tuoi!'
 $string['cannoteditcommentexpired'] = 'Non puoi modificarlo. Il tempo è scaduto!';
 $string['cannoteditpostorblog'] = 'Non puoi inserire o modificare interventi nei blog';
 $string['cannoteditsiteform'] = 'Non puoi modificare il corso nella pagina home usando questo form';
+$string['cannotedituserpreferences'] = 'Non è possibile modificare le preferenze di questo utente';
 $string['cannotedityourprofile'] = 'Spiacente, non sei autorizzato a modificar eil tuo profilo';
 $string['cannotexecduringupgrade'] = 'Non può essere elaborato durante l\'aggiornamento';
 $string['cannotfindcategory'] = 'Non è possibile trovare nel database il record della categoria con ID - {$a}';
@@ -125,6 +126,7 @@ $string['cannotreadfile'] = 'Non è possibile leggere il file ({$a})';
 $string['cannotreadtmpfile'] = 'Si è verificato un errore durante la lettura del file temporaneo';
 $string['cannotreaduploadfile'] = 'Non è stato possibile leggere il file caricato';
 $string['cannotremovefrommeta'] = 'Non è stato possibile rimuovere il corso selezionato da questo meta corso!';
+$string['cannotreprocessgrades'] = 'Non è stato possibile ricalcolare le valutazioni per l\'attività {$a}';
 $string['cannotresetguestpwd'] = 'Non puoi resettare la password dell\'utente opsite';
 $string['cannotresetmail'] = 'Si è verificato un errore durante il reset e l\'invio della tua password';
 $string['cannotresetthisrole'] = 'Non è possibile resettare questo ruolo';
@@ -232,6 +234,7 @@ $string['errorcreatingfile'] = 'Si è verificato un errore creando il file "{$a}
 $string['errorcreatingrole'] = 'Si è verificato un errore durante la creazione del ruolo';
 $string['errorfetchingrssfeed'] = 'Si è verificato un errore durante la ricezione del feed RSS.';
 $string['erroronline'] = 'Si è verificato un errore alla linea {$a}';
+$string['erroroutput'] = 'Errore in uscita, il reindirizzamento automatico è stato disabilitato.';
 $string['errorparsingxml'] = 'Errore durante il parsing dell\'XML {$a->errorstring} alla linea {$a->errorline}, carattere {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Si è verificato un errore durante l\'elaborazione del file archivio';
 $string['errorreadingfile'] = 'Si è verificato un errore leggendo il file "{$a}"';
@@ -255,6 +258,7 @@ $string['forumblockingtoomanyposts'] = 'Hai superato il limite di messaggi impos
 $string['generalexceptionmessage'] = 'Eccezione - {$a}';
 $string['gradecantregrade'] = 'Si è verificato un errore durante il calcolo delle valutazioni: {$a}';
 $string['gradepubdisable'] = 'La pubblicazione delle valutazioni è disabilitata';
+$string['gradesneedregrading'] = 'Le valutazioni del corso devono essere ricalcolate';
 $string['groupalready'] = 'L\'utente appartiene già al gruppo {$a}';
 $string['groupexistforcourse'] = 'Il gruppo "{$a}" esiste già in questo corso';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}: Il gruppo "{$a->name}" con il codice identificativo "{$a->idnumber}" è già presente in questo corso.';
@@ -278,6 +282,7 @@ $string['idnumbertaken'] = 'Il codice identificativo è già usato';
 $string['idnumbertoolong'] = 'Il codice identificativo è troppo lungo';
 $string['importformatnotimplement'] = 'Spiacente, l\'importazione con questo formato non è stata ancora implementata!';
 $string['incorrectext'] = 'Il file ha una estensione errata';
+$string['inplaceeditableerror'] = 'Si è verificato un errore durante la chiamata al processore dall\'aggiornamento';
 $string['installproblem'] = 'Di solito non è possibile proseguire a valle di errori verificatisi durante l\'installazione, per riprovare ad installare potrebbe essere necessario creare un nuovo database oppure utilizzare un prefisso diverso per le tabelle.';
 $string['internalauthpassworderror'] = 'L\'autenticazione interna manca della password o le regole password non sono valide.';
 $string['invalidaccess'] = 'Questa pagina non è stata acceduta correttamente';
@@ -300,6 +305,7 @@ $string['invalidcomponent'] = 'Il nome componente non è valido';
 $string['invalidconfirmdata'] = 'Dati di conferma non validi';
 $string['invalidcontext'] = 'Contesto non valido';
 $string['invalidcourse'] = 'Corso non valido';
+$string['invalidcourseformat'] = 'Formato di corso non valido';
 $string['invalidcourseid'] = 'Stai tentando di usare un ID di corso non valida';
 $string['invalidcourselevel'] = 'Livello di contesto errato';
 $string['invalidcoursemodule'] = 'ID modulo del corso non valido';
@@ -347,6 +353,7 @@ $string['invalidsourcefield'] = 'Il campo del file bozza sorgente non è valido'
 $string['invalidstatedetected'] = 'Qualcosa non è andato a buon fine: {$a}. Di norma questo non dovrebbe mai verificarsi.';
 $string['invalidurl'] = 'L\'URL non è valido';
 $string['invaliduser'] = 'Utente non valido';
+$string['invaliduserdata'] = 'Dati utenti non validi: {$a}';
 $string['invaliduserfield'] = 'Campo utente non valido: : {$a}';
 $string['invaliduserid'] = 'Id utente non valido';
 $string['invalidusername'] = 'Lo username fornito contiene caratteri non validi';
@@ -367,6 +374,7 @@ $string['loginasnoenrol'] = 'Non si può usare "iscrivi" o "disiscrivi" se si è
 $string['loginasonecourse'] = 'Non puoi entrare in questo corso.<br/>Devi prima terminare la sessione "Login come" prima di entrare in altri corsi.';
 $string['maxareabytes'] = 'La dimensione del file eccede lo spazio rimasto disponibile in quest\'area.';
 $string['maxbytes'] = 'Il file eccede la dimensione massima consentita.';
+$string['maxbytesfile'] = 'Il file {$a->file} è troppo grande. La dimensione massima che è possibile caricare è pari a {$a->size}.';
 $string['messagingdisable'] = 'In questo sito il messaging è disabilitato';
 $string['mimetexisnotexist'] = 'Il tuo sistema non è configurato per eseguire mimeTEX. Devi scaricare l\'eseguibile adatto al tuo sistema operativo e versione PHP da <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, oppure ottenere il codice sorgente C da <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilarlo e caricare l\'eseguibile risultante nella cartella moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'Il mimetex personalizzato non è eseguibile!';
@@ -451,6 +459,7 @@ $string['prefixcannotbeempty'] = '<p>Errore: il prefisso del database non può e
 <p>L\'amministratore del sito deve risolvere questo problema.</p>';
 $string['prefixtoolong'] = '<p>Errore: il prefisso delle tabelle del database è troppo lungo ({$a->dbfamily})</p>
 <p>L\'amministratore del sito deve risolvere questo problema. La lunghezza massima del prefisso delle tabelle per {$a->dbfamily} è {$a->maxlength} caratteri.</p>';
+$string['privatefilesupload'] = 'Il caricamento di file nei File privati dell\'utente non è più supportato. Caricare prima i file nella area draft e poi spostarli con core_user::add_user_private_files.';
 $string['processingstops'] = 'L\'elaborazione si è fermata qui. Rimangono dei record ignorati.';
 $string['protected_cc_not_supported'] = 'I cartridge protetti non sono supportati.';
 $string['querystringcannotbeempty'] = 'Il query string non può essere vuoto.';

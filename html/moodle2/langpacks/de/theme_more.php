@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'theme_more', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,12 +61,17 @@ $string['invertdesc'] = 'Diese Option invertiert die Farben in der Navigationsle
 $string['linkcolor'] = 'Linkfarbe';
 $string['linkcolor_desc'] = 'Diese Einstellung legt die Farbe für die Links fest.';
 $string['logo'] = 'Logo';
-$string['logodesc'] = 'Das Logo wird im Kopfbereich angezeigt.<br  />Falls die Höhe Ihres Logos größer als 75 Pixel ist, fügen Sie folgende Anweisung mit der richtigen Höhe im Feld \'CSS-Anpassungen\' ein:
-<pre>a.logo {height: 100px;}</pre>';
+$string['logodesc'] = 'Dieses Logo wird im Kopfbereich der Startseite und derLoginseite angezeigt.<br>Falls die Höhe des Logos größer als 75 Pixel ist, fügen Sie folgende Anweisung mit der richtigen Höhe im Feld \'CSS-Anpassungen\' ein:
+<pre>div.logo {height: 100px;}</pre>';
 $string['pluginname'] = 'More';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
 $string['secondarybackground'] = 'Sekundäre Hintergrundfarbe';
 $string['secondarybackground_desc'] = 'Diese Einstellung legt die Hintergrundfarbe für alle Sekundärbereiche der Website fest, z.B. für Blöcke.';
+$string['sitelogo'] = 'Site-Logo';
+$string['sitename'] = 'Site-Bezeichnung und kleines Logo anzeigen';
+$string['sitenamedesc'] = 'Wenn ein kleines Logo vorhanden ist, wird das Logo auf jeder Seite in der Navigationsleite angezeigt. Ohne kleines Logo wird der Name der Website angezeigt.';
+$string['smalllogo'] = 'Kleines Logo';
+$string['smalllogodesc'] = 'Das kleine Logo wird in der Navigationsleiste angezeigt. Wenn ein Logo für den Kopfbereich der Startseite und der Anmeldeseite verfügbar ist, wird das kleine Logo auf diesen Seiten nicht angezeigt.';
 $string['textcolor'] = 'Textfarbe';
 $string['textcolor_desc'] = 'Diese Einstellung legt die Farbe für die Texte fest.';

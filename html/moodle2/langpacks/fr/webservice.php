@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = 'Attribuer/retirer la capacité requise';
 $string['addservice'] = 'Ajouter un service : {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Ajouter des fonctions au service « {$a} »';
 $string['allusers'] = 'Tous les utilisateurs';
-$string['amftestclient'] = 'Client AMF test';
 $string['apiexplorer'] = 'Explorateur API';
 $string['apiexplorernotavalaible'] = 'L\'explorateur API n\'est pas encore disponible';
 $string['arguments'] = 'Paramètres';
 $string['authmethod'] = 'Méthode d\'authentification';
+$string['callablefromajax'] = 'Appelable depuis AJAX';
 $string['cannotcreatetoken'] = 'Pas de droit d\'accès pour créer un jeton de service web pour le service {$a}.';
 $string['cannotgetcoursecontents'] = 'Impossible d\'obtenir le contenu du cours';
 $string['checkusercapability'] = 'Vérifier la capacité utilisateur';
@@ -119,6 +119,7 @@ $string['iprestriction'] = 'Restriction IP';
 $string['iprestriction_help'] = 'Le service web ne pourra être appelé qu\'à partir des adresses IP répertoriées (séparées par des virgules).';
 $string['key'] = 'Clef';
 $string['keyshelp'] = 'Les clefs sont utilisées pour accéder à votre compte Moodle depuis des applications externes.';
+$string['loginrequired'] = 'Restreint aux utilisateurs connectés';
 $string['manageprotocols'] = 'Gérer les protocoles';
 $string['managetokens'] = 'Gérer les jetons';
 $string['missingcaps'] = 'Capacités manquantes';
@@ -184,13 +185,12 @@ $string['shortnametaken'] = 'Ce nom abrégé est déjà utilisé par un autre se
 $string['simpleauthlog'] = 'Connexion avec authentification simple';
 $string['step'] = 'Étape';
 $string['supplyinfo'] = 'Plus de détails';
-$string['testauserwithtestclientdescription'] = 'Simuler l\'accès externe au service en utilisant le client de test des web services. Avant de le faire, connectez-vous comme utilisateur avec la capacité moodle/webservice:createtoken et obtenez la clef de sécurité (jeton) sur la page Réglages de mon profil. Vous utiliserez ce jeton dans le client test. Dans le client test, veuillez sélectionner un protocole activé avec authentification par jeton. <strong>ATTENTION ! Les fonctions testées SERONT EXÉCUTÉES pour cet utilisateur. Soyez prudent avec ce que vous testez !</strong>';
+$string['testauserwithtestclientdescription'] = 'Simuler l\'accès externe au service en utilisant le client de test des web services. Avant de le faire, connectez-vous comme utilisateur avec la capacité moodle/webservice:createtoken et obtenez la clef de sécurité (jeton) dans les réglages dans votre page de préférences. Vous utiliserez ce jeton dans le client test. Dans le client test, veuillez sélectionner un protocole activé avec authentification par jeton. <strong>ATTENTION ! Les fonctions testées SERONT EXÉCUTÉES pour cet utilisateur. Soyez prudent avec ce que vous testez !</strong>';
 $string['testclient'] = 'Client test service web';
 $string['testclientdescription'] = '* Le client test service web <strong>lance</strong> les fonctions <strong>POUR DE VRAI</strong>. Ne testez pas les fonctions que vous ne connaissez pas.<br/>
 * Les fonctions service web existantes ne sont pas encore toutes implémentées dans le client test.<br/>
 * Afin de vérifier qu\'un utilisateur n\'accède pas à certaines fonctions, vous pouvez tester des fonctions que vous n\'avez pas autorisées.<br/>
-* Pour voir des messages d\'erreurs plus clairs, réglez le débogage <strong>{$a->mode}</strong> sur {$a->atag}<br/>
-* Accédez à {$a->amfatag}.';
+* Pour voir des messages d\'erreurs plus clairs, réglez le débogage sur <strong>{$a->mode}</strong> dans {$a->atag}.';
 $string['testwithtestclient'] = 'Tester le service';
 $string['testwithtestclientdescription'] = 'Simuler l\'accès externe au service en utilisant le client de test des web services. Dans le client test, veuillez sélectionner un protocole activé avec authentification par jeton. <strong>ATTENTION ! Les fonctions testées SERONT EXÉCUTÉES pour cet utilisateur. Soyez prudent avec ce que vous testez !</strong>';
 $string['token'] = 'Jeton';
@@ -203,7 +203,7 @@ $string['updateusersettings'] = 'Modifier';
 $string['uploadfiles'] = 'Autoriser le dépôt de fichiers';
 $string['uploadfiles_help'] = 'Si ce réglage est activé, les utilisateurs peuvent déposer des fichiers dans leur zone de fichiers privée ou dans un zone de fichiers brouillons en donnant leur clef de sécurité. Les quotas d\'espace disque seront respectés.';
 $string['userasclients'] = 'Utilisateurs en tant que clients avec jetons';
-$string['userasclientsdescription'] = 'Les étapes suivantes vous aident à configurer le service web Moodle pour des utilisateurs clients. Ils vous aident aussi à configurer la méthode d\'authentification par jeton (clefs de sécurité) recommandée. Dans ce cas, l\'utilisateur obtiendra sa clef de sécurité (jeton) sur la page Réglages de mon profil.';
+$string['userasclientsdescription'] = 'Les étapes suivantes vous aident à configurer le service web Moodle pour des utilisateurs clients. Ils vous aident aussi à configurer la méthode d\'authentification par jeton (clefs de sécurité) recommandée. Dans ce cas, l\'utilisateur obtiendra sa clef de sécurité (jeton) dans sa page des préférences.';
 $string['usermissingcaps'] = 'Capacités manquantes : {$a}';
 $string['usernameorid'] = 'Nom d\'utilisateur / ID utilisateur';
 $string['usernameorid_help'] = 'Veuillez saisir un nom d\'utilisateur ou un ID utilisateur';

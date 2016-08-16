@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_url', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_url', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['configplugin'] = 'URL容器类型配置';
 $string['download'] = '下载';
 $string['pluginname'] = 'URL 下载器';
 $string['rename'] = '名称';
-$string['url'] = 'URL';
+$string['url'] = '网页地址';
 $string['url:view'] = '在文件选择器中使用URL下载器';
 $string['validname'] = '您必须提供一个有效的文件名';

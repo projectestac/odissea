@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_configurable_reports', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -177,7 +177,6 @@ $string['previousstart'] = 'Aurreko egunen hasiera';
 $string['printreport'] = 'Inprimatu txostena';
 $string['puserfield'] = 'Erabiltzaile-profilaren balioa';
 $string['puserfield_summary'] = 'Erabiltzaile-profileko eremu batean aukeratutako balioa duten erabiltzaileak';
-$string['queryfailed'] = 'SQL kontsulak kale egin du';
 $string['querysql'] = 'SQL kontsulta';
 $string['remotequerysql'] = 'SQL kontsulta';
 $string['report'] = 'Txostena';

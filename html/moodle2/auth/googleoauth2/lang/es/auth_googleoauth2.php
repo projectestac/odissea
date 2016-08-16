@@ -1,22 +1,21 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Oauth2 authentication plugin for Moodle.
 //
-// Moodle is free software: you can redistribute it and/or modify
+// Oauth2 authentication plugin for Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// Moodle is distributed in the hope that it will be useful,
+// Oauth2 authentication plugin for Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Oauth2 authentication plugin for Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_google', language 'en'
+ * Strings for component 'auth_google', language 'es'
  *
  * @package   auth_google
  * @author Jerome Mouneyrac
@@ -51,7 +50,8 @@ Website: {$a->website}';
 $string['auth_googleipinfodbkey_key'] = 'Clave IPinfoDB';
 $string['auth_googleuserprefix'] = 'El nombre de usuario creado empezará con este prefijo. En un sitio Moodle sencillo, no hace falta cambiarlo.';
 $string['auth_googleuserprefix_key'] = 'Prefijo del nombre de usuario';
-$string['auth_googleoauth2description'] = 'Permite que el usuario pueda conectar al sitio web con un servicio externo: Google/Facebook/Windows Live. La primera vez que un usuario conecta con un servicio externo, se crea una cuenta nueva. <a href="'.$CFG->wwwroot.'/admin/search.php?query=authpreventaccountcreation">Evitar la creación de cuentas al identificarse</a> <b>debe</b> estar deshabilitado.
+$string['auth_googleoauth2description'] = 'Permite que el usuario pueda conectar al sitio web con un servicio externo: Google/Facebook/Windows Live. La primera vez que un usuario conecta con un servicio externo, se crea una cuenta nueva.
+Evitar la creación de cuentas al identificarse (authpreventaccountcreation) <b>debe</b> estar deshabilitado.
 <br/><br/>
 <i>Aviso acerca de Windows Live: Microsoft no informa sobre la extensión si la dirección de correo ha sido verificado. Más información en el <a href="https://github.com/mouneyrac/auth_googleoauth2/wiki/FAQ">FAQ</a>.</i>';
 $string['auth_linkedinclientid'] = 'Tus claves secretas/API pueden ser generados en tu <a href="https://www.linkedin.com/secure/developer">página de registro de Linkedin</a>:
@@ -65,7 +65,6 @@ $string['auth_messengerclientid'] = 'Tu ID cliente/secreto puede ser generado en
 $string['auth_messengerclientid_key'] = 'ID Cliente Messenger';
 $string['auth_messengerclientsecret'] = 'Ver arriba.';
 $string['auth_messengerclientsecret_key'] = 'Secreto cliente Messenger';
-
 $string['auth_googlesettings'] = 'Configuración';
 $string['couldnotgetgoogleaccesstoken'] = 'The authentication provider sent us a communication error. Please try to sign-in again.';
 $string['oauth2displaybuttons'] = 'Display buttons on login page';
@@ -74,5 +73,5 @@ $string['oauth2displaybuttonshelp'] = 'Mostrar los botones con el logo de Google
 $string['emailaddressmustbeverified'] = 'Tu dirección de correo electrónico no ha sido verificado por el método de autentificación que has seleccionado. Puede ser que te hayas olvidado de hacer click en el enlace "verificar dirección de correo" que Google o Facebook debía haberte mandado durante la subscripción a su servicio.';
 $string['auth_sign-in_with'] = 'Iniciar sesión con {$a->providername}';
 $string['moreproviderlink'] = 'Iniciar sesión con otro servicio.';
-$string['signinwithanaccount'] = 'Iniciar sesión con:';
+$string['signinwithanaccount'] = 'Iniciar sesión con {$a}';
 $string['noaccountyet'] = 'Todavía no tienes permiso para utilizar este sitio. Contacte con tu administrador y pidele que active tu cuenta.';

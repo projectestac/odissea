@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_replace', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,11 +29,12 @@ $string['cannotfit'] = 'Die Textersetzung ist länger als das Original. Ein Verk
 $string['disclaimer'] = 'Ja, ich kenne das Risiko!';
 $string['doit'] = 'Ersetzen';
 $string['excludedtables'] = 'Verschiedene Tabellen werden nicht geändert, z.B. configuration, log, events und session';
+$string['invalidcharacter'] = 'Im Such- oder im Ersetzungstext wurden ungültige Zeichen gefunden.';
 $string['notifyfinished'] = '... fertig!';
 $string['notifyrebuilding'] = 'Der Cache wird neu aufgebaut...';
 $string['notimplemented'] = 'Diese Option funktioniert nicht mit Ihrer Datenbank.';
 $string['notsupported'] = 'Das Script verändert die Datenbank. Die Änderungen können nicht rückgängig gemacht werden!
-<br />Erstellen Sie unbedingt eine Sicherung der Datenbank, bevor Sie dieses Script ausführen!';
+<br />Erstellen Sie unbedingt eine vollständige Sicherung der Datenbank, bevor Sie dieses Script ausführen!';
 $string['pageheader'] = 'Suchen und Ersetzen in der Datenbank';
 $string['pluginname'] = 'Suchen und Ersetzen in der Datenbank';
 $string['replacewith'] = 'Durch diesen Text ersetzen:';

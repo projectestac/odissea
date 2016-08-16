@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Catégorie actuelle';
 $string['categorycurrentuse'] = 'Utiliser cette catégorie';
 $string['categorydoesnotexist'] = 'Cette catégorie n\'existe pas';
 $string['categoryinfo'] = 'Description de la catégorie';
-$string['categorymove'] = 'La catégorie « {$a->name} » contient {$a->count} questions (certaines d\'entre elles peuvent être d\'anciennes questions cachées utilisées dans des tests existants).<br />Veuillez choisir une autre catégorie dans laquelle les déplacer.';
+$string['categorymove'] = 'La catégorie « {$a->name} » contient {$a->count} questions (certaines d\'entre elles peuvent être des questions cachées ou des questions aléatoires encore utilisées dans des tests). Veuillez choisir une autre catégorie dans laquelle les déplacer.';
 $string['categorymoveto'] = 'Enregistrer dans la catégorie';
 $string['categorynamecantbeblank'] = 'Le nom de la catégorie ne peut pas être vide.';
 $string['changeoptions'] = 'Modifier les options';
@@ -192,7 +192,6 @@ $string['generalfeedback_help'] = 'Le feedback général est affiché aux partic
 Vous pouvez utiliser le feedback général pour donner à vos participants des indications sur les connaissances testées par la question, ou leur fournir des liens qu\'ils pourront utiliser s\'ils n\'ont pas compris la question.';
 $string['getcategoryfromfile'] = 'Obtenir la catégorie à partir du fichier';
 $string['getcontextfromfile'] = 'Obtenir le contexte à partir du fichier';
-$string['hidden'] = 'Caché';
 $string['hintn'] = 'Indice {no}';
 $string['hintnoptions'] = 'Options de l\'indice {no}';
 $string['hinttext'] = 'Texte de l\'indice';
@@ -294,8 +293,6 @@ $string['numqas'] = 'Nombre de tentatives de question';
 $string['numquestions'] = 'No. de questions';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+ {$a->numhidden} cachées)';
 $string['options'] = 'Options';
-$string['orphanedquestionscategory'] = 'Questions des catégories supprimées';
-$string['orphanedquestionscategoryinfo'] = 'Parfois, en raison d\'ancien bogues, des questions peuvent subsister dans la base de données, bien que la catégorie correspondante ait été supprimée. Cela est survenu sur ce site par le passé. Cette catégorie a été créée automatiquement et les questions non supprimées y ont été placées afin que vous puissiez les traiter. Les images ou autres fichiers utilisés par ces questions ont probablement été correctement supprimés.';
 $string['page-question-category'] = 'Page de catégorie de questions';
 $string['page-question-edit'] = 'Page de modification de question';
 $string['page-question-export'] = 'Page d\'exportation de questions';
@@ -388,6 +385,7 @@ $string['submissionoutofsequencefriendlymessage'] = 'Vous avez saisi des donnée
 $string['submit'] = 'Envoyer';
 $string['submitandfinish'] = 'Envoyer et terminer';
 $string['submitted'] = 'Envoyé : {$a}';
+$string['tagarea_question'] = 'Questions';
 $string['technicalinfo'] = 'Information technique';
 $string['technicalinfo_help'] = 'Cette information technique n\'est vraisemblablement utile que pour les développeurs travaillant sur de nouveaux types de questions. Elle peut aussi être utile pour diagnostiquer certains problèmes de certaines questions.';
 $string['technicalinfomaxfraction'] = 'Fraction maximale : {$a}';

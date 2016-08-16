@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lesson', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -394,8 +394,6 @@ $string['maximumnumberofattempts_help'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XH
 </body>
 </html>';
 $string['maximumnumberofattemptsreached'] = 'Συμπληρώθηκε ο μέγιστος αριθμός προσπαθειών - Μετάβαση στην επόμενη σελίδα';
-$string['maxtime'] = 'Χρονικό όριο(λεπτά)';
-$string['maxtimewarning'] = 'Έχετε {$a} λεπτά για να ολοκληρώσετε την ενότητα.';
 $string['mediaclose'] = 'Εμφάνιση κουμπιού εξόδου:';
 $string['mediafile'] = 'Άνοιγμα αναδυόμενου παράθυροτ σε αρχείο ή ιστοσελίδα';
 $string['mediafile_help'] = '<p align="center"><b>Αναδυόμενο αρχείο ή ιστοσελίδα</b></p>

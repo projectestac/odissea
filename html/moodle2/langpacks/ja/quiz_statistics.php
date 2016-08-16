@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['detailedanalysis'] = 'この問題に対する解答の詳細分析';
 $string['detailedanalysisforvariant'] = 'この問題の変形「 {$a} 」への解答に関する詳細分析';
 $string['discrimination_index'] = '識別指数';
 $string['discriminative_efficiency'] = '識別率';
-$string['downloadeverything'] = 'フルリポートをダウンロードする: {$a->formatsmenu} {$a->downloadbutton}';
+$string['downloadeverything'] = 'フルリポートをダウンロードする:';
 $string['duration'] = '公開期間';
 $string['effective_weight'] = '有効加重';
 $string['errordeleting'] = '古い {$a} レコード削除中にエラーが発生しました。';

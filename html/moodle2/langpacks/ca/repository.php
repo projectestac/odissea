@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['activerepository'] = 'Connectors de repositori disponibles';
 $string['activitybackup'] = 'Còpia de seguretat d\'activitat';
 $string['add'] = 'Afegeix';
 $string['addfile'] = 'Afegeix...';
+$string['addfiletext'] = 'Afegeix un fitxer';
 $string['addplugin'] = 'Afegeix un connector de repositori';
 $string['allowexternallinks'] = 'Permet enllaços externs';
 $string['areacategoryintro'] = 'Introducció a la categoria';
@@ -78,6 +79,7 @@ $string['continueuninstallanddownload'] = 'Continua i descarrega';
 $string['copying'] = 'S\'està copiant';
 $string['coursebackup'] = 'Còpies de seguretat de cursos';
 $string['create'] = 'Crea';
+$string['createfolder'] = 'Crea una carpeta';
 $string['createfolderfail'] = 'Error en crear aquesta carpeta';
 $string['createfoldersuccess'] = 'S\'ha creat la carpeta amb èxit';
 $string['createinstance'] = 'Crea la instància del repositori';
@@ -90,10 +92,14 @@ $string['deleterepository'] = 'Suprimeix aquest repositori';
 $string['detailview'] = 'Visualitza els detalls';
 $string['dimensions'] = 'Dimensions';
 $string['disabled'] = 'Inhabilitat';
+$string['displayasdetails'] = 'Mostra com a detalls del fitxer';
+$string['displayasicons'] = 'Mostra com a icones del fitxer';
+$string['displayastree'] = 'Mostra com a arbre del fitxer';
 $string['displaydetails'] = 'Mostra la carpeta amb el detalls dels fitxers';
 $string['displayicons'] = 'Mostra la carpeta amb les icones del fitxers';
 $string['displaytree'] = 'Mostra la carpeta amb l\'arbre dels fitxers';
 $string['download'] = 'Descarrega';
+$string['downloadallfiles'] = 'Descarrega tots els fitxers';
 $string['downloadfolder'] = 'Descarrega-ho tot';
 $string['downloadsucc'] = 'El fitxer ha estat baixat amb èxit';
 $string['draftareanofiles'] = 'No es pot baixar perquè no s\'ha adjuntat cap fitxer';
@@ -129,7 +135,6 @@ $string['folderrecurse'] = 'La carpeta no es pot moure a la seva pròpia subcarp
 $string['getfile'] = 'Seleccioneu aquest fitxer';
 $string['getfiletimeout'] = 'Temps d\'espera per a obtenir el fitxer';
 $string['help'] = 'Ajuda';
-$string['hidden'] = 'Ocult';
 $string['iconview'] = 'Mostra com a icones';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'instància';
@@ -157,6 +162,7 @@ $string['makefileinternal'] = 'Fes una còpia del fitxer';
 $string['makefilelink'] = 'Enllaça el fitxer directament';
 $string['makefilereference'] = 'Crear un àlies o accés directe al fitxer';
 $string['manage'] = 'Gestiona els repositoris';
+$string['manageinstances'] = 'Gestiona les instàncies';
 $string['manageurl'] = 'Gestiona';
 $string['manageuserrepository'] = 'Gestiona el repositori individual';
 $string['moving'] = 'S\'està movent';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Collapse all course lists';
 $string['configotherexpanded'] = 'If enabled, other courses will be expanded by default unless overridden by user preferences.';
 $string['configpreservestates'] = 'If enabled, the collapsed/expanded states set by the user are stored and used on each load.';
 $string['course_overview:addinstance'] = 'Add a new course overview block';
-$string['course_overview:myaddinstance'] = 'Add a new course overview block to My home';
+$string['course_overview:myaddinstance'] = 'Add a new course overview block to Dashboard';
 $string['defaultmaxcourses'] = 'Default maximum courses';
 $string['defaultmaxcoursesdesc'] = 'Maximum courses which should be displayed on course overview block, 0 will show all courses';
 $string['expandall'] = 'Expand all course lists';

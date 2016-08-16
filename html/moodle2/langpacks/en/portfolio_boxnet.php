@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = 'As part of the recent Moodle upgrade to 2.6, the Box portfolio plugin has been disabled. To re-enable it, you need to re-configure it as described in the documentation {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'This plugin has been disabled, as it requires configuration as described in the documentation Box APIv1 migration.';
-$string['apiv1migration_message_subject'] = 'Important information regarding Box portfolio plugin';
 $string['clientid'] = 'Client ID';
 $string['clientsecret'] = 'Client secret';
 $string['existingfolder'] = 'Existing folder to put file(s) into';

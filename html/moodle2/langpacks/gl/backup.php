@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,6 +87,7 @@ $string['configgeneralbadges'] = 'Estabelece os valores predeterminados para inc
 $string['configgeneralblocks'] = 'Estabelece os valores predeterminados para incluír bloques nunha copia de seguranza.';
 $string['configgeneralcomments'] = 'Estabelece os valores predeterminados para incluír comentarios nunha copia de seguranza.';
 $string['configgeneralfilters'] = 'Estabelece os valores predeterminados para incluír os filtro nunha copia de seguranza.';
+$string['configgeneralgroups'] = 'Define o comportamento por defecto para incluír grupos e agrupamentos nunha copia de seguranza.';
 $string['configgeneralhistories'] = 'Estabelece os valores predeterminados para incluír o historial do usuario nunha copia de seguranza.';
 $string['configgenerallogs'] = 'Se está activado, de xeito predeterminado incluiranse os rexistros nas copias de seguranza.';
 $string['configgeneralquestionbank'] = 'Se está activado, o banco de preguntas estará incluído de xeito predeterminado nas copias de seguranza. TOME NOTA de que ao desactivar esta configuración desactivarase a copia de seguranza de actividades que usen o banco de preguntas, como por exemplo, os exames.';
@@ -118,7 +119,7 @@ $string['errorfilenamerequired'] = 'Debe introducir un nome de ficheiro correcto
 $string['errorinvalidformat'] = 'Formato de copia de seguranza descoñecido.';
 $string['errorinvalidformatinfo'] = 'O ficheiro seleccionado non é un ficheiro de copia de seguranza correcto de Moodle e non é posíbel restauralo.';
 $string['errorminbackup20version'] = 'Este ficheiro de copia de seguranza foi creado cunha versión de desenvolvemento de copia de seguranza de Moodle ({$a->backup}) e requírese, polo menos, da versión {$a->min}. Polo tanto, non pode ser restaurado.';
-$string['errorrestorefrontpage'] = 'Non está permitido restaurar na páxina de portada.';
+$string['errorrestorefrontpagebackup'] = 'Só se poden restaurar copias de seguranza da páxina principal na páxina principal';
 $string['executionsuccess'] = 'Creouse satisfactoriamente o ficheiro de copia de seguranza.';
 $string['filealiasesrestorefailures'] = 'Non foi posíbel restaurar os alias';
 $string['filealiasesrestorefailures_help'] = 'Os alias son ligazóns simbólicas a outros ficheiros, incluídos os almacenados en repositorios externos. Nalgúns casos, Moodle non pode restauralos; por exemplo, ao restaurar a copia de seguranza noutro lugar ou cando o ficheiro ao que se fai referencia non existe.
@@ -130,7 +131,7 @@ $string['filename'] = 'Nome de ficheiro';
 $string['filereferencesincluded'] = 'As referencias de ficheiro a contidos externos incluídos no paquete de copia de seguranza, non funcionarán noutros sitios.';
 $string['filereferencesnotsamesite'] = 'A copia de seguranza é doutro sitio, non é posíbel restaurar as referencias de ficheiro';
 $string['filereferencessamesite'] = 'A copia de seguranza é deste sitio, pódese restaurar as referencias de ficheiro';
-$string['generalactivities'] = 'Incluír as actividades';
+$string['generalactivities'] = 'Incluír as actividades e recursos';
 $string['generalanonymize'] = 'Anonimizar a información';
 $string['generalbackdefaults'] = 'Configuración predeterminada da copia de seguranza';
 $string['generalbadges'] = 'Incluír as distincións';
@@ -138,6 +139,7 @@ $string['generalblocks'] = 'Incluír os bloques';
 $string['generalcomments'] = 'Incluír os comentarios';
 $string['generalfilters'] = 'Incluír os filtros';
 $string['generalgradehistories'] = 'Incluír os historiais';
+$string['generalgroups'] = 'Incluír os grupos e agrupamentos';
 $string['generalhistories'] = 'Incluír os historiais';
 $string['generallogs'] = 'Incluír os rexistros';
 $string['generalquestionbank'] = 'Incluír o banco de preguntas';
@@ -226,7 +228,7 @@ $string['restoretonewcourse'] = 'Restaurar como curso novo';
 $string['restoringcourse'] = 'A restauración do curso está en proceso';
 $string['restoringcourseshortname'] = 'restaurando';
 $string['rootenrolmanual'] = 'Restaurar como matriculación manual';
-$string['rootsettingactivities'] = 'Incluír as actividades';
+$string['rootsettingactivities'] = 'Incluír as actividades e recursos';
 $string['rootsettinganonymize'] = 'Anonimizar a información dos usuarios';
 $string['rootsettingbadges'] = 'Incluír as distincións';
 $string['rootsettingblocks'] = 'Incluír os bloques';
@@ -234,6 +236,7 @@ $string['rootsettingcalendarevents'] = 'Incluír as actividades do calendario';
 $string['rootsettingcomments'] = 'Incluír os comentarios';
 $string['rootsettingfilters'] = 'Incluír os filtros';
 $string['rootsettinggradehistories'] = 'Incluír o historial de cualificacións';
+$string['rootsettinggroups'] = 'Incluír os grupos e agrupamentos';
 $string['rootsettingimscc1'] = 'Converter a IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Converter a IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Incluír os rexistros do curso';
@@ -254,12 +257,13 @@ $string['setting_keep_groups_and_groupings'] = 'Manter os grupos e as agrupació
 $string['setting_keep_roles_and_enrolments'] = 'Manter os roles e matriculacións actuais';
 $string['setting_overwriteconf'] = 'Sobrescribir a configuración do curso';
 $string['showtypes'] = 'Amosar as opcións de tipos';
+$string['sitecourseformatwarning'] = 'Isto é unha copia de seguranza da páxina principal, teña en conta que só se pode restaurar na páxina principal';
 $string['skiphidden'] = 'Omitir cursos agochados';
 $string['skiphiddenhelp'] = 'Escolla se se omiten ou non os cursos agochados';
 $string['skipmodifdays'] = 'Omitir os cursos sen modificar desde';
 $string['skipmodifdayshelp'] = 'Escolla omitir os cursos que non se modificaron desde un número de días';
 $string['skipmodifprev'] = 'Omitir os cursos sen modificar desde a copia de seguranza anterior';
-$string['skipmodifprevhelp'] = 'Escolla se omitir ou non os cursos que non se modificaron desde a copia de seguranza anterior';
+$string['skipmodifprevhelp'] = 'Escolla se omitir ou non os cursos que non se modificaron desde a copia de seguranza anterior. Isto precisa ter activado o rexistro de cambios.';
 $string['storagecourseandexternal'] = 'Área de ficheiros de copia de seguranza e directorio específico.';
 $string['storagecourseonly'] = 'Área de ficheiros de copia de seguranza';
 $string['storageexternalonly'] = 'Especifique o directorio para as copias de seguranza automatizadas';

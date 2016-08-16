@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,4 +40,5 @@ $string['page-mod-folder-view'] = '폴더 모듈 주 페이지';
 $string['page-mod-folder-x'] = '모든 폴더 모듈 페이지';
 $string['pluginadministration'] = '폴더 관리';
 $string['pluginname'] = '폴더';
+$string['search:activity'] = '폴더';
 $string['showexpanded'] = '확장된 하위 폴더 보여주기';

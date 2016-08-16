@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'notes', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['eventnoteupdated'] = 'Oharra eguneratu da';
 $string['groupaddnewnote'] = 'Gehitu guztientzako ohar berria';
 $string['invalidid'] = 'Ohar ezegokia adierazitako ID-ean';
 $string['invaliduserid'] = 'Erabiltzailearen id-ak ez du balio: {$a}';
+$string['myprofileownnotes'] = 'Nire oharrak';
 $string['nocontent'] = 'Oharraren edukiak ezin du hutsik egon';
 $string['nonotes'] = 'Ez dago mota honetako oharrik';
 $string['nopermissiontodelete'] = 'Ezin duzu ohar hori ezabatu';

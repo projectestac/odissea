@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_feedback', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_feedback', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Inkesta';
 $string['feedback:addinstance'] = 'Gehitu inkesta bloke berria';
-$string['missing_feedback_module'] = 'Bloke hau inkesta jardueran oinarritzen da baina modulua ez dago!';
 $string['pluginname'] = 'Inkesta';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que quer remover a ins
 $string['defaultperiod'] = 'Duração predefinida da inscrição';
 $string['defaultperiod_desc'] = 'Duração predefinida da inscrição.  Se for definida para zero, a validade da inscrição será ilimitada por predefinição.';
 $string['defaultperiod_help'] = 'Tempo predefinido durante o qual as inscrições são válidas a partir do momento em que o aluno é inscrito.';
+$string['defaultstart'] = 'Início das inscrições predefinido';
 $string['deleteselectedusers'] = 'Apagar inscrições selecionadas';
 $string['editselectedusers'] = 'Editar papéis dos utilizadores selecionados';
 $string['enrolledincourserole'] = 'Inscrito na disciplina "{$a->course}" como "{$a->role}"';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Notificação de expiração da inscr
 $string['manual:config'] = 'Configurar instâncias de inscrição manuais';
 $string['manual:enrol'] = 'Inscrever utilizadores';
 $string['manual:manage'] = 'Gerir inscrições de utilizadores';
+$string['manualpluginnotinstalled'] = 'O módulo "Manual" ainda não foi instalado';
 $string['manual:unenrol'] = 'Remover inscrições de utilizadores da disciplina';
 $string['manual:unenrolself'] = 'Remover a sua inscrição desta disciplina';
 $string['messageprovider:expiry_notification'] = 'Notificações de expiração de inscrições manuais';
+$string['now'] = 'Agora';
 $string['pluginname'] = 'Inscrições manuais';
 $string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (ex: professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de auto-inscrição, dependem deste módulo.';
 $string['status'] = 'Ativar inscrições manuais';

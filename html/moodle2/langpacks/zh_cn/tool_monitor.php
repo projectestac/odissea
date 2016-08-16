@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,6 +87,7 @@ $string['ruledeletesuccess'] = '规则已被删除';
 $string['rulehelp'] = '规则细节';
 $string['rulehelp_help'] = '当\'{$a->moduleinstance}\' 的事件\'{$a->eventname}\'在{$a->minutes} 分钟内发生{$a->frequency} 次，这个规则就会起反应。';
 $string['rulename'] = '规则名称';
+$string['rulenopermission'] = '你没有权限订阅任何监看事件';
 $string['rulenopermissions'] = '你没有权限去"{$a}一规则"';
 $string['rulescansubscribe'] = '你可以订阅的规则';
 $string['selectacourse'] = '选择一课程';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_filesystem', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['pluginname'] = 'Fitxategi-sistema';
 $string['pluginname_help'] = 'Direktorio lokaletik biltegia sortu ';
 $string['relativefiles'] = 'Baimendu fitxategi erlatiboak';
 $string['root'] = 'Root-a';
+$string['searchresults'] = 'Bilaketaren emaitzak';

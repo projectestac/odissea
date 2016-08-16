@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,12 +39,15 @@ $string['customtitles'] = 'Pertsonalizatu izenburuak';
 $string['customtitles_help'] = 'Normalean atalaren izenburua edukien taulan (ET) agertzen da ETA goiburu gisa edukiaren gainean.
 
 Izenburuak pertsonalizatzeko laukitxoa markatuta badago, atalaren izenburua EZ da agertuko goiburu gisa edukiaren gainean. Beste izenburu bat (agian atalaren izenburua baino luzeagoa) sar daiteke edukiaren osagai gisa.';
+$string['deletechapter'] = 'Ezabatu "{$a}" atala';
+$string['editchapter'] = 'Editatu "{$a}" atala';
 $string['editingchapter'] = 'Atala editatzen';
 $string['errorchapter'] = 'Errorea liburuaren atala irakurtzean.';
 $string['eventchaptercreated'] = 'Atala sortu da';
 $string['eventchapterdeleted'] = 'Atala ezabatu da';
 $string['eventchapterupdated'] = 'Atala eguneratu da';
 $string['eventchapterviewed'] = 'Atala ikusi da';
+$string['hidechapter'] = 'Ezkutatu "{$a}" atala';
 $string['modulename'] = 'Liburua';
 $string['modulename_help'] = 'Liburua moduluak aukera ematen dio irakasleari liburu formatuko hainbat orritako baliabidea sortzeko, atal eta azpiatalduna. Liburuak media fitxategiak izan ditzake eta baita testua ere eta erabilgarria da ataletan bana daitezkeen informazio-pasarte luzeak erakusteko.
 
@@ -54,9 +57,17 @@ Liburua honetarako erabil daiteke:
 * Saileko langileen esku-liburu gisa
 * Ikasleen lanaren portfolioaren adibide gisa';
 $string['modulenameplural'] = 'Liburuak';
+$string['movechapterdown'] = 'Mugitu "{$a}" atala behera';
+$string['movechapterup'] = 'Mugitu "{$a}" atala gora';
 $string['navexit'] = 'Irten liburutik';
+$string['navimages'] = 'Irudiak';
 $string['navnext'] = 'Hurrengoa';
 $string['navprev'] = 'Aurrekoa';
+$string['navstyle'] = 'Nabigazio-estiloa';
+$string['navstyle_help'] = '* Irudiak - Ikonoak erabiliko dira nabigatzeko
+* Testua - Atalen izenburuak erabiliko dira nabigatzeko';
+$string['navtext'] = 'Testua';
+$string['navtoc'] = 'TOC baino ez';
 $string['nocontent'] = 'Oraindik ez da edukirik gehitu liburu honetan.';
 $string['numbering'] = 'Atalen itxura';
 $string['numbering0'] = 'Bat ere ez';
@@ -72,6 +83,9 @@ $string['numberingoptions_desc'] = 'Aukeratu liburu berriak sortzean eskura daud
 $string['page-mod-book-x'] = 'Liburua moduluaren edozein orri';
 $string['pluginadministration'] = 'Liburuaren kudeaketa';
 $string['pluginname'] = 'Liburua';
+$string['search:activity'] = 'Blokea - baliabidearen informazioa';
+$string['search:chapter'] = 'Liburua - atalak';
+$string['showchapter'] = 'Erakutsi  "{$a}" atala';
 $string['subchapter'] = 'Azpiatala';
 $string['subchapternotice'] = '(Lehen atala sortutakoan bakarrik egongo da erabilgarri)';
 $string['subplugintype_booktool'] = 'Libururako tresna';

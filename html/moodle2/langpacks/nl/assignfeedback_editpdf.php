@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['deletecomment'] = 'Verwijder opmerking';
 $string['deletefeedback'] = 'Verwijder feedback PDF';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Download feedback PDF';
+$string['draftchangessaved'] = 'Klad-annotaties bewaard';
 $string['editpdf'] = 'Annoteer PDF';
 $string['editpdf_help'] = 'Annoteer de inzendingen van de leerlingen rechtstreeks in je browser en maak een bewerkte downloadbare PDF.';
 $string['enabled'] = 'Annoteer PDF';
@@ -66,8 +67,10 @@ $string['oval'] = 'Ovaal';
 $string['pagenumber'] = 'pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} van {$a->total}';
 $string['pathtogspathdesc'] = 'Opgelet: om PDF te kunnen annoteren moet het pad naar ghostscript ingesteld zijn in {$a}.';
+$string['pathtounoconvpathdesc'] = 'Merk op dat PDF-annotaties verwacht dat het pad naar unovonv is ingesteld in {$a}';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annoteer PDF';
+$string['preparesubmissionsforannotation'] = 'Inzendingen voorbereiden voor annotatie.';
 $string['rectangle'] = 'Rechthoek';
 $string['red'] = 'Rood';
 $string['result'] = 'Resultaat:';
@@ -84,9 +87,16 @@ $string['test_isdir'] = 'Het Ghostscript-pad wijst naar een map. Zet ook het pro
 $string['test_notestfile'] = 'De test-PDF ontbreekt';
 $string['test_notexecutable'] = 'Het Gostscript-pad verwijst naar een bestand dat niet uitvoerbaar is.';
 $string['test_ok'] = 'Het Ghostscript-pad lijkt in orde - controleer of je de boodschap in onderstaand bericht kunt zien.';
+$string['test_unoconv'] = 'Test pad naar  unoconv';
+$string['test_unoconvdoesnotexist'] = 'Het pad naar unoconv verwijst niet naar het unoconv programma. Kijk je padinstellingen na.';
+$string['test_unoconvdownload'] = 'Download het geconverteerde pdf testbestand.';
+$string['test_unoconvisdir'] = 'Het unoconv pad verwijst naar een map. Geef ook de naam van het unoconv programma in het opgegeven pad.';
+$string['test_unoconvnotestfile'] = 'Het testdocument om te converteren naar PDF ontbreekt';
+$string['test_unoconvnotexecutable'] = 'Het unoconv pad verwijst naar een bestand dat niet uitvoerbaar is';
+$string['test_unoconvok'] = 'Het unoconv pad is juist geconfigureerd.';
+$string['test_unoconvversionnotsupported'] = 'De unoconv versie die je hebt geïnstalleerd wordt niet ondersteund. De beoordelingsfunctie vereist versie 0.7 of hoger.';
 $string['tool'] = 'Gereedschap';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = 'Onbewaarde wijzigingen';
 $string['viewfeedbackonline'] = 'Bekijk een geannoteerde pdf...';
 $string['white'] = 'Wit';
 $string['yellow'] = 'Geel';

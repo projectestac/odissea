@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,8 @@ Kontuan izan, bestalde, kasu honetan ezin dela erabiltzaileen ekintzarik erregis
 $string['displayinline'] = 'Erakutsi ikastaroaren orrian';
 $string['displaypage'] = 'Apareteko orri batean';
 $string['dnduploadmakefolder'] = 'Deskonprimatu fixtategiak eta sortu karpeta';
+$string['downloadfolder'] = 'Jaitsi karpeta';
+$string['eventallfilesdownloaded'] = 'Jaitsitako karpetaren zip fitxategia';
 $string['eventfolderupdated'] = 'Karpeta eguneratu da';
 $string['folder:addinstance'] = 'Gehitu beste karpeta bat';
 $string['foldercontent'] = 'Fitxategiak eta azpikarpetak';
@@ -51,5 +53,6 @@ $string['page-mod-folder-view'] = 'Karpetaren orri nagusia';
 $string['page-mod-folder-x'] = 'Karpetaren edozein orri';
 $string['pluginadministration'] = 'Karpetaren kudeaketa';
 $string['pluginname'] = 'Karpeta';
+$string['search:activity'] = 'Karpeta';
 $string['showexpanded'] = 'Erakutsi azpikarpetak zabalduta';
 $string['showexpanded_help'] = '\'Bai\' ezarrita berez erakutsiko dira azpikarpetak zabalduta. Bestela, azpikarpetak kolapsatuta erakutsiko dira.';

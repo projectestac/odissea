@@ -37,7 +37,9 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 		$http = null;
 		$httpl = new com_wiris_quizzes_impl_HttpToQuizzesListener($listener, $mqr, $this, $async);
 		$config = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
-		if(com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT || com_wiris_settings_PlatformSettings::$IS_FLASH) {
+		$clientSide = com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT || com_wiris_settings_PlatformSettings::$IS_FLASH;
+		$allowCors = $clientSide && "true" === $config->get(com_wiris_quizzes_api_ConfigurationKeys::$CROSSORIGINCALLS_ENABLED);
+		if($clientSide && !$allowCors) {
 			$url = $config->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL);
 			$http = new com_wiris_quizzes_impl_HttpImpl($url, $httpl);
 			$http->setParameter("service", "quizzes");
@@ -46,7 +48,11 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 			$http->setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 		} else {
 			$url = $this->getServiceUrl();
-			$http = new com_wiris_quizzes_impl_MaxConnectionsHttpImpl($url, $httpl);
+			if($clientSide) {
+				$http = new com_wiris_quizzes_impl_HttpImpl($url, $httpl);
+			} else {
+				$http = new com_wiris_quizzes_impl_MaxConnectionsHttpImpl($url, $httpl);
+			}
 			$http->setHeader("Content-Type", "text/xml; charset=UTF-8");
 			$http->setHeader("Referer", $config->get(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL));
 			$http->setPostData($postData);

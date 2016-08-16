@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['auth_dbpasstype'] = '<p>Определяет формат исполь�
 $string['auth_dbpasstype_key'] = 'Формат пароля';
 $string['auth_dbreviveduser'] = 'Восстановлен пользователь «{$a->name}» id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Ошибка восстановления пользователя «{$a}»';
+$string['auth_dbsaltedcrypt'] = 'Шифровать строки с использованием односторонней хэш-функции';
 $string['auth_dbsetupsql'] = 'Команда настройки SQL';
 $string['auth_dbsetupsqlhelp'] = 'SQL-команда для дополнительной настройки базы данных, часто используется при установке соответствующей кодировки, например для MySQL и PostgreSQL:<em> SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = 'Заблокирована учетная запись пользователя «{$a->name}» id {$a->id}';

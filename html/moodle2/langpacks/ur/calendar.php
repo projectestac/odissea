@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ur', branch 'MOODLE_28_STABLE'
+ * Strings for component 'calendar', language 'ur', branch 'MOODLE_31_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,7 +84,6 @@ $string['gotocalendar'] = 'تقویم کی طرف جاؤ';
 $string['group'] = 'گروپ';
 $string['groupevent'] = 'گروپ کا واقعہ';
 $string['groupevents'] = 'گروپ کا واقعات';
-$string['hidden'] = 'خفی';
 $string['ical'] = 'آئی کال';
 $string['iwanttoexport'] = 'برآمد کرو';
 $string['manyevents'] = '{$a} واقعات';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,6 @@ $string['modulenameplural'] = '作业2.2（已禁用）';
 $string['page-mod-assignment-submissions'] = '作业模块评分页';
 $string['page-mod-assignment-view'] = '作业模块主页';
 $string['page-mod-assignment-x'] = '任意作业模块页面';
-$string['pendingupgrades_message_content'] = '升级到 Moodle 2.7版，旧版作业2.2的活动会被禁用。自旧版作业2.2的活动备份可以无缝恢复到新版作业活动。所有原来存在的旧版作业2.2的活动必须通过作业升级工具升级{$a->docsurl}。本站有{$a->count}个旧版作业2.2的活动需要升级。升级之前，用户将不能访问这些作业活动内容。';
-$string['pendingupgrades_message_small'] = '这个插件已被禁用。所有剩余的作业必须通过作业引擎升级助手升级到新的作业模块。';
-$string['pendingupgrades_message_subject'] = '关于作业活动模块 2.2 的重要信息';
 $string['pluginadministration'] = '作业 2.2 (已禁用) 管理';
 $string['pluginname'] = '作业2.2（已禁用）';
 $string['upgradenotification'] = '此活动使用的是旧作业模块。';

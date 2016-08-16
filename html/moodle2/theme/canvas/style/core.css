@@ -394,14 +394,6 @@ body {
 /* Tags
 ------------------------*/
 
-#big-tag-cloud-box {
-    padding: 10px;
-}
-
-#tag-management-box {
-    text-align: center;
-}
-
 .tag-management-form {
     border: none;
     padding: 0 0 1em;
@@ -409,12 +401,6 @@ body {
 
 #tag-management-list {
     margin: 1em 0
-}
-
-#page-tag-index #tag-blogs {
-    border-width: 0 0 1px;
-    width: 65%;
-    margin: 1em auto;
 }
 
 #tagblogentries {
@@ -427,43 +413,6 @@ body {
     margin: 0
 }
 
-#big-tag-cloud-box {
-    border: none;
-}
-
-#tag-user-table {
-    width: 95%;
-    margin: 0 auto;
-    border-width: 0 0 1px;
-}
-
-.managelink {
-    text-align: right;
-}
-
-#page-tag-index h2 {
-    text-align: center;
-    margin-bottom: 0;
-}
-
-#page-tag-index #tag-management-box {
-    border-bottom: 1px solid #ddd;
-    padding: 4px 0;
-}
-
-#page-tag-index .relatedpages {
-    text-align: center;
-}
-
-#page-tag-manage .lastinitial {
-    margin-bottom: 0.5em;
-}
-
-#page-tag-manage .green {
-    text-align: center;
-    padding: 0 0 1em;
-}
-
 /* Embedded Pages
 ------------------------*/
 
@@ -473,7 +422,7 @@ body {
     background-image: none;
 }
 
-.pagelayout-embedded #content {
+.pagelayout-embedded #page-content {
     padding-top: 30px;
 }
 

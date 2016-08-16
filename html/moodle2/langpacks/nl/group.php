@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,8 @@ $string['eventgroupcreated'] = 'Groep gemaakt';
 $string['eventgroupdeleted'] = 'Groep verwijderd';
 $string['eventgroupingcreated'] = 'Groepering gemaakt';
 $string['eventgroupingdeleted'] = 'Groepering verwijderd';
+$string['eventgroupinggroupassigned'] = 'Groep toegewezen aan groepering';
+$string['eventgroupinggroupunassigned'] = 'Groepstoewijzing aan groepering verwijderd';
 $string['eventgroupingupdated'] = 'Groepering aangepast';
 $string['eventgroupmemberadded'] = 'Groepslid toegevoegd';
 $string['eventgroupmemberremoved'] = 'Groepslid verwijderd';
@@ -139,9 +141,12 @@ $string['importgroups_help'] = 'Groepen kunnen geïimporteerd worden via een tek
 * De eerste record bevat een lijst met veldnamen die de opmaak bepalen van de rest van het bestand
 * De vereiste veldnaam is groupname
 * Optionele velnamen zijn description, enrolmentkey, picture, hidepicture';
+$string['includeonlyactiveenrol'] = 'Enkel actieve aanmeldingen meenemen';
+$string['includeonlyactiveenrol_help'] = 'Indien ingeschakeld zullen geschorste gebruikers niet mee opgenomen worden in groepen.';
 $string['javascriptrequired'] = 'Voor deze pagina moet Javascript ingeschakeld zijn';
 $string['members'] = 'Leden per groep';
 $string['membersofselectedgroup'] = 'Leden van de geselecteerde groep';
+$string['mygroups'] = 'Mijn groepen';
 $string['namingscheme'] = 'Naamschema';
 $string['namingscheme_help'] = 'Het at-symbool (@) kan gebruikt worden om groepen te maken met namen die letters bevatten. Bijvoorbeeld Groep @ zal groepen genereren met de namen Groep A, Groep B, Groep C, ...
 
@@ -150,6 +155,7 @@ $string['newgrouping'] = 'Nieuwe groepering';
 $string['newpicture'] = 'Nieuwe foto';
 $string['newpicture_help'] = 'Kies een afbeelding in JPG- of PNG-formaat. De afbeelding zal verkleind worden tot een vierkant van 100x100 pixels.';
 $string['noallocation'] = 'Geen toewijzing';
+$string['nogroup'] = 'Geen groep';
 $string['nogrouping'] = 'Geen groepering';
 $string['nogroups'] = 'In deze cursus zijn nog geen groepen aangemaakt';
 $string['nogroupsassigned'] = 'Geen groepen toegewezen';
@@ -157,10 +163,12 @@ $string['nopermissionforcreation'] = 'Kan de groep "{$a}" niet maken omdat je ni
 $string['nosmallgroups'] = 'Voorkom laatste te kleine groep';
 $string['notingroup'] = 'Negeer gebruikers in groepen';
 $string['notingrouping'] = '[Niet in een groepering]';
+$string['notingrouplist'] = '[Niet in een groep]';
 $string['nousersinrole'] = 'Er zijn geen geschikte gebruikers met de geselecteerde rol';
 $string['number'] = 'Aantal groepen of leden per groep';
 $string['numgroups'] = 'Aantal groepen';
 $string['nummembers'] = 'Aantal leden per groep';
+$string['othergroups'] = 'Andere groepen';
 $string['overview'] = 'Overzicht';
 $string['potentialmembers'] = 'Mogelijke groepsleden: {$a}';
 $string['potentialmembs'] = 'Mogelijke leden';

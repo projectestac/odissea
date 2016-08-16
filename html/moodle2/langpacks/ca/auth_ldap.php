@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['auth_ldap_attrcreators'] = 'Llista de grups o contextos als membres del
 $string['auth_ldap_attrcreators_key'] = 'Creadors d\'atributs';
 $string['auth_ldap_auth_user_create_key'] = 'Crea usuaris externament';
 $string['auth_ldap_bind_dn'] = 'Si voleu utilitzar el bind-user per cercar usuaris, especifiqueu-ho aquí. Per exemple \'cn=ldapuser,ou=public,o=org\'';
-$string['auth_ldap_bind_dn_key'] = 'Nom distingit';
+$string['auth_ldap_bind_dn_key'] = 'Nom distingit (distinguised name, «dn»)';
 $string['auth_ldap_bind_pw'] = 'Contrasenya del bind-user.';
 $string['auth_ldap_bind_pw_key'] = 'Contrasenya';
 $string['auth_ldap_bind_settings'] = 'Paràmetres de vinculació';
@@ -49,7 +49,7 @@ $string['auth_ldap_expiration_desc'] = 'Seleccioneu «No» per inhabilitar la co
 $string['auth_ldap_expiration_key'] = 'Venciment';
 $string['auth_ldap_expiration_warning_desc'] = 'Nombre de dies abans que surti l\'avís de venciment de la contrasenya.';
 $string['auth_ldap_expiration_warning_key'] = 'Avís de venciment';
-$string['auth_ldap_expireattr_desc'] = 'Opcional: substitueix l\'atribut de l\'LDAP que emmagatzema la data de venciment de la contrasenya (passwordExpirationTime)';
+$string['auth_ldap_expireattr_desc'] = 'Opcional: Rectifica l\'atribut de l\'LDAP que emmagatzema la data de venciment de la contrasenya.';
 $string['auth_ldap_expireattr_key'] = 'Atribut de venciment';
 $string['auth_ldapextrafields'] = 'Aquests camps són opcionals. Podeu triar d\'omplir alguns camps d\'usuari de Moodle amb informació dels <b>camps LDAP</b> especificats aquí. <p>Si els deixeu en blanc, aleshores s\'utilitzaran valors per defecte.<p>En tot cas, l\'usuari podrà editar tots aquests camps quan es connecti.';
 $string['auth_ldap_graceattr_desc'] = 'Opcional: rectifica l\'atribut gracelogin';
@@ -58,7 +58,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Fa que funcioni el gracelogin de LDAP. 
 $string['auth_ldap_gracelogins_key'] = 'Inicis de sessió de gràcia';
 $string['auth_ldap_groupecreators'] = 'Llista de grups o contextos als membres dels quals se\'ls permet crear grups. Separeu els grups amb \';\'. Generalment serà una cosa així: \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_groupecreators_key'] = 'Creadors de grups';
-$string['auth_ldap_host_url'] = 'Especifiqueu l\'ordinador central LDAP en format URL, per exemple \'ldap://ldap.myorg.com/\' o \'ldaps://ldap.myorg.com/\'';
+$string['auth_ldap_host_url'] = 'Especifiqueu el servidor LDAP en format URL, per exemple \'ldap://ldap.myorg.com/\' o \'ldaps://ldap.myorg.com/\'. Separeu els diferents servidors amb \';\' per tenir protecció contra fallades.';
 $string['auth_ldap_host_url_key'] = 'URL del servidor';
 $string['auth_ldap_ldap_encoding'] = 'Especifiqueu la codificació utilitzada pel servidor LDAP. Molt probablement UTF-8. MS AD v2 utilitza la codificació per defecte del sistema operatiu: cp1252, cp1250, etc.';
 $string['auth_ldap_ldap_encoding_key'] = 'Codificació LDAP';
@@ -84,6 +84,8 @@ $string['auth_ldap_preventpassindb_key'] = 'No emmgatzemis les contrasenyes a la
 $string['auth_ldap_search_sub'] = 'Poseu el valor <> 0 si voleu cercar els usuaris en subcontextos.';
 $string['auth_ldap_search_sub_key'] = 'Cerca subcontextos';
 $string['auth_ldap_server_settings'] = 'Paràmetres del servidor LDAP';
+$string['auth_ldap_suspended_attribute'] = 'Opcional: Si està present, aquest atribut s\'utilitzarà per activar/suspendre el compte d\'usuari creat localment.';
+$string['auth_ldap_suspended_attribute_key'] = 'Atribut «suspès»';
 $string['auth_ldap_unsupportedusertype'] = 'auth: ldap user_create() no és ara per ara compatible amb el tipus d\'usuari seleccionat:{$a}';
 $string['auth_ldap_update_userinfo'] = 'Actualitzeu la informació dels usuaris (nom, cognoms, adreça...) d\'LDAP a Moodle. Especifiqueu els paràmetres de «Mapatge de dades» segons les vostres necessitats.';
 $string['auth_ldap_user_attribute'] = 'Opcional: substitueix l\'atribut utilitzat per anomenar/cercar usuaris. Generalment \'cn\'.';
@@ -140,6 +142,7 @@ $string['renamingnotallowed'] = 'No està permés en LDAP canviar el nom a l\'us
 $string['rootdseerror'] = 'Error de consulta rootDSE per al directori actiu.';
 $string['start_tls'] = 'Usa el servei LDAP regular (port 389) amb xifrat TLS';
 $string['start_tls_key'] = 'Usa TLS';
+$string['synctask'] = 'Tasca de sincronització dels usuaris LDAP';
 $string['updatepasserror'] = 'Error en user_update_password(). Codi d\'error: {$a->errno}; Cadena d\'error: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Error en user_update_password() quan es llegia el temps d\'expiració de la contrasenya. Codi d\'error: {$a->errno}; Cadena d\'error: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Error en user_update_password() quan s\'estava modificant l\'«expirationtime» i/o el «gracelogins». Codi d\'error: {$a->errno}; Cadena d\'error: {$a->errstring}';

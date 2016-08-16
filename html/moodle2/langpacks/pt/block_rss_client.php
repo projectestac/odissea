@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Editar listas RSS';
 $string['editrssblock'] = 'Editar bloco de cabeçalhos RSS';
 $string['enableautodiscovery'] = 'Ativar autodescoberta de listas RSS?';
 $string['enableautodiscovery_help'] = 'Se ativar esta opção, as listas RSS a exibir numa página são encontrados automaticamente. Por exemplo se inserir http://docs.moodle.org, então http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss é encontrado.';
-$string['errorloadingfeed'] = 'Ocorreu um erro ao descarregar a lista RSS ({$a})';
 $string['feed'] = 'Lista';
 $string['feedadded'] = 'Adicionada lista RSS';
 $string['feeddeleted'] = 'Lista RSS removida';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Criar lista RSS privada';
 $string['rss_client:createsharedfeeds'] = 'Criar lista RSS partilhada';
 $string['rss_client:manageanyfeeds'] = 'Gerir todas as listas RSS';
 $string['rss_client:manageownfeeds'] = 'Gerir listas RSS próprias';
-$string['rss_client:myaddinstance'] = 'Adicionar um novo bloco Lista RSS à Minha página principal';
+$string['rss_client:myaddinstance'] = 'Adicionar um novo bloco Lista RSS ao Painel do utilizador';
 $string['seeallfeeds'] = 'Ver todas as listas RSS';
 $string['sharedfeed'] = 'Lista RSS partilhada';
 $string['shownumentrieslabel'] = 'Número máximo de notícias a exibir por lista RSS';

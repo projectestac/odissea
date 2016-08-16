@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_settings', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_settings
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'Utzi erabiltzaileari blokea ertzera eramaten';
 $string['pluginname'] = 'Kudeaketa';
 $string['settings:addinstance'] = 'Gehitu ezarpenak blokea';
-$string['settings:myaddinstance'] = 'Gehitu ezarpenak bloke berria Nire hasieran';
+$string['settings:myaddinstance'] = 'Gehitu ezarpenak bloke berria aginte-panelean';

@@ -28,6 +28,7 @@ Feature: In a book, create chapters and sub chapters
       | Chapter title | Dummy first chapter |
       | Content | Dream is the start of a journey |
     And I press "Save changes"
+    And I should see "1 Dummy first chapter" in the "Table of contents" "block"
     And I click on "Add new chapter" "link" in the "Table of contents" "block"
     And I set the following fields to these values:
       | Chapter title | Dummy second chapter |
@@ -67,12 +68,12 @@ Feature: In a book, create chapters and sub chapters
       | Content | Dream is the start of a journey |
     And I press "Save changes"
     And I should see "1 Dummy first chapter" in the "Table of contents" "block"
-    And "Edit" "link" should exist in the "Table of contents" "block"
-    And "Delete" "link" should exist in the "Table of contents" "block"
-    And "Hide" "link" should exist in the "Table of contents" "block"
+    And "Edit chapter \"1 Dummy first chapter\"" "link" should exist in the "Table of contents" "block"
+    And "Delete chapter \"1 Dummy first chapter\"" "link" should exist in the "Table of contents" "block"
+    And "Hide chapter \"1 Dummy first chapter\"" "link" should exist in the "Table of contents" "block"
     And "Add new chapter" "link" should exist in the "Table of contents" "block"
     When I click on "Turn editing off" "link" in the "Administration" "block"
-    Then "Edit" "link" should not exist in the "Table of contents" "block"
-    And "Delete" "link" should not exist in the "Table of contents" "block"
-    And "Hide" "link" should not exist in the "Table of contents" "block"
+    Then "Edit chapter \"1 Dummy first chapter\"" "link" should not exist in the "Table of contents" "block"
+    And "Delete chapter \"1 Dummy first chapter\"" "link" should not exist in the "Table of contents" "block"
+    And "Hide chapter \"1 Dummy first chapter\"" "link" should not exist in the "Table of contents" "block"
     And "Add new chapter" "link" should not exist in the "Table of contents" "block"

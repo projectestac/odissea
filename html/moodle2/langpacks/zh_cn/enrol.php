@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = '可选的选课插件';
 $string['addinstance'] = '添加方法';
+$string['addinstanceanother'] = '添加方法并创建另一个';
 $string['ajaxnext25'] = '下25个...';
 $string['ajaxoneuserfound'] = '找到1个用户';
 $string['ajaxxusersfound'] = '找到{$a}个用户';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = '在此课程中创建群同步选课实例出错�
 $string['errorenrolcohortusers'] = '群成员选修此课出错。';
 $string['errorthresholdlow'] = '选课通知间隔不能少于一天。';
 $string['errorwithbulkoperation'] = '批量更改选课时出错了。';
+$string['eventenrolinstancecreated'] = '创建报名实例';
+$string['eventenrolinstancedeleted'] = '删除报名实例';
+$string['eventenrolinstanceupdated'] = '更新报名实例';
 $string['eventuserenrolmentcreated'] = '用户报名课程';
 $string['eventuserenrolmentdeleted'] = '用户取消报名课程';
 $string['eventuserenrolmentupdated'] = '用户取消报名更新';
@@ -80,7 +84,7 @@ $string['expirynotify'] = '选课过期前进行通知';
 $string['expirynotifyall'] = '未选和已选课的用户';
 $string['expirynotifyenroller'] = '未选课用户';
 $string['expirynotify_help'] = '这个设置用于确定在课过期的消息是否发送。';
-$string['expirynotifyhour'] = '选课过期钱多少小时进行通知';
+$string['expirynotifyhour'] = '在几小时前，发出选课过期通知';
 $string['expirythreshold'] = '选课过期通知时限';
 $string['expirythreshold_help'] = '在选课过期前多久用户应该被通知到？';
 $string['extremovedaction'] = '外部撤销选课动作';
@@ -90,7 +94,8 @@ $string['extremovedsuspend'] = '禁用选课';
 $string['extremovedsuspendnoroles'] = '禁用选课并删除角色';
 $string['extremovedunenrol'] = '撤销选课';
 $string['finishenrollingusers'] = '结束';
-$string['foundxcohorts'] = '找到 {$a} 群组';
+$string['foundxcohorts'] = '找到 {$a}群';
+$string['instanceadded'] = '方法已添加';
 $string['instanceeditselfwarning'] = '警告：';
 $string['instanceeditselfwarningtext'] = '您已使用这个报名方式报名此课程，可能会对您访问课程产生影响。';
 $string['invalidenrolinstance'] = '无效的选课实例';
@@ -100,6 +105,7 @@ $string['manageinstance'] = '管理';
 $string['migratetomanual'] = '合并到手动选课';
 $string['nochange'] = '无变化';
 $string['noexistingparticipants'] = '没有任何人加入';
+$string['nogroup'] = '没有组';
 $string['noguestaccess'] = '访客不能访问此课程，请登录。';
 $string['none'] = '无';
 $string['notenrollable'] = '此课程现在不可自助选课。';
@@ -112,6 +118,7 @@ $string['periodend'] = '直到{$a}';
 $string['periodnone'] = '已选课 {$a}';
 $string['periodstart'] = '从{$a}';
 $string['periodstartend'] = '从{$a->start}到{$a->end}';
+$string['proceedtocourse'] = '继续执行教程内容';
 $string['recovergrades'] = '尽可能恢复用户的旧成绩';
 $string['rolefromcategory'] = '{$a->role}（继承自课程分类）';
 $string['rolefrommetacourse'] = '{$a->role}（继承自父课程）';
@@ -119,6 +126,8 @@ $string['rolefromsystem'] = '{$a->role}（网站级的分配）';
 $string['rolefromthiscourse'] = '{$a->role}（课程内的分配）';
 $string['startdatetoday'] = '今天';
 $string['synced'] = '已同步';
+$string['testsettings'] = '测试设置';
+$string['testsettingsheading'] = '测试注册设置方式 {$a}';
 $string['totalenrolledusers'] = '{$a}名已选课用户';
 $string['totalotherusers'] = '{$a}名其他用户';
 $string['unassignnotpermitted'] = '您没有在此课程撤销角色的权限';
@@ -127,6 +136,7 @@ $string['unenrolconfirm'] = '您确定要从课程“{$a->course}”撤销用户
 $string['unenrolme'] = '从{$a}撤销选课';
 $string['unenrolnotpermitted'] = '您无权或不能撤销此用户的选课。';
 $string['unenrolroleusers'] = '撤销用户的选课';
+$string['uninstallmigrating'] = '迁移 "{$a}" 选课';
 $string['unknowajaxaction'] = '未知的动作请求';
 $string['unlimitedduration'] = '无限';
 $string['usersearch'] = '搜索';

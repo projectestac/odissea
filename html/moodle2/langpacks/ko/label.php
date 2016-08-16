@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['modulename_help'] = '표지는 강좌 페이지에 활동 연결고리�
 $string['modulenameplural'] = '표지모음';
 $string['pluginadministration'] = '표지 관리';
 $string['pluginname'] = '표지';
+$string['search:activity'] = '표지';

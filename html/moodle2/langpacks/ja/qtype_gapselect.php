@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_gapselect', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,8 +41,8 @@ $string['pleaseputananswerineachbox'] = 'それぞれのテキストボックス
 $string['pluginname'] = 'ミッシングワード選択';
 $string['pluginnameadding'] = 'ミッシングワード選択問題の追加';
 $string['pluginnameediting'] = 'ミッシングワード選択問題の編集';
-$string['pluginname_help'] = '「[[1]] は [[2]] を飛び越えました」のような問題テキストを記述して、空白1および空白2に使用できる言葉を以下で入力してください。';
-$string['pluginnamesummary'] = 'ドロップダウンメニューを使ってテキスト内のミッシングワードを埋めます。';
+$string['pluginname_help'] = 'ミッシングワード問題ではドロップダウンメニューから選択すためにレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して、[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。問題を難しくするため、さらに答えの選択肢を追加することができます。それぞれのドロップダウンメニューで利用できる答えを制限するため、答えの選択肢をグループ分けすることができます。';
+$string['pluginnamesummary'] = 'ドロップダウンメニューを使って問題テキスト内のミッシングワードを埋めます。';
 $string['shuffle'] = 'シャッフル';
 $string['tagsnotallowed'] = '{$a->tag} は許可されません ({$a->allowed} のみ許可されています)。';
 $string['tagsnotallowedatall'] = '{$a->tag} は許可されません (ここでHTMLは許可されていません)。';

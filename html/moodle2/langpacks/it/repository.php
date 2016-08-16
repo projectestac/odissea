@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,7 +115,7 @@ $string['enternewname'] = 'Per favore insersci il nuovo nome del file';
 $string['error'] = 'Si è verificato un errore sconosciuto!';
 $string['errordoublereference'] = 'Non è possibile sovrascrivere il file con un alias/scorciatoia poiché  per questo file una scorciatoia è già esistente.';
 $string['errornotyourfile'] = 'Non puoi prelevare un file che non è stato inserito da te';
-$string['errorpostmaxsize'] = 'Il file caricato potrebbe essere più grande di quanto consentito dalla direttiva post_max_size presente nel file php.ini';
+$string['errorpostmaxsize'] = 'Il file caricato potrebbe essere più grande di quanto consentito dalla configurazione del server.';
 $string['erroruniquename'] = 'Il nome della istanza di repository deve essere unico';
 $string['errorwhilecommunicatingwith'] = 'Si è verificato un errore durante la comunicazione con il repository \'{$a}\'.';
 $string['errorwhiledownload'] = 'Si è verificato un errore durante lo scaricamento del file: {$a}';
@@ -136,7 +136,6 @@ $string['folderrecurse'] = 'La cartella non può diventare una sotto cartella di
 $string['getfile'] = 'Scegli questo file';
 $string['getfiletimeout'] = 'Timeout scaricamento file';
 $string['help'] = 'Aiuto';
-$string['hidden'] = 'Nascosto';
 $string['iconview'] = 'Visualizza icone';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'istanza';
@@ -164,6 +163,7 @@ $string['makefileinternal'] = 'Copia il file';
 $string['makefilelink'] = 'Collega direttamente il file';
 $string['makefilereference'] = 'Crea un alias/scorciatoia al file';
 $string['manage'] = 'Gestione repository';
+$string['manageinstances'] = 'Gestione istanze';
 $string['manageurl'] = 'Gestisci';
 $string['manageuserrepository'] = 'Gestisci repository individuali';
 $string['moving'] = 'Spostamento in corso';

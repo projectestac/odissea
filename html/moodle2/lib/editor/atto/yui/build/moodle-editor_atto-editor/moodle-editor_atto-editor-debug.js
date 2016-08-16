@@ -37,7 +37,8 @@ var CSS = {
         TOOLBAR: 'editor_atto_toolbar',
         WRAPPER: 'editor_atto',
         HIGHLIGHT: 'highlight'
-    };
+    },
+    rangy = window.rangy;
 
 /**
  * The Atto editor for Moodle.
@@ -599,7 +600,9 @@ EditorNotify.prototype = {
         this.hideTimer = Y.later(intTimeout, this, function() {
             Y.log('Hide Atto notification.', 'debug', LOGNAME_NOTIFY);
             this.hideTimer = null;
-            this.messageOverlay.hide(true);
+            if (this.messageOverlay.inDoc()) {
+                this.messageOverlay.hide(true);
+            }
         });
 
         return this;
@@ -785,19 +788,6 @@ EditorAutosave.ATTRS= {
     pageHash: {
         value: '',
         writeOnce: true
-    },
-
-    /**
-     * The relative path to the ajax script.
-     *
-     * @attribute autosaveAjaxScript
-     * @type String
-     * @default '/lib/editor/atto/autosave-ajax.php'
-     * @readOnly
-     */
-    autosaveAjaxScript: {
-        value: '/lib/editor/atto/autosave-ajax.php',
-        readOnly: true
     }
 };
 
@@ -820,6 +810,14 @@ EditorAutosave.prototype = {
     autosaveInstance: null,
 
     /**
+     * Autosave Timer.
+     *
+     * @property autosaveTimer
+     * @type object
+     */
+    autosaveTimer: null,
+
+    /**
      * Initialize the autosave process
      *
      * @method setupAutosave
@@ -829,7 +827,8 @@ EditorAutosave.prototype = {
         var draftid = -1,
             form,
             optiontype = null,
-            options = this.get('filepickeroptions');
+            options = this.get('filepickeroptions'),
+            params;
 
         if (!this.get('autosaveEnabled')) {
             // Autosave disabled for this instance.
@@ -845,95 +844,72 @@ EditorAutosave.prototype = {
 
         // First see if there are any saved drafts.
         // Make an ajax request.
-        url = M.cfg.wwwroot + this.get('autosaveAjaxScript');
         params = {
-            sesskey: M.cfg.sesskey,
             contextid: this.get('contextid'),
             action: 'resume',
-            drafttext: '',
             draftid: draftid,
             elementid: this.get('elementid'),
             pageinstance: this.autosaveInstance,
             pagehash: this.get('pageHash')
         };
 
-        Y.io(url, {
-            method: 'POST',
-            data: params,
-            context: this,
-            on: {
-                success: function(id,o) {
-                    if (typeof o.responseText !== "undefined" && o.responseText !== "") {
-                        response_json = JSON.parse(o.responseText);
-
-                        // Revert untouched editor contents to an empty string.
-                        // Check for FF and Chrome.
-                        if (response_json.result === '<p></p>' || response_json.result === '<p><br></p>' ||
-                            response_json.result === '<br>') {
-                            response_json.result = '';
-                        }
-
-                        // Check for IE 9 and 10.
-                        if (response_json.result === '<p>&nbsp;</p>' || response_json.result === '<p><br>&nbsp;</p>') {
-                            response_json.result = '';
-                        }
-
-                        if (response_json.error || typeof response_json.result === 'undefined') {
-                            Y.log('Error occurred recovering draft text: ' + response_json.error, 'debug', LOGNAME_AUTOSAVE);
-                            this.showMessage(M.util.get_string('errortextrecovery', 'editor_atto'), NOTIFY_WARNING, RECOVER_MESSAGE_TIMEOUT);
-                        } else if (response_json.result !== this.textarea.get('value') &&
-                                response_json.result !== '') {
-                            Y.log('Autosave text found - recover it.', 'debug', LOGNAME_AUTOSAVE);
-                            this.recoverText(response_json.result);
-                        }
-                        this._fireSelectionChanged();
-                    }
-                },
-                failure: function() {
-                    this.showMessage(M.util.get_string('errortextrecovery', 'editor_atto'), NOTIFY_WARNING, RECOVER_MESSAGE_TIMEOUT);
+        this.autosaveIo(params, this, {
+            success: function(response) {
+                if (response === null) {
+                    // This can happen when there is nothing to resume from.
+                    return;
+                } else if (!response) {
+                    Y.log('Invalid response received.', 'debug', LOGNAME_AUTOSAVE);
+                    return;
                 }
+
+                // Revert untouched editor contents to an empty string.
+                // Check for FF and Chrome.
+                if (response.result === '<p></p>' || response.result === '<p><br></p>' ||
+                    response.result === '<br>') {
+                    response.result = '';
+                }
+
+                // Check for IE 9 and 10.
+                if (response.result === '<p>&nbsp;</p>' || response.result === '<p><br>&nbsp;</p>') {
+                    response.result = '';
+                }
+
+                if (response.error || typeof response.result === 'undefined') {
+                    Y.log('Error occurred recovering draft text: ' + response.error, 'debug', LOGNAME_AUTOSAVE);
+                    this.showMessage(M.util.get_string('errortextrecovery', 'editor_atto'),
+                            NOTIFY_WARNING, RECOVER_MESSAGE_TIMEOUT);
+                } else if (response.result !== this.textarea.get('value') &&
+                        response.result !== '') {
+                    Y.log('Autosave text found - recover it.', 'debug', LOGNAME_AUTOSAVE);
+                    this.recoverText(response.result);
+                }
+                this._fireSelectionChanged();
+
+            },
+            failure: function() {
+                this.showMessage(M.util.get_string('errortextrecovery', 'editor_atto'),
+                        NOTIFY_WARNING, RECOVER_MESSAGE_TIMEOUT);
             }
         });
 
         // Now setup the timer for periodic saves.
-
         var delay = parseInt(this.get('autosaveFrequency'), 10) * 1000;
-        Y.later(delay, this, this.saveDraft, false, true);
+        this.autosaveTimer = Y.later(delay, this, this.saveDraft, false, true);
 
         // Now setup the listener for form submission.
         form = this.textarea.ancestor('form');
         if (form) {
-            form.on('submit', this.resetAutosave, this);
+            this.autosaveIoOnSubmit(form, {
+                action: 'reset',
+                contextid: this.get('contextid'),
+                elementid: this.get('elementid'),
+                pageinstance: this.autosaveInstance,
+                pagehash: this.get('pageHash')
+            });
         }
         return this;
     },
-
-    /**
-     * Clear the autosave text because the form was submitted normally.
-     *
-     * @method resetAutosave
-     * @chainable
-     */
-    resetAutosave: function() {
-        // Make an ajax request to reset the autosaved text.
-        url = M.cfg.wwwroot + this.get('autosaveAjaxScript');
-        params = {
-            sesskey: M.cfg.sesskey,
-            contextid: this.get('contextid'),
-            action: 'reset',
-            elementid: this.get('elementid'),
-            pageinstance: this.autosaveInstance,
-            pagehash: this.get('pageHash')
-        };
-
-        Y.io(url, {
-            method: 'POST',
-            data: params,
-            sync: true
-        });
-        return this;
-    },
-
 
     /**
      * Recover a previous version of this text and show a message.
@@ -948,7 +924,8 @@ EditorAutosave.prototype = {
         this.updateOriginal();
         this.lastText = text;
 
-        this.showMessage(M.util.get_string('textrecovered', 'editor_atto'), NOTIFY_INFO, RECOVER_MESSAGE_TIMEOUT);
+        this.showMessage(M.util.get_string('textrecovered', 'editor_atto'),
+                NOTIFY_INFO, RECOVER_MESSAGE_TIMEOUT);
 
         return this;
     },
@@ -960,6 +937,13 @@ EditorAutosave.prototype = {
      * @chainable
      */
     saveDraft: function() {
+        var url, params;
+
+        if (!this.editor.getDOMNode()) {
+            // Stop autosaving if the editor was removed from the page.
+            this.autosaveTimer.cancel();
+            return;
+        }
         // Only copy the text from the div to the textarea if the textarea is not currently visible.
         if (!this.editor.get('hidden')) {
             this.updateOriginal();
@@ -982,28 +966,23 @@ EditorAutosave.prototype = {
             };
 
             // Reusable error handler - must be passed the correct context.
-            var ajaxErrorFunction = function(code, response) {
+            var ajaxErrorFunction = function(response) {
                 var errorDuration = parseInt(this.get('autosaveFrequency'), 10) * 1000;
-                Y.log('Error while autosaving text:' + code, 'warn', LOGNAME_AUTOSAVE);
+                Y.log('Error while autosaving text', 'warn', LOGNAME_AUTOSAVE);
                 Y.log(response, 'warn', LOGNAME_AUTOSAVE);
                 this.showMessage(M.util.get_string('autosavefailed', 'editor_atto'), NOTIFY_WARNING, errorDuration);
             };
 
-            Y.io(url, {
-                method: 'POST',
-                data: params,
-                context: this,
-                on: {
-                    error: ajaxErrorFunction,
-                    failure: ajaxErrorFunction,
-                    success: function(code, response) {
-                        if (response.responseText !== "") {
-                            Y.soon(Y.bind(ajaxErrorFunction, this, [code, response]));
-                        } else {
-                            // All working.
-                            this.lastText = newText;
-                            this.showMessage(M.util.get_string('autosavesucceeded', 'editor_atto'), NOTIFY_INFO, SUCCESS_MESSAGE_TIMEOUT);
-                        }
+            this.autosaveIo(params, this, {
+                failure: ajaxErrorFunction,
+                success: function(response) {
+                    if (response && response.error) {
+                        Y.soon(Y.bind(ajaxErrorFunction, this, [response]));
+                    } else {
+                        // All working.
+                        this.lastText = newText;
+                        this.showMessage(M.util.get_string('autosavesucceeded', 'editor_atto'),
+                                NOTIFY_INFO, SUCCESS_MESSAGE_TIMEOUT);
                     }
                 }
             });
@@ -1013,6 +992,250 @@ EditorAutosave.prototype = {
 };
 
 Y.Base.mix(Y.M.editor_atto.Editor, [EditorAutosave]);
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * A autosave function for the Atto editor.
+ *
+ * @module     moodle-editor_atto-autosave-io
+ * @submodule  autosave-io
+ * @package    editor_atto
+ * @copyright  2016 Frédéric Massart
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+var EditorAutosaveIoDispatcherInstance = null;
+
+function EditorAutosaveIoDispatcher() {
+    EditorAutosaveIoDispatcher.superclass.constructor.apply(this, arguments);
+    this._submitEvents = {};
+    this._queue = [];
+    this._throttle = null;
+}
+EditorAutosaveIoDispatcher.NAME = 'EditorAutosaveIoDispatcher';
+EditorAutosaveIoDispatcher.ATTRS = {
+
+    /**
+     * The relative path to the ajax script.
+     *
+     * @attribute autosaveAjaxScript
+     * @type String
+     * @default '/lib/editor/atto/autosave-ajax.php'
+     * @readOnly
+     */
+    autosaveAjaxScript: {
+        value: '/lib/editor/atto/autosave-ajax.php',
+        readOnly: true
+    },
+
+    /**
+     * The time buffer for the throttled requested.
+     *
+     * @attribute delay
+     * @type Number
+     * @default 50
+     * @readOnly
+     */
+    delay: {
+        value: 50,
+        readOnly: true
+    }
+
+};
+Y.extend(EditorAutosaveIoDispatcher, Y.Base, {
+
+    /**
+     * Dispatch an IO request.
+     *
+     * This method will put the requests in a queue in order to attempt to bulk them.
+     *
+     * @param  {Object} params    The parameters of the request.
+     * @param  {Object} context   The context in which the callbacks are called.
+     * @param  {Object} callbacks Object with 'success', 'complete', 'end', 'failure' and 'start' as
+     *                            optional keys defining the callbacks to call. Success and Complete
+     *                            functions will receive the response as parameter. Success and Complete
+     *                            may receive an object containing the error key, use this to confirm
+     *                            that no errors occured.
+     * @return {Void}
+     */
+    dispatch: function(params, context, callbacks) {
+        if (this._throttle) {
+            this._throttle.cancel();
+        }
+
+        this._throttle = Y.later(this.get('delay'), this, this._processDispatchQueue);
+        this._queue.push([params, context, callbacks]);
+    },
+
+    /**
+     * Dispatches the requests in the queue.
+     *
+     * @return {Void}
+     */
+    _processDispatchQueue: function() {
+        var queue = this._queue,
+            data = {};
+
+        this._queue = [];
+        if (queue.length < 1) {
+            return;
+        }
+
+        Y.Array.each(queue, function(item, index) {
+            data[index] = item[0];
+        });
+
+        Y.io(M.cfg.wwwroot + this.get('autosaveAjaxScript'), {
+            method: 'POST',
+            data: Y.QueryString.stringify({
+                actions: data,
+                sesskey: M.cfg.sesskey
+            }),
+            on: {
+                start: this._makeIoEventCallback('start', queue),
+                complete: this._makeIoEventCallback('complete', queue),
+                failure: this._makeIoEventCallback('failure', queue),
+                end: this._makeIoEventCallback('end', queue),
+                success: this._makeIoEventCallback('success', queue)
+            }
+        });
+    },
+
+    /**
+     * Creates a function that dispatches an IO response to callbacks.
+     *
+     * @param  {String} event The type of event.
+     * @param  {Array} queue The queue.
+     * @return {Function}
+     */
+    _makeIoEventCallback: function(event, queue) {
+        var noop = function() {};
+        return function() {
+            var response = arguments[1],
+                parsed = {};
+
+            if ((event == 'complete' || event == 'success') && (typeof response !== 'undefined'
+                    && typeof response.responseText !== 'undefined' && response.responseText !== '')) {
+
+                // Success and complete events need to parse the response.
+                parsed = JSON.parse(response.responseText) || {};
+            }
+
+            Y.Array.each(queue, function(item, index) {
+                var context = item[1],
+                    cb = (item[2] && item[2][event]) || noop,
+                    arg;
+
+                if (parsed && parsed.error) {
+                    // The response is an error, we send it to everyone.
+                    arg = parsed;
+                } else if (parsed) {
+                    // The response was parsed, we only communicate the relevant portion of the response.
+                    arg = parsed[index];
+                }
+
+                cb.apply(context, [arg]);
+            });
+        };
+    },
+
+    /**
+     * Form submit handler.
+     *
+     * @param  {EventFacade} e The event.
+     * @return {Void}
+     */
+    _onSubmit: function(e) {
+        var data = {},
+            id = e.currentTarget.generateID(),
+            params = this._submitEvents[id];
+
+        if (!params || params.ios.length < 1) {
+            return;
+        }
+
+        Y.Array.each(params.ios, function(param, index) {
+            data[index] = param;
+        });
+
+        Y.io(M.cfg.wwwroot + this.get('autosaveAjaxScript'), {
+            method: 'POST',
+            data: Y.QueryString.stringify({
+                actions: data,
+                sesskey: M.cfg.sesskey
+            }),
+            sync: true
+        });
+    },
+
+    /**
+     * Registers a request to be made on form submission.
+     *
+     * @param  {Node} node The forum node we will listen to.
+     * @param  {Object} params Parameters for the IO request.
+     * @return {Void}
+     */
+    whenSubmit: function(node, params) {
+        if (typeof this._submitEvents[node.generateID()] === 'undefined') {
+            this._submitEvents[node.generateID()] = {
+                event: node.on('submit', this._onSubmit, this),
+                ios: []
+            };
+        }
+        this._submitEvents[node.get('id')].ios.push([params]);
+    }
+
+});
+EditorAutosaveIoDispatcherInstance = new EditorAutosaveIoDispatcher();
+
+
+function EditorAutosaveIo() {}
+EditorAutosaveIo.prototype = {
+
+    /**
+     * Dispatch an IO request.
+     *
+     * This method will put the requests in a queue in order to attempt to bulk them.
+     *
+     * @param  {Object} params    The parameters of the request.
+     * @param  {Object} context   The context in which the callbacks are called.
+     * @param  {Object} callbacks Object with 'success', 'complete', 'end', 'failure' and 'start' as
+     *                            optional keys defining the callbacks to call. Success and Complete
+     *                            functions will receive the response as parameter. Success and Complete
+     *                            may receive an object containing the error key, use this to confirm
+     *                            that no errors occured.
+     * @return {Void}
+     */
+    autosaveIo: function(params, context, callbacks) {
+        EditorAutosaveIoDispatcherInstance.dispatch(params, context, callbacks);
+    },
+
+    /**
+     * Registers a request to be made on form submission.
+     *
+     * @param  {Node} form The forum node we will listen to.
+     * @param  {Object} params Parameters for the IO request.
+     * @return {Void}
+     */
+    autosaveIoOnSubmit: function(form, params) {
+        EditorAutosaveIoDispatcherInstance.whenSubmit(form, params);
+    }
+
+};
+Y.Base.mix(Y.M.editor_atto.Editor, [EditorAutosaveIo]);
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -1305,6 +1528,8 @@ EditorClean.prototype = {
             {regex: /(<[^>]*?style\s*?=\s*?")([^>"]*)(")/gi, replace: function(match, group1, group2, group3) {
                     // Remove MSO-blah, MSO:blah style attributes.
                     group2 = group2.replace(/(?:^|;)[\s]*MSO[-:](?:&[\w]*;|[^;"])*/gi,"");
+                    // Remove backgroud color style.
+                    group2 = group2.replace(/background-color:.*?;/gi,"");
                     return group1 + group2 + group3;
                 }},
             // Get all class attributes so we can work on them.
@@ -1805,7 +2030,7 @@ EditorToolbarNav.prototype = {
             if (this._tabFocus.hasAttribute('disabled') || this._tabFocus.hasAttribute('hidden')
                     || this._tabFocus.ancestor('.atto_group').hasAttribute('hidden')) {
                 // Find first available button.
-                button = this._findFirstFocusable(this.toolbar.all('button'), this._tabFocus, -1);
+                var button = this._findFirstFocusable(this.toolbar.all('button'), this._tabFocus, -1);
                 if (button) {
                     if (this._tabFocus.compareTo(document.activeElement)) {
                         // We should also move the focus, because the inaccessible button also has the focus.
@@ -1911,6 +2136,16 @@ EditorSelection.prototype = {
     _focusFromClick: false,
 
     /**
+     * Whether if the last gesturemovestart event target was contained in this editor or not.
+     *
+     * @property _gesturestartededitor
+     * @type Boolean
+     * @default false
+     * @private
+     */
+    _gesturestartededitor: false,
+
+    /**
      * Set up the watchers for selection save and restoration.
      *
      * @method setupSelectionWatchers
@@ -1940,13 +2175,24 @@ EditorSelection.prototype = {
                 Y.soon(Y.bind(this._hasSelectionChanged, this, e));
             }, this);
 
-        // To capture both mouseup and touchend events, we need to track the gesturemoveend event in standAlone mode. Without
-        // standAlone, it will only fire if we listened to a gesturemovestart too.
-        this.editor.on('gesturemoveend', function(e) {
-                Y.soon(Y.bind(this._hasSelectionChanged, this, e));
-            }, {
-                standAlone: true
-            }, this);
+        Y.one(document.body).on('gesturemovestart', function(e) {
+            if (this._wrapper.contains(e.target._node)) {
+                this._gesturestartededitor = true;
+            } else {
+                this._gesturestartededitor = false;
+            }
+        }, null, this);
+
+        Y.one(document.body).on('gesturemoveend', function(e) {
+            if (!this._gesturestartededitor) {
+                // Ignore the event if movestart target was not contained in the editor.
+                return;
+            }
+            Y.soon(Y.bind(this._hasSelectionChanged, this, e));
+        }, {
+            // Standalone will make sure all editors receive the end event.
+            standAlone: true
+        }, this);
 
         return this;
     },
@@ -2332,7 +2578,7 @@ EditorStyling.prototype = {
      */
     toggleInlineSelectionClass: function(toggleclasses) {
         var classname = toggleclasses.join(" ");
-        var cssApplier = rangy.createCssClassApplier(classname, {normalize: true});
+        var cssApplier = rangy.createClassApplier(classname, {normalize: true});
 
         cssApplier.toggleSelection();
     },
@@ -2347,7 +2593,7 @@ EditorStyling.prototype = {
      */
     formatSelectionInlineStyle: function(styles) {
         var classname = this.PLACEHOLDER_CLASS;
-        var cssApplier = rangy.createCssClassApplier(classname, {normalize: true});
+        var cssApplier = rangy.createClassApplier(classname, {normalize: true});
 
         cssApplier.applyToSelection();
 
@@ -2560,6 +2806,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorFilepicker]);
         "moodle-core-notification-confirm",
         "moodle-editor_atto-rangy",
         "handlebars",
-        "timers"
+        "timers",
+        "querystring-stringify"
     ]
 });

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'Blog zu {$a->type}';
 $string['blogaboutthiscourse'] = 'Beitrag zu diesem Kurs hinzufügen';
 $string['blogaboutthismodule'] = 'Beitrag zu {$a} hinzufügen';
 $string['blogadministration'] = 'Blogadministration';
-$string['blogdeleteconfirm'] = 'Diesen Blogeintrag löschen?';
+$string['blogdeleteconfirm'] = 'Diesen Blogeintrag (\'{$a}\') löschen?';
 $string['blogdisable'] = 'Blogs sind deaktiviert!';
 $string['blogentries'] = 'Blogeinträge';
 $string['blogentriesabout'] = 'Blogeinträge zu {$a}';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Blogfunktion ist nicht aktiviert';
 $string['courseblogs'] = 'Blogs von anderen im Kurs';
 $string['deleteblogassociations'] = 'Blogverbindungen löschen';
 $string['deleteblogassociations_help'] = 'Wenn diese Option aktiviert wird, sind Blogeinträge nicht länger mit diesem Kurs, einer Kursaktivität oder einem Kursmaterial verbunden. Die Blogeinträge selber werden nicht gelöscht.';
+$string['deleteentry'] = 'Eintrag löschen';
 $string['deleteexternalblog'] = 'Diesen externen Blog trennen';
 $string['deleteotagswarn'] = 'Möchten Sie wirklich diese Schlagwörter aus allen Blogeinträgen und aus dem System entfernen?';
 $string['description'] = 'Beschreibung';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'Ungültige Gruppen-ID';
 $string['invalidurl'] = 'URL ist nicht erreichbar';
 $string['linktooriginalentry'] = 'Zum ursprünglichen Blogeintrag verlinken';
 $string['maxexternalblogsperuser'] = 'Maximale Anzahl externer Blogs pro Nutzer/in';
+$string['myprofileuserblogs'] = 'Alle Blogbeiträge anzeigen';
 $string['name'] = 'Name';
 $string['name_help'] = 'Geben Sie einen beschreibenden Namen für Ihren externen Blog an. Falls kein Name eingetragen ist, wird der Titel des externen Blogs benutzt.';
 $string['noentriesyet'] = 'Keine sichtbaren Beiträge';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Alle Blogseiten';
 $string['pagesize'] = 'Zahl der Blogeinträge pro Seite';
 $string['permalink'] = 'Dauerlink';
 $string['personalblogs'] = 'Nach Anmeldung nur eigener Blog sichtbar';
-$string['preferences'] = 'Einstellungen';
+$string['preferences'] = 'Blogeinstellungen';
 $string['publishto'] = 'Veröffentlichen für';
 $string['publishtocourse'] = 'Mitglieder in gemeinsamen Kursen';
 $string['publishtocourseassoc'] = 'Mitglieder des verbundenen Kurses';
@@ -151,6 +153,7 @@ $string['searchterm'] = 'Suche: {$a}';
 $string['settingsupdatederror'] = 'Fehler: Die Blogeinstellungen konnten nicht aktualisiert werden.';
 $string['siteblog'] = 'Website-Blog: {$a}';
 $string['siteblogdisable'] = 'Website-Blogs wurden nicht aktiviert';
+$string['siteblogheading'] = 'Website-Blog';
 $string['siteblogs'] = 'Nach Anmeldung auf der Website sichtbar';
 $string['tagdatelastused'] = 'Tag der letzten Nutzung des Schlagworts';
 $string['tagparam'] = 'Schlagwort: {$a}';

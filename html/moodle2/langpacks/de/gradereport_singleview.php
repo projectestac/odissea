@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['bulkfor'] = 'Bewertungen für {$a}';
 $string['bulkinsertvalue'] = 'Wert einfügen';
 $string['bulklegend'] = 'Mengeneintrag';
 $string['bulkperform'] = 'Mengeneintrag ausführen';
+$string['entrypage'] = 'Teilnehmer/in oder Element bewerten';
 $string['eventgradereportviewed'] = 'Bewertungsbericht mit Einzelbildansichten angezeigt';
 $string['exclude'] = 'Ausschließen';
 $string['excludeall'] = 'Alle Bewertungen ausschließen';
@@ -41,7 +42,9 @@ $string['excludenone'] = 'Keine Bewertungen ausschließen';
 $string['feedbackfor'] = 'Feedback für {$a}';
 $string['filtergrades'] = 'Bewertungen für {$a} anzeigen.';
 $string['gradefor'] = 'Bewertung für {$a}';
+$string['gradeitem'] = 'Element bewerten: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Diese Bewertung kann nicht überschrieben werden.';
+$string['gradeuser'] = 'Nutzer/in bewerten: {$a}';
 $string['noscreens'] = 'Es konnte keine passende Einzelansicht gefunden werden.';
 $string['notvalid'] = 'Keine gültige Einzelbildansicht: {$a}';
 $string['override'] = 'Überschreiben';
@@ -49,8 +52,12 @@ $string['overrideall'] = 'Alle Bewertungen überschreiben';
 $string['overridefor'] = 'Überschreiben für {$a}';
 $string['overridenone'] = 'Keine Bewertungen überschreiben';
 $string['pluginname'] = 'Einzelansicht';
+$string['save'] = 'Sichern';
 $string['savegrades'] = 'Bewertungen werden gesichert';
 $string['savegradessuccess'] = 'Bewertungen werden für {$a} Werte gesetzt.';
+$string['selectgrade'] = 'Element auswählen...';
+$string['selectuser'] = 'Nutzer/in auswählen...';
 $string['singleview:view'] = 'Berichtsansicht';
 $string['summarygrade'] = 'Eine Tabelle der Nutzer mit Spalten für Rang. Bewertung, Feedback und der Definition, ob ein Eintrag überschrieben oder für eine Bewertung ausgelassen werden soll.';
 $string['summaryuser'] = 'Eine Tabelle der Bewertungen mit Spalten für Kategorie, Rang. Bewertung, Feedback und der Definition, ob ein Eintrag überschrieben oder für eine Bewertung ausgelassen werden soll.';
+$string['userselect'] = 'Aktivität auswählen';

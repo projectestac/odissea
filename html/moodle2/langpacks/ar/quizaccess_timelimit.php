@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quizaccess_timelimit', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   quizaccess_timelimit
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmstart'] = 'هذا الاختبار محدد بوقت {$a}. سوف يبدأ العد التنازلي للوقت من لحظة البدأ في المحاولة والتي يجب أن ترسل قبل انتهاء الوقت المحدد لها. هل أنت متأكد أنك تريد بدأ الاختبارالآن؟';
+$string['confirmstartheader'] = 'اختبار مؤقت';
 $string['quiztimelimit'] = 'الوقت المحدد: {$a}';

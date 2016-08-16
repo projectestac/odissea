@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_email', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_emaildescription'] = 'يتم التوثيق عادة عبر البريد الإلكتروني، وهو الوضع الافتراضي لأسلوب التوثيق. فعندما يقوم المستخدم بالتوقيع وباختيار اسم المستخدم وكلمة المرور الخاصة به يتم إرسال رسالة توكيدية إلى عنوانه البريدي. ويحتوي البريد الإلكتروني على رابطة آمنة تؤدي إلى صفحة يستطيع المستخدم من خلالها توكيد اشتراكه. وفي حالة الدخول فيما بعد يتم التحقق من اسم المستخدم وكلمة المرور بمقابلتها بالمخزنة في قاعدة بيانات نظام Moodle..';
-$string['auth_emailnoemail'] = 'تمت محاولة إرسال بريد الإكتروني ولكنها فشلت';
+$string['auth_emailnoemail'] = 'تمت محاولة إرسال بريد إلكتروني لك ولكنها فشلت';
 $string['auth_emailrecaptcha_key'] = 'تمكين عنصر ريكاباتشا';
 $string['auth_emailsettings'] = 'الإعدادات';
 $string['pluginname'] = 'يتم التسجيل الذاتي عن طريق البريد الإلكتروني';

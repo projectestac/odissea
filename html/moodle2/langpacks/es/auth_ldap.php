@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Activar el soporte de entrada libre LDA
 $string['auth_ldap_gracelogins_key'] = 'Entradas libres';
 $string['auth_ldap_groupecreators'] = 'Lista de grupos o contextos cuyos miembros están habilitados para crear grupos. Separe los grupos con \',\'. Por ejemplo: \'cn=profesores,ou=personal,o=miorg\'';
 $string['auth_ldap_groupecreators_key'] = 'Creadores de grupo';
-$string['auth_ldap_host_url'] = 'Especificar el host LDAP en forma de URL como \'ldap://ldap.myorg.com/\' o \'ldaps://ldap.myorg.com/\'';
+$string['auth_ldap_host_url'] = 'Especificar el host LDAP en forma de URL como \'ldap://ldap.myorg.com/\' o \'ldaps://ldap.myorg.com/\'. Separar múltiples servidores con  \';\' para obtener soporte de conmutación.';
 $string['auth_ldap_host_url_key'] = 'URL  del host';
 $string['auth_ldap_ldap_encoding'] = 'Especifique la codificación usada por el servidor LDAP. Muy probablemente utf-8, MS AD v2 utiliza codificación de plataforma por defecto como cp1252, cp1250, etc.';
 $string['auth_ldap_ldap_encoding_key'] = 'Codificación LDAP';
@@ -141,6 +141,7 @@ $string['renamingnotallowed'] = 'El renombrado del nombre de usuario no está ha
 $string['rootdseerror'] = 'Error al consultar rootDSE para Active Directory';
 $string['start_tls'] = 'Utilice el servicio LDAP estándar (puerto 389) con cifrado TLS';
 $string['start_tls_key'] = 'Usar TLS';
+$string['synctask'] = 'Tarea de sincronización de usuarios LDAP';
 $string['updatepasserror'] = 'Error en user_update_password{}. Código de error: {$a->errno}. Cadena del error: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Error en user_update_password{} al leer el periodo de expiración de la contraseña.  Código de error: {$a->errno}. Cadena del error: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Error en user_update_password{} al modificar el periodo de expiración y/o los intentos de identidicación.  Código de error: {$a->errno}. Cadena del error: {$a->errstring}';

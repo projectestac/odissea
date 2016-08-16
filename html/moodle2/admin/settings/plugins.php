@@ -32,7 +32,14 @@ if ($hassiteconfig) {
 
     // activity modules
     $ADMIN->add('modules', new admin_category('modsettings', new lang_string('activitymodules')));
+
     $ADMIN->add('modsettings', new admin_page_managemods());
+
+    $temp = new admin_settingpage('managemodulescommon', new lang_string('commonactivitysettings', 'admin'));
+    $temp->add(new admin_setting_configcheckbox('requiremodintro',
+        get_string('requiremodintro', 'admin'), get_string('requiremodintro_desc', 'admin'), 0));
+    $ADMIN->add('modsettings', $temp);
+
     foreach (core_plugin_manager::instance()->get_plugins_of_type('mod') as $plugin) {
         /** @var \core\plugininfo\mod $plugin */
         $plugin->load_settings($ADMIN, 'modsettings', $hassiteconfig);
@@ -73,10 +80,17 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_heading('manageauthscommonheading', new lang_string('commonsettings', 'admin'), ''));
     $temp->add(new admin_setting_special_registerauth());
     $temp->add(new admin_setting_configcheckbox('authloginviaemail', new lang_string('authloginviaemail', 'core_auth'), new lang_string('authloginviaemail_desc', 'core_auth'), 0));
+    $temp->add(new admin_setting_configcheckbox('allowaccountssameemail',
+                    new lang_string('allowaccountssameemail', 'core_auth'),
+                    new lang_string('allowaccountssameemail_desc', 'core_auth'), 0));
     $temp->add(new admin_setting_configcheckbox('authpreventaccountcreation', new lang_string('authpreventaccountcreation', 'admin'), new lang_string('authpreventaccountcreation_help', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('loginpageautofocus', new lang_string('loginpageautofocus', 'admin'), new lang_string('loginpageautofocus_help', 'admin'), 0));
     $temp->add(new admin_setting_configselect('guestloginbutton', new lang_string('guestloginbutton', 'auth'),
                                               new lang_string('showguestlogin', 'auth'), '1', array('0'=>new lang_string('hide'), '1'=>new lang_string('show'))));
+    $options = array(0 => get_string('no'), 1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 10 => 10, 20 => 20, 50 => 50);
+    $temp->add(new admin_setting_configselect('limitconcurrentlogins',
+        new lang_string('limitconcurrentlogins', 'core_auth'),
+        new lang_string('limitconcurrentlogins_desc', 'core_auth'), 0, $options));
     $temp->add(new admin_setting_configtext('alternateloginurl', new lang_string('alternateloginurl', 'auth'),
                                             new lang_string('alternatelogin', 'auth', htmlspecialchars(get_login_url())), ''));
     $temp->add(new admin_setting_configtext('forgottenpasswordurl', new lang_string('forgottenpasswordurl', 'auth'),
@@ -124,6 +138,24 @@ if ($hassiteconfig) {
         $plugin->load_settings($ADMIN, 'editorsettings', $hassiteconfig);
     }
 
+    // Antivirus plugins.
+    //XTEC ************ AFEGIT - To let access only to xtecadmin user
+    //2016.06.09  @sarjona
+    if (get_protected_agora() ) {
+    //************ FI
+    $ADMIN->add('modules', new admin_category('antivirussettings', new lang_string('antiviruses', 'antivirus')));
+    $temp = new admin_settingpage('manageantiviruses', new lang_string('antivirussettings', 'antivirus'));
+    $temp->add(new admin_setting_manageantiviruses());
+    $ADMIN->add('antivirussettings', $temp);
+    foreach (core_plugin_manager::instance()->get_plugins_of_type('antivirus') as $plugin) {
+        /* @var \core\plugininfo\antivirus $plugin */
+        $plugin->load_settings($ADMIN, 'antivirussettings', $hassiteconfig);
+    }
+    //XTEC ************ AFEGIT - To let access only to xtecadmin user
+    //2016.06.09  @sarjona
+    }
+    //************ FI
+
 /// License types
     $ADMIN->add('modules', new admin_category('licensesettings', new lang_string('licenses')));
     $temp = new admin_settingpage('managelicenses', new lang_string('managelicenses', 'admin'));
@@ -163,6 +195,19 @@ if ($hassiteconfig) {
         $plugin->load_settings($ADMIN, 'filtersettings', $hassiteconfig);
     }
 
+    // Data format settings.
+    //XTEC ************ AFEGIT - To let access only to xtecadmin user
+    //2016.08.16  @sarjona
+    if (get_protected_agora() ) {
+    //************ FI
+    $ADMIN->add('modules', new admin_category('dataformatsettings', new lang_string('dataformats')));
+    $temp = new admin_settingpage('managedataformats', new lang_string('managedataformats'));
+    $temp->add(new admin_setting_managedataformats());
+    $ADMIN->add('dataformatsettings', $temp);
+    //XTEC ************ AFEGIT - To let access only to xtecadmin user
+    //2016.08.16  @sarjona
+    }
+    //************ FI
 
     //== Portfolio settings ==
     require_once($CFG->libdir. '/portfoliolib.php');
@@ -263,11 +308,18 @@ if ($hassiteconfig) {
     $ADMIN->add('modules', new admin_category('webservicesettings', new lang_string('webservices', 'webservice')));
     // Mobile
     $temp = new admin_settingpage('mobile', new lang_string('mobile','admin'), 'moodle/site:config', false);
-    $enablemobiledocurl = new moodle_url(get_docs_url('Enable_mobile_web_services'));
-    $enablemobiledoclink = html_writer::link($enablemobiledocurl, new lang_string('documentation'));
-    $temp->add(new admin_setting_enablemobileservice('enablemobilewebservice',
-            new lang_string('enablemobilewebservice', 'admin'),
-            new lang_string('configenablemobilewebservice', 'admin', $enablemobiledoclink), 0));
+
+    // We should wait to the installation to finish since we depend on some configuration values that are set once
+    // the admin user profile is configured.
+    if (!during_initial_install()) {
+        $enablemobiledocurl = new moodle_url(get_docs_url('Enable_mobile_web_services'));
+        $enablemobiledoclink = html_writer::link($enablemobiledocurl, new lang_string('documentation'));
+        $default = is_https() ? 1 : 0;
+        $temp->add(new admin_setting_enablemobileservice('enablemobilewebservice',
+                new lang_string('enablemobilewebservice', 'admin'),
+                new lang_string('configenablemobilewebservice', 'admin', $enablemobiledoclink), $default));
+    }
+
     $temp->add(new admin_setting_configtext('mobilecssurl', new lang_string('mobilecssurl', 'admin'), new lang_string('configmobilecssurl','admin'), '', PARAM_URL));
     $ADMIN->add('webservicesettings', $temp);
     //XTEC ************ AFEGIT - To let access only to xtecadmin user
@@ -445,6 +497,56 @@ foreach ($pages as $page) {
     $ADMIN->add('reportplugins', $page);
 }
 
+//XTEC ************ MODIFICAT - To let access only to xtecadmin user
+//2016.06.09  @sarjona
+if ($hassiteconfig && get_protected_agora() ) {
+//************ ORIGINAL
+/*
+if ($hassiteconfig) {
+*/
+//************ FI
+    // Global Search engine plugins.
+    $ADMIN->add('modules', new admin_category('searchplugins', new lang_string('search', 'admin')));
+    $temp = new admin_settingpage('manageglobalsearch', new lang_string('globalsearchmanage', 'admin'));
+
+    $pages = array();
+    $engines = array();
+    foreach (core_component::get_plugin_list('search') as $engine => $plugindir) {
+        $engines[$engine] = new lang_string('pluginname', 'search_' . $engine);
+        $settingspath = "$plugindir/settings.php";
+        if (file_exists($settingspath)) {
+            $settings = new admin_settingpage('search' . $engine,
+                    new lang_string('pluginname', 'search_' . $engine), 'moodle/site:config');
+            include($settingspath);
+            if ($settings) {
+                $pages[] = $settings;
+            }
+        }
+    }
+
+    // Setup status.
+    $temp->add(new admin_setting_searchsetupinfo());
+
+    // Search engine selection.
+    $temp->add(new admin_setting_heading('searchengineheading', new lang_string('searchengine', 'admin'), ''));
+    $temp->add(new admin_setting_configselect('searchengine',
+                                new lang_string('selectsearchengine', 'admin'), '', 'solr', $engines));
+
+    // Enable search areas.
+    $temp->add(new admin_setting_heading('searchareasheading', new lang_string('availablesearchareas', 'admin'), ''));
+    $searchareas = \core_search\manager::get_search_areas_list();
+    foreach ($searchareas as $areaid => $searcharea) {
+        list($componentname, $varname) = $searcharea->get_config_var_name();
+        $temp->add(new admin_setting_configcheckbox($componentname . '/' . $varname . '_enabled', $searcharea->get_visible_name(true),
+            '', 1, 1, 0));
+    }
+    $ADMIN->add('searchplugins', $temp);
+
+    foreach ($pages as $page) {
+        $ADMIN->add('searchplugins', $page);
+    }
+}
+
 /// Add all admin tools
 if ($hassiteconfig) {
     $ADMIN->add('modules', new admin_category('tools', new lang_string('tools', 'admin')));
@@ -484,10 +586,9 @@ if ($hassiteconfig) {
 // Add Calendar type settings.
 if ($hassiteconfig) {
     $ADMIN->add('modules', new admin_category('calendartype', new lang_string('calendartypes', 'calendar')));
-    foreach (core_component::get_plugin_list_with_file('calendartype', 'settings.php') as $plugin => $settingspath) {
-        $settings = new admin_settingpage('calendartype_' . $plugin . '_settings', new lang_string('pluginname', 'calendartype_' . $plugin), 'moodle/site:config');
-        include($settingspath);
-        $ADMIN->add('calendartype', $settings);
+    foreach (core_plugin_manager::instance()->get_plugins_of_type('calendartype') as $plugin) {
+        /** @var \core\plugininfo\calendartype $plugin */
+        $plugin->load_settings($ADMIN, 'calendartype', $hassiteconfig);
     }
 }
 

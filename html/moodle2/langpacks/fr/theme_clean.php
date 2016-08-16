@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'theme_clean', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,3 +55,8 @@ $string['logodesc'] = 'Le logo n\'est affiché que dans l\'entête de la page d\
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Droite';
 $string['region-side-pre'] = 'Gauche';
+$string['sitelogo'] = 'Logo de la plateforme';
+$string['sitename'] = 'Affiche le nom de la plateforme avec un petit logo';
+$string['sitenamedesc'] = 'S\'il n\'y a pas de petit logo, le nom de la plateforme est toujours affiché dans la barre de navigation. Si un petit logo est défini, il peut être affiché avec ou sans le nom de la plateforme.';
+$string['smalllogo'] = 'Petit logo';
+$string['smalllogodesc'] = 'Le petit logo est affiché dans la barre de navigation. Si un logo d\'entête est défini pour la page d\'accueil et la page de connexion, le petit logo n\'est pas affiché sur ces pages.';

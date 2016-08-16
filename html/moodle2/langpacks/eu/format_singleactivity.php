@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_singleactivity', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   format_singleactivity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,4 +33,4 @@ $string['erroractivitytype'] = 'Jarduera mota ez da ezarri Ikastaroaren ezarpene
 $string['orphaned'] = 'Umezurtza';
 $string['orphanedwarning'] = 'Erabiltzaileek ezin dituzte jarduera hauek aurkitu!';
 $string['pluginname'] = 'Jarduera bakarreko formatua';
-$string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Berrien foroa"ri dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';
+$string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Berriak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,26 +33,39 @@ $string['book:viewhiddenchapters'] = 'Visa dolda bokkapitel';
 $string['chapters'] = 'Kapitel';
 $string['chaptertitle'] = 'Titel på kapitel';
 $string['confchapterdelete'] = 'Är Du säker på att vill ta bort det här kapitlet?';
-$string['confchapterdeleteall'] = 'Är Du säker på att vill ta bort det här kapitlet och alla underkapitlar?';
+$string['confchapterdeleteall'] = 'Är Du säker på att vill ta bort det här kapitlet och alla underavdelningar?';
 $string['content'] = 'Innehåll';
-$string['customtitles'] = 'Anpassade titlar';
+$string['customtitles'] = 'Standardtitlar';
 $string['customtitles_help'] = 'Normalt visas kapitelrubriken i innehållsförteckningen och som rubrik ovanför innehållet. Om kryssrutan för att kunna anpassa titlar är markerad, visas kapitelrubriken inte som rubrik ovanför innehållet.
 En annan titel (kanske längre än kapitelrubriken) kan anges som en del av innehållet.';
+$string['deletechapter'] = 'Radera kapitel "{$a}"';
+$string['editchapter'] = 'Redigera kapitel "{$a}"';
 $string['editingchapter'] = 'Redigerar kapitel';
 $string['errorchapter'] = 'Fel vid läsning av bokkapitel';
 $string['eventchaptercreated'] = 'Kapitel skapat';
 $string['eventchapterdeleted'] = 'Kapitel raderat';
 $string['eventchapterupdated'] = 'Kapitel uppdaterat';
 $string['eventchapterviewed'] = 'Kapitel visat';
+$string['hidechapter'] = 'Dölj kapitel "{$a}"';
 $string['modulename'] = 'Bok';
 $string['modulename_help'] = 'Bok-modulen möjliggör för en lärare att skapa en flersidig resurs i ett bok-liknande format inklusive kapitel och underkapitel. Böcker kan innehålla media och text och är användbara för att visa långa passager av information som kan delas in i sektioner. En bok kan t.ex. användas
 * För att visa litteratur för enskilda studiemoment
 * Som en personalhandbok
 * Som en portfölj/presentation av studentarbeten';
 $string['modulenameplural'] = 'Böcker';
-$string['navexit'] = 'Stäng boken';
+$string['movechapterdown'] = 'Flytta kapitel ner "{$a}"';
+$string['movechapterup'] = 'Flytta kapitel upp "{$a}"';
+$string['navexit'] = 'Exit Book';
+$string['navimages'] = 'Bilder';
 $string['navnext'] = 'Nästa';
+$string['navoptions'] = 'Tillgängliga alternativ för navigeringslänkar';
+$string['navoptions_desc'] = 'Alternativ för visning av navigering på boksidor';
 $string['navprev'] = 'Föregående';
+$string['navstyle'] = 'Typ av navigering';
+$string['navstyle_help'] = '* Bilder - ikoner (bilder) används för navigering
+* Text - Kapiteltitlar används för navigering';
+$string['navtext'] = 'Text';
+$string['navtoc'] = 'Endast innehållsförteckning';
 $string['nocontent'] = 'Inget innehåll har lagts till den här boken än.';
 $string['numbering'] = 'Numrering av kapitel';
 $string['numbering0'] = 'Ingen';
@@ -68,7 +81,8 @@ $string['numberingoptions_desc'] = 'Inställningsalternativ för att visa kapite
 $string['page-mod-book-x'] = 'Valfri bokmodulsida';
 $string['pluginadministration'] = 'Bok administration';
 $string['pluginname'] = 'Bok';
-$string['subchapter'] = 'Underkapitel';
+$string['showchapter'] = 'Visa kapitel "{$a}"';
+$string['subchapter'] = 'Underavdelning';
 $string['subchapternotice'] = '(Endast tillgängligt när det första kapitlet har skapats)';
 $string['subplugintype_booktool'] = 'Bok verktyg';
 $string['subplugintype_booktool_plural'] = 'Bok verktyg';

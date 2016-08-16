@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -117,7 +117,6 @@ $string['calculationview'] = 'Ver o cálculo';
 $string['cannotaccessgroup'] = 'Non é posíbel acceder ás cualificacións do grupo seleccionado.';
 $string['categories'] = 'Categorías';
 $string['categoriesanditems'] = 'Categorías e elementos';
-$string['categoriesedit'] = 'Editar categorías e elementos';
 $string['category'] = 'Categoría';
 $string['categoryedit'] = 'Editar categoría';
 $string['categoryname'] = 'Nome da categoría';
@@ -143,6 +142,8 @@ $string['coursename'] = 'Nome do curso';
 $string['coursescales'] = 'Escalas do curso';
 $string['coursesettings'] = 'Configuración do curso';
 $string['coursesettingsexplanation'] = 'A configuración do curso determina como aparece o libro de cualificacións para todos os participantes no curso.';
+$string['coursesiamtaking'] = 'Cursos que estou recibindo';
+$string['coursesiamteaching'] = 'Cursos no que son profesor';
 $string['coursetotal'] = 'Total do curso';
 $string['createcategory'] = 'Crear unha categoría';
 $string['createcategoryerror'] = 'Non foi posible crear unha nova categoría';
@@ -215,6 +216,8 @@ $string['exportonlyactive_help'] = 'Incluír na exportación soamente os alumnos
 $string['exportplugins'] = 'Engadidos de exportación';
 $string['exportsettings'] = 'Configuración da exportación';
 $string['exportto'] = 'Exportar a';
+$string['externalurl'] = 'URL externo';
+$string['externalurl_desc'] = 'De usarse un libro de cualificacións externo, debe especificar aquí o URL.';
 $string['extracreditvalue'] = 'Valor de crédito extra para {$a}';
 $string['extracreditwarning'] = 'Nota: Axustando todos os elementos dunha categoría a punto adicional, retiraranse de xeito efectivo do cálculo da cualificación. Xa que non haberá total de puntos';
 $string['feedback'] = 'Comentarios';
@@ -237,7 +240,6 @@ $string['forelementtypes'] = 'para {$a} seleccionado';
 $string['forstudents'] = 'Para os alumnos';
 $string['full'] = 'Completa';
 $string['fullmode'] = 'Vista completa';
-$string['fullview'] = 'Vista completa';
 $string['generalsettings'] = 'Configuración xeral';
 $string['grade'] = 'Cualificación';
 $string['gradeadministration'] = 'Administración das cualificacións';
@@ -298,6 +300,7 @@ $string['gradeitemsinc'] = 'Elementos de cualificación para seren incluídos';
 $string['gradeletter'] = 'Letra de cualificación';
 $string['gradeletter_help'] = 'As letras de cualificación son letras, A, B, C, ..., ou palabras, por exemplo Distinción, Mérito, Aprobado, ..., que se empregan para representar unha gama de cualificacións.';
 $string['gradeletternote'] = 'Para eliminar unha letra de cualificación simplemente baleire calquera das<br /> tres áreas de texto desa letra e prema en enviar.';
+$string['gradeletteroverridden'] = 'A cualificación con letras actualmente están anuladas.';
 $string['gradeletters'] = 'Letras de cualificación';
 $string['gradelocked'] = 'A cualificación está bloqueada';
 $string['gradelong'] = '{$a->grade} / {$a->max}';
@@ -309,6 +312,7 @@ $string['gradeoutcomeitem'] = 'Elemento de resultado de cualificación';
 $string['gradeoutcomes'] = 'Resultados';
 $string['gradeoutcomescourses'] = 'Resultados do curso';
 $string['gradepass'] = 'Cualificación para aprobar';
+$string['gradepassgreaterthangrade'] = 'A cualificación para aprobar non pode ser maior que a máxima cualificación posíbel {$a}';
 $string['gradepass_help'] = 'Este axuste determina a cualificación mínima requirida para aprobar. O valor empregase na actividade, no completado do curso e no libro de cualificacións, onde as cualificacións de aprobado resáltanse en verde e as de suspenso en vermello.';
 $string['gradepointdefault'] = 'Puntuación predeterminada de cualificación';
 $string['gradepointdefault_help'] = 'Esta configuración determina o valor predeterminado para o valor del puntuación da cualificación nunha actividade.';
@@ -470,6 +474,8 @@ $string['movingelement'] = 'Movendo {$a}';
 $string['multfactor'] = 'Multiplicador';
 $string['multfactor_help'] = 'O multiplicador é o factor polo que se multiplicarán todas as cualificacións deste elemento de cualificación, cun valor máximo para a cualificación do estabelecido como máximo. Por exemplo, se o multiplicador é 2 e a cualificación máxima é 100, todas as cualificacións menores de 50 multiplican por dous, e todas as cualificacións de 50 e superiores estabeleceranse en 100.';
 $string['multfactorvalue'] = 'Multiplicator value for {$a}';
+$string['mygrades'] = 'Ligazón ás cualificacións no menú do usuario';
+$string['mygrades_desc'] = 'Esta configuración dispón a opción para ligar cara un libro de cualificacións externo desde o menú do usuario.';
 $string['mypreferences'] = 'As miñas preferencias';
 $string['myreportpreferences'] = 'As miñas preferencias de informe';
 $string['navmethod'] = 'Método de navegación';
@@ -495,10 +501,12 @@ $string['nooutcome'] = 'Sen resultado';
 $string['nooutcomes'] = 'Os elementos de resultados deben estar ligados a un resultado de curso, mais non existen resultados para este curso. Quere engadir un?';
 $string['nopermissiontoresetweights'] = 'Sen permiso para reiniciar ponderacións';
 $string['nopublish'] = 'Non publicar';
+$string['noreports'] = 'Vostede non está matriculado, nin impartindo ningún curso neste sitio.';
 $string['norolesdefined'] = 'Non hai roles definidos en Administración > Cualificacións > Configuración xeral > Roles cualificados';
 $string['noscales'] = 'Os resultados deben estar ligados a unha escala (de curso ou global), mais non existe ningunha. Quere engadir unha?';
 $string['noselectedcategories'] = 'non hai categorías seleccionados.';
 $string['noselecteditems'] = 'non hai elementos seleccionados.';
+$string['notenrolled'] = 'Vostede actualmente non está matriculado en ningún curso.';
 $string['notteachererror'] = 'Só os profesores poden empregar esta opción.';
 $string['nousersloaded'] = 'Non hai usuarios cargados';
 $string['numberofgrades'] = 'Número de cualificacións';
@@ -651,6 +659,9 @@ $string['showhiddenitems_help'] = 'Cando os elementos de cualificación están t
 * Agochar só ata - os elementos de cualificación con «agochar ata» a data estabelecida agóchanse por completo ata a data indicada, despois dela amosase todo o elemento
 * Non amosar - os elementos de cualificación agochados estarán completamente agochados';
 $string['showhiddenuntilonly'] = 'Agochar só ata';
+$string['showingaggregatesonly'] = 'Amosando só os agregados';
+$string['showingfullmode'] = 'Amosando a vista completa';
+$string['showinggradesonly'] = 'Amosando só as cualificacións';
 $string['showlettergrade'] = 'Amosar as cualificacións con letra';
 $string['showlettergrade_help'] = 'Amosar a columna de cualificacións con letra?';
 $string['showlocks'] = 'Amosar os bloqueos';

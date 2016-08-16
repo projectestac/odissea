@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_month', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_calendar_month', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   block_calendar_month
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = '添加一个新日历版块';
-$string['calendar_month:myaddinstance'] = '添加一个新日历版块到我的主页';
+$string['calendar_month:myaddinstance'] = '在我的主页新增一个新日历版块';
 $string['pluginname'] = '日历';

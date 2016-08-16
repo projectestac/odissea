@@ -4,19 +4,13 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 	public function __construct() { if(!php_Boot::$skip_constructor) {
 		parent::__construct();
 	}}
-	public function inArray($n, $a) {
-		$i = null;
-		{
-			$_g1 = 0; $_g = $a->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				if($a[$i1] === $n) {
-					return true;
-				}
-				unset($i1);
-			}
+	public function getResourceUrl($name) {
+		$c = $this->getConfiguration();
+		if("true" === $c->get(com_wiris_quizzes_api_ConfigurationKeys::$RESOURCES_STATIC)) {
+			return $c->get(com_wiris_quizzes_api_ConfigurationKeys::$RESOURCES_URL) . "/" . $name;
+		} else {
+			return $c->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=resource&name=" . $name;
 		}
-		return false;
 	}
 	public function getPairings($c, $u) {
 		$p = new _hx_array(array());
@@ -315,6 +309,17 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 				$qq->correctAnswers = $q->correctAnswers;
 			}
 		}
+		{
+			$_g1 = 0; $_g = $qq->correctAnswers->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$ca = $qq->correctAnswers[$i1];
+				if($ca !== null && $ca->content !== null) {
+					$ca->content = $this->stripAnnotation($ca->content);
+				}
+				unset($i1,$ca);
+			}
+		}
 		if($userAnswers !== null) {
 			$_g1 = 0; $_g = $userAnswers->length;
 			while($_g1 < $_g) {
@@ -366,7 +371,7 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 					while($_g3 < $_g2) {
 						$k1 = $_g3++;
 						$ass = $qq->assertions[$k1];
-						if($ass->isSyntactic() && $this->inArray($i1, $ass->getAnswers())) {
+						if($ass->isSyntactic() && com_wiris_util_type_Arrays::containsInt($ass->getAnswers(), $i1)) {
 							$foundSyntax = true;
 						}
 						unset($k1,$ass);
@@ -384,7 +389,7 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
 				$value = $qq->getCorrectAnswer($i1);
-				if($syntax->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING) {
+				if(com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT === $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD) || $syntax->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING) {
 					$value = $qi->expandVariablesText($value);
 				} else {
 					$value = $qi->expandVariablesMathMLEval($value);
@@ -570,8 +575,11 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 		if($question !== null) {
 			$q = _hx_deref(($question))->getImpl();
 			$type = $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD);
-			if($type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND) {
+			if($type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR || $type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR || $type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND) {
 				$qi->setHandwritingConstraints($question);
+			}
+			if("," === $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR) || "," === $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR) && StringTools::startsWith($q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT), ",")) {
+				$qi->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_ITEM_SEPARATOR, ";");
 			}
 		}
 		return $qi;

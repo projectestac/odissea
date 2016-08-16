@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['contacts'] = '联系人';
 $string['context'] = '正文';
 $string['defaultmessageoutputs'] = '默认消息输出';
 $string['defaults'] = '默认';
+$string['deletemessage'] = '删除消息';
 $string['deletemessagesdays'] = '多少天前的消息可以被自动删除';
 $string['disableall'] = '临时禁用通知';
 $string['disableall_help'] = '临时禁用所有通知，除了被网站管理员设为“强制”的以外';
@@ -56,6 +57,7 @@ $string['emptysearchstring'] = '您必须提供搜索的线索';
 $string['enabled'] = '启用';
 $string['errorcallingprocessor'] = '调用定义的处理器出错';
 $string['errortranslatingdefault'] = '转化插件的缺省设置出错，改为使用系统缺省设置。';
+$string['errorwhilesendingmessage'] = '发送消息时发生错误，请稍后再试。';
 $string['eventmessagecontactadded'] = '联系人消息已添加';
 $string['eventmessagecontactblocked'] = '联系人消息已屏蔽';
 $string['eventmessagecontactremoved'] = '联系人消息已移除';
@@ -86,6 +88,8 @@ $string['messagehistoryfull'] = '所有消息';
 $string['messagenavigation'] = '信息导航：';
 $string['messageoutputs'] = '消息输出';
 $string['messages'] = '消息';
+$string['messagesent'] = '消息已发送';
+$string['messagetosend'] = '消息发送';
 $string['messaging'] = '发送消息';
 $string['messagingblockednoncontact'] = '由于您不接收来自非联系人的消息，{$a}将不能回复您';
 $string['messagingdisabled'] = '网站已禁用消息功能，将以email代替';
@@ -126,6 +130,7 @@ $string['search'] = '搜索';
 $string['searchcombined'] = '搜索用户和消息';
 $string['searchforperson'] = '搜索人';
 $string['searchmessages'] = '搜索消息';
+$string['sendingmessage'] = '正在发送消息';
 $string['sendingvia'] = '正通过“{$a->processor}”发送“{$a->provider}”';
 $string['sendingviawhen'] = '{$a->state}时通过“{$a->processor}”发送“{$a->provider}”';
 $string['sendmessage'] = '发送消息';
@@ -146,3 +151,4 @@ $string['unreadnewmessages'] = '新消息（{$a}）';
 $string['userisblockingyou'] = '此用户屏蔽了您的消息';
 $string['userisblockingyounoncontact'] = '{$a}只接受来自联系人的消息。';
 $string['userssearchresults'] = '找到用户：{$a}';
+$string['viewconversation'] = '查看对话';

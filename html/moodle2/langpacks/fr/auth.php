@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Plugins d\'authentification disponibles';
+$string['allowaccountssameemail'] = 'Autoriser des comptes avec la même adresse de courriel';
+$string['allowaccountssameemail_desc'] = 'Si ce réglage est activé, plusieurs comptes peuvent se partager la même adresse de courriel. Dans ce cas, des problèmes de sécurité ou de protection des données peuvent survenir, par exemple avec le courriel de confirmation de changement de mot de passe.';
 $string['alternatelogin'] = 'Si vous spécifiez ici une URL, elle sera utilisée comme page de connexion pour ce site. La page doit contenir un formulaire dont la propriété « action » est <strong>{$a}</strong> et doit contenir les champs <strong>username</strong> et <strong>password</strong>.<br />Attention à donner une URL correcte, sans quoi vous risquez de ne plus pouvoir accéder au site.<br />Pour utiliser la page de connexion par défaut, laissez ce champ vide.';
 $string['alternateloginurl'] = 'URL de la page de connexion de rechange';
 $string['auth_changepasswordhelp'] = 'Aide au changement de mot de passe';
@@ -54,7 +56,9 @@ $string['auth_remove_keep'] = 'Conserver comme utilisateur interne';
 $string['auth_remove_suspend'] = 'Désactiver l\'utilisateur interne';
 $string['auth_remove_user'] = 'Indiquer la procédure à effectuer durant une synchronisation avec un compte utilisateur interne lorsque le compte a été retiré de la source d\'authentification externe. Seuls les utilisateurs désactivés sont automatiquement réactivés quand ils réapparaissent dans la source externe.';
 $string['auth_remove_user_key'] = 'Utilisateur externe supprimé';
-$string['auth_sync_script'] = 'Script cron de synchronisation';
+$string['auth_sync_script'] = 'Synchronisation des comptes utilisateur';
+$string['auth_sync_suspended'] = 'Si ce réglage est activé, l\'attribut de suspension sera utilisé pour modifier l\'état de suspension local du compte utilisateur.';
+$string['auth_sync_suspended_key'] = 'Synchroniser l\'état de suspension local de l\'utilisateur';
 $string['auth_updatelocal'] = 'Mise à jour des données locales';
 $string['auth_updatelocal_expl'] = '<p><strong>Mise à jour des données locales :</strong> lorsque cette option est activée, le champ est mis à jour (depuis la source externe) chaque fois que l\'utilisateur se connecte ou qu\'une synchronisation a lieu. Les champs destinés à être mis à jour ainsi devraient être verrouillés.</p>';
 $string['auth_updateremote'] = 'Mise à jour des données externes';
@@ -65,11 +69,11 @@ $string['auth_user_creation'] = 'Les nouveaux utilisateurs (anonymes) peuvent cr
 $string['auth_usernameexists'] = 'Ce nom d\'utilisateur existe déjà. Veuillez en choisir un autre.';
 $string['auto_add_remote_users'] = 'Ajouter automatiquement les utilisateurs distants';
 $string['changepassword'] = 'URL de la page de changement du mot de passe';
-$string['changepasswordhelp'] = 'Vous pouvez indiquer dans cette zone l\'URL d\'une page sur laquelle vos utilisateurs pourront récupérer ou changer leurs nom d\'utilisateur et mot de passe s\'ils les ont oubliés. Cette URL sera disponible sous forme d\'un bouton sur la page de connexion. Si cette zone est vide, ce bouton ne sera pas affiché.';
+$string['changepasswordhelp'] = 'L\'URL de la page de récupération de mot de passe perdu, qui est envoyée aux utilisateur par courriel. Ce réglage n\'a aucun effet si une URL de récupération de mot de passe est indiquée dans les réglages généraux d\'authentification.';
 $string['chooseauthmethod'] = 'Choisir une méthode d\'authentification';
 $string['chooseauthmethod_help'] = 'Ce réglage détermine la méthode d\'authentification utilisée lorsque l\'utilisateur se connecte. Seuls les plugins d\'authentification activés doivent être sélectionnés, faute de quoi l\'utilisateur ne pourra pas se connecter. Pour empêcher la connexion d\'un utilisateur, choisissez « Pas de connexion ».';
 $string['createpassword'] = 'Générer le mot de passe et informer l\'utilisateur';
-$string['createpasswordifneeded'] = 'Créer un mot de passe si nécessaire';
+$string['createpasswordifneeded'] = 'Créer un mot de passe si nécessaire et l\'envoyer par courriel';
 $string['emailchangecancel'] = 'Annuler la modification de l\'adresse de courriel';
 $string['emailchangepending'] = 'Modification en attente. Veuillez cliquer sur le lien qui vous a été envoyé à l\'adresse {$a->preference_newemail}.';
 $string['emailnowexists'] = 'L\'adresse de courriel que vous tentez d\'utiliser pour votre profil est déjà attribuée à un autre utilisateur. Votre demande de modification de courriel est donc annulée, mais vous pouvez réessayer avec une adresse différente.';
@@ -87,8 +91,9 @@ $string['errormaxconsecutiveidentchars'] = 'Les mots de passe doivent comporter 
 $string['errorminpassworddigits'] = 'Les mots de passe doivent comporter au moins {$a} chiffre(s).';
 $string['errorminpasswordlength'] = 'Les mots de passe doivent comporter au moins {$a} caractères.';
 $string['errorminpasswordlower'] = 'Les mots de passe doivent comporter au moins {$a} lettre(s) minuscule(s).';
-$string['errorminpasswordnonalphanum'] = 'Les mots de passe doivent comporter au moins {$a} caractère(s) non alphanumériques.';
+$string['errorminpasswordnonalphanum'] = 'Les mots de passe doivent comporter au moins {$a} caractère(s) non alphanumériques, tels que *, - ou #.';
 $string['errorminpasswordupper'] = 'Les mots de passe doivent comporter au moins {$a} lettre(s) majuscule(s).';
+$string['errorpasswordreused'] = 'Ce mot de passe a été utilisé précédemment et ne peut pas être réutilisé';
 $string['errorpasswordupdate'] = 'Erreur lors de la modification du mot de passe. Le mot de passe n\'a pas été modifié';
 $string['eventuserloggedin'] = 'Utilisateur connecté';
 $string['eventuserloggedinas'] = 'Utilisateur connecté sous le nom d\'un autre utilisateur';
@@ -107,11 +112,14 @@ $string['infilefield'] = 'Champ requis dans le fichier';
 $string['informminpassworddigits'] = 'au moins {$a} chiffre(s)';
 $string['informminpasswordlength'] = 'au moins {$a} caractère(s)';
 $string['informminpasswordlower'] = 'au moins {$a} minuscule(s)';
-$string['informminpasswordnonalphanum'] = 'au moins {$a} caractère(s) non-alphanumérique(s)';
+$string['informminpasswordnonalphanum'] = 'au moins {$a} caractère(s) non-alphanumérique(s) tels que *, - ou #';
+$string['informminpasswordreuselimit'] = 'Les mots de passe peuvent être réutilisés après {$a} changements';
 $string['informminpasswordupper'] = 'au moins {$a} majuscule(s)';
 $string['informpasswordpolicy'] = 'Le mot de passe doit comporter {$a}';
 $string['instructions'] = 'Instructions';
 $string['internal'] = 'Interne';
+$string['limitconcurrentlogins'] = 'Nombre limite de connexions simultanées';
+$string['limitconcurrentlogins_desc'] = 'Si ce réglage est activé, le nombre de connexions simultanées d\'un utilisateur est restreint. La session la plus ancienne est close une fois ce nombre de sessions atteint. Les utilisateurs pourraient perdre leurs contenus non enregistrés. Ce réglage n\'est pas compatible avec les plugins d\'authentification SSO (single sign-on).';
 $string['locked'] = 'Verrouillé';
 $string['md5'] = 'Hachage MD5';
 $string['nopasswordchange'] = 'Le mot de passe ne peut pas être modifié';
@@ -129,6 +137,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Un CAPTCHA est un programme capable de distinguer si son utilisateur est un humain ou un ordinateur, destiné à éviter les abus de programmes automatiques pour faire du spam. Saisissez dans le champ les mots que vous lisez, dans l\'ordre et séparés par un espace.
 
 Si vous n\'êtes pas sûr des mots présentés, essayez de deviner ou suivez le lien « Obtenir un nouveau CAPTCHA » ou « Obtenir un CAPTCHA audio ».';
+$string['security_question'] = 'Question de sécurité';
 $string['selfregistration'] = 'Auto-enregistrement';
 $string['selfregistration_help'] = 'Si vous choisissez un plugin d\'authentification gérant l\'auto-enregistrement, par exemple par courriel, vous permettez aux utilisateurs potentiels de créer des comptes pour eux-mêmes. Il est par conséquent possible que des spammeurs créent des comptes dans le but d\'écrire du spam dans des messages dans les forums, des articles de blog, etc. Si vous voulez éviter ce risque, vous devez désactiver l\'auto-enregistrement ou au moins le limiter en utilisant le réglage <em> Domaines courriel autorisés</em>.';
 $string['sha1'] = 'Hachage SHA-1';
@@ -148,3 +157,5 @@ $string['update_onlogin'] = 'À chaque connexion';
 $string['update_onupdate'] = 'Lors de la mise à jour';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() ne supporte pas le type d\'utilisateur sélectionné {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() ne supporte pas (encore) le type d\'utilisateur sélectionné';
+$string['username'] = 'Nom d\'utilisateur';
+$string['username_help'] = 'Certains plugins d\'authentification ne permettent pas la modification du nom d\'utilisateur.';

@@ -110,7 +110,7 @@ BLOCK.prototype = {
         var dock = M.core.dock.get(),
             id = this.get('id'),
             blockcontent = Y.one('#inst'+id).one('.content'),
-            icon = (right_to_left()) ? 't/dock_to_block_rtl' : 't/dock_to_block',
+            icon = (window.right_to_left()) ? 't/dock_to_block_rtl' : 't/dock_to_block',
             breakchar = (location.href.match(/\?/)) ? '&' : '?',
             blocktitle,
             blockcommands,
@@ -136,7 +136,7 @@ BLOCK.prototype = {
             blockcommands = Y.Node.create('<div class="commands"></div>');
         }
         movetoimg = Y.Node.create('<img />').setAttrs({
-            alt : Y.Escape.html(M.str.block.undockitem),
+            alt : Y.Escape.html(M.util.get_string('undockitem', 'block')),
             title : Y.Escape.html(M.util.get_string('undockblock', 'block', blocktitle.get('innerHTML'))),
             src : M.util.image_url(icon, 'moodle')
         });

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Available authentication plugins';
+$string['allowaccountssameemail'] = 'Allow accounts with same email';
+$string['allowaccountssameemail_desc'] = 'If enabled, more than one user account can share the same email address. This may result in security or privacy issues, for example with the password change confirmation email.';
 $string['alternatelogin'] = 'If you enter a URL here, it will be used as the login page for this site. The page should contain a form which has the action property set to <strong>\'{$a}\'</strong> and return fields <strong>username</strong> and <strong>password</strong>.<br />Be careful not to enter an incorrect URL as you may lock yourself out of this site.<br />Leave this setting blank to use the default login page.';
 $string['alternateloginurl'] = 'Alternate login URL';
 $string['auth_changepasswordhelp'] = 'Change password help';
@@ -54,7 +56,9 @@ $string['auth_remove_keep'] = 'Keep internal';
 $string['auth_remove_suspend'] = 'Suspend internal';
 $string['auth_remove_user'] = 'Specify what to do with internal user account during mass synchronization when user was removed from external source. Only suspended users are automatically revived if they reappear in ext source.';
 $string['auth_remove_user_key'] = 'Removed ext user';
-$string['auth_sync_script'] = 'Cron synchronization script';
+$string['auth_sync_script'] = 'User account syncronisation';
+$string['auth_sync_suspended'] = 'When enabled, the suspended attribute will be used to update the local user account\'s suspension status.';
+$string['auth_sync_suspended_key'] = 'Synchronize local user suspension status';
 $string['auth_updatelocal'] = 'Update local';
 $string['auth_updatelocal_expl'] = '<p><b>Update local:</b> If enabled, the field will be updated (from external auth) every time the user logs in or there is a user synchronization. Fields set to update locally should be locked.</p>';
 $string['auth_updateremote'] = 'Update external';
@@ -65,11 +69,11 @@ $string['auth_user_creation'] = 'New (anonymous) users can create user accounts 
 $string['auth_usernameexists'] = 'Selected username already exists. Please choose a new one.';
 $string['auto_add_remote_users'] = 'Auto add remote users';
 $string['changepassword'] = 'Change password URL';
-$string['changepasswordhelp'] = 'Here you can specify a location at which your users can recover or change their username/password if they\'ve forgotten it. This will be provided to users as a button on the login page and their user page. If you leave this blank the button will not be printed.';
+$string['changepasswordhelp'] = 'URL of lost password recovery page, which will be sent to users in an email. Note that this setting will have no effect if a forgotten password URL is set in the authentication common settings.';
 $string['chooseauthmethod'] = 'Choose an authentication method';
 $string['chooseauthmethod_help'] = 'This setting determines the authentication method used when the user logs in. Only enabled authentication plugins should be chosen, otherwise the user will no longer be able to log in. To block the user from logging in, select "No login".';
 $string['createpassword'] = 'Generate password and notify user';
-$string['createpasswordifneeded'] = 'Create password if needed';
+$string['createpasswordifneeded'] = 'Create password if needed and send via email';
 $string['emailchangecancel'] = 'Cancel email change';
 $string['emailchangepending'] = 'Change pending. Open the link sent to you at {$a->preference_newemail}.';
 $string['emailnowexists'] = 'The email address you tried to assign to your profile has been assigned to someone else since your original request. Your request for change of email address is hereby cancelled, but you may try again with a different address.';
@@ -87,8 +91,9 @@ $string['errormaxconsecutiveidentchars'] = 'Passwords must have at most {$a} con
 $string['errorminpassworddigits'] = 'Passwords must have at least {$a} digit(s).';
 $string['errorminpasswordlength'] = 'Passwords must be at least {$a} characters long.';
 $string['errorminpasswordlower'] = 'Passwords must have at least {$a} lower case letter(s).';
-$string['errorminpasswordnonalphanum'] = 'Passwords must have at least {$a} non-alphanumeric character(s).';
+$string['errorminpasswordnonalphanum'] = 'Passwords must have at least {$a} non-alphanumeric character(s) such as as *, -, or #.';
 $string['errorminpasswordupper'] = 'Passwords must have at least {$a} upper case letter(s).';
+$string['errorpasswordreused'] = 'This password has been used before, and is not permitted to be reused';
 $string['errorpasswordupdate'] = 'Error updating password, password not changed';
 $string['eventuserloggedin'] = 'User has logged in';
 $string['eventuserloggedinas'] = 'User logged in as another user';
@@ -107,11 +112,14 @@ $string['infilefield'] = 'Field required in file';
 $string['informminpassworddigits'] = 'at least {$a} digit(s)';
 $string['informminpasswordlength'] = 'at least {$a} characters';
 $string['informminpasswordlower'] = 'at least {$a} lower case letter(s)';
-$string['informminpasswordnonalphanum'] = 'at least {$a} non-alphanumeric character(s)';
+$string['informminpasswordnonalphanum'] = 'at least {$a} non-alphanumeric character(s) such as as *, -, or #';
+$string['informminpasswordreuselimit'] = 'Passwords can be reused after {$a} changes';
 $string['informminpasswordupper'] = 'at least {$a} upper case letter(s)';
 $string['informpasswordpolicy'] = 'The password must have {$a}';
 $string['instructions'] = 'Instructions';
 $string['internal'] = 'Internal';
+$string['limitconcurrentlogins'] = 'Limit concurrent logins';
+$string['limitconcurrentlogins_desc'] = 'If enabled the number of concurrent browser logins for each user is restricted. The oldest session is terminated after reaching the limit, please note that users may lose all unsaved work. This setting is not compatible with single sign-on (SSO) authentication plugins.';
 $string['locked'] = 'Locked';
 $string['md5'] = 'MD5 hash';
 $string['nopasswordchange'] = 'Password can not be changed';
@@ -130,6 +138,7 @@ $string['recaptcha_help'] = 'The CAPTCHA is for preventing abuse from automated 
 
 If you are not sure what the words are, you can try getting another CAPTCHA or an audio CAPTCHA.';
 $string['recaptcha_link'] = 'auth/email';
+$string['security_question'] = 'Security question';
 $string['selfregistration'] = 'Self registration';
 $string['selfregistration_help'] = 'If an authentication plugin, such as email-based self-registration, is selected, then it enables potential users to register themselves and create accounts. This results in the possibility of spammers creating accounts in order to use forum posts, blog entries etc. for spam. To avoid this risk, self-registration should be disabled or limited by <em>Allowed email domains</em> setting.';
 $string['sha1'] = 'SHA-1 hash';
@@ -149,3 +158,5 @@ $string['update_onlogin'] = 'On every login';
 $string['update_onupdate'] = 'On update';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() does not support selected usertype: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() does not support selected usertype (..yet)';
+$string['username'] = 'Username';
+$string['username_help'] = 'Please be aware that some authentication plugins will not allow you to change the username.';

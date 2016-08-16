@@ -35,10 +35,20 @@ class auth_plugin_mnet extends auth_plugin_base {
     /**
      * Constructor.
      */
-    function auth_plugin_mnet() {
+    public function __construct() {
         $this->authtype = 'mnet';
         $this->config = get_config('auth_mnet');
         $this->mnet = get_mnet_environment();
+    }
+
+    /**
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function auth_plugin_mnet() {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+        self::__construct();
     }
 
     /**
@@ -58,7 +68,7 @@ class auth_plugin_mnet extends auth_plugin_base {
      * Return user data for the provided token, compare with user_agent string.
      *
      * @param  string $token    The unique ID provided by remotehost.
-     * @param  string $UA       User Agent string.
+     * @param  string $useragent       User Agent string.
      * @return array  $userdata Array of user info for remote host
      */
     function user_authorise($token, $useragent) {
@@ -289,10 +299,10 @@ class auth_plugin_mnet extends auth_plugin_base {
             } See MDL-21327   for why this is commented out
             */
             $remoteuser->mnethostid = $remotehost->id;
-            $remoteuser->firstaccess = time(); // First time user in this server, grab it here
+            $remoteuser->firstaccess = 0;
             $remoteuser->confirmed = 1;
 
-            $remoteuser->id = $DB->insert_record('user', $remoteuser);
+            $remoteuser->id = user_create_user($remoteuser, false);
             $firsttime = true;
             $localuser = $remoteuser;
         }
@@ -359,9 +369,6 @@ class auth_plugin_mnet extends auth_plugin_base {
         }
 
         $localuser->mnethostid = $remotepeer->id;
-        if (empty($localuser->firstaccess)) { // Now firstaccess, grab it here
-            $localuser->firstaccess = time();
-        }
         user_update_user($localuser, false);
 
         if (!$firsttime) {
@@ -1024,7 +1031,7 @@ class auth_plugin_mnet extends auth_plugin_base {
      *
      * @see process_new_icon()
      * @uses mnet_remote_client callable via MNet XML-RPC
-     * @param int $userid The id of the user
+     * @param int $username The id of the user
      * @return false|array false if user not found, empty array if no picture exists, array with data otherwise
      */
     function fetch_user_image($username) {

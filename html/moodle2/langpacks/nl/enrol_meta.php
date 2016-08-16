@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_meta', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = 'Voeg toe aan groep';
+$string['coursesort'] = 'Cursuslijst instellen';
+$string['coursesort_help'] = 'Dit bepaalt of de lijst met cursussen die gelinkt kunnen worden gesorteerd worden volgens een bepaalde sorteervolgorde (bijvoorbeeld de volgorde die ingesteld in Site-beheer>Cursussen>Beheer cursussen en categorieën) of in alfabetische volgorde.';
+$string['creategroup'] = 'Maak nieuwe groep';
+$string['defaultgroupnametext'] = '{$a->name} cursus {$a->increment}';
 $string['linkedcourse'] = 'Link cursus';
 $string['meta:config'] = 'Configureer meta aanmeldingsinstellingen';
 $string['meta:selectaslinked'] = 'Selecteer cursus als meta gelinkt';

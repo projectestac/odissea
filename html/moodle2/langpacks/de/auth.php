@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Aktive Plugins zur Authentifizierung';
+$string['allowaccountssameemail'] = 'Nutzerkonten mit gleicher E-Mail-Adresse erlauben';
+$string['allowaccountssameemail_desc'] = 'Wenn diese Option aktiviert ist, können mehrere Nutzerkonten die gleiche E-Mail-Adresse verwenden. Dies könnte Probleme hinsichtlich Sicherheit oder Privatsphäre entstehen lassen, z.B. bei der Bestätigungsnachricht zur Kennwortänderung.';
 $string['alternatelogin'] = 'Bei der Eingabe einer URL wird diese als alternative Login-Seite verwandt. Die Seite sollte ein Formular enthalten, dessen Aktionsfunktion auf <strong>\'{$a}\'</strong> gesetzt ist und außerdem Eingabefelder für den <strong>Anmeldenamen</strong> und das <strong>Kennwort</strong> zurück liefert.<br />Seien Sie sehr sorgfältig bei der Eingabe der URL, denn mit einer falschen URL schließen Sie sich vom Zugriff zur Website aus.<br />Lassen Sie das Feld leer, um die standardmäßige Anmeldeseite zu verwenden.';
 $string['alternateloginurl'] = 'URL für alternatives Login';
 $string['auth_changepasswordhelp'] = 'Hilfe zur Kennwortänderung';
@@ -54,7 +56,9 @@ $string['auth_remove_keep'] = 'Nur intern zugänglich';
 $string['auth_remove_suspend'] = 'Intern sperren';
 $string['auth_remove_user'] = 'Legen Sie fest, was mit einem internen Nutzerprofil passieren soll, wenn bei einer Massensynchronisierung dieser Account im externen System entfernt wurde.  Nur gesperrte Nutzer werden automatisch reaktiviert, wenn sie in der externen Quelle wieder erscheinen.';
 $string['auth_remove_user_key'] = 'Entfernte externe Nutzer';
-$string['auth_sync_script'] = 'Cron-Synchronisierungsskript';
+$string['auth_sync_script'] = 'Synchronisierung der Nutzerkonten';
+$string['auth_sync_suspended'] = 'Die Option legt fest, dass das Ausblendemerkmal bei der Synchronisation von lokalen Nutzerkonten verwendet wird.';
+$string['auth_sync_suspended_key'] = 'Status von lokalen Nutzerkonten synchronisieren';
 $string['auth_updatelocal'] = 'Lokal aktualisieren';
 $string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal von extern (external auth) aktualisiert, wenn der Teilnehmer sich einloggt oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
 $string['auth_updateremote'] = 'Extern aktualisieren';
@@ -69,7 +73,7 @@ $string['changepasswordhelp'] = 'Hier können Sie eine Adresse angeben, über di
 $string['chooseauthmethod'] = 'Authentifizierung';
 $string['chooseauthmethod_help'] = 'Diese Einstellung legt die Authentifizierung für das Nutzerkonto fest. Falls Sie hier eine deaktivierte Authentifizierung auswählen, kann sich diese Person nicht mehr anmelden. Um ein Nutzerkonto vorübergehend zu sperren, wählen Sie die Authentifizierung "Kein Login".';
 $string['createpassword'] = 'Kennwort erzeugen und Nutzer/in benachrichtigen';
-$string['createpasswordifneeded'] = 'Kennwort anlegen, falls erforderlich';
+$string['createpasswordifneeded'] = 'Kennwort erzeugen und per E-Mail zusenden, falls erforderlich';
 $string['emailchangecancel'] = 'E-Mail-Änderung abbrechen';
 $string['emailchangepending'] = 'Die Änderung ist noch nicht abgeschlossen. Öffnen Sie den zugesandten Link in {$a->preference_newemail}';
 $string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil eintragen möchten, wird bereits von jemand anders verwendet. Der Änderungsvorgang wird abgebrochen, aber Sie können die Eingabe einer weiteren Adresse versuchen.';
@@ -87,8 +91,9 @@ $string['errormaxconsecutiveidentchars'] = 'Kennwörter dürfen maximal {$a} auf
 $string['errorminpassworddigits'] = 'Kennwörter müssen mindestens {$a} Ziffer(n) enthalten.';
 $string['errorminpasswordlength'] = 'Kennwörter müssen mindestens {$a} Zeichen lang sein.';
 $string['errorminpasswordlower'] = 'Kennwörter müssen mindestens {$a} Kleinbuchstaben enthalten.';
-$string['errorminpasswordnonalphanum'] = 'Kennwörter müssen mindestens {$a} Sonderzeichen enthalten, z.B. :#_!§-%&*+?@.';
+$string['errorminpasswordnonalphanum'] = 'Kennwörter müssen mindestens {$a} Sonderzeichen enthalten, z.B. *, -, oder #.';
 $string['errorminpasswordupper'] = 'Kennwörter müssen mindestens {$a} Großbuchstaben enthalten.';
+$string['errorpasswordreused'] = 'Dieses Kennwort wurde bereits benutzt und kann nicht wiederverwendet werden.';
 $string['errorpasswordupdate'] = 'Fehler: Kennwort konnte nicht geändert werden!';
 $string['eventuserloggedin'] = 'Nutzer/in ist angemeldet';
 $string['eventuserloggedinas'] = 'Nutzer/in ist als andere Person angemeldet';
@@ -107,11 +112,14 @@ $string['infilefield'] = 'Erforderliches Feld in Datei';
 $string['informminpassworddigits'] = '{$a} Ziffer(n)';
 $string['informminpasswordlength'] = 'mindestens {$a} Zeichen';
 $string['informminpasswordlower'] = '{$a} Kleinbuchstabe(n)';
-$string['informminpasswordnonalphanum'] = '{$a} Sonderzeichen';
+$string['informminpasswordnonalphanum'] = '{$a} Sonderzeichen, z.B. *, -, oder #.';
+$string['informminpasswordreuselimit'] = 'Kennwörter können nach {$a} Änderungen erneut benutzt werden.';
 $string['informminpasswordupper'] = '{$a} Großbuchstabe(n)';
 $string['informpasswordpolicy'] = 'Kennwortregeln: <br />{$a}';
 $string['instructions'] = 'Anleitung';
 $string['internal'] = 'Intern';
+$string['limitconcurrentlogins'] = 'Gleichzeitige Anmeldungen begrenzen';
+$string['limitconcurrentlogins_desc'] = 'Wenn diese Option aktiviert ist, wird die Anzahl der Anmeldungen für jeden Benutzer eingeschränkt. Die älteste Sitzung wird beim Erreichen der Grenze beendet, alle nicht gespeicherten Daten gehen verloren. Diese Einstellung ist nicht mit einer Authentifizierung über Single-Sign-On (SSO) kompatibel.';
 $string['locked'] = 'Gesperrt';
 $string['md5'] = 'MD5-Verschlüsselung';
 $string['nopasswordchange'] = 'Kennwort kann nicht geändert werden';
@@ -129,6 +137,7 @@ $string['recaptcha'] = 'ReCaptcha';
 $string['recaptcha_help'] = 'Das Captcha versucht Missbrauch durch automatisierte Programme zu verhindern. Tragen Sie die Wörter in das Eingabefeld ein, und zwar in der richtigen Reihenfolge und getrennt durch ein Leerzeichen.
 
 Sollten Sie nicht sicher sein, welche Wörter zu sehen sind, holen Sie sich einfach ein neues Captcha oder versuchen Sie es mit einem Audio-Captcha.';
+$string['security_question'] = 'Sicherheitsfrage';
 $string['selfregistration'] = 'Selbstregistrierung';
 $string['selfregistration_help'] = 'Wenn die Selbstregistrierung (z.B. \'E-Mail basiert\') aktiviert ist, können sich alle Personen selbst registrieren und ein Nutzerkonto anlegen. Auf diese Weise könnten aber auch Spammer ein Nutzerkonto erhalten und Einträge in Foren, Blogs oder Profilen  missbrauchen. Um dieses Risiko zu vermeiden, können Sie die Selbstregistrierung ausschalten oder auf bestimmte E-Mail-Domains (z.B. meinefirma.de) beschränken.';
 $string['sha1'] = 'SHA-1 hash';
@@ -148,3 +157,4 @@ $string['update_onlogin'] = 'Bei jedem Login';
 $string['update_onupdate'] = 'Bei Aktualisierung';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() unterstützt den ausgewählten Nutzertyp nicht: \'{$a}\'';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() unterstützt den ausgewählten Nutzertyp nicht: \'{$a}\'';
+$string['username'] = 'Anmeldename';

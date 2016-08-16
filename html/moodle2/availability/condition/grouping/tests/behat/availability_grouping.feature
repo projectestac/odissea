@@ -22,13 +22,12 @@ Feature: availability_grouping
     And the following "group members" exist:
       | user     | group |
       | student1 | GI1   |
-    And the following config values are set as admin:
-      | enableavailability  | 1 |
 
   @javascript
   Scenario: Test condition
     # Basic setup.
     Given I log in as "teacher1"
+    And I am on site homepage
     And I follow "Course 1"
     And I turn editing mode on
 
@@ -42,7 +41,7 @@ Feature: availability_grouping
     # Back to course page but add groups.
     # This step used to be 'And I follow "C1"', but Chrome thinks the breadcrumb
     # is not clickable, so we'll go via the home page instead.
-    And I am on homepage
+    And I am on site homepage
     And I follow "Course 1"
     And the following "groupings" exist:
       | name | course | idnumber |
@@ -91,6 +90,7 @@ Feature: availability_grouping
       | grouping | group  |
       | GXI1     | GI1    |
     And I log in as "student1"
+    And I am on site homepage
     And I follow "Course 1"
 
     # P1 should show but not B2.

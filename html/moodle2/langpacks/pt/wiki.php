@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = 'Esta configuração determina o formato predefi
 * HTML - O editor HTML está disponível
 * Creole - Uma linguagem de markup comum de wiki para a qual existe uma pequena barra de edição.
 * Nwiki - linguagem de markup, similar ao Mediawiki utilizado no módulo Nwiki';
+$string['deleteallpages'] = 'Apagar todas as páginas da wiki';
 $string['deletecomment'] = 'A apagar comentários';
 $string['deletecommentcheck'] = 'Apagar comentário';
 $string['deletecommentcheckfull'] = 'Tem a certeza de que quer apagar o comentário?';
@@ -193,7 +194,7 @@ $string['orphaned'] = 'Páginas órfãs';
 $string['orphaned_help'] = 'Lista de páginas que não estão ligadas a partir de outra página.';
 $string['overridelocks'] = 'Ultrapassar bloqueios';
 $string['overridinglocks'] = 'A ultrapassar bloqueios...';
-$string['pageexists'] = 'Esta página já existe. A redirecionar...';
+$string['pageexists'] = 'Esta página já existe.';
 $string['pageindex'] = 'Índice';
 $string['pageindex_help'] = 'Árvore de páginas deste wiki';
 $string['pageislocked'] = 'Alguém está neste momento a editar esta página. Tente editá-la dentro de alguns minutos.';
@@ -228,12 +229,15 @@ $string['return'] = 'Voltar';
 $string['save'] = 'Gravar';
 $string['saving'] = 'A gravar página wiki';
 $string['savingerror'] = 'A gravar erro';
+$string['search:activity'] = 'Wiki - informações da atividade';
+$string['search:collaborative_page'] = 'Wiki - páginas colaborativas';
 $string['searchcontent'] = 'Pesquisar no conteúdo da página';
 $string['searchresult'] = 'Resultados da pesquisa:';
 $string['searchterms'] = 'Pesquisar termos';
 $string['searchwikis'] = 'Pesquisar wikis';
 $string['special'] = 'Especial';
 $string['tableofcontents'] = 'Tabela de conteúdos';
+$string['tagarea_wiki_pages'] = 'Páginas da Wiki';
 $string['tagsdeleted'] = 'As marcações do Wiki foram apagadas';
 $string['tagtitle'] = 'Ver a marcação {$a}';
 $string['teacherrating'] = 'Avaliação do professor';
@@ -278,7 +282,7 @@ $string['wikimode'] = 'Tipo de wiki';
 $string['wikimodecollaborative'] = 'Colaborativo';
 $string['wikimode_help'] = 'O tipo de wiki determina se todos os alunos podem editar o wiki - wiki colaborativo - ou se cada participante tem o seu próprio wiki que só ele pode editar - wiki individual.';
 $string['wikimodeindividual'] = 'Individual';
-$string['wikiname'] = 'Nome';
+$string['wikiname'] = 'Designação';
 $string['wikinowikitext'] = 'Nenhum texto Wiki';
 $string['wikiorderedlist'] = 'Lista ordenada';
 $string['wiki:overridelock'] = 'Ultrapassar bloqueios de página';

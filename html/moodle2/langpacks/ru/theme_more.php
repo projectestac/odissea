@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'theme_more', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,12 +62,16 @@ $string['invertdesc'] = 'Обмен цвета текста и фона межд
 $string['linkcolor'] = 'Цвет ссылок';
 $string['linkcolor_desc'] = 'Задает цвет ссылок.';
 $string['logo'] = 'Логотип';
-$string['logodesc'] = 'Загрузите сюда свой логотип, если хотите добавить его в заголовок.<br>
-Если высота Вашего логотипа более 75px, то добавьте ниже в окне «Пользовательские CSS» следующее правило: <br> a.logo {height: 100px;} или любую высоту логотипа в пикселях.';
+$string['logodesc'] = 'Логотип отображается только в верхнем колонтитуле главной страницы и страницы входа в систему.<br /> Если высота Вашего логотипа более 75 пикселей, то ниже в поле «Пользовательские CSS» добавьте правило div.logo {height: 100px;}, заменив значение, если высота отличается от 100 пикселей.';
 $string['pluginname'] = 'More';
 $string['region-side-post'] = 'Справа';
 $string['region-side-pre'] = 'Слева';
 $string['secondarybackground'] = 'Цвет вторичного фона';
 $string['secondarybackground_desc'] = 'Цвет фона любого вторичного содержимого, например - блоков.';
+$string['sitelogo'] = 'Логотип сайта';
+$string['sitename'] = 'Показывать название сайта вместе с маленьким логотипом';
+$string['sitenamedesc'] = 'Если нет маленького логотипа, название сайта всегда будет показываться панели навигации. Если маленький логотип задан, оно может показываться с названием сайта или без него.';
+$string['smalllogo'] = 'Маленький логотип';
+$string['smalllogodesc'] = 'Маленький логотип отображается в панели навигации. Если на главной странице и странице входа в систему есть логотип заголовка, то маленький логотип на этих страницах не показывается.';
 $string['textcolor'] = 'Цвет текста';
 $string['textcolor_desc'] = 'Задает цвет текста';

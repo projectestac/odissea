@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['blocks'] = 'Blokken';
 $string['cannotselecttopsubject'] = 'Kan geen top onderwerpniveau selecteren';
 $string['comments'] = 'Commentaren ({$a})';
 $string['community:addinstance'] = 'Voeg een nieuw community zoekblok toe';
-$string['community:myaddinstance'] = 'Voeg een nieuw community zoekblok toe aan de mijn startpagina';
+$string['community:myaddinstance'] = 'Voeg een nieuw community zoekblok toe aan de Mijn startpagina';
 $string['contentinfo'] = 'Onderwerp: {$a->subject} - Publiek: {$a->audience} - Studieniveau: {$a->educationallevel}';
 $string['continue'] = 'Ga verder';
 $string['contributors'] = '- Bijdrage van: {$a}';

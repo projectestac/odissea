@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'chat', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -124,6 +124,7 @@ $string['repeattimes'] = 'Errepikatu/argitaratu saioen denbora';
 $string['repeatweekly'] = 'Astero ordu berean';
 $string['saidto'] = 'zera dio';
 $string['savemessages'] = 'Izan diren txat-saioak gorde';
+$string['search:activity'] = 'Txata - jardueraren informazioa';
 $string['seesession'] = 'Ikusi saio honetako txostena';
 $string['send'] = 'Bidali';
 $string['sending'] = 'Bidaltzen';

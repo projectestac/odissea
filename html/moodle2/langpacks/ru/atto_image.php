@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_image', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,4 +45,5 @@ $string['presentationoraltrequired'] = 'Изображение должно им
 $string['preview'] = 'Предварительный просмотр';
 $string['saveimage'] = 'Сохранить изображение';
 $string['size'] = 'Размер';
+$string['uploading'] = 'Идет загрузка. Пожалуйста, подождите...';
 $string['width'] = 'Ширина';

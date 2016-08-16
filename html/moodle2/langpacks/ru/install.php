@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'install', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['caution'] = 'Предупреждение';
 $string['chooselanguage'] = 'Выберите язык';
 $string['chooselanguagehead'] = 'Выберите язык';
 $string['chooselanguagesub'] = 'Сейчас необходимо выбрать язык ТОЛЬКО для сообщений во время установки. Язык сайта и пользовательских интерфейсов можно будет указать далее в процессе установки.';
+$string['cliadminemail'] = 'Новый адрес электронной почты администратора';
 $string['cliadminpassword'] = 'Пароль нового администратора';
 $string['cliadminusername'] = 'Логин учетной записи администратора';
 $string['clialreadyconfigured'] = 'Файл config.php уже существует. Если Вы хотите установить Moodle на этот сайт, используйте admin/cli/install_database.php.';
@@ -44,6 +45,7 @@ $string['clialreadyinstalled'] = 'Файл config.php уже существуе�
 $string['cliinstallfinished'] = 'Установка успешно завершена.';
 $string['cliinstallheader'] = 'Программа установки Moodle {$a} в режиме командной строки';
 $string['climustagreelicense'] = 'Чтобы принять условия лицензии в неинтерактивном режиме, укажите  параметр --agree-license';
+$string['cliskipdatabase'] = 'Пропускаем установку базы данных.';
 $string['clitablesexist'] = 'Таблицы базы данных уже существуют, невозможно продолжить установку в режиме командной строки.';
 $string['compatibilitysettings'] = 'Проверка настроек PHP...';
 $string['compatibilitysettingshead'] = 'Проверка настроек PHP...';

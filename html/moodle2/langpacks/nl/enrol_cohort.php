@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_cohort', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,9 @@ $string['addgroup'] = 'Voeg toe aan groep';
 $string['assignrole'] = 'Rol toewijzen';
 $string['cohort:config'] = 'Configureer site groepen';
 $string['cohort:unenrol'] = 'Geschorste gebruikers uit cursus verwiijderen';
-$string['instanceexists'] = 'De site-brede groep is al gesynchroniseerd met de geselecteerde rol';
-$string['pluginname'] = 'Site groep synchronisatie';
-$string['pluginname_desc'] = 'Site groep aanmeldingsplugin synchroniseert site groepsleden met cursus deelnemers';
+$string['creategroup'] = 'Maak nieuwe groep';
+$string['defaultgroupnametext'] = '{$a->name} site-groepen{$a->increment}';
+$string['instanceexists'] = 'De site-groep is al gesynchroniseerd met de geselecteerde rol';
+$string['pluginname'] = 'Site-groep synchronisatie';
+$string['pluginname_desc'] = 'Site-groep aanmeldingsplugin synchroniseert site groepsleden met cursus deelnemers';
 $string['status'] = 'Actief';

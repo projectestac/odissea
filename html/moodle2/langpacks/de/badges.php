@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,7 +89,9 @@ $string['backpackemail_help'] = 'E-Mail-Adresse, die mit Ihrem Backpack-Dienst v
 
 Wenn eine Verbindung zum Backpack-Dienst besteht, werden alle Auszeichnungen dieser Website an diese E-Mail-Adresse zugeordnet.';
 $string['backpackimport'] = 'Importeinstellungen';
-$string['backpackimport_help'] = 'Wenn die Verbindung zum Backpack erfolgreich hergestellt ist, können Auszeichnungen aus Ihrem Backpack auf Ihrer Seite "Meine Auszeichnungen" und in Ihrem Nutzerprofil angezeigt werden.';
+$string['backpackimport_help'] = 'Wenn die Verbindung zum Backpack erfolgreich hergestellt ist, können Auszeichnungen aus Ihrem Backpack auf Ihrer Seite \'Meine Auszeichnungen\' und in Ihrem Nutzerprofil angezeigt werden.
+
+An dieser Stell können Sie die Auszeichnungen auswählen, die Sie in Ihrem Profil anzeigen möchten.';
 $string['badgedetails'] = 'Grundeinstellungen';
 $string['badgeimage'] = 'Bild';
 $string['badgeimage_help'] = 'Dieses Bild wird verwendet, wenn die Auszeichnung verliehen wird.
@@ -98,10 +100,11 @@ Fügen Sie ein Bild im Format jpg oder png hinzu.
 
 Das Bild wird in quadratische Form und geeignete Größe skaliert.';
 $string['badgeprivacysetting'] = 'Einstellungen zur Privatsphäre';
-$string['badgeprivacysetting_help'] = 'Sie können Ihre erworbenen Auszeichnungen auf Ihrer Nutzerprofilseite anzeigen lassen. Mit dieser Einstellung legen Sie fest, ob neue Auszeichnungen automatisch angezeigt werden.
+$string['badgeprivacysetting_help'] = 'Sie können die erworbenen Auszeichnungen in Ihren Nutzerprofil anzeigen lassen. Diese Einstellung legt fest, ob neue Auszeichnungen automatisch angezeigt werden.
 
-Sie können die Sichtbarkeit einer einzelnen Auszeichnung jederzeit auf der Seite \'\'Navigation > Meine Profil > Auszeichnungen\'\' ändern.';
+Sie können die Sichtbarkeit einer Auszeichnung jederzeit auf der Seite \'Meine Auszeichnungen\' ändern.';
 $string['badgeprivacysetting_str'] = 'Meine Auszeichnungen automatisch im Nutzerprofil anzeigen';
+$string['badges'] = 'Auszeichnungen';
 $string['badgesalt'] = 'Salt für das Hashing der Empfänger-E-Mail-Adresse';
 $string['badgesalt_desc'] = 'Mit Hilfe eines Hash können Backpack-Diensten die Empfänger/innen einer Auszeichnung bestätigen, ohne deren E-Mail-Adresse zu kennen. Verwenden Sie für den Hash ausschließlich Ziffern und Buchstaben.';
 $string['badgesdisabled'] = 'Auszeichnungen sind auf dieser Moodle-Site nicht aktiviert.';
@@ -212,6 +215,7 @@ $string['error:backpackproblem'] = 'Die Verbindung zu Ihrem Backpack-Provider is
 $string['error:badjson'] = 'Der Verbindungsversuch hat ungültige Daten geliefert';
 $string['error:cannotact'] = 'Die Auszeichnung kann nicht aktiviert werden.';
 $string['error:cannotawardbadge'] = 'Die Auszeichnung kann nicht an Nutzer/innen verliehen werden.';
+$string['error:cannotdeletecriterion'] = 'Das Kriterium kann nicht gelöscht werden.';
 $string['error:clone'] = 'Die Auszeichnung kann nicht dupliziert werden.';
 $string['error:connectionunknownreason'] = 'Die Verbindung ist fehlgeschlagen, aber es wurde kein Grund angegeben.';
 $string['error:duplicatename'] = 'Eine Auszeichnung mit diesem Namen existiert bereits.';
@@ -239,6 +243,7 @@ $string['error:requesterror'] = 'Die Verbindung ist fehlgeschlagen. (Fehlercode 
 $string['error:requesttimeout'] = 'Die Verbindung ist fehlgeschlagen (Timeout)';
 $string['error:save'] = 'Die Auszeichnung kann nicht gesichert werden.';
 $string['error:userdeleted'] = '{$a->user} (Dieses Nutzerkonto wurde in {$a->site} gelöscht)';
+$string['eventbadgeawarded'] = 'Auszeichnung verliehen';
 $string['evidence'] = 'Evidenz';
 $string['existingrecipients'] = 'Vorhandene Empfänger/innen';
 $string['expired'] = 'Abgelaufen';
@@ -255,7 +260,6 @@ $string['externalbadges_help'] = 'In diesem Bereich werden Auszeichnungen aus Ih
 $string['externalbadgesp'] = 'Auszeichnungen von anderen Websites';
 $string['externalconnectto'] = 'Wenn Sie Ihre externen Auszeichnungen anzeigen möchten, müssen Sie eine <a href="{$a}">Verbindung zu einem geeigneten Backpack</a> herstellen.';
 $string['fixed'] = 'Festes Datum';
-$string['hidden'] = 'Verborgen';
 $string['hiddenbadge'] = 'Diese Information ist zur Auszeichnung nicht verfügbar.';
 $string['issuancedetails'] = 'Ablauf festlegen';
 $string['issuedbadge'] = 'Auszeichnungsinformationen';
@@ -322,8 +326,11 @@ $string['numawards'] = 'Diese Auszeichnung wurde an <a href="{$a->link}">{$a->co
 $string['numawardstat'] = 'Diese Auszeichnung wurde an {$a} Nutzer/innen verliehen.';
 $string['overallcrit'] = 'gewählten Kriterien erfüllt sind.';
 $string['personaconnection'] = 'Melden Sie sich mit Ihrer E-Mail-Adresse an';
-$string['personaconnection_help'] = 'Persona ist ein System, um Nutzeraccounts über verschiedene Anwendungen im Netz hinweg zu verwalten. Dazu wird eine E-Mail-Adresse von Ihnen verwandt. Open Badges Backpack verwendet  Persona zum Login. Um sich mit Backpack zu verbinden wird ein Persona-Account benötigt.';
+$string['personaconnection_help'] = 'Persona ist ein System, um Personen über Websitegrenzen hinaus mit Hilfe deren E-Mail-Adresse zu identifizieren. Open Badges Backpack verwendet Persona zum Login. Um sich mit Backpack zu verbinden müssen Sie einen Persona-Account anlegen.
+
+Weitere Information: <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Mögliche Empfänger/innen';
+$string['preferences'] = 'Einstellungen für Auszeichnungen';
 $string['recipientdetails'] = 'Empfängerdetails';
 $string['recipientidentificationproblem'] = 'Empfänger/in dieser Auszeichnung kann unter den vorhandenen Nutzer/innen nicht gefunden werden';
 $string['recipients'] = 'Auszeichnungsempfänger/innen';

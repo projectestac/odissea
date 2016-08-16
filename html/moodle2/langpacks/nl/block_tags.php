@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Voeg toe';
 $string['alltags'] = 'Alle tags';
+$string['anycollection'] = 'Gelijk welke';
+$string['anytype'] = 'Alle';
 $string['arrowtitle'] = 'Klik hier om de gesuggereerde tekst in te voeren (grijze letters).';
 $string['configtitle'] = 'Bloktitel';
 $string['coursetags'] = 'Cursustags:';
-$string['defaultdisplay'] = 'Te tonen tag-type';
+$string['defaultdisplay'] = 'Toon tags';
 $string['disabledtags'] = 'Tags zijn uitgeschakeld';
 $string['edit'] = 'bewerk...';
 $string['editdeletemytag'] = 'Verwijder tag uit deze cursus:';
@@ -67,10 +69,17 @@ $string['mytags'] = 'Mijn tags:';
 $string['notagsyet'] = 'Nog geen tags';
 $string['please'] = 'Alstublieft';
 $string['pluginname'] = 'Tags';
+$string['recursivecontext'] = 'Toon ook onderliggende contexten';
+$string['recursivecontext_help'] = 'Indien niet aangevinkt zullen tags van te aangegeven context getoond worden, maar geen tags  van onderliggende contexten. Bijvoorbeeld cursustags zullen getoond worden, maar geen tags van activiteiten.';
 $string['select'] = 'Kies...';
 $string['showcoursetags'] = 'Toon cursustags';
 $string['showcoursetagsdef'] = 'Toon de mogelijkheden voor het taggen van cursussen in het tagsblok. Hierdoor kunnen leerlingen cursussen taggen.';
+$string['standardonly'] = 'Enkel standaard';
 $string['suggestedtagthisunit'] = 'Voorgestelde tag voor deze cursus:';
+$string['tagcollection'] = 'Tag-collectie';
+$string['tagcollection_help'] = 'Selecteer tag-collectie om tags uit te tonen. Als je "gelijk welke" kiest, dan zullen tags uit alle collecties getoond worden, behalve diegene gemarkeerd met een *';
+$string['taggeditemscontext'] = 'Context van de getaggede items';
+$string['taggeditemscontext_help'] = 'Je kunt de tagcloud beperken tot de tags die in de huidige cursuscategorie, cursus of module aanwezig zijn.';
 $string['tags'] = 'tags';
 $string['tags:addinstance'] = 'Voeg een nieuw tags-blok toe';
 $string['tags:myaddinstance'] = 'Voeg een nieuw tags-blok toe aan Mijn startpagina';

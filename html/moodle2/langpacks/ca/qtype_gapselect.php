@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_gapselect', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,8 @@ $string['choicex'] = 'Opció {no}';
 $string['combinedcontrolnamegapselect'] = 'desplegable';
 $string['combinedcontrolnamegapselectplural'] = 'desplegables';
 $string['correctansweris'] = 'La resposta correcta és: {$a}';
-$string['errorblankchoice'] = 'Si us plau, comproveu les Opcions: l\'Opció {$a} està buida.';
-$string['errormissingchoice'] = 'Si us plau, comproveu el text de la pregunta: {$a} no es troba a cap de les Opcions! Només es poden utilitzar com a marcadors de posició, els números que hi ha a les Opcions.';
+$string['errorblankchoice'] = 'Comproveu les opcions: L\'opció {$a} és buida.';
+$string['errormissingchoice'] = 'Comproveu el text de la pregunta:  {$a} no s\'ha trobat a les opcions! Sols els nombres amb opcions de resposta especificades poden usar-se com a marcadors de posició.';
 $string['errornoslots'] = 'El text de la pregunta ha de contenir algun marcador de posició com ara [[1]] per mostrar on van les paraules que falten.';
 $string['errorquestiontextblank'] = 'Heu d\'introduir el text de la pregunta.';
 $string['group'] = 'Grup';
@@ -41,8 +41,8 @@ $string['pleaseputananswerineachbox'] = 'Si us plau, poseu una resposta a cada c
 $string['pluginname'] = 'Seleccioneu les paraules que falten';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'omplir forats';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'omplir forats';
-$string['pluginname_help'] = 'Introduiu algun text de la pregunta com «El [[1]] va saltar sobre el [[2]]» i a continuació, escriviu les paraules que poden anar als forats 1 i 2.';
-$string['pluginnamesummary'] = 'Permet crear preguntes d\'omplir forats en què les paraules que falten dins d\'un text s\'emplenen utilitzant menús desplegables.';
+$string['pluginname_help'] = 'Les preguntes de completar amb paraules demanen que qui respon seleccioni la resposta correcta d\'uns menús desplegables.  [[1]], [[2]], [[3]], ...  s\'usen com marcadors de posició al text de la pregunta, amb les respostes correctes especificades com les opcions de resposta 1, 2, 3, ... respectivament. Es poden afegir opcions extra de resposta per fer la pregunta més difícil. Les opcions de resposta es poden agrupar per a restringir les respostes disponibles en cada menú desplegable.';
+$string['pluginnamesummary'] = 'Les paraules que falten en el text de la pregunta s\'emplenen emprant  menús desplegables.';
 $string['shuffle'] = 'Barreja';
 $string['tagsnotallowed'] = 'L\'etiqueta {$a->tag} no està permesa. (Només estan permeses {$a->allowed}.)';
 $string['tagsnotallowedatall'] = 'L\'etiqueta {$a->tag} no està permesa. (Aquí no s\'admet codi HTML.)';

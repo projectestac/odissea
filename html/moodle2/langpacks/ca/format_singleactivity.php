@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_singleactivity', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   format_singleactivity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,4 +33,5 @@ $string['erroractivitytype'] = 'El tipus d\'activitat no està definit en els pa
 $string['orphaned'] = 'Òrfena';
 $string['orphanedwarning'] = 'Els usuaris no podran arribar a aquestes activitats.';
 $string['pluginname'] = 'Format d\'activitat única';
-$string['warningchangeformat'] = 'Quan es canvia el format del curs actual a «activitat única» comproveu que heu suprimit totes les activitats extra del curs incloent el «Fòrum de noticies». Fixeu-vos que l\'estructura de les seccions pot haver-se modificat.';
+$string['sectionname'] = '';
+$string['warningchangeformat'] = 'Quan canvieu el format del curs actual a «activitat única» comproveu que heu suprimit totes les activitats extra del curs incloent els «Avisos i noticies». Fixeu-vos que l\'estructura de les seccions pot haver-se modificat.';

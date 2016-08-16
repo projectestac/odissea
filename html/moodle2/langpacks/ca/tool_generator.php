@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_generator', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,5 +108,5 @@ $string['testplansize_2'] = 'M ({$a->users} usuaris, {$a->loops} bucles i perío
 $string['testplansize_3'] = 'L ({$a->users} usuaris, {$a->loops} bucles i període ramp-up {$a->rampup})';
 $string['testplansize_4'] = 'XL ({$a->users} usuaris, {$a->loops} bucles i període ramp-up {$a->rampup})';
 $string['testplansize_5'] = 'XXL ({$a->users} usuaris, {$a->loops} bucles i període ramp-up {$a->rampup})';
-$string['updateuserspassword'] = 'Actualitza la contrasenya dels usuaris dels curs';
+$string['updateuserspassword'] = 'Actualitza la contrasenya dels usuaris del curs';
 $string['updateuserspassword_help'] = 'JMeter ha d\'iniciar sessió com a usuari del curs. Podeu definir la contrasenya dels usuaris mitjançant $CFG->tool_generator_users_password en config.php. Aquesta opció actualitza la contrasenya dels usuaris del curs d\'acord amb $CFG->tool_generator_users_password. Pot ser útil en cas que estigueu utilitzant un curs no generat per tool_generator o en cas que $CFG->tool_generator_users_password no s\'hagués definit quan vau crear els cursos de prova.';

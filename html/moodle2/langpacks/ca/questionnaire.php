@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['all'] = 'Tot';
 $string['alreadyfilled'] = 'Ja heu respost l\'enquesta anteriorment {$a}. Gràcies.';
 $string['andaveragevalues'] = 'i les mitjanes';
 $string['anonymous'] = 'Anònim/a';
-$string['answerquestions'] = 'Respon les preguntes...';
+$string['answerquestions'] = 'Responeu les preguntes...';
 $string['attempted'] = 'El qüestionari s\'ha enviat.';
 $string['attemptstillinprogress'] = 'En curs. Desat el:';
 $string['autonumbering'] = 'Autonumeració';
@@ -88,6 +88,7 @@ $string['couldnotdelresp'] = 'No es pot esborrar la resposta';
 $string['createcontent'] = 'Defineix el contingut nou';
 $string['createcontent_help'] = 'Trieu un botó d\'opció. "Crea" és el valor predefinit.';
 $string['createnew'] = 'Crea';
+$string['crontask'] = 'Tasques de neteja del qüestionari';
 $string['date'] = 'Data';
 $string['dateformatting'] = 'Utilitzeu el format dia/mes/any, per exemple, per l\'11 de setembre de 1714, <strong>11/9/1714</strong>';
 $string['date_help'] = 'Utilitzeu aquest tipus de pregunta si espereu que la resposta sigui una data amb el format correcte.';
@@ -158,7 +159,7 @@ $string['lastrespondent'] = 'Darrer enquestat';
 $string['length'] = 'Longitud';
 $string['managequestions'] = 'Gestiona les preguntes';
 $string['maxdigitsallowed'] = 'Màxim nombre de dígits permès';
-$string['maxdigitsallowed_help'] = 'Si utilitzeu els paràmetres de màxim nombre de dígits permès i el nombre de dígits decimals, podeu indicar la longitud i el nombre de decimals demanats.';
+$string['maxdigitsallowed_help'] = 'Utilitzeu el **Màxim nombre de dígits permès** per establir un límit al nombre total de caràcters admesos en una pregunta numèrica. Pareu esment en que el punt o coma decimal també compta com a caràcter!';
 $string['maxforcedresponses'] = 'Nombre màxim obligatori de respostes';
 $string['maxtextlength'] = 'Longitud màxima del text';
 $string['messageprovider:message'] = 'Recordatori del qüestionari';

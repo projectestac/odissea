@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,6 +88,7 @@ $string['configgeneralbadges'] = 'Definierar standardinställningen för "märke
 $string['configgeneralblocks'] = 'Anger grundinställningen för att inkludera block i en säkerhetskopia.';
 $string['configgeneralcomments'] = 'Anger grundinställningen för att inkludera kommentarer i en säkerhetskopia.';
 $string['configgeneralfilters'] = 'Anger grundinställningen för att inkludera filter i en säkerhetskopia.';
+$string['configgeneralgroups'] = 'Definierar standardinställningen för grupper och gruppindelningar i säkerhetskopior';
 $string['configgeneralhistories'] = 'Anger grundinställningen för att inkludera användarhistoria i en säkerhetskopia.';
 $string['configgenerallogs'] = 'Om valet aktiverats kommer loggar att ingå i säkerhetskopiorna som standard.';
 $string['configgeneralquestionbank'] = 'Om aktiverat kommer frågebanken att ingå i säkerhetskopior som standard. OBS: Om du inaktiverar den här inställningen inaktiveras säkerhetskopior av aktiviteter som använder frågebanken  som t.ex aktiviteten "Test"';
@@ -118,7 +119,7 @@ $string['errorfilenamerequired'] = 'Du måste ange ett giltigt filnamn för denn
 $string['errorinvalidformat'] = 'Ogiltigt format för säkerhetskopiering';
 $string['errorinvalidformatinfo'] = 'Den valda filen är inte en giltig Moodle backupfil och kan inte återställas.';
 $string['errorminbackup20version'] = 'Denna säkerhetskopia har skapats med en utvecklingsversion av Moodle backup ({$a->backup}). Minimikravet är {$a->min}. Säkerhetskopian kan inte återställas.';
-$string['errorrestorefrontpage'] = 'Återställning över ingångssidan är inte tillåtet.';
+$string['errorrestorefrontpagebackup'] = 'Säkerhetskopior från ingångssidan kan endast återställas på ingångssidan';
 $string['executionsuccess'] = 'Säkerhetskopian har skapats framgångsrikt..';
 $string['filealiasesrestorefailures'] = 'Det gick inte att återställa alias.';
 $string['filealiasesrestorefailures_help'] = 'Alias är symboliska länkar till andra filer, inklusive de som lagras i externa databaser. I vissa fall kan Moodle inte återställa dem - till exempel när du återställer säkerhetskopian på en annan plats eller när den refererade filen finns inte. Fler detaljer och den faktiska orsaken till felet finns i loggfilen för återställningen.';
@@ -135,6 +136,7 @@ $string['generalblocks'] = 'Ta med block';
 $string['generalcomments'] = 'Ta med kommentarer';
 $string['generalfilters'] = 'Ta med filter';
 $string['generalgradehistories'] = 'Ta med historik';
+$string['generalgroups'] = 'Inkludera grupper och gruppindelningar';
 $string['generalhistories'] = 'Ta med historik';
 $string['generallogs'] = 'Ta med loggar';
 $string['generalquestionbank'] = 'Inkludera frågebanken';
@@ -229,8 +231,10 @@ $string['rootsettingbadges'] = 'Inkludera märken';
 $string['rootsettingblocks'] = 'Ta med block';
 $string['rootsettingcalendarevents'] = 'Inkludera kalenderhändelser';
 $string['rootsettingcomments'] = 'Ta med kommentarer';
+$string['rootsettingcompetencies'] = 'Inkludera kompetenser';
 $string['rootsettingfilters'] = 'Ta med filter';
 $string['rootsettinggradehistories'] = 'Ta med betygshistorik';
+$string['rootsettinggroups'] = 'Inkludera grupper och gruppindelningar';
 $string['rootsettingimscc1'] = 'Konvertera till IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Konvertera till IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Ta med loggar för kurser';
@@ -251,6 +255,7 @@ $string['setting_keep_groups_and_groupings'] = 'Behåll nuvarande grupper och gr
 $string['setting_keep_roles_and_enrolments'] = 'Behåll nuvarande roller och registreringar';
 $string['setting_overwriteconf'] = 'Skriv över konfiguration för kurs';
 $string['showtypes'] = 'Visa optioner';
+$string['sitecourseformatwarning'] = 'Detta är en säkerhetskopia av en Ingångssida. OBS! dessa kan endast återställas på Ingångssidan';
 $string['skiphidden'] = 'Hoppa över dolda kurser';
 $string['skiphiddenhelp'] = 'Välj om du vill hoppa över dolda kurser';
 $string['skipmodifdays'] = 'Hoppa över kurser som inte ändrats sedan';

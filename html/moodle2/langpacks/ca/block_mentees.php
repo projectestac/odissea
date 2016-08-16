@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mentees', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['configtitle'] = 'Títol del bloc';
 $string['configtitleblankhides'] = 'Títol del bloc (cap títol si es deixa en blanc)';
 $string['leaveblanktohide'] = 'en blanc per ocultar el títol';
 $string['mentees:addinstance'] = 'Afegir un bloc nou de Tutelats';
-$string['mentees:myaddinstance'] = 'Afegir un bloc nou de Tutelats a la pàgina del «meu Moodle»';
+$string['mentees:myaddinstance'] = 'Afegeix un bloc nou de Tutelats a la pàgina del Tauler';
 $string['newmenteesblock'] = '(nou bloc de Tutelats)';
 $string['pluginname'] = 'Tutelats';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['auth_dbpasstype'] = '<p>Geef hier aan welk format het wachtwoordveld ge
 $string['auth_dbpasstype_key'] = 'Wachtwoordformaat';
 $string['auth_dbreviveduser'] = 'Teruggehaalde gebruiker {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Fout bij het terughalen van gebruiker {$a}';
+$string['auth_dbsaltedcrypt'] = 'Eénrichtingsencryptie';
 $string['auth_dbsetupsql'] = 'SQL setupcommando';
 $string['auth_dbsetupsqlhelp'] = 'SQL-commando voor speciale databank setup, dikwijls gebruikt voor het opzetten van communicatie encoding - bijvoorbeeld voor MySQL en PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = 'Uitgeschakelde gebruiker {$a->name} id {$a->id}';

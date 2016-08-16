@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'editor_tinymce', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,19 +90,19 @@ $string['advanced_dlg:image_border'] = '边框';
 $string['advanced_dlg:image_dimensions'] = '尺寸';
 $string['advanced_dlg:image_hspace'] = '水平间距';
 $string['advanced_dlg:image_list'] = '图片清单';
-$string['advanced_dlg:image_src'] = '图片URL';
+$string['advanced_dlg:image_src'] = '图片网页地址';
 $string['advanced_dlg:image_title'] = '插入/编辑图片';
 $string['advanced_dlg:image_vspace'] = '垂直间距';
 $string['advanced_dlg:invalid_color_value'] = '无效的颜色值';
-$string['advanced_dlg:link_is_email'] = '您输入的URL是email地址，是否需要加上 mailto:前缀？';
-$string['advanced_dlg:link_is_external'] = '您输入的 URL 是一个外部超链接，是否要加上 http:// 前缀？';
+$string['advanced_dlg:link_is_email'] = '您输入的网页地址是email地址，是否需要加上 mailto:前缀？';
+$string['advanced_dlg:link_is_external'] = '您输入的 网页地址 是一个外部超链接，是否要加上 http:// 前缀？';
 $string['advanced_dlg:link_list'] = '链接列表';
 $string['advanced_dlg:link_target'] = '目标';
 $string['advanced_dlg:link_target_blank'] = '新窗口打开超链接';
 $string['advanced_dlg:link_target_same'] = '当前窗口打开超链接';
 $string['advanced_dlg:link_title'] = '插入/编辑超链接';
 $string['advanced_dlg:link_titlefield'] = '标题';
-$string['advanced_dlg:link_url'] = '超链接URL';
+$string['advanced_dlg:link_url'] = '超链接网页地址';
 $string['advanced:dt'] = '名词定义';
 $string['advanced:fontdefault'] = '字体';
 $string['advanced:font_size'] = '文字大小';
@@ -193,7 +193,7 @@ $string['advimage_dlg:mouseout'] = '鼠标移出';
 $string['advimage_dlg:mouseover'] = '鼠标移入';
 $string['advimage_dlg:preview'] = '预览';
 $string['advimage_dlg:rtl'] = '从右到左';
-$string['advimage_dlg:src'] = '图片URL';
+$string['advimage_dlg:src'] = '图片网页地址';
 $string['advimage_dlg:style'] = '样式';
 $string['advimage_dlg:swap_image'] = '图片切换';
 $string['advimage_dlg:tab_advanced'] = '高级';
@@ -215,8 +215,8 @@ $string['advlink_dlg:events_tab'] = '事件';
 $string['advlink_dlg:general_props'] = '一般属性';
 $string['advlink_dlg:general_tab'] = '一般';
 $string['advlink_dlg:id'] = 'ID';
-$string['advlink_dlg:is_email'] = '您输入的URL似乎是email地址,是否需要加 mailto:前缀？';
-$string['advlink_dlg:is_external'] = '您输入的 URL 似乎为外部超连结，是否要加上 "http://" 前缀？';
+$string['advlink_dlg:is_email'] = '您输入的网页地址似乎是email地址,是否需要加 mailto:前缀？';
+$string['advlink_dlg:is_external'] = '您输入的 网页地址 似乎为外部超连结，是否要加上 "http://" 前缀？';
 $string['advlink_dlg:langcode'] = '语言编码';
 $string['advlink_dlg:langdir'] = '语言书写方向';
 $string['advlink_dlg:link_list'] = '超链接清单';
@@ -238,7 +238,7 @@ $string['advlink_dlg:popup_size'] = '大小';
 $string['advlink_dlg:popup_statusbar'] = '显示状态栏';
 $string['advlink_dlg:popup_tab'] = '弹出窗口';
 $string['advlink_dlg:popup_toolbar'] = '显示工具条';
-$string['advlink_dlg:popup_url'] = '弹出窗口URL';
+$string['advlink_dlg:popup_url'] = '弹出窗口网页地址';
 $string['advlink_dlg:rel'] = '网页到目标的关系';
 $string['advlink_dlg:rev'] = '目标到网页的关系';
 $string['advlink_dlg:rtl'] = '从右到左';
@@ -253,7 +253,7 @@ $string['advlink_dlg:target_same'] = '在当前窗口打开超链接';
 $string['advlink_dlg:target_top'] = '在顶层框架中打开（替换所有的框架）';
 $string['advlink_dlg:title'] = '插入/编辑超链接';
 $string['advlink_dlg:titlefield'] = '标题';
-$string['advlink_dlg:url'] = '超链接URL';
+$string['advlink_dlg:url'] = '超链接网页地址';
 $string['advlink:link_desc'] = '插入/编辑超链接';
 $string['advlist:circle'] = '圆圈';
 $string['advlist:def'] = '预设';
@@ -431,12 +431,12 @@ $string['media_dlg:align_right'] = '靠右';
 $string['media_dlg:align_top'] = '靠上';
 $string['media_dlg:align_top_left'] = '左上';
 $string['media_dlg:align_top_right'] = '右上';
-$string['media_dlg:autogotourl'] = '自动转至 URL';
+$string['media_dlg:autogotourl'] = '自动转至 网页地址';
 $string['media_dlg:autohref'] = 'AutoHREF';
 $string['media_dlg:autostart'] = '自动播放';
 $string['media_dlg:balance'] = '平衡';
 $string['media_dlg:base'] = '基底';
-$string['media_dlg:baseurl'] = '基底 URL';
+$string['media_dlg:baseurl'] = '基底 网页地址';
 $string['media_dlg:bgcolor'] = '背景色';
 $string['media_dlg:cache'] = '缓存';
 $string['media_dlg:captioningid'] = '字幕编号';
@@ -453,7 +453,7 @@ $string['media_dlg:defaultframe'] = '预设画面';
 $string['media_dlg:enabled'] = '可用';
 $string['media_dlg:enablejavascript'] = '启用 JavaScript';
 $string['media_dlg:endtime'] = '结束时间';
-$string['media_dlg:file'] = '媒体URL';
+$string['media_dlg:file'] = '文件/网页地址';
 $string['media_dlg:flash_options'] = 'Flash 选项';
 $string['media_dlg:flashvars'] = 'Flash 变量';
 $string['media_dlg:fullscreen'] = '全萤幕';

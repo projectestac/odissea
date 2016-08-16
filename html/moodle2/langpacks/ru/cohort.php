@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cohort', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['description'] = 'Описание';
 $string['displayedrows'] = 'отображено строк - {$a->displayed} из {$a->total}.';
 $string['duplicateidnumber'] = 'Глобальная группа с таким идентификатором уже существует';
 $string['editcohort'] = 'Редактировать глобальную группу';
+$string['editcohortidnumber'] = 'Редактировать ID глобальной группы';
+$string['editcohortname'] = 'Редактировать название глобальной группы';
 $string['eventcohortcreated'] = 'Глобальная группа создана';
 $string['eventcohortdeleted'] = 'Глобальная группа удалена';
 $string['eventcohortmemberadded'] = 'Пользователь добавлен в глобальную группу';
@@ -63,6 +65,8 @@ $string['memberscount'] = 'Размер группы';
 $string['name'] = 'Название';
 $string['namecolumnmissing'] = 'Ошибка в формате файла CSV. Убедитесь, что он содержит названия столбцов.';
 $string['namefieldempty'] = 'Имя поля не может быть пустым';
+$string['newidnumberfor'] = 'Новый номер ID для глобальной группы {$a}';
+$string['newnamefor'] = 'Новое название для глобальной группы {$a}';
 $string['nocomponent'] = 'Создана вручную';
 $string['potusers'] = 'Потенциальные пользователи';
 $string['potusersmatching'] = 'Подходящие потенциальные пользователи';

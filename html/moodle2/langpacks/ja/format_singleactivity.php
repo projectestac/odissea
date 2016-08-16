@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_singleactivity', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   format_singleactivity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,4 @@ $string['orphaned'] = '迷子';
 $string['orphanedwarning'] = 'これらの活動にユーザはアクセスできません!';
 $string['pluginname'] = '単一活動フォーマット';
 $string['sectionname'] = '&nbsp;';
-$string['warningchangeformat'] = '既存のコースフォーマットを「単一活動」に変更する場合、あなたがコースから「ニュースフォーラム」を含む追加された活動すべてを削除したことを確認してください。セクション構造も変更されることに留意してください。';
+$string['warningchangeformat'] = '既存のコースフォーマットを「単一活動」に変更する場合、あなたがコースから「アナウンスメント」を含む追加された活動すべてを削除したことを確認してください。セクション構造も変更されることに留意してください。';

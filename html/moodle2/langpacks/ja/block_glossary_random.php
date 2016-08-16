@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_glossary_random', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'ユーザが用語集にエントリを追加できる
 $string['askinvisible'] = 'ユーザが用語集を編集または閲覧できない場合、このテキスト (リンクなし) を表示します。';
 $string['askviewglossary'] = 'ユーザが用語集にエントリを閲覧できて追加できない場合、このテキストのリンクを表示します。';
 $string['glossary_random:addinstance'] = '新しいランダム用語集エントリブロックを追加する';
-$string['glossary_random:myaddinstance'] = '新しいランダム用語集エントリブロックをマイホームに追加する';
+$string['glossary_random:myaddinstance'] = '新しいランダム用語集エントリブロックをダッシュボードに追加する';
 $string['intro'] = '少なくとも1つ以上のエントリが登録されている用語集がコースに追加されているか確認してください。あなたは次の設定を調整することができます。';
 $string['invisible'] = '(続く)';
 $string['lastmodified'] = '最新の更新';

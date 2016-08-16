@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_flatfile', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に�
 $string['filelockedmail'] = 'ファイルベースのユーザ登録で使用しているテキストファイル ({$a}) はcronプロセスにより削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
 $string['filelockedmailsubject'] = '重大なエラー: 登録ファイルファイル';
 $string['flatfile:manage'] = 'ユーザ登録を手動で管理する';
+$string['flatfilesync'] = 'フラットファイル登録同期';
 $string['flatfile:unenrol'] = 'ユーザをコースから手動で登録解除する';
 $string['location'] = 'ファイルロケーション';
 $string['location_desc'] = '登録ファイルのフルパスを指定してください。処理の後、ファイルは自動的に削除されます。';

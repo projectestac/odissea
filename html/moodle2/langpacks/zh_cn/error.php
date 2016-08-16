@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'error', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,9 @@ $string['cannotcallscript'] = '您不能这样调用这个脚本';
 $string['cannotcallusgetselecteduser'] = '如果多重选择设为true，您就不能调用user_selector::get_selected_user';
 $string['cannotcreatebackupdir'] = '不能创建backupdata文件夹。需要网站管理员修正文件访问权限';
 $string['cannotcreatecategory'] = '此类别未被插入';
+$string['cannotcreatedboninstall'] = '<p>无法建立数据库</p>
+<p>指定数据库不存在。使用者没有权限建立数据库</p>
+<p>网站管理员需查明数据库状态.</p>';
 $string['cannotcreategroup'] = '创建小组出错';
 $string['cannotcreatelangbase'] = '错误：不能创建基础lang目录';
 $string['cannotcreatelangdir'] = '无法创建 lang 目录。';
@@ -76,6 +79,7 @@ $string['cannoteditcomment'] = '这条评论不是您的，不能编辑';
 $string['cannoteditcommentexpired'] = '你不能编辑它，时间截止了';
 $string['cannoteditpostorblog'] = '你不能发表或编辑博客';
 $string['cannoteditsiteform'] = '您不能用此表单编辑站点课程';
+$string['cannotedituserpreferences'] = '不能编辑此用户的偏好选项';
 $string['cannotedityourprofile'] = '对不起，您不能编辑自己的个人资料';
 $string['cannotexecduringupgrade'] = '升级途中无法执行';
 $string['cannotfindcategory'] = '无法从数据库中找到ID-{$a}的类别记录';
@@ -123,6 +127,7 @@ $string['cannotreadfile'] = '读取文件({$a})失败';
 $string['cannotreadtmpfile'] = '读取临时文件错误';
 $string['cannotreaduploadfile'] = '无法读取上传的文件';
 $string['cannotremovefrommeta'] = '无法从此元课程删除选择的课程';
+$string['cannotreprocessgrades'] = '无法对活动{$a}处理成绩';
 $string['cannotresetguestpwd'] = '你不能重置访客密码';
 $string['cannotresetmail'] = '重置您的密码并发送邮件时出现错误';
 $string['cannotresetthisrole'] = '不能重置此角色';
@@ -230,8 +235,10 @@ $string['errorcreatingfile'] = '在创建文件“{$a}”时发生错误';
 $string['errorcreatingrole'] = '创建角色发生错误';
 $string['errorfetchingrssfeed'] = '获取RSS种子时出错。';
 $string['erroronline'] = '发生错误于第 {$a} 行';
+$string['erroroutput'] = '输出出错，因此禁用自动重定向。';
 $string['errorparsingxml'] = '解析XML出现错误：{$a->errorstring}，发生在行 {$a->errorline}，字符 {$a->errorchar} ';
 $string['errorprocessingarchive'] = '处理存档文件时出错';
+$string['error_question_answers_missing_in_db'] = '无法从question_answer数据表中找到"{$a->answer}"的答案。发生此现象的原因，是将备份文件中的试题以编号 {$a->filequestionid} 恢复，面它已经和数据库中编号{$a->dbquestionid}的试题相匹配。';
 $string['errorreadingfile'] = '在读取文件“{$a}”时发生错误';
 $string['errorsavingrequest'] = '在保存您的请求时发生了错误。';
 $string['errorsettinguserpref'] = '设置用户参数时发生错误';
@@ -253,6 +260,7 @@ $string['forumblockingtoomanyposts'] = '您连续发贴数目过多，超过了�
 $string['generalexceptionmessage'] = '异常 - {$a}';
 $string['gradecantregrade'] = '成绩计算过程中出现错误：{$a}';
 $string['gradepubdisable'] = '成绩发布已禁用';
+$string['gradesneedregrading'] = '这些课程成绩需要重新计算';
 $string['groupalready'] = '用户已经属于组 {$a}';
 $string['groupexistforcourse'] = '课程中组“{$a}”已经存在';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}：该课程已经有编号为 “{$a->idnumber}” 的小组“{$a->name}”';
@@ -260,8 +268,10 @@ $string['grouphasidnumber'] = '已经有编号的小组“{$a}”可能已经由
 $string['groupinghasidnumber'] = '已经有编号的大组“{$a}”可能已经由外部系统自动创建。您没有删除这个大组的权限。';
 $string['groupingnotaddederror'] = '{$a}组没有添加。';
 $string['groupnotaddederror'] = '不能添加组“{$a}”';
+$string['groupnotaddedtogroupingerror'] = '小组 "{$a->groupname}" 没有加到大组 "{$a->groupingname}"';
 $string['groupunknown'] = '组“{$a}”未与任何课程建立关系';
 $string['groupusernotmember'] = '用户不是这个组的成员。';
+$string['guestcantaccessprofiles'] = '访客无法存取用户个人资料。以完整的用户帐号登录才能继续。';
 $string['guestnocomment'] = '访客不可以发表评论！';
 $string['guestnoeditprofile'] = '访客不能编辑个人资料';
 $string['guestnoeditprofileother'] = '访客的个人资料不能被编辑';
@@ -274,6 +284,7 @@ $string['idnumbertaken'] = 'ID号已经被使用';
 $string['idnumbertoolong'] = 'ID 号太长';
 $string['importformatnotimplement'] = '抱歉，目前不支持导入这种格式.';
 $string['incorrectext'] = '文件扩展名不正确';
+$string['inplaceeditableerror'] = '调用更新处理器失效';
 $string['installproblem'] = '安装过程中出现的错误通常是无法恢复的，如果您要重新安装，可能需要建立一个新的数据库或者使用不同的数据库前缀。';
 $string['internalauthpassworderror'] = '内部认证密码丢失或密码策略无效';
 $string['invalidaccess'] = '页面加载不正确';
@@ -296,6 +307,7 @@ $string['invalidcomponent'] = '无效组件名称';
 $string['invalidconfirmdata'] = '无效的确认数据';
 $string['invalidcontext'] = '无效的关联';
 $string['invalidcourse'] = '无效课程';
+$string['invalidcourseformat'] = '无效的课程格式';
 $string['invalidcourseid'] = '您正试图使用一个无效的课程 ID';
 $string['invalidcourselevel'] = '场景级别不正确';
 $string['invalidcoursemodule'] = '课程模块 ID 无效';
@@ -341,8 +353,9 @@ $string['invalidsesskey'] = '错误的 sesskey，表单未被接收。';
 $string['invalidshortname'] = '这是一个无效的课程简称';
 $string['invalidsourcefield'] = '草稿文件的源地址域无效';
 $string['invalidstatedetected'] = '发生错误：{$a}。正常情况下这应该不会发生。';
-$string['invalidurl'] = '无效的 URL 地址';
+$string['invalidurl'] = '无效的 网页地址';
 $string['invaliduser'] = '无效的用户';
+$string['invaliduserdata'] = '无效的用户资料：{$a}';
 $string['invaliduserfield'] = '无效用户字段：{$a}';
 $string['invaliduserid'] = '无效的用户id';
 $string['invalidusername'] = '用户名包含无效字符';
@@ -363,6 +376,7 @@ $string['loginasnoenrol'] = '在课程中“登录为”其他用户时，不能
 $string['loginasonecourse'] = '您不能进入该课程。<br />在进入课程之前，您必须停止“登录为”其他用户。';
 $string['maxareabytes'] = '此文件的大小超过了剩余的空间。';
 $string['maxbytes'] = '此文件超过了允许的最大体积。';
+$string['maxbytesfile'] = '这个文件 {$a->file} 太大了。你可以上传的文件最大容量是 {$a->size}。';
 $string['messagingdisable'] = '本站的消息系统已禁用';
 $string['mimetexisnotexist'] = '您的系统还没有配置去运行mimeTeX。您需要从<a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>为您的PHP_OS平台下载正确的可执行文件，或这从<a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>获得C源码，编译该源码并将可执行文件放入您的 moodle/filter/tex/目录下。';
 $string['mimetexnotexecutable'] = '自定义mimetex不可执行！';
@@ -448,6 +462,7 @@ $string['prefixcannotbeempty'] = '<p>错误：数据库表前缀不能为空({$a
 <p>网站管理员必须修复此问题。</p>';
 $string['prefixtoolong'] = '<p>错误：数据库表前缀过长({$a->dbfamily})</p>
 <p>网站管理员必须修复此问题。{$a->dbfamily}中表前缀的最大长度为{$a->maxlenght}个字符。</p>';
+$string['privatefilesupload'] = '已经不再支持上传到用户私人文件区。请上传到草稿区，然后把这个文件移动到core_user::add_user_private_files';
 $string['processingstops'] = '处理到此结束。剩余记录将被忽略。';
 $string['protected_cc_not_supported'] = '不支持受保护的CC格式。';
 $string['querystringcannotbeempty'] = '查询字符串不可空白';
@@ -533,7 +548,7 @@ $string['unsupportedstate'] = '不支持的完成状态';
 $string['unsupportedwebserver'] = '不支持Web服务器软件({$a})，抱歉。';
 $string['upgraderequires19'] = '错误：已在服务器上安装了新版的Moodle，但是不支持从之前的版本升级。<br />请先升级至最新的1.9.x版。您也可以通过重新安装原始文件返回之前的版本。';
 $string['upgraderunning'] = '网站正在升级，请稍后再试。';
-$string['urlnotdefinerss'] = 'RSS 种子的 URL 未定义';
+$string['urlnotdefinerss'] = 'RSS 种子的网页地址未定义';
 $string['useradmineditadmin'] = '只有管理员能修改其他管理员的账户';
 $string['useradminodelete'] = '不能删除管理员账户';
 $string['userautherror'] = '未知的验证插件';

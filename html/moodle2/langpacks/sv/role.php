@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'role', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -111,13 +111,9 @@ $string['badges:viewbadges'] = 'Visa tillgängliga märken utan att ha tagit dem
 $string['badges:viewotherbadges'] = 'Visa publika märken i andra användares profiler';
 $string['block:edit'] = 'Redigera inställningarna ett block';
 $string['block:view'] = 'Visa block';
-$string['blog:associatecourse'] = 'Koppla inlägg i bloggar till kurser';
-$string['blog:associatemodule'] = 'Koppla inlägg i bloggar till aktivitetsmoduler';
 $string['blog:create'] = 'Skapa nya bidrag till bloggar';
 $string['blog:manageentries'] = 'Redigera och administrera inlägg';
 $string['blog:manageexternal'] = 'Redigera och administrera externa bloggar';
-$string['blog:manageofficialtags'] = 'Administrera officiella etiketter';
-$string['blog:managepersonaltags'] = 'Administrera personliga etiketter';
 $string['blog:search'] = 'Sök inlägg i bloggar';
 $string['blog:view'] = 'Visa bidrag till bloggar';
 $string['blog:viewdrafts'] = 'Visa utkast till inlägg i bloggar';
@@ -146,6 +142,37 @@ $string['comment:post'] = 'Publicera kommentarer';
 $string['comment:view'] = 'Läs kommentarer';
 $string['community:add'] = 'Använd blocket för gemenskap för att söka efter hubbar och hitta kurser';
 $string['community:download'] = 'Ladda ner en kurs från blocket för gemenskap';
+$string['competency:competencygrade'] = 'Ange bedömning av kompetenser';
+$string['competency:competencymanage'] = 'Hantera ramverk för kompetenser';
+$string['competency:competencyview'] = 'Visa ramverk för kompetenser';
+$string['competency:coursecompetencyconfigure'] = 'Konfigurera inställningar för ramverk för kompetenser';
+$string['competency:coursecompetencygradable'] = 'Mottag kompetensbedömning';
+$string['competency:coursecompetencymanage'] = 'Hantera kurskompetenser';
+$string['competency:coursecompetencyview'] = 'Visa kurskompetenser';
+$string['competency:evidencedelete'] = 'Ta bort verifiering';
+$string['competency:plancomment'] = 'Kommentar på en studieplan';
+$string['competency:plancommentown'] = 'Kommentar på den egna studieplanen';
+$string['competency:planmanage'] = 'Hantera studieplaner';
+$string['competency:planmanagedraft'] = 'Hantera utkast av studieplaner';
+$string['competency:planmanageown'] = 'Hantera egna studieplaner';
+$string['competency:planmanageowndraft'] = 'Hantera egna utkast av studieplaner';
+$string['competency:planrequestreview'] = 'Begär en granskning av en studieplan';
+$string['competency:planrequestreviewown'] = 'Begär en granskning av den egna studieplanen';
+$string['competency:planreview'] = 'Granska en studieplan';
+$string['competency:planview'] = 'Granska alla studieplaner';
+$string['competency:planviewdraft'] = 'Granska utkast till studieplaner';
+$string['competency:planviewown'] = 'Visa egna studieplaner';
+$string['competency:planviewowndraft'] = 'Visa egna utkast av studieplaner';
+$string['competency:templatemanage'] = 'Hantera mallar för läroplaner';
+$string['competency:templateview'] = 'Visa mallar för studieplaner';
+$string['competency:usercompetencycomment'] = 'Kommentera en användares kompetens';
+$string['competency:usercompetencycommentown'] = 'Kommentera på egna användarkompetensen';
+$string['competency:usercompetencyrequestreview'] = 'Begär en granskning av en användares kompetens';
+$string['competency:usercompetencyrequestreviewown'] = 'Begär en granskning av den egna användarkompetensen';
+$string['competency:usercompetencyreview'] = 'Granska en användares kompetens';
+$string['competency:userevidencemanage'] = 'Hantera verifieringar av tidigare lärande';
+$string['competency:userevidencemanageown'] = 'Hantera verifieringar av eget tidigare lärande';
+$string['competency:userevidenceview'] = 'Visa verifieringar av användares tidigare lärande';
 $string['confirmaddadmin'] = 'Vill Du verkligen lägga till användaren <strong>{$a}</strong> som ny administratör på webbplatsen?';
 $string['confirmdeladmin'] = 'Vill Du verkligen ta bort användaren <strong>{$a}</strong> från listan över administratörer på webbplatsen?';
 $string['confirmroleprevent'] = 'Vill Du verkligen ta bort <strong>{$a->role}</strong> från listan av tillåtna roller för kapaciteten {$a->cap} i sammanhanget {$a->context}?';
@@ -239,7 +266,6 @@ $string['grade:unlock'] = 'Lås upp betyg/omdömen eller komponenter';
 $string['grade:view'] = 'Visa egna betyg/omdömen';
 $string['grade:viewall'] = 'Visa betyg/omdömen för andra användare';
 $string['grade:viewhidden'] = 'Visa dolda getyg/omdömen för ägaren';
-$string['hidden'] = 'Dold';
 $string['inactiveformorethan'] = 'Inaktiv i mer än {$a->timeperiod}';
 $string['ingroup'] = 'i gruppen "{$a->group}"';
 $string['inherit'] = 'Ärv';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cachestore_memcached', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['hash_help'] = 'Legt den Hash-Algorithmus für die Schlüssel fest. Jede
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
+$string['isshared'] = 'Geteilter Cache';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Prefix-Schlüssel';
 $string['prefix_help'] = 'Dies kann verwandt werden, um eine \'domain\' für Ihre Schlüsselwerte für mehrere memcached Speicher auf einer einzelnen memcached Installation zu erzeugen. Sie darf nicht länger als 16 Zeichen sein.';

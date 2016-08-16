@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,3 +42,4 @@ $string['modulename_help'] = 'Una etiqueta permet inserir textos i imatges entre
 $string['modulenameplural'] = 'Etiquetes';
 $string['pluginadministration'] = 'Administració d\'etiquetes';
 $string['pluginname'] = 'Etiqueta';
+$string['search:activity'] = 'Etiqueta';

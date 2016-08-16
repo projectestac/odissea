@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,20 @@ $string['groupinfopeople'] = 'Info om valda personer';
 $string['grouping'] = 'Gruppindelning';
 $string['groupingaddedsuccesfully'] = 'Gruppindelning {$a} lades till framgångsrikt';
 $string['groupingdescription'] = 'Beskrivning av gruppindelning';
-$string['grouping_help'] = 'En gruppering är en samling av grupper inom en kurs. Avsikten är att olika grupperingar kan användas för olika aktiviteter i kursen, så att grupperna i t.ex. en "gruppering för samarbete" skulle användas för en grupp-wiki medan en "gruppering för diskussioner" skulle användas för en forum-aktiviteten.';
+$string['grouping_help'] = '<p>En gruppering är en samling av grupper
+ inom en kurs - ett nytt koncept som introducerades i Moodle 1.8.
+</p>
+
+<p>Avsikten är att olika grupperingar kan användas för olika aktiviteter
+i kursen, så att grupperna i t.ex.
+ en "gruppering för samarbete" skulle användas för en grupp-wiki medan
+en "gruppering för diskussioner" skulle användas för en forum-aktivitetet.
+
+</p>
+
+<p>På sidan för inställningar för kurs så kan Du helt enkelt behålla det förinställda
+standardvärdet (vilken gruppering som helst) eller välja den gruppering Du vill ha och spara Dina ändringar.
+</p>';
 $string['groupingname'] = 'Namn på gruppindelning';
 $string['groupingnameexists'] = 'Namnet \'{$a}\' för gruppindelning finns redan i den här kursen, var snäll och välj en annan.';
 $string['groupings'] = 'Gruppindelningar';
@@ -143,6 +156,7 @@ $string['importgroups_help'] = 'Grupper kan importeras via testfiler. Formatet f
 $string['javascriptrequired'] = 'Den här sidan kräver Javascript för att aktiveras.';
 $string['members'] = 'Medlemmar per grupp';
 $string['membersofselectedgroup'] = 'Medlemmar av grupp';
+$string['mygroups'] = 'Mina grupper';
 $string['namingscheme'] = 'Modell för namngivning';
 $string['namingscheme_help'] = 'At (@) symbolen kan användas för att skapa grupper med fortlöpande bokstavs benämning. Till exempel Grupp @ genererar grupper med namnen Grupp A, Grupp B, Grupp C osv.
 
@@ -197,6 +211,7 @@ $string['nousersinrole'] = 'Det finns inga lämpliga användare i den valda roll
 $string['number'] = 'Räkning av grupper/medlemmar';
 $string['numgroups'] = 'Antal grupper';
 $string['nummembers'] = 'Medlemmar per grupp';
+$string['othergroups'] = 'Andra grupper';
 $string['overview'] = 'Översikt';
 $string['potentialmembers'] = 'Potentiella medlemmar: {$a}';
 $string['potentialmembs'] = 'Möjliga medlemmar';
@@ -208,7 +223,7 @@ $string['removegroupfromselectedgrouping'] = 'Ta bort grupp från gruppindelning
 $string['removegroupingsmembers'] = 'Ta bort alla grupper från gruppindelningarna';
 $string['removegroupsmembers'] = 'Ta bort alla medlemmar i grupp';
 $string['removeselectedusers'] = 'Ta bort de markerade användarna';
-$string['selectfromgroup'] = 'Välj medlem från gruppen';
+$string['selectfromgroup'] = 'Välj medlemmar från gruppen';
 $string['selectfromgrouping'] = 'Välj medlemmar från gruppindelning';
 $string['selectfromrole'] = 'Välj medlemmar med roll';
 $string['showgroupsingrouping'] = 'Visa grupper i gruppindelning';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_backups', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   report_backups
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backupofcourselogs'] = 'Registres de la còpia de seguretat {$a}';
+$string['logsofbackupexecutedon'] = 'Registres de la còpia de seguretat executada en {$a}';
+$string['nobackupsfound'] = 'No s\'ha trobat cap còpia de seguretat.';
+$string['nologsfound'] = 'No s\'ha trobat cap registre en aquesta còpia de seguretat.';
 $string['pluginname'] = 'Informe de còpies de seguretat';
+$string['strftimetime'] = '%I:%M:%S %p';
+$string['viewlogs'] = 'Mostra els registres';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_number', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'datafield_number', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   datafield_number
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

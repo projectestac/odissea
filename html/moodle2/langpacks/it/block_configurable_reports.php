@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_configurable_reports', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -281,7 +281,6 @@ $string['previousstart'] = 'Inizio precedente';
 $string['printreport'] = 'Stampa report';
 $string['puserfield'] = 'Valore del campo utente';
 $string['puserfield_summary'] = 'Utente con il valore selezionato nel campo selezionato';
-$string['queryfailed'] = 'Query non riuscita';
 $string['querysql'] = 'Query SQL';
 $string['remote'] = 'Esegui in un DB remoto';
 $string['remotedescription'] = 'La query verrà eseguita in un DB remoto';

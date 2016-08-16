@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz_grading', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['bystudentlastname'] = 'Pelo último nome do aluno';
 $string['cannotgradethisattempt'] = 'Não é possível avaliar esta tentativa';
 $string['cannotloadquestioninfo'] = 'Não é possível carregar as informações específicas deste tipo de pergunta';
 $string['changeoptions'] = 'Alterar opções';
-$string['essayonly'] = 'As perguntas seguintes têm de ser classificadas manualmente';
+$string['essayonly'] = 'As perguntas seguintes têm de ser avaliadas manualmente';
 $string['grade'] = 'Avaliar';
 $string['gradeall'] = 'Avaliar todas';
 $string['gradeattemptsall'] = 'Todas ({$a})';

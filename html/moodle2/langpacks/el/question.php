@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addanotherhint'] = 'Προσθήκη μιας ακόμα βοήθειας (hint)';
+$string['addcategory'] = 'Προσθήκη κατηγορίας';
 $string['addmorechoiceblanks'] = 'Κενά πεδία για {no} ακόμα επιλογές';
 $string['adminreport'] = 'Αναφορά πιθανών προβλημάτων στην βάση δεδομένων ερωτήσεων σας.';
+$string['advancedsearchoptions'] = 'Επιλογές αναζήτησης';
+$string['alltries'] = 'Όλες οι προσπάθειες';
 $string['answer'] = 'Απάντηση';
+$string['answers'] = 'Απαντήσεις';
+$string['answersaved'] = 'Η απάντηση αποθηκεύτηκε';
 $string['availableq'] = 'Διαθέσιμο?';
 $string['badbase'] = 'Λάθος βάση προτού **: {$a}**';
 $string['broken'] = 'Αυτός είναι ένας "χαλασμένος σύνδεσμος", δείχνει σε ένα αρχέιο που δεν υπάρχει.';
@@ -62,19 +67,27 @@ $string['category'] = 'Κατηγορία';
 $string['categorycurrent'] = 'Τρέχουσα κατηγορία';
 $string['categorycurrentuse'] = 'Χρήση αυτής της κατηγορίας';
 $string['categorydoesnotexist'] = 'Αυτή η κατηγορία δεν υπάρχει';
+$string['categoryinfo'] = 'Πληροφορίες κατηγορίας';
 $string['categorymove'] = 'Η κατηγορία "{$a->name}" περιλαμβάνει {$a->count} ερωτήσεις (κάποιες μπορεί να είναι παλιές, κρυμμένες, ερωτήσεις που χρησιμοποιούνται ακόμα σε υπάρχοντα κουίζ). Παρακαλώ, επιλέξτε άλλη κατηγορία για να τις μετακινήσετε.';
 $string['categorymoveto'] = 'Αποθήκευση στην κατηγορία';
 $string['changepublishstatuscat'] = '<a href="{$a->caturl}">Η κατηγορία "{$a->name}"</a> στο μάθημα "{$a->coursename}" θα έχει την κατάσταση διαμοιρασμού του αλλαγμένη από <strong>{$a->changefrom} σε {$a->changeto}</strong>.';
 $string['chooseqtypetoadd'] = 'Επιλέξτε έναν τύπο ερώτησης για να προσθέσετε';
 $string['clearwrongparts'] = 'Καθαρισμός λανθασμένων απαντήσεων';
+$string['clickflag'] = 'Μαρκάρισμα ερώτησης';
 $string['clicktoflag'] = 'Κάντε κλικ για να μαρκάρετε αυτή την ερώτηση';
 $string['clicktounflag'] = 'Κάντε κλικ για να ξεμαρκάρετε αυτή την ερώτηση';
+$string['clickunflag'] = 'Ξεμαρκάρισμα ερώτησης';
+$string['closepreview'] = 'Κλείσιμο προεπισκόπησης';
 $string['combinedfeedback'] = 'Συνδυασμένη ανατροφοδότηση';
+$string['comment'] = 'Σχόλιο';
 $string['comments'] = 'Σχόλια';
+$string['commentx'] = 'Σχόλιο: {$a}';
 $string['complete'] = 'Ολοκλήρωση';
 $string['contexterror'] = 'Δεν θα έπρεπε να έχετε φτάσει εδώ εάν δεν μετακινείτε μια κατηγορία σε ένα άλλο πλαίσιο.';
 $string['copy'] = 'Αντιγραφή από {$a} και αλλαγή συνδέσμων.';
+$string['correct'] = 'Σωστό';
 $string['correctfeedback'] = 'Για κάθε σωστή απάντηση';
+$string['correctfeedbackdefault'] = 'Η απαντησή σας είναι σωστή';
 $string['created'] = 'Δημιουργήθηκε';
 $string['createdby'] = 'Δημιουργήθηκε από';
 $string['createdmodifiedheader'] = 'Δημιουργήθηκε / Τελευταία αποθήκευση';
@@ -98,8 +111,10 @@ $string['defaultmark'] = 'Προεπιλεγμένη βαθμολογία';
 $string['deletecoursecategorywithquestions'] = 'Υπάρχουν ερωτήσεις στην τράπεζα ερωτήσεων συσχετισμένες με αυτή την κατηγορία μαθήματος. Εάν συνεχίσετε. θα διαγραφούν. Πιθανώς να θέλετε να τις μετακινήσετε πρώτα, χρησιμοποιώντας την διεπαφή της τράπεζας ερωτήσεων.';
 $string['deletingqtype'] = 'Διαγραφή τύπου ερώτησης \'{$a}\'';
 $string['disabled'] = 'Απενεργοποιημένο';
+$string['displayoptions'] = 'Ρυθμίσεις προβολής';
 $string['disterror'] = 'Η διανομή {$a} δημιούργησε προβλήματα';
 $string['donothing'] = 'Μην αντιγράφετε η μετακινείτε αρχεία ή πραγματοποιείτε αλλαγή συνδέσμων.';
+$string['editcategories'] = 'Επεξεργασία κατηγοριών';
 $string['editingcategory'] = 'Επεξεργασία μιας κατηγορίας';
 $string['editingquestion'] = 'Επεξεργασία μιας ερώτησης';
 $string['editquestions'] = 'Επεξεργασία ερωτήσεων';

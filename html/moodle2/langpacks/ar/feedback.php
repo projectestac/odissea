@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'feedback', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -136,7 +136,7 @@ $string['save_item'] = 'أحفظ السؤال';
 $string['saving_failed'] = 'فشل الحفظ';
 $string['search_course'] = 'البحث في مقرر دراسي';
 $string['searchcourses'] = 'البحث في المقررات الدراسية';
-$string['send'] = 'إرسال';
+$string['send'] = 'إرسل';
 $string['send_message'] = 'ارسل رسالة';
 $string['separator_decimal'] = '.';
 $string['separator_thousand'] = '،';

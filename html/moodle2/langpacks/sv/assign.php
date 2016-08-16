@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assign', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -140,7 +140,7 @@ $string['editaction'] = 'Åtgärder...';
 $string['editattemptfeedback'] = 'Redigera betyg och feedback för försök nr {$a}.';
 $string['editingpreviousfeedbackwarning'] = 'Du redigerar feedback av ett tidigare försök. Detta är försök nr This is attempt {$a->attemptnumber} av totalt{$a->totalattempts}.';
 $string['editingstatus'] = 'Redigerar status';
-$string['editsubmission'] = 'Redigera min inskickade uppgift';
+$string['editsubmission'] = 'Redigera min inskickade uppgiftslösning';
 $string['editsubmission_help'] = 'Gör ändringar i din inlämning';
 $string['editsubmissionother'] = 'Redigera inlämning för {$a}';
 $string['enabled'] = 'Aktiverad';
@@ -201,9 +201,9 @@ $string['gradelocked'] = 'Detta betyg är låst eller skrevs över i betygsboken
 $string['gradeoutof'] = 'Betyg ur {$a}';
 $string['gradeoutofhelp'] = 'Betyg';
 $string['gradeoutofhelp_help'] = 'Ange betyget för elevens inlämnade uppgift här. Du kan använda decimaler.';
-$string['gradersubmissionupdatedhtml'] = '{$a->username} har uppdaterat sin inskickade uppgift för <i>\'{$a->assignment}\' den {$a->timeupdated}</i><br /><br />Den är <a href="{$a->url}"> tillgänglig på webbplatsen.';
+$string['gradersubmissionupdatedhtml'] = '{$a->username} har uppdaterat sin inskickade uppgiftslösning för <i>\'{$a->assignment}\' den {$a->timeupdated}</i><br /><br />Den är <a href="{$a->url}"> tillgänglig på webbplatsen.';
 $string['gradersubmissionupdatedsmall'] = '{$a->username} har uppdaterat sin inlämning för inlämningsuppgift {$a->assignment}.';
-$string['gradersubmissionupdatedtext'] = '{$a->username} har uppdaterat sina inskickade uppgifter för
+$string['gradersubmissionupdatedtext'] = '{$a->username} har uppdaterat sina inskickade uppgiftslösningar för
  \'{$a->assignment}\' den at {$a->timeupdated}
 
 Den är tillgänglig här:
@@ -269,6 +269,8 @@ Elever kan lämna in digitalt material (filer) såsom dokument från ordbehandli
 Vid granskning av inlämningsuppgifter kan lärare ge kommentarer för återkoppling samt ladda upp filer såsom rättningsmarkerade elevuppgifter, dokument med kommentarer eller talade kommentarer (ljudfiler). Inlämningsuppgifter kan betygssättas med numerisk eller anpassad skala eller med en avancerad betygsmetod såsom en rubrik. Slutgiltiga betyg lagras i betygsboken.';
 $string['modulenameplural'] = 'Uppgifter';
 $string['moreusers'] = '{$a} mer ...';
+$string['multipleteams'] = 'Medlem av mer än en grupp';
+$string['multipleteamsgrader'] = 'Medlem av mer än en grupp, kan därför inte ladda upp fil';
 $string['mysubmission'] = 'Min inlämning:';
 $string['newsubmissions'] = 'Uppgifterna är inskickade';
 $string['noattempt'] = 'Inga försök';
@@ -280,6 +282,8 @@ $string['noonlinesubmissions'] = 'Denna inlämningsuppgift kräver inte att du l
 $string['nosavebutnext'] = 'Nästa';
 $string['nosubmission'] = 'Inget har lämnats in för denna inlämningsuppgift';
 $string['nosubmissionsacceptedafter'] = 'Inga inlämningar tillåts efter';
+$string['noteam'] = 'Inte medlem i någon grupp';
+$string['noteamgrader'] = 'Inte medlem i någon grupp, kan därför inte ladda upp fil';
 $string['notgraded'] = 'Ej betygssatt';
 $string['notgradedyet'] = 'Ännu ej bedömd';
 $string['notifications'] = 'Meddelande';
@@ -300,6 +304,8 @@ $string['page-mod-assign-x'] = 'Varje sida för modulen inlämningsuppgift';
 $string['participant'] = 'Deltagare';
 $string['pluginadministration'] = 'Administration av inlämningsuppgift';
 $string['pluginname'] = 'Inlämningsuppgift';
+$string['preventsubmissionnotingroup'] = 'Kräver gruppen att lämna in';
+$string['preventsubmissionnotingroup_help'] = 'Om aktiverat , kan användare som inte är medlemmar i en grupp inte lämna in';
 $string['preventsubmissions'] = 'Förhindra användaren från att göra fler inlämningar till denna inlämningsuppgift.';
 $string['preventsubmissionsshort'] = 'Förhindra ändringar av inlämnad uppgift';
 $string['previous'] = 'Tidigare';
@@ -382,7 +388,7 @@ $string['submissionstatus_'] = 'Ingen inlämning';
 $string['submissionstatus_draft'] = 'Utkast (ej inlämnad)';
 $string['submissionstatusheading'] = 'Status för inlämning';
 $string['submissionstatus_marked'] = 'Betygssatt';
-$string['submissionstatus_new'] = 'Ny inlämning';
+$string['submissionstatus_new'] = 'Ingen inlämning';
 $string['submissionstatus_reopened'] = 'Återöppnad';
 $string['submissionstatus_submitted'] = 'Inlämnad för betygssättning';
 $string['submissionsummary'] = '{$a->status}. Senast ändrad {$a->timemodified}';

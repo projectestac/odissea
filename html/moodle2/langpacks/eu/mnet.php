@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -156,6 +156,7 @@ $string['registerhostson'] = 'Ostalari guztien erregistroa une honetan <b>piztut
 $string['remotecourses'] = 'Urrutiko ikastaroak';
 $string['remotehost'] = 'Urrutiko ostalaria';
 $string['remotehosts'] = 'Urrutiko ostalariak';
+$string['remoteuser'] = 'Urrutiko {$a->remotetype} erabiltzailea';
 $string['requiresopenssl'] = 'Sareak OpenSSL luzapena behar du';
 $string['restore'] = 'Berreskuratu';
 $string['returnvalue'] = 'Itzulera-balioa';

@@ -76,4 +76,20 @@ class qtype_wq_renderer extends qtype_renderer {
     protected function lang(){
         return html_writer::empty_tag('input', array('class' => 'wirislang', 'type' => 'hidden', 'value' => current_language()));
     }
+
+    /**
+     * Display any extra question-type specific content that should be visible
+     * when grading, if appropriate.
+     *
+     * @param question_attempt $qa a question attempt.
+     * @param question_display_options $options controls what should and should not be displayed.
+     * @return string HTML fragment.
+     */
+    public function manual_comment(question_attempt $qa, question_display_options $options) {
+        return $this->base->manual_comment($qa, $options);
+    }
+	
+	public function feedback_class($fraction) {
+		return $this->base->feedback_class($fraction);
+	}
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_cohort', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addgroup'] = 'Gehitu taldera';
 $string['assignrole'] = 'Esleitu rola';
 $string['cohort:config'] = 'Kohorteen instantziak konfiguratu';
 $string['cohort:unenrol'] = 'Desmatrikulatu kontua etenda duten erabiltzaileak';
+$string['creategroup'] = 'Sortu beste talde bat';
 $string['instanceexists'] = 'Kohortea dagoeneko sinkronizatu da aukeratutako rolarekin';
 $string['pluginname'] = 'Sinkronizatu kohortea';
 $string['pluginname_desc'] = 'Kohorteak matrikulatzeko pluginak kohorte jakin bateko partaideak ikastaroko partaideekin sinkronizatzen ditu.';

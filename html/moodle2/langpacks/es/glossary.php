@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -348,6 +348,7 @@ $string['studentcanpost'] = 'Los estudiantes pueden agregar entradas';
 $string['totalentries'] = 'Total de entradas';
 $string['usedynalink'] = 'Enlace automático a las entradas del glosario';
 $string['usedynalink_help'] = 'Si el <strong>Enlace automático al glosario</strong> ha sido habilitada por un administrador y esta opción está activada, la opción del formulario "Agregar una nueva entrada" permite vincular automáticamente las palabras y frases del concepto allá donde aparezcan en el resto del curso.';
+$string['visibletabs'] = 'Pestañas visibles';
 $string['waitingapproval'] = 'Esperando aprobación';
 $string['warningstudentcapost'] = '(Esto sólo aplica si el glosario no es el principal)';
 $string['withauthor'] = 'Conceptos con autor';

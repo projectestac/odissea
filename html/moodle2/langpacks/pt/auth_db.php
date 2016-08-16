@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,10 +48,11 @@ $string['auth_dbname'] = 'Nome da própria base de dados. Deixe em branco se est
 $string['auth_dbname_key'] = 'Nome da base de dados';
 $string['auth_dbpass'] = 'Senha do utilizador indicado acima';
 $string['auth_dbpass_key'] = 'Senha';
-$string['auth_dbpasstype'] = '<p> Especifique o formato em uso do campo da senha. O MD5 é útil para se ligar a outras aplicações web comuns, como o PostNuke. </p> <p>Use \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizasores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail preenchido no DB externo, e deve executar o admin/cron.php e auth/db/cli/sync_users.php regularmente. O Moodle enviará um e-mail para os novos utilizadores com uma senha temporária. </p>';
+$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso. O hashing MD5 é útil para se ligar a outras aplicações web comuns, como o PostNuke.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail na Base de Dados externa, e deve executar o admin/cron.php e auth/db/cli/sync_users.php com regularidade. O Moodle enviará um e-mail para os novos utilizadores com uma senha temporária.</p>';
 $string['auth_dbpasstype_key'] = 'Formato da senha';
 $string['auth_dbreviveduser'] = 'O utilizador {$a->name} com ID {$a->id} foi reativado';
 $string['auth_dbrevivedusererror'] = 'Erro ao reativar o utilizador {$a}';
+$string['auth_dbsaltedcrypt'] = 'Crypt one-way string hashing';
 $string['auth_dbsetupsql'] = 'Comando de configuração do SQL';
 $string['auth_dbsetupsqlhelp'] = 'Comando SQL especial para configuração da base de dados. É usado frequentemente para configurar a codificação da comunicação. Exemplo para MySQL e PostgreSQL: <em>SET NAMES "utf8"</em>';
 $string['auth_dbsuspenduser'] = 'O utilizador {$a->name} com ID {$a->id} foi suspenso';

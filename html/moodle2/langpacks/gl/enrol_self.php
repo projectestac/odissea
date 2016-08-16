@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,6 +66,7 @@ $string['groupkey_desc'] = 'Utilice chaves de matriculación de grupo de modo pr
 $string['groupkey_help'] = 'Ademais de restrinxir o acceso ao curso soamente para aqueles que coñezan a chave, utilizar unha chave de matriculación de grupo significa que os usuarios se engadirán automaticamente ao grupo cando se matriculen no curso.
 
 Nota: Debe especificar unha chave de matriculación no curso na configuración de automatriculación así como as chaves de matriculación de grupo na configuración dos grupos.';
+$string['keyholder'] = 'Vostede debería ter recibida esta chave de matriculación de:';
 $string['longtimenosee'] = 'Desmatricular os inactivos tras';
 $string['longtimenosee_help'] = 'Se os usuarios non accederon a un curso durante un longo período, entón son desmatriculados automaticamente. Este parámetro especifica ese tempo límite.';
 $string['maxenrolled'] = 'Máximo de usuarios matriculados';
@@ -91,6 +92,7 @@ $string['requirepassword'] = 'Require chave para matriculación';
 $string['requirepassword_desc'] = 'Require chave para matriculación nos novos cursos e evita a retirada da chave para matriculación dos cursos existentes.';
 $string['role'] = 'Rol asignado predeterminado';
 $string['self:config'] = 'Configurar instancias de automatrícula';
+$string['self:holdkey'] = 'Aparece coma o propietario da chave de automatriculación';
 $string['self:manage'] = 'Xestionar os usuarios matriculados';
 $string['self:unenrol'] = 'Desmatricular usuarios do curso';
 $string['self:unenrolself'] = 'Desmatricularse do curso';

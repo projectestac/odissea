@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Available course enrolment plugins';
 $string['addinstance'] = 'Add method';
+$string['addinstanceanother'] = 'Add method and create another';
 $string['ajaxnext25'] = 'Next 25...';
 $string['ajaxoneuserfound'] = '1 user found';
 $string['ajaxxusersfound'] = '{$a} users found';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = 'Error creating cohort sync enrolment instance in 
 $string['errorenrolcohortusers'] = 'Error enrolling cohort members in this course.';
 $string['errorthresholdlow'] = 'Notification threshold must be at least 1 day.';
 $string['errorwithbulkoperation'] = 'There was an error while processing your bulk enrolment change.';
+$string['eventenrolinstancecreated'] = 'Enrolment instance created';
+$string['eventenrolinstancedeleted'] = 'Enrolment instance deleted';
+$string['eventenrolinstanceupdated'] = 'Enrolment instance updated';
 $string['eventuserenrolmentcreated'] = 'User enrolled in course';
 $string['eventuserenrolmentdeleted'] = 'User unenrolled from course';
 $string['eventuserenrolmentupdated'] = 'User unenrolment updated';
@@ -91,6 +95,7 @@ $string['extremovedsuspendnoroles'] = 'Disable course enrolment and remove roles
 $string['extremovedunenrol'] = 'Unenrol user from course';
 $string['finishenrollingusers'] = 'Finish enrolling users';
 $string['foundxcohorts'] = 'Found {$a} cohorts';
+$string['instanceadded'] = 'Method added';
 $string['instanceeditselfwarning'] = 'Warning:';
 $string['instanceeditselfwarningtext'] = 'You are enrolled into this course through this enrolment method, changes may affect your access to this course.';
 $string['invalidenrolinstance'] = 'Invalid enrolment instance';
@@ -100,6 +105,7 @@ $string['manageinstance'] = 'Manage';
 $string['migratetomanual'] = 'Migrate to manual enrolments';
 $string['nochange'] = 'No change';
 $string['noexistingparticipants'] = 'No existing participants';
+$string['nogroup'] = 'No group';
 $string['noguestaccess'] = 'Guests cannot access this course. Please log in.';
 $string['none'] = 'None';
 $string['notenrollable'] = 'You can not enrol yourself in this course.';
@@ -112,6 +118,7 @@ $string['periodend'] = 'until {$a}';
 $string['periodnone'] = 'enrolled {$a}';
 $string['periodstart'] = 'from {$a}';
 $string['periodstartend'] = 'from {$a->start} until {$a->end}';
+$string['proceedtocourse'] = 'Proceed to course content';
 $string['recovergrades'] = 'Recover user\'s old grades if possible';
 $string['rolefromcategory'] = '{$a->role} (Inherited from course category)';
 $string['rolefrommetacourse'] = '{$a->role} (Inherited from parent course)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,5 +59,5 @@ $string['pluginnamesummary'] = 'السماح لإختيار إجابة واحد�
 $string['selectmulti'] = 'اختر واحدة أو أكثر';
 $string['selectone'] = 'اخترأحد الخيارات';
 $string['shuffleanswers'] = 'خلط الخيارات؟';
-$string['shuffleanswers_help'] = 'في حالة التفعيل، سيتم خلط الأسئلة عشوائيا لكل محاولة، بشرط أن يتم تفعيل خلط الاجابات في كل سؤال في إعدادات الامتحان';
+$string['shuffleanswers_help'] = 'في حالة التفعيل، سيتم خلط الأسئلة عشوائيا لكل محاولة، بشرط أن يتم تفعيل خلط الاجابات في كل سؤال في إعدادات الاختبار';
 $string['singleanswer'] = 'اختر اجابة واحدة';

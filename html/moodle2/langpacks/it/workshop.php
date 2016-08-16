@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshop', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,8 @@ $string['allocation'] = 'Distribuzione consegne';
 $string['allocationconfigured'] = 'Distribuzione configurata';
 $string['allocationdone'] = 'Distribuzione effettuata';
 $string['allocationerror'] = 'Errore durante la distribuzione';
+$string['allowedfiletypesforoverallfeedback'] = 'Tipi di file consentiti da allegare al feedback';
+$string['allowedfiletypesforsubmission'] = 'Tipi di file consentiti da allegare alla consegna';
 $string['allsubmissions'] = 'Tutte le consegne ({$a})';
 $string['alreadygraded'] = 'Ha già un voto';
 $string['areaconclusion'] = 'Contenuto della conclusione';
@@ -97,6 +99,7 @@ $string['daystoday'] = 'oggi';
 $string['daystomorrow'] = 'domani';
 $string['daysyesterday'] = 'ieri';
 $string['deadlinesignored'] = 'Le limitazioni temporali non si applicano a te.';
+$string['deletesubmission'] = 'Elimina consegna';
 $string['editassessmentform'] = 'Modifica scheda di valutazione';
 $string['editassessmentformstrategy'] = 'Modifica scheda di valutazione ({$a})';
 $string['editingassessmentform'] = 'Modifica scheda di valutazione';
@@ -104,6 +107,8 @@ $string['editingsubmission'] = 'Modifica consegne';
 $string['editsubmission'] = 'Modifica consegna';
 $string['err_multiplesubmissions'] = 'Durante la modifica di questo form è stata effettuata un\'altra consegna. Le consegne multiple non sono consentite.';
 $string['err_removegrademappings'] = 'Non è possibile rimuovere la mappatura voti non utilizzata';
+$string['err_unknownfileextension'] = 'Estensione file sconosciuta: {$a}';
+$string['err_wrongfileextension'] = 'Non è stato possibile caricare alcuni file ({$a->wrongfiles}). Possono essere caricati solamente file {$a->whitelist}.';
 $string['evaluategradeswait'] = 'Per favore attendi mentre vengono analizzate le valutazioni e calcolati i voti';
 $string['evaluation'] = 'Calcolo dei voti';
 $string['evaluationmethod'] = 'Metodo di calcolo dei voti';
@@ -117,6 +122,7 @@ $string['eventphaseswitched'] = 'Cambiata fase';
 $string['eventsubmissionassessed'] = 'Valutata consegna';
 $string['eventsubmissionassessmentsreset'] = 'Eliminate valutazioni consegna';
 $string['eventsubmissioncreated'] = 'Creata consegna';
+$string['eventsubmissiondeleted'] = 'Eliminata consegna';
 $string['eventsubmissionreassessed'] = 'Valutata di nuovo consegna';
 $string['eventsubmissionupdated'] = 'Aggiornata consegna';
 $string['eventsubmissionviewed'] = 'Visualizzata consegna';
@@ -160,6 +166,8 @@ $string['gradeitemsubmission'] = '{$a->workshopname} (consegna)';
 $string['gradeover'] = 'Modifica il voto per la consegna';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Report dei voti del workshop';
+$string['gradetopassgrading'] = 'Sufficienza per la valutazione';
+$string['gradetopasssubmission'] = 'Sufficienza per la consegna';
 $string['gradinggrade'] = 'Voto per la valutazione';
 $string['gradinggradecalculated'] = 'Voto calcolato per la valutazione';
 $string['gradinggrade_help'] = 'L\'impostazione specifica il voto massimo ottenibile per la valutazione della consegna.';
@@ -195,6 +203,7 @@ $string['nogradeyet'] = 'Senza voto';
 $string['nosubmissionfound'] = 'Non sono state trovate consegne per questo utente';
 $string['nosubmissions'] = 'Non ci sono ancora consegne';
 $string['notassessed'] = 'Non valutata';
+$string['nothingfound'] = 'Non c\'è nulla da visualizzare';
 $string['nothingtoreview'] = 'Non c\'è nulla da rivedere';
 $string['notoverridden'] = 'Non modificati';
 $string['noworkshops'] = 'In questo corso non ci sono workshop';
@@ -239,6 +248,7 @@ $string['saveandclose'] = 'Salva e chiudi';
 $string['saveandcontinue'] = 'Salva e continua a modificare';
 $string['saveandpreview'] = 'Salva e anteprima';
 $string['saveandshownext'] = 'Salva e visualizza il successivo';
+$string['search:activity'] = 'Workshop - Informazioni sull\'attività';
 $string['selfassessmentdisabled'] = 'Auto valutazione disabilitata';
 $string['showingperpage'] = 'Visualizzazione di {$a} elementi per pagina';
 $string['showingperpagechange'] = 'Modifica...';
@@ -257,6 +267,8 @@ $string['submission'] = 'Consegna';
 $string['submissionattachment'] = 'Allegato';
 $string['submissionby'] = 'Consegne di {$a}';
 $string['submissioncontent'] = 'Contenuto consegna';
+$string['submissiondeleteconfirm'] = 'Sei sicuro di eliminare la consegna seguente?';
+$string['submissiondeleteconfirmassess'] = 'Sei sicuro di eliminare la consegna seguente? Verranno anche eliminate {$a->count} valutazioni associate alla consegna, cosa che potrà alterare le valutazioni dei revisori.';
 $string['submissionend'] = 'Fine consegne';
 $string['submissionendbeforestart'] = 'la data di fine consegne non può essere anteriore alla data di inizio consegne';
 $string['submissionenddatetime'] = 'Fine delle consegne: {$a->daydatetime} ({$a->distanceday})';
@@ -268,11 +280,14 @@ Se abiliti questa funzione, è consigliabile utilizzare anche il metodo di distr
 $string['submissiongrade'] = 'Voto per la consegna';
 $string['submissiongrade_help'] = 'L\'impostazione specifica il voto massimo ottenibile per la consegna del lavoro.';
 $string['submissiongradeof'] = 'Voto per la consegna (su {$a})';
+$string['submissionlastmodified'] = 'Ultima modifica';
 $string['submissionsettings'] = 'Impostazioni consegna';
+$string['submissionsreport'] = 'Report delle consegne';
 $string['submissionstart'] = 'Inizio consegne da';
 $string['submissionstartdatetime'] = 'Inizio consegne da {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (Inizio consegne)';
 $string['submissiontitle'] = 'Titolo';
+$string['submittednotsubmitted'] = 'Consegne effettuate ({$a->submitted}) / non effettuate ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Metodo di distribuzione consegne';
 $string['subplugintype_workshopallocation_plural'] = 'Metodi di distribuzione consegne';
 $string['subplugintype_workshopeval'] = 'Metodo di calcolo dei voti';
@@ -314,6 +329,7 @@ $string['weightinfo'] = 'Peso: {$a}';
 $string['withoutsubmission'] = 'Revisori che non hanno consegnato il proprio lavoro';
 $string['workshop:addinstance'] = 'Aggiungere workshop';
 $string['workshop:allocate'] = 'Assegnare consegne per revisione';
+$string['workshop:deletesubmissions'] = 'Eliminare consegne';
 $string['workshop:editdimensions'] = 'Modificare scheda di valutazione';
 $string['workshop:ignoredeadlines'] = 'Ignorare limitazioni temporali';
 $string['workshop:manageexamples'] = 'Gestire consegne di esempio';

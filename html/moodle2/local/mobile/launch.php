@@ -24,6 +24,48 @@
 
 require_once(dirname(__FILE__) . '/../../config.php');
 
+function is_ios() {
+    $useragent = core_useragent::get_user_agent_string();
+    if ($useragent === false) {
+        return false;
+    }
+    if (strpos($useragent, 'AppleWebKit') === false) {
+        return false;
+    }
+    // Look for AppleWebKit, excluding strings with OmniWeb, Shiira and SymbianOS and any other mobile devices.
+    if (strpos($useragent, 'OmniWeb')) {
+        // Reject OmniWeb.
+        return false;
+    }
+    if (strpos($useragent, 'Shiira')) {
+        // Reject Shiira.
+        return false;
+    }
+    if (strpos($useragent, 'SymbianOS')) {
+        // Reject SymbianOS.
+        return false;
+    }
+    if (strpos($useragent, 'Android')) {
+        // Reject Androids too.
+        return false;
+    }
+    if (strpos($useragent, 'Chrome')) {
+        // Reject chrome browsers - it needs to be tested explicitly.
+        // This will also reject Edge, which pretends to be both Chrome, and Safari.
+        return false;
+    }
+
+    if (empty($version)) {
+        return true; // No version specified.
+    }
+    if (preg_match("/AppleWebKit\/([0-9.]+)/i", $useragent, $match)) {
+        if (version_compare($match[1], $version) >= 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
 $serviceshortname  = required_param('service',  PARAM_ALPHANUMEXT);
 $passport          = required_param('passport',  PARAM_RAW);    // Passport send from the app to validate the response URL.
 $urlscheme         = optional_param('urlscheme', 'moodlemobile', PARAM_NOTAGS);
@@ -172,6 +214,23 @@ $forcedurlscheme = get_config('local_mobile', 'urlscheme');
 if (!empty($forcedurlscheme)) {
     $urlscheme = $forcedurlscheme;
 }
-$location = "Location: $urlscheme://token=$apptoken";
-header($location);
-die;
+$location = "$urlscheme://token=$apptoken";
+
+if (is_ios()) {
+    $PAGE->set_context(null);
+    $PAGE->set_url('/local/mobile/launch.php', array('service' => $serviceshortname, 'passport' => $passport, 'urlscheme' => $urlscheme));
+    echo $OUTPUT->header();
+    $notice = get_string('clickheretolaunchtheapp', 'local_mobile');
+?>
+    <p><a id="launchapp" href="<?php echo $location; ?>"><?php echo $notice; ?></a></p>
+    <script>
+        window.onload = function() {
+            document.getElementById('launchapp').click();
+        };
+    </script>
+<?php
+    echo $OUTPUT->footer();
+} else {
+    header('Location: ' . $location);
+    die;
+}

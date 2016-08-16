@@ -99,14 +99,18 @@ $string['config_header_locked'] = 'Locked to deadline';
 $string['config_header_monitored'] = 'Monitored';
 $string['config_header_showsubmitted'] = 'Show submitted before action';
 $string['config_icons'] = 'Use icons in bar';
+$string['config_longbars'] = 'How to present long bars';
 $string['config_now'] = 'Use';
 $string['config_percentage'] = 'Show percentage to students';
+$string['config_scroll'] = 'Scroll';
+$string['config_squeeze'] = 'Squeeze';
 $string['config_title'] = 'Alternate title';
 $string['config_orderby'] = 'Order bar items by';
 $string['config_orderby_due_time'] = '"Expected by" date-time';
 $string['config_orderby_course_order'] = 'Ordering in course';
 $string['config_warning_logstores'] = 'Warning: Logging is disabled so actions relying on views will not be checked.';
 $string['config_warning_loglifetime'] = 'Warning: Logs are cleared after {$a} day(s). Actions relying on views will be affected by this.';
+$string['config_wrap'] = 'Wrap';
 
 // Help strings.
 $string['why_set_the_title'] = 'Why you might want to set the block instance title?';
@@ -159,11 +163,11 @@ $string['what_actions_can_be_monitored_help'] = '
         <li>activity completion (when enabled in the site, course and set for the activity).</li>
     </ul>
 </p>
-<h3>Show submitted before action</h3>
-<p>When actions require students to submit then to wait for a mark, an option can be set to show that the submission has been made, but the full action of marking is not yet complete.</p>
 <h3>Passing</h3>
 <p>For the assignment, lesson and quiz modules, the notion of passing relies on a "Grade to pass" being set for the grade item in the Gradebook. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">More help...</a></p>
 ';
+$string['what_show_submitted_means'] = 'What show submitted before action means.';
+$string['what_show_submitted_means_help'] = 'Some activities allow students to submit. When students have submitted, but the final action (eg. marking) for the activity has not been completed, the Progress bar will change colour to show a submission has been made.';
 $string['why_show_precentage'] = 'Why show a progress percentage to students?';
 $string['why_show_precentage_help'] = '
 <p>It is possible to show an overall percentage of progress to students.</p>
@@ -186,17 +190,28 @@ $string['how_group_works'] = 'How visible group works';
 $string['how_group_works_help'] = '
 <p>Selecting a group will limit the display of the this block to that group only.</p>
 ';
+$string['how_longbars_works'] = 'How long bars are presented';
+$string['how_longbars_works_help'] = '
+<p>When bars exceed a set length, how they can be presented in one of the following ways.</p>
+<ul>
+    <li>Squeezed into one horizontal bar</li>
+    <li>Scrolling sideways to show overflowing bar segments</li>
+    <li>Wrapping to show all bar segments on multiple lines</li>
+</ul>
+<p>Note that when the bar is wrapped, the NOW indicator will not be shown.</p>
+';
 
 
 // Other terms.
 $string['addallcurrentitems'] = 'Add all activities/resources';
-$string['mouse_over_prompt'] = 'Mouse over block for info.';
+$string['mouse_over_prompt'] = 'Mouse over or touch bar for info.';
 $string['no_events_config_message'] = 'There are no activities or resources to monitor the progress of. Create some activities and/or resources then configure this block.';
 $string['no_events_message'] = 'No activities or resources are being monitored. Use config to set up monitoring.';
 $string['no_visible_events_message'] = 'None of the monitored events are currently visible.';
 $string['now_indicator'] = 'NOW';
 $string['pluginname'] = 'Progress Bar';
 $string['selectitemstobeadded'] = 'Select activities/resources';
+$string['showallinfo'] = 'Show all info';
 $string['time_expected'] = 'Expected';
 
 // Global setting strings
@@ -218,6 +233,8 @@ $string['coursenametoshow'] = 'Course name to show on Dashboard';
 $string['shortname'] = 'Short course name';
 $string['fullname'] = 'Full course name';
 $string['showinactive'] = 'Show inactive students in Overview';
+$string['wrapafter'] = 'When wrapping, limit rows to';
+$string['defaultlongbars'] = 'Default presentation for long bars';
 
 // Overview page strings.
 $string['lastonline'] = 'Last in course';
@@ -236,3 +253,4 @@ $string['cachedef_cachedlogs'] = 'Progress Bar log query caching';
 
 // For My home page.
 $string['no_blocks'] = "No Progress Bar blocks are set up for your courses.";
+$string['no_courses'] = "You are not enrolled in any courses. Only bars from enrolled courses will be shown.";

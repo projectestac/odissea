@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['contacts'] = 'Собеседники';
 $string['context'] = 'смотреть в контексте';
 $string['defaultmessageoutputs'] = 'Настройки значений по умолчанию для способов доставки сообщений';
 $string['defaults'] = 'Значения по умолчанию';
+$string['deletemessage'] = 'Удалить сообщение';
+$string['deletemessageconfirmation'] = 'Вы уверенны, что хотите удалить данное сообщение? Сообщение будет удалено лишь из Вашего списка сообщений и по прежнему будет доступно для просмотра собеседником.';
 $string['deletemessagesdays'] = 'Количество дней перед автоматическим удалением старых сообщений ';
 $string['disableall'] = 'Временно отключить уведомления';
 $string['disableall_help'] = 'Временно отключить все уведомления за исключением тех, которые отмечены администратором сайта как «принудительные».';
@@ -56,10 +58,12 @@ $string['emptysearchstring'] = 'Вы не указали, что именно В
 $string['enabled'] = 'Включено';
 $string['errorcallingprocessor'] = 'Ошибка вызова указанного способа доставки';
 $string['errortranslatingdefault'] = 'Ошибка перевода настроек по умолчанию для плагина, вместо них будут использоваться системные настройки';
+$string['errorwhilesendingmessage'] = 'При отправке сообщения произошла ошибка; пожалуйста, попробуйте позже еще раз.';
 $string['eventmessagecontactadded'] = 'Добавлен собеседник';
 $string['eventmessagecontactblocked'] = 'Собеседник заблокирован';
 $string['eventmessagecontactremoved'] = 'Собеседник удален';
 $string['eventmessagecontactunblocked'] = 'Собеседник разблокирован';
+$string['eventmessagedeleted'] = 'Сообщение удалено';
 $string['eventmessagesent'] = 'Сообщение отправлено';
 $string['eventmessageviewed'] = 'Сообщение просмотрено';
 $string['forced'] = 'Установить принудительно';
@@ -86,6 +90,8 @@ $string['messagehistoryfull'] = 'Все сообщения';
 $string['messagenavigation'] = 'Навигация по сообщениям:';
 $string['messageoutputs'] = 'Способы доставки сообщений';
 $string['messages'] = 'Сообщения';
+$string['messagesent'] = 'Сообщение отправлено';
+$string['messagetosend'] = 'Сообщение для отправки';
 $string['messaging'] = 'Обмен сообщениями';
 $string['messagingblockednoncontact'] = '{$a} не сможет ответить - Вы заблокировали этого пользователя.';
 $string['messagingdisabled'] = 'На этом сайте отключена внутренняя система обмена сообщениями. Сообщения будут отправлены по электронной почте.';
@@ -126,6 +132,7 @@ $string['search'] = 'Поиск';
 $string['searchcombined'] = 'Поиск пользователей и сообщений';
 $string['searchforperson'] = 'Поиск пользователя';
 $string['searchmessages'] = 'Поиск сообщений';
+$string['sendingmessage'] = 'Отправка сообщения';
 $string['sendingvia'] = 'Отправка «{$a->provider}» через «{$a->processor}»';
 $string['sendingviawhen'] = 'Отправка «{$a->provider}» через «{$a->processor}» если {$a->state}';
 $string['sendmessage'] = 'Отправить сообщение';
@@ -139,6 +146,7 @@ $string['thisconversation'] = 'эта беседа';
 $string['timenosee'] = 'минут после моего выхода с сайта';
 $string['timesent'] = 'Время отправки';
 $string['touserdoesntexist'] = 'Вы не можете отправить сообщение несуществующему пользователю (id {$a}).';
+$string['unabletomessageuser'] = 'У Вас нет разрешения на отправку сообщения данному пользователю';
 $string['unblockcontact'] = 'Разблокировать сообщения от этого собеседника';
 $string['unreadmessages'] = 'Непрочитанных сообщений: {$a}';
 $string['unreadnewmessage'] = 'Новое сообщение от пользователя {$a}';
@@ -146,3 +154,4 @@ $string['unreadnewmessages'] = 'Новые сообщения ({$a})';
 $string['userisblockingyou'] = 'Пользователь заблокировал получение Ваших сообщений';
 $string['userisblockingyounoncontact'] = 'Пользователь {$a} принимает сообщения только от лиц из своего списка собеседников.';
 $string['userssearchresults'] = 'Найдено пользователей: {$a}';
+$string['viewconversation'] = 'Показать обсуждение';

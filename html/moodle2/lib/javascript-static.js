@@ -9,6 +9,8 @@ M.yui.add_module = function(modules) {
     for (var modname in modules) {
         YUI_config.modules[modname] = modules[modname];
     }
+    // Ensure thaat the YUI_config is applied to the main YUI instance.
+    Y.applyConfig(YUI_config);
 };
 /**
  * The gallery version to use when loading YUI modules from the gallery.
@@ -620,7 +622,7 @@ M.util.init_block_hider = function(Y, config) {
                             .setAttrs({
                                 alt:        config.tooltipVisible,
                                 src:        this.get('iconVisible'),
-                                tabindex:   0,
+                                tabIndex:   0,
                                 'title':    config.tooltipVisible
                             });
                         */
@@ -644,7 +646,7 @@ M.util.init_block_hider = function(Y, config) {
                             .setAttrs({
                                 alt:        config.tooltipHidden,
                                 src:        this.get('iconHidden'),
-                                tabindex:   0,
+                                tabIndex:   0,
                                 'title':    config.tooltipHidden
                             });
                         */
@@ -659,8 +661,10 @@ M.util.init_block_hider = function(Y, config) {
                     M.util.set_user_preference(this.get('preference'), hide);
                     if (hide) {
                         this.get('block').addClass('hidden');
+                        this.get('block').one('.block-hider-show').focus();
                     } else {
                         this.get('block').removeClass('hidden');
+                        this.get('block').one('.block-hider-hide').focus();
                     }
                 },
                 updateStateKey : function(e, hide) {
@@ -1025,49 +1029,6 @@ function findParentNode(el, elName, elClass, elId) {
     }
     return el;
 }
-/*
-    findChildNode (start, elementName, elementClass, elementID)
-
-    Travels down the DOM hierarchy to find all child elements with the
-    specified tag name, class, and id. All conditions must be met,
-    but any can be ommitted.
-    Doesn't examine children of matches.
-
-    @deprecated since Moodle 2.7 - please do not use this function any more.
-    @todo MDL-43242 This will be deleted in Moodle 2.9.
-    @see Y.all
-*/
-function findChildNodes(start, tagName, elementClass, elementID, elementName) {
-    Y.log("findChildNodes() is deprecated. Please use Y.all instead.",
-            "warn", "javascript-static.js");
-    var children = new Array();
-    for (var i = 0; i < start.childNodes.length; i++) {
-        var classfound = false;
-        var child = start.childNodes[i];
-        if((child.nodeType == 1) &&//element node type
-                  (elementClass && (typeof(child.className)=='string'))) {
-            var childClasses = child.className.split(/\s+/);
-            for (var childClassIndex in childClasses) {
-                if (childClasses[childClassIndex]==elementClass) {
-                    classfound = true;
-                    break;
-                }
-            }
-        }
-        if(child.nodeType == 1) { //element node type
-            if  ( (!tagName || child.nodeName == tagName) &&
-                (!elementClass || classfound)&&
-                (!elementID || child.id == elementID) &&
-                (!elementName || child.name == elementName))
-            {
-                children = children.concat(child);
-            } else {
-                children = children.concat(findChildNodes(child, tagName, elementClass, elementID, elementName));
-            }
-        }
-    }
-    return children;
-}
 
 function unmaskPassword(id) {
     var pw = document.getElementById(id);
@@ -1182,83 +1143,6 @@ function insertAtCursor(myField, myValue) {
     } else {
         myField.value += myValue;
     }
-}
-
-
-/*
-        Call instead of setting window.onload directly or setting body onload=.
-        Adds your function to a chain of functions rather than overwriting anything
-        that exists.
-        @deprecated Since Moodle 2.7. This will be removed in Moodle 2.9.
-*/
-function addonload(fn) {
-    Y.log('addonload has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
-            'warn', 'javascript-static.js');
-    var oldhandler=window.onload;
-    window.onload=function() {
-        if(oldhandler) oldhandler();
-            fn();
-    }
-}
-/**
- * Replacement for getElementsByClassName in browsers that aren't cool enough
- *
- * Relying on the built-in getElementsByClassName is far, far faster than
- * using YUI.
- *
- * Note: the third argument used to be an object with odd behaviour. It now
- * acts like the 'name' in the HTML5 spec, though the old behaviour is still
- * mimicked if you pass an object.
- *
- * @param {Node} oElm The top-level node for searching. To search a whole
- *                    document, use `document`.
- * @param {String} strTagName filter by tag names
- * @param {String} name same as HTML5 spec
- * @deprecated Since Moodle 2.7. This will be removed in Moodle 2.9.
- */
-function getElementsByClassName(oElm, strTagName, name) {
-    Y.log('getElementsByClassName has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
-            'warn', 'javascript-static.js');
-    // for backwards compatibility
-    if(typeof name == "object") {
-        var names = new Array();
-        for(var i=0; i<name.length; i++) names.push(names[i]);
-        name = names.join('');
-    }
-    // use native implementation if possible
-    if (oElm.getElementsByClassName && Array.filter) {
-        if (strTagName == '*') {
-            return oElm.getElementsByClassName(name);
-        } else {
-            return Array.filter(oElm.getElementsByClassName(name), function(el) {
-                return el.nodeName.toLowerCase() == strTagName.toLowerCase();
-            });
-        }
-    }
-    // native implementation unavailable, fall back to slow method
-    var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
-    var arrReturnElements = new Array();
-    var arrRegExpClassNames = new Array();
-    var names = name.split(' ');
-    for(var i=0; i<names.length; i++) {
-        arrRegExpClassNames.push(new RegExp("(^|\\s)" + names[i].replace(/\-/g, "\\-") + "(\\s|$)"));
-    }
-    var oElement;
-    var bMatchesAll;
-    for(var j=0; j<arrElements.length; j++) {
-        oElement = arrElements[j];
-        bMatchesAll = true;
-        for(var k=0; k<arrRegExpClassNames.length; k++) {
-            if(!arrRegExpClassNames[k].test(oElement.className)) {
-                bMatchesAll = false;
-                break;
-            }
-        }
-        if(bMatchesAll) {
-            arrReturnElements.push(oElement);
-        }
-    }
-    return (arrReturnElements)
 }
 
 /**
@@ -1389,28 +1273,6 @@ function close_window(e) {
 }
 
 /**
- * Used in a couple of modules to hide navigation areas when using AJAX
- * @deprecated since Moodle 2.7. This function will be removed in Moodle 2.9.
- */
-function show_item(itemid) {
-    Y.log('show_item has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
-            'warn', 'javascript-static.js');
-    var item = Y.one('#' + itemid);
-    if (item) {
-        item.show();
-    }
-}
-
-// Deprecated since Moodle 2.7. This function will be removed in Moodle 2.9.
-function destroy_item(itemid) {
-    Y.log('destroy_item has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
-            'warn', 'javascript-static.js');
-    var item = Y.one('#' + itemid);
-    if (item) {
-        item.remove(true);
-    }
-}
-/**
  * Tranfer keyboard focus to the HTML element with the given id, if it exists.
  * @param controlid the control id.
  */
@@ -1496,16 +1358,57 @@ function updateProgressBar(id, percent, msg, estimate) {
 // Do not put this stuff in separate file because it only adds extra load on servers!
 
 /**
- * Used in a couple of modules to hide navigation areas when using AJAX
- * @deprecated since Moodle 2.7. This function will be removed in Moodle 2.9.
+ * @method show_item
+ * @deprecated since Moodle 2.7.
+ * @see Y.Node.show
  */
-function hide_item(itemid) {
-    Y.log('hide_item has been deprecated since Moodle 2.7 and will be removed in Moodle 2.9',
-            'warn', 'javascript-static.js');
-    var item = Y.one('#' + itemid);
-    if (item) {
-        item.hide();
-    }
+function show_item() {
+    throw new Error('show_item can not be used any more. Please use Y.Node.show.');
+}
+
+/**
+ * @method destroy_item
+ * @deprecated since Moodle 2.7.
+ * @see Y.Node.destroy
+ */
+function destroy_item() {
+    throw new Error('destroy_item can not be used any more. Please use Y.Node.destroy.');
+}
+
+/**
+ * @method hide_item
+ * @deprecated since Moodle 2.7.
+ * @see Y.Node.hide
+ */
+function hide_item() {
+    throw new Error('hide_item can not be used any more. Please use Y.Node.hide.');
+}
+
+/**
+ * @method addonload
+ * @deprecated since Moodle 2.7 - please do not use this function any more.
+ */
+function addonload() {
+    throw new Error('addonload can not be used any more.');
+}
+
+/**
+ * @method getElementsByClassName
+ * @deprecated Since Moodle 2.7 - please do not use this function any more.
+ * @see Y.one
+ * @see Y.all
+ */
+function getElementsByClassName() {
+    throw new Error('getElementsByClassName can not be used any more. Please use Y.one or Y.all.');
+}
+
+/**
+ * @method findChildNodes
+ * @deprecated since Moodle 2.7 - please do not use this function any more.
+ * @see Y.all
+ */
+function findChildNodes() {
+    throw new Error('findChildNodes can not be used any more. Please use Y.all.');
 }
 
 M.util.help_popups = {
@@ -1955,4 +1858,20 @@ M.util.load_flowplayer = function() {
         fileref.onreadystatechange = embed_function;
         document.getElementsByTagName('head')[0].appendChild(fileref);
     }
+};
+
+/**
+ * Initiates the listeners for skiplink interaction
+ *
+ * @param {YUI} Y
+ */
+M.util.init_skiplink = function(Y) {
+    Y.one(Y.config.doc.body).delegate('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var node = Y.one(this.getAttribute('href'));
+        node.setAttribute('tabindex', '-1');
+        node.focus();
+        return true;
+    }, 'a.skip');
 };

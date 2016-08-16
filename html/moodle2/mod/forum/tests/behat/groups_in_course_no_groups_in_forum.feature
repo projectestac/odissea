@@ -36,13 +36,14 @@ Feature: Forums in 'No groups' mode allow posting to All participants for all us
     And I should not see "Group A"
     And I should not see "Group B"
     When I click on "Add a new discussion topic" "button"
+    Then I should not see "Post a copy to all groups"
     And I should not see "Group" in the "form" "css_element"
     And I set the following fields to these values:
       | Subject | Teacher 1 -> Forum  |
       | Message | Teacher 1 -> Forum  |
     And I press "Post to forum"
     And I wait to be redirected
-    Then I should see "Teacher 1 -> Forum"
+    And I should see "Teacher 1 -> Forum"
 
   Scenario: Student can post
     Given I log in as "student1"
@@ -51,10 +52,11 @@ Feature: Forums in 'No groups' mode allow posting to All participants for all us
     And I should not see "Group A"
     And I should not see "Group B"
     When I click on "Add a new discussion topic" "button"
+    Then I should not see "Post a copy to all groups"
     And I should not see "Group" in the "form" "css_element"
     And I set the following fields to these values:
       | Subject | Student 1 -> Forum  |
       | Message | Student 1 -> Forum  |
     And I press "Post to forum"
     And I wait to be redirected
-    Then I should see "Student 1 -> Forum"
+    And I should see "Student 1 -> Forum"

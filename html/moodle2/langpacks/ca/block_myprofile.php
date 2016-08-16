@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_myprofile', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,6 @@ $string['display_skype'] = 'Visualitza Skype';
 $string['display_un'] = 'Visualitza el nom';
 $string['display_yahoo'] = 'Visualitza Yahoo';
 $string['myprofile:addinstance'] = 'Afegeix un bloc nou d\'usuaris que han iniciat sessió';
-$string['myprofile:myaddinstance'] = 'Afegeix un bloc nou d\'usuaris que han iniciat sessió a la pàgina «El meu Moodle»';
+$string['myprofile:myaddinstance'] = 'Afegeix un bloc nou d\'usuaris connectats a la pàgina del Tauler';
 $string['myprofile_settings'] = 'Informació de l\'usuari visible';
 $string['pluginname'] = 'L\'usuari ha iniciat sessió';

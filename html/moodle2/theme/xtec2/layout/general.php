@@ -220,6 +220,7 @@ echo $OUTPUT->doctype() ?>
         <a href="http://www20.gencat.cat/portal/site/ensenyament" class="brand ensenyament visible-phone"><img src="<?php echo $OUTPUT->pix_url('departament', 'theme'); ?>" alt="Departament d'Ensenyament" title="" /></a>
         <a href="http://www.xtec.cat" class="brand xtec visible-phone"><img src="<?php echo $OUTPUT->pix_url('xtec', 'theme'); ?>" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>
     </div>
+    <a href="#top" class="hidden-phone back-to-top"><i class="fa fa-angle-up"></i></a>
 </footer>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>

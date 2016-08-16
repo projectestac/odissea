@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['backtoediting'] = 'Itzuli ediziora';
 $string['clicktocopy'] = 'Sakatu testu hau irizpidearen feedback-ean kopiatzeko';
 $string['clicktoedit'] = 'Sakatu editatzeko';
 $string['clicktoeditname'] = 'Sakatu irizpidearen izena editatzeko';
+$string['comment'] = 'Iruzkina';
 $string['comments'] = 'Maiz erabiltzen diren iruzkinak';
 $string['commentsdelete'] = 'Ezabatu iruzkina';
 $string['commentsempty'] = 'Sakatu iruzkina editatzeko';
@@ -39,7 +40,7 @@ $string['commentsmovedown'] = 'Mugitu behera';
 $string['commentsmoveup'] = 'Mugitu gora';
 $string['confirmdeletecriterion'] = 'Ziur al zaude elementu hau ezabatu nahi duzula?';
 $string['confirmdeletelevel'] = 'Ziur al zaude maila hau ezabatu nahi duzula?';
-$string['criterion'] = 'Irizpidea';
+$string['criterion'] = 'Irizpidearen izena';
 $string['criteriondelete'] = 'Ezabatu irizpidea';
 $string['criterionempty'] = 'Sakatu irizpidea editatzeko';
 $string['criterionmovedown'] = 'Mugitu behera';
@@ -49,6 +50,7 @@ $string['definemarkingguide'] = 'Definitu ebaluazio-gida';
 $string['description'] = 'Deskribapena';
 $string['descriptionmarkers'] = 'Ebaluatzaileentzako deskribapena';
 $string['descriptionstudents'] = 'Ikasleentzako deskribapena';
+$string['err_maxscoreisnegative'] = 'Gehienezko puntuazioa ez da baliagarria, balore negatiboak ez daude baimenduta';
 $string['err_maxscorenotnumeric'] = 'Irizpidearen gehienezko puntuazioak zenbakizkoa izan behar du';
 $string['err_nocomment'] = 'Iruzkina ezin da hutsik egon';
 $string['err_nodescription'] = 'Ikaslearen iruzkina ezin da hutsik egon';
@@ -56,8 +58,10 @@ $string['err_nodescriptionmarkers'] = 'Ebaluatzailearen deskribapena ezin da hut
 $string['err_nomaxscore'] = 'Irizpidearen gehienezko kalifikazioa ezin da hutsik egon';
 $string['err_noshortname'] = 'Irizpidearen izena ezin da hutsik egon';
 $string['err_scoreinvalid'] = '{$a->criterianame}-ri emandako puntuazioa ez da egokia, gehienezko puntuazioa hau da: {$a->maxscore}';
+$string['err_scoreisnegative'] = '\'{$a->criterianame}\' -ri emandako puntuazioa ez da baliagarria, balore negatiboak ez daude baimenduta';
 $string['err_shortnametoolong'] = 'Irizpidearen izenak gehienez 256 karaktere izan ditzake';
 $string['gradingof'] = '{$a} kalifikatzen';
+$string['guide'] = 'Ebaluazio-gida';
 $string['guidemappingexplained'] = 'KONTUZ: zure ebaluazio-gidak <b>{$a->maxscore} puntuko</b> gehieneko kalifikazioa du, baina zure jardueraren gehieneko kalifikazioa {$a->modulegrade} da. Kalifikazio-gidaren gehieneko kalifikazioa moduluaren gehieneko kalifikaziora eskalatuko da. <br />
    Erdiko puntuazioak era berean eraldatuko dira, eta erabilgarria den gertukoen baliora biribilduko dira.';
 $string['guidenotcompleted'] = 'Mesedez, eman kalifikazio egokia irizpide bakoitzean';

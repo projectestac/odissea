@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_blog_recent', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,4 @@ $string['blog_recent:addinstance'] = '新しい最近のブログエントリブ
 $string['norecentblogentries'] = '最近のエントリはありません。';
 $string['numentriestodisplay'] = '表示する最近のエントリ数';
 $string['pluginname'] = '最近のブログエントリ';
-$string['recentinterval'] = '「最近」とみなされる時間間隔';
+$string['recentinterval'] = '「最近」とみなされる時間';

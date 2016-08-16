@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['pluginnameediting'] = 'Modifica domanda Trascina e rilascia su un\'imma
 $string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, seleziona le immagini da trascinare oppure inserisci del testo e definisci  sull\'immagine di sfondo le rispettive zone di rilascio.';
 $string['pluginnamesummary'] = 'Immagini e le etichette di testo vengono trascinate e rilasciate su aree definite su un\'immagine di sfondo.';
 $string['previewareaheader'] = 'Anteprima';
-$string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, seleziona le immagini da trascinare oppure inserisci i testi da trascinare. Seleziona quindi un elemento trascinabile per ciascuna \'zona di rilascio\' e trascina e rilascia gli elementi nei punti dove dovrà posizionarli lo studente.';
+$string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, seleziona gli elementi da trascinare e definisci nell\'immagine di sfondo le rispettive zone di rilascio.';
 $string['refresh'] = 'Aggiorna anteprima';
 $string['shuffleimages'] = 'Rimescola gli elementi trascinabili ad ogni tentativo di risposta';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

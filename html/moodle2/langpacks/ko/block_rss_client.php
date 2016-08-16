@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,6 @@ $string['editnewsfeeds'] = '새소식 RSS 피드를 편집';
 $string['editrssblock'] = 'RSS 헤드라인 블록 편집';
 $string['enableautodiscovery'] = '피드 자동찾기를 활성화할까요?';
 $string['enableautodiscovery_help'] = '활성화한다면, 웹에서 피드를 자동으로 찾습니다. 예를들어  http://docs.moodle.org 를 입력하면, http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss 가 자동으로 찾아질 것입니다.';
-$string['errorloadingfeed'] = 'RSS 피드 ({$a}) 탑재 오류';
 $string['feed'] = 'RSS 피드';
 $string['feedadded'] = '새소식 피드 추가됨';
 $string['feeddeleted'] = '새소식 RSS 피드 삭제됨';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = '必須ケイパビリティを割り当て�
 $string['addservice'] = '新しいサービスを追加する: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'サービス「 {$a} 」に関数を追加する';
 $string['allusers'] = 'すべてのユーザ';
-$string['amftestclient'] = 'AMFテストクライアント';
 $string['apiexplorer'] = 'APIエクスプローラ';
 $string['apiexplorernotavalaible'] = 'まだAPIエクスプローラは利用できません。';
 $string['arguments'] = '引数';
 $string['authmethod'] = '認証方法';
+$string['callablefromajax'] = 'Ajaxからコールできる';
 $string['cannotcreatetoken'] = 'サービス {$a} のウェブトークンを作成するパーミッションがありません。';
 $string['cannotgetcoursecontents'] = 'コースコンテンツを取得できません。';
 $string['checkusercapability'] = 'ユーザケイパビリティをチェックする';
@@ -119,6 +119,7 @@ $string['iprestriction'] = 'IP制限';
 $string['iprestriction_help'] = 'ユーザはリストアップされたIPアドレス (カンマ区切り) よりウェブサービスをコールする必要があります。';
 $string['key'] = 'キー';
 $string['keyshelp'] = 'キーは外部アプリケーションからあなたのMoodleへのアクセス時に使用されます。';
+$string['loginrequired'] = 'ログイン済みユーザに制限する';
 $string['manageprotocols'] = 'プロトコルを管理する';
 $string['managetokens'] = 'トークンを管理する';
 $string['missingcaps'] = '不足したケイパビリティ';
@@ -184,13 +185,12 @@ $string['shortnametaken'] = 'すでに省略名が別のサービス ({$a}) で�
 $string['simpleauthlog'] = 'シンプル認証ログイン';
 $string['step'] = 'ステップ';
 $string['supplyinfo'] = '詳細';
-$string['testauserwithtestclientdescription'] = 'ウェブサービステストクライアントを使用してサービスへの外部アクセスをシミュレートします。シミュレートする前、「moodle/webservice:createtoken」ケイパビリティを設定したユーザでログインした後、マイプロファイル設定経由でセキュリティキー (トークン) を取得してください。あなたはこのトークンをテストクライアントで使用します。また、テストクライアントでは有効にされたトークン認証のプロトコルを選択します。<strong>警告: あなたがテストする関数はこのユーザに対して実行されます。関数の選択には十分注意してください!</strong>';
+$string['testauserwithtestclientdescription'] = 'ウェブサービステストクライアントを使用してサービスへの外部アクセスをシミュレートします。シミュレートする前、「moodle/webservice:createtoken」ケイパビリティを設定したユーザでログインした後、ユーザプリファレンス設定経由でセキュリティキー (トークン) を取得してください。あなたはこのトークンをテストクライアントで使用します。また、テストクライアントでは有効にされたトークン認証のプロトコルを選択します。<strong>警告: あなたがテストする関数はこのユーザに対して実行されます。関数の選択には十分注意してください!</strong>';
 $string['testclient'] = 'ウェブサービステストクライアント';
 $string['testclientdescription'] = '* ウェブサービステストクライアントは関数を<strong>実際</strong>に<strong>実行</strong> します。あなたが知らない関数をテストしないでください。<br/>
 * まだ、既存のすべてのウェブサービス関数はテストクライアントに実装されていません。<br/>
-* ユーザがいくつかの関数にアクセスできないかテストするにはあなたが許可されていなかった関数をテストしてください。<br/>
-* 明確なエラーメッセージを表示するには {$a->atag} のデバッグメッセージを <strong>{$a->mode}</strong> に設定してください。<br/>
-* {$a->amfatag} にアクセスしてください。';
+* ユーザがアクセスできない関数をテストする場合、あなたが許可していない関数をテストすることができます。<br/>
+* 明確なエラーメッセージを表示するには {$a->atag} のデバッグメッセージを　<strong>{$a->mode}</strong>　に設定してください。';
 $string['testwithtestclient'] = 'サービスをテストする';
 $string['testwithtestclientdescription'] = 'ウェブサービステストクライアントを使用してサービスへの外部アクセスをシミュレートします。有効にされたトークン認証のプロトコルを使用してください。<strong>警告: あなたのテストする関数が実行されます。関数の選択には十分注意してください!</strong>';
 $string['token'] = 'トークン';
@@ -203,7 +203,7 @@ $string['updateusersettings'] = '更新';
 $string['uploadfiles'] = 'ファイルをアップロードできる';
 $string['uploadfiles_help'] = 'この設定を有効にした場合、すべてのユーザは自分のプライベートファイルエリアまたは下書きファイルエリアにファイルおよびセキュリティキーをアップロードすることができます。すべてのユーザファイルに対してファイルクオータが適用されます。';
 $string['userasclients'] = 'トークンを使用したユーザのクライアントとして';
-$string['userasclientsdescription'] = '次のステップにより、あなたはユーザのクライアントとしてMoodleウェブサービスをセットアップすることができます。これらのステップは推奨トークン (セキュリティキー) 認証メソッドのセットアップにも役立ちます。この場合、ユーザはプロファイル設定を経由してセキュリティキーページにてトークンを生成することができます。';
+$string['userasclientsdescription'] = '次のステップにより、あなたはユーザのクライアントとしてMoodleウェブサービスをセットアップすることができます。これらのステップは推奨トークン (セキュリティキー) 認証方法のセットアップにも役立ちます。この場合、ユーザはプリファレンスページを経由してセキュリティキーページでトークンを生成することができます。';
 $string['usermissingcaps'] = '不足しているケイパビリティ: {$a}';
 $string['usernameorid'] = 'ユーザ名/ユーザID';
 $string['usernameorid_help'] = 'ユーザ名またはユーザIDを入力してください。';

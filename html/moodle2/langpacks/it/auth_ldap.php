@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Abilita il supporto del gracelogin di L
 $string['auth_ldap_gracelogins_key'] = 'Grace login';
 $string['auth_ldap_groupecreators'] = 'Elenco di gruppi o contesti i cui membri sono autorizzati a creare gruppi. Separa i gruppi multipli con \';\'. Ad esempio \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_groupecreators_key'] = 'Creatori di gruppi';
-$string['auth_ldap_host_url'] = 'URL del server LDAP, ad esempio \'ldap://ldap.myorg.com/\' oppure \'ldaps://ldap.myorg.com/\'';
+$string['auth_ldap_host_url'] = 'URL del server LDAP, ad esempio \'ldap://ldap.myorg.com/\' oppure \'ldaps://ldap.myorg.com/\'. Per impostare più server per il supporto al failover, separare gli URL con \';\'.';
 $string['auth_ldap_host_url_key'] = 'URL dell\'host';
 $string['auth_ldap_ldap_encoding'] = 'La codifica usata dal server LDAP, .molto probabilmente utf-8. MS AD v2 usa la codifica default della piattaforma, come cp1252, cp1250, ecc.';
 $string['auth_ldap_ldap_encoding_key'] = 'Codifica LDAP';
@@ -143,6 +143,7 @@ $string['renamingnotallowed'] = 'In LDAP non è consentito di rinominare gli ute
 $string['rootdseerror'] = 'Si è verificato un errore durante la query del rootDSE in Active Directory';
 $string['start_tls'] = 'Utilizza la porta LDAP standard 389 con crittografia TLS';
 $string['start_tls_key'] = 'Usa TLS';
+$string['synctask'] = 'Sincronizzazione utenti LDAP';
 $string['updatepasserror'] = 'Errore in user_update_password(). Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Errore in user_update_password() durante la lettura della data di scadenza della password. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Errore in user_update_password() durante la modifica di expirationtime e/o gracelogin. Error code: {$a->errno}; Error string: {$a->errstring}';

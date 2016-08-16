@@ -407,7 +407,7 @@ class core_cache_testcase extends advanced_testcase {
         $this->assertEquals('pork', $var->subobj->subobj->key);
         $this->assertTrue($cache->delete('obj'));
 
-        // Death reference test... basicaly we don't want this to die.
+        // Death reference test... basically we don't want this to die.
         $obj = new stdClass;
         $obj->key = 'value';
         $obj->self =& $obj;
@@ -430,6 +430,32 @@ class core_cache_testcase extends advanced_testcase {
         $var2 = $cache->get('obj');
         $this->assertInstanceOf('stdClass', $var2);
         $this->assertEquals('value', $var2->key);
+
+        $this->assertTrue($cache->delete('obj'));
+
+        // Death reference test on get_many... basically we don't want this to die.
+        $obj = new stdClass;
+        $obj->key = 'value';
+        $obj->self =& $obj;
+        $this->assertEquals(1, $cache->set_many(array('obj' => $obj)));
+        $var = $cache->get_many(array('obj'));
+        $this->assertInstanceOf('stdClass', $var['obj']);
+        $this->assertEquals('value', $var['obj']->key);
+
+        // Reference test after retrieve.
+        $obj = new stdClass;
+        $obj->key = 'value';
+        $this->assertEquals(1, $cache->set_many(array('obj' => $obj)));
+
+        $var1 = $cache->get_many(array('obj'));
+        $this->assertInstanceOf('stdClass', $var1['obj']);
+        $this->assertEquals('value', $var1['obj']->key);
+        $var1['obj']->key = 'eulav';
+        $this->assertEquals('eulav', $var1['obj']->key);
+
+        $var2 = $cache->get_many(array('obj'));
+        $this->assertInstanceOf('stdClass', $var2['obj']);
+        $this->assertEquals('value', $var2['obj']->key);
 
         $this->assertTrue($cache->delete('obj'));
 
@@ -989,6 +1015,48 @@ class core_cache_testcase extends advanced_testcase {
         ));
         $cache = cache::make('phpunit', 'eventinvalidationtest');
         $this->assertFalse($cache->get('testkey1'));
+
+        // Test 3: Verify that an existing lastinvalidation cache file is updated when needed.
+
+        // Make a new cache class.  This should should invalidate testkey2.
+        $cache = cache::make('phpunit', 'eventinvalidationtest');
+        // Timestamp should have updated to cache::now().
+        $this->assertEquals(cache::now(), $cache->get('lastinvalidation'));
+
+        // Set testkey2 data.
+        $cache->set('testkey2', 'test data 2');
+        // Backdate the event invalidation time by 30 seconds.
+        $invalidationcache = cache::make('core', 'eventinvalidation');
+        $invalidationcache->set('crazyevent', array('testkey2' => cache::now() - 30));
+        // Lastinvalidation should already be cache::now().
+        $this->assertEquals(cache::now(), $cache->get('lastinvalidation'));
+        // Set it to 15 seconds ago so that we know if it changes.
+        $cache->set('lastinvalidation', cache::now() - 15);
+        // Make a new cache class.  This should not invalidate anything.
+        cache_factory::instance()->reset_cache_instances();
+        $cache = cache::make('phpunit', 'eventinvalidationtest');
+        // Lastinvalidation shouldn't change since it was already newer than invalidation event.
+        $this->assertEquals(cache::now() - 15, $cache->get('lastinvalidation'));
+
+        // Now set the event invalidation to newer than the lastinvalidation time.
+        $invalidationcache->set('crazyevent', array('testkey2' => cache::now() - 5));
+        // Make a new cache class.  This should should invalidate testkey2.
+        cache_factory::instance()->reset_cache_instances();
+        $cache = cache::make('phpunit', 'eventinvalidationtest');
+        // Lastinvalidation timestamp should have updated to cache::now().
+        $this->assertEquals(cache::now(), $cache->get('lastinvalidation'));
+
+        // Now simulate a purge_by_event 5 seconds ago.
+        $invalidationcache = cache::make('core', 'eventinvalidation');
+        $invalidationcache->set('crazyevent', array('purged' => cache::now() - 5));
+        // Set our lastinvalidation timestamp to 15 seconds ago.
+        $cache->set('lastinvalidation', cache::now() - 15);
+        // Make a new cache class.  This should invalidate the cache.
+        cache_factory::instance()->reset_cache_instances();
+        $cache = cache::make('phpunit', 'eventinvalidationtest');
+        // Lastinvalidation timestamp should have updated to cache::now().
+        $this->assertEquals(cache::now(), $cache->get('lastinvalidation'));
+
     }
 
     /**
@@ -1713,6 +1781,21 @@ class core_cache_testcase extends advanced_testcase {
             'staticacceleration' => true,
             'staticaccelerationsize' => 4,
         ));
+        $instance->phpunit_add_definition('phpunit/simpledataarea1', array(
+            'mode' => cache_store::MODE_APPLICATION,
+            'component' => 'phpunit',
+            'area' => 'simpledataarea1',
+            'staticacceleration' => true,
+            'simpledata' => false
+        ));
+        $instance->phpunit_add_definition('phpunit/simpledataarea2', array(
+            'mode' => cache_store::MODE_APPLICATION,
+            'component' => 'phpunit',
+            'area' => 'simpledataarea2',
+            'staticacceleration' => true,
+            'simpledata' => true
+        ));
+
         $cache = cache::make('phpunit', 'accelerated');
         $this->assertInstanceOf('cache_phpunit_application', $cache);
 
@@ -1839,6 +1922,26 @@ class core_cache_testcase extends advanced_testcase {
         $this->assertTrue($cache->set('a', 'A'));
         $this->assertEquals('A', $cache->phpunit_static_acceleration_get('a'));
         $this->assertEquals('A', $cache->get('a'));
+
+        // Setting simpledata to false objects are cloned when retrieving data.
+        $cache = cache::make('phpunit', 'simpledataarea1');
+        $notreallysimple = new stdClass();
+        $notreallysimple->name = 'a';
+        $cache->set('a', $notreallysimple);
+        $returnedinstance1 = $cache->get('a');
+        $returnedinstance2 = $cache->get('a');
+        $returnedinstance1->name = 'b';
+        $this->assertEquals('a', $returnedinstance2->name);
+
+        // Setting simpledata to true we assume that data does not contain references.
+        $cache = cache::make('phpunit', 'simpledataarea2');
+        $notreallysimple = new stdClass();
+        $notreallysimple->name = 'a';
+        $cache->set('a', $notreallysimple);
+        $returnedinstance1 = $cache->get('a');
+        $returnedinstance2 = $cache->get('a');
+        $returnedinstance1->name = 'b';
+        $this->assertEquals('b', $returnedinstance2->name);
     }
 
     public function test_performance_debug() {
@@ -1888,15 +1991,15 @@ class core_cache_testcase extends advanced_testcase {
         $this->assertFalse($request->get('missMe'));
 
         $endstats = cache_helper::get_stats();
-        $this->assertEquals(2, $endstats[$applicationid]['cachestore_file']['misses']);
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['hits']);
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['sets']);
-        $this->assertEquals(3, $endstats[$sessionid]['cachestore_session']['misses']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['hits']);
-        $this->assertEquals(1, $endstats[$sessionid]['cachestore_session']['sets']);
-        $this->assertEquals(4, $endstats[$requestid]['cachestore_static']['misses']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['hits']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['sets']);
+        $this->assertEquals(2, $endstats[$applicationid]['stores']['cachestore_file']['misses']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['hits']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['sets']);
+        $this->assertEquals(3, $endstats[$sessionid]['stores']['cachestore_session']['misses']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['hits']);
+        $this->assertEquals(1, $endstats[$sessionid]['stores']['cachestore_session']['sets']);
+        $this->assertEquals(4, $endstats[$requestid]['stores']['cachestore_static']['misses']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['hits']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['sets']);
 
         $startstats = cache_helper::get_stats();
 
@@ -1912,24 +2015,24 @@ class core_cache_testcase extends advanced_testcase {
         $this->assertTrue($request->set('setMe4', 4));
 
         $endstats = cache_helper::get_stats();
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['misses'] -
-            $startstats[$applicationid]['cachestore_file']['misses']);
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['hits'] -
-            $startstats[$applicationid]['cachestore_file']['hits']);
-        $this->assertEquals(2, $endstats[$applicationid]['cachestore_file']['sets'] -
-            $startstats[$applicationid]['cachestore_file']['sets']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['misses'] -
-            $startstats[$sessionid]['cachestore_session']['misses']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['hits'] -
-            $startstats[$sessionid]['cachestore_session']['hits']);
-        $this->assertEquals(3, $endstats[$sessionid]['cachestore_session']['sets'] -
-            $startstats[$sessionid]['cachestore_session']['sets']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['misses'] -
-            $startstats[$requestid]['cachestore_static']['misses']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['hits'] -
-            $startstats[$requestid]['cachestore_static']['hits']);
-        $this->assertEquals(4, $endstats[$requestid]['cachestore_static']['sets'] -
-            $startstats[$requestid]['cachestore_static']['sets']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['misses'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['misses']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['hits'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['hits']);
+        $this->assertEquals(2, $endstats[$applicationid]['stores']['cachestore_file']['sets'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['sets']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['misses'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['misses']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['hits'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['hits']);
+        $this->assertEquals(3, $endstats[$sessionid]['stores']['cachestore_session']['sets'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['sets']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['misses'] -
+            $startstats[$requestid]['stores']['cachestore_static']['misses']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['hits'] -
+            $startstats[$requestid]['stores']['cachestore_static']['hits']);
+        $this->assertEquals(4, $endstats[$requestid]['stores']['cachestore_static']['sets'] -
+            $startstats[$requestid]['stores']['cachestore_static']['sets']);
 
         $startstats = cache_helper::get_stats();
 
@@ -1945,24 +2048,24 @@ class core_cache_testcase extends advanced_testcase {
         $this->assertEquals($request->get('setMe4'), 4);
 
         $endstats = cache_helper::get_stats();
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['misses'] -
-            $startstats[$applicationid]['cachestore_file']['misses']);
-        $this->assertEquals(2, $endstats[$applicationid]['cachestore_file']['hits'] -
-            $startstats[$applicationid]['cachestore_file']['hits']);
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['sets'] -
-            $startstats[$applicationid]['cachestore_file']['sets']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['misses'] -
-            $startstats[$sessionid]['cachestore_session']['misses']);
-        $this->assertEquals(3, $endstats[$sessionid]['cachestore_session']['hits'] -
-            $startstats[$sessionid]['cachestore_session']['hits']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['sets'] -
-            $startstats[$sessionid]['cachestore_session']['sets']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['misses'] -
-            $startstats[$requestid]['cachestore_static']['misses']);
-        $this->assertEquals(4, $endstats[$requestid]['cachestore_static']['hits'] -
-            $startstats[$requestid]['cachestore_static']['hits']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['sets'] -
-            $startstats[$requestid]['cachestore_static']['sets']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['misses'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['misses']);
+        $this->assertEquals(2, $endstats[$applicationid]['stores']['cachestore_file']['hits'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['hits']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['sets'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['sets']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['misses'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['misses']);
+        $this->assertEquals(3, $endstats[$sessionid]['stores']['cachestore_session']['hits'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['hits']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['sets'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['sets']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['misses'] -
+            $startstats[$requestid]['stores']['cachestore_static']['misses']);
+        $this->assertEquals(4, $endstats[$requestid]['stores']['cachestore_static']['hits'] -
+            $startstats[$requestid]['stores']['cachestore_static']['hits']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['sets'] -
+            $startstats[$requestid]['stores']['cachestore_static']['sets']);
 
         $startstats = cache_helper::get_stats();
 
@@ -1972,23 +2075,23 @@ class core_cache_testcase extends advanced_testcase {
         $request->get_many(array('setMe1', 'setMe2', 'setMe3', 'setMe4'));
 
         $endstats = cache_helper::get_stats();
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['misses'] -
-            $startstats[$applicationid]['cachestore_file']['misses']);
-        $this->assertEquals(2, $endstats[$applicationid]['cachestore_file']['hits'] -
-            $startstats[$applicationid]['cachestore_file']['hits']);
-        $this->assertEquals(0, $endstats[$applicationid]['cachestore_file']['sets'] -
-            $startstats[$applicationid]['cachestore_file']['sets']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['misses'] -
-            $startstats[$sessionid]['cachestore_session']['misses']);
-        $this->assertEquals(3, $endstats[$sessionid]['cachestore_session']['hits'] -
-            $startstats[$sessionid]['cachestore_session']['hits']);
-        $this->assertEquals(0, $endstats[$sessionid]['cachestore_session']['sets'] -
-            $startstats[$sessionid]['cachestore_session']['sets']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['misses'] -
-            $startstats[$requestid]['cachestore_static']['misses']);
-        $this->assertEquals(4, $endstats[$requestid]['cachestore_static']['hits'] -
-            $startstats[$requestid]['cachestore_static']['hits']);
-        $this->assertEquals(0, $endstats[$requestid]['cachestore_static']['sets'] -
-            $startstats[$requestid]['cachestore_static']['sets']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['misses'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['misses']);
+        $this->assertEquals(2, $endstats[$applicationid]['stores']['cachestore_file']['hits'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['hits']);
+        $this->assertEquals(0, $endstats[$applicationid]['stores']['cachestore_file']['sets'] -
+            $startstats[$applicationid]['stores']['cachestore_file']['sets']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['misses'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['misses']);
+        $this->assertEquals(3, $endstats[$sessionid]['stores']['cachestore_session']['hits'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['hits']);
+        $this->assertEquals(0, $endstats[$sessionid]['stores']['cachestore_session']['sets'] -
+            $startstats[$sessionid]['stores']['cachestore_session']['sets']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['misses'] -
+            $startstats[$requestid]['stores']['cachestore_static']['misses']);
+        $this->assertEquals(4, $endstats[$requestid]['stores']['cachestore_static']['hits'] -
+            $startstats[$requestid]['stores']['cachestore_static']['hits']);
+        $this->assertEquals(0, $endstats[$requestid]['stores']['cachestore_static']['sets'] -
+            $startstats[$requestid]['stores']['cachestore_static']['sets']);
     }
 }

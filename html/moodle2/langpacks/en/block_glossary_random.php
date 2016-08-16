@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_glossary_random', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'When users can add entries to the glossary, show a lin
 $string['askinvisible'] = 'When users cannot edit or view the glossary, show this text (without link)';
 $string['askviewglossary'] = 'When users can view the glossary but not add entries, show a link with this text';
 $string['glossary_random:addinstance'] = 'Add a new random glossary entry block';
-$string['glossary_random:myaddinstance'] = 'Add a new random glossary entry block to My home';
+$string['glossary_random:myaddinstance'] = 'Add a new random glossary entry block to Dashboard';
 $string['intro'] = 'Make sure you have at least one glossary with at least one entry added to this course. Then you can adjust the following settings';
 $string['invisible'] = '(to be continued)';
 $string['lastmodified'] = 'Last modified entry';

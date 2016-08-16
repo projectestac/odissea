@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['labeltext'] = 'Κείμενο ετικέτας';
 $string['modulename'] = 'Ετικέτα';
 $string['modulenameplural'] = 'Ετικέτες';
 $string['pluginname'] = 'Ετικέτα';
+$string['search:activity'] = 'Ετικέτα';

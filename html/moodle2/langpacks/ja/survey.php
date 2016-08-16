@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'survey', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,6 +200,7 @@ $string['downloadinfo'] = 'あなたはExcel、SPSS等で分析するために�
 $string['downloadresults'] = 'ダウンロード結果';
 $string['downloadtext'] = 'テキストフォーマットでダウンロードする';
 $string['editingasurvey'] = '調査を編集する';
+$string['errorunabletosavenotes'] = 'あなたのノートの保存中にエラーが発生しました。';
 $string['eventreportdownloaded'] = '調査レポートがダウンロードされました。';
 $string['eventreportviewed'] = '調査レポートが閲覧されました。';
 $string['eventresponsesubmitted'] = '調査回答が送信されました。';
@@ -240,6 +241,7 @@ $string['savednotes'] = 'あなたのノートが保存されました。';
 $string['scaleagree5'] = '全く賛成できない,多少賛成できない,どちらでもない,多少賛成できる,強く賛成できる';
 $string['scales'] = '評価尺度';
 $string['scaletimes5'] = 'ほとんどない,まれに,時々,頻繁に,ほとんどいつも';
+$string['search:activity'] = '調査 - 活動情報';
 $string['seemoredetail'] = '詳細を見るためにはここをクリックしてください。';
 $string['selectedquestions'] = '評価尺度から選ばれた質問、すべての学生';
 $string['summary'] = '概要';
@@ -255,9 +257,9 @@ $string['surveysaved'] = '調査が保存されました。';
 $string['surveytype'] = '調査タイプ';
 $string['surveytype_help'] = '調査には下記3つのタイプがあります:
 
-* 考え方と学び方に対する姿勢の調査 (ATTLS - Attitudes to Thinking and Learning Survey ) - どの人が「関連認識者」 (学ぶことに楽しみを感じ、多くの場合、協力的であり愛想がよく、他の人とアイデアを構築することを望む傾向があります) または「分離認識者」 (学習に対して批判的および論争的なスタンスをとる傾向があります) であるか程度を測定します。
+* 考え方と学び方に対する姿勢の調査 (ATTLS - Attitudes to Thinking and Learning Survey) - どの人が「関連認識者」 (学ぶことに楽しみを感じ、多くの場合、協力的であり愛想がよく、他の人とアイデアを構築することを望む傾向があります) または「分離認識者」 (学習に対して批判的および論争的なスタンスをとる傾向があります) であるか程度を測定します。
 * クリティカル・インシデント調査
-* 構成主義オンライン学習環境調査　(COLLES - On-line Learning Environment Survey) - ワールドワードウェブの相互作用的な性質が学生の動的学習の実践に興味を持たせる効果の程度を測定します。';
+* 構成主義オンライン学習環境調査　(COLLES - On-line Learning Environment Survey) - ワールドワイドウェブの相互作用的な性質が学生の動的学習の実践に興味を持たせる効果の程度を測定します。';
 $string['thanksforanswers'] = '{$a} さん、調査にご協力いただきまして、ありがとうございます';
 $string['time'] = '時間';
-$string['viewsurveyresponses'] = '{$a} 件の調査結果を見る';
+$string['viewsurveyresponses'] = '{$a} 件の調査結果を表示する';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_gapselect', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,8 @@ $string['choicex'] = 'Auswahl {no}';
 $string['combinedcontrolnamegapselect'] = 'Drop Down Box';
 $string['combinedcontrolnamegapselectplural'] = 'Drop Down Boxen';
 $string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';
-$string['errorblankchoice'] = 'Bitte überprüfen Sie die Auswahlmöglichkeiten: Auswahlmöglichkeit {$a} ist leer.';
-$string['errormissingchoice'] = 'Bitte überprüfen Sie den Fragetext: {$a} wurde nicht in den Auswahlmöglichkeiten gefunden. Nur die Auswahlnummern, welche in den Auswahlmöglichkeiten existieren, sind als Platzhalter erlaubt.';
+$string['errorblankchoice'] = 'Überprüfen Sie die Auswahlmöglichkeiten: Auswahl {$a} ist leer.';
+$string['errormissingchoice'] = 'Überprüfen Sie den Fragetext: {$a} wurde nicht in den Auswahlmöglichkeiten gefunden. Als Platzhalter sind nur die Auswahlnummern erlaubt, die in den Auswahlmöglichkeiten vorkommen.';
 $string['errornoslots'] = 'Der Fragetext muss Platzhalter wie [[1]] enthalten, um zu zeigen, wo die fehlenden Wörter sind.';
 $string['errorquestiontextblank'] = 'Sie müssen einen Fragetext eingeben.';
 $string['group'] = 'Gruppe';
@@ -41,8 +41,8 @@ $string['pleaseputananswerineachbox'] = 'Bitte tragen Sie in jedes Feld eine Ant
 $string['pluginname'] = 'Lückentextauswahl';
 $string['pluginnameadding'] = '"Lückentextauswahl"-Frage hinzufügen';
 $string['pluginnameediting'] = '"Lückentextauswahl"-Frage bearbeiten';
-$string['pluginname_help'] = 'Geben Sie einen Fragetext wie "Der [[1]] sprang über den [[2]]" ein, dann geben sie die möglichen Wörter für die Lücken 1 und 2 unten ein.';
-$string['pluginnamesummary'] = 'In einem Text werden fehlende Wörter über ein Dropdown-Menü ausgewählt.';
+$string['pluginname_help'] = 'Fragetexte mit Auswahlantworten benötigen Platzhalter, um die richtigen Antworten über Dropdown-Menüs auswählen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Zusätzliche Antworttexte können hinzugefügt werden, um die Beantwortung der Frage schwieriger zu machen. Auswahlantworten können gruppiert werden, um Antworten in den Dropdown-Menüs zu beschränken.';
+$string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden über Dropdown-Menüs ausgefüllt.';
 $string['shuffle'] = 'Zufallsanordnung';
 $string['tagsnotallowed'] = '{$a->tag} ist unzulässig. (Nur {$a->allowed} sind zulässig.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ist unzulässig. (HTML ist hier nicht zulässig.)';

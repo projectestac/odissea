@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Plugins de identificación disponibles';
+$string['allowaccountssameemail'] = 'Permitir cuentas con la misma dirección de correo';
+$string['allowaccountssameemail_desc'] = 'Si se activa, más de una cuenta de usuario podrá compartir la misma dirección de correo. Esto puede resultar en problemas de seguridad o privacidad, por ejemplo con el email de confirmación de cambio de clave.';
 $string['alternatelogin'] = 'Si introduce aquí una URL, se usará como página de acceso al sitio. La página debería contener un formulario cuya propiedad de acción está ajustada a <strong>\'{$a}\'</strong> y devuelve los campos <strong>nombre de usuario</strong> y <strong>contraseña</strong>.<br />Procure no introducir una URL incorrecta puesto que hacerlo supondrá su expulsión del sitio.<br />Deje el ajuste en blanco para utilizar la página de acceso por defecto.';
 $string['alternateloginurl'] = 'URL de acceso alternativo';
 $string['auth_changepasswordhelp'] = 'Ayuda sobre cambio de contraseña';
@@ -89,6 +91,7 @@ $string['errorminpasswordlength'] = 'Las contraseñas deben tener al menos una l
 $string['errorminpasswordlower'] = 'Las contraseñas deben tener al menos {$a} minúscula(s).';
 $string['errorminpasswordnonalphanum'] = 'Las contraseñas deben tener al menos {$a} caracter(es) no alfanumérico(s).';
 $string['errorminpasswordupper'] = 'Las contraseñas deben tener al menos {$a} mayúscula(s).';
+$string['errorpasswordreused'] = 'Esta contraseña ha sido utilizada anteriormente, y no está permitido reutilizarla';
 $string['errorpasswordupdate'] = 'Error actualizando contraseña, la contraseña no ha cambiado';
 $string['eventuserloggedin'] = 'El usuario ha iniciado sesión';
 $string['eventuserloggedinas'] = 'El usuario inicia sesión como otro usuario';
@@ -108,10 +111,13 @@ $string['informminpassworddigits'] = 'al menos {$a} dígito(s)';
 $string['informminpasswordlength'] = 'al menos {$a} caracter(es)';
 $string['informminpasswordlower'] = 'al menos {$a} minúscula(s)';
 $string['informminpasswordnonalphanum'] = 'al menos {$a} caracter(es) no alfanuméricos';
+$string['informminpasswordreuselimit'] = 'Las contraseñas pueden ser reutilizadas después de {$a} cambios';
 $string['informminpasswordupper'] = 'al menos {$a} mayúscula(s)';
 $string['informpasswordpolicy'] = 'La contraseña debería tener {$a}';
 $string['instructions'] = 'Instrucciones';
 $string['internal'] = 'Interno';
+$string['limitconcurrentlogins'] = 'Bloquear inicios de sesión simultáneos';
+$string['limitconcurrentlogins_desc'] = 'Si se activa se limitará el número de inicios de sesión vía navegador para cada usuario. La sesión más vieja será cerrada después de alcanzar el límite, por favor indique a los usuarios que pueden perder todo el trabajo no guardado. Esta configuración no es compatible con plugins de autentificación de un sólo uso.';
 $string['locked'] = 'Bloqueado';
 $string['md5'] = 'Encriptación MD5';
 $string['nopasswordchange'] = 'La contraseña no puede cambiarse';
@@ -129,6 +135,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'El CAPTCHA se utiliza para impedir abusos de programas automáticos. Simplemente escriba las palabras en la caja, en orden y separadas por un espacio.
 
 Si no está seguro de qué palabras son, puede conseguir otro CAPTCHA, o un CAPTCHA de audio.';
+$string['security_question'] = 'Pregunta de seguridad';
 $string['selfregistration'] = 'Registrarse a sí mismo';
 $string['selfregistration_help'] = 'Escoja qué conector (\'plugin\') de identificación manejar cuando los usuarios se registren a sí mismos.';
 $string['sha1'] = 'SHA-1 hash';
@@ -148,3 +155,5 @@ $string['update_onlogin'] = 'En cada acceso';
 $string['update_onupdate'] = 'Al actualizar';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() no admite el tipo de usuario seleccionado: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() no admite el tipo de usuario seleccionado (...aún)';
+$string['username'] = 'Nombre de usuario';
+$string['username_help'] = 'Por favor ten en cuenta que algunos plugins de autenticación no te permitirán cambiar el nombre de usuario.';

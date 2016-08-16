@@ -51,7 +51,7 @@ if (!empty($approve) and confirm_sesskey()) {
     $courseid = $course->approve();
 
     if ($courseid !== false) {
-        redirect($CFG->wwwroot.'/course/edit.php?id=' . $courseid);
+        redirect(new moodle_url('/course/edit.php', ['id' => $courseid, 'returnto' => 'pending']));
     } else {
         print_error('courseapprovedfailed');
     }
@@ -96,6 +96,8 @@ if (empty($pending)) {
     echo $OUTPUT->heading(get_string('nopendingcourses'));
 } else {
     echo $OUTPUT->heading(get_string('coursespending'));
+    $role = $DB->get_record('role', array('id' => $CFG->creatornewroleid), '*', MUST_EXIST);
+    echo $OUTPUT->notification(get_string('courserequestwarning', 'core', role_get_name($role)), 'notifyproblem');
 
 /// Build a table of all the requests.
     $table = new html_table();

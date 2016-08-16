@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,11 +33,15 @@ Beachten Sie, dass keine Zugriffe geloggt werden können, wenn der Verzeichnisin
 $string['displayinline'] = 'Auf der Kursseite';
 $string['displaypage'] = 'Auf separater Seite';
 $string['dnduploadmakefolder'] = 'Dateien entpacken und Verzeichnisse anlegen';
+$string['downloadfolder'] = 'Verzeichnis herunterladen';
+$string['eventallfilesdownloaded'] = 'ZIP-Archiv des Verzeichnisses heruntergeladen';
 $string['eventfolderupdated'] = 'Verzeichnis aktualisiert';
 $string['folder:addinstance'] = 'Verzeichnis hinzufügen';
 $string['foldercontent'] = 'Dateien und Unterverzeichnisse';
 $string['folder:managefiles'] = 'Dateien im Verzeichnis verwalten';
 $string['folder:view'] = 'Verzeichnisinhalt sehen';
+$string['maxsizetodownload'] = 'Max. Verzeichnisgröße (MB) zum Herunterladen';
+$string['maxsizetodownload_help'] = 'Die Option legt die maximale Verzeichnisgröße fest, die als ZIP-Archiv heruntergeladen werden kann. Wenn der Wert Null ist, ist die Verzeichnisgröße nicht beschränkt.';
 $string['modulename'] = 'Verzeichnis';
 $string['modulename_help'] = 'Wenn Sie eine größere Anzahl von Dateien in Ihrem Kurs bereitstellen möchten, legen Sie dafür ein Verzeichnis an. Laden Sie die Dateien ins Verzeichnis und strukturieren Sie alles übersichtlich in Unterverzeichnissen.
 
@@ -48,5 +52,8 @@ $string['page-mod-folder-view'] = 'Verzeichnishauptseite';
 $string['page-mod-folder-x'] = 'Jede Verzeichnisseite';
 $string['pluginadministration'] = 'Verzeichnis-Administration';
 $string['pluginname'] = 'Verzeichnis';
+$string['search:activity'] = 'Verzeichnis';
+$string['showdownloadfolder'] = 'Herunterladen von Verzeichnissen anzeigen';
+$string['showdownloadfolder_help'] = 'Wenn Sie für diese Option \'Ja\' wählen, wird eine Taste zum Herunterladen des Verzeichnisinhalts als ZIP-Archiv angezeigt.';
 $string['showexpanded'] = 'Unterverzeichnisse aufgeklappt anzeigen';
 $string['showexpanded_help'] = 'Wenn diese Option aktiviert ist, werden Unterverzeichnisse standardmäßig geöffnet dargestellt.';

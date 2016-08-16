@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Plugin di autenticazione disponibili';
+$string['allowaccountssameemail'] = 'Consenti utenti con email duplicate';
+$string['allowaccountssameemail_desc'] = 'Più utenti potranno usare lo stesso indirizzo email. Tale configurazione può comportare problemi di sicurezza o di privacy, ad esempio nel caso di email relative al cambio della password.';
 $string['alternatelogin'] = 'Specificando un URL come Pagina di login sostitutiva, Moodle la utilizzerà al posto della pagina di login standard. La Pagina di login sostitutiva deve contenere un form con la "action property" impostata a <strong>\'{$a}\'</strong> e deve contenere i campi <strong>username</strong> e <strong>password</strong>.<br/> Fai attenzione a non inserire URL errati  perché ti chiuderai  fuori dal sito. <br/>
 Non compilare questo campo se preferisci utilizzare la pagina di login standard.';
 $string['alternateloginurl'] = 'URL pagina di login sostitutiva';
@@ -55,7 +57,7 @@ $string['auth_remove_keep'] = 'Mantieni interna';
 $string['auth_remove_suspend'] = 'Sospendi interna';
 $string['auth_remove_user'] = 'Specifica cosa fare con gli account di utenti interni durante la sincronizzazione in massa quando gli utenti sono stati rimossi dalla fonte esterna. Solo gli utenti sospesi sono automaticamente riattivati se riappaiono nella fonte esterna.';
 $string['auth_remove_user_key'] = 'Utente esterno rimosso';
-$string['auth_sync_script'] = 'Sincronizzazione tramite Cron';
+$string['auth_sync_script'] = 'Sincronizzazione account utenti';
 $string['auth_updatelocal'] = 'Aggiorna dati interni';
 $string['auth_updatelocal_expl'] = '<p><b>Aggiorna dati interni:</b> Se abilitato, il campo sarà  aggiornato (dall\'autenticazione esterna) tutte le volte che l\'utente accede o c\'è una sincronizzazione utente. I campi impostati per l\'aggiornamento locale devono essere bloccati.</p>';
 $string['auth_updateremote'] = 'Aggiorna dati esterni';
@@ -70,7 +72,7 @@ $string['changepasswordhelp'] = 'L\'indirizzo della pagina dove gli utenti posso
 $string['chooseauthmethod'] = 'Metodo di autenticazione';
 $string['chooseauthmethod_help'] = 'Consente la scelta del  metodo di autenticazione associato all\'utente. E\' necessario scegliere solamente plugin di autenticazione abilitati, altrimenti l\'utente non sarà in grado di autenticarsi. Per impedire l\'autenticazione, scegliere "Account disabilitato".';
 $string['createpassword'] = 'Genera la password e informa l\'utente';
-$string['createpasswordifneeded'] = 'Genera le password se necessario';
+$string['createpasswordifneeded'] = 'Genera le password se necessario e inviale per email';
 $string['emailchangecancel'] = 'Annulla cambio email';
 $string['emailchangepending'] = 'Cambio email in corso. Clicca sul link presente nel messaggio che ti è stato inviato a {$a->preference_newemail}.';
 $string['emailnowexists'] = 'L\'indirizzo email che hai cercato di assegnare al tuo profilo è stato, nel frattempo, assegnato a qualcun altro, dal momento della tua richiesta. La richiesta di modifica email è stata quindi annullata, ma puoi provare ancora con un indirizzo email differente.';
@@ -88,8 +90,9 @@ $string['errormaxconsecutiveidentchars'] = 'La password può contenere un massim
 $string['errorminpassworddigits'] = 'La password deve contenere almeno {$a} numeri.';
 $string['errorminpasswordlength'] = 'La password deve essere lunga almeno {$a} caratteri.';
 $string['errorminpasswordlower'] = 'La password deve contenere almeno {$a} lettere minuscole.';
-$string['errorminpasswordnonalphanum'] = 'La password deve contenere almeno {$a} caratteri non alfanumerici (punteggiatura, trattini, eccetera).';
+$string['errorminpasswordnonalphanum'] = 'La password deve contenere almeno {$a} caratteri non alfanumerici, ad esempio *,-, oppure #.';
 $string['errorminpasswordupper'] = 'La password deve contenere almeno {$a} lettere maiuscole.';
+$string['errorpasswordreused'] = 'Questa password è già stata utilizzata e non può essere riutilizzata.';
 $string['errorpasswordupdate'] = 'Si è verificato un errore durante l\'aggiornamento della password, la password non è stata modificata';
 $string['eventuserloggedin'] = 'Autenticato utente';
 $string['eventuserloggedinas'] = 'Autenticato utente come altro utente';
@@ -108,11 +111,14 @@ $string['infilefield'] = 'Il campo è presente nel file';
 $string['informminpassworddigits'] = 'contenere almeno {$a} numero(i)';
 $string['informminpasswordlength'] = 'almeno {$a} caratteri';
 $string['informminpasswordlower'] = 'contenere almeno {$a} lettera(e) minuscola(e)';
-$string['informminpasswordnonalphanum'] = 'contenere almeno {$a} carattere(i)  non alfanumerico(i)';
+$string['informminpasswordnonalphanum'] = 'contenere almeno {$a} caratteri  non alfanumerici, ad esempio *,-, oppure #.';
+$string['informminpasswordreuselimit'] = 'Le password possono essere riutilizzate dopo {$a} modifiche';
 $string['informminpasswordupper'] = 'contenere almeno {$a} lettera(e) maiuscola(e)';
 $string['informpasswordpolicy'] = 'La password deve essere lunga {$a}';
 $string['instructions'] = 'Istruzioni';
 $string['internal'] = 'Interna';
+$string['limitconcurrentlogins'] = 'Limita autenticazioni contemporanee';
+$string['limitconcurrentlogins_desc'] = 'Limita il numero di sessioni browser contemporanee apribili da ciascun utente. Se un utente supera il limite, la sessione più vecchia sarà eliminata automaticamente. Da tenere presente che l\'utente può perdere eventuale lavoro non salvato. L\'impostazione non è compatibile con plugin di autenticazione con single sign on (SSO).';
 $string['locked'] = 'Bloccato';
 $string['md5'] = 'Hash MD5';
 $string['nopasswordchange'] = 'La password non può essere modificata';
@@ -130,6 +136,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. E\' sufficiente inserire le parole nel campo, con lo stesso ordine e separati da uno spazio.
 
 Se non riesci a leggere le parole, chiedi un altro CAPTCHA oppure chiedi un CAPTCHA audio.';
+$string['security_question'] = 'Domanda di sicurezza';
 $string['selfregistration'] = 'Auto creazione account';
 $string['selfregistration_help'] = 'Impostando un plugin per l\'auto creazione di account, come ad esempio il plugin per la creazione di account via email, qualsiasi visitatore del sito potrà crearsi un account. Tale funzione espone il sito al rischio che spammer possano creare account per inviare post indesiderati attraverso forum, blog od altre funzioni. Per evitare questo rischio è bene disabilitare l\' Auto creazione di account  oppure limitarla attraverso l\'impostazione <em>Domini di posta autorizzati</em> oppure ancora attivando il reCAPTCHA.';
 $string['sha1'] = 'Hash SHA-1';
@@ -149,3 +156,5 @@ $string['update_onlogin'] = 'Ad ogni accesso';
 $string['update_onupdate'] = 'In caso di modifica';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate()non supporta il tipo di utente selezionato: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_activate()ancora non supporta il tipo di utente selezionato';
+$string['username'] = 'Username';
+$string['username_help'] = 'Attenzione: alcuni plugin di autenticazione non consentono la modifica dello username.';

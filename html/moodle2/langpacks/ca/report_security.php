@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_security', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -112,6 +112,10 @@ $string['check_unsecuredataroot_error'] = 'El vostre directori arrel de dades <c
 $string['check_unsecuredataroot_name'] = 'El directori arrel de dades és insegur';
 $string['check_unsecuredataroot_ok'] = 'El directori arrel de dades no ha de ser accessible via web.';
 $string['check_unsecuredataroot_warning'] = 'El vostre directori arrel de dades <code>{$a}</code> està mal situat i pot estar estar exposat al web.';
+$string['check_webcron_details'] = '<p>Executar cron des d\'un navegador web pot exposar informació privilegiada a usuaris anònims. Es recomana que sols executeu cron des de la línia d\'ordres o que configureu una contrasenya de cron per permetre un accés remot.</p>';
+$string['check_webcron_name'] = 'Web de cron';
+$string['check_webcron_ok'] = 'Els usuaris anònims no poden accedir a cron.';
+$string['check_webcron_warning'] = 'Els usuaris anònims poden accedir a cron.';
 $string['configuration'] = 'Configuració';
 $string['description'] = 'Descripció';
 $string['details'] = 'Detalls';

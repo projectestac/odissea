@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradeimport_xml', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,9 @@ $string['errincorrectuseridnumber'] = 'エラー - インポートファイル�
 $string['error'] = 'エラーが発生しました。';
 $string['errorduringimport'] = 'インポート中にエラーが発生しました: {$a}';
 $string['fileurl'] = 'リモートファイルURL';
+$string['fileurl_help'] = 'リモートファイルURLフィールドは学生情報システム等のリモートサーバからデータを取得するためのものです。';
+$string['importxml'] = 'XMLインポート';
+$string['importxml_help'] = '評定はユーザIDナンバーおよび活動IDナンバーを含むXMLファイルによりインポートすることができます。正しいフォーマットを取得するには最初にXMLファイルに評定をエクスポートしてファイルを確認してください。';
 $string['pluginname'] = 'XMLファイル';
 $string['xml:publish'] = 'XMLからの評定インポートを公開する';
 $string['xml:view'] = 'XMLから評定をインポートする';

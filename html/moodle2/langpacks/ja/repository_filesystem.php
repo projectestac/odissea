@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_filesystem', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,3 +40,4 @@ $string['pluginname_help'] = 'ローカルディレクトリからリポジト�
 $string['relativefiles'] = '相対ファイルを許可する';
 $string['relativefiles_desc'] = 'リポジトリのファイルすべてに対して、相対リンクでアクセスできるようにします。';
 $string['root'] = 'ルート';
+$string['searchresults'] = '検索結果';

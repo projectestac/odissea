@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message_airnotifier', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   message_airnotifier
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['configairnotifierappname'] = 'Aplikazio-izenaren identifikatzailea Airn
 $string['configairnotifierport'] = 'Airnotifier-en zerbitzariarekin konektatzeko erabili behar den ataka.';
 $string['deletecheckdevicename'] = 'Ezabatu zure gailua: {$a->name}';
 $string['nopermissiontomanagedevices'] = 'Ez duzu baimenik gailuak kudeatzeko.';
+$string['pluginname'] = 'Gailu mugikorrentzako jakinarazpenak';
 $string['requestaccesskey'] = 'Eskatu sarbide-giltza';
 $string['showhide'] = 'Gaitu/desgaitu gailua';
 $string['unknowndevice'] = 'Gailu ezezaguna';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,7 @@ $string['backpackemail'] = 'E-mailadres';
 $string['backpackemail_help'] = 'E-mailadres dat met je backpack geassocieerd is.
 Als je verbindt worden alle badges die je op deze site verdient gekoppeld aan dit e-mailadres.';
 $string['backpackimport'] = 'Badge import instellingen';
-$string['backpackimport_help'] = 'Nadat de backpack-verbinding gelukt is, kunnen badges uit je backpack getoond worden op jouw "Mijn Badges" - pagina en je profielpagina.
+$string['backpackimport_help'] = 'Nadat de backpack-verbinding gelukt is, kunnen badges uit je backpack getoond worden op jouw badges-pagina en je profielpagina.
 
 In deze zone kun je collecties van badges kiezen uit je backpack de je wil tonen op je profiel.';
 $string['badgedetails'] = 'Badgedetails';
@@ -101,8 +101,9 @@ Om een nieuwe afbeelding toe te voegen, blader en selecteer je een afbeelding (i
 $string['badgeprivacysetting'] = 'Badge privacy-instellingen';
 $string['badgeprivacysetting_help'] = 'De badges die je verdient hebt kunnen getoond worden op de profielpagina van je account. Met deze instelling kun je de zichtbaarheid van de nieuw verdiende badges instellen.
 
-Je kunt de privacy-instellingen van elke individuele badge nog steeds wijzigen via je "Mijn badges"- pagina.';
+Je kunt de privacy-instellingen van elke individuele badge nog steeds wijzigen via de instellingen op je badges-pagina.';
 $string['badgeprivacysetting_str'] = 'Toon de badges die ik verdiend heb automatisch op mijn profielpagina';
+$string['badges'] = 'Badges';
 $string['badgesalt'] = 'Salt om de e-mailadressen van de ontvangers te versleutelen.';
 $string['badgesalt_desc'] = 'Door een hash kan de backpack service de e-mailadressen versleutelen en wordt het mogelijk om de backpack service de badge te laten bevestigen zonder een e-mailadres te moeten vrijgeven. Deze instelling mag alleen getallen en letters bevatten.
 
@@ -216,6 +217,7 @@ $string['error:backpackproblem'] = 'Er was een probleem met het verbinden met je
 $string['error:badjson'] = 'De connectiepoging gaf ongeldige gegevens terug.';
 $string['error:cannotact'] = 'Kan de badge niet activeren.';
 $string['error:cannotawardbadge'] = 'Kan de badge niet uitreiken aan de gebruiker.';
+$string['error:cannotdeletecriterion'] = 'Dit criterium kan niet verwijderd worden.';
 $string['error:clone'] = 'Kan de badge niet klonen.';
 $string['error:connectionunknownreason'] = 'De connectie is mislukt, maar er is geen reden opgegeven.';
 $string['error:duplicatename'] = 'Er bestaat al een badge met die naam in het systeem.';
@@ -244,6 +246,7 @@ $string['error:requesterror'] = 'De verbindingsaanvraag is mislukt (foutcode {$a
 $string['error:requesttimeout'] = 'De tijd voor de verbindingsaanvraag is verlopen.';
 $string['error:save'] = 'Kan de badge niet bewaren.';
 $string['error:userdeleted'] = '{$a->user} (Deze gebruiker bestaat niet meer in {$a->site})';
+$string['eventbadgeawarded'] = 'Badge toegekend';
 $string['evidence'] = 'Bewijs';
 $string['existingrecipients'] = 'Bestaande badge ontvangers';
 $string['expired'] = 'Verlopen';
@@ -260,7 +263,6 @@ $string['externalbadges_help'] = 'Deze zone toont badges van je extern backpack.
 $string['externalbadgesp'] = 'Badges van andere sites:';
 $string['externalconnectto'] = 'Om externe badges te kunnen tonen, moet je <a href="{$a}">verbinden met een backpack</a>.';
 $string['fixed'] = 'Vaste datum';
-$string['hidden'] = 'Verborgen';
 $string['hiddenbadge'] = 'De badge-eigenaar heeft deze informatie niet beschikbaar gemaakt.';
 $string['issuancedetails'] = 'Badge verloopt';
 $string['issuedbadge'] = 'Badge informatie';
@@ -282,7 +284,7 @@ $string['makepublic'] = 'Maak openbaar';
 $string['managebadges'] = 'Beheer badges';
 $string['message'] = 'Berichtinhoud';
 $string['messagebody'] = '<p>Je hebt een badge "%badgename%" verdient!</p>
-<p>Meer informatie over deze badge kun je vinden op %badgelink%.</p>
+<p>Meer informatie over deze badge kun je vinden op %badgelink% de badge informatiepagina.</p>
 <p>Je kunt de badge beheren en downloaden vanaf de pagina {$a}.</p>';
 $string['messagesubject'] = 'Proficiat! Je hebt een badge verdient!';
 $string['method'] = 'Dit criterium is behaald als...';
@@ -327,8 +329,11 @@ $string['numawards'] = 'Deze badge is uitgereikt aan <a href="{$a->link}">{$a->c
 $string['numawardstat'] = 'Deze badge is uitgereikt aan {$a} gebruiker(s)';
 $string['overallcrit'] = 'van de geselecteerde criteria zijn voltooid.';
 $string['personaconnection'] = 'Meldt je aan met je e-mailadres';
-$string['personaconnection_help'] = 'Persona is een systeem waarmee je je kunt identificeren op het internet, waarbij je gebruikt maakt van je eigen e-mailadres. Open Badges backpack gebruikt Persona als aanmeldingssysteem. Om daarmee te kunnen verbinden, heb je dus een Persona-account nodig.';
+$string['personaconnection_help'] = 'Persona is een systeem waarmee je je kunt identificeren op het internet, waarbij je gebruikt maakt van je eigen e-mailadres.  Open Badges backpack gebruikt Persona als aanmeldingssysteem. Om daarmee te kunnen verbinden, heb je dus een Persona-account nodig.
+
+Voor meer informatie over Persona, bezoek <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Mogelijke badge-ontvangers';
+$string['preferences'] = 'Badge voorkeuren';
 $string['recipientdetails'] = 'Details ontvanger';
 $string['recipientidentificationproblem'] = 'Can geen ontvanger van deze badge vinden tussen de bestaande gebruikers.';
 $string['recipients'] = 'Badge-ontvangers';

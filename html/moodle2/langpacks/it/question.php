@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -194,7 +194,6 @@ $string['generalfeedback_help'] = 'Il feedback generale viene visualizzato allo 
 Puoi utilizzare il feedback generale per dare agli studenti alcune informazioni relative alle conoscenze necessarie per rispondere alla domanda, oppure per fornire link utili per capire meglio la domanda.';
 $string['getcategoryfromfile'] = 'Categoria da file';
 $string['getcontextfromfile'] = 'Contesto da file';
-$string['hidden'] = 'Nascosto';
 $string['hintn'] = 'Suggerimento {no}';
 $string['hintnoptions'] = 'Opzioni suggerimento {no}';
 $string['hinttext'] = 'Testo del suggerimento';
@@ -329,8 +328,6 @@ $string['numqas'] = 'Num. tentativi per la domanda';
 $string['numquestions'] = 'Num. domande';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} nascoste)';
 $string['options'] = 'Opzioni';
-$string['orphanedquestionscategory'] = 'Domande salvate da categorie eliminate';
-$string['orphanedquestionscategoryinfo'] = 'Talvolta, a causa di software obsoleti o bug, le domande possono rimanere nel database anche quando la categoria che le conteneva è stata eliminata.Tale problema sembra si sia verificato in questo sito. E\' stata quindi creata automaticamente questa categoria dove sono state spostate le domande orfane, in modo da consentirti di gestirle nuovamente. Da notare che eventuali immagini o file multimediali utilizzati da queste domande molto probabilmente andranno perduti.';
 $string['page-question-category'] = 'Pagina con categoria di domande';
 $string['page-question-edit'] = 'Pagina di modifica domande';
 $string['page-question-export'] = 'Pagina di importazione domande';
@@ -422,6 +419,7 @@ $string['submissionoutofsequencefriendlymessage'] = 'Hai inserito dati al di fuo
 $string['submit'] = 'Invia';
 $string['submitandfinish'] = 'Invia e termina';
 $string['submitted'] = 'Invia: {$a}';
+$string['tagarea_question'] = 'Domande';
 $string['technicalinfo'] = 'Informazioni tecniche';
 $string['technicalinfo_help'] = 'In genere queste informazioni tecniche sono utili agli sviluppatori di nuovi tipi di domande. Possono anche risultare utili per diagnosticare eventuali problemi con le domande.';
 $string['technicalinfomaxfraction'] = 'Frazione massima: {$a}';

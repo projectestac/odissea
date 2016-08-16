@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['framesize'] = 'Altezza frame';
 $string['legacyfiles'] = 'Migrazione dei file di corsi precedenti';
 $string['legacyfilesactive'] = 'Attivo';
 $string['legacyfilesdone'] = 'Completato';
+$string['modifieddate'] = 'Modificato il {$a}';
 $string['modulename'] = 'File';
 $string['modulename_help'] = 'Il modulo file consente al docente di inserire file tra le risorse del corso. Il file potrà essere  visualizzato all\'interno dell\'interfaccia del corso, qualora tale visualizzazione non fosse possibile, sarà fornito un link diretto per scaricare il file. I file possono incapsulare altri file, come ad esempio pagine HTML contenenti immagini e oggetti Flash.
 
@@ -90,10 +91,19 @@ $string['printintro'] = 'Visualizza la descrizione della risorsa';
 $string['printintroexplain'] = 'Consente di visualizzare la descrizione della risorsa sotto il contenuto. Tenere presente che alcuni tipi di visualizzazione potrebbero non rispettare questa impostazione.';
 $string['resource:addinstance'] = 'Aggiungere risorse';
 $string['resourcecontent'] = 'File e sotto cartelle';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Esporta risorsa';
 $string['resource:view'] = 'Visualizza la risorsa';
+$string['search:activity'] = 'File';
 $string['selectmainfile'] = 'Per favore scegli il file primario facendo click sull\'icona accanto al nome del file';
+$string['showdate'] = 'Visualizza data di caricamento/modifica';
+$string['showdate_desc'] = 'Consente di visualizzare data di caricamento/modifica nella pagina home del corso';
+$string['showdate_help'] = 'Visualizza la data di caricamento/modifica accanto al link per accedere al file.
+
+Nel caso in cui siano presenti più file, verrà visualizzata la data del file primario.';
 $string['showsize'] = 'Visualizza dimensione';
 $string['showsize_desc'] = 'Visualizza la dimensione del file nella pagina del corso';
 $string['showsize_help'] = 'Consente la visualizzazione della dimensione del file accanto al link, ad esempio \'3.1 MB\'
@@ -106,3 +116,4 @@ $string['showtype_help'] = 'Consente la visualizzazione il tipo di file accanto 
 Se la risorsa contiene più file, sarà visualizzato il tipo corrispondente al file primario.
 
 Qualora il tipo di file non sia noto al sistema, non verrà visualizzato nessun tipo.';
+$string['uploadeddate'] = 'Caricato il {$a}';

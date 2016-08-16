@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_indent', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_indent', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_indent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

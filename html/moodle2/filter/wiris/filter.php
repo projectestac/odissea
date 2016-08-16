@@ -43,10 +43,13 @@ defined('MOODLE_INTERNAL') || die();
 // Replaces all substrings '«math ... «/math»' by the corresponding MathML      //
 // code: '<math ... </math>'                                                    //
 //------------------------------------------------------------------------------//
+require_once "$CFG->dirroot/filter/wiris/lib.php";
 
 class filter_wiris extends moodle_text_filter {
 
 	public function filter($text, array $options = array()) {
+		global $CFG;
+
 		$n0 = stripos($text, '«math');
 		$n1 = stripos($text, '<math');
 		$n2 = stripos($text, '«applet');
@@ -59,9 +62,6 @@ class filter_wiris extends moodle_text_filter {
 		require_once "wirispluginwrapper.php";
 
 		$wirisplugin = new WIRISpluginWrapper();
-		if (!$wirisplugin->is_installed()) {
-			return $text;
-		}
 
 		$wirisplugin->begin();
 		$textservice = $wirisplugin->get_instance()->newTextService();
@@ -85,6 +85,13 @@ class filter_wiris extends moodle_text_filter {
 		$prop['savemode'] = 'xml'; // xml filtering.
 		$text = $textservice->filter($text, $prop);
 		$wirisplugin->end();
+
+		// If a CAS session has been filtered
+		// We need to create a JNLP link for browsers non supporting JAVA
+		if ($n2) {
+			$text = wrs_filterAppletToJnlp($text);
+		}
+
 		return $text;
 	}
 }

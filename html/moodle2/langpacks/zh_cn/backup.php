@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,11 @@ $string['automatedbackupschedule'] = '时间表';
 $string['automatedbackupschedulehelp'] = '选择每周的哪一天进行自动备份。';
 $string['automatedbackupsinactive'] = '定时备份功能没有开启';
 $string['automatedbackupstatus'] = '定时备份状态';
+$string['automateddeletedays'] = '删除早于下列时间的备份：';
+$string['automatedmaxkept'] = '备份保存的最大数目：';
+$string['automatedmaxkepthelp'] = '此功能指定要保留每门课程最近自动备份的最大数目。旧的备份将被自动删除。';
+$string['automatedminkept'] = '备份保存的最小数目：';
+$string['automatedminkepthelp'] = '如果超过指定天数的备份被删除，有可能出现在不活跃的课程的备份被删光了的情况。为了防止这种情况，应该指定一个备份保存的最小数目。';
 $string['automatedsettings'] = '定时备份设置';
 $string['automatedsetup'] = '自动备份设置';
 $string['automatedstorage'] = '自动备份存储';
@@ -87,6 +92,7 @@ $string['configgeneralbadges'] = '缺省情况下，备份包含奖章。';
 $string['configgeneralblocks'] = '缺省情况下，备份是否包含各个版块。';
 $string['configgeneralcomments'] = '缺省情况下，备份是否包含评论。';
 $string['configgeneralfilters'] = '缺省情况下，备份是否包含过滤器。';
+$string['configgeneralgroups'] = '为包括在分组和备份中的分组设置默认值。';
 $string['configgeneralhistories'] = '缺省情况下，备份是否包含用户的历史记录。';
 $string['configgenerallogs'] = '如果激活，会默认将日志包含在备份中。';
 $string['configgeneralquestionbank'] = '如果启用，默认备份题库。
@@ -119,7 +125,7 @@ $string['errorfilenamerequired'] = '您必须输入一个有效的文件名';
 $string['errorinvalidformat'] = '无法识别的备份格式';
 $string['errorinvalidformatinfo'] = '所选文件不是有效的Moodle备份文件，不能恢复。';
 $string['errorminbackup20version'] = '此备份文件由开发版的Moodle备份创建 ({$a->backup})。最低需求是{$a->min}。不能恢复。';
-$string['errorrestorefrontpage'] = '不允许恢复首页。';
+$string['errorrestorefrontpagebackup'] = '你只能在一个首页上恢复首页备份';
 $string['executionsuccess'] = '成功建立备份文件。';
 $string['filealiasesrestorefailures'] = '别名恢复失败';
 $string['filealiasesrestorefailures_help'] = '别名是链接到其他文件的符号链接，包括存储在外部容器中的文件。在某些情况下，Moodle 不能恢复它们——例如，在另一个站点恢复此备份文件或引用的文件不存在在时。
@@ -138,6 +144,7 @@ $string['generalblocks'] = '包括版块';
 $string['generalcomments'] = '包括评论';
 $string['generalfilters'] = '包括过滤器';
 $string['generalgradehistories'] = '包括历史';
+$string['generalgroups'] = '包含小组和大组';
 $string['generalhistories'] = '包括历史';
 $string['generallogs'] = '包括日志';
 $string['generalquestionbank'] = '包含题库';
@@ -158,6 +165,8 @@ $string['importcurrentstage2'] = '架构设置';
 $string['importcurrentstage4'] = '确认和审核';
 $string['importcurrentstage8'] = '执行导入';
 $string['importfile'] = '导入一个备份文件';
+$string['importgeneralduplicateadminallowed'] = '管理员账号冲突允许自动解决';
+$string['importgeneralduplicateadminallowed_desc'] = '如果网站有一个用户名为’admin\'的账号，在尝试恢复一个含有‘admin\'同名用户的备份文件时，会产生冲突。如果启用此设置，冲突会通过修改备份文件中的’admin‘用户名为’admin_xyz‘的方式解决。';
 $string['importgeneralmaxresults'] = '最多同时恢复课程数';
 $string['importgeneralmaxresults_desc'] = '用来控制在恢复课程的第一步中显示课程数';
 $string['importgeneralsettings'] = '常规恢复默认值';
@@ -232,8 +241,10 @@ $string['rootsettingbadges'] = '包含奖章';
 $string['rootsettingblocks'] = '包括版块';
 $string['rootsettingcalendarevents'] = '包括日历事件';
 $string['rootsettingcomments'] = '包括评论';
+$string['rootsettingcompetencies'] = '包含能力';
 $string['rootsettingfilters'] = '包括过滤器';
 $string['rootsettinggradehistories'] = '包括成绩历史';
+$string['rootsettinggroups'] = '包含小组和大组';
 $string['rootsettingimscc1'] = '转换到 IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = '转换到 IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = '包括课程日志';
@@ -254,6 +265,7 @@ $string['setting_keep_groups_and_groupings'] = '保留当前的小组和大组';
 $string['setting_keep_roles_and_enrolments'] = '保留当前角色和选课';
 $string['setting_overwriteconf'] = '覆盖课程配置';
 $string['showtypes'] = '显示类型选项';
+$string['sitecourseformatwarning'] = '这是一个首页备份，注意你只能在首页上恢复。';
 $string['skiphidden'] = '忽略隐藏课程';
 $string['skiphiddenhelp'] = '选择是否要忽略隐藏课程';
 $string['skipmodifdays'] = '忽略有多少天没有更新的课程';

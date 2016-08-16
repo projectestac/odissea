@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_alfresco', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_alfresco', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_alfresco
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,6 @@ $string['notitle'] = '제목없음';
 $string['password'] = '비밀번호';
 $string['pluginname'] = 'Alfresco 저장소';
 $string['pluginname_help'] = 'Alfresco CMS 플러그인';
-$string['security_key_notice_message_subject'] = '알프레스코 저장소 보안 알림';
 $string['soapmustbeenabled'] = 'Alfresco 플러그인을 위해 SOAP 확장을 활성화해야 함';
 $string['space'] = '공간';
 $string['username'] = '사용자 ID';

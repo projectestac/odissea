@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Add';
 $string['alltags'] = 'All tags:';
+$string['anycollection'] = 'Any';
+$string['anytype'] = 'All';
 $string['arrowtitle'] = 'Click here to enter the suggested text (grey letters).';
 $string['configtitle'] = 'Block title';
 $string['coursetags'] = 'Course tags:';
-$string['defaultdisplay'] = 'Tag type to display';
+$string['defaultdisplay'] = 'Display tags';
 $string['disabledtags'] = 'Tags are disabled';
 $string['edit'] = 'edit...';
 $string['editdeletemytag'] = 'Delete tag from this course:';
@@ -69,12 +71,19 @@ $string['mytags'] = 'My tags:';
 $string['notagsyet'] = 'No tags yet';
 $string['please'] = 'Please';
 $string['pluginname'] = 'Tags';
+$string['recursivecontext'] = 'Include child contexts';
+$string['recursivecontext_help'] = 'If unticked, tags of items in the context specified above will be displayed, but not tags of items in lower contexts. For example, course tags may be displayed, but not course activity tags.';
 $string['select'] = 'Select...';
 $string['showcoursetags'] = 'Show course tags';
 $string['showcoursetagsdef'] = 'Display the course tagging features in the tags block, allowing students to tag courses.';
+$string['standardonly'] = 'Only standard';
 $string['suggestedtagthisunit'] = 'Suggested tag to this course:';
+$string['tagcollection'] = 'Tag collection';
+$string['tagcollection_help'] = 'Select tag collection to display tags from. If you choose "Any" the tags from all collections except for those marked with * will be displayed';
+$string['taggeditemscontext'] = 'Tagged items context';
+$string['taggeditemscontext_help'] = 'You can limit the tag cloud to the tags that are present in the current course category, course or module';
 $string['tags'] = 'tags';
 $string['tags:addinstance'] = 'Add a new tags block';
-$string['tags:myaddinstance'] = 'Add a new tags block to My home';
+$string['tags:myaddinstance'] = 'Add a new tags block to Dashboard';
 $string['tagthisunit'] = 'Tag this course:';
 $string['tagunits'] = 'to tag your favourite courses';

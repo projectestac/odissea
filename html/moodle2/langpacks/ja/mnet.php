@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -194,7 +194,8 @@ $string['registerhostson'] = '現在、「すべてのホストを登録する�
 $string['remotecourses'] = 'リモートコース';
 $string['remotehost'] = 'リモートホスト';
 $string['remotehosts'] = 'リモートホスト';
-$string['remoteuserinfo'] = 'リモート {$a->remotetype} ユーザ - プロファイル取得先 <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuser'] = 'リモート {$a->remotetype} ユーザ';
+$string['remoteuserinfo'] = '<a href="{$a->remoteurl}">{$a->remotename}</a>から取得されたプロファイル';
 $string['requiresopenssl'] = 'ネットワーキングにはOpenSSL拡張モジュールが必要です。';
 $string['restore'] = 'リストア';
 $string['returnvalue'] = '戻り値';
@@ -217,6 +218,12 @@ $string['showlocal'] = 'ローカルユーザを表示する';
 $string['showremote'] = 'リモートユーザを表示する';
 $string['ssl_acl_allow'] = 'SSO ACL: 「 {$a->host} 」からのユーザ「 {$a->user} 」を許可します。';
 $string['ssl_acl_deny'] = 'SSO ACL: 「 {$a->host} 」からのユーザ「 {$a->user} 」を拒否します。';
+$string['sslverification'] = 'SSL検証';
+$string['sslverification_help'] = 'このオプションにおいて、あなたはHTTPSを使用したピア接続時のセキュリティレベルを設定することができます。
+
+* なし: セキュリティレベルなし
+* ホストのみ確認する: SSL証明書のドメインを検証します。
+* ホストおよびピアを確認する (推奨): ドメインおよびSSL証明書の発行者を確認します。';
 $string['ssoaccesscontrol'] = 'SSOアクセスコントロール';
 $string['ssoacldescr'] = 'このページはリモートMoodleネットワークホストのユーザによるアクセスを許可/拒否するため使用してください。この機能はあなたがリモートユーザにSSOサービスを提供するときに動作します。あなたの「ローカル」ユーザが他のMoodleネットワークホストを散策できるような権限をコントロールするにはロールシステムでユーザに「mnetlogintoremote」ケイパビリティを付与してください。';
 $string['ssoaclneeds'] = 'この機能を動作させるためには、ネットーワキングを有効にしてください。さらにユーザを自動的に追加するにはMNet認証プラグインを有効にしてください。';
@@ -243,6 +250,8 @@ $string['userchangepasswordlink'] = '<br />あなたのパスワードを<a href
 $string['usernotfullysetup'] = 'あなたのアカウントは完全ではありません。<a href="{$a}">あなたのプロバイダに戻って</a>、そこであなたのプロファイルが完全かどうか確認してください。設定を反映させるためには、あなたは一旦ログアウトして再度ログインする必要があります。';
 $string['usersareonline'] = '警告: 現在、このサーバから {$a} 名のユーザがあなたのサイトにログインしています。';
 $string['validated_by'] = '次のネットワークで認証されました: <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'ホストおよびピアを確認する';
+$string['verifyhostonly'] = 'ホストのみを確認する';
 $string['verifysignature-error'] = '署名認証に失敗しました。エラーが発生しました。';
 $string['verifysignature-invalid'] = '署名認証に失敗しました。このペイロード (データ本体) はあなたが署名したものではないと思われます。';
 $string['version'] = 'バージョン';

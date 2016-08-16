@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'url', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,7 @@ $string['popupwidthexplain'] = '기본 팝업창의 너비 지정 ';
 $string['printintro'] = 'URL 설명 표시';
 $string['printintroexplain'] = '내용 하단에 URL 설명 표시. 어떤 설명은 활성화 시켰음에도 불구하고 표시되지 않는 경우도 있다.';
 $string['rolesinparams'] = '변수에 역할명 포함';
+$string['search:activity'] = 'URL';
 $string['serverurl'] = '서버 URL';
 $string['url:addinstance'] = '새 URL 자원 추가';
 $string['url:view'] = 'URL  보기';

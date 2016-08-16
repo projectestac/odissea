@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['aggregateonlygraded_help'] = 'Les notes vides sont celles qui manquent 
 Ce réglage détermine comment traiter les notes vides dans le calcul des tendances centrales : ne pas les inclure dans le calcul, ou les inclure une note minimale, par exemple 0 si l\'activité est notée entre 0 et 100.';
 $string['aggregateoutcomes'] = 'Inclure les objectifs dans les tendances centrales';
 $string['aggregateoutcomes_help'] = 'Si ce réglage est activé, les objectifs sont inclus dans le calcul des tendances centrales. Ceci peut avoir comme conséquence une note globale inattendue.';
-$string['aggregatesonly'] = 'Seulement tendances centrales';
+$string['aggregatesonly'] = 'Passer aux tendances centrales seulement';
 $string['aggregatesubcatsupgradedgrades'] = 'Remarque : le réglage « Inclure les sous-catégories dans les tendances centrales » a été supprimé au cours de la mise à jour du site. Puisque ce réglage était utilisé antérieurement dans ce cours, il vous est conseillé de vérifier le résultat de cette modification dans le carnet de notes.';
 $string['aggregatesum'] = 'Naturelle';
 $string['aggregateweightedmean'] = 'Moyenne pondérée des notes';
@@ -111,7 +111,6 @@ $string['calculationview'] = 'Afficher calcul';
 $string['cannotaccessgroup'] = 'Impossible d\'accéder aux notes du groupe sélectionné.';
 $string['categories'] = 'Catégories';
 $string['categoriesanditems'] = 'Catégories et éléments';
-$string['categoriesedit'] = 'Modifier les réglages';
 $string['category'] = 'Catégorie';
 $string['categoryedit'] = 'Modifier catégorie';
 $string['categoryname'] = 'Nom de la catégorie';
@@ -137,6 +136,8 @@ $string['coursename'] = 'Nom du cours';
 $string['coursescales'] = 'Barèmes du cours';
 $string['coursesettings'] = 'Réglages du cours';
 $string['coursesettingsexplanation'] = 'Les réglages du cours déterminent la présentation du carnet de notes pour tous les participants du cours.';
+$string['coursesiamtaking'] = 'Les cours que je suis';
+$string['coursesiamteaching'] = 'Les cours que je donne';
 $string['coursetotal'] = 'Total du cours';
 $string['createcategory'] = 'Créer une catégorie';
 $string['createcategoryerror'] = 'Impossible de créer une nouvelle catégorie';
@@ -178,8 +179,9 @@ $string['editverbose'] = 'Modifier {$a->category} {$a->itemmodule} {$a->itemname
 $string['enableajax'] = 'Activer AJAX';
 $string['enableajax_help'] = 'Ajoute des fonctionnalités AJAX au rapport de l\'évaluateur, pour simplifier et accélérer les opérations habituelles. Nécessite l\'activation de Javascript sur le navigateur de l\'utilisateur.';
 $string['enableoutcomes'] = 'Activer les objectifs';
-$string['enableoutcomes_help'] = 'L\'activation des objectifs (compétences, buts, standards ou critères) permet d\'évaluer les résultats d\'après un ou plusieurs barèmes liés à des énoncés d\'objectifs. L\'activation de ce réglage active cette option  pour tout le site.';
+$string['enableoutcomes_help'] = 'Si ce réglage est activé, les éléments d\'évaluation peuvent être évalués d\'après un ou plusieurs barèmes liés à des énoncés d\'objectifs.';
 $string['encoding'] = 'Encodage';
+$string['encoding_help'] = 'Sélectionner l\'encodage des caractères utilisé pour ces données (l\'encodage standard est UTF-8). Si un mauvais encodage est choisi par inadvertance, cela sera visible lors de la prévisualisation des données à importer.';
 $string['errorcalculationbroken'] = 'Référence circulaire ou formule de calcul incorrecte';
 $string['errorcalculationnoequal'] = 'La formule doit commencer par un signe d\'égalité (=1+2)';
 $string['errorcalculationunknown'] = 'Formule non valide';
@@ -209,6 +211,8 @@ $string['exportonlyactive_help'] = 'N\'inclure dans l\'exportation que les parti
 $string['exportplugins'] = 'Modules d\'exportation';
 $string['exportsettings'] = 'Réglages d\'exportation';
 $string['exportto'] = 'Exporter vers';
+$string['externalurl'] = 'URL externe';
+$string['externalurl_desc'] = 'Si un carnet de notes externe est utilisé, veuillez indiquer son URL ici.';
 $string['extracreditvalue'] = 'Bonus pour {$a}';
 $string['extracreditwarning'] = 'Remarque : si tous les éléments d\'une catégorie sont cochés comme bonus, cela aura pour effet de les retirer complètement du calcul des notes, puisqu\'il n\'y aura pas de point au total.';
 $string['feedback'] = 'Feedback';
@@ -230,8 +234,7 @@ $string['forceon'] = 'Imposer : oui';
 $string['forelementtypes'] = 'pour les {$a} sélectionnés';
 $string['forstudents'] = 'Pour les étudiants';
 $string['full'] = 'Complet';
-$string['fullmode'] = 'Affichage complet';
-$string['fullview'] = 'Affichage complet';
+$string['fullmode'] = 'Passer à l\'affichage complet';
 $string['generalsettings'] = 'Réglages généraux';
 $string['grade'] = 'Note';
 $string['gradeadministration'] = 'Administration des notes';
@@ -245,6 +248,7 @@ $string['gradebookcalculationswarning'] = 'Des erreurs ont été détectées dan
 La nouvelle version du carnet de note est {$a->currentversion} ; vous utilisez la version {$a->gradebookversion}. Vous pouvez consulter les changements entre les versions {$a->gradebookversion} et {$a->currentversion}, sur la page <a href="{$a->url}">Modifications du calcul du carnet de notes</a>.';
 $string['gradebookhiddenerror'] = 'Le carnet de notes est configuré de façon à cacher toutes ses données aux étudiants.';
 $string['gradebookhistories'] = 'Historiques d\'évaluation';
+$string['gradebooksetup'] = 'Configuration du carnet de notes';
 $string['gradeboundary'] = 'Limite pour note lettre';
 $string['gradeboundary_help'] = 'Ce réglage détermine le pourcentage minimal au-dessus duquel les notes seront converties en une lettre.';
 $string['gradecategories'] = 'Catégories de note';
@@ -294,6 +298,7 @@ $string['gradeitemsinc'] = 'Éléments d\'évaluation à inclure';
 $string['gradeletter'] = 'Note lettre';
 $string['gradeletter_help'] = 'Les notes lettres sont des lettres (A, B, C, etc.) ou des mots (Distingué, Promu, etc.) utilisés pour représenter un intervalle de notes.';
 $string['gradeletternote'] = 'Pour supprimer une note lettre, effacer simplement le contenu des trois<br />zones lui correspondant et cliquer sur « Enregistrer les changements ».';
+$string['gradeletteroverridden'] = 'Les lettres notes par défaut sont actuellement court-circuitées.';
 $string['gradeletters'] = 'Notes lettres';
 $string['gradelocked'] = 'La note est verrouillée';
 $string['gradelong'] = '{$a->grade} / {$a->max}';
@@ -305,9 +310,10 @@ $string['gradeoutcomeitem'] = 'Évaluer élément d\'objectif';
 $string['gradeoutcomes'] = 'Objectifs';
 $string['gradeoutcomescourses'] = 'Objectifs du cours';
 $string['gradepass'] = 'Note pour passer';
+$string['gradepassgreaterthangrade'] = 'La note pour réussir ne peut pas être plus grande que la note maximale possible {$a}';
 $string['gradepass_help'] = 'Ce réglage détermine la note minimale pour passer. La valeur est utilisée dans l\'achèvement d\'activités et de cours, ainsi que dans le carnet de note, où les notes supérieures sont en vert et les notes inférieures en rouge.';
 $string['gradepointdefault'] = 'Nombre de points par défaut';
-$string['gradepointdefault_help'] = 'Ce réglage détermine le nombre de points par défaut pour la note d\'une activité.';
+$string['gradepointdefault_help'] = 'Ce réglage détermine le nombre de points par défaut pour la note d\'un élément d\'évaluation.';
 $string['gradepointdefault_validateerror'] = 'Ce paramètre doit être un nombre entier entre 1 et le nombre de points maximum pour la note.';
 $string['gradepointmax'] = 'Nombre maximum de points';
 $string['gradepointmax_help'] = 'Ce réglage détermine le nombre maximum de points pour la note d\'une activité.';
@@ -321,7 +327,7 @@ $string['gradereport'] = 'Rapport d\'évaluation';
 $string['graderreport'] = 'Rapport de l\'évaluateur';
 $string['grades'] = 'Notes';
 $string['gradesforuser'] = 'Notes de {$a->user}';
-$string['gradesonly'] = 'Seulement les notes';
+$string['gradesonly'] = 'Passer aux notes seulement';
 $string['gradessettings'] = 'Réglages des notes';
 $string['gradetype'] = 'Type de note';
 $string['gradetype_help'] = 'Il y a 4 types de notes :
@@ -371,6 +377,14 @@ $string['idnumbers'] = 'Identifiants';
 $string['ignore'] = 'Ignorer';
 $string['import'] = 'Importer';
 $string['importcsv'] = 'Importation CSV';
+$string['importcsv_help'] = 'Les notes peuvent être importées d\'un fichier CSV dont le format est le suivant :
+
+* chaque ligne du fichier contient un enregistrement ;
+* chaque enregistrement est constitué d\'une série de données séparées par des virgules ou un autre caractère de séparation :
+* le premier enregistrement contient la liste des champs, définissant ainsi le format du reste du fichier ;
+* un champ contenant l\'identité de l\'utilisateur est requis — soit le nom d\'utilisateur, soit le numéro d\'ID, soit l\'adresse de courriel.
+
+Un fichier dont la syntaxe est correcte peut être obtenu à titre d\'exemple en exportant quelques notes. Le fichier peut alors être modifié et enregistré en format CSV.';
 $string['importcustom'] = 'Importer comme objectifs de ce cours';
 $string['importerror'] = 'Une erreur est survenue. Ce script n\'a pas été appelé avec les paramètres adéquats.';
 $string['importfailed'] = 'L\'importation a échoué. Aucune donnée n\'a été importée.';
@@ -429,8 +443,11 @@ $string['lowest'] = 'Le plus bas';
 $string['lowgradeletter'] = 'Bas';
 $string['manualitem'] = 'Élément manuel';
 $string['mapfrom'] = 'Lier depuis';
+$string['mapfrom_help'] = 'Sélectionner la colonne de la feuille de calcul qui comprend les données permettant l\'identification de l\'utilisateur, par exemple le nom d\'utilisateur, le numéro d\'ID ou l\'adresse de courriel.';
 $string['mappings'] = 'Correspondance des éléments d\'évaluation';
+$string['mappings_help'] = 'Pour chaque colonne de la feuille de calcul, sélectionner l\'élément d\'évaluation correspondant dans lequel importer les notes.';
 $string['mapto'] = 'Lier à';
+$string['mapto_help'] = 'Sélectionner les mêmes données d\'identification, telles que sélectionnées sous « Lier depuis ».';
 $string['max'] = 'Maximum';
 $string['maxgrade'] = 'Note maximale';
 $string['meanall'] = 'Toutes les notes';
@@ -447,13 +464,34 @@ $string['minmaxtouse_help'] = 'Ce réglage détermine si, pour le calcul de la n
 $string['minmaxupgradedgrades'] = 'Certaines notes ont été modifiées afin de résoudre une incohérence dans le carnet de notes, causée par une modification des notes minimale et maximale utilisées lors du calcul de la note affichée. Il est recommandé de passer en revue ces changements et de les confirmer.';
 $string['minmaxupgradefixbutton'] = 'Lever les incohérences';
 $string['minmaxupgradewarning'] = 'Une incohérence a été détectée pour certaines notes, causée par une modification des notes minimale et maximale utilisées lors du calcul de la note affichée dans le carnet de notes. Il est recommandé de lever cette incohérence en cliquant sur le bouton ci-dessus. Certaines notes seront alors modifiées.';
+$string['missingitemtypeoreid'] = 'Clef de tableau (itemtype ou eid) manquante dans le 2ème paramètre de grade_edit_tree_column_select::get_item_cell($item, $params)';
 $string['missingscale'] = 'Un barème doit être sélectionné';
 $string['mode'] = 'Mode';
 $string['modgrade'] = 'Note';
+$string['modgradecantchangegradetype'] = 'Il n\'est pas possible de modifier le type, car des notes existent déjà pour cet élément.';
+$string['modgradecantchangegradetypemsg'] = 'Des notes ont déjà été données, donc le type de note ne peut plus être modifié. Si vous voulez changer la note maximale, vous devez d\'abord décider si vous voulez ou non adapter en conséquence les notes existantes.';
+$string['modgradecantchangegradetyporscalemsg'] = 'Des notes ont déjà été données, donc le type de note et le barème ne peuvent plus être modifiés.';
+$string['modgradecantchangeratingmaxgrade'] = 'Il n\'est pas possible de modifier la note maximale lorsque des notes existent déjà pour une activité.';
+$string['modgradecantchangescale'] = 'Il n\'est pas possible de modifier ce barème, car des notes existent déjà avec cet élément.';
+$string['modgradecategorycantchangegradetypemsg'] = 'Certains éléments d\'évaluation associés à cette catégorie ont été modifiés manuellement et des notes ont déjà été attribuées. De ce fait, le type de note ne peut pas être modifié. Si vous voulez changer la note maximale, vous devez d\'abord décider si vous voulez adapter proportionnellement les notes existantes.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'Certains éléments d\'évaluation associés à cette catégorie ont été modifiés manuellement et des notes ont déjà été attribuées. De ce fait, le type de note ne peut pas être modifié.';
+$string['modgradecategoryrescalegrades'] = 'Adapter proportionnellement les notes modifiées manuellement';
+$string['modgradecategoryrescalegrades_help'] = 'Lorsque l\'on modifie la note maximale d\'un élément d\'évaluation, il faut indiquer si cette modification doit être reportée sur les pourcentages également.
+
+Si ce réglage est sur « Oui », toutes les notes modifiées manuellement seront adaptées proportionnellement, afin que le pourcentage reste identique.
+
+Par exemple, si la note maximale d\'un élément est changée de 10 à 20, une note de 6/10 (= 60 %) sera adaptée à 12/20 (= 60 %). Si ce réglage est sur « Non », la note ne sera pas modifiée, et nécessitera un ajustement manuel afin que le score pour l\'élément d\'évaluation reste correct.';
+$string['modgradedonotmodify'] = 'Ne pas modifier les notes existantes';
 $string['modgradeerrorbadpoint'] = 'Note non valide. Ce doit être un nombre entier entre 1 et {$a}';
 $string['modgradeerrorbadscale'] = 'Barème non valide sélectionné. Veuillez vous assurer de choisir un barème dans la liste ci-dessous.';
 $string['modgrade_help'] = 'Sélectionnez le type de note utilisée dans cette activité. Si « Barème » est choisi, vous pourrez sélectionner un barème dans le menu déroulant. Si « Point » est choisi, vous pourrez spécifier la note maximale pour cette activité.';
-$string['modgrademaxgrade'] = 'Nombre maximum de points';
+$string['modgrademaxgrade'] = 'Note maximale';
+$string['modgraderescalegrades'] = 'Adapter les notes existantes';
+$string['modgraderescalegrades_help'] = 'Lors du changement de la note maximale d\'un élément du carnet de note, il est nécessaire d\'indiquer si la modification devra également adapter en conséquence les notes déjà existantes.
+
+Si ce réglage est activé, toutes les notes existantes seront adaptées afin que les pourcentages restent identiques.
+
+Par exemple, si le réglage est activé, en modifiant la note maximale d\'un élément de 10 à 20, une note de 6/10 (60 %) sera adaptée à 12/20 (60 %). Si le réglage est désactivé, la note restera à 6, et donc passera effectivement de 6/10 (60 %) à 6/20 (30 %), ce qui nécessitera un ajustement manuel afin d\'assurer que les scores soient corrects.';
 $string['modgradetype'] = 'Type';
 $string['modgradetypenone'] = 'Aucun';
 $string['modgradetypepoint'] = 'Point';
@@ -464,6 +502,9 @@ $string['movingelement'] = 'Déplacement de {$a}';
 $string['multfactor'] = 'Multiplicateur';
 $string['multfactor_help'] = 'Le multiplicateur est un nombre par lequel toutes les notes de cet élément d\'évaluation seront multipliées, sans toutefois dépasser la note maximale. Par exemple, si le multiplicateur est 2 et que la note maximale est 100, toutes les notes inférieures à 50 seront doublées, et les notes 50 et plus seront mises à 100.';
 $string['multfactorvalue'] = 'Multiplicateur pour {$a}';
+$string['mustchooserescaleyesorno'] = 'Veuillez décider si vous voulez ou non adapter les notes existantes.';
+$string['mygrades'] = 'Lien notes du menu utilisateur';
+$string['mygrades_desc'] = 'Ce réglage permet de spécifier dans le menu utilisateur un lien vers un carnet de notes externe.';
 $string['mypreferences'] = 'Mes préférences';
 $string['myreportpreferences'] = 'Mes préférences de rapport';
 $string['navmethod'] = 'Méthode de navigation';
@@ -489,10 +530,12 @@ $string['nooutcome'] = 'Aucun objectif';
 $string['nooutcomes'] = 'Les éléments d\'objectif doivent être liés à un objectif de cours. Il n\'y a cependant aucun objectif défini dans ce cours. Voulez-vous en définir un ?';
 $string['nopermissiontoresetweights'] = 'Vous n\'êtes pas autorisé à réinitialiser les pondérations';
 $string['nopublish'] = 'Ne pas publier';
+$string['noreports'] = 'Vous n\'êtes pas inscrit, ni ne donnez aucun cours sur ce site.';
 $string['norolesdefined'] = 'Aucun rôle défini dans Administration > Notes > Réglages généraux > Rôles évalués';
 $string['noscales'] = 'Les éléments d\'objectif doivent être liés à un barème de cours ou un barême global. Il n\'y a cependant aucun barème. Voulez-vous en définir un ?';
 $string['noselectedcategories'] = 'Aucune catégorie sélectionnée.';
 $string['noselecteditems'] = 'Aucun élément sélectionné.';
+$string['notenrolled'] = 'Vous n\'êtes inscrit à aucun cours sur ce site.';
 $string['notteachererror'] = 'Vous devez être enseignant pour utiliser cette fonctionnalité.';
 $string['nousersloaded'] = 'Aucun utilisateur chargé';
 $string['numberofgrades'] = 'Nombre de notes';
@@ -578,6 +621,7 @@ $string['rawpct'] = '% brut';
 $string['real'] = 'Brut';
 $string['realletter'] = 'Brut (lettre)';
 $string['realpercentage'] = 'Brut (pourcentage)';
+$string['recalculatinggrades'] = 'Re-calcul des notes';
 $string['recovergradesdefault'] = 'Récupérer par défaut les notes';
 $string['recovergradesdefault_help'] = 'Par défaut, récupérer les anciennes notes lors de la ré-inscription d\'un participant à un cours.';
 $string['refreshpreview'] = 'Actualiser la prévisualisation';
@@ -595,6 +639,7 @@ $string['resetweights'] = 'Réinitialiser les pondérations de {$a->itemname}';
 $string['resetweightsshort'] = 'Réinitialiser les pondérations';
 $string['respectingcurrentdata'] = 'en conservant la configuration actuelle';
 $string['rowpreviewnum'] = 'Prévisualiser les rangées';
+$string['rowpreviewnum_help'] = 'Les données a importer peuvent être prévisualisées avant de confirmer l\'importation. Ce réglage détermine le nombre de lignes à afficher dans la prévisualisation.';
 $string['savechanges'] = 'Enregistrer les changements';
 $string['savepreferences'] = 'Enregistrer les préférences';
 $string['scaleconfirmdelete'] = 'Voulez-vous vraiment supprimer le barème « {$a} » ?';
@@ -605,6 +650,7 @@ $string['selectalloroneuser'] = 'Sélectionner tous ou un utilisateur';
 $string['selectauser'] = 'Sélectionner un utilisateur';
 $string['selectdestination'] = 'Choisir la destination de {$a}';
 $string['separator'] = 'Séparateur';
+$string['separator_help'] = 'Sélectionner le caractère de séparation utilisé dans le fichier CSV (en principe une virgule).';
 $string['sepcolon'] = 'Deux-points';
 $string['sepcomma'] = 'Virgule';
 $string['sepsemicolon'] = 'Point-virgule';
@@ -645,6 +691,9 @@ $string['showhiddenitems_help'] = 'Spécifie si les éléments d\'évaluations c
 * Cacher les éléments jusqu\'au : les éléments d\'évaluation et les notes sont totalement invisibles, jusqu\'à l\'échéance de la date fixée, s\'il y en a une. Une fois le date passée, l\'élément et les notes sont affichées
 * Cacher les éléments : les éléments d\'évaluation et les notes sont totalement invisibles';
 $string['showhiddenuntilonly'] = 'Cacher les éléments jusqu\'au';
+$string['showingaggregatesonly'] = 'N\'afficher que les tendances centrales';
+$string['showingfullmode'] = 'Afficher la vue complète';
+$string['showinggradesonly'] = 'N\'afficher que les notes';
 $string['showlettergrade'] = 'Afficher les notes lettres';
 $string['showlettergrade_help'] = 'Si ce réglage est activé, la colonne avec la note lettre sera affichée.';
 $string['showlocks'] = 'Afficher les cadenas';
@@ -707,7 +756,7 @@ $string['uncategorised'] = 'Sans catégorie';
 $string['unchangedgrade'] = 'Non inchangée';
 $string['unenrolledusersinimport'] = 'Ce fichier d\'importation contenait les notes suivantes d\'utilisateurs n\'étant actuellement pas inscrits dans ce cours : {$a}';
 $string['unlimitedgrades'] = 'Notes illimitées';
-$string['unlimitedgrades_help'] = 'Par défaut, les notes sont limitées par les valeurs maximales et minimales de l\'élément d\'évaluation. L\'activation de ce réglage retire cette limite et permet de saisir directement des notes dépassant 100%. Il est recommandé de ne modifier ce réglage que durant des heures creuses, car toutes les notes seront recalculées, ce qui pourrait occasionner une charge élevée sur le serveur.';
+$string['unlimitedgrades_help'] = 'Par défaut, les notes sont limitées par les valeurs maximales et minimales de l\'élément d\'évaluation. L\'activation de ce réglage retire cette limite et permet de saisir directement dans le carnet de notes des notes dépassant 100%.';
 $string['unlock'] = 'Déverrouiller';
 $string['unlockverbose'] = 'Déverrouiller {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['unused'] = 'Pas utilisée';
@@ -734,6 +783,7 @@ $string['usermappingerrorusernotfound'] = 'Erreur de correspondance utilisateur�
 $string['userpreferences'] = 'Préférences utilisateur';
 $string['useweighted'] = 'Utiliser les pondérations';
 $string['verbosescales'] = 'Barèmes textuels';
+$string['verbosescales_help'] = 'Un barème textuel utilise des mots plutôt que des nombres. Indiquez « Oui » si les barèmes numériques et textuels doivent être importés. Indiquez « Non » si vous ne voulez importer que les barèmes numériques.';
 $string['viewbygroup'] = 'Groupe';
 $string['viewgrades'] = 'Affichage des notes';
 $string['weight'] = 'Pondération';

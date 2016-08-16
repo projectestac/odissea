@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradeimport_xml', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['errincorrectuseridnumber'] = 'Errorea: inportatutako fitxategiko \'{$a}
 $string['error'] = 'Erroreak gertatzen ari dira';
 $string['errorduringimport'] = 'Errorea gertatu da inportatzean: {$a}';
 $string['fileurl'] = 'Urritiko fitxategiaren URL-a';
+$string['importxml'] = 'Inportatu XML fitxategia';
 $string['pluginname'] = 'XML fitxategia';
 $string['xml:publish'] = 'XML kalifikazioen inportazioa argitaratu';
 $string['xml:view'] = 'Kalifikazioak XML fitxategitik inportatu';

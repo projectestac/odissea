@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['id'] = 'ID';
 $string['importoptions'] = 'Inportatzeko aukerak';
 $string['invalidencoding'] = 'Kodifikazioa ez da baliagarria';
 $string['nochanges'] = 'Aldaketarik ez';
+$string['pluginname'] = 'Igo ikastaroa';
 $string['preview'] = 'Aurreikusi';
 $string['result'] = 'Emaitza';
 $string['rowpreviewnum'] = 'Aurreikusi errenkadak';

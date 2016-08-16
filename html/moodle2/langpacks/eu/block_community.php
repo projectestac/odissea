@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['blocks'] = 'Blokeak';
 $string['cannotselecttopsubject'] = 'Ezin da aukeratu goragoko maila';
 $string['comments'] = 'Iruzkinak ({$a})';
 $string['community:addinstance'] = 'Gehitu komunitate-bilatzailea bloke berria';
-$string['community:myaddinstance'] = 'Gehitu komunitate-bilatzailea bloke berria Nire hasieran';
+$string['community:myaddinstance'] = 'Gehitu komunitate-bilatzailea bloke berria aginte-panelean';
 $string['contentinfo'] = 'Gaia: {$a->subject} - Audientzia: {$a->audience} - Hezkuntza-maila: {$a->educationallevel}';
 $string['continue'] = 'Jarraitu';
 $string['contributors'] = '- Laguntzaileak: {$a}';

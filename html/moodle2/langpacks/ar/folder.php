@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['modulename'] = 'مجلد';
 $string['modulenameplural'] = 'مجلدات';
 $string['pluginadministration'] = 'إدارة المجلد';
 $string['pluginname'] = 'مجلد';
+$string['search:activity'] = 'مجلد';

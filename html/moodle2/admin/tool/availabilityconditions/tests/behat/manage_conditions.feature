@@ -8,6 +8,8 @@ Feature: Manage availability conditions
   Scenario: Display list of availability conditions
     # Check the report doesn't show when not enabled.
     Given I log in as "admin"
+    And the following config values are set as admin:
+      | enableavailability | 0 |
     And I expand "Site administration" node
     When I expand "Plugins" node
     Then I should not see "Availability restrictions"
@@ -28,10 +30,8 @@ Feature: Manage availability conditions
     Given the following "courses" exist:
       | fullname | shortname | format |
       | Course 1 | C1        | topics |
-    And the following config values are set as admin:
-      | enableavailability | 1 |
     And I log in as "admin"
-    And I am on homepage
+    And I am on site homepage
     When I navigate to "Manage restrictions" node in "Site administration > Plugins > Availability restrictions"
 
     # Check the icon is there (it should be a Hide icon, meaning is currently visible).
@@ -47,7 +47,7 @@ Feature: Manage availability conditions
 
     # OK, toggling works. Set the grade one to Hide and we'll go see if it actually worked.
     And I click on "input[title=Hide]" "css_element" in the "Restriction by grade" "table_row"
-    And I am on homepage
+    And I am on site homepage
     And I follow "Course 1"
     And I turn editing mode on
     And I add a "Page" to section "1"

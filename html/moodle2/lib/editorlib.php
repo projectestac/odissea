@@ -203,7 +203,7 @@ abstract class texteditor {
 
     /**
      * @var string $text The text set to the editor in the form.
-     * @since 2.8.8, 2.9.2, 3.0
+     * @since 3.0
      */
     protected $text = '';
 
@@ -225,8 +225,12 @@ abstract class texteditor {
 
     /**
      * Add required JS needed for editor
+     *
+     * Valid options may vary by editor. See the individual editor
+     * implementations of this function for documentation.
+     *
      * @param string $elementid id of text area to be converted to editor
-     * @param array $options
+     * @param array $options Editor options
      * @param obejct $fpoptions file picker options
      * @return void
      */

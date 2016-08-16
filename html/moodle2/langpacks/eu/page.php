@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'page', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,3 +61,4 @@ $string['printheading'] = 'Erakutsi orriaren izena';
 $string['printheadingexplain'] = 'Orriaren izena edukiaren gainean erakutsi?';
 $string['printintro'] = 'Erakutsi orriaren deskribapena';
 $string['printintroexplain'] = 'Orriaren deskribapena edukiaren gainean erakutsi?';
+$string['search:activity'] = 'Orria';

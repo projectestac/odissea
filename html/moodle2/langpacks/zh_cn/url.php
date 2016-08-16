@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'url', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,17 +50,17 @@ $string['externalurl'] = '外部URL';
 $string['framesize'] = '框架高度';
 $string['invalidstoredurl'] = '不能显示此资源，URL 无效。';
 $string['invalidurl'] = '输入的 URL 无效';
-$string['modulename'] = 'URL';
+$string['modulename'] = '网页地址';
 $string['modulename_help'] = '该 URL 模块可以让老师提供一个 web 链接作为课程资源。任何线上的可自由使用的东西，如文件或图片，可以作为链接；该 URL 不必是某个网站的主页。某个网页的 URL 可以被复制和粘贴，或者老师可以使用文件选择器，从容器中选择一个链接，如 Flickr，YouTube 或者 Wikimedia（视该站点可使用的容器的情况而定）。
 
 该 URL 有一些显示选项，如嵌入显示或者在新的窗口打开该 URL 的选项，以及向该 URL 传递诸如学生姓名信息的高级选项，如果需要的话。';
-$string['modulenameplural'] = 'URL';
+$string['modulenameplural'] = '网页地址';
 $string['page-mod-url-x'] = '任意URL模块页面';
 $string['parameterinfo'] = '&amp;参数=变量';
 $string['parametersheader'] = '参数';
 $string['parametersheader_help'] = '可以将一些Moodle内部变量自动附加到URL上。在每个文本框中输入参数名，然后选择配套的变量。';
 $string['pluginadministration'] = 'URL模块管理';
-$string['pluginname'] = 'URL';
+$string['pluginname'] = '网页地址';
 $string['popupheight'] = '弹出窗口高度（单位：像素）';
 $string['popupheightexplain'] = '指定弹出窗口的缺省高度。';
 $string['popupwidth'] = '弹出窗口宽度（单位：像素）';
@@ -68,6 +68,7 @@ $string['popupwidthexplain'] = '指定弹出窗口的缺省宽度。';
 $string['printintro'] = '显示URL描述';
 $string['printintroexplain'] = '在内容下方显示 URL 描述？某些显示类型就算开启此选项也不会显示描述。';
 $string['rolesinparams'] = '在参数中包含角色名';
+$string['search:activity'] = '网页地址';
 $string['serverurl'] = '服务器URL';
 $string['url:addinstance'] = '添加一个新的 URL 资源';
 $string['url:view'] = '查看URL';

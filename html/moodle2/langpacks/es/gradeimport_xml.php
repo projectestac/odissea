@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradeimport_xml', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,9 @@ $string['errincorrectuseridnumber'] = 'Error: el número de identificación \'{$
 $string['error'] = 'Ha habido errores';
 $string['errorduringimport'] = 'Ha ocurrido un error al importar: {$a}';
 $string['fileurl'] = 'URL de archivo remoto';
+$string['fileurl_help'] = 'El archivo remoto del campo URL se usa para buscar datos de un servidor remoto, como un sistema de información del estudiante.';
+$string['importxml'] = 'Importar XML';
+$string['importxml_help'] = 'Las notas se pueden importar a través de un archivo XML que contenga los números de identificación de usuario y su actividad. Para obtener el formato correcto, primero exporte algunas notas al archivo XML y luego compruebe el archivo.';
 $string['pluginname'] = 'Archivo XML';
 $string['xml:publish'] = 'Publicar importación de calificaciones XML';
 $string['xml:view'] = 'Importar calificaciones XML';

@@ -72,7 +72,9 @@ class core_phpunit_advanced_testcase extends advanced_testcase {
     }
 
     public function test_set_user() {
-        global $USER, $DB;
+        global $USER, $DB, $SESSION;
+
+        $this->resetAfterTest();
 
         $this->assertEquals(0, $USER->id);
         $this->assertSame($_SESSION['USER'], $USER);
@@ -109,6 +111,11 @@ class core_phpunit_advanced_testcase extends advanced_testcase {
         $this->assertEquals(0, $USER->id);
         $this->assertSame($_SESSION['USER'], $USER);
         $this->assertSame($GLOBALS['USER'], $USER);
+
+        // Ensure session is reset after setUser, as it may contain extra info.
+        $SESSION->sometestvalue = true;
+        $this->setUser($user);
+        $this->assertObjectNotHasAttribute('sometestvalue', $SESSION);
     }
 
     public function test_set_admin_user() {
@@ -432,6 +439,8 @@ class core_phpunit_advanced_testcase extends advanced_testcase {
         $message2->notification      = 0;
 
         // There should be debugging message without redirection.
+        $mailsink = $this->redirectEmails();
+        $mailsink->close();
         message_send($message1);
         $this->assertDebuggingCalled(null, null, 'message_send() must print debug message that messaging is disabled in phpunit tests.');
 
@@ -549,5 +558,94 @@ class core_phpunit_advanced_testcase extends advanced_testcase {
      */
     public function test_message_redirection_reset() {
         $this->assertFalse(phpunit_util::is_redirecting_messages(), 'Test reset must stop message redirection.');
+    }
+
+    public function test_set_timezone() {
+        global $CFG;
+        $this->resetAfterTest();
+
+        $this->assertSame('Australia/Perth', $CFG->timezone);
+        $this->assertSame('Australia/Perth', date_default_timezone_get());
+
+        $this->setTimezone('Pacific/Auckland', 'Europe/Prague');
+        $this->assertSame('Pacific/Auckland', $CFG->timezone);
+        $this->assertSame('Pacific/Auckland', date_default_timezone_get());
+
+        $this->setTimezone('99', 'Europe/Prague');
+        $this->assertSame('99', $CFG->timezone);
+        $this->assertSame('Europe/Prague', date_default_timezone_get());
+
+        $this->setTimezone('xxx', 'Europe/Prague');
+        $this->assertSame('xxx', $CFG->timezone);
+        $this->assertSame('Europe/Prague', date_default_timezone_get());
+
+        $this->setTimezone();
+        $this->assertSame('Australia/Perth', $CFG->timezone);
+        $this->assertSame('Australia/Perth', date_default_timezone_get());
+
+        try {
+            $this->setTimezone('Pacific/Auckland', '');
+        } catch (Exception $e) {
+            $this->assertInstanceOf('PHPUnit_Framework_Error_Warning', $e);
+        }
+
+        try {
+            $this->setTimezone('Pacific/Auckland', 'xxxx');
+        } catch (Exception $e) {
+            $this->assertInstanceOf('PHPUnit_Framework_Error_Warning', $e);
+        }
+
+        try {
+            $this->setTimezone('Pacific/Auckland', null);
+        } catch (Exception $e) {
+            $this->assertInstanceOf('PHPUnit_Framework_Error_Warning', $e);
+        }
+
+    }
+
+    public function test_locale_reset() {
+        global $CFG;
+
+        $this->resetAfterTest();
+
+        // If this fails self::resetAllData(); must be updated.
+        $this->assertSame('en_AU.UTF-8', get_string('locale', 'langconfig'));
+        $this->assertSame('English_Australia.1252', get_string('localewin', 'langconfig'));
+
+        if ($CFG->ostype === 'WINDOWS') {
+            $this->assertSame('English_Australia.1252', setlocale(LC_TIME, 0));
+            setlocale(LC_TIME, 'English_USA.1252');
+        } else {
+            $this->assertSame('en_AU.UTF-8', setlocale(LC_TIME, 0));
+            setlocale(LC_TIME, 'en_US.UTF-8');
+        }
+
+        try {
+            self::resetAllData(true);
+        } catch (Exception $e) {
+            $this->assertInstanceOf('PHPUnit_Framework_Error_Warning', $e);
+        }
+
+        if ($CFG->ostype === 'WINDOWS') {
+            $this->assertSame('English_Australia.1252', setlocale(LC_TIME, 0));
+        } else {
+            $this->assertSame('en_AU.UTF-8', setlocale(LC_TIME, 0));
+        }
+
+        if ($CFG->ostype === 'WINDOWS') {
+            $this->assertSame('English_Australia.1252', setlocale(LC_TIME, 0));
+            setlocale(LC_TIME, 'English_USA.1252');
+        } else {
+            $this->assertSame('en_AU.UTF-8', setlocale(LC_TIME, 0));
+            setlocale(LC_TIME, 'en_US.UTF-8');
+        }
+
+        self::resetAllData(false);
+
+        if ($CFG->ostype === 'WINDOWS') {
+            $this->assertSame('English_Australia.1252', setlocale(LC_TIME, 0));
+        } else {
+            $this->assertSame('en_AU.UTF-8', setlocale(LC_TIME, 0));
+        }
     }
 }

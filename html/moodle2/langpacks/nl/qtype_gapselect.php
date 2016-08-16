@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_gapselect', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,9 @@ $string['choicex'] = 'Keuze {no}';
 $string['combinedcontrolnamegapselect'] = 'Rolmenu';
 $string['combinedcontrolnamegapselectplural'] = 'Rolmenu\'s';
 $string['correctansweris'] = 'Het goede antwoord is: {$a}';
+$string['errorblankchoice'] = 'Controleer de keuzes: keuze {$a} is leeg.';
+$string['errormissingchoice'] = 'Controleer de vraagtekst: {$a} is niet gevonden in de keuzes!
+Enkel getallen met opgegeven keuzes mogen gebruikt worden als plaatshouders.';
 $string['errornoslots'] = 'De vraagtekst moet plaatshouders bevatten zoals [[1]] om aan te geven waar de ontbrekende woorden moeten komen.';
 $string['errorquestiontextblank'] = 'Je moet een vraagtekst ingeven.';
 $string['group'] = 'Groep';
@@ -39,6 +42,8 @@ $string['pleaseputananswerineachbox'] = 'Zet een antwoord in elke box.';
 $string['pluginname'] = 'Ontbrekende woorden selecteren';
 $string['pluginnameadding'] = 'Een "ontbrekende woorden selecteren"-vraag toevoegen';
 $string['pluginnameediting'] = 'Een "ontbrekende woorden selecteren"-vraag bewerken';
+$string['pluginname_help'] = 'Een "ontbrekende woorden selecteren"-vraag verwacht van de respondent om juiste antwoorden te selecteren uit  rolmenu\'s. Als plaatshouders wordt in de vraagtekst [[1]], [[2]], [[3]], ... gebruikt, met de overeenkomende antwoorden als 1, 2, 3, ... .Extra keuzes kunnen toegevoegd worden om de vraag moeilijker te maken. De keuzes kunnen gegroepeerd worden om de beschikbare antwoorden per rolmenu te beperken.';
+$string['pluginnamesummary'] = 'De ontbrekende woorden in de tekst worden ingevuld met woorden uit de rolmenu\'s';
 $string['shuffle'] = 'Door elkaar halen';
 $string['tagsnotallowed'] = '{$a->tag} is niet toegestaan. (Enkel {$a->allowed} zijn toegestaan.)';
 $string['tagsnotallowedatall'] = '{$a->tag} is niet toegestaan. (Hier geen HTML gebruiken.)';

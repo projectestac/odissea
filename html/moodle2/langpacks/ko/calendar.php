@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'calendar', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,7 +106,6 @@ $string['gotocalendar'] = '달력으로 가기';
 $string['group'] = '모둠';
 $string['groupevent'] = '모둠 행사';
 $string['groupevents'] = '모듬 일정';
-$string['hidden'] = '감추기';
 $string['hidecourseevents'] = '강좌 이벤트 숨기기';
 $string['hideglobalevents'] = '글로벌 이벤트 숨기기';
 $string['hidegroupsevents'] = '모둠 이벤트 숨기기';

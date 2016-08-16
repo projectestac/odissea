@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['areamainfile'] = 'Hauptdatei';
 $string['arearoot'] = 'System';
 $string['areauserbackup'] = 'Nutzersicherung';
 $string['areauserdraft'] = 'Entwürfe';
-$string['areauserpersonal'] = 'Eigene Dateien';
+$string['areauserpersonal'] = 'Meine Dateien';
 $string['areauserprofile'] = 'Profile';
 $string['attachedfiles'] = 'Anhängende Dateien';
 $string['attachment'] = 'Anhang';
@@ -115,7 +115,7 @@ $string['enternewname'] = 'Neuen Dateinamen angeben';
 $string['error'] = 'Fehler aufgetreten!';
 $string['errordoublereference'] = 'Das Überschreiben des Dateinamens durch einen Shortcut/Alias ist nicht möglich, da für die Datei bereits Shortcuts existieren.';
 $string['errornotyourfile'] = 'Sie dürfen keine Datei auswählen, die nicht von Ihnen hinzugefügt wurde';
-$string['errorpostmaxsize'] = 'Die ausgewählte Datei könnte größer sein als die Einstellung max_post_size in der Datei php.ini';
+$string['errorpostmaxsize'] = 'Die ausgewählte Datei könnte größer sein als der Server zulässt.';
 $string['erroruniquename'] = 'Der Name des Repository muss eindeutig sein';
 $string['errorwhilecommunicatingwith'] = 'Fehler bei der Kommunikation mit dem Repository \'{$a}\'';
 $string['errorwhiledownload'] = 'Beim Download der Datei {$a} trat ein Fehler auf';
@@ -136,7 +136,6 @@ $string['folderrecurse'] = 'Ein Verzeichnis kann nicht in ein eigenes Unterverze
 $string['getfile'] = 'Datei auswählen';
 $string['getfiletimeout'] = 'Timeout Download';
 $string['help'] = 'Hilfe';
-$string['hidden'] = 'Verborgen';
 $string['iconview'] = 'Symbolansicht';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'Instanz';
@@ -164,6 +163,7 @@ $string['makefileinternal'] = 'Kopie der Datei anlegen';
 $string['makefilelink'] = 'Direkt zur Datei verlinken';
 $string['makefilereference'] = 'Alias/Verknüpfung zur Datei anlegen';
 $string['manage'] = 'Übersicht';
+$string['manageinstances'] = 'Instanzen verwalten';
 $string['manageurl'] = 'Verwalten';
 $string['manageuserrepository'] = 'Eigenes Repository verwalten';
 $string['moving'] = 'Verschieben';
@@ -196,7 +196,7 @@ $string['pluginnamehelp'] = 'Wenn Sie dieses Feld leer lassen, wird der Standard
 $string['popup'] = 'Für diesen Dienst müssen Sie sich anmelden.';
 $string['popupblockeddownload'] = 'Das Download-Fenster ist blockiert. Bitte erlauben Sie Popup-Fenster in Ihrem Browser und versuchen es noch einmal.';
 $string['preview'] = 'Vorschau';
-$string['privatefilesof'] = '{$a} Eigene Dateien';
+$string['privatefilesof'] = '{$a} Meine Dateien';
 $string['readonlyinstance'] = 'Sie können keinen schreibgeschützten Eintrag bearbeiten oder löschen';
 $string['referencesexist'] = '{$a} Aliase/Verknüpfungen zu dieser Datei';
 $string['referenceslist'] = 'Aliase/Verknüpfungen';

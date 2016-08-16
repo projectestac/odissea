@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['addaquestion'] = 'uma nova pergunta';
 $string['addarandomquestion'] = 'uma pergunta aleatória';
 $string['addarandomquestion_help'] = 'Quando adiciona uma pergunta aleatória, esta será selecionada aleatoriamente entre as perguntas de uma determinada categoria. Isto significa que os diferentes alunos obterão uma diferente seleção de perguntas e, quando o teste permite múltiplas tentativas, cada tentativa conterá uma diferente seleção de perguntas.';
 $string['addarandomselectedquestion'] = 'Adicionar uma pergunta selecionada aleatoriamente';
+$string['addasection'] = 'uma nova secção';
 $string['adddescriptionlabel'] = 'Adicionar uma descrição/legenda';
 $string['addingquestion'] = 'Adicionar uma pergunta';
 $string['addingquestions'] = '<p>Este lado da página permite gerir a sua base de dados de perguntas. As perguntas são guardadas em categorias de forma a organizar as mesmas e podem ser usadas em qualquer teste desta disciplina, ou mesmo noutras disciplinas, caso opte por as publicar.</p>
@@ -107,8 +108,8 @@ $string['attemptsonly'] = 'Mostrar apenas os alunos com tentativas';
 $string['attemptstate'] = 'Estado';
 $string['attemptstillinprogress'] = 'Tentativa ainda em progresso';
 $string['attemptsunlimited'] = 'Tentativas ilimitadas';
-$string['autosaveperiod'] = 'Intervalo de tempo entre cada gravação automática';
-$string['autosaveperiod_desc'] = 'As respostas dos alunos podem ser guardadas automaticamente, em intervalos de alguns minutos, durante as tentativas de realização do teste. Esta funcionalidade aumenta a carga do servidor mas, em contrapartida, reduz a possibilidade de que os alunos percam o seu trabalho.';
+$string['autosaveperiod'] = 'Intervalo de tempo entre gravações automáticas';
+$string['autosaveperiod_desc'] = 'As respostas dos alunos podem ser guardadas automaticamente, em intervalos de alguns minutos, durante as tentativas de realização do teste. Esta funcionalidade aumenta a carga do servidor mas, em contrapartida, reduz a possibilidade dos alunos perderem o seu trabalho. Se quiser tornar este intervalo de tempo muito mais curto, deve alterar gradualmente este valor e monitorizar a carga do servidor. Se a carga estiver demasiado alta, modifique o intervalo de tempo para um valor mais longo. Se configurar o intervalo de tempo para 0 a gravação automática é desligada.';
 $string['back'] = 'Voltar à pré-visualização da pergunta';
 $string['backtocourse'] = 'Voltar à disciplina';
 $string['backtoquestionlist'] = 'Voltar à lista de perguntas';
@@ -144,11 +145,17 @@ $string['cannotstartgradesmismatch'] = 'Não é possível iniciar uma tentativa 
 $string['cannotstartmissingquestion'] = 'Não é possível iniciar uma tentativa. As definições do teste incluem uma pergunta que não existe.';
 $string['cannotstartnoquestions'] = 'Não é possível iniciar uma tentativa de resolução do teste. O teste ainda não foi configurado nem foram adicionadas perguntas';
 $string['cannotwrite'] = 'Não é possível escrever no ficheiro de exportação ({$a})';
+$string['canredoquestions'] = 'Permitir responder novamente durante a tentativa';
+$string['canredoquestions_desc'] = 'Se ativar esta opção, quando os alunos terminarem de responder a uma determinada questão irão ver o botão Responder novamente. Este botão permite-lhes responder novamente à questão sem terem de submeter todo o teste e começar uma nova tentativa. Esta configuração é bastante útil para testes de treino.
+
+Esta configuração diz respeito apenas às perguntas (excluindo, por exemplo, as perguntas de desenvolvimento) e comportamentos das perguntas (por exemplo, Feedback imediato ou Interativo com múltiplas tentativas) que permitem ao aluno finalizar a pergunta antes da tentativa ser submetida.';
+$string['canredoquestions_help'] = 'Se ativar esta opção, quando os alunos terminarem de responder a uma determinada questão irão ver o botão Responder novamente. Este botão permite-lhes responder novamente à questão sem terem de submeter todo o teste e começar uma nova tentativa. Esta configuração é bastante útil para testes de treino.
+
+Esta configuração diz respeito apenas às perguntas (excluindo, por exemplo, as perguntas de desenvolvimento) e comportamentos das perguntas (por exemplo, Feedback imediato ou Interativo com múltiplas tentativas) que permitem ao aluno finalizar a pergunta antes da tentativa ser submetida.';
+$string['canredoquestionsyes'] = 'Os alunos podem responder novamente a qualquer questão já respondida.';
 $string['caseno'] = 'Não. Ignorar maiúsculas/minúsculas';
 $string['casesensitive'] = 'Respeitar maiúsculas/minúsculas';
 $string['caseyes'] = 'Sim. Respeitar maiúsculas/minúsculas';
-$string['categories'] = 'Categorias';
-$string['category'] = 'Categoria';
 $string['categoryadded'] = 'A categoria {$a} foi adicionada';
 $string['categorydeleted'] = 'A categoria {$a} foi apagada';
 $string['categorynoedit'] = 'Não tem permissões de edição na categoria {$a}';
@@ -181,7 +188,7 @@ $string['configintro'] = 'As configurações seguintes serão usadas por predefi
 $string['configmaximumgrade'] = 'Nota máxima predefinida do teste.';
 $string['confignavmethod'] = 'Na navegação livre, as perguntas podem ser respondidas sem qualquer ordem usando a navegação. Em Sequencial,as perguntas devem ser respondidas em sequência estrita.';
 $string['confignewpageevery'] = 'Ao adicionar perguntas ao teste, são inseridas quebras de página de acordo com a opção que escolher aqui.';
-$string['configoutcomesadvanced'] = 'Se esta opção estiver ativa, então as competências na edição do teste são consideradas opções avançadas.';
+$string['configoutcomesadvanced'] = 'Se esta opção estiver ativa, os resultados da aprendizagem são considerados como configurações avançadas na edição do Teste .';
 $string['configpenaltyscheme'] = 'Aplicar penalização da pergunta a cada resposta errada, quando o teste está configurado em modo adaptável.';
 $string['configpopup'] = 'Forçar o teste a abrir numa janela de pop-up e usar o Javascript para restringir a possibilidade de copiar e colar, etc. durante as tentativas de resolução';
 $string['configrequirepassword'] = 'Os alunos devem introduzir uma senha para aceder ao teste.';
@@ -189,17 +196,14 @@ $string['configrequiresubnet'] = 'Os alunos só podem aceder aos testes a partir
 $string['configreviewoptions'] = 'Estas opções definem que informação será exibida aos utilizadores quando estes fazem a revisão do teste ou consultam os relatórios do teste.';
 $string['configshowblocks'] = 'Mostrar blocos durante a resolução do teste.';
 $string['configshowuserpicture'] = 'Mostrar a fotografia do utilizador durante a resolução do teste.';
-$string['configshufflequestions'] = 'Se ativar esta opção, a ordem das perguntas do teste será definida aleatoriamente em cada tentativa que o aluno fizer para responder ao teste.';
 $string['configshufflewithin'] = 'Se ativar esta opção, a ordem dos itens que integram cada pergunta individual será definida aleatoriamente em cada tentativa que o aluno fizer para responder ao teste, desde que esta opção também esteja ativa na configuração da pergunta.';
 $string['configtimelimit'] = 'Tempo máximo para realização do teste (em minutos). 0 (zero) significa sem tempo limite.';
 $string['configtimelimitsec'] = 'Tempo máximo para realização do teste (em segundos). 0 (zero) significa sem tempo limite.';
 $string['configurerandomquestion'] = 'Configurar pergunta';
 $string['confirmclose'] = 'Está prestes a concluir esta tentativa. Uma vez concluída, não poderá alterar as suas respostas.';
 $string['confirmremovequestion'] = 'Tem a certeza de que pretende remover esta pergunta do tipo \'{$a}\'?';
+$string['confirmremovesectionheading'] = 'Tem a certeza que deseja eliminar a categoria \'{$a}\'?';
 $string['confirmserverdelete'] = 'Tem a certeza que deseja apagar o servidor<b>{$a}</b> da lista?';
-$string['confirmstartattemptlimit'] = 'Este teste permite um máximo de {$a} tentativa(s). Está prestes a começar uma nova tentativa. Deseja continuar?';
-$string['confirmstartattempttimelimit'] = 'Este teste tem tempo limite e o número máximo de tentativas de resolução é {$a}. Está prestes a começar uma nova tentativa. Deseja continuar?';
-$string['confirmstarttimelimit'] = 'Este teste tem tempo limite. Tem a certeza que deseja responder ao teste?';
 $string['connectionerror'] = 'Ligação à rede perdida (gravação automática falhou).
 
 Anote quaisquer respostas inseridas nesta página nos últimos minutos e tente ligar novamente à rede.
@@ -337,7 +341,6 @@ $string['eventreportviewed'] = 'Relatório de Teste visualizado';
 $string['everynquestions'] = 'A cada {$a} perguntas';
 $string['everyquestion'] = 'A cada nova pergunta inserida';
 $string['everythingon'] = 'Tudo em';
-$string['export'] = 'Exportar';
 $string['exportcategory'] = 'exportar categoria';
 $string['exporterror'] = 'Ocorreu um erro durante o processo de exportação';
 $string['exportingquestions'] = 'As perguntas estão a ser exportadas para um ficheiro';
@@ -362,7 +365,6 @@ $string['finishattemptdots'] = 'Terminar tentativa';
 $string['finishreview'] = 'Terminar revisão';
 $string['forceregeneration'] = 'forçar regeneração';
 $string['formatnotfound'] = 'não foi encontrado o formato {$a} de importação/exportação';
-$string['formatnotimplemented'] = 'Este formato não foi implementado corretamente, por favor reporte este erro.';
 $string['formulaerror'] = 'Fórmula com erros!';
 $string['fractionsaddwrong'] = 'As notas positivas que selecionou não somam 100%.<br />A soma é de {$a}%<br /> Deseja voltar atrás e corrigir esta pergunta?';
 $string['fractionsnomax'] = 'Uma das respostas deve ter a nota de 100% para que seja <br /> possível obter a nota máxima nesta pergunta.
@@ -372,10 +374,10 @@ $string['functiondisabledbysecuremode'] = 'Essa funcionalidade está de momento 
 $string['generalfeedback'] = 'Feedback geral';
 $string['generalfeedback_help'] = 'O feedback geral consiste num texto que é exibido quando é submetida uma resposta. Ao contrário do feedback específico, que depende da resposta do aluno, o feedback geral é sempre o mesmo.';
 $string['graceperiod'] = 'Tempo extra';
-$string['graceperiod_desc'] = 'Tempo extra predefinido, em segundos, se a opção \'Quando o tempo termina\' estiver configurada como \'É permitido um tempo extra para submeter, mas sem alterar respostas\'.';
+$string['graceperiod_desc'] = 'Tempo extra permitido se a opção \'Quando o tempo termina\' estiver configurada como \'É permitido um tempo extra para submeter, mas sem alterar respostas\'.';
 $string['graceperiod_help'] = 'Tempo extra permitido se a opção \'Quando o tempo termina\' estiver configurada como \'É permitido um tempo extra para submeter, mas sem alterar respostas\'.';
 $string['graceperiodmin'] = 'Tempo extra para processamento';
-$string['graceperiodmin_desc'] = 'Existe um problema potencial quando o limite de tempo é atingido e o teste termina. Pretende-se que os alunos aproveitem o tempo limite até ao último segundo - com a ajuda do cronómetro que submete automaticamente o teste quando o tempo se esgota. Porém, o servidor pode ficar sobrecarregado naquele momento e levar algum tempo a processar as respostas submetidas. Por esta razão, esta configuração permite que sejam aceites as submissões durante o número de segundos aqui definido, após o tempo terminar. Deste modo os alunos são penalizados pela lentidão do servidor. No entanto, o aluno pode fazer batota e usufruir deste tempo extra para continuar a responder ao teste. Tem que tomar esta decisão com base na confiança que tem no desempenho do seu servidor durante a realização dos testes.';
+$string['graceperiodmin_desc'] = 'Existe um potencial problema quando o limite de tempo é atingido e o teste termina. Pretende-se que os alunos aproveitem o tempo limite até ao último segundo - com a ajuda do cronómetro que submete automaticamente o teste quando o tempo se esgota. Porém, o servidor pode ficar sobrecarregado naquele momento e levar algum tempo a processar as respostas submetidas. Por esta razão, esta configuração permite que sejam aceites as submissões durante o número de segundos aqui definido, após o tempo terminar, para que deste modo os alunos não sejam penalizados pela lentidão do servidor. Contudo, o aluno pode fazer batota e usufruir deste tempo extra para continuar a responder ao teste. Tem que tomar esta decisão com base na confiança que tem no desempenho do seu servidor durante a realização dos testes.';
 $string['graceperiodtoosmall'] = 'O tempo extra deve ser superior a {$a}.';
 $string['grade'] = 'Nota';
 $string['gradeall'] = 'Avaliar tudo';
@@ -397,7 +399,8 @@ $string['gradingdetailsadjustment'] = 'Com as penalizações anteriores fica com
 $string['gradingdetailspenalty'] = 'Esta submissão foi penalizada com {$a}.';
 $string['gradingdetailszeropenalty'] = 'Não sofreu penalizações com esta submissão.';
 $string['gradingmethod'] = 'Método de avaliação: {$a}';
-$string['groupoverrides'] = 'Exceção para grupos';
+$string['groupoverrides'] = 'Exceções para grupos';
+$string['groupoverridesdeleted'] = 'Exceções para grupos apagadas';
 $string['groupsnone'] = 'Não existem grupos nesta disciplina';
 $string['guestsno'] = 'Os visitantes não podem ver nem responder a testes';
 $string['hidebreaks'] = 'Ocultar quebras de páginas';
@@ -405,7 +408,6 @@ $string['hidereordertool'] = 'Ocultar a ferramenta de reordenação';
 $string['history'] = 'Histórico de respostas:';
 $string['howquestionsbehave_desc'] = 'Configuração predefinida para o comportamento das perguntas num teste.';
 $string['imagedisplay'] = 'Imagem a exibir';
-$string['import'] = 'Importar';
 $string['importcategory'] = 'importar categoria';
 $string['importerror'] = 'Ocorreu um erro durante o processo de importação';
 $string['importfilearea'] = 'Importar de ficheiro já existente nos ficheiros da disciplina...';
@@ -426,12 +428,12 @@ $string['incorrect'] = 'Incorreto';
 $string['indivresp'] = 'Respostas a cada item';
 $string['info'] = 'Informação';
 $string['infoshort'] = 'i';
+$string['initialnumfeedbacks'] = 'Número inicial de campos de feedback geral';
+$string['initialnumfeedbacks_desc'] = 'Ao criar um novo teste, fornecer quantas caixas em branco para o feedback. Uma vez criado o teste, o formulário mostra o número de campos obrigatórios para o número de feedback\'s do teste. Esta configuração deve ser de pelo menos 1.';
 $string['inprogress'] = 'Em progresso';
 $string['introduction'] = 'Descrição';
 $string['invalidattemptid'] = 'Não existe nenhuma tentativa com esse ID';
 $string['invalidcategory'] = 'O ID da categoria não é válido';
-$string['invalidnumericanswer'] = 'Uma das respostas introduzidas não é um número válido.';
-$string['invalidnumerictolerance'] = 'Uma das margens introduzidas não é um número válido.';
 $string['invalidoverrideid'] = 'O ID da exceção não é válido';
 $string['invalidquestionid'] = 'O ID da pergunta não é válido';
 $string['invalidquizid'] = 'O ID do teste não é válido';
@@ -450,6 +452,7 @@ $string['literal'] = 'Literal';
 $string['loadingquestionsfailed'] = 'Não foi possível carregar as perguntas: {$a}';
 $string['makecopy'] = 'Gravar como nova pergunta';
 $string['managetypes'] = 'Gerir tipos de perguntas e servidores';
+$string['manualgradequestion'] = 'Avaliação manual da questão {$a->question} em {$a->quiz} por {$a->user}';
 $string['manualgrading'] = 'A avaliar';
 $string['mark'] = 'Submeter';
 $string['markall'] = 'Submeter página';
@@ -488,9 +491,10 @@ $string['modulenameplural'] = 'Testes';
 $string['moveselectedonpage'] = 'Mover as perguntas selecionadas para a página: {$a}';
 $string['multichoice'] = 'Escolha múltipla';
 $string['multipleanswers'] = 'Escolha pelo menos uma resposta';
-$string['multiplier'] = 'Multiplicador';
 $string['mustbesubmittedby'] = 'Esta tentativa deve ser submetida por {$a}.';
 $string['name'] = 'Nome';
+$string['navigatenext'] = 'Página seguinte';
+$string['navigateprevious'] = 'Página anterior';
 $string['navmethod'] = 'Método de navegação';
 $string['navmethod_free'] = 'Livre';
 $string['navmethod_help'] = 'Quando a navegação sequencial está ativa o aluno segue pelo teste, sem possibilidade de retornar às páginas anteriores, nem saltar nenhuma.';
@@ -559,7 +563,7 @@ Para adicionar quebras de páginas após uma pergunta, selecione as perguntas e 
 Para organizar as perguntas num diferente número de páginas, clique no botão de Repaginação e insira o número que perguntas por página que deseja.';
 $string['orderingquiz'] = 'Ordenar e Paginar';
 $string['orderingquizx'] = 'Ordem e paginação: {$a}';
-$string['outcomesadvanced'] = 'As competências são opções avançadas';
+$string['outcomesadvanced'] = 'Os resultados da aprendizagem são configurações avançadas';
 $string['outof'] = '{$a->grade} num máximo de {$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade} num máximo de {$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
@@ -623,6 +627,10 @@ $string['questionbankmanagement'] = 'Gestão da base de dados de perguntas';
 $string['questionbehaviour'] = 'Comportamento das perguntas';
 $string['questioncats'] = 'Categorias de perguntas';
 $string['questiondeleted'] = 'Esta pergunta foi apagada. Por favor contacte o professor da disciplina';
+$string['questiondependencyadd'] = 'Não existem restrições para responder à pergunta {$a->thisq} • Clique para alterar';
+$string['questiondependencyfree'] = 'Sem restrições para esta pergunta';
+$string['questiondependencyremove'] = 'A pergunta {$a->thisq} não pode ser respondida até que a pergunta anterior {$a->previousq} esteja concluída • Clique para alterar';
+$string['questiondependsonprevious'] = 'Esta pergunta não pode ser respondida até que a pergunta anterior esteja concluída.';
 $string['questioninuse'] = 'A pergunta {$a->questionname} está atualmente a ser utilizada em: <br />{$a->quiznames}<br />A pergunta não será apagada desses testes mas apenas da categoria.';
 $string['questionmissing'] = 'Falta a pergunta para esta sessão';
 $string['questionname'] = 'Nome da pergunta';
@@ -671,7 +679,7 @@ $string['quizopenwillclose'] = 'O teste está aberto, irá fechar em {$a} às';
 $string['quizordernotrandom'] = 'A ordem das perguntas não está baralhada';
 $string['quizorderrandom'] = '* A ordem das perguntas está baralhada';
 $string['quiz:preview'] = 'Pré-visualizar testes';
-$string['quiz:regrade'] = 'Reclassificar tentativas';
+$string['quiz:regrade'] = 'Reavaliar tentativas';
 $string['quiz:reviewmyattempts'] = 'Rever as próprias tentativas';
 $string['quizsettings'] = 'Configurações do teste';
 $string['quiztimer'] = 'Cronómetro';
@@ -690,15 +698,19 @@ $string['readytosend'] = 'Está prestes a submeter o teste para a avaliação. T
 $string['reattemptquiz'] = 'Iniciar uma nova tentativa de resolução do teste';
 $string['recentlyaddedquestion'] = 'Pergunta recentemente adicionada!';
 $string['recurse'] = 'Incluir também perguntas das subcategorias';
-$string['regrade'] = 'Reclassificar todas as tentativas';
-$string['regradecomplete'] = 'Todas as tentativas foram reclassificadas';
+$string['redoesofthisquestion'] = 'Outras tentativas de resposta: {$a}';
+$string['redoquestion'] = 'Responder novamente';
+$string['regrade'] = 'Reavaliar todas as tentativas';
+$string['regradecomplete'] = 'Todas as tentativas foram reavaliadas';
 $string['regradecount'] = '{$a->changed} em {$a->attempt} notas foram alteradas';
-$string['regradedisplayexplanation'] = 'Tentativas alteradas durante a reclassificação são exibidas com hiperligações para a janela de revisão da pergunta';
-$string['regradenotallowed'] = 'Não possui permissão para reclassificar este teste';
-$string['regradingquestion'] = 'A reclassificar "{$a}".';
-$string['regradingquiz'] = 'A reclassificar teste "{$a}"';
+$string['regradedisplayexplanation'] = 'Tentativas alteradas durante a reavaliação são exibidas com hiperligações para a janela de revisão da pergunta';
+$string['regradenotallowed'] = 'Não possui permissão para reavaliar este teste';
+$string['regradingquestion'] = 'A reavaliar "{$a}".';
+$string['regradingquiz'] = 'A reavaliar teste "{$a}"';
 $string['remove'] = 'Apagar';
+$string['removeallgroupoverrides'] = 'Apagar todas as exceções para grupos';
 $string['removeallquizattempts'] = 'Apagar todas as tentativas do teste';
+$string['removealluseroverrides'] = 'Apagar todas as exceções para utilizadores';
 $string['removeemptypage'] = 'Apagar página vazia';
 $string['removepagebreak'] = 'Remover quebra de página';
 $string['removeselected'] = 'Apagar selecionadas';
@@ -723,7 +735,7 @@ $string['reportmulti_resp'] = 'Respostas individuais';
 $string['reportmustselectstate'] = 'Deve selecionar pelo menos um estado.';
 $string['reportnotfound'] = 'Relatório desconhecido ({$a})';
 $string['reportoverview'] = 'Perspetiva global';
-$string['reportregrade'] = 'Reclassificar tentativas';
+$string['reportregrade'] = 'Reavaliar tentativas';
 $string['reportresponses'] = 'Respostas detalhadas';
 $string['reports'] = 'Relatórios';
 $string['reportshowonly'] = 'Mostrar apenas:';
@@ -755,18 +767,19 @@ $string['reviewimmediately'] = 'Imediatamente a seguir à tentativa';
 $string['reviewnever'] = 'Nunca permitir a revisão';
 $string['reviewofattempt'] = 'Revisão da tentativa {$a}';
 $string['reviewofpreview'] = 'Revisão da pré-visualização';
+$string['reviewofquestion'] = 'Revisão da questão {$a->question} em {$a->quiz} por {$a->user}';
 $string['reviewopen'] = 'Mais tarde, com o teste ainda aberto';
 $string['reviewoptions'] = 'Os alunos podem rever o teste';
 $string['reviewoptionsheading'] = 'Informação exibida na revisão do teste';
 $string['reviewoptionsheading_help'] = 'Estas opções definem a informação que os alunos podem ver ao rever uma tentativa ou ao consultar os relatórios do teste.
 
-**Durante a tentativa** é relevante apenas para alguns tipos de comportamentos de perguntas, como o \'interativo com múltiplas tentativas\', que podem exibir feedback durante a tentativa.
+**Durante a tentativa** é relevante apenas para alguns tipos de comportamentos de perguntas, como o \'interativo com múltiplas tentativas\', que pode exibir feedback durante a tentativa.
 
-**Imediatamente a seguir à tentativa** aplicável ao período de dois minutos após o aluno submeter a realização do teste e, como tal, ao relatório de revisão do teste que surge imediatamente a seguir.
+**Imediatamente a seguir à tentativa** aplicável ao período de dois minutos após o aluno submeter a tentativa de realização do teste e, como tal, ao relatório de revisão do teste que surge imediatamente a seguir.
 
-**Mais tarde, enquanto o teste estiver aberto** aplicável desde o período anterior até à data de fecho do teste.
+**Mais tarde, com o teste ainda aberto** aplicável desde o período anterior até à data de fecho do teste.
 
-**Depois do teste fechar** aplicável após a data de fecho do teste. Se o teste não tiver uma data de fecho definida, este estado nunca é aplicado.';
+**Após o teste fechar** aplicável após a data de fecho do teste. Se o teste não tiver uma data de fecho definida, este estado nunca é aplicado.';
 $string['reviewoverallfeedback'] = 'Feedback global';
 $string['reviewoverallfeedback_help'] = 'Feedback global dado ao aluno no final da tentativa em função da nota total obtida.';
 $string['reviewresponse'] = 'Rever respostas';
@@ -789,6 +802,9 @@ $string['savingnewgradeforquestion'] = 'A guardar nova nota para a pergunta ID {
 $string['savingnewmaximumgrade'] = 'A guardar nova nota máxima.';
 $string['score'] = 'Nota bruta';
 $string['scores'] = 'Avaliações';
+$string['search:activity'] = 'Teste - informações da atividade';
+$string['sectionheadingedit'] = 'Editar título \'{$a}\'';
+$string['sectionheadingremove'] = 'Eliminar secção \'{$a}\'';
 $string['seequestions'] = '(Ver perguntas)';
 $string['select'] = 'Selecionar';
 $string['selectall'] = 'Selecionar tudo';
@@ -827,7 +843,9 @@ $string['shuffle'] = 'Baralhar';
 $string['shuffleanswers'] = 'Baralhar opções de resposta';
 $string['shuffledrandomly'] = 'Baralhadas aleatoriamente';
 $string['shufflequestions'] = 'Baralhar perguntas';
-$string['shufflequestionsselected'] = 'A opção de baralhar perguntas está ativa, logo algumas ações relativas às páginas não se encontram disponíveis. Para alterar as configurações das perguntas baralhadas,clique em {$a}.';
+$string['shufflequestions_help'] = 'Se ativar esta opção, sempre que se iniciar uma nova tentativa de resolução do teste, a ordem das perguntas desta secção será baralhada aleatóriamente.
+
+Esta configuração pode dificultar a partilha de respostas entre alunos, mas também tornar mais difícil pedir ajuda ao professor acerca de determinada pergunta.';
 $string['shufflewithin'] = 'Baralhar dentro das perguntas';
 $string['shufflewithin_help'] = 'Se selecionar \'Sim\', as opções de resposta serão baralhadas aleatoriamente cada vez que o aluno realiza uma tentativa do teste. Esta configuração só se aplica a perguntas com várias opções como as de resposta múltipla ou correspondência.';
 $string['singleanswer'] = 'Escolha uma resposta…';
@@ -887,10 +905,9 @@ $string['true'] = 'Verdadeiro';
 $string['truefalse'] = 'Verdadeiro/Falso';
 $string['type'] = 'Tipo';
 $string['unfinished'] = 'aberto';
-$string['ungraded'] = 'Sem classificação';
+$string['ungraded'] = 'Sem avaliação';
 $string['unit'] = 'Unidade';
 $string['unknowntype'] = 'O tipo de pergunta não suportada na linha {$a}. A pergunta será ignorada.';
-$string['unusedcategorydeleted'] = 'Esta categoria foi apagada pois após apagar a disciplina, as perguntas deixaram de ser utilizadas.';
 $string['updatesettings'] = 'Atualizar configurações do teste';
 $string['updatingatttemptgrades'] = 'A atualizar as notas das tentativas.';
 $string['updatingfinalgrades'] = 'A atualizar notas finais';
@@ -901,6 +918,7 @@ $string['upgradingveryoldquizattempts'] = 'A atualizar tentativas antigas: {$a->
 $string['url'] = 'URL';
 $string['usedcategorymoved'] = 'Esta categoria foi preservada e movida para o nível do site pois é uma categoria pública ainda em uso noutras disciplinas.';
 $string['useroverrides'] = 'Exceções para utilizadores';
+$string['useroverridesdeleted'] = 'Exceções para utilizador apagadas';
 $string['usersnone'] = 'Nenhum aluno tem acesso a este teste';
 $string['validate'] = 'Validar';
 $string['viewallanswers'] = 'Ver {$a} tentativas de resolução do teste';

@@ -67,27 +67,33 @@ $repo->callback();
 // If Moodle is working on HTTPS mode, then we are not allowed to access
 // parent window, in this case, we need to alert user to refresh the repository
 // manually.
-$strhttpsbug = get_string('cannotaccessparentwin', 'repository');
+$strhttpsbug = json_encode(get_string('cannotaccessparentwin', 'repository'));
 $strrefreshnonjs = get_string('refreshnonjsfilepicker', 'repository');
 $js =<<<EOD
 <html>
 <head>
     <script type="text/javascript">
-    if(window.opener){
+    try {
+        if (window.opener) {
         //XTEC ************ MODIFICAT - MDL-47597 Inform users to use https on callback url on Flickr repository
         //2014.10.08 @pferre22
-        try{
+        try {
             window.opener.M.core_filepicker.active_filepicker.list();
             window.close();
         } catch (err) {
             alert("{$strhttpsbug }");
         }
-        //CODI ORIGINAL
-        //window.opener.M.core_filepicker.active_filepicker.list();
-        //window.close();
-        //************ FI
-    } else {
-        alert("{$strhttpsbug }");
+        //************ ORIGINAL
+        /*
+            window.opener.M.core_filepicker.active_filepicker.list();
+            window.close();
+        */
+        //************ FI  
+        } else {
+            throw new Error('Whoops!');
+        }
+    } catch (e) {
+        alert({$strhttpsbug});
     }
     </script>
 </head>

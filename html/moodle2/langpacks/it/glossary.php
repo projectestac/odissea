@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['cnfshowgroup'] = 'Imposta la visualizzazione della separazione dei grup
 $string['cnfsortkey'] = 'La chiave di ordinamento di default';
 $string['cnfsortorder'] = 'La priorità di ordinamento di default.';
 $string['cnfstudentcanpost'] = 'Imposta il default per consentire agli studenti di inserire voci';
+$string['cnftabs'] = 'Seleziona le schede visibili per questo formato del glossario';
 $string['comment'] = 'Commento';
 $string['commentdeleted'] = 'Il commento è stato eliminato';
 $string['comments'] = 'Commenti';
@@ -273,6 +274,8 @@ $string['rssarticles_help'] = 'L\'impostazione stabilisce il numero di voci da i
 $string['rsssubscriberss'] = 'Visualizza RSS per \'{$a}\' voci';
 $string['rsstype'] = 'Feed RSS per questa attività';
 $string['rsstype_help'] = 'Abilita i feed RSS per l\'attività. E\' possibile scegliere se far comparire o meno l\'autore nel feed.';
+$string['search:activity'] = 'Glossario - Informazioni sull\'attività';
+$string['search:entry'] = 'Glossario - Voci';
 $string['searchindefinition'] = 'Cerca anche nelle definizioni';
 $string['secondaryglossary'] = 'Glossario secondario';
 $string['showall'] = 'Visualizza link \'TUTTI\'';
@@ -291,6 +294,7 @@ $string['studentcanpost'] = 'Gli studenti possono inserire termini';
 $string['totalentries'] = 'Totale voci';
 $string['usedynalink'] = 'Collega automaticamente le voci di glossario';
 $string['usedynalink_help'] = 'Se l\'amministratore ha abilitato il collegamento automatico delle voci a livello di sito e questa opzione  è selezionata, il form per aggiungere nuovi termini includerà l\'opzione per il collegamento automatico della voce in tutto il corso.';
+$string['visibletabs'] = 'Schede visibili';
 $string['waitingapproval'] = 'In attesa di approvazione';
 $string['warningstudentcapost'] = '(Valido solo se il glossario non è quello primario)';
 $string['withauthor'] = 'Concetti con autore';

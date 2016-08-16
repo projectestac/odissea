@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,7 +113,7 @@ $string['noreports'] = 'لا يوجد تقرير للعرض';
 $string['normal'] = 'عادي';
 $string['notattempted'] = 'لم تتم محاولته';
 $string['objectives'] = 'أهداف';
-$string['optallstudents'] = 'كل المستحدمين';
+$string['optallstudents'] = 'كل المستخدمين';
 $string['organization'] = 'تنظيم';
 $string['organizations'] = 'تنظيمات';
 $string['othersettings'] = 'إعدادات إضافية';
@@ -137,7 +137,7 @@ $string['scormcourse'] = 'منهج دراسي تعليمي';
 $string['scormopen'] = 'افتح';
 $string['scormresponsedeleted'] = 'تم حذف محاولات مستخدم';
 $string['scormtype'] = 'نوع';
-$string['scorm:viewreport'] = 'معاينة التقايري';
+$string['scorm:viewreport'] = 'معاينة التقارير';
 $string['scorm:viewscores'] = 'معاينة الدراجات';
 $string['scrollbars'] = 'السماح للنافذف بالتمرير';
 $string['selectall'] = 'اختر الكل';

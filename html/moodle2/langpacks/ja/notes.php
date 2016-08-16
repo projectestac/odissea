@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'notes', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['eventnoteupdated'] = 'ノートが更新されました。';
 $string['groupaddnewnote'] = '共通ノートを追加する';
 $string['invalidid'] = '無効なノートIDが指定されました。';
 $string['invaliduserid'] = '無効なユーザID: {$a}';
+$string['myprofileownnotes'] = 'マイノート';
 $string['nocontent'] = 'ノートコンテンツは空白にすることができません。';
 $string['nonotes'] = 'まだこのタイプのノートはありません。';
 $string['nopermissiontodelete'] = 'あなたはこのノートを削除できません。';

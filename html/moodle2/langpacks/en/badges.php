@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,7 +88,7 @@ $string['backpackdetails'] = 'Backpack settings';
 $string['backpackemail'] = 'Email address';
 $string['backpackemail_help'] = 'The email address associated with your backpack. While you are connected, any badges earned on this site will be associated with this email address.';
 $string['backpackimport'] = 'Badge import settings';
-$string['backpackimport_help'] = 'After backpack connection is successfully established, badges from your backpack can be displayed on your "My Badges" page and your profile page.
+$string['backpackimport_help'] = 'After the backpack connection is successfully established, badges from your backpack can be displayed on your badges page and your profile page.
 
 In this area, you can select collections of badges from your backpack that you would like to display in your profile.';
 $string['badgedetails'] = 'Badge details';
@@ -99,8 +99,9 @@ To add a new image, browse and select an image (in JPG or PNG format) then click
 $string['badgeprivacysetting'] = 'Badge privacy settings';
 $string['badgeprivacysetting_help'] = 'Badges you earn can be displayed on your account profile page. This setting allows you to automatically set the visibility of the newly earned badges.
 
-You can still control individual badge privacy settings on your "My badges" page.';
+You can still control individual badge privacy settings on your badges page.';
 $string['badgeprivacysetting_str'] = 'Automatically show badges I earn on my profile page';
+$string['badges'] = 'Badges';
 $string['badgesalt'] = 'Salt for hashing the recipient\'s email address';
 $string['badgesalt_desc'] = 'Using a hash allows backpack services to confirm the badge earner without having to expose their email address. This setting should only use numbers and letters.
 
@@ -214,6 +215,7 @@ $string['error:backpackproblem'] = 'There was a problem connecting to your backp
 $string['error:badjson'] = 'The connection attempt returned invalid data.';
 $string['error:cannotact'] = 'Cannot activate the badge.';
 $string['error:cannotawardbadge'] = 'Cannot award badge to a user.';
+$string['error:cannotdeletecriterion'] = 'This criterion cannot be deleted.';
 $string['error:clone'] = 'Cannot clone the badge.';
 $string['error:connectionunknownreason'] = 'The connection was unsuccessful but no reason was given.';
 $string['error:duplicatename'] = 'Badge with such name already exists in the system.';
@@ -242,6 +244,7 @@ $string['error:requesterror'] = 'The connection request failed (error code {$a})
 $string['error:requesttimeout'] = 'The connection request timed out before it could complete.';
 $string['error:save'] = 'Cannot save the badge.';
 $string['error:userdeleted'] = '{$a->user} (This user no longer exists in {$a->site})';
+$string['eventbadgeawarded'] = 'Badge awarded';
 $string['evidence'] = 'Evidence';
 $string['existingrecipients'] = 'Existing badge recipients';
 $string['expired'] = 'Expired';
@@ -258,7 +261,6 @@ $string['externalbadges_help'] = 'This area displays badges from your external b
 $string['externalbadgesp'] = 'Badges from other web sites:';
 $string['externalconnectto'] = 'To display external badges you need to <a href="{$a}">connect to a backpack</a>.';
 $string['fixed'] = 'Fixed date';
-$string['hidden'] = 'Hidden';
 $string['hiddenbadge'] = 'Unfortunately, the badge owner has not made this information available.';
 $string['issuancedetails'] = 'Badge expiry';
 $string['issuedbadge'] = 'Issued badge information';
@@ -280,8 +282,8 @@ $string['makepublic'] = 'Make public';
 $string['managebadges'] = 'Manage badges';
 $string['message'] = 'Message body';
 $string['messagebody'] = '<p>You have been awarded the badge "%badgename%"!</p>
-<p>More information about this badge can be found at %badgelink%.</p>
-<p>You can manage and download the badge from {$a}.</p>';
+<p>More information about this badge can be found on the %badgelink% badge information page.</p>
+<p>You can manage and download the badge from your {$a} page.</p>';
 $string['messagesubject'] = 'Congratulations! You just earned a badge!';
 $string['method'] = 'This criterion is complete when...';
 $string['mingrade'] = 'Minimum grade required';
@@ -325,10 +327,11 @@ $string['numawards'] = 'This badge has been issued to <a href="{$a->link}">{$a->
 $string['numawardstat'] = 'This badge has been issued {$a} user(s).';
 $string['overallcrit'] = 'of the selected criteria are complete.';
 $string['personaconnection'] = 'Sign in with your email';
-$string['personaconnection_help'] = 'Persona is a system for identifying yourself across the web, using an email address that you own. The Open Badges backpack uses Persona as a login system, so to be able to connect to a backpack you with need a Persona account.
+$string['personaconnection_help'] = 'Persona is a system for identifying yourself across the web, using an email address that you own. The Open Badges backpack uses Persona as a login system, so to be able to connect to a backpack you will need a Persona account.
 
 For more information about Persona visit <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Potential badge recipients';
+$string['preferences'] = 'Badge preferences';
 $string['recipientdetails'] = 'Recipient details';
 $string['recipientidentificationproblem'] = 'Cannot find a recipient of this badge among the existing users.';
 $string['recipients'] = 'Badge recipients';

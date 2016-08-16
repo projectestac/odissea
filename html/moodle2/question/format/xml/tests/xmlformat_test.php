@@ -29,7 +29,6 @@ global $CFG;
 require_once($CFG->libdir . '/questionlib.php');
 require_once($CFG->dirroot . '/question/format/xml/format.php');
 require_once($CFG->dirroot . '/question/engine/tests/helpers.php');
-require_once($CFG->dirroot . '/tag/lib.php');
 
 
 /**
@@ -1423,7 +1422,7 @@ END;
 
         $mc->layout = 0;
         $mc->single = 1;
-        $mc->shuffleanswers = 1;
+        $mc->shuffleanswers = 0;
         $mc->correctfeedback =          array('text' => '', 'format' => FORMAT_HTML, 'itemid' => null);
         $mc->partiallycorrectfeedback = array('text' => '', 'format' => FORMAT_HTML, 'itemid' => null);
         $mc->incorrectfeedback =        array('text' => '', 'format' => FORMAT_HTML, 'itemid' => null);

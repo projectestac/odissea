@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['manageplugins'] = 'Управление ограничениями';
 $string['missingplugin'] = 'Плагин ограничения отсутствует';
 $string['or'] = 'или';
 $string['restrictaccess'] = 'Ограничить доступ';
+$string['restrictbygroup'] = 'Добавить ограничение доступа по группе/потоку';
 $string['setheading'] = '{$a->number} Набор из {$a->count} ограничений';
 $string['shown_all'] = 'Отображается серым, если пользователь не соответствует условиям';
 $string['shown_individual'] = 'Отображается серым, если пользователь не соответствует этому условию';

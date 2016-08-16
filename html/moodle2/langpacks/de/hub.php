@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'hub', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['audience_help'] = 'Angestrebte Zielgruppe des Kurses';
 $string['audiencestudents'] = 'Lernende';
 $string['badgesnumber'] = 'Anzahl der Auszeichnungen ({$a})';
 $string['badurlformat'] = 'Falsches URL-Format';
-$string['cannotsearchcommunity'] = 'Entschuldigung, Sie haben nicht die nötigen Rechte, diese Seite zu sehen.';
+$string['cannotsearchcommunity'] = 'Sie haben nicht die nötigen Rechte, diese Seite zu sehen.';
 $string['community'] = 'Community';
 $string['communityremoved'] = 'Dieser Kurslink wurde von Ihrer Liste entfernt';
 $string['confirmregistration'] = 'Registrierung bestätigen';

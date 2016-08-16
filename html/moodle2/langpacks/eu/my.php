@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,14 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Gehitu orria';
+$string['alldashboardswerereset'] = 'Aginte-panel guztiak berezko baloreetara berrezarri dira.';
+$string['allprofileswerereset'] = 'Profil-orri guztiak berezko baloreetara berrezarri dira.';
 $string['defaultpage'] = 'Berezko Nire Moodle orria';
 $string['defaultprofilepage'] = 'Berezko profil-orria';
 $string['delpage'] = 'Ezabatu orria';
 $string['managepages'] = 'Kudeatu orriak';
-$string['mymoodle'] = 'Nire hasiera';
+$string['mymoodle'] = 'Aginte-panela';
 $string['nocourses'] = 'Ez dago ikastaroei buruzko informaziorik';
-$string['noguest'] = 'Nire hasiera orria ez dago bisitarien eskura';
+$string['noguest'] = 'Aginte-panela ez dago bisitarien eskura';
 $string['pinblocks'] = 'Nire Moodle-rako blokeen ezarpenak';
 $string['pinblocksexplan'] = 'Hemen ezartzen duzun edozin bloke ikusiko du (baina ezingo du editatu) Moodle-ren edozein erabiltzailek bere "Nire Moodle" orrian.';
 $string['reseterror'] = 'Errorea gertatu da zure orria berrabiaraztean';
+$string['reseteveryonesdashboard'] = 'Berrezarri aginte-panela erabiltzaile guztiei';
+$string['reseteveryonesprofile'] = 'Berrezarri profila erabiltzaile guztiei';
 $string['resetpage'] = 'Berrezarri orria berezkora';

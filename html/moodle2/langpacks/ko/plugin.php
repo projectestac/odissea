@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'plugin', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,20 +32,12 @@ $string['checkforupdateslast'] = '{$a}에 마지막으로 확인';
 $string['displayname'] = '플러그인 이름';
 $string['filterall'] = '모두 보기';
 $string['filtercontribonly'] = '기여만 보기';
-$string['filtercontribonlyactive'] = '기여만 보기';
 $string['filterupdatesonly'] = '업데이트할 수 있는 것만 보기';
-$string['filterupdatesonlyactive'] = '업데이트 가능한 것만 보여주기';
 $string['moodleversion'] = '무들 {$a}';
-$string['nonehighlighted'] = '현재 주의깊게 검토할 플러그인이 없습니다.';
-$string['nonehighlightedinfo'] = '설치된 모든 프러그인 목록 표시';
 $string['noneinstalled'] = '이 유형의 플러그인은 설치되지 않았습니다.';
 $string['notdownloadable'] = '패키지를 다운로드 할 수 없습니다.';
 $string['notes'] = '노트';
 $string['notwritable'] = '플러그인 파일이 쓸 수 없습니다.';
-$string['numdisabled'] = '비활성화된 플러그인: {$a}';
-$string['numextension'] = '기여 플러그인: {$a}';
-$string['numtotal'] = '설치된 플러그인: {$a}';
-$string['numupdatable'] = '사용가능한 업데이트: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
 $string['plugindisable'] = '비활성화';
@@ -57,10 +49,6 @@ $string['requiredby'] = '{$a}가 필요로 함';
 $string['requires'] = '필요로 하는 것';
 $string['rootdir'] = '디렉토리';
 $string['settings'] = '설정';
-$string['showall'] = '다시로드 및 모든 플러그인 표시';
-$string['somehighlighted'] = '관심이 필요한 플러그인 수: {$a}';
-$string['somehighlightedinfo'] = '설치된 플러그인의 전체 목록 표시';
-$string['somehighlightedonly'] = '관심이 필요한 플러그인 표시';
 $string['source'] = '소스';
 $string['sourceext'] = '기여된 것';
 $string['sourcestd'] = '표준';
@@ -139,6 +127,33 @@ $string['updateavailable'] = '새로운 버전 {$a} 이 있습니다.';
 $string['updateavailable_moreinfo'] = '추가 정보 ...';
 $string['updateavailable_release'] = '릴리스 {$a}';
 $string['updatepluginconfirm'] = '플러그인 업데이트 확인';
+$string['validationmsg_componentmatch'] = '전체 구성 요소 이름';
+$string['validationmsg_componentmismatchname'] = '추가 기능 이름 불일치';
+$string['validationmsg_componentmismatchtype'] = '추가기능 유형 불일치';
+$string['validationmsg_filenotexists'] = '압축을 푼 파일을 찾을 수 없습니다';
+$string['validationmsg_filesnumber'] = '충분한 파일을 패키지에서 찾을 수 없습니다';
+$string['validationmsg_filestatus'] = '모든 파일을 추출 할 수 없습니다';
+$string['validationmsglevel_debug'] = '디버그';
+$string['validationmsglevel_error'] = '오류';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = '경고';
+$string['validationmsg_maturity'] = '선언된 성숙도 수준';
+$string['validationmsg_missingexpectedlangenfile'] = '영어 언어 파일 이름 불일치';
+$string['validationmsg_missingexpectedlangenfile_info'] = '주어진 추가 기능 유형은 있어야 하는 영어 파일 {$a}이 없습니다.';
+$string['validationmsg_missinglangenfile'] = '영어 언어 파일을 찾을 수 없습니다.';
+$string['validationmsg_missinglangenfolder'] = '누락된 영어 언어 폴더';
+$string['validationmsg_missingversion'] = '추가 기능이 버전을 명시하지 않았습니다.';
+$string['validationmsg_missingversionphp'] = 'version.php 파일이 없습니다.';
+$string['validationmsg_multiplelangenfiles'] = '여러 영어 언어 파일이 발견되었습니다.';
+$string['validationmsg_onedir'] = 'ZIP 패키지의 잘못된 구조.';
+$string['validationmsg_pathwritable'] = '쓰기 접근 체크';
+$string['validationmsg_pluginversion'] = '추가 기능 버전';
+$string['validationmsg_release'] = '추가 기능 버전';
+$string['validationmsg_requiresmoodle'] = '요구되는 무들 버전';
+$string['validationmsg_rootdir'] = '설치할 추가기능 이름';
+$string['validationmsg_rootdirinvalid'] = '잘못된 추가 기능 이름';
+$string['validationmsg_targetexists'] = '대상 위치가 이미 존재합니다';
+$string['validationmsg_unknowntype'] = '알수없는 플러그인 유형';
 $string['version'] = '버전';
 $string['versiondb'] = '현재 버전';
 $string['versiondisk'] = '새 버전';

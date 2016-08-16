@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_grader', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,6 @@ $string['grader:view'] = 'Ver o relatório de avaliação';
 $string['overriddengrade'] = 'Nota ajustada';
 $string['pluginname'] = 'Pauta do avaliador';
 $string['preferences'] = 'Preferências da pauta do avaliador';
+$string['summarygrader'] = 'Uma tabela com os nomes dos alunos na primeira coluna, com atividades para avaliação agrupadas por categoria e disciplina na parte superior.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} nota';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_meta', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = '모둠에 추가';
 $string['linkedcourse'] = '링크 강좌';
 $string['meta:config'] = '메타 등록 인스턴스 구성';
 $string['meta:selectaslinked'] = '강좌를 메타 링크된 것으로 선택';

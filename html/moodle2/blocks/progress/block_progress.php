@@ -121,7 +121,7 @@ class block_progress extends block_base {
         // Draw the multi-bar content for the Dashboard and Front page.
         if (block_progress_on_site_page()) {
             $courses = enrol_get_my_courses();
-            $coursenametoshow = get_config('block_progress', 'coursenametoshow') ?: 'shortname';
+            $coursenametoshow = get_config('block_progress', 'coursenametoshow') ?: DEFAULT_COURSENAMETOSHOW;
             $sql = "SELECT bi.id,
                            bp.id AS blockpositionid,
                            COALESCE(bp.region, bi.defaultregion) AS region,
@@ -134,6 +134,12 @@ class block_progress extends block_base {
                      WHERE bi.blockname = 'progress'
                        AND bi.parentcontextid = :contextid
                   ORDER BY region, weight, bi.id";
+
+            // Show a message when the user is not enrolled in any courses.
+            if (($this->page->user_is_editing() || is_siteadmin()) && empty($courses)) {
+                $this->content->text = get_string('no_courses', 'block_progress');
+                return $this->content;
+            }
 
             foreach ($courses as $courseid => $course) {
 
@@ -252,7 +258,7 @@ class block_progress extends block_base {
             }
 
             // Display progress bar.
-            if(has_capability('block/progress:showbar', $this->context)) {
+            if (has_capability('block/progress:showbar', $this->context)) {
                 $attempts = block_progress_attempts($modules, $this->config, $events, $USER->id, $COURSE->id);
                 $this->content->text .= block_progress_bar($modules,
                                                            $this->config,
@@ -282,6 +288,7 @@ class block_progress extends block_base {
             'strings' => array(),
         );
         $arguments = array($blockinstancesonpage, array($USER->id));
+        $this->page->requires->js_init_call('M.block_progress.setupScrolling', array(), false, $jsmodule);
         $this->page->requires->js_init_call('M.block_progress.init', $arguments, false, $jsmodule);
 
         return $this->content;

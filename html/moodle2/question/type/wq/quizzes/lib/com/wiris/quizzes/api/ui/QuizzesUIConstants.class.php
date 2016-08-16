@@ -6,6 +6,7 @@ class com_wiris_quizzes_api_ui_QuizzesUIConstants {
 	static $INLINE_EDITOR;
 	static $POPUP_EDITOR;
 	static $STUDIO = "studio";
+	static $INLINE_STUDIO = "inlineStudio";
 	static $EMBEDDED_ANSWERS_EDITOR = "embeddedAnswersEditor";
 	static $AUTHORING = "authoring";
 	static $DELIVERY = "delivery";

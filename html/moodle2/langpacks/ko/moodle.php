@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'moodle', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -188,7 +188,6 @@ $string['backupfromthissite'] = '이 사이트에 대해 백업을 했습니까?
 $string['backupgradebookhistoryhelp'] = '이를 활성화하면 성적 이력이 자동 백업에 포함될 것입니다. 단, 이 기능을 원할하게 작동시키기 위해서는 시스템 설정에서 성적 이력을 비활성(disablegradehistory)시키지 말아야 합니다.';
 $string['backupincludemoduleshelp'] = '자동 백업에 강좌 모듈, 사용자 데이터 등을 포함시킬지 여부 선택';
 $string['backupincludemoduleuserdatahelp'] = '자동 백업에 모듈의 사용자 데이터를 포함시킬지 여부 선택';
-$string['backupkeephelp'] = '백업할 때 예전 백업파일을 몇 개까지 서버에 보관할까요? (더 오래된 것은 자동으로 삭제됨)';
 $string['backuplogdetailed'] = '자세한 실행기록';
 $string['backuploglaststatus'] = '최근 실행기록';
 $string['backupmissinguserinfoperms'] = '주: 이 백업은 사용자 데이터를 포함하지 않습니다. 연습 및 상호평가 활동들은 본 백업에 포함되지 않을 것이기 때문에 본 유형의 백업으로는 이러한 모듈들을 백업하는 데 적절하지 않습니다.';
@@ -259,18 +258,6 @@ $string['choosereportfilter'] = '보고서를 위한 필터 선택';
 $string['choosetheme'] = '테마 선택';
 $string['chooseuser'] = '사용자 선택';
 $string['city'] = '도시';
-$string['clambroken'] = '관리자가 업로드파일에 대해 바이러스 체크를 활성화시킨 상태입니다만 제어설정에 문제가 있습니다.<br />파일 올리기는 실패했습니다. 관리자에게 그 사항을 알리고 고칠 수 있도록 메일을 보낸 상태입니다.<br />다음에 업로드해 보십시오';
-$string['clamdeletedfile'] = '파일이 삭제 되었습니다';
-$string['clamdeletedfilefailed'] = '파일을 삭제할 수 없습니다';
-$string['clamemailsubject'] = '{$a} :: Clam AV 알림';
-$string['clamfailed'] = 'Clam AV의 실행이 되지 않았습니다. 오류 메세지는 {$a} 였습니다. 다음은 Clam가 보낸 내용입니다 :';
-$string['clamlost'] = '무들은 업로드한 파일에 대해 Clam을 실행하도록 설정되었습니다만, Clam AV, {$a} 에게 배정된 경로가 부정확합니다.';
-$string['clamlostandactinglikevirus'] = '추가로, clam 작동을 실패할 경우, 무들은 파일을 바이러스로 취급하도록 설정되었습니다. 이는 clam이 제대로 작동하기 전까지는 어느 누구도 제대로 파일을 올릴 수 없다는 것을 뜻합니다.';
-$string['clammovedfile'] = '이 파일은 지정된 격리 장소로 옮겨졌습니다. 새로운 장소는 {$a} 입니다.';
-$string['clammovedfilebasic'] = '이 파일은 격리된 디렉토리로 옮겨졌습니다.';
-$string['clamquarantinedirfailed'] = '지정된 격리 디렉토리 {$a} 로 파일을 옮길 수 없습니다.
-당신은 감염된 파일을 발견시 삭제하라는 조항으로 고쳐야 합니다.';
-$string['clamunknownerror'] = 'Clam에 확인되지 않은 오류가 있었습니다.';
 $string['cleaningtempdata'] = '임시 데이터 삭제하기';
 $string['clear'] = '정리';
 $string['clickhelpiconformoreinfo'] = '...계속...다 읽고 싶으면 도움말 아이콘을 클릭';
@@ -696,7 +683,7 @@ $string['emailresetconfirmationsubject'] = '{$a}: 암호 재설정 요청';
 $string['emailresetconfirmsent'] = '<b>{$a}</b>에 있는 주소로 이메일을 보냈습니다.
 <br />거기에는 이 암호 변경을 확인하고 마치기 위한 간단한 지시 사항이 포함되어 있습니다. 문제가 계속되면 사이트 관리자에게 문의하십시오.';
 $string['emailtoprivatefiles'] = '파일을 이메일의 첨부파일로 개인 파일 저장소에 보낼 수 있습니다. 간단하게 파일을 이메일에 첨부한 후에 {$a}로 보내세요.';
-$string['emailtoprivatefilesdenied'] = '관리자가 개인 파일 업로드 옵션을 비활성화 했습니다.';
+$string['emailtoprivatefilesdenied'] = '관리자가 개인 파일 업로드에 대한 옵션을 비활성화 했습니다.';
 $string['emptydragdropregion'] = '빈 영역';
 $string['enable'] = '관리모드 활성';
 $string['encryptedcode'] = '암호화된 코드';
@@ -1348,6 +1335,7 @@ $string['perpagea'] = '페이지당 : {$a}';
 $string['personal'] = '개인적인';
 $string['personalprofile'] = '개인정보';
 $string['phone'] = '전화';
+$string['phone1'] = '전화';
 $string['phone2'] = '휴대 전화';
 $string['phpinfo'] = 'PHP 정보';
 $string['pictureof'] = '{$a} 사진';
@@ -1831,7 +1819,6 @@ $string['usemessageform'] = '아니면 선택된 학생들에게 이 형식을 �
 $string['user'] = '사용자';
 $string['useractivity'] = '활동';
 $string['userconfirmed'] = '{$a} 이 확인 되었습니다.';
-$string['usercurrentsettings'] = '내 개인정보 설정';
 $string['userdata'] = '사용자 데이터';
 $string['userdeleted'] = '이 사용자 계정은 삭제되었습니다.';
 $string['userdescription'] = '설명';
@@ -1857,7 +1844,6 @@ $string['usersnew'] = '새로운 사용자';
 $string['usersnoaccesssince'] = '비활동인 사용자 보기';
 $string['userswithfiles'] = '사용자파일 포함';
 $string['useruploadtype'] = '올리는 형식: {$a}';
-$string['userviewingsettings'] = '{$a} 개인정보 설정';
 $string['userzones'] = '사용자 영역';
 $string['usetheme'] = '테마 사용';
 $string['usingexistingcourse'] = '개설된 강좌 사용하기';
@@ -1873,26 +1859,6 @@ $string['viewmore'] = '더 보기';
 $string['viewprofile'] = '개인정보 보기';
 $string['views'] = '보기';
 $string['viewsolution'] = '해답 보기';
-$string['virusfound'] = '관리자 경고! 클램AV가 {$a->user} 가 {$a->course} 에 올린 자료파일에 바이러스가 있음을 발견함.
-여기 클램스캔의 사용결과가 있음:';
-$string['virusfoundlater'] = '당신이 {$a->date} 에 {$a->course} 로 올린 {$a->filename} 파일이 바이러스를 포함하고 있음이 밝혀짐. 여기 그 파일에 무슨 일이 일어났는지 요약이 있음:
-
-{$a->action}
-
-만약 이것이 제출된 과제라면, 선생님이 볼수 있도록 다시 제출해야함.';
-$string['virusfoundlateradmin'] = '관리자 경고! 사용자 {$a->user} 가 {$a->date} 에 {$a->course} 로 올린 {$a->filename} 파일이 바이러스를 포함하고 있음이 밝혀짐. 여기 그 파일에 어떤 문제가 있는지에 대한 개요가 있음:
-
-{$a->action}
-
-그 사용자에게도 통보되었음.';
-$string['virusfoundlateradminnolog'] = '관리자 경고! 파일이름 {$a->filename} 으로 올려진 자료가 바이러스를 포함하고 있음이 밝혀짐. 무들이 처음 자료를 올린 사람에 대한 조처를 취하지 못함.
-여기 이 파일에 어떤 문제가 있는지에 대한 개요가 있음:
-
-{$a->action}';
-$string['virusfoundsubject'] = '{$a}: 바이러스 발견!';
-$string['virusfounduser'] = '당신이 올린 파일, {$a->filename} 이 바이러스 검색기에의해 검사되었고 감염이 확인 되었음!
-당신의 파일 업로드는 성공적이지 못함.';
-$string['virusplaceholder'] = '올려진 자료가 바이러스를 포함하고 있음이 발견되어 옮겨졌거나 지워졌고 사용자에게 통보되었습니다.';
 $string['visible'] = '볼 수 있음';
 $string['visible_help'] = '이 설정은 강좌목록에 강좌가 나타나도록 할 것인지를 결정합니다. 선생님과 관리자를 제외하고, 일반 사용자는 강좌에 입장할 수 없습니다.';
 $string['visibletostudents'] = '{$a} 가 볼 수 있음';

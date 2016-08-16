@@ -52,6 +52,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And the "Group" select box should contain "Group A"
     And the "Group" select box should contain "Group B"
     And the "Group" select box should contain "Group C"
+    And I should see "Post a copy to all groups"
 
   Scenario: Teacher with accessallgroups can post in groups they are a member of
     Given I log in as "teacher1"
@@ -59,6 +60,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And I follow "Standard forum name"
     And I select "Group A" from the "Visible groups" singleselect
     When I click on "Add a new discussion topic" "button"
+    Then I should see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Teacher 1 -> Group B  |
       | Message | Teacher 1 -> Group B  |
@@ -67,7 +69,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And I press "Post to forum"
     And I wait to be redirected
     # We should be redirected to the group that we selected when posting.
-    Then the field "Visible groups" matches value "Group B"
+    And the field "Visible groups" matches value "Group B"
     And I should see "Group B" in the "Teacher 1 -> Group B" "table_row"
     And I should not see "Group A" in the "Teacher 1 -> Group B" "table_row"
     And I should not see "Group C" in the "Teacher 1 -> Group B" "table_row"
@@ -88,6 +90,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And I follow "Standard forum name"
     And I select "Group A" from the "Visible groups" singleselect
     When I click on "Add a new discussion topic" "button"
+    Then I should see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Teacher 1 -> Group C  |
       | Message | Teacher 1 -> Group C  |
@@ -95,7 +98,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And I press "Post to forum"
     And I wait to be redirected
     # We should be redirected to the group that we selected when posting.
-    Then the field "Visible groups" matches value "Group C"
+    And the field "Visible groups" matches value "Group C"
     # We redirect to the group posted in automatically.
     And I should see "Group C" in the "Teacher 1 -> Group C" "table_row"
     And I should not see "Group A" in the "Teacher 1 -> Group C" "table_row"
@@ -110,6 +113,33 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And I should not see "Teacher 1 -> Group C"
     And I select "Group B" from the "Visible groups" singleselect
     And I should not see "Teacher 1 -> Group C"
+
+  Scenario: Teacher with accessallgroups can post to all groups
+    Given I log in as "teacher1"
+    And I follow "Course 1"
+    And I follow "Standard forum name"
+    When I click on "Add a new discussion topic" "button"
+    And I set the following fields to these values:
+      | Subject                   | Teacher 1 -> Post to all  |
+      | Message                   | Teacher 1 -> Post to all  |
+      | Post a copy to all groups | 1                       |
+    And I press "Post to forum"
+    And I wait to be redirected
+    # Posting to all groups means that we should be redirected to the page we started from.
+    And the field "Visible groups" matches value "All participants"
+    And I select "Group A" from the "Visible groups" singleselect
+    Then I should see "Group A" in the "Teacher 1 -> Post to all" "table_row"
+    And I should not see "Group B" in the "Teacher 1 -> Post to all" "table_row"
+    And I should not see "Group C" in the "Teacher 1 -> Post to all" "table_row"
+    And I select "Group B" from the "Visible groups" singleselect
+    And I should see "Group B" in the "Teacher 1 -> Post to all" "table_row"
+    And I should not see "Group A" in the "Teacher 1 -> Post to all" "table_row"
+    And I should not see "Group C" in the "Teacher 1 -> Post to all" "table_row"
+    And I select "Group C" from the "Visible groups" singleselect
+    And I should see "Group C" in the "Teacher 1 -> Post to all" "table_row"
+    And I should not see "Group A" in the "Teacher 1 -> Post to all" "table_row"
+    And I should not see "Group B" in the "Teacher 1 -> Post to all" "table_row"
+    # No point testing the "All participants".
 
   Scenario: Students can view all groups
     Given I log in as "student1"
@@ -129,6 +159,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And I should see "Group A"
     And I should not see "Group B"
     And I should not see "Group C"
+    And I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Student -> B |
       | Message | Student -> B |
@@ -147,6 +178,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And the "Group" select box should contain "Group A"
     And the "Group" select box should contain "Group B"
     And the "Group" select box should not contain "Group C"
+    And I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Student -> B  |
       | Message | Student -> B  |
@@ -166,6 +198,7 @@ Feature: Posting to all groups in a visible group discussion is restricted to us
     And the "Group" select box should contain "Group A"
     And the "Group" select box should contain "Group B"
     And the "Group" select box should not contain "Group C"
+    And I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Student -> A  |
       | Message | Student -> A  |

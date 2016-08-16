@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_table', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,20 +27,42 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcolumnafter'] = 'Spalte einfügen nach';
 $string['addrowafter'] = 'Zeile einfügen nach';
+$string['all'] = 'Um jede Zelle';
+$string['allowbackgroundcolour'] = 'Hintergrundfarbe erlauben';
+$string['allowborder'] = 'Rahmenanpassung erlauben';
+$string['allowborder_desc'] = 'Die Option legt fest, ob die Rahmen von Tabellen und Tabellenzellen angepasst werden können. Standardmäßig ist der Rahmen eine schwarze Linie (solid 1px black).';
+$string['allowwidth'] = 'Breite erlauben';
+$string['appearance'] = 'Aussehen';
+$string['backgroundcolour'] = 'Hintergrundfarbe';
+$string['bordercolour'] = 'Rahmenfarbe';
+$string['borders'] = 'Rahmen';
+$string['bordersize'] = 'Rahmendicke';
+$string['borderstyles'] = 'Rahmenart';
 $string['both'] = 'Beide';
 $string['caption'] = 'Titel';
+$string['captionposition'] = 'Position der Überschrift';
 $string['columns'] = 'Spalten';
 $string['createtable'] = 'Tabelle erstellen';
+$string['dashed'] = 'Dashed';
 $string['deletecolumn'] = 'Spalte löschen';
 $string['deleterow'] = 'Zeile löschen';
+$string['dotted'] = 'Dotted';
 $string['edittable'] = 'Tabelle bearbeiten';
 $string['headers'] = 'Überschrift';
 $string['movecolumnleft'] = 'Spalte nach links schieben';
 $string['movecolumnright'] = 'Spalte nach rechts schieben';
 $string['moverowdown'] = 'Zeile runter schieben';
 $string['moverowup'] = 'Zeile hoch schieben';
+$string['noborder'] = 'Keine Rahmen';
+$string['none'] = 'Keine';
 $string['numberofcolumns'] = 'Anzahl der Spalten';
 $string['numberofrows'] = 'Anzahl der Zeilen';
+$string['outer'] = 'Um die Tabelle';
 $string['pluginname'] = 'Tabelle';
 $string['rows'] = 'Zeilen';
+$string['settings'] = 'Tabelleneinstellungen';
+$string['solid'] = 'Solid';
+$string['themedefault'] = 'Designstandard';
+$string['transparent'] = 'Transparent';
 $string['updatetable'] = 'Tabelle aktualisieren';
+$string['width'] = 'Tabellenbreite (in %)';

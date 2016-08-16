@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_private_files', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   block_private_files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = '我的私人文件';
 $string['privatefiles'] = '私人文件';
 $string['private_files:addinstance'] = '新增私人文件版块';
-$string['private_files:myaddinstance'] = '在我的首页新增私人文件版块';
+$string['private_files:myaddinstance'] = '在控制面板新增一个私人文件版块';

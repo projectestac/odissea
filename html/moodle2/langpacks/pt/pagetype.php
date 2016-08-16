@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'pagetype', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   pagetype
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['page-course-view-x'] = 'Qualquer tipo de página principal da disciplin
 $string['page-course-x'] = 'Qualquer página da disciplina';
 $string['page-mod-x'] = 'Qualquer página da atividade';
 $string['page-mod-x-view'] = 'Qualquer página principal da atividade';
-$string['page-my-index'] = 'A minha página principal';
+$string['page-my-index'] = 'Painel do utilizador';
 $string['page-report-x'] = 'Qualquer página de relatório';
 $string['page-site-index'] = 'Apenas a página principal do site';
 $string['page-site-x'] = 'Qualquer página de nível superior do site';

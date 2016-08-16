@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'Adicionar mais {$a} aspetos';
-$string['configgrade0'] = 'Mensagem predefinida para descrever a avaliação negativa de um determinado aspeto.';
-$string['configgrade1'] = 'Mensagem predefinida para descrever a avaliação positiva de um determinado aspeto.';
+$string['addmoredimensions'] = 'Adicionar mais {$a} proposições';
+$string['configgrade0'] = 'Palavra predefinida para descrever a avaliação negativa de um determinada proposição.';
+$string['configgrade1'] = 'Mensagem predefinida para descrever a avaliação positiva de uma determinada proposição.';
 $string['dimensioncomment'] = 'Comentário';
 $string['dimensiondescription'] = 'Descrição';
 $string['dimensiongrade'] = 'Nota';
-$string['dimensionnumber'] = 'Aspeto {$a}';
+$string['dimensionnumber'] = 'Proposição {$a}';
 $string['dimensionweight'] = 'Peso';
-$string['grade0'] = 'Resposta negativa';
+$string['grade0'] = 'Palavra que traduz o erro';
 $string['grade0default'] = 'Não';
-$string['grade1'] = 'Resposta positiva';
+$string['grade1'] = 'Palavra que traduz o sucesso';
 $string['grade1default'] = 'Sim';
 $string['grademapping'] = 'Tabela de conversão em nota';
-$string['maperror'] = 'O número ponderado de respostas desfavoráveis é menor ou igual a';
+$string['maperror'] = 'O número ponderado de erros é menor ou igual a';
 $string['mapgrade'] = 'Nota do trabalho';
 $string['percents'] = '{$a} %';
 $string['pluginname'] = 'Número de erros';

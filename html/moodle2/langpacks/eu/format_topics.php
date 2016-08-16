@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_topics', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   format_topics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Gai hau';
+$string['deletesection'] = 'Ezabatu gaia';
+$string['editsection'] = 'Editatu gaia';
+$string['editsectionname'] = 'Editatu gaiaren izena';
 $string['hidefromothers'] = 'Ezkutatu gaia';
+$string['newsectionname'] = 'izen berria {$a} gairako';
 $string['page-course-view-topics'] = 'Gai-formatuko edozein ikastaroko hasiera-orria';
 $string['page-course-view-topics-x'] = 'Gai-formatuko edozein ikastaro-orri';
 $string['pluginname'] = 'Gai-formatua';

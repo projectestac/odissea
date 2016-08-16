@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshop', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -188,6 +188,7 @@ $string['nogradeyet'] = 'Aún no hay calificación';
 $string['nosubmissionfound'] = 'No se han encontrado envíos de este usuario';
 $string['nosubmissions'] = 'Aún no hay envíos en este taller';
 $string['notassessed'] = 'Aún no evaluado';
+$string['nothingfound'] = 'No hay nada que mostrar';
 $string['nothingtoreview'] = 'Nada que evaluar';
 $string['notoverridden'] = 'No anulado';
 $string['noworkshops'] = 'No hay talleres en este curso';
@@ -264,11 +265,14 @@ Si habilita esta característica, se recomienda que defina el método de asignac
 $string['submissiongrade'] = 'Calificación por el envío';
 $string['submissiongrade_help'] = 'Esta configuración especifica la calificación máxima que se puede obtener en los trabajos enviados.';
 $string['submissiongradeof'] = 'Calificación por el envío (de {$a})';
+$string['submissionlastmodified'] = 'Último modificado';
 $string['submissionsettings'] = 'Parámetros de los envíos';
+$string['submissionsreport'] = 'Informe de envíos del taller';
 $string['submissionstart'] = 'Abierto para envíos desde';
 $string['submissionstartdatetime'] = 'Abierto para envíos desde {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (se abre para envíos)';
 $string['submissiontitle'] = 'Título';
+$string['submittednotsubmitted'] = 'Enviado ({$a->enviado}) / no enviado({$a->noenviado})';
 $string['subplugintype_workshopallocation'] = 'Método para asignación de envíos';
 $string['subplugintype_workshopallocation_plural'] = 'Métodos para asignación de envíos';
 $string['subplugintype_workshopeval'] = 'Método de calificación de la evaluación';

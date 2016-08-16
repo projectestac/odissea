@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,29 +39,29 @@ $string['draggableword'] = 'Texto arrastável';
 $string['dropbackground'] = 'Imagem de fundo para arrastar os marcadores';
 $string['dropzone'] = 'Área para largar {$a}';
 $string['dropzoneheader'] = 'Áreas para largar';
-$string['formerror_disallowedtags'] = 'Usou html tags que não são permitidas num item de texto arrastável.';
-$string['formerror_multipledraginstance'] = 'Selecionou a imagem {$a} mais de uma vez como a opção correta para uma área para largar mas esta não está assinalada como sendo um item para arrastar infinito.';
-$string['formerror_multipledraginstance2'] = 'Selecionou esta imagem mais de uma vez como a opção correta para uma área para largar mas esta não está assinalada como sendo um item para arrastar infinito.';
-$string['formerror_noallowedtags'] = 'Não são permitidas tags html neste texto, que é o texto alt para uma imagem arrastável.';
+$string['formerror_disallowedtags'] = 'Lamentamos, mas não é permitido utilizar tags HTML em texto arrastável.';
+$string['formerror_multipledraginstance'] = 'Selecionou esta imagem {$a} mais do que uma vez como sendo correspondente a uma área para largar, no entanto, não marcou a imagem como um item arrastável ilimitado.';
+$string['formerror_multipledraginstance2'] = 'Selecionou esta imagem mais do que uma vez como sendo correspondente a uma área para largar, no entanto, não marcou a imagem como um item arrastável ilimitado.';
+$string['formerror_noallowedtags'] = 'As tags HTML não são permitidas neste texto, pois trata-se de um texto alternativo para uma imagem arrastável.';
 $string['formerror_nobgimage'] = 'Deverá selecionar uma imagem para servir como fundo da área de arrastar e largar.';
 $string['formerror_nofile'] = 'Deverá carregar ou selecionar um ficheiro para utilizar aqui.';
-$string['formerror_nofile3'] = 'Tem de seleconar um ficheiro de imagem, ou apagar o rótulo associado e desselecionar a caixa infinito.';
+$string['formerror_nofile3'] = 'Deverá selecionar aqui um ficheiro de imagem, ou apagar o quadro associado e desmarcar a caixa de seleção da opção ilimitado.';
 $string['formerror_noimageselected'] = 'Deverá selecionar um item arrastável como correspondente a esta área para largar.';
-$string['formerror_notintxleft'] = 'A coordenada x deve ser um número inteiro.';
-$string['formerror_notintytop'] = 'A coordenada y deve ser um número inteiro.';
-$string['formerror_noxleft'] = 'Deve indicar o valor da coordenada x do canto superior esquerdo desta área para largar. Pode arrastar e largar a área acima para definir as coordenadas ou pode-as inserir manualmente aqui.';
-$string['formerror_noytop'] = 'Deve indicar o valor da coordenada y do canto superior esquerdo desta área para largar. Pode arrastar e largar a área acima para definir as coordenadas ou pode-as inserir manualmente aqui.';
-$string['infinite'] = 'Infinito';
+$string['formerror_notintxleft'] = 'A coordenada X deve ser um número inteiro.';
+$string['formerror_notintytop'] = 'A coordenada Y deve ser um número inteiro.';
+$string['formerror_noxleft'] = 'Deverá introduzir um valor para a coordenada X, para o canto superior esquerdo desta área para largar. Poderá arrastar e largar a área de destino para ajustar as coordenadas, ou inseri-las manualmente aqui.';
+$string['formerror_noytop'] = 'Deverá introduzir um valor para a coordenada Y, para o canto superior esquerdo desta área para largar. Poderá arrastar e largar a área de destino para ajustar as coordenadas, ou inseri-las manualmente aqui.';
+$string['infinite'] = 'Ilimitado';
 $string['label'] = 'Texto';
 $string['nolabel'] = 'Sem quadro de texto';
-$string['pleasedraganimagetoeachdropregion'] = 'A sua resposta não está completa. Arraste um item para cada área assinalada.';
+$string['pleasedraganimagetoeachdropregion'] = 'A sua resposta não está completa; por favor arraste cada item para a área de destino correspondente.';
 $string['pluginname'] = 'Arrastar e largar numa imagem';
 $string['pluginnameadding'] = 'Adicionar pergunta do tipo arrastar e largar numa imagem';
 $string['pluginnameediting'] = 'Editar pergunta do tipo arrastar e largar numa imagem';
-$string['pluginname_help'] = 'Selecione uma imagen de fundo, selcione itens arrastáveis ou introduza texto e defina as áreas na imagem de fundo onde aqueles itens devem ser largados.';
+$string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa imagem necessitam que os alunos arrastem as imagens ou quadros de texto, e os larguem numa área para largar predefinida numa imagem de fundo. Os itens arrastáveis podem ser agrupados para que desta forma todos os itens de um grupo em particular fiquem com a mesma cor das áreas para largar. Os itens arrastáveis marcados como ilimitados podem ser largados em mais do que uma zona.';
 $string['pluginnamesummary'] = 'As imagens e quadros de texto podem ser arrastados e largados em zonas predefinidas para largar, numa imagem de fundo.';
 $string['previewareaheader'] = 'Pré-visualizar';
-$string['previewareamessage'] = 'Selecione uma imagen de fundo e selcione itens arrastáveis ou introduza apenas o texto que será arrastável. Depois, escolha um "item arrastável" para cada "área para largar" e arraste o item para onde o aluno o deverá posicionar.';
+$string['previewareamessage'] = 'Selecione uma imagem de fundo, indique os itens arrastáveis e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shuffleimages'] = 'Baralhar os itens para arrastar a cada nova tentativa da pergunta';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

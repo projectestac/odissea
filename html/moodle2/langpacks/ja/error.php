@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'error', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,7 @@ $string['cannoteditcomment'] = 'あなたはこのコメントを編集できま
 $string['cannoteditcommentexpired'] = 'あなたはこれを編集できません! 編集期限が終了しています!';
 $string['cannoteditpostorblog'] = 'あなたはブログに投稿または編集できません。';
 $string['cannoteditsiteform'] = 'あなたはこのフォームを使用してサイトコースを編集できません。';
+$string['cannotedituserpreferences'] = 'このユーザのプリファレンスを編集できません。';
 $string['cannotedityourprofile'] = '申し訳ございません、あなたは自分のプロファイルを編集できません。';
 $string['cannotexecduringupgrade'] = 'アップグレード中に実行できません。';
 $string['cannotfindcategory'] = 'データベースからID「 {$a} 」でカテゴリレコードを見つけることができません。';
@@ -126,6 +127,7 @@ $string['cannotreadfile'] = 'ファイル ({$a}) を読み込めません。';
 $string['cannotreadtmpfile'] = '一時ファイルの読み込み中にエラーが発生しました。';
 $string['cannotreaduploadfile'] = 'アップロードファイルを読み込めませんでした。';
 $string['cannotremovefrommeta'] = 'このメタコースから選択したコースを削除できませんでした!';
+$string['cannotreprocessgrades'] = 'この活動 {$a} の評点を再処理できませんでした。';
 $string['cannotresetguestpwd'] = 'あなたはゲストパスワードをリセットできません。';
 $string['cannotresetmail'] = 'パスワードのリセットおよびメール送信中にエラーが発生しました。';
 $string['cannotresetthisrole'] = 'このロールをリセットできません。';
@@ -233,8 +235,10 @@ $string['errorcreatingfile'] = 'ファイル「 {$a} 」の作成中にエラー
 $string['errorcreatingrole'] = 'ロール作成中にエラーが発生しました。';
 $string['errorfetchingrssfeed'] = 'RSSフィード取得中にエラーが発生しました。';
 $string['erroronline'] = '{$a} 行目にエラーがあります。';
+$string['erroroutput'] = '出力エラーが発生したため、自動リダイレクトを無効にします。';
 $string['errorparsingxml'] = 'XML構文解析エラー: {$a->errorstring} / エラー箇所: {$a->errorline} 行目 / エラー文字: {$a->errorchar}';
 $string['errorprocessingarchive'] = 'アーカイブファイルの処理中にエラーが発生しました。';
+$string['error_question_answers_missing_in_db'] = 'question_answers databaseテーブルから「 {$a->answer} 」に合致する答えを見つけることができませんでした。これはバックアップファイルからデータベース内の既存のID  {$a->dbquestionid} の問題に合致するID {$a->filequestionid} の問題のリストア中に発生しました。';
 $string['errorreadingfile'] = 'ファイル「 {$a} 」の読み取り中にエラーが発生しました。';
 $string['errorsavingrequest'] = 'あなたのリクエストを保存中にエラーが発生しました。';
 $string['errorsettinguserpref'] = 'ユーザプリファレンス設定中にエラーが発生しました。';
@@ -256,6 +260,7 @@ $string['forumblockingtoomanyposts'] = 'あなたはこのフォーラムに設�
 $string['generalexceptionmessage'] = '例外 - {$a}';
 $string['gradecantregrade'] = '評定計算中にエラーが発生しました: {$a}';
 $string['gradepubdisable'] = '評定の公開が無効にされています。';
+$string['gradesneedregrading'] = 'コース評定を再計算する必要があります。';
 $string['groupalready'] = 'ユーザはすでにグループ「 {$a} 」に属しています';
 $string['groupexistforcourse'] = 'グループ「 {$a} 」はすでにこのコースに登録されています。';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}: IDナンバー「 {$a->idnumber} 」のグループ「 {$a->name} 」はすでにこのコースに存在します。';
@@ -279,6 +284,7 @@ $string['idnumbertaken'] = 'IDナンバーがすでに使用されています�
 $string['idnumbertoolong'] = 'IDナンバーが長すぎます。';
 $string['importformatnotimplement'] = '申し訳ございません、このフォーマットのインポートはまだ実装されていません!';
 $string['incorrectext'] = 'ファイルの拡張子が正しくありません。';
+$string['inplaceeditableerror'] = '更新プロセッサのコールにエラーが発生しました。';
 $string['installproblem'] = '通常、インストール中にエラーが発生した場合、エラーから回復することはできません。あなたがインストールを再開するには新しいデータベースを作成するか、異なるデータベース接頭辞 (prefix) を使用する必要があります。';
 $string['internalauthpassworderror'] = 'パスワードが入力されていないか、内部認証パスワードポリシーが正しくありません。';
 $string['invalidaccess'] = 'このページは正しくアクセスされていません。';
@@ -301,6 +307,7 @@ $string['invalidcomponent'] = '無効なコンポーネント名です。';
 $string['invalidconfirmdata'] = '無効な確認データです。';
 $string['invalidcontext'] = '無効なコンテクストです。';
 $string['invalidcourse'] = '無効なコースです。';
+$string['invalidcourseformat'] = '無効なコースフォーマットです。';
 $string['invalidcourseid'] = 'あなたは無効なコースIDの使用を試みています。';
 $string['invalidcourselevel'] = '無効なコンテクストレベルです。';
 $string['invalidcoursemodule'] = '無効なコースモジュールIDです。';
@@ -348,6 +355,7 @@ $string['invalidsourcefield'] = '下書きファイルのソースフィール�
 $string['invalidstatedetected'] = '不明なエラーが発生しました: {$a}。通常、このエラーは発生しません。';
 $string['invalidurl'] = '無効なURLです。';
 $string['invaliduser'] = '無効なユーザです。';
+$string['invaliduserdata'] = '無効なユーザデータ: {$a}';
 $string['invaliduserfield'] = '無効なユーザフィールド {$a}';
 $string['invaliduserid'] = '無効なユーザIDです。';
 $string['invalidusername'] = 'ユーザ名に無効な文字が含まれています。';
@@ -368,6 +376,7 @@ $string['loginasnoenrol'] = 'コースに「... としてログイン」して�
 $string['loginasonecourse'] = 'あなたはこのコースに入ることはできません。<br />他のコースに入る前に現在の「... としてログイン」セッションを終了する必要があります。';
 $string['maxareabytes'] = 'ファイルがこのエリアの空き容量を超えています。';
 $string['maxbytes'] = 'ファイルが最大許容サイズを超えています。';
+$string['maxbytesfile'] = 'ファイル {$a->file} は大きすぎます。あなたがアップロードできる最大サイズは {$a->size} です。';
 $string['messagingdisable'] = 'このサイトではメッセージングが無効にされています。';
 $string['mimetexisnotexist'] = 'あなたのシステムはmimeTeXを実行できるよう設定されていません。あなたのPHPおよびOSプラットフォームに適した実行ファイルを<a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>からダウンロードするか、C言語のソースを<a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>からダウンロードしてください。ダウンロードしたファイルをコンパイルした後、 あなたの「moodle/filter/tex/」ディレクトリに入れてください。';
 $string['mimetexnotexecutable'] = 'カスタムmimetexを実行できません!';
@@ -452,6 +461,7 @@ $string['prefixcannotbeempty'] = '<p>エラー: データベーステーブル�
 <p>サイト管理者はこの問題を修正する必要があります。</p>';
 $string['prefixtoolong'] = '<p>エラー: データベーステーブル接頭辞が長すぎます ({$a->dbfamily})</p>
 <p>サイト管理者はこの問題を修正する必要があります。{$a->dbfamily} のテーブル接頭辞の最大長は半角 {$a->maxlength} 文字です。</p>';
+$string['privatefilesupload'] = 'プライベートファイルエリアへのファイル直接アップロードはサポートされないようになりました。下書きエリアにアップロードした後、ファイルをcore_user::add_user_private_filesに移動してください。';
 $string['processingstops'] = '処理はここで停止します。残りのレコードは無視されました。';
 $string['protected_cc_not_supported'] = '保護カートリッジはサポートされていません。';
 $string['querystringcannotbeempty'] = 'クエリストリングは空白にできません。';

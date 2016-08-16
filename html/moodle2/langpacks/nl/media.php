@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'media', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ Dit kan omzeilt worden door meerdere bestanden op te geven, gescheiden door een 
 $string['legacyheading'] = 'Verouderde mediaspelers';
 $string['legacyheading_desc'] = 'Volgende bestandsformaten worden niet aangeraden voor algemeen gebruik. Ze worden meestal gebruikt in intranetinstallaties met centraal beheerde clients.';
 $string['legacyquicktime'] = 'QuickTime player';
-$string['legacyquicktime_desc'] = 'Bestanden met extentie *.mov, *.mp4, *.m4a, *.mp4 and *.mpg. Vereist QuickTime player of codecs.';
+$string['legacyquicktime_desc'] = 'Bestanden met extentie *.mov, *.mp4, *.m4a, * and *.mpg. Vereist QuickTime player of codecs.';
 $string['legacyreal'] = 'Real media player';
 $string['legacyreal_desc'] = 'Bestanden met extentie *.rm, *.ra, *.ram, *.rp, *.rv. Vereist RealPlayer.';
 $string['legacywmp'] = 'Windows media player';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'forum', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -120,7 +120,6 @@ $string['delete'] = 'Borrar';
 $string['deleteddiscussion'] = 'El tema se ha borrado';
 $string['deletedpost'] = 'El mensaje se ha borrado';
 $string['deletedposts'] = 'Los mensajes han sido borrados';
-$string['deleteoriginalonreply'] = 'Si responde directamente a través del correo electrónico, por favor no incluya una copia del mensaje que se cita';
 $string['deletesure'] = '¿Está seguro de que desea borrar este mensaje?';
 $string['deletesureplural'] = '¿Está seguro de que desea borrar este mensaje y todas las réplicas? ({$a} mensajes)';
 $string['digestmailheader'] = 'Éste es su resumen diario por correo de los nuevos mensajes de los foros de {$a->sitename}. Si desea cambiar sus preferencias de foro por correo, hágalo en {$a->userprefs}.';
@@ -218,6 +217,7 @@ $string['forum:allowforcesubscribe'] = 'Permitir la suscripción forzosa.';
 $string['forumauthorhidden'] = 'Autor (oculto)';
 $string['forumblockingalmosttoomanyposts'] = 'Usted se está aproximando al límite permitido de mensajes. Ha enviado {$a->numposts} mensajes en el último {$a->blockperiod} y el límite está en {$a->blockafter} mensajes.';
 $string['forumbodyhidden'] = 'Usted no puede ver este mensaje, probablemente debido a que aún no ha enviado mensajes a esta discusión, a que el margen de tiempo de edición no ha pasado todavía, a que el debate todavía no ha comentado o a que el debate ya ha expirado.';
+$string['forum:canposttomygroups'] = 'Puede publicar en todos los grupos en los que tiene acceso';
 $string['forum:createattachment'] = 'Crear archivos adjuntos';
 $string['forum:deleteanypost'] = 'Eliminar cualquier mensaje (en cualquier momento)';
 $string['forum:deleteownpost'] = 'Eliminar mensajes propios (antes de la fecha límite)';
@@ -264,7 +264,7 @@ $string['generalforums'] = 'Foros generales';
 $string['hiddenforumpost'] = 'Publicación del foro oculta';
 $string['inforum'] = 'en {$a}';
 $string['introblog'] = 'Los mensajes de este foro fueron copiados aquí de forma automática a partir de los blogs de los usuarios de este curso debido a que esas entradas de blog ya no están disponibles';
-$string['intronews'] = 'Novedades y anuncios';
+$string['intronews'] = 'Avisos y novedades generales';
 $string['introsocial'] = 'Foro abierto a todos los temas';
 $string['introteacher'] = 'Foro exclusivo para profesores';
 $string['invalidaccess'] = 'No se ha accedido correctamente a esta página';
@@ -328,8 +328,11 @@ $string['more'] = 'más';
 $string['movedmarker'] = '(Trasladada)';
 $string['movethisdiscussionto'] = 'Mover este tema a...';
 $string['mustprovidediscussionorpost'] = 'Debe proporcionar una ID de discusión o mensaje para exportar';
-$string['namenews'] = 'Novedades';
-$string['namenews_help'] = 'El foro Novedades es un foro especial para anuncios que se crea automáticamente cuando se crea un curso. Un curso puede tener sólo un foro de Novedades. Sólo los profesores y los administradores pueden escribir en el foro de Novedades. El bloque "Últimas noticias" muestra los últimos debates del foro de Novedades.';
+$string['myprofileotherdis'] = 'Foros de discusión';
+$string['myprofileowndis'] = 'Mis foros de discusión';
+$string['myprofileownpost'] = 'Mis mensajes en el foro';
+$string['namenews'] = 'Avisos';
+$string['namenews_help'] = 'El foro de Avisos es un foro especial para avisos que se crea automáticamente cuando se crea un curso. Un curso puede tener sólo un foro de Avisos. Sólo los profesores y los administradores pueden escribir en el foro de Avisos. El bloque de "Avisos recientes" muestra los avisos recientes.';
 $string['namesocial'] = 'Foro social';
 $string['nameteacher'] = 'Foro de profesores';
 $string['newforumposts'] = 'Nuevos mensajes en foros';
@@ -398,6 +401,8 @@ $string['posts'] = 'Mensajes';
 $string['postsmadebyuser'] = 'Aportación realizada por {$a}';
 $string['postsmadebyuserincourse'] = 'Aportación realizada por {$a->fullname} en {$a->coursename}';
 $string['posttoforum'] = 'Enviar al foro';
+$string['posttomygroups'] = 'Publicar una copia para todos los grupos';
+$string['posttomygroups_help'] = 'Publica una copia de este mensaje en todos los grupos a los que tenga acceso. Los participantes de los grupos a los que no tenga acceso no verán esta publicación';
 $string['postupdated'] = 'Su mensaje se ha actualizado';
 $string['potentialsubscribers'] = 'Suscriptores potenciales';
 $string['prevdiscussiona'] = 'Debate anterior: {$a}';
@@ -417,7 +422,6 @@ $string['reply'] = 'Responder';
 $string['replyforum'] = 'Responder al foro';
 $string['reply_handler'] = 'Responder a los mensajes en el foro vía correo electrónico';
 $string['reply_handler_name'] = 'Responder a las publicaciones del foro';
-$string['replytoforumpost'] = 'Puede responder a este mensaje directamente desde el correo electrónico. Se publicará una copia del mensaje en el foro original.';
 $string['replytopostbyemail'] = 'Puede responder al mensaje mediante email.';
 $string['replytouser'] = 'Usar dirección email en réplica';
 $string['resetdigests'] = 'Borrar todas las preferencias de resumen de correo de usuarios';
@@ -430,6 +434,7 @@ $string['rssarticles_help'] = 'Este ajuste especifica el número de artículos (
 $string['rsssubscriberssdiscussions'] = 'Canal RSS de debates';
 $string['rsssubscriberssposts'] = 'Canal RSS de mensajes';
 $string['rsstype'] = 'Canal RSS de esta actividad';
+$string['rsstypedefault'] = 'Tipo de feed RSS';
 $string['rsstype_help'] = '<P>Esta opción le permite habilitar los canales RSS en este foro.
 
 <P>Puede escoger entre dos tipos de foros:
@@ -469,6 +474,7 @@ $string['subscribeenrolledonly'] = 'Lo siento, sólo los usuarios registrados pu
 $string['subscribenone'] = 'Dar de baja a todos de este foro';
 $string['subscribers'] = 'Suscriptores';
 $string['subscribersto'] = 'Suscriptores de \'{$a}\'';
+$string['subscriberstowithcount'] = 'Suscriptores de \'{$a}\'  ({$a->count})';
 $string['subscribestart'] = 'Deseo recibir notificaciones por correo de nuevos mensajes en este foro';
 $string['subscribestop'] = 'No deseo recibir notificaciones por correo de nuevos mensajes en este foro';
 $string['subscription'] = 'Suscripción';
@@ -519,6 +525,8 @@ $string['unsubscribealldone'] = 'Se han eliminado todas sus suscripciones opcion
 $string['unsubscribeallempty'] = 'No está suscrito a ningún foro. Si desea desactivar todas las notificaciones de este servidor, vaya a Mensajería en los Ajustes de su Perfil.';
 $string['unsubscribed'] = 'No suscrito';
 $string['unsubscribediscussion'] = 'Darse de baja de esta discusión';
+$string['unsubscribediscussionlink'] = 'Darse de baja de esta discusión: {$a}';
+$string['unsubscribelink'] = 'Darse de baja del foro: {$a}';
 $string['unsubscribeshort'] = 'Dar de baja';
 $string['usermarksread'] = 'Marcar lectura de mensaje manual';
 $string['viewalldiscussions'] = 'Ver todos los debates';

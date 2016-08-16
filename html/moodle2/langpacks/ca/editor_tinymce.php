@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'editor_tinymce', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,10 +37,10 @@ $string['advanced:bold_desc'] = 'Negreta (Ctrl+B)';
 $string['advanced:bullist_desc'] = 'Insereix/suprimeix llista de pics';
 $string['advanced:charmap_delta_height'] = '';
 $string['advanced:charmap_delta_width'] = '';
-$string['advanced:charmap_desc'] = 'Insereix caràcter personalitzat';
+$string['advanced:charmap_desc'] = 'Insereix un caràcter especial';
 $string['advanced:cleanup_desc'] = 'Neteja el codi no correcte';
 $string['advanced:clipboard_msg'] = 'Copia/Retalla/Enganxa no està disponible en Mozilla/Firefox.
-Vols més informació sobre aquest tema?';
+Voleu més informació sobre aquest tema?';
 $string['advanced:code'] = 'Codi';
 $string['advanced:code_desc'] = 'Edita la font HTML';
 $string['advanced:colorpicker_delta_height'] = '';
@@ -50,6 +50,7 @@ $string['advanced:custom1_desc'] = 'Aquí la teva descripció personalitzada';
 $string['advanced:cut_desc'] = 'Retalla';
 $string['advanced:dd'] = 'Descripció de la definició';
 $string['advanced:div'] = 'Div';
+$string['advanced_dlg:'] = '';
 $string['advanced_dlg:about_author'] = 'Autor';
 $string['advanced_dlg:about_general'] = 'Quant a';
 $string['advanced_dlg:about_help'] = 'Ajuda';
@@ -130,10 +131,10 @@ $string['advanced:justifyright_desc'] = 'Alinea a la dreta';
 $string['advanced:link_delta_height'] = '';
 $string['advanced:link_delta_width'] = '';
 $string['advanced:link_desc'] = 'Insereix/edita enllaç';
-$string['advanced:more_colors'] = 'Més colors';
+$string['advanced:more_colors'] = 'Més colors...';
 $string['advanced:newdocument'] = 'Segur que vols esborrar tot el contingut?';
 $string['advanced:newdocument_desc'] = 'Nou document';
-$string['advanced:numlist_desc'] = 'Llista ordenada';
+$string['advanced:numlist_desc'] = 'Insereix/elimina una llista numerada';
 $string['advanced:outdent_desc'] = 'Redueix el sagnat';
 $string['advanced:paragraph'] = 'Paràgraf';
 $string['advanced:paste_desc'] = 'Enganxa';
@@ -154,7 +155,7 @@ $string['advanced:underline_desc'] = 'Subratllat (Ctrl+U)';
 $string['advanced:undo_desc'] = 'Desfés (Ctrl+Z)';
 $string['advanced:unlink_desc'] = 'Desenllaça';
 $string['advanced:visualaid_desc'] = 'Mostra/amaga guies/elements invisibles';
-$string['advhr:advhr_desc'] = 'Regle horitzontal';
+$string['advhr:advhr_desc'] = 'Insereix una línia horitzontal';
 $string['advhr:delta_height'] = '';
 $string['advhr:delta_width'] = '';
 $string['advhr_dlg:normal'] = 'Normal';
@@ -458,7 +459,7 @@ $string['fullpage_dlg:type'] = 'Type';
 $string['fullpage_dlg:value'] = 'Valor';
 $string['fullpage_dlg:visited_color'] = 'Color visitat';
 $string['fullpage_dlg:xml_pi'] = 'Declaració XML';
-$string['fullscreen:desc'] = 'Mode de pantalla completa';
+$string['fullscreen:desc'] = 'Commuta el mode de pantalla completa';
 $string['iespell:download'] = 'No s\'ha detectat ieSpell. Vols instal·lar-lo ara?';
 $string['iespell:iespell_desc'] = 'Comprovació ortogràfica';
 $string['insertdatetime:date_fmt'] = '%d-%m-%Y';
@@ -554,7 +555,8 @@ $string['media_dlg:progress'] = 'Progrés';
 $string['media_dlg:qt_options'] = 'Opcions Quicktime';
 $string['media_dlg:qtsrc'] = 'Font QT';
 $string['media_dlg:qtsrcchokespeed'] = 'restringeix la velocitat';
-$string['media_dlg:qt_stream_warn'] = 'Els recursos rtsp stream no s\'han d\'afegir al camp Font QT sota la pestanya Avançada.nhas d\'afegir també una versió no-stream al camp Font.';
+$string['media_dlg:qt_stream_warn'] = 'Els recursos de flux en temps real RTSP no s\'han d\'afegir al camp font QT de la pestanya «Avançat».
+Heu d\'afegir també una versió «no temps real» al camp font.';
 $string['media_dlg:quality'] = 'Qualitat';
 $string['media_dlg:quicktime'] = 'QuickTime';
 $string['media_dlg:rate'] = 'Ritme';
@@ -588,7 +590,7 @@ $string['media_dlg:wmode'] = 'Mode de finestra';
 $string['media_dlg:wmp_options'] = 'Opcions Windows Media Player';
 $string['media:edit'] = 'Edita mitjà encastat';
 $string['nonbreaking:nonbreaking_desc'] = 'Insereix espai no separable';
-$string['pagebreak:desc'] = 'Insereix salt de pàgina.';
+$string['pagebreak:desc'] = 'Insereix salt de pàgina en imprimir.';
 $string['paste_dlg:text_linebreaks'] = 'Mantingues els salts de línia';
 $string['paste_dlg:text_title'] = 'Utilitza CTRL+V al teclat per enganxar el text a la finestra.';
 $string['paste_dlg:word_title'] = 'Utilitza CTRL+V al teclat per enganxar el text a la finestra.';
@@ -622,15 +624,15 @@ $string['searchreplace:replace_desc'] = 'Cerca/Substitueix';
 $string['searchreplace:search_desc'] = 'Cerca';
 $string['settings'] = 'Configuració general';
 $string['simple:bold_desc'] = 'Negreta (Ctrl+B)';
-$string['simple:bullist_desc'] = 'Llista no ordenada';
+$string['simple:bullist_desc'] = 'Insereix/elimina una llista de pics';
 $string['simple:cleanup_desc'] = 'Neteja el codi mal format';
 $string['simple:italic_desc'] = 'Cursiva (Ctrl+I)';
-$string['simple:numlist_desc'] = 'Llista ordenada';
+$string['simple:numlist_desc'] = 'Insereix/elimina una llista numerada';
 $string['simple:redo_desc'] = 'Refés (Ctrl+Y)';
 $string['simple:striketrough_desc'] = 'Tatxat';
 $string['simple:underline_desc'] = 'Subratllat (Ctrl+U)';
 $string['simple:undo_desc'] = 'Desfés (Ctrl+Z)';
-$string['spellchecker:desc'] = 'Des/activa el corrector ortogràfic';
+$string['spellchecker:desc'] = 'Commuta el corrector ortogràfic';
 $string['spellchecker:ignore_word'] = 'Ignora';
 $string['spellchecker:ignore_words'] = 'Ignora-les totes';
 $string['spellchecker:langs'] = 'Idiomes';
@@ -776,7 +778,7 @@ $string['table_dlg:row_odd'] = 'Actualitza les files senars de la taula';
 $string['table_dlg:row_row'] = 'Actualitza la fila actual';
 $string['table_dlg:rows'] = 'Files';
 $string['table_dlg:row_title'] = 'Propietats de la fila de la taula';
-$string['table_dlg:rowtype'] = 'Part de la taula on és la fila';
+$string['table_dlg:rowtype'] = 'Tipus de fila';
 $string['table_dlg:rtl'] = 'De dreta a esquerra';
 $string['table_dlg:rules'] = 'Regles';
 $string['table_dlg:rules_above'] = 'sobre';

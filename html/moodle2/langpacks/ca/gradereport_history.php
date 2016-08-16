@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_history', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,7 @@ $string['revisedonly_help'] = 'Mostra només les qualificacions que s\'han revis
 
 Això significa que només es llistaran aquelles entrades amb la qualificació alterada.';
 $string['selectedusers'] = 'Usuaris seleccionats';
-$string['selectuser'] = 'Selecciona un usuari';
+$string['selectuser'] = 'Selecciona usuari';
 $string['selectusers'] = 'Selecciona usuaris';
 $string['source'] = 'Origen';
 $string['useractivityfeedback'] = '{$a} retroacció';

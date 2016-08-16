@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -131,6 +131,7 @@ $string['entrieslefttoaddtoview'] = 'Debe de engadir {$a->entrieslefttoview} má
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'Gardouse o seu artigo';
 $string['errormustbeteacher'] = 'Para usar esta páxina deber ser profesor!';
+$string['errormustsupplyvalue'] = 'Debe fornecer aquí un valor.';
 $string['errorpresetexists'] = 'Xa existe unha predefinición co nome escollido';
 $string['eventfieldcreated'] = 'Campo creado';
 $string['eventfielddeleted'] = 'Campo eliminado';
@@ -304,12 +305,14 @@ $string['recordsnotsaved'] = 'Non se gardou ningunha entrada. Comprobe o formato
 $string['recordssaved'] = 'entradas gardadas';
 $string['requireapproval'] = 'Solicita aprobación?';
 $string['requireapproval_help'] = 'De estar activada, as entradas requiren a aprobación por un profesor antes de ser visíbeis para calquera';
+$string['required'] = 'Requirido';
 $string['requiredentries'] = 'Entradas solicitadas';
 $string['requiredentries_help'] = 'O número de entradas que se lle piden que envíe o alumno antes de que a actividade se poida considerar completada.';
 $string['requiredentriestoview'] = 'Entradas requiridas antes da visualización';
 $string['requiredentriestoview_help'] = 'O número de entradas que se lle pide que envíe un alumno antes de que poida ver as entradas doutros alumnos.
 
 Nota: De requirir entradas antes da vista previa, o filtro de autoligado da base de datos debería desactivarse. Isto é así porque o filtro de autoligado da base de datos non pode determinar cando un usuario enviou o número requirido de entradas.';
+$string['requiredfield'] = 'Campo requirido';
 $string['resetsettings'] = 'Reiniciar os filtros';
 $string['resettemplate'] = 'Reiniciar o modelo';
 $string['resizingimages'] = 'Redimensionando as miniaturas de imaxe...';

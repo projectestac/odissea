@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'Блог об этом модуле типа «{$a->
 $string['blogaboutthiscourse'] = 'Добавить запись об этом курсе';
 $string['blogaboutthismodule'] = 'Добавить запись об этом модуле типа «{$a}»';
 $string['blogadministration'] = 'Управление блогом';
-$string['blogdeleteconfirm'] = 'Удалить запись блога?';
+$string['blogdeleteconfirm'] = 'Удалить запись блога «{$a}»?';
 $string['blogdisable'] = 'Блоги отключены!';
 $string['blogentries'] = 'Записи блога';
 $string['blogentriesabout'] = 'Записи блога о «{$a}»';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Блоги курса отключены';
 $string['courseblogs'] = 'Пользователи могут только просматривать блоги участников курса';
 $string['deleteblogassociations'] = 'Удалить связи с этим блогом';
 $string['deleteblogassociations_help'] = 'При выборе данной опции все записи в блогах перестанут быть связанными с курсом или элементами курса. Сами записи в блогах удалены не будут.';
+$string['deleteentry'] = 'Удалить запись';
 $string['deleteexternalblog'] = 'Отмена регистрации этого внешнего блога';
 $string['deleteotagswarn'] = 'Вы уверены, что хотите удалить эти теги из сообщений всех блогов и из системы?';
 $string['description'] = 'Описание';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'Недопустимый ID группы';
 $string['invalidurl'] = 'Этот адрес недоступен';
 $string['linktooriginalentry'] = 'Ссылка на оригинальную запись блога';
 $string['maxexternalblogsperuser'] = 'Максимальное количество внешних блогов пользователя';
+$string['myprofileuserblogs'] = 'Показать все записи блога';
 $string['name'] = 'Название';
 $string['name_help'] = 'Введите описательное название своего внешнего блога. (Если название не указано, то будет использоваться заглавие Вашего внешнего блога).';
 $string['noentriesyet'] = 'Нет отображаемых записей';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Все страницы блога';
 $string['pagesize'] = 'Количество записей блога на странице';
 $string['permalink'] = 'Постоянная ссылка';
 $string['personalblogs'] = 'Каждому пользователю доступен только его собственный блог';
-$string['preferences'] = 'Настройки';
+$string['preferences'] = 'Настройки блога';
 $string['publishto'] = 'Опубликовать';
 $string['publishtocourse'] = 'Участники моего курса';
 $string['publishtocourseassoc'] = 'Участники связанного курса';
@@ -151,6 +153,7 @@ $string['searchterm'] = 'Поиск: {$a}';
 $string['settingsupdatederror'] = 'Произошла ошибка, не удалось обновить настройки блога';
 $string['siteblog'] = 'блог сайта {$a}';
 $string['siteblogdisable'] = 'Блоги сайта отключены';
+$string['siteblogheading'] = 'Блог сайта';
 $string['siteblogs'] = 'Все пользователи сайта могут просматривать записи во всех блогах';
 $string['tagdatelastused'] = 'Тег «дата» в последний раз использовался';
 $string['tagparam'] = 'Тег: {$a}';

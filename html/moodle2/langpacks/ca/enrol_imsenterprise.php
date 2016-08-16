@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['fixcasepersonalnames'] = 'Canvia a majúscules les inicials dels noms d
 $string['fixcaseusernames'] = 'Canvia a minúscules els noms d\'usuari';
 $string['ignore'] = 'Ignora';
 $string['importimsfile'] = 'Importa fitxer IMS Enterprise';
+$string['imsenterprise:config'] = 'Configura les instàncies d\'inscripció IMS Enterprise';
+$string['imsenterprisecrontask'] = 'S\'està processant el fitxer d\'inscripcions';
 $string['imsrolesdescription'] = 'L\'especificació IMS Enterprise inclou vuit tipus de rol distints. Trieu com voleu que s\'assignin a Moodle, i si preferiu ignorar-ne cap.';
 $string['location'] = 'Ubicació del fitxer';
 $string['logtolocation'] = 'Ubicació del fitxer de registre (en blanc si no voleu registre)';

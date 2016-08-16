@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,10 +40,6 @@ $string['modulenameplural'] = 'Opdrachten 2.2 (uitgeschakeld)';
 $string['page-mod-assignment-submissions'] = 'Opdrachtmodule instuurpagina';
 $string['page-mod-assignment-view'] = 'Opdrachtmodule hoofdpagina';
 $string['page-mod-assignment-x'] = 'Elke opdracht module pagina';
-$string['pendingupgrades_message_content'] = 'Als deel van de upgrade naar Moodle 2.7 is de oude opdrachtmodule 2.2 uitgeschakeld. Backups van de oude Opdracht 2.2 zullen naadloos teruggezet worden in de nieuwe opdrachtmodule. Alle bestaande 2.2 opdrachten moeten geüpgraded worden met de opdracht upgrade tool {$a->docsurl}.
-Er zijn {$a->count} oude Opdracht 2.2 instanties gevonden op deze site die geüpgraded moeten worden. Gebruikers zullen die inhoud niet kunnen gebruiken tot de upgrade uitgevoerd is.';
-$string['pendingupgrades_message_small'] = 'Deze plugin is uitgeschakeld. Alle overblijvende opdrachten moeten geüpgraded worden naar de nieuwe opdrachtmodule met de upgrade opdracht tool.';
-$string['pendingupgrades_message_subject'] = 'Belangrijke informatie over Opdracht 2.2';
 $string['pluginadministration'] = 'Opdrachten 2.2 (uitgeschakeld) beheer';
 $string['pluginname'] = 'Opdracht 2.2 (uitgeschakeld)';
 $string['upgradenotification'] = 'Deze opdracht is gebaseerd op een oudere opdrachtmodule';

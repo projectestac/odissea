@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_guide', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['backtoediting'] = 'Вернуться к редактированию';
 $string['clicktocopy'] = 'Нажмите, чтобы скопировать текст в отзыв для критерия';
 $string['clicktoedit'] = 'Нажмите для редактирования';
 $string['clicktoeditname'] = 'Нажмите для редактирования названия критерия';
+$string['comment'] = 'Комментарий';
 $string['comments'] = 'Часто используемые комментарии';
 $string['commentsdelete'] = 'Удалить комментарий';
 $string['commentsempty'] = 'Нажмите для редактирования комментария';
@@ -39,25 +40,29 @@ $string['commentsmovedown'] = 'Переместить вниз';
 $string['commentsmoveup'] = 'Переместить вверх';
 $string['confirmdeletecriterion'] = 'Вы уверены, что хотите удалить этот элемент?';
 $string['confirmdeletelevel'] = 'Вы уверены, что хотите удалить этот уровень?';
-$string['criterion'] = 'Критерий';
+$string['criterion'] = 'Название критерия';
 $string['criteriondelete'] = 'Удалить критерий';
 $string['criterionempty'] = 'Нажмите для редактирования критерия';
 $string['criterionmovedown'] = 'Переместить вниз';
 $string['criterionmoveup'] = 'Переместить вверх';
 $string['criterionname'] = 'Название критерия';
+$string['criterionremark'] = 'Примечание к критерию {$a}';
 $string['definemarkingguide'] = 'Составить Справочник оценщика';
 $string['description'] = 'Описание';
 $string['descriptionmarkers'] = 'Описание для оценщиков';
 $string['descriptionstudents'] = 'Описание для студентов';
+$string['err_maxscoreisnegative'] = 'Некорректный максимальный балл, отрицательные значения не допускаются';
 $string['err_maxscorenotnumeric'] = 'Максимальный балл за критерий должен быть числом';
 $string['err_nocomment'] = 'Поле комментария не может быть пустым';
 $string['err_nodescription'] = 'Описание для студента не может быть пустым полем';
 $string['err_nodescriptionmarkers'] = 'Описание для оценщика не может быть пустым полем';
 $string['err_nomaxscore'] = 'Максимальный балл за критерий не может быть пустым полем';
 $string['err_noshortname'] = 'Название критерия не может быть пустым полем';
-$string['err_scoreinvalid'] = 'Балл, данный критерию {$a->criterianame} не обоснован, максимальный балл: {$a->maxscore}';
+$string['err_scoreinvalid'] = 'За критерий «{$a->criterianame}» назначен некорректный балл, максимальный балл: {$a->maxscore}';
+$string['err_scoreisnegative'] = 'Выставленная за критерий «{$a->criterianame}» оценка некорректна, отрицательные значения не допускаются';
 $string['err_shortnametoolong'] = 'Имя критерия должно быть менее 256 символов';
 $string['gradingof'] = '{$a} оценено';
+$string['guide'] = 'Руководство по оцениванию';
 $string['guidemappingexplained'] = 'ПРЕДУПРЕЖДЕНИЕ: Ваш справочник оценщика содержит максимальную оценку  <b>{$a->maxscore} баллов </b>, но максимальная оценка, установленная для элемента курса - {$a->modulegrade}.
 Максимальный балл, заданный в справочнике оценщика, должен соответствовать максимальной оценке модуля.<br />
 Промежуточные баллы будут соответственно преобразованы и округлены до ближайшей доступной оценки.';
@@ -66,6 +71,7 @@ $string['guideoptions'] = 'Опции справочника оценщика';
 $string['guidestatus'] = 'Текущий статус справочника оценщика';
 $string['hidemarkerdesc'] = 'Скрыть описания критериев от оценщиков';
 $string['hidestudentdesc'] = 'Скрыть описания критериев от студентов';
+$string['insertcomment'] = 'Добавить часто используемый комментарий';
 $string['maxscore'] = 'Максимальный балл';
 $string['name'] = 'Название';
 $string['needregrademessage'] = 'Определение справочника оценщика было изменено после оценивания ответа студента. Студент не сможет видеть этот справочник, пока Вы не проверите справочник оценщика и не обновите оценку.';

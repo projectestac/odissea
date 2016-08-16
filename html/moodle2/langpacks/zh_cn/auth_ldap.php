@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['auth_ldap_gracelogins_desc'] = '激活 LDAP 宽限登录的支持。在
 $string['auth_ldap_gracelogins_key'] = '宽限登录';
 $string['auth_ldap_groupecreators'] = '哪些组或情景的成员允许创建组。多个组使用“;”分隔，例如“cn=teachers,ou=staff,o=myorg”';
 $string['auth_ldap_groupecreators_key'] = '组创建者';
-$string['auth_ldap_host_url'] = '以 URL 形式指定 LDAP 主机，类似于：“ldap://ldap.myorg.com/”或“ldaps://ldap.myorg.com/”。多个服务器之间用“;”分隔来获得故障转移支持。';
+$string['auth_ldap_host_url'] = '以网址形式指定 LDAP 主机，类似于：“ldap://ldap.myorg.com/”或“ldaps://ldap.myorg.com/”。多个服务器之间用“;”分隔来获得故障转移支持。';
 $string['auth_ldap_host_url_key'] = '主机 URL';
 $string['auth_ldap_ldap_encoding'] = '指定 LDAP 服务器的编码方式。一般是 utf-8。MS AD V2 使用默认的平台编码，如 cp1252、cp1250 等。';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP 编码方式';
@@ -73,15 +73,17 @@ $string['auth_ldapnotinstalled'] = '不能使用 LDAP 认证方式，PHP LDAP �
 $string['auth_ldap_objectclass'] = '可选：覆盖在 ldap_user_type 中命名或搜索用户时使用的 objectClass。通常您不需修改这个选项。';
 $string['auth_ldap_objectclass_key'] = '对象类';
 $string['auth_ldap_opt_deref'] = '检查在搜索时如何处理别名。选择下列值之一: “否”(LDAP_DEREF_NEVER) 或“是”(LDAP_DEREF_ALWAYS)。';
-$string['auth_ldap_opt_deref_key'] = '弃用别名';
+$string['auth_ldap_opt_deref_key'] = '启用别名';
 $string['auth_ldap_passtype'] = '指定在 LDAP 服务器中的新密码或者更改密码的格式。';
 $string['auth_ldap_passtype_key'] = '密码格式';
 $string['auth_ldap_passwdexpire_settings'] = 'LDAP 密码过期设置。';
 $string['auth_ldap_preventpassindb'] = '如果设定为是，则在Moodle的数据库中不会存储密码。';
-$string['auth_ldap_preventpassindb_key'] = '隐藏密码';
+$string['auth_ldap_preventpassindb_key'] = '不要缓存密码';
 $string['auth_ldap_search_sub'] = '在子场景中搜索用户。';
 $string['auth_ldap_search_sub_key'] = '搜索子场景';
 $string['auth_ldap_server_settings'] = 'LDAP 服务器设置';
+$string['auth_ldap_suspended_attribute'] = '可选：若有提供，这一属性将被用来启用或停用那地方建立的用户帐号。';
+$string['auth_ldap_suspended_attribute_key'] = '休学属性';
 $string['auth_ldap_unsupportedusertype'] = '认证: ldap user_create() 函数不支持所选的用户类型：“{$a}”';
 $string['auth_ldap_update_userinfo'] = '从 LDAP 向本系统更新用户信息（姓名、地址……）。请指定您需要的“数据映射”。';
 $string['auth_ldap_user_attribute'] = '可选：覆盖用于命名/搜索用户的属性。通常为“cn”。';
@@ -97,8 +99,15 @@ $string['auth_ldap_version_key'] = '版本';
 $string['auth_ntlmsso'] = 'NTLM 单点登录';
 $string['auth_ntlmsso_enabled'] = '设置为“是”将尝试用 NTLM 域进行单点登录。<strong>注意:</strong>还需要在 Web 服务器上有额外的设置，具体查看 <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = '启用';
-$string['auth_ntlmsso_ie_fastpath'] = '设为是来启用NTLM单点登录快速路径（将跳过某些步骤，但只在客户端浏览器为微软Internet Explorer时生效）。';
+$string['auth_ntlmsso_ie_fastpath'] = '设定为来启用NTLM单点登录快速路径（将跳过某些步骤，但只在客户端浏览器为微软Internet Explorer时生效）。';
+$string['auth_ntlmsso_ie_fastpath_attempt'] = '所有浏览器都使用 NTLM';
 $string['auth_ntlmsso_ie_fastpath_key'] = '微软IE快速路径？';
+$string['auth_ntlmsso_ie_fastpath_yesattempt'] = '是的，其他浏览器也使用NTLM';
+$string['auth_ntlmsso_ie_fastpath_yesform'] = '是的，所有其他浏览器都使用标准登录表单';
+$string['auth_ntlmsso_maybeinvalidformat'] = '无法从 REMOTE_USER header 抽出用户名称，你设置的格式是否正确？';
+$string['auth_ntlmsso_missing_username'] = '你需要在远端用户名称格式中至少指定 %username%';
+$string['auth_ntlmsso_remoteuserformat'] = '如果你在"身分认证类型"已经选择了"NTLA"，你可以在此指定远端用户名称的格式。如果你留空，系统将会使用默认的DOMAINusername格式。你可以使用可选的<b>%domain%</b>来指定这域名要出现在哪，并使用强制的<b>%username%</b>来指定用户名称出现在哪。 一些常用的格式是<tt>%domain%%username%</tt> (MS Windows 默认)，<tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> 和仅仅是 <tt>%username%</tt> (若没有域名的部分)。';
+$string['auth_ntlmsso_remoteuserformat_key'] = '远端用户名称格式';
 $string['auth_ntlmsso_subnet'] = '如设置，则只当客户端处于此子网中时，使用单点登录。格式：xxx.xxx.xxx.xxx/bitmask。用“,”（半角逗号）分隔多个子网。';
 $string['auth_ntlmsso_subnet_key'] = '子网';
 $string['auth_ntlmsso_type'] = 'Web服务器中设置的用户认证方法（如果不知道该添什么，就选NTLM）';
@@ -117,15 +126,21 @@ $string['notcalledfromserver'] = '不应从web服务器调用！';
 $string['noupdatestobedone'] = '没有更新可做';
 $string['nouserentriestoremove'] = '没有可删除的用户项';
 $string['nouserentriestorevive'] = '没有可恢复的用户项';
-$string['nouserstobeadded'] = '没有可添加的用户';
+$string['nouserstobeadded'] = '没有新增用户';
 $string['ntlmsso_attempting'] = '尝试通过NTLM进行单点登录';
 $string['ntlmsso_failed'] = '自动登录失败，尝试到普通登录页面登录……';
 $string['ntlmsso_isdisabled'] = 'NTLM 单点登录被禁用。';
 $string['ntlmsso_unknowntype'] = '未知的ntlmsso类型！';
+$string['pagedresultsnotsupp'] = '不支持LDAP分面结果(若非不支持你的PHP版本，就是你在Moodle里设置使用LDAP版本2)';
+$string['pagesize'] = '请确定这一页面大小的值比你的LDAP服务器结果大小限制的值还小。(只在单次查询时可以回传的最大条目数)';
+$string['pagesize_key'] = '页面大小';
 $string['pluginname'] = 'LDAP 服务器';
 $string['pluginnotenabled'] = '插件未启用！';
 $string['renamingnotallowed'] = 'LDAP不允许用户重命名';
 $string['rootdseerror'] = '活动牡蛎查询rootDSE出错';
+$string['start_tls'] = '使用一般 LDAP 服务 （端口 389） 以及 TLS 加密';
+$string['start_tls_key'] = '使用 TLS';
+$string['synctask'] = 'LDAP的用户同步任务';
 $string['updatepasserror'] = 'user_update_password()出错。错误代码：{$a->errno}；错误信息：{$a->errstring}';
 $string['updatepasserrorexpire'] = 'user_update_password()读取密码期限时出错。错误代码：{$a->errno}；错误信息：{$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'user_update_password()修改密码期限和/或宽限登录时出错。错误代码：{$a->errno}；错误信息：{$a->errstring}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Minimizza tutti gli elenchi corsi';
 $string['configotherexpanded'] = 'Gli altri corsi saranno espansi per default a meno che l\'utente non cambi le proprie preferenze.';
 $string['configpreservestates'] = 'Consente la memorizzazione e il riutilizzo dello stato minimizzato/espanso impostato dall\'utente.';
 $string['course_overview:addinstance'] = 'Aggiungere blocco Panoramica corsi';
-$string['course_overview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi nella pagina My home';
+$string['course_overview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi nella Dashboard';
 $string['defaultmaxcourses'] = 'Numero massimo di corsi di default';
 $string['defaultmaxcoursesdesc'] = 'Il numero massimo di corsi da visualizzare nel blocco Panoramica corsi. Impostare a 0 per visualizzare tutti i corsi.';
 $string['expandall'] = 'Espandi tutti gli elenchi corsi';

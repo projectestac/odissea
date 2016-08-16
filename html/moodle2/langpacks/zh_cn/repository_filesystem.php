@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_filesystem', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['nosubdir'] = '您必须在<b>{$a}</b>目录下建立至少一个文件�
 $string['path'] = '选择一个子目录';
 $string['pluginname'] = '文件系统';
 $string['pluginname_help'] = '把本地目录当作容器';
+$string['searchresults'] = '搜索结果';

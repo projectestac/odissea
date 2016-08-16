@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['modulename_help'] = '使用标签可以在课程页面里的活动链�
 $string['modulenameplural'] = '标签';
 $string['pluginadministration'] = '标签管理';
 $string['pluginname'] = '标签';
+$string['search:activity'] = '标签';

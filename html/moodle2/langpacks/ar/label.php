@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['modulename_help'] = 'الملصق يفعل إدراج النصوص وا
 $string['modulenameplural'] = 'ملصقات';
 $string['pluginadministration'] = 'إدارة الملصقات';
 $string['pluginname'] = 'ملصق';
+$string['search:activity'] = 'ملصق';

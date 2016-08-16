@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,19 +88,20 @@ $string['backpackdetails'] = 'Réglages du sac à badges';
 $string['backpackemail'] = 'Adresse de courriel';
 $string['backpackemail_help'] = 'Adresse de courriel associée à votre sac à badges. Lorsque vous êtes connecté, tous les badges reçus sur ce site seront associés à cette adresse de courriel.';
 $string['backpackimport'] = 'Réglages d\'importation de badges';
-$string['backpackimport_help'] = 'Une fois établie la connexion à votre sac à badges, les badges de votre sac à badges peuvent être affichés sur votre page « Mes badges » et sur votre page de profil.
+$string['backpackimport_help'] = 'Une fois établie la connexion à votre sac à badges, les badges de votre sac à badges peuvent être affichés sur votre page de badges et sur votre page de profil.
 
-Vous pouvez sélectionner ici les collections de badges de votre sac à badges.';
+Vous pouvez sélectionner ici les collections de badges de votre sac à badges que vous désirez afficher dans votre profil.';
 $string['badgedetails'] = 'Description du badge';
 $string['badgeimage'] = 'Image';
 $string['badgeimage_help'] = 'Cette image sera utilisée lors de la remise de ce badge.
 
 Pour ajouter une image, sélectionnez un fichier (format JPG ou PNG), puis cliquez « Enregistrer les modifications.» L\'image sera redimensionnée en carré de dimensions adéquates.';
 $string['badgeprivacysetting'] = 'Réglages de confidentialité des badges';
-$string['badgeprivacysetting_help'] = 'Les badges que vous avez reçus peuvent être affichés sur votre page de profil. Ce réglage détermine si les nouveaux badges obtenus sont automatiquement visibles sur cette page.
+$string['badgeprivacysetting_help'] = 'Les badges que vous recevez peuvent être affichés sur votre page de profil. Ce réglage détermine si les nouveaux badges obtenus sont automatiquement visibles.
 
-Vous pouvez régler la confidentialité de chaque badge sur votre page « Mes badges ».';
+Vous pouvez régler la confidentialité de chaque badge sur votre page de badges.';
 $string['badgeprivacysetting_str'] = 'Afficher automatiquement mes nouveaux badges sur ma page de profil.';
+$string['badges'] = 'Badges';
 $string['badgesalt'] = 'Sel de hachage pour l\'adresse de courriel du destinataire';
 $string['badgesalt_desc'] = 'L\'utilisation d\'un sel de hachage permet aux services de sacs à badges de confirmer le détenteur du badge sans exposer son adresse de courriel. Ce champ ne doit comporter que des chiffres et des lettres.
 
@@ -214,6 +215,7 @@ $string['error:backpackproblem'] = 'Un problème est survenu lors de la connexio
 $string['error:badjson'] = 'La tentative de connexion a renvoyé des données non valides.';
 $string['error:cannotact'] = 'Impossible d\'activer le badge.';
 $string['error:cannotawardbadge'] = 'Impossible de décerner le badge à un utilisateur.';
+$string['error:cannotdeletecriterion'] = 'Ce critère ne peut pas être supprimé.';
 $string['error:clone'] = 'Impossible de dupliquer le badge.';
 $string['error:connectionunknownreason'] = 'La connexion a échoué sans qu\'aucune raison ne soit donnée.';
 $string['error:duplicatename'] = 'Un badge de ce nom existe déjà dans le système.';
@@ -241,6 +243,7 @@ $string['error:requesterror'] = 'La requête de connexion a échoué (erreur {$a
 $string['error:requesttimeout'] = 'La requête de connexion est arrivée à échéance avant de pouvoir se terminer.';
 $string['error:save'] = 'Impossible d\'enregistrer le badge';
 $string['error:userdeleted'] = '{$a->user} (ce compte utilisateur n\'existe plus dans {$a->site})';
+$string['eventbadgeawarded'] = 'Badge décerné';
 $string['evidence'] = 'Preuve';
 $string['existingrecipients'] = 'Détenteurs de badges';
 $string['expired'] = 'Échu';
@@ -257,7 +260,6 @@ $string['externalbadges_help'] = 'Cette zone présente les badges de votre sac �
 $string['externalbadgesp'] = 'Badges d\'autres sites web :';
 $string['externalconnectto'] = 'Pour afficher des badges externes, veuillez <a href="{$a}">vous connecter à un sac à badges</a>.';
 $string['fixed'] = 'Date fixe';
-$string['hidden'] = 'Caché';
 $string['hiddenbadge'] = 'Le détenteur du badge n\'a malheureusement pas rendu disponible cette information.';
 $string['issuancedetails'] = 'Échéance du badge';
 $string['issuedbadge'] = 'Information de remise du badge';
@@ -280,7 +282,7 @@ $string['managebadges'] = 'Gérer les badges';
 $string['message'] = 'Corps du message';
 $string['messagebody'] = '<p>On vous a décerné le badge « %badgename% »!</p>
 <p>Plus d\'information sur ce badge est disponible ici : %badgelink%.</p>
-<p>Vous pouvez gérer et télécharger le badge sur la page {$a}.</p>';
+<p>Vous pouvez gérer et télécharger le badge sur votre page {$a}.</p>';
 $string['messagesubject'] = 'Félicitations ! Vous venez de recevoir un badge !';
 $string['method'] = 'Ce critère est satisfait quand...';
 $string['mingrade'] = 'Note minimale requise';
@@ -323,6 +325,7 @@ $string['personaconnection_help'] = 'Persona est un système permettant de vous 
 
 Pour plus de détails sur Persona, visitez <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Détenteurs potentiels du badge';
+$string['preferences'] = 'Préférences des badges';
 $string['recipientdetails'] = 'Infos détenteur';
 $string['recipientidentificationproblem'] = 'Impossible de trouver parmi les utilisateurs un détenteur de ce badge.';
 $string['recipients'] = 'Détenteurs du badge';

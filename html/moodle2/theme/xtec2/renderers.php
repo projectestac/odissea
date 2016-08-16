@@ -31,240 +31,6 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         return "";
     }
 
-    /**
-     * Construct a user menu, returning HTML that can be echoed out by a
-     * layout file.
-     *
-     * @param stdClass $user A user object, usually $USER.
-     * @param bool $withlinks true if a dropdown should be built.
-     * @return string HTML fragment.
-     */
-    public function user_menu($user = null, $withlinks = null) {
-        global $USER, $CFG;
-        require_once($CFG->dirroot . '/user/lib.php');
-
-        if (is_null($user)) {
-            $user = $USER;
-        }
-
-        // Note: this behaviour is intended to match that of core_renderer::login_info,
-        // but should not be considered to be good practice; layout options are
-        // intended to be theme-specific. Please don't copy this snippet anywhere else.
-        if (is_null($withlinks)) {
-            $withlinks = empty($this->page->layout_options['nologinlinks']);
-        }
-
-        // Add a class for when $withlinks is false.
-        $usermenuclasses = 'usermenu';
-        if (!$withlinks) {
-            $usermenuclasses .= ' withoutlinks';
-        }
-
-        $returnstr = "";
-
-        // If during initial install, return the empty return string.
-        if (during_initial_install()) {
-            return $returnstr;
-        }
-
-        $loginpage = ((string)$this->page->url === get_login_url());
-        $loginurl = get_login_url();
-        // If not logged in, show the typical not-logged-in string.
-        if (!isloggedin()) {
-            $returnstr = get_string('loggedinnot', 'moodle');
-            if (!$loginpage) {
-                $returnstr .= " (<a href=\"$loginurl\">" . get_string('login') . '</a>)';
-            }
-            return html_writer::div(
-                html_writer::span(
-                    $returnstr,
-                    'login'
-                ),
-                $usermenuclasses
-            );
-
-        }
-
-        // If logged in as a guest user, show a string to that effect.
-        if (isguestuser()) {
-            $returnstr = get_string('loggedinasguest');
-            if (!$loginpage && $withlinks) {
-                $returnstr .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
-            }
-
-            return html_writer::div(
-                html_writer::span(
-                    $returnstr,
-                    'login'
-                ),
-                $usermenuclasses
-            );
-        }
-
-        // Get some navigation opts.
-        $opts = user_get_user_navigation_info($user, $this->page, $this->page->course);
-
-        $opt = array_pop($opts->navitems); // Get the last item to add it at the end
-
-        $calendar = new stdClass();
-        $calendar->itemtype = 'link';
-        $calendar->url = new moodle_url('/calendar/view.php', array('view' => 'month'));
-        $calendar->title = get_string('calendar', 'calendar');
-        $calendar->pix = 'i/calendar';
-        $opts->navitems[] = $calendar;
-
-        // Link: Grades
-        $courses = enrol_get_users_courses($user->id, true);
-        if (!empty($courses)) {
-            $mygrades = new stdClass();
-            $mygrades->itemtype = 'link';
-            $course = array_shift($courses);
-            $mygrades->url = new moodle_url('/grade/report/overview/index.php', array('id' => $course->id));
-            $mygrades->title = get_string('mygrades', 'local_agora');
-            $mygrades->pix = 't/grades';
-            $opts->navitems[] = $mygrades;
-        }
-
-        $opts->navitems[] = $opt;  // Add the last item at the end
-
-        $avatarclasses = "avatars";
-        $avatarcontents = html_writer::span($opts->metadata['useravatar'], 'avatar current');
-        $usertextcontents = $opts->metadata['userfullname'];
-
-        // Other user.
-        if (!empty($opts->metadata['asotheruser'])) {
-            $avatarcontents .= html_writer::span(
-                $opts->metadata['realuseravatar'],
-                'avatar realuser'
-            );
-            $usertextcontents = $opts->metadata['realuserfullname'];
-            $usertextcontents .= html_writer::tag(
-                'span',
-                get_string(
-                    'loggedinas',
-                    'moodle',
-                    html_writer::span(
-                        $opts->metadata['userfullname'],
-                        'value'
-                    )
-                ),
-                array('class' => 'meta viewingas')
-            );
-        }
-
-        // Role.
-        if (!empty($opts->metadata['asotherrole'])) {
-            $role = core_text::strtolower(preg_replace('#[ ]+#', '-', trim($opts->metadata['rolename'])));
-            $usertextcontents .= html_writer::span(
-                $opts->metadata['rolename'],
-                'meta role role-' . $role
-            );
-        }
-
-        // User login failures.
-        if (!empty($opts->metadata['userloginfail'])) {
-            $usertextcontents .= html_writer::span(
-                $opts->metadata['userloginfail'],
-                'meta loginfailures'
-            );
-        }
-
-        // MNet.
-        if (!empty($opts->metadata['asmnetuser'])) {
-            $mnet = strtolower(preg_replace('#[ ]+#', '-', trim($opts->metadata['mnetidprovidername'])));
-            $usertextcontents .= html_writer::span(
-                $opts->metadata['mnetidprovidername'],
-                'meta mnet mnet-' . $mnet
-            );
-        }
-
-        $returnstr .= $usertextcontents.$avatarcontents;
-
-        // Navigation to the User menu
-        $options = array();
-
-        $navitemcount = count($opts->navitems);
-        $idx = 0;
-        foreach ($opts->navitems as $key => $value) {
-            switch ($value->itemtype) {
-                case 'divider':
-                    // If the nav item is a divider, add one and skip link processing.
-                    $options[] = '<li class="divider"></li>';
-                    break;
-
-                case 'invalid':
-                    // Silently skip invalid entries (should we post a notification?).
-                    break;
-
-                case 'link':
-                    // Process this as a link item.
-                    $pix = "";
-                    if (isset($value->pix) && !empty($value->pix)) {
-                        $pix = new pix_icon($value->pix, $value->title, null, array('class' => 'iconsmall'));
-                        $pix = $this->render($pix);
-                    } else if (isset($value->imgsrc) && !empty($value->imgsrc)) {
-                        $value->title = html_writer::img(
-                            $value->imgsrc,
-                            $value->title,
-                            array('class' => 'iconsmall')
-                        ) . $value->title;
-                    }
-                    $options[] = '<li><a class="icon menu-action" role="menuitem" href="'.$value->url.'" >'.$pix.
-                    '<span class="menu-action-text">'.$value->title.'</span></a></li>';
-                    break;
-            }
-
-            $idx++;
-
-            // Add dividers after the first item and before the last item.
-            if ($idx == 1) {
-                $options[] = '<li class="divider"></li>';
-            } else if ($idx == $navitemcount - 1) {
-                $options[] = '<li class="divider"></li>';
-                $myprofile = $this->page->navigation->get('myprofile');
-                if ($myprofile && $myprofile->has_children()) {
-                    $deleteditems = array(get_string('viewprofile'), get_string('messages', 'message'), get_string('myfiles'), get_string('mybadges', 'badges'));
-
-                    foreach ($myprofile->children as $child) {
-                        if (!in_array($child->get_content(), $deleteditems)) {
-                            $options[] = theme_xtec2_render_dropdown_menu($child);
-                        }
-                    }
-                }
-
-                $usernav = $this->page->settingsnav->get('usercurrentsettings');
-                if ($usernav && $usernav->has_children()) {
-                    $title = $usernav->get_content();
-                    $text = '<li class="icon dropdown-submenu pull-left">';
-                    $pix = new pix_icon('i/settings', $title, null, array('class' => 'iconsmall'));
-                    $text .= '<a class="icon dropdown-toggle" data-toggle="dropdown" href="#">'.$this->render($pix);
-                    $text .= '<span class="menu-action-text">'.$title.'</span></a><ul class="dropdown-menu">';
-                    foreach ($usernav->children as $child) {
-                        $text .= theme_xtec2_render_dropdown_menu($child);
-                    }
-                    $text .= '</ul></li>';
-                    $options[] = $text;
-                }
-                $options[] = '<li class="divider"></li>';
-            }
-        }
-
-        if (empty($options)) {
-            return $returnstr;
-        }
-
-        $menu = '<div id="usermenu" class="dropdown pull-right">';
-        $menu .= '<a id="usermenu_toogle" class="dropdown-toggle" href="#usermenu">'.$returnstr.'<b class="caret"></b></a>';
-        $menu .= '<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">';
-        foreach ($options as $option) {
-            $menu .= $option;
-        }
-        $menu .= '</ul>';
-        $menu .= '</div>';
-
-        return $menu;
-    }
-
     public function standard_end_of_body_html() {
         global $CFG;
 
@@ -366,6 +132,20 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         return $content;
     }
 
+    /*
+     * This code renders the custom lang items
+     */
+    protected function render_lang($lang, $langname, $url, $currentlang) {
+        $class = 'lang fa';
+        if ($langname === $currentlang) {
+            $class.= ' current-lang';
+            $content = '<li title="'.$langname.'" class="'.$class.'">'.$lang.'</li>';
+        } else  {
+            $content = '<li class="'.$class.'"><a href="'.$url.'" title="'.$langname.'">'.$lang.'</a></li>';
+        }
+        return $content;
+    }
+
     public function main_menu() {
         global $CFG;
 
@@ -411,9 +191,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         if ($settings  && $settings->has_children()) {
             $menucontent = "";
             foreach ($settings->children as $child) {
-                if ($child->key != 'usercurrentsettings') {
-                    $menucontent .= theme_xtec2_render_dropdown_menu($child);
-                }
+                $menucontent .= theme_xtec2_render_dropdown_menu($child);
             }
             if (has_capability('moodle/site:config', context_system::instance())) {
                 $menucontent .= '<li><form class="navbar-search" method="get" action="'.$CFG->wwwroot.'/'.$CFG->admin.'/search.php"><input type="text" class="search-query" name="query" placeholder="'.get_string('search').'"></form></li>';
@@ -448,18 +226,29 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         } else {
             $currentlang = $strlang;
         }
-        foreach ($langs as $langtype => $langname) {
-            $menu->add($langname, new moodle_url($this->page->url, array('lang' => $langtype)), $langname);
+
+        if ( sizeof($langs) > 5){
+            // If there are more than 5 langs, show a list
+            foreach ($langs as $langtype => $langname) {
+                $menu->add($langname, new moodle_url($this->page->url, array('lang' => $langtype)), $langname);
+            }
+    		$content = '<div class="btn-group dropup langmenu">';
+    		$content .= '<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">'.$currentlang;
+    		$content .= '<span class="caret"></span>';
+    		$content .= '</a>';
+    		$content .= '<ul class="dropdown-menu pull-right">';
+            foreach ($menu->get_children() as $item) {
+                $content .= $this->render_custom_menu_item($item, 1);
+            }
+        } else {
+            $content = '<ul>';
+            foreach ($langs as $langtype => $langname) {
+                $url = new moodle_url($this->page->url, array('lang' => $langtype));
+                $content .= $this->render_lang($langtype, $langname, $url, $currentlang);
+            }
+            $content.= '</ul>';
         }
 
-		$content = '<div class="btn-group dropup langmenu">';
-		$content .= '<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">'.$currentlang;
-		$content .= '<span class="caret"></span>';
-		$content .= '</a>';
-		$content .= '<ul class="dropdown-menu pull-right">';
-        foreach ($menu->get_children() as $item) {
-            $content .= $this->render_custom_menu_item($item, 1);
-        }
 
         return $content.'</ul></div>';
     }
@@ -551,20 +340,22 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             'i/loading_small' => 'spinner fa-spin ',
             'i/backup' => 'cloud-download',
             'i/calendar' => 'calendar',
+            't/calendar' => 'calendar',
             'i/checkpermissions' => 'user',
             'i/dragdrop' => 'arrows',
+            'i/delete' => 'times-circle',
             'i/edit' => 'pencil',
             'i/email' => 'envelope-o',
             'i/filter' => 'filter',
             'i/folder' => 'folder',
             'i/grades' => 'table',
             'i/group' => 'group',
-            //'i/groupn' => 'group', //Disabled to solve errors changing group working activities
-            //'i/groupv' => 'group', //Disabled to solve errors changing group working activities
-            //'i/groups' => 'group', //Disabled to solve errors changing group working activities
+            //'i/groupn' => 'user', //Disabled to solve errors changing group working activities
+            //'i/groupv' => 'user-plus', //Disabled to solve errors changing group working activities
+            //'i/groups' => 'user-secret', //Disabled to solve errors changing group working activities
             'i/hide' => 'eye-slash',
-            'i/import' => 'download',
-            'i/export' => 'upload',
+            'i/import' => 'upload',
+            'i/export' => 'download',
             'i/info' => 'info-circle',
             'i/item' => 'circle-o',
             'i/move_2d' => 'arrows',
@@ -644,7 +435,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 			}
 
 			// unset($icon->attributes['alt']);
-            return html_writer::tag('i', '', $icon->attributes);
+            return html_writer::tag('i', html_writer::tag('img', ''), $icon->attributes);
         } else {
             return parent::render_pix_icon($icon);
         }

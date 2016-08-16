@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradeimport_xml', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,9 @@ $string['errincorrectuseridnumber'] = 'Erreur - l\'identifiant « {$a} » du f
 $string['error'] = 'Des erreurs sont survenues';
 $string['errorduringimport'] = 'Une erreur est survenue lors de l\'importation : {$a}';
 $string['fileurl'] = 'URL du fichier distant';
+$string['fileurl_help'] = 'Le champ de l\'URL de fichier distant permet de récupérer des données d\'un serveur distant, par exemple d\'un système d\'informations.';
+$string['importxml'] = 'Importation XML';
+$string['importxml_help'] = 'Les notes peuvent être importées via un fichier XML contenant les identifiants numériques des utilisateurs et les identifiants numériques des activités. Pour obtenir un exemple de format correct, exportez quelques notes en format XML et consultez le fichier obtenu.';
 $string['pluginname'] = 'Fichier XML';
 $string['xml:publish'] = 'Publier les notes importées depuis un fichier XML';
 $string['xml:view'] = 'Importer des notes à partir d\'un fichier XML';

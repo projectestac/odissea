@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_navigation', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['everything'] = 'すべて';
 $string['expansionlimit'] = 'ナビゲーション生成対象';
 $string['linkcategoriesdesc'] = 'リンクとしてカテゴリを表示する';
 $string['navigation:addinstance'] = '新しいナビゲーションブロックを追加する';
-$string['navigation:myaddinstance'] = '新しいナビゲーションブロックをマイホームに追加する';
+$string['navigation:myaddinstance'] = '新しいナビゲーションブロックをダッシュボードに追加する';
 $string['pluginname'] = 'ナビゲーション';
 $string['trimlength'] = 'トリムする文字数';
 $string['trimmode'] = 'トリムモード';

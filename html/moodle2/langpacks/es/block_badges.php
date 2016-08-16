@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_badges', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = 'Añadir un nuevo bloque Mis últimas insisgnias';
-$string['badges:myaddinstance'] = 'Añadir un nuevo bloque Mis últimas insisgnias al Área personal';
+$string['badges:myaddinstance'] = 'Añadir un nuevo bloque Mis últimas insignias al Área personal';
 $string['nothingtodisplay'] = 'No tiene insignias que mostrar';
 $string['numbadgestodisplay'] = 'Número de últimas insignias que mostrar';
 $string['pluginname'] = 'Mis últimas insignias';

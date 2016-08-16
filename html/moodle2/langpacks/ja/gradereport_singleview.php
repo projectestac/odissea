@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['bulkfor'] = '{$a} の評点';
 $string['bulkinsertvalue'] = '値を入力する';
 $string['bulklegend'] = 'バルクインサート';
 $string['bulkperform'] = 'バルクインサートを実行する';
+$string['entrypage'] = '評定ユーザまたは評定項目';
 $string['eventgradereportviewed'] = '評定シングルビューレポートが閲覧されました。';
 $string['exclude'] = '除外';
 $string['excludeall'] = 'すべての評点を除外する';
@@ -41,7 +42,9 @@ $string['excludenone'] = 'どの評点も除外しない';
 $string['feedbackfor'] = '{$a} のフィードバック';
 $string['filtergrades'] = '{$a} の評点を表示します。';
 $string['gradefor'] = '{$a} の評点';
+$string['gradeitem'] = '評定項目: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'この評定項目はオーバーライドできません。';
+$string['gradeuser'] = '評定ユーザ: {$a}';
 $string['noscreens'] = '適切なシングルビュースクリーンが見つかりませんでした。';
 $string['notvalid'] = '有効ではないシングルビュースクリーン: {$a}';
 $string['override'] = 'オーバーライド';
@@ -49,8 +52,12 @@ $string['overrideall'] = 'すべての評点をオーバーライドする';
 $string['overridefor'] = '{$a} のオーバーライド';
 $string['overridenone'] = 'どの評点もオーバーライドしない';
 $string['pluginname'] = 'シングルビュー';
+$string['save'] = '保存';
 $string['savegrades'] = '評点保存';
 $string['savegradessuccess'] = '{$a} アイテムに評点が設定されました。';
+$string['selectgrade'] = '評定項目を選択する ...';
+$string['selectuser'] = 'ユーザを選択する ...';
 $string['singleview:view'] = 'レポートを表示する';
 $string['summarygrade'] = '範囲、評点、フィードバックおよび特定の評点をオーバーライド または除外するかに関するカラムを含むユーザテーブルです。';
 $string['summaryuser'] = '評定カテゴリ、範囲、評点、フィードバックおよび特定の評点をオーバーライドまたは除外するかに関するカラムを含む評定項目テーブルです。';
+$string['userselect'] = '活動を選択する';

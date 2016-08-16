@@ -113,41 +113,27 @@ class auth_plugin_ldap extends auth_plugin_base {
         }
 
         // Hack prefix to objectclass
-        if (empty($this->config->objectclass)) {
-            // Can't send empty filter
-            $this->config->objectclass = '(objectClass=*)';
-        } else if (stripos($this->config->objectclass, 'objectClass=') === 0) {
-            // Value is 'objectClass=some-string-here', so just add ()
-            // around the value (filter _must_ have them).
-            $this->config->objectclass = '('.$this->config->objectclass.')';
-        } else if (strpos($this->config->objectclass, '(') !== 0) {
-            // Value is 'some-string-not-starting-with-left-parentheses',
-            // which is assumed to be the objectClass matching value.
-            // So build a valid filter with it.
-            $this->config->objectclass = '(objectClass='.$this->config->objectclass.')';
-        } else {
-            // There is an additional possible value
-            // '(some-string-here)', that can be used to specify any
-            // valid filter string, to select subsets of users based
-            // on any criteria. For example, we could select the users
-            // whose objectClass is 'user' and have the
-            // 'enabledMoodleUser' attribute, with something like:
-            //
-            //   (&(objectClass=user)(enabledMoodleUser=1))
-            //
-            // In this particular case we don't need to do anything,
-            // so leave $this->config->objectclass as is.
-        }
+        $this->config->objectclass = ldap_normalise_objectclass($this->config->objectclass);
     }
 
     /**
      * Constructor with initialisation.
      */
-    function auth_plugin_ldap() {
+    public function __construct() {
         $this->authtype = 'ldap';
         $this->roleauth = 'auth_ldap';
         $this->errorlogtag = '[AUTH LDAP] ';
         $this->init_plugin($this->authtype);
+    }
+
+    /**
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function auth_plugin_ldap() {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+        self::__construct();
     }
 
     /**
@@ -563,6 +549,7 @@ class auth_plugin_ldap extends auth_plugin_base {
         global $CFG, $DB, $PAGE, $OUTPUT;
 
         require_once($CFG->dirroot.'/user/profile/lib.php');
+        require_once($CFG->dirroot.'/user/lib.php');
 
         if ($this->user_exists($user->username)) {
             print_error('auth_ldap_user_exists', 'auth_ldap');
@@ -576,6 +563,8 @@ class auth_plugin_ldap extends auth_plugin_base {
         }
 
         $user->id = user_create_user($user, false, false);
+
+        user_add_password_history($user->id, $plainslashedpassword);
 
         // Save any custom profile field information
         profile_save_data($user);
@@ -639,9 +628,6 @@ class auth_plugin_ldap extends auth_plugin_base {
                     return AUTH_CONFIRM_FAIL;
                 }
                 $user->confirmed = 1;
-                if ($user->firstaccess == 0) {
-                    $user->firstaccess = time();
-                }
                 user_update_user($user, false);
                 return AUTH_CONFIRM_OK;
             }
@@ -886,6 +872,9 @@ class auth_plugin_ldap extends auth_plugin_base {
                     }
                 }
             }
+            if ($this->config->suspended_attribute && $this->config->sync_suspended) {
+                $updatekeys[] = 'suspended';
+            }
             unset($all_keys); unset($key);
 
         } else {
@@ -968,6 +957,12 @@ class auth_plugin_ldap extends auth_plugin_base {
                 // get_userinfo_asobj() might have replaced $user->username with the value
                 // from the LDAP server (which can be mixed-case). Make sure it's lowercase
                 $user->username = trim(core_text::strtolower($user->username));
+                // It isn't possible to just rely on the configured suspension attribute since
+                // things like active directory use bit masks, other things using LDAP might
+                // do different stuff as well.
+                //
+                // The cast to int is a workaround for MDL-53959.
+                $user->suspended = (int)$this->is_user_suspended($user);
                 if (empty($user->lang)) {
                     $user->lang = $CFG->lang;
                 }
@@ -1042,6 +1037,8 @@ class auth_plugin_ldap extends auth_plugin_base {
             if (!empty($updatekeys)) {
                 $newuser = new stdClass();
                 $newuser->id = $userid;
+                // The cast to int is a workaround for MDL-53959.
+                $newuser->suspended = (int)$this->is_user_suspended((object) $newinfo);
 
                 foreach ($updatekeys as $key) {
                     if (isset($newinfo[$key])) {
@@ -1541,6 +1538,7 @@ class auth_plugin_ldap extends auth_plugin_base {
             }
         }
         $moodleattributes['username'] = core_text::strtolower(trim($this->config->user_attribute));
+        $moodleattributes['suspended'] = core_text::strtolower(trim($this->config->suspended_attribute));
         return $moodleattributes;
     }
 
@@ -1885,6 +1883,12 @@ class auth_plugin_ldap extends auth_plugin_base {
         if (!isset($config->user_attribute)) {
              $config->user_attribute = '';
         }
+        if (!isset($config->suspended_attribute)) {
+            $config->suspended_attribute = '';
+        }
+        if (!isset($config->sync_suspended)) {
+            $config->sync_suspended = false;
+        }
         if (!isset($config->search_sub)) {
              $config->search_sub = '';
         }
@@ -1981,6 +1985,8 @@ class auth_plugin_ldap extends auth_plugin_base {
         set_config('contexts', $config->contexts, $this->pluginconfig);
         set_config('user_type', core_text::strtolower(trim($config->user_type)), $this->pluginconfig);
         set_config('user_attribute', core_text::strtolower(trim($config->user_attribute)), $this->pluginconfig);
+        set_config('suspended_attribute', core_text::strtolower(trim($config->suspended_attribute)), $this->pluginconfig);
+        set_config('sync_suspended', $config->sync_suspended, $this->pluginconfig);
         set_config('search_sub', $config->search_sub, $this->pluginconfig);
         set_config('opt_deref', $config->opt_deref, $this->pluginconfig);
         set_config('preventpassindb', $config->preventpassindb, $this->pluginconfig);
@@ -2094,7 +2100,23 @@ class auth_plugin_ldap extends auth_plugin_base {
         $entry = ldap_get_entries_moodle($ldapconn, $sr);
         $info = array_change_key_case($entry[0], CASE_LOWER);
         $maxpwdage = $info['maxpwdage'][0];
+        if ($sr = ldap_read($ldapconn, $user_dn, '(objectClass=*)', array('msDS-ResultantPSO'))) {
+            if ($entry = ldap_get_entries_moodle($ldapconn, $sr)) {
+                $info = array_change_key_case($entry[0], CASE_LOWER);
+                $userpso = $info['msds-resultantpso'][0];
 
+                // If a PSO exists, FGPP is being utilized.
+                // Grab the new maxpwdage from the msDS-MaximumPasswordAge attribute of the PSO.
+                if (!empty($userpso)) {
+                    $sr = ldap_read($ldapconn, $userpso, '(objectClass=*)', array('msDS-MaximumPasswordAge'));
+                    if ($entry = ldap_get_entries_moodle($ldapconn, $sr)) {
+                        $info = array_change_key_case($entry[0], CASE_LOWER);
+                        // Default value of msds-maximumpasswordage is 42 and is always set.
+                        $maxpwdage = $info['msds-maximumpasswordage'][0];
+                    }
+                }
+            }
+        }
         // ----------------------------------------------------------------
         // MSDN says that "pwdLastSet contains the number of 100 nanosecond
         // intervals since January 1, 1601 (UTC), stored in a 64 bit integer".
@@ -2329,6 +2351,26 @@ class auth_plugin_ldap extends auth_plugin_base {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Check if a user is suspended. This function is intended to be used after calling
+     * get_userinfo_asobj. This is needed because LDAP doesn't have a notion of disabled
+     * users, however things like MS Active Directory support it and expose information
+     * through a field.
+     *
+     * @param object $user the user object returned by get_userinfo_asobj
+     * @return boolean
+     */
+    protected function is_user_suspended($user) {
+        if (!$this->config->suspended_attribute || !isset($user->suspended)) {
+            return false;
+        }
+        if ($this->config->suspended_attribute == 'useraccountcontrol' && $this->config->user_type == 'ad') {
+            return (bool)($user->suspended & AUTH_AD_ACCOUNTDISABLE);
+        }
+
+        return (bool)$user->suspended;
     }
 
 } // End of the class

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_html', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['configclasses_help'] = 'Ezarpen honen helburua itxuraketa egiten lagunt
 $string['configcontent'] = 'Edukia';
 $string['configtitle'] = 'Blokearen izenburua';
 $string['html:addinstance'] = 'Gehitu HTML bloke berria';
-$string['html:myaddinstance'] = 'Gehitu HTML bloke berria Nire hasieran';
+$string['html:myaddinstance'] = 'Gehitu HTML bloke berria aginte-panelean';
 $string['leaveblanktohide'] = 'Hutsik utzi izenburua ezkutatzeko';
 $string['newhtmlblock'] = '(HTML bloke berria)';
 $string['pluginname'] = 'HTML';

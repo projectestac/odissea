@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Verfügbare Einschreibeplugins';
 $string['addinstance'] = 'Methode hinzufügen';
+$string['addinstanceanother'] = 'Methode hinzufügen und weitere anlegen';
 $string['ajaxnext25'] = 'Weitere 25...';
 $string['ajaxoneuserfound'] = '1 Person gefunden';
 $string['ajaxxusersfound'] = '{$a} Personen gefunden';
@@ -71,6 +72,9 @@ $string['errorenrolcohort'] = 'Fehler bei der Einschreibesynchronisation von glo
 $string['errorenrolcohortusers'] = 'Fehler bei der Einschreibung von globalen Gruppen in diesem Kurs';
 $string['errorthresholdlow'] = 'Die Benachrichtigung muss mindestens einen Tag vor Teilnahmeende erfolgen';
 $string['errorwithbulkoperation'] = 'Fehler bei der Nutzerverarbeitung (Bulk)';
+$string['eventenrolinstancecreated'] = 'Instanz für Einschreibeverfahren wurde erstellt';
+$string['eventenrolinstancedeleted'] = 'Instanz für Einschreibeverfahren wurde gelöscht';
+$string['eventenrolinstanceupdated'] = 'Instanz für Einschreibeverfahren wurde aktualisiert';
 $string['eventuserenrolmentcreated'] = 'Nutzer/in in Kurs eingeschrieben';
 $string['eventuserenrolmentdeleted'] = 'Nutzer/in aus Kurs abgemeldet';
 $string['eventuserenrolmentupdated'] = 'Nutzereinschreibung aktualisiert';
@@ -89,6 +93,7 @@ $string['extremovedsuspendnoroles'] = 'Kurseinschreibung deaktivieren und Rollen
 $string['extremovedunenrol'] = 'Nutzer/in aus dem Kurs abmelden';
 $string['finishenrollingusers'] = 'Nutzereinschreibung beenden';
 $string['foundxcohorts'] = 'Globale Gruppen gefunden {$a}';
+$string['instanceadded'] = 'Methode hinzugefügt';
 $string['instanceeditselfwarning'] = 'Warnung:';
 $string['instanceeditselfwarningtext'] = 'Sie sind über diese Einschreibemethode in den Kurs eingeschrieben. Änderungen könnten sich auf Ihren Zugriff zum Kurs auswirken.';
 $string['invalidenrolinstance'] = 'Falsche Einschreibung';
@@ -98,6 +103,7 @@ $string['manageinstance'] = 'Verwalten';
 $string['migratetomanual'] = 'Auf manuelle Einschreibung ändern';
 $string['nochange'] = 'Ohne Änderung';
 $string['noexistingparticipants'] = 'Keine existierenden Teilnehmer/innen';
+$string['nogroup'] = 'Keine Gruppe';
 $string['noguestaccess'] = 'Gäste dürfen nicht auf diesen Kurs zugreifen. Melden Sie sich bitte an.';
 $string['none'] = 'Keine';
 $string['notenrollable'] = 'Sie können sich nicht selbst in diesen Kurs einschreiben.';
@@ -110,6 +116,7 @@ $string['periodend'] = 'bis {$a}';
 $string['periodnone'] = 'eingeschrieben {$a}';
 $string['periodstart'] = 'von {$a}';
 $string['periodstartend'] = 'von {$a->start} bis {$a->end}';
+$string['proceedtocourse'] = 'Weiter zum Kurs';
 $string['recovergrades'] = 'Alte Nutzerbewertungen falls möglich wiederherstellen';
 $string['rolefromcategory'] = '{$a->role} (vererbt vom Kursbereich)';
 $string['rolefrommetacourse'] = '{$a->role} (vererbt aus Kurszuordnung)';

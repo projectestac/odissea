@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -196,7 +196,6 @@ $string['generalfeedback_help'] = 'La retroacció general es mostra a l\'alumnat
 Podeu utilitzar la retroacció general per donar a l\'alumnat una resposta més completa o potser un enllaç amb més informació que puguin utilitzar si no entenen les preguntes.';
 $string['getcategoryfromfile'] = 'Agafa la categoria del fitxer';
 $string['getcontextfromfile'] = 'Agafa el context del fitxer';
-$string['hidden'] = 'Amagada';
 $string['hintn'] = 'Pista {no}';
 $string['hintnoptions'] = 'Opcions de la pista {no}';
 $string['hinttext'] = 'Text de la pista';
@@ -242,6 +241,7 @@ $string['linkedfiledoesntexist'] = 'El fitxer enllaçat {$a} no existeix';
 $string['makechildof'] = 'Fes filla de: \'{$a}\'';
 $string['makecopy'] = 'Fes-ne una còpia';
 $string['maketoplevelitem'] = 'Mou al primer nivell';
+$string['manualgradeinvalidformat'] = 'Aquest no és un nombre vàlid.';
 $string['manualgradeoutofrange'] = 'Aquesta puntuació queda fora del rang vàlid.';
 $string['manuallygraded'] = 'Puntuat manualment {$a->mark} amb un comentari: {$a->comment}';
 $string['mark'] = 'Puntua';
@@ -298,8 +298,6 @@ $string['numqas'] = 'No hi ha intents de la pregunta';
 $string['numquestions'] = 'Cap pregunta';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} ocultes)';
 $string['options'] = 'Opcions';
-$string['orphanedquestionscategory'] = 'S\'han desat les preguntes de les categories suprimides.';
-$string['orphanedquestionscategoryinfo'] = 'Ocasionalment, de vegades a causa d\'antics errors del programari, les preguntes poden romandre en la base de dades encara que la categoria de preguntes corresponent s\'hagi suprimit. Per descomptat que això no hauria de passar, però ha passat anteriorment en aquest lloc. Aquesta categoria s\'ha creat automàticament  i les preguntes que havien quedat òrfenes s\'hi han traslladat perquè les pugueu gestionar. Recordeu que les imatges o fitxers multimèdia utilitzats per aquestes preguntes probablement s\'han perdut.';
 $string['page-question-category'] = 'Pàgina de categories de preguntes';
 $string['page-question-edit'] = 'Pàgina d\'edició de preguntes';
 $string['page-question-export'] = 'Pàgina d\'exportació de preguntes';
@@ -396,8 +394,10 @@ $string['technicalinfo_help'] = 'Aquesta informació tècnica és, probablement,
 $string['technicalinfomaxfraction'] = 'Fracció màxima: {$a}';
 $string['technicalinfominfraction'] = 'Fracció mínima: {$a}';
 $string['technicalinfoquestionsummary'] = 'Resum de la pregunta: {$a}';
+$string['technicalinforesponsesummary'] = 'Resum de respostes: {$a}';
 $string['technicalinforightsummary'] = 'Resum de la resposta correcta: {$a}';
 $string['technicalinfostate'] = 'Estat de la pregunta: {$a}';
+$string['technicalinfovariant'] = 'Variant de pregunta: {$a}';
 $string['tofilecategory'] = 'Inclou la categoria al fitxer';
 $string['tofilecontext'] = 'Inclou el context al fitxer';
 $string['uninstallbehaviour'] = 'Desinstal·la aquest comportament de preguntes.';

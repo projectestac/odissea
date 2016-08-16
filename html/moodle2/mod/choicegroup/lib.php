@@ -367,14 +367,19 @@ function choicegroup_user_submit_response($formanswer, $choicegroup, $userid, $c
     $selectedgroup = $DB->get_record('groups', array('id' => $selected_option->groupid), 'id,name', MUST_EXIST);
 
     $countanswers=0;
-    if($choicegroup->limitanswers) {
-        $groupmembers = $DB->get_records('groups_members', array('groupid' => $selected_option->groupid));
-        $countanswers = count($groupmembers);
+    groups_add_member($selected_option->groupid, $userid);
+    $groupmember_added = true;    
+    if ($choicegroup->limitanswers) {
+        $groupmember = $DB->get_record('groups_members', array('groupid' => $selected_option->groupid, 'userid'=>$userid));
+        $select_count = 'groupid='.$selected_option->groupid.' and id<='.$groupmember->id;
+        $countanswers = $DB->count_records_select('groups_members', $select_count);
         $maxans = $choicegroup->maxanswers[$formanswer];
+        if ($countanswers > $maxans) {    
+           groups_remove_member($selected_option->groupid, $userid);
+           $groupmember_added = false;
+      }
     }
-
-    if (!($choicegroup->limitanswers && ($countanswers >= $maxans) )) {
-        groups_add_member($selected_option->groupid, $userid);
+    if ($groupmember_added) {
         if ($current) {
             if (!($choicegroup->multipleenrollmentspossible == 1)) {
                 if ($selected_option->groupid != $current->id) {
@@ -767,14 +772,21 @@ function choicegroup_get_choicegroup($choicegroupid) {
     if ($choicegroup = $DB->get_record("choicegroup", array("id" => $choicegroupid))) {
         $sortcolumn = choicegroup_get_sort_column($choicegroup);
 
-        $sql = "SELECT grp_o.id, grp_o.groupid, grp_o.maxanswers FROM {groups} grp
-            INNER JOIN {choicegroup_options} grp_o on grp.id = grp_o.groupid
-            WHERE grp_o.choicegroupid = :choicegroupid
-            ORDER BY $sortcolumn ASC";
-
         $params = array(
             'choicegroupid' => $choicegroupid
         );
+
+        $grpfilter = '';
+        if (($groupid = optional_param('group', 0, PARAM_INT)) != 0) {
+            $params['groupid'] = $groupid;
+            $grpfilter = "AND grp_o.groupid = :groupid";
+        }
+
+        $sql = "SELECT grp_o.id, grp_o.groupid, grp_o.maxanswers FROM {groups} grp
+            INNER JOIN {choicegroup_options} grp_o on grp.id = grp_o.groupid
+            WHERE grp_o.choicegroupid = :choicegroupid $grpfilter
+            ORDER BY $sortcolumn ASC";
+
         $options = $DB->get_records_sql($sql, $params);
 
         foreach ($options as $option) {
@@ -855,7 +867,7 @@ function choicegroup_get_response_data($choicegroup, $cm) {
     if (count($allresponses)) {
         return $allresponses;
     }
-
+ 
     // First get all the users who have access here.
     // To start with we assume they are all "unanswered" then move them later.
     $ctx = \context_module::instance($cm->id);
@@ -868,19 +880,43 @@ function choicegroup_get_response_data($choicegroup, $cm) {
     }
 
     $allresponses[0] = $users;
-    foreach ($allresponses[0] as $user) {
-        $currentanswers = choicegroup_get_user_answer($choicegroup, $user, true);
-        if ($currentanswers != false) {
-            foreach ($currentanswers as $current) {
-                $allresponses[$current->id][$user->id] = clone $allresponses[0][$user->id];
-                $allresponses[$current->id][$user->id]->timemodified = $current->timeuseradded;
-            }
 
-            // Remove from unanswered column.
-            unset($allresponses[0][$user->id]);
-        }
+    $responses = choicegroup_get_responses($choicegroup, $ctx);
+    foreach ($responses as $response){
+        $allresponses[$response->groupid][$response->userid]= clone $users[$response->userid];
+        $allresponses[$response->groupid][$response->userid]->timemodified =$response->timeadded; 
+
+        unset($allresponses[0][$response->userid]);
     }
-    return $allresponses;
+   return $allresponses;
+}
+
+/* Return an array with the options selected of users of the $choicegroup 
+ * 
+ * @param object $choicegroup choicegroup record
+ * @param object $cm course module object
+ * @return array of selected options by all users 
+*/
+function choicegroup_get_responses($choicegroup, $cm){
+
+    global $DB;
+
+    if (is_numeric($choicegroup)) {
+        $choicegroupid = $choicegroup;
+    } else {
+        $choicegroupid = $choicegroup->id;
+    }
+
+    $params1 = array('choicegroupid'=>$choicegroupid);
+    list($esql, $params2) = get_enrolled_sql($cm, 'mod/choicegroup:choose', 0);
+    $params = array_merge($params1, $params2);
+
+    $sql = 'SELECT gm.* FROM {user} u JOIN ('.$esql.') je ON je.id = u.id
+        JOIN {groups_members} gm ON gm.userid = u.id AND groupid IN (
+        SELECT groupid FROM {choicegroup_options} WHERE choicegroupid=:choicegroupid)
+        WHERE u.deleted = 0 ORDER BY u.lastname ASC,u.firstname ASC';
+
+    return $DB->get_records_sql($sql, $params);
 }
 
 /**

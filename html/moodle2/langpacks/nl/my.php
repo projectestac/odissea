@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Voeg pagina toe';
+$string['alldashboardswerereset'] = 'Alle startpagina\'s zijn ingesteld op standaardinstellingen.';
+$string['allprofileswerereset'] = 'Alle profielpagina\'s zijn terug op standaardinstellingen gezet.';
 $string['defaultpage'] = 'Standaard Mijn Moodle-pagina';
 $string['defaultprofilepage'] = 'Standaard profielpagina';
 $string['delpage'] = 'Verwijder pagina';
@@ -36,4 +38,6 @@ $string['noguest'] = '"Mijn startpagina" is niet beschikbaar voor gasten';
 $string['pinblocks'] = 'Configureer permanente blokken voor Mijn Moodle';
 $string['pinblocksexplan'] = 'Alle blokinstellingen die je hier configureert zijn zichtbaar (en niet bewerkbaar) voor alle Moodlegebruikers op hun \'Mijn Moodle\' overzichtspagina.';
 $string['reseterror'] = 'Er was een fout bij het resetten van je pagina';
+$string['reseteveryonesdashboard'] = 'Startpagina op standaardinstellingen voor alle gebruikers';
+$string['reseteveryonesprofile'] = 'Profiel op standaardinstellingen voor alle gebruikers';
 $string['resetpage'] = 'Pagina terug op standaard instellen';

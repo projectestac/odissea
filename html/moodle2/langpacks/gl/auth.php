@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,6 +88,7 @@ $string['errorminpasswordlength'] = 'Os contrasinais deben ter polo menos unha l
 $string['errorminpasswordlower'] = 'Os contrasinais deben ter polo menos {$a} letra(s) minúscula(s).';
 $string['errorminpasswordnonalphanum'] = 'Os contrasinais deben ter polo menos {$a} caracteres non alfanuméricos.';
 $string['errorminpasswordupper'] = 'Os contrasinais deben ter polo menos {$a} letra(s) maiúscula(s).';
+$string['errorpasswordreused'] = 'Xa usou este contrasinal con anterioridade polo que non se permite o seu uso';
 $string['errorpasswordupdate'] = 'Produciuse un erro ao actualizar o contrasnal. O contrasinal non cambiou';
 $string['eventuserloggedin'] = 'O usuario accedeu';
 $string['eventuserloggedinas'] = 'O usuario accedeu como outro usuario';
@@ -107,10 +108,13 @@ $string['informminpassworddigits'] = 'cando menos {$a} díxito(s)';
 $string['informminpasswordlength'] = 'cando menos {$a} carácter(es)';
 $string['informminpasswordlower'] = 'cando menos {$a} letra(s) minúscula(s)';
 $string['informminpasswordnonalphanum'] = 'cando menos {$a} caráter(es) non alfanuméricos';
+$string['informminpasswordreuselimit'] = 'Os contrasinais pódense reutilizar logo de {$a} cambios';
 $string['informminpasswordupper'] = 'cando menos {$a} letra(s) maiúscula(s)';
 $string['informpasswordpolicy'] = 'O contrasinal debería ter {$a}';
 $string['instructions'] = 'Instrucións';
 $string['internal'] = 'Interno';
+$string['limitconcurrentlogins'] = 'Limitar os accesos concurrentes';
+$string['limitconcurrentlogins_desc'] = 'Se se activa, limitarase o número de accesos concurrentes desde o navegador de cada usuario. A sesión máis vella elimínase ao chegar ao límite, así que teña en conta que os usuarios poden perder traballo que non teñan gardado. Esta opción non é compatible cos engadidos de acceso único (SSO).';
 $string['locked'] = 'Bloqueado';
 $string['md5'] = 'Cifrado (hash) MD5';
 $string['nopasswordchange'] = 'Non é posíbel cambiar o contrasinal';
@@ -129,6 +133,7 @@ $string['recaptcha_help'] = 'O CAPTCHA empregase para impedir abusos de programa
 
 Se non está seguro de que palabras son, pode conseguir outro CAPTCHA, ou un CAPTCHA de son.';
 $string['recaptcha_link'] = 'auth/email';
+$string['security_question'] = 'Pregunta de seguridade';
 $string['selfregistration'] = 'Autorexistro';
 $string['selfregistration_help'] = 'Se se selecciona un engadido de autenticación como o autorexistro baseado en correo, entón permíteselles aos potenciais usuarios rexistrarse e crear contas. Isto resulta na posibilidade de que os «spammers» creen contas para poder empregar as mensaxes no foro, artigos de blog, etc como lixo. Para evitar este risco, o autorexistro debe ser desactivado ou limitado axustándoo en  <em>Dominios de correo permitidos</em>';
 $string['sha1'] = 'Cifrado (hash) SHA-1';

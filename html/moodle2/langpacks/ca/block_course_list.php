@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_list', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['adminview'] = 'Visualització d\'administració';
 $string['allcourses'] = 'L\'administrador veu tots els cursos';
 $string['configadminview'] = 'Què veu l\'administrador en el bloc "Llista de cursos"?';
-$string['confighideallcourseslink'] = 'Oculta l\'enllaç "Tots els cursos" al capdavall del bloc (no afecta la visualització de l\'administrador)';
+$string['confighideallcourseslink'] = 'Oculta l\'enllaç "Tots els cursos" al capdavall de la llista de cursos (no afecta a la visualització de l\'administrador)';
 $string['course_list:addinstance'] = 'Afegeix un nou bloc de cursos';
-$string['course_list:myaddinstance'] = 'Afegeix un bloc de cursos nou a la pàgina del «meu Moodle»';
+$string['course_list:myaddinstance'] = 'Afegeix un bloc de cursos nou a la pàgina del Tauler';
 $string['hideallcourseslink'] = 'Oculta l\'enllaç a Tots els cursos';
 $string['owncourses'] = 'L\'administrador veu els seus cursos';
-$string['pluginname'] = 'Llista de cursos';
+$string['pluginname'] = 'Cursos';

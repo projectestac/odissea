@@ -229,6 +229,14 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
     }
     
     public function get_correct_response() {
+        // We need to replace all aterisk for scaped asterisks:
+        // Because shortanswer get_correct_response() methods
+        // cleans all asterisks, asterisks are shortanswer wildcards.
+        // However on WIRIS shortanswers asterisk means product.
+        foreach ($this->answers as $key=>$value) {
+            $this->answers[$key]->answer = str_replace('*', '\*', $value->answer);
+        }
+
         $correct = parent::get_correct_response();
         $correct['answer'] = $this->format_answer($correct['answer']);
         return $correct;

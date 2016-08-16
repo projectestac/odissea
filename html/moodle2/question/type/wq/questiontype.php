@@ -233,5 +233,7 @@ class qtype_wq extends question_type {
         return $xml;
     }
     
-    
+    public function get_possible_responses($questiondata) {
+        return $this->base->get_possible_responses($questiondata);
+    }
 }

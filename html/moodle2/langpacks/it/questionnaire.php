@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'questionnaire', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,7 @@ $string['closedate_help'] = 'Qui è possibile specificare una data di chiusura d
 $string['closeson'] = 'Il questionario chiude il {$a}';
 $string['completionsubmit'] = 'Gli studenti devono inviare il questionario per completarlo';
 $string['confalts'] = 'oppure<br />Pagina di conferma';
+$string['configmaxsections'] = 'Massimo numero di sezioni di feedback';
 $string['configusergraph'] = 'Visualizza i grafici per il feedback del "Test della personalità"';
 $string['configusergraphlong'] = 'Usa <a href="http://www.rgraph.net/">Rgraph</a>  per visualizzare i grafici del feedback del "Test della personalità".';
 $string['confirmdelallresp'] = 'Sei sicuro di eliminare TUTTE le risposte del questionario?';

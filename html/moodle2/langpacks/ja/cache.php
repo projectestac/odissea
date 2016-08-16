@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cache', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['area'] = 'エリア';
 $string['cacheadmin'] = 'キャッシュ管理';
 $string['cacheconfig'] = '設定';
 $string['cachedef_calendar_subscriptions'] = 'カレンダー購読';
+$string['cachedef_capabilities'] = 'システムケイパビリティリスト';
+$string['cachedef_completion'] = '活動完了ステータス';
 $string['cachedef_config'] = 'Config設定';
 $string['cachedef_coursecat'] = '特定ユーザのコースカテゴリ一覧';
 $string['cachedef_coursecatrecords'] = 'コースカテゴリレコード';
@@ -44,18 +46,22 @@ $string['cachedef_coursemodinfo'] = 'それぞれのコースのモジュール�
 $string['cachedef_databasemeta'] = 'データベースメタ情報';
 $string['cachedef_eventinvalidation'] = 'イベント無効化';
 $string['cachedef_externalbadges'] = '特定ユーザの外部バッジ';
-$string['cachedef_gradecondition'] = '条件付利用評価のためにキャッシュされたユーザ評点';
+$string['cachedef_grade_categories'] = '評定カテゴリクエリ';
 $string['cachedef_groupdata'] = 'コースグループ情報';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - クリーニング済みコンテンツ';
 $string['cachedef_langmenu'] = '利用可能な言語一覧';
 $string['cachedef_locking'] = 'ロッキング';
 $string['cachedef_navigation_expandcourse'] = 'ナビゲーション拡張可能コース';
 $string['cachedef_observers'] = 'イベントオブザーバ';
+$string['cachedef_plugin_functions'] = 'プラグイン利用可能コールバック';
 $string['cachedef_plugin_manager'] = 'プラグイン情報マネージャ';
 $string['cachedef_questiondata'] = '問題定義';
 $string['cachedef_repositories'] = 'リポジトリインスタンスデータ';
 $string['cachedef_string'] = '言語ストリングキャッシュ';
 $string['cachedef_suspended_userids'] = 'コースごとの利用停止ユーザ一覧';
+$string['cachedef_tagindexbuilder'] = 'タグ付きアイテムの検索結果';
+$string['cachedef_tags'] = 'タグコレクションおよびエリア';
+$string['cachedef_temp_tables'] = '一時テーブルキャッシュ';
 $string['cachedef_userselections'] = 'Moodle内でのユーザ選択の保持に使用するデータ';
 $string['cachedef_yuimodules'] = 'YUIモジュール定義';
 $string['cachelock_file_default'] = 'デフォルトファイルロッキング';
@@ -97,7 +103,10 @@ $string['inadequatestoreformapping'] = 'このストアはすべての既知の�
 $string['invalidlock'] = '無効なロック';
 $string['invalidplugin'] = '無効なプラグイン';
 $string['invalidstore'] = '無効なキャッシュストアが提供されました。';
+$string['localstorenotification'] = 'このキャッシュはそれぞれのウェブサーバのストアに安全にマップすることができます。';
 $string['lockdefault'] = 'デフォルト';
+$string['locking'] = 'ロッキング';
+$string['locking_help'] = 'ロッキングはデータがオーバライドされるのを防ぐためにキャッシュデータへのアクセスを1度に1プロセスのみに制限するメカニズムです。ロッキングメソッドではどのようにロックが獲得され、チェックされるか決定します。';
 $string['lockingmeans'] = 'ロッキングメカニズム';
 $string['lockmethod'] = 'ロックメソッド';
 $string['lockmethod_help'] = 'このストアが要求された場合、このメソッドはロッキングのために使用されます。';
@@ -127,6 +136,7 @@ $string['requestcount'] = '{$a} リクエストによりテストする';
 $string['rescandefinitions'] = '定義を再スキャンする';
 $string['result'] = '結果';
 $string['set'] = 'セット';
+$string['sharedstorenotification'] = 'このキャッシュはすべてのウェブサーバに共有されているストアにマップする必要があります。';
 $string['sharing'] = '共有';
 $string['sharing_all'] = 'すべて';
 $string['sharing_help'] = 'あなたがクラスタをセットアップをしている場合、またはすべて同じストアを使用する複数サイトをセットアップしている場合、そしてデータを共有したい場合にどのようにキャッシュデータを共有するか決定することができます。これは高度な設定であるため、変更する前にその目的を確認してください。';

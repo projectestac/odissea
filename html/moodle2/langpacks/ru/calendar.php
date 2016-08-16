@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'calendar', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,7 +113,6 @@ $string['gotocalendar'] = 'Перейти к календарю';
 $string['group'] = 'Группа';
 $string['groupevent'] = 'Групповое событие';
 $string['groupevents'] = 'Групповые события';
-$string['hidden'] = 'скрыто';
 $string['hidecourseevents'] = 'Скрыть события курса';
 $string['hideglobalevents'] = 'Скрыть общие события';
 $string['hidegroupsevents'] = 'Скрыть события групп';

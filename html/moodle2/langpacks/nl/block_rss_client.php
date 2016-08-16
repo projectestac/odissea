@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Bewerk nieuwe RSS-feeds';
 $string['editrssblock'] = 'Bewerk RSS-hoofdpuntenblok';
 $string['enableautodiscovery'] = 'Automatisch vinden van feeds inschakelen?';
 $string['enableautodiscovery_help'] = 'Indien ingeschakeld, worden feeds automatisch gevonden op webpagina\'s. Bijvoorbeeld als je http://docs.moodle.org ingeeft, dan zou http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss gevonden worden.';
-$string['errorloadingfeed'] = 'Fout bij het laden van deze RSS-feed ({$a})';
 $string['feed'] = 'Nieuws-feed';
 $string['feedadded'] = 'Nieuws-feed toegevoegd';
 $string['feeddeleted'] = 'Nieuws-feed verwijderd';

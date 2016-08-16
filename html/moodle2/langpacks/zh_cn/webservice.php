@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = '分配/取消必备的权限';
 $string['addservice'] = '添加新服务：{$a->name}（id：{$a->id}）';
 $string['addservicefunction'] = '向服务“{$a}”添加函数';
 $string['allusers'] = '所有用户';
-$string['amftestclient'] = 'AMF 测试客户端';
 $string['apiexplorer'] = 'API 浏览器';
 $string['apiexplorernotavalaible'] = 'API 浏览器还不可用。';
 $string['arguments'] = '参数';
 $string['authmethod'] = '认证方法';
+$string['callablefromajax'] = '从AJAX调用';
 $string['cannotcreatetoken'] = '没有为服务{$a}创建网络服务令牌的权限。';
 $string['cannotgetcoursecontents'] = '不能获取课程内容';
 $string['checkusercapability'] = '检查用户权限';
@@ -119,6 +119,7 @@ $string['iprestriction'] = 'IP限制';
 $string['iprestriction_help'] = '此用户将只能从列出的 IP 访问网络服务';
 $string['key'] = '密钥';
 $string['keyshelp'] = '密钥用来从外部程序访问您的 Moodle 账号。';
+$string['loginrequired'] = '只限于已经登录的用户';
 $string['manageprotocols'] = '管理协议';
 $string['managetokens'] = '管理令牌';
 $string['missingcaps'] = '缺少权限';
@@ -203,7 +204,7 @@ $string['updateusersettings'] = '更新';
 $string['uploadfiles'] = '可以上传文件';
 $string['uploadfiles_help'] = '若启用，任何用户可以上传文件到私人文件区域或草稿文件区域。文件空间限额对所有用户有效。';
 $string['userasclients'] = '把用户当做有令牌的客户端';
-$string['userasclientsdescription'] = '下面步骤帮助您面向用户设置 Moodle 的网络服务。这些步骤也帮助您设置建议采用的令牌（安全密钥）认证方法。在这种情况下，用户可以在我的个人资料设置中的安全密钥页面生成他的令牌。';
+$string['userasclientsdescription'] = '下面步骤帮助您为用户设置Moodle的网络服务。这些步骤也帮助您设置建议采用的令牌（安全密钥）认证方法。在这种情况下，用户可以在我的个人资料设置中的安全密钥页面生成他的令牌。';
 $string['usermissingcaps'] = '缺少权限：{$a}';
 $string['usernameorid'] = '用户名 / 用户 id';
 $string['usernameorid_help'] = '输入用户名或用户 ID。';

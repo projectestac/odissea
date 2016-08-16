@@ -1,4 +1,18 @@
-<?php  // $Id: view.php,v 1.3 2011/04/06 15:20:30 davmon Exp $
+<?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 require_once("../../config.php");
 require_once("lib.php");
@@ -16,7 +30,10 @@ if (! $course = $DB->get_record("course", array('id' => $cm->course))) {
 
 $context = context_module::instance($cm->id);
 
-require_login($course->id, true, $cm);
+require_login($course, true, $cm);
+
+$completion = new completion_info($course);
+$completion->set_module_viewed($cm);
 
 $entriesmanager = has_capability('mod/journal:manageentries', $context);
 $canadd = has_capability('mod/journal:addentries', $context);
@@ -36,7 +53,7 @@ if (! $cw = $DB->get_record("course_sections", array("id" => $cm->section))) {
 $journalname = format_string($journal->name, true, array('context' => $context));
 
 // Header
-$PAGE->set_url('/mod/journal/view.php', array('id'=>$id));
+$PAGE->set_url('/mod/journal/view.php', array('id' => $id));
 $PAGE->navbar->add($journalname);
 $PAGE->set_title($journalname);
 $PAGE->set_heading($course->fullname);
@@ -44,7 +61,7 @@ $PAGE->set_heading($course->fullname);
 echo $OUTPUT->header();
 echo $OUTPUT->heading($journalname);
 
-/// Check to see if groups are being used here
+// Check to see if groups are being used here
 $groupmode = groups_get_activity_groupmode($cm);
 $currentgroup = groups_get_activity_group($cm, true);
 groups_print_activity_menu($cm, $CFG->wwwroot . "/mod/journal/view.php?id=$cm->id");
@@ -52,7 +69,7 @@ groups_print_activity_menu($cm, $CFG->wwwroot . "/mod/journal/view.php?id=$cm->i
 if ($entriesmanager) {
     $entrycount = journal_count_entries($journal, $currentgroup);
     echo '<div class="reportlink"><a href="report.php?id='.$cm->id.'">'.
-          get_string('viewallentries','journal', $entrycount).'</a></div>';
+          get_string('viewallentries', 'journal', $entrycount).'</a></div>';
 }
 
 $journal->intro = trim($journal->intro);
@@ -85,7 +102,7 @@ if ($timenow > $timestart) {
     if ($timenow < $timefinish) {
 
         if ($canadd) {
-            echo $OUTPUT->single_button('edit.php?id='.$cm->id, get_string('startoredit','journal'), 'get',
+            echo $OUTPUT->single_button('edit.php?id='.$cm->id, get_string('startoredit', 'journal'), 'get',
                 array("class" => "singlebutton journalstart"));
         }
     }
@@ -93,12 +110,12 @@ if ($timenow > $timestart) {
     // Display entry
     if ($entry = $DB->get_record('journal_entries', array('userid' => $USER->id, 'journal' => $journal->id))) {
         if (empty($entry->text)) {
-            echo '<p align="center"><b>'.get_string('blankentry','journal').'</b></p>';
+            echo '<p align="center"><b>'.get_string('blankentry', 'journal').'</b></p>';
         } else {
-            echo format_text($entry->text, $entry->format, array('context' => $context));
+            echo journal_format_entry_text($entry, $course, $cm);
         }
     } else {
-        echo '<span class="warning">'.get_string('notstarted','journal').'</span>';
+        echo '<span class="warning">'.get_string('notstarted', 'journal').'</span>';
     }
 
     echo $OUTPUT->box_end();
@@ -111,7 +128,7 @@ if ($timenow > $timestart) {
             echo ' ('.get_string('numwords', '', count_words($entry->text)).')';
             echo "</div>";
         }
-        //Added three lines to mark entry as being dirty and needing regrade.
+        // Added three lines to mark entry as being dirty and needing regrade.
         if (!empty($entry->modified) AND !empty($entry->timemarked) AND $entry->modified > $entry->timemarked) {
             echo "<div class=\"lastedit\">".get_string("needsregrade", "journal"). "</div>";
         }

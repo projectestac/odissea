@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,11 +32,15 @@ La description ne sera affichée que si l\'option « Afficher la description su
 $string['displayinline'] = 'Sur la page du cours';
 $string['displaypage'] = 'Sur une page séparée';
 $string['dnduploadmakefolder'] = 'Décompresser les fichiers et créer un dossier';
+$string['downloadfolder'] = 'Télécharger le dossier';
+$string['eventallfilesdownloaded'] = 'Archive ZIP d\'un dossier téléchargée';
 $string['eventfolderupdated'] = 'Dossier modifié';
 $string['folder:addinstance'] = 'Ajouter un dossier';
 $string['foldercontent'] = 'fichiers et sous-dossiers';
 $string['folder:managefiles'] = 'Gérer les fichiers dans le module dossier';
 $string['folder:view'] = 'Accéder au contenu des dossiers';
+$string['maxsizetodownload'] = 'Taille maximale des dossiers à télécharger (Mo)';
+$string['maxsizetodownload_help'] = 'La taille maximale d\'un dossier pouvant être téléchargé sous forme d\'une archive ZIP. Si 0 est indiqué, la taille du dossier est illimitée.';
 $string['modulename'] = 'Dossier';
 $string['modulename_help'] = 'Le module dossier permet à un enseignant d\'afficher plusieurs fichiers dans un dossier, réduisant ainsi le défilement horizontal d\'une page de cours. Un dossier compressé (ZIP) peut être déposé et décompressé pour être affiché, ou un dossier vide peut être créé et des fichiers déposés à l\'intérieur.
 
@@ -50,5 +54,8 @@ $string['page-mod-folder-view'] = 'Page principale du module dossier';
 $string['page-mod-folder-x'] = 'Toute page du module dossier';
 $string['pluginadministration'] = 'Gestion des dossiers';
 $string['pluginname'] = 'Dossier';
+$string['search:activity'] = 'Dossier';
+$string['showdownloadfolder'] = 'Afficher le bouton de téléchargement de dossier';
+$string['showdownloadfolder_help'] = 'Si ce réglage est activé, un bouton sera affiché permettant de télécharger une archive ZIP contenant tous les fichiers d\'un dossier.';
 $string['showexpanded'] = 'Afficher dépliés les sous-dossiers';
 $string['showexpanded_help'] = 'Si ce réglage est activé, les sous-dossiers seront affichés avec leur contenu. Dans le cas contraire, seul leur nom sera affiché.';

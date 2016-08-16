@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML с вложениями';
 $string['format_spreadsheet'] = 'Электронная таблица';
 $string['format_text'] = 'Текст';
 $string['format_video'] = 'Видео';
-$string['hidden'] = 'Скрыто';
 $string['highdbsizethreshold'] = 'Большой размер передаваемой базы данных';
 $string['highdbsizethresholddesc'] = 'Количество записей в базе данных велико, что может привести к большой длительности передачи';
 $string['highfilesizethreshold'] = 'Превышен размер файла';
@@ -107,6 +106,7 @@ $string['instanceismisconfigured'] = 'Экземпляр портфолио не
 $string['instancenotdelete'] = 'Ошибка удаления портфолио';
 $string['instancenotsaved'] = 'Ошибка сохранения портфолио';
 $string['instancesaved'] = 'Портфолио успешно сохранено';
+$string['intro'] = 'Контент, который вы создали (отправленные ответы на задания, сообщения в форумах и записи в блоге и др.) может быть экспортирован в портфолио или загружен с сайта.<br> Любое портфолио, которое вы не хотите использовать, может быть скрыто таким образом, что он не будет показываться как возможный вариант для экспорта контента.';
 $string['invalidaddformat'] = 'Ошибка добавления формата к portfolio_add_button.({$a}) Обязано быть одно из PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Не удается найти это свойство ({$a}) для portfolio_button';
 $string['invalidconfigproperty'] = 'Не удается найти это свойство конфигурации ({$a->property} для {$a->class})';
@@ -170,6 +170,7 @@ $string['save'] = 'Сохранить';
 $string['selectedformat'] = 'Выбранный формат экспорта';
 $string['selectedwait'] = 'Ждать выбранный?';
 $string['selectplugin'] = 'Выберите место назначения';
+$string['showhide'] = 'Показать / скрыть';
 $string['singleinstancenomultiallowed'] = 'Доступен только один экземпляр плагина портфолио, несколько экспортов в сессии не поддерживается.Уже есть активный экспорт в сессии, использующей этот плагин!';
 $string['somepluginsdisabled'] = 'Некоторые плагины портфолио целиком были отключены, потому что они либо неверно сконфигурированы, либо полагаются на что-то другое:';
 $string['sure'] = 'Вы уверены, что хотите удалить«{$a}»? Это действие не может быть отменено.';

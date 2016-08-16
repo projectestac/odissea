@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['framesize'] = 'Markoaren altuera';
 $string['legacyfiles'] = 'Ikastaro-fitxategi zaharraren migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
+$string['modifieddate'] = '{$a} aldatu da';
 $string['modulename'] = 'Fitxategia';
 $string['modulename_help'] = 'Fitxategia baliabideari esker irakasleak fitxategi bat ikastaroko baliabide gisa eskuragarri jar  dezakegu. Posiblea denean fitxategia ikastaroaren interfazearen barruan erakutsiko da; bestela ikasleei fitxategia jaisteko mezu bat agertuko zaie. Fitxategiak fitxategi lagungarriak izan ditzake,  irudiak edo Flash objektuak txertaturik dituzten HTML orriak adibidez.
 
@@ -90,10 +91,16 @@ $string['printintro'] = 'Baliabidearen deskribapena erakutsi';
 $string['printintroexplain'] = 'Erakutsi baliabidearen deskribapena edukiaren azpian? Mota batzuek agian ez dute deskribapena erakutsiko, nahiz aukera hori ezarrita egon.';
 $string['resource:addinstance'] = 'Gehitu beste baliabide bat';
 $string['resourcecontent'] = 'Fitxategiak eta azpikarpetak';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Esportatu baliabidea';
 $string['resource:view'] = 'Ikusi baliabidea';
+$string['search:activity'] = 'Fitxategia';
 $string['selectmainfile'] = 'Aukeratu mesedez fitxategi nagusia fitxategiaren izenaren ondoan dagoen ikonoan klik eginda.';
+$string['showdate'] = 'Erakutsi igotako/aldatutako data';
+$string['showdate_desc'] = 'Erakutsi igotako/aldatutako data ikastaroaren orrian?';
 $string['showsize'] = 'Erakutsi tamaina';
 $string['showsize_desc'] = 'Fitxategiaren tamaina ikastaroaren orrian erakutsi?';
 $string['showsize_help'] = 'Fitxategiaren tamaina erakusten du, \'3,1MB\' adibidez, fitxategiaren estekaren ondoan.
@@ -106,3 +113,4 @@ $string['showtype_help'] = 'Fitxategi-mota erakusten du, \'PDF dokumentua\' adib
 Baliabidean fitxategi bat baino gehiago badaude, fitxategi nagusiarena erakutsiko da.
 
 Sistemak fitxategi-mota ezagutzen ez badu, ez du erakutsiko.';
+$string['uploadeddate'] = '{$a} igo da';

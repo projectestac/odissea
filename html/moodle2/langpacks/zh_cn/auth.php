@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = '可用的认证插件';
+$string['allowaccountssameemail'] = '允许账户使用相同的邮箱地址';
+$string['allowaccountssameemail_desc'] = '如果启用此项，可允许超过一个账户共用一个邮箱地址。这可能会产生安全或隐私方面的问题，例如密码找回确认邮件等。';
 $string['alternatelogin'] = '如果您在此输入一个URL，它将被用于本站的登录。这个页面上应当有一个表单，表单的 action 一项应设定为<strong>“{$a}”</strong>，并且返回的字段中应当有 <strong>username</strong> 和 <strong>password</strong>。<br />小心，不要输入错误的URL，否则您可能会被锁在站点之外。<br />要使用缺省的登录页面请为此设置保留空白。';
 $string['alternateloginurl'] = '换用其它登录链接';
 $string['auth_changepasswordhelp'] = '修改密码帮助';
@@ -43,7 +45,7 @@ $string['auth_fieldlocks_help'] = '<p>您可以锁定指定的用户数据字段
 <p>如果想要避免这个问题，可以考虑将锁定模式设定为“如果空则不锁定”。</p>';
 $string['authinstructions'] = '此处留空，登录页面会显示缺省的登录说明。如果想自定义登录说明，就在此输入。';
 $string['auth_invalidnewemailkey'] = '错误：URL 不正确，请完整拷贝后重试。';
-$string['authloginviaemail'] = '允许无效的电子邮件地址';
+$string['authloginviaemail'] = '允许使用电子邮件登录';
 $string['authloginviaemail_desc'] = '允许用户使用用户名和电子邮件地址（如果唯一）进行网站登录。';
 $string['auth_multiplehosts'] = '可以指定多个主机名或地址（如 host1.com;host2.com;host3.com 或 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx）';
 $string['auth_notconfigured'] = '认证方法{$a}尚未配置。';
@@ -55,7 +57,9 @@ $string['auth_remove_keep'] = '保存';
 $string['auth_remove_suspend'] = '延迟';
 $string['auth_remove_user'] = '指定在用户帐号在外部被删除时，内部用户帐号在同步的时候允许做什么。只有延迟用户帐号在外部数据中出现时才会被自动激活。';
 $string['auth_remove_user_key'] = '移除用户';
-$string['auth_sync_script'] = 'Cron 同步脚本';
+$string['auth_sync_script'] = '用户帐户同步化';
+$string['auth_sync_suspended'] = '若启用，数据库会根据本地用户帐号的休学状况加以更新';
+$string['auth_sync_suspended_key'] = '同步本地用户休学状况';
 $string['auth_updatelocal'] = '更新本地数据';
 $string['auth_updatelocal_expl'] = '<p><b>更新本地数据:</b> 如果开启，则用户每次登录或有用户同步时字段将会被更新。设定为本地更新的字段应当被锁住。</p>';
 $string['auth_updateremote'] = '更新外部数据';
@@ -66,11 +70,11 @@ $string['auth_user_creation'] = '新的(匿名的)用户可以在外部身份认
 $string['auth_usernameexists'] = '选中的用户名已经存在。请选择一个新的。';
 $string['auto_add_remote_users'] = '自动添加远程用户';
 $string['changepassword'] = '更改密码 URL';
-$string['changepasswordhelp'] = '在这里指定一个位置，用户在忘记了用户名或密码后，可以在那里重新获得或更改。它将以一个按钮的形式显示在登录页面和用户页面。如果留空不填，就不会有按钮出现。';
+$string['changepasswordhelp'] = '在这里指定一个网址，用户在忘记了用户名或密码后，可以在这里重新获得或更改。它将以一个按钮的形式显示在登录页面和用户页面。如果留空不填，就不会有按钮出现。';
 $string['chooseauthmethod'] = '选择一个身份认证方法：';
 $string['chooseauthmethod_help'] = '此设置决定用户登录时的验证方式。只可以选择启用了的验证插件，否则用户就无法继续登录了。想禁止用户登录，请选择“不要登录”。';
 $string['createpassword'] = '生成密码并通知用户';
-$string['createpasswordifneeded'] = '如果需要则创建密码';
+$string['createpasswordifneeded'] = '如果需要则创建密码并以邮件形式发送给用户';
 $string['emailchangecancel'] = '取消 email 变更';
 $string['emailchangepending'] = '变更进行中。访问向 {$a->preference_newemail} 发送的链接。';
 $string['emailnowexists'] = '你尝试输入到个人资料里的email地址已经被分配给别人了。所以您的email地址变更请求现予取消，但您可以再次尝试使用不同的地址。';
@@ -88,8 +92,9 @@ $string['errormaxconsecutiveidentchars'] = '密码必须包含最多{$a}个连�
 $string['errorminpassworddigits'] = '密码中至少要有 {$a} 个数字。';
 $string['errorminpasswordlength'] = '密码中至少要有 {$a} 个字符。';
 $string['errorminpasswordlower'] = '密码中至少要有 {$a} 个小写字母。';
-$string['errorminpasswordnonalphanum'] = '密码中至少要有 {$a} 个非字母、数字字符。';
+$string['errorminpasswordnonalphanum'] = '密码至少要有 {$a} 位非字母、数字字符(!@#$%^&)。';
 $string['errorminpasswordupper'] = '密码中至少要有 {$a} 个大写字母。';
+$string['errorpasswordreused'] = '此密码曾被你用过，不可再次使用。';
 $string['errorpasswordupdate'] = '更新密码错误，密码没有更新。';
 $string['eventuserloggedin'] = '用户已登录';
 $string['eventuserloggedinas'] = '使用另外一个用户名进行登录';
@@ -108,11 +113,14 @@ $string['infilefield'] = '字段必需存在于文件中';
 $string['informminpassworddigits'] = '至少{$a}个数字';
 $string['informminpasswordlength'] = '至少{$a}个字符';
 $string['informminpasswordlower'] = '至少{$a}个小写字母';
-$string['informminpasswordnonalphanum'] = '至少{$a}个特殊字符';
+$string['informminpasswordnonalphanum'] = '至少要有{$a}个特殊字符(!@#$%^&)';
+$string['informminpasswordreuselimit'] = '密码能在 {$a} 次更换后再次使用';
 $string['informminpasswordupper'] = '至少{$a}个大写字母';
 $string['informpasswordpolicy'] = '密码必须包含{$a}';
 $string['instructions'] = '使用说明';
 $string['internal'] = '内部的';
+$string['limitconcurrentlogins'] = '限制同时登录';
+$string['limitconcurrentlogins_desc'] = '启用浏览器同时登录阀值，则用户登录会受到限制。到达限制值，则最早的进程会被中断，请注意用户可能会丢失未保存的信息。这个设置不适用于单点登录（SSO）认证插件。';
 $string['locked'] = '锁定';
 $string['md5'] = 'MD5 加密';
 $string['nopasswordchange'] = '密码不能被更新';
@@ -130,6 +138,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = '图片验证码用来防止网站被自动程序滥用。只需在输入框中按顺序输入这些词，用一个空格分隔。
 
 如果您不确定这些词是什么，可以尝试再获得一个图片验证码或播放声音验证码。';
+$string['security_question'] = '安全问题';
 $string['selfregistration'] = '自助注册';
 $string['selfregistration_help'] = '如果选中一个身份认证插件，比如基于email的自助注册，那么用户就可以自己注册并创建帐户。这可能导致一些人为了在讨论区、博客等发送垃圾信息而自己建立帐号。为了避免这种风险，自助注册应禁用或仅限<em>允许的email域名</em>。
 ';
@@ -150,3 +159,5 @@ $string['update_onlogin'] = '每次登录时';
 $string['update_onupdate'] = '更新时';
 $string['user_activatenotsupportusertype'] = '认证：ldap的user_activate()不支持所选的用户类型：{$a}';
 $string['user_disablenotsupportusertype'] = '认证：ldap的user_disable()不支持所选的用户类型（至少现在还不支持）';
+$string['username'] = '用户名';
+$string['username_help'] = '请注意，这些认证插件不允许你更改用户名称';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = '此设置决定编辑wiki页面时使用的缺�
 * HTML - 会提供HTML编辑器
 * Creole - 一个常用的wiki标记语言，会提供一个小型编辑工具条
 * Nwiki - Mediawiki风格的标记语言，在Nwiki模块中使用';
+$string['deleteallpages'] = '删除所有wiki页面';
 $string['deletecomment'] = '删除评论中';
 $string['deletecommentcheck'] = '删除评论';
 $string['deletecommentcheckfull'] = '您确定要删除此评论吗？';
@@ -226,12 +227,15 @@ $string['return'] = '返回';
 $string['save'] = '保存';
 $string['saving'] = '正在保存wiki页面';
 $string['savingerror'] = '保存出错';
+$string['search:activity'] = '维基 - 活动信息';
+$string['search:collaborative_page'] = '维基 - 协作页面';
 $string['searchcontent'] = '在页面内容中搜索';
 $string['searchresult'] = '搜索结果：';
 $string['searchterms'] = '搜索词';
 $string['searchwikis'] = '搜索wiki';
 $string['special'] = '特例';
 $string['tableofcontents'] = '目录';
+$string['tagarea_wiki_pages'] = '维基页面';
 $string['tagsdeleted'] = 'Wiki标签已被删除';
 $string['tagtitle'] = '查看 "{$a}" 标签';
 $string['teacherrating'] = '教师评分';

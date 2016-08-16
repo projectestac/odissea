@@ -30,7 +30,6 @@ class core_messagelib_testcase extends advanced_testcase {
     public function test_message_provider_disabled() {
         $this->resetAfterTest();
         $this->preventResetByRollback();
-        unset_config('noemailever');
 
         // Disable instantmessage provider.
         $disableprovidersetting = 'moodle_instantmessage_disable';
@@ -380,8 +379,6 @@ class core_messagelib_testcase extends advanced_testcase {
         $this->preventResetByRollback();
         $this->resetAfterTest();
 
-        unset_config('noemailever');
-
         $user1 = $this->getDataGenerator()->create_user();
         $user2 = $this->getDataGenerator()->create_user();
 
@@ -715,7 +712,6 @@ class core_messagelib_testcase extends advanced_testcase {
 
         $this->resetAfterTest();
         $this->preventResetByRollback();
-        set_config('noemailever', 1);
 
         $user1 = $this->getDataGenerator()->create_user();
         $user2 = $this->getDataGenerator()->create_user();
@@ -732,24 +728,30 @@ class core_messagelib_testcase extends advanced_testcase {
         $message->smallmessage      = 'small message';
         $message->notification      = '0';
 
+        $mailsink = $this->redirectEmails();
+
+        // Sending outside of a transaction is fine.
         message_send($message);
-        $this->assertDebuggingCalled('Not sending email due to $CFG->noemailever config setting');
+        $this->assertEquals(1, $mailsink->count());
 
         $transaction1 = $DB->start_delegated_transaction();
 
+        $mailsink->clear();
         message_send($message);
-        $this->assertDebuggingNotCalled();
+        $this->assertEquals(0, $mailsink->count());
 
         $transaction2 = $DB->start_delegated_transaction();
 
+        $mailsink->clear();
         message_send($message);
-        $this->assertDebuggingNotCalled();
+        $this->assertEquals(0, $mailsink->count());
 
         try {
             $transaction2->rollback(new Exception('x'));
             $this->fail('Expecting exception');
         } catch (Exception $e) {}
         $this->assertDebuggingNotCalled();
+        $this->assertEquals(0, $mailsink->count());
 
         $this->assertTrue($DB->is_transaction_started());
 
@@ -758,11 +760,12 @@ class core_messagelib_testcase extends advanced_testcase {
             $this->fail('Expecting exception');
         } catch (Exception $e) {}
         $this->assertDebuggingNotCalled();
+        $this->assertEquals(0, $mailsink->count());
 
         $this->assertFalse($DB->is_transaction_started());
 
         message_send($message);
-        $this->assertDebuggingCalled('Not sending email due to $CFG->noemailever config setting');
+        $this->assertEquals(1, $mailsink->count());
     }
 
     public function test_forced_rollback() {

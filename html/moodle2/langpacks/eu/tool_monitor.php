@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,6 @@ $string['monitorenabled'] = 'Ekitaldi-kontrola une honetan gaituta dago.';
 $string['monitor:managerules'] = 'Kudeatu ekitaldi-kontrolerako arauak';
 $string['monitor:managetool'] = 'Gaitu/desgaitu ekitaldi-kontrola';
 $string['monitor:subscribe'] = 'Harpidetu  ekitaldi-kontrolerako arauetara';
-$string['nopermission'] = 'Baimenik ez';
 $string['norules'] = 'Ez dago ekitaldi-kontrolerako araurik';
 $string['pluginname'] = 'Ekitaldi-monitorea';
 $string['ruleareyousure'] = 'Ziur al zaude "{$a}" araua ezabatu nahi duzula?';
@@ -69,6 +68,7 @@ $string['rulecopysuccess'] = 'Araua ondo bikoiztu da';
 $string['ruledeletesuccess'] = 'Araua ondo ezabatu da';
 $string['rulehelp'] = 'Arauaren xehetasunak';
 $string['rulename'] = 'Arauaren izena';
+$string['rulenopermission'] = 'Ez duzu baimenik inongo ekitalditara harpidetzeko.';
 $string['rulescansubscribe'] = 'Arau hauetarako harpidetza egin dezakezu';
 $string['selectacourse'] = 'Aukeratu ikastaroa';
 $string['subcreatesuccess'] = 'Harpidetza ondo sortu da';

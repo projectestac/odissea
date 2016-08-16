@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_url', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'datafield_url', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   datafield_url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'URL';
+$string['pluginname'] = '网页地址';

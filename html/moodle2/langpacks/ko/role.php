@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'role', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,13 +84,9 @@ $string['badges:manageownbadges'] = '획득한 뱃지 보기 및 관리';
 $string['badges:viewotherbadges'] = '다른 사용자 개인정보에서 공개된 뱃지 보기';
 $string['block:edit'] = '블록 설정';
 $string['block:view'] = '블록 보기';
-$string['blog:associatecourse'] = '이 능력은 사용되지 않으며 아무것도 하지 않습니다.';
-$string['blog:associatemodule'] = '이 능력은 사용되지 않으며 아무것도 하지 않습니다.';
 $string['blog:create'] = '블로그 항목 생성';
 $string['blog:manageentries'] = '입력내용 관리';
 $string['blog:manageexternal'] = '외부 블로그 편집 및 관리';
-$string['blog:manageofficialtags'] = '태그 관리';
-$string['blog:managepersonaltags'] = '개인태그 관리';
 $string['blog:search'] = '블로그 검색';
 $string['blog:view'] = '블로그 보기';
 $string['blog:viewdrafts'] = '블로그 초안 보기';
@@ -221,7 +217,6 @@ $string['grade:unlock'] = '성적 혹은 항목 잠금해제';
 $string['grade:view'] = '내 성적 보기';
 $string['grade:viewall'] = '다른 사람 성적 보기';
 $string['grade:viewhidden'] = '숨겨진 성적 보기';
-$string['hidden'] = '비공개';
 $string['highlightedcellsshowdefault'] = '아래 표의 강조된 칸은 \'정규 역할 유형\'에 기반한 표준 권한을 보여줍니다.';
 $string['highlightedcellsshowinherit'] = '아래 표의 강조된 칸은 상속될 수 있는 권한을 보여줍니다. 실제 변경하고자 하는 권한과는 별개로, 모든 것을 상속으로 두어야 합니다.';
 $string['inactiveformorethan'] = '{$a->timeperiod} 이상 비활동';

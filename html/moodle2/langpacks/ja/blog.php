@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'この {$a->type} に関するブログ';
 $string['blogaboutthiscourse'] = 'このコースに関するエントリを追加する';
 $string['blogaboutthismodule'] = 'この {$a} に関するエントリを追加する';
 $string['blogadministration'] = 'ブログ管理';
-$string['blogdeleteconfirm'] = 'このブログエントリを削除してもよろしいですか?';
+$string['blogdeleteconfirm'] = 'ブログエントリ「 {$a} 」を削除してもよろしいですか?';
 $string['blogdisable'] = 'ブログは無効にされています!';
 $string['blogentries'] = 'ブログエントリ';
 $string['blogentriesabout'] = '{$a} に関するブログエントリ';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'コースブログは有効にされていませ
 $string['courseblogs'] = 'ユーザはコースを共有しているユーザのブログのみ読むことができる';
 $string['deleteblogassociations'] = 'ブログ関連付けを削除する';
 $string['deleteblogassociations_help'] = '有効にした場合、今後ブログエントリはこのコース、コース活動またはリソースに関連付けられません。ブログエントリ自体は削除されません。';
+$string['deleteentry'] = 'エントリを削除する';
 $string['deleteexternalblog'] = 'この外部ブログの登録を解除する';
 $string['deleteotagswarn'] = '本当にこれらのタグをすべてのブログ記事およびシステムから削除してもよろしいですか?';
 $string['description'] = '説明';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = '無効なグループID';
 $string['invalidurl'] = 'このURLにはアクセスできません。';
 $string['linktooriginalentry'] = 'オリジナルのブログエントリにリンクする';
 $string['maxexternalblogsperuser'] = 'ユーザあたりの外部ブログ最大数';
+$string['myprofileuserblogs'] = 'すべてのブログエントリを表示する';
 $string['name'] = '名称';
 $string['name_help'] = 'あなたの外部ブログの説明的な名称を入力してください (空白の場合、あなたの外部ブログのタイトルが使用されます)。';
 $string['noentriesyet'] = '表示できるエントリはありません。';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'すべてのブログページ';
 $string['pagesize'] = '1ページあたりのブログエントリ数';
 $string['permalink'] = 'パーマリンク';
 $string['personalblogs'] = 'ユーザは自分のブログのみ閲覧できる';
-$string['preferences'] = 'プリファレンス';
+$string['preferences'] = 'ブログプリファレンス';
 $string['publishto'] = '公開先:';
 $string['publishtocourse'] = 'あなたとコースを共有しているユーザ';
 $string['publishtocourseassoc'] = '関連コースのメンバー';
@@ -151,6 +153,7 @@ $string['searchterm'] = '検索: {$a}';
 $string['settingsupdatederror'] = 'エラーが発生したため、ブログプリファレンス設定は更新されませんでした。';
 $string['siteblog'] = 'サイトブログ: {$a}';
 $string['siteblogdisable'] = 'サイトブログは有効にされていません。';
+$string['siteblogheading'] = 'サイトブログ';
 $string['siteblogs'] = 'すべてのサイトユーザはすべてのブログを読むことができる';
 $string['tagdatelastused'] = 'タグが最後に使用された日付';
 $string['tagparam'] = 'タグ: {$a}';

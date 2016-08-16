@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,3 +46,4 @@ Les étiquettes peuvent être utilisées pour :
 $string['modulenameplural'] = 'Étiquettes';
 $string['pluginadministration'] = 'Administration étiquette';
 $string['pluginname'] = 'Étiquette';
+$string['search:activity'] = 'Étiquette';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'logstore_database', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   logstore_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['databaseschema'] = 'Datenbank-Schema';
 $string['databasesettings'] = 'Datenbank-Einstellungen';
 $string['databasesettings_help'] = 'Verbindungsdetails für die externe Logdatenbank: {$a}';
 $string['databasetable'] = 'Datenbank-Tabelle';
-$string['databasetable_help'] = 'Name der Tabelle in der die Logs gespeichert werden. Die Tabelle sollte die gleiche Struktur haben wie die von logstore_standard (mdl_logstore_standard_log).';
+$string['databasetable_help'] = 'Name der Tabelle in der die Logs gespeichert werden. Die Tabelle sollte die gleiche Struktur haben wie die von \'Logdaten Standard\' (mdl_logstore_standard_log).';
 $string['filters'] = 'Logdaten filtern';
 $string['filters_help'] = 'Diese Option nimmt Aktivitäten aus, die nicht aufgezeichnet werden sollen.';
 $string['includeactions'] = 'Aktivitäten mit diesen Typen einbeziehen';

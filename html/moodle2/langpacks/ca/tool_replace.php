@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_replace', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cannotfit'] = 'La substitució és més llarga que l\'original i no està permès l\'escurçament. No es pot continuar.';
 $string['disclaimer'] = 'Entenc els riscos d\'aquesta operació:';
 $string['doit'] = 'Sí, fes-ho!';
 $string['excludedtables'] = 'La substitució del text no s\'aplica a diverses taules, incloent les de configuració, registres, esdeveniments, i taules de sessions.';
+$string['invalidcharacter'] = 'S\'han trobat caràcters no vàlids al text de cerca o reemplaçament.';
 $string['notifyfinished'] = '...finalitzat';
 $string['notifyrebuilding'] = 'S\'està reconstruint la memòria cau del curs...';
 $string['notimplemented'] = 'Aquesta característica no està implementada en el controlador de la vostra base de dades.';

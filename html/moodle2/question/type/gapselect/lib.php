@@ -32,4 +32,3 @@ function qtype_gapselect_pluginfile($course, $cm, $context, $filearea, $args, $f
     require_once($CFG->libdir . '/questionlib.php');
     question_pluginfile($course, $context, 'qtype_gapselect', $filearea, $args, $forcedownload, $options);
 }
-

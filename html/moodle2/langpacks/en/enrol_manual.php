@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Are you sure you want to delete these u
 $string['defaultperiod'] = 'Default enrolment duration';
 $string['defaultperiod_desc'] = 'Default length of time that the enrolment is valid. If set to zero, the enrolment duration will be unlimited by default.';
 $string['defaultperiod_help'] = 'Default length of time that the enrolment is valid, starting with the moment the user is enrolled. If disabled, the enrolment duration will be unlimited by default.';
+$string['defaultstart'] = 'Default enrolment start';
 $string['deleteselectedusers'] = 'Delete selected user enrolments';
 $string['editselectedusers'] = 'Edit selected user enrolments';
 $string['enrolledincourserole'] = 'Enrolled in "{$a->course}" as "{$a->role}"';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Enrolment expiry notification';
 $string['manual:config'] = 'Configure manual enrol instances';
 $string['manual:enrol'] = 'Enrol users';
 $string['manual:manage'] = 'Manage user enrolments';
+$string['manualpluginnotinstalled'] = 'The "Manual" plugin has not yet been installed';
 $string['manual:unenrol'] = 'Unenrol users from the course';
 $string['manual:unenrolself'] = 'Unenrol self from the course';
 $string['messageprovider:expiry_notification'] = 'Manual enrolment expiry notifications';
+$string['now'] = 'Now';
 $string['pluginname'] = 'Manual enrolments';
 $string['pluginname_desc'] = 'The manual enrolments plugin allows users to be enrolled manually via a link in the course administration settings, by a user with appropriate permissions such as a teacher. The plugin should normally be enabled, since certain other enrolment plugins, such as self enrolment, require it.';
 $string['status'] = 'Enable manual enrolments';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['cnfshowgroup'] = 'グループ区切りを表示するかどうか指�
 $string['cnfsortkey'] = 'デフォルトの並べ替えキーを選択してください。';
 $string['cnfsortorder'] = 'デフォルトの並べ替え順を選択してください。';
 $string['cnfstudentcanpost'] = '学生のエントリ投稿をデフォルトで許可します。';
+$string['cnftabs'] = 'この用語集フォーマットに表示されるタブを選択してください。';
 $string['comment'] = 'コメント';
 $string['commentdeleted'] = 'コメントが削除されました。';
 $string['comments'] = 'コメント';
@@ -272,6 +273,8 @@ $string['rssarticles_help'] = 'ここではRSSフィードに含まれる記事�
 $string['rsssubscriberss'] = '{$a} の用語のRSSフィードを表示する';
 $string['rsstype'] = 'この活動のRSSフィード';
 $string['rsstype_help'] = 'この活動のRSSフィードを有効にするにはフィードに含まれるのが著者ありの用語であるかまたは著者なしの用語であるか選択してください。';
+$string['search:activity'] = '用語集 - 活動情報';
+$string['search:entry'] = '用語集 - エントリ';
 $string['searchindefinition'] = '全文検索する';
 $string['secondaryglossary'] = 'サブ用語集';
 $string['showall'] = 'すべてのリンクを表示する';
@@ -290,6 +293,7 @@ $string['studentcanpost'] = '学生のエントリ追加を許可する';
 $string['totalentries'] = 'エントリ合計';
 $string['usedynalink'] = 'エントリを自動的にリンクする';
 $string['usedynalink_help'] = '管理者によって用語集自動リンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはエントリをコース全体で出現した用語またはフレーズに自動リンクするためのオプションを含みます。';
+$string['visibletabs'] = '表示タブ';
 $string['waitingapproval'] = '承認待ち';
 $string['warningstudentcapost'] = '(用語集がメイン用語集ではない場合に適用)';
 $string['withauthor'] = '用語 (著者あり)';

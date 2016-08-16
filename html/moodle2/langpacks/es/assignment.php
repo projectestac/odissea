@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,6 @@ $string['modulenameplural'] = 'Tareas 2.2 (Deshabilitado)';
 $string['page-mod-assignment-submissions'] = 'Página de entregas del módulo tareas';
 $string['page-mod-assignment-view'] = 'Página principal del módulo tareas';
 $string['page-mod-assignment-x'] = 'Cualquier página del módulo tarea';
-$string['pendingupgrades_message_content'] = 'Como parte de la actualización a Moodle 2.7 el módulo Tarea 2.2 ha sido desactivado. Las copias de seguridad de tareas obsoletas se restaurarán automáticamente como tareas del tipo más reciente. Todas las demás instancias de actividades obsoletas Tarea 2.2 deben ser actualizadas usando la herramienta de actualización de tareas {$a->docsurl}. Hay {$a->count} instancias de tareas obsoletas que requieren actualización. Los usuarios no podrán acceder al contenido de dichas tareas hasta que hayan sido actualizadas.';
-$string['pendingupgrades_message_small'] = 'Esta extensión ha sido desactivada. Todas las tareas restantes deben ser actualizadas al nuevo módulo de tareas usando la herramienta de actualización de tareas.';
-$string['pendingupgrades_message_subject'] = 'Información importante relativa a Tarea 2.2';
 $string['pluginadministration'] = 'Administración de Tarea 2.2 (Desactivada)';
 $string['pluginname'] = 'Tarea 2.2 (Desactivada)';
 $string['upgradenotification'] = 'Esta actividad se basa en un módulo de tareas antiguo';

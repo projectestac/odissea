@@ -1,18 +1,18 @@
 <?php
-// This file is part of Stack - http://stack.bham.ac.uk/
+// This file is part of Moodle - http://moodle.org/
 //
-// Stack is free software: you can redistribute it and/or modify
+// Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// Stack is distributed in the hope that it will be useful,
+// Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Stack.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
  * Behat steps definitions for drag and drop markers.
@@ -71,9 +71,8 @@ class behat_qtype_ddmarker extends behat_base {
         // DOM node so that its centre is over the centre of anothe DOM node.
         // Therefore to make it drag to the specified place, we have to add
         // a target div.
-        $style = 
         $session = $this->getSession();
-        $session->evaluateScript("
+        $session->executeScript("
                 (function() {
                     if (document.getElementById('target-{$x}-{$y}')) {
                         return;
@@ -84,12 +83,13 @@ class behat_qtype_ddmarker extends behat_base {
                     var container = document.querySelector('.droparea');
                     container.style.setProperty('position', 'relative');
                     container.insertBefore(target, image);
-                    var xadjusted = {$x} + (container.offsetWidth - image.offsetWidth) / 2
+                    var xadjusted = {$x} + (container.offsetWidth - image.offsetWidth) / 2;
+                    var yadjusted = {$y} + (container.offsetHeight - image.offsetHeight) / 2;
                     target.style.setProperty('position', 'absolute');
                     target.style.setProperty('left', xadjusted + 'px');
-                    target.style.setProperty('top', '{$y}px');
-                    target.style.setProperty('width', '0');
-                    target.style.setProperty('height', '0');
+                    target.style.setProperty('top', yadjusted + 'px');
+                    target.style.setProperty('width', '1px');
+                    target.style.setProperty('height', '1px');
                 }())");
 
         $generalcontext = behat_context_helper::get('behat_general');

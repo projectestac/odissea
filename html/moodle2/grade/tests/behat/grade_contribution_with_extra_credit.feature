@@ -19,10 +19,10 @@ Feature: Extra credit contributions are normalised when going out of bounds
     And I log in as "admin"
     And I set the following administration settings values:
       | grade_aggregations_visible | Simple weighted mean of grades,Mean of grades (with extra credits),Natural |
-    And I am on homepage
+    And I am on site homepage
     And I follow "Course 1"
-    And I follow "Grades"
-    And I navigate to "Categories and items" node in "Grade administration > Setup"
+    And I navigate to "Grades" node in "Course administration"
+    And I navigate to "Gradebook setup" node in "Grade administration > Setup"
     And I press "Add grade item"
     And I set the following fields to these values:
       | Item name | Manual item 1 |
@@ -47,7 +47,7 @@ Feature: Extra credit contributions are normalised when going out of bounds
     And I log out
     And I log in as "teacher1"
     And I follow "Course 1"
-    And I follow "Grades"
+    And I navigate to "Grades" node in "Course administration"
     And I turn editing mode on
     And I give the grade "80.00" to the user "Student 1" for the grade item "Manual item 1"
     And I give the grade "10.00" to the user "Student 1" for the grade item "Manual item 2"
@@ -56,7 +56,7 @@ Feature: Extra credit contributions are normalised when going out of bounds
     And I press "Save changes"
 
   Scenario Outline: The contribution of extra credit items is normalised
-    Given I set the field "Grade report" to "Categories and items"
+    Given I set the field "Grade report" to "Gradebook setup"
     When I set the following settings for grade item "Course 1":
       | Aggregation | <aggregation> |
     And I set the following settings for grade item "Manual item 2":

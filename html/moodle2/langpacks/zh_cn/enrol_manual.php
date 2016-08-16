@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,15 +35,33 @@ $string['confirmbulkdeleteenrolment'] = '你确信要删除该用户的选课吗
 $string['defaultperiod'] = '缺省保持选课时长';
 $string['defaultperiod_desc'] = '选课有效的缺省时间长度（单位秒）。如果此时间设置为零，选课持续时间将会按默认不加以限制。';
 $string['defaultperiod_help'] = '默认的用户身份有效期长度，从用户自行加入课程之日算起。禁止此选项意味着默认用户身份永久有效。';
+$string['defaultstart'] = '默认选课开始';
 $string['deleteselectedusers'] = '删除选中用户的选课记录';
 $string['editselectedusers'] = '编辑选中用户的选课';
 $string['enrolledincourserole'] = '以"{$a->role}"身份选修 "{$a->course}"。';
 $string['enrolusers'] = '加入用户';
+$string['expiredaction'] = '选课终止指令';
+$string['expiredaction_help'] = '选择当用户选课之后要执行的操作。注意：当课程结束之后，某些用户资料和设置会被清除。';
+$string['expirymessageenrolledbody'] = '亲爱的{$a->user}，
+
+通知您于{$a->course}课程的选课将于{$a->timeend}到期。
+
+如你需要协助，请联系{$a->enroller}';
+$string['expirymessageenrolledsubject'] = '选课截止通知';
+$string['expirymessageenrollerbody'] = '以下用户对{$a->course}的选课将于{$a->threshold}后到期：
+
+{$a->users}
+
+如需延期，请至{$a->extendurl}';
+$string['expirymessageenrollersubject'] = '选课截止通知';
 $string['manual:config'] = '配置人工选课实例';
 $string['manual:enrol'] = '加入用户';
 $string['manual:manage'] = '管理用户选课';
+$string['manualpluginnotinstalled'] = '“人工选课”插件没有安装';
 $string['manual:unenrol'] = '撤销用户的选课';
 $string['manual:unenrolself'] = '撤销自己的选课';
+$string['messageprovider:expiry_notification'] = '人工选课截止通知';
+$string['now'] = '现在';
 $string['pluginname'] = '人工选课';
 $string['pluginname_desc'] = '通过人工选课插件，有权限的用户（例如教师）可以在课程管理设置中的一个链接里手工为其它用户选课。此插件通常都是启用的，因为有其它插件（比如自助选课）需要调用它。';
 $string['status'] = '启用人工选课';

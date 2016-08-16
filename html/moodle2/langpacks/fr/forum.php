@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'forum', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Vous ne pouvez pas supprimer ce message !';
 $string['cannoteditposts'] = 'Vous ne pouvez pas modifier les messages d\'autres participants !';
 $string['cannotfinddiscussion'] = 'Impossible de trouver cette discussion dans ce forum';
 $string['cannotfindfirstpost'] = 'Impossible de trouver le premier message de ce forum';
-$string['cannotfindorcreateforum'] = 'Impossible de trouver ou de créer le forum de nouvelles principal pour ce site';
+$string['cannotfindorcreateforum'] = 'Impossible de trouver ou de créer le forum des annonces principal pour ce site';
 $string['cannotfindparentpost'] = 'Impossible de trouver le parent ultime du message {$a}';
 $string['cannotmovefromsingleforum'] = 'Impossible de déplacer une discussion depuis un forum avec une seule discussion';
 $string['cannotmovenotvisible'] = 'Forum non visible';
@@ -96,13 +96,15 @@ $string['configcleanreadtime'] = 'L\'heure à laquelle nettoyer les anciens mess
 $string['configdigestmailtime'] = 'Les utilisateurs désirant recevoir un courriel contenant tous les messages des forums le recevront quotidiennement. Ce réglage détermine l\'heure de la journée à laquelle le courriel sera envoyé (la tâche cron s\'exécutant immédiatement après cette heure enverra le message).';
 $string['configdisplaymode'] = 'Mode d\'affichage par défaut des discussions';
 $string['configenablerssfeeds'] = 'Cette option permet l\'activation des flux RSS pour tous les forums. Il est en outre nécessaire d\'activer manuellement les flux RSS dans les réglages de chaque forum.';
-$string['configenabletimedposts'] = 'Cette option permet l\'activation des périodes d\'affichage lors de l\'écriture de nouvelles discussions dans les forums (fonctionnalité expérimentale)';
+$string['configenabletimedposts'] = 'Si ce réglage est activé, il est possible de définir des périodes d\'affichage lors de l\'écriture de nouvelles discussions dans les forums.';
 $string['configlongpost'] = 'Tout message dépassant cette longueur (nombre de caractères, code HTML non compris) est considéré comme long message. L\'affichage des messages sur la page d\'accueil du site, sur la page des cours en format informel et dans le profil des utilisateurs est tronqué à un endroit adéquat, entre les valeurs forum_shortpost et forum_longpost.';
 $string['configmanydiscussions'] = 'Nombre maximal de discussions affichées sur une page';
 $string['configmaxattachments'] = 'Nombre maximal d\'annexes permises par message.';
 $string['configmaxbytes'] = 'Taille maximale des annexes des forums (cette taille dépend par ailleurs des limites définies au niveau du cours et d\'autres réglages locaux)';
 $string['configoldpostdays'] = 'Nombre de jours après lequel tout message est considéré comme lu.';
 $string['configreplytouser'] = 'Lorsqu\'un message est envoyé par courriel, doit-il contenir l\'adresse de courriel de son auteur, afin que le destinataire puisse l\'atteindre personnellement ? Même lorsque cette option est activée, les utilisateurs peuvent choisir dans leur profil de garder leur adresse secrète.';
+$string['configrssarticlesdefault'] = 'Si les flux RSS sont activés, ce réglage détermine le nombre d\'articles par défaut (discussions ou messages).';
+$string['configrsstypedefault'] = 'Si les flux RSS sont activés, ce réglage détermine le type d\'activité par défaut.';
 $string['configshortpost'] = 'Tout message plus court que cette longueur (nombre de caractères, code HTML non compris) est considéré comme message court (voir ci-dessous).';
 $string['configtrackingtype'] = 'Réglage par défaut du suivi des messages.';
 $string['configtrackreadposts'] = 'Choisissez « Oui » pour activer le suivi des messages pour chaque utilisateur.';
@@ -119,11 +121,11 @@ $string['delete'] = 'Supprimer';
 $string['deleteddiscussion'] = 'Le sujet de discussion a été supprimé';
 $string['deletedpost'] = 'Ce message a été supprimé';
 $string['deletedposts'] = 'Ces messages ont été supprimés';
-$string['deleteoriginalonreply'] = 'Si vous répondez par courriel, veuillez ne pas inclure une citation du message auquel vous répondez';
 $string['deletesure'] = 'Voulez-vous vraiment supprimer ce message ?';
 $string['deletesureplural'] = 'Voulez-vous vraiment supprimer ces messages et toutes les réponses ? ({$a} messages)';
 $string['digestmailheader'] = 'Ceci est le courriel quotidien contenant tous les nouveaux messages des forums de {$a->sitename}. Pour modifier les réglages par défaut de vos abonnements, veuillez visiter {$a->userprefs}.';
 $string['digestmailpost'] = 'Modifier vos préférences pour les courriels quotidiens';
+$string['digestmailpostlink'] = 'Modifier vos préférences pour les résumés de forum : {$a}';
 $string['digestmailprefs'] = 'votre profil utilisateur';
 $string['digestmailsubject'] = 'Courriel quotidien de {$a}';
 $string['digestmailtime'] = 'Heure d\'envoi du courriel quotidien';
@@ -138,6 +140,9 @@ $string['discussionmovedpost'] = 'Cette discussion a été déplacée <a href="{
 $string['discussionname'] = 'Nom de la discussion';
 $string['discussionnownotsubscribed'] = '{$a->name} ne recevra pas notification de nouveaux messages dans « {$a->discussion} » de « {$a->forum} »';
 $string['discussionnowsubscribed'] = '{$a->name} recevra notification de nouveaux messages dans « {$a->discussion} » de « {$a->forum} »';
+$string['discussionpin'] = 'Épingler';
+$string['discussionpinned'] = 'Épinglé';
+$string['discussionpinned_help'] = 'Les discussions épinglées apparaissent en haut d\'un forum.';
 $string['discussions'] = 'Discussions';
 $string['discussionsstartedby'] = 'Discussions lancées par {$a}';
 $string['discussionsstartedbyrecent'] = 'Discussions récentes lancées par {$a}';
@@ -146,6 +151,7 @@ $string['discussionsubscribestart'] = 'M\'envoyer par courriel les notifications
 $string['discussionsubscribestop'] = 'Ne pas m\'envoyer par courriel de notification des nouveaux messages dans cette discussion';
 $string['discussionsubscription'] = 'Abonnement à la discussion';
 $string['discussionsubscription_help'] = 'L\'abonnement à une discussion vous permet de recevoir notification de nouveaux messages dans cette discussion.';
+$string['discussionunpin'] = 'Dépingler';
 $string['discussthistopic'] = 'Discuter sur ce sujet';
 $string['displayend'] = 'Fin de l\'affichage';
 $string['displayend_help'] = 'Ce réglage détermine si un message de forum doit être caché après une certaine date. À noter que les administrateurs peuvent  toujours voir les messages.';
@@ -186,8 +192,10 @@ $string['eventcoursesearched'] = 'Cours recherché';
 $string['eventdiscussioncreated'] = 'Discussion créée';
 $string['eventdiscussiondeleted'] = 'Discussion supprimée';
 $string['eventdiscussionmoved'] = 'Discussion déplacée';
+$string['eventdiscussionpinned'] = 'Discussion épinglée';
 $string['eventdiscussionsubscriptioncreated'] = 'Abonnement à une discussion créé';
 $string['eventdiscussionsubscriptiondeleted'] = 'Abonnement à une discussion supprimé';
+$string['eventdiscussionunpinned'] = 'Discussion dé';
 $string['eventdiscussionupdated'] = 'Discussion modifiée';
 $string['eventdiscussionviewed'] = 'Discussion consultée';
 $string['eventpostcreated'] = 'Message créé';
@@ -211,12 +219,13 @@ $string['forcesubscribed'] = 'Tous les participants sont obligatoirement abonné
 $string['forcesubscribed_help'] = 'Ce forum ne permet pas de se désabonner des discussions.';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Ajouter un forum';
-$string['forum:addnews'] = 'Ajouter des nouvelles';
+$string['forum:addnews'] = 'Ajouter des annonces';
 $string['forum:addquestion'] = 'Ajouter une question';
 $string['forum:allowforcesubscribe'] = 'Permettre d\'imposer l\'abonnement';
 $string['forumauthorhidden'] = 'Auteur (masqué)';
 $string['forumblockingalmosttoomanyposts'] = 'Vous approchez du nombre maximal de messages autorisés. Vous avez écrit {$a->numposts} durant les derniers {$a->blockperiod}. La limite est de {$a->blockafter} messages.';
 $string['forumbodyhidden'] = 'Vous ne pouvez pas voir ce message, probablement parce que vous n\'avez pas encore participé à cette discussion, la durée maximale de modification n\'est pas encore passée, la discussion n\'a pas encore commencée ou elle est déjà terminée.';
+$string['forum:canposttomygroups'] = 'Poster des messages dans tous les groupes avec accès';
 $string['forum:createattachment'] = 'Créer des annexes';
 $string['forum:deleteanypost'] = 'Supprimer des messages (en tout temps)';
 $string['forum:deleteownpost'] = 'Supprimer ses propres messages (durant un délai)';
@@ -228,10 +237,11 @@ $string['forumintro'] = 'Description';
 $string['forum:managesubscriptions'] = 'Gérer les abonnements';
 $string['forum:movediscussions'] = 'Déplacer des discussions';
 $string['forumname'] = 'Nom du forum';
+$string['forum:pindiscussions'] = 'Épingler des discussions';
 $string['forumposts'] = 'Messages des forums';
 $string['forum:postwithoutthrottling'] = 'Exempté des limites de message';
 $string['forum:rate'] = 'Évaluer les messages';
-$string['forum:replynews'] = 'Répondre aux nouvelles';
+$string['forum:replynews'] = 'Répondre aux annonces';
 $string['forum:replypost'] = 'Répondre aux messages';
 $string['forums'] = 'Forums';
 $string['forum:splitdiscussions'] = 'Séparer des discussions';
@@ -272,7 +282,7 @@ $string['invalidpostid'] = 'Identifiant de message incorrect : {$a}';
 $string['lastpost'] = 'Dernier message';
 $string['learningforums'] = 'Forums d\'apprentissage';
 $string['longpost'] = 'Message long';
-$string['mailnow'] = 'Envoyer maintenant';
+$string['mailnow'] = 'Envoyer les notifications de messages des forums sans délai de modification.';
 $string['manydiscussions'] = 'Discussions par page';
 $string['markalldread'] = 'Marquer tous les messages de cette discussion comme lus.';
 $string['markallread'] = 'Marquer tous les messages de ce forum comme lus.';
@@ -311,7 +321,7 @@ Les messages des forums peuvent être évalués par les enseignants ou les parti
 Les forums ont de nombreuses utilisations, comme :
 
 * un espace de présentation pour que les participants à un cours apprennent à se connaître
-* une tribune pour diffuser les informations du cours (à l\'aide d\'un forum de nouvelles avec abonnement imposé)
+* une tribune pour diffuser les informations du cours (à l\'aide d\'un forum d\'annonces avec abonnement imposé)
 * un centre d\'aide où les enseignants et les participants peuvent donner des conseils
 * une façon informelle de partager des documents entre participants (et éventuellement d\'évaluer par les pairs)
 * poursuivre en ligne une discussion commencée lors d\'une session face à face
@@ -323,8 +333,11 @@ $string['more'] = 'plus';
 $string['movedmarker'] = '(Déplacée)';
 $string['movethisdiscussionto'] = 'Déplacer cette discussion vers...';
 $string['mustprovidediscussionorpost'] = 'Vous devez fournir l\'identifiant soit de la discussion, soit du message à exporter';
-$string['namenews'] = 'Forum des nouvelles';
-$string['namenews_help'] = 'Le forum des nouvelles est un forum spécial, destiné aux annonces du cours. Il est automatiquement créé dans chaque nouveau cours. Un cours ne peut avoir qu\'un seul forum des nouvelles. Seuls les enseignants peuvent poster dans ce forum. Le bloc « Dernières nouvelles » affiche les discussions récentes du forum des nouvelles.';
+$string['myprofileotherdis'] = 'Discussions de forum';
+$string['myprofileowndis'] = 'Mes discussions de forum';
+$string['myprofileownpost'] = 'Mes messages de forum';
+$string['namenews'] = 'Annonces';
+$string['namenews_help'] = 'Le forum des annonces du cours est un forum spécial, destiné aux annonces. Il est automatiquement créé dans chaque nouveau cours. Un cours ne peut avoir qu\'un seul forum des annonces. Seuls les enseignants et administrateurs peuvent poster des annonces. Le bloc « Dernières annonces » affiche les annonces récentes.';
 $string['namesocial'] = 'Forum informel';
 $string['nameteacher'] = 'Forum des enseignants';
 $string['newforumposts'] = 'Nouveaux messages dans les forums';
@@ -372,6 +385,7 @@ $string['page-mod-forum-view'] = 'Page principale du module forum';
 $string['page-mod-forum-x'] = 'Toute page du module forum';
 $string['parent'] = 'Niveau supérieur';
 $string['parentofthispost'] = 'Niveau supérieur de ce message';
+$string['permalink'] = 'Permalien';
 $string['pluginadministration'] = 'Administration forum';
 $string['pluginname'] = 'Forum';
 $string['postadded'] = '<p>Votre message a été enregistré.</p><p>Il vous est possible de le modifier pendant {$a}.</p>';
@@ -384,6 +398,9 @@ $string['postincontext'] = 'Voir ce message dans son contexte';
 $string['postmailinfo'] = 'Ceci est une copie du message posté sur le site {$a}.
 
 Pour y répondre, cliquer sur ce lien :';
+$string['postmailinfolink'] = 'Ce message est une copie du message posté dans {$a->coursename}.
+
+Pour y répondre, cliquez sur ce lien : {$a->replylink}';
 $string['postmailnow'] = '<p>Ce message sera envoyé immédiatement à tous les participants abonnés à ce forum.</p>';
 $string['postmailsubject'] = '{$a->courseshortname} : {$a->subject}';
 $string['postrating1'] = 'Pas très pertinent';
@@ -393,6 +410,8 @@ $string['posts'] = 'Messages';
 $string['postsmadebyuser'] = 'Messages écrits par {$a}';
 $string['postsmadebyuserincourse'] = 'Messages écrits par {$a->fullname} dans {$a->coursename}';
 $string['posttoforum'] = 'Envoyer';
+$string['posttomygroups'] = 'Poster une copie à tous les groupes';
+$string['posttomygroups_help'] = 'Poste une copie de ce message dans tous les groupes auxquels vous avez accès. Les participants aux groupes auxquels vous n\'avez pas accès ne verront pas ce message.';
 $string['postupdated'] = 'Votre message a été modifié';
 $string['potentialsubscribers'] = 'Abonnés potentiels';
 $string['prevdiscussiona'] = 'Discussion précédente : {$a}';
@@ -412,7 +431,6 @@ $string['reply'] = 'Répondre';
 $string['replyforum'] = 'Répondre au forum';
 $string['reply_handler'] = 'Ce gestionnaire permet de répondre aux messages des forums par courriel';
 $string['reply_handler_name'] = 'Réponse aux messages des forums';
-$string['replytoforumpost'] = 'Vous pouvez répondre à ce message de forum par courriel.';
 $string['replytopostbyemail'] = 'Vous pouvez répondre à ce message par courriel.';
 $string['replytouser'] = 'Utiliser l\'adresse de l\'auteur';
 $string['resetdigests'] = 'Supprimer toutes les préférences des utilisateurs pour les courriels quotidiens de forum';
@@ -427,6 +445,7 @@ $string['rssarticles_help'] = '<p>Cette option vous permet de fixer le nombre d\
 $string['rsssubscriberssdiscussions'] = 'Flux RSS des discussions';
 $string['rsssubscriberssposts'] = 'Flux RSS des messages';
 $string['rsstype'] = 'Flux RSS de cette activité';
+$string['rsstypedefault'] = 'Type de flux RSS';
 $string['rsstype_help'] = '<p>Cette option vous permet d\'activer le flux RSS de ce forum.</p>
 
 <p>Vous pouvez choisir entre deux types de flux RSS :
@@ -437,6 +456,7 @@ $string['rsstype_help'] = '<p>Cette option vous permet d\'activer le flux RSS de
 <li><strong>Messages :</strong> le flux généré comprendra tous les nouveaux messages postés dans le forum.</li>
 </ul>';
 $string['search'] = 'Rechercher';
+$string['search:activity'] = 'Forum – information sur l\'activité';
 $string['searchdatefrom'] = 'Dans les messages postérieurs à';
 $string['searchdateto'] = 'Dans les messages antérieurs à';
 $string['searchforumintro'] = 'Veuillez saisir les termes à rechercher dans l\'un ou plusieurs des champs ci-dessous :';
@@ -445,6 +465,7 @@ $string['searchfullwords'] = 'Mots entiers';
 $string['searchnotwords'] = 'Termes à exclure';
 $string['searcholderposts'] = 'Rechercher les anciens messages...';
 $string['searchphrase'] = 'Phrase exacte dans le corps du message';
+$string['search:post'] = 'Forum – messages';
 $string['searchresults'] = 'Résultats de la recherche';
 $string['searchsubject'] = 'Terme dans le sujet du message';
 $string['searchuser'] = 'Nom de l\'auteur';
@@ -456,6 +477,7 @@ $string['shortpost'] = 'Message court';
 $string['showsubscribers'] = 'Afficher/modifier les abonnés à ce forum';
 $string['singleforum'] = 'Une seule discussion';
 $string['smallmessage'] = '{$a->user} a écrit dans {$a->forumname}';
+$string['smallmessagedigest'] = 'Courriel quotidien contenant {$a} messages de forum';
 $string['startedby'] = 'lancée par';
 $string['subject'] = 'Sujet';
 $string['subscribe'] = 'S\'abonner à ce forum';
@@ -465,7 +487,8 @@ $string['subscribediscussion'] = 'S\'abonner à cette discusion';
 $string['subscribeenrolledonly'] = 'Seuls les utilisateurs inscrits au cours sont autorisés à s\'abonner aux notifications des messages des forums.';
 $string['subscribenone'] = 'Désabonner tous les participants';
 $string['subscribers'] = 'Abonnés';
-$string['subscribersto'] = 'Abonnés à « {$a} »';
+$string['subscribersto'] = 'Abonnés à « {$a->name} »';
+$string['subscriberstowithcount'] = 'Abonnés à « {$a->name} » ({$a->count})';
 $string['subscribestart'] = 'M\'envoyer par courriel les notifications de nouveaux messages dans ce forum';
 $string['subscribestop'] = 'Ne pas m\'envoyer par courriel de notification des nouveaux messages dans ce forum';
 $string['subscription'] = 'Abonnement';
@@ -486,7 +509,9 @@ Les changements effectués au type d\'abonnement n\'affectent que les futurs ins
 $string['subscriptionoptional'] = 'Abonnement facultatif';
 $string['subscriptions'] = 'Abonnements';
 $string['thisforumisthrottled'] = 'Ce forum a une limite du nombre de messages que vous pouvez poster durant une période donnée. Cette limite est actuellement de {$a->blockafter} message(s) durant {$a->blockperiod}';
+$string['timedhidden'] = 'Temporisation : caché pour les étudiants';
 $string['timedposts'] = 'Messages temporisés';
+$string['timedvisible'] = 'Temporisation : visible pour tous les utilisateurs';
 $string['timestartenderror'] = 'La date de fin d\'affichage ne peut pas être antérieure à la date du début de l\'affichage';
 $string['trackforum'] = 'Activer le suivi des messages';
 $string['tracking'] = 'Suivi des messages';
@@ -494,11 +519,11 @@ $string['trackingoff'] = 'Désactivé';
 $string['trackingon'] = 'Imposé';
 $string['trackingoptional'] = 'Facultatif';
 $string['trackingtype'] = 'Suivi de lecture des messages';
-$string['trackingtype_help'] = 'Si ce réglage est activé, les participants peuvent d\'un coup d\'oeil distinguer les messages qu\'ils n\'ont pas encore lus de ceux qu\'ils ont déjà lus dans un forum. 3 options sont disponibles :
+$string['trackingtype_help'] = 'Le suivi des messages permet aux participants de vérifier facilement les messages qu\'ils n\'ont pas encore vu en les surinant.
 
-* Facultatif : les participants peuvent activer ou désactiver à discrétion le suivi des messages du forum via un lien dans le bloc d\'administration. Le suivi des messages doit également être activé dans le profil de l\'utilisateur.
-* Imposé : le suivi est toujours activé, indépendamment du réglage de l\'utilisateur.
-* Désactivé : le suivi est toujours désactivé.';
+Si le réglage est mis sur « Facultatif », les participants peuvent activer ou désactiver à discrétion le suivi des messages dans le bloc d\'administration (le suivi des messages doit d\'abord être activé dans leurs préférences de forum).
+
+Si le réglage « Permettre d\'imposer le suivi des messages » est activé dans l\'administration de la plateforme, une option supplémentaire est affichée : « Imposé ». Le suivi est alors toujours activé, indépendamment des préférences de forum de l\'utilisateur.';
 $string['unread'] = 'Non lu';
 $string['unreadposts'] = 'Messages non lus';
 $string['unreadpostsnumber'] = '{$a} messages non lus';
@@ -512,6 +537,8 @@ $string['unsubscribealldone'] = 'Tous vos abonnements ont été annulés. Vous r
 $string['unsubscribeallempty'] = 'Vous n\'êtes abonné à aucun forum. Si vous voulez désactiver toutes les notifications de ce serveur, modifiez la notification des messages dans les réglages de votre profil.';
 $string['unsubscribed'] = 'Désabonné';
 $string['unsubscribediscussion'] = 'Se désabonner de cette discussion';
+$string['unsubscribediscussionlink'] = 'Me désabonner de cette discussion : {$a}';
+$string['unsubscribelink'] = 'Me désabonner de ce forum : {$a}';
 $string['unsubscribeshort'] = 'Désabonner';
 $string['usermarksread'] = 'Marquage manuel des messages lus';
 $string['viewalldiscussions'] = 'Afficher toutes les discussions';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_alfresco', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_alfresco', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_alfresco
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,9 +33,6 @@ $string['notitle'] = 'sensetítol';
 $string['password'] = 'Contrasenya';
 $string['pluginname'] = 'Repositori Alfresco';
 $string['pluginname_help'] = 'Un connector per al CMS Alfresco';
-$string['security_key_notice_message_content'] = 'S\'ha descobert un problema de seguretat recent quan s\'usen els enllaços externs al repositori Alfresco de Moodle. Els usuaris podien obtenir accés als comptes d\'altres usuaris al servidor d\'Alfresco a través de l\'ús de la informació continguda en aquests enllaços (testimonis —<em>tokens</em>). Aquesta característica ha estat desactivada, però és possible que els testimonis continguts dins qualsevol enllaç encara permetin l\'accés al compte d\'un altre usuari. Per a la vostra pròpia protecció, és important que reinicieu el servidor Alfresco per fer caducar els testimonis.';
-$string['security_key_notice_message_small'] = 'Degut a un problema de seguretat recent trobat al repositori d\'Alfresco, us aconsellem que reinicieu el vostre servidor Alfresco.';
-$string['security_key_notice_message_subject'] = 'Noticia de seguretat sobre el repositori Alfresco';
 $string['soapmustbeenabled'] = 'Cal que l\'extensió SOAP estigui habilitada per al connector alfresco';
 $string['space'] = 'Espai';
 $string['username'] = 'Nom d\'usuari';

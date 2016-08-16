@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,7 +87,6 @@ $string['format_richhtml'] = '첨부물이 있는 HTML';
 $string['format_spreadsheet'] = '스프레드시트';
 $string['format_text'] = '평범한 문서';
 $string['format_video'] = '비디오';
-$string['hidden'] = '비공개';
 $string['highdbsizethreshold'] = '최고 전송 디비 크기';
 $string['highdbsizethresholddesc'] = '전송시간 내 최대로 전송할 수 있는 자료의 숫자';
 $string['highfilesizethreshold'] = '최고 전송 파일 크기';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_quiz_results', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['config_use_groups'] = '学生の代わりにグループを表示しま
 $string['error_emptyquizid'] = 'このブロックを設定して、どの小テストの結果を表示するか選択してください。';
 $string['error_emptyquizrecord'] = 'このブロックにエラーが発生しました: 選択した小テストは、データベースに存在していないようです。';
 $string['error_nogroupsexist'] = 'このブロックにエラーが発生しました: グループモードが設定されていますが、コースにグループが定義されていないようです。';
-$string['pluginname'] = '小テスト結果';
+$string['pluginname'] = '小テスト結果 (無効)';
 $string['quiz_results:addinstance'] = '新しい小テスト結果ブロックを追加する';
 $string['worstgrade'] = '最低得点:';
 $string['worstgrades'] = 'ワースト {$a}:';

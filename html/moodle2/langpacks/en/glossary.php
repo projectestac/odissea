@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['cnfshowgroup'] = 'Specify if the group break should be shown or not.';
 $string['cnfsortkey'] = 'Select the sorting key by default.';
 $string['cnfsortorder'] = 'Select the sorting order by default.';
 $string['cnfstudentcanpost'] = 'Define if the students can or cannot post entries by default';
+$string['cnftabs'] = 'Select visible tabs for this glossary format';
 $string['comment'] = 'Comment';
 $string['commentdeleted'] = 'The comment has been deleted.';
 $string['comments'] = 'Comments';
@@ -273,6 +274,8 @@ $string['rssarticles_help'] = 'This setting specifies the number of glossary ent
 $string['rsssubscriberss'] = 'Display the RSS feed for \'{$a}\' concepts';
 $string['rsstype'] = 'RSS feed for this activity';
 $string['rsstype_help'] = 'To enable the RSS feed for this activity, select either concepts with author or concepts without author to be included in the feed.';
+$string['search:activity'] = 'Glossary - activity information';
+$string['search:entry'] = 'Glossary - entries';
 $string['searchindefinition'] = 'Search full text';
 $string['secondaryglossary'] = 'Secondary glossary';
 $string['showall'] = 'Show \'ALL\' link';
@@ -291,6 +294,7 @@ $string['studentcanpost'] = 'Students can add entries';
 $string['totalentries'] = 'Total entries';
 $string['usedynalink'] = 'Automatically link glossary entries';
 $string['usedynalink_help'] = 'If site-wide glossary auto-linking has been enabled by an administrator and this setting is enabled, the "Add a new entry" form includes the option to automatically link the entry wherever the concept words and phrases appear throughout the rest of the course.';
+$string['visibletabs'] = 'Visible tabs';
 $string['waitingapproval'] = 'Waiting approval';
 $string['warningstudentcapost'] = '(Applies only if the glossary is not the main one)';
 $string['withauthor'] = 'Concepts with author';

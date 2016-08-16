@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_installaddon', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,14 +36,5 @@ $string['installfromziprootdir'] = 'Berrizendatu root karpeta';
 $string['installfromzipsubmit'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromziptype'] = 'Plugin-mota';
 $string['permcheckprogress'] = 'Egiaztatzen idazteko baimena...';
+$string['permcheckrepeat'] = 'Egiaztatu berriz';
 $string['pluginname'] = 'Plugin-instalatzailea';
-$string['validationmsg_componentmatch'] = 'Osagaiaren izen osoa';
-$string['validationmsglevel_error'] = 'Errorea';
-$string['validationmsglevel_info'] = 'Ados';
-$string['validationmsglevel_warning'] = 'Oharra';
-$string['validationmsg_missingversionphp'] = 'version.php fitxategia ez da aurkitu';
-$string['validationmsg_pluginversion'] = 'Pluginaren bertsioa';
-$string['validationmsg_unknowntype'] = 'Plugin-mota ezezaguna';
-$string['validationresultinfo'] = 'informazioa';
-$string['validationresultmsg'] = 'Mezua';
-$string['validationresultstatus'] = 'Egoera';

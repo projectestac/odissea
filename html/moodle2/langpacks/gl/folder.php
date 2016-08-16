@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,5 +52,6 @@ $string['page-mod-folder-view'] = 'Páxina principal do módulo cartafol';
 $string['page-mod-folder-x'] = 'Calquera páxina do módulo de cartafol';
 $string['pluginadministration'] = 'Administración do cartafol';
 $string['pluginname'] = 'Cartafol';
+$string['search:activity'] = 'Cartafol';
 $string['showexpanded'] = 'Amosar subcartafoles estendidos';
 $string['showexpanded_help'] = 'De estar activado, presentaranse os subcartafoles estendidos de modo predeterminado. Se non, os subcartafoles presentaranse recollidos.';

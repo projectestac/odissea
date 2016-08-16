@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'feedback', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Add question to activity';
+$string['add_item'] = 'Add question';
 $string['add_pagebreak'] = 'Add a page break';
 $string['adjustment'] = 'Adjustment';
 $string['after_submit'] = 'After submission';
@@ -33,14 +33,17 @@ $string['allowfullanonymous'] = 'Allow full anonymous';
 $string['analysis'] = 'Analysis';
 $string['anonymous'] = 'Anonymous';
 $string['anonymous_edit'] = 'Record user names';
-$string['anonymous_entries'] = 'Anonymous entries';
+$string['anonymous_entries'] = 'Anonymous entries ({$a})';
 $string['anonymous_user'] = 'Anonymous user';
 $string['append_new_items'] = 'Append new items';
 $string['autonumbering'] = 'Auto number questions';
 $string['autonumbering_help'] = 'Enables or disables automated numbers for each question';
 $string['average'] = 'Average';
 $string['bold'] = 'Bold';
+$string['calendarend'] = 'Feedback {$a} closes';
+$string['calendarstart'] = 'Feedback {$a} opens';
 $string['cancel_moving'] = 'Cancel moving';
+$string['cannotaccess'] = 'You can only access this feedback from a course';
 $string['cannotmapfeedback'] = 'Database problem, unable to map feedback to course';
 $string['cannotsavetempl'] = 'saving templates is not allowed';
 $string['cannotunmap'] = 'Database problem, unable to unmap';
@@ -51,6 +54,7 @@ $string['checkbox'] = 'Multiple choice - multiple answers allowed (check boxes)'
 $string['check_values'] = 'Possible responses';
 $string['choosefile'] = 'Choose a file';
 $string['chosen_feedback_response'] = 'chosen feedback response';
+$string['closebeforeopen'] = 'You have specified an end date before the start date.';
 $string['completed'] = 'completed';
 $string['completed_feedbacks'] = 'Submitted answers';
 $string['complete_the_form'] = 'Answer the questions...';
@@ -67,6 +71,7 @@ $string['creating_templates'] = 'Save these questions as a new template';
 $string['delete_entry'] = 'Delete entry';
 $string['delete_item'] = 'Delete question';
 $string['delete_old_items'] = 'Delete old items';
+$string['delete_pagebreak'] = 'Delete page break';
 $string['delete_template'] = 'Delete template';
 $string['delete_templates'] = 'Delete template...';
 $string['depending'] = 'Dependencies';
@@ -91,6 +96,7 @@ $string['dependitem'] = 'Dependence item';
 $string['dependvalue'] = 'Dependence value';
 $string['description'] = 'Description';
 $string['do_not_analyse_empty_submits'] = 'Do not analyse empty submits';
+$string['downloadresponseas'] = 'Download all responses as:';
 $string['dropdown'] = 'Multiple choice - single answer allowed (dropdownlist)';
 $string['dropdownlist'] = 'Multiple choice - single answer (dropdown)';
 $string['dropdownrated'] = 'Dropdownlist (rated)';
@@ -115,6 +121,7 @@ $string['export_to_excel'] = 'Export to Excel';
 $string['feedback:addinstance'] = 'Add a new feedback';
 $string['feedbackclose'] = 'Allow answers to';
 $string['feedback:complete'] = 'Complete a feedback';
+$string['feedbackcompleted'] = '{$a->username} completed {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Create private template';
 $string['feedback:createpublictemplate'] = 'Create public template';
 $string['feedback:deletesubmissions'] = 'Delete completed submissions';
@@ -137,15 +144,14 @@ $string['importfromthisfile'] = 'Import from this file';
 $string['import_questions'] = 'Import questions';
 $string['import_successfully'] = 'Import successfully';
 $string['info'] = 'Information';
-$string['infotype'] = 'Information-Type';
+$string['infotype'] = 'Information type';
 $string['insufficient_responses'] = 'insufficient responses';
 $string['insufficient_responses_for_this_group'] = 'There are insufficient responses for this group';
-$string['insufficient_responses_help'] = 'There are insufficient responses for this group.
-
-To keep the feedback anonymous, a minimum of 2 responses must be done.';
+$string['insufficient_responses_help'] = 'For the feedback to be anonymous, there must be at least 2 responses.';
 $string['item_label'] = 'Label';
 $string['item_name'] = 'Question';
 $string['label'] = 'Label';
+$string['labelcontents'] = 'Contents';
 $string['line_values'] = 'Rating';
 $string['mapcourse'] = 'Map feedback to courses';
 $string['mapcourse_help'] = 'By default, feedback forms created on your homepage are available site-wide
@@ -156,10 +162,12 @@ $string['mapcourses'] = 'Map feedback to courses';
 $string['mapcourses_help'] = 'Once you have selected the relevant course(s) from your search,
 you can associate them with this feedback using map course(s). Multiple courses may be selected by holding down the Apple or Ctrl key whilst clicking on the course names. A course may be disassociated from a feedback at any time.';
 $string['mappedcourses'] = 'Mapped courses';
+$string['mappingchanged'] = 'Course mapping has been changed';
 $string['max_args_exceeded'] = 'Max 6 arguments can be handled, too many arguments for';
-$string['maximal'] = 'maximal';
+$string['maximal'] = 'maximum';
 $string['messageprovider:message'] = 'Feedback reminder';
 $string['messageprovider:submission'] = 'Feedback notifications';
+$string['minimal'] = 'minimum';
 $string['mode'] = 'Mode';
 $string['modulename'] = 'Feedback';
 $string['modulename_help'] = 'The feedback activity module enables a teacher to create a custom survey for collecting feedback from participants using a variety of question types including multiple choice, yes/no or text input.
@@ -192,19 +200,20 @@ $string['no_itemlabel'] = 'No label';
 $string['no_itemname'] = 'No itemname';
 $string['no_items_available_yet'] = 'No questions have been set up yet';
 $string['non_anonymous'] = 'User\'s name will be logged and shown with answers';
-$string['non_anonymous_entries'] = 'non anonymous entries';
-$string['non_respondents_students'] = 'non respondents students';
+$string['non_anonymous_entries'] = 'Non anonymous entries ({$a})';
+$string['non_respondents_students'] = 'Non respondents students ({$a})';
 $string['notavailable'] = 'this feedback is not available';
 $string['not_completed_yet'] = 'Not completed yet';
 $string['no_templates_available_yet'] = 'No templates available yet';
 $string['not_selected'] = 'Not selected';
 $string['not_started'] = 'not started';
+$string['numberoutofrange'] = 'Number out of range';
 $string['numeric'] = 'Numeric answer';
 $string['numeric_range_from'] = 'Range from';
 $string['numeric_range_to'] = 'Range to';
 $string['of'] = 'of';
 $string['oldvaluespreserved'] = 'All old questions and the assigned values will be preserved';
-$string['oldvalueswillbedeleted'] = 'The current questions and all your user\'s responses will be deleted';
+$string['oldvalueswillbedeleted'] = 'Current questions and all responses will be deleted.';
 $string['only_one_captcha_allowed'] = 'Only one captcha is allowed in a feedback';
 $string['overview'] = 'Overview';
 $string['page'] = 'Page';
@@ -231,7 +240,7 @@ $string['radiobutton_rated'] = 'Radiobutton (rated)';
 $string['radiorated'] = 'Radiobutton (rated)';
 $string['radio_values'] = 'Responses';
 $string['ready_feedbacks'] = 'Ready feedbacks';
-$string['relateditemsdeleted'] = 'All your user\'s responses for this question will also be deleted';
+$string['relateditemsdeleted'] = 'All responses for this question will also be deleted.';
 $string['required'] = 'Required';
 $string['resetting_data'] = 'Reset feedback responses';
 $string['resetting_feedbacks'] = 'Resetting feedbacks';
@@ -244,6 +253,7 @@ $string['save_entries'] = 'Submit your answers';
 $string['save_item'] = 'Save question';
 $string['saving_failed'] = 'Saving failed';
 $string['saving_failed_because_missing_or_false_values'] = 'Saving failed because missing or false values';
+$string['search:activity'] = 'Feedback - activity information';
 $string['search_course'] = 'Search course';
 $string['searchcourses'] = 'Search courses';
 $string['searchcourses_help'] = 'Search for the code or name of the course(s) that you wish to associate with this feedback.';
@@ -264,9 +274,10 @@ $string['started'] = 'started';
 $string['stop'] = 'End';
 $string['subject'] = 'Subject';
 $string['switch_group'] = 'Switch group';
-$string['switch_item_to_not_required'] = 'switch to: answer not required';
-$string['switch_item_to_required'] = 'switch to: answer required';
+$string['switch_item_to_not_required'] = 'Set as not required';
+$string['switch_item_to_required'] = 'Set as required';
 $string['template'] = 'Template';
+$string['template_deleted'] = 'Template deleted';
 $string['templates'] = 'Templates';
 $string['template_saved'] = 'Template saved';
 $string['textarea'] = 'Longer text answer';
@@ -281,7 +292,7 @@ $string['typemissing'] = 'missing value "type"';
 $string['update_item'] = 'Save changes to question';
 $string['url_for_continue'] = 'Link to next activity';
 $string['url_for_continue_help'] = 'After submitting the feedback, a continue button is displayed, which links to the course page. Alternatively, it may link to the next activity if the URL of the activity is entered here.';
-$string['use_one_line_for_each_value'] = '<br />Use one line for each answer!';
+$string['use_one_line_for_each_value'] = 'Use one line for each answer!';
 $string['use_this_template'] = 'Use this template';
 $string['using_templates'] = 'Use a template';
 $string['vertical'] = 'vertical';

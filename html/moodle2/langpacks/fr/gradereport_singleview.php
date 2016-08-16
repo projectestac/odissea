@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['bulkfor'] = 'Notes pour {$a}';
 $string['bulkinsertvalue'] = 'Insérer valeur';
 $string['bulklegend'] = 'Insérer en masse';
 $string['bulkperform'] = 'Effectuer l\'insertion en masse';
+$string['entrypage'] = 'Utilisateur évalué ou élément d\'évaluation';
 $string['eventgradereportviewed'] = 'Affichage simplifié des notes consulté';
 $string['exclude'] = 'Exclure';
 $string['excludeall'] = 'Exclure toutes les notes';
@@ -41,7 +42,9 @@ $string['excludenone'] = 'N\'exclure aucune note';
 $string['feedbackfor'] = 'Feedback pour {$a}';
 $string['filtergrades'] = 'Afficher les notes pour {$a}';
 $string['gradefor'] = 'Note pour {$a}';
+$string['gradeitem'] = 'Élément d\'évaluation : {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Cet élément d\'évaluation ne peut pas être modifié.';
+$string['gradeuser'] = 'Utilisateur évalué : {$a}';
 $string['noscreens'] = 'Impossible de trouver un affichage simplifié adéquat.';
 $string['notvalid'] = 'Affichage simplifié non valide : {$a}';
 $string['override'] = 'Modifier';
@@ -49,8 +52,12 @@ $string['overrideall'] = 'Modifier toutes les notes';
 $string['overridefor'] = 'Modifier pour {$a}';
 $string['overridenone'] = 'Ne modifier aucune note';
 $string['pluginname'] = 'Affichage simplifié';
+$string['save'] = 'Enregistrer';
 $string['savegrades'] = 'Enregistrement des notes';
 $string['savegradessuccess'] = 'Les notes ont été données pour {$a} éléments';
+$string['selectgrade'] = 'Sélectionner un élément d\'évaluation…';
+$string['selectuser'] = 'Sélectionner un utilisateur…';
 $string['singleview:view'] = 'Consulter le rapport';
 $string['summarygrade'] = 'Un tableau des participants, avec des colonnes pour les intervalles, les notes, les feedbacks et la modification ou l\'exclusion d\'une note spécifique.';
 $string['summaryuser'] = 'Un tableau des éléments d\'évaluation, avec des colonnes pour les catégories, les intervalles, les notes, les feedbacks et la modification ou l\'exclusion d\'une note spécifique.';
+$string['userselect'] = 'Sélectionner une activité';

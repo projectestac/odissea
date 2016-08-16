@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'moodle', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -187,7 +187,6 @@ $string['backupfromthissite'] = 'Το αντίγραφο ασφαλείας έχ
 $string['backupgradebookhistoryhelp'] = 'Εάν ενεργοποιηθεί, το ιστορικό βαθμολογίου θα συμπεριλαμβάνεται σε αυτόματα αντίγραφα ασφαλείας. Σημειώστε πως το ιστορικό βαθμών δεν πρέπει να είναι απενεργοποιημένο στις ρυθμίσεις του διακομιστή (disablegradehistory) για να ισχύσει αυτή η λειτουργία';
 $string['backupincludemoduleshelp'] = 'Να συμπεριλαμβάνονται τα αρθρώματα με τα δεδομένα των χρηστών κατά τη λήψη των αυτόματων αντιγράφων ασφαλείας';
 $string['backupincludemoduleuserdatahelp'] = 'Να συμπεριλαμβάνονται τα δεδομένα των χρηστών κατά τη λήψη των αυτόματων αντιγράφων ασφαλείας.';
-$string['backupkeephelp'] = 'Πλήθος αντιγράφων ασφαλείας για κάθε ένα μάθημα (τα παλιότερα διαγράφονται αυτόματα)';
 $string['backuplogdetailed'] = 'Λεπτομερής αναφορά εκτέλεσης';
 $string['backuploglaststatus'] = 'Τελευταία αναφορά εκτέλεσης';
 $string['backupnext'] = 'Επόμενο αντίγραφο ασφαλείας';
@@ -253,17 +252,6 @@ $string['choosereportfilter'] = 'Επιλέξτε κάποιο φίλτρο γι
 $string['choosetheme'] = 'Επιλέξτε θέμα';
 $string['chooseuser'] = 'Επιλέξτε ένα χρήστη';
 $string['city'] = 'Πόλη/χωριό';
-$string['clambroken'] = 'Η αποστολή του αρχείου σας απέτυχε, επειδή ο διαχειριστής, ενώ έχει ενεργοποιήσει τον έλεγχο των αρχείων από ιούς, έχει κάνει κάποιο σφάλμα στις ρυθμίσεις. <br /> Έχει σταλεί μία ειδοποίηση στον διαχειριστή για την επιδιόρθωση του προβλήματος.';
-$string['clamdeletedfile'] = 'Το αρχείο έχει διαγραφεί';
-$string['clamdeletedfilefailed'] = 'Το αρχείο δεν έχει διαγραφεί';
-$string['clamemailsubject'] = '{$a} :: Clam AV ειδοποίηση';
-$string['clamfailed'] = 'Σφάλμα εκτέλεσης του Clam AV. Το μήνυμα που επεστράφηκε ήταν το {$a}. Αυτή είναι η έξοδος του Clam:';
-$string['clamlost'] = 'Το Moodle έχει ρυθμιστεί ώστε να τρέχει το clam στο ανέβασμα αρχείων, αλλά η διαδρομή που δόθηκε στο Clam AV, {$a}, δεν είναι έγκυρη.';
-$string['clamlostandactinglikevirus'] = 'Επιπλέον, το Moodle έχει ρυθμιστεί έτσι ώστε, αν αποτύχει η εκτέλεση του clam, τα αρχεία να αντιμετωπίζονται ως ιοί. Αυτό ουσιαστικά σημαίνει ότι κανένας μαθητής δεν μπορεί να ανεβάσει αρχεία μέχρι να διορθώσετε αυτό το πρόβλημα.';
-$string['clammovedfile'] = 'Το αρχείο έχει μεταφερθεί στον προκαθορισμένο φάκελο quarantine, η νέα τοποθεσία είναι η {$a}';
-$string['clammovedfilebasic'] = 'Το αρχείο έχει μεταφερθεί σε φάκελο quarantine.';
-$string['clamquarantinedirfailed'] = 'Δεν ήταν δυνατή η μετακίνηση του αρχείου στον προκαθορισμένο φάκελο quarantine, {$a}. Πρέπει να διορθώσετε αυτό το πρόβλημα γιατί τα αρχεία θα διαγράφονται αν βρεθούν μολυσμένα.';
-$string['clamunknownerror'] = 'Παρουσιάστηκε ένα σφάλμα με το πρόγραμμα αντιμετώπισης ιών.';
 $string['cleaningtempdata'] = 'Διαγραφή προσωρινών δεδομένων';
 $string['clear'] = 'Καθαρισμός';
 $string['clickhelpiconformoreinfo'] = '... συνεχίζεται ... Κάντε κλικ στο εικονίδιο Βοήθεια για να διαβάσετε το πλήρες άρθρο';
@@ -1267,6 +1255,7 @@ $string['perpagea'] = 'Ανά σελίδα: {$a}';
 $string['personal'] = 'Προσωπικό';
 $string['personalprofile'] = 'Προσωπικό προφίλ';
 $string['phone'] = 'Τηλέφωνο';
+$string['phone1'] = 'Τηλέφωνο';
 $string['phone2'] = 'Κινητό τηλέφωνο';
 $string['phpinfo'] = 'Πληροφορίες PHP';
 $string['pictureof'] = 'Φωτογραφία {$a}';
@@ -1769,7 +1758,6 @@ $string['usemessageform'] = 'ή χρησιμοποιήστε την παρακά
 $string['user'] = 'Χρήστης';
 $string['useractivity'] = 'Δραστηριότητα';
 $string['userconfirmed'] = 'Έγινε επιβεβαίωση του χρήστη {$a}';
-$string['usercurrentsettings'] = 'Ρυθμίσεις προφίλ';
 $string['userdata'] = 'Δεδομένα χρήστη';
 $string['userdeleted'] = 'Αυτός ο λογαριασμός χρήστη έχει διαγραφεί';
 $string['userdescription'] = 'Περιγραφή';
@@ -1795,7 +1783,6 @@ $string['usersnew'] = 'Νέοι χρήστες';
 $string['usersnoaccesssince'] = 'Καμία σύνδεση για περισσότερο από';
 $string['userswithfiles'] = 'Χρήστες με αρχεία';
 $string['useruploadtype'] = 'Τύπος μεταφόρτωσης χρήστη : {$a}';
-$string['userviewingsettings'] = 'Ρυθμίσεις προφίλ για {$a}';
 $string['userzones'] = 'Ζώνες χρηστών';
 $string['usetheme'] = 'Χρήση θέματος';
 $string['usingexistingcourse'] = 'Χρήση υπάρχοντος μαθήματος';
@@ -1811,25 +1798,6 @@ $string['viewmore'] = 'Δείτε περισσότερα';
 $string['viewprofile'] = 'Επισκόπηση του προφίλ';
 $string['views'] = 'Προβολές';
 $string['viewsolution'] = 'προβολή της λύσης';
-$string['virusfound'] = 'Προσοχή διαχειριστή! Το Clam AV έχει βρει έναν ιό σε ένα αρχείο που ανέβασε το {$a->user} για το μάθημα {$a->course}. Αυτή είναι η έξοδος του clamscan:';
-$string['virusfoundlater'] = 'Ένα αρχείο που ανεβάσατε στις {$a->date} με όνομα {$a->filename} για το μάθημα {$a->course} βρέθηκε να περιέχει ιό. Παρακάτω φαίνεται μία περίληψη του τι συνέβη στο αρχείο σας:
-
-{$a->action}
-
-Αν αυτό ήταν κάποια εργασία, τότε θα πρέπει να την ξαναστείλετε προκειμένου να την δει ο καθηγητής σας.';
-$string['virusfoundlateradmin'] = 'Προσοχή διαχειριστή! Ένα αρχείο που ανέβηκε στις {$a->date} με όνομα {$a->filename} για το μάθημα {$a->course} από το χρήστη {$a->user} βρέθηκε να περιέχει ιό. Παρακάτω φαίνεται μία περίληψη του τι συνέβη στο αρχείο:
-
-{$a->action}
-
-Ο χρήστης έχει ειδοποιηθεί.';
-$string['virusfoundlateradminnolog'] = 'Προσοχή διαχειριστή! Ένα αρχείο που ανέβηκε με όνομα {$a->filename} βρέθηκε να περιέχει ιό. Το Moodle δεν ήταν σε θέση να εντοπίσει το χρήστη που το ανέβασε.
-
-Παρακάτω φαίνεται μία περίληψη του τι συνέβη στο αρχείο:
-
-{$a->action}';
-$string['virusfoundsubject'] = '{$a}: Βρέθηκε ιός!';
-$string['virusfounduser'] = 'Το αρχείο που ανεβάσατε, {$a->filename}, βρέθηκε να περιέχει ιό! Το ανέβασμα του αρχείου σας δεν ήταν επιτυχές.';
-$string['virusplaceholder'] = 'Το αρχείο που στείλατε περιέχει έναν ιό και για αυτό έχει διαγραφεί.';
 $string['visible'] = 'Ορατό';
 $string['visible_help'] = '<p align="center"><b>Διαθεσιμότητα Μαθήματος</b></p><p>Αυτή η επιλογή σας επιτρέπει να &quot;αποκρύψετε&quot; το μάθημά σας εντελώς.</p><p>Δεν θα εμφανιστεί σε καμία λίστα μαθημάτων, εκτός από των καθηγητών του μαθήματος και των διαχειριστών.</p><p>Ακόμα κι αν οι φοιτητές προσπαθήσουν να μπουν στη διεύθυνση του μαθήματος απευθείας, δεν θα τους επιτραπεί η είσοδος.</p>';
 $string['visibletostudents'] = 'Ορατό στον/στην {$a}';

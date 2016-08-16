@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_ldap', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['general_options'] = '常规选项';
 $string['group_memberofattribute'] = '说明给定用户或组属于哪个组的属性名（例如：memberOf、groupMembership等）';
 $string['group_memberofattribute_key'] = '“成员”属性';
 $string['host_url'] = '以URL的形式指定LDAP主机，如“ldap://ldap.myorg.com/”或“ldaps://ldap.myorg.com/”。';
-$string['host_url_key'] = '主机URL';
+$string['host_url_key'] = '主机网页地址';
 $string['idnumber_attribute'] = '如果组成员包含识别名，请使用您在LDAP认证设置中映射到用户“学号”的属性';
 $string['idnumber_attribute_key'] = '学号属性';
 $string['ldap_encoding'] = '指定LDAP服务器使用的编码。大多都是utf-8，但MS AD v2使用平台缺省编码，如cp1252、p1250等。';

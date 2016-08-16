@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = '{$a->type}-(r)i buruzko bloga';
 $string['blogaboutthiscourse'] = 'Gehitu sarrera bat ikastaro honi buruz';
 $string['blogaboutthismodule'] = 'Gehitu sarrera bat honi buruz: {$a}';
 $string['blogadministration'] = 'Blog-kudeaketa';
-$string['blogdeleteconfirm'] = 'Blog-sarrera hau ezabatu?';
+$string['blogdeleteconfirm'] = '\'{$a}\' blog-sarrera hau ezabatu nahi duzu?';
 $string['blogdisable'] = 'Blogak desgaituta daude!';
 $string['blogentries'] = 'Blog-sarrerak';
 $string['blogentriesabout'] = '{$a}-ri buruzko blog-sarrerak';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Ikastaro-blogak ez daude gaituta';
 $string['courseblogs'] = 'Erabiltzaileek beren ikastaro bereko pertsonen blogak baino ezin dituzte ikusi';
 $string['deleteblogassociations'] = 'Ezabatu blog-loturak';
 $string['deleteblogassociations_help'] = 'Hau markatuta blog-sarrerak ez dira aurrerantzean ikastaro honekin edo ikastaroko inonko jarduera edo baliabiderekin lotuko. Blog-sarrerak ez dira ezabatuko.';
+$string['deleteentry'] = 'Ezabatu sarrera';
 $string['deleteexternalblog'] = 'Erregistroa kendu kanpoko blog honi';
 $string['deleteotagswarn'] = 'Ziur al zaude etiketa hau(ek) mezu guztietatik ezabatu nahi d(it)uzula eta sistematik kendu?';
 $string['description'] = 'Deskribapena';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'Taldearen ID-a ez da egokia';
 $string['invalidurl'] = 'Ezin da aurkitu URL hau';
 $string['linktooriginalentry'] = 'Jatorrizko blog-sarrerarako esteka';
 $string['maxexternalblogsperuser'] = 'Gehinezko kanpoko blog-kopurua erabiltzaileko ';
+$string['myprofileuserblogs'] = 'Ikus blog-sarrera guztiak';
 $string['name'] = 'Izena';
 $string['name_help'] = 'Idtzi zure kanpoko blog-erako izen adierazgarria. (Ez badiozu izenik ematen, zure kanpoko blog-aren izenburua erabiliko da).';
 $string['noentriesyet'] = 'Sarrerak ez daude ikusgai hemen';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Blog-orri guztiak';
 $string['pagesize'] = 'Blog-sarrerak orriko';
 $string['permalink'] = 'Lotura iraunkorra';
 $string['personalblogs'] = 'Erabiltzaileek beren blogak baino ezin dituzte ikusi';
-$string['preferences'] = 'Hobespenak';
+$string['preferences'] = 'Blogaren hobespenak';
 $string['publishto'] = 'Norentzat argitaratu';
 $string['publishtocourse'] = 'Zurekin ikastaroa konpartitzen duten erabiltzaileak';
 $string['publishtocourseassoc'] = 'Lotutako ikastaroko kideak';
@@ -151,6 +153,7 @@ $string['searchterm'] = 'Bilatu: {$a}';
 $string['settingsupdatederror'] = 'Errorea gertatu da: blog aukera berriak ezin izan dira eguneratu';
 $string['siteblog'] = 'Gunearen bloga: {$a}';
 $string['siteblogdisable'] = 'Gunearen bloga ez dago gaituta';
+$string['siteblogheading'] = 'Guneko bloga';
 $string['siteblogs'] = 'Erabiltzaile guztiek blog-sarrera guztiak ikusi ahal dituzte';
 $string['tagdatelastused'] = 'Etiketa hau erabili zen azken eguna';
 $string['tagparam'] = 'Etiketa: {$a}';

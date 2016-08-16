@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,7 @@ Os participantes não podem preencher o questionário após essa data, se não f
 $string['closeson'] = 'O questionário termina em {$a}.';
 $string['completionsubmit'] = 'Os participantes têm de submeter o questionário para o completar';
 $string['confalts'] = '- OU - <br />Página de confirmação';
+$string['configmaxsections'] = 'Máximo de secções de feedback';
 $string['configusergraph'] = 'Mostrar gráficos no feedback de "Teste de personalidade"';
 $string['configusergraphlong'] = 'Usar a biblioteca <a href="http://www.rgraph.net/"> Rgraph </a>para mostrar gráficos no feedback de "Teste de Personalidade".';
 $string['confirmdelallresp'] = 'Tem a certeza que pretende apagar TODAS as respostas a este questionário?';
@@ -100,6 +101,7 @@ $string['createcontent'] = 'Conteúdo inicial do Questionário';
 $string['createcontent_help'] = 'Selecione um dos botões de radio. \'Criar novo\' questionário é a opção predefinida.';
 $string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Criar novo questionário';
+$string['crontask'] = 'Trabalho de limpeza do Questionário';
 $string['date'] = 'Data';
 $string['dateformatting'] = 'Use o formato dia/mês/ano (exemplo: 20/07/1969 para Domingo, 20 de julho de 1969)';
 $string['date_help'] = 'Insira este tipo de questão se pretende uma resposta na forma de uma data formatada corretamente.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'role', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,13 +83,9 @@ $string['badges:viewbadges'] = '查看可用奖章（不需要获得）';
 $string['badges:viewotherbadges'] = '在其他用户资料中查看公开的奖章';
 $string['block:edit'] = '编辑版块设置';
 $string['block:view'] = '查看版块';
-$string['blog:associatecourse'] = '此功能已放弃，不执行任何操作。';
-$string['blog:associatemodule'] = '此功能已放弃，不执行任何操作。';
 $string['blog:create'] = '新建博客条目';
 $string['blog:manageentries'] = '编辑和管理条目';
 $string['blog:manageexternal'] = '编辑和管理外部博客';
-$string['blog:manageofficialtags'] = '管理官方标签';
-$string['blog:managepersonaltags'] = '管理个人标签';
 $string['blog:search'] = '搜索博客';
 $string['blog:view'] = '浏览博客条目';
 $string['blog:viewdrafts'] = '查看博客草稿';
@@ -118,6 +114,12 @@ $string['comment:post'] = '发表评论';
 $string['comment:view'] = '阅读评论';
 $string['community:add'] = '使用社区版块搜索课程中心寻找课程';
 $string['community:download'] = '从社区版块下载课程';
+$string['competency:competencymanage'] = '管理能力框架';
+$string['competency:competencyview'] = '审查能力框架';
+$string['competency:coursecompetencymanage'] = '管理课程能力';
+$string['competency:coursecompetencyview'] = '查看课程能力';
+$string['competency:templatemanage'] = '管理学习计划模板';
+$string['competency:templateview'] = '查看学习计划模板列表';
 $string['confirmaddadmin'] = '您真的要让用户<strong>{$a}</strong>成为新的网站管理员吗？';
 $string['confirmdeladmin'] = '您真的要取消用户<strong>{$a}</strong>的网站管理员资格吗？';
 $string['confirmroleprevent'] = '您确定要不允许角色<strong>{$a->role}</strong>在“{$a->context}”中使用{$a->cap}权限吗？';
@@ -225,7 +227,6 @@ $string['grade:unlock'] = '解除成绩和项目的锁定';
 $string['grade:view'] = '查看自己的成绩';
 $string['grade:viewall'] = '查看其他人的成绩';
 $string['grade:viewhidden'] = '查看成绩所有者的隐藏成绩';
-$string['hidden'] = '隐藏';
 $string['highlightedcellsshowdefault'] = '下表中被选择的权限是上面所选角色原型的缺省权限。';
 $string['highlightedcellsshowinherit'] = '下表中高亮显示的权限是继承来的权限。除了确实要修改的权限以外，都应该设为继承。';
 $string['inactiveformorethan'] = '超过{$a->timeperiod}，停止';
@@ -349,6 +350,7 @@ $string['role:switchroles'] = '切换到其他角色';
 $string['roletoassign'] = '被分配的角色';
 $string['roletooverride'] = '被替换的角色';
 $string['safeoverridenotice'] = '警告：因您只能修改安全的权限，高危权限已被锁定。';
+$string['search:query'] = '进行全网站的搜索';
 $string['selectanotheruser'] = '选择另一个用户';
 $string['selectauser'] = '选择一个用户';
 $string['selectrole'] = '选择角色';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Ajouter';
 $string['alltags'] = 'Tous les tags:';
+$string['anycollection'] = 'Toutes';
+$string['anytype'] = 'Tous';
 $string['arrowtitle'] = 'Cliquez ici pour saisir le texte suggéré (lettres grises).';
 $string['configtitle'] = 'Titre du bloc';
 $string['coursetags'] = 'Tags de cours :';
-$string['defaultdisplay'] = 'Type de tag à afficher';
+$string['defaultdisplay'] = 'Afficher les tags';
 $string['disabledtags'] = 'Les tags sont désactivés';
 $string['edit'] = 'Modifier...';
 $string['editdeletemytag'] = 'Supprimer ce tag de ce cours :';
@@ -65,12 +67,19 @@ $string['mytags'] = 'Mes tags :';
 $string['notagsyet'] = 'Aucun tag';
 $string['please'] = 'S\'il vous plaît';
 $string['pluginname'] = 'Tags';
+$string['recursivecontext'] = 'Inclure les contextes enfants';
+$string['recursivecontext_help'] = 'Si cette option est désactivée, les tags des éléments du contexte indiqué seront affichés, mais pas ceux des sous-contextes. Par exemple, les tags de cours seront affichés, mais pas ceux des activités du cours.';
 $string['select'] = 'Sélectionner...';
 $string['showcoursetags'] = 'Afficher les tags de cours';
 $string['showcoursetagsdef'] = 'Afficher les possibilités des tags dans le bloc de tag, pour permettre aux participants de mettre des tags aux cours.';
+$string['standardonly'] = 'Seulement standards';
 $string['suggestedtagthisunit'] = 'Tag suggéré pour ce cours :';
+$string['tagcollection'] = 'Collection de tags';
+$string['tagcollection_help'] = 'Sélectionner les collections dont les tags doivent être affichés. Avec l\'option « Toutes », les tags de toutes les collections seront affichés, à l\'exception de ceux qui sont marquées d\'un astérisque (*).';
+$string['taggeditemscontext'] = 'Contexte des éléments dont les tags sont à afficher';
+$string['taggeditemscontext_help'] = 'Il est possible de limiter les tags affichés dans le nuage de tags à ceux qui sont présents dans la catégorie de cours, dans le cours ou dans le module actuel.';
 $string['tags'] = 'tags';
 $string['tags:addinstance'] = 'Ajouter un bloc tags';
-$string['tags:myaddinstance'] = 'Ajouter un bloc tags à Ma page';
+$string['tags:myaddinstance'] = 'Ajouter un bloc tags au tableau de bord';
 $string['tagthisunit'] = 'Mettre un tag à ce cours :';
 $string['tagunits'] = 'pour mettre des tags à vos cours préférés';

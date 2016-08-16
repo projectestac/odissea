@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['choices'] = 'Opcions disponibles';
 $string['clozeaid'] = 'Introduïu la paraula que falta';
 $string['correctansweris'] = 'La resposta correcta és: {$a}.';
 $string['correctfeedback'] = 'Per a qualsevol resposta correcta';
+$string['deletedchoice'] = 'Aquesta opció s\'ha suprimit després d\'haver iniciat l\'intent.';
 $string['errfractionsaddwrong'] = 'Les qualificacions positives que heu triat no sumen 100%.<br />En realitat sumen {$a}%.';
 $string['errfractionsnomax'] = 'Una de les opcions ha de tenir una puntuació del 100% de manera que sigui possible aconseguir la màxima puntuació en aquesta pregunta.';
 $string['errgradesetanswerblank'] = 'Qualificació posada, però la resposta està en blanc';

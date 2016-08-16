@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'form', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['month'] = 'Mois';
 $string['mustbeoverriden'] = 'La méthode form_definition() dans la classe {$a} doit être surchargée. Veuillez corriger le code.';
 $string['nomethodforaddinghelpbutton'] = 'Il n\'y a pas de méthode pour ajouter un bouton d\'aide sur un élément {$a->name} (classe {$a->classname}) de formulaire';
 $string['nonexistentformelements'] = 'Tentative d\'ajout de bouton d\'aide à des éléments non existants : {$a}';
+$string['noselection'] = 'Aucune sélection';
+$string['nosuggestions'] = 'Pas de suggestion';
 $string['optional'] = 'Facultatif';
 $string['othersettings'] = 'Autres réglages';
 $string['requiredelement'] = 'Champ requis';
@@ -58,6 +60,7 @@ $string['revealpassword'] = 'Révéler';
 $string['security'] = 'Sécurité';
 $string['selectallornone'] = 'Tout/ne rien sélectionner';
 $string['selected'] = 'Sélectionné';
+$string['selecteditems'] = 'Éléments sélectionnés';
 $string['showadvanced'] = 'Afficher éléments supplémentaires';
 $string['showless'] = 'Afficher moins...';
 $string['showmore'] = 'Afficher plus...';

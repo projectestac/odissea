@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_performance', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   report_performance
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['disabled'] = 'Desgaituta';
 $string['edit'] = 'Editatu';
 $string['enabled'] = 'Gaituta';
 $string['morehelp'] = 'laguntza gehiago';
+$string['pluginname'] = 'Errendimenduaren ikuspegi orokorra';
 $string['value'] = 'Balorea';

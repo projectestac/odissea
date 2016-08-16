@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Albiste-jarioak editatu';
 $string['editrssblock'] = 'RSS goialdeko blokea editatu';
 $string['enableautodiscovery'] = 'Gaitu jarioak berez aurkitzea?';
 $string['enableautodiscovery_help'] = 'Gaituz gero, web-orrietako jarioak automatikoki bilatuko dira. Adibidez, http://docs.moodle.org idazten bada, http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss bilatuko da.';
-$string['errorloadingfeed'] = 'Errorea RSS jario hau bilatzean ({$a})';
 $string['feed'] = 'Jarioa';
 $string['feedadded'] = 'Albiste-jarioa gehitu da';
 $string['feeddeleted'] = 'Albiste-jarioa ezabatu da';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'RSS jario pribatuak sortu';
 $string['rss_client:createsharedfeeds'] = 'Partekatutako RSS jarioak sortu';
 $string['rss_client:manageanyfeeds'] = 'Edozein RSS jario kudeatu';
 $string['rss_client:manageownfeeds'] = 'Norberaren RSS jarioak kudeatu';
-$string['rss_client:myaddinstance'] = 'Gehitu urrutiko albiste-jarioa bloke berria Nire hasieran';
+$string['rss_client:myaddinstance'] = 'Gehitu urrutiko albiste-jarioa bloke berria aginte-panelean';
 $string['seeallfeeds'] = 'Jario guztiak ikusi';
 $string['sharedfeed'] = 'Partekatutako jarioa';
 $string['shownumentrieslabel'] = 'Blokeko erakuts daitekeen gehienezko sarrera-kopurua.';

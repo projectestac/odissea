@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,6 @@ $string['alttext'] = 'Étiquette';
 $string['answer'] = 'Réponse';
 $string['bgimage'] = 'Image de fond';
 $string['clearwrongparts'] = 'Déplacer les marqueurs qui ne sont pas à la bonne place à leur position de départ, en-dessous de l\'image';
-$string['confirmimagetargetconversion'] = 'Vous êtes sur le point de convertir des questions de type image cible ci-dessus vers des questions de type marqueurs à glisser-déposer.';
-$string['convertingimagetargetquestion'] = 'Question convertie « {$a->name} »';
 $string['coords'] = 'Coordonnées';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['draggableimage'] = 'Image déplaçable';
@@ -43,46 +41,35 @@ $string['dropbackground'] = 'Image de fond pouvant être recouverte de marqueurs
 $string['dropzone'] = 'Zone de dépôt {$a}';
 $string['dropzoneheader'] = 'Zone de dépôt';
 $string['dropzones'] = 'Zones de dépôt';
-$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu, ci-dessus, se met immédiatement à jour ce qui vous permet de placer et d\'ajuster les zones pas à pas.
+$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu ci-dessus, se met immédiatement à jour, ce qui vous permet de placer et d\'ajuster les zones pas à pas.
 
-* Cercle: centre_x, centre_y; rayon<br>par exemple: <code>80, 100; 50</code>
-* Polygone: x1, y1; x2, y2; ...; xn, yn<br>par exemple: <code>20, 60; 100, 60; 20, 100</code>
-* Rectangle: x1, y1(coordonnées coin gauche haut); largeur, hauteur<br>par exemple: <code>20, 60; 80, 40</code>';
+* Cercle : centre_x, centre_y; rayon<br />par exemple : <code>80, 100; 50</code>
+* Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20, 60; 100, 60; 20, 100</code>
+* Rectangle : x1, y1 (coordonnées coin gauche haut) ; largeur, hauteur<br/>par exemple : <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Les marqueurs suivants ont été placés dans la mauvaise zone : {$a}.';
 $string['followingarewrongandhighlighted'] = 'Les marqueurs suivants étaient placés de manière incorrecte : {$a}. Les marqueurs en surbrillance sont à présent à leur place.<br /> Cliquez sur le marqueur pour mettre la zone autorisée en surbrillance.';
 $string['formerror_nobgimage'] = 'Vous devez sélectionner une image à utiliser comme fond pour cette aire de glisser-déposer.';
-$string['formerror_noitemselected'] = 'Vous avez spécifié une zone de dépôt mais n\'avez pas choisi de marqueur qui doive être déplacé sur cette zone';
+$string['formerror_noitemselected'] = 'Vous avez spécifié une zone de dépôt mais n\'avez pas choisi de marqueur qui doive être déplacé sur cette zone.';
 $string['formerror_nosemicolons'] = 'Il n\'y a pas de point-virgule dans votre chaîne de caractère définissant les coordonnées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
-$string['formerror_onlysometagsallowed'] = 'Seules les balises « {$a} » sont autorisées dans le label d\'un marqueur';
+$string['formerror_onlysometagsallowed'] = 'Seules les balises « {$a} » sont autorisées dans le label d\'un marqueur.';
 $string['formerror_onlyusewholepositivenumbers'] = 'Veuillez n\'utiliser que des nombres entiers positifs pour spécifier les coordonnées x,y et/ou la largeur et la hauteur des formes. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'Vous devez spécifier au moins 3 points pour définir un polygone. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_repeatedpoint'] = 'Vous avez saisi deux fois le même point. Veuillez retirer ce doublon. Les coordonnées pour un {$a->shape} doivent être exprimée ainsi : {$a->coordsstring}.';
-$string['formerror_shapeoutsideboundsofbgimage'] = 'La forme que vous avez définie sort des limites de l\'image de fond';
-$string['formerror_toomanysemicolons'] = 'Il y a trop d\'élément séparés par des points-virgules dans les coordonnées que vous avez spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_shapeoutsideboundsofbgimage'] = 'La forme que vous avez définie sort des limites de l\'image de fond.';
+$string['formerror_toomanysemicolons'] = 'Il y a trop d\'éléments séparés par des points-virgules dans les coordonnées que vous avez spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_unrecognisedwidthheightpart'] = 'Impossible d\'évaluer la hauteur et la largeur spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_unrecognisedxypart'] = 'Impossible d\'évaluer les coordonnées x,y spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
-$string['imagetargetconverter'] = 'Converti les questions de type image cible vers des questions de type marqueurs à glisser-déposer.';
 $string['infinite'] = 'Infini';
-$string['listitemconfirmcategory'] = 'Vous êtes sur le point de convertir toutes les questions image cible dans la catégorie « {$a->name} » (contient {$a->qcount} questions de type image cible)';
-$string['listitemconfirmcontext'] = 'Vous êtes sur le point de convertir toutes les questions image cible dans le contexte « {$a->name} » (contient {$a->qcount} questions de type image cible)';
-$string['listitemconfirmquestion'] = 'Vous êtes sur le point de convertir la question « {$a->name} »';
-$string['listitemlistallcategory'] = 'Sélectionne toutes les questions de type image cible dans la catégorie « {$a->name} » (contient {$a->qcount} questions de type image cible)';
-$string['listitemlistallcontext'] = 'Sélectionne toutes les questions de type image cible dans le contexte « {$a->name}" (contient {$a->qcount} questions de type image cible)';
-$string['listitemlistallquestion'] = 'Sélectionne la question « {$a->name} »';
-$string['listitemprocessingcategory'] = 'Converti toutes les questions de type image cible dans la catégorie « {$a->name} » (contient {$a->qcount} questions de type image cible)';
-$string['listitemprocessingcontext'] = 'Converti toutes les questions de type image cible dans le contexte « {$a->name} » (contient {$a->qcount} questions de type image cible)';
-$string['listitemprocessingquestion'] = 'Question convertie « {$a->name} »';
 $string['marker'] = 'Marqueur';
 $string['marker_n'] = 'Marqueur {no}';
 $string['markers'] = 'Marqueurs';
 $string['nolabel'] = 'Pas d\'étiquette';
 $string['noofdrags'] = 'Nombre';
-$string['noquestionsfound'] = 'Aucune question trouvée à convertir ici.';
-$string['pleasedragatleastonemarker'] = 'Votre réponse est incomplète, vous devez placer au moins un marqueur sur l\'image.';
+$string['pleasedragatleastonemarker'] = 'Votre réponse est incomplète ; vous devez placer au moins un marqueur sur l\'image.';
 $string['pluginname'] = 'Marqueurs à glisser-déposer';
 $string['pluginnameadding'] = 'Ajouter des marqueurs à glisser-déposer';
 $string['pluginnameediting'] = 'Modifier des marqueurs à glisser-déposer';
-$string['pluginname_help'] = 'Sélectionner un fichier pour l\'image de fond, entrez des labels pour les marqueurs et définissez des zones de dépôt pour ces marqueurs sur l\'image de fond.';
+$string['pluginname_help'] = 'Sélectionner un fichier pour l\'image de fond, saisissez des labels pour les marqueurs et définissez des zones de dépôt pour ces marqueurs sur l\'image de fond.';
 $string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnamesummary'] = 'Des marqueurs sont glissés et déposés sur une image de fond.';
 $string['previewareaheader'] = 'Prévisualiser';
@@ -93,7 +80,7 @@ $string['shape_circle'] = 'Cercle';
 $string['shape_circle_coords'] = 'x,y;r (où x, y sont les coordonnées du centre du cercle et r est son rayon)';
 $string['shape_circle_lowercase'] = 'cercle';
 $string['shape_polygon'] = 'Polygone';
-$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4;... (où x1, y1 sont les coordonnées du premier sommet, x2, y2 les coordonnées du deuxième sommet, etc. Il n\'est pas nécessaire de répéter les coordonnées du premier sommet pour fermer le polygone)';
+$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4;... (où x1, y1 sont les coordonnées du premier sommet, x2, y2 les coordonnées du deuxième sommet, etc. Il n\'est pas nécessaire de répéter les coordonnées du premier sommet pour fermer le polygone).';
 $string['shape_polygon_lowercase'] = 'polygone';
 $string['shape_rectangle'] = 'Rectangle';
 $string['shape_rectangle_coords'] = 'x,y;w,h (où x, y sont les coordonnées du coin supérieur gauche du rectangle et w, h sont la largeur et la hauteur du rectangle)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'url', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,8 +66,9 @@ $string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren berezko altuera
 $string['popupwidth'] = 'Pop-up-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren berezko zabalera.';
 $string['printintro'] = 'Erakutsi URLaren deskribapena';
-$string['printintroexplain'] = 'Erakutsi URL deskribapena edukiaren azpian? Erakusteko hainbat motek ez dute erakusten URL deskribapena gaituta egon arren.';
+$string['printintroexplain'] = 'Erakutsi URL izena edukiaren azpian? Erakusteko hainbat motak ez dute erakusten URL izena nahiz eta gaituta egon.';
 $string['rolesinparams'] = 'Sartu rol-izenak parametroetan';
+$string['search:activity'] = 'URLa';
 $string['serverurl'] = 'Zerbitzariaren URLa';
 $string['url:addinstance'] = 'Gehitu beste URL baliabide bat';
 $string['url:view'] = 'Ikusi URLa';

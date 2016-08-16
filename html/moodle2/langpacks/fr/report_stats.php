@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_stats', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventreportviewed'] = 'Rapport de statistiques consulté';
 $string['eventuserreportviewed'] = 'Rapport de statistiques utilisateur consulté';
+$string['nocapability'] = 'Impossible d\'accéder au rapport de statistiques de l\'utilisateur';
 $string['page-report-stats-index'] = 'Rapport de statistiques de cours';
 $string['page-report-stats-user'] = 'Rapport utilisateur de statistiques de cours';
 $string['page-report-stats-x'] = 'Tout rapport de statistiques';

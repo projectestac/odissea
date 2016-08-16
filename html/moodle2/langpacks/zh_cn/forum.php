@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,6 +103,8 @@ $string['configmaxattachments'] = '每个帖子缺省允许的最大附件数。
 $string['configmaxbytes'] = '缺省的所有讨论区最大附件尺寸(受课程设置和本地配置的限制)';
 $string['configoldpostdays'] = '帖子在多少天后应当被视为已读。';
 $string['configreplytouser'] = '当通过email发送讨论区中的帖子时，是否可以包含用户的email地址，以便收信人可以直接而不是通过讨论区回复发帖人？即使设置为“是”，用户仍可以在他们的个人资料里设置email地址为保密。';
+$string['configrssarticlesdefault'] = '若启用RSS，请设置默认的文章篇数(不分讨论或贴文)';
+$string['configrsstypedefault'] = '若启用RSS，请设置默认的活动类型';
 $string['configshortpost'] = '少于该长度(字符个数，不含 HTML)的帖子被认为是短的（见下一项）。';
 $string['configtrackingtype'] = '阅读跟踪信息的默认设置';
 $string['configtrackreadposts'] = '如果希望跟踪每一个用户的已读/未读信息则设定为“是”。';
@@ -123,6 +125,7 @@ $string['deletesure'] = '您确定要删除该帖吗?';
 $string['deletesureplural'] = '您确定要删除这个帖子及其回复吗？({$a} 个帖子)';
 $string['digestmailheader'] = '这是来自 {$a->sitename} 网站讨论区的每日新帖摘要。要修改您的关于讨论区的偏好设置，请访问 {$a->userprefs}。';
 $string['digestmailpost'] = '更改讨论区摘要的默认设置';
+$string['digestmailpostlink'] = '更改你的讨论区摘要偏好：{$a}';
 $string['digestmailprefs'] = '您的用户信息';
 $string['digestmailsubject'] = '{$a}: 讨论区摘要';
 $string['digestmailtime'] = '发送邮件摘要的时间（整点）';
@@ -229,6 +232,7 @@ $string['forum:allowforcesubscribe'] = '允许强制订阅';
 $string['forumauthorhidden'] = '作者(隐藏)';
 $string['forumblockingalmosttoomanyposts'] = '您已经达到发帖的极限。在过去的 {$a->blockperiod} 里，您已经发表了 {$a->numposts} 个帖子。这个极限是 {$a->blockafter} 个帖子。';
 $string['forumbodyhidden'] = '您不能看这个帖子，可能因为您还没有参与到这个话题中，或者还未达到帖子的最长编辑时限，或者讨论还未开始或已经结束。';
+$string['forum:canposttomygroups'] = '能复制到你可访问的所有群组';
 $string['forum:createattachment'] = '上传附件';
 $string['forum:deleteanypost'] = '删除任何帖子（任何时间）';
 $string['forum:deleteownpost'] = '删除自己的帖子（在截止时间之内）';
@@ -343,6 +347,9 @@ $string['more'] = '更多';
 $string['movedmarker'] = '（移动）';
 $string['movethisdiscussionto'] = '将此论题移至...';
 $string['mustprovidediscussionorpost'] = '导出时，您必须提供一个话题id或帖子id';
+$string['myprofileotherdis'] = '论坛讨论区';
+$string['myprofileowndis'] = '我的论坛讨论区';
+$string['myprofileownpost'] = '我的讨论区帖子';
 $string['namenews'] = '新闻讨论区';
 $string['namenews_help'] = '新闻讨论区，是一个用来发布消息的特别讨论区，在课程建立时会被自动创建。每门课程只能有一个新闻讨论区。只有教师和管理员可以在新闻讨论区发帖。“最近新闻”版块会显示新闻讨论区最近的讨论。';
 $string['namesocial'] = '公众讨论区';
@@ -405,6 +412,9 @@ $string['postincontext'] = '在上下文中看此帖';
 $string['postmailinfo'] = '这是一份来自网站 {$a} 的帖子。
 
 点击此链接回复：';
+$string['postmailinfolink'] = '这是提交到{$a->coursename} 课程讨论区的帖子副本。
+
+若要回复，请点击这一链接 ：{$a->replylink}';
 $string['postmailnow'] = '<p>这个帖子将会被立即发给所有讨论订阅者。</p>';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = '极端独立型';
@@ -414,6 +424,8 @@ $string['posts'] = '帖子';
 $string['postsmadebyuser'] = '{$a}的帖子';
 $string['postsmadebyuserincourse'] = '{$a->fullname}在{$a->coursename}中的帖子';
 $string['posttoforum'] = '发到讨论区上';
+$string['posttomygroups'] = '提交一副本到所有群组';
+$string['posttomygroups_help'] = '提交这一信息的副本到所有你可访问的群組。你无法访问的群组的参与者将无法看到。';
 $string['postupdated'] = '您的帖子已经更新';
 $string['potentialsubscribers'] = '潜在订阅者';
 $string['prevdiscussiona'] = '前面的话题:{$a}';
@@ -449,6 +461,7 @@ $string['rssarticles_help'] = '<p align="center"><b>在RSS中包含的文章数�
 $string['rsssubscriberssdiscussions'] = '话题的RSS种子';
 $string['rsssubscriberssposts'] = '帖子的RSS种子';
 $string['rsstype'] = '本活动的RSS种子';
+$string['rsstypedefault'] = 'RSS类型';
 $string['rsstype_help'] = '<p align="center"><b>讨论区的RSS种子</b></p>
 
 <p>这个选项允许您开启这个讨论区的RSS种子。</p>
@@ -489,7 +502,8 @@ $string['subscribediscussion'] = '订阅这个话题';
 $string['subscribeenrolledonly'] = '抱歉，只有已选课用户才能订阅讨论区帖子通知。';
 $string['subscribenone'] = '让所有人退订此讨论区';
 $string['subscribers'] = '订阅者';
-$string['subscribersto'] = '订阅“{$a}”的用户';
+$string['subscribersto'] = '“{$a}”的订阅用户';
+$string['subscriberstowithcount'] = '订阅"{$a->name}" (共{$a->count}人)';
 $string['subscribestart'] = '该讨论区有新帖子时，通知我';
 $string['subscribestop'] = '该讨论区有新帖子时，不要通知我';
 $string['subscription'] = '订阅';
@@ -510,7 +524,9 @@ $string['subscriptionmode_help'] = '当用户订阅了讨论区时，他们会�
 $string['subscriptionoptional'] = '可选订阅';
 $string['subscriptions'] = '订阅';
 $string['thisforumisthrottled'] = '这个讨论区有规定周期内发帖数的限制，它被设置为 {$a->blockperiod} 内最多发 {$a->blockafter} 个帖子。';
+$string['timedhidden'] = '定时状态：不让学生看见';
 $string['timedposts'] = '定时帖子';
+$string['timedvisible'] = '定时状态：所有学生都可见';
 $string['timestartenderror'] = '可视时段的结束时间不能早于开始时间。';
 $string['trackforum'] = '跟踪未读帖子';
 $string['tracking'] = '跟踪';
@@ -538,6 +554,8 @@ $string['unsubscribealldone'] = '已为您取消所有可选的订阅，但仍�
 $string['unsubscribeallempty'] = '您没有订阅任何讨论区。到“我的个人资料”设置中的消息页面可以设置不接收本站的任何通知。';
 $string['unsubscribed'] = '未订阅';
 $string['unsubscribediscussion'] = '取消此讨论区订阅';
+$string['unsubscribediscussionlink'] = '取消訂閱话题：{$a}';
+$string['unsubscribelink'] = '取消訂閱讨论区：{$a}';
 $string['unsubscribeshort'] = '退订';
 $string['usermarksread'] = '手动标记阅读消息';
 $string['viewalldiscussions'] = '查看所有话题';

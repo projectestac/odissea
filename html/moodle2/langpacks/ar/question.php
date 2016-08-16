@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ $string['comment'] = 'تعليق';
 $string['comments'] = 'تعليقات';
 $string['commentx'] = 'تعليق : {$a}';
 $string['complete'] = 'تم/كامل';
-$string['correct'] = 'صحيح/صح';
+$string['correct'] = 'صحيح';
 $string['correctfeedbackdefault'] = 'إجابتك صحيحة';
 $string['created'] = 'تم إنشائه';
 $string['createdby'] = 'أٌنشيء بواسطة';
@@ -111,7 +111,6 @@ $string['flagthisquestion'] = 'علم هذا السؤال';
 $string['generalfeedback'] = 'إفادة عامه';
 $string['getcategoryfromfile'] = 'احصل على الفئه من ملف';
 $string['getcontextfromfile'] = 'الحصول على السياق من ملف';
-$string['hidden'] = 'مخفي/غير ظاهر';
 $string['hintn'] = 'تلميح';
 $string['hinttext'] = 'نص التلميح';
 $string['import'] = 'استيراد';
@@ -141,7 +140,7 @@ $string['notanswered'] = 'لم يتم الاجابة عليه';
 $string['notgraded'] = 'لم يتم التقييم';
 $string['notyetanswered'] = 'لم يتم الاجابة عليه بعد';
 $string['numqas'] = 'عدد محاولات السؤال';
-$string['numquestions'] = 'لا يوجد أسئلة';
+$string['numquestions'] = 'عدد الأسئلة';
 $string['options'] = 'خيارات';
 $string['page-question-category'] = 'صفحة فئة السؤال';
 $string['page-question-edit'] = 'صفحة تحرير السؤال';

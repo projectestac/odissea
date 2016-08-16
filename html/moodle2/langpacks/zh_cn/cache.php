@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cache', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,8 +35,10 @@ $string['area'] = '区域';
 $string['cacheadmin'] = '缓存管理';
 $string['cacheconfig'] = '配置';
 $string['cachedef_calendar_subscriptions'] = '日历订阅';
+$string['cachedef_capabilities'] = '系统功能列表';
+$string['cachedef_completion'] = '活动完成情况';
 $string['cachedef_config'] = '修改配置信息';
-$string['cachedef_coursecat'] = '特定用户的课程目录列表';
+$string['cachedef_coursecat'] = '特定用户的课程列表';
 $string['cachedef_coursecatrecords'] = '课程目录记录';
 $string['cachedef_coursecattree'] = '课程目录树';
 $string['cachedef_coursecontacts'] = '课程联系人列表';
@@ -44,18 +46,22 @@ $string['cachedef_coursemodinfo'] = '有关每一个课程章节和单元的汇�
 $string['cachedef_databasemeta'] = '数据库元信息';
 $string['cachedef_eventinvalidation'] = '事件无效';
 $string['cachedef_externalbadges'] = '给特定用户的外部徽章';
-$string['cachedef_gradecondition'] = '快取用户的分数已用来评价条件的可用性';
+$string['cachedef_grade_categories'] = '等级类别';
 $string['cachedef_groupdata'] = '课程组信息';
 $string['cachedef_htmlpurifier'] = 'HTML净化器-清除不必要的内容';
 $string['cachedef_langmenu'] = '可用的语言列表';
 $string['cachedef_locking'] = '锁定中';
 $string['cachedef_navigation_expandcourse'] = '浏览可以展开的课程清单';
 $string['cachedef_observers'] = '事件观察者';
+$string['cachedef_plugin_functions'] = '插件允许回调';
 $string['cachedef_plugin_manager'] = '插件管理员';
 $string['cachedef_questiondata'] = '试题定义';
 $string['cachedef_repositories'] = '库实例资料';
 $string['cachedef_string'] = '语言字符串缓存';
 $string['cachedef_suspended_userids'] = '列出每一课程的已休学用户';
+$string['cachedef_tagindexbuilder'] = '加标签的项目搜索结果';
+$string['cachedef_tags'] = '标签收藏和区域';
+$string['cachedef_temp_tables'] = '临时数据表缓存';
 $string['cachedef_userselections'] = '持续用户选择所用的资料';
 $string['cachedef_yuimodules'] = 'YUI模块定义';
 $string['cachelock_file_default'] = '默认文件锁定';
@@ -97,7 +103,10 @@ $string['inadequatestoreformapping'] = '因为所知的定义，存储不能匹�
 $string['invalidlock'] = '无效锁定';
 $string['invalidplugin'] = '无效插件';
 $string['invalidstore'] = '提供无效的缓存存储。';
+$string['localstorenotification'] = '这个缓存可以安全地映射一个存储到每个Web服务器';
 $string['lockdefault'] = '默认';
+$string['locking'] = '锁定中';
+$string['locking_help'] = '锁定是一种限制进程在同一时间访问缓存数据，以保证数据不会被覆盖的机制。这种锁定方法决定了锁如何被获取及检查。';
 $string['lockingmeans'] = '锁定机制';
 $string['lockmethod'] = '锁定方法';
 $string['lockmethod_help'] = '当为锁定所要求存储时，所用的方法。';
@@ -127,6 +136,7 @@ $string['requestcount'] = '以{$a}请求来进行测试';
 $string['rescandefinitions'] = '重新扫描定义';
 $string['result'] = '结果';
 $string['set'] = '设置';
+$string['sharedstorenotification'] = '这个缓存必须映射一个共享存储到所有服务器';
 $string['sharing'] = '分享';
 $string['sharing_all'] = '每个人。';
 $string['sharing_help'] = '这可以让你确定缓存中的数据如何被共享，如果你设置了一个集群，或者如果你有多个站点都设置了同样的存储且希望共享数据。这是一个高级设置，请确保您更改它之前了解其用途。';

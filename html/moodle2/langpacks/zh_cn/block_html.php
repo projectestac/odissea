@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_html', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['configclasses_help'] = '这个配置以主题来区分不同的HTML版�
 $string['configcontent'] = '内容';
 $string['configtitle'] = '版块标题';
 $string['html:addinstance'] = '添加一个HTML版块';
-$string['html:myaddinstance'] = '在我的首页添加一个HTML版块';
+$string['html:myaddinstance'] = '在控制面板添加一个HTML版块';
 $string['leaveblanktohide'] = '留空以隐藏标题';
 $string['newhtmlblock'] = '（新HTML版块）';
 $string['pluginname'] = 'HTML';

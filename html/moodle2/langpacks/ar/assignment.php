@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,16 +27,20 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'أضف مهمة جديدة';
 $string['assignment:exportownsubmission'] = 'صدر تسليمك الخاص بك';
-$string['assignment:exportsubmission'] = 'صدر التسليم';
+$string['assignment:exportsubmission'] = 'صدر تسليم';
 $string['assignment:grade'] = 'وضع درجة على المهمة';
-$string['assignment:submit'] = 'تقديم المهمة';
-$string['assignment:view'] = 'معاينة المهمة';
-$string['messageprovider:assignment_updates'] = 'إشعارات المهمات2.2';
-$string['modulename'] = '(مهمة 2.2 (مُعطّلة';
-$string['modulename_help'] = 'وحدة النشاط القديمة والتي تم حذفها من المودل';
-$string['modulenameplural'] = '(مهام2.2 (مُعطّلة';
+$string['assignment:submit'] = 'تقديم مهمة';
+$string['assignment:view'] = 'معاينة مهمة';
+$string['messageprovider:assignment_updates'] = 'إشعارات المهمات';
+$string['modulename'] = '2.2 مهمة';
+$string['modulename_help'] = '<p><img alt=""  src="<?php echo $CFG->wwwroot?>/mod/assignment/icon.gif" />&nbsp;<b>الوجبات</b></p>
+<p><b>يستطع المدرس من خلال الواجبات تحديد الواجب المطلوب من الطلاب
+تحضيره بمحتوى رقمي (في اي هيئة) والقيام بتسليمه بواسطة تحميل الملف في الخادم.
+نماذج الواجبات تضمن المقالات، المشاريع التعليمية، التقارير، إلخ. هذه الوحده
+تحتوي على إمكانيات تصحيح الواجبات وإعطائها الدرجات المستحقة.</b></p>';
+$string['modulenameplural'] = 'مهام';
 $string['page-mod-assignment-submissions'] = 'صفحة تقديم لوحدة المهمة';
 $string['page-mod-assignment-view'] = 'الصفحة الأساسية لوحدة المهمة';
 $string['page-mod-assignment-x'] = 'أي صفحة لوحدة المهمة';
-$string['pluginadministration'] = '(إدارة المهمات2.2 (مُعطّل';
-$string['pluginname'] = '(مهام 2.2 (مُعطّل';
+$string['pluginadministration'] = 'إدارة المهمات';
+$string['pluginname'] = 'وظائف (2.2)';

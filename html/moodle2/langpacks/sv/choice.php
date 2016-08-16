@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Besvarade';
 $string['atleastoneoption'] = 'Du måste lämna minst ett möjligt svar';
 $string['cannotsubmit'] = 'Tyvärr fanns det ett problem att lämna ditt val . Var god försök igen.';
 $string['choice'] = 'Svarsalternativ {$a}';
+$string['choiceactivityname'] = 'Val: {$a}';
 $string['choice:addinstance'] = 'Lägg till ett nytt val';
 $string['choice:choose'] = 'Registrera en opinionsundersökning';
 $string['choiceclose'] = 'Till';
+$string['choicecloseson'] = 'Opinionsundersökning stänger {$a}';
 $string['choice:deleteresponses'] = 'Ta bort responser';
 $string['choice:downloadresponses'] = 'Ladda ner responser';
 $string['choicefull'] = 'Den här opinonsundersökningen är full och det finns inga tillgängliga platser.';
@@ -88,6 +90,7 @@ $string['options'] = 'Alternativer';
 $string['page-mod-choice-x'] = 'Varje sida för valmodulen';
 $string['pluginadministration'] = 'Administration av opinionsundersökning';
 $string['pluginname'] = 'Opinionsundersökning';
+$string['previewonly'] = 'Detta är bara en förhandsvisning av de tillgängliga alternativen för den här aktiviteten . Du kommer inte att kunna lämna in ditt val innan {$a}';
 $string['privacy'] = 'Integritet för resultat';
 $string['publish'] = 'Publicera resultaten';
 $string['publishafteranswer'] = 'Visa resultaten för studenterna/eleverna/deltagarna/de lärande efter det att de har svarat';
@@ -103,6 +106,8 @@ $string['responsesresultgraphheader'] = 'Visa en graf';
 $string['responsesto'] = 'Svar till {$a}';
 $string['results'] = 'Resultat';
 $string['savemychoice'] = 'Spara min opinionsundersökning';
+$string['showpreview'] = 'Visa förhandsgranskning';
+$string['showpreview_help'] = 'Låt eleverna att förhandsgranska de tillgängliga alternativen innan valet öppnas för inlämning .';
 $string['showunanswered'] = 'Visa kolumn för icke besvarade';
 $string['skipresultgraph'] = 'Hoppa över diagrammet över resultat';
 $string['spaceleft'] = 'Tillgängligt utrymme';

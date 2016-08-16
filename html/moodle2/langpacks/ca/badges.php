@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,19 +66,19 @@ $string['awardedtoyou'] = 'Insígnies que m\'han donat';
 $string['awardoncron'] = 'S\'ha activat correctament l\'accés a les insígnies. Però hi ha massa usuaris que poden guanyar al mateix temps aquesta insígnia. Per assegurar el bon funcionament del lloc aquesta acció trigarà una mica a completar-se.';
 $string['awards'] = 'Destinataris';
 $string['backpackavailability'] = 'Verificació d\'una insígnia externa';
-$string['backpackavailability_help'] = 'Un servei extern de motxilles ha de poder accedir al vostre lloc i verificar les insígnies emeses perquè els guanyadors de les insígnies puguin demostrar que les hi heu donat. Sembla que ara mateix el vostre lloc no és accessible, i en conseqüència no es podran verificar les insígnies que ja heu donat o que donareu en el futur.
+$string['backpackavailability_help'] = 'Per tal que els guanyadors de les insígnies puguin demostrar que les hi heu donat, cal que un servei extern de motxilles pugui accedir al vostre lloc i verificar les insígnies emeses. Sembla que ara mateix el vostre lloc no és accessible, i en conseqüència no es podran verificar les insígnies que ja heu donat o que donareu en el futur.
 
 ##Per què estic veient aquest missatge?
 
-Pot ser degut a què el vostre tallafocs impedeix l\'accés d\'usuaris de fora de la vostra xarxa, a què el vostre lloc està protegit per una contrasenya, o a què esteu fen funcionar el lloc en un ordinador que no té accés a Internet (p.ex una màquina local de desenvolupament).
+Pot ser que el vostre tallafocs impedeixi l\'accés d\'usuaris de fora de la vostra xarxa, que el vostre lloc estigui protegit per una contrasenya, o que esteu fent funcionar el lloc en un ordinador que no és accessible des d\'internet (p.ex. una màquina local de desenvolupament).
 
 ##Això representa un problema?
 
-Si teniu planejat lliurar insígnies haureu de solucionar aquest problema si esteu en un lloc en producció, altrament els guanyadors no podran demostrar que han rebut les seves insígnies del vostre lloc. Si el lloc encara no és actiu podeu crear i lliurar insígnies de prova fins que el lloc s\'activi del tot.
+Si teniu planejat lliurar insígnies des d\'un lloc en producció haureu de solucionar aquest problema, altrament els guanyadors no podran demostrar que han rebut les seves insígnies del vostre lloc. Si el lloc encara no és actiu podeu crear i lliurar insígnies de prova sempre i quan feu el lloc accessible abans de posar-lo en producció.
 
 ##Què passa si no puc fer públicament  accessible el lloc sencer?
 
-L\'únic URL necessari per la verificació és [URL-del-lloc]/badges/assertion.php així que si podeu modificar el tallafocs per tal de permetre l\'accés extern a aquest fitxer la verificació podrà funcionar.';
+L\'únic URL necessari per la verificació és [URL-del-lloc]/badges/assertion.php, així que si podeu modificar el tallafocs per tal de permetre l\'accés extern a aquest fitxer, la verificació podrà funcionar.';
 $string['backpackbadges'] = 'Es mostren {$a->totalbadges} insígnia(es) de {$a->totalcollections} col·lecció(ons). <a href="mybackpack.php">Canvia la configuració de la motxilla</a>.';
 $string['backpackconnection'] = 'Connexió a la motxilla';
 $string['backpackconnection_help'] = 'Aquesta pàgina us permet configurar la connexió a un proveïdor extern de motxilles. Si us hi connecteu podreu mostrar insígnies externes en aquest lloc i pujar a la motxilla les insígnies que guanyeu aquí.
@@ -89,18 +89,20 @@ $string['backpackemail'] = 'Adreça de correu';
 $string['backpackemail_help'] = 'Adreça electrònica associada a la vostra motxilla.
 Mentre esteu connectat, qualsevol insígnia guanyada en aquest lloc quedarà associada amb aquesta adreça electrònica.';
 $string['backpackimport'] = 'Configuració de la importació d\'insígnies';
-$string['backpackimport_help'] = 'Un cop s\'hagi establert correctament la connexió amb la motxilla les insígnies de la vostra motxilla es podran veure a la pàgina "Les meves insígnies" i a la del perfil.
+$string['backpackimport_help'] = 'Un cop s\'hagi establert correctament la connexió amb la motxilla, les insígnies de la vostra motxilla es podran veure a la pàgina «Les meves insígnies» i a la del vostre perfil.
 
-En aquesta àrea podeu seleccionar les col·leccions d\'insígnies de la vostra motxilla que voleu mostrar al perfil.';
+En aquesta àrea podeu seleccionar les col·leccions d\'insígnies de la vostra motxilla que voleu mostrar al vostre perfil.';
 $string['badgedetails'] = 'Detalls de la insígnia';
 $string['badgeimage'] = 'Imatge';
 $string['badgeimage_help'] = 'Aquesta és una imatge que s\'utilitzarà quan s\'emeta aquesta insígnia.
 Per afegir una nova imatge, navegueu i trieu una imatge (en format JPG o PNG), després feu clic a "Desa els canvis". La imatge es retallarà en forma de quadrat i s\'escalarà per ajustar-se als requisits d\'imatge de la insígnia.';
 $string['badgeprivacysetting'] = 'Configuració de privacitat de la insígnia';
-$string['badgeprivacysetting_help'] = 'Les insígnies que guanyeu es poden mostrar a la vostra pàgina de perfil del compte. Aquests paràmetres us permeten definir automàticament la visibilitat de les noves insígnies guanyades.
-Encara podeu controlar la configuració de privacitat d\'una insígnia individual a la vostra pàgina "Les meues insígnies".';
+$string['badgeprivacysetting_help'] = 'Les insígnies que guanyeu es poden mostrar a la vostra pàgina de perfil del compte. Aquest paràmetre us permet definir automàticament la visibilitat de les noves insígnies guanyades.
+
+Encara podeu controlar la configuració de privacitat d\'una insígnia individual a la vostra pàgina «Les meves insígnies».';
 $string['badgeprivacysetting_str'] = 'Mostra automàticament les insígnies que guanye a la meva pàgina de perfil';
-$string['badgesalt'] = 'Sal per a la funció resum aplicada a l\'adreça de correu electrònic del destinatari';
+$string['badges'] = 'Insígnies';
+$string['badgesalt'] = 'Sal per a la funció resum que s\'aplica a l\'adreça de correu electrònic del destinatari';
 $string['badgesalt_desc'] = 'Utilitzar una funció resum (hash) permet als serveis motxilla confirmar qui ha guanyat la insígnia sense haver de revelar la seva adreça de correu electrònic. Aquest paràmetre només hauria d\'utilitzar números i lletres.
 
 Nota: Per tal de poder verificar els receptors, eviteu de canviar aquest paràmetre una vegada hàgiu començat a repartir insígnies.';
@@ -215,6 +217,7 @@ $string['error:backpackproblem'] = 'Hi ha hagut un problema en connectar amb el 
 $string['error:badjson'] = 'L\'intent de connexió ha retornat dades invàlides.';
 $string['error:cannotact'] = 'No es pot activar la insígnia.';
 $string['error:cannotawardbadge'] = 'No es pot concedir la insígnia a un usuari.';
+$string['error:cannotdeletecriterion'] = 'Aquest criteri no es pot eliminar.';
 $string['error:clone'] = 'No es pot duplicar la insígnia.';
 $string['error:connectionunknownreason'] = 'La connexió no ha prosperat, però no s\'ha donat cap raó.';
 $string['error:duplicatename'] = 'Ja existeix al sistema una insígnia amb el mateix nom.';
@@ -243,6 +246,7 @@ $string['error:requesterror'] = 'La petició de connexió ha fallat (codi d\'err
 $string['error:requesttimeout'] = 'La petició de connexió ha superat el temps permès abans de poder-se completar.';
 $string['error:save'] = 'No es pot desar la insígnia.';
 $string['error:userdeleted'] = '{$a->user} (Aquest usuari ja no existeix al lloc {$a->site})';
+$string['eventbadgeawarded'] = 'Insígnia concedida';
 $string['evidence'] = 'Evidència';
 $string['existingrecipients'] = 'Destinataris de la insígnia existents';
 $string['expired'] = 'Ha caducat';
@@ -259,7 +263,6 @@ $string['externalbadges_help'] = 'Aquesta àrea mostra insígnies de la vostra m
 $string['externalbadgesp'] = 'Insígnies d\'altres llocs web:';
 $string['externalconnectto'] = 'Per mostrar les insígnies externes necessiteu <a href="{$a}">connectar-vos a una motxilla</a>.';
 $string['fixed'] = 'Data fixa';
-$string['hidden'] = 'Oculta';
 $string['hiddenbadge'] = 'Malauradament, el propietari de la insígnia no ha fet disponible aquesta informació.';
 $string['issuancedetails'] = 'Expiració de la insígnia';
 $string['issuedbadge'] = 'Informació de la insígnia emesa';
@@ -278,7 +281,9 @@ $string['makeprivate'] = 'Fes privada';
 $string['makepublic'] = 'Fes pública';
 $string['managebadges'] = 'Gestiona insígnies';
 $string['message'] = 'Cos del missatge';
-$string['messagebody'] = '<p> Heu guanyat una insígnia "%badgename%"! </p><p> Podeu trobar més informació sobre aquesta insígnia en %badgelink%. </p><p> Si no hi ha una insígnia adjunta a aquest correu electrònic, podeu gestionar-la i descarregar-la des de la pàgina {$a}. </p>';
+$string['messagebody'] = '<p>Heu guanyat una insígnia "%badgename%"! </p>
+<p>Podeu trobar més informació sobre aquesta insígnia a la pàgina %badgelink%. /p>
+<p>Podeu gestionar i descarregar la insígnia des de la vostra pàgina {$a}.</p>';
 $string['messagesubject'] = 'Enhorabona! Heu guanyat una insígnia!';
 $string['method'] = 'Aquest criteri es completa quan...';
 $string['mingrade'] = 'Qualificació mínima requerida';
@@ -319,6 +324,7 @@ $string['personaconnection_help'] = 'Persona és un sistema per identificar-vos 
 
 Per a més informació sobre Persona, visiteu <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Receptors potencials de la insígnia';
+$string['preferences'] = 'Preferències de les insígnies';
 $string['recipientdetails'] = 'Detalls del receptor';
 $string['recipientidentificationproblem'] = 'No s\'ha trobat cap receptor d\'aquesta insígnia entre els usuaris existents.';
 $string['recipients'] = 'Receptors de la insígnia';
@@ -363,7 +369,7 @@ $string['statusmessage_3'] = 'Actualment aquesta insígnia està disponible per 
 $string['statusmessage_4'] = 'Actualment aquesta insígnia està arxivada.';
 $string['subject'] = 'Assumpte del missatge';
 $string['variablesubstitution'] = 'Substitució de variables en els missatges.';
-$string['variablesubstitution_help'] = 'En un missatge d\'insígnia, determinades variables es poden inserir en l\'assumpte o en el cos d\'un missatge de manera que es reemplaçaran per valors reals quan s\'envii el missatge. Les variables s\'han d\'inserir en el el text exactament tal i com es mostren a continuació. Es poden utilitzar les següents variables:
+$string['variablesubstitution_help'] = 'En un missatge d\'insígnia, determinades variables es poden inserir en l\'assumpte i/o en el cos d\'un missatge de manera que es reemplaçaran per valors reals quan s\'envii el missatge. Les variables s\'han d\'inserir en el el text exactament tal i com es mostren a continuació. Es poden utilitzar les següents variables:
 
 %badgename%
 : Això serà reemplaçat pel nom complet de la insígnia.

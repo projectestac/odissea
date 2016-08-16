@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'install', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['caution'] = 'Precaución';
 $string['chooselanguage'] = 'Seleccionar idioma';
 $string['chooselanguagehead'] = 'Seleccionar idioma';
 $string['chooselanguagesub'] = 'Por favor, seleccione un idioma para el proceso de instalación. Este idioma se usará también como idioma por defecto del sitio, si bien puede cambiarse más adelante.';
+$string['cliadminemail'] = 'Nuevo correo electrónico de administrador';
 $string['cliadminpassword'] = 'Nueva contraseña de usuario admin';
 $string['cliadminusername'] = 'Nombre de usuario de la cuenta del administrador';
 $string['clialreadyconfigured'] = 'El archivo de configuración config.php ya existe. Por favor, utilice admin/cli/install_database.php para instalar Moodle en este sitio.';
@@ -47,6 +48,7 @@ $string['clialreadyinstalled'] = 'El archivo de configuración config.php ya exi
 $string['cliinstallfinished'] = 'La instalación se completo exitosamente.';
 $string['cliinstallheader'] = 'Programa de instalación Moodle de línea de comando {$a}';
 $string['climustagreelicense'] = 'En modo no interactivo debe aceptar la licencia especificando la opción --agree-license';
+$string['cliskipdatabase'] = 'Omitiendo instalación de la base de datos.';
 $string['clitablesexist'] = 'Tablas de base de datos ya existentes, la instalación CLI no puede continuar.';
 $string['compatibilitysettings'] = 'Comprobando sus ajustes PHP...';
 $string['compatibilitysettingshead'] = 'Comprobando sus ajustes PHP...';

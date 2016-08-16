@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mentees', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['configtitle'] = 'Titre du bloc';
 $string['configtitleblankhides'] = 'Titre du bloc (pas de titre si vide)';
 $string['leaveblanktohide'] = 'Laisser vide pour cacher le titre';
 $string['mentees:addinstance'] = 'Ajouter un bloc participants suivis';
-$string['mentees:myaddinstance'] = 'Ajouter un bloc participants suivis à Ma page';
+$string['mentees:myaddinstance'] = 'Ajouter un bloc participants suivis au tableau de bord';
 $string['newmenteesblock'] = '(Nouveau bloc participants suivis)';
 $string['pluginname'] = 'Participants suivis';

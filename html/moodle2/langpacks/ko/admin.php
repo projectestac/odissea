@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'admin', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,6 @@ $string['allowthemechangeonurl'] = '주소지에 있는 테마로 변경 허용'
 $string['allowuserblockhiding'] = '블록 감추기 허용';
 $string['allowuserswitchrolestheycantassign'] = '역할 부여 능력이 없는 사용자에게 역할을 바꿀수 있도록 허용';
 $string['allowuserthemes'] = '개인별 테마 허용';
-$string['antivirus'] = '바이러스 방역';
 $string['appearance'] = '꾸미기';
 $string['aspellpath'] = 'aspell 경로';
 $string['authentication'] = '인증';
@@ -110,7 +109,6 @@ $string['change'] = '변경';
 $string['checkboxno'] = '아니오';
 $string['checkboxyes'] = '예';
 $string['choosefiletoedit'] = '편집할 파일 선택';
-$string['clamfailureonupload'] = '바이러스 검역 실패';
 $string['cleanup'] = '정리';
 $string['clianswerno'] = 'n';
 $string['cliansweryes'] = 'y';
@@ -126,6 +124,7 @@ $string['cliupgradefinished'] = '명령어 줄 판올림이 성공적으로 완�
 $string['cliupgradenoneed'] = '설치 버전 {$a} 에 대해  업그레이드가 필요하지 않습니다. 감사합니다!';
 $string['cliyesnoprompt'] = 'y(예를 의미) 혹은 n(아니오를 의미)을 입력';
 $string['commentsperpage'] = '페이지마다 표시될 덧글';
+$string['commonactivitysettings'] = '일반 설정';
 $string['commonfiltersettings'] = '공용 필터 설정';
 $string['commonsettings'] = '일반 설정';
 $string['componentinstalled'] = '구성요소가 설치되었음';
@@ -155,9 +154,6 @@ $string['configautologinguests'] = '어떤 강좌에 방문객이 접속했을 �
 $string['configbloglevel'] = '본 설정은 이 사이트에 있는 사용자 블로그를 어느 수준까지 보게 할 것인가를 지정하는 것입니다. 블로그에 게제된 유형 혹은 내용을 지정하는 것이 아니라 Viewer의 최대 영역을 지정한다는 점에 유의하기 바란다. 여러분이 블로그 사용을 꺼려하면 이를 비활성화 시킬 수 있습니다.';
 $string['configcalendarcustomexport'] = '달력 날짜 범위 맞춤 내보내기 활성화';
 $string['configcalendarexportsalt'] = '이 무작위 문장은 달력을 내보내기 하는데 사용되는 인증토큰의 보안을 증가시키기 위해 사용됩니다. 만일 이 해시 솔트를 변경하면 모든 현재의 토큰이 무효화 됨을 주목하십시요..';
-$string['configclamactlikevirus'] = '바이러스 파일로 처리';
-$string['configclamdonothing'] = '정상적인 파일로 처리';
-$string['configclamfailureonupload'] = '만약 업로드 된 파일을 검사하도록 clam을 구성했는데, 잘 못 설정되거나 알려지지 않은 이유 때문에 오류가 발생한다면, 어떻게 될까? 이 때 만약 \'바이러스 파일로 처리하기\'를 선택한다면 그들은 격리 구역으로 가거나 삭제될 것입니다. 만약 \'정상적인 파일로 처리\'를 선택하면 그 파일은 일반적인 저장고로 이동할 것입니다. 어쨌든 관리자는 이에 대한 경고를 받게 됩니다. 만약 당신이 \'바이러스 파일로 처리\'를 선택했는데, 어떤 이유에서건 실행 오류를 만나게 된다면(대개는 불가능한 경로를 설정했기 때문에 생긴다)업로드 된 모든 파일은 격리된 구역으로 옮겨지거나 삭제 됩니다. 이 설정을 할 때는 매우 조심하십시요.';
 $string['configcookiehttponly'] = 'PHP 5.2.0기능 활성화 - 브라우저가 실제 http의 요청에만 쿠키를 제공해야 하며 스크립트에 의해서는 쿠키를 접속할 수 없어야 한다. 이것은 모든 브라우저를 지원하는 것은 아니며 모든 코드에 완벽히 호환되지는 않을 것이다. 몇 종류의 XSS 공격을 막는데 도움이 된다.';
 $string['configcookiesecure'] = '만일 서버가 https 접속만 허용한다면 보안 쿠키 제공 활성화를 권장한다. 만일 이를 활성화 해 놓았다면 웹서버는 http://나 https:// 주소로 우회시킨 설정에 대해서는 접속을 허용하지 않을 것이다. <em>wwwroot</em> 가 https:// 로 시작하지 않는  주소에 대해서는 이 설정은 자동적으로 꺼진다.';
 $string['configcountry'] = '만약 여기에 국가를 지정한다면, 지정된 국가는 새로운 사용자계정의 기본값으로 설정된다. 사용자 스스로 국가(언어)를 선택하게 하고 싶으면, 지정하지 말고 그냥 놓아 두십시요.';
@@ -284,7 +280,6 @@ $string['confignotloggedinroleid'] = '미등록 사용자들은 사이트의 관
 $string['configopentogoogle'] = '이 설정을 체크해 놓으면 구글은 이 사이트에 손님계정으로 들어올 수 있게 된다. 또한, 구글서치를 통해서 들어오는 사람들도 자동적으로 손님 계정으로 로그인 될 것이다. 이미 손님계정의 방문을 허락한 곳이라면 구글은 아무 제한없이 투명하게 접속시킨다는 점을 유의하라.';
 $string['configoverride'] = 'config.php에 정의됨';
 $string['configpasswordpolicy'] = '이 기능을 켜 놓으면 암호부여 정책에 따라 사용자의 비밀번호가 유효한지 점검합니다. 암호부여 정책을 규정하기 위해 아래 내용을 설정하시오.(\'아니오\'를 선택하면 무시됩니다)';
-$string['configpathtoclam'] = 'clam AV의 경로. 대체로 리눅스 계열에서는 /usr/bin/clamscan 나 /usr/bin/clamdscan 가 될 것이다. clam AV를 실행하기 위해 경로를 정확히 지정해야 한다.';
 $string['configpathtodu'] = 'du의 경로. 대개 /usr/bin/du 가 됩니다. 만약 이를 설정해 놓는다면, 이 경로에 있는 내용들이 다른 많은 파일들이 들어있는 경로보다 빠르게 출력될 것입니다.';
 $string['configperfdebug'] = '이 기능을 활성화시키면, 표준테마의 경우 맨 아랫단에 성능에 대한 정보가 나타날 것이다.';
 $string['configprofileroles'] = '개인정보 및 참여자  페이지에 제공될 역활 목록';
@@ -296,8 +291,6 @@ $string['configproxypassword'] = '어떤 경우에는 프록시를 통해 인터
 $string['configproxyport'] = '프록시 서버가 필요하다면, 여기에 프록시 포트를 적어 넣어라.';
 $string['configproxytype'] = '웹 프록시의 종류(SOCKS5지원을 위해서는 PHP5와 cURL 익스텐션이 필요)';
 $string['configproxyuser'] = '어떤 경우 프록시를 통해 인터넷에 접속할 때 사용자 ID가 필요합니다. 필요없을 경우에는 비워 두십시오(PHP cURL 익스텐션이 필요)';
-$string['configquarantinedir'] = '만약 clam AV가 감염된 파일을 격리된 디렉토리로 이동시키길 원한다면, 그 경로를 여기에 입력하세요. 그 경로는 반드시 웹서버가 "쓸 수"있어야 합니다.
-만약에 이 곳을 비워두거나 기록할 수 없거나 존재하지 않는 디렉토리를 입력한다면, 감염된 파일은 삭제될 것입니다. 경로명을 쓸 때 마지막 슬래쉬는 포함시키면 안됩니다.';
 $string['configrecaptchaprivatekey'] = '무들 서버와 recaptcha.net 서버 사이에 통신용으로 쓰이는 문자열. http://recaptcha.net에 접속하여 이 사이트에 쓸 문자열을 얻어 오라.';
 $string['configrecaptchapublickey'] = '등록 양식에 reCAPTCHA 요소를 표시하기 위해 쓸 문자열. http://recaptcha.net에서 생성';
 $string['configrequestcategoryselection'] = '강좌를 요청할 때 범주를 선택할 수 있습니다.';
@@ -305,10 +298,6 @@ $string['configrequestedstudentname'] = '강좌에서 학생을 지칭하는 용
 $string['configrequestedstudentsname'] = '강좌에서 학생들을 지칭하는 용어';
 $string['configrequestedteachername'] = '강좌에서 선생님을 지칭하는 용어';
 $string['configrequestedteachersname'] = '강좌에서 선생님들을 지칭하는 용어';
-$string['configrequiremodintro'] = '매 활동에 입장할 때 활동 소개를 강제로 보게하고 싶지 않은 경우, 이 선택을 비활성할 것';
-$string['configrunclamavonupload'] = '이를 켜 놓으면, clam AV는 업로드되는 모든 파일을 검색할 것이다.';
-$string['configrunclamonupload'] = '업로드된 파일에 대해 clam AV로 바이러스 검색을 하겠는가? 이를 위해서는 clam 프로그램의 정확한 경로가 필요할 것이다.
-(clam AV는 http://www.clamav.net/로부터 공짜로 제공되는 바이러스 스캐너이다.)';
 $string['configsectioninterface'] = '인터페이스';
 $string['configsectionmail'] = '메일';
 $string['configsectionmaintenance'] = '유지보수';
@@ -680,7 +669,7 @@ $string['multilangforceold'] = '강제로 예전의 다중언어 문법 사용: 
 $string['mustenablestats'] = '아직 통계수집을 하도록 설정하지 않았습니다.';
 $string['mycoursesperpage'] = '강좌의 수';
 $string['mydashboard'] = '시스템 기본 상황페이지';
-$string['mymoodle'] = '내 홈페이지';
+$string['mymoodle'] = '내 공부방';
 $string['mymoodleredirect'] = '내 공부방 강제 개설';
 $string['mypage'] = '내 공부방 페이지';
 $string['mypagelocked'] = '기본 페이지 잠김';
@@ -719,7 +708,6 @@ $string['order2'] = '두번째';
 $string['order3'] = '세번째';
 $string['order4'] = '네번째';
 $string['passwordpolicy'] = '암호부여 정책';
-$string['pathtoclam'] = 'clam AV 경로';
 $string['pathtodot'] = 'dot 경로';
 $string['pathtodot_help'] = 'dot 경로. 아마도 /usr/bin/dot. DOT 파일로부터 그래픽을 만들 수 있으려면, dot 실행파일을 설치하고 여기서 그것을 지시해야 합니다. 지금은 무들에 내장된 프로파일링 기능(개발->프로파일링)에 의해서만 사용됨을 주목하십시요.';
 $string['pathtodu'] = 'du 경로';
@@ -735,7 +723,6 @@ $string['pgcluster'] = 'PostgreSQL 클러스터';
 $string['pgclusterdescription'] = '명령어 라인 실행을 위한 PostgreSQL 버전/클러스터 파라메터. 만일 한개의 postgresql만이 설치되어 있다거나 잘 모를 경우에는 공백으로 남겨놓으십시요.';
 $string['phpfloatproblem'] = '예상밖의 PHP 부동소숫점 처리 문제 검출 - {$a}';
 $string['pleaserefreshregistration'] = '이 사이트는 moodle.org에 등록되어 있습니다. {$a} 에 업데이트 이후 상당한 변화가 있었다면 등록 업데이트를 고려해 보기 바랍니다.';
-$string['pleaseregister'] = '이 버튼을 제거하고 싶으면 당신의 사이트를 등록해 주세요.';
 $string['plugin'] = '플러그인';
 $string['plugins'] = '플러그인';
 $string['pluginscheck'] = '플러그인 의존성 체크';
@@ -817,7 +804,6 @@ $string['proxyuser'] = '프록시 사용자 이름';
 $string['purgecaches'] = '모든 저장내용 삭제';
 $string['purgecachesconfirm'] = '무들은 테마, 자바스크립트, 언어 문자열, 필터된 문장, rss 피드 및 여러 계산된 자료 조각들을 캐시에 저장할 수 있습니다. 캐시를 청소하면 서버에서 데이터들이 지워져서 브라우저가 데이터를 다시 가져오도록 하며, 현재 코드에 의해 만들어진 최신의 값들을 볼 수 있습니다. 캐시를 청소하는 것은 아무런 위험이 없지만 서버와 클라이언트가 새로운 정보를 계산하고 저장할 때까지 사이트가 잠시동안 느려질 수 있습니다.';
 $string['purgecachesfinished'] = '모든 저장내용이 삭제됨';
-$string['quarantinedir'] = '검역 디렉토리';
 $string['question'] = '질문';
 $string['questionbehaviours'] = '질문 작동';
 $string['questioncwqpfscheck'] = '퀴즈에  \'무작위\' 질문이 비공개 혹은 공개 질문 은행 중에서 선택하도록 설정되어 있습니다. 좀 더 자세한 보고서는 <a href="{$a->reporturl}">이 곳</a> 과 무들 문서 창고의 <a href="{$a->docsurl}">이 곳</a>을 참고하기 바랍니다.';
@@ -856,7 +842,6 @@ $string['riskxss'] = '사용자가 XSS를 허용하는 문서나 파일을 첨�
 $string['riskxssshort'] = 'XSS 실행 노출 위험';
 $string['roleswithexceptions'] = '{$a->roles}, 및 {$a->exceptions}';
 $string['rssglobaldisabled'] = '서버 수준에서 비활성화';
-$string['runclamavonupload'] = '파일검역에 clam AV 사용';
 $string['save'] = '저장';
 $string['savechanges'] = '변경사항 저장';
 $string['search'] = '검색';
@@ -957,7 +942,6 @@ $string['unsupported'] = '지원되지 않음';
 $string['unsuspenduser'] = '사용자 계정 활성화';
 $string['updateaccounts'] = '기존 계정 업데이트';
 $string['updateautocheck'] = '사용가능한 업데이트가 있는지 자동으로 확인';
-$string['updateautodeploy'] = '업데이트 배포 활성화';
 $string['updateavailable'] = '새로운 무들 버전이 있습니다.';
 $string['updateavailabledetailslink'] = '자세한 정보는  {$a->url}를 참고하세요.';
 $string['updateavailableforplugin'] = '사용가능한 플러그인에 대해 새로운 버전이 있습니다.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cache', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['area'] = 'Àrea';
 $string['cacheadmin'] = 'Administració de la memòria cau';
 $string['cacheconfig'] = 'Configuració';
 $string['cachedef_calendar_subscriptions'] = 'Subscripcions al calendari';
+$string['cachedef_capabilities'] = 'Llista de capacitats del sistema';
+$string['cachedef_completion'] = 'Estat de compleció de la tasca';
 $string['cachedef_config'] = 'Paràmetres de configuració';
 $string['cachedef_coursecat'] = 'Llistat de categories del curs per a l\'usuari particular';
 $string['cachedef_coursecatrecords'] = 'Registres de les categories del curs';
@@ -44,17 +46,22 @@ $string['cachedef_coursemodinfo'] = 'Informació acumulada sobre mòduls i secci
 $string['cachedef_databasemeta'] = 'Metainformació de la base de dades';
 $string['cachedef_eventinvalidation'] = 'Invalidació d\'esdeveniment';
 $string['cachedef_externalbadges'] = 'Insígnies externes per a un usuari particular';
-$string['cachedef_gradecondition'] = 'Qualificacions de l\'usuari en memòria cau per a avaluar la disponiblitat condicional';
+$string['cachedef_grade_categories'] = 'Qualifica les consultes de categoria';
 $string['cachedef_groupdata'] = 'Informació del grup del curs';
 $string['cachedef_htmlpurifier'] = 'Purificador HTML - contingut netejat';
 $string['cachedef_langmenu'] = 'Llista d\'idiomes disponibles';
 $string['cachedef_locking'] = 'Blocatge';
+$string['cachedef_navigation_expandcourse'] = 'Navegació expansible pels cursos';
 $string['cachedef_observers'] = 'Observadors d\'esdeveniments';
+$string['cachedef_plugin_functions'] = 'Crides de retorn disponibles per als connectors';
 $string['cachedef_plugin_manager'] = 'Gestor d\'informació de connectors';
 $string['cachedef_questiondata'] = 'Definicions de qüestions';
 $string['cachedef_repositories'] = 'Dades d\'instàncies dels repositoris';
 $string['cachedef_string'] = 'Memòria cau de cadenes d\'idioma';
 $string['cachedef_suspended_userids'] = 'Llista d\'usuaris amb la inscripció suspesa per curs';
+$string['cachedef_tagindexbuilder'] = 'Resultats de la cerca pels ítems etiquetats';
+$string['cachedef_tags'] = 'Col·leccions i zones d\'etiquetes';
+$string['cachedef_temp_tables'] = 'Memòria cau de taules temporals';
 $string['cachedef_userselections'] = 'Dades utilitzades per a persistència de les seleccions dels usuaris a través de Moodle';
 $string['cachedef_yuimodules'] = 'Definicions del mòdul YUI';
 $string['cachelock_file_default'] = 'Blocatge de fitxers per defecte';
@@ -96,7 +103,10 @@ $string['inadequatestoreformapping'] = 'Aquest magatzem no compleix els requerim
 $string['invalidlock'] = 'Bloqueig no vàlid';
 $string['invalidplugin'] = 'Connector invàlid';
 $string['invalidstore'] = 'Heu proporcionat un magatzem invàlid per a la memòria cau';
+$string['localstorenotification'] = 'Aquest cau es pot mapar tranquil·lament a una botiga local a cada servidor web';
 $string['lockdefault'] = 'Per defecte';
+$string['locking'] = 'Blocatge';
+$string['locking_help'] = 'El bloqueig és un mecanisme que restringeix l\'accés a les dades emmagatzemades en memòria cau per un procés per evitar que les dades siguin sobreescrites. El mètode de bloqueig determina com s\'adquireix el bloqueig i es comprova.';
 $string['lockingmeans'] = 'Mecanisme de bloqueig';
 $string['lockmethod'] = 'Mètode de blocatge';
 $string['lockmethod_help'] = 'Aquest és el mètode de blocatge utilitzat quan es requereix des d\'aquest magatzem.';
@@ -126,6 +136,7 @@ $string['requestcount'] = 'Prova amb {$a} sol·licituds';
 $string['rescandefinitions'] = 'Tornar a escanejar les definicions';
 $string['result'] = 'Resultat';
 $string['set'] = 'Defineix';
+$string['sharedstorenotification'] = 'Aquest cau s\'ha de mapar a una botiga compartida per tots els servidors web';
 $string['sharing'] = 'S\'està compartint';
 $string['sharing_all'] = 'Tothom.';
 $string['sharing_help'] = 'Això us permet determinar com les dades de la memòria cau es poden compartir si teniu una configuració en clúster, o si teniu múltiples llocs configurats amb el mateix magatzem i voleu compartir les dades. Aquesta és una opció avançada; si us plau assegureu-vos que enteneu el seu propòsit abans de canviar-la.';

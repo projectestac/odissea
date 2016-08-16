@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scormreport_interactions', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   scormreport_interactions
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Interactions report';
 $string['questionx'] = 'Question {$a}';
 $string['responsex'] = 'Response {$a}';
+$string['resultx'] = 'Result {$a}';
 $string['rightanswerx'] = 'Right answer {$a}';
 $string['summaryofquestiontext'] = 'Summary of question';
 $string['summaryofresponse'] = 'Summary of responses';
+$string['summaryofresult'] = 'Summary of result';
 $string['summaryofrightanswer'] = 'Summary of right answer';

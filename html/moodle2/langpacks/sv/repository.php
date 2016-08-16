@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -111,7 +111,6 @@ $string['foldernotfound'] = 'Mapp hittades inte';
 $string['folderrecurse'] = 'Mapp kan inte flyttas till en egen undermapp';
 $string['getfile'] = 'Välj den här filen';
 $string['help'] = 'Hjälp';
-$string['hidden'] = 'Dold';
 $string['iconview'] = 'Visa som ikoner';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'instans';

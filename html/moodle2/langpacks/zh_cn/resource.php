@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,6 +84,7 @@ $string['resource:addinstance'] = '添加一个新的资源';
 $string['resourcecontent'] = '文件和子目录';
 $string['resource:exportresource'] = '导出资源';
 $string['resource:view'] = '查看资源';
+$string['search:activity'] = '文件';
 $string['selectmainfile'] = '请点击文件名旁的图标选择主文件。';
 $string['showsize'] = '显示大小';
 $string['showsize_desc'] = '在课程页面中显示文件大小？';

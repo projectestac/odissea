@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['auth_dbname'] = 'Datu-basearen izena. Hutsik utzi ODBC DSN bat erabiliz
 $string['auth_dbname_key'] = 'Datu-basearen izena';
 $string['auth_dbpass'] = 'Goiko erabiltzaile-izenarekin bat datorren pasahitza';
 $string['auth_dbpass_key'] = 'Pasahitza';
-$string['auth_dbpasstype'] = '<p>Pasahitzaren eremuak erabiltzen duen formatua zehaztu.  MD5 enkiptazioa beste web aplikazio orokorrekin konektatzeko erabilgarria da, PostNuke adibidez.</p> <p>Nahi baduzu kanpo datu-baseak kudetu ditzan erabiltzaile-izena eta e-posta helbideak baina Moodle-ek kudetu ditzan pasahitzak, \'Barrukoa\' aukeratu. Kasu honetan, kanpo datu-basean beteta dagoen eremu bat zehaztu <i>beharko duzu</i> eta aldiro exekutatu beharko dituzu bai admin/cron.php eta auth/db/cli/sync_users.php. Moodle-ek posta bat bidaliko die erabiltzaile berriei aldi baterako pasahitzarekin.</p>';
+$string['auth_dbpasstype'] = 'Pasahitzaren eremuak erabiltzen duen formatua zehaztu.  MD5 enkiptazioa beste web aplikazio orokorrekin konektatzeko erabilgarria da, PostNuke adibidez';
 $string['auth_dbpasstype_key'] = 'Pasahitzaren formatua';
 $string['auth_dbreviveduser'] = '{$a->name} id {$a->id} erabiltzailea berreskuratuta';
 $string['auth_dbrevivedusererror'] = 'Errorea {$a} erabiltzailea berreskuratzean';

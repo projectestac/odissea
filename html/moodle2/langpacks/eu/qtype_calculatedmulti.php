@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_calculatedmulti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,5 @@ $string['answeroptions_help'] = 'Iradokitutako erantzunaren formula ...<strong>{
 $string['pluginname'] = 'Aukera anitzeko kalkulu motako galdera';
 $string['pluginnameadding'] = 'Aukera anitzeko kalkulu motako galdera gehitzen';
 $string['pluginnameediting'] = 'Aukera anitzeko kalkulu motako galdera editatzen';
-$string['pluginname_help'] = 'Kalkulatutako aukera anitzeko galderak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan zenbakizko formulak gehitu daitezke giltzen artean komodinak erabilita, gero galdetegia egitean balioekin ordezkatuak izango direnak. Adibidez, "Zein da {I} luzera eta {w} zabalera duen laukiaren azalera?" galderaren erantzun zuzena "{I}*{w}" formula izango da (non * karaktereak biderkaketa esan nahi duen)';
+$string['pluginname_help'] = 'Kalkulatutako aukera anitzeko galderak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan zenbakizko formulak gehitu daitezke giltzen artean komodinak erabilita, gero galdetegia egitean balioekin ordezkatuak izango direnak. Adibidez, "Zein da {I} luzera eta {w} zabalera duen laukiaren azalera?" aukeretako bat {{I}*{w}} izango da (non * karaktereak biderketa esan nahi duen)';
 $string['pluginnamesummary'] = 'Kalkulatutako aukera anitzeko galderak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan datu-multzo batetik ausaz aukeratzen diren zenbakizko balioen araberako formulak gehitu daitezke galdetegia egitean.';

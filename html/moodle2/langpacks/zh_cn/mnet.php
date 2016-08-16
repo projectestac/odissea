@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -194,6 +194,7 @@ $string['registerhostson'] = '现在<b>开放</b>注册所有主机';
 $string['remotecourses'] = '远程课程';
 $string['remotehost'] = '远程主机';
 $string['remotehosts'] = '远程主机';
+$string['remoteuser'] = '远程 {$a->remotetype} 用户';
 $string['remoteuserinfo'] = '远程{$a->remotetype}用户——个人资料取自<a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = '网络需要 OpenSSL 扩展';
 $string['restore'] = '恢复';
@@ -217,6 +218,12 @@ $string['showlocal'] = '显示本地用户';
 $string['showremote'] = '显示远程用户';
 $string['ssl_acl_allow'] = 'SSO ACL： 允许来自{$a->host}的用户{$a->user}';
 $string['ssl_acl_deny'] = 'SSO ACL： 拒绝来自{$a->host}的用户{$a->user}';
+$string['sslverification'] = 'SSL验证';
+$string['sslverification_help'] = '此选项允许配置 HTTPS 连接的安全级别。
+
+* 无：没有安全级别
+* 仅验证主机：验证 SSL 证书的域名
+* 验证主机和节点 (推荐)：验证域名和 SSL 证书颁发者';
 $string['ssoaccesscontrol'] = 'SSO 访问控制';
 $string['ssoacldescr'] = '使用此页面允许/拒绝从远程MNet主机来访的指定用户。当您为远程用户提供SSO服务时，这个功能非常有用。为了控制您的<em>本地</em>用户漫游到其它MNet主机的能力，使用角色系统分配他们<em>mnetlogintoremote</em>权限。';
 $string['ssoaclneeds'] = '为了让这个功能起作用，您必须将网络打开，并启用MNet认证插件。';
@@ -244,6 +251,8 @@ $string['userchangepasswordlink'] = '<br /> 您也许可以在<a href="{$a->wwwr
 $string['usernotfullysetup'] = '您的账号不完整。您需要<a href="{$a}">回到您的信息提供者</a>并确定您在那里的个人资料是完整的。可能需要您重新登录才能生效。';
 $string['usersareonline'] = '警告：当前该服务器有{$a}名用户登录到您的网站。';
 $string['validated_by'] = '通过网络验证： <code>{$a}</code>';
+$string['verifyhostandpeer'] = '验证主机和节点';
+$string['verifyhostonly'] = '仅验证主机';
 $string['verifysignature-error'] = '签名验证失败。';
 $string['verifysignature-invalid'] = '签名验证失败。';
 $string['version'] = '版本';

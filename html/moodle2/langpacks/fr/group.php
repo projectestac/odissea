@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,8 @@ $string['eventgroupcreated'] = 'Groupe créé';
 $string['eventgroupdeleted'] = 'Groupe supprimé';
 $string['eventgroupingcreated'] = 'Groupement créé';
 $string['eventgroupingdeleted'] = 'Groupement supprimé';
+$string['eventgroupinggroupassigned'] = 'Groupe attribué à un groupement';
+$string['eventgroupinggroupunassigned'] = 'Groupe retiré d\'un groupement';
 $string['eventgroupingupdated'] = 'Groupement modifié';
 $string['eventgroupmemberadded'] = 'Membre ajouté à un groupe';
 $string['eventgroupmemberremoved'] = 'Membre retiré d\'un groupe';
@@ -139,9 +141,12 @@ $string['importgroups_help'] = 'Les groupes peuvent être importés depuis un fi
 * le seul champ requis est groupname ;
 * les champs optionnels sont description, enrolmentkey, picture, hidepicture ;
 * les noms des champs ne doivent pas être traduits.';
+$string['includeonlyactiveenrol'] = 'N\'inclure que les inscription actives';
+$string['includeonlyactiveenrol_help'] = 'Si ce réglage est activé, les utilisateurs suspendus ne seront pas inclus dans les groupes.';
 $string['javascriptrequired'] = 'Cette page requiert l\'activation de Javascript.';
 $string['members'] = 'Membres par groupe';
 $string['membersofselectedgroup'] = 'Membres de :';
+$string['mygroups'] = 'Mes groupes';
 $string['namingscheme'] = 'Schéma de dénomination';
 $string['namingscheme_help'] = 'Le caractère arobase (@) peut être utilisé pour créer des groupes contenant des lettres. Par exemple, « Groupe @ » générera des groupes nommés « Groupe A », « Groupe B », « Groupe C », etc.
 
@@ -150,6 +155,7 @@ $string['newgrouping'] = 'Nouveau groupement';
 $string['newpicture'] = 'Nouvelle image';
 $string['newpicture_help'] = 'Sélectionnez une image en format JPG ou PNG.  L\'image sera redimensionnée en un carré de 100x100 pixels.';
 $string['noallocation'] = 'Pas d\'attribution';
+$string['nogroup'] = 'Aucun groupe';
 $string['nogrouping'] = 'Pas de groupement';
 $string['nogroups'] = 'Il n\'y a pas encore de groupes dans ce cours';
 $string['nogroupsassigned'] = 'Aucun groupe n\'a été attribué';
@@ -157,10 +163,12 @@ $string['nopermissionforcreation'] = 'Impossible de créer le groupe « {$a} �
 $string['nosmallgroups'] = 'Empêcher un petit groupe pour terminer';
 $string['notingroup'] = 'Ignorer les utilisateurs dans des groupes';
 $string['notingrouping'] = '[Dans aucun groupement]';
+$string['notingrouplist'] = '[Membre d\'aucun groupe]';
 $string['nousersinrole'] = 'Il n\'y a pas d\'utilisateur adéquat dans le rôle sélectionné';
 $string['number'] = 'Nombre de groupes/membres';
 $string['numgroups'] = 'Nombre de groupes';
 $string['nummembers'] = 'Membres par groupe';
+$string['othergroups'] = 'Autres groupes';
 $string['overview'] = 'Vue d\'ensemble';
 $string['potentialmembers'] = 'Membres potentiels : {$a}';
 $string['potentialmembs'] = 'Membres potentiels';

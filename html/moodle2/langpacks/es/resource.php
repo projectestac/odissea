@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['framesize'] = 'Tamaño del marco';
 $string['legacyfiles'] = 'Migración de archivo antiguo de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Terminado';
+$string['modifieddate'] = 'Actualizado  {$a}';
 $string['modulename'] = 'Archivo';
 $string['modulename_help'] = 'El módulo Archivo permite a los profesores proveer un Archivo como un recurso del curso. Cuando sea posible, el archivo se mostrará dentro del interface del curso; si no es el caso, se le preguntará a los estudiantes si quieren descargarlo. El recurso Archivo puede incluir archivos de soporte, por ejemplo, una página HTML puede tener incrustadas imágenes u objetos Flash.
 
@@ -92,7 +93,11 @@ $string['resourcecontent'] = 'Archivos y subcarpetas';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resource:exportresource'] = 'Exportar recurso';
 $string['resource:view'] = 'Ver recurso';
+$string['search:activity'] = 'Archivo';
 $string['selectmainfile'] = 'Por favor, seleccione el archivo principal haciendo clic en el icono junto a su nombre.';
+$string['showdate'] = 'Mostrar la fecha de subida/modificación';
+$string['showdate_desc'] = '¿Mostrar la fecha de subida/modificación en la página del curso?';
+$string['showdate_help'] = 'Muestra la fecha de subida/modificación junto al enlace al archivo. Si hay varios archivos en el recurso, se muestra la fecha de subida/modificación del archivo principal.';
 $string['showsize'] = 'Mostrar tamaño';
 $string['showsize_desc'] = '¿Mostrar el tamaño del archio en la página del curso?';
 $string['showsize_help'] = 'Muestra el tamaño del archivo, en el formato \'3 1 MB \', junto con el enlace al archivo.';

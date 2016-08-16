@@ -40,23 +40,16 @@ if ($action == 'delchoice' and confirm_sesskey() and is_enrolled($context, NULL,
         and $choiceavailable) {
     $answercount = $DB->count_records('choice_answers', array('choiceid' => $choice->id, 'userid' => $USER->id));
     if ($answercount > 0) {
-        $DB->delete_records('choice_answers', array('choiceid' => $choice->id, 'userid' => $USER->id));
-
-        // Update completion state
-        $completion = new completion_info($course);
-        if ($completion->is_enabled($cm) && $choice->completionsubmit) {
-            $completion->update_state($cm, COMPLETION_INCOMPLETE);
-        }
+        $choiceanswers = $DB->get_records('choice_answers', array('choiceid' => $choice->id, 'userid' => $USER->id),
+            '', 'id');
+        $todelete = array_keys($choiceanswers);
+        choice_delete_responses($todelete, $choice, $cm, $course);
         redirect("view.php?id=$cm->id");
     }
 }
 
 $PAGE->set_title($choice->name);
 $PAGE->set_heading($course->fullname);
-
-// Mark viewed by user (if required)
-$completion = new completion_info($course);
-$completion->set_module_viewed($cm);
 
 /// Submit any new data if there is any
 if (data_submitted() && is_enrolled($context, NULL, 'mod/choice:choose') && confirm_sesskey()) {
@@ -91,6 +84,9 @@ if (data_submitted() && is_enrolled($context, NULL, 'mod/choice:choose') && conf
     }
 }
 
+// Completion and trigger events.
+choice_view($choice, $course, $cm, $context);
+
 echo $OUTPUT->header();
 echo $OUTPUT->heading(format_string($choice->name), 2, null);
 
@@ -107,11 +103,6 @@ $eventdata = array();
 $eventdata['objectid'] = $choice->id;
 $eventdata['context'] = $context;
 
-$event = \mod_choice\event\course_module_viewed::create($eventdata);
-$event->add_record_snapshot('course_modules', $cm);
-$event->add_record_snapshot('course', $course);
-$event->trigger();
-
 /// Check to see if groups are being used in this choice
 $groupmode = groups_get_activity_groupmode($cm);
 
@@ -119,7 +110,11 @@ if ($groupmode) {
     groups_get_activity_group($cm, true);
     groups_print_activity_menu($cm, $CFG->wwwroot . '/mod/choice/view.php?id='.$id);
 }
-$allresponses = choice_get_response_data($choice, $cm, $groupmode);   // Big function, approx 6 SQL calls per user
+
+// Check if we want to include responses from inactive users.
+$onlyactive = $choice->includeinactive ? false : true;
+
+$allresponses = choice_get_response_data($choice, $cm, $groupmode, $onlyactive);   // Big function, approx 6 SQL calls per user.
 
 
 if (has_capability('mod/choice:readresponses', $context)) {
@@ -133,7 +128,7 @@ if ($choice->intro) {
 }
 
 $timenow = time();
-$current = $DB->get_records('choice_answers', array('choiceid' => $choice->id, 'userid' => $USER->id));
+$current = choice_get_my_response($choice);
 //if user has already made a selection, and they are not allowed to update it or if choice is not open, show their selected answer.
 if (isloggedin() && (!empty($current)) &&
     (empty($choice->allowupdate) || ($timenow > $choice->timeclose)) ) {
@@ -148,9 +143,13 @@ if (isloggedin() && (!empty($current)) &&
 $choiceopen = true;
 if ($choice->timeclose !=0) {
     if ($choice->timeopen > $timenow ) {
-        echo $OUTPUT->box(get_string("notopenyet", "choice", userdate($choice->timeopen)), "generalbox notopenyet");
-        echo $OUTPUT->footer();
-        exit;
+        if ($choice->showpreview) {
+            echo $OUTPUT->box(get_string('previewonly', 'choice', userdate($choice->timeopen)), 'generalbox alert');
+        } else {
+            echo $OUTPUT->box(get_string("notopenyet", "choice", userdate($choice->timeopen)), "generalbox notopenyet");
+            echo $OUTPUT->footer();
+            exit;
+        }
     } else if ($timenow > $choice->timeclose) {
         echo $OUTPUT->box(get_string("expired", "choice", userdate($choice->timeclose)), "generalbox expired");
         $choiceopen = false;
@@ -194,9 +193,7 @@ if (!$choiceformshown) {
 }
 
 // print the results at the bottom of the screen
-if ( $choice->showresults == CHOICE_SHOWRESULTS_ALWAYS or
-    ($choice->showresults == CHOICE_SHOWRESULTS_AFTER_ANSWER and $current) or
-    ($choice->showresults == CHOICE_SHOWRESULTS_AFTER_CLOSE and !$choiceopen)) {
+if (choice_can_view_results($choice, $current, $choiceopen)) {
 
     if (!empty($choice->showunanswered)) {
         $choice->option[0] = get_string('notanswered', 'choice');

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_database', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configura la base de dades d\'instàncies d\'inscripció';
 $string['database:unenrol'] = 'Anul·la la inscripció dels usuaris amb la inscripció suspesa';
 $string['dbencoding'] = 'Codificació de la base de dades.';
 $string['dbhost'] = 'Servidor de la base de dades';
@@ -63,6 +64,8 @@ $string['remotecoursefield'] = 'Camp remot del curs';
 $string['remotecoursefield_desc'] = 'El nom del camp en la taula remota que s\'està utilitzant per concordar entrades a la taula del curs.';
 $string['remoteenroltable'] = 'Taula remota d\'inscripció d\'usuaris';
 $string['remoteenroltable_desc'] = 'Especifica el nom de la taula que conté la llista d\'usuaris inscrits. Si és buida no s\'ha sincronitzat cap inscripció d\'usuaris.';
+$string['remoteotheruserfield'] = 'Camp remot de l\'altre usuari';
+$string['remoteotheruserfield_desc'] = 'El nom del camp en la taula remota que està usant el senyalador «Altre usuari» a les assignacions de rol.';
 $string['remoterolefield'] = 'Camp remot de rol';
 $string['remoterolefield_desc'] = 'El nom del camp a la taula remota que s\'està utilitzant per concordar entrades a la taula de rols.';
 $string['remoteuserfield'] = 'Camp remot d\'usuari';

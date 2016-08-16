@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = '現在のカテゴリ';
 $string['categorycurrentuse'] = 'このカテゴリを使用する';
 $string['categorydoesnotexist'] = 'このカテゴリは存在しません。';
 $string['categoryinfo'] = 'カテゴリ情報';
-$string['categorymove'] = 'カテゴリ {$a->name} には {$a->count} 問の問題があります (いくつかの問題は古い、非表示にされている、または既存の問題で使用されています)。移動するために他のカテゴリを選択してください。';
+$string['categorymove'] = 'カテゴリ {$a->name} には {$a->count} 問の問題があります (いくつかの問題は非表示の問題か小テストで使用中のランダム問題です)。移動するために他のカテゴリを選択してください。';
 $string['categorymoveto'] = 'カテゴリに保存する';
 $string['categorynamecantbeblank'] = 'カテゴリ名は空白にすることができません。';
 $string['changeoptions'] = 'オプションを変更する';
@@ -193,7 +193,6 @@ $string['generalfeedback_help'] = '全般に対するフィードバックは問
 あなたは学生に工夫を凝らした回答を与える場として全般的なフィードバックを使用することができます。学生が問題を理解できない場合、さらなる情報のリンクを与えて利用できるようにすることもできます。';
 $string['getcategoryfromfile'] = 'ファイルからカテゴリを取得する';
 $string['getcontextfromfile'] = 'ファイルからコンテクストを取得する';
-$string['hidden'] = '非表示';
 $string['hintn'] = 'ヒント {no}';
 $string['hintnoptions'] = 'ヒント {no} オプション';
 $string['hinttext'] = 'ヒントテキスト';
@@ -295,8 +294,6 @@ $string['numqas'] = '問題受験数';
 $string['numquestions'] = '問題数';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} 非表示)';
 $string['options'] = 'オプション';
-$string['orphanedquestionscategory'] = '削除されたカテゴリから問題が保存されました。';
-$string['orphanedquestionscategoryinfo'] = '一般的に古いソフトウェアのバグのため、対応する問題カテゴリが削除された後も問題をデータベース内に残すことができます。もちろん、これは今回発生したのではなく、このサイトで過去に発生したものです。このカテゴリは自動的に作成され、あなたが管理できるよう迷子の問題がここに移動されました。恐らく、これらの問題で使用されるイメージまたはメディアファイルは喪失していることに留意してください。';
 $string['page-question-category'] = '問題カテゴリページ';
 $string['page-question-edit'] = '問題編集ページ';
 $string['page-question-export'] = '問題エクスポートページ';
@@ -389,6 +386,7 @@ $string['submissionoutofsequencefriendlymessage'] = 'あなたは正常な連続
 $string['submit'] = '送信';
 $string['submitandfinish'] = '送信して終了する';
 $string['submitted'] = '送信: {$a}';
+$string['tagarea_question'] = '問題';
 $string['technicalinfo'] = '技術情報';
 $string['technicalinfo_help'] = '恐らく、この技術情報は新しい問題タイプを開発している開発者にとって有用です。また、問題のトラブル診断のためにも有用です。';
 $string['technicalinfomaxfraction'] = '最大割合: {$a}';

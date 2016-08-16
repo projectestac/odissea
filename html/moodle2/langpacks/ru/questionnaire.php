@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'questionnaire', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -208,7 +208,7 @@ $string['length'] = 'Длина';
 $string['managequestions'] = 'Управление вопросами';
 $string['managequestions_help'] = 'В разделе «Управление вопросами» на странице редактирования вопросов Вы можете провести ряд операций над вопросами Анкетного опроса.';
 $string['maxdigitsallowed'] = 'Разрешенный максимум цифр';
-$string['maxdigitsallowed_help'] = 'При указании параметров «Макс. позволено цифр» и «Кол-во десятичных знаков» вы можете указать длину и количество требуемых десятичных знаков.';
+$string['maxdigitsallowed_help'] = 'Используйте параметр «Макс. позволено цифр», чтобы ограничить максимальное количество символов для числового ответа. Учтите, что десятичный разделитель тоже считается как отдельный символ!';
 $string['maxforcedresponses'] = 'Принудительный максимум ответов';
 $string['maxtextlength'] = 'Максимальная длина текста';
 $string['messageprovider:message'] = 'Напоминание об анкетном опросе';

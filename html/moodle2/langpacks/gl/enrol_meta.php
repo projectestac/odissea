@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_meta', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = 'Engadir ao grupo';
+$string['coursesort'] = 'Ordenar a lista do curso';
+$string['coursesort_help'] = 'Isto determina se a lista de cursos que poden ser ligados se ordenan segundo a orde (p. ex. na orde configurada en Administración do sitio > Cursos > Administrar de cursos) ou alfabeticamente polo axuste do curso.';
+$string['creategroup'] = 'Crear un grupo novo';
+$string['defaultgroupnametext'] = '{$a->name} curso {$a->increment}';
 $string['linkedcourse'] = 'Ligar o curso';
 $string['meta:config'] = 'Configurar instancias de meta matriculación';
 $string['meta:selectaslinked'] = 'Seleccionar curso como meta ligado';

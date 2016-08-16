@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Aanmelding is uitgeschakeld of niet actief';
+$string['canntenrolearly'] = 'Inschrijven is nog niet mogelijk; inschrijven start op {$a}.';
+$string['canntenrollate'] = 'Inschrijven is niet meer mogelijk, inschrijven is beëindigd op {$a}.';
 $string['cohortnonmemberinfo'] = 'Enkel de leden van site-groep \'{$a}\' kunnen zelf aanmelden';
 $string['cohortonly'] = 'Enkel site-groepsleden';
 $string['cohortonly_help'] = 'Zelf aanmelden kan beperkt worden tot leden van een specifieke site-groep. Merk op dat het wijizgen van deze instelling geen effect heeft op bestaande aanmeldingen.';
@@ -35,7 +37,9 @@ $string['customwelcomemessage_help'] = 'Een aangepast welkomstbericht dat toegev
 Volgende plaatshouders kunnen gebruikt worden in het bericht:
 
 * Cursusnaam {$a->coursename}
-* Link naar profielpagina van de gebruiker {$a->profileurl}';
+* Link naar profielpagina van de gebruiker {$a->profileurl}
+* E-mailadres gebruiker {$a->email}
+* Volledige naam gebruiker {$a->fullname}';
 $string['defaultrole'] = 'Standaard roltoewijzing';
 $string['defaultrole_desc'] = 'Kies de rol die moet toegewezen worden tijdens zelf aanmelden';
 $string['enrolenddate'] = 'Einddatum';
@@ -66,6 +70,7 @@ $string['groupkey_desc'] = 'Gebruik sleutels voor groepsaanmelding als standaard
 $string['groupkey_help'] = 'Het gebruik van een groepsaanmeldingssleutel zal de toegang tot de cursus niet alleen beperken tot diegenen die de sleutel kennen, maar de leerlingen zullen ook ingedeeld worden in hun juiste groep.
 
 Om een groepsaanmeldingssleutel te kunnen gebruiken, moet er een aanmeldingssleutel opgegeven worden, zowel in de instellingen  \'Aanmeldingsbeheer\', \'Zelf aanmelden\' als in de instellingen van de groep.';
+$string['keyholder'] = 'Je zou de aanmeldingssleutel moeten gekregen hebben van:';
 $string['longtimenosee'] = 'Afmelden indien langer inactief dan';
 $string['longtimenosee_help'] = 'Als gebruikers een cursus een lange tijd niet meer bezocht hebben, dan worden ze automatisch afgemeld. Deze parameter bepaalt deze limiet';
 $string['maxenrolled'] = 'Maxi aangemelde gebruikers';
@@ -91,6 +96,7 @@ $string['requirepassword'] = 'Aanmeldingssleutel vereist';
 $string['requirepassword_desc'] = 'Vereis aanmeldingssleutel voor nieuwe cursussen en verhinder het verwijderen van de sleutel bij bestaande cursussen';
 $string['role'] = 'Standaard toegewezen rol';
 $string['self:config'] = 'Beheer zelf aanmeldingsexemplaren';
+$string['self:holdkey'] = 'Verschijnt als als wie de aanmeldingssleutel kan geven';
 $string['self:manage'] = 'Beheer aangemelde gebruikers';
 $string['self:unenrol'] = 'Gebruikers afmelden van de cursus';
 $string['self:unenrolself'] = 'Jezelf afmelden van de cursus';
@@ -98,9 +104,9 @@ $string['sendcoursewelcomemessage'] = 'Stuur welkomstboodschap voor cursus';
 $string['sendcoursewelcomemessage_help'] = 'Indien ingeschakeld zullen gebruikers een welkomstboodschap via e-mail krijgen wanneer zij zichzelf aanmelden bij een cursus.';
 $string['showhint'] = 'Toon hint';
 $string['showhint_desc'] = 'Toon de eerste letter van de gast toegangssleutel';
-$string['status'] = 'Bestaande aanmeldingen inschakelen';
+$string['status'] = 'Bestaande aanmeldingen toestaan';
 $string['status_desc'] = 'Zelf aanmelden inschakelen in nieuwe cursussen.';
-$string['status_help'] = 'Indien uitgeschakeld zullen alle zelf aangemelde gebruikers geschorst worden en kunnen nieuwe gebruikers zich niet aanmelden.';
+$string['status_help'] = 'Indien ingeschakeld samen met \'Nieuwe aanmeldingen toestaan\' uitgeschakeld, zullen enkel gebruikers die voorheen zelf aangemeld waren toegang hebben tot de cursus. Indien uitgeschakeld  is deze zelf aanmeldenmethode effectief uitgeschakeld, omdat alle bestaande zelf aangemelde gebruikers geschorst zijn en nieuwe gebruikers niet zelf kunnen aanmelden.';
 $string['unenrol'] = 'Gebruiker afmelden';
 $string['unenrolselfconfirm'] = 'Wil je jezelf echt afmelden van cursus "{$a}"?';
 $string['unenroluser'] = 'Wil je echt gebruiker "{$a->user}" van cursus "{$a->course}"?';

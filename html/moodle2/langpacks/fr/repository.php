@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -114,7 +114,7 @@ $string['enternewname'] = 'Veuillez saisir le nouveau nom du fichier';
 $string['error'] = 'Une erreur inconnue est survenue !';
 $string['errordoublereference'] = 'Impossible d\'écraser un fichier par un alias/raccourci, car des alias/raccourcis existent déjà pour ce fichier.';
 $string['errornotyourfile'] = 'Vous ne pouvez pas sélectionner un fichier qui n\'a pas été ajouté par vous';
-$string['errorpostmaxsize'] = 'La taille du fichier déposé pourrait dépasser la valeur de la directive post_max_size de php.ini.';
+$string['errorpostmaxsize'] = 'Le fichier que vous essayez de déposer est trop gros pour être traité par le serveur.';
 $string['erroruniquename'] = 'Le nom de l\'instance de dépôt doit être unique';
 $string['errorwhilecommunicatingwith'] = 'Erreur de communication avec le dépôt « {$a} ».';
 $string['errorwhiledownload'] = 'Une erreur est survenue lors du téléchargement du fichier {$a}';
@@ -135,7 +135,6 @@ $string['folderrecurse'] = 'Un dossier ne peut pas être déplacé vers un de se
 $string['getfile'] = 'Sélectionner ce fichier';
 $string['getfiletimeout'] = 'Temps maximal d\'obtention de fichier';
 $string['help'] = 'Aide';
-$string['hidden'] = 'Caché';
 $string['iconview'] = 'Icônes';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'Instance';
@@ -163,6 +162,7 @@ $string['makefileinternal'] = 'Faire une copie du fichier';
 $string['makefilelink'] = 'Lier directement le fichier';
 $string['makefilereference'] = 'Créer un alias du fichier';
 $string['manage'] = 'Gérer les dépôts';
+$string['manageinstances'] = 'Gérer les instances';
 $string['manageurl'] = 'Gestion';
 $string['manageuserrepository'] = 'Gérer le dépôt personnel';
 $string['moving'] = 'Déplacement';

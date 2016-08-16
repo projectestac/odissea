@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,11 @@ $string['automatedbackupschedule'] = 'スケジュール';
 $string['automatedbackupschedulehelp'] = '自動バックアップを実行する週の曜日を選択してください。';
 $string['automatedbackupsinactive'] = '自動バックアップはサイト管理者により有効にされていません。';
 $string['automatedbackupstatus'] = '自動バックアップステータス';
+$string['automateddeletedays'] = '次より古いバックアップを削除する';
+$string['automatedmaxkept'] = 'バックアップ保持最大数';
+$string['automatedmaxkepthelp'] = 'ここではそれぞれのコースのために保持する最近の自動バックアップ最大数を指定します。古いバックアップは自動的に削除されます。';
+$string['automatedminkept'] = 'バックアップ保持最小数';
+$string['automatedminkepthelp'] = '指定した日数よりも古いバックアップが削除された場合、休止中のコースにバックアップがない状況が生じることがあります。これを防ぐためにはバックアップを保持する最小数を指定してください。';
 $string['automatedsettings'] = '自動バックアップ設定';
 $string['automatedsetup'] = '自動バックアップ設定';
 $string['automatedstorage'] = '自動バックアップストレージ';
@@ -74,19 +79,20 @@ $string['backuptypesection'] = 'セクション';
 $string['backupversion'] = 'バックアップバージョン';
 $string['cannotfindassignablerole'] = 'あなたが割り当て許可されているロールにバックアップファイル内ロール ($a) をマップすることができません。';
 $string['choosefilefromactivitybackup'] = '活動バックアップエリア';
-$string['choosefilefromactivitybackup_help'] = '活動バックアップがデフォルト設定を使用する場合、ここにバックアップファイルが保存されます。';
+$string['choosefilefromactivitybackup_help'] = 'デフォルト設定を使用した活動バックアップがここに保存されます。';
 $string['choosefilefromautomatedbackup'] = '自動バックアップ';
 $string['choosefilefromautomatedbackup_help'] = '自動生成バックアップを含みます。';
 $string['choosefilefromcoursebackup'] = 'コースバックアップエリア';
-$string['choosefilefromcoursebackup_help'] = 'デフォルト設定を使用してコースがバックアップされた場合、バックアップファイルはここに保存されます。';
+$string['choosefilefromcoursebackup_help'] = 'デフォルト設定を使用したコースバックアップがここに保存されます。';
 $string['choosefilefromuserbackup'] = 'ユーザプライベートバックアップエリア';
-$string['choosefilefromuserbackup_help'] = '「ユーザ情報を匿名化する」オプションをチェックしてコースをバックアップした場合、バックアップファイルはここに保存されます。';
+$string['choosefilefromuserbackup_help'] = 'ユーザ情報を匿名化したバックアップファイルがここに保存されます。';
 $string['configgeneralactivities'] = '活動をバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralanonymize'] = 'この設定を有効にした場合、ユーザに関する情報がデフォルトで匿名化されます。';
 $string['configgeneralbadges'] = 'バックアップにバッジを含むようデフォルトに設定します。';
 $string['configgeneralblocks'] = 'ブロックをバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralcomments'] = 'コメントをバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralfilters'] = 'フィルタをバックアップに含むかどうか、デフォルトを設定します。';
+$string['configgeneralgroups'] = 'グループおよびグルーピングをバックアップに含むことに関するデフォルトを設定します。';
 $string['configgeneralhistories'] = 'ユーザ履歴をバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgenerallogs'] = 'この設定を有効にした場合、デフォルトでログがバックアップに含まれます。';
 $string['configgeneralquestionbank'] = 'この設定を有効にした場合、問題バンクがデフォルトでバックアップに含まれます。注意: この設定を無効にした場合、小テストのように問題バンクを使用する活動のバックアップも無効にされます。';
@@ -117,7 +123,7 @@ $string['errorfilenamerequired'] = 'あなたはこのバックアップに関�
 $string['errorinvalidformat'] = '不明なバックアップフォーマットです。';
 $string['errorinvalidformatinfo'] = '選択されたファイルは有効なMoodleバックアップファイルではないため、リストアすることはできません。';
 $string['errorminbackup20version'] = 'このバックアップファイルは開発バージョンのMoodleバックアップ ({$a->backup}) により作成されました。最小必要条件は {$a->min} です。リストアすることはできません。';
-$string['errorrestorefrontpage'] = 'フロントページへのリストアは許可されていません。';
+$string['errorrestorefrontpagebackup'] = 'フロントページにおいて、あなたはフロントページバックアップのみリストアすることができます。';
 $string['executionsuccess'] = 'バックアップファイルが正常に作成されました。';
 $string['filealiasesrestorefailures'] = 'エイリアスリストア失敗';
 $string['filealiasesrestorefailures_help'] = 'エイリアスは外部リポジトリに保存されたファイルを含む、他のファイルへのシンボリックリンクです。一部の例ではMoodeがシンボリックリンクをリストアできない場合があります - 例えば、別のサイトでのバックアップをリストアする場合、または参照ファイルが存在しくなった場合です。
@@ -125,9 +131,9 @@ $string['filealiasesrestorefailures_help'] = 'エイリアスは外部リポジ�
 詳細情報および実際のリストア失敗理由に関して、リストアログファイルをご覧ください。';
 $string['filealiasesrestorefailuresinfo'] = 'バックアップファイルに含まれるいくつかのエイリアスをリストアすることができませんでした。下記のリストではオリジナルサイトで参照されていた予測されるロケーションおよびソースファイルを含みます。';
 $string['filename'] = 'ファイル名';
-$string['filereferencesincluded'] = '外部コンテンツのファイル参照がバックアップパッケージに含まれていますが、他のサイトでは動作しません。';
-$string['filereferencesnotsamesite'] = 'バックアップは他のサイトで作成されているため、ファイル参照をリストアすることはできません。';
-$string['filereferencessamesite'] = 'バックアップは同一サイトで作成されているため、ファイル参照をリストアすることができます。';
+$string['filereferencesincluded'] = '外部コンテンツのファイル参照がバックアップファイルに含まれます。バックアップが異なるサイトでリストアされる場合、これらは動作しません。';
+$string['filereferencesnotsamesite'] = 'バックアップは異なるサイトで作成されているため、ファイル参照をリストアすることはできません。';
+$string['filereferencessamesite'] = 'バックアップはこのサイトで作成されているため、ファイル参照をリストアすることができます。';
 $string['generalactivities'] = '活動およびリソースを含む';
 $string['generalanonymize'] = '情報を匿名化する';
 $string['generalbackdefaults'] = '一般バックアップデフォルト';
@@ -136,6 +142,7 @@ $string['generalblocks'] = 'ブロックを含む';
 $string['generalcomments'] = 'コメントを含む';
 $string['generalfilters'] = 'フィルタを含む';
 $string['generalgradehistories'] = '履歴を含む';
+$string['generalgroups'] = 'グループおよびグルーピングを含む';
 $string['generalhistories'] = '履歴を含む';
 $string['generallogs'] = 'ログを含む';
 $string['generalquestionbank'] = '問題バンクを含む';
@@ -156,6 +163,8 @@ $string['importcurrentstage2'] = 'スキーマ設定';
 $string['importcurrentstage4'] = '確認およびレビュー';
 $string['importcurrentstage8'] = 'インポートを実行する';
 $string['importfile'] = 'バックアップファイルをインポートする';
+$string['importgeneralduplicateadminallowed'] = 'admin競合解決を許可する';
+$string['importgeneralduplicateadminallowed_desc'] = 'サイトにユーザ名「admin」が存在する場合、ユーザ名「admin」のアカウントを含むバックアップファイルのリストアにより競合が発生することになります。この設定を有効にした場合、バックアップファイル内のユーザ名を「admin_xyz」に変更することにより競合を解決します。';
 $string['importgeneralmaxresults'] = 'インポートの最大コース一覧表示数';
 $string['importgeneralmaxresults_desc'] = 'ここではインポート処理の最初のステップに一覧表示されるコース数を設定します。';
 $string['importgeneralsettings'] = '一般インポートデフォルト';
@@ -230,8 +239,10 @@ $string['rootsettingbadges'] = 'バッジを含む';
 $string['rootsettingblocks'] = 'ブロックを含む';
 $string['rootsettingcalendarevents'] = 'カレンダーイベントを含む';
 $string['rootsettingcomments'] = 'コメントを含む';
+$string['rootsettingcompetencies'] = 'コンピテンシーを含む';
 $string['rootsettingfilters'] = 'フィルタを含む';
 $string['rootsettinggradehistories'] = '評定履歴を含む';
+$string['rootsettinggroups'] = 'グループおよびグルーピングを含む';
 $string['rootsettingimscc1'] = 'IMS共通カートリッジ1.0にコンバートする';
 $string['rootsettingimscc11'] = 'IMS共通カートリッジ1.1にコンバートする';
 $string['rootsettinglogs'] = 'コースログを含む';
@@ -252,6 +263,7 @@ $string['setting_keep_groups_and_groupings'] = '現在のグループおよび�
 $string['setting_keep_roles_and_enrolments'] = '現在のロールおよび登録を保持する';
 $string['setting_overwriteconf'] = 'コース設定を上書きする';
 $string['showtypes'] = 'タイプオプションを表示する';
+$string['sitecourseformatwarning'] = 'これはフロントページバックアップです。フロントページのみにリストアできることに留意してください。';
 $string['skiphidden'] = '非表示コースをスキップする';
 $string['skiphiddenhelp'] = '非表示コースをスキップするかどうか選択します。';
 $string['skipmodifdays'] = '次の期間更新されていないコースをスキップする';

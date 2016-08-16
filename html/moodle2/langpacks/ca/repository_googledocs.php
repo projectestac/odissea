@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_googledocs', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = 'ID de client';
 $string['configplugin'] = 'Configura el connector de Google Drive';
 $string['googledocs:view'] = 'Mostra el repositori de Google Drive';
-$string['oauth2upgrade_message_content'] = 'Com a part de l\'actualització a Moodle 2.3, s\'ha inhabilitat el connector de portafolis de Google Drive. Per tornar-lo a habilitar, cal que registreu el vostre lloc Moodle amb Google, tal com es descriu a la documentació {$a->docsurl}, per tal d\'obtenir un ID de client i una contrasenya secreta. L\'ID de client i la contrasenya secreta es poden utilitzar llavors per configurar tots els connectors de Google Drive i Picasa.';
-$string['oauth2upgrade_message_small'] = 'Aquest connector s\'ha inhabilitat, ja que requereix una configuració com la que es descriu a la documentació de la configuració de Google OAuth 2.0.';
-$string['oauth2upgrade_message_subject'] = 'Informació important sobre el connector de repositori de Google Drive';
 $string['oauthinfo'] = '<p>A fi d\'emprar aquest connector, heu de registrar el vostre lloc a Google, tal com es descriu en la documentació de <a href="{$a->docsurl}">configuració de Google OAuth 2.0</a>.</p><p>Com a part del procés de registre, necessitareu introduir l\'URL següent com a «URL de redirecció autoritzats»:</p><p>{$a->callbackurl}</p><p>Una vegada registrat, se us proporcionarà un ID de client secret que podeu emprar per a configurar tots els connectors de Google Drive i Picasa.</p><p>Fixeu-vos que cal que habiliteu el servei «Drive API».</p>';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = 'Secret';

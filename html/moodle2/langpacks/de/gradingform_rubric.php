@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,10 @@ $string['alwaysshowdefinition'] = 'Nutzer/innen erlauben, eine Vorschau auf die 
 $string['backtoediting'] = 'Zurück zum Bearbeiten';
 $string['confirmdeletecriterion'] = 'Wollen Sie dieses Kriterium wirklich löchen?';
 $string['confirmdeletelevel'] = 'Möchten Sie dieses Level wirklich löschen?';
+$string['criterion'] = 'Kriterium {$a}';
 $string['criterionaddlevel'] = 'Level hinzufügen';
 $string['criteriondelete'] = 'Kriterium löschen';
+$string['criterionduplicate'] = 'Doppeltes Kriterium';
 $string['criterionempty'] = 'Zum Bearbeiten des Kriteriums anklicken';
 $string['criterionmovedown'] = 'Nach unten verschieben';
 $string['criterionmoveup'] = 'Nach oben verschieben';
@@ -45,7 +47,9 @@ $string['err_nodescription'] = 'Die Kriterienbeschreibung darf nicht leer bleibe
 $string['err_scoreformat'] = 'Die Punkte für jedes Level müssen eine positive Zahl sein.';
 $string['err_totalscore'] = 'Höchstzahl an erreichbaren Punkten muss größer als Null sein';
 $string['gradingof'] = '{$a} werden bewertet';
-$string['leveldelete'] = 'Level löschen';
+$string['level'] = 'Level {$a->definition}, {$a->score} Punkte.';
+$string['leveldefinition'] = 'Definition Level {$a}';
+$string['leveldelete'] = 'Level {$a} löschen';
 $string['levelempty'] = 'Klicken um Level zu bearbeiten';
 $string['name'] = 'Name';
 $string['needregrademessage'] = 'Die Rubric-Definition wurde geändert nachdem ein Teilnehmer bewertet wurde. Teilnehmer sehen diese Bewertung solange nicht bis Sie die Rubric geprüft und die Bewertung aktualisiert haben.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['auth_dbpasstype'] = '<p>Especifique o formato que emprega o campo de co
 $string['auth_dbpasstype_key'] = 'Formato do contrasinal';
 $string['auth_dbreviveduser'] = 'Recuperado o usuario {$a->name} ID {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Produciuse un erro ao recupera o usuario {$a}';
+$string['auth_dbsaltedcrypt'] = 'Cadea para «hashing» de cifrado dunha vía';
 $string['auth_dbsetupsql'] = 'Orde de configuración de SQL';
 $string['auth_dbsetupsqlhelp'] = 'Orde SQL para configuracións especiais da base de datos, empregase frecuentemente para configurar a codificación da comunicación. Exemplo para MySQL e PostgreSQL: <em>SETNAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = 'Suspendido o usuario {$a->name} ID {$a->id}';

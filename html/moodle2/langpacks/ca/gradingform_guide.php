@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_guide', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['commentsmovedown'] = 'Mou baix';
 $string['commentsmoveup'] = 'Mou dalt';
 $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest element?';
 $string['confirmdeletelevel'] = 'Esteu segurs que voleu suprimir aquest nivell?';
-$string['criterion'] = 'Criteri';
+$string['criterion'] = 'Nom del criteri';
 $string['criteriondelete'] = 'Suprimeix criteri';
 $string['criterionempty'] = 'Fes clic per a editar el criteri';
 $string['criterionmovedown'] = 'Mou baix';
@@ -55,7 +55,8 @@ $string['err_nodescription'] = 'La descripció de l\'estudiantat no pot estar bu
 $string['err_nodescriptionmarkers'] = 'La descripció de qui qualifica no pot estar buida';
 $string['err_nomaxscore'] = 'La puntuació màxima del criteri no pot estar buida';
 $string['err_noshortname'] = 'El nom del criteri no pot estar buit';
-$string['err_scoreinvalid'] = 'La puntuació donada a {$a->criterianame} no és vàlida, la puntuació màxima és: {$a->maxscore}';
+$string['err_scoreinvalid'] = 'La puntuació donada a «{$a->criterianame}» no és vàlida, la puntuació màxima és: {$a->maxscore}';
+$string['err_shortnametoolong'] = 'El nom del criteri ha de tenir menys de 256 caràcters';
 $string['gradingof'] = '{$a} qualificació';
 $string['guidemappingexplained'] = 'AVÍS: La guia de qualificació té una qualificació màxima de <b>{$a->maxscore} punts</b> però la qualificació màxima establerta en l\'activitat és {$a->modulegrade} La puntuació màxima establerta en la vostra guia de qualificació s\'escalarà a la qualificació màxima del mòdul. <br />
 Puntuacions intermèdies es convertiran, respectivament, i s\'arrodoniran a la qualificació més propera disponible.';

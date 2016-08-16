@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz_overview', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['noattemptstoregrade'] = 'Ez da berriz kalifikatu beharreko saiakerarik'
 $string['nogradepermission'] = 'Ez duzu galdetegi hau kalifikatzeko baimenik.';
 $string['onlyoneattemptallowed'] = 'Galdetegi honetan erabiltzailearen saiakera bat baino ez da agertzen';
 $string['optallattempts'] = 'saiakera guztiak';
-$string['optallstudents'] = '\'{$a}\' guztiak';
+$string['optallstudents'] = 'galdetegia egiten saiatu ez diren \'{$a}\' guztiak';
 $string['optattemptsonly'] = 'Saiakerak dituzten \'{$a}\' baino ez';
 $string['optnoattemptsonly'] = 'Saiakerarik ez duten \'{$a}\' bakarrik';
 $string['optonlyregradedattempts'] = 'berriz kalifikatutakoak /  berkalifikatu behar direlako markatuta daudenak';

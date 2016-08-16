@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = 'Assigneu/cancel·leu l\'assignació de la ca
 $string['addservice'] = 'Afegeix un servei nou: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Afegeix funcions al servei "{$a}"';
 $string['allusers'] = 'Tots els usuaris';
-$string['amftestclient'] = 'client de prova AMF';
 $string['apiexplorer'] = 'Explorador de l\'API';
 $string['apiexplorernotavalaible'] = 'L\'explorador de l\'API encara no està disponible.';
 $string['arguments'] = 'Arguments';
 $string['authmethod'] = 'Mètode d\'autenticació';
+$string['callablefromajax'] = 'Cridable des d\'AJAX';
 $string['cannotcreatetoken'] = 'No teniu permís per crear el testimoni de serveis web per al servei {$a}.';
 $string['cannotgetcoursecontents'] = 'No es poden obtenir els continguts del curs';
 $string['checkusercapability'] = 'Comprova la capacitat de l\'usuari';
@@ -119,6 +119,7 @@ $string['iprestriction'] = 'Restricció IP';
 $string['iprestriction_help'] = 'Caldrà que l\'usuari cridi el servei web des de les adreces IP de la llista (separades per comes).';
 $string['key'] = 'Clau';
 $string['keyshelp'] = 'Les claus s\'utilitzen per accedir al vostre compte de Moodle des d\'aplicacions externes.';
+$string['loginrequired'] = 'Restringit als usuaris que han entrat';
 $string['manageprotocols'] = 'Gestiona protocols';
 $string['managetokens'] = 'Gestiona tokens';
 $string['missingcaps'] = 'Capacitats perdudes';
@@ -129,6 +130,7 @@ $string['missingusername'] = 'Nom d\'usuari perdut';
 $string['missingversionfile'] = 'Error de codificació: el fitxer version.php s\'ha perdut per al component {$a}';
 $string['mobilewsdisabled'] = 'Inhabilitat';
 $string['mobilewsenabled'] = 'Habilitat';
+$string['nameexists'] = 'Aquest nom l\'està usant un altre servei.';
 $string['nocapabilitytouseparameter'] = 'Aquest usuari no té la capacitat per a utilitzar el paràmetre {$a}';
 $string['nofunctions'] = 'Aquest servei no té funcions';
 $string['norequiredcapability'] = 'No cal cap capacitat';
@@ -161,7 +163,7 @@ $string['restoredaccountresetpassword'] = 'Al compte restaurat li cal reiniciar 
 $string['restparam'] = 'REST (Paràmetres POST)';
 $string['restrictedusers'] = 'Sols usuaris autoritzats.';
 $string['restrictedusers_help'] = 'Aquesta opció determina si tots els usuaris amb el permís per crear un testimoni de serveis web poden generar un testimoni d\'aquest servei a través de la seva pàgina de claus de seguretat o si només els usuaris autoritzats poden fer-ho.';
-$string['securitykey'] = '';
+$string['securitykey'] = 'Clau de seguretat (token)';
 $string['securitykeys'] = 'Claus de seguretat';
 $string['selectauthorisedusers'] = 'Selecciona usuaris autoritzats';
 $string['selectedcapability'] = 'Seleccionat';
@@ -183,9 +185,9 @@ $string['shortnametaken'] = 'Aquest nom curt s\'està utilitzant en un altre ser
 $string['simpleauthlog'] = 'Inici de sessió amb autenticació simple';
 $string['step'] = 'Pas';
 $string['supplyinfo'] = 'Més detalls';
-$string['testauserwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Abans de fer-ho, inicieu sessió com un usuari amb la capacitat moodle/webservice:createtoken i obtingueu la clau de seguretat (testimoni) a través de la Configuració del meu perfil. Podeu utilitzar aquest testimoni en el client de prova. En el client de prova, també trieu un protocol activat amb l\'autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
+$string['testauserwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Abans de fer-ho, inicieu sessió com un usuari amb la capacitat moodle/webservice:createtoken i obtingueu la clau de seguretat (testimoni) a través de la Configuració del meu perfil. Podeu utilitzar aquest testimoni en el client de prova. En el client de prova, també trieu un protocol activat amb la autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['testclient'] = 'Servei web client de prova';
-$string['testclientdescription'] = 'El servei web client de prova <strong>executa</strong> funcions de forma <strong>REAL</strong>. No executeu funcions que no coneixeu. <br/>* Totes les funcions servei web no estan implementades encara al client de prova. <br/>* Per provar que un usuari no pot accedir a algunes funcions, podeu provar algunes funcions de les quals no teniu permís.<br/>* Per veure millor els missatges d\'error  configureu la depuració a  <strong>{$a->mode}</strong> dins {$a->atag}<br/>* Accediu a {$a->amfatag}.';
+$string['testclientdescription'] = '* El servei web client de prova <strong>executa</strong> funcions de forma <strong>REAL</strong>. No executeu funcions que no conegueu.<br/>* No totes les funcions de servei web estan implementades encara al client de prova. <br/>* Per provar que un usuari no pot accedir a algunes funcions, podeu provar algunes funcions a les quals no concediu permís.<br/>* Per veure missatges d\'error més clars establiu la depuració a <strong>{$a->mode}</strong> dins {$a->atag}<br/>';
 $string['testwithtestclient'] = 'Proveu el servei';
 $string['testwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Utilitza un protocol habilitat amb autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['token'] = 'Testimoni';
@@ -198,7 +200,7 @@ $string['updateusersettings'] = 'Actualitza';
 $string['uploadfiles'] = 'Es poden penjar fitxers';
 $string['uploadfiles_help'] = 'Si ho habiliteu qualsevol usuari podrà penjar fitxers amb les seves claus segures a les seves àrees privades o a la secció fitxers esborranys. És aplicable qualsevol limitació de les quotes de fitxers d\'usuari.';
 $string['userasclients'] = 'Usuaris com clients amb el testimoni';
-$string['userasclientsdescription'] = 'Els passos següents us ajudaran a aixecar el servei web Moodle per als usuaris com clients. Aquests passos també us ajudaran a aixecar el mètode d\'autenticació recomanat (claus de seguretat). En aquest cas, l\'usuari generarà el seu propi token des la seua pàgina de seguretat mitjançant els paràmetres de El meu perfil.';
+$string['userasclientsdescription'] = 'Els passos següents us ajudaran a configurar el servei web Moodle per als usuaris com a clients. Aquests passos també us ajudaran a configurar el mètode d\'autenticació recomanat (claus de seguretat). En aquest cas, l\'usuari generarà el seu propi testimoni (<em>token</em>) des la seva pàgina de seguretat mitjançant la Configuració del meu perfil.';
 $string['usermissingcaps'] = 'Capacitats perdudes: {$a}';
 $string['usernameorid'] = 'Nom d\'usuari / ID d\'usuari';
 $string['usernameorid_help'] = 'Introduïu un nom d\'usuari o un ID d\'usuari.';

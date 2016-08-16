@@ -16,22 +16,27 @@ Feature: Award badges
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Profile completion"
+    And I expand all fieldsets
     And I set the field "First name" to "1"
     And I set the field "Email address" to "1"
     And I set the field "Phone" to "1"
+    And I set the field "id_description" to "Criterion description"
     When I press "Save"
     Then I should see "Profile completion"
     And I should see "First name"
     And I should see "Email address"
+    And I should see "Phone"
+    And I should see "Criterion description"
     And I should not see "Criteria for this badge have not been set up yet."
     And I press "Enable access"
     And I press "Continue"
-    And I expand "My profile settings" node
+    And I click on "Admin User" "link"
+    And I follow "Profile" in the open menu
     And I follow "Edit profile"
     And I expand all fieldsets
     And I set the field "Phone" to "123456789"
     And I press "Update profile"
-    And I navigate to "My badges" node in "My profile"
+    And I follow "Profile" in the user menu
     Then I should see "Profile Badge"
     And I should not see "There are no badges available."
 
@@ -64,7 +69,7 @@ Feature: Award badges
     Then I should see "Recipients (2)"
     And I log out
     And I log in as "student"
-    And I navigate to "My badges" node in "My profile"
+    And I follow "Profile" in the user menu
     Then I should see "Site Badge"
 
   @javascript
@@ -107,9 +112,9 @@ Feature: Award badges
     Then I should see "Recipients (2)"
     And I log out
     And I log in as "student1"
+    And I follow "Profile" in the user menu
     And I follow "Course 1"
-    And I navigate to "My badges" node in "My profile"
-    Then I should see "Course Badge"
+    And I should see "Course Badge"
 
   @javascript
   Scenario: Award badge on activity completion
@@ -124,14 +129,12 @@ Feature: Award badges
       | user | course | role |
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
-    And the following config values are set as admin:
-      | enablecompletion | 1 |
     And I log in as "teacher1"
     And I follow "Course 1"
     And I follow "Edit settings"
     And I set the following fields to these values:
       | Enable completion tracking | Yes |
-    And I press "Save changes"
+    And I press "Save and display"
     And I turn editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
       | Assignment name | Test assignment name |
@@ -152,13 +155,14 @@ Feature: Award badges
     When I press "Continue"
     And I log out
     And I log in as "student1"
+    And I follow "Profile" in the user menu
     And I follow "Course 1"
-    And I navigate to "My badges" node in "My profile"
-    Then I should see "There are no badges available."
-    And I follow "Home"
+    Then I should not see "badges"
+    And I am on homepage
     And I follow "Course 1"
     And I press "Mark as complete: Test assignment name"
-    And I navigate to "My badges" node in "My profile"
+    And I follow "Profile" in the user menu
+    And I follow "Course 1"
     Then I should see "Course Badge"
 
   @javascript
@@ -174,14 +178,12 @@ Feature: Award badges
       | user | course | role |
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
-    And the following config values are set as admin:
-      | enablecompletion | 1 |
     And I log in as "teacher1"
     And I follow "Course 1"
     And I follow "Edit settings"
     And I set the following fields to these values:
       | Enable completion tracking | Yes |
-    And I press "Save changes"
+    And I press "Save and display"
     And I turn editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
       | Assignment name | Test assignment name |
@@ -208,23 +210,20 @@ Feature: Award badges
     When I press "Continue"
     And I log out
     And I log in as "student1"
+    And I follow "Profile" in the user menu
     And I follow "Course 1"
-    And I navigate to "My badges" node in "My profile"
-    Then I should see "There are no badges available."
-    And I follow "Home"
+    Then I should not see "badges"
+    And I am on homepage
     And I follow "Course 1"
     And I press "Mark as complete: Test assignment name"
     And I log out
-    And I log in as "admin"
-    # We can't wait for cron to happen, so the admin manually triggers it.
-    And I trigger cron
-    # The admin needs to trigger cron twice to see the completion status as completed.
-    # We wait more than 1 minute because of the next cron run scheduled time.
-    And I wait "61" seconds
-    And I trigger cron
-    # Finally the admin goes back to homepage to continue the user story.
-    And I am on homepage
-    And I log out
+    # Completion cron won't mark the whole course completed unless the
+    # individual criteria was marked completed more than a second ago. So
+    # run it twice, first to mark the criteria and second for the course.
+    And I run the scheduled task "core\task\completion_regular_task"
+    And I wait "1" seconds
+    And I run the scheduled task "core\task\completion_regular_task"
+    # The student should now see their badge.
     And I log in as "student1"
-    And I navigate to "My badges" node in "My profile"
+    And I follow "Profile" in the user menu
     Then I should see "Course Badge"

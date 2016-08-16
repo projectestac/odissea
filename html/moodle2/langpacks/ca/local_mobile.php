@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'local_mobile', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,15 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Atorga permisos al rol d\'usuari autenticat';
+$string['allowpermissionsdescription'] = 'Edita el rol d\'usuari autenticat i permet la capacitat moodle/webservice:createtoken';
 $string['cannotcreatetoken'] = 'La generació automàtica de testimonis no està disponible per a administradors del lloc (han de crear un testimoni manualment)';
+$string['checkpluginconfiguration'] = 'Comprova la configuració del connector';
 $string['enableadditionalservice'] = 'Activa el servei Característiques addicionals de Moodle Mobile';
 $string['enableadditionalservicedescription'] = 'Cal activar aquest servei.';
 $string['local_mobiledescription'] = 'Connector que amplia les característiques dels serveis de Moodle Mobile';
 $string['local_mobilesettings'] = 'Configuració';
 $string['local_mobiletypeoflogin'] = 'Tria tipus d\'accés';
 $string['local_mobiletypeoflogin_key'] = 'Tipus d\'accés';
+$string['local_mobileurlscheme_key'] = 'Esquema d\'URL';
 $string['loginintheapp'] = 'Mitjançant l\'aplicació';
 $string['logininthebrowser'] = 'Mitjançant una finestra del navegador (per a connectors SSO)';
-$string['mod_scorm_settings'] = 'Característiques específiques del mòdul SCORM';
+$string['loginintheinappbrowser'] = 'Mitjançant un navegador incrustat';
 $string['pluginname'] = 'Característiques addicionals de Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'El connector local de Moodle Mobile ha d\'estar habilitat i configurat per a poder llançar l\'aplicació';

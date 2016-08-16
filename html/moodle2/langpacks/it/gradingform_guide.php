@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_guide', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['backtoediting'] = 'Torna alla modifica';
 $string['clicktocopy'] = 'Click per copiare questo testo nel commento dei criteri';
 $string['clicktoedit'] = 'Click per modificare';
 $string['clicktoeditname'] = 'Click per modificare il nome del criterio';
+$string['comment'] = 'Commento';
 $string['comments'] = 'Commenti di uso frequente';
 $string['commentsdelete'] = 'Elimina commento';
 $string['commentsempty'] = 'Click per modificare il commento';
@@ -39,31 +40,36 @@ $string['commentsmovedown'] = 'Sposta in basso';
 $string['commentsmoveup'] = 'Sposta in alto';
 $string['confirmdeletecriterion'] = 'Sei sicuro di eliminare questo elemento?';
 $string['confirmdeletelevel'] = 'Sei sicuro di eliminare questo livello?';
-$string['criterion'] = 'Criterio';
+$string['criterion'] = 'Nome del criterio';
 $string['criteriondelete'] = 'Elimina criterio';
 $string['criterionempty'] = 'Click per modificare il criterio';
 $string['criterionmovedown'] = 'Sposta in basso';
 $string['criterionmoveup'] = 'Sposta in alto';
 $string['criterionname'] = 'Nome del criterio';
+$string['criterionremark'] = 'Commento del criterio {$a}';
 $string['definemarkingguide'] = 'Imposta valutazione guidata';
 $string['description'] = 'Descrizione';
 $string['descriptionmarkers'] = 'Descrizione per il valutatore';
 $string['descriptionstudents'] = 'Descrizione per gli studenti';
+$string['err_maxscoreisnegative'] = 'Il punteggio massimo non è valido, i valori negativi non sono consentiti.';
 $string['err_maxscorenotnumeric'] = 'Il punteggio massimo del criterio deve essere numerico';
 $string['err_nocomment'] = 'Il commento non può rimanere vuoto';
 $string['err_nodescription'] = 'La descrizione per gli studenti non può rimanere vuoto';
 $string['err_nodescriptionmarkers'] = 'La descrizione per il valutatore non può rimanere vuota';
 $string['err_nomaxscore'] = 'Il punteggio massimo del criterio non può rimanere vuoto';
 $string['err_noshortname'] = 'Il nome del criterio non può rimanere vuoto';
-$string['err_scoreinvalid'] = 'Il punteggio del criterio {$a->criterianame} non è valido. Il punteggio massimo è {$a->maxscore}';
+$string['err_scoreinvalid'] = 'Il punteggio dato a {$a->criterianame} non è valido, Il punteggio massimo è {$a->maxscore}';
+$string['err_scoreisnegative'] = 'Il punteggio dato a {$a->criterianame} non è valido, i valori negativi non sono consentiti.';
 $string['err_shortnametoolong'] = 'Il criterio deve contenere meno di 256 caratteri.';
 $string['gradingof'] = 'Valutazione {$a}';
+$string['guide'] = 'Valutazione guidata';
 $string['guidemappingexplained'] = 'ATTENZIONE: la valutazione guidata ha un punteggio massimo di <b>{$a->maxscore}</b> ma il punteggio massimo impostato nell\'attività è pari a {$a->modulegrade}. Il punteggio massimo della valutazione guidata sarà convertito proporzionalmente.<br />I punteggi intermedi saranno arrotondati al punteggio più vicino.';
 $string['guidenotcompleted'] = 'Per favore inserisci un punteggio valido per ciascun criterio';
 $string['guideoptions'] = 'Opzioni valutazione guidata';
 $string['guidestatus'] = 'Stato della valutazione guidata';
 $string['hidemarkerdesc'] = 'Visualizza la descrizione dei criteri per il valutatore';
 $string['hidestudentdesc'] = 'Visualizza la descrizione dei criteri per gli studenti';
+$string['insertcomment'] = 'Inserisci commento di uso frequente';
 $string['maxscore'] = 'Punteggio massimo';
 $string['name'] = 'Nome';
 $string['needregrademessage'] = 'La definizione della valutazione guidata è cambiata dopo la valutazione di questo studente. Lo studente non potrà visualizzare la propria valutazione finché la sua valutazione non sarà stata aggiornata.';

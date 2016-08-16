@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_meta', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = 'グループに追加する';
+$string['coursesort'] = 'コース一覧を並べ替える';
+$string['coursesort_help'] = 'ここではリンクできるコース一覧を並べ替え順 (例 「サイト管理 > コース > コースおよびカテゴリを管理する」で設定された順番) またはコース設定のアルファベット順で並べ替えるかどうか決定します。';
+$string['creategroup'] = '新しいグループを作成する';
+$string['defaultgroupnametext'] = '{$a->name} コース {$a->increment}';
 $string['linkedcourse'] = 'コースにリンクする';
 $string['meta:config'] = 'メタ登録インスタンスを設定する';
 $string['meta:selectaslinked'] = 'メタリンクされるコースを選択する';

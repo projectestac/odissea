@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = 'Этот параметр определяет 
 * HTML - доступен HTML-редактор
 * Creole - общепринятый язык разметки вики, для которого доступна небольшая панель редактирования
 * Nwiki - язык разметки (схожий с Mediawiki), используемый в заимствованном модуле Nwiki.';
+$string['deleteallpages'] = 'Удалить все страницы вики.';
 $string['deletecomment'] = 'Удаление комментария';
 $string['deletecommentcheck'] = 'Удалить комментарий';
 $string['deletecommentcheckfull'] = 'Вы уверены, что хотите удалить комментарий?';
@@ -188,7 +189,7 @@ $string['orphaned'] = 'Страницы-сироты';
 $string['orphaned_help'] = 'Список страниц, которые не связаны с другими страницами.';
 $string['overridelocks'] = 'Переопределить блокировку';
 $string['overridinglocks'] = 'Переопределение блокировки...';
-$string['pageexists'] = 'Такая страница уже существует. Перенаправление на нее.';
+$string['pageexists'] = 'Такая страница уже существует.';
 $string['pageindex'] = 'Указатель страниц';
 $string['pageindex_help'] = 'Древовидная схема страниц Вики.';
 $string['pageislocked'] = 'Кто-то сейчас редактирует эту страницу. Попробуйте через несколько минут.';
@@ -223,12 +224,15 @@ $string['return'] = 'Назад';
 $string['save'] = 'Сохранить';
 $string['saving'] = 'Сохранение страницы';
 $string['savingerror'] = 'Ошибка сохранения';
+$string['search:activity'] = 'Вики — информация об элементе курса';
+$string['search:collaborative_page'] = 'Вики — совместно редактируемые страницы';
 $string['searchcontent'] = 'Поиск по странице';
 $string['searchresult'] = 'Результаты поиска:';
 $string['searchterms'] = 'Поисковые термины';
 $string['searchwikis'] = 'Поиск Вики';
 $string['special'] = 'Специальное';
 $string['tableofcontents'] = 'Оглавление';
+$string['tagarea_wiki_pages'] = 'Страницы вики';
 $string['tagsdeleted'] = 'Теги удалены';
 $string['tagtitle'] = 'Смотреть тег «{$a}»';
 $string['teacherrating'] = 'Рейтинг преподавателя';

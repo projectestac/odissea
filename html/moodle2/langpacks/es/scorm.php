@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,7 @@ $string['browsed'] = 'Navegado';
 $string['browsemode'] = 'Modo de presentación preliminar';
 $string['browserepository'] = 'Navegar por el repositorio';
 $string['calculatedweight'] = 'Peso calculado';
+$string['cannotaccess'] = 'No se puede llamar a este script de esa manera';
 $string['cannotfindsco'] = 'No se ha encontrado SCO';
 $string['chooseapacket'] = 'Elegir o actualizar un paquete SCORM';
 $string['collapsetocwinsize'] = 'Contraer TOC cuando el tamaño de la ventana inferior';
@@ -111,8 +112,8 @@ $string['display'] = 'Mostrar paquete';
 $string['displayactivityname'] = 'Mostrar nombre de la actividad';
 $string['displayactivityname_help'] = 'Mostrar o no mostrar el nombre de la actividad sobre el reproductor de SCORM.';
 $string['displayattemptstatus'] = 'Mostrar estado de intentos';
-$string['displayattemptstatusdesc'] = 'Mostrar un resumen de los intentos del usuario  en el bloque Vista general del curso en Mi Moodle y/o la página de inicio del SCORM';
-$string['displayattemptstatus_help'] = 'Esta preferencia permite mostrar un resumen de los intentos de los usuarios en el bloque Vista general del curso en Mi Moodle y/o en la página de entrada del SCORM.';
+$string['displayattemptstatusdesc'] = 'Esta preferencia fija el valor por defecto para mostrar el ajuste de estado de intentos';
+$string['displayattemptstatus_help'] = 'Esta preferencia permite mostrar un resumen de los intentos de los usuarios en el bloque Vista general del curso en Mi Tablero y/o en la página de entrada del SCORM.';
 $string['displaycoursestructure'] = 'Mostrar estructura del curso en la página de entrada';
 $string['displaycoursestructuredesc'] = 'Esta preferencia fija el valor por defecto para mostrar el ajuste de estructura del curso en la página de entrada';
 $string['displaycoursestructure_help'] = 'Si está activado, la tabla de contenidos se mostrará en la página de resumen SCORM.';

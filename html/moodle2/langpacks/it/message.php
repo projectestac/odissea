@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['contacts'] = 'Contatti';
 $string['context'] = 'contesto';
 $string['defaultmessageoutputs'] = 'Instradamento di default dei messaggi';
 $string['defaults'] = 'Default';
+$string['deletemessage'] = 'Elimina messaggio';
+$string['deletemessageconfirmation'] = 'Sei sicuro di eliminare questo messaggio? Verrà eliminato solamente dalla storico dei tuoi messaggi rimanendo comunque visibile a coloro che lo hanno ricevuto.';
 $string['deletemessagesdays'] = 'Numero di giorni trascorsi i quali i vecchi messaggi saranno cancellati';
 $string['disableall'] = 'Disabilita temporaneamente le notifiche';
 $string['disableall_help'] = 'Disabilita temporaneamente tutte le notifiche ad eccezione di quelle indicate come "forzate" dall\'amministratore del sito';
@@ -56,10 +58,12 @@ $string['emptysearchstring'] = 'Dovresti cercare qualcosa';
 $string['enabled'] = 'Abilitato';
 $string['errorcallingprocessor'] = 'Si è verificato un errore durante la chiamata all\'instradamento definito';
 $string['errortranslatingdefault'] = 'Si è verificato un errore durante la trasposizione delle impostazioni di default del plugin, al loro posto verranno utilizzati i default di sistema.';
+$string['errorwhilesendingmessage'] = 'Si è verificato un errore durante l\'invio del messaggio; per favore riprova.';
 $string['eventmessagecontactadded'] = 'Aggiunto contatto';
 $string['eventmessagecontactblocked'] = 'Bloccato contatto';
 $string['eventmessagecontactremoved'] = 'Eliminato contatto';
 $string['eventmessagecontactunblocked'] = 'Sbloccato contatto';
+$string['eventmessagedeleted'] = 'Eliminato messaggio';
 $string['eventmessagesent'] = 'Inviato messaggio';
 $string['eventmessageviewed'] = 'Visualizzato messaggo';
 $string['forced'] = 'Forzato';
@@ -86,6 +90,8 @@ $string['messagehistoryfull'] = 'Tutti i messaggi';
 $string['messagenavigation'] = 'Navigazione messaggio:';
 $string['messageoutputs'] = 'Instradamento messaggi';
 $string['messages'] = 'Messaggi';
+$string['messagesent'] = 'Messaggio inviato';
+$string['messagetosend'] = 'Messaggio da inviare';
 $string['messaging'] = 'Messaggistica';
 $string['messagingblockednoncontact'] = '{$a} non potrà risponderti poiché hai scelto di bloccare i messaggi che non provengono dai tuoi contatti.';
 $string['messagingdisabled'] = 'I messaggi saranno inviati via email poiché la messaggistica non è abilitata su questo sito.';
@@ -126,6 +132,7 @@ $string['search'] = 'Cerca';
 $string['searchcombined'] = 'Cerca persone e messaggi';
 $string['searchforperson'] = 'Cerca una persona';
 $string['searchmessages'] = 'Cerca un messaggio';
+$string['sendingmessage'] = 'Invio messaggio in corso';
 $string['sendingvia'] = 'Invio di {$a->provider}" tramite "{$a->processor}"';
 $string['sendingviawhen'] = 'Invio di {$a->provider}" tramite "{$a->processor}" in presenza di {$a->state}';
 $string['sendmessage'] = 'Invia messaggio';
@@ -139,6 +146,7 @@ $string['thisconversation'] = 'questa conversazione';
 $string['timenosee'] = 'Minuti trascorsi da quando sono stato visto online';
 $string['timesent'] = 'Ora dell\'invio';
 $string['touserdoesntexist'] = 'Non è possibile mandare un messaggio ad un id utente inesistente ({$a})';
+$string['unabletomessageuser'] = 'Non sei autorizzato ad inviare messaggi all\'utente.';
 $string['unblockcontact'] = 'Sblocca contatto';
 $string['unreadmessages'] = 'Messaggi non letti: ({$a})';
 $string['unreadnewmessage'] = 'Nuovo messaggio da {$a}';
@@ -146,3 +154,4 @@ $string['unreadnewmessages'] = 'Nuovi messaggi: ({$a})';
 $string['userisblockingyou'] = 'Questo utente ha bloccato la possibilità da parte tua di inviargli messaggi';
 $string['userisblockingyounoncontact'] = '{$a} accetta solamente i messaggi provenienti dai suoi contatti.';
 $string['userssearchresults'] = 'Utenti trovati: {$a}';
+$string['viewconversation'] = 'Visualizza conversazione';

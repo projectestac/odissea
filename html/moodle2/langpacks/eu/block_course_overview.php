@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Tolestu ikastaro-zerrenda guztiak';
 $string['configotherexpanded'] = 'Gaituz gero, beste ikastaro batzuk berez zabalduko dira, erabiltzailearen hobespenetan baliogabetzen ez ba, behintzat.';
 $string['configpreservestates'] = 'Gaituz gero, erabiltzaileak ezarritako tolestu/zabaldu egoerak kargatze bakoitzean gorde eta erabiltzen dira.';
 $string['course_overview:addinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra blokea';
-$string['course_overview:myaddinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra bloke berria Nire hasieran';
+$string['course_overview:myaddinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra bloke berria aginte-panelean';
 $string['defaultmaxcourses'] = 'Berezko gehinenezko ikastaroak';
 $string['defaultmaxcoursesdesc'] = 'Ikastaroen ikuspegi orokorra blokean gehienez erakutsiko den ikastaro-kopurua. 0 ipiniz gero, ikastaro guztiak erakutsiko dira.';
 $string['expandall'] = 'Zabaldu ikastaro-zerrenda guztiak';

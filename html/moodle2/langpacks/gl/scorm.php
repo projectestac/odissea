@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['aicchacpkeepsessiondata_desc'] = 'Período de tempo en días no que se 
 $string['aicchacptimeout'] = 'Tempo de espera AICC HACP';
 $string['aicchacptimeout_desc'] = 'Período de tempo en minutos no se manterá aberta que unha sesión externa AICC HACP';
 $string['aiccuserid'] = 'AICC pasar ID numérico do usuario';
+$string['aiccuserid_desc'] = 'O estándar AICC para nomes de usuario é moi restritivo comparado co Moodle, e soamente permite caracteres alfanuméricos, guión medio (-) e subliña (_). Os puntos, os espazos e o símbolo de @ non están permitidos. Se activa isto, os números ID do usuario son pasados ao paquete AICC no canto dos nomes de usuario .';
 $string['aliasonly'] = 'Cando selecciona un ficheiro imsmanifest.xml dun repositorio, debe usar un alias/atallo para este ficheiro.';
 $string['allowapidebug'] = 'Activar a depuración e o seguimento do API (axustar a máscara de captura con apidebugmask)';
 $string['allowtypeaicchacp'] = 'Activar AICC HACP externo';
@@ -53,9 +54,9 @@ $string['attempt'] = 'Intentar';
 $string['attempt1'] = '1 intento';
 $string['attempts'] = 'Intento';
 $string['attemptsmanagement'] = 'Xestión de intentos';
-$string['attemptstatusall'] = 'Área persoal e páxina de entrada';
+$string['attemptstatusall'] = 'Cartafol persoal e páxina de entrada';
 $string['attemptstatusentry'] = 'Páxina de entrada unicamente';
-$string['attemptstatusmy'] = 'Soamente a área persoal';
+$string['attemptstatusmy'] = 'Cartafol persoal unicamente';
 $string['attemptsx'] = '{$a} intentos';
 $string['attr_error'] = 'Valor incorrecto para o atributo ({$a->attr}) na etiqueta {$a->tag}.';
 $string['autocommit'] = 'Implantar automaticamente';
@@ -105,7 +106,7 @@ $string['display'] = 'Presentar o paquete';
 $string['displayactivityname'] = 'Amosar o nome da actividade';
 $string['displayactivityname_help'] = 'Se se amosa ou non o nome da actividade enriba do reprodutor do SCORM.';
 $string['displayattemptstatus'] = 'Presentar o estado dos intentos';
-$string['displayattemptstatusdesc'] = 'Se debe amosarse un resumo dos intentos do usuario no bloque  de vista xeral do curso na área persoal e/ou na páxina de entrada de SCORM.';
+$string['displayattemptstatusdesc'] = 'Esta preferencia estabelece o valor predeterminado para presentar a configuración do estado de intentos';
 $string['displayattemptstatus_help'] = 'Esta preferencia permite un resumo dos intentos do usuario que se amosará no bloque de vista xeral do curso no cartafol persoal e/ou na páxina de entrada SCORM.';
 $string['displaycoursestructure'] = 'Presentar a estrutura do curso na páxina de entrada';
 $string['displaycoursestructuredesc'] = 'Esta preferencia estabelece o valor predeterminado para presentar a estrutura do curso no axuste da páxina de entrada';

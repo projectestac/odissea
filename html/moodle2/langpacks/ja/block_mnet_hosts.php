@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['error_authmnetneeded'] = 'MNetネットワークサーバ一覧を表�
 $string['error_localusersonly'] = 'リモートユーザはこのホストから他のMNetネットワークサーバにジャンプすることはできません。';
 $string['error_roamcapabilityneeded'] = 'MNetネットワークサーバ一覧を表示するにはユーザに「MNet経由でリモートアプリケーションを散策する」ケイパビリティが必要です。';
 $string['mnet_hosts:addinstance'] = '新しいネットワークサーバブロックを追加する';
-$string['mnet_hosts:myaddinstance'] = '新しいネットワークサーバブロックをマイホームに追加する';
+$string['mnet_hosts:myaddinstance'] = '新しいネットワークサーバブロックをダッシュボードに追加する';
 $string['pluginname'] = 'ネットワークサーバ';
 $string['server'] = 'サーバ';

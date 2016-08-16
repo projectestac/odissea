@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_social', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   format_social
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['numberdiscussions'] = 'Number of discussions';
+$string['numberdiscussions_help'] = 'This setting specifies how many discussions should be displayed.';
 $string['pluginname'] = 'Social format';
 $string['sectionname'] = 'section';

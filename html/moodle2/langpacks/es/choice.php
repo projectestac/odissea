@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Contestado';
 $string['atleastoneoption'] = 'Necesita proporcionar al menos una respuesta posible.';
 $string['cannotsubmit'] = 'Lo lamentamos, se ha producido un error con el envío de su respuesta. Por favor inténtelo de nuevo.';
 $string['choice'] = 'Opción';
+$string['choiceactivityname'] = 'Consulta: {$a}';
 $string['choice:addinstance'] = 'Añadir una nueva opción';
 $string['choice:choose'] = 'Registrar una elección';
 $string['choiceclose'] = 'Hasta';
+$string['choicecloseson'] = 'La consulta se cierra el {$a}';
 $string['choice:deleteresponses'] = 'Eliminar respuestas';
 $string['choice:downloadresponses'] = 'Descargar respuestas';
 $string['choicefull'] = 'Esta opción está completa y no hay espacios disponibles.';
@@ -59,6 +61,7 @@ $string['eventreportviewed'] = 'Informe de Consulta visto';
 $string['expired'] = 'Lo sentimos, esta actividad se cerró el {$a} y ya no está disponible';
 $string['full'] = '(Lleno)';
 $string['havetologin'] = 'Debe entrar antes de remitir su elección';
+$string['includeinactive'] = 'Incluir respuestas de usuarios inactivos/suspendidos';
 $string['limit'] = 'Límite';
 $string['limitanswers'] = 'Limitar el número de respuestas permitidas';
 $string['limitanswers_help'] = '<p>Esta opción le permite limitar el número de participantes que
@@ -92,14 +95,15 @@ $string['noresultsviewable'] = 'Los resultados no pueden verse en este momento.'
 $string['notanswered'] = 'Sin contestar aún';
 $string['notenrolledchoose'] = 'Lo sentimos, solo los usuarios matriculados pueden seleccionar una opción.';
 $string['notopenyet'] = 'Lo sentimos, esta actividad no estará disponible hasta {$a}';
-$string['numberofuser'] = 'Número de participantes';
-$string['numberofuserinpercentage'] = 'Porcentaje de participantes';
+$string['numberofuser'] = 'Número de respuestas';
+$string['numberofuserinpercentage'] = 'Porcentaje de respuestas';
 $string['option'] = 'Opción';
 $string['optionno'] = 'Opción {no}';
 $string['options'] = 'Opciones';
 $string['page-mod-choice-x'] = 'Cualquier página del módulo Consulta';
 $string['pluginadministration'] = 'Administración';
 $string['pluginname'] = 'Consulta';
+$string['previewonly'] = 'Esta es solamente una previsualización de las opciones disponibles para esta actividad. No podrá enviar su respuesta a la consulta hasta el {$a}.';
 $string['privacy'] = 'Privacidad de los resultados';
 $string['publish'] = 'Publicar resultados';
 $string['publishafteranswer'] = 'Mostrar los resultados al estudiante después de su respuesta';
@@ -115,6 +119,8 @@ $string['responsesresultgraphheader'] = 'Vista de gráfica';
 $string['responsesto'] = 'Respuestas para {$a}';
 $string['results'] = 'Resultados';
 $string['savemychoice'] = 'Guardar mi elección';
+$string['showpreview'] = 'Mostrar previsualización';
+$string['showpreview_help'] = 'Permitir a los estudiantes ver las opciones disponibles antes de que la consulta esté abierta para enviar.';
 $string['showunanswered'] = 'Mostrar columna de no respondidas';
 $string['skipresultgraph'] = 'Pasar por alto gráfico de resultados';
 $string['spaceleft'] = 'espacio disponible';

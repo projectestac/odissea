@@ -16,14 +16,14 @@ Feature: Atto Autosave
       | teacher2 | C1 | editingteacher |
     And I log in as "admin"
     And I navigate to "Atto toolbar settings" node in "Site administration > Plugins > Text editors > Atto HTML editor"
-    And I set the field with xpath "//input[@id='id_s_editor_atto_autosavefrequencyv']" to "3"
-    And I set the field with xpath "//select[@id='id_s_editor_atto_autosavefrequencyu']" to "seconds"
+    And I set the field "Autosave frequency" to "3"
+    And I set the field with xpath "//select[@name='s_editor_atto_autosavefrequency[u]']" to "seconds"
     And I click on "Save changes" "button"
-    And I am on homepage
+    And I am on site homepage
     And I follow "Course 1"
     And I navigate to "Edit settings" node in "Course administration"
     And I set the field with xpath "//select[@name='summary_editor[format]']" to "1"
-    And I click on "Save changes" "button"
+    And I click on "Save and display" "button"
     And I log out
 
   @javascript
@@ -52,10 +52,10 @@ Feature: Atto Autosave
     And I wait "5" seconds
     And I log out
     And I log in as "teacher2"
-    And I navigate to "My private files" node in "My profile"
+    And I follow "Manage private files..."
     And I upload "lib/editor/atto/tests/fixtures/moodle-logo.png" file to "Files" filemanager
     And I click on "Save changes" "button"
-    And I am on homepage
+    And I click on "Dashboard" "link" in the "Navigation" "block"
     And I follow "Course 1"
     And I navigate to "Edit settings" node in "Course administration"
     And I set the field "Course summary" to "<p>Image test</p>"
@@ -69,7 +69,7 @@ Feature: Atto Autosave
     # Wait for the page to "settle".
     And I wait until the page is ready
     And I click on "Save image" "button"
-    And I click on "Save changes" "button"
+    And I click on "Save and display" "button"
     And I log out
     When I log in as "teacher1"
     And I follow "Course 1"
@@ -89,7 +89,7 @@ Feature: Atto Autosave
     And I follow "Course 1"
     And I navigate to "Edit settings" node in "Course administration"
     And I set the field "Course summary" to "Modified text"
-    And I click on "Save changes" "button"
+    And I click on "Save and display" "button"
     And I log out
     When I log in as "teacher1"
     And I follow "Course 1"

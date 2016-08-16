@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'feedback', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Afegeix una pregunta a l\'activitat';
+$string['add_item'] = 'Afegeix una pregunta';
 $string['add_pagebreak'] = 'Afegeix un salt de pàgina';
 $string['adjustment'] = 'Paràmetre';
 $string['after_submit'] = 'Després de la tramesa';
@@ -33,7 +33,7 @@ $string['allowfullanonymous'] = 'Habilita l\'anonimat complet';
 $string['analysis'] = 'Anàlisi';
 $string['anonymous'] = 'Anonimat';
 $string['anonymous_edit'] = 'Enregistra els noms d\'usuari';
-$string['anonymous_entries'] = 'Entrades anònimes';
+$string['anonymous_entries'] = 'Entrades anònimes ({$a})';
 $string['anonymous_user'] = 'Usuari anònim';
 $string['append_new_items'] = 'Afegeix elements nous';
 $string['autonumbering'] = 'Numeració automàtica de les preguntes';
@@ -41,6 +41,7 @@ $string['autonumbering_help'] = 'Habilita o inhabilita la numeració automatitza
 $string['average'] = 'Mitjana';
 $string['bold'] = 'Negreta';
 $string['cancel_moving'] = 'Cancel·la el moviment';
+$string['cannotaccess'] = 'Sols podeu accedir a aquesta retroacció des d\'un curs';
 $string['cannotmapfeedback'] = 'Hi ha un problema amb la base de dades. No es pot fer el mapatge de la retroacció al curs.';
 $string['cannotsavetempl'] = 'no es poden desar les plantilles';
 $string['cannotunmap'] = 'Problemes amb la base de dades, no es pot desfer el mapa';
@@ -51,6 +52,7 @@ $string['checkbox'] = 'Opcions múltiples - es permeten respostes múltiples (ca
 $string['check_values'] = 'Respostes possibles';
 $string['choosefile'] = 'Tria un fitxer';
 $string['chosen_feedback_response'] = 'resposta de retroacció triada';
+$string['closebeforeopen'] = 'Heu especificat una data d\'acabament anterior a la data d\'inici.';
 $string['completed'] = 'completat';
 $string['completed_feedbacks'] = 'Respostes enviades';
 $string['complete_the_form'] = 'Responeu les preguntes...';
@@ -115,6 +117,7 @@ $string['export_to_excel'] = 'Exporta a Excel';
 $string['feedback:addinstance'] = 'Afegir una nova retroacció';
 $string['feedbackclose'] = 'Permet les respostes a';
 $string['feedback:complete'] = 'Completar una retroacció';
+$string['feedbackcompleted'] = '{$a->username} ha completat {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Crea una plantilla privada';
 $string['feedback:createpublictemplate'] = 'Crea una plantilla pública';
 $string['feedback:deletesubmissions'] = 'Suprimeix enviaments completats';
@@ -140,9 +143,7 @@ $string['info'] = 'Informació';
 $string['infotype'] = 'Tipus d\'informació';
 $string['insufficient_responses'] = 'respostes insuficients';
 $string['insufficient_responses_for_this_group'] = 'No hi ha prou respostes per a aquest grup';
-$string['insufficient_responses_help'] = 'No hi ha prou respostes per a aquest grup.
-
-Per a mantenir l\'anonimat de la retroacció es necessita un mínim de dues respostes.';
+$string['insufficient_responses_help'] = 'Per a mantenir l\'anonimat de la retroacció calen com a mínim dues respostes.';
 $string['item_label'] = 'Etiqueta';
 $string['item_name'] = 'Pregunta';
 $string['label'] = 'Etiqueta';
@@ -189,8 +190,8 @@ $string['no_itemlabel'] = 'Sense etiqueta';
 $string['no_itemname'] = 'Element sense nom';
 $string['no_items_available_yet'] = 'Encara no s\'han definit preguntes';
 $string['non_anonymous'] = 'El nom de l\'usuari es registrarà i es mostrarà amb les respostes';
-$string['non_anonymous_entries'] = 'entrades no anònimes';
-$string['non_respondents_students'] = 'estudiants que no han respost';
+$string['non_anonymous_entries'] = 'Entrades no anònimes ({$a})';
+$string['non_respondents_students'] = 'Estudiants que no han respost ({$a})';
 $string['notavailable'] = 'aquesta retroacció no està disponible';
 $string['not_completed_yet'] = 'Encara no s\'ha completat';
 $string['no_templates_available_yet'] = 'Encara no hi ha plantilles';
@@ -261,8 +262,8 @@ $string['started'] = 's\'ha iniciat';
 $string['stop'] = 'Acaba';
 $string['subject'] = 'Tema';
 $string['switch_group'] = 'Tria grup';
-$string['switch_item_to_not_required'] = 'Elecció: resposta no obligatoria';
-$string['switch_item_to_required'] = 'Elecció: resposta obligatoria';
+$string['switch_item_to_not_required'] = 'Establerta com a no obligatòria';
+$string['switch_item_to_required'] = 'Establerta com a obligatòria';
 $string['template'] = 'Plantilla';
 $string['templates'] = 'Plantilles';
 $string['template_saved'] = 'Plantilla desada';
@@ -278,7 +279,7 @@ $string['typemissing'] = 'valor perdut "tipus"';
 $string['update_item'] = 'Desa els canvis de la pregunta';
 $string['url_for_continue'] = 'Enllaç de l\'activitat següent';
 $string['url_for_continue_help'] = 'Després de trametre la retroacció, es mostra un botó per a continuar amb un enllaç a la pàgina del curs. Alternativament, l\'enllaç pot conduir a l\'activitat següent si s\'introdueix aquí l\'URL d\'aquesta activitat.';
-$string['use_one_line_for_each_value'] = '<br />Usa una línia per cada resposta!';
+$string['use_one_line_for_each_value'] = 'Utilitzeu una línia per cada resposta!';
 $string['use_this_template'] = 'Utilitza aquesta plantilla';
 $string['using_templates'] = 'Utilitza una plantilla';
 $string['vertical'] = 'vertical';

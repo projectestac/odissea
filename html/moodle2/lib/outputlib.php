@@ -96,6 +96,32 @@ function theme_get_revision() {
     }
 }
 
+/**
+ * Checks if the given device has a theme defined in config.php.
+ *
+ * @return bool
+ */
+function theme_is_device_locked($device) {
+    global $CFG;
+    $themeconfigname = core_useragent::get_device_type_cfg_var_name($device);
+    return isset($CFG->config_php_settings[$themeconfigname]);
+}
+
+/**
+ * Returns the theme named defined in config.php for the given device.
+ *
+ * @return string or null
+ */
+function theme_get_locked_theme_for_device($device) {
+    global $CFG;
+
+    if (!theme_is_device_locked($device)) {
+        return null;
+    }
+
+    $themeconfigname = core_useragent::get_device_type_cfg_var_name($device);
+    return $CFG->config_php_settings[$themeconfigname];
+}
 
 /**
  * This class represents the configuration variables of a Moodle theme.
@@ -279,6 +305,15 @@ class theme_config {
     public $larrow = null;
 
     /**
+     * @var string Accessibility: Up arrow-like character is used in
+     * the book heirarchical navigation.
+     * If the theme does not set characters, appropriate defaults
+     * are set automatically. Please DO NOT
+     * use ^ - this is confusing for blind users.
+     */
+    public $uarrow = null;
+
+    /**
      * @var bool Some themes may want to disable ajax course editing.
      */
     public $enablecourseajax = true;
@@ -452,11 +487,13 @@ class theme_config {
             $baseconfig = $config;
         }
 
-        $configurable = array('parents', 'sheets', 'parents_exclude_sheets', 'plugins_exclude_sheets', 'javascripts', 'javascripts_footer',
-                              'parents_exclude_javascripts', 'layouts', 'enable_dock', 'enablecourseajax', 'supportscssoptimisation',
-                              'rendererfactory', 'csspostprocess', 'editor_sheets', 'rarrow', 'larrow', 'hidefromselector', 'doctype',
-                              'yuicssmodules', 'blockrtlmanipulations', 'lessfile', 'extralesscallback', 'lessvariablescallback',
-                              'blockrendermethod');
+        $configurable = array(
+            'parents', 'sheets', 'parents_exclude_sheets', 'plugins_exclude_sheets',
+            'javascripts', 'javascripts_footer', 'parents_exclude_javascripts',
+            'layouts', 'enable_dock', 'enablecourseajax', 'supportscssoptimisation',
+            'rendererfactory', 'csspostprocess', 'editor_sheets', 'rarrow', 'larrow', 'uarrow',
+            'hidefromselector', 'doctype', 'yuicssmodules', 'blockrtlmanipulations',
+            'lessfile', 'extralesscallback', 'lessvariablescallback', 'blockrendermethod');
 
         foreach ($config as $key=>$value) {
             if (in_array($key, $configurable)) {
@@ -533,7 +570,7 @@ class theme_config {
     }
 
     /**
-     * Checks if arrows $THEME->rarrow, $THEME->larrow have been set (theme/-/config.php).
+     * Checks if arrows $THEME->rarrow, $THEME->larrow, $THEME->uarrow have been set (theme/-/config.php).
      * If not it applies sensible defaults.
      *
      * Accessibility: right and left arrow Unicode characters for breadcrumb, calendar,
@@ -546,6 +583,7 @@ class theme_config {
             // Also OK in Win 9x/2K/IE 5.x
             $this->rarrow = '&#x25BA;';
             $this->larrow = '&#x25C4;';
+            $this->uarrow = '&#x25B2;';
             if (empty($_SERVER['HTTP_USER_AGENT'])) {
                 $uagent = '';
             } else {
@@ -564,6 +602,7 @@ class theme_config {
                 // So we use the same ones Konqueror uses.
                 $this->rarrow = '&rarr;';
                 $this->larrow = '&larr;';
+                $this->uarrow = '&uarr;';
             }
             elseif (isset($_SERVER['HTTP_ACCEPT_CHARSET'])
                 && false === stripos($_SERVER['HTTP_ACCEPT_CHARSET'], 'utf-8')) {
@@ -571,6 +610,7 @@ class theme_config {
                 // To be safe, non-Unicode browsers!
                 $this->rarrow = '&gt;';
                 $this->larrow = '&lt;';
+                $this->uarrow = '^';
             }
 
             // RTL support - in RTL languages, swap r and l arrows
@@ -1038,6 +1078,7 @@ class theme_config {
      * @return bool|string Return false when the compilation failed. Else the compiled string.
      */
     protected function get_css_content_from_less($themedesigner) {
+        global $CFG;
 
         $lessfile = $this->lessfile;
         if (!$lessfile || !is_readable($this->dir . '/less/' . $lessfile . '.less')) {
@@ -1066,7 +1107,8 @@ class theme_config {
         if ($themedesigner) {
             // Add the sourceMap inline to ensure that it is atomically generated.
             $options['sourceMap'] = true;
-            $options['sourceRoot'] = 'theme';
+            $options['sourceMapBasepath'] = $CFG->dirroot;
+            $options['sourceMapRootpath'] = $CFG->wwwroot;
         }
 
         // Instantiate the compiler.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cohort', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['description'] = 'Descripció';
 $string['displayedrows'] = 'Es mostren {$a->displayed} files d\'un total de {$a->total}.';
 $string['duplicateidnumber'] = 'Ja existeix una cohort amb el mateix nombre ID';
 $string['editcohort'] = 'Edita la cohort';
+$string['editcohortidnumber'] = 'Edita l\'ID de la cohort';
+$string['editcohortname'] = 'Edita el nom de la cohort';
 $string['eventcohortcreated'] = 'S\'ha creat la cohort';
 $string['eventcohortdeleted'] = 'S\'ha suprimit la cohort';
 $string['eventcohortmemberadded'] = 'S\'ha afegit un usuari a la cohort';
@@ -63,6 +65,8 @@ $string['memberscount'] = 'Mida de la cohort';
 $string['name'] = 'Nom';
 $string['namecolumnmissing'] = 'S\'ha detectat un problema amb el format del fitxer CSV. Comproveu que inclou els noms de les columnes.';
 $string['namefieldempty'] = 'El nom del camp no pot estar buit';
+$string['newidnumberfor'] = 'Nou número ID per la cohort {$a}';
+$string['newnamefor'] = 'Nou nom per la cohort {$a}';
 $string['nocomponent'] = 'Creat de forma manual';
 $string['potusers'] = 'Usuaris potencials';
 $string['potusersmatching'] = 'S\'estan cercant usuaris potencials';
@@ -74,6 +78,13 @@ $string['selectfromcohort'] = 'Selecciona membres de la cohort';
 $string['systemcohorts'] = 'Cohorts de sistema';
 $string['unknowncohort'] = 'Cohort desconeguda ({$a})!';
 $string['uploadcohorts'] = 'Carrega cohorts';
+$string['uploadcohorts_help'] = 'Les cohorts poden actualitzar-se mitjançant fitxers de text. El format del fitxer ha de ser com segueix:
+
+* Cada línia conté un registre.
+* Cada registre és una sèrie de dades separades per comes (o altres delimitadors).
+* El primer registre conté una llista de noms de camp que defineixen el format de la resta del fitxer.
+* Cal posar nom al nom del camp.
+* Alguns noms de camp opcionals són:  idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
 $string['uploadedcohorts'] = 'S\'han carregat {$a} cohorts';
 $string['useradded'] = 'Usuari afegit a la cohort «{$a}»';
 $string['visible'] = 'Visible';

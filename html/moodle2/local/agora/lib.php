@@ -301,7 +301,7 @@ function is_enabled_in_agora ($mod) {
     return true;
 }
 
-function local_agora_extends_navigation(global_navigation $navigation) {
+function local_agora_extend_navigation(global_navigation $navigation) {
     global $DB, $CFG;
     if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', array('client_id' => 'nodes'))) {
         $nodesurl = $CFG->wwwroot.'/local/agora/login_service.php?service=nodes';

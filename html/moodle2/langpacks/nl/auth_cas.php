@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,15 @@ $string['auth_cas_certificate_path_key'] = 'Certificaat pad';
 $string['auth_cas_changepasswordurl'] = 'URL om wachtwoord te wijzigen';
 $string['auth_cas_create_user'] = 'Schakel dit in als je gebruikers met CAS-authenticatie in de Moodle-databank wil zetten. Indien niet ingeschakeld zullen enkel gebruikers die al in de Moodle-databank bestaan, kunnen aanmelden.';
 $string['auth_cas_create_user_key'] = 'Maak gebruiker';
+$string['auth_cas_curl_ssl_version'] = 'De te gebruiken SSL-versie (2 of 3). Standaard zal PHP dat zelf proberen te bepalen. In sommige gevallen moet dit manueel ingesteld worden.';
+$string['auth_cas_curl_ssl_version_default'] = 'Standaard';
+$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL Versie';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = 'Deze methode gebruikt een CAS-server (Central Authentication Service) om gebruikers in een Single Sign On omgeving (SSO) te authenticeren. Als de ingegeven gebuikersnaam en wachtwoord volgens CAS kloppen, dan zal Moodle een nieuwe gebruiker in zijn databank maken en de gebruikersgegevens uit LDAP overnemen indien nodig. Bij volgende aanmeldingen worden dan enkel de gebruikersnaam en wachtwoord gecontroleerd.';
 $string['auth_cas_enabled'] = 'Schakel dit in als je CAS-authenticatie wil gebruiken.';
 $string['auth_cas_hostname'] = 'Server-naam van de CAS-server<br />vb: host.domein.nl';
@@ -67,3 +76,4 @@ $string['auth_cas_version'] = 'Te gebruiken CAS-protocolversie';
 $string['CASform'] = 'Authenticatiekeuze';
 $string['noldapserver'] = 'Er is geen LDAP-server geconfigureerd voor CAS! Synchronisatie uitgeschakeld';
 $string['pluginname'] = 'CAS-server (SSO)';
+$string['synctask'] = 'CAS-gebruikers sync job';

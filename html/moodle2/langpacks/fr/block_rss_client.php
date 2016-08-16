@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Modifier les flux RSS';
 $string['editrssblock'] = 'Modifier le bloc manchette RSS';
 $string['enableautodiscovery'] = 'Activer la découverte automatique de flux ?';
 $string['enableautodiscovery_help'] = 'L\'activation de cette option permet à Moodle d\'essayer de découvrir automatiquement un flux RSS sur une page web. Par exemple, si l\'on saisit http://docs.moodle.org/fr, Moodle découvrira automatiquement le lien http://docs.moodle.org/fr/index.php?title=Special:RecentChanges&feed=rss.';
-$string['errorloadingfeed'] = 'Erreur lors du chargement de ce flux RSS ({$a})';
 $string['feed'] = 'Flux RSS';
 $string['feedadded'] = 'Flux RSS ajouté';
 $string['feeddeleted'] = 'Flux RSS supprimé';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Créer des flux RSS privés';
 $string['rss_client:createsharedfeeds'] = 'Créer des flux RSS partagés';
 $string['rss_client:manageanyfeeds'] = 'Gérer tous les flux RSS';
 $string['rss_client:manageownfeeds'] = 'Gérer ses propres flux RSS';
-$string['rss_client:myaddinstance'] = 'Ajouter un bloc flux RSS à Ma page';
+$string['rss_client:myaddinstance'] = 'Ajouter un bloc flux RSS au tableau de bord';
 $string['seeallfeeds'] = 'Afficher tous les flux RSS';
 $string['sharedfeed'] = 'Flux RSS partagé';
 $string['shownumentrieslabel'] = 'Nombre maximum d\'articles à afficher par bloc';

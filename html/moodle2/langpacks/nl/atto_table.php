@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_table', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,20 +27,42 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcolumnafter'] = 'Kolom hierna invoegen';
 $string['addrowafter'] = 'Rij hierna invoegen';
+$string['all'] = 'Rond elke cel';
+$string['allowbackgroundcolour'] = 'Achtergrondkleur toestaan';
+$string['allowborder'] = 'Randstijlen toestaan';
+$string['allowborder_desc'] = 'Indien ingeschakeld kunnen celranden aangepast worden.';
+$string['allowwidth'] = 'Breedte toestaan';
+$string['appearance'] = 'Uiterlijk';
+$string['backgroundcolour'] = 'Achtergrondkleur';
+$string['bordercolour'] = 'Randkleur';
+$string['borders'] = 'Randen';
+$string['bordersize'] = 'Randgrootte';
+$string['borderstyles'] = 'Randstijl';
 $string['both'] = 'Beide';
 $string['caption'] = 'Onderschrift';
+$string['captionposition'] = 'Positie van de hoofding';
 $string['columns'] = 'Kolommen';
 $string['createtable'] = 'Maak tabel';
+$string['dashed'] = 'Gestreept';
 $string['deletecolumn'] = 'Verwijder kolom';
 $string['deleterow'] = 'Verwijder rij';
+$string['dotted'] = 'Gestipt';
 $string['edittable'] = 'Bewerk tabel';
 $string['headers'] = 'Definieer koppen op';
 $string['movecolumnleft'] = 'Verplaats kolom naar links';
 $string['movecolumnright'] = 'Verplaats kolom naar rechts';
 $string['moverowdown'] = 'Verplaats rij omlaag';
 $string['moverowup'] = 'Verplaats rij omhoog';
+$string['noborder'] = 'Geen rand';
+$string['none'] = 'Geen';
 $string['numberofcolumns'] = 'Aantal kolommen';
 $string['numberofrows'] = 'Aantal rijen';
+$string['outer'] = 'Rond tabel';
 $string['pluginname'] = 'Tabel';
 $string['rows'] = 'Rijen';
+$string['settings'] = 'Tabelinstellingen';
+$string['solid'] = 'Egaal';
+$string['themedefault'] = 'Themastandaard';
+$string['transparent'] = 'Transparant';
 $string['updatetable'] = 'Tabel aanpassen';
+$string['width'] = 'Tabelbreedte (in %)';

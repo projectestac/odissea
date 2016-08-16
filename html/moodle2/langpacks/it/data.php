@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['addtemplate'] = 'Modello Aggiungi/Modifica record';
 $string['advancedsearch'] = 'Ricerca avanzata';
 $string['allowcomments'] = 'Commenti alle voci';
 $string['alttext'] = 'Testo alternativo';
+$string['approvalstatus'] = 'Stato approvazione';
 $string['approve'] = 'Approva';
 $string['approved'] = 'Approvato';
 $string['areacontent'] = 'Campi';
@@ -131,6 +132,7 @@ $string['entrieslefttoaddtoview'] = 'Devi aggiungere {$a->entrieslefttoview} alt
 $string['entry'] = 'Record';
 $string['entrysaved'] = 'Il record è stato salvato';
 $string['errormustbeteacher'] = 'Devi avere il ruolo di docente per utilizzare questa pagina!';
+$string['errormustsupplyvalue'] = 'Devi inserire un valore.';
 $string['errorpresetexists'] = 'Una preimpostazione con il nome scelto esiste già';
 $string['eventfieldcreated'] = 'Creato campo';
 $string['eventfielddeleted'] = 'Eliminato campo';
@@ -209,6 +211,7 @@ $string['invalidurl'] = 'L\'URL inserito non è valido';
 $string['jstemplate'] = 'Modello javascript';
 $string['latitude'] = 'Latitudine';
 $string['latlong'] = 'Latitudine/Longitudine';
+$string['latlongboth'] = 'Devi compilare sia la latitudine sia la longitudine.';
 $string['latlongdownloadallhint'] = 'Link per scaricare tutti i record in formato KML';
 $string['latlongkmllabelling'] = 'Il modo con cui desideri etichettare gli elementi nei file in formato KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Servizio Link-Out da visualizzare';
@@ -216,6 +219,8 @@ $string['latlongotherfields'] = 'Altri campi';
 $string['list'] = 'Elenco';
 $string['listtemplate'] = 'Modello Elenco';
 $string['longitude'] = 'Longitudine';
+$string['manageapproved'] = 'Consenti modifica di record approvati';
+$string['manageapproved_help'] = 'Disabilitando l\'impostazione, i record approvati non potranno più essere modificati dagli utenti che li hanno inseriti. L\'impostazione ha effetto solo se è anche impostata l\'approvazione dei record.';
 $string['mapexistingfield'] = 'Mappa in {$a}';
 $string['mapnewfield'] = 'Crea un campo';
 $string['mappingwarning'] = 'I campi che non saranno mappati in un nuovo campo saranno omessi ed i rispettivi dati saranno perduti.';
@@ -304,12 +309,14 @@ $string['recordsnotsaved'] = 'Nessun record è stato salvato. Prima di provare n
 $string['recordssaved'] = 'record salvati';
 $string['requireapproval'] = 'Approvazione dei record inseriti';
 $string['requireapproval_help'] = 'Sarà necessario approvare i record inseriti per renderli visualizzabili dagli altri utenti.';
+$string['required'] = 'Obbligatorio';
 $string['requiredentries'] = 'Numero minimo di record da inserire';
 $string['requiredentries_help'] = 'Il numero minimo di record che un utente deve obbligatoriamente inserire nel Database per ritenere completata l\'attività.';
 $string['requiredentriestoview'] = 'Numero minimo di record da inserire per visualizzare';
 $string['requiredentriestoview_help'] = 'Il numero minimo di record che l\'utente deve inserire obbligatoriamente prima di poter visualizzare i record presenti nel Database.
 
 Nota: se è previsto un numero minimo di record prima della visualizzazione, allora il filtro Auto collegamento al database deve essere disabilitato poiché il filtro non può sapere se un utente ha inserito il numero di record minimo.';
+$string['requiredfield'] = 'Campo obbligatorio';
 $string['resetsettings'] = 'Reimposta filtri';
 $string['resettemplate'] = 'Reimposta il modello';
 $string['resizingimages'] = 'Ridimensionamento anteprima immagini in corso...';

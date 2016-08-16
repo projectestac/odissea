@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -195,6 +195,8 @@ $string['registerhostson'] = 'Actualmente a función de rexistrar todos os servi
 $string['remotecourses'] = 'Cursos remotos';
 $string['remotehost'] = 'Hub remoto';
 $string['remotehosts'] = 'Servidores remotos';
+$string['remoteuser'] = 'Usuario {$a->remotetype} remoto';
+$string['remoteuserinfo'] = 'Perfil obtido de <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'A rede require a extensión OpenSSL';
 $string['restore'] = 'Restaurar';
 $string['returnvalue'] = 'Valor devolto';
@@ -217,6 +219,12 @@ $string['showlocal'] = 'Mostrar usuarios locais';
 $string['showremote'] = 'Mostrar usuarios remotos';
 $string['ssl_acl_allow'] = 'SSO ACL: Permitir usuario {$a}[0] de {$a}[1]';
 $string['ssl_acl_deny'] = 'SSO ACL: Denegar usuario {$a}[0] de {$a}[1]';
+$string['sslverification'] = 'Verificación SSL';
+$string['sslverification_help'] = 'Esta opción permítelle configurar o nivel de seguridade ao conectarse a un par usando HTTPS.
+
+* Ningún: sen nivel de seguridade
+* Verificar só o servidor: valida o dominio do certificado SSL
+* Verificar o servidor e o par (recomendado): valida o dominio e o emisor do certificado SSL.';
 $string['ssoaccesscontrol'] = 'Control de acceso SSO';
 $string['ssoacldescr'] = 'Use esta páxina para garantir/denegar o acceso a determinados usuarios de servidores remotos de rede Moodle. Isto é funcional cando se ofrecen servizos SSO a usuarios remotos. Para controlar a capacidade dos seus usuarios <em>locais</em> para se moveren a outros servidores de rede Moodle, use o sistema de papeis para lles garantir a capacidade <em>mnetcanroam</em>.';
 $string['ssoaclneeds'] = 'Para que esta opción funcione, a rede de Moodle ten que estar activa, así como o seu plugin de autenticación, cos usuarios engadidos automaticamente tamén activos.';
@@ -244,6 +252,8 @@ $string['userchangepasswordlink'] = '<br /> Talvez poida mudar o seu contrasinal
 $string['usernotfullysetup'] = 'A súa conta de usuario está incompleta. Necesita ir <a href="{$a}">de volta ao seu provedor</a> e asegurarse de que completou alí o seu perfil. É probábel que sexa necesario saír do sitio e volver entrar para que teña efecto.';
 $string['usersareonline'] = 'Aviso: {$a} usuarios deste servidor teñen neste momento a sesión iniciada no seu sitio.';
 $string['validated_by'] = 'Está validado pola rede:  <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Verificar o servidor e o par';
+$string['verifyhostonly'] = 'Verificar só o servidor';
 $string['verifysignature-error'] = 'Fallou a verificación da sinatura. Ocorreu un erro.';
 $string['verifysignature-invalid'] = 'Fallou a verificación da sinatura. Parece que estes datos non foron asinados por vostede.';
 $string['version'] = 'versión';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['auth_ldap_gracelogins_desc'] = 'LDAP-GraceLogin aktivieren. Wenn das G�
 $string['auth_ldap_gracelogins_key'] = 'GraceLogins';
 $string['auth_ldap_groupecreators'] = 'Liste von Gruppen oder Kontexten, deren Mitglieder berechtigt sind Gruppen zu erstellen. Mehrere Gruppen werden durch ein \';\' (Semikolon) getrennt, z.B. \'cn=teachers,ou=staff,o=myorg\'.';
 $string['auth_ldap_groupecreators_key'] = 'Gruppenersteller';
-$string['auth_ldap_host_url'] = 'Geben Sie einen LDAP-Server in URL-Form an, wie etwa \'ldap://ldap.meinserver.de\' oder \'ldaps://ldap. meinserver.de\'. Mehrere LDAP-Server trennen Sie bitte mit \';\' (Semikolon), z.B. als LDAP-Failover.';
+$string['auth_ldap_host_url'] = 'Geben Sie einen LDAP-Server in URL-Form an, z.B. \'ldap://ldap.meinserver.de/\' oder \'ldaps://ldap. meinserver.de/\'. Mehrere LDAP-Server trennen Sie bitte mit \';\' (Semikolon), z.B. als LDAP-Failover.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
 $string['auth_ldap_ldap_encoding'] = 'Die Codierung des LDAP-Servers sollte standardmäßig utf-8 sein, aber das Microsoft ActiveDirectory v2 verwendet andere Codierungen, z.B. cp1252 oder cp1250.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP-Codierung';
@@ -87,6 +87,8 @@ $string['auth_ldap_preventpassindb_key'] = 'Kennwörter nicht cachen';
 $string['auth_ldap_search_sub'] = 'Nutzersuche auch in Subkontexten durchführen';
 $string['auth_ldap_search_sub_key'] = 'Subkontexte';
 $string['auth_ldap_server_settings'] = 'LDAP-Server-Einstellungen';
+$string['auth_ldap_suspended_attribute'] = 'Optional: Falls verfügbar wird dieses Merkmal verwendet, um das erstellte lokale Nutzerkonto zu aktivieren oder auszublenden.';
+$string['auth_ldap_suspended_attribute_key'] = 'Ausblendemerkmal';
 $string['auth_ldap_unsupportedusertype'] = 'auth: ldap user_create() unterstützt den gewählten Nutzertyp nicht: \'{$a}\'';
 $string['auth_ldap_update_userinfo'] = 'Nutzerdaten (Vorname, Name, Adresse...) von LDAP nach Moodle übertragen. Ändern Sie die Einstellungen zur Datenzuordnung entsprechend Ihren Anforderungen.';
 $string['auth_ldap_user_attribute'] = 'Optional: Merkmal zur Nutzerbenennung und -suche ändern. Normalerweise \'cn\'.';
@@ -143,6 +145,7 @@ $string['renamingnotallowed'] = 'Namensänderungen sind in LDAP nicht erlaubt';
 $string['rootdseerror'] = 'Fehler bei der rootDSE-Abfrage für das Active Directory';
 $string['start_tls'] = 'LDAP-Service mit TLS (über Port 389) verschlüsseln';
 $string['start_tls_key'] = 'TLS benutzen';
+$string['synctask'] = 'Synchronisierung von LDAP-Nutzerkonten';
 $string['updatepasserror'] = 'Fehler in der Funktion user_update_password().
 <br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Fehler in der Funktion user_update_password() beim Lesen der Gültigkeitsdauer des Kennwortes.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,15 +47,15 @@ $string['resultenabled'] = 'Zeitgesteuerte Aufteilung aktiviert';
 $string['resultexecuted'] = 'Erfolgreich';
 $string['resultfailed'] = 'Automatische Aufteilung der Lösungen nicht möglich';
 $string['resultfailedconfig'] = 'Zeitgesteuerte Aufteilung falsch eingerichtet';
-$string['resultfaileddeadline'] = 'Es wurde kein Abgabeende für den Workshop festgelegt';
-$string['resultfailedphase'] = 'Der Workshop befindet sich nicht in der Einreichungsphase';
+$string['resultfaileddeadline'] = 'Es wurde kein Abgabeende für die gegenseitige Beurteilung festgelegt';
+$string['resultfailedphase'] = 'Die gegenseitige Beurteilung befindet sich nicht in der Einreichungsphase';
 $string['resultvoid'] = 'Es wurden keine Einreichungen zugeteilt';
 $string['resultvoiddeadline'] = 'Nicht nach der Abgabefrist';
 $string['resultvoidexecuted'] = 'Die Aufteilung wurde bereits ausgeführt';
 $string['scheduledallocationsettings'] = 'Einstellungen für die zeitgesteuerte Aufteilung';
 $string['scheduledallocationsettings_help'] = 'Mit der Aktivierung dieser Funktion wird am Ende der Abgabefrist die Aufteilung der eingereichten Lösungen automatisch durchgeführt. Das Ende der  Abgabefrist wird unter Einreichungen Endtermin festgelegt.
 
-Die zufällige Aufteilung erfolgt intern nach den Vorgaben in diesem Formular. Sie erfolgt in der gleichen weise als würde ein/e Trainer/in die zufällige Aufteilung am Ende der Einreichungsfrist manuell auslösen.
+Die zufällige Aufteilung erfolgt intern nach den Vorgaben in diesem Formular. Sie erfolgt in der gleichen Weise, als würde ein/e Trainer/in die zufällige Aufteilung am Ende der Einreichungsfrist manuell auslösen.
 
 Die automatische Aufteilung wird nicht vorgenommen, wenn die Umstellung auf die Bewertungsphase manuell erfolgt bevor die Abgabefrist erreicht ist. Sie müssen in diesem Fall die Aufteilung selber auslösen.
 

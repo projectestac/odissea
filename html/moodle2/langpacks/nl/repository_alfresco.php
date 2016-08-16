@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_alfresco', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_alfresco', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_alfresco
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,16 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alfresco_url'] = 'Alfresco URL';
-$string['alfrescourltext'] = 'De Alfresco API URL zou moeten zijn: http://jouwsite.com/alfresco/api of http://yoursite.com/alfresco/soapapi voor Alfresco 4.2.d of hoger.';
+$string['alfrescourltext'] = 'De Alfresco API URL zou moeten zijn: http://jouwsite.com/alfresco/api of http://jouwsite.com/alfresco/soapapi voor Alfresco 4.2.d of later.';
 $string['alfresco:view'] = 'Bekijk Alfresco upslagruimte';
 $string['configplugin'] = 'Alfresco instellingen';
 $string['notitle'] = 'geen titel';
 $string['password'] = 'Wachtwoord';
 $string['pluginname'] = 'Alfresco opslagruimte';
 $string['pluginname_help'] = 'Een plugin voor Alfresco Content Management System';
-$string['security_key_notice_message_content'] = 'Er is een beveiligingsprobleem ontdekt wanneer je externe links gebruikt naar de Alfresco Moodle opslagruimte. Gebruikers konden toegang krijgen tot accounts van andere gebruikers op de Alfresco-server door gebruik te maken van informatie (tokens) in deze links. Deze functie is nu uitgeschakeld, maar het is mogelijk dat de tokens in deze links nog steeds toegang geven tot andere gebruikersaccounts. Voor je eigen bescherming is het belangrijk om je Alfresco-server te herstarten om de tokens te laten vervallen.';
-$string['security_key_notice_message_small'] = 'Door een recent probleem, gevonden in de Alfresco opslagruimte, adviseren we je je Alfrescoserver te herstarten.';
-$string['security_key_notice_message_subject'] = 'Alfresco opslagruimte beveiligingswaarschuwing';
 $string['soapmustbeenabled'] = 'SOAP-extentie moet ingeschakeld zijn voor de Alfresco-plugin';
 $string['space'] = 'Spatie';
 $string['username'] = 'Gebruikersnaam';

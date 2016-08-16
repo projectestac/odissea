@@ -34,7 +34,7 @@ to http://www.gnu.org/copyleft/gpl.html or write to
 
 -----------------------------------------------------------------------------
 REQUIREMENTS
-Moodle 2.6 of greater
+Moodle 3.0 of greater
 
 -----------------------------------------------------------------------------
 INSTALL
@@ -61,7 +61,7 @@ This theme is developed for:
 
 This theme includes external resources like:
    - Abecedario: True Type Font by George Williams (revised version)
-   - FontAwesome 4.3.0  (http://fortawesome.github.io/Font-Awesome/)
+   - FontAwesome 4.5.0  (http://fortawesome.github.io/Font-Awesome/)
    - Some code to show Fontawesome icons is based on Essential Moodle theme (https://gjb2048.github.io/moodle-theme_essential/)
 
 Special Thanks:
@@ -71,4 +71,4 @@ Special Thanks:
 
 -----------------------------------------------------------------------------
 [1] http://agora.xtec.cat
-[2] http://www.gencat.cat/ensenyament
+[2] http://ensenyament.gencat.cat/

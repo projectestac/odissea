@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['deletecomment'] = 'Supprimer le commentaire';
 $string['deletefeedback'] = 'Supprimer le feedback PDF';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Télécharger le feedback PDF';
+$string['draftchangessaved'] = 'Brouillon des annotations enregistré';
 $string['editpdf'] = 'Annotation PDF';
 $string['editpdf_help'] = 'Annoter les devoirs remis directement dans le navigateur et produire un PDF modifié téléchargeable.';
 $string['enabled'] = 'Annoter PDF';
@@ -66,8 +67,10 @@ $string['oval'] = 'Ovale';
 $string['pagenumber'] = 'Page {$a}';
 $string['pagexofy'] = 'Page {$a->page} sur {$a->total}';
 $string['pathtogspathdesc'] = 'L\'annotation des PDF requiert la définition du chemin d\'accès à <i>ghostscript</i> dans {$a}.';
+$string['pathtounoconvpathdesc'] = 'L\'annotation des PDF requiert la définition du chemin d\'accès à <i>unoconv</i> dans {$a}.';
 $string['pen'] = 'Plume';
 $string['pluginname'] = 'Annotation PDF';
+$string['preparesubmissionsforannotation'] = 'Préparer les travaux remis pour annotation';
 $string['rectangle'] = 'Rectangle';
 $string['red'] = 'Rouge';
 $string['result'] = 'Résultat :';
@@ -84,9 +87,16 @@ $string['test_isdir'] = 'Le chemin d\'accès à l\'exécutable GhostScript point
 $string['test_notestfile'] = 'Le PDF de test est manquant';
 $string['test_notexecutable'] = 'Le chemin d\'accès à l\'exécutable GhostScript pointe vers un fichier qui n\'est pas exécutable';
 $string['test_ok'] = 'Le chemin d\'accès à l\'exécutable GhostScript semble correct. Veuillez vérifier que vous voyez le message dans l\'image ci-dessous';
+$string['test_unoconv'] = 'Tester le chemin d\'accès à <i>unoconv</i>';
+$string['test_unoconvdoesnotexist'] = 'Le chemin d\'accès à <i>unoconv</i> ne pointe pas vers le programme correct. Veuillez contrôler le réglage.';
+$string['test_unoconvdownload'] = 'Télécharger le fichier PDF de test.';
+$string['test_unoconvisdir'] = 'Le chemin d\'accès à <i>unoconv</i> pointe vers un dossier. Veuillez inclure le nom du programme dans le chemin indiqué.';
+$string['test_unoconvnotestfile'] = 'Le document de test à convertir en PDF est manquant.';
+$string['test_unoconvnotexecutable'] = 'Le chemin d\'accès à <i>unoconv</i> pointe vers un programme qui n\'est pas exécutable.';
+$string['test_unoconvok'] = 'Le chemin d\'accès à <i>unoconv</i> est configuré adéquatement.';
+$string['test_unoconvversionnotsupported'] = 'La version installée de <i>unoconv</i> n\'est pas supportée. La fonctionnalité d\'annotation de devoirs de Moodle nécessite la version 0.7 ou ultérieure.';
 $string['tool'] = 'Outil';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = 'Modifications non enregistrées';
 $string['viewfeedbackonline'] = 'Afficher le PDF annoté...';
 $string['white'] = 'Blanc';
 $string['yellow'] = 'Jaune';

@@ -34,7 +34,6 @@ Feature: Practice mode in a lesson activity
             | id_answer_editor_1 | False |
         And I press "Save page"
 
-    @javascript
     Scenario: Non-practice lesson records grades in the gradebook
         Given I follow "Test lesson name"
         And I navigate to "Edit settings" node in "Lesson administration"
@@ -51,10 +50,10 @@ Feature: Practice mode in a lesson activity
             | True | 1 |
         And I press "Submit"
         Then I should see "View grades"
-        And I navigate to "Grades" node in "Course administration"
+        And I follow "Grades" in the user menu
+        And I follow "Course 1"
         And I should see "Non-practice lesson"
 
-    @javascript
     Scenario: Practice lesson doesn't record grades in the gradebook
         Given I follow "Test lesson name"
         And I navigate to "Edit settings" node in "Lesson administration"
@@ -71,10 +70,10 @@ Feature: Practice mode in a lesson activity
             | True | 1 |
         And I press "Submit"
         Then I should not see "View grades"
-        And I navigate to "Grades" node in "Course administration"
+        And I follow "Grades" in the user menu
+        And I follow "Course 1"
         And I should not see "Practice lesson"
 
-    @javascript
     Scenario: Practice lesson with scale doesn't record grades in the gradebook
         Given I follow "Test lesson name"
         And I navigate to "Edit settings" node in "Lesson administration"
@@ -92,5 +91,6 @@ Feature: Practice mode in a lesson activity
             | True | 1 |
         And I press "Submit"
         Then I should not see "View grades"
-        And I navigate to "Grades" node in "Course administration"
+        And I follow "Grades" in the user menu
+        And I follow "Course 1"
         And I should not see "Practice lesson with scale"

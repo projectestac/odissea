@@ -30,6 +30,15 @@ if ($hassiteconfig) {
 $ADMIN->add('root', new admin_category('users', new lang_string('users','admin')));
 $ADMIN->add('root', new admin_category('courses', new lang_string('courses','admin')));
 $ADMIN->add('root', new admin_category('grades', new lang_string('grades')));
+//XTEC ************ AFEGIT - To let access only to xtecadmin user or admin if competencies are enabled
+//2016.08.12  @sarjona
+if (get_protected_agora() || get_config('core_competency', 'enabled') ) {
+//************ FI
+$ADMIN->add('root', new admin_category('competencies', new lang_string('competencies', 'core_competency')));
+//XTEC ************ AFEGIT - To let access only to xtecadmin user or admin if competencies are enabled
+//2016.08.12  @sarjona
+}
+//************ FI
 $ADMIN->add('root', new admin_category('badges', new lang_string('badges'), empty($CFG->enablebadges)));
 $ADMIN->add('root', new admin_category('location', new lang_string('location','admin')));
 $ADMIN->add('root', new admin_category('language', new lang_string('language')));

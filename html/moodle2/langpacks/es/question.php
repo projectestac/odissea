@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -185,7 +185,6 @@ $string['generalfeedback_help'] = 'La retroalimentación general se muestra al e
 Se puede utilizar la retroalimentación general para proporcionar a los estudiantes una respuesta de ejemplo correcta, o tal vez para una liga hacia información complementaria que puedan utilizar en el caso de que no hubieran entendido bien la pregunta.';
 $string['getcategoryfromfile'] = 'Obtener categoría de archivo';
 $string['getcontextfromfile'] = 'Obtener contexto de archivo';
-$string['hidden'] = 'Oculto/a';
 $string['hintn'] = 'Pista {no}';
 $string['hintnoptions'] = 'Opciones de la pista {no}';
 $string['hinttext'] = 'Texto de la pista';
@@ -322,8 +321,6 @@ $string['numqas'] = 'Número de  intentos de pregunta';
 $string['numquestions'] = 'Número de preguntas';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} ocultas)';
 $string['options'] = 'Opciones';
-$string['orphanedquestionscategory'] = 'Preguntas guardadas de categorías eliminadas';
-$string['orphanedquestionscategoryinfo'] = 'Ocasionalmente, debido a errores del software, las preguntas pueden quedarse en la base de datos a pesar de que la categoría de pregunta correspondiente haya sido eliminada. Por supuesto, esto no debería de pasar, pero ha sucedido en este sito en el pasado. Esta categoría ha sido creada automáticamente, y las preguntas huérfanas se han trasladado aquí para que pueda gestionarlas. Observe que cualquier imagen o archivo multimedia empleado por estas preguntas seguramente se hayan perdido.';
 $string['page-question-category'] = 'Página de categoría de preguntas';
 $string['page-question-edit'] = 'Página de edición de preguntas';
 $string['page-question-export'] = 'Página de exportación de preguntas';

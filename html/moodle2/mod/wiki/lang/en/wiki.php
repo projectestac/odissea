@@ -44,6 +44,7 @@ $string['defaultformat_help'] = 'This setting determines the default format used
 * HTML - The HTML editor is available
 * Creole - A common wiki markup language for which a small edit toolbar is available
 * Nwiki - Mediawiki-like markup language used in the contributed Nwiki module';
+$string['deleteallpages'] = 'Delete all wiki pages';
 $string['deletecomment'] = 'Deleting comment';
 $string['deletecommentcheck'] = 'Delete comment';
 $string['deletecommentcheckfull'] = 'Are you sure you want to delete the comment?';
@@ -182,7 +183,7 @@ $string['page-mod-wiki-view'] = 'Wiki module main page';
 $string['page-mod-wiki-comments'] = 'Wiki module comments page';
 $string['page-mod-wiki-history'] = 'Wiki history page';
 $string['page-mod-wiki-map'] = 'Wiki map page';
-$string['pageexists'] = 'This page already exists. Redirecting to it.';
+$string['pageexists'] = 'This page already exists.';
 $string['pageindex'] = 'Page Index';
 $string['pageindex_help'] = 'This wiki\'s page tree';
 $string['pageislocked'] = 'Someone is editing this page right now. Try to edit it in a few minutes.';
@@ -212,12 +213,15 @@ $string['return'] = 'Go back';
 $string['save'] = 'Save';
 $string['saving'] = 'Saving wiki page';
 $string['savingerror'] = 'Saving error';
+$string['search:activity'] = 'Wiki - activity information';
+$string['search:collaborative_page'] = 'Wiki - collaborative pages';
 $string['searchcontent'] = 'Search in page content';
 $string['searchresult'] = 'Search results:';
 $string['searchterms'] = 'Search terms';
 $string['searchwikis'] = 'Search wikis';
 $string['special'] = 'Special';
 $string['tableofcontents'] = 'Table of contents';
+$string['tagarea_wiki_pages'] = 'Wiki pages';
 $string['tagsdeleted'] = 'Wiki tags have been deleted';
 $string['tagtitle'] = 'See the "{$a}" tag';
 $string['teacherrating'] = 'Teacher rating';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'chat', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityoverview'] = '你有即将到来的聊天会话';
 $string['ajax'] = '使用Ajax的版本';
 $string['autoscroll'] = '自动滚屏';
 $string['beep'] = '呼叫';
+$string['bubble'] = '冒泡';
 $string['cantlogin'] = '无法登录到聊天室！！';
 $string['chat:addinstance'] = '添加新聊天室';
 $string['chat:chat'] = '进入聊天室';
@@ -40,6 +42,7 @@ $string['chat:readlog'] = '阅读聊天日志';
 $string['chatreport'] = '聊天话题';
 $string['chat:talk'] = '发言';
 $string['chattime'] = '聊天开始时间';
+$string['compact'] = '紧凑';
 $string['composemessage'] = '编辑一条信息';
 $string['configmethod'] = 'Ajax聊天方式提供一个基于ajax的聊天界面，它与服务器持续通讯，保持更新。普通聊天室方式让客户端周期地连接服务器以获取更新。这种方式无需任何配置便可在所有环境下工作，但当很多人一起聊天时会给服务器带来极大负荷。使用聊天服务器程序需要访问 Unix 的 Shell，但却可以得到一个快速而稳定的聊天环境。';
 $string['confignormalupdatemode'] = '聊天室更新可以使用 HTTP 1.1 的 <em>Keep-Alive</em> 特性而高效地服务，但事实上这样仍然给服务器带来很大的负荷。更好的方法是使用 <em>Stream</em> 来满足更新需求。使用 <em>Stream</em> 的方式会带来很大的改善（类似chatd方式），但是您的服务器可能并不支持。';
@@ -60,6 +63,7 @@ $string['enterchat'] = '进入聊天室';
 $string['entermessage'] = '输入您的信息';
 $string['errornousers'] = '没有用户';
 $string['eventmessagesent'] = '信息发送';
+$string['eventsessionsviewed'] = '查看会话时间';
 $string['explaingeneralconfig'] = '这些设置会被<strong>永久</strong>使用';
 $string['explainmethoddaemon'] = '这些设置<strong>只有</strong>在您选择了“聊天室服务器进程”的聊天模式时才会有效';
 $string['explainmethodnormal'] = '这些设置<strong>只有</strong>在您选择了“普通方式”的聊天模式时才会有效';
@@ -109,6 +113,7 @@ $string['repeattimes'] = '重复时间';
 $string['repeatweekly'] = '每周的此刻';
 $string['saidto'] = '对';
 $string['savemessages'] = '保存聊天记录的时间';
+$string['search:activity'] = '聊天活动信息';
 $string['seesession'] = '查看聊天记录';
 $string['send'] = '发送';
 $string['sending'] = '正在发送';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio_picasa', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = '클라이언트 아이디';
 $string['noauthtoken'] = '구글에서 인증 토큰을 받지 못했습니다. 구글 계정에 접속할 수 있도록 무들을 설정하였는지 확인하기 바랍니다.';
 $string['nooauthcredentials'] = 'OAuth 자격 증명이 필요합니다.';
-$string['oauth2upgrade_message_subject'] = '피카사 포트폴리오 플러그인에 관한 중요 정보';
 $string['pluginname'] = '피카사';
 $string['secret'] = '비밀';
 $string['sendfailed'] = '피카사로 파일 {$a} 전송 실패';

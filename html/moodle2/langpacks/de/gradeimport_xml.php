@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradeimport_xml', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,9 @@ $string['errincorrectuseridnumber'] = 'Fehler: Die ID-Nummer \'{$a}\' aus der Im
 $string['error'] = 'Fehler aufgetreten';
 $string['errorduringimport'] = 'Ein Fehler trat beim Import auf: {$a}';
 $string['fileurl'] = 'URL zu Remotedatei';
+$string['fileurl_help'] = 'Tragen Sie hier die URL für eine Datei mit Daten auf einem Remote-Server ein, die eingelesen werden soll. Dies können z.B. Daten von einem Verwaltungssystem sein.';
+$string['importxml'] = 'XML-Import';
+$string['importxml_help'] = 'Bewertungen können mithilfe einer XML-Datei eingelesen werden. Diese muss die Nutzer-ID-Nummer und die Aktivitäts-ID enthalten. Um das geanue Format der XML-Datei zu ermitteln, erstellen Sie zunächst einen Export mit einigen Bewertungen. Verwenden Sie dann die darin enthaltene Struktur für einen Import.';
 $string['pluginname'] = 'XML-Datei';
 $string['xml:publish'] = 'Aus XML Datei importierte Bewertungen veröffentlichen';
 $string['xml:view'] = 'Bewertungen aus XML-Datei importieren';

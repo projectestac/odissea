@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,14 @@ $string['alwaysshowdefinition'] = 'Gli utenti potranno visualizzare un\'anteprim
 $string['backtoediting'] = 'Torna alla modifica';
 $string['confirmdeletecriterion'] = 'Sei sicuro di eliminare questo criterio?';
 $string['confirmdeletelevel'] = 'Sei sicuro di eliminare questo livello?';
+$string['criterion'] = 'Criterio {$a}';
 $string['criterionaddlevel'] = 'Aggiungi livello';
 $string['criteriondelete'] = 'Elimina criterio';
+$string['criterionduplicate'] = 'Duplica criterio';
 $string['criterionempty'] = 'Click per modificare il criterio';
 $string['criterionmovedown'] = 'Sposta in basso';
 $string['criterionmoveup'] = 'Sposta in alto';
+$string['criterionremark'] = 'Commento del criterio {$a->description}: {$a->remark}';
 $string['definerubric'] = 'Impostazione rubric';
 $string['description'] = 'Descrizione';
 $string['enableremarks'] = 'Consenti al valutatore di aggiungere commenti testuali ai criteri';
@@ -45,8 +48,11 @@ $string['err_nodescription'] = 'La descrizione del criterio non può essere lasc
 $string['err_scoreformat'] = 'I punteggi per ciascun livello devono essere numeri non negativi';
 $string['err_totalscore'] = 'Il punteggio massimo possibile del rubric deve essere maggiore di zero.';
 $string['gradingof'] = 'Valutazione di {$a}';
-$string['leveldelete'] = 'Elimina livello';
+$string['level'] = 'Livello {$a->definition}, punti {$a->score}.';
+$string['leveldefinition'] = 'Definizione livello {$a}';
+$string['leveldelete'] = 'Elimina livello {$a}';
 $string['levelempty'] = 'Click per modificare il livello';
+$string['levelsgroup'] = 'Gruppo di livelli';
 $string['name'] = 'Nome';
 $string['needregrademessage'] = 'La definizione del rubric è stata cambiata dopo la valutazione di questo studente. Lo studente non potrà visualizzare questo rubric finché non controllerai il rubric e aggiornerai la valutazione';
 $string['pluginname'] = 'Rubric';
@@ -67,6 +73,7 @@ $string['rubricstatus'] = 'Stato del rubric';
 $string['save'] = 'Salva';
 $string['saverubric'] = 'Salva il rubric e rendilo disponibile';
 $string['saverubricdraft'] = 'Salva come bozza';
+$string['scoreinputforlevel'] = 'Input punti per il livello {$a}';
 $string['scorepostfix'] = '{$a} punti';
 $string['showdescriptionstudent'] = 'Visualizza la descrizione del rubric a coloro che riceveranno la valutazione';
 $string['showdescriptionteacher'] = 'Visualizza la descrizione del rubric durante la valutazione';

@@ -37,18 +37,67 @@ class com_wiris_quizzes_impl_Translator {
 			throw new HException('Unable to call «'.$m.'»');
 	}
 	static $languages = null;
+	static $available = null;
 	static function getInstance($lang) {
 		if(com_wiris_quizzes_impl_Translator::$languages === null) {
 			com_wiris_quizzes_impl_Translator::$languages = new Hash();
 		}
+		$lang = com_wiris_quizzes_impl_Translator::getBestMatch($lang);
+		if($lang === null) {
+			throw new HException("No languages defined.");
+		}
 		if(!com_wiris_quizzes_impl_Translator::$languages->exists($lang)) {
 			$translator = new com_wiris_quizzes_impl_Translator($lang, com_wiris_quizzes_impl_Strings::$lang);
-			if(!$translator->strings->keys()->hasNext() && !($lang === "en")) {
-				return com_wiris_quizzes_impl_Translator::getInstance("en");
-			}
 			com_wiris_quizzes_impl_Translator::$languages->set($lang, $translator);
 		}
 		return com_wiris_quizzes_impl_Translator::$languages->get($lang);
+	}
+	static function getBestMatch($lang) {
+		$a = com_wiris_quizzes_impl_Translator::getAvailableLanguages();
+		if(com_wiris_util_type_Arrays::contains($a, $lang)) {
+			return $lang;
+		}
+		$i = null;
+		if(($i = _hx_index_of($lang, "_", null)) !== -1) {
+			$lang = _hx_substr($lang, 0, $i);
+			if(com_wiris_util_type_Arrays::contains($a, $lang)) {
+				return $lang;
+			}
+		}
+		{
+			$_g1 = 0; $_g = $a->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if(StringTools::startsWith($a[$i1], $lang . "_")) {
+					return $a[$i1];
+				}
+				unset($i1);
+			}
+		}
+		if(com_wiris_util_type_Arrays::contains($a, "en")) {
+			return "en";
+		}
+		if($a->length > 0) {
+			return $a[0];
+		}
+		return null;
+	}
+	static function getAvailableLanguages() {
+		if(com_wiris_quizzes_impl_Translator::$available === null) {
+			com_wiris_quizzes_impl_Translator::$available = new _hx_array(array());
+			$i = null;
+			{
+				$_g1 = 0; $_g = com_wiris_quizzes_impl_Strings::$lang->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					if(com_wiris_quizzes_impl_Strings::$lang[$i1][0] === "lang") {
+						com_wiris_quizzes_impl_Translator::$available->push(com_wiris_quizzes_impl_Strings::$lang[$i1][1]);
+					}
+					unset($i1);
+				}
+			}
+		}
+		return com_wiris_quizzes_impl_Translator::$available;
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.Translator'; }
 }

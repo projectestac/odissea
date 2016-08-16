@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_configurable_reports', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -230,7 +230,7 @@ $string['filtersemester_list'] = 'סמסטר א,סמסטר ב,סמסטר ג,סמ
 $string['filtersemester_summary'] = 'מאפשר סינון לפני סמסטרים (בעברית, למשל: סמסטר א,סמסטר ב)';
 $string['filterstartendtime_summary'] = 'Start / End date filter';
 $string['filtersubcategories'] = 'Category (Include sub categories)';
-$string['filtersubcategories_summary'] = 'Use: %%FILTER_CATEGORIES:mdl_course_category.path%%';
+$string['filtersubcategories_summary'] = 'Use: %%FILTER_SUBCATEGORIES:mdl_course_category.path%%';
 $string['filteruser'] = 'Current course user';
 $string['filterusers'] = 'System user';
 $string['filterusers_summary'] = 'Filter a user (by id) from system user list';
@@ -312,7 +312,7 @@ $string['previousstart'] = 'Previous start';
 $string['printreport'] = 'Print report';
 $string['puserfield'] = 'User field value';
 $string['puserfield_summary'] = 'User with the selected value in the selected field';
-$string['queryfailed'] = 'Query failed';
+$string['queryfailed'] = 'Query failed <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'SQL Query';
 $string['remote'] = 'Run on remote db';
 $string['remotedescription'] = 'Do you want to run this query on the remote db';
@@ -416,6 +416,7 @@ $string['value_fields'] = 'Value fields';
 $string['value_fields_help'] = 'Fields that should be represented in the graph. Ctrl+click (Cmd+click on Mac) to select multiple. If you select the Label field or a field with non-numeric values it will be ignored';
 $string['viewreport'] = 'View report';
 $string['width'] = 'Width';
+$string['xandynotequal'] = 'X and Y axis need to be different';
 $string['xaxis'] = 'X Axis';
 $string['yaxis'] = 'Y Axis';
 $string['yearhebrew'] = 'Year (Hebrew)';

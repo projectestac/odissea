@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,5 +49,6 @@ $string['page-mod-folder-view'] = 'Pàgina principal del mòdul de fitxers';
 $string['page-mod-folder-x'] = 'Qualsevol pàgina del mòdul de fitxers';
 $string['pluginadministration'] = 'Administració de carpetes';
 $string['pluginname'] = 'Carpeta';
+$string['search:activity'] = 'Carpeta';
 $string['showexpanded'] = 'Mostra les subcarpetes expandides.';
 $string['showexpanded_help'] = 'Si s\'habilita mostrarà les subcarpetes expandides per defecte. En cas contrari les subcarpetes es mostraran col·lapsades.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['blocks'] = 'Blocs';
 $string['cannotselecttopsubject'] = 'No es pot establir un tema al capdamunt';
 $string['comments'] = 'Comentaris ({$a})';
 $string['community:addinstance'] = 'Afegeix un bloc nou cercador de comunitat';
-$string['community:myaddinstance'] = 'Afegeix un bloc nou cercador de comunitat a la pàgina del «meu Moodle»';
+$string['community:myaddinstance'] = 'Afegeix un bloc nou cercador de comunitat a la pàgina del Tauler';
 $string['contentinfo'] = 'Tema: {$a->subject} - Audiència: {$a->audience} - Nivell educatiu: {$a->educationallevel}';
 $string['continue'] = 'Continua';
 $string['contributors'] = 'Col·laboracions: {$a}';

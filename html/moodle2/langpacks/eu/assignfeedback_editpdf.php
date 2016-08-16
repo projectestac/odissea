@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['deletecomment'] = 'Ezabatu iruzkina';
 $string['deletefeedback'] = 'Ezbatu PDF feedback-a';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Jaitsi PDF feedback-a';
+$string['draftchangessaved'] = 'Zirriborro-oharrak gorde dira';
 $string['editpdf'] = 'PDF oharra';
 $string['editpdf_help'] = 'Ikasleen bidalketak zuzenean nabigatzailean jaso eta sortu jaisteko moduko PDFa.';
 $string['enabled'] = 'PDF oharra';
@@ -84,9 +85,10 @@ $string['test_isdir'] = 'Ghostscript helbidea karpetara batera doa, mesedez, sar
 $string['test_notestfile'] = 'PDF azterketa galdu da';
 $string['test_notexecutable'] = 'Ghostscript helbidea exekuta ezin daitekeen fitxategi batera doa';
 $string['test_ok'] = 'Ghostscript helbidea ondo dagoela dirudi - mesedez, aztertu beheko irudiko mezua ikus dezakezun';
+$string['test_unoconvdownload'] = 'Jaitsi pdf bihurtutako testu-fitxategia.';
+$string['test_unoconvnotestfile'] = 'PDF bihurtuko den testu-dokumenta falta da';
 $string['tool'] = 'Tresna';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = 'Gorde gabeko aldaketak';
 $string['viewfeedbackonline'] = 'Ikusi PDF oharrak...';
 $string['white'] = 'Zuria';
 $string['yellow'] = 'Horia';

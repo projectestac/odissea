@@ -15,8 +15,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 function draw_chart($feedbacktype, $charttype=null, $labels,
-                $score=null, $allscore=null, $globallabel=null, $groupname, $allresponses) {
-    global $CFG, $OUTPUT, $PAGE;
+                    $score=null, $allscore=null, $globallabel=null, $groupname, $allresponses) {
+    global $OUTPUT, $PAGE;
 
     echo $OUTPUT->box_start();
 
@@ -91,7 +91,7 @@ function draw_chart($feedbacktype, $charttype=null, $labels,
                 if (count($lb) > 1) {
                     $left = $lb[0];
                     $right = $lb[1];
-                    // core_text and diff needed for non-ascii characters.
+                    // Lib core_text and diff needed for non-ascii characters.
                     $lenleft = core_text::strlen($left);
                     $diffleft = strlen($left) - $lenleft;
                     $lenright = core_text::strlen($right);

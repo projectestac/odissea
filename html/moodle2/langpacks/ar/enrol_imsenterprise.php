@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,5 +32,5 @@ $string['location'] = 'موقع الملف';
 $string['mailadmins'] = 'احط المدير عبر البريد الإلكتروني';
 $string['mailusers'] = 'احط المستخدم عبر البريد الإلكتروني';
 $string['miscsettings'] = 'متنوعات';
-$string['processphoto'] = 'اضف بيانات صورة المستحدم للمحة الشخصية';
+$string['processphoto'] = 'أضف بيانات صورة المستخدم للملف الشخصي';
 $string['usersettings'] = 'خيارات بيانات المستخدم';

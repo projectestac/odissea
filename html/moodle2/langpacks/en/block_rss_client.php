@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Edit news feeds';
 $string['editrssblock'] = 'Edit RSS headline block';
 $string['enableautodiscovery'] = 'Enable auto-discovery of feeds?';
 $string['enableautodiscovery_help'] = 'If enabled, feeds on web pages are found automatically. For example, if http://docs.moodle.org is entered, then http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss would be found.';
-$string['errorloadingfeed'] = 'Error loading this RSS feed ({$a})';
 $string['feed'] = 'Feed';
 $string['feedadded'] = 'News feed added';
 $string['feeddeleted'] = 'News feed deleted';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Create private RSS feeds';
 $string['rss_client:createsharedfeeds'] = 'Create shared RSS feeds';
 $string['rss_client:manageanyfeeds'] = 'Manage any RSS feeds';
 $string['rss_client:manageownfeeds'] = 'Manage own RSS feeds';
-$string['rss_client:myaddinstance'] = 'Add a new RSS feeds block to My home';
+$string['rss_client:myaddinstance'] = 'Add a new RSS feeds block to Dashboard';
 $string['seeallfeeds'] = 'See all feeds';
 $string['sharedfeed'] = 'Shared feed';
 $string['shownumentrieslabel'] = 'Max number entries to show per block.';

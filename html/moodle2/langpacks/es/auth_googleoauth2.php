@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_googleoauth2', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_googleoauth2', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_googleoauth2
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['noaccountyet'] = 'No tienes permiso para usar el sitio aún. Por favor contacta con tu administrador y pídele que active tu cuenta.';
+$string['oauth2displaybuttons'] = 'Mostrar botones en la página de inicio de sesión';
+$string['oauth2displaybuttonshelp'] = 'Mostrar los botones con el logo de Google/Facebook/... en la parte de arriba de la página de inicio de sesión. Si quieres colocar los botones por tu cuenta en la página de inicio de sesión, puedes dejar esta opción deshabilitada y añadir el siguiente código: {$a}';
 $string['signinwithanaccount'] = 'Logearse con {$a}';
+$string['stattitle'] = 'Estadísticas de inicio de sesión para los últimos {$a->periodindays} días (desde la instalación/actualización del plugin)';
+$string['unknownfirstname'] = 'Nombre desconocido';
+$string['unknownlastname'] = 'Apellido desconocido';

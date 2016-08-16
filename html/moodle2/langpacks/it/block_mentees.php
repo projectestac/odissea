@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mentees', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['configtitle'] = 'Titolo del blocco';
 $string['configtitleblankhides'] = 'Titolo del blocco (senza titolo se lasciato vuoto))';
 $string['leaveblanktohide'] = 'lasciare vuoto per non visualizzare il titolo';
 $string['mentees:addinstance'] = 'Aggiungere blocco Assistiti';
-$string['mentees:myaddinstance'] = 'Aggiungere blocco Assistiti alla pagina My home';
+$string['mentees:myaddinstance'] = 'Aggiungere blocco Assistiti nella Dashboard';
 $string['newmenteesblock'] = '(nuovo blocco Assistiti)';
 $string['pluginname'] = 'Assistiti';

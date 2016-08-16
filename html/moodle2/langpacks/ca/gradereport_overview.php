@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_overview', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_overview', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe de resum de qualificacions';
 $string['overview:view'] = 'Veure l\'informe global';
-$string['pluginname'] = 'Informe global';
+$string['pluginname'] = 'Informe resum';

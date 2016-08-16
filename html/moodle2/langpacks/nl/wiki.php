@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = 'Deze instelling  bepaalt de standaard opmaak di
 *HTML - Gebruik de HTML-editor
 *Creole - Een veel gebruikte wiki opmaaktaal waarvoor een kleine werkbalk beschikbaar is
 *Nwiki - Mediawiki-achtige opmaaktaal die in de Nwiki module gebruikt wordt.';
+$string['deleteallpages'] = 'Verwijder alle wiki-pagina\'s';
 $string['deletecomment'] = 'Verwijder opmerking';
 $string['deletecommentcheck'] = 'Verwijder opmerking';
 $string['deletecommentcheckfull'] = 'Weet je zeker dat je deze opmerking wil verwijderen?';
@@ -190,7 +191,7 @@ $string['orphaned'] = 'Verweesde pagina\'s';
 $string['orphaned_help'] = 'Lijst met pagina\'s die niet gelinkt zijn vanaf een andere pagina';
 $string['overridelocks'] = 'Blokkering negeren';
 $string['overridinglocks'] = 'Blokkeringen negeren...';
-$string['pageexists'] = 'Deze pagina bestaat al. We verwijzen ernaar.';
+$string['pageexists'] = 'Deze pagina bestaat al.';
 $string['pageindex'] = 'Indexpagina';
 $string['pageindex_help'] = 'Paginastructuur van deze wiki';
 $string['pageislocked'] = 'Iemand anders is deze pagina nu aan het bewerken. Probeer opnieuw binnen enkele minuten.';
@@ -225,12 +226,15 @@ $string['return'] = 'Ga terug';
 $string['save'] = 'Bewaar';
 $string['saving'] = 'Wiki-pagina bewaren';
 $string['savingerror'] = 'Fout tijdens bewaren';
+$string['search:activity'] = 'Wiki - activiteitsinformatie';
+$string['search:collaborative_page'] = 'Wiki - samenwerkingspagina\'s';
 $string['searchcontent'] = 'Zoek in pagina-inhoud';
 $string['searchresult'] = 'Zoekresultaten:';
 $string['searchterms'] = 'Zoekitems';
 $string['searchwikis'] = 'Zoek wiki\'s';
 $string['special'] = 'Speciaal';
 $string['tableofcontents'] = 'Inhoudsopgave';
+$string['tagarea_wiki_pages'] = 'Wiki pagina\'s';
 $string['tagsdeleted'] = 'Wiki tags zijn verwijderd';
 $string['tagtitle'] = 'Zie tag "{$a}"';
 $string['teacherrating'] = 'Leraarbeoordeling';

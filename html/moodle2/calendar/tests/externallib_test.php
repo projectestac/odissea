@@ -277,8 +277,28 @@ class core_calendar_externallib_testcase extends externallib_advanced_testcase {
 
         // Let's create a few events.
         $siteevent = $this->create_calendar_event('site', $USER->id, 'site');
+
+        // This event will have description with an inline fake image.
+        $draftidfile = file_get_unused_draft_itemid();
+        $usercontext = context_course::instance($course->id);
+        $filerecord = array(
+            'contextid' => $usercontext->id,
+            'component' => 'user',
+            'filearea'  => 'draft',
+            'itemid'    => $draftidfile,
+            'filepath'  => '/',
+            'filename'  => 'fakeimage.png',
+        );
+        $fs = get_file_storage();
+        $fs->create_file_from_string($filerecord, 'img contents');
+
         $record = new stdClass();
         $record->courseid = $course->id;
+        $record->description = array(
+            'format' => FORMAT_HTML,
+            'text' => 'Text with img <img src="@@PLUGINFILE@@/fakeimage.png">',
+            'itemid' => $draftidfile
+        );
         $courseevent = $this->create_calendar_event('course', $USER->id, 'course', 2, time(), $record);
         $userevent = $this->create_calendar_event('user', $USER->id);
         $record = new stdClass();
@@ -292,13 +312,25 @@ class core_calendar_externallib_testcase extends externallib_advanced_testcase {
         $events = external_api::clean_returnvalue(core_calendar_external::get_calendar_events_returns(), $events);
 
         // Check to see if we got all events.
-        $this->assertEquals(4, count($events['events']));
+        $this->assertEquals(5, count($events['events']));
         $this->assertEquals(0, count($events['warnings']));
         $options = array ('siteevents' => true, 'userevents' => true, 'timeend' => time() + 7*WEEKSECS);
         $events = core_calendar_external::get_calendar_events($paramevents, $options);
         $events = external_api::clean_returnvalue(core_calendar_external::get_calendar_events_returns(), $events);
         $this->assertEquals(5, count($events['events']));
         $this->assertEquals(0, count($events['warnings']));
+
+        // Expect the same URL in the description of two different events (because they are repeated).
+        $coursecontext = context_course::instance($course->id);
+        $expectedurl = "webservice/pluginfile.php/$coursecontext->id/calendar/event_description/$courseevent->id/fakeimage.png";
+        $withdescription = 0;
+        foreach ($events['events'] as $event) {
+            if (!empty($event['description'])) {
+                $withdescription++;
+                $this->assertContains($expectedurl, $event['description']);
+            }
+        }
+        $this->assertEquals(2, $withdescription);
 
         // Let's play around with caps.
         $this->setUser($user);
@@ -314,7 +346,7 @@ class core_calendar_externallib_testcase extends externallib_advanced_testcase {
         $this->assertEquals(4, count($events['events'])); // site, user, both course events.
         $this->assertEquals(1, count($events['warnings'])); // group.
 
-        $options = array ('siteevents' => true, 'userevents' => true);
+        $options = array ('siteevents' => true, 'userevents' => true, 'timeend' => time() + HOURSECS);
         $events = core_calendar_external::get_calendar_events($paramevents, $options);
         $events = external_api::clean_returnvalue(core_calendar_external::get_calendar_events_returns(), $events);
         $this->assertEquals(3, count($events['events'])); // site, user, one course event.

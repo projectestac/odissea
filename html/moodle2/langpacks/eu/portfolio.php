@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,6 @@ $string['format_richhtml'] = 'HTML eranskinekin';
 $string['format_spreadsheet'] = 'Kalkulu-orria';
 $string['format_text'] = 'Testu laua';
 $string['format_video'] = 'Bideoa';
-$string['hidden'] = 'Ezkutuan';
 $string['highdbsizethreshold'] = 'Transferentzia altuko dbsize-a';
 $string['highfilesizethreshold'] = 'Transferentzia altuko fitxategiaren tamaina';
 $string['insanesubject'] = 'Portfolio-instantzia batzuk automatikoki desgaituta daude';
@@ -111,6 +110,7 @@ $string['save'] = 'Gorde';
 $string['selectedformat'] = 'Aukeratutako esportazio-formatua';
 $string['selectedwait'] = 'Itxaroteko aukeratua?';
 $string['selectplugin'] = 'Aukeratu helburua';
+$string['showhide'] = 'Erakutsi / ezkutatu';
 $string['sure'] = 'Ziur al zaude \'{$a}\' ezabatu egin nahi duzula? Ezin izango duzu desegin.';
 $string['transfertime'] = 'Transferentzia-denbora';
 $string['unknownplugin'] = 'Ezezaguna (litekeena da kudeatzaileak ezabatu izana).';

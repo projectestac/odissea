@@ -25,6 +25,10 @@ class WIRISpluginWrapper {
     private $moodleConfig;
     private $instance;
 
+    public function __construct() {
+        $this->init();
+    }
+
     public function begin() {
         com_wiris_system_CallWrapper::getInstance()->start();
     }
@@ -34,40 +38,26 @@ class WIRISpluginWrapper {
     }
 
     public function is_installed() {
-        $this->init();
-        return $this->installed;
+        $editor_plugin = WIRISpluginWrapper::get_wiris_plugin();
+        return !empty($editor_plugin);
     }
 
     private function init() {
         if (!$this->isInit) {
             $this->isInit = true;
-            
-            // Discover location of editor plugin.
-            $editor_plugin = WIRISpluginWrapper::get_wiris_plugin();
-            
-            $this->installed = !empty($editor_plugin);
-            // Return if editor plugin is not installed.
-            if (!$this->installed) {
-                global $COURSE, $PAGE;
-                $coursecontext = context_course::instance($COURSE->id);
-                if (has_capability('moodle/site:config', $coursecontext)) {
-                    // Display missing WIRIS editor plugin dependency error
-                    $PAGE->requires->js('/filter/wiris/js/message.js',false);
-                }
-                return null;
-            }
-            
+
+            global $CFG;
             // Init haxe environment.
             if (!class_exists('com_wiris_system_CallWrapper')) {
-                require_once $editor_plugin->path . '/integration/lib/com/wiris/system/CallWrapper.class.php';
+                require_once 'integration/lib/com/wiris/system/CallWrapper.class.php';
             }
-            com_wiris_system_CallWrapper::getInstance()->init($editor_plugin->path . '/integration');
+            com_wiris_system_CallWrapper::getInstance()->init($CFG->dirroot . '/filter/wiris/integration');
             
             // Start haxe environment.
             $this->begin();
             // Create PluginBuilder with Moodle specific configuration.
             require_once 'MoodleConfigurationUpdater.php';
-            $this->moodleConfig = new com_wiris_plugin_configuration_MoodleConfigurationUpdater($editor_plugin);
+            $this->moodleConfig = new com_wiris_plugin_configuration_MoodleConfigurationUpdater();
             
             $this->instance = com_wiris_plugin_api_PluginBuilder::getInstance();
             $this->instance->addConfigurationUpdater($this->moodleConfig);
@@ -134,7 +124,7 @@ class WIRISpluginWrapper {
         foreach ($editors as $editor) {
             if ($editor == 'atto') {
                 $relative_path = '/lib/editor/atto/plugins/wiris';
-                if (file_exists($CFG->dirroot . $relative_path . '/VERSION')) {
+                if (file_exists($CFG->dirroot . $relative_path . '/version.php')) {
                     $plugin = new stdClass();
                     $plugin->url = $CFG->wwwroot . $relative_path;
                     $plugin->path = $CFG->dirroot . $relative_path;
@@ -150,7 +140,7 @@ class WIRISpluginWrapper {
                 } else { // Location for Moodle < 2.4
                     $relative_path = '/lib/editor/tinymce/tiny_mce/' . $tiny_version . '/plugins/tiny_mce_wiris';
                 } 
-                if (!file_exists($CFG->dirroot . $relative_path . '/integration/pluginbuilder.php')) {
+                if (!file_exists($CFG->dirroot . $relative_path . '/core')) {
                     // WIRIS plugin  >= 3.50 not installed.
                     continue;
                 }
@@ -159,6 +149,27 @@ class WIRISpluginWrapper {
                 $plugin->path = $CFG->dirroot . $relative_path;
                 $plugin->version = get_config('tinymce_tiny_mce_wiris', 'version');
                 return $plugin;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Since version 2016030200 configuration.ini file is
+     * has been moved from editor plugin folder to filte folder.
+     * This method detects if a configuration.ini file is on the old location.
+     * @return [type] [description]
+     */
+    public static function get_old_configuration() {
+        global $CFG;
+        if (file_exists($CFG->dirroot . '/filter/wiris/configuration.ini')) {
+            return false;
+        }
+        if ($plugin = WIRISpluginWrapper::get_wiris_plugin()) {
+            if (file_exists($plugin->path . '/configuration.ini')) {
+                return $plugin->path . '/configuration.ini';
+            } else {
+                return false;
             }
         }
         return false;

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Wil je echt deze gebruikersaanmeldingen
 $string['defaultperiod'] = 'Standaard aanmeldingsduur';
 $string['defaultperiod_desc'] = 'Standaard tijdsduur waarvoor de aanmelding geldig is. Indien ingesteld op 0, dan wordt de aanmeldingsduur automatisch onbeperkt.';
 $string['defaultperiod_help'] = 'Standaard tijdsduur waarvoor de aanmelding geldig is, vanaf het moment waarop de gebruiker is aangemeld. Indien uitgeschakeld, dan wordt de aanmeldingsduur automatisch onbeperkt.';
+$string['defaultstart'] = 'Standaard aanmeldingsstart';
 $string['deleteselectedusers'] = 'Verwijder gebruikersaanmeldingen';
 $string['editselectedusers'] = 'Bewerk geselecteerde gebruikersaanmelding';
 $string['enrolledincourserole'] = 'Aangemeld in "{$a->course}" als "{$a->role}"';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Melding voor het vervallen van de aan
 $string['manual:config'] = 'Maneel aanmelden van gebruikers configureren';
 $string['manual:enrol'] = 'Gebruikers aanmelden';
 $string['manual:manage'] = 'Beheer gebruikersaanmeldingen';
+$string['manualpluginnotinstalled'] = 'De "Manueel"-plugin is niet geïnstalleerd';
 $string['manual:unenrol'] = 'Gebruikers van de cursus afmelden';
 $string['manual:unenrolself'] = 'Zichzelf van de cursus afmelden';
 $string['messageprovider:expiry_notification'] = 'Manuele meldingen voor het vervallen van de aanmelding';
+$string['now'] = 'Nu';
 $string['pluginname'] = 'Manuele aanmeldingen';
 $string['pluginname_desc'] = 'Met de manuele aanmeldingsplugin kunnen gebruikers manueel aangemeld worden via een link in het cursusbeheer door een gebruiker met de juiste rechten, zoals een leraar. Deze plugin moet ingeschakeld zijn, vermits ook andere aanmeldingsplugins, zoals zelf aanmelden, dit vereisen.';
 $string['status'] = 'Manuele aanmeldingen inschakelen';

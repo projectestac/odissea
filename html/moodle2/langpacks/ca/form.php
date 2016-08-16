@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'form', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['month'] = 'Mes';
 $string['mustbeoverriden'] = 'Cal sobreescriure el mètode abstracte form_definition() en la classe {$a}. Si us plau corregiu el codi.';
 $string['nomethodforaddinghelpbutton'] = 'No hi ha cap mètode per a afegir un botó d\'ajuda a l\'element del formulari {$a->name} (classe {$a->classname})';
 $string['nonexistentformelements'] = 'S\'està intentant afegir botons d\'ajuda a elements del formulari inexistents: {$a}';
+$string['noselection'] = 'Cap selecció';
+$string['nosuggestions'] = 'Sense suggeriments';
 $string['optional'] = 'Opcional';
 $string['othersettings'] = 'Altres paràmetres';
 $string['requiredelement'] = 'Camp requerit';
@@ -58,10 +60,11 @@ $string['revealpassword'] = 'Revela';
 $string['security'] = 'Seguretat';
 $string['selectallornone'] = 'Selecciona-ho/desselecciona-ho tot';
 $string['selected'] = 'Seleccionat';
+$string['selecteditems'] = 'Elements seleccionats:';
 $string['showadvanced'] = 'Mostra característiques avançades';
 $string['showless'] = 'Mostra\'n menys...';
 $string['showmore'] = 'Mostra\'n més...';
-$string['somefieldsrequired'] = 'Aquest formulari conté camps obligatoris';
+$string['somefieldsrequired'] = 'Aquest formulari conté els camps obligatoris {$a}.';
 $string['time'] = 'Temps';
 $string['timeunit'] = 'Unitat de temps';
 $string['timing'] = 'Cronometratge';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradeimport_xml', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,10 @@ $string['errincorrectuseridnumber'] = 'Error - idnumber \'{$a}\' from the import
 $string['error'] = 'Errors occur';
 $string['errorduringimport'] = 'An error occurred when trying to import: {$a}';
 $string['fileurl'] = 'Remote file URL';
+$string['fileurl_help'] = 'The remote file URL field is for fetching data from a remote server, such as a student information system.';
+$string['importxml'] = 'XML import';
+$string['importxml_help'] = 'Grades can be imported via an XML file containing user ID numbers and activity ID numbers. To obtain the correct format, first export some grades to XML file then view the file.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XML file';
 $string['xml:publish'] = 'Publish import grades from XML';
 $string['xml:view'] = 'Import grades from XML';

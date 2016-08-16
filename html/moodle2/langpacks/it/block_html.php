@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_html', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['configclasses_help'] = 'Facilita l\'identificazione di blocchi HTML mul
 $string['configcontent'] = 'Contenuto';
 $string['configtitle'] = 'Titolo del blocco';
 $string['html:addinstance'] = 'Aggiungere blocco HTML';
-$string['html:myaddinstance'] = 'Aggiungere blocco HTML nella pagina My home';
+$string['html:myaddinstance'] = 'Aggiungere blocco HTML nella Dashboard';
 $string['leaveblanktohide'] = 'lasciare vuoto per non visualizzare il titolo';
 $string['newhtmlblock'] = '(nuovo blocco HTML)';
 $string['pluginname'] = 'HTML';

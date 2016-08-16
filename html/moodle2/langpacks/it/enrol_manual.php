@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Sei sicuro di eliminare queste iscrizio
 $string['defaultperiod'] = 'Durata di default dell\'iscrizione';
 $string['defaultperiod_desc'] = 'La durata di default dell\'iscrizione. Impostarla a zero per una durata di default dell\'iscrizione senza limite.';
 $string['defaultperiod_help'] = 'La durata di default  dell\'iscrizione, a partire dalla data di iscrizione dell\'utente. Disabilitare l\'impostazione per una durata di default dell\'iscrizione senza limite.';
+$string['defaultstart'] = 'Inizio di default dell\'iscrizione';
 $string['deleteselectedusers'] = 'Elimina le iscrizioni selezionate';
 $string['editselectedusers'] = 'Modifica le iscrizioni selezionate';
 $string['enrolledincourserole'] = 'Iscritto al corso "{$a->course}" con il ruolo di "{$a->role}"';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Notifica di scadenza iscrizione';
 $string['manual:config'] = 'Configurare istanze plugin Iscrizioni manuali';
 $string['manual:enrol'] = 'Iscrivere utenti';
 $string['manual:manage'] = 'Gestire iscrizioni';
+$string['manualpluginnotinstalled'] = 'Il plugin "Iscrizione manuale" non è installato.';
 $string['manual:unenrol'] = 'Disiscrivere utenti dai corsi';
 $string['manual:unenrolself'] = 'Disiscriversi dai corsi';
 $string['messageprovider:expiry_notification'] = 'Notifiche di scadenza iscrizioni manuali';
+$string['now'] = 'Adesso';
 $string['pluginname'] = 'Iscrizione manuale';
 $string['pluginname_desc'] = 'Il plugin Iscrizione manuale consente di iscrivere manualmente gli utenti ai corsi sia tramite un link nell\'Amministrazione del corso, sia da parte di un utente in possesso dei privilegi necessari, ad esempio un docente. Di norma questo plugin dovrebbe essere abilitato poiché altri plugin di iscrizione, come ad esempio le iscrizioni spontanee, lo richiedono.';
 $string['status'] = 'Abilita iscrizione manuale';

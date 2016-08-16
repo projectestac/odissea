@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_online_users', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Количество минут для определения какие из пользователей сейчас на сайте';
 $string['online_users:addinstance'] = 'Добавлять новый блок «Пользователи на сайте»';
-$string['online_users:myaddinstance'] = 'Добавлять новый блок «Пользователи на сайте» на домашнюю страницу';
+$string['online_users:myaddinstance'] = 'Добавлять новый блок «Пользователи онлайн» на страницу «Моя домашняя страница»';
 $string['online_users:viewlist'] = 'Видеть список пользователей онлайн';
 $string['periodnminutes'] = 'последние {$a} минут';
 $string['pluginname'] = 'Пользователи на сайте';

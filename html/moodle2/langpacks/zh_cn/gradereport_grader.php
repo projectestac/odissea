@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_grader', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,6 @@ $string['grader:view'] = '查看评分人报表';
 $string['overriddengrade'] = '覆盖成绩';
 $string['pluginname'] = '评分人报表';
 $string['preferences'] = '评分人报表使用偏好';
+$string['summarygrader'] = '一张表格，第一栏是学生姓名，上面有这个课程的可存取的各种活动名称，并经过分组归类。';
 $string['useractivityfeedback'] = '{$a}反馈';
 $string['useractivitygrade'] = '{$a}成绩';

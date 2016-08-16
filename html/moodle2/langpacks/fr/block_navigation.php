@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_navigation', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['everything'] = 'Tout';
 $string['expansionlimit'] = 'Générer la navigation pour ces éléments';
 $string['linkcategoriesdesc'] = 'Afficher les catégories sous forme de liens';
 $string['navigation:addinstance'] = 'Ajouter un bloc navigation';
-$string['navigation:myaddinstance'] = 'Ajouter un bloc navigation à Ma page';
+$string['navigation:myaddinstance'] = 'Ajouter un bloc navigation au tableau de bord';
 $string['pluginname'] = 'Navigation';
 $string['trimlength'] = 'Nombre de caractères maximal de nom raccourci';
 $string['trimmode'] = 'Mode de raccourcissement';

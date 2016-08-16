@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Dispoñíbeis os complementos de matriculación';
 $string['addinstance'] = 'Engadir método';
+$string['addinstanceanother'] = 'Engadir método e crear outro';
 $string['ajaxnext25'] = 'Seguintes 25...';
 $string['ajaxoneuserfound'] = 'Atopouse 1 usuario';
 $string['ajaxxusersfound'] = 'Atopáronse {$a} usuarios';
@@ -91,6 +92,7 @@ $string['extremovedsuspendnoroles'] = 'Desactivar a matriculación do curso e re
 $string['extremovedunenrol'] = 'Desmatricular un usuario do curso';
 $string['finishenrollingusers'] = 'Rematar a matriculación de usuarios';
 $string['foundxcohorts'] = 'Atopáronse {$a} grupos';
+$string['instanceadded'] = 'O método foi engadido';
 $string['instanceeditselfwarning'] = 'Aviso:';
 $string['instanceeditselfwarningtext'] = 'Vostede está matriculado neste curso mediante este método de matriculación, os cambios poden afectar ao seu acceso a este curso.';
 $string['invalidenrolinstance'] = 'Instancia de matriculación incorrecta';
@@ -112,6 +114,7 @@ $string['periodend'] = 'ata {$a}';
 $string['periodnone'] = 'matriculado {$a}';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} ata {$a->end}';
+$string['proceedtocourse'] = 'Continúe co contido do curso';
 $string['recovergrades'] = 'Recuperar antigas puntuacións do usuario se é posíbel';
 $string['rolefromcategory'] = '{$a->role} (Herdado da categoría do curso)';
 $string['rolefrommetacourse'] = '{$a->role} (Herdado do curso pai)';

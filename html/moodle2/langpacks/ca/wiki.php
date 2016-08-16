@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['backhistory'] = 'Torna a l\'historial';
 $string['backoldversion'] = 'Torna a la versió antiga';
 $string['backpage'] = 'Torna a la pàgina';
 $string['backtomapmenu'] = 'Torna a l\'índex del menú';
+$string['cannotcomparenewerversion'] = 'Una versió de pàgina sols es pot comparar amb un versió més antiga.';
 $string['cannoteditpage'] = 'No podeu editar aquesta pàgina.';
 $string['cannotmanagefiles'] = 'No teniu permís per gestionar els fitxers wiki';
 $string['cannotviewfiles'] = 'No teniu permís per veure els fitxers wiki';
@@ -49,10 +50,10 @@ $string['commentscount'] = 'Comentaris  ({$a})';
 $string['comparesel'] = 'Compara els seleccionats';
 $string['comparewith'] = 'S\'està comparant la versió {$a->old} amb la versió  {$a->new}';
 $string['contributions'] = 'Contribucions';
-$string['contributions_help'] = 'Llistat de pàgines que heu editat';
+$string['contributions_help'] = 'Llista de pàgines que heu editat.';
 $string['createcomment'] = 'S\'està creant un comentari';
 $string['createddate'] = 'Creat: {$a->date} per {$a->username}';
-$string['createpage'] = 'Crea pàgina';
+$string['createpage'] = 'Crea una pàgina';
 $string['creating'] = 'S\'està creant una pàgina wiki';
 $string['creole'] = 'Creole';
 $string['defaultformat'] = 'Format per defecte';
@@ -61,9 +62,10 @@ $string['defaultformat_help'] = 'Aquest paràmetre determina el format per defec
 * HTML - L\'editor HTML està disponible.
 * Creole - Un llenguatge d\'etiquetes wiki per al qual hi ha disponible una barra editora.
 * Nwiki - Mediawiki- semblant a una llenguatge d\'etiquetes utilitzat al mòdul Nwiki';
+$string['deleteallpages'] = 'Suprimeix totes les pàgines wiki';
 $string['deletecomment'] = 'S\'està suprimint el comentari';
 $string['deletecommentcheck'] = 'Suprimeix el comentari';
-$string['deletecommentcheckfull'] = 'Esteu segurs de voler suprimir el comentari ?';
+$string['deletecommentcheckfull'] = 'Confirmeu que voleu suprimir el comentari?';
 $string['deletedbegins'] = 'Suprimit el començament';
 $string['deletedends'] = 'Suprimit el final';
 $string['deleteupload'] = 'Suprimeix';
@@ -113,6 +115,9 @@ $string['history'] = 'Historial';
 $string['history_help'] = 'L\'historial enllaça amb les versions prèvies de la pàgina.';
 $string['html'] = 'HTML';
 $string['incorrectdeleteversions'] = 'Les versions de la pàgina per suprimir són incorrectes.';
+$string['incorrectpageid'] = 'L\'ID de la pàgina no és correcte.';
+$string['incorrectsubwikiid'] = 'L\'ID del subwiki no és correcte.';
+$string['incorrectwikiid'] = 'L\'ID del wiki no és correcte.';
 $string['individualpagedoesnotexist'] = 'Aquesta pàgina wiki no existeix';
 $string['insertcomment'] = 'Insereix comentari';
 $string['insertimage'] = 'Insereix una imatge...';
@@ -183,7 +188,7 @@ $string['orphaned'] = 'Pàgines orfes';
 $string['orphaned_help'] = 'Llista de pàgines que no  hi són enllaçades amb altres pàgines.';
 $string['overridelocks'] = 'Sobreescriu els bloquejos';
 $string['overridinglocks'] = 'S\'estan sobreescrivint els bloquejos...';
-$string['pageexists'] = 'Aquesta pàgina ja existeix. Redirigint cap a ella.';
+$string['pageexists'] = 'Aquesta pàgina ja existeix.';
 $string['pageindex'] = 'Índex de pàgines';
 $string['pageindex_help'] = 'L\'arbre de la pàgina wiki';
 $string['pageislocked'] = 'Algú està editant la pàgina ara. Proveu a editar-la alguns minuts més tard.';
@@ -265,7 +270,7 @@ $string['wiki:managecomment'] = 'Gestiona els comentaris wiki';
 $string['wiki:managefiles'] = 'Gestiona els fitxers wiki';
 $string['wiki:managewiki'] = 'Gestiona els paràmetres del wiki';
 $string['wikimode'] = 'Mode wiki';
-$string['wikimodecollaborative'] = 'Wiki col·laborativa';
+$string['wikimodecollaborative'] = 'Wiki col·laboratiu';
 $string['wikimode_help'] = 'El mode wiki determina de quina forma qualsevol persona pot editar el wiki —el wiki col·laboratiu— o de quina forma cadascú té el seu propi wiki, el qual sols ell pot editar —un wiki individual.';
 $string['wikimodeindividual'] = 'Wiki individual';
 $string['wikiname'] = 'Nom del wiki';

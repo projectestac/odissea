@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,11 +32,15 @@ $string['display_help'] = 'Если Вы выберете отображение
 $string['displayinline'] = 'Встроенный на странице курса';
 $string['displaypage'] = 'На отдельной странице';
 $string['dnduploadmakefolder'] = 'Распаковать файлы и создать папку';
+$string['downloadfolder'] = 'Скачать папку';
+$string['eventallfilesdownloaded'] = 'Zip-архив или папка скачаны';
 $string['eventfolderupdated'] = 'Папка обновлена';
 $string['folder:addinstance'] = 'Добавлять новый ресурс типа «Папка»';
 $string['foldercontent'] = 'Файлы и вложенные папки';
 $string['folder:managefiles'] = 'Управлять файлами в модуле «Папка»';
 $string['folder:view'] = 'Просматривать содержимое ресурса типа «Папка»';
+$string['maxsizetodownload'] = 'Максимальный размер скачиваемой папки (Мб)';
+$string['maxsizetodownload_help'] = 'Максимальный размер папки, которая может быть скачана в виде zip-файла. Если параметр равен 0, размер папки не ограничен.';
 $string['modulename'] = 'Папка';
 $string['modulename_help'] = 'Модуль «Папка» позволяет преподавателю отображать несколько смежных файлов в одной папке, уменьшая прокрутку на странице курса. Папка может быть загружена в ZIP-архиве и распакована для отображения; также можно создать пустую папку и загрузить в нее файлы.
 
@@ -50,5 +54,8 @@ $string['page-mod-folder-view'] = 'Главная страница модуля 
 $string['page-mod-folder-x'] = 'Любая страница модуля «Папка»';
 $string['pluginadministration'] = 'Управление папкой';
 $string['pluginname'] = 'Папка';
+$string['search:activity'] = 'Папка';
+$string['showdownloadfolder'] = 'Показать кнопку для скачивания папки';
+$string['showdownloadfolder_help'] = 'Если параметр установлен в «Да», показывается кнопка, которая позволяет скачать содержимое папки в виде zip-файла.';
 $string['showexpanded'] = 'Вложенные папки отображать развернутыми';
 $string['showexpanded_help'] = 'При включенном параметре по умолчанию вложенные папки будут отображаться  развернутыми. В противном случае вложенные папки будут отображаться свернутыми.';

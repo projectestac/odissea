@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mentees', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['configtitle'] = 'Название блока';
 $string['configtitleblankhides'] = 'Название блока (без названия, если пустое)';
 $string['leaveblanktohide'] = 'оставьте пустым, чтобы не отображать название';
 $string['mentees:addinstance'] = 'Добавлять новый блок «Подопечные»';
-$string['mentees:myaddinstance'] = 'Добавлять новый блок «Подопечные» на домашнюю страницу';
+$string['mentees:myaddinstance'] = 'Добавлять новый блок «Подопечные» на страницу «Моя домашняя страница»';
 $string['newmenteesblock'] = '(новый блок «Подопечные»)';
 $string['pluginname'] = 'Подопечные';

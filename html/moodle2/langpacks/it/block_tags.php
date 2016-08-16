@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Aggiungi';
 $string['alltags'] = 'Tutti i tag:';
+$string['anycollection'] = 'Alcuni';
+$string['anytype'] = 'Tutti';
 $string['arrowtitle'] = 'Fai click qui per inserire il testo suggerito (lettere grigie)';
 $string['configtitle'] = 'Titolo del blocco';
 $string['coursetags'] = 'Tag del corso:';
-$string['defaultdisplay'] = 'Tipo di tag da visualizzare';
+$string['defaultdisplay'] = 'Visualizza tag';
 $string['disabledtags'] = 'I tag sono disabilitati';
 $string['edit'] = 'modifica...';
 $string['editdeletemytag'] = 'Elimina tag di questo corso';
@@ -66,12 +68,19 @@ $string['mytags'] = 'Tag personali:';
 $string['notagsyet'] = 'Non ci sono tag';
 $string['please'] = 'Per favore';
 $string['pluginname'] = 'Tag';
+$string['recursivecontext'] = 'Includi contesti figlio';
+$string['recursivecontext_help'] = 'Deselezionando l\'impostazione, saranno visualizzati solo i tag associati ad elementi nel contesto di riferimento escludendo i contesti sottostanti. In questo modo sarà ad esempio possibile cercare nel contesto del corso senza cercare nelle attività del corso.';
 $string['select'] = 'Scegli...';
 $string['showcoursetags'] = 'Visualizza tag del corso';
 $string['showcoursetagsdef'] = 'Visualizza la funzionalità tag per il corso nel blocco tag, consentendo agli studenti di inserire tag dei corsi.';
+$string['standardonly'] = 'Solo standard';
 $string['suggestedtagthisunit'] = 'Tag consigliati per il corso:';
+$string['tagcollection'] = 'Raccolta di tag';
+$string['tagcollection_help'] = 'Seleziona la raccolta dalla quale visualizzare i tag. Selezionando "Alcuni", saranno visualizzati i tag di tutte le raccolte ad eccezione dei tag contrassegnati con "*"';
+$string['taggeditemscontext'] = 'Contesto dell\'elemento associato al tag';
+$string['taggeditemscontext_help'] = 'E\' possibile limitare il tag cloud ai soli tag presenti nel contesto di riferimento, come una categoria di corso, un corso o un modulo.';
 $string['tags'] = 'tag';
 $string['tags:addinstance'] = 'Aggiungere blocco Tag';
-$string['tags:myaddinstance'] = 'Aggiungere blocco Tag nella pagina My home';
+$string['tags:myaddinstance'] = 'Aggiungere blocco Tag nella Dashboard';
 $string['tagthisunit'] = 'Aggiungi tag di questo corso';
 $string['tagunits'] = 'per aggiungere tag ai tuoi corsi preferiti';

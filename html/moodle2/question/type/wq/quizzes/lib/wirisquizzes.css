@@ -9,7 +9,6 @@ body.wirisquizzespopup{
     overflow: hidden;
 }
 div.wiristabs div.wiristabsleftcolumn {
-    background-color: #e0e0e0;
     position: absolute;
     left: 0;
     top: 0;
@@ -18,7 +17,6 @@ div.wiristabs div.wiristabsleftcolumn {
     z-index: 10;
 }
 div.wiristabs div.wiristabcontentwrapper {
-    background-color: #e0e0e0;
     height: 100%;
     margin-left: 160px;
 }
@@ -48,6 +46,17 @@ div.wirispoweredbywrapper {
 div.wirispoweredbywrapper a img {
     border-style: none;
 }
+div.wirispoweredbywrapper a {
+	font-family: Segoe UI,Arial,Helvetica,sans-serif;
+	color: #888;
+    text-decoration: none;
+	font-size: 11pt;
+}
+div.wirispoweredbywrapper img {
+	position: relative;
+	bottom: -2px;
+}
+
 div.wiristabs div.wiristabcontent {
     background-color: #fff;
     bottom: 0px;
@@ -189,11 +198,11 @@ div.wiristabs fieldset.wirisfieldset legend a:hover{
 	text-decoration: underline;
 }
 div.wiristabs fieldset.wirisfieldset legend a.wiriscollapsed {
-	background: url('?service=resource&name=fieldset-collapsed.png') no-repeat 3px 50%;;
+	background: url("?service=resource&name=fieldset-collapsed.png") no-repeat 3px 50%;;
 	padding-left: 14px;
 }
 div.wiristabs fieldset.wirisfieldset legend a.wirisexpanded {
-	background: url('?service=resource&name=fieldset-expanded.png') no-repeat 3px 50%;;
+	background: url("?service=resource&name=fieldset-expanded.png") no-repeat 3px 50%;;
 	padding-left: 14px;
 }
 div.wiristabs div.wiristolerance {
@@ -201,8 +210,7 @@ div.wiristabs div.wiristolerance {
 	margin-bottom: 6px;
 	margin-top: 2px;
 }
-div.wiristabs {
-}
+
 div.wiristabs ul {
     margin:  0;
     padding: 0;
@@ -274,7 +282,6 @@ div.wiristabs div.wirismessagebox {
 	margin-bottom: 5px;
 	/*Do not overlap with tab help text*/
 	z-index: 10;
-	background-color: #e0e0e0;
 }
 div.wirismessage {
 	padding-left:  18px;
@@ -282,15 +289,15 @@ div.wirismessage {
 }
 div.wirismessage.wiriserror{
     color: #701703;
-    background: url('?service=resource&name=warning.png') no-repeat left top;
+    background: url("?service=resource&name=warning.png") no-repeat left top;
 }
 div.wirismessage.wiriswarning{
     color: #70370a;
-    background: url('?service=resource&name=warning2.png') no-repeat left top;
+    background: url("?service=resource&name=warning2.png") no-repeat left top;
 }
 div.wirismessage.wirisinfo{
     color: #265970;
-    background: url('?service=resource&name=warning3.png') no-repeat left top;
+    background: url("?service=resource&name=warning3.png") no-repeat left top;
 }
 
 div.wiristabs div.wirissecondaryfieldset {
@@ -343,10 +350,9 @@ div.wiriscasinitialcontent div.wiriscaswrapper {
 }
 div.wiristabs div.wirisactionswrapper {
     bottom: 0;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
     position: absolute;
     border-top: solid 1px #999;
-	background-color:#e0e0e0;
 }
 
 div.wiristabs ul.wirisactionslist li a {
@@ -590,15 +596,15 @@ ul.wiristestassertionslist{
 }
 
 ul.wiristestassertionslist span.wiriscorrect {
-    background: url('?service=resource&name=correct.gif') no-repeat left;
+    background: url("?service=resource&name=correct.gif") no-repeat left;
 }
 
 ul.wiristestassertionslist span.wirisincorrect {
-    background: url('?service=resource&name=incorrect.gif') no-repeat left;
+    background: url("?service=resource&name=incorrect.gif") no-repeat left;
 }
 
 ul.wiristestassertionslist span.wirispartiallycorrect {
-    background: url('?service=resource&name=percent.gif') no-repeat left;    
+    background: url("?service=resource&name=percent.gif") no-repeat left;    
 }
 
 ul.wiristestassertionslist span {
@@ -628,19 +634,23 @@ input.wirisembeddedtextinput{
     width: 100px;
 }
 
+/*
+ There exist the monochrome version for icons. Please use editor16b.png, 
+ studio16b.png and studio24b.png respectively if you need it.
+*/
 input.wirisembeddedmathinput,
 img.wirisembeddedmathinput {
-	background: #fff url("?service=resource&name=editor.gif") no-repeat;	
+	background: #fff url("?service=resource&name=editor16.png") no-repeat;	
 }
 input.wirisembeddedauthoringfield ,
 img.wirisembeddedauthoringfield {
-	background: #fff url("?service=resource&name=quizzes.gif") no-repeat;
+	background: #fff url("?service=resource&name=studio16.png") no-repeat;
 }
 
 input.wirisembeddedstudioinput,
 img.wirisembeddedstudioinput,
 span.wirisembeddedstudioinput {
-	background: #fff url("?service=resource&name=studio.gif") no-repeat;
+	background: #fff url("?service=resource&name=studio24.png") no-repeat;
 }
 input.wirisembeddedstudioinput,
 img.wirisembeddedstudioinput {
@@ -735,6 +745,38 @@ div.wirisanswerfielddecoration.wirispartiallycorrect img.wirisembeddedmathinput 
 	border-color: #cfbb76;
 	background-color: #f7f3bc;
 }
+img.wirisplotter {
+	border: solid 1px #bbb;
+}
+
+table.wiristable {
+	border-collapse: collapse;
+}
+table.wiristable tr:nth-child(2n+1) {
+	background-color: rgba(0,0,0,0.03);
+}
+table.wiristable td {
+    border: solid 1px #ccc;
+	border-color: rgba(0,0,0,0.15);
+    padding: 5px;
+    text-align: center;
+}
+
+/*Override some styles for studio embedded in html*/
+div.wirisembeddedstudio {
+	height: 550px;
+    position: relative;
+	max-width: 900px;
+}
+
+div.wirisembeddedstudio div.wiristabs {
+	bottom: 0;
+}
+
+.wirisinlineblock {
+	display: inline-block;
+}
+
 
 /***
 Some CSS specially for moodle 2 standard theme.

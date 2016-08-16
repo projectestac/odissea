@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'RSS Feeds bearbeiten';
 $string['editrssblock'] = 'RSS Themen bearbeiten';
 $string['enableautodiscovery'] = 'RSS Feeds automatisch erkennen';
 $string['enableautodiscovery_help'] = 'Wenn diese Option aktiviert ist, werden RSS Feeds auf Webseiten automatisch erkannt. Wenn Sie z.B. http://docs.moodle.org als Webseite eingeben, dann würde http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss automatisch gefunden werden.';
-$string['errorloadingfeed'] = 'Fehler beim Laden des RSS Feeds ({$a})';
 $string['feed'] = 'RSS Feed';
 $string['feedadded'] = 'RSS Feed hinzugefügt';
 $string['feeddeleted'] = 'RSS Feed gelöscht';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Persönliche RSS Feeds erstellen';
 $string['rss_client:createsharedfeeds'] = 'Gemeinsame RSS Feeds erstellen';
 $string['rss_client:manageanyfeeds'] = 'Alle RSS Feeds verwalten';
 $string['rss_client:manageownfeeds'] = 'Persönliche RSS Feeds verwalten';
-$string['rss_client:myaddinstance'] = 'Block \'Externe RSS Feeds\' für \'Meine Startseite\' hinzufügen';
+$string['rss_client:myaddinstance'] = 'Block \'RSS Feeds\' zum Dashboard hinzufügen';
 $string['seeallfeeds'] = 'Alle RSS Feeds anzeigen';
 $string['sharedfeed'] = 'Gemeinsamer RSS Feed';
 $string['shownumentrieslabel'] = 'Maximale Anzahl der angezeigten Einträge pro Block';

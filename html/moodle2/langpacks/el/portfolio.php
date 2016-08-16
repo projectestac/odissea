@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,6 @@ $string['format_plainhtml'] = 'HTML';
 $string['format_richhtml'] = 'HTML με συνημμένα';
 $string['format_text'] = 'Απλό κείμενο';
 $string['format_video'] = 'Βίντεο';
-$string['hidden'] = 'Κρυμμένο';
 $string['highdbsizethreshold'] = 'Απόκρυψη μεγέθους βάσης δεδομένων μεταφοράς';
 $string['highdbsizethresholddesc'] = 'Αριθμός των εγγραφών στη βάση δεδομένων πάνω του οποίου θεωρείται ότι θα χρειαστεί υψηλό χρόνο για μεταφορά';
 $string['highfilesizethreshold'] = 'Υψηλό μέγεθος αρχείου για μεταφορά';

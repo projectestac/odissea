@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = 'Voeg nieuw hoofdstuk toe';
 $string['book:addinstance'] = 'Voeg een nieuw boek toe';
 $string['book:edit'] = 'Bewerk hoofdstukken';
-$string['book:read'] = 'Lees boek';
+$string['book:read'] = 'Bekijk boek';
 $string['book:viewhiddenchapters'] = 'Bekijk verborgen hoofdstukken';
 $string['chapters'] = 'Hoofdstukken';
 $string['chaptertitle'] = 'Hoofdstuk titel';
@@ -39,12 +39,15 @@ $string['customtitles'] = 'Aangepaste titels';
 $string['customtitles_help'] = 'Titels worden automatisch alleen in de inhoudsopgave getoond en als kopje boven de inhoud.
 
 Als het vinkje bij aangepaste titels is gezet, dan wordt de hoofdstuktitel niet als kopje boven de inhoud gezet. Er kan een andere titel, misschien een langere, ingegeven worden als deel van de inhoud.';
+$string['deletechapter'] = 'Verwijder hoofdstuk  "{$a}"';
+$string['editchapter'] = 'Bewerk hoofdstuk  "{$a}"';
 $string['editingchapter'] = 'Bewerk hoofdstuk';
 $string['errorchapter'] = 'Fout bij het lezen van het hoofdstuk';
 $string['eventchaptercreated'] = 'Hoofdstuk gemaakt';
 $string['eventchapterdeleted'] = 'Hoofdstuk verwijderd';
 $string['eventchapterupdated'] = 'Hoofdstuk aangepast';
 $string['eventchapterviewed'] = 'Hoofdstuk bekeken';
+$string['hidechapter'] = 'Verberg hoofdstuk  "{$a}"';
 $string['modulename'] = 'Boek';
 $string['modulename_help'] = 'Met de boekmodule kan een leraar bronnen maken met meerdere pagina\'s in een boek-stijl opmaak met hoofdstukken en subtitels. In de boekmodule kunnen mediabestanden en tekst gezet worden en is nuttig voor het tonen van lange passages tekst of informatie die opgedeeld kan worden in delen.
 
@@ -54,9 +57,19 @@ Een boek kan gebruikt worden voor:
 * als handboek voor medewerkers
 * als demonstratieportfolio van werk van leerlingen';
 $string['modulenameplural'] = 'Boeken';
+$string['movechapterdown'] = 'Verplaats hoofdstuk  "{$a}" omlaag';
+$string['movechapterup'] = 'Verplaats hoofdstuk  "{$a}" omhoog';
 $string['navexit'] = 'Verlaat boek.';
+$string['navimages'] = 'Afbeeldingen';
 $string['navnext'] = 'Volgende';
+$string['navoptions'] = 'Beschikbare opties voor navigatielinks';
+$string['navoptions_desc'] = 'Opties voor het tonen van navigatielinks op boekpagina\'s';
 $string['navprev'] = 'Vorige';
+$string['navstyle'] = 'Navigatiestijl';
+$string['navstyle_help'] = '* Afbeeldingen - Er worden icoontjes gebruikt voor de navigatie
+* Tekst - De hoofdstuktitels worden gebruikt voor de navigatie';
+$string['navtext'] = 'Tekst';
+$string['navtoc'] = 'Enkel inhoudsopgave';
 $string['nocontent'] = 'Er is nog geen inhoud aan dit boek toegevoegd';
 $string['numbering'] = 'Hoofdstuknummering';
 $string['numbering0'] = 'Geen';
@@ -72,6 +85,9 @@ $string['numberingoptions_desc'] = 'Opties voor het tonen van hoofdstukken en su
 $string['page-mod-book-x'] = 'Om het even welke pagina van de boekmodule';
 $string['pluginadministration'] = 'Boekbeheer';
 $string['pluginname'] = 'Boek';
+$string['search:activity'] = 'Boek - broninformatie';
+$string['search:chapter'] = 'Boek - hoofdstukken';
+$string['showchapter'] = 'Toon hoofdstuk  "{$a}"';
 $string['subchapter'] = 'Paragraaf';
 $string['subchapternotice'] = '(enkel beschikbaar als het eerste hoofdstuk gemaakt is)';
 $string['subplugintype_booktool'] = 'Boek tool';

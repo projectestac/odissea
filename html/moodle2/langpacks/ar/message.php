@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,9 +105,9 @@ $string['search'] = 'بحث';
 $string['searchcombined'] = 'البحث عن الأشخاص والرسائل';
 $string['searchforperson'] = 'أبحث عن شخص';
 $string['searchmessages'] = 'أبحث في الرسائل';
-$string['sendmessage'] = 'أرسل الرسالة';
-$string['sendmessageto'] = 'أرسل الرسالة إلى {$a}';
-$string['sendmessagetopopup'] = 'أرسل رسالة إلى {$a} - نافذة جديدة';
+$string['sendmessage'] = 'إرسل رسالة';
+$string['sendmessageto'] = 'إرسل رسالة إلى {$a}';
+$string['sendmessagetopopup'] = 'إرسل رسالة إلى {$a} - نافذة جديدة';
 $string['settings'] = 'إعدادات';
 $string['settingssaved'] = 'لقد تم حفظ إعداداتك';
 $string['showmessagewindow'] = 'أعرض نافذة الرسائل آليا عندما احصل على رسائل جديدة. (يجب ان تعد متصفحك للسماح للـ popups)';

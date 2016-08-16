@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['automatedbackupschedule'] = 'Egutegia';
 $string['automatedbackupschedulehelp'] = 'Erabaki asteko zein egunetan egingo diren segurtasun-kopia automatikoak';
 $string['automatedbackupsinactive'] = 'Programatutako segurtasun-kopiak gunearen kudeatzaileak gaitu ditu';
 $string['automatedbackupstatus'] = 'Programatutako segurtasun-kopiaren egoera';
+$string['automateddeletedays'] = 'Ezabatu ondokoa baino zaharragoak diren segurtasun-kopiak';
 $string['automatedsettings'] = 'Programatutako segurtasun-kopiaren ezarpenak';
 $string['automatedsetup'] = 'Programatutako segurtasun-kopiak';
 $string['automatedstorage'] = 'Segurtasun-kopia automatikoen biltegia';
@@ -110,7 +111,6 @@ $string['errorfilenamerequired'] = 'Fitxategi-izen egokia sartu behar duzu segur
 $string['errorinvalidformat'] = 'Segurtasun-kopiaren formatu ezezaguna';
 $string['errorinvalidformatinfo'] = 'Aukeratutako fitxategia ez da Moodle-rako segurtasun-kopiaren fitxategi baliagarria eta ezin da berreskuratu.';
 $string['errorminbackup20version'] = 'Segurtasun-kopiaren fitxategia hau Moodle-ren segutasun-kopiaren garapen ({$a->backup}) bertsioarekin sortu da segurtasun-kopiaren fitxategi hau. Gutxienez behar dena, berriz, hau da: {$a->min}. Ezin da, beraz, berreskuratu.';
-$string['errorrestorefrontpage'] = 'Ez dago baimenduta hasiera-orrian berreskuratzea.';
 $string['executionsuccess'] = 'Zure segurtasun-kopiaren fitxategia egoki osatu da.';
 $string['filealiasesrestorefailures'] = 'Erroreak ezizenak berreskuratzean';
 $string['filename'] = 'Fitxategiaren izena';
@@ -124,6 +124,7 @@ $string['generalblocks'] = 'Blokeak barne ditu';
 $string['generalcomments'] = 'Iruzkinak barne ditu';
 $string['generalfilters'] = 'Iragazkiak barne ditu';
 $string['generalgradehistories'] = 'Historiak barne ditu';
+$string['generalgroups'] = 'Taldeak eta taldekatzeak barne ditu';
 $string['generalhistories'] = 'Historiak barne ditu';
 $string['generallogs'] = 'Agerraldiak barne ditu';
 $string['generalquestionbank'] = 'Galdera-bankua barne du';
@@ -213,8 +214,10 @@ $string['rootsettingbadges'] = 'Dominak barne ditu';
 $string['rootsettingblocks'] = 'Blokeak barne ditu';
 $string['rootsettingcalendarevents'] = 'Egutegiko ekitaldiak barne ditu';
 $string['rootsettingcomments'] = 'Iruzkinak barne ditu';
+$string['rootsettingcompetencies'] = 'Gaitasunak barne ditu';
 $string['rootsettingfilters'] = 'Iragazkiak barne ditu ';
 $string['rootsettinggradehistories'] = 'Kalifikazioen historia barne du';
+$string['rootsettinggroups'] = 'Taldeak eta taldekatzeak barne ditu';
 $string['rootsettingimscc1'] = 'Bihurtu IMS Common Cartridge 1.0-ra';
 $string['rootsettingimscc11'] = 'Bihurtu IMS Common Cartridge 1.1-era';
 $string['rootsettinglogs'] = 'Ikastaroaren agerraldiak barne ditu';

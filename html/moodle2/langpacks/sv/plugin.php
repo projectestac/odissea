@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'plugin', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,16 +34,10 @@ $string['err_response_curl'] = 'Kunde inte hämta data om tillgängliga uppdater
 $string['err_response_http_code'] = 'Kunde inte hämta data om tillgängliga uppdateringa - oväntad HTTP svarskod.';
 $string['filterall'] = 'Visa alla';
 $string['moodleversion'] = 'Moodle {$a}';
-$string['nonehighlighted'] = 'Inga plugins kräver din uppmärksamhet nu';
-$string['nonehighlightedinfo'] = 'Visa listan över alla installerade plugins ändå';
 $string['noneinstalled'] = 'Inga plugin av denna typ finns installerade';
 $string['notdownloadable'] = 'Det går inte att hämta paketet';
 $string['notdownloadable_help'] = 'ZIP-paketet med uppdateringen kan inte laddas ned automatiskt. Se dokumentationen för mer hjälp.';
 $string['notes'] = 'Anteckningar';
-$string['numdisabled'] = 'Avaktiverad: {$a}';
-$string['numextension'] = 'Bidrag: {$a}';
-$string['numtotal'] = 'Installerad: {$a}';
-$string['numupdatable'] = 'Tillgängliga uppdateringar: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
 $string['plugindisable'] = 'Avaktivera';
@@ -54,10 +48,6 @@ $string['requiredby'] = 'Krävs av: {$a}';
 $string['requires'] = 'Kräver';
 $string['rootdir'] = 'Katalog';
 $string['settings'] = 'Inställningar';
-$string['showall'] = 'Ladda om och visa alla plugins';
-$string['somehighlighted'] = 'Antal plugins som kräver din uppmärksamhet: {$a}';
-$string['somehighlightedinfo'] = 'Visa hela listan över installerade plugins';
-$string['somehighlightedonly'] = 'Visa endast plugins som kräver din uppmärksamhet';
 $string['source'] = 'Källa';
 $string['sourceext'] = 'Bidrag';
 $string['sourcestd'] = 'Standard';

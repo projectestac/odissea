@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest criteri
 $string['confirmdeletelevel'] = 'Esteu segur de voler suprimir aquest nivell ?';
 $string['criterionaddlevel'] = 'Afegeix nivell';
 $string['criteriondelete'] = 'Suprimeix criteri';
+$string['criterionduplicate'] = 'Criteri duplicat';
 $string['criterionempty'] = 'Prem per editar el criteri';
 $string['criterionmovedown'] = 'Mou avall';
 $string['criterionmoveup'] = 'Mou amunt';
@@ -45,7 +46,7 @@ $string['err_nodescription'] = 'La descripció del criteri no pot estar buida';
 $string['err_scoreformat'] = 'El nombre de punts per cada nivell ha de ser un nombre vàlid no negatiu';
 $string['err_totalscore'] = 'El nombre de punts màxim possible quan es qualifica amb una rúbrica ha de ser major de cero';
 $string['gradingof'] = 'S\'està qualificant {$a}';
-$string['leveldelete'] = 'Suprimeix nivell';
+$string['leveldelete'] = 'Suprimeix el nivell {$a}';
 $string['levelempty'] = 'Prem per editar el nivell';
 $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La definició de la rúbrica ha canviat després que aquest estudiant hagi estat qualificat. L\'estudiant no pot veure aquesta rúbrica malgrat que comproveu la rúbrica i actualitzeu la qualificació.';

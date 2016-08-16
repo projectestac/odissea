@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['enableavailability_desc'] = 'När denna är aktiverad kan du ange villk
 $string['error_list_nochildren'] = 'Kombination av villkor måste innehålla minst ett villkor';
 $string['hidden_all'] = 'Dold helt om användaren inte uppfyller villkoren';
 $string['hidden_individual'] = 'Dold helt om användaren inte uppfyller detta villkor';
-$string['hidden_marker'] = '(Dold på annat sätt)';
+$string['hidden_marker'] = '(annars dolt)';
 $string['hide_verb'] = 'Klicka för att dölja';
 $string['invalid'] = 'Vänligen ange';
 $string['itemheading'] = '{$a->number} {$a->type} villkor';
@@ -62,6 +62,7 @@ $string['manageplugins'] = 'Hantera villkor/begränsningar';
 $string['missingplugin'] = 'Plugin för villkor/begränsningar saknas';
 $string['or'] = 'eller';
 $string['restrictaccess'] = 'Begränsa tillgänglighet';
+$string['restrictbygroup'] = 'Lägg till grupp / gruppindelning åtkomstbegränsning';
 $string['setheading'] = '{$a->number} Uppsättning {$a->count} begränsning (ar)';
 $string['shown_all'] = 'Visas nedtonade om användaren inte uppfyller villkoren';
 $string['shown_individual'] = 'Visas nedtonade om användaren inte uppfyller detta villkor';

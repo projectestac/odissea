@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_image', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['browserepositories'] = 'Bläddra genom arkiv...';
+$string['enteralt'] = 'Beskriv bilden för någon som inte kan se den.';
+$string['enterurl'] = 'Ange URL';
+$string['presentation'] = 'Beskrivning behövs ej';
 $string['saveimage'] = 'Spara bilden';
 $string['size'] = 'Storlek';

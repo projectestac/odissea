@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['addtemplate'] = 'Vorlage für neue Einträge';
 $string['advancedsearch'] = 'Erweiterte Suche';
 $string['allowcomments'] = 'Kommentare';
 $string['alttext'] = 'Alternativer Text';
+$string['approvalstatus'] = 'Prüfstatus';
 $string['approve'] = 'Zulassen';
 $string['approved'] = 'Bestätigt';
 $string['areacontent'] = 'Felder';
@@ -45,18 +46,18 @@ $string['autogenallforms'] = 'Alle Basisvorlagen anlegen';
 $string['autolinkurl'] = 'URL automatisch verlinken';
 $string['availablefromdate'] = 'Verfügbar ab';
 $string['availabletags'] = 'Verfügbare Elemente';
-$string['availabletags_help'] = 'Elemente sind Platzhalter in einer Vorlage, die durch Textfelder oder Knöpfe (z.B. das Icon zum Bearbeiten) ersetzt werden, sobald Einträge in die Datenbank vorgenommen oder vorhandene Einträge anzeigt werden.
+$string['availabletags_help'] = 'Die Elemente sind Platzhalter in einer Vorlage, die durch Daten oder Icons (z.B. das Icon zum Bearbeiten) ersetzt werden, sobald Einträge in der Datenbank aufgelistet werden.
 
-Nutzerdefinierte Felder haben das Format [[feldname]]. Alle anderen Elemente (Tags) haben das Format ##tag##.
+Nutzerdefinierte Felder haben das Format [[feldname]]. Alle anderen Elemente haben das Format ##tag##.
 
-Nur die Elemente, die in der Liste "Verfügbare Elemente" aufgeführt sind, können in der Vorlage verwendet werden.
-';
+Nur die Elemente, die unter \'Verfügbare Elemente\' aufgeführt sind, können in der Vorlage verwendet werden.';
 $string['availabletodate'] = 'Verfügbar bis';
+$string['availabletodatevalidation'] = 'Das Datum \'Verfügbar bis\' kann nicht vor dem Datum \'Verfügbar ab\' liegen.';
 $string['blank'] = 'Leer';
 $string['buttons'] = 'Aktionen';
 $string['bynameondate'] = 'von {$a->name} - {$a->date}';
 $string['cancel'] = 'Abbrechen';
-$string['cannotaccesspresentsother'] = 'Sie können nicht auf Vorlagen anderer Nutzer zugreifen';
+$string['cannotaccesspresentsother'] = 'Sie können nicht auf Vorlagen anderer Nutzer/innen zugreifen.';
 $string['cannotadd'] = 'Kann keine Einträge hinzufügen!';
 $string['cannotdeletepreset'] = 'Fehler beim Löschen der Vorlage';
 $string['cannotoverwritepreset'] = 'Fehler beim Überschreiben der Vorgabe';
@@ -77,14 +78,14 @@ $string['configenablerssfeeds'] = 'Mit dieser Funktion aktivieren Sie RSS-Feeds 
 $string['confirmdeletefield'] = 'Möchten Sie dieses Feld wirklich in der Datenbank löschen?';
 $string['confirmdeleterecord'] = 'Möchten Sie diesen Datensatz wirklich in der Datenbank löschen?';
 $string['confirmdeleterecords'] = 'Möchten Sie diese EInträge wirklich löschen?';
-$string['csstemplate'] = 'CSS-Anpassungen';
+$string['csstemplate'] = 'CSS für Vorlagen';
 $string['csvfailed'] = 'Die Daten aus der CSV-Datei konnten nicht gelesen werden.';
 $string['csvfile'] = 'CSV-Datei';
 $string['csvimport'] = 'CSV-Dateiimport';
 $string['csvimport_help'] = 'Daten können über eine CSV-Datei importiert werden, wobei die erste Zeile eine Liste von Feldnamen enthalten muss, gefolgt von den Daten mit jeweils einem Datensatz pro Zeile.';
 $string['csvwithselecteddelimiter'] = '<acronym title="Komma getrennte Werte">CSV</acronym> mit diesem Trennzeichen:';
 $string['data:addinstance'] = 'Datenbank hinzufügen';
-$string['data:approve'] = 'Einträge freigeben oder nicht freigegeben';
+$string['data:approve'] = 'Einträge freigeben oder sperren';
 $string['data:comment'] = 'Kommentare schreiben';
 $string['data:exportallentries'] = 'Alle Datenbankeinträge exportieren';
 $string['data:exportentry'] = 'Datenbankeintrag exportieren';
@@ -96,11 +97,11 @@ $string['data:managetemplates'] = 'Vorlagen verwalten';
 $string['data:manageuserpresets'] = 'Vorlagensätze verwalten';
 $string['data:rate'] = 'Einträge bewerten';
 $string['data:readentry'] = 'Einträge lesen';
-$string['data:viewallratings'] = 'Alle Einzelwertungen sehen';
-$string['data:viewalluserpresets'] = 'Alle Vorlagensätze sehen';
-$string['data:viewanyrating'] = 'Alle Gesamtwertungen sehen';
-$string['data:viewentry'] = 'Einträge sehen';
-$string['data:viewrating'] = 'Eigene Gesamtwertung sehen';
+$string['data:viewallratings'] = 'Alle Einzelwertungen anzeigen';
+$string['data:viewalluserpresets'] = 'Alle Vorlagensätze anzeigen';
+$string['data:viewanyrating'] = 'Alle Gesamtwertungen anzeigen';
+$string['data:viewentry'] = 'Einträge anzeigen';
+$string['data:viewrating'] = 'Eigene Gesamtwertung anzeigen';
 $string['data:writeentry'] = 'Einträge schreiben';
 $string['date'] = 'Datum';
 $string['dateentered'] = 'Daten eingetragen';
@@ -132,6 +133,7 @@ $string['entrieslefttoaddtoview'] = 'Sie müssen {$a->entrieslefttoview} (weiter
 $string['entry'] = 'Eintrag';
 $string['entrysaved'] = 'Ihr Eintrag wurde gesichert';
 $string['errormustbeteacher'] = 'Diese Seite dürfen nur Trainer/innen benutzen!';
+$string['errormustsupplyvalue'] = 'Sie müssen hier einen Wert eintragen.';
 $string['errorpresetexists'] = 'Es gibt bereits eine Vorlage mit dem gewählten Namen';
 $string['eventfieldcreated'] = 'Feld angelegt';
 $string['eventfielddeleted'] = 'Feld gelöscht';
@@ -143,7 +145,7 @@ $string['eventtemplateupdated'] = 'Vorlage aktualisiert';
 $string['eventtemplateviewed'] = 'Vorlagen angezeigt';
 $string['example'] = 'Datenbankbeispiel';
 $string['excel'] = 'Excel';
-$string['expired'] = 'Diese Aktivität wurde am {$a} abgeschlossen und ist nicht weiter verfügbar';
+$string['expired'] = 'Die Aktivität wurde am {$a} abgeschlossen und ist nicht weiter verfügbar.';
 $string['export'] = 'Export';
 $string['exportaszip'] = 'Export als ZIP-Datei';
 $string['exportaszip_help'] = 'Mit dem Export als ZIP-Datei können Sie den Vorlagensatz auf Ihren Computer herunterladen, um ihn später als "Import aus einer ZIP-Datei" in einem anderen Kurs hochzuladen und zu nutzen.';
@@ -210,6 +212,7 @@ $string['invalidurl'] = 'Die eingegebene URL ist nicht gültig.';
 $string['jstemplate'] = 'JavaScript für Vorlagen';
 $string['latitude'] = 'Breitengrad';
 $string['latlong'] = 'Geografische Breite und Länge';
+$string['latlongboth'] = 'Längen- und Breitengrad müssen eingetragen werden.';
 $string['latlongdownloadallhint'] = 'Download aller Einträge als KML';
 $string['latlongkmllabelling'] = 'Wie sollen Ziele in KML-Dateien bezeichnet werden? (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Links zum Anzeigen geografischer Daten';
@@ -217,6 +220,8 @@ $string['latlongotherfields'] = 'Andere Felder';
 $string['list'] = 'Listenansicht';
 $string['listtemplate'] = 'Vorlage für Liste';
 $string['longitude'] = 'Längengrad';
+$string['manageapproved'] = 'Änderung von freigegebenen Einträgen erlauben';
+$string['manageapproved_help'] = 'Diese Option legt fest, ob freigegebene Einträge durch deren Autor/in geändert oder gelöscht werden dürfen. Die Einstellung ist nur wirksam, wenn eine Freigabe von Einträgen notwendig ist.';
 $string['mapexistingfield'] = 'Verknüpfen mit {$a}';
 $string['mapnewfield'] = 'Neues Feld anlegen';
 $string['mappingwarning'] = 'Alle alten Felder, die keinem neuen Feld zugeordnet wurden, werden zusammen mit allen Daten aus diesen Feldern gelöscht.';
@@ -268,7 +273,7 @@ $string['norecords'] = 'Keine Einträge in der Datenbank';
 $string['nosingletemplate'] = 'Einzelansicht wurde noch nicht definiert';
 $string['notapproved'] = 'Der Eintrag wurde bisher nicht freigegeben';
 $string['notinjectivemap'] = 'Keine injektive Abbildung';
-$string['notopenyet'] = 'Aktivität ist nicht verfügbar bis {$a}';
+$string['notopenyet'] = 'Die Aktivität ist nicht verfügbar bis {$a}.';
 $string['number'] = 'Zahl';
 $string['numberrssarticles'] = 'RSS Beiträge';
 $string['numnotapproved'] = 'Wartend';
@@ -298,12 +303,14 @@ $string['recordsnotsaved'] = 'Kein Datensatz wurde gespeichert. Prüfen Sie bitt
 $string['recordssaved'] = 'Datensätze gespeichert';
 $string['requireapproval'] = 'Freigabe erforderlich?';
 $string['requireapproval_help'] = 'Wenn diese Option aktiviert ist, müssen die Einträge von Trainer/innen erst bestätigt werden, bevor sie für alle anderen angezeigt werden?';
+$string['required'] = 'Notwendig';
 $string['requiredentries'] = 'Erforderliche Einträge';
 $string['requiredentries_help'] = 'Die erforderliche Zahl der Einträge gibt die Zahl der eigenen Einträge an, die Teilnehmer/innen speichern müssen, bevor die Aktivität als vollständig bearbeitet gewertet wird.';
 $string['requiredentriestoview'] = 'Erforderliche Einträge vor der Ansicht aller Daten';
 $string['requiredentriestoview_help'] = 'Die erforderliche Zahl der Einträge gibt die Zahl der eigenen Einträge an, die Teilnehmer/innen liefern müssen, bevor sie Einträge anderer Teilnehmer/innen einsehen dürfen.
 
 Hinweis: Falls Einträge vor der Ansicht notwendig sind, sollte die Autoverlinkung für die Datenbank deaktiviert sein. Die Autoverlinkung kann nämlich nicht entscheiden, ob jemand die erforderliche Anzahl von Einträgen bereits geliefert hat.';
+$string['requiredfield'] = 'Pflichtfeld';
 $string['resetsettings'] = 'Filter zurücksetzen';
 $string['resettemplate'] = 'Vorlage zurücksetzen';
 $string['resizingimages'] = 'Vorschaubilder anpassen...';
@@ -320,6 +327,7 @@ $string['savesettings'] = 'Einstellungen speichern';
 $string['savesuccess'] = 'Erfolgreich gespeichert. Ihr Vorlagensatz wird ab sofort überall in diesem Moodle nutzbar sein.';
 $string['savetemplate'] = 'Vorlage speichern';
 $string['search'] = 'Suche';
+$string['search:activity'] = 'Datenbank - Aktivitätsinformation';
 $string['selectedrequired'] = 'Gesamte Auswahl ist erforderlich';
 $string['showall'] = 'Alle Einträge anzeigen';
 $string['single'] = 'Einzelansicht';
@@ -355,4 +363,5 @@ $string['usestandard'] = 'Vorlagensatz benutzen';
 $string['usestandard_help'] = 'Um einen auf der gesamten Website verfügbaren Vorlagensatz zu benutzen, wählen Sie ihn aus der Liste aus. Wenn Sie selbst einen Vorlagensatz zur Liste hinzugefügt haben, können Sie ihn hier auch wieder löschen.';
 $string['viewfromdate'] = 'Bearbeiten sperren ab';
 $string['viewtodate'] = 'Bearbeiten sperren bis';
+$string['viewtodatevalidation'] = 'Das Datum \'Bearbeiten sperren bis\' kann nicht vor dem Datum \'Bearbeiten sperren ab\' liegen.';
 $string['wrongdataid'] = 'Falsche Daten-ID bereitgestellt';

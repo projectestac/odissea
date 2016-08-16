@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -95,6 +95,7 @@ $string['resourcecontent'] = 'Ficheiros e subcartafoles';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resource:exportresource'] = 'Exportar recurso';
 $string['resource:view'] = 'Ver recurso';
+$string['search:activity'] = 'Ficheiro';
 $string['selectmainfile'] = 'Seleccione o ficheiro principal premendo na icona a carón do seu nome.';
 $string['showsize'] = 'Amosar o tamaño';
 $string['showsize_desc'] = 'Presentar o tamaño do ficheiro na páxina do curso?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -194,7 +194,8 @@ $string['registerhostson'] = 'L\'enregistrement de tous les serveurs est actuell
 $string['remotecourses'] = 'Cours distants';
 $string['remotehost'] = 'Serveur distant';
 $string['remotehosts'] = 'Serveurs distants';
-$string['remoteuserinfo'] = 'Utilisateur distant {$a->remotetype}. Profil importé depuis<a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuser'] = 'Utilisateur distant {$a->remotetype}';
+$string['remoteuserinfo'] = 'Profil importé depuis<a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'La mise en réseau requiert l\'extension OpenSSL';
 $string['restore'] = 'Restaurer';
 $string['returnvalue'] = 'Valeur de retour';
@@ -217,6 +218,12 @@ $string['showlocal'] = 'Afficher les utilisateurs locaux';
 $string['showremote'] = 'Afficher les utilisateurs distants';
 $string['ssl_acl_allow'] = 'SSO ACL : permettre l\'utilisateur « {$a->user} » provenant de « {$a->host} »';
 $string['ssl_acl_deny'] = 'SSO ACL : interdire l\'utilisateur « {$a->user} » provenant de « {$a->host} »';
+$string['sslverification'] = 'Vérification SSL';
+$string['sslverification_help'] = 'Ce réglage vous permet de configurer le niveau de sécurité lors de la connexion à un serveur avec HTTPS.
+
+* Aucune : pas de vérification
+* Vérifier seulement le domaine : vérifie le domaine du certificat SSL
+* Vérifier le domaine et le serveur (recommandé) : vérifie le domaine et l\'émetteur du certificat SSL';
 $string['ssoaccesscontrol'] = 'Contrôle d\'accès SSO';
 $string['ssoacldescr'] = 'Cette page vous permet d\'accorder ou de refuser l\'accès à certains utilisateurs de serveurs MNet. Elle est fonctionnelle quand vous offrez des services SSO à des utilisateurs distants. Pour contrôler la capacité de vos utilisateurs <em>locaux</em> d\'accéder à d\'autres serveurs MNet, utilisez le système de rôles pour leur donner la capacité <em>mnetlogintoremote</em>.';
 $string['ssoaclneeds'] = 'Pour que cette fonctionnalité soit active, vous devez activer MNet, ainsi que le plugin d\'authentification MNet.';
@@ -252,6 +259,8 @@ $string['userchangepasswordlink'] = '<br />Vous pourrez changer votre mot de pas
 $string['usernotfullysetup'] = 'Votre compte utilisateur est incomplet. Veuillez <a href="{$a}">retourner chez votre fournisseur</a> et vous assurer que votre profil y est complet. Vous devrez peut-être vous déconnecter et vous reconnecter pour que les modifications prennent effet.';
 $string['usersareonline'] = 'Attention ! {$a} utilisateurs de ce serveur sont actuellement connectés à votre Moodle.';
 $string['validated_by'] = 'Il a été validé par le réseau : <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Vérifier le domaine et le serveur';
+$string['verifyhostonly'] = 'Vérifier seulement le domaine';
 $string['verifysignature-error'] = 'La vérification de signature a échoué. Une erreur est survenue.';
 $string['verifysignature-invalid'] = 'La vérification de signature a échoué. Il semble que votre envoi n\'a pas été signé par vous.';
 $string['version'] = 'version';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,14 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Ajouter page';
+$string['alldashboardswerereset'] = 'Toutes les pages du tableau de bord ont été réinitialisés à leur valeur par défaut.';
+$string['allprofileswerereset'] = 'Toutes les pages du profil ont été réinitialisés à leur valeur par défaut.';
 $string['defaultpage'] = 'Page Ma page par défaut';
 $string['defaultprofilepage'] = 'Page de profil par défaut';
 $string['delpage'] = 'Supprimer page';
 $string['managepages'] = 'Gérer pages';
-$string['mymoodle'] = 'Ma page';
+$string['mymoodle'] = 'Tableau de bord';
 $string['nocourses'] = 'Aucune information de cours à afficher.';
-$string['noguest'] = 'La page « Ma page » n\'est pas disponible pour les visiteurs anonymes';
+$string['noguest'] = 'La page « Tableau de bord » n\'est pas disponible pour les visiteurs anonymes';
 $string['pinblocks'] = 'Configurer les blocs fixes de Ma page';
 $string['pinblocksexplan'] = 'Les réglages des blocs que vous configurez ici seront valables sur la page Ma page de chaque utilisateur, et non modifiables.';
 $string['reseterror'] = 'Une erreur est survenue lors de la réinitialisation de votre page';
+$string['reseteveryonesdashboard'] = 'Réinitialiser le tableau de bord de tous les utilisateurs';
+$string['reseteveryonesprofile'] = 'Réinitialiser le profil de tous les utilisateurs';
 $string['resetpage'] = 'Réinitialiser la page';

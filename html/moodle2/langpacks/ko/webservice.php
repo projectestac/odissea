@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['addrequiredcapability'] = '필요한 능력 부여/해지';
 $string['addservice'] = '새 서비스 추가: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = '"{$a}" 서비스에 기능 추가';
 $string['allusers'] = '모든 사용자';
-$string['amftestclient'] = 'AMF 테스트 클라이언트';
 $string['apiexplorer'] = 'API 탐색기';
 $string['apiexplorernotavalaible'] = '아직 API 탐색기가 없습니다.';
 $string['arguments'] = '인수';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'page', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,3 +51,4 @@ $string['printheading'] = 'Visa sidans namn';
 $string['printheadingexplain'] = 'Visa sidans namn ovanför sidans innehåll';
 $string['printintro'] = 'Visa beskrivning för sida';
 $string['printintroexplain'] = 'Visa beskrivning för sida ovanför innehållet?';
+$string['search:activity'] = 'Sida';

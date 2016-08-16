@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,8 @@ $string['eventgroupcreated'] = 'Gruppe angelegt';
 $string['eventgroupdeleted'] = 'Gruppe gelöscht';
 $string['eventgroupingcreated'] = 'Gruppierung angelegt';
 $string['eventgroupingdeleted'] = 'Gruppierung gelöscht';
+$string['eventgroupinggroupassigned'] = 'Gruppe mit Gruppierung verbunden';
+$string['eventgroupinggroupunassigned'] = 'Gruppe von Gruppierung gelöst';
 $string['eventgroupingupdated'] = 'Gruppierung aktualisiert';
 $string['eventgroupmemberadded'] = 'Gruppenmitglied hinzugefügt';
 $string['eventgroupmemberremoved'] = 'Gruppenmitglied entfernt';
@@ -115,7 +117,7 @@ Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im K
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
 $string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits.';
-$string['groupnotamember'] = 'Sie sind nicht Mitglied dieser Gruppe.';
+$string['groupnotamember'] = 'Sie sind kein Mitglied dieser Gruppe.';
 $string['groups'] = 'Gruppen';
 $string['groupscount'] = 'Gruppen ({$a})';
 $string['groupsettingsheader'] = 'Gruppen';
@@ -137,9 +139,12 @@ $string['importgroups_help'] = 'Gruppen können als Textdatei importiert werden,
 * Notwendiges Feld ist groupname (Gruppenname)
 * Optionale Felder sind description (Beschreibung), enrolmentkey (Gruppenschlüssel), picture (Bild), hidepicture (Bild verbergen)
 * Die Felder müssen mit den englischen Bezeichnungen angegeben sein';
+$string['includeonlyactiveenrol'] = 'Nur aktive Einschreibungen einbeziehen';
+$string['includeonlyactiveenrol_help'] = 'Diese Option legt fest, dass ausschließlich aktiv eingeschriebene Nutzer/innen in Gruppen zusammengefasst werden. Wenn die Option aktiviert ist, werden gesperrte Nutzer/innen keiner Gruppe zugeteilt.';
 $string['javascriptrequired'] = 'Diese Seite benötigt JavaScript.';
 $string['members'] = 'Mitglieder pro Gruppe';
 $string['membersofselectedgroup'] = 'Mitglieder in:';
+$string['mygroups'] = 'Meine Gruppen';
 $string['namingscheme'] = 'Namenschema';
 $string['namingscheme_help'] = 'Das Symbol \'@\' kann benutzt werden, um Gruppen zu erzeugen, die Buchstaben im Namen haben. \'Gruppe @\' erzeugt z.B. Gruppen mit den Namen Gruppe A, Gruppe B, Gruppe C, ...
 
@@ -148,6 +153,7 @@ $string['newgrouping'] = 'Neue Gruppierung';
 $string['newpicture'] = 'Neues Bild';
 $string['newpicture_help'] = 'Wählen Sie ein Bild im Format GIF, JPG oder PNG aus. Das Bild wird als Quadrat beschnitten und in der Größe auf 100x100 Pixel verändert.';
 $string['noallocation'] = 'Keine Zuweisung';
+$string['nogroup'] = 'Keine Gruppe';
 $string['nogrouping'] = 'Keine Gruppierung';
 $string['nogroups'] = 'In diesem Kurs gibt es bisher keine Gruppeneinstellungen';
 $string['nogroupsassigned'] = 'Keine Gruppen zugeordnet';
@@ -155,10 +161,12 @@ $string['nopermissionforcreation'] = 'Die Gruppe "{$a}" konnte nicht erstellt we
 $string['nosmallgroups'] = 'Letzte kleine Gruppe vermeiden';
 $string['notingroup'] = 'Nutzer/innen in Gruppen ignorieren';
 $string['notingrouping'] = '[Nicht in einer Gruppierung]';
+$string['notingrouplist'] = '[In keiner Gruppe]';
 $string['nousersinrole'] = 'In der ausgewählten Rolle gibt es keine passenden Nutzer/innen';
 $string['number'] = 'Anzahl von Gruppen oder Mitgliedern pro Gruppe';
 $string['numgroups'] = 'Anzahl von Gruppen';
 $string['nummembers'] = 'Mitgliedern pro Gruppe';
+$string['othergroups'] = 'Weitere Gruppen';
 $string['overview'] = 'Überblick';
 $string['potentialmembers'] = 'Mögliche Mitglieder: {$a}';
 $string['potentialmembs'] = 'Mögliche Mitglieder';

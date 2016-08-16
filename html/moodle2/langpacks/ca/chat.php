@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'chat', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Teniu un xat nou';
+$string['activityoverview'] = 'Teniu sessions de xat properes';
 $string['ajax'] = 'Versió Ajax';
 $string['autoscroll'] = 'Desplaçament automàtic';
 $string['beep'] = 'bip';
 $string['bubble'] = 'Bombolla';
 $string['cantlogin'] = 'No s\'ha pogut entrar a la sala de xat';
 $string['chat:addinstance'] = 'Afegeix un xat nou';
-$string['chat:chat'] = 'Parlar en un xat';
+$string['chat:chat'] = 'Accedeix a una sala de xat';
 $string['chat:deletelog'] = 'Suprimir registres de xat';
 $string['chat:exportparticipatedsession'] = 'Exporta la sessió del xat en la qual heu intervingut.';
 $string['chat:exportsession'] = 'Exporta qualsevol sessió de xat';
 $string['chatintro'] = 'Descripció';
 $string['chatname'] = 'Nom d\'aquesta sala de xat';
-$string['chat:readlog'] = 'Llegir registres de xat';
+$string['chat:readlog'] = 'Llegeix els registres de xat';
 $string['chatreport'] = 'Sessions de xat';
 $string['chat:talk'] = 'Participar en un xat';
 $string['chattime'] = 'Proper dia i hora de xat';
@@ -64,7 +64,7 @@ $string['entermessage'] = 'Escriviu el vostre missatge';
 $string['errornousers'] = 'No s\'ha pogut trobar cap usuari!';
 $string['eventmessagesent'] = 'S\'ha enviat el missatge';
 $string['eventsessionsviewed'] = 'S\'han visualitzat les sessions';
-$string['explaingeneralconfig'] = 'Aquests paràmetres són efectius <strong>sempre</strong>';
+$string['explaingeneralconfig'] = 'Aquests paràmetres s\'utilitzen <strong>sempre</strong>';
 $string['explainmethoddaemon'] = 'Aquests paràmetres <strong>només</strong> compten si heu seleccionat "Dimoni servidor de chat" en chat_method';
 $string['explainmethodnormal'] = 'Aquests paràmetres <strong>només</strong> compten si heu seleccionat "Mètode normal" en chat_method';
 $string['generalconfig'] = 'Configuració normal';
@@ -108,7 +108,7 @@ $string['normalkeepalive'] = 'Keep-Alive';
 $string['normalstream'] = 'Corrent de dades';
 $string['noscheduledsession'] = 'No hi ha cap sessió programada';
 $string['notallowenter'] = 'No teniu permesa l\'entrada a la sala de xat.';
-$string['notlogged'] = 'No heu iniciat sessió';
+$string['notlogged'] = 'No heu entrat!';
 $string['oldping'] = 'Temps límit de desconnexió';
 $string['page-mod-chat-x'] = 'Qualsevol pàgina del mòdul de xat';
 $string['pastchats'] = 'Sessions de xat anteriors';
@@ -119,10 +119,11 @@ $string['refreshuserlist'] = 'Refresca la llista d\'usuaris';
 $string['removemessages'] = 'Suprimeix tots els missatges';
 $string['repeatdaily'] = 'A la mateixa hora cada dia';
 $string['repeatnone'] = 'No es repeteix - publica només la data i hora especificades';
-$string['repeattimes'] = 'Repeteix sessions';
+$string['repeattimes'] = 'Repeteix/publica els horaris de les sessions';
 $string['repeatweekly'] = 'El mateix dia a la mateixa hora cada setmana';
 $string['saidto'] = 'dit a';
 $string['savemessages'] = 'Desa les sessions anteriors';
+$string['search:activity'] = 'Xat - Informació d\'activitat';
 $string['seesession'] = 'Visualitza aquesta sessió';
 $string['send'] = 'Envia';
 $string['sending'] = 'S\'està enviant';
@@ -131,7 +132,7 @@ $string['serverip'] = 'Adreça IP del servidor';
 $string['servermax'] = 'Nombre màxim d\'usuaris';
 $string['serverport'] = 'Port del servidor';
 $string['sessions'] = 'Sessions de xat';
-$string['sessionstart'] = 'La sessió de xat començarà en: {$a}';
+$string['sessionstart'] = 'La propera sessió de xat començarà en: {$a}';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Tothom pot veure les sessions anteriors';
 $string['studentseereports_help'] = 'Si es configura en No, només els usuaris amb la capacitat mod/chat:readlog poden veure els registres del xat';

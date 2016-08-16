@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_news_items', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_news_items
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['news_items:addinstance'] = 'Добавлять новый блок «Последние новости»';
-$string['news_items:myaddinstance'] = 'Добавлять новый блок «Последние новости» на домашнюю страницу';
-$string['pluginname'] = 'Последние новости';
+$string['news_items:addinstance'] = 'Добавлять новый блок «Последние объявления»';
+$string['news_items:myaddinstance'] = 'Добавлять новый блок «Последние объявления» на страницу «Моя домашняя страница»';
+$string['pluginname'] = 'Последние объявления';

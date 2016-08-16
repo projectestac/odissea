@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cohort', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['description'] = '説明';
 $string['displayedrows'] = '{$a->total} 行中 {$a->displayed} 行が表示されます。';
 $string['duplicateidnumber'] = '同一IDナンバーのコーホートがすでに存在します。';
 $string['editcohort'] = 'コーホートを編集する';
+$string['editcohortidnumber'] = 'コーホートIDを編集する';
+$string['editcohortname'] = 'コーホート名を編集する';
 $string['eventcohortcreated'] = 'コーホートが作成されました。';
 $string['eventcohortdeleted'] = 'コーホートが削除されました。';
 $string['eventcohortmemberadded'] = 'コーホートにユーザが追加されました。';
@@ -63,6 +65,8 @@ $string['memberscount'] = 'コーホート数';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSVファイルのフォーマットに問題があります。カラム名が含まれているか確認してください。';
 $string['namefieldempty'] = 'フィールド名を空白にすることはできません。';
+$string['newidnumberfor'] = 'コーホート {$a} の新しいIDナンバー';
+$string['newnamefor'] = 'コーホート {$a} の新しい名称';
 $string['nocomponent'] = '手動作成';
 $string['potusers'] = '潜在的ユーザ';
 $string['potusersmatching'] = '潜在的な合致ユーザ';

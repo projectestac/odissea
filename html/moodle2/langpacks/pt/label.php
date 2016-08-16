@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,3 +47,4 @@ $string['modulename_link'] = 'mod/label/link';
 $string['modulenameplural'] = 'Separadores';
 $string['pluginadministration'] = 'Administração do Separador';
 $string['pluginname'] = 'Separador';
+$string['search:activity'] = 'Separador';

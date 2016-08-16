@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,14 @@ $string['alwaysshowdefinition'] = 'Permet aux utilisateurs de prévisualiser la 
 $string['backtoediting'] = 'Retour à l\'édition';
 $string['confirmdeletecriterion'] = 'Voulez-vous vraiment supprimer ce critère ?';
 $string['confirmdeletelevel'] = 'Voulez-vous vraiment supprimer ce niveau ?';
+$string['criterion'] = 'Critère {$a}';
 $string['criterionaddlevel'] = 'Ajouter niveau';
 $string['criteriondelete'] = 'Supprimer le critère';
+$string['criterionduplicate'] = 'Critère à double';
 $string['criterionempty'] = 'Cliquer pour ajouter un critère';
 $string['criterionmovedown'] = 'Déplacer vers le bas';
 $string['criterionmoveup'] = 'Déplacer vers le haut';
+$string['criterionremark'] = 'Remarque pour le critère {$a->description} : {$a->remark}';
 $string['definerubric'] = 'Définir grille d\'évaluation';
 $string['description'] = 'Description';
 $string['enableremarks'] = 'Permettre à l\'évaluateur d\'ajouter des remarques textuelles pour chaque critère';
@@ -45,8 +48,11 @@ $string['err_nodescription'] = 'La description du critère doit être renseigné
 $string['err_scoreformat'] = 'Le nombre de points pour chaque niveau doit être un nombre non-négatif';
 $string['err_totalscore'] = 'Le nombre maximal de points possible lors de l\'évaluation au moyen de la grille d\'évaluation doit être plus grand que zéro';
 $string['gradingof'] = 'Évaluation de {$a}';
-$string['leveldelete'] = 'Supprimer le niveau';
+$string['level'] = 'Niveau {$a->definition}, {$a->score} points.';
+$string['leveldefinition'] = 'Définition du niveau {$a}';
+$string['leveldelete'] = 'Supprimer le niveau {$a}';
 $string['levelempty'] = 'Cliquer pour modifier le niveau';
+$string['levelsgroup'] = 'Groupe de niveaux';
 $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La définition de la grille d\'évaluation a été modifiée après que ce participant a été évalué. Le participant ne pourra voir cette grille d\'évaluation avant que vous mettiez à jour la note.';
 $string['pluginname'] = 'Grille d\'évaluation';
@@ -68,6 +74,7 @@ $string['rubricstatus'] = 'Statut actuel de la grille d\'évaluation';
 $string['save'] = 'Enregistrer';
 $string['saverubric'] = 'Enregistrer la grille d\'évaluation et la rendre prête à l\'usage';
 $string['saverubricdraft'] = 'Enregistrer comme brouillon';
+$string['scoreinputforlevel'] = 'Score saisi pour le niveau {$a}';
 $string['scorepostfix'] = '{$a} points';
 $string['showdescriptionstudent'] = 'Afficher la description de la grille d\'évaluation aux participants évalués';
 $string['showdescriptionteacher'] = 'Afficher la description de la grille d\'évaluation durant l\'évaluation';

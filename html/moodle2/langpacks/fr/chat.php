@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'chat', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -122,6 +122,7 @@ $string['repeattimes'] = 'Répéter/publier les horaires des sessions';
 $string['repeatweekly'] = 'Chaque semaine à la même heure';
 $string['saidto'] = 'a dit à';
 $string['savemessages'] = 'Enregistrer les sessions précédentes';
+$string['search:activity'] = 'Chat – information sur l\'activité';
 $string['seesession'] = 'Consulter cette session';
 $string['send'] = 'Envoyer';
 $string['sending'] = 'Envoi';

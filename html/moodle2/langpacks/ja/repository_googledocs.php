@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_googledocs', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = 'クライアントID';
 $string['configplugin'] = 'Google Driveプラグインを設定する';
 $string['googledocs:view'] = 'Google Driveリポジトリを表示する';
-$string['oauth2upgrade_message_content'] = 'Moodle 2.3へのアップグレードの一環として、Google Driveリポジトリプラグインは無効にされました。プラグインを再度有効にするにはクライアントIDおよび秘密鍵を取得するため、ドキュメンテーション「 {$a->docsurl} 」に記述されているようにあなたのサイトをGoogleに登録する必要があります。クライアントIDおよび秘密鍵はすべてのGoogle DriveおよびPicasaプラグイン設定に使用することができます。';
-$string['oauth2upgrade_message_small'] = 'Google OAuth 2.0に記載されている設定が必要なため、このプラグインは無効にされます。';
-$string['oauth2upgrade_message_subject'] = 'Google Driveリポジトリプラグインに関する重要情報';
 $string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環として、あなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインに使用することのできるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = '秘密鍵';

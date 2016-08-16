@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_calendar_upcoming', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_calendar_upcoming
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = '新しい直近イベントブロックを追加する';
-$string['calendar_upcoming:myaddinstance'] = '新しい直近イベントブロックをマイホームに追加する';
+$string['calendar_upcoming:myaddinstance'] = '新しい直近イベントブロックをダッシュボードに追加する';
 $string['pluginname'] = '直近イベント';

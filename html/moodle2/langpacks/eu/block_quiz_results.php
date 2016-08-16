@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_quiz_results', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['config_use_groups'] = 'Ikasleen ordez erakutsi taldeak (galdetegiak tal
 $string['error_emptyquizid'] = 'Bloke honek akatsen bat du: zein galdetegitako emaitzak erakutsi behar lituzkeen aukeratu behar duzu.';
 $string['error_emptyquizrecord'] = 'Akatsen bat dago bloke honetan: aukeratutako galdetegia ez dago datu-basean.';
 $string['error_nogroupsexist'] = 'Akatsen bat dago bloke honetan: talde moduan kalifikazioak ematea aukeratu da, baina ikastaro honek ez du talderik.';
-$string['pluginname'] = 'Galdetegiaren emaitzak';
+$string['pluginname'] = 'Galdetegiaren emaitzak (desgaituta)';
 $string['quiz_results:addinstance'] = 'Gehitu galdetegiaren emaitzak bloke berria';
 $string['worstgrade'] = 'Notarik baxuena:';
 $string['worstgrades'] = '{$a} kalifikazio baxuenak:';

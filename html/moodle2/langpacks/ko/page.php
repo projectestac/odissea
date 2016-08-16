@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'page', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,3 +50,4 @@ $string['popupwidth'] = '팝업창 너비(픽셀)';
 $string['popupwidthexplain'] = '팝업창의 기본 너비를 지정';
 $string['printintro'] = '웹 페이지 설명 표시';
 $string['printintroexplain'] = '내용 상단에 웹페이지에 대한 설명을 표시할 것인가?';
+$string['search:activity'] = '웹페이지';

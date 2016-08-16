@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'error', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,6 +77,7 @@ $string['cannoteditcomment'] = 'Este comentário não é seu para que o possa ed
 $string['cannoteditcommentexpired'] = 'Não pode editar isto. O tempo expirou!';
 $string['cannoteditpostorblog'] = 'Não pode postar ou editar blogues';
 $string['cannoteditsiteform'] = 'Não é possível alterar a disciplina de site por este meio';
+$string['cannotedituserpreferences'] = 'Não é possível editar as preferências deste utilizador';
 $string['cannotedityourprofile'] = 'Não pode editar o seu perfil';
 $string['cannotexecduringupgrade'] = 'Não pode ser executado durante a atualização';
 $string['cannotfindcategory'] = 'Não é possível encontrar a pasta com o ID -  {$a} na base de dados';
@@ -101,7 +102,7 @@ $string['cannotimport'] = 'Erro de importação';
 $string['cannotimportformat'] = 'Desculpe, importar esse formato ainda não está implementado!';
 $string['cannotimportgrade'] = 'Ocorreu um erro na importação de notas';
 $string['cannotinsertgrade'] = 'Não é possível inserir notas sem o ID da disciplina!';
-$string['cannotinsertrate'] = 'Não foi possível inserir uma nova classificação ({$a->id} = {$a->rating})';
+$string['cannotinsertrate'] = 'Não foi possível inserir uma nova avaliação ({$a->id} = {$a->rating})';
 $string['cannotinsertrecord'] = 'Não foi possível inserir o novo registo com o ID {$a}';
 $string['cannotmailconfirm'] = 'Ocorreu um erro no envio do e-mail de confirmação da mudança de senha';
 $string['cannotmanualctrack'] = 'A atividade não prevê acompanhamento da conclusão manual';
@@ -124,6 +125,7 @@ $string['cannotreadfile'] = 'Não é possível ler o ficheiro ({$a})';
 $string['cannotreadtmpfile'] = 'Erro ao ler ficheiro temporário';
 $string['cannotreaduploadfile'] = 'Não foi possível ler o ficheiro submetido';
 $string['cannotremovefrommeta'] = 'Não foi possível apagar a disciplina selecionada desta meta-disciplina!';
+$string['cannotreprocessgrades'] = 'Não foi possível processar novamente as notas para esta atividade: {$a}';
 $string['cannotresetguestpwd'] = 'Não é possível substituir a senha do visitante';
 $string['cannotresetmail'] = 'Ocorreu um erro ao alterar a senha e enviar por e-mail';
 $string['cannotresetthisrole'] = 'Não é possível redefinir este papel';
@@ -231,8 +233,10 @@ $string['errorcreatingfile'] = 'Erro ao criar o ficheiro "{$a}"';
 $string['errorcreatingrole'] = 'Erro ao criar papel';
 $string['errorfetchingrssfeed'] = 'Erro ao procurar por lista RSS';
 $string['erroronline'] = 'Erro na linha {$a}';
+$string['erroroutput'] = 'Erro de envio, vai desativar o redirecionamento automático.';
 $string['errorparsingxml'] = 'Erro ao analisar XML: {$a->errorstring} na linha {$a->errorline}, caráter {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Erro ao processar o ficheiro de arquivo';
+$string['error_question_answers_missing_in_db'] = 'Não foi possível encontrar uma resposta correspondente a "{$a->answer}" na tabela question_answers da base de dados. Ocorreu ao restaurar a questão com o id {$a->filequestionid} do ficheiro de cópia de segurança, que correspondia à questão existente com o id {$a->dbquestionid} na base de dados .';
 $string['errorreadingfile'] = 'Erro na leitura do ficheiro "{$a}"';
 $string['errorsavingrequest'] = 'Ocorreu um erro ao salvar o seu pedido.';
 $string['errorsettinguserpref'] = 'Ocorreu um erro de configuração das preferências de utilizador';
@@ -254,6 +258,7 @@ $string['forumblockingtoomanyposts'] = 'Ultrapassou o limite de envio de mensage
 $string['generalexceptionmessage'] = 'Exceção - {$a}';
 $string['gradecantregrade'] = 'Ocorreu um erro durante o cálculo da nota: {$a}';
 $string['gradepubdisable'] = 'A publicação de notas está desativada';
+$string['gradesneedregrading'] = 'É necessário recalcular as notas da disciplina';
 $string['groupalready'] = 'O utilizador já pertence ao grupo {$a}';
 $string['groupexistforcourse'] = 'Já existe um grupo "{$a}" nesta disciplina';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}: O grupo "{$a->name}" com o número de identificação "{$a->idnumber}" já existe nesta disciplina';
@@ -268,7 +273,7 @@ $string['guestcantaccessprofiles'] = 'Os visitantes não podem aceder aos perfis
 $string['guestnocomment'] = 'Os visitantes não podem inserir comentários';
 $string['guestnoeditprofile'] = 'Os visitantes não podem editar o seu perfil';
 $string['guestnoeditprofileother'] = 'O perfil do visitante não pode ser editado';
-$string['guestnorate'] = 'Os visitantes não podem classificar mensagens';
+$string['guestnorate'] = 'Os visitantes não podem avaliar mensagens';
 $string['guestsarenotallowed'] = 'O utilizador visitante não tem permissão para essa ação';
 $string['hackdetected'] = 'Hack ataque detetado!';
 $string['hashpoolproblem'] = 'Conteúdo incorreto {$a}';
@@ -277,6 +282,7 @@ $string['idnumbertaken'] = 'Este número de ID já está a ser usado';
 $string['idnumbertoolong'] = 'O número de identificação é muito longo';
 $string['importformatnotimplement'] = 'Desculpe, importar esse formato ainda não está implementado!';
 $string['incorrectext'] = 'O ficheiro tem uma extensão incorreta';
+$string['inplaceeditableerror'] = 'Erro ao chamar o processador de atualização';
 $string['installproblem'] = 'Por nome não é possível recuperar de erros desencadeados durante a instalação, pode precisar de criar uma nova base de dados ou usar um prefixo da base de dados diferente se quiser tentar novamente a instalação.';
 $string['internalauthpassworderror'] = 'Falta senha ou senha inválida de autenticação interna';
 $string['invalidaccess'] = 'Esta página não foi acedida da forma correta';
@@ -299,6 +305,7 @@ $string['invalidcomponent'] = 'O nome é inválido';
 $string['invalidconfirmdata'] = 'Informação de confirmação inválida';
 $string['invalidcontext'] = 'Contexto inválido';
 $string['invalidcourse'] = 'Disciplina não válida';
+$string['invalidcourseformat'] = 'Formato da disciplina inválido';
 $string['invalidcourseid'] = 'Está a tentar usar ID de disciplina inválido';
 $string['invalidcourselevel'] = 'Nível de contexto inválido';
 $string['invalidcoursemodule'] = 'O ID do módulo da disciplina é inválido';
@@ -327,7 +334,7 @@ $string['invalidmoduleid'] = 'ID do módulo inválido: {$a}';
 $string['invalidmodulename'] = 'Nome do módulo inválido: {$a}';
 $string['invalidnum'] = 'Valor numérico inválido';
 $string['invalidnumkey'] = '$conditions a matriz não pode conter chaves numéricas, por favor, corriga o código!!';
-$string['invalidoutcome'] = 'Resultado de ID incorreto';
+$string['invalidoutcome'] = 'ID do resultado da aprendizagem incorreto';
 $string['invalidpagesize'] = 'O tamanho da página é inválido';
 $string['invalidpasswordpolicy'] = 'A política de senha é inválida';
 $string['invalidpaymentmethod'] = 'O método de pagamento é inválido: {$a}';
@@ -346,6 +353,7 @@ $string['invalidsourcefield'] = 'O campo do rascunho do ficheiro de origem é in
 $string['invalidstatedetected'] = 'Algo de errado ocorreu: {$a}. Normalmente isso nunca deveria acontecer.';
 $string['invalidurl'] = 'URL inválido';
 $string['invaliduser'] = 'Utilizador inválido';
+$string['invaliduserdata'] = 'Dados inválidos do utilizador: {$a}';
 $string['invaliduserfield'] = 'Campo de utilizador inválido: {$a}';
 $string['invaliduserid'] = 'Id do utilizador inválido';
 $string['invalidusername'] = 'O nome de utilizador contém caracteres inválidos';
@@ -366,6 +374,7 @@ $string['loginasnoenrol'] = 'Não pode realizar nem anular inscrições quando s
 $string['loginasonecourse'] = 'Não pode entrar nesta disciplina.<br /> Tem de terminar a sessão "Entrar como" antes de entrar em qualquer outra disciplina.';
 $string['maxareabytes'] = 'Este ficheiro é maior do que o espaço restante nesta área.';
 $string['maxbytes'] = 'Este ficheiro é maior que o tamanho máximo permitido.';
+$string['maxbytesfile'] = 'O ficheiro {$a->file} é muito grande. Apenas pode carregar ficheiros com um tamanho máximo de {$a->size}.';
 $string['messagingdisable'] = 'A troca de mensagens está desativada neste site';
 $string['mimetexisnotexist'] = 'O seu sistema não está configurado para executar mimeTeX. É necessário descarregar o ficheiro executável adequado para a sua plataforma (PHP, OS). Pode descarregar na página <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a> ou obter o código fonte em <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>. Neste caso, compile-o e coloque o executável na pasta moodle/filter/tex/';
 $string['mimetexnotexecutable'] = 'Mimetex Custom não é executável!';
@@ -422,7 +431,7 @@ $string['nopermissiontohide'] = 'Não tem permissão para esconder!';
 $string['nopermissiontoimportact'] = 'Não possui as permissões necessárias para importar atividades para esta disciplina';
 $string['nopermissiontolock'] = 'Não tem permissão para bloquear!';
 $string['nopermissiontomanagegroup'] = 'Não possui as permissões necessárias para gerir grupos';
-$string['nopermissiontorate'] = 'Não é permitido classificar itens!';
+$string['nopermissiontorate'] = 'Não é permitido avaliar itens!';
 $string['nopermissiontoshow'] = 'Não tem permissão para ver isto!';
 $string['nopermissiontounlock'] = 'Não tem permissão para desbloquear!';
 $string['nopermissiontoupdatecalendar'] = 'Não tem permissão para atualizar o calendário de eventos';
@@ -450,6 +459,7 @@ $string['prefixcannotbeempty'] = '<p> Erro: O prefixo da tabela da base de dados
  <p> O administrador do site deve corrigir esse problema.</p>';
 $string['prefixtoolong'] = '<p>Erro: O prefixo da tabela da base de dados é muito longo ({$a->dbfamily})</p>
 <p>O administrador do site deve corrigir esse problema. O comprimento máximo para prefixos na tabela {$a->dbfamily} é {$a->maxlength} caracteres.</p>';
+$string['privatefilesupload'] = 'O carregamento direto para a área de ficheiros privados do utilizador já não é suportado. Carregue os ficheiros para uma área de rascunho e, em seguida, mova-os ficheiros com core_user::add_user_private_files';
 $string['processingstops'] = 'O processamento terminou aqui. Os restantes registos foram ignorados.';
 $string['protected_cc_not_supported'] = 'Não é permitido Protected cartridges';
 $string['querystringcannotbeempty'] = 'A query string não pode ficar vazia.';
@@ -491,7 +501,7 @@ $string['statsdisable'] = 'As estatísticas não foram ativadas.';
 $string['statsnodata'] = 'Não há dados disponíveis para essa combinação de disciplina e período de tempo';
 $string['storedfilecannotcreatefile'] = 'Não é possível criar ficheiro de pool de ficheiro local, por favor verifique as permissões em dataroot e o espaço em disco disponível.';
 $string['storedfilecannotcreatefiledirs'] = 'Não é possível criar a lista de pastas, por favor verifique as permissões de escrita na pasta de dados';
-$string['storedfilecannotread'] = 'Não é possível ler o ficheiro, o ficheiro não existe ou existem problemas de permissão';
+$string['storedfilecannotread'] = 'Não é possível ler o ficheiro. O ficheiro não existe ou existem problemas de permissão.';
 $string['storedfilenotcreated'] = 'Não é possível criar o ficheiro "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
 $string['storedfileproblem'] = 'Exceção desconhecida nos ficheiros locais ({$a})';
 $string['tagdisabled'] = 'As etiquetas estão desativadas!';

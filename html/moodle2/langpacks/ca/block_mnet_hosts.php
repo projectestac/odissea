@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['error_authmnetneeded'] = 'El connector d\'autenticació MNet cal que es
 $string['error_localusersonly'] = 'El usuaris remots no poden saltar a altres servidors de xarxa MNet des d\'aquest servidor.';
 $string['error_roamcapabilityneeded'] = 'Als usuaris els cal la capacitat \'Anar a una aplicació remota mitjançant MNet\' per veure la llista de servidors de xarxa MNet.';
 $string['mnet_hosts:addinstance'] = 'Afegeix un bloc nou de servidors en xarxa';
-$string['mnet_hosts:myaddinstance'] = 'Afegeix un bloc nou de servidors en xarxa a la pàgina «El meu Moodle»';
+$string['mnet_hosts:myaddinstance'] = 'Afegeix un bloc nou de servidors en xarxa a la pàgina del Tauler';
 $string['pluginname'] = 'Servidors en xarxa';
 $string['server'] = 'Servidor';

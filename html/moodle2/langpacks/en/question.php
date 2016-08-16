@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Current category';
 $string['categorycurrentuse'] = 'Use this category';
 $string['categorydoesnotexist'] = 'This category does not exist';
 $string['categoryinfo'] = 'Category info';
-$string['categorymove'] = 'The category \'{$a->name}\' contains {$a->count} questions (some of them may be old, hidden, questions that are still in use in some existing quizzes). Please choose another category to move them to.';
+$string['categorymove'] = 'The category \'{$a->name}\' contains {$a->count} questions (some of which may be hidden questions or random questions that are still in use in a quiz). Please choose another category to move them to.';
 $string['categorymoveto'] = 'Save in category';
 $string['categorynamecantbeblank'] = 'The category name cannot be blank.';
 $string['changeoptions'] = 'Change options';
@@ -203,7 +203,6 @@ $string['generalfeedback_help'] = 'General feedback is shown to the student afte
 You can use the general feedback to give students a fully worked answer and perhaps a link to more information they can use if they did not understand the questions.';
 $string['getcategoryfromfile'] = 'Get category from file';
 $string['getcontextfromfile'] = 'Get context from file';
-$string['hidden'] = 'Hidden';
 $string['hintn'] = 'Hint {no}';
 $string['hintnoptions'] = 'Hint {no} options';
 $string['hinttext'] = 'Hint text';
@@ -307,8 +306,6 @@ $string['numqas'] = 'No. question attempts';
 $string['numquestions'] = 'No. questions';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} hidden)';
 $string['options'] = 'Options';
-$string['orphanedquestionscategory'] = 'Questions saved from deleted categories';
-$string['orphanedquestionscategoryinfo'] = 'Occasionally, typically due to old software bugs, questions can remain in the database even though the corresponding question category has been deleted. Of course, this should not happen, it has happened in the past on this site. This category has been created automatically, and the orphaned questions moved here so that you can manage them. Note that any images or media files used by these questions have probably been lost.';
 $string['page-question-category'] = 'Question category page';
 $string['page-question-edit'] = 'Question editing page';
 $string['page-question-export'] = 'Question export page';
@@ -402,6 +399,7 @@ $string['submissionoutofsequencefriendlymessage'] = 'You have entered data outsi
 $string['submit'] = 'Submit';
 $string['submitandfinish'] = 'Submit and finish';
 $string['submitted'] = 'Submit: {$a}';
+$string['tagarea_question'] = 'Questions';
 $string['technicalinfo'] = 'Technical information';
 $string['technicalinfo_help'] = 'This technical information is probably only useful for developers working on new question types. It may also be helpful when trying to diagnose problems with questions.';
 $string['technicalinfomaxfraction'] = 'Maximum fraction: {$a}';

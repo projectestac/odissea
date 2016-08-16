@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Свернуть весь список курсов';
 $string['configotherexpanded'] = 'При включенном параметре другие курсы будут развернуты по умолчанию, если это не будет переопределено настройками пользователя.';
 $string['configpreservestates'] = 'При включенном параметре сохраняется выбранное пользователем состояние «свернуто/развернуто» и используется при каждой загрузке.';
 $string['course_overview:addinstance'] = 'Добавлять новый блок «Сводка по курсам»';
-$string['course_overview:myaddinstance'] = 'Добавлять новый блок «Сводка по курсам» на домашнюю страницу';
+$string['course_overview:myaddinstance'] = 'Добавлять новый блок «Сводка по курсам» на страницу «Моя домашняя страница»';
 $string['defaultmaxcourses'] = 'Максимум курсов по умолчанию';
 $string['defaultmaxcoursesdesc'] = 'Максимум курсов, которые могут отображаться в блоке «Сводка по курсам». Если 0, то будут показаны все курсы.';
 $string['expandall'] = 'Развернуть весь список курсов';

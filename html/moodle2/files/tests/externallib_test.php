@@ -111,7 +111,7 @@ class core_files_externallib_testcase extends advanced_testcase {
         $context = context_user::instance($USER->id);
         $contextid = $context->id;
         $component = "backup";
-        $filearea = "private";
+        $filearea = "draft";
         $itemid = 0;
         $filepath = "/";
         $filename = "Simple3.txt";
@@ -126,7 +126,7 @@ class core_files_externallib_testcase extends advanced_testcase {
     }
 
     /*
-     * Make sure only private or draft areas are allowed in  core_files_external::upload().
+     * Make sure only draft areas are allowed in  core_files_external::upload().
      */
     public function test_upload_param_area() {
         global $USER;
@@ -147,35 +147,6 @@ class core_files_externallib_testcase extends advanced_testcase {
         // Make sure the file is created.
         $fileinfo = @core_files_external::upload($contextid, $component, $filearea, $itemid, $filepath, $filename, $filecontent);
         $fileinfo = external_api::clean_returnvalue(core_files_external::upload_returns(), $fileinfo);
-        $browser = get_file_browser();
-        $file = $browser->get_file_info($context, $component, $filearea, $itemid, $filepath, $filename);
-        $this->assertNotEmpty($file);
-    }
-
-    /*
-     * Make sure core_files_external::upload() works without new parameters.
-     */
-    public function test_upload_without_new_param() {
-        global $USER;
-
-        $this->resetAfterTest();
-        $this->setAdminUser();
-        $context = context_user::instance($USER->id);
-        $contextid = $context->id;
-        $component = "user";
-        $filearea = "private";
-        $itemid = 0;
-        $filepath = "/";
-        $filename = "Simple4.txt";
-        $filecontent = base64_encode("Let us create a nice simple file");
-
-        $fileinfo = @core_files_external::upload($contextid, $component, $filearea, $itemid, $filepath, $filename, $filecontent);
-        $fileinfo = external_api::clean_returnvalue(core_files_external::upload_returns(), $fileinfo);
-
-        // Assert debugging called (deprecation warning).
-        $this->assertDebuggingCalled();
-
-        // Make sure the file is created.
         $browser = get_file_browser();
         $file = $browser->get_file_info($context, $component, $filearea, $itemid, $filepath, $filename);
         $this->assertNotEmpty($file);
@@ -249,6 +220,8 @@ class core_files_externallib_testcase extends advanced_testcase {
         // Create a file from the string that we made earlier.
         $file = $fs->create_file_from_string($filerecord, $filecontent);
         $timemodified = $file->get_timemodified();
+        $timecreated = $file->get_timemodified();
+        $filesize = $file->get_filesize();
 
         // Use the web service function to return the information about the file that we just uploaded.
         // The first time is with a valid context ID.
@@ -299,7 +272,12 @@ class core_files_externallib_testcase extends advanced_testcase {
                                         'filename' => 'Simple4.txt',
                                         'url' => 'http://www.example.com/moodle/pluginfile.php/'.$context->id.'/mod_data/content/'.$itemid.'/Simple4.txt',
                                         'isdir' => false,
-                                        'timemodified' => $timemodified);
+                                        'timemodified' => $timemodified,
+                                        'timecreated' => $timecreated,
+                                        'filesize' => $filesize,
+                                        'author' => null,
+                                        'license' => null
+                                        );
         // Make sure that they are the same.
         $this->assertEquals($testdata, $testfilelisting);
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_charmap', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['alefsymbol'] = 'アレフ記号';
 $string['almostequalto'] = 'ほぼ等しい';
 $string['alpha'] = 'alpha';
 $string['alpha_caps'] = 'Alpha';
+$string['amacron'] = 'a - 長音符号';
+$string['amacron_caps'] = 'A - 長音符号';
 $string['ampersand'] = 'アンパサンド';
 $string['angle'] = '角';
 $string['approximatelyequalto'] = 'ほぼ等しい';
@@ -89,6 +91,8 @@ $string['ediaeresis_caps'] = 'E - 分音記号';
 $string['egrave'] = 'e - 重アクセント';
 $string['egrave_caps'] = 'E - 重アクセント';
 $string['elementof'] = '属する';
+$string['emacron'] = 'e - 長音符号';
+$string['emacron_caps'] = 'E - 長音符号';
 $string['emdash'] = 'emダッシュ';
 $string['emspace'] = 'emスペース';
 $string['endash'] = 'enダッシュ';
@@ -121,10 +125,13 @@ $string['idiaeresis'] = 'i - 分音記号';
 $string['idiaeresis_caps'] = 'I - 分音記号';
 $string['igrave'] = 'i - 重アクセント';
 $string['igrave_caps'] = 'I - 重アクセント';
+$string['imacron'] = 'i - 長音符号';
+$string['imacron_caps'] = 'I - 長音符号';
 $string['imaginarypart'] = '虚数部';
 $string['infinity'] = '無制限';
 $string['insertcharacter'] = '文字を挿入する';
 $string['integral'] = '積分';
+$string['interrobang'] = 'インテロバング';
 $string['intersection'] = '共通集合';
 $string['invertedexclamationmark'] = '逆感嘆符';
 $string['iota'] = 'iota';
@@ -181,6 +188,8 @@ $string['odiaeresis'] = 'o - 分音記号';
 $string['odiaeresis_caps'] = 'O - 分音記号';
 $string['ograve'] = 'o - 重アクセント';
 $string['ograve_caps'] = 'O - 重アクセント';
+$string['omacron'] = 'o - 長音符号';
+$string['omacron_caps'] = 'O - 長音符号';
 $string['omega'] = 'omega';
 $string['omega_caps'] = 'Omega';
 $string['omicron'] = 'omicron';
@@ -261,6 +270,8 @@ $string['udiaeresis'] = 'u - 分音記号';
 $string['udiaeresis_caps'] = 'U - 分音記号';
 $string['ugrave'] = 'u - 重アクセント';
 $string['ugrave_caps'] = 'U - 重アクセント';
+$string['umacron'] = 'u - 長音符号';
+$string['umacron_caps'] = 'U - 長音符号';
 $string['union'] = '合併集合';
 $string['upsilon'] = 'upsilon';
 $string['upsilon_caps'] = 'Upsilon';

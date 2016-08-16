@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_weeks', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = '本周';
+$string['deletesection'] = '删除周次';
+$string['editsection'] = '编辑周次';
 $string['hidefromothers'] = '隐藏星期';
 $string['page-course-view-weeks'] = '使用星期格式的课程主页';
 $string['page-course-view-weeks-x'] = '使用星期格式的课程页面';

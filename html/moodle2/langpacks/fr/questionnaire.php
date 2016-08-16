@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'questionnaire', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ Les étudiants ne pourront pas répondre au questionnaire après cette date. Si 
 $string['closeson'] = 'Ce questionnaire est disponible jusqu\'au {$a}';
 $string['completionsubmit'] = 'L\'étudiant doit soumettre ce questionnaire pour compléter l\'activité';
 $string['confalts'] = '- OU - <br />Page de confirmation';
+$string['configmaxsections'] = 'Sections maximales de feedback';
 $string['configusergraph'] = 'Afficher les graphiques pour les « Tests de personnalité »';
 $string['configusergraphlong'] = 'Utiliser la bibliothèque <a href="http://www.rgraph.net/">Rgraph</a> pour afficher les graphiques illustrant le feedback des tests de personnalité.';
 $string['confirmdelallresp'] = 'Voulez-vous vraiment supprimer TOUTES les réponses à ce questionnaire&nbsp;?';
@@ -101,6 +102,7 @@ $string['createcontent'] = 'Définir un nouveau contenu';
 $string['createcontent_help'] = 'Choisir l\'un des boutons radio de la liste. Défaut : "Créer un nouveau questionnaire".';
 $string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Créer un nouveau questionnaire';
+$string['crontask'] = 'Nettoyage du questionnaire';
 $string['date'] = 'Date';
 $string['dateformatting'] = '<em>Utilisez le format jour-mois-année, par exemple pour le 14 mars 1945:&nbsp; </em><span class = monospace>14-3-1945</monospace>';
 $string['date_help'] = 'Utilisez ce type de question si vous voulez que la réponse soit donnée sous forme d\'une date correctement formatée.';
@@ -223,11 +225,15 @@ $string['length'] = 'Longueur';
 $string['managequestions'] = 'Gérer les questions';
 $string['managequestions_help'] = 'Dans la section "Gérer les questions" de la page "Éditer les questions" vous pouvez effectuer toutes les opérations utiles sur les questions déjà créées.';
 $string['maxdigitsallowed'] = 'Max. chiffres autorisés';
-$string['maxdigitsallowed_help'] = 'Utilisez Max. chiffres autorisés pour limiter le nombre de chiffres entrés pour une question de type numérique.
-
-Utilisez Nb de chiffres après la virgule pour forcer un certain nombre de chiffres après la virgule.';
+$string['maxdigitsallowed_help'] = 'Utilisez **Max. chiffres autorisés** pour limiter le nombre de chiffres entrés pour une question de type numérique. Remarque : la virgule pour la décimale compte pour 1 caractère !';
 $string['maxforcedresponses'] = 'Max. cases à cocher';
+$string['maxforcedresponses_help'] = 'Utilisez ces paramètres pour forcer le répondant à cocher un minimum et un maximum de cases.
+Pour indiquer un nombre exact de cases à cocher, définissez **Min.** et **Max.** avec la même valeur. Si seulement une valeur minimale OU maximale est souhaitée, il suffit de laisser l\'autre valeur à sa valeur par défaut **0**.
+Si vous définissez **Min.** Ou **Max.** à des valeurs autres que par défaut **0**, un message d\'avertissement sera affiché si le répondant ne se conforme pas à votre demande. Évidemment, vous devez faire preuve de clarté, soit dans les instructions générales de votre questionnaire ou dans le texte des questions.';
 $string['maxtextlength'] = 'Longueur texte max.';
+$string['maxtextlength_help'] = 'Pour la question de type Texte court, définissez la longueur de la zone de saisie et le nombre maximal de caractères possibles par le répondant.
+
+Valeurs par défaut : 20 caractères pour la longueur de la boîte [Longueur de la boîte de texte] et 25 caractères pour le texte effectivement saisi par le répondant [Longueur texte max.].';
 $string['messageprovider:message'] = 'Rappel de réponse au questionnaire';
 $string['minforcedresponses'] = 'Min. cases à cocher';
 $string['minforcedresponses_help'] = 'Utilisez ces paramètres si vous voulez forcer les étudiants à cocher un minimum de **Min. cases à cocher** ou un maximum de **Max. cases à cocher**.
@@ -279,6 +285,7 @@ $string['num'] = 'n°';
 $string['numattemptsmade'] = 'Ce questionnaire a été soumis {$a} fois.';
 $string['numberfloat'] = 'Le nombre que vous avez tapé<strong>{$a->number}</strong> a été reformaté/arrondi avec une précision de <strong>{$a->precision}</strong> chiffres après la virgule.';
 $string['numberofdecimaldigits'] = 'Nb de chiffres après la virgule';
+$string['numberofdecimaldigits_help'] = 'Utilisez **Nb de décimales** pour spécifier le format de la valeur moyenne comptée et affichée sur la page Rapport du questionnaire.';
 $string['numberscaleitems'] = 'Nb d\'items sur l\'échelle';
 $string['numberscaleitems_help'] = 'Nb d\'items sur l\'échelle indique le nombre d\'items qui seront affichés sur votre échelle horizontale. Une valeur comprise entre 3 et 5 est habituelle. La valeur par défaut est de 5.';
 $string['numeric'] = 'Numérique';

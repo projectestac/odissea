@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'url', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,7 @@ $string['popupwidthexplain'] = 'Anger standardbredden på popup-fönster';
 $string['printintro'] = 'Visa beskrivning för URL';
 $string['printintroexplain'] = 'Visa URL beskrivning nedanför innehållet? Vissa visningstyper kanske inte visas beskrivningen även om detta är valt.';
 $string['rolesinparams'] = 'Ta med namn på roller i parametrar';
+$string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL till server';
 $string['url:addinstance'] = 'Lägg till en ny URL/webbadress';
 $string['url:view'] = 'Visa URL';

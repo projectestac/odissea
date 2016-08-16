@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Редактировать новостные лен
 $string['editrssblock'] = 'Редактировать заголовок блока RSS-ленты';
 $string['enableautodiscovery'] = 'Включить автоматическое обнаружение лент?';
 $string['enableautodiscovery_help'] = 'При включенном параметре ленты на веб-страницах будут найдены автоматически. Например, если вводится http://docs.moodle.org, то будет найдено http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
-$string['errorloadingfeed'] = 'Ошибка при загрузке этой новостной ленты ({$a})';
 $string['feed'] = 'Лента';
 $string['feedadded'] = 'Новостная лента добавлена';
 $string['feeddeleted'] = 'Новостная лента удалена';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'Создавать личные RSS-
 $string['rss_client:createsharedfeeds'] = 'Создавать общие RSS-ленты';
 $string['rss_client:manageanyfeeds'] = 'Управлять любыми RSS-лентами';
 $string['rss_client:manageownfeeds'] = 'Управлять своими RSS-лентами';
-$string['rss_client:myaddinstance'] = 'Добавлять новый блок «Внешние RSS-ленты» на домашнюю страницу';
+$string['rss_client:myaddinstance'] = 'Добавлять новый блок «Внешние RSS-ленты» на страницу «Моя домашняя страница»';
 $string['seeallfeeds'] = 'Смотреть все ленты';
 $string['sharedfeed'] = 'Общая лента';
 $string['shownumentrieslabel'] = 'Максимальное количество записей, отображаемых для блока.';

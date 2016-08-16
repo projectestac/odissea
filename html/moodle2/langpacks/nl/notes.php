@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'notes', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['eventnoteupdated'] = 'Notitie aangepast';
 $string['groupaddnewnote'] = 'Nieuwe algemene notitie toevoegen';
 $string['invalidid'] = 'Ongeldige notitie ID opgegeven';
 $string['invaliduserid'] = 'Ongeldig gebruikersIS: {$a}';
+$string['myprofileownnotes'] = 'Mijn notities';
 $string['nocontent'] = 'Een notitie kan niet leeg zijn';
 $string['nonotes'] = 'Er zijn nog geen notities van dit type';
 $string['nopermissiontodelete'] = 'Je mag deze notitie niet verwijderen';

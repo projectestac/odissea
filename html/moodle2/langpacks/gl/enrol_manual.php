@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['expirymessageenrollersubject'] = 'Notificación de expiración da matri
 $string['manual:config'] = 'Configurar instancias de matriculación manual';
 $string['manual:enrol'] = 'Matricular usuarios';
 $string['manual:manage'] = 'Xestionar matriculacións de usuarios';
+$string['manualpluginnotinstalled'] = 'O engadido «Manual» aínda non foi instalado';
 $string['manual:unenrol'] = 'Desmatricular usuarios do curso';
 $string['manual:unenrolself'] = 'Desmatricularse do curso';
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da matriculación';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactive', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qbehaviour_interactive', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   qbehaviour_interactive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notcomplete'] = '未完了';
 $string['pluginname'] = '複数受験インタラクティブ';
 $string['triesremaining'] = '残り受験数: {$a}';
 $string['tryagain'] = '再受験';

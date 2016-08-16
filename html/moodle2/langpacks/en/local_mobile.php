@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'local_mobile', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,8 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowpermissions'] = 'Grant permissions to the authenticated user role';
 $string['allowpermissionsdescription'] = 'Edit the Authenticated user role and allow the capability moodle/webservice:createtoken';
-$string['cannotcreatetoken'] = 'Automatically token generation is not available to site administrators (they must create a token manually in the site)';
+$string['cannotcreatetoken'] = 'Automatic token generation is not available to site administrators (they must create a token manually in the site)';
 $string['checkpluginconfiguration'] = 'Check plugin configuration';
+$string['clickheretolaunchtheapp'] = 'Please, click here if the app does not open automatically';
 $string['enableadditionalservice'] = 'Enable the Moodle Mobile additional features service';
 $string['enableadditionalservicedescription'] = 'This service must be enabled.';
 $string['local_mobiledescription'] = 'Plugin that extends the Mobile service features';
@@ -40,8 +41,5 @@ $string['local_mobileurlscheme_key'] = 'URL scheme';
 $string['loginintheapp'] = 'Via the app';
 $string['logininthebrowser'] = 'Via a browser window (for SSO plugins)';
 $string['loginintheinappbrowser'] = 'Via an embedded browser (for SSO plugins)';
-$string['mod_scorm_protectpackagedownloads'] = 'Protect package downloads';
-$string['mod_scorm_protectpackagedownloads_desc'] = 'If enabled, SCORM packages can be downloaded only if the user has the course:manageactivities capability. If disabled, SCORM packages can always be downloaded (by mobile or other means).';
-$string['mod_scorm_settings'] = 'SCORM module specific settings';
 $string['pluginname'] = 'Moodle Mobile additional features';
 $string['pluginnotenabledorconfigured'] = 'The Moodle Mobile local plugin must be enabled and configured in order to launch the app';

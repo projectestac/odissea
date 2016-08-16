@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = 'Afegeix un nou capítol';
 $string['book:addinstance'] = 'Afegeix un llibre nou';
 $string['book:edit'] = 'Edita els capítols';
-$string['book:read'] = 'Llegir el llibre';
+$string['book:read'] = 'Mostra el llibre';
 $string['book:viewhiddenchapters'] = 'Mostra capítols amagats';
 $string['chapters'] = 'Capítols';
 $string['chaptertitle'] = 'Títol del capítol';
@@ -38,12 +38,15 @@ $string['content'] = 'Contingut';
 $string['customtitles'] = 'Títols personalitzats';
 $string['customtitles_help'] = 'Normalment el títol del capítol es mostra automàticament a l\'índex i com a capçalera damunt del contingut.
 Si la casella de selecció dels títols està marcada, el títol del capítol NO es mostrarà com a capçalera damunt del contingut. Es pot introduir un títol diferent com a part del contingut (potser més llarg que el títol del capítol).';
+$string['deletechapter'] = 'Elimina el capítol «{$a}»';
+$string['editchapter'] = 'Edita el capítol «{$a}»';
 $string['editingchapter'] = 'S\'està editant el capítol';
-$string['errorchapter'] = 'S\'ha produït un error en llegir el capítol.';
+$string['errorchapter'] = 'S\'ha produït un error en llegir el capítol del llibre.';
 $string['eventchaptercreated'] = 'S\'ha creat el capítol.';
 $string['eventchapterdeleted'] = 'S\'ha suprimit el capítol.';
 $string['eventchapterupdated'] = 'S\'ha actualitzat el capítol.';
 $string['eventchapterviewed'] = 'S\'ha visualitzat el capítol.';
+$string['hidechapter'] = 'Amaga el capítol «{$a}»';
 $string['modulename'] = 'Llibre';
 $string['modulename_help'] = 'El mòdul de llibre permet al professorat crear un recurs de diverses pàgines en un format de llibre, amb capítols i subcapítols. Els llibres poden contenir fitxers multimèdia, així com text, i són útils per a mostrar llargs passatges d\'informació que es poden dividir en seccions.
 
@@ -52,9 +55,19 @@ Un llibre pot utilitzar-se
 * Com a manual departamental del personal
 * Com a portafolis de presentació del treball de l\'estudiantat';
 $string['modulenameplural'] = 'Llibres';
+$string['movechapterdown'] = 'Mou avall el capítol «{$a}»';
+$string['movechapterup'] = 'Mou amunt el capítol «{$a}»';
 $string['navexit'] = 'Surt del llibre';
+$string['navimages'] = 'Imatges';
 $string['navnext'] = 'Següent';
+$string['navoptions'] = 'Opcions disponibles per als enllaços navegables';
+$string['navoptions_desc'] = 'Opcions per mostrar la navegació a les pàgines del llibre';
 $string['navprev'] = 'Prèvi';
+$string['navstyle'] = 'Estil de navegació';
+$string['navstyle_help'] = '*Imatges - Les icones s\'usen en navegació
+*Text - Els títols dels capítols s\'usen en navegació';
+$string['navtext'] = 'Text';
+$string['navtoc'] = 'Sols l\'índex';
 $string['nocontent'] = 'No s\'ha afegit encara cap contingut al llibre.';
 $string['numbering'] = 'Format dels capítols';
 $string['numbering0'] = 'Cap';
@@ -65,11 +78,14 @@ $string['numbering_help'] = '* Cap - els títols dels capítols i subcapítols n
 * Nombres - els títols dels capítols i subcapítols es numeren (1, 1.1, 1.2, 2, ...)
 * Pics - els subcapítols es sagnen i es mostren amb pics en la taula de continguts
 * Sagnat - els subcapítols es sagnen en la taula de continguts';
-$string['numberingoptions'] = 'Opcions de numeració disponibles';
+$string['numberingoptions'] = 'Opcions disponibles per a la formatació de capítols';
 $string['numberingoptions_desc'] = 'Seleccioneu les opcions de numeració que voleu tenir disponibles en crear nous llibres.';
 $string['page-mod-book-x'] = 'Qualsevol pàgina del llibre';
 $string['pluginadministration'] = 'Administració del llibre';
 $string['pluginname'] = 'Llibre';
+$string['search:activity'] = 'Llibre - Informació del recurs';
+$string['search:chapter'] = 'Llibre - Capítols';
+$string['showchapter'] = 'Mostra el capítol «{$a}»';
 $string['subchapter'] = 'Subcapítol';
 $string['subchapternotice'] = '(Disponible només quan s\'ha creat el primer capítol)';
 $string['subplugintype_booktool'] = 'Eina del llibre';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshop', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -158,6 +158,8 @@ $string['gradeitemsubmission'] = '{$a->workshopname} (bidalketa)';
 $string['gradeover'] = 'Indargabetu kalifikazioa bidalketarako';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Tailerraren kalifikazio-txostena';
+$string['gradetopassgrading'] = 'Gainditzeko ebaluazioaren kalifikazioa';
+$string['gradetopasssubmission'] = 'Gainditzeko bidalketaren kalifikazioa';
 $string['gradinggrade'] = 'Ebaluazioaren kalifikazioa';
 $string['gradinggradecalculated'] = 'Kalkulatutako kalifikazioa ebaluaziorako';
 $string['gradinggrade_help'] = 'Ezarpen honek bidalketa baten ebaluazioan lor daitekeen gehienezko kalifikazioa zehazten du.';
@@ -192,6 +194,7 @@ $string['nogradeyet'] = 'Ez da oraindik kalifikatu';
 $string['nosubmissionfound'] = 'Ez da erabiltzaile honen bidalketarik aurkitu';
 $string['nosubmissions'] = 'Oraindik ez dago bidalketarik tailer honetan';
 $string['notassessed'] = 'Ebaluatu gabea';
+$string['nothingfound'] = 'Ez dago erakusteko ezer';
 $string['nothingtoreview'] = 'Ez dago berrikusteko ezer';
 $string['notoverridden'] = 'Baliogabetu gabe';
 $string['noworkshops'] = 'Ez dago tailerrik ikastaro honetan';
@@ -236,6 +239,7 @@ $string['saveandclose'] = 'Gorde eta itxi';
 $string['saveandcontinue'] = 'Gorde eta jarraitu editatzen';
 $string['saveandpreview'] = 'Gorde eta aurreikusi';
 $string['saveandshownext'] = 'Gorde eta erakutsi hurrengoa';
+$string['search:activity'] = 'Tailerra - jardueraren informazioa';
 $string['selfassessmentdisabled'] = 'Auto-ebaluazioa desgaituta';
 $string['showingperpage'] = '{$a} elementu erakusten orriko';
 $string['showingperpagechange'] = 'Aldatu...';
@@ -265,11 +269,14 @@ Aukera hau gaituz gero, esleipen automatikoa konfiguratzea gomendatzen da. Bidal
 $string['submissiongrade'] = 'Bidalketaren kalifikazioa';
 $string['submissiongrade_help'] = 'Ezarpen honek bidalitako lanetan lor daitekeen gehienezko kalifikazioa zehazten du.';
 $string['submissiongradeof'] = 'Bidalketaren kalifikazioa ({$a}(e)tik)';
+$string['submissionlastmodified'] = 'Azken aldaketa';
 $string['submissionsettings'] = 'Bidalketaren ezarpenak';
+$string['submissionsreport'] = 'Tailerraren bidalketa-txostena';
 $string['submissionstart'] = 'Bidalketetarako lehen eguna';
 $string['submissionstartdatetime'] = 'Bidalketetarako lehen eguna {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (bidalketetarako lehen eguna)';
 $string['submissiontitle'] = 'Izenburua';
+$string['submittednotsubmitted'] = 'Bidalita ({$a->submitted}) / bidali gabe ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Bidalketak esleitzeko metodoa';
 $string['subplugintype_workshopallocation_plural'] = 'Bidalketak esleitzeko metodoak';
 $string['subplugintype_workshopeval'] = 'Ebaluazioa kalifikatzeko metodoa';

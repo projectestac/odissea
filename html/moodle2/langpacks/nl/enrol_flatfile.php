@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_flatfile', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['expiredaction_help'] = 'Kies een actie die moet gebeuren wanneer de aan
 $string['filelockedmail'] = 'Het tekstbestand dat je gebruikt voor bestandsgebaseerde inschrijvingen ({$a}) kan niet verwijderd worden door het cron-proces. Dit is gewoonlijk omdat de rechten op het bestand verkeerd ingesteld zijn. Zet aub de rechten zo dat Moodle het bestand kan verwijderen, anders wordt dat herhaaldelijk verwerkt.';
 $string['filelockedmailsubject'] = 'Belangrijke fout: aanmeldingsbestand';
 $string['flatfile:manage'] = 'Beheer aanmelding van gebruikers manueel';
+$string['flatfilesync'] = 'Synchronisatie aanmelding tekstbestand';
 $string['flatfile:unenrol'] = 'Gebruikers manueel uit de cursus halen';
 $string['location'] = 'Bestandslokatie';
 $string['location_desc'] = 'Geef het volledige pad voor het aanmeldingsbestand. Dit bestand wordt automatisch verwijderd nadat het verwerkt is.';

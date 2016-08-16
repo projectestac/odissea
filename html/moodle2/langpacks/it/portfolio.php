@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,7 +87,6 @@ $string['format_richhtml'] = 'HTML con allegati';
 $string['format_spreadsheet'] = 'Foglio elettronico';
 $string['format_text'] = 'Testo';
 $string['format_video'] = 'Video';
-$string['hidden'] = 'Nascosto';
 $string['highdbsizethreshold'] = 'Trasferimento db lungo';
 $string['highdbsizethresholddesc'] = 'Numero di record di database sopra il quale il trasferimento sarà considerato lungo';
 $string['highfilesizethreshold'] = 'Trasferimento file lungo';
@@ -113,6 +112,8 @@ $string['instanceismisconfigured'] = 'L\'istanza di portfolio non è configurata
 $string['instancenotdelete'] = 'L\'eliminazione del portfolio non è andata a buon fine';
 $string['instancenotsaved'] = 'Non è stato possibile salvare il portfolio';
 $string['instancesaved'] = 'Portfolio salvato correttamente';
+$string['intro'] = 'I contenuti che hai creato, come consegne di compiti, interventi nei forum e nel blog, possono essere esportati in un portfolio oppure scaricati.<br>
+I portfolio che non desideri utilizzare per l\'esportazione possono essere nascosti in modo da non comparire tra le opzioni di esportazione.';
 $string['invalidaddformat'] = 'E\' stato passato un Add Format non valido a portfolio_add_button. ({$a}) dovrebbe essere un PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Non è stato possibile trovare la proprietà ({$a}) del portfolio_button';
 $string['invalidconfigproperty'] = 'Non è stato possibile trovare la proprietà della configurazione ({$a->property} di {$a->class})';
@@ -177,6 +178,7 @@ $string['save'] = 'Salva';
 $string['selectedformat'] = 'Formati di esportazione selezionati';
 $string['selectedwait'] = 'Impostato per l\'attesa?';
 $string['selectplugin'] = 'Scegli dove esportare';
+$string['showhide'] = 'Visualizza / Nascondi';
 $string['singleinstancenomultiallowed'] = 'E\' disponibile solo una singola istanza di portfolio plugin, non supporta esportazioni multiple nella stessa sessione ed è già attiva una esportazione che fa uso di questo plugin!';
 $string['somepluginsdisabled'] = 'Alcuni portfolio plugin sono stati disabilitati in quanto non configurati correttamente oppure perché dipendono dal altri elementi, in particolare:';
 $string['sure'] = 'Sei sicuro di voler eliminare \'{$a}\'? Non puoi tornare indietro.';

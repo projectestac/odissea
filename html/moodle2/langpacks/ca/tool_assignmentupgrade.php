@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['listnotupgraded'] = 'Llista de tasques que no han sigut actualitzades d
 $string['listnotupgraded_desc'] = 'Podeu actualitzar tasques de forma individual des d\'aquí';
 $string['noassignmentsselected'] = 'No hi ha tasques seleccionades';
 $string['noassignmentstoupgrade'] = 'No hi ha tasques que calgui actualitzar';
+$string['notsupported'] = '';
 $string['notupgradedintro'] = 'Aquesta pàgina enumera les tasques creades amb una versió de Moodle antiga que no han estat actualitzades de versió al nou mòdul de tasques a Moodle 2.3. No totes les tasques es poden actualitzar; si s\'han creat amb un subtipus personalitzat, llavors cal que aquest subtipus s\'actualitzi de versió al nou format de connector de tasques per completar l\'actualització de versió.';
 $string['notupgradedtitle'] = 'Tasques no actualitzades de versió';
 $string['pluginname'] = 'Ajuda en l\'actualització de versió de tasques';

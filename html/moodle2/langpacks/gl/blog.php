@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -111,6 +111,7 @@ $string['invalidgroupid'] = 'ID de grupo incorrecto';
 $string['invalidurl'] = 'Non é posíbel acceder ao URL';
 $string['linktooriginalentry'] = 'Ligazón ao artigo do blog orixinal';
 $string['maxexternalblogsperuser'] = 'Número máximo de blogs externos por usuario';
+$string['myprofileuserblogs'] = 'Ver todos os artigos do blog';
 $string['name'] = 'Nome';
 $string['name_help'] = 'Escriba un nome descritivo do seu blog externo. (Se no fornece ningún nome, empregarase o título do seu blog externo).';
 $string['noentriesyet'] = 'Aquí non hai ningún artigo visíbel';
@@ -151,6 +152,7 @@ $string['searchterm'] = 'Buscar: {$a}';
 $string['settingsupdatederror'] = 'Produciuse un erro: non foi posíbel actualizar o axuste de preferencias do blog';
 $string['siteblog'] = 'Blog do sitio: {$a}';
 $string['siteblogdisable'] = 'O blog do sitio non está activado';
+$string['siteblogheading'] = 'Blog do sitio';
 $string['siteblogs'] = 'Todos os usuarios do sitio poden ver todos os artigos do blog';
 $string['tagdatelastused'] = 'Última data empregada na etiqueta';
 $string['tagparam'] = 'Etiqueta: {$a}';

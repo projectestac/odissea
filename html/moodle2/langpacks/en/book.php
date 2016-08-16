@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,12 +39,15 @@ $string['customtitles'] = 'Custom titles';
 $string['customtitles_help'] = 'Normally the chapter title is displayed in the table of contents (TOC) AND as a heading above the content.
 
 If the custom titles checkbox is ticked, the chapter title is NOT displayed as a heading above the content. A different title (perhaps longer than the chapter title) may be entered as part of the content.';
+$string['deletechapter'] = 'Delete chapter "{$a}"';
+$string['editchapter'] = 'Edit chapter "{$a}"';
 $string['editingchapter'] = 'Editing chapter';
 $string['errorchapter'] = 'Error reading chapter of book.';
 $string['eventchaptercreated'] = 'Chapter created';
 $string['eventchapterdeleted'] = 'Chapter deleted';
 $string['eventchapterupdated'] = 'Chapter updated';
 $string['eventchapterviewed'] = 'Chapter viewed';
+$string['hidechapter'] = 'Hide chapter "{$a}"';
 $string['modulename'] = 'Book';
 $string['modulename_help'] = 'The book module enables a teacher to create a multi-page resource in a book-like format, with chapters and subchapters. Books can contain media files as well as text and are useful for displaying lengthy passages of information which can be broken down into sections.
 
@@ -55,9 +58,19 @@ A book may be used
 * As a showcase portfolio of student work';
 $string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Books';
+$string['movechapterdown'] = 'Move chapter down "{$a}"';
+$string['movechapterup'] = 'Move chapter up "{$a}"';
 $string['navexit'] = 'Exit book';
+$string['navimages'] = 'Images';
 $string['navnext'] = 'Next';
+$string['navoptions'] = 'Available options for navigational links';
+$string['navoptions_desc'] = 'Options for displaying navigation on the book pages';
 $string['navprev'] = 'Previous';
+$string['navstyle'] = 'Style of navigation';
+$string['navstyle_help'] = '* Images - Icons are used for navigation
+* Text - Chapter titles are used for navigation';
+$string['navtext'] = 'Text';
+$string['navtoc'] = 'TOC Only';
 $string['nocontent'] = 'No content has been added to this book yet.';
 $string['numbering'] = 'Chapter formatting';
 $string['numbering0'] = 'None';
@@ -73,6 +86,9 @@ $string['numberingoptions_desc'] = 'Options for displaying chapters and subchapt
 $string['page-mod-book-x'] = 'Any book module page';
 $string['pluginadministration'] = 'Book administration';
 $string['pluginname'] = 'Book';
+$string['search:activity'] = 'Book - resource information';
+$string['search:chapter'] = 'Book - chapters';
+$string['showchapter'] = 'Show chapter "{$a}"';
 $string['subchapter'] = 'Subchapter';
 $string['subchapternotice'] = '(Only available once the first chapter has been created)';
 $string['subplugintype_booktool'] = 'Book tool';

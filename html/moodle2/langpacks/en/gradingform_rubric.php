@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,14 @@ $string['alwaysshowdefinition'] = 'Allow users to preview rubric used in the mod
 $string['backtoediting'] = 'Back to editing';
 $string['confirmdeletecriterion'] = 'Are you sure you want to delete this criterion?';
 $string['confirmdeletelevel'] = 'Are you sure you want to delete this level?';
+$string['criterion'] = 'Criterion {$a}';
 $string['criterionaddlevel'] = 'Add level';
 $string['criteriondelete'] = 'Delete criterion';
+$string['criterionduplicate'] = 'Duplicate criterion';
 $string['criterionempty'] = 'Click to edit criterion';
 $string['criterionmovedown'] = 'Move down';
 $string['criterionmoveup'] = 'Move up';
+$string['criterionremark'] = 'Remark for criterion {$a->description}: {$a->remark}';
 $string['definerubric'] = 'Define rubric';
 $string['description'] = 'Description';
 $string['enableremarks'] = 'Allow grader to add text remarks for each criterion';
@@ -45,8 +48,11 @@ $string['err_nodescription'] = 'Criterion description can not be empty';
 $string['err_scoreformat'] = 'Number of points for each level must be a valid non-negative number';
 $string['err_totalscore'] = 'Maximum number of points possible when graded by the rubric must be more than zero';
 $string['gradingof'] = '{$a} grading';
-$string['leveldelete'] = 'Delete level';
+$string['level'] = 'Level {$a->definition}, {$a->score} points.';
+$string['leveldefinition'] = 'Level {$a} definition';
+$string['leveldelete'] = 'Delete level {$a}';
 $string['levelempty'] = 'Click to edit level';
+$string['levelsgroup'] = 'Levels group';
 $string['name'] = 'Name';
 $string['needregrademessage'] = 'The rubric definition was changed after this student had been graded. The student can not see this rubric until you check the rubric and update the grade.';
 $string['pluginname'] = 'Rubric';
@@ -68,6 +74,7 @@ $string['rubricstatus'] = 'Current rubric status';
 $string['save'] = 'Save';
 $string['saverubric'] = 'Save rubric and make it ready';
 $string['saverubricdraft'] = 'Save as draft';
+$string['scoreinputforlevel'] = 'Score input for level {$a}';
 $string['scorepostfix'] = '{$a}points';
 $string['showdescriptionstudent'] = 'Display rubric description to those being graded';
 $string['showdescriptionteacher'] = 'Display rubric description during evaluation';

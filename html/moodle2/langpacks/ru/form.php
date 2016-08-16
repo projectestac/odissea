@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'form', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['month'] = 'Месяц';
 $string['mustbeoverriden'] = 'Аннотация form_definition() в классе {$a} должна быть отменена; пожалуйста, исправьте код.';
 $string['nomethodforaddinghelpbutton'] = 'Отсутствует метод добавления кнопки вызова справки для элемента формы {$a->name} (класс {$a->classname}).';
 $string['nonexistentformelements'] = 'Попытка добавить кнопку вызова справки для отсутствующего элемента формы: {$a}';
+$string['noselection'] = 'Ничего не выбрано';
+$string['nosuggestions'] = 'Нет предложений';
 $string['optional'] = 'Необязательное';
 $string['othersettings'] = 'Другие настройки';
 $string['requiredelement'] = 'Обязательное поле';
@@ -58,6 +60,7 @@ $string['revealpassword'] = 'Показать';
 $string['security'] = 'Защита';
 $string['selectallornone'] = 'Выбрать всё / Снять выбор';
 $string['selected'] = 'Выбрано';
+$string['selecteditems'] = 'Выбранные элементы:';
 $string['showadvanced'] = 'Показать дополнительные настройки';
 $string['showless'] = 'Показать меньше ...';
 $string['showmore'] = 'Показать больше ...';

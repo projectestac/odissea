@@ -365,7 +365,7 @@ class auth_ldap_plugin_testcase extends advanced_testcase {
             'email' => 'usersignuptest1@example.com',
             'description' => 'This is a description for user 1',
             'city' => 'Perth',
-            'country' => 'au',
+            'country' => 'AU',
             'mnethostid' => $CFG->mnet_localhost_id,
             'auth' => 'ldap'
             );
@@ -452,8 +452,9 @@ class auth_ldap_plugin_testcase extends advanced_testcase {
         $auth = get_auth_plugin('ldap');
 
         $sink = $this->redirectEvents();
+        $mailsink = $this->redirectEmails();
         $auth->user_signup((object)$user, false);
-        $this->assertDebuggingCalled('Not sending email due to $CFG->noemailever config setting');
+        $this->assertEquals(1, $mailsink->count());
         $events = $sink->get_events();
         $sink->close();
 

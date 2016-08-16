@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignsubmission_file', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['enabled_help'] = 'Indien ingeschakeld, kunnen leerlingen één of meer 
 $string['eventassessableuploaded'] = 'Er is een bestand geüploaded.';
 $string['file'] = 'Ingestuurde bestanden';
 $string['maxbytes'] = 'Maximale bestandsgrootte';
+$string['maxfiles'] = 'Maximaal aantal bestanden per inzending';
+$string['maxfiles_help'] = 'Als bestanden insturen ingeschakeld is, dan kan voor elke opdracht ingesteld worden hoeveel bestanden er per inzending aanvaard worden.';
 $string['maxfilessubmission'] = 'Maximaal aantal geüploade bestanden';
 $string['maxfilessubmission_help'] = 'Indien bestanden insturen is ingeschakeld, dan zal elke leerling tot maximaal dit aantal bestanden kunnen insturen als opdracht.';
 $string['maximumsubmissionsize'] = 'Maximale grootte ingestuurde opdracht';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,6 @@ $string['monitorenabled'] = '現在、イベントモニタリングは有効に
 $string['monitor:managerules'] = 'イベントモニタルールを管理する';
 $string['monitor:managetool'] = 'イベントモニタリングを有効/無効にする';
 $string['monitor:subscribe'] = 'イベントモニタルールを購読する';
-$string['nopermission'] = 'パーミッションなし';
 $string['norules'] = '購読できるモニタリングルールはありません。';
 $string['pluginname'] = 'イベントモニタ';
 $string['processevents'] = 'イベント処理';
@@ -88,6 +87,7 @@ $string['ruledeletesuccess'] = 'ルールが正常に削除されました。';
 $string['rulehelp'] = 'ルール詳細';
 $string['rulehelp_help'] = 'このルールはイベント「 {$a->eventname} 」が「 {$a->eventcomponent} 」内で {$a->minutes} 分間のうちに {$a->frequency} 回発生することを監視します。';
 $string['rulename'] = 'ルール名';
+$string['rulenopermission'] = 'あなたにはイベントを購読するパーミッションがありません。';
 $string['rulenopermissions'] = 'あなたには「ルールを {$a} する」パーミッションがありません。';
 $string['rulescansubscribe'] = 'あなたが購読可能なルール';
 $string['selectacourse'] = 'コースを選択する';
@@ -98,5 +98,6 @@ $string['subdeletesuccess'] = '購読が正常に削除されました。';
 $string['subhelp'] = '購読詳細';
 $string['subhelp_help'] = 'この購読はイベント「 {$a->eventname} 」が「 {$a->moduleinstance} 」内で {$a->minutes} 分間のうちに {$a->frequency} 回発生することを監視します。';
 $string['subscribeto'] = 'ルール「 {$a} 」を購読する';
+$string['taskchecksubscriptions'] = '無効なルール購読を有効/無効にする';
 $string['taskcleanevents'] = '不要なイベントモニタイベントをすべて削除する';
 $string['unsubscribe'] = '購読解除';

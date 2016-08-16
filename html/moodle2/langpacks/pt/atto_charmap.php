@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_charmap', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['alefsymbol'] = 'símbolo Aleph';
 $string['almostequalto'] = 'quase igual a';
 $string['alpha'] = 'alfa';
 $string['alpha_caps'] = 'Alfa';
+$string['amacron'] = 'a - macron';
+$string['amacron_caps'] = 'A - macron';
 $string['ampersand'] = '"e" comercial';
 $string['angle'] = 'ângulo';
 $string['approximatelyequalto'] = 'aproximadamente igual a';
@@ -89,6 +91,8 @@ $string['ediaeresis_caps'] = 'E - trema';
 $string['egrave'] = 'e - grave';
 $string['egrave_caps'] = 'E - grave';
 $string['elementof'] = 'elemento de';
+$string['emacron'] = 'e - macron';
+$string['emacron_caps'] = 'E - macron';
 $string['emdash'] = 'travessão';
 $string['emspace'] = 'espaço \'em\' (unidade de largura)';
 $string['endash'] = 'traço';
@@ -121,10 +125,13 @@ $string['idiaeresis'] = 'i - trema';
 $string['idiaeresis_caps'] = 'I - trema';
 $string['igrave'] = 'i - grave';
 $string['igrave_caps'] = 'I - grave';
+$string['imacron'] = 'i - macron';
+$string['imacron_caps'] = 'I - macron';
 $string['imaginarypart'] = 'parte imaginária';
 $string['infinity'] = 'infinito';
 $string['insertcharacter'] = 'Inserir carácter';
 $string['integral'] = 'integral';
+$string['interrobang'] = 'interrobang';
 $string['intersection'] = 'interseção';
 $string['invertedexclamationmark'] = 'ponto de exclamação invertido';
 $string['iota'] = 'iota';
@@ -181,6 +188,8 @@ $string['odiaeresis'] = 'o - trema';
 $string['odiaeresis_caps'] = 'O - trema';
 $string['ograve'] = 'o - grave';
 $string['ograve_caps'] = 'O - grave';
+$string['omacron'] = 'o - macron';
+$string['omacron_caps'] = 'O - macron';
 $string['omega'] = 'ómega';
 $string['omega_caps'] = 'Ómega';
 $string['omicron'] = 'omicron';
@@ -261,6 +270,8 @@ $string['udiaeresis'] = 'u - trema';
 $string['udiaeresis_caps'] = 'U - trema';
 $string['ugrave'] = 'u - grave';
 $string['ugrave_caps'] = 'U - grave';
+$string['umacron'] = 'u - macron';
+$string['umacron_caps'] = 'U - macron';
 $string['union'] = 'união';
 $string['upsilon'] = 'ípsilon';
 $string['upsilon_caps'] = 'Ípsilon';

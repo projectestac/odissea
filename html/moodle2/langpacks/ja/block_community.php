@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,12 +33,12 @@ $string['addedtoblock'] = 'あなたのコミュニティファインダブロ�
 $string['additionalcoursedesc'] = '{$a->lang} 作成者: {$a->creatorname} - 公開者: {$a->publishername} - テーマ: {$a->subject} - オーディエンス: {$a->audience} - 教育レベル: {$a->educationallevel} - ライセンス: {$a->license}';
 $string['addtocommunityblock'] = 'このコースへのリンクを保存する';
 $string['audience'] = '対象';
-$string['audience_help'] = 'どのようなコースを探していますか? あなたは従来の学生用コースと同様に教育者コミュニティまたはMoodle管理者用コースを探すこともできます。';
+$string['audience_help'] = 'どのようなコースを探していますか? あなたは従来の学生用コースと同様に教育者コミュニティまたはMoodle管理者コースを探すこともできます。';
 $string['blocks'] = 'ブロック';
 $string['cannotselecttopsubject'] = 'トップ科目レベルを選択することはできません。';
 $string['comments'] = 'コメント ({$a})';
 $string['community:addinstance'] = '新しいコミュニティファインダブロックを追加する';
-$string['community:myaddinstance'] = '新しいコミュニティファインダブロックをマイホームに追加する';
+$string['community:myaddinstance'] = '新しいコミュニティファインダブロックをダッシュボードに追加する';
 $string['contentinfo'] = 'テーマ: {$a->subject} - オーディエンス: {$a->audience} - 学習レベル: {$a->educationallevel}';
 $string['continue'] = '続ける';
 $string['contributors'] = '- コントリビュータ: {$a}';
@@ -58,7 +58,7 @@ $string['downloadingcourse'] = 'コースのダウンロード';
 $string['downloadingsize'] = 'お待ちください、コースファイルダウンロード中です ({$a->total}Mb) ...';
 $string['downloadtemplate'] = 'テンプレートからコースを作成する';
 $string['educationallevel'] = '教育レベル';
-$string['educationallevel_help'] = 'あなたはどのような教育レベルを探していますか? 教育コミュニティに関して、このレベルでは教えるレベルを指します。';
+$string['educationallevel_help'] = 'あなたはどのような教育レベルを探していますか? 教育コミュニティに関して、このレベルは教えるレベルを指します。';
 $string['enroldownload'] = '探す';
 $string['enroldownload_help'] = '選択されたハブ内に一覧表示されたいくつかのコースではユーザがオリジナルサイトにアクセスして参加することができます。
 

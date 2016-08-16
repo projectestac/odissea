@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lti', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['allow'] = 'Baimendu';
 $string['allowinstructorcustom'] = 'Baimendu irakasleari pertsonalizatutako parametroak gehitzeko';
 $string['always'] = 'Beti';
 $string['automatic'] = 'Automatikoa, hasierako URLean oinarritua';
-$string['baseurl'] = 'URL oinarria';
+$string['baseurl'] = 'URL oinarria/tresnaren erregistro-izena';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'LTI jarduerak';
 $string['basiclti_in_new_window'] = 'Zure jarduera leiho berrian zabaldu da';
@@ -168,7 +168,7 @@ $string['password'] = 'Partekatutako sekretua';
 $string['password_admin'] = 'Partekatutako sekretua';
 $string['pending'] = 'Zain';
 $string['pluginadministration'] = 'LTIren kudeaketa';
-$string['pluginname'] = 'LTI';
+$string['pluginname'] = 'Kanpo tresna';
 $string['preferheight'] = 'Hobetsitako altuera';
 $string['preferwidth'] = 'Hobetsitako zabalera';
 $string['press_to_submit'] = 'Sakatu jarduera hau abiarazteko';
@@ -185,6 +185,7 @@ $string['resourcekey_admin'] = 'Kontsumitzaile-gakoa';
 $string['resourceurl'] = 'Baliabidearen URLa';
 $string['return_to_course'] = 'Sakatu <a href="{$a->link}" target="_top">here</a>  ikastarora itzultzeko.';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
+$string['search:activity'] = 'Kanpoko tresna - jardueraren informazioa';
 $string['secure_launch_url'] = 'Hasierako URL segurua';
 $string['send'] = 'Bidali';
 $string['services'] = 'Zerbitzuak';

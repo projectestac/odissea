@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Conectores disponibles de matriculación en el curso';
 $string['addinstance'] = 'Añadir método';
+$string['addinstanceanother'] = 'Añadir método y crear otro';
 $string['ajaxnext25'] = 'Siguientes 25...';
 $string['ajaxoneuserfound'] = '1 usuario encontrado';
 $string['ajaxxusersfound'] = '{$a} usuarios encontrados';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = 'Error al crear ejemplo de matriculación sync de 
 $string['errorenrolcohortusers'] = 'Error al matricular a los miembros de la cohorte en este curso.';
 $string['errorthresholdlow'] = 'El umbral para la notificación debe ser al menos 1 día.';
 $string['errorwithbulkoperation'] = 'Se produjo un error mientras se procesaban sus cambios de matriculación masivos';
+$string['eventenrolinstancecreated'] = 'Instancia de inscripción creada';
+$string['eventenrolinstancedeleted'] = 'Instancia de inscripción borrada';
+$string['eventenrolinstanceupdated'] = 'Instancia de inscripción actualizada';
 $string['eventuserenrolmentcreated'] = 'Usuario matriculado en curso';
 $string['eventuserenrolmentdeleted'] = 'Usuario matriculado en curso';
 $string['eventuserenrolmentupdated'] = 'Usuario matriculado en curso';
@@ -91,6 +95,7 @@ $string['extremovedsuspendnoroles'] = 'Deshabilitar la matriculación en el curs
 $string['extremovedunenrol'] = 'Dar de baja al usuario del curso';
 $string['finishenrollingusers'] = 'Finalizar matriculación de usuarios';
 $string['foundxcohorts'] = 'Encontradas {$a} cohortes';
+$string['instanceadded'] = 'Método añadido';
 $string['instanceeditselfwarning'] = 'Advertencia:';
 $string['instanceeditselfwarningtext'] = 'Usted está inscrito en este curso a través de este método de matriculación, los cambios pueden afectar a su acceso a este curso.';
 $string['invalidenrolinstance'] = 'Ejemplo de matriculación no válido';
@@ -100,6 +105,7 @@ $string['manageinstance'] = 'Gestionar';
 $string['migratetomanual'] = 'Migrar a matriculaciones manuales';
 $string['nochange'] = 'Sin cambios';
 $string['noexistingparticipants'] = 'No existen participantes';
+$string['nogroup'] = 'Sin grupo';
 $string['noguestaccess'] = 'Los invitados no pueden entrar a este curso. Por favor acceda con sus datos.';
 $string['none'] = 'Ninguno';
 $string['notenrollable'] = 'No se puede matricular en este curso.';
@@ -112,6 +118,7 @@ $string['periodend'] = 'hasta {$a}';
 $string['periodnone'] = 'matriculado {$a}';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} hasta {$a->end}';
+$string['proceedtocourse'] = 'Continuar al contenido del curso';
 $string['recovergrades'] = 'Es posible recuperar las calificaciones de usuario antiguas';
 $string['rolefromcategory'] = '{$a->role} (Heredado de la categoría de curso)';
 $string['rolefrommetacourse'] = '{$a->role} (Heredado del curso padre)';

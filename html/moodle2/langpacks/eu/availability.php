@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['manageplugins'] = 'Kudeatu baldintzak';
 $string['missingplugin'] = 'Baldintza-plugina falta da';
 $string['or'] = 'edo';
 $string['restrictaccess'] = 'Mugatu eskuragarritasuna';
+$string['restrictbygroup'] = 'Gehitu talde/taldekatze eskuragarritasun-baldintza';
 $string['setheading'] = '{$a->number} {$a->count} sortako baldintza(k)';
 $string['shown_all'] = 'Grisean erakutsi erabiltzaileak baldintzak betetzen ez baditu';
 $string['shown_individual'] = 'Grisean erakutsi erabiltzaileak baldintza hau betetzen ez badu';

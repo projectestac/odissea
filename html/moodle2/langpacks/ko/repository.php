@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['folderrecurse'] = '폴더는 자신의 서브 폴더로 이동할 수 �
 $string['getfile'] = '파일 선택';
 $string['getfiletimeout'] = '파일 가져오기 타임아웃';
 $string['help'] = '도움말';
-$string['hidden'] = '비공개';
 $string['iconview'] = '아이콘으로 제시';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = '인스턴스';

@@ -5,12 +5,12 @@ Feature: Add choice activity
   I need to add remove block from the choice page
 
   # This tests that the hacky block editing is not borked by legacy forms in choice activity.
-  @javascript
   Scenario: Add a choice activity as admin and check blog menu block should contain link.
     Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
     And I log in as "admin"
+    And I am on site homepage
     And I follow "Course 1"
     And I turn editing mode on
     And I add a "Choice" to section "1" and I fill the form with:
@@ -30,7 +30,6 @@ Feature: Add choice activity
     And I should not see "View all entries about this Choice"
     And I should see "Choice Description 1"
 
-  @javascript
   Scenario: Add a choice activity as teacher and check blog menu block contain choice link.
     Given the following "users" exist:
       | username | firstname | lastname | email |
@@ -63,7 +62,6 @@ Feature: Add choice activity
     And I should not see "View all entries about this Choice"
     And I should see "Choice Description 1"
 
-  @javascript
   Scenario: Add a choice activity as teacher (with dual role) and check blog menu block contain choice link.
     Given the following "users" exist:
       | username | firstname | lastname | email |

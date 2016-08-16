@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_security', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,6 +106,10 @@ $string['check_unsecuredataroot_error'] = 'Ваш каталог dataroot<code>{
 $string['check_unsecuredataroot_name'] = 'Небезопасный каталог dataroot';
 $string['check_unsecuredataroot_ok'] = 'Каталог dataroot не должен быть доступен из сети.';
 $string['check_unsecuredataroot_warning'] = 'Ваш каталог dataroot<code>{$a}</code> неправильно размещен и, возможно, доступен из сети!';
+$string['check_webcron_details'] = '<p>Запуск cron из веб-браузера может позволить доступ анонимных пользователей к конфиденциальной информации. Рекомендуется запускать cron только из командной строки или задать пароль для удаленного доступа к cron.</p>';
+$string['check_webcron_name'] = 'Веб cron';
+$string['check_webcron_ok'] = 'Анонимные пользователи не имеют доступа к cron.';
+$string['check_webcron_warning'] = 'Анонимные пользователи имеют доступ к cron.';
 $string['configuration'] = 'Конфигурация';
 $string['description'] = 'Описание';
 $string['details'] = 'Подробности';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_filesystem', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,3 +40,4 @@ $string['pluginname_help'] = 'Создать хранилище из локал�
 $string['relativefiles'] = 'Разрешить относительные ссылки на файлы';
 $string['relativefiles_desc'] = 'Это позволяет всем файлам в хранилище быть доступными с помощью относительных ссылок.';
 $string['root'] = 'Корневой каталог';
+$string['searchresults'] = 'Результаты поиска';

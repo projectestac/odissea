@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'filter_tex', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = 'Si <i>latex</i>, <i>dvips</i> i <i>convert</i> estan disponibles, les imatges seran creades utilitzant el format especificat. Si no ho és, el tipus TeX serà utilitzat i es crearan imatges GIF.';
-$string['convertformat'] = '	
-<i>converteix</i> format de sortida';
+$string['configconvertformat'] = 'Si <i>latex</i>, i <i>dvips</i> estan presents a més a més de <i>convert</i> o <i>dvisvgm</i>, seleccioneu el tipus d\'imatge preferit (<i>convert</i> produeix GIF o PNG; <i>dvisvgm</i> produeix SVG).  Altrament s\'usarà <i>mimeTeX</i> per crear imatges GIF.';
+$string['convertformat'] = 'Format d\'imatge de sortida';
 $string['filtername'] = 'Notació TeX';
 $string['latexpreamble'] = 'Preàmbul LaTeX';
 $string['latexsettings'] = 'Paràmetres del renderitzador de LaTeX';
 $string['pathconvert'] = 'Camí del binari del <i>convert</i>';
 $string['pathdvips'] = 'Camí del binari del <i>dvips</i>';
+$string['pathdvisvgm'] = 'Camí al binari de <i>dvisvgm</i>';
 $string['pathlatex'] = 'Camí del binari del <i>latex</i>';
 $string['pathmimetex'] = 'Camí del binari <i>mimetex</i>';
 $string['pathmimetexdesc'] = 'Moodle utilitzarà el seu propi binari mimeTeX, llevat que especifiqueu un altre camí vàlid.';

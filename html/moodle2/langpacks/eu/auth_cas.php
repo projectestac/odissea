@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,14 @@ $string['auth_cas_certificate_path_key'] = 'Ziurtagiriaren bidea';
 $string['auth_cas_changepasswordurl'] = 'Pasahitza aldatzeko URLa';
 $string['auth_cas_create_user'] = 'Aktibatu hau Moodle-ren datu-basean CASen bidez onartutako erabiltzaileak erantsi nahi badituzu. Bestela, Moodle-ren datu-basean honez gero dauden erabiltzaileek soilik izango dute sarbidea.';
 $string['auth_cas_create_user_key'] = 'Sortu erabiltzailea';
+$string['auth_cas_curl_ssl_version_default'] = 'Berezkoa';
+$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL bertsioa';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = 'Metodo honek CAS zerbitzaria erabiltzen du (Central Authentication Service) erabiltzaileak SSO (Single Sign On) inguruan autentifikatzeko. Nahi baduzu LDAP autentifikazio xumea erabil dezakezu. Erabiltzaile-izena eta pasahitza CASen arabera egokiak badira, Moodle-k erabiltzaile berri bat sortzen du datu-basean, beharko balitz LDAPetik atributuak hartuz. Hurrengo konexioetan erabiltzaile-izena eta pasahitza baieztatzen dira, besterik ez.';
 $string['auth_cas_enabled'] = 'Aktibatu hau CAS autentifikazioa nahi baduzu.';
 $string['auth_cas_hostname'] = 'CAS zerbitzariaren izena<br />ad.: host.domain.eu';

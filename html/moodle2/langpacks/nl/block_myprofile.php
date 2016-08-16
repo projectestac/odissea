@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_myprofile', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,8 +38,8 @@ $string['display_institution'] = 'Toon instituut';
 $string['display_lastaccess'] = 'Toon laatste toegang';
 $string['display_lastip'] = 'Toon laatste IP';
 $string['display_msn'] = 'Toon MSN';
-$string['display_phone1'] = 'Toon telefoonnummer 1';
-$string['display_phone2'] = 'Toon telefoonnummer 2';
+$string['display_phone1'] = 'Toon telefoonnummer';
+$string['display_phone2'] = 'Toon mobiel telefoonnummer';
 $string['display_picture'] = 'Toon afbeelding';
 $string['display_skype'] = 'Toon Skype';
 $string['display_un'] = 'Toon naam';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['bufferwrites'] = 'Habilita la memòria intermèdia';
 $string['bufferwrites_help'] = 'Habilita o inhabilita la memòria intermèdia d\'entrada/sortida. Habilitar la memòria intermèdia d\'entrada/sortida provoca que les ordres d\'emmagatzematge vagin a la memòria intermèdia en lloc de ser enviades. Qualsevol acció que recuperi les dades fa que les dades de la memòria intermèdia s\'enviïn a la connexió remota. Abandonar la connexió o el tancament de la connexió també farà que les dades emmagatzemades en la memòria intermèdia siguin enviades a la connexió remota.';
+$string['clustered'] = 'Habilita servidors en clúster';
+$string['clusteredheader'] = 'Divideix els servidors';
+$string['clustered_help'] = 'Això s\'utilitza per permetre sols lectura, permet funcionalitats múltiples.
+
+L\'ús previst és crear un magatzem millorat per a les configuracions de càrrega. El magatzem s\'ha pogut recuperar d\'un servidor (normalment localhost), però està configurat per molts (tots els servidors del grup). Per a les memòries cau amb alts coeficients de lectura per a configurar els coeficients, això estalvia una quantitat significativa de sobrecàrrega de la xarxa.
+
+Quan s\'habilita aquesta configuració, el servidor especificat serà utilitzat per recuperar.';
 $string['hash'] = 'Mètode resum';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Per defecte (pas a pas)';
@@ -38,6 +45,12 @@ $string['hash_help'] = 'Especifica l\'algoritme resum per l\'element de la clau.
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
+$string['isshared'] = 'Cau compartit';
+$string['isshared_help'] = 'Hi han altres aplicacions que estigui utilitzant el vostre servidor memcauat («memcached»)?
+
+Si el cau és compartit per altres aplicacions, cada clau s\'esborrarà individualment per tal d\'assegurar que només es purguin les dades propietat d\'aquesta aplicació (deixant intocades les dades encauades de les aplicacions externes). Aquest comportament pot comportar un alentiment durant la purga del cau, en funció de la configuració del vostre servidor.
+
+Si, en canvi, heu configurat un cau dedicat per a aquesta aplicació, es pot buidar tot el cau de forma segura sense risc de destuir les dades encauades d\'altres aplicacions. Això farà que el purgat del cau vagi més depressa.';
 $string['pluginname'] = 'Memòria cau';
 $string['prefix'] = 'Prefix de la clau';
 $string['prefix_help'] = 'Això pot ser usat per crear un «domini» de les seues claus que li permetrà crear diversos magatzems de memòria cau en una sola instal·lació cau. No pot tenir més de 16 caràcters, a fi de garantir que no es tinguem problemes de longitud de clau.';
@@ -46,15 +59,32 @@ $string['serialiser_igbinary'] = 'El serializador «igbinary».';
 $string['serialiser_json'] = 'El serialitzador JSON';
 $string['serialiser_php'] = 'El serialitzador per defecte de PHP';
 $string['servers'] = 'Servidors';
-$string['servers_help'] = 'Això configura els servidors que han de ser utilitzats per aquest adaptador de memòria cau. Els Servidors s\'han de definir un per línia i es componen d\'una adreça de servidor i, opcionalment, un port i pes. Si no es proporciona cap port s\'utilitza el port per defecte (11211).
+$string['serversclusterinvalid'] = 'Caldrà exactament un servidor quan s\'habiliti el clúster.';
+$string['servers_help'] = 'Això configura els servidors que han de ser utilitzats per aquest adaptador de memòria cau. Els servidors s\'han de definir un per línia, i es componen d\'una adreça de servidor i, opcionalment, un port i pes. Si no es proporciona cap port, s\'utilitza el port per defecte (11211).
 Per exemple:
 <pre> server.url.com
 adreçaIP: port
 nom_servidor: port: pes
+</pre>
+
+Si habilita a sota «Habilita servidors en clúster», hi ha d\'haver un sol servidor dels enumerats aquí. Això sol ser un nom que sempre es resol a l\'equip local, com 127.0.0.1 o localhost.';
+$string['sessionhandlerconflict'] = 'Avís: Una instància de memòria cau  ({$a}) ha de ser configurada per usar el mateix servidor de memòries cau a les sessions. Purgar totes les memòries cau produirà que les sessions es purguin també.';
+$string['setservers'] = 'Configura els servidors';
+$string['setservers_help'] = 'Aquesta és la llista de servidors que s\'actualitzaran quan les dades siguin modificades a la memòria cau. En general, es posa el nom complet de cada servidor al conjunt.
+**Cal** incloure el servidor enumerat a la llista *Servidors* de més amunt, encara que sigui en un nom d\'amfitrió diferent.
+Els servidors han d\'estar definits un per línia, que consisteix en una adreça de servidor i, de forma opcional, un port.
+Si no es proporciona cap port, s\'usa el port per defecte (11211).
+
+Per exemple:
+<pre>
+servidor.url.com
+adreçaip:port
 </pre>';
 $string['testservers'] = 'Servidors de prova';
-$string['testservers_desc'] = 'Els servidors de prova s\'utilitzen per a les proves unitàries i proves de rendiment. És totalment opcional configurar servidors de prova. Els servidors s\'han de definir un per línia i es componen d\'una adreça de servidor i, opcionalment, un port i pes.
-Si no es proporciona cap port s\'utilitza el port per defecte (11211).';
+$string['testservers_desc'] = 'Una o més cadenes de connexió per a servidors de memòria cau per posar-los a prova. Si un servidor de prova s\'ha especificat, llavors el rendiment de la memòria cau es pot provar fent servir la pàgina de rendiment de la memòria cau al bloc d\'administració.
+N\'és un exemple: 127.0.0.1:11211';
+$string['upgrade200recommended'] = 'Recomanem que actualitzeu l\'extensió «memcached» de PHP a la versió 2.0.0 com a mínim.
+La versió de l\'extensió «memcached» de PHP que eteu utilitzant actualment no admet la funcionalitat que necessita el Moodle per tal d\'assegurar un cau protegit. Fins que no actualitzeu us recomanem que no configureu cap altra aplicació que utilitzi els mateixos servidors memcauats que utilitza el Moodle.';
 $string['usecompression'] = 'Utilitza compressió';
 $string['usecompression_help'] = 'Habilita o inhabilita la compressió de la càrrega útil. Quan està habilitat, els elements de valor de més d\'un cert llindar (actualment 100 bytes) es comprimeixen durant l\'emmagatzematge i es descomprimeixen durant la recuperació de manera transparent.';
 $string['useserialiser'] = 'Usa serialitzador';

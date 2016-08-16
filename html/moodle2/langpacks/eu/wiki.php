@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = 'Ezarpen honek wiki-orriak editatzean erabiltzen
 * HTML - HTML editorea eskura dago
 * Creole - wiki-markak dituen hizkuntza, ediziorako tresna-barra txiki bat duena
 * Nwiki - Mediawiki-ren antzerako marka-hizkuntza, Nwiki moduluan erabiltzen dena';
+$string['deleteallpages'] = 'Ezabatu wikiaren orri guztiak';
 $string['deletecomment'] = 'Iruzkina ezabatzen';
 $string['deletecommentcheck'] = 'Ezabatu iruzkina';
 $string['deletecommentcheckfull'] = 'Ziur al zaude iruzkina ezabatu nahi duzula?';
@@ -190,7 +191,7 @@ $string['orphaned'] = 'Orri umezurtzak';
 $string['orphaned_help'] = 'Beste orri batetik estekatu gabe dauden orrien zerrenda';
 $string['overridelocks'] = 'Baliogabetu blokeoak ';
 $string['overridinglocks'] = 'Blokeoak baliogabetzen...';
-$string['pageexists'] = 'Horri hau badago dagoeneko. Berbideratu bertara.';
+$string['pageexists'] = 'Orri hau badago dagoeneko.';
 $string['pageindex'] = 'Orri-aurkibidea';
 $string['pageindex_help'] = 'Wiki-orri honen zuhaitza';
 $string['pageislocked'] = 'Norbait ari da orri hau editatzen. Saiatu minutu batzuk barru editatzen.';
@@ -225,12 +226,15 @@ $string['return'] = 'Atzera';
 $string['save'] = 'Gorde';
 $string['saving'] = 'Wiki-orria gordetzen';
 $string['savingerror'] = 'Errorea gordetzean';
+$string['search:activity'] = 'Wikia - jardueraren informazioa';
+$string['search:collaborative_page'] = 'Wikia - elkarrekin lan egiteko orriak';
 $string['searchcontent'] = 'Bilatu orriaren edukian';
 $string['searchresult'] = 'Bilaketaren emaitzak';
 $string['searchterms'] = 'Bilaketa-terminoak';
 $string['searchwikis'] = 'Bilatu wikiak';
 $string['special'] = 'Berezia';
 $string['tableofcontents'] = 'Eduki-taula';
+$string['tagarea_wiki_pages'] = 'Wiki-orriak';
 $string['tagsdeleted'] = 'Wiki-etiketak ezabatu egin dira';
 $string['tagtitle'] = 'Ikusi "{$a}" etiketa';
 $string['teacherrating'] = 'Irakaslearen puntuazioa';

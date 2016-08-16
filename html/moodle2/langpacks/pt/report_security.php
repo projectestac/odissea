@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_security', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,10 @@ $string['check_unsecuredataroot_error'] = 'A pasta de dados está numa localiza�
 $string['check_unsecuredataroot_name'] = 'Segurança da pasta de dados';
 $string['check_unsecuredataroot_ok'] = 'Não deve ser possível aceder à pasta de dados através da web.';
 $string['check_unsecuredataroot_warning'] = 'Não deve ser possível aceder à pasta de dados através da web.';
+$string['check_webcron_details'] = '<p>Executar o cron pela Web pode expor informação privilegiada a utilizadores não identificados. É recomendado que o cron seja executado via CLI ou proteger a página do cron com uma senha.</p>';
+$string['check_webcron_name'] = 'Web cron';
+$string['check_webcron_ok'] = 'Utilizadores anónimos não podem aceder ao cron.';
+$string['check_webcron_warning'] = 'Utilizadores anónimos podem aceder ao cron.';
 $string['configuration'] = 'Configuração';
 $string['description'] = 'Descrição';
 $string['details'] = 'Detalhes';

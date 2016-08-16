@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'form', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['month'] = 'Maand';
 $string['mustbeoverriden'] = 'Abstracte form_definition() methode in class {$a} moet overschreven worden, herstel de code.';
 $string['nomethodforaddinghelpbutton'] = 'Er is geen methode om een helpknop aan formulierelement {$a->name} (klasse {$a->classname}) toe  te voegen';
 $string['nonexistentformelements'] = 'Je probeert een helpknop toe te voegen aan een onbestaand formulierelement: {$a}';
+$string['noselection'] = 'Geen selectie';
+$string['nosuggestions'] = 'Geen suggesties';
 $string['optional'] = 'Optioneel';
 $string['othersettings'] = 'Meer instellingen';
 $string['requiredelement'] = 'Vereist veld';
@@ -58,6 +60,7 @@ $string['revealpassword'] = 'Toon';
 $string['security'] = 'Beveiliging';
 $string['selectallornone'] = 'Kies alle/geen';
 $string['selected'] = 'Geselecteerd';
+$string['selecteditems'] = 'Geselecteerde items:';
 $string['showadvanced'] = 'Toon geavanceerd';
 $string['showless'] = 'Toon minder...';
 $string['showmore'] = 'Toon meer...';

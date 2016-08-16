@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+require_once($CFG->dirroot . '/question/type/questionbase.php');
 require_once($CFG->dirroot . '/question/type/gapselect/questionbase.php');
 
 
@@ -166,4 +167,3 @@ class qtype_ddtoimage_question_base extends qtype_gapselect_question_base {
         return $summary;
     }
 }
-

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_task', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['component'] = 'Osagaia';
 $string['corecomponent'] = 'Sistema';
 $string['default'] = 'Berezkoa';
 $string['disabled'] = 'Desgaituta';
+$string['pluginname'] = 'Programatutako zereginen ezarpenak';
+$string['scheduledtasks'] = 'Programatutako zereginak';
 $string['taskdisabled'] = 'Ataza desgaituta';
 $string['taskscheduleday'] = 'Eguna';
 $string['taskscheduledayofweek'] = 'Asteko eguna';

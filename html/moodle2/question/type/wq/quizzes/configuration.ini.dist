@@ -84,4 +84,4 @@
 ;
 ; Enable WIRIS hand (handwriter recognition) as input field type.
 
-;quizzes.hand.enabled = "false"
+;quizzes.hand.enabled = "true"

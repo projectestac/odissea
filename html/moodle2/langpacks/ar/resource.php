@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,3 +69,4 @@ $string['printintro'] = 'أعرض وصف المورد';
 $string['resourcecontent'] = 'ملفات ومجلدات فرعية';
 $string['resource:exportresource'] = 'تصدير المورد';
 $string['resource:view'] = 'معاينة مورد';
+$string['search:activity'] = 'ملف';

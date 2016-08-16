@@ -18,6 +18,8 @@
 //
  
 $string['filtername'] = 'Math & Science by WIRIS';
+$string['filter_standalone'] = 'WIRIS filter only';
+$string['filter_standalonedesc'] = 'You will be able to display existing formulas but creation of new formulas is not available. It also removes the warning message.';
 $string['pluginname'] = 'WIRIS filter';
 $string['clearcache'] = 'Clear cache';
 $string['clearcachedesc'] = 'Clear wiris filter cache';

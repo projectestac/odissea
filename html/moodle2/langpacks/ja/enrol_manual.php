@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = '本当にこれらのユーザ登録を
 $string['defaultperiod'] = 'デフォルト登録期間';
 $string['defaultperiod_desc'] = '登録が有効な場合のデフォルト登録期間 (秒) です。ゼロが設定された場合、登録期間はデフォルトで無制限となります。';
 $string['defaultperiod_help'] = '登録が有効な場合のデフォルト登録期間です。ユーザが登録された時点で開始します。無効にされた場合、登録期間はデフォルトで無制限となります。';
+$string['defaultstart'] = 'デフォルト登録開始';
 $string['deleteselectedusers'] = '選択されたユーザの登録を削除する';
 $string['editselectedusers'] = '選択したユーザの登録を編集する';
 $string['enrolledincourserole'] = '「 {$a->course} 」に「 {$a->role} 」として登録されました。';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = '登録期限切れ通知';
 $string['manual:config'] = '手動登録インスタンスを設定する';
 $string['manual:enrol'] = 'ユーザを登録する';
 $string['manual:manage'] = 'ユーザ登録を管理する';
+$string['manualpluginnotinstalled'] = '「手動」プラグインがまだインストールされていません。';
 $string['manual:unenrol'] = 'コースからユーザの登録を解除する';
 $string['manual:unenrolself'] = 'コースから自分自身の登録を解除する';
 $string['messageprovider:expiry_notification'] = '手動登録期限切れ通知';
+$string['now'] = '今から';
 $string['pluginname'] = '手動登録';
 $string['pluginname_desc'] = '手動登録プラグインではコース管理設定内のリンクを使用してユーザが教師等の適切なパーミッションを割り当てたユーザを手動で登録できるようにします。自己登録等の登録プラグインで必要とするため、通常、このプラグインは有効にされています。';
 $string['status'] = '手動登録を有効にする';

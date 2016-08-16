@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['defaultweight'] = 'Pes per omissió';
 $string['defaultweight_help'] = 'El pes per defecte permet triar aproximadament on voleu que aparegui el bloc dins de la regió, més amunt o més avall. La ubicació definitiva es calcula prenent en consideració tots els blocs que apareguin a la regió. Aquest valor es pot canviar si cal en pàgines específiques.';
 $string['deleteblock'] = 'Suprimeix el bloc {$a}';
 $string['deleteblockcheck'] = 'Confirmeu que voleu suprimir aquest bloc anomenat {$a}?';
-$string['deleteblockwarning'] = '<p> Ara eliminareu un bloc que apareix en un altre lloc. </p><p> Ubicació del bloc original: {$a->location} <br /> Visualització en tipus de pàgines: {$a->pagetype} </p><p> Esteu segur que voleu continuar? </p>';
+$string['deleteblockwarning'] = '<p> Esteu a punt d\'eliminar un bloc que apareix en un altre lloc. </p><p> Ubicació del bloc original: {$a->location} <br /> Visualització en tipus de pàgines: {$a->pagetype} </p><p> Esteu segur que voleu continuar? </p>';
 $string['deletecheck'] = 'Suprimiu el bloc {$a}?';
 $string['dockblock'] = 'Acobla el bloc {$a}';
 $string['hideblock'] = 'Amaga el bloc {$a}';

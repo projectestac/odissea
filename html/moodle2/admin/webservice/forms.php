@@ -196,8 +196,13 @@ class external_service_functions_form extends moodleform {
         //we add the descriptions to the functions
         foreach ($functions as $functionid => $functionname) {
             //retrieve full function information (including the description)
-            $function = external_function_info($functionname);
-            $functions[$functionid] = $function->name . ':' . $function->description;
+            $function = external_api::external_function_info($functionname);
+            if (empty($function->deprecated)) {
+                $functions[$functionid] = $function->name . ':' . $function->description;
+            } else {
+                // Exclude the deprecated ones.
+                unset($functions[$functionid]);
+            }
         }
 
         $mform->addElement('searchableselector', 'fids', get_string('name'),

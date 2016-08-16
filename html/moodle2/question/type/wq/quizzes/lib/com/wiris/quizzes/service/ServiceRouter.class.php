@@ -23,13 +23,18 @@ class com_wiris_quizzes_service_ServiceRouter {
 			}
 		}
 	}
-	public function sendQuizzesJS($s, $res) {
+	public function getQuizzesJS($s) {
+		$sb = new StringBuf();
 		$js = $s->read();
-		$res->writeString("(function(){\x0A");
-		$res->writeString($js);
-		$res->writeString("\x0A");
-		$res->writeString(com_wiris_quizzes_service_ServiceTools::appendQuizzesJS());
-		$res->writeString("})();");
+		$sb->add("(function(){\x0A");
+		$sb->add($js);
+		$sb->add("\x0A");
+		$sb->add(com_wiris_quizzes_service_ServiceTools::appendQuizzesJS());
+		$sb->add("})();");
+		return $sb->b;
+	}
+	public function sendQuizzesJS($s, $res) {
+		$res->writeString($this->getQuizzesJS($s));
 		$res->close();
 	}
 	public function service($parameters, $res) {

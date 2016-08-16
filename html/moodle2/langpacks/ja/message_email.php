@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message_email', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   message_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,11 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowattachments'] = '添付を許可する';
 $string['allowusermailcharset'] = 'ユーザの文字セット選択を許可する';
 $string['configallowattachments'] = 'この設定を有効にした場合、サイトから送信されるメールにバッジ等を添付することができるようになります。';
-$string['configallowusermailcharset'] = 'この設定を有効にした場合、ユーザはプロファイルページで自分のメール文字コードを選択することができます。';
+$string['configallowusermailcharset'] = 'この設定を有効にした場合、ユーザはメッセージプリファレンスで自分のメールの文字コードを選択することができます。';
 $string['configemailonlyfromnoreplyaddress'] = 'この設定を有効にした場合、すべてのメールは「from」アドレスとしてno-replyアドレスを使用して送信されます。これは外部システムのanti-spoofing (なりすまし防止) コントロールによるメールのブロックを停止するために使用することができます。';
 $string['configmailnewline'] = 'メールメッセージに使用される改行文字です。RFC 822bisによるとCRLFは必須です。いくつかのメールサーバでは自動的にLFがCRLFに変換され、他のメールサーバではCRLFがCRCRLFに誤って変換され、また、生のLFを拒否するメールサーバ (例えば、qmail) もあります。メールが送信されなかったり、改行が2重になる問題がある場合、この設定を変更してください。';
 $string['confignoreplyaddress'] = 'Moodleではユーザに代わってメールが送信される場合があります (例 フォーラム投稿)。ここで設定するメールアドレスは「From」に使用され、受信者が直接送信者に返信できないようにします (例 ユーザが自分のメールアドレスを隠すよう設定している場合)。';
 $string['configsitemailcharset'] = 'この設定ではサイトから送信されるメールすべてに対してデフォルト文字セットを指定します。';
+$string['configsmtpauthtype'] = 'ここではSMTPサーバに使用する認証タイプを設定します。';
 $string['configsmtphosts'] = 'Moodleでメールを送信するときに使用する1つ以上のローカルSMTPサーバ名を入力してください (例 mail.a.comまたはmail.a.com;mail.b.com)。デフォルト以外のポート (例 ポート25以外) を指定するには[サーバ]:[ポート]シンタックスを使用することができます (例 mail.a.com:587)。セキュアコネクションのためには通常ポート465 (SSL)、ポート587 (TLS) が使用されます。必要であれば下記にセキュリティプロトコルを指定してください。空白にした場合、MoodleはデフォルトのPHPメール送信メソッドを使用します。';
 $string['configsmtpmaxbulk'] = 'SMTPセッションごとに送信するメッセージの最大数です。メッセージのグルーピングにより、メールの送信をスピードアップすることができます。2より少ない値に設定した場合、メールごとに新しいSMTPセッションの開始が強制されます。';
 $string['configsmtpsecure'] = 'SMTPサーバにセキュアコネクションが必要な場合、正しいプロトコルタイプを指定してください。';
@@ -45,6 +46,7 @@ $string['none'] = 'なし';
 $string['noreplyaddress'] = 'No-replyアドレス';
 $string['pluginname'] = 'メール';
 $string['sitemailcharset'] = '文字セット';
+$string['smtpauthtype'] = 'SMTP認証タイプ';
 $string['smtphosts'] = 'SMTPホスト';
 $string['smtpmaxbulk'] = 'SMTPセッション制限';
 $string['smtppass'] = 'SMTPパスワード';

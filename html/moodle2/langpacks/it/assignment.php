@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,6 @@ $string['modulenameplural'] = 'Compiti 2.2 (Disabilitati)';
 $string['page-mod-assignment-submissions'] = 'Pagina di consegna del modulo compito';
 $string['page-mod-assignment-view'] = 'Pagina principale del modulo compito';
 $string['page-mod-assignment-x'] = 'Qualsiasi pagina principale del modulo compito';
-$string['pendingupgrades_message_content'] = 'Per effetto dell\'aggiornamento a Moodle 2.7, Il modulo di attività obsoleto "Compito 2.2" è stato disabilitato. I backup contenenti il modulo di attività compito 2.2 potranno essere ripristinati in modo trasparente in moduli compito nuovi. Tutte le istanze esistenti del modulo obsoleto Compito 2.2 devono essere aggiornate usando  l\'Assistente per l\'aggiornamento dei compiti {$a->docsurl}. In questo sito sono presenti {$a->count} istanze del modulo obsoleto Compito 2.2. Gli utenti non potranno accedere alle attività compito che non verranno aggiornate.';
-$string['pendingupgrades_message_small'] = 'Il plugin è stato disabilitato. Tutti i compiti devono essere aggiornati alla nuova versione del modulo compito usando l\'Assistente per l\'aggiornamento dei compiti.';
-$string['pendingupgrades_message_subject'] = 'Informazioni importanti sul Compito 2.2.';
 $string['pluginadministration'] = 'Gestione Compito 2.2 (Disabilitato)';
 $string['pluginname'] = 'Compito 2.2 (Disabilitato)';
 $string['upgradenotification'] = 'Questa attività si basa su un modulo compito obsoleto.';

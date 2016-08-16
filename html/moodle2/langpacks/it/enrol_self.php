@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Iscrizione disabilitata o non attiva';
+$string['canntenrolearly'] = 'Non puoi iscriverti, le iscrizioni apriranno il {$a}.';
+$string['canntenrollate'] = 'Non puoi più iscriverti, le iscrizioni sono chiuse dal {$a}.';
 $string['cohortnonmemberinfo'] = 'Possono iscriversi spontaneamente solo gli appartenenti al gruppo globale \'{$a}\'';
 $string['cohortonly'] = 'Gruppo globale';
 $string['cohortonly_help'] = 'L\'iscrizione spontanea può essere limitata agli  appartenenti ad un determinato gruppo globale. Da notare che modificare questa impostazione non altera le iscrizioni già esistenti.';
@@ -34,7 +36,10 @@ $string['customwelcomemessage_help'] = 'E\' possibile inserire un messaggio pers
 
 E\' anche possibile utilizzare i seguenti segnaposto:
 
-* Titolo del corso {$a->coursename} * Link al profilo dell\'utente {$a->profileurl}';
+* Titolo del corso {$a->coursename}
+* Link al profilo dell\'utente {$a->profileurl}
+* Email dell\'utente {$a->email}
+* Nome dell\'utente {$a->fullname}';
 $string['defaultrole'] = 'Ruolo di default';
 $string['defaultrole_desc'] = 'Il ruolo di default da assegnare in caso di iscrizioni spontanee.';
 $string['enrolenddate'] = 'Data di fine';
@@ -65,6 +70,7 @@ $string['groupkey_desc'] = 'Utilizza per default le chiavi di iscrizione ai grup
 $string['groupkey_help'] = 'Oltre alla chiave di iscrizione al corso, è possibile usare chiavi di iscrizione ai gruppi per regolare sia l\'accesso al corso sia l\'inserimento automatico dell\'utente in un gruppo.
 
 Nota: per usare una chiave di iscrizione al gruppo è necessario specificare sia la chiave di iscrizione al corso sia la chiave di iscrizione al gruppo.';
+$string['keyholder'] = 'Dovresti ricevere una chiave d\'iscrizione da:';
 $string['longtimenosee'] = 'Disiscrivi utenti non attivi dopo';
 $string['longtimenosee_help'] = 'Consente di disiscvievre automaticamente quegli utenti che non abbiamo svolto attività per il numero di giorni impostato.';
 $string['maxenrolled'] = 'Numero max. di iscrizioni';
@@ -89,6 +95,7 @@ $string['requirepassword'] = 'Chiave d\'iscrizione obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave d\'iscrizione nei nuovi corsi ed evita l\'eliminazione di chiavi d\'iscrizione già esistenti.';
 $string['role'] = 'Ruolo assegnato per default';
 $string['self:config'] = 'Configurare istanze plugin Iscrizione spontanea';
+$string['self:holdkey'] = 'Risultare come gestore della chiave di iscrizione';
 $string['self:manage'] = 'Gestire utenti iscritti';
 $string['self:unenrol'] = 'Disiscrivere utenti dai corsi';
 $string['self:unenrolself'] = 'Disiscriversi dai corsi';

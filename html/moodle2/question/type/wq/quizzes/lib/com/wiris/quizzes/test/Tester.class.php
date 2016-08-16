@@ -87,7 +87,11 @@ class com_wiris_quizzes_test_Tester {
 																								if($id === "unicode2") {
 																									$this->responseUnicode2($res, $q, $qi);
 																								} else {
-																									throw new HException("Unknown test id.");
+																									if($id === "floatformat1") {
+																										$this->responseFloatFormat1($res, $q, $qi);
+																									} else {
+																										throw new HException("Unknown test id.");
+																									}
 																								}
 																							}
 																						}
@@ -110,13 +114,13 @@ class com_wiris_quizzes_test_Tester {
 					}
 				}
 			}
-			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 850, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 904, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 			$this->endCall();
 		}catch(Exception $�e) {
 			$_ex_ = ($�e instanceof HException) ? $�e->e : $�e;
 			$e = $_ex_;
 			{
-				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 853, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 907, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 				throw new HException($e);
 			}
 		}
@@ -232,7 +236,7 @@ class com_wiris_quizzes_test_Tester {
 			throw new HException("Failed test");
 		}
 		if($t2 >= $t1) {
-			haxe_Log::trace("WARNING: Uncached question was faster than cached one! time miss: " . _hx_string_rec($t1, "") . "ms, time hit: " . _hx_string_rec($t2, "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 690, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCache")));
+			haxe_Log::trace("WARNING: Uncached question was faster than cached one! time miss: " . _hx_string_rec($t1, "") . "ms, time hit: " . _hx_string_rec($t2, "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 742, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCache")));
 		}
 	}
 	public function testFilter() {
@@ -255,7 +259,7 @@ class com_wiris_quizzes_test_Tester {
 		$r = $qb->newVariablesRequest($text, $q, $qi);
 		$qi->update($qb->getQuizzesService()->execute($r));
 		$expanded = $qi->expandVariables($text);
-		haxe_Log::trace($expanded, _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 648, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testPerformance")));
+		haxe_Log::trace($expanded, _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 700, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testPerformance")));
 	}
 	public function responseTranslation1($s, $q) {
 		$fr = "<session lang=\"fr\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\">library</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>aléa</mi><mo>(</mo><mn>1</mn><mo>.</mo><mo>.</mo><mn>10</mn><mo>)</mo></math></input></command></group></library></session>";
@@ -276,12 +280,20 @@ class com_wiris_quizzes_test_Tester {
 		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("translation1", $this, $q, null));
 	}
 	public function responseEncodings2($s, $q, $qi) {
-		$text2 = "• #a";
-		$result2 = "• 123";
+		$texts = new _hx_array(array("• #a", "2 #b 3"));
+		$results = new _hx_array(array("• 123", "2 < 3"));
 		$qi->update($s);
-		$expanded2 = $qi->expandVariablesText($text2);
-		if(!($expanded2 === $result2)) {
-			throw new HException("Failed Test. Expected:\x0A" . $result2 . ".\x0AGot:\x0A" . $expanded2 . "\x0A");
+		$i = null;
+		{
+			$_g1 = 0; $_g = $texts->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$expanded = $qi->expandVariablesText($texts[$i1]);
+				if(!($expanded === $results[$i1])) {
+					throw new HException("Failed Test. Expected:\x0A" . $results[$i1] . ".\x0AGot:\x0A" . $expanded . "\x0A");
+				}
+				unset($i1,$expanded);
+			}
 		}
 	}
 	public function responseEncodings1($s, $q, $qi) {
@@ -304,11 +316,12 @@ class com_wiris_quizzes_test_Tester {
 		$this->numCalls++;
 		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("encodings1", $this, $q, $qi));
 		$text2 = "• #a";
-		$session2 = "<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mi style=\"color:#ffc800\">variables</mi><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>123</mn></math></input></command></group></library></session>";
+		$text3 = "2 #b 3";
+		$session2 = "<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>123</mn></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>=</mo><mo>&quot;</mo><mo>&lt;</mo><mo>&quot;</mo></math></input></command></group></library></session>";
 		$q = new com_wiris_quizzes_impl_QuestionImpl();
 		$qi = new com_wiris_quizzes_impl_QuestionInstanceImpl();
 		$q->wirisCasSession = $session2;
-		$r = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->newVariablesRequest($text2, $q, $qi);
+		$r = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->newVariablesRequest($text2 . " " . $text3, $q, $qi);
 		$this->numCalls++;
 		$s->executeAsync($r, new com_wiris_quizzes_test_TestIdServiceListener("encodings2", $this, $q, $qi));
 	}
@@ -410,6 +423,35 @@ class com_wiris_quizzes_test_Tester {
 		$this->numCalls++;
 		$rb->getQuizzesService()->executeAsync($eqs, new com_wiris_quizzes_test_TestIdServiceListener("openquestion1", $this, $q, null));
 	}
+	public function responseFloatFormat1($r, $q, $qi) {
+		$qi->update($r);
+		$computed = new _hx_array(array($qi->expandVariablesText("#a"), $qi->expandVariablesText("#b")));
+		$expected = new _hx_array(array("123.456.789", "1.234,57"));
+		$i = null;
+		{
+			$_g1 = 0; $_g = $computed->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if(!($computed[$i1] === $expected[$i1])) {
+					throw new HException("Failed text! Got " . $computed[$i1] . " instead of " . $expected[$i1] . ".");
+				}
+				unset($i1);
+			}
+		}
+	}
+	public function testFloatFormat() {
+		$rb = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
+		$q = $rb->newQuestion();
+		$qi = $rb->newQuestionInstance($q);
+		$q->setAlgorithm("<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>123456789</mn></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>=</mo><mn>1234</mn><mo>.</mo><mn>56789</mn></math></input></command></group></library></session>");
+		$q->setOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, ",");
+		$q->setOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT, ",f");
+		$q->setOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION, "2");
+		$q->setOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR, ".");
+		$req = $rb->newVariablesRequest("#a #b", $q, $qi);
+		$this->numCalls++;
+		$rb->getQuizzesService()->executeAsync($req, new com_wiris_quizzes_test_TestIdServiceListener("floatformat1", $this, $q, $qi));
+	}
 	public function responseFloatEval1($r, $q, $qi) {
 		$qi->update($r);
 		$res = $qi->expandVariablesMathML("#a");
@@ -425,7 +467,7 @@ class com_wiris_quizzes_test_Tester {
 	public function testFloatEval() {
 		$rb = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance();
 		$q = $rb->newQuestion();
-		$qi = $rb->newQuestionInstance(null);
+		$qi = $rb->newQuestionInstance($q);
 		$q->setAlgorithm("<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>1000000</mn><mo>.</mo></math></input></command></group></library></session>");
 		$q->addAssertion(com_wiris_quizzes_impl_Assertion::$SYNTAX_QUANTITY, 0, 0, null);
 		$q->setOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, ",");
@@ -461,8 +503,8 @@ class com_wiris_quizzes_test_Tester {
 	}
 	public function responseImages2($s, $q, $qi) {
 		$text = "#p";
-		$expandedLinux = "<img id=\"4e0fa2b5e6d8b12ce9fda6541fdb5557\" src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=4e0fa2b5e6d8b12ce9fda6541fdb5557.png\"/>";
-		$expandedWindows = "<img id=\"d12e3d4c916bf89de659e0d53002dc8e\" src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=d12e3d4c916bf89de659e0d53002dc8e.png\"/>";
+		$expandedLinux = "<img src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=4e0fa2b5e6d8b12ce9fda6541fdb5557.png\" class=\"wirisplotter\"/>";
+		$expandedWindows = "<img src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=d12e3d4c916bf89de659e0d53002dc8e.png\" class=\"wirisplotter\"/>";
 		$qi->update($s);
 		$res = $qi->expandVariables($text);
 		if(!($res === $expandedLinux) && !($res === $expandedWindows)) {
@@ -471,8 +513,8 @@ class com_wiris_quizzes_test_Tester {
 	}
 	public function responseImages1($s, $q, $qi) {
 		$text = "#p";
-		$expandedLinux = "<img id=\"4e0fa2b5e6d8b12ce9fda6541fdb5557\" src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=4e0fa2b5e6d8b12ce9fda6541fdb5557.png\"/>";
-		$expandedWindows = "<img id=\"d12e3d4c916bf89de659e0d53002dc8e\" src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=d12e3d4c916bf89de659e0d53002dc8e.png\"/>";
+		$expandedLinux = "<img src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=4e0fa2b5e6d8b12ce9fda6541fdb5557.png\" class=\"wirisplotter\"/>";
+		$expandedWindows = "<img src=\"" . com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=d12e3d4c916bf89de659e0d53002dc8e.png\" class=\"wirisplotter\"/>";
 		$qi->update($s);
 		$res = $qi->expandVariables($text);
 		if(!($res === $expandedLinux) && !($res === $expandedWindows)) {
@@ -514,8 +556,8 @@ class com_wiris_quizzes_test_Tester {
 		if($qqi->getBooleanVariableValue("f")) {
 			throw new HException("Failed test!. f was false");
 		}
-		$langs = new _hx_array(array("en", "es"));
-		$tests = new _hx_array(array("Input method", "Método de entrada"));
+		$langs = new _hx_array(array("en", "es", "ca", "it", "fr", "de", "el", "pt"));
+		$tests = new _hx_array(array("Input method", "Método de entrada", "Mètode d'entrada", "Metodo di input", "Méthode de saisie", "Eingabemethode", "Μέθοδος εισόδου", "Método de entrada"));
 		$i = null;
 		{
 			$_g1 = 0; $_g = $langs->length;
@@ -593,10 +635,23 @@ class com_wiris_quizzes_test_Tester {
 	public function responseCompound3($s, $q, $qi) {
 		$qi->update($s);
 		$qqi = $qi;
+		$qq = _hx_deref(($q))->getImpl();
 		if(!($qqi->getAnswerGrade(0, 0, $q) === 1.0)) {
 			throw new HException("Failed test!");
 		}
 		if(!($qqi->getAnswerGrade(1, 0, $q) === 0.0)) {
+			throw new HException("Failed test!");
+		}
+		if(!($qqi->getCompoundAnswerGrade(0, 0, 0, $q) === 1.0)) {
+			throw new HException("Failed test!");
+		}
+		if(!($qqi->getCompoundAnswerGrade(0, 0, 2, $q) === 1.0)) {
+			throw new HException("Failed test!");
+		}
+		if(!($qqi->getCompoundAnswerGrade(1, 0, 0, $q) === 0.0)) {
+			throw new HException("Failed test!");
+		}
+		if(!($qqi->getCompoundAnswerGrade(1, 0, 2, $q) === 0.0)) {
 			throw new HException("Failed test!");
 		}
 	}
@@ -621,6 +676,24 @@ class com_wiris_quizzes_test_Tester {
 			throw new HException("Failed test!");
 		}
 		if(!$qqi->isAnswerMatching(0, 3)) {
+			throw new HException("Failed test!");
+		}
+		if($qqi->getCompoundAnswerGrade(0, 1, 0, $qq) !== 0.0) {
+			throw new HException("Failed test!");
+		}
+		if($qqi->getCompoundAnswerGrade(0, 1, 1, $qq) !== 1.0) {
+			throw new HException("Failed test!");
+		}
+		if($qqi->getCompoundAnswerGrade(0, 1, 2, $qq) !== 1.0) {
+			throw new HException("Failed test!");
+		}
+		if($qqi->getCompoundAnswerGrade(0, 2, 0, $qq) !== 1.0) {
+			throw new HException("Failed test!");
+		}
+		if($qqi->getCompoundAnswerGrade(0, 2, 1, $qq) !== 0.0) {
+			throw new HException("Failed test!");
+		}
+		if($qqi->getCompoundAnswerGrade(0, 2, 2, $qq) !== 0.0) {
 			throw new HException("Failed test!");
 		}
 		$qq->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE);
@@ -700,12 +773,12 @@ class com_wiris_quizzes_test_Tester {
 	public function run() {
 		$g = new com_wiris_quizzes_impl_HTMLGui("en");
 		$c = new com_wiris_quizzes_impl_HTMLGuiConfig("");
-		haxe_Log::trace("Starting generic integration test...", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 54, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
+		haxe_Log::trace("Starting generic integration test...", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 55, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
 		$this->numCalls++;
 		$this->start = Date::now();
-		$h = new com_wiris_quizzes_impl_HTMLTools();
-		$h->unitTest();
-		haxe_Log::trace("HTML unit test OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 61, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
+		$h = new com_wiris_quizzes_impl_HTMLToolsUnitTests();
+		$h->run();
+		haxe_Log::trace("HTML unit test OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 63, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "run")));
 		$this->testUnicode();
 		$this->testParameters();
 		$this->testHandwritingConstraints();
@@ -723,6 +796,7 @@ class com_wiris_quizzes_test_Tester {
 		$this->testTranslation();
 		$this->testTolerance();
 		$this->testRandomQuestion();
+		$this->testFloatFormat();
 		if(!(com_wiris_settings_PlatformSettings::$IS_FLASH || com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT)) {
 			$this->testImages();
 		}
@@ -737,7 +811,7 @@ class com_wiris_quizzes_test_Tester {
 		$this->numCalls--;
 		if($this->numCalls <= 0) {
 			$end = Date::now();
-			haxe_Log::trace("Successful test!. Time: " . _hx_string_rec(($end->getTime() - $this->start->getTime()), "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 43, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "endCall")));
+			haxe_Log::trace("Successful test!. Time: " . _hx_string_rec(($end->getTime() - $this->start->getTime()), "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 44, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "endCall")));
 		}
 	}
 	public $numCalls;

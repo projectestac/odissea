@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = 'Als deel van je recente Moodle-upgrade naar 2.6 is je Box-portfolio uitgeschakeld. Om dat opnieuw in te schakelen, moet je het herconfigureren zoals beschreven in de documentatie {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'Deze plugin is uitgeschakeld, omdat de configuratie moet aangepast worden zoals beschreven in de Box API v1  migratiedocumentatie.';
-$string['apiv1migration_message_subject'] = 'Belangrijke informatie over de Box-plugin';
 $string['clientid'] = 'Client ID';
 $string['clientsecret'] = 'Client geheim';
 $string['existingfolder'] = 'Bestaande map om bestand(en) in te zetten';

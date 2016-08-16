@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = '利用可能なコース登録プラグイン';
 $string['addinstance'] = '登録方法を追加する';
+$string['addinstanceanother'] = '登録方法を追加して、もう1つ作成する';
 $string['ajaxnext25'] = '次の25 ...';
 $string['ajaxoneuserfound'] = '1名のユーザが見つかりました。';
 $string['ajaxxusersfound'] = '{$a} 名のユーザが見つかりました。';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = 'このコース内でのコーホート同期登�
 $string['errorenrolcohortusers'] = 'このコースへのコーホートメンバー登録中にエラーが発生しました。';
 $string['errorthresholdlow'] = '通知閾値は少なくとも1日にする必要があります。';
 $string['errorwithbulkoperation'] = 'あなたのバルク登録変更処理中にエラーが発生しました。';
+$string['eventenrolinstancecreated'] = '登録インスタンスが作成されました。';
+$string['eventenrolinstancedeleted'] = '登録インスタンスが削除されました。';
+$string['eventenrolinstanceupdated'] = '登録インスタンスが更新されました。';
 $string['eventuserenrolmentcreated'] = 'ユーザがコースに登録されました。';
 $string['eventuserenrolmentdeleted'] = 'ユーザがコースから登録解除されました。';
 $string['eventuserenrolmentupdated'] = 'ユーザ登録解除が更新されました。';
@@ -91,6 +95,7 @@ $string['extremovedsuspendnoroles'] = 'コース登録を無効にして、ロ�
 $string['extremovedunenrol'] = 'コースからユーザを登録解除する';
 $string['finishenrollingusers'] = 'ユーザ登録を終了する';
 $string['foundxcohorts'] = '{$a} 件のコーホートが見つかりました。';
+$string['instanceadded'] = '登録方法が追加されました。';
 $string['instanceeditselfwarning'] = '警告:';
 $string['instanceeditselfwarningtext'] = 'あなたはこの登録方法により、このコースに登録されています。変更することにより、このコースに対するあなたのアクセスに影響する場合があります。';
 $string['invalidenrolinstance'] = '無効な登録インスタンスです。';
@@ -100,6 +105,7 @@ $string['manageinstance'] = '管理';
 $string['migratetomanual'] = '手動登録に移行する';
 $string['nochange'] = '変更なし';
 $string['noexistingparticipants'] = '参加者は登録されていません。';
+$string['nogroup'] = 'グループなし';
 $string['noguestaccess'] = 'このコースにゲストはアクセスできません。ログインしてください。';
 $string['none'] = 'なし';
 $string['notenrollable'] = 'あなたはこのコースに登録できません。';
@@ -112,6 +118,7 @@ $string['periodend'] = '-> {$a}';
 $string['periodnone'] = '登録日時 {$a}';
 $string['periodstart'] = '{$a}';
 $string['periodstartend'] = '{$a->start} -> {$a->end}';
+$string['proceedtocourse'] = 'コースコンテンツに移動する';
 $string['recovergrades'] = '可能であればユーザの古い評点を回復する';
 $string['rolefromcategory'] = '{$a->role} (コースカテゴリより継承)';
 $string['rolefrommetacourse'] = '{$a->role} (親コースより継承)';

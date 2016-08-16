@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['aggregateonlygraded_help'] = 'Kalifikazio hutsa kalifikazio-liburuan ez
 Ezarpen honek adierazten du kalifikazio hutsak agregazioan sartzen ez diren ala gutxieneko kalifikaziotzat hartzen diren, adibidez 0 0tik 100era kalifikatzen den zeregin batean.';
 $string['aggregateoutcomes'] = 'Ikas-emaitzak agregazioan sartu';
 $string['aggregateoutcomes_help'] = 'Gaituta, ikas-emaitzak agregazioan sartzen dira. Honen ondorioz, kategoriako guztirakoa espero ez zena izan daiteke.';
-$string['aggregatesonly'] = 'Agregatutakoak baino ez';
+$string['aggregatesonly'] = 'Aldatu agregatutakoetara bakarrik';
 $string['aggregatesum'] = 'Kalifikazioen batura';
 $string['aggregateweightedmean'] = 'Kalifikazioen batez besteko ponderatua';
 $string['aggregateweightedmean2'] = 'Kalifikazioen batez besteko ponderatu sinplea';
@@ -123,7 +123,6 @@ $string['calculationview'] = 'Ikusi kalkulua';
 $string['cannotaccessgroup'] = 'Ezin dira eskuratu aukeratutako taldearen kalifikazioa, barkatu.';
 $string['categories'] = 'Kategoriak';
 $string['categoriesanditems'] = 'Kategoriak eta elementuak';
-$string['categoriesedit'] = 'Editatu ezarpenak';
 $string['category'] = 'Kategoria';
 $string['categoryedit'] = 'Editatu kategoria';
 $string['categoryname'] = 'Kategoriaren izena';
@@ -149,6 +148,8 @@ $string['coursename'] = 'Ikastaroaren izena';
 $string['coursescales'] = 'Ikastaroaren eskalak';
 $string['coursesettings'] = 'Ikastaroaren ezarpenak';
 $string['coursesettingsexplanation'] = 'Ikastaroen ezarpenetan zehazten da kalifikazio-liburua nola agertuko zaien partaide guztiei ikastaroan.';
+$string['coursesiamtaking'] = 'Ikasle naizen ikastaroak';
+$string['coursesiamteaching'] = 'Irakasle naizen ikastaroak';
 $string['coursetotal'] = 'Ikastaroan guztira';
 $string['createcategory'] = 'Kategoria sortu';
 $string['createcategoryerror'] = 'Ezin da kategoria berririk sortu';
@@ -190,7 +191,7 @@ $string['editverbose'] = 'Editatu: {$a->category} {$a->itemmodule} {$a->itemname
 $string['enableajax'] = 'Gaitu AJAX';
 $string['enableajax_help'] = 'Kalifikatzailearen txostenari AJAX funtzionalitate geruza bat gehitzen dio, ohiko eragiketak arinduz. Erabiltzailearen nabigatzaileak Javascript-a aktibatuta izan behar du.';
 $string['enableoutcomes'] = 'Ikas-emaitzak gaitu';
-$string['enableoutcomes_help'] = 'Ikas-emaitzetarako (bestela ere gaitasunak, estandarrak edo Irizpideak deitutakoak) osagarria.  Ikas-emaitzekin lotutako eskala bat edo gehiago erabilita kalifikatuko dugula esan nahi du. Ikas-emaitzak aktibatuta gune osoan kalifika daiteke era berezi honetan.';
+$string['enableoutcomes_help'] = 'Helburuetarako (Gaitasunak, Estandarrak, Irizpideak...) osagarria. Helburuekin lotutako eskala bat edo gehiago erabilita kalifikatuko dugula esan nahi du. Helburuak aktibatuta gune osoan kalifika daiteke era berezi honetan.';
 $string['encoding'] = 'Kodifikazioa';
 $string['errorcalculationbroken'] = 'Ziur aski erreferentzia zirkularra edo kalkulu-formula okerra';
 $string['errorcalculationnoequal'] = 'Formulak berdin sinboloarekin hasi behar du (=1+2)';
@@ -221,6 +222,8 @@ $string['exportonlyactive_help'] = 'Inportazioan bakarrik sartzen dira matrikula
 $string['exportplugins'] = 'Esportatu pluginak';
 $string['exportsettings'] = 'Esportatu ezarpenak';
 $string['exportto'] = 'Esportatu hona:';
+$string['externalurl'] = 'Kanpoko URLa';
+$string['externalurl_desc'] = 'Kanpoko kalifikazio-liburua erabiliz gero, hemen zehaztu behar da URLa.';
 $string['extracreditvalue'] = 'Aparteko kreditu-balorea {$a}rako';
 $string['extracreditwarning'] = 'Oharra: Kategoriko elementu guztiak krediturik gabe uzten badira, notaren kalkuluan ez dira kontuan hartuko eta, ondorioz, puntuazio orokorrik ez da izango';
 $string['feedback'] = 'Feedbacka';
@@ -241,8 +244,7 @@ $string['forceon'] = 'Behartu: On';
 $string['forelementtypes'] = 'aukeratutako {$a}-(r)entzat';
 $string['forstudents'] = 'Ikasleentzat';
 $string['full'] = 'Osoa';
-$string['fullmode'] = 'Ikusi osoa';
-$string['fullview'] = 'Ikuspegi osoa';
+$string['fullmode'] = 'Aldatu ikuspegi osora';
 $string['generalsettings'] = 'Ezarpen orokorrak';
 $string['grade'] = 'Kalifikazioa';
 $string['gradeadministration'] = 'Kalifikazioen kudeaketa';
@@ -250,6 +252,7 @@ $string['gradeanalysis'] = 'Kalifikazio-analisia';
 $string['gradebook'] = 'Kalifikazio-liburua';
 $string['gradebookhiddenerror'] = 'Kalifikazio-liburua konfiguratuta dago ikasleei ezer ez erakusteko.';
 $string['gradebookhistories'] = 'Kalifikazioen historiak';
+$string['gradebooksetup'] = 'Kalifikazio-liburuaren ezarpenak';
 $string['gradeboundary'] = 'Kalifikazio-letren muga';
 $string['gradeboundary_help'] = 'Ezarpen honek adierazten du zein ehunekotik aurrera emango den kalifikazioa letra bidez.';
 $string['gradecategories'] = 'Kalifikazio-kategoriak';
@@ -308,6 +311,7 @@ $string['gradeoutcomeitem'] = 'Kalifikaziorako ikas-emaitza elementuak';
 $string['gradeoutcomes'] = 'Ikas-emaitzak';
 $string['gradeoutcomescourses'] = 'Ikastaroaren ikas-emaitzak';
 $string['gradepass'] = 'Gainditzeko kalifikazioa';
+$string['gradepassgreaterthangrade'] = 'Gainditzeko kalifikazioa ezin da izan gehieneko kalifikazio posiblea baino handiagoa {$a}';
 $string['gradepass_help'] = 'Ezarpen honek zehazten du gainditzeko gutxienezko kalifikazioa. balorea jarduera eta ikastaro-osaketan erabiltzen da, eta baita kalifikazio-liburuan, zeinetan gainditzeko kalifikazioak berdez markatzen diren eta gainditzen ez dutenak gorriz.';
 $string['gradepointdefault'] = 'Berezko kalifikazioa';
 $string['gradepointdefault_help'] = 'Ezarpen honek  jarduera baterako gehieneko puntuazio eskuragarrirako berezko balorea zehazten du.';
@@ -324,7 +328,7 @@ $string['gradereport'] = 'Kalifikazio-txostena';
 $string['graderreport'] = 'Kalifikatzailearen txostena';
 $string['grades'] = 'Kalifikazioak';
 $string['gradesforuser'] = '{$a->user} erabiltzailearen kalifikazioak';
-$string['gradesonly'] = 'Kalifikazioak baino ez';
+$string['gradesonly'] = 'Aldatu bakarrik kalifikazioetara';
 $string['gradessettings'] = 'kalifikazioen ezarpenak';
 $string['gradetype'] = 'Kalifikazio-mota';
 $string['gradetype_help'] = '4 kalifikazio mota daude:
@@ -474,6 +478,7 @@ $string['norolesdefined'] = 'Definitu gabeko rolak hemen: Kudeaketa > Kalifikazi
 $string['noscales'] = 'Ikas-emaitzak ikastaroko eskala edo eskala global batekin egon behar du lotuta, baina ez dago bat ere. Gehitu nahi al duzu bat?';
 $string['noselectedcategories'] = 'ez da kategoriarik aukeratu.';
 $string['noselecteditems'] = 'ez da elementurik aukeratu.';
+$string['notenrolled'] = 'Une honetan ez zaude matrikulatuta ezein ikastarotan.';
 $string['notteachererror'] = 'Irakasleek soilik erabil dezakete aukera hau.';
 $string['nousersloaded'] = 'Ez da erabiltzailerik aurkitu';
 $string['numberofgrades'] = 'Kalifikazio-kopurua';

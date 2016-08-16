@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,6 +105,7 @@ $string['badgeprivacysetting_help'] = 'Las insignias que usted gane se pueden mo
 
 Puede controlar la configuración de privacidad de las insignias individuales en la página "Mis insignias".';
 $string['badgeprivacysetting_str'] = 'Mostrar automáticamente en mi página de perfil las insignias que he ganado';
+$string['badges'] = 'Insignias';
 $string['badgesalt'] = 'Salado hash para la dirección de correo electrónica del destinatario';
 $string['badgesalt_desc'] = 'Usar un \'hash\' permite que los servicios de mochila confirmen el origen de la insignia sin tener que mostrar su dirección de correo electrónico. Este ajuste debe utilizar solo números y letras.
 
@@ -217,6 +218,7 @@ $string['error:backpackproblem'] = 'Hay un problema al conectar a su proveedor d
 $string['error:badjson'] = 'El intento de conexión devolvió datos no válidos.';
 $string['error:cannotact'] = 'No se puede activar la insignia.';
 $string['error:cannotawardbadge'] = 'No se puede conceder la insignia a un usuario.';
+$string['error:cannotdeletecriterion'] = 'Este criterio no puede ser borrado.';
 $string['error:clone'] = 'No se puede clonar la insignia';
 $string['error:connectionunknownreason'] = 'La conexión no tuvo éxito, pero no se conoce el motivo.';
 $string['error:duplicatename'] = 'Una insignia con ese nombre ya existe en el sistema.';
@@ -244,6 +246,7 @@ $string['error:requesterror'] = 'La solicitud de conexión ha fallado (código d
 $string['error:requesttimeout'] = 'Terminó el tiempo de solicitud de conexión antes de que esta se pudiera llevar a cabo.';
 $string['error:save'] = 'No se puede guardar la insignia';
 $string['error:userdeleted'] = '{$a->user} (Este usuario ya no existe en {$a->site})';
+$string['eventbadgeawarded'] = 'Insignia concedida';
 $string['evidence'] = 'Evidencia';
 $string['existingrecipients'] = 'Destinatarios de insignias existentes';
 $string['expired'] = 'Expirada';
@@ -260,7 +263,6 @@ $string['externalbadges_help'] = 'En esta área se muestran las insignias de la 
 $string['externalbadgesp'] = 'Insignias de otros sitios web';
 $string['externalconnectto'] = 'Para mostrar las insignias externas necesita <a href="{$a}">conectarse a una mochila</a> .';
 $string['fixed'] = 'Fecha fija';
-$string['hidden'] = 'Oculto';
 $string['hiddenbadge'] = 'Por desgracia, el propietario de la insignia no ha publicado esta información.';
 $string['issuancedetails'] = 'Caducidad de la insignia';
 $string['issuedbadge'] = 'Información de la insignia emitida';
@@ -282,7 +284,7 @@ $string['makepublic'] = 'Hacer público';
 $string['managebadges'] = 'Gestionar insignias';
 $string['message'] = 'Cuerpo del mensaje';
 $string['messagebody'] = '<p> ¡Se le ha otorgado una insignia "%badgename%"!</p>
-<p> Puede encontrar más información sobre esta insignia en %badgelink%. </p>
+<p> Puede encontrar más información sobre esta insignia en la %badgelink% página de información de insignias. </p>
 <p> Puede gestionar y descargar la insignia desde {$a}. </p>';
 $string['messagesubject'] = '¡Felicitaciones, acaba de ganar una insignia!';
 $string['method'] = 'Este criterio se cumple cuando...';
@@ -329,6 +331,7 @@ $string['overallcrit'] = 'de los criterios seleccionados se cumple.';
 $string['personaconnection'] = 'Inicie sesión con su dirección de email';
 $string['personaconnection_help'] = 'Persona es un sistema para su identificación en la web, usando una dirección de correo electrónico de su propiedad. La mochila de Open Badges utiliza Persona como sistema de inicio de sesión, por lo que para conectarse a una mochila necesita una cuenta de Persona. Para obtener más información acerca de Persona visite <a href="https://login.persona.org/about">https://login.persona.org/about</a> .';
 $string['potentialrecipients'] = 'Potenciales destinatarios de la insignia';
+$string['preferences'] = 'Preferencias de insignias';
 $string['recipientdetails'] = 'Detalles del destinatario';
 $string['recipientidentificationproblem'] = 'No se puede encontrar un destinatario de esta insignia entre los usuarios existentes.';
 $string['recipients'] = 'Destinatarios de la insignia';

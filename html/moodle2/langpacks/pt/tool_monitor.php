@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,6 @@ $string['monitorenabled'] = 'A monitorização de eventos está atualmente ativa
 $string['monitor:managerules'] = 'Gerir regras de monitorização de eventos';
 $string['monitor:managetool'] = 'Ativar/desativar monitorização de eventos';
 $string['monitor:subscribe'] = 'Subscrever regras de monitorização de eventos';
-$string['nopermission'] = 'Sem permissão';
 $string['norules'] = 'Não existem regras de monitorização de eventos.';
 $string['pluginname'] = 'Monitor de eventos';
 $string['processevents'] = 'Eventos de processo';
@@ -88,6 +87,7 @@ $string['ruledeletesuccess'] = 'Regra apagada com sucesso';
 $string['rulehelp'] = 'Detalhes da regra';
 $string['rulehelp_help'] = 'Esta regra deteta quando o evento \'{$a->eventname}\' em \'{$a->eventcomponent}\' foi desencadeado {$a->frequency} vez(es) em {$a->minutes} minuto(s).';
 $string['rulename'] = 'Nome da regra';
+$string['rulenopermission'] = 'Não tem permissão para subscrever qualquer evento.';
 $string['rulenopermissions'] = 'Não tem permissões para "{$a} uma regra"';
 $string['rulescansubscribe'] = 'Regras que pode subscrever';
 $string['selectacourse'] = 'Selecione um contexto:';
@@ -98,5 +98,6 @@ $string['subdeletesuccess'] = 'Subscrição removida com sucesso';
 $string['subhelp'] = 'Detalhes da subscrição';
 $string['subhelp_help'] = 'Esta subscrição deteta quando o evento \'{$a->eventname}\' foi desencadeado em \'{$a->moduleinstance}\' {$a->frequency}  vez(es) em {$a->minutes} minuto(s).';
 $string['subscribeto'] = 'Subscrever a regra "{$a}"';
+$string['taskchecksubscriptions'] = 'Ativar/desativar regras inválidas de subscrições';
 $string['taskcleanevents'] = 'Remove todos os eventos desnecessários do monitor de eventos';
 $string['unsubscribe'] = 'Cancelar subscrição';

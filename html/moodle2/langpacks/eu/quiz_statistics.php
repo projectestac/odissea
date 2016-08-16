@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['detailedanalysis'] = 'Galdera honetarako ebazpenen analisi zehatzagoa';
 $string['detailedanalysisforvariant'] = 'Galdera honetarako ebazpenen {$a}-ren aldaeraren analisi zehatzagoa';
 $string['discrimination_index'] = 'Diskriminazio-indizea';
 $string['discriminative_efficiency'] = 'Efizientzia diskriminatzailea';
-$string['downloadeverything'] = 'Jaitsi txosten osoa {$a->formatsmenu} gisa {$a->downloadbutton}';
+$string['downloadeverything'] = 'Jaitsi txosten osoa honela';
 $string['duration'] = 'Zabalik honentzat';
 $string['effective_weight'] = 'Benetako pisua';
 $string['errordeleting'] = 'Errorea {$a} erregistro zahar ezabatzean';

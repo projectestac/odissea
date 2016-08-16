@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'local_mobile', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowpermissions'] = 'Conceder permissões ao papel de "Utilizador autenticado"';
 $string['allowpermissionsdescription'] = 'Edite o papel "Utilizador autenticado" e adicione a permissão moodle/webservice:createtoken';
+$string['cannotcreatetoken'] = 'A funcionalidade gerar token automaticamente não está disponível para os administradores do site (estes têm de gerar o token manualmente no site)';
 $string['checkpluginconfiguration'] = 'Verifique as configurações do módulo';
 $string['enableadditionalservice'] = 'Ativar o serviço de funcionalidades adicionais do Moodle Mobile';
 $string['enableadditionalservicedescription'] = 'Este serviço deve estar ativado.';

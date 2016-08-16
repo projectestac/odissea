@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lti', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addtype'] = '添加外部工具配置';
 $string['allow'] = '允许';
 $string['allowinstructorcustom'] = '允许教师添加自定义';
 $string['always'] = '总是';
-$string['baseurl'] = '基础 URL';
+$string['baseurl'] = '基础网页地址 / 工具注册名称';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'LTI 活动';
 $string['basicltifieldset'] = '定制用力控件组';
@@ -204,7 +204,6 @@ $string['setupoptions'] = '设置选项';
 $string['share_email_admin'] = '使用工具分享启动者的名字';
 $string['share_name'] = '使用此工具分享启动者的名字';
 $string['share_name_admin'] = '使用工具分享启动者的名字';
-$string['show_in_course'] = '建立工具实例时显示工具类型';
 $string['submissions'] = '提交';
 $string['tool_settings'] = '工具设置';
 $string['toolsetup'] = '外部工具配置';

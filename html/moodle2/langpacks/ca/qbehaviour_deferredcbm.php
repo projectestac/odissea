@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,3 +70,4 @@ $string['pluginname'] = 'Retroacció diferida amb QBC (CBM)';
 $string['slightlyoverconfident'] = 'una mica massa confiat';
 $string['slightlyunderconfident'] = 'un poc baix de confiança';
 $string['underconfident'] = 'molt poca confiança';
+$string['weightx'] = 'Pes {$a}';

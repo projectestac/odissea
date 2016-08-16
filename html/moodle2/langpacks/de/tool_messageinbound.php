@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,7 +70,7 @@ $string['messageinboundhostssl_desc'] = 'Einige E-Mail-Server unterstützen die 
 $string['messageinboundhosttype'] = 'Servertyp';
 $string['messageinboundhostuser'] = 'Nutzername';
 $string['messageinboundhostuser_desc'] = 'Diesen Nutzernamen haben Sie für den Login zu dem E-Mail-Postfach hinterlegt.';
-$string['messageinboundmailboxconfiguration_desc'] = 'Wenn Nachrichten versandt werden, nutzen Sie das Format address+data@example.com. Um zuverlässige E-Mial-Adresssen zu erzeugen legen Sie die Adresssen, die Sie vor und nach dem @-Zeichen verwenden, getrennt an.  Der Mailboxname in dem Beispiel oben wäre \'address\' und die E-Mail-Domain lautet \'example.com\'. Verwenden Sie für diesen Zweck eine gesonderte E-Mail-Adresse.';
+$string['messageinboundmailboxconfiguration_desc'] = 'Wenn Nachrichten versandt werden, nutzen Sie das Format address+data@example.com. Um zuverlässige E-Mail-Adressen zu erzeugen legen Sie die Adressen, die Sie vor und nach dem @-Zeichen verwenden, getrennt an.  Der Mailboxname in dem Beispiel oben wäre \'address\' und die E-Mail-Domain lautet \'example.com\'. Verwenden Sie für diesen Zweck eine gesonderte E-Mail-Adresse.';
 $string['messageprocessingerror'] = 'Sie haben vor kurzem Eine E-Mail mit dem Betreff  "{$a->subject}" versandt. Diese konnte nicht zugestellt werden.
 
 Die Gründe hierfür stehen hier unten.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'notes', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['eventnoteupdated'] = 'Aggiornata nota';
 $string['groupaddnewnote'] = 'Aggiungi una nuova annotazione per tutti';
 $string['invalidid'] = 'E\' stato indicato una ID errata dell\'annotazione';
 $string['invaliduserid'] = 'Id utente non valida: {$a}';
+$string['myprofileownnotes'] = 'Le mie note';
 $string['nocontent'] = 'Il contenuto della annotazione non può essere vuoto';
 $string['nonotes'] = 'Non ci sono ancora annotazioni di questo tipo';
 $string['nopermissiontodelete'] = 'Potresti non essere autorizzato ad eliminare questa note';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'Editar canales de noticias';
 $string['editrssblock'] = 'Editar bloque de cabecera RSS';
 $string['enableautodiscovery'] = '¿Habilitar auto-descubrimiento de canales?';
 $string['enableautodiscovery_help'] = 'Si se activa, se encontrarán automáticamente los canales en páginas web. Por ejemplo, si se introduce http://docs.moodle.org, se encontrará http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss.';
-$string['errorloadingfeed'] = 'Error al cargar este canal RSS ({$a})';
 $string['feed'] = 'Canal';
 $string['feedadded'] = 'Añadido canal de noticias';
 $string['feeddeleted'] = 'Eliminado canal de noticias';

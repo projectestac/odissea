@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_singleactivity', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   format_singleactivity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,4 @@ $string['orphaned'] = 'Verweesd';
 $string['orphanedwarning'] = 'Deze activiteiten kunnen door gebruikers niet bereikt worden!';
 $string['pluginname'] = 'Eén activiteit format';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'Wanneer je de bestaande curus format wijzigt naar "Eén activiteit-format", zorg er dan voor dat je eerst alle bestaande activiteiten, Nieuwsforum inbegrepen, verwijdert. Ook de sectiestructuur kan gewijzigd worden.';
+$string['warningchangeformat'] = 'Wanneer je de bestaande curus format wijzigt naar "Eén activiteit-format", zorg er dan voor dat je eerst alle bestaande activiteiten, "Mededelingen" inbegrepen, verwijdert. Ook de sectiestructuur kan gewijzigd worden.';

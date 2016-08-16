@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,17 +28,20 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowdeletes'] = 'Разрешить удаления';
 $string['allowrenames'] = 'Разрешить переименовывать';
 $string['allowsuspends'] = 'Разрешить блокировку и активацию учетных записей';
+$string['assignedsysrole'] = 'Назначена системная роль {$a}';
 $string['csvdelimiter'] = 'Разделитель для CSV';
 $string['defaultvalues'] = 'Значения по умолчанию';
 $string['deleteerrors'] = 'Ошибки удаления';
 $string['encoding'] = 'Кодировка';
 $string['errormnetadd'] = 'Невозможно добавить отдаленных пользователей';
 $string['errors'] = 'Ошибки';
+$string['invaliduserdata'] = 'Обнаружены некорректные данные для пользователя {$a}, они были автоматически очищены.';
 $string['nochanges'] = 'Не изменять';
 $string['pluginname'] = 'Загрузка пользователей';
 $string['renameerrors'] = 'Ошибки переименования';
 $string['requiredtemplate'] = 'Обязательный параметр. Здесь Вы можете использовать подстановки (%l = фамилия, %f = имя, %u = логин). Подробнее смотрите в справке и примерах.';
 $string['rowpreviewnum'] = 'Строк предпросмотра';
+$string['unassignedsysrole'] = 'Отменено назначение системной роли {$a}';
 $string['uploadpicture_baduserfield'] = 'Указано некорректный атрибут пользователя. Пожалуйста, попробуйте снова.';
 $string['uploadpicture_cannotmovezip'] = 'Невозможно переместить zip-файл во временный каталог.';
 $string['uploadpicture_cannotprocessdir'] = 'Невозможно обработать разархивированные файлы.';

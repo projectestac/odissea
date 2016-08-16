@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_glossary_random', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'Quan els usuaris puguin afegir entrades al glossari, m
 $string['askinvisible'] = 'Quan els usuaris no puguin editar o veure el glossari, mostra aquest text (sense enllaç).';
 $string['askviewglossary'] = 'Quan els usuaris puguin veure el glossari però no afegir entrades, mostra un enllaç amb aquest text.';
 $string['glossary_random:addinstance'] = 'Afegir un bloc nou d\'entrada de glossari aleatòri';
-$string['glossary_random:myaddinstance'] = 'Afegir un bloc nou d\'entrada de glossari aleatori a la pàgina del «meu Moodle».';
+$string['glossary_random:myaddinstance'] = 'Afegeix un bloc nou d\'entrada de glossari aleatori a la pàgina del Tauler.';
 $string['intro'] = 'Assegureu-vos de tenir almenys un glossari amb almenys una entrada per aquest curs. Llavors, podeu configurar els següents paràmetres';
 $string['invisible'] = '( continuarà )';
 $string['lastmodified'] = 'Darrera entrada modificada';

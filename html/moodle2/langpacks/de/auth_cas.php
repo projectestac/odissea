@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,15 @@ $string['auth_cas_certificate_path_key'] = 'Zertifikatspfad';
 $string['auth_cas_changepasswordurl'] = 'URL zur Kennwortänderung';
 $string['auth_cas_create_user'] = 'Aktivieren Sie die Einstellung, um CAS authentifizierte Nutzer/innen in die Moodle-Datenbank einzufügen. Andernfalls können sich nur die Nutzer/innen anmelden, die bereits in der Moodle-Datenbank vorhanden sind.';
 $string['auth_cas_create_user_key'] = 'Nutzer anlegen';
+$string['auth_cas_curl_ssl_version'] = 'Benutzte SSL-Version (2 oder 3). Standardmäßig erkennt PHP die Version selbstständig, aber manchmal muss sie manuell eingetragen werden.';
+$string['auth_cas_curl_ssl_version_default'] = 'Standardmäßig';
+$string['auth_cas_curl_ssl_version_key'] = 'SSL-Version für cURL';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = 'Dieses Verfahren verwendet einen CAS Server (Central Authentification Service) zur Authentifizierung über Single-Sign-On (SSO). Sie können alternative auch eine einfache LDAP Authentifizierung verwenden. Wenn der benutzte Anmeldename und das Kennwort auf dem CAS Server bei der erstmaligen Anmeldung gültig sind, erstellt Moodle einen neuen Nutzereintrag in seiner Datenbank und übernimmt weitere erforderliche Daten über LDAP. Bei späteren Anmeldungen werden nur Anmeldename und Kennwort geprüft.';
 $string['auth_cas_enabled'] = 'Aktivieren Sie diese Option, um die CAS Authentifizierung zu verwenden';
 $string['auth_cas_hostname'] = 'Hostname des CAS-Servers <br />z.B.: host.domain.fr';
@@ -67,3 +76,4 @@ $string['auth_cas_version'] = 'Aktiviertes CAS-Protokoll';
 $string['CASform'] = 'Wahl der Authentifizierung';
 $string['noldapserver'] = 'Für CAS wurde kein LDAP Server konfiguriert! Die Synchronisierung wurde deaktiviert.';
 $string['pluginname'] = 'CAS-Server (SSO)';
+$string['synctask'] = 'Synchronisierung von CAS-Nutzerkonten';

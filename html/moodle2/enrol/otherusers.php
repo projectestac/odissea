@@ -61,7 +61,7 @@ foreach ($extrafields as $field) {
 
 $fields = array(
     'userdetails' => $userdetails,
-    'lastseen' => get_string('lastaccess'),
+    'lastaccess' => get_string('lastaccess'),
     'role' => get_string('roles', 'role')
 );
 
@@ -69,7 +69,7 @@ $fields = array(
 if (!has_capability('moodle/course:viewhiddenuserfields', $context)) {
     $hiddenfields = array_flip(explode(',', $CFG->hiddenuserfields));
     if (isset($hiddenfields['lastaccess'])) {
-        unset($fields['lastseen']);
+        unset($fields['lastaccess']);
     }
 }
 

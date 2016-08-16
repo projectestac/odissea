@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -203,7 +203,6 @@ $string['generalfeedback_help'] = 'Gesamtfeedback wird nach der Beantwortung der
 Gesamtfeedback kann eingesetzt werden, um Hinweise zu geben. Links könnten zu weiteren Informationen führen, falls die Frage nicht verstanden wurde.';
 $string['getcategoryfromfile'] = 'Kategorie aus Datei holen';
 $string['getcontextfromfile'] = 'Kontext aus Datei holen';
-$string['hidden'] = 'Verborgen';
 $string['hintn'] = 'Hinweis {no}';
 $string['hintnoptions'] = '{no} Hinweis-Optionen';
 $string['hinttext'] = 'Verborgener Text';
@@ -345,8 +344,6 @@ $string['numqas'] = 'Anzahl der Versuche';
 $string['numquestions'] = 'Fragenanzahl';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} verborgene)';
 $string['options'] = 'Optionen';
-$string['orphanedquestionscategory'] = 'Fragen aus gelöschten Kategorien gespeichert';
-$string['orphanedquestionscategoryinfo'] = 'Vereinzelt können - meist aufgrund von früheren Softwarefehlern - Fragen in der Datenbank verbleiben, selbst wenn die Kategorie gelöscht wurde. Dies ist auf dieser Seite tatsächlich früher einmal passiert. Diese Kategorie wurde automatisch erzeugt. Alle verwaisten Fragen wurden hier eingefügt, damit Sie über die weitere Verwendung entscheiden können. Bilder oder Mediendateien sind dabei jedoch verloren gegangen.';
 $string['page-question-category'] = 'Jede Fragenkategorieseite';
 $string['page-question-edit'] = 'Jede Fragenbearbeitungsseite';
 $string['page-question-export'] = 'Jede Fragen-Exportseite';
@@ -454,6 +451,7 @@ $string['submissionoutofsequencefriendlymessage'] = 'Sie haben Daten außerhalb 
 $string['submit'] = 'Abgabe';
 $string['submitandfinish'] = 'Absenden und beenden';
 $string['submitted'] = 'Absenden: {$a}';
+$string['tagarea_question'] = 'Fragen';
 $string['technicalinfo'] = 'Technische Information';
 $string['technicalinfo_help'] = 'Diese technische Information wendet sich ausschließlich an Entwickler von neuen Fragetypen. Sie kann auch für die Diagnose von Problemen mit Fragen verwendet werden.';
 $string['technicalinfomaxfraction'] = 'Größter Anteil: {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,17 +39,29 @@ $string['draggableword'] = 'Versleepbare tekst';
 $string['dropbackground'] = 'Achtergrondafbeelding om markeringen op te slepen';
 $string['dropzone'] = 'Neerzetzone {$a}';
 $string['dropzoneheader'] = 'Neerzetzones';
+$string['formerror_disallowedtags'] = 'Sorry, HTML-tags niet toegestaan in versleepbare tekst.';
+$string['formerror_multipledraginstance'] = 'Je hebt deze afbeelding {$a} meer dan één keer gekozen als juist antwoord maar het is niet gemarkeerd als een item dat onbeperkt mag versleept worden.';
+$string['formerror_multipledraginstance2'] = 'Je hebt deze afbeelding meer dan één keer gekozen als juist antwoord, maar het is niet gemarkeerd als een item dat onbeperkt mag versleept worden.';
+$string['formerror_noallowedtags'] = 'HTML-tags mogen niet gebruikt worden in deze tekst omdat het een alt-tekst is voor een versleepbare afbeelding.';
 $string['formerror_nobgimage'] = 'Je moet een afbeelding kiezen om te gebruiken als achtergrond voor de sleep en neerzetzone.';
 $string['formerror_nofile'] = 'Je moet een bestand uploaden of selecteren om hier te gebruiken.';
+$string['formerror_nofile3'] = 'Je moet hier een afbeelding selecteren of het geassocieerde label en het onbeperkt vinkje verwijderen.';
 $string['formerror_noimageselected'] = 'Je moet een item selecteren om te verslepen als juiste keuze voor deze neerzetzone.';
-$string['infinite'] = 'Oneindig';
+$string['formerror_notintxleft'] = 'De x-coördinaat moet een geheel getal zijn.';
+$string['formerror_notintytop'] = 'De y-coördinaat moet een geheel getal zijn.';
+$string['formerror_noxleft'] = 'Je moet bovenaan links van deze neerzetzone een waarde geven voor de x-coördinaat. Je kunt de neerzetzone verslepen om de coördinaten te bepalen of ze hier manueel ingeven.';
+$string['formerror_noytop'] = 'Je moet bovenaan links van deze neerzetzone een waarde geven voor de y-coördinaat. Je kunt de neerzetzone verslepen om de coördinaten te bepalen of ze hier manueel ingeven.';
+$string['infinite'] = 'Onbeperkt';
 $string['label'] = 'Tekst';
 $string['nolabel'] = 'Geen labeltekst';
+$string['pleasedraganimagetoeachdropregion'] = 'Je antwoord is niet volledig; sleep een item naar elke doelzone.';
 $string['pluginname'] = 'Sleep en zet neer op afbeelding';
 $string['pluginnameadding'] = 'Voeg slepen en neerzetten op afbeelding toe';
 $string['pluginnameediting'] = 'Bewerk slepen en neerzetten op afbeelding';
+$string['pluginname_help'] = 'Vragen met slepen en neerzetten op afbeelding vragen van de respondent dat die afbeeldingen of tekst labels sleept en neerzet op een bepaalde zone van een achtergrondafbeelding. Sleepbare items kunnen gegroepeerd worden zodat alle items in een bepaalde groep gekleurd worden zoals de doelzones. Versleepbare items die als onbeperkt gemarkeerd zijn, kunnen op meer dan één zone neergezet worden.';
 $string['pluginnamesummary'] = 'Afbeeldingen of tekstlabels worden gesleept en neergezet in een doelzone op een achtergrondafbeelding.';
 $string['previewareaheader'] = 'Voorbeeld';
+$string['previewareamessage'] = 'Selecteer een achtergrondafbeelding, bepaal versleepbare items en bepaal neerzetzones op de achtergrondafbeelding waarin ze gesleept moeten worden.';
 $string['refresh'] = 'Voorbeeld verversen';
 $string['shuffleimages'] = 'Schud de versleepbare items door elkaar, telkens wanneer de vraag getoond wordt.';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

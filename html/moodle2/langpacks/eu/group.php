@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,8 @@ $string['eventgroupcreated'] = 'Taldea sortu da';
 $string['eventgroupdeleted'] = 'Taldea ezabatu da';
 $string['eventgroupingcreated'] = 'Taldekatzea sortu da';
 $string['eventgroupingdeleted'] = 'Taldekatzea ezabatu da';
+$string['eventgroupinggroupassigned'] = 'Taldea taldekatzera esleitu da';
+$string['eventgroupinggroupunassigned'] = 'Taldea taldekatzetik kendu da';
 $string['eventgroupingupdated'] = 'Taldekatzea eguneratu da';
 $string['eventgroupmemberadded'] = 'Taldekidea gehitu da';
 $string['eventgroupmemberremoved'] = 'Taldekidea ezabatu da';
@@ -141,6 +143,7 @@ $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daite
 $string['javascriptrequired'] = 'Orri honek Javascript-a gaituta izan behar du.';
 $string['members'] = 'Kideak taldeko';
 $string['membersofselectedgroup'] = 'Aukeratutako taldean dauden kideak:';
+$string['mygroups'] = 'Nire taldeak';
 $string['namingscheme'] = 'Izendatze-eskema';
 $string['namingscheme_help'] = 'Abildua sinboloa (@) letrez osatutako taldeen izenak sortzeko erabil daiteke. Esaterako "@ Taldea" jarriz gero hurrengoak sortuko dira: A Taldea, B Taldea, C taldea,...
 
@@ -150,6 +153,7 @@ $string['newpicture'] = 'Irudi berria';
 $string['newpicture_help'] = 'Aukera ezazu JPG edo PNG formatuko irudi bat. Irudia moztu eta 100x100 pixeleko lauki batean sartuko da.
 ';
 $string['noallocation'] = 'Esleitu gabe';
+$string['nogroup'] = 'Talderik ez';
 $string['nogrouping'] = 'Taldekatzerik ez';
 $string['nogroups'] = 'Ikastaro honetan ez dago talderik ezarrita';
 $string['nogroupsassigned'] = 'Ez dago esleitutako talderik';
@@ -157,10 +161,12 @@ $string['nopermissionforcreation'] = 'Ezin da "{$a}" taldea sortu: ez duzu horre
 $string['nosmallgroups'] = 'Debakatu azken talde txikia';
 $string['notingroup'] = 'Taldeetan dauden erabiltzaileak ez hartu kontuan';
 $string['notingrouping'] = '[Taldekatzetik kanpo]';
+$string['notingrouplist'] = '[Taldean ez]';
 $string['nousersinrole'] = 'Ez dago erabiltzaile egokirik aukeratutako rolean';
 $string['number'] = 'Talde-kopurua edo kide-kopurua taldeko';
 $string['numgroups'] = 'Talde-kopurua';
 $string['nummembers'] = 'Kideak taldeko';
+$string['othergroups'] = 'Beste taldeak';
 $string['overview'] = 'Ikuspegi orokorra';
 $string['potentialmembers'] = 'Balizko kideak: {$a}';
 $string['potentialmembs'] = 'Balizko kideak';

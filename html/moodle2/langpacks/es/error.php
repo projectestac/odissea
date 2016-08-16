@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'error', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,6 +77,7 @@ $string['cannoteditcomment'] = 'Este comentario no es suyo: no lo puede editar';
 $string['cannoteditcommentexpired'] = 'Usted no puede editar esto. El tiempo ha expirado!';
 $string['cannoteditpostorblog'] = 'Usted no puede publicar o editar los blogs';
 $string['cannoteditsiteform'] = 'Usted no puede modificar el curso del sitio usando esta forma';
+$string['cannotedituserpreferences'] = 'No se pueden editar las preferencias de este usuario';
 $string['cannotedityourprofile'] = 'Lo sentimos, no puede editar su perfil propio';
 $string['cannotexecduringupgrade'] = 'No se puede ejecutar durante la actualización';
 $string['cannotfindcategory'] = 'No puedo encontrar el registro de la categoría de la base de datos con ID - {$a}';
@@ -233,6 +234,7 @@ $string['errorcreatingfile'] = 'Error al crear el archivo  "{$a}"';
 $string['errorcreatingrole'] = 'Error al crear el rol';
 $string['errorfetchingrssfeed'] = 'Error al obtener el canal RSS.';
 $string['erroronline'] = 'Error en la línea {$a}';
+$string['erroroutput'] = 'Error de salida, deshabilite la redirección automática.';
 $string['errorparsingxml'] = 'Error al analizar XML: {$a->errorstring} en la línea {$a->errorline}, carácter {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Error procesando archivo histórico';
 $string['errorreadingfile'] = 'Error al leer el archivo  "{$a}"';

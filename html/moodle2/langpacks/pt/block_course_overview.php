@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Contrair Todas as listas de disciplinas';
 $string['configotherexpanded'] = 'Se ativar esta opção, as outras disciplinas serão expandidas por predefinição, exceto se o utilizador alterar esta configuração nas suas preferências.';
 $string['configpreservestates'] = 'Se ativar esta opção, o estado contraído/expandido definido pelo utilizador será guardado e utilizado em cada carregamento.';
 $string['course_overview:addinstance'] = 'Adicionar um novo bloco Descrição da disciplina';
-$string['course_overview:myaddinstance'] = 'Adicionar um novo bloco Visão geral das disciplinas à Minha página principal';
+$string['course_overview:myaddinstance'] = 'Adicionar um novo bloco Visão geral das disciplinas ao Painel do utilizador';
 $string['defaultmaxcourses'] = 'Número máximo de disciplinas predefinido';
 $string['defaultmaxcoursesdesc'] = 'Número máximo de disciplinas que devem estar visíveis no bloco Visão geral das disciplinas, 0 mostrará todas as disciplinas';
 $string['expandall'] = 'Expandir Todas as Listas de disciplinas';
@@ -50,7 +50,7 @@ $string['movecoursehere'] = 'Mover disciplina para aqui';
 $string['movetofirst'] = 'Mover a disciplina {$a} para o topo';
 $string['movingcourse'] = 'Está a mover: {$a->fullname} ({$a->cancellink})';
 $string['none'] = 'Nenhum';
-$string['numtodisplay'] = 'Número de disciplinas a mostrar:';
+$string['numtodisplay'] = 'Número de disciplinas a mostrar:&nbsp;';
 $string['onlyparentname'] = 'Apenas categoria ascendente';
 $string['otherexpanded'] = 'Outras disciplinas expandidas';
 $string['pluginname'] = 'Visão geral das disciplinas';

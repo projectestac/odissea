@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'editor', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -97,13 +97,13 @@ $string['linktargetother'] = '其它';
 $string['linktargetself'] = '同一框架';
 $string['linktargettop'] = '同一窗口';
 $string['linktitle'] = '标题';
-$string['linkurl'] = 'URL';
+$string['linkurl'] = '网页地址';
 $string['matchcase'] = '匹配大小写';
 $string['middle'] = '中央';
 $string['minimize'] = '最小化编辑器';
 $string['move'] = '移动';
 $string['multi'] = '多项';
-$string['mustenterurl'] = '您必须录入URL';
+$string['mustenterurl'] = '您必须录入网页地址';
 $string['nolink'] = '不自动处理链接';
 $string['normal'] = '常规';
 $string['notimage'] = '所选文件不是图片. 请选则一张图片!';

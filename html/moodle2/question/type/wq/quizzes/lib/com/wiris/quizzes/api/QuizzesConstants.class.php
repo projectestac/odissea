@@ -18,7 +18,7 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	static $ANSWER_FIELD_TYPE_POPUP_EDITOR = "popupEditor";
 	static $ANSWER_FIELD_TYPE_TEXT = "textField";
 	static $META_PROPERTY_REFERER = "referer";
-	static $META_PROPERTY_QUESTION = "referer";
+	static $META_PROPERTY_QUESTION = "question";
 	static $META_PROPERTY_USER = "userref";
 	function __toString() { return 'com.wiris.quizzes.api.QuizzesConstants'; }
 }

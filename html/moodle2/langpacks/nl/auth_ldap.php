@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Schakel de gracelogin-ondersteuning voo
 $string['auth_ldap_gracelogins_key'] = 'Grace logins';
 $string['auth_ldap_groupecreators'] = 'Lijst van groepen of contexten waarvan de leden het recht hebben groepen aan te maken. Gebruik een \';\' als scheidingsteken tussen meerdere groepen. Gewoonlijk wordt dat iets als \'cn=leraars,ou=personeel,o=mijn_organisatie\'';
 $string['auth_ldap_groupecreators_key'] = 'Wie groepen mag aanmaken';
-$string['auth_ldap_host_url'] = 'Geef de LDAP-host in de vorm van een URL zoals bijvoorbeeld: \'ldap://ldap.myorg.com/\' of \'ldaps://ldap.myorg.com/\'  Com/\'or \'ldaps://ldap.myorg.com/\'';
+$string['auth_ldap_host_url'] = 'Geef de LDAP-host in de vorm van een URL zoals bijvoorbeeld: \'ldap://ldap.myorg.com/\' of \'ldaps://ldap.myorg.com/\'. Meerder servers kan je scheiden door een \';\' om back-upservers op te geven.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
 $string['auth_ldap_ldap_encoding'] = 'Specifier de encoding van de LDAP-server. Waarschijnlijk utf-8, MS AD v2 gebruikt default platform encoding zoals cp1252, cp 1250, enz.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP-encoding';
@@ -71,7 +71,7 @@ $string['auth_ldap_noconnect_all'] = 'LDAP-module kan met geen enkele server ver
 $string['auth_ldap_noextension'] = 'Waarschuwing: De PHP LDAP module is blijkbaar niet geïnstalleerd. Zorg er voor dat ze geïnstalleerd en ingeschakeld is.';
 $string['auth_ldap_no_mbstring'] = 'Je hebt de mbstring-extentie nodig in Active Directory om gebruikers te kunnen aanmaken.';
 $string['auth_ldapnotinstalled'] = 'Kan de LDAP-authenticatie niet gebruiken. De PHP LDAP module is niet geïnstalleerd';
-$string['auth_ldap_objectclass'] = 'De filter om namen/gebruiker te zoeken. Gewoonlijk zet je dit op iets als objectClass=posixAccount. Staat standaard op objectclass=*, wat alle objecten van LDAP geeft.';
+$string['auth_ldap_objectclass'] = 'Optioneel: Overschrijft objectClass, gebruikt om gebruikers te noemen/zoeken op ldap_user_type. Gewoonlijk moet je dit niet wijzigen.';
 $string['auth_ldap_objectclass_key'] = 'Object klasse';
 $string['auth_ldap_opt_deref'] = 'Bepaalt hoe aliassen tijdens het zoeken behandeld worden. Kies één van volgende waarden: "Nee" (LDAP_DEREF_NEVER) of "Ja" (LDAP_DEREF_ALWAYS)';
 $string['auth_ldap_opt_deref_key'] = 'Bepaalt hoe aliassen tijdens het zoeken behandeld worden. Kies één van volgende waarden: "Nee" (LDAP_DEREF_NEVER) of "Ja" (LDAP_DEREF_ALWAYS)
@@ -84,6 +84,8 @@ $string['auth_ldap_preventpassindb_key'] = 'Wachtwoorden niet in cache zetten';
 $string['auth_ldap_search_sub'] = 'Zet waarde <> 0 als je gebruikers wilt kunnen zoeken in subcontexten.';
 $string['auth_ldap_search_sub_key'] = 'Zoek subcontexten';
 $string['auth_ldap_server_settings'] = 'LDAP-server instellingen';
+$string['auth_ldap_suspended_attribute'] = 'Optioneel: indien ingegeven zal dit attribuut gebruikt worden om de lokaal gecreëerde gebruikersaccount in te schakelen of te schorsen.';
+$string['auth_ldap_suspended_attribute_key'] = 'Geschorst attribuut';
 $string['auth_ldap_unsupportedusertype'] = 'auth: ldap user_create() ondersteunt het geselecteerde gebruikerstype "{$a}" niet.';
 $string['auth_ldap_update_userinfo'] = 'Werk de gebruikersinformatie bij (voornaam, achternaam, adres, ..) van LDAP naar Moodle. Bekijk /auth/ldap/attr_mappings.php om informatie te vinden over de \'mapping\'.';
 $string['auth_ldap_user_attribute'] = 'Het attribuut dat wordt gebruikt om gebruikers te benoemen of te zoeken. Meestal \'cn\'.';
@@ -141,6 +143,7 @@ $string['renamingnotallowed'] = 'Hernoemen van gebruiker niet toegelaten in LDAP
 $string['rootdseerror'] = 'Fout bij het bevragen van de rootDSE voor Active Directory';
 $string['start_tls'] = 'Gebruik de gewone LDAP-service (poort 389) met TLS-encryptie.';
 $string['start_tls_key'] = 'Gebruik TLS';
+$string['synctask'] = 'LDAP-gebruikers sync job';
 $string['updatepasserror'] = 'Fout in user_update_password(). Foutcode {$a->errno}; Foutstring: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Fout in user_update_password() bij het lezen van de verlooptijd voor het wachtwoord. Foutcode: {$a->errno}; Foutstring: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Fout in user_update_password() bij het wijzigen van de verlooptijd en/of gracelogins.  Foutcode: {$a->errno}; Foutstring: {$a->errstring}';

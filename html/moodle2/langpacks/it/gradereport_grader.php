@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_grader', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,6 @@ $string['grader:view'] = 'Visualizzare il registro valutatore';
 $string['overriddengrade'] = 'Valutazione modificata';
 $string['pluginname'] = 'Registro valutatore';
 $string['preferences'] = 'Preferenze registro valutatore';
+$string['summarygrader'] = 'Una tabella con i nomi degli studenti nella prima colonna e con le attività valutabili raggruppate per corso e per categoria.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} valutazioni';

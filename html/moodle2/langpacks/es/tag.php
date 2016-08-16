@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tag', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,11 +31,16 @@ $string['addtagtomyinterests'] = 'Agregar "{$a}" a mis intereses';
 $string['alltagpages'] = 'Todas las páginas con marcas';
 $string['changename'] = 'Cambiar nombre de marca';
 $string['changetype'] = 'Cambiar tipo de marca';
+$string['confirmdeletetag'] = '¿Está seguro de que quiere eliminar esta etiqueta?';
+$string['confirmdeletetags'] = '¿Está seguro de que quiere eliminar las etiquetas seleccionadas?';
 $string['count'] = 'Contar';
+$string['coursetags'] = 'Etiquetas de curso';
 $string['delete'] = 'Eliminar';
 $string['deleted'] = 'Eliminado';
 $string['deletedcoursetags'] = 'Eliminado - marcas del curso';
+$string['deleteselected'] = 'Opción "eliminar" seleccionada';
 $string['description'] = 'Descripción';
+$string['editname'] = 'Editar nombre de etiqueta';
 $string['edittag'] = 'Editar esta marca';
 $string['entertags'] = 'Escriba las marcas separadas por comas';
 $string['errortagfrontpage'] = 'No se permite marcar la página principal del sitio';
@@ -49,6 +54,7 @@ $string['eventtagunflagged'] = 'Marca desseñalizada';
 $string['eventtagupdated'] = 'Marca actualizada';
 $string['flag'] = 'Señalar';
 $string['flagasinappropriate'] = 'Señalar como inapropiado';
+$string['flagged'] = 'Etiqueta señalada';
 $string['helprelatedtags'] = 'Marcas relacionadas separadas por comas';
 $string['id'] = 'id';
 $string['manageofficialtags'] = 'Gestionar marcas oficiales';
@@ -56,7 +62,9 @@ $string['managetags'] = 'Gestionar marcas';
 $string['name'] = 'Nombre de la marca';
 $string['namesalreadybeeingused'] = 'Los nombres de marca ya se están usando';
 $string['newname'] = 'Nombre de la nueva marca';
+$string['newnamefor'] = 'Nuevo nombre para etiqueta {$a}';
 $string['noresultsfor'] = 'No hay resultados para "{$a}"';
+$string['nothingtoupdate'] = 'No hay actualizaciones';
 $string['officialtag'] = 'Marca oficial';
 $string['otags'] = 'Marcas oficiales';
 $string['othertags'] = 'Otras marcas (escriba las marcas separadas por comas)';
@@ -79,6 +87,8 @@ $string['searchresultsfor'] = 'Resultados de búsqueda de "{$a}"';
 $string['searchtags'] = 'Buscar marcas';
 $string['seeallblogs'] = 'Ver todas las entradas de blog marcadas con "{$a}"...';
 $string['select'] = 'Seleccionar';
+$string['selecttag'] = 'Seleccionar etiqueta {$a}';
+$string['settypeofficial'] = 'Hacer oficial';
 $string['tag'] = 'Marca';
 $string['tagdescription'] = 'Descripción de la marca';
 $string['taggedwith'] = 'marcada con "{$a}"';

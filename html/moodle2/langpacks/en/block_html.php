@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_html', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['configclasses_help'] = 'The purpose of this configuration is to aid wit
 $string['configcontent'] = 'Content';
 $string['configtitle'] = 'Block title';
 $string['html:addinstance'] = 'Add a new HTML block';
-$string['html:myaddinstance'] = 'Add a new HTML block to My home';
+$string['html:myaddinstance'] = 'Add a new HTML block to Dashboard';
 $string['leaveblanktohide'] = 'leave blank to hide the title';
 $string['newhtmlblock'] = '(new HTML block)';
 $string['pluginname'] = 'HTML';

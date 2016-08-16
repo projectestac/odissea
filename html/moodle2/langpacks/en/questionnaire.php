@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'questionnaire', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['closedate_help'] = 'You can specify a date to close the questionnaire h
 $string['closeson'] = 'Questionnaire closes on {$a}';
 $string['completionsubmit'] = 'Student must submit this questionnaire to complete it';
 $string['confalts'] = '- OR - <br />Confirmation page';
+$string['configmaxsections'] = 'Maximum feedback sections';
 $string['configusergraph'] = 'Display charts for "Personality Test" feedback';
 $string['configusergraphlong'] = 'Use the <a href="http://www.rgraph.net/">Rgraph</a> library to display "Personality Test" feedback charts.';
 $string['confirmdelallresp'] = 'Are you sure you want to delete ALL the responses in this questionnaire?';
@@ -101,6 +102,7 @@ $string['createcontent'] = 'Define New Content';
 $string['createcontent_help'] = 'Select one of the radio button options. \'Create new\' is the default.';
 $string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Create new';
+$string['crontask'] = 'Questionnaire cleanup job';
 $string['date'] = 'Date';
 $string['dateformatting'] = 'Use the day/month/year format, e.g. for March 14th, 1945:&nbsp; <strong>14/3/1945</strong>';
 $string['date_help'] = 'Use this question type if you expect the response to be a correctly formatted date.';
@@ -232,10 +234,18 @@ $string['managequestions'] = 'Manage questions';
 $string['managequestions_help'] = 'In the Manage questions section of the Edit Questions page, you can conduct a number of operations on a Questionnaire\'s questions.';
 $string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
 $string['maxdigitsallowed'] = 'Max. digits allowed';
-$string['maxdigitsallowed_help'] = 'By using the Max. digits allowed and Nb of decimal digits parameters you can specify
- the length and number of decimal places required.';
+$string['maxdigitsallowed_help'] = 'Use **Max. digits allowed** to set a limit to the number of characters entered for a Numeric question. Note that the
+decimal point also counts as one character!';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['maxforcedresponses'] = 'Max. forced responses';
+$string['maxforcedresponses_help'] = 'Use these parameters to force respondent to tick a minimum of **Min.** boxes and a maximum of **Max.** check boxes. To
+force an exact number of check boxes to be ticked, set **Min.** and **Max.** to the same value. If only a min or a max value is desired, just leave the other
+value to its default **0** value. If you set **Min.** or **Max.** to values other than their default **0** value, a warning message will be displayed if
+respondent does not comply with your requirements. Obviously you should make any requirements clear to the respondent either in the general instructions of
+your Questionnaire or in the text of relevant questions.';
 $string['maxtextlength'] = 'Max. text length';
+$string['maxtextlength_help'] = 'For the Text Box question type, enter the Input Box length and the Maximum text length of text to be entered by respondent.
+Default values are 20 characters for the Input Box width and 25 characters for the maximum length of text entered.';
 $string['messageprovider:message'] = 'Questionnaire reminder';
 $string['minforcedresponses'] = 'Min. forced responses';
 $string['minforcedresponses_help'] = 'Use these parameters to force respondent to tick a minimum of **Min.** boxes and a maximum of **Max.** check boxes. To
@@ -289,6 +299,8 @@ $string['num'] = '#';
 $string['numattemptsmade'] = '{$a} attempts made on this questionnaire';
 $string['numberfloat'] = 'The number you entered <strong>{$a->number}</strong> has been reformatted/rounded with <strong>{$a->precision}</strong> decimal place(s).';
 $string['numberofdecimaldigits'] = 'Nb of decimal digits';
+$string['numberofdecimaldigits_help'] = 'Use **Nb of decimal digits** to specify the format of the Average value counted and displayed at the Questionnaire Report page.';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
 $string['numberscaleitems'] = 'Nb of scale items';
 $string['numberscaleitems_help'] = 'Nb of scale items is the *number of items* to be used in your rate scale. You would normally use a value of 3 to 5. Default value: **5**.';
 $string['numeric'] = 'Numeric';

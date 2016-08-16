@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'edufields', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   edufields
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -156,7 +156,7 @@ $string['field1039903'] = 'Ingeniaritza biomedikoa';
 $string['field1039905'] = 'Ingeniaritza biomedikoa';
 $string['field1039907'] = 'Trenak';
 $string['field1039909'] = 'Garbiketa';
-$string['field1039999'] = 'Ingenieritza eta antzeko teknologiak (bestelakoak';
+$string['field1039999'] = 'Ingeniaritza eta antzeko teknologiak (bestelakoak)';
 $string['field104'] = 'Arkitektura eta eraikuntza';
 $string['field10401'] = 'Arkitektura eta hiri-ingurunea';
 $string['field1040101'] = 'Arkitektura';

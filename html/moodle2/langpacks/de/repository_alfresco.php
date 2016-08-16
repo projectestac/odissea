@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_alfresco', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_alfresco', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_alfresco
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,9 +33,6 @@ $string['notitle'] = 'unbenannt';
 $string['password'] = 'Passwort';
 $string['pluginname'] = 'Alfresco';
 $string['pluginname_help'] = 'Plugin für Alfresco-CMS';
-$string['security_key_notice_message_content'] = 'Bei der Nutzung Externer Links in Verbindung mit dem Alfresco Repository wurde ein Sicherheitsproblem festgestellt. Durch Informationen in diesen Links (Token) war es Nutzern möglich Zugangsdaten anderer Nutzer zum Repository-Server auszulesen. Daher wurde diese Funktion (externe Links) deaktiviert. Solange diese Links weiterhin existieren sind Zugangsdaten gefährdet. Zu Ihrer eigenen Sicherheit sollten Sie daher unbedingt den Alfresco-Server neu starten, um die Tokens zu deaktivieren. .';
-$string['security_key_notice_message_small'] = 'Aufgrund eines Sicherheitsproblems, welches im Alfresco Repository gefunden wurde, ist ein Neustart des Alfresco-Servers erforderlich.';
-$string['security_key_notice_message_subject'] = 'Alfresco Repository Sicherheitshinweis';
 $string['soapmustbeenabled'] = 'Die PHP Extension SOAP muss für das Alfresco-Plugin aktiviert sein';
 $string['space'] = 'Bereich';
 $string['username'] = 'Nutzername';

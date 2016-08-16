@@ -2,9 +2,14 @@
 /* COURSE CONTENT */
 .section_add_menus {
     text-align: right;
+    clear: both;
+}
+.section-modchooser {
+    clear: both;
 }
 .dir-rtl .section_add_menus {
     text-align: left;
+    clear: both;
 }
 .section_add_menus .horizontal div,
 .section_add_menus .horizontal form {
@@ -41,6 +46,14 @@
     margin: 1em;
 }
 .section {
+    .side {
+        &.left {
+            float: left;
+        }
+        &.right {
+            float: right;
+        }
+    }
     .spinner {
         height: 16px;
         width: 16px;
@@ -130,6 +143,14 @@
 }
 
 .dir-rtl .section {
+    .side {
+        &.left {
+            float: right;
+        }
+        &.right {
+            float: left;
+        }
+    }
     .activity {
         .spinner {
             left: auto;
@@ -317,10 +338,13 @@
     margin-top: 0;
 }
 .course-content ul li.section.hidden {
-    .sectionname,
+    .sectionname > span,
     .content > div,  /* All the divs but the activities which are in a UL. */
     .activity .activityinstance {
         opacity: .5;
+    }
+    .sectionname > span,
+    .activity .activityinstance {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -380,7 +404,6 @@
     float: right;
     height: 20px;
     position: relative;
-    z-index: 1000;
 }
 
 #page-site-index .subscribelink {
@@ -491,8 +514,6 @@ span.editinstructions {
     z-index: 9999;
     .box-shadow(2px 2px 5px 1px #ccc);
     border: 1px solid @infoBorder;
-}
-.dir-rtl span.editinstructions {
 }
 
 /* Course drag and drop upload styles */

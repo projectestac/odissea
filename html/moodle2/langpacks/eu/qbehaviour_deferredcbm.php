@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ Ziurtasun maila                 | C=1 (Zalantzan) | C=2 (Nahiko ziur) | C=3 (Oso
 ------------------------------- | --------------- | ----------------- | ----------------
 Erantzun egokiaren kalifikazioa |        1        |          2        |        3
 Erantzun okerraren kalifikazioa |        0        |         -2        |       -6
-Zuzen izatearen probabilitatea  |      <67%       |       67-80%      |      >80%';
+Zuzen izatearen probabilitatea  |      <%67       |       %67-80      |      >%80';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Idearik ez';
 $string['certaintyshort2'] = 'C=2';

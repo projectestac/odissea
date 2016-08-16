@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'completion', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -102,7 +102,7 @@ $string['err_settingslocked'] = 'لقد قام طالب أو أكثر بإكما
 $string['err_system'] = 'حدث خطأ داخلي في نظام الإكمال. (يمكن لمديري النظام تفعيل معلومات التنقيح لمزيد من المعلومات.)';
 $string['excelcsvdownload'] = 'تحميل بتنسيق متوافق مع إكسل (.csv)';
 $string['fraction'] = 'جزء';
-$string['inprogress'] = 'جاري التقدم';
+$string['inprogress'] = 'قيد التنفيذ';
 $string['manualcompletionby'] = 'إكمال يدوي بواسطة';
 $string['manualselfcompletion'] = 'إكمال يدوي ذاتي';
 $string['markcomplete'] = 'علّمه بأنه مكتمل';

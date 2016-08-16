@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = 'Asignar/Desasignar los privilegios requerido
 $string['addservice'] = 'Agregar un nuevo servicio: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Agregar funciones al servicio "{$a}"';
 $string['allusers'] = 'Todos los usuarios';
-$string['amftestclient'] = 'Cliente de prueba AMF';
 $string['apiexplorer'] = 'Explorador API';
 $string['apiexplorernotavalaible'] = 'Explorador API aún no disponible';
 $string['arguments'] = 'Argumentos';
 $string['authmethod'] = 'Método de identificación';
+$string['callablefromajax'] = 'Llamable desde AJAX';
 $string['cannotcreatetoken'] = 'Sin permiso para crear el token del web service para el servicio {$a}.';
 $string['cannotgetcoursecontents'] = 'No se pueden obtener los contenidos del curso';
 $string['checkusercapability'] = 'Comprobar privilegios del usuario';
@@ -119,6 +119,7 @@ $string['iprestriction'] = 'Restricción de IP';
 $string['iprestriction_help'] = 'El usuario podrá hacer uso de los Servicios Web si se conecta desde las direcciones IP listadas a continuación (separadas por comas).';
 $string['key'] = 'Clave';
 $string['keyshelp'] = 'Las claves son empleadas para acceder a su cuenta Moodle desde aplicaciones externas.';
+$string['loginrequired'] = 'Restringido a usuarios logeados';
 $string['manageprotocols'] = 'Administrar protocolos';
 $string['managetokens'] = 'Administrar tokens';
 $string['missingcaps'] = 'Permisos faltantes';

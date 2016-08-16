@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'label', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['modulename_help'] = 'En etikett gör det möjligt att infoga bilder och
 $string['modulenameplural'] = 'Etiketter';
 $string['pluginadministration'] = 'Administration av etiketter';
 $string['pluginname'] = 'Etikett';
+$string['search:activity'] = 'Etikett';

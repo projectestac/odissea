@@ -30,12 +30,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-
 $plugin->version   = 2015061500;       // The current module version (Date: YYYYMMDDXX)
 $plugin->requires  = 2014051200;        // Requires this Moodle version 2.7
-$module->component = 'mod_rcontent';    // Full name of the plugin (used for diagnostics)
-$module->release   = 'v2.0.7';          // Human-readable version name
-$module->maturity  = MATURITY_STABLE;   // How stable the plugin is
+$plugin->component = 'mod_rcontent';    // Full name of the plugin (used for diagnostics)
+$plugin->release   = 'v2.0.7';          // Human-readable version name
+$plugin->maturity  = MATURITY_STABLE;   // How stable the plugin is
 
 $plugin->dependencies = array(
     'local_rcommon' => ANY_VERSION

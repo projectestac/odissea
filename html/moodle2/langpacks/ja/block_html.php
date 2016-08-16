@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_html', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['configclasses_help'] = 'この設定の目的はHTMLブロックの相�
 $string['configcontent'] = 'コンテンツ';
 $string['configtitle'] = 'ブロックタイトル';
 $string['html:addinstance'] = '新しいHTMLブロックを追加する';
-$string['html:myaddinstance'] = '新しいHTMLブロックをマイホームに追加する';
+$string['html:myaddinstance'] = '新しいHTMLブロックをダッシュボードに追加する';
 $string['leaveblanktohide'] = '空白の場合、タイトルを隠す';
 $string['newhtmlblock'] = '(新しいHTMLブロック)';
 $string['pluginname'] = 'HTML';

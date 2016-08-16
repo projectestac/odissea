@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_filesystem', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,3 +40,4 @@ $string['pluginname_help'] = 'Crea un repository usando una cartella locale';
 $string['relativefiles'] = 'Consenti file relativi';
 $string['relativefiles_desc'] = 'Consente l\'accesso ai file presenti nel repository tramite l\'uso di link relativi.';
 $string['root'] = 'Root';
+$string['searchresults'] = 'Risultati della ricerca';

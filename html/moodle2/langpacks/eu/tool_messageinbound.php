@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_messageinbound', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,9 +31,10 @@ $string['domain'] = 'E-postaren domeinua';
 $string['edit'] = 'Editatu';
 $string['editinghandler'] = '{$a} editatzen';
 $string['enabled'] = 'Gaituta';
+$string['incomingmailconfiguration'] = 'Sarrerako e-postaren ezarpenak';
 $string['mailbox'] = 'Postontziaren izena';
 $string['mailboxconfiguration'] = 'Postontziaren ezarpenak';
-$string['mailsettings'] = 'Postaren ezarpenak';
+$string['mailsettings'] = 'E-postaren ezarpenak';
 $string['message_handlers'] = 'Mezu-kudeatzaileak';
 $string['messageinboundgeneralconfiguration'] = 'Ezarpen orokorra';
 $string['messageinboundhostpass'] = 'Pasahitza';
@@ -45,4 +46,5 @@ $string['oneday'] = 'Egunbete';
 $string['onehour'] = 'Ordubete';
 $string['oneweek'] = 'Astebete';
 $string['oneyear'] = 'Urtebete';
+$string['pluginname'] = 'Sarrera-mezuen ezarpenak';
 $string['replysubjectprefix'] = 'Er:';

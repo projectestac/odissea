@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_match', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,8 @@ $string['answer'] = 'Resposta {$a}';
 $string['availablechoices'] = 'Opcions disponibles';
 $string['blanksforxmorequestions'] = '{no} més conjunts d\'espais en blanc';
 $string['correctansweris'] = 'La resposta correcta és: {$a}.';
+$string['deletedchoice'] = '[Opció suprimida]';
+$string['deletedsubquestion'] = 'Aquesta part de la pregunta ha estat suprimida després d\'haver començat l\'intent.';
 $string['filloutthreeqsandtwoas'] = 'Heu de proporcionar almenys dues preguntes i tres respostes. Podeu proporcionar més respostes dolentes escrivint respostes en preguntes en blanc. Les entrades on ambdós quadres, pregunta i resposta, estiguin buits s\'ignoraran.';
 $string['nomatchinganswer'] = 'Heu d\'especificar una resposta per a la pregunta {$a}';
 $string['nomatchinganswerforq'] = 'Heu d\'especificar una resposta per a aquesta pregunta.';

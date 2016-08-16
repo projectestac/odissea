@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -192,7 +192,6 @@ $string['generalfeedback_help'] = '通用反馈会在答题后显示给学生。
 您可以通过通用反馈给学生标准答案，或者是他们不理解题目时可以参考的链接。';
 $string['getcategoryfromfile'] = '从文件中获得类别';
 $string['getcontextfromfile'] = '从文件中获得场景';
-$string['hidden'] = '隐藏';
 $string['hintn'] = '提示{no}';
 $string['hintnoptions'] = '提示 {no} 选项';
 $string['hinttext'] = '提示内容';
@@ -295,8 +294,6 @@ $string['numqas'] = '答题次数';
 $string['numquestions'] = '题目数';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} 隐藏)';
 $string['options'] = '选项';
-$string['orphanedquestionscategory'] = '从已删除的类别中挽救的试题';
-$string['orphanedquestionscategoryinfo'] = '有时，通常是由于旧的软件缺陷，即时所属题目类别已经删除，题目还保存在数据库中。当然不应该这样，但它确实在此站发生了。这个类别是自动创建的，无主试题都被放到这里，这样您就可以管理它们。请注意，这些题目所用的任何图像或媒体文件可能已丢失。';
 $string['page-question-category'] = '题目分类页面';
 $string['page-question-edit'] = '题目编辑页面';
 $string['page-question-export'] = '题目导出页面';
@@ -389,6 +386,7 @@ $string['submissionoutofsequencefriendlymessage'] = '您输入的数据在正常
 $string['submit'] = '提交';
 $string['submitandfinish'] = '提交并结束';
 $string['submitted'] = '提交：{$a}';
+$string['tagarea_question'] = '试题';
 $string['technicalinfo'] = '技术信息';
 $string['technicalinfo_help'] = '此技术信息可能只对开发人员的新问题类型非常有用。它也可以尝试诊断问题提问时有所帮助。';
 $string['technicalinfomaxfraction'] = '最大的一部分:{$a}';

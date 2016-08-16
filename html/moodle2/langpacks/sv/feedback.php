@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'feedback', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ $string['autonumbering_help'] = 'Aktiverar eller avaktiverar automatiska tal fö
 $string['average'] = 'Medel';
 $string['bold'] = 'Fet';
 $string['cancel_moving'] = 'Avbryt flytt';
+$string['cannotaccess'] = 'Du kan bara komma åt denna feedback från en kurs';
 $string['cannotmapfeedback'] = 'Problem med databas, det går inte att "mappa" Egen enkät till kurs';
 $string['cannotsavetempl'] = 'det är inte tillåtet att spara mallar';
 $string['cannotunmap'] = 'Problem med databasen, det går inte att gör om kartläggning';
@@ -113,6 +114,7 @@ $string['export_to_excel'] = 'Exportera till Excel';
 $string['feedback:addinstance'] = 'Lägg till ny enkät';
 $string['feedbackclose'] = 'Stäng Egen enkät vid denna tid';
 $string['feedback:complete'] = 'Fullfölj Egen enkät';
+$string['feedbackcompleted'] = '{$a->username} genomförde {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Skapa en privat mall';
 $string['feedback:createpublictemplate'] = 'Skapa en offentlig mall';
 $string['feedback:deletesubmissions'] = 'Ta bort fullföljda inskickningar';

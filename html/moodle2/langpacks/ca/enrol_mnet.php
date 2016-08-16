@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_mnet', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'Alguna instància del connector de inscripció MNet ja existeix en aquest servidor. Sols es permet una instància per servidor i/o una instància per « Tots els servidors ».';
 $string['instancename'] = 'Nom del mètode d\'inscripció';
 $string['instancename_help'] = 'Podeu de forma opcional canviar el nom d\'aquesta instància del mètode d\'inscripció. Si deixeu aquest camp buit, s\'utilitzarà el nom per defecte de la instància que conté el nom del servidor remot i el rol assignat per als usuaris.';
+$string['mnet:config'] = 'Configura les instàncies d\'inscripció MNet';
 $string['mnet_enrol_description'] = 'Publiqueu aquest servei a fi de permetre que els administradors del lloc {$a} inscriguin els seus estudiants en cursos del vostre servidor.<br/><ul><li><em>Dependència</em>: també haureu de <strong>publicar</strong> el servei SSO (Proveïdor de Servei) per a {$a}.</li><li><em>Dependència</em>: també us haureu de <strong>subscriure</strong> al servei SSO (Proveïdor d\'Identitat) del lloc {$a}.</li></ul><br/>Subscriviu-vos a aquest servei a fi de poder inscriure els vostres estudiants en cursos del lloc {$a}.<br /><ul><li><em>Dependència</em>: també us haureu de <strong>subscriure</strong> al servei SSO (Proveïdor de Servei) del lloc {$a}.</li><li><em>Dependència</em>: també haureu de <strong>publicar</strong> el servei SSO (Proveïdor d\'Identitat) per al lloc {$a}.</li></ul><br/>';
 $string['mnet_enrol_name'] = 'Inscripcions a Moodle en Xarxa';
 $string['pluginname'] = 'Inscripcions remotes MNet';

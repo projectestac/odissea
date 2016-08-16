@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['manageplugins'] = 'Gérer les restrictions';
 $string['missingplugin'] = 'Plugin de restriction manquant';
 $string['or'] = 'ou';
 $string['restrictaccess'] = 'Restreindre l\'accès';
+$string['restrictbygroup'] = 'Ajouter une restriction de groupe/groupement';
 $string['setheading'] = '{$a->number} jeu de {$a->count} restriction(s)';
 $string['shown_all'] = 'Affiché en grisé si les conditions ne sont pas remplies par l\'utilisateur';
 $string['shown_individual'] = 'Affiché en grisé si cette condition n\'est pas remplie par l\'utilisateur';

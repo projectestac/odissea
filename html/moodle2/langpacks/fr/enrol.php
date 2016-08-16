@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Plugins d\'inscription aux cours disponibles';
 $string['addinstance'] = 'Ajouter méthode';
+$string['addinstanceanother'] = 'Ajouter une méthode et en créer une autre';
 $string['ajaxnext25'] = '25 suivants...';
 $string['ajaxoneuserfound'] = '1 utilisateur trouvé';
 $string['ajaxxusersfound'] = '{$a} utilisateurs trouvés';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = 'Erreur lors de la création de l\'instance de syn
 $string['errorenrolcohortusers'] = 'Erreur lors de l\'inscription des membres de cohorte dans ce cours.';
 $string['errorthresholdlow'] = 'Le seuil de notification doit être au moins 1 jour.';
 $string['errorwithbulkoperation'] = 'Une erreur est survenue lors du traitement de vos modifications d\'inscription en lot.';
+$string['eventenrolinstancecreated'] = 'Instance d\'inscription créée';
+$string['eventenrolinstancedeleted'] = 'Instance d\'inscription supprimée';
+$string['eventenrolinstanceupdated'] = 'Instance d\'inscription modifiée';
 $string['eventuserenrolmentcreated'] = 'Utilisateur inscrit dans un cours';
 $string['eventuserenrolmentdeleted'] = 'Utilisateur désinscrit d\'un cours';
 $string['eventuserenrolmentupdated'] = 'Inscription d\'utilisateur modifiée';
@@ -91,6 +95,7 @@ $string['extremovedsuspendnoroles'] = 'Désactiver l\'inscription au cours et re
 $string['extremovedunenrol'] = 'Désinscrire du cours l\'utilisateur';
 $string['finishenrollingusers'] = 'Terminer l\'inscription des utilisateurs';
 $string['foundxcohorts'] = '{$a} cohortes trouvées';
+$string['instanceadded'] = 'Méthode ajoutée';
 $string['instanceeditselfwarning'] = 'Attention :';
 $string['instanceeditselfwarningtext'] = 'Vous êtes inscrit à ce cours au moyen de cette méthode d\'inscription. Des modifications pourraient empêcher votre accès à ce cours.';
 $string['invalidenrolinstance'] = 'Instance d\'inscription non valide';
@@ -100,6 +105,7 @@ $string['manageinstance'] = 'Gestion';
 $string['migratetomanual'] = 'Migrer vers l\'inscription manuelle';
 $string['nochange'] = 'Aucun changement';
 $string['noexistingparticipants'] = 'Aucun participant';
+$string['nogroup'] = 'Aucun groupe';
 $string['noguestaccess'] = 'Les visiteurs anonymes ne peuvent pas accéder à ce cours. Veuillez vous connecter.';
 $string['none'] = 'Aucun';
 $string['notenrollable'] = 'Vous ne pouvez pas vous inscrire à ce cours.';
@@ -112,6 +118,7 @@ $string['periodend'] = 'jusqu\'au {$a}';
 $string['periodnone'] = 'inscrit le {$a}';
 $string['periodstart'] = 'dès le {$a}';
 $string['periodstartend'] = 'du {$a->start} au {$a->end}';
+$string['proceedtocourse'] = 'Continuer vers le contenu du cours';
 $string['recovergrades'] = 'Récupérer si possible les anciennes notes de l\'utilisateur';
 $string['rolefromcategory'] = '{$a->role} (hérité d\'une catégorie de cours)';
 $string['rolefrommetacourse'] = '{$a->role} (hérité du cours parent)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_skydrive', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_skydrive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cachedef_foldername'] = 'Memòria cau de noms de carpetes';
 $string['clientid'] = 'ID de client';
 $string['configplugin'] = 'Configura Microsoft OneDrive';
-$string['oauthinfo'] = '<p>Per a utilitzar aquest connector heu de registrar el vostre lloc <a href="https://manage.dev.live.com/Applications/Index">a Microsoft</a>.<p>Com a part del procés de registre, haureu d\'introduir l\'URL següent com a «Domini de redirecció»:</p><p>{$a->callbackurl}</p>Després de registrar-lo, se us proporcionarà un ID de client i un secret, els quals podreu introduir aquí.</p>';
+$string['oauthinfo'] = '<p>Per a utilitzar aquest connector heu de registrar el vostre lloc <a href="https://manage.dev.live.com/Applications/Index">a Microsoft</a>.<p>Com a part del procés de registre haureu d\'introduir l\'URL següent com a «Domini redirigit»:</p><p>{$a->callbackurl}</p>Després de registrar-lo, se us proporcionarà un ID de client i un secret, els quals podreu introduir aquí.</p>';
 $string['pluginname'] = 'Microsoft OneDrive';
 $string['secret'] = 'Secret';
 $string['skydrive:view'] = 'Mostra OneDrive';

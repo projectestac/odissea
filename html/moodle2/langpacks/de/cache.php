@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cache', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['area'] = 'Bereich';
 $string['cacheadmin'] = 'Cache Verwaltung';
 $string['cacheconfig'] = 'Konfiguration';
 $string['cachedef_calendar_subscriptions'] = 'Kalender Abonnements';
+$string['cachedef_capabilities'] = 'Liste von Systemrechten';
+$string['cachedef_completion'] = 'Abschlussstatus von Aktivitäten';
 $string['cachedef_config'] = 'Konfigurationseinstellungen';
 $string['cachedef_coursecat'] = 'Kurskategorien für ausgewählte Nutzer/innen';
 $string['cachedef_coursecatrecords'] = 'Datensätze der Kurskategorien';
@@ -44,18 +46,22 @@ $string['cachedef_coursemodinfo'] = 'Angesammelte Informationen über Module und
 $string['cachedef_databasemeta'] = 'Metainformationen zur Datenbank';
 $string['cachedef_eventinvalidation'] = 'Termin löschen';
 $string['cachedef_externalbadges'] = 'Externe Auszeichnungen einzelner Nutzer/innen';
-$string['cachedef_gradecondition'] = 'Gecachte Bewertungen einzelner Nutzer zur Evaluaton bedingter Verfügbarkeit';
+$string['cachedef_grade_categories'] = 'Abfragen der Bewertungskategorie';
 $string['cachedef_groupdata'] = 'Information für Kursgruppe';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - Inhalt entfernt';
 $string['cachedef_langmenu'] = 'Liste verfügbarer Sprachen';
 $string['cachedef_locking'] = 'Sperrung';
 $string['cachedef_navigation_expandcourse'] = 'Navigation erweiterbare Kurse';
 $string['cachedef_observers'] = 'Event-Beobachtung';
+$string['cachedef_plugin_functions'] = 'Callbacks für verfügbare Plugins';
 $string['cachedef_plugin_manager'] = 'Plugin-Informatonsmanager';
 $string['cachedef_questiondata'] = 'Fragedefinition';
 $string['cachedef_repositories'] = 'Daten der Repositories';
 $string['cachedef_string'] = 'Sprachstring-Cache';
 $string['cachedef_suspended_userids'] = 'Liste der gesperrten Nutzer/innen pro Kurs';
+$string['cachedef_tagindexbuilder'] = 'Suchergebnisse für verschlagwortete Elemente';
+$string['cachedef_tags'] = 'Schlagwortgruppen und Bereiche';
+$string['cachedef_temp_tables'] = 'Cache für temporäre Tabellen';
 $string['cachedef_userselections'] = 'Daten, die verwendet werden, um eine Nutzerauswahl an mehreren Stellen zu verwenden';
 $string['cachedef_yuimodules'] = 'YUI Modul-Definitionen';
 $string['cachelock_file_default'] = 'Standard-Dateisperre';
@@ -97,7 +103,10 @@ $string['inadequatestoreformapping'] = 'Dieser Speicher erfüllt ncht alle Vorau
 $string['invalidlock'] = 'Ungültige Sperre';
 $string['invalidplugin'] = 'Ungültiges Plugin';
 $string['invalidstore'] = 'Speicherplatz für Cache ist ungültig';
+$string['localstorenotification'] = 'Dieser Cache kann sicher einem Speicher zugeordnet werden, der lokal jeweils nur für einen Webserver genutzt wird.';
 $string['lockdefault'] = 'Standard';
+$string['locking'] = 'Sperrung';
+$string['locking_help'] = 'Locking ist ein Vorgang, der das Überschreiben von zwischengespeicherten Daten für eine Zeit verhindert. Die Locking-Methode legt fest, wie die Sperre gestartet und überprüft wird.';
 $string['lockingmeans'] = 'Sperrmechanismus';
 $string['lockmethod'] = 'Sperrmethode';
 $string['lockmethod_help'] = 'Sperrmethode falls für diesen Speicher erforderlich';
@@ -127,6 +136,7 @@ $string['requestcount'] = 'Test mit {$a} Zugriffen';
 $string['rescandefinitions'] = 'Definitionen erneut auswerten';
 $string['result'] = 'Ergebnis';
 $string['set'] = 'Einstellung';
+$string['sharedstorenotification'] = 'Dieser Cache ist in einem Speicher zugeordnet, der für alle Webserver gemeinsam genutzt wird.';
 $string['sharing'] = 'Sharing';
 $string['sharing_all'] = 'Jeder';
 $string['sharing_help'] = 'Sie können festlegen wie Cache-Daten verteilt werden (Cluster Setup). Z.B. wenn mehrere Sites auf dem gleichen Datenspeicher oder getrennt verwaltet werden. Dies ist eine anspruchsvolle Einstellung. Nuitzen Sie sie nur wenn Sie die Wirkungen gut einschätzen können.';

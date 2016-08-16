@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_online_users', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'ユーザがオンライン状態ではないと判断するための休眠時間 (分) です。';
 $string['online_users:addinstance'] = '新しいオンラインユーザブロックを追加する';
-$string['online_users:myaddinstance'] = '新しいオンラインユーザブロックをマイホームに追加する';
+$string['online_users:myaddinstance'] = '新しいオンラインユーザブロックをダッシュボードに追加する';
 $string['online_users:viewlist'] = 'オンラインユーザリストを表示する';
 $string['periodnminutes'] = '直近 {$a} 分';
 $string['pluginname'] = 'オンラインユーザ';

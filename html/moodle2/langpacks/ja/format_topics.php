@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'format_topics', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   format_topics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'このトピック';
+$string['deletesection'] = 'トピックを削除する';
+$string['editsection'] = 'トピックを編集する';
+$string['editsectionname'] = 'トピック名を編集する';
 $string['hidefromothers'] = 'トピックを隠す';
+$string['newsectionname'] = 'トピック {$a} の新しい名称';
 $string['page-course-view-topics'] = 'トピックフォーマット内のコースメインページすべて';
 $string['page-course-view-topics-x'] = 'トピックフォーマット内すべてのコースページ';
 $string['pluginname'] = 'トピックフォーマット';

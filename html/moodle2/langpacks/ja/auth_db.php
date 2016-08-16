@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['auth_dbpasstype'] = '<p>パスワードフィールドで使用する�
 $string['auth_dbpasstype_key'] = 'パスワードフォーマット';
 $string['auth_dbreviveduser'] = '回復済みユーザ {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'ユーザ {$a} の回復中にエラーが発生しました。';
+$string['auth_dbsaltedcrypt'] = '文字列の1方向のハッシュを暗号化する';
 $string['auth_dbsetupsql'] = 'SQLセットアップコマンド';
 $string['auth_dbsetupsqlhelp'] = '特別データベースセットアップ用のSQLコマンドです。多くの場合、コミュニケーションエンコーディングに使用されます - 例 MySQLおよびPostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = '一時停止済みユーザ {$a->name} id {$a->id}';

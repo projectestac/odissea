@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Agregar página';
+$string['alldashboardswerereset'] = 'Todas las páginas del Área personal han sido restablecidas al valor por defecto.';
+$string['allprofileswerereset'] = 'Todas las páginas de perfiles han sido restablecidas al valor por defecto.';
 $string['defaultpage'] = 'Página My Moodle por defecto';
 $string['defaultprofilepage'] = 'Página de perfil por defecto';
 $string['delpage'] = 'Eliminar página';
@@ -36,4 +38,6 @@ $string['noguest'] = 'Los invitados no pueden acceder a la página \'Área perso
 $string['pinblocks'] = 'Configurar bloques actualizados para mi Moodle';
 $string['pinblocksexplan'] = 'Cualesquiera ajustes de bloque que configure aquí serán visibles (y no editables) por cualquier usuario de Moodle en su página general de \'Mi Moodle\'';
 $string['reseterror'] = 'Hubo un error al restablecer su página';
+$string['reseteveryonesdashboard'] = 'Restablecer Área personal para todos los usuarios';
+$string['reseteveryonesprofile'] = 'Restablecer perfil para todos los usuarios';
 $string['resetpage'] = 'Restablecer página a por defecto';

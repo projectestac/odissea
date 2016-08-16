@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Добавить';
 $string['alltags'] = 'Все теги:';
+$string['anycollection'] = 'Любая';
+$string['anytype'] = 'Все';
 $string['arrowtitle'] = 'Щелкните здесь, чтобы ввести предполагаемый текст (серые буквы)';
 $string['configtitle'] = 'Название блока';
 $string['coursetags'] = 'Теги курса:';
-$string['defaultdisplay'] = 'Тип тегов для отображения';
+$string['defaultdisplay'] = 'Показать теги';
 $string['disabledtags'] = 'Теги отключены';
 $string['edit'] = 'редактировать...';
 $string['editdeletemytag'] = 'Удалить тег из этого курса:';
@@ -65,12 +67,19 @@ $string['mytags'] = 'Мои теги:';
 $string['notagsyet'] = 'Пока нет тегов';
 $string['please'] = 'Пожалуйста';
 $string['pluginname'] = 'Теги';
+$string['recursivecontext'] = 'Включать дочерние контексты';
+$string['recursivecontext_help'] = 'Если галочка снята, будут показаны теги элементов в указанном выше контексте (без тегов дочерних контекстов). Например, могут быть показаны теги курса, но не теги элементов курса.';
 $string['select'] = 'Выберите ...';
 $string['showcoursetags'] = 'Показать теги курса';
 $string['showcoursetagsdef'] = 'Показать свойства отметок курса в блоке тегов, позволить студентам теги курсов.';
+$string['standardonly'] = 'Только стандартные';
 $string['suggestedtagthisunit'] = 'Предлагаемые теги этого курса:';
+$string['tagcollection'] = 'Колекция тегов';
+$string['tagcollection_help'] = 'Выберите коллекцию тегов, из которой показывать теги. Если вы выберете «Любая», будут показаны теги из всех коллекций, кроме отмеченных *.';
+$string['taggeditemscontext'] = 'Контекст элементов с тегами';
+$string['taggeditemscontext_help'] = 'Вы можете ограничить облако тегов тегами, представленными в текущей категории курсов, курсе или модуле.';
 $string['tags'] = 'теги';
 $string['tags:addinstance'] = 'Добавлять новый блок «Теги»';
-$string['tags:myaddinstance'] = 'Добавлять новый блок «Теги» на домашнюю страницу';
+$string['tags:myaddinstance'] = 'Добавлять новый блок «Теги» на страницу «Моя домашняя страница»';
 $string['tagthisunit'] = 'Тег этого курса:';
 $string['tagunits'] = 'к тегам своих любимых курсов';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'page', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,3 +61,4 @@ $string['printheading'] = 'Toon paginanaam';
 $string['printheadingexplain'] = 'Paginanaam boven inhoud tonen?';
 $string['printintro'] = 'Toon paginabeschrijving';
 $string['printintroexplain'] = 'Toon paginabeschrijving boven inhoud?';
+$string['search:activity'] = 'Pagina';

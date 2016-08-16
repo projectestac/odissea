@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_gapselect', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,8 @@ $string['choicex'] = 'Choice {no}';
 $string['combinedcontrolnamegapselect'] = 'drop down box';
 $string['combinedcontrolnamegapselectplural'] = 'drop down boxes';
 $string['correctansweris'] = 'The correct answer is: {$a}';
-$string['errorblankchoice'] = 'Please check the Choices: Choice {$a} is empty.';
-$string['errormissingchoice'] = 'Please check the Question text: {$a} was not found in Choices! Only the choice numbers that exist in choices are allowed to be used a place holders.';
+$string['errorblankchoice'] = 'Please check the choices: Choice {$a} is empty.';
+$string['errormissingchoice'] = 'Please check the question text: {$a} was not found in the choices! Only numbers with choice answers specified are allowed to be used as place holders.';
 $string['errornoslots'] = 'The question text must contain placeholders like [[1]] to show where the missing words go.';
 $string['errorquestiontextblank'] = 'You must enter some question text.';
 $string['group'] = 'Group';
@@ -41,9 +41,9 @@ $string['pleaseputananswerineachbox'] = 'Please put an answer in each box.';
 $string['pluginname'] = 'Select missing words';
 $string['pluginnameadding'] = 'Adding a select missing words question';
 $string['pluginnameediting'] = 'Editing a select missing words question';
-$string['pluginname_help'] = 'Type in some question text like "The [[1]] jumped over the [[2]]", then enter the possible words to go in gaps 1 and 2 underneath.';
+$string['pluginname_help'] = 'Select missing words questions require the respondent to select correct answers from dropdown menus. [[1]], [[2]], [[3]], ... are used as placeholders in the question text, with the correct answers specified as choice answers 1, 2, 3, ... respectively. Extra choice answers may be added to make the question harder. Choice answers may be grouped to restrict answers available in each dropdown menu.';
 $string['pluginname_link'] = 'question/type/gapselect';
-$string['pluginnamesummary'] = 'Missing words in some text are filled in using dropdown menus.';
+$string['pluginnamesummary'] = 'Missing words in the question text are filled in using dropdown menus.';
 $string['shuffle'] = 'Shuffle';
 $string['tagsnotallowed'] = '{$a->tag} is not allowed. (Only {$a->allowed} are permitted.)';
 $string['tagsnotallowedatall'] = '{$a->tag} is not allowed. (No HTML is allowed here.)';

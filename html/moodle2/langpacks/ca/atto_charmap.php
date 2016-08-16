@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_charmap', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['alefsymbol'] = 'ℵ ( Símbol àlef)';
 $string['almostequalto'] = '≈ (Símbol gairebé igual a)';
 $string['alpha'] = 'α (Alfa minúscula))';
 $string['alpha_caps'] = 'Α (Alfa majúscula)';
+$string['amacron'] = 'ā (a minúscula amb màcron)';
+$string['amacron_caps'] = 'Ā (A majúscula amb màcron)';
 $string['ampersand'] = '& ( Símbol i comercial)';
 $string['angle'] = '∠ (Símbol angle)';
 $string['approximatelyequalto'] = '≅ (Símbol aproximadament igual a)';
@@ -89,6 +91,8 @@ $string['ediaeresis_caps'] = 'Ë (E majúscula amb dièresis)';
 $string['egrave'] = 'è ( E minúscula amb accent greu)';
 $string['egrave_caps'] = 'È (E majúscula amb accent greu)';
 $string['elementof'] = '∈ (Símbol pertany a)';
+$string['emacron'] = 'ē (e minúscula amb màcron)';
+$string['emacron_caps'] = 'Ē (e majúscula amb màcron)';
 $string['emdash'] = '— (Símbol guió llarg)';
 $string['emspace'] = '  (Símbol espai llarg)';
 $string['endash'] = '– (Símbol guió curt)';
@@ -121,10 +125,13 @@ $string['idiaeresis'] = 'ï (I minúscula amb dièresis)';
 $string['idiaeresis_caps'] = 'Ï (I majúscula amb dièresis)';
 $string['igrave'] = 'ì (I minúscula amb accent grau)';
 $string['igrave_caps'] = 'Ì (I majúscula amb accent greu)';
+$string['imacron'] = 'ī (i minúscula amb màcron)';
+$string['imacron_caps'] = 'Ī (i majúscula amb màcron)';
 $string['imaginarypart'] = 'ℑ (Símbol part imaginària)';
 $string['infinity'] = '∞ (Símbol infinit)';
 $string['insertcharacter'] = '挿 (Símbol insereix caràcter)';
 $string['integral'] = '∫ (Símbol integral)';
+$string['interrobang'] = '‽ (Símbol d\'interrogació i exclamació)';
 $string['intersection'] = '∩ (Símbol intersecció)';
 $string['invertedexclamationmark'] = '¡ (Símbol exclamació invertida)';
 $string['iota'] = 'ι (Iota minúscula)';
@@ -181,6 +188,8 @@ $string['odiaeresis'] = 'ö (O minúscula amb dièresis)';
 $string['odiaeresis_caps'] = 'Ö (O majúscula amb dièresis)';
 $string['ograve'] = 'ò (O minúscula amb accent greu)';
 $string['ograve_caps'] = 'Ò (O majúscula amb accent greu)';
+$string['omacron'] = 'ō (o minúscula amb màcron)';
+$string['omacron_caps'] = 'Ō (o majúscula amb màcron)';
 $string['omega'] = 'ω (Omega minúscula)';
 $string['omega_caps'] = 'Ω (Omega majúscula)';
 $string['omicron'] = 'ο (Òmicron minúscula)';
@@ -230,7 +239,7 @@ $string['similarto'] = '似 (Símbol semblant a)';
 $string['singleleftpointinganglequotationmark'] = '‹ (Símbol cometa d\'angle apuntant a l\'esquerra)';
 $string['singlelow9quotationmark'] = '‚ (Símbol cometa senzilla baixeta)';
 $string['singlerightpointinganglequotationmark'] = '› (Símbol cometa d\'angle apuntant a la dreta)';
-$string['smalltilde'] = '˜ (Símbol titlla petita)';
+$string['smalltilde'] = '˜ (Símbol titlla menuda)';
 $string['softhyphen'] = '(Símbol guionet condicionat)';
 $string['squareroot'] = '√ (Símbol arrel quadrada)';
 $string['subsetof'] = '⊂ (Símbol subconjunt de)';
@@ -247,7 +256,7 @@ $string['therefore'] = '∴ (Símbol en conseqüència)';
 $string['theta'] = 'θ (Theta minúscula)';
 $string['theta_caps'] = 'Θ (Theta majúscula)';
 $string['thetasymbol'] = 'ϑ (Símbol theta)';
-$string['thinspace'] = '  (Símbol espai fi)';
+$string['thinspace'] = '  (Símbol espai menut)';
 $string['thorn'] = 'þ (Thorn minúscula)';
 $string['thorn_caps'] = 'Þ (Thorn majúscula)';
 $string['threedotleader'] = '… (Símbol punts suspensius)';
@@ -261,6 +270,8 @@ $string['udiaeresis'] = 'ü (U minúscula amb dièresis)';
 $string['udiaeresis_caps'] = 'Ü (U majúscula amb dièresis)';
 $string['ugrave'] = 'ù (U minúscula amb accent greu)';
 $string['ugrave_caps'] = 'Ù (U majúscula amb accent greu)';
+$string['umacron'] = 'ū (u minúscula amb màcron)';
+$string['umacron_caps'] = 'Ū (u majúscula amb màcron)';
 $string['union'] = '∪ (Símbol unió)';
 $string['upsilon'] = 'υ (Ípsilon minúscula)';
 $string['upsilon_caps'] = 'Υ (Ípsilon majúscula)';

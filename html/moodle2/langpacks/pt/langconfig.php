@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'langconfig', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['decsep'] = ',';
 $string['firstdayofweek'] = '1';
 $string['iso6391'] = 'en';
 $string['iso6392'] = 'eng';
-$string['labelsep'] = ':';
+$string['labelsep'] = ':&nbsp;';
 $string['listsep'] = ';';
 $string['locale'] = 'pt_PT.UTF-8';
 $string['localewin'] = 'Portuguese_Portugal.1252';

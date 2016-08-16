@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_quiz_results', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['config_use_groups'] = 'Показывать группы вместо �
 $string['error_emptyquizid'] = 'Пожалуйста, настройте этот блок - выберите, результаты какого теста должны отображаться.';
 $string['error_emptyquizrecord'] = 'Ошибка! Похоже, что выбранного Вами теста не существует в базе данных.';
 $string['error_nogroupsexist'] = 'Ошибка! Для блока выбрана настройка отображения результатов по группам, но для курса не определено ни одной группы.';
-$string['pluginname'] = 'Результаты теста';
+$string['pluginname'] = 'Результаты теста (отключено)';
 $string['quiz_results:addinstance'] = 'Добавлять новый блок «Результаты теста»';
 $string['worstgrade'] = 'Самая низкая оценка:';
 $string['worstgrades'] = '{$a} самых низких оценок:';

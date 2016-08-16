@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,6 @@ $string['modulenameplural'] = 'Trabalhos 2.2 (Desativado)';
 $string['page-mod-assignment-submissions'] = 'Página de submissão do Trabalho';
 $string['page-mod-assignment-view'] = 'Página principal do Trabalho';
 $string['page-mod-assignment-x'] = 'Qualquer página do Trabalho';
-$string['pendingupgrades_message_content'] = 'Como parte da atualização para o Moodle 2.7, a atividade de retrocompatibilidade "Trabalho 2.2" foi desativada. As cópias de segurança da atividade de retrocompatibilidade "Trabalho 2.2" serão continuamente restauradas para a nova atividade Trabalho. Todas as instâncias restantes da atividade de retrocompatibilidade "Trabalho 2.2" devem ser atualizadas usando a ferramenta de atualização do Trabalho {$a->docsurl}. Há {$a->count} instâncias da atividade de retrocompatibilidade "Trabalho 2.2"  neste site e que requerem atualização. Os utilizadores não serão capazes de aceder ao conteúdo destas atividades até que estas sejam atualizadas.';
-$string['pendingupgrades_message_small'] = 'Este módulo foi desativado. Todos os restantes trabalhos devem ser atualizados para o novo módulo de trabalho usando a ferramenta de atualização do trabalho.';
-$string['pendingupgrades_message_subject'] = 'Informações importantes sobre a versão 2.2 do Trabalho';
 $string['pluginadministration'] = 'Administração dos Trabalhos 2.2 (Desativado)';
 $string['pluginname'] = 'Trabalho 2.2 (Desativado)';
 $string['upgradenotification'] = 'Esta atividade está baseada no antigo módulo de trabalhos';

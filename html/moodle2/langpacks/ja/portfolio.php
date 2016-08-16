@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML+添付';
 $string['format_spreadsheet'] = 'スプレッドシート';
 $string['format_text'] = 'プレインテキスト';
 $string['format_video'] = 'ビデオ';
-$string['hidden'] = '非表示';
 $string['highdbsizethreshold'] = '高程度のデータベース転送サイズ';
 $string['highdbsizethresholddesc'] = 'この数を超えると高程度の転送時間が必要だと見なされるデータベースレコード数です。';
 $string['highfilesizethreshold'] = '高程度のファイル転送サイズ';
@@ -109,6 +108,8 @@ $string['instanceismisconfigured'] = 'ポートフォリオインスタンスの
 $string['instancenotdelete'] = 'ポートフォリオの削除に失敗しました。';
 $string['instancenotsaved'] = 'ポートフォリオの保存に失敗しました。';
 $string['instancesaved'] = 'ポートフォリオが正常に保存されました。';
+$string['intro'] = 'あなたが作成した課題提出、フォーラム投稿およびブログエントリのようなコンテンツをポートフォリオにエクスポートまたはダウンロードすることができます。<br />
+コンテンツをエクスポートするオプションとして一覧表示されないようあなたが使用したくないポートフォリオを非表示にすることができます。';
 $string['invalidaddformat'] = '無効な追加フォーマットが「portfolio_add_button」に渡されました。({$a}) には「PORTFOLIO_ADD_XXX」の形式を使用してください。';
 $string['invalidbuttonproperty'] = 'portfolio_buttonのプロパティ ({$a}) が見つかりませんでした。';
 $string['invalidconfigproperty'] = '設定プロパティ ({$a->property} - {$a->class}) が見つかりませんでした。';
@@ -172,6 +173,7 @@ $string['save'] = '保存';
 $string['selectedformat'] = '選択されたエクスポートフォーマット';
 $string['selectedwait'] = '待機の選択?';
 $string['selectplugin'] = 'エクスポート先を選択してください。';
+$string['showhide'] = '表示/非表示';
 $string['singleinstancenomultiallowed'] = '単一のポートフォリオプラグインインスタンスのみ利用可能です。1セッションでの複数エクスポートはサポートされていません。このプラグインを使用したセッション内にすでにアクティブなエクスポートが存在します!';
 $string['somepluginsdisabled'] = '設定が正しくないまたは他の要因により、すべてのプラグインインスタンスは無効にされました:';
 $string['sure'] = '本当に「 {$a} 」を削除してもよろしいですか? 元に戻すことはできません。';

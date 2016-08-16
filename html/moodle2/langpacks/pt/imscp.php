@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'imscp', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,4 +46,5 @@ $string['packagefile'] = 'Ficheiro de pacote';
 $string['page-mod-imscp-x'] = 'Qualquer página do pacote IMS';
 $string['pluginadministration'] = 'Administração IMSCP';
 $string['pluginname'] = 'Pacotes IMS';
+$string['search:activity'] = 'Pacote IMS - informações do recurso';
 $string['toc'] = 'Índice';

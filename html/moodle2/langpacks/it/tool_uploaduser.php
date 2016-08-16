@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploaduser', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowdeletes'] = 'Consenti eliminazione utenti';
 $string['allowrenames'] = 'Consenti la modifica degli username';
 $string['allowsuspends'] = 'Consente la sospensione e riattivazione di account.';
+$string['assignedsysrole'] = 'Ruolo globale {$a} assegnato';
 $string['csvdelimiter'] = 'Delimitatore CSV';
 $string['defaultvalues'] = 'Valori di default';
 $string['deleteerrors'] = 'Elimina errori';
@@ -39,6 +40,7 @@ $string['pluginname'] = 'Caricamento utenti';
 $string['renameerrors'] = 'Errori nel cambiamento del nome';
 $string['requiredtemplate'] = 'Obbligatorio. Si può usare il modello di sintassi (%l = lastname, %f = firstname, %u = username).';
 $string['rowpreviewnum'] = 'Righe di anteprima';
+$string['unassignedsysrole'] = 'Eliminata assegnazione ruolo globale {$a}';
 $string['uploadpicture_baduserfield'] = 'L\'attributo utente specificato non è valido. Provare ancora.';
 $string['uploadpicture_cannotmovezip'] = 'Un file zip non può essere spostato in una cartella temporanea.';
 $string['uploadpicture_cannotprocessdir'] = 'Non è stato possibile elaborare il file zip decompresso.';

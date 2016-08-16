@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['cnfshowgroup'] = 'Defina se a separação por grupos deve ou não ser e
 $string['cnfsortkey'] = 'Selecione a chave de ordenação predefinida';
 $string['cnfsortorder'] = 'Selecione o tipo de ordenação predefinido';
 $string['cnfstudentcanpost'] = 'Configuração predefinida da possibilidade dos alunos criarem termos no glossário';
+$string['cnftabs'] = 'Selecione os separadores visíveis para este formato de glossário';
 $string['comment'] = 'Comentário';
 $string['commentdeleted'] = 'O comentário foi apagado';
 $string['comments'] = 'Comentários';
@@ -273,6 +274,8 @@ $string['rssarticles_help'] = 'Defina o número de termos do glossário a public
 $string['rsssubscriberss'] = 'Mostrar a lista RSS para {$a} termos';
 $string['rsstype'] = 'Lista RSS para esta atividade';
 $string['rsstype_help'] = 'Para ativar listas RSS nesta atividade, selecione termos com autor ou termos sem autor a incluir na lista RSS.';
+$string['search:activity'] = 'Glossário - informações da atividade';
+$string['search:entry'] = 'Glossário - termos';
 $string['searchindefinition'] = 'Pesquisar texto completo';
 $string['secondaryglossary'] = 'Glossário secundário';
 $string['showall'] = 'Mostrar a hiperligação TODOS';
@@ -291,6 +294,7 @@ $string['studentcanpost'] = 'Os alunos podem adicionar termos';
 $string['totalentries'] = 'Todos os termos';
 $string['usedynalink'] = 'Criar automaticamente hiperligações para o glossário';
 $string['usedynalink_help'] = 'Se ativar esta opção e as hiperligações automáticas para o glossário estiverem ativas pelo administrador, ao adicionar um novo termo poderá ativar a opção "Criar automaticamente hiperligações para este termo" para que todas as ocorrências do termo nos conteúdos da disciplina tenham uma hiperligação para a respetiva definição no glossário.';
+$string['visibletabs'] = 'Separadores visíveis';
 $string['waitingapproval'] = 'A aguardar aprovação';
 $string['warningstudentcapost'] = '(Aplica-se apenas se o glossário não for o principal)';
 $string['withauthor'] = 'Termos com autor';

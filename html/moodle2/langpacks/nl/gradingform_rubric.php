@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,14 @@ $string['alwaysshowdefinition'] = 'Sta toe dat de gebruikers een voorbeeld kunne
 $string['backtoediting'] = 'Terug naar bewerken';
 $string['confirmdeletecriterion'] = 'Weet je zeker dat je dit criterium wil wissen?';
 $string['confirmdeletelevel'] = 'Weet je zeker dat je dit niveau wil wissen?';
+$string['criterion'] = 'Criterium {$a}';
 $string['criterionaddlevel'] = 'Voeg niveau toe';
 $string['criteriondelete'] = 'Verwijder criterium';
+$string['criterionduplicate'] = 'Dupliceer criterion';
 $string['criterionempty'] = 'Klik om het criterium te bewerken';
 $string['criterionmovedown'] = 'Verplaats lager';
 $string['criterionmoveup'] = 'Verplaats hoger';
+$string['criterionremark'] = 'Opmerking voor criterium {$a->description}: {$a->remark}';
 $string['definerubric'] = 'Definieer rubric';
 $string['description'] = 'Beschrijving';
 $string['enableremarks'] = 'Laat beoordeler toe om tekstopmerkingen te maken voor elk criterium';
@@ -45,8 +48,11 @@ $string['err_nodescription'] = 'De criteriumbeschrijving kan niet leeg zijn';
 $string['err_scoreformat'] = 'Het aantal punten voor elk niveau moet een geldig positief getal zijn.';
 $string['err_totalscore'] = 'Het maximale aantal mogelijke punten wanneer beoordeeld door de rubric moet meer dan nul zijn.';
 $string['gradingof'] = '{$a} beoordeling';
-$string['leveldelete'] = 'Verwijder niveau';
+$string['level'] = 'Niveau {$a->definition}, {$a->score} punten.';
+$string['leveldefinition'] = 'Niveau {$a} definitie';
+$string['leveldelete'] = 'Verwijder niveau {$a}';
 $string['levelempty'] = 'Klik om het niveau te bewerken';
+$string['levelsgroup'] = 'Groepniveaus';
 $string['name'] = 'Naam';
 $string['needregrademessage'] = 'De rubricdefinitie is gewijzigd nadat de leerling beoordeeld werd. De leerling kan zijn rubric niet zien tot je deze controleert en het cijfer aanpast.';
 $string['pluginname'] = 'Rubric';
@@ -68,6 +74,7 @@ $string['rubricstatus'] = 'Huidige rubric status';
 $string['save'] = 'Bewaar';
 $string['saverubric'] = 'Bewaar rubric en maak het klaar';
 $string['saverubricdraft'] = 'Bewaar als klad';
+$string['scoreinputforlevel'] = 'Score input voor niveau {$a}';
 $string['scorepostfix'] = '{$a} punten';
 $string['showdescriptionstudent'] = 'Toon rubricbeschrijving aan wie beoordeeld is';
 $string['showdescriptionteacher'] = 'Toon rubricbeschrijving tijdens evaluatie';

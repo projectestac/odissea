@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_completion', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['eventreportviewed'] = '完了レポートが閲覧されました。';
 $string['eventuserreportviewed'] = '完了ユーザレポートが閲覧されました。';
 $string['id'] = 'ID';
 $string['name'] = '名称';
+$string['nocapability'] = 'ユーザ完了レポートにアクセスできません。';
 $string['page-report-completion-index'] = 'コース完了レポート';
 $string['page-report-completion-user'] = 'ユーザコース完了レポート';
 $string['page-report-completion-x'] = 'すべての完了レポート';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,27 +88,28 @@ $string['backpackdetails'] = '背包设置';
 $string['backpackemail'] = 'Email';
 $string['backpackemail_help'] = '你的背包关联的电子邮件地址。当你连接，任何徽章赢得了在本网站将与此有关的电子邮件地址。';
 $string['backpackimport'] = '徽章导入设置';
-$string['backpackimport_help'] = '背包连接成功建立后，从你的背包徽章可以显示在您的“我的徽章”页面，您的个人资料页。
-在这方面，你可以选择收藏徽章从你的背包，你想在你的剖面显示。';
+$string['backpackimport_help'] = '背包连接成功建立后，你的背包中的勋章可以显示在“我的勋章”页面和您的个人资料页面。
+在这个区域，你可以从背包中选择收藏勋章，以便在你的个人资料页面显示。';
 $string['badgedetails'] = '勋章详情';
 $string['badgeimage'] = '图片';
 $string['badgeimage_help'] = '此图片在授予此勋章时使用。
 
 更换图片时，浏览并选择一张图片文件（JPG或者PNG格式），然后再点击“保存更改”按钮。图片文件会被裁切成正方形并且按需要进行缩放。';
 $string['badgeprivacysetting'] = '勋章私密设置';
-$string['badgeprivacysetting_help'] = '你获得的徽章可以显示在您的帐户页面。这个设置允许你自动设定的新赚取徽章的可见性。
-你仍然可以控制个人徽章隐私设置您的“我的徽章”页面。';
+$string['badgeprivacysetting_help'] = '你获得的勋章可以显示在您的帐户页面。这个设置允许你自动设定的新赚取勋章的可见性。
+你仍然可以控制个人勋章隐私设置您的“我的勋章”页面。';
 $string['badgeprivacysetting_str'] = '自动在我的个人资料页面上展示我荣获的勋章';
+$string['badges'] = '勋章';
 $string['badgesalt'] = '接受者email的哈希盐值';
 $string['badgesalt_desc'] = '提供一个哈希串给勋章服务中心，以便确保勋章获得者不会暴露他们的 email 地址。此项设计只能填入数字和字母。
 注意：为了保证有效验证收件人，一旦你开始发行勋章请避免更改此设置。';
 $string['badgesdisabled'] = '徽章没有被启用。';
 $string['badgesearned'] = '获得勋章数： {$a}';
 $string['badgesettings'] = '勋章设置';
-$string['badgestatus_0'] = '禁用';
-$string['badgestatus_1'] = '启用';
-$string['badgestatus_2'] = '禁用';
-$string['badgestatus_3'] = '启用';
+$string['badgestatus_0'] = '用户不可以使用';
+$string['badgestatus_1'] = '用户可以使用';
+$string['badgestatus_2'] = '用户不可以使用';
+$string['badgestatus_3'] = '用户可以使用';
 $string['badgestatus_4'] = '存档';
 $string['badgestoearn'] = '可用的勋章数： {$a}';
 $string['badgesview'] = '课程勋章';
@@ -211,6 +212,7 @@ $string['error:backpackproblem'] = '连接到你的背包服务提供商出现�
 $string['error:badjson'] = '尝试的连接返回了无效的数据。';
 $string['error:cannotact'] = '不能激活徽章。';
 $string['error:cannotawardbadge'] = '不能奖徽章用户。';
+$string['error:cannotdeletecriterion'] = '无法删除此规则。';
 $string['error:clone'] = '不能克隆徽章。';
 $string['error:connectionunknownreason'] = '连接失败，但是没有原因。';
 $string['error:duplicatename'] = '徽章的名称已经在系统中存在';
@@ -239,6 +241,7 @@ $string['error:requesterror'] = '连接请求失败（错误代码：{$a}）';
 $string['error:requesttimeout'] = '连接请求在它完成之前超时！';
 $string['error:save'] = '不能保存徽章！';
 $string['error:userdeleted'] = '{$a->user} (不存在于 {$a->site}站点中)';
+$string['eventbadgeawarded'] = '勋章授予';
 $string['evidence'] = '凭据';
 $string['existingrecipients'] = '已经存在的勋章获得者';
 $string['expired'] = '已过期';
@@ -255,7 +258,6 @@ $string['externalbadges_help'] = '此处展示您外部背包中的勋章。';
 $string['externalbadgesp'] = '在其它网站获得的勋章：';
 $string['externalconnectto'] = '为显示外部徽章，你需要<a href="{$a}">连接到背包</a>.';
 $string['fixed'] = '固定日期';
-$string['hidden'] = '隐藏';
 $string['hiddenbadge'] = '抱歉，徽章的主要没有提供此信息。';
 $string['issuancedetails'] = '有效期';
 $string['issuedbadge'] = '授予的勋章信息';
@@ -275,8 +277,8 @@ $string['makepublic'] = '公开';
 $string['managebadges'] = '勋章管理';
 $string['message'] = '内容';
 $string['messagebody'] = '<p>您被授予一枚 "%badgename%" 的勋章！</p>
-<p>通过此链接可以看到此勋章的详细信息： %badgelink%。</p>
-<p>您能从 {$a} 管理和下载勋章</p>';
+<p>通过此勋章信息页面可以查看此勋章的详细信息： %badgelink%。</p>
+<p>您可以从 {$a} 页面管理或下载此勋章。</p>';
 $string['messagesubject'] = '热烈祝贺！您刚刚获得一枚勋章！';
 $string['method'] = '当完成...此规则即生效';
 $string['mingrade'] = '至少获得成绩';
@@ -324,6 +326,7 @@ $string['personaconnection_help'] = 'Persona 是一个基于 WEB 的身份认证
 
 更多关于 Persona 的信息请访问 <a href="https://login.persona.org/about">https://login.persona.org/about</a>。';
 $string['potentialrecipients'] = '潜在的勋章获得者';
+$string['preferences'] = '勋章选项';
 $string['recipientdetails'] = '获得者详情';
 $string['recipientidentificationproblem'] = '在现有用户中无法找到此勋章的接受人';
 $string['recipients'] = '勋章获得者';

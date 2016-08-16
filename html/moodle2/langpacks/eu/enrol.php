@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Eskura dauden ikastaroetako matrikulazio-pluginak';
 $string['addinstance'] = 'Gehitu metodoa';
+$string['addinstanceanother'] = 'Gehitu metodoa eta sortu beste bat';
 $string['ajaxnext25'] = 'Hurrengo 25ak...';
 $string['ajaxoneuserfound'] = 'Erabiltzaile 1 aurkitu da';
 $string['ajaxxusersfound'] = '{$a} erabiltzaile aurkitu d(ir)a';
@@ -64,7 +65,7 @@ $string['enroltimecreated'] = 'Matrikula sortu da';
 $string['enroltimeend'] = 'Matrikulazio-amaiera';
 $string['enroltimestart'] = 'Matrikulazio-hasiera';
 $string['enrolusage'] = 'Instantziak / matrikulazioak';
-$string['enrolusers'] = 'matrikulatu erabiltzaileak ';
+$string['enrolusers'] = 'Matrikulatu erabiltzaileak';
 $string['enrolxusers'] = 'Matrikulatu {$a} erabiltzaile';
 $string['errajaxfailedenrol'] = 'Errorea erabiltzailea matrikulatzean';
 $string['errajaxsearch'] = 'Errorea erabiltzaileak bilatzean';
@@ -91,6 +92,7 @@ $string['extremovedsuspendnoroles'] = 'Desgaitu ikastaro-matrikulazioa eta kendu
 $string['extremovedunenrol'] = 'Erabiltzailea ikastarotik desmatrikulatu ';
 $string['finishenrollingusers'] = 'Amaitu erabiltzaileak matrikulatzen';
 $string['foundxcohorts'] = 'Aurkitutako {$a} kohorte';
+$string['instanceadded'] = 'Metodoa gehitu da';
 $string['instanceeditselfwarning'] = 'Kontuz:';
 $string['instanceeditselfwarningtext'] = 'Matrikulazio-metodo hau erabilita zaude matrikulatuta ikastaro honetan eta aldaketek eragotzi egin dezakete ikastarorako sarbidea.';
 $string['invalidenrolinstance'] = 'Matrikulazio-instantziak ez du balio';
@@ -112,6 +114,7 @@ $string['periodend'] = 'noiz arte {$a}';
 $string['periodnone'] = '{$a} matrikulatuta';
 $string['periodstart'] = 'noiztik {$a}';
 $string['periodstartend'] = '{$a->start} -tik  {$a->end} arte';
+$string['proceedtocourse'] = 'Jarraitu ikastaro-edukiarekin';
 $string['recovergrades'] = 'Berreskuratu erabiltzailearen lehengo kalfikazioak, posible bada';
 $string['rolefromcategory'] = '{$a->role} (Ikastaro-kategoriatik heredatutakoa)';
 $string['rolefrommetacourse'] = '{$a->role} (Goragoko ikastarotik heredatutakoa)';

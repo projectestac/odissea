@@ -26,3 +26,5 @@ $string['profile_updated']		= 'Perfil actualizado correctamente';
 $string['profile_deleted']		= 'Perfil eliminado correctamente';
 
 $string['export_data_settings']      = 'Parámetros de datos para exportar';
+
+$string['cron_settings'] = 'Parámetros del cron';

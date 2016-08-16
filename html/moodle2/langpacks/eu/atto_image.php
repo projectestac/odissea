@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_image', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['browserepositories'] = 'Arakatu biltegiak...';
 $string['constrain'] = 'Tamaina berez';
 $string['createimage'] = 'Txertatu irudia';
 $string['customstyle'] = 'Egokitu estiloa';
-$string['enteralt'] = 'Deskribatu irudia ikusi ezin duen batentzat';
+$string['enteralt'] = 'Idatzi ordezko testua';
 $string['enterurl'] = 'Idatzi URLa';
 $string['height'] = 'Altuera';
 $string['imageproperties'] = 'Irudiaren propietateak';
@@ -45,4 +45,5 @@ $string['presentationoraltrequired'] = 'Irudiek deskribapena behar dute, besteri
 $string['preview'] = 'Aurreikusi';
 $string['saveimage'] = 'Gorde irudia';
 $string['size'] = 'Tamaina';
+$string['uploading'] = 'Igotzen, itxaron mesedez...';
 $string['width'] = 'Zabalera';

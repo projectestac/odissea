@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,14 @@ $string['display'] = '显示文件夹内容';
 $string['displayinline'] = '内嵌在课程页面';
 $string['displaypage'] = '在单独的页面';
 $string['dnduploadmakefolder'] = '解压文件并创建文件夹';
+$string['downloadfolder'] = '下载文件夹';
+$string['eventallfilesdownloaded'] = '文件夹的ZIP压缩文件已下载';
 $string['folder:addinstance'] = '添加一个新文件夹';
 $string['foldercontent'] = '文件和子文件夹';
 $string['folder:managefiles'] = '在文件夹模块中管理文件';
 $string['folder:view'] = '查看文件夹内容';
+$string['maxsizetodownload'] = '文件夹下载的最大容量限制(MB)';
+$string['maxsizetodownload_help'] = '当以压缩文件下载时，这个文件夹最大可以达到多少。若设为0，表示大小没有限制。';
 $string['modulename'] = '文件夹';
 $string['modulename_help'] = '文件夹模块可以让教师在一个单一文件夹里展示一堆相关的文件，减少在课程页面上下上下滚动。
 
@@ -49,4 +53,7 @@ $string['page-mod-folder-view'] = '文件夹模块主页';
 $string['page-mod-folder-x'] = '任意文件夹模块页面';
 $string['pluginadministration'] = '文件夹管理';
 $string['pluginname'] = '文件夹';
+$string['search:activity'] = '文件夹';
+$string['showdownloadfolder'] = '显示下载文件夹的按钮';
+$string['showdownloadfolder_help'] = '若启用，文件夹内容旁边会显示一个按钮，用来以压缩文件下载。';
 $string['showexpanded'] = '显示展开的子文件夹';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,3 +60,4 @@ $string['printintro'] = 'Έμφάνιση περιγραφής πηγής';
 $string['printintroexplain'] = 'Εμφάνιση περιγραφής πηγής κάτω από το περιεχόμενο; Ορισμένοι τύποι εμφάνισης μπορεί να μην εμφανίζουν την περιγραφή, ακόμα και αν έχει ενεργοποιηθεί.';
 $string['resource:exportresource'] = 'Export resource';
 $string['resource:view'] = 'Προβολή πηγής';
+$string['search:activity'] = 'Πηγή πληροφοριών';

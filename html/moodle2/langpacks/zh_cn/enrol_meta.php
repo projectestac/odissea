@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_meta', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = '加到小组';
+$string['coursesort'] = '课程列表排序';
+$string['coursesort_help'] = '这用来决定那些可以链接的课程列表的排序顺序是依照指定顺序(例如：网站管理>课程>管理课程与类别>排列顺序)或是自动按照字母顺序排列。';
+$string['creategroup'] = '建立新组';
+$string['defaultgroupnametext'] = '{$a->name} 课程 {$a->increment}';
 $string['linkedcourse'] = '链接课程';
 $string['meta:config'] = '配置元选课实例';
 $string['meta:selectaslinked'] = '选择做为元链接的课程';

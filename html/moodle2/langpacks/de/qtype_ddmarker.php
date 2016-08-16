@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,6 @@ $string['alttext'] = 'Alternativer Text';
 $string['answer'] = 'Antwort';
 $string['bgimage'] = 'Hintergrundbild';
 $string['clearwrongparts'] = 'Bewege falsch gesetzte Markierungen zu ihrem Ausgangsplatz unter dem Bild';
-$string['confirmimagetargetconversion'] = 'Sie sind dabei, die obige "Image target" Fragen zu "Drag and Drop Markierung" Fragen umzuwandeln';
-$string['convertingimagetargetquestion'] = 'Frage "{$a->name}" umgewandelt';
 $string['coords'] = 'Koordinaten';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['draggableimage'] = 'Verschiebbares Bild';
@@ -47,55 +45,44 @@ $string['dropzones_help'] = 'Die Ablegebereiche werden definiert, indem Sie Koor
 
 * Kreis: mittelpunkt_x, mittelpunkt_y; radius<br>Beispiel: <code>80, 100; 50</code>
 * Polygon: x1, y1; x2, y2; ...; xn, yn<br>Beispiel: <code>20, 60; 100, 60; 20, 100</code>
-* Rechteck: links, oben, breite, höhe<br>Beispiel: <code>20, 60; 80, 40</code>';
+* Rechteck: links, oben; breite, höhe<br>Beispiel: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Die folgenden Markierungen wurden in den falschen Bereich gesetzt: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Die folgenden Markierungen wurden falsch gesetzt: {$a}. Hervorgehobene Markierungen werden nun an den richtigen Platzierungen gezeigt. <br />Klicken Sie auf die Markierung, um den erlaubten Bereich zu sehen.';
 $string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag-and-drop"-Fläche wählen.';
-$string['formerror_noitemselected'] = 'Sie haben einen Ablegebereich festgelegt, aber keine Markierung ausgewählt, welche in den Bereich gezogen werden muss.';
+$string['formerror_noitemselected'] = 'Sie haben einen Ablegebereich festgelegt, aber keine Markierung ausgewählt, welche in den Bereich gezogen werden soll.';
 $string['formerror_nosemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält keine \';\'. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordsstring} ausgedrückt werden.';
-$string['formerror_onlysometagsallowed'] = 'Nur "{$a}" Tags sind in der Beschreibung für eine Markierung erlaubt.';
-$string['formerror_onlyusewholepositivenumbers'] = 'Bitte nutzen Sie nur positive ganze Zahlen, um x,y Koordinaten und/oder die Höhe und Breite zu beschreiben. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden.';
+$string['formerror_onlysometagsallowed'] = 'Nur \'{$a}\' Tags sind in der Beschreibung für eine Markierung erlaubt.';
+$string['formerror_onlyusewholepositivenumbers'] = 'Verwenden Sie ausschließlich positive ganze Zahlen, um x,y Koordinaten bzw. um Höhe und Breite zu beschreiben. Die Parameter für ein(en) {$a->shape} müssen in der Form \'{$a->coordstring}\' eingegeben werden.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'Für ein Polygon müssen sie mindestens drei Punkte angeben. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden';
-$string['formerror_repeatedpoint'] = 'Sie haben einen Punkt zweimal angegeben. Bitte entfernen Sie die Dopplung. Ihre Koordinaten für ein(en) {$a->shape} sollten in der Form - {$a->coordsstring} - angegeben werden.';
-$string['formerror_shapeoutsideboundsofbgimage'] = 'Die Form, die Sie erstellt haben, liegt nicht auf dem Hintergrundbild';
-$string['formerror_toomanysemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält zu viele Strichpunkte. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordsstring} ausgedrückt werden';
-$string['formerror_unrecognisedwidthheightpart'] = 'Die Breite und Höhe, die Sie angegeben haben, kann nicht erkannt werden. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden';
-$string['formerror_unrecognisedxypart'] = 'Die x,y Koordinaten, die Sie angegeben haben, können nicht erkannt werden. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden';
-$string['imagetargetconverter'] = '"Image target" Fragen in "Drag and Drop Markierungen" Fragen umwandeln';
+$string['formerror_repeatedpoint'] = 'Sie haben einen Punkt zweimal angegeben. Entfernen Sie die Dopplung. Die Parameter für ein(en) {$a->shape} müssen in der Form \'{$a->coordstring}\' eingegeben werden.';
+$string['formerror_shapeoutsideboundsofbgimage'] = 'Der angegebenen Umriss liegt nicht auf dem Hintergrundbild.';
+$string['formerror_toomanysemicolons'] = 'Ihre Zeichenkette enthält zu viele Strichpunkte. Die Parameter für ein(en) {$a->shape} müssen in der Form \'{$a->coordstring}\' eingegeben werden.';
+$string['formerror_unrecognisedwidthheightpart'] = 'Breite und Höhe werden nicht erkannt. Die Parameter für ein(en) {$a->shape} müssen in der Form \'{$a->coordstring}\' eingegeben werden.';
+$string['formerror_unrecognisedxypart'] = 'Die angegebenen x,y Koordinaten können nicht erkannt werden. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordstring} ausgedrückt werden';
 $string['infinite'] = 'Unendlich';
-$string['listitemconfirmcategory'] = 'Sie sind dabei, alle "Image target" Fragen in der Kategorie "{$a->name}" ({$a->qcount} Fragen) umzuwandeln';
-$string['listitemconfirmcontext'] = 'Sie sind dabei, alle "Image target" Fragen im Kontext "{$a->name}" ({$a->qcount} Fragen) umzuwandeln';
-$string['listitemconfirmquestion'] = 'Sie sind dabei, die Frage "{$a->name}" umzuwandeln';
-$string['listitemlistallcategory'] = 'Wähle alle "Image target" Fragen in der Kategorie "{$a->name}" ({$a->qcount} Fragen)';
-$string['listitemlistallcontext'] = 'Wähle alle "Image target" Fragen im Kontext "{$a->name}" ({$a->qcount} Fragen)';
-$string['listitemlistallquestion'] = 'Wähle Frage "{$a->name}"';
-$string['listitemprocessingcategory'] = 'Wandle alle "Image target" Fragen in der Kategorie "{$a->name}" ({$a->qcount} Fragen) um';
-$string['listitemprocessingcontext'] = 'Wandle alle "Image target" Fragen im Kontext "{$a->name}" ({$a->qcount} Fragen) um';
-$string['listitemprocessingquestion'] = 'Frage "{$a->name}" umgewandelt';
 $string['marker'] = 'Markierung';
 $string['marker_n'] = 'Markierung {no}';
 $string['markers'] = 'Markierungen';
 $string['nolabel'] = 'Kein Beschriftungstext';
 $string['noofdrags'] = 'Nummer';
-$string['noquestionsfound'] = 'Keine Fragen zum Umwandeln gefunden.';
-$string['pleasedragatleastonemarker'] = 'Ihre Antwort ist nicht komplett. Sie müssen mindestens eine Markierung auf dem Bild platzieren.';
+$string['pleasedragatleastonemarker'] = 'Die Antwort ist nicht vollständig. Sie müssen mindestens eine Markierung auf das Bild setzen.';
 $string['pluginname'] = 'Drag-and-drop-Markierungen';
 $string['pluginnameadding'] = 'Füge "Drag-and-drop- Markierungen" hinzu';
 $string['pluginnameediting'] = 'Bearbeite "Drag-and-drop- Markierungen"';
-$string['pluginname_help'] = 'Wählen Sie ein Hintergrundbild. Geben Sie Beschriftungstexte für Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
+$string['pluginname_help'] = '"Drag-and-drop- Markierungen" benötigen Platzhalter, um Textbausteine in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
 $string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hintergrundbild gezogen.';
 $string['previewareaheader'] = 'Vorschau';
 $string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Beschriftungstexte für die Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
 $string['refresh'] = 'Vorschau erneuern';
 $string['shape'] = 'Umriss';
 $string['shape_circle'] = 'Kreis';
-$string['shape_circle_coords'] = 'x,y;r (wobei x,y die x und y Koordinaten der Mitte des Kreises sind und r der Radius ist)';
+$string['shape_circle_coords'] = 'x,y;r - In dieser Liste sind x,y die Koordinaten der Kreismitte und r der Kreisradius.';
 $string['shape_circle_lowercase'] = 'circle';
 $string['shape_polygon'] = 'Polygon';
-$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4... (wobei x1,y1 die x und y Koordinaten für den ersten Punkt, x2,y2 die x und y Koordinaten für den zweiten Punkt, etc. sind. Die Koordinaten für den ersten Punkt müssen Sie nicht wiederholen, um das Polygon zu schließen)';
+$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4;... - In dieser Liste sind x1,y1 die Koordinaten für den ersten Punkt des Polygons, x2,y2 die Koordinaten für den zweiten Punkt, usw. Die Koordinaten für den ersten Punkt müssen nicht wiederholt werden, um das Polygon zu schließen.';
 $string['shape_polygon_lowercase'] = 'polygon';
 $string['shape_rectangle'] = 'Rechteck';
-$string['shape_rectangle_coords'] = 'x,y;b,h (wobei x,y die xy Koordinaten des linken oberen Ecks des Rechtecks sind und b und h die Breite und Höhe.)';
+$string['shape_rectangle_coords'] = 'x,y;b,h - In dieser Liste sind x,y die Koordinaten der linken oberen Ecke des Rechtecks und b und h dessen Breite und Höhe.';
 $string['shape_rectangle_lowercase'] = 'rectangle';
 $string['showmisplaced'] = 'Kennzeichnen Sie die Ablegebereiche auf welche nicht die richtige Markierung gelegt wurde.';
 $string['shuffleimages'] = 'Ziehbare Objekte bei jedem Versuch zufällig anordnen';

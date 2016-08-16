@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cachestore_memcached', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,12 @@ $string['hash_help'] = 'Bepaalt het versleutelalgoritme dat gebruikt wordt voor 
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
+$string['isshared'] = 'Gedeelde cache';
+$string['isshared_help'] = 'Wordt je Memcached server ook gebruikt door andere applicaties?
+
+Als de cache gedeeld wordt door andere applicaties, dan zal elke sleutel afzonderlijk verwijderd worden om er zekere van te zijn dat enkel gegevens van deze applicatie verwijderd worden (en terwijl externe applicatiedata ongewijzigd laten). Dit kan een verminderde performantie opleveren tijdens het verwijderen van je cache, afhankelijk van je serverconfiguratie.
+
+Als je een toegewezen cache gebruikt voor deze applicatie, dan kan de hele cache veilig gewist worden zonder het risico gegevens van andere applicaties te vernielen. Dit zou een beter resultaat moeten opleveren tijdens het leegmaken van de cache.';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Prefix sleutel';
 $string['prefix_help'] = 'Dit kan gebruikt worden om een "domein" voor je itemsleutels te zetten, waardoor je meerdere memcached opslagruimten op één enkele memcached installatie kan maken. Dit kan niet langer dan 16 tekens zijn om te verzekeren dat sleutellengtes geen problemen gaan veroorzaken.';
@@ -80,6 +86,8 @@ ip-adres:poort
 </pre>';
 $string['testservers'] = 'Testservers';
 $string['testservers_desc'] = 'Eén of meer connectiestrings om de memcache-servers tegen te testen. Als er een testserver is opgegeven, dan kan de performantie getest worden door de cache performantiepagina te gebruiken in het administratieblok. Bijvoorbeeld: 127.0.0.1:11211';
+$string['upgrade200recommended'] = 'We raden aan dat je je Memcached PHP extentie upgrade naar versie 2.0.0 of hoger.
+De versie van de Memcached PHP extentie die je nu gebruikt geeft de functionaliteit niet die Moodle gebruikt om een sandbox cache te maken. Zolang je de upgrade niet uitgevoerd hebt, raden we je aan om geen andere applicaties te configureren om dezelfde Memcached servers te gebruiken die Moodle gebruikt.';
 $string['usecompression'] = 'Gebruik compressie';
 $string['usecompression_help'] = 'Schakelt compressie in of uit. Indien ingeschakeld worden waarden groter dan een bepaalde drempelwaarde (op dit moment 100 bytes) gecomprimeerd tijdens de opslag en transparant gedecomprimeerd wanneer ze opgevraagd worden.';
 $string['useserialiser'] = 'Gebruik serialiser';

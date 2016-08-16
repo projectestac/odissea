@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['auth_dbpasstype'] = '<p>Geben Sie an, welches Format das Kennwortfeld b
 $string['auth_dbpasstype_key'] = 'Kennwortformat';
 $string['auth_dbreviveduser'] = 'Entsperrte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Fehler beim Entsperren von Nutzer/in {$a}';
+$string['auth_dbsaltedcrypt'] = 'Einweg-Text-Hashing verschlüsseln';
 $string['auth_dbsetupsql'] = 'SQL setup Kommando';
 $string['auth_dbsetupsqlhelp'] = 'SQL Kommando für spezielles Datenbanksetup bei Kommunikationscodierung - Beispiel für MySQL und PostgreSQL: <em>SET NAMES \'uft8\'</em>';
 $string['auth_dbsuspenduser'] = 'Gesperrte Nutzer/in {$a->name} ID {$a->id}';

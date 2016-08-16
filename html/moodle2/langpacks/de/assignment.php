@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,14 +40,6 @@ $string['modulenameplural'] = 'Aufgabe 2.2 (deaktiviert)';
 $string['page-mod-assignment-submissions'] = 'Aufgabeneinreichungsseite';
 $string['page-mod-assignment-view'] = 'Aufgabenhauptseite';
 $string['page-mod-assignment-x'] = 'Jede Aufgabenseite';
-$string['pendingupgrades_message_content'] = 'Während der Aktualisierung auf Moodle 2.7 wurde die veraltete Aktivität "Aufgabe 2.2" deaktiviert.
-
-Sicherungen der Aktivität "Aufgabe 2.2" werden bei der Wiederherstellung automatisch in die neuere Form umgewandelt.
-
-Alle bereits vorhandenen Instanzen der veralteten Aktivität "Aufgabe 2.2" müssen aktualisiert werden {$a->docsurl}. Ohne Aktualisierung können diese Aufgaben nicht mehr verwendet werden.
-Anzahl der notwendigen Aktualisierungen: {$a->count}';
-$string['pendingupgrades_message_small'] = 'Dieses Plugin würde deaktiviert. Alle vorhandenen Instanzen der "Aufgabe 2.2" müssen mit der Aufgabenaktualisierung in die neuere Form umgewandelt werden.';
-$string['pendingupgrades_message_subject'] = 'Wichtige Information zu "Aufgabe 2.2"';
 $string['pluginadministration'] = 'Aufgabe 2.2 (deaktiviert) Administration';
 $string['pluginname'] = 'Aufgabe 2.2 (deaktiviert)';
 $string['upgradenotification'] = 'Diese Aktivität basiert auf einem älteren Aufgabenmodul.';

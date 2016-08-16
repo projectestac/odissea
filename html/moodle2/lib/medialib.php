@@ -494,7 +494,8 @@ class core_media_player_vimeo extends core_media_player_external {
         $output = <<<OET
 <span class="mediaplugin mediaplugin_vimeo">
 <iframe title="$info" src="https://player.vimeo.com/video/$videoid"
-  width="$width" height="$height" frameborder="0"></iframe>
+  width="$width" height="$height" frameborder="0"
+  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </span>
 OET;
 
@@ -811,7 +812,7 @@ class core_media_player_wmp extends core_media_player {
         <param name="ShowGotoBar" value="false" />
         <param name="EnableFullScreenControls" value="true" />
         <param name="uimode" value="full" />
-        <!--[if !IE]>-->
+        <!--[if !IE]><!-->
         <object data="$url" type="$mimetype" $size>
             <param name="src" value="$url" />
             <param name="controller" value="true" />
@@ -820,7 +821,7 @@ class core_media_player_wmp extends core_media_player {
             <param name="resize" value="scale" />
         <!--<![endif]-->
             $fallback
-        <!--[if !IE]>-->
+        <!--[if !IE]><!-->
         </object>
         <!--<![endif]-->
     </object>
@@ -875,7 +876,7 @@ class core_media_player_qt extends core_media_player {
         <param name="autoplay" value="false" />
         <param name="autostart" value="false" />
         <param name="scale" value="aspect" />
-        <!--[if !IE]>-->
+        <!--[if !IE]><!-->
         <object data="$url" type="$mimetype" $size>
             <param name="src" value="$url" />
             <param name="pluginurl" value="http://www.apple.com/quicktime/download/" />
@@ -886,7 +887,7 @@ class core_media_player_qt extends core_media_player {
             <param name="scale" value="aspect" />
         <!--<![endif]-->
             $fallback
-        <!--[if !IE]>-->
+        <!--[if !IE]><!-->
         </object>
         <!--<![endif]-->
     </object>
@@ -899,7 +900,7 @@ OET;
     }
 
     public function get_rank() {
-        return 50;
+        return 10;
     }
 }
 
@@ -934,14 +935,14 @@ class core_media_player_rm extends core_media_player {
             data="$url" width="$width" height="$height"">
         <param name="src" value="$url" />
         <param name="controls" value="All" />
-        <!--[if !IE]>-->
+        <!--[if !IE]><!-->
         <object title="$info" type="audio/x-pn-realaudio-plugin"
                 data="$url" width="$width" height="$height">
             <param name="src" value="$url" />
             <param name="controls" value="All" />
         <!--<![endif]-->
             $fallback
-        <!--[if !IE]>-->
+        <!--[if !IE]><!-->
         </object>
         <!--<![endif]-->
   </object>
@@ -989,7 +990,8 @@ class core_media_player_swf extends core_media_player {
     <param name="scale" value="aspect" />
     <param name="base" value="." />
     <param name="allowscriptaccess" value="never" />
-<!--[if !IE]>-->
+    <param name="allowfullscreen" value="true" />
+<!--[if !IE]><!-->
     <object type="application/x-shockwave-flash" data="$url" width="$width" height="$height">
       <param name="controller" value="true" />
       <param name="autoplay" value="true" />
@@ -997,9 +999,10 @@ class core_media_player_swf extends core_media_player {
       <param name="scale" value="aspect" />
       <param name="base" value="." />
       <param name="allowscriptaccess" value="never" />
+      <param name="allowfullscreen" value="true" />
 <!--<![endif]-->
 $fallback
-<!--[if !IE]>-->
+<!--[if !IE]><!-->
     </object>
 <!--<![endif]-->
   </object>
@@ -1120,8 +1123,8 @@ OET;
                 // is a simplified version, does not take into account old browser
                 // versions or manual plugins.
                 if ($ext === 'ogv' || $ext === 'webm') {
-                    // Formats .ogv and .webm are not supported in IE or Safari.
-                    if (core_useragent::is_ie() || core_useragent::is_safari()) {
+                    // Formats .ogv and .webm are not supported in IE, Edge or Safari.
+                    if (core_useragent::is_ie() || core_useragent::is_edge() || core_useragent::is_safari()) {
                         continue;
                     }
                 } else {
@@ -1141,7 +1144,7 @@ OET;
     }
 
     public function get_rank() {
-        return 20;
+        return 50;
     }
 }
 
@@ -1174,7 +1177,7 @@ class core_media_player_html5audio extends core_media_player {
         $fallback = core_media_player::PLACEHOLDER;
 
         return <<<OET
-<audio controls="true" $size class="mediaplugin mediaplugin_html5audio" preload="no" title="$title">
+<audio controls="true" $size class="mediaplugin mediaplugin_html5audio" preload="none" title="$title">
 $sources
 $fallback
 </audio>
@@ -1192,8 +1195,8 @@ OET;
             $ext = core_media::get_extension($url);
             if (in_array($ext, $extensions)) {
                 if ($ext === 'ogg' || $ext === 'oga') {
-                    // Formats .ogg and .oga are not supported in IE or Safari.
-                    if (core_useragent::is_ie() || core_useragent::is_safari()) {
+                    // Formats .ogg and .oga are not supported in IE, Edge, or Safari.
+                    if (core_useragent::is_ie() || core_useragent::is_edge() || core_useragent::is_safari()) {
                         continue;
                     }
                 } else {
@@ -1222,7 +1225,7 @@ OET;
     }
 
     public function get_rank() {
-        return 10;
+        return 20;
     }
 }
 

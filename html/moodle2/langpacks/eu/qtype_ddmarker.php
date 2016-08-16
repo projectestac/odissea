@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addmoreitems'] = 'Zuriuneak {no} markatzaile gehiagotarako';
 $string['alttext'] = 'Aukerako testua';
 $string['answer'] = 'Erantzuna';
 $string['bgimage'] = 'Atzeko planoaren irudia';
+$string['coords'] = 'Koordenatuak';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
 $string['draggableimage'] = 'Eramateko irudia';
 $string['draggableitem'] = 'Eramateko elementua';
@@ -47,6 +48,7 @@ $string['marker_n'] = 'Markatzailea {no}';
 $string['markers'] = 'Markatzaileak';
 $string['nolabel'] = 'Ez dago testurik etiketan';
 $string['noofdrags'] = 'Kopurua';
+$string['pleasedragatleastonemarker'] = 'Zure erantzuna osatu gabe dago; gutxienez markatzaile bat eraman behar duzu irudira.';
 $string['pluginname'] = 'Hartu eta eraman markatzaileak';
 $string['pluginnameadding'] = 'Hartu eta eraman markatzaileak motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman markatzaileak motako galdera editatzen';

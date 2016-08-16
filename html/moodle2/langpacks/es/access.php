@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'access', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   access
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,18 +29,18 @@ $string['access'] = 'Accesibilidad';
 $string['accesshelp'] = 'Ayuda sobre accesibilidad';
 $string['accesskey'] = 'Clave de acceso, {$a}';
 $string['accessstatement'] = 'Declaración de accesibilidad';
-$string['activitynext'] = 'Siguiente actividad';
+$string['activitynext'] = 'Actividad siguiente';
 $string['activityprev'] = 'Actividad anterior';
-$string['breadcrumb'] = 'Rastro de "migas de pan"';
+$string['breadcrumb'] = 'Ruta de navegación';
 $string['hideblocka'] = 'Ocultar bloque {$a}';
-$string['monthnext'] = 'Próximo mes';
+$string['monthnext'] = 'Mes siguiente';
 $string['monthprev'] = 'Mes anterior';
 $string['showblocka'] = 'Mostrar bloque {$a}';
 $string['sitemap'] = 'Mapa del sitio';
-$string['skipa'] = 'Saltar {$a}';
+$string['skipa'] = 'Omitir {$a}';
 $string['skipblock'] = 'Saltar bloque';
 $string['skipnavigation'] = 'Saltar navegación';
 $string['skipto'] = 'Saltar a {$a}';
-$string['tocontent'] = 'Saltar a contenido principal';
-$string['tonavigation'] = 'Ir a navegación';
-$string['youarehere'] = 'Usted está aquí';
+$string['tocontent'] = 'Saltar al contenido principal';
+$string['tonavigation'] = 'Ir a la navegación';
+$string['youarehere'] = 'Tú estás aquí';

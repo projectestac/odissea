@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_grader', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,6 @@ $string['grader:view'] = '評定者レポートを表示する';
 $string['overriddengrade'] = 'オーバーライド評点';
 $string['pluginname'] = '評定者レポート';
 $string['preferences'] = '評定者レポートプリファレンス';
+$string['summarygrader'] = '最初のカラムに学生名のあるテーブルです。コースおよびトップページのカテゴリでグループ分けされた評定可能な活動を含みます。';
 $string['useractivityfeedback'] = '{$a} フィードバック';
 $string['useractivitygrade'] = '{$a} 評定';

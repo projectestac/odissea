@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['displayexpiry'] = 'El tems de transferència s\'ha esgotat';
 $string['displayinfo'] = 'Informació d\'exportació';
 $string['dontwait'] = 'No esperis';
 $string['enabled'] = 'Habilita els portafolis';
-$string['enableddesc'] = 'Això permet els administradors configurar serveis remots pels usuaris per exportar el contingut';
+$string['enableddesc'] = 'Si està habilitat, els usuaris poden exportar contingut, com ara els missatges als fòrums i les trameses de tasques, per exportar el contingut a <em>portfolios</em> externs o pàgines HTML.';
 $string['err_uniquename'] = 'El nom del portafolis ha de ser únic (per connector)';
 $string['exportalreadyfinished'] = 'S\'ha completat l\'exportació del portafolis';
 $string['exportalreadyfinisheddesc'] = 'S\'ha completat l\'exportació del portafolis';
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML amb adjunts';
 $string['format_spreadsheet'] = 'Full de càlcul';
 $string['format_text'] = 'Text pla';
 $string['format_video'] = 'Vídeo';
-$string['hidden'] = 'Ocult';
 $string['highdbsizethreshold'] = 'La mida de la base de dades implica una transferència alta';
 $string['highdbsizethresholddesc'] = 'Nombre de registres amb els que es calcularà la quantitat de temps de la transferència';
 $string['highfilesizethreshold'] = 'La mida del fitxer implica una transferència alta';
@@ -109,6 +108,8 @@ $string['instanceismisconfigured'] = 'La instància del portafolis està mal con
 $string['instancenotdelete'] = 'No s\'ha pogut suprimir el portafolis';
 $string['instancenotsaved'] = 'No s\'ha pogut desar el portafolis';
 $string['instancesaved'] = 'Portafolis desat amb èxit';
+$string['intro'] = 'El contingut que heu creat, com ara les trameses de tasques, els missatges de fòrums i les entrades de blog es poden exportar a <em>portfolio</em> o descarregar. <br>
+Qualsevol <em>portfolio</em> que no desitgeu usar es pot amagar, per això no està enumerat com una opció per exportar-hi contingut.';
 $string['invalidaddformat'] = 'No és vàlid el format per afegir passat al portfolio_add_button. ({$a}) Ha de ser PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'No s\'ha pogut trobar la propietat ({$a}) de portfolio_button';
 $string['invalidconfigproperty'] = 'No s\'ha pogut trobar la propietat de configuració ({$a->property}) de {$a->class})';
@@ -146,7 +147,7 @@ $string['mustsetcallbackoptions'] = 'Cal que configureu les retrocridades ja sig
 $string['noavailableplugins'] = 'No hi ha disponibles portafolis per exportar';
 $string['nocallbackclass'] = 'No es troba la classe de la crida de retorn a utilitzar ({$a})';
 $string['nocallbackcomponent'] = 'No es pot trobar el component especificat {$a}.';
-$string['nocallbackfile'] = 'Alguna cosa en el mòdul que esteu tractant d\'exportar està trencada - no s\'ha trobat el fitxer que cal ({$a})';
+$string['nocallbackfile'] = 'Alguna cosa en el mòdul que esteu tractant d\'exportar està trencada; no s\'ha trobat el fitxer <em>portfolio</em> que cal';
 $string['noclassbeforeformats'] = 'Us cal configurar la classe de la crida de retorn abans de cridar set_formats al portfolio_button';
 $string['nocommonformats'] = 'No hi ha formats comuns entre el connector de portafolis disponible i la crida lloc {$a->location} (formats compatibles {$a->formats})';
 $string['noinstanceyet'] = 'No han estat seleccionats';
@@ -172,6 +173,7 @@ $string['save'] = 'Desa';
 $string['selectedformat'] = 'Trieu el format d\'exportació';
 $string['selectedwait'] = 'Triat per esperar?';
 $string['selectplugin'] = 'Trieu una destinació';
+$string['showhide'] = 'Mostra / Amaga';
 $string['singleinstancenomultiallowed'] = 'Sols una instància del connector de portafolis està disponible, no es suporten múltiples exportacions per a cada sessió, i ja hi ha una exportació activa en la sessió d\'ús d\'aquest connector!';
 $string['somepluginsdisabled'] = 'Alguns connectors de portafolis s\'han inhabilitat completament per estar mal configurats o per aquest altre motiu:';
 $string['sure'] = 'Esteu completament segurs de voler suprimir \'{$a}\'? Aquesta acció no es podrà desfer.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,5 +51,6 @@ $string['page-mod-folder-view'] = 'Página principal de la carpeta';
 $string['page-mod-folder-x'] = 'Cualquier página de la carpeta';
 $string['pluginadministration'] = 'Administración de carpeta';
 $string['pluginname'] = 'Carpeta';
+$string['search:activity'] = 'Carpeta';
 $string['showexpanded'] = 'Mostrar subcarpetas expandidas';
 $string['showexpanded_help'] = 'Si está activado se mostrarán las subcarpetas expandidas por defecto. Si no, las subcarpetas se mostrarán colapsadas.';

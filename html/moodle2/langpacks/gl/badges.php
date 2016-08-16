@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,6 +101,7 @@ $string['badgeprivacysetting_help'] = 'As distincións que gañe poden presentar
 
 Aínda pode controlar a configuración de distincións privadas individuais na súa páxina «Distincións persoais».';
 $string['badgeprivacysetting_str'] = 'Amosar automaticamente as distincións que gañe na miña páxina de perfil';
+$string['badges'] = 'Distincións';
 $string['badgesalt'] = 'Salgar para a cadea de control do enderezo de correo do receptor';
 $string['badgesalt_desc'] = 'A utilización dunha cadea de control permítelle aos servizos de mochila confirmar o gañador da distinción sen ter que expoñer o seu enderezo de correo. Esta configuración só debería utilizar números e letras.
 
@@ -214,6 +215,7 @@ $string['error:backpackproblem'] = 'Hai un problema para conectar co seu fornece
 $string['error:badjson'] = 'O intento de conexión devolveu datos incorrectos.';
 $string['error:cannotact'] = 'Non foi posíbel activar a distinción.';
 $string['error:cannotawardbadge'] = 'Non foi posíbel conceder a distinción a un usuario.';
+$string['error:cannotdeletecriterion'] = 'Este criterio non se pode eliminar.';
 $string['error:clone'] = 'Non foi posíbel clonar a distinción.';
 $string['error:connectionunknownreason'] = 'Fracasou a conexión, mais non se coñecen as razóns.';
 $string['error:duplicatename'] = 'Xa existe unha distinción con ese nome no sistema.';
@@ -242,6 +244,7 @@ $string['error:requesterror'] = 'A solicitude de conexión fracasou (código de 
 $string['error:requesttimeout'] = 'A solicitude de conexión esgotou o tempo antes de completarse.';
 $string['error:save'] = 'Non foi posíbel gardar a distinción.';
 $string['error:userdeleted'] = '{$a->user} (Este usuario xa non existe en {$a->site})';
+$string['eventbadgeawarded'] = 'Distinción concedida';
 $string['evidence'] = 'Evidencia';
 $string['existingrecipients'] = 'Destinatarios de distincións existentes';
 $string['expired'] = 'Caducada';
@@ -258,7 +261,6 @@ $string['externalbadges_help'] = 'Esta área presenta as distincións da súa mo
 $string['externalbadgesp'] = 'Distincións doutros sitios web:';
 $string['externalconnectto'] = 'Para presentar distincións persoais externas, necesita <a href="{$a}">conectar cunha mochila</a>.';
 $string['fixed'] = 'Data fixa';
-$string['hidden'] = 'Agochada';
 $string['hiddenbadge'] = 'Desafortunadamente, o propietario da distinción non puxo esta información dispoñíbel.';
 $string['issuancedetails'] = 'Caducidade da distinción';
 $string['issuedbadge'] = 'Información da distinción emitida';
@@ -329,6 +331,7 @@ $string['personaconnection_help'] = 'Persona é un sistema para a súa identific
 
 Para obter máis información sobre Persona visite <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Destinatarios potenciais da distinción';
+$string['preferences'] = 'Preferencias da distinción';
 $string['recipientdetails'] = 'Detalles do receptor';
 $string['recipientidentificationproblem'] = 'Non foi posíbel atopar un destinatario desta distinción entre os usuarios existentes.';
 $string['recipients'] = 'Destinatarios da distinción';

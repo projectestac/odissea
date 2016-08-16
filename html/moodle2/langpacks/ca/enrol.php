@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Mòduls d\'inscripció disponibles';
 $string['addinstance'] = 'Afegeix un mètode';
+$string['addinstanceanother'] = 'Afegeix un mètode i crea\'n un altre';
 $string['ajaxnext25'] = 'Els 25 següents...';
 $string['ajaxoneuserfound'] = 'S\'ha trobat 1 usuari';
 $string['ajaxxusersfound'] = 'S\'han trobat {$a} usuaris';
@@ -36,11 +37,11 @@ $string['configenrolplugins'] = 'Seleccioneu tots els mòduls requerits i organi
 $string['custominstancename'] = 'Nom de la instància personalitzat';
 $string['defaultenrol'] = 'Afegeix instància als nous cursos';
 $string['defaultenrol_desc'] = 'És possible afegir aquest mòdul a tots els nous cursos per defecte.';
-$string['deleteinstanceconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}». Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
+$string['deleteinstanceconfirm'] = 'Esteu a punt de suprimir el mètode d\'inscripció "{$a->name}". Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
 
 Esteu segur que voleu continuar?';
 $string['deleteinstanceconfirmself'] = 'Esteu segur que voleu suprimir la instància "{$a->name}" que us dona accés a aquest curs? És possible que no pugueu tornar a entrar al curs si continueu.';
-$string['deleteinstancenousersconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}».
+$string['deleteinstancenousersconfirm'] = 'Esteu a punt de suprimir el mètode d\'inscripció "{$a->name}".
 
 Esteu segur que voleu continuar?';
 $string['disableinstanceconfirmself'] = 'Esteu segur que voleu inhabilitar la instància «{$a->name}» que us dóna accés a aquest curs? És possible que no pugueu tornar a accedir al curs si continueu.';
@@ -75,6 +76,9 @@ $string['errorenrolcohort'] = 'S\'ha produït un error mentre es creava una inst
 $string['errorenrolcohortusers'] = 'S\'ha produït un error mentre s\'inscrivien membres d\'una cohort en aquest curs.';
 $string['errorthresholdlow'] = 'El llindar de notificació ha de ser com a mínim 1 dia.';
 $string['errorwithbulkoperation'] = 'Ha succeït un error quan es processava el canvi d\'inscripció en bloc.';
+$string['eventenrolinstancecreated'] = 'La instància d\'inscripció ha estat creada';
+$string['eventenrolinstancedeleted'] = 'La instància d\'inscripció ha estat suprimida';
+$string['eventenrolinstanceupdated'] = 'La instància d\'inscripció ha estat actualitzada';
 $string['eventuserenrolmentcreated'] = 'Usuari inscrit al curs';
 $string['eventuserenrolmentdeleted'] = 'Cancel·lada la inscripció de l\'usuari al curs';
 $string['eventuserenrolmentupdated'] = 'Actualizada la cancel·lació d\'inscripció de l\'usuari';
@@ -93,6 +97,7 @@ $string['extremovedsuspendnoroles'] = 'Inhabilita la inscripció al curs i supri
 $string['extremovedunenrol'] = 'Cancel·la la inscripció al curs de l\'usuari';
 $string['finishenrollingusers'] = 'Acaba d\'inscriure als usuaris';
 $string['foundxcohorts'] = 'S\'han trobat {$a} cohorts';
+$string['instanceadded'] = 'S\'ha afegit el mètode';
 $string['instanceeditselfwarning'] = 'Avís:';
 $string['instanceeditselfwarningtext'] = 'Esteu inscrit en aquest curs mitjançant aquest mètode d\'inscripció. Els canvis poden afectar el vostre accés a aquest curs.';
 $string['invalidenrolinstance'] = 'Instància d\'inscripció invàlida';
@@ -102,6 +107,7 @@ $string['manageinstance'] = 'Gestiona';
 $string['migratetomanual'] = 'Migra a inscripcions manuals';
 $string['nochange'] = 'No canvies';
 $string['noexistingparticipants'] = 'No existeixen participants';
+$string['nogroup'] = 'Sense grup';
 $string['noguestaccess'] = 'Els visitants no poden accedir a aquest curs, proveu d\'identificar-vos.';
 $string['none'] = 'Cap';
 $string['notenrollable'] = 'No us podeu inscriure en aquest curs.';
@@ -114,6 +120,7 @@ $string['periodend'] = 'fins a {$a}';
 $string['periodnone'] = 'inscrits {$a}';
 $string['periodstart'] = 'des de {$a}';
 $string['periodstartend'] = 'des de {$a->start} fins a {$a->end}';
+$string['proceedtocourse'] = 'Vés al contingut del curs';
 $string['recovergrades'] = 'Recupera les qualificacions antigues d\'usuari si és possible';
 $string['rolefromcategory'] = '{$a->role} (Heretat de la categoria de curs)';
 $string['rolefrommetacourse'] = '{$a->role} (Heretat del curs pare)';

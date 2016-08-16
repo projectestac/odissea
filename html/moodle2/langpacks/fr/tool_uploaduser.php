@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploaduser', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,17 +28,20 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowdeletes'] = 'Autoriser les suppressions';
 $string['allowrenames'] = 'Autoriser le changement des noms';
 $string['allowsuspends'] = 'Permettre la suspension et l\'activation de comptes';
+$string['assignedsysrole'] = 'Attribuer le rôle système {$a}';
 $string['csvdelimiter'] = 'Séparateur CSV';
 $string['defaultvalues'] = 'Valeurs par défaut';
 $string['deleteerrors'] = 'Erreurs lors de suppressions';
 $string['encoding'] = 'Encodage';
 $string['errormnetadd'] = 'Impossible d\'ajouter des utilisateurs distants';
 $string['errors'] = 'Erreurs';
+$string['invaliduserdata'] = 'Données invalides détectées pour l\'utilisateur {$a}. Nettoyage automatique effectué.';
 $string['nochanges'] = 'Aucune modification';
 $string['pluginname'] = 'Déposer des comptes utilisateurs';
 $string['renameerrors'] = 'Erreurs lors du changement de nom';
 $string['requiredtemplate'] = 'Requis. Vous pouvez utiliser ici la syntaxe de modèle (%l = nom, %f = prénom, %u = nom d\'utilisateur). Voir l\'aide pour des détails et des exemples.';
 $string['rowpreviewnum'] = 'Rangées de prévisualisation';
+$string['unassignedsysrole'] = 'Retirer le rôle système {$a}';
 $string['uploadpicture_baduserfield'] = 'L\'attribut indiqué n\'est pas valide. Veuillez essayer à nouveau.';
 $string['uploadpicture_cannotmovezip'] = 'Impossible de déplacer le fichier zip vers un dossier temporaire.';
 $string['uploadpicture_cannotprocessdir'] = 'Impossible de traiter les fichiers décompressés.';

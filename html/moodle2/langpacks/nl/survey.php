@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'survey', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -198,6 +198,7 @@ $string['downloadinfo'] = 'Je kunt de complete ruwe data voor dit onderzoek down
 $string['downloadresults'] = 'Download resultaten';
 $string['downloadtext'] = 'Download de gegevens als een tekstbestand';
 $string['editingasurvey'] = 'Een onderzoek bewerken';
+$string['errorunabletosavenotes'] = 'Er is een fout opgetreden bij het bewaren van je notities.';
 $string['eventreportdownloaded'] = 'Onderzoekrapport gedownloaded';
 $string['eventreportviewed'] = 'Onderzoeksrapport bekeken';
 $string['eventresponsesubmitted'] = 'Onderzoeksantwoord ingestuurd';
@@ -238,6 +239,7 @@ $string['savednotes'] = 'Je aantekeningen zijn bewaard';
 $string['scaleagree5'] = 'Volledig mee oneens,Enigszins mee oneens,Mee eens noch mee oneens,Enigszins mee eens,Volledig mee eens';
 $string['scales'] = 'Schalen';
 $string['scaletimes5'] = 'Bijna nooit,Zelden,Soms,Vaak,Bijna altijd';
+$string['search:activity'] = 'Onderzoek - activiteitsinformatie';
 $string['seemoredetail'] = 'Klik hier om meer details te zien';
 $string['selectedquestions'] = 'Geselecteerde vragen van een schaal, alle studenten';
 $string['summary'] = 'Beschrijving';

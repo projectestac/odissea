@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'Blog sobre aquest {$a->type}';
 $string['blogaboutthiscourse'] = 'Afegiu una entrada sobre aquest curs';
 $string['blogaboutthismodule'] = 'Afegiu una entrada sobre aquest {$a}';
 $string['blogadministration'] = 'Administració del blog';
-$string['blogdeleteconfirm'] = 'Suprimiu aquesta entrada del blog?';
+$string['blogdeleteconfirm'] = 'Voleu suprimir l\'entrada «{$a}» del blog?';
 $string['blogdisable'] = 'Els blogs estan inhabilitats!';
 $string['blogentries'] = 'Entrades del blog';
 $string['blogentriesabout'] = 'Entrades del blog sobre {$a}';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Els blogs d\'un curs no estan habilitats';
 $string['courseblogs'] = 'Els usuaris sols poden veure els blogs de gent que comparteix un curs';
 $string['deleteblogassociations'] = 'Esborra associacions de blogs';
 $string['deleteblogassociations_help'] = 'Si el marqueu, les entrades del blog no s\'associaran més amb aquest curs ni cap activitat o recurs del curs. Les entrades del blog pròpiament dites no s\'esborraran.';
+$string['deleteentry'] = 'Suprimeix l\'entrada';
 $string['deleteexternalblog'] = 'Desvincula aquest blog extern';
 $string['deleteotagswarn'] = 'Segur que voleu suprimir aquestes etiquetes de totes les entrades del blog i suprimir-les del sistema?';
 $string['description'] = 'Descripció';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'ID de grup invàlid';
 $string['invalidurl'] = 'L\'URL és inaccessible';
 $string['linktooriginalentry'] = 'Enllaça a l\'entrada del blog original';
 $string['maxexternalblogsperuser'] = 'Nombre màxim de blogs externs per usuari';
+$string['myprofileuserblogs'] = 'Mostra totes les entrades del blog';
 $string['name'] = 'Nom';
 $string['name_help'] = 'Introduïu un nom descriptiu del vostre blog extern. Si no s\'especifica cap nom, s\'usarà el títol del vostre blog extern.';
 $string['noentriesyet'] = 'Aquí no hi ha entrades visibles';
@@ -124,10 +126,10 @@ $string['numberoftags'] = 'Nombre d\'etiquetes per visualitzar';
 $string['page-blog-edit'] = 'Pàgines d\'edició del blog';
 $string['page-blog-index'] = 'Pàgina de llistat del blog';
 $string['page-blog-x'] = 'Totes les pàgines del blog';
-$string['pagesize'] = 'Nombre d\'entrades per pàgina';
+$string['pagesize'] = 'Entrades de blog per pàgina';
 $string['permalink'] = 'Enllaç permanent';
 $string['personalblogs'] = 'Els usuaris només poden veure el seu propi blog';
-$string['preferences'] = 'Preferències';
+$string['preferences'] = 'Preferències del blog';
 $string['publishto'] = 'Publica per a';
 $string['publishtocourse'] = 'Usuaris que comparteixen un curs amb vosté';
 $string['publishtocourseassoc'] = 'Membres del curs associat';
@@ -153,6 +155,7 @@ $string['searchterm'] = 'Cerca: {$a}';
 $string['settingsupdatederror'] = 'S\'ha produït un error. El paràmetre no s\'ha pogut actualitzar.';
 $string['siteblog'] = 'Blog del lloc: {$a}';
 $string['siteblogdisable'] = 'El blog del lloc no està habilitat';
+$string['siteblogheading'] = 'Blog del lloc';
 $string['siteblogs'] = 'Tots els usuaris del lloc poden veure totes les entrades dels blogs';
 $string['tagdatelastused'] = 'Darrera utilització de l\'etiqueta';
 $string['tagparam'] = 'Etiqueta: {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_progress', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   block_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_completion'] = '活动完成';
 $string['page'] = '网页模块';
+$string['url'] = '网页地址';
 $string['what_actions_can_be_monitored_help'] = '<p>一项活动可能有不同的操作</p>
 <p>例如，与作业模块可能的操作有：
 <ul>

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -114,7 +114,7 @@ $string['enternewname'] = 'Insira o nome do novo ficheiro';
 $string['error'] = 'Ocorreu um erro desconhecido!';
 $string['errordoublereference'] = 'Não é possível substituir o ficheiro por um atalho/alias porque já existem atalhos para este ficheiro.';
 $string['errornotyourfile'] = 'Não pode selecionar um ficheiro que não foi criado por si';
-$string['errorpostmaxsize'] = 'O ficheiro carregado poderá exceder a diretiva post_max_size em php.ini.';
+$string['errorpostmaxsize'] = 'O ficheiro que tentou carregar é muito grande para que o servidor o possa processar.';
 $string['erroruniquename'] = 'O nome da instância de repositório deve ser único';
 $string['errorwhilecommunicatingwith'] = 'Ocorreu um erro durante a comunicação com o repositório \'{$a}\'.';
 $string['errorwhiledownload'] = 'Ocorreu um erro ao descarregar o ficheiro: {$a}';
@@ -135,7 +135,6 @@ $string['folderrecurse'] = 'A pasta não pode ser movida para a sua própria sub
 $string['getfile'] = 'Escolher este ficheiro';
 $string['getfiletimeout'] = 'Obter tempo limite do ficheiro';
 $string['help'] = 'Ajuda';
-$string['hidden'] = 'Oculto(a)';
 $string['iconview'] = 'Ver na forma de ícones';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'instância';
@@ -163,6 +162,7 @@ $string['makefileinternal'] = 'Criar uma cópia do ficheiro';
 $string['makefilelink'] = 'Ligar diretamente ao ficheiro';
 $string['makefilereference'] = 'Criar um atalho para o ficheiro';
 $string['manage'] = 'Gerir repositórios';
+$string['manageinstances'] = 'Gerir instâncias';
 $string['manageurl'] = 'Gerir';
 $string['manageuserrepository'] = 'Gerir repositório individual';
 $string['moving'] = 'A mover';

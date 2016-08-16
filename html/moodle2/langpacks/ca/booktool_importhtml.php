@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'booktool_importhtml', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   booktool_importhtml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['doimport'] = 'Importa';
 $string['errornochapters'] = 'No s\'han trobat capítols en el fitxer seleccionat';
-$string['import'] = 'Importa';
+$string['import'] = 'Importa un capítol';
 $string['importhtml:import'] = 'Importa capítols';
 $string['importing'] = 'S\'està important';
 $string['importingchapters'] = 'S\'estan important capítols al llibre';

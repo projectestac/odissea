@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_youtube', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_youtube', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
+$string['apikey'] = 'Clau API';
 $string['configplugin'] = 'Configuració del tipus de repositori Youtube';
 $string['information'] = 'Obteniu una <a href="https://developers.google.com/youtube/v3/getting-started">clau API de Google</a> per al vostre lloc Moodle.';
 $string['pluginname'] = 'Vídeos de YouTube';

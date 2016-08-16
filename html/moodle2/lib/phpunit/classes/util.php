@@ -101,16 +101,19 @@ class phpunit_util extends testing_util {
      * @return void
      */
     public static function reset_all_data($detectchanges = false) {
-        global $DB, $CFG, $USER, $SITE, $COURSE, $PAGE, $OUTPUT, $SESSION;
+        global $DB, $CFG, $USER, $SITE, $COURSE, $PAGE, $OUTPUT, $SESSION, $FULLME;
 
         // Stop any message redirection.
         self::stop_message_redirection();
 
         // Stop any message redirection.
-        phpunit_util::stop_phpmailer_redirection();
+        self::stop_event_redirection();
 
-        // Stop any message redirection.
-        phpunit_util::stop_event_redirection();
+        // Start a new email redirection.
+        // This will clear any existing phpmailer redirection.
+        // We redirect all phpmailer output to this message sink which is
+        // called instead of phpmailer actually sending the message.
+        self::start_phpmailer_redirection();
 
         // We used to call gc_collect_cycles here to ensure desctructors were called between tests.
         // This accounted for 25% of the total time running phpunit - so we removed it.
@@ -128,6 +131,7 @@ class phpunit_util extends testing_util {
         }
 
         $resetdb = self::reset_database();
+        $localename = self::get_locale_name();
         $warnings = array();
 
         if ($detectchanges === true) {
@@ -160,6 +164,13 @@ class phpunit_util extends testing_util {
                 $warnings[] = 'Warning: unexpected change of $COURSE';
             }
 
+            if ($FULLME !== self::get_global_backup('FULLME')) {
+                $warnings[] = 'Warning: unexpected change of $FULLME';
+            }
+
+            if (setlocale(LC_TIME, 0) !== $localename) {
+                $warnings[] = 'Warning: unexpected change of locale';
+            }
         }
 
         if (ini_get('max_execution_time') != 0) {
@@ -177,6 +188,7 @@ class phpunit_util extends testing_util {
         $_SERVER = self::get_global_backup('_SERVER');
         $CFG = self::get_global_backup('CFG');
         $SITE = self::get_global_backup('SITE');
+        $FULLME = self::get_global_backup('FULLME');
         $_GET = array();
         $_POST = array();
         $_FILES = array();
@@ -200,8 +212,10 @@ class phpunit_util extends testing_util {
         reset_text_filters_cache(true);
         events_get_handlers('reset');
         core_text::reset_caches();
-        get_message_processors(false, true);
+        get_message_processors(false, true, true);
         filter_manager::reset_caches();
+        core_filetypes::reset_caches();
+        \core_search\manager::clear_static();
         core_user::reset_caches();
 
         // Reset static unit test options.
@@ -228,9 +242,6 @@ class phpunit_util extends testing_util {
         if (class_exists('\core\update\checker')) {
             \core\update\checker::reset_caches(true);
         }
-        if (class_exists('\core\update\deployer')) {
-            \core\update\deployer::reset_caches(true);
-        }
 
         // Clear static cache within restore.
         if (class_exists('restore_section_structure_step')) {
@@ -248,6 +259,12 @@ class phpunit_util extends testing_util {
 
         // fix PHP settings
         error_reporting($CFG->debug);
+
+        // Reset the date/time class.
+        core_date::phpunit_reset();
+
+        // Make sure the time locale is consistent - that is Australian English.
+        setlocale(LC_TIME, $localename);
 
         // verify db writes just in case something goes wrong in reset
         if (self::$lastdbwrites != $DB->perf_get_writes()) {
@@ -289,13 +306,14 @@ class phpunit_util extends testing_util {
      * @return void
      */
     public static function bootstrap_init() {
-        global $CFG, $SITE, $DB;
+        global $CFG, $SITE, $DB, $FULLME;
 
         // backup the globals
         self::$globals['_SERVER'] = $_SERVER;
         self::$globals['CFG'] = clone($CFG);
         self::$globals['SITE'] = clone($SITE);
         self::$globals['DB'] = $DB;
+        self::$globals['FULLME'] = $FULLME;
 
         // refresh data in all tables, clear caches, etc.
         self::reset_all_data();
@@ -342,6 +360,11 @@ class phpunit_util extends testing_util {
      */
     public static function testing_ready_problem() {
         global $DB;
+
+        $localename = self::get_locale_name();
+        if (setlocale(LC_TIME, $localename) === false) {
+            return array(PHPUNIT_EXITCODE_CONFIGERROR, "Required locale '$localename' is not installed.");
+        }
 
         if (!self::is_test_site()) {
             // dataroot was verified in bootstrap, so it must be DB
@@ -429,10 +452,6 @@ class phpunit_util extends testing_util {
         // We need to keep the installed dataroot filedir files.
         // So each time we reset the dataroot before running a test, the default files are still installed.
         self::save_original_data_files();
-
-        // install timezone info
-        $timezones = get_records_csv($CFG->libdir.'/timezone.txt', 'timezone');
-        update_timezone_records($timezones);
 
         // Store version hash in the database and in a file.
         self::store_versions_hash();
@@ -690,9 +709,11 @@ class phpunit_util extends testing_util {
      */
     public static function start_phpmailer_redirection() {
         if (self::$phpmailersink) {
-            self::stop_phpmailer_redirection();
+            // If an existing mailer sink is active, just clear it.
+            self::$phpmailersink->clear();
+        } else {
+            self::$phpmailersink = new phpunit_phpmailer_sink();
         }
-        self::$phpmailersink = new phpunit_phpmailer_sink();
         return self::$phpmailersink;
     }
 
@@ -779,6 +800,21 @@ class phpunit_util extends testing_util {
     public static function event_triggered(\core\event\base $event) {
         if (self::$eventsink) {
             self::$eventsink->add_event($event);
+        }
+    }
+
+    /**
+     * Gets the name of the locale for testing environment (Australian English)
+     * depending on platform environment.
+     *
+     * @return string the locale name.
+     */
+    protected static function get_locale_name() {
+        global $CFG;
+        if ($CFG->ostype === 'WINDOWS') {
+            return 'English_Australia.1252';
+        } else {
+            return 'en_AU.UTF-8';
         }
     }
 }

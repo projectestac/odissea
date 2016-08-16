@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Beantwoord';
 $string['atleastoneoption'] = 'Je moet minstens één mogelijk antwoord geven';
 $string['cannotsubmit'] = 'Er was een probleem bij het insturen van je keuze. Probeer opnieuw';
 $string['choice'] = 'Keuze {$a}';
+$string['choiceactivityname'] = 'Keuze: {$a}';
 $string['choice:addinstance'] = 'Voeg een nieuwe keuze toe';
 $string['choice:choose'] = 'Bewaar een keuze';
 $string['choiceclose'] = 'Tot';
+$string['choicecloseson'] = 'Keuze sluit op {$a}';
 $string['choice:deleteresponses'] = 'Verwijder antwoorden';
 $string['choice:downloadresponses'] = 'Download antwoorden';
 $string['choicefull'] = 'Deze keuze is vol - er zijn geen beschikbare plaatsen meer.';
@@ -44,21 +46,25 @@ $string['choiceoptions'] = 'Keuze-opties';
 $string['choiceoptions_help'] = '<p>Hier kun je ingeven welke keuzemogelijkheden de leerlingen aangeboden krijgen.</p>
 
 <p>Je hoeft ze niet allemaal in te vullen: je mag er een aantal blanco laten. Alleen de ingevulde velden zullen getoond worden.</p>';
-$string['choice:readresponses'] = 'Lees antwoorden';
+$string['choice:readresponses'] = 'Bekijk antwoorden';
 $string['choicesaved'] = 'Je keuze is bewaard';
 $string['choicetext'] = 'Keuzetekst';
 $string['chooseaction'] = 'Kies een actie...';
+$string['closebeforeopen'] = 'Je hebt een afsluitdatum opgegeven die vroeger ligt dan de openingsdatum.';
 $string['completionsubmit'] = 'Toon als voltooid wanneer de gebruiker een keuze maakt';
 $string['description'] = 'Inleidende tekst';
 $string['displayhorizontal'] = 'Toon horizontaal';
 $string['displaymode'] = 'Toonmodus voor de opties';
 $string['displayvertical'] = 'Toon verticaal';
 $string['eventanswercreated'] = 'Keuze gemaakt';
+$string['eventanswerdeleted'] = 'Keuze-antwoord verwijderd';
 $string['eventanswerupdated'] = 'Keuze aangepast';
+$string['eventreportdownloaded'] = 'Keuzerapport gedownload';
 $string['eventreportviewed'] = 'Keuzerapport bekeken';
 $string['expired'] = 'Sorry, deze activiteit is afgesloten op {$a} en is niet meer beschikbaar';
 $string['full'] = '(volledig)';
 $string['havetologin'] = 'Je moet aangemeld zijn voor je je keuze kunt insturen';
+$string['includeinactive'] = 'Antwoorden opnemen van niet actieve/geschorste gebruikers';
 $string['limit'] = 'Beperk';
 $string['limitanswers'] = 'Beperk het aantal toegelaten antwoorden';
 $string['limitanswers_help'] = '<p>Met deze optie is het mogelijk om het aantal deelnemers dat elke optie kan kiezen te beperken.</p>
@@ -86,14 +92,15 @@ $string['noresultsviewable'] = 'De resultaten zijn nu niet zichtbaar.';
 $string['notanswered'] = 'Nog niet beantwoord';
 $string['notenrolledchoose'] = 'Enkel aangemelde gebruikers mogen hun keuze invullen';
 $string['notopenyet'] = 'Deze activiteit is niet beschikbaar tot {$a}';
-$string['numberofuser'] = 'Aantal deelnemers';
-$string['numberofuserinpercentage'] = 'Percentage deelnemers';
+$string['numberofuser'] = 'Aantal antwoorden';
+$string['numberofuserinpercentage'] = 'Percentage antwoorden';
 $string['option'] = 'Optie';
 $string['optionno'] = 'Optie {no}';
 $string['options'] = 'Opties';
 $string['page-mod-choice-x'] = 'Keuzemodulepagina';
 $string['pluginadministration'] = 'Keuzebeheer';
 $string['pluginname'] = 'Keuze';
+$string['previewonly'] = 'Dit is slechts een voorbeeld van de beschikbare opties voor deze activiteit. Je zult je keuze niet kunnen maken voor {$a}.';
 $string['privacy'] = 'Privacy van de resultaten';
 $string['publish'] = 'Publiceer de resultaten';
 $string['publishafteranswer'] = 'Toon de resultaten aan de leerling nadat die geantwoord heeft';
@@ -109,6 +116,9 @@ $string['responsesresultgraphheader'] = 'Grafiek tonen';
 $string['responsesto'] = 'Antwoorden op  {$a}';
 $string['results'] = 'Resultaten';
 $string['savemychoice'] = 'Bewaar mijn antwoord';
+$string['search:activity'] = 'Keuze - activiteitsinformatie';
+$string['showpreview'] = 'Toon voorbeeld';
+$string['showpreview_help'] = 'Laat leerlingen een voorbeeld zien van de mogelijke opties voor de keuze open is voor insturen.';
 $string['showunanswered'] = 'Toon een kolom voor onbeantwoord';
 $string['skipresultgraph'] = 'Resultatengrafiek overslaan';
 $string['spaceleft'] = 'plaats beschikbaar';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_charmap', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['alefsymbol'] = 'Aleph-Symbol';
 $string['almostequalto'] = 'ungefähr gleich';
 $string['alpha'] = 'alpha';
 $string['alpha_caps'] = 'Alpha';
+$string['amacron'] = 'a-Makron';
+$string['amacron_caps'] = 'A-Makron';
 $string['ampersand'] = 'Kaufm. UND';
 $string['angle'] = 'Winkel';
 $string['approximatelyequalto'] = 'etwa gleich';
@@ -89,6 +91,8 @@ $string['ediaeresis_caps'] = 'E - diaeresis';
 $string['egrave'] = 'e - grave';
 $string['egrave_caps'] = 'E - grave';
 $string['elementof'] = 'Element von';
+$string['emacron'] = 'e-Makron';
+$string['emacron_caps'] = 'E-Makron';
 $string['emdash'] = 'Bindestrich - Länge m';
 $string['emspace'] = 'Leerzeichen - Länge m';
 $string['endash'] = 'Bindestrich - Länge n';
@@ -121,10 +125,13 @@ $string['idiaeresis'] = 'i - diaeresis';
 $string['idiaeresis_caps'] = 'I - diaeresis';
 $string['igrave'] = 'i - grave';
 $string['igrave_caps'] = 'I - grave';
+$string['imacron'] = 'i-Makron';
+$string['imacron_caps'] = 'I-Makron';
 $string['imaginarypart'] = 'Imaginärteil';
 $string['infinity'] = 'Unendlich';
 $string['insertcharacter'] = 'Sonderzeichen einfügen';
 $string['integral'] = 'Integral';
+$string['interrobang'] = 'Fragerufzeichen';
 $string['intersection'] = 'Schnittmenge';
 $string['invertedexclamationmark'] = 'umgekehrtes Ausrufezeichen';
 $string['iota'] = 'iota';
@@ -181,6 +188,8 @@ $string['odiaeresis'] = 'o - diaeresis';
 $string['odiaeresis_caps'] = 'O - diaeresis';
 $string['ograve'] = 'o - grave';
 $string['ograve_caps'] = 'O - grave';
+$string['omacron'] = 'o-Makron';
+$string['omacron_caps'] = 'O-Makron';
 $string['omega'] = 'omega';
 $string['omega_caps'] = 'Omega';
 $string['omicron'] = 'omicron';
@@ -261,6 +270,8 @@ $string['udiaeresis'] = 'u - diaeresis';
 $string['udiaeresis_caps'] = 'U - diaeresis';
 $string['ugrave'] = 'u - grave';
 $string['ugrave_caps'] = 'U - grave';
+$string['umacron'] = 'u-Makron';
+$string['umacron_caps'] = 'U-Makron';
 $string['union'] = 'Vereinigungsmenge';
 $string['upsilon'] = 'upsilon';
 $string['upsilon_caps'] = 'Upsilon';

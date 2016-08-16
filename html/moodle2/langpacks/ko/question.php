@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -194,7 +194,6 @@ $string['fractionsnomax'] = '이 질문 채점을 제대로 하려면 답안 중
 $string['generalfeedback'] = '일반적인 피드백';
 $string['getcategoryfromfile'] = '파일로부터 범주 추출';
 $string['getcontextfromfile'] = '파일로부터 문맥 추출';
-$string['hidden'] = '감춰짐';
 $string['hintn'] = '힌트(없음)';
 $string['hintnoptions'] = '힌트 {no} 옵션';
 $string['hinttext'] = '힌트 문장';
@@ -288,7 +287,6 @@ $string['numqas'] = '시도 횟수';
 $string['numquestions'] = '질문 번호';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} 비공개)';
 $string['options'] = '옵션';
-$string['orphanedquestionscategory'] = '삭제된 범주에서 저장한 질문';
 $string['page-question-category'] = '질문 범주 페이지';
 $string['page-question-edit'] = '질문 편집 페이지';
 $string['page-question-export'] = '질문 내보내기 페이지';

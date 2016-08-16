@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,11 @@ $string['addrequiredcapability'] = 'Toewijzen/verwijderen van de vereiste mogeli
 $string['addservice'] = 'Nieuw service toevoegen: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Voeg functies toe aan service "{$a}"';
 $string['allusers'] = 'Alle gebruikers';
-$string['amftestclient'] = 'AMF testclient';
 $string['apiexplorer'] = 'API explorer';
 $string['apiexplorernotavalaible'] = 'API explorer nog niet beschikbaar';
 $string['arguments'] = 'Argumenten';
 $string['authmethod'] = 'Authenticatiemethode';
+$string['callablefromajax'] = 'Aanroepbaar via AJAX';
 $string['cannotcreatetoken'] = 'Geen rechten om een webservice token aan te maken voor service {$a}.';
 $string['cannotgetcoursecontents'] = 'Can cursusinhoud niet ophalen';
 $string['checkusercapability'] = 'Controleer gebruikersmogelijkheden';
@@ -124,6 +124,7 @@ $string['iprestriction'] = 'IP beperking';
 $string['iprestriction_help'] = 'De gebruiker zal de webservice moeten aanspreken vanaf de IP\'s in de lijst (door komma\'s gescheiden).';
 $string['key'] = 'Sleutel';
 $string['keyshelp'] = 'De sleutels die gebruikt worden om jouw Moodle account aan te spreken vanaf externe applicaties.';
+$string['loginrequired'] = 'Beperkt tot aangemelde gebruikers';
 $string['manageprotocols'] = 'Beheer protocols';
 $string['managetokens'] = 'Beheer tokens';
 $string['missingcaps'] = 'Ontbrekende mogelijkheden';
@@ -189,9 +190,9 @@ $string['shortnametaken'] = 'Korte naam is al gebruikt voor een andere service (
 $string['simpleauthlog'] = 'Eenvoudige authenticatielogin';
 $string['step'] = 'Stap';
 $string['supplyinfo'] = 'Meer details';
-$string['testauserwithtestclientdescription'] = 'Simuleer externe toegand tot de service door de webservice test client te gebruiken. Voor je dat kunt doen, moet je aanmelden met de gebruiker die de "moodle/webservice:createtoken"-mogelijkheid heeft en moet je zijn veiligheidssleutel (token) van zijn "Mijn Moodle"-blok halen. Je zult dit token gebruiken in de testclient. In de testclient kies je ook een ingeschakeld protocol met tokenauthenticatie. <strong>Waarschuwing: de functies die je test WORDEN UITGEVOERD voor deze gebruiker. Wees voorzichtig wat je kiest om te testen!!!</strong>';
+$string['testauserwithtestclientdescription'] = 'Simuleer externe toegang tot de service door de webservice test client te gebruiken. Voor je dat kunt doen, moet je aanmelden met de gebruiker die de "moodle/webservice:createtoken"-mogelijkheid heeft en moet je zijn veiligheidssleutel (token) via de voorkeuren-pagina van de gebruiker halen. Je zult dit token gebruiken in de testclient. In de testclient kies je ook een ingeschakeld protocol met tokenauthenticatie. <strong>Waarschuwing: de functies die je test WORDEN UITGEVOERD voor deze gebruiker. Wees voorzichtig wat je kiest om te testen!!!</strong>';
 $string['testclient'] = 'Webservice testclient';
-$string['testclientdescription'] = '* De webservice testclient <strong>voert de functies ECHT uit</strong>. Test geen functies die je niet ken.<br />* Alle bestaande webservice functies zijn nog niet geïmplementeerd in de testclient<br />* Om te controleren of een gebruiker geen toegang heeft tot sommige functies, kun je sommige functies testen die je niet toestaat. <br />* Om duidelijlke foutmeldingen te krijgen kun debugging inschakelen naar {$a->mode} in {$a->atag}<br />* Ga naar {$a->amfatag}.';
+$string['testclientdescription'] = '* De webservice testclient <strong>voert de functies ECHT uit</strong>. Test geen functies die je niet ken.<br />* Alle bestaande webservice functies zijn nog niet geïmplementeerd in de testclient<br />* Om te controleren of een gebruiker geen toegang heeft tot sommige functies, kun je sommige functies testen die je niet toestaat. <br />* Om duidelijlke foutmeldingen te krijgen kun debugging inschakelen naar {$a->mode} in {$a->atag}.';
 $string['testwithtestclient'] = 'Test de service';
 $string['testwithtestclientdescription'] = 'Simuleer externe toegang tot de service met de webservice testclient. Gebruik een ingeschakeld protocol met tokenauthenticatie.<strong>Waarschuwing: de functies die je test ZULLEN UITGEVOERD WORDEN. Wees voorzichtig met wat je kiest om te testen</strong>';
 $string['token'] = 'Token';
@@ -204,7 +205,7 @@ $string['updateusersettings'] = 'Update';
 $string['uploadfiles'] = 'Kan bestanden uploaden';
 $string['uploadfiles_help'] = 'Indien ingeschakeld kan een gebruiker bestanden uplaoden met zijn beveiligingssleutels naar de eigen privé bestanden zone of naar de klad zone. Gebruikersquota gelden.';
 $string['userasclients'] = 'Gebruikers als clients met token';
-$string['userasclientsdescription'] = 'Volgende stappen helpen je met het configureren van Moodle webservices voor gebruikers als clients. Deze stappen helpen je ook om de aangeraden token authenticatiemethode  (met veiligheidssleutesl)  te configureren. Als je webservices zo gebruikt, dan zal de gebruiker zijn teken genereren van zijn Mijn profielpagina.';
+$string['userasclientsdescription'] = 'Volgende stappen helpen je met het configureren van Moodle webservices voor gebruikers als clients. Deze stappen helpen je ook om de aangeraden token authenticatiemethode  (met veiligheidssleutesl)  te configureren. Als je webservices zo gebruikt, dan zal de gebruiker zijn token genereren via zijn profielpagina.';
 $string['usermissingcaps'] = 'Ontbrekende mogelijkheden: {$a}';
 $string['usernameorid'] = 'Gebruikersnaam / gebruikersID';
 $string['usernameorid_help'] = 'Geef een gebruikersnaam of gebruikersID';

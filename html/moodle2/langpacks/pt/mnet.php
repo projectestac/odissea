@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -197,6 +197,7 @@ $string['registerhostson'] = 'Registar todos os servidor está <b>Ligado</b>';
 $string['remotecourses'] = 'Disciplinas externo';
 $string['remotehost'] = 'Servidor externo';
 $string['remotehosts'] = 'Servidores externos';
+$string['remoteuser'] = 'Utilizador externo {$a->remotetype}';
 $string['remoteuserinfo'] = 'Utilizador externo {$a->remotetype} - perfil obtido a partir de <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'A rede requer a instalação da extensão OpenSSL do PHP';
 $string['restore'] = 'Restaurar';
@@ -220,6 +221,12 @@ $string['showlocal'] = 'Mostrar utilizadores locais';
 $string['showremote'] = 'Mostrar utilizadores externos';
 $string['ssl_acl_allow'] = 'SSO ACL: Permitir utilizador \'{$a->user}\' de \'{$a->host}\'';
 $string['ssl_acl_deny'] = 'SSO ACL: Recusar utilizador \'{$a->user}\' de \'{$a->host}\'';
+$string['sslverification'] = 'Verificação SSL';
+$string['sslverification_help'] = 'Esta opção permite configurar o nível de segurança a ligação utiliza HTTPS.
+
+* Nenhum: Sem nível de segurança
+* Verificar apenas o servidor: Valida o domínio do certificado SSL
+* Verificar servidor e pares (recomendado): Valida o domínio e a origem do certificado SSL';
 $string['ssoaccesscontrol'] = 'Controlo de acessos SSO';
 $string['ssoacldescr'] = 'Esta página permite configurar o acesso de utilizadores específicos provenientes de servidores externos pertencentes à Rede Moodle. Esta configuração é importante quando são  disponibilizados serviços de SSO a utilizadores externos.É possível configurar a capacidade dos utilizadores <em>locais</em> deste site navegarem para outros servidores da rede Moodle utilizando o sistema de papéis para lhes dar a capacidade <em>mnetlogintoremote</em>.';
 $string['ssoaclneeds'] = 'Para que esta opção funcione, tem de ter a Rede Moodle ativa, além do módulo de autenticação rede Moodle, com a opção de adicionar utilizadores automaticamente ligada.';
@@ -252,6 +259,8 @@ $string['userchangepasswordlink'] = '<br />Poderá alterar a sua senha junto do 
 $string['usernotfullysetup'] = 'A sua conta de utilizador está incompleta. Consulte a página do seu <a href="{$a}">fornecedor</a> e certifique-se de que o seu perfil está completo. Pode ser preciso reiniciar a sua sessão para que as alterações tenham efeito.';
 $string['usersareonline'] = 'Aviso: {$a} utilizadores desse servidor estão neste momento ligados ao seu site.';
 $string['validated_by'] = 'Validado pela rede: <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Verificar servidor e pares';
+$string['verifyhostonly'] = 'Verificar apenas o servidor';
 $string['verifysignature-error'] = 'A verificação da assinatura falhou. Ocorreu um erro.';
 $string['verifysignature-invalid'] = 'A verificação da assinatura falhou.
 Este pacote de dados não parece ter a sua assinatura.';

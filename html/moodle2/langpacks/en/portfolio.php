@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML with attachments';
 $string['format_spreadsheet'] = 'Spreadsheet';
 $string['format_text'] = 'Plain text';
 $string['format_video'] = 'Video';
-$string['hidden'] = 'Hidden';
 $string['highdbsizethreshold'] = 'High transfer dbsize';
 $string['highdbsizethresholddesc'] = 'Number of db records over which will be considered to take a high amount of time to transfer';
 $string['highfilesizethreshold'] = 'High transfer filesize';
@@ -111,6 +110,8 @@ $string['instanceismisconfigured'] = 'Portfolio instance is misconfigured, skipp
 $string['instancenotdelete'] = 'Failed to delete portfolio';
 $string['instancenotsaved'] = 'Failed to save portfolio';
 $string['instancesaved'] = 'Portfolio saved successfully';
+$string['intro'] = 'Content which you have created, such as assignment submissions, forum posts and blog entries, can be exported to a portfolio or downloaded.<br>
+Any portfolio that you do not wish to use may be hidden so that it is not listed as an option to export content to.';
 $string['invalidaddformat'] = 'Invalid add format passed to portfolio_add_button. ({$a}) Must be one of PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Could not find that property ({$a}) of portfolio_button';
 $string['invalidconfigproperty'] = 'Could not find that config property ({$a->property} of {$a->class})';
@@ -174,6 +175,7 @@ $string['save'] = 'Save';
 $string['selectedformat'] = 'Selected export format';
 $string['selectedwait'] = 'Selected to wait?';
 $string['selectplugin'] = 'Select destination';
+$string['showhide'] = 'Show / hide';
 $string['singleinstancenomultiallowed'] = 'Only a single portfolio plugin instance is available, it doesn\'t support multiple exports per session, and there\'s already an active export in the session using this plugin!';
 $string['somepluginsdisabled'] = 'Some entire portfolio plugins have been disabled because they are either misconfigured or rely on something else that is:';
 $string['sure'] = 'Are you sure you want to delete \'{$a}\'? This cannot be undone.';

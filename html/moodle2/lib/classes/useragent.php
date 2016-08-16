@@ -71,7 +71,7 @@ class core_useragent {
         self::DEVICETYPE_DEFAULT,
         self::DEVICETYPE_LEGACY,
         self::DEVICETYPE_MOBILE,
-        self::DEVICETYPE_TABLET
+        self::DEVICETYPE_TABLET,
     );
 
     /**
@@ -201,11 +201,22 @@ class core_useragent {
 
     /**
      * Returns true if the user appears to be on a tablet.
+     *
      * @return int
      */
     protected function is_useragent_tablet() {
         $tabletregex = '/Tablet browser|android|iPad|iProd|GT-P1000|GT-I9000|SHW-M180S|SGH-T849|SCH-I800|Build\/ERE27|sholest/i';
         return (preg_match($tabletregex, $this->useragent));
+    }
+
+    /**
+     * Whether the user agent relates to a web crawler.
+     * This includes all types of web crawler.
+     * @return bool
+     */
+    protected function is_useragent_web_crawler() {
+        $regex = '/Googlebot|google\.com|Yahoo! Slurp|\[ZSEBOT\]|msnbot|bingbot|BingPreview|Yandex|AltaVista|Baiduspider|Teoma/i';
+        return (preg_match($regex, $this->useragent));
     }
 
     /**
@@ -471,6 +482,52 @@ class core_useragent {
     }
 
     /**
+     * Checks the user agent is Edge (of any version).
+     *
+     * @return bool true if Edge
+     */
+    public static function is_edge() {
+        return self::check_edge_version();
+    }
+
+    /**
+     * Check the User Agent for the version of Edge.
+     *
+     * @param string|int $version A version to check for, returns true if its equal to or greater than that specified.
+     * @return bool
+     */
+    public static function check_edge_version($version = null) {
+        $useragent = self::get_user_agent_string();
+
+        if ($useragent === false) {
+            // No User Agent found.
+            return false;
+        }
+
+        if (strpos($useragent, 'Edge/') === false) {
+            // Edge was not found in the UA - this is not Edge.
+            return false;
+        }
+
+        if (empty($version)) {
+            // No version to check.
+            return true;
+        }
+
+        // Find the version.
+        // Edge versions are always in the format:
+        //      Edge/<version>.<OS build number>
+        preg_match('%Edge/([\d]+)\.(.*)$%', $useragent, $matches);
+
+        // Just to be safe, round the version being tested.
+        // Edge only uses integer versions - the second component is the OS build number.
+        $version = round($version);
+
+        // Check whether the version specified is >= the version found.
+        return version_compare($matches[1], $version, '>=');
+    }
+
+    /**
      * Checks the user agent is IE (of any version).
      *
      * @return bool true if internet exporeer
@@ -505,6 +562,7 @@ class core_useragent {
         } else {
             return false;
         }
+
         $compatview = false;
         // IE8 and later versions may pretend to be IE7 for intranet sites, use Trident version instead,
         // the Trident should always describe the capabilities of IE in any emulation mode.
@@ -685,7 +743,9 @@ class core_useragent {
             // No Apple mobile devices here - editor does not work, course ajax is not touch compatible, etc.
             return false;
         }
-        if (strpos($useragent, 'Chrome')) { // Reject chrome browsers - it needs to be tested explicitly.
+        if (strpos($useragent, 'Chrome')) {
+            // Reject chrome browsers - it needs to be tested explicitly.
+            // This will also reject Edge, which pretends to be both Chrome, and Safari.
             return false;
         }
 
@@ -925,5 +985,16 @@ class core_useragent {
 
         // This browser does not support json.
         return false;
+    }
+
+    /**
+     * Returns true if the client appears to be some kind of web crawler.
+     * This may include other types of crawler.
+     *
+     * @return bool
+     */
+    public static function is_web_crawler() {
+        $instance = self::instance();
+        return (bool) $instance->is_useragent_web_crawler();
     }
 }

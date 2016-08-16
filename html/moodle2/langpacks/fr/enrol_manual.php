@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Voulez-vous vraiment supprimer ces insc
 $string['defaultperiod'] = 'Durée par défaut de l\'inscription';
 $string['defaultperiod_desc'] = 'Durée par défaut de la période durant laquelle l\'inscription est effective. Si 0 est indiqué, la durée sera illimitée par défaut.';
 $string['defaultperiod_help'] = 'Temps par défaut durant lequel l\'inscription est valable, à compter de l\'inscription de l\'utilisateur. Si l\'option est désactivée, la durée est par défaut illimitée.';
+$string['defaultstart'] = 'Début de l\'inscription par défaut';
 $string['deleteselectedusers'] = 'Supprimer les inscriptions sélectionnées';
 $string['editselectedusers'] = 'Modifier les inscriptions sélectionnées';
 $string['enrolledincourserole'] = 'Inscrit au cours « {$a->course} » avec le rôle « {$a->role} »';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Notification d\'échéance d\'inscrip
 $string['manual:config'] = 'Configurer les instances d\'inscription manuelle';
 $string['manual:enrol'] = 'Inscrire des utilisateurs';
 $string['manual:manage'] = 'Gérer les inscriptions';
+$string['manualpluginnotinstalled'] = 'Le plugin « Inscription manuelle » n\'est pas installé';
 $string['manual:unenrol'] = 'Désinscrire des utilisateurs du cours';
 $string['manual:unenrolself'] = 'Se désinscrire du cours';
 $string['messageprovider:expiry_notification'] = 'Notifications d\'échéance d\'inscriptions manuelles';
+$string['now'] = 'Maintenant';
 $string['pluginname'] = 'Inscription manuelle';
 $string['pluginname_desc'] = 'Le plugin inscription manuelle permet à un utilisateur autorisé, par exemple un enseignant, d\'inscrire manuellement des utilisateurs au moyen d\'un lien dans l\'administration du cours. ce plugin devrait rester activé la plupart du temps. D\'autres plugins, comme l\'auto-inscription peuvent utiliser ce plugin à l\'interne.';
 $string['status'] = 'Activer les inscriptions manuelles';

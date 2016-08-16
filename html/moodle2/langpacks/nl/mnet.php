@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -195,7 +195,8 @@ $string['registerhostson'] = 'Registreer alle hosts is nu <b>ingeschakeld</b>';
 $string['remotecourses'] = 'Externe cursussen';
 $string['remotehost'] = 'Host op afstand';
 $string['remotehosts'] = 'Ecterne hosts';
-$string['remoteuserinfo'] = 'Gebruiker op afstand {$a->remotetype} - profiel opgehaald van <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuser'] = 'Externe {$a->remotetype} gebruiker';
+$string['remoteuserinfo'] = 'Profiel opgehaald van <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'Netwerk vereist de OpenSSL extentie';
 $string['restore'] = 'Terugzetten';
 $string['returnvalue'] = 'Teruggegeven waarde';
@@ -218,6 +219,12 @@ $string['showlocal'] = 'Toon lokale gebruikers';
 $string['showremote'] = 'Toon externe gebruikers';
 $string['ssl_acl_allow'] = 'SSO ACL: Gebruiker {$a->user} van {$a->host} toelaten';
 $string['ssl_acl_deny'] = 'SSO ACL: Gebruiker {$a->user} van {$a->host} weigeren';
+$string['sslverification'] = 'SSL-verificatie';
+$string['sslverification_help'] = 'Met deze optie kun het beveiligingsniveau instellen wanneer je met een externe machine verbindt via HTTPS.
+
+* Geen: geen beveiliging
+* Enkel host controleren: valideert het domein van het SSL-certificaat
+* Host en uitgever controleren (aanbevolen): valideert het domein en de uitgever van het SSL-certificaat';
 $string['ssoaccesscontrol'] = 'SSO Toegangscontrole';
 $string['ssoacldescr'] = 'Gebruik deze pagina om toegang toe te staan/te weigeren voor specifieke gebruikers van externe MNet-hosts. Dit is functioneel wanneer je SSO-diensten aanbiedt voor externe gebruikers. Om de mogelijkheden van je <em>lokale</em> gebruikers te controleren om uit te zwerven over andere Moodle Network hosts, moet je het rollensysteem gebruiken. Kies de <em>mnetlogintoremote</em> mogelijkheid.';
 $string['ssoaclneeds'] = 'Om deze functie te laten werken, moet je Moodle Networking aanzetten en de MNet authenticatieplugin inschakelen.';
@@ -245,6 +252,8 @@ $string['userchangepasswordlink'] = '<br /> Je kunt waarschijnlijk je wachtwoord
 $string['usernotfullysetup'] = 'Je gebruikersaccount is onvolledig. Je moet <a href="{$a}">teruggaan naar je provider</a> en er voor zorgen dat je profiel daar volledig is. Het is mogelijk dat je moet afmelden en terug aanmelden om je wijzigingen toe te passen.';
 $string['usersareonline'] = 'Waarschuwing: {$a} gebruikers van die server zijn op dit ogenblik op jouw site ingelogd.';
 $string['validated_by'] = 'Dit is goedgekeurd door het netwerk:  <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Host en uitgever controleren';
+$string['verifyhostonly'] = 'Enkel host controleren';
 $string['verifysignature-error'] = 'De handtekeningverificatie mislukte. Er is een fout opgetreden.';
 $string['verifysignature-invalid'] = 'De handtekeningverificatie mislukte. Het lijkt er op dat deze aanvraag niet door jou ondertekend was';
 $string['version'] = 'Versie';

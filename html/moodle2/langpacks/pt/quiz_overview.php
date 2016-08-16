@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz_overview', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allattempts'] = 'Mostrar todas as tentativas';
-$string['allattemptscontributetograde'] = 'Todas as tentativas entram na classificação final do utilizador.';
+$string['allattemptscontributetograde'] = 'Todas as tentativas contribuem para a avalição final do utilizador.';
 $string['allstudents'] = 'Mostrar todos os {$a}';
 $string['attemptsonly'] = 'Mostrar apenas {$a} que já tenham tentado responder';
 $string['attemptsprepage'] = 'Tentativas visualizadas por página';

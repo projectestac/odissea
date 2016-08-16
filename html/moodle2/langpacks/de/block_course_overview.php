@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Kursliste einklappen';
 $string['configotherexpanded'] = 'Wenn diese Option aktiviert ist, werden \'Weitere Kurse\' aufgeklappt. In den Nutzereinstellungen kann die Einstellung geändert werden.';
 $string['configpreservestates'] = 'Wenn aktiviert wird der auf-/zugeklappt Status, den der/die Nutzer/in gesetzt hat, gespeichert und beim Laden der Seite verwandt.';
 $string['course_overview:addinstance'] = 'Block \'Kursübersicht\' hinzufügen';
-$string['course_overview:myaddinstance'] = 'Block \'Kursübersicht\' für \'Meine Startseite\' hinzufügen';
+$string['course_overview:myaddinstance'] = 'Block \'Kursübersicht\' zum Dashboard hinzufügen';
 $string['defaultmaxcourses'] = 'Standardmäßige Höchstzahl der Kurse';
 $string['defaultmaxcoursesdesc'] = 'Maximalzahl der Kurse, die im Block \'Kursübersicht\' angezeigt wird. \'0\' zeigt alle Kurse an.';
 $string['expandall'] = 'Kursliste aufklappen';

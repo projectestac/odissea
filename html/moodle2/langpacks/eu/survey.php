@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'survey', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -158,7 +158,7 @@ Eskerrik asko.';
 $string['collesaname'] = 'COLLES (Benetakoa)';
 $string['collesapintro'] = 'Galdeketa honen helburua da unitate honen on-line banaketak ikasten zenbat lagundu zaituen jakitea.
 
-Azpiko 24 esaldietako bakoitzak unitate honetan izandako esperientzia konparatzea eskatzen dizu, <b>nahiaren</b> (idealaren) eta <b>benetako</b> esperientziaren artean.
+Azpiko 24 esaldietako bakoitzak unitate honetan izandako esperientzia konparatzea eskatzen dizu, <B>nahiaren</B> (idealaren) eta <B>benetako</B> esperientziaren artean.
 
 Ez dago erantzun \'zuzen\' edo \'okerrik\'; zure iritzia jakin nahi dugu, besterik gabe. Zure erantzunak konfidentzialtasun osoz tratatuko ditugula ziur egon zaitezke, eta hauek ez dute zure ebaluazioan eraginik izango.
 
@@ -168,8 +168,8 @@ Eskerrik asko.';
 $string['collesapname'] = 'COLLES (Lehenetsia eta Benetakoa)';
 $string['collesm1'] = 'Garrantzia';
 $string['collesm1short'] = 'Garrantzia';
-$string['collesm2'] = 'Gogoeta-pentsaera';
-$string['collesm2short'] = 'Gogoeta-pentsaera';
+$string['collesm2'] = 'Gogoetazko pentsaera';
+$string['collesm2short'] = 'Gogoetazko pentsaera';
 $string['collesm3'] = 'Elkarreragina';
 $string['collesm3short'] = 'Elkarreragina';
 $string['collesm4'] = 'Tutorearen laguntza';
@@ -202,7 +202,7 @@ $string['editingasurvey'] = 'Hausnarketa bat editatzen';
 $string['eventreportdownloaded'] = 'Hausnarketaren txostena jaitsi da';
 $string['eventreportviewed'] = 'Hausnarketaren txostena ikusi da';
 $string['eventresponsesubmitted'] = 'Hausnarketa-erantzuna bidalita';
-$string['guestsnotallowed'] = 'Bisitariek ezin dute hausnarketarik bidali';
+$string['guestsnotallowed'] = 'Bistariek ezin dute hausnarketarik bidali';
 $string['howlong'] = 'Zenbat denbora behar izan duzu inkesta hau betetzeko?';
 $string['howlongoptions'] = '<1 min, 1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,>10 min';
 $string['ifoundthat'] = 'Hau aurkitu dut';
@@ -239,6 +239,7 @@ $string['savednotes'] = 'Zure oharrak gorde dira';
 $string['scaleagree5'] = 'Erabat aurka,Aurka,Ez ados ez aurka,Ados,Erabat ados';
 $string['scales'] = 'Eskalak';
 $string['scaletimes5'] = 'Ia inoiz ez,Oso gutxitan,Batzuetan,Sarritan,Ia beti';
+$string['search:activity'] = 'Hausnarketa - jardueraren informazioa';
 $string['seemoredetail'] = 'Klik egin hemen xehetasun gehiago ikusteko';
 $string['selectedquestions'] = 'Eskala batetik aukeratutako galderak, ikasle guztiak';
 $string['summary'] = 'Laburpena';

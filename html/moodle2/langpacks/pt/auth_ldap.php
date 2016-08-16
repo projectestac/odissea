@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Ativar a tolerância de autenticação 
 $string['auth_ldap_gracelogins_key'] = 'Tolerância de autenticação (Grace logins)';
 $string['auth_ldap_groupecreators'] = 'Lista de grupos ou contextos cujos membros estão autorizados a criar grupo. Os nomes dos grupos devem ser separados por ";". Ex: cn=teachers,ou=staff,o=myorg';
 $string['auth_ldap_groupecreators_key'] = 'Criadores de grupo';
-$string['auth_ldap_host_url'] = 'Especificar o servidor LDAP na forma de um URL completo. Ex: ldap://ldap.myorg.com/ ou ldaps://ldap.myorg.com/';
+$string['auth_ldap_host_url'] = 'Especifique o servidor LDAP na forma de um endereço URL tal como \'ldap://ldap.myorg.com/\' ou \'ldaps://ldap.myorg.com/\'. Separe os diferentes servidores com \';\' para obter suporte de failover.';
 $string['auth_ldap_host_url_key'] = 'URL do servidor';
 $string['auth_ldap_ldap_encoding'] = 'Especificar a codificação usada pelo servidor LDAP. Muito provavelmente utf-8. No caso de ser um servidor MS ADv2 é usada a codificação predefinida na plataforma, por exemplo, cp1252, cp1250, etc.';
 $string['auth_ldap_ldap_encoding_key'] = 'Codificação do LDAP';
@@ -70,7 +70,7 @@ $string['auth_ldap_noconnect_all'] = 'O módulo LDAP não conseguiu ligar aos se
 $string['auth_ldap_noextension'] = '<em>O módulo LDAP do PHP não está instalado. Para poder utilizar este módulo de autenticação este módulo tem que estar instalado e ativado.</em>';
 $string['auth_ldap_no_mbstring'] = 'A extensão mbstring do PHP tem que estar instalado no servidor para seja possível criar utilizadores na Ative Directory.';
 $string['auth_ldapnotinstalled'] = 'A autenticação por LDAP não pode ser utilizada porque a extensão LDAP do PHP não está instalada.';
-$string['auth_ldap_objectclass'] = 'Opcional: Esta configuração tem prioridade sobre o atributo objectClass usado para nomear/pesquisar utilizadores no ldap_user_type. Normalmente não é necessário alterar esta opção.';
+$string['auth_ldap_objectclass'] = 'Opcional: Esta configuração substitui objectClass usado para nomear/pesquisar utilizadores no ldap_user_type. Normalmente não é necessário alterar esta opção.';
 $string['auth_ldap_objectclass_key'] = 'Classe de objeto';
 $string['auth_ldap_opt_deref'] = 'Esta configuração define como os <i>aliases</i> são processados durante a pesquisa. Selecione um dos seguintes valores:"Não" (LDAP_DEREF_NEVER) ou "Sim" (LDAP_DEREF_ALWAYS)';
 $string['auth_ldap_opt_deref_key'] = 'Desreferenciar <i>aliases</i>';
@@ -82,6 +82,8 @@ $string['auth_ldap_preventpassindb_key'] = 'Sem armazenamento de senhas em cache
 $string['auth_ldap_search_sub'] = 'Procurar utilizadores em subcontextos.';
 $string['auth_ldap_search_sub_key'] = 'Pesquisar em subcontextos';
 $string['auth_ldap_server_settings'] = 'Configurações do servidor LDAP';
+$string['auth_ldap_suspended_attribute'] = 'Opcional: Quando fornecido, este atributo será utilizado para ativar/suspender a conta de utilizador criada localmente.';
+$string['auth_ldap_suspended_attribute_key'] = 'Atributo suspenso';
 $string['auth_ldap_unsupportedusertype'] = 'user_create() não permite o usertype: {$a}';
 $string['auth_ldap_update_userinfo'] = 'Atualizar a informação de utilizador (firstname, lastname, address..) a partir do servidor LDAP para o Moodle. Defina as configurações na secção "Mapeamento de dados" de acordo com o pretendido.';
 $string['auth_ldap_user_attribute'] = 'Opcional: Esta configuração tem prioridade sobre o atributo usado para nomear/pesquisar utilizadores. Um valor habitual é cn';
@@ -138,6 +140,7 @@ $string['renamingnotallowed'] = 'Não é permitida a alteração do nome dos uti
 $string['rootdseerror'] = 'Erro ao comunicar com rootDSE para Ative Directory';
 $string['start_tls'] = 'Usar o serviço LDAP normal (porta 389) com encriptação TLS';
 $string['start_tls_key'] = 'Usar TLS';
+$string['synctask'] = 'Tarefa de sincronização dos utilizadores do LDAP';
 $string['updatepasserror'] = 'Erro na função user_update_password() com código  {$a->errno} e mensagem " {$a->errstring} "';
 $string['updatepasserrorexpire'] = 'Erro na função user_update_password() ao ler o intervalo de expiração da senha. Código do erro: {$a->errno}; Mensagem do erro: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Erro na função user_update_password() ao modificar os parâmetros expirationtime e/ou gracelogins. Código do erro: {$a->errno}; Mensagem do erro: {$a->errstring}';

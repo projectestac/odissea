@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,6 +87,7 @@ $string['resourcecontent'] = '파일 및 하위폴더';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resource:exportresource'] = '학습자원 내보내기';
 $string['resource:view'] = '학습자원 보기';
+$string['search:activity'] = '파일';
 $string['selectmainfile'] = '파일명 옆의 아이콘을 클릭하여 선택하세요';
 $string['showsize'] = '크기 보기';
 $string['showsize_desc'] = '강좌 페이지에 파일 크기 표시';

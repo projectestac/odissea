@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'theme_more', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,5 +68,10 @@ $string['region-side-post'] = 'Droite';
 $string['region-side-pre'] = 'Gauche';
 $string['secondarybackground'] = 'Couleur de fond du contenu secondaire';
 $string['secondarybackground_desc'] = 'La couleur de fond des contenus secondaires, par exemple les blocs.';
+$string['sitelogo'] = 'Logo de la plateforme';
+$string['sitename'] = 'Afficher le nom de la plateforme avec un petit logo';
+$string['sitenamedesc'] = 'S\'il n\'y a pas de petit logo, le nom de la plateforme est toujours affiché dans la barre de navigation. Si un petit logo est défini, il peut être affiché avec ou sans le nom de la plateforme.';
+$string['smalllogo'] = 'Petit logo';
+$string['smalllogodesc'] = 'Le petit logo est affiché dans la barre de navigation. Si un logo d\'entête est défini pour la page d\'accueil et la page de connexion, le petit logo n\'est pas affiché sur ces pages.';
 $string['textcolor'] = 'Couleur du texte';
 $string['textcolor_desc'] = 'La couleur du texte.';

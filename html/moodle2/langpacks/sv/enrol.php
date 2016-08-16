@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,6 +100,7 @@ $string['periodend'] = 'tills';
 $string['periodnone'] = 'registrerad {$a}';
 $string['periodstart'] = 'från {$a}';
 $string['periodstartend'] = 'från {$a->start} till {$a->end}';
+$string['proceedtocourse'] = 'Gå till kursen';
 $string['recovergrades'] = 'Återställ användarens betyg om möjligt';
 $string['rolefromcategory'] = '{$a->role} (Ärvd från kurskategori)';
 $string['rolefrommetacourse'] = '{$a->role} (Ärvd från föräldrakurs)';

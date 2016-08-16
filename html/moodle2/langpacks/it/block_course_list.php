@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_list', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['allcourses'] = 'L\'amministratore vede tutti i corsi';
 $string['configadminview'] = 'Il tipo di vista dell\'amministratore nel blocco "Elenco corsi".';
 $string['confighideallcourseslink'] = 'Rimuove il link "Tutti i corsi" sotto l\'elenco dei corsi. (L\'impostazione non influenza la vista dell\'amministratore)';
 $string['course_list:addinstance'] = 'Aggiungere blocco Corsi';
-$string['course_list:myaddinstance'] = 'Aggiungere blocco Corsi nella pagina My home';
+$string['course_list:myaddinstance'] = 'Aggiungere blocco Corsi nella Dashboard';
 $string['hideallcourseslink'] = 'Nascondi link \'Tutti i corsi\'';
 $string['owncourses'] = 'L\'amministratore vede solo i corsi ai quali è iscritto';
 $string['pluginname'] = 'Corsi';

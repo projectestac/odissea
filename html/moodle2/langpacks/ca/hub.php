@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'hub', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -248,7 +248,7 @@ $string['unpublishalluploadedcourses'] = 'Tots els cursos que havíeu pujat al c
 $string['unpublishconfirmation'] = 'Realment voleu suprimir el curs "{$a->courseshortname}" del concentrador "{$a->hubname}"';
 $string['unpublishcourse'] = 'Desfés la publicació {$a}';
 $string['unregister'] = 'Esborra el registre';
-$string['unregisterconfirmation'] = 'Ara esborrareu el registre d\'aquest lloc al concentrador {$a}. Una vegada us hàgiu desconnectat no podreu gestionar cap dels cursos que hàgiu deixat compartits aquí. Esteu segur del tot de voler esborrar el registre?';
+$string['unregisterconfirmation'] = 'Esteu a punt de esborrar el registre d\'aquest lloc al concentrador {$a}. Una vegada us hagueu desconnectat no podreu gestionar cap curs que hagueu deixat compartits aquí. Esteu segurs del tot de voler esborrar el registre ?';
 $string['unregisterfrom'] = 'Esborra el registre des de {$a}';
 $string['unregistrationerror'] = 'Ha succeït un error quan el lloc ha intentat esborrar el registre des del concentrador: {$a}';
 $string['untrustme'] = 'No confiïs';

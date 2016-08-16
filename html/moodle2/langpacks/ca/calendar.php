@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'calendar', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,13 +41,14 @@ $string['colcalendar'] = 'Calendari';
 $string['collastupdated'] = 'Darrera actualització';
 $string['colpoll'] = 'Actualitza';
 $string['commontasks'] = 'Opcions';
-$string['confirmeventdelete'] = 'Esteu segur que voleu suprimir aquest esdeveniment?';
+$string['confirmeventdelete'] = 'Esteu segur que voleu suprimir l\'esdeveniment «{$a}»?';
 $string['course'] = 'Curs';
 $string['courseevent'] = 'Esdeveniment de curs';
 $string['courseevents'] = 'Esdeveniments del curs';
 $string['courses'] = 'Cursos';
 $string['customexport'] = 'Rang personalitzat ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Diàriament';
+$string['dayviewfor'] = 'Vista del dia per a:';
 $string['dayviewtitle'] = 'Vista del dia: {$a}';
 $string['daywithnoevents'] = 'Aquest dia no té esdeveniments.';
 $string['default'] = 'Per defecte';
@@ -112,7 +113,6 @@ $string['gotocalendar'] = 'Vés al calendari';
 $string['group'] = 'Grup';
 $string['groupevent'] = 'Esdeveniment de grup';
 $string['groupevents'] = 'Esdeveniments de grup';
-$string['hidden'] = 'ocult';
 $string['hidecourseevents'] = 'Amaga els esdeveniments de curs';
 $string['hideglobalevents'] = 'Amaga els esdeveniments globals';
 $string['hidegroupsevents'] = 'Amaga els esdeveniments de grup';
@@ -206,6 +206,7 @@ $string['typegroup'] = 'Esdeveniment de grup';
 $string['typesite'] = 'Esdeveniment del lloc';
 $string['typeuser'] = 'Esdeveniment de l\'usuari';
 $string['upcomingevents'] = 'Esdeveniments propers';
+$string['upcomingeventsfor'] = 'Esdeveniments propers per a:';
 $string['urlforical'] = 'URL per a subscriure\'s al calendari en format iCal';
 $string['user'] = 'Usuari';
 $string['userevent'] = 'Esdeveniment d\'usuari';

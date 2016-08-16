@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,14 @@ $string['alwaysshowdefinition'] = 'Permitir que os alunos vejam a grelha  (caso 
 $string['backtoediting'] = 'Voltar para editar';
 $string['confirmdeletecriterion'] = 'Tem a certeza que deseja apagar este critério?';
 $string['confirmdeletelevel'] = 'Tem a certeza que deseja apagar este nível?';
+$string['criterion'] = 'Critério {$a}';
 $string['criterionaddlevel'] = 'Adicionar nível';
 $string['criteriondelete'] = 'Apagar critério';
+$string['criterionduplicate'] = 'Duplicar critério';
 $string['criterionempty'] = 'Clique para editar critério';
 $string['criterionmovedown'] = 'Mover para baixo';
 $string['criterionmoveup'] = 'Mover para cima';
+$string['criterionremark'] = 'Comentário do critério {$a->description}: {$a->remark}';
 $string['definerubric'] = 'Configurar grelha';
 $string['description'] = 'Descrição';
 $string['enableremarks'] = 'Permitir que o avaliador adicione comentários de texto para cada critério';
@@ -45,8 +48,11 @@ $string['err_nodescription'] = 'A descrição do critério não pode ficar em br
 $string['err_scoreformat'] = 'O número de pontos para cada nível deve ser um número não negativo válido';
 $string['err_totalscore'] = 'O número de pontos máximo possível de avaliar pela grelha deve ser mais do que zero';
 $string['gradingof'] = '{$a} avaliado';
-$string['leveldelete'] = 'Apagar nível';
+$string['level'] = 'Nível {$a->definition}, {$a->score} pontos.';
+$string['leveldefinition'] = 'Definição do nível {$a}';
+$string['leveldelete'] = 'Apagar nível {$a}';
 $string['levelempty'] = 'Clique para editar nível';
+$string['levelsgroup'] = 'Grupo de níveis';
 $string['name'] = 'Nome';
 $string['needregrademessage'] = 'A definição da grelha alterou depois deste aluno ter sido avaliado. O aluno não pode ver a avaliação até ser conferida e atualizada a nota.';
 $string['pluginname'] = 'Grelha qualitativa';
@@ -68,6 +74,7 @@ $string['rubricstatus'] = 'Estado atual da grelha';
 $string['save'] = 'Guardar';
 $string['saverubric'] = 'Guardar grelha';
 $string['saverubricdraft'] = 'Guardar como rascunho';
+$string['scoreinputforlevel'] = 'Pontuação para o nível {$a}';
 $string['scorepostfix'] = '{$a}pontos';
 $string['showdescriptionstudent'] = 'Mostrar descrição da grelha para os alunos que estão a ser avaliados';
 $string['showdescriptionteacher'] = 'Mostrar descrição da grelha durante a avaliação';

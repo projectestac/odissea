@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['error_authmnetneeded'] = 'MNet-en autentifikaziorako plugina gaituta eg
 $string['error_localusersonly'] = 'Urrutiko erabiltzaileak ezin dira joan Moodle sarearen beste zerbitzari batzuetara ostalari honetatik';
 $string['error_roamcapabilityneeded'] = 'Erabiltzaileek \'Urrutiko Moodle batera joan\' gaitasunean baimena behar dute Moodle sarearen zerbitzari-zerrenda ikusteko.';
 $string['mnet_hosts:addinstance'] = 'Gehitu sare-zerbitzariak bloke berria';
-$string['mnet_hosts:myaddinstance'] = 'Gehitu sare-zerbitzariak bloke berria Nire hasieran';
+$string['mnet_hosts:myaddinstance'] = 'Gehitu sare-zerbitzariak bloke berria aginte-panelean';
 $string['pluginname'] = 'Sare-zerbitzariak';
 $string['server'] = 'Zerbitzaria';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Respondido';
 $string['atleastoneoption'] = 'Cómpre que forneza cando menos unha resposta posíbel.';
 $string['cannotsubmit'] = 'Xurdiu un problema ao enviar a súa escolla. Tenteo de novo.';
 $string['choice'] = 'Escolla';
+$string['choiceactivityname'] = 'Escolla: {$a}';
 $string['choice:addinstance'] = 'Engadir unha nova escolla';
 $string['choice:choose'] = 'Rexistrar unha escolla';
 $string['choiceclose'] = 'Até';
+$string['choicecloseson'] = 'A escolla pecha en {$a}';
 $string['choice:deleteresponses'] = 'Eliminar respostas';
 $string['choice:downloadresponses'] = 'Cargar respostas';
 $string['choicefull'] = 'Esta escolla está chea en non hai prazas dispoñíbeis.';
@@ -62,6 +64,7 @@ $string['eventreportviewed'] = 'Informe de escolla visto';
 $string['expired'] = 'Desculpe, esta actividade pechouse o {$a} e xa non está dispoñíbel';
 $string['full'] = '(Cheo)';
 $string['havetologin'] = 'Ten que rexistrarse antes de poder enviar a súa escolla';
+$string['includeinactive'] = 'Incluír respostas de usuarios inactivos/suspendidos';
 $string['limit'] = 'Límite';
 $string['limitanswers'] = 'Limitar o número de respostas permitidas';
 $string['limitanswers_help'] = 'Esta opción permítelle limitar o número de participantes que poden seleccionar cada opción de escolla. Cando se acada o límite, ninguén máis pode seleccionar esa opción.
@@ -96,6 +99,7 @@ $string['options'] = 'Opcións';
 $string['page-mod-choice-x'] = 'Calquera páxina de escolla do módulo';
 $string['pluginadministration'] = 'Administración da escolla';
 $string['pluginname'] = 'Escolla';
+$string['previewonly'] = 'Isto é soamente unha vista previa das opcións dispoñíbeis para esta actividade. Vostede non poderá enviar a súa escolla ata o {$a}.';
 $string['privacy'] = 'Privacidade dos resultados';
 $string['publish'] = 'Publicar resultados';
 $string['publishafteranswer'] = 'Mostrar resultados aos alumnos despois de que respondan';
@@ -111,6 +115,8 @@ $string['responsesresultgraphheader'] = 'Presentación gráfica';
 $string['responsesto'] = 'Respostas a {$a}';
 $string['results'] = 'Resultados';
 $string['savemychoice'] = 'Gardar a miña escolla';
+$string['showpreview'] = 'Amosar a vista previa';
+$string['showpreview_help'] = 'Permitirlle aos alumnos facer unha vista previa das opcións dispoñíbeis antes de que a escolla sexa aberta para envío.';
 $string['showunanswered'] = 'Mostrar columna para non respondidas';
 $string['skipresultgraph'] = 'Omitir a gráfica de resultados';
 $string['spaceleft'] = 'espazo dispoñible';

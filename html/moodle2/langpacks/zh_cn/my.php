@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,9 @@ $string['defaultpage'] = '缺省我的Moodle页面';
 $string['defaultprofilepage'] = '缺省个人资料页';
 $string['delpage'] = '删除页面';
 $string['managepages'] = '管理页面';
-$string['mymoodle'] = '我的Moodle';
+$string['mymoodle'] = '个人面板';
 $string['nocourses'] = '没有可显示的课程信息。';
-$string['noguest'] = '“我的Moodle”页面对访客无效';
+$string['noguest'] = '“个人面板”页面对访客无效';
 $string['pinblocks'] = '为我的 Moodle 配置固定的版块';
 $string['pinblocksexplan'] = '您在这里设置的任何版块配置将显示（但不可编辑）在所有用户的“我的Moodle”页上';
 $string['reseterror'] = '发生错误正在重置你的页面';

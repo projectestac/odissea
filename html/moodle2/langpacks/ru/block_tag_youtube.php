@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tag_youtube', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Все категории';
-$string['apierror'] = 'Ключ API Youtube не установлен. Обратитесь к администратору.';
+$string['apierror'] = 'Ключ API Youtube не задан. Свяжитесь с вашим администратором сайта.';
 $string['apikey'] = 'Ключ API';
 $string['apikeyinfo'] = 'Получить <a href="https://developers.google.com/youtube/v3/getting-started">ключ Google API</a> для вашего сайта Moodle.';
 $string['autosvehicles'] = 'Автомобили и трпнспорт';
@@ -45,7 +45,7 @@ $string['numberofvideos'] = 'Видео';
 $string['peopleblogs'] = 'Люди и блоги';
 $string['petsanimals'] = 'Домашние и дикие животные';
 $string['pluginname'] = 'YouTube';
-$string['requesterror'] = 'Не удается получить данные от сервера. Свяжитесь с вашим администратором сайта, если проблема сохраняется.';
+$string['requesterror'] = 'Не удается получить данные с сервера. Свяжитесь с вашим администратором сайта, если проблема сохраняется.';
 $string['scienceandtech'] = 'Наука и техника';
 $string['sports'] = 'Спорт';
 $string['tag_youtube:addinstance'] = 'Добавлять новый блок «YouTube»';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,6 +89,7 @@ $string['cnfshowgroup'] = 'Stel in of er een scheiding tussen groeperingen moet 
 $string['cnfsortkey'] = 'Kies de standaardsorteersleutel';
 $string['cnfsortorder'] = 'Kies de standaardsorteervolgorde';
 $string['cnfstudentcanpost'] = 'Stel als standaardinstelling in of een leerling al dan niet zelf kan invoeren';
+$string['cnftabs'] = 'Selecteer zichtbare tabs voor de woordelijstopmaak';
 $string['comment'] = 'Commentaar';
 $string['commentdeleted'] = 'De commentaar is verwijderd.';
 $string['comments'] = 'Commentaren';
@@ -302,6 +303,8 @@ $string['rsstype_help'] = '<p>Met deze optie kun je een RSS-feed maken van deze 
 <li><B>Met auteur:</b>Met deze instelling zal in de gegenereerde feeds de naam van de auteur bij elk artikel staan.</li>
 <li><B>Zonder auteur:</b> Met deze instelling de naam van de auteur niet zal in de gegenereerde feeds staan.</li>
 </ul>';
+$string['search:activity'] = 'Woordenlijst - activiteitsinformatie';
+$string['search:entry'] = 'Woordenlijst - items';
 $string['searchindefinition'] = 'Zoek ook in definities';
 $string['secondaryglossary'] = 'Secundaire woordenlijst';
 $string['showall'] = 'Toon de link \'Alles\'';
@@ -352,6 +355,7 @@ interne bronnen, weeksamenvattingen  enz.</p>
 &lt;nolink>- en &lt;/nolink>- tags rond de tekst zetten.</p>
 
 <p>Merk op dat categoriën ook gelinkt worden.</p>';
+$string['visibletabs'] = 'Zichtbare tabs';
 $string['waitingapproval'] = 'Nog goedkeuren';
 $string['warningstudentcapost'] = '(Alleen van toepassing als de woordenlijst niet de hoofdwoordenlijst is)';
 $string['withauthor'] = 'Items met auteur';

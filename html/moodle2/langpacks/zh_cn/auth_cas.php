@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,15 @@ $string['auth_cas_certificate_path_key'] = '证书路径';
 $string['auth_cas_changepasswordurl'] = '更改密码 URL';
 $string['auth_cas_create_user'] = '如果您希望将 CAS 认证用户加入到 Moodle 数据库中，请选择是。否则只有已经存在于 Moodle 数据库中的用户可以登录。';
 $string['auth_cas_create_user_key'] = '创建用户';
+$string['auth_cas_curl_ssl_version'] = '会使用SSL版本(2或3)。默认PHP将会尝试自行决定，但在某些情况下必须手动设置。';
+$string['auth_cas_curl_ssl_version_default'] = '默认';
+$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL 版本';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = '这个方法使用 CAS 服务器(中央认证服务)，在单点登录(SSO)环境中认证用户。您也可以使用简单的 LDAP 认证。如果给定的用户名和密码在 CAS 中有效，Moodle 会在数据库中创建信用户账号，并从 LDAP 中取出需要的属性。在后续的登录中，只检查用户名和密码。';
 $string['auth_cas_enabled'] = '如果您希望使用 CAS 认证请开启此选项。';
 $string['auth_cas_hostname'] = 'CAS 服务器主机名<br />例如: host.domain.fr';
@@ -67,3 +76,4 @@ $string['auth_cas_version'] = '使用哪个CAS协议版本';
 $string['CASform'] = '选择认证方式';
 $string['noldapserver'] = 'CAS没有配置LDAP服务器！因此同步被禁用。';
 $string['pluginname'] = 'CAS 服务器(单点登录)';
+$string['synctask'] = 'CAS用户同步任务';

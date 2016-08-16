@@ -64,13 +64,12 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
             'descriptionformat' => FORMAT_MOODLE,
             'city' => 'Perth',
             'url' => 'http://moodle.org',
-            'country' => 'au'
+            'country' => 'AU'
             );
 
         $user1 = self::getDataGenerator()->create_user($user1);
         set_config('usetags', 1);
         require_once($CFG->dirroot . '/user/editlib.php');
-        require_once($CFG->dirroot . '/tag/lib.php');
         $user1->interests = array('Cinema', 'Tennis', 'Dance', 'Guitar', 'Cooking');
         useredit_update_interests($user1, $user1->interests);
 
@@ -223,12 +222,11 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
             'descriptionformat' => FORMAT_MOODLE,
             'city' => 'Perth',
             'url' => 'http://moodle.org',
-            'country' => 'au'
+            'country' => 'AU'
             );
         $user1 = self::getDataGenerator()->create_user($user1);
         if (!empty($CFG->usetags)) {
             require_once($CFG->dirroot . '/user/editlib.php');
-            require_once($CFG->dirroot . '/tag/lib.php');
             $user1->interests = array('Cinema', 'Tennis', 'Dance', 'Guitar', 'Cooking');
             useredit_update_interests($user1, $user1->interests);
         }
@@ -385,12 +383,11 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
             'descriptionformat' => FORMAT_MOODLE,
             'city' => 'Perth',
             'url' => 'http://moodle.org',
-            'country' => 'au'
+            'country' => 'AU'
         );
         $return->user1 = self::getDataGenerator()->create_user($return->user1);
         if (!empty($CFG->usetags)) {
             require_once($CFG->dirroot . '/user/editlib.php');
-            require_once($CFG->dirroot . '/tag/lib.php');
             $return->user1->interests = array('Cinema', 'Tennis', 'Dance', 'Guitar', 'Cooking');
             useredit_update_interests($return->user1, $return->user1->interests);
         }
@@ -497,7 +494,7 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
             'email' => 'usertest1@example.com',
             'description' => 'This is a description for user 1',
             'city' => 'Perth',
-            'country' => 'au'
+            'country' => 'AU'
             );
 
         $context = context_system::instance();
@@ -562,97 +559,6 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
     }
 
     /**
-     * Test get_users_by_id
-     */
-    public function test_get_users_by_id() {
-        global $USER, $CFG;
-
-        $this->resetAfterTest(true);
-
-        $user1 = array(
-            'username' => 'usernametest1',
-            'idnumber' => 'idnumbertest1',
-            'firstname' => 'First Name User Test 1',
-            'lastname' => 'Last Name User Test 1',
-            'email' => 'usertest1@example.com',
-            'address' => '2 Test Street Perth 6000 WA',
-            'phone1' => '01010101010',
-            'phone2' => '02020203',
-            'icq' => 'testuser1',
-            'skype' => 'testuser1',
-            'yahoo' => 'testuser1',
-            'aim' => 'testuser1',
-            'msn' => 'testuser1',
-            'department' => 'Department of user 1',
-            'institution' => 'Institution of user 1',
-            'description' => 'This is a description for user 1',
-            'descriptionformat' => FORMAT_MOODLE,
-            'city' => 'Perth',
-            'url' => 'http://moodle.org',
-            'country' => 'au'
-            );
-        $user1 = self::getDataGenerator()->create_user($user1);
-        if (!empty($CFG->usetags)) {
-            require_once($CFG->dirroot . '/user/editlib.php');
-            require_once($CFG->dirroot . '/tag/lib.php');
-            $user1->interests = array('Cinema', 'Tennis', 'Dance', 'Guitar', 'Cooking');
-            useredit_update_interests($user1, $user1->interests);
-        }
-        $user2 = self::getDataGenerator()->create_user();
-
-        $context = context_system::instance();
-        $roleid = $this->assignUserCapability('moodle/user:viewdetails', $context->id);
-
-        // Call the external function.
-        $returnedusers = core_user_external::get_users_by_id(array(
-                    $USER->id, $user1->id, $user2->id));
-
-        // We need to execute the return values cleaning process to simulate the web service server.
-        $returnedusers = external_api::clean_returnvalue(core_user_external::get_users_by_id_returns(), $returnedusers);
-
-        // Check we retrieve the good total number of enrolled users + no error on capability.
-        $this->assertEquals(3, count($returnedusers));
-
-        // Do the same call as admin to receive all possible fields.
-        $this->setAdminUser();
-        $USER->email = "admin@example.com";
-
-        // Call the external function.
-        $returnedusers = core_user_external::get_users_by_id(array(
-                    $USER->id, $user1->id, $user2->id));
-
-        // We need to execute the return values cleaning process to simulate the web service server.
-        $returnedusers = external_api::clean_returnvalue(core_user_external::get_users_by_id_returns(), $returnedusers);
-
-        foreach($returnedusers as $enrolleduser) {
-            if ($enrolleduser['username'] == $user1->username) {
-                $this->assertEquals($user1->idnumber, $enrolleduser['idnumber']);
-                $this->assertEquals($user1->firstname, $enrolleduser['firstname']);
-                $this->assertEquals($user1->lastname, $enrolleduser['lastname']);
-                $this->assertEquals($user1->email, $enrolleduser['email']);
-                $this->assertEquals($user1->address, $enrolleduser['address']);
-                $this->assertEquals($user1->phone1, $enrolleduser['phone1']);
-                $this->assertEquals($user1->phone2, $enrolleduser['phone2']);
-                $this->assertEquals($user1->icq, $enrolleduser['icq']);
-                $this->assertEquals($user1->skype, $enrolleduser['skype']);
-                $this->assertEquals($user1->yahoo, $enrolleduser['yahoo']);
-                $this->assertEquals($user1->aim, $enrolleduser['aim']);
-                $this->assertEquals($user1->msn, $enrolleduser['msn']);
-                $this->assertEquals($user1->department, $enrolleduser['department']);
-                $this->assertEquals($user1->institution, $enrolleduser['institution']);
-                $this->assertEquals($user1->description, $enrolleduser['description']);
-                $this->assertEquals(FORMAT_HTML, $enrolleduser['descriptionformat']);
-                $this->assertEquals($user1->city, $enrolleduser['city']);
-                $this->assertEquals($user1->country, $enrolleduser['country']);
-                $this->assertEquals($user1->url, $enrolleduser['url']);
-                if (!empty($CFG->usetags)) {
-                    $this->assertEquals(implode(', ', $user1->interests), $enrolleduser['interests']);
-                }
-            }
-        }
-    }
-
-    /**
      * Test update_users
      */
     public function test_update_users() {
@@ -676,7 +582,7 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
             'email' => 'usertest1@example.com',
             'description' => 'This is a description for user 1',
             'city' => 'Perth',
-            'country' => 'au'
+            'country' => 'AU'
             );
 
         $context = context_system::instance();
@@ -780,7 +686,7 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
         $warnings = external_api::clean_returnvalue(core_user_external::add_user_device_returns(), $warnings);
         $this->assertCount(1, $warnings);
 
-        // Test update and existing device.
+        // Test update an existing device.
         $device['pushid'] = 'different than before';
         $warnings = core_user_external::add_user_device($device['appid'], $device['name'], $device['model'], $device['platform'],
                                                         $device['version'], $device['pushid'], $device['uuid']);
@@ -797,6 +703,61 @@ class core_user_externallib_testcase extends externallib_advanced_testcase {
                                                         $device['version'], $device['pushid'], $device['uuid']);
         $warnings = external_api::clean_returnvalue(core_user_external::add_user_device_returns(), $warnings);
         $this->assertEquals(2, $DB->count_records('user_devices'));
+    }
+
+    /**
+     * Test remove user device
+     */
+    public function test_remove_user_device() {
+        global $USER, $CFG, $DB;
+
+        $this->resetAfterTest(true);
+
+        $device = array(
+                'appid' => 'com.moodle.moodlemobile',
+                'name' => 'occam',
+                'model' => 'Nexus 4',
+                'platform' => 'Android',
+                'version' => '4.2.2',
+                'pushid' => 'apushdkasdfj4835',
+                'uuid' => 'ABCDE3723ksdfhasfaasef859'
+                );
+
+        // A device with the same properties except the appid and pushid.
+        $device2 = $device;
+        $device2['pushid'] = "0987654321";
+        $device2['appid'] = "other.app.com";
+
+        $this->setAdminUser();
+        // Create a user device using the external API function.
+        core_user_external::add_user_device($device['appid'], $device['name'], $device['model'], $device['platform'],
+                                            $device['version'], $device['pushid'], $device['uuid']);
+
+        // Create the same device but for a different app.
+        core_user_external::add_user_device($device2['appid'], $device2['name'], $device2['model'], $device2['platform'],
+                                            $device2['version'], $device2['pushid'], $device2['uuid']);
+
+        // Try to remove a device that does not exist.
+        $result = core_user_external::remove_user_device('1234567890');
+        $result = external_api::clean_returnvalue(core_user_external::remove_user_device_returns(), $result);
+        $this->assertFalse($result['removed']);
+        $this->assertCount(1, $result['warnings']);
+
+        // Try to remove a device that does not exist for an existing app.
+        $result = core_user_external::remove_user_device('1234567890', $device['appid']);
+        $result = external_api::clean_returnvalue(core_user_external::remove_user_device_returns(), $result);
+        $this->assertFalse($result['removed']);
+        $this->assertCount(1, $result['warnings']);
+
+        // Remove an existing device for an existing app. This will remove one of the two devices.
+        $result = core_user_external::remove_user_device($device['uuid'], $device['appid']);
+        $result = external_api::clean_returnvalue(core_user_external::remove_user_device_returns(), $result);
+        $this->assertTrue($result['removed']);
+
+        // Remove all the devices. This must remove the remaining device.
+        $result = core_user_external::remove_user_device($device['uuid']);
+        $result = external_api::clean_returnvalue(core_user_external::remove_user_device_returns(), $result);
+        $this->assertTrue($result['removed']);
     }
 
 }

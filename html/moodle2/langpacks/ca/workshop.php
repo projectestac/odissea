@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshop', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,7 +87,7 @@ $string['configexamplesmode'] = 'Mode d\'avaluació d\'exemples establert per om
 $string['configgrade'] = 'Qualificació màxima per omissió de les trameses en els tallers.';
 $string['configgradedecimals'] = 'Nombre de dígits que cal mostrar després del separador decimal quan es mostrin les qualificacions.';
 $string['configgradinggrade'] = 'Qualificació màxima per omissió de les avaluacions en els tallers.';
-$string['configmaxbytes'] = 'Mida de fitxer màxima per omissió en tots els tallers del lloc (subjecte als límits establerts per al curs i altres ajustaments locals)';
+$string['configmaxbytes'] = 'Mida de fitxer de la tramesa màxima per defecte a tots els tallers del lloc (subjecta als límits establerts per al curs i a altres paràmetres locals)';
 $string['configstrategy'] = 'Estratègia de qualificació per omissió en els tallers.';
 $string['createsubmission'] = 'Comenceu a editar la vostra tramesa';
 $string['daysago'] = 'Fa {$a} dies';
@@ -158,6 +158,8 @@ $string['gradeitemsubmission'] = '{$a->workshopname} (tramesa)';
 $string['gradeover'] = 'Rectifica la qualificació de la tramesa';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Informe de qualificacions del taller';
+$string['gradetopassgrading'] = 'Qualificació de la tasca d\'avaluació per aprovar';
+$string['gradetopasssubmission'] = 'Qualificació de la tramesa per aprovar';
 $string['gradinggrade'] = 'Qualificació de la tasca d\'avaluació';
 $string['gradinggradecalculated'] = 'Qualificació calculada per l\'avaluació';
 $string['gradinggrade_help'] = 'Aquest paràmetre especifica la qualificació màxima que es pot obtenir per la feina d\'avaluació de trameses.';
@@ -191,6 +193,7 @@ $string['nogradeyet'] = 'Encara sense qualificar';
 $string['nosubmissionfound'] = 'No s\'ha trobat cap tramesa per aquest usuari';
 $string['nosubmissions'] = 'Aquest taller encara no té trameses';
 $string['notassessed'] = 'No avaluat encara';
+$string['nothingfound'] = 'Res a mostrar';
 $string['nothingtoreview'] = 'No hi ha res per revisar';
 $string['notoverridden'] = 'No rectificada';
 $string['noworkshops'] = 'Aquest curs no té tallers';
@@ -198,7 +201,7 @@ $string['noyoursubmission'] = 'Encara no heu enviat la vostra feina';
 $string['nullgrade'] = '-';
 $string['overallfeedback'] = 'Retroalimentació global';
 $string['overallfeedbackfiles'] = 'Nombre màxim d\'adjuncions en la retroalimentació global';
-$string['overallfeedbackmaxbytes'] = 'Mida màxima de fitxer';
+$string['overallfeedbackmaxbytes'] = 'Mida màxima en total dels adjunts de retroalimentació';
 $string['overallfeedbackmode'] = 'Mode de retroalimentació global';
 $string['overallfeedbackmode_0'] = 'Inhabilitat';
 $string['overallfeedbackmode_1'] = 'Habilitat i opcional';
@@ -226,6 +229,7 @@ $string['receivedgrades'] = 'Qualificacions rebudes';
 $string['recentassessments'] = 'Avaluacions del taller:';
 $string['recentsubmissions'] = 'Trameses del taller:';
 $string['resetassessments'] = 'Esborra totes les avaluacions';
+$string['resetassessments_help'] = 'Podeu optar per eliminar les avaluacions acabades de fer sense afectar les trameses. Si les trameses es suprimeixen, les seves avaluacions es suprimiran de forma implícita i aquesta opció s\'ignorarà. Recordeu que això també inclou les avaluacions de les trameses d\'exemple.';
 $string['resetphase'] = 'Canvia a la fase de configuració';
 $string['resetphase_help'] = 'Si s\'habilita, tots els tallers es posaran a la fase de configuració inicial.';
 $string['resetsubmissions'] = 'Esborra totes les trameses';
@@ -262,11 +266,14 @@ Si activeu aquesta característica, es recomana configurar també el mètode d\'
 $string['submissiongrade'] = 'Qualificació de la tramesa';
 $string['submissiongrade_help'] = 'Aquest paràmetre especifica la qualificació màxima que es pot obtenir per la feina tramesa.';
 $string['submissiongradeof'] = 'Qualificació de la tramesa (de {$a})';
+$string['submissionlastmodified'] = 'Darrera modificada';
 $string['submissionsettings'] = 'Paràmetres de la tramesa';
+$string['submissionsreport'] = 'Informe de les tasques del taller';
 $string['submissionstart'] = 'Inici de les trameses des de';
 $string['submissionstartdatetime'] = 'Inici de les trameses:{$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (inici de les trameses)';
 $string['submissiontitle'] = 'Títol';
+$string['submittednotsubmitted'] = 'Tramesa ({$a->submitted}) / No tramesa ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Mètode d\'assignació de trameses';
 $string['subplugintype_workshopallocation_plural'] = 'Mètodes d\'assignació d\'enviaments';
 $string['subplugintype_workshopeval'] = 'Mètode d\'avaluació de qualificacions';
@@ -300,6 +307,8 @@ $string['usepeerassessment_help'] = 'Si s\'habilita, a un usuari se li podran as
 $string['userdatecreated'] = 'tramesa el <span>{$a}</span>';
 $string['userdatemodified'] = 'modificada el <span>{$a}</span>';
 $string['userplan'] = 'Planificador del taller';
+$string['userplanaccessibilitytitle'] = 'Línia temporal del taller, amb {$a} fases';
+$string['userplancurrentphase'] = 'Fase actual';
 $string['userplan_help'] = 'El planificador del taller mostra totes les fases de l\'activitat i llista les tasques de cada fase. La fase actual es destaca i les tasques completades es marquen amb un senyal.';
 $string['useselfassessment'] = 'Usa l\'autoavaluació';
 $string['useselfassessment_desc'] = 'Els estudiants poden avaluar les seves pròpies trameses';

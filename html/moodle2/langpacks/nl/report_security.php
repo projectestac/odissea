@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'report_security', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,6 +113,10 @@ $string['check_unsecuredataroot_error'] = 'Je dataroot-map <code>{$a}</code> sta
 $string['check_unsecuredataroot_name'] = 'Onveilige dataroot';
 $string['check_unsecuredataroot_ok'] = 'De dataroot-map mag niet toegankelijk zijn vanaf het internet.';
 $string['check_unsecuredataroot_warning'] = 'Je dataroot-map <code>{$a}</code> staat op de verkeerde plaats en kan toegankelijk zijn vanaf het internet!';
+$string['check_webcron_details'] = '<p>Web cron kan privé-gegevens van gebruikers tonen aan anonieme gebruikers. Daarom kun je best cron via CLI gebruiken of de cron-pagina beschermen met een wachtwoord.</p>';
+$string['check_webcron_name'] = 'Web cron';
+$string['check_webcron_ok'] = 'Anonieme gebruikers hebben geen toegang tot cron.';
+$string['check_webcron_warning'] = 'Anonieme gebruikers hebben toegang tot cron.';
 $string['configuration'] = 'Configuratie';
 $string['description'] = 'Beschrijving';
 $string['details'] = 'Details';

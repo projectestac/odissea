@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_flatfile', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['expiredaction_help'] = 'Select action to carry out when user enrolment 
 $string['filelockedmail'] = 'The text file you are using for file-based enrolments ({$a}) can not be deleted by the cron process.  This usually means the permissions are wrong on it.  Please fix the permissions so that Moodle can delete the file, otherwise it might be processed repeatedly.';
 $string['filelockedmailsubject'] = 'Important error: Enrolment file';
 $string['flatfile:manage'] = 'Manage user enrolments manually';
+$string['flatfilesync'] = 'Flat file enrolment sync';
 $string['flatfile:unenrol'] = 'Unenrol users from the course manually';
 $string['location'] = 'File location';
 $string['location_desc'] = 'Specify full path to the enrolment file. The file is automatically deleted after processing.';

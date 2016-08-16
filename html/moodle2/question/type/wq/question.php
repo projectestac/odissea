@@ -82,6 +82,16 @@ class qtype_wq_question extends question_with_responses {
             // We don't need to save this question instance in database because 
             // only the plotter image files were updated.
         }
+        
+        // On manual regrade, xml could change. We can't get xml from qt variable
+        // So we need to recompute variables
+        if ($step->get_state() instanceof question_state_complete) {            
+            $request = $builder->newVariablesRequest($this->join_all_text(), $this->wirisquestion, $this->wirisquestioninstance);
+            $response = $this->call_wiris_service($request);
+            $this->wirisquestioninstance->update($response);             
+            // Save the result.
+             $step->set_qt_var('_qi', $this->wirisquestioninstance->serialize());
+        }
     }
     
     public function get_question_summary() {

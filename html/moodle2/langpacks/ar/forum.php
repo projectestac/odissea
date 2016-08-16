@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'forum', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -192,7 +192,7 @@ $string['modulenameplural'] = 'المنتديات';
 $string['more'] = 'المزيد';
 $string['movedmarker'] = '(تم النقل)';
 $string['movethisdiscussionto'] = 'أنقل الهذا النقاش إلى';
-$string['namenews'] = 'منتدى الأخبار';
+$string['namenews'] = 'إعلانات';
 $string['namenews_help'] = 'منتدى الأخبار هو نوع خاص من المنتديات يستخدم للتعميمات، ويتم إنشاؤه آلياً عند إنشاء المقرر. يحوي كل مقرر منتدى وحيد من هذا النوع. فقط المدرسين والمدراء يمكنهم النشر في هذا المنتدى. الكتلة "آخر الأخبار" تعرض آخر النقاشات من هذا المنتدى.';
 $string['namesocial'] = 'منتدى اجتماعي';
 $string['nameteacher'] = 'منتدى المعلم';

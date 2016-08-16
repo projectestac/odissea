@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'rating', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,9 +52,9 @@ $string['noviewrate'] = 'Não tem permissão para ver avaliações';
 $string['rate'] = 'Avaliar';
 $string['ratepermissiondenied'] = 'Não tem permissão para avaliar';
 $string['rating'] = 'Avaliação';
-$string['ratinginvalid'] = 'A classificação não é válida';
+$string['ratinginvalid'] = 'A avaliação não é válida';
 $string['ratings'] = 'Avaliações';
 $string['ratingtime'] = 'Impedir a avaliação de termos submetidos fora deste intervalo de datas:';
 $string['rolewarning'] = 'Papéis com permissão para avaliar';
 $string['rolewarning_help'] = 'Para avaliar atividades, os papéis dos utilizadores têm de incluir a capacidade \'moodle/rating:rate\' e eventuais capacidades especificas do módulo. Os utilizadores com os seguintes papéis devem poder avaliar itens. A lista de papéis pode ser modificada, a partir do lonk Permissões no bloco Configurações.';
-$string['scaleselectionrequired'] = 'Quando selecionar um tipo de agregação de classificações, também deverá selecionar se vai usar uma escala ou definir uma pontuação máxima.';
+$string['scaleselectionrequired'] = 'Quando selecionar um tipo de agregação de avaliações, também deverá selecionar se vai usar uma escala ou definir uma pontuação máxima.';

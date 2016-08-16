@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,8 @@ $string['eventgroupcreated'] = 'Creato gruppo';
 $string['eventgroupdeleted'] = 'Eliminato gruppo';
 $string['eventgroupingcreated'] = 'Creato raggruppamento';
 $string['eventgroupingdeleted'] = 'Eliminato raggruppamento';
+$string['eventgroupinggroupassigned'] = 'Inserito gruppo nel raggruppamento';
+$string['eventgroupinggroupunassigned'] = 'Rimosso gruppo dal raggruppamento';
 $string['eventgroupingupdated'] = 'Aggiornato raggruppamento';
 $string['eventgroupmemberadded'] = 'Aggiunto membro del gruppo';
 $string['eventgroupmemberremoved'] = 'Rimosso membro del gruppo';
@@ -140,9 +142,12 @@ $string['importgroups_help'] = 'E\' possibile importare gruppi attraverso un fil
 * il primo record deve contenere i nomi dei campi che specificano il contenuto di ciascun campo
 * il campo groupname è obbligatorio
 * i campi description, enrolmentkey, picture, hidepicture sono facoltativi.';
+$string['includeonlyactiveenrol'] = 'Includi solo iscrizioni attive';
+$string['includeonlyactiveenrol_help'] = 'Consente di escludere dai gruppi gli utenti sospesi.';
 $string['javascriptrequired'] = 'Questa pagina richiede Javascript abilitato';
 $string['members'] = 'Membri per gruppo';
 $string['membersofselectedgroup'] = 'Membri di:';
+$string['mygroups'] = 'I miei gruppi';
 $string['namingscheme'] = 'Schema denominazione';
 $string['namingscheme_help'] = 'Il simbolo at (@) può essere utilizzato per creare gruppi con nomi che contengono lettere. Per esempio, Gruppo @ genererà i nomi Gruppo A, Gruppo B, Gruppo C, eccetera.
 
@@ -162,6 +167,7 @@ $string['nousersinrole'] = 'Non ci sono utenti disponibili nel ruolo selezionato
 $string['number'] = 'Numero gruppo/membri';
 $string['numgroups'] = 'Numero di gruppi';
 $string['nummembers'] = 'Membri per gruppo';
+$string['othergroups'] = 'Altri gruppi';
 $string['overview'] = 'Riepilogo';
 $string['potentialmembers'] = 'Membri potenziali: {$a}';
 $string['potentialmembs'] = 'Membri possibili';

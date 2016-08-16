@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Plugin di iscrizione disponibili';
 $string['addinstance'] = 'Aggiungi metodo';
+$string['addinstanceanother'] = 'Aggiungi metodo e creane un altro';
 $string['ajaxnext25'] = 'Successivi 25...';
 $string['ajaxoneuserfound'] = 'Trovato 1 utente';
 $string['ajaxxusersfound'] = 'Trovati {$a} utenti';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = 'Si è verificato un errore nel corso durante la c
 $string['errorenrolcohortusers'] = 'Si è verificato un errore durante l\'iscrizione nel corso dei membri del gruppo globale';
 $string['errorthresholdlow'] = 'La soglia di notifica deve essere di almeno 1 giorno';
 $string['errorwithbulkoperation'] = 'Si è verificato un errore durante la modifica in massa delle iscrizioni.';
+$string['eventenrolinstancecreated'] = 'Creata istanza metodo d\'iscrizione';
+$string['eventenrolinstancedeleted'] = 'Eliminata istanza metodo d\'iscrizione';
+$string['eventenrolinstanceupdated'] = 'Aggiornata istanza metodo d\'iscrizione';
 $string['eventuserenrolmentcreated'] = 'Iscritto utente al corso';
 $string['eventuserenrolmentdeleted'] = 'Disiscritto utente dal corso';
 $string['eventuserenrolmentupdated'] = 'Aggiornata iscrizione utente';
@@ -92,6 +96,7 @@ $string['extremovedsuspendnoroles'] = 'Disabilita le iscrizioni al corso e rimuo
 $string['extremovedunenrol'] = 'Disiscrivi gli utenti dal corso';
 $string['finishenrollingusers'] = 'Termina iscrizione utenti';
 $string['foundxcohorts'] = 'Trovati {$a} gruppi globali';
+$string['instanceadded'] = 'Metodo aggiunto';
 $string['instanceeditselfwarning'] = 'Attenzione:';
 $string['instanceeditselfwarningtext'] = 'Sei iscritto al corso tramite questo metodo di iscrizione, eventuali modifiche possono avere impatti sul tuo accesso al corso.';
 $string['invalidenrolinstance'] = 'L\'istanza dell\'iscrizione non è valida';
@@ -101,6 +106,7 @@ $string['manageinstance'] = 'Gestisci';
 $string['migratetomanual'] = 'Migra a iscrizione manuale';
 $string['nochange'] = 'Nessuna modifica';
 $string['noexistingparticipants'] = 'Non ci sono partecipanti';
+$string['nogroup'] = 'Nessun gruppo';
 $string['noguestaccess'] = 'Gli ospiti non possono entrare in questo corso, per favore autenticati.';
 $string['none'] = 'Nessuno';
 $string['notenrollable'] = 'Non puoi iscriverti al corso.';
@@ -113,6 +119,7 @@ $string['periodend'] = 'fino al {$a}';
 $string['periodnone'] = 'iscritto {$a}';
 $string['periodstart'] = 'a partire da {$a}';
 $string['periodstartend'] = 'da {$a->start} a {$a->end}';
+$string['proceedtocourse'] = 'Vai al contenuto del corso';
 $string['recovergrades'] = 'Recupera, ove possibile, i voti precedenti dell\'utente';
 $string['rolefromcategory'] = '{$a->role} (Ereditato dalla categoria di corsi)';
 $string['rolefrommetacourse'] = '{$a->role} (Ereditato dal corso genitore)';

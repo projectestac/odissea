@@ -1,4 +1,4 @@
-@ou @ou_vle @qtype @qtype_gapselect
+@qtype @qtype_gapselect
 Feature: Import and export select missing words questions
   As a teacher
   In order to reuse my select missing words questions
@@ -17,7 +17,7 @@ Feature: Import and export select missing words questions
     And I log in as "teacher1"
     And I follow "Course 1"
 
-  @javascript
+  @javascript @_file_upload
   Scenario: Import and export select missing words questions
     # Import sample file.
     When I navigate to "Import" node in "Course administration > Question bank"
@@ -34,7 +34,7 @@ Feature: Import and export select missing words questions
     When I navigate to "Export" node in "Course administration > Question bank"
     And I set the field "id_format_xml" to "1"
     And I press "Export questions to file"
-    Then following "click here" should download between "1600" and "1650" bytes
+    Then following "click here" should download between "1550" and "1650" bytes
     # If the download step is the last in the scenario then we can sometimes run
     # into the situation where the download page causes a http redirect but behat
     # has already conducted its reset (generating an error). By putting a logout

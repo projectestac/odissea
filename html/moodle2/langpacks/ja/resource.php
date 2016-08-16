@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['framesize'] = 'フレーム高';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
+$string['modifieddate'] = '修正 {$a}';
 $string['modulename'] = 'ファイル';
 $string['modulename_help'] = 'ファイルモジュールにおいて、教師はコースリソースとしてファイルを提供することができます。可能な場合、ファイルはコースインターフェース内に表示されます。そうでない場合、学生にファイルのダウンロードが促されます。例えばHTMLページにイメージまたはフラッシュオブジェクトを埋め込むことができるようにファイルモジュールではファイルの組み込みがサポートされます。
 
@@ -90,10 +91,19 @@ $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの下にページ説明を表示しますか? 有効にしてもいくつかの表示タイプでは説明を表示することができません。';
 $string['resource:addinstance'] = '新しいリソースを追加する';
 $string['resourcecontent'] = 'ファイルおよびサブフォルダ';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'リソースをエクスポートする';
 $string['resource:view'] = 'リソースを表示する';
+$string['search:activity'] = 'ファイル';
 $string['selectmainfile'] = 'ファイル名の横にあるアイコンをクリックすることでメインファイルを選択してください。';
+$string['showdate'] = 'アップロード/修正日時を表示する';
+$string['showdate_desc'] = 'コースページにアップロード/修正日時を表示しますか?';
+$string['showdate_help'] = 'ファイルのリンクの横にアップロード/修正日時を表示します。
+
+このリソースに複数ファイルが存在する場合、最初のファイルのアップロード/修正日時が表示されます。';
 $string['showsize'] = 'サイズを表示する';
 $string['showsize_desc'] = 'コースページにファイルサイズを表示しますか?';
 $string['showsize_help'] = 'ファイルへのリンクの横に「3.1 MB」のようにファイルサイズが表示されます。このリソースに複数ファイルが含まれている場合、ファイルの合計サイズが表示されます。';
@@ -104,3 +114,4 @@ $string['showtype_help'] = '「Wordドキュメント」のようなファイル
 このリソースに複数ファイルが含まれている場合、最初のファイルタイプが表示されます。
 
 ファイルタイプがシステムに未知の場合、表示されません。';
+$string['uploadeddate'] = 'アップロード {$a}';

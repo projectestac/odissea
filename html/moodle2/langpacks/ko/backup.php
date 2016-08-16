@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -114,7 +114,6 @@ $string['errorfilenamerequired'] = '백업에 적합한 파일명을 입력해�
 $string['errorinvalidformat'] = '알수 없는 백업 포맷';
 $string['errorinvalidformatinfo'] = '선택된 파일은 유효한 무들 백업파일이 아니어서 복구할 수 없습니다.';
 $string['errorminbackup20version'] = '이 백업 파일은 무들 개발판 백업 ({$a->backup}) 기능에 의해 만들어졌습니다. 적어도 {$a->min} 가 필요합니다. 복구할 수 없습니다.';
-$string['errorrestorefrontpage'] = '시작 페이지의 복구는 허용되지 않음';
 $string['executionsuccess'] = '백업 파일이 성공적으로 만들어졌습니다.';
 $string['filealiasesrestorefailures'] = '별칭 복구 실패';
 $string['filealiasesrestorefailures_help'] = '얼라이어스란 외부 저장소에 저장된 파일을 포함한, 여타 파일을 심볼릭 링크한 것이다. 간혹, 다른 사이트의 백업 파일을 복구 한다던가, 참조된 파일이 존재하지 않는 경우에, 무들은 얼라이어스를 복구할 수 없다.</ br>복구 실패에 대한 좀 더 자세한 내용은 복구 기록 파일을 찾아보면 된다.';

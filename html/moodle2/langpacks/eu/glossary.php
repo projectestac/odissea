@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,6 +85,7 @@ $string['cnfshowgroup'] = 'Zehaztu taldea erakutsi ala ez';
 $string['cnfsortkey'] = 'Aukeratu berezko antolaketa-gakoa';
 $string['cnfsortorder'] = 'Aukeratu berezko ordena';
 $string['cnfstudentcanpost'] = 'Erabaki berez ikasleek sarrerak gainera ditzaketen ala ez';
+$string['cnftabs'] = 'Aukeratu glosategi honetan ikusgai dauden fitxak';
 $string['comment'] = 'Iruzkina';
 $string['commentdeleted'] = 'Iruzkina ezabatu da.';
 $string['comments'] = 'Iruzkinak';
@@ -274,6 +275,8 @@ $string['rssarticles_help'] = 'Honekin RSS jarioan sartu beharreko artikulu-kopu
 $string['rsssubscriberss'] = 'Erakutsi RSS jarioa \'{$a}\' kontzeptuetarako';
 $string['rsstype'] = 'Jarduera honetarako RSS jarioa';
 $string['rsstype_help'] = 'Jarduera honetan RSS jarioak gaitzeko, aukeratu kontzeptuak egilea eta guzti edo egilerik gabe, jarioan gaineratzeko.';
+$string['search:activity'] = 'Glosategia - jardueraren informazioa';
+$string['search:entry'] = 'Glosategia - sarrerak';
 $string['searchindefinition'] = 'Bilatu testu osoan';
 $string['secondaryglossary'] = 'Bigarren mailako glosategia';
 $string['showall'] = 'Erakutsi "GUZTIAK" esteka';
@@ -292,6 +295,7 @@ $string['studentcanpost'] = 'Ikasleek sarrerak gehitzea daukate';
 $string['totalentries'] = 'Sarrerak guztira';
 $string['usedynalink'] = 'Estekatu automatikoki glosategiko sarrerak';
 $string['usedynalink_help'] = 'Glosategirako esteka automatikoa kudeatzaileak gaitu badu eta ezarpen hau gaituta badago, "Gehitu sarrera berria" aukerari esker sarrerak automatikoki estekatuko dira kontzeptuen hitz  eta esaldiekin, ikastaroan zehar agertzen direnean.';
+$string['visibletabs'] = 'Ikusgai dauden fitxak';
 $string['waitingapproval'] = 'Onarpenaren zain';
 $string['warningstudentcapost'] = '(Bakarrik glosategi nagusia ez bada)';
 $string['withauthor'] = 'Kontzeptuak eta egilea';

@@ -125,6 +125,9 @@ class com_wiris_quizzes_impl_HTML {
 	public function openUl($id, $className) {
 		$this->open("ul", new _hx_array(array(new _hx_array(array("id", $id)), new _hx_array(array("class", $className)))));
 	}
+	public function imageClass($src, $title, $className) {
+		$this->openclose("img", new _hx_array(array(new _hx_array(array("src", $src)), new _hx_array(array("alt", $title)), new _hx_array(array("title", $title)), new _hx_array(array("class", $className)))));
+	}
 	public function image($id, $src, $title, $style) {
 		$this->openclose("img", new _hx_array(array(new _hx_array(array("id", $id)), new _hx_array(array("src", $src)), new _hx_array(array("alt", $title)), new _hx_array(array("title", $title)), new _hx_array(array("style", $style)))));
 	}

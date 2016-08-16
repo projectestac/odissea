@@ -4,6 +4,7 @@ Feature: Adding blog tag block
   As a user
   I need to be able to use block blog tag
 
+  @javascript
   Scenario: Adding block blog tag to the course
     Given the following "users" exist:
       | username | firstname | lastname | email |
@@ -13,8 +14,8 @@ Feature: Adding blog tag block
       | fullname  | shortname |
       | Course 1  | c1        |
     And the following "tags" exist:
-      | name         | tagtype  |
-      | Neverusedtag | official |
+      | name         | isstandard  |
+      | Neverusedtag | 1           |
     And the following "course enrolments" exist:
       | user     | course | role           |
       | teacher1 | c1     | editingteacher |
@@ -29,7 +30,7 @@ Feature: Adding blog tag block
     And I set the following fields to these values:
       | Entry title                                 | Blog post from teacher    |
       | Blog entry body                             | Teacher blog post content |
-      | Other tags (enter tags separated by commas) | Cats, dogs                |
+      | Tags                                        | Cats, dogs                 |
     And I press "Save changes"
     And I log out
     And I log in as "student1"
@@ -39,7 +40,7 @@ Feature: Adding blog tag block
     And I set the following fields to these values:
       | Entry title                                 | Blog post from student    |
       | Blog entry body                             | Student blog post content |
-      | Other tags (enter tags separated by commas) | DOGS, mice                |
+      | Tags                                        | dogs, mice                 |
     And I press "Save changes"
     And I follow "c1"
     Then I should see "Cats" in the "Blog tags" "block"

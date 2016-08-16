@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,8 +31,9 @@ $string['addcomment'] = 'Adicionar comentário';
 $string['addentries'] = 'Adicionar registos';
 $string['addtemplate'] = 'Adicionar registo';
 $string['advancedsearch'] = 'Pesquisa avançada';
-$string['allowcomments'] = 'Permitir comentários aos termos';
+$string['allowcomments'] = 'Permitir comentários aos registos';
 $string['alttext'] = 'Texto alternativo';
+$string['approvalstatus'] = 'Estado da aprovação';
 $string['approve'] = 'Aprovar';
 $string['approved'] = 'Aprovado';
 $string['areacontent'] = 'Campos';
@@ -51,6 +52,7 @@ Os marcadores para os campos são definidos no formato <b>[[nomedocampo]]</b>. T
 
 Apenas os marcadores que estão na lista <b>Marcadores disponíveis</b> podem ser usados no modelo atual.';
 $string['availabletodate'] = 'Disponível até';
+$string['availabletodatevalidation'] = '"Disponível até" não pode ser anterior a "Disponível a partir de".';
 $string['blank'] = 'Vazio';
 $string['buttons'] = 'Botões';
 $string['bynameondate'] = 'por  {$a->name} - {$a->date}';
@@ -131,6 +133,7 @@ $string['entrieslefttoaddtoview'] = 'Tem que adicionar mais {$a->entrieslefttovi
 $string['entry'] = 'Registo';
 $string['entrysaved'] = 'O seu registo foi gravado';
 $string['errormustbeteacher'] = 'Apenas os professores podem usar esta página!';
+$string['errormustsupplyvalue'] = 'Indique aqui um valor.';
 $string['errorpresetexists'] = 'Já existe um protótipo com o nome indicado';
 $string['eventfieldcreated'] = 'Campo criado';
 $string['eventfielddeleted'] = 'Campo eliminado';
@@ -207,6 +210,7 @@ $string['invalidurl'] = 'O URL que introduziu não é válido';
 $string['jstemplate'] = 'Javascript';
 $string['latitude'] = 'Latitude';
 $string['latlong'] = 'Latitude/Longitude';
+$string['latlongboth'] = 'É necessário a latitude e a longitude.';
 $string['latlongdownloadallhint'] = 'Hiperligação para descarregar todos os registos como KML';
 $string['latlongkmllabelling'] = 'Como classificar itens em ficheiros KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Mapas externos a mostrar';
@@ -214,10 +218,12 @@ $string['latlongotherfields'] = 'Outros campos';
 $string['list'] = 'Ver lista';
 $string['listtemplate'] = 'Lista';
 $string['longitude'] = 'Longitude';
+$string['manageapproved'] = 'Permitir editar os registos já aprovados';
+$string['manageapproved_help'] = 'Se desativar esta opção, os registos aprovados deixam de poder ser editados ou apagados pelo utilizador que os criou. Esta configuração não é aplicada a não ser que ative a opção "Requer aprovação".';
 $string['mapexistingfield'] = 'Mapear para {$a}';
 $string['mapnewfield'] = 'Criar novo campo';
 $string['mappingwarning'] = 'Todos os campos que não forem mapeados para novos campos serão apagados e a sua informação removida.';
-$string['maxentries'] = 'Número máximo de entradas';
+$string['maxentries'] = 'Número máximo de registos';
 $string['maxentries_help'] = 'Número máximo de registos que um utilizador pode submeter nesta atividade.';
 $string['maxsize'] = 'Tamanho máximo';
 $string['menu'] = 'Menu';
@@ -303,12 +309,14 @@ $string['recordsnotsaved'] = 'Não foram gravados registos. Verifique o formato 
 $string['recordssaved'] = 'os registos foram gravados';
 $string['requireapproval'] = 'Requer aprovação';
 $string['requireapproval_help'] = 'Se ativar esta opção os registos necessitam de aprovação do professor antes de ficarem visíveis para todos os utilizadores.';
+$string['required'] = 'Obrigatório';
 $string['requiredentries'] = 'Registos requeridos para conclusão';
 $string['requiredentries_help'] = 'Número de registos que o aluno tem que submeter antes que a atividade seja considerada completa.';
 $string['requiredentriestoview'] = 'Registos requeridos antes de ser permitida a visualização';
 $string['requiredentriestoview_help'] = 'Número de registos que o aluno tem que submeter antes de poder ver os registos dos outros participantes.
 
 Nota: Se for necessário submeter registos antes de poder ver a base de dados, o filtro <b>hiperligações automáticas à base de dados</b> tem que ser desativado pois este filtro não consegue determinar se um utilizador já submeteu o número de registos requerido.';
+$string['requiredfield'] = 'Campo obrigatório';
 $string['resetsettings'] = 'Reiniciar filtros';
 $string['resettemplate'] = 'Reiniciar modelo';
 $string['resizingimages'] = 'A redimensionar imagens...';
@@ -325,6 +333,7 @@ $string['savesettings'] = 'Gravar configurações';
 $string['savesuccess'] = 'Gravado com sucesso. Este protótipo será disponibilizado em todo o site.';
 $string['savetemplate'] = 'Gravar modelo';
 $string['search'] = 'Pesquisar';
+$string['search:activity'] = 'Base de dados - informações da atividade';
 $string['selectedrequired'] = 'Todos os selecionados são obrigatórios';
 $string['showall'] = 'Mostrar todos os registos';
 $string['single'] = 'Ver registo';
@@ -361,4 +370,5 @@ $string['usestandard'] = 'Usar um protótipo';
 $string['usestandard_help'] = 'Para criar a base de dados a partir de protótipo, selecione um da lista. (Se adicionou um protótipo através da função <b>Gravar como protótipo</b> pode remover o mesmo em qualquer momento).';
 $string['viewfromdate'] = 'Visível a partir de';
 $string['viewtodate'] = 'Visível até';
+$string['viewtodatevalidation'] = '"Apenas de leitura até" não pode ser anterior a "Apenas de leitura a partir de".';
 $string['wrongdataid'] = 'O ID dos dados fornecido é inválido';

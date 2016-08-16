@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'survey', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,6 +200,7 @@ $string['downloadinfo'] = 'Il vous est possible de télécharger l\'ensemble des
 $string['downloadresults'] = 'Télécharger les résultats';
 $string['downloadtext'] = 'Télécharger les données dans un format texte';
 $string['editingasurvey'] = 'Modification d\'une consultation';
+$string['errorunabletosavenotes'] = 'Une erreur est survenue lors de l\'enregistrement de vos annotations.';
 $string['eventreportdownloaded'] = 'Rapport de consultation téléchargé';
 $string['eventreportviewed'] = 'Rapport de consultation consulté';
 $string['eventresponsesubmitted'] = 'Réponse à la consultation envoyée';
@@ -240,6 +241,7 @@ $string['savednotes'] = 'Vos remarques ont été enregistrées';
 $string['scaleagree5'] = 'Pas du tout d\'accord,Pas tout à fait d\'accord,Neutre,Assez d\'accord,Tout à fait d\'accord';
 $string['scales'] = 'Barèmes';
 $string['scaletimes5'] = 'Presque jamais,Rarement,Parfois,Souvent,Presque toujours';
+$string['search:activity'] = 'Consultation – information sur l\'activité';
 $string['seemoredetail'] = 'Cliquer ici pour avoir plus de détail';
 $string['selectedquestions'] = 'Questions choisies dans un barème, tous les étudiants';
 $string['summary'] = 'Résumé';

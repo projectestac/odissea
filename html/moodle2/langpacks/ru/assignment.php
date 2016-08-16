@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,10 +40,6 @@ $string['modulenameplural'] = 'Задания 2.2 (Отключены)';
 $string['page-mod-assignment-submissions'] = 'Страница представления модуля «Задание»';
 $string['page-mod-assignment-view'] = 'Главная страница модуля «Задание»';
 $string['page-mod-assignment-x'] = 'Любая страница модуля «Задание»';
-$string['pendingupgrades_message_content'] = 'При обновлении до Moodle 2.7 устаревший элемент Задание 2.2 был отключен.
-Резервные копии наследуемого Задания 2.2 можно легко восстановить в новом элементе Задание. Все оставшиеся экземпляры наследуемого Задания 2.2 необходимо обновить с помощью использования средства обновления {$a->docsurl}. На этом сайте есть экземпляры наследуемого Задания 2.2 ({$a->count}), которые требуют обновления. Пользователи не смогут получить доступ к содержимому этих элементов, пока они не будут обновлены.';
-$string['pendingupgrades_message_small'] = 'Этот плагин был отключен. Все оставшиеся задания должны быть обновлены до нового модуля «Задание» с помощью использования средства обновления.';
-$string['pendingupgrades_message_subject'] = 'Важная информация относительно Задания 2.2';
 $string['pluginadministration'] = 'Управление отключенным Заданием 2.2';
 $string['pluginname'] = 'Задание 2.2 (Отключено)';
 $string['upgradenotification'] = 'Этот элемент курса основан на старом модуле «Задание».';

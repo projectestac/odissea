@@ -21,6 +21,11 @@ body{
     scrollbar-arrow-color: #333;
 }
 
+i > img {
+	display: none;
+	visibility: hidden;
+}
+
 ::-webkit-scrollbar {
   background-color: #DDD;
 }
@@ -472,7 +477,7 @@ h3{
 
 #page-footer-top .social-icons img,
 #page-footer-top .social-icons i{
-	margin-left: 3px;
+	margin-left: 5px;
 	margin-bottom: 3px;
 	height: 32px;
     width: 32px;
@@ -480,6 +485,7 @@ h3{
     font-size: 20px;
     color: white;
     vertical-align: middle;
+    border-radius: 60px;
 }
 
 #page-footer-top .social-icons  i.fa-globe{
@@ -556,6 +562,47 @@ h3{
 	color: white;
 }
 
+#page-footer-top li{
+	list-style: none;
+	display: inline-block;
+}
+
+#page-footer-top li.lang {
+	margin-left: 5px;
+	margin-bottom: 3px;
+	height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    color: white;
+    vertical-align: middle;
+    border-radius: 60px;
+	background-color: #999;
+	text-decoration: none;
+	font-family: arial, helvetica, clean, sans-serif;
+}
+
+#page-footer-top li.lang a {
+	text-decoration: none;
+}
+
+#page-footer-top li.current-lang {
+	background-color: #fff;
+	color: [[setting:color2]];
+	font-weight: bolder;
+}
+
+#page-footer-top li.lang:hover,
+#page-footer-top li.lang a:hover {
+	background-color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#page-footer-top li.current-lang:hover {
+	background-color: #fff;
+	cursor: default;
+}
 
 #page-footer-top a:hover{
 	text-decoration: none;
@@ -566,6 +613,30 @@ h3{
 	margin: 8px 0;
 }
 
+.back-to-top i {
+    opacity: 0.3;
+    display: block;
+    background-color: #333333;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back-to-top i {
+    font-size: 32px;
+    color: white;
+}
+
+
 #page{
     padding: 8px 30px;
 }
@@ -574,7 +645,7 @@ h3{
 	margin-right: 5px;
 }
 
-.img-circle.userpic {
+.img-rounded.userpic {
 	border: 1px solid #DDD;
 }
 
@@ -756,6 +827,10 @@ table.flexible tbody tr.selectedrow:hover>th,
 table#modules tbody tr.selectedrow:hover>th,
 table#permissions tbody tr.selectedrow:hover>th {
 	background-color: #ffd;
+}
+
+.path-mod-forum :target ~ .forumpost:before {
+    background: [[setting:color2]];;
 }
 
 .calendar-event-panel .yui3-overlay-content h2.eventtitle{

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_myprofile', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,6 @@ $string['display_skype'] = 'Presentar Skype';
 $string['display_un'] = 'Presentar nome';
 $string['display_yahoo'] = 'Presentar Yahoo';
 $string['myprofile:addinstance'] = 'Engadir un novo identificador no bloque de usuario';
-$string['myprofile:myaddinstance'] = 'Engadir un novo identificador no bloque Área persoal';
+$string['myprofile:myaddinstance'] = 'Engadir un novo identificador no bloque Páxina de inicio';
 $string['myprofile_settings'] = 'Información visíbel do usuario';
 $string['pluginname'] = 'Usuario con sesión activa';

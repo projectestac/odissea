@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio_mahara', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['mnet_nofilecontents'] = 'S\'ha trobat el fitxer en l\'objecte de transf
 $string['mnet_noid'] = 'No s\'ha pogut trobar el registre de la transferència corresponent a aquest testimoni';
 $string['mnet_notoken'] = 'No s\'ha pogut trobar el testimoni corresponent a aquesta  transferència';
 $string['mnet_wronghost'] = 'El servidor remot no correspon al registre de tranferència d\'aquest token';
-$string['pf_description'] = 'Permet que els usuaris insereixin contingut de Moodle en aquest servidor.<br />Subscriviu <b>i</b> publiqueu aquest servei per permetre que els usuaris autenticats del vostre lloc insereixin contingut a {$a}<br /><ul><li><em>Dependència</em>: heu de <strong>publicar</strong> també el servei SSO (proveïdor d\'identitats) per a {$a}.</li><li><em>Dependència</em>: heu de <strong>subscriure</strong> també el servei SSO (proveïdor de servei) a {$a}</li><li><em>Dependència</em>: heu d\'activar també el connector d\'autenticació MNet.</li></ul></br />';
+$string['pf_description'] = 'Permet els usuaris inserir contingut de Moodle en aquest servidor<br />Subscriviu <b>i</b> publiqueu aquest servei per permetre els usuaris autenticats del vostre lloc d\'inserir contingut en {$a}<br /><ul><li><em>Dependència</em>: heu de <strong>publicar</strong> també el servei SSO (Proveïdor d\'identitats) per a {$a}.</li><li><em>Dependència</em>: heu de <strong>subscriure</strong> també el servei SSO (Proveïdor de servei) en {$a}</li><li><em>Dependència</em>: heu d\'activar també el connector d\'autenticació MNet.</li></ul></br />';
 $string['pf_name'] = 'Serveis de portafolis';
 $string['pluginname'] = 'Mahara ePortfolio';
 $string['senddisallowed'] = 'No es poden transferir fitxers a Mahara en aquest moment';

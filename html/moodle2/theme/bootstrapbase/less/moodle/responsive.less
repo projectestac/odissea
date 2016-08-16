@@ -14,6 +14,21 @@
             float: right;
         }
     }
+
+}
+
+@media (min-width: (@navbarCollapseDesktopWidth) ) {
+
+    a[id]:empty::before,
+    a[name]:empty::before {
+        display: inline-block;
+        position: relative;
+        content: '';
+        padding-top: @navbarHeight;
+        margin-top: -@navbarHeight;
+        vertical-align: top;
+    }
+
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
@@ -336,7 +351,7 @@
 }
 @media (max-width : 767px) {
   .row-fluid .desktop-first-column {
-      clear: right;
+      clear: both;
   }
 }
 // Forms
@@ -429,17 +444,19 @@
         .nav > li > a:focus,
         .dropdown-menu a:hover,
         .dropdown-menu a:focus,
-        .dropdown-submenu a:focus,
         .dropdown-submenu a:hover,
+        .dropdown-submenu a:focus,
         .dropdown-submenu a:active,
         .dropdown-menu > li > a:hover,
         .dropdown-menu > li > a:focus,
+        .dropdown-submenu:hover > a,
+        .dropdown-submenu:focus > a
         {
             background-image: none;
             color: @grayDark;
         }
     }
-    .nav-collapse.active {
+    .nav-collapse.in {
         height: auto;
         .usermenu .moodle-actionmenu[data-enhanced] {
             .toggle-display {
@@ -473,7 +490,7 @@
     }
 
     .navbar {
-        .nav-collapse.active {
+        .nav-collapse.in {
             border-top: 1px solid @navbarBorder;
             &.pull-left,
             &.pull-right {
@@ -495,7 +512,8 @@
                 }
             }
 
-            .nav, .nav .dropdown-menu {
+            .nav,
+            .nav .dropdown-menu {
                 .dropdown-submenu {
                     .dropdown-toggle {
                         &:after {
@@ -545,7 +563,7 @@
     }
 
     .navbar-inverse {
-        .nav-collapse.active {
+        .nav-collapse.in {
             border-top-color: @navbarInverseBorder;
             .nav,
             .nav .dropdown-menu {
@@ -610,7 +628,7 @@
 
     .dir-rtl {
         .navbar {
-            .nav-collapse.active {
+            .nav-collapse.in {
                 > .nav {
                     margin: 0;
                     > li > a {

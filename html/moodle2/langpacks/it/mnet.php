@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'mnet', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -194,7 +194,8 @@ $string['registerhostson'] = 'La registrazione di qualsiasi host è <b>attiva</b
 $string['remotecourses'] = 'Corsi remoti';
 $string['remotehost'] = 'Host remoto';
 $string['remotehosts'] = 'Host remoti';
-$string['remoteuserinfo'] = 'Il profilo utente remoto {$a->remotetype} è stato ottenuto da <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuser'] = 'Utente remoto {$a->remotetype}';
+$string['remoteuserinfo'] = 'Il profilo utente remoto è stato ottenuto da <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'Il networking richiede l\'estensione OpenSSL';
 $string['restore'] = 'Ripristina';
 $string['returnvalue'] = 'Valore di ritorno';
@@ -217,6 +218,12 @@ $string['showlocal'] = 'Visualizza utenti locali';
 $string['showremote'] = 'Visualizza utenti remoti';
 $string['ssl_acl_allow'] = 'SSO ACL: Autorizza l\'utente \'{$a->user}\' proveniente da \'{$a->host}\'';
 $string['ssl_acl_deny'] = 'SSO ACL: Rifiuta l\'utente \'{$a->user}\' proveniente da \'{$a->host}\'';
+$string['sslverification'] = 'Verifica SSL';
+$string['sslverification_help'] = 'Imposta il livello di sicurezza da usare durante le connessioni ad un peer in HTTPS.
+
+* Nessuno: nessun livello di sicurezza
+* Verifica solo host: valida il dominio corrispondente al certificato SSL
+* Verifica host e peer (raccomandato): valida il dominio e chi ha rilasciato il certificato SSL';
 $string['ssoaccesscontrol'] = 'Controllo accessi SSO';
 $string['ssoacldescr'] = 'Utilizza queste impostazioni per conferire/negare il privilegio di accesso a specifici utenti provenienti da host remoti MNet. E\' utile quando si offrono servizi SSO a utenti remoti. Se vuoi gestire il privilegio degli utenti <em>locali</em> ad accedere ad altri host remoti MNet, devi modificare i ruoli di sistema dando privilegio <em>mnetlogintoremote</em>.';
 $string['ssoaclneeds'] = 'Per questa funzionalità è necessario che siano attivi il Networking e il plugn di autenticazione MNet.';
@@ -243,6 +250,8 @@ $string['userchangepasswordlink'] = '</br>Puoi cambiare la tua password presso i
 $string['usernotfullysetup'] = 'Il tuo profilo utente non è completo. Dovresti <a href="{$a}">ritornare dal tuo provider</a> ed assicurati che il tuo profilo sia completo. Per completare l\'operazione potrà essere necessario autenticarsi nuovamente.';
 $string['usersareonline'] = 'Attenzione: {$a} utenti da quel server sono attualmente collegati nel tuo sito.';
 $string['validated_by'] = 'E\' convalidato dal network:  <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Verifica host e peer';
+$string['verifyhostonly'] = 'Verifica solo host';
 $string['verifysignature-error'] = 'La verifica della firma non ha funzionato. Si è verificato un errore.';
 $string['verifysignature-invalid'] = 'La verifica della firma non ha funzionato. Sembra che questo oggetto non non sia stato firmato da te.';
 $string['version'] = 'Versione';

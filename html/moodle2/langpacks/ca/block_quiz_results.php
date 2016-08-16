@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_quiz_results', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,11 +43,11 @@ $string['config_show_best'] = 'Quantes qualificacions de les més altes s\'hauri
 $string['config_show_worst'] = 'Quantes qualificacions de les més baixes s\'haurien de mostrar (0 per inhabilitar)?';
 $string['configuredtoshownothing'] = 'Actualment, la configuració d\'aquest bloc no permet mostrar cap resultat. És possible que vulgueu configurar-ho o amagar-ho.';
 $string['config_use_groups'] = 'Mostra els grups en lloc dels estudiants (només si l\'activitat admet grups)?';
-$string['error_emptyquizid'] = 'Hi ha un error en aquest bloc: us cal seleccionar de quin qüestionari us cal mostrar els resultats.';
+$string['error_emptyquizid'] = 'Configureu aquest bloc i escolliu de quin qüestionari cal mostrar els resultats.';
 $string['error_emptyquizrecord'] = 'Hi ha un error en aquest bloc: el qüestionari seleccionat no existeix a la base de dades.';
 $string['error_nogroupsexist'] = 'Hi ha un error en aquest bloc:
 està configurat per mostrar qualificacions en mode de grup, però no heu definit cap grup.';
-$string['pluginname'] = 'Resultats del qüestionari';
+$string['pluginname'] = 'Resultats del qüestionari (desactivat)';
 $string['quiz_results:addinstance'] = 'Afegir un bloc nou de resultats del qüestionari';
 $string['worstgrade'] = 'La nota més baixa:';
 $string['worstgrades'] = 'Les {$a} notes més baixes:';

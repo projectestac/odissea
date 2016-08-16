@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignsubmission_file', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['enabled_help'] = 'Si ce réglage est activé, les participants pourront
 $string['eventassessableuploaded'] = 'Fichier déposé';
 $string['file'] = 'Remises de fichiers';
 $string['maxbytes'] = 'Taille maximale des fichiers';
+$string['maxfiles'] = 'Nombre maximal de fichiers par remise';
+$string['maxfiles_help'] = 'Si la remise de fichiers est activée, chaque devoir peut être configuré de sorte à accepter au plus ce nombre de fichiers par remise.';
 $string['maxfilessubmission'] = 'Nombre maximum de fichiers à remettre';
 $string['maxfilessubmission_help'] = 'Si la remise de fichiers est activée, chaque participants pourra déposer au maximum ce nombre de fichiers pour son travail.';
 $string['maximumsubmissionsize'] = 'Taille maximale des fichiers remis';

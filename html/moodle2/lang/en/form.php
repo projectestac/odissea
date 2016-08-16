@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,9 +17,10 @@
 /**
  * Strings for component 'form', language 'en', branch 'MOODLE_20_STABLE'
  *
- * @package   form
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    core
+ * @subpackage form
+ * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['addfields'] = 'Add {$a} field(s) to form';
@@ -49,6 +49,8 @@ $string['month'] = 'Month';
 $string['mustbeoverriden'] = 'Abstract form_definition() method in class {$a} must be overridden, please fix the code.';
 $string['nomethodforaddinghelpbutton'] = 'There is no method for adding a help button to form element {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Trying to add help buttons to non-existent form elements : {$a}';
+$string['noselection'] = 'No selection';
+$string['nosuggestions'] = 'No suggestions';
 $string['optional'] = 'Optional';
 $string['othersettings'] = 'Other settings';
 $string['requiredelement'] = 'Required field';
@@ -56,6 +58,7 @@ $string['revealpassword'] = 'Reveal';
 $string['security'] = 'Security';
 $string['selectallornone'] = 'Select all/none';
 $string['selected'] = 'Selected';
+$string['selecteditems'] = 'Selected items:';
 $string['showadvanced'] = 'Show advanced';
 $string['showless'] = 'Show less...';
 $string['showmore'] = 'Show more...';

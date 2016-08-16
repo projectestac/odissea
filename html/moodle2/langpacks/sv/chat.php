@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'chat', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -120,7 +120,7 @@ $string['serverhost'] = 'Namn på servern';
 $string['serverip'] = 'IP för server';
 $string['servermax'] = 'Max antal användare';
 $string['serverport'] = 'Serverport';
-$string['sessions'] = 'Sessioner för direktsamtal';
+$string['sessions'] = 'sessioner för direktsamtal';
 $string['sessionstart'] = 'Sessionen för direktsamtal kommer att starta inom: {$a}';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Alla kan se de sessioner som har varit';

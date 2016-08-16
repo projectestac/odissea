@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,11 +32,15 @@ Da notare che con questa impostazione la visualizzazione della risorsa da parte 
 $string['displayinline'] = 'Nella home page del corso';
 $string['displaypage'] = 'In una pagina separata';
 $string['dnduploadmakefolder'] = 'Decomprimi i file e crea le cartelle';
+$string['downloadfolder'] = 'Scarica cartella';
+$string['eventallfilesdownloaded'] = 'L\'archivio zip della cartella è stato scaricato';
 $string['eventfolderupdated'] = 'Aggiornata catella';
 $string['folder:addinstance'] = 'Aggiungere cartelle';
 $string['foldercontent'] = 'File e sotto cartelle';
 $string['folder:managefiles'] = 'Gestire file nel modulo cartella';
 $string['folder:view'] = 'Visualizzare contenuto cartella';
+$string['maxsizetodownload'] = 'Dimensione massima della cartella da scaricare (MB)';
+$string['maxsizetodownload_help'] = 'L\'impostazione limita la dimensione massima oltre la quale gli utenti non potranno scaricare la cartella in formato zip. Impostando a zero, non ci saranno limiti dimensionai.';
 $string['modulename'] = 'Cartella';
 $string['modulename_help'] = 'Il modulo cartella consente al docente di visualizzare in un unica cartella un insieme di file correlati tra loro, riducendo la dimensione della pagine home del corso. Ad esempio, è possibile caricare una cartella compressa per poi decomprimerla e renderla disponibile, oppure è possibile creare una cartella vuota e caricarci dei file direttamente.
 
@@ -50,5 +54,8 @@ $string['page-mod-folder-view'] = 'Pagina principale modulo cartella';
 $string['page-mod-folder-x'] = 'Qualsiasi pagina con modulo cartella';
 $string['pluginadministration'] = 'Gestione cartella';
 $string['pluginname'] = 'Cartella';
+$string['search:activity'] = 'Cartella';
+$string['showdownloadfolder'] = 'Visualizza pulsante Scarica cartella';
+$string['showdownloadfolder_help'] = 'Visualizza un pulsante che consente lo scaricamento in formato zip dei file presenti in una cartella.';
 $string['showexpanded'] = 'Visualizza aperte le sotto cartelle';
 $string['showexpanded_help'] = 'Consente di visualizzare aperte le eventuali sotto cartelle, per default visualizzate chiuse.';

@@ -46,14 +46,7 @@ class file_temp_cleanup_task extends scheduled_task {
 
         $tmpdir = $CFG->tempdir;
         // Default to last weeks time.
-        //XTEC ************ MODIFICAT - To reduce from 1 week to 1 the waiting time to purge files
-        //2015.07.07 @pferre22
-         $time = strtotime('-1 day');
-        //************ ORIGINAL
-        /*
-        $time = strtotime('-1 week');
-        */
-        //************ FI
+        $time = time() - ($CFG->tempdatafoldercleanup * 3600);
 
         $dir = new \RecursiveDirectoryIterator($tmpdir);
         // Show all child nodes prior to their parent.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = 'Imposta il formato di default utilizzato durant
 * HTML - Rende disponibile l\'editor HTML
 * Creole - Un diffuso linguaggio di markup wiki con una toolbar minimale
 * Nwiki - Il linguaggio di markup utilizzato nel modulo contrib Nwiki, simile al linguaggio usato da Mediawiki.';
+$string['deleteallpages'] = 'Elimina tutte le pagine wiki';
 $string['deletecomment'] = 'Eliminazione commento';
 $string['deletecommentcheck'] = 'Elimina commento';
 $string['deletecommentcheckfull'] = 'Sei sicuro di eliminare il commento?';
@@ -190,7 +191,7 @@ $string['orphaned'] = 'Pagine orfane';
 $string['orphaned_help'] = 'Elenco delle pagine non collegate da altre pagine.';
 $string['overridelocks'] = 'Ignora blocco';
 $string['overridinglocks'] = 'Annullamento blocco pagine wiki';
-$string['pageexists'] = 'La pagina esiste già e ti ci sto portando';
+$string['pageexists'] = 'La pagina esiste già.';
 $string['pageindex'] = 'Indice pagina';
 $string['pageindex_help'] = 'L\'albero delle pagine di questo wiki';
 $string['pageislocked'] = 'In questo momento qualcuno sta modificando questa pagina. Prova a modificarla più tardi.';
@@ -225,12 +226,15 @@ $string['return'] = 'Indietro';
 $string['save'] = 'Salva';
 $string['saving'] = 'Salvataggio pagina wiki';
 $string['savingerror'] = 'Errore durante il salvataggio';
+$string['search:activity'] = 'Wiki - Informazioni sull\'attività';
+$string['search:collaborative_page'] = 'Wiki - pagine collaborative';
 $string['searchcontent'] = 'Cerca nel contenuto della pagina';
 $string['searchresult'] = 'Risultati della ricerca:';
 $string['searchterms'] = 'Cerca termini';
 $string['searchwikis'] = 'Cerca nei wiki';
 $string['special'] = 'Speciale';
 $string['tableofcontents'] = 'Indice';
+$string['tagarea_wiki_pages'] = 'Pagine wiki';
 $string['tagsdeleted'] = 'I tag wiki sono stati eliminati';
 $string['tagtitle'] = 'Vedi il tag {$a}"';
 $string['teacherrating'] = 'Valutazione del docente';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_badges', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = 'Gehitu Nire azken dominak blokea';
-$string['badges:myaddinstance'] = 'Gehitu Nire azken dominak bloke berria Nire hasieran';
+$string['badges:myaddinstance'] = 'Gehitu Nire azken dominak bloke berria aginte-panelean';
 $string['nothingtodisplay'] = 'Ez duzu erakusteko dominarik';
 $string['numbadgestodisplay'] = 'Erakusteko azken dominen kopurua';
-$string['pluginname'] = 'Nire azken dominak';
+$string['pluginname'] = 'Azken dominak';

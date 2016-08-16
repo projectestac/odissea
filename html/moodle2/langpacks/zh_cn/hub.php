@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'hub', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['audienceadmins'] = 'Moodle管理员';
 $string['audienceeducators'] = '教师';
 $string['audience_help'] = '选择此课程受众目标的类型。';
 $string['audiencestudents'] = '学生';
-$string['badurlformat'] = '错误的URL格式';
+$string['badurlformat'] = '错误的网页地址格式';
 $string['cannotsearchcommunity'] = '对不起，您没有浏览本页面所需的权限';
 $string['community'] = '社群';
 $string['communityremoved'] = '课程链接已从您的列表删除';
@@ -71,7 +71,7 @@ $string['creatornotes'] = '创建人备注';
 $string['creatornotes_help'] = '创建人备注是给教师的指导，告诉他们如何使用此课程。';
 $string['deletescreenshots'] = '删除这些屏幕截图';
 $string['deletescreenshots_help'] = '删除所有已上传的屏幕截图。';
-$string['demourl'] = '演示URL';
+$string['demourl'] = '演示网页地址';
 $string['demourl_help'] = '输入您课程的演示URL。缺省会填入您课程的URL。演示URL会在搜索结果中显示为链接。';
 $string['description'] = '描述';
 $string['description_help'] = '描述会被显示在中心服务器的课程列表中。';
@@ -114,7 +114,7 @@ $string['language_help'] = '此课程的主要语言。';
 $string['lasttimechecked'] = '上次检查时间';
 $string['licence'] = '授权协议';
 $string['licence_help'] = '选择用哪种许可证发布您的课程。';
-$string['logourl'] = '标志URL';
+$string['logourl'] = '标志的网页地址';
 $string['modulenumberaverage'] = '课程模块数平均值（{$a}）';
 $string['moodleorg'] = 'Moodle.org';
 $string['mustselectsubject'] = '您必须选择一个主题';
@@ -222,7 +222,7 @@ $string['siterelease_help'] = '本站使用的Moodle发行版本号。';
 $string['siteupdatedcron'] = '“{$a}”已更新网站注册';
 $string['siteupdatesend'] = '在中心服务器更新注册结束。';
 $string['siteupdatesstart'] = '开始向中心服务器更新注册…';
-$string['siteurl'] = '网站URL';
+$string['siteurl'] = '网站的网页地址';
 $string['siteurl_help'] = '本站的网址。如果允许其它人看到网站地址，那么会使用此URL。';
 $string['siteversion'] = 'Moodle版本';
 $string['siteversion_help'] = '本站的Moodle版本号。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'url', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['popupwidthexplain'] = 'Заданная по умолчанию шир�
 $string['printintro'] = 'Отображать описание гиперссылки';
 $string['printintroexplain'] = 'Выводить описание гиперссылки после содержимого? При некоторых настройках отображения описание гиперссылки не будет отображаться, даже если этот параметр включен.';
 $string['rolesinparams'] = 'Включить названия ролей в параметры';
+$string['search:activity'] = 'Гиперссылка';
 $string['serverurl'] = 'Гиперссылка на этот сайт';
 $string['url:addinstance'] = 'Добавлять новый ресурс типа «Гиперссылка»';
 $string['url:view'] = 'Просматривать гиперссылки';

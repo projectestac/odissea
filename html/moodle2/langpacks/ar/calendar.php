@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'calendar', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,7 +101,6 @@ $string['gotocalendar'] = 'إذهب إلى التقويم';
 $string['group'] = 'مجموعة';
 $string['groupevent'] = 'حدث مجموعة';
 $string['groupevents'] = 'أحداث مجموعة';
-$string['hidden'] = 'مخفي';
 $string['hideglobalevents'] = 'إخفاء الأحداث العامة';
 $string['ical'] = 'التقويم الإلكتروني';
 $string['invalidtimedurationminutes'] = 'المدة بالدقائق التي أدخلتها غير صالحة الرجاء أدخل المدة بالدقائق أكبر من الصفر أو اختر لا مدة';

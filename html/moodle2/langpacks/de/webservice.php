@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = 'Notwendiges Recht hinzufügen / löschen';
 $string['addservice'] = 'Neuen Service hinzufügen: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Funktionen zum Service \'{$a}\' hinzufügen';
 $string['allusers'] = 'Alle Nutzer/innen';
-$string['amftestclient'] = 'AMF Test-Client';
 $string['apiexplorer'] = 'API Explorer';
 $string['apiexplorernotavalaible'] = 'API Explorer bisher nicht verfügbar';
 $string['arguments'] = 'Argumente';
 $string['authmethod'] = 'Authentifizierung';
+$string['callablefromajax'] = 'Abrufbar von AJAX';
 $string['cannotcreatetoken'] = 'Keine Berechtigung, um ein Webservice-Token für den Service \'{$a}\' zu erstellen.';
 $string['cannotgetcoursecontents'] = 'Kursinhalte können nicht geladen werden.';
 $string['checkusercapability'] = 'Nutzerrecht prüfen';
@@ -121,6 +121,7 @@ $string['iprestriction'] = 'IP-Beschränkung';
 $string['iprestriction_help'] = 'Der Webservice kann nur von einer der gelisteten IP-Adressen aufgerufen werden.';
 $string['key'] = 'Schlüssel';
 $string['keyshelp'] = 'Die Schlüssel werden benutzt, um mit externen Programmen auf Ihr Moodlekonto zugreifen zu können';
+$string['loginrequired'] = 'Nur für eingeloggte Nutzer/innen';
 $string['manageprotocols'] = 'Protokolle verwalten';
 $string['managetokens'] = 'Tokens verwalten';
 $string['missingcaps'] = 'Fehlende Rechte';
@@ -188,14 +189,12 @@ $string['shortnametaken'] = 'Der Kurzname wird bereits für einen anderen Dienst
 $string['simpleauthlog'] = 'Login mit einfacher Authentifizierung';
 $string['step'] = 'Schritt';
 $string['supplyinfo'] = 'Weitere Details';
-$string['testauserwithtestclientdescription'] = 'Simulieren Sie den externen Zugriff auf den Service mit dem Webservice Testclient. Loggen Sie sich dazu zuerst als Nutzer mit der Berechtigung "moodle/webservice:createtoken" ein. Holen Sie sich den Sicherheitsschlüssel (Token) aus seinem MyMoodle Block. Verwenden Sie diesen Token im Testclient. Wählen Sie im Testclient ein aktives Protokoll mit Token Authentifizierung. <strong>Warnung: Die Funktionen, die Sie testen, WERDEN für diesen Nutzer tatsächlich AUSGEFÜHRT. Seien Sie daher vorsichtig mit der Auswahl der Testfunktionen.</strong> ';
+$string['testauserwithtestclientdescription'] = 'Simulieren Sie einen externen Dienstzugriff mit dem Webservice-Testclient. Loggen Sie sich zuerst als Nutzer/in mit der Berechtigung "moodle/webservice:createtoken" ein. Suchen Sie die Option \'Sicherheitsschlüssel\' (Token) auf der Nutzerseite \'Einstellungen\'. Verwenden Sie das Token im Testclient. Wählen Sie im Testclient ein aktiviertes Protokoll mit Token-Authentifizierung. <strong>Achtung: Die getesteten Funktionen werden für dieses Nutzerkonto tatsächlich ausgeführt. Seien Sie deswegen vorsichtig mit der Auswahl Ihrer Tests.</strong>';
 $string['testclient'] = 'Webservice-Testrechner';
-$string['testclientdescription'] = '<ul>
-<li>Der Webservice Testclient <strong>führt die Funktionen des Webservices tatsächlich aus </strong>. Testen Sie keine Funktionen, die Ihnen nicht vertraut sind.</li>
-<li>Derzeit sind noch nicht alle Funktionen in den Testclient implementiert.</li>
-<li>Geben Sie auch einige Funktionen an, die nicht von Ihnen zugelassen sind, um zu prüfen, ob der Client tatsächlich nicht zugreifen kann. </li>
-<li>Um aussagekräftige Fehlermeldungen zu bekommen setzen Sie den Debugmodus auf <strong>{$a->mode}</strong> unter {$a->atag}<br/>* Zugriff für  {$a->amfatag}.</li>
-</ul>';
+$string['testclientdescription'] = '* Der Webservice-TestClient <strong>führt die Funktionen tatsächlich aus </strong>. Testen Sie keine Funktionen, die Ihnen unbekannt sind.<br />
+* Die Webservice-Funktionen sind bisher noch nicht alle in den TestClient implementiert.<br />
+* Um zu prüfen, dass ein Nutzer auf manche Funktionen nicht zugreifen kann, geben Sie auch einige Funktionen an, die Sie nicht zugelassen haben.<br />
+* Um aussagekräftigere Fehlermeldungen zu bekommen, setzen Sie den Debugmodus auf <strong>{$a->mode}</strong> unter {$a->atag}.';
 $string['testwithtestclient'] = 'Service testen';
 $string['testwithtestclientdescription'] = 'Simulation des externen Zugriffs mit dem Webservice Testclient. Verwenden Sie ein aktiviertes Protokoll mit Token-Authentifizierung. <strong>Warnung: Die Funktionen, die Sie testen, WERDEN AUSGEFÜHRT. Seien Sie also vorsichtig, mit dem, was Sie testen.</strong>';
 $string['token'] = 'Token';
@@ -206,9 +205,9 @@ $string['unknownoptionkey'] = 'Unbekannter optionaler Schlüssel ({$a})';
 $string['unnamedstringparam'] = 'Unbenannter Textparameter';
 $string['updateusersettings'] = 'Update';
 $string['uploadfiles'] = 'Dateien hochladen';
-$string['uploadfiles_help'] = 'Wenn diese Option aktiviert ist, können alle Nutzer/innen Dateien unter Verwendung ihrer Sicherheitsschlüssel in die Eigenen Dateien oder in einen Entwurfsbereich hochladen. Alle Dateiquotas gelten.';
+$string['uploadfiles_help'] = 'Wenn diese Option aktiviert ist, können alle Nutzer/innen Dateien unter Verwendung ihrer Sicherheitsschlüssel in \'Meine Dateien\' oder in einen Entwurfsbereich hochladen. Alle Dateiquotas gelten.';
 $string['userasclients'] = 'Nutzer als Clients mit Token';
-$string['userasclientsdescription'] = 'Die folgenden Schritte helfen Ihnen, den Webservice für Nutzer/innen als Clients  zu konfigurieren. Dabei wird auch das Erzeugen der empfohlenen Token (Sicherheitsschlüssel) zur Authentifizierung gezeigt. In diesem Anwendungsfall erzeugen die Nutzer/innen ihre persönlichen Token über die Option \'Sicherheitsschlüssel\' im Nutzerprofil.';
+$string['userasclientsdescription'] = 'Die folgenden Schritte helfen Ihnen, den Webservice für Nutzer/innen als Clients zu konfigurieren. Dabei wird auch das Erzeugen des empfohlenen Sicherheitsschlüssels (Token) zur Authentifizierung gezeigt. Im Anwendungsfall erzeugen Nutzer/innen selber ihr persönliches Token über die Option \'Sicherheitsschlüssel\' auf ihrer Nutzerseite \'Einstellungen\'.';
 $string['usermissingcaps'] = 'Fehlende Fähigkeiten: {$a}';
 $string['usernameorid'] = 'Anmeldename/Nutzer-ID';
 $string['usernameorid_help'] = 'Anmeldename oder Nutzer-ID eingeben';

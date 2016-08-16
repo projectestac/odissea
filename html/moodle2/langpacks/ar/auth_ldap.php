@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,5 +62,5 @@ $string['auth_ldap_user_settings'] = 'أعدادات البحث عن مستخد�
 $string['auth_ldap_user_type_key'] = 'نوع المستخدم';
 $string['auth_ldap_version'] = 'أصدار نظام الـ LDAP المستخدم في خادمك';
 $string['auth_ldap_version_key'] = 'لإصدار';
-$string['noemail'] = 'تمت محاولة إرسال بريد الإكتروني ولكنها فشلت';
+$string['noemail'] = 'تمت محاولة إرسال بريد إلكتروني لك ولكنها فشلت';
 $string['pluginname'] = 'استخدم مزود LDAP';

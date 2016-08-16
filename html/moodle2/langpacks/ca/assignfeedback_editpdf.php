@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['deletecomment'] = 'Suprimeix el comentari';
 $string['deletefeedback'] = 'Suprimeix el PDF de retroacció';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Baixa el PDF de retroacció';
+$string['draftchangessaved'] = 'S\'han desat els esborranys d\'anotacions';
 $string['editpdf'] = 'Comenta PDF';
 $string['editpdf_help'] = 'Comenta les trameses dels estudiants directament al navegador i crea un PDF editat i descarregable.';
 $string['enabled'] = 'Comenta PDF';
@@ -66,8 +67,10 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Pàgina {$a}';
 $string['pagexofy'] = 'Pàgina {$a->page} de {$a->total}';
 $string['pathtogspathdesc'] = 'Tingueu en compte que un PDF amb comentaris requereix que el camí a ghostscript es defineixi a {$a}.';
+$string['pathtounoconvpathdesc'] = 'Adoneu-vos que l\'anotació de PDF requereix que estigui establert el camí a l\'aplicació «unoconv» a {$a}.';
 $string['pen'] = 'Bolígraf';
 $string['pluginname'] = 'Comenta PDF';
+$string['preparesubmissionsforannotation'] = 'Prepara les trameses per anotacions';
 $string['rectangle'] = 'Rectangle';
 $string['red'] = 'Vermell';
 $string['result'] = 'Resultat:';
@@ -84,9 +87,16 @@ $string['test_isdir'] = 'El camí de ghostscript apunta a una carpeta; afegiu el
 $string['test_notestfile'] = 'El PDF de prova s\'ha perdut';
 $string['test_notexecutable'] = 'Ghostscript apunta a un fitxer que no és executable';
 $string['test_ok'] = 'El camí de ghostscript sembla que és correcte - comproveu que podeu veure el missatge a la imatge del dessota.';
+$string['test_unoconv'] = 'Comprova el camí a «unoconv»';
+$string['test_unoconvdoesnotexist'] = 'El camí a «unoconv» no apunta al programa. Reviseu la configuració del paràmetre.';
+$string['test_unoconvdownload'] = 'Baixa el fitxer de prova PDF convertit.';
+$string['test_unoconvisdir'] = 'El camí a «unoconv» apunta a una carpeta. Heu d\'incloure el nom del programa al camí que especifiqueu.';
+$string['test_unoconvnotestfile'] = 'No s\'ha trobat el document de prova que cal convertir a PDF';
+$string['test_unoconvnotexecutable'] = 'El camí a «unoconv» apunta a un fitxer que no és executable';
+$string['test_unoconvok'] = 'El camí a «unoconv» sembla correcte';
+$string['test_unoconvversionnotsupported'] = 'La versió d\'«unoconv» instal·lada no està admesa. La capacitat de Moodle de qualificar tasques necessita la versió 0.7 o superior.';
 $string['tool'] = 'Eina';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = 'Canvis no desats';
 $string['viewfeedbackonline'] = 'Mostra el PDF comentat...';
 $string['white'] = 'Blanc';
 $string['yellow'] = 'Groc';

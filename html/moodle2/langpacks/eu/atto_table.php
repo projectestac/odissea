@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_table', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcolumnafter'] = 'Txertatu zutabea ondoren';
 $string['addrowafter'] = 'Txertatu errenkada ondoren';
+$string['allowbackgroundcolour'] = 'Baimendu atzeko planoaren kolorea';
+$string['allowwidth'] = 'Baimendu zabalera';
+$string['appearance'] = 'Itxura';
+$string['backgroundcolour'] = 'Atzeko planoaren kolorea';
+$string['bordercolour'] = 'Ertzaren kolorea';
+$string['borders'] = 'Ertzak';
+$string['bordersize'] = 'Ertzen tamaina';
+$string['borderstyles'] = 'Ertzen estiloa';
 $string['both'] = 'Biak';
 $string['caption'] = 'Epigrafea';
 $string['columns'] = 'Zutabeak';
@@ -39,8 +47,12 @@ $string['movecolumnleft'] = 'Mugitu zutabea ezkerrera';
 $string['movecolumnright'] = 'Mugitu zutabea eskuinera';
 $string['moverowdown'] = 'Mugitu errenkada behera';
 $string['moverowup'] = 'Mugitu errenkada gora';
+$string['noborder'] = 'Ertzik ez';
+$string['none'] = 'Bat ere ez';
 $string['numberofcolumns'] = 'Zutabe-kopurua';
 $string['numberofrows'] = 'Errenkada-kopurua';
 $string['pluginname'] = 'Taula';
 $string['rows'] = 'Errenkadak';
+$string['settings'] = 'Taularen ezarpenak';
+$string['transparent'] = 'Gardena';
 $string['updatetable'] = 'Eguneratu taula';

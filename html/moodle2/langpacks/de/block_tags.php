@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Hinzufügen';
 $string['alltags'] = 'Alle Schlagwörter:';
+$string['anycollection'] = 'Ein beliebiges';
+$string['anytype'] = 'Alle';
 $string['arrowtitle'] = 'Klicken Sie hier, um den grau gezeigten Text einzugeben.';
 $string['configtitle'] = 'Blocktitel';
 $string['coursetags'] = 'Kursschlagwörter:';
-$string['defaultdisplay'] = 'Angezeigter Schlagworttyp';
+$string['defaultdisplay'] = 'Angezeigte Schlagwörter';
 $string['disabledtags'] = 'Schlagwörter sind deaktiviert';
 $string['edit'] = 'Bearbeiten...';
 $string['editdeletemytag'] = 'Schlagwort aus diesem Kurs löschen:';
@@ -65,12 +67,19 @@ $string['mytags'] = 'Meine Schlagwörter';
 $string['notagsyet'] = 'Keine Schlagwörter';
 $string['please'] = 'Bitte';
 $string['pluginname'] = 'Schlagwörter';
+$string['recursivecontext'] = 'Abhängigkeiten einbeziehen';
+$string['recursivecontext_help'] = 'Diese Option legt fest, ob Schlagwörter nur aus dem aktuellen Kontext angezeigt werden, aber keine Schlagwörter aus untergeordneten Kontexten. Es können z.B. Schlagwörter des Kurses angezeigt, aber Schlagwörter der Kursaktivitäten ausgeblendet werden.';
 $string['select'] = 'Auswählen...';
 $string['showcoursetags'] = 'Kursschlagwörter anzeigen';
 $string['showcoursetagsdef'] = 'Um Teilnehmer/innen die Nutzung von Schlagwörtern in Kursen zu erlauben, können Sie den Block \'Schlagwörter\' anzeigen.';
+$string['standardonly'] = 'Nur offizielle';
 $string['suggestedtagthisunit'] = 'Vorgeschlagenes Schlagwort für diesen Kurs:';
+$string['tagcollection'] = 'Schlagwortgruppe';
+$string['tagcollection_help'] = 'Wählen Sie die Schlagwortgruppe, aus der die Schlagwörter angezeigt werden sollen. Wenn Sie \'beliebige\' auswählen, werden alle Sammlungen außer denen angezeigt, die mit * markiert sind.';
+$string['taggeditemscontext'] = 'Schlagwörter im Kontext';
+$string['taggeditemscontext_help'] = 'Sie können die Schlagwörterwolke auf Schlagwörter beschränken, die nur im aktuellen Kontext (Kursbereich, Kurs, Aktivität) vorhanden sind.';
 $string['tags'] = 'Schlagwörter';
 $string['tags:addinstance'] = 'Schlagwörter-Block hinzufügen';
-$string['tags:myaddinstance'] = 'Block \'Schlagworte\' für \'Meine Startseite\' hinzufügen';
+$string['tags:myaddinstance'] = 'Schlagwörter-Block zum Dashboard hinzufügen';
 $string['tagthisunit'] = 'Diesen Kurs mit Schlagwörtern markieren';
 $string['tagunits'] = ', um Ihre Kurse mit Schlagwörtern markieren.';

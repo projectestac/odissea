@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = '登録は無効にされているか、停止しています。';
+$string['canntenrolearly'] = 'あなたはまだ登録することができません。登録は {$a} に開始されます。';
+$string['canntenrollate'] = '{$a} に登録が終了したため、あなたはこれ以上登録することができません。';
 $string['cohortnonmemberinfo'] = 'コーホート「 {$a} 」のメンバーのみ自己登録することができます。';
 $string['cohortonly'] = 'コーホートメンバーのみ';
 $string['cohortonly_help'] = '指定されたコーホートのメンバーのみに自己登録を制限することができます。この設定の変更により、既存の登録が影響を受けないことに留意してください。';
@@ -35,7 +37,9 @@ $string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタ
 メッセージの中に次のプレースホルダを含むことができます:
 
 * コース名 {$a->coursename}
-* ユーザプロファイルページへのリンク {$a->profileurl}';
+* ユーザプロファイルページへのリンク {$a->profileurl}
+* ユーザメール {$a->email}
+* ユーザフルネーム {$a->fullname}';
 $string['defaultrole'] = 'デフォルトロール割り当て';
 $string['defaultrole_desc'] = '自己登録中にユーザに割り当てるロールを選択してください。';
 $string['enrolenddate'] = '終了日';
@@ -66,6 +70,7 @@ $string['groupkey_desc'] = 'デフォルトでグループ登録キーを使用�
 $string['groupkey_help'] = 'コース登録キーを知っているユーザにのみコースアクセスを制限することに加えて、グループ登録キーを使用することで、ユーザは登録したコース内のグループに自動追加されます。
 
 注意: グループ登録キーを使用するにはグループ設定内のグループ登録キーを設定すると共にコース設定内の登録キーを設定する必要があります。';
+$string['keyholder'] = 'あなたは次から登録キーを受信しているはずです:';
 $string['longtimenosee'] = '次の期間活動停止の場合、登録解除する';
 $string['longtimenosee_help'] = 'ユーザが長期間コースにアクセスしていない場合、自動的に登録解除されます。このパラメータではその制限期間を指定します。';
 $string['maxenrolled'] = '最大登録ユーザ数';
@@ -90,6 +95,7 @@ $string['requirepassword'] = '登録キーを要求する';
 $string['requirepassword_desc'] = '新しいコースに登録キーを要求します。また、既存のコースからの登録キーの削除を防ぎます。';
 $string['role'] = 'デフォルトの割り当てロール';
 $string['self:config'] = '自己登録インスタンスを設定する';
+$string['self:holdkey'] = '自己登録キー所有者として表示する';
 $string['self:manage'] = '登録済みユーザを管理する';
 $string['self:unenrol'] = 'コースからユーザを登録解除する';
 $string['self:unenrolself'] = 'コースから自分自身を登録解除する';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,15 @@ $string['auth_cas_certificate_path_key'] = 'Caminho para o certificado';
 $string['auth_cas_changepasswordurl'] = 'URL para modificação da senha';
 $string['auth_cas_create_user'] = 'Ative esta configuração se pretender inserir utilizadores autenticados com CAS na base de dados do Moodle. Se esta configuração estiver desativada, apenas os utilizadores que já existirem na base de dados do Moodle terão acesso ao site.';
 $string['auth_cas_create_user_key'] = 'Criar utilizador';
+$string['auth_cas_curl_ssl_version'] = 'A versão SSL (2 ou 3) para utilização. Por predefinição o PHP determina esta questão automaticamente, no entanto, em alguns casos isto deverá ser definido manualmente.';
+$string['auth_cas_curl_ssl_version_default'] = 'Por predefinição';
+$string['auth_cas_curl_ssl_version_key'] = 'Versão SSL cURL';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = 'Este método utiliza um servidor CAS (Central Authentication Service) para autenticar utilizadores num ambiente SSO (Single Sign On). Também poderá utilizar a autenticação simples LDAP. Se o nome de utilizador e senha forem validados pelo servidor CAS, o Moodle criará um novo utilizador na sua base de dados, aproveitando os atributos do utilizador do LDAP se necessário. Em autenticações futuras do mesmo utilizador apenas o nome de utilizador e senha serão verificados.';
 $string['auth_cas_enabled'] = 'Ative esta configuração se pretender utilizar autenticação CAS';
 $string['auth_cas_hostname'] = 'Nome do servidor CAS <br />Exemplo: servidor.dominio.pt';
@@ -67,3 +76,4 @@ $string['auth_cas_version'] = 'Versão do protocolo CAS a usar';
 $string['CASform'] = 'Escolha do método de autenticação';
 $string['noldapserver'] = 'Não existem servidores LDAP configurados para CAS! A sincronização está desativa..';
 $string['pluginname'] = 'Servidor CAS (SSO)';
+$string['synctask'] = 'Tarefa de sincronização dos utilizadores de CAS';

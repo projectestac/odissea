@@ -9,3 +9,5 @@ $string['error_saving_grade'] = 'Ha ocurrido un error y no se ha podido salvar e
 $string['alert_units_table'] = "Los datos que se visualizan corresponden a los de las dos últimas unidades para las que ha habido actividad. Para seleccionar una/s otra/s, hay que usar el selector de unidades.";
 $string['alert_units_table_hide'] = "No quiero volver a ver el aviso.";
 $string['alert_units_table_ok'] = 'Acepta';
+
+$string['rgrade:addinstance'] = 'Añadir un nuevo bloque de Calificaciones de contenidos remotos';

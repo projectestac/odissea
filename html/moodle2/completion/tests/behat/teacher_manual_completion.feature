@@ -16,10 +16,8 @@ Feature: Allow teachers to manually mark users as complete when configured
       | user     | course | role           |
       | student1 | CC1    | student        |
       | teacher1 | CC1    | editingteacher |
-    And the following config values are set as admin:
-      | enablecompletion | 1 |
     And I log in as "admin"
-    And I am on homepage
+    And I am on site homepage
     And I follow "Completion course"
     And completion tracking is "Enabled" in current course
     And I follow "Course completion"
@@ -29,23 +27,23 @@ Feature: Allow teachers to manually mark users as complete when configured
     And I add the "Course completion status" block
     And I log out
     And I log in as "student1"
+    And I am on site homepage
     And I follow "Completion course"
     And I should see "Status: Not yet started"
     And I log out
     When I log in as "teacher1"
+    And I am on site homepage
     And I follow "Completion course"
     And I follow "View course report"
     And I should see "Student First"
     And I follow "Click to mark user complete"
-    # Running cron just after clicking sometimes fail, so navigate back
-    # and ensure the student completion is updated before running cron.
+    # Running completion task just after clicking sometimes fail, as record
+    # should be created before the task runs.
+    And I wait "1" seconds
+    And I run the scheduled task "core\task\completion_regular_task"
     And I am on site homepage
-    And I follow "Completion course"
-    And I follow "View course report"
-    And "//img[contains(@alt, 'Completed')]" "xpath_element" should exist in the "student1" "table_row"
-    And I trigger cron
-    And I am on homepage
     And I log out
     Then I log in as "student1"
+    And I am on site homepage
     And I follow "Completion course"
     And I should see "Status: Complete"

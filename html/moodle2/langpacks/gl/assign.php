@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assign', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -289,6 +289,7 @@ $string['noonlinesubmissions'] = 'Esta tarefa non require que entregue nada desd
 $string['nosavebutnext'] = 'Seguinte';
 $string['nosubmission'] = 'Non foi enviado nada para esta tarefa';
 $string['nosubmissionsacceptedafter'] = 'Non se aceptan entregas despois de';
+$string['noteam'] = 'Vostede non é membro de ningún grupo; contacte co seu profesor';
 $string['notgraded'] = 'Sen cualificar';
 $string['notgradedyet'] = 'Aínda non cualificada';
 $string['notifications'] = 'Notificacións';
@@ -309,6 +310,8 @@ $string['page-mod-assign-x'] = 'Calquera páxina do módulo de tarefas';
 $string['participant'] = 'Participante';
 $string['pluginadministration'] = 'Administración de tarefas';
 $string['pluginname'] = 'Tarefa';
+$string['preventsubmissionnotingroup'] = 'Requirir a un grupo para facer a entrega';
+$string['preventsubmissionnotingroup_help'] = 'Se está activado, os usuarios que non sexan membros dun grupo non poderán facer entregas.';
 $string['preventsubmissions'] = 'Impedir que os usuarios fagan máis entregas para tarefa';
 $string['preventsubmissionsshort'] = 'Impedir a actualización de entregas';
 $string['previous'] = 'Anterior';
@@ -432,6 +435,7 @@ $string['teamsubmission_help'] = 'Si está activado, os alumnos dividiranse en g
 $string['textinstructions'] = 'Instrucións da tarefa';
 $string['timemodified'] = 'Última modificación';
 $string['timeremaining'] = 'Tempo restante';
+$string['ungroupedusers'] = 'A configuración de «Requirir a un grupo para facer a entrega» está activada e algúns usuarios non están asignados a grupos; isto impediralles a entrega de tarefas.';
 $string['unlimitedattempts'] = 'Sen límite';
 $string['unlimitedattemptsallowed'] = 'Permítense intentos ilimitados.';
 $string['unlocksubmissionforstudent'] = 'Permitir entregas do alumno: (id={$a->id}, nome completo={$a->fullname}).';

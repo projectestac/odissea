@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['forcedefaultmaxcoursesdesc'] = 'Indien dit is ingesteld, dan kan een ge
 $string['fullpath'] = 'Alle categorieën en ondercategorieën';
 $string['hiddencoursecount'] = 'Je hebt {$a} verborgen cursus';
 $string['hiddencoursecountplural'] = 'Je hebt {$a} verborgen cursussen';
-$string['hiddencoursecountwithshowall'] = 'Je hebt {$a->coursecount} verborgen cursus {$a->showalllink})';
+$string['hiddencoursecountwithshowall'] = 'Je hebt {$a->cousecount} verborgen cursus {$a->showallink})';
 $string['hiddencoursecountwithshowallplural'] = 'Je hebt {$a->coursecount} verborgen cursussen ({$a->showalllink})';
 $string['message'] = 'bericht';
 $string['messages'] = 'berichten';

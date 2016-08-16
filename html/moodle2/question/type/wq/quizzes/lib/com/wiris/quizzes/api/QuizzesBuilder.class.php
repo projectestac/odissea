@@ -3,6 +3,9 @@
 class com_wiris_quizzes_api_QuizzesBuilder {
 	public function __construct() { 
 	}
+	public function getResourceUrl($name) {
+		return null;
+	}
 	public function getQuizzesUIBuilder() {
 		return null;
 	}

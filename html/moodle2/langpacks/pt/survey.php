@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'survey', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,6 +200,7 @@ $string['downloadinfo'] = 'Pode descarregar os dados deste inquérito num format
 $string['downloadresults'] = 'Descarregar resultados';
 $string['downloadtext'] = 'Descarregar dados num ficheiro de texto';
 $string['editingasurvey'] = 'A editar o inquérito';
+$string['errorunabletosavenotes'] = 'Ocorreu um erro ao guardar as observações.';
 $string['eventreportdownloaded'] = 'Relatório do inquérito descarregado';
 $string['eventreportviewed'] = 'Relatório do inquérito visualizado';
 $string['eventresponsesubmitted'] = 'Resposta ao inquérito submetida';
@@ -239,6 +240,7 @@ $string['savednotes'] = 'As suas anotações foram gravadas';
 $string['scaleagree5'] = 'Discordo plenamente,Discordo,Não concordo nem discordo,Concordo,Concordo plenamente';
 $string['scales'] = 'Escalas';
 $string['scaletimes5'] = 'Quase nunca, Raramente, Às vezes, Frequentemente, Quase sempre';
+$string['search:activity'] = 'Inquérito predefinido - informações da atividade';
 $string['seemoredetail'] = 'Clique aqui para ver mais detalhes';
 $string['selectedquestions'] = 'Perguntas selecionadas numa escala, todos os alunos';
 $string['summary'] = 'Sumário';

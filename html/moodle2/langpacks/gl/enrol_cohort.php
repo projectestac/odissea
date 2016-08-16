@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_cohort', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,8 @@ $string['addgroup'] = 'Engadir ao grupo';
 $string['assignrole'] = 'Asignar rol';
 $string['cohort:config'] = 'Configurar instancias de círculo';
 $string['cohort:unenrol'] = 'Desmatricular os usuarios suspensos';
+$string['creategroup'] = 'Crear un grupo novo';
+$string['defaultgroupnametext'] = '{$a->name} círculo {$a->increment}';
 $string['instanceexists'] = 'O círculo xa está sincronizado co rol seleccionado';
 $string['pluginname'] = 'Sincronizar círculo';
 $string['pluginname_desc'] = 'O engadido de matrícula círculo sincroniza os membros do círculo cos participantes no curso.';

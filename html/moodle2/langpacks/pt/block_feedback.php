@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_feedback', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_feedback', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Inquérito';
 $string['feedback:addinstance'] = 'Adicionar um novo bloco de Comentários';
-$string['missing_feedback_module'] = 'O bloco refere-se à atividade Inquérito, mas o módulo não existe!';
 $string['pluginname'] = 'Inquérito';

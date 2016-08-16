@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Contestades';
 $string['atleastoneoption'] = 'Heu de proporcionar almenys una possible resposta.';
 $string['cannotsubmit'] = 'Hi ha hagut un problema en la tramesa de la vostra resposta. Torneu-ho a intentar.';
 $string['choice'] = 'Consulta';
+$string['choiceactivityname'] = 'Consulta: {$a}';
 $string['choice:addinstance'] = 'Afegeix una consulta nova';
 $string['choice:choose'] = 'Grava una consulta';
 $string['choiceclose'] = 'Fins';
+$string['choicecloseson'] = 'Tanca la consulta en {$a}';
 $string['choice:deleteresponses'] = 'Suprimeix les respostes';
 $string['choice:downloadresponses'] = 'Baixa les respostes';
 $string['choicefull'] = 'Aquesta consulta està completa i no queden espais disponibles.';
@@ -44,21 +46,25 @@ $string['choiceoptions'] = 'Opcions de la tria';
 $string['choiceoptions_help'] = 'Aquí és on especifiqueu les opcions que els participants han de triar.
 
 Podeu emplenar les que vulgueu: en podeu deixar en blanc si no necessiteu les sis.';
-$string['choice:readresponses'] = 'Llegeix les respostes';
+$string['choice:readresponses'] = 'Mostra les respostes';
 $string['choicesaved'] = 'S\'ha desat la consulta';
 $string['choicetext'] = 'Text de la consulta';
 $string['chooseaction'] = 'Trieu una acció ...';
+$string['closebeforeopen'] = 'Heu especificat una data de tancament anterior a la data d\'obertura.';
 $string['completionsubmit'] = 'Mostra com a completada quan l\'usuari fa una tria';
 $string['description'] = 'Descripció';
 $string['displayhorizontal'] = 'En horitzontal';
-$string['displaymode'] = 'Mode de visualització';
+$string['displaymode'] = 'Mode de visualització de les opcions';
 $string['displayvertical'] = 'En vertical';
 $string['eventanswercreated'] = 'S\'ha fet l\'elecció';
+$string['eventanswerdeleted'] = 'S\'ha esborrat la resposta de les opcions';
 $string['eventanswerupdated'] = 'S\'ha actualitzat l\'elecció';
+$string['eventreportdownloaded'] = 'S\'ha baixat l\'informe d\'eleccions';
 $string['eventreportviewed'] = 'S\'ha visualitzat l\'informe d\'elecció';
 $string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible.';
 $string['full'] = '(Complet)';
 $string['havetologin'] = 'Abans de trametre una resposta heu d\'entrar amb el vostre nom d\'usuari i contrasenya.';
+$string['includeinactive'] = 'Inclou respostes dels usuaris inactius/suspesos';
 $string['limit'] = 'Límit';
 $string['limitanswers'] = 'Limita el nombre de respostes permeses';
 $string['limitanswers_help'] = 'Aquest paràmetre us permet limitar el nombre de participants que poden seleccionar cada opció concreta. Quan s\'arriba al límit ningú més no pot seleccionar aquesta opció.
@@ -79,20 +85,22 @@ L\'activitat de consulta es pot utilitzar per:
 * Per facilitar la presa de decisions dels estudiants, per exemple, permetent que els estudiants votin sobre algun aspecte del curs.';
 $string['modulenameplural'] = 'Consultes';
 $string['moveselectedusersto'] = 'Mou els usuaris seleccionats a...';
+$string['multiplenotallowederror'] = 'No estan permeses respostes múltiples en aquesta consulta';
 $string['mustchooseone'] = 'Heu de triar una resposta abans de desar. No s\'ha desat res.';
 $string['noguestchoose'] = 'Els usuaris visitants no poden respondre una consulta';
 $string['noresultsviewable'] = 'A hores d\'ara no es poden veure els resultats';
 $string['notanswered'] = 'No contestada encara';
 $string['notenrolledchoose'] = 'Només els usuaris inscrits poden respondre consultes.';
 $string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
-$string['numberofuser'] = 'Nombre de participants';
-$string['numberofuserinpercentage'] = 'Nombre de participants (%)';
+$string['numberofuser'] = 'Nombre de respostes';
+$string['numberofuserinpercentage'] = 'Percentatge de respostes (%)';
 $string['option'] = 'Opció';
 $string['optionno'] = 'Opció {no}';
 $string['options'] = 'Opcions';
 $string['page-mod-choice-x'] = 'Qualsevol pàgina del mòdul de consultes';
 $string['pluginadministration'] = 'Administració de la consulta';
 $string['pluginname'] = 'Consulta';
+$string['previewonly'] = 'Això és sols una vista prèvia de les opcions disponibles en aquesta activitat. No esteu habilitat per enviar consultes fins {$a}.';
 $string['privacy'] = 'Confidencialitat dels resultats';
 $string['publish'] = 'Publica els resultats';
 $string['publishafteranswer'] = 'Mostra els resultats als estudiants després que contestin';
@@ -108,6 +116,9 @@ $string['responsesresultgraphheader'] = 'Mostra la gràfica';
 $string['responsesto'] = 'Respostes per a {$a}';
 $string['results'] = 'Resultats';
 $string['savemychoice'] = 'Desa la meva resposta';
+$string['search:activity'] = 'Consulta - Informació de l\'activitat';
+$string['showpreview'] = 'Mostra la vista prèvia';
+$string['showpreview_help'] = 'Permet als estudiants veure de forma prèvia les opcions disponibles abans que la consulta sigui oberta per rebre enviaments.';
 $string['showunanswered'] = 'Mostra columna de no contestades';
 $string['skipresultgraph'] = 'Omet el gràfic de resultats';
 $string['spaceleft'] = 'Espai disponible';

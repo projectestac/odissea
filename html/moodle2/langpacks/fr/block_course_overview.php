@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'Replier toutes les listes de cours';
 $string['configotherexpanded'] = 'Si ce réglage est activé, la liste des autres cours sera dépliée par défaut, à moins que l\'utilisateur n\'ai explicitement choisi le contraire dans ses préférences.';
 $string['configpreservestates'] = 'Si ce réglage est activé, les états replié/déplié choisis par l\'utilisateur sont enregistré et utilisé systématiquement.';
 $string['course_overview:addinstance'] = 'Ajouter un bloc de vue d\'ensemble de cours';
-$string['course_overview:myaddinstance'] = 'Ajouter un bloc vue d\'ensemble des cours à Ma page';
+$string['course_overview:myaddinstance'] = 'Ajouter un bloc vue d\'ensemble des cours au tableau de bord';
 $string['defaultmaxcourses'] = 'Nombre maximal de cours par défaut';
 $string['defaultmaxcoursesdesc'] = 'Le nombre maximal de cours devant être affichés dans le bloc de vue d\'ensemble des cours. Une valeur de 0 affichera tous les cours';
 $string['expandall'] = 'Déplier la liste de tous les cours';

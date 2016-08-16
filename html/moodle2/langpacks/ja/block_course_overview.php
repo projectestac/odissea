@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_course_overview', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['collapseall'] = 'すべてのコース一覧を折りたたむ';
 $string['configotherexpanded'] = 'この設定を有効にした場合、ユーザプリファレンスでオーバーライドされない限り、デフォルトで他のコースが展開されます。';
 $string['configpreservestates'] = 'この設定を有効にした場合、ユーザによって設定された「折りたたむ/展開する」設定が保存され、それぞれの読み込みに使用されます。';
 $string['course_overview:addinstance'] = '新しいコース概要ブロックを追加する';
-$string['course_overview:myaddinstance'] = '新しいコース概要ブロックをマイホームに追加する';
+$string['course_overview:myaddinstance'] = '新しいコース概要ブロックをダッシュボードに追加する';
 $string['defaultmaxcourses'] = 'デフォルト最大コース数';
 $string['defaultmaxcoursesdesc'] = 'コース概要ブロックに表示される最大コース数です。ゼロを設定した場合、すべてのコースが表示されます。';
 $string['expandall'] = 'すべてのコース一覧を展開する';

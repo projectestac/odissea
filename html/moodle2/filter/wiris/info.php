@@ -148,10 +148,10 @@ if ($CFG->version >= 2014051200) {
 					$test_name = 'Looking for WIRIS plugin for ' . $wiris_plugin_base_string;
 					$report_text = 'WIRIS plugin for ' . $wiris_plugin_base_string .' must be installed.';
 					$solution_link = 'http://www.wiris.com/plugins/moodle/download';
-					$wiris_plugin = $wiris_plugin_base. '/integration';
+					$wiris_plugin = $wiris_plugin_base. '/core';
 					$condition = file_exists($wiris_plugin);					
 					if (!$condition){
-						$wiris_plugin = '../../lib/editor/tinymce/plugins/tiny_mce_wiris/integration';    
+						$wiris_plugin = '../../lib/editor/tinymce/plugins/tiny_mce_wiris/core';    
 						$condition = file_exists($wiris_plugin);    
 					}
 					echo wrs_createTableRow($test_name, $report_text, $solution_link, $condition);
@@ -206,9 +206,9 @@ if ($CFG->version >= 2014051200) {
 	<br/>
 	
 	<?php
-		echo "Click the following button to test if the WIRIS plugin for ".$wiris_plugin_base_string." is correctly installed.<br/>";
-		$link = $wiris_plugin_base . '/integration/test.php';
-		echo '<input type="button" value="WIRIS plugin for '.$wiris_plugin_base_string.' tests" onClick="javascript:window.open(\'' . $link . '\');" /><br/>';
+		echo "Click the following button to test if the WIRIS plugin is correctly installed.<br/>";
+		$link = 'integration/test.php';
+		echo '<input type="button" value="WIRIS plugin for tests" onClick="javascript:window.open(\'' . $link . '\');" /><br/>';
 
 		$wqversion = get_config('qtype_wq', 'version');
 		if (!empty($wqversion)) {

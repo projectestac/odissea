@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,18 +39,20 @@ $string['auth_dbfieldpass'] = '含有密码的字段名';
 $string['auth_dbfieldpass_key'] = '密码字段';
 $string['auth_dbfielduser'] = '含有用户名的字段名';
 $string['auth_dbfielduser_key'] = '用户名字段';
-$string['auth_dbhost'] = '数据库所在的主机。';
+$string['auth_dbhost'] = '数据库所在的主机。若使用ODBC，请使用一个系统DSN条目。';
 $string['auth_dbhost_key'] = '主机';
 $string['auth_dbinsertuser'] = '已插入用户 {$a->name} 其 id 为 {$a->id}';
+$string['auth_dbinsertuserduplicate'] = '插入用户 {$a->username} 时发生错误——有这一名称的用户已经由 \'{$a->auth}\' 插件所建立。';
 $string['auth_dbinsertusererror'] = '插入用户 {$a} 错误';
-$string['auth_dbname'] = '数据库名';
+$string['auth_dbname'] = '数据库名称。如果使用ODBC DSN 请留空。';
 $string['auth_dbname_key'] = '数据库名';
 $string['auth_dbpass'] = '与上面的用户名匹配的密码';
 $string['auth_dbpass_key'] = '密码';
-$string['auth_dbpasstype'] = '<p>指定密码字段所用的格式。MD5 编码是一种常见的方法，在和其它通用 WEB 应用如 PostNuke 整合时，会很方便。</p><p>如果您希望由外部程序管理用户名和 Email，而由 Moodle 来管理密码，则请选择“内部”。在使用这种方式时，您<i>必须</i>在外部数据库中提供一个 Email 字段，且需要定时运行 admin/cron.php 和 auth/db/cli/sync_users.php。Moodle 会通过 Email 向新用户发送临时密码。</p>';
+$string['auth_dbpasstype'] = '<p>指定密码字段所用的格式。MD5 编码是一种常见的方法，在和其它通用 WEB 应用如 PostNuke 整合时，会很方便。</p><p>如果您希望由外部数据库管理用户名和 Email，而由 Moodle 来管理密码，则请选择“内部”。在使用这种方式时，您<i>必须</i>在外部数据库中提供一个 Email 字段，且需要定时运行 admin/cron.php 和 auth/db/cli/sync_users.php。Moodle 会通过 Email 向新用户发送临时密码。</p>';
 $string['auth_dbpasstype_key'] = '密码格式';
 $string['auth_dbreviveduser'] = '激活用户 {$a->name} 其 id 为 {$a->id}';
 $string['auth_dbrevivedusererror'] = '激活用户{$a}错误';
+$string['auth_dbsaltedcrypt'] = '以单向字串散列加密';
 $string['auth_dbsetupsql'] = 'SQL 设置命令';
 $string['auth_dbsetupsqlhelp'] = '特定数据库设置 SQL 命令。过去常设置通信编码方式，例如 MySQL 和 PostgreSQL：<em>SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = '暂停用户 {$a->name} 其 id 为 {$a->id}';

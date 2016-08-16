@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'journal', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,6 +70,7 @@ $string['pluginadministration'] = 'Administration du module journal';
 $string['pluginname'] = 'Journal';
 $string['rate'] = 'Note';
 $string['removeentries'] = 'Supprimer toutes les entrées';
+$string['removemessages'] = 'Supprimer toutes les entrées du journal';
 $string['saveallfeedback'] = 'Enregistrer tous mes feedbacks';
 $string['showoverview'] = 'Afficher le sommaire des journaux sur le Tableau de bord';
 $string['showrecentactivity'] = 'Afficher les activités récentes';

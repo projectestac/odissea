@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignsubmission_file', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['enabled_help'] = 'Si se habilita, los estudiantes pueden subir uno o m�
 $string['eventassessableuploaded'] = 'Un fichero ha sido subido.';
 $string['file'] = 'Archivos enviados';
 $string['maxbytes'] = 'Tamaño máximo de archivo';
+$string['maxfiles'] = 'Número máximo de archivos por entrega';
+$string['maxfiles_help'] = 'Si los envíos de archivos están habilitados, cada tarea se puede configurar para que permita entregar como máximo este número de archivos.';
 $string['maxfilessubmission'] = 'Número máximo de archivos subidos';
 $string['maxfilessubmission_help'] = 'Si la entrega de archivos está habilitada, cada estudiante podrá subir hasta este número de archivos en sus envíos';
 $string['maximumsubmissionsize'] = 'Tamaño máximo de la entrega';

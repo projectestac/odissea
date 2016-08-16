@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,6 @@ $string['format_presentation'] = 'عرض';
 $string['format_spreadsheet'] = 'جداول';
 $string['format_text'] = 'نص';
 $string['format_video'] = 'فيديو';
-$string['hidden'] = 'مخفي';
 $string['instancedeleted'] = 'تم حذف المحفظة بنجاح';
 $string['instancenotdelete'] = 'فشل حذف المحفظة';
 $string['instancenotsaved'] = 'فشل حفظ المحفظة';

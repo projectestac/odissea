@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['entrypage'] = '逐人评分或逐项评分';
 $string['eventgradereportviewed'] = '简略视图报告已检查分数';
 $string['noscreens'] = '无法找到一个合适的简略视图屏幕';
 $string['notvalid'] = '不是一个有效的简略视图屏幕: {$a}';
 $string['override'] = '覆盖';
 $string['pluginname'] = '简略视图';
+$string['save'] = '保存';

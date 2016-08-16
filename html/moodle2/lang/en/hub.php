@@ -14,12 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-
 /**
  *
  * Hub related strings
  *
- * @package   hub
+ * @package   core_hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -99,7 +98,7 @@ $string['errorcronnoxmlrpc'] = 'XML-RPC must be enabled in order to update the r
 $string['errorhublisting'] = 'An error occurred when retrieving the hub listing from Moodle. Please try again later. ({$a})';
 $string['errorlangnotrecognized'] = 'The provided language code is unknown by Moodle. Please contact {$a}';
 $string['errorregistration'] = 'An error occurred during registration, please try again later. ({$a})';
-$string['errorunpublishcourses']= 'Due to an unexpected error, the courses could not be deleted on the hub. Try again later (recommended) or contact the hub administrator.';
+$string['errorunpublishcourses'] = 'Due to an unexpected error, the courses could not be deleted on the hub. Try again later (recommended) or contact the hub administrator.';
 $string['existingscreenshotnumber'] = '{$a} existing screenshots. You will be able to see these screenshots on this page, only once the hub administrator enables your course.';
 $string['existingscreenshots'] = 'Existing screenshots';
 $string['forceunregister'] = 'Yes, clean registration data';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = 'El connector Box portfolio s\'ha inhabilitat com a part de la recent actualització de Moodle a la versió 2.6. Per tornar-lo a habilitar, cal que el reconfigureu com es descriu a la documentació  {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'S\'ha inhabilitat aquest connector perquè requereix configuració, tal com es descriu a la documentació de la migració Box APIv1.';
-$string['apiv1migration_message_subject'] = 'Informació important sobre el connector Box portfolio';
 $string['clientid'] = 'ID del client';
 $string['clientsecret'] = 'Clau secreta del client';
 $string['existingfolder'] = 'Carpeta existent on posar el/s fitxer/s';

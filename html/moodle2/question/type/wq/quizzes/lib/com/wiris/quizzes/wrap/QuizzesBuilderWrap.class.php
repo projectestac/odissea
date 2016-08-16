@@ -18,6 +18,21 @@ class com_wiris_quizzes_wrap_QuizzesBuilderWrap extends com_wiris_quizzes_api_Qu
 			}
 		}
 	}}
+	public function getResourceUrl($name) {
+		try {
+			$this->wrapper->start();
+			$r = $this->builder->getResourceUrl($name);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function getConfiguration() {
 		try {
 			$this->wrapper->start();

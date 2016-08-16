@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,7 +72,6 @@ $string['testgs'] = 'ghostscript 경로 테스트';
 $string['test_notestfile'] = '테스트 PDF가 없습니다.';
 $string['tool'] = '도구';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = '저장되지 않은 변경사항';
 $string['viewfeedbackonline'] = '주석된 PDF 보기 ...';
 $string['white'] = '하얀';
 $string['yellow'] = '노랑';

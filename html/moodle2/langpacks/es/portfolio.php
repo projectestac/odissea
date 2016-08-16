@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML con adjuntos';
 $string['format_spreadsheet'] = 'Hoja de cálculo';
 $string['format_text'] = 'Texto plano';
 $string['format_video'] = 'Video';
-$string['hidden'] = 'Oculto';
 $string['highdbsizethreshold'] = 'Dbsize de transferencia alta';
 $string['highdbsizethresholddesc'] = 'Número de registros en la base de datos por encima del cual se consiederará que la transferencia ocupa demasiado tiempo';
 $string['highfilesizethreshold'] = 'Tamaño de archivo de transferencia alto';
@@ -114,6 +113,8 @@ $string['instanceismisconfigured'] = 'El ejemplo de portafolios está mal config
 $string['instancenotdelete'] = 'Fallo al eliminar el portafolios';
 $string['instancenotsaved'] = 'Fallo al guardar el portafolios';
 $string['instancesaved'] = 'Postafolios guardado con éxito';
+$string['intro'] = 'El contenido que ha creado, como entrega de tareas, entradas en foros y blogs, pueden ser exportadas a un portafolio o descargadas.<br>
+Cualquier portafolio que no desee usar puede ser ocultado para que no aparezca como una opción a la que exportar contenido.';
 $string['invalidaddformat'] = 'Formato de agregación no válido pasado a portfolio_add_button. ({$a}) Debe ser uno de PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'No se ha podido encontrar esa propiedad ({$a}) del portfolio_button';
 $string['invalidconfigproperty'] = 'No se ha podido encontrar esa propiedad de la configuración ({$a->property} de {$a->class})';
@@ -178,6 +179,7 @@ $string['save'] = 'Guardar';
 $string['selectedformat'] = 'Elegir el formato de exportación';
 $string['selectedwait'] = '¿Elegir esperar?';
 $string['selectplugin'] = 'Seleccione el destino';
+$string['showhide'] = 'Mostrar / ocultar';
 $string['singleinstancenomultiallowed'] = 'Solo está disponible una instancia del plugin de portafolio, no está soportado realizar múltiples exportaciones por sesión, y ahora mismo hay una exportación activa en la sesión usando este plugin';
 $string['somepluginsdisabled'] = 'Algunos plugins de portafolio han sido deshabilitados porque están mal configurados o tienen la siguientes dependencias mal configuradas:';
 $string['sure'] = '¿Confirma que desea eliminar "{$a} \'? Esta acción no se podrá deshacer.';

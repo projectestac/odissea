@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,6 +103,7 @@ $string['cnfshowgroup'] = 'Разделять по группам?';
 $string['cnfsortkey'] = 'По умолчанию сортировать по полю';
 $string['cnfsortorder'] = 'По умолчанию сортировать';
 $string['cnfstudentcanpost'] = 'По умолчанию студенты могут посылать записи?';
+$string['cnftabs'] = 'Выбрать видимые вкладки для этого формата глоссария';
 $string['comment'] = 'Комментарий';
 $string['commentdeleted'] = 'Комментарий был удален.';
 $string['comments'] = 'Комментарии';
@@ -350,6 +351,8 @@ $string['rsstype_help'] = '<h2>RSS рассылка из глоссария</h2>
 
 <li><b>Без автора:</b> Рассылка не будет включать имя автора каждой статьи.</li>
 </ul>';
+$string['search:activity'] = 'Глоссарий — информация об элементе курса';
+$string['search:entry'] = 'Глоссарий — записи';
 $string['searchindefinition'] = 'Полнотекстовый поиск';
 $string['secondaryglossary'] = 'Вторичный глоссарий';
 $string['showall'] = 'Показать ссылку «Все»';
@@ -400,6 +403,7 @@ $string['usedynalink_help'] = '<h2> Автоматические ссылки н
 <p> Если вы хотите, чтобы некоторый текст в курсе не связывался с глоссарием, вы должны заключить его в теги &lt;nolink&gt; и &lt;/nolink&gt;. </p>
 
 <p> Заметьте, что названия категорий также связываются. </p>';
+$string['visibletabs'] = 'Видимые вкладки';
 $string['waitingapproval'] = 'Ожидающие одобрения';
 $string['warningstudentcapost'] = '(Доступно только, если глоссарий не главный)';
 $string['withauthor'] = 'Слова с авторами';

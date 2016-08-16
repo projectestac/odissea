@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'install', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['caution'] = '原因';
 $string['chooselanguage'] = '选择一种语言';
 $string['chooselanguagehead'] = '选择一种语言';
 $string['chooselanguagesub'] = '请选择在安装过程中使用的语言。这个语言也会成为网站的缺省语言，不过以后可以随时更改。';
+$string['cliadminemail'] = '新的管理员电子邮件地址';
 $string['cliadminpassword'] = '新管理用户密码';
 $string['cliadminusername'] = '管理帐号用户名';
 $string['clialreadyconfigured'] = 'config.php 文件已存在。如果您想安装此网站，请使用 admin/cli/install_database.php。';

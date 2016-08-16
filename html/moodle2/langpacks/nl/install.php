@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'install', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,13 +35,15 @@ $string['caution'] = 'Opgelet';
 $string['chooselanguage'] = 'Kies een taal';
 $string['chooselanguagehead'] = 'Kies een taal';
 $string['chooselanguagesub'] = 'Kies een taal voor de installatie. Deze taal zal ook als standaardtaal voor de site gebruikt worden, maar die instelling kun je later nog wijzigen.';
+$string['cliadminemail'] = 'Nieuw e-mailadres beheerder';
 $string['cliadminpassword'] = 'Nieuw beheerderswachtwoord';
 $string['cliadminusername'] = 'Gebruikersnaam voor de beheerdersaccount';
-$string['clialreadyconfigured'] = 'Bestand config.php bestaat al, maak aub gebruik van admin/cli/install_database.php indien je deze site wenst te installeren.';
-$string['clialreadyinstalled'] = 'Bestand config.php bestaat al. Gebruik admin/cil/upgrade.php om je site te upgraden.';
+$string['clialreadyconfigured'] = 'Het configuratiebestand config.php bestaat al. Maak aub gebruik van admin/cli/install_database.php als je Moodle voor deze site wenst te installeren.';
+$string['clialreadyinstalled'] = 'Het configuratiebestand config.php bestaat al. Maak aub gebruik van admin/cli/install_database.php als je Moodle voor deze site wenst te upgraden.';
 $string['cliinstallfinished'] = 'Installatie met succes beëindigd.';
 $string['cliinstallheader'] = 'Moodle {$a} command line installatieprogramma';
 $string['climustagreelicense'] = 'In niet interactieve modus moet je akkoord gaan met de licentievoorwaarden door de --agree-license optie op te geven.';
+$string['cliskipdatabase'] = 'Databank-installatie overslaan';
 $string['clitablesexist'] = 'Databanktabellen bestaan al, cli-installatie kan niet verder gaan.';
 $string['compatibilitysettings'] = 'Bezig met je PHP-instellingen te controleren ...';
 $string['compatibilitysettingshead'] = 'Bezig met je PHP-instellingen te controleren ...';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,6 @@ $string['monitorenabled'] = 'Die Beobachtung von Events ist jetzt aktiviert.';
 $string['monitor:managerules'] = 'Regeln zur Event-Beobachtung verwalten';
 $string['monitor:managetool'] = 'Event-Beobachtung  de-/aktivieren';
 $string['monitor:subscribe'] = 'Benachrichtung für Event-Ereignisse abonnieren';
-$string['nopermission'] = 'Keine Berechtigung';
 $string['norules'] = 'Es gibt zur Zeit keine Event-Benachrichtungsregeln';
 $string['pluginname'] = 'Event-Beobachtung';
 $string['processevents'] = 'Events abfragen';
@@ -88,6 +87,7 @@ $string['ruledeletesuccess'] = 'Regel erfolgreich gelöscht';
 $string['rulehelp'] = 'Regeldetails';
 $string['rulehelp_help'] = 'Diese Regel kontrolliert, ob ein Event \'{$a->eventname}\' in \'{$a->eventcomponent}\'  {$a->frequency} fach innerhalb von {$a->minutes} Minute(n) sich ereignet hat.';
 $string['rulename'] = 'Regelname';
+$string['rulenopermission'] = 'Sie haben keine Berechtigung, um Ereignisse zu abonnieren.';
 $string['rulenopermissions'] = 'Sie haben nicht die Berechtigung  "{$a} eine Regel"';
 $string['rulescansubscribe'] = 'Regeln, die Sie abonnieren können';
 $string['selectacourse'] = 'Kurs auswählen';

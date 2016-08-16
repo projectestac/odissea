@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Adicionar';
 $string['alltags'] = 'Todas as palavras-chave:';
+$string['anycollection'] = 'Qualquer';
+$string['anytype'] = 'Todas';
 $string['arrowtitle'] = 'Clique para inserir as palavras a destacar (a letras cinzentas)';
 $string['configtitle'] = 'Título do bloco';
 $string['coursetags'] = 'Palavras-chave da disciplina:';
-$string['defaultdisplay'] = 'Tipo de palavra-chave a mostrar';
+$string['defaultdisplay'] = 'Mostrar palavras-chave';
 $string['disabledtags'] = 'As palavras-chave estão desativadas';
 $string['edit'] = 'editar…';
 $string['editdeletemytag'] = 'Apagar senha desta disciplina';
@@ -67,12 +69,19 @@ $string['mytags'] = 'As minhas palavras-chave';
 $string['notagsyet'] = 'Ainda não possui palavras-chave';
 $string['please'] = 'Por favor';
 $string['pluginname'] = 'Palavras-chave';
+$string['recursivecontext'] = 'Incluir contextos filho';
+$string['recursivecontext_help'] = 'Se desativar esta opção, serão mostradas as palavras-chave de itens no contexto especificado acima, mas não as de itens nos contextos filho. Por exemplo, as palavras-chave da disciplina serão exibidas, mas não as das suas atividades.';
 $string['select'] = 'Selecione…';
 $string['showcoursetags'] = 'Mostrar palavras-chave da disciplina';
 $string['showcoursetagsdef'] = 'Mostrar a funcionalidade de associação de palavras-chave às disciplinas no bloco Palavras-chave, permitindo aos alunos associar disciplinas a palavras-chave';
+$string['standardonly'] = 'Apenas palavras-chave oficiais';
 $string['suggestedtagthisunit'] = 'Palavra chave sugerida para esta disciplina:';
+$string['tagcollection'] = 'Coleção de palavras-chave';
+$string['tagcollection_help'] = 'Selecione a coleção de palavras-chave que pretende utilizar. Se escolher "Todas", serão exibidas as palavras-chave de todas as coleções, exceto as marcadas com *';
+$string['taggeditemscontext'] = 'Contexto dos Itens com a palavra-chave';
+$string['taggeditemscontext_help'] = 'Pode limitar a nuvem de palavras-chave para as que estão presentes na categoria da disciplina, disciplina ou módulo atuais';
 $string['tags'] = 'palavras-chave';
 $string['tags:addinstance'] = 'Adicionar um novo bloco Palavras-chave';
-$string['tags:myaddinstance'] = 'Adicionar um novo bloco Palavras-chave à Minha página principal';
+$string['tags:myaddinstance'] = 'Adicionar um novo bloco Palavras-chave ao Painel do utilizador';
 $string['tagthisunit'] = 'Senha desta disciplina';
 $string['tagunits'] = 'para marcar as suas disciplinas favoritas';

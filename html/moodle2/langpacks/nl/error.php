@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'error', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,7 @@ $string['cannoteditcomment'] = 'Je kunt alleen je eigen commentaren bewerken!';
 $string['cannoteditcommentexpired'] = 'Je kunt dit niet bewerken. De bewerktijd is voorbij!';
 $string['cannoteditpostorblog'] = 'Je kunt geen blogs posten of bewerken.';
 $string['cannoteditsiteform'] = 'Je kunt de startpagina niet bewerken met dit formulier';
+$string['cannotedituserpreferences'] = 'Kan de gebruikersvoorkeuren niet bewerken';
 $string['cannotedityourprofile'] = 'Je kunt je eigen profiel niet bewerken.';
 $string['cannotexecduringupgrade'] = 'Kan niet uitgevoerd worden tijdens upgrade';
 $string['cannotfindcategory'] = 'Kan geen categorierecord vinden voor databank met ID - {$a}';
@@ -126,6 +127,7 @@ $string['cannotreadfile'] = 'Kan bestand niet lezen ({$a})';
 $string['cannotreadtmpfile'] = 'Fout bij het lezen van het tijdelijk bestand';
 $string['cannotreaduploadfile'] = 'Kon geüpload bestand niet lezen';
 $string['cannotremovefrommeta'] = 'Kon geselecteerde cursus niet verwijderen uit deze koepelcursus';
+$string['cannotreprocessgrades'] = 'Kon cijfers voor deze activiteit niet opnieuw berekenen {$a}';
 $string['cannotresetguestpwd'] = 'Je kunt het wachtwoord voor de gast-account niet wijzigen';
 $string['cannotresetmail'] = 'Fout bij het opnieuw instellen van je wachtwoord en bij het versturen van de bevestigingsmail daarvoor.';
 $string['cannotresetthisrole'] = 'Kan deze rol niet terug op standaardinstellingen zetten';
@@ -233,8 +235,10 @@ $string['errorcreatingfile'] = 'Fout bij het maken van bestand "{$a}"';
 $string['errorcreatingrole'] = 'Fout bij het aanmaken van de rol';
 $string['errorfetchingrssfeed'] = 'RSS-feed ophalen mislukt';
 $string['erroronline'] = 'Fout op lijn {$a}';
+$string['erroroutput'] = 'Foute output, de automatische verwijzing wordt uitgeschakeld.';
 $string['errorparsingxml'] = 'Fout bij het verwerken van XML: {$a->errorstring} op lijn {$a->errorline}, char {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Fout bij het verwerken van het archiefbestand';
+$string['error_question_answers_missing_in_db'] = 'Kon geen antwoord vinden dat overeenkomt met "{$a->answer}" in de question_answers database tabel. Dit gebeurde tijdens het terugzetten van de vraag met ID $a->filequestionid} in het back-upbestand, dat overeenkomt met de bestaande vraag met id {$a->dbquestionid} in de databank.';
 $string['errorreadingfile'] = 'Fout bij het lezen van bestand "{$a}"';
 $string['errorsavingrequest'] = 'Er is een fout opgetreden bij het bewaren van je vraag';
 $string['errorsettinguserpref'] = 'Fout bij het instellen van gebruikersvoorkeuren';
@@ -256,6 +260,7 @@ $string['forumblockingtoomanyposts'] = 'Je hebt het maximale aantal berichten vo
 $string['generalexceptionmessage'] = 'Uitzondering - {$a}';
 $string['gradecantregrade'] = 'Er is een fout gebeurd tijdens het berekenen van de cijfers: {$a}';
 $string['gradepubdisable'] = 'Het publiceren van cijfers is uitgeschakeld';
+$string['gradesneedregrading'] = 'De cursuscijvers moeten herberekend worden';
 $string['groupalready'] = 'Deze gebruiker behoort al tot groep {$a}';
 $string['groupexistforcourse'] = 'Groep "{$a}" bestaat al in deze cursus';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}: Groep "{$a->name}" met ID number  "{$a->idnumber}" bestaat al in deze cursus';
@@ -279,6 +284,7 @@ $string['idnumbertaken'] = 'Dit ID-nummer is al in gebruik';
 $string['idnumbertoolong'] = 'ID nummer is te lang';
 $string['importformatnotimplement'] = 'Het importeren van dit bestandsforaat is nog niet geïmplementeerd.';
 $string['incorrectext'] = 'Bestand heeft een verkeerde extentie';
+$string['inplaceeditableerror'] = 'Fout bij het updaten van de processor';
 $string['installproblem'] = 'Het is gewoonlijk niet mogelijk om fouten te herstellend die tijdens een installatie opgetreden zijn. Je kunt best een nieuwe database maken of een ander tabelprefix gebruiken als je de installatie opnieuw wil proberen.';
 $string['internalauthpassworderror'] = 'Ontbrekend wachtwoord of ongeldig wachtwoordbeleid voor interne authenticatie';
 $string['invalidaccess'] = 'Deze pagina is niet correct opgevraagd';
@@ -301,12 +307,13 @@ $string['invalidcomponent'] = 'Ongeldige componentnaam';
 $string['invalidconfirmdata'] = 'Ongeldige bevestingingsgegevens';
 $string['invalidcontext'] = 'Context is niet geldig';
 $string['invalidcourse'] = 'Ongeldige cursus';
+$string['invalidcourseformat'] = 'Ongeldig cursusformaat';
 $string['invalidcourseid'] = 'Je probeert een ongeldig cursus ID te geven';
 $string['invalidcourselevel'] = 'Contextniveau niet juist';
 $string['invalidcoursemodule'] = 'Cursus module ID niet juist';
 $string['invalidcoursenameshort'] = 'Korte cursusnaam niet geldig';
 $string['invaliddata'] = 'Ingestuurde gegevens niet geldig.';
-$string['invaliddatarootpermissions'] = 'Ongeldige rechten gevonden in $CFG->dataroot map, de beheerder moet de rechten herstellen.';
+$string['invaliddatarootpermissions'] = 'Ongeldige rechten gevonden tijdens het maken van een map. Schakel foutopsporing aan om meer details te krijgen.';
 $string['invaliddevicetype'] = 'Ongeldig toesteltype';
 $string['invalidelementid'] = 'Element ID niet geldig';
 $string['invalidentry'] = 'Dit is niet geldig';
@@ -348,6 +355,7 @@ $string['invalidsourcefield'] = 'Het bronveld van het kladbestand is niet geldig
 $string['invalidstatedetected'] = 'Er ging wat fout: {$a}. Dit zou normaal niet mogen gebeuren';
 $string['invalidurl'] = 'Ongeldige url';
 $string['invaliduser'] = 'Ongeldige gebruiker';
+$string['invaliduserdata'] = 'Ingeldige gebruikersgegevens: {$a}';
 $string['invaliduserfield'] = 'Ongeldig gebruikersveld: {$a}';
 $string['invaliduserid'] = 'Ongeldig gebruikersID';
 $string['invalidusername'] = 'De opgegeven gebruikersnaam bevat ongeldige tekens.';
@@ -368,6 +376,7 @@ $string['loginasnoenrol'] = 'Je kunt aanmelden en afmelden bij een cursus niet g
 $string['loginasonecourse'] = 'Je kunt deze cursus niet openen.<br />Je moet je "Login als"-sessie beëindigen voor je een andere cursus opent.';
 $string['maxareabytes'] = 'Het bestand is groter dan de beschikbare plaats.';
 $string['maxbytes'] = 'Het bestand is groter dan de maximaal toegestane grootte.';
+$string['maxbytesfile'] = 'Het bestand {$a->file} is te groot. De maximale grootte die je kunt uploaden is {$a->size}.';
 $string['messagingdisable'] = 'Berichten zijn uitgeschakeld op deze site';
 $string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet het noodzakelijke uitvoerbaar bestand downloaden voor jouw PHP_OS platform van <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, of de C bronbestanden bekomen van  <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
 $string['mimetexnotexecutable'] = 'Aangepast mimetex bestand is niet uitvoerbaar!';
@@ -452,6 +461,7 @@ $string['prefixcannotbeempty'] = '<p>Fout: databank tabel prefix kan niet leeg z
 <p>De site-beheerder moet dit probleem oplossen.</p>';
 $string['prefixtoolong'] = '<p>Fout: databank tabel prefix is te lang ({$a->dbfamily})</p>
 <p>De site-beheerder moet dit probleem oplossen. De maximale lengte voor de tabelprefix in {$a->dbfamily} is {$a->maxlength} tekens.</p>';
+$string['privatefilesupload'] = 'Rechtstreeks uploaden naar privé-bestanden van een gebruiker wordt niet meer ondersteund. Upload naar een ontwerp-zone en verplaats de bestanden dan met core_user::add_user_private_files';
 $string['processingstops'] = 'Verwerking stopt hier. De overgebleven records worden genegeerd';
 $string['protected_cc_not_supported'] = 'Protected cartridge niet ondersteund.';
 $string['querystringcannotbeempty'] = 'De query string kan niet leeg zijn.';

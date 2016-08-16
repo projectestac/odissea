@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_xmldb', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,6 +108,8 @@ $string['fieldsusedinindex'] = 'Aquest camp s\'utilitza com a índex';
 $string['fieldsusedinkey'] = 'Aquest camp s\'utilitza com a clau.';
 $string['filemodifiedoutfromeditor'] = 'Avís: el fitxer s\'ha modificat localment mentre s\'utilitzava l\'editor XMLDB. Si el deseu, se sobreescriuran els canvis locals.';
 $string['filenotwriteable'] = 'Fitxer sense permís d\'escriptura';
+$string['fkunknownfield'] = 'La clau forana {$a->keyname} en la taula {$a->tablename} apunta a un camp {$a->reffield} que no existeix a la taula referenciada {$a->reftable}.';
+$string['fkunknowntable'] = 'La clau forana {$a->keyname} en la taula {$a->tablename} apunta a una taula {$a->reftable} que no existeix.';
 $string['fkviolationdetails'] = 'La clau forana {$a->keyname} en la taula {$a->tablename} és violada en  {$a->numviolations} de {$a->numrows} files.';
 $string['float2numbernote'] = 'Avís: tot i que els camps "float" són 100% compatibles amb XMLDB, es recomana migrar a camps "number".';
 $string['floatincorrectdecimals'] = 'Nombre incorrecte de decimals per a camp float';
@@ -172,6 +174,8 @@ $string['selecttable'] = 'Selecciona taula:';
 $string['table'] = 'Taula:';
 $string['tablenameempty'] = 'El nom de taula no pot estar buit';
 $string['tables'] = 'Taules';
+$string['unknownfield'] = 'Està referenciant un camp desconegut';
+$string['unknowntable'] = 'Està referenciant una taula desconeguda';
 $string['unload'] = 'Descarrega';
 $string['up'] = 'Amunt';
 $string['view'] = 'Mostra';

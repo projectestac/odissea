@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cache', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['area'] = 'Eremua';
 $string['cacheadmin'] = 'Cachearen kudeaketa';
 $string['cacheconfig'] = 'Ezarpenak';
 $string['cachedef_calendar_subscriptions'] = 'Egutegiaren harpidetzak';
+$string['cachedef_capabilities'] = 'Sistemako gaitasunen zerrenda';
 $string['cachedef_config'] = 'Cachearen ezarpenak';
 $string['cachedef_coursecat'] = 'Ikastaro-kategorien zerrenda erabiltzaile jakin batentzat';
 $string['cachedef_coursecattree'] = 'Ikastaro-kategorien zuhaitza';
@@ -58,6 +59,7 @@ $string['editsharing'] = 'Editatu partekatzea';
 $string['editstore'] = 'Editatu biltegia';
 $string['editstoresuccess'] = 'Ondo editatu da cache-biltegia.';
 $string['lockdefault'] = 'Berezkoa';
+$string['locking'] = 'Blokeatzen';
 $string['lockname'] = 'Izena';
 $string['locktype'] = 'Mota';
 $string['lockuses'] = 'Erabilerak';
@@ -88,3 +90,4 @@ $string['storeready'] = 'Prest';
 $string['storerequiresattention'] = 'Zure arreta behar du.';
 $string['stores'] = 'Biltegiak';
 $string['supports'] = 'Euskarriak';
+$string['testperformance'] = 'Probatu errendimendua';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Leerfeld für {no} weitere Wahlmöglichkeiten';
 $string['answer'] = 'Antwort';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
-$string['infinite'] = 'Unendlich';
+$string['infinite'] = 'Unbegrenzt';
 $string['pleaseputananswerineachbox'] = 'Schieben Sie eine Antwort in jedes Feld.';
 $string['pluginname'] = 'Drag-and-drop auf Text';
 $string['pluginnameadding'] = '"Drag-and-drop auf Text" hinzufügen';
 $string['pluginnameediting'] = '"Drag-and-drop auf Text" bearbeiten';
-$string['pluginname_help'] = 'Geben Sie einen Text in der Form "Der [[1]] sprang über den [[2]]" ein und schreiben Sie mögliche Wörter für die Lücken 1 und 2 unten auf.';
-$string['pluginnamesummary'] = 'Fehlende Wörter in einem Text werden per Drag and Drop ausgefüllt.';
+$string['pluginname_help'] = 'Fragetexte mit Drag-and-drop-Lücken benötigen Platzhalter, um die richtigen Antworten in die entsprechenden Lücken im Fragetext zuordnen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Antworten können gruppiert werden, um alle Antwortenmöglichkeiten für eine Lücke farblich zu markieren. Wenn Antwortmöglichkeiten als \'unbegrenzt\' markiert sind, können sie in mehr als einer Lücke verwendet werden.';
+$string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden per Drag-and-drop ausgefüllt.';

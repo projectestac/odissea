@@ -82,10 +82,6 @@ class block_course_summary extends block_base {
         return $this->headerhidden;
     }
 
-    function preferred_width() {
-        return 210;
-    }
-
 }
 
 

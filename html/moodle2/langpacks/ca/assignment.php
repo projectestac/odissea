@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignment', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,9 +40,6 @@ $string['modulenameplural'] = 'Tasques 2.2 (inhabilitades)';
 $string['page-mod-assignment-submissions'] = 'Pàgina de trameses del mòdul de tasques';
 $string['page-mod-assignment-view'] = 'Pàgina principal del mòdul de tasques';
 $string['page-mod-assignment-x'] = 'Pàgina de qualsevol mòdul de tasques';
-$string['pendingupgrades_message_content'] = 'Com a part de l\'actualització a Moodle 2.7, s\'ha inhabilitat l\'activitat antiga Tasques 2.2. Les còpies de seguretat de l\'activitat antiga Tasques 2.2 es restauraran perfectament a la nova activitat de tasques. Totes les instàncies restants de l\'activitat antiga Tasca 2.2 s\'han d\'actualitzar utilitzant l\'eina d\'actualització de tasques {$a->docsurl}. Hi ha {$a->count} instàncies de l\'activitat antiga Tasca 2.2 en aquest lloc que requereixen actualització. Els usuaris no podran accedir al contingut d\'aquestes activitats fins que s\'actualitzin.';
-$string['pendingupgrades_message_small'] = 'Aquest connector ha estat inhabilitat. Totes les tasques restants s\'han d\'actualitzar al nou mòdul de tasques utilitzant l\'eina d\'actualització de tasques.';
-$string['pendingupgrades_message_subject'] = 'Informació important sobre les Tasques 2.2';
 $string['pluginadministration'] = 'Administració de Tasques 2.2 (inhabilitat)';
 $string['pluginname'] = 'Tasca (2.2) (inhabilitat)';
 $string['upgradenotification'] = 'Aquesta activitat es basa en un mòdul de tasca antic.';

@@ -24,48 +24,52 @@ Feature: Posting to forums in a course with no groups behaves correctly
     And I follow "Course 1"
     And I follow "Standard forum"
     When I click on "Add a new discussion topic" "button"
+    Then I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Teacher -> All participants |
       | Message | Teacher -> All participants |
     And I press "Post to forum"
     And I wait to be redirected
-    Then I should see "Teacher -> All participants"
+    And I should see "Teacher -> All participants"
 
   Scenario: Teachers can post in forum with separate groups
     Given I log in as "teacher1"
     And I follow "Course 1"
     And I follow "Separate forum"
     When I click on "Add a new discussion topic" "button"
+    Then I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Teacher -> All participants |
       | Message | Teacher -> All participants |
     And I press "Post to forum"
     And I wait to be redirected
-    Then I should see "Teacher -> All participants"
+    And I should see "Teacher -> All participants"
 
   Scenario: Teachers can post in forum with visible groups
     Given I log in as "teacher1"
     And I follow "Course 1"
     And I follow "Visible forum"
     When I click on "Add a new discussion topic" "button"
+    Then I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Teacher -> All participants |
       | Message | Teacher -> All participants |
     And I press "Post to forum"
     And I wait to be redirected
-    Then I should see "Teacher -> All participants"
+    And I should see "Teacher -> All participants"
 
   Scenario: Students can post in standard forum
     Given I log in as "student1"
     And I follow "Course 1"
     And I follow "Standard forum"
     When I click on "Add a new discussion topic" "button"
+    Then I should not see "Post a copy to all groups"
     And I set the following fields to these values:
       | Subject | Student -> All participants |
       | Message | Student -> All participants |
     And I press "Post to forum"
     And I wait to be redirected
-    Then I should see "Student -> All participants"
+    And I should see "Student -> All participants"
 
   Scenario: Students cannot post in forum with separate groups
     Given I log in as "student1"

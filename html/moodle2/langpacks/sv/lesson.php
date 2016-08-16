@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lesson', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -436,8 +436,6 @@ som kollar frågorna eller navigerar genom lektionen. Att kontrollera antalet f�
 på värden som är lagrade i databasen och (distans)lärares försök att besvara frågorna
 registreras inte. Som(distans)lärare förväntas Du förstås veta svaren!</p>';
 $string['maximumnumberofattemptsreached'] = 'Du har uppnått maximalt antal tillåtna försök - Du flyttas nu vidare till nästa sida.';
-$string['maxtime'] = 'Tidsbegränsning (minuter)';
-$string['maxtimewarning'] = 'Du har ??? minut/er på Dig att avsluta lektionen.';
 $string['mediaclose'] = 'Visa en knapp för att stänga:';
 $string['mediafile'] = 'Popup-fönster för fil eller webbsida';
 $string['mediafile_help'] = '<p>Det här kommer att skapa ett popup-fönster innehållande en fil (t.ex. en mp3-fil) eller en webbsida i början av en lektion. Det kommer också att skapas en länk på varje sida i lektionen. Med den länken kan man öppna popup-fönstret igen om det skulle behövas.</p>
@@ -724,6 +722,7 @@ $string['reviewlesson'] = 'Visa lektion igen';
 $string['reviewquestionback'] = 'Ja, jag vill försöka igen';
 $string['reviewquestioncontinue'] = 'Nej, jag vill gå vidare till nästa fråga';
 $string['sanitycheckfailed'] = 'Kontrollen misslyckades. Det här försöket har tagits bort';
+$string['save'] = 'Spara';
 $string['savechanges'] = 'Spara ändringar';
 $string['savechangesandeol'] = 'Spara alla ändringar och gå till slutet av lektionen.';
 $string['savepage'] = 'Spara sida';

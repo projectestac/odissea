@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,7 +87,6 @@ $string['calculationview'] = 'Εμφάνιση υπολογισμού';
 $string['cannotaccessgroup'] = 'Δεν είναι δυνατή η πρόσβαση στους βαθμούς της επιλεγμένης ομάδας, συγγνώμη.';
 $string['categories'] = 'Κατηγορίες';
 $string['categoriesanditems'] = 'Κατηγορίες και στοιχεία';
-$string['categoriesedit'] = 'Επεξεργασία κατηγοριών και στοιχείων';
 $string['category'] = 'Κατηγορία';
 $string['categoryedit'] = 'Επεξεργασία κατηγορίας';
 $string['categoryname'] = 'Όνομα κατηγορίας';
@@ -190,7 +189,6 @@ $string['forelementtypes'] = 'για τους επιλεγμένου {$a}';
 $string['forstudents'] = 'Για Μαθητές';
 $string['full'] = 'Πλήρες';
 $string['fullmode'] = 'Πλήρης εμφάνιση';
-$string['fullview'] = 'Πλήρης εμφάνιση';
 $string['generalsettings'] = 'Γενικές ρυθμίσεις';
 $string['grade'] = 'Βαθμός';
 $string['gradeadministration'] = 'Διαχείριση βαθμολογιών';

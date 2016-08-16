@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,14 +30,15 @@ $string['add'] = '增加条目';
 $string['addcomment'] = '添加评论';
 $string['addentries'] = '添加条目';
 $string['addtemplate'] = '添加模板';
-$string['advancedsearch'] = '高级查找';
+$string['advancedsearch'] = '高级搜索';
 $string['allowcomments'] = '允许评论词条';
 $string['alttext'] = '可替代文本';
+$string['approvalstatus'] = '审核结果';
 $string['approve'] = '批准';
 $string['approved'] = '许可';
 $string['areacontent'] = '字段';
 $string['ascending'] = '升序';
-$string['asearchtemplate'] = '高级查找模版';
+$string['asearchtemplate'] = '高级搜索模版';
 $string['atmaxentry'] = '您输入的条目数已达到上限！';
 $string['authorfirstname'] = '姓';
 $string['authorlastname'] = '名';
@@ -131,6 +132,7 @@ $string['entrieslefttoaddtoview'] = '在查看其他参与者的条目前，您�
 $string['entry'] = '条目';
 $string['entrysaved'] = '您的条目已保存';
 $string['errormustbeteacher'] = '只有教师能使用此页';
+$string['errormustsupplyvalue'] = '这儿你必须提供一个值。';
 $string['errorpresetexists'] = '选择的名字已经被使用';
 $string['example'] = '数据库模块样例';
 $string['excel'] = 'Excel';
@@ -179,7 +181,7 @@ $string['fromfile_help'] = '<p align=\'center\'><strong>从Zip文件导入</stro
 $string['generateerror'] = '有部分文件未被生成！';
 $string['header'] = '头';
 $string['headeraddtemplate'] = '定义修改条目的界面';
-$string['headerasearchtemplate'] = '为高级查找定义接口';
+$string['headerasearchtemplate'] = '为高级搜索定义接口';
 $string['headercsstemplate'] = '为其它模板定义本地 CSS 样式';
 $string['headerjstemplate'] = '为其他模板自定义 Javascript';
 $string['headerlisttemplate'] = '定义浏览多个条目的界面';
@@ -224,7 +226,7 @@ $string['modulename'] = '数据库';
 $string['modulename_help'] = '数据库活动模块允许参与者创建、维护和搜索一组记录条目。这些条目的格式和结构几乎是没有限制的，可包括图像、文件、超链接、数字以及文本等各种形式。';
 $string['modulenameplural'] = '数据库';
 $string['more'] = '更多';
-$string['moreurl'] = '更多 URL';
+$string['moreurl'] = '更多 网页地址';
 $string['movezipfailed'] = '移动压缩文件失败';
 $string['multientry'] = '重复的条目';
 $string['multimenu'] = '菜单(多选)';
@@ -240,7 +242,7 @@ $string['namepicture'] = '图片字段';
 $string['nameradiobutton'] = '单选按钮字段';
 $string['nametext'] = '文本字段';
 $string['nametextarea'] = '文本域字段';
-$string['nameurl'] = 'URL 字段';
+$string['nameurl'] = '网页地址字段';
 $string['newentry'] = '新条目';
 $string['newfield'] = '创建一个新字段';
 $string['newfield_help'] = '<p align="center"><strong>字段</strong></p>
@@ -316,7 +318,7 @@ $string['saveaspreset_help'] = '保存为预设值功能会发布此模板和字
 $string['savesettings'] = '保存设置';
 $string['savesuccess'] = '保存成功。您的预设将在全站内可用。';
 $string['savetemplate'] = '保存模板';
-$string['search'] = '查找';
+$string['search'] = '搜索';
 $string['selectedrequired'] = '全选';
 $string['showall'] = '显示所有条目';
 $string['single'] = '独立视图显示';
@@ -346,7 +348,7 @@ $string['uploadrecords_help'] = '可以通过上传文本文件来更新条目�
 * 第一条记录包含一串用来定义文件其他部分格式的字段名
 
 字段包围符是一个包围每个记录中的每个字段的字符。通常可以不对它进行设定。';
-$string['url'] = 'URL';
+$string['url'] = '网页地址';
 $string['usedate'] = '包含到搜索中。';
 $string['usestandard'] = '使用一个预设';
 $string['usestandard_help'] = '请在列表中选择要使用的预设值。（对于您使用“另存为预设值”添加到列表中的预设，会显示删除选项）';

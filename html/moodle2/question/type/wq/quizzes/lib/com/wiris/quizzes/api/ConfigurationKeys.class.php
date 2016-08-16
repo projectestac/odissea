@@ -17,5 +17,8 @@ class com_wiris_quizzes_api_ConfigurationKeys {
 	static $REFERER_URL = "quizzes.referer.url";
 	static $HAND_ENABLED = "quizzes.hand.enabled";
 	static $WIRISLAUNCHER_URL = "quizzes.wiris.url";
+	static $CROSSORIGINCALLS_ENABLED = "quizzes.crossorigincalls.enabled";
+	static $RESOURCES_STATIC = "quizzes.resources.static";
+	static $RESOURCES_URL = "quizzes.resources.url";
 	function __toString() { return 'com.wiris.quizzes.api.ConfigurationKeys'; }
 }

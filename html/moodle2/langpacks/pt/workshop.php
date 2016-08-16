@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshop', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,10 @@ $string['allocation'] = 'Atribuição de trabalhos';
 $string['allocationconfigured'] = 'Atribuição de trabalhos configurada';
 $string['allocationdone'] = 'Atribuição de trabalhos realizada com sucesso';
 $string['allocationerror'] = 'Erro na atribuição de trabalhos';
+$string['allowedfiletypesforoverallfeedback'] = 'Tipos de ficheiros que são permitidos anexar ao feedback global';
+$string['allowedfiletypesforoverallfeedback_help'] = 'É possível restringir os tipos de ficheiros que podem ser anexados ao feedback global indicando uma lista dos tipos permitidos separados por vírgulas, por exemplo \'mp4, mp3, png, jpg\'. Se este campo for deixado em branco, todos os tipos serão permitidos.';
+$string['allowedfiletypesforsubmission'] = 'Tipos de ficheiros que são permitidos anexar à submissão';
+$string['allowedfiletypesforsubmission_help'] = 'É possível restringir os tipos de ficheiros que podem ser anexados à submissão indicando uma lista dos tipos permitidos separados por vírgulas, por exemplo \'mp4, mp3, png, jpg\'. Se este campo for deixado em branco, todos os tipos serão permitidos.';
 $string['allsubmissions'] = 'Todos os trabalhos submetidos';
 $string['alreadygraded'] = 'Já avaliado';
 $string['areaconclusion'] = 'Texto de conclusão';
@@ -89,13 +93,14 @@ $string['configgradedecimals'] = 'Número de casas decimais a exibir nas avalia�
 $string['configgradinggrade'] = 'Nota máxima para a avaliação, por predefinição';
 $string['configmaxbytes'] = 'Tamanho máximo dos ficheiros submetidos em todos os workshops do site, por predefinição (sujeito aos limites da disciplina e outras configurações locais)';
 $string['configstrategy'] = 'Tipo de grelha de avaliação, por predefinição';
-$string['createsubmission'] = 'Comece a preparar a sua submissão';
+$string['createsubmission'] = 'Submeter';
 $string['daysago'] = 'há {$a} dias';
 $string['daysleft'] = 'restam {$a} dias';
 $string['daystoday'] = 'hoje';
 $string['daystomorrow'] = 'amanhã';
 $string['daysyesterday'] = 'ontem';
 $string['deadlinesignored'] = 'As restrições de prazo não se aplicam a si';
+$string['deletesubmission'] = 'Apagar submissão';
 $string['editassessmentform'] = 'Editar grelha de avaliação';
 $string['editassessmentformstrategy'] = 'Editar grelha de avaliação ({$a})';
 $string['editingassessmentform'] = 'A editar grelha de avaliação';
@@ -103,6 +108,8 @@ $string['editingsubmission'] = 'A editar trabalho';
 $string['editsubmission'] = 'Editar submissão';
 $string['err_multiplesubmissions'] = 'Enquanto editava esta grelha, outra versão do trabalho foi guardada. Não são permitidas submissões múltiplas por utilizador.';
 $string['err_removegrademappings'] = 'Não foi possível apagar alocações de avaliação não utilizadas';
+$string['err_unknownfileextension'] = 'Extensão do ficheiro desconhecida: {$a}';
+$string['err_wrongfileextension'] = 'Alguns ficheiros ({$a->wrongfiles}) não puderam ser carregados. Apenas são permitidos ficheiros do tipo {$a->whitelist}.';
 $string['evaluategradeswait'] = 'Por favor aguarde até que as avaliações sejam avaliadas e as notas calculadas.';
 $string['evaluation'] = 'Avaliação dos avaliadores';
 $string['evaluationmethod'] = 'Método de avaliação dos avaliadores';
@@ -116,6 +123,7 @@ $string['eventphaseswitched'] = 'Fase alterada';
 $string['eventsubmissionassessed'] = 'Submissão avaliada';
 $string['eventsubmissionassessmentsreset'] = 'Avaliações da submissão limpas';
 $string['eventsubmissioncreated'] = 'Submissão criada';
+$string['eventsubmissiondeleted'] = 'Submissão apagada';
 $string['eventsubmissionreassessed'] = 'Submissão reavaliada';
 $string['eventsubmissionupdated'] = 'Submissão atualizada';
 $string['eventsubmissionviewed'] = 'Submissão visualizada';
@@ -158,6 +166,8 @@ $string['gradeitemsubmission'] = '{$a->workshopname} (trabalho)';
 $string['gradeover'] = 'Substituir nota do trabalho';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Relatório de notas do workshop';
+$string['gradetopassgrading'] = 'Nota de avaliação para passar';
+$string['gradetopasssubmission'] = 'Nota de submissão para passar';
 $string['gradinggrade'] = 'Nota máxima da avaliação';
 $string['gradinggradecalculated'] = 'Nota da avaliação';
 $string['gradinggrade_help'] = 'Esta configuração específica a nota máxima que se pode obter na avaliação dos trabalhos dos pares.';
@@ -193,6 +203,7 @@ $string['nogradeyet'] = 'Ainda não tem nota';
 $string['nosubmissionfound'] = 'Não foi encontrado nenhum trabalho submetidos por este utilizador';
 $string['nosubmissions'] = 'Ainda não foram submetidos trabalhos neste workshop';
 $string['notassessed'] = 'Ainda não foi avaliado';
+$string['nothingfound'] = 'Nada a exibir';
 $string['nothingtoreview'] = 'Nada para avaliar';
 $string['notoverridden'] = 'Não substituir';
 $string['noworkshops'] = 'Não existem workshops nesta disciplina';
@@ -237,6 +248,7 @@ $string['saveandclose'] = 'Gravar e fechar';
 $string['saveandcontinue'] = 'Gravar e continuar edição';
 $string['saveandpreview'] = 'Gravar e pré-visualizar';
 $string['saveandshownext'] = 'Guardar e mostrar próximo';
+$string['search:activity'] = 'Workshop - informações da atividade';
 $string['selfassessmentdisabled'] = 'Autoavaliação desativada';
 $string['showingperpage'] = 'A mostrar {$a} items por página';
 $string['showingperpagechange'] = 'Alterar ...';
@@ -249,12 +261,14 @@ $string['strategy_help'] = 'O tipo de grelha de avaliação determina a configur
 
 * Nota quantitativa - O avaliador atribui uma nota quantitativa a cada critério de avaliação definido, sendo possível juntar um comentário com justificação.
 * Escolha múltipla - O avaliador seleciona a opção que melhor traduz a sua avaliação para cada critério de avaliação definido.
-* Escolha dupla - O avaliador seleciona uma entre duas opções (Sim/Não, em geral) relativas à avaliação de um determinado aspeto, sendo possível juntar um comentário com justificação.
+* Número de erros - O avaliador seleciona uma entre duas opções (Sim/Não, em geral) e junta um comentário relativos a um conjunto de proposições que o trabalho deve respeitar.
 * Comentários - O avaliador comenta qualitativamente cada aspeto a avaliar previsto, sem que tal se traduza numa nota.';
 $string['submission'] = 'Trabalho';
 $string['submissionattachment'] = 'Anexo';
 $string['submissionby'] = 'Submetido por {$a}';
 $string['submissioncontent'] = 'Conteúdo submetido';
+$string['submissiondeleteconfirm'] = 'Tem a certeza que pretende apagar a seguinte submissão?';
+$string['submissiondeleteconfirmassess'] = 'Tem a certeza que pretende apagar a seguinte submissão? Note que isto irá apagar também as {$a->count} avaliações associadas a esta submissão, o que poderá afetar as notas dos avaliadores.';
 $string['submissionend'] = 'Data limite das submissões';
 $string['submissionendbeforestart'] = 'O prazo limite de submissão não pode ser configurado para antes da data de abertura';
 $string['submissionenddatetime'] = 'Data limite para envio do trabalho: {$a->daydatetime} ({$a->distanceday})';
@@ -266,11 +280,14 @@ Se ativar esta opção, é recomendável que também ative e configure o método
 $string['submissiongrade'] = 'Nota máxima do trabalho';
 $string['submissiongrade_help'] = 'Esta configuração específica a nota máxima que pode ser atribuída ao trabalho submetido';
 $string['submissiongradeof'] = 'Nota do trabalho (em {$a})';
+$string['submissionlastmodified'] = 'Última modificação';
 $string['submissionsettings'] = 'Configurações de envio';
+$string['submissionsreport'] = 'Relatório de submissões do workshop';
 $string['submissionstart'] = 'Iniciar submissões em';
 $string['submissionstartdatetime'] = 'Submissões permitidas a partir de  {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (abre para submissões)';
 $string['submissiontitle'] = 'Titulo';
+$string['submittednotsubmitted'] = 'Submetido ({$a->submitted}) / não submetido ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Método para atribuir trabalho para avaliação';
 $string['subplugintype_workshopallocation_plural'] = 'Métodos para atribuir trabalho para avaliação';
 $string['subplugintype_workshopeval'] = 'Método para atribuir nota a avaliações';
@@ -304,6 +321,8 @@ $string['usepeerassessment_help'] = 'Se ativar esta opção, são atribuídos a 
 $string['userdatecreated'] = 'Enviado em <span>{$a}</span>';
 $string['userdatemodified'] = 'Modificado em <span>{$a}</span>';
 $string['userplan'] = 'Planificação do workshop';
+$string['userplanaccessibilitytitle'] = 'Cronograma de workshop com {$a} fases';
+$string['userplancurrentphase'] = 'Fase atual';
 $string['userplan_help'] = 'A planificação do workshop mostra todas as fases da atividade e a lista de tarefas para cada fase. A fase atual é assinalada e a conclusão de cada tarefa é indicada com um visto.';
 $string['useselfassessment'] = 'Permitir autoavaliação';
 $string['useselfassessment_desc'] = 'Os alunos podem avaliar o seu próprio trabalho';
@@ -312,10 +331,11 @@ $string['weightinfo'] = 'Peso: {$a}';
 $string['withoutsubmission'] = 'Avaliador sem trabalho submetido';
 $string['workshop:addinstance'] = 'Adicionar novo Workshop';
 $string['workshop:allocate'] = 'Atribuir trabalhos para avaliação';
+$string['workshop:deletesubmissions'] = 'Apagar submissões';
 $string['workshop:editdimensions'] = 'Editar grelhas de avaliação';
 $string['workshop:ignoredeadlines'] = 'Ignorar restrições de prazo';
 $string['workshop:manageexamples'] = 'Gerir trabalhos exemplo';
-$string['workshopname'] = 'Nome do workshop';
+$string['workshopname'] = 'Designação';
 $string['workshop:overridegrades'] = 'Substituir nota calculada';
 $string['workshop:peerassess'] = 'Avaliação entre pares';
 $string['workshop:publishsubmissions'] = 'Publicar trabalhos';

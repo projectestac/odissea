@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,6 @@ $string['monitorenabled'] = 'Il monitoraggio eventi è abilitato.';
 $string['monitor:managerules'] = 'Gestione regole monitoraggio eventi';
 $string['monitor:managetool'] = 'Abilita/disabilita monitoraggio eventi';
 $string['monitor:subscribe'] = 'Sottoscrizione regole monitoraggio eventi';
-$string['nopermission'] = 'Nessuna atorizzazione';
 $string['norules'] = 'Non ci sono regole di monitoraggio eventi.';
 $string['pluginname'] = 'Monitoraggio eventi';
 $string['processevents'] = 'Elaborazione eventi';
@@ -88,6 +87,7 @@ $string['ruledeletesuccess'] = 'La regola è stata eliminata correttamente';
 $string['rulehelp'] = 'Dettagli della regola';
 $string['rulehelp_help'] = 'Questa regola controlla che l\'evento \'{$a->eventname}\' si verifichi in \'{$a->moduleinstance}\' per {$a->frequency} volte in {$a->minutes} minuti.';
 $string['rulename'] = 'Nome regola';
+$string['rulenopermission'] = 'Non sei autorizzato a sottoscrivere qualsiasi evento';
 $string['rulenopermissions'] = 'Non sei autorizzato a "{$a} una regola"';
 $string['rulescansubscribe'] = 'Regole disponibili per la sottoscrizione';
 $string['selectacourse'] = 'Seleziona un corso';

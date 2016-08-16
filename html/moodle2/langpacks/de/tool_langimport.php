@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_langimport', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['langimport'] = 'Sprachpakete verwalten';
 $string['langimportdisabled'] = 'Der Import von Sprachpaketen wurde deaktiviert. Sie müssen die Sprachpakete manuell auf dem Server aktualisieren. Abschließend müssen Sie den Sprachcache löschen.';
 $string['langpackinstalled'] = 'Das Sprachpaket ‘{$a}\' wurde erfolgreich installiert.';
 $string['langpackinstalledevent'] = 'Sprachpaket installiert';
+$string['langpacknotremoved'] = 'Fehler: Das Sprachpaket \'{$a}\' wurde nicht vollständig deinstalliert. Prüfen Sie die Dateirechte.';
 $string['langpackremoved'] = 'Das Sprachpaket ‘{$a}\' wurde deinstalliert.';
 $string['langpackremovedevent'] = 'Sprachpaket deinstalliert';
 $string['langpackupdated'] = 'Das Sprachpaket ‘{$a}\' wurde erfolgreich aktualisiert.';
@@ -40,10 +41,12 @@ $string['langpackuptodate'] = 'Das Sprachpaket ‘{$a}\' ist aktuell.';
 $string['langupdatecomplete'] = 'Die Aktualisierung der Sprachpakete ist abgeschlossen.';
 $string['missingcfglangotherroot'] = 'Fehlende Einstellung $CFG->langotherroot';
 $string['missinglangparent'] = 'Das Sprachpaket \'{$a->parent}\' fehlt für \'{$a->lang}\'.';
+$string['noenglishuninstall'] = 'Das englische Sprachpaket kann nicht deinstalliert werden.';
 $string['nolangupdateneeded'] = 'Alle Sprachpakete sind aktuell.';
 $string['pluginname'] = 'Sprachpakete';
 $string['purgestringcaches'] = 'Sprachcache löschen';
 $string['remotelangnotavailable'] = 'Moodle kann keine Serververbindung herstellen, um Sprachpakete automatisch zu installieren. Laden Sie die Sprachpakete manuell von <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> herunter und speichern Sie diese im Serververzeichnis \'{$a}\'.';
+$string['selectlangs'] = 'Wählen Sie ein Sprachpaket, das deinstalliert werden soll.';
 $string['uninstall'] = 'Ausgewähltes Sprachpaket deinstallieren';
-$string['uninstallconfirm'] = 'Möchten Sie das Sprachpaket \'{$a}\' wirklich deinstallieren?';
+$string['uninstallconfirm'] = 'Möchten Sie die Sprachpakete \'{$a}\' wirklich deinstallieren?';
 $string['updatelangs'] = 'Sprachpakete aktualisieren';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,6 @@ $string['alttext'] = 'Testo alternativo';
 $string['answer'] = 'Risposta';
 $string['bgimage'] = 'Immagine di sfondo';
 $string['clearwrongparts'] = 'Sposta gli indicatori posizionati erroneamente nella loro posizione di default sotto l\'immagine';
-$string['confirmimagetargetconversion'] = 'Stai per convertire le domande \'image target\' in domande di tipo \'Trascina e rilascia indicatori\'.';
-$string['convertingimagetargetquestion'] = 'Domanda "{$a->name}" convertita';
 $string['coords'] = 'Coordinate';
 $string['correctansweris'] = 'La risposta corretta è: {$a}';
 $string['draggableimage'] = 'Elemento trascinabile';
@@ -43,7 +41,7 @@ $string['dropbackground'] = 'Immagine di sfondo dove trascinare gli indicatori';
 $string['dropzone'] = 'Area di rilascio {$a}';
 $string['dropzoneheader'] = 'Aree di rilascio';
 $string['dropzones'] = 'Aree di rilascio';
-$string['dropzones_help'] = 'Le aree di rilascio vengono definite digitando le coordinate.  Durante la digitazione, l\'anteprima verrà aggiornata in tempo reale facilitando la posizione degli elementi.
+$string['dropzones_help'] = 'Le aree di rilascio vengono definite inserendo le coordinate.  Durante l\'inserimento, l\'anteprima verrà aggiornata in tempo reale facilitando il posizionamento degli elementi.
 
 * Cerchio: centro_x, centro_y; raggio<br>Esempio: <code>80, 100; 50</code>
 * Poligono: x1, y1; x2, y2; ...; xn, yn<br>Esempio: <code>20, 60; 100, 60; 20, 100</code>
@@ -61,28 +59,17 @@ $string['formerror_shapeoutsideboundsofbgimage'] = 'Hai definito una forma che e
 $string['formerror_toomanysemicolons'] = 'Nelle coordinate inserite sono presenti troppi punti e virgola. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
 $string['formerror_unrecognisedwidthheightpart'] = 'Non è possibile individuare la larghezza l\'altezza. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
 $string['formerror_unrecognisedxypart'] = 'Non è possibile individuare le coordinate x,y. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
-$string['imagetargetconverter'] = 'Converti le domande \'image target\' in domande di tipo \'Trascina e rilascia indicatori\'.';
 $string['infinite'] = 'Illimitato';
-$string['listitemconfirmcategory'] = 'In procinto di convertire tutte le domande \'image target\' presenti nella categoria "{$a->name}" (sono presenti {$a->qcount} domande \'image target\')';
-$string['listitemconfirmcontext'] = 'In procinto di convertire tutte le domande \'image target\' presenti nel contesto "{$a->name}" (sono presenti {$a->qcount} domande \'image target\')';
-$string['listitemconfirmquestion'] = 'In procinto di convertire la domanda "{$a->name}"';
-$string['listitemlistallcategory'] = 'Seleziona tutte le domande \'image target\' presenti nella categoria "{$a->name}" (sono presenti {$a->qcount} domande \'image target\')';
-$string['listitemlistallcontext'] = 'Seleziona tutte le domande \'image target\' presenti nel contesto "{$a->name}" (sono presenti {$a->qcount} domande \'image target\')';
-$string['listitemlistallquestion'] = 'Seleziona domanda "{$a->name}"';
-$string['listitemprocessingcategory'] = 'E\' in corso la conversione di tutte le domande \'image target\' presenti nella categoria "{$a->name}" (sono presenti {$a->qcount} domande \'image target\')';
-$string['listitemprocessingcontext'] = 'E\' in corso la conversione di tutte le domande \'image target\' presenti nel contesto "{$a->name}" (sono presenti {$a->qcount} domande \'image target\')';
-$string['listitemprocessingquestion'] = 'Domanda "{$a->name}" convertita';
 $string['marker'] = 'Indicatore';
 $string['marker_n'] = 'Indicatore {no}';
 $string['markers'] = 'Indicatori';
 $string['nolabel'] = 'Senza etichetta di testo';
 $string['noofdrags'] = 'Numero';
-$string['noquestionsfound'] = 'Non ci sono domande da convertire.';
 $string['pleasedragatleastonemarker'] = 'La tua risposta non è completa, devi posizionare almeno un indicatore sull\'immagine.';
 $string['pluginname'] = 'Trascina e rilascia indicatori';
 $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia indicatori';
 $string['pluginnameediting'] = 'Inserimento domanda Trascina e rilascia indicatori';
-$string['pluginname_help'] = 'seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
+$string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
 $string['pluginnamesummary'] = 'Gli indicatori sono trascinati e rilasciati su un\'immagine di sfondo.';
 $string['previewareaheader'] = 'Anteprima';
 $string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = 'Assegna/togli il privilegio richiesto';
 $string['addservice'] = 'Aggiungi un servizio: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Funzioni del servizio "{$a}"';
 $string['allusers'] = 'Tutti gli utenti';
-$string['amftestclient'] = 'AMF test client';
 $string['apiexplorer'] = 'API explorer';
 $string['apiexplorernotavalaible'] = 'API explorer non è ancora disponibile';
 $string['arguments'] = 'Argomenti';
 $string['authmethod'] = 'Metodo di autenticazione';
+$string['callablefromajax'] = 'Richiamabile tramite AJAX';
 $string['cannotcreatetoken'] = 'Manca l\'autorizzazione per creare un token per il web service {$a}.';
 $string['cannotgetcoursecontents'] = 'Non può ricevere contenuti del corso';
 $string['checkusercapability'] = 'Verifica i privilegi dell\'utente';
@@ -120,6 +120,7 @@ $string['iprestriction'] = 'Restrizione IP';
 $string['iprestriction_help'] = 'L\'utente deve chiamare i web service dagli IP elencati (separati da virgole).';
 $string['key'] = 'Chiave';
 $string['keyshelp'] = 'Le chiavi vengono usate per accedere il tuo account Moodle da applicazioni esterne.';
+$string['loginrequired'] = 'Disponibile solo agli utenti autenticati';
 $string['manageprotocols'] = 'Gestione protocolli';
 $string['managetokens'] = 'Gestione token';
 $string['missingcaps'] = 'Privilegi mancanti.';
@@ -185,9 +186,9 @@ $string['shortnametaken'] = 'Il nome breve è già usato da un altro servizio ({
 $string['simpleauthlog'] = 'Login con autenticazione semplice';
 $string['step'] = 'Passo';
 $string['supplyinfo'] = 'Dettagli';
-$string['testauserwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. Prima di effettuare il test, autenticati con un account che ha il privilegio "moodle/webservice:createtoken" e ricava il token dell\'utente dalle impostazioni del profilo. Potrai usare questo token nel client di test, dove sceglierai anche il protocolla abilitato. <strong>Attenzione: la funzione che testerai SARA\' REALMENTE ESEGUITA, fai molta attenzione su cosa scegli di provare!</strong>';
+$string['testauserwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. Prima di effettuare il test, autenticati con un account che ha il privilegio "moodle/webservice:createtoken" e ottieni il token dell\'utente dalle impostazioni del profilo. Potrai usare questo token nel client di test, dove sceglierai anche il protocollo abilitato. <strong>Attenzione: la funzione che testerai SARA\' REALMENTE ESEGUITA per questo utente, fai molta attenzione su cosa scegli di provare!</strong>';
 $string['testclient'] = 'Test Client web service';
-$string['testclientdescription'] = '* Il client di test web service  <strong>esegue</strong> la funzione <strong>REALMENTE</strong>. Evitare di provare funzioni che non si conoscono.<br/>* Non tutte le funzioni web service sono supportate dal client di test. <br/>* Per testare se un utente non è abilitato ad accedere a determinate funzioni, provare con le funzioni che non gli sono consentite.<br/>* Per un debugging più approfondito, impostare il debug a <strong>{$a->mode}</strong> in {$a->atag}<br/>* Accedere a {$a->amfatag}.';
+$string['testclientdescription'] = '* Il client di test web service  <strong>esegue</strong> le funzioni <strong>REALMENTE</strong>. Evitare di provare funzioni che non si conoscono.<br/>* Non tutte le funzioni web service sono supportate dal client di test. <br/>* Per testare se un utente non è abilitato ad accedere a determinate funzioni, provare con le funzioni che non gli sono consentite.<br/>* Per un debugging più approfondito, impostare il debug a <strong>{$a->mode}</strong> in {$a->atag}.';
 $string['testwithtestclient'] = 'Prova il funzionamento del servizio';
 $string['testwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. Puoi utilizzare un protocollo abilitato con l\'autenticazione token.<strong>Attenzione: la funzione che testerai SARA\' REALMENTE ESEGUITA, fai molta attenzione su cosa scegli di provare!</strong>';
 $string['token'] = 'Token';
@@ -200,7 +201,7 @@ $string['updateusersettings'] = 'Aggiorna';
 $string['uploadfiles'] = 'Caricamento file consentito';
 $string['uploadfiles_help'] = 'Tutti gli utenti potranno caricare file nei file privati o nei file draft usando la propria chiave di sicurezza. La quota utente rimane in effetto.';
 $string['userasclients'] = 'Utenti client tramite token';
-$string['userasclientsdescription'] = 'I passi che seguono chiariscono le impostazioni necessarie per l\'accesso dei web service di Moodle da parte di utenti client. I passi suggeriscono anche come impostare il metodo di autenticazione basato su token (chiavi di sicurezza). Gli utenti possono generare il proprio token nella pagina Chiavi di sicurezza presente nelle impostazioni del profilo.';
+$string['userasclientsdescription'] = 'I passi che seguono chiariscono le impostazioni necessarie per l\'accesso dei web service di Moodle da parte di utenti client. I passi suggeriscono anche come impostare il metodo di autenticazione basato su token (chiavi di sicurezza). Gli utenti possono generare il proprio token nella pagina Chiavi di sicurezza presente nella pagina delle preferenze.';
 $string['usermissingcaps'] = 'Privilegi mancanti: {$a}.';
 $string['usernameorid'] = 'Username / User id';
 $string['usernameorid_help'] = 'Inserisci un username o un user id';

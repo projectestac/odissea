@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,7 +135,6 @@ $string['folderrecurse'] = '文件夹不能被移动到自己的子文件夹里'
 $string['getfile'] = '选择此文件';
 $string['getfiletimeout'] = '提取文件超时';
 $string['help'] = '帮助';
-$string['hidden'] = '隐藏';
 $string['iconview'] = '图标查看';
 $string['imagesize'] = '{$a->width} x {$a->height} 像素';
 $string['instance'] = '实例';
@@ -163,6 +162,7 @@ $string['makefileinternal'] = '为文件制作一个副本';
 $string['makefilelink'] = '直接链接到文件';
 $string['makefilereference'] = '为文件创建一个别名或快捷方式';
 $string['manage'] = '管理容器';
+$string['manageinstances'] = '管理实例';
 $string['manageurl'] = '管理';
 $string['manageuserrepository'] = '管理个人容器';
 $string['moving'] = '移动中';

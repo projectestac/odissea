@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['createautomaticgrouping'] = 'Crea agrupament automàtic';
 $string['creategroup'] = 'Crea grup';
 $string['creategrouping'] = 'Crea agrupament';
 $string['creategroupinselectedgrouping'] = 'Crea grup en l\'agrupament';
-$string['createingrouping'] = 'Crea en l\'agrupament';
+$string['createingrouping'] = 'S\'estan agrupant els grups creats automàticament';
 $string['createorphangroup'] = 'Crea un grup orfe';
 $string['databaseupgradegroups'] = 'La versió de grups és ara {$a}';
 $string['defaultgrouping'] = 'Agrupament per defecte';
@@ -139,7 +139,8 @@ $string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de t
 * Els camps description, enrolmentkey, picture i hidepicture són opcionals';
 $string['javascriptrequired'] = 'Aquesta pàgina requereix Javascript';
 $string['members'] = 'Membres per grup';
-$string['membersofselectedgroup'] = 'Membres del grup seleccionat';
+$string['membersofselectedgroup'] = 'Membres de:';
+$string['mygroups'] = 'Els meus grups';
 $string['namingscheme'] = 'Esquema de noms';
 $string['namingscheme_help'] = 'El símbol de l\'arrova (@) es pot fer servir per crear grups amb noms que contenen lletres. Per exemple Grup @ generarà grups anomentats Grup A, Grup B, Grup C, ...<br/>
 <br/>
@@ -176,6 +177,7 @@ $string['newpicture_help'] = '<p>Podeu penjar al servidor una imatge que tingueu
 
   del vostre programa navegador.</p>';
 $string['noallocation'] = 'Sense ubicació';
+$string['nogroup'] = 'Sense grup';
 $string['nogrouping'] = 'Sense agrupaments';
 $string['nogroups'] = 'Encara no s\'han definit grups en aquest curs';
 $string['nogroupsassigned'] = 'No s\'han assignat grups';
@@ -183,10 +185,12 @@ $string['nopermissionforcreation'] = 'No s\'ha pogut crear el grup "{$a}" perqu�
 $string['nosmallgroups'] = 'Impedeix que el darrer grup sigui massa petit';
 $string['notingroup'] = 'Ignora usuaris en grups';
 $string['notingrouping'] = '[en cap agrupament]';
+$string['notingrouplist'] = '[En cap grup]';
 $string['nousersinrole'] = 'No hi ha usuaris apropiats en el rol seleccionat';
 $string['number'] = 'Nombre de grups o membres per grup';
 $string['numgroups'] = 'Nombre de grups';
 $string['nummembers'] = 'Membres per grup';
+$string['othergroups'] = 'Altres grups';
 $string['overview'] = 'Resum';
 $string['potentialmembers'] = 'Membres en potència: {$a}';
 $string['potentialmembs'] = 'Membres potencials';

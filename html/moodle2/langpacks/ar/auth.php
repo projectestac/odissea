@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,7 +81,7 @@ $string['emailupdatetitle'] = 'تأكيد تحديث البريد الإلكتر
 $string['enterthenumbersyouhear'] = 'أدخل الأرقام التي تسمعها';
 $string['enterthewordsabove'] = 'أدخل الكلمات أعلاه';
 $string['errormaxconsecutiveidentchars'] = 'يجب ألا تحوي كلمة السر على أكثر من {$a} أحرف متتالية ومتماثلة.';
-$string['errorminpassworddigits'] = 'يجب أن تكون كلمات السر مكون من {$a} رقم على الأقل.';
+$string['errorminpassworddigits'] = 'يجب أن تكون كلمات السر مكونة من {$a} رقم على الأقل.';
 $string['errorminpasswordlength'] = 'يجب أن تكون كلمة السر بطول {$a} أحرف على الأقل.';
 $string['errorminpasswordlower'] = 'يجب أن تحوي كلمة السر على {$a} حرف صغير على الأقل.';
 $string['errorminpasswordnonalphanum'] = 'يجب أن تحوي كلمة السر على {$a} حرف على الأقل غير الأبجدية والأرقام.';

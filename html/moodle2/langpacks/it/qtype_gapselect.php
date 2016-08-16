@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_gapselect', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['pluginname'] = 'Scelta della parole mancanti';
 $string['pluginnameadding'] = 'Inserimento domanda Scelta della parole mancanti';
 $string['pluginnameediting'] = 'Modifica domanda Scelta della parole mancanti';
 $string['pluginname_help'] = 'Inserisci del testo del tipo "Il [[1]] saltò sopra il [[2]]", quindi inserisci sotto le parole mancanti in 1 e 2,';
-$string['pluginnamesummary'] = 'In alcuni testi le parole mancanti vengono inserite tramite menu a discesa.';
+$string['pluginnamesummary'] = 'Nel testo della domanda le parole mancanti vengono inserite tramite menu a discesa.';
 $string['shuffle'] = 'Rimescola';
 $string['tagsnotallowed'] = '{$a->tag} non è consentito. (Sono permessi solo {$a->allowed}.)';
 $string['tagsnotallowedatall'] = '{$a->tag} non è consentito. (L\'HTML non è consentito.)';

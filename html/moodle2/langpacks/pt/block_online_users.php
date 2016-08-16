@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_online_users', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Número de minutos que determina o período de inatividade para que um utilizador deixe de ser considerado como ativo.';
 $string['online_users:addinstance'] = 'Adicionar um novo bloco Utilizadores ativos';
-$string['online_users:myaddinstance'] = 'Adicionar um novo bloco Participantes à Minha página principal';
+$string['online_users:myaddinstance'] = 'Adicionar um novo bloco Participantes ao Painel do utilizador';
 $string['online_users:viewlist'] = 'Ver lista de utilizadores online';
 $string['periodnminutes'] = 'nos últimos {$a} minutos';
 $string['pluginname'] = 'Utilizadores ativos';

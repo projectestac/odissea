@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Esteu segur de voler suprimir aquestes 
 $string['defaultperiod'] = 'Duració de la inscripció per defecte';
 $string['defaultperiod_desc'] = 'Temps per defecte durant el qual la inscripció serà vàlida. Si es posa a cero, la duració per defecte de la inscripció serà il·limitada.';
 $string['defaultperiod_help'] = 'Temps per defecte (en segons) durant el qual la inscripció serà vàlida, començant des del moment en què l\'usuari s\'inscriu. Si es desactiva, el temps per defecte de la inscripció serà il·limitat.';
+$string['defaultstart'] = 'Inicia l\'inscripció per defecte';
 $string['deleteselectedusers'] = 'Esborreu els usuaris inscrits';
 $string['editselectedusers'] = 'Edita les inscripcions del usuaris seleccionats';
 $string['enrolledincourserole'] = 'S\'ha efectuat la inscripció en "{$a->course}" com a "{$a->role}"';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Notificació de venciment d\'inscripc
 $string['manual:config'] = 'Configura les instàncies d\'inscripció manual';
 $string['manual:enrol'] = 'Inscriviu usuaris';
 $string['manual:manage'] = 'Gestioneu la inscripció de l\'usuari';
+$string['manualpluginnotinstalled'] = 'El connector «Manual» no ha estat instal·lat';
 $string['manual:unenrol'] = 'Cancel·la la inscripció d\'usuaris del curs';
 $string['manual:unenrolself'] = 'Cancel·la la meva inscripció en aquest curs';
 $string['messageprovider:expiry_notification'] = 'Notificacions de venciment d\'inscripció manual';
+$string['now'] = 'Ara';
 $string['pluginname'] = 'Inscripcions manuals';
 $string['pluginname_desc'] = 'El connector d\'inscripció manual permet als usuaris inscriure\'s de forma manual mitjançant un enllaç als paràmetres d\'administració del curs per un usuari amb els permisos apropiats, com un professor. Aquest connector s\'hauria d\'habilitar,  ja que altres connectors, com l\'auto inscripció, el requereixen.';
 $string['status'] = 'Habiliteu les inscripcions manuals';

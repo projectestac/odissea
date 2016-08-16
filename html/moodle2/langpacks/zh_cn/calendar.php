@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'calendar', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,7 +113,6 @@ $string['gotocalendar'] = '转到日历';
 $string['group'] = '组';
 $string['groupevent'] = '组事件';
 $string['groupevents'] = '组事件';
-$string['hidden'] = '隐藏';
 $string['hidecourseevents'] = '隐藏课程事件';
 $string['hideglobalevents'] = '隐藏全局事件';
 $string['hidegroupsevents'] = '隐藏组时间';

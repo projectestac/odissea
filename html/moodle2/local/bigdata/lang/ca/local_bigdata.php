@@ -26,3 +26,5 @@ $string['profile_updated']		= 'El perfil s\'ha actualitzat correctament';
 $string['profile_deleted']		= 'El perfil s\'ha eliminat correctament';
 
 $string['export_data_settings']      = 'Paràmetres de dades a exportar';
+
+$string['cron_settings'] = 'Paràmetres del cron';

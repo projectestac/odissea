@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,8 @@ $string['auth_ldap_preventpassindb_key'] = 'パスワードをキャッシュし
 $string['auth_ldap_search_sub'] = 'サブコンテクストからユーザを検索します。';
 $string['auth_ldap_search_sub_key'] = 'サブコンテクストを検索する';
 $string['auth_ldap_server_settings'] = 'LDAPサーバ設定';
+$string['auth_ldap_suspended_attribute'] = '任意: この属性が提供された場合、ローカルに作成されたアカウントの有効化/利用停止に使用されます。';
+$string['auth_ldap_suspended_attribute_key'] = '利用停止属性';
 $string['auth_ldap_unsupportedusertype'] = 'auth: ldap user_create()は選択された次のユーザタイプをサポートしていません: {$a}';
 $string['auth_ldap_update_userinfo'] = 'LDAPよりMoodleのユーザ情報 (姓、名、住所等) を更新します。必要に応じて、「データマッピング」設定を指定してください。';
 $string['auth_ldap_user_attribute'] = '任意: name/searchユーザに使用される属性をオーバーライドします。通常、「cn」です。';
@@ -138,6 +140,7 @@ $string['renamingnotallowed'] = 'LDAPでのユーザ名変更は許可されて�
 $string['rootdseerror'] = 'Active DirectoryのrootDSEクエリにエラーが発生しました。';
 $string['start_tls'] = 'TLS暗号化による標準LDAPサービス (ポート389) を使用する';
 $string['start_tls_key'] = 'TLSを使用する';
+$string['synctask'] = 'LDAPユーザ同期ジョブ';
 $string['updatepasserror'] = 'user_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'パスワードの有効期限読み込み中にuser_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'パスワード有効期限または猶予ログインの修正中にuser_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';

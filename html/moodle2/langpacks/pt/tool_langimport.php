@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_langimport', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['langimport'] = 'Importação de pacote linguístico';
 $string['langimportdisabled'] = 'O recurso de importação de lingua foi desativado. Tem que atualizar o seu pacote linguístico manualmente no sistema de ficheiros. Não se esqueça de limpar as caches após fazê-lo.';
 $string['langpackinstalled'] = 'O pacote linguístico \'{$a}\' foi instalado com sucesso';
 $string['langpackinstalledevent'] = 'Pacote linguístico instalado';
+$string['langpacknotremoved'] = 'Ocorreu um erro; a instalação do pacote linguístico \'{$a}\' não foi concluída. Por favor verifique as permissões do ficheiro.';
 $string['langpackremoved'] = 'O pacote linguístico \'{$a}\' foi desinstalado';
 $string['langpackremovedevent'] = 'Pacote linguístico desinstalado';
 $string['langpackupdated'] = 'O pacote linguístico \'{$a}\' foi atualizado com sucesso';
@@ -40,10 +41,12 @@ $string['langpackuptodate'] = 'O pacote linguístico \'{$a}\' está atualizado';
 $string['langupdatecomplete'] = 'Atualização do pacote linguístico completa';
 $string['missingcfglangotherroot'] = 'Falta o valor de configuração $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta o idioma ascendente <em>{$a->parent}</em> em <em>{$a->lang}</em>.';
+$string['noenglishuninstall'] = 'O pacote linguístico Inglês não pode ser instalado.';
 $string['nolangupdateneeded'] = 'Todos os pacotes linguísticos instalados estão atualizados, não é necessária qualquer atualização';
 $string['pluginname'] = 'Pacotes linguísticos';
 $string['purgestringcaches'] = 'Limpar caches das strings';
 $string['remotelangnotavailable'] = 'O Moodle não consegue ligar a download.moodle.org e, por isso, não é possível fazer a instalação automática do pacote linguístico. Descarregue o ficheiro ZIP a partir de <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> copie-o para a diretoria {$a} e descompacte-o manualmente.';
-$string['uninstall'] = 'Desinstalar o pacote linguístico selecionado';
-$string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o pacote linguístico {$a}, tem a certeza?';
+$string['selectlangs'] = 'Selecione os pacotes linguísticos a desinstalar';
+$string['uninstall'] = 'Desinstalar o(s) pacote(s) linguístico(s) selecionado(s)';
+$string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o(s) pacote(s) linguístico(s) {$a}, tem a certeza?';
 $string['updatelangs'] = 'Atualizar todos os pacotes linguísticos instalados';

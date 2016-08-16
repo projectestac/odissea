@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['addrequiredcapability'] = 'Atribuir/retirar a capacidade necessária';
 $string['addservice'] = 'Adicionar um novo serviço: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Adicionar funções ao serviço "{$a}"';
 $string['allusers'] = 'Todos os utilizadores';
-$string['amftestclient'] = 'Cliente de teste AMF';
 $string['apiexplorer'] = 'Explorador da API';
 $string['apiexplorernotavalaible'] = 'O explorador da API ainda não está disponível.';
 $string['arguments'] = 'Argumentos';
 $string['authmethod'] = 'Método de autenticação';
+$string['callablefromajax'] = 'Disponível para pedidos de de AJAX';
 $string['cannotcreatetoken'] = 'Não tem permissões para criar o serviço token para o serviço {$a}.';
 $string['cannotgetcoursecontents'] = 'Não é possível obter os conteúdos das disciplinas';
 $string['checkusercapability'] = 'Verificar permissões do utilizador';
@@ -119,6 +119,7 @@ $string['iprestriction'] = 'Restrição de IP';
 $string['iprestriction_help'] = 'O utilizador terá que invocar o web service a partir de um dos endereços de IP da lista (separados por vírgulas).';
 $string['key'] = 'Chave';
 $string['keyshelp'] = 'As chaves são usadas para aceder à sua conta Moodle a partir de aplicações externas.';
+$string['loginrequired'] = 'Reservado aos utilizadores registados';
 $string['manageprotocols'] = 'Gerir protocolos';
 $string['managetokens'] = 'Gerir tokens';
 $string['missingcaps'] = 'Permissões em falta';
@@ -184,9 +185,9 @@ $string['shortnametaken'] = 'O nome curto já está a ser usado por outro servi�
 $string['simpleauthlog'] = 'Autenticação simples';
 $string['step'] = 'Passo';
 $string['supplyinfo'] = 'Mais detalhes';
-$string['testauserwithtestclientdescription'] = 'Simule o acesso externo ao serviço usando o cliente de teste dos web services. Antes disso, deve ser iniciada uma sessão com um utilizador que tenha a permissão "moodle/webservice:createtoken" e obtida a chave de segurança (token) através das configurações na secção "O meu perfil". Este token será usado pelo cliente de teste. No cliente de teste, selecione e ative, com o token de autenticação, um dos protocolos ativos. <strong>AVISO: Os testes devem ser criteriosamente escolhidos porque as funções invocadas no teste serão EFECTIVAMENTE realizadas por este utilizador no sistema.</strong>';
+$string['testauserwithtestclientdescription'] = 'Simule o acesso externo ao serviço usando o cliente de teste dos web services. Antes disso, autentique-se com um utilizador que tenha a permissão "moodle/webservice:createtoken" e obtida a chave de segurança (token) através das configurações na secção "O meu perfil". Este token será usado pelo cliente de teste. No cliente de teste, selecione e ative, com o token de autenticação, um dos protocolos ativos. <strong>AVISO: Os testes devem ser criteriosamente escolhidos porque as funções invocadas no teste serão EFECTIVAMENTE realizadas por este utilizador no sistema.</strong>';
 $string['testclient'] = 'Cliente de teste dos web services';
-$string['testclientdescription'] = '* O cliente de teste dos web services <strong>EXECUTA EFECTIVAMENTE</strong> as funções. Não devem ser efetuados testes em funções que não se saiba o que fazem. <br/>* Nem todas as funções dos web services estão disponíveis no cliente de teste. <br/>* Para confirmar que um utilizador não pode aceder a algumas funções, podem ser testadas algumas funções para as quais não foram dadas permissões ao utilizador.<br/>* Para obter mensagens de erro mais detalhadas o nível de depuração deve ser alterado para <strong>{$a->mode}</strong> em {$a->atag}<br/>* Aceder a {$a->amfatag}.';
+$string['testclientdescription'] = '* O cliente de teste dos web services <strong>executa efetivamente</strong> as funções. Não devem ser efetuados testes em funções que não se saiba o que fazem. <br/>* Nem todas as funções dos web services estão disponíveis no cliente de teste. <br/>* Para confirmar que um utilizador não pode aceder a algumas funções, poderá testar algumas funções para as quais não tem permissões.<br/>* Para obter mensagens de erro mais detalhadas o nível de depuração deve ser alterado para <strong>{$a->mode}</strong> em {$a->atag}.';
 $string['testwithtestclient'] = 'Testar o serviço';
 $string['testwithtestclientdescription'] = 'Simule o acesso externo ao serviço usando o cliente de teste dos web services. Antes de o fazer, autentique-se com um utilizador com a capacidade moodle/webservice:createtoken e obtenha a chave de segurança (token) via as configurações do Meu perfil. Vai usar este token no cliente de testes. No cliente de teses, selecione também um protocolo com a autenticação token. <strong>AVISO: Os testes devem ser criteriosamente escolhidos porque as funções invocadas no teste serão EFECTIVAMENTE realizadas por este utilizador no sistema.</strong>';
 $string['token'] = 'Token';
@@ -199,7 +200,7 @@ $string['updateusersettings'] = 'Atualizar';
 $string['uploadfiles'] = 'Pode carregar ficheiros';
 $string['uploadfiles_help'] = 'Se ativar esta opção, qualquer utilizador pode carregar ficheiros com as suas chaves de segurança para a sua própria área de ficheiros privados ou para uma área de temporária. Quaisquer quotas do ficheiro de utilizador se aplicam.';
 $string['userasclients'] = 'Utilizadores como clientes com token';
-$string['userasclientsdescription'] = 'Os passos seguintes mostram como configurar os web services para utilizadores como clientes. Estes passos ajudam também na configuração do método de autenticação das chaves de segurança (tokens) recomendado. Neste caso, o utilizador gerará o seu token a partir da página "Chaves de segurança", disponível nas configurações da página "O meu perfil".';
+$string['userasclientsdescription'] = 'Os passos seguintes mostram como configurar os web services para utilizadores como clientes. Estes passos ajudam também na configuração das chaves de segurança (tokens) recomendadas. Neste caso, o utilizador gerará o seu token a partir da página "Chaves de segurança", disponível nas configurações da página "O meu perfil".';
 $string['usermissingcaps'] = 'Capacidades em falta: {$a}';
 $string['usernameorid'] = 'Nome de utilizador / ID de utilizador';
 $string['usernameorid_help'] = 'Insira um nome de utilizador ou ID de utilizador';

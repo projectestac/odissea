@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,7 +118,6 @@ $string['folderexists'] = 'Karpetaren izena dagoeneko erabilita dago. Mesedez, e
 $string['foldernotfound'] = 'Ez da karpeta aurkitu';
 $string['getfile'] = 'Aukeratu fitxategi hau';
 $string['help'] = 'Laguntza';
-$string['hidden'] = 'Ezkutuan';
 $string['iconview'] = 'Ikusi ikono gisa';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'instantzia';
@@ -144,6 +143,7 @@ $string['makefileinternal'] = 'Fitxategiaren kopia egin';
 $string['makefilelink'] = 'Lotu fitxategia zuzenean';
 $string['makefilereference'] = 'Sortu fitxategiaren ezizen/esteka bat';
 $string['manage'] = 'Biltegiak kudeatu';
+$string['manageinstances'] = 'Kudeatu instantziak';
 $string['manageurl'] = 'Kudeatu';
 $string['manageuserrepository'] = 'Kudeatu norberaren biltegia';
 $string['moving'] = 'Mugitzen';

@@ -421,7 +421,7 @@ function url_get_variable_options($config) {
         'userfullname'    => get_string('fullnameuser'),
         'useremail'       => get_string('email'),
         'usericq'         => get_string('icqnumber'),
-        'userphone1'      => get_string('phone'),
+        'userphone1'      => get_string('phone1'),
         'userphone2'      => get_string('phone2'),
         'userinstitution' => get_string('institution'),
         'userdepartment'  => get_string('department'),
@@ -490,7 +490,8 @@ function url_get_variable_values($url, $cm, $course, $config) {
         $values['userdepartment']  = $USER->department;
         $values['useraddress']     = $USER->address;
         $values['usercity']        = $USER->city;
-        $values['usertimezone']    = get_user_timezone_offset();
+        $now = new DateTime('now', core_date::get_user_timezone_object());
+        $values['usertimezone']    = $now->getOffset() / 3600.0; // Value in hours for BC.
         $values['userurl']         = $USER->url;
     }
 

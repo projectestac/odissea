@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Los blogs del curso están deshabilitados';
 $string['courseblogs'] = 'Los usuarios sólo pueden ver los blogs de las personas que comparten un curso';
 $string['deleteblogassociations'] = 'Eliminar asociaciones de blog';
 $string['deleteblogassociations_help'] = 'Si se selecciona esta opción, las entradas de blog quedarán desvinculadas de este curso o de las actividades o recursos del curso. Las entradas de blog no serán eliminadas.';
+$string['deleteentry'] = 'Eliminar entrada';
 $string['deleteexternalblog'] = 'Dar de baja este blog externo';
 $string['deleteotagswarn'] = '¿Está seguro de que quiere eliminar estas marcas de todos los mensajes de blog y quitarlo del sistema?';
 $string['description'] = 'Descripción';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'ID de grupo no válida';
 $string['invalidurl'] = 'No se puede acceder a la URL';
 $string['linktooriginalentry'] = 'Enlace a la entrada de blog original';
 $string['maxexternalblogsperuser'] = 'Número máximo de blogs externos por usuario';
+$string['myprofileuserblogs'] = 'ver todas las entradas del blog';
 $string['name'] = 'Nombre';
 $string['name_help'] = 'Escriba un nombre descriptivo de su blog externo. (Si no se suministra ningún nombre, se utilizará el título de su blog externo).';
 $string['noentriesyet'] = 'Entradas no visibles aquí';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Todas las páginas de blog';
 $string['pagesize'] = 'Número de entradas de blog por página';
 $string['permalink'] = 'Enlace  permanente';
 $string['personalblogs'] = 'Los usuarios sólo pueden ver su propio blog';
-$string['preferences'] = 'Preferencias';
+$string['preferences'] = 'Preferencias del blog';
 $string['publishto'] = 'Publicar a';
 $string['publishtocourse'] = 'Usuarios que comparten curso con usted';
 $string['publishtocourseassoc'] = 'Miembros del curso asociado';
@@ -153,6 +155,7 @@ $string['searchterm'] = 'Buscar: {$a}';
 $string['settingsupdatederror'] = 'Se ha producido un error: el ajuste de preferencias del blog no ha podido actualizarse';
 $string['siteblog'] = 'Blog del sitio: {$a}';
 $string['siteblogdisable'] = 'No está habilitado el blog del sitio';
+$string['siteblogheading'] = 'Blog del sitio';
 $string['siteblogs'] = 'Todos los usuarios pueden ver todas las entradas del blog';
 $string['tagdatelastused'] = 'Fecha última en que se usó la marca';
 $string['tagparam'] = 'Marca: {$a}';

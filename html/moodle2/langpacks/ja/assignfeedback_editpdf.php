@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['deletecomment'] = 'コメントを削除する';
 $string['deletefeedback'] = 'フィードバックPDFを削除する';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'フィードバックPDFをダウンロードする';
+$string['draftchangessaved'] = 'アノテーション下書きが保存されました。';
 $string['editpdf'] = 'PDFに注釈をつける';
 $string['editpdf_help'] = 'ブラウザ内で直接学生の提出に注釈を付けて、ダウンロード可能な編集済みPDFを作成します。';
 $string['enabled'] = 'PDFに注釈をつける';
@@ -66,8 +67,10 @@ $string['oval'] = '楕円';
 $string['pagenumber'] = 'ページ {$a}';
 $string['pagexofy'] = 'ページ {$a->page} / {$a->total}';
 $string['pathtogspathdesc'] = 'PDFに注釈を付けるには「 {$a} 」にGhostscriptのパスを設定する必要があることに留意してください。';
+$string['pathtounoconvpathdesc'] = 'PDFに注釈を付けるには「 {$a} 」にunoconvのパスを設定する必要があることに留意してください。';
 $string['pen'] = 'ペン';
 $string['pluginname'] = 'PDF注釈';
+$string['preparesubmissionsforannotation'] = 'アノテーションのための提出を準備する';
 $string['rectangle'] = '長方形';
 $string['red'] = '赤';
 $string['result'] = '結果:';
@@ -84,9 +87,16 @@ $string['test_isdir'] = 'Ghostscriptパスはフォルダを指しています�
 $string['test_notestfile'] = 'テストPDFがありません。';
 $string['test_notexecutable'] = 'Ghostscriptパスは実行できないファイルを指しています。';
 $string['test_ok'] = 'Ghostscriptパスに問題はないようですが - 下のイメージ内にメッセージが表示されることを確認してください。';
+$string['test_unoconv'] = 'unoconvパスをテストする';
+$string['test_unoconvdoesnotexist'] = 'unoconvパスはunoconvプログラムを指していません。あなたのパス設定を確認してください。';
+$string['test_unoconvdownload'] = '変換済みPDFテストファイルをダウンロードします。';
+$string['test_unoconvisdir'] = 'unoconvパスはフォルダを指しています。あなたが指定するパス内にunoconvプログラムを含んでください。';
+$string['test_unoconvnotestfile'] = 'PDFに変換されるテストドキュメントがありません。';
+$string['test_unoconvnotexecutable'] = 'unoconvパスが実行可能ではないファイルを指しています。';
+$string['test_unoconvok'] = 'unoconvパスは適切に設定されているようです。';
+$string['test_unoconvversionnotsupported'] = 'あなたがインストールしているunoconvのバージョンはサポートされません。Moodle課題評定機能ではバージョン0.7またはそれ以上を必要とします。';
 $string['tool'] = 'ツール';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = '未保存の変更';
 $string['viewfeedbackonline'] = '注釈付きPDFを表示する ...';
 $string['white'] = '白';
 $string['yellow'] = '黄色';

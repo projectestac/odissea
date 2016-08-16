@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'form', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['month'] = '月';
 $string['mustbeoverriden'] = 'クラス {$a} のabstract form_definition() メソッドはオーバーライドすべきです。コードを修正してください。';
 $string['nomethodforaddinghelpbutton'] = 'フォームエレメント {$a->name} (クラス{$a->classname}) にヘルプボタンを追加する方法がありません。';
 $string['nonexistentformelements'] = '存在しないフォームエレメント {$a} にヘルプボタンを追加しようとしています。';
+$string['noselection'] = '選択なし';
+$string['nosuggestions'] = '候補なし';
 $string['optional'] = '任意';
 $string['othersettings'] = 'その他の設定';
 $string['requiredelement'] = '必須入力フィールド';
@@ -58,6 +60,7 @@ $string['revealpassword'] = '表示';
 $string['security'] = 'セキュリティ';
 $string['selectallornone'] = 'すべてを選択する/なし';
 $string['selected'] = '選択済み';
+$string['selecteditems'] = '選択済みアイテム:';
 $string['showadvanced'] = '拡張要素を表示する';
 $string['showless'] = '表示を減らす ...';
 $string['showmore'] = '表示を増やす ...';

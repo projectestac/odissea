@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_calendar_upcoming', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_calendar_upcoming
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_upcoming:addinstance'] = 'Engadir un novo bloque de próximos eventos';
-$string['calendar_upcoming:myaddinstance'] = 'Engadir novo bloque de próximos eventos na área persoal';
+$string['calendar_upcoming:addinstance'] = 'Engadir un novo bloque de actividades en vésperas';
+$string['calendar_upcoming:myaddinstance'] = 'Engadir novo bloque de actividades en vésperas ao cartafol persoal';
 $string['pluginname'] = 'Próximos eventos';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cache', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['area'] = 'Area';
 $string['cacheadmin'] = 'Cache administration';
 $string['cacheconfig'] = 'Configuration';
 $string['cachedef_calendar_subscriptions'] = 'Calendar subscriptions';
+$string['cachedef_capabilities'] = 'System capabilities list';
+$string['cachedef_completion'] = 'Activity completion status';
 $string['cachedef_config'] = 'Config settings';
 $string['cachedef_coursecat'] = 'Course categories lists for particular user';
 $string['cachedef_coursecatrecords'] = 'Course categories records';
@@ -44,18 +46,22 @@ $string['cachedef_coursemodinfo'] = 'Accumulated information about modules and s
 $string['cachedef_databasemeta'] = 'Database meta information';
 $string['cachedef_eventinvalidation'] = 'Event invalidation';
 $string['cachedef_externalbadges'] = 'External badges for particular user';
-$string['cachedef_gradecondition'] = 'User grades cached for evaluating conditional availability';
+$string['cachedef_grade_categories'] = 'Grade category queries';
 $string['cachedef_groupdata'] = 'Course group information';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - cleaned content';
 $string['cachedef_langmenu'] = 'List of available languages';
 $string['cachedef_locking'] = 'Locking';
 $string['cachedef_navigation_expandcourse'] = 'Navigation expandable courses';
 $string['cachedef_observers'] = 'Event observers';
+$string['cachedef_plugin_functions'] = 'Plugins available callbacks';
 $string['cachedef_plugin_manager'] = 'Plugin info manager';
 $string['cachedef_questiondata'] = 'Question definitions';
 $string['cachedef_repositories'] = 'Repositories instances data';
 $string['cachedef_string'] = 'Language string cache';
 $string['cachedef_suspended_userids'] = 'List of suspended users per course';
+$string['cachedef_tagindexbuilder'] = 'Search results for tagged items';
+$string['cachedef_tags'] = 'Tags collections and areas';
+$string['cachedef_temp_tables'] = 'Temporary tables cache';
 $string['cachedef_userselections'] = 'Data used to persist user selections throughout Moodle';
 $string['cachedef_yuimodules'] = 'YUI Module definitions';
 $string['cachelock_file_default'] = 'Default file locking';
@@ -97,7 +103,10 @@ $string['inadequatestoreformapping'] = 'This store doesn\'t meet the requirement
 $string['invalidlock'] = 'Invalid lock';
 $string['invalidplugin'] = 'Invalid plugin';
 $string['invalidstore'] = 'Invalid cache store provided';
+$string['localstorenotification'] = 'This cache can be safely mapped to a store that is local to each webserver';
 $string['lockdefault'] = 'Default';
+$string['locking'] = 'Locking';
+$string['locking_help'] = 'Locking is a mechanism that restricts access to cached data to one process at a time to prevent the data from being overwritten. The locking method determines how the lock is acquired and checked.';
 $string['lockingmeans'] = 'Locking mechanism';
 $string['lockmethod'] = 'Lock method';
 $string['lockmethod_help'] = 'This is the method used for locking when required of this store.';
@@ -127,6 +136,7 @@ $string['requestcount'] = 'Test with {$a} requests';
 $string['rescandefinitions'] = 'Rescan definitions';
 $string['result'] = 'Result';
 $string['set'] = 'Set';
+$string['sharedstorenotification'] = 'This cache must be mapped to a store that is shared to all webservers';
 $string['sharing'] = 'Sharing';
 $string['sharing_all'] = 'Everyone.';
 $string['sharing_help'] = 'This allows you to determine how the cache data can be shared if you have a clustered setup, or if you have multiple sites all set up with the same store and wish to share the data. This is an advanced setting please make sure you understand its purpose before changing it.';

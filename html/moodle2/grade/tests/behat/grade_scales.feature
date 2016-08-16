@@ -1,4 +1,4 @@
-@core @core_grades
+@core @core_grades @javascript
 Feature: View gradebook when scales are used
   In order to use scales to grade activities
   As an teacher
@@ -49,20 +49,29 @@ Feature: View gradebook when scales are used
     And I set the field "grade[modgrade_type]" to "Scale"
     And I set the field "grade[modgrade_scale]" to "Letterscale"
     And I press "Save and display"
-    And I follow "View/grade all submissions"
-    And I click on "Grade Student 1" "link" in the "Student 1" "table_row"
+    And I follow "View all submissions"
+    And I click on "Grade" "link" in the "Student 1" "table_row"
     And I set the field "Grade" to "A"
-    And I press "Save and show next"
+    And I press "Save changes"
+    And I press "Ok"
+    And I click on "[data-action=next-user]" "css_element"
     And I set the field "Grade" to "B"
-    And I press "Save and show next"
+    And I press "Save changes"
+    And I press "Ok"
+    And I click on "[data-action=next-user]" "css_element"
     And I set the field "Grade" to "C"
-    And I press "Save and show next"
+    And I press "Save changes"
+    And I press "Ok"
+    And I click on "[data-action=next-user]" "css_element"
     And I set the field "Grade" to "D"
-    And I press "Save and show next"
+    And I press "Save changes"
+    And I press "Ok"
+    And I click on "[data-action=next-user]" "css_element"
     And I set the field "Grade" to "F"
     And I press "Save changes"
+    And I press "Ok"
     And I follow "Course 1"
-    And I follow "Grades"
+    And I navigate to "Grades" node in "Course administration"
     And I navigate to "Course grade settings" node in "Grade administration > Setup"
     And I set the field "Show weightings" to "Show"
     And I set the field "Show contribution to course total" to "Show"
@@ -70,7 +79,6 @@ Feature: View gradebook when scales are used
     And I follow "Grader report"
     And I turn editing mode on
 
-  @javascript
   Scenario: Test displaying scales in gradebook in aggregation method Natural
     When I turn editing mode off
     Then the following should exist in the "user-grades" table:
@@ -85,14 +93,13 @@ Feature: View gradebook when scales are used
       | Range              | F–A      | 0.00–5.00      | 0.00–5.00    |
       | Overall average    | C        | 3.00           | 3.00         |
     And I follow "User report"
-    And I set the field "Select all or one user" to "Student 3"
-    And I click on "Select all or one user" "select"
+    And I select "Student 3" from the "Select all or one user" singleselect
     And the following should exist in the "user-grade" table:
       | Grade item          | Grade | Range | Percentage | Contribution to course total |
       | Test assignment one | C     | F–A   | 50.00 %    | 60.00 %                      |
       | Sub category 1 total      | 3.00  | 0–5   | 60.00 %    | -                            |
       | Course total        | 3.00  | 0–5   | 60.00 %    | -                            |
-    And I set the field "jump" to "Categories and items"
+    And I select "Gradebook setup" from the "Grade report" singleselect
     And the following should exist in the "grade_edit_tree_table" table:
       | Name                | Max grade |
       | Test assignment one | 5.00      |
@@ -100,15 +107,14 @@ Feature: View gradebook when scales are used
       | Course total        | 5.00      |
     And I log out
     And I log in as "student2"
+    And I follow "Grades" in the user menu
     And I follow "Course 1"
-    And I follow "Grades"
     And the following should exist in the "user-grade" table:
       | Grade item          | Grade | Range | Percentage | Contribution to course total |
       | Test assignment one | B     | F–A   | 75.00 %    | 80.00 %                      |
       | Sub category 1 total      | 4.00  | 0–5   | 80.00 %    | -                            |
       | Course total        | 4.00  | 0–5   | 80.00 %    | -                            |
 
-  @javascript
   Scenario Outline: Test displaying scales in gradebook in all other aggregation methods
     When I follow "Edit   Course 1"
     And I set the field "Aggregation" to "<aggregation>"
@@ -133,14 +139,13 @@ Feature: View gradebook when scales are used
       | Range              | F–A      | 1.00–5.00      | 0.00–100.00    |
       | Overall average    | C        | 3.00           | <overallavg>   |
     And I follow "User report"
-    And I set the field "Select all or one user" to "Student 3"
-    And I click on "Select all or one user" "select"
+    And I select "Student 3" from the "Select all or one user" singleselect
     And the following should exist in the "user-grade" table:
       | Grade item                   | Grade          | Range | Percentage    | Contribution to course total |
       | Test assignment one          | C              | F–A   | 50.00 %       | <contrib3>                   |
       | Sub category (<aggregation>) total<aggregation>. | 3.00           | 1–5   | 50.00 %       | -                            |
       | Course total<aggregation>.   | <coursetotal3> | 0–100 | <courseperc3> | -                            |
-    And I set the field "jump" to "Categories and items"
+    And I select "Gradebook setup" from the "Grade report" singleselect
     And the following should exist in the "grade_edit_tree_table" table:
       | Name                | Max grade |
       | Test assignment one | A (5)     |
@@ -148,8 +153,8 @@ Feature: View gradebook when scales are used
       | Course total<aggregation>.   |           |
     And I log out
     And I log in as "student2"
+    And I follow "Grades" in the user menu
     And I follow "Course 1"
-    And I follow "Grades"
     And the following should exist in the "user-grade" table:
       | Grade item                   | Grade          | Range | Percentage    | Contribution to course total |
       | Test assignment one          | B              | F–A   | 75.00 %       | <contrib2>                   |

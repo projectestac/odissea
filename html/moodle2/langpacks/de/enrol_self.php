@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Einschreibung deaktiviert oder inaktiv';
+$string['canntenrolearly'] = 'Sie können sich noch nicht einschreiben, weil die Einschreibung am {$a} beginnt.';
+$string['canntenrollate'] = 'Sie können sich nicht mehr einschreiben, weil die Einschreibung am {$a} beendet wurde.';
 $string['cohortnonmemberinfo'] = 'Nur Mitglieder der globalen Gruppe \'{$a}\' können sich selbst in den Kurs einschreiben.';
 $string['cohortonly'] = 'Nur für Mitglieder der globalen Gruppe';
 $string['cohortonly_help'] = 'Die Selbsteinschreibung kann beschränkt werden auf Mitglieder einer globalen Gruppe. Eine Änderung dieser Einstellung hat keine Auswirkung auf bereits erfolgte Einschreibungen.';
 $string['customwelcomemessage'] = 'Begrüßungstext';
-$string['customwelcomemessage_help'] = 'Ein individueller Begrüßungstext kann als einfacher Text, Moodle-Auto-Format oder im HTML-Format mit mehreren Sprachen erstellt werden.';
+$string['customwelcomemessage_help'] = 'Ein Begrüßungstext kann unformatierter Text sein oder im Moodle-Auto-Format auch HTML-Tags und Multi-lang-Tags enthalten.
+
+Sie können folgende Platzhalter im Text verwenden:
+
+* Kursname {$a->coursename}
+* Link zum Nutzerprofil {$a->profileurl}
+* Nutzer-E-Mail-Adresse {$a->email}
+* Vollständiger Nutzername {$a->fullname}';
 $string['defaultrole'] = 'Rolle im Kurs';
 $string['defaultrole_desc'] = 'Wählen Sie eine Rolle aus, die Nutzer/innen bei der Selbsteinschreibung zugewiesen werden soll';
 $string['enrolenddate'] = 'Einschreibeende';
@@ -61,6 +70,7 @@ $string['groupkey_desc'] = 'Standardmäßig einen Einschreibeschlüssel für Gru
 $string['groupkey_help'] = 'Ergänzend zum Einschreibeschlüssel für die Kurseinschreibung lassen sich weitere Einschreibeschlüssel für Gruppen festlegen. Nutzer/innen können damit bei ihrer Kurseinschreibung automatisch einer bestimmten Gruppe zugewiesen werden.
 
 Um Einschreibeschlüssel für Gruppen verwenden zu können, muss zusätzlich ein Einschreibeschlüssel für den Kurs vergeben sein, den aber niemand kennen muss.';
+$string['keyholder'] = 'Sie sollten den Zugangsschlüssel erhalten haben von:';
 $string['longtimenosee'] = 'Inaktive abmelden
 ';
 $string['longtimenosee_help'] = 'Wenn Personen lange Zeit nicht mehr auf einen Kurs zugreifen, werden sie automatisch abgemeldet. Dieser Parameter legt die maximale Inaktivitätsdauer fest.';
@@ -87,6 +97,7 @@ $string['requirepassword'] = 'Einschreibeschlüssel notwendig';
 $string['requirepassword_desc'] = 'Die Verwendung eines Einschreibeschlüssel ist notwendig. Mit dieser Einstellung wird in neuen Kursen ein Einschreibeschlüssel gesetzt und in bestehenden Kursen das Löschen des Einschreibeschlüssels verhindert.';
 $string['role'] = 'Rolle im Kurs';
 $string['self:config'] = 'Selbsteinschreibung konfigurieren';
+$string['self:holdkey'] = 'Person wird als Halter des Zugangsschlüssels angezeigt';
 $string['self:manage'] = 'Eingeschriebene Nutzer/innen verwalten';
 $string['self:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';
 $string['self:unenrolself'] = 'Selbst aus dem Kurs abmelden';

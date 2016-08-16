@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cachestore_memcached', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,12 @@ $string['hash_help'] = 'Especifica o algoritmo de hash usado para as chaves de i
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmurar';
+$string['isshared'] = 'Cache partilhada';
+$string['isshared_help'] = 'O seu servidor da memcache também está a ser utilizado por outras aplicações?
+
+Se a cache é partilhada por outras aplicações, então cada chave será excluída individualmente para garantir que apenas são eliminados os dados pertencentes a essa aplicação (o que deixará os dados da cache da aplicação externa inalterados). Isto pode provocar uma diminuição de desempenho quando limpar a cache, dependendo da configuração do seu servidor.
+
+Se estiver a utilizar uma cache dedicada para esta aplicação, então a cache pode ser eliminada seguramente sem qualquer risco de destruição de dados de cache de outra aplicação. Isto deve resultar num aumento de desempenho quando limpar a cache.';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Chave de prefixo';
 $string['prefix_help'] = 'Isto pode ser usado para criar um "domínio" para as suas chaves de itens que lhe permite criar vários armazenamentos da memcached numa única instalação memcached. Não pode ter mais do que 16 caracteres, a fim de garantir que não se deparará com questões fundamentais de comprimento inesperadas.';
@@ -80,6 +86,8 @@ Por exemplo: <pre> server.url.com ipaddress: port </pre>';
 $string['testservers'] = 'Servidores de teste';
 $string['testservers_desc'] = 'Uma ou mais strings de ligação para servidores memchache para serem testadas. Se um servidor de teste tiver sido especificado, o desempenho de memcache pode ser testado usando a página de desempenho de cache no bloco de administração.
 Por exemplo: 127.0.0.1:11211';
+$string['upgrade200recommended'] = 'Recomenda-se que atualize a extensão PHP Memcached para a versão 2.0.0 ou superior.
+A versão da extensão PHP Memcached em uso não fornece a funcionalidade que o Moodle utiliza para garantir uma cache de modo seguro. Até atualizar, recomendamos que não configure quaisquer outras aplicações para utilizar os mesmos servidores de Memcache tal como o Moodle está configurado para usar.';
 $string['usecompression'] = 'Usar compressão';
 $string['usecompression_help'] = 'Ativa ou desativa a carga de compressão. Quando ativado, os valores de itens superiores a um determinado limite (atualmente 100 bytes) será compactado durante o armazenamento e descompactados durante a recuperação de forma transparente.';
 $string['useserialiser'] = 'Usar serializador';

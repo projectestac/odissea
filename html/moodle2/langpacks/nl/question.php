@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'question', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Huidige categorie';
 $string['categorycurrentuse'] = 'Gebruik deze categorie';
 $string['categorydoesnotexist'] = 'Deze categorie bestaat niet';
 $string['categoryinfo'] = 'Categorie info';
-$string['categorymove'] = 'De categorie \'{$a->name}\' bevat {$a->count} vragen. Kies alsjeblieft een categorie om deze vragen naar te verplaatsen';
+$string['categorymove'] = 'De categorie \'{$a->name}\' bevat {$a->count} vragen (sommige kunnen verborgen vragen zijn of willekeurige vragen die nog in gebruik zijn in een test). Kies alsjeblieft een andere categorie om deze vragen naartoe te verplaatsen.';
 $string['categorymoveto'] = 'Bewaar in categorie';
 $string['categorynamecantbeblank'] = 'De categorienaam kan niet leeg zijn';
 $string['changeoptions'] = 'Wijzig opties';
@@ -193,7 +193,6 @@ $string['generalfeedback_help'] = 'Algemene feedback wordt aan de leerling getoo
 Je kunt de algemene feedback gebruiken om leerlingen achtergrond te geven bij welke leerstof getest werd of hen een link geven naar meer informatie als ze de vragen niet begrepen hebben.';
 $string['getcategoryfromfile'] = 'Haal categorie uit bestand';
 $string['getcontextfromfile'] = 'Haal context uit bestand';
-$string['hidden'] = 'Verborgen';
 $string['hintn'] = 'Hint {no}';
 $string['hintnoptions'] = 'Hint {no} opties';
 $string['hinttext'] = 'Hint tekst';
@@ -292,8 +291,6 @@ $string['numqas'] = 'Aantal vraagpogingen';
 $string['numquestions'] = 'Aantal vragen';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} verborgen)';
 $string['options'] = 'Opties';
-$string['orphanedquestionscategory'] = 'Vragen bewaard uit verwijderde categorieën';
-$string['orphanedquestionscategoryinfo'] = 'Af en toe, gewoonlijk te wijten aan oude softwarebugs, blijven vragen in de databank, zelfs wanneer de overeenkomstige vragencategorie al verwijderd is. Dit zou natuurlijk niet mogen gebeuren, maar het is in het verleden op deze site gebeurd. Deze categorie is automatisch gemaakt en verweesde vragen zijn naar hier verplaatst, zodat je ze terug kunt beheren. Merk op dat mediabestanden of afbeeldingen die bij de vraag horen, waarschijnlijk verloren gegaan zijn.';
 $string['page-question-category'] = 'Pagina voor vragencategorieën';
 $string['page-question-edit'] = 'Pagina voor bewerken van vragen';
 $string['page-question-export'] = 'Vraagexportpagina';
@@ -384,6 +381,7 @@ $string['submissionoutofsequencefriendlymessage'] = 'Je hebt gegevens ingevoerd 
 $string['submit'] = 'Afgeven';
 $string['submitandfinish'] = 'Afgeven en beëindigen';
 $string['submitted'] = 'Afgeven: {$a}';
+$string['tagarea_question'] = 'Vragen';
 $string['technicalinfo'] = 'Technische documentatie';
 $string['technicalinfo_help'] = 'Deze technische informatie is waarschijnlijk enkel nuttig voor ontwikkelaars die aan nieuwe vraagtypes werken. Ze kan ook nuttig zijn om een diagnose te meken bij het oplossen van problemen met vragen.';
 $string['technicalinfomaxfraction'] = 'Maximale fractie: {$a}';

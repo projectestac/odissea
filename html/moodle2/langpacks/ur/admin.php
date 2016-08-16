@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ur', branch 'MOODLE_28_STABLE'
+ * Strings for component 'admin', language 'ur', branch 'MOODLE_31_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,6 @@ $string['adminseesallevents'] = 'منتظمین سب وقوع دیکھیں';
 $string['adminseesownevents'] = 'منتظمین دوسرے استعمال کنندگان کی طرع ہے';
 $string['allowemailaddresses'] = 'برقی خط کی ڈومین کی اجازت';
 $string['allowuserblockhiding'] = 'استعمال کنندگان کو بلاک چھپانے کی اجازت';
-$string['antivirus'] = 'وائرس مخالف';
 $string['appearance'] = 'ظاہری روپ';
 $string['authentication'] = 'معتبریت';
 $string['authsettings'] = 'انتظام معتبریت';
@@ -57,6 +56,7 @@ $string['change'] = 'تبدیل کریں';
 $string['checkboxno'] = 'نہیں';
 $string['checkboxyes'] = 'ہاں';
 $string['choosefiletoedit'] = 'ردو بدل کیلیے فائیل منتخب کریں';
+$string['commonactivitysettings'] = 'عام سیٹنگز';
 $string['commonsettings'] = 'عام سیٹنگز';
 $string['confeditorhidebuttons'] = 'ان بٹنز کو منتخب کریں جو ایچ ٹی ایم ایل ایڈیٹر میں خفی ہوں';
 $string['configsectionmail'] = 'میل';
@@ -114,7 +114,6 @@ $string['order3'] = 'تیسرا';
 $string['order4'] = 'چوتھا';
 $string['perfdebug'] = 'کار کردگی کی معلومات';
 $string['performance'] = 'کار کردگی';
-$string['pleaseregister'] = 'اس بٹن کو ختم کرنے کے لیے اپنی سائٹ رجسٹر کریں';
 $string['plugins'] = 'ماڈیولز';
 $string['profilecategory'] = 'زمرہ';
 $string['profilecategoryname'] = 'زمرہ کا نام، جو پہلے استعمال میں نہ ہو';

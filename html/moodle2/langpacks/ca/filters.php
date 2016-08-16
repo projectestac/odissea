@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'filters', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ $string['coursecategory'] = 'Categoria del curs';
 $string['courserole'] = 'Rol al curs';
 $string['courserolelabel'] = '{$a->label} té el rol {$a->rolename} al curs {$a->coursename} de la categoria {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} - error: el curs {$a->coursename} no existeix';
+$string['coursevalue'] = 'valor del curs';
 $string['datelabelisafter'] = '{$a->label} després del {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} abans del {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} entre el {$a->after} i el {$a->before}';
@@ -66,6 +67,7 @@ $string['isempty'] = 'està buit';
 $string['isequalto'] = 'és igual a';
 $string['isnotdefined'] = 'no està definit';
 $string['isnotequalto'] = 'no és igual a';
+$string['limiterfor'] = 'limitador de camp {$a}';
 $string['neveraccessed'] = 'No s\'ha accedit mai';
 $string['nevermodified'] = 'No s\'ha modificat mai';
 $string['newfilter'] = 'Nou filtre';
@@ -74,6 +76,7 @@ $string['off'] = 'Inactiu';
 $string['offbutavailable'] = 'Inactiu, però disponible';
 $string['on'] = 'Actiu';
 $string['profilefilterfield'] = 'Nom del camp del perfil';
+$string['profilefilterlimiter'] = 'Perfil de l\'operador de camp';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Suprimeix tots els filtres';

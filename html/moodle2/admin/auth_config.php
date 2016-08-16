@@ -148,8 +148,6 @@ function print_auth_lock_options($auth, $user_fields, $helptext, $retrieveopts, 
             // If custom field then pick name from database.
             $fieldshortname = str_replace('profile_field_', '', $fieldname);
             $fieldname = $customfieldname[$fieldshortname]->name;
-        } elseif ($fieldname == 'phone1') {
-            $fieldname = get_string('phone');
         } elseif ($fieldname == 'url') {
             $fieldname = get_string('webpage');
         } else {

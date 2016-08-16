@@ -1,197 +1,11 @@
 <?php
 
 class com_wiris_quizzes_impl_HTMLTools {
-	public function __construct() { 
+	public function __construct() {
+		;
 	}
-	public function unitTestDev() {
-		haxe_Log::trace("compare(a,a1)=" . _hx_string_rec(com_wiris_quizzes_impl_HTMLTools::compareStrings("a", "a1"), ""), _hx_anonymous(array("fileName" => "HTMLTools.hx", "lineNumber" => 1824, "className" => "com.wiris.quizzes.impl.HTMLTools", "methodName" => "unitTestDev")));
-		$a = new _hx_array(array());
-		$a->push("a");
-		$a->push("a1");
-		$s = $this->sortIterator($a->iterator());
-		$i = null;
-		$r = "";
-		{
-			$_g1 = 0; $_g = $s->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$r = $r . " " . $s[$i1];
-				unset($i1);
-			}
-		}
-		haxe_Log::trace("sort({a1,a})" . $r, _hx_anonymous(array("fileName" => "HTMLTools.hx", "lineNumber" => 1835, "className" => "com.wiris.quizzes.impl.HTMLTools", "methodName" => "unitTestDev")));
-	}
-	public function unitTest() {
-		$this->unitTestReplaceVariablesInHTML();
-		$this->unitTestUpdateReservedWords();
-		$this->unitTestVariableNames();
-		$this->unitTestConvertEditor2Newlines();
-		$this->unitTestExtractText();
-		$this->unitTestTextToMathML();
-		$this->unitTestPrepareFormulasAlgorithm();
-		$this->unitTestMathMLToText();
-	}
-	public function implode($a, $tok) {
-		$sb = new StringBuf();
-		$i = null;
-		{
-			$_g1 = 0; $_g = $a->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				if($i1 > 0) {
-					$sb->add($tok);
-				}
-				$sb->add($a[$i1]);
-				unset($i1);
-			}
-		}
-		return $sb->b;
-	}
-	public function unitTestVariableNames() {
-		$html = new _hx_array(array("<math><mi>#a1</mi></math>", "<p>Calcular la corriente que circula por el condensador D del circuito adjunto. Los valores de los compenentes son: A = #A Ω;  B = #B Ω;  C = #C Ω;  D = #D Ω.</p>\x0A" . "<p><img src=\"@@PLUGINFILE@@/Circuito1.gif\" alt=\"\" width=\"424\" height=\"170\" /></p> <p>#x</p> <p>#x1</p> <p>#x2</p> <p>#x3</p> ", "<span style=\"color: #aaffaa;\">&#x32;#x_11</span>", "123 #a<ol>\x0A" . "<li><span style=\"background-color: #ffff00; font-family: 'times new roman', times, serif;\">Use inverse operations to undo Addition and Subtraction (add and/or subtract all terms from left to right)</span></li>\x0A" . "<li><span style=\"background-color: #ffff00; font-family: 'times new roman', times, serif;\">Use inverse operations to undo Multiplication and Division (multiply and/or divide all factors from left to right)</span></li>\x0A" . "</ol>", "ΩΩΩΩΩΩΩ<div>ΩΩΩ<p>ΩΩ#aΩΩ</p>ΩΩΩ</div>ΩΩΩΩΩΩΩ", "<math><mlongdiv longdivstyle=\"shortstackedrightright\" charalign=\"center\" charspacing=\"0px\" stackalign=\"left\"><mrow><mo>#</mo><mi>d</mi></mrow><mrow><mo>#</mo><mi>q</mi></mrow><msgroup><msrow><mo>#</mo><mi>n</mi></msrow></msgroup></mlongdiv></math>"));
-		$vars = new _hx_array(array(new _hx_array(array("a1")), new _hx_array(array("A", "B", "C", "D", "x", "x1", "x2", "x3")), new _hx_array(array("x_11")), new _hx_array(array("a")), new _hx_array(array("aΩΩ")), new _hx_array(array("d", "n", "q"))));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $html->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$v = $this->extractVariableNames($html[$i1]);
-				$a1 = $this->implode($vars[$i1], ", ");
-				$a2 = $this->implode($v, ", ");
-				if(!($a1 === $a2)) {
-					throw new HException("Expected: " . $a1 . ". Found: " . $a2 . ".");
-				}
-				unset($v,$i1,$a2,$a1);
-			}
-		}
-	}
-	public function unitTestMathMLToText() {
-		$mathml = new _hx_array(array("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>F</mi><mo>+</mo><mi>C</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>0</mn><mo>·</mo><mi>x</mi><mi>y</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">sin</mi><mi>x</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></mfenced></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>", "<math><mfenced open=\"|\" close = \"|\"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>", "<math><mfenced><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>", "<math><msqrt><mn>2</mn></msqrt><mo>+</mo><mroot><mi>x</mi><mn>3</mn></mroot></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>α</mi><mo>+</mo><mn>1</mn></math>"));
-		$responses = new _hx_array(array("sin(x)+1", "#F+C", "2.0·xy", "sinx", "(1,0)", "1/3", "|((1,0),(0,1))|", "((1,0),(0,1))", "sqrt(2)+root(x,3)", "α+1"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $mathml->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$res = $this->mathMLToText($mathml[$i1]);
-				if(!($res === $responses[$i1])) {
-					throw new HException("Expected: '" . $responses[$i1] . "' but got: '" . $res . "'.");
-				}
-				unset($res,$i1);
-			}
-		}
-	}
-	public function unitTestTextToMathML() {
-		$texts = new _hx_array(array("sin(x)+1", "#F +C", "2.0·xy", "x<3", "\x0A" . " #resposta\x0A" . "  "));
-		$responses = new _hx_array(array("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>F</mi><mo> </mo><mo>+</mo><mi>C</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>0</mn><mo>·</mo><mi>x</mi><mi>y</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&lt;</mo><mn>3</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>\x0A" . "</mo><mo> </mo><mo>#</mo><mi>r</mi><mi>e</mi><mi>s</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>t</mi><mi>a</mi><mo>\x0A" . "</mo><mo> </mo><mo> </mo></math>"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $texts->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$res = $this->textToMathML($texts[$i1]);
-				if(!($res === $responses[$i1])) {
-					throw new HException("Expected: '" . $responses[$i1] . "' but got: '" . $res . "'.");
-				}
-				unset($res,$i1);
-			}
-		}
-	}
-	public function unitTestReplaceVariablesInHTML() {
-		$texts = new _hx_array(array("<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo mathcolor=¨#FF0000¨»#«/mo»«mi mathcolor=¨#FF0000¨»a«/mi»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mi>#a1</mi></math>", "<math><mo>#</mo><mi>a</mi><mn>1</mn></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + #dif</p>", "a  «math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;»«mfrac»«mrow»«mi»#«/mi»«mi»a«/mi»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mi»#«/mi»«mi»b«/mi»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p>#a&#xa1;<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = #a1; ]]> </script> <select><option>#a</option><option>#a1</option></select></p>", "<math><mo>#</mo><mi>a</mi><mn>0</mn></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»#«/mo»«mi»§#945;«/mi»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" />&nbsp;i #&alpha;.</p>"));
-		$mml = new Hash();
-		$mml->set("dif", "<math><mn>0</mn></math>");
-		$mml->set("a", "<math><mi>x</mi></math>");
-		$mml->set("b", "<math><mi>y</mi></math>");
-		$mml->set("a1", "<math><mi>z</mi></math>");
-		$mml->set("α", "<math><mn>2</mn></math>");
-		$txt = new Hash();
-		$txt->set("dif", "0");
-		$txt->set("a", "x");
-		$txt->set("b", "y");
-		$txt->set("a1", "z");
-		$txt->set("α", "2");
-		$v = new Hash();
-		$v->set(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML, $mml);
-		$v->set(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT, $txt);
-		$responses = new _hx_array(array("<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathcolor=¨#FF0000¨»«mrow»«mi»x«/mi»«/mrow»«/mstyle»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mrow><mi>z</mi></mrow></math>", "<math><mrow><mi>z</mi></mrow></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + <math><mn>0</mn></math></p>", "a  «math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mrow»«mrow»«mi»x«/mi»«/mrow»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mrow»«mi»y«/mi»«/mrow»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p><math><mi>x</mi></math>¡<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = z; ]]> </script> <select><option>x</option><option>z</option></select></p>", "<math><mrow><mrow><mi>x</mi></mrow><mo>0</mo></mrow></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mrow»«mn»2«/mn»«/mrow»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" /> i «math»«mn»2«/mn»«/math».</p>"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $texts->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$res = $this->expandVariables($texts[$i1], $v);
-				if(!($res === $responses[$i1])) {
-					throw new HException("Expected: '" . $responses[$i1] . "' but got: '" . $res . "'.");
-				}
-				unset($res,$i1);
-			}
-		}
-	}
-	public function unitTestExtractText() {
-		$inputs = new _hx_array(array("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mtext>Cap de les altres</mtext></mrow></math>", "<math><mrow><mtext>La resposta és </mtext><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi></mfrac><mtext>.</mtext></mrow></math>", "<math><mrow><mo>(</mo><mtext>tiruliru</mtext><mo>)</mo></mrow></math>", "<math><mrow><msqrt><mtext>radicand</mtext></msqrt></mrow></math>"));
-		$outputs = new _hx_array(array("Cap de les altres", "La resposta és <math><mrow><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi></mfrac></mrow></math>.", "<math><mrow><mo>(</mo></mrow></math>tiruliru<math><mrow><mo>)</mo></mrow></math>", "<math><mrow><msqrt><mtext>radicand</mtext></msqrt></mrow></math>"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $inputs->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$coutput = $this->extractTextFromMathML($inputs[$i1]);
-				if(!($coutput === $outputs[$i1])) {
-					throw new HException("Expected: '" . $outputs[$i1] . "' but got: '" . $coutput . "'.");
-				}
-				unset($i1,$coutput);
-			}
-		}
-	}
-	public function unitTestPrepareFormulasAlgorithm() {
-		$tests = new _hx_array(array("<math><mo>#</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>_</mo><mi>k</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>a</mi><mo>&#160;</mo><mo>+</mo><mo>#</mo><mi>b</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>#</mi><mi>p</mi></math>", "<math><mrow><mi>#</mi><mi>f</mi></mrow></math>", "<math><mrow><mi>#</mi><msup><mi>f</mi><mn>2</mn></msup></mrow></math>", "<math><mrow><msqrt><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></msqrt><mi>#</mi><mi>a</mi></mrow></math>", "<math><mrow><msub><mi>#</mi><mi>a</mi></msub></mrow></math>", "<math><mrow><mi>#</mi><msub><mi>a</mi><mi>c</mi></msub></mrow></math>", "<math><mrow><msqrt><mrow><mi>#</mi><mi>f</mi><mi>u</mi><mi>n</mi><mi>c</mi></mrow></msqrt></mrow></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8594;</mo><mn>0</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mo>#</mo><mi>a</mi><mspace linebreak=\"newline\"/><mi>y</mi><mo>=</mo><mo>#</mo><mi>b</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>α</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathcolor=\"#FF0000\">#</mo><mi mathcolor=\"#FF0000\">a</mi><mo mathcolor=\"#FF0000\">+</mo><mn mathcolor=\"#FF0000\">3</mn></math>"));
-		$responses = new _hx_array(array("<math><mo>#var_k</mo></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#a</mo><mo>&#160;</mo><mo>+</mo><mo>#b</mo></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>#p</mi></math>", "<math><mrow><mi>#f</mi></mrow></math>", "<math><mrow><msup><mi>#f</mi><mn>2</mn></msup></mrow></math>", "<math><mrow><msqrt><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></msqrt><mi>#a</mi></mrow></math>", "<math><mrow><msub><mi>#</mi><mi>a</mi></msub></mrow></math>", "<math><mrow><msub><mi>#a</mi><mi>c</mi></msub></mrow></math>", "<math><mrow><msqrt><mrow><mi>#func</mi></mrow></msqrt></mrow></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8594;</mo><mn>0</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mo>#a</mo><mspace linebreak=\"newline\"/><mi>y</mi><mo>=</mo><mo>#b</mo></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#α</mo></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathcolor=\"#FF0000\">#a</mo><mo mathcolor=\"#FF0000\">+</mo><mn mathcolor=\"#FF0000\">3</mn></math>"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $tests->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$res = $this->prepareFormulas($tests[$i1]);
-				if(!($res === $responses[$i1])) {
-					throw new HException("Expected: '" . $responses[$i1] . "' but got: '" . $res . "'.");
-				}
-				unset($res,$i1);
-			}
-		}
-	}
-	public function unitTestConvertEditor2Newlines() {
-		$tests = new _hx_array(array("<mtable columnalign=\"left\" rowspacing=\"0\"><mtr><mtd><mfenced><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mtd><mtd><mn>2</mn></mtd></mtr></mtable></mfenced></mtd></mtr><mtr><mtd><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable></mtd></mtr></mtable>"));
-		$res = new _hx_array(array("<math><mfenced><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mtd><mtd><mn>2</mn></mtd></mtr></mtable></mfenced><mspace linebreak=\"newline\"/><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable></math>"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $tests->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$u = com_wiris_quizzes_impl_HTMLTools::convertEditor2Newlines($tests[$i1]);
-				if(!($u === $res[$i1])) {
-					throw new HException("Expected: " . $res[$i1] . ". Got: " . $u . ".");
-				}
-				unset($u,$i1);
-			}
-		}
-	}
-	public function unitTestUpdateReservedWords() {
-		$tests = new _hx_array(array("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>4</mn><mo>.</mo><mn>1</mn><mo>&#x000D7;</mo><mn>1</mn><msup><mn>0</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow></math>", "<math><mi>s</mi><mi>i</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>n</mi></math>", "<math><mi>s</mi><mi>i</mi><mi>n</mi><mn>1</mn><mi>s</mi><mi>i</mi><mi>n</mi></math>", "<math><msup><mrow><mi>s</mi><mi>i</mi><msup><mi>n</mi><mi>k</mi></msup></mrow><mi>n</mi></msup></math>", "<math><mi>s</mi><msup><mi>i</mi><mn>1</mn></msup><mi>s</mi><msup><mi>i</mi><mn>1</mn></msup></math>", "<math><mi>s</mi><mrow><mi>i</mi><mi>m</mi><mi>x</mi></mrow></math>", "<math><mi>si</mi><mi>n</mi><mi>x</mi></math>", "<math><mn>2</mn><mi>k</mi><mi>m</mi></math>", "<math><mn>2</mn><mi>k</mi><mo>&nbsp;</mo><mi>m</mi></math>", "<math><mn>5</mn><mi>k</mi><msup><mi>m</mi><mn>2</mn></msup></math>"));
-		$words = new _hx_array(array("s", "si", "sin", "m", "km"));
-		$res = new _hx_array(array("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>1</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></math>", "<math><mi>sin</mi><mi>sin</mi></math>", "<math><mi>sin</mi><mn>1</mn><mi>sin</mi></math>", "<math><msup><msup><mi>sin</mi><mi>k</mi></msup><mi>n</mi></msup></math>", "<math><msup><mi>si</mi><mn>1</mn></msup><msup><mi>si</mi><mn>1</mn></msup></math>", "<math><mi>si</mi><mi mathvariant=\"normal\">m</mi><mi>x</mi></math>", "<math><mi>sin</mi><mi>x</mi></math>", "<math><mn>2</mn><mi>km</mi></math>", "<math><mn>2</mn><mi>k</mi><mo>&#x000A0;</mo><mi mathvariant=\"normal\">m</mi></math>", "<math><mn>5</mn><msup><mi>km</mi><mn>2</mn></msup></math>"));
-		$i = null;
-		{
-			$_g1 = 0; $_g = $tests->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$u = $this->updateReservedWords($tests[$i1], $words);
-				if(!($u === $res[$i1])) {
-					throw new HException("Expected: " . $res[$i1] . ". Got: " . $u . ".");
-				}
-				unset($u,$i1);
-			}
-		}
+	public function setItemSeparator($sep) {
+		$this->separator = (($sep === null) ? "," : $sep);
 	}
 	public function fullMathML2TextImpl($e) {
 		$sb = new StringBuf();
@@ -426,11 +240,16 @@ class com_wiris_quizzes_impl_HTMLTools {
 		}
 		if(_hx_index_of(com_wiris_quizzes_impl_HTMLTools::$MROWS, "@" . $elem->getNodeName() . "@", null) !== -1) {
 			$children = $elem->elements();
-			if($children->hasNext()) {
-				$current = $children->next();
-				while($children->hasNext()) {
+			$elements = new _hx_array(array());
+			while($children->hasNext()) {
+				$elements->push($children->next());
+			}
+			if($elements->length > 0) {
+				$current = $elements[0];
+				$i = 1;
+				while($i < $elements->length) {
 					$previous = $current;
-					$current = $children->next();
+					$current = $elements[$i++];
 					if(_hx_index_of(com_wiris_quizzes_impl_HTMLTools::$MSUPS, "@" . $current->getNodeName() . "@", null) !== -1) {
 						$elem->removeChild($previous);
 						$current->insertChild($previous, 0);
@@ -626,7 +445,11 @@ class com_wiris_quizzes_impl_HTMLTools {
 					if($parent === "mi" || $parent === "mo" || $parent === "mtext" || $parent === "ms") {
 						return com_wiris_quizzes_impl_HTMLTools::$POSITION_ONLY_MATHML;
 					} else {
-						return com_wiris_quizzes_impl_HTMLTools::$POSITION_ALL;
+						if($parent === "td") {
+							return com_wiris_quizzes_impl_HTMLTools::$POSITION_TABLE;
+						} else {
+							return com_wiris_quizzes_impl_HTMLTools::$POSITION_ALL;
+						}
 					}
 				}
 			}
@@ -683,15 +506,15 @@ class com_wiris_quizzes_impl_HTMLTools {
 						$pos2 = _hx_index_of($formula, "</mtext>", $start);
 						$text = _hx_substr($formula, $start + 7, $pos2 - $start - 7);
 						$text = com_wiris_util_xml_WXmlUtils::resolveEntities($text);
-						if(strlen($text) > 0) {
-							$nbspLength = strlen((com_wiris_quizzes_impl_HTMLTools_1($this, $allowedTags, $beginformula, $end, $formula, $lasttag, $omittedcontent, $pos2, $spacepos, $stack, $start, $tag, $text, $trimmedTag)));
-							if(haxe_Utf8::charCodeAt($text, 0) === 160) {
+						$nbsp = com_wiris_quizzes_impl_HTMLTools_1($this, $allowedTags, $beginformula, $end, $formula, $lasttag, $omittedcontent, $pos2, $spacepos, $stack, $start, $tag, $text, $trimmedTag);
+						$nbspLength = strlen($nbsp);
+						if(strlen($text) >= $nbspLength) {
+							if(_hx_substr($text, 0, $nbspLength) === $nbsp) {
 								$text = " " . _hx_substr($text, $nbspLength, null);
 							}
-							if(haxe_Utf8::charCodeAt(_hx_substr($text, strlen($text) - $nbspLength, null), 0) === 160) {
+							if(strlen($text) >= $nbspLength && _hx_substr($text, strlen($text) - $nbspLength, null) === $nbsp) {
 								$text = _hx_substr($text, 0, strlen($text) - $nbspLength) . " ";
 							}
-							unset($nbspLength);
 						}
 						$formula1 = _hx_substr($formula, 0, $start);
 						$formula2 = _hx_substr($formula, $pos2 + 8, null);
@@ -728,7 +551,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 							unset($head2,$head);
 						}
 						$omittedcontent = false;
-						unset($text,$pos2,$formula2,$formula1);
+						unset($text,$pos2,$nbspLength,$nbsp,$formula2,$formula1);
 					} else {
 						$num = 1;
 						$pos = $start + strlen($tag);
@@ -758,11 +581,24 @@ class com_wiris_quizzes_impl_HTMLTools {
 		}
 		return $formula;
 	}
-	public function addImageTag($filename) {
-		$url = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&name=" . $filename;
+	public function ImageB64Url($b64) {
+		return "data:image/png;base64," . $b64;
+	}
+	public function addPlotterImageB64Tag($value) {
 		$h = new com_wiris_quizzes_impl_HTML();
-		$id = _hx_substr($filename, 0, _hx_index_of($filename, ".", null));
-		$h->image($id, $url, null, null);
+		$h->imageClass($this->ImageB64Url($value), null, "wirisplotter");
+		return $h->getString();
+	}
+	public function addPlotterImageTag($filename) {
+		$url = null;
+		if(StringTools::endsWith($filename, ".b64")) {
+			$s = com_wiris_system_Storage::newStorage($filename);
+			$url = $this->ImageB64Url($s->read());
+		} else {
+			$url = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&name=" . $filename;
+		}
+		$h = new com_wiris_quizzes_impl_HTML();
+		$h->imageClass($url, null, "wirisplotter");
 		return $h->getString();
 	}
 	public function isTokensMathML($mathml) {
@@ -891,12 +727,12 @@ class com_wiris_quizzes_impl_HTMLTools {
 	public function textToMathMLWithSemantics($text) {
 		$mathml = $this->textToMathMLImpl($text);
 		$mathml = "<semantics><mrow>" . $mathml . "</mrow><annotation encoding=\"text/plain\">" . $text . "</annotation></semantics>";
-		$result = $this->addMathTag($mathml);
+		$result = com_wiris_quizzes_impl_HTMLTools::addMathTag($mathml);
 		return $result;
 	}
 	public function textToMathML($text) {
 		$mathml = $this->textToMathMLImpl($text);
-		$result = $this->addMathTag($mathml);
+		$result = com_wiris_quizzes_impl_HTMLTools::addMathTag($mathml);
 		return $result;
 	}
 	public function isReservedWord($word) {
@@ -906,12 +742,6 @@ class com_wiris_quizzes_impl_HTMLTools {
 	public function toSubFormula($mathml) {
 		$mathml = com_wiris_quizzes_impl_HTMLTools::stripRootTag($mathml, "math");
 		return "<mrow>" . $mathml . "</mrow>";
-	}
-	public function addMathTag($mathml) {
-		if(!StringTools::startsWith($mathml, "<math")) {
-			$mathml = "<math xmlns=\"http://www.w3.org/1998/Math/MathML\">" . $mathml . "</math>";
-		}
-		return $mathml;
 	}
 	public function inArray($value, $array) {
 		$i = null;
@@ -1146,17 +976,17 @@ class com_wiris_quizzes_impl_HTMLTools {
 		if($s === null || $s === "") {
 			return false;
 		}
-		if(!$this->isQuizzesIdentifierStart(haxe_Utf8::charCodeAt($s, 0))) {
+		$c = haxe_Utf8::charCodeAt($s, 0);
+		if(!$this->isQuizzesIdentifierStart($c)) {
 			return false;
 		}
-		$i = 1;
+		$i = strlen((com_wiris_quizzes_impl_HTMLTools_7($this, $c, $s)));
 		while($i < strlen($s)) {
 			$c = haxe_Utf8::charCodeAt(_hx_substr($s, $i, null), 0);
 			if(!$this->isQuizzesIdentifierPart($c)) {
 				return false;
 			}
-			$i++;
-			unset($c);
+			$i += strlen((com_wiris_quizzes_impl_HTMLTools_8($this, $c, $i, $s)));
 		}
 		return true;
 	}
@@ -1167,11 +997,11 @@ class com_wiris_quizzes_impl_HTMLTools {
 			if($end < strlen($html)) {
 				$c = com_wiris_util_xml_WXmlUtils::getUtf8Char($html, $end);
 				if($this->isQuizzesIdentifierStart($c)) {
-					$end += strlen((com_wiris_quizzes_impl_HTMLTools_7($this, $c, $end, $html, $name, $pos)));
+					$end += strlen((com_wiris_quizzes_impl_HTMLTools_9($this, $c, $end, $html, $name, $pos)));
 					if($end < strlen($html)) {
 						$c = com_wiris_util_xml_WXmlUtils::getUtf8Char($html, $end);
 						while($c > 0 && $this->isQuizzesIdentifierPart($c)) {
-							$end += strlen((com_wiris_quizzes_impl_HTMLTools_8($this, $c, $end, $html, $name, $pos)));
+							$end += strlen((com_wiris_quizzes_impl_HTMLTools_10($this, $c, $end, $html, $name, $pos)));
 							$c = (($end < strlen($html)) ? com_wiris_util_xml_WXmlUtils::getUtf8Char($html, $end) : -1);
 						}
 					}
@@ -1181,10 +1011,15 @@ class com_wiris_quizzes_impl_HTMLTools {
 		}
 		return $name;
 	}
-	public function replaceVariablesInsideHTML($token, $variables, $type) {
+	public function replaceVariablesInsideHTMLTables($html, $variables) {
+		$h = new com_wiris_quizzes_impl_HTMLTableTools($this->separator);
+		return $h->replaceVariablesInsideHTMLTables($html, $variables);
+	}
+	public function replaceVariablesInsideHTML($token, $variables, $type, $escapeText) {
 		$mathml = $type === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML;
 		$text = $type === com_wiris_quizzes_impl_MathContent::$TYPE_TEXT;
-		$image = $type === com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF;
+		$imageRef = $type === com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF;
+		$imageData = $type === com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE;
 		$keys = $this->sortIterator($variables->keys());
 		$j = $keys->length - 1;
 		while($j >= 0) {
@@ -1193,17 +1028,21 @@ class com_wiris_quizzes_impl_HTMLTools {
 			$pos = 0;
 			while(($pos = _hx_index_of($token, $placeholder, $pos)) !== -1) {
 				$v = $this->variablePosition($token, $pos);
-				if(($v === com_wiris_quizzes_impl_HTMLTools::$POSITION_ALL || $text && $v === com_wiris_quizzes_impl_HTMLTools::$POSITION_ONLY_TEXT || $mathml && $v === com_wiris_quizzes_impl_HTMLTools::$POSITION_ONLY_MATHML) && $name === $this->getVariableName($token, $pos)) {
+				if(($v === com_wiris_quizzes_impl_HTMLTools::$POSITION_ALL || $v === com_wiris_quizzes_impl_HTMLTools::$POSITION_TABLE || $text && $v === com_wiris_quizzes_impl_HTMLTools::$POSITION_ONLY_TEXT || $mathml && $v === com_wiris_quizzes_impl_HTMLTools::$POSITION_ONLY_MATHML) && $name === $this->getVariableName($token, $pos)) {
 					$value = $variables->get($name);
-					if($text) {
+					if($text && $escapeText) {
 						$value = com_wiris_util_xml_WXmlUtils::htmlEscape($value);
 					} else {
 						if($mathml) {
-							$value = $this->addMathTag($value);
+							$value = com_wiris_quizzes_impl_HTMLTools::addMathTag($value);
 							$value = $this->extractTextFromMathML($value);
 						} else {
-							if($image) {
-								$value = $this->addImageTag($value);
+							if($imageRef) {
+								$value = $this->addPlotterImageTag($value);
+							} else {
+								if($imageData) {
+									$value = $this->addPlotterImageB64Tag($value);
+								}
 							}
 						}
 					}
@@ -1327,15 +1166,20 @@ class com_wiris_quizzes_impl_HTMLTools {
 				} else {
 					$v = $variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF);
 					if($v !== null) {
-						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF);
+						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF, true);
 					}
+					$v = $variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE);
+					if($v !== null) {
+						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE, true);
+					}
+					$token = $this->replaceVariablesInsideHTMLTables($token, $variables);
 					$v = $variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML);
 					if($v !== null) {
-						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_MATHML);
+						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_MATHML, true);
 					}
 					$v = $variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT);
 					if($v !== null) {
-						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_TEXT);
+						$token = $this->replaceVariablesInsideHTML($token, $v, com_wiris_quizzes_impl_MathContent::$TYPE_TEXT, true);
 					}
 				}
 				$sb->add($token);
@@ -1347,6 +1191,9 @@ class com_wiris_quizzes_impl_HTMLTools {
 			$result = $this->encodeMathML($result);
 		}
 		return $result;
+	}
+	public function expandVariablesText($text, $textvariables) {
+		return $this->replaceVariablesInsideHTML($text, $textvariables, com_wiris_quizzes_impl_MathContent::$TYPE_TEXT, false);
 	}
 	public function encodeMathML($html) {
 		$opentag = "«";
@@ -1413,10 +1260,22 @@ class com_wiris_quizzes_impl_HTMLTools {
 		}
 		return com_wiris_quizzes_impl_HTMLTools::toNativeArray($names);
 	}
+	public $separator = ",";
+	public function __call($m, $a) {
+		if(isset($this->$m) && is_callable($this->$m))
+			return call_user_func_array($this->$m, $a);
+		else if(isset($this->�dynamics[$m]) && is_callable($this->�dynamics[$m]))
+			return call_user_func_array($this->�dynamics[$m], $a);
+		else if('toString' == $m)
+			return $this->__toString();
+		else
+			throw new HException('Unable to call �'.$m.'�');
+	}
 	static $POSITION_NONE = -1;
 	static $POSITION_ONLY_TEXT = 1;
 	static $POSITION_ONLY_MATHML = 2;
 	static $POSITION_ALL = 3;
+	static $POSITION_TABLE = 4;
 	static $MROWS = "@math@mrow@msqrt@mstyle@merror@mpadded@mphantom@mtd@menclose@mscarry@msrow@";
 	static $MSUPS = "@msub@msup@msubsup@";
 	static function toNativeArray($a) {
@@ -1487,6 +1346,12 @@ class com_wiris_quizzes_impl_HTMLTools {
 			}
 		}
 		return strlen($a) - strlen($b);
+	}
+	static function addMathTag($mathml) {
+		if(!StringTools::startsWith($mathml, "<math")) {
+			$mathml = "<math xmlns=\"http://www.w3.org/1998/Math/MathML\">" . $mathml . "</math>";
+		}
+		return $mathml;
 	}
 	static function stripRootTag($xml, $tag) {
 		$xml = trim($xml);
@@ -1585,7 +1450,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 		$m = new com_wiris_quizzes_impl_MathContent();
 		if($answers->length > 0) {
 			$mml = com_wiris_quizzes_impl_MathContent::getMathType($answers[0][0]) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML;
-			$m->type = com_wiris_quizzes_impl_HTMLTools_9($answers, $m, $mml, $sb);
+			$m->type = com_wiris_quizzes_impl_HTMLTools_11($answers, $m, $mml, $sb);
 			$i = null;
 			{
 				$_g1 = 0; $_g = $answers->length;
@@ -1674,16 +1539,12 @@ class com_wiris_quizzes_impl_HTMLTools {
 	static function emptyCasSession($value) {
 		return $value === null || _hx_index_of($value, "<mo", null) === -1 && _hx_index_of($value, "<mi", null) === -1 && _hx_index_of($value, "<mn", null) === -1 && _hx_index_of($value, "<csymbol", null) === -1;
 	}
-	static function main() {
-		$h = new com_wiris_quizzes_impl_HTMLTools();
-		$h->unitTest();
-	}
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLTools'; }
 }
 function com_wiris_quizzes_impl_HTMLTools_0(&$�this, &$close, &$e, &$i, &$it, &$n, &$open, &$sb, &$separators) {
 	{
 		$s = new haxe_Utf8(null);
-		$s->addChar(haxe_Utf8::charCodeAt($separators, com_wiris_quizzes_impl_HTMLTools_10($close, $e, $i, $it, $n, $open, $s, $sb, $separators)));
+		$s->addChar(haxe_Utf8::charCodeAt($separators, com_wiris_quizzes_impl_HTMLTools_12($close, $e, $i, $it, $n, $open, $s, $sb, $separators)));
 		return $s->toString();
 	}
 }
@@ -1729,28 +1590,42 @@ function com_wiris_quizzes_impl_HTMLTools_6(&$�this, &$appendpos, &$character, &
 		return $s->toString();
 	}
 }
-function com_wiris_quizzes_impl_HTMLTools_7(&$�this, &$c, &$end, &$html, &$name, &$pos) {
+function com_wiris_quizzes_impl_HTMLTools_7(&$�this, &$c, &$s) {
+	{
+		$s1 = new haxe_Utf8(null);
+		$s1->addChar($c);
+		return $s1->toString();
+	}
+}
+function com_wiris_quizzes_impl_HTMLTools_8(&$�this, &$c, &$i, &$s) {
+	{
+		$s1 = new haxe_Utf8(null);
+		$s1->addChar($c);
+		return $s1->toString();
+	}
+}
+function com_wiris_quizzes_impl_HTMLTools_9(&$�this, &$c, &$end, &$html, &$name, &$pos) {
 	{
 		$s = new haxe_Utf8(null);
 		$s->addChar($c);
 		return $s->toString();
 	}
 }
-function com_wiris_quizzes_impl_HTMLTools_8(&$�this, &$c, &$end, &$html, &$name, &$pos) {
+function com_wiris_quizzes_impl_HTMLTools_10(&$�this, &$c, &$end, &$html, &$name, &$pos) {
 	{
 		$s = new haxe_Utf8(null);
 		$s->addChar($c);
 		return $s->toString();
 	}
 }
-function com_wiris_quizzes_impl_HTMLTools_9(&$answers, &$m, &$mml, &$sb) {
+function com_wiris_quizzes_impl_HTMLTools_11(&$answers, &$m, &$mml, &$sb) {
 	if($mml) {
 		return com_wiris_quizzes_impl_MathContent::$TYPE_MATHML;
 	} else {
 		return com_wiris_quizzes_impl_MathContent::$TYPE_TEXT;
 	}
 }
-function com_wiris_quizzes_impl_HTMLTools_10(&$close, &$e, &$i, &$it, &$n, &$open, &$s, &$sb, &$separators) {
+function com_wiris_quizzes_impl_HTMLTools_12(&$close, &$e, &$i, &$it, &$n, &$open, &$s, &$sb, &$separators) {
 	if($i < $n) {
 		return $i;
 	} else {

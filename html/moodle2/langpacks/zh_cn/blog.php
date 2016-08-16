@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = '关于此{$a->type}的博客';
 $string['blogaboutthiscourse'] = '发篇关于此课程的博客';
 $string['blogaboutthismodule'] = '写篇关于此{$a}的博客';
 $string['blogadministration'] = '博客管理';
-$string['blogdeleteconfirm'] = '删除这篇博客？';
+$string['blogdeleteconfirm'] = '删除这篇博客\'{$a}\'吗？';
 $string['blogdisable'] = '博客被禁用！';
 $string['blogentries'] = '博客文章';
 $string['blogentriesabout'] = '关于{$a}的博客';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = '课程博客被禁用';
 $string['courseblogs'] = '用户只能浏览开放课程者的博客';
 $string['deleteblogassociations'] = '删除博客关联';
 $string['deleteblogassociations_help'] = '如勾选，那么博客将不再和此课程，或课程中的活动、资源相关联。不会有任何博文会被删除。';
+$string['deleteentry'] = '删除条目';
 $string['deleteexternalblog'] = '取消此外部博客的注册';
 $string['deleteotagswarn'] = '您确定想从所有的博客和系统中删除这些标签吗？';
 $string['description'] = '描述';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = '无效的组ID';
 $string['invalidurl'] = 'URL无法访问';
 $string['linktooriginalentry'] = '文章原始链接';
 $string['maxexternalblogsperuser'] = '每用户最多可有几个外部博客';
+$string['myprofileuserblogs'] = '查看所有博客条目';
 $string['name'] = '博客名';
 $string['name_help'] = '输入您的外部博客的名字。（如果不提供名字，会直接使用外部博客的标题）。';
 $string['noentriesyet'] = '这里没有可见的文章';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = '全部博客页面';
 $string['pagesize'] = '每页显示的文章数';
 $string['permalink'] = '永久链接';
 $string['personalblogs'] = '用户只能浏览自己的博客';
-$string['preferences'] = '偏好设置';
+$string['preferences'] = '博客偏好设置';
 $string['publishto'] = '发布给';
 $string['publishtocourse'] = '用户和你分享一个课程';
 $string['publishtocourseassoc'] = '相关课程成员';
@@ -140,9 +142,9 @@ $string['publishto_help'] = '有三个选择：
 * 自己（草稿）——只有您和管理员能查看此博客
 * 网站里的所有人——所有在此网站注册的人都能阅读此博客
 * 世界上的任何人——任何人，包括访客，都能阅读此博客';
-$string['publishtonoone'] = '您自己(草稿)';
-$string['publishtosite'] = '任意注册用户';
-$string['publishtoworld'] = '任何人';
+$string['publishtonoone'] = '自己(草稿)';
+$string['publishtosite'] = '网站里的所有人';
+$string['publishtoworld'] = '世界上的任何人';
 $string['readfirst'] = '请先读这个';
 $string['relatedblogentries'] = '相关博客';
 $string['retrievedfrom'] = '取自';
@@ -151,6 +153,7 @@ $string['searchterm'] = '搜索：{$a}';
 $string['settingsupdatederror'] = '错误，无法更新博客的使用偏好设定。';
 $string['siteblog'] = '全站博客：{$a}';
 $string['siteblogdisable'] = '未启用网站博客';
+$string['siteblogheading'] = '站点博客';
 $string['siteblogs'] = '注册用户可以浏览所有博客';
 $string['tagdatelastused'] = '标签最后使用的日期';
 $string['tagparam'] = '标签：{$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,7 +86,6 @@ $string['test_notexecutable'] = 'Ghostscript apunta a un fichero no ejecutable';
 $string['test_ok'] = 'La ruta de ghostscript parece estar correcta - por favor compruebe que pueda ver la imagen a continuación';
 $string['tool'] = 'Herramienta';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['unsavedchanges'] = 'Cambios no guardados';
 $string['viewfeedbackonline'] = 'Ver PDF con anotaciones...';
 $string['white'] = 'Blanco';
 $string['yellow'] = 'Amarillo';

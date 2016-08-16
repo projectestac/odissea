@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability_grade', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['description'] = 'Kräv studenter att uppnå ett visst betyg';
 $string['error_backwardrange'] = 'När du anger ett betygsintervall måste det lägsta värdet vara mindre än det högsta';
 $string['error_invalidnumber'] = 'Betygsintervall måste anges med giltiga procentenheter';
 $string['error_selectgradeid'] = 'Du måste välja en betygskomponent för betygets villkor';
-$string['label_max'] = '';
+$string['label_max'] = 'Maximal betygsprocent (exklusiv)';
 $string['label_min'] = 'Minsta betygsprocent (inklusiv)';
 $string['missing'] = '(aktivitet saknas)';
 $string['option_max'] = 'måste vara<';

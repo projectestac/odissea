@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['contacts'] = 'コンタクト';
 $string['context'] = 'コンテクスト';
 $string['defaultmessageoutputs'] = 'デフォルトのメッセージアウトプット';
 $string['defaults'] = 'デフォルト';
+$string['deletemessage'] = 'メッセージを削除する';
+$string['deletemessageconfirmation'] = '本当にこのメッセージを削除してもよろしいですか? あなたのメッセージング履歴からのみ削除され、メッセージを送受信したユーザはまだ閲覧することができます。';
 $string['deletemessagesdays'] = '古いメッセージを自動削除する経過日数';
 $string['disableall'] = '一時的に通知を無効にする';
 $string['disableall_help'] = 'サイト管理者から「強制」とマークされていない通知を除く、すべての通知を一時的に無効にします。';
@@ -56,10 +58,12 @@ $string['emptysearchstring'] = 'あなたは何かを探す必要があります
 $string['enabled'] = '有効';
 $string['errorcallingprocessor'] = '定義されたアウトプットのコールにエラーが発生しました。';
 $string['errortranslatingdefault'] = 'プラグインから提供されているデフォルト設定の変換にエラーが発生しました。代わりにシステムデフォルトを使用します。';
+$string['errorwhilesendingmessage'] = 'メッセージの送信中にエラーが発生しました。後で再度お試しください。';
 $string['eventmessagecontactadded'] = 'メッセージコンタクトが追加されました。';
 $string['eventmessagecontactblocked'] = 'メッセージコンタクトがブロックされました。';
 $string['eventmessagecontactremoved'] = 'メッセージコンタクトが削除されました。';
 $string['eventmessagecontactunblocked'] = 'メッセージコンタクトのブロックが解除されました。';
+$string['eventmessagedeleted'] = 'メッセージが削除されました。';
 $string['eventmessagesent'] = 'メッセージが送信されました。';
 $string['eventmessageviewed'] = 'メッセージが閲覧されました。';
 $string['forced'] = '強制';
@@ -86,6 +90,8 @@ $string['messagehistoryfull'] = 'すべてのメッセージ';
 $string['messagenavigation'] = 'メッセージナビゲーション:';
 $string['messageoutputs'] = 'メッセージアウトプット';
 $string['messages'] = 'メッセージ';
+$string['messagesent'] = 'メッセージが送信されました。';
+$string['messagetosend'] = '送信メッセージ';
 $string['messaging'] = 'メッセージング';
 $string['messagingblockednoncontact'] = 'あなたがコンタクトリスト未登録のユーザをブロックしているため、{$a} は返信することはできません。';
 $string['messagingdisabled'] = 'このサイトではメッセージングが無効にされています。代わりにメールが送信されます。';
@@ -126,6 +132,7 @@ $string['search'] = '検索';
 $string['searchcombined'] = '人およびメッセージを検索する';
 $string['searchforperson'] = '人を検索する';
 $string['searchmessages'] = 'メッセージを検索する';
+$string['sendingmessage'] = 'メッセージ送信';
 $string['sendingvia'] = '「 {$a->processor} 」経由で「 {$a->provider} 」に送信する';
 $string['sendingviawhen'] = '{$a->state} の場合、「 {$a->processor} 」経由で「 {$a->provider} 」に送信する';
 $string['sendmessage'] = 'メッセージを送信する';
@@ -139,6 +146,7 @@ $string['thisconversation'] = 'この会話';
 $string['timenosee'] = 'オンライン表示期間 (分)';
 $string['timesent'] = '送信回数';
 $string['touserdoesntexist'] = 'あなたは存在しないユーザID ({$a}) に対して、メッセージを送信することはできません。';
+$string['unabletomessageuser'] = 'あなたはそのユーザに対するメッセージ送信を許可されていません。';
 $string['unblockcontact'] = 'コンタクトの拒否を解除する';
 $string['unreadmessages'] = '未読メッセージ  ({$a})';
 $string['unreadnewmessage'] = '{$a} からの新しいメッセージ';
@@ -146,3 +154,4 @@ $string['unreadnewmessages'] = '新しいメッセージ ({$a})';
 $string['userisblockingyou'] = 'このユーザはあなたからのメッセージを受信拒否しています。';
 $string['userisblockingyounoncontact'] = '{$a} はコンタクトリストに登録されたユーザからのみメッセージを受信します。';
 $string['userssearchresults'] = 'ユーザが見つかりました: {$a}';
+$string['viewconversation'] = '会話を表示する';

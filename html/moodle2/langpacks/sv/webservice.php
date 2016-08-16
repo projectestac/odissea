@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,6 @@ $string['addrequiredcapability'] = 'Tilldela/ta bort nödvändig kapacitet';
 $string['addservice'] = 'Lägg till en ny tjänst: {$a->name} (ID: {$a->id})';
 $string['addservicefunction'] = 'Lägg till funktioner till tjänsten "{$a}"';
 $string['allusers'] = 'Alla användare';
-$string['amftestclient'] = 'AMF testklient';
 $string['apiexplorer'] = 'API explorer';
 $string['apiexplorernotavalaible'] = 'API explorer finns inte ännu.';
 $string['arguments'] = 'Argument';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,15 @@ $string['auth_cas_certificate_path_key'] = 'Percorso del certificato';
 $string['auth_cas_changepasswordurl'] = 'URL per cambiare la password';
 $string['auth_cas_create_user'] = 'Attivate questa opzione se desiderate inserire utenti autenticati CAS nel database di Moodle. Se non lo fate, solo gli utenti esistenti nel database di Moodle potranno effettuare il login.';
 $string['auth_cas_create_user_key'] = 'Creare utente';
+$string['auth_cas_curl_ssl_version'] = 'La versione SSL da utilizzare (2 o 3). Per default il PHP tenterà di individuare la versione da solo, tuttavia in alcuni casi il valore deve essere impostato a mano.';
+$string['auth_cas_curl_ssl_version_default'] = 'Default';
+$string['auth_cas_curl_ssl_version_key'] = 'Versione SSL cURL';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = 'Questo metodo utilizza un server CAS (Central Authentication Service) per autenticare utenti via SSO (Single Sign On environment).
 E anche possibile utilizzare una semplice autenticazione LDAP. Se CAS ritiene validi lo username e la password inseriti, Moodle creerà un nuovo utente nel proprio database, prelevando i campi dell\'utente da LDAP qualora necessario.
 Nei login successivi, verranno verificati solamente username e password.';
@@ -69,3 +78,4 @@ $string['auth_cas_version'] = 'Versione protocollo CAS da utilizzare';
 $string['CASform'] = 'Scelta autenticazione';
 $string['noldapserver'] = 'Nessun server LDAP è stato configurato per l\'autenticazione CAS. La sincronizzazione è disabilitata.';
 $string['pluginname'] = 'Server CAS (SSO)';
+$string['synctask'] = 'Sincronizzazione utenti CAS';

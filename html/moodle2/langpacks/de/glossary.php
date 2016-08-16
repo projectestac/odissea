@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['cnfshowgroup'] = 'Legen Sie fest, ob zwischen einzelnen Abschnitten (z.
 $string['cnfsortkey'] = 'Wählen Sie ein Sortierkriterium.';
 $string['cnfsortorder'] = 'Wählen Sie die Sortierfolge.';
 $string['cnfstudentcanpost'] = 'Teilnehmer/innen dürfen eigene Einträge anlegen, bearbeiten und löschen.';
+$string['cnftabs'] = 'Wählen Sie sichtbare Tabs für dieses Glossarformat aus.';
 $string['comment'] = 'Kommentar';
 $string['commentdeleted'] = 'Der Kommentar wurde gelöscht.';
 $string['comments'] = 'Kommentare';
@@ -277,6 +278,8 @@ $string['rssarticles_help'] = 'Diese Option legt fest, wie viele neue Glossarbeg
 $string['rsssubscriberss'] = 'RSS Feed-Anzeige für \'{$a}\' Begriffe';
 $string['rsstype'] = 'RSS Feed für dieses Glossar';
 $string['rsstype_help'] = 'Diese Option ermöglicht es, RSS Feeds für dieses Glossar zu aktivieren, wobei im Feed die Begriffe mit oder ohne Autor/in einbezogen werden können.';
+$string['search:activity'] = 'Glossar - Aktivitätsinformation';
+$string['search:entry'] = 'Glossar - Einträge';
 $string['searchindefinition'] = 'Volltext-Suche';
 $string['secondaryglossary'] = 'Glossar';
 $string['showall'] = 'Link \'Alle\' anzeigen';
@@ -297,6 +300,7 @@ $string['usedynalink'] = 'Automatisch verlinken';
 $string['usedynalink_help'] = 'Wenn diese Option aktiviert ist, wird beim Hinzufügen eines neuen Eintrages die Option "Eintrag automatisch verlinken" angezeigt.
 
 Voraussetzung ist die globale Freischaltung der Glossarverlinkung durch die Administrator/innen.';
+$string['visibletabs'] = 'Sichtbare Tabs';
 $string['waitingapproval'] = 'Einträge zur Prüfung';
 $string['warningstudentcapost'] = '(gilt nur, wenn dieses Glossar kein Hauptglossar ist)';
 $string['withauthor'] = 'Begriffe mit Autor/in';

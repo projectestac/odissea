@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cohort', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['description'] = 'Description';
 $string['displayedrows'] = '{$a->displayed} rangées affichées sur {$a->total}.';
 $string['duplicateidnumber'] = 'Une cohorte de même identifiant existe déjà';
 $string['editcohort'] = 'Modifier cohorte';
+$string['editcohortidnumber'] = 'Modifier l\'Id de la cohorte';
+$string['editcohortname'] = 'Modifier le nom de la cohorte';
 $string['eventcohortcreated'] = 'Cohorte créée';
 $string['eventcohortdeleted'] = 'Cohorte supprimée';
 $string['eventcohortmemberadded'] = 'Utilisateur ajouté à une cohorte';
@@ -63,6 +65,8 @@ $string['memberscount'] = 'Effectif de la cohorte';
 $string['name'] = 'Nom';
 $string['namecolumnmissing'] = 'Il y a un problème dans le format du fichier CSV. Veuillez vérifier qu\'il comporte les noms des colonnes.';
 $string['namefieldempty'] = 'Le nom du champ ne peut pas être vide';
+$string['newidnumberfor'] = 'Nouvel identifiant pour la cohorte {$a}';
+$string['newnamefor'] = 'Nouveau nom pour la cohorte {$a}';
 $string['nocomponent'] = 'Création manuelle';
 $string['potusers'] = 'Utilisateurs potentiels';
 $string['potusersmatching'] = 'Utilisateurs potentiels correspondants';

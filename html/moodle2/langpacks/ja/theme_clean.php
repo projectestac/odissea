@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'theme_clean', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,3 +55,8 @@ $string['logodesc'] = 'ロゴはフロントページおよびログインペー
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';
+$string['sitelogo'] = 'サイトロゴ';
+$string['sitename'] = 'スモールロゴと共にサイト名を表示する';
+$string['sitenamedesc'] = 'スモールロゴがない場合、サイト名は常にナビゲーションバーに表示されます。スモールロゴが設定された場合、サイト名と一緒またはサイト名なしに表示することができます。';
+$string['smalllogo'] = 'スモールロゴ';
+$string['smalllogodesc'] = 'ナビゲーションバーにスモールロゴが表示されます。フロントページおよびログインページのヘッダロゴがある場合、それらのページではスモールロゴは表示されません。';

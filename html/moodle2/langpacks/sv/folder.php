@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,5 +51,6 @@ $string['page-mod-folder-view'] = 'Mapp-modul huvudsidan';
 $string['page-mod-folder-x'] = 'Valfri mapp modulsida';
 $string['pluginadministration'] = 'Administration av mapp';
 $string['pluginname'] = 'Mapp';
+$string['search:activity'] = 'Mapp';
 $string['showexpanded'] = 'Visa undermappar expanderade';
 $string['showexpanded_help'] = 'Om aktiverat så visas undermappar expanderade som standard. Om inte visas undermappar ihopfällda.';

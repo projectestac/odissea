@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,9 +53,9 @@ $string['attempt'] = 'Saiakera';
 $string['attempt1'] = 'saiakera 1';
 $string['attempts'] = 'Saiakerak';
 $string['attemptsmanagement'] = 'Saiakeren kudeaketa';
-$string['attemptstatusall'] = 'Nire hasiera eta sarbide-orria';
+$string['attemptstatusall'] = 'Aginte-panela eta sarbide-orria';
 $string['attemptstatusentry'] = 'Sarbide-orria baino ez';
-$string['attemptstatusmy'] = 'Nire hasiera baino ez';
+$string['attemptstatusmy'] = 'Aginte-panela baino ez';
 $string['attemptsx'] = '{$a} saiakera';
 $string['attr_error'] = '({$a->attr}) atributuaren balore desegokia {$a->tag} etiketan.';
 $string['autocontinue'] = 'Jarraipen automatikoa';
@@ -101,8 +101,8 @@ $string['disabled'] = 'Desgaituta';
 $string['display'] = 'Erakutsi paketea';
 $string['displayactivityname'] = 'Erakutsi jardueraren izena';
 $string['displayattemptstatus'] = 'Erakutsi saiakeren egoera';
-$string['displayattemptstatusdesc'] = 'Erakutsi erabiltzailearen saiakeren laburpena ikastaroaren ikuspegi orokorreko blokean Nire Hasieran eta/edo SCORM-en laburpen-orrian.';
-$string['displayattemptstatus_help'] = 'Gaituz gero, erabiltzailearen saiakeren laburpena ikastaroaren ikuspegi orokorreko blokean Nire Hasieran eta/edo SCORM-en laburpen-orrian erakustsiko dira.';
+$string['displayattemptstatusdesc'] = 'Erakutsi erabiltzailearen saiakeren laburpena ikastaroaren ikuspegi orokorreko blokean aginte-panelean edota SCORM-en laburpen-orrian.';
+$string['displayattemptstatus_help'] = 'Gaituz gero, erabiltzailearen saiakeren laburpena aginte-paneleko ikastaroaren ikuspegi orokorreko blokean edota SCORM-en laburpen-orrian erakutsiko dira.';
 $string['displaycoursestructure'] = 'Erakutsi ikastaro-egitura sarrera-orrian';
 $string['displaycoursestructuredesc'] = 'Gaituz gero, eduki-taula SCORM-en laburpen-orrian erakutsiko da.';
 $string['displaycoursestructure_help'] = 'Gaituz gero, eduki-taula SCORM-en laburpen-orrian erakutsiko da';
@@ -311,6 +311,7 @@ Oharra: URLak zuren gunearena ez den domeinu izena badu "Jaitsitako paketea" auk
 $string['scorm:viewreport'] = 'Txostenak ikusi';
 $string['scorm:viewscores'] = 'Ikusi puntuazioak';
 $string['scrollbars'] = 'Leihoa mugitzea onartu';
+$string['search:activity'] = 'SCORM paketea - jardueraren informazioa';
 $string['selectall'] = 'Aukeratu dena';
 $string['selectnone'] = 'Ez aukeratu guztiak';
 $string['show'] = 'Erakutsi';

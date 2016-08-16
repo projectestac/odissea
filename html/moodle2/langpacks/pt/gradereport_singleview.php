@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['bulkfor'] = 'Notas para {$a}';
 $string['bulkinsertvalue'] = 'Inserir valor';
 $string['bulklegend'] = 'Inserção em massa';
 $string['bulkperform'] = 'Executar inserção em massa';
+$string['entrypage'] = 'Avaliar utilizador ou avaliar item';
 $string['eventgradereportviewed'] = 'Relatório de vista simples visualizado';
 $string['exclude'] = 'Excluir';
 $string['excludeall'] = 'Excluir todas as notas';
@@ -41,7 +42,9 @@ $string['excludenone'] = 'Não excluir nenhuma nota';
 $string['feedbackfor'] = 'Feedback para {$a}';
 $string['filtergrades'] = 'Mostrar notas para {$a}.';
 $string['gradefor'] = 'Nota para {$a}';
+$string['gradeitem'] = 'Avaliar item: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Este item de avaliação não pode ser ajustado.';
+$string['gradeuser'] = 'Avaliar utilizador: {$a}';
 $string['noscreens'] = 'Não foi possível encontrar um ecrã de vista simples adequado.';
 $string['notvalid'] = 'Não é um ecrã válido de Vista simples: {$a}';
 $string['override'] = 'Ajustar';
@@ -49,8 +52,12 @@ $string['overrideall'] = 'Ajustar todas as notas';
 $string['overridefor'] = 'Ajustar para {$a}';
 $string['overridenone'] = 'Não ajustar nenhuma nota';
 $string['pluginname'] = 'Vista simples';
+$string['save'] = 'Gravar';
 $string['savegrades'] = 'A guardar notas';
 $string['savegradessuccess'] = 'As notas foram definidas para {$a} itens';
+$string['selectgrade'] = 'Escolha um item de avaliação...';
+$string['selectuser'] = 'Escolha um utilizador...';
 $string['singleview:view'] = 'Visualizar relatório';
 $string['summarygrade'] = 'Uma tabela de utilizadores, com colunas para intervalo, nota, comentários e para ajustar ou excluir uma nota em particular.';
 $string['summaryuser'] = 'Uma tabela de itens de avaliação, com colunas para categoria de nota, intervalo, nota, comentários e para ajustar ou excluir uma nota em particular.';
+$string['userselect'] = 'Escolha uma atividade';

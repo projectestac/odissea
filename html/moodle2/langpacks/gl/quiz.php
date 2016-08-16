@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['addaquestion'] = 'Engadir unha pregunta ...';
 $string['addarandomquestion'] = 'Engadir unha pregunta aleatoria ...';
 $string['addarandomquestion_help'] = 'Ao engadir unha pregunta aleatoria, prodúcese unha pregunta aleatoriamente escollida da categoría introducida na proba. Isto significa que cada alumno obterá unha selección diferente de preguntas e cando unha proba permite múltiplos intentos, cadanseu intento probablemente conterá unha nova selección de preguntas.';
 $string['addarandomselectedquestion'] = 'Engadir unha pregunta seleccionada ao chou ...';
+$string['addasection'] = 'unha nova cabeceira de sección';
 $string['adddescriptionlabel'] = 'Engadir unha descrición/etiqueta';
 $string['addingquestion'] = 'Engadir pregunta';
 $string['addingquestions'] = 'Este lado da páxina é onde se xestiona a  súa base de datos de preguntas. As preguntas recóllense en categorías para axudarlle a mantelas organizadas e poden utilizarse en calquera proba no seu curso ou mesmo noutros cursos cando vostede se decante por as \'publicar\'. <br /><br />Despois de seleccionar ou crear unha categoría de preguntas poderá crear ou editar preguntas. Pode seleccionar calquera destas preguntas para engadilas á súa proba sobre a outra parte desta páxina.';
@@ -143,11 +144,17 @@ $string['cannotstartgradesmismatch'] = 'Non pode comezar un intento nesta proba.
 $string['cannotstartmissingquestion'] = 'Non se pode comezar un intento nesta proba. A definición da proba inclúe unha pregunta que non existe.';
 $string['cannotstartnoquestions'] = 'Non se pode comezar un intento nesta proba. A proba aínda non foi configurada. Non se lle engadiron preguntas.';
 $string['cannotwrite'] = 'Non se pode escribir no ficheiro de exportación ({$a})';
+$string['canredoquestions'] = 'Permitir refacer dentro dun intento';
+$string['canredoquestions_desc'] = 'Se está activado, cando os alumnos teñan terminado unha pregunta en particular, eles verán un botón para «Refacer a pregunta». Isto permítelles tentar outra versión da mesma pregunta, sen ter que enviar o intento da proba completa e iniciar outra. Esta opción é principalmente útil para exames de práctica.
+
+Esta configuración soamente afecta ás preguntas (por exemplo, preguntas que non sexan do tipo de ensaio) e aos comportamentos (por exemplo, realimentación inmediata, ou interactiva con intentos múltiples), onde é posíbel que o alumno termine a pregunta antes de que o intento sexa entregado.';
+$string['canredoquestions_help'] = 'Se está activado, cando os alumnos teñan terminado unha pregunta en particular, eles verán un botón para «Refacer a pregunta». Isto permítelles tentar outra versión da mesma pregunta, sen ter que enviar o intento da proba completa e iniciar outra. Esta opción é principalmente útil para exames de práctica.
+
+Esta configuración soamente afecta ás preguntas (por exemplo, preguntas que non sexan do tipo de ensaio) e aos comportamentos (por exemplo, realimentación inmediata, ou interactiva con intentos múltiples), onde é posíbel que o alumno termine a pregunta antes de que o intento sexa entregado.';
+$string['canredoquestionsyes'] = 'Os alumnos poden refacer outra versión de calquera pregunta terminada';
 $string['caseno'] = 'Non, distinguir as maiúsculas das minúsculas non é importante';
 $string['casesensitive'] = 'Distinguir maiúsculas de minúsculas';
 $string['caseyes'] = 'Si, o tipo de caixa de letra debe coincidir';
-$string['categories'] = 'Categorías';
-$string['category'] = 'Categoría';
 $string['categoryadded'] = 'Foi engadida a categoría «{$a}»';
 $string['categorydeleted'] = 'A categoría «{$a}» foi eliminada';
 $string['categorynoedit'] = 'Non ten privilexios de edición na categoría «{$a}».';
@@ -188,17 +195,14 @@ $string['configrequiresubnet'] = 'Os alumnos soamente poden intentar a proba des
 $string['configreviewoptions'] = 'Estas opcións controlan que información poden ver os usuarios cando revisan un intento da proba ou ver os informes da proba.';
 $string['configshowblocks'] = 'Amosar os bloques durante os intentos da proba.';
 $string['configshowuserpicture'] = 'Amosar a imaxe do usuario na pantalla durante os intentos.';
-$string['configshufflequestions'] = 'De activar esta opción, a orde das preguntas na proba barallarase cada vez que un alumno intente facer a proba.';
 $string['configshufflewithin'] = 'De activar esta opción, as partes que preparan as preguntas para o individuo barallaranse aleatoriamente cada vez que un alumnos arranque un intento nesta proba, do mesmo xeito con esta opción tamén se activa na configuración das preguntas.';
 $string['configtimelimit'] = 'Límite de tempo predeterminado para probas en minutos. 0 significa sen límite de tempo.';
 $string['configtimelimitsec'] = 'O límite de tempo predeterminado para as probas en segundos. 0 significa sen límite de tempo.';
 $string['configurerandomquestion'] = 'Configurar a pregunta';
 $string['confirmclose'] = 'Unha vez entregue, xa non poderá mudar as súas respostas neste intento.';
 $string['confirmremovequestion'] = 'Confirma que quere retirar esta pregunta {$a}?';
+$string['confirmremovesectionheading'] = 'Confirma que quere retirar a cabeceira de sección {$a}?';
 $string['confirmserverdelete'] = 'Confirma que quere retirar o servidor <b>{$a}</b> da lista?';
-$string['confirmstartattemptlimit'] = 'Número de intentos permitido: {$a}. Vostede está a punto de comezar un novo intento. Quere proseguir?';
-$string['confirmstartattempttimelimit'] = 'Esta proba ten un límite de tempo e un número restrinxido de intentos,  {$a}. Vostede está a punto de comezar un novo intento. Quere proseguir?';
-$string['confirmstarttimelimit'] = 'A proba ten un límite de tempo. Confirma que quere comezar?';
 $string['connectionerror'] = 'Perdeuse a conexión de rede. (Fallou o gardado automático)
 
 Anote as respostas introducidas nesta páxina nos últimos minutos, e de seguido tente volver conectar.
@@ -341,7 +345,6 @@ $string['eventreportviewed'] = 'Visto o informe da proba';
 $string['everynquestions'] = 'Cada {$a} preguntas';
 $string['everyquestion'] = 'Cada pregunta';
 $string['everythingon'] = 'Todo o que hai';
-$string['export'] = 'Exportar';
 $string['exportcategory'] = 'exportar categoría';
 $string['exporterror'] = 'Produciuse un erro durante o proceso de exportación';
 $string['exportingquestions'] = 'As preguntas están exportándose a un ficheiro';
@@ -366,7 +369,6 @@ $string['finishattemptdots'] = 'Finalizar intento...';
 $string['finishreview'] = 'Finalizar revisión';
 $string['forceregeneration'] = 'forzar a rexeneración';
 $string['formatnotfound'] = 'Non se atopou o formato {$a} para importar/exportar';
-$string['formatnotimplemented'] = 'Este formato non se implementou correctamente, comuniqueo mediante un informe de erro';
 $string['formulaerror'] = 'Erros na fórmula!';
 $string['fractionsaddwrong'] = 'As cualificacións positivas que escolleu non engadir ao 100%<br />No entanto, engádense ao {$a}%<br />Quere volver atrás e arranxar esta pregunta?';
 $string['fractionsnomax'] = 'Unha das respostas deberían ser ao 100%, así que é<br />posíbel obter unha cualificación completa para esta pregunta.<br />Quere volver atrás e arraxar esta pregunta?';
@@ -401,6 +403,7 @@ $string['gradingdetailspenalty'] = 'Esta entrega recibiu unha penalización de {
 $string['gradingdetailszeropenalty'] = 'Non se lle penalizou por esta entrega.';
 $string['gradingmethod'] = 'Método de cualificación: {$a}';
 $string['groupoverrides'] = 'Sobrescribir grupo';
+$string['groupoverridesdeleted'] = 'Eliminouse a substitución de grupo';
 $string['groupsnone'] = 'Non hai grupos neste curso';
 $string['guestsno'] = 'Desculpe, os visitantes non poden ver nin intentar as probas';
 $string['hidebreaks'] = 'Agochar as quebras de páxina';
@@ -408,7 +411,6 @@ $string['hidereordertool'] = 'Agochar a ferramenta de reordenación';
 $string['history'] = 'Historial de respostas:';
 $string['howquestionsbehave_desc'] = 'Configuración do comportamente das preguntas nunha proba.';
 $string['imagedisplay'] = 'Imaxe para presentar';
-$string['import'] = 'Importar';
 $string['importcategory'] = 'importar categoría';
 $string['importerror'] = 'Produciuse un erro durante o proceso da importación';
 $string['importfilearea'] = 'Importar dun ficheiro que xa está entre os ficheiros do curso...';
@@ -433,8 +435,6 @@ $string['inprogress'] = 'Avanzando';
 $string['introduction'] = 'Descrición';
 $string['invalidattemptid'] = 'Non existe tal ID de intento';
 $string['invalidcategory'] = 'O ID da categoría non é correcto';
-$string['invalidnumericanswer'] = 'Unha das respostas que introduciu era un número incorrecto.';
-$string['invalidnumerictolerance'] = 'Unha das tolerancias que introduciu era un número incorrecto.';
 $string['invalidoverrideid'] = 'O id de sobrescritura é incorrecto';
 $string['invalidquestionid'] = 'O id da pregunta é incorrecto';
 $string['invalidquizid'] = 'O ID da proba é incorrecto';
@@ -492,7 +492,6 @@ $string['modulenameplural'] = 'Probas';
 $string['moveselectedonpage'] = 'Mover as preguntas seleccionadas á páxina: {$a}';
 $string['multichoice'] = 'Escolla múltipla';
 $string['multipleanswers'] = 'Escolla cando menos unha resposta.';
-$string['multiplier'] = 'Multiplicador';
 $string['mustbesubmittedby'] = 'Este intento debe de ser entregado por {$a}.';
 $string['name'] = 'Nome';
 $string['navmethod'] = 'Método de navegación';
@@ -627,6 +626,10 @@ $string['questionbankmanagement'] = 'Xestión do banco de preguntas';
 $string['questionbehaviour'] = 'Comportamento da pregunta';
 $string['questioncats'] = 'Categorías de pregunta';
 $string['questiondeleted'] = 'Eliminouse esta pregunta. Contacte co seu profesor';
+$string['questiondependencyadd'] = 'Non hai restrición sobre cando a pregunta {$a->thisq} poida ser intentada • Prema para cambiar';
+$string['questiondependencyfree'] = 'Sen restrición nesta pregunta';
+$string['questiondependencyremove'] = 'A pregunta {$a->thisq} non pode ser intentada ata que a pregunta anterior {$a->previousq} teña sido completada • Prema para cambiar';
+$string['questiondependsonprevious'] = 'Esta pregunta non pode ser intentada ata que teña sido completada a pregunta anterior.';
 $string['questioninuse'] = 'A cuestión \'{$a->questionname}\' úsase actualmente en: <br />{$a->quiznames}<br />Non se eliminará a pregunta destas probas, senón só da lista de categorías.';
 $string['questionmissing'] = 'Perdeuse a pregunta nesta sesión';
 $string['questionname'] = 'Nome da pregunta';
@@ -695,6 +698,8 @@ $string['readytosend'] = 'Está a punto de enviar a proba enteira para ser cuali
 $string['reattemptquiz'] = 'Reintentar a proba';
 $string['recentlyaddedquestion'] = 'Pregunta engadida recentemente!';
 $string['recurse'] = 'Incluír preguntas de subcategorías tamén';
+$string['redoesofthisquestion'] = 'Outras preguntas intentadas aquí: {$a}';
+$string['redoquestion'] = 'Refacer a pregunta';
 $string['regrade'] = 'Recualificar todos os intentos';
 $string['regradecomplete'] = 'Recualificáronse todos os intentos';
 $string['regradecount'] = '{$a->changed} alén de {$a->attempt} cualificacións cambiaron';
@@ -703,7 +708,9 @@ $string['regradenotallowed'] = 'Non ten permiso para recualificar esta proba';
 $string['regradingquestion'] = 'Recualificando «{$a}».';
 $string['regradingquiz'] = 'Recualificando a proba «{$a}»';
 $string['remove'] = 'Retirar';
+$string['removeallgroupoverrides'] = 'Eliminar todas as substitución de grupo';
 $string['removeallquizattempts'] = 'Eliminar todos os intentos da proba';
+$string['removealluseroverrides'] = 'Eliminar todas as substitución de usuario';
 $string['removeemptypage'] = 'Retirar a páxina baleira';
 $string['removepagebreak'] = 'Retirar a quebra de páxina';
 $string['removeselected'] = 'Retirar seleccionado';
@@ -794,6 +801,8 @@ $string['savingnewgradeforquestion'] = 'Gardando nova cualificación para a o id
 $string['savingnewmaximumgrade'] = 'Gardando nova cualificación máxima.';
 $string['score'] = 'Puntuación en bruto';
 $string['scores'] = 'Puntuacións';
+$string['sectionheadingedit'] = 'Editar a cabeceira «{$a}»';
+$string['sectionheadingremove'] = 'Retirar a cabeceira «{$a}»';
 $string['seequestions'] = '(Ver as preguntas)';
 $string['select'] = 'Seleccionar';
 $string['selectall'] = 'Seleccionar todo';
@@ -832,7 +841,9 @@ $string['shuffle'] = 'Barallar';
 $string['shuffleanswers'] = 'Barallar respostas';
 $string['shuffledrandomly'] = 'Barallado aleatoriamente';
 $string['shufflequestions'] = 'Barallar preguntas';
-$string['shufflequestionsselected'] = 'Configurouse barallar preguntas, así que algunhas accións relativas a páxinas non están dispoñíbeis. Para cambiar a opción de barallar, {$a}.';
+$string['shufflequestions_help'] = 'Se Vostede activa isto, cada vez que se intente contestar a proba, barallarase a orden das preguntas nesta sección a unha nova orden ao chou.
+
+Isto pode dificultar que os alumnos compartan entre si as respostas, mais tamén fai máis difícil que os alumnos discutan con Vostede algunha pregunta en particular.';
 $string['shufflewithin'] = 'Barallar entre as preguntas';
 $string['shufflewithin_help'] = 'De estar activado, as partes que crean cada pregunta barallaranse aleatoriamente a cada vez que un alumno intente a proba, fornecendo a opción tamén está activada na configuración de preguntas. Esta configuración aplícase a cuestións que teñen múltiplas partes, tales como escolla múltipla ou preguntas coincidentes.';
 $string['singleanswer'] = 'Escolla unha resposta.';
@@ -896,7 +907,6 @@ $string['unfinished'] = 'abrir';
 $string['ungraded'] = 'Sen cualificar';
 $string['unit'] = 'Unidade';
 $string['unknowntype'] = 'O tipo de pregunta non é compatíbel na liña {$a}. A pregunta ignorarase';
-$string['unusedcategorydeleted'] = 'Esta categoría eliminouse porque, despois de eliminar o curso, as súas preguntas non se usaron máis.';
 $string['updatesettings'] = 'Actualizar a configuración da proba';
 $string['updatingatttemptgrades'] = 'Actualizando as cualificacións do intento.';
 $string['updatingfinalgrades'] = 'Actualizando as cualificacións finais.';
@@ -907,6 +917,7 @@ $string['upgradingveryoldquizattempts'] = 'Anovando intentos da proba moi antigo
 $string['url'] = 'URL';
 $string['usedcategorymoved'] = 'Esta categoría preservouse e moveuse ao nivel do sitio porque é unha categoría publicada aínda en uso noutros cursos.';
 $string['useroverrides'] = 'O usuario sobrescribe';
+$string['useroverridesdeleted'] = 'Elimináronse as substitucións de usuario';
 $string['usersnone'] = 'Ningún alumno ten acceso a esta proba';
 $string['validate'] = 'Validar';
 $string['viewallanswers'] = 'Ver {$a} intentos da proba';

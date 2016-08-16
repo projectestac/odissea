@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'countries', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   countries
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,7 @@ $string['BJ'] = 'Benín';
 $string['BL'] = 'Saint-Barthélemy';
 $string['BM'] = 'Bermuda';
 $string['BN'] = 'Brunei';
-$string['BO'] = 'Bolívia';
+$string['BO'] = 'Bolívia, Estat Plurinacional de';
 $string['BQ'] = 'Bonaire, Sint Eustatius i Saba';
 $string['BR'] = 'Brasil';
 $string['BS'] = 'Bahames';
@@ -169,7 +169,7 @@ $string['MA'] = 'Marroc';
 $string['MC'] = 'Mònaco';
 $string['MD'] = 'Moldàvia';
 $string['ME'] = 'Montenegro';
-$string['MF'] = 'Saint-Martin';
+$string['MF'] = 'Saint-Martin (part francesa)';
 $string['MG'] = 'Madagascar';
 $string['MH'] = 'Illes Marshall';
 $string['MK'] = 'Macedònia';
@@ -211,7 +211,7 @@ $string['PL'] = 'Polònia';
 $string['PM'] = 'Saint Pierre i Miquelon';
 $string['PN'] = 'Pitcairn';
 $string['PR'] = 'Puerto Rico';
-$string['PS'] = 'Palestina';
+$string['PS'] = 'Palestina, Estat de';
 $string['PT'] = 'Portugal';
 $string['PW'] = 'Palau';
 $string['PY'] = 'Paraguai';
@@ -227,7 +227,7 @@ $string['SC'] = 'Seychelles';
 $string['SD'] = 'Sudan';
 $string['SE'] = 'Suècia';
 $string['SG'] = 'Singapur';
-$string['SH'] = 'Saint Helena';
+$string['SH'] = 'Santa Helena, Ascensió i Tristan da Cunha';
 $string['SI'] = 'Eslovènia';
 $string['SJ'] = 'Svalbard i Jan Mayen';
 $string['SK'] = 'Eslovàquia';
@@ -266,7 +266,7 @@ $string['UY'] = 'Uruguai';
 $string['UZ'] = 'Uzbekistan';
 $string['VA'] = 'Vaticà';
 $string['VC'] = 'Saint Vincent i les Grenadines';
-$string['VE'] = 'Veneçuela';
+$string['VE'] = 'Veneçuela, República Bolivariana de';
 $string['VG'] = 'Illes Verge Britàniques';
 $string['VI'] = 'Illes Verge Americanes';
 $string['VN'] = 'Vietnam';

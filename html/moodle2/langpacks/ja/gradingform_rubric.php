@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradingform_rubric', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,14 @@ $string['alwaysshowdefinition'] = 'モジュールで使用されるルーブリ
 $string['backtoediting'] = '編集に戻る';
 $string['confirmdeletecriterion'] = '本当にこのクライテリアを削除してもよろしいですか?';
 $string['confirmdeletelevel'] = '本当にこのレベルを削除してもよろしいですか?';
+$string['criterion'] = 'クライテリア {$a}';
 $string['criterionaddlevel'] = 'レベルを追加する';
 $string['criteriondelete'] = 'クライテリアを削除する';
+$string['criterionduplicate'] = '重複クライテリア';
 $string['criterionempty'] = 'クライテリアを編集する';
 $string['criterionmovedown'] = '下へ';
 $string['criterionmoveup'] = '上へ';
+$string['criterionremark'] = 'クライテリア {$a->description} のコメント: {$a->remark}';
 $string['definerubric'] = 'ルーブリックを定義する';
 $string['description'] = '説明';
 $string['enableremarks'] = 'それぞれのクライテリアに対して評定者によるコメントの追加を許可する';
@@ -45,8 +48,11 @@ $string['err_nodescription'] = 'クライテリア説明は空白にできませ
 $string['err_scoreformat'] = 'それぞれのレベルの点数は有効なプラスの数字である必要があります。';
 $string['err_totalscore'] = 'ルーブリックにより評定する場合、最大評点はゼロ以上にする必要があります。';
 $string['gradingof'] = '{$a} 評定';
-$string['leveldelete'] = 'レベルを削除する';
+$string['level'] = 'レベル {$a->definition} - {$a->score} 点';
+$string['leveldefinition'] = 'レベル {$a} 定義';
+$string['leveldelete'] = 'レベル {$a} を削除する';
 $string['levelempty'] = 'レベルを編集する';
+$string['levelsgroup'] = 'レベルグループ';
 $string['name'] = '名称';
 $string['needregrademessage'] = 'この学生が評定された後、ルーブリック定義が変更されました。あなたがルーブリックをチェックして評定を更新するまで学生はこのルーブリックを閲覧することができません。';
 $string['pluginname'] = 'ルーブリック';
@@ -66,6 +72,7 @@ $string['rubricstatus'] = '現在のルーブリックステータス';
 $string['save'] = '保存';
 $string['saverubric'] = 'ルーブリックを保存して利用可能にする';
 $string['saverubricdraft'] = '下書きとして保存する';
+$string['scoreinputforlevel'] = 'レベル {$a} の評点入力';
 $string['scorepostfix'] = '{$a} 点';
 $string['showdescriptionstudent'] = '評定済みにルーブリック説明を表示する';
 $string['showdescriptionteacher'] = '評定中にルーブリック説明を表示する';

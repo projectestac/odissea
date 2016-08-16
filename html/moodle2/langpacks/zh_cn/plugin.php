@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'plugin', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,12 +38,8 @@ $string['err_response_format_version'] = '返回非预期的版本号，请重�
 $string['err_response_http_code'] = '不能获取到可用的更新数据-不可知的HTTP响应代码。';
 $string['filterall'] = '显示全部';
 $string['filtercontribonly'] = '只显示额外的插件';
-$string['filtercontribonlyactive'] = '正在显示额外的插件';
 $string['filterupdatesonly'] = '只显示可用的更新';
-$string['filterupdatesonlyactive'] = '正在只显示可用更新';
 $string['moodleversion'] = 'Moodle {$a}';
-$string['nonehighlighted'] = '没有插件需要你的关注。';
-$string['nonehighlightedinfo'] = '显示所有已安装的插件列表';
 $string['noneinstalled'] = '没有安装这类插件';
 $string['notdownloadable'] = '不能下载这个安装包';
 $string['notdownloadable_help'] = 'ZIP更新包不能自动下载。请参阅文档页面获取更多帮助。';
@@ -51,10 +47,6 @@ $string['notes'] = '笔记';
 $string['notwritable'] = '插件的文件不可写';
 $string['notwritable_help'] = '您已启用自动更新的部署，并且已有一个可用更新。然而在你的Web服务器，插件文件不可写，因此无法自动安装更新。
 你需要把插件文件夹及其所有内容设置可写权限，然后就可以安装自动更新。';
-$string['numdisabled'] = '禁用: {$a}';
-$string['numextension'] = '额外: {$a}';
-$string['numtotal'] = '安装：{$a}';
-$string['numupdatable'] = '可用更新：{$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
 $string['pluginchecknotice'] = '可以在升级过程中，本页显示的插件需要你的关注。突出显示的项目包括新的插件，将要安装的插件，更新，要升级，任何丢失的插件。如果有可用的更新，额外的插件都会这被标记。建议您检查是否有最新的插件版本和更新的源代码，再继续这个Moodle升级。';
@@ -67,10 +59,6 @@ $string['requiredby'] = '所要求的：{$a}';
 $string['requires'] = '要求';
 $string['rootdir'] = '目录';
 $string['settings'] = '设置';
-$string['showall'] = '重新加载并显示所有插件';
-$string['somehighlighted'] = '你需要关注的插件的数量：{$a}';
-$string['somehighlightedinfo'] = '显示所有已经安装的插件';
-$string['somehighlightedonly'] = '只显示你需要关注的插件';
 $string['source'] = '来源';
 $string['sourceext'] = '额外';
 $string['sourcestd'] = '标准';
@@ -97,6 +85,8 @@ $string['type_calendartype'] = '日历类型';
 $string['type_calendartype_plural'] = '日历类型';
 $string['type_coursereport'] = '课程报表';
 $string['type_coursereport_plural'] = '课程报表';
+$string['type_dataformat'] = '数据格式';
+$string['type_dataformat_plural'] = '数据格式';
 $string['type_editor'] = '编辑人';
 $string['type_editor_plural'] = '编辑人';
 $string['type_enrol'] = '注册方法';
@@ -137,6 +127,8 @@ $string['type_report'] = '站点报表';
 $string['type_report_plural'] = '报告';
 $string['type_repository'] = '库';
 $string['type_repository_plural'] = '库';
+$string['type_search'] = '搜索引擎';
+$string['type_search_plural'] = '搜索引擎';
 $string['type_theme'] = '皮肤';
 $string['type_theme_plural'] = '皮肤';
 $string['type_tool'] = '管理工具';
@@ -159,6 +151,16 @@ $string['updatepluginconfirm'] = '插件更新信息';
 $string['updatepluginconfirmexternal'] = '当前版本的插件已经被从源代码管理系统 ({$a})中取出，如果你安装这个更新，你将不再能够从源代码管理系统中得到插件更新。在继续之前请你确保你需要更新这个插件！';
 $string['updatepluginconfirminfo'] = '你将要安装一个新版本的插件： <strong>{$a->name}</strong>. 一个版本号为{$a->version} 的 zip 格式安装包插件将被从<a href="{$a->url}">{$a->url}</a>下载，并且解压到你的Moodle系统，所以你的更新可以进行安装';
 $string['updatepluginconfirmwarning'] = '请注意：Moodle不会自动备份你的数据，我们强烈建议你备份你的数据（包括文件，程序，数据库），以应对罕见情况。以避免如果新的代码有错误使你的系统受到破坏。风险自负。';
+$string['validationmsg_componentmatch'] = '完整的组件名称';
+$string['validationmsg_componentmismatchname'] = '插件名不符合';
+$string['validationmsg_componentmismatchtype'] = '插件类型不符合';
+$string['validationmsglevel_debug'] = '调试';
+$string['validationmsglevel_warning'] = '警告';
+$string['validationmsg_missingexpectedlangenfile_info'] = '指定的插件类型缺少应有的英语语言文件{$a}。';
+$string['validationmsg_missinglangenfile'] = '没有找到英语语言文件';
+$string['validationmsg_missingversionphp'] = '没有找到 version.php 文件';
+$string['validationmsg_onedir'] = 'ZIP 压缩包文件结构不正确。';
+$string['validationmsg_unknowntype'] = '未知的插件类型';
 $string['version'] = '版本';
 $string['versiondb'] = '当前版本';
 $string['versiondisk'] = '新版本';

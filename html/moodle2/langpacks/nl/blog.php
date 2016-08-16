@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'Blog over deze {$a->type}';
 $string['blogaboutthiscourse'] = 'Voeg een item toe over deze cursus';
 $string['blogaboutthismodule'] = 'Voeg een item toe over dit {$a}';
 $string['blogadministration'] = 'Blogbeheer';
-$string['blogdeleteconfirm'] = 'Dit blog-item verwijderen?';
+$string['blogdeleteconfirm'] = 'Blog-item \'{$a}\' verwijderen?';
 $string['blogdisable'] = 'Bloggen is uitgeschakeld';
 $string['blogentries'] = 'Blogitems';
 $string['blogentriesabout'] = 'Blogitems over {$a}';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Cursusblogs zijn niet ingeschakeld';
 $string['courseblogs'] = 'Gebruikers kunnen enkel blogs zien van andere gebruikers van de cursus';
 $string['deleteblogassociations'] = 'Verwijder blogassociaties';
 $string['deleteblogassociations_help'] = 'Indien geselecteerd zullen blogitems niet langer geassocieerd zijn met deze cursus of met gelijk welke cursusactiviteit of bron. De blogitems zelf worden niet verwijderd.';
+$string['deleteentry'] = 'Verwijder';
 $string['deleteexternalblog'] = 'Verwijder de registratie van een externe blog';
 $string['deleteotagswarn'] = 'Weet je zeker dat je deze tag(s) wil verwijderen uit alle geposte blogs en dat je ze wil verwijderen uit het systeem?';
 $string['description'] = 'Beschrijving';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'Ongeldig groep-ID';
 $string['invalidurl'] = 'Deze URL is onbereikbaar';
 $string['linktooriginalentry'] = 'Link naar het originele blogitem';
 $string['maxexternalblogsperuser'] = 'Maximale aantal externe blogs per gebruiker';
+$string['myprofileuserblogs'] = 'Bekijk alle blog-berichten';
 $string['name'] = 'Naam';
 $string['name_help'] = 'Geef een beschrijvende naam voor je extene blog. (Als je geen naam opgeeft, zal de titel van je externe blog gebruikt worden).';
 $string['noentriesyet'] = 'Hier zijn geen zichtbare teksten';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Alle blogpagina\'s';
 $string['pagesize'] = 'Aantal blogberichten per pagina';
 $string['permalink'] = 'Permanente link';
 $string['personalblogs'] = 'Gebruikers kunnen enkel hun eigen blogs zien';
-$string['preferences'] = 'Voorkeuren';
+$string['preferences'] = 'Blog-voorkeuren';
 $string['publishto'] = 'Publiceer naar';
 $string['publishtocourse'] = 'Gebruikers die een cursus met je delen';
 $string['publishtocourseassoc'] = 'Leden van de geassocieerde cursus';
@@ -151,6 +153,7 @@ $string['searchterm'] = 'Zoek: {$a}';
 $string['settingsupdatederror'] = 'Er is een fout gebeurt: de voorkeursinstellingen voor deze blog konden niet aangepast worden';
 $string['siteblog'] = 'Siteblog: {$a}';
 $string['siteblogdisable'] = 'Site blog is niet ingeschakeld';
+$string['siteblogheading'] = 'Site blog';
 $string['siteblogs'] = 'Alle site-gebruikers kunnen alle blogs zien';
 $string['tagdatelastused'] = 'Laatst gebruiker datumtag';
 $string['tagparam'] = 'Tag: {$a}';

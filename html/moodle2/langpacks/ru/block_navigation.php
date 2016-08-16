@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_navigation', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['everything'] = 'всего';
 $string['expansionlimit'] = 'Создавать элементы навигации для';
 $string['linkcategoriesdesc'] = 'Отображать категории в виде ссылок';
 $string['navigation:addinstance'] = 'Добавлять новый блок «Навигация»';
-$string['navigation:myaddinstance'] = 'Добавлять новый блок «Навигация» на домашнюю страницу';
+$string['navigation:myaddinstance'] = 'Добавлять новый блок «Навигация» на страницу «Моя домашняя страница»';
 $string['pluginname'] = 'Навигация';
 $string['trimlength'] = 'До скольки символов обрезать строки';
 $string['trimmode'] = 'Режим обрезки строк';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_db', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,11 +48,11 @@ $string['auth_dbname'] = 'Nombre de la base de datos. Dejar vacío si está util
 $string['auth_dbname_key'] = 'Nombre de la Base de Datos';
 $string['auth_dbpass'] = 'Contraseña correspondiente al nombre de usuario anterior';
 $string['auth_dbpass_key'] = 'Contraseña';
-$string['auth_dbpasstype'] = 'Especifique el formato que usa el campo de contraseña. La encriptación MD5 es útil para conectar con otras aplicaciones web como PostNuke.
-Use "interno" si quiere que la base de datos externa gestione los nombres de usuario y las direcciones de correo electrónico, pero Moodle administre las contraseñas. Si utiliza "interno", debe proporcionar un campo con una  dirección de correo electrónico utilizada en la base de datos externa, y debe ejecutar regularmente tanto admin/cron.php como auth/db/cli/sync_users.php. Moodle enviará un correo electrónico a los nuevos usuarios con una contraseña temporal.';
+$string['auth_dbpasstype'] = '<p> Especifique el formato que usa el campo de contraseña. La encriptación MD5 es útil para conectar con otras aplicaciones web como PostNuke.<p> <p> Use "interno" si quiere que la base de datos externa gestione los nombres de usuario y las direcciones de correo electrónico, pero que Moodle administre las contraseñas. Si utiliza "interno", <i>debe<i> proporcionar un campo con una  dirección de correo electrónico utilizada en la base de datos externa, y debe ejecutar regularmente tanto admin/cron.php como auth/db/cli/sync_users.php. Moodle enviará un correo electrónico a los nuevos usuarios con una contraseña temporal.</p>';
 $string['auth_dbpasstype_key'] = 'Formato de contraseña';
 $string['auth_dbreviveduser'] = 'Recuperado el usuario {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Error al recuperar al usuario {$a}';
+$string['auth_dbsaltedcrypt'] = 'Cifrado de hash de cadena de una dirección';
 $string['auth_dbsetupsql'] = 'Comando de ajuste SQL';
 $string['auth_dbsetupsqlhelp'] = 'Comando SQL para la configuración especial de la base de datos, comúnmente se utiliza para la codificación de comunicación - ejemplo para MySQL y PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = 'Suspendido el usuario {$a->name} id {$a->id}';

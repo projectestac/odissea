@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message_email', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   message_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['none'] = 'Bat ere ez';
 $string['noreplyaddress'] = 'Ez-erantzun helbidea';
 $string['pluginname'] = 'E-posta';
 $string['sitemailcharset'] = 'Karaktere-multzoa';
+$string['smtpauthtype'] = 'SMTP autentifikazio-mota';
 $string['smtphosts'] = 'SMTP ostalariak';
 $string['smtpmaxbulk'] = 'SMTP saiorako muga';
 $string['smtppass'] = 'SMTP pasahitza';

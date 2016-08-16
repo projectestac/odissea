@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_online_users', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Numero di minuti di inattività trascorsi i quali un utente non sarà più considerato online.';
 $string['online_users:addinstance'] = 'Aggiungere blocco Utenti online';
-$string['online_users:myaddinstance'] = 'Aggiungere blocco Utenti online alla pagina My home';
+$string['online_users:myaddinstance'] = 'Aggiungere blocco Utenti onlinenella Dashboard';
 $string['online_users:viewlist'] = 'Visualizzare elenco degli utenti online';
 $string['periodnminutes'] = 'ultimi {$a} minuti';
 $string['pluginname'] = 'Utenti online';

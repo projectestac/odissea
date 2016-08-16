@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Blancs per a {no} opcions més';
 $string['answer'] = 'Resposta';
 $string['correctansweris'] = 'La resposta correcta és: {$a}';
-$string['infinite'] = 'Infinit';
+$string['infinite'] = 'Il·limitat';
 $string['pleaseputananswerineachbox'] = 'Si us plau, poseu una resposta a cada caixa.';
 $string['pluginname'] = 'Arrossegar i deixar anar dins d\'un text';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'arrossegar i deixar anar';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'arrossegar i deixar anar';
-$string['pluginname_help'] = 'Introduiu alguna pregunta com «El [[1]] va saltar sobre el [[2]]», i a continuació, escriviu les paraules que poden anar als forats 1 i 2.';
-$string['pluginnamesummary'] = 'Les paraules que falten al text s\'omplen arrossegant i deixant anar.';
+$string['pluginname_help'] = 'Les preguntes d\'arrossegar i deixar anar dins de text demanen que qui respon arrossegui paraules o frases fins a la seva ubicació correcta en els espais buits del text de la pregunta.  [[1]], [[2]], [[3]], ...  s\'usen com marcadors de posició en el text de la pregunta, amb les respostes correctes especificades com a opcions de resposta 1, 2, 3, ..., respectivament. Les respostes triades es poden agrupar de manera que totes les respostes d\'un grup particular tinguin el mateix color que els espais buits del text de la pregunta. Les opcions de resposta marcades com a il·limitades es poden usar en més d\'un espai buit.';
+$string['pluginnamesummary'] = 'Les paraules que falten en el text de la pregunta s\'emplenen emprant arrossegar i deixar anar.';

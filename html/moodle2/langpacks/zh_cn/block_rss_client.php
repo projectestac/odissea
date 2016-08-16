@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = '修改新闻种子';
 $string['editrssblock'] = '编辑 RSS 标题块';
 $string['enableautodiscovery'] = '允许自动发现种子？';
 $string['enableautodiscovery_help'] = '如果打开，网页中的种子会被自动发现。例如，输入http://docs.moodle.org，那么会自动发现http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
-$string['errorloadingfeed'] = '种子加载错误（{$a}）';
 $string['feed'] = '新闻种子';
 $string['feedadded'] = '新闻种子已添加';
 $string['feeddeleted'] = '新闻种子已删除';
@@ -57,7 +56,7 @@ $string['feedsaddedit'] = '添加/修改种子';
 $string['feedsconfigurenewinstance'] = '点击此处以配置此区块应显示的RSS种子。';
 $string['feedsconfigurenewinstance2'] = '点击上面的编辑图标配置本版块显示的RSS种子。';
 $string['feedupdated'] = '新闻种子已更新';
-$string['feedurl'] = '种子URL';
+$string['feedurl'] = '种子网页地址';
 $string['findmorefeeds'] = '查找更多 RSS 种子';
 $string['managefeeds'] = '管理我的全部种子';
 $string['nofeeds'] = '此站尚未添加 RSS 种子。';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = '建立个人的 RSS 种子';
 $string['rss_client:createsharedfeeds'] = '建立共享的 RSS 种子';
 $string['rss_client:manageanyfeeds'] = '管理任意 RSS 种子';
 $string['rss_client:manageownfeeds'] = '管理自己的 RSS 种子';
-$string['rss_client:myaddinstance'] = '新增RSS种子版块';
+$string['rss_client:myaddinstance'] = '在控制面板新增一个RSS种子版块';
 $string['seeallfeeds'] = '查看所有的种子';
 $string['sharedfeed'] = '共享种子';
 $string['shownumentrieslabel'] = '每个版块中最多显示几条。';

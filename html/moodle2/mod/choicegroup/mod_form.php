@@ -46,7 +46,11 @@ class mod_choicegroup_mod_form extends moodleform_mod {
 		}
 		$mform->addRule('name', null, 'required', null, 'client');
 
-		$this->add_intro_editor(true, get_string('description'));
+	        if (method_exists($this, 'standard_intro_elements')) {
+	            $this->standard_intro_elements(get_string('description'));
+	        } else {
+	            $this->add_intro_editor(true, get_string('description'));
+	        }
 
 		//-------------------------------------------------------------------------------
 
@@ -58,7 +62,7 @@ class mod_choicegroup_mod_form extends moodleform_mod {
 		$db_groups = $DB->get_records('groups', array('courseid' => $COURSE->id));
 		foreach ($db_groups as $group) {
 			$groups[$group->id] = new stdClass();
-			$groups[$group->id]->name = $group->name;
+			$groups[$group->id]->name = format_string($group->name);
 			$groups[$group->id]->mentioned = false;
 			$groups[$group->id]->id = $group->id;
 		}
@@ -136,9 +140,8 @@ class mod_choicegroup_mod_form extends moodleform_mod {
 			    }
 			    $mform->addElement('html', '</fieldset>');
 			}
-	    }
-
-	    foreach ($groups as $group) {
+		}
+		foreach ($groups as $group) {
 			if ($group->mentioned === false) {
 				$this->addgroup($group->id, $group->name);
 			}
@@ -163,6 +166,7 @@ class mod_choicegroup_mod_form extends moodleform_mod {
 		// Go on the with the remainder of the form
 		// -------------------------
 
+
 		//-------------------------------------------------------------------------------
 		$mform->addElement('header', 'timerestricthdr', get_string('timerestrict', 'choicegroup'));
 		$mform->addElement('checkbox', 'timerestrict', get_string('timerestrict', 'choicegroup'));
@@ -177,51 +181,50 @@ class mod_choicegroup_mod_form extends moodleform_mod {
 		$this->standard_coursemodule_elements();
 		//-------------------------------------------------------------------------------
 		$this->add_action_buttons();
+}
+
+private function addgroup($groupid, $groupname) {
+	$mform    =& $this->_form;
+	$buttonarray = array();
+    $buttonarray[] =& $mform->createElement('text', 'lgroup['.$groupid.']', get_string('grouplimit', 'choicegroup'),
+                                            array('size' => 4, 'class' => 'limit_input_node'));
+   	$buttonarray[] =& $mform->createElement('checkbox', 'cgroup['.$groupid.']', '',
+                                            ' '.get_string('usegroup', 'choicegroup'));
+    $mform->setType('cgroup['.$groupid.']', PARAM_INT);
+    $mform->setType('lgroup['.$groupid.']', PARAM_INT);
+    $mform->addGroup($buttonarray, 'groupelement', $groupname, array(' '), false);
+    $mform->disabledIf('lgroup['.$groupid.']', 'cgroup['.$groupid.']', 'notchecked');
+    $mform->setDefault('lgroup['.$groupid.']', 0);
+    $mform->addElement('hidden', 'groupid['.$groupid.']', '');
+    $mform->setType('groupid['.$groupid.']', PARAM_INT);
+    $mform->disabledIf('lgroup['.$groupid.']', 'limitanswers', 'eq', 0);
+}
+
+function data_preprocessing(&$default_values){
+	global $DB;
+	$this->js_call();
+
+	if (empty($default_values['timeopen'])) {
+		$default_values['timerestrict'] = 0;
+	} else {
+		$default_values['timerestrict'] = 1;
 	}
 
-	private function addgroup($groupid, $groupname) {
-		$mform    =& $this->_form;
-		$buttonarray = array();
-        $buttonarray[] =& $mform->createElement('text', 'lgroup['.$groupid.']', get_string('grouplimit', 'choicegroup'),
-                                                array('size' => 4, 'class' => 'limit_input_node'));
-       	$buttonarray[] =& $mform->createElement('checkbox', 'cgroup['.$groupid.']', '',
-                                                ' '.get_string('usegroup', 'choicegroup'));
-        $mform->setType('cgroup['.$groupid.']', PARAM_INT);
-        $mform->setType('lgroup['.$groupid.']', PARAM_INT);
-        $mform->addGroup($buttonarray, 'groupelement', $groupname, array(' '), false);
-        $mform->disabledIf('lgroup['.$groupid.']', 'cgroup['.$groupid.']', 'notchecked');
-        $mform->setDefault('lgroup['.$groupid.']', 0);
-        $mform->addElement('hidden', 'groupid['.$groupid.']', '');
-        $mform->setType('groupid['.$groupid.']', PARAM_INT);
-        $mform->disabledIf('lgroup['.$groupid.']', 'limitanswers', 'eq', 0);
-
-	}
-
-	function data_preprocessing(&$defaultvalues) {
-		global $COURSE, $DB;
-		$this->js_call();
-
-		if (empty($defaultvalues['timeopen'])) {
-			$defaultvalues['timerestrict'] = 0;
-		} else {
-			$defaultvalues['timerestrict'] = 1;
-		}
-
-		if (!$this->current->instance) {
-            return;
-        }
-        $groupsok = $DB->get_records('choicegroup_options', array('choicegroupid' => $this->current->instance), 'groupid', 'id, groupid, maxanswers');
-        if (!empty($groupsok)) {
-            $groups = choicegroup_detected_groups($COURSE->id, true);
-            foreach ($groupsok as $group) {
-                if (in_array($group->groupid, $groups)) {
-                    $defaultvalues['lgroup['.$group->groupid.']'] = $group->maxanswers;
-                    $defaultvalues['cgroup['.$group->groupid.']'] = true;
-                    $defaultvalues['groupid['.$group->groupid.']'] = $group->id;
-                }
+    if (!$this->current->instance) {
+        return;
+    }
+    $groupsok = $DB->get_records('choicegroup_options', array('choicegroupid' => $this->current->instance), 'groupid', 'id, groupid, maxanswers');
+    if (!empty($groupsok)) {
+        $groups = choicegroup_detected_groups($COURSE->id, true);
+        foreach ($groupsok as $group) {
+            if (in_array($group->groupid, $groups)) {
+                $defaultvalues['lgroup['.$group->groupid.']'] = $group->maxanswers;
+                $defaultvalues['cgroup['.$group->groupid.']'] = true;
+                $defaultvalues['groupid['.$group->groupid.']'] = $group->id;
             }
         }
-	}
+    }
+}
 
 	function validation($data, $files) {
 		$errors = parent::validation($data, $files);

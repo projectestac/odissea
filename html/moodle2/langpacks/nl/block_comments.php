@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_comments', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_comments', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments:addinstance'] = 'Voeg een nieuw commentaarblok toe';
-$string['comments:myaddinstance'] = 'Voeg een nieuw commentaarblok toe aan de mijn startpagina';
+$string['comments:myaddinstance'] = 'Voeg een nieuw commentaarblok toe aan de Mijn startpagina';
 $string['pluginname'] = 'Commentaar';

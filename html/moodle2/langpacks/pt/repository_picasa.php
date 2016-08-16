@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_picasa', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,9 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID do Cliente';
 $string['configplugin'] = 'Configurações repositório "Picasa"';
-$string['oauth2upgrade_message_content'] = 'Como parte da atualização para Moodle 2.3, o módulo portefólio Picasa foi desativado. Para reativa-lo, o seu site Moodle precisa de ser registado com o Google, como descrito na documentação {$a->docsurl}, a fim de obter um utilizador e uma senha. O utilizador e a senha podem então ser utilizados para configurar todos os módulos do Google Drive e do Picasa.';
-$string['oauth2upgrade_message_small'] = 'Este modulo foi desativado, uma vez que requer configuração como descrito na documentação de configuração Google OAuth 2.0 .';
-$string['oauth2upgrade_message_subject'] = 'Informações importantes sobre o modulo repositório Picasa.';
 $string['oauthinfo'] = '<p>Para utilizar este modulo será necessário registar o seu site com o Google, como descrito na documentação  <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do processo de registo, será necessário digitar o seguinte URL \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um utilizador e senha que podem ser utilizados para configurar todos os módulos do Google Drive e do Picasa.</p>';
 $string['picasa:view'] = 'Ver repositório Picasa';
 $string['pluginname'] = 'Picasa';

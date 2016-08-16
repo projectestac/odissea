@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,11 +31,15 @@ $string['display_help'] = 'Als je de mapinhoud op een cursuspagina wil tonen, da
 $string['displayinline'] = 'Inline op een cursuspagina';
 $string['displaypage'] = 'Op een aparte pagina';
 $string['dnduploadmakefolder'] = 'Bestanden unzippen en map maken';
+$string['downloadfolder'] = 'Download map';
+$string['eventallfilesdownloaded'] = 'Zip-archief of map gedownload';
 $string['eventfolderupdated'] = 'Map aangepast';
 $string['folder:addinstance'] = 'Voeg een nieuwe map toe';
 $string['foldercontent'] = 'Bestanden en submappen';
 $string['folder:managefiles'] = 'Beheer bestanden in mappenmodule';
 $string['folder:view'] = 'Bekijk mapinhoud';
+$string['maxsizetodownload'] = 'Maximum map downloadgrootte (MB)';
+$string['maxsizetodownload_help'] = 'De maximale grootte van een map die gedownload kan worden als een zip-bestand. Als dit op nul gezet wordt, dan is de mapgrootte onbeperkt.';
 $string['modulename'] = 'Map';
 $string['modulename_help'] = 'Met de map-module kan een leraar een aantal samenhorende bestanden tonen in één enkele map, wat het scrollen door de cursuspagina vermindert. Je kunt een gecomprimeerde map uploaden en uitpakken of een lege map maken en daar files naartoe uploaden.
 
@@ -49,5 +53,8 @@ $string['page-mod-folder-view'] = 'Hoofdpagina mappenmodule';
 $string['page-mod-folder-x'] = 'Elke mappenmodule pagina';
 $string['pluginadministration'] = 'Mappenbeheer';
 $string['pluginname'] = 'Map';
+$string['search:activity'] = 'Map';
+$string['showdownloadfolder'] = 'Toon downloadknop voor map';
+$string['showdownloadfolder_help'] = 'Indien op \'ja\' gezet zal er een knop getoond worden waarmee de inhoud van een map als zip-bestand gedownload kan worden.';
 $string['showexpanded'] = 'Toon onderliggende mappen uitgeklapt';
 $string['showexpanded_help'] = 'Indien ingeschakeld worden de onderliggende mappen standaard uitgeklapt getoond. Anders worden onderliggende mappen dichtgeplooid getoond.';

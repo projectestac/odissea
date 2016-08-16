@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'group', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,6 +148,7 @@ $string['importgroups_help'] = 'Los grupos pueden ser importados mediante un arc
 $string['javascriptrequired'] = 'Esta página requiere que Javascript esté activado.';
 $string['members'] = 'Miembros por grupo';
 $string['membersofselectedgroup'] = 'Miembros de:';
+$string['mygroups'] = 'Mis grupos';
 $string['namingscheme'] = 'Esquema de denominación';
 $string['namingscheme_help'] = 'El símbolo arroba (@) puede usarse para crear grupos con nombres que contienen letras. Por ejemplo, Grupo @ puede generar grupos denominados Grupo A, Grupo B, Grupo C, etc.
 
@@ -195,6 +196,7 @@ $string['nousersinrole'] = 'No existen usuarios disponibles en el rol selecciona
 $string['number'] = 'Número de grupos o miembros por grupo';
 $string['numgroups'] = 'Número de grupos';
 $string['nummembers'] = 'Miembros por grupo';
+$string['othergroups'] = 'Otros grupos';
 $string['overview'] = 'Visión general';
 $string['potentialmembers'] = 'Miembros potenciales: {$a}';
 $string['potentialmembs'] = 'Miembros potenciales';

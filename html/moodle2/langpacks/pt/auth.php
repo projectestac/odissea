@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Módulos de autenticação disponíveis';
+$string['allowaccountssameemail'] = 'Permitir a existência de contas com o mesmo e-mail';
+$string['allowaccountssameemail_desc'] = 'Se ativar esta opção, o mesmo endereço de e-mail poderá ser utilizado em várias contas de utilizador. Esta ação poderá levantar alguns problemas de privacidade e de segurança em determinadas situações, como por exemplo, no envio de e-mails para alteração de senha.';
 $string['alternatelogin'] = 'Se inserir um URL aqui, será utilizado como página de autenticação para este site. A página deverá conter um formulário que tenha a propriedade action definida para <strong>\'{$a}\'</strong> e campos de retorno <strong>username</strong> e <strong>password</strong>.<br />Tenha cuidado para não inserir um URL incorreto porque pode bloqueá-lo a si mesmo de aceder a este site.<br /> Deixe esta definição em branco para utilizar a página de autenticação predefinida do Moodle.';
 $string['alternateloginurl'] = 'Endereço alternativo para autenticação';
 $string['auth_changepasswordhelp'] = 'Ajuda para alterar senha';
@@ -54,7 +56,9 @@ $string['auth_remove_keep'] = 'Manter interno';
 $string['auth_remove_suspend'] = 'Suspender interno';
 $string['auth_remove_user'] = 'Especifique o que fazer com contas internas de utilizadores durante sincronização em massa quando o utilizador foi removido da fonte externa. Só utilizadores suspensos são automaticamente reativados se eles reaparecem em fontes externas.';
 $string['auth_remove_user_key'] = 'Remover utilizador externo';
-$string['auth_sync_script'] = 'Script de sincronização cron';
+$string['auth_sync_script'] = 'Sincronização da conta de utilizador';
+$string['auth_sync_suspended'] = 'Se ativar esta opção, o atributo suspenso será utilizado para atualizar o estado de suspensão conta local de utilizador.';
+$string['auth_sync_suspended_key'] = 'Sincronizar estado de suspensão do utilizador local';
 $string['auth_updatelocal'] = 'Atualizar localmente';
 $string['auth_updatelocal_expl'] = '<p><b>Atualização local:</b> Se ativo, o campo será atualizado (com autorização externa) cada vez que o utilizador faz a autenticação ou exista uma sincronização de utilizadores. Os campos definidos para serem atualizados localmente deverão estar bloqueados.</p>';
 $string['auth_updateremote'] = 'Atualizar externamente';
@@ -65,11 +69,11 @@ $string['auth_user_creation'] = 'Novos (anónimos) utilizadores podem criar cont
 $string['auth_usernameexists'] = 'O nome escolhido já existe. Escolha outro.';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
 $string['changepassword'] = 'Endereço para alteração de senha';
-$string['changepasswordhelp'] = 'Aqui pode especificar um local onde os utilizadores podem recuperar ou alterar a sua senha e nome de utilizador caso se esqueçam dela. Será apresentado aos utilizadores um botão na página de autenticação e na sua página de utilizador. Se deixar este espaço em branco o botão não aparecerá.';
+$string['changepasswordhelp'] = 'Endereço URL da página de recuperação de senha, que será enviado aos utilizadores por e-mail. Tenha em atenção que esta configuração não terá efeito caso um endereço URL de recuperação de senha esteja definido nas configurações comuns de autenticação.';
 $string['chooseauthmethod'] = 'Escolha um método de autenticação:';
 $string['chooseauthmethod_help'] = 'Esta configuração determina o método de autenticação utilizado sempre que o utilizador se autentica. Deve selecionar unicamente métodos de autenticação ativos, caso contrário o utilizador não conseguirá se autenticar. Para impedir um utilizador de se autenticar, selecione "Sem autenticação".';
 $string['createpassword'] = 'Gerar senha e notificar utilizador';
-$string['createpasswordifneeded'] = 'Criar senha se necessário';
+$string['createpasswordifneeded'] = 'Criar senha se necessário e enviar por e-mail';
 $string['emailchangecancel'] = 'Cancelar a mudança de e-mail';
 $string['emailchangepending'] = 'Atualização pendente. Abra a hiperligação que lhe foi enviada para {$a->preference_newemail}.';
 $string['emailnowexists'] = 'O endereço que está a tentar defnir no seu perfil já foi associado à conta de outro utilizador. Assim, o seu pedido foi cancelado, mas pode voltar a tentar com um endereço de e-mail diferente.';
@@ -89,8 +93,9 @@ $string['errormaxconsecutiveidentchars'] = 'As senhas só podem ter um máximo d
 $string['errorminpassworddigits'] = 'A senha deverá ter pelo menos {$a} algarismo(s)';
 $string['errorminpasswordlength'] = 'A senha deverá ter pelo menos {$a} caracteres.';
 $string['errorminpasswordlower'] = 'A senha deverá ter pelo menos {$a} letra(s) minúscula(s).';
-$string['errorminpasswordnonalphanum'] = 'A senha deverá ter pelo menos {$a} caracter(es) não alfanumérico(s).';
+$string['errorminpasswordnonalphanum'] = 'A senha deverá ter pelo menos {$a} caracter(es) não alfanumérico(s) tais como *, -, ou #..';
 $string['errorminpasswordupper'] = 'A senha deverá ter pelo menos {$a} letra(s) maiúscula(s).';
+$string['errorpasswordreused'] = 'Esta senha já foi utilizada anteriormente, e não é permitida a sua reutilização';
 $string['errorpasswordupdate'] = 'Erro na atualização da senha; senha não modificada';
 $string['eventuserloggedin'] = 'Utilizador autenticou-se';
 $string['eventuserloggedinas'] = 'Utilizador entrou como outro utilizador';
@@ -109,11 +114,14 @@ $string['infilefield'] = 'Campo necessário no ficheiro';
 $string['informminpassworddigits'] = 'pelo menos {$a} dígito(s)';
 $string['informminpasswordlength'] = 'pelo menos {$a} caracteres';
 $string['informminpasswordlower'] = 'pelo menos {$a} letra(s) minúscula(s)';
-$string['informminpasswordnonalphanum'] = 'pelo menos {$a} caracter(es) alfanumérico(s)';
+$string['informminpasswordnonalphanum'] = 'pelo menos {$a} caracter(es) não alfanumérico(s) como o *, -, ou #';
+$string['informminpasswordreuselimit'] = 'As senhas podem ser reutilizadas após {$a} alterações';
 $string['informminpasswordupper'] = 'pelo menos {$a} letra(s) maiúscula(s)';
 $string['informpasswordpolicy'] = 'A senha tem que ter {$a}';
 $string['instructions'] = 'Instruções';
 $string['internal'] = 'Interno';
+$string['limitconcurrentlogins'] = 'Limitar múltiplas sessões';
+$string['limitconcurrentlogins_desc'] = 'Se ativar esta opção, o número de sessões iniciadas em simultâneo passará a ser restrito para cada utilizador. A sessão iniciada há mais tempo será terminada após o limite ser atingido, por favor note que os utilizadores poderão perder toda a informação ainda não guardada. Esta configuração não é compatível com módulos de autenticação single-sign-on (SSO).';
 $string['locked'] = 'Bloqueado';
 $string['md5'] = 'Criptografia MD5';
 $string['nopasswordchange'] = 'A senha não pode ser modificada.';
@@ -130,6 +138,7 @@ $string['potentialidps'] = 'Autenticar-se usando a sua conta em:';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'O CAPTCHA serve para evitar ações indevidas por parte de programas automáticos. Insira as palavras na caixa, pela ordem apresentada e separadas por um espaço em branco.Se não tem a certeza das palavras, obtenha um novo CAPTCHA ou um CAPTCHA em formato áudio.';
 $string['recaptcha_link'] = 'link';
+$string['security_question'] = 'Pergunta de segurança';
 $string['selfregistration'] = 'Autorregisto';
 $string['selfregistration_help'] = 'Se estiver selecionado um módulo de autenticação como, por exemplo, o Autorregisto com confirmação por e-mail, então é possível aos utilizadores potenciais se registarem e criarem a sua conta de utilizador. Todavia isto torna também possível que spammers criem para usar os fóruns, blogues, etc. para inserir mensagens de spam (publicidade por exemplo). Para evitar estas situações, o autorregisto deve ser desativado ou limitado através da opção <em>Domínios de e-mail permitidos</em>';
 $string['sha1'] = 'tabela hash SHA-1';
@@ -149,3 +158,5 @@ $string['update_onlogin'] = 'Em cada autenticação';
 $string['update_onupdate'] = 'Em atualização';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() não suporta o usertype selecionado: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() não suporta o usertype selecionado (..por enquanto)';
+$string['username'] = 'Utilizador';
+$string['username_help'] = 'Tenha atenção que alguns módulos de autenticação não permitem a alteração do nome de utilizador.';

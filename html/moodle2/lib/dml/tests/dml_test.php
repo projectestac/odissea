@@ -1432,9 +1432,9 @@ class core_dml_testcase extends database_driver_testcase {
                 $this->assertSame('ddltablenotexist', $e->errorcode);
             }
         }
-        // And without params.
+
         try {
-            $records = $DB->get_records('xxxx', array());
+            $records = $DB->get_records('xxxx', array('id' => '1'));
             $this->fail('An Exception is missing, expected due to query against non-existing table');
         } catch (moodle_exception $e) {
             $this->assertInstanceOf('dml_exception', $e);
@@ -3670,7 +3670,7 @@ class core_dml_testcase extends database_driver_testcase {
 
         $DB->insert_record($tablename, array('name'=>'10.10', 'nametext'=>'10.10', 'res'=>5.1));
         $DB->insert_record($tablename, array('name'=>'91.10', 'nametext'=>'91.10', 'res'=>666));
-        $DB->insert_record($tablename, array('name'=>'011.10', 'nametext'=>'011.10', 'res'=>10.1));
+        $DB->insert_record($tablename, array('name'=>'011.13333333', 'nametext'=>'011.13333333', 'res'=>10.1));
 
         // Casting varchar field.
         $sql = "SELECT * FROM {{$tablename}} WHERE ".$DB->sql_cast_char2real('name')." > res";
@@ -3681,8 +3681,11 @@ class core_dml_testcase extends database_driver_testcase {
         $records = $DB->get_records_sql($sql);
         $this->assertCount(3, $records);
         $this->assertSame('10.10', reset($records)->name);
-        $this->assertSame('011.10', next($records)->name);
+        $this->assertSame('011.13333333', next($records)->name);
         $this->assertSame('91.10', next($records)->name);
+        // And verify we can operate with them without too much problem with at least 6 decimals scale accuracy.
+        $sql = "SELECT AVG(" . $DB->sql_cast_char2real('name') . ") FROM {{$tablename}}";
+        $this->assertEquals(37.44444443333333, (float)$DB->get_field_sql($sql), '', 1.0E-6);
 
         // Casting text field.
         $sql = "SELECT * FROM {{$tablename}} WHERE ".$DB->sql_cast_char2real('nametext', true)." > res";
@@ -3693,8 +3696,19 @@ class core_dml_testcase extends database_driver_testcase {
         $records = $DB->get_records_sql($sql);
         $this->assertCount(3, $records);
         $this->assertSame('10.10', reset($records)->nametext);
-        $this->assertSame('011.10', next($records)->nametext);
+        $this->assertSame('011.13333333', next($records)->nametext);
         $this->assertSame('91.10', next($records)->nametext);
+        // And verify we can operate with them without too much problem with at least 6 decimals scale accuracy.
+        $sql = "SELECT AVG(" . $DB->sql_cast_char2real('nametext', true) . ") FROM {{$tablename}}";
+        $this->assertEquals(37.44444443333333, (float)$DB->get_field_sql($sql), '', 1.0E-6);
+
+        // Check it works with values passed as param.
+        $sql = "SELECT name FROM {{$tablename}} WHERE FLOOR(res - " . $DB->sql_cast_char2real(':param') . ") = 0";
+        $this->assertEquals('011.13333333', $DB->get_field_sql($sql, array('param' => '10.09999')));
+
+        // And also, although not recommended, with directly passed values.
+        $sql = "SELECT name FROM {{$tablename}} WHERE FLOOR(res - " . $DB->sql_cast_char2real('10.09999') . ") = 0";
+        $this->assertEquals('011.13333333', $DB->get_field_sql($sql));
     }
 
     public function test_sql_compare_text() {
@@ -5347,7 +5361,7 @@ class core_dml_testcase extends database_driver_testcase {
 
         // The get_records() method generates 2 queries the first time is called
         // as it is fetching the table structure.
-        $whatever = $DB->get_records($tablename);
+        $whatever = $DB->get_records($tablename, array('id' => '1'));
         $this->assertEquals($initreads + 3, $DB->perf_get_reads());
         $this->assertEquals($initwrites, $DB->perf_get_writes());
 
@@ -5510,8 +5524,7 @@ class moodle_database_for_testing extends moodle_database {
     protected function normalise_value($column, $value) {}
     public function set_debug($state) {}
     public function get_debug() {}
-    public function set_logging($state) {}
-    public function change_database_structure($sql) {}
+    public function change_database_structure($sql, $tablenames = null) {}
     public function execute($sql, array $params=null) {}
     public function get_recordset_sql($sql, array $params=null, $limitfrom=0, $limitnum=0) {}
     public function get_records_sql($sql, array $params=null, $limitfrom=0, $limitnum=0) {}

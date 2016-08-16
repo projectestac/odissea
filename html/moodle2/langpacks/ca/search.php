@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'search', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['emptydatabaseerror'] = 'No existeix la taula de la base de dades, o no 
 $string['enteryoursearchquery'] = 'Introduïu la vostra cerca';
 $string['errors'] = 'Errors';
 $string['filesinindexdirectory'] = 'Fitxers en el directori índex';
+$string['globalsearch'] = 'Cerca global';
 $string['globalsearchdisabled'] = 'No s\'ha habilitat la cerca global';
 $string['invalidindexerror'] = 'El directori índex és buit o no conté un índex vàlid.';
 $string['ittook'] = 'Ha costat';

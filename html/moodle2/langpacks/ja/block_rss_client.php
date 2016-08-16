@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_rss_client', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,6 @@ $string['editnewsfeeds'] = 'ニュースフィードを編集する';
 $string['editrssblock'] = 'RSSヘッドラインブロックを編集する';
 $string['enableautodiscovery'] = 'フィードのオートディスカバリを有効にしますか?';
 $string['enableautodiscovery_help'] = 'この設定を有効にした場合、ウェブページのフィードが自動的に探されます。例えば、http://docs.moodle.orgが入力された場合、http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rssが見つかります。';
-$string['errorloadingfeed'] = 'RSSフィード ({$a}) の読み込み中にエラーが発生しました。';
 $string['feed'] = 'フィード';
 $string['feedadded'] = 'ニュースフィードが追加されました。';
 $string['feeddeleted'] = 'ニュースフィードが削除されました。';
@@ -70,7 +69,7 @@ $string['rss_client:createprivatefeeds'] = 'プライベートRSSフィードを
 $string['rss_client:createsharedfeeds'] = '共有RSSフィードを作成する';
 $string['rss_client:manageanyfeeds'] = 'すべてのRSSフィードを管理する';
 $string['rss_client:manageownfeeds'] = '自分のRSSフィードを管理する';
-$string['rss_client:myaddinstance'] = '新しいリモートRSSフィードブロックをマイホームに追加する';
+$string['rss_client:myaddinstance'] = '新しいRSSフィードブロックをダッシュボードに追加する';
 $string['seeallfeeds'] = 'すべてのフィードを表示する';
 $string['sharedfeed'] = '共有フィード';
 $string['shownumentrieslabel'] = 'ブロックに表示する最大エントリ数です。';

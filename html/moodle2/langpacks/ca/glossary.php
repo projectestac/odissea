@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'glossary', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,6 +103,7 @@ $string['cnfshowgroup'] = 'Especifiqueu si el canvi de grup s\'ha de mostrar o n
 $string['cnfsortkey'] = 'Seleccioneu el criteri d\'ordenació per defecte.';
 $string['cnfsortorder'] = 'Selecciona el sentit d\'ordenació per defecte.';
 $string['cnfstudentcanpost'] = 'Definiu si els estudiants poden enviar entrades per defecte o no.';
+$string['cnftabs'] = 'Selecciona les pestanyes visibles per a aquest format de glossari';
 $string['comment'] = 'Comentari';
 $string['commentdeleted'] = 'S\'ha suprimit el comentari.';
 $string['comments'] = 'Comentaris';
@@ -283,7 +284,21 @@ $string['linking'] = 'Enllaços automàtics';
 $string['mainglossary'] = 'Glossari principal';
 $string['maxtimehaspassed'] = 'El temps màxim per editar aquest comentari ({$a}) ja ha passat!';
 $string['modulename'] = 'Glossari';
-$string['modulename_help'] = 'El modul glossari dona permís als participants per crear i mantindre definicions, com un diccionari. Les entrades del glossari poden ser automàticament enllaçades quan qualsevol grup de paraules i frases apareix durant el curs.';
+$string['modulename_help'] = 'El mòdul d\'activitat glossari permet als participants crear i mantenir una llista de definicions, com un diccionari, o  recollir i organitzar els recursos o la informació.
+
+Un professor pot permetre que els fitxers s\'adjuntin a les entrades del glossari. Les imatges adjuntes es mostren a l\'entrada. Les entrades es poden cercar o explorar per ordre alfabètic o per categoria, data o autors. Les entrades poden ser aprovades per defecte o requerir l\'aprovació d\'un professor abans que siguin visibles per a tothom.
+
+Si està activat el filtre d\'enllaços automàtics al glossari, les entrades estaran connectades de forma automàtica, on les paraules i/o frases dels conceptes apareixeran dins el curs.
+
+Un professor pot permetre comentaris a les entrades. Les entrades també poden ser valorades pels professors o els estudiants (avaluació entre iguals). Les qualificacions poden ser agregades per formar una qualificació final que es registrarà al llibre de qualificacions.
+
+Els glossaris tenen molts usos, com ara:
+
+* Una llista col·laborativa de termes clau.
+* Un espai per «donar-se a conèixer» on els nous estudiants afegeixen el seu nom i les seves dades personals.
+* Un recurs de «consells pràctics» de les millors pràctiques en un tema pràctic.
+* Una àrea d\'intercanvi de vídeos útils, imatges o arxius de so.
+* Un recurs de revisió de fets per recordar.';
 $string['modulenameplural'] = 'Glossaris';
 $string['newentries'] = 'Entrades noves del glossari';
 $string['newglossary'] = 'Nou glossari';
@@ -371,6 +386,7 @@ $string['usedynalink_help'] = '<p>Activar aquesta característica permet que es 
 <p>Si no voleu que s\'enllaci cert text (p. ex. en un missatge d\'un fòrum), podeu afegir les etiquetes &lt;nolink&gt; i &lt;/nolink&gt; al voltant d\'aquest text.</p>
 
 <p>Teniu en compte que els noms de les categories també s\'enllacen.</p>';
+$string['visibletabs'] = 'Pestanyes visibles';
 $string['waitingapproval'] = 'Esperant aprovació';
 $string['warningstudentcapost'] = '(Aplicable només en cas que no sigui el glossari principal)';
 $string['withauthor'] = 'Conceptes amb autor';

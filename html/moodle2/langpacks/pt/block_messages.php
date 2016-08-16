@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_messages', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_messages', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_messages
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['messages:addinstance'] = 'Adicionar um novo bloco Mensagens';
-$string['messages:myaddinstance'] = 'Adicionar um novo bloco Mensagens à Minha página principal';
+$string['messages:myaddinstance'] = 'Adicionar um novo bloco Mensagens ao Painel do utilizador';
 $string['pluginname'] = 'Mensagens';

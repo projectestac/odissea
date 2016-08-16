@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Beschikbare cursus aanmeldingsplugins';
 $string['addinstance'] = 'Methode toevoegen';
+$string['addinstanceanother'] = 'Voeg methode toe en maak nog één';
 $string['ajaxnext25'] = 'Volgende 25...';
 $string['ajaxoneuserfound'] = '1 gebruiker gevonden';
 $string['ajaxxusersfound'] = '{$a} gebruikers gevonden';
@@ -73,6 +74,9 @@ $string['errorenrolcohort'] = 'Fout bij het maken van een site groep sync aanmel
 $string['errorenrolcohortusers'] = 'Fout bij het aanmelden van site groepsleden in deze cursus';
 $string['errorthresholdlow'] = 'De notificatietijd moet minstens 1 dag zijn.';
 $string['errorwithbulkoperation'] = 'Er is een fout opgetreden bij het in bulk bewerken van aanmeldingswijzigingen.';
+$string['eventenrolinstancecreated'] = 'Aanmeldingsinstantie aangemaakt';
+$string['eventenrolinstancedeleted'] = 'Aanmeldingsinstantie verwijderd';
+$string['eventenrolinstanceupdated'] = 'Aanmelding geüpdatet';
 $string['eventuserenrolmentcreated'] = 'Gebruiker aangemeld in cursus';
 $string['eventuserenrolmentdeleted'] = 'Gebruiker afgemeld uit cursus';
 $string['eventuserenrolmentupdated'] = 'Gebruiker afmelden aangepast';
@@ -91,6 +95,7 @@ $string['extremovedsuspendnoroles'] = 'Schakel aanmelding bij de cursus uit en v
 $string['extremovedunenrol'] = 'Meld de gebruiker af van de cursus';
 $string['finishenrollingusers'] = 'beëindig het aanmelden van gebruikers';
 $string['foundxcohorts'] = '{$a} site-brede groepen gevonden';
+$string['instanceadded'] = 'Methode toegevoegd';
 $string['instanceeditselfwarning'] = 'Waarschuwing:';
 $string['instanceeditselfwarningtext'] = 'Je bent in deze cursus aangemeld door deze aanmeldingsmethode. Het wijzigen hiervan kan je toegang tot deze cursus onmogelijk maken.';
 $string['invalidenrolinstance'] = 'Ongeldige aanmelding';
@@ -100,6 +105,7 @@ $string['manageinstance'] = 'Beheer';
 $string['migratetomanual'] = 'Verplaats naar manuele aanmeldingen';
 $string['nochange'] = 'Geen wijziging';
 $string['noexistingparticipants'] = 'Er bestaan geen deelnemers';
+$string['nogroup'] = 'Geen groep';
 $string['noguestaccess'] = 'Gasten hebben geen toegang tot deze cursus. Probeer aan te melden.';
 $string['none'] = 'Geen';
 $string['notenrollable'] = 'Je kunt je nu niet aanmelden in deze cursus';
@@ -112,6 +118,7 @@ $string['periodend'] = 'tot {$a}';
 $string['periodnone'] = 'aangemeld {$a}';
 $string['periodstart'] = 'van {$a}';
 $string['periodstartend'] = 'van {$a->start} tot {$a->end}';
+$string['proceedtocourse'] = 'Ga verder naar cursusinhoud';
 $string['recovergrades'] = 'Herstel de oude cijfers van de gebruiker indien mogelijk';
 $string['rolefromcategory'] = '{$a->role} (geërfd van cursuscategorie)';
 $string['rolefrommetacourse'] = '{$a->role} (geërfd van bovenliggende cursus)';

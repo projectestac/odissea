@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_replace', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,11 @@ $string['cannotfit'] = 'A substituição é maior do que o original e não é po
 $string['disclaimer'] = 'Compreendo os riscos desta operação';
 $string['doit'] = 'Sim, executar!';
 $string['excludedtables'] = 'Várias tabelas não são atualizadas como parte da substituição de texto. Isto inclui as tabelas de configuração, registos de atividade, eventos e tabelas de sessão.';
+$string['invalidcharacter'] = 'Foram encontrados caracteres inválidos na pesquisa.';
 $string['notifyfinished'] = '...terminado(a)';
 $string['notifyrebuilding'] = 'Reconstrução de cache da disciplina...';
 $string['notimplemented'] = 'Lamentamos, mas esta função não está implementada na sua driver de bases de dados.';
-$string['notsupported'] = 'Este script não é suportado, faça sempre uma cópia de segurança completa antes de continuar! <br />Esta operação não pode ser revertida!';
+$string['notsupported'] = 'Este script deve ser considerado experimental. As alterações produzidas não poderão ser revertidas, pelo que deverá ser efetuada uma cópia de segurança integral antes de executar este script!';
 $string['pageheader'] = 'Procurar e substituir texto em toda a base de dados';
 $string['pluginname'] = 'Procurar e substituir na BD';
 $string['replacewith'] = 'Substituir por esta string';

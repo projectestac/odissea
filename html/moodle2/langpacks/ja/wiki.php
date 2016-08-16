@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,13 +55,14 @@ $string['createcomment'] = 'コメントの作成';
 $string['createddate'] = '作成日時: {$a->date} by {$a->username}';
 $string['createpage'] = 'ページを作成する';
 $string['creating'] = 'Wikiページを作成する';
-$string['creole'] = 'Creole';
+$string['creole'] = 'クレオール';
 $string['defaultformat'] = 'デフォルトフォーマット';
-$string['defaultformat_help'] = 'この設定ではWikiページの編集時に使用するデフォルトフォーマットを指定します。
+$string['defaultformat_help'] = 'この設定ではWikiページの編集時に使用するデフォルトフォーマットを決定します。
 
 * HTML - HTMLエディタを使用できます。
 * クレオール - 小さな編集ツールバーの一般的なWikiマークアップ言語を使用できます。
 * Nwiki - Nwikiモジュールで使用される、Mediawikiのようなマークアップ言語です。';
+$string['deleteallpages'] = 'すべてのWikiページを削除する';
 $string['deletecomment'] = 'コメントの削除';
 $string['deletecommentcheck'] = 'コメントを削除する';
 $string['deletecommentcheckfull'] = '本当にコメントを削除してもよろしいですか?';
@@ -70,7 +71,7 @@ $string['deletedends'] = '削除終了';
 $string['deleteupload'] = '削除';
 $string['deleteversions'] = 'ページバージョンを削除する';
 $string['diff'] = 'Diff';
-$string['diff_help'] = '差異を確認するため、選択したバージョンのページを比較することができます。';
+$string['diff_help'] = '差異を確認するために選択したバージョンのページを比較することができます。';
 $string['edit'] = '編集';
 $string['editblocks'] = 'ブロック編集モードの開始';
 $string['editcomment'] = 'コメントを編集する';
@@ -90,18 +91,18 @@ $string['eventpageversiondeleted'] = 'Wikiページバージョンが削除さ�
 $string['eventpageviewed'] = 'Wikiページが閲覧されました。';
 $string['eventversionrestored'] = 'Wikiバージョンがリストアされました。';
 $string['eventversionviewed'] = 'Wikiページバージョンが閲覧されました。';
-$string['filenotuploadederror'] = 'ファイル「 {$a} 」は正常にアップロードされませんでした。';
+$string['filenotuploadederror'] = 'ファイル「 {$a} 」を正常にアップロードできませんでした。';
 $string['files'] = 'ファイル';
 $string['filtername'] = 'Wikiページオートリンク';
 $string['firstpagetitle'] = '先頭ページ名';
-$string['firstpagetitle_help'] = 'Wiki先頭ページのタイトルです。';
+$string['firstpagetitle_help'] = 'Wikiの先頭ページのタイトルです。';
 $string['forceformat'] = 'フォーマットを強制する';
 $string['forceformat_help'] = 'フォーマットが強制 (チェックボックスをチェック) された場合、Wikiページの編集時にフォーマットを選択するオプションが表示されません。';
 $string['format'] = 'フォーマット';
 $string['formatcreole'] = 'クレオールフォーマット';
 $string['formatcreole_help'] = 'クレオールフォーマットは適切なマークアップを挿入するための編集ツールバーを持った一般的なWIkiマークアップ言語です。
 
-新しいページを作成するには例えば [[ページ2 ]] のように2重角括弧で閉じたページ名を入力します。';
+新しいページを作成するには例えば [[ページ2 ]] のように2重角括弧で閉じたページ名を入力してください。';
 $string['format_help'] = '* HTML - HTMLエディタを使用できます。
 * クレオール - 小さな編集ツールバーを持った一般的なWikiマークアップ言語を使用できます。
 * Nwiki - Nwikiモジュールで使用される、Mediawikiのようなマークアップ言語です。';
@@ -116,7 +117,7 @@ $string['formatnwiki_help'] = 'NwikiはNwikiモジュール内で使用される
 $string['history'] = '履歴';
 $string['history_help'] = '前のバージョンのページの履歴一覧リンクです。';
 $string['html'] = 'HTML';
-$string['incorrectdeleteversions'] = '削除するページバージョンが正しくありません。';
+$string['incorrectdeleteversions'] = '削除するために提供されたページバージョンが正しくありません。';
 $string['incorrectpageid'] = 'ページIDが正しくありません。';
 $string['incorrectsubwikiid'] = 'Subwiki IDが正しくありません。';
 $string['incorrectwikiid'] = 'Wiki IDが正しくありません。';
@@ -141,7 +142,7 @@ $string['migrationfinishednowikis'] = '移行が完了しました。Wikiは移�
 $string['missingpages'] = 'コンテンツなしページ';
 $string['modified'] = '修正日時';
 $string['modulename'] = 'Wiki';
-$string['modulename_help'] = 'Wiki活動モジュールでは、参加者が一群のウェブページを追加および編集することができます。Wikiでは個人または誰でも編集することのできる協力的な場であること、また誰でも自分たちだけが編集できる自分のWikiを持つことができます。
+$string['modulename_help'] = 'Wiki活動モジュールでは参加者が一群のウェブページを追加および編集することができます。Wikiでは個人または誰でも編集することのできる協力的な場であること、また誰でも自分たちだけが編集できる自分のWikiを持つことができます。
 
 それぞれのページの編集履歴は保持され、それぞれの参加者によって編集された内容が一覧表示されます。
 
@@ -150,7 +151,7 @@ Wikiは次のように使用することができます:
 * グループ講義ノートまたは学習ガイドとして
 * 学科メンバーのために作業スキームの計画または会議の議題用として
 * 学生が共同でオンラインブックの著者となり、教師から設定された主題に関するコンテンツを作成するため
-* それぞれの参加者が行または節を執筆しながら、共同で物語または詩を作成するため
+* それぞれの参加者が行または節を執筆しながら共同で物語または詩を作成するため
 * 試験ノートのための個人日誌または試験対策として (個人Wikiを使用)';
 $string['modulenameplural'] = 'Wiki';
 $string['navigation'] = 'ナビゲーション';
@@ -179,7 +180,7 @@ $string['norating'] = '評価なし';
 $string['nosearchresults'] = '該当なし';
 $string['noteditblocks'] = 'ブロック編集モードの終了';
 $string['notingroup'] = 'グループ外';
-$string['notmigrated'] = 'このWikiはまだ移管されていません。あなたの管理者にご連絡ください。';
+$string['notmigrated'] = 'このWikiはまだ移行されていません。あなたの管理者にご連絡ください。';
 $string['notopages'] = 'このページは他のページにリンクしていません。';
 $string['noupdatedpages'] = '更新ページはありません。';
 $string['noviewcommentpermission'] = 'コメント閲覧のパーミッションが必要です。';
@@ -190,11 +191,11 @@ $string['orphaned'] = '迷子ページ';
 $string['orphaned_help'] = '他のページからリンクされていないページを一覧表示します。';
 $string['overridelocks'] = 'ロックをオーバーライドする';
 $string['overridinglocks'] = 'ロックのオーバーライド ...';
-$string['pageexists'] = 'このページはすでに存在します。リダイレクトします。';
+$string['pageexists'] = 'このページはすでに存在します。';
 $string['pageindex'] = 'ページインデックス';
-$string['pageindex_help'] = 'このWikiページツリー';
+$string['pageindex_help'] = 'このWikiのページツリー';
 $string['pageislocked'] = '現在、他のユーザがこのページを編集しています。数分後に編集をお試しください。';
-$string['pagelist'] = 'ページリスト';
+$string['pagelist'] = 'ページ一覧';
 $string['pagelist_help'] = 'アルファベット順のページ一覧';
 $string['page-mod-wiki-comments'] = 'Wikiモジュールコメントページ';
 $string['page-mod-wiki-history'] = 'Wiki履歴ページ';
@@ -214,7 +215,7 @@ $string['ratingmode'] = '評価モード';
 $string['removeallwikitags'] = 'すべてのWikiタグを削除する';
 $string['removepages'] = 'ページを削除する';
 $string['reparsetimeout'] = '再解析デフォルトタイムアウト';
-$string['repeatedsection'] = 'Wikiエラー: セクション名を繰り返すことはできません ( {$a} )';
+$string['repeatedsection'] = 'Wikiエラー: セクション名を繰り返すことはできません ( {$a} )。';
 $string['restore'] = 'リストア';
 $string['restoreconfirm'] = '本当にバージョン #{$a} をリストアしてもよろしいですか?';
 $string['restoreerror'] = 'バージョン #{$a} をリストアすることができませんでした。';
@@ -225,12 +226,15 @@ $string['return'] = '戻る';
 $string['save'] = '保存';
 $string['saving'] = 'Wikiページの保存';
 $string['savingerror'] = '保存エラー';
+$string['search:activity'] = 'Wiki - 活動情報';
+$string['search:collaborative_page'] = 'Wikiページ - 共同ページ';
 $string['searchcontent'] = 'ページコンテクスト内を検索する';
 $string['searchresult'] = '検索結果:';
 $string['searchterms'] = '検索語';
 $string['searchwikis'] = 'Wikiを検索する';
 $string['special'] = '特別';
 $string['tableofcontents'] = '目次';
+$string['tagarea_wiki_pages'] = 'Wikiページ';
 $string['tagsdeleted'] = 'Wikiタグが削除されました。';
 $string['tagtitle'] = '{$a} タグを表示する';
 $string['teacherrating'] = '教師の評価';
@@ -273,7 +277,7 @@ $string['wiki:managefiles'] = 'Wikiファイルを管理する';
 $string['wiki:managewiki'] = 'Wiki設定を管理する';
 $string['wikimode'] = 'Wikiモード';
 $string['wikimodecollaborative'] = '共同Wiki';
-$string['wikimode_help'] = 'Wikiモードでは、すべてのユーザがWikiを編集できる「共同Wiki」、またはユーザのみ自分のWikiを編集できる「個人Wiki」を決定します。';
+$string['wikimode_help'] = 'WikiモードではすべてのユーザがWikiを編集できる「共同Wiki」またはユーザのみ自分のWikiを編集できる「個人Wiki」を決定します。';
 $string['wikimodeindividual'] = '個人Wiki';
 $string['wikiname'] = 'Wiki名';
 $string['wikinowikitext'] = '非Wikiテキスト';

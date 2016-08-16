@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'url', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,7 @@ $string['popupwidthexplain'] = 'Especifica la anchura por defecto de las ventana
 $string['printintro'] = 'Mostrar la descripción de la URL';
 $string['printintroexplain'] = '¿Mostrar la descripción URL debajo del contenido? Algunos tipos de visualización pueden no mostrar la descripción incluso aunque esté activada esa opción.';
 $string['rolesinparams'] = 'Incluye los nombres de rol en los parámetros';
+$string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL del servidor';
 $string['url:addinstance'] = 'Añadir un nuevo recurso URL';
 $string['url:view'] = 'Mostrar URL';

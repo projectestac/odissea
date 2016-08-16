@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Risposta';
 $string['atleastoneoption'] = 'Devi fornire almeno una possibile risposta.';
 $string['cannotsubmit'] = 'Si è verificato un errore durante l\'invio della scelta. Per favore riprova.';
 $string['choice'] = 'Scelta';
+$string['choiceactivityname'] = 'Scelta: {$a}';
 $string['choice:addinstance'] = 'Aggiungere scelta';
 $string['choice:choose'] = 'Salvare una scelta';
 $string['choiceclose'] = 'Chiusura';
+$string['choicecloseson'] = 'La scelta si chiude il {$a}';
 $string['choice:deleteresponses'] = 'Rimuovere le scelte';
 $string['choice:downloadresponses'] = 'Scaricare le scelte';
 $string['choicefull'] = 'Questa opzione è completa.';
@@ -54,11 +56,14 @@ $string['displayhorizontal'] = 'Visualizza orizzontalmente';
 $string['displaymode'] = 'Modalità  di visualizzazione';
 $string['displayvertical'] = 'Visualizza verticalmente';
 $string['eventanswercreated'] = 'Eseguita scelta';
+$string['eventanswerdeleted'] = 'Eliminata scelta';
 $string['eventanswerupdated'] = 'Aggiornata scelta';
+$string['eventreportdownloaded'] = 'Scaricato report delle scelte';
 $string['eventreportviewed'] = 'Visualizzato report scelta';
 $string['expired'] = 'Spiacente, questa attività è stata chiusa il {$a} e non è più disponibile';
 $string['full'] = '(Completo)';
 $string['havetologin'] = 'Devi autenticarti prima di poter effettuare la tua scelta';
+$string['includeinactive'] = 'Includi risposte degli utenti non attivi e sospesi';
 $string['limit'] = 'Limite';
 $string['limitanswers'] = 'Limita il numero di scelte';
 $string['limitanswers_help'] = 'Limita il numero di partecipanti che possono operare la medesima scelta.
@@ -84,14 +89,15 @@ $string['noresultsviewable'] = 'I risultati non sono al momento visualizzabili.'
 $string['notanswered'] = 'Senza scelta';
 $string['notenrolledchoose'] = 'Spiacente, solo gli iscritti al corso possono effettuare scelte.';
 $string['notopenyet'] = 'Spiacente, questa attività  non è disponibile fino al {$a}';
-$string['numberofuser'] = 'Numero di utenti';
-$string['numberofuserinpercentage'] = 'Percentuale dei partecipanti';
+$string['numberofuser'] = 'Numero di risposte';
+$string['numberofuserinpercentage'] = 'Percentuale delle risposte';
 $string['option'] = 'Proposta';
 $string['optionno'] = 'Opzione {no}';
 $string['options'] = 'Opzioni';
 $string['page-mod-choice-x'] = 'Qualsiasi pagina con modulo scelta';
 $string['pluginadministration'] = 'Gestione Scelta';
 $string['pluginname'] = 'Scelta';
+$string['previewonly'] = 'Questa è un\'anteprima delle scelte disponibili. Potrai inviare la tua scelta solo dal {$a}.';
 $string['privacy'] = 'Privacy dei risultati';
 $string['publish'] = 'Rendi pubblici i risultati';
 $string['publishafteranswer'] = 'Visualizza i risultati agli studenti dopo che hanno risposto';
@@ -107,6 +113,9 @@ $string['responsesresultgraphheader'] = 'Visualizzazione grafico';
 $string['responsesto'] = 'Scelte su {$a}';
 $string['results'] = 'Risultati';
 $string['savemychoice'] = 'Salva la mia scelta';
+$string['search:activity'] = 'Scelta - Informazioni sull\'attività';
+$string['showpreview'] = 'Visualizza anteprima';
+$string['showpreview_help'] = 'Gli studenti potranno visualizzare un\'anteprima della scelta prima della data di apertura.';
 $string['showunanswered'] = 'Visualizza colonna di chi non ha scelto';
 $string['skipresultgraph'] = 'Salta il grafico dei risultati';
 $string['spaceleft'] = 'spazio disponibile';

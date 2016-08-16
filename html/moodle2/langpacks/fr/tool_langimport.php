@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_langimport', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['langimport'] = 'Utilitaire d\'importation de langues';
 $string['langimportdisabled'] = 'L\'utilitaire d\'importation de langues a été désactivé. Veuillez effectuer la mise à jour de vos paquetages de langue manuellement au niveau du système de fichiers de votre serveur. N\'oubliez pas de vider les caches une fois cette opération effectuée.';
 $string['langpackinstalled'] = 'Le paquetage de langue « {$a} » a été installé';
 $string['langpackinstalledevent'] = 'Paquetage de langue installé';
+$string['langpacknotremoved'] = 'Une erreur est survenue : le paquetage de langue « {$a} » n\'a pas été complètement désinstallé. Veuillez vérifier les permissions des fichiers.';
 $string['langpackremoved'] = 'Le paquetage de langue « {$a} » a été désinstallé';
 $string['langpackremovedevent'] = 'Paquetage de langue désinstallé';
 $string['langpackupdated'] = 'Le paquetage de langue « {$a} » a été mis à jour';
@@ -40,10 +41,12 @@ $string['langpackuptodate'] = 'Le paquetage de langue « {$a} » est à jour';
 $string['langupdatecomplete'] = 'La mise à jour des langues est terminée';
 $string['missingcfglangotherroot'] = 'Valeur manquante pour le paramètre de configuration $CFG->langotherroot';
 $string['missinglangparent'] = 'Le paquetage de la langue parente <em>{$a->parent}</em> de <em>{$a->lang}</em> n\'est pas installé.';
+$string['noenglishuninstall'] = 'Le paquetage de langue anglais ne peut pas être désinstallé';
 $string['nolangupdateneeded'] = 'Toutes les langues sont à jour. Aucune mise à jour n\'est nécessaire';
 $string['pluginname'] = 'Paquetages de langue';
 $string['purgestringcaches'] = 'Vider les caches des chaînes de caractères';
 $string['remotelangnotavailable'] = 'Moodle ne peut pas se connecter au site download.moodle.org. L\'installation automatique des langues ne peut donc pas avoir lieu. Veuillez télécharger sur <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> le(s) fichier(s) compressé(s) nécessaire(s) dans la liste ci-dessous, les copier dans votre dossier {$a} et les décompresser manuellement.';
-$string['uninstall'] = 'Désinstaller le paquetage de langue sélectionné';
-$string['uninstallconfirm'] = 'Vous êtes sur le point de supprimer totalement la langue {$a}. Voulez-vous continuer ?';
+$string['selectlangs'] = 'Sélectionnez les langues à désinstaller';
+$string['uninstall'] = 'Désinstaller le(s) paquetage(s) de langue sélectionné(s)';
+$string['uninstallconfirm'] = 'Vous êtes sur le point de supprimer totalement les paquetages de langue suivants : <strong>{$a}</strong>. Voulez-vous continuer ?';
 $string['updatelangs'] = 'Mettre à jour les paquetages de langue installés';

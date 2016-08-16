@@ -334,18 +334,6 @@ function qv_print_recent_mod_activity($activity, $courseid, $detail, $modnames, 
 }
 
 /**
- * Function to be run periodically according to the moodle cron
- * This function searches for things that need to be done, such
- * as sending out mail, toggling flags etc ...
- *
- * @return boolean
- * @todo Finish documenting this function
- **/
-function qv_cron () {
-    return true;
-}
-
-/**
  * Returns an array of users who are participanting in this qv
  *
  * Must return an array of users who are participants for a given instance

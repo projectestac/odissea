@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['blocks'] = 'Bloques';
 $string['cannotselecttopsubject'] = 'Non é posíbel escoller un nivel de tema superior';
 $string['comments'] = 'Comentarios ({$a})';
 $string['community:addinstance'] = 'Engadir un novo bloque buscador da comunidade';
-$string['community:myaddinstance'] = 'Engadir un novo bloque de localizador de comunidade na área persoal';
+$string['community:myaddinstance'] = 'Engadir un novo bloque de localizador de comunidade ao meu cartafol persoal';
 $string['contentinfo'] = 'Tema: {$a->subject} - Audiencia: {$a->audience} - Nivel educativo: {$a->educationallevel}';
 $string['continue'] = 'Continuar';
 $string['contributors'] = '- Colaboradores: {$a}';

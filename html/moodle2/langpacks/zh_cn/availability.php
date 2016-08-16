@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'availability', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['manageplugins'] = '管理限制';
 $string['missingplugin'] = '缺少限制插件';
 $string['or'] = '或';
 $string['restrictaccess'] = '限制访问';
+$string['restrictbygroup'] = '添加小组/大组访问限制';
 $string['setheading'] = '{$a->number} 设置中的 {$a->count} 条件';
 $string['shown_all'] = '如果用户没有满足这一条件，则显示灰色';
 $string['shown_individual'] = '如果用户没有满足这一条件，以变灰色来显示';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,11 +39,14 @@ $string['draggableword'] = 'Eramateko testua';
 $string['dropbackground'] = 'Atzeko planoaren irudia, bertara markatzaileak eramateko';
 $string['dropzone'] = 'Eramateko tokia {$a}';
 $string['dropzoneheader'] = 'Eramateko tokiak';
+$string['formerror_disallowedtags'] = 'HTML etiketak ez daude baimenduta eramateko testuan.';
 $string['formerror_nobgimage'] = 'Irudi bat aukeratu behar duzu atzeko planoan hartu eta eramateko tokiak zehazteko.';
 $string['formerror_nofile'] = 'Fitxategi bat igo edo aukeratu behar duzu hemen erabiltzeko.';
 $string['formerror_noimageselected'] = 'Eramateko elementu bat aukeratu behar duzu aukera zuzen gisa ermateko toki honetarako.';
+$string['infinite'] = 'Mugarik gabea';
 $string['label'] = 'Testua';
 $string['nolabel'] = 'Ez dago testurik etiketan';
+$string['pleasedraganimagetoeachdropregion'] = 'Zure erantzuna osatu gabe dago; mesedez, eraman elementu bat toki bakoitzera.';
 $string['pluginname'] = 'Hartu eta eraman irudira';
 $string['pluginnameadding'] = 'Hartu eta eraman irudira motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman irudira motako galdera editatzen';

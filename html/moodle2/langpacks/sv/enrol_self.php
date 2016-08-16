@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['defaultrole_desc'] = 'Bestäm vilken roll användare som anger kursnyck
 $string['enrolenddate'] = 'Slutdatum';
 $string['enrolenddate_help'] = 'Om aktiverat, kan användare inte koppla sig till kurssidan med kursnyckeln efter det angivna datumet.';
 $string['enrolenddaterror'] = 'Datum för registrering kan inte vara senare än startdatumet.';
-$string['enrolme'] = 'Registrera mig';
+$string['enrolme'] = 'Koppla mig';
 $string['enrolperiod'] = 'Längd på period som användaren kopplas.';
 $string['enrolperiod_desc'] = 'Standard tidslängd som registreringen är giltig (i sekunder). Om satt till noll, kommer registreringens varaktighet att vara obegränsad som standard.';
 $string['enrolstartdate'] = 'Startdatum';

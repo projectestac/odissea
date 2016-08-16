@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'Blog su questo {$a->type}';
 $string['blogaboutthiscourse'] = 'Aggiungi un intervento su questo corso';
 $string['blogaboutthismodule'] = 'Aggiungi un intervento su questo {$a}';
 $string['blogadministration'] = 'Gestione blog';
-$string['blogdeleteconfirm'] = 'Eliminare questo blog?';
+$string['blogdeleteconfirm'] = 'Vuoi eliminare l\'intervento blog \'{$a}\'?';
 $string['blogdisable'] = 'I blog sono disabilitati!';
 $string['blogentries'] = 'Interventi blog';
 $string['blogentriesabout'] = 'Interventi blog su {$a}';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'I blog del corso non sono abilitati.';
 $string['courseblogs'] = 'Gli utenti possono vedere solo i blog  delle persone con le quali condividono un corso';
 $string['deleteblogassociations'] = 'Elimina associazioni blog';
 $string['deleteblogassociations_help'] = 'Consente l\'eliminazione dell\'associazione degli interventi blog da questo corso e dalle attività e risorse correlate. Gli interventi non saranno eliminati.';
+$string['deleteentry'] = 'Elimina intervento';
 $string['deleteexternalblog'] = 'Elimina la registrazione di questo blog esterno';
 $string['deleteotagswarn'] = 'Sei sicuro di rimuovere questi tag da tutti gli interventi di blog e dal sistema?';
 $string['description'] = 'Descrizione';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'ID gruppo non valida';
 $string['invalidurl'] = 'L\'URL non è raggiungibile';
 $string['linktooriginalentry'] = 'Collegamento all\'intervento originale';
 $string['maxexternalblogsperuser'] = 'Numero massimo di blog esterni per ciascun utente';
+$string['myprofileuserblogs'] = 'Visualizza tutti gli interventi blog';
 $string['name'] = 'Nome';
 $string['name_help'] = 'Inserisci un nome che descriva il tuo blog esterno. (Se non inserisci nessun nome, verrà utilizzato il titolo del blog esterno).';
 $string['noentriesyet'] = 'Non ci sono interventi visibili';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Tutte le pagine blog';
 $string['pagesize'] = 'Interventi del blog per pagina';
 $string['permalink'] = 'Permalink';
 $string['personalblogs'] = 'Gli utenti possono vedere solo i propri blog';
-$string['preferences'] = 'Preferenze';
+$string['preferences'] = 'Preferenze blog';
 $string['publishto'] = 'Pubblicazione';
 $string['publishtocourse'] = 'Utenti iscritti ai tuoi stessi corsi';
 $string['publishtocourseassoc'] = 'Membri del corso associato';
@@ -151,6 +153,7 @@ $string['searchterm'] = 'Cerca: {$a}';
 $string['settingsupdatederror'] = 'Si è verificato un errore, non è stato possibile aggiornare le preferenze del blog.';
 $string['siteblog'] = 'Blog del sito: {$a}';
 $string['siteblogdisable'] = 'I blog di sito non sono abilitati';
+$string['siteblogheading'] = 'Blog del sito';
 $string['siteblogs'] = 'Gli utenti del sito possono vedere qualsiasi intervento nei blog';
 $string['tagdatelastused'] = 'Data ultima utilizzazione tag';
 $string['tagparam'] = 'Tag: {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lti', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,15 +34,17 @@ $string['accept_grades_help'] = 'Diese Option legt fest, ob der Tool-Provider Be
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
 $string['action'] = 'Aktion';
+$string['activate'] = 'aktivieren';
 $string['active'] = 'Aktiv';
 $string['activity'] = 'Aktivität';
 $string['addnewapp'] = 'Externes Programm aktivieren';
 $string['addserver'] = 'Neuen vertrauensvollen Server hinzufügen';
-$string['addtype'] = 'Externes Tool - Konfiguration hinzufügen';
+$string['addtype'] = 'Vorkonfiguriertes Tool hinzufügen';
 $string['allow'] = 'Erlauben';
 $string['allowinstructorcustom'] = 'Trainer/innen erlauben,  Parameter anzupassen';
 $string['allowsetting'] = 'Dem Tool erlauben, Einstellungen (8 KB) in Moodle zu speichern';
 $string['always'] = 'Immer';
+$string['autoaddtype'] = 'Tool hinzufügen';
 $string['automatic'] = 'Automatisch, entsprechend der Start-URL';
 $string['baseurl'] = 'Basis URL / Tool Registrierungsname';
 $string['basiclti'] = 'Externes Tool';
@@ -61,6 +63,7 @@ $string['cannot_delete'] = 'Sie sollten diese Tool-Konfiguration nicht löschen'
 $string['cannot_edit'] = 'Sie können diese Tool-Konfiguration nicht löschen';
 $string['capabilities'] = 'Berechtigungen';
 $string['capabilities_help'] = 'Wählen Sie die Berechtigungen, die Sie dem Tool-Anbieter übergeben möchten. Sie können mehrere Optionen auswählen.';
+$string['capabilitiesrequired'] = 'Dieses Tool benötigt zur Aktivierung den Zugriff auf folgende Daten:';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Weiter</a>';
 $string['comment'] = 'Kommentar';
 $string['configpassword'] = 'Standardmäßiges Kennwort für Remote Tool';
@@ -71,9 +74,13 @@ $string['configresourceurl'] = 'Standardmäßige URL für Ressource';
 $string['configtoolurl'] = 'Standardmäßige Remote Tool URL';
 $string['configtypes'] = 'LTI Anwendungen aktivieren';
 $string['configured'] = 'Konfiguriert';
+$string['confirmtoolactivation'] = 'Möchten Sie dieses Tool wirklich aktivieren?';
+$string['courseactivitiesorresources'] = 'Kursaktivitäten oder -materialien';
 $string['courseid'] = 'Kurs ID-Nummer';
+$string['courseinformation'] = 'Kursinformation';
+$string['courselink'] = 'Zum Kurs';
 $string['coursemisconf'] = 'Kurs ist falsch konfiguriert';
-$string['course_tool_types'] = 'Kurs-Tooltypen';
+$string['course_tool_types'] = 'Kurs-Tools';
 $string['createdon'] = 'Erstellt am';
 $string['curllibrarymissing'] = 'PHP Curl Bibliothek muss zur Nutzung von LTI installiert sein';
 $string['custom'] = 'Angepasste Parameter';
@@ -96,8 +103,8 @@ $string['default_launch_container_help'] = 'Der Startcontainer beeinflusst die A
 * **Neues Fenster** - Das Tool öffnet in einem neuen Fenster und nutzt den gesamten Raum im Fenster aus. Abhängig vom Browser  wird ein neuer Tab angelegt oder ein neues Fenster geöffnet.';
 $string['delegate'] = 'An Trainer/in zuweisen';
 $string['delete'] = 'Löschen';
-$string['delete_confirmation'] = 'Möchten Sie diese Konfiguration für externe Tools wirklich löschen?';
-$string['deletetype'] = 'Konfiguration des externen Tools löschen.';
+$string['delete_confirmation'] = 'Möchten Sie dieses vorkonfigurierte Tool wirklich löschen?';
+$string['deletetype'] = 'Vorkonfiguriertes Tool löschen.';
 $string['display_description'] = 'Beschreibung bei Start anzeigen';
 $string['display_description_help'] = 'Die oben eingegebene Beschreibung wird bei Aktivierung über dem Inhalt des Tools angezeigt. Die Beschreibung kann genutzt werden, um Teilnehmern zusätzliche Hinweise zugeben. Sie ist nicht unbedingt erforderlich. Wenn die Darstellung im neuen Fenster erfolgt, kann die Beschreibung nie angezeigt werden.';
 $string['display_name'] = 'Aktivitätenname bei Start anzeigen';
@@ -107,15 +114,17 @@ $string['donot'] = 'Nicht senden';
 $string['donotaccept'] = 'Nicht akzeptieren';
 $string['donotallow'] = 'Nicht erlauben';
 $string['duplicateregurl'] = 'Diese Registrierungs-URL ist bereits benutzt';
-$string['edittype'] = '\'Externes Tool\'-Konfiguration bearbeiten';
+$string['editdescription'] = 'Tragen Sie eine Beschreibung des Tools ein.';
+$string['edittype'] = 'Vorkonfiguriertes Tool bearbeiten';
 $string['embed'] = 'Eingebettet';
 $string['embed_no_blocks'] = 'Eingebettet ohne Blöcke';
 $string['enableemailnotification'] = 'E-Mail-Mitteilungen senden';
 $string['enableemailnotification_help'] = 'Nach der Aktivierung erhalten Teilnehmende E-Mail-Benachrichtungen wenn ihre Leistungen bewertet wurden.';
+$string['enterkeyandsecret'] = 'Geben Sie Ihre Zugangskennung und den Schlüssel (secret) ein.';
 $string['errormisconfig'] = 'Das Tool wurde falsch konfiguriert. Ihr Administrator/in kann Ihnen weiter helfen.';
 $string['existing_window'] = 'Vorhandenes Fenster';
 $string['extensions'] = 'LTI Extension Service';
-$string['external_tool_type'] = 'Typ des externen Tools';
+$string['external_tool_type'] = 'Vorkonfiguriertes Tool';
 $string['external_tool_type_help'] = 'Die Hauptfunktion der Tool-Konfiguration ist die Vorbereitung einer sicheren Kommunikation mit dem Tool-Anbieter. Zusätzlich erlaubt sie Grundeinstellungen vorzunehmen und spezielle Services des Tool-Anbieters aufzurufen.
 
 * **Automatisch mit StartURL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Start-URL. Es können Tools verwandt werden, die vom Administrator vorkonfiguriert oder im Kurs angelegt wurden.
@@ -129,8 +138,9 @@ Drei Icons erscheinen in der Liste
 * **Hinzufügen** - Eine Tool-Konfiguration auf Kursebene erstellen. Alle Instanzen in diesem Kurs werden diese verwenden.
 * **Bearbeiten** - Typ aus Dropdownmneu auswählen und die Details konfigurieren.
 * **Löschen** - Ausgewählten Typ im Kurs löschen.';
-$string['external_tool_types'] = 'Typen von externen Tools';
+$string['external_tool_types'] = 'Vorkonfigurierte Tools';
 $string['failedtoconnect'] = 'Moodle konnte keine Kommunikation mit dem System \'{$a}\' aufbauen.';
+$string['failedtocreatetooltype'] = 'Fehler beim Anlegen eines neuen Tools';
 $string['filter_basiclti_configlink'] = 'Konfigurieren Sie die bevorzugten Seiten und deren Kennwörter';
 $string['filter_basiclti_password'] = 'Kennwort ist erforderlich';
 $string['filterconfig'] = 'LTI Administration';
@@ -145,7 +155,7 @@ $string['force_ssl_help'] = 'Mit dieser Funktion erzwingen Sie SSL für alle Ver
 Dies gilt auch für alle Web Service Anfrage zu dem Anbieter.
 Hierzu ist es erforderelich, dass sowohl das Moodle-System als auch der Anbieter SSL unterstützen.';
 $string['generaltool'] = 'Allgemeines Tool';
-$string['global_tool_types'] = 'Globale Tooltypen';
+$string['global_tool_types'] = 'Global vorkonfigurierte Tools';
 $string['grading'] = 'Bewertungsweiterleitung';
 $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'Die Funktion Icon URl ermöglich es, das für die Aktivität verwandte Icon auszutauschen.  An Stelle des Standard LTI Icons kann ein Icon, das zur eingebundenen Aktivität passt, gewählt werden.';
@@ -188,8 +198,10 @@ Die Tools sind in drei unterschiedliche Typen klassifiziert:
 * ** Aktiv** - Dieser Tool Anbieter wurde durch einen Administrator geprüft und konfiguriert. Er kann in jedem Kurs genutzt werden. Wenn ein Anwenderschlüssel und ein Kennwort eingegegeben wird, wird eine geschützte Verbindung zwischen Moodle und dem Tool-Anbieter aufgebaut.
 * **Abwarten** - Dieser Tool Anbieter wurde im Rahmen eines Paketimports im System hinterlegt. Er ist noch nicht von einem Administrator konfiguriert worden. Trainer können dieses Tool verwenden wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen oder dies nicht erforderlich ist.
 * **Gesperrt** - Diese Tool sind vom Administrator nicht zur systemweiten Nutzung freigegeben worden. Trainer können die Tools dennoch nutzen wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen oder dies nicht erforderlich ist.';
+$string['manage_external_tools'] = 'Tools verwalten';
 $string['manage_tool_proxies'] = 'Registrierung von externen Tools verwalten';
-$string['manage_tools'] = 'Typen von externen Tools verwalten';
+$string['manage_tools'] = 'Vorkonfigurierte Tools verwalten';
+$string['manuallyaddtype'] = 'Sie können alternativ das  <a href="{$a}">Tool manuell konfigurieren</a>.';
 $string['miscellaneous'] = 'Verschiedenes';
 $string['misconfiguredtools'] = 'Fehlerhaft konfigurierte Instanzen entdeckt';
 $string['missingparameterserror'] = 'Diese Seite ist falsch konfiguriert: \'{$a}\'';
@@ -210,6 +222,7 @@ $string['no_lti_configured'] = 'Keine aktiven externen Tools konfiguriert';
 $string['no_lti_pending'] = 'Keine anstehenden externen Tools';
 $string['no_lti_rejected'] = 'Keine zurückgewiesenen externen Tools';
 $string['noltis'] = 'Keine Instanzen mit externen Tools';
+$string['no_lti_tools'] = 'Es gibt keine vorkonfigurierten Tools.';
 $string['noprofileservice'] = 'Der Profilservice wurde nicht gefunden.';
 $string['noservers'] = 'Keine Server gefunden';
 $string['no_tp_accepted'] = 'Die Registrierungen beim externen Tool wurden nicht akzeptiert.';
@@ -281,6 +294,7 @@ Tools, die keine sichere Kommunikation von Moodle erfordern oder keine zusätzli
 $string['resourceurl'] = 'Ressource-URL';
 $string['return_to_course'] = 'Klicken Sie <a href="{$a->link}" target="_top">hier</a> um zum Kurs zurückzukommen.';
 $string['saveallfeedback'] = 'Alle Feedbacks speichern';
+$string['search:activity'] = 'Externes Tool - Aktivitätsinformation';
 $string['secure_icon_url'] = 'Sichere Icon-URL';
 $string['secure_icon_url_help'] = 'Ähnlich wie Icon URL. Die Funktion wird genutzt bei verschlüsselter Datenübertragung, um zu verhindern, dass der Nutzer einen Warnhinwies erhält, falls ein Icon unverscchlüsselt aufgerufen wird.';
 $string['secure_launch_url'] = 'Sichere Start-URL';
@@ -309,11 +323,6 @@ $string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der T
 $string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
-$string['show_in_course'] = 'Tool-Typ bei der Erstellung von Instanzen im Kurs anzeigen';
-$string['show_in_course_help'] = 'Falls ausgewählt erscheint diese Konfiguration als \'Externer Tool-Typ\' in der kursspezifischen Konfiguration und ist für Trainer sichtbar.
-In den meisten Fällen ist diese Funktion nicht erforderlich. Trainer können in der Regel über die Start URL und die pasende Basis URL das Tool ansprechen.
-
-Es wird empfohlen, diese Funktion zu verwenden, wenn die Tool-Konfiguration ein Single-Sign-On verwendet. In dem Fall würden die Nutzer nicht auf einer speziellen Seite landen, sondern eine Startseite vorfinden.';
 $string['size'] = 'Größenparameter';
 $string['submission'] = 'Leistungen';
 $string['submissions'] = 'Einträge';
@@ -324,8 +333,12 @@ $string['subplugintype_ltiservice'] = 'LTI Service';
 $string['subplugintype_ltiservice_plural'] = 'LTI Services';
 $string['subplugintype_ltisource'] = 'LTI Quelle';
 $string['subplugintype_ltisource_plural'] = 'LTI Quellen';
+$string['successfullycreatedtooltype'] = 'Neues Tool erfolgreich angelegt!';
 $string['toggle_debug_data'] = 'Debug-Modus umschalten';
 $string['tool_config_not_found'] = 'Tool-Konfiguration für diese URL nicht gefunden';
+$string['tooldescription'] = 'Tool-Beschreibung';
+$string['toolisbeingused'] = 'Dieses Tool wurde {$a} Mal verwendet.';
+$string['toolisnotbeingused'] = 'Dieses Tool wurde bisher nicht verwendet.';
 $string['toolproxy'] = 'Registrierung von externen Tools';
 $string['toolproxy_help'] = 'Administratoren können hier externe Tools registrieren, die den LTI 2.0 Standard bereitstellen. Für den Beginn ist nur eine URL des Anbieters des Tools erforderlich. Die Berechtigungen und Service-Zugänge werden dann beim Anlegen einer neuen Aktivität festgelegt.
 
@@ -339,6 +352,11 @@ $string['toolproxyregistration'] = 'Registrierung eines externen Tools';
 $string['toolregistration'] = 'Registrierung eines externen Tools';
 $string['tool_settings'] = 'Tool-Einstellungen';
 $string['toolsetup'] = 'Konfiguration externes Tool';
+$string['tooltypeadded'] = 'Vorkonfiguriertes Tool hinzugefügt';
+$string['tooltypedeleted'] = 'Vorkonfiguriertes Tool gelöscht';
+$string['tooltypenotdeleted'] = 'Das vorkonfigurierte Tool kann nicht gelöscht werden.';
+$string['tooltypes'] = 'Tools';
+$string['tooltypeupdated'] = 'Vorkonfiguriertes Tool aktualisiert';
 $string['toolurl'] = 'Basis-URL des Tools';
 $string['toolurl_help'] = 'Die Basis-URL des Tools wird verwendet um die Start URLs mit der korrekten Konfiguration zu verknüpfen. Die Verwendung von http(s) am Beginn ist optional.
 
@@ -364,10 +382,16 @@ Die Basis-URL von *quiz.tool.com* hingegen passt für folgendes:
 * quiz.tool.com/take.php?id=20
 
 Wenn es zwei unterschiedliche Tool-Konfigurationen für die gleiche Domain gibt, wird diespezifischere verwandt..';
+$string['toolurlplaceholder'] = 'Tool-URL...';
 $string['typename'] = 'Name des Tools';
 $string['typename_help'] = 'Die Toolbezeichnung wird genutzt, um den Toolanbieter in Moodle zu identifizieren. Die Bezeichnung wird Trainer/innen gezeigt, wenn sie das Tool in ihren Kursen einbinden.';
 $string['types'] = 'Typen';
+$string['unabletocreatetooltype'] = 'Das Tool kann nicht angelegt werden.';
+$string['unabletofindtooltype'] = 'Das Tool für {$a->id} kann nicht gefunden werden.';
+$string['unknownstate'] = 'Unbekannter Status';
 $string['update'] = 'Update';
+$string['useraccountinformation'] = 'Angaben zum Nutzerkonto';
+$string['userpersonalinformation'] = 'Persönliche Angaben';
 $string['using_tool_configuration'] = 'Tool-Konfiguration verwenden:';
 $string['validurl'] = 'Eine gültige URL muss mit http(s):// beginnen';
 $string['viewsubmissions'] = 'Leistungen und Bewertungsbildschirm anzeigen';

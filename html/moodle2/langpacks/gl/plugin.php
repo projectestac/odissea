@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'plugin', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,12 +38,8 @@ $string['err_response_format_version'] = 'Formato de resposta con versión non a
 $string['err_response_http_code'] = 'Non foi posíbel obter as actualizacións dispoñíbeis - código de resposta HTTP non agardado.';
 $string['filterall'] = 'Amosar todo';
 $string['filtercontribonly'] = 'Amosar só os engadidos adicionais';
-$string['filtercontribonlyactive'] = 'Amosando só os engadidos adicionais';
 $string['filterupdatesonly'] = 'Amosar só os actualizábeis';
-$string['filterupdatesonlyactive'] = 'Amosando só os actualizábeis';
 $string['moodleversion'] = 'Moodle {$a}';
-$string['nonehighlighted'] = 'Ningún engadido require a súa atención agora';
-$string['nonehighlightedinfo'] = 'Presentar a lista de todos os engadidos instalados de calquera forma';
 $string['noneinstalled'] = 'Ningún engadido deste tipo está instalado';
 $string['notdownloadable'] = 'Non é posíbel descargar o paquete';
 $string['notdownloadable_help'] = 'Non foi posíbel descargar automaticamente o paquete ZIP coa actualización. Vexa a páxina de documentación para obter máis axuda.';
@@ -53,11 +49,6 @@ $string['notwritable'] = 'Os ficheiros de engadidos non son escribíbeis';
 $string['notwritable_help'] = 'Vostede activou o despregue de actualizacións automáticas e hai unha actualización dispoñíbel para este engadido. Porén, os ficheiros do engadido non son escribíbeis para o servidor web, polo que, polo momento, non foi posíbel instalar automaticamente a actualización.
 
 Faga que o cartafol do engadido e todos os seus contidos sexan escribíbeis para poder instalar automaticamente a actualización dispoñíbel.';
-$string['notwritable_link'] = 'admin/mdeploy/notwritable';
-$string['numdisabled'] = 'Desactivado: {$a}';
-$string['numextension'] = 'Colaboracións: {$a}';
-$string['numtotal'] = 'Instalado: {$a}';
-$string['numupdatable'] = 'Actualizacións dispoñíbeis: {$a}';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
 $string['pluginchecknotice'] = 'Esta páxina presenta os engadidos que poden requirir a súa atención durante a actualización. Os elementos resaltados inclúen novos engadidos que están a pique de seren instalados, os que van ser actualizados e os engadidos anteriores que agora faltan. Os engadidos adicionais tamén se destacan se existe unha actualización para eles. Recomendase que comprobe se existen versións máis recentes dos engadidos e que lles actualice o seu código fonte antes de continuar con esta actualización de Moodle.';
@@ -70,10 +61,6 @@ $string['requiredby'] = 'Requirido por: {$a}';
 $string['requires'] = 'Require';
 $string['rootdir'] = 'Directorio';
 $string['settings'] = 'Axustes';
-$string['showall'] = 'Recargar e amosar todos os engadidos';
-$string['somehighlighted'] = 'Número de engadidos que requiren a súa atención: {$a}';
-$string['somehighlightedinfo'] = 'Presentar a lista completa dos engadidos instalados';
-$string['somehighlightedonly'] = 'Presentar só os engadidos que requiren a súa atención';
 $string['source'] = 'Orixe';
 $string['sourceext'] = 'Adicional';
 $string['sourcestd'] = 'Estándar';

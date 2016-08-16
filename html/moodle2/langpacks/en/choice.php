@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'choice', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,11 @@ $string['answered'] = 'Answered';
 $string['atleastoneoption'] = 'You need to provide at least one possible answer.';
 $string['cannotsubmit'] = 'Sorry, there was a problem submitting your choice. Please try again.';
 $string['choice'] = 'Choice';
+$string['choiceactivityname'] = 'Choice: {$a}';
 $string['choice:addinstance'] = 'Add a new choice';
 $string['choice:choose'] = 'Record a choice';
 $string['choiceclose'] = 'Until';
+$string['choicecloseson'] = 'Choice closes on {$a}';
 $string['choice:deleteresponses'] = 'Delete responses';
 $string['choice:downloadresponses'] = 'Download responses';
 $string['choicefull'] = 'This choice is full and there are no available places.';
@@ -48,17 +50,21 @@ $string['choice:readresponses'] = 'View responses';
 $string['choicesaved'] = 'Your choice has been saved';
 $string['choicetext'] = 'Choice text';
 $string['chooseaction'] = 'Choose an action ...';
+$string['closebeforeopen'] = 'You have specified a close date before the open date.';
 $string['completionsubmit'] = 'Show as complete when user makes a choice';
 $string['description'] = 'Description';
 $string['displayhorizontal'] = 'Display horizontally';
 $string['displaymode'] = 'Display mode for the options';
 $string['displayvertical'] = 'Display vertically';
 $string['eventanswercreated'] = 'Choice made';
+$string['eventanswerdeleted'] = 'Choice answer deleted';
 $string['eventanswerupdated'] = 'Choice updated';
+$string['eventreportdownloaded'] = 'Choice report downloaded';
 $string['eventreportviewed'] = 'Choice report viewed';
 $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
 $string['full'] = '(Full)';
 $string['havetologin'] = 'You have to log in before you can submit your choice';
+$string['includeinactive'] = 'Include responses from inactive/suspended users';
 $string['limit'] = 'Limit';
 $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.
@@ -85,14 +91,15 @@ $string['noresultsviewable'] = 'The results are not currently viewable.';
 $string['notanswered'] = 'Not answered yet';
 $string['notenrolledchoose'] = 'Sorry, only enrolled users are allowed to make choices.';
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
-$string['numberofuser'] = 'Number of participants';
-$string['numberofuserinpercentage'] = 'Percentage of participants';
+$string['numberofuser'] = 'Number of responses';
+$string['numberofuserinpercentage'] = 'Percentage of responses';
 $string['option'] = 'Option';
 $string['optionno'] = 'Option {no}';
 $string['options'] = 'Options';
 $string['page-mod-choice-x'] = 'Any choice module page';
 $string['pluginadministration'] = 'Choice administration';
 $string['pluginname'] = 'Choice';
+$string['previewonly'] = 'This is just a preview of the available options for this activity. You will not be able to submit your choice until {$a}.';
 $string['privacy'] = 'Privacy of results';
 $string['publish'] = 'Publish results';
 $string['publishafteranswer'] = 'Show results to students after they answer';
@@ -108,6 +115,9 @@ $string['responsesresultgraphheader'] = 'Graph display';
 $string['responsesto'] = 'Responses to {$a}';
 $string['results'] = 'Results';
 $string['savemychoice'] = 'Save my choice';
+$string['search:activity'] = 'Choice - activity information';
+$string['showpreview'] = 'Show preview';
+$string['showpreview_help'] = 'Allow students to preview the available options before the choice is opened for submission.';
 $string['showunanswered'] = 'Show column for unanswered';
 $string['skipresultgraph'] = 'Skip result graph';
 $string['spaceleft'] = 'space available';

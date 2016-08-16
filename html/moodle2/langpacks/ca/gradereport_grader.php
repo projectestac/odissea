@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_grader', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,9 @@ $string['ajaxfieldchanged'] = 'El camp que esteu editant ha estat modificat, el 
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe del qualificador';
 $string['grader:manage'] = 'Gestionar l\'informe del qualificador';
 $string['grader:view'] = 'Veure l\'informe del qualificador';
-$string['pluginname'] = 'Qualificador';
+$string['overriddengrade'] = 'Qualificació rectificada';
+$string['pluginname'] = 'Informe del qualificador';
 $string['preferences'] = 'Preferències de l\'informe de qualificacions';
+$string['summarygrader'] = 'Una taula amb els noms dels estudiants a la primera columna, amb activitats avaluables agrupades per curs i categoria a la part superior.';
 $string['useractivityfeedback'] = 'retroacció {$a}';
 $string['useractivitygrade'] = 'qualificació {$a}';

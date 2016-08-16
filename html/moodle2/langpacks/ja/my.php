@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,14 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'ページを追加する';
+$string['alldashboardswerereset'] = 'すべてのダッシュボードページがデフォルトにリセットされました。';
+$string['allprofileswerereset'] = 'すべてのプロファイルページがデフォルトにリセットされました。';
 $string['defaultpage'] = 'デフォルトマイMoodleページ';
 $string['defaultprofilepage'] = 'デフォルトプロファイルページ';
 $string['delpage'] = 'ページを削除する';
 $string['managepages'] = 'ページを管理する';
-$string['mymoodle'] = 'マイホーム';
+$string['mymoodle'] = 'ダッシュボード';
 $string['nocourses'] = '表示するコース情報はありません。';
-$string['noguest'] = 'ゲストユーザは「マイホーム」ページを利用できません。';
+$string['noguest'] = 'ゲストユーザはダッシュボードページを利用できません。';
 $string['pinblocks'] = 'マイMoodleの固定ブロックを設定する';
 $string['pinblocksexplan'] = 'あなたがここで設定したブロックはすべてのMoodleユーザの「マイMoodle」概要ページに表示 (編集不可) されます。';
 $string['reseterror'] = 'あなたのページのリセット中にエラーが発生しました。';
+$string['reseteveryonesdashboard'] = 'すべてのユーザのダッシュボードをリセットする';
+$string['reseteveryonesprofile'] = 'すべてのユーザのプロファイルをリセットする';
 $string['resetpage'] = 'ページをデフォルトにリセットする';

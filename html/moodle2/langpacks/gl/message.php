@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,7 @@ $string['emptysearchstring'] = 'Debe buscar algo';
 $string['enabled'] = 'Activado';
 $string['errorcallingprocessor'] = 'Produciuse un erro ao chamar á saída definida';
 $string['errortranslatingdefault'] = 'Produciuse un erro ao traducir o axuste predeterminado fornecido polo engadido, usando os valores predeterminados do sistema no seu canto.';
+$string['errorwhilesendingmessage'] = 'Produciuse un erro ao enviar a mensaxe; ténteo de novo máis adiante.';
 $string['eventmessagecontactadded'] = 'Contacto de mensaxe engadido';
 $string['eventmessagecontactblocked'] = 'Contacto de mensaxe bloqueado';
 $string['eventmessagecontactremoved'] = 'Contacto de mensaxe retirado';
@@ -86,6 +87,8 @@ $string['messagehistoryfull'] = 'Todas as mensaxes';
 $string['messagenavigation'] = 'Navegación entre mensaxes:';
 $string['messageoutputs'] = 'Mensaxes saíntes';
 $string['messages'] = 'Mensaxes';
+$string['messagesent'] = 'Mensaxe enviada';
+$string['messagetosend'] = 'Mensaxes para enviar';
 $string['messaging'] = 'Mensaxería';
 $string['messagingblockednoncontact'] = '{$a} non poderá responder xa que vostede bloqueou aos usuarios que non están na  lista de contactos';
 $string['messagingdisabled'] = 'A mensaxería está desactivada neste sitio, enviaránselle correos no seu canto';
@@ -126,6 +129,7 @@ $string['search'] = 'Buscar';
 $string['searchcombined'] = 'Buscar persoas e mensaxes';
 $string['searchforperson'] = 'Buscar unha persoa';
 $string['searchmessages'] = 'Buscar mensaxes';
+$string['sendingmessage'] = 'Enviando a mensaxe';
 $string['sendingvia'] = 'Enviando «{$a->provider}» mediante «{$a->processor}»';
 $string['sendingviawhen'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» cando {$a->state}';
 $string['sendmessage'] = 'Enviar mensaxe';
@@ -146,3 +150,4 @@ $string['unreadnewmessages'] = '({$a}) novas mensaxes';
 $string['userisblockingyou'] = 'Este usuario bloqueouno e non pode enviarlle mensaxjes';
 $string['userisblockingyounoncontact'] = '{$a} só acepta mensaxes dos seus contactos.';
 $string['userssearchresults'] = 'Atopados {$a} usuarios';
+$string['viewconversation'] = 'Ver a conversa';

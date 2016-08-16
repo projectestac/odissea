@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'feedback', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ $string['autonumbering_help'] = 'Activa o desactiva la numeración automática p
 $string['average'] = 'Promedio';
 $string['bold'] = 'Negrita';
 $string['cancel_moving'] = 'Cancelar movimiento';
+$string['cannotaccess'] = 'Sólo puedes acceder a este feedback desde un curso';
 $string['cannotmapfeedback'] = 'Problema con la base de datos, imposible asignar encuesta al curso';
 $string['cannotsavetempl'] = 'no se permite guardar plantillas';
 $string['cannotunmap'] = 'Problema con la base de datos, imposible desasignar';

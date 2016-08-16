@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'notes', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['eventnoteupdated'] = 'Actualizouse a nota';
 $string['groupaddnewnote'] = 'Engadir unha nota comun';
 $string['invalidid'] = 'Especificouse un ID de nota incorrecto';
 $string['invaliduserid'] = 'ID de usuario incorrecto: {$a}';
+$string['myprofileownnotes'] = 'As miñas notas';
 $string['nocontent'] = 'O contido da nota non pode estar baleiro';
 $string['nonotes'] = 'Aínda non hai notas deste tipo';
 $string['nopermissiontodelete'] = 'Non pode eliminar esta nota';

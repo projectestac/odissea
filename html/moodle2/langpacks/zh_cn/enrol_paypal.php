@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_paypal', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['enrolperiod_desc'] = '缺省的保持选课有效的时间长度（单�
 $string['enrolperiod_help'] = '用户身份有效期长度，从用户自行加入课程之日算起。禁止此选项意味着用户身份永久有效。';
 $string['enrolstartdate'] = '起始日期';
 $string['enrolstartdate_help'] = '如果启用，用户只能在此日期之后撤销选课。';
+$string['expiredaction'] = '选课截止指令';
+$string['expiredaction_help'] = '选择当用户选课截止之后要执行的操作。注意，当课程结束之后，某些用户资料和设置会被清除。';
 $string['mailadmins'] = '通知管理员';
 $string['mailstudents'] = '通知学生';
 $string['mailteachers'] = '通知老师';

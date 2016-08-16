@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth_cas', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,15 @@ $string['auth_cas_certificate_path_key'] = '証明書パス';
 $string['auth_cas_changepasswordurl'] = 'パスワード変更URL';
 $string['auth_cas_create_user'] = 'MoodleデータベースにCAS認証済みユーザを追加したい場合、この設定を有効にしてください。この設定を有効にしない場合、Moodleデータベースに登録されているユーザのみログインできます。';
 $string['auth_cas_create_user_key'] = 'ユーザを作成する';
+$string['auth_cas_curl_ssl_version'] = '使用するSSLバージョン (2または3) です。デフォルトではPHP自体が決定しますが、手動で設定する必要がある場合もあります。';
+$string['auth_cas_curl_ssl_version_default'] = 'デフォルト';
+$string['auth_cas_curl_ssl_version_key'] = 'cURL SSLバージョン';
+$string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
+$string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
+$string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
+$string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
+$string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
+$string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_casdescription'] = 'この認証方法では単一ログイン環境 (Single Sign On environment: SSO) にCASサーバ (Central Authentication Service) をユーザ認証に使用します。シンプルLDAP認証を使用することもできます。ユーザ名およびパスワードがCASで認証された場合、Moodleは新しいユーザエントリをデータベースに作成します。また、必要であればLDAPよりユーザ属性を取得します。次回からはユーザ名およびパスワードのみ確認されます。';
 $string['auth_cas_enabled'] = 'CAS認証を使用したい場合、この設定を有効にしてください。';
 $string['auth_cas_hostname'] = 'CASサーバのホスト名<br />例: host.domaine.fr';
@@ -67,3 +76,4 @@ $string['auth_cas_version'] = '使用するCASプロトコルバージョン';
 $string['CASform'] = '認証選択';
 $string['noldapserver'] = 'CAS用にLDAPサーバが設定されていません! 同期は無効にされました。';
 $string['pluginname'] = 'CASサーバ (SSO)';
+$string['synctask'] = 'CASユーザ同期ジョブ';

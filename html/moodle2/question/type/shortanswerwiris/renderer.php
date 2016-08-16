@@ -15,36 +15,27 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer{
         
         $inputname = $qa->get_qt_field_name('answer');        
 
+        $inputattributes = array(
+            'type' => 'text',
+            'name' => $inputname,
+            'value' => $currentanswer,
+            'id' => $inputname,
+            'size' => 80,
+            'style' => 'display:none;',
+            'class' => 'wirisanswerfield',
+        );
         if ($options->readonly) {
             $inputattributes['readonly'] = 'readonly';
         }
-
+		
         $feedbackimg = '';
+		
         if ($options->correctness) {
-            list($fraction, $state) = $question->grade_response(array('answer' => $currentanswer));
-            $inputattributes['class'] .= ' ' . $this->feedback_class($fraction);
+            $answer = $question->get_matching_answer(array('answer' => $currentanswer));
+            $fraction = $answer ? $answer->fraction : 0;
+            $inputattributes['class'] .= ' wirisembeddedfeedback ' . $this->feedback_class($fraction);
             // Feedback image delegate to wirisembeddedfeedback class.
-            //$feedbackimg = $this->feedback_image($fraction);
-            // Embeddedfeedback
-            $inputattributes = array(
-                'type' => 'text',
-                'name' => $inputname,
-                'value' => $currentanswer,
-                'id' => $inputname,
-                'size' => 80,
-                'class' => 'wirisanswerfield wirisembeddedfeedback',
-                'style' => 'display:none;',
-            );
-        } else {
-            $inputattributes = array(
-                'type' => 'text',
-                'name' => $inputname,
-                'value' => $currentanswer,
-                'id' => $inputname,
-                'size' => 80,
-                'class' => 'wirisanswerfield',
-                'style' => 'display:none;',
-            );
+            // $feedbackimg = $this->feedback_image($fraction);
         }
 
         $questiontext = $question->format_questiontext($qa);
@@ -82,6 +73,9 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer{
         }
         $text = get_string('correctansweris', 'qtype_shortanswer', $answer['answer']);
         return $question->format_text($text, FORMAT_HTML, $qa, 'question', 'correctanswer', $question->id);
-    }    
-    
+    }
+
+	public function feedback_class($fraction) {
+		return 'wiris' . parent::feedback_class($fraction);
+	}
 }

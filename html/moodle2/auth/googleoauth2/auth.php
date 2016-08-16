@@ -1,4 +1,18 @@
 <?php
+// This file is part of Oauth2 authentication plugin for Moodle.
+//
+// Oauth2 authentication plugin for Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Oauth2 authentication plugin for Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Oauth2 authentication plugin for Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
  * @author Jerome Mouneyrac
@@ -12,10 +26,12 @@
  */
 
 if (!defined('MOODLE_INTERNAL')) {
-    die('Direct access to this script is forbidden.');    ///  It must be included from a Moodle page
+    die('Direct access to this script is forbidden.');    // It must be included from a Moodle page.
 }
 
-require_once($CFG->libdir.'/authlib.php');
+require_once($CFG->libdir . '/authlib.php');
+require_once($CFG->dirroot . '/auth/googleoauth2/vendor/autoload.php');
+require_once($CFG->dirroot . '/auth/googleoauth2/lib.php');
 
 /**
  * Google/Facebook/Messenger Oauth2 authentication plugin.
@@ -25,7 +41,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
     /**
      * Constructor.
      */
-    function auth_plugin_googleoauth2() {
+    public function __construct() {
         $this->authtype = 'googleoauth2';
         $this->roleauth = 'auth_googleoauth2';
         $this->errorlogtag = '[AUTH GOOGLEOAUTH2] ';
@@ -36,7 +52,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      * Prevent authenticate_user_login() to update the password in the DB
      * @return boolean
      */
-    function prevent_local_passwords() {
+    public function prevent_local_passwords() {
         return true;
     }
 
@@ -47,17 +63,17 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      * @param string $password The password (with system magic quotes)
      * @return bool Authentication success or failure.
      */
-    function user_login($username, $password) {
+    public function user_login($username, $password) {
         global $DB, $CFG;
 
-        //retrieve the user matching username
+        // Retrieve the user matching username.
         $user = $DB->get_record('user', array('username' => $username,
             'mnethostid' => $CFG->mnet_localhost_id));
 
-        //username must exist and have the right authentication method
+        // Username must exist and have the right authentication method.
         if (!empty($user) && ($user->auth == 'googleoauth2')) {
             $code = optional_param('code', false, PARAM_TEXT);
-            if(empty($code)){
+            if (empty($code)) {
                 return false;
             }
             return true;
@@ -71,7 +87,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      *
      * @return bool
      */
-    function is_internal() {
+    public function is_internal() {
         return false;
     }
 
@@ -81,7 +97,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      *
      * @return bool
      */
-    function can_change_password() {
+    public function can_change_password() {
         return false;
     }
 
@@ -89,191 +105,105 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      * Authentication hook - is called every time user hit the login page
      * The code is run only if the param code is mentionned.
      */
-    function loginpage_hook() {
+    public function loginpage_hook() {
         global $USER, $SESSION, $CFG, $DB;
 
-        //check the Google authorization code
+        // Check the Google authorization code.
         $authorizationcode = optional_param('code', '', PARAM_TEXT);
         if (!empty($authorizationcode)) {
 
             $authprovider = required_param('authprovider', PARAM_ALPHANUMEXT);
+            require_once($CFG->dirroot . '/auth/googleoauth2/classes/provider/'.$authprovider.'.php');
+            $providerclassname = 'provideroauth2' . $authprovider;
+            $provider = new $providerclassname();
 
-            //set the params specific to the authentication provider
-            $params = array();
+            // Try to get an access token (using the authorization code grant).
+            $token = $provider->getAccessToken('authorization_code', [
+                'code' => $authorizationcode
+            ]);
 
-            switch ($authprovider) {
-                case 'google':
-                    $params['client_id'] = get_config('auth/googleoauth2', 'googleclientid');
-                    $params['client_secret'] = get_config('auth/googleoauth2', 'googleclientsecret');
-                    $requestaccesstokenurl = 'https://accounts.google.com/o/oauth2/token';
-                    $params['grant_type'] = 'authorization_code';
-                    $params['redirect_uri'] = $CFG->wwwroot . '/auth/googleoauth2/google_redirect.php';
-                    $params['code'] = $authorizationcode;
-                    break;
-                case 'facebook':
-                    $params['client_id'] = get_config('auth/googleoauth2', 'facebookclientid');
-                    $params['client_secret'] = get_config('auth/googleoauth2', 'facebookclientsecret');
-                    $requestaccesstokenurl = 'https://graph.facebook.com/oauth/access_token';
-                    $params['redirect_uri'] = $CFG->wwwroot . '/auth/googleoauth2/facebook_redirect.php';
-                    $params['code'] = $authorizationcode;
-                    break;
-                case 'messenger':
-                    $params['client_id'] = get_config('auth/googleoauth2', 'messengerclientid');
-                    $params['client_secret'] = get_config('auth/googleoauth2', 'messengerclientsecret');
-                    $requestaccesstokenurl = 'https://oauth.live.com/token';
-                    $params['redirect_uri'] = $CFG->wwwroot . '/auth/googleoauth2/messenger_redirect.php';
-                    $params['code'] = $authorizationcode;
-                    $params['grant_type'] = 'authorization_code';
-                    break;
-                case 'github':
-                    $params['client_id'] = get_config('auth/googleoauth2', 'githubclientid');
-                    $params['client_secret'] = get_config('auth/googleoauth2', 'githubclientsecret');
-                    $requestaccesstokenurl = 'https://github.com/login/oauth/access_token';
-                    $params['redirect_uri'] = $CFG->wwwroot . '/auth/googleoauth2/github_redirect.php';
-                    $params['code'] = $authorizationcode;
-                    break;
-                case 'linkedin':
-                    $params['grant_type'] = 'authorization_code';
-                    $params['code'] = $authorizationcode;
-                    $params['redirect_uri'] = $CFG->wwwroot . '/auth/googleoauth2/linkedin_redirect.php';
-                    $params['client_id'] = get_config('auth/googleoauth2', 'linkedinclientid');
-                    $params['client_secret'] = get_config('auth/googleoauth2', 'linkedinclientsecret');
-                    $requestaccesstokenurl = 'https://www.linkedin.com/uas/oauth2/accessToken';
-                    break;
-                default:
-                    throw new moodle_exception('unknown_oauth2_provider');
-                    break;
-            }
+            $accesstoken = $token->accessToken;
+            $refreshtoken = $token->refreshToken;
+            $tokenexpires = $token->expires;
 
-            //request by curl an access token and refresh token
-            require_once($CFG->libdir . '/filelib.php');
-            $curl = new curl();
-            if ($authprovider == 'messenger') { //Windows Live returns an "Object moved" error with curl->post() encoding
-                $postreturnvalues = $curl->get('https://oauth.live.com/token?client_id=' . urlencode($params['client_id']) . '&redirect_uri=' . urlencode($params['redirect_uri'] ). '&client_secret=' . urlencode($params['client_secret']) . '&code=' .urlencode( $params['code']) . '&grant_type=authorization_code');
-            } else if ($authprovider == 'linkedin') {
-                $postreturnvalues = $curl->get($requestaccesstokenurl . '?client_id=' . urlencode($params['client_id']) . '&redirect_uri=' . urlencode($params['redirect_uri'] ). '&client_secret=' . urlencode($params['client_secret']) . '&code=' .urlencode( $params['code']) . '&grant_type=authorization_code');
-            } else {
-                $postreturnvalues = $curl->post($requestaccesstokenurl, $params);
-            }
-
-            switch ($authprovider) {
-                case 'google':
-                case 'linkedin':
-                    $postreturnvalues = json_decode($postreturnvalues);
-                    $accesstoken = $postreturnvalues->access_token;
-                    //$refreshtoken = $postreturnvalues->refresh_token;
-                    //$expiresin = $postreturnvalues->expires_in;
-                    //$tokentype = $postreturnvalues->token_type;
-                    break;
-                case 'facebook':
-                case 'github':
-                    parse_str($postreturnvalues, $returnvalues);
-                    $accesstoken = $returnvalues['access_token'];
-                    break;
-                case 'messenger':
-                    $accesstoken = json_decode($postreturnvalues)->access_token;
-                    break;
-                default:
-                    break;
-            }
-
-            //with access token request by curl the email address
+            // With access token request by curl the email address.
             if (!empty($accesstoken)) {
 
-                //get the username matching the email
-                switch ($authprovider) {
-                    case 'google':
-                        $params = array();
-                        $params['access_token'] = $accesstoken;
-                        $params['alt'] = 'json';
-                        $postreturnvalues = $curl->get('https://www.googleapis.com/plus/v1/people/me', $params);
-                        $postreturnvalues = json_decode($postreturnvalues);
-                        foreach($postreturnvalues->emails as $googleemail) {
-                            if($googleemail->type == "account") {
-                                $useremail = $googleemail->value;
+                $useremail = '';
+
+                try {
+                    // We got an access token, let's now get the user's details.
+                    $userdetails = $provider->getUserDetails($token);
+
+                    // Use these details to create a new profile.
+                    switch ($authprovider) {
+                        case 'battlenet':
+                            // Battlenet as no email notion.
+                            // TODO: need to check the idp table for matching user and request user to add his email.
+                            // TODO: It will be similar logic for twitter.
+                            $useremail = $userdetails->id . '@fakebattle.net';
+                            break;
+                        case 'github':
+                            $useremails = $provider->getUserEmails($token);
+                            // Going to try to find someone with a similar email using googleoauth2 auth.
+                            $fallbackuseremail = '';
+                            foreach ($useremails as $githubuseremail) {
+                                if ($githubuseremail->verified) {
+                                    if ($DB->record_exists('user',
+                                        array('auth' => 'googleoauth2', 'email' => $githubuseremail->email))) {
+                                        $useremail = $githubuseremail->email;
+                                    }
+                                    $fallbackuseremail = $githubuseremail->email;
+                                }
                             }
-                        }
-                        $useremail = $postreturnvalues->emails[0]->value;
-                        // All emails are verified: https://developers.google.com/+/api/latest/people.
-                        $verified = 1;
-                        break;
-
-                    case 'facebook':
-                        $params = array();
-                        $params['access_token'] = $accesstoken;
-                        $postreturnvalues = $curl->get('https://graph.facebook.com/me', $params);
-                        $facebookuser = json_decode($postreturnvalues);
-                        $useremail = $facebookuser->email;
-                        $verified = $facebookuser->verified;
-                        break;
-
-                    case 'messenger':
-                        $params = array();
-                        $params['access_token'] = $accesstoken;
-                        $postreturnvalues = $curl->get('https://apis.live.net/v5.0/me', $params);
-                        $messengeruser = json_decode($postreturnvalues);
-                        $useremail = $messengeruser->emails->preferred;
-                        $verified = 1; //not super good but there are no way to check it yet:
-                                       //http://social.msdn.microsoft.com/Forums/en-US/messengerconnect/thread/515d546d-1155-4775-95d8-89dadc5ee929
-                        break;
-
-                    case 'github':
-                        $params = array();
-                        $params['access_token'] = $accesstoken;
-                        $postreturnvalues = $curl->get('https://api.github.com/user', $params);
-                        $githubuser = json_decode($postreturnvalues);
-                        // Use the final version of the API v3.
-                        // Recommendation on https://developer.github.com/v3/media/
-                        // See https://developer.github.com/v3/versions/#v3
-                        $curl->setHeader('Accept: application/vnd.github.v3+json');
-                        $useremails = json_decode($curl->get('https://api.github.com/user/emails', $params));
-                        $useremail = '';
-                        $verified = 0;
-                        // get first valid email
-                        foreach ($useremails as $email) {
-                            if ($email->verified && $email->email == clean_param($email->email, PARAM_EMAIL)) {
-                                $useremail = $email->email;
-                                $verified = (int) $email->verified;
-                                break;
+                            // If we didn't find anyone then we take a verified email address.
+                            if (empty($useremail)) {
+                                $useremail = $fallbackuseremail;
                             }
-                        }
-                        break;
+                            break;
+                        case 'vk':
+                            // VK doesn't return the email address?
+                            if ($userdetails->uid) {
+                                $useremail = 'id'.$userdetails->uid.'@vkmessenger.com';
+                            };
+                            break;
+                        default:
+                            $useremail = $userdetails->email;
+                            break;
+                    }
 
-                    case 'linkedin':
-                        $params = array();
-                        $params['format'] = 'json';
-                        $params['oauth2_access_token'] = $accesstoken;
-                        $postreturnvalues = $curl->get('https://api.linkedin.com/v1/people/~:(first-name,last-name,email-address,location:(name,country:(code)))', $params);
-                        $linkedinuser = json_decode($postreturnvalues);
-                        $useremail = $linkedinuser->emailAddress;
-                        $verified = 1;
-                        break;
-
-                    default:
-                        break;
+                    $verified = 1;
+                } catch (Exception $e) {
+                    // Failed to get user details.
+                    throw new moodle_exception('faileduserdetails', 'auth_googleoauth2');
                 }
 
-                //throw an error if the email address is not verified
+                // Throw an error if the email address is not verified.
                 if (!$verified) {
                     throw new moodle_exception('emailaddressmustbeverified', 'auth_googleoauth2');
                 }
 
-                // Prohibit login if email belongs to the prohibited domain
+                // Prohibit login if email belongs to the prohibited domain.
                 if ($err = email_is_not_allowed($useremail)) {
-                   throw new moodle_exception($err, 'auth_googleoauth2');
+                    throw new moodle_exception($err, 'auth_googleoauth2');
                 }
 
-                //if email not existing in user database then create a new username (userX).
-                if (empty($useremail) or $useremail != clean_param($useremail, PARAM_EMAIL)) {
-                    throw new moodle_exception('couldnotgetuseremail');
-                    //TODO: display a link for people to retry
+                // If email not existing in user database then create a new username (userX).
+                if (empty($useremail) || $useremail != clean_param($useremail, PARAM_EMAIL)) {
+                    throw new moodle_exception('couldnotgetuseremail', 'auth_googleoauth2');
+                    // TODO: display a link for people to retry.
                 }
-                //get the user - don't bother with auth = googleoauth2 because
-                //authenticate_user_login() will fail it if it's not 'googleoauth2'
-                $user = $DB->get_record('user', array('email' => $useremail, 'deleted' => 0, 'mnethostid' => $CFG->mnet_localhost_id));
+                // Get the user.
+                // Don't bother with auth = googleoauth2 because authenticate_user_login() will fail it if it's not 'googleoauth2'.
+                $user = $DB->get_record('user',
+                    array('email' => $useremail, 'deleted' => 0, 'mnethostid' => $CFG->mnet_localhost_id));
 
-                //create the user if it doesn't exist
+                // Create the user if it doesn't exist.
                 if (empty($user)) {
+                    // Deny login if setting "Prevent account creation when authenticating" is on.
+                    if ($CFG->authpreventaccountcreation) {
+                        throw new moodle_exception("noaccountyet", "auth_googleoauth2");
+                    }
 
                     //XTEC ************ AFEGIT - To restrict domain
                     //2014.09.16 @pferre22
@@ -282,11 +212,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                     }
                     //************* FI
 
-                    // deny login if setting "Prevent account creation when authenticating" is on
-                    if($CFG->authpreventaccountcreation) throw new moodle_exception("noaccountyet", "auth_googleoauth2");
-
-
-                    //get following incremented username
+                    // Get following incremented username.
                     $googleuserprefix = core_text::strtolower(get_config('auth/googleoauth2', 'googleuserprefix'));
                     //XTEC ************ MODIFICAT - Add username detection
                     //2014.09.26 @pferre22
@@ -307,8 +233,8 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                     // ORIGINAL
                     /*
                     $lastusernumber = get_config('auth/googleoauth2', 'lastusernumber');
-                    $lastusernumber = empty($lastusernumber)? 1 : $lastusernumber++;
-                    //check the user doesn't exist
+                    $lastusernumber = empty($lastusernumber) ? 1 : $lastusernumber + 1;
+                    // Check the user doesn't exist.
                     $nextuser = $DB->record_exists('user', array('username' => $googleuserprefix.$lastusernumber));
                     while ($nextuser) {
                         $lastusernumber++;
@@ -319,70 +245,34 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                     */
                     ////************ FI
 
-                    //retrieve more information from the provider
+                    // Retrieve more information from the provider.
                     $newuser = new stdClass();
                     $newuser->email = $useremail;
+
                     switch ($authprovider) {
-                        case 'google':
-                            $params = array();
-                            $params['access_token'] = $accesstoken;
-                            $params['alt'] = 'json';
-                            $userinfo = $curl->get('https://www.googleapis.com/plus/v1/people/me', $params);
-                            $userinfo = json_decode($userinfo);
-                            $newuser->auth = 'googleoauth2';
-                            if (!empty($userinfo->name->givenName)) {
-                                //XTEC ************ MODIFICAT - Convert names to Title
-                                //2014.09.19 @pferre22
-                                $newuser->firstname = core_text::strtotitle($userinfo->name->givenName);
-                                // ORIGINAL
-                                //$newuser->firstname = $userinfo->name->givenName;
-                                //************ FI
-                            }
-                            if (!empty($userinfo->name->familyName)) {
-                                //XTEC ************ MODIFICAT - Convert names to Title
-                                //2014.09.19 @pferre22
-                                $newuser->lastname = core_text::strtotitle($userinfo->name->familyName);
-                                // ORIGINAL
-                                //$newuser->lastname = $userinfo->name->familyName;
-                                //************ FI
-                            }
-                            if (!empty($userinfo->locale)) {
-                                //$newuser->lang = $userinfo->locale;
-                                //TODO: convert the locale into correct Moodle language code
-                            }
+                        case 'battlenet':
+                            // Battlenet as no firstname/lastname notion.
+                            $newuser->firstname = $userdetails->display_name;
+                            $newuser->lastname = '['.$userdetails->clan_tag.']';
                             break;
-
-                        case 'facebook':
-                            $newuser->firstname =  $facebookuser->first_name;
-                            $newuser->lastname =  $facebookuser->last_name;
-                            break;
-
-                        case 'messenger':
-                            $newuser->firstname =  $messengeruser->first_name;
-                            $newuser->lastname =  $messengeruser->last_name;
-                            break;
-
                         case 'github':
-                            //As Github doesn't provide firstname/lastname, we'll split the name at the first whitespace.
-                            $githubusername = explode(' ', $githubuser->name, 2);
-                            $newuser->firstname =  $githubusername[0];
-                            $newuser->lastname =  $githubusername[1];
+                        case 'dropbox':
+                            // As Github/Dropbox doesn't provide firstname/lastname, we'll split the name at the first whitespace.
+                            $githubusername = explode(' ', $userdetails->name, 2);
+                            $newuser->firstname = $githubusername[0];
+                            $newuser->lastname = $githubusername[1];
                             break;
-
-                        case 'linkedin':
-                            $newuser->firstname =  $linkedinuser->firstName;
-                            $newuser->lastname =  $linkedinuser->lastName;
-                            if (!empty($linkedinuser->location->country->code)) {
-                                $newuser->country = $linkedinuser->location->country->code;
-                            }
-                            if (!empty($linkedinuser->location->name)) {
-                                $newuser->city = $linkedinuser->location->name;
-                            }
-                            break;
-
                         default:
+                            $newuser->firstname = $userdetails->firstName;
+                            $newuser->lastname = $userdetails->lastName;
                             break;
                     }
+
+                    //XTEC ************ MODIFICAT - Convert names to Title
+                    //2014.09.19 @pferre22
+                    $newuser->firstname = core_text::strtotitle($newuser->firstname);
+                    $newuser->lastname = core_text::strtotitle($newuser->lastname);
+                    //************ FI
 
                     // Some providers allow empty firstname and lastname.
                     if (empty($newuser->firstname)) {
@@ -392,23 +282,24 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                         $newuser->lastname = get_string('unknownlastname', 'auth_googleoauth2');
                     }
 
-                    //retrieve country and city if the provider failed to give it
-                    if (!isset($newuser->country) or !isset($newuser->city)) {
+                    // Retrieve country and city if the provider failed to give it.
+                    if (!isset($newuser->country) || !isset($newuser->city)) {
                         $googleipinfodbkey = get_config('auth/googleoauth2', 'googleipinfodbkey');
                         if (!empty($googleipinfodbkey)) {
+                            require_once($CFG->libdir . '/filelib.php');
+                            $curl = new curl();
                             $locationdata = $curl->get('http://api.ipinfodb.com/v3/ip-city/?key=' .
                                 $googleipinfodbkey . '&ip='. getremoteaddr() . '&format=json' );
                             $locationdata = json_decode($locationdata);
                         }
                         if (!empty($locationdata)) {
-                            //TODO: check that countryCode does match the Moodle country code
-                            $newuser->country = isset($newuser->country)?isset($newuser->country):$locationdata->countryCode;
-                            $newuser->city = isset($newuser->city)?isset($newuser->city):$locationdata->cityName;
+                            // TODO: check that countryCode does match the Moodle country code.
+                            $newuser->country = isset($newuser->country) ? isset($newuser->country) : $locationdata->countryCode;
+                            $newuser->city = isset($newuser->city) ? isset($newuser->city) : $locationdata->cityName;
                         }
                     }
 
                     create_user_record($username, '', 'googleoauth2');
-
                 } else {
                     $username = $user->username;
                     //XTEC ************ AFEGIT - To be able to login even if the auth method is different
@@ -419,10 +310,10 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                     ////************ FI
                 }
 
-                //authenticate the user
-                //TODO: delete this log later
+                // Authenticate the user.
+                // TODO: delete this log later.
                 require_once($CFG->dirroot . '/auth/googleoauth2/lib.php');
-                $userid = empty($user)?'new user':$user->id;
+                $userid = empty($user) ? 'new user' : $user->id;
                 oauth_add_to_log(SITEID, 'auth_googleoauth2', '', '', $username . '/' . $useremail . '/' . $userid);
                 $user = authenticate_user_login($username, null);
                 //XTEC ************ AFEGIT - To be able to login even if the auth method is different
@@ -434,13 +325,13 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                 ////************ FI
                 if ($user) {
 
-                    //set a cookie to remember what auth provider was selected
+                    // Set a cookie to remember what auth provider was selected.
                     setcookie('MOODLEGOOGLEOAUTH2_'.$CFG->sessioncookie, $authprovider,
-                            time()+(DAYSECS*60), $CFG->sessioncookiepath,
+                            time() + (DAYSECS * 60), $CFG->sessioncookiepath,
                             $CFG->sessioncookiedomain, $CFG->cookiesecure,
                             $CFG->cookiehttponly);
 
-                    //prefill more user information if new user
+                    // Prefill more user information if new user.
                     if (!empty($newuser)) {
                         $newuser->id = $user->id;
                         $DB->update_record('user', $newuser);
@@ -449,33 +340,90 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
 
                     complete_user_login($user);
 
+                    // Let's save/update the access token for this user.
+                    $cansaveaccesstoken = get_config('auth/googleoauth2', 'saveaccesstoken');
+                    if (!empty($cansaveaccesstoken)) {
+                        $existingaccesstoken = $DB->get_record('auth_googleoauth2_user_idps',
+                            array('userid' => $user->id, 'provider' => $authprovider));
+                        if (empty($existingaccesstoken)) {
+                            $accesstokenrow = new stdClass();
+                            $accesstokenrow->userid = $user->id;
+                            switch ($authprovider) {
+                                case 'battlenet':
+                                    $accesstokenrow->provideruserid = $userdetails->id;
+                                    break;
+                                default:
+                                    $accesstokenrow->provideruserid = $userdetails->uid;
+                                    break;
+                            }
+
+                            $accesstokenrow->provider = $authprovider;
+                            $accesstokenrow->accesstoken = $accesstoken;
+                            $accesstokenrow->refreshtoken = $refreshtoken;
+                            $accesstokenrow->expires = $tokenexpires;
+
+                            $DB->insert_record('auth_googleoauth2_user_idps', $accesstokenrow);
+
+                        } else {
+                            $existingaccesstoken->accesstoken = $accesstoken;
+                            $DB->update_record('auth_googleoauth2_user_idps', $existingaccesstoken);
+                        }
+                    }
+
+                    // Check if the user picture is the default and retrieve the provider picture.
+                    if (empty($user->picture)) {
+                        $profilepicurl = '';
+                        switch ($authprovider) {
+                            case 'battlenet':
+                                $profilepicurl = $userdetails->portrait_url;
+                                break;
+                            case 'google':
+                                $profilepicurl = str_replace('?sz=50', '?sz=300', $userdetails->imageUrl);
+                                break;
+                            default:
+                                if (!empty($userdetails->imageUrl)) {
+                                    $profilepicurl = $userdetails->imageUrl;
+                                }
+                                break;
+                        }
+                        if (!empty($profilepicurl)) {
+                            $this->set_profile_picture($user, $profilepicurl);
+                        }
+                    }
+
                     // Create event for authenticated user.
                     $event = \auth_googleoauth2\event\user_loggedin::create(
-                        array('context'=>context_system::instance(),
-                            'objectid'=>$user->id, 'relateduserid'=>$user->id,
-                            'other'=>array('accesstoken' => $accesstoken)));
+                        array('context' => context_system::instance(),
+                            'objectid' => $user->id, 'relateduserid' => $user->id,
+                            'other' => array('accesstoken' => $accesstoken)));
                     $event->trigger();
 
-                    // Redirection
+                    // Redirection.
                     if (user_not_fully_set_up($USER)) {
                         $urltogo = $CFG->wwwroot.'/user/edit.php';
-                        // We don't delete $SESSION->wantsurl yet, so we get there later
-                    } else if (isset($SESSION->wantsurl) and (strpos($SESSION->wantsurl, $CFG->wwwroot) === 0)) {
-                        $urltogo = $SESSION->wantsurl;    // Because it's an address in this site
+                        // We don't delete $SESSION->wantsurl yet, so we get there later.
+                    } else if (isset($SESSION->wantsurl) && (strpos($SESSION->wantsurl, $CFG->wwwroot) === 0)) {
+                        $urltogo = $SESSION->wantsurl;    // Because it's an address in this site.
                         unset($SESSION->wantsurl);
                     } else {
-                        // No wantsurl stored or external - go to homepage
+                        // No wantsurl stored or external - go to homepage.
                         $urltogo = $CFG->wwwroot.'/';
                         unset($SESSION->wantsurl);
                     }
+
+                    $loginrecord = array('userid' => $USER->id, 'time' => time(),
+                        'auth' => 'googleoauth2', 'subtype' => $authprovider);
+                    $DB->insert_record('auth_googleoauth2_logins', $loginrecord);
+
                     redirect($urltogo);
                 } else {
-                    // authenticate_user_login() failure, probably email registered by another auth plugin
+                    // Authenticate_user_login() failure, probably email registered by another auth plugin.
                     // Do a check to confirm this hypothesis.
                     $userexist = $DB->get_record('user', array('email' => $useremail));
-                    if (!empty($userexist) and $userexist->auth != 'googleoauth2') {
+                    if (!empty($userexist) && $userexist->auth != 'googleoauth2') {
                         $a = new stdClass();
-                        $a->loginpage = (string) new moodle_url(empty($CFG->alternateloginurl) ? '/login/index.php' : $CFG->alternateloginurl);
+                        $a->loginpage = (string) new moodle_url(empty($CFG->alternateloginurl) ?
+                            '/login/index.php' : $CFG->alternateloginurl);
                         $a->forgotpass = (string) new moodle_url('/login/forgot_password.php');
                         throw new moodle_exception('couldnotauthenticateuserlogin', 'auth_googleoauth2', '', $a);
                     } else {
@@ -483,8 +431,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                     }
                 }
             } else {
-                throw new moodle_exception('couldnotgetgoogleaccesstoken', 'auth_googleoauth2',
-                    '', null, print_r($postreturnvalues, true));
+                throw new moodle_exception('couldnotgetgoogleaccesstoken', 'auth_googleoauth2');
             }
         } else {
             // If you are having issue with the display buttons option, add the button code directly in the theme login page.
@@ -493,13 +440,39 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                 // We can add more param check for others provider but at the end,
                 // the best way may be to not use the oauth2displaybuttons option and
                 // add the button code directly in the theme login page.
-                and empty($_POST['username'])
-                and empty($_POST['password'])) {
+                && empty($_POST['username'])
+                && empty($_POST['password'])) {
                 // Display the button on the login page.
                 require_once($CFG->dirroot . '/auth/googleoauth2/lib.php');
-                auth_googleoauth2_display_buttons();
+
+                // Insert the html code below the login field.
+                // Code/Solution from Elcentra plugin: https://moodle.org/plugins/view/auth_elcentra.
+                global $PAGE, $CFG;
+                $PAGE->requires->jquery();
+                $content = str_replace(array("\n", "\r"), array("\\\n", "\\\r"), auth_googleoauth2_display_buttons(false));
+                $PAGE->requires->css('/auth/googleoauth2/style.css');
+                $PAGE->requires->js_init_code("buttonsCodeOauth2 = '$content';");
+                $PAGE->requires->js(new moodle_url($CFG->wwwroot . "/auth/googleoauth2/script.js"));
             }
         }
+    }
+
+    /**
+     * Retrieve the profile picture and save it in moodle.
+     */
+    private function set_profile_picture($user, $profilepicurl) {
+        global $CFG, $DB;
+
+        require_once($CFG->libdir . '/filelib.php');
+        require_once($CFG->libdir . '/gdlib.php');
+        $imagefilename = $CFG->tempdir . '/googleoauth2-portrait-' . $user->id;
+        $imagecontents = download_file_content($profilepicurl);
+        file_put_contents($imagefilename, $imagecontents);
+        if ($newrev = process_new_icon(context_user::instance($user->id),
+            'user', 'icon', 0, $imagefilename)) {
+            $DB->set_field('user', 'picture', $newrev, array('id' => $user->id));
+        }
+        unlink($imagefilename);
     }
 
 
@@ -511,114 +484,96 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      *
      * TODO: as print_auth_lock_options() core function displays an old-fashion HTML table, I didn't bother writing
      * some proper Moodle code. This code is similar to other auth plugins (04/09/11)
-     *
-     * @param array $page An object containing all the data for this page.
      */
-    function config_form($config, $err, $user_fields) {
+    public function config_form($config, $err, $userfields) {
         global $OUTPUT, $CFG;
 
-        // set to defaults if undefined
-        if (!isset($config->googleclientid)) {
-            $config->googleclientid = '';
-        }
-        if (!isset($config->googleclientsecret)) {
-            $config->googleclientsecret = '';
-        }
-        if (!isset ($config->facebookclientid)) {
-            $config->facebookclientid = '';
-        }
-        if (!isset ($config->facebookclientsecret)) {
-            $config->facebookclientsecret = '';
-        }
-        if (!isset ($config->messengerclientid)) {
-            $config->messengerclientid = '';
-        }
-        if (!isset ($config->messengerclientsecret)) {
-            $config->messengerclientsecret = '';
-        }
-        if (!isset ($config->githubclientid)) {
-            $config->githubclientid = '';
-        }
-        if (!isset ($config->githubclientsecret)) {
-            $config->githubclientsecret = '';
-        }
-        if (!isset ($config->linkedinclientid)) {
-            $config->linkedinclientid = '';
-        }
-        if (!isset ($config->linkedinclientsecret)) {
-            $config->linkedinclientsecret = '';
-        }
-        if (!isset($config->googleipinfodbkey)) {
-            $config->googleipinfodbkey = '';
-        }
-        if (!isset($config->googleuserprefix)) {
-            $config->googleuserprefix = 'social_user_';
-        }
-        if (!isset($config->oauth2displaybuttons)) {
-            $config->oauth2displaybuttons = 1;
-        }
+        //XTEC ************ ELIMINAT - No needed alert
+        //2016.02.09 @pferre22
+        /*
+        echo '<div class="alert alert-success"  role="alert">' . get_string('supportmaintenance', 'auth_googleoauth2') . '</div>';
+        */
+        //***********************FI
 
+
+        // TODO: replace this table html ugliness by some nice bootstrap html code.
         echo '<table cellspacing="0" cellpadding="5" border="0">
             <tr>
                <td colspan="3">
                     <h2 class="main">';
 
-
-
         print_string('auth_googlesettings', 'auth_googleoauth2');
 
-        // Google client id
+        $providers = provider_list();
 
-        echo '</h2>
+        foreach ($providers as $providername) {
+
+            $clientidname = $providername . 'clientid';
+            $clientsecretname = $providername . 'clientsecret';
+
+            // Set to defaults if undefined.
+            if (!isset($config->{$clientidname})) {
+                $config->{$clientidname} = '';
+            }
+            if (!isset($config->{$clientsecretname})) {
+                $config->{$clientsecretname} = '';
+            }
+
+            // Client id.
+
+            echo '</h2>
                </td>
             </tr>
-            <tr>
-                <td align="right"><label for="googleclientid">';
+            <tr  style="vertical-align: top;">
+                <td align="right"><label for="'.$clientidname.'">';
 
-        print_string('auth_googleclientid_key', 'auth_googleoauth2');
+            print_string('auth_'.$clientidname.'_key', 'auth_googleoauth2');
 
-        echo '</label></td><td>';
+            echo '</label></td><td>';
 
+            echo html_writer::empty_tag('input',
+                array('type' => 'text', 'id' => $clientidname, 'name' => $clientidname,
+                    'class' => $clientidname, 'value' => $config->{$clientidname}));
 
-        echo html_writer::empty_tag('input',
-                array('type' => 'text', 'id' => 'googleclientid', 'name' => 'googleclientid',
-                    'class' => 'googleclientid', 'value' => $config->googleclientid));
+            if (isset($err[$clientidname])) {
+                echo $OUTPUT->error_text($err[$clientidname]);
+            }
 
-        if (isset($err["googleclientid"])) {
-            echo $OUTPUT->error_text($err["googleclientid"]);
+            echo '</td><td>';
+            $parse = parse_url($CFG->wwwroot);
+            print_string('auth_'.$clientidname, 'auth_googleoauth2',
+                array('jsorigins' => $parse['scheme'].'://'.$parse['host'], 'siteurl' => $CFG->httpswwwroot,
+                    'domain' => $CFG->httpswwwroot,
+                    'redirecturls' => $CFG->httpswwwroot . '/auth/googleoauth2/'.$providername.'_redirect.php',
+                    'callbackurl' => $CFG->httpswwwroot . '/auth/googleoauth2/'.$providername.'_redirect.php',
+                    'sitedomain' => $parse['host']));
+
+            echo '</td></tr>';
+
+            // Client secret.
+
+            echo '<tr  style="vertical-align: top;">
+                <td align="right"><label for="'.$clientsecretname.'">';
+
+            print_string('auth_'.$clientsecretname.'_key', 'auth_googleoauth2');
+
+            echo '</label></td><td>';
+
+            echo html_writer::empty_tag('input',
+                array('type' => 'text', 'id' => $clientsecretname, 'name' => $clientsecretname,
+                    'class' => $clientsecretname, 'value' => $config->{$clientsecretname}));
+
+            if (isset($err[$clientsecretname])) {
+                echo $OUTPUT->error_text($err[$clientsecretname]);
+            }
+
+            echo '</td><td>';
+
+            print_string('auth_'.$clientsecretname, 'auth_googleoauth2');
+
+            echo '</td></tr>
+            <tr style="min-height: 20px"><td>&nbsp;</td></tr>';
         }
-
-        echo '</td><td>';
-        $parse = parse_url($CFG->wwwroot);
-        print_string('auth_googleclientid', 'auth_googleoauth2',
-            array('jsorigins' => $parse['scheme'].'://'.$parse['host'],
-                  'redirecturls' => $CFG->wwwroot . '/auth/googleoauth2/google_redirect.php')) ;
-
-        echo '</td></tr>';
-
-        // Google client secret
-
-        echo '<tr>
-                <td align="right"><label for="googleclientsecret">';
-
-        print_string('auth_googleclientsecret_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-                array('type' => 'text', 'id' => 'googleclientsecret', 'name' => 'googleclientsecret',
-                    'class' => 'googleclientsecret', 'value' => $config->googleclientsecret));
-
-        if (isset($err["googleclientsecret"])) {
-            echo $OUTPUT->error_text($err["googleclientsecret"]);
-        }
-
-        echo '</td><td>';
-
-        print_string('auth_googleclientsecret', 'auth_googleoauth2') ;
-
-        echo '</td></tr>';
 
         //XTEC ************ AFEGIT - To restrict domain
         //2014.09.16 @pferre22
@@ -649,210 +604,22 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
         echo '</td></tr>';
         //***********************FI
 
-        //XTEC ************ ELIMINAT - Only let configure Google OAuth
-        //2014.08.15  @pferre22
-        if(is_xtecadmin()){
-        // Facebook client id
-
-        echo '<tr>
-                <td align="right"><label for="facebookclientid">';
-
-        print_string('auth_facebookclientid_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-                array('type' => 'text', 'id' => 'facebookclientid', 'name' => 'facebookclientid',
-                    'class' => 'facebookclientid', 'value' => $config->facebookclientid));
-
-        if (isset($err["facebookclientid"])) {
-            echo $OUTPUT->error_text($err["facebookclientid"]);
+        if (!isset($config->googleipinfodbkey)) {
+            $config->googleipinfodbkey = '';
         }
 
-        echo '</td><td>';
-
-        print_string('auth_facebookclientid', 'auth_googleoauth2',
-            (object) array('siteurl' => $CFG->httpswwwroot,
-                'callbackurl' => $CFG->httpswwwroot . '/auth/googleoauth2/facebook_redirect.php',
-                'sitedomain' => $parse['host'])) ;
-
-        echo '</td></tr>';
-
-        // Facebook client secret
-
-        echo '<tr>
-                <td align="right"><label for="facebookclientsecret">';
-
-        print_string('auth_facebookclientsecret_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-                array('type' => 'text', 'id' => 'facebookclientsecret', 'name' => 'facebookclientsecret',
-                    'class' => 'facebookclientsecret', 'value' => $config->facebookclientsecret));
-
-        if (isset($err["facebookclientsecret"])) {
-            echo $OUTPUT->error_text($err["facebookclientsecret"]);
+        if (!isset($config->googleuserprefix)) {
+            $config->googleuserprefix = 'social_user_';
         }
 
-        echo '</td><td>';
-
-        print_string('auth_facebookclientsecret', 'auth_googleoauth2') ;
-
-        echo '</td></tr>';
-
-        // Messenger client id
-
-        echo '<tr>
-                <td align="right"><label for="messengerclientid">';
-
-        print_string('auth_messengerclientid_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-                array('type' => 'text', 'id' => 'messengerclientid', 'name' => 'messengerclientid',
-                    'class' => 'messengerclientid', 'value' => $config->messengerclientid));
-
-        if (isset($err["messengerclientid"])) {
-            echo $OUTPUT->error_text($err["messengerclientid"]);
+        if (!isset($config->oauth2displaybuttons)) {
+            $config->oauth2displaybuttons = 1;
         }
 
-        echo '</td><td>';
-
-        print_string('auth_messengerclientid', 'auth_googleoauth2', (object) array('domain' => $CFG->wwwroot)) ;
-
-        echo '</td></tr>';
-
-        // Messenger client secret
-
-        echo '<tr>
-                <td align="right"><label for="messengerclientsecret">';
-
-        print_string('auth_messengerclientsecret_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-                array('type' => 'text', 'id' => 'messengerclientsecret', 'name' => 'messengerclientsecret',
-                    'class' => 'messengerclientsecret', 'value' => $config->messengerclientsecret));
-
-        if (isset($err["messengerclientsecret"])) {
-            echo $OUTPUT->error_text($err["messengerclientsecret"]);
-        }
-
-        echo '</td><td>';
-
-        print_string('auth_messengerclientsecret', 'auth_googleoauth2') ;
-
-        echo '</td></tr>';
-
-        // Github client id
-
-        echo '<tr>
-                <td align="right"><label for="githubclientid">';
-
-        print_string('auth_githubclientid_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-            array('type' => 'text', 'id' => 'githubclientid', 'name' => 'githubclientid',
-                'class' => 'githubclientid', 'value' => $config->githubclientid));
-
-        if (isset($err["githubclientid"])) {
-            echo $OUTPUT->error_text($err["githubclientid"]);
-        }
-
-        echo '</td><td>';
-
-        print_string('auth_githubclientid', 'auth_googleoauth2',
-            (object) array('callbackurl' => $CFG->wwwroot . '/auth/googleoauth2/github_redirect.php',
-                'siteurl' => $CFG->wwwroot)) ;
-
-        echo '</td></tr>';
-
-        // Github client secret
-
-        echo '<tr>
-                <td align="right"><label for="githubclientsecret">';
-
-        print_string('auth_githubclientsecret_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-            array('type' => 'text', 'id' => 'githubclientsecret', 'name' => 'githubclientsecret',
-                'class' => 'githubclientsecret', 'value' => $config->githubclientsecret));
-
-        if (isset($err["githubclientsecret"])) {
-            echo $OUTPUT->error_text($err["githubclientsecret"]);
-        }
-
-        echo '</td><td>';
-
-        print_string('auth_githubclientsecret', 'auth_googleoauth2') ;
-
-        echo '</td></tr>';
-
-        // Linkedin client id
-
-        echo '<tr>
-                <td align="right"><label for="linkedinclientid">';
-
-        print_string('auth_linkedinclientid_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-            array('type' => 'text', 'id' => 'linkedinclientid', 'name' => 'linkedinclientid',
-                'class' => 'linkedinclientid', 'value' => $config->linkedinclientid));
-
-        if (isset($err["linkedinclientid"])) {
-            echo $OUTPUT->error_text($err["linkedinclientid"]);
-        }
-
-        echo '</td><td>';
-
-        print_string('auth_linkedinclientid', 'auth_googleoauth2',
-            (object) array('callbackurl' => $CFG->wwwroot . '/auth/googleoauth2/linkedin_redirect.php',
-                'siteurl' => $CFG->wwwroot)) ;
-
-        echo '</td></tr>';
-
-        // Linkedin client secret
-
-        echo '<tr>
-                <td align="right"><label for="linkedinclientsecret">';
-
-        print_string('auth_linkedinclientsecret_key', 'auth_googleoauth2');
-
-        echo '</label></td><td>';
-
-
-        echo html_writer::empty_tag('input',
-            array('type' => 'text', 'id' => 'linkedinclientsecret', 'name' => 'linkedinclientsecret',
-                'class' => 'linkedinclientsecret', 'value' => $config->linkedinclientsecret));
-
-        if (isset($err["linkedinclientsecret"])) {
-            echo $OUTPUT->error_text($err["linkedinclientsecret"]);
-        }
-
-        echo '</td><td>';
-
-        print_string('auth_linkedinclientsecret', 'auth_googleoauth2') ;
-
-        echo '</td></tr>';
-
-
-        // IPinfoDB
+        //XTEC ************ ELIMINAT - No needed setting
+        //2016.02.09 @pferre22
+        /*
+        // IPinfoDB.
 
         echo '<tr>
                 <td align="right"><label for="googleipinfodbkey">';
@@ -860,7 +627,6 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
         print_string('auth_googleipinfodbkey_key', 'auth_googleoauth2');
 
         echo '</label></td><td>';
-
 
         echo html_writer::empty_tag('input',
                 array('type' => 'text', 'id' => 'googleipinfodbkey', 'name' => 'googleipinfodbkey',
@@ -872,12 +638,13 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
 
         echo '</td><td>';
 
-        print_string('auth_googleipinfodbkey', 'auth_googleoauth2', (object) array('website' => $CFG->wwwroot)) ;
+        print_string('auth_googleipinfodbkey', 'auth_googleoauth2', (object) array('website' => $CFG->wwwroot));
 
         echo '</td></tr>';
-        }
-        //************ FI
-        // User prefix
+        */
+        //***********************FI
+
+        // User prefix.
 
         echo '<tr>
                 <td align="right"><label for="googleuserprefix">';
@@ -885,7 +652,6 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
         print_string('auth_googleuserprefix_key', 'auth_googleoauth2');
 
         echo '</label></td><td>';
-
 
         echo html_writer::empty_tag('input',
                 array('type' => 'text', 'id' => 'googleuserprefix', 'name' => 'googleuserprefix',
@@ -897,14 +663,14 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
 
         echo '</td><td>';
 
-        print_string('auth_googleuserprefix', 'auth_googleoauth2') ;
+        print_string('auth_googleuserprefix', 'auth_googleoauth2');
 
         echo '</td></tr>';
 
         //XTEC ************ ELIMINAT - This setting is not needed for now
         //2014.08.15  @pferre22
         /*
-        // Display buttons
+        // Display buttons.
 
         echo '<tr>
                 <td align="right"><label for="oauth2displaybuttons">';
@@ -913,7 +679,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
 
         echo '</label></td><td>';
 
-        $checked = empty($config->oauth2displaybuttons)?'':'checked';
+        $checked = empty($config->oauth2displaybuttons) ? '' : 'checked';
         echo html_writer::checkbox('oauth2displaybuttons', 1, $checked, '',
             array('type' => 'checkbox', 'id' => 'oauth2displaybuttons', 'class' => 'oauth2displaybuttons'));
 
@@ -923,69 +689,144 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
 
         echo '</td><td>';
 
-        $code = '<code>&lt;?php require_once($CFG-&gt;dirroot . \'/auth/googleoauth2/lib.php\'); auth_googleoauth2_display_buttons(); ?&gt;</code>';
-        print_string('oauth2displaybuttonshelp', 'auth_googleoauth2', $code) ;
+        $code = '<code>&lt;?php require_once($CFG-&gt;dirroot . \'/auth/googleoauth2/lib.php\');
+                auth_googleoauth2_display_buttons(); ?&gt;</code>';
+        print_string('oauth2displaybuttonshelp', 'auth_googleoauth2', $code);
 
         echo '</td></tr>';
         */
         //************ FI
 
-        /// Block field options
-        // Hidden email options - email must be set to: locked
+
+        // Block field options.
+        // Hidden email options - email must be set to: locked.
         echo html_writer::empty_tag('input', array('type' => 'hidden', 'value' => 'locked',
                     'name' => 'lockconfig_field_lock_email'));
 
-        //display other field options
-        foreach ($user_fields as $key => $user_field) {
-            if ($user_field == 'email') {
-                unset($user_fields[$key]);
+        // Display other field options.
+        foreach ($userfields as $key => $userfield) {
+            if ($userfield == 'email') {
+                unset($userfields[$key]);
             }
         }
-        print_auth_lock_options('googleoauth2', $user_fields, get_string('auth_fieldlocks_help', 'auth'), false, false);
-
-
+        print_auth_lock_options('googleoauth2', $userfields, get_string('auth_fieldlocks_help', 'auth'), false, false);
 
         echo '</table>';
+
+        // Calculate how many login per providers.
+        $providerstats = (object) $this->get_stats();
+        $strothermoodle = get_string('othermoodle', 'auth_googleoauth2');
+        $strstattitle = get_string('stattitle', 'auth_googleoauth2', $providerstats);
+        echo '
+            <center>
+            <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                <script type="text/javascript">
+                  google.load("visualization", "1", {packages:["corechart"]});
+                  google.setOnLoadCallback(drawChart);
+                  function drawChart() {
+
+                    var data = google.visualization.arrayToDataTable([
+                      [\'Provider\', \'Login total\'],
+                      [\'Google\', ' . $providerstats->google . '],
+                      [\'Facebook\', ' . $providerstats->facebook . ' ],
+                      [\'Github\',  ' . $providerstats->github . ' ],
+                      [\'Linkedin\', ' . $providerstats->linkedin . ' ],
+                      [\'Microsoft\', ' . $providerstats->microsoft . ' ],
+                      [\'Dropbox\', ' . $providerstats->dropbox . ' ],
+                      [\'VK\', ' . $providerstats->vk . ' ],
+                      [\'Battle.net\', ' . $providerstats->battlenet . ' ],
+                      [\''.$strothermoodle.'\',    ' . $providerstats->moodle . ' ]
+                    ]);
+
+                    var options = {
+                      title: \''.$strstattitle.'\',
+                      is3D: true,
+                      slices: {
+                        0: { color: \'#D50F25\' },
+                        1: { color: \'#3b5998\' },
+                        2: { color: \'#eee\', fontcolor: \'black\'},
+                        3: { color: \'#007bb6\'},
+                        4: { color: \'#7cbb00\'},
+                        5: { color: \'#007ee5\'},
+                        6: { color: \'#45668e\'},
+                        7: { color: \'#00B4FF\'},
+                        8: { color: \'#ee7600\'}
+                      }
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById(\'piechart\'));
+
+                    chart.draw(data, options);
+                  }
+                </script>
+             <div id="piechart" style="width: 900px; height: 500px;"></div>
+            </center>
+        ';
     }
+
+    /**
+     * Retrieve the login provider stats.
+     */
+    public function get_stats($periodindays = 60) {
+        global $DB;
+
+        // Retrieve the logins.
+        $sql = 'time > :time';
+        $logins = $DB->get_records_select('auth_googleoauth2_logins', $sql,
+            array('time' => strtotime('-' . $periodindays . ' days', time())));
+
+        // Retrieve the moodle auth stats.
+        $loginstats = array( 'google' => 0,
+                             'facebook' => 0,
+                             'github' => 0,
+                             'linkedin' => 0,
+                             'microsoft' => 0,
+                             'dropbox' => 0,
+                             'vk' => 0,
+                             'battlenet' => 0,
+                             'moodle' => 0,
+                             'periodindays' => $periodindays);
+
+        // Retrieve the provider stats.
+        foreach ($logins as $login) {
+            if ($login->auth !== 'googleoauth2') {
+                $loginstats['moodle'] += 1;
+            } else {
+                $loginstats[$login->subtype] += 1;
+            }
+        }
+
+
+
+        return $loginstats;
+    }
+
 
     /**
      * Processes and stores configuration data for this authentication plugin.
      */
-    function process_config($config) {
-        // set to defaults if undefined
-        if (!isset ($config->googleclientid)) {
-            $config->googleclientid = '';
+    public function process_config($config) {
+        // Set to defaults if undefined.
+
+        $providers = provider_list();
+
+        foreach ($providers as $providername) {
+            $clientidname = $providername . 'clientid';
+            $clientsecretname = $providername . 'clientsecret';
+
+            // Set to defaults if undefined.
+            if (!isset($config->{$clientidname})) {
+                $config->{$clientidname} = '';
+            }
+            if (!isset($config->{$clientsecretname})) {
+                $config->{$clientsecretname} = '';
+            }
+
+            // Save settings.
+            set_config($clientidname, $config->{$clientidname}, 'auth/googleoauth2');
+            set_config($clientsecretname, $config->{$clientsecretname}, 'auth/googleoauth2');
         }
-        if (!isset ($config->googleclientsecret)) {
-            $config->googleclientsecret = '';
-        }
-        if (!isset ($config->facebookclientid)) {
-            $config->facebookclientid = '';
-        }
-        if (!isset ($config->facebookclientsecret)) {
-            $config->facebookclientsecret = '';
-        }
-        if (!isset ($config->messengerclientid)) {
-            $config->messengerclientid = '';
-        }
-        if (!isset ($config->messengerclientsecret)) {
-            $config->messengerclientsecret = '';
-        }
-        if (!isset ($config->githubclientid)) {
-            $config->githubclientid = '';
-        }
-        if (!isset ($config->githubclientsecret)) {
-            $config->githubclientsecret = '';
-        }
-        if (!isset ($config->linkedinclientid)) {
-            $config->linkedinclientid = '';
-        }
-        if (!isset ($config->linkedinclientsecret)) {
-            $config->linkedinclientsecret = '';
-        }
-        if (!isset ($config->googleipinfodbkey)) {
-            $config->googleipinfodbkey = '';
-        }
+
         if (!isset ($config->googleuserprefix)) {
             $config->googleuserprefix = 'social_user_';
         }
@@ -993,21 +834,18 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
             $config->oauth2displaybuttons = 0;
         }
 
-        // save settings
-        set_config('googleclientid', $config->googleclientid, 'auth/googleoauth2');
-        set_config('googleclientsecret', $config->googleclientsecret, 'auth/googleoauth2');
-        set_config('facebookclientid', $config->facebookclientid, 'auth/googleoauth2');
-        set_config('facebookclientsecret', $config->facebookclientsecret, 'auth/googleoauth2');
-        set_config('messengerclientid', $config->messengerclientid, 'auth/googleoauth2');
-        set_config('messengerclientsecret', $config->messengerclientsecret, 'auth/googleoauth2');
-        set_config('githubclientid', $config->githubclientid, 'auth/googleoauth2');
-        set_config('githubclientsecret', $config->githubclientsecret, 'auth/googleoauth2');
-        set_config('linkedinclientid', $config->linkedinclientid, 'auth/googleoauth2');
-        set_config('linkedinclientsecret', $config->linkedinclientsecret, 'auth/googleoauth2');
+        //XTEC ************ MODIFICAT - No needed settings
+        //2016.02.09 @pferre22
+        set_config('googleipinfodbkey', "", 'auth/googleoauth2');
+        set_config('googleuserprefix', core_text::strtolower($config->googleuserprefix), 'auth/googleoauth2');
+        set_config('oauth2displaybuttons', 1, 'auth/googleoauth2');
+        //ORIGINAL
+        /*
         set_config('googleipinfodbkey', $config->googleipinfodbkey, 'auth/googleoauth2');
-		set_config('googleuserprefix', core_text::strtolower($config->googleuserprefix), 'auth/googleoauth2');
+        set_config('googleuserprefix', core_text::strtolower($config->googleuserprefix), 'auth/googleoauth2');
         set_config('oauth2displaybuttons', $config->oauth2displaybuttons, 'auth/googleoauth2');
-
+        */
+        //********************FI
 
         //XTEC ************ AFEGIT - To restrict domain
         //2014.09.16 @pferre22
@@ -1016,6 +854,7 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
         }
         set_config('auth_domain', $config->auth_domain, 'auth/googleoauth2');
         //***********************FI
+
         return true;
     }
 
@@ -1029,12 +868,11 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
      * @return boolean result
      *
      */
-    function user_update($olduser, $newuser) {
+    public function user_update($olduser, $newuser) {
         if ($olduser->email != $newuser->email) {
             return false;
-        } else {
-            return true;
         }
+        return true;
     }
 
     //XTEC ************ AFEGIT - To restrict domain

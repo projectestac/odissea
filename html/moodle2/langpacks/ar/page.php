@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'page', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,3 +39,4 @@ $string['pluginadministration'] = 'إدارة وحدة الصفحات';
 $string['pluginname'] = 'صفحة';
 $string['printintro'] = 'اعرص وصف الصفحة';
 $string['printintroexplain'] = 'اعرض وصف الصفحة فوق المحتوى';
+$string['search:activity'] = 'صفحة';

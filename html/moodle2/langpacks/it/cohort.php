@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cohort', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['description'] = 'Descrizione';
 $string['displayedrows'] = 'Visualizzate {$a->displayed} righe su un totale di {$a->total}.';
 $string['duplicateidnumber'] = 'Un gruppo globale con la stessa ID è già presente';
 $string['editcohort'] = 'Modifica gruppo globale';
+$string['editcohortidnumber'] = 'Modifica codice identificativo del gruppo globale';
+$string['editcohortname'] = 'Modifica nome del gruppo globale';
 $string['eventcohortcreated'] = 'Creato gruppo globale';
 $string['eventcohortdeleted'] = 'Eliminato gruppo globale';
 $string['eventcohortmemberadded'] = 'Inserito utente in gruppo globale';
@@ -63,6 +65,8 @@ $string['memberscount'] = 'Dimensione gruppo globale';
 $string['name'] = 'Nome';
 $string['namecolumnmissing'] = 'Sono stati riscontrati problemi sul formato del file CSV. Verificare che il file includa i nomi delle colonne.';
 $string['namefieldempty'] = 'Il nome del campo non può essere lasciato vuoto';
+$string['newidnumberfor'] = 'Nuovo codice identificativo del gruppo globale {$a}';
+$string['newnamefor'] = 'Nuovo nome del gruppo globale {$a}';
 $string['nocomponent'] = 'Creato a mano';
 $string['potusers'] = 'Membri potenziali';
 $string['potusersmatching'] = 'Membri potenziali corrispondenti';

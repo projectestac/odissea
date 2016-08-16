@@ -1,26 +1,20 @@
 <?php
+// This file is part of Oauth2 authentication plugin for Moodle.
+//
+// Oauth2 authentication plugin for Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Oauth2 authentication plugin for Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Oauth2 authentication plugin for Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
- * Get facebook code and call the normal login page
- * Needed to add the parameter authprovider in order to identify the authentication provider
- */
 require('../../config.php');
-$code = optional_param('code', '', PARAM_TEXT); //Google can return an error
+require_once($CFG->dirroot . '/auth/googleoauth2/lib.php');
+googleoauth2_provider_redirect('facebook');
 
-if (empty($code)) {
-    throw new moodle_exception('facebook_failure');
-}
-
-// Ensure that this is no request forgery going on, and that the user
-// sending us this connect request is the user that was supposed to.
-if ($_SESSION['STATETOKEN'] !== required_param('state', PARAM_TEXT)) {
-    throw new moodle_exception('Invalid state parameter');
-}
-
-$loginurl = '/login/index.php';
-if (!empty($CFG->alternateloginurl)) {
-    $loginurl = $CFG->alternateloginurl;
-}
-$url = new moodle_url($loginurl, array('code' => $code, 'authprovider' => 'facebook'));
-redirect($url);
-?>

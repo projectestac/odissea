@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_configurable_reports', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -312,7 +312,7 @@ $string['previousstart'] = 'Date de début précédente';
 $string['printreport'] = 'Imprimer le rapport';
 $string['puserfield'] = 'Valeur du champ Utilisateur';
 $string['puserfield_summary'] = 'Utilisateur avec la valeur sélectionnée dans le champ sélectionné';
-$string['queryfailed'] = 'Échec de la requête';
+$string['queryfailed'] = 'Échec de la requête <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'Requête SQL';
 $string['remote'] = 'Exécution sur une base de données à distance';
 $string['remotedescription'] = 'Voulez-vous lancer la recherche dans la base de données à distance';
@@ -416,6 +416,7 @@ $string['value_fields'] = 'Champs de valeur';
 $string['value_fields_help'] = 'Les champs qui devraient être représentés dans le graphique. Ctrl + clic (Cmd + clic sur Mac) pour les sélections multiples. Si vous sélectionnez le champ étiquette ou un champ avec des valeurs non numériques, il sera ignoré';
 $string['viewreport'] = 'Afficher le rapport';
 $string['width'] = 'Longueur';
+$string['xandynotequal'] = 'Les axes X et Y doivent être différents';
 $string['xaxis'] = 'Axe des x';
 $string['yaxis'] = 'Axe des y';
 $string['yearhebrew'] = 'Année (Hébreu)';

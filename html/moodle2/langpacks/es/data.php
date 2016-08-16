@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['addtemplate'] = 'Plantilla para añadir entrada';
 $string['advancedsearch'] = 'Búsqueda avanzada';
 $string['allowcomments'] = 'Permitir comentar las entradas';
 $string['alttext'] = 'Texto alternativo';
+$string['approvalstatus'] = 'Estado de aprobación';
 $string['approve'] = 'Aprobar';
 $string['approved'] = 'Aprobado';
 $string['areacontent'] = 'Campos';
@@ -150,6 +151,7 @@ $string['entrieslefttoaddtoview'] = 'Debe añadir {$a->entrieslefttoview} entrad
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'Su entrada se ha guardado';
 $string['errormustbeteacher'] = 'Necesita ser un profesor para usar esta página';
+$string['errormustsupplyvalue'] = 'Debe proporcionar un valor aquí.';
 $string['errorpresetexists'] = 'Ya existe un elemento con el nombre seleccionado';
 $string['eventfieldcreated'] = 'Campo creado';
 $string['eventfielddeleted'] = 'Campo borrado';
@@ -236,6 +238,7 @@ $string['invalidurl'] = 'La URL introducida no es válida';
 $string['jstemplate'] = 'Plantilla Javascript';
 $string['latitude'] = 'Latitud';
 $string['latlong'] = 'Latitud/logitud';
+$string['latlongboth'] = 'Tanto la latitud como la longitud son necesarias.';
 $string['latlongdownloadallhint'] = 'Descargar enlace para todas las entradas como KML';
 $string['latlongkmllabelling'] = 'Cómo etiquetar ítems en archivos KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Conectar servicios a mostrar';
@@ -243,6 +246,8 @@ $string['latlongotherfields'] = 'Otros campos';
 $string['list'] = 'Ver lista';
 $string['listtemplate'] = 'Plantilla de lista';
 $string['longitude'] = 'Longitud';
+$string['manageapproved'] = 'Permitir editar las entradas aprobadas';
+$string['manageapproved_help'] = 'Si se deshabilita, las entradas aprobadas no pueden ser editadas o borradas por el usuario que las creó. Esta opción sólo tiene efecto si la opción "¿Se requiere aprobación?" está habilitada.';
 $string['mapexistingfield'] = 'Apunta a {$a}';
 $string['mapnewfield'] = 'Crear un nuevo campo';
 $string['mappingwarning'] = 'Todos los campos viejos no mapeados a un nuevo campo se perderán y todos los datos de dichos campos quedarán eliminados.';
@@ -333,6 +338,7 @@ $string['recordsnotsaved'] = 'No se ha guardado ninguna entrada. Por favor, comp
 $string['recordssaved'] = 'entradas guardadas';
 $string['requireapproval'] = 'Aprobación requerida';
 $string['requireapproval_help'] = '<p>¿Debería un profesor aprobar las entradas antes de que los estudiantes puedan verlas? Esta opción es útil para moderar el contenido que potencialmente pudiera resultar ofensivo o inadecuado.</p>';
+$string['required'] = 'Obligatorio';
 $string['requiredentries'] = 'Entradas requeridas';
 $string['requiredentries_help'] = '<p>Número de entradas que se exige enviar a cada participante.
    Los usuarios verán un mensaje recordatorio que les informa si no han enviado el número de entradas exigido.</p>
@@ -340,6 +346,7 @@ $string['requiredentries_help'] = '<p>Número de entradas que se exige enviar a 
 <p>La actividad no se considerará completada hasta que el usuario no haya enviado el número de entradas exigido.</p>';
 $string['requiredentriestoview'] = 'Entradas requeridas antes de verse';
 $string['requiredentriestoview_help'] = '<p>Número de entradas que un participante debe enviar antes de que se le permita ver entradas del resto de participantes.</p>';
+$string['requiredfield'] = 'Campo obligatorio';
 $string['resetsettings'] = 'Restablecer filtros';
 $string['resettemplate'] = 'Resetear plantilla';
 $string['resizingimages'] = 'Cambiando el tamaño de las miniaturas de imagen...';

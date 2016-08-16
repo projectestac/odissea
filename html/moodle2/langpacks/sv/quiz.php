@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quiz', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,8 +105,6 @@ $string['attemptsonly'] = 'Visa bara de studenter/elever/deltagare/lärande som 
 $string['attemptstate'] = 'Tillstånd';
 $string['attemptstillinprogress'] = 'Pågående försök';
 $string['attemptsunlimited'] = 'Obegränsat antal försök';
-$string['autosaveperiod'] = 'Period/intervall för autospara';
-$string['autosaveperiod_desc'] = 'Studentens svar kan sparas automatiskt med några minuters mellanrum under pågående test. Detta innebär en avvägning: Att spara svaren kan öka belastningen på servern, men minskar risken för att eleverna förlorar sitt arbete.';
 $string['back'] = 'Tillbaka till förhandsgranskning av fråga';
 $string['backtocourse'] = 'Tillbaka till kursen';
 $string['backtoquestionlist'] = 'Tillbaka till  listan med frågor';
@@ -145,8 +143,6 @@ $string['cannotwrite'] = 'Det går inte att skriva till den exporterade filen ({
 $string['caseno'] = 'Nej, stor eller liten bokstav spelar ingen roll';
 $string['casesensitive'] = 'Stor eller liten bokstav gör  skillnad';
 $string['caseyes'] = 'Ja, stor/liten bokstav måste matcha exakt';
-$string['categories'] = 'Kategorier';
-$string['category'] = 'Kategori';
 $string['categoryadded'] = 'Kategorin \'{$a}\' lades till';
 $string['categorydeleted'] = 'Kategorin \'{$a}\' togs bort';
 $string['categorynoedit'] = 'Du har inte behörighet att redigera privilegier i kategorin \'{$a}\'.';
@@ -187,7 +183,6 @@ $string['configrequiresubnet'] = 'Studenter/elever/deltagare/lärande kan bara g
 $string['configreviewoptions'] = 'Dessa inställningar avgör vilken information användare kan se när de granskar ett försök av ett test eller granskar testrapporter.';
 $string['configshowblocks'] = 'Visa block under försök. ';
 $string['configshowuserpicture'] = 'Visa användare bild på skärmen under försök. ';
-$string['configshufflequestions'] = 'Om Du aktiverar detta alternativ, då kommer ordningen på frågorna i testet att ändras slumpmässigt varje gång någon gör ett försök på testet.';
 $string['configshufflewithin'] = 'Om Du aktiverar detta alternativ, då kommer de delar som bygger upp de enskilda frågorna att ändras slumpmässigt varje gång en student påbörjar ett försök på det här testet, detta under förutsättning att alternativet också är aktiverat i den frågans inställningar.';
 $string['configtimelimit'] = 'Förvald standardmässig tidsbegränsning i minuter för test. 0 betyder att det inte finns någon begränsning. ';
 $string['configtimelimitsec'] = 'Förvald standardmässig tidsbegränsning i sekunder för test. 0 betyder att det inte finns någon begränsning. ';
@@ -195,9 +190,6 @@ $string['configurerandomquestion'] = 'Konfigurera fråga';
 $string['confirmclose'] = 'Du håller på att avsluta det här försöket. När Du väl har avslutat försöket kommer Du inte längre att kunna ändra Dina svar.';
 $string['confirmremovequestion'] = 'Är du säker på att du vill ta bort denna {$a} frågan?';
 $string['confirmserverdelete'] = 'Är Du säker på att Du vill ta bort servern <b>{$a}</b> från listan?';
-$string['confirmstartattemptlimit'] = 'Det här testet får Du bara göra {$a} gånger. Genom att Du öppnar testet så registreras det som ett försök. Vill Du fortsätta?';
-$string['confirmstartattempttimelimit'] = 'Det här testet har en tidsbegränsning och Du får bara göra det {$a} gånger. Genom att Du öppnar testet så registreras det som ett försök. Vill Du fortsätta?';
-$string['confirmstarttimelimit'] = 'Det här testet har en tidsbegränsning. Är Du säker på att Du vill påbörja det?';
 $string['connectionerror'] = 'Nätverksanslutning förlorade (autospara misslyckades).
 
 Anteckna alla svar som angavs på webbplatsen de sista minuterna på papper, försöka sedan att återansluta.
@@ -233,11 +225,12 @@ $string['datasetnumber'] = 'Tal/Nummer';
 $string['daysavailable'] = 'Dagar tillgängligt';
 $string['decimaldigits'] = 'Decimalsiffror i betyg';
 $string['decimalplaces'] = 'Antal decimaler i betyg';
-$string['decimalplaces_help'] = 'Genom att använda den här inställningen kan Du ange antalet decimaler som ska visas i betyget/omdömet för varje försök.
-
-Om du t.ex. väljer \'0\' så betyder det att de visade betygen kommer att avrundas till heltal.
-
-Den här inställningen påverkar bara visningen av betyg. Detta har ingen inverkan på de interna beräkningarna och avrundning av betyg.';
+$string['decimalplaces_help'] = '<p>Genom att anv&auml;nda den h&auml;r inst&auml;llningen kan Du ange antalet decimaler som
+ska visas i betyget/omd&ouml;met f&ouml;r varje f&ouml;rs&ouml;k. Om du t.ex. väljer \'0\' så betyder det att de visade betygen kommer att avrundas till heltal.
+</p><p>
+Den här inställningen påverkar bara visningen av betyg. Detta har ingen inverkan på
+de interna beräkningarna och avrundning av betyg.
+</p>';
 $string['decimalplacesquestion'] = 'Antal decimaler i betyget för frågan';
 $string['decimalplacesquestion_help'] = 'Denna inställning specificerar det antal siffror som visas efter decimalkommat vid visning av poäng vid varje fråga.';
 $string['decimalpoints'] = 'Decimalpoäng';
@@ -261,14 +254,14 @@ $string['download'] = 'Klicka för att ladda ner den exporterade filen för kate
 $string['downloadextra'] = '(filen är också lagrad in \'kursens filer\' i katalogen /test)';
 $string['dragtoafter'] = 'Efter {$a}';
 $string['dragtostart'] = 'Till början';
-$string['duplicateresponse'] = 'Den inskickade uppgiften räknas inte eftersom du har lämnat ett liknande svar tidigare.';
+$string['duplicateresponse'] = 'Den inskickade uppgiftslösningen räknas inte eftersom Du har lämnat ett liknande svar tidigare.';
 $string['eachattemptbuildsonthelast'] = 'Varje försök bygger på det senaste';
-$string['eachattemptbuildsonthelast_help'] = '<p>Om det &auml;r till&aring;tet att g&ouml;ra flera f&ouml;rs&ouml;k och den h&auml;r
-inst&auml;llningen &auml;r satt till \'Ja\' s&aring; kommer varje f&ouml;rs&ouml;k att
-inneh&aring;lla resultaten fr&aring;n det tidigare f&ouml;rs&ouml;ket.
-Detta g&ouml;r det m&ouml;jligt att fullf&ouml;lja testet via ett antal f&ouml;rs&ouml;k.</p>
-<p>F&ouml;r att visa ett nytt test f&ouml;r varje f&ouml;rs&ouml;k s&aring; v&auml;ljer Du
-\'Nej\' f&ouml;r den h&auml;r inst&auml;llningen.</p>';
+$string['eachattemptbuildsonthelast_help'] = 'Om det är tillåtet att göra flera försök och den här
+inställningen är satt till \'Ja\' så kommer varje försök att
+innehålla resultaten från det tidigare försöket.
+Detta gör det möjligt att fullfölja testet via ett antal försök.
+För att visa ett nytt test för varje försök så väljer Du
+\'Nej\' för den här inställningen.';
 $string['editcategories'] = 'Redigera kategorier';
 $string['editcategory'] = 'Redigera kategori';
 $string['editcatquestions'] = 'Redigera frågor i kategorin';
@@ -292,11 +285,8 @@ $string['emailconfirmbody'] = 'Käre/a {$a->username},
 Tack för att Du har skickat in Dina svar till
 \'{$a->quizname}\'
 i kursen \'{$a->coursename}\'
-vid {$a->submissiontime}.
-
-Detta meddelande bekräftar att vi har fått dina svar.
-
-Du kan få tillgång till det här testet genom  {$a->quizurl}.';
+i samband med {$a->submissiontime}.
+Du kan få tillgång till det här testet vid  {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Tack för att Du har fullföljt testet och bekräftat Dina svar på  \'{$a->quizname}\'';
 $string['emailconfirmsubject'] = 'Bekräftelse av inskickning av test: {$a->quizname}';
 $string['emailnotifybody'] = 'Käre/a {$a->username},
@@ -340,7 +330,6 @@ $string['eventreportviewed'] = 'Test rapport visad';
 $string['everynquestions'] = 'Varje {$a} fråga';
 $string['everyquestion'] = 'Varje fråga';
 $string['everythingon'] = 'Allting på';
-$string['export'] = 'Exportera';
 $string['exportcategory'] = 'Exportera kategori';
 $string['exporterror'] = 'Ett fel inträffade i samband med genomförande av exporten';
 $string['exportingquestions'] = 'Frågorna exporteras till en fil';
@@ -365,7 +354,6 @@ $string['finishattemptdots'] = 'Avsluta försök';
 $string['finishreview'] = 'Avsluta efterhandsgranskning';
 $string['forceregeneration'] = 'tvinga återskapande';
 $string['formatnotfound'] = 'Det gick inte att hitta formatet {$a} för import/export';
-$string['formatnotimplemented'] = 'Det här formatet har inte införts i systemet på rätt sätt. Var snäll och formulera en \'bug\'-rapport.';
 $string['formulaerror'] = 'Fel i formlerna!';
 $string['fractionsaddwrong'] = 'De positiva betyg Du valt kan inte summeras till 100%.<br />Istället kommer de upp till {$a}%
 <br />Vill Du gå tillbaka och ändra denna fråga?';
@@ -432,7 +420,6 @@ $string['hidereordertool'] = 'Dölj verktyget för revidering av ordningsföljde
 $string['history'] = 'Historik över responser:';
 $string['howquestionsbehave_desc'] = 'Förvald inställning för hur frågor beter sig i ett test.';
 $string['imagedisplay'] = 'Bild att visa';
-$string['import'] = 'Importera';
 $string['importcategory'] = 'importera kategori';
 $string['importerror'] = 'Ett fel inträffade i samband med genomförande av importen';
 $string['importfilearea'] = 'Importen från filen finns redan i kursfilerna...';
@@ -456,8 +443,6 @@ $string['inprogress'] = 'Pågår';
 $string['introduction'] = 'Introduktion';
 $string['invalidattemptid'] = 'Det finns inget försök med detta ID';
 $string['invalidcategory'] = 'ID för kategori är ogiltigt';
-$string['invalidnumericanswer'] = 'Ett av de svar Du matade in var inte ett giltigt tal.';
-$string['invalidnumerictolerance'] = 'En av de toleranser Du matade in var inte ett giltigt tal.';
 $string['invalidoverrideid'] = 'Ogiltigt id för överskridande';
 $string['invalidquestionid'] = 'Ogiltigt id för fråga';
 $string['invalidquizid'] = 'Ogiltigt id för test';
@@ -513,7 +498,6 @@ $string['modulenameplural'] = 'Test';
 $string['moveselectedonpage'] = 'Flytta de valda frågorna till sidan: {$a}';
 $string['multichoice'] = 'Flerval';
 $string['multipleanswers'] = 'Välj minst ett svar';
-$string['multiplier'] = 'Multiplikator';
 $string['mustbesubmittedby'] = 'Detta försöket måste skickas in av {$a}.';
 $string['name'] = 'Namn';
 $string['navmethod'] = 'Navigationsmetod';
@@ -866,7 +850,6 @@ $string['shuffle'] = 'Blanda om';
 $string['shuffleanswers'] = 'Frågorna skall ges i slumpmässig ordning';
 $string['shuffledrandomly'] = 'Slumpmässigt ändrad ordningsföljd';
 $string['shufflequestions'] = 'Svarsalternativen skall ges i slumpmässig ordning';
-$string['shufflequestionsselected'] = 'Blanda frågor har ställts in, så vissa åtgärder som rör sidor är inte tillgängliga. För att ändra blandningsinställningen, {$a}.';
 $string['shufflewithin'] = 'Blanda om inom frågorna';
 $string['shufflewithin_help'] = '<p>Om du aktiverar det här alternativet då kommer de delar som bygger upp
 de enskilda frågorna att slumpmässigt blandas varje gång en student/elev/deltagare/lärande
@@ -951,7 +934,6 @@ $string['unfinished'] = 'öppen';
 $string['ungraded'] = 'Inte bedömd/betygssatt';
 $string['unit'] = 'Enhet';
 $string['unknowntype'] = 'Frågetypen stödjs inte på rad {$a}. Hänsyn kommer inte att tas till frågan.';
-$string['unusedcategorydeleted'] = 'Den här kategorin har tagits bort eftersom frågorna inte användes på servern längre efter det att kursen tagits bort.';
 $string['updatesettings'] = 'Uppdatera inställningarna för test';
 $string['updatingatttemptgrades'] = 'Uppdaterar betyg för försök.';
 $string['updatingfinalgrades'] = 'Uppdaterar slutliga betyg.';

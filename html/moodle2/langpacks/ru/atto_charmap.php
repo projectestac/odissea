@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_charmap', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['alefsymbol'] = 'алеф (кардинальное число беск�
 $string['almostequalto'] = 'практически равно';
 $string['alpha'] = 'альфа';
 $string['alpha_caps'] = 'Альфа';
+$string['amacron'] = 'a - макрон';
+$string['amacron_caps'] = 'A - макрон';
 $string['ampersand'] = 'Амперсанд';
 $string['angle'] = 'угол';
 $string['approximatelyequalto'] = 'приблизительно равно';
@@ -89,6 +91,8 @@ $string['ediaeresis_caps'] = 'E  с умляутом';
 $string['egrave'] = 'e с грависом';
 $string['egrave_caps'] = 'E с грависом';
 $string['elementof'] = 'входит в множество';
+$string['emacron'] = 'e - макрон';
+$string['emacron_caps'] = 'E - макрон';
 $string['emdash'] = 'длинное тире';
 $string['emspace'] = 'длинный пробел';
 $string['endash'] = 'черточка (дефис, короткое тире)';
@@ -121,10 +125,13 @@ $string['idiaeresis'] = 'i c умляутом';
 $string['idiaeresis_caps'] = 'I c умляутом';
 $string['igrave'] = 'i с грависом';
 $string['igrave_caps'] = 'I с грависом';
+$string['imacron'] = 'i - макрон';
+$string['imacron_caps'] = 'I - макрон';
 $string['imaginarypart'] = 'мнимая часть';
 $string['infinity'] = 'бесконечность';
 $string['insertcharacter'] = 'Вставка символа';
 $string['integral'] = 'интеграл';
+$string['interrobang'] = 'интерробанг (?!)';
 $string['intersection'] = 'пересечение';
 $string['invertedexclamationmark'] = 'перевернутый знак вопроса';
 $string['iota'] = 'йота';
@@ -181,6 +188,8 @@ $string['odiaeresis'] = 'o с умляутом';
 $string['odiaeresis_caps'] = 'O с умляутом';
 $string['ograve'] = 'o с грависом';
 $string['ograve_caps'] = 'O с грависом';
+$string['omacron'] = 'o - макрон';
+$string['omacron_caps'] = 'O - макрон';
 $string['omega'] = 'омега';
 $string['omega_caps'] = 'Омега';
 $string['omicron'] = 'омикрон';
@@ -261,6 +270,8 @@ $string['udiaeresis'] = 'u с умляутом';
 $string['udiaeresis_caps'] = 'U с умляутом';
 $string['ugrave'] = 'u с грависом';
 $string['ugrave_caps'] = 'U с грависом';
+$string['umacron'] = 'u - макрон';
+$string['umacron_caps'] = 'U - макрон';
 $string['union'] = 'объединение';
 $string['upsilon'] = 'ипсилон';
 $string['upsilon_caps'] = 'Ипсилон';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'journal', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['pluginadministration'] = '日誌モジュール管理';
 $string['pluginname'] = '日誌';
 $string['rate'] = '評価';
 $string['removeentries'] = 'すべてのエントリを削除する';
+$string['removemessages'] = 'すべての日誌エントリを削除する';
 $string['saveallfeedback'] = '私のフィードバックすべてを保存する';
 $string['showoverview'] = '日誌概要をマイホームに表示する';
 $string['showrecentactivity'] = '最近の活動を表示する';

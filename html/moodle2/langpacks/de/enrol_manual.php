@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Möchten Sie diese Einschreibungen wirk
 $string['defaultperiod'] = 'Teilnahmedauer';
 $string['defaultperiod_desc'] = 'Die standardmäßige Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt. Wenn dieser Wert 0 ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
 $string['defaultperiod_help'] = 'Die standardmäßige Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
+$string['defaultstart'] = 'Standardmäßiger Einschreibebeginn';
 $string['deleteselectedusers'] = 'Ausgewählte Nutzereinschreibungen löschen';
 $string['editselectedusers'] = 'Ausgewählte Nutzereinschreibungen bearbeiten';
 $string['enrolledincourserole'] = 'In \'{$a->course}\' als \'{$a->role}\' eingeschrieben';
@@ -56,9 +57,11 @@ $string['expirymessageenrollersubject'] = 'Benachrichtigung zum Teilnahmeende';
 $string['manual:config'] = 'Manuelle Einschreibung verwalten';
 $string['manual:enrol'] = 'Nutzer/innen einschreiben';
 $string['manual:manage'] = 'Nutzereinschreibung verwalten';
+$string['manualpluginnotinstalled'] = 'Das Plugin \'Manuelle Einschreibung\' ist nicht installiert.';
 $string['manual:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';
 $string['manual:unenrolself'] = 'Selbst aus dem Kurs abmelden';
 $string['messageprovider:expiry_notification'] = 'Mitteilung beim Ablauf der manuellen Einschreibung';
+$string['now'] = 'Jetzt';
 $string['pluginname'] = 'Manuelle Einschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Manuelle Einschreibung\' erlaubt es, Nutzer/innen manuell in einen Kurs einzuschreiben. Die Einschreibung in einen Kurs kann von den Trainer/innen (oder jemandem mit passenden Rechten) durchgeführt werden. Das Plugin sollte normalerweise aktiviert sein, da andere Einschreibeplugins (z.B. Selbsteinschreibung) darauf zugreifen.';
 $string['status'] = 'Manuelle Einschreibung';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'sv', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'sv', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,6 +92,7 @@ $string['resourcecontent'] = 'Filer och undermappar';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resource:exportresource'] = 'Exportera resurs';
 $string['resource:view'] = 'Visa resurs';
+$string['search:activity'] = 'Fil';
 $string['selectmainfile'] = 'Var snäll och välj huvudfilen genom att klicka på ikonen bredvid filnamnet. ';
 $string['showsize'] = 'Visa storlek';
 $string['showsize_desc'] = 'Visa filstorleken på kurssidan?';

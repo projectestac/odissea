@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apiv1migration_message_content'] = 'В рамках недавнего обновления Moodle до версии 2.6, плагин портфолио Box был отключен. Чтобы его снова включить, портфолио нужно перенастроить, как описано в документации {$a->docsurl}.';
-$string['apiv1migration_message_small'] = 'Этот плагин был отключен, так как он требует настройки, как описано в документации по миграции Box APIv1.';
-$string['apiv1migration_message_subject'] = 'Важная информация относительно плагина портфолио Box.';
 $string['clientid'] = 'ID клиента';
 $string['clientsecret'] = 'Секретный ключ клиента';
 $string['existingfolder'] = 'Поместить файл(ы) в существующий каталог';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML com anexos';
 $string['format_spreadsheet'] = 'Folha de cálculo';
 $string['format_text'] = 'Texto simples';
 $string['format_video'] = 'Vídeo';
-$string['hidden'] = 'Oculto';
 $string['highdbsizethreshold'] = 'Tamanho da base de dados para transferências de alto débito';
 $string['highdbsizethresholddesc'] = 'Número de registos na base de dados acima do qual será considerado que a transferência demorará muito tempo';
 $string['highfilesizethreshold'] = 'Tamanho de ficheiro para transferências de alto débito';
@@ -111,6 +110,8 @@ $string['instanceismisconfigured'] = 'Esta instância de Portefólio não foi co
 $string['instancenotdelete'] = 'Erro ao apagar o portefólio';
 $string['instancenotsaved'] = 'Erro ao guardar o portefólio';
 $string['instancesaved'] = 'O portefólio foi gravado com sucesso';
+$string['intro'] = 'Os conteúdos que criou, tais como submissões de trabalhos, tópicos de discussão e publicações em blogues, podem ser exportados para um portfólio ou descarregados.<br>
+Poderá esconder qualquer portfólio que não deseje utilizar, desta forma o mesmo não será listado como uma opção para exportar os conteúdos.';
 $string['invalidaddformat'] = 'O formato de adição passado a portfolio_add_button é inválido. O valor "{$a}" deve ser um de PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Não é possível encontrar a propriedade ({$a}) no portfolio_button';
 $string['invalidconfigproperty'] = 'Não é possível encontrar esta propriedade de configuração ({$a->property} de {$a->class})';
@@ -174,6 +175,7 @@ $string['save'] = 'Guardar';
 $string['selectedformat'] = 'Selecionar formato de exportação';
 $string['selectedwait'] = 'Selecionar para colocar em espera?';
 $string['selectplugin'] = 'Selecionar destino';
+$string['showhide'] = 'Mostrar / esconder';
 $string['singleinstancenomultiallowed'] = 'Apenas está disponível uma instância do módulo. Este módulo não permite mais do que uma exportação por sessão e já existe uma exportação ativa nesta sessão a usar este módulo!';
 $string['somepluginsdisabled'] = 'Foram desativados módulos de portefólio por estarem mal configurados ou por dependerem de elementos que estão mal configurados:';
 $string['sure'] = 'Tem a certeza de que quer apagar "{$a}"? Este procedimento é irreversível.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,12 +39,15 @@ $string['customtitles'] = 'Títulos personalizados';
 $string['customtitles_help'] = 'Normalmente o título do capítulo é mostrado no índice e como cabeçalho por cima do conteúdo.
 
 Se ativar os titulos personalizados, o título do capítulo não será exibido como cabeçalho por cima do conteúdo. Neste caso, poderá introduzir no conteúdo um título diferente (talvez mais longo que o título do capítulo).';
+$string['deletechapter'] = 'Apagar capítulo "{$a}"';
+$string['editchapter'] = 'Editar capítulo "{$a}"';
 $string['editingchapter'] = 'Editar capítulo';
 $string['errorchapter'] = 'Ocorreu um erro ao ler o capítulo do livro';
 $string['eventchaptercreated'] = 'Capítulo criado';
 $string['eventchapterdeleted'] = 'Capítulo apagado';
 $string['eventchapterupdated'] = 'Capítulo atualizado';
 $string['eventchapterviewed'] = 'Capítulo visualizado';
+$string['hidechapter'] = 'Esconder capítulo "{$a}"';
 $string['modulename'] = 'Livro';
 $string['modulename_help'] = 'O recurso Livro permite que o professor crie um conteúdo com várias páginas com formato idêntico a um livro, com capítulos e subcapítulos. O Livro pode conter texto e elementos multimédia e é útil para exibir informação extensa que pode ser dividida em capítulos.
 
@@ -55,9 +58,19 @@ O Livro pode ser utilizado para:
 * Disponibilizar um portefólio com trabalhos do aluno.';
 $string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Livros';
+$string['movechapterdown'] = 'Mover capítulo "{$a}" para baixo';
+$string['movechapterup'] = 'Mover capítulo "{$a}" para cima';
 $string['navexit'] = 'Sair do livro';
+$string['navimages'] = 'Imagens';
 $string['navnext'] = 'Seguinte';
+$string['navoptions'] = 'Opções disponíveis para as hiperligações de navegação';
+$string['navoptions_desc'] = 'Opções para exibir a navegação nas páginas do livro';
 $string['navprev'] = 'Anterior';
+$string['navstyle'] = 'Estilo da navegação';
+$string['navstyle_help'] = '* Imagens - Ícones que são utilizados para navegar
+* Texto - Títulos de capítulos que são utilizados para navegar';
+$string['navtext'] = 'Texto';
+$string['navtoc'] = 'Apenas TOC';
 $string['nocontent'] = 'Ainda não foi adicionado conteúdo a este livro.';
 $string['numbering'] = 'Formatação dos capítulos';
 $string['numbering0'] = 'Nenhum';
@@ -73,6 +86,9 @@ $string['numberingoptions_desc'] = 'Opções de formatação usadas para exibir 
 $string['page-mod-book-x'] = 'Qualquer página do Livro';
 $string['pluginadministration'] = 'Administração do Livro';
 $string['pluginname'] = 'Livro';
+$string['search:activity'] = 'Livro - informações sobre o recurso';
+$string['search:chapter'] = 'Livro - capítulos';
+$string['showchapter'] = 'Mostrar capítulo "{$a}"';
 $string['subchapter'] = 'Subcapítulo';
 $string['subchapternotice'] = '(Apenas disponível quando o primeiro capitulo está criado)';
 $string['subplugintype_booktool'] = 'Ferramenta Livro';

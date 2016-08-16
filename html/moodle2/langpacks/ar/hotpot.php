@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'hotpot', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   hotpot
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,15 +37,15 @@ $string['feedbackwebpage'] = 'صفحة ويب';
 $string['giveup'] = 'أترك';
 $string['hotpot:view'] = 'استخدم الاختبار';
 $string['ignored'] = 'تجاهل';
-$string['inprogress'] = 'مستمر';
-$string['modulename'] = 'امتحان هوت بوتيتوز';
-$string['modulenameplural'] = 'امتحانات هوت بوتيتوز';
+$string['inprogress'] = 'قيد التنفيذ';
+$string['modulename'] = 'اختبار هوت بوتيتو';
+$string['modulenameplural'] = 'اختبارات هوت بوتيتو';
 $string['navigation_none'] = 'لا شئ';
 $string['noactivity'] = 'لا يوجد نشاط';
 $string['outputformat'] = 'التنسيق المخرج';
 $string['outputformat_best'] = 'الأفضل';
 $string['penalties'] = 'غرامات';
-$string['pluginname'] = 'امتحان هوت بوتيتوز';
+$string['pluginname'] = 'وحدة هوت بوتيتو';
 $string['questionshort'] = 'س - {$a}';
 $string['score'] = 'الدرجة';
 $string['studentfeedback'] = 'معلومات للطالب';

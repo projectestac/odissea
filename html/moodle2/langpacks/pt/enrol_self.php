@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'A inscrição está desativada ou inativa';
+$string['canntenrolearly'] = 'Ainda não é possível inscrever-se; as inscrições iniciam a {$a}.';
+$string['canntenrollate'] = 'Não é possível inscrever mais utilizadores, pois as inscrições terminaram a {$a}.';
 $string['cohortnonmemberinfo'] = 'Apenas membros do grupo global \'{$a}\' se podem autoinscrever';
 $string['cohortonly'] = 'Apenas membros do grupo global';
 $string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um grupo global específico. Note que a alteração dessa configuração não tem efeito sobre as inscrições existentes.';
 $string['customwelcomemessage'] = 'Mensagem personalizada de boas-vindas';
-$string['customwelcomemessage_help'] = 'Pode definir uma mensagem personalizada em texto simples ou Autoformatação-Moodle, incluíndo código HTML e tags multi-lang . Os seguintes espaços reservados podem ser incluídos na mensagem: * Nome da disciplina {$a->coursename} * Link para a página de perfil do utilizador {$a->profileurl}';
+$string['customwelcomemessage_help'] = 'Pode definir uma mensagem personalizada em texto simples ou Autoformatação-Moodle, incluíndo código HTML e tags multi-lang .
+
+Os seguintes espaços reservados podem ser incluídos na mensagem:
+
+* Nome da disciplina {$a->coursename}
+* Hiperligação para a página de perfil do utilizador {$a->profileurl}
+* E-mail do utilizador {$a->email}
+* Nome completo do utilizador {$a->fullname}';
 $string['defaultrole'] = 'Atribuição de papel predefinida';
 $string['defaultrole_desc'] = 'Selecione o papel que deve ser atribuído aos utilizadores durante a inscrição.';
 $string['enrolenddate'] = 'Data de fim';
@@ -61,6 +70,7 @@ $string['groupkey_desc'] = 'Usar senhas de inscrição de grupo como configuraç
 $string['groupkey_help'] = 'Para além de restringir o acesso à disciplina apenas aos utilizadores que têm a senha de inscrição, é possível definir senhas de inscrição para grupos, o que faz com que os utilizadores, ao se inscreverem na disciplina, fiquem automaticamente integrados num grupo.
 
 Nota: Uma senha de inscrição para a disciplina deve ser especificada nas configurações de autoinscrição, bem como as senhas de inscrição do grupo nas configurações do grupo.';
+$string['keyholder'] = 'Deve ter recebido esta chave de inscrição de:';
 $string['longtimenosee'] = 'Remover inscrições inativas há mais de';
 $string['longtimenosee_help'] = 'Tempo limite após o qual os utilizadores que não acedam à disciplina durante muito tempo verão a sua inscrição cancelada.';
 $string['maxenrolled'] = 'Número máximo de inscrições permitidas';
@@ -85,6 +95,7 @@ $string['requirepassword'] = 'Pedir senha de inscrição';
 $string['requirepassword_desc'] = 'Esta configuração faz com que as novas disciplinas criadas peçam sempre senha de inscrição e evita que as disciplinas que já existem possam deixar de pedir essa senha.';
 $string['role'] = 'Atribuir papel';
 $string['self:config'] = 'Configurar instâncias de auto-inscrição';
+$string['self:holdkey'] = 'Aparecer como titular da chave de inscrição';
 $string['self:manage'] = 'Gerir utilizadores inscritos';
 $string['self:unenrol'] = 'Remover inscrições de alunos desta disciplina';
 $string['self:unenrolself'] = 'Remover a sua inscrição desta disciplina';

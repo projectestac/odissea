@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tags', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix';
 $string['alltags'] = 'Totes les etiquetes:';
+$string['anycollection'] = 'Qualsevol';
+$string['anytype'] = 'Totes';
 $string['arrowtitle'] = 'Cliqueu aquí per introduir el text suggerit (en lletres grises)';
 $string['configtitle'] = 'Títol del bloc';
 $string['coursetags'] = 'Etiquetes del curs:';
-$string['defaultdisplay'] = 'Tipus d\'etiqueta que es mostrarà';
+$string['defaultdisplay'] = 'Mostra les etiquetes';
 $string['disabledtags'] = 'Les etiquetes estan desactivades';
 $string['edit'] = 'edita...';
 $string['editdeletemytag'] = 'Elimina l\'etiqueta d\'aquest curs:';
@@ -68,12 +70,19 @@ $string['mytags'] = 'Les meves etiquetes:';
 $string['notagsyet'] = 'Cap etiqueta encara';
 $string['please'] = 'Si us plau';
 $string['pluginname'] = 'Etiquetes';
+$string['recursivecontext'] = 'Inclou els contexts inferiors';
+$string['recursivecontext_help'] = 'Si està desmarcada, es mostraran les etiquetes dels elements en el context especificat anteriorment, però no les etiquetes dels elements en contexts inferiors. Per exemple, les etiquetes dels cursos es podran mostrar, però no les etiquetes d\'activitats del curs.';
 $string['select'] = 'Selecciona...';
 $string['showcoursetags'] = 'Mostra les etiquetes del curs';
 $string['showcoursetagsdef'] = 'Mostra les característiques del curs al bloc d\'etiquetes, permetent als estudiants etiquetar cursos.';
+$string['standardonly'] = 'Només les estàndards';
 $string['suggestedtagthisunit'] = 'Etiqueta suggerida per a aquest curs:';
+$string['tagcollection'] = 'Col·lecció d\'etiquetes';
+$string['tagcollection_help'] = 'Seleccioneu una col·lecció de la qual mostrar les etiquetes. Si seleccioneu «Qualsevol» es mostraran les etiquetes de totes les col·leccions, excepte les marcades amb *';
+$string['taggeditemscontext'] = 'Context d\'elements etiquetats';
+$string['taggeditemscontext_help'] = 'Podeu limitar el núvol d\'etiquetes a les etiquetes que estan presents a la categoria actual del curs, al curs, o al mòdul';
 $string['tags'] = 'etiquetes';
 $string['tags:addinstance'] = 'Afegeix un bloc nou d\'etiquetes';
-$string['tags:myaddinstance'] = 'Afegir un bloc nou d\'etiquetes a la pàgina «El meu Moodle»';
+$string['tags:myaddinstance'] = 'Afegeix un bloc nou d\'etiquetes a la pàgina del Tauler';
 $string['tagthisunit'] = 'Etiqueta aquest curs:';
 $string['tagunits'] = 'etiqueteu els vostres cursos favorits';

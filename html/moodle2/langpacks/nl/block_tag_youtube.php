@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_tag_youtube', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Gelijk welke categorie';
-$string['apierror'] = 'De Youtube API sleutel is niet ingesteld. Neem contact op met je systeembeheerder.';
+$string['apierror'] = 'De YouTube API sleutel is niet ingesteld. Neem contact op met je systeembeheerder.';
 $string['apikey'] = 'API sleutel';
 $string['apikeyinfo'] = 'Haal een <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> voor jouw Moodle site.';
 $string['autosvehicles'] = 'Auto\'s en voertuigen';
@@ -44,9 +44,9 @@ $string['newspolitics'] = 'Nieuws en politiek';
 $string['numberofvideos'] = 'Aantal filmpjes';
 $string['peopleblogs'] = 'Mensen en blogs';
 $string['petsanimals'] = 'Huisdieren';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
 $string['requesterror'] = 'Kon geen gegevens ophalen van de server. Neem contact op met je systeembeheerder als het probleem blijft aanhouden.';
 $string['scienceandtech'] = 'Wetenschap &amp; Techniek';
 $string['sports'] = 'Sport';
-$string['tag_youtube:addinstance'] = 'Voeg een nieuw youtube-blok toe';
+$string['tag_youtube:addinstance'] = 'Voeg een nieuw YouTube-blok toe';
 $string['travel'] = 'Reizen';

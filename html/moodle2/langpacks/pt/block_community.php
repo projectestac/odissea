@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['blocks'] = 'Blocos';
 $string['cannotselecttopsubject'] = 'Não é possível selecionar um tema';
 $string['comments'] = 'Comentários ({$a})';
 $string['community:addinstance'] = 'Adicionar um novo bloco Pesquisar comunidades';
-$string['community:myaddinstance'] = 'Adicionar um novo bloco Pesquisar comunidades à Minha página principal';
+$string['community:myaddinstance'] = 'Adicionar um novo bloco Pesquisar comunidades ao Painel do utilizador';
 $string['contentinfo'] = 'Assunto: {$a->subject} - Público: {$a->audience} - Nível de ensino: {$a->educationallevel}';
 $string['continue'] = 'Continuar';
 $string['contributors'] = 'Contributos: {$a}';
@@ -93,7 +93,7 @@ $string['orderbyname'] = 'Nome';
 $string['orderbynewest'] = 'Mais recente';
 $string['orderbypublisher'] = 'Publicado por';
 $string['orderbyratingaverage'] = 'Avaliação';
-$string['outcomes'] = 'Resultados: {$a}';
+$string['outcomes'] = 'Resultados da aprendizagem: {$a}';
 $string['pluginname'] = 'Pesquisar comunidades';
 $string['rateandcomment'] = 'Avaliar e comentar';
 $string['rating'] = 'Avaliação';

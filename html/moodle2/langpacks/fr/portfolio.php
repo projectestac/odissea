@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'portfolio', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML avec annexes';
 $string['format_spreadsheet'] = 'Feuille de calculs';
 $string['format_text'] = 'Texte pur';
 $string['format_video'] = 'Vidéo';
-$string['hidden'] = 'Caché';
 $string['highdbsizethreshold'] = 'Taille de base de donnée élevée';
 $string['highdbsizethresholddesc'] = 'Nombre d\'enregistrements de la base de données au delà duquel le temps de transfert est considéré comme élevé';
 $string['highfilesizethreshold'] = 'Taille de transfert élevée';
@@ -111,6 +110,7 @@ $string['instanceismisconfigured'] = 'La configuration du portfolio n\'est pas c
 $string['instancenotdelete'] = 'Échec de la suppression du portfolio';
 $string['instancenotsaved'] = 'Échec de la sauvegarde du portfolio';
 $string['instancesaved'] = 'Le portfolio a été enregistré';
+$string['intro'] = 'Le contenu que vous avez créé, par exemple les devoirs que vous avez remis, les messages de forum ou les articles de blog, peuvent être exportés vers un portfolio ou téléchargées.<br />Les portfolios que vous ne voulez pas utiliser peuvent être cachés de la liste des options d\'exportation, afin de ne pas encombrer l\'affichage.';
 $string['invalidaddformat'] = 'Format à ajouter non valide envoyé à la fonction portfolio_add_button. {$a} doit être de la forme PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Impossible de trouver cette propriété ({$a}) de portfolio_button';
 $string['invalidconfigproperty'] = 'Impossible de trouver cette propriété de configuration ({$a->property} de {$a->class})';
@@ -174,6 +174,7 @@ $string['save'] = 'Enregistrer';
 $string['selectedformat'] = 'Format d\'exportation sélectionné';
 $string['selectedwait'] = 'Sélection à attendre ?';
 $string['selectplugin'] = 'Sélectionner la destination';
+$string['showhide'] = 'Afficher/cacher';
 $string['singleinstancenomultiallowed'] = 'Une seule instance du plugin de portfolio est disponible. Elle ne supporte pas les exportations multiple durant une même session et une exportation est actuellement en cours durant cette session.';
 $string['somepluginsdisabled'] = 'Certains plugins de portfolio ont été désactivés, soit parce qu\'ils ne sont pas correctement configurés, soit parce qu\'ils requièrent d\'autres composants. Il s\'agit des plugins suivants.';
 $string['sure'] = 'Voulez-vous vraiment supprimer « {$a} »? L\'action est irrémédiable.';

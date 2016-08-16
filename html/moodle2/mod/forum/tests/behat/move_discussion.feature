@@ -28,7 +28,6 @@ Feature: A teacher can move discussions between forums
     And I add a new discussion to "Test forum 1" forum with:
       | Subject | Discussion 1 |
       | Message | Test post message |
-    And I wait "1" seconds
     And I log out
     And I log in as "teacher1"
     And I follow "Course 1"
@@ -37,3 +36,5 @@ Feature: A teacher can move discussions between forums
     When I set the field "jump" to "Test forum 2"
     And I press "Move"
     Then I should see "This discussion has been moved to 'Test forum 2'."
+    And I press "Move"
+    And I should see "Discussion 1"

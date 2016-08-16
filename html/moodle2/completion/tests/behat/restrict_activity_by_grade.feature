@@ -17,9 +17,8 @@ Feature: Restrict activity availability through grade conditions
       | user | course | role |
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
-    And the following config values are set as admin:
-      | enableavailability | 1 |
     And I log in as "teacher1"
+    #And I am on site homepage
     And I follow "Course 1"
     And I turn editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
@@ -42,6 +41,7 @@ Feature: Restrict activity availability through grade conditions
     And I press "Save and return to course"
     And I log out
     When I log in as "student1"
+    And I am on site homepage
     And I follow "Course 1"
     Then I should see "Not available unless: You achieve a required score in Grade assignment"
     And "Test page name" activity should be hidden
@@ -53,15 +53,19 @@ Feature: Restrict activity availability through grade conditions
     And I should see "Submitted for grading"
     And I log out
     And I log in as "teacher1"
+    And I am on site homepage
     And I follow "Course 1"
     And I follow "Grade assignment"
-    And I follow "View/grade all submissions"
-    And I click on "Grade Student First" "link" in the "Student First" "table_row"
+    And I follow "View all submissions"
+    And I click on "Grade" "link" in the "Student First" "table_row"
     And I set the following fields to these values:
       | Grade | 21 |
     And I press "Save changes"
+    And I press "Ok"
+    And I follow "Edit settings"
     And I log out
     And I log in as "student1"
+    And I am on site homepage
     And I follow "Course 1"
     And "Test page name" activity should be visible
     And I should not see "Not available unless: You achieve a required score in Grade assignment"

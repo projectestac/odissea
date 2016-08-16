@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'role', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,13 +84,9 @@ $string['badges:viewbadges'] = 'Ver as distincións dispoñíbeis sen telas gañ
 $string['badges:viewotherbadges'] = 'Ver as distincións públicas nos perfís doutros usuarios';
 $string['block:edit'] = 'Editar a configuración dun bloque';
 $string['block:view'] = 'Ver bloque';
-$string['blog:associatecourse'] = 'Esta capacidade é obsoleta e non fai nada.';
-$string['blog:associatemodule'] = 'Esta capacidade é obsoleta e non fai nada.';
 $string['blog:create'] = 'Crear novos artigos de blog';
 $string['blog:manageentries'] = 'Editar e xestionar artigos';
 $string['blog:manageexternal'] = 'Editar e xestionar blogs externos';
-$string['blog:manageofficialtags'] = 'Xestionar etiquetas oficiais';
-$string['blog:managepersonaltags'] = 'Xestionar etiquetas personais';
 $string['blog:search'] = 'Buscar artigos de blog';
 $string['blog:view'] = 'Ver artigos de blog';
 $string['blog:viewdrafts'] = 'Ver versións preliminares de artigos de blog';
@@ -226,7 +222,6 @@ $string['grade:unlock'] = 'Desbloquear cualificacións ou elementos';
 $string['grade:view'] = 'Ver cualificacións propias';
 $string['grade:viewall'] = 'Ver cualificacións doutros usuarios';
 $string['grade:viewhidden'] = 'Ver cualificacións agochadas polo propietario';
-$string['hidden'] = 'Agochado';
 $string['highlightedcellsshowdefault'] = 'Os permisos seleccionados na seguinte táboa amosan os permisos predeterminados para para o arquetipo de seleccionado anteriormente.';
 $string['highlightedcellsshowinherit'] = 'As celas resaltadas na seguinte táboa amosan o permiso (se o hai) que se pode herdar. Ademais dos permisos que realmente quere cambiar, debe deixar todo listo para os permisos a herdar.';
 $string['inactiveformorethan'] = 'inactivo máis de {$a->timeperiod}';
@@ -252,8 +247,8 @@ $string['manageroles'] = 'Xestionar roles';
 $string['maybeassignedin'] = 'Tipos de contexto no pode asignarse este rol';
 $string['morethan'] = 'Máis de {$a}';
 $string['multipleroles'] = 'Roles múltiplos';
-$string['my:configsyspages'] = 'Configura os modelos para as páxinas da área persoal';
-$string['my:manageblocks'] = 'Xestionar os bloques da páxina da área persoal';
+$string['my:configsyspages'] = 'Configurar os modelos do sistema para as páxinas do taboleiro';
+$string['my:manageblocks'] = 'Xestionar bloques de páxina o meuMoodle';
 $string['neededroles'] = 'Roles con permiso';
 $string['nocapabilitiesincontext'] = 'Non hai permisos dispoñíbeis neste contexto';
 $string['noneinthisx'] = 'Ningún neste {$a}';

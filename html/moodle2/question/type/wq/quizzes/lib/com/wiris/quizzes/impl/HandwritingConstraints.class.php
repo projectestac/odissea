@@ -7,7 +7,7 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 			com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols = _hx_explode(" ", com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING);
 		}
 		if(com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts === null) {
-			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts = new _hx_array(array(new _hx_array(array("x", "X", "×")), new _hx_array(array(".", ",")), new _hx_array(array("2", "z", "Z")), new _hx_array(array("5", "s", "S", "\$")), new _hx_array(array("1", ",", "|", "'")), new _hx_array(array("i", "j")), new _hx_array(array("y", "4", "Y")), new _hx_array(array("p", "P")), new _hx_array(array("c", "C", "(")), new _hx_array(array("0", "o", "O", "°")), new _hx_array(array("Δ", "A")), new _hx_array(array("B", "β")), new _hx_array(array("∃", "3")), new _hx_array(array("9", "q", "g")), new _hx_array(array("9", "a")), new _hx_array(array("v", "V")), new _hx_array(array("r", "σ")), new _hx_array(array("t", "+")), new _hx_array(array("∈", "E")), new _hx_array(array("n", "h")), new _hx_array(array("k", "K")), new _hx_array(array("u", "U")), new _hx_array(array("w", "W"))));
+			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts = new _hx_array(array(new _hx_array(array("x", "X", "×")), new _hx_array(array(".", ",")), new _hx_array(array("2", "z", "Z")), new _hx_array(array("5", "s", "S", "\$")), new _hx_array(array("1", ",", "|", "'")), new _hx_array(array("i", "j")), new _hx_array(array("y", "4", "Y")), new _hx_array(array("p", "P")), new _hx_array(array("c", "C", "(", "⊂")), new _hx_array(array("0", "o", "O", "°")), new _hx_array(array("Δ", "A")), new _hx_array(array("B", "β")), new _hx_array(array("∃", "3")), new _hx_array(array("9", "q", "g")), new _hx_array(array("9", "a")), new _hx_array(array("v", "V")), new _hx_array(array("r", "σ")), new _hx_array(array("t", "+")), new _hx_array(array("∈", "E", "ε")), new _hx_array(array("n", "h")), new _hx_array(array("k", "K")), new _hx_array(array("u", "U", "∪")), new _hx_array(array("w", "W")), new _hx_array(array("d", "∂")), new _hx_array(array("∂", "a")), new _hx_array(array("∅", "θ")), new _hx_array(array("∩", "n"))));
 		}
 		if(com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded === null) {
 			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded = new _hx_array(array(new _hx_array(array("sin", "cos", "tan", "log"))));
@@ -97,46 +97,39 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 		$h->set("structure", $this->structure);
 		return com_wiris_util_json_JSon::encode($h);
 	}
-	public function pushSorted($a, $o) {
-		$i = 0;
-		while($i < $a->length && com_wiris_quizzes_impl_HTMLTools::compareStrings($a[$i], $o) < 0) {
-			$i++;
-		}
-		if($i === $a->length) {
-			$a->push($o);
-		} else {
-			if(com_wiris_quizzes_impl_HTMLTools::compareStrings($a[$i], $o) > 0) {
-				$a->insert($i, $o);
-			}
-		}
-	}
 	public function addStructureFromText($t) {
 		if(_hx_index_of($t, "/", null) !== -1) {
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$FRACTIONS);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$FRACTIONS);
 		}
 		if(_hx_index_of($t, "sqrt", null) !== -1 || _hx_index_of($t, "root", null) !== -1) {
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$RADICALS);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$RADICALS);
+		}
+		if(_hx_index_of($t, "\x0A", null) !== -1) {
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$MULTILINE);
 		}
 	}
 	public function addStructureFromMathML($m) {
 		if(_hx_index_of($m, "<mfrac", null) !== -1) {
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$FRACTIONS);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$FRACTIONS);
 		}
 		if(_hx_index_of($m, "<mroot", null) !== -1 || _hx_index_of($m, "<msqrt", null) !== -1) {
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$RADICALS);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$RADICALS);
 		}
 		if(_hx_index_of($m, "<munderover", null) !== -1 || _hx_index_of($m, "<munder", null) !== -1) {
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$BIGOPERATORS);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$BIGOPERATORS);
 		}
 		if(_hx_index_of($m, "<mtable", null) !== -1) {
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$PIECEWISE);
-			$this->pushSorted($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$MATRICES);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$PIECEWISE);
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$MATRICES);
+		}
+		if(_hx_index_of($m, "<mspace", null) !== -1) {
+			com_wiris_util_type_Arrays::insertSortedSet($this->structure, com_wiris_quizzes_impl_HandwritingConstraints::$MULTILINE);
 		}
 	}
 	public function addToken($t) {
 		if(!StringTools::startsWith($t, "#")) {
 			$t = com_wiris_util_xml_WXmlUtils::htmlUnescape($t);
-			$this->pushSorted($this->symbols, $t);
+			com_wiris_util_type_Arrays::insertSortedSet($this->symbols, $t);
 		}
 	}
 	public function addTagContent($s, $tag, $split) {
@@ -247,6 +240,7 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 	static $RADICALS = "Radical";
 	static $PIECEWISE = "PiecewiseFunction";
 	static $MATRICES = "Matrix";
+	static $MULTILINE = "Multiline";
 	static function readHandwritingConstraints($json) {
 		$hc = new com_wiris_quizzes_impl_HandwritingConstraints();
 		$obj = com_wiris_util_json_JSon::decode($json);
@@ -278,7 +272,7 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HandwritingConstraints'; }
 }
-com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING = "0 1 2 3 4 5 6 7 8 9 a A α b B β c C . , ... : cos cm d D dm Δ ÷ / e E = ∃ f " . "F ∀ g G γ ≥ > h H i I ∈ ∞ ∫ j J k K l L λ ≤ lim log { [ ( < m M μ n N ≠ o O p " . "P φ π ± ′ q Q r R → } ] ) s S σ sin √ ∑ ∏ t T tan θ × u U v V w W x X y Y z Z | - " . "! + ^ ° € \$ £ % frac";
+com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING = "0 1 2 3 4 5 6 7 8 9 a A α b B β c C . , ... : cos cm d D dm Δ ÷ / e E = ≈ " . "∃ f F ∀ g G γ ≥ > h H i I ∈ ∞ ∫ j J k K l L λ ≤ lim log { [ ( < m M μ n " . "N ≠ o O p P φ π ± ′ q Q r R → } ] ) s S σ sin √ ∑ ∏ t T tan θ × u U v V " . "w W x X y Y z Z frac | - ! + ~ ^ ° € \$ £ % ‰ ∂ ∇ ε ∅ ∪ ∩ ⊂ ⊃ ⊆ ⊇ ℙ " . "ℕ ℤ ℚ ℂ ℝ 𝕀 ⇒ #";
 function com_wiris_quizzes_impl_HandwritingConstraints_0(&$�this, &$content, &$end, &$i, &$s, &$split, &$start, &$tag) {
 	{
 		$s1 = new haxe_Utf8(null);

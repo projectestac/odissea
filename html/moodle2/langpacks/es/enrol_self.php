@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'es', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_self', language 'es', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Matriculación desactivada o inactiva';
+$string['canntenrolearly'] = 'No puede matricularse todavía; el periodo empieza en {$a}.';
+$string['canntenrollate'] = 'Ya no puede matricularse, ya que el periodo finalizó en  {$a}.';
 $string['cohortnonmemberinfo'] = 'Sólo los miembros de la cohorte \'{$a}\' pueden auto-matricularse.';
 $string['cohortonly'] = 'Sólo para los miembros de la cohorte';
 $string['cohortonly_help'] = 'La auto-matrícula puede ser restringida a los miembros de una cohorte específica. Cambiar esta configuración no tiene ningún efecto sobre las inscripciones ya existentes.';
@@ -34,8 +36,10 @@ $string['customwelcomemessage_help'] = 'Puede añadir un mensaje de bienvenida p
 
 Los siguientes marcadores pueden incluirse en el mensaje:
 
-* Nombre del Curso {$a->coursename}
-* Enlace a la página de perfil del usuario {$a->profileurl}';
+* Nombre del curso {$a->coursename}
+* Enlace a la página de perfil del usuario {$a->profileurl}
+* Email del usuario {$a->email}
+* Nombre completo del usuario {$a->fullname}';
 $string['defaultrole'] = 'Asignación de rol por defecto';
 $string['defaultrole_desc'] = 'Seleccione el rol que debe asignarse a los usuarios con auto-matriculación';
 $string['enrolenddate'] = 'Fecha límite';
@@ -65,6 +69,7 @@ $string['groupkey'] = 'Clave de matriculación del grupo de usuarios';
 $string['groupkey_desc'] = 'Por defecto, utilice claves de matriculación de grupo.';
 $string['groupkey_help'] = 'Además de restringir el acceso al curso a sólo aquellos que conocen la clave, el uso de una clave de acceso de grupo significa que los usuarios se agregan automáticamente al grupo cuando se inscriben en el curso.
 Nota: Una clave de acceso al curso debe especificarse en la configuración de la auto-matriculación, así como la clave de acceso a grupos en la configuración del grupo.';
+$string['keyholder'] = 'Debería haber recibido la clave de acceso de:';
 $string['longtimenosee'] = 'Dar de baja los inactivos después de';
 $string['longtimenosee_help'] = 'Si los usuarios no acceden a un curso durante mucho tiempo, entonces se les da de baja automáticamente. Este parámetro especifica este plazo de tiempo.';
 $string['maxenrolled'] = 'Número máximo de usuarios matriculados';
@@ -91,6 +96,7 @@ $string['requirepassword'] = 'Se precisa clave de matriculación';
 $string['requirepassword_desc'] = 'Se precisa clave de matriculación en nuevos cursos y se evita la eliminación de la clave de matriculación de los cursos existentes.';
 $string['role'] = 'Rol asignado por defecto';
 $string['self:config'] = 'Configure la auto-matriculación';
+$string['self:holdkey'] = 'Aparecer como poseedor de la clave de acceso';
 $string['self:manage'] = 'Gestionar usuarios matriculados';
 $string['self:unenrol'] = 'Dar de baja usuarios del curso';
 $string['self:unenrolself'] = 'Darse de baja del curso';

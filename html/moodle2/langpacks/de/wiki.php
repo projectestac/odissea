@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'wiki', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['defaultformat_help'] = 'Diese Option legt das Bearbeitungsformat von Wi
 * HTML - Der Texteditor ist verfügbar
 * Creole - Markup-Editor für Wikis mit Werkzeugleiste
 * NWiki - MediaWiki-ähnlicher Markup-Editor';
+$string['deleteallpages'] = 'Alle Wiki-Seiten löschen';
 $string['deletecomment'] = 'Kommentar wird gelöscht';
 $string['deletecommentcheck'] = 'Kommentar löschen';
 $string['deletecommentcheckfull'] = 'Möchten Sie den Kommentar wirklich löschen?';
@@ -184,7 +185,7 @@ $string['orphaned'] = 'Verwaiste Seiten';
 $string['orphaned_help'] = 'Liste von Seiten ohne Verlinkung von anderen Seiten';
 $string['overridelocks'] = 'Datensperren ändern';
 $string['overridinglocks'] = 'Datensperren werden geändert...';
-$string['pageexists'] = 'Diese Seite existiert bereits. Es wird dorthin weitergeleitet.';
+$string['pageexists'] = 'Diese Seite existiert bereits.';
 $string['pageindex'] = 'Seitenindex';
 $string['pageindex_help'] = 'Struktur dieses Wikis';
 $string['pageislocked'] = 'Jemand anderes bearbeitet gerade diese Seite. Versuchen Sie es in ein paar Minuten nochmal.';
@@ -219,12 +220,15 @@ $string['return'] = 'Zurück';
 $string['save'] = 'Speichern';
 $string['saving'] = 'Wikiseite wird gespeichert';
 $string['savingerror'] = 'Fehler beim Speichern';
+$string['search:activity'] = 'Wiki - Aktivitätsinformation';
+$string['search:collaborative_page'] = 'Wikiseiten - Gemeinsame Seiten';
 $string['searchcontent'] = 'Im Seiteninhalt suchen';
 $string['searchresult'] = 'Suchergebnisse:';
 $string['searchterms'] = 'Suchbegriffe';
 $string['searchwikis'] = 'Wiki durchsuchen';
 $string['special'] = 'Spezial';
 $string['tableofcontents'] = 'Inhaltsübersicht';
+$string['tagarea_wiki_pages'] = 'Wikiseiten';
 $string['tagsdeleted'] = 'Wiki-Schlagwörter wurden gelöscht';
 $string['tagtitle'] = 'Siehe Schlagwort \'{$a}\'';
 $string['teacherrating'] = 'Trainerwertung';

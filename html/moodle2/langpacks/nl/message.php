@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['contacts'] = 'Contactpersonen';
 $string['context'] = 'context';
 $string['defaultmessageoutputs'] = 'Standaard berichtenoutput';
 $string['defaults'] = 'Standaard';
+$string['deletemessage'] = 'Verwijder bericht';
+$string['deletemessageconfirmation'] = 'Weet je zeker dat je dit bericht wil verwijderen? Het zal alleen verwijderd worden van je berichtengeschiedenis. Het zal nog zichtbaar blijven voor de gebruiker die het bericht verstuurd of ontvangen heeft.';
 $string['deletemessagesdays'] = 'Aantal dagen voor oude boodschappen automatisch verwijderd worden';
 $string['disableall'] = 'Berichten tijdelijk uitschakelen';
 $string['disableall_help'] = 'Schakel tijdelijk alle berichten uit, behalve deze die met verplicht gemarkeerd zijn door de site beheerder';
@@ -56,10 +58,12 @@ $string['emptysearchstring'] = 'Je moet iets zoeken';
 $string['enabled'] = 'Ingeschakeld';
 $string['errorcallingprocessor'] = 'Fout bij het aanroepen van de opgegeven output';
 $string['errortranslatingdefault'] = 'Fout bij het vertalen van de standaardinstelling van de plugin. Systeemstandaarden worden gebruikt.';
+$string['errorwhilesendingmessage'] = 'Er is een fout opgetreden bij het versturen van het bericht. Probeer het later opnieuw.';
 $string['eventmessagecontactadded'] = 'Berichtcontact toegevoegd';
 $string['eventmessagecontactblocked'] = 'Berichtcontact geblokkeerd';
 $string['eventmessagecontactremoved'] = 'Berichtcontact verwijderd';
 $string['eventmessagecontactunblocked'] = 'Berichtcontact blokkering verwijderd';
+$string['eventmessagedeleted'] = 'Bericht verwijderd';
 $string['eventmessagesent'] = 'Bericht verzonden';
 $string['eventmessageviewed'] = 'Bericht bekeken';
 $string['forced'] = 'Verplicht';
@@ -86,6 +90,8 @@ $string['messagehistoryfull'] = 'Alle berichten';
 $string['messagenavigation'] = 'Berichtnavigatie:';
 $string['messageoutputs'] = 'Berichtenoutput';
 $string['messages'] = 'Berichten';
+$string['messagesent'] = 'Bericht verstuurd';
+$string['messagetosend'] = 'Te versturen bericht';
 $string['messaging'] = 'Berichten';
 $string['messagingblockednoncontact'] = '{$a} zal niet kunnen antwoorden, want je hebt al wie geen contactpersoon is,  geblokkeerd';
 $string['messagingdisabled'] = 'Berichten zijn uitgeschakeld op deze site, de boodschap zal per e-mail verstuurd worden.';
@@ -126,6 +132,7 @@ $string['search'] = 'Zoek';
 $string['searchcombined'] = 'Zoek mensen en berichten';
 $string['searchforperson'] = 'Zoek een persoon';
 $string['searchmessages'] = 'Zoek  berichten';
+$string['sendingmessage'] = 'Bericht wordt verstuurd';
 $string['sendingvia'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen';
 $string['sendingviawhen'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen wanneer {$a->state}';
 $string['sendmessage'] = 'Stuur bericht';
@@ -139,6 +146,7 @@ $string['thisconversation'] = 'deze conversatie';
 $string['timenosee'] = 'Minuten sinds ik de laatste keer online gezien ben';
 $string['timesent'] = 'Tijd verstuurd';
 $string['touserdoesntexist'] = 'Je kunt geen bericht sturen naar gebruikersID ({$a}) dat niet bestaat';
+$string['unabletomessageuser'] = 'Je hebt het recht niet om een bericht naar die gebruiker te sturen';
 $string['unblockcontact'] = 'deblokkeer deze contactpersoon';
 $string['unreadmessages'] = '{$a} ongelezen berichten';
 $string['unreadnewmessage'] = 'Nieuw bericht van {$a}';
@@ -146,3 +154,4 @@ $string['unreadnewmessages'] = '{$a} nieuwe berichten';
 $string['userisblockingyou'] = 'Deze gebruiker heeft je geblokkeerd om berichten naar hem te sturen';
 $string['userisblockingyounoncontact'] = '{$a} aanvaardt alleen berichten van mensen uit zijn lijst met contactpersonen.';
 $string['userssearchresults'] = '{$a} gebruikers gevonden';
+$string['viewconversation'] = 'Bekijk conversatie';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_replace', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,11 @@ $string['cannotfit'] = 'Замена длиннее оригинала и сок
 $string['disclaimer'] = 'Я понимаю риски этой операции:';
 $string['doit'] = 'Да, сделать это!';
 $string['excludedtables'] = 'Некоторые таблицы не обновляются при использовании замены текста. Это таблицы конфигурации, журналов, событий и сессий.';
+$string['invalidcharacter'] = 'Некорректные символы были найдены в тексте для поиска или замены.';
 $string['notifyfinished'] = '... завершено';
 $string['notifyrebuilding'] = 'Восстановление кэша курса ...';
 $string['notimplemented'] = 'К сожалению, эта возможность не реализована в драйвере вашей базы данных.';
-$string['notsupported'] = 'Этот скрипт не поддерживается, перед применением всегда делайте полную резервную копию! <br /> Эта операция не может быть отменена!';
+$string['notsupported'] = 'Этот скрипт стоит рассматривать как экспериментальный. Сделанные им изменения не могут быть отменены, поэтому перед запуском этого скрипта всегда нужно делать полную резервную копию!';
 $string['pageheader'] = 'Поиск и замена текста по всей базе данных';
 $string['pluginname'] = 'Поиск и замена в БД';
 $string['replacewith'] = 'Заменить на эту строку:';

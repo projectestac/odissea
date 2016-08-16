@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_user', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_user', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Einstellungen für \'Eigene Dateien\'';
+$string['configplugin'] = 'Einstellungen für \'Meine Dateien\'';
 $string['emptyfilelist'] = 'Es gibt keine Dateien anzuzeigen';
-$string['pluginname'] = 'Eigene Dateien';
+$string['pluginname'] = 'Meine Dateien';
 $string['pluginname_help'] = 'Dateien im privaten Benutzerbereich';
-$string['user:view'] = 'Eigene Dateien anzeigen';
+$string['user:view'] = 'Meine Dateien anzeigen';

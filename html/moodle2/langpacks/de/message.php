@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['contacts'] = 'Kontakte';
 $string['context'] = 'Kontext';
 $string['defaultmessageoutputs'] = 'Konfiguration';
 $string['defaults'] = 'Standard';
+$string['deletemessage'] = 'Nachricht löschen';
+$string['deletemessageconfirmation'] = 'Möchten Sie wirklich diese Nachricht löschen? Die Nachricht wird ausschließlich aus Ihrem Nachrichtenverlauf gelöscht, ist aber weiterhin bei der Person zu sehen, die Ihnen die Nachricht geschickt hat.';
 $string['deletemessagesdays'] = 'Anzahl von Tagen, nach denen Mitteilungen gelöscht werden';
 $string['disableall'] = 'Benachrichtungen vorübergehend ausschalten';
 $string['disableall_help'] = 'Benachrichtungen vorübergehend ausschalten, außer solchen, die vom Admin als \'zwingend\' markiert wurden.';
@@ -56,10 +58,12 @@ $string['emptysearchstring'] = 'Sie müssen einen Suchbegriff eingeben';
 $string['enabled'] = 'Aktiviert';
 $string['errorcallingprocessor'] = 'Fehler bei der angegebenen Ausgabe';
 $string['errortranslatingdefault'] = 'Fehler in der Plugin-Einstellung, stattdessen werden die Systemeinstellungen benutzt.';
+$string['errorwhilesendingmessage'] = 'Fehler beim Senden der Mitteilung. Versuchen Sie es später nochmal.';
 $string['eventmessagecontactadded'] = 'Nachichtenkontakt hinzugefügt';
 $string['eventmessagecontactblocked'] = 'Nachichtenkontakt blockiert';
 $string['eventmessagecontactremoved'] = 'Nachichtenkontakt entfernt';
 $string['eventmessagecontactunblocked'] = 'Nachichtenkontakt freigegeben';
+$string['eventmessagedeleted'] = 'Mitteilung gelöscht';
 $string['eventmessagesent'] = 'Nachricht gesendet';
 $string['eventmessageviewed'] = 'Angesehene Mitteilung';
 $string['forced'] = 'Zwingend';
@@ -86,6 +90,8 @@ $string['messagehistoryfull'] = 'Alle Mitteilungen';
 $string['messagenavigation'] = 'Mitteilungsnavigation';
 $string['messageoutputs'] = 'Mitteilungsversand';
 $string['messages'] = 'Mitteilungen';
+$string['messagesent'] = 'Mitteilung wurde gesendet';
+$string['messagetosend'] = 'Mitteilung zum Senden';
 $string['messaging'] = 'Mitteilungen';
 $string['messagingblockednoncontact'] = '{$a} kann nicht antworten, weil Sie fremde Kontakte gesperrt haben.';
 $string['messagingdisabled'] = 'Die Mitteilungen sind für diese Website deaktiviert, aber es werden stattdessen E-Mails verschickt.';
@@ -126,6 +132,7 @@ $string['search'] = 'Suche';
 $string['searchcombined'] = 'Personen und Mitteilungen suchen';
 $string['searchforperson'] = 'Suche nach einer Person';
 $string['searchmessages'] = 'Suche nach Mitteilungen';
+$string['sendingmessage'] = 'Mitteilung wird gesendet';
 $string['sendingvia'] = 'Nachrichtenausgabe \'{$a->provider}\' über \'{$a->processor}\'';
 $string['sendingviawhen'] = 'Nachrichtenausgabe \'{$a->provider}\' über \'{$a->processor}\' bei {$a->state}';
 $string['sendmessage'] = 'Mitteilung senden';
@@ -139,6 +146,7 @@ $string['thisconversation'] = 'diese Kommunikation';
 $string['timenosee'] = 'Minuten seit ich zuletzt online war';
 $string['timesent'] = 'Sendezeitpunkt';
 $string['touserdoesntexist'] = 'Sie können keine Nachricht an die Nutzer-ID ({$a}) senden, da diese nicht existiert';
+$string['unabletomessageuser'] = 'Sie haben kein Recht, eine Nachricht an diese Person zu senden.';
 $string['unblockcontact'] = 'Kontakt aktivieren';
 $string['unreadmessages'] = 'Ungelesene Mitteilungen ({$a}) ';
 $string['unreadnewmessage'] = 'Neue Mitteilung von {$a}';
@@ -146,3 +154,4 @@ $string['unreadnewmessages'] = 'Neue Mitteilungen ({$a})';
 $string['userisblockingyou'] = 'Diese Person hat Mitteilungen von Ihnen gesperrt.';
 $string['userisblockingyounoncontact'] = '{$a} akzeptiert ausschließlich Personen aus seiner Kontaktliste.';
 $string['userssearchresults'] = 'Gefundene Nutzer/innen: {$a} ';
+$string['viewconversation'] = 'Konversation anzeigen';

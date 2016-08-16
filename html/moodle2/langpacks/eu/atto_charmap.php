@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'atto_charmap', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['alefsymbol'] = 'alef simboloa';
 $string['almostequalto'] = '';
 $string['alpha'] = 'alpha';
 $string['alpha_caps'] = 'Alpha';
+$string['amacron'] = 'a - goi-marra';
+$string['amacron_caps'] = 'A - goi-marra';
 $string['ampersand'] = '& et ikurra';
 $string['angle'] = 'angelua';
 $string['approximatelyequalto'] = 'gutxi gora behera honen berdina';
@@ -81,6 +83,8 @@ $string['ediaeresis_caps'] = 'E - dieresiduna';
 $string['egrave'] = 'e - grabea';
 $string['egrave_caps'] = 'E - grabea';
 $string['elementof'] = 'honen elementua:';
+$string['emacron'] = 'e - goi-marra';
+$string['emacron_caps'] = 'E - goi-marra';
 $string['emdash'] = 'marra luzea';
 $string['emspace'] = 'tarte luzea';
 $string['endash'] = 'marra motza';
@@ -113,6 +117,8 @@ $string['idiaeresis'] = 'i - dieresiduna';
 $string['idiaeresis_caps'] = 'I - dieresiduna';
 $string['igrave'] = 'i - grabea';
 $string['igrave_caps'] = 'I - grabea';
+$string['imacron'] = 'i - goi-marra';
+$string['imacron_caps'] = 'I - goi-marra';
 $string['imaginarypart'] = 'zati irudikaria';
 $string['infinity'] = 'infinitoa';
 $string['insertcharacter'] = 'Txertatu karakterea';
@@ -170,6 +176,8 @@ $string['odiaeresis'] = 'o - dieresiduna';
 $string['odiaeresis_caps'] = 'O - dieresiduna';
 $string['ograve'] = 'o - grabea';
 $string['ograve_caps'] = 'O - grabea';
+$string['omacron'] = 'o - goi-marra';
+$string['omacron_caps'] = 'O - goi-marra';
 $string['omega'] = 'omega';
 $string['omega_caps'] = 'Omega';
 $string['omicron'] = 'omicron';
@@ -241,6 +249,8 @@ $string['udiaeresis'] = 'u - dieresiduna';
 $string['udiaeresis_caps'] = 'U - dieresiduna';
 $string['ugrave'] = 'u - grabea';
 $string['ugrave_caps'] = 'U - grabea';
+$string['umacron'] = 'u - goi-marra';
+$string['umacron_caps'] = 'U - goi-marra';
 $string['union'] = 'elkarketa';
 $string['upsilon'] = 'upsilon';
 $string['upsilon_caps'] = 'Upsilon';

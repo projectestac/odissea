@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'book', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,20 +39,33 @@ $string['customtitles'] = 'Eigene Überschriften';
 $string['customtitles_help'] = 'Normalerweise werden die Kapitelüberschriften im Inhaltsverzeichnis genauso angezeigt wie oben auf der Buchseite.
 
 Wenn diese Option aktiviert ist, werden die Kapitelüberschriften ausschließlich im Inhaltsverzeichnis benutzt. Die Buchseiten können dann eigene (eventuell auch längere) Kapitelüberschriften bekommen.';
+$string['deletechapter'] = 'Kapitel "{$a}" löschen';
+$string['editchapter'] = 'Kapitel "{$a}" bearbeiten';
 $string['editingchapter'] = 'Kapitel bearbeiten';
 $string['errorchapter'] = 'Fehler beim Lesen des Kapitels';
 $string['eventchaptercreated'] = 'Kapitel angelegt';
 $string['eventchapterdeleted'] = 'Kapitel gelöscht';
 $string['eventchapterupdated'] = 'Kapitel aktualisiert';
 $string['eventchapterviewed'] = 'Kapitel angezeigt';
+$string['hidechapter'] = 'Kapitel "{$a}" verbergen';
 $string['modulename'] = 'Buch';
 $string['modulename_help'] = 'Statt endlos durch lange Texte am Bildschirm zu scrollen, teilen Sie Ihre Lerninhalte auf kurze Seiten innerhalb des Buchs auf.
 
 Ergänzen Sie die Texte um Grafiken, Bilder oder multimediale Inhalte, um den Inhalt verständlich zu gestalten.';
 $string['modulenameplural'] = 'Bücher';
+$string['movechapterdown'] = 'Kapitel "{$a}"nach unten verschieben';
+$string['movechapterup'] = 'Kapitel "{$a}" nach oben verschieben';
 $string['navexit'] = 'Buch schließen';
+$string['navimages'] = 'Navigationsicons';
 $string['navnext'] = 'Weiter';
+$string['navoptions'] = 'Optionen für Navigationslinks';
+$string['navoptions_desc'] = 'Optionen zur Navigationsanzeige auf den Buchseiten';
 $string['navprev'] = 'Zurück';
+$string['navstyle'] = 'Stil der Navigation';
+$string['navstyle_help'] = '* Bilder - Icons zur Navigation verwenden
+* Text - Kapitelüberschriften zur Navigation verwenden';
+$string['navtext'] = 'Text';
+$string['navtoc'] = 'Nur Inhaltsverzeichnis';
 $string['nocontent'] = 'In diesem Buch wurde bisher kein Inhalt eingefügt';
 $string['numbering'] = 'Kapitelgliederung';
 $string['numbering0'] = 'Keine';
@@ -69,6 +82,9 @@ $string['numberingoptions_desc'] = 'Wählen Sie die Kapitelgliederungen aus, die
 $string['page-mod-book-x'] = 'Jede Seite des Moduls \'Buch\'';
 $string['pluginadministration'] = 'Buch-Administration';
 $string['pluginname'] = 'Buch';
+$string['search:activity'] = 'Buch - Materialinformation';
+$string['search:chapter'] = 'Buch - Kapitel';
+$string['showchapter'] = 'Kapitel "{$a}" anzeigen';
 $string['subchapter'] = 'Unterkapitel';
 $string['subchapternotice'] = '(Nur verfügbar, sobald das erste Kapitel angelegt ist)';
 $string['subplugintype_booktool'] = 'Buchaktivität';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'quizaccess_timelimit', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   quizaccess_timelimit
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmstart'] = 'Ce test à une limite de temps de {$a}. Le temps commencera à être décompté dès le moment où vous commencerez votre tentative, et vous devrez l\'envoyer avant la fin du compte à rebours. Voulez-vous commencer maintenant ?';
+$string['confirmstartheader'] = 'Test avec limite de temps';
 $string['pluginname'] = 'Limite de temps';
 $string['quiztimelimit'] = 'Temps disponible : {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_customlang', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,6 @@ $string['modifiednum'] = '{$a} aldatutako kate daude. Egiaztatu egin behar dituz
 $string['nostringsfound'] = 'Ez da katerik aurkitu. Mesedez, aldatu iragazkiaren ezarpenak.';
 $string['placeholder'] = 'Leku-markak';
 $string['placeholderwarning'] = 'Kateak leku-marka du';
-$string['pluginname'] = 'Hizkuntzaren pertsonalizazioa';
+$string['pluginname'] = 'Hizkuntzen pertsonalizazioa';
 $string['savecheckin'] = 'Gorde aldaketak hizkuntza-paketean';
 $string['savecontinue'] = 'Aplikatu aldaketak eta jarraitu editatzen';

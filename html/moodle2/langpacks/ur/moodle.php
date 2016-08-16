@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ur', branch 'MOODLE_28_STABLE'
+ * Strings for component 'moodle', language 'ur', branch 'MOODLE_31_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -226,7 +226,6 @@ $string['uploadthisfile'] = 'یہ فائل اپلوڈ کرو';
 $string['used'] = 'استعمال ہو چکی ہے';
 $string['user'] = 'استعمال کنندہ';
 $string['useractivity'] = 'سرگرمی';
-$string['usercurrentsettings'] = 'میری پروفائل سیٹنگز';
 $string['userdata'] = 'استعمال کنندہ کا ڈیٹا';
 $string['userdeleted'] = 'استعمال کنندہ کا کھاتہ ختم ہو چکا ہے';
 $string['userdescription'] = 'وضاحت';

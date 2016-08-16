@@ -6,25 +6,19 @@ Feature: Block tags displaying tag cloud
 
   Background:
     Given the following "users" exist:
-      | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@example.com |
-      | student1 | Student | 1 | student1@example.com |
+      | username | firstname | lastname | email | interests |
+      | teacher1 | Teacher | 1 | teacher1@example.com | Dogs, Cats |
+      | student1 | Student | 1 | student1@example.com | |
     And the following "courses" exist:
       | fullname  | shortname |
       | Course 1  | c1        |
     And the following "tags" exist:
-      | name         | tagtype  |
-      | Neverusedtag | official |
+      | name         | isstandard  |
+      | Neverusedtag | 1           |
     And the following "course enrolments" exist:
       | user     | course | role           |
       | teacher1 | c1     | editingteacher |
       | student1 | c1     | student        |
-    And I log in as "teacher1"
-    And I navigate to "Edit profile" node in "My profile settings"
-    And I expand all fieldsets
-    And I set the field "Enter tags separated by commas" to "Dogs, Cats"
-    And I press "Update profile"
-    And I log out
 
   Scenario: Add Tags block on a front page
     When I log in as "admin"
@@ -51,6 +45,6 @@ Feature: Block tags displaying tag cloud
     And I should see "Cats" in the "Tags" "block"
     And I should not see "Neverusedtag" in the "Tags" "block"
     And I click on "Dogs" "link" in the "Tags" "block"
-    And I should see "Users tagged with \"Dogs\": 1"
+    And I should see "User interests" in the ".tag-index-items h3" "css_element"
     And I should see "Teacher 1"
     And I log out

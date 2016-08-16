@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'my', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,14 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Aggiungi pagina';
+$string['alldashboardswerereset'] = 'Tutte le dashboard sono state reimpostate al loro default.';
+$string['allprofileswerereset'] = 'Tutte le pagine del profilo sono state reimpostate al loro default.';
 $string['defaultpage'] = 'Pagina My Moodle di default';
 $string['defaultprofilepage'] = 'Pagina profilo di default';
 $string['delpage'] = 'Elimina pagina';
 $string['managepages'] = 'Gestisci pagine';
-$string['mymoodle'] = 'My home';
+$string['mymoodle'] = 'Dashboard';
 $string['nocourses'] = 'Non sono presenti informazioni sui corsi.';
-$string['noguest'] = 'La pagina \'My home\' non è disponibile agli ospiti.';
+$string['noguest'] = 'La Dashboard non è disponibile agli ospiti.';
 $string['pinblocks'] = 'Configura i blocchi forzati per "My Moodle"';
 $string['pinblocksexplan'] = 'Le configurazioni dei blocchi qui impostate saranno visibili (e non modificabili) a tutti gli utenti nella lora pagina "My Moodle".';
 $string['reseterror'] = 'Si è verificato un errore durante la reimpostazione della pagina';
+$string['reseteveryonesdashboard'] = 'Reimposta le dashboard di tutti gli utenti';
+$string['reseteveryonesprofile'] = 'Reimposta le pagine del profilo di tutti gli utenti';
 $string['resetpage'] = 'Reimposta la pagina al suo default';

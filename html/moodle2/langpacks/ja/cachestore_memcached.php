@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,12 @@ $string['hash_help'] = 'アイテムキーに使用されるハッシュアル�
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
+$string['isshared'] = '共有キャッシュ';
+$string['isshared_help'] = 'あなたのmemcachedサーバは他のアプリケーションによっても使用されますか?
+
+キャッシュが他のアプリケーションと共有されている場合、このアプリケーションにより所有されているデータのみが削除されるようそれぞれのキーは個別に削除されます (外部アプリケーションのキャッシュデータは変更されないままです)。あなたのサーバ設定によりますが結果としてキャッシュ削除時にパフォーマンスを低下させてしまいます。
+
+あなたがこのアプリケーションに専用のキャッシュを使用している場合、別のアプリケーションのキャッシュデータを破壊するリスクなしに安全にキャッシュを削除することができます。これは結果としてキャッシュ削除時にパフォーマンスを向上します。';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = '前置キー';
 $string['prefix_help'] = 'この設定はアイテムキーに「ドメイン」を作成するために使用することができます。あなたは単一のmemcachedインストレーションにおいて、複数のmemcachedストアを作成できるようになります。キー長の問題に遭遇しないために、文字長は半角16文字以上にすることはできません。';
@@ -79,6 +85,8 @@ ipaddress:port
 $string['testservers'] = 'テストサーバ';
 $string['testservers_desc'] = 'memcachedサーバをテストするための1つまたはそれ以上の接続ストリングです。テストサーバが指定された場合、管理ブロックのキャッシュパフォーマンスページを使用してmemcacheパフォーマンスをテストすることができます。
 例: 127.0.0.1:11211';
+$string['upgrade200recommended'] = 'あなたのmemcached PHP拡張モジュールをバージョン2.0.0またはそれ以上にアップグレードすることをお勧めします。
+現在あなたが使用しているmemcached PHP拡張モジュールのバージョンはMoodleがサンドボックスキャッシュを確保するために使用する機能を提供していません。Moodleが使用するよう設定されているため、あなたがアップグレードするまで他のアプリケーションが同じmemcachedサーバを使用するよう設定しないことをお勧めします。';
 $string['usecompression'] = '圧縮を使用する';
 $string['usecompression_help'] = 'ペイロード圧縮を有効または無効にします。有効にした場合、特定の閾値より長いアイテム値 (現在100バイト) は透過的に、保存時に圧縮され、参照時に解凍されます。';
 $string['useserialiser'] = 'シリアライザを使用する';

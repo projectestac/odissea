@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -111,7 +111,6 @@ $string['calculationview'] = '查看计算方法';
 $string['cannotaccessgroup'] = '无法访问所选组的成绩，抱歉。';
 $string['categories'] = '类别';
 $string['categoriesanditems'] = '类别和项';
-$string['categoriesedit'] = '编辑设定';
 $string['category'] = '类别';
 $string['categoryedit'] = '编辑类别';
 $string['categoryname'] = '类别名称';
@@ -137,6 +136,7 @@ $string['coursename'] = '课程名称';
 $string['coursescales'] = '课程等级';
 $string['coursesettings'] = '课程设置';
 $string['coursesettingsexplanation'] = '课程设置决定课程的参与者会看到什么样的成绩单';
+$string['coursesiamteaching'] = '我正在教授的课程';
 $string['coursetotal'] = '课程总分';
 $string['createcategory'] = '创建类别';
 $string['createcategoryerror'] = '无法创建新类别';
@@ -177,7 +177,7 @@ $string['editverbose'] = '编辑{$a->category}{$a->itemmodule}{$a->itemname}';
 $string['enableajax'] = '启用AJAX';
 $string['enableajax_help'] = '添加AJAX功能至成绩单中，将简化和加速常用操作。这取决于在用户浏览器端Javascript功能是否启用。';
 $string['enableoutcomes'] = '启用成果';
-$string['enableoutcomes_help'] = '对能力（也可以叫成果、目标、水平或标准）的支持意味着我们可以使用一个或多个与能力绑定的等级进行评分。启用能力后，全站都可以使用这种特别的评分方法。';
+$string['enableoutcomes_help'] = '启用成果指标，表示我们可以使用一个或多个量尺来评价教学目标所强调的重要学习成果。启用成果指标后，全站都可以使用这种特别的评分方法。';
 $string['encoding'] = '编码';
 $string['errorcalculationnoequal'] = '公式必须以等号开始(=1+2)';
 $string['errorcalculationunknown'] = '公式不可用';
@@ -227,7 +227,6 @@ $string['forelementtypes'] = '给选择的{$a}';
 $string['forstudents'] = '给学生';
 $string['full'] = '全屏';
 $string['fullmode'] = '完整视图';
-$string['fullview'] = '完整视图';
 $string['generalsettings'] = '常规设置';
 $string['grade'] = '成绩';
 $string['gradeadministration'] = '成绩管理';
@@ -235,6 +234,7 @@ $string['gradeanalysis'] = '成绩分析';
 $string['gradebook'] = '成绩单';
 $string['gradebookhiddenerror'] = '当前成绩单设置为对学生隐藏所有信息。';
 $string['gradebookhistories'] = '成绩历史记录';
+$string['gradebooksetup'] = '成绩册设置';
 $string['gradeboundary'] = '分数段区间';
 $string['gradeboundary_help'] = '此设置决定可以被分配分数段的最小百分比。';
 $string['gradecategories'] = '成绩类别';
@@ -294,7 +294,6 @@ $string['gradeoutcomescourses'] = '课程成果';
 $string['gradepass'] = '及格线';
 $string['gradepass_help'] = '如果一个成绩项要求用户必须至少达到某个分数才算通过，那么在这里设置这个最低分。此值用来计算活动和课程的完成情况。在成绩单中，通过的成绩将显示为绿色，而不通过的显示为红色。';
 $string['gradepointdefault'] = '默认绩点';
-$string['gradepointdefault_help'] = '这个选项决定活动中可用成绩的默认值。';
 $string['gradepointmax'] = '最高绩点';
 $string['gradepointmax_help'] = '这个选项决定活动中可用成绩的最大值。';
 $string['gradepointmax_validateerror'] = '此设置必须在1到10000之间的整数。';
@@ -355,6 +354,14 @@ $string['idnumbers'] = 'ID号';
 $string['ignore'] = '忽视';
 $string['import'] = '导入';
 $string['importcsv'] = '导入CSV';
+$string['importcsv_help'] = '学生分数可能通过具有下列格式的 csv文件导入：
+
+*这个文件的每一列只包含一个记录。
+*每 一个记录是以逗号(或其他分隔符号)分隔开的资料信息。
+*第一个记录是包含所有字段名称的清单，用来规定后续资料信息的格式
+*其中一个字段名称必须要包含用户的身份资料信息，可以是是用户名称、ID编号或EMAIL地址。
+
+你可以先导出一些分数来获得这个文件的正确格式，然后将这一文件加以编辑并保存为CSV文件。';
 $string['importcustom'] = '作为自定义能力导入（仅在此课程中）';
 $string['importerror'] = '发生错误，脚本调用参数不正确。';
 $string['importfailed'] = '导入失败';

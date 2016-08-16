@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'data', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['addtemplate'] = 'Plantilla d\'introducció';
 $string['advancedsearch'] = 'Cerca avançada';
 $string['allowcomments'] = 'Permeteu comentaris en les entrades?';
 $string['alttext'] = 'Text alternatiu';
+$string['approvalstatus'] = 'Estat d\'aprovació';
 $string['approve'] = 'Aprova';
 $string['approved'] = 'Acceptat';
 $string['areacontent'] = 'Camps';
@@ -51,6 +52,7 @@ Els camps tenen el format [[fieldname]]. Totes les altres etiquetes tenen el for
 
 Només les etiquetes que es troben a la llista "Etiquetes disponibles" poden ser utilitzades en aquesta plantilla.';
 $string['availabletodate'] = 'Disponible fins a';
+$string['availabletodatevalidation'] = 'La data de «disponible fins a» no pot ser anterior a la data de «disponible des de».';
 $string['blank'] = 'Blanc';
 $string['buttons'] = 'Accions';
 $string['bynameondate'] = 'per {$a->name} - {$a->date}';
@@ -151,6 +153,7 @@ $string['entrieslefttoaddtoview'] = 'Heu d\'afegir {$a->entrieslefttoview} una e
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'S\'ha desat la vostra entrada';
 $string['errormustbeteacher'] = 'Per a utilitzar aquesta pàgina heu de ser professor/a';
+$string['errormustsupplyvalue'] = 'Cal que poseu un valor aquí.';
 $string['errorpresetexists'] = 'Ja existeix un valor predefinit amb el nom que heu seleccionat';
 $string['eventfieldcreated'] = 'S\'ha creat un camp';
 $string['eventfielddeleted'] = 'S\'ha suprimit un camp';
@@ -228,6 +231,7 @@ $string['invalidurl'] = 'L\'URL que heu introduït no és vàlid';
 $string['jstemplate'] = 'Plantilla Javascript';
 $string['latitude'] = 'Latitud';
 $string['latlong'] = 'Latitud/longitud';
+$string['latlongboth'] = 'Cal posar tant la latitud com la longitud.';
 $string['latlongdownloadallhint'] = 'Enllaç per a baixar totes les entrades com a KML';
 $string['latlongkmllabelling'] = 'Com etiquetar els elements en fitxers KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Enllaços a serveis';
@@ -235,6 +239,8 @@ $string['latlongotherfields'] = 'Altres camps';
 $string['list'] = 'Visualitza llista';
 $string['listtemplate'] = 'Plantilla de llista';
 $string['longitude'] = 'Longitud';
+$string['manageapproved'] = 'Permet l\'edició d\'entrades aprovades';
+$string['manageapproved_help'] = 'Si es desactiva, l\'usuari que va afegir les entrades aprovades ja no podrà editar-les ni esborrar-les. Aquest paràmetre no té cap efecte, tret que estigui activat «Requereix aprovació?»';
 $string['mapexistingfield'] = 'Mapa a {$a}';
 $string['mapnewfield'] = 'Crea un camp nou';
 $string['mappingwarning'] = 'Tots els camps vells que no s\'hagin pogut mapar a camps nous es perdran i totes les dades d\'aquests camps seran suprimides.';
@@ -243,7 +249,7 @@ $string['maxentries_help'] = '<p align="center"><strong>Nombre màxim d\'entrade
 
 <p>El nombre màxim d\'entrades que un participant pot trametre en aquesta activitat.</p>';
 $string['maxsize'] = 'Mida màxima';
-$string['menu'] = 'Menú (selecció única)';
+$string['menu'] = 'Menú';
 $string['menuchoose'] = 'Trieu...';
 $string['missingdata'] = 'Cal que afegiu dades id o objecte al camp';
 $string['missingfield'] = 'Error de programació: heu d\'especicar un camp i/o dades en definir la classe de camp';
@@ -271,13 +277,13 @@ $string['namedate'] = 'Data';
 $string['namefile'] = 'Camp de fitxer';
 $string['namelatlong'] = 'Camp de latitud/longitud';
 $string['namemenu'] = 'Camp de menú';
-$string['namemultimenu'] = 'Menú de selecció múltiple';
+$string['namemultimenu'] = 'Camp de menú de selecció múltiple';
 $string['namenumber'] = 'Nombre';
 $string['namepicture'] = 'Camp d\'imatge';
-$string['nameradiobutton'] = 'Botó de grup';
+$string['nameradiobutton'] = 'Botó d\'opció';
 $string['nametext'] = 'Camp de text';
 $string['nametextarea'] = 'Camp d\'àrea de text';
-$string['nameurl'] = 'URL';
+$string['nameurl'] = 'Camp URL';
 $string['newentry'] = 'Nova entrada';
 $string['newfield'] = 'Crea un nou camp';
 $string['newfield_help'] = '<p align="center"><strong>Camps</strong></p>
@@ -293,12 +299,12 @@ $string['nolisttemplate'] = 'Encara no s\'ha definit la plantilla de llista.';
 $string['nomatch'] = 'No s\'han trobat entrades que coincideixin';
 $string['nomaximum'] = 'No hi ha un valor màxim';
 $string['norecords'] = 'No hi ha entrades en la base de dades';
-$string['nosingletemplate'] = 'Encara no s\'ha definit la plantilla d\'entrada única';
+$string['nosingletemplate'] = 'Encara no s\'ha definit la plantilla única';
 $string['notapproved'] = 'L\'entrada encara no està aprovada.';
 $string['notinjectivemap'] = 'No hi ha un mapa d\'injecció';
 $string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
 $string['number'] = 'Nombre';
-$string['numberrssarticles'] = 'Articles RSS';
+$string['numberrssarticles'] = 'Entrades a la font RSS';
 $string['numnotapproved'] = 'Pendents';
 $string['numrecords'] = '{$a} entrades';
 $string['ods'] = '<acronym title="Full de càlcul de l\'OpenDocument ">ODS</acronym> (OpenOffice)';
@@ -324,8 +330,9 @@ $string['recorddeleted'] = 'S\'ha suprimit l\'entrada';
 $string['recorddisapproved'] = 'Entrada no aprovada';
 $string['recordsnotsaved'] = 'No s\'ha desat cap entrada. Comproveu el format del fitxer.';
 $string['recordssaved'] = 'entrada/es';
-$string['requireapproval'] = 'Requereix aprovació?';
+$string['requireapproval'] = 'Requereix aprovació';
 $string['requireapproval_help'] = 'Si s\'habilita, caldrà que el professor aprovi les entrades abans que tothom pugui visualitzar-les.';
+$string['required'] = 'Requerit';
 $string['requiredentries'] = 'Entrades requerides per a la compleció';
 $string['requiredentries_help'] = '<p align="center"><strong>Entrades requerides</strong></p>
 
@@ -338,6 +345,7 @@ $string['requiredentriestoview_help'] = '<p align="center"><strong>Entrades requ
 <p>El nombre d\'entrades que cal que un estudiant trameti abans que pugui visualitzar entrades d\'altres estudiants.</p>
 
 Nota: Si es requereix que es trametin entrades abans de visualitzar-ne d\'altres, és recomanable inhabilitar el filtre d\'enllaços automàtics a la base de dades. Això és perquè el filtre d\'enllaços automàtics a la base de dades no pot determinar si un usuari ha tramès el nombre requerit d\'entrades.';
+$string['requiredfield'] = 'Camp requerit';
 $string['resetsettings'] = 'Reinicialitza els filtres';
 $string['resettemplate'] = 'Reinicia la plantilla';
 $string['resizingimages'] = 'S\'estan redimensionant les miniatures...';
@@ -354,10 +362,11 @@ $string['savesettings'] = 'Desa els paràmetres';
 $string['savesuccess'] = 'S\'ha desat amb èxit. El vostre predefinit estarà disponible per a tot el lloc.';
 $string['savetemplate'] = 'Desa la plantilla';
 $string['search'] = 'Cerca';
+$string['search:activity'] = 'Base de dades - Informació de l\'activitat';
 $string['selectedrequired'] = 'Cal que estigui tot seleccionat';
 $string['showall'] = 'Mostra totes les entrades';
 $string['single'] = 'Visualitza una entrada';
-$string['singletemplate'] = 'Plantilla d\'entrada única';
+$string['singletemplate'] = 'Plantilla única';
 $string['subplugintype_datafield'] = 'Tipus de camp de la base de dades';
 $string['subplugintype_datafield_plural'] = 'Els tipus de camp de la base de dades';
 $string['subplugintype_datapreset'] = 'Predefinit';
@@ -386,8 +395,9 @@ $string['uploadrecords_help'] = 'Es poden carregar les entrades mitjançant un f
 El tancament és un caràcter que envolta cada camp en cada registre. Normalment es pot deixar desactivat.';
 $string['url'] = 'URL';
 $string['usedate'] = 'Inclou en la cerca.';
-$string['usestandard'] = 'utilitza un predefinit';
+$string['usestandard'] = 'Utilitza un predefinit';
 $string['usestandard_help'] = 'Per utilitzar un predefinit disponible arreu del lloc, seleccioneu-lo de la llista. (Si heu afegit un predefinit a la llista utilitzant la funció Desa com a predefinit, aleshores teniu l\'opció d\'esborrar-lo).';
 $string['viewfromdate'] = 'Només lectura des de';
 $string['viewtodate'] = 'Només lectura fins';
+$string['viewtodatevalidation'] = 'La data de «només lectura fins a» no pot ser anterior a la data de «només lectura des de».';
 $string['wrongdataid'] = 'L\'ID de dades proporcionat és erroni';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'gradereport_singleview', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['bulkfor'] = 'Оценки для {$a}';
 $string['bulkinsertvalue'] = 'Вставить значение';
 $string['bulklegend'] = 'Загрузка оценок';
 $string['bulkperform'] = 'Выполнить загрузку оценок';
+$string['entrypage'] = 'Оценить пользователя или оценить элемент';
 $string['eventgradereportviewed'] = 'Показан отчет по оценкам (одиночный вид).';
 $string['exclude'] = 'Исключить';
 $string['excludeall'] = 'Исключить все оценки';
@@ -41,7 +42,9 @@ $string['excludenone'] = 'Не исключать оценки';
 $string['feedbackfor'] = 'Отзыв для {$a}';
 $string['filtergrades'] = 'Показать оценки для {$a}.';
 $string['gradefor'] = 'Оценка для {$a}';
+$string['gradeitem'] = 'Оцениваемый элемент: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Этот оцениваемый элемент не может быть переопределен.';
+$string['gradeuser'] = 'Оцениваемый пользователь: {$a}';
 $string['noscreens'] = 'Не удается найти подходящую схему для отображения одиночного вида.';
 $string['notvalid'] = 'Неправильная схема для отображения одиночного вида: {$a}';
 $string['override'] = 'Переопределить';
@@ -49,8 +52,12 @@ $string['overrideall'] = 'Переопределить все оценки';
 $string['overridefor'] = 'Переопределить для {$a}';
 $string['overridenone'] = 'Не переопределять оценки';
 $string['pluginname'] = 'Одиночный вид';
+$string['save'] = 'Сохранить';
 $string['savegrades'] = 'Сохранить оценки';
 $string['savegradessuccess'] = 'Оценки были заданы для {$a} элементов';
+$string['selectgrade'] = 'Выбрать оцениваемый элемент...';
+$string['selectuser'] = 'Выбрать пользователя...';
 $string['singleview:view'] = 'Показать отчет';
 $string['summarygrade'] = 'Таблица пользователей с колонками для диапазона, оценки, отзыва и отметками переопределения или исключения конкретной оценки.';
 $string['summaryuser'] = 'Таблица оцениваемых элементов с колонками для оцениваемой категории, диапазона, оценки, отзыва и отметками о переопределении или исключении конкретной оценки.';
+$string['userselect'] = 'Выбрать элемент курса';

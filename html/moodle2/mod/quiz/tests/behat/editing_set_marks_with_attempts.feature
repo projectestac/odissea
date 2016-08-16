@@ -5,7 +5,7 @@ Feature: In order to create a quiz that awards marks the way I want
 
   Background:
     Given the following "users" exist:
-      | username | firstname | lastname | email               |
+      | username | firstname | lastname | email                |
       | teacher1 | T1        | Teacher1 | teacher1@example.com |
       | student1 | S1        | Student1 | student1@example.com |
     And the following "courses" exist:

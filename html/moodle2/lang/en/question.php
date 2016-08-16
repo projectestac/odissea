@@ -17,7 +17,7 @@
 /**
  * Strings for component 'question', language 'en', branch 'MOODLE_20_STABLE'
  *
- * @package   question
+ * @package   core_question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -65,7 +65,7 @@ $string['categorycurrent'] = 'Current category';
 $string['categorycurrentuse'] = 'Use this category';
 $string['categorydoesnotexist'] = 'This category does not exist';
 $string['categoryinfo'] = 'Category info';
-$string['categorymove'] = 'The category \'{$a->name}\' contains {$a->count} questions (some of them may be old, hidden, questions that are still in use in some existing quizzes). Please choose another category to move them to.';
+$string['categorymove'] = 'The category \'{$a->name}\' contains {$a->count} questions (some of which may be hidden questions or random questions that are still in use in a quiz). Please choose another category to move them to.';
 $string['categorymoveto'] = 'Save in category';
 $string['categorynamecantbeblank'] = 'The category name cannot be blank.';
 $string['clickflag'] = 'Flag question';
@@ -236,8 +236,6 @@ $string['novirtualquestiontype'] = 'No virtual question type for question type {
 $string['numqas'] = 'No. question attempts';
 $string['numquestions'] = 'No. questions';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} hidden)';
-$string['orphanedquestionscategory'] = 'Questions saved from deleted categories';
-$string['orphanedquestionscategoryinfo'] = 'Occasionally, typically due to old software bugs, questions can remain in the database even though the corresponding question category has been deleted. Of course, this should not happen, it has happened in the past on this site. This category has been created automatically, and the orphaned questions moved here so that you can manage them. Note that any images or media files used by these questions have probably been lost.';
 $string['page-question-x'] = 'Any question page';
 $string['page-question-edit'] = 'Question editing page';
 $string['page-question-category'] = 'Question category page';
@@ -399,7 +397,6 @@ $string['requiresgrading'] = 'Requires grading';
 $string['responsehistory'] = 'Response history';
 $string['restart'] = 'Start again';
 $string['restartwiththeseoptions'] = 'Start again with these options';
-$string['updatedisplayoptions'] = 'Update display options';
 $string['rightanswer'] = 'Right answer';
 $string['rightanswer_help'] = 'an automatically generated summary of the correct response. This can be limited, so you may wish to consider explaining the correct solution in the general feedback for the question, and turning this option off.';
 $string['saved'] = 'Saved: {$a}';
@@ -422,6 +419,7 @@ $string['submissionoutofsequencefriendlymessage'] = "You have entered data outsi
 $string['submit'] = 'Submit';
 $string['submitandfinish'] = 'Submit and finish';
 $string['submitted'] = 'Submit: {$a}';
+$string['tagarea_question'] = 'Questions';
 $string['technicalinfo'] = 'Technical information';
 $string['technicalinfo_help'] = 'This technical information is probably only useful for developers working on new question types. It may also be helpful when trying to diagnose problems with questions.';
 $string['technicalinfominfraction'] = 'Minimum fraction: {$a}';
@@ -437,6 +435,7 @@ $string['unknownquestion'] = 'Unknown question: {$a}.';
 $string['unknownquestioncatregory'] = 'Unknown question category: {$a}.';
 $string['unknownquestiontype'] = 'Unknown question type: {$a}.';
 $string['unusedcategorydeleted'] = 'This category has been deleted because, after deleting the course, its questions weren\'t used any more.';
+$string['updatedisplayoptions'] = 'Update display options';
 $string['whethercorrect'] = 'Whether correct';
 $string['whethercorrect_help'] = 'This covers both the textual description \'Correct\', \'Partially correct\' or \'Incorrect\', and any coloured highlighting that conveys the same information.';
 $string['whichtries'] = 'Which tries';
@@ -444,6 +443,3 @@ $string['withselected'] = 'With selected';
 $string['xoutofmax'] = '{$a->mark} out of {$a->max}';
 $string['yougotnright'] = 'You have correctly selected {$a->num}.';
 
-// Deprecated since Moodle 2.8.
-
-$string['hidden'] = 'Hidden';

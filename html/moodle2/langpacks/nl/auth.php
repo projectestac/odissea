@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'auth', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Actieve authenticatieplugins';
+$string['allowaccountssameemail'] = 'Accounts met hetzelfde e-mailadres toestaan';
+$string['allowaccountssameemail_desc'] = 'Indien ingeschakeld kunnen meer dan één account hetzelfde e-mailadres hebben. Dit kan gevolgen hebben voor veiligheid en privacy, bijvoorbeeld met de bevestigingsmail voor wachtwoord wijzigen.';
 $string['alternatelogin'] = 'Als je hier een URL ingeeft, dan zal die dienen als loginpagina voor deze site. De pagina moet een formulier bevatten met de actie ingesteld op <strong>\'{$a}\'</strong> en die de velden <strong>username</strong> en <strong>password</strong> teruggeeft.<br />Let er op dat je een juiste URL ingeeft. Zoniet sluit je jezelf uit de site.<br />Laat deze instelling leeg als je de standaard loginpagina wil gebruiken.';
 $string['alternateloginurl'] = 'URL van de alternatieve loginpagina';
 $string['auth_changepasswordhelp'] = 'Hulp bij wijzigen wachtwoord';
@@ -55,7 +57,9 @@ $string['auth_remove_suspend'] = 'Blokkeer interne gegevens';
 $string['auth_remove_user'] = 'Geef op wat er moet gebeuren met interne gebruikersaccounts gedurende een volledige synchronisatie wanneer de gebruiker verwijderd was van de externe bron.
 Enkel geblokkeerde gebruikers worden automatisch terug geactiveerd wanneer ze terug in de externe bron verschijnen.';
 $string['auth_remove_user_key'] = 'Externe gebruiker verwijderd';
-$string['auth_sync_script'] = 'Cron synchronisatirscript';
+$string['auth_sync_script'] = 'Synchronistatie van  gebruikersaccounts';
+$string['auth_sync_suspended'] = 'Indien ingeschakeld zal het attribuut voor geschorste gebruikersaccounts gebruikt worden om de status van de lokale gebruikersaccount aan te passen.';
+$string['auth_sync_suspended_key'] = 'Synchroniseer schorsingsstatus van lokale gebruikersaccounts';
 $string['auth_updatelocal'] = 'Update lokale gegevens';
 $string['auth_updatelocal_expl'] = '<p><b>Update lokale gegevens:</b>Als je dit inschakelt, dan zal het veld (van de externe authenticatie) automatisch geüpdatet worden telkens de gebruiker zich aanmeldt of wanneer er een gebruikerssynchronisatie gebeurt. Velden die lokaal worden geüpdatet moeten geblokkeerd worden.</p>';
 $string['auth_updateremote'] = 'Update externe gegevens';
@@ -66,11 +70,11 @@ $string['auth_user_creation'] = 'Nieuwe (anonieme) gebruikers kunnen gebruikersa
 $string['auth_usernameexists'] = 'De gekozen gebruikersnaam bestaat al. Kies alsjeblieft een andere gebruikersnaam.';
 $string['auto_add_remote_users'] = 'Voeg externe gebruikers automatisch toe';
 $string['changepassword'] = 'URL voor het wijzigen van het wachtwoord';
-$string['changepasswordhelp'] = 'Hier kun je een locatie aangeven waar gebruikers hun gebruikersnaam/wachtwoord kunnen terugkrijgen als ze deze vergeten zijn. De gebruikers zullen op hun inlogpagina en op hun gebruikerspagina een knop krijgen. Als je dit leeg laat zal de knop niet verschijnen.';
+$string['changepasswordhelp'] = 'Hier kun je een locatie aangeven waar gebruikers hun gebruikersnaam / wachtwoord kunnen terugkrijgen als ze deze vergeten zijn. De gebruikers zullen op hun inlogpagina en op hun gebruikerspagina een knop krijgen. Als je dit leeg laat zal de knop niet verschijnen.';
 $string['chooseauthmethod'] = 'Kies een methode van authenticatie:';
 $string['chooseauthmethod_help'] = 'Dit menu bepaalt de authenticatiemethode voor deze gebruiker wanneer die inlogt. Je mag enkel ingeschakelde authenticatiemethodes kiezen, anders zal de gebruiker niet meer kunnen aanmelden. Om te verhinderen dat de gebruiker kan inloggen, kies je hier "Niet inloggen".';
 $string['createpassword'] = 'Genereer wachtwoord en waarschuw gebruiker';
-$string['createpasswordifneeded'] = 'Maak een wachtwoord indien nodig';
+$string['createpasswordifneeded'] = 'Maak een wachtwoord aan indien nodig';
 $string['emailchangecancel'] = 'Annuleer e-mailwijziging';
 $string['emailchangepending'] = 'De wijziging is in behandeling. Open de link in het bericht dat gestuurd is naar {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Het e-mailadres dat je probeert te gebruiken, is al in gebruik door iemand anders. Daarom wordt deze wijziging geannuleerd. Je kunt wel opnieuw proberen met een ander e-mailadres.';
@@ -88,8 +92,9 @@ $string['errormaxconsecutiveidentchars'] = 'Wachtwoorden mogen maximaal {$a} ope
 $string['errorminpassworddigits'] = 'Wachtwoorden moeten minstens {$a} cijfers hebben.';
 $string['errorminpasswordlength'] = 'Wachtwoorden moeten minstens {$a} tekens lang zijn.';
 $string['errorminpasswordlower'] = 'Wachtwoorden moeten minstens {$a} kleine letters hebben.';
-$string['errorminpasswordnonalphanum'] = 'Wachtwoorden moeten minstens {$a} niet-alphanumerieke tekens hebben.';
+$string['errorminpasswordnonalphanum'] = 'Wachtwoorden moeten minstens {$a} niet-alfanumerieke tekens hebben.';
 $string['errorminpasswordupper'] = 'Wachtwoorden moeten minstens {$a} hoofdletters hebben.';
+$string['errorpasswordreused'] = 'Dit wachtwoord is vroeger al eens gebruikt en mag niet opnieuw gebruikt worden.';
 $string['errorpasswordupdate'] = 'Fout tijdens het updaten van het wachtwoord, wachtwoord niet gewijzigd.';
 $string['eventuserloggedin'] = 'Gebruiker ingelogd';
 $string['eventuserloggedinas'] = 'Gebruiker ingelogd als een andere gebruiker';
@@ -108,11 +113,14 @@ $string['infilefield'] = 'Veld vereist in bestand';
 $string['informminpassworddigits'] = 'minstens {$a} getal(len)';
 $string['informminpasswordlength'] = 'minstens {$a} teken(s)';
 $string['informminpasswordlower'] = 'minstens {$a} kleine letter(s)';
-$string['informminpasswordnonalphanum'] = 'minstens {$a} niet-alphanummerieke teken(s)';
+$string['informminpasswordnonalphanum'] = 'minstens {$a} niet-alphanumerieke teken(s) zoals een *,-, of #';
+$string['informminpasswordreuselimit'] = 'Wachtwoorden mogen herbruikt worden na {$a} wijzigingen';
 $string['informminpasswordupper'] = 'minstens {$a} hoofdletter(s)';
 $string['informpasswordpolicy'] = 'Het wachtwoord moet {$a} hebben';
 $string['instructions'] = 'Instructies';
 $string['internal'] = 'Intern';
+$string['limitconcurrentlogins'] = 'Maximaal aantal gelijktijdige logins';
+$string['limitconcurrentlogins_desc'] = 'Indien ingeschakeld is het aantal gelijktijdige aanmeldingen voor elke gebruiker beperkt. De oudste sessie wordt beëindigt als het maximaal aantal bereikt wordt. Merk op dat gebruikers niet bewaard werk kunnen verliezen. Deze instelling is niet compatibel met single sign-on (SSO) plugins';
 $string['locked'] = 'Geblokkeerd';
 $string['md5'] = 'MD5-encryptie';
 $string['nopasswordchange'] = 'Wachtwoord kan niet gewijzigd worden';
@@ -136,6 +144,7 @@ $string['recaptcha_help'] = '<h2>Beschrijving</h2>
 <p>Als je niet zeker bent wat de woorden zijn, maak dan een gokje of volg de link "Geef nog een CAPTCHA". </p>
 
 <p>Visueel beperkte gebruikers kunnen de link "Geef een audio-CAPTCHA" volgen om een reeks tekens te horen die ingevuld kunnen worden in de plaats van de visuele test.</p>';
+$string['security_question'] = 'Beveiligingsvraag';
 $string['selfregistration'] = 'Zelfregistratie';
 $string['selfregistration_help'] = 'Als een authenticatieplugin, zoals e-mailgebaseerde zelfregistratie, is geselecteerd, dan kunnen potentiele gebruikers zichzelf registreren en accounts maken. Dit zorgt ervoor dat spammers accounts kunnen maken om forums en blogs te gaan gebruiken voor spam. Om dit risico te beperken zou zelfregistratie moeten uitgeschakeld worden of beperkt worden door de <em>Toegestane e-maildomeinen</em>-instelling.';
 $string['sha1'] = 'SHA1 hash';
@@ -155,3 +164,5 @@ $string['update_onlogin'] = 'Bij elke aanmelding';
 $string['update_onupdate'] = 'Bij het updaten';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() ondersteunt het geselecteerde gebruikerstype niet: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() ondersteunt het geselecteerde gebruikerstype (nog) niet';
+$string['username'] = 'Gebruikersnaam';
+$string['username_help'] = 'Houd er rekening mee dat sommige authenticatieplugins het niet zullen toestaan om de gebruikersnaam te wijzigen.';

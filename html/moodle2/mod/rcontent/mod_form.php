@@ -132,7 +132,11 @@ class mod_rcontent_mod_form extends moodleform_mod {
         $mform->setDefault('activity', $activity);
 
         // Summary
-        $this->add_intro_editor();
+        if (method_exists($this, 'standard_intro_elements')) {
+            $this->standard_intro_elements();
+        } else {
+            $this->add_intro_editor();
+        }
 
         // Other settings
         $mform->addElement('header', 'displaysettings', get_string('appearance'));

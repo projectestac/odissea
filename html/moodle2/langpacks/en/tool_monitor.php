@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'en', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_monitor', language 'en', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,7 +78,6 @@ $string['monitorenabled'] = 'Event monitoring is currently enabled.';
 $string['monitor:managerules'] = 'Manage event monitor rules';
 $string['monitor:managetool'] = 'Enable/disable event monitoring';
 $string['monitor:subscribe'] = 'Subscribe to event monitor rules';
-$string['nopermission'] = 'No permission';
 $string['norules'] = 'There are no event monitoring rules.';
 $string['pluginname'] = 'Event monitor';
 $string['processevents'] = 'Process events';
@@ -89,6 +88,7 @@ $string['ruledeletesuccess'] = 'Rule successfully deleted';
 $string['rulehelp'] = 'Rule details';
 $string['rulehelp_help'] = 'This rule listens for when the event \'{$a->eventname}\' in \'{$a->eventcomponent}\' has been triggered {$a->frequency} time(s) in {$a->minutes} minute(s).';
 $string['rulename'] = 'Rule name';
+$string['rulenopermission'] = 'You do not have permission to subscribe to any events.';
 $string['rulenopermissions'] = 'You do not have permissions to "{$a} a rule"';
 $string['rulescansubscribe'] = 'Rules you can subscribe to';
 $string['selectacourse'] = 'Select a course';
@@ -99,5 +99,6 @@ $string['subdeletesuccess'] = 'Subscription successfully removed';
 $string['subhelp'] = 'Subscription details';
 $string['subhelp_help'] = 'This subscription listens for when the event \'{$a->eventname}\' has been triggered in \'{$a->moduleinstance}\' {$a->frequency} time(s) in {$a->minutes} minute(s).';
 $string['subscribeto'] = 'Subscribe to rule "{$a}"';
+$string['taskchecksubscriptions'] = 'Activate/deactivate invalid rule subscriptions';
 $string['taskcleanevents'] = 'Removes any unnecessary event monitor events';
 $string['unsubscribe'] = 'Unsubscribe';

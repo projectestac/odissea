@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,6 @@ $string['calculationsaved'] = 'تم حفظ العملية الحسابية';
 $string['calculationview'] = 'معاينة العملية الحسابية';
 $string['categories'] = 'التصنيفات';
 $string['categoriesanditems'] = 'التصنيفات والبنود';
-$string['categoriesedit'] = 'تحرير التصنيفات والبنود';
 $string['category'] = 'التصنيف';
 $string['categoryedit'] = 'تحرير التصنيف';
 $string['categoryname'] = 'اسم التصنيف';
@@ -138,7 +137,6 @@ $string['forceon'] = 'إجبار الفتح';
 $string['forstudents'] = 'للطلاب';
 $string['full'] = 'كامل';
 $string['fullmode'] = 'معاينة كاملة';
-$string['fullview'] = 'معاينة كاملة';
 $string['generalsettings'] = 'الإعدادات العامة';
 $string['grade'] = 'درجة';
 $string['gradeadministration'] = 'إدارة الدرجات';

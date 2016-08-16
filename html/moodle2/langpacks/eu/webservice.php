@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'webservice', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,6 @@ $string['addfunctionsdescription'] = 'Aukera itzazu beharrezko funtzioak zerbitz
 $string['addservice'] = 'Gehitu beste web-zerbitzu bat: {$a->name} (id: {$a->id})';
 $string['addservicefunction'] = 'Gehitu funtzioak "{$a}" zerbitzura';
 $string['allusers'] = 'Erabiltzaile guztiak';
-$string['amftestclient'] = 'AMF proba-bezeroa';
 $string['apiexplorer'] = 'API arakatzailea';
 $string['apiexplorernotavalaible'] = 'API arakatzailea ez dago eskuragarri.';
 $string['arguments'] = 'Argumentuak';

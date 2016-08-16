@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol_meta', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = 'Добавить в группу';
+$string['coursesort'] = 'Сортировать список курсов';
+$string['coursesort_help'] = 'Определяет, должен ли список подключаемых курсов быть отсортированным в заданном порядке (то есть, в порядке, указанном в «Администрирование > Курсы > Управление курсами и категориями») или же в алфавитном порядке.';
+$string['creategroup'] = 'Создать новую группу';
+$string['defaultgroupnametext'] = 'Курс {$a->name} {$a->increment}';
 $string['linkedcourse'] = 'Связанный курс';
 $string['meta:config'] = 'Настраивать экземпляры способа записи на курс «Метасвязь с курсом»';
 $string['meta:selectaslinked'] = 'Выбирать курс в качестве связанного курса в способе записи на курс «Метасвязь с курсом»';

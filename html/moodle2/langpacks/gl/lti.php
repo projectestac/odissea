@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'gl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lti', language 'gl', branch 'MOODLE_31_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -376,15 +376,6 @@ $string['share_roster_admin_help'] = 'Especifique se a ferramenta pode acceder �
 $string['share_roster_help'] = 'Especifique se a ferramenta pode acceder ou non á lista de usuarios matriculados en cursos desde os que se inicia esta ferramenta.
 
 Observe que esta configuración pode anularse na configuración da ferramenta.';
-$string['show_in_course'] = 'Amosar o tipo de ferramenta cando se crean instancias de ferramenta';
-$string['show_in_course_help'] = 'Se selecciona esta configuración da ferramenta aparecerá no menú despregábel de «Tipo de ferramenta externa»
-cando os profesores configuren ferramentas externas dentro dos cursos.
-
-Na maioría dos casos, non é necesario seleccionar esta opción. Os profesores poden empregar esta configuración
-da ferramenta baseada no URL de inicio que corresponde ao URL base da ferramenta, que é o método preferido.
-
-O único caso no que debe seleccionarse esta opción é se pretende que a configuración da ferramenta se use só para o acceso único.
-Por exemplo, se todos inicios na ferramenta do provedor levan ao usuario só a unha páxina de destino en troques de a un recurso específico.';
 $string['size'] = 'Parámetros de tamaño';
 $string['submission'] = 'Entrega';
 $string['submissions'] = 'Entregas';

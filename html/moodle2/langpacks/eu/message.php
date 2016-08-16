@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'message', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,8 @@ $string['contacts'] = 'Kontaktuak';
 $string['context'] = 'testuingurua';
 $string['defaultmessageoutputs'] = 'Lehenetsitako irteerako mezuak';
 $string['defaults'] = 'Lehenetsitakoak';
+$string['deletemessage'] = 'Ezabatu mezua';
+$string['deletemessageconfirmation'] = 'Ziur zaude mezu hau ezabatu nahi duzula? Soilik zure mezuen historiatik ezabatuko da, eta mezua bidali edo jaso duen erabiltzaileak ikusgai izaten jarraituko du.';
 $string['deletemessagesdays'] = 'Mezu zaharrak automatikoki ezabatzeko egun-kopurua';
 $string['disableall'] = 'Desgaitu jakinarazpenak aldi baterako';
 $string['disableall_help'] = 'Tarte batez desgaitu egiten ditu jakinarazpen guztiak kudeatzaileak "behartuta" gisa ezarri dituenak izan ezik.';
@@ -56,10 +58,12 @@ $string['emptysearchstring'] = 'Zerbait bilatu beharko duzu!';
 $string['enabled'] = 'Gaituta';
 $string['errorcallingprocessor'] = 'Errorea definitutako irteera-prozesatzaileari deitzean';
 $string['errortranslatingdefault'] = 'Errorea pluginak emandako berezko kofigurazioa itzultzean. Sistemaren berezko ezarpenak erabiliko dira.';
+$string['errorwhilesendingmessage'] = 'Errorea gertatu da mezua bidaltzean; mesedez saiatu berriz beranduago.';
 $string['eventmessagecontactadded'] = 'Mezularitza-kontaktua gehitu da';
 $string['eventmessagecontactblocked'] = 'Mezularitza-kontaktua blokeatu da';
 $string['eventmessagecontactremoved'] = 'Mezularitza-kontaktua ezabatu da';
 $string['eventmessagecontactunblocked'] = 'Mezularitza-kontaktua desblokeatu da';
+$string['eventmessagedeleted'] = 'Mezua ezabatu da';
 $string['eventmessagesent'] = 'Mezua bidali da';
 $string['eventmessageviewed'] = 'Mezua ikusi da';
 $string['forced'] = 'Behartuta';
@@ -86,6 +90,8 @@ $string['messagehistoryfull'] = 'Mezu guztiak';
 $string['messagenavigation'] = 'Mezularitza-nabigazioa:';
 $string['messageoutputs'] = 'Irteerako mezuak';
 $string['messages'] = 'Mezuak';
+$string['messagesent'] = 'Mezua bidali da';
+$string['messagetosend'] = 'Bidaltzeko mezua';
 $string['messaging'] = 'Mezularitza';
 $string['messagingblockednoncontact'] = '{$a}-k ezin dizu erantzun blokeatu egin baitituzu kontaktu ez direnak';
 $string['messagingdisabled'] = 'Mezularitza ez dago gaituta gune honetan, e-postak bidaliko dira mezuen ordez';
@@ -126,6 +132,7 @@ $string['search'] = 'Bilatu';
 $string['searchcombined'] = 'Jendea eta mezuak bilatu';
 $string['searchforperson'] = 'Bilatu pertsona bat';
 $string['searchmessages'] = 'Mezuak bilatu';
+$string['sendingmessage'] = 'Mezua bidaltzen';
 $string['sendingvia'] = '"{$a->provider}" bidaltzen "{$a->processor}"-(r)en bidez';
 $string['sendingviawhen'] = '"{$a->provider}" bidaltzen "{$a->processor}"-(r)en bidez: {$a->state}';
 $string['sendmessage'] = 'Mezua bidali';
@@ -139,6 +146,7 @@ $string['thisconversation'] = 'elkarrizketa hau';
 $string['timenosee'] = 'Online egon nintzen azkenengotik aurrerako minutuak';
 $string['timesent'] = 'Bidalketa-ordua';
 $string['touserdoesntexist'] = 'Ezin diozu mezurik bidali ({$a}) id-a duen erabiltzaileari ez baitago horrelakorik.';
+$string['unabletomessageuser'] = 'Ez duzu baimenik erabiltzaile honi mezurik bidaltzeko';
 $string['unblockcontact'] = 'Desblokeatu kontaktua';
 $string['unreadmessages'] = 'Irakurri gabeko ({$a}) mezu';
 $string['unreadnewmessage'] = '{$a}-ren mezu berria';
@@ -146,3 +154,4 @@ $string['unreadnewmessages'] = 'Mezu berriak ({$a})';
 $string['userisblockingyou'] = 'Erabiltzaile honek blokeatu egin zaitu eta ezin diozu mezurik bidali';
 $string['userisblockingyounoncontact'] = '{$a}-k bere kontaktu-zerrendan daudenen mezuak bakarrik onartzen ditu.';
 $string['userssearchresults'] = 'Aurkitutako erabiltzaileak: {$a}';
+$string['viewconversation'] = 'Elkarrizketa ikusi';

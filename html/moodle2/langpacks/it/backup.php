@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', branch 'MOODLE_28_STABLE'
+ * Strings for component 'backup', language 'it', branch 'MOODLE_31_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,11 @@ $string['automatedbackupschedule'] = 'Schedulazione';
 $string['automatedbackupschedulehelp'] = 'I giorni della settimana nei quali effettuare i backup automatici.';
 $string['automatedbackupsinactive'] = 'I backup automatici non sono stati abilitati dall\'amministratore del sito.';
 $string['automatedbackupstatus'] = 'Stato backup automatico';
+$string['automateddeletedays'] = 'Elimina backup più vecchi di';
+$string['automatedmaxkept'] = 'Numero massimo di backup da mantenere';
+$string['automatedmaxkepthelp'] = 'Il numero massimo di backup automatici di corsi da mantenere. I backup più vecchi saranno eliminati automaticamente.';
+$string['automatedminkept'] = 'Numero minimo di backup da mantenere';
+$string['automatedminkepthelp'] = 'Se è stata impostata l\'eliminazione di backup più vecchi di un dato numero di giorni, potrebbe succedere che vengano eliminati tutti i backup di un corso non attivo. Per evitare questo problema, è possibile impostare il numero minimo di backup da mantenere.';
 $string['automatedsettings'] = 'Impostazioni backup automatico';
 $string['automatedsetup'] = 'Impostazioni backup automatico';
 $string['automatedstorage'] = 'Archivio backup automatico';
@@ -74,19 +79,20 @@ $string['backuptypesection'] = 'Sezione';
 $string['backupversion'] = 'Versione backup';
 $string['cannotfindassignablerole'] = 'Il ruolo {$a} presente nel file di backup non può essere mappato su nessuno dei ruoli che sei autorizzato ad assegnare.';
 $string['choosefilefromactivitybackup'] = 'Area backup attività';
-$string['choosefilefromactivitybackup_help'] = 'Se si effettua un backup delle attività con le impostazioni di default, i file di backup saranno salvati qui';
+$string['choosefilefromactivitybackup_help'] = 'Se si effettua un backup delle attività con le impostazioni di default, i file di backup saranno salvati qui.';
 $string['choosefilefromautomatedbackup'] = 'Backup automatici';
 $string['choosefilefromautomatedbackup_help'] = 'Contiene i backup generati automaticamente';
 $string['choosefilefromcoursebackup'] = 'Area backup corso';
-$string['choosefilefromcoursebackup_help'] = 'I backup dei corsi eseguiti con le impostazioni di default sono memorizzati nell\'area di backup del corso';
+$string['choosefilefromcoursebackup_help'] = 'I backup dei corsi eseguiti con le impostazioni di default sono memorizzati nell\'area di backup del corso.';
 $string['choosefilefromuserbackup'] = 'Area backup personali';
-$string['choosefilefromuserbackup_help'] = 'I backup dei corsi eseguiti con l\'opzione "Rendi anonimi i dati utente" sono memorizzati nei file personali';
+$string['choosefilefromuserbackup_help'] = 'I backup dei corsi eseguiti con l\'opzione "Rendi anonimi i dati utente" sono memorizzati nei file personali.';
 $string['configgeneralactivities'] = 'Imposta il default per l\'inclusione delle attività nei backup.';
 $string['configgeneralanonymize'] = 'Imposta il default per rendere anonime le informazioni degli utenti nei backup.';
 $string['configgeneralbadges'] = 'Imposta il default per l\'inclusione dei badge nei backup.';
 $string['configgeneralblocks'] = 'Imposta il default per l\'inclusione dei blocchi nei backup.';
 $string['configgeneralcomments'] = 'Imposta il default per l\'inclusione dei commenti nei backup.';
 $string['configgeneralfilters'] = 'Imposta il default per l\'inclusione dei filtri nei backup.';
+$string['configgeneralgroups'] = 'Il default per l\'inclusione nei backup di gruppi e raggruppamenti.';
 $string['configgeneralhistories'] = 'Imposta il default per l\'inclusione della storia degli utenti nei backup.';
 $string['configgenerallogs'] = 'Imposta il default per l\'inclusione dei log nei backup.';
 $string['configgeneralquestionbank'] = 'Include per default il deposito delle domande nei backup. NOTA: disabilitando questa impostazione saranno disabilitati i backup delle attività che usano il deposito delle domande, come ad esempio i quiz.';
@@ -117,7 +123,7 @@ $string['errorfilenamerequired'] = 'Devi inserire un nome valido per il file di 
 $string['errorinvalidformat'] = 'Formato backup sconosciuto';
 $string['errorinvalidformatinfo'] = 'Il file selezionato non è un file di backup Moodle valido e non può essere ripristinato.';
 $string['errorminbackup20version'] = 'Questo file di backup è stato creato con una versione di sviluppo del backup di Moodle ({$a->backup}). La versione minima dalla quale è possibile ripristinare è la {$a->min}.';
-$string['errorrestorefrontpage'] = 'Non è consentito ripristinare sovrascrivendo l\'home page';
+$string['errorrestorefrontpagebackup'] = 'I backup della home page possono essere ripristinati solamente nella home page';
 $string['executionsuccess'] = 'Il file di backup è stato creato correttamente. ';
 $string['filealiasesrestorefailures'] = 'Errori nel ripristino di alias';
 $string['filealiasesrestorefailures_help'] = 'Gli alias sono link simbolici a file, tra cui i file memorizzati in repository esterni. In alcuni casi Moodle non può ripristinarli, ad esempio nel caso in cui si tenti di ripristinare backup provenienti da altri siti oppure quando il file collegato non esiste.
@@ -126,8 +132,8 @@ Per maggiori informazioni sugli errori consultare il log di ripristino.';
 $string['filealiasesrestorefailuresinfo'] = 'Non è stato possibile ripristinare alcuni alias presenti nel file di backup. L\'elenco che segue presenta le sorgenti dei file ai quali si riferivano gli alias nel sito di origine.';
 $string['filename'] = 'Nome file';
 $string['filereferencesincluded'] = 'Il backup contiene file collegati a contenuti esterni. I file collegati non funzioneranno in altri siti.';
-$string['filereferencesnotsamesite'] = 'Il backup proviene da un altro sito, i file collegati non possono essere ripristinati';
-$string['filereferencessamesite'] = 'Il backup proviene dallo stesso sito, i file collegati possono essere ripristinati';
+$string['filereferencesnotsamesite'] = 'Il backup proviene da un altro sito, i file collegati non possono essere ripristinati.';
+$string['filereferencessamesite'] = 'Il backup proviene dallo stesso sito, i file collegati possono essere ripristinati.';
 $string['generalactivities'] = 'Includi attività e risorse';
 $string['generalanonymize'] = 'Rendi anonime le informazioni';
 $string['generalbackdefaults'] = 'Impostazioni di default';
@@ -136,6 +142,7 @@ $string['generalblocks'] = 'Includi blocchi';
 $string['generalcomments'] = 'Includi commenti';
 $string['generalfilters'] = 'Includi filtri';
 $string['generalgradehistories'] = 'Includi storie';
+$string['generalgroups'] = 'Includi gruppi e raggruppamenti';
 $string['generalhistories'] = 'Includi storia';
 $string['generallogs'] = 'Includi log';
 $string['generalquestionbank'] = 'Includi deposito delle domande';
@@ -156,6 +163,8 @@ $string['importcurrentstage2'] = 'Impostazioni schema';
 $string['importcurrentstage4'] = 'Verifica e conferma';
 $string['importcurrentstage8'] = 'Esegui importazione';
 $string['importfile'] = 'Importa un file di backup';
+$string['importgeneralduplicateadminallowed'] = 'Consenti risoluzione conflitti admin';
+$string['importgeneralduplicateadminallowed_desc'] = 'Se il sito ha già un account con username \'admin\', il ripristino di backup contenenti uername \'admin\' provocheranno conflitti. Abilitando questa impostazione il conflitto sarà risolto modificando lo username presente nel backup in \'admin_xyz\'.';
 $string['importgeneralmaxresults'] = 'Numero massimo di corsi elencati durante l\'importazione';
 $string['importgeneralmaxresults_desc'] = 'Imposta il numero massimo di corsi elencati durante il primo passo del processo di importazione';
 $string['importgeneralsettings'] = 'Default generali per l\'importazione';
@@ -230,8 +239,10 @@ $string['rootsettingbadges'] = 'Includi badge';
 $string['rootsettingblocks'] = 'Includi blocchi';
 $string['rootsettingcalendarevents'] = 'Includi eventi del calendario';
 $string['rootsettingcomments'] = 'Includi commenti';
+$string['rootsettingcompetencies'] = 'Includi competenze';
 $string['rootsettingfilters'] = 'Includi filtri';
 $string['rootsettinggradehistories'] = 'Includi storico valutazioni';
+$string['rootsettinggroups'] = 'Includi gruppi e raggruppamenti';
 $string['rootsettingimscc1'] = 'Converti a IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Converti a IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Includi log del corso';
@@ -252,6 +263,7 @@ $string['setting_keep_groups_and_groupings'] = 'Mantieni gruppi e raggruppamenti
 $string['setting_keep_roles_and_enrolments'] = 'Mantieni ruoli ed iscrizioni esistenti';
 $string['setting_overwriteconf'] = 'Sovrascrivi la configurazione del corso';
 $string['showtypes'] = 'Visualizza le opzioni di tipo';
+$string['sitecourseformatwarning'] = 'Questo è un backup della pagina home, è possibile ripristinarlo solamente nella pagina home.';
 $string['skiphidden'] = 'Salta i corsi nascosti';
 $string['skiphiddenhelp'] = 'Consente di escludere dal backup i corsi nascosti';
 $string['skipmodifdays'] = 'Salta i corsi non modificati per';

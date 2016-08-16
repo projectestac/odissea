@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -205,7 +205,7 @@ $string['package'] = '包文件';
 $string['packagedir'] = '文件系统错误：无法创建包目录';
 $string['packagefile'] = '未指定包文件';
 $string['package_help'] = '包文件是一个包含了 SCORM/AICC 课程定义的 zip 或 pif 文件。';
-$string['packageurl'] = 'URL';
+$string['packageurl'] = '网页地址';
 $string['packageurl_help'] = '通过此设置可以提供指定 SCORM 课件的 URL，而不是选择一个文件。';
 $string['page-mod-scorm-x'] = '任意 SCORM 模块页面';
 $string['pagesize'] = '页面大小';

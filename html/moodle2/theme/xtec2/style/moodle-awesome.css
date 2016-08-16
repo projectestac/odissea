@@ -66,12 +66,12 @@ i.fa.icon-pre, .dir-rtl i.fa.icon-post {
 .block_settings .block_tree li.item_with_icon > p i.fa,
 .block_navigation .block_tree li.item_with_icon > p i.fa {
 	vertical-align: middle;
-	position: absolute;
 	left: 0;
 	width: 16px;
 	height: 16px;
 	line-height: 20px;
 	font-size: 16px;
+    margin-left: 10px;
 }
 
 .moodle-actionmenu[data-enhanced].show .menu .iconsmall {

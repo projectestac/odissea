@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,7 @@ $string['backpackimport'] = '뱃지 가져오기 설정';
 $string['badgedetails'] = '뱃지 세부사항';
 $string['badgeimage'] = '이미지';
 $string['badgeprivacysetting'] = '뱃지 개인 정보 보호 설정';
+$string['badges'] = '뱃지';
 $string['badgesdisabled'] = '이 사이트에 뱃지가 활성화되어 있지 않습니다.';
 $string['badgesettings'] = '뱃지 설정';
 $string['badgestatus_0'] = '사용자가 사용할 수 없습니다';
@@ -150,7 +151,6 @@ $string['externalbadges_help'] = '이 영역에서 외부 backpack에 있는 뱃
 $string['externalbadgesp'] = '다른 웹 사이트에서 받은 뱃지';
 $string['externalconnectto'] = '외부 뱃지를 표시하려면  <a href="{$a}">backpack에 연결</a>해야 합니다.';
 $string['fixed'] = '고정된 날짜';
-$string['hidden'] = '감춰짐';
 $string['hiddenbadge'] = '아쉬웁게도 뱃지 소유자가 이 정보를 공개하지 않았습니다.';
 $string['issuancedetails'] = '뱃지 만료기한';
 $string['issuedbadge'] = '발행된 뱃지 정보';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'fr', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cachestore_memcached', language 'fr', branch 'MOODLE_31_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,12 @@ $string['hash_help'] = 'Spécifie l\'algorithme de hachage utilisé pour les cle
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
+$string['isshared'] = 'Cache partagé';
+$string['isshared_help'] = 'Votre serveur Memcached est-il utilisé pour d\'autres applications ?
+
+C\'est c\'est le cas, chacun de éléments du cache sera supprimé individuellement, afin de s\'assurer que seuls les données de Moodle sont purgées et que le cache de données des autres applications n\'est pas touché. Il pourra en résulter une réduction des performances lors de l\'effacement du cache, suivant la configuration de votre serveur.
+
+Si vous utilisez un cache dédié pour Moodle, la totalité du cache peut être purgée en toute sécurité sans risque de détruire le cache d\'autres applications. La performance sera alors meilleure lors de l\'effacement du cache.';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Préfixe de clef';
 $string['prefix_help'] = 'Ce réglage peut être utilisé pour créer un « domaine » pour vos clefs, permettant de disposer de plusieurs dépôts memcached sur une unique installation memcached. La chaîne indiquée ne doit pas dépasser 16 caractères.';
@@ -81,6 +87,7 @@ adresse_ip:port
 $string['testservers'] = 'Serveurs de test';
 $string['testservers_desc'] = 'Une ou plusieurs adresses de connexion permettant de tester des serveurs memcached. Si un serveur de test a été indiqué, la performance de memcached peut être testée depuis la page de performance des caches, accessible via le bloc d\'administration.
 Exemple : 127.0.0.1:11211';
+$string['upgrade200recommended'] = 'Il est recommandé de mettre à jour l\'extension Memcached de PHP à la version 2.0.0 ou ultérieure. La version que vous utilisez actuellement ne dispose pas de la fonctionnalité permettant à Moodle d\'assurer un cache en mode bac à sable. Jusqu\'à une éventuelle mise à jour, il n\'est pas recommandé que d\'autres applications utilisent le même serveur Memcached que Moodle.';
 $string['usecompression'] = 'Utiliser la compression';
 $string['usecompression_help'] = 'Active ou désactive la compression des données envoyées. Une fois ce réglage activé, les valeurs plus grandes qu\'un certain seuil (actuellement 100 octets) sont compressées de façon transparente durant le stockage et décompressées lors de l\'utilisation.';
 $string['useserialiser'] = 'Utiliser le sérialiseur';

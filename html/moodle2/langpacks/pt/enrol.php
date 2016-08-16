@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'enrol', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Módulos de inscrição disponíveis';
 $string['addinstance'] = 'Adicionar método';
+$string['addinstanceanother'] = 'Adicionar método e criar outro';
 $string['ajaxnext25'] = 'Próximos 25...';
 $string['ajaxoneuserfound'] = 'Um utilizador encontrado';
 $string['ajaxxusersfound'] = '{$a} utilizadores encontrados';
@@ -71,6 +72,9 @@ $string['errorenrolcohort'] = 'Ocorreu um erro ao criar uma instância de sincro
 $string['errorenrolcohortusers'] = 'Ocorreu um erro ao inscrever membros de grupos globais nesta disciplina.';
 $string['errorthresholdlow'] = 'A notificação deve ser feita, pelo menos, 1 dia antes.';
 $string['errorwithbulkoperation'] = 'Ocorreu um erro durante o processamento da alteração da sua inscrição';
+$string['eventenrolinstancecreated'] = 'Método de inscrição criado';
+$string['eventenrolinstancedeleted'] = 'Método de inscrição apagado';
+$string['eventenrolinstanceupdated'] = 'Método de inscrição atualizado';
 $string['eventuserenrolmentcreated'] = 'Utilizador inscrito na disciplina';
 $string['eventuserenrolmentdeleted'] = 'Utilizador excluído da disciplina';
 $string['eventuserenrolmentupdated'] = 'Atualização de exclusão do utilizador';
@@ -89,6 +93,7 @@ $string['extremovedsuspendnoroles'] = 'Desativar inscrições na disciplina e re
 $string['extremovedunenrol'] = 'Cancelar inscrição do utilizador na disciplina';
 $string['finishenrollingusers'] = 'Terminar inscrições';
 $string['foundxcohorts'] = 'Encontrar {$a} Grupos Globais';
+$string['instanceadded'] = 'Método adicionado';
 $string['instanceeditselfwarning'] = 'Aviso:';
 $string['instanceeditselfwarningtext'] = 'Está inscrito nesta disciplina através deste método de inscrição, as alterações podem afetar o seu acesso a esta disciplina.';
 $string['invalidenrolinstance'] = 'Instância de inscrição inválida';
@@ -98,6 +103,7 @@ $string['manageinstance'] = 'Gerir';
 $string['migratetomanual'] = 'Migrar para inscrições manuais';
 $string['nochange'] = 'Sem alteração';
 $string['noexistingparticipants'] = 'Não existem participantes';
+$string['nogroup'] = 'Sem grupo';
 $string['noguestaccess'] = 'O acesso de visitantes a esta disciplina não é permitido. Por favor, faça login.';
 $string['none'] = 'Nenhum';
 $string['notenrollable'] = 'Esta disciplina não aceita inscrições neste momento.';
@@ -110,6 +116,7 @@ $string['periodend'] = 'até {$a}';
 $string['periodnone'] = '{$a} inscrito(s)';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} até {$a->end}';
+$string['proceedtocourse'] = 'Avançar para o conteúdo da disciplina';
 $string['recovergrades'] = 'Recuperar, se possível as notas antigas do utilizador';
 $string['rolefromcategory'] = 'Papel "{$a->role}" herdado da categoria da disciplina';
 $string['rolefrommetacourse'] = 'Papel "{$a->role}" herdado de disciplina ascendente';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'nl', branch 'MOODLE_28_STABLE'
+ * Strings for component 'resource', language 'nl', branch 'MOODLE_31_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['framesize'] = 'Frame hoogte';
 $string['legacyfiles'] = 'Migratie van oude cursusbestanden';
 $string['legacyfilesactive'] = 'Actief';
 $string['legacyfilesdone'] = 'Beëindigd';
+$string['modifieddate'] = 'Gewijzigd {$a}';
 $string['modulename'] = 'Bestand';
 $string['modulename_help'] = 'De bestandsmodule maakt het voor een leraar mogelijk om een bestand als leermiddel aan te bieden. Waar mogelijk wordt het bestandstype in de cursusinterface getoond; anders zal aan leerlingen aangeboden worden om het bestand te downloaden. Het bestand kan van ondersteunende bestanden voorzien worden, zoals een HTML-bestand dat ingebedde afbeeldingen of Flash-objecten bevat.
 
@@ -90,10 +91,19 @@ $string['printintro'] = 'Toon bronbeschrijving';
 $string['printintroexplain'] = 'Toon bronbeschrijving onder de inhoud? Sommige manieren van toenen zullen de beschrijving niet laten zien, zelfs niet als het zo ingesteld is.';
 $string['resource:addinstance'] = 'Voeg een nieuwe bron toe';
 $string['resourcecontent'] = 'Bestanden en submappen';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Bron exporteren';
 $string['resource:view'] = 'Bron bekijken';
+$string['search:activity'] = 'Bestand';
 $string['selectmainfile'] = 'Kies het hoofdbestand door op het icoontje naast de bestandsnaam te klikken.';
+$string['showdate'] = 'Toon de upload- / wijzigtijd';
+$string['showdate_desc'] = 'Toon de upload- / wijzigtijd op de cursuspagina?';
+$string['showdate_help'] = 'Toont een upload/gewijzigd-datum naast links naar het bestand.
+
+Als er meerdere bestanden in deze bron staan, dan wordt de upload/gewijzigd-datum van het startbestand getoond.';
 $string['showsize'] = 'Toon grootte';
 $string['showsize_desc'] = 'Toon bestandsgrootte op cursuspagina?';
 $string['showsize_help'] = 'Toont de bestandsgrootte, zoals \'3.1 MB\' naast de  bestanden.';
@@ -104,3 +114,4 @@ $string['showtype_help'] = 'Toon het bestandstype, zoals \'Word document\' naast
 Als er meerdere bestanden in deze bron zijn, dan wordt het bestandstype van het startbestand getoond.
 
 Als het bestandstype onbekend is, dan zal er niets getoond worden.';
+$string['uploadeddate'] = 'Geüpload {$a}';

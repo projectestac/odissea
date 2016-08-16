@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'el', branch 'MOODLE_28_STABLE'
+ * Strings for component 'folder', language 'el', branch 'MOODLE_31_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['folder:view'] = 'Εμφάνιση περιεχομένου φακέλο
 $string['modulename'] = 'Φάκελος';
 $string['modulenameplural'] = 'Φάκελοι';
 $string['pluginname'] = 'Φάκελος';
+$string['search:activity'] = 'Φάκελος';

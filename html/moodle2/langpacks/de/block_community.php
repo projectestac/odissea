@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['cannotselecttopsubject'] = 'Es kann kein Top-Thema gewählt werden
 ';
 $string['comments'] = 'Kommentare ({$a})';
 $string['community:addinstance'] = 'Block \'Community-Suche\' hinzufügen';
-$string['community:myaddinstance'] = 'Block \'Community-Suche\' für \'Meine Startseite\' hinzufügen';
+$string['community:myaddinstance'] = 'Block \'Community-Suche\' zum Dashboard hinzufügen';
 $string['contentinfo'] = 'Betreff: {$a->subject} - Zielgruppe: {$a->audience} - Schulstufe: {$a->educationallevel}';
 $string['continue'] = 'Weiter';
 $string['contributors'] = '- Mitwirkende: {$a}';
@@ -55,7 +55,7 @@ $string['dorestore'] = 'Ja';
 $string['download'] = 'Download';
 $string['downloadable'] = 'Kurse zum Herunterladen';
 $string['downloadablecourses'] = 'Downloadbare Kurse';
-$string['downloadconfirmed'] = 'Die Sicherung wurde in Ihren eigenen Dateien gespeichert: {$a}';
+$string['downloadconfirmed'] = 'Die Sicherung wurde in \'Meine Dateien\' gespeichert: {$a}';
 $string['downloaded'] = '... fertig';
 $string['downloadingcourse'] = 'Kurs wird heruntergeladen';
 $string['downloadingsize'] = 'Bitte warten Sie während des Dateidownloads ({$a->total}Mb)...';

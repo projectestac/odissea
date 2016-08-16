@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshopform_rubric', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,4 +37,4 @@ $string['levelgroup'] = 'Nota e opção de resposta';
 $string['levels'] = 'Opções de resposta';
 $string['mustbeunique'] = 'O nível das notas deve ser único em cada critério';
 $string['mustchooseone'] = 'Tem de selecionar um dos itens';
-$string['pluginname'] = 'Grelha Qualitativa';
+$string['pluginname'] = 'Escolha múltipla';

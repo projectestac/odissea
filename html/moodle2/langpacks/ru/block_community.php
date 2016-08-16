@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ru', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_community', language 'ru', branch 'MOODLE_31_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['blocks'] = 'Блоки';
 $string['cannotselecttopsubject'] = 'Невозможно выбрать тему верхнего уровня';
 $string['comments'] = 'Комментарии ({$a})';
 $string['community:addinstance'] = 'Добавлять новый блок «Поиск в общественных каталогах»';
-$string['community:myaddinstance'] = 'Добавлять новый блок «Поиск в общественных каталогах» на домашнюю страницу';
+$string['community:myaddinstance'] = 'Добавлять новый блок «Искатель сообщества» на страницу «Моя домашняя страница»';
 $string['contentinfo'] = 'Тема: {$a->subject} - Аудитория: {$a->audience} - Уровень образования: {$a->educationallevel}';
 $string['continue'] = 'Продолжить';
 $string['contributors'] = '- Авторы: {$a}';

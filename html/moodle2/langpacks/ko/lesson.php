@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', branch 'MOODLE_28_STABLE'
+ * Strings for component 'lesson', language 'ko', branch 'MOODLE_31_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -252,8 +252,6 @@ $string['maximumnumberofanswersbranches_help'] = '이 설정은 완전학습에 
 $string['maximumnumberofattempts'] = '최대 시도 수';
 $string['maximumnumberofattempts_help'] = '이 설정은 각 질문에 대해 허용된 최대 시도 횟수를 명시합니다. 반복적으로 틀리게 답하고, 최대 시도 회수에 도달하면 완전학습의 다음 페이지가 표시됩니다.';
 $string['maximumnumberofattemptsreached'] = '최대 허용 시도횟수에 도달하였습니다. 다음 페이지로 갑니다.';
-$string['maxtime'] = '제한 시간(분)';
-$string['maxtimewarning'] = '완전 학습을 마치기까지 {$a} 분 남았습니다.';
 $string['mediaclose'] = '종료 버튼 보이기';
 $string['mediafile'] = '미디어파일 창';
 $string['mediafile_help'] = '완전 학습의 처음에 팝업 창을 포함시키기 위해서 표시할 적절한 페이지를 선택하십시요. 모든 완전 학습 페이지는 필요한 경우 팝업을 다시 열 수 있는 링크를 포함하게 될 것입니다.';

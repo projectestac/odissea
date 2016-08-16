@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'workshopallocation_random', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,8 +35,8 @@ $string['assesswosubmission'] = 'Teilnehmer/innen können ohne eigene Einreichun
 $string['confignumofreviews'] = 'Vorgabewert für das zufällige Zuordnen von Einreichungen';
 $string['excludesamegroup'] = 'Beurteilungen aus der gleichen Gruppe verhindern';
 $string['noallocationtoadd'] = 'Keine Zuordnungen hinzuzufügen';
-$string['nogroupusers'] = '<p>Achtung: Wenn der Workshop sich im Modus "sichtbare Gruppen" oder "getrennten Gruppen" befindet, dann müssen Nutzer/innen als Mitglied in mindestens einer Gruppe eingetragen sein, um eine gegenseitige Beurteilung für diese Aktivität durchführen zu können. Nutzer/innen ohne Gruppe können nur eine neue Selbstbeurteilung vornehmen oder es werden vorhandene Beurteilungen gelöscht.</p>
-<p>Folgende Nutzer/innen sind bisher keiner Gruppe zugeordnet: {$a}</p>';
+$string['nogroupusers'] = '<p>Achtung: Wenn die gegenseitige Beurteilung sich im Modus \'sichtbare Gruppen\' oder \'getrennten Gruppen\' befindet, dann müssen Teilnehmer/innen als Mitglied in mindestens einer Gruppe eingetragen sein, um eine gegenseitige Beurteilung für diese Aktivität durchführen zu können. Teilnehmer/innen ohne Gruppe können nur eine neue Selbstbeurteilung vornehmen oder es werden vorhandene Beurteilungen gelöscht.</p>
+<p>Folgende Teilnehmer/innen sind bisher keiner Gruppe zugeordnet: {$a}</p>';
 $string['numofdeallocatedassessment'] = '{$a} Zuordnung/en aufheben';
 $string['numofrandomlyallocatedsubmissions'] = 'Zufällige Zuordnung von {$a} Einreichungen';
 $string['numofreviews'] = 'Anzahl von Beurteilungsaufträgen';

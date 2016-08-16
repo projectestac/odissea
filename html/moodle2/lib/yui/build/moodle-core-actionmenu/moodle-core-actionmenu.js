@@ -189,7 +189,8 @@ ACTIONMENU.prototype = {
      */
     getMenuItem: function(currentItem, previous) {
         var menubar = currentItem.ancestor(SELECTOR.MENUBAR),
-            menuitems;
+            menuitems,
+            next;
 
         if (!menubar) {
             return null;
@@ -266,8 +267,7 @@ ACTIONMENU.prototype = {
         }
 
         if (this.menulink) {
-            if (!e || e.type != 'click') {
-                // We needed to test !e to retain backwards compatiablity if the event is not passed.
+            if (e.type != 'click') {
                 this.menulink.focus();
             }
             this.menulink = null;
@@ -315,18 +315,22 @@ ACTIONMENU.prototype = {
      */
     handleKeyboardEvent: function(e) {
         var next;
+        var markEventHandled = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        };
 
         // Handle when the menu is still selected.
         if (e.currentTarget.ancestor(SELECTOR.TOGGLE, true)) {
             if ((e.keyCode === 40 || (e.keyCode === 9 && !e.shiftKey)) && this.firstMenuChild) {
                 this.firstMenuChild.focus();
-                e.preventDefault();
+                markEventHandled(e);
             } else if (e.keyCode === 38 && this.lastMenuChild) {
                 this.lastMenuChild.focus();
-                e.preventDefault();
+                markEventHandled(e);
             } else if (e.keyCode === 9 && e.shiftKey) {
                 this.hideMenu(e);
-                e.preventDefault();
+                markEventHandled(e);
             }
             return this;
         }
@@ -334,24 +338,26 @@ ACTIONMENU.prototype = {
         if (e.keyCode === 27) {
             // The escape key was pressed so close the menu.
             this.hideMenu(e);
-            e.preventDefault();
+            markEventHandled(e);
 
         } else if (e.keyCode === 32) {
             // The space bar was pressed. Trigger a click.
-            e.preventDefault();
+            markEventHandled(e);
             e.currentTarget.simulate('click');
         } else if (e.keyCode === 9) {
             // The tab key was pressed. Tab moves forwards, Shift + Tab moves backwards through the menu options.
-            // We only override the Shift + Tab on the first option, and Tab on the last option to change where the focus is moved to.
+            // We only override the Shift + Tab on the first option, and Tab on the last option to change where the
+            // focus is moved to.
             if (e.target === this.firstMenuChild && e.shiftKey) {
                 this.hideMenu(e);
-                e.preventDefault();
+                markEventHandled(e);
             } else if (e.target === this.lastMenuChild && !e.shiftKey) {
                 if (this.hideMenu(e)) {
                     // Determine the next selector and focus on it.
                     next = this.menulink.next(SELECTOR.CAN_RECEIVE_FOCUS_SELECTOR);
                     if (next) {
                         next.focus();
+                        markEventHandled(e);
                     }
                 }
             }
@@ -399,7 +405,7 @@ ACTIONMENU.prototype = {
 
             if (next) {
                 next.focus();
-                e.preventDefault();
+                markEventHandled(e);
             }
         }
     },
@@ -412,7 +418,7 @@ ACTIONMENU.prototype = {
      * @param {EventFacade} e
      */
     hideIfOutside : function(e) {
-        if (!e.target.ancestor(SELECTOR.MENUCHILD, true)) {
+        if (!e.target.ancestor(SELECTOR.MENUCONTENT, true)) {
             this.hideMenu(e);
         }
     },
@@ -457,7 +463,10 @@ ACTIONMENU.prototype = {
         this.events.push(BODY.delegate('focus', this.hideIfOutside, '*', this));
 
         // Check keyboard changes.
-        this.events.push(menu.delegate('key', this.handleKeyboardEvent, 'down:9, 27, 38, 40, 32', SELECTOR.MENUCHILD + ', ' + SELECTOR.TOGGLE, this));
+        this.events.push(
+            menu.delegate('key', this.handleKeyboardEvent,
+                          'down:9, 27, 38, 40, 32', SELECTOR.MENUCHILD + ', ' + SELECTOR.TOGGLE, this)
+            );
 
         // Close the menu after a button was pushed.
         this.events.push(menu.delegate('click', function(e) {

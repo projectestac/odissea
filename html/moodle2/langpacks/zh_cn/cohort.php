@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'cohort', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['description'] = '描述';
 $string['displayedrows'] = '{$a->displayed}行显示超过了{$a->total}。';
 $string['duplicateidnumber'] = '已有使用相同ID的群存在';
 $string['editcohort'] = '编辑群';
+$string['editcohortidnumber'] = '编辑群ID';
+$string['editcohortname'] = '编辑群名称';
 $string['eventcohortcreated'] = '群已创建';
 $string['eventcohortdeleted'] = '群已删除';
 $string['eventcohortmemberadded'] = '用户添加到群';
@@ -63,6 +65,8 @@ $string['memberscount'] = '群大小';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSV文件出现了一些问题，请检查它包含的列名称';
 $string['namefieldempty'] = '字段名称不能为空';
+$string['newidnumberfor'] = '群{$a}的新ID';
+$string['newnamefor'] = '群{$a}的新名称';
 $string['nocomponent'] = '人工建立';
 $string['potusers'] = '潜在用户';
 $string['potusersmatching'] = '潜在的匹配用户';

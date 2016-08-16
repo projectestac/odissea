@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,17 +28,20 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowdeletes'] = '削除を許可する';
 $string['allowrenames'] = 'リネームを許可する';
 $string['allowsuspends'] = 'アカウントの利用停止および利用停止解除を許可する';
+$string['assignedsysrole'] = '割り当て済みシステムロール {$a}';
 $string['csvdelimiter'] = 'CSVデリミタ';
 $string['defaultvalues'] = 'デフォルト値';
 $string['deleteerrors'] = '削除エラー';
 $string['encoding'] = 'エンコーディング';
 $string['errormnetadd'] = 'リモートユーザを追加できません。';
 $string['errors'] = 'エラー';
+$string['invaliduserdata'] = 'ユーザ {$a} のデータに無効なデータが検出されたため、自動的に削除されました。';
 $string['nochanges'] = '変更なし';
 $string['pluginname'] = 'ユーザアップロード';
 $string['renameerrors'] = 'リネームエラー';
 $string['requiredtemplate'] = '必須項目です。あなたはここでテンプレート構文 (%l = 姓、%f = 名、%u = ユーザ名) を使用することができます。詳細および例に関して、ヘルプをご覧ください。';
 $string['rowpreviewnum'] = 'プレビュー行';
+$string['unassignedsysrole'] = '割り当て解除済みシステムロール {$a}';
 $string['uploadpicture_baduserfield'] = '指定されたユーザ属性は有効ではありません。もう一度お試しください。';
 $string['uploadpicture_cannotmovezip'] = '一時ディレクトリにZIPファイルを移動できません。';
 $string['uploadpicture_cannotprocessdir'] = 'ZIP解凍されたファイルを処理できません。';

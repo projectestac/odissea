@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_alfresco', language 'ja', branch 'MOODLE_28_STABLE'
+ * Strings for component 'repository_alfresco', language 'ja', branch 'MOODLE_31_STABLE'
  *
  * @package   repository_alfresco
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,9 +33,6 @@ $string['notitle'] = 'タイトルなし';
 $string['password'] = 'パスワード';
 $string['pluginname'] = 'Alfrescoリポジトリ';
 $string['pluginname_help'] = 'Alfresco CMSのプラグインです。';
-$string['security_key_notice_message_content'] = '外部リンクによるAlfresco Moodleリポジトリ使用に関して、新たなセキュリティ問題が発見されました。これらのリンク (トークン) に含まれるユーザ情報を使うことにより、ユーザはAlfrescoサーバの他のユーザアカウントにアクセスできるようになります。現在、この機能は無効にされていますが、トークンが含まれたリンクにより、他のユーザのアカウントにアクセスすることができます。あなた自身の安全のため、トークンを有効期限切れにするために、あなたのAlfrescoサーバを再起動することは重要です。';
-$string['security_key_notice_message_small'] = '最近発見されたAlfrescoのセキュリティ問題のため、あなたのAlfrescoサーバの再起動をお勧めします。';
-$string['security_key_notice_message_subject'] = 'Alfrescoリポジトリセキュリティ通知';
 $string['soapmustbeenabled'] = 'Alfrescoプラグインのため、SOAP拡張モジュールを有効にする必要があります。';
 $string['space'] = 'スペース';
 $string['username'] = 'ユーザ名';

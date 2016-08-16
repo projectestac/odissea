@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_feedback', language 'ar', branch 'MOODLE_28_STABLE'
+ * Strings for component 'block_feedback', language 'ar', branch 'MOODLE_31_STABLE'
  *
  * @package   block_feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'إفادة';
-$string['missing_feedback_module'] = 'تعتمد هذه الكتلة على وحدة إفادة النشاط، ولكن هذه الوحدة غير موجودة';
 $string['pluginname'] = 'إفادة';

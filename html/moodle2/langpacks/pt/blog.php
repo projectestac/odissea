@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'pt', branch 'MOODLE_28_STABLE'
+ * Strings for component 'blog', language 'pt', branch 'MOODLE_31_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['blogaboutthis'] = 'Blogue sobre {$a->type}';
 $string['blogaboutthiscourse'] = 'Adicionar mensagem sobre esta disciplina';
 $string['blogaboutthismodule'] = 'Adicionar mensagem sobre {$a}';
 $string['blogadministration'] = 'Administração do blogue';
-$string['blogdeleteconfirm'] = 'Apagar esta mensagem do Blogue?';
+$string['blogdeleteconfirm'] = 'Apagar a mensagem \'{$a}\' do Blogue?';
 $string['blogdisable'] = 'O sistema de blogues está desativado!';
 $string['blogentries'] = 'Mensagens do blogue';
 $string['blogentriesabout'] = 'Mensagens do blogue: {$a}';
@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Os blogues de disciplina não se encontram ativo
 $string['courseblogs'] = 'Os utilizadores só podem ver blogues de pessoas com quem partilham uma disciplina';
 $string['deleteblogassociations'] = 'Apagar associações entre blogues';
 $string['deleteblogassociations_help'] = 'Se assinalar esta opção, as entradas do blogue não serão mais associadas a esta disciplina ou a quaisquer atividades ou recursos. As entradas do blogue não se apagam automaticamente.';
+$string['deleteentry'] = 'Apagar entrada';
 $string['deleteexternalblog'] = 'Cancelar o registo deste blogue externo';
 $string['deleteotagswarn'] = 'Tem a certeza de que quer apagar esta(s) palavra(s)-chave de todas as entradas nos blogues e removê-la do sistema?';
 $string['description'] = 'Descrição';
@@ -111,6 +112,7 @@ $string['invalidgroupid'] = 'ID de grupo inválido';
 $string['invalidurl'] = 'O URL não está disponível';
 $string['linktooriginalentry'] = 'Ligar à mensagem original';
 $string['maxexternalblogsperuser'] = 'Número máximo de blogues externos por utilizador';
+$string['myprofileuserblogs'] = 'Visualizar todas as entradas de blogue';
 $string['name'] = 'Nome';
 $string['name_help'] = 'Insira um nome descritivo para o seu blogue externo. (Se não inserir nenhum nome, será usado o título do blogue).';
 $string['noentriesyet'] = 'Não existem mensagens visíveis';
@@ -127,7 +129,7 @@ $string['page-blog-x'] = 'Todas as páginas do blogue';
 $string['pagesize'] = 'Número de entradas do blogue por página';
 $string['permalink'] = 'Permalink';
 $string['personalblogs'] = 'Os utilizadores só podem ver os seus blogues';
-$string['preferences'] = 'Preferências';
+$string['preferences'] = 'Preferências do blogue';
 $string['publishto'] = 'Publicar para';
 $string['publishtocourse'] = 'Os utilizadores partilham uma disciplina consigo';
 $string['publishtocourseassoc'] = 'Membros da disciplina associada';
@@ -151,6 +153,7 @@ $string['searchterm'] = 'Pesquisar: {$a}';
 $string['settingsupdatederror'] = 'Ocorreu um erro e as preferências não foram atualizadas';
 $string['siteblog'] = 'Blogue do site: {$a}';
 $string['siteblogdisable'] = 'O blogue do site não está ativo';
+$string['siteblogheading'] = 'Blogue do site';
 $string['siteblogs'] = 'Todos os utilizadores do site podem ver todas as entradas dos blogues';
 $string['tagdatelastused'] = 'Data da última utilização da palavra-chave';
 $string['tagparam'] = 'Palavra-chave: {$a}';

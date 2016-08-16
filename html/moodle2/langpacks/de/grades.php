@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'de', branch 'MOODLE_28_STABLE'
+ * Strings for component 'grades', language 'de', branch 'MOODLE_31_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['aggregateoutcomes'] = 'Lernziele in die Gesamtergebnisse einbeziehen';
 $string['aggregateoutcomes_help'] = '<h2>Lernziele beim Gesamtergebnis berücksichtigen oder nicht</h2>
 <p>Die Berücksichtigung der Lernziele bei der Ermittlung des Gesamtergebnisses kann zu Verzerrungen führen, die nicht erwünscht sind. Sie haben daher die Möglichkeit, diese einzubeziehen oder zu ignorieren.
 </p>';
-$string['aggregatesonly'] = 'Nur Gesamtwerte';
+$string['aggregatesonly'] = 'Zu den Gesamtwerten wechseln';
 $string['aggregatesubcatsupgradedgrades'] = 'Hinweis: Die Einstellung  \'Aggregation mit Unterkategorien\' wurde beim Upgrade entfernt. Da diese Einstellung in diesem Kurs verwendet wurde, sollten Sie sich die Veränderungen bei den Bewertungen genauer ansehen.';
 $string['aggregatesum'] = 'Natürlich';
 $string['aggregateweightedmean'] = 'Gewichteter Durchschnittswert';
@@ -142,7 +142,6 @@ $string['calculationview'] = 'Berechnung ansehen';
 $string['cannotaccessgroup'] = 'Bei der gewählten Gruppe kann nicht auf die Bewertung zugegriffen werden.';
 $string['categories'] = 'Kategorien';
 $string['categoriesanditems'] = 'Kategorien und Einträge';
-$string['categoriesedit'] = 'Einstellungen bearbeiten';
 $string['category'] = 'Kategorie';
 $string['categoryedit'] = 'Kategorie bearbeiten';
 $string['categoryname'] = 'Name der Kategorie';
@@ -168,6 +167,8 @@ $string['coursename'] = 'Name des Kurses';
 $string['coursescales'] = 'Kursskalen';
 $string['coursesettings'] = 'Kurseinstellungen';
 $string['coursesettingsexplanation'] = 'Die Kurseinstellungen legen fest, wie die Bewertungen für alle Teilnehmer/innen im Kurs gezeigt werden';
+$string['coursesiamtaking'] = 'Kurse - Teilnehmer/in';
+$string['coursesiamteaching'] = 'Kurse - Trainer/in';
 $string['coursetotal'] = 'Summe für den Kurs';
 $string['createcategory'] = 'Kategorie anlegen';
 $string['createcategoryerror'] = 'Neue Kategorie konnte nicht erstellt werden';
@@ -212,6 +213,7 @@ $string['enableajax_help'] = 'Ajax-Funktionalität für die Bewerterübersicht b
 $string['enableoutcomes'] = 'Lernziele aktivieren';
 $string['enableoutcomes_help'] = 'Unterstützung für Lernziele (auch Lernkompetenzen, -ergebnisse, -standards, -kriterien genannt) meint, dass Dinge in einer oder mehreren Skalen bewertet werden können. Die Aktivierung der Lernziele macht eine Bewertung auf der gesamten Website möglich.';
 $string['encoding'] = 'Kodierung';
+$string['encoding_help'] = 'Wählen Sie die Zeichencodierung aus, die für diese Daten benutzt wird (standardmäßig UTF-8). Bei einer falschen Zeichencodierung wird diese in der Datenvorschau sichtbar.';
 $string['errorcalculationbroken'] = 'Zirkelverweis oder unvollständige Berechnungsformel';
 $string['errorcalculationnoequal'] = 'Formeln müssen mit einem Gleichheitszeichen beginnen (=1+2)';
 $string['errorcalculationunknown'] = 'Ungültige Formel';
@@ -220,7 +222,7 @@ $string['errornocalculationallowed'] = 'Für diesen Wert sind keine Berechnungen
 $string['errornocategorisedid'] = 'Keine nicht kategorisierte id!';
 $string['errornocourse'] = 'Keine Kursinformation!';
 $string['errorreprintheadersnonnumeric'] = 'Nicht-numerischer Wert für Kopfzeile!';
-$string['errorsavegrade'] = 'Endschuldigung, aber die Bewertung konnte nicht gespeichert werden.';
+$string['errorsavegrade'] = 'Die Bewertung konnte nicht gespeichert werden.';
 $string['errorsettinggrade'] = 'Fehler beim Speichern "{$a->itemname}" der Bewertung für Nutzer (userid) {$a->userid}';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Es ist ein Fehler beim Aktualisieren der Einstellungen "Zusammenfassung nur bewerteter Elemente" in der Bewertungskategorie mit der ID {$a->id} aufgetreten.';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Es ist ein Fehler beim Aktualisieren der Einstellungen "Zusammenfassen der Ergebnisse" in der Bewertungskategorie mit der ID {$a->id} aufgetreten.';
@@ -241,6 +243,8 @@ $string['exportonlyactive_help'] = 'Nur Teilnehmer/innen exportieren, deren Eins
 $string['exportplugins'] = 'Export-Plugins';
 $string['exportsettings'] = 'Exporteinstellungen';
 $string['exportto'] = 'Export nach';
+$string['externalurl'] = 'Externe URL';
+$string['externalurl_desc'] = 'Wenn Sie eine externe Bewertungsverwaltung verwenden, hinterlegen Sie die URL hier.';
 $string['extracreditvalue'] = 'Zusatzpunkte für {$a}';
 $string['extracreditwarning'] = 'Anmerkung: Wenn für alle Elemente einer Kategorie Extrapunkte vergeben werden, dann werden sie bei der Gesamtbewertung nicht berücksichtigt. Es wird keine Gesamtpunktzahl ermittelt.';
 $string['feedback'] = 'Feedback';
@@ -264,8 +268,7 @@ $string['forceon'] = 'Festgelegt: An';
 $string['forelementtypes'] = 'für die ausgewählten {$a}';
 $string['forstudents'] = 'Für Teilnehmer/innen';
 $string['full'] = 'Vollständig';
-$string['fullmode'] = 'Vollständige Ansicht';
-$string['fullview'] = 'Vollständige Ansicht';
+$string['fullmode'] = 'Zur vollständigen Ansicht wechseln';
 $string['generalsettings'] = 'Grundeinstellungen';
 $string['grade'] = 'Bewertung';
 $string['gradeadministration'] = 'Bewertungsverwaltung';
@@ -279,6 +282,7 @@ $string['gradebookcalculationswarning'] = 'Hinweis: Es wurden einige Fehler in d
 Die neuere Version ist {$a->currentversion}. Sie nutzen Gradebook-Version {$a->gradebookversion}. Informationen über Änderungen finden Sie unter <a href="{$a->url}">Gradebook calculation changes</a>.';
 $string['gradebookhiddenerror'] = 'Die Bewertungen sind zur Zeit für die Teilnehmer/innen nicht sichtbar.';
 $string['gradebookhistories'] = 'Bewertungsverlauf';
+$string['gradebooksetup'] = 'Setup für Bewertungen';
 $string['gradeboundary'] = 'Untere Grenze für Note';
 $string['gradeboundary_help'] = '<h2>Bewertungsgrenze</h2>
 <p>Eine prozentuale Grenze über der die Bewertung einer bestimmten Note (Buchstaben) zugeordnet wird. </p>';
@@ -327,6 +331,7 @@ $string['gradeletter'] = 'Note';
 $string['gradeletter_help'] = '<h2>Bewertung mit Buchstaben</h2>
 <p>Ein Buchstabe oder eine andere Bezeichnung als Symbol zur Wiedergabe eines Bewertungsbereichs (z.B. sehr gut für 100-97 Punkte).</p>';
 $string['gradeletternote'] = 'Füllen Sie die letzte Zeile und speichern Sie, <br />um eine neue Leerzeile für eine weitere Note zu erhalten.';
+$string['gradeletteroverridden'] = 'Die Voreinstellungen für die Bezeichnungen der Bewertungen (Buchstaben)  wurden überschrieben.';
 $string['gradeletters'] = 'Notenstufen';
 $string['gradelocked'] = 'Bewertung ist gesperrt';
 $string['gradelong'] = '{$a->grade} / {$a->max}';
@@ -339,6 +344,7 @@ $string['gradeoutcomeitem'] = 'Lernziel bewerten';
 $string['gradeoutcomes'] = 'Lernziele';
 $string['gradeoutcomescourses'] = 'Kurs-Lernziele';
 $string['gradepass'] = 'Bewertung zum Bestehen';
+$string['gradepassgreaterthangrade'] = 'Die Bewertung zum Bestehen kann nicht höher sein als die Höchstbewertung {$a}';
 $string['gradepass_help'] = 'Diese Option legt die erforderliche Mindestbewertung für das Bestehen fest. Der Wert wird beim Aktivitäts- und beim Kursabschluss verwendet, außerdem wird bei der Bewertung ein Bestehen in grün und ein Scheitern in rot markiert.
 ';
 $string['gradepointdefault'] = 'Standardmäßige Punktebewertung';
@@ -356,7 +362,7 @@ $string['gradereport'] = 'Bewertungsbericht';
 $string['graderreport'] = 'Bewerterübersicht';
 $string['grades'] = 'Bewertungen';
 $string['gradesforuser'] = 'Bewertung für {$a->user}';
-$string['gradesonly'] = 'Nur Bewertung';
+$string['gradesonly'] = 'Zu den Bewertungen wechseln';
 $string['gradessettings'] = 'Bewertungseinstellungen';
 $string['gradetype'] = 'Bewertungstyp';
 $string['gradetype_help'] = '<h2>Bewertungstyp</h2>
@@ -400,6 +406,14 @@ $string['idnumbers'] = 'ID-Nummern';
 $string['ignore'] = 'Ignorieren';
 $string['import'] = 'Import';
 $string['importcsv'] = 'CSV importieren';
+$string['importcsv_help'] = 'Bewertungen können aus einer CSV-Datei im folgenden Format importiert werden:
+
+* Jede Zeile enthält einen Datensatz
+* Jeder Datensatz enthält eine Reihe von Daten, die durch Kommas oder ein anderes Trennzeichen abgetrennt werden
+* Die erste Zeile enthält eine Liste der genutzten Feldnamen und definieren die Struktur für die folgenden Datensätze
+* Ein Feld mit dem Nutzernamen, der ID-Nummer oder der E-Mail-Adresse ist erforderlich, im die Bewertungen dem Nutzer zuzuordnen.
+
+Eine Datei mit der richtigen Struktur kann eingesehen werden indem man zunächst einige Bewertungen exportiert. Diese Datei kann dann bearbeitet und als CSV-Datei gespeichert werden.';
 $string['importcustom'] = 'Import als individuelle Lernziele (nur für diesen Kurs)';
 $string['importerror'] = 'Es ist ein Fehler aufgetreten. Das Script wurde mit falschen Parametern gestartet.';
 $string['importfailed'] = 'Import gescheitert. Es wurden keine Daten importiert.';
@@ -461,8 +475,11 @@ $string['lowest'] = 'Niedrigste';
 $string['lowgradeletter'] = 'Niedrig';
 $string['manualitem'] = 'Manueller Aspekt';
 $string['mapfrom'] = 'Zuordnung von';
+$string['mapfrom_help'] = 'Wählen Sie die Spalte in der Tabelle, die Daten zur Identifizierung des Nutzers enthält. Das können sein: Nutzername, Nutzer-ID oder E-Mail-Adresse.';
 $string['mappings'] = 'Zuordnung von Bewertungsaspekten';
+$string['mappings_help'] = 'Für jede Spalte mit Bewertungen in der Tabelle legen sie die zugehörige Bewertung in Moodle fest.';
 $string['mapto'] = 'Zuordnung auf';
+$string['mapto_help'] = 'Legen Sie die gleichen Zuordnungsdaten fest wie für \'Zuordnen von\'.';
 $string['max'] = 'Höchste';
 $string['maxgrade'] = 'Beste Bewertung';
 $string['meanall'] = 'Alle Bewertungen';
@@ -479,13 +496,22 @@ $string['minmaxtouse_help'] = 'Die Einstellung legt fest ob die niedrigsten und 
 $string['minmaxupgradedgrades'] = 'Hinweis: Einige Bewertungen wurden geändert, um Inkonsistenzen im Bewertungsbereich zu korrigieren. Diese sind aufgetreten durch Änderungen der Einstellung zu den niedrigsten und höchsten Bewertungen, die für die angezeigte Bewertung berücksichtigt werden sollen.';
 $string['minmaxupgradefixbutton'] = 'Widersprüchlichkeit beheben';
 $string['minmaxupgradewarning'] = 'Hinweis: Die Einstellung zur Berechnung der niedrigsten und höchsten Bewertung im Bewertungsbereich wurde geändert. Dadurch ergeben sich Bewertungen der Berechnungen, die nicht mehr korrekt sind. Sie können dies durch Anklicken des Buttons unten korrigieren.';
+$string['missingitemtypeoreid'] = 'Der Array-Schlüssel (itemtype oder eid) des 2. Parameters fehlt grade_edit_tree_column_select::get_item_cell($item, $params)';
 $string['missingscale'] = 'Skala auswählen';
 $string['mode'] = 'Modus';
 $string['modgrade'] = 'Bewertung';
-$string['modgradeerrorbadpoint'] = 'Ungültiger Bewertungswert. Es muß ein ganzzahliger Wert zwischen 1 und {$a} sein.';
+$string['modgradecantchangegradetype'] = 'Sie können den Typ nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
+$string['modgradecantchangegradetypemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass der Bewertungstyp nicht mehr verändert werden kann. Wenn Sie den Maximalwert ändern möchten, müssen Sie zuerst auswählen, ob vorhandene Bewertungen neu vergeben werden sollen oder nicht.';
+$string['modgradecantchangegradetyporscalemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass Bewertungstyp und -skala nicht mehr verändert werden können.';
+$string['modgradecantchangeratingmaxgrade'] = 'Sie können den Maximalwert nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
+$string['modgradecantchangescale'] = 'Sie können die Skalierung nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
+$string['modgradecategoryrescalegrades'] = 'Überschriebene Bewertungen neu skalieren';
+$string['modgradedonotmodify'] = 'Existierende Bewertungen nicht ändern';
+$string['modgradeerrorbadpoint'] = 'Ungültiger Bewertungswert. Es muss ein ganzzahliger Wert zwischen 1 und {$a} sein.';
 $string['modgradeerrorbadscale'] = 'Falsche Skala ausgewählt. Bite wählen Sie eine der vorhandenen Skalen aus.';
 $string['modgrade_help'] = 'Wählen Sie die Art der Bewertung für diese Aktivität aus. Wenn Sie z.B. Skala auswählen, steht ein DropDown-Feld mit einer Skala zur Auswahl zur Verfügung. Wenn Sie Punkt-Bewertung auswählen, so können Sie die Höchstpunktzahl für diese Aktivität auswählen.';
 $string['modgrademaxgrade'] = 'Maximalpunkte';
+$string['modgraderescalegrades'] = 'Existierender Bewertungen neuskalieren';
 $string['modgradetype'] = 'Typ';
 $string['modgradetypenone'] = 'Kein';
 $string['modgradetypepoint'] = 'Punkt';
@@ -497,6 +523,9 @@ $string['multfactor'] = 'Multiplikator';
 $string['multfactor_help'] = '<h2>Multiplikator</h2>
 <p>Faktor mit dem jeder Wert dieser Benotung multipliziert wird. Damit können die Ergebnisse unterschiedlich gewichtet werden.</p>';
 $string['multfactorvalue'] = 'Multiplikator für {$a}';
+$string['mustchooserescaleyesorno'] = 'Sie müssen auswählen, ob vorhandene Bewertungen neu vergeben werden sollen oder nicht.';
+$string['mygrades'] = 'Meine Bewertungen';
+$string['mygrades_desc'] = 'Die Einstellung fügt den Link zu einer externen Bewertungsverwaltung zum  Nutzermenu hinzu.';
 $string['mypreferences'] = 'Meine Einstellungen';
 $string['myreportpreferences'] = 'Meine Einstellungen für Berichte';
 $string['navmethod'] = 'Navigationsmethode';
@@ -522,10 +551,12 @@ $string['nooutcome'] = 'Kein Lernziel';
 $string['nooutcomes'] = 'Einzelne Lernziel-Aspekte müssen zu einem Lernziel eines Kurses verlinkt werden, aber in diesem Kurs gibt es keine Lernziele. Möchten Sie eines hinzufügen?';
 $string['nopermissiontoresetweights'] = 'Keine Berechtigung zum Zurücksetzen der Gewichtung';
 $string['nopublish'] = 'Nicht veröffentlichen';
+$string['noreports'] = 'Sie sind in keinem Kurs als Teilnehmer/in oder als Trainer/in eingeschrieben.';
 $string['norolesdefined'] = 'Es wurden keine Rollen definiert unter Website Administration > Bewertungen > Grundeinstellungen > Bewertete Rollen';
 $string['noscales'] = 'Lernziele müssen zu einer Bewertungsskala eines Kurses oder einer globalen Skala zu gewiesen werden, aber es existiert keine. Möchten Sie eine hinzufügen?';
 $string['noselectedcategories'] = 'Keine Kategorie wurde ausgewählt.';
 $string['noselecteditems'] = 'keine Werte ausgewählt.';
+$string['notenrolled'] = 'Sie sind in keinem Kurs eingeschrieben.';
 $string['notteachererror'] = 'Diese Funktionen können nur Trainer/innen nutzen';
 $string['nousersloaded'] = 'Es wurden keine Nutzer importiert.';
 $string['numberofgrades'] = 'Anzahl der Bewertungsstufen';
@@ -614,6 +645,7 @@ $string['rawpct'] = 'Rohwert %';
 $string['real'] = 'Punkte';
 $string['realletter'] = 'Punkte (Noten)';
 $string['realpercentage'] = 'Punkte (Prozent)';
+$string['recalculatinggrades'] = 'Bewertungen neu berechnen...';
 $string['recovergradesdefault'] = 'Bewertungen wiederherstellen';
 $string['recovergradesdefault_help'] = 'Standardmäßig werden alte Bewertungen wiederhergestellt, wenn Nutzer/innen erneut in einen Kurs eingeschrieben werden.';
 $string['refreshpreview'] = 'Vorschau aktualisieren';
@@ -631,6 +663,7 @@ $string['resetweights'] = 'Gewichtungen von {$a->itemname} zurücksetzen';
 $string['resetweightsshort'] = 'Gewichtungen zurücksetzen';
 $string['respectingcurrentdata'] = 'Die aktuelle Konfiguration wird nicht verändert.';
 $string['rowpreviewnum'] = 'Zeilenvorschau';
+$string['rowpreviewnum_help'] = 'Die Daten können vor dem Import in einer Vorschau angezeigt werden. Diese Option legt fest, wie viele Zeilen in der Vorschau dargestellt werden.';
 $string['savechanges'] = 'Änderungen speichern';
 $string['savepreferences'] = 'Grundeinstellungen speichern';
 $string['scaleconfirmdelete'] = 'Möchten Sie die Skala \'{$a}\' wirklich löschen?';
@@ -641,7 +674,8 @@ $string['selectalloroneuser'] = 'Alle oder einen auswählen';
 $string['selectauser'] = 'Nutzer/in wählen';
 $string['selectdestination'] = 'Ziel für {$a} auswählen';
 $string['separator'] = 'Trennzeichen';
-$string['sepcolon'] = 'Doppelpunkt';
+$string['separator_help'] = 'Wählen Sie den Trenner für die CSV-Datei aus (standardmäßig Semikolon).';
+$string['sepcolon'] = 'Komma';
 $string['sepcomma'] = 'Komma';
 $string['sepsemicolon'] = 'Semikolon';
 $string['septab'] = 'Tab';
@@ -681,6 +715,9 @@ $string['showhiddenitems_help'] = 'Diese Einstellung legt fest, ob verborgene El
 * Nur verborgen bis - Bewertungselemente mit einem Zeitpunkt "Verborgen bis" werden grau gezeigt, wobei die Bewertung  unsichtbar ist. Ab dem gesetzten Zeitpunkt wird das Element vollständig angezeigt
 * Nicht anzeigen - Bewertungselemente sind vollständig unsichtbar';
 $string['showhiddenuntilonly'] = 'Nur verborgen bis';
+$string['showingaggregatesonly'] = 'Nur Gesamtwerte werden angezeigt';
+$string['showingfullmode'] = 'Vollständige Ansicht wird angezeigt';
+$string['showinggradesonly'] = 'Bewertungen werden angezeigt';
 $string['showlettergrade'] = 'Notenbewertung anzeigen';
 $string['showlettergrade_help'] = 'Spalte für Notenbewertung anzeigen?';
 $string['showlocks'] = 'Sperrungen anzeigen';
@@ -706,7 +743,7 @@ $string['showuserimage_help'] = 'Nutzerbild neben dem Namen in der Bewerterüber
 $string['showverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} anzeigen';
 $string['showweight'] = 'Gewichtungen anzeigen';
 $string['showweight_help'] = 'Spalte für die Bewertungsgewichtung anzeigen?';
-$string['simpleview'] = 'Vereinfachte Ansicht';
+$string['simpleview'] = 'Einzelansicht';
 $string['singleview'] = 'Einzelansicht für {$a}';
 $string['sitewide'] = 'Für die ganze Website';
 $string['sort'] = 'sortieren';
@@ -744,7 +781,7 @@ $string['uncategorised'] = 'Nicht kategorisiert';
 $string['unchangedgrade'] = 'Unveränderte Bewertungen';
 $string['unenrolledusersinimport'] = 'Beim Import werden Bewertungen der folgenden Teilnehmer/innen importiert, die zur Zeit nicht im Kurs registriert sind: {$a}';
 $string['unlimitedgrades'] = 'Offene Bewertung';
-$string['unlimitedgrades_help'] = 'Standardmäßig sind Bewertungen durch Minimal- und Maximalwert einer Bewertungsstufe definiert. Falls diese Einstellung aktiviert wird, entfällt die Einschränkung und erlaubt das direkte Eintragen von Bewertungen über 100%. Es wird empfohlen, diese Einstellung nicht während der Spitzenzeiten aktiviert, weil dann alle Bewertungen neu berechnet werden und dies zu einer starken Serverlast führen kann.';
+$string['unlimitedgrades_help'] = 'Standardmäßig sind Bewertungen durch Minimal- und Maximalwert einer Bewertungsstufe definiert. Falls diese Option aktiviert ist, entfällt die Einschränkung und erlaubt auch das direkte Eintragen von Bewertungen über 100%.';
 $string['unlock'] = 'Freigeben';
 $string['unlockverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} entsperren';
 $string['unused'] = 'Unbenutzt';
@@ -771,6 +808,7 @@ $string['usermappingerrorusernotfound'] = 'Nutzer-Zuordnungsfehler. Nutzer kann 
 $string['userpreferences'] = 'Nutzereinstellungen';
 $string['useweighted'] = 'Gewichtung verwenden';
 $string['verbosescales'] = 'Wortreiche Skalen';
+$string['verbosescales_help'] = 'Eine verbale Skala verwendet Begriffe an Stelle von Zahlen. Setzen Sie den Wert \'Ja\', um sowohl numerische als auch verbale Skalen zu importieren. Setzen Sie den Wert auf \'nein\' um nur numerische Skalen zu importieren.';
 $string['viewbygroup'] = 'Gruppe';
 $string['viewgrades'] = 'Bewertungen anzeigen';
 $string['weight'] = 'Gewichtung';

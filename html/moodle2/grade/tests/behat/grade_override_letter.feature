@@ -16,7 +16,7 @@ Feature: Grade letters can be overridden
       | teacher1 | C1     | editingteacher |
     And I log in as "teacher1"
     And I follow "Course 1"
-    And I follow "Grades"
+    And I navigate to "Grades" node in "Course administration"
     And I follow "Letters"
     And I follow "Edit grade letters"
 
@@ -52,7 +52,8 @@ Feature: Grade letters can be overridden
       | Grade letter 14        |      |
       | gradeboundary14        |      |
     And I press "Save changes"
-    Then the following should exist in the "grade-letters-view" table:
+    Then I should see "The default grade letters are currently overridden."
+    And the following should exist in the "grade-letters-view" table:
       | Highest | Lowest | Letter    |
       | <high1> | <low1> | <letter1> |
       | <high2> | <low2> | <letter2> |
@@ -101,6 +102,7 @@ Feature: Grade letters can be overridden
       | Grade letter 14        |    |
       | gradeboundary14        |    |
     And I press "Save changes"
+    And I should see "The default grade letters are currently overridden."
     And the following should exist in the "grade-letters-view" table:
       | Highest  | Lowest   | Letter |
       | 100.00 % | 90.00 %  | A      |
@@ -125,7 +127,8 @@ Feature: Grade letters can be overridden
       | Grade letter 6         | F  |
       | gradeboundary6         | 0  |
     And I press "Save changes"
-    Then the following should exist in the "grade-letters-view" table:
+    Then I should see "The default grade letters are currently overridden."
+    And the following should exist in the "grade-letters-view" table:
       | Highest  | Lowest   | Letter |
       | 100.00 % | 90.00 %  | A      |
       | 89.99 %  | 80.00 %  | B      |
@@ -165,6 +168,7 @@ Feature: Grade letters can be overridden
       | Grade letter 14        |    |
       | gradeboundary14        |    |
     And I press "Save changes"
+    And I should see "The default grade letters are currently overridden."
     And the following should exist in the "grade-letters-view" table:
       | Highest  | Lowest   | Letter |
       | 100.00 % | 90.00 %  | A+     |
@@ -192,7 +196,8 @@ Feature: Grade letters can be overridden
       | Grade letter 7         | π  |
       | gradeboundary7         | 90 |
     And I press "Save changes"
-    Then the following should exist in the "grade-letters-view" table:
+    Then I should see "The default grade letters are currently overridden."
+    And the following should exist in the "grade-letters-view" table:
       | Highest  | Lowest   | Letter |
       | 100.00 % | 95.00 %  | α      |
       | 94.99 %  | 90.00 %  | π      |

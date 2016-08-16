@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ca', branch 'MOODLE_28_STABLE'
+ * Strings for component 'completion', language 'ca', branch 'MOODLE_31_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['completed'] = 'Completat';
 $string['completedunlocked'] = 'Opcions de compleció debloquejades';
 $string['completedunlockedtext'] = 'Quan deseu els canvis, l\'estat de compleció per a tots els estudiants s\'esborrarà. Si canvieu d\'opinió sobre això no deseu el formulari.';
 $string['completedwarning'] = 'Opcions de compleció bloquejades';
-$string['completedwarningtext'] = 'Un o més estudiants ({$a}) ja tenen completada aquesta activitat. Canviar les opcions de compleció esborrarà el seu estat de compleció i pot provocar errors. Per això aquestes opcions estan bloquejades i no s\'haurien de desbloquejar si no és absolutament necessari.';
+$string['completedwarningtext'] = 'L\'activitat ja s\'ha marcat com a completada per {$a} participant(s). Canviar les opcions de compleció esborrarà el seu estat de compleció i pot generar confusió. Per això aquestes opcions estan bloquejades i no s\'haurien de desbloquejar si no és absolutament necessari.';
 $string['completion'] = 'Seguiment de compleció';
 $string['completionactivitydefault'] = 'Utilitzeu el valor per defecte de l\'activitat';
 $string['completion-alt-auto-enabled'] = 'El sistema indica que aquest apartat està completat d\'acord amb les condicions: {$a}';
@@ -165,6 +165,7 @@ $string['restoringcompletiondata'] = 'Escrivint les dades de compleció';
 $string['roleaggregation'] = 'La condició requereix que';
 $string['roleaggregation_all'] = 'TOTS els rols seleccionats per a marcar quan la condició es compleix';
 $string['roleaggregation_any'] = 'QUALSEVOL rol seleccionat per a marcar quan la condició es compleix';
+$string['roleidnotfound'] = 'No s\'ha trobat el rol amb ID {$a}';
 $string['saved'] = 'Desat';
 $string['seedetails'] = 'Visualitza detalls';
 $string['self'] = 'Auto';

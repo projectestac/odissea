@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Zuriuneak {no} aukera gehiagotarako';
 $string['answer'] = 'Erantzuna';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
+$string['infinite'] = 'Mugarik gabea';
 $string['pluginname'] = 'Hartu eta eraman testura';
 $string['pluginnameadding'] = 'Hartu eta eraman testura motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman testura motako galdera editatzen';

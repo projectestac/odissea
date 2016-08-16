@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'zh_cn', branch 'MOODLE_28_STABLE'
+ * Strings for component 'tool_uploaduser', language 'zh_cn', branch 'MOODLE_31_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowdeletes'] = '允许删除';
 $string['allowrenames'] = '允许改名';
 $string['allowsuspends'] = '允许账户注销和激活';
+$string['assignedsysrole'] = '指派的系统角色{$a}';
 $string['csvdelimiter'] = 'CSV分隔符';
 $string['defaultvalues'] = '默认值';
 $string['deleteerrors'] = '删除出错';
@@ -39,6 +40,7 @@ $string['pluginname'] = '用户上传';
 $string['renameerrors'] = '改名时出现错误';
 $string['requiredtemplate'] = '必须的。您可能使用这里的语法(%l = lastname, %f = firstname, %u = username)。更多信息查看帮助和举例。';
 $string['rowpreviewnum'] = '预览行数';
+$string['unassignedsysrole'] = '未指派的系统角色{$a}';
 $string['uploadpicture_baduserfield'] = '用户指定属性无效，请重试。';
 $string['uploadpicture_cannotmovezip'] = '不能移动zip文件到临时目录。';
 $string['uploadpicture_cannotprocessdir'] = '不能解压文件。';

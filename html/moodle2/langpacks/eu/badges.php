@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'eu', branch 'MOODLE_28_STABLE'
+ * Strings for component 'badges', language 'eu', branch 'MOODLE_31_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,6 +105,7 @@ $string['badgeprivacysetting_help'] = 'Irabazten dituzun dominak zure kontuaren 
 
 "Nire Dominak" orrian kontrola ditzakezu banakako dominen pribatutasunaren ezapenak.';
 $string['badgeprivacysetting_str'] = 'Erakutsi automatikoki nire profil-orrian irabazi ditudan dominak.';
+$string['badges'] = 'Dominak';
 $string['badgesalt'] = 'Eraldaketa jasotzailearen e-posta helbidea nahasteko';
 $string['badgesalt_desc'] = 'Nahasketa erabilita motxila-zerbitzuek dominaren jatorriaren berri izan dezakete horren e-posta helbidea erakutsi gabe. Ezarpen honek zenbakiak eta hizkiak baino ez ditu erabili behar.
 
@@ -218,6 +219,7 @@ $string['error:backpackproblem'] = 'Arazo bat dago zure motxila-zerbitzu hornitz
 $string['error:badjson'] = 'Konexio-saiakerak balio ez duten datuak eman ditu.';
 $string['error:cannotact'] = 'Ezin da domina aktibatu.';
 $string['error:cannotawardbadge'] = 'Ezin zaio domina erabiltzaile bati eman.';
+$string['error:cannotdeletecriterion'] = 'Irizpide hau ezin da ezabatu.';
 $string['error:clone'] = 'Ezin da domina klonatu.';
 $string['error:connectionunknownreason'] = 'Konexioa ez da egoki burutu, baina arrazoia ez dakigu.';
 $string['error:duplicatename'] = 'Badago aldez aurretik izen hori duen domina sisteman.';
@@ -246,6 +248,7 @@ $string['error:requesterror'] = 'Konexio-eskariak huts egin du (errore-kodea {$a
 $string['error:requesttimeout'] = 'Konexio-eskaera tartea agortu egin da konexio burutu baino lehen.';
 $string['error:save'] = 'Ezin da domina gorde.';
 $string['error:userdeleted'] = '{$a->user} (Erabiltzaile hau ez dago dagoeneko {$a->site} -n)';
+$string['eventbadgeawarded'] = 'Domina lortu da';
 $string['evidence'] = 'Ebidentzia';
 $string['existingrecipients'] = 'Existitzen diren domina-jasotzaileak';
 $string['expired'] = 'Iraungita';
@@ -262,7 +265,6 @@ $string['externalbadges_help'] = 'Eremu honetan kanpoko motxilako dominak erakus
 $string['externalbadgesp'] = 'Beste web-gune batzuetako dominak:';
 $string['externalconnectto'] = 'Kanpoko dominak erakusteko <a href="{$a}"> motxila batekin konektatu behar duzu</a>';
 $string['fixed'] = 'Data zehatza';
-$string['hidden'] = 'Ezkutuan';
 $string['hiddenbadge'] = 'Tamalez, dominaren jabeak ez du informazio hau argitaratu.';
 $string['issuancedetails'] = 'Dominaren iraungitzea';
 $string['issuedbadge'] = 'Emandako dominaren informazioa';
@@ -331,6 +333,7 @@ $string['overallcrit'] = 'aukeratutako irizpideetatik bete da.';
 $string['personaconnection'] = 'Saioa zure e-postarekin hasi';
 $string['personaconnection_help'] = 'Pertsona zeure e-posta helbidea erabilita zeure burua web-ean identifikatzeko sistema da. Open Badges motxilak Pertsona erabiltzen du saioa hasteko eta beraz motxilarekin kontektatzeko Pertsonaren kontua behar duzu. Pertsonari buruzko informazio gehiago lortzeko jo hona:<a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Balizko domina-jasotzaileak';
+$string['preferences'] = 'Dominen hobespenak';
 $string['recipientdetails'] = 'Jasotzailearen zehaztasunak';
 $string['recipientidentificationproblem'] = 'Ezin da domina honetarako jasotzailerik aurkitu dauden erabiltzaileen artean.';
 $string['recipients'] = 'Domina-jasotzaileak';

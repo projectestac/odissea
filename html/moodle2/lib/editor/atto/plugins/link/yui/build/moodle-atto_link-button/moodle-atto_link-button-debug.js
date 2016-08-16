@@ -84,6 +84,7 @@ Y.namespace('M.atto_link').Button = Y.Base.create('button', Y.M.editor_atto.Edit
         // Add the link button first.
         this.addButton({
             icon: 'e/insert_edit_link',
+            keys: '75',
             callback: this._displayDialogue,
             tags: 'a',
             tagMatchRequiresAll: false
@@ -208,6 +209,13 @@ Y.namespace('M.atto_link').Button = Y.Base.create('button', Y.M.editor_atto.Edit
 
         value = input.get('value');
         if (value !== '') {
+
+            // We add a prefix if it is not already prefixed.
+            value = value.trim();
+            var expr = new RegExp(/^[a-zA-Z]*\.*\/|^#|^[a-zA-Z]*:/);
+            if (!expr.test(value)) {
+                value = 'http://' + value;
+            }
 
             // Add the link.
             this._setLinkOnSelection(value);

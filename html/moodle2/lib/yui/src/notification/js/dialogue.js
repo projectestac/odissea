@@ -29,8 +29,9 @@ DIALOGUE = function(c) {
     var id = 'moodle-dialogue-' + config.COUNT;
     config.notificationBase =
         Y.Node.create('<div class="'+CSS.BASE+'">')
-              .append(Y.Node.create('<div id="'+id+'" role="dialog" aria-labelledby="'+id+'-header-text" class="'+CSS.WRAP+'"></div>')
-              .append(Y.Node.create('<div id="'+id+'-header-text" class="'+CSS.HEADER+' yui3-widget-hd"></div>'))
+              .append(Y.Node.create('<div id="' + id + '" role="dialog" ' +
+                                    'aria-labelledby="' + id + '-header-text" class="' + CSS.WRAP + '"></div>')
+              .append(Y.Node.create('<div id="' + id + '-header-text" class="'+CSS.HEADER+' yui3-widget-hd"></div>'))
               .append(Y.Node.create('<div class="'+CSS.BODY+' yui3-widget-bd"></div>'))
               .append(Y.Node.create('<div class="'+CSS.FOOTER+' yui3-widget-ft"></div>')));
     Y.one(document.body).append(config.notificationBase);
@@ -301,6 +302,11 @@ Y.extend(DIALOGUE, Y.Panel, {
                                 'height' : this.get('height')});
             }
         }
+
+        // Update Lock scroll if the plugin is present.
+        if (this.lockScroll) {
+            this.lockScroll.updateScrollLock(this.shouldResizeFullscreen());
+        }
     },
     /**
      * Center the dialog on the screen.
@@ -355,13 +361,6 @@ Y.extend(DIALOGUE, Y.Panel, {
         if (!this.get('center') && this._originalPosition) {
             // Restore the dialogue position to it's location before it was moved at show time.
             this.get('boundingBox').setXY(this._originalPosition);
-        }
-
-        // Lock scroll if the plugin is present.
-        if (this.lockScroll) {
-            // We need to force the scroll locking for full screen dialogues, even if they have a small vertical size to
-            // prevent the background scrolling while the dialogue is open.
-            this.lockScroll.enableScrollLock(this.shouldResizeFullscreen());
         }
 
         // Try and find a node to focus on using the focusOnShowSelector attribute.
@@ -521,7 +520,8 @@ Y.extend(DIALOGUE, Y.Panel, {
         lightbox: {
             lazyAdd: false,
             setter: function(value) {
-                Y.log("The lightbox attribute of M.core.dialogue has been deprecated since Moodle 2.7, please use the modal attribute instead",
+                Y.log("The lightbox attribute of M.core.dialogue has been deprecated since Moodle 2.7, " +
+                      "please use the modal attribute instead",
                     'warn', 'moodle-core-notification-dialogue');
                 this.set('modal', value);
             }
