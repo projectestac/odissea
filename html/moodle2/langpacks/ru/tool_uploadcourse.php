@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowdeletes'] = 'Разрешить удаление';
-$string['allowdeletes_help'] = 'Допускается ли применение поля удаления.';
+$string['allowdeletes_help'] = 'Допускается ли удаление поля.';
 $string['allowrenames'] = 'Разрешить переименование';
-$string['allowrenames_help'] = 'Допускается ли применение поля переименования.';
+$string['allowrenames_help'] = 'Допускается ли  переименование поля.';
 $string['allowresets'] = 'Разрешить сброс';
-$string['allowresets_help'] = 'Допускается ли применение поля сброса.';
+$string['allowresets_help'] = 'Допускается ли сброс поля.';
 $string['cachedef_helper'] = 'Помощник кэширования';
 $string['cannotdeletecoursenotexist'] = 'Не удается удалить несуществующий курс';
 $string['cannotgenerateshortnameupdatemode'] = 'Не удается создать короткое имя при разрешенном обновлении';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Afegeix un nou bloc Les meves últimes insígnies';
-$string['badges:myaddinstance'] = 'Afegeix un nou bloc de Les meves últimes insígnies al Tauler';
+$string['badges:addinstance'] = 'Afegeix un bloc nou de Les meves últimes insígnies';
+$string['badges:myaddinstance'] = 'Afegeix un bloc nou de Les meves últimes insígnies al Tauler';
 $string['nothingtodisplay'] = 'No teniu cap insígnia per mostrar';
 $string['numbadgestodisplay'] = 'Nombre d\'últimes insígnies per mostrar';
 $string['pluginname'] = 'Insígnies recents';

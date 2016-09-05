@@ -29,6 +29,7 @@ $string['addmoredimensions'] = 'さらに {$a} 個の空白アサーションを
 $string['configgrade0'] = '主張に対するマイナス評価を表すために使用するデフォルトの言葉です。';
 $string['configgrade1'] = '主張に対するプラス評価を表すために使用するデフォルトの言葉です。';
 $string['dimensioncomment'] = 'コメント';
+$string['dimensioncommentfor'] = '{$a} のコメント';
 $string['dimensiondescription'] = '説明';
 $string['dimensiongrade'] = '評定';
 $string['dimensionnumber'] = '主張 {$a}';

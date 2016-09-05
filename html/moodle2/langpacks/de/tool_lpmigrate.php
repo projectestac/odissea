@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowedcourses'] = 'Zugelassene Kurse';
 $string['allowedcourses_help'] = 'Wenn zumindest ein Kurs ausgewählt wurde, wird die Migration nur für die hier aufgelisteten Kurse durchgeführt.';
-$string['coursemodulesfound'] = 'Gefundene Kursmodule';
+$string['coursemodulesfound'] = 'Kursaktivitäten gefunden';
 $string['coursesfound'] = 'Gefundene Kurse';
 $string['coursestartdate'] = 'Kursstartdatum';
 $string['coursestartdate_help'] = 'Kurse mit einem Startdatum vor dem eingegebenen Datum werden nicht migriert.';

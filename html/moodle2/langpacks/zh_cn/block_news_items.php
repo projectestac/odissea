@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = '新增一个最近新闻版块';
-$string['news_items:myaddinstance'] = '在控制面板新增一个最近新闻版块';
+$string['news_items:myaddinstance'] = '在个人主页新增一个最近新闻版块';
 $string['pluginname'] = '最近新闻';

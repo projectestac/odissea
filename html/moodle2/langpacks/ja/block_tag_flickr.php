@@ -39,4 +39,4 @@ $string['numberofphotos'] = '写真数';
 $string['pluginname'] = 'Flickr';
 $string['relevance'] = '関連性';
 $string['sortby'] = '並べ替え';
-$string['tag_flickr:addinstance'] = '新しいflickrブロックを追加する';
+$string['tag_flickr:addinstance'] = '新しいFlickrブロックを追加する';

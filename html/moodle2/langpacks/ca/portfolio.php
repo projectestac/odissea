@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activeexport'] = 'Resoldre les exportacions actives';
 $string['activeportfolios'] = 'Portafolis disponibles';
 $string['addalltoportfolio'] = 'Exporta tot al portafolis';
-$string['addnewportfolio'] = 'Afegeix un nou portafolis';
+$string['addnewportfolio'] = 'Afegeix un portafoli nou';
 $string['addtoportfolio'] = 'Exporta al portafolis';
 $string['alreadyalt'] = 'S\'està exportant - si us plau, premeu aquí per resoldre aquesta transferència';
 $string['alreadyexporting'] = 'Disposeu d\'una exportació de portafolis activa per aquesta sessió. Abans de continuar, heu de completar-la, o cancel·lar-la. Voleu continuar? (No es cancel·larà)';

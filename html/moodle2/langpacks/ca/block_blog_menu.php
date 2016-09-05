@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_menu:addinstance'] = 'Afegeix un nou bloc de menú de blog';
+$string['blog_menu:addinstance'] = 'Afegeix un bloc nou de menú de blog';
 $string['pluginname'] = 'Menú de blog';

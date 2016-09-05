@@ -121,6 +121,7 @@ $string['embed_no_blocks'] = 'Eingebettet ohne Blöcke';
 $string['enableemailnotification'] = 'E-Mail-Mitteilungen senden';
 $string['enableemailnotification_help'] = 'Nach der Aktivierung erhalten Teilnehmende E-Mail-Benachrichtungen wenn ihre Leistungen bewertet wurden.';
 $string['enterkeyandsecret'] = 'Geben Sie Ihre Zugangskennung und den Schlüssel (secret) ein.';
+$string['errorbadurl'] = 'Die URL ist keine gültige URL für ein Tool oder ein Cartridge.';
 $string['errormisconfig'] = 'Das Tool wurde falsch konfiguriert. Ihr Administrator/in kann Ihnen weiter helfen.';
 $string['existing_window'] = 'Vorhandenes Fenster';
 $string['extensions'] = 'LTI Extension Service';
@@ -171,9 +172,10 @@ $string['launchinpopup_help'] = 'Der Startcontainer beeinflusst die Anzeige des 
 * **Eingebettet, ohne Blöcke** - Das Tool wird in einem bestehenden Moodle-Fenster ohne Blöcke, nur mit der Navigation im Kopf angezeigt.
 * **Neues Fenster** - Das Tool öffnet in einem neuen Fenster und nutzt den gesamten Raum im Fenster aus. Abhängig vom Browser  wird ein neuer Tab angelegt oder ein neues Fenster geöffnet.';
 $string['launchoptions'] = 'Startoptionen';
-$string['launch_url'] = 'Start URL';
+$string['launch_url'] = 'URL für Tool oder Cartridge';
 $string['launch_url_help'] = 'Die Start-URL bezeichnet die Webadresse des externen Tools. Sie kann zusätzliche Informationen entalten, welche Ressource geanu aufgerufen werden soll. Genauere Informationen gibt der Tool-Anbieter.
 Falls ein spezieller Tool-Typ gewählt wurde, kann u.U. auf die Start URL verzichtet werden.';
+$string['leaveblank'] = 'Lassen Sie dies leer, wenn Sie die Angaben nicht brauchen.';
 $string['lti'] = 'Externes Tool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
 $string['lti:addinstance'] = 'Aktivität \'Externes Tool\' hinzufügen';
@@ -201,7 +203,7 @@ Die Tools sind in drei unterschiedliche Typen klassifiziert:
 $string['manage_external_tools'] = 'Tools verwalten';
 $string['manage_tool_proxies'] = 'Registrierung von externen Tools verwalten';
 $string['manage_tools'] = 'Vorkonfigurierte Tools verwalten';
-$string['manuallyaddtype'] = 'Sie können alternativ das  <a href="{$a}">Tool manuell konfigurieren</a>.';
+$string['manuallyaddtype'] = 'Alternativ können Sie ein <a href="{$a}">Tool manuell konfigurieren</a>.';
 $string['miscellaneous'] = 'Verschiedenes';
 $string['misconfiguredtools'] = 'Fehlerhaft konfigurierte Instanzen entdeckt';
 $string['missingparameterserror'] = 'Diese Seite ist falsch konfiguriert: \'{$a}\'';
@@ -254,7 +256,7 @@ Das Kennwort wird für eine Authentifizierung beim externen Tool verwandt. Es wi
 
 Tools die keine sichere Kommunikation mit Moodle erfordern, benötigen meist auch kein Kennwort.';
 $string['pending'] = 'Wartend';
-$string['pluginadministration'] = 'LTI-Administration';
+$string['pluginadministration'] = 'Administration des externen Tools';
 $string['pluginname'] = 'Externes Tool';
 $string['preferheight'] = 'Höhe (bevorzugt)';
 $string['preferwidget'] = 'Widget Start (bevorzugt)';

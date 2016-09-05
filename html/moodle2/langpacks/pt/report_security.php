@@ -30,7 +30,7 @@ Note-se que esta medida não melhora significativamente a segurança do servidor
 $string['check_configrw_name'] = 'Permissões de escrita do ficheiro <strong>config.php</strong>';
 $string['check_configrw_ok'] = 'O ficheiro <strong>config.php</strong> não pode ser alterado por scripts PHP.';
 $string['check_configrw_warning'] = 'O ficheiro <strong>config.php</strong> pode ser alterado por scripts PHP.';
-$string['check_cookiesecure_details'] = '<p>Se a comunicação HTTPS for ativada a utilização de cookies seguras deve também ser ativada. Além disso, deve também ser configurado o redireccionamento permanente de HTTP para HTTPS.</p>';
+$string['check_cookiesecure_details'] = '<p>Se a comunicação HTTPS for ativada a utilização de cookies seguros deve também ser ativada. Além disso, deve também ser configurado o redirecionamento permanente de HTTP para HTTPS. Será benéfico enviar apenas cabeçalhos HSTS.</p>';
 $string['check_cookiesecure_error'] = 'A utilização de cookies seguras não está ativa.';
 $string['check_cookiesecure_name'] = 'Cookies seguras';
 $string['check_cookiesecure_ok'] = 'A utilização de cookies seguras está ativa.';

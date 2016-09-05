@@ -264,7 +264,14 @@ class manager {
         // Moodle does normal session timeouts, this is for leftovers only.
         ini_set('session.gc_probability', 1);
         ini_set('session.gc_divisor', 1000);
+        //XTEC ************ MODIFICAT - To avoid "Cannot find session record xxxxxxxxxxxxx for user Z, creating new session"
+        //2016.09.05 @sarjona - https://moodle.org/mod/forum/discuss.php?d=268183
+        ini_set('session.gc_maxlifetime', $CFG->sessiontimeout);
+        //************ ORIGINAL
+        /*
         ini_set('session.gc_maxlifetime', 60*60*24*4);
+         */
+        //************ FI
     }
 
     /**

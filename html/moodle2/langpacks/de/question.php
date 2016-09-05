@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Aktuelle Kategorie';
 $string['categorycurrentuse'] = 'Diese Kategorie benutzen';
 $string['categorydoesnotexist'] = 'Diese Kategorie gibt es nicht';
 $string['categoryinfo'] = 'Kategoriebeschreibung';
-$string['categorymove'] = 'Die Kategorie \'{$a->name}\' enthält {$a->count} Fragen. Bitte wählen Sie eine andere Kategorie, um sie zu verschieben.';
+$string['categorymove'] = 'Die Kategorie \'{$a->name}\' enthält {$a->count} Fragen (von denen einige als verborgene Fragen oder Zufallsfragen noch irgendwo in einem Test benutzt werden). Wählen Sie eine Kategorie aus, um sie dorthin zu verschieben.';
 $string['categorymoveto'] = 'In der Kategorie sichern';
 $string['categorynamecantbeblank'] = 'Der Kategoriename kann nicht leer bleiben';
 $string['changeoptions'] = 'Optionen ändern';
@@ -208,11 +208,11 @@ $string['hintnoptions'] = '{no} Hinweis-Optionen';
 $string['hinttext'] = 'Verborgener Text';
 $string['howquestionsbehave'] = 'Frageverhalten';
 $string['howquestionsbehave_help'] = 'Fragen des Tests können beim Beantworten unterschiedliche Reaktionsweisen zeigen.
-Häufig müssen Teilnehmer erst den gesamtenTest bearbeiten bevor die Bewertung erfolgt und ein Feedback angezeigt wird. Das wäre die \'Spätere Auswertung\'
+Häufig müssen Teilnehmer/innen erst den gesamten Test bearbeiten, bevor die Bewertung erfolgt und ein Feedback angezeigt wird. Das wäre die \'Spätere Auswertung\'.
 
-Alternativ könnte nach der Beantwortung jeder einzelnen Frage eine sofortige  Rückmeldung gegeben werden. Bei falscher Beantwortung der Frage könnten sie  eine neue Antwort abgeben. Bei der dann richtigen Antwort könnte ein Punktabzug vom Höchstwert erfolgen (Mehrfachbeantwortung (mit Abzügen).
+Alternativ könnte nach der Beantwortung jeder einzelnen Frage eine sofortige  Rückmeldung gegeben werden. Bei falscher Beantwortung der Frage könnten sie eine neue Antwort abgeben. Bei der dann richtigen Antwort könnte ein Punktabzug vom Höchstwert erfolgen (Mehrfachbeantwortung (mit Abzügen)).
 
-Dies sind die am Häufigsten genutzten Frageverhalten.';
+Dies sind die am häufigsten genutzten Frageverhalten.';
 $string['ignorebroken'] = 'Ungültige Links ignorieren';
 $string['import'] = 'Import';
 $string['importcategory'] = 'Importkategorien';

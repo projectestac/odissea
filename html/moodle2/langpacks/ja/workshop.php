@@ -350,5 +350,6 @@ $string['workshop:viewauthorpublished'] = '公開された提出の作成者を�
 $string['workshop:viewpublishedsubmissions'] = '公開済み提出を表示する';
 $string['workshop:viewreviewernames'] = '評価者名を表示する';
 $string['yourassessment'] = 'あなたの評価';
+$string['yourassessmentfor'] = 'あなたの {$a} の評価';
 $string['yourgrades'] = 'あなたの評点';
 $string['yoursubmission'] = 'あなたの提出課題';

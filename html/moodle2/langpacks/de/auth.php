@@ -158,3 +158,4 @@ $string['update_onupdate'] = 'Bei Aktualisierung';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() unterstützt den ausgewählten Nutzertyp nicht: \'{$a}\'';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() unterstützt den ausgewählten Nutzertyp nicht: \'{$a}\'';
 $string['username'] = 'Anmeldename';
+$string['username_help'] = 'Beachten Sie, dass einige Authentifizierungsplugins die nachträgliche Änderung des Anmeldenamens nicht erlauben.';

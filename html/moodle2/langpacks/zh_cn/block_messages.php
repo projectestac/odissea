@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['messages:addinstance'] = '新增一个消息版块';
-$string['messages:myaddinstance'] = '在控制面板新增一个消息版块';
+$string['messages:myaddinstance'] = '在个人主页新增一个消息版块';
 $string['pluginname'] = '消息';

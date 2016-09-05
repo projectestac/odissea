@@ -30,7 +30,7 @@ Questa impostazione non innalza significativamente la sicurezza del sito, tuttav
 $string['check_configrw_name'] = 'File config.php modificabile';
 $string['check_configrw_ok'] = 'Il file config.php non è modificabile da script PHP.';
 $string['check_configrw_warning'] = 'Il file config.php può essere modificato da script PHP.';
-$string['check_cookiesecure_details'] = '<p>Se abilitati la comunicazione https, si raccomanda anche di abilitare i cookie sicuri. Si raccomanda di configurare anche l\'indirizzamento permanente da http ad https.</p>';
+$string['check_cookiesecure_details'] = '<p>Se si abilita la comunicazione https, si raccomanda anche di abilitare i cookie sicuri. Si raccomanda di configurare anche l\'indirizzamento permanente da http ad https.</p>';
 $string['check_cookiesecure_error'] = 'Per favore abilita i cookie sicuri';
 $string['check_cookiesecure_name'] = 'Cookie sicuri';
 $string['check_cookiesecure_ok'] = 'Cookie sicuri abilitati.';

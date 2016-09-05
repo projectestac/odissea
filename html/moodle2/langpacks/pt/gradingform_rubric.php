@@ -45,6 +45,7 @@ $string['err_mintwolevels'] = 'Cada critério tem de ter pelo menos dois níveis
 $string['err_nocriteria'] = 'A grelha tem de conter pelo menos um critério';
 $string['err_nodefinition'] = 'A definição do nível não pode ficar em branco';
 $string['err_nodescription'] = 'A descrição do critério não pode ficar em branco';
+$string['err_novariations'] = 'Os níveis de critério não podem ter o mesmo número de pontos';
 $string['err_scoreformat'] = 'O número de pontos para cada nível deve ser um número não negativo válido';
 $string['err_totalscore'] = 'O número de pontos máximo possível de avaliar pela grelha deve ser mais do que zero';
 $string['gradingof'] = '{$a} avaliado';
@@ -84,3 +85,5 @@ $string['showscoreteacher'] = 'Exibir pontos para cada nível durante a avaliaç
 $string['sortlevelsasc'] = 'Ordem de classificação para os níveis:';
 $string['sortlevelsasc0'] = 'Decrescente por número de pontos';
 $string['sortlevelsasc1'] = 'Ascendente por número de pontos';
+$string['zerolevelsabsent'] = 'Aviso: a pontuação mínima possível para essa rubrica não é 0; isto pode resultar em notas inesperadas para a atividade. Para evitar esta situação, cada critério deve ter um nível com 0 pontos.<br>
+Este aviso pode ser ignorado se for usada uma escala para a classificação e os níveis mínimos na rubrica correspondem ao valor mínimo da escala.';

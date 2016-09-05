@@ -85,7 +85,7 @@ $string['completed'] = '完了';
 $string['completionscorerequired'] = '必要最小点数';
 $string['completionscorerequired_help'] = 'この設定を有効にすることにより、ユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも設定された最小点数に達する必要があります。';
 $string['completionstatus_completed'] = '完了';
-$string['completionstatus_passed'] = 'パス';
+$string['completionstatus_passed'] = '合格';
 $string['completionstatusrequired'] = '必要ステータス';
 $string['completionstatusrequired_help'] = '1つまたはそれ以上のステータスを選択することにより、ユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも選択されたステータスの1つに達する必要があります。';
 $string['confirmloosetracks'] = '警告: パッケージが変更/修正されたようです。パッケージ構造が変更された場合、更新処理中にユーザトラックが失われる可能性があります。';
@@ -170,7 +170,7 @@ $string['grademethod_help'] = '評定方法では活動の受験がどのよう�
 
 以下4つの評定方法があります:
 
-* 学習オブジェクト - 完了/パスした活動の学習オブジェクト数です。
+* 学習オブジェクト - 完了/合格した活動の学習オブジェクト数です。
 * 最高評点 - すべてのパスした学習オブジェクトにおけるユーザの最高評点です。
 * 平均評点 - すべての評点の平均です。
 * 評点の合計 - すべての評点の合計です。';
@@ -206,7 +206,7 @@ $string['lastattemptlock'] = '最終受験後にロックする';
 $string['lastattemptlockdesc'] = 'この設定を有効にした場合、割り当てられた受験すべての終了後、学生はSCORMプレイヤーを開始できないようになります。';
 $string['lastattemptlock_help'] = 'この設定を有効にした場合、割り当てられた受験すべての終了後、学生はSCORMプレイヤーを開始できないようになります。';
 $string['location'] = 'ロケーションバーを表示する';
-$string['masteryoverride'] = '熟練度ステータス';
+$string['masteryoverride'] = '熟達度がステータスをオーバーライドする';
 $string['masteryoverridedesc'] = 'このプリファレンスでは熟練度オーバーライド設定のデフォルトを設定します。';
 $string['masteryoverride_help'] = 'この設定を有効にして熟練度が提供された場合、LMSFinishがコールされて素点が設定された時点で素点を使用してステータスが再計算されます。SCORM (「未完了」を含む) によって提供された熟練度およびステータスはオーバーライドされます。';
 $string['max'] = '最大評点';
@@ -278,7 +278,7 @@ $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'この設定ではファイルピッカよりファイルを選択するのではなく、SCORMパッケージを指定するためのURLを有効にします。';
 $string['page-mod-scorm-x'] = 'すべてのSCORMモジュールページ';
 $string['pagesize'] = 'ページサイズ';
-$string['passed'] = 'パス';
+$string['passed'] = '合格';
 $string['php5'] = 'PHP 5 (DOMXMLネイティブライブラリ)';
 $string['pluginadministration'] = 'SCORMパッケージ管理';
 $string['pluginname'] = 'SCORMパッケージ';

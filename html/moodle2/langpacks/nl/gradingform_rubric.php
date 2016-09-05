@@ -45,6 +45,7 @@ $string['err_mintwolevels'] = 'Elk criterium moet minstens 2 niveaus hebben';
 $string['err_nocriteria'] = 'Een rubric moet minstens één criterium hebben';
 $string['err_nodefinition'] = 'De niveaudefinitie kan niet leeg zijn';
 $string['err_nodescription'] = 'De criteriumbeschrijving kan niet leeg zijn';
+$string['err_novariations'] = 'Criteriumniveau\'s kunnen niet allemaal hetzelfde cijfer waard zijn.';
 $string['err_scoreformat'] = 'Het aantal punten voor elk niveau moet een geldig positief getal zijn.';
 $string['err_totalscore'] = 'Het maximale aantal mogelijke punten wanneer beoordeeld door de rubric moet meer dan nul zijn.';
 $string['gradingof'] = '{$a} beoordeling';
@@ -84,3 +85,5 @@ $string['showscoreteacher'] = 'Toon punten voor elk niveau tijdens evaluatie';
 $string['sortlevelsasc'] = 'Sorteervolgorde voor niveaus:';
 $string['sortlevelsasc0'] = 'Aflopend volgens aantal punten';
 $string['sortlevelsasc1'] = 'Oplopend volgens aantal punten';
+$string['zerolevelsabsent'] = 'Waarschuwing: de laagst mogelijke score is niet nul. Dit kan eigenaardige resultaten opleveren voor deze activiteit. Om dit te voorkomen moet elk criterium en niveau hebben met nul punten.<br />
+Deze waarschuwing mag genegeerd worden als er een beoordelingsschaal is gebruikt en als de minimum niveau\'s in de rubric overeen komen met de met de kleinste waarde van de schaal.';

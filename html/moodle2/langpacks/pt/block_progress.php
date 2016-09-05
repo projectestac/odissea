@@ -112,6 +112,7 @@ $string['lti'] = 'Ferramenta externa';
 $string['marked'] = 'assinalado';
 $string['mouse_over_prompt'] = 'Passe o rato sobre a barra ou clique para mais informações.';
 $string['no_blocks'] = 'Não foi configurado nenhum bloco Progressão para as suas disciplinas.';
+$string['no_courses'] = 'Não está inscrito em nenhuma disciplina. Apenas são mostradas as barras de disciplinas em que está inscrito.';
 $string['no_events_config_message'] = 'Não existem atividades ou recursos para monitorizar o progresso. Adicione atividades e/ou recursos e, em seguida, configure este bloco.';
 $string['no_events_message'] = 'Não existem atividades ou recursos monitoradas. Altere as configurações para ativar a monitorização.';
 $string['notAttempted_colour'] = '#C71C22';
@@ -159,13 +160,24 @@ $string['viewed'] = 'visualizado';
 $string['vpl'] = 'Virtual Programming Lab';
 $string['what_actions_can_be_monitored'] = 'Que ações podem ser monitoradas?';
 $string['what_does_monitored_mean'] = 'O que significa monitorado?';
+$string['what_does_monitored_mean_help'] = '<p>O objetivo deste bloco é incentivar os alunos a gerirem o tempo de forma eficaz. Cada aluno pode monitorizar o seu progresso na realização das atividades e recursos. </p>
+<p>Na página de configuração, aparecerá uma lista de todos os módulos que foram criados e que podem ser monitorizados pelo bloco Barra de Progressão. Os módulos só serão monitorizados e aparecem como um pequeno quadrado na barra de progresso se selecionar sim para monitorizar o módulo.</p>';
 $string['what_expected_by_means'] = 'O que significa previsto para?';
 $string['what_locked_means'] = 'O que significa bloqueado à data limite?';
 $string['what_show_submitted_means'] = 'O que significa mostrar submetido antes da ação.';
+$string['what_show_submitted_means_help'] = 'Nas atividades em que os alunos possam submeter trabalhos mas a ação final (ex. marcar como concluída) para a atividade não foi realizada, a barra de progresso muda de cor para realçar uma submissão que tenha sido feita.';
 $string['why_display_now'] = 'Qual a utilidade de ocultar/mostrar o marcador AGORA?';
+$string['why_display_now_help'] = '<p>Nem todas as disciplinas estão centradas na conclusão de tarefas com prazos específicos. Algumas disciplinas podem ter inscrição aberta, permitindo que os alunos se inscrevam e a completem quando for possível.</p>
+<p>Para usar a Barra de Progressão como uma ferramenta neste tipo de disciplinas, deve criar uma data "Previsto para" no futuro e desmarcar a opção de mostrar "AGORA".</p>';
 $string['why_set_the_title'] = 'Por que convém definir um título da instância do bloco?';
+$string['why_set_the_title_help'] = '<p>Pode haver várias instâncias do bloco Barra de progressão. Pode usar diferentes blocos para monitorizar diferentes conjuntos de atividades ou recursos. Por exemplo, pode acompanhar o progresso nos trabalhos num bloco e os testes noutro. Por este motivo pode substituir o título padrão e definir um título de bloco mais apropriado para cada caso.</p>';
 $string['why_show_precentage'] = 'Por que mostrar uma percentagem de progressão aos alunos?';
+$string['why_show_precentage_help'] = '<p>É possível mostrar uma percentagem global de progresso aos alunos.</p>
+<p>A percentagem é calculada dividindo o número de itens completos pelo número total de itens na barra.</p>
+<p>A percentagem de progresso aparece quando os alunos passam o rato por um item na barra.</p>';
 $string['why_use_icons'] = 'Por que convém usar os ícones?';
+$string['why_use_icons_help'] = '<p>Pode querer adicionar ícones de cruz ou outro na barra de progresso para tornar este bloco visualmente mais acessível para alunos com daltonismo.</p>
+<p>Também pode tornar o bloco mais claro se achar que as cores não são intuitivas, seja por razões culturais ou pessoais.</p>';
 $string['wiki'] = 'Wiki';
 $string['workshop'] = 'Workshop';
 $string['wrapafter'] = 'Quando quebra em linhas, limitar o número de linhas a';

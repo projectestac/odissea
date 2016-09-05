@@ -30,6 +30,23 @@ $string['total_description'] = 'Percentatge de disc ocupat en relació amb el to
 $string['category_description'] = 'Mida total de les categories i subcategories calculada a partir de la mida dels cursos que contenen';
 $string['courses_description'] = 'Llista de tots els cursos, ordenada de major a menor segons la mida dels seus fitxers';
 
-$string['backups'] = 'Còpies de seguretat';
-$string['backups_description'] = 'Disc ocupat amb fitxers de còpies de seguretat';
-$string['area'] = 'Àrea';
+$string['filemanager'] = 'Gestor de fitxers';
+$string['manage'] = 'Gestiona els fitxers';
+$string['filearea'] = 'Àrea de fitxers';
+$string['component'] = 'Component';
+$string['owner'] = 'Propietari';
+$string['context'] = 'Context';
+$string['totalfilesize'] = 'Ocupació de tots els fitxers: {$a}';
+$string['realfilesize'] = 'Ús real de disc: {$a}';
+$string['nofilesfound'] = 'No s\'ha trobat cap fitxer';
+$string['showingfiles'] = 'Mostrant {$a->files} de {$a->total}';
+$string['addchildren'] = 'Afegir els contextes fill';
+$string['allusers'] = 'Tots els usuaris';
+$string['allfileareas'] = 'Totes les àrees de fitxer';
+$string['allcomponents'] = 'Tots els components';
+$string['more_than'] = 'Més de';
+$string['less_than'] = 'Menys de';
+$string['showonlybackups'] = 'Mostra només els fitxers de còpia de seguretat';
+$string['hidesamehash'] = 'Amaga els fitxers amb el mateix contenthash (Mode expert)';
+$string['viewsimilarfiles'] = 'Mostra fitxers similars';
+$string['manage_backup_files'] = 'Si voleu alliberar espai podeu eliminar les còpies de seguretat dels cursos des d\'<a href="{$a}">aquest apartat</a>';

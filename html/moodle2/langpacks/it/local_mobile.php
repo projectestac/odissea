@@ -25,12 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Concessione privilegi al ruolo Utente autenticato';
+$string['allowpermissionsdescription'] = 'Modifica il ruolo Utente autenticato per concedere il privilegio moodle/webservice:createtoken';
 $string['cannotcreatetoken'] = 'La generazione automatica di token non è disponibile agli amministratori del sito (devono creare il token manualmente).';
+$string['checkpluginconfiguration'] = 'Verifica configurazione plugin';
+$string['clickheretolaunchtheapp'] = 'Per favore fai click qui se l\'app non si apre automaticamente';
+$string['enableadditionalservice'] = 'Abilita il servizio Funzioni Aggiuntive Moodle Mobile';
+$string['enableadditionalservicedescription'] = 'Questo servizio deve essere abilitato.';
 $string['local_mobiledescription'] = 'Plugin che estende le funzionalità del servizio Mobile';
 $string['local_mobilesettings'] = 'Impostazioni';
 $string['local_mobiletypeoflogin'] = 'Scelta del tipo di autenticazione';
 $string['local_mobiletypeoflogin_key'] = 'Tipo di autenticzione';
+$string['local_mobileurlscheme'] = 'Utilizzare l\'impostazione per forzare lo schema URL per l\'autenticazione via finestra browser. Generalmente da lasciare non impostata.';
+$string['local_mobileurlscheme_key'] = 'Schema URL';
 $string['loginintheapp'] = 'Via app';
 $string['logininthebrowser'] = 'Via finestra browser (per plugin SSO)';
+$string['loginintheinappbrowser'] = 'Via browser incorporato (per plugin SSO)';
 $string['pluginname'] = 'Funzionalità aggiuntive Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'Il plugin locale Moodle Mobile deve essere abilitata affinché possa essere lanciata l\'app';

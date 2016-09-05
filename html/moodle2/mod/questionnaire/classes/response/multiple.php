@@ -147,7 +147,14 @@ class multiple extends single {
 
         $userfields = $this->user_fields_sql();
         $extraselect = '';
+        //XTEC ************ MODIFICAT - To fix bug with CSV export
+        //2016.08.31 @sarjona
+        $extraselect .= 'qrm.choice_id, '.$DB->sql_compare_text('qro.response').', 0 AS rank';
+        //************ ORIGINAL
+        /*
         $extraselect .= 'qrm.choice_id, qro.response, 0 AS rank';
+         */
+        //************ FI
         $alias = 'qrm';
 
         return "

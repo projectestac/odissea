@@ -29,6 +29,6 @@ $string['configtitle'] = '版块名称';
 $string['configtitleblankhides'] = '版块标题（留空表示无标题）';
 $string['leaveblanktohide'] = '为空则隐藏名称';
 $string['mentees:addinstance'] = '新增一个新学员版块';
-$string['mentees:myaddinstance'] = '在控制面板新增一个新学员版块';
+$string['mentees:myaddinstance'] = '在个人主页新增一个新学员版块';
 $string['newmenteesblock'] = '（新学员版块）';
 $string['pluginname'] = '学员';

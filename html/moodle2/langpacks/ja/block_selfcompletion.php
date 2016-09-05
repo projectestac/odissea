@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alreadyselfcompleted'] = 'このコースにおいて、あなたはすでに自分自身で完了したとマークしています。';
+$string['alreadyselfcompleted'] = 'あなたはこのコースですでに自分自身で完了したとマークしています。';
 $string['completecourse'] = 'コースを完了する';
 $string['pluginname'] = '自己完了';
 $string['selfcompletion:addinstance'] = '新しい自己完了ブロックを追加する';
-$string['selfcompletionnotenabled'] = 'このコースでは自己完了クライテリアが有効にされていません。';
+$string['selfcompletionnotenabled'] = 'このコースの自己完了クライテリアは有効にされていません。';

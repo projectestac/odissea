@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Bläddra genom arkiv...';
+$string['createlink'] = 'Skapa länk';
+$string['enterurl'] = 'Infoga URL';
+$string['openinnewwindow'] = 'Öppnas i nytt fönster';
+$string['pluginname'] = 'Länk';
+$string['unlink'] = 'Ta bort länk';

@@ -236,6 +236,7 @@ $string['public'] = '公開';
 $string['question'] = '質問';
 $string['questionandsubmission'] = '質問および回答設定';
 $string['questions'] = '質問';
+$string['questionslimited'] = '最初の {$a} 問の問題のみ表示しています。個別の回答またはすべてを確認するにはテーブルデータをダウンロードしてください。';
 $string['radio'] = '多肢選択 - 単一回答';
 $string['radiobutton'] = '多肢選択 - 単一回答 (ラジオボタン)';
 $string['radiobutton_rated'] = 'ラジオボタン (評定)';

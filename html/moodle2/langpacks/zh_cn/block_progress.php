@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_completion'] = '活动完成';
+$string['coursenametoshow'] = '在个人主页显示课程名称';
 $string['page'] = '网页模块';
 $string['url'] = '网页地址';
 $string['what_actions_can_be_monitored_help'] = '<p>一项活动可能有不同的操作</p>

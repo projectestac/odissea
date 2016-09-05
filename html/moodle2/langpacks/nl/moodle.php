@@ -867,7 +867,7 @@ Bekijk de Moodle-licentie informatiepagina voor alle details (Engels):  http://d
 $string['gpllicense'] = 'GPL Licentie';
 $string['grade'] = 'Cijfer';
 $string['grades'] = 'Cijfers';
-$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> is ingeschakeld voor deze site. Als je geen profielafbeelding upload, zal Moodle er proberen één te downloaden van Gravatar.';
+$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> is ingeschakeld voor deze site. Als je geen profielafbeelding uploadt, zal Moodle er proberen één te downloaden van Gravatar.';
 $string['group'] = 'Groep';
 $string['groupadd'] = 'Nieuwe groep';
 $string['groupaddusers'] = 'Voeg selectie toe aan groep';

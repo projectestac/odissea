@@ -34,3 +34,12 @@ $string['descriptiontype_help'] = 'Existen tres formas posibles de indicar una d
 * Puedes especificar una descripción personalizada en este formulario.
 * Puedes especificar el nombre de una cadena de idioma en mimetypes.php para ser utilizada en vez del tipo MIME.';
 $string['descriptiontype_lang'] = 'Cadena de idioma alternativa (desde mimetypes.php)';
+$string['error_notfound'] = 'El tipo de fichero con extensión {$a} no puede ser hallado.';
+$string['extension'] = 'Extensión';
+$string['mimetype'] = 'tipo MIME';
+$string['pluginname'] = 'Tipos de fichero';
+$string['revertfiletype'] = 'Restaura un tipo de fichero';
+$string['source'] = 'Tipo';
+$string['source_deleted'] = 'Borrado';
+$string['source_modified'] = 'Modificado';
+$string['source_standard'] = 'Estándar';

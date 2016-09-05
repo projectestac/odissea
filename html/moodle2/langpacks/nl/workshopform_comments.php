@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Lege plaatsen voor {$a} meer aspecten';
 $string['dimensioncomment'] = 'Opmerking';
+$string['dimensioncommentfor'] = 'Opmerking voor {$a}';
 $string['dimensiondescription'] = 'Beschrijving';
 $string['dimensionnumber'] = 'Aspect {$a}';
 $string['pluginname'] = 'Opmerkingen';

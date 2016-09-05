@@ -78,6 +78,6 @@ $string['standardonly'] = '仅标准标签';
 $string['suggestedtagthisunit'] = '该项课程的建议标签：';
 $string['tags'] = '标签';
 $string['tags:addinstance'] = '新增标签版块';
-$string['tags:myaddinstance'] = '在控制面板新增一个标签版块';
+$string['tags:myaddinstance'] = '在个人主页新增一个标签版块';
 $string['tagthisunit'] = '对此课程打标签：';
 $string['tagunits'] = '为您喜欢的课程打标签';

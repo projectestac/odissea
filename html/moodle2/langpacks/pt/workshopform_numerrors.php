@@ -29,6 +29,7 @@ $string['addmoredimensions'] = 'Adicionar mais {$a} proposições';
 $string['configgrade0'] = 'Palavra predefinida para descrever a avaliação negativa de um determinada proposição.';
 $string['configgrade1'] = 'Mensagem predefinida para descrever a avaliação positiva de uma determinada proposição.';
 $string['dimensioncomment'] = 'Comentário';
+$string['dimensioncommentfor'] = 'Comentário para {$a}';
 $string['dimensiondescription'] = 'Descrição';
 $string['dimensiongrade'] = 'Nota';
 $string['dimensionnumber'] = 'Proposição {$a}';

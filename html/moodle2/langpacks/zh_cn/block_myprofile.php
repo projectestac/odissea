@@ -45,6 +45,6 @@ $string['display_skype'] = '显示Skype';
 $string['display_un'] = '显示姓名';
 $string['display_yahoo'] = '显示Yahoo';
 $string['myprofile:addinstance'] = '新增已登录用户版块';
-$string['myprofile:myaddinstance'] = '控制面板新增一个已登录用户版块';
+$string['myprofile:myaddinstance'] = '在个人主页新增一个已登录用户版块';
 $string['myprofile_settings'] = '用户公开信息';
 $string['pluginname'] = '已登录用户';

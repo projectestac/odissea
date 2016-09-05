@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addafter'] = 'Afegeix un nou capítol';
+$string['addafter'] = 'Afegeix un capítol nou';
 $string['book:addinstance'] = 'Afegeix un llibre nou';
 $string['book:edit'] = 'Edita els capítols';
 $string['book:read'] = 'Mostra el llibre';

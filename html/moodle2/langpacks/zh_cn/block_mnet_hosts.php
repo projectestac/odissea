@@ -29,6 +29,6 @@ $string['error_authmnetneeded'] = '启用MNet验证插件才能看到MNet服务�
 $string['error_localusersonly'] = '远程用户无法从这台主机跳转到其它MNet网络服务器';
 $string['error_roamcapabilityneeded'] = '用户需要‘通过MNet漫游到远程应用程序’的能力来查看MNet网络服务器列表';
 $string['mnet_hosts:addinstance'] = '新增网络服务器版块';
-$string['mnet_hosts:myaddinstance'] = '在控制面板新增一个网络服务器版块';
+$string['mnet_hosts:myaddinstance'] = '在个人主页新增一个网络服务器版块';
 $string['pluginname'] = '网络服务器';
 $string['server'] = '服务器';

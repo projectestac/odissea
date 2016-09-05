@@ -26,4 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Bläddra genom arkiv...';
+$string['createmedia'] = 'Infoga media';
+$string['entername'] = 'Infoga namn';
 $string['enterurl'] = 'Ange URL';
+$string['height'] = 'Höjd';
+$string['pluginname'] = 'Media';
+$string['width'] = 'Bredd';

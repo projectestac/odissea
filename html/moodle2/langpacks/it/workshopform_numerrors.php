@@ -29,6 +29,7 @@ $string['addmoredimensions'] = 'Aggiungi altri 2 elementi';
 $string['configgrade0'] = 'la parola di default usata per descrivere la valutazione negativa di una affermazione.';
 $string['configgrade1'] = 'la parola di default usata per descrivere la valutazione positiva di una affermazione.';
 $string['dimensioncomment'] = 'Commento';
+$string['dimensioncommentfor'] = 'Commento su {$a}';
 $string['dimensiondescription'] = 'Descrizione';
 $string['dimensiongrade'] = 'Voto';
 $string['dimensionnumber'] = 'Affermazione {$a}';

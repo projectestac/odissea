@@ -44,7 +44,7 @@ function provider_list() {
     //2014.08.15  @pferre22
     return array('google');
     //************ FI
-    return array('google', 'facebook', 'battlenet', 'github', 'linkedin', 'messenger', 'vk', 'dropbox');
+    return array('google', 'facebook', 'battlenet', 'github', 'linkedin', 'messenger', 'microsoft', 'vk', 'dropbox');
 }
 
 /**

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = '要检查的能力';
 $string['lp:addinstance'] = '新增一个学习计划版块';
-$string['lp:myaddinstance'] = '在控制面板新增一个学习计划版块';
+$string['lp:myaddinstance'] = '在个人主页新增一个学习计划版块';
 $string['lp:view'] = '查看学习计划版块';
 $string['planstoreview'] = '要检查的计划';
 $string['pluginname'] = '学习计划';

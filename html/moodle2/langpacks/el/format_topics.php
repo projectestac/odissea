@@ -26,8 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Αυτό το θέμα';
+$string['deletesection'] = 'Διαγραφή θέματος';
+$string['editsection'] = 'Τροποποίηση θέματος';
+$string['editsectionname'] = 'Τροποποίηση ονομασίας θέματος';
 $string['hidefromothers'] = 'Απόκρυψη θέματος από τους υπολοίπους';
 $string['pluginname'] = 'Μορφή θεμάτων';
 $string['section0name'] = 'Γενικά';
-$string['sectionname'] = 'θέμα';
+$string['sectionname'] = 'Θέμα';
 $string['showfromothers'] = 'Εμφάνιση θεμάτων από άλλους';

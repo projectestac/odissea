@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = '添加一个最新勋章版块';
-$string['badges:myaddinstance'] = '添加一个最新勋章版块到我的主页';
+$string['badges:myaddinstance'] = '在个人主页新增一个最新勋章版块';
 $string['nothingtodisplay'] = '您没有可以显示的勋章';
 $string['numbadgestodisplay'] = '最新勋章显示个数';
 $string['pluginname'] = '我的最新勋章';

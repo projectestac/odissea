@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['aboutyourhost'] = 'El vostre servidor';
 $string['accesslevel'] = 'Nivell d\'accés';
 $string['addhost'] = 'Afegeix un servidor';
-$string['addnewhost'] = 'Afegeix un nou servidor';
+$string['addnewhost'] = 'Afegeix un servidor nou';
 $string['addtoacl'] = 'Afegeix al control d\'accés';
 $string['allhosts'] = 'Tots els servidors';
 $string['allhosts_no_options'] = 'No hi ha opcions disponibles quan es veuen múltiples servidors';

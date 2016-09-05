@@ -55,16 +55,16 @@ $string['expiredaction'] = 'Festlegungen zum Einschreibungszeitraum';
 $string['expiredaction_help'] = 'Legen Sie fest was nach dem Ablauf der Einschreibung in einem Kurs erfolgt. Denken Sie daran, dass bei der Austragung des Nutzers aus dem Kurs einige Daten nicht mehr verfügbar sind.';
 $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 
-Ihre Einschreibung in den Kurs \'{$a->course}\' läuft am {$a->timeend} ab.
+Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer lauft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
 
 Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.';
-$string['expirymessageenrolledsubject'] = 'Mitteilung zum Ablauf der Selbsteinschreibung';
+$string['expirymessageenrolledsubject'] = 'In Kürze endet Ihr Kurs';
 $string['expirymessageenrollerbody'] = 'Die Selbsteinschreibung im Kurs \'{$a->course}\' wird innerhalb der nächsten {$a->threshold} für folgende Nutzer/innen ablaufen:
 
 {$a->users}
 
 Die Einschreibung kann über folgenden Link verlängert werden: {$a->extendurl}';
-$string['expirymessageenrollersubject'] = 'Mitteilung zum Ablauf der Selbsteinschreibung';
+$string['expirymessageenrollersubject'] = 'In Kürze endet Ihr Kurs';
 $string['groupkey'] = 'Einschreibeschlüssel für Gruppen';
 $string['groupkey_desc'] = 'Standardmäßig einen Einschreibeschlüssel für Gruppen benutzen';
 $string['groupkey_help'] = 'Ergänzend zum Einschreibeschlüssel für die Kurseinschreibung lassen sich weitere Einschreibeschlüssel für Gruppen festlegen. Nutzer/innen können damit bei ihrer Kurseinschreibung automatisch einer bestimmten Gruppe zugewiesen werden.
@@ -78,7 +78,7 @@ $string['maxenrolled'] = 'Einschreibungen (max.)';
 $string['maxenrolled_help'] = 'Diese Option legt die Maximalzahl möglicher Nutzer/innen mit Selbsteinschreibung fest. (0= unbeschränkt)';
 $string['maxenrolledreached'] = 'Die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung ist bereits erreicht.
 ';
-$string['messageprovider:expiry_notification'] = 'Mitteilung zum Ablauf der Selbsteinschreibung';
+$string['messageprovider:expiry_notification'] = 'In Kürze endet Ihr Kurs';
 $string['newenrols'] = 'Selbsteinschreibung erlauben';
 $string['newenrols_desc'] = 'Nutzer/innen dürfen sich standardmäßig selbst einschreiben';
 $string['newenrols_help'] = 'Diese Einstellung legt fest, ob Nutzer/innen sich in diesen Kurs einschreiben dürfen.';

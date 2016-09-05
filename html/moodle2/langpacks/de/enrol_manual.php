@@ -44,7 +44,7 @@ $string['expiredaction'] = 'Festlegungen zum Einschreibungszeitraum';
 $string['expiredaction_help'] = 'Legen Sie fest was nach dem Ablauf der Einschreibung in einem Kurs erfolgt. Denken Sie daran, dass bei der Austragung des Nutzers aus dem Kurs einige Daten nicht mehr verfügbar sind.';
 $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 
-Ihre Einschreibung in den Kurs \'{$a->course}\' läuft am {$a->timeend} ab.
+Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer lauft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
 
 Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Benachrichtigung zum Teilnahmeende';

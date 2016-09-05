@@ -264,7 +264,7 @@ $string['gradebookcalculationsfixbutton'] = 'Accepta els canvis a les qualificac
 $string['gradebookcalculationsuptodate'] = 'Els càlculs al quadern de qualificacions estan actualitzats. Necessiteu carregar de nou aquesta pàgina per veure els canvis.';
 $string['gradebookcalculationswarning'] = 'Nota: S\'han detectat errors en el càlcul de les qualificacions que apareixen al quadern de qualificacions. Si el curs no ha començat o està en progrés, es recomana que esmeneu els errors prement el botó de sota, encara que això farà que canvïin algunes qualificacions. Si el vostre curs ja ha acabat i les qualificacions s\'han enviat, és probable que no vulgueu arreglar aquest problema.
 
-La versió més recent és {$a-> currentversion}; esteu usant la versió del quadern de qualificacions {$a-> gradebookversion}. Podeu veure una llista de canvis a <a href="{$a->url}">Canvis en el càlcul de les qualificacions</a>.';
+La versió més recent és {$a->currentversion}; esteu usant la versió del quadern de qualificacions {$a->gradebookversion}. Podeu veure una llista de canvis a <a href="{$a->url}">Canvis en el càlcul de les qualificacions</a>.';
 $string['gradebookhiddenerror'] = 'El butlletí de qualificacions està configurat de manera que no mostra res als estudiants.';
 $string['gradebookhistories'] = 'Històrics de qualificacions';
 $string['gradebooksetup'] = 'Configuració del llibre de qualificacions';

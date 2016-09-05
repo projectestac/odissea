@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['admin_bookmarks:addinstance'] = '新增一个管理员书签版块';
-$string['admin_bookmarks:myaddinstance'] = '在我的首页新增一个管理员书签版块';
+$string['admin_bookmarks:myaddinstance'] = '在个人主页新增一个管理员书签版块';
 $string['pluginname'] = '管理员书签';

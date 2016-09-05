@@ -34,13 +34,9 @@ $string['allocationconfigured'] = 'Zuordnung konfiguriert';
 $string['allocationdone'] = 'Zuordnung erledigt';
 $string['allocationerror'] = 'Zuordnungsfehler';
 $string['allowedfiletypesforoverallfeedback'] = 'Erlaubte Dateitypen für Feedbackanhänge';
-$string['allowedfiletypesforoverallfeedback_help'] = 'Die erlaubte Dateitypen für Feedbackanhänge können über eine kommagetrennte Liste von Dateierweiterungen eingeschränkt werden, z.B. \'png, jpg, jpeg, gif\'. Wenn die Liste leer ist, sind alle Dateitypen zugelassen.
-
-Zusätzlich unterstützte Dateierweiterungen können in der Serveradministration konfiguriert werden.';
+$string['allowedfiletypesforoverallfeedback_help'] = 'Die erlaubten Dateitypen für das Feedback können über eine kommagetrennte Liste von Dateiextension eingeschränkt werden, z.B. \'mp4, mp3, png, jpg\'. Wenn die Liste leer ist, sind alle Dateitypen zugelassen.';
 $string['allowedfiletypesforsubmission'] = 'Erlaubte Dateitypen für Abgabeanhänge';
-$string['allowedfiletypesforsubmission_help'] = 'Die erlaubte Dateitypen für Abgabeanhänge können über eine kommagetrennte Liste von Dateierweiterungen eingeschränkt werden, z.B. \'png, jpg, jpeg, gif\'. Wenn die Liste leer ist, sind alle Dateitypen zugelassen.
-
-Zusätzlich unterstützte Dateierweiterungen können in der Serveradministration konfiguriert werden.';
+$string['allowedfiletypesforsubmission_help'] = 'Die erlaubten Dateitypen für die Abgabe können über eine kommagetrennte Liste von Dateiextension eingeschränkt werden, z.B. \'mp4, mp3, png, jpg\'. Wenn die Liste leer ist, sind alle Dateitypen zugelassen.';
 $string['allsubmissions'] = 'Alle Einreichungen ({$a})';
 $string['alreadygraded'] = 'Bereits bewertet';
 $string['areaconclusion'] = 'Abschlusstext';
@@ -329,6 +325,8 @@ $string['usepeerassessment_help'] = 'Mit dieser Funktion erhält der Teilnehmend
 $string['userdatecreated'] = 'eingereicht am <span>{$a}</span>';
 $string['userdatemodified'] = 'geändert am <span>{$a}</span>';
 $string['userplan'] = 'Navigator für gegenseitige Beurteilung';
+$string['userplanaccessibilitytitle'] = 'Zeitleiste mit {$a} Phasen';
+$string['userplancurrentphase'] = 'Aktuelle Phase';
 $string['userplan_help'] = 'Der Navigator für die gegenseitige Beurteilung zeigt alle Phasen und einzelne Schritte in den Phasen an. Die aktuelle Phase ist farblich gekennzeichnet und erledigte Schritte sind mit einem Haken gekennzeichnet.';
 $string['useselfassessment'] = 'Selbstbeurteilung';
 $string['useselfassessment_desc'] = 'Teilnehmer/innen können ihre eigene Einreichung beurteilen';
@@ -355,5 +353,6 @@ $string['workshop:viewauthorpublished'] = 'Autor/innen von veröffentlichten Bei
 $string['workshop:viewpublishedsubmissions'] = 'Veröffentlichte Einreichungen betrachten';
 $string['workshop:viewreviewernames'] = 'Beurteilernamen anzeigen';
 $string['yourassessment'] = 'Ihre Beurteilung';
+$string['yourassessmentfor'] = 'Ihre Bebeurteilung für {$a}';
 $string['yourgrades'] = 'Ihre Bewertungen';
 $string['yoursubmission'] = 'Ihre Einreichung';

@@ -229,6 +229,7 @@ $string['public'] = 'Public';
 $string['question'] = 'Question';
 $string['questionandsubmission'] = 'Réglages de questions et d\'envoi';
 $string['questions'] = 'Questions';
+$string['questionslimited'] = 'Affichage des {$a} premières questions. Affichez les réponses individuelles ou téléchargez les données pour tout afficher.';
 $string['radio'] = 'Choix multiple - une réponse';
 $string['radiobutton'] = 'Choix multiple - une seule réponse possible (boutons radio)';
 $string['radiobutton_rated'] = 'Bouton radio (évalué)';

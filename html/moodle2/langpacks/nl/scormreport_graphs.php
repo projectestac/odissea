@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['invaliddata'] = 'Niet genoeg gegevens';
 $string['participants'] = 'Aantal deelnemers';
 $string['percent'] = 'Procent (%) beveiligd';
-$string['pluginname'] = 'Grafish rapport';
+$string['pluginname'] = 'Grafisch rapport';

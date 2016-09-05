@@ -98,5 +98,6 @@ $string['subdeletesuccess'] = 'Abonnement erfolgreich abgeschaltet';
 $string['subhelp'] = 'Abonnementdetails';
 $string['subhelp_help'] = 'Dieses Abonnement überprüdt, ob das Ereignis \'{$a->eventname}\' in \'{$a->moduleinstance}\'  {$a->frequency} fach innerhalb von {$a->minutes} Minute(n) eingetreten ist.';
 $string['subscribeto'] = 'Abonnement für Regel "{$a}"';
+$string['taskchecksubscriptions'] = 'Ungültige Rollenzuweisungen aktivieren/deaktivieren';
 $string['taskcleanevents'] = 'Event-Beobachtung bereinigen';
 $string['unsubscribe'] = 'Abmelden';

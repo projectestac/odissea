@@ -201,7 +201,7 @@ $string['feedbackavailabletext'] = 'あなたの「 {$a->assignment} 」への�
 
     {$a->url}';
 $string['feedbackplugin'] = 'フィードバックプラグイン';
-$string['feedbackpluginforgradebook'] = '評定表にコメントをプッシュするフィードバックプラグイン';
+$string['feedbackpluginforgradebook'] = '評定表にコメントを転送するためのフィードバックプラグインです。';
 $string['feedbackpluginforgradebook_help'] = '1つの課題フィードバックプラグインのみ、評定表にフィードバックをプッシュすることができます。';
 $string['feedbackplugins'] = 'フィードバックプラグイン';
 $string['feedbacksettings'] = 'フィードバック設定';

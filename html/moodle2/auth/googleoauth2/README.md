@@ -14,6 +14,8 @@ PHP 5.5
 7. in the plugin settings, follow the displayed instructions.
 or just install the plugin from [Moodle.org repository plugin page](https://moodle.org/plugins/view/auth_googleoauth2)
 
+If you have any issues you can follow the Git chapter of my free mini-course [how to install a Moodle plugin](http://bepaw-open-source-school.teachable.com/courses/how-to-install-a-plugin). It is using the Oauth2 plugin as example.
+
 ### Implement your own provider (for devs)
 1. add your third party provider for Oauth2 client as explain in https://github.com/thephpleague/oauth2-client
 2. create /classes/provider/newprovidername.php and newprovidername_redirect.php. Then add the lang strings in /lang/en/auth_googleoauth2.php
@@ -38,9 +40,6 @@ If you need to know more about composer, you can read [Composer Namespaces in 5 
 [![bountysource](https://api.bountysource.com/badge/team?team_id=49212&style=raised)](https://www.bountysource.com/teams/oauth2-authentication-plugin-for-moodle/backers)
 
 [![Throughput Graph](https://graphs.waffle.io/mouneyrac/moodle-auth_googleoauth2/throughput.svg)](https://waffle.io/mouneyrac/moodle-auth_googleoauth2/metrics)
-
-### Need some help / a fix / a new feature / some improvement / pull request to be quickly integrated
-create an issue in the [tracker](https://github.com/mouneyrac/moodle-auth_googleoauth2/issues) if an issue doesn't already exist for what you need. Once the issue created, a link to Bounty Source will be added to the issue description. From there you will be able to indicate how much you would like to pay for the issue to be answered/solved/peer-reviewed/tested/integrated.
 
 ### Credits
 * [Contributors](https://github.com/mouneyrac/auth_googleoauth2/graphs/contributors)

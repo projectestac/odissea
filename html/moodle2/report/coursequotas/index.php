@@ -18,9 +18,9 @@ $PAGE->requires->jquery();
 $PAGE->requires->jquery_plugin('ui');
 echo $OUTPUT->header();
 
-$showDiskInfo = is_agora() && function_exists('getDiskInfo');
+$showDiskInfo = function_exists('is_agora') && is_agora() && function_exists('getDiskInfo');
 
-require_not_rush_hour() ;
+function_exists('require_not_rush_hour') && require_not_rush_hour();
 
 if ($showDiskInfo) {
     // Get diskSpace and diskConsume from Agoraportal (might be out-of-date)
@@ -117,11 +117,14 @@ if ($showDiskInfo) {
 
     $generalContent = $OUTPUT->heading(get_string('total_description', 'report_coursequotas'),3);
     $generalContent .= report_coursequotas_printChart($disaggregated, $diskConsume, $diskSpace);
-    $generalContent .= $OUTPUT->notification(get_string('disk_consume_explain', 'report_coursequotas', $a), 'notifysuccess');
+    $generalContent .= $OUTPUT->notification(get_string('disk_consume_explain', 'report_coursequotas', $a), 'success');
 
 } else {
     $generalContent = $OUTPUT->heading(get_string('total_noquota_description', 'report_coursequotas'),3);
     $generalContent .= report_coursequotas_printChart($disaggregated);
+}
+if ($backupSize > 0) {
+    $generalContent .= $OUTPUT->notification(get_string('manage_backup_files', 'report_coursequotas', $CFG->wwwroot.'/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC'), 'info');
 }
 $generalContent .='<ul style="margin:auto; width:400px; margin-bottom:20px;">' .
             '<li>' . get_string('disk_consume_courses', 'report_coursequotas', $c) . '</li>' .
@@ -138,20 +141,16 @@ $categoryContent = $OUTPUT->heading(get_string('category_description', 'report_c
 // Content for third tab (courses)
 $coursesContent = $OUTPUT->heading(get_string('courses_description', 'report_coursequotas'),3) . report_coursequotas_printCoursesData($data);
 
-$backupsContent = $OUTPUT->heading(get_string('backups_description', 'report_coursequotas'),3) . report_coursequotas_printBackupsData();
-
 echo '<div id="coursequotas">
         <ul  class="nav nav-tabs">
             <li class="ui-state-active"><a href="#general" data-toggle="tab">' . get_string('total_data', 'report_coursequotas') . '</a></li>
             <li><a href="#category" data-toggle="tab">' . get_string('category_data', 'report_coursequotas') . '</a></li>
             <li><a href="#course" data-toggle="tab">' . get_string('larger_courses', 'report_coursequotas') . '</a></li>
-            <li><a href="#backups" data-toggle="tab">' . get_string('backups', 'report_coursequotas') . '</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane" id="general">' . $generalContent . '</div>
           <div class="tab-pane" id="category">' . $categoryContent . '</div>
           <div class="tab-pane" id="course">' . $coursesContent . '</div>
-          <div class="tab-pane" id="backups">' . $backupsContent . '</div>
         </div>
     </div>
 

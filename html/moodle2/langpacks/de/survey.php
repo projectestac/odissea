@@ -200,6 +200,7 @@ $string['downloadinfo'] = 'Sie können die Rohdaten dieser Umfrage vollständig 
 $string['downloadresults'] = 'Ergebnisse herunterladen';
 $string['downloadtext'] = 'Daten als unformatierten Text herunterladen';
 $string['editingasurvey'] = 'Eine Umfrage bearbeiten';
+$string['errorunabletosavenotes'] = 'Fehler beim Speichern der Anmerkungen';
 $string['eventreportdownloaded'] = 'Bericht zur Befragung heruntergeladen';
 $string['eventreportviewed'] = 'Bericht zur Befragung angezeigt';
 $string['eventresponsesubmitted'] = 'Antwort zur Befragung eingereicht';

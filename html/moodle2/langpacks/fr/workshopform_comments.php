@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Emplacements pour {$a} aspects supplémentaires';
 $string['dimensioncomment'] = 'Commentaire';
+$string['dimensioncommentfor'] = 'Commentaire pour {$a}';
 $string['dimensiondescription'] = 'Description';
 $string['dimensionnumber'] = '	
 Aspect {$a}';

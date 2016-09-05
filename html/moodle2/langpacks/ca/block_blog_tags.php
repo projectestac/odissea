@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_tags:addinstance'] = 'Afegeix un nou bloc d\'etiquetes del blog';
+$string['blog_tags:addinstance'] = 'Afegeix un bloc nou d\'etiquetes de blog';
 $string['pluginname'] = 'Etiquetes del blog';

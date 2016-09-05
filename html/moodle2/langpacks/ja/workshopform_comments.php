@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'さらに {$a} 個の空白アスペクトを追加する';
 $string['dimensioncomment'] = 'コメント';
+$string['dimensioncommentfor'] = '{$a} のコメント';
 $string['dimensiondescription'] = '説明';
 $string['dimensionnumber'] = 'アスペクト {$a}';
 $string['pluginname'] = 'コメント';

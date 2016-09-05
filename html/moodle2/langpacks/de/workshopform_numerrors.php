@@ -29,6 +29,7 @@ $string['addmoredimensions'] = '{$a} weitere Aussagenpaare hinzufügen';
 $string['configgrade0'] = 'Standardwert bei Ablehnung einer Beurteilung.';
 $string['configgrade1'] = 'Standardwert bei Zustimmung einer Beurteilung.';
 $string['dimensioncomment'] = 'Kommentar';
+$string['dimensioncommentfor'] = 'Kommentar für {$a}';
 $string['dimensiondescription'] = 'Beschreibung';
 $string['dimensiongrade'] = 'max. Punkte';
 $string['dimensionnumber'] = 'Kriterium';

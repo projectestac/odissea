@@ -29,6 +29,7 @@ $string['allowpermissions'] = 'Accorder les permissions au rôle utilisateur aut
 $string['allowpermissionsdescription'] = 'Modifier le rôle utilisateur authentifié et autoriser la capacité moodle/webservice:createtoken';
 $string['cannotcreatetoken'] = 'La génération automatique de jetons n\'est pas disponible pour les administrateurs du site (ils doivent créer manuellement un jeton dans le site)';
 $string['checkpluginconfiguration'] = 'Vérifier la configuration du plugin';
+$string['clickheretolaunchtheapp'] = 'Veuillez cliquer ici si l\'app ne démarre pas automatiquement';
 $string['enableadditionalservice'] = 'Activer le service fonctionnalités supplémentaires Moodle Mobile';
 $string['enableadditionalservicedescription'] = 'Ce service doit être activé.';
 $string['local_mobiledescription'] = 'Plugin qui étend les fonctionnalités du service mobile';

@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Αυτή η εβδομάδα';
+$string['deletesection'] = 'Διαγραφή εβδομάδας';
+$string['editsection'] = 'Επεξεργασία εβδομάδας';
+$string['editsectionname'] = 'Επεξεργασία ονόματος εβδομάδας';
+$string['hidefromothers'] = 'Απόκρυψη εβδομάδας';
 $string['pluginname'] = 'Εβδομαδιαία μορφή';
 $string['section0name'] = 'Γενικά';
 $string['sectionname'] = 'εβδομάδα';

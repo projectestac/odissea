@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Cerca avançada';
 $string['all'] = 'Tots';
+$string['allareas'] = 'Totes les àrees';
+$string['allcourses'] = 'Tots els cursos';
 $string['author'] = 'Autor/a';
 $string['authorname'] = 'Nom de l\'autor/a';
 $string['back'] = 'Enrere';

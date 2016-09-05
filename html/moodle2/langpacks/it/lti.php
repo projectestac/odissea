@@ -132,6 +132,7 @@ $string['embed'] = 'Incorpora';
 $string['embed_no_blocks'] = 'incorporato, senza blocchi';
 $string['enableemailnotification'] = 'Invia notifiche per email';
 $string['enableemailnotification_help'] = 'Consente di inviare email di notifica agli studenti quando la loro consegna del tool sarà stata valutata.';
+$string['enterkeyandsecret'] = 'Inserisci la consumer key e lo shared secret';
 $string['errormisconfig'] = 'Il tool è mal configurato. Per favore chiedi al tuo amministratore Moodle di sistemare la configurazione del tool.';
 $string['existing_window'] = 'Finestra esistente';
 $string['extensions'] = 'Servizi di estensione LTI';

@@ -349,5 +349,6 @@ $string['workshop:viewauthorpublished'] = 'Bekijk de namen van de gepubliceerde 
 $string['workshop:viewpublishedsubmissions'] = 'Bekijk gepubliceerde taken';
 $string['workshop:viewreviewernames'] = 'Bekijk de namen van de beoordelaars';
 $string['yourassessment'] = 'Jouw beoordeling';
+$string['yourassessmentfor'] = 'Jouw beoordeling voor {$a}';
 $string['yourgrades'] = 'Jouw cijfers';
 $string['yoursubmission'] = 'Jouw taak';

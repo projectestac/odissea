@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments:addinstance'] = '新增一个评论版块';
-$string['comments:myaddinstance'] = '在我的首页新增一个评论版块';
+$string['comments:myaddinstance'] = '在个人主页新增一个评论版块';
 $string['pluginname'] = '评论';

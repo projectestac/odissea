@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'レビューするコンピテンシー';
 $string['lp:addinstance'] = '新しい学習プランブロックを追加する';
-$string['lp:myaddinstance'] = 'ダッシュボードへ新しい学習プランブロックを追加する';
+$string['lp:myaddinstance'] = '新しい学習プランブロックをダッシュボードに追加する';
 $string['lp:view'] = '学習プランブロックを閲覧する';
 $string['planstoreview'] = 'レビューするプラン';
 $string['pluginname'] = '学習プラン';

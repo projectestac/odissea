@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bigfile'] = 'Fichero grande {$a}';
 $string['error_noforumdiscussions'] = 'El curso seleccionado no contiene foros de discusión';
 $string['pluginname'] = 'Generador de cursos aleatorio';

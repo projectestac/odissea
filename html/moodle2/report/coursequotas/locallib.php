@@ -22,8 +22,7 @@ function report_coursequotas_getCategoryData() {
     global $DB;
 
     // Step 1: get system context ID, which is unique, but its value may vary
-    $dbRecord = $DB->get_record('context', array('contextlevel'=>'10'), 'id');
-    $systemContextId = $dbRecord->id;
+    $systemcontextid = context_system::instance()->id;
 
     // Step 2: build category tree
     $dbRecords = $DB->get_records('course_categories', array(), 'depth, id', 'id, name, parent, depth');
@@ -34,7 +33,7 @@ function report_coursequotas_getCategoryData() {
 
     // Step 4: Get all context elements belonging to /systemid/categoryid/.../categoryid/courseid
     // Step 5: Search contextid into m2files, get disk usage and add to tree
-    $categoryTree = report_coursequotas_addContextElemsToTree($categoryTree, $systemContextId);
+    $categoryTree = report_coursequotas_addContextElemsToTree($categoryTree, $systemcontextid);
 
     return $categoryTree;
 }
@@ -138,44 +137,43 @@ function report_coursequotas_addContextElemsToTree($categoryTree, $systemContext
     // One iteration per category of a given level
     foreach ($categoryTree as $key => $cat) {
 
-        $totalSize = 0;
+        $totalsize = 0;
 
-        // $key equal to 0 is a fake category for front page course
+        // $key equal to 0 is a fake category for front page course.
         if ($key == 0) {
-            // Get the site course. Ensure it's front page course by forcing depth = 2
-            $dbRecord = $DB->get_record_select('context', "contextlevel = 50 and path like '/$systemContextId/%' and depth = 2", null, 'id, path, instanceid');
+            // Get the site course. Ensure it's front page course by forcing depth = 2.
+            $record = $DB->get_record_select('context', "contextlevel = 50 and path like '/$systemContextId/%' and depth = 2", null, 'id, path, instanceid');
 
-            // Get context id of everything belonging to the site course
-            $path = $dbRecord->path . '/';
-            $courseId = $dbRecord->instanceid;
+            // Get context id of everything belonging to the site course.
+            $path = $record->path . '/';
+            $courseid = $record->instanceid;
+            $contextid = $record->id;
 
-            // Calculate size of all the files inside the front page avoiding duplicates
-            $totalSize = get_coursequotas_filesize("f.contextid=c.id AND c.path like '" . $path . "%'", "{context} c");
-            $categoryTree['0']['categorysize'] = $totalSize;
-            $categoryTree['0']['courses'][$courseId]['coursesize'] = $totalSize;
-        }
-        // All other categories
-        else {
+            // Calculate size of all the files inside the front page avoiding duplicates.
+            $totalsize = get_coursequotas_filesize("(f.contextid = c.id AND c.path like '$path/%') OR f.contextid = $contextid", "{context} c");
+            $categoryTree['0']['categorysize'] = $totalsize;
+            $categoryTree['0']['courses'][$courseid]['coursesize'] = $totalsize;
+        } else {
+            // All other categories.
             // Context id of the current category is unknown. This gets it.
-            $dbRecord = $DB->get_record('context', array('contextlevel'=>40,'instanceid'=>$cat['id'],'depth'=>$depth), 'id, path');
+            $catcontext = context_coursecat::instance($cat['id']);
 
-            $path = $dbRecord->path;
-            $courseDepth = $depth + 1;
+            // Get context elements which are courses in this category.
+            $sql = "SELECT ctx.*
+                  FROM {context} ctx
+                 WHERE ctx.path LIKE ? AND ctx.depth = ? AND ctx.contextlevel = ?";
+            $params = array($catcontext->path.'/%', $catcontext->depth + 1, CONTEXT_COURSE);
+            $records = $DB->get_records_sql($sql, $params);
 
-            // Get context elements which are courses in this category
-            $dbRecords = $DB->get_records_select('context', "contextlevel='50' and path like '$path/%' and depth='$courseDepth'", null, 'id', 'id, path, instanceid');
-
-            // There can be several courses in the category
-            foreach ($dbRecords as $record) {
-                $coursePath = $record->path;
-                $courseId = $record->instanceid;
-
-                // Calculate size of all the files inside the course avoiding duplicates
-                $courseSize = get_coursequotas_filesize("f.contextid=c.id AND c.path like '" . $coursePath . "/%'", "{context} c");
-                $totalCourseSize = $courseSize;
-                $totalSize += $courseSize;
-
-                $categoryTree[$key]['courses'][$courseId]['coursesize'] = $totalCourseSize;
+            // There can be several courses in the category.
+            foreach ($records as $record) {
+                $path = $record->path;
+                $courseid = $record->instanceid;
+                $contextid = $record->id;
+                // Calculate size of all the files inside the course avoiding duplicates.
+                $coursesize = get_coursequotas_filesize("(f.contextid = c.id AND c.path like '$path/%') OR f.contextid = $contextid", "{context} c");
+                $totalsize += $coursesize;
+                $categoryTree[$key]['courses'][$courseid]['coursesize'] = $coursesize;
             }
         }
 
@@ -183,12 +181,12 @@ function report_coursequotas_addContextElemsToTree($categoryTree, $systemContext
         if (!empty($cat['subcategories'])) {
             $categoryTree[$key]['subcategories'] = report_coursequotas_addContextElemsToTree($categoryTree[$key]['subcategories'], $systemContextId, $depth + 1);
             foreach ($categoryTree[$key]['subcategories'] as $subCat) {
-                $totalSize += $subCat['categorysize'];
+                $totalsize += $subCat['categorysize'];
             }
         }
 
         // Put total size into tree
-        $categoryTree[$key]['categorysize'] = $totalSize;
+        $categoryTree[$key]['categorysize'] = $totalsize;
     }
 
     return $categoryTree;
@@ -205,9 +203,12 @@ function report_coursequotas_addContextElemsToTree($categoryTree, $systemContext
  * @return string HTML code to be sent to the browser
  */
 function report_coursequotas_printCategoryData($data) {
+    global $CFG;
 
     // Open HMTL list
     $content = '<ul class="CourseQuotasCategoryList" style="margin-top:0px; margin-bottom:0px;">';
+    $managestr = get_string('manage', 'report_coursequotas');
+    $canmanage = can_manage_files();
 
     foreach ($data as $category) {
 
@@ -221,7 +222,13 @@ function report_coursequotas_printCategoryData($data) {
         } else {
             $content .= '<a href="../../course/index.php?categoryid=' . $category['id'] . '" target="_blank">' . $category['name'] . '</a>';
         }
-        $content .= ' - ' . number_format($size['figure'], 2, ',', '.') . ' ' . $size['unit'] . '</li>';
+        $content .= ' - ' . number_format($size['figure'], 2, ',', '.') . ' ' . $size['unit'];
+
+        if ($canmanage && $size['figure'] > 0) {
+            $content .= ' - <a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?category='.$category['id'].'&children=true">'.$managestr.'</a>';
+        }
+
+        $content .= '</li>';
 
         // Recursive call for subcategories
         if (!empty($category['subcategories'])) {
@@ -236,6 +243,11 @@ function report_coursequotas_printCategoryData($data) {
 }
 
 
+function can_manage_files() {
+    return has_capability('report/coursequotas:manage', context_system::instance());
+}
+
+
 /**
  * Transforms category tree in a string HTML-formatted to be sent to the browser.
  *  Builds a table with courses information
@@ -246,6 +258,7 @@ function report_coursequotas_printCategoryData($data) {
  * @return string HTML code to be sent to the browser
  */
 function report_coursequotas_printCoursesData($data) {
+    global $CFG;
 
     // Get a two-dimension array with the course to build the body of the table
     $courses = report_coursequotas_getCoursesDataBody($data);
@@ -262,11 +275,18 @@ function report_coursequotas_printCoursesData($data) {
     }
     array_multisort($courseSize, SORT_DESC, $courses);
 
+    $managestr = get_string('manage', 'report_coursequotas');
+    $canmanage = can_manage_files();
+
     // Open HTML table and adds headings
     $table = new html_table();
     $table->class = 'generaltable';
     $table->head = array(get_string('course_name', 'report_coursequotas'), get_string('category_name', 'report_coursequotas'), get_string('disk_used', 'report_coursequotas'));
     $table->align = array('left', 'center', 'center');
+    if ($canmanage) {
+        $table->head[] = get_string('actions');
+        $table->align[] = 'center';
+    }
     foreach ($courses as $course) {
 
         $row = array();
@@ -278,59 +298,16 @@ function report_coursequotas_printCoursesData($data) {
             $row[] = '<a href="../../course/index.php?categoryid=' . $course['categoryId'] . '" target="_blank">' . $course['categoryName'] . '</a>';
         }
         $row[] = number_format($course['courseSize'], 2, ',', '.') . ' ' . $course['courseSizeUnit'];
-        $table->data[] = $row;
-    }
-    return html_writer::table($table);
-}
 
-
-/**
- * Returns a table with the backup files data of the site
- *
- * @author Pau Ferrer (pferre22@xtec.cat)
- *
- * @return string HTML code to be sent to the browser
- */
-function report_coursequotas_printBackupsData() {
-    global $DB, $CFG;
-
-    $sql = "SELECT f.id, u.username, u.id as userid, f.filename, f.filesize, f.component, f.filearea, f.contextid
-            FROM {files} f
-            LEFT JOIN {user} u on f.userid = u.id
-            WHERE (component = 'backup' or filearea = 'backup') AND filename != '.'
-            ORDER BY f.filesize DESC";
-    $datas = $DB->get_records_sql($sql);
-
-    // Open HTML table and adds headings
-    $table = new html_table();
-    $table->class = 'generaltable';
-    $table->head = array(get_string('filename', 'backup'), get_string('username'), get_string('area', 'report_coursequotas'), get_string('disk_used', 'report_coursequotas'));
-    $table->align = array('left', 'center', 'center', 'center');
-    foreach ($datas as $data) {
-
-        $row = array();
-
-        // Exclude link in front page
-        $row[] = $data->filename;
-        $row[] = '<a href="'.$CFG->wwwroot.'/user/profile.php?id=' . $data->userid . '" target="_blank">' . $data->username . '</a>';
-        $area  = $data->component == 'backup' ? $data->filearea : $data->component;
-        switch($area){
-            case 'course':
-            case 'activity':
-                $row[] = '<a href="'.$CFG->wwwroot.'/backup/restorefile.php?contextid=' . $data->contextid . '" target="_blank">' . get_string($area) . '</a>';
-                break;
-            case 'automated':
-                $row[] = '<a href="'.$CFG->wwwroot.'/backup/restorefile.php?contextid=' . $data->contextid . '" target="_blank">' . get_string('automatedbackup', 'repository') . '</a>';
-                break;
-            case 'user':
-                $row[] = get_string($area);
-                break;
-            default:
-                $row[] = $area;
-                break;
+        if ($canmanage) {
+            if ($course['courseSize'] > 0) {
+                $row[] = '<a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?course='.$course['courseId'].'&children=true">'.$managestr.'</a>';
+            } else {
+                $row[] = "";
+            }
         }
-        $size = report_coursequotas_formatSize($data->filesize);
-        $row[] = number_format($size['figure'], 2, ',', '.') . ' ' . $size['unit'];
+
+
         $table->data[] = $row;
     }
     return html_writer::table($table);
@@ -388,12 +365,16 @@ function report_coursequotas_getCoursesDataBody($data) {
 function report_coursequotas_getBackupUsage() {
     // component equal to backup means "course level backup"
     // filearea equal to backup means "user level backup" which is not associated to any course
-    return get_coursequotas_filesize("(component='backup' or filearea='backup') AND filename != '.'");
+    return get_coursequotas_filesize(getBackupWhereSQL());
+}
+
+function getBackupWhereSQL() {
+    return "((component = 'backup' AND (filearea = 'activity' OR filearea = 'course' OR filearea = 'automated')) OR (component = 'user' AND filearea = 'backup'))";
 }
 
 function report_coursequotas_getUserUsage() {
     // User files excluding backups
-    return get_coursequotas_filesize("component='user' AND filearea != 'backup' AND filename != '.'");
+    return get_coursequotas_filesize("component='user' AND filearea != 'backup'");
 }
 
 function report_coursequotas_getTempUsage() {
@@ -474,12 +455,17 @@ function report_coursequotas_formatSize($figure) {
     return $size;
 }
 
+function report_coursequotas_formatSize_text($figure) {
+    $size = report_coursequotas_formatSize($figure);
+    return number_format($size['figure'], 2, ',', '.') . ' ' . $size['unit'];
+}
+
 function report_coursequotas_printChart($disaggregated, $consumed = false, $total = false){
     global $CFG;
 
     $consumed_calc = 0;
     foreach($disaggregated as $type => $value){
-        $consumed_calc += $value / (1024*1024);
+        $consumed_calc += $value / (1024 * 1024);
     }
 
     if ($consumed && $total) {
@@ -493,7 +479,7 @@ function report_coursequotas_printChart($disaggregated, $consumed = false, $tota
         if (is_xtecadmin()) {
             $diff_calc = (int) ($consumed - $consumed_calc);
             if ($diff_calc != 0) {
-                echo "Hi ha $diff_calc MB que s'escapen...";
+                echo "<div class=\"well well-small\">Hi ha $diff_calc MB que s'escapen...</div>";
             }
         }
     } else {
@@ -552,11 +538,155 @@ function get_coursequotas_filesize($where = "", $tables = "") {
     if (!empty($tables)) {
         $tables = ', '.$tables;
     }
-    if (!empty($where)) {
-        $where = 'WHERE '.$where;
-    }
+
+    $where = 'WHERE '.$where.' AND filename != \'.\'';
     $sql = "SELECT sum(total) as total FROM (
        SELECT DISTINCT f.contenthash, f.filesize as total FROM {files} f $tables $where) t";
     $size = $DB->get_field_sql($sql);
     return $size ? $size : 0;
+}
+
+function get_filtered_files($filename = "" , $userid = null, $context = null, $addchildren = false, $filearea = null,
+    $component = null, $size = 0, $sizeselected = 0, $showonlybackups = false, $hidesamehash = false, $sort = 'filename',
+    $direction = 'ASC', $from = 0, $limitnum = 100) {
+    global $DB;
+
+    $tables = '{files} f';
+
+    $filter = array("f.filename != '.'");
+    if (!empty($filename)) {
+        $filter[] = "f.filename LIKE '%$filename%'";
+    }
+
+    if ($userid) {
+        $filter[] = 'f.userid = '.$userid;
+    }
+
+    if ($context) {
+        if ($addchildren) {
+            $ctxt = context::instance_by_id($context);
+            $filter[] = "((f.contextid = c.id AND c.path LIKE '$ctxt->path/%') OR f.contextid = $context )";
+            $tables .= ', {context} c';
+        } else {
+            $filter[] = 'f.contextid = '.$context;
+        }
+    }
+
+    if ($filearea) {
+        $filter[] = "f.filearea = '$filearea'";
+    }
+
+    if ($component) {
+        $filter[] = "f.component = '$component'";
+    }
+
+    if ($showonlybackups) {
+        $filter[] = getBackupWhereSQL();
+    }
+
+    if ($size > 0) {
+        $size *= 1024 * 1024;
+        if ($sizeselected == 0) {
+            $filter[] = "f.filesize >= $size";
+        } else if ($sizeselected == 1) {
+            $filter[] = "f.filesize <= $size";
+        }
+    }
+
+    $avaiablesorts = array('filename', 'filearea', 'component', 'filesize');
+    if (!in_array($sort, $avaiablesorts)) {
+        $sort = 'filename';
+    }
+    $direction = strtolower($direction) == 'desc' ? 'DESC' : 'ASC';
+
+    $where = implode(' AND ', $filter);
+    $record = new StdClass();
+
+    if ($hidesamehash) {
+        $distinct = "DISTINCT f.contenthash, f.id";
+    } else {
+        $distinct = "DISTINCT f.id, f.contenthash";
+    }
+    $sql = "SELECT $distinct, f.filename, f.userid, f.contextid, f.filearea, f.component, f.filesize, f.pathnamehash, f.filepath, f.mimetype, f.timemodified FROM $tables WHERE $where ORDER BY f.$sort $direction";
+
+    $record->files = @$DB->get_records_sql($sql, null, $from, $limitnum);
+
+    if ($hidesamehash) {
+        $sql = "SELECT count(DISTINCT f.contenthash) FROM $tables WHERE $where";
+    } else {
+        $sql = "SELECT count(DISTINCT f.id) FROM $tables WHERE $where";
+    }
+    $record->count = $DB->count_records_sql($sql);
+
+    $sql = "SELECT sum(total) as total FROM (SELECT DISTINCT (f.contenthash), f.filesize as total FROM $tables WHERE $where) t";
+    $size = $DB->get_field_sql($sql);
+    $record->filesize  = $size ? $size : 0;
+
+    if ($hidesamehash) {
+        $record->total  = $record->filesize;
+    } else {
+        $sql = "SELECT sum(total) AS total FROM (SELECT DISTINCT (f.id), f.filesize as total FROM $tables WHERE $where) t";
+        $size = $DB->get_field_sql($sql);
+        $record->total  = $size ? $size : 0;
+    }
+
+
+
+    return $record;
+}
+
+function get_contenthash_files($hash, $sort = 'filename', $direction = 'ASC', $from = 0, $limitnum = 100) {
+    global $DB;
+
+    $where = "f.contenthash = '$hash'";
+
+    $avaiablesorts = array('filename', 'filearea', 'component', 'filesize');
+    if (!in_array($sort, $avaiablesorts)) {
+        $sort = 'filename';
+    }
+    $direction = strtolower($direction) == 'desc' ? 'DESC' : 'ASC';
+
+    $record = new StdClass();
+    $sql = "SELECT DISTINCT (f.id), f.filename, f.userid, f.contextid, f.filearea, f.component, f.filesize, f.contenthash, f.pathnamehash, f.filepath, f.mimetype, f.timemodified FROM {files} f WHERE $where ORDER BY f.$sort $direction";
+    $record->files = $DB->get_records_sql($sql, null, $from, $limitnum);
+    $sql = "SELECT count(DISTINCT f.id) FROM {files} f WHERE $where";
+    $record->count = $DB->count_records_sql($sql);
+
+    $sql = "SELECT sum(total) AS total FROM (SELECT DISTINCT (f.id), f.filesize as total FROM {files} f WHERE $where) t";
+    $size = $DB->get_field_sql($sql);
+    $record->total  = $size ? $size : 0;
+
+    $sql = "SELECT sum(total) as total FROM (SELECT DISTINCT (f.contenthash), f.filesize as total FROM {files} f WHERE $where) t";
+    $size = $DB->get_field_sql($sql);
+    $record->filesize  = $size ? $size : 0;
+
+    return $record;
+}
+
+function get_all_filter_options($searchedcontext) {
+    global $DB;
+
+    $filters = new StdClass();
+    $users = $DB->get_records_sql('SELECT DISTINCT userid, firstname, lastname FROM {files} f, {user} u  WHERE f.userid = u.id ORDER BY lastname');
+    $filters->users = [];
+    foreach ($users as $userid => $user) {
+        $filters->users[$userid] = $user->firstname.' '.$user->lastname;
+    }
+    $contexts = $DB->get_records_sql('SELECT DISTINCT contextid FROM {files} ORDER BY contextid');
+    $filters->contexts = [];
+    foreach ($contexts as $contextid => $context) {
+        $filecontext = context::instance_by_id($contextid);
+        if ($filecontext->contextlevel == CONTEXT_COURSE) {
+            $filters->contexts[$contextid] = $filecontext->get_context_name();
+        }
+    }
+
+    if ($searchedcontext  && !isset($filters->contexts[$searchedcontext])) {
+        $filecontext = context::instance_by_id($searchedcontext);
+        $filters->contexts[$searchedcontext] = $filecontext->get_context_name();
+    }
+
+    $filters->fileareas = $DB->get_records_sql_menu('SELECT DISTINCT filearea AS f, filearea FROM {files} ORDER BY filearea');
+    $filters->components = $DB->get_records_sql_menu('SELECT DISTINCT component AS c, component FROM {files} ORDER BY component');
+    return $filters;
 }

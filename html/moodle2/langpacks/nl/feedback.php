@@ -228,6 +228,7 @@ $string['public'] = 'Publiek';
 $string['question'] = 'Vraag';
 $string['questionandsubmission'] = 'Vraag- en instuuropties';
 $string['questions'] = 'Vragen';
+$string['questionslimited'] = 'Toont enkel de eerste  {$a} vragen, bekijk individuele antwoorden of download de tabelgegevens om alles te bekijken.';
 $string['radio'] = 'Meerkeuzevraag - één antwoord';
 $string['radiobutton'] = 'Meerkeuze - één antwoord toegelten (radiobutton)';
 $string['radiobutton_rated'] = 'Radiobutton (beoordeeld)';

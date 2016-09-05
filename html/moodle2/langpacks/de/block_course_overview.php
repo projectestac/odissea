@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = '{$a} Aktivität(en) erfordern Ihre Aufmerksamkeit';
+$string['activityoverview'] = '{$a}-Aktivität(en) erfordern Ihre Aufmerksamkeit';
 $string['alwaysshowall'] = 'Immer alle anzeigen';
 $string['collapseall'] = 'Kursliste einklappen';
 $string['configotherexpanded'] = 'Wenn diese Option aktiviert ist, werden \'Weitere Kurse\' aufgeklappt. In den Nutzereinstellungen kann die Einstellung geändert werden.';

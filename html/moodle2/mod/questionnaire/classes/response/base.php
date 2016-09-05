@@ -178,7 +178,17 @@ abstract class base {
         foreach ($extraselectfields as $field => $include) {
             $extraselect .= $extraselect === '' ? '' : ', ';
             if ($include) {
+                //XTEC ************ AFEGIT - To fix bug with CSV export
+                //2016.08.31 @sarjona
+                if ($field === 'response') {
+                    $extraselect .= $DB->sql_compare_text($alias . '.' . $field).' AS '.$field;
+                } else {
+                //************ FI
                 $extraselect .= $alias . '.' . $field;
+                //XTEC ************ AFEGIT - To fix bug with CSV export
+                //2016.08.31 @sarjona
+                }
+                //************ FI
             } else {
                 $default = $field === 'response' ? 'null' : 0;
                 $extraselect .= $default.' AS ' . $field;

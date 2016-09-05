@@ -42,6 +42,7 @@ $string['migratefrom_help'] = 'Seleziona il quadro di partenza.';
 $string['migrateto'] = 'a';
 $string['migrateto_help'] = 'Seleziona il quadro di destinazione della migrazione. Il quadro deve essere visibile, altrimenti non potrà essere selezionato.';
 $string['migratingcourses'] = 'La migrazione dei corsi è in svolgimento';
+$string['missingmappings'] = 'Mappature mancanti';
 $string['performmigration'] = 'Esegui la migrazione';
 $string['pluginname'] = 'Strumento di migrazione delle competenze';
 $string['results'] = 'Risultati';

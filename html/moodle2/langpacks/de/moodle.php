@@ -105,7 +105,7 @@ $string['adminhelpsitefiles'] = 'Dateien veröffentlichen oder externe Datensich
 $string['adminhelpsitesettings'] = 'Aufbau der Startseite festlegen';
 $string['adminhelpstickyblocks'] = 'Feste Blöcke für die Website konfigurieren';
 $string['adminhelpthemes'] = 'Design (Farben, Schriften usw.) für die Website auswählen';
-$string['adminhelpuploadusers'] = 'Neue Nutzer/innen aus einer Textdatei importieren';
+$string['adminhelpuploadusers'] = 'Nutzerliste hochladen';
 $string['adminhelpusers'] = 'Nutzer/innen anlegen und Authentifizierung konfigurieren';
 $string['adminhelpxmldbeditor'] = 'Interface zur Bearbeitung von XMLDB-Dateien (nur für Entwickler/innen)';
 $string['administration'] = 'Administration';
@@ -1041,20 +1041,7 @@ $string['loginaspasswordexplain'] = '<p>Sie müssen das spezielle \'Login als\'-
 $string['login_failure_logs'] = 'Login-Fehlerdaten';
 $string['loginguest'] = 'Als Gast anmelden';
 $string['loginsite'] = 'Hier können Sie sich einloggen';
-$string['loginsteps'] = 'Guten Tag!
-
-Um an den verschiedenen Kursen teilnehmen zu können, müssen Sie sich einen Nutzerzugang für diese Website anlegen. Für einige Kurse könnte zusätzlich ein Zugangsschlüssel notwendig sein.
-
-<p>Gehen Sie dazu bitte wie folgt vor:
-<ol size=2>
-<li>Füllen Sie das Formular <a href="{$a}">Neuer Zugang</a> mit Ihren Angaben aus.</li>
-<li>Sie erhalten umgehend eine Benachrichtigung an die von Ihnen angegebene E-Mail-Adresse.</li>
-<li>Lesen Sie diese E-Mail genau und klicken Sie den darin enthaltenen Link an.</li>
-<li>Ihr Zugang wird auf diese Weise bestätigt und Sie werden automatisch mit Ihren zuvor angegebenen Zugangsdaten auf der Startseite eingeloggt.</li>
-<li>Jetzt wählen Sie bitte den Kurs aus, an dem Sie teilnehmen möchten.</li>
-<li>Für einige Kurse ist ein Zugangsschlüssel notwendig. Benutzen Sie dazu bitte den Zugangsschlüssel, den Ihnen Ihre Trainer/in mitgeteilt hat. Mit diesem Zugangsschlüssel können Sie sich in den entsprechenden Kurs einschreiben.</li>
-<li>Nun haben Sie einen Nutzerzugang zur Website. Zukünftig müssen Sie jedes Mal den bei Ihrer Registrierung gewählten Anmeldenamen und das Kennwort (im Login-Block auf dieser Seite) eingeben, um sich einzuloggen und Zugang zu den verschiedenen Kursen zu erhalten.</li>
-</ol>';
+$string['loginsteps'] = 'Für den vollen Zugriff auf diese Website benötigen Sie ein Nutzerkonto.';
 $string['loginstepsnone'] = 'Guten Tag!
 
 Um an den verschiedenen Kursen teilnehmen zu können, müssen Sie sich einen Nutzerzugang für diese Webseite anlegen.

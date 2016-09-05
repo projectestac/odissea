@@ -349,5 +349,6 @@ $string['workshop:viewauthorpublished'] = 'Ver autores dos trabalhos submetidos'
 $string['workshop:viewpublishedsubmissions'] = 'Ver trabalhos publicados';
 $string['workshop:viewreviewernames'] = 'Ver nomes dos avaliadores';
 $string['yourassessment'] = 'A sua avaliação';
+$string['yourassessmentfor'] = 'Avaliação para {$a}';
 $string['yourgrades'] = 'As suas notas';
 $string['yoursubmission'] = 'O seu trabalho';

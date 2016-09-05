@@ -25,9 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alignment'] = 'Justering';
+$string['alignment_bottom'] = 'Botten';
+$string['alignment_left'] = 'Vänster';
+$string['alignment_middle'] = 'Mitten';
+$string['alignment_right'] = 'Höger';
+$string['alignment_top'] = 'Topp';
 $string['browserepositories'] = 'Bläddra genom arkiv...';
+$string['createimage'] = 'Infoga bild';
 $string['enteralt'] = 'Beskriv bilden för någon som inte kan se den.';
-$string['enterurl'] = 'Ange URL';
-$string['presentation'] = 'Beskrivning behövs ej';
-$string['saveimage'] = 'Spara bilden';
+$string['enterurl'] = 'Infoga URL';
+$string['height'] = 'Höjd';
+$string['imageproperties'] = 'Bildegenskaper';
+$string['pluginname'] = 'Bild';
+$string['presentation'] = 'Beskrivning inte obligatorisk';
+$string['presentationoraltrequired'] = 'Bilder måste ha en beskrivning förutom när det är markerat att den inte behövs.';
+$string['preview'] = 'Förhandsgranska';
+$string['saveimage'] = 'Spara bild';
 $string['size'] = 'Storlek';
+$string['uploading'] = 'Uppladdning pågår, v.g. vänta.';
+$string['width'] = 'Bredd';

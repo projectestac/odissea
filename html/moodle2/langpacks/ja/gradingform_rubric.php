@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'クライテリアを追加する';
-$string['alwaysshowdefinition'] = 'モジュールで使用されるルーブリックをユーザがプレビューできるようにします (そうでない場合、ルーブリックは評定後のみ閲覧できます)。';
+$string['alwaysshowdefinition'] = 'モジュールで使用されるルーブリックをユーザがプレビューできるようにする (そうでない場合、ルーブリックは評定後のみ閲覧できます)';
 $string['backtoediting'] = '編集に戻る';
 $string['confirmdeletecriterion'] = '本当にこのクライテリアを削除してもよろしいですか?';
 $string['confirmdeletelevel'] = '本当にこのレベルを削除してもよろしいですか?';
@@ -45,6 +45,7 @@ $string['err_mintwolevels'] = 'クライテリアには少なくとも2つのレ
 $string['err_nocriteria'] = 'ルーブリックには少なくとも1つのクライテリアを含む必要があります。';
 $string['err_nodefinition'] = 'レベル定義は空白にできません。';
 $string['err_nodescription'] = 'クライテリア説明は空白にできません。';
+$string['err_novariations'] = 'クライテリアレベルを評点と同じ値にすることはできません。';
 $string['err_scoreformat'] = 'それぞれのレベルの点数は有効なプラスの数字である必要があります。';
 $string['err_totalscore'] = 'ルーブリックにより評定する場合、最大評点はゼロ以上にする必要があります。';
 $string['gradingof'] = '{$a} 評定';
@@ -82,3 +83,5 @@ $string['showscoreteacher'] = '評定中、レベルに点数を表示する';
 $string['sortlevelsasc'] = 'レベルの並べ替え順:';
 $string['sortlevelsasc0'] = '点数の降順';
 $string['sortlevelsasc1'] = '点数の昇順';
+$string['zerolevelsabsent'] = '警告: このルーブリックの最小評点は「0」ではありません。これにより活動の評点が予想外の結果となる場合があります。これを避けるため、それぞれのクライテリアに「0」点のレベルを持つ必要があります。<br />
+評定に評価尺度が使用されてルーブリックの最小レベルが評価尺度の最小値に相当する場合、この警告を無視することができます。';

@@ -30,6 +30,25 @@ $string['total_description'] = 'Percentage of used disk versus the total disk sp
 $string['category_description'] = 'Courses of each category with the total size of its files';
 $string['courses_description'] = 'All courses with its category and the size of its files ordered decreasing';
 
-$string['backups'] = 'Backups';
-$string['backups_description'] = 'Disk used with backup files';
-$string['area'] = 'Area';
+$string['filemanager'] = 'File manager';
+$string['manage'] = 'Manage files';
+$string['filearea'] = 'File Area';
+$string['component'] = 'Component';
+$string['owner'] = 'Owner';
+$string['context'] = 'Context';
+$string['totalfilesize'] = 'Sum of all file sizes: {$a}';
+$string['realfilesize'] = 'Real disk usage: {$a}';
+$string['nofilesfound'] = 'No file has been found';
+$string['showingfiles'] = 'Showing {$a->files} out of {$a->total}';
+$string['addchildren'] = 'Add children contexts';
+$string['allusers'] = 'All users';
+$string['allfileareas'] = 'All file areas';
+$string['allcomponents'] = 'All components';
+$string['more_than'] = 'More than';
+$string['less_than'] = 'Less than';
+$string['showonlybackups'] = 'Show only backup files';
+$string['hidesamehash'] = 'Hide files with the same contenthash (Expert mode)';
+$string['viewsimilarfiles'] = 'View similar files';
+$string['manage_backup_files'] = 'If you want to make free space, backups can be deleted from <a href="{$a}">this page</a>';
+
+
