@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'Zain dituzu hainbat {$a}';
 $string['alwaysshowall'] = 'Erakutsi beti guztiak';
 $string['collapseall'] = 'Tolestu ikastaro-zerrenda guztiak';
-$string['configotherexpanded'] = 'Gaituz gero, beste ikastaro batzuk berez zabalduko dira, erabiltzailearen hobespenetan baliogabetzen ez ba, behintzat.';
+$string['configotherexpanded'] = 'Gaituz gero, beste ikastaro batzuk berez zabalduko dira, erabiltzailearen hobespenetan baliogabetzen ez bada behintzat.';
 $string['configpreservestates'] = 'Gaituz gero, erabiltzaileak ezarritako tolestu/zabaldu egoerak kargatze bakoitzean gorde eta erabiltzen dira.';
 $string['course_overview:addinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra blokea';
 $string['course_overview:myaddinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra bloke berria aginte-panelean';

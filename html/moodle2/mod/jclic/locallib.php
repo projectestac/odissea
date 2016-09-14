@@ -65,8 +65,9 @@ class jclic {
      *                            otherwise this class will load one from the context as required.
      * @param mixed $course the current course  if it was already loaded,
      *                      otherwise this class will load one from the context as required.
+     * @param mixed $instance the current instance
      */
-    public function __construct($coursemodulecontext, $coursemodule, $course) {
+    public function __construct($coursemodulecontext, $coursemodule = null, $course = null, $instance = null) {
         global $DB;
 
         $this->context = $coursemodulecontext;
@@ -87,6 +88,10 @@ class jclic {
         if ($this->coursemodule) {
             $params = array('id' => $this->coursemodule->instance);
             $this->instance = $DB->get_record('jclic', $params);
+        }
+
+        if ($instance && empty($this->instance)) {
+            $this->set_instance($instance);
         }
     }
 
@@ -205,6 +210,7 @@ class jclic {
 
         // In the case of upgrades the coursemodule has not been set,
         // so we need to wait before calling these two.
+        $this->update_file($formdata->filetype);
         $this->update_calendar($formdata->coursemodule);
         $this->update_gradebook(false, $formdata->coursemodule);
 
@@ -227,7 +233,6 @@ class jclic {
         $update->course = $formdata->course;
         $update->intro = $formdata->intro;
         $update->introformat = $formdata->introformat;
-
         if (isset($formdata->filetype) && $formdata->filetype == JCLIC_FILE_TYPE_LOCAL) {
             $update->url = $formdata->jclicfile;
         } else {
@@ -235,6 +240,8 @@ class jclic {
             $update->url = $formdata->url;
         }
         $update->skin = empty($formdata->skin) ? 'default' : $formdata->skin;
+        $update->width = empty($formdata->width) ? '600' : $formdata->width;
+        $update->height = empty($formdata->height) ? '400' : $formdata->height;
         $update->avaluation = $formdata->avaluation;
         $update->grade = $formdata->grade;
         if ($update->grade >= 0 ) {
@@ -253,13 +260,40 @@ class jclic {
         $result = $DB->update_record('jclic', $update);
         $instance = $DB->get_record('jclic', array('id' => $update->id), '*', MUST_EXIST);
         $this->set_instance($instance);
-
+        $this->update_file($formdata->filetype, $formdata->jclicfile);
         $this->update_calendar($this->coursemodule->id);
         $this->update_gradebook(false, $this->coursemodule->id);
 
         return $result;
     }
 
+    function update_file($filetype){
+        global $DB;
+
+        // We need to use context now, so we need to make sure all needed info is already in db.
+        $cmid = $this->coursemodule->id;
+        $DB->set_field('course_modules', 'instance', $this->instance->id, array('id'=>$cmid));
+        $context = context_module::instance($cmid);
+
+        $fs = get_file_storage();
+
+        //Erase content files to force regeneration and package to reset old files
+        $fs->delete_area_files($context->id, 'mod_jclic', 'content');
+        $fs->delete_area_files($context->id, 'mod_jclic', 'package');
+
+        if ($filetype === JCLIC_FILE_TYPE_LOCAL) {
+            $this->save_package();
+        } else {
+            $fs->delete_area_files($context->id, 'mod_jclic', $this->get_filearea());
+        }
+        // Remove activity type to calculate again it (because file/URL can be different)
+        $this->get_instance()->type = -1;
+        if (is_numeric($this->get_instance()->url)){
+            $this->get_instance()->url = $this->set_mainfile();
+        }
+        $DB->update_record('jclic', $this->get_instance());
+
+    }
     /**
      * Delete this instance from the database.
      *
@@ -380,23 +414,135 @@ class jclic {
         }
     }
 
+    public function get_filetype () {
+        if (empty($this->instance->filetype)) {
+            if (jclic_is_valid_external_url($this->instance->url)) {
+                $this->instance->filetype = JCLIC_FILE_TYPE_EXTERNAL;
+            } else{
+                $this->instance->filetype = JCLIC_FILE_TYPE_LOCAL;
+            }
+        }
+        return $this->instance->filetype;
+    }
+
+
 
     public function set_mainfile() {
         $fs = get_file_storage();
         $fileid = $this->instance->url;
 
         if ($fileid) {
-            file_save_draft_area_files($fileid, $this->context->id, 'mod_jclic', 'content', 0, self::get_filemanager_options());
+            file_save_draft_area_files($fileid, $this->context->id, 'mod_jclic', $this->get_filearea(), 0, self::get_filemanager_options());
         }
 
-        $files = $fs->get_area_files($this->context->id, 'mod_jclic', 'content', 0, 'sortorder', false);
+        $files = $fs->get_area_files($this->context->id, 'mod_jclic', $this->get_filearea(), 0, 'sortorder', false);
         if (count($files) == 1) {
             // only one file attached, set it as main file automatically
             $file = reset($files);
-            file_set_sortorder($this->context->id, 'mod_jclic', 'content', 0, $file->get_filepath(), $file->get_filename(), 1);
+            file_set_sortorder($this->context->id, 'mod_jclic', $this->get_filearea(), 0, $file->get_filepath(), $file->get_filename(), 1);
             return $file->get_filename();
         }
         return null;
+    }
+
+    function save_package() {
+        $fs = get_file_storage();
+        $cmid = $this->coursemodule->id;
+        $draftitemid = $this->instance->url;
+
+        $context = context_module::instance($cmid);
+        if ($draftitemid) {
+            file_save_draft_area_files($draftitemid, $context->id, 'mod_jclic', $this->get_filearea(), 0, jclic::get_filemanager_options());
+        }
+        if ($this->get_filearea() == 'package') {
+            $this->extract_package(true);
+        }
+    }
+
+    /**
+     * Extracts JClic package, sets up all variables.
+     * @param bool $force_extract force full update if true
+     * @return void
+     */
+    function extract_package($force_extract = false) {
+        global $DB;
+
+        if ($this->get_filearea() == 'package'){
+            $fs = get_file_storage();
+            $cmid = $this->coursemodule->id;
+            $context = $this->context;
+            $files = $fs->get_area_files($context->id, 'mod_jclic', 'package', 0, 'sortorder', false);
+            if (count($files) == 1) {
+                // Only one file attached, set it as main file automatically
+                $package = reset($files);
+                file_set_sortorder($context->id, 'mod_jclic', 'package', 0, $package->get_filepath(), $package->get_filename(), 1);
+
+                if ($force_extract) {
+                    // Now extract files
+                    $fs->delete_area_files($context->id, 'mod_jclic', 'content');
+
+                    $packer = get_file_packer('application/zip');
+                    $package->extract_to_storage($packer, $context->id, 'mod_jclic', 'content', 0, '/');
+                }
+            }
+        }
+        return false;
+    }
+
+   public function is_html5 ($fs = false) {
+        global $DB;
+
+        if ($this->get_instance()->type == -1) {
+            // Activity type is not defined so it's necessary to calculate it
+            if (substr(trim($this->get_instance()->url), -10) === '.jclic.zip') {
+                $this->get_instance()->type = JCLIC_ACTIVITY_TYPE_JAVA;
+            } else {
+                $this->get_instance()->type = JCLIC_ACTIVITY_TYPE_HTML5;
+            }
+
+            /*
+            switch ($this->get_filetype()) {
+                case JCLIC_FILE_TYPE_LOCAL:
+                    $this->extract_package($this->coursemodule->id);
+                    if (!$fs) {
+                        $fs = get_file_storage();
+                    }
+                    $this->instance->type = JCLIC_ACTIVITY_TYPE_JAVA;
+                    if ($fs->get_file($this->context->id, 'mod_jclic', 'content', 0, '/', 'project.json')){
+                        $this->instance->type = JCLIC_ACTIVITY_TYPE_HTML5;
+                    }
+
+                    if ($this->instance->type === JCLIC_ACTIVITY_TYPE_JAVA) {
+                        // If is an applet, remove 'content' files (they're not necessary)
+                        $fs->delete_area_files($this->context->id, 'mod_jclic', 'content');
+                    }
+                    break;
+
+                case JCLIC_FILE_TYPE_EXTERNAL:
+                    if (substr($this->get_instance()->url, -6) === '.jclic') {
+                        // It's not necessary to download: this files are always HTML5
+                        $this->instance->type = JCLIC_ACTIVITY_TYPE_HTML5;
+                    } else {
+                        // It's necessary to download and extract file to guess activity type
+                        $file = jclic_download_file_content($this->get_instance(), $this->context);
+                        $zip = new ZipArchive();
+                        $this->instance->type = JCLIC_ACTIVITY_TYPE_JAVA;
+                        if ($zip->open($file) === TRUE ) {
+                            if ($zip->locateName('project.json') !== FALSE) {
+                                $this->instance->type = JCLIC_ACTIVITY_TYPE_HTML5;
+                            }
+                        }
+                    }
+                    break;
+            }
+            */
+
+            if ($this->instance->type !== -1) {
+                // Save value in database (to avoid calculate again)
+                $DB->update_record('jclic', $this->get_instance());
+            }
+        }
+        return ($this->instance->type == JCLIC_ACTIVITY_TYPE_HTML5);
     }
 
     public static function get_filemanager_options() {
@@ -445,7 +591,37 @@ class jclic {
             );
     }
 
+    public function get_context() {
+        return $this->context;
+    }
+
+    /**
+     * For Java type, filearea is content and for HTML5 is package
+     * @param  jclic $jclic JClic instance
+     * @return string       Filearea name
+     */
+    function get_filearea () {
+        return jclic_get_filearea($this->get_instance()->url);
+    }
+
 }
+
+
+class jclic_package_file_info extends file_info_stored {
+    public function get_parent() {
+        if ($this->lf->get_filepath() === '/' and $this->lf->get_filename() === '.') {
+            return $this->browser->get_file_info($this->context);
+        }
+        return parent::get_parent();
+    }
+    public function get_visible_name() {
+        if ($this->lf->get_filepath() === '/' and $this->lf->get_filename() === '.') {
+            return $this->topvisiblename;
+        }
+        return parent::get_visible_name();
+    }
+}
+
 
 /**
  * Display the jclic intro
@@ -488,7 +664,7 @@ function jclic_view_dates($jclic, $cm) {
  * Display the jclic applet
  *
  */
-function jclic_view_applet($jclic, $context, $ispreview = false) {
+function jclic_view_activity($jclic, $context, $ispreview = false) {
     global $OUTPUT, $PAGE, $CFG, $USER;
 
     $timenow = time();
@@ -519,54 +695,142 @@ function jclic_view_applet($jclic, $context, $ispreview = false) {
     $config = get_config('jclic');
 
     if ($jclic->maxattempts < 0 || $attempts < $jclic->maxattempts) {
-        echo '<div id="jclic_applet" style="text-align:center;padding-top:10px;">';
-        echo '</div>';
-        if (isset($config->pluginjs) && !empty($config->pluginjs)) {
-            echo '<script type="text/javascript" src="'.$config->pluginjs.'"></script>';
-        } else {
-            $PAGE->requires->js('/mod/jclic/jclicplugin.js');
-        }
-        $PAGE->requires->js('/mod/jclic/jclic.js');
-        $params = get_object_vars($jclic);
-        $params['jclic_url'] = jclic_get_url($jclic, $context);
-        $params['jclic_path'] = jclic_get_server();
-        $params['jclic_service'] = jclic_get_path().'/mod/jclic/action/beans.php';
-        $params['jclic_user'] = $USER->id;
-        $params['jclic_jarbase'] = $config->jarbase;
-        $params['jclic_lap'] = $config->lap;
-        if ( (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
-                || $_SERVER['SERVER_PORT'] == 443
-                || substr($CFG->wwwroot, 0, strlen('https')) === 'https' ) {
-            $params['jclic_protocol'] = 'https';
-        } else {
-            $params['jclic_protocol'] = 'http';
-        }
-        $PAGE->requires->js_init_call('M.mod_jclic.init', array($params));
+        jclic_display($jclic, $context, $config, $ispreview);
     } else {
         echo $OUTPUT->box(get_string('msg_noattempts', 'jclic'), 'generalbox boxaligncenter');
     }
     jclic_view_dates($jclic, $context, $timenow);
 }
 
-function jclic_get_url($jclic, $context){
-    global $CFG;
+function jclic_display ($jclic_instance, $context, $config, $ispreview) {
+    $jclic = new jclic($context, null, null, $jclic_instance);
+    if ($jclic->is_html5()) {
+        jclic_display_html5($jclic, $context, $config, $ispreview);
+    } else {
+        jclic_display_applet($jclic, $context, $config);
+    }
+}
+
+function jclic_display_applet ($jclic, $context, $config) {
+    global $OUTPUT, $PAGE, $CFG, $USER;
+
+    $jclic_instance = $jclic->get_instance();
+
+    echo '<div id="jclic_applet" style="text-align:center;padding-top:10px;">';
+    echo '</div>';
+    if (isset($config->pluginjs) && !empty($config->pluginjs)) {
+        echo '<script type="text/javascript" src="'.$config->pluginjs.'"></script>';
+    } else {
+        $PAGE->requires->js('/mod/jclic/jclicplugin.js');
+    }
+    $PAGE->requires->js('/mod/jclic/jclic.js');
+    $params = get_object_vars($jclic_instance);
+    $params['jclic_url'] = jclic_get_url($jclic, $context);
+    $params['jclic_path'] = jclic_get_server();
+    $params['jclic_service'] = jclic_get_path().'/mod/jclic/action/beans.php';
+    $params['jclic_user'] = $USER->id;
+    $params['jclic_jarbase'] = $config->jarbase;
+    $params['jclic_lap'] = $config->lap;
+    if ( (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+            || $_SERVER['SERVER_PORT'] == 443
+            || substr($CFG->wwwroot, 0, strlen('https')) === 'https' ) {
+        $params['jclic_protocol'] = 'https';
+    } else {
+        $params['jclic_protocol'] = 'http';
+    }
+    $PAGE->requires->js_init_call('M.mod_jclic.initApplet', array($params));
+}
+
+function jclic_display_html5 ($jclic, $context, $config, $ispreview = false) {
+    global $OUTPUT, $PAGE, $CFG, $USER;
+
+    $jclic_instance = $jclic->get_instance();
+
+    echo '<div id="jclic_html5">';
+    echo '</div>';
+    if (isset($config->jclicjs) && !empty($config->jclicjs)) {
+        echo '<script type="text/javascript" src="'.$config->jclicjs.'"></script>';
+    } else {
+        echo '<script type="text/javascript" src="https://clic.xtec.cat/dist/jclic.js/jclic.min.js"></script>';
+    }
+    $PAGE->requires->js('/mod/jclic/jclic.js');
+    $params = get_object_vars($jclic_instance);
+    $params['jclic_ispreview'] = $ispreview;
+    $params['jclic_url'] = jclic_get_url($jclic, $context);
+    $params['jclic_path'] = jclic_get_server();
+    $params['jclic_service'] = jclic_get_path().'/mod/jclic/action/beans.php';
+    $params['jclic_user'] = $USER->id;
+    $params['jclic_jarbase'] = $config->jarbase;
+    $params['jclic_lap'] = $config->lap;
+    if ( (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+            || $_SERVER['SERVER_PORT'] == 443
+            || substr($CFG->wwwroot, 0, strlen('https')) === 'https' ) {
+        $params['jclic_protocol'] = 'https';
+    } else {
+        $params['jclic_protocol'] = 'http';
+    }
+    $PAGE->requires->js_init_call('M.mod_jclic.initHTML5', array($params));
+}
+
+function jclic_download_file_content($jclic, $context) {
+    $tofile = tempnam(sys_get_temp_dir(), 'jclic_');
+    $url = jclic_get_url($jclic, $context);
+
+    // Prepare the parameters for the download_file_content() function.
+    $headers = null;
+    $postdata = null;
+    $fullresponse = false;
+    $timeout = 300;
+    $connecttimeout = 20;
+    $skipcertverify = true;
+    $tofile = $tofile;
+    $calctimeout = false;
+
+    download_file_content($url, $headers, $postdata, $fullresponse, $timeout,
+        $connecttimeout, $skipcertverify, $tofile, $calctimeout);
+
+    return $tofile;
+}
+
+function jclic_get_url($jclic, $context, $jclicfile=false){
+    global $CFG, $DB;
+
+    if ($jclic instanceof jclic) {
+        $jclic_instance = $jclic->get_instance();
+    } else {
+        $jclic_instance = $jclic;
+    }
 
     $url = '';
-    if (jclic_is_valid_external_url($jclic->url)) {
-        $url = $jclic->url;
+    if (jclic_is_valid_external_url($jclic_instance->url)) {
+        $url = $jclic_instance->url;
     } else {
         $fs = get_file_storage();
-        $files = $fs->get_area_files($context->id, 'mod_jclic', 'content', 0, 'sortorder DESC, id ASC', false);
-        if (count($files) < 1) {
-            //resource_print_filenotfound($resource, $cm, $course);
-            die;
+        if ($jclic->is_html5()) {
+            // Get project.son file (to avoid to unzip it)
+            $filename = 'project.json';
+            if ($rs = $DB->get_record_sql("SELECT filename FROM {files} WHERE component='mod_jclic' AND filearea='content' AND contextid='".$jclic->get_context()->id."' AND filename='".$filename."'")) {
+                $file = $fs->get_file($jclic->get_context()->id, 'mod_jclic', 'content', 0, '/', $rs->filename);
+            } else {
+                // If project.json doesn't exist, get .jclic file (to avoid to unzip it)
+                $filename = substr($jclic_instance->url, 0, sizeof($jclic_instance->url)-11).'.jclic';
+                if ($rs = $DB->get_record_sql("SELECT filename FROM {files} WHERE component='mod_jclic' AND filearea='content' AND contextid='".$jclic->get_context()->id."' AND filename='".$filename."'")) {
+                    $file = $fs->get_file($jclic->get_context()->id, 'mod_jclic', 'content', 0, '/', $rs->filename);
+                }
+            }
         } else {
-            $file = reset($files);
-            unset($files);
+            // Get .jclic.zip file
+            $files = $fs->get_area_files($context->id, 'mod_jclic', $jclic->get_filearea(), 0, 'sortorder DESC, id ASC', false);
+            if (count($files) < 1) {
+                //resource_print_filenotfound($resource, $cm, $course);
+                die;
+            } else {
+                $file = reset($files);
+                unset($files);
+            }
         }
-
-        $path = '/'.$context->id.'/mod_jclic/content/0'.$file->get_filepath().$file->get_filename();
-        $url = file_encode_url($CFG->wwwroot.'/pluginfile.php', $path, false);
+        $url = moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(), $file->get_filearea(), $file->get_itemid(), $file->get_filepath(), $file->get_filename());
+        $url = (string) $url;
     }
 
     return $url;
@@ -636,11 +900,38 @@ function jclic_set_mainfile($data) {
 }
 
 function jclic_is_valid_external_url($url){
-    return preg_match('/(http:\/\/|https:\/\/|www).*\/*.jclic.zip(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?$/i', $url);
+    return preg_match('/(http:\/\/|https:\/\/|www).*\/*(.scorm.zip|project.json|.jclic(.zip)?)(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?$/i', $url);
 }
 
 function jclic_is_valid_file($filename){
-    return preg_match('/.jclic.zip$/i', $filename);
+    return preg_match('/(.jclic.zip|scorm.zip)$/i', $filename);
+}
+
+
+/**
+ * For Java type, filearea is 'content'; for HTML5 is 'package'
+ * @param  string $draftitemid file draft id
+ * @return string       Filearea name
+ */
+function jclic_get_filearea ($file = null) {
+    // Check if in url there is draftitemid or the filename
+    if (is_numeric($file)) {
+        // It's draftitemid so it's necessary to get the filename
+        $filename = null;
+        $files = file_get_drafarea_files($file);
+        if (count($files->list) == 1) {
+            $file = reset($files->list);
+            $filename = $file->filename;
+        }
+    } else {
+        $filename = $file;
+    }
+
+    if (substr(trim($filename), -10) === '.jclic.zip') {
+        return 'content';
+    }
+
+    return 'package';
 }
 
 

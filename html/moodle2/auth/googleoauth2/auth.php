@@ -452,7 +452,14 @@ class auth_plugin_googleoauth2 extends auth_plugin_base {
                 $content = str_replace(array("\n", "\r"), array("\\\n", "\\\r"), auth_googleoauth2_display_buttons(false));
                 $PAGE->requires->css('/auth/googleoauth2/style.css');
                 $PAGE->requires->js_init_code("buttonsCodeOauth2 = '$content';");
+                //XTEC ************ MODIFICAT - To avoid Mixed Content error it's necessary to load js with HTTPS
+                //2016.09.07 @sarjona
+                $PAGE->requires->js(new moodle_url($CFG->httpswwwroot . "/auth/googleoauth2/script.js"));
+                //ORIGINAL
+                /*
                 $PAGE->requires->js(new moodle_url($CFG->wwwroot . "/auth/googleoauth2/script.js"));
+                */
+                //********************FI
             }
         }
     }

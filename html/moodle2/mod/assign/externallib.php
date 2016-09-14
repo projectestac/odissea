@@ -650,6 +650,14 @@ class mod_assign_external extends external_api {
                     'text' => $assignplugin->get_editor_text($name, $item->id),
                     'format' => $assignplugin->get_editor_format($name, $item->id)
                 );
+
+                // Now format the text.
+                foreach ($fileareas as $filearea => $name) {
+                    list($editorfieldinfo['text'], $editorfieldinfo['format']) = external_format_text(
+                        $editorfieldinfo['text'], $editorfieldinfo['format'], $assign->get_context()->id,
+                        $component, $filearea, $item->id);
+                }
+
                 $plugin['editorfields'][] = $editorfieldinfo;
             }
             $plugins[] = $plugin;
@@ -2153,7 +2161,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for copy_previous_attempt
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function copy_previous_attempt_parameters() {
@@ -2172,12 +2180,11 @@ class mod_assign_external extends external_api {
      * @since Moodle 2.6
      */
     public static function copy_previous_attempt($assignmentid) {
-        global $CFG, $USER;
 
         $params = self::validate_parameters(self::copy_previous_attempt_parameters(),
                                             array('assignmentid' => $assignmentid));
 
-        $cm = get_coursemodule_from_instance('assign', $assignmentid, 0, false, MUST_EXIST);
+        $cm = get_coursemodule_from_instance('assign', $params['assignmentid'], 0, false, MUST_EXIST);
         $context = context_module::instance($cm->id);
         self::validate_context($context);
 
@@ -2185,7 +2192,7 @@ class mod_assign_external extends external_api {
 
         $notices = array();
 
-        $assignment->copy_previous_attempt($submissiondata, $notices);
+        $assignment->copy_previous_attempt($notices);
 
         $warnings = array();
         foreach ($notices as $notice) {
@@ -2603,11 +2610,12 @@ class mod_assign_external extends external_api {
      * @param string $filter search string to filter the results.
      * @param int $skip Number of records to skip
      * @param int $limit Maximum number of records to return
+     * @param bool $onlyids Only return user ids.
      * @return array of warnings and status result
      * @since Moodle 3.1
      * @throws moodle_exception
      */
-    public static function list_participants($assignid, $groupid, $filter, $skip, $limit) {
+    public static function list_participants($assignid, $groupid, $filter, $skip, $limit, $onlyids) {
         global $DB, $CFG;
         require_once($CFG->dirroot . "/mod/assign/locallib.php");
         require_once($CFG->dirroot . "/user/lib.php");
@@ -2618,7 +2626,8 @@ class mod_assign_external extends external_api {
                                                 'groupid' => $groupid,
                                                 'filter' => $filter,
                                                 'skip' => $skip,
-                                                'limit' => $limit
+                                                'limit' => $limit,
+                                                'onlyids' => $onlyids
                                             ));
         $warnings = array();
 

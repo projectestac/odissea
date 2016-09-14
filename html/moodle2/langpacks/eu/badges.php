@@ -92,7 +92,7 @@ $string['backpackdetails'] = 'Motxilaren ezarpenak';
 $string['backpackemail'] = 'E-posta helbidea';
 $string['backpackemail_help'] = 'Zure motxilarekin lotutako e-posta helbidea. Konektatuta zauden bitartean, gune honetan irabazitako dominak e-posta helbide honekin lotuko dira.';
 $string['backpackimport'] = 'Domina inportatzeko ezarpenak';
-$string['backpackimport_help'] = 'Motxilarako konexio egokia ezarri ondoren, zure motxilako dominak "Nire Dominak" orrian eta zure profil-orrian ikusi ahal izango dira.
+$string['backpackimport_help'] = 'Motxilarako konexio egokia ezarri ondoren, zure motxilako dominak zure dominen orrian eta zure profil-orrian ikusi ahal izango dira.
 
 Atal honetan, zure profilean erakutsi nahi dituzun motxilako domina-bildumak aukera ditzakezu.';
 $string['badgedetails'] = 'Dominaren xehetasunak';
@@ -103,7 +103,7 @@ Irudi berria gehitzeko, bilatu eta aukeratu irudia (JPG edo PNG formatuan) eta o
 $string['badgeprivacysetting'] = 'Dominen pribatutasun-ezarpenak';
 $string['badgeprivacysetting_help'] = 'Irabazten dituzun dominak zure kontuaren profil-orrian erakutsi ahal dira. Ezarpen honek irabazitako azken dominak automatikoki erakusteko aukera ematen dizu.
 
-"Nire Dominak" orrian kontrola ditzakezu banakako dominen pribatutasunaren ezapenak.';
+Zure dominen orrian kontrola ditzakezu banakako dominen pribatutasunaren ezarpenak.';
 $string['badgeprivacysetting_str'] = 'Erakutsi automatikoki nire profil-orrian irabazi ditudan dominak.';
 $string['badges'] = 'Dominak';
 $string['badgesalt'] = 'Eraldaketa jasotzailearen e-posta helbidea nahasteko';
@@ -286,7 +286,7 @@ $string['makepublic'] = 'Publiko egin';
 $string['managebadges'] = 'Kudeatu dominak';
 $string['message'] = 'Mezuren gurputza';
 $string['messagebody'] = '<p>"%badgename%" domina lortu duzu!</p>
-<p>Domina honi buruzko informazio gehiago %badgelink%-n lortu ahal da.</p>
+<p>Domina honi buruzko informazio gehiago %badgelink% dominaren informazio orrian lortu ahal da.</p>
 <p>Domina {$a}-tik deskarga eta kudea dezakezu.</p>';
 $string['messagesubject'] = 'Zorionak! Domina bat irabazi duzu!';
 $string['method'] = 'Irizpidea honela beteko da:';
@@ -331,7 +331,9 @@ $string['numawards'] = 'Domina hau <a href="{$a->link}">{$a->count}</a> erabiltz
 $string['numawardstat'] = 'Domina hau {$a} erabiltzaileri eman zaie.';
 $string['overallcrit'] = 'aukeratutako irizpideetatik bete da.';
 $string['personaconnection'] = 'Saioa zure e-postarekin hasi';
-$string['personaconnection_help'] = 'Pertsona zeure e-posta helbidea erabilita zeure burua web-ean identifikatzeko sistema da. Open Badges motxilak Pertsona erabiltzen du saioa hasteko eta beraz motxilarekin kontektatzeko Pertsonaren kontua behar duzu. Pertsonari buruzko informazio gehiago lortzeko jo hona:<a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
+$string['personaconnection_help'] = 'Persona zeure e-posta helbidea erabilita zeure burua web-ean identifikatzeko sistema da. Open Badges motxilak Pertsona erabiltzen du saioa hasteko eta beraz motxilarekin konektatzeko Pertsonaren kontua behar duzu.
+
+Pertsonari buruzko informazio gehiago lortzeko jo hona:<a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Balizko domina-jasotzaileak';
 $string['preferences'] = 'Dominen hobespenak';
 $string['recipientdetails'] = 'Jasotzailearen zehaztasunak';

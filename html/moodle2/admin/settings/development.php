@@ -36,7 +36,7 @@ if (get_protected_agora()) {
     $ADMIN->add('development', $temp);
 
     // "Profiling" settingpage (conditionally if the 'xhprof' extension is available only).
-    $xhprofenabled = extension_loaded('xhprof') && function_exists('xhprof_enable');
+    $xhprofenabled = extension_loaded('xhprof') || extension_loaded('tideways');
     $temp = new admin_settingpage('profiling', new lang_string('profiling', 'admin'), 'moodle/site:config', !$xhprofenabled);
     // Main profiling switch.
     $temp->add(new admin_setting_configcheckbox('profilingenabled', new lang_string('profilingenabled', 'admin'), new lang_string('profilingenabled_help', 'admin'), false));

@@ -208,7 +208,7 @@ Andere Treiber für Sessions können direkt in der config.php angepasst werden. 
 $string['configdebug'] = 'Wenn Sie diese Funktion einschalten, werden die Fehlermeldungen von PHP erweitert, so dass mehr Warnungen ausgegeben werden. Dies ist nur für Entwickler nützlich.';
 $string['configdebugdisplay'] = 'Wenn diese Option aktiviert ist, werden Fehlermeldungen direkt auf der HTML-Seite angezeigt. Auftretende Fehler stören dann aber XHTML, JavaScript, Cookies und HTTP-Header. Wenn die Option deaktiviert ist, werden alle Fehlermeldungen in die Logdaten des Webservers geschrieben. Die PHP-Variable error_log enthält den Pfad zur Logdatei.';
 $string['configdebugpageinfo'] = 'Wenn diese Option aktiviert ist, werden Seiteninformationen in der Fußzeile angezeigt.';
-$string['configdebugsmtp'] = 'Umfassende Debuginformation beim Versand von E-Mails an SMTP-Server erstellen.';
+$string['configdebugsmtp'] = 'Umfassende Debug-Mitteilungen zum Versand von E-Mails über den eingestellten SMTP-Server erstellen.';
 $string['configdebugvalidators'] = 'Aktivieren Sie diese Option, um Links zu externen Validierungsservern in der Fußzeile anzuzeigen. Möglicherweise müssen Sie einen neuen Nutzer mit dem Anmeldenamen <em>w3cvalidator</em> erstellen und den Gastzugang freischalten. Diese Änderungen erlauben unauthorisierte Serverzugriffe und sollten nicht auf Produktivsystemen eingeschaltet werden!';
 $string['configdefaulthomepage'] = 'Diese Option legt fest, welche Seite eingeloggte Nutzer/innen als Startseite bekommen.';
 $string['configdefaultrequestcategory'] = 'Von Nutzer/innen beantragte Kurse werden automatisch in diesem Kursbereich angelegt.';
@@ -427,7 +427,7 @@ $string['datarootsecurityerror'] = '<p><strong>Sicherheitswarnung!</strong></p><
 <p>Sie <em>müssen</em> das Verzeichnis dataroot \'{$a}\' an eine andere Stelle bewegen, die nicht in Ihrem öffentlichen Webverzeichnis liegt, und anschließend die Einstellung <code>$CFG->dataroot</code> in der Datei config.php entsprechend anpassen.</p>';
 $string['datarootsecuritywarning'] = 'Ihre Einstellungen sind möglicherweise unsicher. Bitte stellen Sie sicher, dass das Verzeichnis dataroot \'{$a}\' nicht direkt aus dem Internet aufrufbar ist.';
 $string['dbsessions'] = 'Sitzungsinformationen in der Datenbank speichern';
-$string['debug'] = 'Debug-Meldungen';
+$string['debug'] = 'Debug-Mitteilungen';
 $string['debugall'] = 'ALLE: Notwendige PHP-Mitteilungen anzeigen';
 $string['debugdeveloper'] = 'DEVELOPER: PHP-Mitteilungen für Entwickler anzeigen';
 $string['debugdisplay'] = 'Debug-Mitteilungen anzeigen';
@@ -436,7 +436,7 @@ $string['debugminimal'] = 'MINIMAL: Nur schwerwiegende Fehler anzeigen';
 $string['debugnone'] = 'KEINE: Keine Fehler oder Warnungen anzeigen';
 $string['debugnormal'] = 'NORMAL: Fehler, Warnungen und Bemerkungen anzeigen';
 $string['debugpageinfo'] = 'Seiteninformation anzeigen';
-$string['debugsmtp'] = 'Debug E-Mail versenden';
+$string['debugsmtp'] = 'Debug-Mitteilungen zum E-Mail-Versand';
 $string['debugstringids'] = 'Herkunft der Texte anzeigen';
 $string['debugstringids_desc'] = 'Diese Option soll bei der Übersetzung helfen. Wenn die Option aktiviert und der Parameter strings=1 an eine aufgerufene URL angehängt ist, werden Sprachdatei und Text-ID neben jedem ausgegebenen Text angezeigt.';
 $string['debugvalidators'] = 'Prüflinks anzeigen';

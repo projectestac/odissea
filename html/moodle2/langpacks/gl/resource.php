@@ -65,6 +65,7 @@ $string['framesize'] = 'Altura do marco';
 $string['legacyfiles'] = 'Migración de ficheiros antigos de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizada';
+$string['modifieddate'] = 'Modificado {$a}';
 $string['modulename'] = 'Ficheiro';
 $string['modulename_help'] = 'O módulo Ficheiro permítelle aos profesores fornecer un ficheiro como un recurso do curso. Cando sexa posíbel, o ficheiro presentarase dentro da interface do curso; se non é o caso, preguntaráselle aos alumnos se queren descargalo. O ficheiro pode incluír ficheiros auxiliares, por exemplo, unha páxina HTML pode ter integradas imaxes ou obxectos Flash.
 
@@ -92,11 +93,19 @@ $string['printintro'] = 'Presentar a descrición do recurso';
 $string['printintroexplain'] = 'Presentar a descrición do recurso baixo o contido? É posíbel que algúns tipos de pantalla non presenten a descrición incluso aínda que estea activado.';
 $string['resource:addinstance'] = 'Engadir un novo recurso';
 $string['resourcecontent'] = 'Ficheiros e subcartafoles';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Exportar recurso';
 $string['resource:view'] = 'Ver recurso';
 $string['search:activity'] = 'Ficheiro';
 $string['selectmainfile'] = 'Seleccione o ficheiro principal premendo na icona a carón do seu nome.';
+$string['showdate'] = 'Amosar a data de modificación/envío';
+$string['showdate_desc'] = 'Amosar a data de modificación/envío na páxina do curso?';
+$string['showdate_help'] = 'Amosar a data de modificación/envío a carón de ligazóns ao ficheiro..
+
+Se houber múltiplos ficheiros neste recurso, amosase a data inicial de modificación/envío.';
 $string['showsize'] = 'Amosar o tamaño';
 $string['showsize_desc'] = 'Presentar o tamaño do ficheiro na páxina do curso?';
 $string['showsize_help'] = 'Presenta o tamaño do ficheiro no formato «3.1 MB», a carón da ligazón ao ficheiro.
@@ -109,3 +118,4 @@ $string['showtype_help'] = 'Presenta o tipo de documento, tal que «Documento de
 Se hai varios ficheiros nese recurso, presentase o tipo do ficheiro inicial.
 
 Se o tipo de ficheiro é descoñecido para o sistema, non se presenta.';
+$string['uploadeddate'] = 'Enviado {$a}';

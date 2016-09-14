@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Coursequotas report library
  *
@@ -7,6 +8,91 @@
  * @copyright  2012 Agora Development Team (http://agora.xtec.cat)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+function report_coursequotas_diskinfo($chartinfo) {
+    global $CFG;
+
+    $hasinfo = function_exists('is_agora') && is_agora() && function_exists('getDiskInfo');
+    $info = false;
+
+    if ($hasinfo) {
+        // Get diskSpace and diskConsume from Agoraportal (might be out-of-date).
+        $tempinfo = getDiskInfo($CFG->dnscentre, 'moodle2');
+
+        $info = new StdClass();
+        $info->space = round($tempinfo['diskSpace']); // In MB.
+        $info->consumed = $tempinfo['diskConsume'] / 1024; // Originally in kB.
+
+        // If disk info is not avalaible...
+        if ($info->consumed == 0) {
+            $info->consumed += report_coursequotas_get_charinfo_total($chartinfo);
+        }
+        $info->consumed = round($info->consumed);
+    }
+    return $info;
+}
+
+/**
+ * Formats a size figure and adds unit information
+ *
+ * @author Pau Ferrer (pau@moodle.com)
+ * @param int $size file size to be formatted
+ *
+ * @return object number and units
+ */
+function report_coursequotas_format_size($size) {
+    $formatted = new StdClass();
+    $formatted->bytes = $size;
+
+    $suffixes = array('Bytes', 'kB', 'MB', 'GB', 'TB');
+
+    $suffix = 0;
+    while ($size > 1024 && $suffix < count($suffixes)) {
+        $size = $size / 1024;
+        $suffix++;
+    }
+
+    $formatted->number = number_format($size, 2, ',', '.');
+    $formatted->unit = $suffixes[$suffix];
+
+    return $formatted;
+}
+
+/**
+ * Format a size figure and adds unit information in text
+ * @param int $size file size to be formatted
+ *
+ * @return string number and units
+ */
+function report_coursequotas_format_size_text($size) {
+    $size = report_coursequotas_format_size($size);
+    return $size->number . ' ' . $size->unit;
+}
+
+function report_course_quotas_get_chart_info($treedata) {
+    $chartinfo = array();
+    // Get quota used in repositories.
+    $chartinfo['repository'] = report_coursequotas_get_repository_usage();
+
+    // Calculate quota used by course files (does not include backups).
+    $coursessize = 0;
+    foreach ($treedata as $category) {
+        $coursessize += $category->categorysize;
+    }
+    $chartinfo['course'] = report_coursequotas_format_size($coursessize);
+
+    // Get quota used in backups.
+    $chartinfo['backup'] = report_coursequotas_get_backup_usage();
+
+    // Get quota used by users.
+    $chartinfo['user'] = report_coursequotas_get_user_usage();
+
+    // Get quota used in files in temp and trash directories.
+    $chartinfo['temp'] = report_coursequotas_get_temp_usage();
+    $chartinfo['trash'] = report_coursequotas_get_trash_usage();
+
+    return $chartinfo;
+}
 
 /**
  * Gets this information for each category: subcategories, courses and disk usage
@@ -17,300 +103,266 @@
  *
  * @return array Tree with data (see description)
  */
-function report_coursequotas_getCategoryData() {
-
+function report_coursequotas_get_category_data() {
     global $DB;
 
-    // Step 1: get system context ID, which is unique, but its value may vary
-    $systemcontextid = context_system::instance()->id;
+    // Step 1: build category tree.
+    $catrecords = $DB->get_records('course_categories', array(), 'depth, id', 'id, name, parent, depth, visible');
+    $cattree = report_coursequotas_build_category_tree($catrecords);
 
-    // Step 2: build category tree
-    $dbRecords = $DB->get_records('course_categories', array(), 'depth, id', 'id, name, parent, depth');
-    $categoryTree = report_coursequotas_buildCatTree($dbRecords, 0, 1);
+    // Add fake front page category.
+    $cat = new StdClass();
+    $cat->id = 0;
+    $cat->name = get_string('front_page', 'report_coursequotas');
+    $cat->subcategories = array();
+    $cat->categorysize = 0;
+    $cat->visible = 1;
+    $cat->courses = array();
 
-    // Step 3: add courses to each category
-    $categoryTree = report_coursequotas_addCoursesToTree($categoryTree, true);
+    // Add front page course.
+    $course = $DB->get_record('course', array('category' => 0), 'id, fullname, visible');
+    $course->coursesize = 0;
+    $cat->courses[$course->id] = $course;
+    $cattree[0] = $cat;
 
-    // Step 4: Get all context elements belonging to /systemid/categoryid/.../categoryid/courseid
-    // Step 5: Search contextid into m2files, get disk usage and add to tree
-    $categoryTree = report_coursequotas_addContextElemsToTree($categoryTree, $systemcontextid);
+    // Search contextid into m2files, get disk usage and add to tree.
+    report_coursequotas_add_size_to_tree($cattree);
 
-    return $categoryTree;
+    return $cattree;
 }
-
 
 /**
  * Creates a tree data structure wich contains, only, category information. Iterates
  *  recursively.
  *
  * @author Toni Ginard (aginard@xtec.cat)
- * @param array $dbRecords Contains all the categories info from the data base
- * @param int $catID ID of the category where to start
+ * @param array $catrecords Contains all the categories info from the data base
+ * @param int $parent ID of the category where to start
  * @param int $depth Level of the category being processed. Avoids processing subcategories.
  *
  * @return array Tree with data (see description)
  */
-function report_coursequotas_buildCatTree($dbRecords, $catID, $depth) {
-    $catTree = array();
+function report_coursequotas_build_category_tree(&$catrecords, $parent = 0, $depth = 1) {
+    $cattree = array();
 
-    // First pass to get categories whose parent is this category (aka subcategories)
-    foreach ($dbRecords as $key => $record) {
-        if ($record->parent == $catID) {
-            $catTree[$record->id] = array('id' => $record->id, 'name' => $record->name, 'subcategories' => array(), 'categorysize' => 0);
-            // Effiency improvement: Once the category is added to the tree, it won't be added again
-            unset($dbRecords[$key]);
+    // Find categories with the same parent and add them.
+    foreach ($catrecords as $catid => $record) {
+        if ($record->parent == $parent) {
+            $cat = new StdClass();
+            $cat->id = $catid;
+            $cat->name = $record->name;
+            $cat->categorysize = 0;
+            $cat->visible = $record->visible;
+            // Recursive call to find subcategories.
+            $cat->subcategories = report_coursequotas_build_category_tree($catrecords, $record->id, $depth + 1);
+            // Call to find its courses.
+            $cat->courses = report_coursequotas_get_tree_courses($record->id);
+            $cattree[$record->id] = $cat;
+            // Effiency improvement: Once the category is added to the tree, it won't be added again.
+            unset($catrecords[$catid]);
         }
     }
 
-    // Second pass for recursive call for all the categories in this category. The process
-    //  can't be done in a single pass because we only have the full list of categories
-    //  of this depth once we have completed the first pass.
-    foreach ($catTree as $cat) {
-        foreach ($dbRecords as $record) {
-            // Condition 1: next level of depth
-            // Condicion 2: the category must be under the current category
-            if (($record->parent == $cat['id'])) {
-                $catTree[$cat['id']]['subcategories'] = report_coursequotas_buildCatTree($dbRecords, $cat['id'], $depth + 1);
-            }
-        }
-    }
-
-    return $catTree;
+    return $cattree;
 }
-
 
 /**
  * Adds courses information to category tree
  *
- * @author Toni Ginard (aginard@xtec.cat)
- * @param array $dbRecords Contains all the courses info from the data base
- * @param array $categoryTree
- * @param bool $addFrontPageCourse Flag to know if information of front page courses must be added or not
+ * @author Pau Ferrer Ocaña (pau@moodle.com)
+ * @param array $catid
  *
- * @return array Tree with data (see description)
+ * @return array courses on category.
  */
-function report_coursequotas_addCoursesToTree($categoryTree, $addFrontPageCourse = false) {
-
+function report_coursequotas_get_tree_courses($catid) {
     global $DB;
 
-    if ($addFrontPageCourse) {
-        // Add front page course
-        $dbRecord = $DB->get_record('course', array('category'=>0), 'id, fullname');
-        $categoryTree['0'] = array('id' => 0, 'name' => get_string('front_page', 'report_coursequotas'), 'subcategories' => array());
-        $categoryTree['0']['courses'][$dbRecord->id] = array('id' => $dbRecord->id, 'Fullname' => $dbRecord->fullname, 'coursesize' => 0);
+    $courses = array();
+
+    $records = $DB->get_records('course', array('category' => $catid), 'id', 'id, category, fullname, visible');
+    foreach ($records as $course) {
+        $course->coursesize = 0;
+        $courses[$course->id] = $course;
     }
 
-    // Add ordinary courses to category
-    foreach ($categoryTree as $key => $cat) {
-        $dbRecords = $DB->get_records('course', array('category'=>$key), 'id', 'id, category, fullname');
-        foreach ($dbRecords as $record) {
-            $categoryTree[$key]['courses'][$record->id] = array('id' => $record->id, 'Fullname' => $record->fullname, 'coursesize' => 0);
-        }
-
-        // Recursive call for subcategories
-        if (!empty($cat['subcategories'])) {
-            $categoryTree[$key]['subcategories'] = report_coursequotas_addCoursesToTree($categoryTree[$key]['subcategories'], false);
-        }
-    }
-
-    return $categoryTree;
+    return $courses;
 }
-
 
 /**
- * Adds usage information to category tree, which is obtained from files table. This
- *  function identifies all files belonging to a course, sums the file sizes and,
- *  also, sums course sizes to categories.
+ * Adds usage information to category tree, which is obtained from files table. This function identifies all files belonging to a
+ * course, sums the file sizes and all course sizes to categories.
  *
- * @author Toni Ginard (aginard@xtec.cat)
- * @global array $DB
- * @param array $categoryTree
- * @param int $systemContextId
- * @param int $depth Level of the category being processed. Avoids processing subcategories.
- *
- * @return array Tree with data (see description)
+ * @author Pau Ferrer Ocaña (pau@moodle.com)
+ * @param array $cattree    Category tree.
+ * @param int   $depth      Level of the category being processed. Avoids processing subcategories.
  */
-function report_coursequotas_addContextElemsToTree($categoryTree, $systemContextId, $depth = 2) {
-
+function report_coursequotas_add_size_to_tree(&$cattree, $depth = 2) {
     global $DB;
 
-    // One iteration per category of a given level
-    foreach ($categoryTree as $key => $cat) {
+    // One iteration per category of a given level.
+    foreach ($cattree as $catid => $category) {
+        $categorysize = 0;
 
-        $totalsize = 0;
+        // Fake category for front page course.
+        if ($catid == 0) {
+            $courseid = reset($category->courses)->id;
+            $coursecontext = context_course::instance($courseid);
 
-        // $key equal to 0 is a fake category for front page course.
-        if ($key == 0) {
-            // Get the site course. Ensure it's front page course by forcing depth = 2.
-            $record = $DB->get_record_select('context', "contextlevel = 50 and path like '/$systemContextId/%' and depth = 2", null, 'id, path, instanceid');
-
-            // Get context id of everything belonging to the site course.
-            $path = $record->path . '/';
-            $courseid = $record->instanceid;
-            $contextid = $record->id;
-
-            // Calculate size of all the files inside the front page avoiding duplicates.
-            $totalsize = get_coursequotas_filesize("(f.contextid = c.id AND c.path like '$path/%') OR f.contextid = $contextid", "{context} c");
-            $categoryTree['0']['categorysize'] = $totalsize;
-            $categoryTree['0']['courses'][$courseid]['coursesize'] = $totalsize;
+            $category->courses[$courseid]->coursesize = $coursesize = report_coursequotas_get_contextsize($coursecontext);
+            $categorysize += $coursesize;
         } else {
             // All other categories.
-            // Context id of the current category is unknown. This gets it.
-            $catcontext = context_coursecat::instance($cat['id']);
+            $catcontext = context_coursecat::instance($catid);
 
             // Get context elements which are courses in this category.
-            $sql = "SELECT ctx.*
-                  FROM {context} ctx
-                 WHERE ctx.path LIKE ? AND ctx.depth = ? AND ctx.contextlevel = ?";
-            $params = array($catcontext->path.'/%', $catcontext->depth + 1, CONTEXT_COURSE);
-            $records = $DB->get_records_sql($sql, $params);
+            $sql = "SELECT id, path, instanceid
+                  FROM {context}
+                 WHERE depth = ? AND contextlevel = ? AND path LIKE ?";
+            $params = array($catcontext->depth + 1, CONTEXT_COURSE, $catcontext->path.'/%');
+            $coursecontexts = $DB->get_records_sql($sql, $params);
 
             // There can be several courses in the category.
-            foreach ($records as $record) {
-                $path = $record->path;
-                $courseid = $record->instanceid;
-                $contextid = $record->id;
-                // Calculate size of all the files inside the course avoiding duplicates.
-                $coursesize = get_coursequotas_filesize("(f.contextid = c.id AND c.path like '$path/%') OR f.contextid = $contextid", "{context} c");
-                $totalsize += $coursesize;
-                $categoryTree[$key]['courses'][$courseid]['coursesize'] = $coursesize;
+            foreach ($coursecontexts as $coursecontext) {
+                $courseid = $coursecontext->instanceid;
+                $category->courses[$courseid]->coursesize = $coursesize = report_coursequotas_get_contextsize($coursecontext);
+                $categorysize += $coursesize;
+            }
+
+            // Recursive call for subcategories.
+            if (!empty($category->subcategories)) {
+                report_coursequotas_add_size_to_tree($category->subcategories, $depth + 1);
+                foreach ($category->subcategories as $subcat) {
+                    $categorysize += $subcat->categorysize;
+                }
             }
         }
 
-        // Recursive call for subcategories
-        if (!empty($cat['subcategories'])) {
-            $categoryTree[$key]['subcategories'] = report_coursequotas_addContextElemsToTree($categoryTree[$key]['subcategories'], $systemContextId, $depth + 1);
-            foreach ($categoryTree[$key]['subcategories'] as $subCat) {
-                $totalsize += $subCat['categorysize'];
-            }
-        }
-
-        // Put total size into tree
-        $categoryTree[$key]['categorysize'] = $totalsize;
+        // Put total size into tree.
+        $category->categorysize = $categorysize;
     }
 
-    return $categoryTree;
+    return $cattree;
 }
 
+/**
+ * Sum all files from a given context and its children.
+ * @param  Object $context Containing path and instanceid.
+ * @return int             Sum of all total bytes of context.
+ */
+function report_coursequotas_get_contextsize($context) {
+    $path = $context->path;
+    $contextid = $context->id;
+
+    // Calculate size of all the files inside the course avoiding duplicates.
+    return get_coursequotas_filesize("(f.contextid = c.id AND c.path like '$path/%') OR f.contextid = $contextid", "{context} c");
+}
 
 /**
  * Transforms category tree in a string HTML-formatted to be sent to the browser.
- *  Builds a list with category information
+ * Builds a list with category information
  *
  * @author Toni Ginard (aginard@xtec.cat)
- * @param array $data Category tree
+ * @param array $cattree Category tree
  *
  * @return string HTML code to be sent to the browser
  */
-function report_coursequotas_printCategoryData($data) {
+function report_coursequotas_print_category_data($cattree) {
     global $CFG;
 
-    // Open HMTL list
-    $content = '<ul class="CourseQuotasCategoryList" style="margin-top:0px; margin-bottom:0px;">';
+    $content = '<ul>';
     $managestr = get_string('manage', 'report_coursequotas');
     $canmanage = can_manage_files();
 
-    foreach ($data as $category) {
+    foreach ($cattree as $catid => $category) {
 
-        // Format size number adding unit information
-        $size = report_coursequotas_formatSize($category['categorysize']);
+        // Format size number adding unit information.
+        $size = report_coursequotas_format_size($category->categorysize);
 
-        // Build list content
-        $content .= '<li class="category_title" style="margin-top:3px; margin-bottom:3px;">';
-        if ($category['id'] == 0) {
-            $content .= $category['name'];
+        // Build list content.
+        $content .= '<li>';
+        if ($catid == 0) {
+            $content .= $category->name;
         } else {
-            $content .= '<a href="../../course/index.php?categoryid=' . $category['id'] . '" target="_blank">' . $category['name'] . '</a>';
+            $dimmed = $category->visible ? "" : ' class="dimmed"';
+            $content .= '<a href="'.$CFG->wwwroot.'/course/index.php?categoryid='.$catid.'" '.$dimmed.' target="_blank">'.$category->name.'</a>';
         }
-        $content .= ' - ' . number_format($size['figure'], 2, ',', '.') . ' ' . $size['unit'];
+        $content .= ' - ' . $size->number . ' ' . $size->unit;
 
-        if ($canmanage && $size['figure'] > 0) {
-            $content .= ' - <a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?category='.$category['id'].'&children=true">'.$managestr.'</a>';
+        if ($canmanage && $size->bytes > 0) {
+            $content .= ' - <a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?category='.$catid.'&children=true">'.$managestr.'</a>';
         }
 
+        // Recursive call for subcategories.
+        if (!empty($category->subcategories)) {
+            $content .= report_coursequotas_print_category_data($category->subcategories);
+        }
         $content .= '</li>';
-
-        // Recursive call for subcategories
-        if (!empty($category['subcategories'])) {
-            $content .= report_coursequotas_printCategoryData($category['subcategories']);
-        }
     }
-
-    // Close HMTL list
     $content .= '</ul>';
 
     return $content;
 }
 
-
 function can_manage_files() {
     return has_capability('report/coursequotas:manage', context_system::instance());
 }
 
-
 /**
  * Transforms category tree in a string HTML-formatted to be sent to the browser.
- *  Builds a table with courses information
+ * Builds a table with courses information
  *
  * @author Toni Ginard (aginard@xtec.cat)
- * @param array $data Category tree
+ * @param array $cattree Category tree
  *
  * @return string HTML code to be sent to the browser
  */
-function report_coursequotas_printCoursesData($data) {
+function report_coursequotas_print_courses_data($cattree) {
     global $CFG;
 
-    // Get a two-dimension array with the course to build the body of the table
-    $courses = report_coursequotas_getCoursesDataBody($data);
-    // Sort the array by course size. BTW, array_multisort is weird!!
-    $courseSize = array();
-    foreach ($courses as $key => $value) {
-        $weight = 1;
-        switch ($value['courseSizeUnit']) {
-            case 'kB': $weight = 1024; break;
-            case 'MB': $weight = 1024 * 1024; break;
-            case 'GB': $weight = 1024 * 1024 * 1024; break;
-        }
-        $courseSize[$key] = $value['courseSize'] * $weight;
-    }
-    array_multisort($courseSize, SORT_DESC, $courses);
+    // Get a one-dimension array with the course to build the body of the table.
+    $courses = report_coursequotas_get_flat_courses_array($cattree);
 
-    $managestr = get_string('manage', 'report_coursequotas');
+    // Sort the array by course size.
+    usort($courses, "cmp_sort_course_array");
+
     $canmanage = can_manage_files();
 
-    // Open HTML table and adds headings
     $table = new html_table();
     $table->class = 'generaltable';
-    $table->head = array(get_string('course_name', 'report_coursequotas'), get_string('category_name', 'report_coursequotas'), get_string('disk_used', 'report_coursequotas'));
+    $table->head = array(
+        get_string('course_name', 'report_coursequotas'),
+        get_string('category_name', 'report_coursequotas'),
+        get_string('disk_used', 'report_coursequotas')
+    );
     $table->align = array('left', 'center', 'center');
     if ($canmanage) {
+        $managestr = get_string('manage', 'report_coursequotas');
         $table->head[] = get_string('actions');
         $table->align[] = 'center';
     }
     foreach ($courses as $course) {
-
-        $row = array();
-        $row[] = '<a href="../../course/view.php?id=' . $course['courseId'] . '" target="_blank">' . $course['courseName'];
-        // Exclude link in front page
-        if ($course['categoryId'] == 0) {
-            $row[] = $course['categoryName'];
-        } else {
-            $row[] = '<a href="../../course/index.php?categoryid=' . $course['categoryId'] . '" target="_blank">' . $course['categoryName'] . '</a>';
-        }
-        $row[] = number_format($course['courseSize'], 2, ',', '.') . ' ' . $course['courseSizeUnit'];
+        $dimmed = $course->visible ? "" : ' class="dimmed"';
+        $row = array(
+            '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$course->id.'" '.$dimmed.' target="_blank">'.$course->fullname.'</a>',
+            $course->catlink,
+            $course->sizeformat
+        );
 
         if ($canmanage) {
-            if ($course['courseSize'] > 0) {
-                $row[] = '<a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?course='.$course['courseId'].'&children=true">'.$managestr.'</a>';
+            if ($course->bytes > 0) {
+                $row[] = '<a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?course='.$course->id.'&children=true">'.$managestr.'</a>';
             } else {
                 $row[] = "";
             }
         }
 
-
         $table->data[] = $row;
     }
     return html_writer::table($table);
+}
+
+function cmp_sort_course_array($a, $b) {
+    return $a->bytes < $b->bytes;
 }
 
 /**
@@ -318,41 +370,47 @@ function report_coursequotas_printCoursesData($data) {
  *  able to build an HTML table and to be able to order the courses by size
  *
  * @author Toni Ginard (aginard@xtec.cat)
- * @param array $data Category tree
+ * @param array $cattree Category tree
  *
  * @return string HTML code to be sent to the browser
  */
-function report_coursequotas_getCoursesDataBody($data) {
+function report_coursequotas_get_flat_courses_array($cattree) {
+    global $CFG;
 
-    $courseList = array();
+    $courselist = array();
 
-    foreach ($data as $category) {
+    foreach ($cattree as $catid => $category) {
+        if (!empty($category->courses)) {
+            if ($catid == 0) {
+                $categorylink = $category->name;
+            } else {
+                $dimmed = $category->visible ? "" : ' class="dimmed"';
+                $categorylink = '<a href="'.$CFG->wwwroot.'/course/index.php?categoryid='.$catid.'" '.$dimmed.' target="_blank">'.$category->name.'</a>';
+            }
 
-        if (!empty($category['courses'])) {
-            foreach ($category['courses'] as $course) {
+            foreach ($category->courses as $course) {
+                $courseflat = new StdClass();
+                $courseflat->id = $course->id;
+                $courseflat->fullname = $course->fullname;
+                $courseflat->visible = $course->visible;
+                $courseflat->catlink = $categorylink;
 
-                // Format file size
-                $size = report_coursequotas_formatSize($course['coursesize']);
-
-                $courseList[] = array('courseId' => $course['id'],
-                    'courseName' => $course['Fullname'],
-                    'categoryId' => $category['id'],
-                    'categoryName' => $category['name'],
-                    'courseSize' => $size['figure'],
-                    'courseSizeUnit' => $size['unit']);
+                $size = report_coursequotas_format_size($course->coursesize);
+                $courseflat->bytes = $size->bytes;
+                $courseflat->sizeformat = $size->number.' '.$size->unit;
+                $courselist[] = $courseflat;
             }
         }
 
-        // Recursive call for subcategories
-        if (!empty($category['subcategories'])) {
-            // array_merge is used to join the courses of this level and of the subcategories
-            $courseList = array_merge($courseList, report_coursequotas_getCoursesDataBody($category['subcategories']));
+        // Recursive call for subcategories.
+        if (!empty($category->subcategories)) {
+            // Join the courses of this level and of the subcategories.
+            $courselist = array_merge($courselist, report_coursequotas_get_flat_courses_array($category->subcategories));
         }
     }
 
-    return $courseList;
+    return $courselist;
 }
-
 
 /**
  * Gets the amount of bytes used in course and users backups
@@ -362,164 +420,163 @@ function report_coursequotas_getCoursesDataBody($data) {
  *
  * @return int Number of bytes used
  */
-function report_coursequotas_getBackupUsage() {
-    // component equal to backup means "course level backup"
-    // filearea equal to backup means "user level backup" which is not associated to any course
-    return get_coursequotas_filesize(getBackupWhereSQL());
+function report_coursequotas_get_backup_usage() {
+    // Component equal to backup means "course level backup".
+    // filearea equal to backup means "user level backup" which is not associated to any course.
+    $size = get_coursequotas_filesize(get_backup_where_sql());
+    return report_coursequotas_format_size($size);
 }
 
-function getBackupWhereSQL() {
+function get_backup_where_sql() {
     return "((component = 'backup' AND (filearea = 'activity' OR filearea = 'course' OR filearea = 'automated')) OR (component = 'user' AND filearea = 'backup'))";
 }
 
-function report_coursequotas_getUserUsage() {
-    // User files excluding backups
-    return get_coursequotas_filesize("component='user' AND filearea != 'backup'");
+function report_coursequotas_get_user_usage() {
+    // User files excluding backups.
+    $size = get_coursequotas_filesize("component='user' AND filearea != 'backup'");
+    return report_coursequotas_format_size($size);
 }
 
-function report_coursequotas_getTempUsage() {
-    global $CFG;
-    if (isset($CFG->tempdir)) {
-        $tempdir = $CFG->tempdir;
-    } else {
-        $tempdir = $CFG->dataroot.'/temp';
-    }
-    if (file_exists($tempdir)) {
-        $size = exec('du -sk ' . $tempdir);
+function report_coursequotas_get_directory_size($directory) {
+    $size = 0;
+
+    if (file_exists($directory)) {
+        $size = exec('du -sk ' . $directory);
         $size = explode('/', $size);
-        $size = $size[0]; // Size in kB
-        return $size * 1024;
-    }
-    return 0;
-}
-
-function report_coursequotas_getTrashUsage() {
-    global $CFG;
-    if (isset($CFG->trashdir)) {
-        $trashdir = $CFG->trashdir;
-    } else {
-        $trashdir = $CFG->dataroot.'/trashdir';
-    }
-    $trashdir .= '/';
-    if (file_exists($trashdir)) {
-        $size = exec('du -sk ' . $trashdir);
-        $size = explode('/', $size);
-        $size = $size[0]; // Size in kB
-        return $size * 1024;
-    }
-    return 0;
-}
-
-function report_coursequotas_getRepositoryUsage() {
-    global $CFG;
-    if (file_exists($CFG->dataroot . '/repository/')) {
-        $repoSize = exec('du -sk ' . $CFG->dataroot . '/repository/');
-        $repoSize = explode('/', $repoSize);
-        $repoSize = $repoSize[0]; // Size in kB
-        $size = $repoSize * 1024;
-        return $size;
-    }
-    return 0;
-}
-
-
-/**
- * Formats a size figure and adds unit information
- *
- * @author Toni Ginard (aginard@xtec.cat)
- * @param int $figure file size to be formatted
- *
- * @return array Figure and units
- */
-function report_coursequotas_formatSize($figure) {
-
-    $size['figure'] = $figure;
-    $size['unit'] = 'Bytes';
-
-    // Unit conversion (Bytes, kB, MB or GB)
-    if ($size['figure'] > 1024) {
-        $size['figure'] = $size['figure'] / 1024;
-        $size['unit'] = 'kB';
-    }
-
-    if ($size['figure'] > 1024) {
-        $size['figure'] = $size['figure'] / 1024;
-        $size['unit'] = 'MB';
-    }
-
-    if ($size['figure'] > 1024) {
-        $size['figure'] = $size['figure'] / 1024;
-        $size['unit'] = 'GB';
+        $size = $size[0] * 1024; // Size in kB to bytes.
     }
 
     return $size;
 }
 
-function report_coursequotas_formatSize_text($figure) {
-    $size = report_coursequotas_formatSize($figure);
-    return number_format($size['figure'], 2, ',', '.') . ' ' . $size['unit'];
-}
-
-function report_coursequotas_printChart($disaggregated, $consumed = false, $total = false){
+function report_coursequotas_get_temp_usage() {
     global $CFG;
 
-    $consumed_calc = 0;
-    foreach($disaggregated as $type => $value){
-        $consumed_calc += $value / (1024 * 1024);
+    $tempdir = isset($CFG->tempdir) ? $CFG->tempdir : $CFG->dataroot.'/temp';
+
+    $size = report_coursequotas_get_directory_size($tempdir);
+    return report_coursequotas_format_size($size);
+}
+
+function report_coursequotas_get_trash_usage() {
+    global $CFG;
+
+    $trashdir = isset($CFG->trashdir) ? $CFG->trashdir : $CFG->dataroot.'/trashdir';
+
+    $size = report_coursequotas_get_directory_size($trashdir);
+    return report_coursequotas_format_size($size);
+}
+
+function report_coursequotas_get_repository_usage() {
+    global $CFG;
+    $size = report_coursequotas_get_directory_size($CFG->dataroot . '/repository/');
+    return report_coursequotas_format_size($size);
+}
+
+function report_coursequotas_get_charinfo_total($chartinfo) {
+    $total = 0;
+    foreach ($chartinfo as $value) {
+        $total += $value->bytes;
     }
+    $total = $total / (1024 * 1024);
+
+    return $total;
+}
+
+function report_coursequotas_print_chart($chartinfo, $consumed = false, $total = false) {
+    global $CFG;
+
+    $text = "";
+
+    $consumedcalc = report_coursequotas_get_charinfo_total($chartinfo);
 
     if ($consumed && $total) {
-        $free = $total - $consumed;
-        // Protect the graph against data errors
-        if ($free < 0)  $free = 0;
-
-        $consumed_percent = (int) ($consumed/$total *100);
-        $free_percent = (int) ($free/$total *100);
-
         if (is_xtecadmin()) {
-            $diff_calc = (int) ($consumed - $consumed_calc);
-            if ($diff_calc != 0) {
-                echo "<div class=\"well well-small\">Hi ha $diff_calc MB que s'escapen...</div>";
+            $diffcalc = (int) ($consumed - $consumedcalc);
+            if ($diffcalc != 0) {
+                $text .= "<div class=\"well well-small\">Hi ha $diffcalc MB que s'escapen...</div>";
             }
         }
+
+        if ($consumedcalc > $consumed) {
+            $consumed = $consumedcalc;
+        }
+
+        // Protect the graph against data errors.
+        $free = $total - $consumed > 0 ? $total - $consumed : 0;
     } else {
         $free = 0;
-        $free_percent = 0;
-
-        $total = $consumed = $consumed_calc;
-        $consumed_percent = 100;
+        $total = $consumed = $consumedcalc;
     }
 
-    $colors = array('course' =>'#FDB45C', 'backup' => '#46BFBD', 'user' => '#4C86B9', 'temp' => '#984298','trash' => '#A4822D', 'repo' => '#BB556F');
-    $highlights = array('course' =>'#FFC870', 'backup' => '#5AD3D1', 'user' => '#5B90BF', 'temp' => '#D19ED1','trash' => '#C79E37', 'repo' => '#DF6A88');
-    $text = '<script src="'.$CFG->wwwroot.'/report/coursequotas/chartjs/Chart.min.js"></script>';
+    $colors = array(
+        'course' => '#FDB45C',
+        'backup' => '#46BFBD',
+        'user' => '#4C86B9',
+        'temp' => '#984298',
+        'trash' => '#A4822D',
+        'repository' => '#BB556F'
+    );
+    $highlights = array(
+        'course' => '#FFC870',
+        'backup' => '#5AD3D1',
+        'user' => '#5B90BF',
+        'temp' => '#D19ED1',
+        'trash' => '#C79E37',
+        'repository' => '#DF6A88'
+    );
+
+    $onepercent = (int) $total / 100;
+    $consumedpercent = 0;
+    $chartvalues = array();
+    foreach ($chartinfo as $type => $value) {
+        $value = $value->bytes / (1024 * 1024);
+        if ($value > $onepercent) {
+            $chartvalue = new StdClass();
+            $chartvalue->label = get_string('disk_used_'.$type, 'report_coursequotas');
+            $chartvalue->value = $value;
+            $chartvalue->percent = round($value / $total * 100, 1);
+            $chartvalue->color = $colors[$type];
+            $chartvalue->highlight = $highlights[$type];
+            $chartvalues[] = $chartvalue;
+            $consumed -= $value;
+            $consumedpercent += $chartvalue->percent;
+        }
+    }
+
+    if ($consumed > 0) {
+        $chartvalue = new StdClass();
+        $chartvalue->label = get_string('disk_used_other', 'report_coursequotas');
+        $chartvalue->value = $consumed;
+        $chartvalue->percent = round($consumed / $total * 100, 1);
+        $chartvalue->color = '#F7464A';
+        $chartvalue->highlight = '#FF5A5E';
+        $chartvalues[] = $chartvalue;
+        $consumedpercent += $chartvalue->percent;
+    }
+
+    if ($consumedpercent < 100) {
+        $chartvalue = new StdClass();
+        $chartvalue->label = get_string('disk_free', 'report_coursequotas');
+        $chartvalue->value = $free;
+        $chartvalue->percent = round(100 - $consumedpercent, 1);
+        $chartvalue->color = '#2C9C69';
+        $chartvalue->highlight = '#4CCA91';
+        $chartvalues[] = $chartvalue;
+    }
+
+    $text .= '<script src="'.$CFG->wwwroot.'/report/coursequotas/chartjs/Chart.min.js"></script>';
     $text .= '<div id="canvas-holder" style="text-align:center;"><canvas id="chart-area" width="300" height="300"/></div>';
     $text .= '<script>
         window.onload = function(){
             var ctx = document.getElementById("chart-area").getContext("2d");
             var data = [';
-    foreach($disaggregated as $type => $value){
-        $value = $value / (1024*1024);
-        $percent = (int) ($value/$total *100);
-        if($percent > 0){
-            $text .= '{ value: '.$value.', label: "'.get_string('disk_used_'.$type, 'report_coursequotas').' ('.$percent.'%)", color: "'.$colors[$type].'", highlight: "'.$highlights[$type].'"},';
-            $consumed -= $value;
-            $consumed_percent -= $percent;
-        }
+
+    foreach ($chartvalues as $value) {
+        $text .= '{ value: '.$value->value.', label: "'.$value->label.' ('.$value->percent.'%)", color: "'.$value->color.'", highlight: "'.$value->highlight.'"},';
     }
-    $text .= '  {
-                    value: '.$consumed.',
-                    color:"#F7464A",
-                    highlight: "#FF5A5E",
-                    label: "'.get_string('disk_used_other', 'report_coursequotas').' ('.$consumed_percent.'%)"
-                },
-                {
-                    value: '.$free.',
-                    color: "#2C9C69",
-                    highlight: "#4CCA91",
-                    label: "'.get_string('disk_free', 'report_coursequotas').' ('.$free_percent.'%)"
-                }
-            ];
+
+    $text .= '];
             var options = {
                 animateRotate : true,
                 animateScale : true,
@@ -531,7 +588,12 @@ function report_coursequotas_printChart($disaggregated, $consumed = false, $tota
     return $text;
 }
 
-
+/**
+ * Get the sum of all filesize on a SQL from filesizes avoiding duplicates.
+ * @param  string $where  where SQL on file table.
+ * @param  string $tables Additional tables to check.
+ * @return int            Sum of Bytes.
+ */
 function get_coursequotas_filesize($where = "", $tables = "") {
     global $DB;
 
@@ -546,7 +608,25 @@ function get_coursequotas_filesize($where = "", $tables = "") {
     return $size ? $size : 0;
 }
 
-function get_filtered_files($filename = "" , $userid = null, $context = null, $addchildren = false, $filearea = null,
+/**
+ * Returns a list of files filtered.
+ * @param  string  $filename        Filename to filter (LIKE).
+ * @param  int     $userid          User owner to filter.
+ * @param  int     $contextid       Context to filter
+ * @param  boolean $addchildren     Add children of the context.
+ * @param  string  $filearea        Filearea to filter
+ * @param  string  $component       Component to filter.
+ * @param  integer $size            Size (less or more to filter).
+ * @param  integer $sizeselected    0 if more than, 1 if less than (size).
+ * @param  boolean $showonlybackups Show only backup files.
+ * @param  boolean $hidesamehash    Hide same hash files (only show one file per hash). It will cause warnings.
+ * @param  string  $sort            Sort by field.
+ * @param  string  $direction       Direction to sort by.
+ * @param  integer $from            From which record return
+ * @param  integer $limitnum        Limit number of records.
+ * @return Object                   Object containing: files, count of files, filesize (disk usage), total (total sum of files).
+ */
+function get_filtered_files($filename = "" , $userid = null, $contextid = null, $addchildren = false, $filearea = null,
     $component = null, $size = 0, $sizeselected = 0, $showonlybackups = false, $hidesamehash = false, $sort = 'filename',
     $direction = 'ASC', $from = 0, $limitnum = 100) {
     global $DB;
@@ -562,13 +642,13 @@ function get_filtered_files($filename = "" , $userid = null, $context = null, $a
         $filter[] = 'f.userid = '.$userid;
     }
 
-    if ($context) {
+    if ($contextid) {
         if ($addchildren) {
-            $ctxt = context::instance_by_id($context);
-            $filter[] = "((f.contextid = c.id AND c.path LIKE '$ctxt->path/%') OR f.contextid = $context )";
+            $ctxt = context::instance_by_id($contextid);
+            $filter[] = "((f.contextid = c.id AND c.path LIKE '$ctxt->path/%') OR f.contextid = $contextid )";
             $tables .= ', {context} c';
         } else {
-            $filter[] = 'f.contextid = '.$context;
+            $filter[] = 'f.contextid = '.$contextid;
         }
     }
 
@@ -581,7 +661,7 @@ function get_filtered_files($filename = "" , $userid = null, $context = null, $a
     }
 
     if ($showonlybackups) {
-        $filter[] = getBackupWhereSQL();
+        $filter[] = get_backup_where_sql();
     }
 
     if ($size > 0) {
@@ -630,11 +710,18 @@ function get_filtered_files($filename = "" , $userid = null, $context = null, $a
         $record->total  = $size ? $size : 0;
     }
 
-
-
     return $record;
 }
 
+/**
+ * Get files by contenthash
+ * @param  string  $hash      Hash of the content to filter.
+ * @param  string  $sort      Sort by field.
+ * @param  string  $direction Direction to sort by.
+ * @param  integer $from      From which record return
+ * @param  integer $limitnum  Limit number of records.
+ * @return Object             Object containing: files, count of files, filesize (disk usage) = total (total sum of files).
+ */
 function get_contenthash_files($hash, $sort = 'filename', $direction = 'ASC', $from = 0, $limitnum = 100) {
     global $DB;
 
@@ -663,6 +750,11 @@ function get_contenthash_files($hash, $sort = 'filename', $direction = 'ASC', $f
     return $record;
 }
 
+/**
+ * Get all options to filter for.
+ * @param  int $searchedcontext Contextid where we're searching.
+ * @return object               Filters.
+ */
 function get_all_filter_options($searchedcontext) {
     global $DB;
 
@@ -681,7 +773,7 @@ function get_all_filter_options($searchedcontext) {
         }
     }
 
-    if ($searchedcontext  && !isset($filters->contexts[$searchedcontext])) {
+    if ($searchedcontext && !isset($filters->contexts[$searchedcontext])) {
         $filecontext = context::instance_by_id($searchedcontext);
         $filters->contexts[$searchedcontext] = $filecontext->get_context_name();
     }

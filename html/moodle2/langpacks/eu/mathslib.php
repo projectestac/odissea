@@ -29,4 +29,4 @@ $string['anunexpectederroroccured'] = 'espero ez zen errorea gertatu da';
 $string['illegalcharactergeneral'] = 'Legez kanpoko karakterea \'{$a}\'';
 $string['illegalcharacterunderscore'] = 'Legez kanpoko karakterea \'_\'';
 $string['internalerror'] = 'barne errorea';
-$string['undefinedvariable'] = 'definitu \'{$a}\' bariablea';
+$string['undefinedvariable'] = 'definitu gabeko \'{$a}\' aldagaia';

@@ -632,6 +632,7 @@ $string['rawpct'] = '% bruto';
 $string['real'] = 'Real';
 $string['realletter'] = 'Real (letra)';
 $string['realpercentage'] = 'Real (porcentaje)';
+$string['recalculatinggrades'] = 'Recalculando calificaciones';
 $string['recovergradesdefault'] = 'Recuperar las calificaciones por defecto';
 $string['recovergradesdefault_help'] = 'Por defecto recuperar las calificaciones antiguas cuando se matricula de nuevo a un usuario en un curso.';
 $string['refreshpreview'] = 'Actualizar previsualización';

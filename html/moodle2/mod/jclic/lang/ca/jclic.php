@@ -86,11 +86,11 @@ $string['filetype'] = 'Tipus';
 $string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Tenim 2 opcions:
 
 * Fitxer JClic pujat - Permet escollir un fitxer ".jclic.zip" vàlid mitjançant el selector d\'arxius.
-* URL extern - Permet especificar el URL d\'un paquet JClic. Nota: El URL ha de començar amb http(s) o www i contenir un fitxer "jclic.zip" vàlid.';
+* URL extern - Permet especificar el URL d\'un paquet JClic. Nota: El URL ha de començar amb http(s) o www i contenir un fitxer "jclic.zip" o ".jclic" vàlid.';
 $string['filetypeexternal'] = 'URL extern';
 $string['filetypelocal'] = 'Fitxer JClic pujat';
 $string['invalidjclicfile'] = 'S\'ha especificat un fitxer JClic no vàlid. El fitxer ha de tenir l\'extensió ".jclic.zip".';
-$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. El URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer ".jclic.zip" vàlid.';
+$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. El URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer ".jclic.zip" o ".jclic" vàlid.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'URL base dels fitxers JAR';
 $string['jclicjarbase_help'] = 'Adreça web on localitzar tots els fitxers jar de JClic.';
@@ -133,3 +133,7 @@ $string['event_instances_list_viewed'] = 'S\'ha visualitzat la llista d\'instàn
 $string['results'] = 'Resultats';
 $string['report_details'] = 'Resultats detallats amb totes les sessions';
 $string['report_normal'] = 'Resum de resultats';
+
+/* Revision Moodle 3.1 */
+$string['jclicjs'] = 'URL del fitxer jclic.js';
+$string['jclicjs_help'] = 'URL on es cercarà el fitxer jclic.js necessari perquè funcioni el player no-Java.';

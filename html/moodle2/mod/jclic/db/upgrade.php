@@ -97,7 +97,6 @@ function xmldb_jclic_upgrade($oldversion) {
 
         require_once("$CFG->dirroot/mod/jclic/db/upgradelib.php");
         // Add upgrading code from 1.9 (+ new file storage system)
-        // @TODO: test it!!!!
         jclic_migrate_files();
 
         // Add fields grade, timeavailable and timedue on table jclic
@@ -175,6 +174,16 @@ function xmldb_jclic_upgrade($oldversion) {
         unset_config('jclic_pluginjs');
 
         upgrade_mod_savepoint(true, 2015050600, 'jclic');
+    }
+
+    if ($oldversion < 2016061300) {
+
+        // Add field type on table jclic
+        $table = new xmldb_table('jclic');
+        $field = new xmldb_field('type', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '-1', 'timedue');
+        $dbman->add_field($table, $field);
+
+        upgrade_mod_savepoint(true, 2016061300, 'jclic');
     }
 
     // Final return of upgrade result (true, all went good) to Moodle.

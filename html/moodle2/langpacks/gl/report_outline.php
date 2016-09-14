@@ -29,6 +29,7 @@ $string['eventactivityreportviewed'] = 'Informes de actividade vistos';
 $string['eventoutlinereportviewed'] = 'Informes de esquema vistos';
 $string['neverseen'] = 'Nunca visto';
 $string['nologreaderenabled'] = 'Non hai un lector de rexistros activado';
+$string['numviews'] = '{$a->numviews} por {$a->distinctusers} usuarios';
 $string['outline:view'] = 'Ver o informe de actividade';
 $string['page-report-outline-index'] = 'Informe do esquema do curso';
 $string['page-report-outline-user'] = 'Informe esquemático do curso do usuario';

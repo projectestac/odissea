@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadas'] = 'Descargar datos de tabla como {$a->formatsmenu} {$a->downloadbutton}';
+$string['downloadas'] = 'Descargar datos de tabla como';
 $string['downloadcsv'] = 'Archivo de texto con valores separados por comas';
 $string['downloadexcel'] = 'Hoja de cálculo en formato: Microsoft Excel';
 $string['downloadods'] = 'Hoja de cálculo en formato OpenDocument (ODS)';

@@ -57,4 +57,5 @@ $string['pluginname'] = 'Igo ikastaroa';
 $string['preview'] = 'Aurreikusi';
 $string['result'] = 'Emaitza';
 $string['rowpreviewnum'] = 'Aurreikusi errenkadak';
+$string['updatemode'] = 'Eguneratu modua';
 $string['uploadcourses'] = 'Eguneratutako ikastaroak';

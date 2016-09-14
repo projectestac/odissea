@@ -40,7 +40,7 @@ class backup_jclic_activity_structure_step extends backup_activity_structure_ste
         $jclic = new backup_nested_element('jclic', array('id'), array(
             'name', 'intro', 'introformat', 'url', 'skin', 'maxattempts',
             'width', 'height', 'avaluation', 'maxgrade', 'grade', 'lang',
-            'exiturl', 'timeavailable', 'timedue'));
+            'exiturl', 'timeavailable', 'timedue', 'type'));
 
         $sessions = new backup_nested_element('sessions');
 

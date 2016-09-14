@@ -40,6 +40,11 @@ define('JCLIC_DEFAULT_LAP', 5);
 define('JCLIC_FILE_TYPE_LOCAL', 'local');
 define('JCLIC_FILE_TYPE_EXTERNAL', 'external');
 
+// JClic activity type
+define('JCLIC_ACTIVITY_TYPE_JAVA', 0);
+define('JCLIC_ACTIVITY_TYPE_HTML5', 1);
+
+
 /** Include eventslib.php */
 require_once($CFG->libdir.'/eventslib.php');
 /** Include formslib.php */
@@ -466,7 +471,7 @@ function jclic_update_grades(stdClass $jclic, $userid = 0, $nullifnone=true) {
  */
 function jclic_get_file_areas($course, $cm, $context) {
     return array(
-        'content'      => get_string('urledit',  'jclic')
+        'package'      => get_string('urledit',  'jclic')
     );
 }
 
@@ -493,14 +498,14 @@ function jclic_get_file_info($browser, $areas, $course, $cm, $context, $filearea
 
     $fs = get_file_storage();
 
-    if ($filearea === 'content') {
+    if ($filearea === 'package') {
         $filepath = is_null($filepath) ? '/' : $filepath;
         $filename = is_null($filename) ? '.' : $filename;
 
         $urlbase = $CFG->wwwroot.'/pluginfile.php';
-        if (!$storedfile = $fs->get_file($context->id, 'mod_jclic', 'content', 0, $filepath, $filename)) {
+        if (!$storedfile = $fs->get_file($context->id, 'mod_jclic', 'package', 0, $filepath, $filename)) {
             if ($filepath === '/' and $filename === '.') {
-                $storedfile = new virtual_root_file($context->id, 'mod_jclic', 'content', 0);
+                $storedfile = new virtual_root_file($context->id, 'mod_jclic', 'package', 0);
             } else {
                 // not found
                 return null;
@@ -538,10 +543,10 @@ function jclic_pluginfile($course, $cm, $context, $filearea, array $args, $force
         return false;
     }
 
-    if ($filearea !== 'content') {
+    /*if ($filearea !== 'package') {
         // intro is handled automatically in pluginfile.php
         return false;
-    }
+    }*/
 
     array_shift($args); // ignore revision - designed to prevent caching problems only
 
@@ -552,15 +557,6 @@ function jclic_pluginfile($course, $cm, $context, $filearea, array $args, $force
         if ($file = $fs->get_file_by_hash(sha1($fullpath))) {
             break;
         }
-/*
-            $jclic = $DB->get_record('jclic', array('id'=>$cm->instance), 'id, legacyfiles', MUST_EXIST);
-            if (!$file = jcliclib_try_file_migration('/'.$relativepath, $cm->id, $cm->course, 'mod_jclic', 'content', 0)) {
-                return false;
-            }
-            // file migrate - update flag
-            $resource->legacyfileslast = time();
-            $DB->update_record('resource', $resource);
- */
     } while (false);
 
     // finally send the file

@@ -13,11 +13,15 @@ function filemanager_openFileInfo(fileid, filename, owner, context, filearea, co
     $('#fileModal_timemodified').text(timemodified);
     var href = $('#fileModal_similar').attr('original-href');
     $('#fileModal_similar').attr('href', href + contenthash);
-    console.log(context, decodeURIComponent(context));
 }
 
 function filemanager_deleteFile() {
     var filename = $('#fileModal_filename').text();
+    $('#deleteModal_filename').text(filename);
+}
+
+function filemanager_deleteFileDirect(fileid, filename) {
+    $('#fileModal_fileid').text(fileid);
     $('#deleteModal_filename').text(filename);
 }
 

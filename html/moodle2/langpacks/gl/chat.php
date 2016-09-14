@@ -125,6 +125,7 @@ $string['repeattimes'] = 'Repetir sesións';
 $string['repeatweekly'] = 'Á mesma hora cada semana';
 $string['saidto'] = 'dito a';
 $string['savemessages'] = 'Gardar as sesións pasadas';
+$string['search:activity'] = 'Conversa - información de actividade';
 $string['seesession'] = 'Ver esta sesión';
 $string['send'] = 'Enviar';
 $string['sending'] = 'Enviando';

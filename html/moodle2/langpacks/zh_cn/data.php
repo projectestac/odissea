@@ -212,6 +212,7 @@ $string['latlongotherfields'] = '其他字段';
 $string['list'] = '显示列表';
 $string['listtemplate'] = '列表模板';
 $string['longitude'] = '经度';
+$string['manageapproved'] = '允许修改已批准的条目';
 $string['mapexistingfield'] = '映射到{$a}';
 $string['mapnewfield'] = '创建一个新字段';
 $string['mappingwarning'] = '所有不能映射到新字段的旧字段将会丢失，而且此字段内的全部数据也会被删除。';

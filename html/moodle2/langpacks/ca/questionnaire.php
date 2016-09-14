@@ -343,6 +343,7 @@ $string['return'] = 'Torna';
 $string['save'] = 'Desa';
 $string['saveasnew'] = 'Desa com a pregunta nova';
 $string['savedbutnotsubmitted'] = 'Aquesta enquesta s\'ha desat, però encara no s\'ha tramès.';
+$string['savedprogress'] = 'Les vostres respostes s\'han desat. Podeu tornar en qualsevol moment per completar aquesta enquesta.';
 $string['saveeditedquestion'] = 'Desa la pregunta {$a}';
 $string['savesettings'] = 'Desa els paràmetres';
 $string['section'] = 'Descripció';

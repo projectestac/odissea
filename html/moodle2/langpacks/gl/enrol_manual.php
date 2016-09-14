@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alterstatus'] = 'Mudar o estado';
-$string['altertimeend'] = 'Mudar o tempo de remate';
-$string['altertimestart'] = 'Mudar o tempo de principio';
+$string['alterstatus'] = 'Cambiar o estado';
+$string['altertimeend'] = 'Cambiar o tempo de remate';
+$string['altertimestart'] = 'Cambiar o tempo de principio';
 $string['assignrole'] = 'Asignar rol';
 $string['browsecohorts'] = 'Examinar círculos';
 $string['browseusers'] = 'Examinar usuarios';
@@ -35,6 +35,7 @@ $string['confirmbulkdeleteenrolment'] = 'Confirma que quere eliminar estas matri
 $string['defaultperiod'] = 'Duración predeterminada da matriculación';
 $string['defaultperiod_desc'] = 'Tempo predeterminado durante o que a matriculación é válida. De estabelecerse como cero, a duración da matriculación será ilimitada de modo predeterminado.';
 $string['defaultperiod_help'] = 'Tempo predeterminado durante o que a matriculación é válida, que comeza no momento en que o usuario se matricula. De estar desactivado, a duración da matriculación será ilimitado de modo predeterminado.';
+$string['defaultstart'] = 'Inicio predeterminado da matriculación';
 $string['deleteselectedusers'] = 'Eliminar as matriculacións dos usuarios seleccionados';
 $string['editselectedusers'] = 'Editar as matriculacións dos usuarios seleccionados';
 $string['enrolledincourserole'] = 'Matriculado en «{$a->course}» como «{$a->role}»';
@@ -60,6 +61,7 @@ $string['manualpluginnotinstalled'] = 'O engadido «Manual» aínda non foi inst
 $string['manual:unenrol'] = 'Desmatricular usuarios do curso';
 $string['manual:unenrolself'] = 'Desmatricularse do curso';
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da matriculación';
+$string['now'] = 'Agora';
 $string['pluginname'] = 'Matriculacións manuais';
 $string['pluginname_desc'] = 'O engadido de matriculación manual permítelles aos usuarios seren manualmente matriculados por medio dunha ligazón na configuración da administración do curso, por un usuario cos permisos adecuados, como pode ser un profesor. O engadido xa debería estar activado normalmente, xa que outros engadidos de matriculación, como o de automatriculación o requiren.';
 $string['status'] = 'Activar as matriculacións manuais';

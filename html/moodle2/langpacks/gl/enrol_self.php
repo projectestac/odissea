@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'A matriculación esta desactivada ou inactiva';
+$string['canntenrolearly'] = 'Aínda non pode matricularse; a matriculación comeza o {$a}.';
+$string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o  {$a}.';
 $string['cohortnonmemberinfo'] = 'Soamente os membros do círculo «{$a}» poden automatricularse.';
 $string['cohortonly'] = 'Soamente os membros do círculo';
 $string['cohortonly_help'] = 'A automatriculación pódese restrinxir aos membros dun único círculo especifico. Vexa que o cambio desta configuración non ten efecto sobre as matriculacións existentes.';

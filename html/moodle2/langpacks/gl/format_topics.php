@@ -27,7 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Este tema';
 $string['deletesection'] = 'Eliminar o tema';
+$string['editsection'] = 'Editar o tema';
+$string['editsectionname'] = 'Editar o nome do tema';
 $string['hidefromothers'] = 'Agochar o tema';
+$string['newsectionname'] = 'Novo nome para o tema {$a}';
 $string['page-course-view-topics'] = 'Calquera páxina principal de curso en formato temas';
 $string['page-course-view-topics-x'] = 'Calquera páxina de curso en formato temas';
 $string['pluginname'] = 'Formato dos temas';

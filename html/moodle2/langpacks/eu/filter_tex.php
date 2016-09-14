@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = 'If <i>latex</i>, <i>dvips</i> eta <i>convert</i> gaituta badaude, irudiak zehaztutako formatua erabilita sortuko dira. Bestela, mimeTeX erabiliko da eta GIF irudiak sortuko dira.';
+$string['configconvertformat'] = '<i>convert</i>-ez gain <i>latex</i> eta <i>dvips</i> gaituta badaude, aukeratu irudiak zehaztutako formatua (<i>convert</i>-ek GIF eta PNG-ak sortzen ditu; <i>dvisvgm</i>-ek SVG-ak sortzen ditu). Bestela, mimeTeX erabiliko da GIF irudiak sortzeko.';
 $string['convertformat'] = 'Bihurtu irudi-formatua';
 $string['filtername'] = 'TeX idazketa';
 $string['latexpreamble'] = 'LaTeX aitzinsolasa';

@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answer'] = 'Respuesta';
+$string['choices'] = 'Opciones';
+$string['shuffle'] = 'Barajar';

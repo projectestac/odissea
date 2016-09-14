@@ -211,36 +211,25 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 		global $CFG;
 
 		$menu = new custom_menu('', current_language());
-    	// TODO: eliminate this duplicated logic, it belongs in core, not
-        // here. See MDL-39565.
-        $langs = get_string_manager()->get_list_of_translations();
-        if (count($langs) < 2
-            or empty($CFG->langmenu)
-            or ($this->page->course != SITEID and !empty($this->page->course->lang))) {
-        }
-
         $strlang = get_string('language');
-        $currentlang = current_language();
-        if (isset($langs[$currentlang])) {
-            $currentlang = $langs[$currentlang];
-        } else {
-            $currentlang = $strlang;
-        }
+        $currlang = current_language();
+        $langs = get_string_manager()->get_list_of_translations();
 
         if ( sizeof($langs) > 5){
-            // If there are more than 5 langs, show a list
-            foreach ($langs as $langtype => $langname) {
-                $menu->add($langname, new moodle_url($this->page->url, array('lang' => $langtype)), $langname);
+            if (count($langs) < 2) {
+                return '';
             }
-    		$content = '<div class="btn-group dropup langmenu">';
-    		$content .= '<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">'.$currentlang;
-    		$content .= '<span class="caret"></span>';
-    		$content .= '</a>';
-    		$content .= '<ul class="dropdown-menu pull-right">';
-            foreach ($menu->get_children() as $item) {
-                $content .= $this->render_custom_menu_item($item, 1);
-            }
+
+            $s = new single_select($this->page->url, 'lang', $langs, $currlang, null);
+            $s->label = get_accesshide($strlang);
+            $s->class = 'langmenu';
+            $content = $this->render($s);
         } else {
+            if (isset($langs[$currlang])) {
+                $currentlang = $langs[$currlang];
+            } else {
+                $currentlang = $strlang;
+            }
             $content = '<ul>';
             foreach ($langs as $langtype => $langname) {
                 $url = new moodle_url($this->page->url, array('lang' => $langtype));
@@ -250,7 +239,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
         }
 
 
-        return $content.'</ul></div>';
+        return $content;
     }
 
     function social_icons() {

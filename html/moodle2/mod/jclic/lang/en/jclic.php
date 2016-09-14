@@ -83,11 +83,11 @@ $string['filetype'] = 'Type';
 $string['filetype_help'] = 'This setting determines how the JClic activity is included in the course. There are up to 2 options:
 
 * Uploaded JClic - Enables a valid ".jclic.zip" package to be chosen by the file picker.
-* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" file.';
+* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" or ".jclic" file.';
 $string['filetypeexternal'] = 'External URL';
 $string['filetypelocal'] = 'Uploaded JClic';
 $string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic.zip" extension.';
-$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" file.';
+$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" or ".jclic" file.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'Jar base';
 $string['jclicjarbase_help'] = 'Web address where to locate all the JClic jar files';
@@ -130,3 +130,7 @@ $string['event_instances_list_viewed'] = 'Instances list viewed';
 $string['results'] = 'Results';
 $string['report_details'] = 'Detailed results with all the sessions';
 $string['report_normal'] = 'Summary results';
+
+/* Revision Moodle 3.1 */
+$string['jclicjs'] = 'jclic.js file URL';
+$string['jclicjs_help'] = 'URL where to find jclic.js needed for the non-Java player..';

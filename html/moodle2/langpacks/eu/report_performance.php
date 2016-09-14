@@ -31,5 +31,6 @@ $string['disabled'] = 'Desgaituta';
 $string['edit'] = 'Editatu';
 $string['enabled'] = 'Gaituta';
 $string['morehelp'] = 'laguntza gehiago';
+$string['performance:view'] = 'Ikusi errendimenduaren txostena';
 $string['pluginname'] = 'Errendimenduaren ikuspegi orokorra';
 $string['value'] = 'Balorea';

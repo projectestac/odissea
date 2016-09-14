@@ -84,6 +84,7 @@ $string['negcovar_help'] = 'La note donnée à cette question pour cet ensemble 
 L\'équation pour une pondération efficace ne peut pas être calculée dans ce cas. Les calculs pour la pondération de question efficace des autres questions de ce test ne sont valables que si la note maximale donnée aux questions avec une covariance négative (surlignée) est de 0.
 
 Si vous modifiez un test et donnez à ces questions à covariance négative une note maximale de zéro, alors leur pondération efficace sera nulle et les pondérations efficaces des autres questions seront calculées adéquatement.';
+$string['nogradedattempts'] = 'Aucune tentative n\'a été effectuée pour ce test ou toutes les tentatives ont des questions nécessitant une évaluation manuelle.';
 $string['nostudentsingroup'] = 'Il n\'y a pas encore d\'étudiant dans ce groupe';
 $string['optiongrade'] = 'Crédit partiel';
 $string['partofquestion'] = 'Partie de question';

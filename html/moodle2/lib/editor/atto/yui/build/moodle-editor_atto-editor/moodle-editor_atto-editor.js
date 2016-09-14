@@ -919,6 +919,11 @@ EditorAutosave.prototype = {
         this.showMessage(M.util.get_string('textrecovered', 'editor_atto'),
                 NOTIFY_INFO, RECOVER_MESSAGE_TIMEOUT);
 
+        // Fire an event that the editor content has changed.
+        require(['core/event'], function(event) {
+            event.notifyEditorContentRestored();
+        });
+
         return this;
     },
 
@@ -1512,14 +1517,6 @@ EditorClean.prototype = {
 
         // Run some more rules that care about quotes and whitespace.
         rules = [
-            // Get all style attributes so we can work on them.
-            {regex: /(<[^>]*?style\s*?=\s*?")([^>"]*)(")/gi, replace: function(match, group1, group2, group3) {
-                    // Remove MSO-blah, MSO:blah style attributes.
-                    group2 = group2.replace(/(?:^|;)[\s]*MSO[-:](?:&[\w]*;|[^;"])*/gi,"");
-                    // Remove backgroud color style.
-                    group2 = group2.replace(/background-color:.*?;/gi,"");
-                    return group1 + group2 + group3;
-                }},
             // Get all class attributes so we can work on them.
             {regex: /(<[^>]*?class\s*?=\s*?")([^>"]*)(")/gi, replace: function(match, group1, group2, group3) {
                     // Remove MSO classes.
@@ -1531,6 +1528,9 @@ EditorClean.prototype = {
             // Remove OLE_LINK# anchors that may litter the code.
             {regex: /<a [^>]*?name\s*?=\s*?"OLE_LINK\d*?"[^>]*?>\s*?<\/a>/gi, replace: ""}
         ];
+
+        // Clean all style attributes from the text.
+        content = this._cleanStyles(content);
 
         // Apply the rules.
         content = this._filterContentWithRules(content, rules);
@@ -1544,6 +1544,33 @@ EditorClean.prototype = {
         return content;
     },
 
+    /**
+     * Clean all inline styles from pasted text.
+     *
+     * This code intentionally doesn't use YUI Nodes. YUI was quite a bit slower at this, so using raw DOM objects instead.
+     *
+     * @method _cleanStyles
+     * @private
+     * @param {String} content The content to clean
+     * @return {String} The cleaned HTML
+     */
+    _cleanStyles: function(content) {
+        var holder = document.createElement('div');
+        holder.innerHTML = content;
+        var elementsWithStyle = holder.querySelectorAll('[style]');
+        var i = 0;
+
+        for (i = 0; i < elementsWithStyle.length; i++) {
+            elementsWithStyle[i].removeAttribute('style');
+        }
+
+        var elementsWithClass = holder.querySelectorAll('[class]');
+        for (i = 0; i < elementsWithClass.length; i++) {
+            elementsWithClass[i].removeAttribute('class');
+        }
+
+        return holder.innerHTML;
+    },
     /**
      * Clean empty or un-unused spans from passed HTML.
      *
@@ -2787,6 +2814,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorFilepicker]);
         "event-simulate",
         "event-custom",
         "node-event-html5",
+        "node-event-simulate",
         "yui-throttle",
         "moodle-core-notification-dialogue",
         "moodle-core-notification-confirm",

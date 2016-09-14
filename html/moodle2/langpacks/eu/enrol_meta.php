@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Gehitu taldera';
+$string['creategroup'] = 'Sortu beste talde bat';
+$string['defaultgroupnametext'] = '{$a->name} ikastaroa {$a->increment}';
 $string['linkedcourse'] = 'Ikastaroaren esteka';
 $string['meta:config'] = 'Meta-matrikulaziorako instantziak konfiguratu';
 $string['meta:selectaslinked'] = 'Aukeratu ikastaroa meta-estekatu gisa';

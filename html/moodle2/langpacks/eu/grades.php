@@ -51,15 +51,15 @@ Ezarpen honek adierazten du kalifikazio hutsak agregazioan sartzen ez diren ala 
 $string['aggregateoutcomes'] = 'Ikas-emaitzak agregazioan sartu';
 $string['aggregateoutcomes_help'] = 'Gaituta, ikas-emaitzak agregazioan sartzen dira. Honen ondorioz, kategoriako guztirakoa espero ez zena izan daiteke.';
 $string['aggregatesonly'] = 'Aldatu agregatutakoetara bakarrik';
-$string['aggregatesum'] = 'Kalifikazioen batura';
+$string['aggregatesum'] = 'Naturala';
 $string['aggregateweightedmean'] = 'Kalifikazioen batez besteko ponderatua';
 $string['aggregateweightedmean2'] = 'Kalifikazioen batez besteko ponderatu sinplea';
 $string['aggregation'] = 'Agregazioa';
 $string['aggregationcoef'] = 'Agregazio-koefizientea';
 $string['aggregationcoefextra'] = 'Aparteko kreditua';
-$string['aggregationcoefextra_help'] = 'Agregazioa kalifikazioen batura edo batez besteko ponderatu sinplea bada eta aparteko kredituen laukitxoa markatuta badago, kalifikazio-elementuaren gehienezko kalifikazioa ez zaio batuko kategoriaren  gehienezko kalifikazioari, eta beraz ezin izango da lortu gehienezko kalifikazioa (edo gehienezko kalifikaziotik gora, guneko kudeatzaileak gaitu badu) kategorian ez badu gehienezko kalifikazioa elementu guztietan.
+$string['aggregationcoefextra_help'] = 'Agregazioa \'Naturala\' edo \'Batez besteko ponderatu sinplea\' bada eta aparteko kredituen laukitxoa markatuta badago, kalifikazio-elementuaren gehienezko kalifikazioa ez zaio batuko kategoriaren gehienezko kalifikazioari. Ondorioz, ezin izango da gehienezko kalifikazioa lortu kategorian ez badu elementu guztietan gehienezko kalifikazioa lortzen.
 
-Agregazioa kalifikazioen batez bestekoa (aparteko kredituekin) bada eta aparteko kredituak zerotik gorako balorea ezarrita badu, aparteko kreditu horrekin biderkatuko da kalifikazioa, media kalkulatu ondorengo guztirakoari gehitu aurretik.';
+Agregazioa \'Kalifikazioen batez bestekoa (aparteko kredituekin)\' bada eta aparteko kredituak zerotik gorako balorea ezarrita badu, aparteko kreditu horrekin biderkatuko da kalifikazioa, media kalkulatu ondorengo guztirakoari gehitu aurretik.';
 $string['aggregationcoefextra_link'] = 'kalifikazioa/agregazioa';
 $string['aggregationcoefextrasum'] = 'Aparteko kreditua';
 $string['aggregationcoefextrasumabbr'] = '+';
@@ -80,12 +80,12 @@ $string['aggregationcoefweight_help'] = 'Elementuaren pisua kategoriaren agregaz
 $string['aggregationcoefweight_link'] = 'kalifikazioa/agregazioa';
 $string['aggregation_help'] = 'Agregazioak zehazten du kategoria bateko kalifikazioak nola lotzen diren, adibidez
 
-* Kalifikazioen media - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
-* Kalifikazioen mediana - Tarteko kalifikazioa kalifikazioak tamainaren arabera sailkatzen direnean
+* Kalifikazioen batez bestekoa - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
+* Kalifikazioen mediana - Erdiko kalifikazioa kalifikazioak tamainaren arabera sailkatzen direnean
 * Kalifikazio baxuena
 * Kalifikazio altuena
 * Kalifikazioen moda - Sarrien agertzen den kalifikazioa
-* Kalifikazioen batuketa - Kalifikazio balore guztien batuketa, eskala bidezko kalifikazioak alde batera utzita';
+* Naturala - Kalifikazio balore guztien batuketa pisuaren arabera eskalatuta';
 $string['aggregationhintdropped'] = '(Kokatua)';
 $string['aggregationhintexcluded'] = '(Baztertua)';
 $string['aggregationhintextra'] = '(Aparteko kreditua)';
@@ -191,7 +191,7 @@ $string['editverbose'] = 'Editatu: {$a->category} {$a->itemmodule} {$a->itemname
 $string['enableajax'] = 'Gaitu AJAX';
 $string['enableajax_help'] = 'Kalifikatzailearen txostenari AJAX funtzionalitate geruza bat gehitzen dio, ohiko eragiketak arinduz. Erabiltzailearen nabigatzaileak Javascript-a aktibatuta izan behar du.';
 $string['enableoutcomes'] = 'Ikas-emaitzak gaitu';
-$string['enableoutcomes_help'] = 'Helburuetarako (Gaitasunak, Estandarrak, Irizpideak...) osagarria. Helburuekin lotutako eskala bat edo gehiago erabilita kalifikatuko dugula esan nahi du. Helburuak aktibatuta gune osoan kalifika daiteke era berezi honetan.';
+$string['enableoutcomes_help'] = 'Gaituz gero, helburuekin lotutako elementuak eskala bat edo gehiago erabilita kalifikatu ahal izango dira.';
 $string['encoding'] = 'Kodifikazioa';
 $string['errorcalculationbroken'] = 'Ziur aski erreferentzia zirkularra edo kalkulu-formula okerra';
 $string['errorcalculationnoequal'] = 'Formulak berdin sinboloarekin hasi behar du (=1+2)';
@@ -314,7 +314,7 @@ $string['gradepass'] = 'Gainditzeko kalifikazioa';
 $string['gradepassgreaterthangrade'] = 'Gainditzeko kalifikazioa ezin da izan gehieneko kalifikazio posiblea baino handiagoa {$a}';
 $string['gradepass_help'] = 'Ezarpen honek zehazten du gainditzeko gutxienezko kalifikazioa. balorea jarduera eta ikastaro-osaketan erabiltzen da, eta baita kalifikazio-liburuan, zeinetan gainditzeko kalifikazioak berdez markatzen diren eta gainditzen ez dutenak gorriz.';
 $string['gradepointdefault'] = 'Berezko kalifikazioa';
-$string['gradepointdefault_help'] = 'Ezarpen honek  jarduera baterako gehieneko puntuazio eskuragarrirako berezko balorea zehazten du.';
+$string['gradepointdefault_help'] = 'Ezarpen honek kalifikazio elementu baten gehieneko puntuazio eskuragarrirako berezko balorea zehazten du.';
 $string['gradepointdefault_validateerror'] = 'Balore honek 1 eta gehieneko puntuazioaren arteko zenbaki osoa izan behar du.';
 $string['gradepointmax'] = 'Kalifikazioaren gehieneko puntuazioa';
 $string['gradepointmax_help'] = 'Ezarpen honek  jarduera baterako gehieneko puntuazio eskuragarria zehazten du.';
@@ -439,7 +439,7 @@ $string['minimum_show'] = 'Erakutsi gutxieneko kalifikazioa';
 $string['missingscale'] = 'Eskala aukeratu beha da';
 $string['mode'] = 'Modua';
 $string['modgrade'] = 'Kalifikazioa';
-$string['modgrademaxgrade'] = 'Gehieneko puntuazioa';
+$string['modgrademaxgrade'] = 'Gehieneko kalifikazioa';
 $string['modgradetype'] = 'Mota';
 $string['modgradetypenone'] = 'Bat ere ez';
 $string['modgradetypepoint'] = 'Puntuazioa';
@@ -594,7 +594,7 @@ $string['showaverage'] = 'Erakutsi batez bestekoa';
 $string['showaverages'] = 'Batez bestekoak erakutsi';
 $string['showaverages_help'] = 'Gaituta, kalifikatzailearen txostenean kategoria eta elementu bakoitzerako  batez bestekoa erakusten dituen beste lerro bat erakusten du.';
 $string['showcalculations'] = 'Kalkuluak erakutsi';
-$string['showcalculations_help'] = 'Kalifikazio-elementu edo kategoria bakoitzaren ondoan ikonoak, kalkulatutako elementuen gainean tresnak eta zutabe bat kalkulatua delako adierazlea erakutsi ala ez.';
+$string['showcalculations_help'] = 'Gaituz gero, editatzean kalkulagailu baten ikonoa agertzen da kalifikazio-elementu edo kategoria bakoitzaren ondoan elementua kalkulatua delako adierazlea erakutsiz.';
 $string['showeyecons'] = 'Erakutsi ikonoak erakutsi/ezkutatu';
 $string['showeyecons_help'] = 'Kalifikazio bakoitzaren ondoan erakutsi/ezkutatu ikonoa erakutsi ala ez (erabiltzaileak ikus dezakeen kontrolatzeko).';
 $string['showfeedback'] = 'Erakutsi feedbacka';

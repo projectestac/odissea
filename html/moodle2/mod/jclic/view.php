@@ -86,6 +86,6 @@ echo $OUTPUT->header();
 echo $OUTPUT->heading($jclic->name);
 
 jclic_view_intro($jclic, $cm);
-jclic_view_applet($jclic, $context, $ispreview);
+jclic_view_activity($jclic, $context, $ispreview);
 
 echo $OUTPUT->footer();

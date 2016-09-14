@@ -90,11 +90,11 @@ $string['filetype'] = 'Tipo';
 $string['filetype_help'] = 'Este parámetro determina cómo se incluye el paquete JClic en el curso. Hay 2 opciones:
 
 * Fichero JClic subido - Posibilita escoger un fichero ".jclic.zip" válido mediante el selector de archivos.
-* URL externo - Posibilita especificar el URL de un paquete JClic. NOTA: El URL debe empezar con https(s) o www y contener un fichero ".jclic.zip" válido';
+* URL externo - Posibilita especificar el URL de un paquete JClic. NOTA: El URL debe empezar con https(s) o www y contener un fichero ".jclic.zip" o ".jclic" válido';
 $string['filetypeexternal'] = 'URL externo';
 $string['filetypelocal'] = 'Fichero JClic subido';
 $string['invalidjclicfile'] = 'Se ha especificado un fichero JClic no válido. El fichero debe tener la extensión ".jclic.zip".';
-$string['invalidurl'] = 'Se ha especificado un URL no válido. El URL debe empezar con http(s) y enlazar a un fichero ".jclic.zip" válido.';
+$string['invalidurl'] = 'Se ha especificado un URL no válido. El URL debe empezar con http(s) y enlazar a un fichero ".jclic.zip" o ".jclic" válido.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'URL base de los ficheros JAR';
 $string['jclicjarbase_help'] = 'Dirección web donde localizar todos los ficheros jar de JClic.';
@@ -137,3 +137,7 @@ $string['event_instances_list_viewed'] = 'Lista instancias vista';
 $string['results'] = 'Resultados';
 $string['report_details'] = 'Resultados detallados con todas las sesiones';
 $string['report_normal'] = 'Resumen de resultados';
+
+/* Revision Moodle 3.1 */
+$string['jclicjs'] = 'URL del archivo jclic.js';
+$string['jclicjs_help'] = 'URL donde se buscará el archivo jclic.js necesario para que funcione el player no-Java.';

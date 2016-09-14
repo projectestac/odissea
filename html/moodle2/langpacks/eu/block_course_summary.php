@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['coursesummary'] = 'Ikastaroaren laburpena';
-$string['course_summary:addinstance'] = 'Gehitu ikastaroaren/gunearen deskribapena bloke berria';
+$string['course_summary:addinstance'] = 'Gehitu ikastaroaren/gunearen laburpen-bloke berria';
 $string['pluginname'] = 'Ikastaroaren/gunearen deskribapena';

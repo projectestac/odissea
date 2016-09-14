@@ -41,14 +41,20 @@ $PAGE->set_heading($page_title);
 $PAGE->set_title($title);
 
 $jspath = $CFG->wwwroot.'/blocks/rgrade/js';
-$PAGE->requires->js(new moodle_url($jspath.'/jquery-1.7.1.min.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/jquery.ba-bbq.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/handlebars-1.0.0.beta.6.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/i18n.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/css.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/jquery.cookie.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/jquery.simplemodal.1.4.2.min.js'));
-$PAGE->requires->js(new moodle_url($jspath.'/rgrade.js?v='.$tshourly));
+$PAGE->requires->js(new moodle_url($jspath.'/jquery-1.7.1.min.js'), 'rgrade_table');
+$PAGE->requires->js(new moodle_url($jspath.'/jquery.ba-bbq.js'), 'rgrade_table');
+$PAGE->requires->js(new moodle_url($jspath.'/handlebars-1.0.0.beta.6.js'), 'rgrade_table');
+$PAGE->requires->js(new moodle_url($jspath.'/i18n.js'), 'rgrade_table');
+$PAGE->requires->js(new moodle_url($jspath.'/css.js'), 'rgrade_table');
+$PAGE->requires->js(new moodle_url($jspath.'/jquery.cookie.js'), 'rgrade_table');
+$PAGE->requires->js(new moodle_url($jspath.'/jquery.simplemodal.1.4.2.min.js'), 'rgrade_table');
+
+$js_module = array(
+  'name' => 'local_block_rgrade',
+  'fullpath' => '/blocks/rgrade/module.js');
+$js_variables  = array(
+	$courseid, $bookid, json_encode($unitid), $studentid, current_language());
+$PAGE->requires->js_init_call('M.local_block_rgrade.init', $js_variables, false, $js_module);
 
 $csspath = $CFG->wwwroot.'/blocks/rgrade/css';
 $PAGE->requires->css(new moodle_url($csspath.'/custom-theme/jquery-ui-1.8.18.custom.css'));
@@ -62,6 +68,16 @@ $PAGE->add_body_class("blocks-rgrade");
 
 echo $OUTPUT->header();
 ?>
+
+<script type="text/javascript">
+	var language = "<?php echo current_language();?>";
+
+	var courseid = "<?php echo $courseid; ?>";
+	var bookid = "<?php echo $bookid; ?>";
+
+	var unitid = <?php echo json_encode($unitid); ?>;
+	var studentid = "<?php echo $studentid; ?>";
+</script>
 
 <form id="rgrade_search_form"
 	action="#"></form>
@@ -166,16 +182,6 @@ echo $OUTPUT->header();
 
 </div><!-- /filter_export_print_wrapper -->
 
-</script>
-
-<script type="text/javascript">
-	var language = "<?php echo current_language();?>";
-
-	var courseid = "<?php echo $courseid; ?>";
-	var bookid = "<?php echo $bookid; ?>";
-
-	var unitid = <?php echo json_encode($unitid); ?>;
-	var studentid = "<?php echo $studentid; ?>";
 </script>
 
 <div id="layer-grades"></div>
@@ -483,8 +489,8 @@ echo $OUTPUT->header();
 </div>
 
 <div class="agraiment">
-	Per gentilesa de <a href="http://www.lagaleratext.cat/"
-		class="lagalera" target="_blank">Text-LaGalera</a> | <a
+	Per gentilesa de <a href="http://www.text-lagalera.cat/"
+		class="lagalera" target="_blank">Text-La Galera</a> | <a
 		href="http://projecteeso.lagaleratext.cat/static/llibres/moodle/manual_modul_120601.pdf"
 		target="_blank">Manual d'usuari</a>
 </div>

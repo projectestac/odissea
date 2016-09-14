@@ -33,11 +33,15 @@ Vexa tamén que a vista de accións dos participantes non se poderá rexistrar n
 $string['displayinline'] = 'Sobre unha páxina do curso';
 $string['displaypage'] = 'Nunha páxina separada';
 $string['dnduploadmakefolder'] = 'Descomprimir os ficheiros e crear un cartafol';
+$string['downloadfolder'] = 'Descargar cartafol';
+$string['eventallfilesdownloaded'] = 'Descargado o arquivo ZIP do cartafol';
 $string['eventfolderupdated'] = 'Cartafol actualizado';
 $string['folder:addinstance'] = 'Engadir un novo cartafol';
 $string['foldercontent'] = 'Ficheiros e subcartafoles';
 $string['folder:managefiles'] = 'Xestionar ficheiros no módulo de cartafol';
 $string['folder:view'] = 'Ver o contido do cartafol';
+$string['maxsizetodownload'] = 'Tamaño máximo (MB) do cartafol a descargar';
+$string['maxsizetodownload_help'] = 'O tamaño máximo do cartafol que é posíbel descargar como un arquivo ZIP. Se o estabelece a cero o tamaño do cartafol é ilimitado.';
 $string['modulename'] = 'Cartafol';
 $string['modulename_help'] = 'Este cartafol permítelle a un profesor presentar un certo número de ficheiros relacionado dentro dun único cartafol, reducindo así a necesidade de desprazamento sobre a páxina do curso. Pódese subir un cartafol comprimido e descomprimilo para visualizalo u crearse un cartafol baleiro e subir ficheiros dentro del.
 
@@ -53,5 +57,7 @@ $string['page-mod-folder-x'] = 'Calquera páxina do módulo de cartafol';
 $string['pluginadministration'] = 'Administración do cartafol';
 $string['pluginname'] = 'Cartafol';
 $string['search:activity'] = 'Cartafol';
+$string['showdownloadfolder'] = 'Amosar o botón para a descarga do cartafol';
+$string['showdownloadfolder_help'] = 'Se o estabelece a «si», amosarase un botón para permitir descargar o contido do cartafol como un arquivo ZIP.';
 $string['showexpanded'] = 'Amosar subcartafoles estendidos';
 $string['showexpanded_help'] = 'De estar activado, presentaranse os subcartafoles estendidos de modo predeterminado. Se non, os subcartafoles presentaranse recollidos.';

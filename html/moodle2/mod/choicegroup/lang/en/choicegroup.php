@@ -152,7 +152,3 @@ $string['double_click_grouping_legend'] = 'Double click on a grouping to expand/
 $string['double_click_group_legend'] = 'Double click on a group to add it.';
 
 
-$string['grouplimit'] = 'Group limit';
-$string['usegroup'] = 'Use this group';
-
-

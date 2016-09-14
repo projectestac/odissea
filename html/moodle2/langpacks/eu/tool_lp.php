@@ -132,6 +132,7 @@ $string['pluginname'] = 'Ikasketa-planak';
 $string['progress'] = 'Aurrerapena';
 $string['rating'] = 'Puntuazioa';
 $string['reviewer'] = 'Berrikuslea';
+$string['reviewstatus'] = 'Berrikusi egora';
 $string['savechanges'] = 'Gorde aldaketak';
 $string['scale'] = 'Eskala';
 $string['search'] = 'Bilatu...';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'Ce test à une limite de temps de {$a}. Le temps commencera à être décompté dès le moment où vous commencerez votre tentative, et vous devrez l\'envoyer avant la fin du compte à rebours. Voulez-vous commencer maintenant ?';
+$string['confirmstart'] = 'Ce test a une limite de temps de {$a}. Le temps commencera à être décompté dès le moment où vous commencerez votre tentative, et vous devrez l\'envoyer avant la fin du compte à rebours. Voulez-vous commencer maintenant ?';
 $string['confirmstartheader'] = 'Test avec limite de temps';
 $string['pluginname'] = 'Limite de temps';
 $string['quiztimelimit'] = 'Temps disponible : {$a}';

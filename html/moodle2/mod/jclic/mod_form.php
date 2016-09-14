@@ -60,8 +60,12 @@ class mod_jclic_mod_form extends moodleform_mod {
         $mform->addRule('name', null, 'required', null, 'client');
         $mform->addRule('name', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
 
-        // Adding the standard "intro" and "introformat" fields
-        $this->standard_intro_elements();
+        // Summary
+        if (method_exists($this, 'standard_intro_elements')) {
+            $this->standard_intro_elements();
+        } else {
+            $this->add_intro_editor();
+        }
 
         // -------------------------------------------------------------------------------
         $mform->addElement('header', 'timing', get_string('timing', 'jclic'));
@@ -138,7 +142,12 @@ class mod_jclic_mod_form extends moodleform_mod {
     function data_preprocessing(&$default_values) {
         if ($this->current->instance) {
             $draftitemid = file_get_submitted_draft_itemid('jclicfile');
-            file_prepare_draft_area($draftitemid, $this->context->id, 'mod_jclic', 'content', 0, jclic::get_filemanager_options());
+            if ($draftitemid == 0 && !empty($this->current->url)) {
+                $filearea = jclic_get_filearea($this->current->url);
+            } else {
+                $filearea = jclic_get_filearea($draftitemid);
+            }
+            file_prepare_draft_area($draftitemid, $this->context->id, 'mod_jclic', $filearea, 0, jclic::get_filemanager_options());
             $default_values['jclicfile'] = $draftitemid;
         }
     }

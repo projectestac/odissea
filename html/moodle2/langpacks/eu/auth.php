@@ -41,7 +41,7 @@ $string['auth_fieldlock'] = 'Balorea bloketau';
 $string['auth_fieldlock_expl'] = '<p><b>Balorea blokeatu:</b> Ezarriz gero, Moodle-ko erabiltzaile eta kudeatzaileek ezingo dute eremua zuzenean editatu. Aukeratu hau hautatu datu horiek kanpoko autentifikazio-sisteman badituzu. </p>';
 $string['auth_fieldlocks'] = 'Erabiltzaile-eremuak blokeatu';
 $string['auth_fieldlocks_help'] = '<p>Erabiltzaileen datu-eremuak blokea ditzakezu, kudeatzaileek datuok eskuz mantentzen dituzten guneetan bereziki erabilgarria gertatzen dena, erabiltzaileen erregistroak editatuz edo \'Erabiltzaileak igo\' aplikazioaren bidez. Moodle-k behar dituen eremuak blokeatzen badituzu, erabiltzaile-kontuak sortzean datu horiek ematen dituzula ziurtatu; bestela, kontuak ezingo dira erabili.</p><p>Pentsa ezazu ea \'Hutsik egotekotan desblokeatu\' aukera aktibatu behar duzun arazo hori ebitatzeko.</p>';
-$string['authinstructions'] = 'Hemen zure erabiltzaileentzat argibideak eman ditzakezu, erabili behar duten erabiltzaile-izena eta pasahitza zein diren jakin dezaten. Hemen sartutako testua saio-hasiera pantailan agertuko da. Zurian uzten baduzu, ez da argibiderik emango.';
+$string['authinstructions'] = 'Utzi eremu hau hutsik saio-hasiera pantailan berezko erabiltzaileentzako argibideak erakusteko. Zure erabiltzaileentzako saio-hasiera argibideak egokitu nahi badituzu, idatz itzazu hemen.';
 $string['auth_invalidnewemailkey'] = 'Errorea: e-posta helbidea aldatzea baieztatu nahian ari bazara, nahastu egingo zinen zure e-postara bidali dugun URL-a kopiatzean. Mesedez, kopiatu helbidea eta saiatu berriz.';
 $string['auth_multiplehosts'] = 'Ostalari anitzak zehaz daitezke (ad. ostalari1.com;ostalari2.com;ostalari3.com) edo (edo a. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_outofnewemailupdateattempts'] = 'Zure e-posta helbidea eguneratzeko baimenduta dauden saiakerak agortuko dituzu. Bertan behera utzi da zure eguneratzeko eskaria.';
@@ -51,7 +51,7 @@ $string['auth_remove_delete'] = 'Osorik ezabatu';
 $string['auth_remove_keep'] = 'Barruan gorde';
 $string['auth_remove_suspend'] = 'Barruan eten';
 $string['auth_remove_user_key'] = 'Kanpoko erabiltzailea ezabatuta';
-$string['auth_sync_script'] = 'Cron-a sinkronizatzeko script-a';
+$string['auth_sync_script'] = 'Erabiltzaile-kontuaren sinkronizazioa';
 $string['auth_updatelocal'] = 'Datu lokalak eguneratu';
 $string['auth_updatelocal_expl'] = '<p><b>Datu lokalak eguneratu:</b> Aktibatuta badago, eremua eguneratu behar da (kanpoko autentikazioz) erabiltzailea sartu edo erabiltzaileen sinkronizazioa gertatzen den bakoitzean. Modu lokalean eguneratu beharreko eremuak blokeatu beharko lirateke.</p>';
 $string['auth_updateremote'] = 'Kanpoko datuak eguneratu';
@@ -62,15 +62,9 @@ $string['auth_user_creation'] = 'Erabiltzaile anonimo berriek erabiltzaile-kontu
 $string['auth_usernameexists'] = 'Aukeratutako erabiltzailearen izena honez gero badago. Beste bat aukeratu, mesedez.';
 $string['auto_add_remote_users'] = 'Gehitu automatikoki urrutiko erabiltzaileak';
 $string['changepassword'] = 'Pasahitza aldatzeko URLa';
-$string['changepasswordhelp'] = 'Hemen zure erabiltzaileek erabiltzaile-izena edo pasahitza aldatzeko, edo ahaztekotan berreskuratzeko, erabil dezaketen helbide bat zehaztu ahal duzu.  Hau erabiltzaileei saio-hasierako pantailan eta erabiltzaile-orrian botoi gisa aurkeztuko zaie. Zurian uzten baduzu ez zaie botoirik aurkeztuko.';
+$string['changepasswordhelp'] = 'Ahaztutako pasahitza berreskuratzeko orriaren URLa, erabiltzaileei e-postaz bidaliko zaiena. Kontuan izan ezarpen honek ez duela eraginik izango autentifikaziorako ezarpen komunetan galdutako pasahitzen URLa ezarrita egonez gero.';
 $string['chooseauthmethod'] = 'Autentifikazio-metodoa aukeratu';
-$string['chooseauthmethod_help'] = '<p align="center"><b>Autentifikazio-metodoa aldatu</b></p>
-
-<p>Menu honetan erabiltzaile jakin baten autentifikazio-metodoa alda dezakezu.</p>
-
-<p>Mesedez, kontuz ibili, ezarpen hori gunean definitutako autentifikazio-metodoen eta erabiltzen ari diren ezarpenen mendekoa baita.</p>
-
-<p>Aldaketa okerren bat egiten baduzu, erabiltzailea ezingo da zerbitzarira sartu; kontua erabat ezabatzea ere gerta daiteke. Beraz, aukera hau zer egiten ari zaren ondo badakizu bakarrik erabili.</p>';
+$string['chooseauthmethod_help'] = 'Ezarpen honek erabiltzaileak sartzen direnean erabiliko den autentifikazio-metodoa zehazten du. Soilik gaitutako autentifikazio-pluginak aukeratu beharko lirateke, bestela erabiltzaileak ezin izango dira eta. Erabiltzaile baten sarrera ukatzeko aukera ezazu"Autentifikaziorik ez" .';
 $string['createpassword'] = 'Sortu pasahitza eta jakinarazi erabiltzaileari';
 $string['createpasswordifneeded'] = 'Pasahitza sortu eta postaz bidali, beharrezkoa bada';
 $string['emailchangecancel'] = 'Utzi e-postaren aldaketa';

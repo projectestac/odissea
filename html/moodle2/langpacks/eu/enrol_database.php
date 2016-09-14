@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['database:unenrol'] = 'Desmatrikulatu kontua etenda duten erabiltzaileak';
 $string['dbencoding'] = 'Datu-basearen kodifikazioa';
 $string['dbhost'] = 'Datu-basearen ostalaria';
-$string['dbhost_desc'] = 'Datu-basearen ostalariaren IPa edo ostalariaren izena';
+$string['dbhost_desc'] = 'Idatzi datu-basearen zerbitzariaren IPa edo izena. Erabili sistemako DSN sarrera bat ODBC erabiliz gero.';
 $string['dbname'] = 'Datu-basearen izena';
 $string['dbpass'] = 'Datu-basearen pasahitza';
 $string['dbsetupsql'] = 'Datu-basea konfiguratzeko komandoa';

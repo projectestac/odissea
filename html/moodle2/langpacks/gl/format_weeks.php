@@ -27,7 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'Esta semana';
 $string['deletesection'] = 'Eliminar a semana';
+$string['editsection'] = 'Editar a semana';
+$string['editsectionname'] = 'Editar o nome da semana';
 $string['hidefromothers'] = 'Agochar a semana';
+$string['newsectionname'] = 'Novo nome para a semana {$a}';
 $string['page-course-view-weeks'] = 'Páxina principal de calquera curso en formato semanal';
 $string['page-course-view-weeks-x'] = 'Páxina de calquera curso en formato semanal';
 $string['pluginname'] = 'Formato semanal';

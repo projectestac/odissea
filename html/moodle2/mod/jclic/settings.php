@@ -36,5 +36,8 @@ if ($ADMIN->fulltree) {
 
     $settings->add(new admin_setting_configtext('jclic/pluginjs', get_string('pluginjs', 'jclic'),
                        get_string('pluginjs_help', 'jclic'), 'https://clic.xtec.cat/dist/jclic/jclicplugin.js', PARAM_TEXT));
+
+    $settings->add(new admin_setting_configtext('jclic/jclicjs', get_string('jclicjs', 'jclic'),
+                       get_string('jclicjs_help', 'jclic'), 'https://clic.xtec.cat/dist/jclic.js/jclic.min.js', PARAM_URL, 60));
 }
 

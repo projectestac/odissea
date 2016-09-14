@@ -25,7 +25,7 @@
 
 M.mod_jclic = {};
 
-M.mod_jclic.init = function(Y, params) {
+M.mod_jclic.initApplet = function(Y, params) {
     setJarBase(params['jclic_jarbase']);
     setReporter('TCPReporter','path='+params['jclic_path']+';service='+params['jclic_service']+';user='+params['jclic_user']+';key='+params['id']+';lap='+params['jclic_lap']+';protocol='+params['jclic_protocol']);
     setSkin(params['skin']);
@@ -33,6 +33,30 @@ M.mod_jclic.init = function(Y, params) {
     setExitUrl(params['exiturl']);
     document.getElementById('jclic_applet').innerHTML = getPlugin(params['jclic_url'], params['width'], params['height']);
 };
+
+M.mod_jclic.initHTML5 = function(Y, params) {
+    var JClicOptions = {
+        reporter: 'TCPReporter',
+        path: params['jclic_path'],
+        service: params['jclic_service'],
+        user: params['jclic_user'],
+        key: params['id'],
+        lap: params['jclic_lap'],
+        protocol: params['jclic_protocol'],
+        skin: params['skin'],
+        lang: params['lang'],
+        exitUrl: params['exitUrl'],
+        width: params['width'],
+        height: params['height'],
+    };
+    if (params['jclic_ispreview']) {
+        delete JClicOptions['reporter'];
+        delete JClicOptions['path'];
+    }
+
+    JClicObject.loadProject(document.getElementById('jclic_html5'), params['jclic_url'], JClicOptions);
+};
+
 
 
 function showSessionActivities(sessionid){
@@ -42,4 +66,12 @@ function showSessionActivities(sessionid){
     } else{
         activities.className='jclic-session-activities-visible';
     }
+}
+
+function var_dump(obj) {
+ var out = '';
+ for (var i in obj) {
+ out += i + ": " + obj[i] + "\n";
+ }
+alert(out);
 }

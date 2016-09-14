@@ -3,6 +3,18 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 16.09.19
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.1.2 (Trello #1343)
+- Updated LangPacks
+- RSS: Fixed bug to show feed name when preferred is not specified - MDL-55886 (Trello #1338)
+- Updated mod/choicegroup to fix detected problems with groups duplication (installed original version) (Trello #1341)
+- Updated blocks/rgrade
+- theme/xtec2: fixed problem when more than 5 languages
+- report/coursequotas: Added icons for usability and improved performance (Trello #1278)
+- mod/jclic: Added support for JClic HTML5 player (Trello #1294)
+
+
 Changes 16.09.07
 ---------------------------------------------------------------------------------------
 - Updated LangPacks

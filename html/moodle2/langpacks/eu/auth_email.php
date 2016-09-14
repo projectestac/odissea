@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_emaildescription'] = 'e-postaz berrestea da lehenetsitako autentifikazio-metodoa. Erabiltzaileak izena ematen duenean, bere izen eta pasahitza aukeratuz, konfirmazio-mezu bat bidaltzen zaio erabiltzailearen e-posta helbidera.  e-posta mezu honek, erabiltzaileei kontua berresteko aukera emango dien orri batera lotura ziur bat du. Hurrengoetan saioa hasteko izen eta pasahitza Moodle datu-basean dauden balioekin konparatzea nahikoa da.';
+$string['auth_emaildescription'] = '<p>E-postaren bidezko autentifikazioak erabiltzaileari sarbideko \'Kontu berri bat sortu\' botoiaren bidez bere kontua sortzea ahalbidetzen dio. Erabiltzaileak orduan e-posta bat jasoko luke pasahitza berresteko orrira doan esteka seguru batekin. Hurrengo sarreretan erabiltzaile eta pasahitza Moodle-ko datu-basean gordetako balioekin egiaztatuko dira.</p>
+
+<p>Oharra: Plugin hau gehiatzeaz gain e-postaren bidezko autentifikazioa aukeratu behar da \'Kudeatu autentifikazioa\' orrian zabaltzen den auto-erregistroa menuan.</p>';
 $string['auth_emailnoemail'] = 'E-posta bat bidali nahi izan dizugu baina ezin!';
-$string['auth_emailrecaptcha'] = 'Gehitu erabiltzaileak e-posta bidezko autoerregistroaren bidez izena emateko orrian egiaztatzeko ikus-entzutezko konfirmazio-formularioa. Horrek babestu egingo du zure gunea spam-sortzaileengandik eta lan garbian lagunduko du. Begiratu http://recaptcha.net/learnmore.html zehaztasun gehiagorako. <br /><em>PHP cURL luzapena beharrezkoa da.</em>';
+$string['auth_emailrecaptcha'] = 'Gehitu erabiltzaileak e-posta bidezko auto-erregistroaren bidez izena emateko orrian egiaztatzeko ikus-entzutezko konfirmazio-formularioa. Horrek babestu egingo du zure gunea spam-sortzaileengandik eta lan garbian lagunduko du. Begiratu http://www.google.com/recaptcha zehaztasun gehiagorako.';
 $string['auth_emailrecaptcha_key'] = 'Gaitu reCAPTCHA elementua';
 $string['auth_emailsettings'] = 'Ezarpenak';
 $string['pluginname'] = 'E-postaren bidezko autentifikazioa';
