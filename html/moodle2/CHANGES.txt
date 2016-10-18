@@ -3,6 +3,11 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes in progress
+---------------------------------------------------------------------------------------
+- tool/odisseagtafsync: Fixed bug with deprecated function
+
+
 Changes 16.09.19
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.1.2 (Trello #1343)
