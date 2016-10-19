@@ -54,7 +54,7 @@ $string['displayselect_help'] = 'Ezarpen honek, fitxategi-mota kontuan hartuta e
 * Markoan - Fitxategia marko baten barruan erakutsiko da, nabigazio-barraren eta fitxategiaren deskribapenaren azpian.
 * Leiho berria - Fitxategia web-nabigatzailearen leiho berri batean erakutsiko da, menuekin eta nabigazio-barrarekin.';
 $string['dnduploadresource'] = 'Sortu fitxategia izeneko baliabidea';
-$string['encryptedcode'] = 'Kode enkriptatua';
+$string['encryptedcode'] = 'Kode zifratua';
 $string['filenotfound'] = 'Ez da fitxategia aurkitu, barkatu.';
 $string['filterfiles'] = 'Fitxategiaren edukian iragazkiak erabili ';
 $string['filterfilesexplain'] = 'Aukeratu fitxategien edukiko iragazki mota; kontuan izan honek Flash eta Java applet-etan arazoak eragin ditzakela. Ziurtatu mesedez testu-fitxategi guztiek UTF-8 kodeaketa dutela.';

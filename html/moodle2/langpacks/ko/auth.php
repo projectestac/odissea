@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = '활성화된 인증 플러그인';
+$string['allowaccountssameemail_desc'] = '한명 이상의 사용자가 이메일을 공유하게 됩니다. 이로 인해 보안 문제나 개인 정보의 침해가 있을 수 있습니다. (예를 들어, 이메일을 통해 암호를 변경할 수 있음)';
 $string['alternatelogin'] = '로그인 페이지로 사용할 URL을 입력. <strong>\'{$a}\'</strong> 처럼 실행문을 가진 형태여야 하고 <strong>사용자ID</strong>와  <strong>비밀번호</strong>를 리턴할 수 있는 필드를 포함하여야 한다.
 <br />정확한 URL을 입력하도록 주의하지 않으면 이 사이트에 갇혀 버릴 수도 있다.<br />
 기본 로그인 페이지를 사용하려면 이 칸을 빈칸으로 남겨두어라.';
@@ -118,6 +119,7 @@ $string['informminpasswordupper'] = '최소 대문자 {$a} 개';
 $string['informpasswordpolicy'] = '암호는 {$a} 를 충족시켜야 합니다.';
 $string['instructions'] = '안내문';
 $string['internal'] = '내부';
+$string['limitconcurrentlogins_desc'] = '사용자가 여러 브라우져에서 동시에 접근하는 것을 제한합니다. 한계에 도달한 이후, 오래된 세션부터 종료됩니다. 이때 저장하지 않은 정보는 모두 사라집니다. 이 설정은 Single Sign On(SSO) 인증 플러그인과 호환되지 않습니다.';
 $string['locked'] = '잠금';
 $string['md5'] = 'MD5 인증';
 $string['nopasswordchange'] = '암호를 변경할 수 없음';

@@ -32,3 +32,5 @@ $string['logo'] = 'Logoa';
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Eskuina';
 $string['region-side-pre'] = 'Ezkerra';
+$string['sitelogo'] = 'Gunearen logoa';
+$string['smalllogo'] = 'Logo txikia';

@@ -45,6 +45,7 @@ $string['err_mintwolevels'] = 'Ciascun criterio deve avere almeno due livelli';
 $string['err_nocriteria'] = 'Il rubric deve contenere almeno un criterio';
 $string['err_nodefinition'] = 'La definizione del livello non può essere lasciata in bianco';
 $string['err_nodescription'] = 'La descrizione del criterio non può essere lasciata in bianco';
+$string['err_novariations'] = 'I livelli del criterio non possono valere tutti lo stesso punteggio.';
 $string['err_scoreformat'] = 'I punteggi per ciascun livello devono essere numeri non negativi';
 $string['err_totalscore'] = 'Il punteggio massimo possibile del rubric deve essere maggiore di zero.';
 $string['gradingof'] = 'Valutazione di {$a}';
@@ -83,3 +84,5 @@ $string['showscoreteacher'] = 'Visualizza il punteggio per ciascun livello duran
 $string['sortlevelsasc'] = 'Ordinamento dei livelli:';
 $string['sortlevelsasc0'] = 'Decrescente per punteggio';
 $string['sortlevelsasc1'] = 'Crescente per punteggio';
+$string['zerolevelsabsent'] = 'Attenzione: il punteggio minimo possibile per il rubric non è pari 0; questo può provocare valutazioni inattese dell\'attività. Per evitare il problema, ciascun criterio deve avere un livello con un punteggio pari a 0.<br>
+E\' possibile ignorare l\'avviso quando la valutazione è basata su una scala e il livello con la valutazione più bassa è impostato con il valore più basso della scala.';

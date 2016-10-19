@@ -43,5 +43,7 @@ $string['pluginname'] = 'Gehiago';
 $string['region-side-post'] = 'Eskuina';
 $string['region-side-pre'] = 'Ezkerra';
 $string['secondarybackground'] = 'Bigarren mailako atzeko planoaren kolorea';
+$string['sitelogo'] = 'Gunearen logoa';
+$string['smalllogo'] = 'Logo txikia';
 $string['textcolor'] = 'Testuaren kolorea';
 $string['textcolor_desc'] = 'Testuaren kolorea.';

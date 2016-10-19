@@ -170,7 +170,7 @@ $string['comments'] = 'Kommentare';
 $string['completedon'] = 'Beendet am';
 $string['completionattemptsexhausted'] = 'Oder alle verfügbaren Versuche abgeschlossen sind';
 $string['completionattemptsexhausted_help'] = 'Der Test wird als abgeschlossen markiert, wenn Teilnehmer/innen die maximale Anzahl von Versuchen erreichen.';
-$string['completionpass'] = 'Bewertung notwendig';
+$string['completionpass'] = 'Bewertung für Bestehen notwendig';
 $string['completionpass_help'] = 'Diese Option legt fest, dass diese Aktivität als abgeschlossen gilt, wenn Teilnehmer/innen eine Bewertung erhalten haben.';
 $string['configadaptive'] = 'Wenn die Option \'Ja\' gewählt ist, besteht für die Teilnehmer/innen die Möglichkeit, während eines Testversuches mehrere Antworten auf eine Frage zu geben.';
 $string['configattemptsallowed'] = 'Beschränkung der Anzahl an Antwortversuchen  während des Tests.';
@@ -398,6 +398,7 @@ ignoriert)
 ignoriert)';
 $string['gradesdeleted'] = 'Testbewertungen wurden gelöscht';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
+$string['gradetopassnotset'] = 'Dieses Quiz hat keine \'grade to pass\'-Einstellung, deshalb ist diese Option nicht nutzbar. Bitte nutzen Sie stattdessen die \'require grade\'-Einstellung.';
 $string['gradingdetails'] = 'Punkte: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Mit früheren Abzügen ergibt dies <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Die Arbeit berücksichtigt einen Abzug von {$a}.';

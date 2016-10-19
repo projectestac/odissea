@@ -518,8 +518,8 @@ $string['tracking'] = 'Suivi des messages';
 $string['trackingoff'] = 'Désactivé';
 $string['trackingon'] = 'Imposé';
 $string['trackingoptional'] = 'Facultatif';
-$string['trackingtype'] = 'Suivi de lecture des messages';
-$string['trackingtype_help'] = 'Le suivi des messages permet aux participants de vérifier facilement les messages qu\'ils n\'ont pas encore vu en les surinant.
+$string['trackingtype'] = 'Suivi des messages';
+$string['trackingtype_help'] = 'Le suivi des messages permet aux participants de vérifier facilement les messages qu\'ils n\'ont pas encore vu en les surlignant.
 
 Si le réglage est mis sur « Facultatif », les participants peuvent activer ou désactiver à discrétion le suivi des messages dans le bloc d\'administration (le suivi des messages doit d\'abord être activé dans leurs préférences de forum).
 

@@ -35,6 +35,7 @@ $string['editingends'] = '次で編集期間が終了します';
 $string['entries'] = 'エントリ';
 $string['entry'] = 'エントリ';
 $string['evententriesviewed'] = '日誌エントリが閲覧されました。';
+$string['evententrycreated'] = '日誌エントリが作成されました。';
 $string['evententryupdated'] = '日誌エントリが更新されました。';
 $string['eventfeedbackupdated'] = '日誌フィードバックが更新されました。';
 $string['eventjournalcreated'] = '日誌が作成されました。';

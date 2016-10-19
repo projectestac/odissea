@@ -131,7 +131,7 @@ $string['filealiasesrestorefailures_help'] = 'Gli alias sono link simbolici a fi
 Per maggiori informazioni sugli errori consultare il log di ripristino.';
 $string['filealiasesrestorefailuresinfo'] = 'Non è stato possibile ripristinare alcuni alias presenti nel file di backup. L\'elenco che segue presenta le sorgenti dei file ai quali si riferivano gli alias nel sito di origine.';
 $string['filename'] = 'Nome file';
-$string['filereferencesincluded'] = 'Il backup contiene file collegati a contenuti esterni. I file collegati non funzioneranno in altri siti.';
+$string['filereferencesincluded'] = 'Il backup contiene file collegati a contenuti esterni. I file collegati non funzioneranno se si ripristina il backup in altri siti.';
 $string['filereferencesnotsamesite'] = 'Il backup proviene da un altro sito, i file collegati non possono essere ripristinati.';
 $string['filereferencessamesite'] = 'Il backup proviene dallo stesso sito, i file collegati possono essere ripristinati.';
 $string['generalactivities'] = 'Includi attività e risorse';
@@ -181,7 +181,7 @@ $string['lockedbyhierarchy'] = 'Bloccato da dipendenze';
 $string['lockedbypermission'] = 'Non hai i privilegi necessari per cambiare questa impostazione';
 $string['loglifetime'] = 'Conserva i log per';
 $string['managefiles'] = 'Gestione file di backup';
-$string['missingfilesinpool'] = 'Alcuni file non sono stati salvati nel backup e non sarà possibile ripristinarli.';
+$string['missingfilesinpool'] = 'Non è stati possibile salvare alcuni file nel backup e pertanto non sarà possibile ripristinarli.';
 $string['module'] = 'Modulo';
 $string['moodleversion'] = 'Versione Moodle';
 $string['morecoursesearchresults'] = 'Sono stati trovati più di {$a} corsi. Vengono visualizzati i primi {$a} risultati';

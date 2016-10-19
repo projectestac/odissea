@@ -112,7 +112,7 @@ $string['cwrqpfsinfo'] = '<p>Durante a atualização para o Moodle 1.9, vamos se
 $string['cwrqpfsnoprob'] = 'Nenhuma categoria no seu site é afetada pela questão das perguntas aleatórias que selecionam perguntas de subcategorias com diferentes estados.';
 $string['decimalplacesingrades'] = 'Notas decimais nas notas';
 $string['defaultfor'] = 'Categoria predefinida de {$a}';
-$string['defaultinfofor'] = 'A categoria predefinida para perguntas partilhadas no contexto \'{$a}';
+$string['defaultinfofor'] = 'A categoria predefinida para perguntas partilhadas no contexto \'{$a}\'';
 $string['defaultmark'] = 'Nota predefinida';
 $string['defaultmarkmustbepositive'] = 'A nota predefinida deve ser positiva.';
 $string['deletecoursecategorywithquestions'] = 'Existem perguntas na base de dados de perguntas associadas a esta categoria da disciplina. Se continuar, elas serão apagadas. Poderá primeiro movê-las para outras categorias usando a base de dados de perguntas.';
@@ -166,7 +166,7 @@ $string['errorsavingflags'] = 'Ocorreu um erro ao guardar a marcação';
 $string['errorupdatingattempt'] = 'Ocorreu um erro ao atualizar a tentativa  {$a->id} na base de dados.';
 $string['eventquestioncategorycreated'] = 'Pergunta de categoria criada';
 $string['export'] = 'Exportar';
-$string['exportcategory'] = 'Exportar categoria';
+$string['exportcategory'] = 'Exportar a categoria';
 $string['exportcategory_help'] = 'Esta configuração determina qual a categoria a partir da qual as perguntas serão exportadas.
 
 Alguns formatos de importação, como o GIFT e Moodle XML, permitem guardar a categoria e o seu contexto sendo mais tarde possível recuperá-los no processo de importação (opcional). Se o desejar, deverá escolher as opções necessárias.';
@@ -179,7 +179,7 @@ $string['exportquestions_link'] = 'pergunta/exportar';
 $string['feedback'] = 'Feedback';
 $string['filecantmovefrom'] = 'Os ficheiros das perguntas não podem ser movidos porque não tem permissões para apagar ficheiros do local para onde deseja mover as perguntas.';
 $string['filecantmoveto'] = 'Os ficheiros das perguntas não podem ser movidos porque não tem permissões para adicionar ficheiros no local para onde deseja mover as perguntas.';
-$string['fileformat'] = 'Formato de ficheiro';
+$string['fileformat'] = 'Formato do ficheiro';
 $string['filesareacourse'] = 'área de ficheiros da disciplina';
 $string['filesareasite'] = 'área de ficheiros do site';
 $string['filestomove'] = 'Mover / copiar ficheiros para {$a}?';
@@ -205,7 +205,7 @@ $string['import'] = 'Importar';
 $string['importcategory'] = 'Importar categoria';
 $string['importcategory_help'] = 'Esta configuração determina a categoria para a qual as perguntas serão importadas.
 
-Alguns formatos de importação, como o GIFT e Moodle XML, permitem guardar as perguntas com suas categorias e contextos. Para usar esta opção certifique-se que assinala as opções necessárias. Se as categorias do ficheiros ainda não existirem serão criadas.';
+Alguns formatos de importação, tal como o GIFT e Moodle XML, permitem guardar as perguntas, assim como as suas categorias e contextos. Para usar esta opção certifique-se que assinala as opções necessárias. Se ainda não existirem as categorias especificadas no ficheiros, elas serão criadas.';
 $string['importerror'] = 'Ocorreu um erro durante o processo de importação';
 $string['importerrorquestion'] = 'Erro ao importar pergunta';
 $string['importfromcoursefiles'] = '…ou escolha um ficheiro da disciplina para importar.';
@@ -249,9 +249,9 @@ $string['matchgrades'] = 'Corresponder notas';
 $string['matchgradeserror'] = 'Exibir erro se a nota não estiver na lista';
 $string['matchgrades_help'] = 'As notas importadas devem corresponder a um dos valores válidos - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (incluindo valores negativos). Caso contrário, existem duas opções:
 
-* Erro, caso a nota não esteja listada: Se a pergunta contiver alguma nota não listada será exibida uma mensagem de erro e a pergunta não será importada;
+* Erro, caso a nota não esteja listada - Se a pergunta contiver alguma nota não listada será exibida uma mensagem de erro e a pergunta não será importada;
 
-* Nota mais próxima, caso não esteja listada: Se a nota não corresponder a nenhuma valor da lista será alterada para o valor listado mais próximo.';
+* Nota mais próxima, caso não esteja listada - Se a nota não corresponder a nenhum valor da lista será alterada para o valor mais próximo da lista.';
 $string['matchgradesnearest'] = 'Nota mais próxima se não estiver na lista';
 $string['missingcourseorcmid'] = 'É necessário introduzir o ID da disciplina ou cmid para print_question.';
 $string['missingcourseorcmidtolink'] = 'É necessário introduzir o ID da disciplina ou cmid para get_question_edit_link.';
@@ -423,4 +423,4 @@ $string['wrongprefix'] = 'nameprefix {$a} formatado incorretamente';
 $string['xoutofmax'] = '{$a->mark} em {$a->max}';
 $string['yougotnright'] = 'Selecionou corretamente {$a->num}.';
 $string['youmustselectaqtype'] = 'Tem de selecionar um tipo de pergunta';
-$string['yourfileshoulddownload'] = 'O seu ficheiro deve iniciar a exportação brevemente. Se não, por favor <a href="{$a}">clique aqui</a>.';
+$string['yourfileshoulddownload'] = 'O seu ficheiro deve iniciar a exportação brevemente. Se não acontecer dentro de segundos, por favor <a href="{$a}">clique aqui</a>.';

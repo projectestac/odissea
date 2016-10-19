@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['answer'] = 'Respuesta';
+$string['bgimage'] = 'Imagen de fondo';
+$string['correctansweris'] = 'La respuesta correcta es: {$a}';
+$string['draggableimage'] = 'Imagen arrastrable';
+$string['draggableitem'] = 'Elemento arrastrable';
+$string['draggableitemheader'] = 'Elemento arrastrable {$a}';
+$string['draggableitems'] = 'Elementos arrastrables';
+$string['draggableitemtype'] = 'Tipo';
+$string['draggableword'] = 'Texto arrastrable';
+$string['formerror_notintxleft'] = 'La coordenada x debe ser un entero';
+$string['formerror_notintytop'] = 'La coordenada y debe ser un entero';
+$string['infinite'] = 'Ilimitado';
+$string['label'] = 'Texto';
 $string['pluginname'] = 'Arrastrar y soltar sobre una imagen';
 $string['pluginnameadding'] = 'Añadir arrastrar y soltar sobre una imagen';
 $string['pluginnameediting'] = 'Editar arrastrar y soltar sobre una imagen';
+$string['previewareaheader'] = 'Vista Previa';
+$string['previewareamessage'] = 'Seleccione una imagen de fondo, especifique los elementos que se pueden arrastrar y defina las zonas de colocación sobre las que deben ser arrastrados.';
+$string['refresh'] = 'Refrescar vista previa';
+$string['summarisechoiceno'] = 'Elemento {$a}';
+$string['xleft'] = 'Izquierda';
+$string['ytop'] = 'Arriba';

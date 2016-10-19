@@ -35,6 +35,7 @@ $string['accept_grades_help'] = 'Diese Option legt fest, ob der Tool-Provider Be
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
 $string['action'] = 'Aktion';
 $string['activate'] = 'aktivieren';
+$string['activatetoadddescription'] = 'Sie müssen das Tool aktivieren, bevor Sie eine Beschreibung hinzufügen können.';
 $string['active'] = 'Aktiv';
 $string['activity'] = 'Aktivität';
 $string['addnewapp'] = 'Externes Programm aktivieren';
@@ -141,7 +142,8 @@ Drei Icons erscheinen in der Liste
 * **Löschen** - Ausgewählten Typ im Kurs löschen.';
 $string['external_tool_types'] = 'Vorkonfigurierte Tools';
 $string['failedtoconnect'] = 'Moodle konnte keine Kommunikation mit dem System \'{$a}\' aufbauen.';
-$string['failedtocreatetooltype'] = 'Fehler beim Anlegen eines neuen Tools';
+$string['failedtocreatetooltype'] = 'Fehler beim Anlegen eines neuen Tools. Prüfen Sie die URL und versuchen Sie es noch einmal.';
+$string['failedtodeletetoolproxy'] = 'Das Entfernen des Tools Registrierung ist fehlgeschlagen. Sie können auf "Manage external tool registrations" gehen und es manuell entfernen.';
 $string['filter_basiclti_configlink'] = 'Konfigurieren Sie die bevorzugten Seiten und deren Kennwörter';
 $string['filter_basiclti_password'] = 'Kennwort ist erforderlich';
 $string['filterconfig'] = 'LTI Administration';
@@ -268,7 +270,7 @@ $string['quickgrade_help'] = 'Nach der Aktivierung können mehrere Tools auf ein
 $string['redirect'] = 'Sie werden in ein paar Sekunden weitergeleitet. andernfalls den Button anklicken.';
 $string['register'] = 'Registrieren';
 $string['registertype'] = 'Konfiguration eines neu registrierten externen Tools';
-$string['register_warning'] = 'Die Registrierungsseite benötigt einige Zeit zum Öffnen. Sollte dies nicht erfolgreich sein, prüfen Sie die eingegebene URL in den Konfigurationseinstellungen,';
+$string['register_warning'] = 'Die Registrierungsseite benötigt einige Zeit zum Öffnen. Sollte dies nicht erfolgreich sein, prüfen Sie die eingegebene URL in den Konfigurationseinstellungen. Wenn Moodle https benutzt, stellen Sie sicher, dass das Tool, das sie konfigurieren, https unterstützt und Sie https in der URL nutzen,';
 $string['registrationname'] = 'Name des Toolanbieters';
 $string['registrationname_help'] = 'Geben Sie den Namen des Toolproviders an, dessen Angebot Sie registrieren.';
 $string['registration_options'] = 'Registierungsoptionen';
@@ -300,9 +302,9 @@ $string['search:activity'] = 'Externes Tool - Aktivitätsinformation';
 $string['secure_icon_url'] = 'Sichere Icon-URL';
 $string['secure_icon_url_help'] = 'Ähnlich wie Icon URL. Die Funktion wird genutzt bei verschlüsselter Datenübertragung, um zu verhindern, dass der Nutzer einen Warnhinwies erhält, falls ein Icon unverscchlüsselt aufgerufen wird.';
 $string['secure_launch_url'] = 'Sichere Start-URL';
-$string['secure_launch_url_help'] = 'Ähnlich wie Start URL. Wird verwendet, um höhere Sicherheistanforderungen unzusetzen. Moodle verwendet die siuchere Start URL anstelle der Standard URL falls das Moodle-System selber über verschlüsselte Zugänge (https) arbeitet.
+$string['secure_launch_url_help'] = 'Ähnlich wie Start URL. Wird verwendet, um höhere Sicherheitsanforderungen umzusetzen. Moodle verwendet die sichere Start URL anstelle der Standard URL, wenn das Moodle-System selber über SSL abgerufen wird oder wenn die Tool-Konfiguration auf \'immer über SSL starten\' gestellt ist.
 
-Es kann auch die Standard Start URL mit einem https:// Wert versehen werden. Dann kann dieses Feld leer bleiben.';
+Es kann auch die Standard Start URL mit einem https:// versehen werden um den Start per SSL zu erzwingen. Dann kann dieses Feld leer bleiben.';
 $string['send'] = 'Senden';
 $string['services'] = 'Services';
 $string['services_help'] = 'Wählen Sie die Services, die an den Tool-Anbieter übertragen werden sollen. Es können mehrere ausgewählt werden.';
@@ -321,10 +323,12 @@ $string['share_name_help'] = 'Diese Option legt fest, ob der vollständige Nutze
 Diese Einstellung kann in der Tool-Konfiguration überschrieben wreden.';
 $string['share_roster'] = 'Tool Zugriff auf Teilnehmerliste geben';
 $string['share_roster_admin'] = 'Tool kann auf Teilnehmerliste zugreifen.';
-$string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer des Kurses zugreifen darf.';
+$string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Teilnehmerliste des Kurses von welchem dieses Tool gestartet wird, zugreifen darf.';
 $string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
+$string['show_in_course_no'] = 'Nicht anzeigen; nur benutzen, wenn eine passende Start URL eingetragen ist';
+$string['show_in_course_preconfigured'] = 'Als vorkonfiguriertes Tool anzeigen, wenn ein externes Tool hinzugefügt wird';
 $string['size'] = 'Größenparameter';
 $string['submission'] = 'Leistungen';
 $string['submissions'] = 'Einträge';
@@ -339,6 +343,9 @@ $string['successfullycreatedtooltype'] = 'Neues Tool erfolgreich angelegt!';
 $string['toggle_debug_data'] = 'Debug-Modus umschalten';
 $string['tool_config_not_found'] = 'Tool-Konfiguration für diese URL nicht gefunden';
 $string['tooldescription'] = 'Tool-Beschreibung';
+$string['tooldescription_help'] = 'Die Beschreibung des Tools, die Lehrern in der Aktivitätsliste angezeigt wird.
+
+Sie sollte beschreiben, wofür das Tool ist, was es tut und jede weitere Information enthalten, die der Lehrer haben muss.';
 $string['toolisbeingused'] = 'Dieses Tool wurde {$a} Mal verwendet.';
 $string['toolisnotbeingused'] = 'Dieses Tool wurde bisher nicht verwendet.';
 $string['toolproxy'] = 'Registrierung von externen Tools';

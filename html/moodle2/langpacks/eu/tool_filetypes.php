@@ -41,6 +41,7 @@ $string['icon'] = 'Fitxategiaren ikonoa';
 $string['mimetype'] = 'MIME mota';
 $string['pluginname'] = 'Fitxategi-motak';
 $string['source'] = 'Mota';
+$string['source_custom'] = 'Pertsonalizatu';
 $string['source_deleted'] = 'Ezabatu da';
 $string['source_modified'] = 'Aldatu da';
 $string['source_standard'] = 'Estandarra';

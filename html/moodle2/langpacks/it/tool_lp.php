@@ -144,6 +144,7 @@ $string['parentcompetency_edit'] = 'Modifica genitore';
 $string['parentcompetency_help'] = 'Il genitore sotto il quale sarà inserita la competenza. Può essere un\'altra competenza oppure la radice del quadro di competenze nel caso di competenze di primo livello.';
 $string['path'] = 'Percorso:';
 $string['planapprove'] = 'Attiva';
+$string['plancompleted'] = 'Piano di formazione completato';
 $string['plancreated'] = 'Il piano è stato creato';
 $string['plandescription'] = 'Descrizione';
 $string['planname'] = 'Nome';

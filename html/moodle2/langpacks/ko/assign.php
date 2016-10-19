@@ -167,6 +167,14 @@ $string['locksubmissionforstudent'] = '다음 학생에 대해 추가 제출을 
 $string['locksubmissions'] = '제출 잠금';
 $string['manageassignfeedbackplugins'] = '과제 피드백 플러그인 관리';
 $string['manageassignsubmissionplugins'] = '과제 제출 플러그인 관리';
+$string['markingworkflowstate_help'] = '당신의 권한에 따라, 업무흐름은 다음 중 하나가 될 수 있습니다.
+
+* 아직 채점하지 않음 - 채점자가 아직 시작하지 않음
+* 채점중 - 채점자가 현재 채점중
+* 채점 완료 - 채점자가 현재 완료하였으나, 확인이 필요할 수 있음
+* 검토중 - 최종 검토를 담당하는 선생님이 현재 확인 중
+* 발표 대기 - 최종 확인이 끝났으나, 결과를 발표하기 전 대기중
+* 발표 - 학생들이 자신의 점수와 선생님의 의견을 읽을 수 있음.';
 $string['maxattempts'] = '최대 시도';
 $string['maxgrade'] = '최대 성적';
 $string['messageprovider:assign_notification'] = '과제 통지';

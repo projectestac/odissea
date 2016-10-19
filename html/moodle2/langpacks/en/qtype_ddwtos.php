@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Blanks for {no} more choices';
 $string['answer'] = 'Answer';
+$string['blank'] = 'blank';
 $string['correctansweris'] = 'The correct answer is: {$a}';
 $string['infinite'] = 'Unlimited';
 $string['pleaseputananswerineachbox'] = 'Please put an answer in each box.';

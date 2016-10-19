@@ -71,6 +71,7 @@ $string['courseblogdisable'] = 'Os blogs de curso están desactivados';
 $string['courseblogs'] = 'Os usuarios só poden ver os blogs das persoas que comparten un curso';
 $string['deleteblogassociations'] = 'Eliminar as asociacións do blog';
 $string['deleteblogassociations_help'] = 'Se marca esta opción, os artigos do blog quedarán desvinculados deste curso ou das actividades ou recursos do curso. Os artigos do blog non serán eliminados.';
+$string['deleteentry'] = 'Eliminar entrada';
 $string['deleteexternalblog'] = 'Dar de baixa este blog externo';
 $string['deleteotagswarn'] = 'Confirma que quere eliminar estas etiquetas de todas as mensaxes do blog e retiralo do sistema?';
 $string['description'] = 'Descrición';

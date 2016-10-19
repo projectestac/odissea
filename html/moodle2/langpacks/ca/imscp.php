@@ -34,11 +34,16 @@ $string['imscp:view'] = 'Mostra contingut IMS';
 $string['keepold'] = 'Paquets arxivats';
 $string['keepoldexplain'] = 'Quants paquets haurien de ser arxivats?';
 $string['modulename'] = 'Paquet de contingut IMS';
-$string['modulename_help'] = 'Un paquet de contingut IMS permet crear paquets d\'acord amb l\'especificació d\'empaquetat de contingut IMS per mostrar al curs.';
+$string['modulename_help'] = 'Un paquet de contingut IMS és un conjunt de fitxers que s\'empaqueten d\'acord amb una norma acordada perquè puguin ser reutilitzats en diferents sistemes. El mòdul de paquet de contingut IMS habilita que aquest tipus de paquets de continguts es carreguin com un fitxer zip i s\'afegeixin a un curs com un recurs.
+
+El contingut es presenta habitualment en diverses pàgines, amb navegació entre les pàgines. Hi ha diverses opcions per mostrar el contingut en una finestra emergent, amb un menú de navegació o botons, etc.
+
+Un paquet de contingut IMS es pot utilitzar per a la presentació de contingut multimèdia i animacions.';
 $string['modulenameplural'] = 'Paquets de contingut IMS';
 $string['navigation'] = 'Navegació';
 $string['packagefile'] = 'Fitxer del paquet';
 $string['page-mod-imscp-x'] = 'Qualsevol pàgina del modul paquet de contingut IMS';
 $string['pluginadministration'] = 'Gestió IMSCP';
 $string['pluginname'] = 'Paquet de contingut IMS';
+$string['search:activity'] = 'Paquet de contingut IMS - informació del recurs';
 $string['toc'] = 'Índex';

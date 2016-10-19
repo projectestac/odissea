@@ -459,6 +459,7 @@ $string['prefixcannotbeempty'] = '<p>Fehler: Datenbanktabellen-Prefix kann nicht
 <p>Der Administrator muss dieses Problem beseitigen.</p>';
 $string['prefixtoolong'] = '<p>Fehler: Datenbanktabellen-Prefix ist zu lang ({$a->dbfamily})</p>
 <p>Der Administrator muss dieses Problem anpassen. Tabellen- Prefixes in {$a->dbfamily} sind max. {$a->maxlength} Zeichen lang.</p>';
+$string['privatefilesupload'] = 'Direktupload in die privaten Dateibereiche der Nutzer wird nicht mehr unterstützt. Upload in einen Entwurfsbereich und anschließende Verschiebung der Dateien mit core_user::add_user_private_files';
 $string['processingstops'] = 'Der Prozess wurde an dieser Stelle gestoppt. Verbleibende Schritte wurden nicht mehr durchgeführt.';
 $string['protected_cc_not_supported'] = 'Geschützte Cartridges werden nicht unterstützt.';
 $string['querystringcannotbeempty'] = 'Der Abfragetext darf nicht leer sein.';

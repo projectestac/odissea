@@ -58,6 +58,6 @@ $string['oauth2displaybuttons'] = 'Mostra els botons a la pàgina d\'inici de se
 $string['oauth2displaybuttonshelp'] = 'Mostra els botons amb els logotips de Google/Facebook/... a la part de dalt de la pàgina d\'inici de sessió. Si voleu posar els botons a un altre lloc, podeu deshabilitar aquesta opció i afegir el codi següent:
 {$a}';
 $string['pluginname'] = 'Oauth2';
-$string['signinwithanaccount'] = 'Entra amb:';
+$string['signinwithanaccount'] = 'Entra amb {$a}';
 $string['unknownfirstname'] = 'Nom desconegut';
 $string['unknownlastname'] = 'Cognom desconegut';

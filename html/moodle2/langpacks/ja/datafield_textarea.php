@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['maxbytes'] = '最大埋め込みファイルサイズ (バイト)';
-$string['maxbytes_desc'] = 'ゼロが設定された場合、デフォルトで無制限となります。';
+$string['maxbytes_desc'] = 'ゼロを設定した場合、デフォルトで無制限となります。';
 $string['pluginname'] = 'テキストエリア';

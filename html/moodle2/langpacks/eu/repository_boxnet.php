@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['apikey'] = 'API giltza';
 $string['boxnet:view'] = 'Ikusi Box biltegia';
 $string['clientid'] = 'Bezeroaren IDa';
+$string['clientsecret'] = 'Bezero sekretua';
 $string['configplugin'] = 'Box-en ezarpenak';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
 $string['information'] = 'Lortu <a href="https://app.box.com/developers/services">Box.net-erako API giltza</a> zure Moodle gunerako.';

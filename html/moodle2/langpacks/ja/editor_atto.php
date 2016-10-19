@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['autosavefailed'] = 'サーバに接続できませんでした。このページを送信した場合、あなたの変更を失うことになります。';
-$string['autosavefrequency'] = '自動保存頻度';
-$string['autosavefrequency_desc'] = 'これは自動保存間の秒数です。同じユーザが同じフォームに戻った時点で自動的にテキストがリストアされるようAttoはこの設定をもとにエディタのテキストを自動保存します。';
+$string['autosavefrequency'] = 'オートセーブ頻度';
+$string['autosavefrequency_desc'] = 'これはオートセーブ間の秒数です。同じユーザが同じフォームに戻った時点で自動的にテキストがリストアされるようAttoはこの設定をもとにエディタのテキストを自動的に保存します。';
 $string['autosavesucceeded'] = '下書きが保存されました。';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -36,7 +36,7 @@ $string['errorgroupisusedtwice'] = 'グループ「 {$a} 」は2回定義され�
 $string['errornopluginsorgroupsfound'] = 'プラグインまたはグループが見つかりませんでした。グループまたはプラグインを追加してください。';
 $string['errorpluginisusedtwice'] = 'プラグイン「 {$a} 」は2回使用されています。プラグインは1回のみ定義することができます。';
 $string['errorpluginnotfound'] = 'プラグイン「 {$a} 」を使用できません。インストールされていないようです。';
-$string['errortextrecovery'] = '残念ですが、下書きバージョンを保存することができませんでした。';
+$string['errortextrecovery'] = '残念ですが下書きバージョンを保存することができませんでした。';
 $string['infostatus'] = '情報';
 $string['pluginname'] = 'Atto HTMLエディタ';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
@@ -44,8 +44,8 @@ $string['recover'] = '回復';
 $string['settings'] = 'Attoツールバー設定';
 $string['subplugintype_atto'] = 'Attoプラグイン';
 $string['subplugintype_atto_plural'] = 'Attoプラグイン';
-$string['taskautosavecleanup'] = 'データベースから期限切れの自動保存下書きを削除する';
+$string['taskautosavecleanup'] = 'データベースから期限切れのオートセーブ下書きを削除する';
 $string['textrecovered'] = 'このテキストの下書きバージョンが自動的にリストアされました。';
 $string['toolbarconfig'] = 'ツールバー設定';
-$string['toolbarconfig_desc'] = 'ここでプラグイン一覧および表示順を設定することができます。設定にはグループ (1行あたり1件) およびそのグループに関するプラグインの順番付きリストを含みます。グループは等号によりプラグインと分離され、プラグインはカンマで分離されます。グループ名をユニークにして、ボタンを共通していることを示す必要があります。ボタンおよびグループ名は繰り返さず、半角英数字のみを使用してください。';
+$string['toolbarconfig_desc'] = 'ここではプラグイン一覧および表示順を設定することができます。設定にはグループ (1行あたり1件) およびそのグループに関するプラグインの順番付きリストを含みます。グループは等号によりプラグインと分離されプラグインはカンマで分離されます。グループ名をユニークにしてボタンを共通していることを示す必要があります。ボタンおよびグループ名は繰り返さずに半角英数字のみを使用してください。';
 $string['warningstatus'] = '警告';

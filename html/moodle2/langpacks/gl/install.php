@@ -55,10 +55,11 @@ $string['clialreadyinstalled'] = 'Xa existe o ficheiro config.php. Empregue admi
 $string['cliinstallfinished'] = 'A instalación concluíu correctamente.';
 $string['cliinstallheader'] = 'Programa de instalación de Moodle en liña de ordes {$a}';
 $string['climustagreelicense'] = 'En modo non interactivo debe aceptar a licenza especificando a opción --agree-license';
+$string['cliskipdatabase'] = 'Omitindo a instalación da base de datos.';
 $string['clitablesexist'] = 'Xa existen táboas de base de datos, a instalación CLI non pode continuar.';
 $string['compatibilitysettings'] = 'Comprobando a súa configuración PHP ...';
 $string['compatibilitysettingshead'] = 'Comprobando a súa configuración PHP ...';
-$string['compatibilitysettingssub'] = 'O seu servidor debería pasar todos estas probas para que Moodle poida funcionar correctamente.';
+$string['compatibilitysettingssub'] = 'O seu servidor debería pasar todas estas probas para que Moodle poida funcionar correctamente.';
 $string['configfilenotwritten'] = 'O script de instalación non foi quen de crear automaticamente un ficheiro config.php coas especificacións escollidas. Copie o seguinte código nun ficheiro chamado config.php e sitúe ese ficheiro no directorio raíz de Moodle.';
 $string['configfilewritten'] = 'config.php foi creado satisfactoriamente';
 $string['configurationcomplete'] = 'Configuración terminada';
@@ -75,7 +76,7 @@ $string['databasetypehead'] = 'Escolla o controlador da base de datos';
 $string['databasetypesub'] = 'Moodle admite varios tipos de servidores de base de datos. Póñase en contacto co administrador do servidor se non sabe que tipo empregar.';
 $string['databaseuser'] = 'Usuario da base de datos';
 $string['dataroot'] = 'Directorio de datos';
-$string['datarooterror'] = 'Non foi posíbel atopar ou crear o «Directorio de datos» no especificado. Corrixa a ruta ou cree o directorio manualmente.';
+$string['datarooterror'] = 'Non foi posíbel atopar ou crear o «Directorio de datos» especificado. Corrixa a ruta ou cree o directorio manualmente.';
 $string['datarootpermission'] = 'Permisos dos directorios de datos';
 $string['datarootpublicerror'] = 'O «Directorio de datos» que especificou é accesíbel directamente a través do web; debe empregar un directorio diferente.';
 $string['dbconnectionerror'] = 'Non foi posíbel conectar coa base de datos que especificou. Comprobe a configuración da base de datos.';
@@ -136,8 +137,7 @@ $string['fileuploads'] = 'Envío de ficheiros';
 $string['fileuploadserror'] = 'Debe estar activado';
 $string['fileuploadshelp'] = '<p>O envío de ficheiros semella estar desactivado no seu servidor.</p>
 
-<p>Moodle pode ser instalado, mais, sen esta funcionalidade, vostede non poderá enviar
-   ficheiros para os cursos nin imaxes de perfil dos novos usuario.</p>
+<p>Moodle pode ser instalado, mais, sen esta funcionalidade, vostede non poderá enviar ficheiros para os cursos nin imaxes de perfil dos novos usuarios.</p>
 
 <p>Para activar o envío de ficheiros, vostede (ou o administrador do sistema)
    necesita editar o ficheiro php.ini principal e cambiar o axuste de
@@ -172,7 +172,7 @@ $string['memorylimithelp'] = '<p>O límite de memoria PHP no seu servidor está 
 $string['mssqlextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión MSSQL de modo que poida comunicarse co SQL*Server. Comprobe o ficheiro php.ini ou volva a compilar PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión MySQLi de modo que poida comunicarse co MySQL. Comprobe o ficheiro php.ini ou volva a compilar PHP. A extensión MySQLi non está dispoñíbel para PHP 4';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
-$string['nativemariadbhelp'] = 'A base de datos é o lugar onde se almacenan os datos e configuracións de Moodle e debe configurarse aquí.</p>
+$string['nativemariadbhelp'] = '<p>A base de datos é o lugar onde se almacenan os datos e configuracións de Moodle e debe configurarse aquí.</p>
 <p>O nome da base de datos, nome de usuario e contrasinal son campos obrigatorios; o prefixo da táboa é opcional.</p>
 <p>Se actualmente non existira a base de datos, e o usuario que Vostede especifique ten permisos, Moodle intentará crear unha nova base de datos coas configuracións e os permisos correctos.</p>
 <p>Este controlador non é compatíbel co motor antigo MyISAM.</p>';
@@ -203,9 +203,12 @@ $string['pathsroparentdataroot'] = 'O directorio principal ({$a->parent}) non te
 $string['pathssubadmindir'] = 'Moi poucos enderezos web empregan /admin como URL especial para
 permitirlle acceder a un panel de control ou semellante. Desafortunadamente, isto entra en conflito coa localización estándar das páxinas de administración de Moodle. Vostede pode corrixir isto
 renomeando o directorio admin na súa instalación, e poñendo aquí ese novo nome.  Por exemplo: <em>moodleadmin</em>. Iso corrixirá as ligazóns admin en Moodle.';
-$string['pathssubdataroot'] = 'Necesitase un lugar no que Moodle poida gardar os ficheiros enviados. Este directorio debe ser lexíbel E ESCRIBÍBEL polo usuario do servidor web
-(normalmente «nobody», «apache», «www-data»), mais non debería ser accesíbel directamente desde o web. Se non existe o instalador tentará crealo.';
-$string['pathssubdirroot'] = 'Ruta completa do directorio de instalación de Moodle.';
+$string['pathssubdataroot'] = '<p>Necesitase un lugar no que Moodle poida gardar os ficheiros enviados polos usuarios</p>
+<p>Este directorio debe ser lexíbel E ESCRIBÍBEL polo usuario do servidor web
+(normalmente «nobody», «apache», «www-data»)</p>
+<p>Non debería ser accesíbel directamente desde o web.</p>
+<p>Se non existe o instalador tentará crealo.</p>';
+$string['pathssubdirroot'] = '<p>Ruta completa do directorio de instalación de Moodle.</p>';
 $string['pathssubwwwroot'] = 'Enderezo web completo para acceder a Moodle.
 Non é posíbel acceder a Moodle empregando enderezos múltiplos.
 Se o seu sitio ten varios enderezos públicos debe configurar encamiñamentos permanentes en todos eles, agás neste.

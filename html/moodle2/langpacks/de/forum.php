@@ -506,11 +506,11 @@ $string['trackingoff'] = 'Aus';
 $string['trackingon'] = 'Vorgegeben';
 $string['trackingoptional'] = 'Optional';
 $string['trackingtype'] = 'Lesetracking';
-$string['trackingtype_help'] = 'Wenn diese Option aktiviert ist, sehen Teilnehmer/innen gelesene und ungelesene Beiträge unterschiedlich markiert im Forum. Es stehen drei Optionen zur Verfügung:
+$string['trackingtype_help'] = 'Wenn diese Option aktiviert ist, sehen Teilnehmer/innen gelesene und ungelesene Beiträge unterschiedlich im Forum markiert.
 
-* Optional - Die Markierung ist ein- und ausschaltbar mit einem Link im Block Administration.
-* Verpflichtend/Erzwungen - Die Markierung ist immer an
-* Aus - Die Markierung ist immer aus. Gelesene und ungelesene Beiträge werden nicht erfasst.';
+* Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür einen Eintrag in der Forumsadministration, wenn sie vorher das Forentracking in ihren persönlichen Einstellungen aktiviert haben.
+* Verpflichtend - Die Markierung ist immer an, egal ob Teilnehmer/innen das Forentracking in ihren persönlichen Einstellungen aktiviert haben oder nicht.
+* Aus - Die Markierung ist immer aus. Gelesene und ungelesene Beiträge werden gleich behandelt.';
 $string['unread'] = 'Ungelesen';
 $string['unreadposts'] = 'Ungelesene Beiträge';
 $string['unreadpostsnumber'] = '{$a} ungelesene Beiträge';

@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'さらに {no} 件の空白のドロップゾー�
 $string['addmoreimages'] = 'さらに {no} 件の空白のドラッグ可能アイテムを追加する';
 $string['answer'] = '解答';
 $string['bgimage'] = '背景イメージ';
+$string['blank'] = '空白';
 $string['correctansweris'] = '正解: {$a}';
 $string['draggableimage'] = 'ドラッグ可能イメージ';
 $string['draggableitem'] = 'ドラッグ可能アイテム';

@@ -75,6 +75,8 @@ $string['eventgroupcreated'] = 'S\'ha creat el grup';
 $string['eventgroupdeleted'] = 'S\'ha suprimit el grup';
 $string['eventgroupingcreated'] = 'S\'ha creat l\'agrupament';
 $string['eventgroupingdeleted'] = 'S\'ha suprimit l\'agrupament';
+$string['eventgroupinggroupassigned'] = 'S\'ha assignat el grup a l\'agrupament';
+$string['eventgroupinggroupunassigned'] = 'S\'ha tret el grup a l\'agrupament';
 $string['eventgroupingupdated'] = 'S\'ha actualitzat l\'agrupament';
 $string['eventgroupmemberadded'] = 'S\'ha afegit el membre del grup';
 $string['eventgroupmemberremoved'] = 'S\'ha suprimit el membre del grup';
@@ -84,7 +86,7 @@ $string['filtergroups'] = 'Filtra grups per:';
 $string['group'] = 'Grup';
 $string['groupaddedsuccesfully'] = 'S\'ha afegit amb èxit el grup {$a}';
 $string['groupaddedtogroupingsuccesfully'] = 'El grup {$a->groupname} s\'ha afegit a l\'agrupació  {$a->groupingname} amb èxit.';
-$string['groupby'] = 'Crea grups basats en el nombre de';
+$string['groupby'] = 'Crea grups automàticament basats en';
 $string['groupdescription'] = 'Descripció del grup';
 $string['groupinfo'] = 'Informació sobre el grup seleccionat';
 $string['groupinfomembers'] = 'Informació sobre els membres seleccionats';
@@ -137,6 +139,8 @@ $string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de t
 * El primer registre conté una llista de noms de camps que defineixen el format de la resta del fitxer
 * El nom de camp requerit és groupname
 * Els camps description, enrolmentkey, picture i hidepicture són opcionals';
+$string['includeonlyactiveenrol'] = 'Inclou sols les inscripcions actives';
+$string['includeonlyactiveenrol_help'] = 'Si s\'habilita, els usuaris amb inscripció desactivada no seran inclosos als grups.';
 $string['javascriptrequired'] = 'Aquesta pàgina requereix Javascript';
 $string['members'] = 'Membres per grup';
 $string['membersofselectedgroup'] = 'Membres de:';
@@ -147,35 +151,7 @@ $string['namingscheme_help'] = 'El símbol de l\'arrova (@) es pot fer servir pe
 El símbol de l\'encoixinat (#) es pot fer servir per crear grups amb noms que contenen números. Per exemple Grup # generarà grups anomenats Grup 1, Grup 2, Grup 3, ...';
 $string['newgrouping'] = 'Nou agrupament';
 $string['newpicture'] = 'Nova imatge';
-$string['newpicture_help'] = '<p>Podeu penjar al servidor una imatge que tingueu al vostre ordinador que servirà per representar-vos en diferents llocs.</p>
-
-<p>Per aquesta raó, tot i que podeu utilitzar la imatge que vulgueu, la millor idea és posar un primer pla de la vostra cara.</p>
-
-<p>La imatge ha d\'estar en format JPG o PNG (normalment el nom del fitxer ha d\'acabar en .jpg o .png).</p>
-
-<p>Podeu obtenir aquest fitxer mitjançant qualsevol dels mètodes següents:</p>
-
-<OL>
-
-  <li>Si feu servir una càmaradigital, molt probablement les fotos es transferiran al vostre ordinador en el format correcte.</li>
-
-  <li>Podeu escanejar una fotografia que tingueu en paper. Assegureu-vos que la deseu en format JPG o PNG. </li>
-
-  <li>Si sou artistes, podeu fer-vos un autoretrat amb una programa de dibuix.</li>
-
-  <li>Finalment, podeu "robar" imatges del web. <a target="google" href="http://images.google.com/">http://images.google.com</a> és un magnífic lloc on cercar imatges. Un cop en trobeu una podeu desar-la al vostre ordinador.</li>
-
-</ol>
-
-<p>Per penjar la imatge feu clic al botó "Navega" d\'aquesta pàgina i seleccioneu la imatge al vostre disc dur.</p>
-
-<p>NOTA: assegureu-vos que l\'arxiu no supera la mida màxima indicada o no es podrà penjar.</p>
-
-<p>En acabat feu clic al botó "Actualitza perfil" al capdavall pàgina i la imatge es retallarà i es reduirà a una mida de 100x100 píxels. </p>
-
-<p>Quan torneu a visualitzar el vostre perfil és possible que no hagi canviat la imatge. En aquest cas feu servir el comandament "Actualitza" o "Reload" del navegador.
-
-  del vostre programa navegador.</p>';
+$string['newpicture_help'] = 'Seleccioneu una imatge en format JPG o PNG. La imatge es retallarà i escalarà a un quadrat de 100x100 píxels.';
 $string['noallocation'] = 'Sense ubicació';
 $string['nogroup'] = 'Sense grup';
 $string['nogrouping'] = 'Sense agrupaments';

@@ -203,7 +203,7 @@ $string['lti:grade'] = 'Voir les notes retournées par un outil externe';
 $string['lti_launch_error'] = 'Une erreur est survenue lors du lancement de l\'outil externe :';
 $string['lti_launch_error_tool_request'] = '<p>Pour demander à un administrateur de terminer la configuration de cet outil, cliquez <a href="{$a->admin_request_url}" target="_top">ici</a>.</p>';
 $string['lti_launch_error_unsigned_help'] = '<p>Cette erreur est vraisemblablement le résultat du manque de la clef client et du secret partagé pour ce fournisseur d\'outil.</p>
-<p>Si vous êtes en possession de la clef utilisateur et du secret partagé, veuillez les saisir lors de la mise en place de l\'instance de l\'outil externe (assurez-vous que les réglages avancés sont affichés).</p>
+<p>Si vous êtes en possession de la clef client et du secret partagé, veuillez les saisir lors de la mise en place de l\'instance de l\'outil externe (assurez-vous que les réglages avancés sont affichés).</p>
 <p>Ou alors, vous pouvez <a href="{$a->course_tool_editor}">créer une configuration</a> du fournisseur d\'outil au niveau du cours.</p>';
 $string['lti:manage'] = 'Être formateur lors qu\'un outil externe est lancé';
 $string['lti:requesttooladd'] = 'Demander la configuration d\'outils externes pour tout le site';

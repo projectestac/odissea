@@ -73,7 +73,7 @@ $string['editservice'] = 'Service bearbeiten: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Aktiviert';
 $string['enabledocumentation'] = 'Entwicklerdokumentation aktivieren';
 $string['enabledocumentationdescription'] = 'Eine ausführliche Webservicedokumentation ist für die aktivierten Protokolle verfügbar.';
-$string['enablemobilewsoverview'] = 'Öffnen Sie die Seite {$a->manageservicelink}. Haken Sie die Einstellung \'{$a->enablemobileservice}\' an. Alle weiteren Einstellungen werden automatisch gesetzt.
+$string['enablemobilewsoverview'] = 'Öffnen Sie die Seite {$a->manageservicelink} und aktivieren Sie die Einstellung \'{$a->enablemobileservice}\'. Alle weiteren Einstellungen werden automatisch gesetzt, um die Moodle Mobile App verwenden zu können.
 
 Status: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Protokolle aktivieren';

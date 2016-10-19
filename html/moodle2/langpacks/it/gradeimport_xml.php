@@ -34,6 +34,7 @@ $string['errincorrectuseridnumber'] = 'Errore - l\'idnumber \'{$a}\' dal file di
 $string['error'] = 'Si stanno verificando errori';
 $string['errorduringimport'] = 'Si è verificato un errore durante l\'importazione: {$a}';
 $string['fileurl'] = 'URL del file remoto';
+$string['fileurl_help'] = 'Il campo serve per indicare l\'URL remoto di un server dal quale prendere i dati, ad esempio uno student information system.';
 $string['importxml'] = 'Importazione XML';
 $string['importxml_help'] = 'Le valutazioni possono essere importate tramite un file XML contenente i codici identificativi degli utenti e delle attività. Per conoscere il formato da utilizzare, puoi esportare delle valutazioni in formato XML e visualizzare il formato del file.';
 $string['pluginname'] = 'File XML';

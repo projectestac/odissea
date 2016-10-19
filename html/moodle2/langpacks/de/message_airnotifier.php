@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['airnotifieraccesskey'] = 'Airnotifier-Zugangsschlüssel';
 $string['airnotifierappname'] = 'Airnotifier-Name der App';
 $string['airnotifier:managedevice'] = 'Geräte verwalten';
-$string['airnotifiermobileappname'] = 'Name der App';
+$string['airnotifiermobileappname'] = 'Name der mobilen App';
 $string['airnotifierport'] = 'Airnotifier-Port';
 $string['airnotifierurl'] = 'Airnotifier-URL';
 $string['configairnotifieraccesskey'] = 'Der Zugangsschlüssel wird benutzt, wenn Moodle eine Verbindung zum Airnotifier-Server aufgebaut.';

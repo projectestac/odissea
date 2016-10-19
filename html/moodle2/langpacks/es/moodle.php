@@ -29,29 +29,30 @@ $string['abouttobeinstalled'] = 'a punto de ser instalado';
 $string['action'] = 'Acción';
 $string['actionchoice'] = '¿Qué quiere hacer con el archivo \'{$a}\'?';
 $string['actions'] = 'Acciones';
-$string['active'] = 'Activa';
+$string['active'] = 'Activo';
 $string['activeusers'] = 'Usuarios activos';
 $string['activities'] = 'Actividades';
 $string['activities_help'] = 'Las actividades (tales como foros, cuestionarios y wikis) posibilitan agregar contenidos interactivos al curso';
 $string['activity'] = 'Actividad';
-$string['activityclipboard'] = 'Moviendo la actividad: {$a}';
+$string['activityclipboard'] = 'Moviendo esta actividad: {$a}';
 $string['activityiscurrentlyhidden'] = 'Lo sentimos, esta actividad está oculta';
-$string['activitymodule'] = 'Módulo';
+$string['activitymodule'] = 'Módulo de Actividad';
 $string['activitymodules'] = 'Módulos de actividad';
 $string['activityreport'] = 'Informe de actividades';
 $string['activityreports'] = 'Informes de actividad';
 $string['activityselect'] = 'Seleccionar esta actividad para moverla';
 $string['activitysince'] = 'Actividad desde {$a}';
+$string['activitytypetitle'] = '{$a->activity} - {$a->type}';
 $string['activityweighted'] = 'Actividad por usuario';
 $string['add'] = 'Agregar';
-$string['addactivity'] = 'Agregar actividad...';
-$string['addactivitytosection'] = 'Añadir una actividad a la sección \'{$a}\'';
-$string['addadmin'] = 'Agregar administrador';
-$string['addblock'] = 'Agregar un bloque';
-$string['addcomment'] = 'Agregar un comentario...';
-$string['addcountertousername'] = 'Crear usuario agregando un número al nombre de usuario';
-$string['addcreator'] = 'Agregar creador de curso';
-$string['adddots'] = 'Agregar...';
+$string['addactivity'] = 'Agrega una actividad...';
+$string['addactivitytosection'] = 'Añade una actividad a la sección \'{$a}\'';
+$string['addadmin'] = 'Agrega un administrador';
+$string['addblock'] = 'Agrega un bloque';
+$string['addcomment'] = 'Agrega un comentario...';
+$string['addcountertousername'] = 'Crea un usuario agregando un número al nombre de usuario';
+$string['addcreator'] = 'Agrega un creador de curso';
+$string['adddots'] = 'Agrega...';
 $string['added'] = 'Agregado {$a}';
 $string['addedrecip'] = 'Agregado nuevo receptor {$a}';
 $string['addedrecips'] = 'Agregados nuevos receptores {$a}';
@@ -59,25 +60,25 @@ $string['addedtogroup'] = 'Agregado al grupo "{$a}"';
 $string['addedtogroupnot'] = 'No agregado al grupo "{$a}"';
 $string['addedtogroupnotenrolled'] = 'No agregado al grupo "{$a}" porque no está matriculado en el curso';
 $string['addfilehere'] = 'Añada archivo(s) aquí';
-$string['addinganew'] = 'Agregando {$a}';
-$string['addinganewto'] = 'Agregando {$a->what} a {$a->to}';
+$string['addinganew'] = 'Agregando un nuevo {$a}';
+$string['addinganewto'] = 'Agregando un nuevo {$a->what} a {$a->to}';
 $string['addingdatatoexisting'] = 'Agregando información';
 $string['additionalnames'] = 'Nombres adicionales';
 $string['addlinkhere'] = 'Añada el enlace aquí';
-$string['addnewcategory'] = 'Agregar nueva categoría';
-$string['addnewcourse'] = 'Agregar un nuevo curso';
-$string['addnewuser'] = 'Agregar usuario';
-$string['addnousersrecip'] = 'Agregar a la lista de destinatarios a los usuarios que no han accedido a este {$a}';
-$string['addpagehere'] = 'Añadir texto aquí';
-$string['addresource'] = 'Agregar recurso...';
-$string['addresourceoractivity'] = 'Añadir una actividad o un recurso';
-$string['addresourcetosection'] = 'Añadir recurso a la sección \'{$a}\'';
+$string['addnewcategory'] = 'Agrega otra categoría';
+$string['addnewcourse'] = 'Agrega otro curso';
+$string['addnewuser'] = 'Agregar un usuario';
+$string['addnousersrecip'] = 'Agrega nuevos destinatarios a la lista  {$a}';
+$string['addpagehere'] = 'Añade texto aquí';
+$string['addresource'] = 'Agrega un recurso...';
+$string['addresourceoractivity'] = 'Añade una actividad o un recurso';
+$string['addresourcetosection'] = 'Añade un recurso a la sección \'{$a}\'';
 $string['address'] = 'Dirección';
-$string['addstudent'] = 'Agregar estudiante';
-$string['addsubcategory'] = 'Agregar una subcategoría';
-$string['addteacher'] = 'Agregar profesor';
+$string['addstudent'] = 'Agrega un estudiante';
+$string['addsubcategory'] = 'Agrega una subcategoría';
+$string['addteacher'] = 'Agrega un profesor';
 $string['admin'] = 'Admin';
-$string['adminhelpaddnewuser'] = 'Crear una nueva cuenta manualmente';
+$string['adminhelpaddnewuser'] = 'Crear manualmente una nueva cuenta  de usuario';
 $string['adminhelpassignadmins'] = 'Los administradores pueden hacer cualquier cosa en cualquier parte del sitio';
 $string['adminhelpassigncreators'] = 'Los creadores pueden crear nuevos cursos';
 $string['adminhelpassignsiteroles'] = 'Aplicar roles definidos de sitio a usuarios específicos';
@@ -456,6 +457,7 @@ $string['databaseupgradeblocks'] = 'La versión de los bloques es {$a}';
 $string['databaseupgradegroups'] = 'La versión de los grupos es {$a}';
 $string['databaseupgradelocal'] = 'La versión de personalización de la base de datos local es ahora {$a}';
 $string['databaseupgrades'] = 'Actualizando la base de datos';
+$string['dataformats'] = 'Formatos de datos';
 $string['date'] = 'Fecha';
 $string['datechanged'] = 'Fecha cambiada';
 $string['datemostrecentfirst'] = 'Fecha - primero el más reciente';
@@ -464,6 +466,10 @@ $string['day'] = 'día';
 $string['days'] = 'días';
 $string['decodinginternallinks'] = 'Decodificando enlaces internos';
 $string['default'] = 'Por defecto';
+$string['defaultcompetencescale'] = 'Escala de competencia por defecto';
+$string['defaultcompetencescaledesc'] = 'Una escala de calificación binaria que no proporciona ninguna información adicional más allá de si alguien a demostrado competencia o no.';
+$string['defaultcompetencescalenotproficient'] = 'No competente aún';
+$string['defaultcompetencescaleproficient'] = 'Competente';
 $string['defaultcoursestudent'] = 'Estudiante';
 $string['defaultcoursestudentdescription'] = 'Los estudiantes tienen por lo general menos privilegios dentro de un curso.';
 $string['defaultcoursestudents'] = 'Estudiantes';
@@ -571,6 +577,7 @@ $string['editorresettodefaults'] = 'Volver a valores por defecto';
 $string['editorsettings'] = 'Ajustes del editor';
 $string['editorshortcutkeys'] = 'Atajos del editor';
 $string['editsection'] = 'Editar sección';
+$string['editsectionname'] = 'Modificar nombre de sección';
 $string['editsettings'] = 'Editar ajustes';
 $string['editsummary'] = 'Editar informe';
 $string['editthisactivity'] = 'Editar esta actividad';
@@ -579,6 +586,9 @@ $string['edittitle'] = 'Editar título';
 $string['edittitleinstructions'] = 'Esc para cancelar, Enter para finalizar';
 $string['edituser'] = 'Editar usuario';
 $string['edulevel'] = 'Nivel de formación';
+$string['edulevel_help'] = '* Enseñanza - acciones realizadas por un profesor, p.e.: actualizar un recurso
+* Participación - acciones realizadas por un estudiante, p.e.: enviar un mensaje a un foro
+* Otro - acciones realizadas por un usuario con un rol que no es profesor o estudiante';
 $string['edulevelother'] = 'Otro';
 $string['edulevelparticipating'] = 'Participando';
 $string['edulevelteacher'] = 'Enseñando';
@@ -735,6 +745,7 @@ $string['eventcoursemoduleviewed'] = 'Módulo de curso visto';
 $string['eventcourseresetended'] = 'Reinicio de curso finalizado';
 $string['eventcourseresetstarted'] = 'Reinicio de curso iniciado';
 $string['eventcourserestored'] = 'Curso restaurado';
+$string['eventcoursesectiondeleted'] = 'Selección de curso eliminada';
 $string['eventcoursesectionupdated'] = 'Sección de curso actualizado';
 $string['eventcourseupdated'] = 'Curso actualizado';
 $string['eventcourseuserreportviewed'] = 'Informe usuario del curso visto';
@@ -742,6 +753,7 @@ $string['eventcourseviewed'] = 'Curso visto';
 $string['eventemailfailed'] = '';
 $string['eventname'] = 'Nombre evento';
 $string['eventrecentactivityviewed'] = 'Actividad reciente vista';
+$string['eventsearchindexed'] = 'Buscar datos indexados';
 $string['eventunknownlogged'] = 'Evento desconocido';
 $string['eventusercreated'] = 'Usuario creado';
 $string['eventuserdeleted'] = 'Usuario eliminado';
@@ -997,6 +1009,7 @@ $string['lastyear'] = 'Último año';
 $string['latestlanguagepack'] = 'Ver la última versión del idioma en moodle.org';
 $string['layouttable'] = 'Tabla esquema';
 $string['leavetokeep'] = 'Dejar en blanco para mantener la contraseña actual';
+$string['legacylogginginuse'] = 'Este sitio tiene habilitada la escritura al registro heredado. Escribir a éste almacenamiento de registro es obsoleto. Por favor escriba a un almacenamiento de registro soportado como "estándar" o " externo".';
 $string['legacythemeinuse'] = 'El sitio aparece en modo de compatibilidad porque su navegador es demasiado antiguo.';
 $string['license'] = 'Licencia';
 $string['licenses'] = 'Licencias';
@@ -1023,24 +1036,7 @@ $string['loginaspasswordexplain'] = '<p>Debe introducir la "loginas password" es
 $string['login_failure_logs'] = 'Registro de fallos de acceso';
 $string['loginguest'] = 'Entrar como invitado';
 $string['loginsite'] = 'Entrar al sitio';
-$string['loginsteps'] = 'Hola. Para acceder al sistema tómese un minuto para
-crear una cuenta.
-Cada curso puede disponer de una "clave de acceso"
-que sólo tendrá que usar la primera vez.
-Estos son los pasos:
-<ol>
-<li>Rellene el <a href="{$a}">Formulario de Registro</a> con sus datos.</li>
-<li>El sistema le enviará un correo para verificar que su dirección sea correcta.</li>
-<li>Lea el correo y confirme su matrícula.</li>
-<li>Su registro será confirmado y usted podrá acceder al curso.</li>
-<li>Seleccione el curso en el que desea participar.</li>
-<li>Si algún curso en particular le solicita una "contraseña de acceso"
-utilice la que le facilitaron cuando se matriculó.
-Así quedará matriculado.</li>
-<li>A partir de ese momento no necesitará utilizar más que su nombre de usuario y contraseña
-en el formulario de la página
-para entrar a cualquier curso en el que esté matriculado.</li>
-</ol>';
+$string['loginsteps'] = 'Para tener acceso completo al sitio necesita crear una cuenta.';
 $string['loginstepsnone'] = '<p>¡Hola!</p>
 <p>Para acceder a todos los cursos necesita crear una cuenta.</p>
 <p>Todo lo que tiene que hacer es inscribirse en esta página.</p>
@@ -1063,6 +1059,7 @@ $string['manageblocks'] = 'Bloques';
 $string['managecategorythis'] = 'Gestionar esta categoría';
 $string['managecourses'] = 'Gestionar cursos';
 $string['managedatabase'] = 'Administrar la base de datos';
+$string['managedataformats'] = 'Manejar formatos de datos';
 $string['manageeditorfiles'] = 'Gestionar archivos usados por el editor';
 $string['managefilters'] = 'Filtros';
 $string['managemodules'] = 'Administrar módulos';
@@ -1100,6 +1097,8 @@ $string['messageprovider:availableupdate'] = 'Notificaciones de actualización d
 $string['messageprovider:backup'] = 'Notificaciones de copia de seguridad';
 $string['messageprovider:badgecreatornotice'] = 'Notificaciones del creador de Insignias';
 $string['messageprovider:badgerecipientnotice'] = 'Notificaciones a los receptores de Insignias';
+$string['messageprovider:competencyplancomment'] = 'Comentario enviado en un plan de aprendizaje';
+$string['messageprovider:competencyusercompcomment'] = 'Comentario enviado a una competencia';
 $string['messageprovider:courserequestapproved'] = 'Notificacíón de aprobación de solicitud de creación de curso';
 $string['messageprovider:courserequested'] = 'Notificación de solicitud de creación de curso';
 $string['messageprovider:courserequestrejected'] = 'Notificacíón de rechazo de solicitud de creación de curso';
@@ -1194,6 +1193,7 @@ $string['myhome'] = 'Área personal';
 $string['mymoodledashboard'] = 'Mi panel de control Moodle';
 $string['myprofile'] = 'Mi perfil';
 $string['name'] = 'Nombre';
+$string['namedfiletoolarge'] = 'El fichero \'{$a->filename}\' es muy grande y no puede subirse';
 $string['nameforlink'] = '¿Cómo quiere llamar a este enlace?';
 $string['nameforpage'] = 'Nombre';
 $string['navigation'] = 'Navegación';
@@ -1203,6 +1203,7 @@ $string['never'] = 'Nunca';
 $string['neverdeletelogs'] = 'Nunca borrar los registros';
 $string['new'] = 'Nuevo';
 $string['newaccount'] = 'Nueva cuenta';
+$string['newactivityname'] = 'Nuevo nombre para actividad {$a}';
 $string['newcourse'] = 'Nuevo curso';
 $string['newpassword'] = 'Nueva contraseña';
 $string['newpasswordfromlost'] = '<strong>AVISO:</strong> Su<strong>Contraseña actual</strong> ha sido enviada en el <strong>segundo</strong> de los dos correos electrónicos enviados como parte del proceso de recuperación de la contraseña perdida. Asegúrese de que ha recibido la nueva contraseña antes de continuar con esta pantalla.';
@@ -1256,6 +1257,7 @@ máximo permitido, en bites, pues no se cargará.
 es mayor a 100 x 100 píxeles se cortará.
 <P>Cuando acabe de cambiar su imagen es posible que no vea el cambio; si eso sucede
 actualice la página (oprimiendo F5 o el botón actualizar).';
+$string['newsectionname'] = 'Nuevo nombre para la sección {$a}';
 $string['newsitem'] = 'ítem de noticias';
 $string['newsitems'] = 'ítems de noticias';
 $string['newsitemsnumber'] = 'Items de noticias para ver';
@@ -1671,6 +1673,8 @@ $string['selectacourse'] = 'Seleccionar un curso';
 $string['selectacoursesite'] = 'Seleccione un curso o un sitio';
 $string['selectagroup'] = 'Seleccionar un grupo';
 $string['selectall'] = 'Seleccionar todos';
+$string['selectallusersonpage'] = 'Seleccione a todos los usuarios en esta página';
+$string['selectalluserswithcount'] = 'Seleccione a todos los usarios {$a}';
 $string['selectamodule'] = 'Por favor, seleccione un módulo de actividad';
 $string['selectanaction'] = 'Seleccionar acciones';
 $string['selectanoptions'] = 'Seleccione una opción';

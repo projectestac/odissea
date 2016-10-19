@@ -32,11 +32,15 @@ També cal tenir en compte que en aquest cas no es podran registrar les accions 
 $string['displayinline'] = 'Dins d\'una pàgina del curs';
 $string['displaypage'] = 'En una pàgina separada';
 $string['dnduploadmakefolder'] = 'Descomprimeix els fitxers i crea una carpeta nova';
+$string['downloadfolder'] = 'Descarrega la carpeta';
+$string['eventallfilesdownloaded'] = 'S\'ha descarregat l\'arxiu Zip o la carpeta';
 $string['eventfolderupdated'] = 'Carpeta actualitzada';
 $string['folder:addinstance'] = 'Afegeix una carpeta nova';
 $string['foldercontent'] = 'Fitxers i subcarpetes';
 $string['folder:managefiles'] = 'Gestiona fitxers al mòdul Carpeta';
 $string['folder:view'] = 'Visualitza el contingut de la carpeta';
+$string['maxsizetodownload'] = 'Mida màxima de la carpeta a descarregar (MB)';
+$string['maxsizetodownload_help'] = 'Mida màxima de la carpeta que es podrà descarregar com un fitxer comprimit. Si s\'estableix a zero, la mida de la carpeta serà il·limitada.';
 $string['modulename'] = 'Carpeta';
 $string['modulename_help'] = 'El mòdul de carpeta permet al professorat mostrar un nombre de fitxers relacionats dins d\'una sola carpeta, cosa que redueix el desplaçament per la pàgina del curs. Un fitxer comprimit es pot carregar i descomprimir per a la seva visualització, o crear una carpeta buida i enviar els fitxers a ella.
 
@@ -50,5 +54,7 @@ $string['page-mod-folder-x'] = 'Qualsevol pàgina del mòdul de fitxers';
 $string['pluginadministration'] = 'Administració de carpetes';
 $string['pluginname'] = 'Carpeta';
 $string['search:activity'] = 'Carpeta';
+$string['showdownloadfolder'] = 'Mostra el botó de descàrrega de la carpeta';
+$string['showdownloadfolder_help'] = 'Si s\'estableix a «sí», es mostrarà un botó que permetrà descarregar el contingut de la carpeta en un fitxer comprimit.';
 $string['showexpanded'] = 'Mostra les subcarpetes expandides.';
 $string['showexpanded_help'] = 'Si s\'habilita mostrarà les subcarpetes expandides per defecte. En cas contrari les subcarpetes es mostraran col·lapsades.';

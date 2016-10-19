@@ -170,7 +170,7 @@ $string['configbloglevel'] = 'Diese Einstellung erlaubt es, die Sichtbarkeit von
 $string['configcalendarcustomexport'] = 'Eigenen Datumsbereich beim Kalenderexport aktivieren';
 $string['configcalendarexportsalt'] = 'Dieser Zufallstext (hash salt) wird benutzt, um die Sicherheit der Authentifikationstoken für den Kalenderexport zu erhöhen. Bitte beachten Sie, dass alle aktuellen Token ungültig werden, wenn Sie diesen Text ändern.';
 $string['configcookiehttponly'] = 'Diese Funktion aktiviert neue Funktionen unter PHP 5.2.0. Um bestimmte XSS-Angriffe zu verhindern, werden Cookies nur über echte HTTP--Anfragen versandt. Cookies sollten nicht für Skripte zugänglich sein. Diese Funktion wird nicht von allen Browsern unterstützt. Es kann auch sein, dass im aktuellen Code noch nicht überall die Funktion unterstützt wird.';
-$string['configcookiesecure'] = 'Wenn Ihr Server über HTTPS-Verbindungen erreicht wird, ist es empfehlenswert die Funktion zum Übertragen sicherer Cookies zu aktivieren. Wenn die Funktion aktiviert wird müssen Sie sicherstellen, dass der Server nicht über HTTP-Verbindungen erreichbar ist bzw. eine Umleitung an https:// Adressen besteht. Falls die <em>wwwroot</em> Adresse nicht mit https:// beginnt wird die Einstellung automatisch wieder deaktiviert. .';
+$string['configcookiesecure'] = 'Wenn Ihr Server über HTTPS-Verbindungen erreicht wird, ist es empfehlenswert die Funktion zum Übertragen sicherer Cookies zu aktivieren. Wenn die Funktion aktiviert wird müssen Sie sicherstellen, dass der Server nicht über HTTP-Verbindungen erreichbar ist bzw. eine Umleitung an https:// Adressen besteht und idealerweise HSTS-Header versendet werden. Falls die <em>wwwroot</em> Adresse nicht mit https:// beginnt wird die Einstellung automatisch wieder deaktiviert.';
 $string['configcountry'] = 'Diese Option legt das Land fest, das als Vorgabe für neue Nutzerkonten eingetragen ist. Wenn Nutzer/innen ihr Land selber eintragen sollen, lassen Sie das Feld leer.';
 $string['configcourseoverviewfilesext'] = 'Liste von Dateitypen, die für die Kursbeschreibung erlaubt sind (Komma getrennt)';
 $string['configcourseoverviewfileslimit'] = 'Diese Option legt fest, wie viele Dateien maximal in einer Kursbeschreibung hinzugefügt werden dürfen.';
@@ -454,11 +454,16 @@ $string['density'] = 'LaTeX Größe';
 $string['denyemailaddresses'] = 'E-Mail-Domains zurückweisen';
 $string['development'] = 'Entwicklung';
 $string['devicedetectregex'] = 'Reguläre Ausdrücke zur Geräteerkennung';
-$string['devicedetectregex_desc'] = '<p>Standardmäßig werden von Moodle die Gerätetypen Standard (PCs, Laptops, usw.), Mobile (Smartphones und andere digitale Endgeräte), Tablet (iPads, Android-Tablets) und Legacy (veraltete Geräte mit Internet Explorer 6) unterschieden. In der Designauswahl können diesen Gerätetypen unterschiedliche Designs zugewiesen werden.
+$string['devicedetectregex_desc'] = '<p>Standardmäßig werden von Moodle folgende Gerätetypen unterschieden:
+<br>- Standard (PCs, Laptops, usw.),
+<br>- Mobile (Smartphones und andere kleine digitale Endgeräte),
+<br>- Tablet (iPads, Android-Tablets),
+<br>- Legacy (veraltete Geräte mit Internet Explorer 6).</p>
+<p>In der Designauswahl können diesen Gerätetypen unterschiedliche Designs zugewiesen werden.</p>
 
-Die Einstellung erlaubt zur Erkennung der speziellen Gerätetypen auch reguläre Ausdrücke, welche dann Vorrang vor den standardmäßigen Gerätetypen haben.</p>
+<p>Die Einstellung erlaubt zur Erkennung von speziellen Gerätetypen auch reguläre Ausdrücke, welche dann Vorrang vor den standardmäßigen Gerätetypen haben.</p>
 
-<p>Mit dem regulären Ausdruck \'/(MIDP-1.0|Maemo|Windows CE)/\' könnten Sie beispielsweise häufig verwendete FeaturePhones erkennen und den Rückgabewert \'FeaturePhone\' angeben. Dies würde \'FeaturePhone\' zur Designauswahl hinzufügen, so dass Sie für diesen Gerätetyp dann ein spezielles Design vorgeben könnten. Alle anderen Smartphones würden weiterhin das Design benutzen, welches Sie den Smartphones zugeordnet haben.</p>';
+<p>Mit dem regulären Ausdruck \'/(MIDP-1.0|Maemo|Windows CE)/\' könnten Sie beispielsweise häufig verwendete FeaturePhones erkennen und den Rückgabewert \'FeaturePhone\' angeben. Dies würde \'FeaturePhone\' zur Designauswahl hinzufügen, so dass Sie für diesen Gerätetyp dann ein spezielles Design vorgeben könnten. Alle anderen Smartphones würden weiterhin das für \'Mobile\' zugeordnete Design verwenden.</p>';
 $string['devicedetectregexexpression'] = 'Regulärer Ausdruck';
 $string['devicedetectregexvalue'] = 'Rückgabewert';
 $string['devicetype'] = 'Gerätetyp';
@@ -509,7 +514,7 @@ $string['enableglobalsearch'] = 'Globale Suche aktivieren';
 $string['enableglobalsearch_desc'] = 'Diese Option aktiviert eine regelmäßige automatische Indizierung und Synchronisierung.';
 $string['enablegravatar'] = 'Gravatar aktivieren';
 $string['enablegravatar_help'] = 'Wenn diese Option aktiviert ist, versucht Moodle ein Profilbild von Gravatar anzuzeigen, falls Nutzer/innen kein eigenes Profilbild hochgeladen haben.';
-$string['enablemobilewebservice'] = 'Webservice für mobile Endgeräte';
+$string['enablemobilewebservice'] = 'Webservice für mobile Endgeräte aktivieren';
 $string['enablerecordcache'] = 'Zwischenspeicherung erlauben';
 $string['enablerssfeeds'] = 'RSS Feeds aktivieren';
 $string['enablesafebrowserintegration'] = '\'Safe Exam Browser\' vorsehen';
@@ -744,7 +749,7 @@ $string['mnetrestore_extusers_admin'] = '<strong>Achtung: </strong>Diese Sicheru
 $string['mnetrestore_extusers_mismatch'] = '<strong>Achtung:</strong> Die Sicherungsdatei wurde in einem anderen Moodle erzeugt und enthält externe Nutzerkonten aus dem Moodle-Netzwerk, die evtl. nicht wiederhergestellt werden können. Diese Aktion wird nicht unterstützt. Nur wenn Sie sicher sind, dass die Sicherung aus diesem Moodle stammt oder dass alle Nutzerkonten aus dem Moodle-Netzwerk verfügbar sind, können Sie die Wiederherstellung fortsetzen.';
 $string['mnetrestore_extusers_noadmin'] = '<strong>Achtung: </strong>Diese Sicherungsdatei scheint von einer anderen Moodle-Instanz zu stammen und externe Nutzerkonten aus dem Moodle-Netzwerk zu enthalten. Sie sind nicht berechtigt, diese Art von Wiederherstellung durchzuführen. Bitte nehmen Sie Kontakt mit dem Administrator Ihrer Website auf oder führen Sie alternativ die Wiederherstellung für den Kurs ohne Nutzerinformationen (Module, Dateien, ...) durch.';
 $string['mnetrestore_extusers_switchuserauth'] = 'Der externe Nutzer {$a->username} aus dem Moodle-Netzwerk (von {$a->mnethosturl} kommend) wechselte zum lokal authentifizierten Nutzer {$a->auth}';
-$string['mobile'] = 'Mobile Endgeräte';
+$string['mobile'] = 'Mobile';
 $string['mobilecssurl'] = 'CSS';
 $string['modchooserdefault'] = 'Aktivitätenauswahl';
 $string['modeditdefaults'] = 'Grundeinstellungen für die Aktivität';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Aggiungi {no} zone di rilascio';
 $string['answer'] = 'Risposta';
+$string['blank'] = 'vuoto';
 $string['correctansweris'] = 'La risposta corretta è: {$a}';
 $string['infinite'] = 'Illimitato';
 $string['pleaseputananswerineachbox'] = 'Per favore inserisci una risposta in ciascun riquadro.';

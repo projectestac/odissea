@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_backup'] = 'Automatizatutako segurtasun-kopia';
+$string['check_cachejs_comment_enable'] = 'Desgaituz gero, orria astiro karga daiteke.';
 $string['comments'] = 'Iruzkinak';
 $string['disabled'] = 'Desgaituta';
 $string['edit'] = 'Editatu';
 $string['enabled'] = 'Gaituta';
+$string['issue'] = 'Arazoa';
 $string['morehelp'] = 'laguntza gehiago';
 $string['performance:view'] = 'Ikusi errendimenduaren txostena';
 $string['pluginname'] = 'Errendimenduaren ikuspegi orokorra';

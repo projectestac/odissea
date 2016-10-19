@@ -391,6 +391,8 @@ $string['grademethod_help'] = 'Lorsqu\'il est permis à l\'étudiant d\'effectue
 * Dernière note – la note obtenue à la dernière tentative (les autres tentatives sont ignorées)';
 $string['gradesdeleted'] = 'Notes de tests supprimées';
 $string['gradesofar'] = '{$a->method} : {$a->mygrade} / {$a->quizgrade}.';
+$string['gradetopassmustbeset'] = 'La note pour passer ne peut pas être zéro, car ce test à une règle d\'achèvement qui requiert une note pour passer. Veuillez indiquer une note non nulle.';
+$string['gradetopassnotset'] = 'Ce test n\'a pas de note pour passer. Vous ne pouvez donc pas utiliser cette option. Veuillez plutôt utiliser le réglage note requise.';
 $string['gradingdetails'] = 'Points pour cet envoi : {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'En tenant compte des pénalités précédentes, cela donne <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Cet envoi a reçu une pénalité de {$a}.';

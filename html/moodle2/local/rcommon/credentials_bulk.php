@@ -113,18 +113,8 @@ if (empty($courseid)){
 } else {
 	/// Setup for group handling.
 	$context = context_system::instance(); // pinned blocks do not have own context
-	if ($course->groupmode == SEPARATEGROUPS and !has_capability('moodle/site:accessallgroups', $context)) {
-		$selectedgroup = get_current_group($course->id);
-		$showgroups = false;
-	}
-	else if ($course->groupmode) {
-		$selectedgroup = get_current_group($course->id);
-		$showgroups = true;
-	}
-	else {
-		$selectedgroup = 0;
-		$showgroups = false;
-	}
+	$selectedgroup = 0;
+	$showgroups = false;
 	// Get all the possible users
 	if ($course->id != SITEID) {
 		if ($selectedgroup) {   // If using a group, only get users in that group.

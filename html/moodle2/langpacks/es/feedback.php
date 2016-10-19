@@ -72,11 +72,11 @@ $string['delete_template'] = 'Borrar plantilla';
 $string['delete_templates'] = 'Borrar plantilla...';
 $string['depending'] = 'Dependencias';
 $string['depending_help'] = 'Ítems (preguntas de la encuesta) dependientes le permiten ver los elementos que dependen de los valores de otros elementos <br />
-<strong> Un ejemplo de cómo crearlos: </ strong> <br />
+<strong> Un ejemplo de cómo crearlos: </strong> <br />
 <li> En primer lugar cree el ítem (la pregunta) de cuyo valor dependerán otros ítems. </li>
 <li> A continuación añada un salto de página. </li>
 <li> Seguidamente añada los ítems que dependen del valor del ítem anterior. <br />En el formulario de creación del ítem seleccione el elemento de la lista "Depende del ítem" y ponga el valor correspondiente en el campo "Depende del valor".  </li> </ul>
-<strong> La estructura tendrá el siguiente aspecto:</ strong>
+<strong> La estructura tendrá el siguiente aspecto:</strong>
 <ol>
 <li>Ítem 1-Pregunta: ¿Tiene usted coche? R: sí / no </li>
 <li>Salto de página </li>

@@ -16,6 +16,7 @@ $string['disk_used_user'] = 'Busy disk (user)';
 $string['disk_free'] = 'Free disk';
 $string['category_data'] = 'Categories';
 $string['larger_courses'] = 'Courses';
+$string['backups'] = 'Backups';
 $string['course_name'] = 'Course name';
 $string['category_name'] = 'Category name';
 $string['front_page'] = 'Front page';

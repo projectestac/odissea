@@ -37,7 +37,7 @@ $string['aggregationmethod'] = 'Requer verificação de';
 $string['all'] = 'Todos';
 $string['any'] = 'Qualquer';
 $string['approval'] = 'Aprovação';
-$string['badautocompletion'] = 'Quando seleciona a conclusão automática, tem de ativar pelo menos uma das condições (abaixo).';
+$string['badautocompletion'] = 'Quando seleciona a conclusão automática, tem de ativar pelo menos uma das condições apresentadas abaixo.';
 $string['completed'] = 'Concluído';
 $string['completedunlocked'] = 'Opções de conclusão desbloqueadas';
 $string['completedunlockedtext'] = 'Quando guardar as alterações, o estado de conclusão de todos os alunos será apagado. Se não desejar que isto aconteça, não guarde as alterações.';
@@ -51,7 +51,7 @@ $string['completion-alt-auto-n'] = 'Não concluída';
 $string['completion-alt-auto-pass'] = 'Concluída (atingiu nota de aprovação)';
 $string['completion-alt-auto-y'] = 'Concluída';
 $string['completion-alt-manual-enabled'] = 'Os alunos podem assinalar a atividade como concluída';
-$string['completion-alt-manual-n'] = 'Não concluída; Selecione para dar como concluída';
+$string['completion-alt-manual-n'] = 'Não concluída. Selecione para assinalar como concluída';
 $string['completion-alt-manual-y'] = 'Concluída; Selecione para dar como não concluída';
 $string['completion_automatic'] = 'Dar como concluída quando se verificarem as seguintes condições';
 $string['completiondefault'] = 'Usar configuração predefinida da Verificação de conclusão';
@@ -65,11 +65,11 @@ $string['completion_help'] = 'Se ativar esta opção, a conclusão da atividade 
 
 As atividades concluídas serão assinaladas na página da disciplina com um visto junto do nome da atividade .';
 $string['completionicons'] = 'Caixas de verificação da conclusão';
-$string['completionicons_help'] = 'Pode surgir um visto junto ao nome de uma atividade para indicar quando esta atividade está concluída.
+$string['completionicons_help'] = 'Um visto junto ao nome de uma atividade serve para indicar quando esta atividade está concluída.
 
-Se for exibida uma caixa com o limite tracejado, o visto aparecerá automaticamente quando a atividade foi concluída de acordo com as condições definidas pelo professor.
+Se for exibida uma caixa com o limite tracejado, o visto aparecerá automaticamente quando a atividade for concluída de acordo com as condições definidas pelo professor.
 
-Se for exibida uma caixa com o limite sólido, isto significa que pode clicar sobre ela para colocar o visto, indicando assim que completou a atividade (Se clicar novamente o visto é removido, se tiver mudado de ideias). O visto é opcional e consiste apenas numa forma de assinalar o seu progresso ao longo da disciplina.';
+Se for exibida uma caixa com o limite sólido, significa que pode clicar sobre ela para colocar o visto, indicando assim que completou a atividade. (Se mudar de ideias e clicar novamente o visto é removido) O visto é opcional e consiste apenas numa forma de assinalar o seu progresso ao longo da disciplina.';
 $string['completion_link'] = 'atividade/conclusão';
 $string['completion_manual'] = 'Os alunos podem assinalar a atividade como concluída';
 $string['completionmenuitem'] = 'Conclusão';
@@ -82,13 +82,13 @@ $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'O utilizador tem de se manter inscrito até';
 $string['completion-pass'] = 'Concluído (atingiu a nota de passagem)';
 $string['completionsettingslocked'] = 'Configurações de conclusão bloqueadas';
-$string['completion-title-manual-n'] = 'Dar como concluída';
+$string['completion-title-manual-n'] = 'Assinalar como concluída';
 $string['completion-title-manual-y'] = 'Dar como não concluída';
 $string['completionusegrade'] = 'Requer nota';
 $string['completionusegrade_desc'] = 'Os alunos devem ter uma nota para concluir a atividade';
 $string['completionusegrade_help'] = 'Se ativar esta opção, a atividade é considerada concluída quando for atribuída uma nota ao aluno. Os ícones de aprovação ou reprovação podem aparecer caso tenha sido definida uma nota mínima para aprovação.';
 $string['completionview'] = 'Requer visualização';
-$string['completionview_desc'] = 'Os alunos devem ver a atividade para a concluir';
+$string['completionview_desc'] = 'Os alunos devem visualizar a atividade para a concluir';
 $string['completion-y'] = 'Concluído';
 $string['configcompletiondefault'] = 'A configuração predefinida para a verificação de conclusão quando são criadas novas atividades.';
 $string['configenablecompletion'] = 'Se ativar esta opção, será possível ativar a verificação da conclusão (progresso) ao nível da disciplina.';

@@ -96,7 +96,7 @@ $string['unitpenalty_help'] = 'Penalizazioa aplikatuko da
 
 * unitatearen eremuan unitate izen egokia sartzen ez bada, edo
 * unitatea balioaren eremuan sartzen bada';
-$string['unitposition'] = 'Unitatearen kokapena';
+$string['unitposition'] = 'Unitateen kokapena';
 $string['units'] = 'Unitateak';
 $string['unitselect'] = 'zabaltzen den menua';
 $string['unitx'] = '{no}. Unitatea';

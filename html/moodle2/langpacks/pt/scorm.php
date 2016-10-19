@@ -412,14 +412,13 @@ $string['viewallreports'] = 'Ver relatórios de {$a} tentativas';
 $string['viewalluserreports'] = 'Ver relatórios de {$a} utilizadores';
 $string['whatgrade'] = 'Avaliação das tentativas';
 $string['whatgradedesc'] = 'Caso sejam permitidas múltiplas tentativas, esta opção define como é obtida a nota da atividade que é exibida na pauta (Tentativa com melhor nota, Média das tentativas, Primeira tentativa ou Última tentativa concluída).';
-$string['whatgrade_help'] = 'Se forem permitidas múltiplas tentativas de realização, esta opção define se a nota da atividade corresponde à Tentativa com melhor nota, Média das tentativas, Primeira tentativa ou Última tentativa concluída. A opção "Ultima tentativa concluída" não inclui as tentativas com o estado \'Sem aproveitamento\'.
-
+$string['whatgrade_help'] = 'Se forem permitidas múltiplas tentativas de realização, esta opção define se a nota da atividade corresponde à Tentativa com melhor nota, Média das tentativas, Primeira tentativa ou Última tentativa concluída. A opção "Última tentativa concluída" não inclui as tentativas com o estado \'Sem aproveitamento\'.
 
 Notas sobre a gestão de Múltiplas Tentativas:
 
 * A possibilidade de iniciar nova tentativa é facultada através de uma caixa de seleção acima do botão \'Entrar\' na página com a tabela de conteúdos, por isso certifique-se de que permite o acesso a esta página se pretende permitir mais do que uma tentativa.
 
-* Alguns pacotes SCORM reconhecem as novas tentativas, outros não. Isto significa que se o aluno entra numa tentativa existente, e o pacote SCORM não possuir lógica interna para evitar a sobreposição dos dados anteriores,  estes poderão ser substituídos mesmo que à tentativa já tenha sido atribuído o estado \'completa\' ou \'com aprovação\'.
+* Alguns pacotes SCORM reconhecem as novas tentativas, outros não. Isto significa que se o aluno entra numa tentativa existente, e o pacote SCORM não possuir lógica interna para evitar a sobreposição dos dados anteriores, estes poderão ser substituídos mesmo que à tentativa já tenha sido atribuído o estado \'completa\' ou \'com aprovação\'.
 
 * As configurações "Forçar conclusão", "Forçar nova tentativa" e "Bloquear após tentativa final" também permitem gerir as definições das múltiplas tentativas.';
 $string['width'] = 'Largura';

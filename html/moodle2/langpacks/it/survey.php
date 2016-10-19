@@ -200,6 +200,7 @@ $string['downloadinfo'] = 'Puoi scaricare i dati di questo sondaggio in un forma
 $string['downloadresults'] = 'Download dei risultati';
 $string['downloadtext'] = 'Scarica in formato file di testo';
 $string['editingasurvey'] = 'Modifica del sondaggio';
+$string['errorunabletosavenotes'] = 'Si è verificato un errore durante il salvataggio delle note.';
 $string['eventreportdownloaded'] = 'Scaricato report sondaggio';
 $string['eventreportviewed'] = 'Visualizzato report sondaggio';
 $string['eventresponsesubmitted'] = 'Inviate risposte al sondaggio';

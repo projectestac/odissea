@@ -58,7 +58,8 @@ class block_rss_client_edit_form extends block_edit_form {
 
         //XTEC ************ MODIFICAT - Fixed bug to show feed name when preferred is not specified
         //2012.08.20 @sarjona - https://tracker.moodle.org/browse/MDL-55886
-        $titlesql = "CASE WHEN preferredtitle = '' OR TRIM(preferredtitle) IS NULL THEN {$DB->sql_compare_text('title', 64)} ELSE preferredtitle END";
+        $titlesql = "CASE WHEN {$DB->sql_isempty('block_rss_client','preferredtitle', false, false)} ";
+        $titlesql.= "THEN {$DB->sql_compare_text('title', 64)} ELSE preferredtitle END";
         //************ ORIGINAL
         /*
         $titlesql = "CASE WHEN preferredtitle = '' THEN {$DB->sql_compare_text('title', 64)} ELSE preferredtitle END";

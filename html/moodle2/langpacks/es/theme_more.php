@@ -50,7 +50,7 @@ $string['bodybackground'] = 'Color de fondo de página';
 $string['bodybackground_desc'] = 'El color principal que se utilizará como fondo de página.';
 $string['choosereadme'] = '<p>More es un tema que permite modificar fácilmente el aspecto de Moodle desde la propia interfaz web.</p>
 <p>Visite los ajustes de administración para cambiar colores, añadir una imagen como fondo de pantalla, añadir un logo, etc.</p>';
-$string['configtitle'] = 'More';
+$string['configtitle'] = 'Más';
 $string['contentbackground'] = 'Color de fondo de página del contenido principal';
 $string['contentbackground_desc'] = 'El color de fondo de página del contenido principal del sitio; dejar vacío para que no tenga color.';
 $string['customcss'] = 'CSS personalizado';
@@ -63,7 +63,7 @@ $string['linkcolor'] = 'Color del enlace';
 $string['linkcolor_desc'] = 'Color de los enlaces';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Por favor, suba aquí su logo personalizado si quieres añadirlo a la cabecera. <br> Si la altura de su logo es mayor que 75px añada la siguiente regla CSS en la caja de texto de CSS personalizado que hay a continuación. <br> a.logo {height: 100px;} o el valor de la altura en píxeles que tenga el logo.';
-$string['pluginname'] = 'More';
+$string['pluginname'] = 'Más';
 $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';
 $string['secondarybackground'] = 'Color secundario de fondo de página';

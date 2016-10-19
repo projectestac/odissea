@@ -58,6 +58,7 @@ $string['err_nodescriptionmarkers'] = 'Das Beschreibungsfeld darf nicht leer ble
 $string['err_nomaxscore'] = 'Der Eintrag für ein Kriterium Höchstpunktzahl darf nicht leer bleiben.';
 $string['err_noshortname'] = 'Der Eintrag für einen Kriterienname darf nicht leer bleiben.';
 $string['err_scoreinvalid'] = 'Der angegebene Höchstwert für {$a->criterianame} ist ungültig. Der Höchstwert ist: {$a->maxscore}.';
+$string['err_scoreisnegative'] = 'Die Auswertung von \'{$a->criterianame}\' ist ungültig, negative Werte sind nicht erlaubt.';
 $string['err_shortnametoolong'] = 'Der Name darf nur maximal 255 Zeichen haben.';
 $string['gradingof'] = '{$a} Bewertung';
 $string['guide'] = 'Anleitung zum Markieren';

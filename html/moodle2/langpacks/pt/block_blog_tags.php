@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_tags:addinstance'] = 'Adicionar um novo bloco de palavras-chave do blogue';
+$string['blog_tags:addinstance'] = 'Adicionar um novo bloco de palavras-chave do Blogue';
 $string['pluginname'] = 'Palavras-chave do Blogue';

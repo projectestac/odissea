@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'Autoriser les tentatives hors ligne dans l\'application mobile';
-$string['allowofflineattempts_help'] = 'Si cette option est activée, l\'utilisateur sera en mesure de télécharger le test pour le tenter hors ligne en utilisant l\'app mobile. Si l\'utilisateur télécharge un test pour y répondre hors ligne, une nouvelle tentative sera créée. Cette tentative sera vide jusqu\'à ce que l\'utilisateur synchronise les résultats de la tentative dans l\'app mobile.';
+$string['allowofflineattempts'] = 'Permettre de faire le test hors ligne au moyen de l\'app mobile.';
+$string['allowofflineattempts_help'] = 'Si ce réglage est activé, le participant pourra télécharger le test pour le passer hors ligne dans l\'app mobile de Moodle. Lors de ce téléchargement, une nouvelle tentative est créée, qui sera vide tant que l\'utilisateur n\'aura pas synchronisé les résultats de sa tentative avec l\'app mobile.';
+$string['confirmdatasaved'] = 'Je confirme que je n\'ai pas de travail non enregistré sur mon appareil mobile, avant de continuer cette tentative.';
+$string['mobileapp'] = 'App mobile';
+$string['offlineattemptserror'] = 'Ni les tests avec limite de temps, ni ceux avec une restriction d\'accès par mot de passe ou par adresse IP, ni ceux utilisant des comportements autres que le feedback a posteriori avec ou sans indication de certitude ne peuvent être effectués hors ligne.';
+$string['offlinedatamessage'] = 'Vous avez travaillé sur cette tentative à partir d\'un appareil mobile, et ces données ont été enregistrées sur le site il y a {$a}.';
+$string['pleaseconfirm'] = 'Veuillez confirmer que vous n\'avez pas de données non enregistrées sur vos appareils.';
+$string['pluginname'] = 'Règle d\'accès des tentatives hors ligne';

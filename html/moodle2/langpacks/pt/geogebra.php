@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['savechanges'] = 'Gravar alterações';
 $string['settings'] = 'Configurações';

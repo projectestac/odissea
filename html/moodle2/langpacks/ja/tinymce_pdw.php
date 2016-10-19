@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pdw:desc'] = 'ツールバートグル';
-$string['pluginname'] = 'ツールバートグル';
+$string['pdw:desc'] = 'ツールバー切り替え';
+$string['pluginname'] = 'ツールバー切り替え';

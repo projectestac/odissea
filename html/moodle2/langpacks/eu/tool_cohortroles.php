@@ -31,3 +31,4 @@ $string['managecohortroles'] = 'Gehitu erabiltzailea kohorte batera';
 $string['pluginname'] = 'Kohorteen rolen kudeaketa';
 $string['selectcohorts'] = 'Aukeratu kohorteak';
 $string['selectrole'] = 'Aukeratu rola';
+$string['selectusers'] = 'Aukeratu erabiltzaileak rola esleitzeko';

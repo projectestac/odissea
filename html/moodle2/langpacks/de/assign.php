@@ -314,7 +314,7 @@ $string['overdue'] = '<font color="red">Abgabeende überschritten seit: {$a}</fo
 $string['page-mod-assign-view'] = 'Aufgabenhauptseite';
 $string['page-mod-assign-x'] = 'Jede Aufgabenseite';
 $string['paramtimeremaining'] = 'Verbleibend: {$a}';
-$string['participant'] = 'Teilnehmer/innen';
+$string['participant'] = 'Teilnehmer/in';
 $string['pluginadministration'] = 'Aufgaben-Administration';
 $string['pluginname'] = 'Aufgabe';
 $string['preventsubmissionnotingroup'] = 'Gruppe notwendig, um etwas abgeben zu können';

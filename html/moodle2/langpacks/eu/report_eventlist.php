@@ -50,5 +50,6 @@ $string['pluginname'] = 'Ekitaldi-zerrenda';
 $string['read'] = 'irakurri';
 $string['since'] = 'Noiztik';
 $string['teaching'] = 'Irakaskuntza';
+$string['typedeclaration'] = 'Ekitaldien beste parametro batzuk';
 $string['update'] = 'eguneratu';
 $string['yes'] = 'bai';

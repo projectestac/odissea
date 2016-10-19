@@ -63,6 +63,7 @@ $string['name'] = 'Nombre de la marca';
 $string['namesalreadybeeingused'] = 'Los nombres de marca ya se están usando';
 $string['newname'] = 'Nombre de la nueva marca';
 $string['newnamefor'] = 'Nuevo nombre para etiqueta {$a}';
+$string['nextpage'] = 'Más';
 $string['noresultsfor'] = 'No hay resultados para "{$a}"';
 $string['nothingtoupdate'] = 'No hay actualizaciones';
 $string['officialtag'] = 'Marca oficial';

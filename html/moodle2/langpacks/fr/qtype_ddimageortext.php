@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'Emplacement pour {no} zones de glisser-déposer s
 $string['addmoreimages'] = 'Emplacement pour {no} éléments à glisser-déposer supplémentaires';
 $string['answer'] = 'Réponse';
 $string['bgimage'] = 'Image de fond';
+$string['blank'] = 'vide';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['draggableimage'] = 'Image à glisser-déposer';
 $string['draggableitem'] = 'Élément à glisser-déposer';

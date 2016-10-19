@@ -385,6 +385,7 @@ $string['page-mod-forum-view'] = 'Pàgina principal del mòdul «fòrum»';
 $string['page-mod-forum-x'] = 'Qualsevol pàgina del mòdul «fòrum»';
 $string['parent'] = 'Mostra el missatge original';
 $string['parentofthispost'] = 'Missatge original';
+$string['permalink'] = 'Enllaç permanent';
 $string['pluginadministration'] = 'Administració del fòrum';
 $string['pluginname'] = 'Fòrum';
 $string['postadded'] = '<p>S\'ha afegit el vostre missatge.</p> <p>Teniu {$a} per editar-lo si voleu fer algun canvi.</p>';

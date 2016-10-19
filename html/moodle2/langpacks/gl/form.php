@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfields'] = 'Engadir {$a} campos ao formulario';
+$string['addfields'] = 'Engadir {$a} campo(s) ao formulario';
 $string['advancedelement'] = 'Elemento avanzado';
 $string['close'] = 'Pechar';
 $string['day'] = 'Día';
@@ -35,7 +35,7 @@ $string['err_email'] = 'Aquí debe escribir un enderezo correcto de correo.';
 $string['err_lettersonly'] = 'Aquí so debe escribir letras.';
 $string['err_maxfiles'] = 'Aquí non debe anexar máis de {$a} ficheiros.';
 $string['err_maxlength'] = 'Aquí non debe escribir máis de {$a->format} caracteres.';
-$string['err_minlength'] = 'Aquí non debe escribir polo menos {$a->format} caracteres.';
+$string['err_minlength'] = 'Aquí debe escribir polo menos {$a->format} caracteres.';
 $string['err_nonzero'] = 'Aquí debe escribir un número que non comece con 0.';
 $string['err_nopunctuation'] = 'Aquí non debe escribir ningún signo de puntuación.';
 $string['err_numeric'] = 'Aquí debe escribir un número.';
@@ -51,6 +51,8 @@ $string['month'] = 'Mes';
 $string['mustbeoverriden'] = 'O método abstracto form_definition() na clase {$a} debe ser substituído, arranxe o código.';
 $string['nomethodforaddinghelpbutton'] = 'Non existe un método para engadir un botón de axuda ao elemento do formulario {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Tentando engadir botóns de axuda a elementos de formulario inexistentes: {$a}';
+$string['noselection'] = 'Non hai selección';
+$string['nosuggestions'] = 'Sen suxestións';
 $string['optional'] = 'Opcional';
 $string['othersettings'] = 'Outras configuracións';
 $string['requiredelement'] = 'Campo obrigatorio';
@@ -58,6 +60,7 @@ $string['revealpassword'] = 'Revelar';
 $string['security'] = 'Seguranza';
 $string['selectallornone'] = 'Seleccionar todo/nada';
 $string['selected'] = 'Seleccionado';
+$string['selecteditems'] = 'Elementos seleccionados:';
 $string['showadvanced'] = 'Amosar avanzadas';
 $string['showless'] = 'Amosar menos...';
 $string['showmore'] = 'Amosar máis...';

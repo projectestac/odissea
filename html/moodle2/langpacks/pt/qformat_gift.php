@@ -35,5 +35,5 @@ $string['giftrightbraceerror'] = 'Não foi possível encontrar uma {';
 $string['importminerror'] = 'Existe um erro na pergunta. Não existem respostas suficientes para este tipo de pergunta';
 $string['nohandler'] = 'Nenhum manipulador para o tipo de pergunta {$a}';
 $string['pluginname'] = 'Formato GIFT';
-$string['pluginname_help'] = 'O formato GIFT permite importar e exportar como ficheiro de texto perguntas do tipo escolha múltipla, verdadeiro/falso ,resposta curta, correspondência, preenchimento de espaços, numéricas e de ensaio.';
+$string['pluginname_help'] = 'O formato GIFT permite importar e exportar como ficheiro de texto perguntas do tipo escolha múltipla, verdadeiro/falso, resposta curta, correspondência, preenchimento de espaços, numéricas e de desenvolvimento.';
 $string['pluginname_link'] = 'qformat/gift';

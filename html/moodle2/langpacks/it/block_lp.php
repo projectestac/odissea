@@ -29,5 +29,7 @@ $string['competenciestoreview'] = 'Competenze da revisionare';
 $string['lp:addinstance'] = 'Aggiungere blocco piani di formazione';
 $string['lp:myaddinstance'] = 'Aggiungere blocco piani di formazione nella Dashboard';
 $string['lp:view'] = 'Visualizzare blocco piani di formazione';
+$string['myplans'] = 'I miei piani di formazione';
+$string['noactiveplans'] = 'Non ci sono piani di formazione attivi.';
 $string['planstoreview'] = 'Piano da revisionare';
 $string['pluginname'] = 'Piani di formazione';

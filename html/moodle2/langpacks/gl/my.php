@@ -26,14 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Engadir unha páxina';
+$string['alldashboardswerereset'] = 'Todas as páxinas do panel foron reiniciadas aos seus valores predeterminados.';
+$string['allprofileswerereset'] = 'Todas as páxinas de perfiles foron reiniciadas aos seus valores predeterminados.';
 $string['defaultpage'] = 'Páxina predeterminada «O meu Moodle»';
 $string['defaultprofilepage'] = 'Páxina predeterminada de perfil';
 $string['delpage'] = 'Eliminar a páxina';
-$string['managepages'] = 'Xestionar as páxinas';
-$string['mymoodle'] = 'Vista xeral dos meus cursos';
-$string['nocourses'] = 'Non hai información sobre o curso para mostrar.';
-$string['noguest'] = 'A páxina \'Vista xeral do curso\' non está dispoñible para convidados';
-$string['pinblocks'] = 'Configurar bloques de agarre do meu Moodle';
-$string['pinblocksexplan'] = 'Calquera configuración dos bloques que estableza aquí será visible (e non editable) para calquera usuario do Moodle na súa páxina de vista xeral \'O meu Moodle\'.';
+$string['managepages'] = 'Administrar as páxinas';
+$string['mymoodle'] = 'Panel';
+$string['nocourses'] = 'Non hai información que mostrar sobre o curso.';
+$string['noguest'] = 'A páxina do «panel» non está dispoñíbel para convidados';
+$string['pinblocks'] = 'Configurar bloques actualizados do meu Moodle';
+$string['pinblocksexplan'] = 'Calquera configuración dos bloques que estabeleza aquí será visíbel (e non editábel) para calquera usuario do Moodle na súa páxina de vista xeral «O meu Moodle».';
 $string['reseterror'] = 'Produciuse un erro ao restaurar a súa páxina';
-$string['resetpage'] = 'Restaurar á páxina a configuración predeterminada';
+$string['reseteveryonesdashboard'] = 'Restablecer o «panel» para todos os usuarios';
+$string['reseteveryonesprofile'] = 'Restablecer o perfil para todos os usuarios';
+$string['resetpage'] = 'Restaurar a páxina á configuración predeterminada';

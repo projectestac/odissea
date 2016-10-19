@@ -85,7 +85,14 @@ if (empty($token)) {
     // The session var is intentionally used only during the lifespan of one request (the redirect) and is unset above.
     if (!$tokeninsession && $_SERVER['REQUEST_METHOD'] === 'GET') {
         $SESSION->password_reset_token = $token;
+        //XTEC ************ MODIFICAT - MDL-55945 Forgot password stopped working with loginhttps
+        //2016.10.06 @sarjona
+        redirect($CFG->httpswwwroot . '/login/forgot_password.php');
+        //************ ORIGINAL
+        /*
         redirect($CFG->wwwroot . '/login/forgot_password.php');
+        */
+        //************ FI
     } else {
         // Continue with the password reset process.
         core_login_process_password_set($token);

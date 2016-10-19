@@ -102,6 +102,7 @@ $string['periodend'] = '{$a} 까지';
 $string['periodnone'] = '등록함 {$a}';
 $string['periodstart'] = '{$a} 부터';
 $string['periodstartend'] = '{$a->start} 부터 {$a->end} 까지';
+$string['proceedtocourse'] = '강좌 내용으로 진행';
 $string['recovergrades'] = '가능한 경우 사용자의 이전 성적 복원';
 $string['rolefromcategory'] = '{$a->role} (강좌 범주에서 상속됨)';
 $string['rolefrommetacourse'] = '{$a->role} (상위 강좌에서 상속됨)';

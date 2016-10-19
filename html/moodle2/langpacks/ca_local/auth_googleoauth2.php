@@ -39,4 +39,3 @@ $string['auth_googleclientsecret'] = 'Veieu més amunt.';
 $string['auth_googleoauth2description'] = 'Permet als usuaris connectar-se al lloc amb un proveïdor extern d\'autenticació Google. El primer cop que un usuari es connecta amb un proveïdor d\'autenticació, es crea un compte nou. <a href="'.$CFG->wwwroot.'/admin/search.php?query=authpreventaccountcreation">Evita la creació de comptes ous durant el procediment d\'autenticació</a> <b>s\'ha de desactivar</b>.';
 
 $string['auth_sign-in_with'] = 'Entra amb {$a->providername}';
-$string['signinwithanaccount'] = 'Entra amb {$a}';

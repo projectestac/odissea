@@ -3,9 +3,18 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
-Changes in progress
+Changes 16.10.24
 ---------------------------------------------------------------------------------------
 - tool/odisseagtafsync: Fixed bug with deprecated function
+- login: Forgot password stopped working with loginhttps - MDL-55945 (Trello #1391)
+- mod/assign: Filtering in Assignment grading interface throws a javascript error - MDL-56300 (Trello #1392)
+- report/coursequotas: Separate the report views to improve performance (Trello #1278)
+- Updated mod/hotpot
+- Updated mod/jclic
+- local/alexandriaimporter: Added local plugin for importing courses and SCORM activities from Alexandria (Trello #1318)
+- local/clickedu: Added local plugin for synchronizing with ClickEdu (Trello #913)
+- Updated filter/wiris and atto/wiris (Trello #1403)
+- Updated LangPacks
 
 
 Changes 16.09.19

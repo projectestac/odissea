@@ -50,6 +50,7 @@ $string['choice:readresponses'] = 'Visualizzare le scelte';
 $string['choicesaved'] = 'la tua scelta è stata salvata';
 $string['choicetext'] = 'Testo della domanda';
 $string['chooseaction'] = 'Scegli un\'azione...';
+$string['closebeforeopen'] = 'Hai specificato una data di chiusura successiva alla data di apertura.';
 $string['completionsubmit'] = 'Completata all\'atto della scelta';
 $string['description'] = 'Descrizione';
 $string['displayhorizontal'] = 'Visualizza orizzontalmente';

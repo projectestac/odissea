@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.importbtn {
+    padding-top: 3px;
+}
+
+#alexloadmore .spinner{
+    display: none;
+}

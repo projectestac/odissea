@@ -76,3 +76,4 @@ $string['auth_cas_version'] = 'Versión de CAS utilizada';
 $string['CASform'] = 'Opción de identificación';
 $string['noldapserver'] = 'No hay ningún servidor LDAP configurado para CAS! Sincronización deshabilitada.';
 $string['pluginname'] = 'Usar un servidor CAS (SSO)';
+$string['synctask'] = 'Trabajo de sincronización de usuarios de CAS';

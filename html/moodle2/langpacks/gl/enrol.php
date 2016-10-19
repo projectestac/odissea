@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actenrolshhdr'] = 'Dispoñíbeis os complementos de matriculación';
+$string['actenrolshhdr'] = 'Dispoñíbeis os engadidos de matriculación';
 $string['addinstance'] = 'Engadir método';
 $string['addinstanceanother'] = 'Engadir método e crear outro';
 $string['ajaxnext25'] = 'Seguintes 25...';
@@ -33,10 +33,10 @@ $string['ajaxoneuserfound'] = 'Atopouse 1 usuario';
 $string['ajaxxusersfound'] = 'Atopáronse {$a} usuarios';
 $string['assignnotpermitted'] = 'Non tes permiso ou non podes asignar roles neste curso.';
 $string['bulkuseroperation'] = 'Operación masiva de usuario';
-$string['configenrolplugins'] = 'Seleccione todos os complementos requiridos e arránxeos na orde apropiada.';
+$string['configenrolplugins'] = 'Seleccione todos os engadidos requiridos e arránxeos na orde apropiada.';
 $string['custominstancename'] = 'Nome personalizado da instancia';
 $string['defaultenrol'] = 'Engadir instancia aos novos cursos';
-$string['defaultenrol_desc'] = 'É posíbel engadir este complemento a todos os novos cursos de modo predeterminado.';
+$string['defaultenrol_desc'] = 'É posíbel engadir este engadido a todos os novos cursos de modo predeterminado.';
 $string['deleteinstanceconfirm'] = 'Está a piques de eliminar o método de matriculación «{$a->name}». Todos os {$a->users} usuarios matriculados actualmente usando este método serán desmatriculados (dados de baixa) e eliminaranse todos os datos relacionados co curso, como as cualificacións, pertenza de grupos ou subscripcións ao foro dos usuarios.
 
 Confirma que quere continuar?';
@@ -74,6 +74,9 @@ $string['errorenrolcohort'] = 'Produciuse un erro ao crear unha instancia de sin
 $string['errorenrolcohortusers'] = 'Produciuse un erro ao matricular membros do grupo neste curso.';
 $string['errorthresholdlow'] = 'O limiar de notificación ten que ser polo menos de 1 día';
 $string['errorwithbulkoperation'] = 'Produciuse un erro ao procesar o cambio de matriculación masiva.';
+$string['eventenrolinstancecreated'] = 'Creada a instancia de matriculación';
+$string['eventenrolinstancedeleted'] = 'Eliminada a instancia de matriculación';
+$string['eventenrolinstanceupdated'] = 'Actualizouse a instancia de matriculación';
 $string['eventuserenrolmentcreated'] = 'Usuario matriculado no curso';
 $string['eventuserenrolmentdeleted'] = 'Usuario desmatriculado do curso';
 $string['eventuserenrolmentupdated'] = 'Actualizada a desmatriculación do usuario';
@@ -97,11 +100,12 @@ $string['instanceeditselfwarning'] = 'Aviso:';
 $string['instanceeditselfwarningtext'] = 'Vostede está matriculado neste curso mediante este método de matriculación, os cambios poden afectar ao seu acceso a este curso.';
 $string['invalidenrolinstance'] = 'Instancia de matriculación incorrecta';
 $string['invalidrole'] = 'Rol incorrecto';
-$string['manageenrols'] = 'Xestionar os complementos de matriculación';
+$string['manageenrols'] = 'Xestionar os engadidos de matriculación';
 $string['manageinstance'] = 'Xestionar';
 $string['migratetomanual'] = 'Migrar cara a matriculación manual';
 $string['nochange'] = 'Sen cambios';
 $string['noexistingparticipants'] = 'Participantes inexistentes';
+$string['nogroup'] = 'Sen grupo';
 $string['noguestaccess'] = 'Os convidados non poden acceder a este curso, tente acceder.';
 $string['none'] = 'Ningún';
 $string['notenrollable'] = 'Non pode matricularse a si mesmo neste curso.';

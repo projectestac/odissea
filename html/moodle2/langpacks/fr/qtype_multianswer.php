@@ -38,7 +38,7 @@ $string['layoutvertical'] = 'Colonne verticale de boutons radio';
 $string['nooptionsforsubquestion'] = 'Impossible d\'obtenir les options de la partie de question no {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'La question Cloze (multianswer) « <strong>{$a}</strong> » ne contient aucune question';
 $string['pleaseananswerallparts'] = 'Merci de répondre à tous les éléments de la question.';
-$string['pluginname'] = 'Question Cloze';
+$string['pluginname'] = 'Cloze (réponses intégrées)';
 $string['pluginnameadding'] = 'Ajout d\'une question Cloze';
 $string['pluginnameediting'] = 'Modification d\'une question Cloze';
 $string['pluginname_help'] = 'Les questions à réponses intégrées (Cloze) sont formées d\'un texte au sein duquel dont inclues des questions à choix multiple et des questions à réponse courte.';

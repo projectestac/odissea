@@ -190,8 +190,8 @@ Communauté Moodle|https://moodle.org|Le site de la communauté Moodle
 --Moodle Docs en français|http://docs.moodle.org/fr|La documentation en français|fr
 -Nouveautés Moodle|http://moodle.org/news
 Entreprise Moodle
--Hébergement commercial Moodle|http://moodle.com/hosting
--Assistance commerciale Moodle|http://moodle.com/support
+-Hébergement Moodle|http://moodle.com/cloud
+-Assistance Moodle|http://moodle.com/contact
 </pre>';
 $string['configcustomusermenuitems'] = 'Vous pouvez configurer le contenu du menu utilisateur (à l\'exception du lien de déconnexion, qui est ajouté automatiquement). Chaque ligne définit un élément de menu et comprend 3 éléments, séparés par des barres verticales (|) : 1) une chaîne de caractères de la forme « chaînedecaractèresmoodle, nomducomposant » ou un simple texte, 2) une URL, et 3) une icône, soit sous la forme d\'une icône pix de thème, soit sous la forme d\'une URL. Des barres de séparation peuvent être spécifiées en ajoutant à l\'endroit désiré une ligne avec un ou plusieurs #.';
 $string['configdbsessions'] = 'Si ce réglage est activé, les informations sur les sessions en cours seront enregistrées dans la base de données. Attention ! si vous changez ce réglage, tous les utilisateurs seront immédiatement déconnectés, vous y compris ! Si vous utilisez une base de données MySQL, assurez-vous que la variable « max_allowed_packet » dans <em>my.cnf</em> (ou <em>my.ini</em>) ait au moins une valeur de 4M. D\'autres pilotes de sessions peuvent être configurés directement dans le fichier config.php. Veuillez consulter le fichier config-dist.php pour plus d\'information. Ce réglage n\'est plus affiché si un tel pilote de session est configuré dans le fichier config.php.';

@@ -44,4 +44,4 @@ $string['spaminvalidresult'] = 'Resultados desconhecidos';
 $string['spamkeyword'] = 'Palavra-chave';
 $string['spamoperation'] = 'Operação';
 $string['spamresult'] = 'Resultados de utilizadores que contenham:';
-$string['spamsearch'] = 'Pesquisar essas palavras-chave';
+$string['spamsearch'] = 'Pesquisar estas palavras-chave';

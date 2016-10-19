@@ -16,6 +16,7 @@ $string['disk_used_repository'] = 'Espai ocupat al repositori';
 $string['disk_used_user'] = 'Espai ocupat en fitxers d\'usuari';
 $string['category_data'] = 'Categories';
 $string['larger_courses'] = 'Cursos';
+$string['backups'] = 'Còpies de seguretat';
 $string['course_name'] = 'Nom del curs';
 $string['category_name'] = 'Nom de la categoria';
 $string['front_page'] = 'Pàgina inicial';

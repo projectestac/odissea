@@ -3,6 +3,17 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
+Changes in 3.0.1 - 2016061300 (2016/09/28)
+---------------------------------------------------------------------------------------
+- Added support for JClic HTML5 player
+
+Changes in 3.0.0 - 2016052000 (2016/05/20)
+---------------------------------------------------------------------------------------
+- Deleted cron function
+- Replaced deprecated add_intro_editor function
+- Added first behat tests
+- Prepared version for Moodle 3.1
+
 Changes in 2.7.0 - 2015120300 (2015/12/03)
 ---------------------------------------------------------------------------------------
  - Changed version numbering method, now the first two numbers are the minimum Moodle required version

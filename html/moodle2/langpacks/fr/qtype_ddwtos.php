@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Espaces vides pour {no} choix supplémentaires';
 $string['answer'] = 'Réponse';
+$string['blank'] = 'vide';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['infinite'] = 'Réutilisable';
 $string['pleaseputananswerineachbox'] = 'Veuillez entrer une réponse dans chaque boîte.';

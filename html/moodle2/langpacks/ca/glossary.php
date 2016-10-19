@@ -344,6 +344,8 @@ $string['rsstype_help'] = '<p>Aquesta opció us permet habilitar alimentacions R
 <li><b>Amb autor:</b> les alimentacions generades inclouran el nom de l\'autor de cada article.</li>
 <li><b>Sense autor:</b> les alimentacions generades no inclouran el nom de l\'autor de cada article.</li>
 </ul>';
+$string['search:activity'] = 'Glossari - Informació de l\'activitat';
+$string['search:entry'] = 'Glossari - Entrades';
 $string['searchindefinition'] = 'Cerca en tot el text';
 $string['secondaryglossary'] = 'Glossari secundari';
 $string['showall'] = 'Mostra l\'enllaç \'Tot\'';

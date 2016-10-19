@@ -1,0 +1,23 @@
+#page-admin-local-clickedu-syncusers .region-content table,
+#page-admin-local-clickedu-synccourses .region-content table {
+    margin: 1em auto;
+}
+
+#page-admin-local-clickedu-syncusers .region-content table th,
+#page-admin-local-clickedu-synccourses .region-content table th,
+#page-admin-local-clickedu-syncusers .region-content table td,
+#page-admin-local-clickedu-synccourses .region-content table td {
+    padding: 0.5em 1em;
+}
+
+#page-admin-local-clickedu-synccourses .region-content table td.course-create {
+    background-color: #dff0d8;
+}
+
+#page-admin-local-clickedu-synccourses .region-content table td.course-update {
+    background-color: #fcf8e3;
+}
+
+.clickedu-progressbar {
+    margin-bottom: 1em;
+}

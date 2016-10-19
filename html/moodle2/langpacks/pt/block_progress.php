@@ -66,6 +66,7 @@ $string['config_warning_loglifetime'] = 'Aviso: Os registos são apagados após 
 $string['config_warning_logstores'] = 'Aviso: Os registos estão desativados por isso ações que dependem de visualizações não serão verificadas.';
 $string['config_wrap'] = 'Quebrar em linhas';
 $string['coursenametoshow'] = 'Nome da disciplina a mostrar no painel do utilizador';
+$string['cross'] = 'Cruz';
 $string['data'] = 'Base de dados';
 $string['defaultlongbars'] = 'Apresentação padrão para barras longas';
 $string['dmelearn'] = 'Digital Media e-Learning';

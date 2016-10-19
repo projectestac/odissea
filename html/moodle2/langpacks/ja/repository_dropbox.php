@@ -34,6 +34,7 @@ $string['dropbox:view'] = 'Dropboxフォルダを表示する';
 $string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Permission type」を「Full Dropbox」にしてください。';
 $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
 $string['notitle'] = 'タイトルなし';
+$string['oauth2redirecturi'] = 'OAuth 2リダイレクトURI';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = '次回から入力を省略する';
 $string['secret'] = 'Dropbox秘密鍵';

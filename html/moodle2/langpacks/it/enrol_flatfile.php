@@ -31,6 +31,7 @@ $string['expiredaction_help'] = 'L\'azione da compiere quando scade l\'iscrizion
 $string['filelockedmail'] = 'Il file di testo ({$a}) che stai utilizzando per le iscrizioni  non può essere rimosso dal processo cron. Questo In genere a che i permessi sono sbagliati. Per favore orreggi i permessi in modo che Moodle possa eliminare il file, altrimenti sarà elaborato ripetutamente.';
 $string['filelockedmailsubject'] = 'Errore grave: file iscrizioni';
 $string['flatfile:manage'] = 'Gestire manualmente le iscrizioni degli utenti';
+$string['flatfilesync'] = 'Sincronizzazione iscrizioni da file CSV';
 $string['flatfile:unenrol'] = 'Disiscrivere manualmente gli utenti dai corsi';
 $string['location'] = 'Percorso del file';
 $string['location_desc'] = 'Il percorso completo del file delle iscrizioni. Il file verrà eliminato automaticamente al termine dell\'elaborazione';

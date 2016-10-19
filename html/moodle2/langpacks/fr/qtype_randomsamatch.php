@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['insufficientoptions'] = 'Il n\'y a pas assez d\'options à sélectionner pour cette question, qui ne peut donc être affichée dans le test. Veuillez en informer votre enseignant.';
 $string['nosaincategory'] = 'Il n\'y a pas de questions à réponse courte dans la catégorie choisie « {$a->catname} ». Veuillez choisir une autre catégorie ou créer plus de questions dans cette catégorie.';
 $string['notenoughsaincategory'] = 'Il n\'y a que {$a->nosaquestions} question(s) à réponse courte dans la catégorie choisie « {$a->catname} ». Veuillez choisir une autre catégorie, créer plus de questions dans cette catégorie ou réduire le nombre choisi de questions.';
-$string['pluginname'] = 'Question d\'appariement aléatoire à réponse courte';
+$string['pluginname'] = 'Appariement aléatoire à réponse courte';
 $string['pluginnameadding'] = 'Ajout d\'une question d\'appariement aléatoire à réponse courte';
 $string['pluginnameediting'] = 'Modification d\'une question d\'appariement aléatoire à réponse courte';
 $string['pluginname_help'] = 'Du point de vue du participant, une telle question est identique à une question d\'appariement. La différence est que la liste des termes à apparier est tirée aléatoirement dans les questions à réponse courte de la catégorie de questions actuelle. La catégorie doit comporter suffisamment de questions à réponse courte non utilisées, sans quoi un message d\'erreur sera affiché.';

@@ -106,8 +106,8 @@ $string['badgeprivacysetting_help'] = 'Irabazten dituzun dominak zure kontuaren 
 Zure dominen orrian kontrola ditzakezu banakako dominen pribatutasunaren ezarpenak.';
 $string['badgeprivacysetting_str'] = 'Erakutsi automatikoki nire profil-orrian irabazi ditudan dominak.';
 $string['badges'] = 'Dominak';
-$string['badgesalt'] = 'Eraldaketa jasotzailearen e-posta helbidea nahasteko';
-$string['badgesalt_desc'] = 'Nahasketa erabilita motxila-zerbitzuek dominaren jatorriaren berri izan dezakete horren e-posta helbidea erakutsi gabe. Ezarpen honek zenbakiak eta hizkiak baino ez ditu erabili behar.
+$string['badgesalt'] = 'Eraldaketa jasotzailearen e-posta helbidea zifratzeko';
+$string['badgesalt_desc'] = 'Zifratzea erabilita motxila-zerbitzuek dominaren jatorriaren berri izan dezakete horren e-posta helbidea erakutsi gabe. Ezarpen honek zenbakiak eta hizkiak baino ez ditu erabili behar.
 
 Oharra: jasotzaileak egiaztatzeko, ez aldatu ezarpen hau behin dominak ematen hasita.';
 $string['badgesdisabled'] = 'Dominak ez daude gaituta gune honetan';

@@ -51,11 +51,11 @@ $string['filetypeexternal'] = 'External URL';
 $string['filetype_help'] = 'This setting determines how the JClic activity is included in the course. There are up to 2 options:
 
 * Uploaded JClic - Enables a valid ".jclic.zip" package to be chosen by the file picker.
-* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" file.';
+* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" or ".jclic" file.';
 $string['filetypelocal'] = 'Uploaded JClic';
 $string['height'] = 'Height';
 $string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic.zip" extension.';
-$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" file.';
+$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" or ".jclic" file.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Add JClic';
 $string['jclicfile'] = 'JClic file';
@@ -63,6 +63,8 @@ $string['jclicfile_help'] = 'The .jclic.zip file containing the JClic files.';
 $string['jclic:grade'] = 'Grade JClic';
 $string['jclicjarbase'] = 'Jar base';
 $string['jclicjarbase_help'] = 'Web address where to locate all the JClic jar files';
+$string['jclicjs'] = 'jclic.js file URL';
+$string['jclicjs_help'] = 'URL where to find jclic.js needed for the non-Java player..';
 $string['jclic:submit'] = 'Submit JClic';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'This setting enables a URL for the JClic package to be specified, rather than choosing a file via the file picker.';

@@ -83,6 +83,7 @@ $string['negcovar'] = 'Negative Kovarianz der Bewertung mit der Bewertung aller 
 $string['negcovar_help'] = '<p>Die Bewertung dieser Frage in diesem Satz von Versuchen im Test ändert sich in der entgegengesetzten Weise zur Bewertung des gesamten Versuches. Das bedeutet, dass die Bewertung des gesamten Versuch dazu neigt unter dem Durchschnitt zu liegen, wenn die Bewertung für diesen Rang über dem Durchschnitt liegt und umgekehrt. </p>
 <p>Unsere Gleichung für eine effektive Fragen-Gewichtung kann in diesem Fall nicht berechnet werden. Die Berechnungen der effektiven Fragen-Gewichtung für andere Fragen in diesem Test sind gleich der effektiven Fragen-Gewichtung für diese Fragen, wenn den hervorgehobenen Fragen mit einer negativen Kovarianz die maximale Bewertung von Null gegeben wird.</p>
 <p>Wenn Sie einen Test bearbeiten und dieser/n Frage(n) mit einer negativen Kovarianz eine maximale Bewertung von Null zuweisen, wird die effektive Fragen-Gewichtung dieser Fragen Null sein und die echte effektive Fragen-Gewichtung anderer Fragen ist gleich der eben berechneten.</p>';
+$string['nogradedattempts'] = 'Bei diesem Quiz wurden keine Versuche gemacht oder alle Versuche beinhalten Fragen, die manueller Bewertung bedürfen.';
 $string['nostudentsingroup'] = 'In dieser Gruppe sind bisher keine Teilnehmer/innen';
 $string['optiongrade'] = 'Teilweise Bewertung';
 $string['partofquestion'] = 'Teil der Frage';

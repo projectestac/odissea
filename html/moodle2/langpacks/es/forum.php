@@ -97,13 +97,15 @@ $string['configcleanreadtime'] = 'Hora del día para limpiar mensajes antiguos d
 $string['configdigestmailtime'] = 'Se enviará un resumen de los correos a las personas que eligen dicha opción. Este ajuste controla a qué hora del día se enviará el correo (por medio del primer cron que se ejecute después de la hora fijada).';
 $string['configdisplaymode'] = 'Visualización por defecto de los debates, si no se ha configurado ninguna.';
 $string['configenablerssfeeds'] = 'Esta opción habilita la posibilidad de canales RSS para todos los foros. Aún así necesitará activar manualmente los canales en los ajustes de cada foro.';
-$string['configenabletimedposts'] = 'Seleccione \'sí\' si desea permitir el ajuste de períodos en los que se mostrará una nueva discusión en el foro (Experimental y no probada totalmente)';
+$string['configenabletimedposts'] = 'Seleccione \'sí\' si desea permitir el ajuste de períodos en los que se mostrará un nuevo debate en el foro.';
 $string['configlongpost'] = 'Cualquier mensaje que exceda esta extensión (sin incluir código HTML) se considera largo. Las aportaciones mostradas en la página principal del sitio, en las páginas de los cursos con formato social o en los perfiles de usuario, están ordenados de forma natural entre los valores forum_shortpost y forum_longpost';
 $string['configmanydiscussions'] = 'Máximo número de debates mostrados en una página de foro.';
 $string['configmaxattachments'] = 'Máximo número de archivos adjuntos que se permiten por mensaje.';
 $string['configmaxbytes'] = 'Tamaño máximo por defecto para los archivos adjuntos a los mensajes de los foros en este sitio (sujeto a los límites del curso y otras configuraciones del servidor)';
 $string['configoldpostdays'] = 'Número de días para que un mensaje se considere leído.';
 $string['configreplytouser'] = 'Cuando un mensaje del foro es enviado por correo electrónico, ¿debería contener la dirección del usuario de modo que los receptores pudieran responderle personalmente en lugar de hacerlo en el foro? Incluso aunque se seleccione \'Sí\', los usuarios pueden elegir en su perfil que su dirección de correo electrónico se mantenga en secreto.';
+$string['configrssarticlesdefault'] = 'Si los canales de RSS están habilitados, establece el número de artículos por defecto (debates o temas).';
+$string['configrsstypedefault'] = 'Si los canales RSS están habilitados, establece el tipo de actividad por defecto.';
 $string['configshortpost'] = 'Cualquier mensaje que no alcance esta extensión (sin incluir código HTML) se considera corto.';
 $string['configtrackingtype'] = 'Ajuste predeterminado para el rastreo de lectura';
 $string['configtrackreadposts'] = 'Seleccione \'Sí\' si desea rastrear leído/no leído para cada usuario.';
@@ -124,6 +126,7 @@ $string['deletesure'] = '¿Está seguro de que desea borrar este mensaje?';
 $string['deletesureplural'] = '¿Está seguro de que desea borrar este mensaje y todas las réplicas? ({$a} mensajes)';
 $string['digestmailheader'] = 'Éste es su resumen diario por correo de los nuevos mensajes de los foros de {$a->sitename}. Si desea cambiar sus preferencias de foro por correo, hágalo en {$a->userprefs}.';
 $string['digestmailpost'] = 'Modifique sus preferencias de suscripción';
+$string['digestmailpostlink'] = 'Cambiar sus preferencias de resumen del foro: {$a}';
 $string['digestmailprefs'] = 'su perfil de usuario';
 $string['digestmailsubject'] = 'Resumen diario del foro de {$a}';
 $string['digestmailtime'] = 'Hora para enviar los mensajes resumen';
@@ -138,6 +141,9 @@ $string['discussionmovedpost'] = 'Esta discusión ha sido trasladada a <a href="
 $string['discussionname'] = 'Denominación';
 $string['discussionnownotsubscribed'] = '{$a->name} NO recibirá notificaciones de las nuevas publicaciones en \'{$a->discussion}\' de \'{$a->forum}\'';
 $string['discussionnowsubscribed'] = '{$a->name}  recibirá notificación de nuevas aportaciones en \'{$a->discussion}\' de\'{$a->forum}\'';
+$string['discussionpin'] = 'Fijar';
+$string['discussionpinned'] = 'Fijado';
+$string['discussionpinned_help'] = 'Los debates fijados aparecerán en la parte superior del foro.';
 $string['discussions'] = 'Debates';
 $string['discussionsstartedby'] = 'Debate comenzado por {$a}';
 $string['discussionsstartedbyrecent'] = 'Debate recientemente comenzado por {$a}';
@@ -146,6 +152,7 @@ $string['discussionsubscribestart'] = 'Enviarme notificaciones de nuevas partici
 $string['discussionsubscribestop'] = 'No desea recibir notificaciones de nuevas participaciones en este debate';
 $string['discussionsubscription'] = 'Suscripción a la discusión';
 $string['discussionsubscription_help'] = 'Al suscribirse a una discusión, recibirá notificaciones de las nuevas publicaciones en dicha discusión.';
+$string['discussionunpin'] = 'Quitar fijado';
 $string['discussthistopic'] = 'Hacer un comentario en este tema';
 $string['displayend'] = 'Mostrar final';
 $string['displayend_help'] = 'Este ajuste especifica si un mensaje en el foro debe estar oculto después de una fecha determinada. Tenga en cuenta que los administradores siempre pueden ver los mensajes en el foro.';
@@ -186,8 +193,10 @@ $string['eventcoursesearched'] = 'Curso buscado';
 $string['eventdiscussioncreated'] = 'Tema creado';
 $string['eventdiscussiondeleted'] = 'Tema borrado';
 $string['eventdiscussionmoved'] = 'Tema movido';
+$string['eventdiscussionpinned'] = 'Debate fijado';
 $string['eventdiscussionsubscriptioncreated'] = 'Se ha suscrito a esta discusión';
 $string['eventdiscussionsubscriptiondeleted'] = 'Se ha borrado la suscripción de esta discusión';
+$string['eventdiscussionunpinned'] = 'Debate no fijado';
 $string['eventdiscussionupdated'] = 'Discusión actualizada';
 $string['eventdiscussionviewed'] = 'Tema visto';
 $string['eventpostcreated'] = 'Mensaje creado';
@@ -229,6 +238,7 @@ $string['forumintro'] = 'Descripción';
 $string['forum:managesubscriptions'] = 'Gestionar suscripciones';
 $string['forum:movediscussions'] = 'Trasladar debates';
 $string['forumname'] = 'Nombre del foro';
+$string['forum:pindiscussions'] = 'Debates fijados';
 $string['forumposts'] = 'Mensajes en foros';
 $string['forum:postwithoutthrottling'] = 'Exentos del umbral de mensaje';
 $string['forum:rate'] = 'Calificar mensajes';
@@ -277,7 +287,7 @@ $string['invalidpostid'] = 'ID de mensaje no válido - {$a}';
 $string['lastpost'] = 'Último mensaje';
 $string['learningforums'] = 'Foros de aprendizaje';
 $string['longpost'] = 'Mensaje largo';
-$string['mailnow'] = 'Enviar ahora';
+$string['mailnow'] = 'Enviar notificaciones del tema sin tiempo de espera para edición';
 $string['manydiscussions'] = 'Debates por página';
 $string['markalldread'] = 'Marcar como leídos todos los mensajes de este debate.';
 $string['markallread'] = 'Marcar como leídos todos los mensajes de este foro.';
@@ -380,6 +390,7 @@ $string['page-mod-forum-view'] = 'Página principal del módulo Foro';
 $string['page-mod-forum-x'] = 'Cualquier página del módulo Foro';
 $string['parent'] = 'Mostrar mensaje anterior';
 $string['parentofthispost'] = 'Anterior a este mensaje';
+$string['permalink'] = 'Enlace permanente';
 $string['pluginadministration'] = 'Administración del foro';
 $string['pluginname'] = 'Foro';
 $string['postadded'] = '<p>Su mensaje se ha enviado con éxito.</p> <p>Tiene {$a} para editar si desea hacer cualquier cambio.</p>';
@@ -392,6 +403,9 @@ $string['postincontext'] = 'Ver el mensaje en su contexto';
 $string['postmailinfo'] = 'Esta es una copia del mensaje publicado en el sitio web {$a}.
 
 Para responder a este mensaje haga clic en este enlace:';
+$string['postmailinfolink'] = 'Esta es una copia de un mensaje enviado a {$a->coursename}.
+
+Para responder haga clic en el link: {$a->replylink}';
 $string['postmailnow'] = '<p>Este mensaje será enviado inmediatamente a todos los suscritos al foro.</p>';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Muy individualista';
@@ -445,6 +459,7 @@ $string['rsstype_help'] = '<P>Esta opción le permite habilitar los canales RSS 
          nuevo mensaje en el foro.
 </UL>';
 $string['search'] = 'Buscar';
+$string['search:activity'] = 'Foro - información de actividad';
 $string['searchdatefrom'] = 'Los mensajes deben ser posteriores a la fecha';
 $string['searchdateto'] = 'Los mensajes deben ser anteriores a la fecha';
 $string['searchforumintro'] = 'Por favor, introduzca las condiciones de la búsqueda en uno o en varios de los siguientes campos:';
@@ -453,6 +468,7 @@ $string['searchfullwords'] = 'Estas palabras deben aparecer exactamente igual';
 $string['searchnotwords'] = 'Estas palabras NO deben aparecer en el mensaje';
 $string['searcholderposts'] = 'Buscar mensajes antiguos...';
 $string['searchphrase'] = 'Esta frase exacta debe aparecer en el mensaje';
+$string['search:post'] = 'Foro - temas';
 $string['searchresults'] = 'Resultado';
 $string['searchsubject'] = 'Estas palabras deben aparecer en el asunto';
 $string['searchuser'] = 'Este nombre debe corresponder con el del autor';
@@ -464,6 +480,7 @@ $string['shortpost'] = 'Mensaje corto';
 $string['showsubscribers'] = 'Mostrar/editar suscriptores actuales';
 $string['singleforum'] = 'Debate sencillo';
 $string['smallmessage'] = '{$a->user} envió un mensaje a {$a->forumname}';
+$string['smallmessagedigest'] = 'Resumen de foro conteniendo {$a} mensajes';
 $string['startedby'] = 'Comenzado por';
 $string['subject'] = 'Asunto';
 $string['subscribe'] = 'Suscribirse a este foro';
@@ -473,8 +490,8 @@ $string['subscribediscussion'] = 'Suscribirse a este tema';
 $string['subscribeenrolledonly'] = 'Lo siento, sólo los usuarios registrados pueden suscribirse a las notificaciones de aportaciones en los foros';
 $string['subscribenone'] = 'Dar de baja a todos de este foro';
 $string['subscribers'] = 'Suscriptores';
-$string['subscribersto'] = 'Suscriptores de \'{$a}\'';
-$string['subscriberstowithcount'] = 'Suscriptores de \'{$a}\'  ({$a->count})';
+$string['subscribersto'] = 'Suscriptores de "{$a->name}"';
+$string['subscriberstowithcount'] = 'Suscriptores de \'{$a->name}\'  ({$a->count})';
 $string['subscribestart'] = 'Deseo recibir notificaciones por correo de nuevos mensajes en este foro';
 $string['subscribestop'] = 'No deseo recibir notificaciones por correo de nuevos mensajes en este foro';
 $string['subscription'] = 'Suscripción';
@@ -491,11 +508,15 @@ Hay 4 modos de suscripción:
 * Opcional - Los participantes pueden elegir si desean ser suscritos.
 * Forzosa - Todos están suscritos y no puede darse de baja.
 * Automática - Todos están suscritos inicialmente pero cada usuario puede desactivar la suscripción en cualquier momento.
-* Desactivada - No se permiten suscripciones.';
+* Desactivada - No se permiten suscripciones.
+
+Nota: Cualquier cambio en el modo de suscripción sólo afectará a los usuarios que se registren en el curso en el futuro y no a los usuarios existentes.';
 $string['subscriptionoptional'] = 'Suscripción opcional';
 $string['subscriptions'] = 'Suscripciones';
 $string['thisforumisthrottled'] = 'Este foro tiene un número limitado de mensajes para enviar en un cierto período de tiempo. El ajuste normalmente se hace en {$a->blockafter} mensaje(s) en {$a->blockperiod}';
+$string['timedhidden'] = 'Estado por período: Oculto para los estudiantes';
 $string['timedposts'] = 'Mensajes con asignación de tiempo';
+$string['timedvisible'] = 'Estado por período: visible a todos los usuarios';
 $string['timestartenderror'] = 'La fecha final no puede ser anterior a la inicial';
 $string['trackforum'] = 'Rastrear mensajes no leídos';
 $string['tracking'] = 'Rastrear';
@@ -503,22 +524,18 @@ $string['trackingoff'] = 'Desconectado';
 $string['trackingon'] = 'Forzado';
 $string['trackingoptional'] = 'Opcional';
 $string['trackingtype'] = 'Rastreo de lectura';
-$string['trackingtype_help'] = '<p>Si está activada, los usuarios pueden realizar el seguimiento de mensajes leídos y no leídos en los foros y discusiones.
-</p>
+$string['trackingtype_help'] = 'El seguimiento de lectura permite a los participantes verificar rápidamente que temas no han sido leídos, destacando los temas nuevos.
 
-<p>Existen tres posibilidades:</p>
-<ul>
-<li>Opcional [por defecto]: los estudiantes pueden activar o desactivar el seguimiento a su discreción.</li>
-<li>Conectado: el seguimiento siempre está activo.</li>
-<li>Desconectado: el seguimiento siempre está desactivado.</li>
-</ul>';
+Si está configurado como opcional, los participantes pueden elegir si habilitar o no el seguimiento a través de un enlace en el bloque de administración. (Los usuarios también deben habilitar el seguimiento en sus preferencias del foro).
+
+Si \'Permitir forzar seguimiento de lectura\' está habilitado en la administración del sitio, entonces una opción más está disponible: forzado. Esto significa que, más allá de las preferencias del foro del usuario, el seguimiento está siempre habilitado.';
 $string['unread'] = 'No leído';
 $string['unreadposts'] = 'Mensajes no leídos';
 $string['unreadpostsnumber'] = '{$a} mensajes no leídos';
 $string['unreadpostsone'] = '1 mensaje no leído';
 $string['unsubscribe'] = 'Darse de baja de este foro';
 $string['unsubscribeall'] = 'Dar de baja de todos los foros';
-$string['unsubscribeallconfirm'] = 'En este momento está suscrito a {$a} foros. ¿Realmente desea darse de baja de todos los foros y deshabilitar la suscripción automática al foro?';
+$string['unsubscribeallconfirm'] = 'En este momento está suscrito a {$a->forums} foros, y {$a->discussions} debates. ¿Realmente desea darse de baja de todos los foros y debates, y deshabilitar la suscripción automática a los debates?';
 $string['unsubscribeallconfirmdiscussions'] = 'En este momento está suscrito a las discusiones {$a->discussions}. ¿Realmente desea anular la suscripción a todas las discusiones y deshabilitar la suscripción automática a la discusión?';
 $string['unsubscribeallconfirmforums'] = 'En este momento está suscrito a los foros {$a->forums}. ¿Realmente desea anular la suscripción a todos los foros y deshabilitar la suscripción automática a la discusión?';
 $string['unsubscribealldone'] = 'Se han eliminado todas sus suscripciones opcionales a los foros. Aun así, podría seguir recibiendo notificaciones de foros con suscripción forzosa. Para gestionar las notificaciones de los foros, vaya a Mensajería en los Ajustes de su Perfil.';

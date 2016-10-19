@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['scheduledtasks'] = '예정된 작업';
+$string['taskschedulemonth_help'] = '예약 작업의 월 항목입니다. 이 항목은 유닉스의 cron 과 동일한 형식을 갖습니다. <br/><ul><li><strong>*</strong> 매월</li><li><strong>*/2</strong>짝수 격월</li><li><strong>1</strong> 매년 1월</li><li><strong>1,5</strong> 매년 1월과 5월</li></ul>';

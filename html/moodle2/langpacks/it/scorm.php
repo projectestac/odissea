@@ -77,6 +77,7 @@ $string['calculatedweight'] = 'Peso calcolato';
 $string['cannotaccess'] = 'Non è possibile chiamare lo script in quel modo';
 $string['cannotfindsco'] = 'SCO non trovato';
 $string['chooseapacket'] = 'Scegli o aggiorna un pacchetto';
+$string['closebeforeopen'] = 'Hai specificato una data di chiusura successiva alla data di apertura.';
 $string['collapsetocwinsize'] = 'Riduci TOC se la dimensione della finestra è minore di';
 $string['collapsetocwinsizedesc'] = 'Consente di impostare la dimensione minima della finestra sotto la quale ridurre il TOC.';
 $string['compatibilitysettings'] = 'Impostazioni di compatibilità';

@@ -483,10 +483,30 @@ $string['missingitemtypeoreid'] = 'Falta la clau de la matriu (itemtype o eid) a
 $string['missingscale'] = 'Heu de seleccionar una escala';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Qualificació';
+$string['modgradecantchangegradetype'] = 'No podeu canviar el tipus, perquè ja existeixen qualificacions per a aquesta activitat.';
+$string['modgradecantchangegradetypemsg'] = 'Algunes qualificacions ja s\'han posat, de manera que el tipus de qualificació no es pot canviar. Si voleu canviar la qualificació màxima, primer heu de triar si voleu o no convertir l\'escala de les qualificacions existents.';
+$string['modgradecantchangegradetyporscalemsg'] = 'Algunes qualificacions ja s\'han posat, de forma que el tipus de qualificació i l\'escala no es poden canviar.';
+$string['modgradecantchangeratingmaxgrade'] = 'No podeu canviar la qualificació màxima quan ja s\'han posat notes en una activitat avaluable.';
+$string['modgradecantchangescale'] = 'No podeu canviar l\'escala, ja que aquesta activitat té qualificacions posades.';
+$string['modgradecategorycantchangegradetypemsg'] = 'Aquesta categoria té associats elements de qualificació que s\'han rectificat. Per tant ja s\'han introduït algunes qualificacions i en conseqüència el tipus de qualificació no es pot canviar. Si voleu canviar la qualificació màxima, primer heu de triar si voleu o no convertir les qualificacions existents a una nova escala.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'Aquesta categoria té associades activitats amb qualificacions anul·lades. Tanmateix algunes activitats estan qualificades, de manera que el tipus de qualificació i l\'escala de notes no es poden canviar.';
+$string['modgradecategoryrescalegrades'] = 'Converteix les qualificacions rectificades a una nova escala';
+$string['modgradecategoryrescalegrades_help'] = 'En canviar la qualificació màxima en un element del llibre de qualificacions cal especificar si això ha de fer canviar o no el percentatge actual de les qualificacions.
+
+Si ho establiu a «Sí», es convertiran les qualificacions rectificades existents de tal manera que es conservi la qualificació en percentatge.
+
+Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qualificació màxima d\'una activitat provocarà que una nota de 6/10 (60%) es converteixi a 12/20 (60%). Si aquesta opció s\'estableix a «No», la qualificació es mantindrà sense canvis, la qual cosa que requerirà l\'ajust manual de les qualificacions de l\'activitat per tal d\'assegurar que les puntuacions siguin correctes.';
+$string['modgradedonotmodify'] = 'No modifiquis les qualificacions existents';
 $string['modgradeerrorbadpoint'] = 'El valor de qualificació no és vàlid. Hauria de ser un enter entre 1 i {$a}';
 $string['modgradeerrorbadscale'] = 'L\'escala seleccionada no és vàlida. Assegureu-vos de seleccionar una escala de les que es mostren més avall.';
 $string['modgrade_help'] = 'Seleccioneu el tipus de qualificació que s\'utilitzarà en aquesta activitat. Si trieu "escala", podreu triar una escala en el menú desplegable. Si utilitzeu la qualificació per "puntuació" podreu introduir el valor màxim de la qualificació per a aquesta activitat.';
 $string['modgrademaxgrade'] = 'Puntuació màxima';
+$string['modgraderescalegrades'] = 'Converteix les qualificacions existents';
+$string['modgraderescalegrades_help'] = 'En canviar la qualificació màxima en un element del llibre de qualificacions cal especificar si això ha de fer canviar o no el percentatge actual de les qualificacions.
+
+Si ho establiu a «Sí», es convertiran les qualificacions existents de tal manera que es conservi la qualificació en percentatge.
+
+Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qualificació màxima d\'una activitat provocarà que una nota de 6/10 (60%) es converteixi a 12/20 (60%). Si aquesta opció s\'estableix a «No», la qualificació es mantindrà sense canvis, la qual cosa que requerirà l\'ajust manual de les qualificacions de l\'activitat per tal d\'assegurar que les puntuacions siguin correctes.';
 $string['modgradetype'] = 'Tipus';
 $string['modgradetypenone'] = 'Cap';
 $string['modgradetypepoint'] = 'Puntuació';
@@ -497,6 +517,7 @@ $string['movingelement'] = 'S\'està movent {$a}';
 $string['multfactor'] = 'Multiplicador';
 $string['multfactor_help'] = '<p>Factor pel qual es multiplicaran totes les qualificacions d\'aquest element de qualificació.</p>';
 $string['multfactorvalue'] = 'Valor multiplicador per a {$a}';
+$string['mustchooserescaleyesorno'] = 'Cal que trieu si voleu convertir o no les qualificacions existents.';
 $string['mygrades'] = 'Enllaç a les qualificacions en el menú d\'usuari';
 $string['mygrades_desc'] = 'Aquest paràmetre permet l\'opció d\'inserir un enllaç a un butlletí de qualificacions extern en el menú d\'usuari.';
 $string['mypreferences'] = 'Les meves preferències';
@@ -611,6 +632,7 @@ $string['rawpct'] = '% brut';
 $string['real'] = 'Real';
 $string['realletter'] = 'Real (lletra)';
 $string['realpercentage'] = 'Real (percentatge)';
+$string['recalculatinggrades'] = 'S\'estan tornant a calcular les qualificacions';
 $string['recovergradesdefault'] = 'Restableix les qualificacions per defecte';
 $string['recovergradesdefault_help'] = 'Per defecte restableix les qualificacions antigues quan es torna a inscriure un usuari en un curs.';
 $string['refreshpreview'] = 'Refresca la previsualització';

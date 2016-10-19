@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'Aggiungi {no} aree di rilascio';
 $string['addmoreimages'] = 'Aggiungi {no} elementi trascinabili';
 $string['answer'] = 'Risposta';
 $string['bgimage'] = 'Immagine di sfondo';
+$string['blank'] = 'vuoto';
 $string['correctansweris'] = 'La risposta corretta è: {$a}';
 $string['draggableimage'] = 'Immagine trascinabile';
 $string['draggableitem'] = 'Elemento trascinabile';

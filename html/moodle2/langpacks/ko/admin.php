@@ -186,7 +186,7 @@ $string['configdebugdisplay'] = '이것을 켜두면 오류보고가 HTML문서�
 $string['configdebugpageinfo'] = '페이지 하단에 페이지 정보가 표시되게 하려면 활성화 하십시요.';
 $string['configdebugsmtp'] = '이메일 발송시의 자세한 오류 내용을 SMTP 서버에게 보내게 함';
 $string['configdebugvalidators'] = '페이지의 각주에 외부 검사기 서버에 대한 링크를 원한다면 활성화 하세요, 사용자 이름이 <em>w3cvalidator</em> 인 사용자를 만들고 손님 접속을 활성화하는 것이 필요할 수 있습니다. 이 변경은 서버에 대해 승인 받지 않은 접속을 허용하게 되므로 실제 운영중인 사이트에서는 활성화 하지 마십시요.';
-$string['configdefaulthomepage'] = '로그인 사용자를 위한 기본 누리집을 결정합니다. ';
+$string['configdefaulthomepage'] = '로그인된 사용자를 위한 홈 페이지를 설정합니다';
 $string['configdefaultrequestcategory'] = '사용자가 요청한 강좌는 자동적으로 이 범주에 속하게 됩니다.';
 $string['configdefaultrequestedcategory'] = '승인된 강좌가 수용될 기본 범주';
 $string['configdefaultuserroleid'] = '이곳에서 지정한 역할로 모든 사용자에게 사이트 수준의 역할이 부여됩니다. 또한 다른 역할도 부여할 수 있습니다. 기본 역할은 인증된 사용자(구판에서는 손님)입니다. 자신들이 소유한 다른 역할과 상충되지 않게 하고, 모든 사용자가 강좌 수준의 권한(포럼의 게시 및 일정 관리 등)을 넘어서는 권한을 갖지 않게 주의하십시요.';
@@ -195,6 +195,7 @@ $string['configdeleteunconfirmed'] = '만약 이메일 인증제를 사용한다
 $string['configdenyemailaddresses'] = '같은 방법으로 여기에 있는 특정 도메인 목록의 이메일 주소를 허용하지 않는다. 그 외 모든 다른 도메인들은 허용된다. 예: <strong>hanmail.net yahoo.co.uk<strong/>';
 $string['configdisableuserimages'] = '사용자가 개인정보 사진을 임의로 바꾸지 못하게 함';
 $string['configdisplayloginfailures'] = '이것은 이전에 로그인에 실패했던 사용자의 정보를 표시할 것이다.';
+$string['configdndallowtextandlinks'] = '파일처럼 강좌 페이지 안으로 텍스트나 링크를 끌고올 수 있도록 하는 기능입니다. 단, Firefox 에서 사용하거나, 혹은 서로 다른 브라우져 간의 텍스트 이동은 불안정하며, 빈 문자열이나 잘못된 문자열이 올라갈 수 있습니다.';
 $string['configdocroot'] = '무들 문서 창고의 경로를 정의합니다. 만일 나름대로의 사용자 온라인 문서를 갖고자 할 경우에는 이를 바꿀 수 있습니다. 그러나 문서 경로가 http://docs.moodle.org 과 같은 형식을 사용하도록 하십시요.';
 $string['configdoctonewwindow'] = '만일 이 기능을 활성화 하면, 무들 문서로의 링크가 새 창에서 보여집니다.';
 $string['configeditordictionary'] = '이것은 만약 aspell에 사용자가 쓰는 언어의 사전이 없을 때 사용할 값입니다.';
@@ -243,7 +244,7 @@ $string['configiplookup'] = '여러 기록에서 (34.12.222.93 같은) IP주소�
 $string['configkeeptagnamecase'] = '태그를 만든 사람이 사용자로 입장할 때, 태그 명칭이 원래 형태대로 유지되도록 하려면 여기를 체크해 놓으십시요.';
 $string['configlang'] = '사이트 전체를 위한 기본 언어를 선택하십시요.사용자들은 언어메뉴나 개인정보의 설정을 통해 이 설정을 덮어쓸 수도 있습니다.';
 $string['configlanglist'] = '무들에 설치된 언어팩이면 어떤 언어든지 사용자 스스로 선택할 수 있도록 가급적 이 곳을 빈칸으로 놓아 두십시요. 하지만, 사용자들이 선택하는 언어 목록을 제한하고 싶으면 해당하는 언어코드를 쉼표로 분리하여 작성하여 넣으면 됩니다. 예시: ko,en,fr,it';
-$string['configlangmenu'] = '누리집과 로그인페이지 등에서 일반적인 목적으로 언어 메뉴를 보이게 할 것인지 말 것인지를 설정하십시요. 이 설정은 사용자들이 개인정보에서 선호하는 언어를 설정하는 능력에는 영향을 미치지 않습니다.';
+$string['configlangmenu'] = '로그인 페이지나 홈페이지 상에 언어 선택 메뉴를 표시할 것인지 선택합니다. 이 설정은 사용자 프로필에 등록된 선호 언어에 영향을 주지 않습니다.';
 $string['configlangstringcache'] = '데이터 경로에 컴파일된 파일 형태로 모든 언어의 문자열을 저장. 만일 무들을 번역하는 중이거나 소스 코드의 문자열을 변경시키고자 할 때에는, 이 기능을 꺼 놓을 수 있음. 그렇지 않다면 그냥 두는 편이 성능 상 이득을 볼 수 있음.';
 $string['configlatinexcelexport'] = '엑셀로 내보내기 위한 인코딩 선택';
 $string['configlocale'] = '사이트 전체의 로케일을 선택해라. 이것은 모든 언어팩의  포맷이나 날짜 언어를 덮어쓰기 할것입니다 .(그럼에도 불구하고 일정표의 요일은 영향받지 않습니다) 여기에 지정한 로케일은 서버에서 지원하도록 해야 합니다.(예: Linux에서 한글 로케일은 ko_KR.UTF-8) 대부분의 경우 이 부분은 공백으로 두는 편이 낫습니다.';
@@ -358,6 +359,7 @@ $string['country'] = '기본 국가';
 $string['coursecontact'] = '강좌 관리자';
 $string['coursecontact_desc'] = '여기에서는 강좌 소개에 표시하고 싶은 사람을 설정할 수 있게 한다. 기표된 역할이 주어진 사용자는 강좌 설명에 이름이 제시됩니다.';
 $string['courselistshortnames'] = '확장된 강좌 이름 표시';
+$string['courselistshortnames_desc'] = '이 기능이 활성화 되면, 강좌의 짧은 이름이 강좌 목록의 전체이름과 함께 표시됩니다. 필요하다면, 언어 설정(language customisation)기능을 통해 \'courseextendednamedisplay\' 값을 수정하여 확장된 강좌명을 쓸 수도 있습니다.';
 $string['coursemgmt'] = '추가/편집';
 $string['courseoverview'] = '강좌 개요';
 $string['courserequestnotify'] = '개설 요청 알림';
@@ -403,7 +405,7 @@ $string['debugstringids'] = '기본 문자열 표시';
 $string['debugvalidators'] = '유효한 연결고리 표시';
 $string['defaultcity'] = '기본 도시';
 $string['defaultcity_help'] = '여기에 입력되는 도시는 새로운 사용자 계정을 만들때 기본으로 사용됩니다.';
-$string['defaulthomepage'] = '사용자 기본 누리집';
+$string['defaulthomepage'] = '사용자들을 위한 기본 홈페이지';
 $string['defaultrequestcategory'] = '개설할 강좌의 기본 범주';
 $string['defaultsettinginfo'] = '기본: {$a}';
 $string['defaultuserroleid'] = '모든 사용자에 대한 기본 역할';
@@ -510,6 +512,7 @@ $string['forcelogin'] = '강제로 로그인하게 함';
 $string['forceloginforprofileimage'] = '사용자 사진을 보기 위해서는 로그인하도록 함.';
 $string['forceloginforprofiles'] = '개인정보 열람시 로그인';
 $string['forcetimezone'] = '특정 표준시 강요';
+$string['formatuninstallwithcourses'] = '{$a->count}개의 강좌가 {$a->format} 형식을 사용하고 있습니다. 이 형식은 모두 이 사이트의 기본 형식인 {$a->defaultformat} 으로 변경될 것입니다. 변경된 기본 형식을 따르지 않는 자료는 잃어버리게 됩니다. 계속 진행하시겠습니까?';
 $string['frontpage'] = '시작 페이지';
 $string['frontpagebackup'] = '시작 페이지 백업';
 $string['frontpagedefaultrole'] = '기본 시작 페이지 역할';
@@ -592,6 +595,7 @@ $string['lockoutduration_desc'] = '잠겨진 계정은 자동으로 이 기간 �
 $string['lockoutemailsubject'] = '{$a}에 있는 계정이 잠겨져 있습니다.';
 $string['lockouterrorunlock'] = '잘못된 계정 잠금해제 정보가 제공되었습니다.';
 $string['lockoutthreshold'] = '계정 잠금 임계 값';
+$string['lockoutthreshold_desc'] = '로그인 시도가 지정된 횟수를 초과하면 계정이 잠깁니다. 이 기능은 서비스 거부 공격(DoS)에 악용될 수 있습니다.';
 $string['lockoutwindow'] = '계정 잠금 관찰 윈도우';
 $string['log'] = '접속 기록';
 $string['logguests'] = '손님 접속을 기록하기';
@@ -819,6 +823,7 @@ $string['registration'] = '사이트등록';
 $string['registrationwarning'] = '사이트가 등록되지 않았습니다.';
 $string['releasenoteslink'] = '무들 버전에 대한 정보를 얻기 위해서는 온라인 <a target="_blank" href="{$a}">릴리즈 노트</a> 를 보십시요.';
 $string['rememberusername'] = '사용자이름 기억';
+$string['rememberusername_desc'] = '사용자가 로그인 되어 있을 동안, 쿠키와 사용자명을 저장할 수 있습니다. 이렇게 저장된 쿠키는 동의 없이 사용될 경우 보안 문제를 일으킬 수 있습니다.';
 $string['reportsmanage'] = '보고서 관리';
 $string['requestcategoryselection'] = '범주 선택 활성화';
 $string['requiredentrieschanged'] = '<strong>중요 - 필히 읽어볼 것<br/>(본 경고 메세지는 판올림 과정에서만 보이게 될 것입니다.)</strong><br/>버그 수정 때문에, \'필수 항목\' 및 \'설정을 보기전 필수 항목\'설정을 이용하는 데이터베이스 활동에 대한 동작이 변경될 것입니다. 좀 더 자세한 변경 내용은 <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">데이터베이스 모듈 포럼</a>을 참고하면 됩니다. 이러한 설정이 어떻게 작동할 것인가는 <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">무들 문서 창고</a>에서 역시 찾아볼 수 있습니다.
@@ -966,6 +971,23 @@ $string['upgradepluginsinfo'] = '플러그인 업데이트';
 $string['upgradesettings'] = '새로운 설정';
 $string['upgradesettingsintro'] = '앞서의 판올림과정 동안 아래의 설정이 추가되었습니다. 기본 설정에서 필요한 내용을 바꾼 다음, 페이지  하단에 있는 "변경사항 저장"을 클릭하십시요.';
 $string['upgradestalefiles'] = '혼합된 무들 버전이 발견되었습니다. 업그레이드를 계속할 수 없습니다.';
+$string['upgradestalefilesinfo'] = 'PHP 스크립트가 Moodle 설치 디렉토리에서 두개 이상의 Moodle 을 발견하여 Moodle 업데이트를 중지하였습니다.
+
+이 문제는 차후 심각한 문제를 일으킬 수 있기 때문에, 계속 진행하기 위해서는 해당 디렉토리 내에 반드시 하나의 Moodle 만을 남겨야 합니다.
+
+이 문제를 해결하기 위해, 다음의 방법들을 추천합니다.
+
+* 현재 Moodle 의 이름을 "moodle_old" 와 같은 다른 이름으로 변경하십시요
+* 새로은 moodle 디렉토리를 생성한 후, 하나의 Moodle 소스를 복사합니다. (Git 저장소에서 얻거나, 인터넷으로 moodle 압축 파일을 내려받을 수 있습니다)
+* 이전 moodle 디렉토리("moodle_old") 에서 config.php 파일과, 플러그인 디렉토리를 복사하여 새로 생성한 moodle 디렉토리에 복사합니다.
+
+Moodle 디렉토리가 정리되었다면, 이 페이지를 새로고침 하여 업데이트를 진행하십시요.
+
+이 경고는 기존 moodle 에 새 버전의 moodle 을 덮어썼을때도 발생할 수 있습니다. 마이너 버전의 업데이트를 할 때에는 이런 방법도 괜찮지만, 메이저 버전의 업데이트를 할 때에는 절대로 하지 말아주십시요.
+
+또한 이 경고는 Git 저장소 에서 불완전한 checkout 이나 fetch 과정으로 인해 일어날 수도 있습니다. 이런 경우, 아직 git 의 fetch 나 checkout 이 완료될 때까지 기다렸다가 다시 시도해 주십시요. 혹은 적절한 청소 명령등이 필요할 수도 있습니다.
+
+<a href="{$a}">{$a}</a> 의 업그레이드 문서에서 더 자세한 정보를 확인하실 수 있습니다.';
 $string['upgradestart'] = '판올림';
 $string['upgradesure'] = '무들 파일들이 변경완료되었고  서버를<br /><br />
  <strong>{$a}</strong> <br /><br />
@@ -979,6 +1001,7 @@ $string['useblogassociations'] = '연합 활성화';
 $string['useexternalyui'] = '야후 UI 라이브러리 사용';
 $string['user'] = '사용자';
 $string['userbulk'] = '일괄 사용자 처리';
+$string['userdefaultpreferences'] = '사용자 기본 환경설정';
 $string['userlist'] = '사용자 목록 살펴보기';
 $string['userpolicies'] = '사용자 정책';
 $string['userpreference'] = '개인 맞춤설정';

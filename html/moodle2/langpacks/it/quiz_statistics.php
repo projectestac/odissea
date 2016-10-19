@@ -84,6 +84,7 @@ $string['negcovar_help'] = 'Il voto di questa domanda relativo a questo insieme 
 In questo caso la nostra equazione per ricavare il peso ottimale della domanda non funziona. The calculations for effective question weight for other questions in this quiz are the effective question weight for these questions if the highlighted questions with a negative covariance are given a maximum grade of zero.
 
 If you edit a quiz and give these question(s) with negative covariance a max grade of zero then the effective question weight of these questions will be zero and the real effective question weight of other questions will be as calculated now.';
+$string['nogradedattempts'] = 'Non sono presenti tentativi del quiz, oppure i tentativi richiedono la valutazione manuale.';
 $string['nostudentsingroup'] = 'In questo gruppo non ci sono studenti';
 $string['optiongrade'] = 'Credito parziale';
 $string['partofquestion'] = 'Parte di domanda';

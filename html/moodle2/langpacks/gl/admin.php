@@ -32,7 +32,7 @@ $string['additionalhtml'] = 'HTML adicional';
 $string['additionalhtml_desc'] = 'Esta configuración permítelle especificar o código HTML que desexa engadir en todas as páxinas. Pode estabelecer o código HTML a engadir dentro da etiqueta HEAD da páxina, inmediatamente despois de ter sido aberta a etiqueta BODY ou inmediatamente antes de pechar a etiqueta BODY.<br />Facendo isto poderá engadir encabezados ou rodapés personalizados en cada páxina ou engadir doadamente, con independencia do tema escollido, compatibilidade con servizos como Google Analytics.';
 $string['additionalhtmlfooter'] = 'Antes de pechar BODY';
 $string['additionalhtmlfooter_desc'] = 'Este contido engadirase a cada páxina xusto antes de pechar a etiqueta BODY.';
-$string['additionalhtmlhead'] = 'Dento do encabezado (HEAD)';
+$string['additionalhtmlhead'] = 'Dentro do encabezado (HEAD)';
 $string['additionalhtmlhead_desc'] = 'Este contido engadirase na fin da etiqueta HEAD en cada páxina.';
 $string['additionalhtml_heading'] = 'HTML adicional que se engade a cada páxina.';
 $string['additionalhtmltopofbody'] = 'Cando BODY está aberto';
@@ -51,7 +51,7 @@ $string['allowcoursethemes'] = 'Permitir temas de curso';
 $string['allowediplist'] = 'Listas de IP permitidos';
 $string['allowemailaddresses'] = 'Dominios de correo permitidos';
 $string['allowframembedding'] = 'Permitir cadros integrados';
-$string['allowframembedding_help'] = 'Permitir integrar este sitio en marcos de sitios externos. Por razóns de seguranza recomendase non activar esta opción.';
+$string['allowframembedding_help'] = 'Se o activa, este sitio podería ser incrustado nun marco nun sistema remoto, como se recomenda ao usar o engadido de inscrición de «Publicar como unha ferramenta LTI». Po la contra, recomendase deixar desactivada a incrustación de marco por razóns de seguridade.';
 $string['allowguestmymoodle'] = 'Permitir o acceso de convidados á miña área persoal';
 $string['allowobjectembed'] = 'Permitir as etiquetas EMBED e OBJECT';
 $string['allowthemechangeonurl'] = 'Permitir cambios de tema no URL';
@@ -69,6 +69,7 @@ $string['authsettings'] = 'Xestionar a autenticación';
 $string['autolang'] = 'Detección automática do idioma';
 $string['autologinguests'] = 'Acceso automático de convidados';
 $string['availablelicenses'] = 'Licenzas dispoñíbeis';
+$string['availablesearchareas'] = 'Áreas dispoñíbeis para busca';
 $string['availableto'] = 'Dispoñíbel para';
 $string['backgroundcolour'] = 'Cor transparente';
 $string['backups'] = 'Copias de seguranza';
@@ -177,19 +178,17 @@ $string['configcronremotepassword'] = 'Isto significa que o script do cron.php n
     http://site.example.com/admin.cron.php?password=opensesame
 </pre>Non será obrigatorio se o deixa en branco.';
 $string['configcurlcache'] = 'Tempo de vixencia (en segundos) da caché cURL.';
-$string['configcustommenuitems'] = 'Pode deseñar un menú personalizado que amosarase no encabezado do seu sitio Moodle. Este menú pode agruparse por temas de modo que cada liña consta dun texto do menú, unha ligazón URL (opcional) e unha descrición do título (opcional), separados polo carácter de canalización «|». Pode especificar unha estrutura de submenús facendo uso dos guións «-».
-
+$string['configcustommenuitems'] = 'Pode deseñar aquí un menú personalizado que pode ser amosado polos temas gráficos. Cada liña consta dun texto do menú, unha ligazón URL (opcional), unha ferramenta (opcional) e un código de idioma ou lista separada por comas de códigos de idiomas (opcional, para amosar a liña soamente a usuarios do idioma seleccionado), separados polo carácter de liña vertical | (AltGr + 1). Pode especificar unha estrutura de submenús facendo uso de guións, e poden usarse divisores engadindo unha liña de un ou máis caracteres # onde o desexe. Por exemplo:
 Por exemplo:
 <pre>
 Moodle comunidade|http://moodle.org
 -Moodle asistencia de balde|http://moodle.org/support
+-###
 -Moodle desenvolvemento|http://moodle.org/development
---Moodle Seguimento|http://tracker.moodle.org
---Moodle Docs|http://docs.moodle.org
--Moodle Novas|http://moodle.org/news
-Moodle compañías
--Moodle aloxamento comercial|http://moodle.com/hosting
--Moodle asistencia comercial|http://moodle.com/support
+--Documentación de Moodle en Inglés|http://docs.moodle.org
+--Moodle Documentación en Español|http://docs.moodle.org/all/es/Página_Principal
+#####
+Moodle comercial|http://moodle.com/
 </pre>';
 $string['configcustomusermenuitems'] = 'Pode configurar o contido do menú do usuario (agás a ligazón de saída de sesión, que é engadido automaticamente). Cada liña separase co carácter | e consiste de 1) unha cadea co formato «langstringname, componentname» ou como texto simple, 2) un URL, e 3) unha icona, ben sexa unha icona pix ou coma un URL. Os separadores poden empregarse para engadir unha liña ou máis caracteres # onde se queira.';
 $string['configdbsessions'] = 'Ao activar este axuste, empregarase a base de datos para almacenar información nas sesións actuais. Isto é especialmente útil para sitios grandes/concorridos ou para sitios construídos en clústers de servidores. Na maioría dos sitios esta opción debe estar desactivada para que poida ser empregado o disco do servidor. Teña en conta que se modifica agora este axuste desconectaranse todos os usuarios (inclusive o usuario). Se está empregando MySQL, asegúrese de que «max_allowed_packet» no my.cnf (ou no my.ini) é polo menos 4M.';
@@ -225,7 +224,7 @@ $string['configenablerssfeedsdisabled'] = 'Isto non está dispoñíbel porque as
 $string['configenablerssfeedsdisabled2'] = 'As fontes RSS están desactivadas no nivel do servidor. Precisa activalos antes en Servidor/RSS';
 $string['configenablesafebrowserintegration'] = 'Isto engade a opción «Requirir o exame seguro do navegador» para o campo »Seguridade do navegador» no formulario de configuración do cuestionario. Vexa http://www.safeexambrowser.org/ para obter máis información.';
 $string['configenablestats'] = 'Se activa esta función, a tarefa de cron do Moodle procesará os accesos e entradas dalgunhas estatísticas. Dependendo da cantidade de tráfico do seu sitio, pode demorarse un pouco. Activándoa poderá ver algúns gráficos interesantes e estatísticas sobre os seus cursos, ou sobre o sitio Web enteiro.';
-$string['configenabletrusttext'] = 'De xeito predeterminado Moodle limpará sempre a fondo o texto procedente dos usuarios para eliminar posíbeis erros en scripts, ficheiros multimedia, etc. que poden ser un risco de seguranza. O sistema de Contido de confianza é unha forma de fornecer a determinados usuarios a capacidade de incluír funcionalidades avanzadas nos seus contidos sen interferencias. Para activar este sistema, precisa activar primeiro este axuste e, a seguir, conceder o permiso de Contido de confianza a un rol específico de Moodle. Os textos creados ou enviados por tales usuarios serán marcados como fiábeis e non serán eliminados antes de presentalos.';
+$string['configenabletrusttext'] = 'De xeito predeterminado Moodle limpará sempre a fondo o texto procedente dos usuarios para eliminar posíbeis erros en scripts, ficheiros multimedia, etc. que poden ser un risco de seguranza. O sistema de Contido de confianza é unha forma de fornecer a determinados usuarios o permiso de incluír funcionalidades avanzadas nos seus contidos sen interferencias. Para activar este sistema, precisa activar primeiro este axuste e, a seguir, conceder o permiso de Contido de confianza a un rol específico de Moodle. Os textos creados ou enviados por tales usuarios serán marcados como fiábeis e non serán eliminados antes de presentalos.';
 $string['configenablewebservices'] = 'Os servizos web permiten outros sistemas para acceder a este Moodle e realizar operacións. Para maior seguranza esta funcionalidade debe ser desactivada a non ser que realmente estea a empregala.';
 $string['configenablewsdocumentation'] = 'Activar a xeración automática de documentación de servizos web. Un usuario pode ter acceso á súa propia documentación na súa páxina de chaves de seguranza {$a}. Sé se presenta a documentación dos protocolos activados.';
 $string['configerrorlevel'] = 'Escolla a cantidade de avisos PHP que desexa presentar. A mellor escolla é Normal.';
@@ -243,7 +242,9 @@ $string['configfrontpage'] = 'Os elementos seleccionados presentaranse na páxin
 $string['configfrontpagecourselimit'] = 'Número máximo de cursos';
 $string['configfrontpagecourselimithelp'] = 'Número máximo de cursos que se amosarán na páxina principal do sitio nos listados de cursos.';
 $string['configfrontpageloggedin'] = 'Os elementos seleccionados presentaranse na páxina de portada do sitio cando un usuario está a iniciar a sesión.';
-$string['configfullnamedisplay'] = 'Isto define que nomes son mostrados na súa totalidade. Na maior parte dos sitios monolingües a definición máis eficiente é a que está por defecto "Nomes dados + Apelido", mais pode escoller ocultar os apelidos en conxunto, ou deixar que sexa o actual paquete de idioma quen decida (algúns idiomas teñen diferentes convencións).';
+$string['configfullnamedisplay'] = 'Isto define como son amosados os nomes cando sexan amosados na súa totalidade. O valor predeterminado «language», deixa nas mans da cadea «fullnamedisplay» no paquete de idioma actual a decisión. Algúns idiomas teñen diferentes convencións para a presentación dos nomes.
+
+Para a maioría dos sitios de monolingües o axuste máis eficiente é «Nome Apelido», mais vostede pode escoller agochar totalmente os apelidos. Os marcadores de posición que poden utilizarse son: nome (firstname), apelido (lastname), nome fonético (firstnamephonetic), apelido fonético (lastnamephonetic), segundo nome (middlename) e nome alternativo (alternatename).';
 $string['configgeoipfile'] = 'Localización do ficheiro binario GeoIP City. Este ficheiro non forma parte da distribución de Moodle e debe obterse de forma independente en <a href="http://www.maxmind.com/">MaxMind</a>. Pode adquirir unha versión comercial ou optar pola versión de balde.<br />Simplemente descargue <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a> e extráao no directorio "{$a}" do seu servidor.';
 $string['configgetremoteaddrconf'] = 'Se o seu servidor está detrás dun proxy invertido, pode empregar este axuste para especificar en que cabeceiras HTTP pódese confiar que conteñan o enderezo IP remoto. As cabeceiras lense por orde, usando a primeira que estea dispoñíbel.';
 $string['configgradebookroles'] = 'Este axuste permite controlar quen aparece no libro de cualificacións. Os usuarios precisan polo menos un deses roles para seren amosados no libro de cualificacións dese curso.';
@@ -257,7 +258,7 @@ $string['configiplookup'] = 'Ao premer nun enderezo IP (como 34.12.222.93), tal 
 $string['configkeeptagnamecase'] = 'Marque esta opción se desexa que os nomes de etiqueta manteñan a estrutura de maiúsculas/minúsculas tal como foi introducida polos usuarios que los crearon.';
 $string['configlang'] = 'Escolla o idioma predeterminado para todo o sitio. Os usuarios poden substituír despois este axuste empregando o menú de idioma ou axustando o seu perfil persoal.';
 $string['configlanglist'] = 'Deixe isto en branco para permitirlle aos usuarios escoller calquera idioma que teña esta instalación de Moodle. Porén, pode reducir o menú de idioma introducindo unha lista de códigos de idiomas separados por comas. Por exemplo: en, es_es, fr, gl, it';
-$string['configlangmenu'] = 'Escolla se desexa ou non presentar como accesíbel o menú de idioma na páxina principal, na páxina de acceso, etc. Isto non afecta á capacidade do usuario para definir os idiomas preferidos no seu propio perfil.';
+$string['configlangmenu'] = 'Escolla se desexa ou non presentar como accesíbel o menú de idioma na páxina principal, na páxina de acceso, etc. Isto non afecta á facultade do usuario para definir os idiomas preferidos no seu propio perfil.';
 $string['configlangstringcache'] = 'Garda na caché todas as cadeas do idioma en ficheiros compilados dentro do directorio de datos. Se está a traducir Moodle ou cambiando cadeas no código fonte de Moodle entón pode desactivar isto. Do contrario, déixeo activo en beneficio do rendemento.';
 $string['configlatinexcelexport'] = 'Escoller a codificación para exportacións en formato Excel.';
 $string['configlocale'] = 'Escolla a localización do sitio. Anulará o formato e idioma das datas para todos os paquetes de idioma (aínda que os nomes dos días no calendario non se verán afectados). Precisa ter esta data local instalada no seu sistema operativo (por exemplo, para linux en_us.UTF-8 ou es_ES.UTF-8). Na maioría dos casos este campo debe deixarse en branco.';
@@ -304,8 +305,8 @@ $string['configproxypassword'] = 'É necesario un contrasinal para acceder a Int
 $string['configproxyport'] = 'Se este servidor precisa utilizar o proxy, entón especifique aquí o porto do proxy.';
 $string['configproxytype'] = 'Tipo de proxy web (requírense as extensións PHP5 e cURL para admitir o SOCKS5).';
 $string['configproxyuser'] = 'É necesario un nome de usuario para acceder a Internet a través do proxy; déixeo baleiro en caso contrario (requírese da extensión PHP cURL).';
-$string['configrecaptchaprivatekey'] = 'Cadea de caracteres usada para comunicarse entre o seu servidor Moodle e o servidor recaptcha. Obteña unha para este sitio visitando http://www.google.com/recaptcha';
-$string['configrecaptchapublickey'] = 'Cadea de caracteres usados para presentar o elemento reCAPTCHA no formulario de acceso. Xenerada por http://www.google.com/recaptcha';
+$string['configrecaptchaprivatekey'] = 'Cadea de caracteres (chave privada) usada para comunicarse entre o seu servidor Moodle e o servidor recaptcha. As xhaves ReCAPTCHA poden obterse en <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['configrecaptchapublickey'] = 'Cadea de caracteres (chave pública) usados para amosar o elemento reCAPTCHA no formulario de acceso. As chaves ReCAPTCHA poden obtenerse en <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['configrequestcategoryselection'] = 'Permitir a selección dunha categoría cando se solicita un curso.';
 $string['configrequestedstudentname'] = 'Palabra para utilizar o alumno nos cursos solicitados.';
 $string['configrequestedstudentsname'] = 'Palabra para utilizaren os alumnos nos cursos solicitados.';
@@ -352,7 +353,7 @@ $string['configtempdatafoldercleanup'] = 'Retirar os ficheiros de datos temporai
 $string['configthemedesignermode'] = 'Habitualmente todas as imaxes do tema e follas de estilo almacénanse na caché dos navegadores e no servidor durante un tempo moi longo, para mellorar o rendemento. Se vai redeseñar os temas ou desenvolver código, é probábel que desexe activar este modo para que no se garden versións na caché. Aviso: isto fará que o seu sitio sexa máis lento para todos os usuarios mentres estea activado. Opcionalmente tamén pode restabelecer a caché manualmente desde a páxina de seleccíón de temas.';
 $string['configthemelist'] = 'Deixe isto en branco para permitir que sexa utilizado calquera tema válido. Se desexa reducir o menú do tema, pode especificar aquí unha lista de nomes separados por comas (Non utilice espazos).
 Por exemplo: estándar,laranxabranco.';
-$string['configtimezone'] = 'Aquí pode definir o fuso horario predeterminado. Este é o único fuso horario PREDETERMINADO para presentar datas. Cada usuario pode modificalo, empregando o seu propio axuste no seu perfil. «Hora do servidor» fará que Moodle empregue o axuste predeterminado do sistema operativo do servidor, porén a hora do servidor fará que empregue o axuste predeterminado para este fuso horario no perfil do usuario. As tarefas cron que dependen dunha hora e día concreto para executarse rexeranse por este fuso horario.';
+$string['configtimezone'] = 'Este é o fuso horario PREDETEMINADO para amosar as datas -aínda que cada usuario pode anular esta configuración no seu perfil. As tarefas programadas de CRON e outros axustes do servidor están especificados neste fuso horario. Vostede debería cambiar esta configuración no caso de que se amose como «Fuso horario incorrecto» (Invalid timezone)';
 $string['configuseblogassociations'] = 'Deberían os usuarios poder organizar o seu blog asociando entradas cos cursos e cos módulos de curso?';
 $string['configuseexternalyui'] = 'No canto de empregar ficheiros locais, empregar ficheiros dispoñíbeis en liña en servidores de Yahoo. AVISO: Isto require duna conexión á Internet; doutro xeito, AJAX non funcionará no sitio. Este axuste non é compatíbel cos sitios que empreguen https.';
 $string['configuserquota'] = 'O número máximo de bytes que un usuario pode almacenar nos seus cartafoles de ficheiros privados. {$a->bytes} bytes == {$a->sisplaysize}';
@@ -371,8 +372,8 @@ $string['cookiesecure'] = 'Só cookies seguras';
 $string['country'] = 'País predeterminado';
 $string['coursecontact'] = 'Xestores de cursos';
 $string['coursecontact_desc'] = 'Este axuste permite controlar quen aparece na descrición do curso. Os usuarios precisan ter, polo menos, un destes roles para apareceren na descrición do curso.';
-$string['courselistshortnames'] = 'Display extended course names';
-$string['courselistshortnames_desc'] = 'When showing lists of courses, or when referring to courses on administration screens, show the course short name as well as the full name. In fact, when you turn this setting on, the display uses the \'courseextendednamedisplay\' language string, so you can changewhat is displayed using Language customisation.';
+$string['courselistshortnames'] = 'Amosar os nomes estendidos dos cursos';
+$string['courselistshortnames_desc'] = 'Se o activa, amosaranse tanto o nome curto do curso como o nome completo nas listas de cursos. De ser necesario, pode personalizar os nomes estendidos do curso ao editar a cadea de texto de idioma «courseextendednamedisplay», mediante a personalización do idioma.';
 $string['coursemgmt'] = 'Engadir/Editar cursos';
 $string['courseoverview'] = 'Vista xeral do curso';
 $string['courserequestnotify'] = 'Notificación de solicitude de curso';
@@ -422,7 +423,7 @@ $string['debugstringids_desc'] = 'Esta opción está deseñada para axudar aos t
 $string['debugvalidators'] = 'Amosar o validador de ligazóns';
 $string['defaultcity'] = 'Cidade predeterminada';
 $string['defaultcity_help'] = 'A cidade introducida aquí vai ser a cidade predeterminada ao crear novas contas de usuario.';
-$string['defaultformatnotset'] = 'Error determining default course format. Please check site settings.';
+$string['defaultformatnotset'] = 'Produciuse un erro ao determinar o formato predeterminado do curso. Por favor revise as configuracións do sitio.';
 $string['defaulthomepage'] = 'Páxina de inicio predeterminada para os usuarios';
 $string['defaultrequestcategory'] = 'Categoría predeterminada para solicitudes de curso';
 $string['defaultsettinginfo'] = 'Predeterminado/a: {$a}';
@@ -481,12 +482,15 @@ $string['enablecssoptimiser'] = 'Activar o optimizador de CSS';
 $string['enablecssoptimiser_desc'] = 'Cando se activa, CSS sometese a un proceso de optimización antes de ser gardado na cache. O optimizador procesa o CSS e retira as regras e os estilos duplicados, fai o mesmo co espazo removíbel e recompón o formato. Observe que activar esta opción ao mesmo tempo que o modo de deseño de temas gráficos será desastroso para o rendemento, mais axudará aos deseñadores dos temas gráficos a crear un CSS optimizado.';
 $string['enabled'] = 'Activado';
 $string['enabledevicedetection'] = 'Activar a detección de dispositivos';
+$string['enableglobalsearch'] = 'Activar a busca global';
+$string['enableglobalsearch_desc'] = 'Se o activa, os datos serán indexados e sincronizados por unha tarefa programada do sistema.';
 $string['enablegravatar'] = 'Activar Gravatar';
 $string['enablegravatar_help'] = 'Cando se activa, Moodle tentará buscar unha imaxe de perfil de usuario desde Gravatar se o usuario non enviou unha imaxe.';
 $string['enablemobilewebservice'] = 'Activar os servizos web para móbiles';
 $string['enablerecordcache'] = 'Activar a gravación na cache';
 $string['enablerssfeeds'] = 'Activar fontes RSS';
 $string['enablesafebrowserintegration'] = 'Activar a integración con «exame seguro do navegador»';
+$string['enablesearchareas'] = 'Activar áreas de busca';
 $string['enablestats'] = 'Activar estatísticas';
 $string['enabletrusttext'] = 'Activar o contido de confianza';
 $string['enablewebservices'] = 'Activar os servizos web';
@@ -511,6 +515,7 @@ $string['environmentxmlerror'] = 'Produciuse un erro ao ler a información sobre
 $string['errordeletingconfig'] = 'Produciuse un erro ao eliminar os rexistros de configuración do engadido «{$a}».';
 $string['errorsetting'] = 'Non foi posíbel gardar o axuste:';
 $string['errorwithsettings'] = 'Non foi posíbel cambiar algunha configuración por mor dun erro.';
+$string['eventshandlersinuse'] = 'Os seguintes engadidos do seu sistema están usando manipuladores obsoletos para a API Events 1: «{$a}». Actualíceos para utilizar a API Events 2. Vexa https://docs.moodle.org/dev/Event_2#Event_dispatching_and_observers.';
 $string['everyonewhocan'] = 'Todos os que poidan «{$a}»';
 $string['exceptions'] = 'excepcións';
 $string['execpathnotallowed'] = 'A definición de rutas executábeis está desactivada no ficheiro config.php';
@@ -551,6 +556,8 @@ $string['gdrequired'] = 'The GD extension is now required by Moodle for image co
 $string['generalsettings'] = 'Configuración xeral';
 $string['geoipfile'] = 'Ficheiro de datos GeoIP City';
 $string['getremoteaddrconf'] = 'Orixe de enderezos IP registrados';
+$string['globalsearch'] = 'Busca global';
+$string['globalsearchmanage'] = 'Administrar a busca global';
 $string['googlemapkey3'] = 'Chave API V3 de Google Maps';
 $string['googlemapkey3_help'] = 'É necesario introducir unha chave especial para utilizar Google Maps para ver a busca do enderezo IP. Pode obter esa chave de balde en <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>';
 $string['gotofirst'] = 'Ir a primeira cadea ausente';
@@ -588,6 +595,7 @@ $string['iconvrequired'] = 'É necesario instalar a extensión ICONV';
 $string['ignore'] = 'Ignorar';
 $string['includemoduleuserdata'] = 'Incluír os datos do módulo de usuario';
 $string['incompatibleblocks'] = 'Bloques imcompatíbeis';
+$string['indexdata'] = 'Indexar os datos';
 $string['installhijacked'] = 'A instalación debe rematarse desde o mesmo enderezo IP orixinal.';
 $string['installsessionerror'] = 'Non é posíbel inicializar a sesión de PHP, verifique que o seu navegador acepta cookies.';
 $string['intlrecommended'] = 'A extensión internacional empregase para mellorar a compatibilidade coa internacionalización, como no caso da ordenación de idiomas.';
@@ -790,6 +798,8 @@ $string['pathtopgdumpinvalid'] = 'Ruta incorrecta a pg_dump: ou é errónea, ou 
 $string['pathtopsql'] = 'Ruta a psql';
 $string['pathtopsqldesc'] = 'Isto só é necesario para entrar se ten máis dun psql no seu sistema (por exemplo, se vostede ten instalada máis dunha versión de PostgreSQ)';
 $string['pathtopsqlinvalid'] = 'Ruta incorrecta a psql: ou é errónea, ou non é executábel';
+$string['pathtounoconv'] = 'Ruta do convertedor de documentos «unoconv»';
+$string['pathtounoconv_help'] = 'Ruta do convertedor de documentos «unoconv». Tratase dun executábel que é quen de converter formatos de documento admitidos por LibreOffice. É opcional, mais se o especifica, Moodle usarao para converter automaticamente entre formatos de documentos. Utilizase para dar compatibilidade a máis de tipos de ficheiros que se usan coa ferramenta de anotación PDF das tarefas.';
 $string['pcreunicodewarning'] = 'Recomendase encarecidamente empregar a extensión PCRE PHP que é compatíbel con caracteres Unicode.';
 $string['perfdebug'] = 'Información de rendemento';
 $string['performance'] = 'Rendemento';
@@ -933,12 +943,15 @@ $string['rssglobaldisabled'] = 'Desactivado no nivel do servidor';
 $string['save'] = 'Gardar';
 $string['savechanges'] = 'Gardar os cambios';
 $string['search'] = 'Buscar';
+$string['searchengine'] = 'Motor de busca';
 $string['searchinsettings'] = 'Buscar nas configuracións';
 $string['searchresults'] = 'Buscar resultados';
+$string['searchsetupinfo'] = 'Configuración das buscas';
 $string['sectionerror'] = 'Produciuse un erro de sección.';
 $string['secureforms'] = 'Empregar un formulario adicional de seguranza';
 $string['security'] = 'Seguranza';
 $string['selectdevice'] = 'Seleccionar dispositivo';
+$string['selectsearchengine'] = 'Seleccionar o motor de busca';
 $string['selecttheme'] = 'Escoller o tema para o dispositivo {$a}';
 $string['server'] = 'Servidor';
 $string['serverchecks'] = 'Comprobacións do servidor';
@@ -952,6 +965,7 @@ $string['sessiontimeout'] = 'Tempo límite';
 $string['settingfileuploads'] = 'O envío de ficheiros é necesario para o funcionamento normal, actíveo na configuración PHP.';
 $string['settingmemorylimit'] = 'Detectouse que a memoria dispoñíbel non é abondo, defina un valor maior da memoria na configuración de PHP (memory_limit).';
 $string['settingsafemode'] = 'Moodle non é totalmente compatíbel co modo seguro, pídalle ao administrador do servidor que o desactive. A execución de Moodle en modo seguro non é compatíbel, produciranse diversos problemas se o faie.';
+$string['setupsearchengine'] = 'Configurar o motor de busca';
 $string['showcommentscount'] = 'Amosar o contador de comentarios';
 $string['showdetails'] = 'Amosar os detalles';
 $string['showuseridentity'] = 'Amosar a identidade do usuario';
@@ -1014,6 +1028,8 @@ $string['taskcachecleanup'] = 'Retirar entradas da caché caducas';
 $string['taskcachecron'] = 'Procesamento en segundo plano para cachés';
 $string['taskcalendarcron'] = 'Enviar notificacións de calendarios';
 $string['taskcheckforupdates'] = 'Comprobar se hai actualizacións';
+$string['taskcompletiondaily'] = 'Marca de completado como iniciado';
+$string['taskcompletionregular'] = 'Calcular o enchido de datos normal';
 $string['taskcontextcleanup'] = 'Limpar os contextos';
 $string['taskcreatecontexts'] = 'Crear contextos que faltan';
 $string['taskdeletecachetext'] = 'Eliminar rexistros antigos da cache de texto';
@@ -1021,6 +1037,8 @@ $string['taskdeleteincompleteusers'] = 'Eliminar usuarios sen completar';
 $string['taskdeleteunconfirmedusers'] = 'Eliminar usuarios non confirmados';
 $string['taskeventscron'] = 'Procesamento en segundo plano para actividades';
 $string['taskfiletrashcleanup'] = 'Limpar ficheiros no lixo';
+$string['taskglobalsearchindex'] = 'Indexado de busca global';
+$string['taskglobalsearchoptimize'] = 'Optimización do indexado da busca global';
 $string['taskgradecron'] = 'Procesamento en segundo plano para o libro de cualificacións';
 $string['tasklegacycron'] = 'Procesamento de cron antigo para engadidos';
 $string['taskmessagingcleanup'] = 'Procesamento en segundo plano para mensaxería';
@@ -1063,10 +1081,12 @@ $string['unbookmarkthispage'] = 'Eliminar marcador de páxina';
 $string['unicoderequired'] = 'Cómpre que almacene todos os seus datos nun formato Unicode(UTF-8). As novas instalacións deben efectuarse nas bases de datos que teñan os seus caracteres definidos como Unicode como predeterminado. Se está a anovar, debe efectuar o proceso de migración UTF-8 (vexa a páxina de Administradores).';
 $string['uninstallplugin'] = 'Desinstalar';
 $string['unlockaccount'] = 'Desbloquear conta';
+$string['unoconvwarning'] = 'A versión de «unoconv» que ten instalada non é compatíbel. A aplicación de avaliación de tarefas de Moodle require a versión 0.7 ou superior.';
 $string['unsettheme'] = 'Tema anulado';
 $string['unsupported'] = 'Non admitido';
 $string['unsupporteddbstorageengine'] = 'El motor de almacenamento da base de datos xa non é compatíbel.';
 $string['unsupporteddbtablerowformat'] = 'A súa base de datos ten táboas que usan «Antelope» como formato de ficheiroo. Recomendámoslle que converta as táboas ao formato de ficheiro «Barracuda». Vexa a documentación <a href="https://docs.moodle.org/en/cli">Administración por liña de ordes</a> para ver os detalles sobre unha ferramenta para converter as táboas de InnoDB a Barracuda.';
+$string['unsupportedphpversion7'] = 'A versión 7 de PHP no está admitida.';
 $string['unsuspenduser'] = 'Activar a conta do usuario';
 $string['updateaccounts'] = 'Actualizar as contas existentes';
 $string['updateautocheck'] = 'Comprobar automaticamente as actualizacións dispoñíbeis';
@@ -1075,6 +1095,8 @@ $string['updateavailable'] = 'Hai unha nova versión de Moodle dispoñíbel.';
 $string['updateavailabledetailslink'] = 'Vexa {$a->url} para obter máis detalles';
 $string['updateavailableforplugin'] = 'Hai novas versións dispoñíbeis para algúns dos seus engadidos.';
 $string['updateavailableinstall'] = 'Instalar esta actualización';
+$string['updateavailableinstallall'] = 'Instalar as actualizacións dispoñibeis ({$a})';
+$string['updateavailableinstallallhead'] = 'Instalando as actualizacións dispoñibeis';
 $string['updateavailable_moreinfo'] = 'Máis información...';
 $string['updateavailablenot'] = 'O código do seu sitio Moodle está actualizado.';
 $string['updateavailablerecommendation'] = 'Recomendase encarecidamente que actualice o seu sitio á última versión para obter todas as correccións de fallos e de seguridade recentes.';
@@ -1091,6 +1113,8 @@ $string['updatenotifybuilds_desc'] = 'Se está activado, a comprobación de actu
 $string['upgradeerror'] = 'Produciuse un erro descoñecido na actualización de {$a->plugin} á versión {$a->version}, non é posíbel continuar.';
 $string['upgradeforumread'] = 'Foi engadida unha nova característica na versión 1.5 de Moodle para atopar as mensaxes lidas/non lidas dos foros.<br /> Para utilizar esta funcionalidade precisa <a href="{$a}">actualizar as súas táboas</a>.';
 $string['upgradeforumreadinfo'] = 'Foi engadida unha característica nova na versión 1.5 de Moodle para atopar mensaxes lidas/non lidas nos foros. Para utilizar esta funcionalidade precisa actualizar as táboas con toda a información de rastrexo para as mensaxes existentes. Dependendo do tamaño do seu sitio, poderá levar máis tempo (horas) e poderá ser moi pesado para a base de datos, por iso é mellor facelo durante un período tranquilo. De calquera maneira, o seu sitio continuará a funcionar durante esta anovación e os usuarios non serán afectados. Unha vez que comece este proceso aconséllase rematalo (deixe aberta a xanela do navegador). Se para o proceso pechando a xanela, non se preocupe, pode comezar de novo.<br /><br />Desexa comezar agora o proceso de anovación?';
+$string['upgradekeyreq'] = 'Requírese a chave de anovación';
+$string['upgradekeyset'] = 'Chave de anovación (deixar baleiro para non estabelecela)';
 $string['upgradelogs'] = 'Os antigos accesos precisan ser anovados para todas as funcionalidades.  <a href="{$a}">Máis información</a>';
 $string['upgradelogsinfo'] = 'Fixéronse algunhas modificacións na maneira en que son almacenados os accesos. Para poder ver os seus antigos accesos por actividade, precisará anovalos. Dependendo do seu sitio, pode levar máis tempo (ata varias horas) e pode ser bastante limitador para bases de datos en sitios moi grandes. Unha vez que inicie este proceso debe rematalo (deixando aberta a xanela do navegador). Non se preocupe, o seu sitio continuará a traballar ben para outras persoas mentres os accesos están anovándose.<br /><br />Desexa anovar agora os accesos?';
 $string['upgradepluginsfirst'] = 'Recomendase instalar primeiro todas as actualizacións dispoñíbeis';
@@ -1132,6 +1156,7 @@ $string['useblogassociations'] = 'Activas as asociacións';
 $string['useexternalyui'] = 'Empregar bibliotecas YUI en liña';
 $string['user'] = 'Usuario';
 $string['userbulk'] = 'Accións masivas de usuario';
+$string['userbulkdownload'] = 'Exportar usuarios como';
 $string['userdefaultpreferences'] = 'Preferencias predeterminadas do usuario';
 $string['userlist'] = 'Examinar a lista de usuarios';
 $string['userpolicies'] = 'Políticas de usuario';
@@ -1144,7 +1169,7 @@ $string['validateerror'] = 'Este valor non é corecto:';
 $string['verifychangedemail'] = 'Restrinxir os dominios cando se modifique o correo';
 $string['warningcurrentsetting'] = 'Valor actual incorrecto: {$a}';
 $string['warningiconvbuggy'] = 'A súa versión da biblioteca iconv non admite o modificador //IGNORE. Ten que instalar a extensión mbstring que pode ser empregada no seu canto para a limpeza de cadeas que conteñan UTF-8 incorrecto';
-$string['webproxy'] = 'Proxy weeb';
+$string['webproxy'] = 'Proxy web';
 $string['webproxyinfo'] = 'Se o seu servidor Moodle non pode acceder directamente a Internet, encha as seguintes opcións. É necesario para descargar datos de contexto, paquetes de idioma, fontes RSS, fusos horarios, etc.<br /><em>É moi recomendábel a extensión PHP cURL.</em>';
 $string['xmlrpcrecommended'] = 'A extensión opcional xmlrpc é necesaria para a comunicación cun concentrador, empregar servizos web e a Rede Moodle';
 $string['yuicomboloading'] = 'Cargando YUI combo';

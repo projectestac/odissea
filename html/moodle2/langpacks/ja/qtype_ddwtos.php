@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'さらに {no} 件の空白の選択肢を追加する';
 $string['answer'] = '答え';
+$string['blank'] = '空白';
 $string['correctansweris'] = '正解: {$a}';
 $string['infinite'] = '無制限';
 $string['pleaseputananswerineachbox'] = 'それぞれのテキストボックスに答えを入力してください。';

@@ -198,6 +198,7 @@ $string['enrolledstudents'] = 'Enrolled students';
 $string['error_field'] = 'Field not allowed';
 $string['error_operator'] = 'Operator not allowed';
 $string['error_value_expected_integer'] = 'Expected integer value';
+$string['excludedeletedusers'] = 'Exclude deleted users (only for SQL reports)';
 $string['executeat'] = 'Execute at';
 $string['executeatinfo'] = 'Moodle CRON will run scheduled SQL queries after selected time. Once in 24h';
 $string['export_csv'] = 'Export in CSV format';

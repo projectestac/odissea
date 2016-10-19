@@ -52,6 +52,7 @@ I campi hanno il formato [[fieldname]], tutti gli atri tag hanno il formato ##so
 
 E\' possibile usare solo i tag presenti nell\'elenco "Tag disponibili".';
 $string['availabletodate'] = 'Fino al';
+$string['availabletodatevalidation'] = 'La data di disponibilità \'Fino al\' non può essere antecedente dalla dati di disponibilità \'Dal\'.';
 $string['blank'] = 'Vuoto';
 $string['buttons'] = 'Azioni';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
@@ -333,6 +334,7 @@ $string['savesettings'] = 'Esegui';
 $string['savesuccess'] = 'Le preimpostazioni sono state salvate. Queste preimpostazioni saranno disponibili in tutto il sito.';
 $string['savetemplate'] = 'Salva il modello';
 $string['search'] = 'Cerca';
+$string['search:activity'] = 'Database - Informazioni sull\'attività';
 $string['selectedrequired'] = 'Necessari tutti i selezionati';
 $string['showall'] = 'Visualizza tutti i record';
 $string['single'] = 'Dettagli';
@@ -368,4 +370,5 @@ $string['usestandard'] = 'Utilizza preimpostazione';
 $string['usestandard_help'] = 'Consente la scelta di un Modello di visualizzazione preimpostato tra quelli disponibili nel sito. (Se è stato già salvato un Modello di visualizzazione, è possibile anche eliminarlo.)';
 $string['viewfromdate'] = 'Solo visualizzazione dal';
 $string['viewtodate'] = 'fino al';
+$string['viewtodatevalidation'] = 'La data di Solo visualizzazione \'Fino al\' non può essere antecedente alla data \'Dal\'';
 $string['wrongdataid'] = 'E\' stato fornito un id errato';

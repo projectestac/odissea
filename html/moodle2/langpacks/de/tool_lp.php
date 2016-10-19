@@ -78,6 +78,7 @@ $string['coursecompetencies'] = 'Kurskompetenzen';
 $string['coursecompetencyratingsarenotpushedtouserplans'] = 'Kompetenzbewertungen in diesem Kurs beeinflussen keine Lernpläne.';
 $string['coursecompetencyratingsarepushedtouserplans'] = 'Kompetenzbewertungen in diesem Kurs werden sofort in den Lernplänen aktualisiert.';
 $string['coursesusingthiscompetency'] = 'Mit dieser Kompetenz verlinkte Kurse';
+$string['coveragesummary'] = '{$a->competenciescoveredcount} von {$a->competenciescount} allen Komptenzen sind abgedeckt ( {$a->coveragepercentage} % )';
 $string['createlearningplans'] = 'Lernpläne anlegen';
 $string['createplans'] = 'Lernpläne anlegen';
 $string['crossreferencedcompetencies'] = 'Querverwiesene Kompetenzen';
