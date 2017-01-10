@@ -133,6 +133,7 @@ $string['embed_no_blocks'] = 'incorporato, senza blocchi';
 $string['enableemailnotification'] = 'Invia notifiche per email';
 $string['enableemailnotification_help'] = 'Consente di inviare email di notifica agli studenti quando la loro consegna del tool sarà stata valutata.';
 $string['enterkeyandsecret'] = 'Inserisci la consumer key e lo shared secret';
+$string['errorbadurl'] = 'L\'URL non è un URL di tool o cartridge valido.';
 $string['errormisconfig'] = 'Il tool è mal configurato. Per favore chiedi al tuo amministratore Moodle di sistemare la configurazione del tool.';
 $string['existing_window'] = 'Finestra esistente';
 $string['extensions'] = 'Servizi di estensione LTI';
@@ -367,7 +368,7 @@ $string['share_roster_admin_help'] = 'E\' possibile consentire al tool di conosc
 $string['share_roster_help'] = 'E\' possibile consentire al tool di conoscere l\'elenco degli iscritti al corso.
 
 Da notare che questa impostazione può essere modificata dalla configurazione del tool.';
-$string['show_in_course_activity_chooser'] = 'Visualizza nel selettore attività come tool preconfigurato';
+$string['show_in_course_activity_chooser'] = 'Visualizza nel selettore attività e come tool preconfigurato';
 $string['show_in_course_lti1'] = 'Visualizza quando si creano attività';
 $string['show_in_course_lti1_help'] = 'Questo tool può essere visualizzato nel selettore attività consentendo ai docenti di aggiungerlo ai corsi oppure può essere visualizzato nel menù a discesa dei tool preconfigurati quando si aggiunge un tool al corso.
 
@@ -448,6 +449,7 @@ $string['unknownstate'] = 'Stato sconosciuto';
 $string['update'] = 'Aggiorna';
 $string['useraccountinformation'] = 'Informazioni sull\'account dell\'utente';
 $string['userpersonalinformation'] = 'Informazioni personali dell\'utente';
+$string['using_tool_cartridge'] = 'Utilizzo del cartrdige tool';
 $string['using_tool_configuration'] = 'Configurazione del tool in uso:';
 $string['validurl'] = 'Un URL valido deve cominciare con http(s)://';
 $string['viewsubmissions'] = 'Visualizza lo schermata con gli invii e le valutazioni';

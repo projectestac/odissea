@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errbadxmlformat'] = 'エラー - 不正なXMLフォーマットです。';
-$string['errduplicategradeidnumber'] = 'エラー - このコースのIDナンバー「 {$a} 」に2つの評定項目があります。インポートすることはできません。';
+$string['errduplicategradeidnumber'] = 'エラー - このコースのIDナンバー「 {$a} 」には2つの評定項目があります。インポートすることはできません。';
 $string['errduplicateidnumber'] = 'エラー - IDナンバーが重複しています。';
 $string['errincorrectgradeidnumber'] = 'エラー - インポートファイルのIDナンバー「 {$a} 」がどの評定項目とも合致しません。';
 $string['errincorrectidnumber'] = 'エラー - IDナンバーが正しくありません。';

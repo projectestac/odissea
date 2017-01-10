@@ -265,7 +265,7 @@ $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
 $string['gradeexportcustomprofilefields'] = 'Campi personalizzati da esportare con le valutazioni';
 $string['gradeexportcustomprofilefields_desc'] = 'Imposta i campi personalizzati del profilo utente da includere quando si esportano le valutazioni. Inserire l\'elenco dei campi personalizzati separati da virgola.';
 $string['gradeexportdecimalpoints'] = 'Cifre decimali da usare nelle esportazioni';
-$string['gradeexportdecimalpoints_desc'] = 'Numero di cifre decimali da usare nelle esportazioni. Questa impostazione può essere modificata quando si configura l\'esportazione.';
+$string['gradeexportdecimalpoints_desc'] = 'Numero di cifre decimali da usare nelle esportazioni. Questa impostazione può essere modificata durante l\'esportazione.';
 $string['gradeexportdisplaytype'] = 'Esporta i voti come';
 $string['gradeexportdisplaytype_desc'] = 'I voti possono essere esportati come punteggio, come percentuali (in riferimento alla valutazione minima e massima) o come graduatoria letterale (A, B, C, ecc.). Questa impostazione può essere modificata quando si configura l\'esportazione.';
 $string['gradeexportdisplaytypes'] = 'Esporta i voti come';
@@ -462,6 +462,14 @@ $string['modgradecantchangegradetypemsg'] = 'Non è possibile modificare il tipo
 $string['modgradecantchangegradetyporscalemsg'] = 'Non è possibile modificare il tipo di valutazione e la scala poiché alcune valutazione sono già state rilasciate.';
 $string['modgradecantchangeratingmaxgrade'] = 'Non è possibile modificare il punteggio massimo quando esistono già valutazioni di attività.';
 $string['modgradecantchangescale'] = 'Non è possibile modificare la scala poiché esistono già valutazioni per questo elemento';
+$string['modgradecategorycantchangegradetypemsg'] = 'La categoria contiene elementi di valutazione che sono stati modificati. Di conseguenza non è possibile cambiare il tipo di valutazione perché alcune valutazioni sono state già date. Se vuoi modificare il punteggio massimo, devi prima scegliere se ricalcolare o meno le valutazioni esistenti.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'La categoria contiene elementi di valutazione che sono stati modificati. Di conseguenza non è possibile cambiare il tipo di valutazione perché alcune valutazioni sono state già date. Se vuoi modificare il punteggio massimo e la scala.';
+$string['modgradecategoryrescalegrades'] = 'Ricalcola valutazioni modificate';
+$string['modgradecategoryrescalegrades_help'] = 'Quando si cambia il punteggio massimo di un elemento di valutazione, è anche necessario indicare se la variazione causerà il cambiamento delle valutazioni percentuali già esistenti.
+
+Selezionando \'Sì\', le valutazioni modificate già esistenti saranno scalate im modo da lasciare invariate le percentuali.
+
+Ad esempio, selezionando \'Sì\' e cambiando il punteggio massimo di un elemento di valutazione da 10 a 20, una valutazione di 6/10 (60%) sarà scalata a 12/20 (60%).  Selezionando \'No\', la valutazione non cambierà e sarà necessario un intervento manuale per garantire punteggi corretti.';
 $string['modgradedonotmodify'] = 'Non modificare le valutazioni esistenti';
 $string['modgradeerrorbadpoint'] = 'E\' stato inserito un voto non valido. Deve essere un intero compreso tra 1 e {$a}';
 $string['modgradeerrorbadscale'] = 'E\' stata sezionata una scala non valida. Assicurati di aver seclto una scala tra quelle disponibili sotto.';

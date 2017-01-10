@@ -111,7 +111,7 @@ Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop
 É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['delegate'] = 'Delegar ao professor';
 $string['delete'] = 'Apagar';
-$string['delete_confirmation'] = 'Tem a certeza que deseja apagar esta ferramenta pré-configurada?';
+$string['delete_confirmation'] = 'Tem a certeza que pretende apagar esta ferramenta pré-configurada?';
 $string['deletetype'] = 'Apagar ferramenta pré-configurada';
 $string['display_description'] = 'Mostrar descrição da atividade ao iniciar';
 $string['display_description_help'] = 'Se selecionado, a descrição da atividade (especificada acima) será exibida acima do conteúdo da ferramenta.
@@ -322,7 +322,7 @@ $string['press_to_submit'] = 'Prima para iniciar esta atividade';
 $string['privacy'] = 'Privacidade';
 $string['quickgrade'] = 'Permitir avaliação rápida';
 $string['quickgrade_help'] = 'Se ativar esta opção, várias ferramentas podem ser avaliadas apenas numa página. Adicione notas e comentários e clique no botão "Guardar todas as alterações" para guardar as alterações.';
-$string['redirect'] = 'Será redirecionado em pouco segundos, se não pretender prima o botão.';
+$string['redirect'] = 'Será redirecionado dentro de instantes. Se tal não ocorrer prima o botão.';
 $string['register'] = 'Registe-se';
 $string['registertype'] = 'Configurar um novo registo de ferramenta externa';
 $string['register_warning'] = 'A página de registo parece estar a demorar algum tempo a carregar. Se não carregar, verifique se inseriu o URL correto nas definições de configuração. Se utiliza https para aceder ao Moodle, certifique-se que a ferramenta que está a configurar suporta https e que está a usar https no URL.';

@@ -77,7 +77,7 @@ $string['backuptypeactivity'] = '活動';
 $string['backuptypecourse'] = 'コース';
 $string['backuptypesection'] = 'セクション';
 $string['backupversion'] = 'バックアップバージョン';
-$string['cannotfindassignablerole'] = 'あなたが割り当て許可されているロールにバックアップファイル内ロール ($a) をマップすることができません。';
+$string['cannotfindassignablerole'] = 'あなたが割り当て許可されているロールにバックアップファイル内ロール {$a} をマップすることができません。';
 $string['choosefilefromactivitybackup'] = '活動バックアップエリア';
 $string['choosefilefromactivitybackup_help'] = 'デフォルト設定を使用した活動バックアップがここに保存されます。';
 $string['choosefilefromautomatedbackup'] = '自動バックアップ';
@@ -117,6 +117,7 @@ $string['currentstage4'] = '確認およびレビュー';
 $string['currentstage8'] = 'バックアップを実行する';
 $string['enterasearch'] = 'キーワードを入力する';
 $string['error_block_for_module_not_found'] = 'コースモジュール (id: {$a->mid}) において、迷子のブロックインスタンス (id: {$a->bid}) が見つかりました。このブロックはバックアップされません。';
+$string['errorcopyingbackupfile'] = 'リストア前の一時フォルダへのバックアップファイルのコピーに失敗しました。';
 $string['error_course_module_not_found'] = '迷子のコースモジュール (id: {$a}) が見つかりました。このモジュールはバックアップされません。';
 $string['errorfilenamemustbezip'] = 'あなたが入力するファイル名は.mbz拡張子を持つZIPファイルである必要があります。';
 $string['errorfilenamerequired'] = 'あなたはこのバックアップに関して、有効なファイル名を入力する必要があります。';
@@ -126,7 +127,7 @@ $string['errorminbackup20version'] = 'このバックアップファイルは開
 $string['errorrestorefrontpagebackup'] = 'フロントページにおいて、あなたはフロントページバックアップのみリストアすることができます。';
 $string['executionsuccess'] = 'バックアップファイルが正常に作成されました。';
 $string['filealiasesrestorefailures'] = 'エイリアスリストア失敗';
-$string['filealiasesrestorefailures_help'] = 'エイリアスは外部リポジトリに保存されたファイルを含む、他のファイルへのシンボリックリンクです。一部の例ではMoodeがシンボリックリンクをリストアできない場合があります - 例えば、別のサイトでのバックアップをリストアする場合、または参照ファイルが存在しくなった場合です。
+$string['filealiasesrestorefailures_help'] = 'エイリアスは外部リポジトリに保存されたファイルを含む、他のファイルへのシンボリックリンクです。一部の例ではMoodeがシンボリックリンクをリストアできない場合があります - 例えば別のサイトでのバックアップをリストアする場合、または参照ファイルが存在しくなった場合です。
 
 詳細情報および実際のリストア失敗理由に関して、リストアログファイルをご覧ください。';
 $string['filealiasesrestorefailuresinfo'] = 'バックアップファイルに含まれるいくつかのエイリアスをリストアすることができませんでした。下記のリストではオリジナルサイトで参照されていた予測されるロケーションおよびソースファイルを含みます。';

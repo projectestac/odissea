@@ -140,6 +140,8 @@ $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daite
 * Lehen erregistroan fitxategiko gainerako erregistroen eremuen izenez osatua
 * groupname izeneko eremua derrigorrezkoa
 * Aukerako eremuak hurrengoak dira: description, enrolmentkey, picture, hidepicture';
+$string['includeonlyactiveenrol'] = 'Sartu bakarrik aktibo dauden matrikulazioak';
+$string['includeonlyactiveenrol_help'] = 'Gaituz gero, kontua etenda duten erabiltzaileak ez dira taldeetan sartuko.';
 $string['javascriptrequired'] = 'Orri honek Javascript-a gaituta izan behar du.';
 $string['members'] = 'Kideak taldeko';
 $string['membersofselectedgroup'] = 'Aukeratutako taldean dauden kideak:';

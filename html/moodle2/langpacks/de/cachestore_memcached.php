@@ -46,6 +46,12 @@ $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
 $string['isshared'] = 'Geteilter Cache';
+$string['isshared_help'] = 'Wird ihr memcached Server auch von anderen Anwendungen genutzt?
+
+Wenn der Cache mit anderen Anwendungen geteilt wird, dann wird jeder Schlüssel individuell gelöscht um sicherzustellen, dass nur Daten dieser Anwedungen gelöscht werden (Daten in externen Anwendungscaches bleiben unverändert). Dies kann zu verminderter Leistung führen, wenn der Cache geleert wird, dies hängt von ihren Server Einstellungen ab.
+
+Wenn Sie einen bestimmten Cache für diese Anwendung nutzen, dann kann der ganze Cache geleert werden ohne Risiko die Cache Daten einer anderen Anwendung zu zerstören.
+Die Löschung des Caches sollte zu erhöhter Leistung führen.';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Prefix-Schlüssel';
 $string['prefix_help'] = 'Dies kann verwandt werden, um eine \'domain\' für Ihre Schlüsselwerte für mehrere memcached Speicher auf einer einzelnen memcached Installation zu erzeugen. Sie darf nicht länger als 16 Zeichen sein.';

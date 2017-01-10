@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments:addinstance'] = 'Добавлять новый блок «Комментарии»';
-$string['comments:myaddinstance'] = 'Добавлять новый блок «Комментарии» на страницу «Моя домашняя страница»';
+$string['comments:myaddinstance'] = 'Добавлять новый блок «Комментарии» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Комментарии';

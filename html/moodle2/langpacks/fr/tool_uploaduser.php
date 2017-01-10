@@ -35,6 +35,7 @@ $string['deleteerrors'] = 'Erreurs lors de suppressions';
 $string['encoding'] = 'Encodage';
 $string['errormnetadd'] = 'Impossible d\'ajouter des utilisateurs distants';
 $string['errors'] = 'Erreurs';
+$string['invalidupdatetype'] = 'Cette option ne peut pas être sélectionnée avec le type de dépôt choisi.';
 $string['invaliduserdata'] = 'Données invalides détectées pour l\'utilisateur {$a}. Nettoyage automatique effectué.';
 $string['nochanges'] = 'Aucune modification';
 $string['pluginname'] = 'Déposer des comptes utilisateurs';

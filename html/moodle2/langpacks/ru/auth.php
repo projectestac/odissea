@@ -157,3 +157,5 @@ $string['update_onlogin'] = 'При каждом входе';
 $string['update_onupdate'] = 'При обновлении';
 $string['user_activatenotsupportusertype'] = 'аутентификация: ldap user_activate() не поддерживает выбранный тип пользователя: {$a}';
 $string['user_disablenotsupportusertype'] = 'аутентификация: ldap user_disable() не поддерживает выбранный тип пользователя (..еще)';
+$string['username'] = 'Логин';
+$string['username_help'] = 'Учтите, некоторые плагины аутентификации не разрешают изменение логина.';

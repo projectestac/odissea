@@ -133,8 +133,9 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
  * @param  Array  $data          Database where the search was performed
  * @param  Array  $found         Results found.
  * @param  int    $courseid      Course id where to import.
+ * @param  Array  $search        Search paràmeters
  */
-function render_search_results($data, $found, $courseid) {
+function render_search_results($data, $found, $courseid, $search) {
     global $OUTPUT, $CFG;
 
     echo $OUTPUT->heading(get_string('results', 'local_alexandriaimporter', $data->searching));
@@ -164,7 +165,7 @@ function render_search_results($data, $found, $courseid) {
              echo '<input type="hidden" name="'.$name.'" value="'.$value.'">';
         }
         echo '</div>';
-        echo '<button class="btn btn-info edit-btn" id="alexloadmore" onclick="alexandria_load_more(\''.$CFG->wwwroot.'\', '.$courseid.', '.$data->id.', \''.$data->type.'\')">
+        echo '<button class="btn btn-info edit-btn" id="alexloadmore" onclick="alexandria_load_more(\''.$CFG->wwwroot.'\', '.$courseid.', '.$data->id.')">
             <span class="spinner"><i class="fa fa-spinner fa-spin fa-fw"></i></span>'
             .get_string('loadmore', 'local_alexandriaimporter').'</button>';
     }

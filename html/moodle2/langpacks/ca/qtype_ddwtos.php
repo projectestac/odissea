@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Blancs per a {no} opcions més';
 $string['answer'] = 'Resposta';
+$string['blank'] = 'en blanc';
 $string['correctansweris'] = 'La resposta correcta és: {$a}';
 $string['infinite'] = 'Il·limitat';
 $string['pleaseputananswerineachbox'] = 'Si us plau, poseu una resposta a cada caixa.';

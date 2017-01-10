@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['news_items:addinstance'] = 'إضافة كتلة آخر الأخبار جديدة';
+$string['news_items:myaddinstance'] = 'إضافة كتلة آخر الأخبار جديدة إلى الصفحة الشخصية';
 $string['pluginname'] = 'آخر الأخبار';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'Συγνώμη, αυτό το κουίζ δεν είναι διαθέσιμο';
+$string['notavailable'] = 'Συγγνώμη, αυτό το κουίζ δεν είναι διαθέσιμο';
 $string['quiznotavailable'] = 'Το κουίζ δε θα είναι διαθέσιμο μέχρι: {$a}';

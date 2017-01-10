@@ -25,22 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['assignment:addinstance'] = 'أضف مهمة جديدة';
-$string['assignment:exportownsubmission'] = 'صدر تسليمك الخاص بك';
-$string['assignment:exportsubmission'] = 'صدر تسليم';
-$string['assignment:grade'] = 'وضع درجة على المهمة';
-$string['assignment:submit'] = 'تقديم مهمة';
-$string['assignment:view'] = 'معاينة مهمة';
-$string['messageprovider:assignment_updates'] = 'إشعارات المهمات';
-$string['modulename'] = '2.2 مهمة';
-$string['modulename_help'] = '<p><img alt=""  src="<?php echo $CFG->wwwroot?>/mod/assignment/icon.gif" />&nbsp;<b>الوجبات</b></p>
-<p><b>يستطع المدرس من خلال الواجبات تحديد الواجب المطلوب من الطلاب
-تحضيره بمحتوى رقمي (في اي هيئة) والقيام بتسليمه بواسطة تحميل الملف في الخادم.
-نماذج الواجبات تضمن المقالات، المشاريع التعليمية، التقارير، إلخ. هذه الوحده
-تحتوي على إمكانيات تصحيح الواجبات وإعطائها الدرجات المستحقة.</b></p>';
-$string['modulenameplural'] = 'مهام';
-$string['page-mod-assignment-submissions'] = 'صفحة تقديم لوحدة المهمة';
-$string['page-mod-assignment-view'] = 'الصفحة الأساسية لوحدة المهمة';
-$string['page-mod-assignment-x'] = 'أي صفحة لوحدة المهمة';
-$string['pluginadministration'] = 'إدارة المهمات';
-$string['pluginname'] = 'وظائف (2.2)';
+$string['assignment:addinstance'] = 'أضف  تكليف( مهمة) جديد';
+$string['assignmentdisabled'] = 'تم تعطيل نشاط "تكاليف 2.2" القديم';
+$string['assignment:exportownsubmission'] = 'تصدير تسليم التكليف الخاص بك';
+$string['assignment:exportsubmission'] = 'صدر التسليم';
+$string['assignment:grade'] = 'وضع درجة على التكليف /المهمة';
+$string['assignmentneedsupgrade'] = 'نشاط  "التكليف/ المهمة  2.2"  ذو الإصدار القديم تم تعطيله. رجاءً اطلب من المسؤول عن الموقع الخاص بك  أن يقوم بتنفيذ  أداة ترقية التكليف /المهمة لجميع التكاليف ذات الإصدار القديم في هذا الموقع.';
+$string['assignment:submit'] = 'إرسال التكليف / المهمة';
+$string['assignment:view'] = 'معاينة التكليف / المهمة';
+$string['messageprovider:assignment_updates'] = 'إشعارات تكاليف (2.2)';
+$string['modulename'] = 'مهمة /تكليف 2.2  (مُعطَّل)';
+$string['modulename_help'] = 'وحدة النشاط القديمة التي تمت إزالتها من المودل.';
+$string['modulenameplural'] = 'تكليف/ مهام  2.2  (مُعطَّلة)';
+$string['page-mod-assignment-submissions'] = 'صفحة التسليم لوحدة التكليف / المهمة';
+$string['page-mod-assignment-view'] = 'الصفحة الأساسية لوحدة التكليف / المهمة';
+$string['page-mod-assignment-x'] = 'أي صفحة لوحدة المهمة /التكليف';
+$string['pluginadministration'] = 'إدارة المهمات/التكاليف 2.2 (مُعطَّل)';
+$string['pluginname'] = 'تكاليف/مهام 2.2 (مُعطَّل)';
+$string['upgradenotification'] = 'يستند هذا النشاط على إصدار قديم لوحدة التكليف';
+$string['viewassignmentupgradetool'] = 'عرض أداة ترقية التكليف/المهمة';

@@ -181,7 +181,7 @@ abstract class base {
                 //XTEC ************ AFEGIT - To fix bug with CSV export
                 //2016.08.31 @sarjona
                 if ($field === 'response') {
-                    $extraselect .= $DB->sql_compare_text($alias . '.' . $field).' AS '.$field;
+                    $extraselect .= $DB->sql_order_by_text($alias . '.' . $field, 1000).' AS '.$field;
                 } else {
                 //************ FI
                 $extraselect .= $alias . '.' . $field;

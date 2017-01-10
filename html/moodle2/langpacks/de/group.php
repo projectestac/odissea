@@ -83,7 +83,7 @@ $string['existingmembers'] = 'Vorhandene Mitglieder: {$a}';
 $string['filtergroups'] = 'Gruppen filtern nach:';
 $string['group'] = 'Gruppe';
 $string['groupaddedsuccesfully'] = 'Gruppe {$a} erfolgreich hinzugefügt';
-$string['groupaddedtogroupingsuccesfully'] = 'Gruppe \'{$a}\' wurde erfolgreich zur Gruppierung \'{$a}\' hinzugefügt';
+$string['groupaddedtogroupingsuccesfully'] = 'Gruppe {$a->groupname} wurde erfolgreich zur Gruppierung {$a->groupingname} hinzugefügt';
 $string['groupby'] = 'Kriterien für automatisches Erstellen';
 $string['groupdescription'] = 'Gruppenbeschreibung';
 $string['groupinfo'] = 'Info zu ausgewählten Gruppen';
@@ -140,7 +140,7 @@ $string['importgroups_help'] = 'Gruppen können als Textdatei importiert werden,
 * Optionale Felder sind description (Beschreibung), enrolmentkey (Gruppenschlüssel), picture (Bild), hidepicture (Bild verbergen)
 * Die Felder müssen mit den englischen Bezeichnungen angegeben sein';
 $string['includeonlyactiveenrol'] = 'Nur aktive Einschreibungen einbeziehen';
-$string['includeonlyactiveenrol_help'] = 'Diese Option legt fest, dass ausschließlich aktiv eingeschriebene Nutzer/innen in Gruppen zusammengefasst werden. Wenn die Option aktiviert ist, werden gesperrte Nutzer/innen keiner Gruppe zugeteilt.';
+$string['includeonlyactiveenrol_help'] = 'Diese Option legt fest, dass gesperrte Nutzer/innen keiner Gruppe zugeteilt werden.';
 $string['javascriptrequired'] = 'Diese Seite benötigt JavaScript.';
 $string['members'] = 'Mitglieder pro Gruppe';
 $string['membersofselectedgroup'] = 'Mitglieder in:';

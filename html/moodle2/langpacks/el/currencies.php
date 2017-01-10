@@ -30,6 +30,7 @@ $string['ALL'] = 'Lek Αλβανίας';
 $string['ANG'] = 'Netherlands Antillian Guilder';
 $string['AUD'] = 'Dollar Αυστραλίας';
 $string['AWG'] = 'Φλορίνι Αρούμπας';
+$string['BAM'] = 'Μάρκο Βοσνίας-Ερζεγοβίνης';
 $string['BBD'] = 'Δολάριο Μπαρμπάντος';
 $string['BDT'] = 'Taka Μπαγκλαντές';
 $string['BHD'] = 'Δηνάριο Μπαχρέιν';

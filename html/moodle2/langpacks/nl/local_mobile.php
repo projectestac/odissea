@@ -25,12 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Rechten toekennen aan de rol geauthenticeerde gebruiker';
+$string['allowpermissionsdescription'] = 'Bewerk de rol Geauthenticeerde gebruiker en sta de capaciteit moodle/webservice:createtoken toe';
 $string['cannotcreatetoken'] = 'Automatische tokengeneratie is niet beschikbaar voor site-beheerders (zij moeten manueel een token aanmaken op de site)';
+$string['checkpluginconfiguration'] = 'Controleer plugin-configuratie';
+$string['clickheretolaunchtheapp'] = 'Klik hier als de app niet automatisch opent';
+$string['enableadditionalservice'] = 'Activeer de service Moodle Mobile additionele features';
+$string['enableadditionalservicedescription'] = 'Deze service moet geactiveerd zijn.';
 $string['local_mobiledescription'] = 'Plugin voor uitbreiding van de Mobile service functies';
 $string['local_mobilesettings'] = 'Instellingen';
 $string['local_mobiletypeoflogin'] = 'Kies type login';
 $string['local_mobiletypeoflogin_key'] = 'Type login';
+$string['local_mobileurlscheme'] = 'Gebruik deze instelling om het URL schema af te dwingen voor inloggen via een browservenster. In de meeste gevallen wordt dit leeg gelaten.';
+$string['local_mobileurlscheme_key'] = 'URL schema';
 $string['loginintheapp'] = 'Via de app';
 $string['logininthebrowser'] = 'Via een browservenster (voor SSO plugins)';
+$string['loginintheinappbrowser'] = 'Via een ingebedde browser (voor SSO plugins)';
 $string['pluginname'] = 'Moodle Mobile bijkomende functies';
 $string['pluginnotenabledorconfigured'] = 'De Moodle Mobile lokale plugin moet ingeschakeld en geconfigureerd zijn om de app te starten';

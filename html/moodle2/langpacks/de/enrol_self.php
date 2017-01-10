@@ -78,7 +78,7 @@ $string['maxenrolled'] = 'Einschreibungen (max.)';
 $string['maxenrolled_help'] = 'Diese Option legt die Maximalzahl möglicher Nutzer/innen mit Selbsteinschreibung fest. (0= unbeschränkt)';
 $string['maxenrolledreached'] = 'Die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung ist bereits erreicht.
 ';
-$string['messageprovider:expiry_notification'] = 'In Kürze endet Ihr Kurs';
+$string['messageprovider:expiry_notification'] = 'Mitteilung beim Ablauf einer Selbsteinschreibung';
 $string['newenrols'] = 'Selbsteinschreibung erlauben';
 $string['newenrols_desc'] = 'Nutzer/innen dürfen sich standardmäßig selbst einschreiben';
 $string['newenrols_help'] = 'Diese Einstellung legt fest, ob Nutzer/innen sich in diesen Kurs einschreiben dürfen.';

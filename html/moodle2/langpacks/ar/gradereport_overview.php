@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'تم استعراض تقرير الدرجات العام';
 $string['overview:view'] = 'عرض تقرير النظرة العامة';
 $string['pluginname'] = 'تقرير النظرة العامة';

@@ -48,12 +48,12 @@ $string['eventchapterupdated'] = 'S\'ha actualitzat el capítol.';
 $string['eventchapterviewed'] = 'S\'ha visualitzat el capítol.';
 $string['hidechapter'] = 'Amaga el capítol «{$a}»';
 $string['modulename'] = 'Llibre';
-$string['modulename_help'] = 'El mòdul de llibre permet al professorat crear un recurs de diverses pàgines en un format de llibre, amb capítols i subcapítols. Els llibres poden contenir fitxers multimèdia, així com text, i són útils per a mostrar llargs passatges d\'informació que es poden dividir en seccions.
+$string['modulename_help'] = 'El mòdul de llibre permet al professor crear un recurs de diverses pàgines en un format de llibre, amb capítols i subcapítols. Els llibres poden contenir fitxers multimèdia, així com text, i són útils per a mostrar llargs passatges d\'informació que es poden dividir en seccions.
 
 Un llibre pot utilitzar-se
 * Per mostrar material de lectura per a cada mòdul d\'estudi
 * Com a manual departamental del personal
-* Com a portafolis de presentació del treball de l\'estudiantat';
+* Com a portafolis de presentació del treball de l\'estudiant';
 $string['modulenameplural'] = 'Llibres';
 $string['movechapterdown'] = 'Mou avall el capítol «{$a}»';
 $string['movechapterup'] = 'Mou amunt el capítol «{$a}»';

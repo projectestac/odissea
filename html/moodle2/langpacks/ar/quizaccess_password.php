@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'كلمة السر المدخلة غير صحيحة';
-$string['requirepasswordmessage'] = 'لأخذ هذا الاختباريجب عليك معرفة كلمة المرور';
+$string['pluginname'] = 'قاعدة كلمة المرور للوصول للاختبار';
+$string['quizpassword'] = 'كلمة المرور للاختبار';
+$string['requirepasswordmessage'] = 'للبدء بمحاولة الإجابة على هذا الاختبار يجب عليك معرفة كلمة المرور';

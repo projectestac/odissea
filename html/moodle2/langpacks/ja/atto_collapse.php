@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '拡張ボタンを表示/非表示する';
+$string['pluginname'] = '拡張ボタンを表示/非表示にする';
 $string['settings'] = '折りたたみツールバー設定';
 $string['showfewer'] = 'ボタンを少なく表示する';
 $string['showgroups'] = '折りたたみ時に最初の (n) グループを表示する';

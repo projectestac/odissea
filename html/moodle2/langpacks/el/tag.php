@@ -31,6 +31,7 @@ $string['addtagtomyinterests'] = 'Προσθήκη του "{$a}" στα ενδι
 $string['changename'] = 'Αλλαγή ονόματος ετικέτας';
 $string['changetype'] = 'Αλλαγή τύπου ετικέτας';
 $string['count'] = 'Αριθμός';
+$string['coursetags'] = 'Ετικέτες μαθήματος';
 $string['delete'] = 'Διαγραφή';
 $string['deleted'] = 'Διαγράφηκε';
 $string['deletedcoursetags'] = 'Διαγράφηκαν οι ετικέτες του μαθήματος';

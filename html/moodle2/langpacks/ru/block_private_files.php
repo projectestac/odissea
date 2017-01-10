@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Личные файлы';
 $string['privatefiles'] = 'Личные файлы';
-$string['private_files:addinstance'] = 'Добавлять новый блок «Мои личные файлы»';
-$string['private_files:myaddinstance'] = 'Добавлять новый блок «Личные файлы» на страницу «Моя домашняя страница»';
+$string['private_files:addinstance'] = 'Добавлять новый блок «Личные файлы»';
+$string['private_files:myaddinstance'] = 'Добавлять новый блок «Личные файлы» на страницу «Личный кабинет»';

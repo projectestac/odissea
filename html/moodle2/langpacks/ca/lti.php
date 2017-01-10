@@ -38,23 +38,26 @@ Alguns subministradors d\'eina permeten retornar informes de qualificacions a Mo
 
 Fixeu-vos que aquest paràmetre pot ser sobreescrit en la configuració de l\'eina.';
 $string['action'] = 'Acció';
+$string['activate'] = 'Activa';
+$string['activatetoadddescription'] = 'Us cal activar aquesta eina abans d\'afegir una descripció.';
 $string['active'] = 'Activa';
 $string['activity'] = 'Activitat';
 $string['addnewapp'] = 'Habilita l\'aplicació externa';
-$string['addserver'] = 'Afegeix un servidor confiable nou';
+$string['addserver'] = 'Afegeix un servidor fiable nou';
 $string['addtype'] = 'Afegeix una eina preconfigurada';
 $string['allow'] = 'Permet';
-$string['allowinstructorcustom'] = 'Permet als professors afegir paràmetres personalitats';
+$string['allowinstructorcustom'] = 'Permet als professors afegir paràmetres personalitzats';
 $string['allowsetting'] = 'Permet a l\'eina emmagatzemar 8K de paràmetres a Moodle';
 $string['always'] = 'Sempre';
+$string['autoaddtype'] = 'Afegeix eina';
 $string['automatic'] = 'Automàtic, basada en al llançament de URL';
 $string['baseurl'] = 'Nom de registre de l\'eina / URL base.';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'Activitats LTI';
-$string['basiclti_base_string'] = 'Cadena base de OAuth LTI';
+$string['basiclti_base_string'] = 'Cadena base d\'OAuth LTI';
 $string['basiclti_endpoint'] = 'Punt de llançament del LTI';
 $string['basicltifieldset'] = 'Paràmetre d\'exemple personalitzat';
-$string['basiclti_in_new_window'] = 'La vostra activitat ha sigut oberta en una finestra nova.';
+$string['basiclti_in_new_window'] = 'La vostra activitat ha estat oberta en una finestra nova.';
 $string['basicltiintro'] = 'Descripció de l\'activitat';
 $string['basicltiname'] = 'Nom de l\'activitat';
 $string['basiclti_parameters'] = 'Paràmetres de llançament LTI';
@@ -65,26 +68,31 @@ $string['cannot_delete'] = 'No podeu suprimir aquesta configuració de l\'eina';
 $string['cannot_edit'] = 'No podeu editar aquesta configuració de l\'eina';
 $string['capabilities'] = 'Capacitats';
 $string['capabilities_help'] = 'Seleccioneu aquelles capacitats que es vulgui oferir al proveïdor d\'eines. Es pot seleccionar més d\'una capacitat.';
-$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Premeu per continuar</a>';
+$string['capabilitiesrequired'] = 'Aquesta eina requereix l\'accés a les dades següents per activar-se:';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Cliqueu per continuar</a>';
 $string['comment'] = 'Comentari';
 $string['configpassword'] = 'Contrasenya per defecte de l\'eina remota';
-$string['configpreferheight'] = 'Alçada preferida per defecte';
+$string['configpreferheight'] = 'Alçària preferida per defecte';
 $string['configpreferwidget'] = 'Configura el giny per llaçar-se per defecte.';
 $string['configpreferwidth'] = 'Amplada preferida per defecte';
 $string['configresourceurl'] = 'URL del recurs per defecte';
 $string['configtoolurl'] = 'URL de l\'eina remota per defecte';
 $string['configtypes'] = 'Habilita les aplicacions LTI';
 $string['configured'] = 'Configurat';
+$string['confirmtoolactivation'] = 'Confirmeu que voleu activar aquesta eina?';
+$string['courseactivitiesorresources'] = 'Activitats del curs o recursos';
 $string['courseid'] = 'Nombre d\'ID del curs';
+$string['courseinformation'] = 'Informació del curs';
+$string['courselink'] = 'Aneu al curs';
 $string['coursemisconf'] = 'El curs està desconfigurat';
 $string['course_tool_types'] = 'Eines del curs';
 $string['createdon'] = 'Creat el';
-$string['curllibrarymissing'] = 'La biblioteca CURL de PHP cal que estigui instal·lada per utilitzar LTI';
+$string['curllibrarymissing'] = 'Cal que la biblioteca CURL de PHP estigui instal·lada per utilitzar LTI';
 $string['custom'] = 'Paràmetres personalitzats';
 $string['custom_config'] = 'S\'està utilitzant la configuració de l\'eina personalitzada';
-$string['custom_help'] = 'Els paràmetres personalitzats són paràmetres utilitzats pel proveïdor de l\'eina. Per exemple, un paràmetre personalitzat pot ser utilitzat per mostrar un recurs especific del proveïdor.
+$string['custom_help'] = 'Els paràmetres personalitzats són paràmetres utilitzats pel proveïdor de l\'eina. Per exemple, un paràmetre personalitzat pot ser utilitzat per mostrar un recurs específic del proveïdor. Cada paràmetre ha de ser introduït en una línia separada usant el format de «nom=valor»; per exemple, «capítol=3»
 
-És segur deixar aquest camp sense canvis llevat que el canvi el dugui el proveïdor de l\'eina.';
+És segur deixar aquest camp sense canvis, llevat que el proveïdor de l\'eina dugui el canvi.';
 $string['custominstr'] = 'Paràmetres personalitzats.';
 $string['debuglaunch'] = 'Opció de depuració';
 $string['debuglaunchoff'] = 'Llançament normal';
@@ -106,7 +114,7 @@ Depenent del navegador, es pot obrir una finestra emergent o una pestanya.
 És possible que alguns navegadors bloquegin l\'obertura de finestres noves.';
 $string['delegate'] = 'Delega al professor';
 $string['delete'] = 'Suprimeix';
-$string['delete_confirmation'] = 'Esteu segurs de voler suprimir aquesta eina preconfigurada?';
+$string['delete_confirmation'] = 'Confirmeu que voleu suprimir aquesta configuració externa de l\'eina?';
 $string['deletetype'] = 'Suprimeix l\'eina preconfigurada';
 $string['display_description'] = 'Mostra la descripció de l\'activitat quan es llanci.';
 $string['display_description_help'] = 'Si s\'habilita, la descripció de l\'activitat  mostrarà amunt el contingut del proveïdor de l\'eina.
@@ -115,21 +123,24 @@ La descripció pot ser utilitzada per proporcionar instruccions addicionals als 
 
 La descripció mai es mostra quan el contenidor de llançament de l\'eina està en una finestra nova.';
 $string['display_name'] = 'Mostra el nom de l\'activitat quan es llanci.';
-$string['display_name_help'] = 'Si s\'habilita el nom de l\'activitat es mostrarà dalt del contingut del proveïdor de l\'eina.
+$string['display_name_help'] = 'Si s\'habilita, el nom de l\'activitat es mostrarà dalt del contingut del proveïdor de l\'eina.
 
-Es possible que el proveïdor de l\'eina mostri el títol. Aquesta opció pot impedir que el títol de l\'activitat es mostri dues vegades.
+És possible que el proveïdor de l\'eina mostri el títol. Aquesta opció pot impedir que el títol de l\'activitat es mostri dues vegades.
 
 El títol mai es mostra quan el llançador de l\'activitat està en una finestra nova.';
 $string['domain_mismatch'] = 'El llançador de dominis de URL no concorda amb la configuració de l\'eina.';
-$string['donot'] = 'No enviïs';
-$string['donotaccept'] = 'No acceptis';
-$string['donotallow'] = 'No permetis';
-$string['duplicateregurl'] = 'Aquesta URL per al registre ja està en ús';
+$string['donot'] = 'No ho enviïs';
+$string['donotaccept'] = 'No ho acceptis';
+$string['donotallow'] = 'No ho permetis';
+$string['duplicateregurl'] = 'Aquest URL per al registre ja està en ús';
+$string['editdescription'] = 'Feu clic aquí per donar una descripció a aquesta eina';
 $string['edittype'] = 'Edita l\'eina preconfigurada';
 $string['embed'] = 'Incrustada';
 $string['embed_no_blocks'] = 'Incrustada sense blocs';
 $string['enableemailnotification'] = 'Envia qualificacions per correu';
 $string['enableemailnotification_help'] = 'Si s\'habilita, els alumnes rebran un correu amb els enviaments qualificats.';
+$string['enterkeyandsecret'] = 'Introduïu la vostra clau i contrasenya secreta';
+$string['errorbadurl'] = 'L\'URL no és un URL de l\'eina vàlid o cartutx.';
 $string['errormisconfig'] = 'Eina no configurada. Demaneu a l\'administrador de Moodle que arregli la configuració de l\'eina.';
 $string['existing_window'] = 'Finestra existent';
 $string['extensions'] = 'Serveis d\'extensió LTI';
@@ -153,15 +164,17 @@ En la llista desplegable hi ha disponibles tres icones:
 * **Suprimeix** — Suprimeix el tipus d\'eina del nivell del curs seleccionada.';
 $string['external_tool_types'] = 'Eines preconfigurades';
 $string['failedtoconnect'] = 'Moodle no pot comunicar-se amb el sistema «{$a}»';
+$string['failedtocreatetooltype'] = 'No s\'ha pogut crear la nova eina. Comproveu l\'URL i proveu-ho de nou.';
+$string['failedtodeletetoolproxy'] = 'No s\'ha pogut suprimir el registre de l\'eina. Cal que visiteu «Gestiona el registre d\'eines externes» i ho esborreu de forma manual.';
 $string['filter_basiclti_configlink'] = 'Configureu els vostres llocs favorits i les contrasenyes.';
 $string['filter_basiclti_password'] = 'La contrasenya és obligatòria';
 $string['filterconfig'] = 'Administració de LTI';
 $string['filtername'] = 'LTI';
-$string['fixexistingconf'] = 'Utilitzeu una configuració ja existent per la instància sense configurar';
+$string['fixexistingconf'] = 'Utilitzeu una configuració ja existent per a la instància sense configurar';
 $string['fixnew'] = 'Configuració nova';
-$string['fixnewconf'] = 'Definiu una configuració nova per la instància sense configurar';
+$string['fixnewconf'] = 'Definiu una configuració nova per a la instància sense configurar';
 $string['fixold'] = 'Usa l\'existent';
-$string['forced_help'] = 'Aquest paràmetre es obligatori en aquest curs o configuració d\'eina. No podeu canviar-lo amb aquesta interfície.';
+$string['forced_help'] = 'Aquest paràmetre és obligatori en aquest curs o configuració d\'eina. No podeu canviar-lo amb aquesta interfície.';
 $string['force_ssl'] = 'Força SSL';
 $string['force_ssl_help'] = 'Quan seleccioneu aquesta opció, imposeu que tots els llançaments amb aquesta eina utilitzin SSL.
 
@@ -172,12 +185,12 @@ $string['generaltool'] = 'Eina general';
 $string['global_tool_types'] = 'Eines globals preconfigurades';
 $string['grading'] = 'Encaminament de la qualificació';
 $string['icon_url'] = 'URL de l\'icona';
-$string['icon_url_help'] = 'L\'URL de la icona permet a la icona mostrar el llistat del curs per a aquesta activitat per a ser modificat. En lloc d\'utilitzar la icona per defecte, es mostrarà una icona que transporta el tipus d\'activitat.';
+$string['icon_url_help'] = 'L\'URL de la icona permet a la icona mostrar la llista del curs per a aquesta activitat per a ser modificat. En lloc d\'utilitzar la icona per defecte, es mostrarà una icona que transporta el tipus d\'activitat.';
 $string['id'] = 'id';
 $string['invalidid'] = 'La identificació de LTI és incorrecta';
 $string['launch_in_moodle'] = 'Llança l\'eina a Moodle';
-$string['launchinpopup'] = 'Llança contenidor';
-$string['launch_in_popup'] = 'Llança eina emergent';
+$string['launchinpopup'] = 'Llança un contenidor';
+$string['launch_in_popup'] = 'Llança una eina emergent';
 $string['launchinpopup_help'] = 'El contenidor de llançament afecta la visualització de l\'eina quan es llança des del curs. Alguns contenidors de llançament proporcionen més pantalles d\'estat a l\'eina, i d\'altres proporcionen una sensació més integrada amb Moodle.
 
 * **Per defecte** — Utilitza el contenidor de llançament especificat per la configuració de l\'eina.
@@ -200,22 +213,23 @@ Si no esteu segurs de què heu d\'introduir per a l\'URL de llançament, consult
 També podeu introduir una URL de cartutx si en teniu alguna,i la resta de capms del formulari s\'ompliran automàticament.
 
 Si heu seleccionat una eina preconfigurada, pot ser no us cal introduir un URL de llançament. Probablement es doni el cas que l\'enllaç de l\'eina només s\'utilitzi per executar-se en el sistema del proveïdor de l\'eina, i no per anar a un recurs específic.';
+$string['leaveblank'] = 'Deixa en blanc si no ho necessites';
 $string['lti'] = 'LTI';
-$string['lti:addcoursetool'] = 'Qualifica activitats LTI';
-$string['lti:addinstance'] = 'Afegeix una activitat LTI nova';
+$string['lti:addcoursetool'] = 'Afegeix configuracions d\'eina de cursos específics.';
+$string['lti:addinstance'] = 'Afegeix una activitat d\'eina externa nova';
 $string['lti_administration'] = 'Edita una eina preconfigurada';
-$string['lti_errormsg'] = 'L\'eina ha retornat el següent missatge d\'error: "{$a}"';
-$string['lti:grade'] = 'Qualifica activitats LTI';
-$string['lti_launch_error'] = 'Ha succeït un error quan es llançava l\'eina externa.';
-$string['lti_launch_error_tool_request'] = '<p> Per enviar una petició a un administrador completeu la configuració de l\'eina, premeu<a href="{$a->admin_request_url}" target="_top">aquí</a>. </p>';
+$string['lti_errormsg'] = 'L\'eina ha retornat el missatge d\'error següent: «{$a}»';
+$string['lti:grade'] = 'Mostra qualificacions retornades per una eina externa';
+$string['lti_launch_error'] = 'S\'ha produït un error quan es llançava l\'eina externa:';
+$string['lti_launch_error_tool_request'] = '<p> Per enviar una petició a un administrador per completar la configuració de l\'eina, cliqueu<a href="{$a->admin_request_url}" target="_top">aquí</a>. </p>';
 $string['lti_launch_error_unsigned_help'] = '<p>Aquest error pot ser resultat de la manca d\'una clau de consumidor i una contrasenya secreta compartida per al proveïdor de l\'eina.</p>
 <p>Si teniu la clau de consumidor i la contrasenya secreta compartida, cal que l\'introduïu quan editeu la instància de l\'eina externa (comproveu que les opcions avançades són visibles).</p>
 <p>De forma alternativa, podeu crear una configuració de proveïdor de l\'eina al nivell del curs <a href="{$a->course_tool_editor}">aquí</a>.</p>';
-$string['lti:manage'] = 'Esdevingues professor quan l\'eina es llanci';
-$string['lti:requesttooladd'] = 'Envia una eina als admins per configurar';
+$string['lti:manage'] = 'Esdeveniu professor quan l\'eina es llanci';
+$string['lti:requesttooladd'] = 'Demana si l\'eina està configurada a tot el lloc';
 $string['ltisettings'] = 'Paràmetres LTI';
-$string['lti_tool_request_added'] = 'La petició de configuració de l\'eina ha sigut enviat amb èxit. Podeu contactar amb l\'administrador per completar la configuració de l\'eina.';
-$string['lti_tool_request_existing'] = 'Una configuració d\'eina per al domini de l\'eina ha sigut enviat.';
+$string['lti_tool_request_added'] = 'La petició de configuració de l\'eina s\'ha enviat amb èxit. Podeu contactar amb l\'administrador per completar la configuració de l\'eina.';
+$string['lti_tool_request_existing'] = 'S\'ha enviat una configuració d\'eina per al domini de l\'eina.';
 $string['ltiunknownserviceapicall'] = 'Crida API a servei de LTI desconegut';
 $string['lti:view'] = 'Llança activitats d\'eines externes';
 $string['main_admin'] = 'Ajuda general';
@@ -228,11 +242,13 @@ Els tipus d\'eines enumerades en aquesta pàgina es divideixen en tres categorie
 Amb tot, els professors poden emprar eines d\'aquests proveïdors si tenen una clau de consumidor i una contrasenya secreta compartida, o si no en cal cap.
 * **Rebutjada** —Aquests proveïdors d\'eines han estat marcats com aquells que un administrador no té intenció de posar a disposició de tota la instància Moodle.
 Amb tot, els professors poden emprar eines d\'aquests proveïdors si tenen una clau de consumidor i una contrasenya secreta compartida, o si no en cal cap.';
+$string['manage_external_tools'] = 'Gestiona les eines';
 $string['manage_tool_proxies'] = 'Gestiona els registres d\'eines externes';
 $string['manage_tools'] = 'Gestiona els tipus d\'eines preconfigurades';
-$string['miscellaneous'] = 'Miscel·lania';
+$string['manuallyaddtype'] = 'De forma alternativa, podeu <a href="{$a}">configurar l\'eina de forma manual</a>.';
+$string['miscellaneous'] = 'Miscel·lània';
 $string['misconfiguredtools'] = 'S\'han detectat instàncies d\'eina sense configurar.';
-$string['missingparameterserror'] = 'Aquesta pàgina no està configurada: "{$a}"';
+$string['missingparameterserror'] = 'Aquesta pàgina no està configurada: «{$a}»';
 $string['module_class_type'] = 'Tipus de mòdul de Moodle';
 $string['modulename'] = 'Eina externa';
 $string['modulename_help'] = 'Les eines externes permeten als usuaris de Moodle interactuar amb recursos d\'aprenentatge i activitats d\'altres llocs web. Per exemple, una eina externa pot proporcionar accés  a un tipus d\'activitat nou o a materials d\'aprenentatge d\'un editor.
@@ -250,11 +266,12 @@ $string['modulenamepluralformatted'] = 'Instàncies';
 $string['name'] = 'Nom';
 $string['never'] = 'Mai';
 $string['new_window'] = 'Finestra nova';
-$string['noattempts'] = 'No s\'han fet intents amb aquest eina';
+$string['noattempts'] = 'No s\'han fet intents amb aquesta eina';
 $string['no_lti_configured'] = 'No hi ha eines externes actives configurades.';
 $string['no_lti_pending'] = 'No hi ha eines externes pendents.';
 $string['no_lti_rejected'] = 'No hi ha eines externes rebutjades.';
-$string['noltis'] = 'No hi ha instàncies LTI';
+$string['noltis'] = 'No hi ha instàncies d\'eina externa';
+$string['no_lti_tools'] = 'No hi ha eines externes configurades.';
 $string['noprofileservice'] = 'No s\'ha trobat el perfil del servei';
 $string['noservers'] = 'No s\'han trobat servidors';
 $string['no_tp_accepted'] = 'No hi ha registres acceptats d\'eines externes.';
@@ -294,22 +311,22 @@ Potser que a les eines que no requereixen una comunicació segura amb Moodle i q
 $string['pending'] = 'Pendent';
 $string['pluginadministration'] = 'Gestió d\'eines externes';
 $string['pluginname'] = 'Eina externa';
-$string['preferheight'] = 'Altura preferida';
+$string['preferheight'] = 'Alçària preferida';
 $string['preferwidget'] = 'Llança el giny preferit';
 $string['preferwidth'] = 'Amplada preferida';
-$string['press_to_submit'] = 'Prem per llaçar aquesta activitat';
+$string['press_to_submit'] = 'Prem per llançar aquesta activitat';
 $string['privacy'] = 'Privacitat';
 $string['quickgrade'] = 'Permet la qualificació fàcil';
-$string['quickgrade_help'] = 'Si s\'habilita, es podran qualificar múltiples eines en cada pàgina. Afegiu qualificacions i comentaris i llavors premeu el botó "Desa tota la meva retroacció" per desar tots els canvis de la pàgina.';
+$string['quickgrade_help'] = 'Si s\'habilita, es podran qualificar múltiples eines en cada pàgina. Afegiu qualificacions i comentaris i llavors cliqueu el botó «Desa tota la meva retroacció» per desar tots els canvis de la pàgina.';
 $string['redirect'] = 'Sereu redireccionat en pocs segons. Si no sou redireccionat, premeu el botó.';
 $string['register'] = 'Registra';
-$string['registertype'] = 'Configura un nou registre d\'eina externa';
+$string['registertype'] = 'Configura un registre d\'eina externa nou';
 $string['register_warning'] = 'Sembla que la pàgina de registre triga una estona a obrir-se. Si no apareix, comproveu que heu introduït l\'URL correcte als paràmetres de configuració. Si Moodle està utilitzant https, assegureu-vos que l\'eina que esteu configurant admet https, i que esteu utilitzant https a l\'URL.';
 $string['registrationname'] = 'Nom del proveïdor de l\'eina';
-$string['registrationname_help'] = 'Entreu el nom del proveïdor de l\'eina que s\'està registrant.';
+$string['registrationname_help'] = 'Introduïu el nom del proveïdor de l\'eina que s\'està registrant.';
 $string['registration_options'] = 'Opcions de registre';
 $string['registrationurl'] = 'URL per al registre';
-$string['registrationurl_help'] = 'La URL per al registre ha d\'estar disponible des del proveïdor d\'eines així com la ubicació  on s\'han de trametre les sol·licituds de registre.';
+$string['registrationurl_help'] = 'L\'URL per al registre ha d\'estar disponible des del proveïdor d\'eines, així com la ubicació on s\'han de trametre les sol·licituds de registre.';
 $string['reject'] = 'Rebutja';
 $string['rejected'] = 'Rebutjat';
 $string['resource'] = 'Recurs';
@@ -330,8 +347,9 @@ El proveïdor de l\'eina ha de proporcionar la clau de consumidor. El mètode d\
 
 És possible que les eines que no requereixen una comunicació segura amb Moodle i que no proporcionen serveis addicionals (com els informes de qualificacions) no necessitin una clau de recurs.';
 $string['resourceurl'] = 'URL del recurs';
-$string['return_to_course'] = 'Prem <a href="{$a->link}" target="_top">aquí</a> per tornar al curs.';
+$string['return_to_course'] = 'Cliqueu <a href="{$a->link}" target="_top">aquí</a> per tornar al curs.';
 $string['saveallfeedback'] = 'Desa totes les meves realimentacions';
+$string['search:activity'] = 'Eina externa: informació d\'activitat';
 $string['secure_icon_url'] = 'Icona d\'URL segura';
 $string['secure_icon_url_help'] = 'Semblant a la icona d\'URL, però utilitzada quan l\'usuari accedeix a Moodle mitjançant SSL. El propòsit principal d\'aquest camp és evitar que el navegador avisi l\'usuari si s\'ha accedit a la pàgina subjacent amb SSL, però demanant-li si vol mostrar una imatge insegura.';
 $string['secure_launch_url'] = 'URL de llançament segur';
@@ -345,26 +363,33 @@ $string['setupoptions'] = 'Opcions de configuració';
 $string['share_email'] = 'Comparteix el llançador de correus electrònics amb l\'eina';
 $string['share_email_admin'] = 'Comparteix el llançador de correus electrònics amb l\'eina (admin)';
 $string['share_email_admin_help'] = 'Especifica de quina forma l\'adreça de correu de l\'usuari que llança l\'eina serà compartida amb el proveïdor de l\'eina.
-L\'eina pot necessitar adreces de correu dels usuaris per distingir usuaris amb el mateix nom a la UI o enviar correus electrònics als usuaris basades en les accions de l\'eina.';
+L\'eina pot necessitar adreces de correu dels usuaris per distingir usuaris amb el mateix nom a la UI o enviar correus electrònics als usuaris basats en les accions de l\'eina.';
 $string['share_email_help'] = 'Especifica de quina forma l\'adreça de correu de l\'usuari que llança l\'eina serà compartida amb el proveïdor de l\'eina.
-L\'eina pot necessitar adreces de correu dels usuaris per distingir usuaris amb el mateix nom  o enviar correus electrònics als usuaris basades en les accions de l\'eina.
+L\'eina pot necessitar adreces de correu dels usuaris per distingir usuaris amb el mateix nom  o enviar correus electrònics als usuaris basats en les accions de l\'eina.
 
 Fixeu-vos que aquesta paràmetre pot ser sobreescrit en la configuració de l\'eina.';
 $string['share_name'] = 'Comparteix el noms dels llançadors amb l\'eina';
 $string['share_name_admin'] = 'Comparteix el noms dels llançadors amb l\'eina';
-$string['share_name_admin_help'] = 'Especifica de quina forma el nom complet de l\'usuari que llança l\'eina serà compartida amb el proveïdor de l\'eina.
+$string['share_name_admin_help'] = 'Especifica de quina forma el nom complet de l\'usuari que llança l\'eina serà compartit amb el proveïdor de l\'eina.
 L\'eina pot necessitar els noms dels llançadors per mostrar informació significativa dins de l\'eina.';
-$string['share_name_help'] = 'Especifica de quina forma el nom complet de l\'usuari que llança l\'eina serà compartida amb el proveïdor de l\'eina. L\'eina pot necessitar els noms dels llançadors per mostrar informació significativa dins de l\'eina.
+$string['share_name_help'] = 'Especifica de quina forma el nom complet de l\'usuari que llança l\'eina serà compartit amb el proveïdor de l\'eina. L\'eina pot necessitar els noms dels llançadors per mostrar informació significativa dins de l\'eina.
 
 Fixeu-vos que aquest paràmetre pot ser sobreescrit en la configuració de l\'eina.';
 $string['share_roster'] = 'Permet a l\'eina l\'accés a aquesta llista del curs';
 $string['share_roster_admin'] = 'L\'eina pot accedir a la llista del curs';
-$string['share_roster_admin_help'] = 'Especifica de quina forma l\'eina pot accedir a la llista d\'usuaris inscrits al curs des del que es llança l\'eina.';
-$string['share_roster_help'] = 'Especifica de quina forma l\'eina pot accedir a la llista d\'usuaris inscrits  a aquest curs.
+$string['share_roster_admin_help'] = 'Especifica de quina forma l\'eina pot accedir a la llista d\'usuaris inscrits al curs des que l\'eina és llançada.';
+$string['share_roster_help'] = 'Especifica de quina forma l\'eina pot accedir a la llista d\'usuaris inscrits a aquest curs.
 
 Fixeu-vos que aquest paràmetre pot ser sobreescrit en la configuració de l\'eina.';
-$string['size'] = 'Mida dels parametres';
-$string['submission'] = 'Submissió';
+$string['show_in_course_activity_chooser'] = 'Mostra al selector d\'activitats i com a eina preconfigurada';
+$string['show_in_course_lti1'] = 'Ús de l\'eina de configuració';
+$string['show_in_course_lti1_help'] = 'Aquesta eina pot mostrar-se al selector d\'activitats perquè el professor la seleccioni i l\'afegeixi a un curs. De manera alternativa, es pot mostrar en un menú desplegable preconfigurat quan s\'afegeix una eina externa a un curs. Una altra opció és que la configuració de l\'eina sols s\'usi si l\'URL de llançament s\'ha introduït quan s\'afegeix una eina externa al curs.';
+$string['show_in_course_lti2'] = 'Ús de l\'eina de configuració';
+$string['show_in_course_lti2_help'] = 'Aquesta eina pot mostrar-se al selector d\'activitats perquè el professor la seleccioni i l\'afegeixi a un curs o en un menú desplegable d\'eines preconfigurades quan s\'afegeix una eina externa a un curs.';
+$string['show_in_course_no'] = 'No ho mostreu; useu-ho sols quan s\'hagi introduït un URL de llançament coincident';
+$string['show_in_course_preconfigured'] = 'Mostra com a eina preconfigurada quan s\'afegeixi una eina externa';
+$string['size'] = 'Paràmetres de mida';
+$string['submission'] = 'Tramesa';
 $string['submissions'] = 'Trameses';
 $string['submissionsfor'] = 'Trameses per a  {$a}';
 $string['subplugintype_ltiresource'] = 'Recurs del servei LTI';
@@ -373,8 +398,14 @@ $string['subplugintype_ltiservice'] = 'Servei LTI';
 $string['subplugintype_ltiservice_plural'] = 'Serveis LTI';
 $string['subplugintype_ltisource'] = 'Font LTI';
 $string['subplugintype_ltisource_plural'] = 'Fonts LTI';
+$string['successfullycreatedtooltype'] = 'La nova eina s\'ha creat amb èxit!';
 $string['toggle_debug_data'] = 'Commuta dades de depuració';
-$string['tool_config_not_found'] = 'La configuració de l\'eina no s\'ha trobat per aquesta URL';
+$string['tool_config_not_found'] = 'La configuració de l\'eina no s\'ha trobat per a aquest URL';
+$string['tooldescription'] = 'Descripció de l\'eina';
+$string['tooldescription_help'] = 'La descripció de l\'eina que veuran els professors a la llista d\'activitats.
+Aquesta ha de descriure el que l\'eina fa i tota la informació addicional que han de saber els professors.';
+$string['toolisbeingused'] = 'Aquesta eina s\'ha usat {$a} vegades';
+$string['toolisnotbeingused'] = 'Aquesta eina no ha estat usada encara.';
 $string['toolproxy'] = 'Registres d\'eina externa';
 $string['toolproxy_help'] = 'Els registres d\'eines externes permeten que els administradors de Moodle configurin eines externes a partir d\'una eina de servidor intermediari obtinguda a partir d\'un proveïdor de l\'eina que admeti LTI 2.0. Tot el que cal per iniciar el procés és un URL de registre proporcionat pel proveïdor de l\'eina. Les capacitats i serveis que s\'ofereixen al proveïdor de l\'eina se seleccionen quan es configura un nou registre.
 
@@ -391,6 +422,11 @@ $string['toolproxyregistration'] = 'Registre d\'eina externa';
 $string['toolregistration'] = 'Registre d\'eina externa';
 $string['tool_settings'] = 'Configuració de l\'eina';
 $string['toolsetup'] = 'Configuració de l\'eina externa';
+$string['tooltypeadded'] = 'S\'ha afegit una eina preconfigurada.';
+$string['tooltypedeleted'] = 'S\'ha esborrat una eina preconfigurada.';
+$string['tooltypenotdeleted'] = 'No es pot suprimir una eina preconfigurada.';
+$string['tooltypes'] = 'Eines';
+$string['tooltypeupdated'] = 'S\'ha actualitzat l\'eina preconfigurada';
 $string['toolurl'] = 'URL base de l\'eina/cartutx';
 $string['toolurl_help'] = 'L\'URL base de l\'eina s\'utilitza per cercar concordances entre l\'URL de llançament i la configurció correcta de l\'eina.
 Posar el prefix http(s) a l\'URL és opcional.
@@ -418,10 +454,17 @@ Un URL base com ara *quiz.tool.com*  concordaria amb:
 Si hi ha dues configuracions diferents pel mateix domini, s\'utilitzarà la concordança més específica.
 
 També podeu introduir l\'URL d\'un cartutx, si en teniu un, i s\'ompliran automàticament els detalls de l\'eina.';
+$string['toolurlplaceholder'] = 'URL de l\'eina...';
 $string['typename'] = 'Nom de l\'eina';
 $string['typename_help'] = 'El nom de l\'eina s\'utilitza per identificar el proveïdor de l\'eina dins Moodle.  El nom introduït serà visible per als professors quan afegeixin eines externes dins els cursos.';
 $string['types'] = 'Tipus';
+$string['unabletocreatetooltype'] = 'No esteu habilitat per crear eines';
+$string['unabletofindtooltype'] = 'No es pot trobar l\'eina per {$a->id}';
+$string['unknownstate'] = 'Estat desconegut';
 $string['update'] = 'Actualitza';
+$string['useraccountinformation'] = 'Informació del compte de l\'usuari';
+$string['userpersonalinformation'] = 'Informació personal de l\'usuari';
+$string['using_tool_cartridge'] = 'S\'està usant el cartutx d\'eina';
 $string['using_tool_configuration'] = 'S\'està utilitzant la configuració de l\'eina:';
-$string['validurl'] = 'Una URL vàlida cal que comenci amb http(s)://';
+$string['validurl'] = 'Un URL vàlid cal que comenci amb http(s)://';
 $string['viewsubmissions'] = 'Mostra enviaments i qualificacions a la pantalla';

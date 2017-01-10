@@ -62,7 +62,7 @@ $string['managerules'] = 'Event-Beobachtung';
 $string['manageruleslink'] = 'Sie können Events der {$a} Seite verwalten.';
 $string['managesubscriptions'] = 'Event-Beobachtung';
 $string['managesubscriptionslink'] = 'Sie können sich über Ereignisse der Seite {$a} benachrichtigen lassen.';
-$string['messageprovider:notification'] = 'Benachrichtungungen über  Regel-Abonnements';
+$string['messageprovider:notification'] = 'Mitteilung über Regel-Abonnements';
 $string['messagetemplate'] = 'Mitteilung über Benachrichtigungen';
 $string['messagetemplate_help'] = 'Eine Benachrichtigung wird dem Empfänger zugesandt wenn die Benachrichtigungsschwelle erreicht wurde. Sie kann einen oder mehrere Platzhalter enthalten:
 <br /><br />

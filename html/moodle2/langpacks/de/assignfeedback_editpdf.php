@@ -44,6 +44,7 @@ $string['deletefeedback'] = 'Feedback.pdf löschen';
 $string['downloadablefilename'] = 'Feedback.pdf';
 $string['downloadfeedback'] = 'Feedback.pdf herunterladen';
 $string['draftchangessaved'] = 'Entwurf für die Anmerkungen gesichert';
+$string['drag'] = 'Ziehen';
 $string['editpdf'] = 'Anmerkungen im PDF';
 $string['editpdf_help'] = 'Kommentieren Sie die Lösungen der Teilnehmenden direkt im Browser und erzeugen Sie eine herunterladbare PDF-Datei daraus.';
 $string['enabled'] = 'Anmerkungen im PDF';

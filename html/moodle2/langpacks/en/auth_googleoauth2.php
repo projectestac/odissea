@@ -45,7 +45,10 @@ $string['auth_facebookclientid'] = 'Your App ID/Secret can be generated in your 
 On the confirmation page, look for the "Skip to Developer Dashboard" link > on the app dashboard you should find the id/secret > Settings > Advanced > enter the Valid OAuth redirect URIs
 <br/>Site URL: {$a->siteurl}
 <br/>App domains: {$a->sitedomain}
-<br/>Valid OAuth redirect URIs: {$a->callbackurl}';
+<br/>Valid OAuth redirect URIs: {$a->callbackurl}
+<br/><strong>WARNING: Facebook recently changed the API. It is not working for newly created API key. For example we know it is broken from Facebook API 2.8
+and it is working up to Facebook API 2.2. We didn\'t test Facebook API 2.3, 2.4, 2.5, 2.6 and 2.7. To summarize if you don\'t have already an old Facebook API key,
+then it is guarantee that Facebook won\'t work in this login. Please look at plugin alternatives or wait for the next plugin big update (not planned yet).</strong>';
 $string['auth_facebookclientid_key'] = 'Facebook App ID';
 $string['auth_facebookclientsecret'] = '';
 $string['auth_facebookclientsecret_key'] = 'Facebook App secret';
@@ -88,6 +91,11 @@ $string['auth_messengerclientid'] = 'Your Client ID/Secret can be generated in y
 $string['auth_messengerclientid_key'] = 'Messenger Client ID';
 $string['auth_messengerclientsecret'] = '';
 $string['auth_messengerclientsecret_key'] = 'Messenger Client secret';
+$string['auth_microsoftclientid'] = 'Your Client ID/Secret can be generated at <a href="https://apps.dev.microsoft.com/" target="_blank">Microsoft Application Registration Portal</a>:
+<br />Redirect URI: {$a->callbackurl}';
+$string['auth_microsoftclientid_key'] = 'Microsoft v2 Application ID';
+$string['auth_microsoftclientsecret'] = '';
+$string['auth_microsoftclientsecret_key'] = 'Microsoft v2 Application secret';
 $string['auth_sign-in_with'] = 'Sign-in with {$a->providername}';
 $string['auth_vkclientid'] = 'Your app id and secret keys can be generated in <a href="https://vk.com/editapp?act=create" target="_blank">VK developer page</a>.<br/>
 Base domain: {$a->siteurl} (without http://)<br/>
@@ -105,6 +113,7 @@ $string['couldnotgetgoogleaccesstoken'] = 'The authentication provider sent us a
 $string['emailaddressmustbeverified'] = 'Your email address is not verified by the authentication method you selected. You likely have forgotten to click on a "verify email address"
 link that Google or Facebook should have sent you during your subscribtion to their service.';
 $string['faileduserdetails'] = 'The site succeed to connect to the selected provider but failed to retrieve your user details. If you are using Google, check that your site administrator has enabled the Google+ API in the Google developer console. It is the most common reason for this error.';
+$string['microsoft_failure'] = 'Did not receive an authorization code from the Microsoft servers.';
 $string['moreproviderlink'] = 'Sign-in with another service.';
 $string['noaccountyet'] = 'You do not have permission to use the site yet. Please contact your administrator and ask them to activate your account.';
 $string['oauth2displaybuttons'] = 'Display buttons on login page';

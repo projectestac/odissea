@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadfile'] = 'Baixa el fitxer d\'exportació del portafolis';
+$string['downloadfile'] = 'Baixa el fitxer d\'exportació del dossier';
 $string['downloading'] = 'Baixant...';
 $string['pluginname'] = 'Baixada de fitxers';

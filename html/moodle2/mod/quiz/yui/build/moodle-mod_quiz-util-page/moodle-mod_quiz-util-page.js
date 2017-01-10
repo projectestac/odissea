@@ -1,5 +1,7 @@
 YUI.add('moodle-mod_quiz-util-page', function (Y, NAME) {
 
+/* global YUI */
+
 /**
  * A collection of utility classes for use with pages.
  *
@@ -285,7 +287,7 @@ Y.Moodle.mod_quiz.util.page = {
 
             // Update the URL of the add-section action.
             menumenu.one('a.addasection').set('href',
-                    menumenu.one('a.addasection').get('href').replace(/\baddsectionatpage=\d/, 'addsectionatpage=' + id));
+                    menumenu.one('a.addasection').get('href').replace(/\baddsectionatpage=\d+\b/, 'addsectionatpage=' + id));
 
         }, this);
     },

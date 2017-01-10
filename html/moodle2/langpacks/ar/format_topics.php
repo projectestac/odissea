@@ -26,8 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = 'هذا الموضوع';
+$string['deletesection'] = 'حذف الموضوع';
+$string['editsection'] = 'تحرير الموضوع';
+$string['editsectionname'] = 'تعديل اسم الموضوع';
 $string['hidefromothers'] = 'إخفاء الموضوع';
+$string['newsectionname'] = 'اسم جديد للموضوع {$a}';
 $string['page-course-view-topics'] = 'أي صفحة رئيسية لمقرر دراسي في التنسيق حسب الموضوع';
+$string['page-course-view-topics-x'] = 'أي صفحة مقرر دراسي في تنسيق المواضيع';
 $string['pluginname'] = 'تنسيق موضوعات';
 $string['section0name'] = 'عام';
 $string['sectionname'] = 'الموضوع';

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['messages:addinstance'] = 'Добавлять новый блок «Обмен сообщениями»';
-$string['messages:myaddinstance'] = 'Добавлять новый блок «Сообщения» на страницу «Моя домашняя страница»';
+$string['messages:myaddinstance'] = 'Добавлять новый блок «Сообщения» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Обмен сообщениями';

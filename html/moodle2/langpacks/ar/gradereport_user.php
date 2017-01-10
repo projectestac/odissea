@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'تم استعراض تقريردرجات المُستخدم';
 $string['pluginname'] = 'تقرير المستخدم';
-$string['user:view'] = 'عاين تقرير درجاتك';
+$string['tablesummary'] = 'يتم ترتيب الجدول كقائمة من عناصرأو بنود الدرجات بما في ذلك التصنيفات لتلك البنود. إذا كان أي من البنود تنتمي إلى تصنيف سيتم الإشارة لذلك.';
+$string['user:view'] = 'استعرض تقرير درجاتك';

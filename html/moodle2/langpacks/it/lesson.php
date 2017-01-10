@@ -111,6 +111,7 @@ $string['completiontimespent'] = 'Lo studente deve stare nell\'attività per alm
 $string['completiontimespentgroup'] = 'Tempo minimo';
 $string['conditionsfordependency'] = 'Condizione(i) di dipendenza';
 $string['configactionaftercorrectanswer'] = 'L\'azione da eseguire per default dopo una risposta corretta';
+$string['configintro'] = 'I valori impostati in questa pagina determinano i valori di default che saranno utilizzati quando si crea un\'attiivtà lezione. Le impostazioni indicate cone avanzate saranno visualizzate quand si fa click su "Visualizza più elementi\'.';
 $string['configmaxanswers'] = 'Default per il numero max. di risposte per pagina';
 $string['configmaxhighscores'] = 'Numero di voti migliori da visualizzare';
 $string['configmediaclose'] = 'Visualizza il pulsante chudi nella finestra finestra popup contenente un collegamento a file multimediale';

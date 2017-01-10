@@ -29,6 +29,6 @@ $string['error_authmnetneeded'] = 'Чтобы видеть список серв
 $string['error_localusersonly'] = 'Пользователи других сайтов не могут переходить с этого сервера на другие серверы сети MNet';
 $string['error_roamcapabilityneeded'] = 'Пользователям необходимо иметь право «Подключаться к внешнему приложению через MNet» (moodle/site:mnetlogintoremote), чтобы видеть список серверов сети MNet';
 $string['mnet_hosts:addinstance'] = 'Добавлять новый блок «Сайты сети MNet»';
-$string['mnet_hosts:myaddinstance'] = 'Добавлять новый блок «Сайты сети MNet» на страницу «Моя домашняя страница»';
+$string['mnet_hosts:myaddinstance'] = 'Добавлять новый блок «Сайты сети MNet» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Сайты сети MNet';
 $string['server'] = 'Сайт';

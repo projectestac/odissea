@@ -32,7 +32,7 @@ $string['aggregatemin'] = 'Évaluation minimale';
 $string['aggregatenone'] = 'Pas d\'évaluation';
 $string['aggregatesum'] = 'Somme des évaluations';
 $string['aggregatetype'] = 'Type de combinaison';
-$string['aggregatetype_help'] = 'Le type de combinaison définit comment les évaluations sont combinées pour former la note finale dans le carnet de note.
+$string['aggregatetype_help'] = 'Le type de combinaison définit comment les évaluations sont combinées pour former la note finale dans le carnet de notes.
 
 * Moyenne des évaluations : la moyenne de toutes les évaluations
 * Nombre d\'évaluations : le nombre des éléments évalués est la note finale. Ce total ne peut pas dépasser la note maximale fixée pour l\'activité

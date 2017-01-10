@@ -102,7 +102,7 @@ $string['newsetwildcardvalues'] = 'ワイルドカード値の新しいセット
 $string['nextitemtoadd'] = '次のアイテムの追加方法';
 $string['nextpage'] = '次のページ';
 $string['nocoherencequestionsdatyasetcategory'] = '問題ID {$a->qid} に関して、カテゴリID {$a->qcat} が共有ワイルドカード {$a->name} のカテゴリID {$a->sharedcat} に一致しません。問題を編集してください。';
-$string['nocommaallowed'] = '「,」は使用できません。例えば、0.013または1.3e-2のように「.」を使用してください。';
+$string['nocommaallowed'] = '「,」は使用できません。例えば0.013または1.3e-2のように「.」を使用してください。';
 $string['nodataset'] = 'なし - これはワイルドカードではありません';
 $string['nosharedwildcard'] = 'このカテゴリに共有ワイルドカードはありません。';
 $string['notvalidnumber'] = 'ワイルドカード値が有効な数値ではありありません。';
@@ -112,7 +112,7 @@ $string['partiallycorrectfeedback'] = '部分的に正しい解答すべて';
 $string['pluginname'] = '計算問題';
 $string['pluginnameadding'] = '計算問題の追加';
 $string['pluginnameediting'] = '計算問題の編集';
-$string['pluginname_help'] = '計算問題では小テスト受験時に個々の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば、「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして、正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
+$string['pluginname_help'] = '計算問題では小テスト受験時に個々の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして、正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
 $string['pluginnamesummary'] = '計算問題は、数値問題に似ていますが、小テスト受験時、設定された数値がランダムに使用されます。';
 $string['possiblehdr'] = '問題テキスト内のみのワイルドカード';
 $string['questiondatasets'] = '問題データセット';

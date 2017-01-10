@@ -84,6 +84,7 @@ $string['negcovar_help'] = 'Het cijfer voor deze vraag van deze set testpogingen
 Onze vergelijking voor effectieve vraagweging kan in dit geval niet berekend worden. De berekeningen voor effectieve vraagweging voor andere vragen in deze test zijn de effectieve vraagwegingen voor deze vragen als de gemarkeerde vragen met een negatieve covariantie een maximumcijfer 0 gegeven worden.
 
 Als je een test bewerkt en de vragen met een negatieve covariantie een maximumcijfer 0 geeft, dat zal de weging van deze vraag 0 zijn en zal de echte weging van deze vraag 0 zijn en zullen de echte effectieve wegingen van de andere vragen berekend worden.';
+$string['nogradedattempts'] = 'Er zijn nog geen pogingen gemaakt voor deze test, of alle pogingen hebben vragen die manueel beoordeeld moeten worden.';
 $string['nostudentsingroup'] = 'Er zijn nog geen leerlingen in deze groep';
 $string['optiongrade'] = 'Gedeeltelijk krediet';
 $string['partofquestion'] = 'Deel van vraag';

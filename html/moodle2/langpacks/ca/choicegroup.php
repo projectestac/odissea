@@ -32,10 +32,10 @@ $string['add_groupings'] = 'Afegeix agrupaments';
 $string['add_groups'] = 'Afegeix grups';
 $string['addmorechoices'] = 'Afegeix més opcions';
 $string['afterresultsviewable'] = 'Els resultats seran visibles un cop hàgiu fet la vostra elecció.';
-$string['allowupdate'] = 'Permet modificar l\'elecció.';
+$string['allowupdate'] = 'Permet modificar l\'elecció';
 $string['and'] = 'i';
 $string['answered'] = 'Respost';
-$string['applytoallgroups'] = 'Aplic a tots els grups';
+$string['applytoallgroups'] = 'Aplica a tots els grups';
 $string['available_groups'] = 'Grups disponibles';
 $string['byparticipants'] = 'per {$a} participants';
 $string['char_bullet_collapsed'] = '►';
@@ -88,15 +88,14 @@ $string['groupsheader'] = 'Grups';
 $string['havetologin'] = 'Us heu d\'autenticar per poder trametre la vostra elecció.';
 $string['hidedescription'] = 'Amaga les descripcions';
 $string['limit'] = 'Límit';
-$string['limitanswers'] = 'Límit de respostes permeses';
-$string['limitanswers_help'] = 'Aquesta opció us permet limitar el nombre de participants que poden seleccionar cada opció.
-Quan s\'hagi arribat al límit ningú podrà triar aquesta opció.
+$string['limitanswers'] = 'Limita el nombre de respostes permeses';
+$string['limitanswers_help'] = 'Aquest paràmetre us permet limitar el nombre de participants que poden seleccionar cada opció concreta. Quan s\'arriba al límit, ningú més no pot seleccionar aquesta opció.
 
-Si el límit està deshabilitat, qualsevol nombre de participants poden triar cadascuna de les opcions.';
+Si els límits estan inhabilitats, qualsevol nombre de participants pot seleccionar qualsevol de les opcions.';
 $string['members/'] = 'Ocupació';
 $string['members/max'] = 'Ocupació / Capacitat';
 $string['modulename'] = 'Elecció de grup';
-$string['modulename_help'] = 'El mòdul Tria grup permet als estudiants afegir-se ells mateixos en un grup d\'un curs. El professor pot escollir quins grups podran escollir els estudiants i el màxim de membres en cada grup';
+$string['modulename_help'] = 'El mòdul Tria grup permet als estudiants afegir-se ells mateixos a un grup d\'un curs. El professor pot escollir quins grups podran escollir els estudiants i el màxim de membres en cada grup';
 $string['modulenameplural'] = 'Elecció de grups';
 $string['moveselectedusersto'] = 'Mou els usuaris seleccionats a...';
 $string['multipleenrollmentspossible'] = 'Permet la inscripció a diferents grups';
@@ -132,7 +131,7 @@ $string['savemychoicegroup'] = 'Desa la meva elecció';
 $string['selected_groups'] = 'Grups seleccionats';
 $string['set_limit_for_group'] = 'Limitació per';
 $string['showdescription'] = 'Mostra les descripcions';
-$string['showunanswered'] = 'Mostra una columna pels que no tenen resposta';
+$string['showunanswered'] = 'Mostra una columna de no contestades';
 $string['skipresultgraph'] = 'Omet la gràfica de resultats';
 $string['sortgroupsby'] = 'Ordena els grups per';
 $string['spaceleft'] = 'espai disponible';

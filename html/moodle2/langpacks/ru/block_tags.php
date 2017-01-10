@@ -80,6 +80,6 @@ $string['taggeditemscontext'] = 'Контекст элементов с тега
 $string['taggeditemscontext_help'] = 'Вы можете ограничить облако тегов тегами, представленными в текущей категории курсов, курсе или модуле.';
 $string['tags'] = 'теги';
 $string['tags:addinstance'] = 'Добавлять новый блок «Теги»';
-$string['tags:myaddinstance'] = 'Добавлять новый блок «Теги» на страницу «Моя домашняя страница»';
+$string['tags:myaddinstance'] = 'Добавлять новый блок «Теги» на страницу «Личный кабинет»';
 $string['tagthisunit'] = 'Тег этого курса:';
 $string['tagunits'] = 'к тегам своих любимых курсов';

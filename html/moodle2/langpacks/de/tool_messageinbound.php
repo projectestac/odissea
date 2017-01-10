@@ -39,14 +39,14 @@ $string['enabled'] = 'Aktiviert';
 $string['fixedenabled_help'] = 'Sie können den Status dieses Prozesses nicht ändern. Ursache kann sein, dass er an anderer Stelle verwandt wird.';
 $string['fixedvalidateaddress'] = 'Absenderadresse prüfen';
 $string['fixedvalidateaddress_help'] = 'Sie können die Adressprüfung für diesen Prozess nicht ändern. Dies kann daher kommen, weil eine spezifische Einstellung erforderlich ist.';
-$string['handlerdisabled'] = 'Der E-Mail-Prozess, den Sie aufgerufen haben, wurde deaktiviert. Ihre Nachricht konnte daher nicht verarbeitet werden.';
-$string['incomingmailconfiguration'] = 'Einstellungen für eingehende E-Mails';
+$string['handlerdisabled'] = 'Der E-Mail-Prozess, den Sie aufgerufen haben, wurde deaktiviert. Ihre Mitteilung konnte daher nicht verarbeitet werden.';
+$string['incomingmailconfiguration'] = 'Eingehende E-Mails';
 $string['incomingmailserversettings'] = 'Einstellungen für den eingehenden E-Mail-Server';
 $string['incomingmailserversettings_desc'] = 'Moodle ist in der Lage entsprechend konfigurierte IMAP-Server aufzurufen. Hier können Sie die dafür erforderlichen Einstellungen vornehmen.';
-$string['invalidrecipientdescription'] = 'Die Nachricht "{$a->subject}" konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt wurde.Damit Ihre Nachricht authentifiziert werden kann, müssen Sie auf diese Nachricht antworten.';
-$string['invalidrecipientdescriptionhtml'] = 'Die Nachricht "{$a->subject}" konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt wurde.Damit Ihre Nachricht authentifiziert werden kann, müssen Sie auf diese Nachricht antworten.';
-$string['invalidrecipientfinal'] = 'Die Nachricht "{$a->subject}" konnte nicht authentifiziert werden. Bitte stellen Sie sicher, dass die E-Mail von dem gleichen Nutzerkonto versandt wird, die auch in Ihrem Moodle-Profil hinterlegt ist.';
-$string['invalid_recipient_handler'] = 'Wenn eine Nachricht empfangen wurde, der Sender aber nicht identifiziert werden kann, verbleibt die Nachricht auf dem E-Mail-Server. Der Nutzer wird anhand  der  E-Mail-Adresse im Nutzerprofil benachrichtigt. Er wird damit aufgefordert, die Authentizität der E-Mail zu bestätigen.
+$string['invalidrecipientdescription'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt. Um Ihre Mitteilung authentifizieren zu können, müssen Sie auf diese Mitteilung antworten.';
+$string['invalidrecipientdescriptionhtml'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt. Um Ihre Mitteilung authentifizieren zu können, müssen Sie auf diese Mitteilung antworten.';
+$string['invalidrecipientfinal'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt.';
+$string['invalid_recipient_handler'] = 'Wenn eine Mitteilung empfangen wird, der Sender aber nicht identifiziert werden kann, verbleibt die Mitteilung auf dem E-Mail-Server. Der Nutzer wird anhand der E-Mail-Adresse im Nutzerprofil benachrichtigt. Er wird damit aufgefordert, die Authentizität der E-Mail zu bestätigen.
 
 Diese Funktion verarbeitet solche Antworten.
 
@@ -59,9 +59,9 @@ $string['mailsettings'] = 'E-Mail-Einstellungen';
 $string['message_handlers'] = 'Mitteilungsverwaltung';
 $string['messageinbound'] = 'Eintreffende Mitteilungen';
 $string['messageinboundenabled'] = 'Mailverfahren für eintreffende Mitteilungen';
-$string['messageinboundenabled_desc'] = 'Die Mailverwaltung für eintreffende Mitteilungen muss aktiviert werden, damit entsprechende Kennzeichnungen beim Versand der vorausgehenden Nachrichten erstellt werden können.';
+$string['messageinboundenabled_desc'] = 'Die Mailverwaltung für eintreffende Mitteilungen muss aktiviert werden, damit entsprechende Kennzeichnungen beim Versand der vorausgehenden Mitteilungen erstellt werden können.';
 $string['messageinboundgeneralconfiguration'] = 'Allgemeine Konfiguration';
-$string['messageinboundgeneralconfiguration_desc'] = 'Moodle kann eingehende E-Mail-Nachrichten verarbeiten. Dadurch können Antowrten auf Forenbeiträge per E-Mail vorgenommen werden oder Dateien in die persönliche Dateiablage eines Nutzers geschickt werden.';
+$string['messageinboundgeneralconfiguration_desc'] = 'Moodle kann eingehende E-Mail-Mitteilungen verarbeiten. So können Antworten auf Forumsbeiträge per E-Mail vorgenommen werden oder Dateien in die persönliche Dateiablage eines Nutzers geschickt werden.';
 $string['messageinboundhost'] = 'Eingehender E-Mail-Server';
 $string['messageinboundhostpass'] = 'Kennwort';
 $string['messageinboundhostpass_desc'] = 'Dieses Passwort haben Sie für den Login zu dem E-Mail-Postfach hinterlegt.';
@@ -70,7 +70,7 @@ $string['messageinboundhostssl_desc'] = 'Einige E-Mail-Server unterstützen die 
 $string['messageinboundhosttype'] = 'Servertyp';
 $string['messageinboundhostuser'] = 'Nutzername';
 $string['messageinboundhostuser_desc'] = 'Diesen Nutzernamen haben Sie für den Login zu dem E-Mail-Postfach hinterlegt.';
-$string['messageinboundmailboxconfiguration_desc'] = 'Wenn Nachrichten versandt werden, nutzen Sie das Format address+data@example.com. Um zuverlässige E-Mail-Adressen zu erzeugen legen Sie die Adressen, die Sie vor und nach dem @-Zeichen verwenden, getrennt an.  Der Mailboxname in dem Beispiel oben wäre \'address\' und die E-Mail-Domain lautet \'example.com\'. Verwenden Sie für diesen Zweck eine gesonderte E-Mail-Adresse.';
+$string['messageinboundmailboxconfiguration_desc'] = 'Wenn Mitteilungen versandt werden, nutzen Sie das Format address+data@example.com. Um zuverlässige E-Mail-Adressen zu erzeugen legen Sie die Adressen, die Sie vor und nach dem @-Zeichen verwenden, getrennt an.  Der Mailboxname in dem Beispiel oben wäre \'address\' und die E-Mail-Domain lautet \'example.com\'. Verwenden Sie für diesen Zweck eine gesonderte E-Mail-Adresse.';
 $string['messageprocessingerror'] = 'Sie haben vor kurzem Eine E-Mail mit dem Betreff  "{$a->subject}" versandt. Diese konnte nicht zugestellt werden.
 
 Die Gründe hierfür stehen hier unten.
@@ -86,9 +86,9 @@ $string['messageprocessingsuccess'] = '{$a->plain}
 Wenn Sie künftig diese Benachrichtigungen nicht erhalten wollen, können Sie die Einstellungen für persönliche Benachrichtigungen anpassen. Öffnen Sie den folgenden Link {$a->messagepreferencesurl} in Ihrem Browser.';
 $string['messageprocessingsuccesshtml'] = '{$a->html}
 <p>Wenn Sie künftig diese Benachrichtigungen nicht erhalten wollen, können Sie die Einstellungen für persönliche Benachrichtigungen anpassen. Öffnen Sie diesen  <a href="{$a->messagepreferencesurl}">Link </a> in Ihrem Browser</p>';
-$string['messageprovider:invalidrecipienthandler'] = 'Benachrichtigung zur Bestätigung, dass eine eingehende Nachricht von Ihnen stammt';
-$string['messageprovider:messageprocessingerror'] = 'Warnung wenn eine eingehende Nachricht nicht verarbeitet werden konnte';
-$string['messageprovider:messageprocessingsuccess'] = 'Bestätigung, dass eine eingehende Nachricht erfolgreich verarbeitet wurde';
+$string['messageprovider:invalidrecipienthandler'] = 'Einholen einer Bestätigung, dass eine eingehende Mitteilung von Ihnen stammt';
+$string['messageprovider:messageprocessingerror'] = 'Warnung, wenn eine eingehende Mitteilung nicht verarbeitet werden konnte';
+$string['messageprovider:messageprocessingsuccess'] = 'Bestätigung, dass eine eingehende Mitteilung erfolgreich verarbeitet wurde';
 $string['name'] = 'Name';
 $string['noencryption'] = 'Aus - keine Verschlüsselung';
 $string['noexpiry'] = 'Kein Ablauf';

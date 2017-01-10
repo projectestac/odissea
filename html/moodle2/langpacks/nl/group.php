@@ -112,11 +112,11 @@ $string['groupmodeforce'] = 'Forceer groepsmodus';
 $string['groupmodeforce_help'] = 'Als de groepsmodus geforceerd wordt, dan zal de groepsmodus van de cursus op elke activiteit toegepast worden. De instellingen van de groepsmodus in de activiteitenmodules wordt dan genegeerd.';
 $string['groupmode_help'] = 'Er zijn drie types van groepsmodus:
 
-*Geen groepen - er zijn geen subgroepen, iedereen is onderdeel van één grote groep<
+*Geen groepen - er zijn geen indelingen in groepen, iedereen is onderdeel van één grote groep
 * Gescheiden groepen - elke groep kan alleen zijn eigen groepsleden zien, alle anderen zijn onzichtbaar
 * Zichtbare groepen - elke leerling werkt binnen zijn eigen groep, maar kan de andere groepen ook zien
 
-De groepsmodus, ingesteld op cursusniveau is de standaard modus voor alle activiteiten in de cursus. Elke activiteit die groepen ondersteunt kan ook zijn eigen groepsmodus ingesteld hebben. Hoewel, als de groepsmodus op cursusniveau geforceerd wordt, dan wordt de instelling op niveau van de activieteit genegeerd.';
+De groepsmodus, ingesteld op cursusniveau is de standaardmodus voor alle activiteiten in de cursus. Elke activiteit die groepen ondersteunt kan ook zijn eigen groepsmodus ingesteld hebben. Hoewel, als de groepsmodus op cursusniveau geforceerd wordt, dan wordt de instelling op niveau van de activiteit genegeerd.';
 $string['groupmy'] = 'Mijn groep';
 $string['groupname'] = 'Groepsnaam';
 $string['groupnameexists'] = 'De groepnaam \'{$a}\' bestaat al in deze cursus. Kies een andere.';

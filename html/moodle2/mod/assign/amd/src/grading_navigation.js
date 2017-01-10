@@ -218,14 +218,7 @@ define(['jquery', 'core/notification', 'core/str', 'core/form-autocomplete',
             if (show) {
                 this._filteredUsers[this._filteredUsers.length] = user;
                 if (userid == user.id) {
-                    //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-                    //2016.10.07 @sarjona
                     foundIndex = (this._filteredUsers.length - 1);
-                    //************ ORIGINAL
-                    /*
-                    foundIndex = index;
-                     */
-                    //************ FI
                 }
             }
         }.bind(this));

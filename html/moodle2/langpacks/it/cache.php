@@ -59,6 +59,7 @@ $string['cachedef_questiondata'] = 'Definizioni domanda';
 $string['cachedef_repositories'] = 'Dati delle istanze dei repository';
 $string['cachedef_string'] = 'Cache stringhe della lingua';
 $string['cachedef_suspended_userids'] = 'Elenco degli utenti sospesi nei corsi';
+$string['cachedef_tagindexbuilder'] = 'Risultati della ricerca per elementi con tag';
 $string['cachedef_tags'] = 'Aree e raccolte di tag';
 $string['cachedef_temp_tables'] = 'Cache delle tabelle temporanee';
 $string['cachedef_userselections'] = 'Dati utilizzati per rendere persistenti le selezioni dell\'utente in Moodle';

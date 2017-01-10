@@ -29,6 +29,6 @@ $string['description'] = 'Permitir apenas os alunos que pertencem a um grupo den
 $string['error_selectgrouping'] = 'Tem de selecionar um agrupamento.';
 $string['missing'] = '(Agrupamento em falta)';
 $string['pluginname'] = 'Restrição por agrupamento';
-$string['requires_grouping'] = 'Você pertence a um grupo em <strong>{$a}</strong>';
+$string['requires_grouping'] = 'Pertencer a um grupo em <strong>{$a}</strong>';
 $string['requires_notgrouping'] = 'Você não pertence a um grupo em <strong>{$a}</strong>';
 $string['title'] = 'Agrupamento';

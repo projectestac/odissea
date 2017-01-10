@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Добавлять новый блок «Предстоящие события»';
-$string['calendar_upcoming:myaddinstance'] = 'Добавлять новый блок «Предстоящие события» на страницу «Моя домашняя страница»';
+$string['calendar_upcoming:myaddinstance'] = 'Добавлять новый блок «Предстоящие события» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Предстоящие события';

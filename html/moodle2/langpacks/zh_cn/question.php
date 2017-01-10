@@ -77,7 +77,7 @@ $string['categorycurrent'] = '当前类别';
 $string['categorycurrentuse'] = '使用该类别';
 $string['categorydoesnotexist'] = '该类别不存在';
 $string['categoryinfo'] = '类别信息';
-$string['categorymove'] = '类别“{$a->name}”中有 {$a->count} 个试题(有些试题可能比较旧、被隐藏，正被存在的测验使用)。<br />请选择另一个类别以转移它们。';
+$string['categorymove'] = '类别“{$a->name}”中有 {$a->count} 个试题(有些可能是仍然在测验中使用的隐藏的问题或随机问题)。<br />请选择另一个类别以转移它们。';
 $string['categorymoveto'] = '保存在类别中';
 $string['categorynamecantbeblank'] = '类别名不能为空。';
 $string['changeoptions'] = '修改选项';
@@ -218,7 +218,7 @@ $string['importquestions'] = '从文件导入题目';
 $string['importquestions_help'] = '此功能可以从文本文件导入不同格式的题目。但请注意，文件必须是UTF-8编码。';
 $string['importwrongfiletype'] = '您选定的文件类型（{$a->actualtype}）与此次导入使用的格式（{$a->expectedtype}）不匹配。';
 $string['impossiblechar'] = '寻找括号字符时遇到不应该出现的字符 {$a}';
-$string['includesubcategories'] = '显示子类别的题目';
+$string['includesubcategories'] = '同时显示子类别的题目';
 $string['incorrect'] = '不正确';
 $string['incorrectfeedback'] = '给任意错误答案';
 $string['incorrectfeedbackdefault'] = '你的回答不正确';
@@ -313,7 +313,7 @@ $string['penaltyfactor_help'] = '此设置决定每次错误的解答将从最�
 
 罚分因子应该是0到1之间的数字。罚分因子设为1意味着学生必须一次解答正确才能得到分数。罚分因子设为0表示学生可以尝试任意次，仍有机会得到满分。';
 $string['penaltyforeachincorrecttry'] = '每次回答错误的罚分';
-$string['penaltyforeachincorrecttry_help'] = '当您想让学生可以通过多次答题而获知正确答案，于是使用“交互式多次尝试”或“自适应模式”做为题目的行为时，那么此选项控制错误答题罚分多少。
+$string['penaltyforeachincorrecttry_help'] = '当您想让学生可以通过多次答题而获知正确答案，于是使用“交互式多次尝试”或“自适应模式”作为题目的行为时，那么此选项控制错误答题罚分多少。
 
 罚分只占题目总分的一定比例。因此，如果题目是3分，罚分是0.3333333，那么当学生第一次就答对时能获得3分，第二次才答对能获得2分，第三次才答对就只能得到1分。';
 $string['permissionedit'] = '编辑题目';
@@ -365,7 +365,7 @@ $string['selectacategory'] = '选择一个类别：';
 $string['selectaqtypefordescription'] = '选择一个题目类型来查看详细描述。';
 $string['selectcategoryabove'] = '在上面选一个类别';
 $string['selectquestionsforbulk'] = '选择批量操作的题目';
-$string['settingsformultipletries'] = '多次尝试设置';
+$string['settingsformultipletries'] = '多次尝试';
 $string['shareincontext'] = '共享在场景中 for {$a}';
 $string['showhidden'] = '显示旧题目';
 $string['showmarkandmax'] = '显示得分和满分';

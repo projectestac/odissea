@@ -127,7 +127,7 @@ $string['boverview'] = 'Overzicht';
 $string['bydate'] = 'voltooien door';
 $string['clearsettings'] = 'Instellingen wissen';
 $string['completioninfo'] = 'Deze badge was uitgegeven voor het voltooien van:';
-$string['completionnotenabled'] = 'Cursus voltooien is niet ingeschakeld voor deze cursus, dus dat kan niet als badge criterium dienen. Je kunt curus voltooien inschakelen in de curusinstellingen.';
+$string['completionnotenabled'] = 'Cursus voltooien is niet ingeschakeld voor deze cursus, dus dat kan niet als badge criterium dienen. Je kunt cursus voltooien inschakelen in de cursusinstellingen.';
 $string['configenablebadges'] = 'Wanneer ingeschakeld kun je met deze functie badges maken en die uitdelen aan je site-gebruikers.';
 $string['configuremessage'] = 'Badge bericht';
 $string['connect'] = 'Verbind';
@@ -283,10 +283,10 @@ $string['makeprivate'] = 'Maak privé';
 $string['makepublic'] = 'Maak openbaar';
 $string['managebadges'] = 'Beheer badges';
 $string['message'] = 'Berichtinhoud';
-$string['messagebody'] = '<p>Je hebt een badge "%badgename%" verdient!</p>
+$string['messagebody'] = '<p>Je hebt een badge "%badgename%" verdiend!</p>
 <p>Meer informatie over deze badge kun je vinden op %badgelink% de badge informatiepagina.</p>
 <p>Je kunt de badge beheren en downloaden vanaf de pagina {$a}.</p>';
-$string['messagesubject'] = 'Proficiat! Je hebt een badge verdient!';
+$string['messagesubject'] = 'Proficiat! Je hebt een badge verdiend!';
 $string['method'] = 'Dit criterium is behaald als...';
 $string['mingrade'] = 'Minimum vereist cijfer';
 $string['month'] = 'Maand(en)';
@@ -329,9 +329,9 @@ $string['numawards'] = 'Deze badge is uitgereikt aan <a href="{$a->link}">{$a->c
 $string['numawardstat'] = 'Deze badge is uitgereikt aan {$a} gebruiker(s)';
 $string['overallcrit'] = 'van de geselecteerde criteria zijn voltooid.';
 $string['personaconnection'] = 'Meldt je aan met je e-mailadres';
-$string['personaconnection_help'] = 'Persona is een systeem waarmee je je kunt identificeren op het internet, waarbij je gebruikt maakt van je eigen e-mailadres.  Open Badges backpack gebruikt Persona als aanmeldingssysteem. Om daarmee te kunnen verbinden, heb je dus een Persona-account nodig.
+$string['personaconnection_help'] = 'Persona is een systeem waarmee je je kunt identificeren op het internet, waarbij je gebruikt maakt van je eigen e-mailadres. Open Badges backpack gebruikt Persona als aanmeldingssysteem. Om daarmee te kunnen verbinden, heb je dus een Persona-account nodig.
 
-Voor meer informatie over Persona, bezoek <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
+Voor meer info over Persona, bezoek <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Mogelijke badge-ontvangers';
 $string['preferences'] = 'Badge voorkeuren';
 $string['recipientdetails'] = 'Details ontvanger';

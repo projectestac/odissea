@@ -29,14 +29,14 @@ $string['accept'] = 'Aanvaard';
 $string['accepted'] = 'Aanvaard';
 $string['accept_grades'] = 'Aanvaard cijfers van de tool';
 $string['accept_grades_admin'] = 'Aanvaard cijfers van de tool';
-$string['accept_grades_admin_help'] = 'Specifieer of de tool provider cijfers die geassocieerd zijn met exemplaren van deze tool mag toevoegen, updaten, lezen, en verwijderen.
+$string['accept_grades_admin_help'] = 'Specifieer of de tool provider cijfers die geassocieerd zijn met deze tool mag toevoegen, updaten, lezen, en verwijderen.
 
 Sommige tool providers ondersteunen de mogelijkheid om cijfers terug te rapporteren aan Moodle op basis van acties ondernomen binnen de tool, waardoor een meer integrale ervaring wordt gecreëerd.';
 $string['accept_grades_help'] = 'Specifieer of de tool provider cijfers die geassocieerd zijn met enkel deze externe instantie van de tool mag toevoegen, updaten, lezen, en verwijderen.
 
 Sommige tool providers ondersteunen de mogelijkheid om cijfers terug te rapporteren aan Moodle op basis van acties ondernomen binnen de tool, waardoor een meer integrale ervaring wordt gecreëerd.
 
-Merk op dat deze instelling overschreven kan worden in de tool-configuratie.';
+Merk op dat deze instellingen overschreven kunnen worden door de configuratie van de tool.';
 $string['action'] = 'Actie';
 $string['activate'] = 'Activeer';
 $string['activatetoadddescription'] = 'Je moet deze tool activeren voor je een beschrijving kan toevoegen.';
@@ -108,7 +108,7 @@ $string['default_launch_container_help'] = 'De lanceringscontainer beïnvloedt d
 $string['delegate'] = 'Delegeer aan leraar';
 $string['delete'] = 'Verwijder';
 $string['delete_confirmation'] = 'Ben je zeker dat je deze voorgeconfigureerde tool wil verwijderen?';
-$string['deletetype'] = 'Verwijder voorgeconfigureerde tool';
+$string['deletetype'] = 'Verwijder de voorgeconfigureeerde tool';
 $string['display_description'] = 'Toon de activiteitsbeschrijving bij lancering';
 $string['display_description_help'] = 'Indien geselecteerd, dan zal de activiteitsbeschrijving (hierboven vermeld) getoond worden boven de hoofdinhoud van de tool provider.
 
@@ -127,7 +127,7 @@ $string['donotaccept'] = 'Aanvaard dit niet';
 $string['donotallow'] = 'Sta dit niet toe';
 $string['duplicateregurl'] = 'De registratie-URL is al in gebruik';
 $string['editdescription'] = 'Klik hier om deze tool een beschijving te geven';
-$string['edittype'] = 'Bewerk voorgeconfigureerde tool';
+$string['edittype'] = 'Bewerk de voorgeconfigureerde tool';
 $string['embed'] = 'Embed';
 $string['embed_no_blocks'] = 'Embed, zonder blokken';
 $string['enableemailnotification'] = 'Verstuur e-mails met meldingen';
@@ -155,7 +155,7 @@ Er zijn drie icoontjes beschikbaar in de externe tool type dropdown lijst:
 * **Verwijderen** - Verwijder het geselecteerde tool type op cursus niveau.';
 $string['external_tool_types'] = 'Voorgeconfigureerde tools';
 $string['failedtoconnect'] = 'Moodle was niet in staat om te communiceren met het "{$a}" systeem';
-$string['failedtocreatetooltype'] = 'Nieuwe tool maken mislukt. Controleer de url en probeer opnieuw.';
+$string['failedtocreatetooltype'] = 'Nieuwe tool maken mislukt. Controleer de URL en probeer opnieuw.';
 $string['failedtodeletetoolproxy'] = 'Toolregistratie verwijderen mislukt. Bezoek de "Beheer externe toolregistraties" en verwijder het manueel.';
 $string['filter_basiclti_configlink'] = 'Configureer je favoriete sites en hun wachtwoorden';
 $string['filter_basiclti_password'] = 'Wachtwoord is verplicht';
@@ -218,15 +218,15 @@ $string['lti_tool_request_existing'] = 'Een tool configuratie voor het tool dome
 $string['ltiunknownserviceapicall'] = 'LTI onbekende service API call';
 $string['lti:view'] = 'Start externe tool-activiteiten';
 $string['main_admin'] = 'Algemene hulp';
-$string['main_admin_help'] = 'Externe tools laten Moodle gebruikers toe om probleemloos om te gaan met leermiddelen die gehost worden op afstand.  Via een speciaal lanceringsprotocol zal de externe tool toegang hebben tot bepaalde algemene informatie over de gebruiker die de tool lanceert. Bijvoorbeeld de naam van de instelling, cursus ID, gebruikers ID, en andere informatie zoals de naam of het e-mailadres van de gebruiker.
+$string['main_admin_help'] = 'Externe tools laten Moodle gebruikers toe om naadloos te integreren  met leermiddelen die gehost worden op externe machines.  Via een speciaal lanceringsprotocol zal de externe tool toegang hebben tot bepaalde algemene informatie over de gebruiker die de tool lanceert. Bijvoorbeeld de naam van de instelling, cursus ID, gebruikers ID, en andere informatie zoals de naam of het e-mailadres van de gebruiker.
 
 De tool types op deze pagina worden in drie categorieën onderverdeeld:
 
 * **Actief** - Deze tool providers werden goedgekeurd en ingesteld door de beheerder. Ze kunnen gebruikt worden vanuit elke cursus in deze Moodle instantie.
-Indien een consumentensleutel en gedeeld geheim worden ingevoerd, ontstaat er een vertrouwensrelatie tussen deze Moodle instantie en de externe tool, en wordt er een veilig communicatiekanaal voorzien.
+Indien een verbruikersssleutel en gedeeld geheim worden ingevoerd, ontstaat er een vertrouwensrelatie tussen deze Moodle instantie en de externe tool, en wordt er een veilig communicatiekanaal voorzien.
 * **In behandeling** - Deze tool providers werden aangebracht via een package invoer, maar werden nog niet geconfigureerd door de beheerder.
-Leraars kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een consumentensleuten en gedeeld geheim, of indien deze niet worden vereist.
-* **Afgekeurd** - Deze zijn gevlagd als tool providers die de beheerder niet wenst beschikbaar te maken voor de volledige Moodle instantie. Leraars kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een consumentensleuten en gedeeld geheim, of indien deze niet worden vereist.';
+Leraren kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een verbruikerssleutel en gedeeld geheim, of indien deze niet worden vereist.
+* **Afgekeurd** - Deze zijn gevlagd als tool providers die de beheerder niet wenst beschikbaar te maken voor de volledige Moodle instantie. Leraren kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een verbruikerssleutel en gedeeld geheim, of indien deze niet worden vereist.';
 $string['manage_external_tools'] = 'Beheer tools';
 $string['manage_tool_proxies'] = 'Beheer externet tool registraties';
 $string['manage_tools'] = 'Beheer voorgeconfigureerde tools';
@@ -292,7 +292,7 @@ Het gedeeld geheim kan beschouwd worden als een paswoord dat de toegang tot de t
 
 Voor tools die geen beveiligde communicatie met Moodle vereisen en die geen bijkomende diensten verstrekken (zoals rapportering van cijfers) heb je vermoedelijk geen gedeeld geheim nodig.';
 $string['pending'] = 'In behandeling';
-$string['pluginadministration'] = 'Externe toolbeheer';
+$string['pluginadministration'] = 'Externe tool-beheer';
 $string['pluginname'] = 'Externe tool';
 $string['preferheight'] = 'Voorkeurhoogte';
 $string['preferwidget'] = 'Verkies lancering van widget';
@@ -304,7 +304,7 @@ $string['quickgrade_help'] = 'Indien ingeschakeld kunnen meerdere tools beoordee
 $string['redirect'] = 'Je zult binnen enkele seconden doorverwezen worden. Indien niet, klik dan op de knop.';
 $string['register'] = 'Registreer';
 $string['registertype'] = 'Configureer een nieuwe externe tool registratie';
-$string['register_warning'] = 'De registratiepagina lijkt nogal wat tijd te nemen om te openen. Als ze niet verschijnt, controleer dan of je de juiste URL in de configuratie hebt ingegeven. Als Moodle https gebruikt, controleer dan of de tool die je probeert te configureren ook https ondersteunt en of je https in de URL gebruikt.';
+$string['register_warning'] = 'De registratiepagina lijkt nogal wat tijd te nemen om te openen. Als ze niet verschijnt, controleer dan of je de juiste URL in de configuratie hebt ingegeven. Als Moodle https gebruikt, controleer dan of de tool die je gebruikt https ondersteund en dat je https gebruikt in de URL.';
 $string['registrationname'] = 'Tool provider naam';
 $string['registrationname_help'] = 'Geef de naam van de geregistreerde tool provider';
 $string['registration_options'] = 'Registratie-opties';
@@ -349,7 +349,7 @@ $string['share_email_admin_help'] = 'Geef op of het e-mailadres van de gebruiker
 De tool-provider heeft misschien het e-mailadres van de starter nodig om gebruikers met dezelfde naam te onderscheiden of om ze e-mails te sturen, gebaseerd op acties binnnen de tool.';
 $string['share_email_help'] = 'Geef op of het e-mailadres van de gebruiker die de tool start gedeeld zal worden met de tool-provider.
 
-De tool-provider heeft misschien het e-mailadres van de gebruiker nodig om gebruikers met dezelfde naam te onderscheiden of om ze e-mails te sturen, gebaseerd op acties binnen de tool.
+De tool-provider heeft misschien het e-mailadres van de starter nodig om gebruikers met dezelfde naam te onderscheiden of om ze e-mails te sturen, gebaseerd op acties binnen de tool.
 
 Merk op dat deze instelling overschreven kan worden in de tool-configuratie.';
 $string['share_name'] = 'Deel de naam van de starter met de tool';
@@ -360,14 +360,14 @@ $string['share_name_help'] = 'Geef op of de volledig naam van de gebruiker die d
 
 De tool-provider heeft misschien de naam nodig om betekenisvolle informatie te tonen binnen de tool.
 
-Merk op dat deze instelling overschreven kan worden in de tool-configuratie.';
+Merk op dat deze instelling overschreven kan worden in de tool-configuratie';
 $string['share_roster'] = 'Geef de tool toegang tot de deelnemerslijst van de cursus';
 $string['share_roster_admin'] = 'De tool heeft toegang tot de deelnemerslijst van de cursus';
-$string['share_roster_admin_help'] = 'Geef op of de tool de gebruikerslijs kan opvragen van gebruikers die aangemeld zijn in cursussen vanwaar dit tooltype wordt gestart.';
+$string['share_roster_admin_help'] = 'Geef op of de tool de lijst kan opvragen van gebruikers die aangemeld zijn in cursussen vanwaar deze tool wordt gestart.';
 $string['share_roster_help'] = 'Geef op of de tool de gebruikerslijst kan opvragen van gebruikers die aangemeld zijn in deze cursus.
 Merk op dat deze instelling overschreven kan worden in de tool-configuratie.';
-$string['show_in_course_activity_chooser'] = 'Toon in activiteitskiezer als voorgeconfigureerde tool';
-$string['show_in_course_lti1'] = 'Gebruik toolconfiguratie';
+$string['show_in_course_activity_chooser'] = 'Toon in de activiteitskiezer als voorgeconfigureerde tool';
+$string['show_in_course_lti1'] = 'Tool configuratie gebruik';
 $string['show_in_course_lti1_help'] = 'Deze tool kan getoond worden in de activiteitskiezer zodat leraren het kan kiezen om toe te voegen aan een cursus. Als alternatief kan het getoond worden in het rolmenu met voorgeconfigureerde tools wanneer je een externe tool toevoegt aan een cursus. Een andere optie is om de tool-configuratie enkel te gebruiken wanneer de juiste lanceer-URL ingegeven wordt bij het toevoegen van een externe tool aan een cursus.';
 $string['show_in_course_lti2'] = 'Tool configuratiegebruik';
 $string['show_in_course_lti2_help'] = 'Deze tool kan getoond worden in de activiteitenkiezer zodat een leraar die kan kiezen om aan een cursus toe te voegen in een rolmenu voor voorgeconfigureerde tools.';
@@ -398,7 +398,7 @@ Tool-registraties die op deze pagina staan, vallen in vier categorieën
 
 ***Geconfigureerd*** - Deze tool-registraties zijn geconfigureerd, maar het registratieproces is nog niet gestart.
 ***Wachtend*** - Het registratieproces is gestart, maar is nog niet afgerond. Open en bewaar de instellingen om deze terug in de categorie \'Geconfigureerd\' te zetten.
-***Aanvaard*** - Deze tool-registraties zijn aanvaard; de bronnen die in de tool-proxy opgegeven zijn zullen verschijnen op de pagina met voorgeconfigureerde tools met als initiële status \'Wachtend\'.
+***Aanvaard*** - Deze tool-registraties zijn aanvaard; de bronnen die in de tool-proxy opgegeven zijn zullen verschijnen op de pagina\'s  van de voorgeconfigureerde tools met als initiële status \'Wachtend\'.
 ***Verworpen*** - Deze tool-registraties zijn verworpen tijdens het registratieproces. Open en bewaar de instellingen om ze terug naar de categorie \'Geconfigureerd\' te verplaatsen, zodat het registratieproces opnieuw gestart kan worden.';
 $string['toolproxyregistration'] = 'Externe tool registratie';
 $string['toolregistration'] = 'Externe tool registratie';

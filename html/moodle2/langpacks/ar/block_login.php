@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['login:addinstance'] = 'إضافة كتلة تسجيل دخول جديدة';
 $string['pluginname'] = 'دخول';

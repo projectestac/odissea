@@ -43,6 +43,7 @@ $string['deletecomment'] = 'Eliminar comentario';
 $string['deletefeedback'] = 'Borrar retroalimentación del PDF';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Descargar retroalimentación PDF';
+$string['drag'] = 'Arrastrar';
 $string['editpdf'] = 'Anotación PDF';
 $string['editpdf_help'] = 'Editar el PDF enviado por el alumno escribiendo anotaciones, dibujos o sellos directamente desde el navegador obteniendo como resultado otro PDF modificado descargable.';
 $string['enabled'] = 'Anotación PDF';

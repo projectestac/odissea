@@ -29,6 +29,7 @@ $string['eventactivityreportviewed'] = 'S\'ha mostrat l\'informe d\'activitat';
 $string['eventoutlinereportviewed'] = 'S\'ha mostrat l\'informe esquemàtic';
 $string['neverseen'] = 'Mai vist';
 $string['nologreaderenabled'] = 'No hi ha habilitat cap lector de registres';
+$string['numviews'] = '{$a->numviews} de {$a->distinctusers} usuaris';
 $string['outline:view'] = 'Veure informe d\'activitat';
 $string['page-report-outline-index'] = 'Informe esquemàtic del curs';
 $string['page-report-outline-user'] = 'Informe esquemàtic de l\'usuari en el curs';

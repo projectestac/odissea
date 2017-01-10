@@ -44,6 +44,7 @@ $string['deletefeedback'] = 'フィードバックPDFを削除する';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'フィードバックPDFをダウンロードする';
 $string['draftchangessaved'] = 'アノテーション下書きが保存されました。';
+$string['drag'] = 'ドラッグ';
 $string['editpdf'] = 'PDFに注釈をつける';
 $string['editpdf_help'] = 'ブラウザ内で直接学生の提出に注釈を付けて、ダウンロード可能な編集済みPDFを作成します。';
 $string['enabled'] = 'PDFに注釈をつける';

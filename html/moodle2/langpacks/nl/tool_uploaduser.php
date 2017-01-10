@@ -35,6 +35,7 @@ $string['deleteerrors'] = 'Verwijder fouten';
 $string['encoding'] = 'Codering';
 $string['errormnetadd'] = 'Kan externe gebruikers niet toevoegen';
 $string['errors'] = 'Fouten';
+$string['invalidupdatetype'] = 'Je kunt deze optie niet selecteren met het gekozen \'upload-type\'';
 $string['invaliduserdata'] = 'Ongeldige gegevens ontdekt voor gebruiker {$a} en automatisch opgeschoond.';
 $string['nochanges'] = 'Geen wijzigingen';
 $string['pluginname'] = 'Gebruiker upload';

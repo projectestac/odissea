@@ -67,16 +67,16 @@ $string['havetologin'] = 'Abans de trametre una resposta heu d\'entrar amb el vo
 $string['includeinactive'] = 'Inclou respostes dels usuaris inactius/suspesos';
 $string['limit'] = 'Límit';
 $string['limitanswers'] = 'Limita el nombre de respostes permeses';
-$string['limitanswers_help'] = 'Aquest paràmetre us permet limitar el nombre de participants que poden seleccionar cada opció concreta. Quan s\'arriba al límit ningú més no pot seleccionar aquesta opció.
+$string['limitanswers_help'] = 'Aquest paràmetre us permet limitar el nombre de participants que poden seleccionar cada opció concreta. Quan s\'arriba al límit, ningú més no pot seleccionar aquesta opció.
 
 Si els límits estan inhabilitats, qualsevol nombre de participants pot seleccionar qualsevol de les opcions.';
 $string['limitno'] = 'Límit {núm.}';
 $string['modulename'] = 'Consulta';
-$string['modulename_help'] = 'El mòdul de consulta permet al professorat plantejar una pregunta i especificar un conjunt de possibles respostes per triar.
+$string['modulename_help'] = 'El mòdul de consulta permet al professor plantejar una pregunta i especificar un conjunt de possibles respostes per triar.
 
-Els resultats de la consulta poden fer-se públics una vegada l\'estudiant ha respost, després d\'una certa data, o mai. Els resultats poden publicar-se amb els noms dels estudiants o bé anònimament.
+Els resultats de la consulta poden fer-se públics una vegada que l\'estudiant ha respost, després d\'una certa data, o mai. Els resultats poden publicar-se amb els noms dels estudiants o bé anònimament.
 
-L\'activitat de consulta es pot utilitzar per:
+L\'activitat de consulta es pot utilitzar:
 
 * Com a enquesta ràpida per tal d\'estimular la reflexió sobre algun tema
 

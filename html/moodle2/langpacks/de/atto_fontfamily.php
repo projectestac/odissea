@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fontselectlist'] = 'Verfügbare Schriftarten';
+$string['fontselectlist'] = 'Liste der Schriftarten';
 $string['pluginname'] = 'Schriftarten';
-$string['settings'] = 'Einstellung der Schriftarten';
+$string['settings'] = 'Schriftarten';

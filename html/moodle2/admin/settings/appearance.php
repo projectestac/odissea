@@ -290,8 +290,11 @@ preferences,moodle|/user/preferences.php|preferences',
     $temp->add(new admin_setting_configcheckbox('blockeditingmenu', new lang_string('blockeditingmenu', 'admin'), new lang_string('blockeditingmenu_desc', 'admin'), 1));
     $ADMIN->add('appearance', $temp);
 
-    // link to tag management interface
-    $ADMIN->add('appearance', new admin_externalpage('managetags', new lang_string('managetags', 'tag'), $CFG->wwwroot.'/tag/manage.php', 'moodle/tag:manage'));
+    // Link to tag management interface.
+    $url = new moodle_url('/tag/manage.php');
+    $hidden = empty($CFG->usetags);
+    $page = new admin_externalpage('managetags', new lang_string('managetags', 'tag'), $url, 'moodle/tag:manage', $hidden);
+    $ADMIN->add('appearance', $page);
 
     //XTEC ************ AFEGIT - To let access only to xtecadmin user
     //2012.06.20  @sarjona

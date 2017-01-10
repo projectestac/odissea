@@ -30,7 +30,7 @@ $string['accesNOCAS'] = 'Weitere Nutzer/innen';
 $string['auth_cas_auth_user_create'] = 'Nutzer/innen extern anlegen';
 $string['auth_cas_baseuri'] = 'URI des Servers (kein Eintrag, falls es keine baseUri gibt)<br />z.B., wenn der CAS Server an host.domaine.fr/CAS/ dann<br />cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'Basis URI';
-$string['auth_cas_broken_password'] = 'Sie müssen Ihr Kennwort ändern. Falls dafür keine Seite verfügbar ist, nehmen Sie bitte mit dem Admin Kontakt auf.';
+$string['auth_cas_broken_password'] = 'Ohne die Änderung des Kennworts können Sie nicht weitermachen. Falls die Seite zur Änderung des Kennworts nicht verfügbar ist, wenden Sie sich an den Administrator der Website.';
 $string['auth_cas_cantconnect'] = 'LDAP-Teil des CAS-Moduls kann keine Verbindung mit dem Server herstellen: {$a}';
 $string['auth_cas_casversion'] = 'CAS Protokoll';
 $string['auth_cas_certificate_check'] = 'Mit dieser Einstellung fordern Sie die Validierung des Serverzertifikats an.';

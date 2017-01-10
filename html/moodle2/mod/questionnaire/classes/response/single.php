@@ -189,7 +189,7 @@ class single extends base {
         $userfields = $this->user_fields_sql();
         //XTEC ************ MODIFICAT - To fix bug with CSV export
         //2016.08.31 @sarjona
-        $extraselect = 'qrs.choice_id, '.$DB->sql_compare_text('qro.response').', 0 AS rank';
+        $extraselect = 'qrs.choice_id, '.$DB->sql_order_by_text('qro.response', 1000).', 0 AS rank';
         //************ ORIGINAL
         /*
         $extraselect = 'qrs.choice_id, qro.response, 0 AS rank';

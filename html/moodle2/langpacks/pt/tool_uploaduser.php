@@ -35,12 +35,13 @@ $string['deleteerrors'] = 'Apagar erros';
 $string['encoding'] = 'Codificação';
 $string['errormnetadd'] = 'Não é possível adicionar utilizadores remotos';
 $string['errors'] = 'Erros';
+$string['invalidupdatetype'] = 'Não pode selecionar esta opção com o \'Tipo de carregamento\' selecionado';
 $string['invaliduserdata'] = 'Foram detetados dados inválidos para o utilizador {$a} que foram apagados automaticamente.';
 $string['nochanges'] = 'Sem alterações';
 $string['pluginname'] = 'Carregar utilizador';
 $string['renameerrors'] = 'Renomear erros';
 $string['requiredtemplate'] = 'Necessário. Pode usar a sintaxe modelo aqui (%l = lastname, %f = firstname, %u = username). Consulte a ajuda para mais detalhes e exemplos.';
-$string['rowpreviewnum'] = 'Pré-visualizar linhas';
+$string['rowpreviewnum'] = 'Número de linhas a pré-visualizar';
 $string['unassignedsysrole'] = 'Retirado o papel de sistema {$a}';
 $string['uploadpicture_baduserfield'] = 'O atributo do utilizador não é válido. Por favor, tente novamente.';
 $string['uploadpicture_cannotmovezip'] = 'Não é possível mover o ficheiro zip para o diretório temporário.';
@@ -56,13 +57,13 @@ $string['uploadpicture_usernotfound'] = 'Utilizador com \'{$a->userfield}\' valo
 $string['uploadpicture_userskipped'] = 'Passar utilizador {$a} (já tem imagem).';
 $string['uploadpicture_userupdated'] = 'Imagem atualizada para o utilizador {$a}.';
 $string['uploadusers'] = 'Carregar utilizadores';
-$string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) por ficheiro de texto. O formato do ficheiro deve ser o seguinte:
+$string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) através de ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
-* Cada linha do ficheiro contem um registo
-* Cada registo é uma linha com dados separados por vírgulas (ou outro delimitador)
-* A primeira linha contem uma lusta dos nomes dos campos definindo assim o formato do ficheiro.
-* Os nomes dos campos obrigatórios são username, password, firstname, lastname, email';
-$string['uploaduserspreview'] = 'Pré-visualizar utilizadores carregados';
+* A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro.
+* Os nomes dos campos obrigatórios são: username, password, firstname, lastname, email
+* Cada linha do ficheiro contém um registo
+* Cada registo é uma linha com dados separados por vírgulas (ou outro delimitador)';
+$string['uploaduserspreview'] = 'Pré-visualizar os utilizadores carregados';
 $string['uploadusersresult'] = 'Resultados dos utilizadores carregados';
 $string['uploaduser:uploaduserpictures'] = 'Carregar imagens de utilizador';
 $string['useraccountupdated'] = 'Utilizador atualizado';
@@ -85,7 +86,7 @@ $string['uulegacy2role'] = '(Professor original) tipoN=2';
 $string['uulegacy3role'] = '(Professor-não-editor original) tipoN=3';
 $string['uunoemailduplicates'] = 'Impedir e-mail duplicados';
 $string['uuoptype'] = 'Tipo de carregamento';
-$string['uuoptype_addinc'] = 'Adicionar todos,inserir número à frente do nome de utilizador';
+$string['uuoptype_addinc'] = 'Adicionar todos, inserir número à frente do nome de utilizador';
 $string['uuoptype_addnew'] = 'Adicionar apenas novos, ignorar existentes';
 $string['uuoptype_addupdate'] = 'Adicionar novos e atualizar existentes';
 $string['uuoptype_update'] = 'Atualizar apenas os existentes';

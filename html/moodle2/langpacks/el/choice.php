@@ -62,10 +62,10 @@ $string['limitanswers_help'] = '<p align="center"><strong>Όριο επιλογ�
 $string['modulename'] = 'Επιλογή';
 $string['modulenameplural'] = 'Επιλογές';
 $string['mustchooseone'] = 'Πρέπει να επιλέξετε μία απάντηση. Τίποτα δεν αποθηκεύτηκε.';
-$string['noguestchoose'] = 'Συγνώμη, οι επισκέπτες δεν μπορούν να κάνουν επιλογές';
+$string['noguestchoose'] = 'Συγγνώμη, οι επισκέπτες δεν μπορούν να κάνουν επιλογές';
 $string['noresultsviewable'] = 'Τα αποτελέσματα δεν είναι ορατά προς το παρόν.';
 $string['notanswered'] = 'Δεν απαντήθηκε ακόμα';
-$string['notopenyet'] = 'Συγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
+$string['notopenyet'] = 'Συγγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
 $string['option'] = 'Επιλογή';
 $string['pluginname'] = 'Επιλογή';
 $string['privacy'] = 'Μυστικότητα αποτελεσμάτων';

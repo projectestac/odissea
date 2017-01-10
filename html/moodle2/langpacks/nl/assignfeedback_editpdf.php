@@ -44,6 +44,7 @@ $string['deletefeedback'] = 'Verwijder feedback PDF';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Download feedback PDF';
 $string['draftchangessaved'] = 'Klad-annotaties bewaard';
+$string['drag'] = 'Sleep';
 $string['editpdf'] = 'Annoteer PDF';
 $string['editpdf_help'] = 'Annoteer de inzendingen van de leerlingen rechtstreeks in je browser en maak een bewerkte downloadbare PDF.';
 $string['enabled'] = 'Annoteer PDF';

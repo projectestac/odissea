@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Módulo WIRIS para Atto';
+$string['wiris_cas_title'] = 'Calculadora';
+$string['wiris_chem_editor_title'] = 'Editor de Química';
+$string['wiris_editor_title'] = 'Editor de Matemática';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowattachments'] = 'Bijlagen toestaan';
-$string['attachmentsoptional'] = 'Bijlagen zijn optionneel';
+$string['attachmentsoptional'] = 'Bijlagen zijn optioneel';
 $string['attachmentsrequired'] = 'Bijlagen vereist';
 $string['attachmentsrequired_help'] = 'Deze optie regelt het minimum aantal vereiste bijlagen voor een antwoord als beoordeelbaar wordt beschouwd.';
 $string['formateditor'] = 'HTML-editor';
@@ -36,8 +36,8 @@ $string['formatnoinline'] = 'Geen inline tekst';
 $string['formatplain'] = 'Platte tekst';
 $string['graderinfo'] = 'Informatie voor beoordelaars';
 $string['graderinfoheader'] = 'Beoordelersinformatie';
-$string['mustattach'] = 'Wanneer "geen inline tekst" is geselecteerd of antwoorden zijn optionneel, dan moet je minstens één bijlage toestaan.';
-$string['mustrequire'] = 'Wanneer "geen inline tekst" is geselecteerd of antwoorden zijn optionneel, dan moet je minstens één bijlage eisen.';
+$string['mustattach'] = 'Wanneer "geen inline tekst" is geselecteerd of antwoorden zijn optioneel, dan moet je minstens één bijlage toestaan.';
+$string['mustrequire'] = 'Wanneer "geen inline tekst" is geselecteerd of antwoorden zijn optioneel, dan moet je minstens één bijlage eisen.';
 $string['mustrequirefewer'] = 'Je kunt niet meer bijlagen eisen dan je toestaat.';
 $string['nlines'] = '{$a} lijnen';
 $string['pluginname'] = 'Open vraag';
@@ -48,7 +48,7 @@ $string['pluginnamesummary'] = 'Hiermee kun je een antwoord laten geven dat best
 $string['responsefieldlines'] = 'Grootte invoerveld';
 $string['responseformat'] = 'Antwoord formaat';
 $string['responseisrequired'] = 'Eis van de leerling dat die tekst invoert';
-$string['responsenotrequired'] = 'Tekst invoeren is optionneel';
+$string['responsenotrequired'] = 'Tekst invoeren is optioneel';
 $string['responseoptions'] = 'Antwoordopties';
 $string['responserequired'] = 'Tekst vereist';
 $string['responsetemplate'] = 'Antwoordsjabloon';

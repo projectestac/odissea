@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminview'] = 'معياينة المدير';
+$string['adminview'] = 'معاينة مدير الموقع (الأدمن)';
 $string['allcourses'] = 'مدير الموقع يستطيع مشاهدة جميع المقررات الدراسية';
-$string['configadminview'] = 'ماذا يجب على المدير معاينته في قائمة كتل المقرر الدراسي؟';
-$string['confighideallcourseslink'] = 'إخفاء روابط "جميع المقررات الدراسي" في اخر الكتلة. هذا لا يؤثر على صلاحيات المدير';
-$string['hideallcourseslink'] = 'اخفي جميع روابط المقررات الدراسية';
+$string['configadminview'] = 'ماذا يجب على مدير الموقع (الأدمن) معاينته في كتلة قائمة المقررالدراسي؟';
+$string['confighideallcourseslink'] = 'إزالة رابط "جميع المقررات الدراسية" من أسفل قائمة المقررات الدراسية. (هذا لن يؤثر على طريقة استعراض مدير الموقع )';
+$string['course_list:addinstance'] = 'إضافة كتلة مقررات دراسية جديدة';
+$string['course_list:myaddinstance'] = 'إضافة كتلة مقررات دراسية جديدة في الصفحة الشخصية';
+$string['hideallcourseslink'] = '\'اخفاء رابط \'جميع المقررات الدراسية';
 $string['owncourses'] = 'مدير الموقع يستطيع مشاهدة مقرراته الدراسية';
 $string['pluginname'] = 'المقررات الدراسية';

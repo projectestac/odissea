@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['enableleap2a'] = 'Habilita l\'ús de Leap2A al portafolis (requereix la versió de Mahara 1.3 o superior)';
+$string['enableleap2a'] = 'Habilita el suport de dossiers en format Leap2A (requereix la versió de Mahara 1.3 o superior)';
 $string['err_invalidhost'] = 'Servidor MNet incorrecte';
-$string['err_invalidhost_help'] = 'Aquest connector està mal configurat, ja que apunta a un servidor MNet incorrecte (o eliminat). Aquest connector es basa en una xarxa Moodle d\'iguals amb un IDP SSO publicat, SSO_SP subscrit, i un portafolis subscrit <b>i</b> publicat.';
+$string['err_invalidhost_help'] = 'Aquest connector està mal configurat, ja que apunta a un servidor MNet incorrecte (o eliminat). Aquest connector es basa en una xarxa Moodle d\'iguals amb un IDP SSO publicat, SSO_SP subscrit, i un dossier subscrit <b>i</b> publicat.';
 $string['err_networkingoff'] = 'MNet està desactivat';
 $string['err_networkingoff_help'] = 'MNet està totalment desactivat. Si us plau, activeu-lo abans de configurar aquest connector. Qualsevol instància d\'aquest connector s\'ha definit com a no visible fins que estigui activat. L\'haureu de definir com a visible de nou manualment. Fins aleshores no es podrà utilitzar.';
 $string['err_nomnetauth'] = 'El connector d\'autenticació MNet està desactivat';
@@ -43,7 +43,7 @@ $string['mnet_noid'] = 'No s\'ha pogut trobar el registre de la transferència c
 $string['mnet_notoken'] = 'No s\'ha pogut trobar el testimoni corresponent a aquesta  transferència';
 $string['mnet_wronghost'] = 'El servidor remot no correspon al registre de tranferència d\'aquest token';
 $string['pf_description'] = 'Permet els usuaris inserir contingut de Moodle en aquest servidor<br />Subscriviu <b>i</b> publiqueu aquest servei per permetre els usuaris autenticats del vostre lloc d\'inserir contingut en {$a}<br /><ul><li><em>Dependència</em>: heu de <strong>publicar</strong> també el servei SSO (Proveïdor d\'identitats) per a {$a}.</li><li><em>Dependència</em>: heu de <strong>subscriure</strong> també el servei SSO (Proveïdor de servei) en {$a}</li><li><em>Dependència</em>: heu d\'activar també el connector d\'autenticació MNet.</li></ul></br />';
-$string['pf_name'] = 'Serveis de portafolis';
+$string['pf_name'] = 'Serveis de dossier';
 $string['pluginname'] = 'Mahara ePortfolio';
 $string['senddisallowed'] = 'No es poden transferir fitxers a Mahara en aquest moment';
 $string['url'] = 'URL';

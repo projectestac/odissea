@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'عذرا! هذا الاختبار غير متاح';
-$string['quiznotavailable'] = 'الاختبار لن يكون متاحا حتى: {$a}';
+$string['notavailable'] = 'عذراً! هذا الاختبار غير متاح';
+$string['pluginname'] = 'قاعدة فتح وإغلاق تاريخ الوصول';
+$string['quiznotavailable'] = 'الاختبار لن يكون متاحاً حتى: {$a}';

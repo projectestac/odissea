@@ -117,6 +117,7 @@ $string['currentstage4'] = 'Revisione e conferma';
 $string['currentstage8'] = 'Esecuzione backup';
 $string['enterasearch'] = 'Inserisci una ricerca';
 $string['error_block_for_module_not_found'] = 'E\' stata trovata una istanza orfana  di blocco (id: {$a->bid}) nel corso (id: {$a->mid}). Questo blocco non sarà incluso nel backup.';
+$string['errorcopyingbackupfile'] = 'Non è andata a buon fine la copia del file di backup nella cartella temporanea per il ripristino.';
 $string['error_course_module_not_found'] = 'E\' stato trovato un modulo orfano (id: {$a}) nel corso. Questo modulo non sarà incluso nel backup.';
 $string['errorfilenamemustbezip'] = 'Il nome del file inserito deve essere un file ZIP e deve avere l\'estensione .mbz.';
 $string['errorfilenamerequired'] = 'Devi inserire un nome valido per il file di backup. ';

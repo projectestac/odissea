@@ -96,7 +96,7 @@ $string['configcleanreadtime'] = 'Het uur van de dag waarop oude berichten van d
 $string['configdigestmailtime'] = 'Gebruikers die ervoor kiezen dat de e-mails hun als samenvatting toegezonden worden, zullen dagelijks een e-mail ontvangen. Deze instelling controleert op welk moment van de dag deze dagelijkse mail verzonden wordt (de mail wordt verstuurd door de cron die volgt op het uur dat hier gekozen wordt)';
 $string['configdisplaymode'] = 'De standaardmanier voor het weergeven van discussies als er geen methode is ingesteld.';
 $string['configenablerssfeeds'] = 'Met deze instelling kun je de mogelijkheid voor het maken van RSS-feeds inschakelen voor alle forums. Je zult wel nog voor elk forum afzonderlijk het maken van de RSS-feeds moeten  inschakelen.';
-$string['configenabletimedposts'] = 'Zet op \'Ja\' als je wil toestaan een tijdvak wil instellen wanneer een nieuwe discussie kan gestart worden.';
+$string['configenabletimedposts'] = 'Zet op \'Ja\' als je een tijdvak wil instellen wanneer je een nieuwe discussie start.';
 $string['configlongpost'] = 'Elk bericht dat langer is dan deze waarde (HTML-code niet inbegrepen) wordt als lang beschouwd.';
 $string['configmanydiscussions'] = 'Maximale aantal discussies van een forum die per pagina getoond worden';
 $string['configmaxattachments'] = 'Standaard maximale aantal bijlagen per bericht';
@@ -264,7 +264,7 @@ $string['forumtype_help'] = 'Er zijn 5 forumtypes
 * Iedereen post één discussie - Elke leerling kan juist één nieuw discussieonderwerp posten, waar iedereen da, kan op antwoorden
 * Vraag- en antwoordforum - Leerlingen moeten eerst hun bericht posten voor ze de berichten van anderen kunnen zien
 * Standaardforum getoond in een blog-stijl format - een open forum waar iedereen een nieuwe discussie kan starten en waar de onderwerpen getoond worden op één pagina met \'Discussieer over dit onderwerp\' -links
-* Standaardforum voor algemeen gebruik - Een open fourm waar iedereen op elk moment een nieuwe discussie kan starten';
+* Standaardforum voor algemeen gebruik - Een open forum waar iedereen op elk moment een nieuwe discussie kan starten';
 $string['forum:viewallratings'] = 'Bekijk de ruwe gegevens van de beoordelingen.';
 $string['forum:viewanyrating'] = 'Bekijk alle totaalbeoordelingen';
 $string['forum:viewdiscussion'] = 'Discussies bekijken';
@@ -290,7 +290,7 @@ $string['invalidpostid'] = 'Post ID {$a} was fout';
 $string['lastpost'] = 'Laatste bericht';
 $string['learningforums'] = 'Leerforums';
 $string['longpost'] = 'Lang bericht';
-$string['mailnow'] = 'Stuur forum berichtmeldingen zonder bewerkingsvertraging';
+$string['mailnow'] = 'Stuur meldingen van forumberichten zonder vertraging voor bewerken';
 $string['manydiscussions'] = 'Discussies per pagina';
 $string['markalldread'] = 'Markeer alle berichten in deze discussie als gelezen';
 $string['markallread'] = 'Markeer alle berichten in dit forum als gelezen';
@@ -358,7 +358,7 @@ $string['noguestpost'] = 'Sorry, gasten mogen geen berichten posten';
 $string['noguestsubscribe'] = 'Sorry, maar gasten mogen niet inschrijven.';
 $string['noguesttracking'] = 'Sorry, gasten kunnen de instellingen voor het volgen van forumberichten niet wijzigen.';
 $string['nomorepostscontaining'] = 'Er zijn geen berichten met \'{$a}\' meer gevonden';
-$string['nonews'] = 'Er zijn nog geen nieuwsberichten';
+$string['nonews'] = 'Er zijn nog geen mededelingen';
 $string['noonecansubscribenow'] = 'Inschrijven is nu niet toegelaten';
 $string['nopermissiontosubscribe'] = 'Je hebt het recht niet te zien wie e-mail van dit forum ontvangt';
 $string['nopermissiontoview'] = 'Je mag dit bericht niet zien';
@@ -406,7 +406,7 @@ $string['postincontext'] = 'Bekijk dit bericht in zijn context';
 $string['postmailinfo'] = 'Dit is een kopie van een bericht dat op de {$a} website is toegevoegd.
 
 Klik op deze link om jouw antwoord via de website toe te voegen:';
-$string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost op {$a->coursename}.
+$string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost in {$a->coursename}.
 
 Klik op volgende link om te antwoorden: {$a->replylink}';
 $string['postmailnow'] = '<p>Dit bericht zal onmiddellijk verstuurd worden naar iedereen die e-mail van dit forum wil.</p>';
@@ -526,10 +526,11 @@ $string['trackingoff'] = 'Uit';
 $string['trackingon'] = 'Verplicht';
 $string['trackingoptional'] = 'Optioneel';
 $string['trackingtype'] = 'Lezen van dit forum opvolgen';
-$string['trackingtype_help'] = 'Als \'Lezen van dit forum opvolgen\' is ingeschakeld, dan zien gebruikers welke berichten ze gelezen hebben en welke berichten niet door het markeren van nieuwe berichten.
+$string['trackingtype_help'] = 'Als \'Volgen forum\' is ingeschakeld, dan zien gebruikers welke berichten ze gelezen hebben en welke berichten niet.
 
-Indien ingesteld op optioneel, dan kunnen deelnemers kiezen of ze het aan of uitschakelen via een link in het beheer blok. (Gebruikers moeten ook forum volgen inschakelen in hun forum voorkeuren.)
-Indien \'Verplicht opvolgen\' is ingeschakeld in site beheer, dan is er nog een volgende mogelijkheid beschikbaar: verplicht. Dit betekend dat opvolgen altijd ingeschakeld is, ongeacht de forumvoorkeuren van de gebruikers.';
+Indien ingesteld op optioneel, dan kunnen gebruikers kiezen of ze al dan niet forum volgen inschakelen via een link in het beheer-blok. (Gebruikers moeten forum volgen ook inschakelen in hun forum voorkeuren.)
+
+Indien \'verplicht forum volgen\' is ingeschakeld in het site-beheer, dan is er een extra optie mogelijk - verplicht. Dit betekent dat het volgen altijd ingeschakeld is, wat de gebruikersinstellingen ook zijn.';
 $string['unread'] = 'Niet gelezen';
 $string['unreadposts'] = 'Niet gelezen berichten';
 $string['unreadpostsnumber'] = '{$a} ongelezen berichten';

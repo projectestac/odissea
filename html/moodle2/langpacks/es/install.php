@@ -44,7 +44,7 @@ $string['cliadminemail'] = 'Nuevo correo electrónico de administrador';
 $string['cliadminpassword'] = 'Nueva contraseña de usuario admin';
 $string['cliadminusername'] = 'Nombre de usuario de la cuenta del administrador';
 $string['clialreadyconfigured'] = 'El archivo de configuración config.php ya existe. Por favor, utilice admin/cli/install_database.php para instalar Moodle en este sitio.';
-$string['clialreadyinstalled'] = 'El archivo de configuración config.php ya existe. Por favor, utilice admin/cli/install_database.php para actualizar el Moodle en este sitio.';
+$string['clialreadyinstalled'] = 'El archivo de configuración config.php ya existe. Por favor, utilice admin/cli/install_database.php para actualizar Moodle en este sitio.';
 $string['cliinstallfinished'] = 'La instalación se completo exitosamente.';
 $string['cliinstallheader'] = 'Programa de instalación Moodle de línea de comando {$a}';
 $string['climustagreelicense'] = 'En modo no interactivo debe aceptar la licencia especificando la opción --agree-license';
@@ -114,7 +114,7 @@ $string['environmenthead'] = 'Comprobando su entorno';
 $string['environmentsub'] = 'Estamos comprobando si los diferentes componentes de su servidor cumplen con los requerimientos mínimos de sistema';
 $string['environmentsub2'] = 'Cada versión de Moodle tiene algún requisito mínimo de la versión de PHP y un número obligatorio de extensiones de PHP.
 Una comprobación del entorno completo se realiza antes de cada instalación y actualización. Por favor, póngase en contacto con el administrador del servidor si no sabes cómo instalar la nueva versión o habilitar las extensiones PHP.';
-$string['errorsinenvironment'] = 'La comprobación del entorno fallo!';
+$string['errorsinenvironment'] = '¡La comprobación del entorno fallo!';
 $string['fail'] = 'Fallo';
 $string['fileuploads'] = 'Subidas de archivos';
 $string['fileuploadserror'] = 'Debe estar activado';

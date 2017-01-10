@@ -25,18 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configmaxbytes'] = 'تجاوز الحد الاعلى لحجم الملف';
-$string['countfiles'] = 'ملفات';
-$string['default'] = 'مسموح بالاصل';
-$string['default_help'] = 'اذا تم اختيارها، طريقة التسليم ستبقى مسموحه بالاصل للواجبات الجديده';
-$string['enabled'] = 'تسليم الملف';
+$string['configmaxbytes'] = 'الحد الأعلى لحجم الملف';
+$string['countfiles'] = '{$a} ملفات';
+$string['default'] = 'مُفعَّل افتراضياً';
+$string['default_help'] = 'اذا تم اختيارها، طريقة التسليم ستبقى مُفعَّلة افتراضياً  للتكاليف / المهام الجديدة';
+$string['enabled'] = 'تسليمات الملف';
+$string['enabled_help'] = 'إذا تم تفعيله، سيكون الطلاب قادرين على تحميل ملف واحد أو أكثر لتسليماتهم';
 $string['eventassessableuploaded'] = 'تم تحميل الملف بنجاح';
-$string['file'] = 'تم تسليم الملف بنجاح';
+$string['file'] = 'تسليمات الملف';
 $string['maxbytes'] = 'تجاوز الحد الاعلى لحجم الملف';
-$string['maxfilessubmission'] = 'تجاوز عدد الملفات المحمله';
+$string['maxfiles'] = 'الحد الأقصى لعدد الملفات للتسليم الواحد';
+$string['maxfiles_help'] = 'إذا تم تفعيل تسليم الملفات، فلكل  تكليف /مهمة ، يمكن تعيين هذا العدد من الملفات لتسليمها.';
+$string['maxfilessubmission'] = 'الحد الأقصى لعدد الملفات التي تم تحميلها';
 $string['maximumsubmissionsize'] = 'تجاوز حجم الملف المسلم';
 $string['maximumsubmissionsize_help'] = 'الملفات المحملة من قبل الطلبة يمكن ان تصل الى هذا الحجم';
-$string['numfilesforlog'] = 'عدد الملفات  : {$a} ملف(s).';
-$string['pluginname'] = 'الملف المسلم';
+$string['numfilesforlog'] = 'عدد الملفات  : {$a} ملف.';
+$string['pluginname'] = 'تسليمات الملف';
 $string['siteuploadlimit'] = 'الحد المسموح به للتحميل في الموقع';
-$string['submissionfilearea'] = 'الملفات التي تم تحميلها مسلّمة';
+$string['submissionfilearea'] = 'ملفات التسليم لتي تم تحميلها';

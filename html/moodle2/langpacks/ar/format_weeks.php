@@ -25,8 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['currentsection'] = 'هذا الاسبوع';
+$string['currentsection'] = 'هذا الأسبوع';
+$string['deletesection'] = 'حذف أسبوع';
+$string['editsection'] = 'تحرير الأسبوع';
+$string['editsectionname'] = 'تعديل اسم الأسبوع';
+$string['hidefromothers'] = 'إخفاء الأسبوع';
+$string['newsectionname'] = 'الاسم الجديد للأسبوع {$a}';
 $string['page-course-view-weeks'] = 'أي صفحة رئيسية لمقرر دراسي في التنسيق الأسبوعي';
+$string['page-course-view-weeks-x'] = 'أي صفحة مقرر دراسي في تنسيق الأسابيع';
 $string['pluginname'] = 'تنسيق أسبوعي';
 $string['section0name'] = 'عام';
 $string['sectionname'] = 'أسبوع';
+$string['showfromothers'] = 'عرض أسبوع';

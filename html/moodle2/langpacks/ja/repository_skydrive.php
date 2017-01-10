@@ -34,7 +34,7 @@ $string['oauthinfo'] = '<p>このプラグインを使用するためには、�
 
 <p>{$a->callbackurl}</p>
 
-<p>登録した場合、あなたにはここで入力できるクライアントIDおよびシークレットが提供されます。</p>';
+<p>登録した場合、あなたにはここで入力できるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Microsoft OneDrive';
 $string['secret'] = '秘密鍵';
 $string['skydrive:view'] = 'OneDriveを表示する';

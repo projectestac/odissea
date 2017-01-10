@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_pamdescription'] = 'Diese Methode verwendet PAM (Pluggable Authentication Modules), um auf die richtigen Nutzerkonten auf dem Server zuzugreifen. Sie müssen <a href="http://www.math.ohio-state.edu/~ccunning/pam_auth/" target="_blank">PHP4 PAM Authentication</a> installieren, um das Modul nutzen zu können.';
 $string['auth_passwordisexpired'] = 'Ihr Kennwort ist abgelaufen. Möchten Sie Ihr Kennwort jetzt ändern?';
-$string['auth_passwordwillexpire'] = 'Ihr Kennwort ist nur noch {$a} Tagen gültig. Möchten Sie Ihr Kennwort jetzt ändern?';
+$string['auth_passwordwillexpire'] = 'Ihr Kennwort wird {$a} Tagen ablaufen. Möchten Sie Ihr Kennwort jetzt ändern?';
 $string['pluginname'] = 'PAM Authentifizierung';

@@ -90,13 +90,13 @@ $string['attempt'] = 'Poging {$a}';
 $string['attemptalreadyclosed'] = 'Deze poging is al beëindigd.';
 $string['attemptclosed'] = 'Poging is nog niet gesloten';
 $string['attemptduration'] = 'Gebruikte tijd';
-$string['attemptedon'] = 'Geprobeerd op';
+$string['attemptedon'] = 'Poging op';
 $string['attempterror'] = 'Je mag deze test nu niet proberen omdat:';
 $string['attemptfirst'] = 'Eerste poging';
 $string['attemptincomplete'] = 'De poging (door {$a}) is nog niet voltooid.';
 $string['attemptlast'] = 'Laatste poging';
 $string['attemptnumber'] = 'Poging';
-$string['attemptquiznow'] = 'Probeer de test nu';
+$string['attemptquiznow'] = 'Start de test nu';
 $string['attempts'] = 'Pogingen';
 $string['attemptsallowed'] = 'Toegestane pogingen';
 $string['attemptsdeleted'] = 'Testpogingen verwijderd';
@@ -411,6 +411,8 @@ om het totaalcijfer op de test te berekenen.
 </blockquote>';
 $string['gradesdeleted'] = 'Cijfers van de test verwijderd';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}';
+$string['gradetopassmustbeset'] = 'Slaagcijfer kan geen nul zijn omdat de test is ingesteld om een slaagcijfer te behalen als voltooiingsmethode. Geef hier een andere waarde dan een nul.';
+$string['gradetopassnotset'] = 'Deze test heeft geen slaagcijfer ingesteld en daarom kun je deze optie niet gebruiken. Gebruik de vereist cijfer-instelling in de plaats.';
 $string['gradingdetails'] = 'Punten voor deze inzending:
 {$a->raw}/{$a->max}';
 $string['gradingdetailsadjustment'] = 'Met de vorige strafpunten geeft dit
@@ -713,7 +715,7 @@ $string['randomnumber'] = 'Aantal willekeurige vragen';
 $string['randomquestionusinganewcategory'] = 'Willekeurige vraag van een nieuwe categorie';
 $string['randomwithsubcat'] = 'Vragen uit deze categorie en uit de subcategorieën ervan.';
 $string['readytosend'] = 'Je staat op het punt om de test in te sturen zodat hij beoordeeld kan worden. Weet je zeker dat je door wilt gaan?';
-$string['reattemptquiz'] = 'Probeer de test opnieuw';
+$string['reattemptquiz'] = 'Herkans de test';
 $string['recentlyaddedquestion'] = 'Recent toegevoegde vraag!';
 $string['recurse'] = 'Toon ook vragen in subcategorieën';
 $string['redoesofthisquestion'] = 'Andere vragen hier geprobeerd: {$a}';
@@ -759,10 +761,10 @@ $string['reports'] = 'Rapporten';
 $string['reportshowonly'] = 'Enkel pogingen tonen';
 $string['reportshowonlyfinished'] = 'Toon maximum één voltooide poging per gebruiker ({$a})';
 $string['reportsimplestat'] = 'Eenvoudige statistieken';
-$string['reportusersall'] = 'alle gebruikers die te test geprobeerd hebben';
-$string['reportuserswith'] = 'aangemelde gebruikers die de test geprobeerd hebben';
-$string['reportuserswithorwithout'] = 'aangemelde gebruikers die de test al dan niet geprobeerd hebben';
-$string['reportuserswithout'] = 'aangemelde gebruikers die te test niet geprobeerd hebben';
+$string['reportusersall'] = 'alle gebruikers die de test gemaakt hebben';
+$string['reportuserswith'] = 'aangemelde gebruikers die de test gemaakt hebben';
+$string['reportuserswithorwithout'] = 'Aangemelde gebruikers die de test al dan niet gemaakt hebben';
+$string['reportuserswithout'] = 'Aangemelde gebruikers die de test nog niet gemaakt hebben';
 $string['reportwhattoinclude'] = 'Wat moet er in het rapport';
 $string['requirepassword'] = 'Wachtwoord nodig';
 $string['requirepassword_help'] = '<p>Dit veld is optioneel</p>
@@ -807,11 +809,11 @@ $string['reviewofquestion'] = 'Herbekijk  {$a->question} in {$a->quiz} door {$a-
 $string['reviewopen'] = 'Later, terwijl de test nog open is';
 $string['reviewoptions'] = 'Leerlingen mogen nakijken';
 $string['reviewoptionsheading'] = 'Opties voor herbekijken';
-$string['reviewoptionsheading_help'] = 'Met deze optie controleer je welke informatie gebruikers kunnen zien waneer zij een test nalezen of wanneer ze naar de testrapporten kijken.
+$string['reviewoptionsheading_help'] = 'Met deze optie controleer je welke informatie gebruikers kunnen zien wanneer zij een test nalezen of wanneer ze naar de testrapporten kijken.
 
 ** Tijdens de poging** zijn instellingen slechts relevant voor sommige scenario\'s, zoals \'interactief met meerdere pogingen\', die feedback kunnen tonen tijdens de poging.
 
-**Onmiddellijk na een poging** betekent binnen de twee minuten nadat de gebruiker de test beeindigd heeft door op \'Bewaar alles en beeindig test\' te klikken.
+**Onmiddellijk na een poging** betekent binnen de twee minuten nadat de gebruiker de test beëindigd heeft door op \'Bewaar alles en beëindig test\' te klikken.
 
 **Later, terwijl de test nog open is** betekent na die twee minuten en voor de test sluit.
 

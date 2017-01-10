@@ -80,7 +80,7 @@ $string['attemptreopenmethod_help'] = 'Détermine comment les travaux remis par 
 <ul>
 <li>Jamais - Le travail de l\'étudiant ne peut pas être rouvert.</li>
 <li>Manuellement - Le travail de l\'étudiant peut être rouvert par un enseignant.</li>
-<li>Automatiquement jusqu\'à réussite - Le travail est rouvert automatiquement jusqu\'à ce que l\'étudiant atteigne la note nécessaire pour réussir le devoir ; cette note est indiquée dans le carnet de note (section Configuration du carnet de notes).</li>
+<li>Automatiquement jusqu\'à réussite - Le travail est rouvert automatiquement jusqu\'à ce que l\'étudiant atteigne la note nécessaire pour réussir le devoir ; cette note est indiquée dans le carnet de notes (section Configuration du carnet de notes).</li>
 </ul>';
 $string['attemptreopenmethod_manual'] = 'Manuellement';
 $string['attemptreopenmethod_none'] = 'Jamais';
@@ -140,6 +140,8 @@ $string['defaultteam'] = 'Groupe par défaut';
 $string['deleteallsubmissions'] = 'Supprimer tous les travaux remis';
 $string['description'] = 'Description';
 $string['downloadall'] = 'Télécharger tous les travaux remis';
+$string['downloadasfolders'] = 'Télécharger les travaux remis dans des dossiers';
+$string['downloadasfolders_help'] = 'Lorsque la remise d\'un devoir consiste en plus d\'un fichier, les travaux remis peuvent être téléchargés dans des dossiers. Si ce réglage est activé, les fichiers de chaque étudiant seront placés dans un dossier séparé, avec les éventuels sous-dossiers, et ne seront pas renommés.';
 $string['downloadselectedsubmissions'] = 'Télécharger les travaux remis sélectionnés';
 $string['duedate'] = 'Date de remise';
 $string['duedatecolon'] = 'Date de remise : {$a}';

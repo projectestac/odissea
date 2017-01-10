@@ -298,7 +298,7 @@ $string['noexpiry'] = '此勋章永不过期。';
 $string['noparamstoadd'] = '没有附加的有效参数添加到这枚勋章';
 $string['notacceptedrole'] = '您的用户角色没有被赋予权限来授予此勋章。<br/>
 您可以访问 {$a} 页面来查看已经被授予此勋章的用户列表。';
-$string['notconnected'] = '为连接';
+$string['notconnected'] = '未连接';
 $string['nothingtoadd'] = '没有可添加的规则。';
 $string['notification'] = '通知勋章创建人';
 $string['notification_help'] = '此项设置用来设定通知勋章创建人的方式，以便他们知道此勋章被授予的情况。

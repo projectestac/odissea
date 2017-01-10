@@ -40,6 +40,8 @@ $string['folder:addinstance'] = 'Gehitu beste karpeta bat';
 $string['foldercontent'] = 'Fitxategiak eta azpikarpetak';
 $string['folder:managefiles'] = 'Fitxategiak kudeatu karpeta moduluan';
 $string['folder:view'] = 'Ikusi karpetaren edukia';
+$string['maxsizetodownload'] = 'Karpetak jaisteko gehienezko tamaina (MB)';
+$string['maxsizetodownload_help'] = 'Karpetak zip fitxategi moduan jaisteko gehienezko tamaina. 0 ezarriz gero, karpetaren tamainak ez du mugarik izango.';
 $string['modulename'] = 'Karpeta';
 $string['modulename_help'] = 'Karpeta baliabideak irakasleak karpeta baten barruan erlazioa duten fitxategi-multzoak erakustea ahalbidetzen du, ikastaroko orriko scroll-a gutxituz. ZIP fitxategi batean konprimatutako karpeta bat igo eta erakusgai jartzeko deskonprimi daiteke.
 
@@ -54,5 +56,7 @@ $string['page-mod-folder-x'] = 'Karpetaren edozein orri';
 $string['pluginadministration'] = 'Karpetaren kudeaketa';
 $string['pluginname'] = 'Karpeta';
 $string['search:activity'] = 'Karpeta';
+$string['showdownloadfolder'] = 'Erakutsi karpeta jaitsi botoia';
+$string['showdownloadfolder_help'] = '\'Bai\' aukeratuz gero, botoi bat erakutsiko da karpetaren edukiak zip fitxategi moduan jaisteko aukera emateko.';
 $string['showexpanded'] = 'Erakutsi azpikarpetak zabalduta';
 $string['showexpanded_help'] = '\'Bai\' ezarrita berez erakutsiko dira azpikarpetak zabalduta. Bestela, azpikarpetak kolapsatuta erakutsiko dira.';

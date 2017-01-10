@@ -214,6 +214,7 @@ $string['searchterms'] = 'Términos de búsqueda';
 $string['searchwikis'] = 'Buscar wikis';
 $string['special'] = 'Especial';
 $string['tableofcontents'] = 'Tabla de contenidos';
+$string['tagarea_wiki_pages'] = 'Páginas Wiki';
 $string['tagsdeleted'] = 'Las marcas wiki se han eliminado';
 $string['tagtitle'] = 'Ver la etiqueta "{$a}"';
 $string['teacherrating'] = 'Clasificación por profesor';

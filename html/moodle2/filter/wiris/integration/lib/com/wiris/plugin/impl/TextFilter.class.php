@@ -62,7 +62,7 @@ class com_wiris_plugin_impl_TextFilter {
 			$hashImage = $json;
 			if(_hx_equal($hashImage->get("status"), "ok")) {
 				$result = $hashImage->get("result");
-				$base64 = $result->get("pngBase64");
+				$base64 = $result->get("base64");
 				$img .= " src=\"data:image/png;base64," . $base64 . "\"";
 				if($result->exists("alt")) {
 					$alt = $result->get("alt");
@@ -205,10 +205,15 @@ class com_wiris_plugin_impl_TextFilter {
 		$b = null;
 		$b = $saveMode === "safeXml";
 		$tags = null;
+		$mathNamespace = null;
+		$namespaceIndex = _hx_index_of($str, ":" . "math", null);
+		if($namespaceIndex >= 0) {
+			$mathNamespace = _hx_substr($str, _hx_last_index_of($str, "<", $namespaceIndex) + 1, $namespaceIndex - (_hx_last_index_of($str, "<", $namespaceIndex) + 1));
+		}
 		if($b) {
 			$tags = com_wiris_plugin_impl_TextFilterTags::newSafeXml();
 		} else {
-			$tags = com_wiris_plugin_impl_TextFilterTags::newXml();
+			$tags = com_wiris_plugin_impl_TextFilterTags::newXml($mathNamespace);
 		}
 		$str = $this->filterMath($tags, $str, $prop, $b);
 		$str = $this->filterApplet($tags, $str, $prop, $b);

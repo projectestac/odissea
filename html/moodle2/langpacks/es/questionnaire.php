@@ -79,6 +79,7 @@ Los usuarios no podrán cumplimentar la encuesta después de esta fecha. Si no s
 $string['closeson'] = 'El Cuestionario se cierra el {$a}';
 $string['completionsubmit'] = 'El participante tiene que enviar la encuesta para completarla';
 $string['confalts'] = '- O - <br />Página de confirmación';
+$string['configmaxsections'] = 'Máximo número de secciones de retroalimentación';
 $string['configusergraph'] = 'Muestre las gráficas para la retroalimentación de la "Encuesta de Personalidad"';
 $string['configusergraphlong'] = 'Use la librería <a href="http://www.rgraph.net/">Rgraph</a> para mostrar las gráficas de retroalimentación de la "Encuesta de Personalidad"';
 $string['confirmdelallresp'] = '¿Está seguro que quiere eliminar TODAS las respuestas de la encuesta?';
@@ -96,6 +97,7 @@ $string['couldnotdelresp'] = 'No ha sido posible borrar las respuestas';
 $string['createcontent'] = 'Definir nuevo contenido';
 $string['createcontent_help'] = 'Seleccione una de las opciones del botón de radio. \'Crear nuevo\' es el valor predeterminado.';
 $string['createnew'] = 'Crear un nuevo cuestionario';
+$string['crontask'] = 'Limpieza de cuestionario';
 $string['date'] = 'Fecha';
 $string['dateformatting'] = 'dateformatting';
 $string['date_help'] = 'Utilice este tipo de pregunta si espera que la respuesta sea una fecha con el formato correcto.';

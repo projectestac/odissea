@@ -84,6 +84,7 @@ $string['negcovar_help'] = 'Galdera honen saiakera multzo honentzako kalifikazio
 Gure benetako pisua kalkulatzeko ekuazioa ezin da kalkulatu kasu honetan. Galdetegi honetako beste galderentzako benetako pisuaren kalkulua galdera bakoitzaren benetako pisua da nabarmenduta dauden kobariantza negatiboa duten galderei emandako kalifikazioa gehienez zero bada.
 
 Galdetegia editatzen baduzu kobariantza negatiboa duten nabarmandutako galdera hauen gehienezko kalifikazioa zero izateko, orduan galdera hauen benetako pisua zero izango da eta beste galderen benetako pisua orain kalkulatu dena izango da.';
+$string['nogradedattempts'] = 'Ez da saiakerarik egin galdetegi honetan, edo egindako saiakera guztiek eskuzko kalifikazioa behar dute.';
 $string['nostudentsingroup'] = 'Oraindik ez dago ikaslerik talde honetan';
 $string['optiongrade'] = 'Kalifikazio partziala';
 $string['partofquestion'] = 'Galdera zati bat';

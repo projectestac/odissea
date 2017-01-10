@@ -50,4 +50,4 @@ $string['sharefolder'] = 'Voleu compartir aquesta nova carpeta?';
 $string['targetfolder'] = 'Carpeta de destinació';
 $string['tobecreated'] = 'Per crear';
 $string['username'] = 'El vostre nom d\'usuari a Box (no es desarà)';
-$string['warninghttps'] = 'Cal que el vostre lloc web utilitzi HTTPS per tal que el portafoli funcioni.';
+$string['warninghttps'] = 'Cal que el vostre lloc web utilitzi HTTPS per tal que el dossier funcioni.';

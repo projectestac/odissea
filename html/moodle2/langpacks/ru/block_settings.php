@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'Разрешить перемещать этот блок в док';
 $string['pluginname'] = 'Настройки';
 $string['settings:addinstance'] = 'Добавлять новый блок «Настройки»';
-$string['settings:myaddinstance'] = 'Добавлять новый блок «Настройки» на страницу «Моя домашняя страница»';
+$string['settings:myaddinstance'] = 'Добавлять новый блок «Настройки» на страницу «Личный кабинет»';

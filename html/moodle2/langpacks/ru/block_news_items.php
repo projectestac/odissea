@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = 'Добавлять новый блок «Последние объявления»';
-$string['news_items:myaddinstance'] = 'Добавлять новый блок «Последние объявления» на страницу «Моя домашняя страница»';
+$string['news_items:myaddinstance'] = 'Добавлять новый блок «Последние объявления» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Последние объявления';

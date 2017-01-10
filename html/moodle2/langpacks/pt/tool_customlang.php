@@ -56,5 +56,5 @@ $string['placeholder_help'] = 'Espaços reservados (placeholders) são códigos 
 Como tal, é importante copiá-los exatamente como estão na string original. Não os traduza, nem altere a sua orientação da direita para a esquerda.';
 $string['placeholderwarning'] = 'strings com expressões especiais';
 $string['pluginname'] = 'Personalização do idioma';
-$string['savecheckin'] = 'Guardar e adicionar as strings nos ficheiros';
+$string['savecheckin'] = 'Guardar alterações ao pacote linguístico';
 $string['savecontinue'] = 'Guardar e continuar a editar';

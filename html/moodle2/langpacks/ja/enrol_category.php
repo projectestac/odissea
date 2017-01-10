@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['category:config'] = 'カテゴリ登録インスタンスを設定する';
 $string['category:synchronised'] = 'ロール割り当てをコース登録に同期する';
 $string['pluginname'] = 'カテゴリ登録';
-$string['pluginname_desc'] = 'カテゴリ登録はロール割り当てを経由して、コースカテゴリレベルで登録する旧式の方法です。代わりにコーホート同期の使用をお勧めします。';
+$string['pluginname_desc'] = 'カテゴリ登録はロール割り当てによりコースカテゴリレベルで登録する旧式の方法です。代わりにコーホート同期の使用をお勧めします。';

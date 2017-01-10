@@ -27,16 +27,37 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['content'] = 'محتوى الصفحة';
 $string['contentheader'] = 'محتوى';
+$string['createpage'] = 'إنشاء مصدر صفحة جديد';
+$string['displayoptions'] = 'عرض الخيارات المتاحة';
 $string['displayselect'] = 'عرض';
 $string['displayselectexplain'] = 'اختر نوع العرض';
+$string['legacyfiles'] = 'ترحيل ملفات المقرر الدراسي القديمة';
 $string['legacyfilesactive'] = 'نشط';
 $string['legacyfilesdone'] = 'انتهى';
 $string['modulename'] = 'صفحة';
+$string['modulename_help'] = 'المقرروحدة الصفحة تمكن المعلم لإنشاء مصدر كصفحة ويب باستخدام محرر النصوص. يمكن أن تعرض الصفحة  النصوص والصور والصوت والفيديو، وكذلك وصلات الإنترنت والتعليمات البرمجية المضمنة، مثل خرائط جوجل.
+
+وتشمل مزايا استخدام وحدة الصفحة بدلاً من وحدة الملف  كونها مصدر أكثر سهولة (على سبيل المثال لمستخدمي الأجهزة النقالة) وأسهل للتحديث.
+
+لكميات كبيرة من المحتوى، من المستحسن أن يتم استخدام الكتاب كمصدر بدلاً من الصفحة.
+
+يمكن استخدام مصدر الصفحة
+
+* لعرض بنود وشروط المقرر الدراسي أو لعرض وصف المقرر
+* لتضمين العديد من أشرطة الفيديو أو ملفات الصوت مع بعض النصوص التوضيحية';
 $string['modulenameplural'] = 'صفحات';
-$string['optionsheader'] = 'خيارات';
+$string['optionsheader'] = 'خيارات العرض';
+$string['page:addinstance'] = 'إضافة مصدر صفحة جديد';
+$string['page-mod-page-x'] = 'أي صفحة لوحدة الصفحة';
 $string['page:view'] = 'عاين محتوى الصفحة';
 $string['pluginadministration'] = 'إدارة وحدة الصفحات';
 $string['pluginname'] = 'صفحة';
-$string['printintro'] = 'اعرص وصف الصفحة';
+$string['popupheight'] = 'ارتفاع النوافذ المنبثقة (بالبكسل)';
+$string['popupheightexplain'] = 'يحدد الارتفاع الافتراضي للنوافذ المنبثقة.';
+$string['popupwidth'] = 'عرض النوافذ المنبثقة (بالبكسل)';
+$string['popupwidthexplain'] = 'يحدد العرض الافتراضي للنوافذ المنبثقة.';
+$string['printheading'] = 'عرض اسم الصفحة';
+$string['printheadingexplain'] = 'عرض اسم الصفحة فوق المحتوى؟';
+$string['printintro'] = 'اعرض وصف الصفحة';
 $string['printintroexplain'] = 'اعرض وصف الصفحة فوق المحتوى';
 $string['search:activity'] = 'صفحة';

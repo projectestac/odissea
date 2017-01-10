@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['canntenrol'] = '登録は無効にされているか、停止しています。';
-$string['canntenrolearly'] = 'あなたはまだ登録することができません。登録は {$a} に開始されます。';
-$string['canntenrollate'] = '{$a} に登録が終了したため、あなたはこれ以上登録することができません。';
+$string['canntenrol'] = '登録は無効にされているか停止しています。';
+$string['canntenrolearly'] = 'あなたはまだ登録することはできません。登録は {$a} に開始されます。';
+$string['canntenrollate'] = '{$a} に登録が終了したため、あなたはこれ以上登録することはできません。';
 $string['cohortnonmemberinfo'] = 'コーホート「 {$a} 」のメンバーのみ自己登録することができます。';
 $string['cohortonly'] = 'コーホートメンバーのみ';
-$string['cohortonly_help'] = '指定されたコーホートのメンバーのみに自己登録を制限することができます。この設定の変更により、既存の登録が影響を受けないことに留意してください。';
+$string['cohortonly_help'] = '指定されたコーホートのメンバーのみに自己登録を制限することができます。この設定の変更により、既存の登録は影響を受けないことに留意してください。';
 $string['customwelcomemessage'] = 'カスタムウェルカムメッセージ';
-$string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタグおよびmulti-langタグを含むMoodleオートフォーマットとして、カスタムウェルカムメッセージを追加することができます。
+$string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタグおよびmulti-langタグを含むMoodleオートフォーマットとしてカスタムウェルカムメッセージを追加することができます。
 
-メッセージの中に次のプレースホルダを含むことができます:
+メッセージの中に下記のプレースホルダを含むことができます:
 
 * コース名 {$a->coursename}
 * ユーザプロファイルページへのリンク {$a->profileurl}
@@ -55,7 +55,7 @@ $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除時、コースからユーザデータおよび設定が削除されることに留意してください。';
 $string['expirymessageenrolledbody'] = '{$a->user} さん
 
-これはコース「 {$a->course} 」において、あなたの登録が {$a->timeend} に有効期限となることの通知です。
+これはコース「 {$a->course} 」において、あなたの登録が {$a->timeend} に有効期限切れになることの通知です。
 
 詳細は {$a->enroller} にご連絡ください。';
 $string['expirymessageenrolledsubject'] = '自己登録期限切れ通知';
@@ -67,11 +67,11 @@ $string['expirymessageenrollerbody'] = '下記のユーザに関してコース�
 $string['expirymessageenrollersubject'] = '自己登録期限切れ通知';
 $string['groupkey'] = 'グループ登録キーを使用する';
 $string['groupkey_desc'] = 'デフォルトでグループ登録キーを使用します。';
-$string['groupkey_help'] = 'コース登録キーを知っているユーザにのみコースアクセスを制限することに加えて、グループ登録キーを使用することで、ユーザは登録したコース内のグループに自動追加されます。
+$string['groupkey_help'] = 'コース登録キーを知っているユーザにのみコースアクセスを制限することに加えて、グループ登録キーを使用することでユーザは登録したコース内のグループに自動追加されます。
 
 注意: グループ登録キーを使用するにはグループ設定内のグループ登録キーを設定すると共にコース設定内の登録キーを設定する必要があります。';
 $string['keyholder'] = 'あなたは次から登録キーを受信しているはずです:';
-$string['longtimenosee'] = '次の期間活動停止の場合、登録解除する';
+$string['longtimenosee'] = '次の期間活動していない場合、登録解除する';
 $string['longtimenosee_help'] = 'ユーザが長期間コースにアクセスしていない場合、自動的に登録解除されます。このパラメータではその制限期間を指定します。';
 $string['maxenrolled'] = '最大登録ユーザ数';
 $string['maxenrolled_help'] = '自己登録できる最大ユーザ数を指定してください。ゼロは制限なしを意味します。';
@@ -87,13 +87,13 @@ $string['password_help'] = '登録キーを使用することにより、登録�
 フィールドを空白のままにした場合、すべてのユーザがコースに登録することができます。
 
 登録キーが指定された場合、コースに登録を試みるユーザすべてに対して登録キーが要求されます。ユーザはコース登録時のみ1度だけ登録キーの入力が要求されることに留意してください。';
-$string['passwordinvalid'] = '登録キーが正しくありません。再度お試しください。';
-$string['passwordinvalidhint'] = '「登録キー」が違います。再度入力してください。<br /> (ヒント - 「 {$a} 」で始まる言葉です)';
+$string['passwordinvalid'] = '登録キーが正しくありません。再度入力してください。';
+$string['passwordinvalidhint'] = '登録キーが正しくありません。再度入力してください。<br /> (ヒント - 「 {$a} 」で始まる言葉です)';
 $string['pluginname'] = '自己登録';
 $string['pluginname_desc'] = '自己登録プラグインにより、ユーザは自分が参加したいコースを選択することができます。登録キーによりコースを保護することができます。内部的には同一コースで有効にする必要のある手動登録プラグイン経由で登録されます。';
 $string['requirepassword'] = '登録キーを要求する';
 $string['requirepassword_desc'] = '新しいコースに登録キーを要求します。また、既存のコースからの登録キーの削除を防ぎます。';
-$string['role'] = 'デフォルトの割り当てロール';
+$string['role'] = 'デフォルトに割り当てるロール';
 $string['self:config'] = '自己登録インスタンスを設定する';
 $string['self:holdkey'] = '自己登録キー所有者として表示する';
 $string['self:manage'] = '登録済みユーザを管理する';
@@ -114,6 +114,6 @@ $string['usepasswordpolicy_desc'] = '登録キーに標準パスワードポリ�
 $string['welcometocourse'] = '{$a} へようこそ';
 $string['welcometocoursetext'] = '{$a->coursename} へようこそ!
 
-まだプロファイルの編集を終えていない場合、私たちがあなたのことを知ることができるようプロファイルページを編集してください:
+まだプロファイルの完了していない場合、私たちがあなたのことを知ることができるようプロファイルページを編集してください:
 
  {$a->profileurl}';

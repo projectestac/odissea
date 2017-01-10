@@ -606,6 +606,42 @@ class core_formslib_testcase extends advanced_testcase {
         $this->assertNotTag(array('id' => 'id_textfrozen_persistant'), $html);
 
     }
+
+    /**
+     * Ensure a validation can run at least once per object. See MDL-56259.
+     */
+    public function test_multiple_validation() {
+        $this->resetAfterTest(true);
+
+        // It should be valid.
+        formslib_multiple_validation_form::mock_submit(['somenumber' => '10']);
+        $form = new formslib_multiple_validation_form();
+        $this->assertTrue($form->is_validated());
+        $this->assertEquals(10, $form->get_data()->somenumber);
+
+        // It should not validate.
+        formslib_multiple_validation_form::mock_submit(['somenumber' => '-5']);
+        $form = new formslib_multiple_validation_form();
+        $this->assertFalse($form->is_validated());
+        $this->assertNull($form->get_data());
+    }
+
+    /**
+     * MDL-56233 - Tests mocking a form inside a namespace.
+     */
+    public function test_mock_submit() {
+        require_once(__DIR__.'/fixtures/namespaced_form.php');
+        \local_unittests\namespaced_form\exampleform::mock_submit(['title' => 'Mocked Value']);
+        $form = new \local_unittests\namespaced_form\exampleform();
+
+        // Here is the problem, this is the expected hidden field name.
+        $expected = '_qf__local_unittests_namespaced_form_exampleform';
+        self::assertArrayHasKey($expected, $_POST);
+
+        // This should work now, before it would fail.
+        self::assertTrue($form->is_submitted());
+        self::assertSame('Mocked Value', $form->get_data()->title);
+    }
 }
 
 
@@ -927,5 +963,37 @@ class formslib_persistantrreeze_element extends moodleform {
         // Neither persistant nor Frozen.
         $mform->addElement('text', 'textnotpersistant', 'test', 'test');
         $mform->setType('textnotpersistant', PARAM_TEXT);
+    }
+}
+
+/**
+ * Used to test that you can validate a form more than once. See MDL-56250.
+ * @package    core_form
+ * @author     Daniel Thee Roperto <daniel.roperto@catalyst-au.net>
+ * @copyright  2016 Catalyst IT
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class formslib_multiple_validation_form extends moodleform {
+    /**
+     * Simple definition, one text field which can have a number.
+     */
+    public function definition() {
+        $mform = $this->_form;
+        $mform->addElement('text', 'somenumber');
+        $mform->setType('somenumber', PARAM_INT);
+    }
+
+    /**
+     * The number cannot be negative.
+     * @param array $data An array of form data
+     * @param array $files An array of form files
+     * @return array Error messages
+     */
+    public function validation($data, $files) {
+        $errors = parent::validation($data, $files);
+        if ($data['somenumber'] < 0) {
+            $errors['somenumber'] = 'The number cannot be negative.';
+        }
+        return $errors;
     }
 }

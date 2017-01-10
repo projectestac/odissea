@@ -26,12 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'إضافة صفحة';
+$string['alldashboardswerereset'] = 'تم إعادة تعيين كل الصفحات الشخصية إلى الإعدادات الافتراضية.';
+$string['allprofileswerereset'] = 'تم إعادة تعيين كل الملفات الشخصية إلى الإعدادات الافتراضية.';
 $string['defaultpage'] = 'صفحة مودل الافتراضية الخاصة بي';
 $string['defaultprofilepage'] = 'صفحة اللمحة الشخصية الافتراضية';
 $string['delpage'] = 'حذف الصفحة';
 $string['managepages'] = 'إدارة الصفحات';
-$string['mymoodle'] = 'مودل الخاص بي';
+$string['mymoodle'] = 'صفحتي الشخصية';
 $string['nocourses'] = 'لا يوجد معلومات لمقرر دراسي ليتم اظهرها';
-$string['noguest'] = 'صفحة مودل الخاص بي غير متاحة للزوار';
-$string['pinblocks'] = 'إعاداد الكتل الخاصة بمودل الخاص بي';
+$string['noguest'] = 'الصفحة الشخصية للمستخدمين غير متاحة للزوار';
+$string['pinblocks'] = 'إعدادات الكتل الخاصة بمودل الخاص بي';
 $string['pinblocksexplan'] = 'أى إعدادات خاصة بالكتل تقوم بتعريفها هنا ستكون ظاهره (وغير مسموح بتحريرها) لكل المستخدمين لمودل في مودل الخاص بهم.';
+$string['reseterror'] = 'كان هناك خطأ في إعادة تعيين صفحتك';
+$string['reseteveryonesdashboard'] = 'إعادة تعيين الصفحة الشخصية لجميع المستخدمين';
+$string['reseteveryonesprofile'] = 'إعادة تعيين الملف الشخصي لجميع المستخدمين';
+$string['resetpage'] = 'إعادة تعيين الصفحة للوضع الافتراضي';

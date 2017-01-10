@@ -78,7 +78,7 @@ $filters .= html_writer::select($filteroptions->fileareas, "filearea", $filearea
 $filters .= html_writer::label(get_string('component', 'report_coursequotas'), 'component', false, array('class' => 'inline')).' ';
 $filters .= html_writer::select($filteroptions->components, "component", $component, get_string("allcomponents", 'report_coursequotas')).' ';
 $filters .= html_writer::checkbox("backups", 1, $showonlybackups, get_string("showonlybackups", 'report_coursequotas')).'<br>';
-if (is_xtecadmin()) {
+if ( !function_exists('is_xtecadmin') || is_xtecadmin()) {
     $filters .= html_writer::checkbox("hidesamehash", 1, $hidesamehash, get_string("hidesamehash", 'report_coursequotas')).'<br>';
 }
 

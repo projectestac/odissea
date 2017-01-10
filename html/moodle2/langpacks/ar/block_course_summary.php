@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['coursesummary'] = 'ملخص المقرر الدراسي';
-$string['pluginname'] = 'وصف المقرر الدراسي / الموقع';
+$string['course_summary:addinstance'] = 'إضافة كتلة ملخص المقررالدراسي/الموقع جديدة';
+$string['pluginname'] = 'ملخص المقررالدراسي/الموقع';

@@ -139,9 +139,9 @@ $string['nofunctions'] = 'Dieser Service hat keine Funktion.
 ';
 $string['norequiredcapability'] = 'Keine notwendige Rechte';
 $string['notoken'] = 'Sie haben kein Token erstellt.';
-$string['onesystemcontrolling'] = 'Externem System die Kontrolle über Moodle erlauben';
+$string['onesystemcontrolling'] = 'Externem System die Kontrolle erlauben';
 $string['onesystemcontrollingdescription'] = 'Die folgenden Schritte helfen Ihnen, den Webservice für ein externes System zu konfigurieren, das mit Moodle Daten austauscht. Dabei wird auch das Erzeugen des Token (Sicherheitsschlüssel) zur Authentifizierung gezeigt.';
-$string['operation'] = 'Betrieb';
+$string['operation'] = 'Vorgang';
 $string['optional'] = 'Optional';
 $string['passwordisexpired'] = 'Das Kennwort ist abgelaufen';
 $string['phpparam'] = 'XMLRPC (PHP-Struktur)';

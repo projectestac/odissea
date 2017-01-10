@@ -26,11 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'لا يمكن تحميل خيارات السؤال';
+$string['include'] = 'ضمِّن الـ';
+$string['mustselectcols'] = 'يجب عليك تضمين شيء.';
 $string['pagesize'] = 'قياس الصفحة';
+$string['pluginname'] = 'الإجابات';
 $string['questiontext'] = 'نص السؤال';
 $string['reportresponses'] = 'الإجابات';
+$string['response'] = 'الإجابة';
 $string['responses'] = 'الإجابات';
 $string['responsesdownload'] = 'تحميل الإجابات';
+$string['responsesfilename'] = 'الإجابات';
 $string['responsesoptions'] = 'خيارات الاجابات';
 $string['responsesreport'] = 'تقرير الإجابات';
-$string['responsestitle'] = 'اجابات مفصلة';
+$string['responsestitle'] = 'الإجابات';
+$string['responsex'] = 'الإجابة {$a}';
+$string['rightanswer'] = 'الإجابة الصحيحة';
+$string['rightanswerx'] = 'الإجابة الصحيحة  {$a}';
+$string['showthe'] = 'اعرض الـ';
+$string['summaryofquestiontext'] = 'ملخص السؤال';

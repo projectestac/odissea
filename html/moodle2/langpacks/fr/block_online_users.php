@@ -29,6 +29,6 @@ $string['configtimetosee'] = 'Nombre de minutes déterminant la période d\'inac
 $string['online_users:addinstance'] = 'Ajouter un bloc utilisateurs en ligne';
 $string['online_users:myaddinstance'] = 'Ajouter un bloc utilisateurs connecté au tableau de bord';
 $string['online_users:viewlist'] = 'Accéder à la liste des utilisateurs connectés';
-$string['periodnminutes'] = '{$a} dernières minutes';
+$string['periodnminutes'] = '{$a} dernières minutes&nbsp;';
 $string['pluginname'] = 'Utilisateurs en ligne';
 $string['timetosee'] = 'Retirer les inactifs après (minutes)';

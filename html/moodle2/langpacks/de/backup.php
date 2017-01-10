@@ -117,6 +117,7 @@ $string['currentstage4'] = 'Kontrollieren und bestätigen';
 $string['currentstage8'] = 'Sicherung ausführen';
 $string['enterasearch'] = 'Suche eingeben';
 $string['error_block_for_module_not_found'] = 'Verwaiste Blockinstanz (ID: {$a->bid}) zum Kursmodul (ID {$a->mid}) gefunden. Dieser Block wird nicht gesichert.';
+$string['errorcopyingbackupfile'] = 'Kopieren der Sicherungsdatei in den temporären Ordner vor der Wiederherstellung fehlgeschlagen';
 $string['error_course_module_not_found'] = 'Verwaistes Kursmodul (ID: {$a}) gefunden. Dieses Modul wird nicht gesichert.';
 $string['errorfilenamemustbezip'] = 'Die Datei muss eine komprimierte Datei sein und die Dateiendung .mbz haben.';
 $string['errorfilenamerequired'] = 'Sie müssen einen gültigen Dateinamen für diese Sicherung angeben';

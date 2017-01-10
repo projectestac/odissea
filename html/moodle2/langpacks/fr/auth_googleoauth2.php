@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_facebookclientid_key'] = 'ID application Facebook';
+$string['auth_githubclientid_key'] = 'ID Client Github';
+$string['auth_googleclientid_key'] = 'ID client Google';
+$string['auth_googleoauth2description'] = 'Permettre à un utilisateur de se connecter au site via un fournisseur externe d\'identification : Google/Facebook/Windows Live.
+La première fois que l\'utilisateur se connecte avec un fournisseur d\'identification, un nouveau compte est créé.
+Le blocage de la création de compte (paramètre administrateur authpreventaccountcreation) lors de l\'authentification <b> ne doit pas</b > être imposé.';
 $string['auth_googlesettings'] = 'Paramètres';
+$string['auth_googleuserprefix'] = 'Le nom d\'utilisateur de l\'utilisateur créé commencera par ce préfixe. Sur un site Moodle de base vous ne devez pas le changer.';
+$string['auth_googleuserprefix_key'] = 'Préfixe du nom d\'utilisateur';
+$string['auth_messengerclientid_key'] = 'ID Client Messenger';
 $string['couldnotauthenticate'] = 'L\'authentification a échoué - Veuillez essayer de vous connecter à nouveau.';
 $string['couldnotauthenticateuserlogin'] = 'La méthode d’authentification a échoué.<br/>
 Veuillez essayer de vous connecter à nouveau avec votre nom d\'utilisateur et votre mot de passe.<br/>
@@ -38,6 +47,9 @@ $string['faileduserdetails'] = 'Le site a réussi à se connecter au fournisseur
 $string['moreproviderlink'] = 'Se connecter avec un autre service.';
 $string['noaccountyet'] = 'Vous n\'êtes pas encore autorisé à utiliser le site. Veuillez contacter votre administrateur et lui demander d\'activer votre compte.';
 $string['oauth2displaybuttons'] = 'Afficher les boutons sur la page d\'authentification.';
+$string['othermoodle'] = 'Antre authentification Moodle';
+$string['pluginname'] = 'Oauth2';
 $string['signinwithanaccount'] = 'Se connecter avec {$a}';
+$string['stattitle'] = 'Statistiques de connexion pour les  {$a - > periodindays} derniers jours (depuis l\'installation du plugin/la mise à jour)';
 $string['unknownfirstname'] = 'Prénom inconnu';
 $string['unknownlastname'] = 'Nom inconnu';

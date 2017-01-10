@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Voeg toe aan groep';
 $string['assignrole'] = 'Rol toewijzen';
-$string['cohort:config'] = 'Configureer site groepen';
+$string['cohort:config'] = 'Configureer site-groepen';
 $string['cohort:unenrol'] = 'Geschorste gebruikers uit cursus verwiijderen';
 $string['creategroup'] = 'Maak nieuwe groep';
 $string['defaultgroupnametext'] = '{$a->name} site-groepen{$a->increment}';
 $string['instanceexists'] = 'De site-groep is al gesynchroniseerd met de geselecteerde rol';
-$string['pluginname'] = 'Site-groep synchronisatie';
-$string['pluginname_desc'] = 'Site-groep aanmeldingsplugin synchroniseert site groepsleden met cursus deelnemers';
+$string['pluginname'] = 'Site-groepsynchronisatie';
+$string['pluginname_desc'] = 'Site-groep aanmeldings-plugin synchroniseert site-groepsleden met cursusdeelnemers';
 $string['status'] = 'Actief';

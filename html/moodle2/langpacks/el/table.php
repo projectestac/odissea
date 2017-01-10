@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadas'] = 'Λήψη δεδομένων πίνακα';
 $string['downloadcsv'] = 'αρχείο κειμένου τιμών διαχωρισμένων με κόμμα (CSV)';
 $string['downloadexcel'] = 'λογιστικό φύλλο Microsoft Excel';
 $string['downloadods'] = 'λογιστικό φύλλο OpenDocument (ODS)';

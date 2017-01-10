@@ -34,6 +34,7 @@ $string['dropbox:view'] = 'Bekijk een Dropbox map';
 $string['instruction'] = 'Je kunt je API-sleutel en geheim halen van  <a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>. Wanneer je je sleutel inselt, kies dan "Full Dropbox" als "Access level".';
 $string['logoutdesc'] = '(afmelden als je klaar bent met Dropbox)';
 $string['notitle'] = 'Geen titel';
+$string['oauth2redirecturi'] = 'OAuth 2 verwijzings URI';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = 'Mij onthouden';
 $string['secret'] = 'Dropbox geheim';

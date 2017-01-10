@@ -33,7 +33,7 @@ $string['html5audio'] = 'Audio HTML 5';
 $string['html5audio_desc'] = 'File audio con estensione *.ogg, *.acc ed altri. Compatibile solamente con i browser più recenti, sfortunatamente non esistono formati supportati da tutti i browser esistenti. Un modo per risolvere il problema è quello di specificare dei fallback separati dal carattere # (ad esempio http://example.org/audio.acc#http://example.org/audio.acc#http://example.org/audio.mp3#). Il player QuickTime viene utilizzato come fallback per i browser più antiquati ed il fallback può essere qualsiasi tipo di audio.';
 $string['html5video'] = 'Video HTML 5';
 $string['html5video_desc'] = 'File video con estensione *.webm, *.m4v, *.ogv, *.mp4 ed altri. Compatibile solamente con i browser più recenti, sfortunatamente non esistono formati supportati da tutti i browser esistenti. Un modo per risolvere il problema è quello di specificare dei fallback separati dal carattere # (ad esempio http://example.org/video.m4v#http://example.org/video.acc#http://example.org/video.ogv#d=640x480). Il player QuickTime viene utilizzato come fallback per i browser più antiquati.';
-$string['legacyheading'] = 'Media player legacy';
+$string['legacyheading'] = 'Riproduttori multimediali obsoleti';
 $string['legacyheading_desc'] = 'L\'uso dei formati che seguono è sconsigliato, di norma sono utilizzati in installazioni intranet con client gestiti centralmente.';
 $string['legacyquicktime'] = 'QuickTime player';
 $string['legacyquicktime_desc'] = 'File con estensione *.mov, *.mp4, *.m4a, e *.mpg. Prerequisito è il player oppure i codec QuickTime.';
@@ -41,7 +41,7 @@ $string['legacyreal'] = 'Real media player';
 $string['legacyreal_desc'] = 'File con estensione *.rm, *.ra, *.ram, *.rp, *.rv. Prerequisito è il RealPlayer.';
 $string['legacywmp'] = 'Windows media player';
 $string['legacywmp_desc'] = 'File con estensione *.avi e *.wmv. E\' pienamente compatibile con Internet Explorer su Windows, potrebbe presentare qualche probelma con browser o sistemi operativi di altro tipo.';
-$string['mediaformats'] = 'Player disponibili';
+$string['mediaformats'] = 'Riproduttori disponibili';
 $string['mediaformats_desc'] = 'Abilitando i player tramite le impostazioni seguenti, sarà possibile incorporare file multimediali tramite il filtro Plugin multimediali (se abilitato) oppure tramite risorse di tipo File o URL usando l\'opzione \'Incorpora\'. Se un player non è abilitato, non sarà possibile incorporare quel tipo di media e gli utenti dovranno scaricare il file o seguire il link.
 
 Se due player supportano lo stesso formato, abilitarli entrambi aumenta la compatibilità tra dispositivi diversi, come ad esempio i telefoni cellulari. E\' anche possibile aumentare ulteriormente la compatibilità fornendo più versioni in formati diversi dello stesso clip audio o video.';

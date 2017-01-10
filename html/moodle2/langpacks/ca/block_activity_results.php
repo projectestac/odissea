@@ -54,5 +54,5 @@ $string['pluginname'] = 'Resultats d\'activitat';
 $string['unknown'] = 'Escala desconeguda';
 $string['worstgrade'] = 'La nota més baixa:';
 $string['worstgrades'] = 'Les {$a} notes més baixes:';
-$string['worstgroupgrade'] = 'worstgroupgrade';
+$string['worstgroupgrade'] = 'El grup amb la mitjana més baixa:';
 $string['worstgroupgrades'] = 'Els {$a} grups amb la mitjana més baixa:';

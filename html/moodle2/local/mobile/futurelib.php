@@ -158,5 +158,188 @@ class local_mobile_mod_quiz_external extends mod_quiz_external {
             }
         }
     }
+}
 
+require_once("$CFG->dirroot/course/lib.php");
+
+if (!function_exists('course_get_user_navigation_options')) {
+    /**
+     * Return an object with the list of navigation options in a course that are avaialable or not for the current user.
+     * This function also handles the frontpage course.
+     *
+     * @param  stdClass $context context object (it can be a course context or the system context for frontpage settings)
+     * @param  stdClass $course  the course where the settings are being rendered
+     * @return stdClass          the navigation options in a course and their availability status
+     * @since  Moodle 3.2
+     */
+    function course_get_user_navigation_options($context, $course = null) {
+        global $CFG;
+
+        $isloggedin = isloggedin();
+        $isguestuser = isguestuser();
+        $isfrontpage = $context->contextlevel == CONTEXT_SYSTEM;
+
+        if ($isfrontpage) {
+            $sitecontext = $context;
+        } else {
+            $sitecontext = context_system::instance();
+        }
+
+        $options = new stdClass;
+        $options->blogs = !empty($CFG->enableblogs) &&
+                            ($CFG->bloglevel == BLOG_GLOBAL_LEVEL ||
+                            ($CFG->bloglevel == BLOG_SITE_LEVEL and ($isloggedin and !$isguestuser)))
+                            && has_capability('moodle/blog:view', $sitecontext);
+
+        $options->notes = !empty($CFG->enablenotes) && has_any_capability(array('moodle/notes:manage', 'moodle/notes:view'), $context);
+
+        // Frontpage settings?
+        if ($isfrontpage) {
+            if ($course->id == SITEID) {
+                $options->participants = has_capability('moodle/site:viewparticipants', $sitecontext);
+            } else {
+                $options->participants = has_capability('moodle/course:viewparticipants', context_course::instance($course->id));
+            }
+
+            $options->badges = !empty($CFG->enablebadges) && has_capability('moodle/badges:viewbadges', $sitecontext);
+            $options->tags = !empty($CFG->usetags) && $isloggedin;
+            $options->search = !empty($CFG->enableglobalsearch) && has_capability('moodle/search:query', $sitecontext);
+            $options->calendar = $isloggedin;
+        } else {
+            $options->participants = has_capability('moodle/course:viewparticipants', $context);
+            $options->badges = !empty($CFG->enablebadges) && !empty($CFG->badges_allowcoursebadges) &&
+                                has_capability('moodle/badges:viewbadges', $context);
+            // Add view grade report is permitted.
+            $grades = false;
+
+            if (has_capability('moodle/grade:viewall', $context)) {
+                $grades = true;
+            } else if (!empty($course->showgrades)) {
+                $reports = core_component::get_plugin_list('gradereport');
+                if (is_array($reports) && count($reports) > 0) {  // Get all installed reports.
+                    arsort($reports);   // User is last, we want to test it first.
+                    foreach ($reports as $plugin => $plugindir) {
+                        if (has_capability('gradereport/'.$plugin.':view', $context)) {
+                            // Stop when the first visible plugin is found.
+                            $grades = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            $options->grades = $grades;
+        }
+
+        if (\core_competency\api::is_enabled()) {
+            $capabilities = array('moodle/competency:coursecompetencyview', 'moodle/competency:coursecompetencymanage');
+            $options->competencies = has_any_capability($capabilities, $context);
+        }
+        return $options;
+    }
+}
+
+if (!function_exists('course_get_user_administration_options')) {
+    /**
+     * Return an object with the list of administration options in a course that are available or not for the current user.
+     * This function also handles the frontpage settings.
+     *
+     * @param  stdClass $course  course object (for frontpage it should be a clone of $SITE)
+     * @param  stdClass $context context object (course context)
+     * @return stdClass          the administration options in a course and their availability status
+     * @since  Moodle 3.2
+     */
+    function course_get_user_administration_options($course, $context) {
+        global $CFG;
+        $isfrontpage = $course->id == SITEID;
+
+        $options = new stdClass;
+        $options->update = has_capability('moodle/course:update', $context);
+        $options->filters = has_capability('moodle/filter:manage', $context) &&
+                            count(filter_get_available_in_context($context)) > 0;
+        $options->reports = has_capability('moodle/site:viewreports', $context);
+        $options->backup = has_capability('moodle/backup:backupcourse', $context);
+        $options->restore = has_capability('moodle/restore:restorecourse', $context);
+        $options->files = $course->legacyfiles == 2 and has_capability('moodle/course:managefiles', $context);
+
+        if (!$isfrontpage) {
+            $options->tags = has_capability('moodle/course:tag', $context);
+            $options->gradebook = has_capability('moodle/grade:manage', $context);
+            $options->outcomes = !empty($CFG->enableoutcomes) && has_capability('moodle/course:update', $context);
+            $options->badges = !empty($CFG->enablebadges);
+            $options->import = has_capability('moodle/restore:restoretargetimport', $context);
+            $options->publish = has_capability('moodle/course:publish', $context);
+            $options->reset = has_capability('moodle/course:reset', $context);
+            $options->roles = has_capability('moodle/role:switchroles', $context);
+        } else {
+            // Set default options to false.
+            $listofoptions = array('tags', 'gradebook', 'outcomes', 'badges', 'import', 'publish', 'reset', 'roles', 'grades');
+
+            foreach ($listofoptions as $option) {
+                $options->$option = false;
+            }
+        }
+
+        return $options;
+    }
+}
+
+require_once("$CFG->dirroot/user/lib.php");
+
+/**
+ * Updates the provided users profile picture based upon the expected fields returned from the edit or edit_advanced forms.
+ *
+ * @param stdClass $usernew An object that contains some information about the user being updated
+ * @param array $filemanageroptions
+ * @return bool True if the user was updated, false if it stayed the same.
+ */
+function local_mobile_core_user_update_picture(stdClass $usernew, $filemanageroptions = array()) {
+    global $CFG, $DB;
+    require_once("$CFG->libdir/gdlib.php");
+
+    $context = context_user::instance($usernew->id, MUST_EXIST);
+    $user = core_user::get_user($usernew->id, 'id, picture', MUST_EXIST);
+
+    $newpicture = $user->picture;
+    // Get file_storage to process files.
+    $fs = get_file_storage();
+    if (!empty($usernew->deletepicture)) {
+        // The user has chosen to delete the selected users picture.
+        $fs->delete_area_files($context->id, 'user', 'icon'); // Drop all images in area.
+        $newpicture = 0;
+
+    } else {
+        // Save newly uploaded file, this will avoid context mismatch for newly created users.
+        file_save_draft_area_files($usernew->imagefile, $context->id, 'user', 'newicon', 0, $filemanageroptions);
+        if (($iconfiles = $fs->get_area_files($context->id, 'user', 'newicon')) && count($iconfiles) == 2) {
+            // Get file which was uploaded in draft area.
+            foreach ($iconfiles as $file) {
+                if (!$file->is_directory()) {
+                    break;
+                }
+            }
+            // Copy file to temporary location and the send it for processing icon.
+            if ($iconfile = $file->copy_content_to_temp()) {
+                // There is a new image that has been uploaded.
+                // Process the new image and set the user to make use of it.
+                // NOTE: Uploaded images always take over Gravatar.
+                $newpicture = (int)process_new_icon($context, 'user', 'icon', 0, $iconfile);
+                // Delete temporary file.
+                @unlink($iconfile);
+                // Remove uploaded file.
+                $fs->delete_area_files($context->id, 'user', 'newicon');
+            } else {
+                // Something went wrong while creating temp file.
+                // Remove uploaded file.
+                $fs->delete_area_files($context->id, 'user', 'newicon');
+                return false;
+            }
+        }
+    }
+
+    if ($newpicture != $user->picture) {
+        $DB->set_field('user', 'picture', $newpicture, array('id' => $user->id));
+        return true;
+    } else {
+        return false;
+    }
 }

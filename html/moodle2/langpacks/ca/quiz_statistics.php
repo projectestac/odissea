@@ -84,6 +84,7 @@ $string['negcovar_help'] = 'La qualificació d\'aquesta pregunta en aquesta sèr
 L\'equació per al càlcul de la ponderació efectiva de la pregunta no es pot aplicar en aquest cas. El càlcul de la ponderació efectiva de les altres preguntes del qüestionari s\'ha calculat considerant que les preguntes remarcades (amb covariància negativa) tenen com a valor màxim zero.
 
 Si es modifiqués el qüestionari i es donés a aquestes preguntes amb covariància negativa un valor màxim de zero, aleshores la ponderació efectiva de la pregunta en aquests casos seria zero i, per a la resta de preguntes, el valor real de la ponderació efectiva de la pregunta seria aquest que s\'ha calculat ara.';
+$string['nogradedattempts'] = 'No s\'han fet intents en aquest qüestionari, o tots els intents tenen preguntes que requereixen la vostra qualificació manual.';
 $string['nostudentsingroup'] = 'Encara no hi ha estudiants en aquest grup';
 $string['optiongrade'] = 'Crèdit parcial';
 $string['partofquestion'] = 'Part de la pregunta';

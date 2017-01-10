@@ -33,3 +33,5 @@ $string['myplans'] = 'I miei piani di formazione';
 $string['noactiveplans'] = 'Non ci sono piani di formazione attivi.';
 $string['planstoreview'] = 'Piano da revisionare';
 $string['pluginname'] = 'Piani di formazione';
+$string['viewmore'] = 'Visualizza più elementi...';
+$string['viewotherplans'] = 'Visualizza altri piani...';

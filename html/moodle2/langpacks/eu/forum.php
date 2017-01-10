@@ -73,7 +73,7 @@ $string['cannotmovetosingleforum'] = 'Ezin da eztabaida mugitu eztabaida arrunt 
 $string['cannotpurgecachedrss'] = 'Ezin izan da jatorrizko edota helburuko foroaren RSS jarioaren cache-a ezabatu - aztertu zure permissionforums fitxategia';
 $string['cannotremovesubscriber'] = 'Ezin da {$a} id-a duen harpideduna kendu foro honetatik!';
 $string['cannotreply'] = 'Ezin diozu mezu honi erantzun';
-$string['cannotsplit'] = 'Foro honetako eztabaidak ezin dira banatu';
+$string['cannotsplit'] = 'Foro honetako eztabaidak ezin dira bereizi';
 $string['cannotsubscribe'] = 'Barkatu, baina taldekidea izan behar duzu harpidetzeko';
 $string['cannottrack'] = 'Ezin zaio foro honi jarraitzeari utzi';
 $string['cannotunsubscribe'] = 'Ezin duzu foro honetatik harpidetza kendu';
@@ -97,7 +97,7 @@ $string['configdigestmailtime'] = 'Aukera hori hartzen dutenei posten laburpena 
 $string['configdisplaymode'] = 'Besterik adierazi ezean, eztabaida honela ikusiko da';
 $string['configenablerssfeeds'] = 'Honek RSS jarioetarako aukera gaitzen du foro guztietarako. Ondoren foro bakoitzeko ezarpenetan gaitu beharko dituzu jarioak.';
 $string['configenabletimedposts'] = 'Aukeratu \'bai\' foroan beste eztabaida bat erakusteko denbora tarteen ezarpenak egiten uzteko.';
-$string['configlongpost'] = 'Luzera hau gainditzen duen mezua (HTML kodea albo batera utzirik) luzeegitzat jotzen da. Gunearen hasiera-orrian, formatu irekia duten ikastaro orrian edo erabiltzaile profiletan erakutsitako mezuak laburtuko dira forum_shortpost eta forum_longpost arteko tamaina natural bateraino.Luzera hau gainditzen duen mezua (HTML kodea albo batera utzirik) luzeegitzat jotzen da.';
+$string['configlongpost'] = 'Luzera hau gainditzen duen mezua (HTML kodea albo batera utzirik) luzeegitzat jotzen da. Gunearen hasiera-orrian, foro-formatua duten ikastaroetako orrietan edo erabiltzaile-profiletan erakutsitako mezuak laburtuko dira forum_shortpost eta forum_longpost arteko tamaina natural bateraino. Luzera hau gainditzen duen mezua (HTML kodea albo batera utzirik) luzeegitzat jotzen da.';
 $string['configmanydiscussions'] = 'Orrialde bakoitzean gehienez zenbat mezu edo eztabaida erakutsi behar diren';
 $string['configmaxattachments'] = 'Berezko gehienezko eranskin kopurua mezuko.';
 $string['configmaxbytes'] = 'Gune honetan foroetako mezuen eranskinek izan dezaketen gehienezko tamaina, besterik adierazi ezean (zerbitzariaren ezarpenen eta ikastaroaren mugen baitan)';
@@ -248,7 +248,7 @@ $string['forum:rate'] = 'Mezuak kalifikatu';
 $string['forum:replynews'] = 'Albisteei erantzun';
 $string['forum:replypost'] = 'Mezuei erantzun';
 $string['forums'] = 'Foroak';
-$string['forum:splitdiscussions'] = 'Eztabaidak bereizi';
+$string['forum:splitdiscussions'] = 'Bereizi eztabaidak';
 $string['forum:startdiscussion'] = 'Beste eztabaida bat hasi';
 $string['forumsubjecthidden'] = 'Gaia (ezkutuan)';
 $string['forumtracked'] = 'Irakurri gabeko mezuak arakatzen ari dira';
@@ -257,11 +257,10 @@ $string['forumtype'] = 'Foro-mota';
 $string['forumtype_help'] = '5 foro-mota daude:
 
 * Eztabaida arrunt bakarra - Gai bakarrari buruzko ideia-trukea da eta edozeinek erantzun dezake (ez du funtzionatzen banatutako taldeekin).
-* Pertsona bakoitzak eztabaida bat bidaltzen du - Pertsona bakoitzak
-zehazki eztabaida gai berri bat bidal dezake eta guztiek erantzun dezakete. * Galdera eta Erantzuna motako foroa - Ikasleek euren mezua bidali behar dute beste ikasleen mezuak ikusi ahal izateko.
+* Pertsona bakoitzak eztabaida bat bidaltzen du - Pertsona bakoitzak zehazki eztabaida gai berri bat bidal dezake eta guztiek erantzun dezakete.
+* Galdera eta Erantzuna motako foroa - Ikasleek euren mezua bidali behar dute beste ikasleen mezuak ikusi ahal izateko.
 * Blog formatuan erakutsitako erabilera arrunteko foroa - Edozeinek edonoiz eztabaida berriari ekin ahal dion foro irekia. Eztabaida-gaiak "Gai hau eztabaidatu" estekarekin agertuko dira orrian
-* Erabilera orokorreko foro arrunta - Foro irekia da, eta bertan
-edonork has dezake gai berri bat edozein unetan.';
+* Erabilera orokorreko foro arrunta - Foro irekia da, eta bertan edonork has dezake gai berri bat edozein unetan.';
 $string['forum:viewallratings'] = 'Erabiltzaileek emandako kalifikazio guztiak ikusi';
 $string['forum:viewanyrating'] = 'Besteren batek denera jasotako kalifikazioak ikusi';
 $string['forum:viewdiscussion'] = 'Eztabaidak ikusi';
@@ -422,9 +421,9 @@ $string['potentialsubscribers'] = 'Balizko harpidedunak';
 $string['prevdiscussiona'] = 'Aurreko harpidetza: {$a}';
 $string['processingdigest'] = 'Mezuen banaketa bidaltzen ondorengo erabiltzailearentzat: {$a}';
 $string['processingpost'] = '{$a} mezuaren bidalketa ari da';
-$string['prune'] = 'Berezi';
+$string['prune'] = 'Bereizi';
 $string['prunedpost'] = 'Eztabaida berria sortu da mezu hau erabiliz';
-$string['pruneheading'] = 'Mezu hau abiapuntu hartuta, sortu eztabaida berri bat foroan';
+$string['pruneheading'] = 'Bereizi eztabaida eta mugitu mezu hau eztabaida berri batera';
 $string['qandaforum'] = 'G eta E foroa';
 $string['qandanotify'] = 'Foro hau galdera-erantzun motakoa da. Beste erantzun batzuk ikasi ahal izateko, lehenik zeure erantzuna bidali behar duzu';
 $string['re'] = 'Er:';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Leerfeld für {no} weitere Wahlmöglichkeiten';
 $string['answer'] = 'Antwort';
+$string['blank'] = 'leer';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['infinite'] = 'Unbegrenzt';
 $string['pleaseputananswerineachbox'] = 'Schieben Sie eine Antwort in jedes Feld.';

@@ -624,6 +624,7 @@ $string['legacyfilesaddallowed'] = 'Permettre l\'ajout de fichiers aux fichiers 
 $string['legacyfilesaddallowed_help'] = 'Si un cours contient des fichiers de cours obsolètes, permettre d\'y ajouter de nouveaux fichiers et dossiers.';
 $string['legacyfilesinnewcourses'] = 'Fichiers du cours (obsolète) dans les nouveaux cours';
 $string['legacyfilesinnewcourses_help'] = 'Par défaut, les zones de fichiers du cours (obsolètes) ne sont disponibles que dans les cours provenant de mises à jour de versions antérieures. Veuillez prendre note que certaines fonctionnalités, notamment la sauvegarde et la restauration d\'une activité unique, ne sont pas compatibles avec ce réglage.';
+$string['libcurlwarning'] = 'La bibliothèque libcurl détectée ne supporte pas  CURLOPT_PROTOCOL. Pour des raisons de sécurité, il est recommandé de mettre à jour libcurl.';
 $string['licensesettings'] = 'Réglages de licence';
 $string['linkadmincategories'] = 'Lier les catégories de l\'administration';
 $string['linkadmincategories_help'] = 'Si ce réglage est activé, les catégories des paramètres de l\'administration seront affichées dans la navigation comme des liens menant aux pages des diverses catégories.';
@@ -1081,6 +1082,7 @@ $string['unsupported'] = 'Non supporté';
 $string['unsupporteddbstorageengine'] = 'Le moteur de base de données utilisé n\'est plus supporté.';
 $string['unsupporteddbtablerowformat'] = 'Votre base de données comporte des tables qui utilisent le format de fichier Antelope. Il vous est vivement recommandé de convertir les tables au format de fichier Barracuda. Veuillez consulter la <a href="https://docs.moodle.org/2x/fr/Administration_en_ligne_de_commande">documentation sur l\'Administration en ligne de commande</a> pour des informations détaillées sur l\'<a href="https://docs.moodle.org/2x/fr/Administration_en_ligne_de_commande#Conversion_des_tables_InnoDB_au_format_Barracuda">outil de conversion des tables InnoDB en format Barracuda</a>.';
 $string['unsupportedphpversion7'] = 'La version 7 de PHP n\'est pas supportée.';
+$string['unsupportedphpversion71'] = 'La version 7.1 de PHP n\'est pas supportée.';
 $string['unsuspenduser'] = 'Activez le compte utilisateur';
 $string['updateaccounts'] = 'Modifier des comptes existants';
 $string['updateautocheck'] = 'Chercher automatiquement les mises à jour disponibles';

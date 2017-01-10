@@ -431,8 +431,8 @@ class core_course_external extends external_api {
 
             $courseinfo = array();
             $courseinfo['id'] = $course->id;
-            $courseinfo['fullname'] = $course->fullname;
-            $courseinfo['shortname'] = $course->shortname;
+            $courseinfo['fullname'] = external_format_string($course->fullname, $context->id);
+            $courseinfo['shortname'] = external_format_string($course->shortname, $context->id);
             $courseinfo['displayname'] = external_format_string(get_course_display_name_for_list($course), $context->id);
             $courseinfo['categoryid'] = $course->category;
             list($courseinfo['summary'], $courseinfo['summaryformat']) =
@@ -1613,12 +1613,6 @@ class core_course_external extends external_api {
                 if (isset($excludedcats[$parentid]) and $excludedcats[$parentid] != 'context') {
                     $excludedcats[$category->id] = 'parent';
                 }
-            }
-
-            // Check category depth is <= maxdepth (do not check for user who can manage categories).
-            if ((!empty($CFG->maxcategorydepth) && count($parents) > $CFG->maxcategorydepth)
-                    and !has_capability('moodle/category:manage', $context)) {
-                $excludedcats[$category->id] = 'depth';
             }
 
             // Check the user can use the category context.

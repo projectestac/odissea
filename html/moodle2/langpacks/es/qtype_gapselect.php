@@ -27,4 +27,18 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['answer'] = 'Respuesta';
 $string['choices'] = 'Opciones';
+$string['correctansweris'] = 'La respuesta correcta es: {$a}';
+$string['errorblankchoice'] = 'Por favor, comproba su opción: la opción {$a} está vacía.';
+$string['errormissingchoice'] = 'Compruebe el texto de la pregunta: {$a} no se ha encontrado en las opciones! Sólo los números con respuestas de elección especificadas se permiten utilizar como titulares de lugar (\'place holders\').';
+$string['errornoslots'] = 'El texto de la pregunta debe contener marcadores de posición (\'place holders\') como por ejemplo [[1]] para mostrar dónde van las palabras que faltan.';
+$string['errorquestiontextblank'] = 'Es necesario introducir un texto de pregunta.';
+$string['group'] = 'Grupo';
+$string['pleaseputananswerineachbox'] = 'Elige una respuesta en cada caja.';
+$string['pluginname'] = 'Elige la palabra perdida';
+$string['pluginnameadding'] = 'Añadir una pregunta de selección de palabras perdidas';
+$string['pluginnameediting'] = 'Edición de una pregunta de selección de palabras perdidas';
+$string['pluginname_help'] = 'Seleccione las palabras perdidas. Las preguntas requieren que el encuestado seleccione las respuestas correctas en los menús desplegables. [[1]], [[2]], [[3]], ... se utilizan como marcadores de posición (\'place holders\') en el texto de la pregunta, con las respuestas correctas especificadas como respuestas de elección 1, 2, 3, ... respectivamente. Se pueden agregar respuestas de elección extra para hacer la pregunta más difícil. Las respuestas de elección pueden agruparse para restringir las respuestas disponibles en cada menú desplegable.';
+$string['pluginnamesummary'] = 'Las palabras que faltan en el texto de la pregunta se rellenan mediante los menús desplegables.';
 $string['shuffle'] = 'Barajar';
+$string['tagsnotallowed'] = '{$a->tag} no está permitido. (Solamente {$a->allowed} están permetidos.)';
+$string['tagsnotallowedatall'] = '{$a->tag) no está permitido. (No se permite usar código HTML aquí.)';

@@ -149,7 +149,7 @@ class multiple extends single {
         $extraselect = '';
         //XTEC ************ MODIFICAT - To fix bug with CSV export
         //2016.08.31 @sarjona
-        $extraselect .= 'qrm.choice_id, '.$DB->sql_compare_text('qro.response').', 0 AS rank';
+        $extraselect .= 'qrm.choice_id, '.$DB->sql_order_by_text('qro.response', 1000).', 0 AS rank';
         //************ ORIGINAL
         /*
         $extraselect .= 'qrm.choice_id, qro.response, 0 AS rank';

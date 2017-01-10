@@ -83,6 +83,8 @@ $string['cannotunsubscribe'] = 'Δεν ήταν δυνατόν να σας απ�
 $string['cannotupdatepost'] = 'Δεν μπορείτε να ενημερώσετε αυτή τη δημοσίευση';
 $string['cannotviewpostyet'] = 'Δεν μπορείτε να διαβάσετε τις ερωτήσεις των άλλων μαθητών σε αυτή τη συζήτηση ακόμα γιατί δεν έχετε δημοσιεύσει κάτι';
 $string['cleanreadtime'] = 'Η ώρα που θα σημειώνονται οι παλιές δημοσιεύσεις ως αναγνωσμένες';
+$string['clicktosubscribe'] = 'Δεν έχετε εγγραφεί σε αυτή τη συζήτηση. Κάντε κλικ για να εγγραφείτε.';
+$string['clicktounsubscribe'] = 'Έχετε εγγραφεί σε αυτή τη συζήτηση. Κάντε κλικ για να ξεγραφτείτε.';
 $string['completiondiscussions'] = 'Οι χρήστες πρέπει να δημιουργούν συζητήσεις:';
 $string['completiondiscussionsgroup'] = 'Απαιτούνται συζητήσεις';
 $string['completiondiscussionshelp'] = 'απαιτούνται συζητήσεις για την ολοκλήρωση';
@@ -107,7 +109,7 @@ $string['configshortpost'] = 'Οποιοδήποτε μήνυμα μικρότε
 $string['configtrackreadposts'] = 'Ρυθμίστε το σε \'ναι\' εάν θέλετε να παρακολουθείτε το αναγνωσμένο/μη-αναγνωσμένο για κάθε χρήστη.';
 $string['configusermarksread'] = 'Εάν \'ναι\', ο χρήστης πρέπει να ρυθμίζει χειροκίνητα μια δημοσίευση ως αναγνωσμένη. Εάν \'όχι\', όταν μια δημοσίευση εμφανίζεται χαρακτηρίζεται ως αναγνωσμένη.';
 $string['couldnotadd'] = 'Δεν ήταν δυνατή η προσθήκη του μηνύματός σας λόγω άγνωστου σφάλματος';
-$string['couldnotdeletereplies'] = 'Συγνώμη, αυτό δεν μπορεί να διαγραφεί γιατί υπάρχουν ήδη χρήστες που έχουν απαντήσει σε αυτό';
+$string['couldnotdeletereplies'] = 'Συγγνώμη, αυτό δεν μπορεί να διαγραφεί γιατί υπάρχουν ήδη χρήστες που έχουν απαντήσει σε αυτό';
 $string['couldnotupdate'] = 'Δεν ήταν δυνατή η ενημέρωση του μηνύματός σας λόγω άγνωστου σφάλματος';
 $string['delete'] = 'Διαγραφή';
 $string['deleteddiscussion'] = 'Το θέμα συζήτησης διαγράφηκε';
@@ -126,9 +128,13 @@ $string['discussion'] = 'Συζήτηση';
 $string['discussionmoved'] = 'Αυτή η συζήτηση έχει μετακινηθεί στο \'{$a}\'.';
 $string['discussionmovedpost'] = 'Αυτή η συζήτηση έχει μετακινηθεί <a href="{$a->discusshref}">εδώ</a> στην ομάδα συζητήσεων <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Όνομα συζήτησης';
+$string['discussionpin'] = 'Καρφίτσωμα';
+$string['discussionpinned'] = 'Καρφιτσωμένο';
 $string['discussions'] = 'Συζητήσεις';
 $string['discussionsstartedby'] = 'Συζητήσεις που ξεκίνησαν από {$a}';
 $string['discussionsstartedbyrecent'] = 'Συζητήσεις που ξεκίνησαν πρόσφατα από {$a}';
+$string['discussionsubscription'] = 'Εγγραφή στη συζήτηση';
+$string['discussionsubscription_help'] = 'Κάνοντας εγγραφή στη συζήτηση σημαίνει ότι θα λαμβάνετε ειδοποιήσεις όταν γίνονται νέα posts σε αυτή τη συζήτηση.';
 $string['discussthistopic'] = 'Συζήτηση αυτού του θέματος';
 $string['displayend'] = 'Εμφάνιση τέλους';
 $string['displayend_help'] = '<p align="center"><strong>Χρονικό διάστημα εμφάνισης Φόρουμ</strong></p>
@@ -189,7 +195,7 @@ $string['forum:postwithoutthrottling'] = 'Εξαίρεση από κατώτατ
 $string['forum:rate'] = 'Βαθμολόγηση δημοσιεύσεων';
 $string['forum:replynews'] = 'Απάντηση στα νέα';
 $string['forum:replypost'] = 'Απάντηση στις δημοσιεύσεις';
-$string['forums'] = 'Ομάδς Συζητήσεων';
+$string['forums'] = 'Ομάδες Συζητήσεων';
 $string['forum:splitdiscussions'] = 'Διαχωρισμός συζητήσεων';
 $string['forum:startdiscussion'] = 'Έναρξη νέας συζήτησης';
 $string['forumsubjecthidden'] = 'Θέμα (κρυμμένο)';
@@ -234,7 +240,7 @@ $string['invalidpostid'] = 'Μη έγκυρο αναγνωριστικό δημ�
 $string['lastpost'] = 'Τελευταίο μήνυμα';
 $string['learningforums'] = 'Εκπαιδευτικές ομάδες συζητήσεων';
 $string['longpost'] = 'Μεγάλη δημοσίευση';
-$string['mailnow'] = 'Αποστολή ηλεκτρονικού ταχυδρομείου τώρα';
+$string['mailnow'] = 'Αποστολή ειδοποιήσεων χωρίς αναμονή του χρόνου επεξεργασίας αναρτήσεων';
 $string['manydiscussions'] = 'Συζητήσεις ανά σελίδα';
 $string['markalldread'] = 'Χαρακτηρισμός όλων των δημοσιεύσεων σε αυτήν τη συζήτηση ως αναγνωσμένες.';
 $string['markallread'] = 'Χαρακτηρισμός όλων των δημοσιεύσεων σε αυτή την ομάδα συζητήσεων ως αναγνωσμένες.';
@@ -259,7 +265,7 @@ $string['maxattachmentsize_help'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.
 <p>Μερικές φορές είναι πιθανό να φορτωθεί ένα αρχείο μεγαλύτερο από το ορισμένο μέγεθος , αλλά το αρχείο δεν θα αποθηκευτεί στον διακομιστή και μπορεί να αναφερθεί λάθος.</p>
 </body>
 </html>';
-$string['maxtimehaspassed'] = 'Συγνώμη, αλλά ο μέγιστος χρόνος για την επεξεργασία αυτού του μηνύματος ({$a})έχει παρέλθει!';
+$string['maxtimehaspassed'] = 'Συγγνώμη, αλλά ο μέγιστος χρόνος για την επεξεργασία αυτού του μηνύματος ({$a})έχει παρέλθει!';
 $string['message'] = 'Μήνυμα';
 $string['messageprovider:digests'] = 'Συνόψεις ομάδων συζτητήσεων που υπάρχει συνδρομή';
 $string['messageprovider:posts'] = 'Δημοσιεύσεις ομάδων συζτητήσεων που υπάρχει συνδρομή';
@@ -289,7 +295,7 @@ $string['nomorepostscontaining'] = 'Δεν βρέθηκαν άλλα μηνύμ�
 $string['nonews'] = 'Δεν έχουν αναρτηθεί ακόμα ειδήσεις';
 $string['nopermissiontosubscribe'] = 'Δεν έχετε το δικαίωμα να δείτε τους συνδρομητές της ομάδας συζητήσεων';
 $string['nopermissiontoview'] = 'Δεν έχετε δικαίωμα να δείτε αυτή την δημοσίευση';
-$string['nopostforum'] = 'Συγνώμη, δεν μπορείτε να δημοσιεύσετε σε αυτή την ομάδα συζητήσεων';
+$string['nopostforum'] = 'Συγγνώμη, δεν μπορείτε να δημοσιεύσετε σε αυτή την ομάδα συζητήσεων';
 $string['noposts'] = 'Δεν βρέθηκαν μηνύματα';
 $string['nopostsmadebyyou'] = 'Δεν έχετε δημοσιεύσει κάποια απάντηση';
 $string['noquestions'] = 'Δεν υπάρχουν ερωτήσεις ακόμα σε αυτό την ομάδα συζητήσεων';
@@ -315,7 +321,7 @@ $string['overviewnumpostssince'] = '{$a} δημοσιεύσεις από την 
 $string['overviewnumunread'] = 'σύνολο μη αναγνωσμένων';
 $string['parent'] = 'Εμφάνιση γονέα';
 $string['parentofthispost'] = 'Γονέας αυτού του μηνύματος';
-$string['pluginadministration'] = 'Διαχείρηση ομάδων συζητήσεων';
+$string['pluginadministration'] = 'Διαχείριση ομάδων συζητήσεων';
 $string['pluginname'] = 'Ομάδα Συζητήσεων';
 $string['postadded'] = '<p>Το μήνυμά σας προστέθηκε επιτυχώς.</p> <p> Έχετε {$a} να το επεξεργαστείτε αν θέλετε να κάνετε αλλαγές.</p>';
 $string['postaddedsuccess'] = 'Η δημοσίευση σας προστέθηκε με επιτυχία.';
@@ -323,6 +329,9 @@ $string['postaddedtimeleft'] = 'Έχετε {$a} για να την επεξερ�
 $string['postincontext'] = 'Δείτε αυτό το μήνυμα σε πλαίσιο';
 $string['postmailinfo'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που δημοσιεύτηκε στην {$a} ιστοσελίδα.
 Για να προσθέσετε την απάντησή σας μέσω της ιστοσελίδας, πατήστε σε αυτόν το σύνδεσμο:';
+$string['postmailinfolink'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που δημοσιεύτηκε στο {$a->coursename}.
+
+Για να απαντήσετε, πατήστε σε αυτόν το σύνδεσμο: {$a->replylink}';
 $string['postmailnow'] = '<p> Αυτή η δημοσίευση θα αποσταλεί αμέσως με ηλεκτρονικό ταχυδρομείο σε όλους τους συνδρομητές της ομάδας συζητήσεων. </p>';
 $string['postrating1'] = 'Δείχνει περισσότερο ξεχωριστή γνώση';
 $string['postrating2'] = 'Εξίσου χώρισε και συνέδεσε';

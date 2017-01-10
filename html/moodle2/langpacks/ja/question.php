@@ -69,7 +69,7 @@ $string['cannotpreview'] = 'あなたはこれらの問題をプレビューで�
 $string['cannotread'] = 'インポートファイルを読めません (またはファイルが空です)。';
 $string['cannotretrieveqcat'] = '問題カテゴリを検索できませんでした。';
 $string['cannotunhidequestion'] = '問題の非表示解除に失敗しました。';
-$string['cannotunzip'] = 'ZIPファイルを解凍できません。';
+$string['cannotunzip'] = 'ZIPファイルを展開できません。';
 $string['cannotwriteto'] = '{$a} にエクスポート問題を書き込めません。';
 $string['categories'] = 'カテゴリ';
 $string['category'] = 'カテゴリ';
@@ -197,7 +197,7 @@ $string['hintn'] = 'ヒント {no}';
 $string['hintnoptions'] = 'ヒント {no} オプション';
 $string['hinttext'] = 'ヒントテキスト';
 $string['howquestionsbehave'] = '問題動作';
-$string['howquestionsbehave_help'] = '学生は小テスト内の問題に対して、様々に異なる方法で接することができます。例えば、あなたが学生にそれぞれの問題で答えを入力した後、評定またはフィードバックの前に小テストすべてを送信してもらいたい場合もあるでしょう。これには「遅延フィードバック」モードを使用します。
+$string['howquestionsbehave_help'] = '学生は小テスト内の問題に対して、様々に異なる方法で接することができます。例えばあなたが学生にそれぞれの問題で答えを入力した後、評定またはフィードバックの前に小テストすべてを送信してもらいたい場合もあるでしょう。これには「遅延フィードバック」モードを使用します。
 
 代わりにあなたが学生に即時フィードバックを与えて、すぐに正解できない場合に評点の低い次の受験に挑戦させたいとします。これには「複数受験インタラクティブ」モードを使用します。
 

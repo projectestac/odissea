@@ -87,15 +87,15 @@ $string['methodnormal'] = 'Mètode normal';
 $string['modulename'] = 'Xat';
 $string['modulename_help'] = 'El mòdul d\'activitat de xat permet que els participants mantinguin una conversa escrita sincrònica, en temps real.
 
-El xat pot ser una activitat d\'una sola vegada o es pot repetir a la mateixa hora cada dia o cada setmana. Les sessions de xat es desen i es poden posar a disposició de tothom per llegir-les o restringir als usuaris amb la capacitat de veure els registres de sessions de xat.
+El xat pot ser una activitat d\'una sola vegada o es pot repetir a la mateixa hora cada dia o cada setmana. Les sessions de xat es desen i es poden posar a disposició de tothom per llegir-les o es poden restringir als usuaris amb la capacitat de veure els registres de sessions de xat.
 
-Els xats són especialment útils quan el grup no no es pot trobar presencialment. Exemples:
+Els xats són especialment útils quan el grup no es pot trobar presencialment. Exemples:
 
 * Reunions periòdiques d\'estudiants que participen en cursos en línia, de manera que puguin compartir experiències amb altres participants del mateix curs però que no resideixen al mateix lloc.
-* Un estudiant que temporalment no pot assistir en persona pot parlar així amb el professorat per mantenir-se al corrent de la feina.
+* Un estudiant que temporalment no pot assistir en persona pot parlar així amb el professor per mantenir-se al corrent de la feina.
 * Els estudiants més joves poden utilitzar el xat des de casa fora de l\'horari escolar com una forma (controlada) d\'iniciació al món de les xarxes socials.
-* Una sessió de preguntes i respostes amb un expert invitat.
-* Sessions per a ajudar els estudiants a preparar-se per als exàmens, en les quals el professorat o altres estudiants posen exemples de preguntes.';
+* Una sessió de preguntes i respostes amb un expert convidat.
+* Sessions per a ajudar els estudiants a preparar-se per als exàmens, en les quals el professor o altres estudiants posen exemples de preguntes.';
 $string['modulenameplural'] = 'Xats';
 $string['neverdeletemessages'] = 'No suprimeixis mai els missatges';
 $string['nextsession'] = 'Propera sessió programada';

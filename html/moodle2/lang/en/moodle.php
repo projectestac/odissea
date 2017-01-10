@@ -71,6 +71,7 @@ $string['addresource'] = 'Add a resource...';
 $string['addresourceoractivity'] = 'Add an activity or resource';
 $string['addresourcetosection'] = 'Add a resource to section \'{$a}\'';
 $string['address'] = 'Address';
+$string['addressedto'] = 'To';
 $string['addstudent'] = 'Add student';
 $string['addsubcategory'] = 'Add a subcategory';
 $string['addteacher'] = 'Add teacher';
@@ -665,20 +666,14 @@ If you need help, please contact the site administrator,
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Hi {$a->firstname},
 
-Someone (probably you) has requested a new password for your
-account on \'{$a->sitename}\'.
+Someone (probably you) has requested a new password for your account on \'{$a->sitename}\'.
 
-Unfortunately your account on this site is disabled and can not be reset,
-please contact the site administrator,
-{$a->admin}';
+Unfortunately your account on this site is disabled, so the password cannot be reset. Please contact the site administrator {$a->admin}.';
 $string['emailpasswordchangeinfofail'] = 'Hi {$a->firstname},
 
-Someone (probably you) has requested a new password for your
-account on \'{$a->sitename}\'.
+Someone (probably you) has requested a new password for your account on \'{$a->sitename}\'.
 
-Unfortunately passwords can not be reset on this site,
-please contact the site administrator,
-{$a->admin}';
+Unfortunately passwords cannot be reset on this site. Please contact the site administrator {$a->admin}.';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Change password information';
 $string['emailpasswordsent'] = 'Thank you for confirming the change of password.
 An email containing your new password has been sent to your address at<br /><b>{$a->email}</b>.<br />
@@ -742,6 +737,9 @@ $string['eventcoursesectionupdated'] = 'Course section updated';
 $string['eventcoursemoduleinstancelistviewed'] = 'Course module instance list viewed';
 $string['eventcourseuserreportviewed'] = 'Course user report viewed';
 $string['eventcourseviewed'] = 'Course viewed';
+$string['eventdashboardreset'] = 'Dashboard reset';
+$string['eventdashboardsreset'] = 'Dashboards reset';
+$string['eventdashboardviewed'] = 'Dashboard viewed';
 $string['eventemailfailed'] = 'Email failed to send';
 $string['eventname'] = 'Event name';
 $string['eventrecentactivityviewed'] = 'Recent activity viewed';
@@ -1252,7 +1250,7 @@ $string['newsectionname'] = 'New name for section {$a}';
 $string['newsitem'] = 'news item';
 $string['newsitems'] = 'news items';
 $string['newsitemsnumber'] = 'News items to show';
-$string['newsitemsnumber_help'] = 'This setting determines how many recent items appear in the latest news block on the course page. If set to "0 news items" then the latest news block will not be displayed.';
+$string['newsitemsnumber_help'] = 'This setting determines how many recent items appear in the latest announcements block on the course page.  If set to zero, the latest announcements block will not be displayed.';
 $string['newuser'] = 'New user';
 $string['newusernewpasswordsubj'] = 'New user account';
 $string['newusernewpasswordtext'] = 'Hi {$a->firstname},

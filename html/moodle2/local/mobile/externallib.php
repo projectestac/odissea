@@ -466,4 +466,416 @@ class local_mobile_external extends external_api {
         return local_mobile_mod_quiz_external::process_attempt_returns();
     }
 
+    /**
+     * Describes the parameters for view_assign.
+     *
+     * @return external_external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function mod_assign_view_assign_parameters() {
+        return new external_function_parameters (
+            array(
+                'assignid' => new external_value(PARAM_INT, 'assign instance id'),
+            )
+        );
+    }
+
+    /**
+     * Update the module completion status.
+     *
+     * @param int $assignid assign instance id
+     * @return array of warnings and status result
+     * @since Moodle 3.2
+     */
+    public static function mod_assign_view_assign($assignid) {
+        $warnings = array();
+        $params = array(
+            'assignid' => $assignid,
+        );
+        $params = self::validate_parameters(self::mod_assign_view_assign_parameters(), $params);
+
+        // Request and permission validation.
+        $assign = $DB->get_record('assign', array('id' => $assignid), 'id', MUST_EXIST);
+        list($course, $cm) = get_course_and_cm_from_instance($assign, 'assign');
+
+        $context = context_module::instance($cm->id);
+        // Please, note that is not required to check mod/assign:view because is done by validate_context->require_login.
+        self::validate_context($context);
+
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
+
+        $result = array();
+        $result['status'] = true;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Describes the mod_assign_view_assign return value.
+     *
+     * @return external_single_structure
+     * @since Moodle 3.2
+     */
+    public static function mod_assign_view_assign_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'status: true if success'),
+                'warnings' => new external_warnings(),
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function core_course_get_user_navigation_options_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseids' => new external_multiple_structure(new external_value(PARAM_INT, 'Course id.')),
+            )
+        );
+    }
+
+    /**
+     * Return a list of navigation options in a set of courses that are avaialable or not for the current user.
+     *
+     * @param array $courseids a list of course ids
+     * @return array of warnings and the options availability
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function core_course_get_user_navigation_options($courseids) {
+        global $CFG;
+        require_once($CFG->dirroot . '/course/lib.php');
+
+        // Parameter validation.
+        $params = self::validate_parameters(self::core_course_get_user_navigation_options_parameters(), array('courseids' => $courseids));
+        $courseoptions = array();
+
+        list($courses, $warnings) = external_util::validate_courses($params['courseids'], array(), true);
+
+        if (!empty($courses)) {
+            foreach ($courses as $course) {
+                // Fix the context for the frontpage.
+                if ($course->id == SITEID) {
+                    $course->context = context_system::instance();
+                }
+                $course->context = context_course::instance($course->id);
+                $navoptions = course_get_user_navigation_options($course->context, $course);
+                $options = array();
+                foreach ($navoptions as $name => $available) {
+                    $options[] = array(
+                        'name' => $name,
+                        'available' => $available,
+                    );
+                }
+
+                $courseoptions[] = array(
+                    'id' => $course->id,
+                    'options' => $options
+                );
+            }
+        }
+
+        $result = array(
+            'courses' => $courseoptions,
+            'warnings' => $warnings
+        );
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function core_course_get_user_navigation_options_returns() {
+        return new external_single_structure(
+            array(
+                'courses' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'id' => new external_value(PARAM_INT, 'Course id'),
+                            'options' => new external_multiple_structure(
+                                new external_single_structure(
+                                    array(
+                                        'name' => new external_value(PARAM_ALPHANUMEXT, 'Option name'),
+                                        'available' => new external_value(PARAM_BOOL, 'Whether the option is available or not'),
+                                    )
+                                )
+                            )
+                        )
+                    ), 'List of courses'
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function core_course_get_user_administration_options_parameters() {
+        return new external_function_parameters(
+            array(
+                'courseids' => new external_multiple_structure(new external_value(PARAM_INT, 'Course id.')),
+            )
+        );
+    }
+
+    /**
+     * Return a list of administration options in a set of courses that are available or not for the current user.
+     *
+     * @param array $courseids a list of course ids
+     * @return array of warnings and the options availability
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function core_course_get_user_administration_options($courseids) {
+        global $CFG;
+        require_once($CFG->dirroot . '/course/lib.php');
+
+        // Parameter validation.
+        $params = self::validate_parameters(self::core_course_get_user_administration_options_parameters(), array('courseids' => $courseids));
+        $courseoptions = array();
+
+        list($courses, $warnings) = external_util::validate_courses($params['courseids'], array(), true);
+
+        if (!empty($courses)) {
+            foreach ($courses as $course) {
+                $course->context = context_course::instance($course->id);
+                $adminoptions = course_get_user_administration_options($course, $course->context);
+                $options = array();
+                foreach ($adminoptions as $name => $available) {
+                    $options[] = array(
+                        'name' => $name,
+                        'available' => $available,
+                    );
+                }
+
+                $courseoptions[] = array(
+                    'id' => $course->id,
+                    'options' => $options
+                );
+            }
+        }
+
+        $result = array(
+            'courses' => $courseoptions,
+            'warnings' => $warnings
+        );
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function core_course_get_user_administration_options_returns() {
+        return self::core_course_get_user_navigation_options_returns();
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function core_user_update_picture_parameters() {
+        return new external_function_parameters(
+            array(
+                'draftitemid' => new external_value(PARAM_INT, 'Id of the user draft file to use as image'),
+                'delete' => new external_value(PARAM_BOOL, 'If we should delete the user picture', VALUE_DEFAULT, false),
+                'userid' => new external_value(PARAM_INT, 'Id of the user, 0 for current user', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Update or delete the user picture in the site
+     *
+     * @param  int  $draftitemid id of the user draft file to use as image
+     * @param  bool $delete      if we should delete the user picture
+     * @param  int $userid       id of the user, 0 for current user
+     * @return array warnings and success status
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function core_user_update_picture($draftitemid, $delete = false, $userid = 0) {
+        global $CFG, $USER, $PAGE;
+
+        $params = self::validate_parameters(
+            self::core_user_update_picture_parameters(),
+            array(
+                'draftitemid' => $draftitemid,
+                'delete' => $delete,
+                'userid' => $userid
+            )
+        );
+
+        $context = context_system::instance();
+        self::validate_context($context);
+
+        if (!empty($CFG->disableuserimages)) {
+            throw new moodle_exception('userimagesdisabled', 'admin');
+        }
+
+        if (empty($params['userid']) or $params['userid'] == $USER->id) {
+            $user = $USER;
+            require_capability('moodle/user:editownprofile', $context);
+        } else {
+            $user = core_user::get_user($params['userid'], '*', MUST_EXIST);
+            core_user::require_active_user($user);
+            $personalcontext = context_user::instance($user->id);
+
+            require_capability('moodle/user:editprofile', $personalcontext);
+            if (is_siteadmin($user) and !is_siteadmin($USER)) {  // Only admins may edit other admins.
+                throw new moodle_exception('useradmineditadmin');
+            }
+        }
+
+        // Load the appropriate auth plugin.
+        $userauth = get_auth_plugin($user->auth);
+        if (is_mnet_remote_user($user) or !$userauth->can_edit_profile() or $userauth->edit_profile_url()) {
+            throw new moodle_exception('noprofileedit', 'auth');
+        }
+
+        $filemanageroptions = array('maxbytes' => $CFG->maxbytes, 'subdirs' => 0, 'maxfiles' => 1, 'accepted_types' => 'web_image');
+        $user->deletepicture = $params['delete'];
+        $user->imagefile = $params['draftitemid'];
+        $success = local_mobile_core_user_update_picture($user, $filemanageroptions);
+
+        $result = array(
+            'success' => $success,
+            'warnings' => array(),
+        );
+        if ($success) {
+            $userpicture = new user_picture(core_user::get_user($user->id));
+            $userpicture->size = 1; // Size f1.
+            $result['profileimageurl'] = $userpicture->get_url($PAGE)->out(false);
+        }
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function core_user_update_picture_returns() {
+        return new external_single_structure(
+            array(
+                'success' => new external_value(PARAM_BOOL, 'True if the image was updated, false otherwise.'),
+                'profileimageurl' => new external_value(PARAM_URL, 'New profile user image url', VALUE_OPTIONAL),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of get_config() parameters.
+     *
+     * @return external_function_parameters
+     * @since  Moodle 3.2
+     */
+    public static function tool_mobile_get_config_parameters() {
+        return new external_function_parameters(
+            array(
+                'section' => new external_value(PARAM_ALPHANUMEXT, 'Settings section name.', VALUE_DEFAULT, ''),
+            )
+        );
+    }
+
+    /**
+     * Returns a list of site settings, filtering by section.
+     *
+     * @param string $section settings section name
+     * @return array with the settings and warnings
+     * @since  Moodle 3.2
+     */
+    public static function tool_mobile_get_config($section = '') {
+        global $CFG, $SITE;
+
+        $params = self::validate_parameters(self::tool_mobile_get_config_parameters(), array('section' => $section));
+
+        $section = $params['section'];
+
+        $settings = new stdClass;
+        $context = context_system::instance();
+        $isadmin = has_capability('moodle/site:config', $context);
+
+        if (empty($section) or $section == 'frontpagesettings') {
+            require_once($CFG->dirroot . '/course/format/lib.php');
+            // First settings that anyone can deduce.
+            $settings->fullname = $SITE->fullname;
+            $settings->shortname = $SITE->shortname;
+            $settings->summary = $SITE->summary;
+            $settings->frontpage = $CFG->frontpage;
+            $settings->frontpageloggedin = $CFG->frontpageloggedin;
+            $settings->maxcategorydepth = $CFG->maxcategorydepth;
+            $settings->frontpagecourselimit = $CFG->frontpagecourselimit;
+            $settings->numsections = course_get_format($SITE)->get_course()->numsections;
+            $settings->newsitems = $SITE->newsitems;
+            $settings->commentsperpage = $CFG->commentsperpage;
+
+            // Now, admin settings.
+            if ($isadmin) {
+                $settings->defaultfrontpageroleid = $CFG->defaultfrontpageroleid;
+            }
+        }
+
+        if (empty($section) or $section == 'sitepolicies') {
+            $settings->disableuserimages = $CFG->disableuserimages;
+        }
+
+        if (empty($section) or $section == 'gradessettings') {
+            require_once($CFG->dirroot . '/user/lib.php');
+            $settings->mygradesurl = user_mygrades_url()->out(false);
+        }
+
+        $result['settings'] = array();
+        foreach ($settings as $name => $value) {
+            $result['settings'][] = array(
+                'name' => $name,
+                'value' => $value,
+            );
+        }
+
+        $result['warnings'] = array();
+        return $result;
+    }
+
+    /**
+     * Returns description of tool_mobile_get_config() result value.
+     *
+     * @return external_description
+     * @since  Moodle 3.2
+     */
+    public static function tool_mobile_get_config_returns() {
+        return new external_single_structure(
+            array(
+                'settings' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'name' => new external_value(PARAM_RAW, 'The name of the setting'),
+                            'value' => new external_value(PARAM_RAW, 'The value of the setting'),
+                        )
+                    ),
+                    'Settings'
+                ),
+                'warnings' => new external_warnings(),
+            )
+        );
+    }
 }

@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allchildrenarecomplete'] = 'Alle onderliggende volledig';
+$string['allchildrenarecomplete'] = 'Alle onderliggende zijn volledig';
 $string['competencies'] = 'Competenties';
-$string['competenciesarenotenabled'] = 'Competenties zijn niet ingeschakeld.';
-$string['competenciessettings'] = 'Competenties instellingen';
+$string['competenciesarenotenabled'] = 'Competenties zijn niet ingesteld.';
+$string['competenciessettings'] = 'Competentie-instellingen';
 $string['completeplanstask'] = 'Voltooi leerplannen met einddatum';
 $string['coursecompetencyoutcome_complete'] = 'Voltooi competentie';
 $string['coursecompetencyoutcome_evidence'] = 'Bewijs toevoegen';
@@ -36,7 +36,7 @@ $string['coursecompetencyoutcome_none'] = 'Doe niets';
 $string['coursecompetencyoutcome_recommend'] = 'Insturen voor beoordeling';
 $string['coursemodulecompetencyoutcome_complete'] = 'Voltooi competentie';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Bewijs toevoegen';
-$string['coursemodulecompetencyoutcome_none'] = 'Do niets';
+$string['coursemodulecompetencyoutcome_none'] = 'Doe niets';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Insturen voor beoordeling';
 $string['deletecompetencyratings'] = 'Verwijder competentiewaarderingen';
 $string['duplicateditemname'] = '{$a} (kopie)';
@@ -104,7 +104,7 @@ $string['evidence_manualoverrideincourse'] = 'De competentiebeoordeling werd man
 $string['evidence_manualoverrideinplan'] = 'De competentiebeoordeling werd manueel ingesteld in leerplan \'{$a}\'.';
 $string['invalidevidencedesc'] = 'Ongeldige bewijsbeschrijving';
 $string['invalidgrade'] = 'Ongeldige beoordeling';
-$string['invalidpersistent'] = 'Ongeldig blijvend';
+$string['invalidpersistent'] = 'Blijvend ongeldig';
 $string['invalidplan'] = 'Ongeldig leerplan';
 $string['invalidtaxonomy'] = 'Ongeldige taxonomie: {$a}';
 $string['invalidurl'] = 'De URL is niet geldig. Die moet beginnen met \'http://\' of \'https://\'.';

@@ -25,8 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity_results:addinstance'] = 'إضافة كتلة نتائج النشاط جديدة';
 $string['bestgrade'] = 'الدرجة القصوى';
-$string['bestgrades'] = 'الـ {$a}الدرجة القصوى';
+$string['bestgrades'] = 'الـ {$a}الدرجة القصوى:';
+$string['bestgroupgrade'] = 'المجموعة ذات أعلى معدل:';
+$string['bestgroupgrades'] = '{$a} المجموعة ذات أعلى معدل:';
+$string['config_decimalplaces'] = 'عدد الأماكن لعرضها بعد الفاصلة';
+$string['config_format_absolute'] = 'عدد مطلق';
+$string['config_format_fraction'] = 'الكسور';
 $string['config_format_percentage'] = 'النسب';
+$string['config_name_format'] = 'خصوصية النتائج';
+$string['config_names_full'] = 'أظهر الاسم كاملاً';
+$string['config_no_activities_in_course'] = 'لا توجد حتى الآن أية أنشطة في هذا المقرر الدراسي.';
+$string['notyetgraded'] = 'لا تقييم حتى الان';
+$string['pluginname'] = 'نتائج النشاط';
 $string['worstgrade'] = 'أقل درجة';
 $string['worstgrades'] = '{$a} أقل درجة';

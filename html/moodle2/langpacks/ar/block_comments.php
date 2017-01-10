@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['comments:addinstance'] = 'إضافة كتلة تعليقات جديدة';
+$string['comments:myaddinstance'] = 'إضافة كتلة تعليقات جديدة إلى الصفحة الشخصية';
 $string['pluginname'] = 'تعليقات';

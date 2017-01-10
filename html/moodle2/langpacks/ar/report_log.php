@@ -25,6 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['log:view'] = 'معاينة السجلات مقرر دراسي';
+$string['eventcomponent'] = 'عنصر';
+$string['eventcontext'] = 'سياق الحدث';
+$string['eventloggedas'] = '{$a->realusername} كـ {$a->asusername}';
+$string['eventorigin'] = 'المصدر';
+$string['eventrelatedfullnameuser'] = 'المستخدم المتأثر';
+$string['eventreportviewed'] = 'تم استعراض تقرير السجل';
+$string['eventuserreportviewed'] = 'تم استعراض تقرير سجل المستخدم';
+$string['logsformat'] = 'تنسيق السجلات';
+$string['log:view'] = 'معاينة سجلات المقرر الدراسي';
 $string['log:viewtoday'] = 'السجلات النشطة لهذا اليوم';
-$string['pluginname'] = 'سجلات نشطة';
+$string['page'] = 'صفحة {$a}';
+$string['page-report-log-index'] = 'تقرير سجل المقرر الدراسي';
+$string['page-report-log-user'] = 'تقرير سجل المستخدم للمقرر الدراسي';
+$string['page-report-log-x'] = 'تقرير أي من السجلات';
+$string['pluginname'] = 'سجلات';

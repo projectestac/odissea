@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'Blanco voor {no} meer neerzetzones';
 $string['addmoreimages'] = 'Blanco voor {no} meer versleepbare items';
 $string['answer'] = 'Antwoord';
 $string['bgimage'] = 'Achtergrondafbeelding';
+$string['blank'] = 'blanco';
 $string['correctansweris'] = 'Het juiste antwoord is: {$a}';
 $string['draggableimage'] = 'Versleepbare afbeelding';
 $string['draggableitem'] = 'Versleepbaar item';

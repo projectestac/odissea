@@ -25,10 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['assessmentname'] = '成绩项';
 $string['entrypage'] = '逐人评分或逐项评分';
 $string['eventgradereportviewed'] = '简略视图报告已检查分数';
+$string['gradeitem'] = '成绩项: {$a}';
 $string['noscreens'] = '无法找到一个合适的简略视图屏幕';
 $string['notvalid'] = '不是一个有效的简略视图屏幕: {$a}';
 $string['override'] = '覆盖';
 $string['pluginname'] = '简略视图';
 $string['save'] = '保存';
+$string['selectgrade'] = '选择成绩项...';
+$string['selectuser'] = '选择用户...';

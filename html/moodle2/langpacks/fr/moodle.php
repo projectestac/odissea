@@ -74,6 +74,7 @@ $string['addresource'] = 'Ajouter une ressource...';
 $string['addresourceoractivity'] = 'Ajouter une activité ou une ressource';
 $string['addresourcetosection'] = 'Ajouter une ressource à la section « {$a} »';
 $string['address'] = 'Adresse';
+$string['addressedto'] = 'À';
 $string['addstudent'] = 'Ajouter un étudiant';
 $string['addsubcategory'] = 'Ajouter une sous-catégorie';
 $string['addteacher'] = 'Désigner comme enseignant';
@@ -351,7 +352,7 @@ $string['coursehelphiddensections'] = 'Comment les sections cachées du cours se
 $string['coursehelpmaximumupload'] = 'Définit la taille maximale de chaque fichier pouvant être déposé dans le cours. Le maximum est limité par un réglage analogue au niveau du site.';
 $string['coursehelpnewsitemsnumber'] = 'Nombre d\'éléments récents affichés sur la page du cours, dans le bloc des nouveautés. Si 0 est indiqué, le bloc ne sera pas affiché.';
 $string['coursehelpnumberweeks'] = 'Nombre de sections du cours (n\'est valable que pour certains formats de cours).';
-$string['coursehelpshowgrades'] = 'Active l\'affichage du carnet de note. Ce réglage n\'a pas d\'influence sur l\'affichage des notes dans les diverses activités du cours.';
+$string['coursehelpshowgrades'] = 'Active l\'affichage du carnet de notes. Ce réglage n\'a pas d\'influence sur l\'affichage des notes dans les diverses activités du cours.';
 $string['coursehidden'] = 'Ce cours n\'est actuellement pas disponible pour les étudiants';
 $string['courseinfo'] = 'Informations du cours';
 $string['courselegacyfiles'] = 'Fichiers du cours (obsolète)';
@@ -642,16 +643,16 @@ Pour modifier votre mot de passe, visitez la page web suivante :
 Dans la plupart des logiciels de messagerie, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site, {$a->admin}';
-$string['emailpasswordchangeinfodisabled'] = 'Bonjour,
+$string['emailpasswordchangeinfodisabled'] = 'Bonjour {$a->firstname},
 
 Quelqu\'un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
 
-Malheureusement, votre compte sur ce site est désactivé et ne peut pas être réinitialisé.  Veuillez contacter l\'administrateur du site, {$a->admin}';
-$string['emailpasswordchangeinfofail'] = 'Bonjour,
+Malheureusement, votre compte sur ce site est désactivé et le mot de passe ne peut donc pas être réinitialisé.  Veuillez contacter l\'administrateur du site, {$a->admin}';
+$string['emailpasswordchangeinfofail'] = 'Bonjour {$a->firstname},
 
 Quelqu\'un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
 
-Malheureusement, les mots de passe ne peuvent pas être modifiés ainsi sur ce site. Veuillez contacter l\'administrateur du site, {$a->admin}';
+Malheureusement, les mots de passe ne peuvent pas être réinitialisés sur ce site. Veuillez contacter l\'administrateur du site, {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a} : information sur le changement de mot de passe';
 $string['emailpasswordconfirmation'] = 'Bonjour,
 
@@ -1461,7 +1462,7 @@ $string['resetnotimplemented'] = 'Réinitialisation pas implémentée';
 $string['resetrecordexpired'] = 'Le lien de réinitialisation de mot de passe que vous avez utilisé a été généré il y a {$a} minutes et est désormais échu. Veuillez effectuer une nouvelle demande de réinitialisation de mot de passe.';
 $string['resetstartdate'] = 'Réinitialiser la date de début';
 $string['resetstatus'] = 'État';
-$string['resettable'] = 'Réinitialiser la table des préférences';
+$string['resettable'] = 'Réinitialiser les réglages de la table';
 $string['resettask'] = 'Tâche';
 $string['resettodefaults'] = 'Retour aux réglages par défaut';
 $string['resortcourses'] = 'Trier les cours';

@@ -119,6 +119,7 @@ $string['currentstage4'] = 'Confirmació i revisió';
 $string['currentstage8'] = 'Fes la còpia';
 $string['enterasearch'] = 'Introduïu una cerca';
 $string['error_block_for_module_not_found'] = 'S\'ha trobat una instància de bloc òrfena (id: {$a->bid}) per al curs (id: {$a->mid}). Aquest bloc no es copiarà a la còpia de seguretat.';
+$string['errorcopyingbackupfile'] = 'No s\'ha pogut copiar el fitxer de la còpia de seguretat a la carpeta temporal abans de restaurar.';
 $string['error_course_module_not_found'] = 'S\'ha trobat un mòdul de curs orfe (id: {$a}). Aquest mòdul no es copiarà a la còpia de seguretat.';
 $string['errorfilenamemustbezip'] = 'El nom de fitxer que introduïu ha d\'ésser un fitxer ZIP i ha de tenir l\'extensió .mbz';
 $string['errorfilenamerequired'] = 'Cal que introduïu un nom de fitxer vàlid per a aquesta còpia de seguretat';

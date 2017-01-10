@@ -49,9 +49,9 @@ $string['loadmoreusers'] = 'さらにユーザを読み込む ...';
 $string['pluginname'] = '評定履歴';
 $string['preferences'] = '評定履歴プリファレンス';
 $string['revisedonly'] = '修正済み評定のみ';
-$string['revisedonly_help'] = '修正された評点のみ表示されます。
+$string['revisedonly_help'] = '修正された評定のみ表示されます。
 
-これは評点が修正されたエントリのみが一覧表示されることを意味します。';
+これは評定が修正されたエントリのみが一覧表示されることを意味します。';
 $string['selectedusers'] = '選択済みユーザ';
 $string['selectuser'] = 'ユーザを選択する';
 $string['selectusers'] = 'ユーザを選択する';

@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acohortroleassignmentssaved'] = 'Sono state memorizzate {$a} assegnazioni di ruolo del gruppo globale.';
 $string['assign'] = 'Assegna';
+$string['assignroletocohort'] = 'Assegna ruoli nel contesto dell\'utente a tutti i membri del gruppo globale';
 $string['backgroundsync'] = 'Nota: i ruoli non saranno assegnati immediatamente ai membri del gruppo globale. L\'assegnazione avverrà tramite un\'elaborazione pianificata.';
 $string['cohortroleassignmentnotremoved'] = 'L\'assegnazione di ruolo ai membri del gruppo globale non è stata eliminata.';
 $string['cohortroleassignmentremoved'] = 'L\'assegnazione di ruolo ai membri del gruppo globale è stata eliminata.';

@@ -99,7 +99,7 @@ foreach ($dbs as $db) {
         $found = search_in_alexandria($db->id, $search);
 
         if (!empty($found)) {
-            render_search_results($db, $found, $courseid);
+            render_search_results($db, $found, $courseid, $search);
         }
 
     }

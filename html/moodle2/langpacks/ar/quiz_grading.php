@@ -25,6 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alldoneredirecting'] = 'تم تصحيح جميع المحاولات المُحدَّدة. عودة إلى قائمة الأسئلة.';
+$string['alreadygraded'] = 'تم تصحيحها مُسبقاً';
+$string['attemptstograde'] = 'المحاولات التي تحتاج للتصحيح';
+$string['bydate'] = 'حسب التاريخ';
+$string['bystudentfirstname'] = 'حسب الاسم الأول للطالب';
+$string['bystudentidnumber'] = 'حسب رقم المُعرِّف للطالب';
+$string['bystudentlastname'] = 'حسب اسم الطالب الأخير';
+$string['cannotgradethisattempt'] = 'لا يمكن تصحيح هذه المحاولة';
 $string['essayonly'] = 'التصحيح اليدوي حتى الآن ممكن فقط للأسئلة المقاليه';
+$string['grade'] = 'تصحيح';
+$string['gradeall'] = 'تصحيح الجميع';
+$string['gradeattemptsall'] = 'الجميع ({$a})';
 $string['grading'] = 'تصحيح يدوي';
 $string['inprogress'] = 'قيد التنفيذ';

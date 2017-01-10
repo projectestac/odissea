@@ -62,6 +62,7 @@ $string['configresourceurl'] = 'Baliabidearen berezko URLa';
 $string['configtoolurl'] = 'Urrutiko tresnaren berezko URLa';
 $string['configtypes'] = 'Gaitu LTI aplikazioak';
 $string['configured'] = 'Konfiguratua';
+$string['courseactivitiesorresources'] = 'Ikastaroko jarduerak edo baliabideak';
 $string['courseid'] = 'Ikastaroaren ID zenbakia';
 $string['courseinformation'] = 'Ikastaroaren informazioa';
 $string['courselink'] = 'Joan ikastarora';
@@ -130,7 +131,7 @@ $string['lti_launch_error'] = 'Errorea gertatu da kanpoko tresna hastean:';
 $string['lti_launch_error_tool_request'] = '<p>
 Kudeatzaileari tresnaren ezarpena osa dezala eskatzeko sakatu <a href="{$a->admin_request_url}" target="_top">honi</a>.
 </p>';
-$string['lti:manage'] = 'Editatu LTI jarduerak';
+$string['lti:manage'] = 'Irakaslea izan tresna abiarazten denean';
 $string['ltisettings'] = 'LTIren ezarpenak';
 $string['lti:view'] = 'Abiarazi kanpoko tresnaren jarduerak';
 $string['main_admin'] = 'Laguntza orokorra';
@@ -227,6 +228,7 @@ $string['types'] = 'Motak';
 $string['unabletocreatetooltype'] = 'Ezin da tresna sortu';
 $string['unknownstate'] = 'Egoera ezezaguna';
 $string['update'] = 'Eguneratu';
+$string['useraccountinformation'] = 'Erabiltzaile-kontuaren informazioa';
 $string['userpersonalinformation'] = 'Erabiltzailearen informazio pertsonala';
 $string['using_tool_configuration'] = 'Tresnaren ezarpena erabiltzen:';
 $string['validurl'] = 'URL baliagarriak honela hasi behar du: http(s)://';

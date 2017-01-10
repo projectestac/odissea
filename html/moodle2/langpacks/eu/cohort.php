@@ -52,6 +52,8 @@ $string['description'] = 'Deskribapena';
 $string['displayedrows'] = '{$a->displayed} errenkada erakutsi dira {$a->total}-(e)tik.';
 $string['duplicateidnumber'] = 'Badago dagoeneko ID zenbaki bera duen kohortea';
 $string['editcohort'] = 'Editatu kohortea';
+$string['editcohortidnumber'] = 'Editatu kohortearen IDa';
+$string['editcohortname'] = 'Editatu kohortearen izena';
 $string['eventcohortcreated'] = 'Kohortea sortu da';
 $string['eventcohortdeleted'] = 'Kohortea ezabatu da';
 $string['eventcohortmemberadded'] = 'Erabiltzailea kohortera gehitu da';
@@ -63,6 +65,8 @@ $string['memberscount'] = 'Kohortearen tamaina';
 $string['name'] = 'Izena';
 $string['namecolumnmissing'] = 'Arazoren bat dago CSV fitxategiaren formatuan. Mesedez, egiazta ezazu zutabeen izenak badirela';
 $string['namefieldempty'] = 'Eremuaren izena ezin da hutsik egon';
+$string['newidnumberfor'] = 'ID zenbaki berria {$a} kohortearentzat';
+$string['newnamefor'] = 'Izen berria {$a} kohortearentzat';
 $string['nocomponent'] = 'Eskuz sortua';
 $string['potusers'] = 'Balizko erabiltzaileak';
 $string['potusersmatching'] = 'Bat datozen balizko erabiltzaileak';
@@ -74,6 +78,15 @@ $string['selectfromcohort'] = 'Partaideak kohortetik aukeratu';
 $string['systemcohorts'] = 'Sistemako kohorteak';
 $string['unknowncohort'] = 'Kohorte ezezaguna: ({$a})';
 $string['uploadcohorts'] = 'Eguneratu kohorteak';
+$string['uploadcohorts_help'] = 'Kohorteak testu-fitxategien bitartez igo daitezke. Fitxategiaren formatua honako hau izan beharko litzateke:
+
+* Fitxategiaren lerro bakoitzak erregistro bat izango du
+* Erregistro bakoitzak komaz  (edo beste banatzailez) banatutako datu-serie bat da
+* Lehen erregistroak fitxategiak izango dituen eremuen izenak izango ditu
+* <i>name</i> eremua derrigorrezkoa da
+* Aukerazko eremuak hurrengoak dira: <i>idnumber</i>, <i>description</i>, <i>descriptionformat</i>, <i>visible</i>, <i>context</i>, <i>category</i>, <i>category_id</i>, <i>category_idnumber</i> eta <i>category_path</i>';
 $string['uploadedcohorts'] = 'Eguneratutako  {$a} kohorte';
 $string['useradded'] = 'Erabiltzailea "{$a}" kohortera gehitu da';
 $string['visible'] = 'Ikusgai';
+$string['visible_help'] = '\'moodle/cohort:view\'  baimena duten erabiltzaileek edozein kohorte ikusi dezakete kohortearen testuinguruan.<br/>
+Ikusgai dauden kohorteak azpiko ikastaroetako erabiltzaileek ere ikusi ditzakete.';

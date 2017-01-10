@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['areyousure'] = 'Tem a certeza?';
-$string['areyousuremessage'] = 'Tem a certeza que deseja atualizar o trabalho"{$a->name}"?';
+$string['areyousuremessage'] = 'Tem a certeza que pretende atualizar o trabalho"{$a->name}"?';
 $string['assignmentid'] = 'ID do trabalho';
 $string['assignmentnotfound'] = 'Não é possível encontrar o trabalho (id={$a})';
 $string['assignmentsperpage'] = 'Trabalhos por página';

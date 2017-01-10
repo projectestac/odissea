@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Eztabaida-kopurua';
 $string['numberdiscussions_help'] = 'Ezarpen honek zehazten du zenbat eztabaida erakutsi behar diren.';
-$string['pluginname'] = 'Formatu irekia';
+$string['pluginname'] = 'Foro-formatua';
 $string['sectionname'] = 'atala';

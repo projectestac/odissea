@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clusteredheader'] = 'Bereizi zerbitzariak';
 $string['pluginname'] = 'Memcache';
 $string['servers'] = 'Zerbitzariak';
 $string['testservers'] = 'Proba-zerbitzariak';

@@ -7,7 +7,7 @@ $(function() {
 });
 
 
-function alexandria_load_more(wwwroot, courseid, dataid, datatype) {
+function alexandria_load_more(wwwroot, courseid, dataid) {
     var url = wwwroot + '/local/alexandriaimporter/ajax.php';
     var params = {
         id: courseid,
@@ -15,12 +15,14 @@ function alexandria_load_more(wwwroot, courseid, dataid, datatype) {
 
     };
     $("#alexloadmore .spinner").show();
-    params.from = $("#accordion .accordion-group").length + 1;
-    var search = {};
+    params.from = $("#accordion .accordion-group").length;
+
+    params.search = {};
     $("#search_values input").each(function() {
-        search[$(this).attr("name")] = $(this).val();
+        if ($(this).attr("name") && $(this).val()) {
+            params.search[$(this).attr("name")] = $(this).val();
+        }
     });
-    params.search = search;
 
     $.post(url, params, function(data) {
         $("#alexloadmore .spinner").hide();
@@ -29,7 +31,7 @@ function alexandria_load_more(wwwroot, courseid, dataid, datatype) {
         }
 
         var container = $('#accordion');
-        for (x in data.results) {
+        for (var x in data.results) {
             container.append(data.results[x].formatted);
         }
     });

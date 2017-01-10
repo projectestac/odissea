@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Количество минут для определения какие из пользователей сейчас на сайте';
 $string['online_users:addinstance'] = 'Добавлять новый блок «Пользователи на сайте»';
-$string['online_users:myaddinstance'] = 'Добавлять новый блок «Пользователи онлайн» на страницу «Моя домашняя страница»';
-$string['online_users:viewlist'] = 'Видеть список пользователей онлайн';
+$string['online_users:myaddinstance'] = 'Добавлять новый блок «Пользователи на сайте» на страницу «Личный кабинет»';
+$string['online_users:viewlist'] = 'Видеть список пользователей на сайте';
 $string['periodnminutes'] = 'последние {$a} минут';
 $string['pluginname'] = 'Пользователи на сайте';
 $string['timetosee'] = 'Удалять после неактивности (минут)';

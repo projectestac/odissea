@@ -44,6 +44,7 @@ $string['deletefeedback'] = 'Apagar o ficheiro PDF de feedback';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Descarregar ficheiro PDF de feedback';
 $string['draftchangessaved'] = 'O rascunho das anotações foi gravado';
+$string['drag'] = 'Arrastar';
 $string['editpdf'] = 'Anotar PDF';
 $string['editpdf_help'] = 'Anotar as submissões dos alunos diretamente no navegador e produzir um PDF editado descarregável.';
 $string['enabled'] = 'Anotar PDF';

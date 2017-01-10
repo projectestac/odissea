@@ -45,6 +45,6 @@ $string['display_skype'] = 'Показывать Skype';
 $string['display_un'] = 'Показывать имя';
 $string['display_yahoo'] = 'Показывать Yahoo';
 $string['myprofile:addinstance'] = 'Добавлять новый блок «Текущий пользователь»';
-$string['myprofile:myaddinstance'] = 'Добавлять новый блок «Текущий пользователь» на страницу «Моя домашняя страница»';
+$string['myprofile:myaddinstance'] = 'Добавлять новый блок «Текущий пользователь» на страницу «Личный кабинет»';
 $string['myprofile_settings'] = 'Вывод информации о пользователе';
 $string['pluginname'] = 'Текущий пользователь';

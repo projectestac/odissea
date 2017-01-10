@@ -53,6 +53,6 @@ $string['revisedonly_help'] = 'Mostrar apenas as notas que foram revistas. Isto 
 $string['selectedusers'] = 'Utilizadores selecionados';
 $string['selectuser'] = 'Selecionar utilizador';
 $string['selectusers'] = 'Selecionar utilizadores';
-$string['source'] = 'Fonte';
+$string['source'] = 'Origem';
 $string['useractivityfeedback'] = 'Feedback de {$a}';
 $string['useractivitygrade'] = 'Nota de {$a}';

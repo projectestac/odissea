@@ -14,10 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Version details.
+ *
+ * @package    filter
+ * @subpackage wiris
+ * @copyright  Maths for More S.L. <info@wiris.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2016101700;
-$plugin->release = '3.61.2.1319';
+$plugin->version = 2017010500;
+$plugin->release = '3.64.0.1325';
 $plugin->requires = 2011120511;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'filter_wiris';

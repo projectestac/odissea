@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'クラス名';
 $string['component'] = 'コンポーネント';
-$string['configmessageinboundhost'] = 'Moodleがメールをチェックするサーバのアドレスです。デフォルトポート以外のポートを指定する場合、あなたは[server]:[port]のフォーマットを使用することができます。例えば、次のようになります: mail.example.com:587 このフィールドを空白にした場合、Moodleはあなたが指定したメールのタイプのデフォルトポートを使用します。';
+$string['configmessageinboundhost'] = 'Moodleがメールをチェックするサーバのアドレスです。デフォルトポート以外のポートを指定する場合、あなたは[server]:[port]のフォーマットを使用することができます。例えば次のようになります: mail.example.com:587 このフィールドを空白にした場合、Moodleはあなたが指定したメールのタイプのデフォルトポートを使用します。';
 $string['defaultexpiration'] = 'デフォルトアドレス有効期限';
 $string['defaultexpiration_help'] = 'ハンドラによってメールアドレスが生成された場合、使用できなくなるよう自動的に期限切れとなる期間を設定することができます。有効期限の設定をお勧めします。';
 $string['description'] = '説明';
@@ -70,7 +70,7 @@ $string['messageinboundhostssl_desc'] = 'いくつかのメールサーバでは
 $string['messageinboundhosttype'] = 'サーバタイプ';
 $string['messageinboundhostuser'] = 'ユーザ名';
 $string['messageinboundhostuser_desc'] = 'これはあなたのメールアカウントにログインするためにサービスプロバイダが提供したユーザ名です。';
-$string['messageinboundmailboxconfiguration_desc'] = 'ユーザがメッセージを送信する場合、「address+data@example.com」 のようなフォーマットで生成されたアドレスに送ります。信頼できるアドレスをMoodleから生成するには通常あなたが「@」記号の前に使用するアドレス、および「@」記号の後に使用するドメインを分けて指定してください。例えば、例のメールボックス名は「address」、そしてメールドメインは「example.com」となります。この目的のためにあなたは専用のメールアカウントを使用すべきです。';
+$string['messageinboundmailboxconfiguration_desc'] = 'ユーザがメッセージを送信する場合、「address+data@example.com」 のようなフォーマットで生成されたアドレスに送ります。信頼できるアドレスをMoodleから生成するには通常あなたが「@」記号の前に使用するアドレス、および「@」記号の後に使用するドメインを分けて指定してください。例えば例のメールボックス名は「address」、そしてメールドメインは「example.com」となります。この目的のためにあなたは専用のメールアカウントを使用すべきです。';
 $string['messageprocessingerror'] = 'あなたは最近Moodleに件名「 {$a->subject} 」のメールを送信しましたが、残念なことに、処理されませんでした。
 
 エラー詳細は下記のとおりです。

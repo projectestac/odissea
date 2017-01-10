@@ -88,6 +88,6 @@ $string['testservers_desc'] = 'memcachedサーバをテストするための1つ
 $string['upgrade200recommended'] = 'あなたのmemcached PHP拡張モジュールをバージョン2.0.0またはそれ以上にアップグレードすることをお勧めします。
 現在あなたが使用しているmemcached PHP拡張モジュールのバージョンはMoodleがサンドボックスキャッシュを確保するために使用する機能を提供していません。Moodleが使用するよう設定されているため、あなたがアップグレードするまで他のアプリケーションが同じmemcachedサーバを使用するよう設定しないことをお勧めします。';
 $string['usecompression'] = '圧縮を使用する';
-$string['usecompression_help'] = 'ペイロード圧縮を有効または無効にします。有効にした場合、特定の閾値より長いアイテム値 (現在100バイト) は保存時に透過的に圧縮され、参照時に解凍されます。';
+$string['usecompression_help'] = 'ペイロード圧縮を有効または無効にします。有効にした場合、特定の閾値より長いアイテム値 (現在100バイト) は保存時に透過的に圧縮され、参照時に展開されます。';
 $string['useserialiser'] = 'シリアライザを使用する';
 $string['useserialiser_help'] = '非スカラ値をシリアライズするためのシリアライザを指定してください。有効なシリアライザは次のとおりです: Memcached::SERIALIZER_PHP または Memcached::SERIALIZER_IGBINARY。後者はmemcachedが「--enable-memcached-igbinary」オプションにより設定され、igbinary拡張モジュールがロードされている場合のみサポートされます。';

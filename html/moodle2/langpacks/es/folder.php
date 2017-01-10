@@ -33,6 +33,7 @@ También tenga en cuenta que las acciones de los usuarios no se pueden registrar
 $string['displayinline'] = 'Mostrar en la página del curso';
 $string['displaypage'] = 'Mostrar en una página diferente';
 $string['dnduploadmakefolder'] = 'Descomprimir archivo y crear carpeta';
+$string['downloadfolder'] = 'Descargar carpeta';
 $string['eventfolderupdated'] = 'Carpeta actualizada';
 $string['folder:addinstance'] = 'Añadir una nueva carpeta';
 $string['foldercontent'] = 'Archivos y subcarpetas';
@@ -52,5 +53,6 @@ $string['page-mod-folder-x'] = 'Cualquier página de la carpeta';
 $string['pluginadministration'] = 'Administración de carpeta';
 $string['pluginname'] = 'Carpeta';
 $string['search:activity'] = 'Carpeta';
+$string['showdownloadfolder'] = 'Mostrar opción de descargar carpeta';
 $string['showexpanded'] = 'Mostrar subcarpetas expandidas';
 $string['showexpanded_help'] = 'Si está activado se mostrarán las subcarpetas expandidas por defecto. Si no, las subcarpetas se mostrarán colapsadas.';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Компетенции для пересмотра';
 $string['lp:addinstance'] = 'Добавлять новый блок «Учебные планы»';
-$string['lp:myaddinstance'] = 'Добавлять новый блок «Учебные планы» на страницу «Моя домашняя страница»';
+$string['lp:myaddinstance'] = 'Добавлять новый блок «Учебные планы» на страницу «Личный кабинет»';
 $string['lp:view'] = 'Просматривать блок «Учебные планы»';
 $string['planstoreview'] = 'Планы для пересмотра';
 $string['pluginname'] = 'Учебные планы';

@@ -29,6 +29,9 @@ var _wrs_temporalImage;
 var _wrs_temporalFocusElement;
 var _wrs_androidRange;
 var _wrs_iosRange;
+// We need to keep the main window height scroll value to restore it
+// when we close a modalwindow.
+var _wrs_mainwindow_scroll;
 // We need a variable to send device properties to editor.js on modal mode.
 var _wrs_deviceProperties = {}
 // Dragable options.
@@ -422,10 +425,10 @@ function wrs_createShowImageSrc(mathml, data, language) {
         if (key != 'mml') {
             dataObject[key] = data[key];
         }
-    }    
-    dataObject.formula= com.wiris.js.JsPluginTools.md5encode(wrs_propertiesToString(dataMd5));
+    }
+    dataObject.formula = com.wiris.js.JsPluginTools.md5encode(wrs_propertiesToString(dataMd5));
     dataObject.lang = (typeof language == 'undefined') ? 'en' : language;
-    
+
     var result = wrs_getContent(_wrs_conf_showimagePath + '?' + wrs_httpBuildQuery(dataObject));
     return result;
 }
@@ -593,8 +596,7 @@ function wrs_endParseEditMode(code, wirisProperties, language) {
                 if (latex.indexOf('<') == -1) {
                     latex = wrs_htmlentitiesDecode(latex);
                     var mathml = wrs_getMathMLFromLatex(latex, true);
-                    var imgObject = wrs_mathmlToImgObject(document, mathml, wirisProperties, language);
-                    output += wrs_createObjectCode(imgObject);
+                    output += mathml;
                     endPosition += 2;
                 }
                 else {
@@ -978,6 +980,8 @@ function wrs_getMathMLFromLatex(latex, includeLatexOnSemantics) {
     }
 
     var mathML = wrs_getContent(_wrs_conf_servicePath, data);
+    // Populate LatexCache.
+    wrs_populateLatexCache(latex, mathML);
     return mathML.split("\r").join('').split("\n").join(' ');
 }
 
@@ -1160,7 +1164,7 @@ function wrs_getWIRISImageOutput(imgCode, convertToXml, convertToSafeXml) {
     var imgObject = wrs_createObject(imgCode);
 
     if (imgObject) {
-        if (imgObject.className == _wrs_conf_imageClassName) {
+        if (imgObject.className == _wrs_conf_imageClassName || imgObject.getAttribute(_wrs_conf_imageMathmlAttribute)) {
             if (!convertToXml) {
                 return imgCode;
             }
@@ -1230,10 +1234,10 @@ function wrs_httpBuildQuery(properties) {
             result += wrs_urlencode(i) + '=' + wrs_urlencode(properties[i]) + '&';
         }
     }
-    
+
     // Deleting last '&' empty character.
-    if (result.substring(result.length -1) == '&') {
-        result = result.substring(0, result.length-1);
+    if (result.substring(result.length - 1) == '&') {
+        result = result.substring(0, result.length - 1);
     }
 
     return result;
@@ -1671,6 +1675,11 @@ function wrs_mathmlEncode(input) {
     input = input.split(_wrs_xmlCharacters.ampersand).join(_wrs_safeXmlCharacters.ampersand);
     input = input.split(_wrs_xmlCharacters.quote).join(_wrs_safeXmlCharacters.quote);
 
+    // Transform "<" --> "&lt;".
+    // Transform ">" --> "&gt;".
+    input = input.split(_wrs_safeXmlCharacters.doubleQuote + _wrs_safeXmlCharacters.tagOpener + _wrs_safeXmlCharacters.doubleQuote).join(_wrs_safeXmlCharacters.doubleQuote + "&lt;" + _wrs_safeXmlCharacters.doubleQuote);
+    input = input.split(_wrs_safeXmlCharacters.doubleQuote + _wrs_safeXmlCharacters.tagCloser + _wrs_safeXmlCharacters.doubleQuote).join(_wrs_safeXmlCharacters.doubleQuote + "&gt;" + _wrs_safeXmlCharacters.doubleQuote);
+
     return input;
 }
 
@@ -1918,7 +1927,7 @@ function wrs_mathmlToImgObject(creator, mathml, wirisProperties, language) {
     if (_wrs_conf_wirisPluginPerformance && (_wrs_conf_saveMode == 'xml' || _wrs_conf_saveMode == 'safeXml')) {
         var result = JSON.parse(wrs_createShowImageSrc(mathml, data, language));
         if (result["status"] == 'warning') {
-            // POST call.             
+            // POST call.
              result = JSON.parse(wrs_getContent(_wrs_conf_showimagePath, data));
         }
         result = result.result;
@@ -2045,7 +2054,8 @@ function wrs_openEditorWindow(language, target, isIframe) {
         isIframe = true;
     }
 
-    var path = _wrs_conf_path + "/core/editor.html";
+    // Avoid double slashes.
+    var path = _wrs_conf_path.lastIndexOf('/') == _wrs_conf_path.length - 1 ?  _wrs_conf_path + "core/editor.html" :  _wrs_conf_path + "/core/editor.html";
 
     if (language) {
         path = wrs_addArgument(path, "lang", language);
@@ -2529,8 +2539,6 @@ function wrs_urlToAssArray(url) {
 }
 
 function wrs_setImgSize(img, url, base64) {
-    // ...svg images have a margin of 0.5px, we need to calculate the alignment.
-    var ALIGN_CONSTANT = 0.5;
 
     if (base64) {
         // Cleaning data:image/png;base64.
@@ -2558,12 +2566,7 @@ function wrs_setImgSize(img, url, base64) {
     }
     img.width = width;
     img.height = height;
-    if (_wrs_conf_imageFormat != 'svg') {
-      img.style.verticalAlign = "-" + (height - baseline) + "px";
-    } else {
-      img.style.verticalAlign = "-" + (height - baseline - ALIGN_CONSTANT) + "px";
-    }
-
+    img.style.verticalAlign = "-" + (height - baseline) + "px";
 }
 
 function wrs_fixAfterResize(img) {
@@ -2605,7 +2608,10 @@ function wrs_loadConfiguration() {
 
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    var configUrl = _wrs_int_conf_file.indexOf("/") == 0 || _wrs_int_conf_file.indexOf("http") == 0 ? _wrs_int_conf_file : _wrs_conf_path + "/" + _wrs_int_conf_file;
+    // Sometimes _wrs_conf_path contains a final "/" because is obtained using some editor's API.
+    // With this variable we avoid URL's with doubles //.
+    var newConfPath = _wrs_conf_path.lastIndexOf("/") == _wrs_conf_path.length - 1 ? _wrs_conf_path + _wrs_int_conf_file : _wrs_conf_path + "/" + _wrs_int_conf_file;
+    var configUrl = _wrs_int_conf_file.indexOf("/") == 0 || _wrs_int_conf_file.indexOf("http") == 0 ? _wrs_int_conf_file : newConfPath;
     script.src = configUrl;
     document.getElementsByTagName('head')[0].appendChild(script); // Asynchronous load of configuration.
 }
@@ -2631,7 +2637,8 @@ if (typeof _wrs_conf_configuration_loaded == 'undefined') {
  */
 
 function wrs_createModalWindow(title, iframeParams, deviceProperties, modalProperties) {
-
+    // Keep the scroll to restore when the modal window is closed.
+    _wrs_mainwindow_scroll = window.scrollY;
     // Adding css stylesheet.
     var fileref = document.createElement("link");
     fileref.setAttribute("rel", "stylesheet");
@@ -3001,7 +3008,11 @@ function wrs_closeModalWindow() {
     if (document.querySelector('meta[name=viewport]')) {
         document.querySelector('meta[name=viewport]').content = "";
     }
-    document.body.className = document.body.className != 'wrs_modal_open' ? document.body.className.replace(' wrs_modal_open', '') : document.body.className = ""
+
+    // Due to this line, the scroll is set to 0 on the main window, so that we need to restore it with the previous value.
+    document.body.className = document.body.className != 'wrs_modal_open' ? document.body.className.replace(' wrs_modal_open', '') : document.body.className = "";
+    window.scrollTo(0, _wrs_mainwindow_scroll);
+
     var modalDiv = document.getElementsByClassName('wrs_modal_overlay')[0];
     closeFunction = document.body.removeChild(modalDiv);
 }
@@ -3351,26 +3362,26 @@ function getMetricsFromSvgString(svgString) {
     var first = svgString.indexOf('height="');
     var last = svgString.indexOf('"',first + 8, svgString.length);
     var height = svgString.substring(first + 8, last);
-    
+
     first = svgString.indexOf('width="');
     last = svgString.indexOf('"',first + 7, svgString.length);
     var width = svgString.substring(first + 7, last);
-    
+
     first = svgString.indexOf('wrs:baseline="');
     last = svgString.indexOf('"',first + 14, svgString.length);
     var baseline = svgString.substring(first + 14, last);
-    
+
     if (typeof(width != 'undefined')) {
         var arr = new Array();
         arr['cw'] = width;
-        arr['ch'] = height;        
+        arr['ch'] = height;
         if (typeof baseline != 'undefined') {
             arr['cb'] = baseline
         }
-        
+
         return arr;
     }
-    
+
 }
 
 /**

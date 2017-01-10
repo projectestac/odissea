@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['mobileapp'] = 'Aplikazio mugikorra';
+$string['pluginname'] = 'Lineaz kanpoko saiakerentzako sarbide araua';

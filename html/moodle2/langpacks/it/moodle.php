@@ -74,6 +74,7 @@ $string['addresource'] = 'Aggiungi una risorsa...';
 $string['addresourceoractivity'] = 'Aggiungi una attività o una risorsa';
 $string['addresourcetosection'] = 'Aggiungi una risorsa alla sezione \'{$a}\'';
 $string['address'] = 'Indirizzo';
+$string['addressedto'] = 'A';
 $string['addstudent'] = 'Aggiungi studente';
 $string['addsubcategory'] = 'Aggiungi una sotto categoria';
 $string['addteacher'] = 'Aggiungi docente';
@@ -466,6 +467,7 @@ $string['days'] = 'giorni';
 $string['decodinginternallinks'] = 'Decodifica collegamenti interni';
 $string['default'] = 'Default';
 $string['defaultcompetencescale'] = 'Scala di competenze di default';
+$string['defaultcompetencescaledesc'] = 'Una scala di valutazione binaria che indica solo se un utente ha dimostrato esperienza oppure no.';
 $string['defaultcompetencescalenotproficient'] = 'Non competente';
 $string['defaultcompetencescaleproficient'] = 'Competente';
 $string['defaultcoursestudent'] = 'Studente';
@@ -1286,7 +1288,7 @@ $string['nopotentialcreators'] = 'Non ci sono possibili creatori di corsi';
 $string['nopotentialstudents'] = 'Non ci sono possibili studenti';
 $string['nopotentialteachers'] = 'Non ci sono potenziali docenti';
 $string['norecentactivity'] = 'Nessuna attività recente';
-$string['noreplybouncemessage'] = 'Hai risposto ad un indirizzo no-reply. Se stavi rispondendo ad un messaggio di un forum, dovresti usare il forum  {$a}.
+$string['noreplybouncemessage'] = 'Hai risposto ad un indirizzo no-reply. Se stavi rispondendo ad un messaggio di un forum, dovresti usare il forum {$a}.
 
 Questo è il messaggio che hai inviato:';
 $string['noreplybouncesubject'] = '{$a} - email ritornata';
@@ -1800,7 +1802,7 @@ $string['summary_help'] = '<p>Il sommario dell\'argomento o della settimana è u
 <p>Se nel sommario desideri utilizzare un testo più lungo, è forse preferibile
 valutare l\'utilizzo di una Risorsa, ad esempio chiamandola  "Contenuto dell\'argomento" che illustri l\'argomento stesso con maggiore dettaglio.</p>';
 $string['summaryof'] = 'Riassunto di {$a}';
-$string['supplyinfo'] = 'Inserisci i tuoi dati';
+$string['supplyinfo'] = 'Ulteriori dettagli';
 $string['suspended'] = 'Sospeso';
 $string['suspendedusers'] = 'Utente sospeso';
 $string['switchdevicedefault'] = 'Passa al tema standard';

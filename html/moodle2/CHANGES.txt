@@ -3,6 +3,18 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 17.01.16
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.1.4 (Trello #1455)
+- Updated filter/wiris and atto/wiris
+- Updated local/alexandriaimporter: Repaired load more button
+- Updated local/mobile
+- Updated mod/questionnaire
+- Updated mod/choicegroup
+- Added completion progress bar block (block_completion_progress) to replace progress bar block
+- Updated LangPacks
+
+
 Changes 16.10.24
 ---------------------------------------------------------------------------------------
 - tool/odisseagtafsync: Fixed bug with deprecated function

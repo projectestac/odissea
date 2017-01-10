@@ -42,8 +42,8 @@ $string['completed'] = 'Voltooid';
 $string['completedunlocked'] = 'Opties voor voltooien niet geblokkeerd';
 $string['completedunlockedtext'] = 'Wanneer je wijzigingen bewaart, zal de status van voltooien voor alle gebruikers gewist worden. Als je twijfelt of je dit wel wil, bewaar dit formulier dan niet.';
 $string['completedwarning'] = 'Opties voor voltooien geblokkeerd';
-$string['completedwarningtext'] = 'Eén of meer gebruikers ({$a}) heeft deze activiteit al als voltooid gemarkeerd. Het wijzigen van de voltooiingsopties zal hun afwerkingsstatus wissen en zou hierdoor voor verwarring kunnen zorgen.
-De opties zijn geblokkeerd en je wordt aangeraden die geblokkeerd te laten tenzij absoluut noodzakelijk.';
+$string['completedwarningtext'] = 'Eén of meer gebruikers ({$a}) heeft deze activiteit al als voltooid gemarkeerd. Het wijzigen van de voltooiingsopties zal hun voltooiingsstatus wissen en zou hierdoor voor verwarring kunnen zorgen.
+De opties zijn geblokkeerd en je wordt aangeraden die geblokkeerd te laten tenzij het echt niet anders kan.';
 $string['completion'] = 'Voltooien bijhouden';
 $string['completionactivitydefault'] = 'Gebruik activiteitsstandaard';
 $string['completion-alt-auto-enabled'] = 'Het systeem markeert dit item als voltooid - het voldoet aan de voorwaarden:  {$a}';

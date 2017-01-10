@@ -101,7 +101,7 @@ $string['modulenameplural'] = 'チャット';
 $string['neverdeletemessages'] = 'メッセージを削除しない';
 $string['nextsession'] = '次のスケジュールセッション';
 $string['nochat'] = 'チャットが見つかりませんでした。';
-$string['no_complete_sessions_found'] = '終了したセッションは見つかりませんでした。';
+$string['no_complete_sessions_found'] = '完了したセッションは見つかりませんでした。';
 $string['noguests'] = 'ゲストはこのチャットを利用できません。';
 $string['nomessages'] = 'メッセージがありません。';
 $string['nopermissiontoseethechatlog'] = 'あなたにはこのチャットログを閲覧するためのパーミッションがありません。';
@@ -133,7 +133,7 @@ $string['serverip'] = 'サーバIP';
 $string['servermax'] = '最大ユーザ';
 $string['serverport'] = 'サーバポート';
 $string['sessions'] = 'チャットセッション';
-$string['sessionstart'] = '次のチャットセッションは {$a} に開始されます。';
+$string['sessionstart'] = '次のチャットセッションは {$a->date} に開始されます (現在から {$a->fromnow} 後)。';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'すべての人が過去のセッションを閲覧できる';
 $string['studentseereports_help'] = '「No」に設定した場合、mod/chat:readlogケイパビリティが割り当てられたユーザのみチャットログを閲覧することができます。';
@@ -146,7 +146,7 @@ $string['usingchat_help'] = 'チャットモジュールにはチャットを若
 
 * スマイリー - Moodleのどこでも入力できる笑顔 (エモーティコン) はここでも入力することができます。例えば :-) のように表示されます。
 * リンク- インターネットアドレスは自動的にリンクに変換されます。
-* 感情 - 行を"/me" または ":" で始めることで感情を表現できます。例えば、あなたの名前がKimの場合、":laughs!" または "/me laughs!"と入力することで、「Kimが笑っている!」状態を全員が見ることができます。
+* 感情 - 行を"/me" または ":" で始めることで感情を表現できます。例えばあなたの名前がKimの場合、":laughs!" または "/me laughs!"と入力することで、「Kimが笑っている!」状態を全員が見ることができます。
 * ビープ - 名前の隣にある「ビープ」をクリックすることで、他の人にサウンドを送ることができます。「beep all」と入力することで、チャット中の全員に一斉にビープできる便利な機能もあります。
 * HTML - あなたがHTMLコードを知っているのでしたら、イメージを挿入したり、音を鳴らしたり、色やサイズの異なるテキストを作成することができます。';
 $string['viewreport'] = '過去のチャットセッションを表示する';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_submitted'] = 'التقديم المُحمَّل تمَّ إرساله';
+$string['event_assessable_submitted'] = 'التسليم المُحمَّل تمَّ إرساله';
 $string['event_assessable_uploaded'] = '.تم رفع الملف';
 $string['pluginname'] = 'رفع /تحميل';

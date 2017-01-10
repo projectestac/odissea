@@ -48,6 +48,7 @@ $string['config_icons'] = 'Использовать иконки в индика
 $string['config_now'] = 'Использовать';
 $string['config_percentage'] = 'Показывать процент студентам';
 $string['config_title'] = 'Альтернативный заголовок';
+$string['coursenametoshow'] = 'Показать название курса в Личный кабинет';
 $string['data'] = 'База данных';
 $string['feedback'] = 'Обратная связь';
 $string['finished'] = 'закончено';

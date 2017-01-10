@@ -30,7 +30,7 @@ Merk op dat dit de veiligheid van de server niet enorm gaat verhogen, maar het k
 $string['check_configrw_name'] = 'config.php beschrijfbaar';
 $string['check_configrw_ok'] = 'config.php kan niet gewijzigd worden door PHP-scripts';
 $string['check_configrw_warning'] = 'PHP-scripts kunnen config.php wijzigen';
-$string['check_cookiesecure_details'] = '<p>Als je https inschakelt, dan kun je ook best secure cookies inschakelen. Je zou ook een permanente omleiding van http naar https moeten maken. Je kunt beste ook HSTS headers meegeven.</p>';
+$string['check_cookiesecure_details'] = '<p>Als je https inschakeld, dan kun je ook best secure cookies inschakelen. Je zou ook een permanente omleiding van http naar https moeten maken. Het best zou je ook nog HSTS-headers gebruiken</p>';
 $string['check_cookiesecure_error'] = 'Schakel secure cookies in';
 $string['check_cookiesecure_name'] = 'Secure cookies';
 $string['check_cookiesecure_ok'] = 'Secure cookies ingeschakeld.';

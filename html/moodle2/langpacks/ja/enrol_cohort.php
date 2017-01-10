@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addgroup'] = 'グループを追加する';
+$string['addgroup'] = 'グループに追加する';
 $string['assignrole'] = 'ロールを割り当てる';
 $string['cohort:config'] = 'コーホートインスタンスを設定する';
 $string['cohort:unenrol'] = '利用停止ユーザを登録解除する';
 $string['creategroup'] = '新しいグループを作成する';
 $string['defaultgroupnametext'] = '{$a->name} コーホート {$a->increment}';
-$string['instanceexists'] = 'すでに選択されたロールにコーホートは同期されています。';
+$string['instanceexists'] = '選択されたロールにコーホートはすでに同期されています。';
 $string['pluginname'] = 'コーホート同期';
 $string['pluginname_desc'] = 'コーホート登録プラグインではコーホートメンバーとコース参加者を同期します。';
 $string['status'] = 'アクティブ';

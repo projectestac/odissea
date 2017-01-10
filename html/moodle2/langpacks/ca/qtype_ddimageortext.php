@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'Blancs per a {no} zones de col·locació més';
 $string['addmoreimages'] = 'Blancs per a {no} ítems arrossegables més';
 $string['answer'] = 'Resposta';
 $string['bgimage'] = 'Imatge de fons';
+$string['blank'] = 'en blanc';
 $string['correctansweris'] = 'La resposta correcta és: {$a}';
 $string['draggableimage'] = 'Imatge arrossegable';
 $string['draggableitem'] = 'Ítem arrossegable';

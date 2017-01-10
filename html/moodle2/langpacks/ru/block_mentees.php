@@ -29,6 +29,6 @@ $string['configtitle'] = 'Название блока';
 $string['configtitleblankhides'] = 'Название блока (без названия, если пустое)';
 $string['leaveblanktohide'] = 'оставьте пустым, чтобы не отображать название';
 $string['mentees:addinstance'] = 'Добавлять новый блок «Подопечные»';
-$string['mentees:myaddinstance'] = 'Добавлять новый блок «Подопечные» на страницу «Моя домашняя страница»';
+$string['mentees:myaddinstance'] = 'Добавлять новый блок «Подопечные» на страницу «Личный кабинет»';
 $string['newmenteesblock'] = '(новый блок «Подопечные»)';
 $string['pluginname'] = 'Подопечные';

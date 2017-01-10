@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = 'Tem a certeza que deseja apagar todas as inscrições para o papel "{$a->role}" no contexto "{$a->level}"?';
+$string['confirmdelete'] = 'Tem a certeza que pretende apagar todas as inscrições para o papel "{$a->role}" no contexto "{$a->level}"?';
 $string['contextlevel'] = 'Nível do contexto';
 $string['count'] = 'Número';
 $string['noprolbems'] = 'Não foram encontradas atribuições de papéis não suportadas.';

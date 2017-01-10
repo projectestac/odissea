@@ -127,7 +127,7 @@ class flexible_table {
 
     /**
      * Constructor
-     * @param int $uniqueid all tables have to have a unique id, this is used
+     * @param string $uniqueid all tables have to have a unique id, this is used
      *      as a key when storing table properties like sort order in the session.
      */
     function __construct($uniqueid) {
@@ -449,8 +449,10 @@ class flexible_table {
         // Load any existing user preferences.
         if ($this->persistent) {
             $this->prefs = json_decode(get_user_preferences('flextable_' . $this->uniqueid), true);
+            $oldprefs = $this->prefs;
         } else if (isset($SESSION->flextable[$this->uniqueid])) {
             $this->prefs = $SESSION->flextable[$this->uniqueid];
+            $oldprefs = $this->prefs;
         }
 
         // Set up default preferences if needed.
@@ -463,7 +465,10 @@ class flexible_table {
                 'textsort' => $this->column_textsort,
             );
         }
-        $oldprefs = $this->prefs;
+
+        if (!isset($oldprefs)) {
+            $oldprefs = $this->prefs;
+        }
 
         if (($showcol = optional_param($this->request[TABLE_VAR_SHOW], '', PARAM_ALPHANUMEXT)) &&
                 isset($this->columns[$showcol])) {

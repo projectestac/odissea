@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmstart'] = 'Galdetegi honek {$a}-(e)ko denbora-muga du. Denbora saiakera egiten hasten zarenean hasiko da eta bukatu aurretik bidali beharko duzu. Ziur zaude orain hasi nahi duzula?';
+$string['confirmstartheader'] = 'Denbora-mugadun galdetegia';
 $string['pluginname'] = 'Denbora-mugaren araberako sarbide-araua';
 $string['quiztimelimit'] = 'Denbora-muga: {$a}';

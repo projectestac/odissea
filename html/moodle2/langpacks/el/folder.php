@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentheader'] = 'Περιεχόμενο';
-$string['folder:managefiles'] = 'Διαχείρηση αρχείων στην ενότητα φάκελος (folder module)';
+$string['folder:managefiles'] = 'Διαχείριση αρχείων στην ενότητα φάκελος (folder module)';
 $string['folder:view'] = 'Εμφάνιση περιεχομένου φακέλου';
 $string['modulename'] = 'Φάκελος';
 $string['modulenameplural'] = 'Φάκελοι';

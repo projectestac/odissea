@@ -30,6 +30,7 @@ $string['assessmentname'] = 'Kalifikazio-elementua';
 $string['blanks'] = 'Kalifikazio hutsak';
 $string['bulkfor'] = '{$a}-(r)rentzako kalifikazioak';
 $string['bulkinsertvalue'] = 'Txertatu balorea';
+$string['entrypage'] = 'Kalifikatu erabiltzailea edo elementua';
 $string['exclude'] = 'Utzi kanpoan';
 $string['excludeall'] = 'Utzi kanpoan kalifikazio guztiak';
 $string['excludenone'] = 'Ez utzi kanpoan kalifikaziorik';

@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['added'] = 'Standaard tag(s) toegevoegd';
+$string['added'] = 'Standaard-tag(s) toegevoegd';
 $string['addedotag'] = '"{$a}" is toegevoegd als officiële tag';
-$string['addotags'] = 'Voeg standaard tag toe';
+$string['addotags'] = 'Voeg standaard-tags toe';
 $string['addtagcoll'] = 'Voeg tag-collectie toe';
 $string['addtagtomyinterests'] = 'Voeg "{$a}" toe aan mijn interesses';
 $string['alltagpages'] = 'Alle tag-pagina\'s';
@@ -109,7 +109,7 @@ $string['ptags'] = 'Doot gebruiker gedefiniëerde tags (door komma\'s gescheiden
 $string['relatedblogs'] = 'Meest recente blogs';
 $string['relatedtags'] = 'Gerelateerde tags';
 $string['removetagfrommyinterests'] = 'Verwijder "{$a}" uit mijn interesselijst';
-$string['reset'] = 'Herstel tag vlag';
+$string['reset'] = 'Herstel tag-vlag';
 $string['resetfilter'] = 'Herstel filter';
 $string['resetflag'] = 'Herstel markering';
 $string['responsiblewillbenotified'] = 'De verantwoordelijke zal een melding krijgen';

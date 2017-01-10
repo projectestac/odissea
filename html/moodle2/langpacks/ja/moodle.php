@@ -74,6 +74,7 @@ $string['addresource'] = 'リソースを追加する ...';
 $string['addresourceoractivity'] = '活動またはリソースを追加する';
 $string['addresourcetosection'] = 'セクション「 {$a} 」にリソースを追加する';
 $string['address'] = '住所';
+$string['addressedto'] = 'To';
 $string['addstudent'] = '学生を追加する';
 $string['addsubcategory'] = 'サブカテゴリを追加する';
 $string['addteacher'] = '教師を追加する';
@@ -232,7 +233,7 @@ $string['categorycontents'] = 'サブカテゴリおよびコース';
 $string['categorycurrentcontents'] = '{$a} のコンテンツ';
 $string['categorydeleted'] = 'カテゴリ「 {$a} 」 が削除されました。';
 $string['categoryduplicate'] = 'カテゴリ名「{$a}」はすでに使用されています!';
-$string['categorymodifiedcancel'] = 'カテゴリが変更されました! キャンセルの後、もう一度お試しください。';
+$string['categorymodifiedcancel'] = 'カテゴリが変更されました! キャンセルの後、再度お試しください。';
 $string['categoryname'] = 'カテゴリ名';
 $string['categorysubcategoryof'] = '{$a->category} - {$a->parentcategory} のサブカテゴリ';
 $string['categoryupdated'] = 'カテゴリ「 {$a} 」が更新されました。';
@@ -394,7 +395,7 @@ $string['coursesectiontitle'] = 'コース: {$a->course} - {$a->sectionname}: {$
 $string['coursesettings'] = 'コースデフォルト設定';
 $string['coursesmovedout'] = '{$a} からコースを移動しました。';
 $string['coursespending'] = '承認審査中コース';
-$string['coursestart'] = 'コース開始日';
+$string['coursestart'] = 'コース開始';
 $string['coursesummary'] = 'コース概要';
 $string['coursesummary_help'] = 'コース概要はコース一覧に表示されます。コース検索ではコース名に加えてコース概要も検索対象とします。';
 $string['coursetitle'] = 'コース: {$a->course}';
@@ -517,7 +518,7 @@ $string['displayingrecords'] = 'レコード {$a} 件を表示';
 $string['displayingusers'] = 'ユーザを {$a->start} から {$a->end} まで表示';
 $string['displayonpage'] = 'ページに表示する';
 $string['dndcourse'] = 'あなたは並び順を変更するため、または別のカタゴリに移動するため、このコースをドラッグ＆ドロップすることができます。';
-$string['dndenabled_inbox'] = 'ここにドラッグ＆ドロップして、ファイルを追加することができます。';
+$string['dndenabled_inbox'] = 'ここにドラッグ＆ドロップしてファイルを追加することができます。';
 $string['dndnotsupported'] = 'ドラッグ＆ドロップアップロードはサポートされていません。';
 $string['dndnotsupported_help'] = 'あなたのブラウザはドラッグ＆ドロップアップロードをサポートしていません。<br />この機能はすべての最近のバージョンのChrome、Firefox、SafariおよびInternet Explorer v10以上で利用できます。';
 $string['dndnotsupported_insentence'] = 'ドラッグ＆ドロップはサポートされていません。';
@@ -610,17 +611,17 @@ $string['emailconfirmationsubject'] = '{$a}: アカウントの確定';
 $string['emailconfirmsent'] = '<p>あなたの <b>{$a}</b> のメールアドレス宛にメールが送信されました。</p>
 <p>メールには登録を確認するための簡単な説明が記載されています。</p>
 <p>分からない場合、サイト管理者にご連絡ください。</p>';
-$string['emaildigest'] = 'メールダイジェストタイプ';
-$string['emaildigestcomplete'] = '全部 (すべての投稿を毎日メール)';
-$string['emaildigest_help'] = 'これはフォーラムにデフォルトとして使用されるデイリーダイジェスト設定です。
+$string['emaildigest'] = 'メール要約タイプ';
+$string['emaildigestcomplete'] = 'すべて (投稿すべてを含む日次メール)';
+$string['emaildigest_help'] = 'これはフォーラムにデフォルトとして使用される日次要約設定です。
 
-* ダイジェストなし - あなたはフォーラム投稿ごとに1通のメールを受信します。
-* ダイジェスト - 完全な投稿 - あなたはそれぞれのフォーラム投稿に関する完全なコンテンツを含むメールダイジェストを1日1通受信します。
-* ダイジェスト - 件名のみ - あなたはそれぞれのフォーラム投稿に関する件名を含むメールダイジェストを1日1通受信します。
+* 要約なし - あなたはフォーラム投稿ごとに1通のメールを受信します。
+* 要約 - 投稿すべて - あなたはそれぞれのフォーラム投稿すべてのコンテンツを含むメール要約を1日1通受信します。
+* 要約 - 件名のみ - あなたはそれぞれのフォーラム投稿の件名を含むメールダイジェストを1日1通受信します。
 
-必要であれば、あなたはそれぞれのフォーラムに異なる設定を選択することもできます。';
-$string['emaildigestoff'] = '要約なし (フォーラムの投稿ごとにメール)';
-$string['emaildigestsubjects'] = '題名 (題名のみを毎日メール)';
+必要であれば、あなたはそれぞれのフォーラムで異なる設定を選択することもできます。';
+$string['emaildigestoff'] = '要約なし (フォーラム投稿ごとのメール)';
+$string['emaildigestsubjects'] = '件名 (件名のみを含む日次メール)';
 $string['emaildisable'] = 'このメールアドレスは無効です';
 $string['emaildisableclick'] = 'このメールアドレス宛にすべてのメールが送信されないようにする';
 $string['emaildisplay'] = 'メールアドレス公開';
@@ -1641,7 +1642,7 @@ $string['showallcourses'] = 'すべてのコースを表示する';
 $string['showallusers'] = 'すべてのユーザを表示する';
 $string['showblockcourse'] = 'ブロックを含むコース一覧を表示する';
 $string['showcategory'] = '{$a} を表示する';
-$string['showcomments'] = 'コメントを表示/非表示する';
+$string['showcomments'] = 'コメントを表示/非表示にする';
 $string['showcommentsnonjs'] = 'コメントを表示する';
 $string['showdescription'] = 'コースページに説明を表示する';
 $string['showdescription_help'] = 'この設定を有効にした場合、上記説明文がコースページ内の活動またはリソースのリンクの下に表示されます。';
@@ -1742,7 +1743,7 @@ $string['statsstudentwrites'] = '学生の投稿';
 $string['statsteacheractivity'] = '教師の活動';
 $string['statsteacherreads'] = '教師の閲覧';
 $string['statsteacherwrites'] = '教師の投稿';
-$string['statstimeperiod'] = '期間 - 最後:';
+$string['statstimeperiod'] = '期間 - 直近:';
 $string['statsuniquelogins'] = 'ユニークログイン';
 $string['statsuseractivity'] = 'すべての活動';
 $string['statsuserlogins'] = 'ログイン';
@@ -1828,7 +1829,7 @@ $string['unknowncategory'] = '不明のカテゴリ';
 $string['unknownerror'] = '不明なエラー';
 $string['unknownuser'] = '不明なユーザ';
 $string['unlimited'] = '無制限';
-$string['unpacking'] = '{$a} の解凍';
+$string['unpacking'] = '{$a} の展開';
 $string['unsafepassword'] = '安全ではないパスワードです - 他のパスワードを入力してください。';
 $string['untilcomplete'] = '完了するまで';
 $string['unusedaccounts'] = '{$a} 日以上利用されていないアカウントは自動的に登録解除されます。';

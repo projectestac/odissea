@@ -30,4 +30,6 @@ $string['op_doesnotcontain'] = 'لا يحتوي';
 $string['op_endswith'] = 'ينتهي بـ';
 $string['op_isempty'] = 'هو فارغ';
 $string['op_isequalto'] = 'هو يساوي';
+$string['op_isnotempty'] = 'ليس فارغاً';
 $string['op_startswith'] = 'يبداء بـ';
+$string['title'] = 'الملف الشخصي';

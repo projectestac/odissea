@@ -35,6 +35,7 @@ $string['deleteerrors'] = 'Fehler löschen';
 $string['encoding'] = 'Encoding';
 $string['errormnetadd'] = 'Remote-Nutzer/innen können nicht hinzugefügt werden';
 $string['errors'] = 'Fehler';
+$string['invalidupdatetype'] = 'Sie können diese Option nicht wählen mit dem ausgesuchten \'Upload Typ\'';
 $string['invaliduserdata'] = 'Für den Nutzer {$a} wurden ungültige Daten entdeckt und automatisch bereinigt.';
 $string['nochanges'] = 'Keine Änderungen';
 $string['pluginname'] = 'Nutzerupload';

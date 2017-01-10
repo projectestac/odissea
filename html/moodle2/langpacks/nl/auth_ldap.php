@@ -57,7 +57,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Schakel de gracelogin-ondersteuning voo
 $string['auth_ldap_gracelogins_key'] = 'Grace logins';
 $string['auth_ldap_groupecreators'] = 'Lijst van groepen of contexten waarvan de leden het recht hebben groepen aan te maken. Gebruik een \';\' als scheidingsteken tussen meerdere groepen. Gewoonlijk wordt dat iets als \'cn=leraars,ou=personeel,o=mijn_organisatie\'';
 $string['auth_ldap_groupecreators_key'] = 'Wie groepen mag aanmaken';
-$string['auth_ldap_host_url'] = 'Geef de LDAP-host in de vorm van een URL zoals bijvoorbeeld: \'ldap://ldap.myorg.com/\' of \'ldaps://ldap.myorg.com/\'. Meerder servers kan je scheiden door een \';\' om back-upservers op te geven.';
+$string['auth_ldap_host_url'] = 'Geef de LDAP-host in de vorm van een URL zoals bijvoorbeeld: \'ldap://ldap.myorg.com/\' of \'ldaps://ldap.myorg.com/\'. Scheidt meerdere servers met \',\' om fouttolerantie mogelijk te maken.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
 $string['auth_ldap_ldap_encoding'] = 'Specifier de encoding van de LDAP-server. Waarschijnlijk utf-8, MS AD v2 gebruikt default platform encoding zoals cp1252, cp 1250, enz.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP-encoding';

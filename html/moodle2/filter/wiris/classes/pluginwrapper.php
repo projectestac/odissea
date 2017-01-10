@@ -14,9 +14,28 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * This class loads the environment that WIRIS filter needs to work.
+ *
+ * @package    filter
+ * @subpackage wiris
+ * @copyright  Maths for More S.L. <info@wiris.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 defined('MOODLE_INTERNAL') || die();
 
-class WIRISpluginWrapper {
+// This classes are shared between WIRIS Quizzes and WIRIS Plugins
+// Avoid loading twice.
+if (!class_exists('moodlefilecache')) {
+    require_once($CFG->dirroot . '/filter/wiris/classes/moodlefilecache.php');
+}
+
+if (!class_exists('moodledbcache')) {
+    require_once($CFG->dirroot . '/filter/wiris/classes/moodledbcache.php');
+}
+
+class filter_wiris_pluginwrapper {
     private $isinit = false;
     private $installed = false;
     private $moodleconfig;
@@ -46,19 +65,23 @@ class WIRISpluginWrapper {
             global $CFG;
             // Init haxe environment.
             if (!class_exists('com_wiris_system_CallWrapper')) {
-                require_once('integration/lib/com/wiris/system/CallWrapper.class.php');
+                require_once($CFG->dirroot . '/filter/wiris/integration/lib/com/wiris/system/CallWrapper.class.php');
             }
             com_wiris_system_CallWrapper::getInstance()->init($CFG->dirroot . '/filter/wiris/integration');
 
             // Start haxe environment.
             $this->begin();
             // Create PluginBuilder with Moodle specific configuration.
-            require_once('MoodleConfigurationUpdater.php');
-            $this->moodleConfig = new com_wiris_plugin_configuration_MoodleConfigurationUpdater();
-
+            $this->moodleConfig = new filter_wiris_configurationupdater();
             $this->instance = com_wiris_plugin_api_PluginBuilder::getInstance();
             $this->instance->addConfigurationUpdater($this->moodleConfig);
             $this->instance->addConfigurationUpdater(new com_wiris_plugin_web_PhpConfigurationUpdater());
+            // Class to manage file cache.
+            $cachefile = new moodlefilecache('filter_wiris', 'images');
+            $this->instance->setStorageAndCacheCacheObject($cachefile);
+            // Class to manage formulas (i.e plain text) cache.
+            $cachedb = new moodledbcache('filter_wiris_formulas', 'md5', 'content');
+            $this->instance->setStorageAndCacheCacheFormulaObject($cachedb);
             // Stop haxe environment.
             $this->end();
         }
@@ -85,22 +108,6 @@ class WIRISpluginWrapper {
         // Force configuration load.
         $this->get_instance()->getConfiguration()->getProperty("wirischemeditorenabled", null);
         return $this->moodleConfig->waschemeditorenabled;
-    }
-
-    public function clear_folder($folder) {
-        if (!is_null($folder)) {
-            $dirstructure = (glob(rtrim($folder, "/").'/*'));
-            if (is_array($dirstructure)) {
-                foreach ($dirstructure as $direlement) {
-                    if (is_file($direlement)) {
-                            unlink($direlement);
-                    } else if (is_dir($direlement)) {
-                        $this->clear_folder($direlement);
-                    }
-                }
-            }
-            rmdir($folder);
-        }
     }
 
     /**

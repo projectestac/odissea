@@ -74,6 +74,7 @@ $string['addresource'] = 'Engadir un recurso...';
 $string['addresourceoractivity'] = 'Engadir unha actividade ou un recurso';
 $string['addresourcetosection'] = 'Engadir un recurso á sección «{$a}»';
 $string['address'] = 'Enderezo';
+$string['addressedto'] = 'ata';
 $string['addstudent'] = 'Engadir un alumno';
 $string['addsubcategory'] = 'Engadir unha sub-categoría';
 $string['addteacher'] = 'Engadir un profesor';

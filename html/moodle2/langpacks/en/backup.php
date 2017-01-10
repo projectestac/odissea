@@ -118,6 +118,7 @@ $string['currentstage4'] = 'Confirmation and review';
 $string['currentstage8'] = 'Perform backup';
 $string['enterasearch'] = 'Enter a search';
 $string['error_block_for_module_not_found'] = 'Orphan block instance (id: {$a->bid}) for course module (id: {$a->mid}) found. This block will not be backed up';
+$string['errorcopyingbackupfile'] = 'Failed to copy the backup file to the temporary folder before restoring.';
 $string['error_course_module_not_found'] = 'Orphan course module (id: {$a}) found. This module will not be backed up.';
 $string['errorfilenamemustbezip'] = 'The filename you enter must be a ZIP file and have the .mbz extension';
 $string['errorfilenamerequired'] = 'You must enter a valid filename for this backup';

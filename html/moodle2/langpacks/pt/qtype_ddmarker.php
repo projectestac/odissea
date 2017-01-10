@@ -47,7 +47,7 @@ $string['dropzones_help'] = 'As áreas para largar são definidas através da in
 * Polígono: x1, y1; x2, y2; ...; xn, yn<br>por exemplo: <code>20, 60; 100, 60; 20, 100</code>
 * Rectângulo: esquerda, topo, largura, altura<br>por exemplo: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Os seguintes marcadores foram arrastados para uma área errada: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foram arrastados incorretamente: {$a}. O(s) marcador(es) destacados são agora exibidos com a(s) área(s) de destino correta(s).<br /> Clique no marcador para visualizar a área correta em destaque.';
+$string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foram arrastados incorretamente: {$a}.<br />Os marcadores destacados foram colocados nas áreas de destino corretas.<br /> Clique no marcador para visualizar a área correta em destaque.';
 $string['formerror_nobgimage'] = 'É necessário selecionar uma imagem para utilizar como fundo, para a área de arrastar e largar.';
 $string['formerror_noitemselected'] = 'Especificou uma área para largar, mas não escolheu o marcador que deverá ser arrastado para essa área.';
 $string['formerror_nosemicolons'] = 'Não existem pontos e vírgulas a separar a sua sequência de coordenadas. As suas coordenadas para o {$a->shape} devem ser expressas como - {$a->coordsstring}.';
@@ -71,7 +71,7 @@ $string['pluginnameadding'] = 'Adicionar pergunta do tipo arrastar e largar numa
 $string['pluginnameediting'] = 'Editar pergunta do tipo arrastar e largar numa área';
 $string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa área necessitam que os alunos arrastem quadros de texto, e os larguem numa área para largar predefinida numa imagem de fundo.';
 $string['pluginnamesummary'] = 'Os marcadores podem ser arrastados e largados em zonas predefinidas para largar, numa imagem de fundo.';
-$string['previewareaheader'] = 'Pré-visualizar';
+$string['previewareaheader'] = 'Pré-visualização';
 $string['previewareamessage'] = 'Selecione um ficheiro de imagem de fundo, insira os seus quadros de texto para marcadores e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shape'] = 'Forma';

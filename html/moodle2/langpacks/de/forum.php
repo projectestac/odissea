@@ -106,7 +106,7 @@ $string['configreplytouser'] = 'Wenn ein Forumsbeitrag per E-Mail verschickt wir
 $string['configrssarticlesdefault'] = 'Wenn RSS Feeds aktiviert sind, wird hiermit der standardmäßige Anzahl von Artikeln (bzw. Themen oder Beiträgen) festgelegt.';
 $string['configrsstypedefault'] = 'Wenn RSS Feeds aktiviert sind, wird hiermit der Standardtyp festgelegt.';
 $string['configshortpost'] = 'Jeder Beitrag wird als kurz eingestuft, wenn er kürzer als diese Zeichenzahl ist (ohne Berücksichtigung der HTML-Codierung).';
-$string['configtrackingtype'] = 'Standardeinstellung zum Lesetracking';
+$string['configtrackingtype'] = 'Standardeinstellung zum Forumstracking';
 $string['configtrackreadposts'] = 'Wenn diese Option aktiviert ist, steht die Markierung gelesen/ungelesen für alle zur Verfügung.';
 $string['configusermarksread'] = 'Wenn diese Option aktiviert ist, müssen neue Nachrichten manuell als gelesen markiert werden. Andernfalls gilt eine Nachricht automatisch als gelesen, sobald sie einmal aufgerufen wurde.';
 $string['confirmsubscribe'] = 'Möchten Sie wirklich das Forum \'{$a}\' abonnieren?';
@@ -150,7 +150,7 @@ $string['discussionsstartedbyuserincourse'] = 'Themen begonnen von {$a->fullname
 $string['discussionsubscribestart'] = 'Ich möchte neue Beiträge zu diesem Thema als Mitteilung erhalten.';
 $string['discussionsubscribestop'] = 'Ich möchte keine Mitteilungen zu diesem Thema erhalten.';
 $string['discussionsubscription'] = 'Themenabonnement';
-$string['discussionsubscription_help'] = 'Wenn Sie ein Thema abonnieren, bekommen Sie Mitteilungen über neue Beiträge zu diesem Thema.';
+$string['discussionsubscription_help'] = 'Wenn Sie ein Thema abonnieren, bekommen Sie Mitteilungen über alle neuen Beiträge zu diesem Thema.';
 $string['discussionunpin'] = 'Loslösen';
 $string['discussthistopic'] = 'Thema diskutieren';
 $string['displayend'] = 'Anzeigeende';
@@ -177,9 +177,9 @@ $string['emaildigesttype'] = 'Optionen für die E-Mail-Zusammenfassung';
 $string['emaildigesttype_help'] = 'Folgende Einstellungen stehen für die Benachrichtigung aus Foren zur Verfügung:
 
 * Standard - Es wird die Einstellung im individuellen Nutzerprofil verwandt. Eine Änderung im eigenen Profil wird auch hier angezeigt.
-* Keine Zusammenfassung - Sie erhalten für jeden Forenbeitrag eine E-Mail.
-- Zusammenfassung - vollständige Beiträge - Sie erhalten täglich eine E-Mail. Diese enthält alle Beiträge der Foren mit ihrem gesamten Inahalt.
-- Zusammenfassung - nur Überschriften - Sie erhalten tägliche eine E-Mail. Diese enthält nur die Themenüberschriften der Forenbeiträge.';
+* Keine Zusammenfassung - Sie erhalten für jeden Forenbeitrag eine Mitteilung..
+* Zusammenfassung - vollständige Beiträge - Sie erhalten täglich eine Mitteilung. Diese enthält alle Forenbeiträge mit ihrem gesamten Inahalt.
+* Zusammenfassung - nur Überschriften - Sie erhalten tägliche eine Mitteilung. Diese enthält nur die Überschriften der Forenbeiträge.';
 $string['emaildigestupdated'] = 'Die E-Mail Option für Zusammenfassungen wurde geändert zu \'{$a->maildigesttitle}\' für das Forum \'{$a->forum}\'. {$a->maildigestdescription}';
 $string['emaildigestupdated_default'] = 'Ihr Standard Profilwert von \'{$a->maildigesttitle}\' wird für das Forum \'{$a->forum}\' verwendet. {$a->maildigestdescription}';
 $string['emptymessage'] = 'Bei Ihrem Beitrag ist ein Fehler aufgetreten. Eventuell haben Sie keinen Text eingegeben oder der Anhang war zu groß. Die Änderungen wurden nicht gespeichert.';
@@ -201,8 +201,8 @@ $string['eventdiscussionviewed'] = 'Thema angezeigt';
 $string['eventpostcreated'] = 'Beitrag angelegt';
 $string['eventpostdeleted'] = 'Beitrag gelöscht';
 $string['eventpostupdated'] = 'Beitrag aktualisiert';
-$string['eventreadtrackingdisabled'] = 'Lesetracking deaktiviert';
-$string['eventreadtrackingenabled'] = 'Lesetracking aktiviert';
+$string['eventreadtrackingdisabled'] = 'Forumstracking deaktiviert';
+$string['eventreadtrackingenabled'] = 'Forumstracking aktiviert';
 $string['eventsubscribersviewed'] = 'Abonnement/innen angezeigt';
 $string['eventsubscriptioncreated'] = 'Abonnement angelegt';
 $string['eventsubscriptiondeleted'] = 'Abonnement gelöscht';
@@ -213,8 +213,8 @@ $string['everyoneisnowsubscribed'] = 'Alle haben jetzt dieses Forum abonniert';
 $string['everyoneissubscribed'] = 'Alle haben dieses Forum abonniert';
 $string['existingsubscribers'] = 'Derzeitige Abonnenten';
 $string['exportdiscussion'] = 'Diskussion ins Portfolio exportieren';
-$string['forcedreadtracking'] = 'Vorgabe des Lesetrackings erlauben';
-$string['forcedreadtracking_desc'] = 'Diese Option ermöglicht es in Foren, das Lesetracking für alle Nutzer/innen zu erzwingen. In Kursen mit vielen Foren und Beiträgen könnte sich die Ladezeit der Seite deutlich erhöhen. Wenn diese Option deaktiviert wird, wird ein vorher erzwungenes Lesetracking zu einer optionalen Einstellung.';
+$string['forcedreadtracking'] = 'Vorgabe des Forumstracking erlauben';
+$string['forcedreadtracking_desc'] = 'Diese Option ermöglicht es in Foren, das Forumstracking für alle Nutzer/innen zu erzwingen. In Kursen mit vielen Foren und Beiträgen könnte sich die Ladezeit der Seite deutlich erhöhen. Wenn diese Option deaktiviert wird, wird ein vorher erzwungenes Forumstracking zu einer optionalen Einstellung.';
 $string['forcesubscribed'] = 'Dieses Forum muss von allen abonniert werden';
 $string['forcesubscribed_help'] = 'Das Forum ist so eingestellt, dass Sie keine Themen abbestellen können.';
 $string['forum'] = 'Forum';
@@ -282,7 +282,7 @@ $string['invalidpostid'] = 'Ungültige Beitrags-ID {$a}';
 $string['lastpost'] = 'Letzter Beitrag';
 $string['learningforums'] = 'Lernforen';
 $string['longpost'] = 'Langer Beitrag';
-$string['mailnow'] = 'Mitteilungen ohne Verzögerung senden';
+$string['mailnow'] = 'Mitteilung ohne Verzögerung senden';
 $string['manydiscussions'] = 'Themen pro Seite';
 $string['markalldread'] = 'Alle Beiträge dieser Diskussion als gelesen markieren';
 $string['markallread'] = 'Alle Beiträge in diesem Forum als gelesen markieren';
@@ -320,7 +320,7 @@ Weitere Möglichkeiten:
 * Forumsbeiträge bewerten
 * Gruppenarbeit.
 
-Hinweis: Im Ankündigungsforum können ausschließlich Trainer/innen eines Kurse Beiträge schreiben. Teilnehmer/innen dürfen im Ankündigungsforum weder eigene Beiträge schreiben noch andere beantworten.';
+Hinweis: Im Nachrichtenforum können ausschließlich Trainer/innen des Kurse Beiträge schreiben. Teilnehmer/innen dürfen im Nachrichtenforum weder eigene Beiträge schreiben noch andere beantworten.';
 $string['modulenameplural'] = 'Foren';
 $string['more'] = 'weiter';
 $string['movedmarker'] = '(Verschoben)';
@@ -431,7 +431,7 @@ $string['resetdigests'] = 'Alle nutzerspezifischen Einstellungen für Forenzusam
 $string['resetforums'] = 'Beiträge entfernen von';
 $string['resetforumsall'] = 'Alle Beiträge löschen';
 $string['resetsubscriptions'] = 'Alle Forumsabonnements entfernen';
-$string['resettrackprefs'] = 'Alle Einstellungen zu Forenmarkierungen löschen';
+$string['resettrackprefs'] = 'Alle Einstellungen zum Forumstracking löschen';
 $string['rssarticles'] = 'Anzahl der neuen RSS-Artikel';
 $string['rssarticles_help'] = 'Diese Einstellung legt die Anzahl der Beiträge fest, die als aktuell in
 den RSS Feed übernommen werden. Eine Zahl zwischen 5 und 20 sollte bei den meisten Foren angemessen sein. Eine höhere Zahl ist erforderlich, wenn das Forum sehr aktiv ist.';
@@ -469,30 +469,30 @@ $string['subscribe'] = 'Ich möchte das Forum abonnieren';
 $string['subscribeall'] = 'Alle Teilnehmer/innen haben in dieses Forum abonniert';
 $string['subscribed'] = 'Abonniert';
 $string['subscribediscussion'] = 'Thema abonnieren';
-$string['subscribeenrolledonly'] = 'Nur eingeschriebene Nutzer/innen dürfen Forenbeiträge per E-Mail abonnieren.';
+$string['subscribeenrolledonly'] = 'Nur eingeschriebene Nutzer/innen dürfen Forenbeiträge als Mitteilung abonnieren.';
 $string['subscribenone'] = 'Forum für alle Teilnehmer/innen abbestellen';
 $string['subscribers'] = 'Abonnent/innen';
 $string['subscribersto'] = 'Abonnent/innen für \'{$a->name}\'';
 $string['subscriberstowithcount'] = 'Abonnent/innen für \'{$a->name}\' ({$a->count})';
-$string['subscribestart'] = 'Benachrichtigungen über neue Forenbeiträge per E-Mail an mich senden';
+$string['subscribestart'] = 'Mitteilungen über neue Forenbeiträge an mich senden';
 $string['subscribestop'] = 'Keine Benachrichtigungen als E-Mail an mich senden';
 $string['subscription'] = 'Abonnement';
-$string['subscriptionandtracking'] = 'E-Mailzustellung und Tracking';
+$string['subscriptionandtracking'] = 'Abonnement und Tracking';
 $string['subscriptionauto'] = 'Automatisch';
 $string['subscriptiondisabled'] = 'Deaktiviert';
 $string['subscriptionforced'] = 'Verpflichtend';
-$string['subscription_help'] = 'Wenn Sie ein Forum abonniert haben, werden alle neuen Beiträge des Forums per E-Mail an Sie gesandt.
+$string['subscription_help'] = 'Wenn Sie ein Forum abonniert haben, werden alle neuen Forenbeiträge als Mitteilung an Sie gesandt.
 
 Normalerweise dürfen Sie auswählen, ob Sie die Beiträge bekommen möchten. Manche Foren sind aber so eingestellt, dass das Abonnement verpflichtend ist und jeder alle Beiträge bekommt.';
 $string['subscriptionmode'] = 'Abonnement';
-$string['subscriptionmode_help'] = 'Alle Abonnent/innen dieses Forums bekommen die Beiträge per E-Mail zugesandt. Es gibt unterschiedliche Modi für ein Abonnement:
+$string['subscriptionmode_help'] = 'Alle Abonnent/innen dieses Forums bekommen die Beiträge als Mitteilungen zugesandt. Es gibt unterschiedliche Modi für ein Abonnement:
 
 * Optional - alle dürfen auswählen, ob sie das Forum abonnieren möchten oder nicht
 * Verpflichtend - alle haben das Forum abonniert und niemand kann es abbestellen
 * Automatisch - alle haben das Forum abonniert, dürfen es aber jederzeit abbestellen
 * Deaktiviert - Das Forum kann von niemandem abonniert werden
 
-Änderungen des Abonnements haben nur Einfluss auf Nutzer/innen, die zukünftig in den Kurs eingeschrieben werden. Für bestehende Nutzer/innen muss die Abonnementliste manuell angepasst werden.';
+Änderungen des Abonnements haben nur Einfluss auf Nutzer/innen, die neu in den Kurs eingeschrieben werden. Für bestehende Nutzer/innen muss die Abonnementenliste manuell angepasst werden.';
 $string['subscriptionoptional'] = 'Optional';
 $string['subscriptions'] = 'Abonnements';
 $string['thisforumisthrottled'] = 'Für dieses Forum ist eine Höchstzahl von Beiträgen innerhalb eines bestimmten Zeitraums festgelegt worden. Dies gilt nach {$a->blockafter} Beiträgen innerhalb von {$a->blockperiod}';
@@ -505,11 +505,11 @@ $string['tracking'] = 'Markieren?';
 $string['trackingoff'] = 'Aus';
 $string['trackingon'] = 'Vorgegeben';
 $string['trackingoptional'] = 'Optional';
-$string['trackingtype'] = 'Lesetracking';
+$string['trackingtype'] = 'Forumstracking';
 $string['trackingtype_help'] = 'Wenn diese Option aktiviert ist, sehen Teilnehmer/innen gelesene und ungelesene Beiträge unterschiedlich im Forum markiert.
 
-* Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür einen Eintrag in der Forumsadministration, wenn sie vorher das Forentracking in ihren persönlichen Einstellungen aktiviert haben.
-* Verpflichtend - Die Markierung ist immer an, egal ob Teilnehmer/innen das Forentracking in ihren persönlichen Einstellungen aktiviert haben oder nicht.
+* Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür einen Eintrag in der Forumsadministration, wenn sie vorher das Forumstracking in ihren persönlichen Einstellungen aktiviert haben.
+* Verpflichtend - Die Markierung ist immer an, egal ob Teilnehmer/innen das Forumstracking in ihren persönlichen Einstellungen aktiviert haben oder nicht.
 * Aus - Die Markierung ist immer aus. Gelesene und ungelesene Beiträge werden gleich behandelt.';
 $string['unread'] = 'Ungelesen';
 $string['unreadposts'] = 'Ungelesene Beiträge';
@@ -520,8 +520,8 @@ $string['unsubscribeall'] = 'Ich möchte alle Foren abbestellen';
 $string['unsubscribeallconfirm'] = 'Sie haben aktuell abonniert: Foren {$a->Forums} und Themen {$a->discussions}. Möchten Sie wirklich alle Foren und Themen abbestellen und das automatische Abonnement deaktivieren?';
 $string['unsubscribeallconfirmdiscussions'] = 'Sie haben aktuell abonniert: Themen {$a->discussions}. Möchten Sie wirklich alle Themen abbestellen und das automatische Abonnement deaktivieren?';
 $string['unsubscribeallconfirmforums'] = 'Sie haben aktuell abonniert: Foren {$a->Forums}. Möchten Sie wirklich alle Foren abbestellen und das automatische Abonnement deaktivieren?';
-$string['unsubscribealldone'] = 'Sie haben alle Abonnements abbestellt. Trotzdem werden Sie Beiträge aus Foren erhalten, in die Personen zwingend eingetragen sind. Falls Sie gar keine E-Mails von diesem Server erhalten möchten, deaktivieren Sie bitte Ihre E-Mail-Adresse im Nutzerprofil oder unter Mitteilungen.';
-$string['unsubscribeallempty'] = 'Sie haben kein Forum abonniert. Falls Sie gar keine E-Mails von diesem Server erhalten möchten, deaktivieren Sie Ihre E-Mail-Adresse im Nutzerprofil.';
+$string['unsubscribealldone'] = 'Sie haben alle optionalen Abonnements abbestellt. Trotzdem werden Sie Beiträge aus verbindlichen Foren erhalten, in die Personen zwingend eingetragen sind. Um alle Mitteilungen von dieser Website zu deaktivieren, verändern Sie die Mitteilungseinstellungen in Ihrem Nutzerprofil.';
+$string['unsubscribeallempty'] = 'Sie haben kein Forum abonniert. Um alle Mitteilungen von dieser Website zu deaktivieren, verändern Sie die Mitteilungseinstellungen in Ihrem Nutzerprofil.';
 $string['unsubscribed'] = 'Abgemeldet';
 $string['unsubscribediscussion'] = 'Von diesem Thema abmelden';
 $string['unsubscribediscussionlink'] = 'Von diesem Thema abmelden: {$a}';

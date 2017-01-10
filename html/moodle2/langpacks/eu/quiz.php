@@ -403,6 +403,8 @@ modu batzuk daude saiakera bakoitzaren notak erabiliz.
 * Azken kalifikazioa (gainerako saiakera guztiak ez dira kontuan hartzen)';
 $string['gradesdeleted'] = 'Galdetegiaren kalifikazioak ezabatu dira';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
+$string['gradetopassmustbeset'] = 'Gainditzeko kalifikazioa ezin da 0 izan galdetegi honek gainditzeko baldintza duen osaketa-metodoa erabiltzen duelako. Mesedez ezarri 0 ez den balio bat.';
+$string['gradetopassnotset'] = 'Galdetegi honek ez dauka gainditzeko kalifikazioa ezarrita, eta ondorioz ezin duzu aukera hau erabili. Mesedez horren ordez erabili kalifikazioa beharrezkoa izateko ezarpena';
 $string['gradingdetails'] = 'Bidalketa honetarako puntuak: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Aurretiko kenketak eginda <strong>{$a->cur}/{$a->max}</strong> da honen emaitza.';
 $string['gradingdetailspenalty'] = 'Bidalketa honek {$a}-ko kenketa ekarri du.';

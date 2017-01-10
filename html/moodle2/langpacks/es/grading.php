@@ -40,7 +40,7 @@ $string['gradingmethod_help'] = 'Elija el método de calificación avanzada que 
 Para deshabilitar la calificación avanzada y volver al método  de calificación por defecto, elija \'Calificación simple directa\'.';
 $string['gradingmethodnone'] = 'Calificación simple directa';
 $string['gradingmethods'] = 'Métodos de calificación';
-$string['manageactionclone'] = 'Cree un nuevo formulario de calificación a partir de una plantilla';
+$string['manageactionclone'] = 'Nuevo formulario a partir de una plantilla';
 $string['manageactiondelete'] = 'Eliminar el formulario actual definido';
 $string['manageactiondeleteconfirm'] = 'Usted va a eliminar el formulario de calificación \'{$a->formname}\' y toda la información asociada de \'{$a->component} ({$a->area})\'. Por favor, asegúrese de que comprende las siguientes consecuencias:
 
@@ -51,7 +51,7 @@ $string['manageactiondeleteconfirm'] = 'Usted va a eliminar el formulario de cal
 * Esta operación no afecta a eventuales copias de este formulario en otras actividades.';
 $string['manageactiondeletedone'] = 'El formulario se eliminó correctamente';
 $string['manageactionedit'] = 'Editar la definición del formulario actual';
-$string['manageactionnew'] = 'Defina un nuevo formulario de calificación desde cero';
+$string['manageactionnew'] = 'Nuevo formulario desde cero';
 $string['manageactionshare'] = 'Publicar el formulario como una nueva plantilla';
 $string['manageactionshareconfirm'] = 'Está a punto de cuardar una copia del formulario de calificación \'{$a}\' como una plantilla pública. Otros usuarios de su sitio podrán crear nuevos formularios de calificación para sus actividades a partir de esta plantilla.';
 $string['manageactionsharedone'] = 'El formulario se guardó correctamente como plantilla';

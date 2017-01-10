@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clusteredheader'] = 'Bereizi zerbitzariak';
 $string['hash'] = 'Zifratze-metodoa';
 $string['hash_crc'] = 'CRC';
 $string['hash_fnv1_32'] = 'FNV1_32';

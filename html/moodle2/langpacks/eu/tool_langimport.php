@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['install'] = 'Instalatu aukeratutako hizkuntza-paketea(k)';
 $string['installedlangs'] = 'Instalatutako hizkuntza-paketeak';
 $string['langimport'] = 'Hizkuntza inportatzeko baliabidea';
-$string['langimportdisabled'] = 'Hizkuntza inportatzeko funtzioa ez dago gaituta. Eskuz eguneratu behar dituzu hizkuntza-paketeak fitxategi-sisteman';
+$string['langimportdisabled'] = 'Hizkuntza inportatzeko funtzioa ez dago gaituta. Eskuz eguneratu behar dituzu hizkuntza-paketeak fitxategi-sisteman. Ez ahaztu ondoren kateen cache-a ezabatzeaz.';
 $string['langpackinstalled'] = '\'{$a}\' hizkuntza-paketea ondo instalatu da';
 $string['langpackinstalledevent'] = 'Hizkuntza-paketea instalatu da';
 $string['langpackremoved'] = '\'{$a}\' hizkuntzaren desinstalazioa burutu da';

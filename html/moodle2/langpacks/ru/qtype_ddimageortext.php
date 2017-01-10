@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredropzones'] = 'Добавить зоны - {no}';
 $string['addmoreimages'] = 'Добавить перетаскиваемые элементы -  {no}';
 $string['answer'] = 'Ответ';
-$string['bgimage'] = 'Фоновое изображения';
+$string['bgimage'] = 'Фоновое изображение';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
 $string['draggableimage'] = 'Перетаскиваемое изображение';
 $string['draggableitem'] = 'Перетаскиваемый элемент';

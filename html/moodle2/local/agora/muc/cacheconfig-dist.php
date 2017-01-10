@@ -466,6 +466,12 @@ defined('MOODLE_INTERNAL') || die();
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),
+    'filter_wiris/images' => 
+    array (
+      'mode' => 1,
+      'component' => 'filter_wiris',
+      'area' => 'images',
+    ),
     'repository_skydrive/foldername' => 
     array (
       'mode' => 2,

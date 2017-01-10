@@ -224,6 +224,7 @@ $string['public'] = 'Pubblico';
 $string['question'] = 'Domanda';
 $string['questionandsubmission'] = 'Impostazioni compilazione';
 $string['questions'] = 'Domande';
+$string['questionslimited'] = 'Sono visualizzate le prime domande {$a}, per visualizzarle tutte visualizza le singole risposte oppure scarica la tabella con i dati.';
 $string['radio'] = 'Scelta multipla - una sola alternativa';
 $string['radiobutton'] = 'Pulsanti radio';
 $string['radiobutton_rated'] = 'Pulsante radio (valorizzato)';

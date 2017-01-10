@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktoclose'] = 'انقر للإغلاق';
+$string['exc_gradingformelement'] = 'غير قادر على إنشاء نموذج الدرجات';
+$string['formnotavailable'] = 'تم اختيار طريقة التقييم المتقدم لاستخدامها ولكن نموذج التقييم غير مُتاح حتى الان. تحتاج إلى تعريف النموذج أولاً من خلال الرابط الموجود في كتلة الإعدادات';
+$string['gradingformunavailable'] = 'الرجاء الانتباه: نموذج التقييم المُتقدم غيرجاهز حتى الان.سيتم استخدام طريقة التقييم البسيطة حتى يكون النموذج جاهز.';
 $string['gradingmanagement'] = 'تقييم متقدم';
 $string['gradingmethod'] = 'طريقة التقييم';
 $string['gradingmethod_help'] = 'اختر طريقة التقييم المتقدمة التي ستستخدم لاحتساب العلامات في هذا السياق.
@@ -32,5 +36,18 @@ $string['gradingmethod_help'] = 'اختر طريقة التقييم المتقد
 لإلغاء التقييم المتقدم والعودة لطريقة التقييم الافتراضية، اختر "تقييم بسيط ومباشر".';
 $string['gradingmethodnone'] = 'تقييم بسيط ومباشر';
 $string['gradingmethods'] = 'طرق التقييم';
+$string['manageactionclone'] = 'إنشاء نموذج تقييم جديد من القالب';
+$string['manageactiondelete'] = 'حذف النموذج المحدد حالياً';
+$string['manageactionnew'] = 'أنشئ نموذج تقييم جديد من البداية';
+$string['manageactionshare'] = 'نشر النموذج كقالب جديد';
+$string['manageactionsharedone'] = 'تم حفظ النموذج بنجاح كقالب';
+$string['noitemid'] = 'التقييم غير ممكن. عنصر التقييم غير موجود';
+$string['nosharedformfound'] = 'لم يتم إيجاد القالب';
+$string['searchownforms'] = 'ضمِّن نماذجي الخاصة';
 $string['searchtemplate'] = 'البحث في نماذج التقييم';
 $string['statusdraft'] = 'مسودة';
+$string['statusready'] = 'جاهز للاستخدام';
+$string['templatedelete'] = 'حذف';
+$string['templateedit'] = 'تحرير';
+$string['templatepick'] = 'استخدم هذا القالب';
+$string['templatetypeshared'] = 'قالب مُشترك';

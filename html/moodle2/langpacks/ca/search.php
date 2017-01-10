@@ -44,6 +44,7 @@ $string['database'] = 'Base de dades';
 $string['databasestate'] = 'Estat de la base de dades d\'indexació';
 $string['datadirectory'] = 'Directori de dades';
 $string['deletionsinindex'] = 'Supressions en l\'índex';
+$string['docmodifiedon'] = 'La darrera modificació ha estat a {$a}';
 $string['doctype'] = 'Tipus de document';
 $string['documents'] = 'documents';
 $string['documentsfor'] = 'Documents en';

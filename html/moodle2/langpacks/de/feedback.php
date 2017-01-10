@@ -106,7 +106,7 @@ $string['dropdown_values'] = 'Antworten';
 $string['drop_feedback'] = 'Aus diesem Kurs entfernen';
 $string['edit_item'] = 'Element bearbeiten';
 $string['edit_items'] = 'Elemente bearbeiten';
-$string['email_notification'] = 'E-Mail-Mitteilungen senden';
+$string['email_notification'] = 'Mitteilung bei Abgabe senden';
 $string['email_notification_help'] = 'Wenn diese Option aktiviert ist, bekommen die Trainer/innen bei Feedback-Abgaben eine Mitteilung.';
 $string['emailteachermail'] = '{$a->username} hat das Feedback \'{$a->feedback}\' abgeschlossen.
 
@@ -168,7 +168,7 @@ $string['mappingchanged'] = 'Kursstruktur wurde geändert';
 $string['max_args_exceeded'] = 'Zu viele Argumente! Max. 6 Argumente dürfen verwendet werden.';
 $string['maximal'] = 'Maximal';
 $string['messageprovider:message'] = 'Erinnerung zum Feedback';
-$string['messageprovider:submission'] = 'Mitteilung zum Feedback';
+$string['messageprovider:submission'] = 'Mitteilung bei Feedback';
 $string['minimal'] = 'Minimal';
 $string['mode'] = 'Modus';
 $string['modulename'] = 'Feedback';

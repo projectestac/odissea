@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'Leerfeld für {no} weitere Ablegebereiche';
 $string['addmoreimages'] = 'Leerfeld für {no} weitere ziehbare Objekte';
 $string['answer'] = 'Antwort';
 $string['bgimage'] = 'Hintergrundbild';
+$string['blank'] = 'leer';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['draggableimage'] = 'Unbekannter';
 $string['draggableitem'] = 'Verschiebbares Element';

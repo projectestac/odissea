@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['moodlemedia:browsemedia'] = 'Medien oder Applet wählen';
+$string['moodlemedia:browsemedia'] = 'Audio, Video oder Applet wählen';
 $string['moodlemedia:desc'] = 'Medien einfügen';
-$string['nopreview'] = 'Zu diesem Medium gibt es keine Vorschau';
+$string['nopreview'] = 'Keine Medienvorschau möglich';
 $string['pluginname'] = 'Medien einfügen';

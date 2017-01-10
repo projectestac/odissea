@@ -32,8 +32,8 @@ $string['book:read'] = 'Ver livro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos ocultos';
 $string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título do capítulo';
-$string['confchapterdelete'] = 'Tem a certeza que quer apagar este capítulo?';
-$string['confchapterdeleteall'] = 'Tem a certeza que quer apagar este capítulo e seus subcapítulos?';
+$string['confchapterdelete'] = 'Tem a certeza que pretende apagar este capítulo?';
+$string['confchapterdeleteall'] = 'Tem a certeza que pretende apagar este capítulo e seus subcapítulos?';
 $string['content'] = 'Conteúdo';
 $string['customtitles'] = 'Títulos personalizados';
 $string['customtitles_help'] = 'Normalmente o título do capítulo é mostrado no índice e como cabeçalho por cima do conteúdo.
@@ -47,7 +47,7 @@ $string['eventchaptercreated'] = 'Capítulo criado';
 $string['eventchapterdeleted'] = 'Capítulo apagado';
 $string['eventchapterupdated'] = 'Capítulo atualizado';
 $string['eventchapterviewed'] = 'Capítulo visualizado';
-$string['hidechapter'] = 'Esconder capítulo "{$a}"';
+$string['hidechapter'] = 'Ocultar capítulo "{$a}"';
 $string['modulename'] = 'Livro';
 $string['modulename_help'] = 'O recurso Livro permite que o professor crie um conteúdo com várias páginas com formato idêntico a um livro, com capítulos e subcapítulos. O Livro pode conter texto e elementos multimédia e é útil para exibir informação extensa que pode ser dividida em capítulos.
 
@@ -67,8 +67,9 @@ $string['navoptions'] = 'Opções disponíveis para as hiperligações de navega
 $string['navoptions_desc'] = 'Opções para exibir a navegação nas páginas do livro';
 $string['navprev'] = 'Anterior';
 $string['navstyle'] = 'Estilo da navegação';
-$string['navstyle_help'] = '* Imagens - Ícones que são utilizados para navegar
-* Texto - Títulos de capítulos que são utilizados para navegar';
+$string['navstyle_help'] = '* Apenas TOC - Só é mostrado o índice do livro à esquerda
+* Imagens - Ícones  que são utilizados para navegar (►▲◄▼)
+* Texto - Títulos dos capítulos são utilizados para navegar';
 $string['navtext'] = 'Texto';
 $string['navtoc'] = 'Apenas TOC';
 $string['nocontent'] = 'Ainda não foi adicionado conteúdo a este livro.';
@@ -79,8 +80,8 @@ $string['numbering2'] = 'Marcadores';
 $string['numbering3'] = 'Avançado';
 $string['numbering_help'] = '* Sem numeração - Os títulos dos capítulos e subcapítulos não serão numerados
 * Números - Os capítulos e subcapítulos são numerados (1, 1.1, 1.2, 2, ...)
-* Marcadores - Os subcapítulos são exibidos com marcadores e avanço no índice
-* Avanço - Os subcapítulos são exibidos com avanço no índice';
+* Marcadores - Os subcapítulos são exibidos com marcadores (○) e com avanço no índice
+* Avançado - Os subcapítulos são exibidos com avanço no índice';
 $string['numberingoptions'] = 'Opções de formatação disponíveis';
 $string['numberingoptions_desc'] = 'Opções de formatação usadas para exibir os capítulos e subcapítulos no índice';
 $string['page-mod-book-x'] = 'Qualquer página do Livro';

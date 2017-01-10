@@ -339,5 +339,6 @@ $string['workshop:viewauthorpublished'] = 'Visualitza els autors de les trameses
 $string['workshop:viewpublishedsubmissions'] = 'Visualitza les trameses publicades';
 $string['workshop:viewreviewernames'] = 'Visualitza els noms dels revisors';
 $string['yourassessment'] = 'La vostra avaluació';
+$string['yourassessmentfor'] = 'La vostra avaluació per a: {$a}';
 $string['yourgrades'] = 'Les vostres qualificacions';
 $string['yoursubmission'] = 'La vostra tramesa';

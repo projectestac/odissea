@@ -56,5 +56,5 @@ $string['ratinginvalid'] = '评分无效';
 $string['ratings'] = '评分';
 $string['ratingtime'] = '限制只能在此时间段内评分：';
 $string['rolewarning'] = '有评分权的角色';
-$string['rolewarning_help'] = '要提交评分的用户必须具有moodle/rating:rate权限和模块定义的相关权限。分配到如下角色的用户应该能评分。在版块设置页面里的权限链接里可以修改这个角色列表。';
+$string['rolewarning_help'] = '要提交评分的用户必须具有moodle/rating:rate权限和模块定义的相关权限。分配到如下角色的用户应该能评分。在管理版块页面里的权限链接里可以修改这个角色列表。';
 $string['scaleselectionrequired'] = '当选择了一个评分评价类型，还必须选择使用一个标准或设置一个最高分。';

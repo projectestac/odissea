@@ -158,7 +158,7 @@ Eskerrik asko.';
 $string['collesaname'] = 'COLLES (Benetakoa)';
 $string['collesapintro'] = 'Galdeketa honen helburua da unitate honen on-line banaketak ikasten zenbat lagundu zaituen jakitea.
 
-Azpiko 24 esaldietako bakoitzak unitate honetan izandako esperientzia konparatzea eskatzen dizu, <B>nahiaren</B> (idealaren) eta <B>benetako</B> esperientziaren artean.
+Azpiko 24 esaldietako bakoitzak unitate honetan izandako esperientzia konparatzea eskatzen dizu, <b>nahiaren</b> (idealaren) eta <b>benetako</b> esperientziaren artean.
 
 Ez dago erantzun \'zuzen\' edo \'okerrik\'; zure iritzia jakin nahi dugu, besterik gabe. Zure erantzunak konfidentzialtasun osoz tratatuko ditugula ziur egon zaitezke, eta hauek ez dute zure ebaluazioan eraginik izango.
 
@@ -178,7 +178,7 @@ $string['collesm5'] = 'Ikaskideen laguntza';
 $string['collesm5short'] = 'Ikaskideen laguntza';
 $string['collesm6'] = 'Interpretazioa';
 $string['collesm6short'] = 'Interpretazioa';
-$string['collesmintro'] = 'On-line unitate honetan...';
+$string['collesmintro'] = 'Online unitate honetan...';
 $string['collespintro'] = 'Galdeketa honen helburua on-line ikasketan zer baloratzen duzun jakitea da.
 
 Azpiko 24 esaldietako bakoitza unitate honekin zure <B>nahia</B> (esperientzia ideala) baloratzen du.
@@ -199,10 +199,11 @@ $string['downloadinfo'] = 'Inkesta honen datu gordin guztiak Excel, SPSS edo bes
 $string['downloadresults'] = 'Emaitzak jaitsi';
 $string['downloadtext'] = 'Datuak testu arrunt fitxategi gisa jaitsi';
 $string['editingasurvey'] = 'Hausnarketa bat editatzen';
+$string['errorunabletosavenotes'] = 'Errorea gertatu da zure oharrak gordetzean.';
 $string['eventreportdownloaded'] = 'Hausnarketaren txostena jaitsi da';
 $string['eventreportviewed'] = 'Hausnarketaren txostena ikusi da';
 $string['eventresponsesubmitted'] = 'Hausnarketa-erantzuna bidalita';
-$string['guestsnotallowed'] = 'Bistariek ezin dute hausnarketarik bidali';
+$string['guestsnotallowed'] = 'Soilik matrikulatutako erabiltzaileak bidali ditzakete hausnarketak';
 $string['howlong'] = 'Zenbat denbora behar izan duzu inkesta hau betetzeko?';
 $string['howlongoptions'] = '<1 min, 1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,>10 min';
 $string['ifoundthat'] = 'Hau aurkitu dut';

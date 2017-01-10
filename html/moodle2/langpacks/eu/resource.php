@@ -101,6 +101,9 @@ $string['search:activity'] = 'Fitxategia';
 $string['selectmainfile'] = 'Aukeratu mesedez fitxategi nagusia fitxategiaren izenaren ondoan dagoen ikonoan klik eginda.';
 $string['showdate'] = 'Erakutsi igotako/aldatutako data';
 $string['showdate_desc'] = 'Erakutsi igotako/aldatutako data ikastaroaren orrian?';
+$string['showdate_help'] = 'Igoera/aldatze data fitxategiaren estekaren ondoan erakusten du.
+
+Baliabidean fitxategi anitz badago, hasierako fitxategiaren igoera/aldatze data erakutsiko da.';
 $string['showsize'] = 'Erakutsi tamaina';
 $string['showsize_desc'] = 'Fitxategiaren tamaina ikastaroaren orrian erakutsi?';
 $string['showsize_help'] = 'Fitxategiaren tamaina erakusten du, \'3,1MB\' adibidez, fitxategiaren estekaren ondoan.

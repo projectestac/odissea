@@ -40,3 +40,4 @@ $string['pluginname_help'] = 'Crea un repositori des d\'un directori local';
 $string['relativefiles'] = 'Permet fitxers relatius';
 $string['relativefiles_desc'] = 'Això permet que tots els fitxers del repositori siguin accessibles utilitzant enllaços relatius.';
 $string['root'] = 'Arrel';
+$string['searchresults'] = 'Resultats de la cerca';

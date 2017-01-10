@@ -59,7 +59,7 @@ function questionnaire_add_instance($questionnaire) {
     // (defined by the form in mod.html) this function
     // will create a new instance and return the id number
     // of the new instance.
-    global $COURSE, $DB, $CFG;
+    global $DB, $CFG;
     require_once($CFG->dirroot.'/mod/questionnaire/questionnaire.class.php');
     require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
 
@@ -67,8 +67,9 @@ function questionnaire_add_instance($questionnaire) {
 
     if (empty($questionnaire->sid)) {
         // Create a new survey.
+        $course = get_course($questionnaire->course);
         $cm = new stdClass();
-        $qobject = new questionnaire(0, $questionnaire, $COURSE, $cm);
+        $qobject = new questionnaire(0, $questionnaire, $course, $cm);
 
         if ($questionnaire->create == 'new-0') {
             $sdata = new stdClass();
@@ -83,7 +84,7 @@ function questionnaire_add_instance($questionnaire) {
             $sdata->thank_body = '';
             $sdata->email = '';
             $sdata->feedbacknotes = '';
-            $sdata->owner = $COURSE->id;
+            $sdata->owner = $course->id;
             if (!($sid = $qobject->survey_update($sdata))) {
                 print_error('couldnotcreatenewsurvey', 'questionnaire');
             }
@@ -99,7 +100,7 @@ function questionnaire_add_instance($questionnaire) {
             if ($copyrealm == 'public') {
                 $sid = $copyid;
             } else {
-                $sid = $qobject->sid = $qobject->survey_copy($COURSE->id);
+                $sid = $qobject->sid = $qobject->survey_copy($course->id);
                 // All new questionnaires should be created as "private".
                 // Even if they are *copies* of public or template questionnaires.
                 $DB->set_field('questionnaire_survey', 'realm', 'private', array('id' => $sid));
@@ -790,11 +791,6 @@ function questionnaire_get_recent_mod_activity(&$activities, &$index, $timestart
     $accessallgroups = has_capability('moodle/site:accessallgroups', $context);
     $viewfullnames   = has_capability('moodle/site:viewfullnames', $context);
     $groupmode       = groups_get_activity_groupmode($cm, $course);
-
-    if ($modinfo->groups === null) {
-        // Load all my groups and cache it in modinfo.
-        $modinfo->groups = groups_get_user_groups($course->id);
-    }
 
     $usersgroups = null;
     $aname = format_string($cm->name, true);

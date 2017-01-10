@@ -281,11 +281,11 @@ $string['maxperpage'] = 'Nombre màxim de tasques per pàgina';
 $string['maxperpage_help'] = 'El nombre màxim de tasques que un qualificador pot veure a la pàgina de qualificació de les tasques. És útil per prevenir que el temps expiri en cursos amb un nombre molt alt d\'inscrits.';
 $string['messageprovider:assign_notification'] = 'Notificacions de tasques';
 $string['modulename'] = 'Tasca';
-$string['modulename_help'] = 'El mòdul d\'activitat tasca permet al professorat comunicar les instruccions, recollir els treballs i proporcionar qualificacions i retroacció.
+$string['modulename_help'] = 'El mòdul d\'activitat tasca permet al professor comunicar les instruccions, recollir els treballs i proporcionar qualificacions i retroacció.
 
-L\'estudiantat pot trametre qualsevol contingut digital (fitxers), com ara documents de processador de textos, fulls de càlcul, imatges o clips d\'àudio i vídeo. Alternativament, o a més a més, la tasca pot requerir que l\'estudiantat teclegi el text directament a l\'editor de text. Una tasca també pot utilitzar-se per recordar a l\'estudiantat les tasques del «món real» que han de completar fora de línia, com ara obres d\'art, i per tant que no requereixen cap tipus de contingut digital. L\'estudiantat pot trametre el treball de manera individual o com a membres d\'un grup.
+Els estudiants poden trametre qualsevol contingut digital (fitxers), com ara documents de processador de textos, fulls de càlcul, imatges o clips d\'àudio i vídeo. Alternativament, o a més a més, la tasca pot requerir que els estudiants teclegin el text directament a l\'editor de text. Una tasca també pot utilitzar-se per recordar als estudiants les tasques del «món real» que han de completar fora de línia, com ara obres d\'art, i per tant que no requereixen cap tipus de contingut digital. Els estudiants poden trametre el treball de manera individual o com a membres d\'un grup.
 
-En la revisió de les tasques, el professorat pot deixar comentaris i pujar fitxers de retroacció, com ara trameses corregides de l\'estudiantat, documents amb comentaris o retroacció d\'àudio parlat. Les tasques poden qualificar-se amb una escala numèrica o personalitzada o amb un mètode de qualificació avançada, com ara una rúbrica. Les qualificacions finals es registren en el butlletí de qualificacions.';
+En la revisió de les tasques, els professors poden deixar comentaris i pujar fitxers de retroacció, com ara trameses corregides de l\'estudiant, documents amb comentaris o retroacció d\'àudio parlat. Les tasques poden qualificar-se amb una escala numèrica o personalitzada o amb un mètode de qualificació avançada, com ara una rúbrica. Les qualificacions finals es registren en el butlletí de qualificacions.';
 $string['modulenameplural'] = 'Tasques';
 $string['moreusers'] = '{$a} més...';
 $string['multipleteams'] = 'Membre de més d\'un grup';

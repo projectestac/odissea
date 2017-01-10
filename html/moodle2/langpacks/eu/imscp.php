@@ -45,4 +45,5 @@ $string['packagefile'] = 'Paketearen fitxategia';
 $string['page-mod-imscp-x'] = 'IMS eduki-paketearen edozein orri';
 $string['pluginadministration'] = 'IMSCP kudeaketa';
 $string['pluginname'] = 'IMS eduki-paketea';
+$string['search:activity'] = 'IMS eduki-paketea - baliabidearen informazioa';
 $string['toc'] = 'TOC';

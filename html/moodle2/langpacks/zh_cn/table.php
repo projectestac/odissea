@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = '下载表格数据以';
 $string['downloadcsv'] = '逗号分隔数据的文本文件';
-$string['downloadexcel'] = 'Microsoft Excel电子表格';
-$string['downloadods'] = 'OpenDocument电子表格(ODS)';
+$string['downloadexcel'] = 'Excel电子表格';
+$string['downloadods'] = 'OpenDocument电子表格';
 $string['downloadoptions'] = '选择下载选项';
 $string['downloadtsv'] = '制表符分隔数据的文本文件';
 $string['downloadxhtml'] = '不分页的XHTML文档';

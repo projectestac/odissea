@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Zuriuneak {$a}  alderdi gehiagotarako';
 $string['dimensioncomment'] = 'Iruzkina';
+$string['dimensioncommentfor'] = 'Iruzkina {$a}-(e)rako';
 $string['dimensiondescription'] = 'Deskribapena';
 $string['dimensionnumber'] = '{$a} alderdia';
 $string['pluginname'] = 'Iruzkinak';

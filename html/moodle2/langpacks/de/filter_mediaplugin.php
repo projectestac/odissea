@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fallbackaudio'] = 'Audio-Link';
 $string['fallbackvideo'] = 'Video-Link';
-$string['filtername'] = 'Multimedia-Plugins';
+$string['filtername'] = 'MultimediaPlugins';

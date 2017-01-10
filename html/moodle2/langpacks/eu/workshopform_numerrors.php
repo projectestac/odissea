@@ -29,6 +29,7 @@ $string['addmoredimensions'] = 'Zuriuneak {$a} baieztapen  gehiagotarako';
 $string['configgrade0'] = 'Baieztapen baten ebaluazio negatiboa deskribatzeko berezko hitza';
 $string['configgrade1'] = 'Baieztapen baten ebaluazio positiboa deskribatzeko berezko hitza';
 $string['dimensioncomment'] = 'Iruzkina';
+$string['dimensioncommentfor'] = 'Iruzkina {$a}-(e)rako';
 $string['dimensiondescription'] = 'Deskribapena';
 $string['dimensiongrade'] = 'Kalifikazioa';
 $string['dimensionnumber'] = '{$a} baieztapena';

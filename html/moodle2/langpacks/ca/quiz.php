@@ -396,6 +396,8 @@ $string['grademethod_help'] = 'En el cas que es permetin múltiples intents per 
 * La qualificació del darrer intent (els anteriors s\'ignoren).';
 $string['gradesdeleted'] = 'S\'han suprimit les qualificacions del qüestionari';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
+$string['gradetopassmustbeset'] = 'La qualificació per aprovar no pot ser zero, ja que aquest qüestionari té el mètode de compleció configurat per demanar la qualificació mínima per aprovar. Poseu un valor diferent a zero.';
+$string['gradetopassnotset'] = 'Aquest qüestionari no té una qualificació per aprovar configurada, per això no podeu usar aquesta opció. Configureu la qualificació.';
 $string['gradingdetails'] = 'Punts d\'aquesta tramesa: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Amb les penalitzacions prèvies això dóna <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Aquesta tramesa ha rebut una penalització de {$a}.';
@@ -494,6 +496,8 @@ $string['multichoice'] = 'Opcions múltiples';
 $string['multipleanswers'] = 'Trieu almenys una resposta';
 $string['mustbesubmittedby'] = 'Aquest intent s\'ha d\'enviar abans de {$a}.';
 $string['name'] = 'Títol';
+$string['navigatenext'] = 'Pàgina següent';
+$string['navigateprevious'] = 'Pàgina anterior';
 $string['navmethod'] = 'Mètode de navegació';
 $string['navmethod_free'] = 'Lliure';
 $string['navmethod_help'] = 'Quan la navegació seqüencial està activada, un estudiant ha de progressar a través del qüestionari en ordre i no pot tornar a les pàgines anteriors ni saltar cap endavant.';
@@ -655,7 +659,7 @@ $string['quiz:attempt'] = 'Contestar qüestionaris';
 $string['quizavailable'] = 'El qüestionari està disponible fins: {$a}';
 $string['quizclose'] = 'Tanca el qüestionari';
 $string['quizclosed'] = 'Aquest qüestionari es va tancar el {$a}';
-$string['quizcloses'] = 'El qüestionari es tanca';
+$string['quizcloses'] = 'El qüestionari es tancarà el';
 $string['quizcloseson'] = 'Aquest qüestionari es tancarà el {$a}';
 $string['quiz:deleteattempts'] = 'Suprimeix intents del qüestionari';
 $string['quiz:emailconfirmsubmission'] = 'Rep un missatge de confirmació quan hi hagi enviaments';
@@ -675,7 +679,7 @@ $string['quizopenclose'] = 'Dates d\'obertura i tancament';
 $string['quizopenclose_help'] = 'Els estudiants només poden iniciar els seus intents després de l\'obertura i els han d\'acabar abans del tancament.';
 $string['quizopened'] = 'El qüestionari està obert.';
 $string['quizopenedon'] = 'Aquest qüestionari està disponible des de: {$a}';
-$string['quizopens'] = 'S\'obre el qüestionari';
+$string['quizopens'] = 'El qüestionari s\'obrirà el';
 $string['quizopenwillclose'] = 'Aquest qüestionari està obert, es tancarà el {$a}';
 $string['quizordernotrandom'] = 'Ordre sense alterar';
 $string['quizorderrandom'] = '* Ordre alterat';
@@ -751,7 +755,7 @@ $string['requirepassword'] = 'Demana contrasenya';
 $string['requirepassword_help'] = '<p>Aquest camp és opcional.</p>
 
 <p>Si especifiqueu una contrasenya aquí, els participants hauran d\'introduir aquesta contrasenya abans que se\'ls permeti contestar el qüestionari.</p>';
-$string['requiresubnet'] = 'Restringeix adreces';
+$string['requiresubnet'] = 'Restringeix a certes adreces IP';
 $string['requiresubnet_help'] = 'Podeu restringir l\'accés a un qüestionari a una subxarxa concreta de la xarxa local o d\'Internet si especifiqueu una llista d\'adreces IP numèriques, completes o parcials, separada per comes.
 
 Això és especialment útil per a un qüestionari supervisat, quan voleu estar segurs que només es pot accedir al qüestionari des d\'una certa aula.
@@ -814,6 +818,7 @@ $string['savingnewgradeforquestion'] = 'Es desa el valor de puntació per a la p
 $string['savingnewmaximumgrade'] = 'Es desa la puntuació màxima nova.';
 $string['score'] = 'Puntuació bruta';
 $string['scores'] = 'Puntuacions';
+$string['search:activity'] = 'Qüestionari: informació de les activitats';
 $string['sectionheadingedit'] = 'Edita la capçalera «{$a}»';
 $string['sectionheadingremove'] = 'Suprimeix la capçalera «{$a}»';
 $string['seequestions'] = '(Veure preguntes)';

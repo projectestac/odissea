@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activities'] = 'Δραστηριότητες';
+$string['activitiescompleted'] = 'Ολοκλήρωση δραστηριότητας';
 $string['activitycompletion'] = 'Ολοκλήρωση δραστηριοτήτων';
+$string['all'] = 'Όλα';
+$string['any'] = 'Κάθε';
+$string['approval'] = 'Αποδοχή';
 $string['badautocompletion'] = 'Εαν επιλέξετε αυτόματη ολοκλήρωση, πρέπει να επιλέξετε επίσης και τουλάχιστον ένα προαπαιτούμενο (παρακάτω).';
+$string['completed'] = 'Ολοκληρωμένο';
 $string['completedunlocked'] = 'Οι επιλογές ολοκλήρωσης ξεκλειδώθηκαν';
 $string['completedunlockedtext'] = 'Όταν αποθηκεύσετε τις αλλαγές σας, οι ρυθμίσεις ολοκλήρωσης όλων των χρηστών θα διαγραφούν. Αν δε θέλετε κάτι τέτοιο, μην υποβάλλετε αυτή τη φόρμα.';
 $string['completedwarning'] = 'Οι επιλογές ολοκλήρωσης κλειδώθηκαν';
@@ -42,6 +48,7 @@ $string['completion-alt-manual-n'] = 'Μη ολοκληρωμένο, επιλέ�
 $string['completion-alt-manual-y'] = 'Ολοκληρωμένο, επιλέξτε για να το σημειώσετε ως μη ολοκληρωμένο';
 $string['completion_automatic'] = 'Η δραστηριότητα σημειώνεται ολοκληρωμένη όταν ικανοποιηθούν κάποιες συνθήκες';
 $string['completiondisabled'] = 'Απενεργοποιημένο, δε συμπεριλαμβάνεται στις ρυθμίσεις των δραστηριοτήτων';
+$string['completionduration'] = 'Εγγραφή';
 $string['completionenabled'] = 'Ενεργοποιημένο, ρυθμιζόμενο μέσω των ρυθμίσεων των δραστηριοτήτων';
 $string['completionexpected'] = 'Αναμένεται ολοκλήρωση στις';
 $string['completionexpected_help'] = '<p>
@@ -76,7 +83,10 @@ $string['completionicons_help'] = '<p>
 Κάποιοι διαχειριστές, όπως οι καθηγητές σας, μπορεί να μπορούν να δουν ποια κουτιά έχετε γεμίσει. Ωστόσο, αυτή η πληροφορία δε χρησιμοποιείται στην αξιολόγηση και δεν υπολογίζεται στο βαθμό του μαθήματος. Δεν χρειάζεται να συμπληρώσετε τα κουτιά αν δε το επιθυμείτε.
 </p>';
 $string['completion_manual'] = 'Κάθε χρήστης μπορεί χειροκίνητα να σημειώσει τη δραστηριότητα ως ολοκληρωμένη';
+$string['completionmenuitem'] = 'Ολοκλήρωση';
+$string['completion-n'] = 'Δεν ολοκληρώθηκε';
 $string['completion_none'] = 'Δεν τηρούνται στοιχεία για την ολοκλήρωση της δραστηριότητας';
+$string['completionondate'] = 'Ημερομηνία';
 $string['completion-title-manual-n'] = 'Σημειώστε ως ολοκληρωμένο';
 $string['completion-title-manual-y'] = 'Σημειώστε ως μη ολοκληρωμένο';
 $string['completionusegrade'] = 'Απαιτείται βαθμός';
@@ -115,17 +125,39 @@ $string['completionusegrade_help'] = '<p>
 </p>';
 $string['completionview'] = 'Απαιτείται προβολή';
 $string['configenablecompletion'] = 'Όταν είναι ενεργοποιημένο, σας επιτρέπει να ενεργοποιήσετε το σύστημα παρακολούθησης προόδου σε κάθε μάθημα ξεχωριστά.';
+$string['courseaggregation_all'] = 'ΟΛΑ τα επιλεγμένα μαθήματα θα ολοκληρωθούν';
+$string['coursecompleted'] = 'Το μάθημα ολοκληρώθηκε';
+$string['coursecompletion'] = 'Ολοκλήρωση μαθήματος';
+$string['coursecompletioncondition'] = 'Συνθήκη: {$a}';
+$string['criteria'] = 'Κριτήρια';
 $string['csvdownload'] = 'Κατέβασμα σε αρχείο CSV (κωδικοποίηση UTF-8)';
+$string['days'] = 'Ημέρες';
+$string['dependencies'] = 'Εξαρτήσεις';
 $string['enablecompletion'] = 'Ενεργοποίηση παρακολούθησης ολοκλήρωσης';
+$string['enrolmentduration'] = 'Διάρκεια εγγραφής';
+$string['enrolmentdurationlength'] = 'Ο χρήστης πρέπει να παραμείνει εγγεγραμμένος για';
 $string['err_noactivities'] = 'Δεν έχει ενεργοποιηθεί η ρύθμιση παρακολούθησης για καμία δραστηριότητα. Μπορείτε να την ενεργοποιήσετε από τις ρυθμίσεις της κάθε δραστηριότητας ξεχωριστά.';
 $string['err_nousers'] = 'Δεν υπάρχουν χρήστες σ\' αυτό το μάθημα ή ομάδα για τους οποίους διατηρούνται πληροφορίες ολοκλήρωσης δραστηριοτήτων. (Εξορισμού τέτοιες πληροφορίες διατηρούνται μόνο για τους μαθητές, και αν δεν υπάρχουν τέτοιοι θα δείτε αυτό το μήνυμα. Ο διαχειριστής του συστήματος μπορεί να αλλάξει τη ρύθμιση αυτή).';
 $string['err_system'] = 'Σφάλμα κατά τη χρήση του συστήματος παρακολούθησης ολοκλήρωσης.';
+$string['eventcoursecompleted'] = 'Το μάθημα ολοκληρώθηκε';
 $string['excelcsvdownload'] = 'Κατέβασμα σε αρχείο CSV (συμβατό με Microsoft Excel)';
+$string['manualselfcompletion'] = 'Χειροκίνητη αυτό-ολοκλήρωση';
+$string['moredetails'] = 'Περισσότερες λεπτομέρειες';
+$string['notcompleted'] = 'Δεν ολοκληρώθηκε';
+$string['notenroled'] = 'Δεν είσαι εγγεγραμμένος σε αυτό το μάθημα';
+$string['overallaggregation'] = 'Απαιτήσεις ολοκλήρωσης';
+$string['overallaggregation_all'] = 'Το μάθημα είναι ολοκληρωμένο όταν ΟΛΕΣ οι συνθήκες καλύπτονται';
+$string['overallaggregation_any'] = 'Το μάθημα είναι ολοκληρωμένο όταν ΟΠΟΙΑΔΗΠΟΤΕ από τις συνθήκες καλύπτονται';
 $string['progress'] = 'Πρόοδος μαθητών';
 $string['progress-title'] = '{$a->user}, {$a->activity}: {$a->state} {$a->date}';
 $string['reportpage'] = 'Βλέπετε τους χρήστες {$a->from} ως {$a->to} από {$a->total}.';
+$string['requiredcriteria'] = 'Απαιτούμενα κριτήρια';
 $string['restoringcompletiondata'] = 'Ανάκτηση δεδομένων ολοκλήρωσης';
 $string['saved'] = 'Αποθηκεύτηκαν';
+$string['seedetails'] = 'Δες λεπτομέρειες';
 $string['selfcompletion'] = 'Αυτό-ολοκλήρωση';
+$string['unenrolment'] = 'Απ εγγραφή';
 $string['unlockcompletion'] = 'Ξεκλείδωμα επιλογών';
+$string['viewcoursereport'] = 'Προβολή αναφορά μαθήματος';
 $string['writingcompletiondata'] = 'Αποθήκευση δεδομένων ολοκλήρωσης';
+$string['yourprogress'] = 'Η πρόοδός σου';

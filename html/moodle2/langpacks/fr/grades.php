@@ -82,7 +82,7 @@ $string['aggregationhintextra'] = '(bonus)';
 $string['aggregationhintnovalue'] = '(vide)';
 $string['aggregationofa'] = 'Tendance centrale de {$a}';
 $string['aggregationposition'] = 'Position de la tendance centrale';
-$string['aggregationposition_help'] = 'Ce réglage détermine si les colonnes des tendances centrales de la catégorie et du cours sont affichées en premier ou en dernier dans les rapports du carnet de note.';
+$string['aggregationposition_help'] = 'Ce réglage détermine si les colonnes des tendances centrales de la catégorie et du cours sont affichées en premier ou en dernier dans les rapports du carnet de notes.';
 $string['aggregationsvisible'] = 'Types de tendances centrales disponibles';
 $string['aggregationsvisiblehelp'] = 'Sélectionnez tous les types de tendances centrales que vous voulez autoriser.';
 $string['allgrades'] = 'Toutes les notes par catégorie';
@@ -245,7 +245,7 @@ $string['gradebookcalculationsfixbutton'] = 'Accepter les modifications de notes
 $string['gradebookcalculationsuptodate'] = 'Les calculs du carnet de notes sont à jour. Veuillez recharger cette page pour voir les modifications.';
 $string['gradebookcalculationswarning'] = 'Des erreurs ont été détectées dans le calcul des notes affichées dans le carnet de notes. Si votre cours n\'a pas commencé ou est en cours, il vous est recommandé de corriger ces erreurs en cliquant sur le bouton ci-dessous. Cette opération aura pour résultat de modifier certaines notes. Si votre cours est terminé et que les notes ont été données, il n\'est probablement pas judicieux de corriger ce problème.
 
-La nouvelle version du carnet de note est {$a->currentversion} ; vous utilisez la version {$a->gradebookversion}. Vous pouvez consulter les changements entre les versions {$a->gradebookversion} et {$a->currentversion}, sur la page <a href="{$a->url}">Modifications du calcul du carnet de notes</a>.';
+La nouvelle version du carnet de notes est {$a->currentversion} ; vous utilisez la version {$a->gradebookversion}. Vous pouvez consulter les changements entre les versions {$a->gradebookversion} et {$a->currentversion}, sur la page <a href="{$a->url}">Modifications du calcul du carnet de notes</a>.';
 $string['gradebookhiddenerror'] = 'Le carnet de notes est configuré de façon à cacher toutes ses données aux étudiants.';
 $string['gradebookhistories'] = 'Historiques d\'évaluation';
 $string['gradebooksetup'] = 'Configuration du carnet de notes';
@@ -311,7 +311,7 @@ $string['gradeoutcomes'] = 'Objectifs';
 $string['gradeoutcomescourses'] = 'Objectifs du cours';
 $string['gradepass'] = 'Note pour passer';
 $string['gradepassgreaterthangrade'] = 'La note pour réussir ne peut pas être plus grande que la note maximale possible {$a}';
-$string['gradepass_help'] = 'Ce réglage détermine la note minimale pour passer. La valeur est utilisée dans l\'achèvement d\'activités et de cours, ainsi que dans le carnet de note, où les notes supérieures sont en vert et les notes inférieures en rouge.';
+$string['gradepass_help'] = 'Ce réglage détermine la note minimale pour passer. La valeur est utilisée dans l\'achèvement d\'activités et de cours, ainsi que dans le carnet de notes, où les notes supérieures sont en vert et les notes inférieures en rouge.';
 $string['gradepointdefault'] = 'Nombre de points par défaut';
 $string['gradepointdefault_help'] = 'Ce réglage détermine le nombre de points par défaut pour la note d\'un élément d\'évaluation.';
 $string['gradepointdefault_validateerror'] = 'Ce paramètre doit être un nombre entier entre 1 et le nombre de points maximum pour la note.';
@@ -487,7 +487,7 @@ $string['modgradeerrorbadscale'] = 'Barème non valide sélectionné. Veuillez v
 $string['modgrade_help'] = 'Sélectionnez le type de note utilisée dans cette activité. Si « Barème » est choisi, vous pourrez sélectionner un barème dans le menu déroulant. Si « Point » est choisi, vous pourrez spécifier la note maximale pour cette activité.';
 $string['modgrademaxgrade'] = 'Note maximale';
 $string['modgraderescalegrades'] = 'Adapter les notes existantes';
-$string['modgraderescalegrades_help'] = 'Lors du changement de la note maximale d\'un élément du carnet de note, il est nécessaire d\'indiquer si la modification devra également adapter en conséquence les notes déjà existantes.
+$string['modgraderescalegrades_help'] = 'Lors du changement de la note maximale d\'un élément du carnet de notes, il est nécessaire d\'indiquer si la modification devra également adapter en conséquence les notes déjà existantes.
 
 Si ce réglage est activé, toutes les notes existantes seront adaptées afin que les pourcentages restent identiques.
 
@@ -627,9 +627,9 @@ $string['recovergradesdefault_help'] = 'Par défaut, récupérer les anciennes n
 $string['refreshpreview'] = 'Actualiser la prévisualisation';
 $string['regradeanyway'] = 'Réévaluer malgré tout';
 $string['removeallcoursegrades'] = 'Supprimer toutes les notes';
-$string['removeallcoursegrades_help'] = 'Si ce réglage est activé, tous les éléments d\'évaluation ajoutés manuellement au carnet de note seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation associés avec des activités persisteront.';
+$string['removeallcoursegrades_help'] = 'Si ce réglage est activé, tous les éléments d\'évaluation ajoutés manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation associés avec des activités persisteront.';
 $string['removeallcourseitems'] = 'Supprimer tous les éléments et catégories';
-$string['removeallcourseitems_help'] = 'Si ce réglage est activé, toutes les catégories et tous les éléments d\'évaluation ajoutés manuellement au carnet de note seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation associés avec des activités persisteront.';
+$string['removeallcourseitems_help'] = 'Si ce réglage est activé, toutes les catégories et tous les éléments d\'évaluation ajoutés manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation associés avec des activités persisteront.';
 $string['report'] = 'Rapport';
 $string['reportdefault'] = 'Réglage par défaut du rapport ({$a})';
 $string['reportplugins'] = 'Modules de rapport';
