@@ -187,6 +187,7 @@ $string['grade:hide'] = 'Απόκρυψη/εμφάνιση βαθμών';
 $string['grade:import'] = 'Εισαγωγή βαθμών';
 $string['grade:lock'] = 'Κλείδωμα βαθμών';
 $string['grade:manage'] = 'Διαχερίριση βαθμών';
+$string['grade:managegradingforms'] = 'Διαχείριση προχωρημένων μεθόδων βαθμολόγησης';
 $string['grade:manageletters'] = 'Διαχείριση βαθμών (γραμμάτων)';
 $string['grade:manageoutcomes'] = 'Διαχείριση βαθμών (καταλήξεις)';
 $string['grade:override'] = 'Υπερίσχυση βαθμών';

@@ -62,8 +62,9 @@ $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez egunera (eta
 *Derrigorrezko eremuen izenak:erabiltzaile-izena, pasahitza, abizena, izena, e-posta.
 ';
 $string['uploaduserspreview'] = 'Aurreikusi erabiltzaileen igoera';
-$string['uploadusersresult'] = 'Erabiltzaileen igoeraren emaitzak';
-$string['useraccountupdated'] = 'Erabiltzailea ondo igo da';
+$string['uploadusersresult'] = 'Igo erabiltzaileen emaitzak';
+$string['uploaduser:uploaduserpictures'] = 'Igo erabiltzailearen irudiak';
+$string['useraccountupdated'] = 'Erabiltzailea eguneratu da';
 $string['useraccountuptodate'] = 'Eguneratutako erabiltzailea';
 $string['userdeleted'] = 'Erabiltzailea ezabatu da';
 $string['userrenamed'] = 'Erabiltzailearen izena aldatu da';

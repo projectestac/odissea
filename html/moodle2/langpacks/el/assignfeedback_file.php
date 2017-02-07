@@ -27,7 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configmaxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['countfiles'] = '{$a} αρχεία';
+$string['enabled'] = 'Αρχείο ανατροφοδότησης';
 $string['feedbackfileadded'] = 'Νέο αρχείο ανατροφοδότησης "{$a->filename}" για το μαθητή "{$a->student}"';
+$string['feedbackfileupdated'] = 'Το αρχείο ανατροφοδότησης "{$a->filename}" ενημερώθηκε για τον εκπαιδευόμενο "{$a->student}"';
+$string['feedbackzip'] = 'Συμπιεσμένο αρχείο Zip με αρχεία ανατροφοδότησης';
+$string['file'] = 'Αρχεία ανατροφοδότησης';
 $string['maxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['maximumsize'] = 'Μέγιστο μέγεθος αρχείου';
+$string['nochanges'] = 'Δεν υπάρχουν αλλαγές';
 $string['selectedusers'] = 'Επιλεγμένοι χρήστες';
+$string['uploadfiles'] = 'Αποστολή αρχείου ανατροφοδότησης';

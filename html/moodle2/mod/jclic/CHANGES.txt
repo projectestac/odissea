@@ -3,6 +3,10 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
+Changes in progress
+---------------------------------------------------------------------------------------
+- Changed default report to detailed
+
 Changes in 3.0.1 - 2016061300 (2016/09/28)
 ---------------------------------------------------------------------------------------
 - Added support for JClic HTML5 player

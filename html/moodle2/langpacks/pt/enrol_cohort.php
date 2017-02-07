@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Adicionar ao grupo';
 $string['assignrole'] = 'Atribuir papel';
-$string['cohort:config'] = 'Configurar instâncias de grupos globais';
+$string['cohort:config'] = 'Configurar instâncias de Grupos globais';
 $string['cohort:unenrol'] = 'Desinscrever utilizadores suspensos';
 $string['creategroup'] = 'Criar novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} grupo global {$a->name}';
 $string['instanceexists'] = 'O grupo global já está sincronizado com o papel selecionado';
-$string['pluginname'] = 'Sincronização com grupos globais';
+$string['pluginname'] = 'Sincronização com Grupos globais';
 $string['pluginname_desc'] = 'Este módulo de inscrição sincroniza os membros de grupos globais com os participantes da disciplina.';
 $string['status'] = 'Ativo';

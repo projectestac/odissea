@@ -60,6 +60,7 @@ $string['modulename'] = 'Εργαστήριο';
 $string['modulenameplural'] = 'Εργαστήρια';
 $string['mysubmission'] = 'Η υποβολή μου';
 $string['nattachments'] = 'Μέγιστος αριθμός επισυναπτόμενων ανά υποβολή';
+$string['noyoursubmission'] = 'Δεν έχετε υποβάλει την εργασία σας ακόμα';
 $string['pluginname'] = 'Εργαστήριο';
 $string['reassess'] = 'Επανεξέταση';
 $string['saveandcontinue'] = 'Αποθήκευσε και συνέχισε την επεξεργασία';

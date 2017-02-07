@@ -78,12 +78,12 @@ Auf einer produktiven Website sollten Sie das Problem lösen. Andernfalls könne
 **Was muss ich tun, wenn meine Website nicht für jeden öffentlich erreichbar sein soll?**
 
 Die einzige URL, die für die Verifizierung benötigt wird, ist [website]/badges/assertion.php. Wenn Sie Ihre Firewall so konfigurieren, dass der Zugriff auf dieses Skript erlaubt ist, dann funktioniert die Verifizierung von Auszeichnungen.';
-$string['backpackbadges'] = 'Sie haben {$a->totalbadges} Auszeichnung(en), die aus {$a->totalcollections} Sammlung(en) angezeigt werden. <a href="mybackpack.php">Backpack-Einstellungen ändern</a>.';
+$string['backpackbadges'] = 'Sie haben {$a->totalbadges} Auszeichnung(en), die aus {$a->totalcollections} Sammlung(en) angezeigt werden. <a href="mybackpack.php">Backpack konfigurieren</a>.';
 $string['backpackconnection'] = 'Verbindung zum Backpack';
 $string['backpackconnection_help'] = 'Auf dieser Seite können Sie Verbindungen zu externen Backpack-Diensten konfigurieren. Eine Verbindung zu einem externen Backpack-Dienst ermöglicht es, externe Auszeichnungen in Moodle anzuzeigen und in Moodle erworbene Auszeichnungen in das externe Backpack zu exportieren.
 
 Derzeit wird nur der Backpack-Dienst <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a> unterstützt. Sie müssen sich erst bei einem externen Backpack-Dienst anmelden, bevor sie die zugehörigen Verbindung in Moodle konfigurieren können.';
-$string['backpackdetails'] = 'Backpack-Einstellungen';
+$string['backpackdetails'] = 'Backpack konfigurieren';
 $string['backpackemail'] = 'E-Mail-Adresse';
 $string['backpackemail_help'] = 'E-Mail-Adresse, die mit Ihrem Backpack-Dienst verknüpft ist
 
@@ -278,7 +278,7 @@ $string['localbadgesp'] = 'Auszeichnungen von {$a}:';
 $string['localconnectto'] = 'Um diese Auszeichnungen außerhalb dieser Moodle-Site zu teilen, müssen Sie eine <a href="{$a}">Verbindung zu einem Backpack</a> herstellen.';
 $string['makeprivate'] = 'nicht anzeigen';
 $string['makepublic'] = 'anzeigen';
-$string['managebadges'] = 'Verwaltung';
+$string['managebadges'] = 'Auszeichnungen verwalten';
 $string['message'] = 'Mitteilung';
 $string['messagebody'] = '<p>Ihnen wurde die Auszeichnung "%badgename%" verliehen.</p>
 <p>Weitere Informationen zu dieser Auszeichnung finden Sie unter %badgelink%.</p>
@@ -330,7 +330,7 @@ $string['personaconnection_help'] = 'Persona ist ein System, um Personen über W
 
 Weitere Information: <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Mögliche Empfänger/innen';
-$string['preferences'] = 'Einstellungen für Auszeichnungen';
+$string['preferences'] = 'Auszeichnungen konfigurieren';
 $string['recipientdetails'] = 'Empfängerdetails';
 $string['recipientidentificationproblem'] = 'Empfänger/in dieser Auszeichnung kann unter den vorhandenen Nutzer/innen nicht gefunden werden';
 $string['recipients'] = 'Auszeichnungsempfänger/innen';

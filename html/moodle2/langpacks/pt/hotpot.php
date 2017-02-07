@@ -106,7 +106,7 @@ $string['delay2summary'] = 'Intervalo de tempo entre as tentativas posteriores';
 $string['delay3'] = 'Intervalo 3';
 $string['delay3afterok'] = 'Após o aluno clicar no botão OK';
 $string['delay3disable'] = 'Não continuar automaticamente';
-$string['delay3_help'] = 'A configuração especifica o intervalo de tempo entre terminar a tentativa e voltar ao controlo do Moodle.
+$string['delay3_help'] = 'Esta configuração especifica o intervalo de tempo entre terminar a tentativa e voltar ao controlo do Moodle.
 
 **Usar tempo específico (em segundos)**
 : o controlo voltará ao Moodle após o número especificado de segundos.
@@ -120,7 +120,7 @@ $string['delay3_help'] = 'A configuração especifica o intervalo de tempo entre
 **Não continuar automaticamente**
 : o controlo não voltará ao Moodle após terminar o teste. O aluno poderá navegar para fora da página do teste.
 
-As notas obtidas no teste são reportadas sempre ao moodle após o aluno sair ou completar o teste, independentemente desta configuração.';
+As notas obtidas no teste são reportadas sempre ao Moodle após o aluno sair ou completar o teste, independentemente desta configuração.';
 $string['delay3specific'] = 'Usar tempo específico (em segundos)';
 $string['delay3summary'] = 'Tempo de intervalo no final do teste';
 $string['delay3template'] = 'Usar configurações do ficheiro de origem/modelo';

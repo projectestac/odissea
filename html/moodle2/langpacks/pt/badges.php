@@ -242,8 +242,8 @@ $string['eventbadgeawarded'] = 'Medalha atribuída';
 $string['evidence'] = 'Evidência';
 $string['existingrecipients'] = 'Atuais destinatários da Medalha';
 $string['expired'] = 'Expirada';
-$string['expiredate'] = 'A validade desta Medalha termina em {$a}.';
-$string['expireddate'] = 'A validade desta Medalha terminou em {$a}.';
+$string['expiredate'] = 'A validade desta Medalha termina {$a}.';
+$string['expireddate'] = 'A validade desta Medalha terminou {$a}.';
 $string['expireperiod'] = 'A validade desta Medalha termina em {$a} dia(s) após a sua emissão.';
 $string['expireperiodh'] = 'A validade desta Medalha termina em {$a} hora(s) após a sua emissão.';
 $string['expireperiodm'] = 'A validade desta Medalha termina em {$a} minuto(s) após a sua emissão.';
@@ -277,7 +277,7 @@ $string['managebadges'] = 'Gerir Medalhas';
 $string['message'] = 'Corpo da mensagem';
 $string['messagebody'] = '<p>Foi premiado com a Medalha "%badgename%"!</p>
 <p> Mais informações sobre esta Medalha em %badgelink%.</p>
-<p> Se não houver uma Medalha anexada a este e-mail, pode a gerir e descarregar a partir da página {$a}. </p>';
+<p> Se não houver uma Medalha anexada a este e-mail, pode-a gerir e descarregar a partir da página {$a}.</p>';
 $string['messagesubject'] = 'Parabéns! Acabou de ganhar uma Medalha!';
 $string['method'] = 'Este critério é cumprido quando…';
 $string['mingrade'] = 'Nota mínima necessária';

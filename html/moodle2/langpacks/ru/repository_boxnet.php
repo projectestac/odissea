@@ -40,5 +40,5 @@ $string['pluginname'] = 'Box';
 $string['pluginname_help'] = 'Хранилище Box';
 $string['saved'] = 'Данные Box сохранены';
 $string['shareurl'] = 'Публичная ссылка';
-$string['username'] = 'Имя пользователя Box';
+$string['username'] = 'Логин Box';
 $string['warninghttps'] = 'Для работы хранилища сайт Box требует использования Вашим сайтом протокола HTTPS.';

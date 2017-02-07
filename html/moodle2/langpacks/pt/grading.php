@@ -46,9 +46,9 @@ $string['manageactiondeleteconfirm'] = 'Está prestes a apagar a grelha \'{$a->f
 
 * Não existe forma de voltar atrás após esta operação.
 * Pode alterar para outro método de avaliação incluindo o \'Avaliação simples direta\' sem apagar esta grelha.
-* Todas as informações sobre como as grelhas de avaliação estão preenchidos serão perdidas.
+* Todas as informações sobre como as grelhas de avaliação estão preenchidas serão perdidas.
 * Os resultados guardados na pauta não serão afetados. No entanto, a explicação de como foram calculados não estará disponível.
-* Esta operação não afetará eventuais  cópias desta grelha noutras atividades.';
+* Esta operação não afetará eventuais cópias desta grelha noutras atividades.';
 $string['manageactiondeletedone'] = 'A grelha foi apagado com sucesso';
 $string['manageactionedit'] = 'Editar as definições da grelha';
 $string['manageactionnew'] = 'Criar nova grelha de avaliação';
@@ -57,7 +57,7 @@ $string['manageactionshareconfirm'] = 'Está prestes a guardar uma cópia da gre
 $string['manageactionsharedone'] = 'A grelha de avaliação foi guardada com sucesso como modelo.';
 $string['noitemid'] = 'A avaliação não é possivel, o item de avaliação não existe.';
 $string['nosharedformfound'] = 'Não foram encontrados modelos';
-$string['searchownforms'] = 'incluindo as minhas grelhas';
+$string['searchownforms'] = 'incluir as minhas grelhas';
 $string['searchtemplate'] = 'Pesquisar grelhas de avaliação';
 $string['searchtemplate_help'] = 'Pode pesquisar por uma grelha de avaliação e usá-la aqui como modelo a partir da nova grelha de avaliação. Basta inserir as palavras que devem aparecer em algum lugar no nome da grelha, na sua descrição ou no próprio corpo da grelha. Para pesquisar uma frase, insira a expressão inteira entre aspas.
 

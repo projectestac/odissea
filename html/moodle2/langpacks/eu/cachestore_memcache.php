@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clusteredheader'] = 'Bereizi zerbitzariak';
 $string['pluginname'] = 'Memcache';
+$string['prefixinvalid'] = 'Aurrizki baliogabea. Bakarrik erabil ditzakezu ondokoak: a-z A-Z 0-9-_.';
 $string['servers'] = 'Zerbitzariak';
 $string['testservers'] = 'Proba-zerbitzariak';

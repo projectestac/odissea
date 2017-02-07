@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['markuptodate'] = 'σημείωση ως ενημερωμένο';
 $string['pluginname'] = 'Γλωσσική προσαρμογή';

@@ -37,6 +37,6 @@ $string['meta:unenrol'] = 'Anul·la la inscripció dels usuaris amb la inscripci
 $string['nosyncroleids'] = 'Rols que no estan sincronitzats';
 $string['nosyncroleids_desc'] = 'Per defecte totes les assignacions de rol de nivell de curs estan sincronitzades dels cursos pare al cursos fills. Els rols que es seleccionin aquí no s\'inclouen en el procés de sincronització. Els rols disponibles per sincronització s\'actualitzaran en la següent execució del dimoni cron.';
 $string['pluginname'] = 'Enllaç de meta curs';
-$string['pluginname_desc'] = 'El connector d\'inscripció de l\'enllaç de meta curs sincronitza inscripcions i rols en dos cursos diferents.';
+$string['pluginname_desc'] = 'El connector d\'inscripció de l\'enllaç de metacurs sincronitza inscripcions i rols en dos cursos diferents.';
 $string['syncall'] = 'Sincronitza tot els usuaris inscrits';
 $string['syncall_desc'] = 'Si s\'habilita, tots els usuaris inscrits se sincronitzaran encara que no tinguin cap rol al curs pare. Si s\'inhabilita, sols els usuaris que tinguin com a mínim un rol sincronitzat seran inscrits al curs fill.';

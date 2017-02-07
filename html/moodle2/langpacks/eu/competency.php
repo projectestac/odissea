@@ -40,10 +40,12 @@ $string['coursemodulecompetencyoutcome_recommend'] = 'Bidali berrikusteko';
 $string['deletecompetencyratings'] = 'Ezabatu gaitasunen puntuazioa';
 $string['duplicateditemname'] = '{$a} (kopiatu)';
 $string['enablecompetencies'] = 'Gaitu gaitasunak';
-$string['enablecompetencies_desc'] = 'Gaitasunek ahalbidetzen duten erabiltzaileak ebaluatuak izatea ikasketa-planen arabera.';
+$string['enablecompetencies_desc'] = 'Gaitasunek ahalbidetzen dute erabiltzaileak ebaluatuak izatea ikasketa-planen arabera.';
 $string['errorcannotchangeapastduedate'] = 'Entregatze-data pasatu da; ezin da aldaketarik egin.';
 $string['errorcannotsetduedateinthepast'] = 'Entregatze-data ezin da ezarri lehenaldian';
 $string['errorcannotsetduedatetoosoon'] = 'Entregatze-data laster izango da.';
+$string['errorcompetencyrule'] = 'Ikastaroko gaitasun-arau ezezaguna: \'{$a}\'';
+$string['errorcoursecompetencyrule'] = 'Ikastaroko gaitasun-arau ezezaguna: \'{$a}\'';
 $string['errorinvalidcourse'] = 'Ikastaro baliogabea.';
 $string['errornocompetency'] = '{$a} gaitasuna ezin izan da aurkitu';
 $string['errorscalealreadyused'] = 'Eskala ezin izan da aldatu erabiltzen ari baita.';
@@ -108,6 +110,17 @@ $string['usercommentedonacompetencyhtml'] = '<p>{$a->fullname}-(e)k iruzkina egi
 <div>{$a->comment}</div>
 <p>Ikusi: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonacompetencysmall'] = '{$a->fullname}-(e)k iruzkina egin du "{$a->competency}" gaitasunean.';
+$string['usercommentedonacompetencysubject'] = '{$a}-(e)k iruzkina egin du gaitasunean.';
+$string['usercommentedonaplan'] = '{$a->fullname}-(e)k iruzkina egin du  "{$a->plan}" ikasketa-planean:
+
+{$a->comment}
+
+Ikusi: {$a->url}';
+$string['usercommentedonaplanhtml'] = '<p>{$a->fullname}-(e)k iruzkina egin du "{$a->plan}" ikasketa-planean:</p>
+<div>{$a->comment}</div>
+<p>Ikusi: <a href="{$a->url}">{$a->urlname}</a>.</p>';
+$string['usercommentedonaplansmall'] = '{$a->fullname}-(e)k iruzkina egin du "{$a->plan}" ikasketa-planean.';
+$string['usercommentedonaplansubject'] = '{$a}-(e)k iruzkina egin du ikasketa-planean.';
 $string['usercompetencystatus_inreview'] = 'Berrikusten';
 $string['usercompetencystatus_waitingforreview'] = 'Berrikusketaren zain';
 $string['userplans'] = 'Ikasketa-planak';

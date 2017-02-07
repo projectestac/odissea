@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Adicionar ao grupo';
 $string['coursesort'] = 'Ordenar a lista de disciplinas';
-$string['coursesort_help'] = 'Esta opção determina se a lista de disciplinas com que pode sincronizar as inscrições estão ordenadas por ordem predefinida (ou seja, a ordem definida em Administração do Site > Disciplinas > Gerir disciplinas e categorias) ou por ordem alfabética de configuração da disciplina.';
+$string['coursesort_help'] = 'Esta opção determina se a lista de disciplinas em que pode sincronizar as inscrições estão ordenadas por ordem predefinida (ou seja, a ordem definida em Administração do Site > Disciplinas > Gerir disciplinas e categorias) ou por ordem alfabética de configuração da disciplina.';
 $string['creategroup'] = 'Criar um novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} disciplina {$a->name}';
 $string['linkedcourse'] = 'Sincronizar inscrições com';

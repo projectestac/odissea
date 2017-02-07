@@ -45,3 +45,4 @@ $string['performmigration'] = 'Egin migrazioa';
 $string['pluginname'] = 'Gaitasunen migraziorako tresna';
 $string['results'] = 'Emaitzak';
 $string['startdatefrom'] = 'Hasiera-data ondokotik aurrera';
+$string['warnings'] = 'Abisuak';

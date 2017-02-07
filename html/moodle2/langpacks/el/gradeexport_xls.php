@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Φύλο εργασίας Excel';
+$string['pluginname'] = 'Φύλλο εργασίας Excel';
 $string['xls:publish'] = 'Δημοσίευση εξαγωγής βαθμών σε XLS';
 $string['xls:view'] = 'Χρήση εξαγωγής βαθμών σε Excel';

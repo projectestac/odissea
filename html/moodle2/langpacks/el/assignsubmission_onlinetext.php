@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['nosubmission'] = 'Δεν έχει υποβληθεί τίποτα για την εργασία αυτή';
+$string['wordlimit'] = 'Όριο λέξεων';

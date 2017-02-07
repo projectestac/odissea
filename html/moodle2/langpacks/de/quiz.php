@@ -398,6 +398,7 @@ ignoriert)
 ignoriert)';
 $string['gradesdeleted'] = 'Testbewertungen wurden gelöscht';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
+$string['gradetopassmustbeset'] = 'Die abgegebene Bewertung kann nicht Null sein, da dieser Test als Aktivitätsabschluss eine Bewertung verlangt. Setzen Sie die Bewertung auf einen Wert ungleich Null.';
 $string['gradetopassnotset'] = 'Dieses Quiz hat keine \'grade to pass\'-Einstellung, deshalb ist diese Option nicht nutzbar. Bitte nutzen Sie stattdessen die \'require grade\'-Einstellung.';
 $string['gradingdetails'] = 'Punkte: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Mit früheren Abzügen ergibt dies <strong>{$a->cur}/{$a->max}</strong>.';

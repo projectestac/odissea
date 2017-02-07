@@ -26,13 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowedcourses'] = 'Zugelassene Kurse';
-$string['allowedcourses_help'] = 'Wenn zumindest ein Kurs ausgewählt wurde, wird die Migration nur für die hier aufgelisteten Kurse durchgeführt.';
-$string['coursemodulesfound'] = 'Kursaktivitäten gefunden';
-$string['coursesfound'] = 'Gefundene Kurse';
-$string['coursestartdate'] = 'Kursstartdatum';
-$string['coursestartdate_help'] = 'Kurse mit einem Startdatum vor dem eingegebenen Datum werden nicht migriert.';
+$string['allowedcourses_help'] = 'Wählen Sie Kurse, die zum neuen Kompetenzrahmen migriert werden sollen. Wenn kein Kurs angegeben ist, wird die Migration für alle Kurse durchgeführt.';
+$string['continuetoframeworks'] = 'Weiter zu Kompetenzrahmen';
+$string['coursecompetencymigrations'] = 'Migration von Kurskompetenzen';
+$string['coursemodulecompetencymigrations'] = 'Migration von Aktivitäts- und Materialkompetenzen';
+$string['coursemodulesfound'] = 'Kursaktivitäten und -material gefunden';
+$string['coursesfound'] = 'Kurse gefunden';
+$string['coursestartdate'] = 'Kursbeginn';
+$string['coursestartdate_help'] = 'Wenn diese Option aktiviert ist, werden Kurse mit einem Kursbeginn vor dem eingegebenen Datum werden nicht migriert.';
 $string['disallowedcourses'] = 'Nicht zugelassene Kurse';
+$string['disallowedcourses_help'] = 'Wählen Sie alle Kurse, die nicht auf den neuen Kompetenzrahmen migriert werden sollen.';
+$string['errorcannotmigratetosameframework'] = 'Fehler: Die Migration kann nicht von einem auf denselben Kompetenzramen stattfinden.';
+$string['errorcouldnotmapcompetenciesinframework'] = 'Fehler: Keine Zuordnung zu einer Kompetenz in diesem Kompetenzrahmen möglich.';
 $string['errors'] = 'Fehler';
+$string['errorwhilemigratingcoursecompetencywithexception'] = 'Fehler beim Migrieren der Kurskompetenzen: {$a}';
+$string['errorwhilemigratingmodulecompetencywithexception'] = 'Fehler beim Migrieren der Aktivitäts- und Materialkompetenzen: {$a}';
 $string['excludethese'] = 'Diese ausschließen';
 $string['explanation'] = 'Diese Anwendung kann benutzt werden, um einen Kompetenzrahmen zu einer neueren Version zu aktualisieren. Es sucht in Kursen und Aktivitäten nach Kompetenzen , die im alten Kompetenzrahmen aufgelistet waren, und stellt die Links auf den neuen Rahmen um.
 Es wird nicht empfohlen, die alte Liste von Kompetenzen direkt zu bearbeiten, weil das auch alle Kompetenzen verändern würde, die schon in den Lernplänen der Teilnehmer vergeben wurden.
@@ -44,8 +52,10 @@ $string['limittothese'] = 'Begrenzen auf';
 $string['lpmigrate:frameworksmigrate'] = 'Kompetenzrahmen migrieren';
 $string['migrateframeworks'] = 'Kompetenzrahmen migrieren';
 $string['migratefrom'] = 'Migrieren von';
+$string['migratefrom_help'] = 'Wählen Sie den aktuell verwendeten Kompetenzrahmen aus.';
 $string['migratemore'] = 'Mehr migrieren';
 $string['migrateto'] = 'Migrieren nach';
+$string['migrateto_help'] = 'Wählen Sie den neuen Kompetenzrahmen aus. Es ist nur möglich, einen nicht verborgenen Kompetenzrahmen auszuwählen.';
 $string['migratingcourses'] = 'Kurse migrieren';
 $string['missingmappings'] = 'Fehlende Zuordnungen';
 $string['performmigration'] = 'Migration ausführen';

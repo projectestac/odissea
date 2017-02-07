@@ -41,6 +41,6 @@ $string['selectedlist'] = 'Com os selecionados...';
 $string['selectedlist_help'] = 'Os utilizadores podem ser selecionados ou removidos da lista de utilizadores clicando nos seus nomes e no botão apropriado. Podem ser selecionados múltiplos utilizadores pressionando o botão CTRL e clicando nos seus nomes.';
 $string['users'] = 'Utilizadores';
 $string['usersfound'] = '{$a} utilizador(es) encontrados.';
-$string['users_help'] = 'Todos os utilizadores que passaram pelos filtros configurados encontram-se na caixa em lista. Se não for definido nenhum filtro, todos os utilizadores do site são listados.';
+$string['users_help'] = 'Todos os utilizadores que passaram pelos filtros configurados encontram-se listados na caixa disponível. Se não for definido nenhum filtro, todos os utilizadores do site são listados.';
 $string['usersinlist'] = 'Utilizadores na lista';
 $string['usersselected'] = '{$a} utilizador(es) selecionados.';

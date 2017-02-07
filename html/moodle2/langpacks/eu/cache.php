@@ -58,6 +58,7 @@ $string['editmappings'] = 'Editatu mapaketak';
 $string['editsharing'] = 'Editatu partekatzea';
 $string['editstore'] = 'Editatu biltegia';
 $string['editstoresuccess'] = 'Ondo editatu da cache-biltegia.';
+$string['invalidplugin'] = 'Plugin baliogabea';
 $string['lockdefault'] = 'Berezkoa';
 $string['locking'] = 'Blokeatzen';
 $string['lockname'] = 'Izena';

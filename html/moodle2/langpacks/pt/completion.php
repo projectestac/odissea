@@ -52,7 +52,7 @@ $string['completion-alt-auto-pass'] = 'Concluída (atingiu nota de aprovação)'
 $string['completion-alt-auto-y'] = 'Concluída';
 $string['completion-alt-manual-enabled'] = 'Os alunos podem assinalar a atividade como concluída';
 $string['completion-alt-manual-n'] = 'Não concluída. Selecione para assinalar como concluída';
-$string['completion-alt-manual-y'] = 'Concluída; Selecione para dar como não concluída';
+$string['completion-alt-manual-y'] = 'Concluída: {$a}. Selecione para dar como não concluída';
 $string['completion_automatic'] = 'Dar como concluída quando se verificarem as seguintes condições';
 $string['completiondefault'] = 'Usar configuração predefinida da verificação de conclusão';
 $string['completiondisabled'] = 'Desativado, não mostrar nas configurações das atividades';
@@ -65,11 +65,11 @@ $string['completion_help'] = 'Se ativar esta opção, a conclusão da atividade 
 
 As atividades concluídas serão assinaladas na página da disciplina com um visto junto do nome da atividade .';
 $string['completionicons'] = 'Caixas de verificação da conclusão';
-$string['completionicons_help'] = 'Um visto junto ao nome de uma atividade serve para indicar quando esta atividade está concluída.
+$string['completionicons_help'] = 'Um visto junto ao nome de uma atividade serve para indicar se a atividade está concluída.
 
 Se for exibida uma caixa com o limite tracejado, o visto aparecerá automaticamente quando a atividade for concluída de acordo com as condições definidas pelo professor.
 
-Se for exibida uma caixa com o limite sólido, significa que pode clicar sobre ela para colocar o visto, indicando assim que completou a atividade. (Se mudar de ideias e clicar novamente o visto é removido) O visto é opcional e consiste apenas numa forma de assinalar o seu progresso ao longo da disciplina.';
+Se for exibida uma caixa com o limite sólido, significa que pode clicar sobre ela para colocar o visto, indicando assim que completou a atividade (se mudar de ideias e clicar novamente o visto é removido). O visto é opcional e consiste apenas numa forma de assinalar o seu progresso ao longo da disciplina.';
 $string['completion_link'] = 'atividade/conclusão';
 $string['completion_manual'] = 'Os alunos podem assinalar a atividade como concluída';
 $string['completionmenuitem'] = 'Conclusão';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['canntenrol'] = 'Matrikulazioa desgaituta dago edo ez dago aktibo';
+$string['canntenrolearly'] = 'Oraindik ezin duzu matrikularik egin; matrikula {$a} datan hasiko da.';
 $string['cohortonly'] = 'Kohorteko partaideak bakarrik';
 $string['customwelcomemessage'] = 'Pertsonalizatu ongi etorria emateko mezua';
 $string['defaultrole'] = 'Berezko rol-esleipena';
@@ -43,6 +45,7 @@ Laguntzarik behar baduzu, jarri harremanetan {$a->enroller}-(r)ekin.';
 $string['expirymessageenrolledsubject'] = 'Matrikulazio automatikoaren amaieraren jakinarazpena';
 $string['expirymessageenrollersubject'] = 'Matrikulazio automatikoaren amaieraren jakinarazpena';
 $string['groupkey'] = 'Erabili taldea matrikulatzeko giltzak';
+$string['longtimenosee'] = 'Desmatrikulatu parte-hartu gabeko tarte honen ondoren';
 $string['maxenrolled'] = 'Matrikulatutako gehienezko erabiltzaileak';
 $string['newenrols'] = 'Baimendu matrikula berriak';
 $string['nopassword'] = 'Ez da matrikulazio-giltza behar.';
@@ -54,6 +57,7 @@ $string['pluginname'] = 'Matrikulazio automatikoa';
 $string['requirepassword'] = 'Matrikulazio-giltza behar du';
 $string['role'] = 'Berez esleitutako rola';
 $string['self:config'] = 'Ezarri matrikulazio automatikorako instantziak';
+$string['self:holdkey'] = 'Agertu matrikulazio automatikoaren giltzain gisa';
 $string['self:manage'] = 'Matrikulatutako erabiltzaileak kudeatu';
 $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['self:unenrolself'] = 'Norbera ikastararotik desmatrikulatu';

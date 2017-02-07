@@ -58,7 +58,7 @@ if (has_capability('moodle/grade:viewall', $context)) {
     if ($action == 'preview') {
         $ispreview = true;
     } else {
-        redirect('report.php?id='.$cm->id);
+        redirect('report.php?mode=details&id='.$cm->id);
     }
 }
 

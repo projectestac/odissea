@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'ツール消費者プロファイルLTIサービス';
+$string['pluginname'] = 'ールコンシューマプロファイルLTIサービス';

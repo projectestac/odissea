@@ -247,7 +247,7 @@ $string['manage_tool_proxies'] = 'Gerir registos de ferramentas externas';
 $string['manage_tools'] = 'Gerir ferramentas pré-configuradas';
 $string['manuallyaddtype'] = 'Em alternativa, pode <a href="{$a}">configurar a ferramenta manualmente</a>.';
 $string['miscellaneous'] = 'Diversos';
-$string['misconfiguredtools'] = 'Foram detetadas instâncias da ferramenta mal configuradas';
+$string['misconfiguredtools'] = 'Foram encontradas instâncias mal configuradas da ferramenta';
 $string['missingparameterserror'] = 'A página "{$a}" está mal configurada';
 $string['module_class_type'] = 'Tipo de módulo do Moodle';
 $string['modulename'] = 'Ferramenta externa';

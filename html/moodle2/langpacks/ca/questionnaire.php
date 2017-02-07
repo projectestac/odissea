@@ -160,6 +160,7 @@ $string['feedbackglobalheading'] = 'Encapçalament de la retroacció global';
 $string['feedbackglobalmessages'] = 'Missatges de la retroacció global';
 $string['feedbackhdr'] = 'Retroaccions';
 $string['feedbackheading'] = 'Encapçalament de la retroacció';
+$string['feedbackheading_help'] = 'Al camp de l\'encapçalament de la retroacció podeu utilitzar 2 variables: $scorepercent i $oppositescorepercent.';
 $string['feedback_help'] = 'Ajuda de la retroacció';
 $string['feedbackmessages'] = 'Missatges de retroacció per a la secció {$a}';
 $string['feedbacknextsection'] = 'Secció següent {$a}';

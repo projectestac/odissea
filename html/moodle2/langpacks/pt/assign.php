@@ -52,7 +52,7 @@ $string['assign:grade'] = 'Avaliar trabalho';
 $string['assign:grantextension'] = 'Prolongar o prazo';
 $string['assign:manageallocations'] = 'Gerir avaliadores atribuídos a estas submissões';
 $string['assign:managegrades'] = 'Rever e lançar notas';
-$string['assignmentisdue'] = 'Terminou o prazo para submeter o trabalho';
+$string['assignmentisdue'] = 'Já terminou o prazo para submeter o trabalho';
 $string['assignmentmail'] = '{$a->grader}  submeteu feedback ao trabalho
 que submeteu em \'{$a->assignment}\'
 
@@ -238,7 +238,7 @@ $string['gradingstudent'] = 'Avaliar aluno';
 $string['gradingsummary'] = 'Estado da atividade';
 $string['grantextension'] = 'Prolongar prazo';
 $string['grantextensionforusers'] = 'Prolongar prazo a {$a} alunos';
-$string['groupsubmissionsettings'] = 'Configurações das submissões de Grupo';
+$string['groupsubmissionsettings'] = 'Configurações das submissões de grupo';
 $string['hiddenuser'] = 'Participante';
 $string['hideshow'] = 'Mostrar/Ocultar';
 $string['instructionfiles'] = 'Ficheiros de instruções';

@@ -101,6 +101,7 @@ $string['responsiblewillbenotified'] = 'Arduradunari jakinaraziko zaio';
 $string['rssdesc'] = 'Moodle-k automatikoki sortuko du RSS jario hau eta ikastaroetarako erabiltzaileak sortu dituen etiketak ditu';
 $string['rsstitle'] = 'Ikastaro-etiketen RSS jarioa {$a} erabiltzailearentzat';
 $string['search'] = 'Bilatu';
+$string['searchable'] = 'Bila daiteke';
 $string['searchresultsfor'] = '"{$a}" -ren emaitzak bilatu';
 $string['searchtags'] = 'Etiketak bilatu';
 $string['seeallblogs'] = 'Ikusi etiketa hau duten blog-sarrera guztiak: "{$a}"';

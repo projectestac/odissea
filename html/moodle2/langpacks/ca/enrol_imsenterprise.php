@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Després de desar els paràmetres, potser voldreu';
 $string['allowunenrol'] = 'Permet que les dades IMS <strong>cancel·lin les inscripcions</strong> d\'estudiantat i/o professorat';
-$string['allowunenrol_desc'] = 'Si s\'habilita la inscripció dels cursos s\'esborrarà quan s\'especifiqui a les dades del connector Enterprise.';
+$string['allowunenrol_desc'] = 'Si s\'habilita, la inscripció dels cursos s\'esborrarà quan s\'especifiqui a les dades del connector Enterprise.';
 $string['basicsettings'] = 'Paràmetres bàsics';
 $string['coursesettings'] = 'Opcions de les dades de cursos';
 $string['createnewcategories'] = 'Crea noves categories de cursos (ocultes) si no existeixen a Moodle';
@@ -61,11 +61,11 @@ $string['mailusers'] = 'Notifica als usuaris per correu electrònic';
 $string['messageprovider:imsenterprise_enrolment'] = 'Missatges d\'inscripcions mitjançant IMS Enterprise';
 $string['miscsettings'] = 'Miscel·lània';
 $string['pluginname'] = 'Fitxer IMS Enterprise';
-$string['pluginname_desc'] = 'Aquest mètode comprovarà de forma cíclica en un procés  un fitxer de text formatat en la localització que heu indicat. El fitxer seguirà les especificacions IMS Enterprise i contindrà  els elements XML  persona, grup, i categoria.';
+$string['pluginname_desc'] = 'Aquest mètode comprovarà de forma cíclica en un procés  un fitxer de text formatat en la localització que heu indicat. El fitxer seguirà les especificacions IMS Enterprise i contindrà  els elements XML  persona, grup i categoria.';
 $string['processphoto'] = 'Afegeix la foto de l\'usuari al perfil';
 $string['processphotowarning'] = 'Avís: el processament d\'imatges probablement afegirà una càrrega significativa al vostre servidor. Se us recomana no activar aquesta opció si espereu que es processi un gran nombre d\'estudiants.';
 $string['restricttarget'] = 'Processa les dades només si s\'especifica l\'objectiu següent';
-$string['restricttarget_desc'] = 'Un fitxer de dades IMS Enterprise pot preveure\'s per diferents «objectius» —diferents entorns virtuals d\'aprenentatge, o diferents sistemes dins d\'un centre educatiu/universitat. És possible especificar al fitxer IMS Enterprise que les dades estiguin previstes per un o més sistemes amb nom posant aquest nom en etiquetes <target> contingudes dins de l\'etiqueta <properties>.
+$string['restricttarget_desc'] = 'Un fitxer de dades IMS Enterprise pot preveure\'s per a diferents «objectius» —diferents entorns virtuals d\'aprenentatge, o diferents sistemes dins d\'un centre educatiu/universitat. És possible especificar al fitxer IMS Enterprise que les dades estiguin previstes per un o més sistemes amb nom posant aquest nom en etiquetes <target> contingudes dins de l\'etiqueta <properties>.
 
 En general no heu de preocupar-vos d\'això. Deixeu el paràmetre en blanc i Moodle processarà sempre les dades del fitxer, tant si s\'especifica un <target> com si no. Altrament, poseu dins de l\'etiqueta <target> el nom exacte que s\'extraurà.';
 $string['roles'] = 'Rols';

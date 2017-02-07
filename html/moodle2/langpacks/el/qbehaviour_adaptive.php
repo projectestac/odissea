@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['disregardedwithoutpenalty'] = 'Η υποβολή ήταν άκυρη και έχει αγνοηθεί χωρίς ποινή.';
 $string['pluginname'] = 'Προσαρμοστική κατάσταση';

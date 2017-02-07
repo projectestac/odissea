@@ -336,7 +336,7 @@ $string['gradepointdefault_help'] = 'Aquest paràmetre determina el valor per de
 $string['gradepointdefault_validateerror'] = 'Aquest paràmetre ha de ser un enter entre 1 i la qualificació màxima.';
 $string['gradepointmax'] = 'Qualificació màxima';
 $string['gradepointmax_help'] = 'Aquest paràmetre determina el valor màxim que pot tenir la qualificació d\'una activitat.';
-$string['gradepointmax_validateerror'] = 'Aquest paràmetre cal que sigui en enter entre 1 i 10000.';
+$string['gradepointmax_validateerror'] = 'Aquest paràmetre cal que sigui un enter entre 1 i 10000.';
 $string['gradepreferences'] = 'Preferències de qualificació';
 $string['gradepreferenceshelp'] = 'Ajuda sobre les preferències de qualificació';
 $string['gradepublishing'] = 'Habilita publicació';
@@ -499,7 +499,7 @@ Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qua
 $string['modgradedonotmodify'] = 'No modifiquis les qualificacions existents';
 $string['modgradeerrorbadpoint'] = 'El valor de qualificació no és vàlid. Hauria de ser un enter entre 1 i {$a}';
 $string['modgradeerrorbadscale'] = 'L\'escala seleccionada no és vàlida. Assegureu-vos de seleccionar una escala de les que es mostren més avall.';
-$string['modgrade_help'] = 'Seleccioneu el tipus de qualificació que s\'utilitzarà en aquesta activitat. Si trieu "escala", podreu triar una escala en el menú desplegable. Si utilitzeu la qualificació per "puntuació" podreu introduir el valor màxim de la qualificació per a aquesta activitat.';
+$string['modgrade_help'] = 'Seleccioneu el tipus de qualificació que s\'utilitzarà en aquesta activitat. Si trieu «escala», podreu triar una escala en el menú desplegable. Si utilitzeu la qualificació per «puntuació», podreu introduir el valor màxim de la qualificació per a aquesta activitat.';
 $string['modgrademaxgrade'] = 'Puntuació màxima';
 $string['modgraderescalegrades'] = 'Converteix les qualificacions existents';
 $string['modgraderescalegrades_help'] = 'En canviar la qualificació màxima en un element del llibre de qualificacions cal especificar si això ha de fer canviar o no el percentatge actual de les qualificacions.

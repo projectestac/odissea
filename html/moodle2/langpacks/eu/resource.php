@@ -64,7 +64,7 @@ $string['framesize'] = 'Markoaren altuera';
 $string['legacyfiles'] = 'Ikastaro-fitxategi zaharraren migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
-$string['modifieddate'] = '{$a} aldatu da';
+$string['modifieddate'] = 'Aldatze-data: {$a}';
 $string['modulename'] = 'Fitxategia';
 $string['modulename_help'] = 'Fitxategia baliabideari esker irakasleak fitxategi bat ikastaroko baliabide gisa eskuragarri jar  dezakegu. Posiblea denean fitxategia ikastaroaren interfazearen barruan erakutsiko da; bestela ikasleei fitxategia jaisteko mezu bat agertuko zaie. Fitxategiak fitxategi lagungarriak izan ditzake,  irudiak edo Flash objektuak txertaturik dituzten HTML orriak adibidez.
 
@@ -116,4 +116,4 @@ $string['showtype_help'] = 'Fitxategi-mota erakusten du, \'PDF dokumentua\' adib
 Baliabidean fitxategi bat baino gehiago badaude, fitxategi nagusiarena erakutsiko da.
 
 Sistemak fitxategi-mota ezagutzen ez badu, ez du erakutsiko.';
-$string['uploadeddate'] = '{$a} igo da';
+$string['uploadeddate'] = 'Igoera-data: {$a}';

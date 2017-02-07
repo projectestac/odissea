@@ -31,7 +31,7 @@ $string['allowaccountssameemail_desc'] = 'Se ativar esta opção, o mesmo endere
 $string['alternatelogin'] = 'Se inserir um URL aqui, será utilizado como página de autenticação para este site. A página deverá conter um formulário que tenha a propriedade action definida para <strong>\'{$a}\'</strong> e campos de retorno <strong>username</strong> e <strong>password</strong>.<br />Tenha cuidado para não inserir um URL incorreto porque pode bloqueá-lo a si mesmo de aceder a este site.<br /> Deixe esta definição em branco para utilizar a página de autenticação predefinida do Moodle.';
 $string['alternateloginurl'] = 'Endereço alternativo para autenticação';
 $string['auth_changepasswordhelp'] = 'Ajuda para alterar senha';
-$string['auth_changepasswordhelp_expl'] = 'Mostrar ajuda de perca de senha aos utilizadores que perderam a sua senha {$a}. Será mostrada também ou em vez do <strong>URL para alterar senha</strong> ou a mudança de senha interna do Moodle.';
+$string['auth_changepasswordhelp_expl'] = 'Mostrar ajuda de perda de senha aos utilizadores que perderam a sua senha {$a}. Será mostrada também ou em vez de <strong>URL para alterar senha</strong> ou a mudança de senha interna do Moodle.';
 $string['auth_changepasswordurl'] = 'URL para alterar senha';
 $string['auth_changepasswordurl_expl'] = 'Especifique o URL a enviar aos utilizadores que perderam a sua senha {$a}. Selecione <strong>Não</strong> no campo <strong>Usar página predefinida para alteração de senha</strong>';
 $string['auth_changingemailaddress'] = 'Foi pedida uma alteração do e-mail  {$a->oldemail} para {$a->newemail}. Por questões de segurança, é enviada uma mensagem para o novo e-mail para garantir que este lhe pertence. A alteração de e-mail terá efeito assim que abrir o URL enviado nessa mensagem.';
@@ -76,7 +76,7 @@ $string['createpassword'] = 'Gerar senha e notificar utilizador';
 $string['createpasswordifneeded'] = 'Criar senha, se necessário, e enviar por e-mail';
 $string['emailchangecancel'] = 'Cancelar a mudança de e-mail';
 $string['emailchangepending'] = 'Atualização pendente. Abra a hiperligação que lhe foi enviada para {$a->preference_newemail}.';
-$string['emailnowexists'] = 'O endereço que está a tentar defnir no seu perfil já foi associado à conta de outro utilizador. Assim, o seu pedido foi cancelado, mas pode voltar a tentar com um endereço de e-mail diferente.';
+$string['emailnowexists'] = 'O endereço de e-mail que está a tentar defnir no seu perfil já foi associado à conta de outro utilizador. Assim, o seu pedido foi cancelado, mas pode voltar a tentar com um endereço de e-mail diferente.';
 $string['emailupdate'] = 'Atualização do endereço de e-mail';
 $string['emailupdatemessage'] = 'Caro(a) {$a->fullname},
 

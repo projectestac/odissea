@@ -77,6 +77,7 @@ $string['configurescale'] = 'Skalen konfigurieren';
 $string['coursecompetencies'] = 'Kurskompetenzen';
 $string['coursecompetencyratingsarenotpushedtouserplans'] = 'Kompetenzbewertungen in diesem Kurs beeinflussen keine Lernpläne.';
 $string['coursecompetencyratingsarepushedtouserplans'] = 'Kompetenzbewertungen in diesem Kurs werden sofort in den Lernplänen aktualisiert.';
+$string['coursecompetencyratingsquestion'] = 'Wenn eine Kurskompetenz bewertet wird, verbessert diese Bewertung dann die Kompetenz in den Lernplänen oder wird die Bewertung nur auf den Kurs angewendet?';
 $string['coursesusingthiscompetency'] = 'Mit dieser Kompetenz verlinkte Kurse';
 $string['coveragesummary'] = '{$a->competenciescoveredcount} von {$a->competenciescount} allen Komptenzen sind abgedeckt ( {$a->coveragepercentage} % )';
 $string['createlearningplans'] = 'Lernpläne anlegen';

@@ -80,12 +80,12 @@ $string['aggregationcoefweight_help'] = 'Elementuaren pisua kategoriaren agregaz
 $string['aggregationcoefweight_link'] = 'kalifikazioa/agregazioa';
 $string['aggregation_help'] = 'Agregazioak zehazten du kategoria bateko kalifikazioak nola lotzen diren, adibidez
 
-* Kalifikazioen batez bestekoa - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
-* Kalifikazioen mediana - Erdiko kalifikazioa kalifikazioak tamainaren arabera sailkatzen direnean
+* Kalifikazioen media - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
+* Kalifikazioen mediana - Tarteko kalifikazioa kalifikazioak tamainaren arabera sailkatzen direnean
 * Kalifikazio baxuena
 * Kalifikazio altuena
 * Kalifikazioen moda - Sarrien agertzen den kalifikazioa
-* Naturala - Kalifikazio balore guztien batuketa pisuaren arabera eskalatuta';
+* Kalifikazioen batuketa - Kalifikazio balore guztien batuketa, eskala bidezko kalifikazioak alde batera utzita.';
 $string['aggregationhintdropped'] = '(Kokatua)';
 $string['aggregationhintexcluded'] = '(Baztertua)';
 $string['aggregationhintextra'] = '(Aparteko kreditua)';

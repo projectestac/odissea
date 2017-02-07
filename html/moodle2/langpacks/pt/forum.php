@@ -400,6 +400,7 @@ $string['postbymailsuccess_html'] = 'O seu tópico de fórum <a href="{$a->discu
 $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver mensagem no seu contexto';
 $string['postmailinfo'] = 'Esta é uma cópia de uma mensagem enviada para {$a}.
+
 Para submeter uma resposta, clique em:';
 $string['postmailinfolink'] = 'Esta é uma cópia de uma mensagem publicada na disciplina {$a->coursename}.
 

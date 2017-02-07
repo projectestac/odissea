@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments'] = 'Συχνά χρησιμοποιούμενα σχόλια';
+$string['regradeoption1'] = 'Σημείωση για αναβαθμολόγηση';

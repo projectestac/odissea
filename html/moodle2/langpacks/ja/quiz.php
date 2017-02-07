@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accessnoticesheader'] = 'あなたはこの小テストをプレビューすることができます。しかし、これが本当の受験の場合、あなたは次の理由でブロックされます:';
 $string['action'] = '操作';
-$string['activityoverview'] = 'あなたには期限の到来した小テストがあります。';
+$string['activityoverview'] = 'あなたには期限のある小テストがあります。';
 $string['adaptive'] = 'アダプティブモード';
 $string['adaptive_help'] = 'この設定を有効にした場合、小テストを受験している最中でも複数回解答することができます。例えば解答が間違っている場合、学生はすぐに解答しなおすことが許されます。しかし、「ペナルティを適用する」設定に基づき、通常間違った解答ごとに評点からペナルティが引かれます。';
 $string['add'] = '追加';

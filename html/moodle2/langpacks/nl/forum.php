@@ -261,9 +261,9 @@ $string['forumtype'] = 'Soort forum';
 $string['forumtype_help'] = 'Er zijn 5 forumtypes
 
 * Eén eenvoudige discussie - Eén enkel discussie-onderwerp waarop iedereen kan antwoorden (kan niet gebruikt worden met gescheiden groepen)
-* Iedereen post één discussie - Elke leerling kan juist één nieuw discussieonderwerp posten, waar iedereen da, kan op antwoorden
+* Iedereen voegt één discussie toe - Elke leerling kan juist één nieuw discussieonderwerp posten, waarop iedereen dan kan antwoorden
 * Vraag- en antwoordforum - Leerlingen moeten eerst hun bericht posten voor ze de berichten van anderen kunnen zien
-* Standaardforum getoond in een blog-stijl format - een open forum waar iedereen een nieuwe discussie kan starten en waar de onderwerpen getoond worden op één pagina met \'Discussieer over dit onderwerp\' -links
+* Standaardforum getoond in blog-stijl - een open forum waar iedereen een nieuwe discussie kan starten en waar de onderwerpen getoond worden op één pagina met \'Discussieer over dit onderwerp\' -links
 * Standaardforum voor algemeen gebruik - Een open forum waar iedereen op elk moment een nieuwe discussie kan starten';
 $string['forum:viewallratings'] = 'Bekijk de ruwe gegevens van de beoordelingen.';
 $string['forum:viewanyrating'] = 'Bekijk alle totaalbeoordelingen';

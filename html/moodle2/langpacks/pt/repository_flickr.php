@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['apikey'] = 'Chave da API';
 $string['callbackurl'] = 'URL de callback';
 $string['callbackurltext'] = '<ol><li>Consulte a página <a href="http://www.flickr.com/services/api/keys/">Flickr API Keys</a> novamente.</li><li>Certifique-se de que configurou o URL de callback para esta chave Flickr como <strong>{$a}</strong></li></ol>';
-$string['callbackwarning'] = '<ol><li>Obtenha <a href="http://www.flickr.com/services/api/keys/">chave senha para a API</a> do Flickr para este site Moodle.</li><li>Insira a informação obtida aqui, depois clique no botão "Gravar" e de seguida em "Configurações" para voltar a esta página. O Moodle gerará um URL de callback.</li><li>Altere a sua <a href="http://www.flickr.com/services/api/keys/">chave Flickr</a> novamente e configure o URL de callback.</li></ol>';
+$string['callbackwarning'] = '<ol><li>Obtenha a <a href="http://www.flickr.com/services/api/keys/">chave senha para a API</a> do Flickr para este site Moodle.</li><li>Insira a informação obtida aqui, depois clique no botão "Gravar" e de seguida em "Configurações" para voltar a esta página. O Moodle gerará um URL de callback.</li><li>Altere novamente a sua <a href="http://www.flickr.com/services/api/keys/">chave Flickr</a> e configure o URL de callback.</li></ol>';
 $string['configplugin'] = 'Configurar repositório "Flickr"';
 $string['emailaddress'] = 'Endereço de e-mail';
 $string['flickr:view'] = 'Ver repositório Flickr';

@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Ações';
 $string['activities'] = 'Atividades';
-$string['addcohorts'] = 'Adicionar grupos globais';
-$string['addcohortstosync'] = 'Adicionar grupos globais para sincronizar';
+$string['addcohorts'] = 'Adicionar Grupos globais';
+$string['addcohortstosync'] = 'Adicionar Grupos globais para sincronizar';
 $string['addcompetency'] = 'Adicionar competência';
 $string['addcoursecompetencies'] = 'Adicionar competências à disciplina';
 $string['addcrossreferencedcompetency'] = 'Adicionar competência referenciada';
@@ -42,7 +42,7 @@ $string['addtemplatecompetencies'] = 'Adicionar competências ao modelo de plano
 $string['aisrequired'] = '\'{$a}\' é necessário';
 $string['aplanswerecreated'] = 'Foram criados {$a} planos de aprendizagem.';
 $string['aplanswerecreatedmoremayrequiresync'] = 'Foram criados {$a} planos de aprendizagem e serão criados mais no decorrer da próxima sincronização.';
-$string['assigncohorts'] = 'Atribuir grupos globais';
+$string['assigncohorts'] = 'Atribuir Grupos globais';
 $string['averageproficiencyrate'] = 'A percentagem média de proficiência para os planos de aprendizagem concluídos baseados neste modelo é {$a} %';
 $string['cancelreviewrequest'] = 'Cancelar o pedido de revisão';
 $string['cannotaddrules'] = 'A competência não pode ser configurada.';

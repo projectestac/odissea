@@ -42,7 +42,7 @@ $string['notifyenrolled'] = 'Notifica als usuaris inscrits.';
 $string['notifyenroller'] = 'Notifica a l\'usuari responsable de les inscripcions.';
 $string['pluginname'] = 'Fitxer de text net (CSV)';
 $string['pluginname_desc'] = 'Aquest mètode comprovarà de forma periòdica i processarà un fitxer de text en la localització que heu especificat.
-El fitxer és un fitxer de text separades per comes que assumeix que teniu sis camps per línia:
+El fitxer és un fitxer de text separat per comes que assumeix que teniu sis camps per línia:
 <pre class="informationbox">
 * operació, rol, ID(usuari), ID(curs) [, data d\'inici , data caducitat]
  on:

@@ -38,7 +38,7 @@ $string['check_defaultuserrole_details'] = '<p>As capacidades do papel predefini
 <p>O único papel retrocompatível (usado em versões anteriores do Moodle) que pode ser usado com o papel de utilizador predefinido é <strong>Utilizador autenticado</strong>. A permissão para ver disciplinas não deve ser concedida.</p>';
 $string['check_defaultuserrole_error'] = 'O papel "{$a}", a atribuir automaticamente a todos os utilizadores autenticados, não está configurado corretamente!';
 $string['check_defaultuserrole_name'] = 'Papel a atribuir a todos os utilizadores autenticados';
-$string['check_defaultuserrole_notset'] = 'Não foi definido nenhum parpel para ser atribuído automaticamente a todos os utilizadores autenticados';
+$string['check_defaultuserrole_notset'] = 'Não foi definido nenhum papel para ser atribuído automaticamente a todos os utilizadores autenticados';
 $string['check_defaultuserrole_ok'] = 'O papel a atribuir automaticamente a todos os utilizadores autenticados está configurado corretamente.';
 $string['check_displayerrors_details'] = '<p>A ativação da configuração <strong>display_errors</strong> do PHP não é recomendada para sites em produção porque as mensagens de erro apresentadas podem revelar informações que ponham em causa a segurança do servidor. Esta configuração é definida no ficheiro <strong>php.ini</strong>.</p>';
 $string['check_displayerrors_error'] = 'A configuração <strong>display_errors</strong> do PHP não deve estar ativa.';

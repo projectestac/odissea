@@ -353,6 +353,6 @@ $string['workshop:viewauthorpublished'] = 'Autor/innen von veröffentlichten Bei
 $string['workshop:viewpublishedsubmissions'] = 'Veröffentlichte Einreichungen betrachten';
 $string['workshop:viewreviewernames'] = 'Beurteilernamen anzeigen';
 $string['yourassessment'] = 'Ihre Beurteilung';
-$string['yourassessmentfor'] = 'Ihre Bebeurteilung für {$a}';
+$string['yourassessmentfor'] = 'Ihre Beurteilung für {$a}';
 $string['yourgrades'] = 'Ihre Bewertungen';
 $string['yoursubmission'] = 'Ihre Einreichung';

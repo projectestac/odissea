@@ -37,6 +37,7 @@ $string['excludenone'] = 'Ez utzi kanpoan kalifikaziorik';
 $string['feedbackfor'] = 'Feedbacka {$a}-(r)entzat';
 $string['filtergrades'] = 'Erakutsi {$a}-(r)en kalifikazioak';
 $string['gradeitem'] = 'Kalifikazio-elementua: {$a}';
+$string['gradeuser'] = 'Kalifikatu erabiltzailea: {$a}';
 $string['override'] = 'Baliogabetu';
 $string['pluginname'] = 'Ikuspegi sinplea';
 $string['save'] = 'Gorde';

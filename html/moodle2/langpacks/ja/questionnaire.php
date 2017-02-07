@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = '活動';
-$string['activityoverview'] = 'あなたにアンケートがあります';
+$string['activityoverview'] = 'あなたには期限のあるアンケートがあります。';
 $string['additionalinfo'] = '補足情報';
 $string['additionalinfo_help'] = 'このアンケートの最初のページの冒頭に表示されるテキストです。（たとえば，内容説明や背景・経緯などのように）';
 $string['addnewquestion'] = '質問 {$a} を追加する';

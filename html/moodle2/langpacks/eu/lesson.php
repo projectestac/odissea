@@ -246,7 +246,7 @@ $string['lessonopens'] = 'Ikasgaia ireki da';
 $string['lessonpagelinkingbroken'] = 'Ez da lehenengo orririk aurkitu. Seguru aski ikasgaiaren orriarekiko lotura hautsita dago. Administratzailearekin harremanetan jarri, mesedez.';
 $string['lessonstats'] = 'Ikasgaiaren estatistikak';
 $string['lesson:viewreports'] = 'Ikusi ikasgaiaren txostenak';
-$string['linkedmedia'] = 'Estekatutako medioak';
+$string['linkedmedia'] = 'Estekatutako media';
 $string['loginfail'] = 'Sarrerak huts egin du. Berriz saiatu, mesedez...';
 $string['lowscore'] = 'Puntuazio baxua';
 $string['lowtime'] = 'Denbora baxua';
@@ -263,7 +263,7 @@ $string['maximumnumberofattempts'] = 'Gehienezko saiakera-kopurua';
 $string['maximumnumberofattempts_help'] = 'Ezarpen honek zehazten du galdera bakoitzeko gehienezko saiakera-kopurua. Hainbat aldiz oker erantzunda gehienezko hori gainditzen denean, ikasgaiko hurrengo orria erakutsiko da.';
 $string['maximumnumberofattemptsreached'] = 'Gehienezko saiakera-kopurura iritsi zara. Hurrengo orrira jauzi';
 $string['mediaclose'] = 'Erakutsi ixteko botoia';
-$string['mediafile'] = 'Estekatutako medioak';
+$string['mediafile'] = 'Estekatutako media';
 $string['mediafilepopup'] = 'Klik egin hemen ikusteko ';
 $string['mediaheight'] = 'Popup leihoaren altuera';
 $string['mediawidth'] = 'Popup leihoaren zabalera';
@@ -331,7 +331,7 @@ Balorea zero ez eta beste bat bada, orri-kopuru hori erakutsiko da.
 Orri/Txartel kopuru hori erakutsita ikasgaiaren amaiera etorriko da
 eta ikasleak lortutako kalifikazioa erakutsiko da. Emandako balorea ikasgaiaren orri-kopurua baino altuagoa bada, orri guztiak erakutsiko dira.';
 $string['numberofpagesviewed'] = 'Erantzundako galdera-kopurua: {$a}';
-$string['numberofpagesviewednotice'] = 'Erantzundako galdera-kopurua: {$a->nquestions} (Gutxienez, {$a->minquestions} erantzun beharko zenituzke)';
+$string['numberofpagesviewednotice'] = 'Erantzundako galdera-kopurua: {$a->nquestions}; (Gutxienez, {$a->minquestions} erantzun beharko zenituzke).';
 $string['numerical'] = 'Zenbakizkoa';
 $string['ongoing'] = 'Erakutsi metatutako puntuazioa';
 $string['ongoingcustom'] = 'Ikasgai hau gehienez {$a->score} punturekin balioesten da. Zuk {$a->score} puntu lortu duzu oraingoz posible ziren {$a->currenthigh} puntutatik.';

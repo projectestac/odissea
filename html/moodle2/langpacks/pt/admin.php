@@ -149,7 +149,7 @@ $string['configallowguestmymoodle'] = 'Se ativar esta opção, os visitantes pod
 $string['configallowobjectembed'] = 'Como medida de segurança o Moodle não permite na sua configuração base que os utilizadores normais possam inserir objetos multimédia (como conteúdos Flash) em textos utilizando tags EMBED e OBJECT no HTML (embora tal possa ser feito com segurança utilizando o filtro "mediaplugins"). Esta configuração deve ser ativada caso se pretenda permitir que os utilizadores possam inserir este tipo de conteúdo.';
 $string['configallowoverride'] = 'Permitir que os utilizadores com os papéis à esquerda possam redefinir alguns dos papéis das colunas.';
 $string['configallowoverride2'] = 'Selecionar que papéis podem ser redefenidos por cada papel na coluna da esquerda. <br />Note que estas definições apenas se aplicam a utilizadores que têm as capacidades moodle/role:override ou moodle/role:safeoverride.';
-$string['configallowswitch'] = 'Selecionar quais os papéis que um utilizador pode mudar para, baseado nos papéis que já tenham. Além de uma entrada nesta tabela, o utilizador deve ter também a moodle/role:switchroles capacidade de poder trocar.<br />Note que só é possível assumir os papéis que tenham a permissão moodle/course:view e que não tenham a permissão moodle/site:doanything. Por esta razão, algumas das colunas desta tabela estão desativadas.';
+$string['configallowswitch'] = 'Selecione os papéis que um utilizador pode mudar para, baseado nos papéis que já tenha. Além de uma entrada nesta tabela, o utilizador deve ter também a capacidade moodle/role:switchroles para poder trocar.<br />Note que só é possível assumir os papéis que tenham a permissão moodle/course:view e que não tenham a permissão moodle/site:doanything. Por esta razão, algumas das colunas desta tabela estão desativadas.';
 $string['configallowthemechangeonurl'] = 'Se estiver ativado, o tema pode ser mudado adicionando o elemento \'theme={themename}\' a qualquer URL.';
 $string['configallowuserblockhiding'] = 'Pretende permitir aos utilizadores ocultar/mostrar os blocos laterais em todo o site? Esta funcionalidade usa Javascript e cookies para memorizar o estado de cada bloco, e apenas afeta o modo de visualização do utilizador.';
 $string['configallowuserswitchrolestheycantassign'] = 'Por predefinição, é necessário ter a capacidade moodle/role:assign para os utilizadores poderem assumir outros papéis. Ativar esta opção, remove essa restrição, fazendo com que os papéis disponíveis na lista pendente "Assumir o papel de..." sejam determinados pelas configurações no separador "Permitir atribuição de papéis". Recomenda-se que as definições em "Permitir atribuição de papéis" não permitam aos utilizadores assumir um papel com mais capacidades do que o seu papel atual.';
@@ -249,7 +249,7 @@ $string['confighiddenuserfields'] = 'Selecione quais os campos de informação d
 $string['configidnumber'] = 'Esta opção especifica se: (a) Não é pedido aos utilizadores um número de ID, (b) É pedido um número de ID aos utilizadores mas este pode ser deixado em branco, ou (c) É pedido um número de ID aos utilizadores e este não pode ficar em branco. Se for fornecido, o número de ID do utilizador será mostrado no seu perfil.';
 $string['configintro'] = 'Nesta página pode configurar as variáveis relacionadas com o correto funcionamento do Moodle no seu servidor. Não se preocupe muito com esta página - em geral, os valores por predefinição funcionam bem e poderá sempre voltar a esta página e mudar as configurações.';
 $string['configintroadmin'] = 'Nesta página deve configurar a sua conta de Administrador principal a qual terá um controlo absoluto de todo o site. Não se esqueça de indicar um nome de utilizador e senha seguros, bem como um endereço e-mail válido. Posteriormente poderá criar mais contas de Administrador.';
-$string['configintrosite'] = 'Nesta página pode configurar a página principal e o nome do seu site. Poderá voltar a esta página e alterar as configurações utilizando o menu de administração do site.';
+$string['configintrosite'] = 'Nesta página pode configurar a página principal e o nome do seu site. Poderá voltar a esta página e alterar as configurações utilizando o menu de Administração do site.';
 $string['configiplookup'] = 'Quando clica num endereço IP (por exemplo, 34.12.222.93), designadamente na página de registos de atividade, é apresentado um mapa com a localização mais provável desse IP. Pode selecionar entre diferentes módulos para este efeito, cada um com as suas vantagens e desvantagens.';
 $string['configkeeptagnamecase'] = 'Ative esta opção para que as palavras-chave do site mantenham a mesma combinação de maiúsculas e minúsculas com que foram introduzidas pelos utilizadores que as criaram.';
 $string['configlang'] = 'Selecione o idioma predefinido a utilizar em todo o site. Os utilizadores poderão selecionar outro idioma no menu de idiomas ou no seu perfil de utilizador.';
@@ -369,7 +369,7 @@ $string['coursecontact'] = 'Contactos das disciplinas';
 $string['coursecontact_desc'] = 'Esta configuração define quem aparece junto da descrição das disciplinas. Os utilizadores que tenham pelo menos um destes papéis nas disciplinas aparecerão junto das descrições das mesmas.';
 $string['courselistshortnames'] = 'Mostrar nomes extensos das disciplinas';
 $string['courselistshortnames_desc'] = 'Se ativar esta opção, o nome curto das disciplinas será exibido junto do nome completo na lista de disciplinas. Se necessário, estes nomes extensos das disciplinas podem ser personalizados através da edição da string \'courseextendednamedisplay\' utilizando a funcionalidade de personalização do pacote linguístico.';
-$string['coursemgmt'] = 'Adicionar/editar disciplinas e categorias';
+$string['coursemgmt'] = 'Gerir disciplinas e categorias';
 $string['courseoverview'] = 'Sumário da disciplina';
 $string['courserequestnotify'] = 'Notificação de pedido de disciplina';
 $string['courserequestnotifyemail'] = 'Utilizador {$a->user} pediu uma nova disciplina em {$a->link}';
@@ -790,7 +790,7 @@ $string['performance'] = 'Desempenho';
 $string['pgcluster'] = 'Cluster PostgreSQL';
 $string['pgclusterdescription'] = 'Parâmetro versão/cluster PostgreSQL para operações através da linha de comandos. Se tiver apenas um PostgreSQL no seu sistema ou não tiver a certeza do que é isto, deixe em branco.';
 $string['phpfloatproblem'] = 'Detetado um problema inesperado na manipulação de PHP números float PHP - {$a}';
-$string['pleaserefreshregistration'] = 'O seu site foi registado em moodle.org. Última atualização de registo {$a}.<br /> A tarefa agendada "registo no Site\' mantém o seu registo atualizado. Também pode atualizar manualmente o seu registo a qualquer momento.';
+$string['pleaserefreshregistration'] = 'O seu site foi registado em moodle.org. Última atualização de registo {$a}.<br /> A tarefa agendada "Registo do Site\' mantém o seu registo atualizado. Também pode, a qualquer momento, atualizar manualmente o seu registo.';
 $string['pleaserefreshregistrationunknown'] = 'O seu site foi registado, mas a data de registo é desconhecida.
 Por favor, atualize o seu registo através do botão "Atualizar registo\' ou assegure-se que a tarefa agendada "registo no Site" se encontra ativa para que o seu registo seja atualizado automaticamente.';
 $string['plugin'] = 'Módulo';
@@ -1125,7 +1125,7 @@ Este aviso também pode ser causado por uma saída incompleta ou por uma operaç
 
 Poderá obter mais informação na documentação sobre atualizações em <a href="{$a}">{$a}</a>.';
 $string['upgradestart'] = 'Atualizar agora a base de dados do Moodle';
-$string['upgradesure'] = 'Os seus ficheiros Moodle foram alterados e está prestes a fazer a atualização do seu servidor para esta versão:<br /><br /><strong>{$a}</strong> <br /><br />Assim que efetuar esta operação não será possível voltar atrás. <br /><br />Note que este processo pode demorar algum tempo.<br /><br />Tem a certeza de que pretende  atualizar este servidor para a nova versão?';
+$string['upgradesure'] = 'Os seus ficheiros Moodle foram alterados e está prestes a fazer a atualização do seu servidor para esta versão:<br /><br /><strong>{$a}</strong> <br /><br />Assim que efetuar esta operação não será possível voltar atrás. <br /><br />Note que este processo pode demorar algum tempo.<br /><br />Tem a certeza de que pretende  atualizar o seu servidor para a nova versão?';
 $string['upgradetimedout'] = 'Expirou o tempo para atualização. Por favor, reinicie o processo.';
 $string['upgradingdata'] = 'A atualizar os dados';
 $string['upgradinglogs'] = 'A atualizar os registos de atividade';

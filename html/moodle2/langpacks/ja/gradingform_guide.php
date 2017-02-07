@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcomment'] = 'よく使うコメントを追加する';
+$string['addcomment'] = 'よく使われるコメントを追加する';
 $string['addcriterion'] = 'クライテリアを追加する';
 $string['alwaysshowdefinition'] = 'ガイド定義を学生に表示する';
 $string['backtoediting'] = '編集に戻る';
@@ -33,7 +33,7 @@ $string['clicktocopy'] = 'このテキストをクライテリアフィードバ
 $string['clicktoedit'] = '編集するにはクリックしてください。';
 $string['clicktoeditname'] = 'クライテリア名を編集するにはクリックしてください。';
 $string['comment'] = 'コメント';
-$string['comments'] = 'よく使うコメント';
+$string['comments'] = 'よく使われるコメント';
 $string['commentsdelete'] = 'コメントを削除する';
 $string['commentsempty'] = 'コメントを編集するにはクリックしてください。';
 $string['commentsmovedown'] = '下へ';
@@ -69,7 +69,7 @@ $string['guideoptions'] = '評定ガイドオプション';
 $string['guidestatus'] = '現在の評定ガイドステータス';
 $string['hidemarkerdesc'] = '評定者クライテリア説明を隠す';
 $string['hidestudentdesc'] = '学生クライテリア説明を隠す';
-$string['insertcomment'] = 'よく使うコメントを追加する';
+$string['insertcomment'] = 'よく使われるコメントを追加する';
 $string['maxscore'] = '最大評点';
 $string['name'] = '名称';
 $string['needregrademessage'] = 'この学生が評定された後、評定ガイド定義が変更されています。あなたが評定ガイドを確認して評点を更新するまで、学生はこの評定ガイドを閲覧することができません。';

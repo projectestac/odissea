@@ -45,15 +45,15 @@ $string['certainty1'] = 'C=1 (Indecís: <67% )';
 $string['certainty-1'] = 'Ni idea';
 $string['certainty2'] = 'C=2 (Mitjana: > 67%)';
 $string['certainty3'] = 'C=3 (Força segur: > 80%)';
-$string['certainty_help'] = 'Per qualificar basant-se en la certesa cal que indiqueu el grau de confiança que teniu en la vostra resposta. Els nivells disponibles són:
+$string['certainty_help'] = 'L\'avaluació basada en la certesa requereix que indiqueu el grau de confiança que teniu en la vostra resposta. Els nivells disponibles són:
 
 Nivell de Certesa         | C = 1 (Indecís)  | C = 2 (Mig)   | C = 3 (Força segur)
 --------------------------| ---------------- | ------------- | -------------------
-Puntuació si és correcte  |        1         |       2       |       3
-Puntuació si errònia      |        0         |      -2       |      -6
-Probabilitat correcta     |       <67%       |     67-80%    |     > 80%
+Puntuació si la resposta és correcta  |        1         |       2       |       3
+Puntuació si és errònia      |        0         |      -2       |      -6
+Probabilitat que sigui correcta     |       <67%       |     67%-80%    |     > 80%
 
-Les millors qualificacions s\'aconsegueixen reconeixent la incertesa. Per exemple, si us sembla que la probabilitat d\'equivocar-se és més alta d\'1/3, s\'ha d\'entrar C = 1 i evitar el risc d\'una qualificació negativa.';
+Les millors qualificacions s\'aconsegueixen reconeixent la incertesa. Per exemple, si us sembla que la probabilitat d\'equivocar-se és més alta d\'1/3, s\'ha d\'introduir C = 1, i evitar el risc d\'una qualificació negativa.';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Ni idea';
 $string['certaintyshort2'] = 'C=2';

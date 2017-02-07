@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'A inscrição está desativada ou inativa';
-$string['canntenrolearly'] = 'Ainda não é possível inscrever-se; as inscrições iniciam a {$a}.';
-$string['canntenrollate'] = 'Não é possível inscrever mais utilizadores, pois as inscrições terminaram a {$a}.';
+$string['canntenrolearly'] = 'Ainda não é possível inscrever-se; as inscrições iniciam {$a}.';
+$string['canntenrollate'] = 'Não é possível inscrever mais utilizadores, pois as inscrições terminaram {$a}.';
 $string['cohortnonmemberinfo'] = 'Apenas membros do grupo global \'{$a}\' se podem autoinscrever';
 $string['cohortonly'] = 'Apenas membros do grupo global';
 $string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um grupo global específico. Note que a alteração dessa configuração não tem efeito sobre as inscrições existentes.';

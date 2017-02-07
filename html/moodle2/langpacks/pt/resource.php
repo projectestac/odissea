@@ -111,9 +111,9 @@ $string['showdate_desc'] = 'Pretende exibir a data de carregamento/data de modif
 $string['showdate_help'] = 'Exibir a data de carregamento/data de modificação ao lado das hiperligações para os ficheiros.';
 $string['showsize'] = 'Mostrar tamanho';
 $string['showsize_desc'] = 'Mostrar tamanho do ficheiro na página principal da disciplina?';
-$string['showsize_help'] = 'Mostra o tamanho do ficheiro, como  \'3.1 MB\', junto à hiperligação para o ficheiro.
+$string['showsize_help'] = 'Mostra o tamanho do ficheiro, por exemplo \'3.1 MB\', junto à hiperligação para o ficheiro.
 
-Se existirem mais que um ficheiro no recurso, é exibido o tamanho total dos ficheiros.';
+Se existir mais do que um ficheiro no recurso, é exibido o tamanho total dos ficheiros.';
 $string['showtype'] = 'Mostrar tipo';
 $string['showtype_desc'] = 'Mostrar o tipo do ficheiro (ex. \'Word\') na página principal da disciplina?';
 $string['showtype_help'] = 'Mostra a extensão do ficheiro, como \'Word\', junto à hiperligação para o ficheiro.

@@ -31,6 +31,7 @@ $string['executiontime'] = 'Egikaritze-denbora';
 $string['export'] = 'Esportatu';
 $string['import'] = 'Inportatu';
 $string['importok'] = '"{$a}" fitxategia ondo inportatu da';
+$string['importprefix'] = 'Inportatu aurrizkia';
 $string['memory'] = 'Erabilitako memoria';
 $string['pluginname'] = 'Profilen araberako exekuzioak';
 $string['summaryof'] = '{$a}(r)en laburpena';

@@ -3,6 +3,13 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 17.02.13
+---------------------------------------------------------------------------------------
+- mod/jclic: Changed default report to detailed
+- local/alexandriaimported: Reviewed some Catalan string
+- Updated LangPacks
+
+
 Changes 17.01.16
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.1.4 (Trello #1455)

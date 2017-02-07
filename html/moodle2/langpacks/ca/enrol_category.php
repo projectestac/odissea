@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['category:config'] = 'Configura les instàncies d\'inscripció de categories';
 $string['category:synchronised'] = 'Assignació de rols sincronitzada amb la inscripció del curs.';
 $string['pluginname'] = 'Inscripcions per categoria';
-$string['pluginname_desc'] = 'El connector d\'inscripcions per categoria és una solució antiga per les inscripcions a nivell de categoria de cursos mitjançant l\'assignació de rols. En lloc seu es recomana utilitzar la sincronització de cohorts.';
+$string['pluginname_desc'] = 'El connector d\'inscripcions per categoria és una solució antiga per a les inscripcions a nivell de categoria de cursos mitjançant l\'assignació de rols. En lloc seu es recomana utilitzar la sincronització de cohorts.';
