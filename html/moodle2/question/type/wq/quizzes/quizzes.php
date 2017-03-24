@@ -8,6 +8,8 @@ if (!class_exists('com_wiris_system_CallWrapper')) {
 }
 com_wiris_system_CallWrapper::getInstance()->init(dirname(__FILE__));
 require_once dirname(__FILE__).'/lib/com/wiris/quizzes/api/QuizzesBuilder.class.php';
+require_once dirname(__FILE__).'/lib/com/wiris/quizzes/api/QuizzesConstants.class.php';
+require_once dirname(__FILE__).'/lib/com/wiris/quizzes/api/ui/QuizzesUIConstants.class.php';
 require_once dirname(__FILE__).'/lib/com/wiris/quizzes/wrap/QuizzesBuilderWrap.class.php';
 
 ?>

@@ -18,6 +18,9 @@ class com_wiris_quizzes_api_QuizzesBuilder {
 	public function getQuizzesService() {
 		return null;
 	}
+	public function newFeedbackRequest($html, $question, $instance) {
+		return null;
+	}
 	public function newEvalMultipleAnswersRequest($correctAnswer, $studentAnswer, $question, $instance) {
 		return null;
 	}

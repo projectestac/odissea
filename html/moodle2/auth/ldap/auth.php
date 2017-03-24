@@ -718,7 +718,7 @@ class auth_plugin_ldap extends auth_plugin_base {
             array_push($contexts, $this->config->create_context);
         }
 
-        $ldap_pagedresults = ldap_paged_results_supported($this->config->ldap_version);
+        $ldap_pagedresults = ldap_paged_results_supported($this->config->ldap_version, $ldapconnection);
         $ldap_cookie = '';
         foreach ($contexts as $context) {
             $context = trim($context);
@@ -1563,7 +1563,7 @@ class auth_plugin_ldap extends auth_plugin_base {
         }
 
         $ldap_cookie = '';
-        $ldap_pagedresults = ldap_paged_results_supported($this->config->ldap_version);
+        $ldap_pagedresults = ldap_paged_results_supported($this->config->ldap_version, $ldapconnection);
         foreach ($contexts as $context) {
             $context = trim($context);
             if (empty($context)) {

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['calendar_upcoming:addinstance'] = 'Προσθήκη νέου μπλοκ επικείμενα γεγονότα';
+$string['calendar_upcoming:myaddinstance'] = 'Προσθήκη νέου μπλοκ επικείμενα γεγονότα στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Επικείμενα γεγονότα';

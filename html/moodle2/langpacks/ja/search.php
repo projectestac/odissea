@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['advancedsearch'] = '検索オプション';
+$string['advancedsearch'] = '高度な検索';
 $string['all'] = 'すべて';
 $string['allareas'] = 'すべてのエリア';
 $string['allcourses'] = 'すべてのコース';
@@ -51,7 +51,7 @@ $string['documents'] = 'ドキュメント';
 $string['documentsfor'] = 'ドキュメント';
 $string['documentsindatabase'] = 'データベースのドキュメント';
 $string['documentsinindex'] = 'インデックスのドキュメント';
-$string['duration'] = '持続時間';
+$string['duration'] = '継続時間';
 $string['emptydatabaseerror'] = 'データベーステーブルが存在していないか、インデックスレコードを含んでいません。';
 $string['enginenotfound'] = 'エンジン {$a} が見つかりませんでした。';
 $string['enginenotinstalled'] = '{$a} がインストールされていません。';

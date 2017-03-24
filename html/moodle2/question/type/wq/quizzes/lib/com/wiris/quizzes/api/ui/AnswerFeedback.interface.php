@@ -5,5 +5,6 @@ interface com_wiris_quizzes_api_ui_AnswerFeedback extends com_wiris_quizzes_api_
 	function showFieldDecorationFeedback($visible);
 	function showAssertionsFeedback($visible);
 	function showCorrectAnswerFeedback($visible);
+	function removeEmbedded($component);
 	function setEmbedded($component);
 }

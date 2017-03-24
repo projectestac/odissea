@@ -24,9 +24,14 @@
 ;quizzes.hand.url = "http://www.wiris.net/demo/hand"
 
 ;
-; URL to connect to WIRIS quizzes service.
+; URL where to connect to WIRIS quizzes service.
 
 ;quizzes.service.url = "http://www.wiris.net/demo/quizzes"
+
+;
+; URL where to get the JNLP file for WIRIS CAS app.
+
+;quizzes.wirislauncher.url = "http://stateful.wiris.net/demo/wiris"
 
 ;
 ; URL to the WIRIS quizzes proxy service. It is used to call remote services
@@ -85,3 +90,13 @@
 ; Enable WIRIS hand (handwriter recognition) as input field type.
 
 ;quizzes.hand.enabled = "true"
+
+;
+; Log correct answers for WIRIS hand training.
+;
+;quizzes.hand.logtraces = "false"
+
+;
+; WIRIS graph URL.
+;
+;quizzes.graph.url = ""

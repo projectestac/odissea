@@ -104,6 +104,7 @@ $string['csvimport_help'] = '<p align="center"><strong>Εισαγωγή από �
 
 <p>Προσοχή: ίσως να μην υποστηρίζονται όλοι οι σχετικοί τύποι δεδομένων στις στήλες.</p>';
 $string['csvwithselecteddelimiter'] = '<acronym title="Τιμές διαχωρισμένες με κόμμα">CSV</acronym> κείμενο με επιλεγμένο διαχωριστικό:';
+$string['data:addinstance'] = 'Προσθήκη νέας βάσης δεδομένων';
 $string['data:approve'] = 'Έγκριση μη-εγκεκριμένων καταχωρήσεων';
 $string['data:comment'] = 'Καταγραφή σχολίων';
 $string['data:exportallentries'] = 'Εξαγωγή όλων των καταχωρήσεων στη βάση';

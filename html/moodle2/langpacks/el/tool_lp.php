@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activities'] = 'Δραστηριότητες';
 $string['competencyoutcome_complete'] = 'σημείωση ως ολοκληρωμένο';
+$string['competencyoutcome_none'] = 'Κανένα';
+$string['uponcoursemodulecompletion'] = 'Με την ολοκλήρωση δραστηριότητας:';

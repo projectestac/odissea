@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Ανατροφοδότηση';
+$string['feedback:addinstance'] = 'Προσθήκη νέου μπλοκ ανατροφοδότηση';
 $string['pluginname'] = 'Ανατροφοδότηση';

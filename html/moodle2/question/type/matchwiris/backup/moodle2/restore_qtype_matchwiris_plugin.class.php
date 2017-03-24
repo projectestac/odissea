@@ -40,7 +40,7 @@ class restore_qtype_matchwiris_plugin extends restore_qtype_match_plugin {
 
         $paths = array();
 
-        // Add own qtype stuff
+        // Add own qtype stuff.
         $elename = 'matchoptions';
         // We used get_recommended_name() so this works.
         $elepath = $this->get_pathfor('/matchoptions');
@@ -54,42 +54,41 @@ class restore_qtype_matchwiris_plugin extends restore_qtype_match_plugin {
         $elename = 'qtype_wq_matchwiris';
         $elepath = '/question_categories/question_category/questions/question/plugin_qtype_matchwiris_question/question_xml';
         $paths[] = new restore_path_element($elename, $elepath);
-        
-        return $paths; // And we return the interesting paths
+
+        return $paths; // And we return the interesting paths.
     }
-    
+
     public function process_qtype_wq_matchwiris($data) {
         global $DB;
-        
+
         $data = (object)$data;
         $data->xml = $this->decode_html_entities($data->xml);
         $oldid = $data->id;
 
-        // Detect if the question is created or mapped
+        // Detect if the question is created or mapped.
         $oldquestionid   = $this->get_old_parentid('question');
         $newquestionid   = $this->get_new_parentid('question');
-        $questioncreated = $this->get_mappingid('question_created', $oldquestionid) ? true : false;        
-        
+        $questioncreated = $this->get_mappingid('question_created', $oldquestionid) ? true : false;
 
-        // If the question has been created by restore, we need to fill 
-        // qtype_wq tables too
+        // If the question has been created by restore, we need to fill
+        // qtype_wq tables too.
         if ($questioncreated) {
-            // Adjust some columns
+            // Adjust some columns.
             $data->question = $newquestionid;
-            // Insert record
+            // Insert record.
             $newitemid = $DB->insert_record('qtype_wq', $data);
-            // Create mapping
+            // Create mapping.
             $this->set_mapping('qtype_wq', $oldid, $newitemid);
-        }   
-    }      
-    
-    function decode_html_entities($xml) {
+        }
+    }
+
+    protected function decode_html_entities($xml) {
         $htmlentitiestable = get_html_translation_table(HTML_ENTITIES, ENT_QUOTES, 'UTF-8');
         $xmlentitiestable = get_html_translation_table(HTML_SPECIALCHARS , ENT_COMPAT, 'UTF-8');
         $entitiestable = array_diff($htmlentitiestable, $xmlentitiestable);
         $decodetable = array_flip($entitiestable);
         $xml = str_replace(array_keys($decodetable), array_values($decodetable), $xml);
         return $xml;
-    }    
-    
+    }
+
 }

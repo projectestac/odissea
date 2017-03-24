@@ -92,3 +92,4 @@ $string['storerequiresattention'] = 'Zure arreta behar du.';
 $string['stores'] = 'Biltegiak';
 $string['supports'] = 'Euskarriak';
 $string['testperformance'] = 'Probatu errendimendua';
+$string['unsupportedmode'] = 'Onartzen ez den modua';

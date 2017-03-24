@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = '変数を選択する ...';
 $string['clicktoopen'] = 'リソース開くには {$a}  リンクをクリックしてください:';
-$string['configdisplayoptions'] = '利用可能にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
+$string['configdisplayoptions'] = '利用可にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
 $string['configframesize'] = 'フレーム内にウェブページやアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
 $string['configrolesinparams'] = 'ローカライズされたロール名を利用可能なパラメータ変数リストに含みたい場合、有効にしてください。';
 $string['configsecretphrase'] = 'このシークレットフレーズはサーバにパラメータとして送信するための暗号コード値の生成に使用されます。暗号コードはcurrent_users IPアドレスとシークレットワードを結びつけてmd5により生成されます。例) code = md5(IP.secretphrase)。IPアドレスを変更できるため、またしばしば異なるコンピュータで共有できるため、これは信頼できることではない点に留意してください。';

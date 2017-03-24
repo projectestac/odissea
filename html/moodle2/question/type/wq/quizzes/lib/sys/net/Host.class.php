@@ -3,6 +3,7 @@
 class sys_net_Host {
 	public function __construct($name) {
 		if(!php_Boot::$skip_constructor) {
+		$this->hostName = $name;
 		if(_hx_deref(new EReg("^(\\d{1,3}\\.){3}\\d{1,3}\$", ""))->match($name)) {
 			$this->_ip = $name;
 		} else {
@@ -22,6 +23,7 @@ class sys_net_Host {
 		return $this->_ip;
 	}
 	public $ip;
+	public $hostName;
 	public $_ip;
 	public function __call($m, $a) {
 		if(isset($this->$m) && is_callable($this->$m))

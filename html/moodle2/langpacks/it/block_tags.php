@@ -63,7 +63,7 @@ $string['moretags'] = 'Visualizza e filtra altri tag';
 $string['moretitle'] = 'Ulteriori tag';
 $string['morewelcome'] = 'Benvenuti nella nuvola "Altri tag". I tag sono link creati dagli utenti. I tag consentono di categorizzare e collegare elementi come i tuoi corsi preferiti, i tuoi blog o il tuo profilo usando i termini che ritieni più adatti.
 Tramite il link \'Visualizza:\' è possibile visualizzare diversi gruppi di tag e tramite il link \'Ordinamento:\' è possibile riordinarli.';
-$string['mycoursetags'] = 'I miei tag del corso';
+$string['mycoursetags'] = 'Tag personali del corso';
 $string['mytags'] = 'Tag personali:';
 $string['notagsyet'] = 'Non ci sono tag';
 $string['please'] = 'Per favore';

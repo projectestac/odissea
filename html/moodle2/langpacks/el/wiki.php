@@ -49,6 +49,7 @@ $string['updatedwikipages'] = 'Ανανεωμένες σελίδες Wiki';
 $string['uploadname'] = 'Όνομα αρχείου';
 $string['version'] = 'Έκδοση';
 $string['view'] = 'Προβολή';
+$string['wiki:addinstance'] = 'Προσθήκη νέου wiki';
 $string['wiki:createpage'] = 'Δημιουργία νέων σελίδων wiki';
 $string['wiki:editcomment'] = 'Προσθήκη σχολίων στις σελίδες';
 $string['wiki:editpage'] = 'Αποθήκευση σελίδων wiki';

@@ -27,12 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Dropbox-en API giltza';
 $string['cachelimit'] = 'Cache-muga';
+$string['cachelimit_info'] = 'Sartu hemen zerbitzariaren cachean gordetako Dropbox-eko alias/lasterbideen fitxategien gehienezko tamaina. Cachean gordetako fitxategiak erabiliko dira jatorrizkoa eskuragarri ez dagoenean. Hutsik utziz gero edo zero jarrita fitxategi guztian gordeko dira cachean euren tamaina edozein izanda ere.';
 $string['configplugin'] = 'Dropbox-en ezarpenak';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Ikusi Dropbox karpeta';
 $string['instruction'] = 'API giltza eta sekretua lortu ahal dituzu <a href="http://www.dropbox.com/developers/apps">Dropbox-en developers</a>-etik. Bertan zure giltza zehazterakoan "Full Dropbox" aukeratu "Access Level" gisa.';
 $string['logoutdesc'] = '(Amaitu saioa Dropbox erabiltzen amaitzen duzunean)';
 $string['notitle'] = 'Izenbururik gabe';
+$string['oauth2redirecturi'] = 'OAuth 2 Redirect URI';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = 'Gogoratu';
 $string['secret'] = 'Dropbox-en sekretua';

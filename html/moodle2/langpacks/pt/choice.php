@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Adicionar mais opções de resposta';
-$string['allowmultiple'] = 'Permitir mais do que uma opção a ser selecionada';
+$string['allowmultiple'] = 'Permitir selecionar mais do que uma opção';
 $string['allowupdate'] = 'Permitir mudar a resposta';
 $string['answered'] = 'Respondido';
 $string['atleastoneoption'] = 'Tem de inserir pelo menos uma opção de resposta';
@@ -45,7 +45,7 @@ $string['choiceopen'] = 'Início';
 $string['choiceoptions'] = 'Opções de resposta';
 $string['choiceoptions_help'] = 'Especifique as opções de resposta que os participantes podem escolher.
 
-Pode preencher o número de opções que pretender, sendo que as que deixar em branco não serão apresentadas. Se necessitar de mais de 8 opções, clique no botão "Adicionar 3 campos ao formulário"';
+Pode preencher o número de opções que pretender, sendo que as que deixar em branco não serão apresentadas. Se necessitar mais do que 8 opções, clique no botão "Adicionar 3 campo(s) ao formulário".';
 $string['choice:readresponses'] = 'Ver respostas';
 $string['choicesaved'] = 'A sua resposta foi guardada';
 $string['choicetext'] = 'Questão da sondagem';
@@ -54,7 +54,7 @@ $string['closebeforeopen'] = 'Especificou uma data de fecho anterior à data de 
 $string['completionsubmit'] = 'Mostrar como concluída após o aluno submeter a sua resposta';
 $string['description'] = 'Descrição';
 $string['displayhorizontal'] = 'Disposição horizontal';
-$string['displaymode'] = 'Modo de exibição para as opções';
+$string['displaymode'] = 'Modo de exibição das opções';
 $string['displayvertical'] = 'Disposição vertical';
 $string['eventanswercreated'] = 'Opção selecionada';
 $string['eventanswerdeleted'] = 'Resposta à Sondagem eliminada';

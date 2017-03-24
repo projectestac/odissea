@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apierror'] = '{$a}';
 $string['configplugin'] = 'Configuración del tipo de repositorio YouTube';
 $string['pluginname'] = 'Videos YouTube';
 $string['search'] = 'Buscar videos';

@@ -25,5 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['criteria'] = 'Kριτήρια';
 $string['dimensiondescription'] = 'Περιγραφή';
+$string['layoutgrid'] = 'Πλέγμα';
+$string['layoutlist'] = 'Λίστα';
+$string['levels'] = 'Επίπεδα';
+$string['mustchooseone'] = 'Θα πρέπει να επιλέξετε ένα από αυτά τα στοιχεία';
 $string['pluginname'] = 'Ρουμπρίκες αξιολόγησης';

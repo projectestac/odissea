@@ -38,3 +38,4 @@ $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης
 $string['pluginnamesummary'] = 'Επιτρέπει απαντήσεις που αποτελούνται από μερικές προτάσεις ή παραγράφους. Η απάντηση έπειτα θα πρέπει να βαθμολογηθεί χειροκίνητα.';
 $string['responsefieldlines'] = 'Μέγεθος πλαισίου καταχώρησης';
 $string['responseformat'] = 'Μορφή απάντησης';
+$string['responseoptions'] = 'Επιλογές Απόκρισης';

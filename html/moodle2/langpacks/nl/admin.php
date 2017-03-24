@@ -356,7 +356,7 @@ $string['configsupportemail'] = 'Dit e-mailadres zal gepubliceerd worden aan sit
 $string['configsupportname'] = 'Dit is de naam van een persoon of dienst die de algemene hulp aanbiedt.';
 $string['configsupportpage'] = 'Deze URL zal gepubliceerd worden aan sitegebruikers als de plaats waar naartoe  te gaan als ze algemene hulp nodig hebben (bijvoorbeeld wanneer nieuwe gebruikers hun eigen accounts aanmaken). Als dit veld leeggelaten wordt, dan wordt er geen link aangeboden.';
 $string['configtempdatafoldercleanup'] = 'Verwijder tijdelijke bestanden van de data-map die ouder zijn dan de geselecteerde tijd.';
-$string['configthemedesignermode'] = 'Normaal gezien worden alle thema-afbeeldingen en stijlbestanden lange tijd gecached in browsers en op de server voor de performantie. Als je een thema aan het ontwerpen bent of je ontwikkeld code, dan wil je deze instelling waarschijnlijk inschakelen, zodat je geen gecachede versie te zien krijgt. Let op: dit zal je site trager maken voor alle gebruikers! Het alternatief is dat je de thema cache manueel leegmaakt vanop de thema selectie pagina.';
+$string['configthemedesignermode'] = 'Normaal gezien worden alle thema-afbeeldingen en stijlbestanden voor de performantie lange tijd gecached in browsers en op de server. Als je een thema aan het ontwerpen bent of je ontwikkelt code, dan wil je deze instelling waarschijnlijk inschakelen, zodat je geen gecachede versie te zien krijgt. Let op: dit zal je site trager maken voor alle gebruikers! Het alternatief is dat je de thema cache handmatig leegmaakt vanop de thema selectie pagina.';
 $string['configthemelist'] = 'Laat dit leeg om gelijk welk geldig thema te gebruiken. Geef hier een door komma\'s gescheiden lijst met thema-namen als je het thema-menu wil inkorten. Bijvoorbeeld: standard,orangewhite. Let op: geen spaties!';
 $string['configtimezone'] = 'Hier kun je de standaardtijdzone instellen - elke gebruiker kan deze instelling voor zichzelf wijzigen in zijn profiel. Cron-taken en andere serverinstellingen zullen deze tijdzone gebruiken. Je moet deze instelling aanpassen als de foutmelding "ongeldige tijdzone" wordt getoond.';
 $string['configuseblogassociations'] = 'Moeten gebruikers hun blogs kunnen organiseren door blogitems te associëren met cursussen en cursusmodules?';
@@ -408,7 +408,7 @@ $string['customcheck'] = 'Andere controles';
 $string['custommenu'] = 'Aangepast menu';
 $string['custommenuitems'] = 'Aangepast menu items';
 $string['customusermenuitems'] = 'Gebruikersmenu-items';
-$string['datarootsecurityerror'] = '<p><strong>BEVEILIGINGSWAARSCHUWING!</strong></p><p>Je dataroot map staat op de verkeerde plaats en is bereikbaar vanop het internet. Dit betekent dat al je bestanden voor iedereen beschikbaar zijn en dat sommige bestanden kunnen gebruikt worden door een cracker om toegang tot je site te krijgen als beheerder!</p>
+$string['datarootsecurityerror'] = '<p><strong>BEVEILIGINGSWAARSCHUWING!</strong></p><p>Je dataroot map staat op de verkeerde plaats en is bereikbaar vanaf het internet. Dit betekent dat al je bestanden voor iedereen beschikbaar zijn en dat sommige bestanden gebruikt kunnen worden door een hacker om toegang tot je site te krijgen als beheerder!</p>
 <p>Je <em>moet</em> de dataroot map ({$a}) verplaatsen naar een andere plaats die buiten je publieke webmap is en de <code>$CFG->dataroot</code>-instelling in je config.php aanpassen.</p>';
 $string['datarootsecuritywarning'] = 'De configuratie van je site zou onveilig kunnen zijn. Zorg er voor dat je dataroot map ({$a}) niet toegankelijk is vanaf het internet.';
 $string['dbsessions'] = 'Gebruik databank voor sessie-informatie';
@@ -600,6 +600,7 @@ $string['iconvrequired'] = 'Het installeren van de ICONV-extentie is vereist.';
 $string['ignore'] = 'Negeer';
 $string['includemoduleuserdata'] = 'Ook gebruikersdata van modules';
 $string['incompatibleblocks'] = 'Niet-compatibele blokken';
+$string['incompleteunicodesupport'] = 'De huidige opzet van MySQL of MariaDB gebruikt \'utf8\'. Deze tekenset ondersteunt geen tekens van vier bytes, waaronder sommige emoji. Gebruik van deze tekens zal leiden tot een foutmelding bij het updaten van een record en informatie die naar de database wordt gezonden, kan verloren gaan. Overweeg de instellingen te wijzigen naar \'utf8mb4\'. Zie de documentatie voor aanvullende informatie.';
 $string['indexdata'] = 'indexeer gegevens';
 $string['installhijacked'] = 'De installatie moet worden voltooid vanaf het oorspronkelijk IP-adres';
 $string['installsessionerror'] = 'Kan geen PHP-sessie initialiseren. Controleer of je browser cookies accepteerd.';
@@ -1084,6 +1085,9 @@ $string['unlockaccount'] = 'Deblokkeer account';
 $string['unoconvwarning'] = 'De versie van unoconv die je hebt geïnstalleerd, wordt niet ondersteund. De Opdrachtenmodule in Moodle vereist versie 0.7 of hoger.';
 $string['unsettheme'] = 'Zet thema uit';
 $string['unsupported'] = 'Niet ondersteund';
+$string['unsupporteddbfileformat'] = 'Je database heeft tabellen die Antelope als format gebruiken. Volledige ondersteuning van UTF-8 in MySQL en MariaDB vereisen het Barracuda bestandsformat. Gelieve de tabellen naar het Barracuda bestandsformat te converteren. Zie de documentatie <a href="https://docs.moodle.org/en/cli">Beheer via de command line</a> voor aanvullende informatie over een tool voor het converteren van innoDB tabellen naar Barracuda.';
+$string['unsupporteddbfilepertable'] = 'Voor volledige ondersteuning van UTF-8 vereisen zowel MySQL als MariaDB dat je de MySQL-instelling \'innodb_file_per_table\' op \'ON\' instelt. Zie de documentatie voor aanvullende informatie.';
+$string['unsupporteddblargeprefix'] = 'Voor volledige ondersteuning van UTF-8 vereisen zowel MySQL als MariaDB dat je de MySQL-instelling \'innodb_large_prefix\' op \'ON\' instelt. Zie de documentatie voor aanvullende informatie.';
 $string['unsupporteddbstorageengine'] = 'De database storage engine wordt niet meer ondersteund.';
 $string['unsupporteddbtablerowformat'] = 'Je databanktabellen gebruiken Antilope als bestandsformaat. Je wordt aangeraden om ze te converteren naar Barracuda bestandsformaat. Je vindt documentatie op <a href="https://docs.moodle.org/en/cli">Administration via command line</a> met details over een tool om InnoDB-tabellen om te zetten naar Barracuda.';
 $string['unsupportedphpversion7'] = 'PHP versie 7 is niet ondersteund.';

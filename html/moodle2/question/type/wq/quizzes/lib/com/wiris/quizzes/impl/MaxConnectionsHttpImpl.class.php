@@ -15,7 +15,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		}
 	}}
 	public function getConnectionSlot() {
-		$p = new com_wiris_quizzes_impl_FilePersistentVariables();
+		$p = new com_wiris_quizzes_impl_SharedVariables();
 		$p->lockVariable(com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$DATA_KEY_MAX_CONNECTIONS);
 		$data = $p->getVariable(com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$DATA_KEY_MAX_CONNECTIONS);
 		$connections = null;
@@ -65,7 +65,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		return $this->slot !== -1;
 	}
 	public function releaseConnectionSlot() {
-		$p = new com_wiris_quizzes_impl_FilePersistentVariables();
+		$p = new com_wiris_quizzes_impl_SharedVariables();
 		$p->lockVariable(com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$DATA_KEY_MAX_CONNECTIONS);
 		$data = $p->getVariable(com_wiris_quizzes_impl_MaxConnectionsHttpImpl::$DATA_KEY_MAX_CONNECTIONS);
 		$connections = haxe_Unserializer::run($data);

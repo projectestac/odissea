@@ -80,13 +80,32 @@ $string['backpackavailability_help'] = 'あなたからバッジを取得した�
 
 証明に必要な唯一のURLは「[your-site-url]/badges/assertion.php」です。このファイルに外部からアクセスできるようあなたのファイアーウォールを変更できる場合、バッジ証明を実現することができます。';
 $string['backpackbadges'] = 'あなたには {$a->totalcollections} 件のコレクションから表示される {$a->totalbadges} 個のバッジがあります。<a href="mybackpack.php">バックパック設定を変更してください</a>。';
+$string['backpackcannotsendverification'] = '確認メールを送信できません。';
 $string['backpackconnection'] = 'バックパック接続';
-$string['backpackconnection_help'] = 'このページにおいて、あなたは外部バックパックプロバイダとの接続を設定することができます。バックパックに接続することで、あなたはこのサイト内に外部バッジを表示すること、そしてここで取得したバッジをバックパックに送信することができます。
+$string['backpackconnectioncancelattempt'] = '異なるメールアドレスを使って接続する';
+$string['backpackconnectionconnect'] = 'バックパックに接続する';
+$string['backpackconnection_help'] = 'このページにおいてあなたは外部バックパックプロバイダとの接続を設定することができます。バックパックに接続することであなたはこのサイト内に外部バッジを表示すること、そしてここで取得したバッジをバックパックに送信することができます。
 
-現在、<a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>のみサポートされています。このページのバックパック接続を設定する前、あなたはバックパックサービスにサインアップする必要があります。';
+現在、<a href="http://backpack.openbadges.org">Mozillaオープンバッジバックパック</a>のみサポートされています。あなたはこのページのバックパック接続を設定する前にバックパックサービスにサインアップする必要があります。';
+$string['backpackconnectionresendemail'] = '確認メールを再送する';
+$string['backpackconnectionunexpectedresult'] = 'バックパックの接続に問題が生じました。再度お試しください。<br /><br />問題が続く場合、あなたのシステム管理者にご連絡ください。';
 $string['backpackdetails'] = 'バックパック設定';
 $string['backpackemail'] = 'メールアドレス';
 $string['backpackemail_help'] = 'あなたのバックパックに関するメールアドレスです。あなたが接続している間、このサイトで取得したすべてのバッジはこのメールアドレスに関連付けられます。';
+$string['backpackemailverificationpending'] = '確認保留';
+$string['backpackemailverifyemailbody'] = 'あなたのオープンバッジバックパックへの新しい接続が「 {$a->sitename} 」からあなたのメールアドレスを使ってリクエストされました。
+
+あなたのバックパックへの接続を確認および有効化するには下記リンクをクリックしてください。
+
+{$a->link}
+
+ほとんどのメールプログラムではこのリンクはあなたがクリックできる青いリンクとして表示されます。動作しない場合、アドレスをあなたのウェブブラウザ上部にあるアドレス行にコピー＆ペーストしてください。
+
+分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください';
+$string['backpackemailverifyemailsubject'] = '{$a}: Mozillaオープンバッジバックパックメール確認';
+$string['backpackemailverifypending'] = '<strong>{$a}</strong>に確認メールが送信されました。メール内のリンクをクリックしてあなたのバックパック接続を有効化してください。';
+$string['backpackemailverifysuccess'] = 'あなたのメールを確認してくださいましてありがとうございます。あなたのバックパックに接続しました。';
+$string['backpackemailverifytokenmismatch'] = 'あなたがクリックしたリンクのトークンは保存されているトークンと合致しません。あなたが受信した最新のメール内リンクをクリックしていることを確認してください。';
 $string['backpackimport'] = 'バッジインポート設定';
 $string['backpackimport_help'] = 'バックパック接続が正常に確立された後、あなたのバックパックからのバッジをバッジページおよびプロファイルページに表示することができます。
 

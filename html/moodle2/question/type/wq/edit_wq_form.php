@@ -1,19 +1,34 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 defined('MOODLE_INTERNAL') || die();
 require_once($CFG->dirroot . '/question/type/edit_question_form.php');
 
 class qtype_wq_edit_form extends question_edit_form {
     protected $base;
-    
-    
-    function __construct($base, $submiturl, $question, $category, $contexts, $formeditable){
-        //ToDo: remove all but $base function parameters.
-        
-        // We don't call the parent constructor because we will use the form in 
-        // $base. So we don't have to build another one. Just reference some 
+
+
+    public function __construct($base, $submiturl, $question, $category, $contexts, $formeditable) {
+        // TODO: remove all but $base function parameters.
+
+        // We don't call the parent constructor because we will use the form in
+        // $base. So we don't have to build another one. Just reference some
         // public properties that may be used and call the definition_inner from
         // this class to add WIRIS quizzes elements.
-        
+
         $this->base = $base;
         $this->question = &$this->base->question;
         $this->contexts = &$this->base->contexts;
@@ -27,42 +42,39 @@ class qtype_wq_edit_form extends question_edit_form {
         $this->_form = &$this->base->_form;
         $this->_customdata = &$this->base->_customdata;
         $this->_definition_finalized = &$this->base->_definition_finalized;
-        
+
         $this->definition_inner($this->_form);
     }
 
     protected function definition_inner($mform) {
         global $DB, $PAGE;
-        //We don't call base's definition_inner because it has been arleady 
-        //called during its construction.
-        
-        //$PAGE->requires->js('/question/type/wq/quizzes/service.php?name=quizzes.js&service=resource');
-        
+        // We don't call base's definition_inner because it has been arleady
+        // called during its construction.
+
         $mform->addElement('hidden', 'wirisquestion', '', array('class' => 'wirisquestion'));
         $mform->setType('wirisquestion', PARAM_RAW);
         $mform->addElement('hidden', 'wirislang', current_language(), array('class' => 'wirislang'));
         $mform->setType('wirislang', PARAM_TEXT);
-        
-        //ToDo: DELETE THIS IF WHEN ALL QUESTIONS ARE WQ!
-        if(isset($this->question->wirisquestion)){
+
+        // TODO: Delete this if when all questions are wq!
+        if (isset($this->question->wirisquestion)) {
             $program = $this->question->wirisquestion->serialize();
-        }
-        else {
-            if (!empty($this->question->id)){
+        } else {
+            if (!empty($this->question->id)) {
                 $wiris = $DB->get_record('qtype_wq', array('question' => $this->question->id));
             }
-            if (!empty($wiris)){
-                //existing question
+            if (!empty($wiris)) {
+                // Existing question.
                 $program = $wiris->xml;
-            }else{
-                //New question
+            } else {
+                // New question.
                 $program = '<question/>';
             }
         }
-        
-        $default_values = array();
-        $default_values['wirisquestion'] = $program;
-        $mform->setDefaults($default_values);
+
+        $defaultvalues = array();
+        $defaultvalues['wirisquestion'] = $program;
+        $mform->setDefaults($defaultvalues);
     }
     public function set_data($question) {
         $this->base->set_data($question);
@@ -70,7 +82,7 @@ class qtype_wq_edit_form extends question_edit_form {
     public function validation($data, $files) {
         return $this->base->validation($data, $files);
     }
-    public function data_preprocessing($question){
+    public function data_preprocessing($question) {
         return $this->base->data_preprocessing($question);
     }
     public function qtype() {

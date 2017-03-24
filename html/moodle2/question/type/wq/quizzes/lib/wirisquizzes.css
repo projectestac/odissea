@@ -1,12 +1,10 @@
-html, body, form.wirisform {
-    height: 100%;
+body.wirisquizzespopup {
+    overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
     margin: 0;
     padding: 0;
-    position: relative;
-    width: 100%;
-}
-body.wirisquizzespopup{
-    overflow: hidden;
 }
 div.wiristabs div.wiristabsleftcolumn {
     position: absolute;
@@ -91,7 +89,8 @@ div.wiristabs div.wiriscasbottomwrapper {
 }
 div.wiriseditorwrapper {
     height: 200px;
-    width: 450px;
+    width: auto;
+    max-width: 450px; 
     margin-bottom: 5px;
 }
 div.wirispopupsimplecontent.wiriseditorwrapper{
@@ -157,6 +156,7 @@ span.wirisloading {
   margin:0;
   padding:0;
   margin-left: 5px;
+  vertical-align: middle;
 }
 div.wiristabs fieldset.wirisfieldset {
     border: solid 1px;
@@ -164,6 +164,9 @@ div.wiristabs fieldset.wirisfieldset {
     border-color:  #999;
     margin-bottom: 10px;
 	padding-bottom: 5px;
+}
+div.wiristabs fieldset.wiristestcorrectanswerfieldset {
+	padding: 16px 10px;
 }
 div.wiristabs div.wirisfieldsetwrapper{
 	/*Base position for help button.*/
@@ -331,7 +334,7 @@ div.wiristabs span.wiristestgradetext.wirispartiallycorrect {
     color: #c99a08;
 }
 div.wiristabs div.wiristestbuttons {
-    padding-bottom: 5px;
+    margin: 6px 0 10px 0;
 }
 div.wiriscasinitialcontent {
     bottom: 50px;
@@ -622,7 +625,8 @@ img.wirisembeddedauthoringfield {
     border-radius: 3px;
     font-size: 11pt;
 	vertical-align: middle;
-    margin: 0px;
+    margin: 4px 0;
+	box-sizing: content-box;
 }
 input.wirisembeddedtextinput{
 	border: solid 1px #bbb;
@@ -631,7 +635,9 @@ input.wirisembeddedtextinput{
 	font-size: 11pt;
 	vertical-align: middle;
 	height: 16px;
-    width: 100px;
+    /* width: 100px; set dinamically */
+	margin: 4px 0;
+	box-sizing: content-box;
 }
 
 /*
@@ -655,6 +661,7 @@ span.wirisembeddedstudioinput {
 input.wirisembeddedstudioinput,
 img.wirisembeddedstudioinput {
 	padding: 3px 29px 3px 3px;
+	margin: 0;
 }
 span.wirisembeddedstudioinput {
 	height: 18px;
@@ -665,12 +672,16 @@ span.wirisembeddedstudioinput {
 input.wirisembeddedmathinput,
 input.wirisembeddedauthoringfield {
 	height: 16px;
-    width: 100px;
-	background-position: 105px 3px;
+    /*
+	Set dinamically.
+	width: 100px;
+	background-position: 105px 3px;*/
 }
+/*
+Moodle hack no longer needed.
 .formulation input.wirisembeddedmathinput[type="text"] {
-width: 100px;
-}
+	width: 100px;
+}*/
 input.wirisembeddedstudioinput {
 	height: 24px;
 }
@@ -681,8 +692,15 @@ input.wirisembeddedstudioinput {
     border: solid 1px #ccc;
     border-radius: 3px;
     line-height: 15pt;
-    margin: 10px 0px 10px 0px;
-    width: 428px;
+    margin: 10px 0px;
+    width: auto;
+	max-width: 428px;
+}
+/*override assertion feedback design in studio*/
+div.wiristabs .wirisassertionfeedback {
+	border: solid 1px #999;
+    border-radius: 8px;
+	width: auto;
 }
 
 .wirisembeddedfeedback {
@@ -717,6 +735,11 @@ div.wirisanswerfielddecoration {
 }
 div.wirisanswerfielddecoration.wirisembeddeddecoration {
 	display: inline-block;
+}
+div.wirisanswerfielddecoration.wiriseditordecoration {
+	width: auto;
+	max-width: 450px; /*editor wrapper's max-width*/
+	box-sizing: content-box;
 }
 
 div.wirisanswerfielddecoration.wiriscorrect {
@@ -755,11 +778,56 @@ table.wiristable {
 table.wiristable tr:nth-child(2n+1) {
 	background-color: rgba(0,0,0,0.03);
 }
-table.wiristable td {
+table.wiristable td, th {
     border: solid 1px #ccc;
 	border-color: rgba(0,0,0,0.15);
     padding: 5px;
     text-align: center;
+}
+
+#wirisclicktesttoevaluate {
+	margin-left: 10px;
+}
+
+.wirisfillwithcorrectbutton,
+.wirisrefreshbutton {
+	border: none;
+    height: 24px;
+    width: 24px;
+	opacity: 0.5;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.wirisfillwithcorrectbutton:hover,
+.wirisrefreshbutton:hover {
+	opacity: 0.8;
+}
+
+.wirisfillwithcorrectbutton:active,
+.wirisrefreshbutton:active {
+	opacity: 1;
+}
+
+.wirisfillwithcorrectbutton {
+	background: url("?service=resource&name=uparrow24b.png");
+}
+.wirisrefreshbutton {
+	background: url("?service=resource&name=refresh24b.png");
+}
+.wiriscorrectanswerlabel{
+	border: solid 1px #a3a3a3;
+    background-color: #f8f8f8;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 8px 7px 7px 7px;
+    line-height: 16px;
+    border-radius: 6px;
+	font-size: 14pt;
+}
+.wiriscorrectanswerlabel img.wirismathml {
+	vertical-align: top;
 }
 
 /*Override some styles for studio embedded in html*/

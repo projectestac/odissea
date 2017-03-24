@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Grade user report viewed';
+$string['myself'] = 'Myself';
+$string['otheruser'] = 'User';
 $string['pluginname'] = 'User report';
 $string['tablesummary'] = 'The table is arranged as a list of graded items including categories of graded items. When items are in a category they will be indicated as such.';
 $string['user:view'] = 'View your own grade report';
+$string['viewas'] = 'View report as';

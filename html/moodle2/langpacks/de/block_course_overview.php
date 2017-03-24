@@ -66,5 +66,5 @@ $string['showwelcomearea'] = 'Begrüßung anzeigen';
 $string['showwelcomeareadesc'] = 'Soll Begrüßung über der Kursliste angezeigt werden?';
 $string['view_edit_profile'] = '(Ihr Profil anzeigen und bearbeiten)';
 $string['welcome'] = 'Willkommen {$a}';
-$string['youhavemessages'] = 'Sie haben {$a} ungelesene';
-$string['youhavenomessages'] = 'Keine ungelesenen';
+$string['youhavemessages'] = 'Sie haben {$a} ungelesene ';
+$string['youhavenomessages'] = 'Keine ungelesenen ';

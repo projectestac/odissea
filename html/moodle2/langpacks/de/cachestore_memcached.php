@@ -87,6 +87,8 @@ ipaddress:port
 $string['testservers'] = 'Testserver';
 $string['testservers_desc'] = 'In diesem Feld können eine oder mehrere Verbindungsadressen zu Memcached-Servern angegeben werden. Wenn ein entsprechender Testserver vorhanden ist, kann die Memcached-Performance über die Cache-Seite im Administrationsblock getestet werden.
 Beispielserver: 127.0.0.1:11211';
+$string['upgrade200recommended'] = 'Wir empfehlen Ihnen ein Upgrade Ihrer Memcached PHP Erweiterung auf Version 2.0.0 oder höher.
+Die von Ihnen derzeit verwendete Memcached PHP Erweiterung bietet nicht die Funktionalität, die Moodle nutzt, um ein Sandbox Cache sicherzustellen. Wir empfehlen Ihnen bis zum Upgrade keine weiteren Anwendungen mit denselben Memcached Servern zu konfigurieren, die Moodle nutzt.';
 $string['usecompression'] = 'Komprimierung benutzen';
 $string['usecompression_help'] = '(De-)Aktiviert die Kompression für die Ladelast. Nach der Aktivierung werden Werte, die eine definierte Grenzgröße (derzeit 100 Bytes) übersteigen, beim Speichern komprimiert und beim Aufruf transparent dekomprimiert.';
 $string['useserialiser'] = 'Serialiser verwenden';

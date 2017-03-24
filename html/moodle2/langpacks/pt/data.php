@@ -296,7 +296,7 @@ $string['pagesize'] = 'Registos por página';
 $string['participants'] = 'Utilizadores';
 $string['picture'] = 'Imagem';
 $string['pleaseaddsome'] = 'Crie campos abaixo ou <a href="{$a}">escolha um protótipo</a> para definir a estrutura da base de dados.';
-$string['pluginadministration'] = 'Administração da base de dados';
+$string['pluginadministration'] = 'Administração da Base de dados';
 $string['pluginname'] = 'Base de dados';
 $string['portfolionotfile'] = 'Exportar para portefólio em vez de ficheiro (apenas CSV e Leap2a)';
 $string['presetinfo'] = 'A gravação como protótipo permite a outros utilizadores usar o mesmo nas suas bases de dados.';

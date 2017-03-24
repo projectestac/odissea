@@ -40,6 +40,7 @@ $string['deleteinstanceconfirm'] = 'Πρόκειται να διαγράψετε
 $string['deleteinstancenousersconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής "{$a->name}". Είστε σίγουρος/η ότι θέλετε να συνεχίσετε;';
 $string['durationdays'] = '{$a} ημέρες';
 $string['editenrolment'] = 'Επεξεργασία εγγραφής';
+$string['enrol'] = 'Εγγραφή';
 $string['enrolcohortusers'] = 'Εγγραφή χρηστών';
 $string['enrollednewusers'] = 'Εγγράφηκαν επιτυχώς {$a} νέοι χρήστες';
 $string['enrolledusers'] = 'Εγγεγραμμένοι χρήστες';

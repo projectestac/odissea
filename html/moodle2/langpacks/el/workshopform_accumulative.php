@@ -25,6 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['correct'] = 'Σωστό';
+$string['dimensioncomment'] = 'Σχόλιο';
+$string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
+$string['dimensiongrade'] = 'Βαθμός';
+$string['dimensiongradefor'] = 'Βαθμός για {$a}';
+$string['dimensionmaxgrade'] = 'Ο καλύτερός δυνατός βαθμός / Κλίμακα για χρήση';
+$string['dimensionweight'] = 'Βάρος';
+$string['excellent'] = 'Άριστα';
+$string['good'] = 'Καλά';
 $string['incorrect'] = 'Λάθος';
 $string['pluginname'] = 'Αθροιστική βαθμολόγηση';
+$string['poor'] = 'Φτωχό';
+$string['verypoor'] = 'Πολύ φτωχό';

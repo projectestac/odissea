@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['advancedsearch'] = '検索オプション';
+$string['advancedsearch'] = '高度な検索';
 $string['pluginname'] = 'フォーラムを検索する';
 $string['search_forums:addinstance'] = '新しいフォーラム検索ブロックを追加する';

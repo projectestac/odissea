@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clientid'] = 'ID de cliente';
 $string['configplugin'] = 'Configurar o módulo Google Drive';
 $string['googledocs:view'] = 'Visualizar o repositório Google Drive';
-$string['oauthinfo'] = '<p>Para utilizar este módulo, tem de registar o seu site com o Google, tal como indicado na documentação <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do processo de registo, terá de introduzir o seguinte URL como \'URLs de redirecionamento Autorizados\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um utilizador e senha que podem ser usadas para configurar todos os módulos do Google Docs e do Picasa.</p><p>Note que tem de ativar o serviço \'Drive API\'.</p>';
+$string['oauthinfo'] = '<p>Para utilizar este módulo, tem de registar o seu site com o Google, tal como indicado na documentação <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do processo de registo, terá de introduzir o seguinte URL como \'URLs de redirecionamento Autorizados\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um ID de cliente e uma Chave secreta que podem ser usadas para configurar todos os módulos Google Drive e Picasa.</p><p>Note que tem de ativar o serviço \'Drive API\'.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = 'Senha';
 $string['servicenotenabled'] = 'Acesso não configurado. Verifique se o serviço \'Drive API\'  está ativo.';

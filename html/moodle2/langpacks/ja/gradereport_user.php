@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = '評定ユーザレポートが閲覧されました。';
+$string['myself'] = '私自身';
+$string['otheruser'] = 'ユーザ';
 $string['pluginname'] = 'ユーザレポート';
 $string['tablesummary'] = 'このテーブルは評定項目のカテゴリを含む評定アイテム一覧として作成されています。項目がカテゴリ内にある場合、そのように表示されます。';
 $string['user:view'] = 'あなたの評定レポートを表示する';
+$string['viewas'] = '次のユーザとして表示する';

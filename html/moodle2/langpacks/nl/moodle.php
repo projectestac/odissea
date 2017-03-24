@@ -497,6 +497,7 @@ $string['deletechecktype'] = 'Weet je zeker dat je dit wil verwijderen: {$a->typ
 $string['deletechecktypename'] = 'Weet je zeker dat je dit wil verwijderen: {$a->type} "{$a->name}"';
 $string['deletecheckwarning'] = 'Je staat op het punt deze bestanden te verwijderen';
 $string['deletecomment'] = 'Verwijder deze notitie';
+$string['deletecommentbyon'] = 'Verwijder opmerking gepost door  {$a->user} op {$a->time}';
 $string['deletecompletely'] = 'Verwijder volledig';
 $string['deletecourse'] = 'Verwijder een cursus';
 $string['deletecoursecheck'] = 'Weet je zeker dat je deze cursus en alle gegevens die erin zitten volledig wilt verwijderen?';

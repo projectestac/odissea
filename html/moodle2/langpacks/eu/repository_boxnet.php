@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'API giltza';
 $string['boxnet:view'] = 'Ikusi Box biltegia';
+$string['cannotcreatereference'] = 'Ezin da erreferentzia sortu, ez dituzu Box-en fitxategiak partekatzeko behar diren baimenak.';
 $string['clientid'] = 'Bezeroaren IDa';
 $string['clientsecret'] = 'Bezero sekretua';
 $string['configplugin'] = 'Box-en ezarpenak';
@@ -40,3 +41,4 @@ $string['pluginname_help'] = 'Biltegia Box-en';
 $string['saved'] = 'Box-en datuak gordeta';
 $string['shareurl'] = 'URLa partekatu';
 $string['username'] = 'Box-erako erabiltzaile-izena';
+$string['warninghttps'] = 'Box-ek zure webguneak HTTPS erabiltzea behar du biltegia erabili ahal izateko.';

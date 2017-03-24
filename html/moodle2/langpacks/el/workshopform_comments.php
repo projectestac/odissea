@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['dimensioncomment'] = 'Σχόλιο';
+$string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
 $string['pluginname'] = 'Σχόλια';

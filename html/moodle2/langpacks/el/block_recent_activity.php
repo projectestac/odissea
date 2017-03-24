@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Πρόσφατη δραστηριότητα';
+$string['recent_activity:addinstance'] = 'Προσθήκη νέου μπλοκ πρόσφατη δραστηριότητα';

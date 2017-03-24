@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Annoteer de inzendingen van de leerlingen rechtstreek
 $string['enabled'] = 'Annoteer PDF';
 $string['enabled_help'] = 'Indien ingeschakeld zal de leraar annoteerbare PDF-bestanden kunnen maken tijdens het beoordelen van de opdrachten. Hiermee kan de leraar opmerkingen toevoegen, tekeningen en stempels, rechtstreeks op het werk van de leerling. Het annoteren gebeurt in de browser - er is geen extra software vereist.';
 $string['errorgenerateimage'] = 'Fout bij het genereren van een afbeelding met ghostscript, foutopsporingsinformatie: {$a}';
+$string['errorpdfpage'] = 'Er is een fout opgetreden bij het genereren van deze pagina.';
 $string['filter'] = 'Filter opmerkingen...';
 $string['generatefeedback'] = 'Genereer feedback PDF';
 $string['generatingpdf'] = 'PDF aan het genereren...';

@@ -1,4 +1,19 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 
 /*
  * Class used to store information in the question attempt step data
@@ -17,41 +32,45 @@
  *  - Guardar info en un "step" durant l'avaluació, perquè en aquest moment
  *    l'step és read-only.
  * **/
+
+defined('MOODLE_INTERNAL') || die();
+
 class qtype_wirisstep {
-    public static $MAX_ATTEMPS_SHORTANSWER_WIRIS = 2;
-    
+    const MAX_ATTEMPS_SHORTANSWER_WIRIS = 2;
+
     private $step;
-    
+
     public function __construct() {
         $this->step = null;
     }
-    
+
     public function load($step) {
-        if (!($step instanceof question_attempt_step_read_only) &&
-            !(($step instanceof question_attempt_step_subquestion_adapter) && ($step->realqas instanceof question_attempt_step_read_only) )) {
+        $conditiona = !($step instanceof question_attempt_step_read_only);
+        $conditionb = $step instanceof question_attempt_step_subquestion_adapter;
+        if ($conditiona && !($conditionb && $step->realqas instanceof question_attempt_step_read_only)) {
             $this->step = $step;
-            // It is a regrade or the first attempt
+            // It is a regrade or the first attempt.
             try {
                 $this->reset_attempts();
                 return;
             } catch (moodle_exception $ex) {
-                // We assume it is read only so continue...
+                // We assume it is read only so continue.
                 $this->step = null;
             }
         }
-        $s = var_export($step,true);
+        $s = var_export($step, true);
         if (isset($step->get_id)) {
-            // Moodle 2.3 or superior
+            // Moodle 2.3 or superior.
             $this->step_id = $step->get_id();
         } else {
-            // Moodle 2.2
-            if (preg_match("/'id' *=> *'(.*)'/",$s,$matches)) {
+            // Moodle 2.2.
+            if (preg_match("/'id' *=> *'(.*)'/", $s, $matches)) {
                 $this->step_id = $matches[1];
             } else {
                 $this->step_id = 0;
             }
         }
-        if (preg_match("/'extraprefix' *=> *'(.*)'/",$s,$matches)) {
+        if (preg_match("/'extraprefix' *=> *'(.*)'/", $s, $matches)) {
             $this->extraprefix = $matches[1];
         } else {
             $this->extraprefix = "";
@@ -66,62 +85,63 @@ class qtype_wirisstep {
      * @param type $quizBool whether it is question level or subquestion level
      * @throws dml_exception
      */
-    public function set_var($name, $value, $subquesBool = true) {
-        if ($subquesBool && $this->step!=null) {
-            $this->step->set_qt_var($name,$value);
+    public function set_var($name, $value, $subquesbool = true) {
+        if ($subquesbool && $this->step != null) {
+            $this->step->set_qt_var($name, $value);
             return;
         }
 
-        if (!isset($this->step_id) || $this->step_id==0) {
-            // It doees not exist, do not even try to find in the db
+        if (!isset($this->step_id) || $this->step_id == 0) {
+            // It doees not exist, do not even try to find in the db.
             return null;
         }
 
-        $DB=$this->get_db();
-        
-        $name = $this->get_step_var_internal($name, $subquesBool);
+        $DB = $this->get_db();
 
-        $gc = $DB->get_record('question_attempt_step_data',array('attemptstepid'=>$this->step_id,'name'=>$name),'value');
-        if ($gc==null) {
-            $gc = new Object();
+        $name = $this->get_step_var_internal($name, $subquesbool);
+
+        $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
+        if ($gc == null) {
+            $gc = new stdClass();
             $gc->attemptstepid = $this->step_id;
             $gc->name = $name;
             $gc->value = $value;
-            $DB->insert_record('question_attempt_step_data',$gc);
+            $DB->insert_record('question_attempt_step_data', $gc);
         } else {
-            $DB->set_field('question_attempt_step_data','value',$value,array('attemptstepid'=>$this->step_id,'name'=>$name));
+            $DB->set_field('question_attempt_step_data', 'value',
+                    $value, array('attemptstepid' => $this->step_id, 'name' => $name));
         }
-        
+
     }
     public function get_qt_data() {
-        if ($this->step!=null) {
+        if ($this->step != null) {
             return $this->step->get_qt_data();
         } else {
-            $DB=$this->get_db();
+            $DB = $this->get_db();
         }
     }
     /**
-     * 
+     *
      * @param type $name
-     * @param type $subquesBool whether the variable is from the subquestion or the parent (only cloze).
+     * @param type $subquesbool whether the variable is from the subquestion or the parent (only cloze).
      * @return null
      */
-    public function get_var($name, $subquesBool = true) {
-        if ($subquesBool && $this->step!=null) {
+    public function get_var($name, $subquesbool = true) {
+        if ($subquesbool && $this->step != null) {
             return $this->step->get_qt_var($name);
         }
 
-        if (!isset($this->step_id) || $this->step_id==0) {
-            // It doees not exist, do not even try to find in the db
+        if (!isset($this->step_id) || $this->step_id == 0) {
+            // It doees not exist, do not even try to find in the db.
             return null;
         }
-        
-        $DB=$this->get_db();
-        
-        $name = $this->get_step_var_internal($name, $subquesBool);
 
-        $gc = $DB->get_record('question_attempt_step_data',array('attemptstepid'=>$this->step_id,'name'=>$name),'value');
-        if ($gc==null) {
+        $DB = $this->get_db();
+
+        $name = $this->get_step_var_internal($name, $subquesbool);
+
+        $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
+        if ($gc == null) {
             $r = null;
         } else {
             $r = $gc->value;
@@ -130,10 +150,10 @@ class qtype_wirisstep {
         return $r;
     }
 
-    private function get_step_var_internal($name, $subquesBool) {
-        if ($subquesBool && strlen($this->extraprefix)>0) {
-            // the prefix is needed when it is a subquestion of a cloze 
-            // (multianswer) question type
+    private function get_step_var_internal($name, $subquesbool) {
+        if ($subquesbool && strlen($this->extraprefix) > 0) {
+            // The prefix is needed when it is a subquestion of a cloze
+            // (multianswer) question type.
             if (substr($name, 0, 2) === '!_') {
                 return '-_' . $this->extraprefix . substr($name, 2);
             } else if (substr($name, 0, 1) === '-') {
@@ -147,21 +167,21 @@ class qtype_wirisstep {
             return $name;
         }
     }
-    
+
     private function get_db() {
-        global $wiris_DB;
-        if (!isset($wiris_DB)) {
+        global $wirisdb;
+        if (!isset($wirisdb)) {
             global $CFG;
             // Create a new connection because the default one is inside a transaction
-            // and a rollback is done afterwards
-            if (!$wiris_DB = moodle_database::get_driver_instance($CFG->dbtype, $CFG->dblibrary)) {
+            // and a rollback is done afterwards.
+            if (!$wirisdb = moodle_database::get_driver_instance($CFG->dbtype, $CFG->dblibrary)) {
                 throw new dml_exception('dbdriverproblem', "Unknown driver $CFG->dblibrary/$CFG->dbtype");
             }
-            $wiris_DB->connect($CFG->dbhost, $CFG->dbuser, $CFG->dbpass, $CFG->dbname, $CFG->prefix, $CFG->dboptions);
+            $wirisdb->connect($CFG->dbhost, $CFG->dbuser, $CFG->dbpass, $CFG->dbname, $CFG->prefix, $CFG->dboptions);
         }
-        return $wiris_DB;
+        return $wirisdb;
     }
-    
+
     /**
      * Returns whether the max number of attempts limit is reached
      */
@@ -170,25 +190,25 @@ class qtype_wirisstep {
         if (is_null($c)) {
             return false;
         }
-        return $c>=qtype_wirisstep::$MAX_ATTEMPS_SHORTANSWER_WIRIS;
+        return $c >= self::MAX_ATTEMPS_SHORTANSWER_WIRIS;
     }
-    
+
     /**
      * Increment number of failed attempts
      */
     public function inc_attempts() {
-        $c = $this->get_var('_gc',false);
+        $c = $this->get_var('_gc', false);
         if (is_null($c)) {
             $c = 0;
         }
-        $this->set_var('_gc',$c+1,false);
+        $this->set_var('_gc', $c + 1, false);
     }
 
     /**
      * Set number of failed attempts to zero
      */
     public function reset_attempts() {
-        $this->set_var('_gc',0,false);
+        $this->set_var('_gc', 0, false);
     }
 
     /**
@@ -196,32 +216,30 @@ class qtype_wirisstep {
      * @return boolean
      */
     public function is_error() {
-        $c = $this->get_var('_gc',false); // false to look into the parent
-        if (!is_null($c) && $c>0) {
+        $c = $this->get_var('_gc', false); // False to look into the parent.
+        if (!is_null($c) && $c > 0) {
             return true;
         }
         return false;
     }
-    
+
     /**
      * Returns the number of failed attempts
-     * @return int 
+     * @return int
      */
     public function get_attempts() {
-        $c = $this->get_var('_gc',false);
-        if ($c==null) {
+        $c = $this->get_var('_gc', false);
+        if ($c == null) {
             return 0;
         }
         return $c;
     }
-    
+
     public function is_first_step() {
         // The original $step object is always a quetsion_attempt_stept_read_only
-        // object but in the first one of the steps sequence. In $this->load 
-        // method we save $this->step only if it isn't readonly, so in particular 
+        // object but in the first one of the steps sequence. In $this->load
+        // method we save $this->step only if it isn't readonly, so in particular
         // only if it is the first step.
         return (!is_null($this->step));
     }
 }
-
-?>

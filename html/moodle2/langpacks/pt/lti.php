@@ -313,7 +313,7 @@ juntamente com a chave do consumidor pelo fornecedor de ferramenta.
 Ferramentas que não requerem comunicação segura de Moodle e não fornecem serviços adicionais (tais como relatórios de nota)
 podem não requerer uma senha partilhada.';
 $string['pending'] = 'Pendente';
-$string['pluginadministration'] = 'Administração da ferramenta externa';
+$string['pluginadministration'] = 'Administração da Ferramenta externa';
 $string['pluginname'] = 'Ferramenta externa';
 $string['preferheight'] = 'Altura preferida';
 $string['preferwidget'] = 'Widget de arranque preferido';

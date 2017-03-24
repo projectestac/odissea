@@ -4,11 +4,7 @@ class com_wiris_quizzes_service_PhpServiceProxy {
 	
 	public static function dispatch() {
 		$proxy = new com_wiris_quizzes_service_PhpServiceProxy();
-		if($_SERVER['REQUEST_METHOD'] == 'GET') {
-			$proxy->doGet();
-		}else if($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$proxy->doPost();
-		}
+		$proxy->doPost();
 	}
 	
 	private function getReferer() {
@@ -23,13 +19,9 @@ class com_wiris_quizzes_service_PhpServiceProxy {
 		$conf = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
 		$conf->set(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL, $this->getReferer());
 		
+		$request = new com_wiris_system_service_HttpRequest();
 		$res = new com_wiris_system_service_HttpResponse();
-		
-		$parameters = new Hash();
-		// Standard post parameters.
-		foreach ($_POST as $key => $value) {
-			$parameters->set($key, $this->getParam($key));
-		}
+
 		// Uploaded files.
 		foreach ($_FILES as $key => $file) {
 			if ($file['size'] > 0) {
@@ -44,23 +36,12 @@ class com_wiris_quizzes_service_PhpServiceProxy {
 					}
 					fclose($fh);
 				}
-				$parameters->set($key, $content);
+				$request->setParameter($key, $content);
 			}
 		}
 		
 		$service = new com_wiris_quizzes_service_ServiceRouter();
-		$service->service($parameters, $res);
-	}
-		
-	private function doGet() {
-		$_POST = $_GET;
-		$this->doPost();
-	}
-	
-	private function getParam($name) {
-		//Be comaptible with both magic_quotes on and off.
-		if(!isset($_POST[$name])) return null;
-		return get_magic_quotes_gpc() ? stripslashes($_POST[$name]) : $_POST[$name];
+		$service->service($request, $res);
 	}
 }
 ?>

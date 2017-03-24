@@ -30,6 +30,7 @@ $string['all'] = 'Guztiak';
 $string['clear'] = 'Garbitu';
 $string['component'] = 'Osagaia';
 $string['create'] = 'sortu';
+$string['crud'] = 'Datu-basearen kontsulta-mota';
 $string['delete'] = 'ezabatu';
 $string['details'] = 'Xehetasunak';
 $string['dname'] = 'Izena';

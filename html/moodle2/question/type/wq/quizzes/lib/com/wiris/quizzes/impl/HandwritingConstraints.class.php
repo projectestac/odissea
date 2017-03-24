@@ -7,7 +7,7 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 			com_wiris_quizzes_impl_HandwritingConstraints::$all_symbols = _hx_explode(" ", com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING);
 		}
 		if(com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts === null) {
-			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts = new _hx_array(array(new _hx_array(array("x", "X", "×")), new _hx_array(array(".", ",")), new _hx_array(array("2", "z", "Z")), new _hx_array(array("5", "s", "S", "\$")), new _hx_array(array("1", ",", "|", "'")), new _hx_array(array("i", "j")), new _hx_array(array("y", "4", "Y")), new _hx_array(array("p", "P")), new _hx_array(array("c", "C", "(", "⊂")), new _hx_array(array("0", "o", "O", "°")), new _hx_array(array("Δ", "A")), new _hx_array(array("B", "β")), new _hx_array(array("∃", "3")), new _hx_array(array("9", "q", "g")), new _hx_array(array("9", "a")), new _hx_array(array("v", "V")), new _hx_array(array("r", "σ")), new _hx_array(array("t", "+")), new _hx_array(array("∈", "E", "ε")), new _hx_array(array("n", "h")), new _hx_array(array("k", "K")), new _hx_array(array("u", "U", "∪")), new _hx_array(array("w", "W")), new _hx_array(array("d", "∂")), new _hx_array(array("∂", "a")), new _hx_array(array("∅", "θ")), new _hx_array(array("∩", "n"))));
+			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_conflicts = new _hx_array(array(new _hx_array(array("x", "X", "×", "χ")), new _hx_array(array(".", ",")), new _hx_array(array("2", "z", "Z")), new _hx_array(array("5", "s", "S", "\$")), new _hx_array(array("1", ",", "|", "'")), new _hx_array(array("i", "j", ":", ";")), new _hx_array(array("y", "4", "Y")), new _hx_array(array("p", "P", "ρ")), new _hx_array(array("c", "C", "(", "⊂")), new _hx_array(array("0", "o", "O", "°")), new _hx_array(array("Δ", "A")), new _hx_array(array("B", "β")), new _hx_array(array("∃", "3")), new _hx_array(array("9", "q", "g")), new _hx_array(array("9", "a")), new _hx_array(array("v", "V", "∨", "ν")), new _hx_array(array("r", "σ")), new _hx_array(array("t", "+")), new _hx_array(array("∈", "E", "ε")), new _hx_array(array("n", "h")), new _hx_array(array("k", "K", "κ")), new _hx_array(array("u", "U", "∪")), new _hx_array(array("w", "W", "ω")), new _hx_array(array("d", "∂", "δ")), new _hx_array(array("∂", "a")), new _hx_array(array("∅", "θ", "Θ")), new _hx_array(array("∩", "n", "η")), new _hx_array(array("Λ", "∧", "^")), new _hx_array(array("ψ", "Ψ")), new _hx_array(array("∅", "φ", "Φ")), new _hx_array(array("Π", "π", "∏")), new _hx_array(array("ζ", "ξ")), new _hx_array(array("ζ", "3", "z"))));
 		}
 		if(com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded === null) {
 			com_wiris_quizzes_impl_HandwritingConstraints::$symbol_default_excluded = new _hx_array(array(new _hx_array(array("sin", "cos", "tan", "log"))));
@@ -133,19 +133,27 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 		}
 	}
 	public function addTagContent($s, $tag, $split) {
+		$start = null;
 		$end = 0;
-		$start = 0;
-		while($start !== -1 && $end !== -1 && ($start = _hx_index_of($s, "<" . $tag, $end)) !== -1) {
-			$start = _hx_index_of($s, ">", $start);
-			if($start !== -1 && _hx_char_code_at($s, $start - 1) !== 47) {
-				$start++;
-				$end = _hx_index_of($s, "<", $start);
-				if($end !== -1) {
-					$content = _hx_substr($s, $start, $end - $start);
+		while(($start = _hx_index_of($s, "<" . $tag, $end)) !== -1) {
+			$end = $start + 1 + strlen($tag);
+			$charAfterTag = _hx_char_code_at($s, $end);
+			if($charAfterTag === 32 || $charAfterTag === 62) {
+				$endBeginTag = _hx_index_of($s, ">", $end);
+				if($endBeginTag === -1) {
+					return;
+				}
+				if(_hx_char_code_at($s, $endBeginTag - 1) !== 47) {
+					$beginContent = $endBeginTag + 1;
+					$endContent = _hx_index_of($s, "<", $beginContent);
+					if($endContent === -1) {
+						return;
+					}
+					$content = _hx_substr($s, $beginContent, $endContent - $beginContent);
 					if($split) {
 						$i = 0;
 						while($i < strlen($content)) {
-							$c = com_wiris_quizzes_impl_HandwritingConstraints_0($this, $content, $end, $i, $s, $split, $start, $tag);
+							$c = com_wiris_quizzes_impl_HandwritingConstraints_0($this, $beginContent, $charAfterTag, $content, $end, $endBeginTag, $endContent, $i, $s, $split, $start, $tag);
 							$this->addToken($c);
 							$i += strlen($c);
 							unset($c);
@@ -154,9 +162,12 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 					} else {
 						$this->addToken($content);
 					}
-					unset($content);
+					$end = $endContent + 1;
+					unset($endContent,$content,$beginContent);
 				}
+				unset($endBeginTag);
 			}
+			unset($charAfterTag);
 		}
 	}
 	public function addSymbolsFromMathML($s) {
@@ -272,8 +283,8 @@ class com_wiris_quizzes_impl_HandwritingConstraints {
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HandwritingConstraints'; }
 }
-com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING = "0 1 2 3 4 5 6 7 8 9 a A α b B β c C . , ... : cos cm d D dm Δ ÷ / e E = ≈ " . "∃ f F ∀ g G γ ≥ > h H i I ∈ ∞ ∫ j J k K l L λ ≤ lim log { [ ( < m M μ n " . "N ≠ o O p P φ π ± ′ q Q r R → } ] ) s S σ sin √ ∑ ∏ t T tan θ × u U v V " . "w W x X y Y z Z frac | - ! + ~ ^ ° € \$ £ % ‰ ∂ ∇ ε ∅ ∪ ∩ ⊂ ⊃ ⊆ ⊇ ℙ " . "ℕ ℤ ℚ ℂ ℝ 𝕀 ⇒ #";
-function com_wiris_quizzes_impl_HandwritingConstraints_0(&$�this, &$content, &$end, &$i, &$s, &$split, &$start, &$tag) {
+com_wiris_quizzes_impl_HandwritingConstraints::$ALL_SYMBOLS_STRING = "0 1 2 3 4 5 6 7 8 9 a A α b B β c C . , ; ... : cos cm d D dm δ Δ ÷ / e " . "E ξ = ≈ ∃ f F ∀ g G γ Γ ≥ > h H i I ∈ ∞ ∫ j J k K κ l L λ Λ ≤ lim log " . "{ [ ( < m M μ n N η ≠ o O p P ρ φ Φ π Π ψ Ψ ± ′ q Q r R → } ] ) s S σ Σ " . "sin √ ∑ ∏ t T τ tan θ Θ u U v V ν w W ω Ω x X χ × y Y z Z ζ frac | - ! " . "+ ~ ^ ° € \$ £ % ‰ ∂ ∇ ε ∅ ∪ ∩ ⊂ ⊃ ⊆ ⊇ ℙ ℕ ℤ ℚ ℂ ℝ 𝕀 ⇒ ∧ ∨ #";
+function com_wiris_quizzes_impl_HandwritingConstraints_0(&$�this, &$beginContent, &$charAfterTag, &$content, &$end, &$endBeginTag, &$endContent, &$i, &$s, &$split, &$start, &$tag) {
 	{
 		$s1 = new haxe_Utf8(null);
 		$s1->addChar(haxe_Utf8::charCodeAt(_hx_substr($content, $i, null), 0));

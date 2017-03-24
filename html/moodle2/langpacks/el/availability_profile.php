@@ -30,4 +30,5 @@ $string['op_doesnotcontain'] = 'δεν περιέχει';
 $string['op_endswith'] = 'τελειώνει με';
 $string['op_isempty'] = 'είναι άδειο';
 $string['op_isequalto'] = 'είναι ίσο με';
+$string['op_isnotempty'] = 'δεν είναι κενό';
 $string['op_startswith'] = 'ξεκινάει με';

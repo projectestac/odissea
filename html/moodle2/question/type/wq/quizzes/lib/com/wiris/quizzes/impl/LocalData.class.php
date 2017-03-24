@@ -38,9 +38,9 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $KEY_ITEM_SEPARATOR = "itemSeparator";
 	static $VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE = "true";
 	static $VALUE_OPENANSWER_COMPOUND_ANSWER_FALSE = "false";
-	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR = "inlineEditor";
-	static $VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR = "popupEditor";
-	static $VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT = "textField";
+	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR;
+	static $VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR;
+	static $VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT;
 	static $VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND = "inlineHand";
 	static $VALUE_SHOW_CAS_FALSE = "false";
 	static $VALUE_SHOW_CAS_ADD = "add";
@@ -50,4 +50,7 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $keys;
 	function __toString() { return 'com.wiris.quizzes.impl.LocalData'; }
 }
+com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR = com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_INLINE_EDITOR;
+com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR = com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_POPUP_EDITOR;
+com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT = com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_TEXT;
 com_wiris_quizzes_impl_LocalData::$keys = new _hx_array(array(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS, com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION));

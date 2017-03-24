@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ikastaroko fitxategien biltegirako ezarpenak';
+$string['configplugin'] = 'Heredatutako ikastaroko fitxategien biltegirako ezarpenak';
 $string['coursefiles:view'] = 'Ikastaroko fitxategien biltegi-plugina erabili';
 $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
 $string['notitle'] = 'Izenbururik gabe';
-$string['pluginname'] = 'Ikastaroko fitxategiak';
-$string['pluginname_help'] = 'Ikastaroko fitxategiak';
+$string['pluginname'] = 'Heredatutako ikastaroko fitxategiak';
+$string['pluginname_help'] = 'Heredatutako ikastaroko fitxategiak';
 $string['remember'] = 'Gogoratu';

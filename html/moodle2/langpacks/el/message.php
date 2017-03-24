@@ -53,6 +53,7 @@ $string['emailmessages'] = 'Αποστολή ηλεκτρονικού ταχυδ
 $string['emailtagline'] = 'Αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου είναι αντίγραφο του μηνύματος που σας στάλθηκε στις από  "{$a->sitename}". Πατήστε στο {$a->url} για να απαντήσετε.';
 $string['emptysearchstring'] = 'Πρέπει να ψάξετε για κάτι';
 $string['errorcallingprocessor'] = 'Σφάλμα κατά την κλήση του ορισμένου επεξεργαστή';
+$string['eventmessagesent'] = 'Το μήνυμα σταλθηκε';
 $string['forced'] = 'Επιβάλλεται';
 $string['formorethan'] = 'Για περισσότερο από';
 $string['guestnoeditmessage'] = 'Οι επισκέπτες δεν μπορούν να τροποποιήσουν τις επιλογές μυνημάτων';

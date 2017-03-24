@@ -9,9 +9,8 @@ class com_wiris_quizzes_service_ServiceRouter {
 			com_wiris_quizzes_service_ServiceRouter::$serviceMimes = $this->getMimes();
 		}
 	}}
-	public function sendFile($s, $res) {
+	public function sendFile($data, $res) {
 		try {
-			$data = haxe_io_Bytes::ofData($s->readBinary());
 			$res->setHeader("Content-Length", "" . _hx_string_rec($data->length, ""));
 			$res->writeBinary($data);
 			$res->close();
@@ -37,39 +36,43 @@ class com_wiris_quizzes_service_ServiceRouter {
 		$res->writeString($this->getQuizzesJS($s));
 		$res->close();
 	}
-	public function service($parameters, $res) {
-		if(!$parameters->exists("service")) {
+	public function service($request, $res) {
+		if($request->getParameter("service") === null) {
 			$res->sendError(400, "Missing \"service\" parameter.");
 			return;
 		}
-		$service = $parameters->get("service");
+		$service = $request->getParameter("service");
 		if($service === "resource" || $service === "cache") {
-			if(!$parameters->exists("name")) {
+			if($request->getParameter("name") === null) {
 				$res->sendError(400, "Missing \"name\" parameter.");
 			}
-			$name = $parameters->get("name");
+			$name = $request->getParameter("name");
 			$res->setHeader("Content-Type", com_wiris_quizzes_service_ServiceTools::getContentType($name));
 			$res->setHeader("Cache-Control", "max-age=1800");
-			$s = null;
+			$b = null;
 			if($service === "resource") {
 				$s = com_wiris_system_Storage::newResourceStorage($name);
+				if($name === "quizzes.js") {
+					$this->sendQuizzesJS($s, $res);
+				} else {
+					$b = haxe_io_Bytes::ofData($s->readBinary());
+				}
 			} else {
-				$s = com_wiris_system_Storage::newStorage(com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$CACHE_DIR) . "/" . $name);
+				$cache = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getImagesCache();
+				$b = $cache->get($name);
 			}
-			if($name === "quizzes.js") {
-				$this->sendQuizzesJS($s, $res);
-			} else {
-				$this->sendFile($s, $res);
+			if($b !== null) {
+				$this->sendFile($b, $res);
 			}
 		} else {
 			if($service === "echo") {
-				if(!$parameters->exists("data")) {
+				if($request->getParameter("data") === null) {
 					$res->sendError(400, "Missing \"data\" parameter.");
 					return;
 				}
-				$data = $parameters->get("data");
-				if($parameters->exists("filename")) {
-					$filename = $parameters->get("filename");
+				$data = $request->getParameter("data");
+				if($request->getParameter("filename") !== null) {
+					$filename = $request->getParameter("filename");
 					$res->setHeader("Content-Type", com_wiris_quizzes_service_ServiceTools::getContentType($filename));
 					$res->setHeader("Content-Disposition", "attachment; filename=\"" . $filename . "\"");
 				} else {
@@ -84,7 +87,7 @@ class com_wiris_quizzes_service_ServiceRouter {
 				$mime = null;
 				$http = null;
 				if($service === "url") {
-					$url = $parameters->get("url");
+					$url = $request->getParameter("url");
 					$url = $this->allowedURL($url);
 					if($url === null) {
 						$res->sendError(400, "URL not allowed.");
@@ -98,26 +101,31 @@ class com_wiris_quizzes_service_ServiceRouter {
 						return;
 					} else {
 						$url = com_wiris_quizzes_service_ServiceRouter::$router->get($service);
-						if($parameters->exists("path")) {
-							$url .= "/" . $parameters->get("path");
+						if($request->getParameter("path") !== null) {
+							$url .= "/" . $request->getParameter("path");
 						}
 						$post = true;
-						$rawpostdata = $parameters->exists("rawpostdata") && $parameters->get("rawpostdata") === "true";
+						$rawpostdata = $request->getParameter("rawpostdata") !== null && $request->getParameter("rawpostdata") === "true";
 						$http = new com_wiris_quizzes_impl_MaxConnectionsHttpImpl($url, new com_wiris_quizzes_service_ServiceRouterListener($res));
 						$res->setHeader("Content-Type", com_wiris_quizzes_service_ServiceRouter::$serviceMimes->get($service));
 						if($rawpostdata) {
-							$postdata = $parameters->get("postdata");
+							$postdata = $request->getParameter("postdata");
 							$http->setPostData($postdata);
 							$mime = "text/plain";
 						} else {
 							$mime = "application/x-www-form-urlencoded";
-							$keys = $parameters->keys();
-							while($keys->hasNext()) {
-								$key = $keys->next();
-								if(!($key === "service") && !($key === "rawpostdata") && !($key === "path")) {
-									$http->setParameter($key, $parameters->get($key));
+							$keys = $request->getParameterNames();
+							$i = 0;
+							{
+								$_g1 = 0; $_g = $keys->length;
+								while($_g1 < $_g) {
+									$i1 = $_g1++;
+									$key = $keys[$i1];
+									if(!($key === "service") && !($key === "rawpostdata") && !($key === "path")) {
+										$http->setParameter($key, $request->getParameter($key));
+									}
+									unset($key,$i1);
 								}
-								unset($key);
 							}
 						}
 					}

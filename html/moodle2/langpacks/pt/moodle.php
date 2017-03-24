@@ -492,6 +492,7 @@ $string['deletechecktype'] = 'Tem a certeza que pretende apagar {$a->type}?';
 $string['deletechecktypename'] = 'Tem a certeza que pretende apagar {$a->type} "{$a->name}"?';
 $string['deletecheckwarning'] = 'Está prestes a apagar estes ficheiros';
 $string['deletecomment'] = 'Apagar este comentário';
+$string['deletecommentbyon'] = 'Eliminar o comentário publicado por {$a->user} em {$a->time}';
 $string['deletecompletely'] = 'Apagar completamente';
 $string['deletecourse'] = 'Apagar uma disciplina';
 $string['deletecoursecheck'] = 'Tem a certeza absoluta que pretende apagar completamente esta disciplina e todos os dados contidos nela?';
@@ -524,13 +525,13 @@ $string['dndnotsupported'] = 'Carregar ficheiros através de arrastar e largar n
 $string['dndnotsupported_help'] = 'O seu navegador não suporta o carregamento de ficheiros através de arrastar e largar.<br/> Esta funcionalidade está disponível em todas as versões recentes do Chrome, Firefox e Safari, bem como no Internet Explorer 10 e posterior';
 $string['dndnotsupported_insentence'] = 'Arrastar e largar não suportado';
 $string['dnduploadwithoutcontent'] = 'Este carregamento não tem conteúdo nenhum';
-$string['dndworkingfile'] = 'Para adicionar ficheiros nos tópicos arraste-os do seu computador para o local pretendido';
-$string['dndworkingfilelink'] = 'Para adicionar ficheiros ou hiperligações nos tópicos arraste-os do seu computador para o local pretendido';
-$string['dndworkingfiletext'] = 'Para adicionar ficheiros ou textos nos tópicos arraste-os do seu computador para o local pretendido';
+$string['dndworkingfile'] = 'Para adicionar ficheiros nos tópicos, arraste-os do seu computador para o local pretendido';
+$string['dndworkingfilelink'] = 'Para adicionar ficheiros ou hiperligações nos tópicos, arraste-os do seu computador para o local pretendido';
+$string['dndworkingfiletext'] = 'Para adicionar ficheiros ou textos nos tópicos, arraste-os do seu computador para o local pretendido';
 $string['dndworkingfiletextlink'] = 'Arraste do seu computador ficheiros, textos ou hiperligações para dentro dos tópicos';
-$string['dndworkinglink'] = 'Para adicionar hiperligações nos tópicos arraste-os do seu computador para o local pretendido';
-$string['dndworkingtext'] = 'Para adicionar texto nos tópicos arraste-o do seu computador para o local pretendido';
-$string['dndworkingtextlink'] = 'Para adicionar textos ou hiperligações nos tópicos arraste-os do seu computador para o local pretendido';
+$string['dndworkinglink'] = 'Para adicionar hiperligações nos tópicos, arraste-as do seu computador para o local pretendido';
+$string['dndworkingtext'] = 'Para adicionar texto nos tópicos, arraste-o do seu computador para o local pretendido';
+$string['dndworkingtextlink'] = 'Para adicionar textos ou hiperligações nos tópicos, arraste-os do seu computador para o local pretendido';
 $string['documentation'] = 'Documentação do Moodle';
 $string['dontsortcategories'] = 'Não ordenar categorias';
 $string['dontsortcourses'] = 'Não ordenar disciplinas';
@@ -652,10 +653,7 @@ $string['emailpasswordchangeinfodisabled'] = 'Caro(a) {$a->firstname},
 
 Foi pedida uma nova senha para a sua conta em \'{$a->sitename}\'.
 
-Infelizmente, a sua conta neste site está desativada e por isto, não pode ser reposta.
-
-Por favor, contacte o administrador do site
-{$a->admin}';
+Infelizmente, a sua conta neste site está desativada e não pode ser reposta. Por favor, contacte o administrador do site {$a->admin}.';
 $string['emailpasswordchangeinfofail'] = 'Olá {$a->firstname},
 
 Foi pedida uma nova senha para a sua conta em \'{$a->sitename}\'.
@@ -871,7 +869,7 @@ Para ver os pormenores, consulte a página da Licença do Moodle:
 
 http://docs.moodle.org/en/License';
 $string['gpllicense'] = 'licença GPL';
-$string['grade'] = 'Nota';
+$string['grade'] = 'Avaliação';
 $string['grades'] = 'Pauta';
 $string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> está ativo neste site. Se não carregar nenhuma foto para o perfil, o Moodle irá tentar obter uma a partir do Gravatar.';
 $string['group'] = 'Grupo';
@@ -1645,7 +1643,7 @@ $string['showadvancedsettings'] = 'Mostrar configurações avançadas';
 $string['showall'] = 'Mostrar tudo {$a}';
 $string['showallcourses'] = 'Mostrar todas as disciplinas';
 $string['showallusers'] = 'Mostrar todos os utilizadores';
-$string['showblockcourse'] = 'Mostrar a lista das disciplinas que contêm bloco';
+$string['showblockcourse'] = 'Mostrar a lista das disciplinas com este bloco';
 $string['showcategory'] = 'Mostrar {$a}';
 $string['showcomments'] = 'Mostrar/Ocultar comentários';
 $string['showcommentsnonjs'] = 'Mostrar comentários';
@@ -1656,7 +1654,7 @@ $string['showgrades_help'] = 'Muitas das atividades permitem que seja atribuída
 $string['showingacourses'] = 'Mostrar todas as {$a} disciplinas';
 $string['showingxofycourses'] = 'A mostrar disciplinas de {$a->start} a {$a->end} num total de  {$a->total} disciplinas';
 $string['showlistofcourses'] = 'Mostrar todas as disciplinas';
-$string['showmodulecourse'] = 'Mostrar a lista de disciplinas com atividades';
+$string['showmodulecourse'] = 'Mostrar a lista de disciplinas com esta atividade';
 $string['showonly'] = 'Mostrar apenas';
 $string['showperpage'] = 'Mostrar apenas {$a} por página';
 $string['showrecent'] = 'Mostrar atividade recente';

@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['contentheader'] = 'Edukia';
 $string['display'] = 'Erakutsi karpetaren edukiak';
-$string['display_help'] = 'Karpetako edukiak ikastaroaren orrian erakustea aukeratzen baduzu ez da agertuko apartek orri baterako esteka eta izenburua ere ez da erakutsiko.
+$string['display_help'] = 'Karpetako edukiak ikastaroaren orrian erakustea aukeratzen baduzu ez da agertuko aparteko orri baterako esteka eta izenburua ere ez da erakutsiko.
 Deskribapena "Deskribapena ikastaroaren orriaren pantailan" aukeratzen bada bakarrik agertuko da.
 Kontuan izan, bestalde, kasu honetan ezin dela erabiltzaileen ekintzarik erregistratu.';
 $string['displayinline'] = 'Erakutsi ikastaroaren orrian';
-$string['displaypage'] = 'Apareteko orri batean';
+$string['displaypage'] = 'Aparteko orri batean';
 $string['dnduploadmakefolder'] = 'Deskonprimatu fixtategiak eta sortu karpeta';
 $string['downloadfolder'] = 'Jaitsi karpeta';
 $string['eventallfilesdownloaded'] = 'Jaitsitako karpetaren zip fitxategia';

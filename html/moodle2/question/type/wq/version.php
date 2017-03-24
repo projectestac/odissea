@@ -14,24 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Short answer question type version information.
- *
- * @package    qtype
- * @subpackage shortanswer
- * @copyright  1999 onwards Martin Dougiamas {@link http://moodle.com}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2016071200;
-$plugin->requires = 2011120500; // Moodle 2.2
-$plugin->wirisversion = '3.43.0.1015';
+$plugin->version = 2017031000;
+$plugin->requires = 2011120500; // Moodle 2.2.
+$plugin->release = '3.50.2.1022';
+$plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'qtype_wq';
 $plugin->dependencies = array (
-	 'filter_wiris' => ANY_VERSION
+     'filter_wiris' => ANY_VERSION
 );
-
-
-

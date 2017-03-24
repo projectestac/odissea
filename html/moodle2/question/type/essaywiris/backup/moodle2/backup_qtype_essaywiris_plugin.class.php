@@ -14,14 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * @package    moodlecore
- * @subpackage backup-moodle2
- * @copyright  2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-
 defined('MOODLE_INTERNAL') || die();
 
 
@@ -37,17 +29,17 @@ class backup_qtype_essaywiris_plugin extends backup_qtype_essay_plugin {
      * Returns the qtype information to attach to question element
      */
     protected function define_question_plugin_structure() {
-        // call parent
+        // Call parent.
         $plugin = parent::define_question_plugin_structure();
 
-        // change type
+        // Change type.
         $plugin->set_condition('../../qtype', 'essaywiris');
 
-        // add question_xml
+        // Add question xml.
         $pluginwrapper = $plugin->get_child($this->get_recommended_name());
-        $question_xml = new backup_nested_element('question_xml', array('id'), array('xml'));
-        $pluginwrapper->add_child($question_xml);
-        $question_xml->set_source_table('qtype_wq', array('question' => backup::VAR_PARENTID));
+        $questionxml = new backup_nested_element('question_xml', array('id'), array('xml'));
+        $pluginwrapper->add_child($questionxml);
+        $questionxml->set_source_table('qtype_wq', array('question' => backup::VAR_PARENTID));
 
         return $plugin;
     }

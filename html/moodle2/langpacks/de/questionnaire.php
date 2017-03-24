@@ -98,6 +98,7 @@ $string['couldnotdelresp'] = 'Antwort konnte nicht gelöscht werden';
 $string['createcontent'] = 'Neuen Inhalt festlegen';
 $string['createcontent_help'] = 'Wählen Sie eine Option für die Radio-Buttons ("neu erstellen" ist der Standard).';
 $string['createnew'] = 'Neuen Inhalt festlegen';
+$string['crontask'] = 'Befragungen bereinigen';
 $string['date'] = 'Datum';
 $string['dateformatting'] = 'Verwenden Sie das Format tag.monat.jahr z.B. für den 14. März 1945: <strong>14.3.1945</strong>';
 $string['date_help'] = 'Verwenden Sie diesen Fragetyp, wenn die Antwort in einem korrekten Datumsformat vorliegen soll.';

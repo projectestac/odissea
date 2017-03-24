@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Anotar as submissões dos alunos diretamente no naveg
 $string['enabled'] = 'Anotar PDF';
 $string['enabled_help'] = 'Se ativar esta opção, o professor poderá criar ficheiros PDF anotados quando estiver a avaliar os trabalhos. Isto permite ao professor adicionar comentários, desenhos e carimbos diretamente no documento que os alunos submeteram. A anotação é feita no navegador, não sendo necessário nenhum software adicional.';
 $string['errorgenerateimage'] = 'Erro ao gerar imagem com ghostscript, informação de depuração: {$a}';
+$string['errorpdfpage'] = 'Ocorreu um erro ao gerar esta página.';
 $string['filter'] = 'Filtrar comentários...';
 $string['generatefeedback'] = 'Gerar PDF de feedback';
 $string['generatingpdf'] = 'A gerar o PDF...';

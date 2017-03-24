@@ -162,6 +162,7 @@ $string['importcurrentstage2'] = 'Configuración del esquema';
 $string['importcurrentstage4'] = 'Confirmación y revisión';
 $string['importcurrentstage8'] = 'Realizar la importación';
 $string['importfile'] = 'Importar un archivo de copia de seguridad';
+$string['importgeneralduplicateadminallowed'] = 'Permitir la resolución de conflictos de usuario admin';
 $string['importgeneralduplicateadminallowed_desc'] = 'Si la página cuenta con un nombre de usuario \'admin\', tratar de restaurar una copia de seguridad que contenga un usuario \'admin\' puede causar conflicto. Si esta opción está habilitada, el conflicto puede resolverse cambiando el nombre de usuario en la copia de seguridad a \'admin_xyz\'.';
 $string['importgeneralmaxresults'] = 'Número máximo de cursos listados para importación';
 $string['importgeneralmaxresults_desc'] = 'Controla el número de cursos que son listados durante el primer paso del proceso de importación';

@@ -495,6 +495,7 @@ $string['deletechecktype'] = 'Sei sicuro di voler eliminare questo {$a->type}?';
 $string['deletechecktypename'] = 'Sei sicuro di voler eliminare questo {$a->type} "{$a->name}"?';
 $string['deletecheckwarning'] = 'Stai per eliminare questi file';
 $string['deletecomment'] = 'Elimina il commento';
+$string['deletecommentbyon'] = 'Elimina i commenti dell\'utente  {$a->user} effettuati il {$a->time}';
 $string['deletecompletely'] = 'Elimina completamente';
 $string['deletecourse'] = 'Elimina un corso';
 $string['deletecoursecheck'] = 'Sei sicuro di eliminare questo corso e tutti i dati che contiene?';
@@ -656,16 +657,12 @@ $string['emailpasswordchangeinfodisabled'] = 'Gentile {$a->firstname},
 
 è stata richiesta una nuova password per il tuo account su \'{$a->sitename}\'.
 
-Sfortunatamente il tuo account su questo sito è disabilitato e non può essere riabilitato.
-
-Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
+Sfortunatamente il tuo account su questo sito è disabilitato, pertanto la password non può essere reimpostata. Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
 $string['emailpasswordchangeinfofail'] = 'Gentile {$a->firstname},
 
 è stata richiesta una nuova password per il tuo account su \'{$a->sitename}\'.
 
-Purtroppo su questo sito le password non possono essere cambiate.
-
-Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
+Purtroppo su questo sito le password non possono essere cambiate.Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Informazioni su cambio password';
 $string['emailpasswordconfirmation'] = 'Gentile {$a->firstname},
 

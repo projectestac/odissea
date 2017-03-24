@@ -31,6 +31,7 @@ $string['configwebserviceplugins'] = 'Για λόγους ασφαλείας, μ
 $string['createtoken'] = 'Δημιουργία οντότητας (token)';
 $string['editaservice'] = 'Επεξεργασία υπηρεσίας';
 $string['enabled'] = 'Ενεργοποιημένο';
+$string['errorcodes'] = 'Μήνυμα σφάλματος';
 $string['externalservice'] = 'Εξωτερική υπηρεσία';
 $string['externalservices'] = 'Εξωτερικές υπηρεσίες';
 $string['functions'] = 'Λειτουργίες';

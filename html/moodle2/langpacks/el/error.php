@@ -241,6 +241,7 @@ $string['invalidcomment'] = 'Το σχόλιο είναι λανθασμένο';
 $string['invalidconfirmdata'] = 'Μη έγκυρα δεδομένα επιβεβαίωσης';
 $string['invalidcontext'] = 'Μη έγκυρο πλαίσιο';
 $string['invalidcourse'] = 'Μη έγκυρο μάθημα';
+$string['invalidcourseformat'] = 'Μη έγκυρος τύπος μαθήματος';
 $string['invalidcourseid'] = 'Προσπαθείτε να χρησιμοποιήσετε ένα μη έγκυρο ID μαθήματος: ({$a})';
 $string['invalidcourselevel'] = 'Λανθασμένο επίπεδο πλαισίου';
 $string['invalidcoursemodule'] = 'Μη έγκυρο ID αρθρώματος μαθήματος';

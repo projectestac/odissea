@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['navigation:addinstance'] = 'Προσθήκη νέου μπλοκ πλοήγηση';
+$string['navigation:myaddinstance'] = 'Προσθήκη νέου μπλοκ πλοήγηση στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Πλοήγηση';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['news_items:addinstance'] = 'Προσθήκη νέου μπλοκ τελευταίες ανακοινώσεις';
+$string['news_items:myaddinstance'] = 'Προσθήκη νέου μπλοκ τελευταίες ανακοινώσεις στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Τελευταία νέα';

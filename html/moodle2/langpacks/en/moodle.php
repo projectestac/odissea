@@ -493,6 +493,7 @@ $string['deletechecktype'] = 'Are you sure that you want to delete this {$a->typ
 $string['deletechecktypename'] = 'Are you sure that you want to delete the {$a->type} "{$a->name}"?';
 $string['deletecheckwarning'] = 'You are about to delete these files';
 $string['deletecomment'] = 'Delete this comment';
+$string['deletecommentbyon'] = 'Delete comment posted by {$a->user} on {$a->time}';
 $string['deletecompletely'] = 'Delete completely';
 $string['deletecourse'] = 'Delete a course';
 $string['deletecoursecheck'] = 'Are you absolutely sure you want to completely delete this course and all the data it contains?';

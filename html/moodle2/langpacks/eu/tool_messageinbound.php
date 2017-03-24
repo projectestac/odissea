@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['classname'] = 'Motaren izena';
 $string['component'] = 'Osagaia';
 $string['description'] = 'Deskribapena';
 $string['domain'] = 'E-postaren domeinua';
@@ -34,9 +35,12 @@ $string['enabled'] = 'Gaituta';
 $string['incomingmailconfiguration'] = 'Sarrerako e-postaren ezarpenak';
 $string['mailbox'] = 'Postontziaren izena';
 $string['mailboxconfiguration'] = 'Postontziaren ezarpenak';
+$string['mailboxdescription'] = '[mailbox]+azpihelbidea@[domain]';
 $string['mailsettings'] = 'E-postaren ezarpenak';
 $string['message_handlers'] = 'Mezu-kudeatzaileak';
+$string['messageinbound'] = 'Sarrerako mezua';
 $string['messageinboundgeneralconfiguration'] = 'Ezarpen orokorra';
+$string['messageinboundhost'] = 'Sarrerako posta-zerbitzaria';
 $string['messageinboundhostpass'] = 'Pasahitza';
 $string['messageinboundhostssl'] = 'Erabili SSL';
 $string['messageinboundhosttype'] = 'Zerbitzari-mota';
@@ -48,3 +52,6 @@ $string['oneweek'] = 'Astebete';
 $string['oneyear'] = 'Urtebete';
 $string['pluginname'] = 'Sarrera-mezuen ezarpenak';
 $string['replysubjectprefix'] = 'Er:';
+$string['ssl'] = 'SSL (Detektatu automatikoki SSL bertsioa)';
+$string['sslv2'] = 'SSLv2 (Behartu SSL-en 2 bertsioa)';
+$string['sslv3'] = 'SSLv2 (Behartu SSL-en 3 bertsioa)';

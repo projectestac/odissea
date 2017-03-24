@@ -7,6 +7,9 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$this->t = com_wiris_quizzes_impl_Translator::getInstance($this->lang);
 	}}
 	public function filterEmbeddedAnswersHTML($html, $mode, $q, $qi) {
+		if($html === null || "" === $html) {
+			return "";
+		}
 		$regexp = new EReg("<(input|img)[^>]*(wirisauthoringfield|wirisembeddedauthoringfield|wirisanswerfield)[^>]*(/>|>[^<]*</(input|img)>)", "gm");
 		$html = $regexp->replace($html, "<<wirisembeddedanswerfield>>");
 		$i = 0;
@@ -18,7 +21,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 			if($mode === com_wiris_quizzes_api_ui_QuizzesUIConstants::$AUTHORING) {
 				$value = $q->getCorrectAnswer($i);
 				if(com_wiris_quizzes_impl_MathContent::getMathType($value) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML) {
-					$src = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=render&mml=" . rawurlencode($value) . "&centerBaseline=false";
+					$src = com_wiris_quizzes_impl_HTMLGui::mathMLImgSrc($value, false, 1.0);
 					$sb->add("<img class=\"wirisembeddedauthoringfield\" src=\"" . $src . "\" data-answer-index=\"" . _hx_string_rec($i, "") . "\" />");
 					unset($src);
 				} else {
@@ -45,18 +48,13 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$sb->add(_hx_substr($html, $start, null));
 		return $sb->b;
 	}
-	public function printMathML($h, $mathml) {
-		$safeMathML = com_wiris_quizzes_impl_HTMLTools::encodeUnicodeChars($mathml);
-		$src = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=render&mml=" . rawurlencode($safeMathML);
-		$h->openclose("img", new _hx_array(array(new _hx_array(array("src", $src)), new _hx_array(array("align", "middle")), new _hx_array(array("class", "wirismathml")))));
-	}
 	public function printMath($h, $math) {
 		if(com_wiris_quizzes_impl_MathContent::getMathType($math) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML) {
 			$tools = new com_wiris_quizzes_impl_HTMLTools();
 			if($tools->isTokensMathML($math)) {
 				$h->text($tools->mathMLToText($math));
 			} else {
-				$this->printMathML($h, $math);
+				$h->raw($math);
 			}
 		} else {
 			$h->text($math);
@@ -68,7 +66,8 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$anchor = (($conf->optAuxiliarCas && !$conf->optOpenAnswer) ? "#auxiliar-cas" : "");
 		$h->help("wirisinputmethodhelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/correct-answer" . $anchor, $this->t->t("manual"));
 		$id = null;
-		if($conf->optOpenAnswer) {
+		$inputmethod = $conf->optAnswerFieldInlineEditor || $conf->optAnswerFieldPopupEditor || $conf->optAnswerFieldPlainText;
+		if($inputmethod) {
 			$h->openDivClass("wirisinputfielddiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
 			$h->openUl("wirisinputfieldul", "wirisul");
 			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . "]";
@@ -92,27 +91,27 @@ class com_wiris_quizzes_impl_HTMLGui {
 			}
 			$h->close();
 			$h->close();
-			if($conf->optCompoundAnswer) {
-				$h->openDivClass("wiriscompoundanswerdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
-				$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER . "]";
-				$h->input("checkbox", $id, "", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE, null, null);
-				$h->label($this->t->t("compoundanswer"), $id, null);
-				$h->openDivClass("wiriscompoundanswergradediv" . _hx_string_rec($unique, ""), "wiristerciaryfieldset");
-				$h->openDiv("wiriscompoundanswergradeand" . _hx_string_rec($unique, ""));
-				$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][and]";
-				$h->input("radio", $id, "wiriscompoundanswergrade", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_AND, null, null);
-				$h->label($this->t->t("allanswerscorrect"), $id, null);
-				$h->close();
-				$h->openDiv("wiriscompoundanswergradedistribute" . _hx_string_rec($unique, ""));
-				$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][distribute]";
-				$h->input("radio", $id, "wiriscompoundanswergrade", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE, null, null);
-				$h->label($this->t->t("distributegrade"), $id, null);
-				$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION . "]";
-				$h->input("text", $id, "", "", $this->t->t("gradedistribution"), "wirisadditionalinput");
-				$h->close();
-				$h->close();
-				$h->close();
-			}
+		}
+		if($conf->optOpenAnswer && $conf->optCompoundAnswer) {
+			$h->openDivClass("wiriscompoundanswerdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
+			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER . "]";
+			$h->input("checkbox", $id, "", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE, null, null);
+			$h->label($this->t->t("compoundanswer"), $id, null);
+			$h->openDivClass("wiriscompoundanswergradediv" . _hx_string_rec($unique, ""), "wiristerciaryfieldset");
+			$h->openDiv("wiriscompoundanswergradeand" . _hx_string_rec($unique, ""));
+			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][and]";
+			$h->input("radio", $id, "wiriscompoundanswergrade", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_AND, null, null);
+			$h->label($this->t->t("allanswerscorrect"), $id, null);
+			$h->close();
+			$h->openDiv("wiriscompoundanswergradedistribute" . _hx_string_rec($unique, ""));
+			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][distribute]";
+			$h->input("radio", $id, "wiriscompoundanswergrade", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE, null, null);
+			$h->label($this->t->t("distributegrade"), $id, null);
+			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION . "]";
+			$h->input("text", $id, "", "", $this->t->t("gradedistribution"), "wirisadditionalinput");
+			$h->close();
+			$h->close();
+			$h->close();
 		}
 		if($conf->optAuxiliarCas) {
 			$h->openDivClass("wirisauxiliarcasdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
@@ -216,7 +215,9 @@ class com_wiris_quizzes_impl_HTMLGui {
 				$h->close();
 			}
 			$h->text(" " . $this->t->t("thecorrectansweris") . " ");
-			$this->printMath($h, $q->getCorrectAnswer($correctAnswer));
+			$correct = $q->getCorrectAnswer($correctAnswer);
+			$correct = $qi->expandVariables($correct);
+			$this->printMath($h, $correct);
 			$h->text(".");
 		}
 		$h->close();
@@ -235,57 +236,19 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h = new com_wiris_quizzes_impl_HTML();
 		$hasCorrectAnswer = $q->correctAnswers !== null && $correctAnswer < $q->correctAnswers->length;
 		$h->openDivClass("wiristestresult" . _hx_string_rec($unique, ""), "wiristestresult");
-		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wiristestvalidationfieldset" . _hx_string_rec($unique, ""), $this->t->t("validation"), "wirismainfieldset");
-		if($q->assertions !== null && $q->assertions->length > 0 && $qi->hasEvaluation()) {
-			$h->openDivClass("wiristestgrade" . _hx_string_rec($unique, ""), "wiristestgrade");
-			$grade = $qi->getAnswerGrade($correctAnswer, $userAnswer, $q);
-			if($grade === 1.0) {
-				$h->openSpan("wiristestgradetext" . _hx_string_rec($unique, ""), "wiristestgradetext wiriscorrect");
-				$h->text($this->t->t("correct"));
-				$h->close();
-			} else {
-				if($grade === 0.0) {
-					$h->openSpan("wiristestgradetext" . _hx_string_rec($unique, ""), "wiristestgradetext wirisincorrect");
-					$h->text($this->t->t("incorrect"));
-					$h->close();
-				} else {
-					$h->openSpan("wiristestgradetext" . _hx_string_rec($unique, ""), "wiristestgradetext wirispartiallycorrect");
-					$h->text(_hx_string_rec(Math::round($grade * 100), "") . "% ");
-					$h->text($this->t->t("partiallycorrect"));
-					$h->close();
-				}
-			}
-			$h->close();
-			$h->openDivClass("wiristestassertions" . _hx_string_rec($unique, ""), "wiristestassertions");
-			$h->openDivClass("wiristestassertionslistwrapper" . _hx_string_rec($unique, ""), "wiristestassertionslistwrapper");
-			$this->printAnswerAssertionsFeedback($h, $correctAnswer, $userAnswer, $q, $qi);
-			$h->close();
-			$h->close();
-		} else {
-			$h->text($this->t->t("clicktesttoevaluate"));
-		}
+		$h->openDivClass("wiristestassertions" . _hx_string_rec($unique, ""), "wiristestassertions");
+		$h->openDivClass("wiristestassertionslistwrapper", "wiristestassertionslistwrapper");
 		$h->close();
 		$h->close();
 		$h->close();
 		$h->openDivClass("wiristestcorrectanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "]", "wiristestcorrectanswer");
 		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wiristestcorrectanswerfieldset" . _hx_string_rec($unique, ""), $this->t->t("correctanswer"), "wirismainfieldset");
+		$h->openFieldset("wiristestcorrectanswerfieldset" . _hx_string_rec($unique, ""), $this->t->t("correctanswer"), "wirismainfieldset wiristestcorrectanswerfieldset");
 		if($hasCorrectAnswer) {
-			$content = _hx_array_get($q->correctAnswers, $correctAnswer)->content;
-			if(com_wiris_quizzes_impl_MathContent::getMathType($content) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML) {
-				if($qi->hasVariables()) {
-					$content = $qi->expandVariablesMathML($content);
-				}
-				$h->open("span", new _hx_array(array(new _hx_array(array("class", "mathml")))));
-				$this->printMathML($h, $content);
-				$h->close();
-			} else {
-				if($qi->hasVariables()) {
-					$content = $qi->expandVariablesText($content);
-				}
-				$h->text($content);
-			}
+			$h->open("span", new _hx_array(array(new _hx_array(array("id", "wiriscorrectanswerlabel")), new _hx_array(array("class", "mathml wiriscorrectanswerlabel")))));
+			$h->close();
+			$h->input("button", "wirisfillwithcorrectbutton", null, null, $this->t->t("fillwithcorrect"), "wirisfillwithcorrectbutton");
+			$h->input("button", "wirisrefreshbutton", null, null, $this->t->t("refresh"), "wirisrefreshbutton");
 		}
 		$h->close();
 		$h->close();
@@ -305,8 +268,10 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->jsComponent("wirisanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($userAnswer, "") . "]", "JsInput", com_wiris_quizzes_impl_HTMLGui_0($this, $correctAnswer, $h, $hasUserAnswer, $q, $qi, $unique, $userAnswer));
 		$h->close();
 		$h->openDivClass("wiristestbuttons" . _hx_string_rec($unique, ""), "wiristestbuttons");
-		$h->input("button", "wiristestbutton" . _hx_string_rec($unique, ""), null, $this->t->t("test"), null, "wirisbutton");
-		$h->input("button", "wirisrestartbutton" . _hx_string_rec($unique, ""), null, $this->t->t("start"), null, "wirisbutton");
+		$h->input("button", "wiristestbutton", null, $this->t->t("test"), null, "wirisbutton");
+		$h->open("span", new _hx_array(array(new _hx_array(array("id", "wirisclicktesttoevaluate")))));
+		$h->text($this->t->t("clicktesttoevaluate"));
+		$h->close();
 		$h->close();
 		$h->openDivClass("wiristestdynamic" . _hx_string_rec($unique, ""), "wiristestdynamic");
 		$h->raw($this->getWirisTestDynamic($q, $qi, $correctAnswer, $userAnswer, $unique));
@@ -992,6 +957,26 @@ class com_wiris_quizzes_impl_HTMLGui {
 			return $this->__toString();
 		else
 			throw new HException('Unable to call «'.$m.'»');
+	}
+	static function mathMLImgSrc($mathml, $centerBaseline, $zoom) {
+		$c = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
+		$src = null;
+		if("true" === $c->get(com_wiris_quizzes_api_ConfigurationKeys::$CROSSORIGINCALLS_ENABLED)) {
+			$src = $c->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/render?";
+		} else {
+			$src = $c->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=render&";
+		}
+		$src .= "stats-app=quizzes&";
+		if(!$centerBaseline) {
+			$src .= "centerbaseline=false&";
+		}
+		if($zoom !== 1.0) {
+			$src .= "zoom=" . _hx_string_rec($zoom, "") . "&";
+		}
+		$mathml = com_wiris_util_xml_MathMLUtils::removeStrokesAnnotation($mathml);
+		$mathml = rawurlencode(com_wiris_quizzes_impl_HTMLTools::encodeUnicodeChars($mathml));
+		$src .= "mml=" . $mathml;
+		return $src;
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLGui'; }
 }

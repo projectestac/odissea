@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activities'] = 'Δραστηριότητες';
 $string['add'] = 'Προσθήκη';
 $string['blocks'] = 'Μπλοκ';
 $string['comments'] = 'Σχόλια ({$a})';

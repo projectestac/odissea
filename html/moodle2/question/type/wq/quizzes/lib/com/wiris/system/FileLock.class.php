@@ -26,12 +26,7 @@ class com_wiris_system_FileLock {
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $TIMEOUT = 5000;
-	static $WAIT = 100;
-	static function getLock($file) {
-		return com_wiris_system_FileLock::getLockImpl($file, com_wiris_system_FileLock::$TIMEOUT);
-	}
-	static function getLockImpl($file, $remaining) {
+	static function getLock($file, $wait, $remaining) {
 		$startwait = haxe_Timer::stamp();
 		try {
 			$lockfile = $file . ".lock";
@@ -61,7 +56,7 @@ class com_wiris_system_FileLock {
 				}
 				usleep(rand(1,200));
 				$actualwait = (haxe_Timer::stamp() - $startwait) * 1000;
-				return com_wiris_system_FileLock::getLockImpl($file, $remaining - $actualwait);
+				return com_wiris_system_FileLock::getLock($file, $wait, $remaining - $actualwait);
 			}
 		}
 		return null;

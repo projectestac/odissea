@@ -65,5 +65,6 @@ $string['textsourcefilepath'] = 'Χρήση διεύθυνσης αρχείου'
 $string['textsourcequiz'] = 'Λήψη από το κουίζ';
 $string['textsourcespecific'] = 'Συγκεκριμένο κείμενο';
 $string['timedout'] = 'Έληξε ο χρόνος';
+$string['title'] = 'Τίτλος';
 $string['weighting'] = 'Εφαρμογή βαρύτητας';
 $string['wrong'] = 'Λάθος';

@@ -58,6 +58,7 @@ $string['popupresourcelink'] = 'Εάν αυτό δε συμβεί, πατήστ�
 $string['popupwidthexplain'] = 'Καθορίζει το προεπιλεγμένο πλάτος του αναδυόμενου παράθυρου.';
 $string['printintro'] = 'Έμφάνιση περιγραφής πηγής';
 $string['printintroexplain'] = 'Εμφάνιση περιγραφής πηγής κάτω από το περιεχόμενο; Ορισμένοι τύποι εμφάνισης μπορεί να μην εμφανίζουν την περιγραφή, ακόμα και αν έχει ενεργοποιηθεί.';
+$string['resource:addinstance'] = 'Προσθήκη νέου πόρου';
 $string['resource:exportresource'] = 'Export resource';
 $string['resource:view'] = 'Προβολή πηγής';
 $string['search:activity'] = 'Πηγή πληροφοριών';

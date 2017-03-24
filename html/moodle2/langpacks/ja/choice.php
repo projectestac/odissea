@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'さらに選択肢を追加する';
-$string['allowmultiple'] = '1つ以上の選択を許可する';
+$string['allowmultiple'] = '2つ以上の選択を許可する';
 $string['allowupdate'] = '投票内容の更新を許可する';
 $string['answered'] = '投票済み';
 $string['atleastoneoption'] = 'あなたは少なくとも1つの考えられる答えを提供する必要があります。';
@@ -72,7 +72,7 @@ $string['limitanswers_help'] = 'このオプションではあなたは参加者
 制限が無効にされた場合、それぞれの選択肢に関して参加者何名でも投票することができます。';
 $string['limitno'] = '制限 {no}';
 $string['modulename'] = '投票';
-$string['modulename_help'] = '投票活動モジュールにおいて、教師は単一の質問をたずねること、複数の一連の回答を提供することができます。
+$string['modulename_help'] = '投票活動モジュールにおいて教師は単一の質問をたずねることおよび複数の一連の回答を提供することができます。
 
 投票結果は学生が回答した後に公開、特定の日時に公開または一切公開しないことができます。投票結果は学生の氏名と共にまたは匿名で公開することができます。
 
@@ -84,7 +84,7 @@ $string['modulename_help'] = '投票活動モジュールにおいて、教師�
 $string['modulenameplural'] = '投票';
 $string['moveselectedusersto'] = '選択したユーザを ...';
 $string['multiplenotallowederror'] = 'この投票では複数回答は許可されていません。';
-$string['mustchooseone'] = 'あなたは保存する前に答えを選択する必要があります。投票内容は保存されませんでした。';
+$string['mustchooseone'] = 'あなたは保存する前に答えを選択する必要があります。何も保存されませんでした。';
 $string['noguestchoose'] = '申し訳ございません、ゲストは投票することができません。';
 $string['noresultsviewable'] = '現在、投票結果は閲覧できません。';
 $string['notanswered'] = '未投票';
@@ -98,11 +98,11 @@ $string['options'] = 'オプション';
 $string['page-mod-choice-x'] = 'すべての投票モジュールページ';
 $string['pluginadministration'] = '投票管理';
 $string['pluginname'] = '投票';
-$string['previewonly'] = 'これはこの活動に関する利用可能なオプションのプレビューです。あなたの投票は {$a} まで送信することができません。';
+$string['previewonly'] = 'これはこの活動で利用可能なオプションのプレビューです。あなたの投票は {$a} まで送信することができません。';
 $string['privacy'] = '投票結果のプライバシー';
 $string['publish'] = '投票結果を公開する';
 $string['publishafteranswer'] = '投票した後、学生に投票結果を表示する';
-$string['publishafterclose'] = 'この投票全体が終了した場合のみ、学生に投票結果を表示する';
+$string['publishafterclose'] = 'この投票全体が終了した場合のみ学生に投票結果を表示する';
 $string['publishalways'] = '常に学生に投票結果を表示する';
 $string['publishanonymous'] = '投票結果を匿名で公開する、学生の氏名を表示しない';
 $string['publishnames'] = '投票結果すべてを公開する、学生の氏名および投票内容を表示する';

@@ -75,6 +75,21 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 												} else {
 													if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISCORRECTFEEDBACK) {
 														$this->showCorrectAnswerFeedback = true;
+													} else {
+														if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDINLINEEDITOR) {
+															$this->optAnswerFieldInlineEditor = true;
+															$this->tabCorrectAnswer = true;
+														} else {
+															if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDPOPUPEDITOR) {
+																$this->optAnswerFieldPopupEditor = true;
+																$this->tabCorrectAnswer = true;
+															} else {
+																if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDPLAINTEXT) {
+																	$this->optAnswerFieldPlainText = true;
+																	$this->tabCorrectAnswer = true;
+																}
+															}
+														}
 													}
 												}
 											}
@@ -134,6 +149,14 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 		$this->optAuxiliarCas = false;
 		$this->optAuxiliarCasReplaceEditor = false;
 		$this->optGradingFunction = false;
+		$this->optAnswerFieldInlineEditor = false;
+		$this->optAnswerFieldInlineHand = false;
+		$this->optAnswerFieldPlainText = false;
+		$this->optAnswerFieldPopupEditor = false;
+		$this->optCompoundAnswer = false;
+		$this->showCorrectAnswerFeedback = false;
+		$this->showAssertionsFeedback = false;
+		$this->showFieldDecorationFeedback = false;
 	}
 	public function openAnswerConfig() {
 		$this->tabCorrectAnswer = true;
@@ -145,7 +168,7 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 		$this->optAuxiliarCasReplaceEditor = false;
 		$this->optGradingFunction = false;
 		$this->optAnswerFieldInlineEditor = true;
-		$this->optAnswerFieldInlineHand = true;
+		$this->optAnswerFieldInlineHand = false;
 		$this->optAnswerFieldPlainText = true;
 		$this->optAnswerFieldPopupEditor = true;
 		$this->optCompoundAnswer = true;
@@ -190,6 +213,9 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 	static $WIRISAUXILIARCAS = "wirisauxiliarcas";
 	static $WIRISAUXILIARCASREPLACEEDITOR = "wirisauxiliarcasreplaceeditor";
 	static $WIRISGRADINGFUNCTION = "wirisgradingfunction";
+	static $WIRISANSWERFIELDINLINEEDITOR = "wirisanswerfieldinlineeditor";
+	static $WIRISANSWERFIELDPOPUPEDITOR = "wirisanswerfieldpopupeditor";
+	static $WIRISANSWERFIELDPLAINTEXT = "wirisanswerfieldplaintext";
 	static $WIRISANSWERFEEDBACK = "wirisanswerfeedback";
 	static $WIRISEMBEDDEDFEEDBACK = "wirisembeddedfeedback";
 	static $WIRISASSERTIONSFEEDBACK = "wirisassertionsfeedback";

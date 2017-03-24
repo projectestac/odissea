@@ -107,16 +107,23 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	public function areVariablesReady() {
 		if($this->variables !== null) {
 			if($this->variables->exists(com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF)) {
+				$cache = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getImagesCache();
 				$images = $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF);
 				$names = $images->keys();
 				while($names->hasNext()) {
 					$filename = $images->get($names->next());
-					$path = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$CACHE_DIR) . "/" . $filename;
-					$s = com_wiris_system_Storage::newStorage($path);
-					if(!$s->exists()) {
-						return false;
+					if(com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT) {
+						$s = com_wiris_system_Storage::newStorage($filename);
+						if(!$s->exists()) {
+							return false;
+						}
+						unset($s);
+					} else {
+						if($cache->get($filename) === null) {
+							return false;
+						}
 					}
-					unset($s,$path,$filename);
+					unset($filename);
 				}
 			}
 		}
@@ -726,11 +733,8 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			$value = str_replace("=", "", $v->content);
 			$b = $base64->decodeBytes(haxe_io_Bytes::ofString($value));
 			$filename = haxe_Md5::encode($value) . ".png";
-			$path = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$CACHE_DIR) . "/" . $filename;
-			$s = com_wiris_system_Storage::newStorage($path);
-			if(!$s->exists()) {
-				$s->writeBinary($b->b);
-			}
+			$cache = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getImagesCache();
+			$cache->set($filename, $b);
 		}
 		$w = new com_wiris_quizzes_impl_Variable();
 		$w->type = com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE_REF;
@@ -799,10 +803,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					$s = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getSerializer();
 					$tag = $s->getTagName($r);
 					if($tag === com_wiris_quizzes_impl_ResultGetVariables::$tagName) {
-						if(!$variables) {
-							$variables = true;
-							$this->variables = null;
-						}
+						$variables = true;
 						$rgv = $r;
 						$resultVars = $rgv->variables;
 						$j = null;

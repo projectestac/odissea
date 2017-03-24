@@ -39,8 +39,11 @@ $string['restrictionitemsonly'] = 'Elementuen laburpena bakarrik';
 $string['restrictionnone'] = 'Mugarik ez';
 $string['search'] = 'Bilatu EQUELLA';
 $string['selectrestriction'] = 'Mugatu aukeraketa';
+$string['selectrestriction.desc'] = 'Hautatu ikastaro-editore batek elementuen laburpena aukera dezakeen, erantsitako baliabideak bakarrik edo biak.';
 $string['sharedid'] = 'Partekatutako sekretuaren IDa';
 $string['sharedidtitle'] = 'Partekatutako sekretuaren IDa';
 $string['sharedsecrets'] = 'Partekatutako sekretua';
 $string['sharedsecretsheading'] = 'Partekatutako sekretuaren ezarpenak';
+$string['sharedsecretshelp'] = '<p>Azpian single sign-on erabiltzaileentzako erabiliko den partekatutako EQUELLA giltza ezarri dezakezu. Partekatutako giltza ezberdinak zehaztu ditzakezu erabilera orokorrerako (irakurri) eta roletan oinarritutako partekatutako giltz bana <em>idatziko</em> duen rol bakoitzarentzat. Partekatutako giltzaren IDa rol batentzat zehaztu gabe badagoberezko partekatutako giltza erabiliko da.</p>
+<p>Partekatutako giltzak eta giltzen ID guztiak EQUELLA barruan ere konfiguratu behar dira, eta partekatutako giltzen modulua gaitu behar da. Ezarpen hau EQUELLA Administration Console barruan dagoen User Management > Partekatutako giltzak atalean dago.</p>';
 $string['sharedsecrettitle'] = 'Partekatutako sekretua';

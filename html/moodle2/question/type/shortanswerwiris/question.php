@@ -1,20 +1,37 @@
-<?php   
+<?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+defined('MOODLE_INTERNAL') || die();
 require_once($CFG->dirroot . '/question/type/wq/question.php');
 require_once($CFG->dirroot . '/question/type/wq/step.php');
 
-class qtype_shortanswerwiris_question extends qtype_wq_question implements question_automatically_gradable, question_response_answer_comparer {
+class qtype_shortanswerwiris_question extends qtype_wq_question
+        implements question_automatically_gradable, question_response_answer_comparer {
     /**
-     * A link to last question attempt step and also a helper class for some 
+     * A link to last question attempt step and also a helper class for some
      * grading issues.
      */
     public $step;
-    
+
     /**
      * reference to Moodle's shortanswer question fields.
      */
     public $answers;
-    
-    public function __construct(question_definition $base = NULL) {
+
+    public function __construct(question_definition $base = null) {
         parent::__construct($base);
         $this->step = new qtype_wirisstep();
     }
@@ -26,9 +43,9 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
         parent::apply_attempt_state($step);
         $this->step->load($step);
         if ($this->step->is_first_step()) {
-            //This is a regrade because is the only case where this function is
-            //called with the first step instead of start_attempt. So invalidate
-            //cached matching answers.
+            // This is a regrade because is the only case where this function is
+            // called with the first step instead of start_attempt. So invalidate
+            // cached matching answers.
             $this->step->set_var('_response_hash', '0');
         }
     }
@@ -39,7 +56,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
     public function join_all_text() {
         $text = parent::join_all_text();
         // Answers and feedback.
-        foreach ($this->base->answers as $key => $value){
+        foreach ($this->base->answers as $key => $value) {
             $text .= ' ' . $value->answer . ' ' . $value->feedback;
         }
         return $text;
@@ -49,15 +66,15 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
         $answer = $this->get_matching_answer($response);
         if ($answer) {
             $fraction = $answer->fraction;
-            // Multiply Moodle fraction by quizzes grade (due to custom function 
+            // Multiply Moodle fraction by quizzes grade (due to custom function
             // grading or compound grade distribution).
             $grade = $this->step->get_var('_matching_answer_grade');
-            if(!empty($grade)) {
+            if (!empty($grade)) {
                 $fraction = $fraction * $grade;
             }
             $state = question_state::graded_state_for_fraction($fraction);
             return array($fraction, $state);
-        } else if($this->step->is_error()) {
+        } else if ($this->step->is_error()) {
             // Do not grade and tell teacher to do so...
             return array(null, question_state::$needsgrading);
         } else {
@@ -70,22 +87,24 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
      * **/
     public function get_matching_answer_fail_test(array $response) {
         // BEGIN TEST
-        // The following "if" is used only under unit-testing conditions
+        // The following "if" is used only under unit-testing conditions.
         global $CFG;
         global $DB;
         $error = false;
-        if (isset($CFG->wq_fail_shortanswer_grade) && $CFG->wq_fail_shortanswer_grade && $CFG->wq_fail_shortanswer_grade != 'false') {
-            $fail = explode("@",$CFG->wq_fail_shortanswer_grade);
-            $attemptid = $DB->get_record('question_attempt_steps', array('id' => $this->step->step_id), 'questionattemptid')->questionattemptid;
+        $conditiona = isset($CFG->wq_fail_shortanswer_grade) && $CFG->wq_fail_shortanswer_grade;
+        if ($conditiona && $CFG->wq_fail_shortanswer_grade != 'false') {
+            $fail = explode("@", $CFG->wq_fail_shortanswer_grade);
+            $attemptid = $DB->get_record('question_attempt_steps',
+                    array('id' => $this->step->step_id), 'questionattemptid')->questionattemptid;
             $attemptid = $DB->get_record('question_attempts', array('id' => $attemptid), 'questionusageid')->questionusageid;
             $activity = $DB->get_field('question_usages', 'component', array('id' => $attemptid));
-            if($activity == 'mod_quiz') {
+            if ($activity == 'mod_quiz') {
                 $attemptid = $DB->get_record('quiz_attempts', array('uniqueid' => $attemptid), 'id')->id;
-                if ($attemptid == $fail[0]) { // fail only the designated attempt
-                    if (count($fail)==1) {
+                if ($attemptid == $fail[0]) { // Fail only the designated attempt.
+                    if (count($fail) == 1) {
                         $error = true;
                     } else {
-                        // Check also the name
+                        // Check also the name.
                         if ($this->name == $fail[1]) {
                             $error = true;
                         }
@@ -93,58 +112,58 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
                 }
             }
         }
-        if (isset($CFG->wq_fail_shortanswer_grade) && $CFG->wq_fail_shortanswer_grade=='true' && $response['answer']=='error') {
-            // Only allow an explicit error if defined wq_fail_shortanswer_grade
+        if (isset($CFG->wq_fail_shortanswer_grade) && $CFG->wq_fail_shortanswer_grade == 'true' && $response['answer'] == 'error') {
+            // Only allow an explicit error if defined wq_fail_shortanswer_grade.
             $error = true;
         }
         // Used to simulate a grade failure when doing tests!
         if ($error) {
-            throw new moodle_exception('Failed to grade (testing-' . ($this->step->get_attempts()+1) . ')!', 'qtype_wq');
+            throw new moodle_exception('Failed to grade (testing-' . ($this->step->get_attempts() + 1) . ')!', 'qtype_wq');
         }
-        // END TEST    
+        // END TEST.
     }
-    
+
     public function get_matching_answer(array $response) {
         try {
-            // quick return if no answer given.
-            if(!isset($response['answer'])) {
+            // Quick return if no answer given.
+            if (!isset($response['answer'])) {
                 return null;
             }
             // Optimization in order to avoid a service call.
             $responsehash = md5($response['answer']);
             if ($this->step->get_var('_response_hash') == $responsehash) {
-                $matching_answer = $this->step->get_var('_matching_answer');
-                if(!empty($matching_answer)) {
-                    return $this->base->answers[$matching_answer];
-                }
-                else if(!is_null($matching_answer)) {
+                $matchinganswer = $this->step->get_var('_matching_answer');
+                if (!empty($matchinganswer)) {
+                    return $this->base->answers[$matchinganswer];
+                } else if (!is_null($matchinganswer)) {
                     return null;
                 }
             }
-            
+
             // Security protection:
-            // The same question should not be graded more than N times with failure
+            // The same question should not be graded more than N times with failure.
             if ($this->step->is_attempt_limit_reached()) {
                 return null;
             }
-            
+
             // Test code:
             // Does nothing on production, may throw exception on test environment.
             $this->get_matching_answer_fail_test($response);
 
-            //Use the WIRIS quizzes API to grade this response.
+            // Use the WIRIS quizzes API to grade this response.
             $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
-            //Build array of correct answers.
+            // Build array of correct answers.
             $correctvalues = array();
             $correctanswers = array();
-            foreach($this->base->answers as $answer){
+            foreach ($this->base->answers as $answer) {
                 $correctvalues[] = $answer->answer;
                 $correctanswers[] = $answer;
             }
-            //Load instance
+            // Load instance.
             $qi = $this->wirisquestioninstance;
-            //Make call
-            $request = $builder->newEvalMultipleAnswersRequest($correctvalues, array($response['answer']), $this->wirisquestion, $qi);
+            // Make call.
+            $request = $builder->newEvalMultipleAnswersRequest($correctvalues, array($response['answer']),
+                    $this->wirisquestion, $qi);
             $response = $this->call_wiris_service($request);
             $qi->update($response);
 
@@ -153,7 +172,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
             $answer = null;
             for ($i = 0; $i < count($correctanswers); $i++) {
                 $grade = $qi->getAnswerGrade($i, 0, $this->wirisquestion);
-                if($grade > $max) {
+                if ($grade > $max) {
                     $max = $grade;
                     $answer = $correctanswers[$i];
                 }
@@ -166,24 +185,24 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
                     $this->step->set_var('_matching_answer_grade', $max, true);
                 }
             }
-            
+
             $this->step->set_var('_matching_answer', $matchinganswerid, true);
             $this->step->set_var('_response_hash', $responsehash, true);
             $this->step->set_var('_qi', $qi->serialize(), true);
             $this->step->reset_attempts();
 
             return $answer;
-        } catch(moodle_exception $e) {
-            // Notify of the error
+        } catch (moodle_exception $e) {
+            // Notify of the error.
             $this->step->inc_attempts();
             throw $e;
         }
     }
-    
+
     public function summarise_response(array $response) {
         // This function must return plain text output. Since student response
-        // may be mathml and the conversion MathML => text made in 
-        // expand_variables_text() is not good, we prevent to show incorrect 
+        // may be mathml and the conversion MathML => text made in
+        // expand_variables_text() is not good, we prevent to show incorrect
         // data.
         if (!$this->is_text_answer()) {
             return get_string('contentnotviewable', 'qtype_shortanswerwiris');
@@ -191,49 +210,51 @@ class qtype_shortanswerwiris_question extends qtype_wq_question implements quest
             return parent::summarise_response($response);
         }
     }
-    
-    public function get_right_answer_summary(){
+
+    public function get_right_answer_summary() {
         return get_string('contentnotviewable', 'qtype_shortanswerwiris');
     }
-    
+
     public function format_answer($text) {
-        if($this->is_text_answer() && !$this->is_compound_answer()){
+        if ($this->is_text_answer() && !$this->is_compound_answer()) {
             $text = $this->expand_variables_text($text);
-        }
-        else {
+        } else {
             $text = $this->expand_variables_mathml($text);
         }
-        
+
         return $text;
     }
-    
+
     private function is_text_answer() {
         if (!empty($this->parent)) {
             return true;
         }
         $wrap = com_wiris_system_CallWrapper::getInstance();
         $wrap->start();
-        $inputField = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD);
-        $inputText = ($inputField == com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT);
+        // @codingStandardsIgnoreStart
+        $inputfield = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD);
+        $inputtext = ($inputfield == com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT);
+        // @codingStandardsIgnoreEnd
         $wrap->stop();
-        
-        return $inputText;
+
+        return $inputtext;
     }
-    
+
     private function is_compound_answer() {
         $wrap = com_wiris_system_CallWrapper::getInstance();
         $wrap->start();
-        $isCompound = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER);
+        // @codingStandardsIgnoreLine
+        $iscompound = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER);
         $wrap->stop();
-        return ($isCompound == 'true');
+        return ($iscompound == 'true');
     }
-    
+
     public function get_correct_response() {
         // We need to replace all aterisk for scaped asterisks:
         // Because shortanswer get_correct_response() methods
         // cleans all asterisks, asterisks are shortanswer wildcards.
         // However on WIRIS shortanswers asterisk means product.
-        foreach ($this->answers as $key=>$value) {
+        foreach ($this->answers as $key => $value) {
             $this->answers[$key]->answer = str_replace('*', '\*', $value->answer);
         }
 

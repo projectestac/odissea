@@ -40,6 +40,7 @@ class com_wiris_quizzes_impl_MathContent extends com_wiris_util_xml_Serializable
 	static $TYPE_IMAGE = "image";
 	static $TYPE_IMAGE_REF = "imageref";
 	static $TYPE_STRING = "string";
+	static $TYPE_CONSTRUCTION = "construction";
 	static function getMathType($content) {
 		if($content === null) {
 			return com_wiris_quizzes_impl_MathContent::$TYPE_TEXT;

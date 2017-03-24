@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['filelockedmail'] = 'Cron prozesuak ezin du ezabatu matrikulazioak egiteko ({$a}) fitxategian oinarriturik erabiltzen ari zaren testu-fitxategia. Normalean honen zergatia zure baimenak desegokiak izatean datza. Baimenak ezar itzazu Moodle-k fitxategia ezabatu ahal izateko, mesedez. Bestela, prozesua errepikatu egingo da.';
 $string['filelockedmailsubject'] = 'Errore larria: Matrikulazio-fitxategia';
 $string['flatfile:manage'] = 'Kudeatu erabiltzaileen matrikulazioak eskuz';

@@ -36,18 +36,18 @@ class backup_qtype_matchwiris_plugin extends backup_qtype_match_plugin {
      * Returns the qtype information to attach to question element
      */
     protected function define_question_plugin_structure() {
-        // call parent
+        // Call parent.
         $plugin = parent::define_question_plugin_structure();
 
-        // change type
+        // Change type.
         $plugin->set_condition('../../qtype', 'matchwiris');
 
-        // add question_xml
+        // Add questionxml.
         $pluginwrapper = $plugin->get_child($this->get_recommended_name());
-        $question_xml = new backup_nested_element('question_xml', array('id'), array('xml'));
-        $pluginwrapper->add_child($question_xml);
-        $question_xml->set_source_table('qtype_wq', array('question' => backup::VAR_PARENTID));
-        
+        $questionxml = new backup_nested_element('question_xml', array('id'), array('xml'));
+        $pluginwrapper->add_child($questionxml);
+        $questionxml->set_source_table('qtype_wq', array('question' => backup::VAR_PARENTID));
+
         return $plugin;
     }
 

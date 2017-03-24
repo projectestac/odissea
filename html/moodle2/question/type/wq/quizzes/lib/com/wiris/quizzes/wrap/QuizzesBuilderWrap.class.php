@@ -213,6 +213,21 @@ class com_wiris_quizzes_wrap_QuizzesBuilderWrap extends com_wiris_quizzes_api_Qu
 			}
 		}
 	}
+	public function getQuizzesUIBuilder() {
+		try {
+			$this->wrapper->start();
+			$r = new com_wiris_quizzes_wrap_QuizzesUIBuilderWrap($this->builder->getQuizzesUIBuilder());
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public $wrapper;
 	public $builder;
 	public function __call($m, $a) {

@@ -34,5 +34,5 @@ $string['enabled'] = 'Gaituta';
 $string['issue'] = 'Arazoa';
 $string['morehelp'] = 'laguntza gehiago';
 $string['performance:view'] = 'Ikusi errendimenduaren txostena';
-$string['pluginname'] = 'Errendimenduaren ikuspegi orokorra';
+$string['pluginname'] = 'Errendimenduaren laburpena';
 $string['value'] = 'Balorea';

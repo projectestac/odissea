@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = '利用可能な認証プラグイン';
 $string['allowaccountssameemail'] = '同一メールのアカウントを許可する';
-$string['allowaccountssameemail_desc'] = 'この設定を有効にした場合、1つ以上のユーザアカウントが同一メールアドレスを共有することができるようになります。これにより、例えばパスワード変更確認メールのようにセキュリティまたはプライバシーに関する問題が発生する可能性があります。';
+$string['allowaccountssameemail_desc'] = 'この設定を有効にした場合、2つ以上のユーザアカウントが同一メールアドレスを共有することができるようになります。これにより、例えばパスワード変更確認メールのようにセキュリティまたはプライバシーに関する問題が発生する可能性があります。';
 $string['alternatelogin'] = 'ここにURLを入力した場合、このサイトのログインページとして使用されます。ログインページではaction属性に<strong>「 {$a} 」</strong>をセットして、 <strong>username</strong>フィールドおよび <strong>password</strong>フィールドをMoodleに渡してください。<br />間違ったURLを設定することで、あなたのサイトから締め出されることになりますので注意してください。<br />デフォルトのログイン画面を使用する場合、空白のままにしてください。';
 $string['alternateloginurl'] = '代替ログインURL';
 $string['auth_changepasswordhelp'] = 'パスワード変更のヘルプ';
@@ -75,7 +75,7 @@ $string['chooseauthmethod_help'] = 'ここではユーザログイン時の認�
 $string['createpassword'] = 'パスワードを生成してユーザに通知する';
 $string['createpasswordifneeded'] = '必要に応じてパスワードを作成してメールで送信する';
 $string['emailchangecancel'] = 'メール変更をキャンセルする';
-$string['emailchangepending'] = '変更保留中です。あなたのメールアドレス {$a->preference_newemail} に送信されたメッセージ内リンクを開いてください。';
+$string['emailchangepending'] = '変更保留中です。あなたの {$a->preference_newemail} に送信されたリンクを開いてください。';
 $string['emailnowexists'] = 'あなたのプロファイルに割り当てようと試みたメールアドレスはリクエスト後、他のユーザに割り当てられています。このため、あなたのメールアドレス変更はキャンセルされました。あなたは他のメールアドレスを割り当てることができます。';
 $string['emailupdate'] = 'メールアドレス更新';
 $string['emailupdatemessage'] = '{$a->fullname} さん

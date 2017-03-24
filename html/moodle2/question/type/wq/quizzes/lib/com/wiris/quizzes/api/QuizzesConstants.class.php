@@ -14,6 +14,8 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	static $OPTION_FLOAT_FORMAT = "float_format";
 	static $OPTION_DECIMAL_SEPARATOR = "decimal_separator";
 	static $OPTION_DIGIT_GROUP_SEPARATOR = "digit_group_separator";
+	static $OPTION_STUDENT_ANSWER_PARAMETER = "answer_parameter";
+	static $OPTION_STUDENT_ANSWER_PARAMETER_NAME = "answer_parameter_name";
 	static $ANSWER_FIELD_TYPE_INLINE_EDITOR = "inlineEditor";
 	static $ANSWER_FIELD_TYPE_POPUP_EDITOR = "popupEditor";
 	static $ANSWER_FIELD_TYPE_TEXT = "textField";

@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = 'Mostrar puntuación del objetivo';
 $string['objectivex'] = 'Objetivo {$a}';
 $string['pluginname'] = 'Informe de objetivos';
+$string['status'] = 'estado';

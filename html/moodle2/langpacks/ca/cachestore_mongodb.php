@@ -44,6 +44,6 @@ mongodb://127.0.0.1:27017';
 $string['username'] = 'Nom d\'usuari';
 $string['username_help'] = 'El nom d\'usuari a utilitzar quan es faci la connexió';
 $string['usesafe'] = 'Mode segur';
-$string['usesafe_help'] = 'Si s\'habilita l\'opció mode segur s\'utilitzarà durant les operacions d\'inserció, obtenció i supressió. Si heu especificat una rèplica aquesta es forçarà en qualsevol cas.';
+$string['usesafe_help'] = 'Si s\'habilita l\'opció mode segur s\'utilitzarà durant les operacions d\'inserció, obtenció i supressió. Si heu especificat una rèplica, aquesta es forçarà en qualsevol cas.';
 $string['usesafevalue'] = 'Useu el valor per al mode segur';
 $string['usesafevalue_help'] = 'Podeu optar per proporcionar un valor específic per a l\'ús del mode segur. Això determinarà el nombre de servidors i les operacions que s\'han de completar abans que es consideri que s\'ha completat.';

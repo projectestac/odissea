@@ -33,6 +33,7 @@ $string['displayselect'] = 'Εμφάνιση';
 $string['displayselectexplain'] = 'Επιλέξτε τύπο εμφάνισης.';
 $string['modulename'] = 'Σελίδα';
 $string['modulenameplural'] = 'Σελίδες';
+$string['page:addinstance'] = 'Προσθήκη νέου πόρου σελίδας';
 $string['page:view'] = 'Εμφάνιση περιεχομένου σελίδας';
 $string['pluginname'] = 'Σελίδα';
 $string['popupheightexplain'] = 'Καθορίζει το προεπιλεγμένο ύψος του αναδυόμενου παράθυρου.';

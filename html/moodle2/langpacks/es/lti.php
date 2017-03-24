@@ -39,6 +39,7 @@ Algunos proveedores de herramientas admiten la opción de notificar las califica
 
 Tenga en cuenta que este ajuste puede estar invalidado en la configuración de la herramienta.';
 $string['action'] = 'Acción';
+$string['activate'] = 'Activar';
 $string['active'] = 'Activar';
 $string['activity'] = 'Actividad';
 $string['addnewapp'] = 'Habilitar aplicación externa';
@@ -48,6 +49,7 @@ $string['allow'] = 'Permitir';
 $string['allowinstructorcustom'] = 'Permitir a los instructores añadir parámetros personalizados';
 $string['allowsetting'] = 'Permitir que la herramienta almacene 8 K de ajustes en Moodle';
 $string['always'] = 'Siempre';
+$string['autoaddtype'] = 'Añadir herramienta';
 $string['automatic'] = 'Automático, basado en la URL de inicio';
 $string['baseurl'] = 'URL Base';
 $string['basiclti'] = 'LTI';
@@ -66,6 +68,7 @@ $string['cannot_delete'] = 'No puede eliminar esta configuración de la herramie
 $string['cannot_edit'] = 'No puede editar esta configuración de la herramienta.';
 $string['capabilities'] = 'Capacidades';
 $string['capabilities_help'] = 'Seleccione las capacidades que desee ofrecer al proveedor de la herramienta.  Se puede seleccionar más de una capacidad.';
+$string['capabilitiesrequired'] = 'Para activar esta herramienta es necesario el acceso a la siguiente información:';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Haga clic para continuar</a>';
 $string['comment'] = 'Comentario';
 $string['configpassword'] = 'Contraseña de Herramienta Externa por defecto';
@@ -76,7 +79,9 @@ $string['configresourceurl'] = 'URL del recurso por defecto';
 $string['configtoolurl'] = 'URL de la Herramienta Externa por defecto';
 $string['configtypes'] = 'Habilitar aplicaciones LTI';
 $string['configured'] = 'Configurado';
+$string['confirmtoolactivation'] = 'Esta seguro que desea activar la siguiente herramienta?';
 $string['courseid'] = 'Número ID del Curso';
+$string['courseinformation'] = 'Información del curso';
 $string['coursemisconf'] = 'El curso está mal configurado';
 $string['course_tool_types'] = 'Tipos de herramientas del curso';
 $string['createdon'] = 'Creado el';

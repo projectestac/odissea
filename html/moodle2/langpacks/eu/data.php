@@ -166,7 +166,7 @@ $string['failedpresetdelete'] = 'Errorea aurretiko ezarpena ezabatzean!';
 $string['fieldadded'] = 'Eremua gehitu da';
 $string['fieldallowautolink'] = 'Esteka automatikoa onartu da';
 $string['fielddeleted'] = 'Eremua ezabatu da';
-$string['fielddelimiter'] = 'Eremu-mugatzailea';
+$string['fielddelimiter'] = 'Eremu-bereizlea';
 $string['fielddescription'] = 'Eremuaren deskribapena';
 $string['fieldenclosure'] = 'Eremu-itxitura';
 $string['fieldheight'] = 'Altuera';
@@ -379,7 +379,7 @@ $string['uploadrecords'] = 'Datuak fitxategi batetik igo';
 $string['uploadrecords_help'] = 'Sarrerak testu-fitxategien bitartez igo daitezke. Fitxategiaren formatuak honelakoa izan behar du:
 
 * Fitxategiaren lerro bakoitzak erregistro bat dauka
-* Erregistro bakoitza komaz (edo beste mugatzaile batez) bereizitako datu-serie bat da
+* Erregistro bakoitza komaz (edo beste bereizle batez) bereizitako datu-serie bat da
 * Lehenengo erregistroak eremu-izenen zerrenda eduki behar du, eta fitxategiaren gainerakoaren formatua definituko du
 
 Eremu-itxitura da erregistro bakoitzaren eremu bakoitza inguratzen duen karaktere bat. Normalean ezarri gabe utzi daiteke.';

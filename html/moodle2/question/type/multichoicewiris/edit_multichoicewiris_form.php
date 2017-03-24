@@ -1,4 +1,18 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -7,36 +21,32 @@ require_once($CFG->dirroot . '/question/type/multichoice/edit_multichoice_form.p
 
 
 class qtype_multichoicewiris_edit_form extends qtype_wq_edit_form {
-    
+
     protected $base;
-    
+
     protected function definition_inner($mform) {
         global $CFG;
         parent::definition_inner($mform);
-        
-        $wirismulti = $mform->createElement('text', 'wirismulti', get_string('multichoicewiris_algorithm', 'qtype_multichoicewiris'), 
+
+        $wirismultialgstring = get_string('multichoicewiris_algorithm', 'qtype_multichoicewiris');
+        $wirismulti = $mform->createElement('text', 'wirismulti', $wirismultialgstring,
                 array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas'));
-        
-        //$wirishdr = $mform->createElement('header', 'wirishdr', 'WIRIS variables ');
-        $wirishdr = $mform->createElement('header', 'wirishdr', get_string('multichoicewiris_wiris_variables', 'qtype_multichoicewiris'));
 
-        if ($CFG->version>=2013051400) { // 2.5+
-            $placeToInsert = 'answerhdr';
-            $mform->_collapsibleElements['wirishdr']=FALSE;
+        $wirismultivarstring = get_string('multichoicewiris_wiris_variables', 'qtype_multichoicewiris');
+        $wirishdr = $mform->createElement('header', 'wirishdr', $wirismultivarstring);
+
+        if ($CFG->version >= 2013051400) { // 2.5+.
+            $placetoinsert = 'answerhdr';
+            $mform->_collapsibleElements['wirishdr'] = false;
         } else {
-            $placeToInsert = 'answerhdr[0]';
+            $placetoinsert = 'answerhdr[0]';
         }
-        $mform->insertElementBefore($wirishdr, $placeToInsert);
-        $mform->insertElementBefore($wirismulti, $placeToInsert);        
+        $mform->insertElementBefore($wirishdr, $placetoinsert);
+        $mform->insertElementBefore($wirismulti, $placetoinsert);
+    }
 
-        //$mform->insertElementBefore($wirishdr, 'answerhdr[0]');
-        //$mform->insertElementBefore($wirismulti, 'answerhdr[0]');
-    }    
-    
     public function qtype() {
         return 'multichoicewiris';
-    }	    
-    
-}
+    }
 
-?>
+}

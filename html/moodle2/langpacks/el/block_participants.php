@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['participants:addinstance'] = 'Προσθήκη νέου μπλοκ άτομα';
 $string['pluginname'] = 'Συμμετέχοντες';

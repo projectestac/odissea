@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Client ID';
-$string['configplugin'] = 'Einstellungen für Google Drive Plugin';
+$string['configplugin'] = 'Einstellungen für Google Drive';
 $string['googledocs:view'] = 'Google Drive Dateiverzeichnis anzeigen';
 $string['oauthinfo'] = '<p>Um dieses Plugin nutzen zu können, ist eine Registrierung bei Google erforderlich. Entsprechende Informationen finden Sie auf <a href="{$a->docsurl}">Google OAuth 2.0 Setup</a>.</p><p>Während der Registrierung müssen Sie folgende URL als \'Authorized Redirect URIs\' eingeben: <br />{$a->callbackurl}</p>Sie erhalten eine Client ID und ein Secret, mit denen Sie alle Plugins für Google Drive und Picasa konfigurieren können.</p><p>Der Service für \'Drive API\' muss zusätzlich aktiviert werden. </p>';
 $string['pluginname'] = 'Google Drive';

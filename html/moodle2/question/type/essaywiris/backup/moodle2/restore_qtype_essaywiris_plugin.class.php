@@ -14,14 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * @package    moodlecore
- * @subpackage backup-moodle2
- * @copyright  2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-
 defined('MOODLE_INTERNAL') || die();
 
 
@@ -40,52 +32,51 @@ class restore_qtype_essaywiris_plugin extends restore_qtype_essay_plugin {
     protected function define_question_plugin_structure() {
         $paths = array();
 
-        // Add own qtype stuff
+        // Add own qtype stuff.
         $elename = 'essay';
-        $xml_name = 'qtype_wq_essaywiris';
-        
-        // we used get_recommended_name() so this works
-        $elepath = $this->get_pathfor('/essay');
-        $xml_path = '/question_categories/question_category/questions/question/plugin_qtype_essaywiris_question/question_xml';
-        
-        $paths[] = new restore_path_element($elename, $elepath);
-        $paths[] = new restore_path_element($xml_name, $xml_path);
+        $xmlname = 'qtype_wq_essaywiris';
 
-        return $paths; // And we return the interesting paths
+        // We used get_recommended_name() so this works.
+        $elepath = $this->get_pathfor('/essay');
+        $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_essaywiris_question/question_xml';
+
+        $paths[] = new restore_path_element($elename, $elepath);
+        $paths[] = new restore_path_element($xmlname, $xmlpath);
+
+        return $paths; // And we return the interesting paths.
     }
-    
+
     public function process_qtype_wq_essaywiris($data) {
         global $DB;
-        
+
         $data = (object)$data;
         $data->xml = $this->decode_html_entities($data->xml);
         $oldid = $data->id;
 
-        // Detect if the question is created or mapped
+        // Detect if the question is created or mapped.
         $oldquestionid   = $this->get_old_parentid('question');
         $newquestionid   = $this->get_new_parentid('question');
-        $questioncreated = $this->get_mappingid('question_created', $oldquestionid) ? true : false;        
-        
+        $questioncreated = $this->get_mappingid('question_created', $oldquestionid) ? true : false;
 
-        // If the question has been created by restore, we need to fill 
-        // qtype_wq tables too
+        // If the question has been created by restore, we need to fill
+        // qtype_wq tables too.
         if ($questioncreated) {
-            // Adjust some columns
+            // Adjust some columns.
             $data->question = $newquestionid;
-            // Insert record
+            // Insert record.
             $newitemid = $DB->insert_record('qtype_wq', $data);
-            // Create mapping
+            // Create mapping.
             $this->set_mapping('qtype_wq', $oldid, $newitemid);
-        }   
-    }    
-    
-    function decode_html_entities($xml) {
+        }
+    }
+
+    protected function decode_html_entities($xml) {
         $htmlentitiestable = get_html_translation_table(HTML_ENTITIES, ENT_QUOTES, 'UTF-8');
         $xmlentitiestable = get_html_translation_table(HTML_SPECIALCHARS , ENT_COMPAT, 'UTF-8');
         $entitiestable = array_diff($htmlentitiestable, $xmlentitiestable);
         $decodetable = array_flip($entitiestable);
         $xml = str_replace(array_keys($decodetable), array_values($decodetable), $xml);
         return $xml;
-    }      
-    
+    }
+
 }

@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Προσωπικά αρχεία';
 $string['privatefiles'] = 'Προσωπικά αρχεία';
+$string['private_files:addinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία';
+$string['private_files:myaddinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία στη σελίδα Η αρχική μου';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Αναβαλλόμενη ανάδραση με CBM';
+$string['weightx'] = 'Βαρύτητα {$a}';

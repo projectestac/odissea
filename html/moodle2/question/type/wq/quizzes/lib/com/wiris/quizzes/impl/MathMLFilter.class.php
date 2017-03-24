@@ -27,23 +27,19 @@ class com_wiris_quizzes_impl_MathMLFilter implements com_wiris_quizzes_api_MathF
 		$sb->add(_hx_substr($html, $end, null));
 		return $sb->b;
 	}
-	public function writeImage($mathml, $s) {
+	public function cacheImage($mathml, $filename) {
 		$listener = new com_wiris_quizzes_impl_HttpSyncListener();
 		$h = new com_wiris_quizzes_impl_HttpImpl(com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/render", $listener);
 		$h->setParameter("mml", $mathml);
 		$h->request(true);
 		$response = $listener->getData();
 		$b = haxe_io_Bytes::ofString($response);
-		$s->writeBinary($b->b);
+		com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getImagesCache()->set($filename, $b);
 	}
 	public function mathml2img($mathml) {
 		$md5 = haxe_Md5::encode($mathml);
 		$filename = $md5 . ".png";
-		$path = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$CACHE_DIR) . "/" . $filename;
-		$s = com_wiris_system_Storage::newStorage($path);
-		if(!$s->exists()) {
-			$this->writeImage($mathml, $s);
-		}
+		$this->cacheImage($mathml, $filename);
 		$url = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=" . $filename;
 		return "<img src=\"" . $url . "\" align=\"middle\" />";
 	}

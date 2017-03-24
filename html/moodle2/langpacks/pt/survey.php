@@ -256,9 +256,9 @@ $string['surveysaved'] = 'O inquérito foi guardado';
 $string['surveytype'] = 'Tipo de inquérito';
 $string['surveytype_help'] = 'Existem 3 tipos de inquéritos disponíveis:
 
-* Inquérito de Atitudes perante e Pensamento e Aprendizagem  (ATTLS) - É uma ferramenta para medir de que forma uma pessoa é um \'conhecedor conectado\' (tem tendência a achar a aprendizagem com agradável. é habitualmente mais cooperativo e mais propenso a trabalhar com as ideias dos outros) ou um \'conhecedor isolado\' (tem tendência a  ter uma atitude mais crítica perante a aprendizagem).
+* Inquérito de Atitudes perante o Pensamento e a Aprendizagem  (ATTLS) - É uma ferramenta para medir de que forma uma pessoa é um \'conhecedor ligado\' (tem tendência a achar a aprendizagem agradável e é habitualmente mais cooperativo e mais propenso a trabalhar com as ideias dos outros) ou um \'conhecedor isolado\' (tem tendência a  ter uma atitude mais crítica perante a aprendizagem).
 * Inquérito de incidentes críticos
-* Inquérito sobre Ambiente de Aprendizagem On-line Construtivista (COLLES) – Para apurar em que medida a capacidade interativa da World Wide Web pode ser utilizada  para motivar os alunos com  práticas de aprendizagem dinâmica.';
+* Inquérito sobre Ambiente da Aprendizagem Online Construtivista (COLLES) – Para apurar em que medida a capacidade interativa da World Wide Web pode ser utilizada  para motivar os alunos com  práticas de aprendizagem dinâmica.';
 $string['surveytype_link'] = 'mod/inquérito/mod';
 $string['thanksforanswers'] = '{$a}, muito obrigado por responder ao inquérito';
 $string['time'] = 'Hora';

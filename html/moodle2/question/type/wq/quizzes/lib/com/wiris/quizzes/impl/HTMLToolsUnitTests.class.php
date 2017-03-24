@@ -5,6 +5,71 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		if(!php_Boot::$skip_constructor) {
 		$this->h = new com_wiris_quizzes_impl_HTMLTools();
 	}}
+	public function unitTestUtf8() {
+		$s = com_wiris_quizzes_impl_HTMLToolsUnitTests_0($this) . "a" . com_wiris_quizzes_impl_HTMLToolsUnitTests_1($this) . "a";
+		$i = com_wiris_system_Utf8::getIterator($s);
+		if(!$i->hasNext()) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if($i->next() !== 120120) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if(!$i->hasNext()) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if($i->next() !== 97) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if(!$i->hasNext()) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if($i->next() !== 960) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if(!$i->hasNext()) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if($i->next() !== 97) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+		if($i->hasNext()) {
+			com_wiris_quizzes_impl_HTMLToolsUnitTests::error();
+		}
+	}
+	public function unitTestParseCompoundAnswers() {
+		$inputs = new _hx_array(array("<math><mi>x</mi><mo>=</mo><semantics><mn>1</mn><annotation encoding=\"application/json\">[...]</annotation></semantics><mspace linebreak=\"newline\"/><mi>y</mi><mo>=</mo><semantics><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/json\">[...]</annotation></semantics></math>", "<math><mi>x</mi><mo>=</mo><semantics><mn>1</mn><annotation encoding=\"text/plain\">1</annotation></semantics><mspace linebreak=\"newline\"/><mi>y</mi><mo>=</mo><semantics><mn>2</mn></mrow><annotation encoding=\"text/plain\">2</annotation></semantics></math>"));
+		$outputs = new _hx_array(array(new _hx_array(array(new _hx_array(array("<math><mi>x</mi><mo>=</mo></math>", "<math><semantics><mn>1</mn><annotation encoding=\"application/json\">[...]</annotation></semantics></math>")), new _hx_array(array("<math><mi>y</mi><mo>=</mo></math>", "<math><semantics><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/json\">[...]</annotation></semantics></math>")))), new _hx_array(array(new _hx_array(array("<math><mi>x</mi><mo>=</mo></math>", "1")), new _hx_array(array("<math><mi>y</mi><mo>=</mo></math>", "2"))))));
+		$i = null;
+		{
+			$_g1 = 0; $_g = $inputs->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$c = new com_wiris_quizzes_impl_MathContent();
+				$c->set($inputs[$i1]);
+				$result = com_wiris_quizzes_impl_HTMLTools::parseCompoundAnswer($c);
+				if($result->length !== _hx_array_get($outputs, $i1)->length) {
+					throw new HException("Compound answer " . _hx_string_rec($i1, "") . " length mismatch");
+				}
+				$j = null;
+				{
+					$_g3 = 0; $_g2 = $result->length;
+					while($_g3 < $_g2) {
+						$j1 = $_g3++;
+						$line = $result[$j1];
+						if($line->length !== 2) {
+							throw new HException("Expecting two parts.");
+						}
+						if(!($line[0] === $outputs[$i1][$j1][0]) || !($line[1] === $outputs[$i1][$j1][1])) {
+							throw new HException("Failed test.\x0A" . "Expected: " . $outputs[$i1][$j1][0] . ";" . $outputs[$i1][$j1][0] . "\x0A" . "Got: " . $line[0] . ";" . $line[1]);
+						}
+						unset($line,$j1);
+					}
+					unset($_g3,$_g2);
+				}
+				unset($result,$j,$i1,$c);
+			}
+		}
+	}
 	public function implode($a, $tok) {
 		$sb = new StringBuf();
 		$i = null;
@@ -38,8 +103,8 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		$m->set("G", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>");
 		$m->set("X", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mfenced><mo>,</mo><mfenced open=\"{\" close=\"}\"><mrow><mn>3</mn><mo>,</mo><mn>4</mn></mrow></mfenced></mrow></mfenced></math>");
 		$variables->set(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML, $m);
-		$html = new _hx_array(array("<table><tr><td></table>", "<div><table class=\"table\"><tr class=\"tr1\"><td class=\"td1\">Header</td></tr><tr class=\"tr2\"><td class=\"td2\">#M</td></tr></table>", "<div><table><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>#M</td><td>#T</td></tr></tbody></table></div>", "<div><table><thead><tr><td>Label:</td><td>#M</td><td></td></tr></thead><tbody><tr><td>Value:</td><td>#T</td><td>#r</td></tr></tbody></table></div>", "<div><table><tr><td>#T</td></tr></table></div>", "<div><table><tr><td>Values:</td><td>#T</td><td>#r</td></tr></table></div>", "", "<table><tr></tr></table>", "<table><tr><td>#a</td></tr></table>", "<table><tr><th>title</th></tr><tr><td>#b</td></tr></table>", "<table><tr><td>#x</td><td>#y</td></tr></table>", "<table><tr><td>#x</td><td></td><td>#y</td><td> &nbsp; </td><td>  &#xa0;</td></tr></table>", "<table><tr><td>#x</td></tr> <tr><td></td></tr> <tr><td>#z</td></tr></table>", "<table><tr><td>#w</td><td>#x</td><td></td></tr> <tr><td></td><td></td><td></td></tr></table>", "<table><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>#G</td><td> </td></tr></tbody></table>", "<table><tbody><tr><td>A</td><td>#X</td></tr><tr><td>B</td><td></td></tr></tbody></table>"));
-		$res = new _hx_array(array("<table><tr><td></table>", "<div><table class=\"table\"><tr class=\"tr1\"><td class=\"td1\">Header</td></tr><tr class=\"tr2\"><td class=\"td2\">a</td></tr><tr class=\"tr2\"><td class=\"td2\">b</td></tr><tr class=\"tr2\"><td class=\"td2\">c</td></tr><tr class=\"tr2\"><td class=\"td2\">d</td></tr></table>", "<div><table class=\"wiristable\"><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>a</td><td>1</td></tr><tr><td>b</td><td>2</td></tr><tr><td>c</td><td>3</td></tr><tr><td>d</td><td>4</td></tr></tbody></table></div>", "<div><table class=\"wiristable\"><thead><tr><td>Label:</td><td>a</td><td>b</td><td>c</td><td>d</td><td></td></tr></thead><tbody><tr><td>Value:</td><td>1</td><td>2</td><td>3</td><td>4</td><td>#r</td></tr></tbody></table></div>", "<div><table class=\"wiristable\"><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table></div>", "<div><table class=\"wiristable\"><tr><td>Values:</td><td>1</td><td>2</td><td>3</td><td>4</td><td>#r</td></tr></table></div>", "", "<table><tr></tr></table>", "<table class=\"wiristable\"><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math></td></tr></table>", "<table class=\"wiristable\"><tr><th>title</th></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow></mfenced></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mn>2</mn><mo>,</mo><mn>4</mn></mrow></mfenced></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mn>3</mn><mo>,</mo><mn>9</mn></mrow></mfenced></math></td></tr></table>", "<table class=\"wiristable\"><tr><td>a</td><td>b</td><td>1</td><td>2</td><td>3</td></tr><tr><td>c</td><td>d</td><td>4</td><td>5</td><td>6</td></tr></table>", "<table class=\"wiristable\"><tr><td>a</td><td>b</td><td>1</td><td>2</td><td>3</td></tr><tr><td>c</td><td>d</td><td>4</td><td>5</td><td>6</td></tr></table>", "<table class=\"wiristable\"><tr><td>a</td><td>b</td></tr> <tr><td>c</td><td>d</td></tr> <tr><td>i</td><td>j</td></tr></table>", "<table class=\"wiristable\"><tr><td>i</td><td>a</td><td>b</td></tr> <tr><td>j</td><td>c</td><td>d</td></tr></table>", "<table class=\"wiristable\"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td></tr></tbody></table>", "<table class=\"wiristable\"><tbody><tr><td>A</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math></td></tr><tr><td>B</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math></td></tr></tbody></table>"));
+		$html = new _hx_array(array("<table><tr><td></table>", "<table><tr><td>X</td><td>#X</td><td></td></tr><tr><td>«math»«/math»</td><td></td><td></td></tr></table>", "<div><table class=\"table\"><tr class=\"tr1\"><td class=\"td1\">Header</td></tr><tr class=\"tr2\"><td class=\"td2\">#M</td></tr></table>", "<div><table><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>#M</td><td>#T</td></tr></tbody></table></div>", "<div><table><thead><tr><td>Label:</td><td>#M</td><td></td></tr></thead><tbody><tr><td>Value:</td><td>#T</td><td>#r</td></tr></tbody></table></div>", "<div><table><tr><td>#T</td></tr></table></div>", "<div><table><tr><td>Values:</td><td>#T</td><td>#r</td></tr></table></div>", "", "<table><tr></tr></table>", "<table><tr><td>#a</td></tr></table>", "<table><tr><th>title</th></tr><tr><td>#b</td></tr></table>", "<table><tbody><tr><td>numbers</td><td> </td><td> </td></tr><tr><td>#a</td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr></tbody></table>", "<table><tr><td>#x</td><td>#y</td></tr></table>", "<table><tr><td>#x</td><td></td><td>#y</td><td> &nbsp; </td><td>  &#xa0;</td></tr></table>", "<table><tr><td>#x</td></tr> <tr><td></td></tr> <tr><td>#z</td></tr></table>", "<table><tr><td>#w</td><td>#x</td><td></td></tr> <tr><td></td><td></td><td></td></tr></table>", "<table><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>#G</td><td> </td></tr></tbody></table>", "<table><tbody><tr><td>A</td><td>#X</td></tr><tr><td>B</td><td></td></tr></tbody></table>"));
+		$res = new _hx_array(array("<table><tr><td></table>", "<table class=\"wiristable\"><tr><td>X</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math></td></tr><tr><td>«math»«/math»</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math></td></tr></table>", "<div><table class=\"table\"><tr class=\"tr1\"><td class=\"td1\">Header</td></tr><tr class=\"tr2\"><td class=\"td2\">a</td></tr><tr class=\"tr2\"><td class=\"td2\">b</td></tr><tr class=\"tr2\"><td class=\"td2\">c</td></tr><tr class=\"tr2\"><td class=\"td2\">d</td></tr></table>", "<div><table class=\"wiristable\"><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>a</td><td>1</td></tr><tr><td>b</td><td>2</td></tr><tr><td>c</td><td>3</td></tr><tr><td>d</td><td>4</td></tr></tbody></table></div>", "<div><table class=\"wiristable\"><thead><tr><td>Label:</td><td>a</td><td>b</td><td>c</td><td>d</td><td></td></tr></thead><tbody><tr><td>Value:</td><td>1</td><td>2</td><td>3</td><td>4</td><td>#r</td></tr></tbody></table></div>", "<div><table class=\"wiristable\"><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table></div>", "<div><table class=\"wiristable\"><tr><td>Values:</td><td>1</td><td>2</td><td>3</td><td>4</td><td>#r</td></tr></table></div>", "", "<table><tr></tr></table>", "<table class=\"wiristable\"><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math></td></tr></table>", "<table class=\"wiristable\"><tr><th>title</th></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow></mfenced></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mn>2</mn><mo>,</mo><mn>4</mn></mrow></mfenced></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"{\" close=\"}\"><mrow><mn>3</mn><mo>,</mo><mn>9</mn></mrow></mfenced></math></td></tr></table>", "<table class=\"wiristable\"><tbody><tr><td>numbers</td><td> </td><td> </td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math></td></tr><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr></tbody></table>", "<table class=\"wiristable\"><tr><td>a</td><td>b</td><td>1</td><td>2</td><td>3</td></tr><tr><td>c</td><td>d</td><td>4</td><td>5</td><td>6</td></tr></table>", "<table class=\"wiristable\"><tr><td>a</td><td>b</td><td>1</td><td>2</td><td>3</td></tr><tr><td>c</td><td>d</td><td>4</td><td>5</td><td>6</td></tr></table>", "<table class=\"wiristable\"><tr><td>a</td><td>b</td></tr> <tr><td>c</td><td>d</td></tr> <tr><td>i</td><td>j</td></tr></table>", "<table class=\"wiristable\"><tr><td>i</td><td>a</td><td>b</td></tr> <tr><td>j</td><td>c</td><td>d</td></tr></table>", "<table class=\"wiristable\"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td></tr></tbody></table>", "<table class=\"wiristable\"><tbody><tr><td>A</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math></td></tr><tr><td>B</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math></td></tr></tbody></table>"));
 		$i = null;
 		{
 			$_g1 = 0; $_g = $html->length;
@@ -72,8 +137,8 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		}
 	}
 	public function unitTestMathMLToText() {
-		$mathml = new _hx_array(array("<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>F</mi><mo>+</mo><mi>C</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>0</mn><mo>·</mo><mi>x</mi><mi>y</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">sin</mi><mi>x</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></mfenced></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>", "<math><mfenced open=\"|\" close = \"|\"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>", "<math><mfenced><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>", "<math><msqrt><mn>2</mn></msqrt><mo>+</mo><mroot><mi>x</mi><mn>3</mn></mroot></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>α</mi><mo>+</mo><mn>1</mn></math>"));
-		$responses = new _hx_array(array("sin(x)+1", "#F+C", "2.0·xy", "sinx", "(1,0)", "1/3", "|((1,0),(0,1))|", "((1,0),(0,1))", "sqrt(2)+root(x,3)", "α+1"));
+		$mathml = new _hx_array(array("<math><mi>sin</mi><mi>x</mi></math>", "<math><mi>sin</mi><msup><mi>x</mi><mn>2</mn></msup></math>", "<math><mi>sin</mi><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi></math>", "<math><mi>sin</mi><mi>y</mi><msup><mi>x</mi><mn>2</mn></msup></math>", "<math><mi>sin</mi><mrow><mi>y</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></math>", "<math><mi>sin</mi><mrow><mi>y</mi><msup><mrow><mi>x</mi></mrow><mn>2</mn></msup></mrow></math>", "<math><mrow><mi>sin</mi></mrow><mrow><mi>y</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>cosh</mi><msqrt><mi>sin</mi><mfrac><mn>1</mn><mi>x</mi></mfrac></msqrt></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sinh</mi><mfrac><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>atan</mi><mroot><mi>y</mi><mn>6</mn></mroot></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mi>ln</mi><mi>x</mi></msqrt></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>#</mo><mi>F</mi><mo>+</mo><mi>C</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>0</mn><mo>·</mo><mi>x</mi><mi>y</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">sin</mi><mi>x</mi></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></mfenced></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>", "<math><mfenced open=\"|\" close = \"|\"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>", "<math><mfenced><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>", "<math><msqrt><mn>2</mn></msqrt><mo>+</mo><mroot><mi>x</mi><mn>3</mn></mroot></math>", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>α</mi><mo>+</mo><mn>1</mn></math>"));
+		$responses = new _hx_array(array("sinx", "sin(x^2)", "sin(x^2y)", "sin(yx^2)", "sin(yx^2)", "sin(yx^2)", "sin(yx^2)", "cosh(sqrt(sin(1/x)))", "sinh((x-1)/(x+1))", "atan(root(y,6))", "sqrt(lnx)", "sin(x)+1", "#F+C", "2.0·xy", "sinx", "(1,0)", "1/3", "|((1,0),(0,1))|", "((1,0),(0,1))", "sqrt(2)+root(x,3)", "α+1"));
 		$i = null;
 		{
 			$_g1 = 0; $_g = $mathml->length;
@@ -104,23 +169,25 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		}
 	}
 	public function unitTestReplaceVariablesInHTML() {
-		$texts = new _hx_array(array("<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo mathcolor=¨#FF0000¨»#«/mo»«mi mathcolor=¨#FF0000¨»a«/mi»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mi>#a1</mi></math>", "<math><mo>#</mo><mi>a</mi><mn>1</mn></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + #dif</p>", "a  «math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;»«mfrac»«mrow»«mi»#«/mi»«mi»a«/mi»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mi»#«/mi»«mi»b«/mi»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p>#a&#xa1;<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = #a1; ]]> </script> <select><option>#a</option><option>#a1</option></select></p>", "<math><mo>#</mo><mi>a</mi><mn>0</mn></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»#«/mo»«mi»§#945;«/mi»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" />&nbsp;i #&alpha;.</p>"));
+		$texts = new _hx_array(array("<table><tr><td>X</td><td>#X</td></tr><tr><td>«math»«/math»</td><td></td></tr></table>", "<table><tr><td>X</td><td><math xmlns=¨http://www.w3.org/1998/Math/MathML¨><msqrt><mo>#</mo><mi>X</mi></msqrt></math></td></tr><tr><td></td><td></td></tr></table>", "<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo mathcolor=¨#FF0000¨»#«/mo»«mi mathcolor=¨#FF0000¨»a«/mi»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mi>#a1</mi></math>", "<math><mo>#</mo><mi>a</mi><mn>1</mn></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + #dif</p>", "a  «math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;»«mfrac»«mrow»«mi»#«/mi»«mi»a«/mi»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mi»#«/mi»«mi»b«/mi»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p>#a&#xa1;<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = #a1; ]]> </script> <select><option>#a</option><option>#a1</option></select></p>", "<math><mo>#</mo><mi>a</mi><mn>0</mn></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»#«/mo»«mi»§#945;«/mi»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" />&nbsp;i #&alpha;.</p>"));
 		$mml = new Hash();
 		$mml->set("dif", "<math><mn>0</mn></math>");
 		$mml->set("a", "<math><mi>x</mi></math>");
 		$mml->set("b", "<math><mi>y</mi></math>");
 		$mml->set("a1", "<math><mi>z</mi></math>");
 		$mml->set("α", "<math><mn>2</mn></math>");
+		$mml->set("X", "<math><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mi>i</mi></mrow></mfenced></math>");
 		$txt = new Hash();
 		$txt->set("dif", "0");
 		$txt->set("a", "x");
 		$txt->set("b", "y");
 		$txt->set("a1", "z");
 		$txt->set("α", "2");
+		$txt->set("X", "{1,i}");
 		$v = new Hash();
 		$v->set(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML, $mml);
 		$v->set(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT, $txt);
-		$responses = new _hx_array(array("<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathcolor=¨#FF0000¨»«mrow»«mi»x«/mi»«/mrow»«/mstyle»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mrow><mi>z</mi></mrow></math>", "<math><mrow><mi>z</mi></mrow></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + <math><mn>0</mn></math></p>", "a  «math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mrow»«mrow»«mi»x«/mi»«/mrow»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mrow»«mi»y«/mi»«/mrow»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p><math><mi>x</mi></math>¡<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = z; ]]> </script> <select><option>x</option><option>z</option></select></p>", "<math><mrow><mrow><mi>x</mi></mrow><mo>0</mo></mrow></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mrow»«mn»2«/mn»«/mrow»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" /> i «math»«mn»2«/mn»«/math».</p>"));
+		$responses = new _hx_array(array("<table class=\"wiristable\"><tr><td>X</td><td>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«/math»</td></tr><tr><td>«math»«/math»</td><td>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»i«/mi»«/math»</td></tr></table>", "<table><tr><td>X</td><td><math xmlns=¨http://www.w3.org/1998/Math/MathML¨><msqrt><mrow><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mi>i</mi></mrow></mfenced></mrow></msqrt></math></td></tr><tr><td></td><td></td></tr></table>", "<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathcolor=¨#FF0000¨»«mrow»«mi»x«/mi»«/mrow»«/mstyle»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mrow><mi>z</mi></mrow></math>", "<math><mrow><mi>z</mi></mrow></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + <math><mn>0</mn></math></p>", "a  «math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mrow»«mrow»«mi»x«/mi»«/mrow»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mrow»«mi»y«/mi»«/mrow»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p><math><mi>x</mi></math>¡<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = z; ]]> </script> <select><option>x</option><option>z</option></select></p>", "<math><mrow><mrow><mi>x</mi></mrow><mo>0</mo></mrow></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mrow»«mn»2«/mn»«/mrow»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" /> i «math»«mn»2«/mn»«/math».</p>"));
 		$i = null;
 		{
 			$_g1 = 0; $_g = $texts->length;
@@ -199,9 +266,8 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 			}
 		}
 	}
-	public function unitTestDev() {
-	}
 	public function run() {
+		$this->unitTestParseCompoundAnswers();
 		$this->unitTestUpdateReservedWords();
 		$this->unitTestReplaceVariablesInHTML();
 		$this->unitTestVariableNames();
@@ -211,6 +277,8 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		$this->unitTestPrepareFormulasAlgorithm();
 		$this->unitTestMathMLToText();
 		$this->unitTestTables();
+		$this->unitTestParseCompoundAnswers();
+		$this->unitTestUtf8();
 	}
 	public $h;
 	public function __call($m, $a) {
@@ -224,8 +292,26 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 			throw new HException('Unable to call �'.$m.'�');
 	}
 	static function main() {
+		$argv = Sys::args();
 		$t = new com_wiris_quizzes_impl_HTMLToolsUnitTests();
 		$t->run();
 	}
+	static function error() {
+		throw new HException("String encoding error.");
+	}
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLToolsUnitTests'; }
+}
+function com_wiris_quizzes_impl_HTMLToolsUnitTests_0(&$�this) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(120120);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_HTMLToolsUnitTests_1(&$�this) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(960);
+		return $s->toString();
+	}
 }

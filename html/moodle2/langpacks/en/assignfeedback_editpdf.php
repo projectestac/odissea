@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Annotate students submissions directly in the browser
 $string['enabled'] = 'Annotate PDF';
 $string['enabled_help'] = 'If enabled, the teacher will be able to create annotated PDF files when marking the assignments. This allows the teacher to add comments, drawing and stamps directly on top of the students work. The annotating is done in the browser and no extra software is required.';
 $string['errorgenerateimage'] = 'Error generating image with ghostscript, debugging info: {$a}';
+$string['errorpdfpage'] = 'There was an error while generating this page.';
 $string['filter'] = 'Filter comments...';
 $string['generatefeedback'] = 'Generate feedback PDF';
 $string['generatingpdf'] = 'Generating the PDF...';

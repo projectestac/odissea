@@ -1,6 +1,9 @@
 <?php
 
 interface com_wiris_quizzes_api_ui_AuthoringField extends com_wiris_quizzes_api_ui_QuizzesField{
+	function showAnswerFieldPlainText($visible);
+	function showAnswerFieldPopupEditor($visible);
+	function showAnswerFieldInlineEditor($visible);
 	function showGradingFunction($visible);
 	function showAuxiliarCasReplaceEditor($visible);
 	function showAuxiliarCas($visible);

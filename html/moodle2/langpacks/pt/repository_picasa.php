@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID do Cliente';
 $string['configplugin'] = 'Configurações repositório "Picasa"';
-$string['oauthinfo'] = '<p>Para utilizar este modulo será necessário registar o seu site com o Google, como descrito na documentação  <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do processo de registo, será necessário digitar o seguinte URL \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um utilizador e senha que podem ser utilizados para configurar todos os módulos do Google Drive e do Picasa.</p>';
+$string['oauthinfo'] = '<p>Para utilizar este modulo será necessário registar o seu site com o Google, como descrito na documentação  <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do processo de registo, será necessário digitar o seguinte URL \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um  ID de cliente e uma Chave secreta que podem ser utilizados para configurar todos os módulos Google Drive e Picasa.</p>';
 $string['picasa:view'] = 'Ver repositório Picasa';
 $string['pluginname'] = 'Picasa';
 $string['secret'] = 'Senha';

@@ -29,6 +29,6 @@ $string['availableplugins'] = 'Eskura dauden pluginak';
 $string['configenableplagiarism'] = 'Honek aukera ematen dio kudeatzaileari plagio-pluginak  konfiguratzeko (instalatuta badaude)';
 $string['configplagiarismplugins'] = 'Mesedez, aukeratu konfiguratu nahi duzun plagio-plugina';
 $string['enableplagiarism'] = 'Plagio-pluginak gaitu';
-$string['manageplagiarism'] = 'Plagio-pluginak kudeatu';
+$string['manageplagiarism'] = 'Kudeatu plagio-pluginak';
 $string['nopluginsinstalled'] = 'Plagio-pluginak ez daude instalatuta';
 $string['plagiarism'] = 'Plagioa';

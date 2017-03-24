@@ -33,6 +33,7 @@ $string['ajaxfieldchanged'] = 'Orain editatzen ari zaren eremua aldatu da. Nahi 
 $string['eventgradereportviewed'] = 'Kalifikazioaren txostena ikusi da';
 $string['grader:manage'] = 'Kalifikatzailearen txostena kudeatu';
 $string['grader:view'] = 'Kalifikatzailearen txostena ikusi';
+$string['overriddengrade'] = 'Baliogabetutako kalifikazioa';
 $string['pluginname'] = 'Kalifikatzailea';
 $string['preferences'] = 'Kalifikatzailearen hobespenak';
 $string['useractivityfeedback'] = '{$a} feedback';

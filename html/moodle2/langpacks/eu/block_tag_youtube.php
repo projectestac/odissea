@@ -45,6 +45,7 @@ $string['numberofvideos'] = 'Bideo-kopurua';
 $string['peopleblogs'] = 'Jendea &amp; blogak';
 $string['petsanimals'] = 'Animaliak';
 $string['pluginname'] = 'YouTube';
+$string['requesterror'] = 'Ezin izan da zerbitzaritik daturik eskuratu. Jarri harremanetan zure kudeatzailearekin arazoa errepikatzen bada.';
 $string['scienceandtech'] = 'Zientzia &amp; Teknika';
 $string['sports'] = 'Kirolak';
 $string['tag_youtube:addinstance'] = 'Gehitu YouTube bloke berria';

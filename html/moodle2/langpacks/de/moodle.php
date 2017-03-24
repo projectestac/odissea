@@ -486,11 +486,12 @@ $string['deletecategorycheck2'] = 'Wenn Sie diesen Kursbereich gelöschen, müss
 $string['deletecategoryempty'] = 'Dieser Kursbereich ist leer.';
 $string['deletecheck'] = '{$a} löschen?';
 $string['deletecheckfiles'] = 'Sind Sie wirklich sicher, dass Sie diese Dateien löschen möchten?';
-$string['deletecheckfull'] = 'Möchten Sie wirklich das Nutzerkonto \'{$a}\' löschen, inclusive aller Einschreibungen, Aktivitäten und übrigen Daten?';
+$string['deletecheckfull'] = 'Möchten Sie wirklich das Nutzerkonto \'{$a}\' löschen, inklusive aller Einschreibungen, Aktivitäten und übrigen Daten?';
 $string['deletechecktype'] = 'Möchten Sie \'{$a->type}\' wirklich löschen?';
 $string['deletechecktypename'] = 'Möchten Sie das {$a->type}-Element \'{$a->name}\' wirklich löschen?';
 $string['deletecheckwarning'] = 'Sie sind dabei, diese Dateien zu löschen';
 $string['deletecomment'] = 'Kommentar löschen';
+$string['deletecommentbyon'] = 'Kommentar löschen, der von {$a->user} am {$a->time} gepostet wurde';
 $string['deletecompletely'] = 'Vollständig löschen';
 $string['deletecourse'] = 'Kurs löschen';
 $string['deletecoursecheck'] = 'Sind Sie sich wirklich sicher, dass Sie diesen Kurs und alle enthaltenen Daten löschen wollen?';
@@ -659,14 +660,14 @@ $string['emailpasswordchangeinfodisabled'] = 'Guten Tag {$a->firstname} {$a->las
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
-Bedauerlicherweise ist Ihr Zugang zu dieser Website deaktiviert und kann nicht automatisch zurückgesetzt werden. Wenden Sie sich bitte an die Administrator/innen der Website.
+Leider ist Ihr Zugang zu dieser Website deaktiviert und kann nicht automatisch zurückgesetzt werden. Wenden Sie sich bitte an die Administrator/innen der Website.
 
 {$a->admin}';
 $string['emailpasswordchangeinfofail'] = 'Guten Tag {$a->firstname} {$a->lastname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
-Das Kennwort kann jedoch nicht auf diesem Weg geändert werden. Wenden Sie sich bitte an die Administrator/innen der Website.
+Leider kann das Kennwort auf diesem Weg nicht geändert werden. Wenden Sie sich bitte an die Administrator/innen der Website.
 
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Kennwortinformation ändern';
@@ -1600,7 +1601,7 @@ $string['schedule'] = 'Planung';
 $string['screenshot'] = 'Bildschirmfoto';
 $string['search'] = 'Suchen';
 $string['searchagain'] = 'Erneut suchen';
-$string['searchbyemail'] = 'E-Mail-Adresse suchen';
+$string['searchbyemail'] = 'Über die E-Mail-Adresse suchen';
 $string['searchbyusername'] = 'Über den Anmeldenamen suchen';
 $string['searchcourses'] = 'Kurse suchen';
 $string['searchhelp'] = '<p>Sie können nach mehreren Begriffen gleichzeitig suchen.</p>
@@ -1933,7 +1934,7 @@ $string['userfiles'] = 'Nutzerdateien';
 $string['userlist'] = 'Nutzerliste';
 $string['usermenu'] = 'Nutzermenü';
 $string['username'] = 'Anmeldename';
-$string['usernameemail'] = 'Anmeldename';
+$string['usernameemail'] = 'Anmeldename / E-Mail';
 $string['usernameemailmatch'] = 'Anmeldename und E-Mail-Adresse passen nicht zusammen!';
 $string['usernameexists'] = 'Der Anmeldename ist bereits vergeben';
 $string['usernamelowercase'] = 'Es sind ausschließlich Kleinbuchstaben erlaubt';

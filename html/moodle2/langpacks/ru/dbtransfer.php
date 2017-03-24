@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['checkingsourcetables'] = 'Проверка структуры таблиц исходной базы данных';
 $string['copyingtable'] = 'Копирование таблицы {$a}';
 $string['copyingtables'] = 'Копирование содержимого таблиц';
-$string['creatingtargettables'] = 'Создание таблицы в целевой базе данных';
+$string['creatingtargettables'] = 'Создание таблиц в целевой базе данных';
 $string['dbexport'] = 'Экспорт базы данных';
 $string['dbtransfer'] = 'Перенос базы данных';
 $string['differenttableexception'] = 'Несоответствие структуры таблицы {$a}.';

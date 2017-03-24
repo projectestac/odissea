@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['messages:addinstance'] = 'Προσθέστε ένα νέο μπλοκ μηνυμάτων';
+$string['messages:myaddinstance'] = 'Προσθήκη νέου μπλοκ μηνυμάτων στην σελίδα Η αρχική μου';
 $string['pluginname'] = 'Μηνύματα';

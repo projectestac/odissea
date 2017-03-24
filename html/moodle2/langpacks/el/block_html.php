@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configcontent'] = 'Περιεχόμενο';
 $string['configtitle'] = 'Τίτλος';
+$string['html:addinstance'] = 'Προσθήκη νέου μπλοκ HTML';
+$string['html:myaddinstance'] = 'Προσθήκη νέου μπλοκ HTML στη σελίδα Η αρχική μου';
 $string['leaveblanktohide'] = 'Αφήστε κενό αυτό το πεδίο για να μην εμφανίζεται τίτλος';
 $string['newhtmlblock'] = '(Νέο μπλοκ HTML)';
 $string['pluginname'] = 'HTML';

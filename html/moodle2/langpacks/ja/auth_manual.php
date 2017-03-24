@@ -31,6 +31,6 @@ $string['expiration_desc'] = '指定された時間以降にパスワードが�
 $string['expiration_warning'] = '通知閾値';
 $string['expiration_warning_desc'] = 'パスワード有効期限に関する通知が送信されるまでの日数です。';
 $string['passwdexpire_settings'] = 'パスワード有効期限設定';
-$string['passwdexpiretime'] = 'パスワード持続時間';
+$string['passwdexpiretime'] = 'パスワード継続時間';
 $string['passwdexpiretime_desc'] = 'パスワードが無効となる時間の長さです。';
 $string['pluginname'] = '手動アカウント';

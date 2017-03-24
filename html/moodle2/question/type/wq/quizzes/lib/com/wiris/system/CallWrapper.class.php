@@ -39,7 +39,7 @@ class com_wiris_system_CallWrapper {
 		}
 	}
 	public function init($haxelib) {
-		if(!class_exists('php_Boot')) {
+		if(!class_exists('php_Boot', false)) {
 			$this->setErrorReporting(error_reporting());
 			require_once($haxelib . '/lib/php/Boot.class.php');;
 			$this->phpStop();

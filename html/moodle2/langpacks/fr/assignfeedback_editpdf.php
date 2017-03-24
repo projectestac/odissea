@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Annoter les devoirs remis directement dans le navigat
 $string['enabled'] = 'Annoter PDF';
 $string['enabled_help'] = 'Si ce réglage est activé, l\'enseignant peut créer des fichiers PDF annotés lors de l\'évaluation des devoirs. Ceci permet à l\'enseignant d\'ajouter des commentaires, des croquis et des tampons directement dans le travail des étudiants. L\'annotation s\'effectue dans le navigateur, sans nécessiter d\'autre logiciel.';
 $string['errorgenerateimage'] = 'Erreur lors de la création de l\'image au moyen de GhostScript. Information de débogage : {$a}';
+$string['errorpdfpage'] = 'Une erreur est survenue lors de la génération de cette page.';
 $string['filter'] = 'Filtrer les commentaires...';
 $string['generatefeedback'] = 'Générer le feedback PDF';
 $string['generatingpdf'] = 'Génération du PDF...';

@@ -70,6 +70,7 @@ $string['seeallblogs'] = 'Δείτε όλες τις καταχωρήσεις ι
 $string['select'] = 'Επιλέξτε';
 $string['showingfirsttags'] = 'Προβάλλονται οι {$a} περισσότερο δημοφιλείς ετικέτες';
 $string['tag'] = 'Ετικέτα';
+$string['tagarea_course_modules'] = 'Δραστηριότητες και πόροι';
 $string['tagarea_user'] = 'Ενδιαφέροντα χρήστη';
 $string['tagdescription'] = 'Περιγραφή ετικέτας';
 $string['taggedwith'] = 'σχετικό με "{$a}"';

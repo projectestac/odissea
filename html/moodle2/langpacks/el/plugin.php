@@ -45,6 +45,7 @@ $string['type_editor_plural'] = 'Συντάκτες';
 $string['type_enrol_plural'] = 'Μέθοδοι εγγραφής';
 $string['type_filter'] = 'Φίλτρο';
 $string['type_filter_plural'] = 'Φίλτρα κειμένου';
+$string['type_format'] = 'Τύπος μαθήματος';
 $string['type_format_plural'] = 'Τύποι μαθήματος';
 $string['type_gradeexport_plural'] = 'Μέθοδοι εξαγωγής βαθμών';
 $string['type_gradeimport_plural'] = 'Μέθοδοι εισαγωγής βαθμών';

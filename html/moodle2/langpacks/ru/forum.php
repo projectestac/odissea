@@ -410,7 +410,7 @@ $string['postaddedsuccess'] = 'Ваше сообщение успешно доб
 $string['postaddedtimeleft'] = 'Если Вы решите внести какие-то изменения, Вы сможете сделать это только в течение {$a}';
 $string['postbymailsuccess'] = 'Ваше сообщение форума с темой «{$a->subject}» было успешно добавлено. Вы можете просмотреть его на {$a->discussionurl}.';
 $string['postbymailsuccess_html'] = 'Ваше <a href="{$a->discussionurl}">сообщение на форуме</a> с темой «{$a->subject}» был успешно отправлено.';
-$string['postbyuser'] = '';
+$string['postbyuser'] = '{$a->post} от {$a->user}';
 $string['postincontext'] = 'Показать в контексте';
 $string['postmailinfo'] = 'Это копия сообщения с сайта {$a}. Чтобы ответить на него на сайте, проследуйте по этой ссылке:';
 $string['postmailinfolink'] = 'Это копия сообщения, опубликованного в курсе  «{$a->coursename}».

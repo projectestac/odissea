@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>quizzes</location>
+        <name>WIRIS QUIZZES engine</name>
+        <version>3.50.2.1022</version>
+        <license>GPL</license>
+        <licenseversion>3.0+</licenseversion>
+    </library>
+</libraries>

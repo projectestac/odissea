@@ -25,11 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configureblock'] = 'Ρύθμιση μπλοκ {$a}';
+$string['createdat'] = 'Αρχική θέση μπλοκ';
+$string['defaultregion'] = 'Προεπιλεγμένη περιοχή';
+$string['defaultweight'] = 'Προεπιλεγμένη βαρύτητα';
+$string['defaultweight_help'] = 'Η προεπιλεγμένη βαρύτητα σας επιτρέπει να επιλέξετε περίπου που θέλετε το μπλοκ να εμφανίζεται στην επιλεγμένη περιοχή, είτε στην κορυφή ή στο κάτω μέρος. Η τελική περιοχή υπολογίζεται από όλα τα μπλοκ στην εν λόγω περιοχή (για παράδειγμα, μόνο ένα μπλοκ μπορεί πραγματικά να είναι στην κορυφή). Η τιμή αυτή μπορεί να παρακαμφθεί σε συγκεκριμένες σελίδες, εάν απαιτείται.';
+$string['deleteblock'] = 'Διαγραφή μπλοκ {$a}';
 $string['deleteblockcheck'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το μπλοκ με τίτλο {$a};';
+$string['deletecheck'] = 'Διαγραφή μπλοκ {$a};';
+$string['hideblock'] = 'Απόκρυψη μπλοκ {$a}';
 $string['hidepanel'] = 'Απόκρυψη πίνακα';
+$string['moveblock'] = 'Μετακίνηση μπλοκ {$a}';
+$string['moveblockafter'] = 'Μετακίνηση μπλοκ μετά το μπλοκ {$a}';
+$string['moveblockbefore'] = 'Μετακίνηση μπλοκ πριν από το μπλοκ {$a}';
 $string['onthispage'] = 'Σε αυτή τη σελίδα';
 $string['pagetypes'] = 'Τύποι σελίδας';
 $string['region'] = 'Περιοχή';
+$string['showblock'] = 'Εμφάνιση μπλοκ {$a}';
 $string['subpages'] = 'Επιλέξτε σελίδες';
 $string['visible'] = 'Ορατός';
 $string['weight'] = 'Βάρος';
+$string['wherethisblockappears'] = 'Που εμφανίζεται αυτό το μπλοκ';

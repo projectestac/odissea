@@ -139,6 +139,7 @@ $string['defaultteam'] = 'Grupo predeterminado';
 $string['deleteallsubmissions'] = 'Borrar todas las entregas';
 $string['description'] = 'Descripción';
 $string['downloadall'] = 'Descargar todas las entregas';
+$string['downloadasfolders'] = 'Descargar envíos en carpetas';
 $string['downloadselectedsubmissions'] = 'Descargar los envíos seleccionados';
 $string['duedate'] = 'Fecha de entrega';
 $string['duedatecolon'] = 'Fecha de vencimiento: {$a}';
@@ -179,6 +180,7 @@ $string['eventsubmissionunlocked'] = 'Las entregas se han desbloqueado para un u
 $string['eventsubmissionupdated'] = 'Envío actualizado.';
 $string['eventsubmissionviewed'] = 'Envío visto.';
 $string['eventworkflowstateupdated'] = 'El estado del flujo de trabajo ha sido actualizado.';
+$string['expandreviewpanel'] = 'Expandir panel de revisión';
 $string['extensionduedate'] = 'Ampliar plazo';
 $string['extensionnotafterduedate'] = 'La fecha de ampliación de plazo debe ser posterior a la de entrega de la tarea';
 $string['extensionnotafterfromdate'] = 'El plazo extra debe ser posterior a la fecha permitida para el envío';
@@ -205,6 +207,7 @@ $string['filtersubmitted'] = 'Enviada';
 $string['gradeabovemaximum'] = 'La calificación debe ser menor o igual que {$a}';
 $string['gradebelowzero'] = 'La calificación deve ser igual o menos que {$a}';
 $string['gradecanbechanged'] = 'La calificación puede ser cambiada';
+$string['gradechangessaveddetail'] = 'Los cambios a la calificación y a la retroalimentación fueron guardados';
 $string['graded'] = 'Calificado';
 $string['gradedby'] = 'Calificado por';
 $string['gradedon'] = 'Calificado sobre';
@@ -272,12 +275,14 @@ $string['maxperpage'] = 'Máximo número de entregas por página';
 $string['maxperpage_help'] = 'El número máximo de entregas a calificar que pueden ser mostradas en la página de calificaciones. Es útil para prevenir timeouts en cursos con un gran número de usuarios.';
 $string['messageprovider:assign_notification'] = 'Notificaciones de tareas';
 $string['modulename'] = 'Tarea';
-$string['modulename_help'] = 'El módulo de Tareas permite a un profesor evaluar el aprendizaje de los alumnos mediante la creación de una tarea a realizar que luego revisará, valorará y calificará.
+$string['modulename_help'] = 'El módulo de Tareas permite a un profesor evaluar el aprendizaje de los alumnos mediante la creación de una tarea a realizar que luego revisará, valorará, calificará y a la que podrá dar retroalimentación.
 
-Los alumnos pueden presentar cualquier contenido digital (archivos), como documentos de texto, hojas de cálculo, imágenes, audio y vídeos entre otros.
-Alternativamente, o como complemento, la tarea puede requerir que los estudiantes escriban texto directamente en un campo utilizando el editor de texto. Una tarea también puede ser utilizada para recordar a los estudiantes tareas del "mundo real" que necesitan realizar y que no requieren la entrega de ningún tipo de contenido digital.
+Los alumnos pueden presentar cualquier contenido digital, como documentos de texto, hojas de cálculo, imágenes, audio y vídeos entre otros. Alternativamente, o como complemento, la tarea puede requerir que los estudiantes escriban texto directamente en un campo utilizando el editor de texto.
+Una tarea también puede ser utilizada para recordar a los estudiantes tareas del "mundo real" que necesitan realizar y que no requieren la entrega de ningún tipo de contenido digital. Por ejemplo, presentaciones orales, prácticas de laboratorio, etc.
 
-Al revisar las tareas, los profesores pueden dejar comentarios de retroalimentación y subir archivos, tales como anotaciones a los envíos de los estudiantes,  documentos con observaciones o comentarios en audio. Las tareas  pueden ser clasificadas según una escala numérica o según una escala personalizada, o bien, mediante un método de calificación avanzada, como una rúbrica. Las calificaciones finales se registran en el libro de calificaciones.';
+Para tareas en grupo, el modulo tiene la capacidad de aceptar tareas de uno de los miembros del grupo y que está quede vinculada al resto.
+
+Durante el proceso de revisión los profesores pueden dejar comentarios y subir archivos, tales como trabajos calificados, documentos con observaciones escritas. Las tareas  pueden ser calificadas usando una escala numérica o una escala personalizada; o usando métodos de calificación complejos como rúbricas. Las calificaciones finales se actualizan automáticamente en el módulo de calificaciones.';
 $string['modulenameplural'] = 'Tareas';
 $string['moreusers'] = '{$a} más...';
 $string['multipleteams'] = 'Miembro de más de un grupo.';
@@ -300,6 +305,7 @@ $string['notgraded'] = 'Sin calificar';
 $string['notgradedyet'] = 'No calificado aún';
 $string['notifications'] = 'Avisos';
 $string['notsubmittedyet'] = 'Aún no ha enviado esta tarea';
+$string['nousers'] = 'Sin usuarios';
 $string['nousersselected'] = 'Sin usuarios seleccionados';
 $string['numberofdraftsubmissions'] = 'Borradores';
 $string['numberofparticipants'] = 'Participantes';
@@ -313,6 +319,7 @@ $string['outof'] = '{$a->current} de {$a->total}';
 $string['overdue'] = '<font color="red">La Tarea está retrasada por: {$a}</font>';
 $string['page-mod-assign-view'] = 'Página principal del módulo tareas y entregas';
 $string['page-mod-assign-x'] = 'Cualquier página del módulo tarea';
+$string['paramtimeremaining'] = '{$a} restante';
 $string['participant'] = 'Participante';
 $string['pluginadministration'] = 'Administración de tareas';
 $string['pluginname'] = 'Tarea';
@@ -378,6 +385,7 @@ $string['submissiondrafts_help'] = 'Si está habilitado, los estudiantes tendrá
 $string['submissioneditable'] = 'El estudiante puede editar esta entrega';
 $string['submissionempty'] = 'No se ha presentado nada.';
 $string['submissionlog'] = 'Estudiante: {$a->fullname}, Estado: {$a->status}';
+$string['submissionmodified'] = 'Tienes datos de envío existentes. Por favor sal de esta página e inténtalo de nuevo.';
 $string['submissionnotcopiedinvalidstatus'] = 'El envío no se ha copiado porque ha sido editado desde que se volvió a abrir.';
 $string['submissionnoteditable'] = 'El estudiante no puede editar esta entrega';
 $string['submissionnotready'] = 'Esta tarea no está lista para enviar.';
@@ -449,6 +457,7 @@ $string['unlimitedpages'] = 'Ilimitado';
 $string['unlocksubmissionforstudent'] = 'Permitir entregas al usuario: (id={$a->id}, nombre={$a->fullname}).';
 $string['unlocksubmissions'] = 'Desbloquear entregas';
 $string['unsavedchanges'] = 'Cambios sin guardar';
+$string['unsavedchangesquestion'] = 'Hay cambios no guardados en las notas o en la retroalimentación. ¿Desea guardar los cambios y continuar?';
 $string['updategrade'] = 'Actualizar calificación';
 $string['updatetable'] = 'Guardar y actualizar tabla';
 $string['upgradenotimplemented'] = 'Actualización no implementada en la extensión ({$a->type} {$a->subtype})';

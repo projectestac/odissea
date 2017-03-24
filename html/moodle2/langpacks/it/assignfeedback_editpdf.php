@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Consente di annotare con il browser le consegne degli
 $string['enabled'] = 'Annotazione PDF';
 $string['enabled_help'] = 'I docenti potranno annotare file PDF durante la valutazione dei compiti, aggiungendo commenti, segni e timbri sulla consegna degli studenti. Per annotare non sono necessari software aggiuntivi, è sufficiente il browser.';
 $string['errorgenerateimage'] = 'Si è verificato un errore durante la generazione dell\'immagine con ghostscript, informazioni di debug: {$a}';
+$string['errorpdfpage'] = 'Si è verificato un errore durante la generazione della pagina.';
 $string['filter'] = 'Filtra commenti...';
 $string['generatefeedback'] = 'Genera feedback PDF';
 $string['generatingpdf'] = 'Generazione PDF in corso...';

@@ -66,6 +66,12 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 			return $this->id !== null;
 		}
 	}
+	public function getProperty($name) {
+		return $this->getImpl()->getProperty($name);
+	}
+	public function setProperty($name, $value) {
+		$this->getImpl()->setProperty($name, $value);
+	}
 	public function getAlgorithm() {
 		return $this->getImpl()->getAlgorithm();
 	}

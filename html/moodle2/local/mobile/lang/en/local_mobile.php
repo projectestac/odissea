@@ -41,3 +41,32 @@ $string['enableadditionalservicedescription'] = 'This service must be enabled.';
 $string['allowpermissions'] = 'Grant permissions to the authenticated user role';
 $string['allowpermissionsdescription'] = 'Edit the Authenticated user role and allow the capability moodle/webservice:createtoken';
 $string['clickheretolaunchtheapp'] = 'Please, click here if the app does not open automatically';
+
+$string['customlangstrings'] = 'Custom language strings';
+$string['customlangstrings_desc'] = 'Words and phrases displayed in the app can be customised here. Enter each custom language string on a new line with format: string identifier, custom language string and language code, separated by pipe characters. For example:
+<pre>
+mm.user.student|Learner|en
+mm.user.student|Aprendiz|es
+</pre>
+For a complete list of string identifiers see <a href="https://github.com/moodlehq/moodlemobile-phonegapbuild/blob/master/build/lang/en.json">this list</a>.';
+
+$string['custommenuitems'] = 'Custom menu items';
+$string['custommenuitems_desc'] = 'Additional items can be added to the app\'s main menu by specifying them here. Enter each custom menu item on a new line with format: item text, link URL, link-opening method (inappbrowser, browser or embedded) and language code (optional, for displaying the item to users of the specified language only), separated by pipe characters. For example:
+<pre>
+App\'s help | https://someurl.xyz/help | inappbrowser | en
+Visit our SIS | https://someurl.xyz | browser | en
+My grades | https://someurl.xyz/local/mygrades/index.php | embedded | en
+Mis calificaciones | https://someurl.xyz/local/mygrades/index.php | embedded | es
+</pre>
+Use inappbrowser when you want to open the link in a browser without leaving the app, use browser for opening the link in the device default browser and embedded if you want to display the link embedded in a new page in the app.';
+
+$string['disabledfeatures'] = 'Disabled features';
+$string['disabledfeatures_desc'] = 'Select here the features you want to disable in the Mobile app for your site. Please note that some features listed here could be already disabled via other site settings. You will have to log out and log in again in the app to see the changes.';
+
+$string['forcelogout'] = 'Force log out';
+$string['forcelogout_desc'] = 'If enabled, the app option \'Change site\' is replaced by \'Log out\'. This results in the user being completely logged out. They must then re-enter their password the next time they wish to access the site.';
+
+$string['mainmenu'] = 'Main menu';
+$string['mobilefeatures'] = 'Mobile features';
+$string['notifications'] = 'Notifications';
+$string['remoteaddons'] = 'Remote add-ons';

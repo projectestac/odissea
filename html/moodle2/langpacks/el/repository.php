@@ -67,6 +67,7 @@ $string['download'] = 'Μεταφόρτωση';
 $string['downloadfolder'] = 'Μεταφόρτωση όλων';
 $string['downloadsucc'] = 'Το αρχείο μεταφορτώθηκε με επιτυχία';
 $string['editrepositoryinstance'] = 'Επεξεργασία στιμιότυπου χώρου αποθήκευσης';
+$string['emptylist'] = 'Κενή λίστα';
 $string['emptytype'] = 'Αποτυχία δημιουργίας τύπου χώρου αποθήκευσης: το όνομα του τύπου είναι κενό';
 $string['enablecourseinstances'] = 'Ενεργοποίηση χώρων αποθήκευσης μαθήματος';
 $string['enableuserinstances'] = 'Ενεργοποίηση χώρων αποθήκευσης χρήστη';

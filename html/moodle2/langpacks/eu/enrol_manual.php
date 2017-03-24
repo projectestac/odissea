@@ -33,30 +33,46 @@ $string['browsecohorts'] = 'Arakatu kohorteak';
 $string['browseusers'] = 'Arakatu erabiltzaileak';
 $string['confirmbulkdeleteenrolment'] = 'Ziur al zaude erabiltzaile hauen matrikula ezabatu nahi duzula?';
 $string['defaultperiod'] = 'Berezko matrikulazio-aldia';
+$string['defaultperiod_desc'] = 'Matrikulazioaren berezko iraupena. Zerora ezarriz gero, matrikulazioa berez mugarik gabekoa izango da.';
+$string['defaultperiod_help'] = 'Matrikulazioaren berezko iraupena, erabiltzailea matrikulatu deneko unetik hasita. Desgaituz gero, matrikulazioa berez mugarik gabekoa izango da.';
+$string['defaultstart'] = 'Matrikulazioaren berezko hasiera';
 $string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaileen matrikulak';
 $string['editselectedusers'] = 'Editatu aukeratutako erabiltzaileen matrikulak';
 $string['enrolledincourserole'] = '"{$a->course}" ikastaroan "{$a->role}" rola ezarrita';
 $string['enrolusers'] = 'Matrikulatu erabiltzaileak ';
+$string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['expirymessageenrolledbody'] = 'Kaixo {$a->user},
 
 Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko dela jakinarazteko da.
 
 Laguntzarik behar baduzu, jarri harremanetan {$a->enroller}-(r)ekin.';
 $string['expirymessageenrolledsubject'] = 'Matrikulazio-amaieraren jakinarazpena';
+$string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazioa hurrengo {$a->threshold} iraungituko da hurrengo erabiltzaileentzat:
+
+{$a->users}
+
+Euren matrikulazioa luzatzeko, sartu hemen {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Matrikulazio-amaieraren jakinarazpena';
 $string['manual:config'] = 'Konfiguratu eskuzko matrikulaziorako instantziak';
 $string['manual:enrol'] = 'Matrikulatu erabiltzaileak ';
 $string['manual:manage'] = 'Erabiltzaileen matrikulak kudeatu';
+$string['manualpluginnotinstalled'] = '"Manual" gehigarria ez da oraindik instalatu';
 $string['manual:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['manual:unenrolself'] = 'Norbera ikastararotik desmatrikulatu';
 $string['messageprovider:expiry_notification'] = 'Eskuzko matrikulazio-amaieraren jakinarazpenak';
+$string['now'] = 'Orain';
 $string['pluginname'] = 'Eskuzko matrikulazioa';
+$string['pluginname_desc'] = 'Eskuzko matrikulazio gehigarriak erabiltzaileak eskuz matrikulatzea ahalbidetzen dio baimenak dituen erabiltzaile bati (irakaslea adibidez) ikastaroaren kudeaketa ezarpenetako esteka baten bitartez. Gehigarria normalean gaituta egon beharko litzateke, kontuan izanda beste matrikulazio-gehigarri batzuk (matrikulazio automatikoa adibidez) horren beharra dutela.';
 $string['status'] = 'Gaitu eskuzko matrikulazioa';
+$string['status_desc'] = 'Baimendu ikastarorako sarbidea barruan matrikulatutako erabiltzaileei. Hau gaituta mantendu beharko litzateke kasu gehienetan.';
 $string['statusdisabled'] = 'Desgaituta';
 $string['statusenabled'] = 'Gaituta';
+$string['status_help'] = 'Ezarpen honek erabiltzaileak eskuz matrikulatu ahalko diren zehazten du, baimenak dituen erabiltzaile batek ikastaroaren kudeaketa-ezarpenetan duen esteka baten bitartez.';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselectedusers'] = 'Desmatrikulatu aukeratutako erabiltzaileak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';
 $string['unenroluser'] = 'Ziur al zaude  "{$a->user}" desmatrikulatu nahi duzula "{$a}" ikastarotik?';
 $string['unenrolusers'] = 'Desmatrikulatu erabiltzaileak';
+$string['wscannotenrol'] = 'Gehigarriaren instantziak ezin du erabiltzailea id = {$a->courseid} duen ikastaroan eskuz matrikulatu.';
+$string['wsnoinstance'] = 'Eskuzko matrikulazio gehigarriaren instantzia ez da existitzen edo ikastaro honentzako (id = {$a->courseid}) desgaituta dago';
 $string['wsusercannotassign'] = 'Ez duzu baimenik ({$a->roleid}) rola ({$a->userid}) erabiltzaileari ({$a->courseid}) ikastaroan esleitzeko.';

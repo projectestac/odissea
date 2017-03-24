@@ -211,7 +211,7 @@ $string['editverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} bearbei
 $string['enableajax'] = 'Ajax aktivieren';
 $string['enableajax_help'] = 'Ajax-Funktionalität für die Bewerterübersicht bereitstellen, um allgemeine Operationen zu vereinfachen und zu beschleunigen. Ajax arbeitet mit JavaScript, das deswegen anwenderseits im Webbrowser aktiviert sein muss.';
 $string['enableoutcomes'] = 'Lernziele aktivieren';
-$string['enableoutcomes_help'] = 'Unterstützung für Lernziele (auch Lernkompetenzen, -ergebnisse, -standards, -kriterien genannt) meint, dass Dinge in einer oder mehreren Skalen bewertet werden können. Die Aktivierung der Lernziele macht eine Bewertung auf der gesamten Website möglich.';
+$string['enableoutcomes_help'] = 'Wenn die Option aktiviert ist, können Elemente mit einer oder mehreren Skalen bewertet werden, die an Outcome-Anweisungen gebunden sind.';
 $string['encoding'] = 'Kodierung';
 $string['encoding_help'] = 'Wählen Sie die Zeichencodierung aus, die für diese Daten benutzt wird (standardmäßig UTF-8). Bei einer falschen Zeichencodierung wird diese in der Datenvorschau sichtbar.';
 $string['errorcalculationbroken'] = 'Zirkelverweis oder unvollständige Berechnungsformel';
@@ -505,13 +505,27 @@ $string['modgradecantchangegradetypemsg'] = 'Einige Bewertungen wurden bereits v
 $string['modgradecantchangegradetyporscalemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass Bewertungstyp und -skala nicht mehr verändert werden können.';
 $string['modgradecantchangeratingmaxgrade'] = 'Sie können den Maximalwert nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
 $string['modgradecantchangescale'] = 'Sie können die Skalierung nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
+$string['modgradecategorycantchangegradetypemsg'] = 'Diese Kategorie ist mit Bewertungen verbunden, die überschrieben wurden. Der Bewertungstyp kann nicht geändert werden, weil einige Bewertungen bereits vorgenommen wurden. Wenn Sie die Maximalbewertung ändern wollen, müssen Sie zunächst entscheiden ob bereits existierende Bewertungen geändert werden sollen.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'Diese Kategorie ist mit Bewertungen verbunden, die überschrieben wurden. Der Bewertungstyp kann nicht geändert werden, weil einige Bewertungen bereits vorgenommen wurden.';
 $string['modgradecategoryrescalegrades'] = 'Überschriebene Bewertungen neu skalieren';
+$string['modgradecategoryrescalegrades_help'] = 'Wenn Sie die Maximalbewertung eines Items in den Bewertungen ändern, müssen Sie zunächst festlegen, ob bereits existierende prozentuale Bewertungen ebenfalls geändert werden sollen.
+
+Wenn Sie "Ja" auswählen, werden bereits existierende, überschriebene Bewertungen neu skaliert und der Prozenanteil bleibt gleich.
+
+Beispiel für Auswahl von "Ja":  Bei der Änderung der Maximalbewertung eines Items von 10 auf 20 wird die Bewertung von 6/10 (60%) neu skaliert auf 12/60 (60%).
+Bei der Auswahl von "Nein" bleibt die Bewertung unverändert und muss manuell angepasst werden, um korrekte Scores sicherzustellen.';
 $string['modgradedonotmodify'] = 'Existierende Bewertungen nicht ändern';
 $string['modgradeerrorbadpoint'] = 'Ungültiger Bewertungswert. Es muss ein ganzzahliger Wert zwischen 1 und {$a} sein.';
 $string['modgradeerrorbadscale'] = 'Falsche Skala ausgewählt. Bite wählen Sie eine der vorhandenen Skalen aus.';
 $string['modgrade_help'] = 'Wählen Sie die Art der Bewertung für diese Aktivität aus. Wenn Sie z.B. Skala auswählen, steht ein DropDown-Feld mit einer Skala zur Auswahl zur Verfügung. Wenn Sie Punkt-Bewertung auswählen, so können Sie die Höchstpunktzahl für diese Aktivität auswählen.';
 $string['modgrademaxgrade'] = 'Maximalpunkte';
 $string['modgraderescalegrades'] = 'Existierender Bewertungen neuskalieren';
+$string['modgraderescalegrades_help'] = 'Wenn Sie die Maximalbewertung eines Items in den Bewertungen ändern, müssen Sie zunächst festlegen, ob bereits existierende prozentuale Bewertungen ebenfalls geändert werden sollen.
+
+Wenn Sie "Ja" auswählen, werden bereits existierende Bewertungen neu skaliert und der Prozenanteil bleibt gleich.
+
+Beispiel für Auswahl von "Ja":  Bei der Änderung der Maximalbewertung eines Items von 10 auf 20 wird die Bewertung von 6/10 (60%) neu skaliert auf 12/60 (60%).
+Bei der Auswahl von "Nein" würde die Bewertung von 6/10 (60%) geändert zu 6/20 (30%) und muss manuell angepasst werden, um korrekte Scores sicherzustellen';
 $string['modgradetype'] = 'Typ';
 $string['modgradetypenone'] = 'Kein';
 $string['modgradetypepoint'] = 'Punkt';
@@ -694,7 +708,9 @@ $string['showanalysisicon'] = 'Bewertungssymbole zeigen';
 $string['showanalysisicon_desc'] = 'Soll das Symbol zur Bewertungsanalyse standardmässig angezeigt werden? Wenn die Aktivität die Funktion unterstützt wird ein Link mit einer detaillierten Erläuterung der Bewertung angezeigt.';
 $string['showanalysisicon_help'] = 'Wenn die Aktivität die Funktion unterstützt wird ein Link mit einer detaillierten Erläuterung der Bewertung angezeigt.';
 $string['showaverage'] = 'Mittelwert anzeigen';
-$string['showaverage_help'] = 'Spalte für Durchschnittsergebnis anzeigen? Beachten Sie, dass es Teilnehmern möglich sein könnte, die Bewertung von anderen Teilnehmern zu schätzen, falls der Durchschnitt von einer kleinen Zahl an Bewertungen berechnet wird. Aus Gründen der Darbietung wird der Durchschnitt geschätzt, wenn er von versteckten Elemente abhängt.';
+$string['showaverage_help'] = 'Spalte mit Durchschnittswertung anzeigen?
+
+Beachten Sie, dass die Teilnehmer/innen fremde Bewertungen abschätzen können, wenn der Durchschnitt aus einer kleinen Anzahl berechnet wird. Aus Performancegründen ist der Durchschnitt ungenau, wenn er von versteckten Elementen abhängig ist.';
 $string['showaverages'] = 'Spaltendurchschnitt anzeigen';
 $string['showaverages_help'] = 'Spaltendurchschnitte in der Bewerterübersicht anzeigen';
 $string['showcalculations'] = 'Berechnungen anzeigen';
@@ -729,7 +745,7 @@ $string['shownumberofgrades_help'] = 'Anzahl der erfassten Bewertungen in Klamme
 $string['showonlyactiveenrol'] = 'Nur aktive Einschreibungen anzeigen';
 $string['showonlyactiveenrol_help'] = 'Diese Option legt fest, dass nur aktiv eingeschriebene Nutzer/innen in der Bewertungsübersicht angezeigt werden. Wenn die Option aktiviert ist, werden gesperrte Nutzer/innen nicht angezeigt.';
 $string['showpercentage'] = 'Prozentwerte anzeigen';
-$string['showpercentage_help'] = 'Legt fest, ob Prozentwerte für jede Bewertung angezeigt werden.';
+$string['showpercentage_help'] = 'Prozentwerte für jede Bewertung anzeigen?';
 $string['showquickfeedback'] = 'Schnelles Feedback anzeigen';
 $string['showquickfeedback_help'] = 'Schnelles Feedback stellt ein Texteingabefeld zu jeder Einzelbewertung zur Verfügung. Auf einer Seite können dann viele Bewertungen auf einmal bearbeitet werden. Die Schaltfläche \'Aktualisieren\' erlaubt alle Änderungen auf einmal abzuspeichern.';
 $string['showrange'] = 'Spannbreite anzeigen';
@@ -737,7 +753,7 @@ $string['showrange_help'] = 'Spalte für die Spannbreite der Ergebnisse anzeigen
 $string['showranges'] = 'Stufen anzeigen';
 $string['showranges_help'] = 'Zeile anzeigen, die die möglichen Bereiche für alle Bewertungen in der Bewerterübersicht darstellt';
 $string['showrank'] = 'Rang anzeigen';
-$string['showrank_help'] = 'Rang für jeden Aspekt anzeigen';
+$string['showrank_help'] = 'Rangposition für jeden Aspekt anzeigen?';
 $string['showuserimage'] = 'Nutzerbilder anzeigen';
 $string['showuserimage_help'] = 'Nutzerbild neben dem Namen in der Bewerterübersicht anzeigen';
 $string['showverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} anzeigen';

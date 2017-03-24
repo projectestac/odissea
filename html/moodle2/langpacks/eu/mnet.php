@@ -105,7 +105,7 @@ $string['leavedefault'] = 'Erabili horren ordez berezko ezarpenak';
 $string['listservices'] = 'Zerbitzuen zerrenda';
 $string['loginlinkmnetuser'] = '<br />MNet-eko urrutiko erabiltzailea bazara eta <a href="{$a}">posta-helbidea hemen egiaztatu ahal baduzu</a>, saioaren hasierako orrira joateko moduan izango zara.<br/>';
 $string['logs'] = 'agerraldiak';
-$string['managemnetpeers'] = 'Berdinak kudeatu';
+$string['managemnetpeers'] = 'Kudeatu berdinak';
 $string['method'] = 'Metodoa';
 $string['methodhelp'] = '{$a}-rako metodoaren laguntza';
 $string['methodsavailableonhost'] = 'Eskura dauden metodoak hemen: {$a}';

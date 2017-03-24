@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['attemptsallowedn'] = 'Разрешенно попыток: {$a}';
+$string['attemptsallowedn'] = 'Разрешено попыток: {$a}';
 $string['pluginname'] = 'Правило доступа к тесту: количество попыток';

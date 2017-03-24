@@ -25,10 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dropboxclientid_key'] = 'Chave do aplicativo Dropbox';
+$string['auth_dropboxclientsecret_key'] = 'Segredo do aplicativo Dropbox';
+$string['auth_facebookclientid_key'] = 'ID do aplicativo do Facebook';
+$string['auth_facebookclientsecret_key'] = 'Segredo do aplicativo do Facebook';
+$string['auth_githubclientid_key'] = 'ID de cliente Github';
+$string['auth_githubclientsecret_key'] = 'Segredo de cliente Github';
+$string['auth_googleclientid_key'] = 'ID de cliente Google';
+$string['auth_googleclientsecret_key'] = 'Segredo de cliente Google';
+$string['auth_googleipinfodbkey_key'] = 'Chave IPinfoDB';
 $string['auth_googleoauth2description'] = 'Permitir que um utizador se ligue ao site com um fornecedor de autenticação externa: Google/Facebook/Windows Live .
 A primeira vez que o utilizador se ligar ao fornecedor de autenticação, uma nova conta é criada.
 <b>Deve</b> desmarcar a opção Prevenir criação de conta (configuração de administrador: authpreventaccountcreation ) ao autenticar.';
 $string['auth_googlesettings'] = 'Configurações';
+$string['auth_googleuserprefix'] = 'O nome de utilizador criado iniciará com este prefixo. Num site Moodle comum não precisa de mudar esta configuração.';
+$string['auth_googleuserprefix_key'] = 'Prefixo do nome de utilizador';
 $string['auth_sign-in_with'] = 'Entrar com {$a->providername}';
 $string['couldnotauthenticate'] = 'A autenticação falhou - por favor tente entrar novamente.';
 $string['couldnotauthenticateuserlogin'] = 'Erro no método de autenticação.<br/>
@@ -46,5 +57,6 @@ $string['othermoodle'] = 'Outra autenticação Moodle';
 $string['pluginname'] = 'Oauth2';
 $string['signinwithanaccount'] = 'Entrar com {$a}';
 $string['stattitle'] = 'Relatório estatístico dos {$a->periodindays} dias (desde da instalação do plugin/atualização)';
+$string['supportmaintenance'] = 'Para apoiar a manutenção deste módulo, for favor, aceda à <a target="_blank" href="https://moodle.org/plugins/view/auth_googleoauth2">página de módulos do Moodle.org</a> e clique em "Adicionar aos meus favoritos". Muito obrigado!';
 $string['unknownfirstname'] = 'Nome desconhecido';
 $string['unknownlastname'] = 'Apelido desconhecido';

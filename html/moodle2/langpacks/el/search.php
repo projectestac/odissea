@@ -52,6 +52,7 @@ $string['emptydatabaseerror'] = 'Ο πίνακας της βάσης δεδομ�
 $string['enteryoursearchquery'] = 'Δώστε τους όρους για έρευνα';
 $string['errors'] = 'Σφάλματα';
 $string['filesinindexdirectory'] = 'Αρχεία στον κατάλογο ευρετηρίου';
+$string['globalsearch'] = 'Καθολική αναζήτηση';
 $string['globalsearchdisabled'] = 'Η καθολική έρευνα δεν είναι ενεργοποιημένη.';
 $string['invalidindexerror'] = 'Ο κατάλογος ευρετηρίου περιέχει εσφαλμένα ή καθόλου δεδομένα.';
 $string['ittook'] = 'Χρειάστηκαν';

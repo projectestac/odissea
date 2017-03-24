@@ -45,7 +45,7 @@ $string['uploadpicture_cannotsave'] = 'Ezin da gorde {$a} erabiltzailearentzako 
 $string['uploadpicture_cannotunzip'] = 'Ezin da irudi-fitxategia deskonprimatu.';
 $string['uploadpicture_invalidfilename'] = '{$a} irudi-fitxategiaren izenak balio ez duten karaktereak ditu. Alde batera utzi da.';
 $string['uploadpicture_overwrite'] = 'Erabiltzaileak dagoeneko dituen irudiak gainidatzi?';
-$string['uploadpictures'] = 'Erabiltzaileen irudiak gehitu';
+$string['uploadpictures'] = 'Gehitu erabiltzaileen irudiak';
 $string['uploadpictures_help'] = '<p>Erabiltzailearen irudiak zip fitxategia edo irudi-fitxategi gisa igo daitezke. Irudi-fitxategiei <i>aukeratutako-erabiltzaile-ezaugarria.luzapena</i> izena eman behar zaie. Adibidez, irudiak egokitzeko aukeratutako erabiltzaile-ezaugarria erabiltzaile-izena bada eta izen hori erabil1234 bada, orduan fitxategiaren izena erabil1234.jpg izango da.</p>
 <p>Onartutako irudi-motak gif, jpg, eta png dira.</p>
 <p>Irudi-fitxategien izenetan ez ditu letra larriak eta xeheak bereizten .</p>';
@@ -53,14 +53,13 @@ $string['uploadpicture_userfield'] = 'Irudiak lotzean erabilitako erabiltzailear
 $string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'-n \'{$a->userfield}\' balorea duen erabiltzailea ez dago. Alde batera utzi da.';
 $string['uploadpicture_userskipped'] = '{$a} erabiltzailea alde batera utzi da (dagoeneko badu irudia).';
 $string['uploadpicture_userupdated'] = 'Irudia eguneratuta {$a} erabiltzailearentzat.';
-$string['uploadusers'] = 'Erabiltzaileak igo';
+$string['uploadusers'] = 'Igo erabiltzaileak';
 $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez egunera (eta aukeran ikastaroetan matrikulatu) daitezke. Fitxategiak ezaugarri hauek izan behar ditu:
 
 *Fitxategiko lerri bakoitzak erregistro bat du
-*Erregistro bakoitza komaz (edo bestelako banaitzaileak) banatutako datu-multzo bat da
+*Erregistro bakoitza komaz (edo bestelako bereizleak) banatutako datu-multzo bat da
 *Fitxategiko lehen erregistroak fitxategiaren formatua definitzen duten eremuen zerrenda du.
-*Derrigorrezko eremuen izenak:erabiltzaile-izena, pasahitza, abizena, izena, e-posta.
-';
+*Derrigorrezko eremuen izenak:erabiltzaile-izena, pasahitza, abizena, izena, e-posta.';
 $string['uploaduserspreview'] = 'Aurreikusi erabiltzaileen igoera';
 $string['uploadusersresult'] = 'Igo erabiltzaileen emaitzak';
 $string['uploaduser:uploaduserpictures'] = 'Igo erabiltzailearen irudiak';

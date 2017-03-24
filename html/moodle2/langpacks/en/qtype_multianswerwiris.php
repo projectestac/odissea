@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addingmultianswerwiris'] = 'Adding a Embedded answers (Cloze) - math & science question by WIRIS';
+$string['contentnotviewable'] = 'The content can not be displayed.';
 $string['editingmultianswerwiris'] = 'Editing a Embedded answers (Cloze) - math & science question by WIRIS';
 $string['multianswerwiris'] = 'Cloze - science';
 $string['multianswerwiris_algorithm'] = 'Algorithm';

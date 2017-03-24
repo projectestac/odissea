@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdisplayoptions'] = '利用可能にしたいオプションすべてを選択してください。既存の設定は変更されません。複数フィールドを選択するにはCTRLキーを押したままにしてください。';
+$string['configdisplayoptions'] = '利用可にしたいオプションすべてを選択してください。既存の設定は変更されません。複数フィールドを選択するにはCTRLキーを押したままにしてください。';
 $string['content'] = 'ページコンテンツ';
 $string['contentheader'] = 'コンテンツ';
 $string['createpage'] = '新しいページリソースを作成する';

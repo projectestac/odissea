@@ -67,6 +67,7 @@ $string['isempty'] = 'hutsik dago';
 $string['isequalto'] = 'honen berdina';
 $string['isnotdefined'] = 'ez dago definituta';
 $string['isnotequalto'] = 'ez da honen berdina';
+$string['limiterfor'] = '{$a} eremu-mugatzailea';
 $string['neveraccessed'] = 'Inoiz sartu gabea';
 $string['nevermodified'] = 'Inoiz aldatu gabea';
 $string['newfilter'] = 'Iragazki berria';

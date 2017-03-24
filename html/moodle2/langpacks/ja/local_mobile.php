@@ -25,7 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = '認証されたユーザロールに許可を与える';
+$string['allowpermissionsdescription'] = '認証されたユーザロールを編集し、moodle/webservice:createtokenケイパビリティを許す';
 $string['cannotcreatetoken'] = '管理ユーザでは自動トークン生成はできません（サイト内で手で作成する必要があります）';
+$string['checkpluginconfiguration'] = 'プラグイン設定を確認';
+$string['clickheretolaunchtheapp'] = 'アプリが自動的に開かないときは、ここをチェックしてください';
+$string['enableadditionalservice'] = 'Moodleモバイルに追加機能サービスを許可する';
+$string['enableadditionalservicedescription'] = 'このサービスはイネーブルにしなければなりません。';
 $string['local_mobiledescription'] = 'モバイルサービス機能を拡張するプラグイン';
 $string['local_mobilesettings'] = '設定';
 $string['local_mobiletypeoflogin'] = 'ログイン方式の選択';

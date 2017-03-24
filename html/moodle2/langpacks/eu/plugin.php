@@ -160,6 +160,7 @@ $string['validationmsg_pluginversion'] = 'Pluginaren bertsioa';
 $string['validationmsg_requiresmoodle'] = 'Behar den Moodle bertsioa';
 $string['validationmsg_rootdir'] = 'Instalatuko den pluginaren izena';
 $string['validationmsg_unknowntype'] = 'Plugin-mota ezezaguna';
+$string['validationmsg_versionphpsyntax'] = 'Onartu gabeko sintaxia antzeman da version.php fitxategian';
 $string['version'] = 'Bertsioa';
 $string['versiondb'] = 'Oraingo bertsioa';
 $string['versiondisk'] = 'Bertsio berria';

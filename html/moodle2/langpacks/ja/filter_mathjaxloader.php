@@ -37,7 +37,7 @@ $string['httpurl_help'] = 'MathJaxライブラリのフルURLです。http経由
 $string['localinstall'] = 'ローカルMathJaxインストレーション';
 $string['localinstall_help'] = 'デフォルトのMathJax設定ではCDNバージョンのMathJaxを使用しますが、必要であればローカルにMathJaxをインストールすることもできます。
 
-これは帯域幅の節約またはローカルプロクシの制限に対して有用です。
+これは帯域幅の節約またはローカルプロキシの制限に対して有用です。
 
 MathJaxのローカルインストレーションを使用するには最初に「http://www.mathjax.org/」から完全なMathJaxライブラリをダウンロードしてください。それからウェブサーバにインストールしてください。最後にローカルのMathJax.js URLを指すため、MathJaxフィルタ設定「httpurl」および「httpsurl」を更新してください。';
 $string['mathjaxsettings'] = 'MathJax設定';

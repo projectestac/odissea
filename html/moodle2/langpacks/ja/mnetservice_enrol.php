@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availablecourseson'] = '{$a} の利用可能なコース';
 $string['availablecoursesonnone'] = 'リモートホスト「 <a href="{$a->hosturl}">{$a->hostname}</a> 」は私たちのユーザにコースを提供していません。';
 $string['clientname'] = 'リモート登録クライアント';
-$string['clientname_help'] = 'このツールでは「MNetリモート登録」プラグイン経由であなたのリモートホストのローカルユーザを登録および登録解除できるようにします。';
+$string['clientname_help'] = 'このツールでは「MNetリモート登録」プラグイン経由であなたのローカルユーザをリモートホストに登録および登録解除できるようにします。';
 $string['editenrolments'] = '登録を編集する';
 $string['hostappname'] = 'アプリケーション';
 $string['hostname'] = 'ホスト名';
@@ -37,4 +37,4 @@ $string['nopublishers'] = '利用できるリモートピアはありません�
 $string['noroamingusers'] = 'リモートコースに登録するにはユーザはシステムコンテクスト内にケイパビリティ「 {$a} 」を必要とします。現在、このケイパビリティを持ったユーザ存在しません。あなたのサイトの1つまたはそれ以上のロールに必要なケイパビリティを割り当てるには「続ける」ボタンをクリックしてください。';
 $string['otherenrolledusers'] = '他の登録済みユーザ';
 $string['pluginname'] = 'リモート登録サービス';
-$string['refetch'] = 'リモートホストから最新データを再取得する';
+$string['refetch'] = 'リモートホストから最新情報を再取得する';

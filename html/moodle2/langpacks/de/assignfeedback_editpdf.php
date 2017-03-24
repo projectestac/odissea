@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Kommentieren Sie die Lösungen der Teilnehmenden dire
 $string['enabled'] = 'Anmerkungen im PDF';
 $string['enabled_help'] = 'Nach der Aktivierung können Trainer/innen bei der Bewertung kommentierte PDF-Dateien für die eingereichten Lösungen erstellen. Kommentare, Korrekturen, Kennzeichnungen und \'Stempel\' können direkt in der Lösung des Teilnehmenden erstellt werden. Dies erfolgt direkt im Browser ohne Zusatzssoftware.';
 $string['errorgenerateimage'] = 'Fehler beim Erstellen des Bildes mit Ghostscript. Fehlerinformation: {$a}';
+$string['errorpdfpage'] = 'Fehler beim Erstellen dieser Seite';
 $string['filter'] = 'Kommentare filtern...';
 $string['generatefeedback'] = 'Feedback.pdf erzeugen';
 $string['generatingpdf'] = 'PDF erstellen ...';

@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_foldername'] = 'Karpeta izenen cachea';
 $string['clientid'] = 'Bezeroaren IDa';
 $string['configplugin'] = 'Konfiguratu Microsoft OneDrive';
+$string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea <a href="https://account.live.com/developers/applications">Microsoft-en</a> erregistratu beharko duzu.<p>Erregistro-prozesuan hurrengo URLa \'Redirect domain\' gisa zehaztu beharko duzu:</p><p>{$a->callbackurl}</p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek hemen erabili ahalko dituzu.</p>';
 $string['pluginname'] = 'Microsoft OneDrive';
 $string['secret'] = 'Sekretua';
 $string['skydrive:view'] = 'Ikusi OneDrive';

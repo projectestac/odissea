@@ -111,6 +111,13 @@ $functions = array(
             'description' => 'Returns a list of the site configurations, filtering by section.',
             'type'        => 'read',
       ),
+    'local_mobile_core_course_get_courses_by_field' => array(
+        'classname' => 'local_mobile_external',
+        'methodname' => 'core_course_get_courses_by_field',
+        'classpath' => 'local/mobile/externallib.php',
+        'description' => 'Get courses matching a specific field (id/s, shortname, idnumber, category)',
+        'type' => 'read',
+    ),
 );
 
 $services = array(
@@ -239,7 +246,6 @@ $services = array(
             'local_mobile_core_course_get_user_administration_options',
             'local_mobile_core_user_update_picture',
             'local_mobile_mod_assign_view_assign',
-            'local_mobile_tool_mobile_get_config',
             'local_mobile_mod_quiz_get_quizzes_by_courses',
             'mod_quiz_view_quiz',
             'mod_quiz_get_user_attempts',
@@ -283,6 +289,10 @@ $services = array(
             'mod_wiki_new_page',
             'mod_wiki_edit_page',
             'local_mobile_get_plugin_settings',
+            'local_mobile_tool_mobile_get_config',
+            'local_mobile_core_course_get_courses_by_field',
+            'core_course_get_categories',
+            'tool_lp_data_for_course_competencies_page',
             'tool_lp_data_for_plans_page',
             'tool_lp_data_for_plan_page',
             'tool_lp_data_for_user_evidence_list_page',
