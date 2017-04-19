@@ -114,6 +114,7 @@ $string['filename'] = 'Fitxategiaren izena';
 $string['filenotnull'] = 'Fitxategi bat aukeratu behar duzu igotzeko.';
 $string['filepicker'] = 'Fitxategi-hautatzailea';
 $string['filesaved'] = 'Fitxategia gorde egin da';
+$string['filesizenull'] = 'Ezin da fitxategiaren tamaina zehaztu';
 $string['folderexists'] = 'Karpetaren izena dagoeneko erabilita dago. Mesedez, erabili beste izen bat';
 $string['foldernotfound'] = 'Ez da karpeta aurkitu';
 $string['getfile'] = 'Aukeratu fitxategi hau';

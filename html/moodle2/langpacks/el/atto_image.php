@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['preview'] = 'Προεπισκόπηση';
+$string['saveimage'] = 'Αποθήκευση εικόνας';
 $string['size'] = 'Μέγεθος';

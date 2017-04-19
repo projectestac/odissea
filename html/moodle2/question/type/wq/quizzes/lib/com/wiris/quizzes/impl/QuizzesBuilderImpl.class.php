@@ -284,7 +284,7 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 		$r = $this->newEvalMultipleAnswersRequest(null, null, $question, $instance);
 		$qr = $r;
 		$qi = $instance;
-		$this->setVariables($html, $qi, $qr);
+		$this->setVariables($html, $question, $qi, $qr);
 		return $r;
 	}
 	public function newEvalMultipleAnswersRequest($correctAnswers, $userAnswers, $question, $instance) {
@@ -494,10 +494,14 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 				$ass = $qq->assertions[$i1];
 				if($ass->isEquivalence()) {
 					$usedcorrectanswers[$ass->getCorrectAnswer()] = true;
-					$usedanswers[$ass->getAnswer()] = true;
+					if($ass->getAnswer() < $usedanswers->length) {
+						$usedanswers[$ass->getAnswer()] = true;
+					}
 				} else {
 					if($ass->isCheck()) {
-						$usedanswers[$ass->getAnswer()] = true;
+						if($ass->getAnswer() < $usedanswers->length) {
+							$usedanswers[$ass->getAnswer()] = true;
+						}
 					}
 				}
 				unset($i1,$ass);
@@ -573,13 +577,58 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 	public function getConfiguration() {
 		return com_wiris_quizzes_impl_ConfigurationImpl::getInstance();
 	}
-	public function setVariables($html, $qi, $qr) {
+	public function removeAnswerVariables($variables, $q, $qi) {
+		$qq = _hx_deref(($q))->getImpl();
+		if($qq->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER) === "true") {
+			$name = $qq->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER_NAME);
+			$defname = $qq->defaultOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER_NAME);
+			if($defname === $name) {
+				$lang = com_wiris_quizzes_impl_HTMLTools::casSessionLang($qq->getAlgorithm());
+				$name = com_wiris_quizzes_impl_Translator::getInstance($lang)->t($name);
+			}
+			$n = 0;
+			$i = null;
+			{
+				$_g1 = 0; $_g = $variables->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					if(StringTools::startsWith($variables[$i1], $name)) {
+						$after = _hx_substr($variables[$i1], strlen($name), null);
+						if(strlen($after) === 0 || com_wiris_util_type_IntegerTools::isInt($after) && Std::parseInt($after) <= $qi->getStudentAnswersLength()) {
+							$variables[$i1] = null;
+							$n++;
+						}
+						unset($after);
+					}
+					unset($i1);
+				}
+			}
+			if($n > 0) {
+				$newvariables = new _hx_array(array());
+				$j = 0;
+				{
+					$_g1 = 0; $_g = $variables->length;
+					while($_g1 < $_g) {
+						$i1 = $_g1++;
+						if($variables[$i1] !== null) {
+							$newvariables[$j++] = $variables[$i1];
+						}
+						unset($i1);
+					}
+				}
+				$variables = $newvariables;
+			}
+		}
+		return $variables;
+	}
+	public function setVariables($html, $q, $qi, $qr) {
 		$variables = null;
 		if($html === null) {
 			$variables = $this->extractQuestionInstanceVariableNames($qi);
 		} else {
 			$h = new com_wiris_quizzes_impl_HTMLTools();
 			$variables = $h->extractVariableNames($html);
+			$variables = $this->removeAnswerVariables($variables, $q, $qi);
 		}
 		if($variables->length > 0) {
 			$qr->variables($variables, com_wiris_quizzes_impl_MathContent::$TYPE_TEXT);
@@ -601,7 +650,7 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 		$qr = new com_wiris_quizzes_impl_QuestionRequestImpl();
 		$qr->question = $q;
 		$qr->userData = $qi->userData;
-		$this->setVariables($html, $qi, $qr);
+		$this->setVariables($html, $q, $qi, $qr);
 		return $qr;
 	}
 	public function readQuestionInstance($xml) {
@@ -632,6 +681,20 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 			}
 			if("," === $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR) || "," === $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR) && StringTools::startsWith($q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT), ",")) {
 				$qi->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_ITEM_SEPARATOR, ";");
+			}
+			if($q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER) === "true") {
+				$answername = $q->getOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER_NAME);
+				if($q->defaultOption(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER_NAME) === $answername) {
+					$alg = $q->getAlgorithm();
+					if($alg !== null) {
+						$lang = com_wiris_quizzes_impl_HTMLTools::casSessionLang($alg);
+						if($lang !== null && !(com_wiris_quizzes_impl_QuestionInstanceImpl::$DEF_ALGORITHM_LANGUAGE === $lang)) {
+							$qi->setLocalData(com_wiris_quizzes_impl_QuestionInstanceImpl::$KEY_ALGORITHM_LANGUAGE, $lang);
+						}
+					}
+				} else {
+					$qi->setLocalData(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER_NAME, $answername);
+				}
 			}
 		}
 		return $qi;

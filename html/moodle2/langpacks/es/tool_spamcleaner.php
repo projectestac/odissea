@@ -37,6 +37,7 @@ $string['spamdesc'] = 'Descripción';
 $string['spameg'] = 'e.g., casino, porno, xxx';
 $string['spamfromblog'] = 'Del mensaje del blog:';
 $string['spaminvalidresult'] = 'Resultado desconocido pero no válido';
+$string['spamkeyword'] = 'Palabra clave';
 $string['spamoperation'] = 'Operación';
 $string['spamresult'] = 'Resultado de la búsqueda de perfiles del usuario que contienen:';
 $string['spamsearch'] = 'Buscar por estas palabras clave';

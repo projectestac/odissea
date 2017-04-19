@@ -111,7 +111,7 @@ $string['autosort'] = 'Ordenació automàtica';
 $string['availableidnumbers'] = 'Números ID disponibles';
 $string['average'] = 'Mitjana';
 $string['averagesdecimalpoints'] = 'Decimals en les mitjanes de columnes';
-$string['averagesdecimalpoints_help'] = '<p>Especifica el nombre de decimals que es visualitzaran en la mitjana de cada columna. Si seleccioneu \'Hereta\' s\'utilitzarà el tipus de visualització de cada columna.</p>';
+$string['averagesdecimalpoints_help'] = '<p>Especifica el nombre de decimals que es visualitzaran en la mitjana de cada columna. Si seleccioneu «Hereta» s\'utilitzarà el tipus de visualització de cada columna.</p>';
 $string['averagesdisplaytype'] = 'Tipus de visualització de les mitjanes de columnes';
 $string['averagesdisplaytype_help'] = 'Aquest paràmetre determina si la mitjana es mostra com a valor real, percentatge o lletra. Si seleccioneu «Hereta» s\'utilitzarà el que estigui establert a la categoria o element de qualificació.';
 $string['backupwithoutgradebook'] = 'La còpia de seguretat no conté la configuració del butlletí de qualificacions';
@@ -446,7 +446,7 @@ $string['letterpercentage'] = 'Lletra (percentatge)';
 $string['letterreal'] = 'Lletra (real)';
 $string['letters'] = 'Lletres';
 $string['linkedactivity'] = 'Activitat vinculada';
-$string['linkedactivity_help'] = '<p>Especifica una activitat opcional vinculada a aquest element de competència. S\'utilitza per mesurar el rendiment de l\'estudiantat sobre la base de criteris no avaluats per la qualificació de l\'activitat.</p>';
+$string['linkedactivity_help'] = '<p>Especifica una activitat opcional vinculada a aquest element de competència. S\'utilitza per mesurar el rendiment de l\'estudiant sobre la base de criteris no avaluats per la qualificació de l\'activitat.</p>';
 $string['linktoactivity'] = 'Enllaç a l\'activitat {$a->name}';
 $string['lock'] = 'Bloca';
 $string['locked'] = 'Blocat';
@@ -626,7 +626,7 @@ $string['rangedecimals_help'] = 'Nombre de xifres decimals que es mostraran al r
 $string['rangesdecimalpoints'] = 'Decimals en les gammes';
 $string['rangesdecimalpoints_help'] = '<p>Especifica el nombre de decimals que es mostren en cada element de la gamma. Aquest nombre es pot canviar després per a cada element de qualificació.</p>';
 $string['rangesdisplaytype'] = 'Tipus de visualització de les gammes';
-$string['rangesdisplaytype_help'] = '<p>Especifica com visualitzar les gammes. Si seleccioneu Hereta, s\'utilitzarà el tipus de visualització de cada columna.</p>';
+$string['rangesdisplaytype_help'] = '<p>Especifica com es visualitzen les gammes. Si seleccioneu Hereta, s\'utilitzarà el tipus de visualització de cada columna.</p>';
 $string['rank'] = 'Posició';
 $string['rawpct'] = '% brut';
 $string['real'] = 'Real';
@@ -703,8 +703,7 @@ $string['showhiddenitems_help'] = 'Especifica si els elements de qualificació o
 * Mostra tots els elements ocults. Els noms dels elements de qualificació ocults es mostren, però les qualificacions resten ocultes.
 * Mostra només els elements «oculta fins». Els elements de qualificació amb una data «oculta fins» s\'oculten completament fins aquesta data. Després d\'aquesta data es mostrarà l\'element complet.
 * No mostris cap element ocult. Els elements de qualificació ocults s\'oculten completament.';
-$string['showhiddenuntilonly'] = 'Mostra només els elements "oculta
-fins"';
+$string['showhiddenuntilonly'] = 'Mostra només els elements «oculta fins»';
 $string['showingaggregatesonly'] = 'S\'estan mostrant només els agregats';
 $string['showingfullmode'] = 'S\'està mostrant la vista completa';
 $string['showinggradesonly'] = 'S\'estan mostrant només les qualificacions';

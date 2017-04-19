@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['page-my-index'] = 'Η αρχική μου σελίδα';
+$string['page-site-index'] = 'Η πρώτη σελίδα μόνο';

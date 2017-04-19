@@ -645,9 +645,10 @@ Pour débloquer votre compte immédiatement, veuillez consulter la page à l\'ad
 
 {$a->link}
 
-Ce lien devrait être affiché sous la forme d\'un lien en bleu que vous pouvez cliquer directement. Si cela ne fonctionne pas, copiez l\'adresse et collez-la dans le champ de l\'URL en haut de la fenêtre de votre navigateur.
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
-Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du serveur {$a->admin}.';
+Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
+{$a->admin}';
 $string['lockoutemailsubject'] = 'Votre compte sur {$a} a été bloqué';
 $string['lockouterrorunlock'] = 'Information de déblocage du compte non valide.';
 $string['lockoutthreshold'] = 'Limite pour blocage de compte';

@@ -34,4 +34,5 @@ $string['description'] = 'Περιγραφή';
 $string['idnumber'] = 'ID ομάδας χρηστών';
 $string['memberscount'] = 'Μέγεθος ομάδων χρηστών';
 $string['name'] = 'Όνομα';
+$string['preview'] = 'Προεπισκόπηση';
 $string['visible'] = 'Ορατό';

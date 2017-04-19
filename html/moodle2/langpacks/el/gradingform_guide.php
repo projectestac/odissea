@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backtoediting'] = 'Επιστροφή στην επεξεργασίας';
+$string['clicktoedit'] = 'Πατήστε για επεξεργασία';
+$string['comment'] = 'Σχόλιο';
 $string['comments'] = 'Συχνά χρησιμοποιούμενα σχόλια';
+$string['commentsdelete'] = 'Διαγραφή σχολίου';
+$string['criterion'] = 'Όνομα κριτηρίου';
+$string['criteriondelete'] = 'Διαγραφή κριτηρίου';
+$string['criterionempty'] = 'Πατήστε για επεξεργασία κριτηρίου';
+$string['criterionname'] = 'Όνομα κριτηρίου';
+$string['description'] = 'Περιγραφή';
+$string['name'] = 'Όνομα';
 $string['regradeoption1'] = 'Σημείωση για αναβαθμολόγηση';

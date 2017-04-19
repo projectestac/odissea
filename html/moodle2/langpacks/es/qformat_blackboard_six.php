@@ -25,5 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultname'] = 'Pregunta importada {$a}';
+$string['errormanifest'] = 'Error mientras se parseaba el documento manifest de IMS.';
+$string['imagenotfound'] = 'La imagen con la ruta {$a} no se ha encontrado en la importación.';
+$string['importedcategory'] = 'Categoría importada {$a}';
+$string['importnotext'] = 'Pregunta no encontrada en el archivo XML';
 $string['pluginname'] = 'Blackboard V6+';
 $string['pluginname_help'] = 'El formato Blackboard V6+ permite importar via fichero zip las preguntas guardadas en el formato de exportación Blackboard. El soporte para Blackboard versiones 6 y 7 es limitado.';

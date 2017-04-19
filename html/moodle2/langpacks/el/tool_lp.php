@@ -29,3 +29,5 @@ $string['activities'] = 'Δραστηριότητες';
 $string['competencyoutcome_complete'] = 'σημείωση ως ολοκληρωμένο';
 $string['competencyoutcome_none'] = 'Κανένα';
 $string['uponcoursemodulecompletion'] = 'Με την ολοκλήρωση δραστηριότητας:';
+$string['userevidencefiles'] = 'Αρχεία';
+$string['userevidencesummary'] = 'Σύνοψη';

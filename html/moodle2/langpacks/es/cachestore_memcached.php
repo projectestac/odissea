@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bufferwrites'] = 'Escritura de búfer';
 $string['bufferwrites_help'] = 'Habilita o deshabilita un periférico de Entrada/Salida (E/S). Habilitar E/S obliga a los comandos de almacenamiento a "cargar" en lugar de ser enviados. Cualquier acción que recupere información causa que esta carga se envíe a una conexión remota. Cerrar o terminar la conexión también hará que los datos cargados se envíen a una conexión remota.';
 $string['clustered'] = 'Habilitar servidores agrupados';
 $string['clusteredheader'] = 'Separar servidores';
@@ -39,6 +40,7 @@ $string['hash_help'] = 'Especifica el algoritmo hash utilizado para las claves d
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
+$string['isshared'] = 'Caché compartida';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Clave de prefijo';
 $string['prefix_help'] = 'Esto se puede utilizar para crear un "dominio" para sus claves de posición, permitiendo crear múltiples sistemas de almacenaje memcached en una única instalación memcached. No debe contener más de 16 caracteres para evitar problemas de longitud de clave.';

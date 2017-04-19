@@ -78,6 +78,29 @@ class com_wiris_quizzes_wrap_QuizzesBuilderWrap extends com_wiris_quizzes_api_Qu
 			}
 		}
 	}
+	public function newFeedbackRequest($html, $question, $instance) {
+		try {
+			$qw = $question;
+			$iw = $instance;
+			if($qw !== null) {
+				$question = $qw->question;
+			}
+			if($iw !== null) {
+				$instance = $iw->instance;
+			}
+			$this->wrapper->start();
+			$r = new com_wiris_quizzes_wrap_QuestionRequestWrap($this->builder->newFeedbackRequest($html, $question, $instance));
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function newEvalMultipleAnswersRequest($correctAnswers, $studentAnswers, $question, $instance) {
 		$correctAnswers = new _hx_array($correctAnswers);
 		$studentAnswers = new _hx_array($studentAnswers);

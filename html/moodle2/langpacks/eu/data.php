@@ -173,7 +173,7 @@ $string['fieldheight'] = 'Altuera';
 $string['fieldheightlistview'] = 'Altuera zerrenda-ikuspegian';
 $string['fieldheightsingleview'] = 'Altuera ikuspegi xumean';
 $string['fieldids'] = 'Eremuak';
-$string['fieldmappings'] = 'Eremu mapeoak';
+$string['fieldmappings'] = 'Eremu-loturak';
 $string['fieldmappings_help'] = '<p>Menu honek datuak aldez aurretik dagoen datu-base batetik
 hartzeko aukera ematen dizu. Datua eremu batean mantentzeko, eremu berriarekin
 lotu behar duzu, eta bertan agertuko da datua. Zuri ere utzi ahal da eremu bat,

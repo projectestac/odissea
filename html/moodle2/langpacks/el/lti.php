@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['basiclti_in_new_window'] = 'Η δραστηριότητα έχει ανοίξει σε νέο παράθυρο';
+$string['cancel'] = 'Ακύρωση';
+$string['cancelled'] = 'Ακυρώθηκε';
 $string['submissions'] = 'Υποβολές';

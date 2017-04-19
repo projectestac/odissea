@@ -376,6 +376,7 @@ $string['siteadministrators'] = 'Guneko kudeatzaileak';
 $string['site:approvecourse'] = 'Ikastaroak sortzeko baimena eman';
 $string['site:backup'] = 'Ikastaroen segurtasun-kopiak egin';
 $string['site:config'] = 'Gunearen konfigurazioa aldatu';
+$string['site:deleteanymessage'] = 'Guneko edozein mezu ezabatu';
 $string['site:doanything'] = 'Edozertarako baimena';
 $string['site:doclinks'] = 'Gunetik kanpoko dokumentuetarako estekak erakutsi';
 $string['site:forcelanguage'] = 'Baliogabetu ikastaroko hizkuntza';

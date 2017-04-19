@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['changeactivemethod'] = 'Αλλαγή ενεργής μεθόδου βαθμολόγησης σε';
 $string['gradingmethod'] = 'Μέθοδος βαθμολόγησης';
 $string['gradingmethods'] = 'Μέθοδοι βαθμολόγησης';
+$string['templatesource'] = 'Τοποθεσία: {$a->component} ({$a->area})';

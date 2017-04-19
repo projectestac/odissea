@@ -27,6 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['corestring'] = 'Cadena de idioma alternativa';
 $string['corestring_help'] = 'Esta configuración puede ser utilizada para seleccionar una cadena de idioma diferente desde el fichero idioma principal mimetypes.php. Generalmente debe ser dejado en blanco. Para tipos personalizados, utilice el campo descripción.';
+$string['deletea'] = 'Borrar {$a}';
+$string['description'] = 'Descripción personalizada';
+$string['descriptiontype'] = 'Tipo de descripción';
+$string['descriptiontype_custom'] = 'Descripción personalizada especificada en este formulario';
 $string['descriptiontype_default'] = 'Por defecto (tipo MIME o la cadena de idioma correspondiente si está disponible)';
 $string['descriptiontype_help'] = 'Existen tres formas posibles de indicar una descripción.
 
@@ -34,12 +38,22 @@ $string['descriptiontype_help'] = 'Existen tres formas posibles de indicar una d
 * Puedes especificar una descripción personalizada en este formulario.
 * Puedes especificar el nombre de una cadena de idioma en mimetypes.php para ser utilizada en vez del tipo MIME.';
 $string['descriptiontype_lang'] = 'Cadena de idioma alternativa (desde mimetypes.php)';
+$string['displaydescription'] = 'Descripción';
+$string['editfiletypes'] = 'Editar un tipo de fichero existente';
+$string['emptylist'] = 'No hay tipos de ficheros definidos';
+$string['error_extension'] = 'La extensión del fichero <strong>{$a}</strong> ya existe o es inválida. Las extensiones de ficheros deben ser únicas y no deben contener caracteres especiales.';
 $string['error_notfound'] = 'El tipo de fichero con extensión {$a} no puede ser hallado.';
 $string['extension'] = 'Extensión';
+$string['extension_help'] = 'Nombre de la extensión del fichero sin el punto, e.g. &lsquo;mobi&rsquo;';
+$string['groups'] = 'Tipos de grupos';
+$string['icon'] = 'Archivo de icono';
 $string['mimetype'] = 'tipo MIME';
 $string['pluginname'] = 'Tipos de fichero';
+$string['revert'] = 'Restaurar {$a} a los ajustes por defecto de Moodle';
+$string['revert_confirmation'] = '¿Está seguro de que quiere restaurar <strong>.{$a}</strong> a los ajustes por defecto de Moodle, descartando sus cambios?';
 $string['revertfiletype'] = 'Restaura un tipo de fichero';
 $string['source'] = 'Tipo';
+$string['source_custom'] = 'Personalizado';
 $string['source_deleted'] = 'Borrado';
 $string['source_modified'] = 'Modificado';
 $string['source_standard'] = 'Estándar';

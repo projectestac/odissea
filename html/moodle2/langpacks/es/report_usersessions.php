@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['mysessions'] = 'Mis sesiones activas';
 $string['navigationlink'] = 'Sesiones del navegador';
+$string['pluginname'] = 'Informe de sesiones del usuario';
 $string['thissession'] = 'Sesión actual';
 $string['usersessions:manageownsessions'] = 'Gestionar mis sesiones del navegador';

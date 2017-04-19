@@ -383,18 +383,27 @@ div.wirisjnlp {
     border-radius: 8px;
     padding: 20px 15px;
 }
+div.wiristabs div.wirisjnlp {
+	overflow: auto;
+}
 
 div.wirisjnlptext {
 	margin-bottom: 10px;
+	font-size: 10pt;	
 }
 div.wirisjnlpform {
 	margin-bottom: 10px;
+	display: inline-block;
 }
-div.wirisjnlpnotes span{
+div.wirisjnlpnotes {
 	font-size: 10pt;
-	vertical-align: top;
+	display: inline-block;
+	margin: 0 0 10px 10px;
+}
+div.wirisjnlpnotes span {
 	margin-right: 5px;
 }
+
 /**
  *  Styles for new JsComponent model HTML
  **/

@@ -3,6 +3,15 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 17.04.24
+---------------------------------------------------------------------------------------
+- Updated mod/hotpot
+- Updated all related wiris plugins
+- Updated LangPacks
+- Added Vicens Vives modules: one course format, two blocks and a local (Trello #1331)
+- Added H5P module (Trello #1571)
+
+
 Changes 17.03.28
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.1.5 (Trello #1553)

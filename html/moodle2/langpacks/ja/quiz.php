@@ -271,7 +271,7 @@ $string['editcategory'] = 'カテゴリを編集する';
 $string['editcatquestions'] = 'カテゴリ問題を編集する';
 $string['editingquestion'] = '問題の編集';
 $string['editingquiz'] = '小テストの編集';
-$string['editingquiz_help'] = '小テスト作成におけるメインコンセプトは下記のとおりです:
+$string['editingquiz_help'] = '小テスト作成におけるメインコンセプトは以下のとおりです:
 
 * 小テストは1ページまたはそれ以上のページに問題を含みます。
 * 問題バンクにはすべての問題がカテゴリにより整理されて保存されます。

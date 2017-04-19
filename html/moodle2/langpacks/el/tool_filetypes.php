@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addfiletypes'] = 'Προσθήκη νέου τύπου αρχείου';
+$string['pluginname'] = 'Τύποι αρχείου';

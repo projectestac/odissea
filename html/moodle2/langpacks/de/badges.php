@@ -79,15 +79,34 @@ Auf einer produktiven Website sollten Sie das Problem lösen. Andernfalls könne
 
 Die einzige URL, die für die Verifizierung benötigt wird, ist [website]/badges/assertion.php. Wenn Sie Ihre Firewall so konfigurieren, dass der Zugriff auf dieses Skript erlaubt ist, dann funktioniert die Verifizierung von Auszeichnungen.';
 $string['backpackbadges'] = 'Sie haben {$a->totalbadges} Auszeichnung(en), die aus {$a->totalcollections} Sammlung(en) angezeigt werden. <a href="mybackpack.php">Backpack konfigurieren</a>.';
+$string['backpackcannotsendverification'] = 'Eine Bestätigungsmitteilung konnte nicht gesendet werden.';
 $string['backpackconnection'] = 'Verbindung zum Backpack';
+$string['backpackconnectioncancelattempt'] = 'Verwenden Sie zum Verbinden eine andere E-Mail-Adresse.';
+$string['backpackconnectionconnect'] = 'Zum Backpack verbinden';
 $string['backpackconnection_help'] = 'Auf dieser Seite können Sie Verbindungen zu externen Backpack-Diensten konfigurieren. Eine Verbindung zu einem externen Backpack-Dienst ermöglicht es, externe Auszeichnungen in Moodle anzuzeigen und in Moodle erworbene Auszeichnungen in das externe Backpack zu exportieren.
 
 Derzeit wird nur der Backpack-Dienst <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a> unterstützt. Sie müssen sich erst bei einem externen Backpack-Dienst anmelden, bevor sie die zugehörigen Verbindung in Moodle konfigurieren können.';
+$string['backpackconnectionresendemail'] = 'Bestätigungsmitteilung erneut senden';
+$string['backpackconnectionunexpectedresult'] = 'Problem bei der Backpack-Verbindung. Versuchen Sie es noch einmal.<br><br>Falls dieses Problem dauerhaft besteht, melden Sie sich beim Administrator der Website.';
 $string['backpackdetails'] = 'Backpack konfigurieren';
 $string['backpackemail'] = 'E-Mail-Adresse';
 $string['backpackemail_help'] = 'E-Mail-Adresse, die mit Ihrem Backpack-Dienst verknüpft ist
 
 Wenn eine Verbindung zum Backpack-Dienst besteht, werden alle Auszeichnungen dieser Website an diese E-Mail-Adresse zugeordnet.';
+$string['backpackemailverificationpending'] = 'Bestätigung ausstehend';
+$string['backpackemailverifyemailbody'] = 'Hallo,
+
+unter Verwendung Ihrer E-Mail-Adresse wurde von \'{$a->sitename}\' eine neue Verbindung zu Ihrem OpenBadges-Backpack angefordert. Um die Verbindung zu prüfen und zu aktivieren, klicken Sie bitte auf den nachfolgenden Link.
+
+{$a->link}
+
+In den meisten E-Mail-Programmen sollte der Link blau und anklickbar sein. Falls das nicht funktioniert, kopieren Sie die Adresse vollständig und fügen Sie sie in die Adresszeile Ihres Webbrowsers ein.
+
+Wenn Sie Hilfe benötigen, wenden Sie sich an den Administrator der Website, {$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: E-Mail-Bestätigung für OpenBadges-Backpack';
+$string['backpackemailverifypending'] = 'Eine Bestätigungsmitteilung wurde an <strong>{$a}</strong> versendet. Klicken Sie auf den Bestätigungslink in der E-Mail, um die Backpack-Verbindung zu aktivieren.';
+$string['backpackemailverifysuccess'] = 'Danke für die Bestätigung Ihrer E-Mail-Adresse. Sie sind jetzt mit Ihrem Backpack verbunden.';
+$string['backpackemailverifytokenmismatch'] = 'Der Token in dem von Ihnen angeklickten Link stimmt nicht mit dem gespeicherten Token überein. Prüfen Sie, ob Sie wirklich den Link in der aktuellsten E-Mail angeklickt haben.';
 $string['backpackimport'] = 'Importeinstellungen';
 $string['backpackimport_help'] = 'Wenn die Verbindung zum Backpack erfolgreich hergestellt ist, können Auszeichnungen aus Ihrem Backpack auf Ihrer Seite \'Meine Auszeichnungen\' und in Ihrem Nutzerprofil angezeigt werden.
 

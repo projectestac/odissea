@@ -375,8 +375,8 @@ $string['maxareabytes'] = 'Le fichier dépasse l\'espace disponible dans cette z
 $string['maxbytes'] = 'Le fichier dépasse la taille maximale permise.';
 $string['maxbytesfile'] = 'La taille du fichier {$a->file} est trop grande. La taille maximale d\'un fichier à déposer est de {$a->size}.';
 $string['messagingdisable'] = 'La messagerie est désactivée sur ce site';
-$string['mimetexisnotexist'] = 'Votre serveur n\'est pas configurer que faire tourner mimeTeX. Veuillez télécharger le programme approprié à votre plateforme sur <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, ou les sources en C du programme ici <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, les compiler et placer le programme dans le dossier moodle/filter/tex/';
-$string['mimetexnotexecutable'] = 'Votre programme mimetex n\'est pas exécutable !';
+$string['mimetexisnotexist'] = 'Votre serveur n\'est pas configuré pour lancer mimeTeX. Veuillez télécharger le programme approprié à votre plateforme sur <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, ou les sources en C du programme ici <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, les compiler et placer le programme dans le dossier moodle/filter/tex/';
+$string['mimetexnotexecutable'] = 'Votre programme <i>mimetex</i> n\'est pas exécutable !';
 $string['missingfield'] = 'Le champ « {$a} » est manquant';
 $string['missingkeyinsql'] = 'Erreur : paramètre « {$a} » manquant dans la requête';
 $string['missing_moodle_backup_xml_file'] = 'Fichier de sauvegarde XML manquant : {$a}';

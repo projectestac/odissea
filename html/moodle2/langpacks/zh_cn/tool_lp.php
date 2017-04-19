@@ -25,11 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actions'] = '操作';
 $string['activities'] = '活动';
 $string['addcohorts'] = '增加群';
 $string['addcohortstosync'] = '增群到同步';
+$string['addcompetency'] = '添加能力';
 $string['addcoursecompetencies'] = '为课程添加能力';
+$string['addcrossreferencedcompetency'] = '添加交叉能力';
+$string['addnewcompetency'] = '创建能力';
+$string['addnewplan'] = '常见学习计划';
 $string['addnewtemplate'] = '添加新的学习计划模板';
+$string['addnewuserevidence'] = '创建证书';
 $string['addtemplatecompetencies'] = '学习计划模板中添加能力';
 $string['assigncohorts'] = '分配群';
 $string['cohortssyncedtotemplate'] = '群同步到该学习计划模板';

@@ -32,15 +32,15 @@ $string['basicsettings'] = 'Grundeinstellungen';
 $string['coursesettings'] = 'Kurseinstellungen';
 $string['createnewcategories'] = 'Neue (verborgene) Kurskategorien anlegen, wenn nicht in Moodle gefunden';
 $string['createnewcategories_desc'] = 'Wenn das <org><orgunit> Element in der importierten Datei enthalten ist, wird es benutzt um einen Kurs einer Kurskategorie zuzuordnen, sofern der Kurs neu angelegt wird. Bereits bestehende Kurse werden dadurch NICHT verschoben.
-Wenn keine Kategorie mit dem Namen existiert wird diese neu als verborgene Kategorie angelegt.';
+Wenn keine Kategorie mit dem Namen existiert, wird diese neu als verborgene Kategorie angelegt.';
 $string['createnewcourses'] = 'Erstelle neue (verborgene) Kurse, wenn nicht in Moodle gefunden';
 $string['createnewcourses_desc'] = 'Funktion: Das IMS-Einschreibungsplugin kann neue Kurse anlegen wenn es diese in der IMS Datei, nicht aber in der Moodle-Datenbank findet. Jeder neue Kurs wird so angelegt, dasser für Teilnehmer nicht verfügbar ist. ';
 $string['createnewusers'] = 'Erstelle neue Nutzerzugänge, wenn Nutzer noch nicht in Moodle registriert';
 $string['createnewusers_desc'] = 'Die IMS Enterprise Einschreibungsdatei enthält in der Regel eine Liste von Teilnehmer/innen. Mit der Funktion kann für Personen, die noch nicht in Moodle registriert sind, ein Nutzerkonto angelegt werden.
 Teilnehmer/innen werden zunächst aufgrund der ID-Nummer und dann nach dem Anmeldenamen in Moodle gesucht. Aus dem IMS Enterprise Plugin werden keine Kennwörter importiert. Hierfür wird die Nutzung eines Authentifizierungsplugin empfohlen.';
 $string['cronfrequency'] = 'Häufigkeit des Prozesses';
-$string['deleteusers'] = 'Nutzerzugänge löschen, wenn in IMS-Daten definiert';
-$string['deleteusers_desc'] = 'Funktion: Mitden IMS Enterprise Einschreibungsdaten kann mann auch Nutzeraccounts löschen wenn der "recstatus" auf auf \'3\' gesetzt wird. In Moodle wird der Datensatz des Nutzers dann nicht gelöscht, sondern der Flag auf gelöscht gesetzt.';
+$string['deleteusers'] = 'Nutzerzugänge löschen, falls so in IMS-Daten definiert';
+$string['deleteusers_desc'] = 'Funktion: Mit den IMS-Enterprise-Einschreibungsdaten kann man auch Nutzeraccounts löschen, indem der "recstatus" auf auf \'3\' gesetzt wird. In Moodle wird der Datensatz des Nutzers dann nicht gelöscht, sondern der Flag auf gelöscht gesetzt.';
 $string['doitnow'] = 'IMS Enterprise Import jetzt durchführen';
 $string['emptyattribute'] = 'Leer lassen';
 $string['filelockedmail'] = 'Die Textdatei ({$a}), die für das IMS-Datei-basierte Kurs-Anmeldeverfahren genutzt wird, konnte vom Cron-Prozess nicht gelöscht werden. Das bedeutet normalerweise, dass die Dateirechte fehlerhaft sind. Bitte prüfen Sie die Rechte, damit Moodle die Datei löschen kann. Andernfalls wird der Vorgang immer wiederholt.';
@@ -73,11 +73,11 @@ $string['settingshortnamedescription'] = 'Der Kurztitel des Kurses ist ein Pflic
 $string['settingsummary'] = 'IMS Beschreibungs-Tag für die Kursbeschreibung';
 $string['settingsummarydescription'] = 'Dies ist ein optionales Feld. Es kann auf Wunsch leer bleiben.';
 $string['sourcedidfallback'] = '"sourcedid" statt "userid" für die Nutzer-ID verwenden, wenn das Feld "userid" nicht gefunden wird';
-$string['sourcedidfallback_desc'] = 'Im IMS Datensatz wird im <sourceid> Feld die dauerhafte persönliche ID -Bezeichnung des Nutzers aus dem Ursprungssystem hinterlegt.  Das <userid> Feld ist ein zusätzliches Feld und enthält einen ID Code mit dem der Nutzer sich einloggen kann. Manchmal - jedoch nicht immer - sind die Einträge identisch.
+$string['sourcedidfallback_desc'] = 'Im IMS Datensatz wird im <sourceid>-Feld die dauerhafte persönliche ID-Bezeichnung des Nutzers aus dem Ursprungssystem hinterlegt.  Das <userid>-Feld ist ein zusätzliches Feld und enthält einen ID-Code, mit dem der Nutzer sich einloggen kann. Manchmal – jedoch nicht immer – sind die Einträge identisch.
 
-Einige Nutzerverwaltungssysteme haben Probleme beim Export des <userid> Feldes. In solch einem Fall aktivieren Sie diese Einstellung, damit Moodle den Inhalt des Feldes <sourceid> als Moodle Nutzer-ID verwendet. Ist das nicht der Fall, lassen Sie die Funktion deaktiviert.';
+Einige Nutzerverwaltungssysteme haben Probleme beim Export des <userid>-Feldes. In solch einem Fall aktivieren Sie diese Einstellung, damit Moodle den Inhalt des Feldes <sourceid> als Moodle-Nutzer-ID verwendet. Ist das nicht der Fall, lassen Sie die Funktion deaktiviert.';
 $string['truncatecoursecodes'] = 'Kurscode nach dieser Zeichenzahl abschneiden';
-$string['truncatecoursecodes_desc'] = 'Manchmal ist es gewünscht die Länge des Kurscodes zu verkürzen. Geben Sie dazu hier einen Wert ein, der die maximale Länge des Kurscodes bestimmt. Andernfalls lassen Sie das Feld leer.';
+$string['truncatecoursecodes_desc'] = 'Manchmal ist es gewünscht, die Länge des Kurscodes zu verkürzen. Geben Sie dazu hier einen Wert ein, der die maximale Länge des Kurscodes bestimmt. Andernfalls lassen Sie das Feld leer.';
 $string['usecapitafix'] = 'Box anklicken, wenn "Großbuchstaben" verwendet werden (XML-Format ist fehlerhaft)';
 $string['usecapitafix_desc'] = 'Nur für Nutzer des Teilnehmerverwaltungssystem CAPITA: Der XML Output von Capita enthält einen Fehler. Bei Verwendung von Capita sollte diese Einstellung deaktiviert sein.';
 $string['usersettings'] = 'Nutzerdateneinstellungen';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Informe de participación visto';
 $string['page-report-participation-index'] = 'Informe de participación en el curso';
 $string['page-report-participation-x'] = 'Informe de participación en el curso';
 $string['participation:view'] = 'Ver informe de participación en el curso';

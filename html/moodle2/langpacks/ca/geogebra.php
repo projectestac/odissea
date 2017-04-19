@@ -122,6 +122,7 @@ $string['showToolBar'] = 'Mostra la barra d\'eines';
 $string['showToolBarHelp'] = 'Mostra l\'ajuda de la barra d\'eines';
 $string['status'] = 'Estat';
 $string['submitandfinish'] = 'Entrega i acaba';
+$string['timing'] = 'Temporització';
 $string['total'] = 'Total';
 $string['unfinished'] = 'No finalitzat';
 $string['ungraded'] = 'Sense qualificar';

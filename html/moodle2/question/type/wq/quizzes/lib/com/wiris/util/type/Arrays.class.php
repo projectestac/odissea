@@ -26,8 +26,7 @@ class com_wiris_util_type_Arrays {
 	static function fromCSV($s) {
 		$words = _hx_explode(",", $s);
 		$i = 0;
-		$n = $words->length;
-		while($i < $n) {
+		while($i < $words->length) {
 			$w = trim($words[$i]);
 			if(strlen($w) > 0) {
 				$words[$i] = $w;
@@ -120,6 +119,12 @@ class com_wiris_util_type_Arrays {
 			$b->push($i->next());
 		}
 		return $b;
+	}
+	static function addAll($baseArray, $additionArray) {
+		$i = $additionArray->iterator();
+		while($i->hasNext()) {
+			$baseArray->push($i->next());
+		}
 	}
 	function __toString() { return 'com.wiris.util.type.Arrays'; }
 }

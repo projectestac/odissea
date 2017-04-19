@@ -68,6 +68,7 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Página {$a}';
 $string['pagexofy'] = 'Página {$a->page} de {$a->total}';
 $string['pathtogspathdesc'] = 'Por favor tenga en cuenta que la anotación de PDF requiere que la ruta de ghostscript sea especificada en {$a}.';
+$string['pathtounoconvpathdesc'] = 'Por favor tenga cuenta que comentar un PDF requiere que la ruta a unoconv se establezca en {$a}';
 $string['pen'] = 'Pluma';
 $string['pluginname'] = 'Anotación PDF';
 $string['preparesubmissionsforannotation'] = 'Preparar los envíos para la anotación';

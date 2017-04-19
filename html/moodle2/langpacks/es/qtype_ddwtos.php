@@ -27,7 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Espacios en blanco para {no} más opciones';
 $string['answer'] = 'Respuesta';
+$string['blank'] = 'vacío';
 $string['correctansweris'] = 'La respuesta correcta es: {$a}';
+$string['infinite'] = 'Ilimitado';
 $string['pleaseputananswerineachbox'] = 'Por favor, ponga una respuesta en cada caja.';
 $string['pluginname'] = 'Arrastrar y soltar sobre texto';
 $string['pluginnameadding'] = 'Añadiendo arrastrar y soltar sobre texto';

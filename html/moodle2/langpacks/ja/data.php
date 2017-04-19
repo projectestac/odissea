@@ -352,18 +352,18 @@ $string['timeadded'] = '追加日時';
 $string['timemodified'] = '修正日時';
 $string['todatabase'] = '>> データベース';
 $string['type'] = 'フィールドタイプ';
-$string['undefinedprocessactionmethod'] = 'アクション「 {$a} 」を処理するためのメソッドがData_Presetに定義されていません。';
+$string['undefinedprocessactionmethod'] = 'アクション「 {$a} 」を処理するためのアクションメソッドがData_Presetに定義されていません。';
 $string['unsupportedexport'] = '({$a->fieldtype}) をエクスポートできません。';
 $string['updatefield'] = '既存のフィールドを更新します。';
 $string['uploadfile'] = 'ファイルをアップロードする';
 $string['uploadrecords'] = 'ファイルからエントリをアップロードする';
-$string['uploadrecords_help'] = 'エントリはテキストファイル経由でアップロードすることができます。ファイルのフォーマットは下記のとおりです:
+$string['uploadrecords_help'] = 'テキストファイルによりエントリをアップロードすることができます。ファイルのフォーマットは以下のとおりです:
 
 * それぞれの行には1レコードを含みます。
 * それぞれのレコードはカンマ (または他のデリミタ) で区切られた一連のデータです。
 * 最初のレコードにはファイル内の残りのレコードを定義するフィールド名一覧を含みます。
 
-フィールドエンクロージャはレコード内のフィールド囲む文字です。通常、設定する必要はありません。';
+フィールド囲み文字はレコード内のフィールドを囲む文字です。通常、設定する必要はありません。';
 $string['url'] = 'URL';
 $string['usedate'] = '検索に含む';
 $string['usestandard'] = 'プリセットを使用する';

@@ -34,11 +34,14 @@ $string['displayinline'] = 'Mostrar en la página del curso';
 $string['displaypage'] = 'Mostrar en una página diferente';
 $string['dnduploadmakefolder'] = 'Descomprimir archivo y crear carpeta';
 $string['downloadfolder'] = 'Descargar carpeta';
+$string['eventallfilesdownloaded'] = 'Directorio descargado en formato Zip';
 $string['eventfolderupdated'] = 'Carpeta actualizada';
 $string['folder:addinstance'] = 'Añadir una nueva carpeta';
 $string['foldercontent'] = 'Archivos y subcarpetas';
 $string['folder:managefiles'] = 'Gestionar archivos en el recurso carpeta';
 $string['folder:view'] = 'Ver el contenido de la carpeta';
+$string['maxsizetodownload'] = 'Tamaño máximo de descarga del directorio (MB)';
+$string['maxsizetodownload_help'] = 'El tamaño máximo del directorio para su descarga. Si está establecido a cero, el tamaño del directorio es ilimitado.';
 $string['modulename'] = 'Carpeta';
 $string['modulename_help'] = 'El recurso Carpeta permite al profesor mostrar un grupo de archivos relacionados dentro de una única carpeta. Se puede subir un archivo comprimido (zip) que se descomprimirá (unzip) posteriormente para mostrar su contenido, o bien, se puede crear una carpeta vacía y subir los archivos dentro de ella.
 

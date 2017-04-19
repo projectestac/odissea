@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['otheruser'] = 'Χρήστης';
 $string['pluginname'] = 'Αναφορά χρήστη';
 $string['user:view'] = 'Εμφάνιση της δικής σας αναφοράς χρήστη';

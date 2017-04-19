@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errbadxmlformat'] = 'Errorea: okerreko XML formatua';
-$string['errduplicategradeidnumber'] = 'Errorea: ikastaroan \'{$a}\' id zenbakia duten bi kalifikazio-elementu daude. Ezinezkoa da hori.';
-$string['errduplicateidnumber'] = 'Errorea: id zenbakia bikoiztuta';
-$string['errincorrectgradeidnumber'] = 'Errorea: inportatutako fitxategiko \'{$a}\' id zenbakia ez dago inongo kalifikazio-elementutan.';
-$string['errincorrectidnumber'] = 'Errorea: okerreko id zenbakia';
-$string['errincorrectuseridnumber'] = 'Errorea: inportatutako fitxategiko \'{$a}\' id zenbakia ez dago inongo erabiltzailetan.';
+$string['errduplicategradeidnumber'] = 'Errorea: ikastaroan \'{$a}\' ID zenbakia duten bi kalifikazio-elementu daude. Ezinezkoa da hori.';
+$string['errduplicateidnumber'] = 'Errorea: ID zenbakia bikoiztuta';
+$string['errincorrectgradeidnumber'] = 'Errorea: inportatutako fitxategiko \'{$a}\' ID zenbakia ez dago inongo kalifikazio-elementutan.';
+$string['errincorrectidnumber'] = 'Errorea: okerreko ID zenbakia';
+$string['errincorrectuseridnumber'] = 'Errorea: inportatutako fitxategiko \'{$a}\' ID zenbakia ez dago inongo erabiltzailetan.';
 $string['error'] = 'Erroreak gertatzen ari dira';
 $string['errorduringimport'] = 'Errorea gertatu da inportatzean: {$a}';
 $string['fileurl'] = 'Urritiko fitxategiaren URL-a';

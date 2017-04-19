@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxchoosescale'] = 'Επιλέξτε';
+$string['ajaxerror'] = 'Σφάλμα';
+$string['ajaxfailedupdate'] = 'Δεν είναι εφικτή η ενημέρωση [1] από [2]';
 $string['grader:manage'] = 'Διαχείριση της αναφοράς βαθμολογητή';
 $string['grader:view'] = 'Εμφάνιση της αναφοράς βαθμολογητή';
 $string['pluginname'] = 'Αναφορά βαθμολογητή';

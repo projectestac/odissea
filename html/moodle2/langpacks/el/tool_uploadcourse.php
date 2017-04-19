@@ -25,4 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['coursefile'] = 'Αρχείο';
+$string['csvdelimiter'] = 'Διαχωριστικό CSV';
+$string['csvdelimiter_help'] = 'Διαχωριστικό αρχείου CSV.';
+$string['encoding'] = 'Κωδικοποίηση';
+$string['encoding_help'] = 'Κωδικοποίηση αρχείου CSV.';
+$string['importoptions'] = 'Επιλογές εισαγωγής';
 $string['invalidcourseformat'] = 'Μη έγκυρος τύπος μαθήματος';
+$string['mode'] = 'Τρόπος ανεβάσματος';
+$string['preview'] = 'Προεπισκόπηση';
+$string['rowpreviewnum'] = 'Προεπισκόπηση γραμμών';
+$string['updatemode'] = 'Τρόπος ενημέρωσης';
+$string['updatemodedoessettonothing'] = 'Ο τρόπος ενημέρωσης δεν επιτρέπει την ενημέρωση';
+$string['uploadcourses'] = 'Ανέβασμα μαθημάτων';
+$string['uploadcoursespreview'] = 'Προεπισκόπηση μαθημάτων που ανέβηκαν';
+$string['uploadcoursesresult'] = 'Αποτελέσματα μαθημάτων που ανέβηκαν';

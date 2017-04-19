@@ -193,6 +193,7 @@ $string['emailallgradedessays'] = 'Αποστολή με ηλεκτρονικό 
 $string['emailgradedessays'] = 'Αποστολή με ηλεκτρονικό ταχυδρομείο τις βαθμολογημένες εκθέσεις';
 $string['emailsuccess'] = 'Τα μηνύματα ηλεκτρονικού ταχυδρομείου στάλθηκαν με επιτυχία';
 $string['emptypassword'] = 'Ο κωδικός πρόσβασης δεν μπορεί να είναι κενός';
+$string['enabled'] = 'Ενεργοποιημένο';
 $string['endofbranch'] = 'Τέλος διακλάδωσης';
 $string['endofclustertitle'] = 'Τέλος συστοιχίας';
 $string['endoflesson'] = 'Τέλος ενότητας';

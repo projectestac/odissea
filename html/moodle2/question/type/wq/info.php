@@ -162,44 +162,44 @@ $output = '';
 $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'));
 
 $expectedplugins = array(
-    'TrueFalse' => [
+    'TrueFalse' => array(
         'name' => get_string('info_test4_pluginname1', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/truefalsewiris',
         'url' => 'https://moodle.org/plugins/qtype_truefalsewiris'
-    ],
-    'ShortAnswer' => [
+    ),
+    'ShortAnswer' => array(
         'name' => get_string('info_test4_pluginname2', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/shortanswerwiris',
         'url' => 'https://moodle.org/plugins/qtype_shortanswerwiris'
-    ],
-    'MultiAnswer' => [
+    ),
+    'MultiAnswer' => array(
         'name' => get_string('info_test4_pluginname3', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/multianswerwiris',
         'url' => 'https://moodle.org/plugins/qtype_multianswerwiris'
-    ],
-    'MultipleChoice' => [
+    ),
+    'MultipleChoice' => array(
         'name' => get_string('info_test4_pluginname4', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/multichoicewiris',
         'url' => 'https://moodle.org/plugins/qtype_multichoicewiris'
-    ],
-    'Matching' => [
+    ),
+    'Matching' => array(
         'name' => get_string('info_test4_pluginname5', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/matchwiris',
         'url' => 'https://moodle.org/plugins/qtype_matchwiris'
-    ],
-    'Essay' => [
+    ),
+    'Essay' => array(
         'name' => get_string('info_test4_pluginname6', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/essaywiris',
         'url' => 'https://moodle.org/plugins/qtype_essaywiris'
-    ],
-    'WQ' => [
+    ),
+    'WQ' => array(
         'name' => get_string('info_test4_pluginname7', 'qtype_wq'),
         'path' => $CFG->dirroot . '/question/type/wq',
         'url' => 'https://moodle.org/plugins/qtype_shortanswerwiris'
-    ]
+    )
 );
-$missingplugins = [];
-$installedplugins = [];
+$missingplugins = array();
+$installedplugins = array();
 
 foreach ($expectedplugins as $key => $plugin) {
     if (! empty($plugin['path']) ) {

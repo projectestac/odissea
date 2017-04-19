@@ -126,6 +126,7 @@ $string['repeattimes'] = 'Repetir/publicar tiempo de las sesiones';
 $string['repeatweekly'] = 'A la misma hora todas las semanas';
 $string['saidto'] = 'dicho a';
 $string['savemessages'] = 'Guardar sesiones pasadas';
+$string['search:activity'] = 'Chat - información de actividad';
 $string['seesession'] = 'Ver esta sesión';
 $string['send'] = 'Enviar';
 $string['sending'] = 'Enviando';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['neverseen'] = 'Ποτέ δεν εμφανίστηκαν';
 $string['outline:view'] = 'Προβολή αναφοράς δραστηριότητας μαθήματος';
+$string['pluginname'] = 'Αναφορά δραστηριοτήτων';

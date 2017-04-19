@@ -280,6 +280,26 @@ class qtype_wq_question extends question_with_responses {
         return $text;
     }
 
+    /**
+     * @return String Return all the question text without feedback texts.
+     */
+    public function join_question_text() {
+        $text = $this->questiontext;
+        foreach ($this->hints as $hint) {
+            $tet .= ' ' . $hint->hint;
+        }
+        return $text;
+    }
+
+    /**
+     *
+     * @return String Return the general feedback text in a single string so WIRIS
+     * quizzes can extract the variable placeholders.
+     */
+    public function join_feedback_text() {
+        return $this->generalfeedback;
+    }
+
     public function call_wiris_service($request) {
         global $COURSE;
         global $USER;

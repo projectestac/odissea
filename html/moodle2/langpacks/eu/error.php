@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alreadyloggedin'] = 'Dagoeneko {$a} gisa identifikatuta zaude, beste erabiltzaile bat bezala identifikatzeko lehenik irten egin behar duzu.';
 $string['authnotexisting'] = 'Autorizazio-plugina ez da existitzen';
+$string['backupcontainexternal'] = 'Segurtasun-fitxategi honek lokalean konfiguratuta ez dauden kanpoko Moodle sarerako ostalariak ditu.';
 $string['backuptablefail'] = 'Segurtasun-kopiaren taulak EZ dira ondo sortu!';
 $string['blockcannotconfig'] = 'Bloke honek ez ditu ezarpen orokorrak onartzen ';
 $string['blockcannotinistantiate'] = 'Arazoa bloke-objektuaren instantzia egitean';
@@ -48,6 +49,9 @@ $string['cannotcallscript'] = 'Ezin duzu script hau horrela deitu';
 $string['cannotcallusgetselecteduser'] = 'Ezin duzu user_selector::get_selected_user deitu aukera anitzekoa egia bada.';
 $string['cannotcreatebackupdir'] = 'Ezin da backupdata karpeta sortu. Guneko kudeatzaileak fitxategien baimenak ezarri behar ditu';
 $string['cannotcreatecategory'] = 'Kategoria ez da txertatu';
+$string['cannotcreatedboninstall'] = '<p>Ezin da datu-basea sortu.<p>
+<p>Zehaztutako datu-basea ez da existitzen eta adierazitako erabiltzaileak ez du baimenik datu-basea sortzeko.<p>
+<p>Guneko kudeatzaileak datu-basearen konfigurazioa egiaztatu behar du.</p>';
 $string['cannotcreategroup'] = 'Errorea taldea sortzean';
 $string['cannotcreatelangbase'] = 'Errorea: ezin izan da oinarrizko hizkuntza-direktorioa sortu';
 $string['cannotcreatelangdir'] = 'Ezin da hizkuntza-direktorioa sortu';
@@ -71,7 +75,7 @@ $string['cannotdisableformat'] = 'Ezin duzu desgaitu berezko formatua';
 $string['cannotdownloadcomponents'] = 'Ezin dira osagaiak jaitsi';
 $string['cannotdownloadlanguageupdatelist'] = 'Ezin da download.moodle.org-tik eguneratzeko hizkuntza-zerrenda jaitsi';
 $string['cannotdownloadzipfile'] = 'Ezin da ZIP fitxategia jaitsi';
-$string['cannoteditcomment'] = 'Iruzkin hau ez da zuk editatzekoa!';
+$string['cannoteditcomment'] = 'Iruzkin hau ez da zurea eta ezin duzu editatu!';
 $string['cannoteditcommentexpired'] = 'Ezin duzu hau editatu. Denbora amaitu egin da!';
 $string['cannoteditpostorblog'] = 'Ezin duzu mezurik bidali edo bloga editatu';
 $string['cannoteditsiteform'] = 'Ezin duzu guneko ikastaroa editatu formulario hau erabilita';
@@ -90,6 +94,7 @@ $string['cannotfindinfo'] = 'Ezin da ondokoarentzako informaziorik aurkitu: "{$a
 $string['cannotfindlang'] = 'Ezin da "{$a}" hizkuntza-paketea aurkitu!';
 $string['cannotfindteacher'] = 'Ezin da irakaslea aurkitu';
 $string['cannotfinduser'] = 'Ezin da "{$a}" erabiltzaile-izena aurkitu';
+$string['cannotgeoplugin'] = 'Ezin da geoPlugin-en  zerbitzarira konektatu (http://www.geoplugin.com). Mesedez, egiaztatu proxy-ren ezarpenak, edo hobeto, instala ezazu MaxMind GeoLite City-ren datu-fitxategia.';
 $string['cannotgetblock'] = 'Ezin da blokerik berreskuratu datu-basetik';
 $string['cannotgetcats'] = 'Ezin da lortu kategoria-erregistrorik';
 $string['cannotgetdata'] = 'Ezin da daturik lortu';
@@ -107,6 +112,7 @@ $string['cannotmarktopic'] = 'Ezin da gai hau markatu ikastaro honetan';
 $string['cannotmigratedatacomments'] = 'Ezin dira iruzkinak migratu datuen modulutik';
 $string['cannotmodulename'] = 'Ezin dira datuen moduluaren iruzkunak migratu';
 $string['cannotmovecategory'] = 'Ezin da kategoria mugitu';
+$string['cannotmovecourses'] = 'Ezin dira ikastaroak daudeneko kategoriatik beste batera mugitu.';
 $string['cannotmoverolewithid'] = 'Ezin da {$a} ID-a duen rola mugitu';
 $string['cannotopencsv'] = 'Ezin da CSV fitxategia zabaldu';
 $string['cannotopenfile'] = 'Ezin da fitxategia zabaldu ({$a})';

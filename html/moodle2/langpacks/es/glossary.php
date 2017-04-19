@@ -66,6 +66,7 @@ $string['attachment_help'] = 'De forma opcional puede adjuntar uno o más archiv
 $string['author'] = 'autor';
 $string['authorview'] = 'Vista por Autor';
 $string['back'] = 'Volver';
+$string['cachedef_concepts'] = 'Concepto de vinculación';
 $string['cantinsertcat'] = 'No se puede insertar la categoría';
 $string['cantinsertrec'] = 'No se puede insertar el registro';
 $string['cantinsertrel'] = 'No se puede insertar la relación registro-categoría';
@@ -91,6 +92,7 @@ $string['cnfshowgroup'] = 'Especifique si mostrar o no el grupo.';
 $string['cnfsortkey'] = 'Seleccione la clave de organización por defecto.';
 $string['cnfsortorder'] = 'Seleccione el orden por defecto.';
 $string['cnfstudentcanpost'] = 'Define si por defecto los estudiantes pueden o no colocar entradas';
+$string['cnftabs'] = 'Seleccionar las pestañas visibles para este formato de glosario';
 $string['comment'] = 'Comentario';
 $string['commentdeleted'] = 'Se ha borrado el comentario.';
 $string['comments'] = 'Comentarios';
@@ -127,6 +129,7 @@ $string['destination_help'] = '<P>Puede especificar dónde desea importar las en
   información encontrada en el archivo importado y luego las entradas serán
   añadidas al mismo.</li>
 </ul>';
+$string['disapprove'] = 'Deshacer aprobación';
 $string['displayformat'] = 'Formato de visualización de entradas';
 $string['displayformatcontinuous'] = 'Continuo sin autor';
 $string['displayformatdefault'] = 'Por defecto la misma que el formato de visualización';
@@ -330,6 +333,8 @@ $string['rsstype_help'] = '<P>Esta opción le permite habilitar los canales RSS 
 
 <LI><B>Sin autor:</B> Con esta opción, los datos generados no incluirán el nombre del autor en cada artículo.
 </UL>';
+$string['search:activity'] = 'Glosario - información de actividad';
+$string['search:entry'] = 'Glosario - entradas';
 $string['searchindefinition'] = '¿Buscar en conceptos y definiciones?';
 $string['secondaryglossary'] = 'Glosario secundario';
 $string['showall'] = 'Mostrar enlace \'TODAS\'';

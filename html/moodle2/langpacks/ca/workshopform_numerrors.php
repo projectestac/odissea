@@ -41,5 +41,5 @@ $string['grade1default'] = 'Si';
 $string['grademapping'] = 'Taula de mapatge de notes';
 $string['maperror'] = 'El número ponderat d\'errors és menor o igual a';
 $string['mapgrade'] = 'Puntuació de la tramesa';
-$string['percents'] = '{$a} %';
+$string['percents'] = '{$a}%';
 $string['pluginname'] = 'Nombre d\'errors';

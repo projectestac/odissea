@@ -4,6 +4,41 @@ class com_wiris_quizzes_impl_HTMLTools {
 	public function __construct() {
 		;
 	}
+	public function getAnswerVariables($answers, $keyword) {
+		$h = new Hash();
+		$i = null;
+		{
+			$_g1 = 0; $_g = $answers->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$a = $answers[$i1];
+				if(!$h->exists($a->type)) {
+					$h->set($a->type, new Hash());
+				}
+				$h->get($a->type)->set($keyword . _hx_string_rec(($i1 + 1), ""), $a->content);
+				unset($i1,$a);
+			}
+		}
+		if($answers->length === 1) {
+			$h->get(_hx_array_get($answers, 0)->type)->set($keyword, _hx_array_get($answers, 0)->content);
+		}
+		return $h;
+	}
+	public function expandAnswersText($text, $answers, $keyword) {
+		if($answers === null || $answers->length === 0 || _hx_index_of($text, "#" . $keyword, null) === -1) {
+			return $text;
+		}
+		$h = $this->getAnswerVariables($answers, $keyword);
+		$textvariables = $h->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT);
+		return $this->expandVariablesText($text, $textvariables);
+	}
+	public function expandAnswers($text, $answers, $keyword) {
+		if($answers === null || $answers->length === 0 || _hx_index_of($text, "#" . $keyword, null) === -1) {
+			return $text;
+		}
+		$h = $this->getAnswerVariables($answers, $keyword);
+		return $this->expandVariables($text, $h);
+	}
 	public function setItemSeparator($sep) {
 		$this->separator = (($sep === null) ? "," : $sep);
 	}
@@ -1429,8 +1464,43 @@ class com_wiris_quizzes_impl_HTMLTools {
 	static function stripRootTag($xml, $tag) {
 		$xml = trim($xml);
 		if(StringTools::startsWith($xml, "<" . $tag)) {
-			$xml = _hx_substr($xml, _hx_index_of($xml, ">", null) + 1, null);
-			$xml = _hx_substr($xml, 0, _hx_last_index_of($xml, "<", null));
+			$depth = 1;
+			$lastOpen = _hx_last_index_of($xml, "<", null);
+			$lastClose = _hx_last_index_of($xml, ">", null);
+			$j1 = _hx_index_of($xml, "<" . $tag, 1);
+			$j2 = _hx_index_of($xml, "</" . $tag, 1);
+			$j3 = _hx_index_of($xml, "/>", null);
+			if(_hx_index_of($xml, ">", null) - $j3 !== 1) {
+				$j3 = -1;
+			}
+			while($depth > 0) {
+				if(($j1 === -1 || $j2 < $j1) && ($j3 === -1 || $j2 < $j3)) {
+					$depth--;
+					if($depth > 0) {
+						$j2 = _hx_index_of($xml, "</" . $tag, $j2 + 1);
+					}
+				} else {
+					if($j1 !== -1 && ($j3 === -1 || $j1 < $j3)) {
+						$depth++;
+						$j3 = _hx_index_of($xml, "/>", $j1);
+						if(_hx_index_of($xml, ">", $j1) - $j3 !== 1) {
+							$j3 = -1;
+						}
+						$j1 = _hx_index_of($xml, "<" . $tag, $j1 + 1);
+					} else {
+						$depth--;
+						$j3 = -1;
+					}
+				}
+			}
+			if($j2 === $lastOpen) {
+				$ini = _hx_index_of($xml, ">", null) + 1;
+				$xml = _hx_substr($xml, $ini, $lastOpen - $ini);
+			} else {
+				if($j3 + 1 === $lastClose) {
+					$xml = "";
+				}
+			}
 		}
 		return $xml;
 	}
@@ -1611,6 +1681,19 @@ class com_wiris_quizzes_impl_HTMLTools {
 	}
 	static function emptyCasSession($value) {
 		return $value === null || _hx_index_of($value, "<mo", null) === -1 && _hx_index_of($value, "<mi", null) === -1 && _hx_index_of($value, "<mn", null) === -1 && _hx_index_of($value, "<csymbol", null) === -1;
+	}
+	static function casSessionLang($value) {
+		$start = _hx_index_of($value, "<session", null);
+		if($start === -1) {
+			return null;
+		}
+		$end = _hx_index_of($value, ">", $start + 1);
+		$start = _hx_index_of($value, "lang", $start);
+		if($start === -1 || $start > $end) {
+			return null;
+		}
+		$start = _hx_index_of($value, "\"", $start) + 1;
+		return _hx_substr($value, $start, 2);
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLTools'; }
 }

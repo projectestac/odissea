@@ -133,7 +133,7 @@ $string['groupsvisible'] = '可視グループ';
 $string['grouptemplate'] = 'グループ @';
 $string['hidepicture'] = '画像を隠す';
 $string['importgroups'] = 'グループをインポートする';
-$string['importgroups_help'] = 'テキストファイル経由でグループをインポートすることができます。ファイルのフォーマットは下記のとおりです:
+$string['importgroups_help'] = 'テキストファイル経由でグループをインポートすることができます。ファイルのフォーマットは以下のとおりです:
 
 * それぞれの行に1レコードを記述してください。
 * それぞれのレコードはカンマ区切りのデータです。

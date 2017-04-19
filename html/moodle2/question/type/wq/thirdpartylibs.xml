@@ -3,7 +3,7 @@
     <library>
         <location>quizzes</location>
         <name>WIRIS QUIZZES engine</name>
-        <version>3.50.2.1022</version>
+        <version>3.51.0.1022</version>
         <license>GPL</license>
         <licenseversion>3.0+</licenseversion>
     </library>

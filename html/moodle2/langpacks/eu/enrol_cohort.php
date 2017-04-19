@@ -30,6 +30,7 @@ $string['assignrole'] = 'Esleitu rola';
 $string['cohort:config'] = 'Kohorteen instantziak konfiguratu';
 $string['cohort:unenrol'] = 'Desmatrikulatu kontua etenda duten erabiltzaileak';
 $string['creategroup'] = 'Sortu beste talde bat';
+$string['defaultgroupnametext'] = '{$a->name} kohortea {$a->increment}';
 $string['instanceexists'] = 'Kohortea dagoeneko sinkronizatu da aukeratutako rolarekin';
 $string['pluginname'] = 'Sinkronizatu kohortea';
 $string['pluginname_desc'] = 'Kohorteak matrikulatzeko pluginak kohorte jakin bateko partaideak ikastaroko partaideekin sinkronizatzen ditu.';

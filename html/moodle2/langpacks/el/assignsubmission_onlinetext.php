@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowonlinetextsubmissions'] = 'Ενεργοποιημένο';
+$string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['nosubmission'] = 'Δεν έχει υποβληθεί τίποτα για την εργασία αυτή';
 $string['wordlimit'] = 'Όριο λέξεων';

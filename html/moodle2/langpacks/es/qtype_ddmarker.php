@@ -25,7 +25,38 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alttext'] = 'Texto alternativo';
+$string['answer'] = 'Respuesta';
+$string['bgimage'] = 'Imagen de fondo';
+$string['coords'] = 'Coordenadas';
+$string['correctansweris'] = 'La respuesta correcta es: {$a}';
+$string['draggableimage'] = 'Imagen arrastrable';
+$string['draggableitem'] = 'Elemento arrastrable';
+$string['draggableitemheader'] = 'Elemento arrastrable {$a}';
+$string['draggableitemtype'] = 'Tipo';
+$string['draggableword'] = 'Texto arrastrable';
+$string['dropbackground'] = 'Imagen de fondo para arrastrar marcadores dentro de este';
+$string['dropzone'] = 'Dejar caer la zona {$a}';
+$string['dropzoneheader'] = 'Dejar caer las zonas';
+$string['dropzones'] = 'Dejar caer las zonas';
 $string['formerror_nobgimage'] = 'Debe seleccionar una imagen para ser utilizada como fondo para la zona de arrastrar y soltar.';
+$string['infinite'] = 'Infinito';
+$string['marker'] = 'Marcador';
+$string['marker_n'] = 'Marcador {no}';
+$string['markers'] = 'Marcadores';
+$string['noofdrags'] = 'Número';
 $string['pluginname'] = 'Arrastrar y soltar marcadores';
 $string['pluginnameadding'] = 'Añadiendo arrastrar y soltar marcadores';
 $string['pluginnameediting'] = 'Editando arrastrar y soltar marcadores';
+$string['previewareaheader'] = 'Previsualizar';
+$string['refresh'] = 'Refrescar previsualización';
+$string['shape'] = 'Forma';
+$string['shape_circle'] = 'Círculo';
+$string['shape_circle_lowercase'] = 'círculo';
+$string['shape_polygon'] = 'Polígono';
+$string['shape_polygon_lowercase'] = 'polígono';
+$string['shape_rectangle'] = 'Rectángulo';
+$string['shape_rectangle_lowercase'] = 'rectángulo';
+$string['summariseplace'] = '{$a->no}. {$a->text}';
+$string['summariseplaceno'] = 'Dejar caer la zona {$a}';
+$string['ytop'] = 'Arriba';

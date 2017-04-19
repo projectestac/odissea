@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Συστατικό';
 $string['eventrelatedfullnameuser'] = 'Χρήστης που επηρεάζεται';
 $string['log:view'] = 'Προβολη αρχείων καταγραφής μαθήματος';
 $string['log:viewtoday'] = 'Προβολή σημερινών αρχείων καταγραφής';

@@ -67,6 +67,6 @@ $string['showmore'] = 'Mostra\'n més...';
 $string['somefieldsrequired'] = 'Aquest formulari conté els camps obligatoris {$a}.';
 $string['time'] = 'Temps';
 $string['timeunit'] = 'Unitat de temps';
-$string['timing'] = 'Cronometratge';
+$string['timing'] = 'Temporització';
 $string['unmaskpassword'] = 'Desemmascara';
 $string['year'] = 'Any';

@@ -59,6 +59,7 @@ $string['completed'] = 'osatua';
 $string['completed_feedbacks'] = 'Bidalitako erantzunak';
 $string['complete_the_form'] = 'Erantzun galderei...';
 $string['completionsubmit'] = 'Ikusi osatutzat feedbacka bidaltzen bada';
+$string['configallowfullanonymous'] = '\'Bai\' aukeratuz gero, erabiltzaileek inkesta osatu ahal izango dute hasiera-orrian, saioa hasi gabe ere.';
 $string['confirmdeleteentry'] = 'Ziur al zaude sarrera hau ezabatu nahi duzula?';
 $string['confirmdeleteitem'] = 'Ziur al zaude elementu hau ezabatu nahi duzula?';
 $string['confirmdeletetemplate'] = 'Ziur al zaude txantiloi hau ezabatu nahi duzula?';

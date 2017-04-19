@@ -36,3 +36,6 @@ $string['responsesoptions'] = 'Επιλογές απαντήσεων';
 $string['responsesreport'] = 'Αναφορά απαντήσεων';
 $string['responsestitle'] = 'Αναλυτικές απαντήσεις';
 $string['rightanswerx'] = 'Σωστή απάντηση {$a}';
+$string['summaryofquestiontext'] = 'Σύνοψη ερώτησης';
+$string['summaryofresponse'] = 'Σύνοψη απάντησης που δόθηκε';
+$string['summaryofrightanswer'] = 'Σύνοψη σωστής απάντησης';

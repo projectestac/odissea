@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['coursesummary'] = 'Περιγραφή μαθήματος';
+$string['course_summary:addinstance'] = 'Προσθήκη νέου μπλοκ σύνοψης μαθήματος/ιστοχώρου';
 $string['pluginname'] = 'Περιγραφή σελίδας';

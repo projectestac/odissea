@@ -11,5 +11,8 @@ class com_wiris_util_type_IntegerTools {
 	static function clamp($x, $a, $b) {
 		return com_wiris_util_type_IntegerTools::min(com_wiris_util_type_IntegerTools::max($a, $x), $b);
 	}
+	static function isInt($x) {
+		return _hx_deref(new EReg("[\\+\\-]?\\d+", ""))->match($x);
+	}
 	function __toString() { return 'com.wiris.util.type.IntegerTools'; }
 }

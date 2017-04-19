@@ -238,6 +238,7 @@ $string['invalidblockinstance'] = 'Μη έγκυρο στιγμυότυπο μπ
 $string['invalidcategory'] = 'Λανθασμένη κατηγορία!';
 $string['invalidcategoryid'] = 'Λανθασμένο id κατηγορίας!';
 $string['invalidcomment'] = 'Το σχόλιο είναι λανθασμένο';
+$string['invalidcomponent'] = 'Μη έγκυρο όνομα συστατικού';
 $string['invalidconfirmdata'] = 'Μη έγκυρα δεδομένα επιβεβαίωσης';
 $string['invalidcontext'] = 'Μη έγκυρο πλαίσιο';
 $string['invalidcourse'] = 'Μη έγκυρο μάθημα';

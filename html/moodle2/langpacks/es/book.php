@@ -85,6 +85,7 @@ $string['numberingoptions_desc'] = 'Seleccionar opciones de numeración que esta
 $string['page-mod-book-x'] = 'Cualquier página del módulo Libro';
 $string['pluginadministration'] = 'Administración del Libro';
 $string['pluginname'] = 'Libro';
+$string['search:chapter'] = 'Libro - capítulos';
 $string['showchapter'] = 'Mostrar capítulo "{$a}"';
 $string['subchapter'] = 'Subcapítulo';
 $string['subchapternotice'] = '(Disponible una vez que el primer capítulo se haya creado)';

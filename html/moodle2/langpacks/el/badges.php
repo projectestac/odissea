@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bmessage'] = 'Μήνυμα';
 $string['boverview'] = 'Επισκόπηση';
 $string['criteria_1'] = 'Ολοκλήρωση δραστηριότητας';
+$string['criteriasummary'] = 'Σύνοψη κριτηρίων';
 $string['message'] = 'Σώμα μηνύματος';
+$string['save'] = 'Αποθήκευση';
 $string['subject'] = 'Θέμα μηνύματος';

@@ -52,6 +52,7 @@ $string['availabletags_help'] = '<p align="center"><strong>Marcas disponibles</s
 <p>Los botones tienen el siguiente formato: ##somebutton##</p>
 <p>En la plantilla actual sólo pueden usarse las marcas que están en la lista de "Marcas disponibles".</p>';
 $string['availabletodate'] = 'Disponible hasta';
+$string['availabletodatevalidation'] = 'La fecha de disponibilidad de fin no puede ser previa a la fecha de disponibilidad de comienzo.';
 $string['blank'] = 'En blanco';
 $string['buttons'] = 'Acciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
@@ -127,6 +128,7 @@ $string['dateentered'] = 'Fecha introducida';
 $string['defaultfielddelimiter'] = '(el valor por defecto es la coma)';
 $string['defaultfieldenclosure'] = '(el valor por defecto es ninguno)';
 $string['defaultsortfield'] = 'Campo de ordenación por defecto';
+$string['delcheck'] = 'Checkbox de borrado masivo';
 $string['delete'] = 'Eliminar';
 $string['deleteallentries'] = 'Eliminar todas las entradas';
 $string['deletecomment'] = '¿Está seguro de que desea eliminar este comentario?';
@@ -363,6 +365,7 @@ $string['savesettings'] = 'Guardar ajustes';
 $string['savesuccess'] = 'Guardado con éxito. Su ajuste previo estará ahora disponible en todo el sitio.';
 $string['savetemplate'] = 'Guardar plantilla';
 $string['search'] = 'Buscar';
+$string['search:activity'] = 'Base de datos - información de actividad';
 $string['selectedrequired'] = 'Se requieren todos los seleccionados';
 $string['showall'] = 'Mostrar todas las entradas';
 $string['single'] = 'Ver uno por uno';

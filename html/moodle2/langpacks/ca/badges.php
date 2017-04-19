@@ -88,6 +88,7 @@ $string['backpackdetails'] = 'Configuració de la motxilla';
 $string['backpackemail'] = 'Adreça de correu';
 $string['backpackemail_help'] = 'Adreça electrònica associada a la vostra motxilla.
 Mentre esteu connectat, qualsevol insígnia guanyada en aquest lloc quedarà associada amb aquesta adreça electrònica.';
+$string['backpackemailverificationpending'] = 'Pendent de verificació';
 $string['backpackimport'] = 'Configuració de la importació d\'insígnies';
 $string['backpackimport_help'] = 'Un cop s\'hagi establert correctament la connexió amb la motxilla, les insígnies de la vostra motxilla es podran veure a la pàgina «Les meves insígnies» i a la del vostre perfil.
 

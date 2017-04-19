@@ -90,7 +90,10 @@ $string['printintro'] = 'Mostrar descripción del recurso';
 $string['printintroexplain'] = '¿Mostrar la descripción del recurso debajo del contenido? Algunos tipos de visualización pueden no mostrar la descripción incluso aunque esté activada esa opción.';
 $string['resource:addinstance'] = 'Añadir un nuevo recurso';
 $string['resourcecontent'] = 'Archivos y subcarpetas';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['resource:exportresource'] = 'Exportar recurso';
 $string['resource:view'] = 'Ver recurso';
 $string['search:activity'] = 'Archivo';
@@ -107,3 +110,4 @@ $string['showtype_help'] = 'Muestra el tipo de documento, tal que \'Documento de
 
 Si hay varios archivos en el recurso, se muestra el tipo del archivo inicial.
 Si el tipo de archivo es desconocido para el sistema, no se muestra.';
+$string['uploadeddate'] = 'Subido {$a}';

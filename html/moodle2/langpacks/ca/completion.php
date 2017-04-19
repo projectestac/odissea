@@ -59,7 +59,7 @@ $string['completiondisabled'] = 'Inhabilitada, no es mostra als paràmetres de l
 $string['completionduration'] = 'Inscripció';
 $string['completionenabled'] = 'Habilitada, control mitjançant compleció i paràmetres de l\'activitat';
 $string['completionexpected'] = 'S\'espera que es completi el';
-$string['completionexpected_help'] = 'Aquest paràmetre especifica la data en què s\'espera que es completi l\'activitat. La data no es mostra a l\'estudiantat i sols es mostra a l\'informe de compleció d\'activitat.';
+$string['completionexpected_help'] = 'Aquest paràmetre especifica la data en què s\'espera que es completi l\'activitat. La data no es mostra als estudiants i sols es visualitza a l\'informe de compleció d\'activitat.';
 $string['completion-fail'] = 'Completat (no s\'ha aconseguit assolir la qualificació)';
 $string['completion_help'] = 'Si s\'habilita, es fa un seguiment de compleció de l\'activitat, de forma manual o de forma automàtica, sobre la base de certes condicions. Es poden configurar múltiples condicions. Si es fa així, l\'activitat només es considerarà completada quan es complisquen TOTES les condicions.
 

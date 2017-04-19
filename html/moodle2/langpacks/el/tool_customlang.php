@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['headingcomponent'] = 'Συστατικό';
 $string['markuptodate'] = 'σημείωση ως ενημερωμένο';
 $string['pluginname'] = 'Γλωσσική προσαρμογή';

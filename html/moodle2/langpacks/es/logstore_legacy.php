@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Log heredado';
+$string['pluginname_desc'] = 'Un plugin de log que guarde las entradas del log en la tabla de log heredada.';
+$string['taskcleanup'] = 'Limpieza de la tabla heredada de log';

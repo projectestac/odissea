@@ -39,3 +39,5 @@ $string['testserver'] = 'Servidor de prueba';
 $string['testserver_desc'] = 'Esta es la cadena de caracteres para la conexión con el servidor de prueba que desea utilizar. Los servidores de prueba son totalmente opcionales, y especificando un servidor de prueba puede ejecutar pruebas PHPUnit para este entorno y ejecutar pruebas de rendimiento.';
 $string['username'] = 'Nombre de usuario';
 $string['username_help'] = 'El nombre de usuario que se utilizará al realizar una conexión.';
+$string['usesafe'] = 'Uso seguro';
+$string['usesafevalue'] = 'Usar valor seguro';

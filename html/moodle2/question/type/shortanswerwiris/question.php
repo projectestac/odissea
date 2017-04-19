@@ -62,6 +62,21 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         return $text;
     }
 
+    /**
+     *
+     * @return String Return the general feedback text in a single string so WIRIS
+     * quizzes can extract the variable placeholders.
+     */
+    public function join_feedback_text() {
+        $text = parent::join_feedback_text();
+        // Answer feedback.
+        foreach ($this->base->answers as $key => $value) {
+            $text .= ' ' . $value->feedback;
+        }
+
+        return $text;
+    }
+
     public function grade_response(array $response) {
         $answer = $this->get_matching_answer($response);
         if ($answer) {
@@ -155,15 +170,20 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             // Build array of correct answers.
             $correctvalues = array();
             $correctanswers = array();
+            $i = 0;
             foreach ($this->base->answers as $answer) {
                 $correctvalues[] = $answer->answer;
                 $correctanswers[] = $answer;
+                $this->wirisquestion->setCorrectAnswer($i, $answer->answer);
+                $i++;
             }
             // Load instance.
             $qi = $this->wirisquestioninstance;
+            // Set correct answer to question instance.
+            $qi->setStudentAnswer(0, $response['answer']);
+
             // Make call.
-            $request = $builder->newEvalMultipleAnswersRequest($correctvalues, array($response['answer']),
-                    $this->wirisquestion, $qi);
+            $request = $builder->newFeedbackRequest($this->join_feedback_text(), $this->wirisquestion, $qi);
             $response = $this->call_wiris_service($request);
             $qi->update($response);
 
@@ -179,6 +199,8 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             }
             // Backup matching answer.
             $matchinganswerid = 0;
+            // Reset variable.
+            $this->step->set_var('_matching_answer_grade', null);
             if (!empty($answer)) {
                 $matchinganswerid = $answer->id;
                 if ($max < 1.0) {

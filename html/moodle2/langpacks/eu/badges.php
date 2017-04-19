@@ -84,13 +84,19 @@ Zure gunea ez badago aktiboa probako dominak sortu eta eman ditzakezu beti ere a
 
 Egiaztatzeko beharrezko den URL bakarra [zure-gunearen-urla]/badges/assertion.php, da eta  fitxategi horretarako kanpoko sarbidea baimentzeko firewall-a aldatu ahal baduzu, dominek egiaztapenak funtzionatu egingo du.';
 $string['backpackbadges'] = '{$a->totalbadges} domina duzu {$a->totalcollections} bildumatatik erakutsiak. <a href="mybackpack.php">Aldatu motxilaren ezarpenak</a>.';
+$string['backpackcannotsendverification'] = 'Ezin da bidali egiaztapenerako e-posta';
 $string['backpackconnection'] = 'Motxilarako konexioa';
+$string['backpackconnectionconnect'] = 'Konektatu motxilara';
 $string['backpackconnection_help'] = 'Orri honek kanpoko motxila-hornitzaile baterako konexioa konfiguratzeko aukera ematen dizu. Motxila batera konektatzeak kanpoko dominak gune honetan erakusteko aukera ematen dizu eta bertan irabazitako dominak zeure motxilara igotzea.
 
 Une honetan, <a href="http://backpack.openbadges.org">OpenBadges Mozilla Motxila</a> baino ez da bateragarria. Izena eman behar da orri honetan motxilarako konexioa konfiguratzen saiatzen hasi aurretik motxila-zerbitzua izateko.';
+$string['backpackconnectionresendemail'] = 'Berriz bidali egiaztapenerako e-posta';
+$string['backpackconnectionunexpectedresult'] = 'Arazoa gertatu da motxilarekin konektatzean. Saiatu berriz. <br><br>Arazoa konpondu ezean, jar zaitez harremanetan sistemako kudeatzailearekin.';
 $string['backpackdetails'] = 'Motxilaren ezarpenak';
 $string['backpackemail'] = 'E-posta helbidea';
 $string['backpackemail_help'] = 'Zure motxilarekin lotutako e-posta helbidea. Konektatuta zauden bitartean, gune honetan irabazitako dominak e-posta helbide honekin lotuko dira.';
+$string['backpackemailverificationpending'] = 'Egiaztapena falta da';
+$string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges-en motxilarako e-posta bidezko egiaztapena';
 $string['backpackimport'] = 'Domina inportatzeko ezarpenak';
 $string['backpackimport_help'] = 'Motxilarako konexio egokia ezarri ondoren, zure motxilako dominak zure dominen orrian eta zure profil-orrian ikusi ahal izango dira.
 

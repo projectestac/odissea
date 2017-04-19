@@ -61,7 +61,7 @@ $string['regradeoption0'] = 'Ez markatu berriz kalifikatzeko';
 $string['regradeoption1'] = 'Markatu berriz kalifikatzeko';
 $string['restoredfromdraft'] = 'OHARRA: pertsona hau kalifikatzeko azken saiakera ez da ondo gorde, beraz, zirriborro-kalifikazioak berreskuratu dira. Aldaketa hauek bertan behera utzi nahi badituzu, erabili azpiko \'Utzi\' botoia.';
 $string['rubric'] = 'Errubrika';
-$string['rubricmapping'] = 'Puntuazioetatik kalifikazioetara mapaketa egiteko arauak';
+$string['rubricmapping'] = 'Puntuazioetatik kalifikazioetara lotura egiteko arauak';
 $string['rubricmappingexplained'] = 'Errubrika honentzako gutxieneko untuazioa  <b>{$a->minscore} puntu</b> da, eta moduluan erabilgarria den gutxieneko kalifikaziora bihurtuko da (eskalarik erabiltzen ez bada, zero izango da).
    Gehieneko puntuazioa <b>{$a->maxscore} puntu</b> da, eta gehieneko kalifikaziora bihurtuko da.<br />
    Erdiko puntuazioak era berean eraldatuko dira, eta erabilgarria den gertukoen baliora biribilduko da.<br />

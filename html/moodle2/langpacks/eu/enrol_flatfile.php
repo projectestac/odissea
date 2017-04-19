@@ -25,10 +25,41 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['encoding'] = 'Fitxategien kodifikazioa';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['filelockedmail'] = 'Cron prozesuak ezin du ezabatu matrikulazioak egiteko ({$a}) fitxategian oinarriturik erabiltzen ari zaren testu-fitxategia. Normalean honen zergatia zure baimenak desegokiak izatean datza. Baimenak ezar itzazu Moodle-k fitxategia ezabatu ahal izateko, mesedez. Bestela, prozesua errepikatu egingo da.';
 $string['filelockedmailsubject'] = 'Errore larria: Matrikulazio-fitxategia';
 $string['flatfile:manage'] = 'Kudeatu erabiltzaileen matrikulazioak eskuz';
+$string['flatfilesync'] = 'Testu-soileko fitxategi bidezko sinkronizazioa';
 $string['flatfile:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik eskuz';
 $string['location'] = 'Fitxategiaren kokapena';
-$string['pluginname'] = 'Flat fitxategia (CSV)';
+$string['location_desc'] = 'Zehaztu matrikulazio-fitxategiaren helbide osoa. Fitxategi hau automatikoki ezabatzen da prozesatu ondoren.';
+$string['mapping'] = 'Testu-soileko fitxategiko rolen lotura';
+$string['messageprovider:flatfile_enrolment'] = 'Testu-soileko fitxategiko matrikulazio-meuzak.';
+$string['notifyadmin'] = 'Jakinarazi kudeatzaileari';
+$string['notifyenrolled'] = 'Jakinarazi matrikulatutako erabiltzaileei';
+$string['notifyenroller'] = 'Jakinarazi matrikulazioen arduradunari';
+$string['pluginname'] = 'Testu-soileko fitxategia (CSV)';
+$string['pluginname_desc'] = 'Metodo honek zehazten duzun helbideko formatu bereziko testu-fitxategiak modu errepikakorrean egiaztatu eta prozesatuko ditu.
+Fitxategia errenkada bakoitzean komaz banatutako 4 edo 6 eremu dituela suposatuko da:
+
+ operation, role, user idnumber, course idnumber [, starttime [, endtime]]
+
+eremuok balio hauek izan ditzakete:
+
+* operation - add | del
+* role - student | teacher | teacheredit
+* user idnumber - erabiltzaile taulako ID zenbakia
+* course idnumber - ierabiltzaile taulako ID zenbakia
+* starttime - hasiera data (Unix-eko epoch-etik igarotako segunduak) - aukeakoa
+* endtime - bukaera data (Unix-eko epoch-etik igarotako segunduak) - aukeakoa
+
+Honen moduko zerbait izan daiteke:
+<pre class="informationbox">
+add, student, 5, CF101
+add, teacher, 6, CF101
+add, teacheredit, 7, CF101
+del, student, 8, CF101
+del, student, 17, CF101
+add, student, 21, CF101, 1091115000, 1091215000
+</pre>';

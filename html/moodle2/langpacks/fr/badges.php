@@ -80,13 +80,35 @@ Vous devez régler ce problème si votre site et en production et que vous plani
 
 La seule URL requise pour la vérification est <votre-URL-de-site>/badges/assertion.php. Si vous pouvez donc modifier les réglages de votre pare-feu pour permettre l\'accès externe à ce fichier, la vérification des badges fonctionnera.';
 $string['backpackbadges'] = 'Vous avez {$a->totalbadges} badge(s) affichés de {$a->totalcollections} collection(s). <a href="mybackpack.php">Modifier les réglages du sac à badges</a>.';
+$string['backpackcannotsendverification'] = 'Impossible d\'envoyer le courriel de vérification';
 $string['backpackconnection'] = 'Connexion de sac à badges';
+$string['backpackconnectioncancelattempt'] = 'Se connecter avec une adresse de courriel différente';
+$string['backpackconnectionconnect'] = 'Se connecter au sac à badges';
 $string['backpackconnection_help'] = 'Cette page vous permet de mettre en place une connexion vers un fournisseur de sac à badges externe. Une telle connexion vous permet d\'afficher des badges externes sur ce site et de copier les badges obtenus ici dans votre sac à badges.
 
 Actuellement, seul le sac à badges <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a> est supporté. Vous devez vous abonner à un tel service avant de mettre en place une connexion sur cette page.';
+$string['backpackconnectionresendemail'] = 'Envoyer à nouveau le courriel de vérification';
+$string['backpackconnectionunexpectedresult'] = 'Un problème est survenu lors du contact avec le sac à badges. Veuillez ressayer.<br /><br />Si ce problème persiste, contactez l\'administrateur de votre plateforme.';
 $string['backpackdetails'] = 'Réglages du sac à badges';
 $string['backpackemail'] = 'Adresse de courriel';
 $string['backpackemail_help'] = 'Adresse de courriel associée à votre sac à badges. Lorsque vous êtes connecté, tous les badges reçus sur ce site seront associés à cette adresse de courriel.';
+$string['backpackemailverificationpending'] = 'Vérification en attente';
+$string['backpackemailverifyemailbody'] = 'Bonjour,
+
+Une connexion à votre sac à badges OpenBadges a été demandée depuis « {$a->sitename} » au moyen de votre adresse de courriel.
+
+Pour confirmer cette demande et activer la connexion à votre sac à badges, veuillez cliquer sur le lien ci-dessous.
+
+{$a->link}
+
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
+
+Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
+{$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a} : vérification de courriel sac à badges OpenBadges';
+$string['backpackemailverifypending'] = 'Un message de vérification a été envoyé à l\'adresse <strong>{$a}</strong>. Cliquez sur le lien de vérification de ce message pour activer la connexion à votre sac à badge.';
+$string['backpackemailverifysuccess'] = 'Votre adresse de courriel a été vérifiée. Vous êtes désormais connecté à votre sac à badges.';
+$string['backpackemailverifytokenmismatch'] = 'Le jeton dans le lien que vous avez cliqué ne correspond pas au jeton enregistré. Assurez-vous de cliquer sur le lien indiqué dans le courriel le plus récent que vous avez reçu.';
 $string['backpackimport'] = 'Réglages d\'importation de badges';
 $string['backpackimport_help'] = 'Une fois établie la connexion à votre sac à badges, les badges de votre sac à badges peuvent être affichés sur votre page de badges et sur votre page de profil.
 

@@ -341,7 +341,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 					$tag = $s->getTagName($r);
 					if($tag === com_wiris_quizzes_impl_ResultGetTranslation::$tagName) {
 						$rgt = $r;
-						$this->wirisCasSession = $rgt->wirisCasSession;
+						$this->wirisCasSession = trim($rgt->wirisCasSession);
 						unset($rgt);
 					}
 					unset($tag,$s,$r,$i1);

@@ -31,6 +31,7 @@ $string['expiredaction_help'] = 'Seleccione la acción a realizar cuando finalic
 $string['filelockedmail'] = 'El fichero de texto empleado en matriculaciones basadas en archivo ({$a}) no puede ser eliminado por el proceso de \'cron\'. Esto generalmente significa que los permisos son erróneos. Por favor, corrija los permisos para que Moodle puede eliminar el archivo, de lo contrario, podría ser procesado en varias ocasiones.';
 $string['filelockedmailsubject'] = 'Error importante: Archivo de matriculación';
 $string['flatfile:manage'] = 'Gestionar manualmente la matriculación de usuario';
+$string['flatfilesync'] = 'Sincronización de fichero plano de matrículas';
 $string['flatfile:unenrol'] = 'Dar de baja usuarios del curso manualmente';
 $string['location'] = 'Ubicación del archivo';
 $string['location_desc'] = 'Especifique la ruta completa al archivo de matriculaciones. El archivo se borra automáticamente después del proceso.';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configurar instancias de matriculación en la base de datos';
 $string['database:unenrol'] = 'Dar de baja usuarios suspendidos';
 $string['dbencoding'] = 'Codificación de base de datos';
 $string['dbhost'] = 'Host de la base de datos';

@@ -159,7 +159,13 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
             $qi = $this->wirisquestioninstance;
 
             // Call service.
-            $request = $builder->newEvalMultipleAnswersRequest($teacheranswers, $studentanswers, $q, $qi);
+            for ($i = 0; $i < count($studentanswers); $i++) {
+                $qi->setStudentAnswer($i, $studentanswers[$i]);
+            }
+            for ($i = 0; $i < count($teacheranswers); $i++) {
+                $q->setCorrectAnswer($i, $teacheranswers[$i]);
+            }
+            $request = $builder->newFeedbackRequest($this->join_feedback_text(), $q, $qi);
             $resp = $this->call_wiris_service($request);
             $qi->update($resp);
 
@@ -268,6 +274,36 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
             // Numerical question type is also possible but don't have the method.
             if (method_exists($question, 'join_all_text')) {
                 $text .= ' ' . $question->join_all_text();
+            }
+        }
+        return $text;
+    }
+
+    /**
+     * @return String Return all the question text without feedback texts.
+     */
+    public function join_question_text() {
+        $text = parent::join_question_text();
+        // Subquestions.
+        if (method_exists($question, 'join_question_text')) {
+            $text .= ' ' .$question->join_question_text();
+        }
+        return $text;
+    }
+
+
+    /**
+     *
+     * @return String Return the general feedback text in a single string so WIRIS
+     * quizzes can extract the variable placeholders.
+     */
+    public function join_feedback_text() {
+        $text = parent::join_feedback_text();
+        // Subquestions.
+        foreach ($this->subquestions as $key => $question) {
+            // Numerical question type is also possible but don't have the method.
+            if (method_exists($question, 'join_feedback_text')) {
+                $text .= ' ' . $question->join_feedback_text();
             }
         }
         return $text;

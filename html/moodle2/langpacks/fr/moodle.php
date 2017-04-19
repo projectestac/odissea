@@ -599,11 +599,11 @@ $string['emailconfirmation'] = 'Bonjour,
 
 La création d\'un compte pour {$a->sitename} a été demandée en utilisant votre adresse de courriel. Pour confirmer votre enregistrement, veuillez visiter la page web suivante :
 
-    {$a->link}
+{$a->link}
 
-Dans la plupart des logiciels de courriel, cette adresse est un lien actif qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien (qui peut être coupé sur deux lignes) et collez-le dans la barre d\'adresse de votre navigateur web.
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
-Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site.
+Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
 {$a->admin}';
 $string['emailconfirmationsubject'] = '{$a} : confirmation de l\'ouverture du compte';
 $string['emailconfirmsent'] = '<p>Un message vous a été envoyé à l\'adresse de courriel <strong>{$a}</strong>.</p><p>Il contient les instructions pour terminer votre enregistrement.</p><p>Si vous rencontrez des difficultés, veuillez contacter l\'administrateur du site.</p>';
@@ -641,9 +641,10 @@ Pour modifier votre mot de passe, visitez la page web suivante :
 
 {$a->link}
 
-Dans la plupart des logiciels de messagerie, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
-Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site, {$a->admin}';
+Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
+{$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Bonjour {$a->firstname},
 
 Quelqu\'un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
@@ -663,9 +664,10 @@ Pour confirmer cette demande et recevoir votre nouveau mot de passe par courriel
 
 {$a->link}
 
-Dans la plupart des logiciels de messagerie, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
-Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site, {$a->admin}';
+Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
+{$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a} : confirmation du changement de mot de passe';
 $string['emailpasswordconfirmmaybesent'] = '<p>Si vous avez fourni un nom d\'utilisateur ou une adresse de courriel corrects, un message vous a été envoyé par courriel.</p> <p>Ce message contient de simples instructions pour confirmer et terminer cette procédure de modification de mot de passe. Si vous n\'arrivez toujours pas à vous connecter, veuillez contacter l\'administrateur du site.</p>';
 $string['emailpasswordconfirmnoemail'] = '<p>Le compte utilisateur indiqué n\'a pas d\'adresse de courriel.</p>
@@ -1184,7 +1186,7 @@ $string['newcourse'] = 'Nouveau cours';
 $string['newpassword'] = 'Nouveau mot de passe';
 $string['newpasswordfromlost'] = '<strong>Attention !</strong> Votre <strong>Mot de passe actuel</strong> vous a été envoyé dans le <strong>deuxième</strong> des deux courriels envoyés durant le processus de récupération de mot de passe. Veuillez vous assurer que vous avez bien reçu votre mot de passe de remplacement avant de continuer sur cette page.';
 $string['newpassword_help'] = 'Saisissez un nouveau mot de passe ou laissez vide pour conserver le mot de passe actuel.';
-$string['newpasswordtext'] = 'Bonjour {$a->firstname},
+$string['newpasswordtext'] = 'Bonjour,
 
 Le mot de passe de votre compte sur « {$a->sitename} » a été remplacé par un nouveau mot de passe temporaire.
 
@@ -1196,7 +1198,7 @@ Les informations pour vous connecter sont désormais :
 Merci de visiter cette page afin de changer de mot de passe :
     {$a->link}
 
-Dans la plupart des logiciels de messagerie, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site {$a->sitename},
 {$a->signoff}';
@@ -1213,7 +1215,7 @@ $string['newusernewpasswordtext'] = 'Bonjour,
 
 Un nouveau compte a été créé pour vous sur le site « {$a->sitename} » et un mot de passe temporaire vous a été délivré.
 
-Les informations nécessaires à votre connexion sont maintenant :
+Les informations nécessaires à votre connexion sont maintenant :
    nom d\'utilisateur : {$a->username}
    mot de passe       : {$a->newpassword}
 
@@ -1222,7 +1224,7 @@ Vous devrez changer votre mot de passe lors de votre première connexion.
 Pour commencer à travailler sur « {$a->sitename} », veuillez vous connecter en cliquant sur le lien ci-dessous.
    {$a->link}
 
-Dans la plupart des logiciels de messagerie, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
+Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site {$a->sitename},
 {$a->signoff}';

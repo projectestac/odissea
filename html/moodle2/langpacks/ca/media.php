@@ -28,10 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['flashanimation'] = 'Animació Flash';
 $string['flashanimation_desc'] = 'Fitxers amb extensió *.swf. Per raons de seguretat aquest filtre s\'utilitza només en textos de confiança.';
 $string['flashvideo'] = 'Vídeo Flash';
-$string['flashvideo_desc'] = 'Fitxers amb extensió *.flv i *.f4v. Reprodueix clips de vídeo utilitzant Flowplayer, Es requereix el connector de Flash i javascript. Fa servir HTML 5 com alternativa de video si s\'han especificat diverses fonts.';
+$string['flashvideo_desc'] = 'Fitxers amb l\'extensió *.flv i *.f4v. Reprodueix clips de vídeo utilitzant Flowplayer. Es requereix el connector de Flash i JavaScript.';
 $string['html5audio'] = 'HTML 5 audio';
-$string['html5audio_desc'] = 'Fitxers d\'audio amb extensió *.ogg, *.aac i altres. És només compatible amb les últimes versions dels navegadors, malauradament no existeix un format que sigui compatible amb tots els navegadors.
-Una solució és especificar alternatives separades per # (per exemple: http://example.org/audio.aac#http://example.org/audio.aac#http://example.org/audio.mp3#), el reproductor QuickTime és utilitzat com a alternativa pels navegadors més antics, una alternativa pot ser qualsevol tipus d\'audio.';
+$string['html5audio_desc'] = 'Fitxers d\'àudio amb l\'extensió *.ogg, *.aac i *.mp3. S\'empren sobretot per a dispositius mòbils. (La compatibilitat del format depèn del navegador.)';
 $string['html5video'] = 'HTML 5 vídeo';
 $string['html5video_desc'] = 'Fitxers de vídeo amb extensió *.webm, *.m4v, *.ogv, *.mp4 i altres. És només compatible amb les últimes versions dels navegadors, malauradament no existeix un format que sigui compatible amb tots els navegadors.
 Una solució és especificar alternatives separades per # (per exemple: http://example.org/video.m4v#http://example.org/video.aac#http://example.org/video.ogv#d=640x480), el reproductor QuickTime és utilitzat com a alternativa pels navegadors més antics.';

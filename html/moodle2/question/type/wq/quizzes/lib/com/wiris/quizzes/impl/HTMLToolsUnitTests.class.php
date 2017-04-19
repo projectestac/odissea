@@ -5,6 +5,22 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		if(!php_Boot::$skip_constructor) {
 		$this->h = new com_wiris_quizzes_impl_HTMLTools();
 	}}
+	public function unitTestStripRootTag() {
+		$inputs = new _hx_array(array("<math><mi>x</mi></math>", "<math><math/></math>", "<math></math><math/>", "<math><mi>e</mi><mo>+</mo><math><mi>i</mi></math></math>", "<math><math></math><math/><math></math></math><math></math>"));
+		$outputs = new _hx_array(array("<mi>x</mi>", "<math/>", "<math></math><math/>", "<mi>e</mi><mo>+</mo><math><mi>i</mi></math>", "<math><math></math><math/><math></math></math><math></math>"));
+		$i = null;
+		{
+			$_g1 = 0; $_g = $inputs->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$result = com_wiris_quizzes_impl_HTMLTools::stripRootTag($inputs[$i1], "math");
+				if(!($result === $outputs[$i1])) {
+					throw new HException("Failed srtip root tag test: " . _hx_string_rec($i1, "") . "\x0AExpected: " . $outputs[$i1] . "\x0ABut got: " . $result);
+				}
+				unset($result,$i1);
+			}
+		}
+	}
 	public function unitTestUtf8() {
 		$s = com_wiris_quizzes_impl_HTMLToolsUnitTests_0($this) . "a" . com_wiris_quizzes_impl_HTMLToolsUnitTests_1($this) . "a";
 		$i = com_wiris_system_Utf8::getIterator($s);
@@ -267,6 +283,7 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		}
 	}
 	public function run() {
+		$this->unitTestStripRootTag();
 		$this->unitTestParseCompoundAnswers();
 		$this->unitTestUpdateReservedWords();
 		$this->unitTestReplaceVariablesInHTML();

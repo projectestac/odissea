@@ -49,7 +49,7 @@ $string['cannotcallscript'] = 'No podeu cridar aquest script d\'aquesta manera.'
 $string['cannotcallusgetselecteduser'] = 'No podeu cridar user_selector::get_selected_user si multi select és cert.';
 $string['cannotcreatebackupdir'] = 'No s\'ha pogut crear el directori de còpies de seguretat. Cal que l\'administrador del lloc assigni els permisos.';
 $string['cannotcreatecategory'] = 'No s\'ha inserit la categoria';
-$string['cannotcreatedboninstall'] = '<p>No és pot crear la base de dades.</p> <p>La base de dades especificada no existeix i l\'usuari que heu proporcionat no té permís per a crear-la.</p>
+$string['cannotcreatedboninstall'] = '<p>No es pot crear la base de dades.</p> <p>La base de dades especificada no existeix i l\'usuari que heu proporcionat no té permís per a crear-la.</p>
 <p>L\'administrador del lloc hauria de verificar la configuració de la base de dades.</p>';
 $string['cannotcreategroup'] = 'S\'ha produït un error en crear la categoria';
 $string['cannotcreatelangbase'] = 'S\'ha produït un error. No s\'ha creat el directori base d\'idiomes.';

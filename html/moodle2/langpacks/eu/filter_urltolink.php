@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['embedimages'] = 'Enbotatutako irudiak';
+$string['embedimages_desc'] = 'Irudien URLak irudiekin ordezkatu aukeratutako testu formatuan.';
 $string['filtername'] = 'URLak esteka eta irudi bihurtu';
 $string['settingformats'] = 'Aplikatu formatuei';
 $string['settingformats_desc'] = 'Iragazkia bakarrik aplikatuko da jatorrizko testua aukeratutako formatuetako batean txertatu bada.';

@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['foundnusers'] = 'Βρέθηκαν {$a} χρήστες';
+$string['foundoneuser'] = 'Βρέθηκε 1 χρήστης';
+$string['grader'] = 'Βαθμολογητής';
 $string['preferences'] = 'Προτιμήσεις ιστορικού βαθμού';
+$string['selectedusers'] = 'Επιλεγμένοι χρήστες';
+$string['source'] = 'Πηγή';

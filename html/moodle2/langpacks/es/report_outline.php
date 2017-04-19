@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventactivityreportviewed'] = 'Informe de actividad visto';
 $string['neverseen'] = 'Nunca visto';
+$string['numviews'] = '{$a->numviews} por {$a->distinctusers} usuarios';
 $string['outline:view'] = 'Ver informe de actividad del curso';
 $string['page-report-outline-index'] = '';
 $string['pluginname'] = 'Actividad del curso';

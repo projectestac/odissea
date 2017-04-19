@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventcomponent'] = 'Συστατικό';
 $string['eventrelatedfullnameuser'] = 'Χρήστης που επηρεάζεται';
 $string['livelogs'] = 'Αρχεία καταγραφής της τελευταίας ώρας';
 $string['pluginname'] = 'Ενεργά αρχεία καταγραφής';

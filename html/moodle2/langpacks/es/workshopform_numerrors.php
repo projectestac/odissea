@@ -29,6 +29,7 @@ $string['addmoredimensions'] = 'Espacios en blanco para {$a} afirmaciones más';
 $string['configgrade0'] = 'Palabra por defecto que describe la evaluación negativa de una afirmación.';
 $string['configgrade1'] = 'Palabra por defecto que describe la evaluación positiva de una afirmación.';
 $string['dimensioncomment'] = 'Comentario';
+$string['dimensioncommentfor'] = 'Comentario para {$a}';
 $string['dimensiondescription'] = 'Descripción';
 $string['dimensiongrade'] = 'Calificación';
 $string['dimensionnumber'] = 'Afirmación {$a}';

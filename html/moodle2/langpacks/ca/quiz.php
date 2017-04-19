@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessnoticesheader'] = 'Podeu previsualitzar aquest qüestionari, però no podrieu contestar-lo perquè:';
+$string['accessnoticesheader'] = 'Podeu previsualitzar aquest qüestionari, però si fos un intent real no podríeu contestar-lo perquè:';
 $string['action'] = 'Acció';
 $string['activityoverview'] = 'Teniu qüestionaris per respondre';
 $string['adaptive'] = 'Mode adaptatiu';

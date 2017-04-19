@@ -1,0 +1,315 @@
+.vv-hidden {
+    display: none;
+}
+
+.vv-title {
+    padding: 0px 0px 0px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background-image: url([[pix:format_vv|edubook]]);
+    background-repeat: no-repeat;
+    background-size: 57px;
+    background-position: right center;
+    background-color: gray;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    line-height: 57px;
+    margin: 0;
+}
+
+.vv-mates .vv-title {
+    background-color: #055FA8;
+}
+
+.vv-lengua .vv-title {
+    background-color: #BC0A0A;
+}
+
+.vv-naturales .vv-title {
+    background-color: #EF7625;
+}
+
+.vv-sociales .vv-title {
+    background-color: #039403;
+}
+
+.vv-topics {
+    font-family: 'helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 16px;
+    margin-right: 0;
+}
+
+.vv-topics li {
+    list-style: none;
+}
+
+h3.vv-sectionname {
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
+    border-bottom: 1px solid #CCC;
+    padding: 15px 0px 15px 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+li.vv-section.hidden h3.vv-sectionname {
+    opacity: 0.5;
+}
+
+.vv-icon-section {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.vv-mates .vv-icon-section {
+    background-image: url([[pix:format_vv|icon-apartat-B]]);
+}
+
+.vv-lengua .vv-icon-section {
+    background-image: url([[pix:format_vv|icon-apartat-R]]);
+}
+
+.vv-naturales .vv-icon-section {
+    background-image: url([[pix:format_vv|icon-apartat-O]]);
+}
+
+.vv-sociales .vv-icon-section {
+    background-image: url([[pix:format_vv|icon-apartat-G]]);
+}
+
+.vv-icon-arrow {
+    float: right;
+    width: 11px;
+    height: 22px;
+    background-image: url([[pix:format_vv|arrow-ver]]);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+}
+
+.vv-opened .vv-icon-arrow {
+   background-image: url([[pix:format_vv|arrow-hor]]);
+}
+
+ul.vv-section {
+    counter-reset: subsection;
+    padding: 0;
+    margin: 0;
+}
+
+li.vv-section.hidden {
+    display: block;
+    visibility: visible;
+}
+
+li.vv-subsection {
+    border-bottom: 1px solid #CCC;
+    padding: 0;
+    color: #666;
+    color: #666;
+}
+
+h4.vv-subsectionname {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0 15px 60px;
+    margin: 0;
+    cursor: pointer;
+}
+
+h4.vv-subsectionname > div.no-overflow {
+    margin-right: 20px;
+}
+
+h4.vv-subsectionname div.no-overflow > p:last-child {
+    margin-bottom: 0;
+}
+
+.vv-subsectionnum {
+    float: left;
+    padding: 2px 6px;
+    min-width: 10px;
+    color: #FFF;
+    border-radius: 3px;
+    margin-right: 15px;
+    background-color: gray;
+    text-align: center;
+}
+
+.vv-mates .vv-subsectionnum {
+    background-color: #055FA8;
+}
+
+.vv-lengua .vv-subsectionnum {
+    background-color: #BC0A0A;
+}
+
+.vv-naturales .vv-subsectionnum {
+    background-color: #EF7625;
+}
+
+.vv-sociales .vv-subsectionnum {
+    background-color: #039403;
+}
+
+ul.vv-subsection {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #CCC;
+    margin-bottom: -1px;
+}
+
+li.vv-activity {
+    padding: 15px 0 15px 90px;
+    border-bottom: 1px solid #CCC;
+}
+
+a.vv-activitylink,
+a.vv-activitylink:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.img-text a.vv-activitylink:hover span {
+    text-decoration: none;
+}
+
+li.vv-activity .contentafterlink {
+    clear: both;
+    margin-top: 15px;
+}
+
+.vv-contentafterlink p {
+    margin: 0;
+}
+
+.vv-topics .autocompletion,
+.vv-topics form.togglecompletion {
+    float: right;
+}
+
+.vv-topics .commands,
+.vv-topics .actions {
+    float: right;
+}
+
+.vv-topics .commands img.icon,
+.vv-topics .actions img.iconsmall {
+    vertical-align: middle;
+    margin: 0 3px;
+    padding: 0;
+}
+
+.vv-topics .commands a {
+    margin-left: 5px;
+}
+
+.vv-topics .activityicon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 19px;
+}
+
+.vv-topics .activityicon.iconlarge {
+    width: 24px;
+    height: 24px;
+    margin-top: -2px;
+    margin-left: 6px;
+    margin-right: 15px;
+}
+
+.vv-icon-activity,
+.vv-icon-book,
+.vv-icon-document,
+.vv-icon-link {
+    float: left;
+    width: 35px;
+    height: 30px;
+    margin-top: -8px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vv-mates .vv-icon-activity {
+    background-image: url([[pix:format_vv|icon-activitat-B]]);
+}
+
+.vv-lengua .vv-icon-activity {
+    background-image: url([[pix:format_vv|icon-activitat-R]]);
+}
+
+.vv-naturales .vv-icon-activity {
+    background-image: url([[pix:format_vv|icon-activitat-O]]);
+}
+
+.vv-sociales .vv-icon-activity {
+    background-image: url([[pix:format_vv|icon-activitat-G]]);
+}
+
+.vv-mates .vv-icon-book {
+    background-image: url([[pix:format_vv|icon-resum-B]]);
+}
+
+.vv-lengua .vv-icon-book {
+    background-image: url([[pix:format_vv|icon-resum-R]]);
+}
+
+.vv-naturales .vv-icon-book {
+    background-image: url([[pix:format_vv|icon-resum-O]]);
+}
+
+.vv-sociales .vv-icon-book {
+    background-image: url([[pix:format_vv|icon-resum-G]]);
+}
+
+.vv-mates .vv-icon-document {
+    background-image: url([[pix:format_vv|icon-document-B]]);
+}
+
+.vv-lengua .vv-icon-document {
+    background-image: url([[pix:format_vv|icon-document-R]]);
+}
+
+.vv-naturales .vv-icon-document {
+    background-image: url([[pix:format_vv|icon-document-O]]);
+}
+
+.vv-sociales .vv-icon-document {
+    background-image: url([[pix:format_vv|icon-document-G]]);
+}
+
+.vv-mates .vv-icon-link {
+    background-image: url([[pix:format_vv|icon-link-B]]);
+}
+
+.vv-lengua .vv-icon-link {
+    background-image: url([[pix:format_vv|icon-link-R]]);
+}
+
+.vv-naturales .vv-icon-link {
+    background-image: url([[pix:format_vv|icon-link-O]]);
+}
+
+.vv-sociales .vv-icon-link {
+    background-image: url([[pix:format_vv|icon-link-G]]);
+}

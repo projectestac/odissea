@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Informe de notas de usuario visto';
+$string['myself'] = 'Yo mismo';
+$string['otheruser'] = 'Usuario';
 $string['pluginname'] = 'Usuario';
 $string['tablesummary'] = 'La tabla está ordenada como una lista de elementos que incluye categorías y notas. Cuando los elementos pertenecen a una categoría se indica.';
 $string['user:view'] = 'Ver su propio informe de calificación';
+$string['viewas'] = 'Ver informe como';

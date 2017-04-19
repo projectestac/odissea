@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Metodo honek erabiltzaileen sorrera automatizatua ahalbidetzen du. Erabiltzaile guztiak kudeatzaileak sortu behar ditu.';
+$string['expiration'] = 'Gaitu pasahitzen iraungitzea';
+$string['expiration_desc'] = 'Gaitu pasahitzak denbora baten ondoren iraungitzea.';
 $string['expiration_warning'] = 'Jakinarazpenen ataria';
+$string['expiration_warning_desc'] = 'Pasahitza iraungitu aurretiko egun kopurua jakinarazpena bidaltzeko.';
 $string['passwdexpire_settings'] = 'Pasahitzaren iraungitzerako ezarpenak';
 $string['passwdexpiretime'] = 'Pasahitzaren iraupena';
+$string['passwdexpiretime_desc'] = 'Pasahitza baliozkoa den denbora-tartea.';
 $string['pluginname'] = 'Eskuzko kontuak';

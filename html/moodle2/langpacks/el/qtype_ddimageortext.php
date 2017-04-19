@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}';
+$string['previewareaheader'] = 'Προεπισκόπηση';

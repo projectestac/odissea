@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configmaxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['countfiles'] = '{$a} αρχεία';
+$string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['enabled'] = 'Αρχείο ανατροφοδότησης';
 $string['feedbackfileadded'] = 'Νέο αρχείο ανατροφοδότησης "{$a->filename}" για το μαθητή "{$a->student}"';
 $string['feedbackfileupdated'] = 'Το αρχείο ανατροφοδότησης "{$a->filename}" ενημερώθηκε για τον εκπαιδευόμενο "{$a->student}"';

@@ -277,6 +277,7 @@ $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenO
 $string['optionaldescription'] = 'Μικρή περιγραφή (προαιρετικό)';
 $string['optionalfilename'] = 'Όνομα αρχείου (προαιρετικό)';
 $string['other'] = 'Άλλο';
+$string['overrwritedesc'] = 'Αντικατάσταση προκαθορισμένου αν υπάρχει ήδη';
 $string['overwrite'] = 'Επικάλυψη';
 $string['overwritesettings'] = 'Επικάλυψη τρέχουσας ρύθμισης';
 $string['pagesize'] = 'Καταχωρήσεις ανά σελίδα';

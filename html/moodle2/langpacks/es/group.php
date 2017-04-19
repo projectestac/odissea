@@ -73,6 +73,7 @@ $string['eventgroupcreated'] = 'Grupo creado';
 $string['eventgroupdeleted'] = 'Grupo eliminado';
 $string['eventgroupingcreated'] = 'Grupo creado';
 $string['eventgroupingdeleted'] = 'Grupo eliminado';
+$string['eventgroupinggroupassigned'] = 'Grupo asignado para agrupar';
 $string['eventgroupingupdated'] = 'Grupo actualizado';
 $string['eventgroupmemberadded'] = 'Miembro del grupo añadido';
 $string['eventgroupmemberremoved'] = 'Miembro del grupo eliminado';
@@ -145,6 +146,8 @@ $string['importgroups_help'] = 'Los grupos pueden ser importados mediante un arc
 * El primer registro contiene una lista de nombres de campos que definen el formato del resto del archivo
 * Es obligatorio el campo de grupo
 * Son opcionales los campos descripción, clave de matriculación, fotografía, fotografiá oculta';
+$string['includeonlyactiveenrol'] = 'Incluir únicamente matriculas activas';
+$string['includeonlyactiveenrol_help'] = 'Si está activado, los usuarios suspendidos no serán incluidos en los grupos.';
 $string['javascriptrequired'] = 'Esta página requiere que Javascript esté activado.';
 $string['members'] = 'Miembros por grupo';
 $string['membersofselectedgroup'] = 'Miembros de:';
@@ -185,6 +188,7 @@ es mayor a 100 x 100 píxeles se cortará.
 <P>Cuando acabe de cambiar su imagen es posible que no vea el cambio; si eso sucede
 actualice la página (oprimiendo F5 o el botón actualizar).';
 $string['noallocation'] = 'No asignación';
+$string['nogroup'] = 'Sin grupo';
 $string['nogrouping'] = 'No agrupar';
 $string['nogroups'] = 'Aún no se han formado grupos en este curso';
 $string['nogroupsassigned'] = 'No hay grupos asignados';
@@ -192,6 +196,7 @@ $string['nopermissionforcreation'] = 'No se puede crear el grupo "{$a}": usted n
 $string['nosmallgroups'] = 'Evitar el último grupo pequeño';
 $string['notingroup'] = 'Ignorar usuarios en grupos';
 $string['notingrouping'] = '[Fuera de un agrupamiento]';
+$string['notingrouplist'] = '[En ningún grupo]';
 $string['nousersinrole'] = 'No existen usuarios disponibles en el rol seleccionado';
 $string['number'] = 'Número de grupos o miembros por grupo';
 $string['numgroups'] = 'Número de grupos';

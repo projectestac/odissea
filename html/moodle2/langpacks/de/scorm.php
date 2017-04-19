@@ -207,6 +207,7 @@ $string['lastattemptlock_help'] = 'Diese Option legt fest, ob Teilnehmer/innen n
 $string['location'] = 'Adresse anzeigen';
 $string['masteryoverride'] = 'Status für die Punktzahlüberschreibung zum Bestehen';
 $string['masteryoverridedesc'] = 'Diese Einstellung legt die Vorgabe für die Punktzahl zum Bestehen fest.';
+$string['masteryoverride_help'] = 'Wenn die Option aktiviert ist, wird der Status unter Einbeziehung des Raw-Score und des Master-Score neu berechnet und jeder Status überschrieben, der von SCORM (einschließlich "unvollständig") bereitgestellt wird. Voraussetzung ist dabei, dass ein Mastery-Score und ein Raw-Score gesetzt sind und das LMSFinish aufgerufen wird.';
 $string['max'] = 'Höchstpunktzahl';
 $string['maximumattempts'] = 'Zahl der Versuche';
 $string['maximumattemptsdesc'] = 'Diese Einstellung legt die maximale Anzahl von Versuchen für eine Aktivität fest';

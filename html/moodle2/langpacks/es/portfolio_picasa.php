@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clientid'] = 'ID del cliente';
 $string['noauthtoken'] = 'No se ha recibido de google una ficha de autenticación. Por favor, asegúrese de que está permitiendo que moodle acceda a su cuenta en google';
+$string['nooauthcredentials'] = 'Se requieren las credenciales de OAuth.';
 $string['oauthinfo'] = '<p> Para utilizar este plugin, debe registrar su sitio en Google, como se describe en la documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p> Como parte del proceso de registro, tendrá que introducir la siguiente URL como "Authorized Redirect URIs \': </p><p> {$a->callbackurl} </p> Una vez registrado, se le proporcionará un ID de cliente y el secreto que se puede utilizar para configurar los plugins de Google Drive y Picasa. </p>';
 $string['pluginname'] = 'Picasa';
 $string['sendfailed'] = 'No se ha podido transferir el archivo {$a} a Picasa';

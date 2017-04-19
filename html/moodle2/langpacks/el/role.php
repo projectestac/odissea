@@ -118,6 +118,7 @@ $string['comment:post'] = 'Αποστολή σχολίων';
 $string['comment:view'] = 'Ανάγνωση  σχολίων';
 $string['community:add'] = 'Χρήση του μπλοκ της κοινότητας για αναζήτηση κόμβων και εύρεση μαθημάτων';
 $string['community:download'] = 'Κατέβασμα μαθήματος από το μπλοκ της κοινότητας';
+$string['confirmunassignno'] = 'Ακύρωση';
 $string['context'] = 'Πλαίσιο';
 $string['course:activityvisibility'] = 'Προβολή/απόκρυψη δραστηριοτήτων';
 $string['course:bulkmessaging'] = 'Αποστολή ενός μηνύματος σε πολλούς παραλήπτες';

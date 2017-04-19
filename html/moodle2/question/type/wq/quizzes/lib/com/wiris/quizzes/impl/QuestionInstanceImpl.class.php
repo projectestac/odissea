@@ -155,10 +155,12 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 						unset($j,$i1,$ca);
 					}
 				}
-				return $res;
+				$resarray = new _hx_array(array());
+				$resarray = $res->copy();
+				return $resarray;
 			}
 		}
-		return null;
+		return new _hx_array(array());
 	}
 	public function getStudentAnswersLength() {
 		return com_wiris_quizzes_impl_QuestionInstanceImpl_0($this);
@@ -596,26 +598,21 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	public function getAnswerGrade($correctAnswer, $studentAnswer, $q) {
 		$grade = 0.0;
 		$question = (($q !== null) ? _hx_deref(($q))->getImpl() : null);
-		if($question !== null && $question->getAssertionIndex(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, $correctAnswer, $studentAnswer) !== -1) {
-			$checks = $this->checks->get(_hx_string_rec($studentAnswer, "") . "");
-			$grade = $this->prodChecks($checks, $correctAnswer, $studentAnswer);
-		} else {
-			if($question !== null && $question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER) === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE && $question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE) === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE) {
-				$distribution = $this->getCompoundGradeDistribution($question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION));
-				$i = null;
-				{
-					$_g1 = 0; $_g = $distribution->length;
-					while($_g1 < $_g) {
-						$i1 = $_g1++;
-						$checks = $this->getCompoundAnswerChecks($correctAnswer, $studentAnswer, $i1);
-						if($checks !== null) {
-							if($this->andChecks($checks)) {
-								$grade += $distribution[$i1];
-							}
-						}
-						unset($i1,$checks);
-					}
+		if($question !== null && $question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER) === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE && $question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE) === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE) {
+			$distribution = $this->getCompoundGradeDistribution($question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION));
+			$i = null;
+			{
+				$_g1 = 0; $_g = $distribution->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$grade += $distribution->»a[$i1] * $this->getCompoundAnswerGrade($correctAnswer, $studentAnswer, $i1, $q);
+					unset($i1);
 				}
+			}
+		} else {
+			if($question !== null && $question->getAssertionIndex(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, $correctAnswer, $studentAnswer) !== -1) {
+				$checks = $this->checks->get(_hx_string_rec($studentAnswer, "") . "");
+				$grade = $this->prodChecks($checks, $correctAnswer, $studentAnswer);
 			} else {
 				$correct = $this->isAnswerMatching($correctAnswer, $studentAnswer);
 				$grade = (($correct) ? 1.0 : 0.0);
@@ -851,12 +848,14 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		if(com_wiris_quizzes_impl_MathContent::getMathType($text) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML) {
 			$text = $h->mathMLToText($text);
 		}
-		if($this->variables === null || $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT) === null) {
-			return $text;
-		} else {
+		if($this->variables !== null && $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT) !== null) {
 			$textvars = $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT);
-			return $h->expandVariablesText($text, $textvars);
+			$text = $h->expandVariablesText($text, $textvars);
 		}
+		if($this->userData->answers !== null) {
+			$text = $h->expandAnswersText($text, $this->userData->answers, $this->getAnswerParameterName());
+		}
+		return $text;
 	}
 	public function addAllHashElements($src, $dest) {
 		if($src !== null) {
@@ -884,12 +883,25 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			return $h->expandVariables($equation, $vars);
 		}
 	}
+	public function getAnswerParameterName() {
+		$keyword = $this->getLocalData(com_wiris_quizzes_api_QuizzesConstants::$OPTION_STUDENT_ANSWER_PARAMETER_NAME);
+		if($keyword === null) {
+			$keyword = "answer";
+			$lang = $this->getLocalData(com_wiris_quizzes_impl_QuestionInstanceImpl::$KEY_ALGORITHM_LANGUAGE);
+			if($lang !== null && !($lang === com_wiris_quizzes_impl_QuestionInstanceImpl::$DEF_ALGORITHM_LANGUAGE)) {
+				$keyword = com_wiris_quizzes_impl_Translator::getInstance($lang)->t($keyword);
+			}
+		}
+		return $keyword;
+	}
 	public function expandVariablesMathML($equation) {
 		$h = new com_wiris_quizzes_impl_HTMLTools();
 		if(com_wiris_quizzes_impl_MathContent::getMathType($equation) === com_wiris_quizzes_impl_MathContent::$TYPE_TEXT) {
 			$equation = $h->textToMathML($equation);
 		}
-		return $h->expandVariables($equation, $this->variables);
+		$equation = $h->expandVariables($equation, $this->variables);
+		$equation = $h->expandAnswers($equation, $this->userData->answers, $this->getAnswerParameterName());
+		return $equation;
 	}
 	public function expandVariables($text) {
 		if($text === null) {
@@ -897,7 +909,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		}
 		$h = new com_wiris_quizzes_impl_HTMLTools();
 		$h->setItemSeparator($this->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_ITEM_SEPARATOR));
-		return $h->expandVariables($text, $this->variables);
+		$text = $h->expandVariables($text, $this->variables);
+		$text = $h->expandAnswers($text, $this->userData->answers, $this->getAnswerParameterName());
+		return $text;
 	}
 	public function defaultLocalData($name) {
 		return null;
@@ -987,6 +1001,8 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	}
 	static $tagName = "questionInstance";
 	static $base64;
+	static $DEF_ALGORITHM_LANGUAGE = "en";
+	static $KEY_ALGORITHM_LANGUAGE = "sessionLang";
 	function __toString() { return 'com.wiris.quizzes.impl.QuestionInstanceImpl'; }
 }
 function com_wiris_quizzes_impl_QuestionInstanceImpl_0(&$»this) {

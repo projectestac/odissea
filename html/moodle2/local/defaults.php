@@ -39,3 +39,7 @@ $defaults['backup']['import_general_duplicate_admin_allowed'] = 1;
 $defaults['core_competency']['enabled'] = 0;
 $defaults['core_competency']['pushcourseratingstouserplans'] = 1;
 $defaults['assignsubmission_file']['maxfiles'] = 10;
+$defaults['mod_hvp']['enable_save_content_state'] = 1;
+$defaults['mod_hvp']['export'] = 4;
+$defaults['mod_hvp']['copyright'] = 0;
+$defaults['mod_hvp']['icon'] = 0;

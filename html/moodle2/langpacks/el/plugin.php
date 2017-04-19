@@ -71,4 +71,5 @@ $string['type_theme'] = 'Θέμα';
 $string['type_theme_plural'] = 'Θέματα';
 $string['type_webservice_plural'] = 'Πρωτόκολλα webservice';
 $string['uninstall'] = 'Απεγκατάσταση';
+$string['validationmsg_componentmatch'] = 'Πλήρες όνομα συστατικού';
 $string['version'] = 'Έκδοση';

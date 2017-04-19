@@ -30,6 +30,7 @@ $string['answer'] = 'Erantzuna';
 $string['blank'] = 'hutsik';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
 $string['infinite'] = 'Mugarik gabea';
+$string['pleaseputananswerineachbox'] = 'Mesedez, eman erantzuna lauki bakoitzean';
 $string['pluginname'] = 'Hartu eta eraman testura';
 $string['pluginnameadding'] = 'Hartu eta eraman testura motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman testura motako galdera editatzen';

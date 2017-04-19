@@ -68,5 +68,6 @@ $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';
 $string['secondarybackground'] = 'Color secundario de fondo de página';
 $string['secondarybackground_desc'] = 'El color de fondo de cualquier contenido secundario, tal como los bloques.';
+$string['smalllogo'] = 'Logo pequeño';
 $string['textcolor'] = 'Color del texto';
 $string['textcolor_desc'] = 'Color del texto';

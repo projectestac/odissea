@@ -373,7 +373,7 @@ $string['coursereasonforrejecting'] = 'あなたがこのリクエストを拒�
 $string['coursereasonforrejectingemail'] = 'これは申請者にメール送信されます。';
 $string['coursereject'] = 'コースリクエストを拒否する';
 $string['courserejected'] = 'コースは拒否され、申請者に通知メールが送信されました。';
-$string['courserejectemail'] = '申し訳ございません、あなたがリクエストしたコースは拒否されました。拒否理由は下記のとおりです:
+$string['courserejectemail'] = '申し訳ございません、あなたがリクエストしたコースは拒否されました。拒否理由は以下のとおりです:
 
 {$a}';
 $string['courserejectreason'] = 'あなたがこのコースを拒否する理由の概要<br />(この内容は申請者にメール送信されます)';
@@ -595,7 +595,7 @@ $string['emailagain'] = 'メールアドレス (もう一度)';
 $string['emailalreadysent'] = 'パスワードリセットメールはすでに送信されています。あなたのメールを確認してください。';
 $string['emailcharset'] = 'メール文字コード';
 $string['emailconfirm'] = 'アカウントの確定';
-$string['emailconfirmation'] = 'こんにちは {$a->firstname} さん
+$string['emailconfirmation'] = '{$a->firstname} さん
 
 「 {$a->sitename} 」であなたのメールアドレスによる新しいアカウントの作成が依頼されました。
 
@@ -603,11 +603,9 @@ $string['emailconfirmation'] = 'こんにちは {$a->firstname} さん
 
 {$a->link}
 
-ほとんどのメールプログラムでは上記部分はクリックできるよう青色にリンク表示されています。
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
-動作しない場合はコピー&ペーストを使ってウェブブラウザ上部のアドレス欄にこのアドレスを入力してください。
-
-お分かりにならない場合はサイト管理者 {$a->admin} にご連絡ください。';
+分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['emailconfirmationsubject'] = '{$a}: アカウントの確定';
 $string['emailconfirmsent'] = '<p>あなたの <b>{$a}</b> のメールアドレス宛にメールが送信されました。</p>
 <p>メールには登録を確認するための簡単な説明が記載されています。</p>
@@ -638,7 +636,7 @@ $string['emailmustbereal'] = '注意：メールアドレスは実際に使え�
 $string['emailnotallowed'] = 'これらのドメインのメールアドレスは許可されていません ({$a})';
 $string['emailnotfound'] = 'データベース内にメールアドレスが見つかりませんでした。';
 $string['emailonlyallowed'] = 'このメールアドレスは許可されている次のドメインに入っていません ({$a})';
-$string['emailpasswordchangeinfo'] = 'こんにちは {$a->firstname} さん
+$string['emailpasswordchangeinfo'] = '{$a->firstname} さん
 
 誰か (恐らくあなた) が、「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
 
@@ -646,11 +644,9 @@ $string['emailpasswordchangeinfo'] = 'こんにちは {$a->firstname} さん
 
 {$a->link}
 
-ほとんどのメールプログラムでは上記部分はクリックできるよう青色にリンク表示されています。
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
-動作しない場合はコピー&ペーストを使ってウェブブラウザ上部のアドレス欄にこのアドレスを入力してください。
-
-お分かりにならない場合はサイト管理者 {$a->admin} にご連絡ください。';
+分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['emailpasswordchangeinfodisabled'] = 'こんにちは {$a->firstname} さん
 
 誰か (恐らくあなた) が、「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
@@ -662,19 +658,17 @@ $string['emailpasswordchangeinfofail'] = 'こんにちは {$a->firstname} さん
 
 残念ですが、このサイトではパスワードをリセットすることができません。サイト管理者 {$a->admin} にご連絡ください。';
 $string['emailpasswordchangeinfosubject'] = '{$a}: パスワード変更情報';
-$string['emailpasswordconfirmation'] = 'こんにちは {$a->firstname} さん
+$string['emailpasswordconfirmation'] = '{$a->firstname} さん
 
-誰か (恐らくあなた) が、「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
+誰か (恐らくあなた) が「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
 
 新しいパスワード請求を確認して、新たなパスワードをメールであなた宛に送信するために下記のページをご覧ください:
 
 {$a->link}
 
-ほとんどのメールプログラムでは、上記部分はクリックできるよう青色にリンク表示されています。
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
-動作しない場合は、コピー&ペーストを使ってウェブブラウザ上部のアドレス欄に、このアドレスを入力してください。
-
-お分かりにならない場合は、サイト管理者 {$a->admin} にご連絡ください。';
+分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['emailpasswordconfirmationsubject'] = '{$a}: パスワード変更確認';
 $string['emailpasswordconfirmmaybesent'] = '<p>正しいユーザ名またはメールアドレスを入力した場合、あなたにメールが送信されています。</p>
 <p>送信されたメールには、パスワードの変更を確認および完了するため、簡単な説明が記載されています。パスワード変更作業が難しい場合、サイト管理者にご連絡ください。</p>';
@@ -1047,7 +1041,7 @@ $string['mailteachers'] = '教師に通知する';
 $string['maincoursepage'] = 'メインコースページ';
 $string['makeafolder'] = 'フォルダを作成する';
 $string['makeeditable'] = '「 {$a} 」をサーバ上 (例 apache) で編集可能にした場合、あなたはこのファイルを直接このページで編集することができます。';
-$string['makethismyhome'] = 'このページをマイデフォルトホームページにする';
+$string['makethismyhome'] = 'このページを私のデフォルトホームページにする';
 $string['manageblocks'] = 'ブロック';
 $string['managecategorythis'] = 'このカテゴリを管理する';
 $string['managecourses'] = 'コースを管理する';
@@ -1198,11 +1192,11 @@ $string['newcourse'] = '新しいコース';
 $string['newpassword'] = '新しいパスワード';
 $string['newpasswordfromlost'] = '<strong>注意:</strong> 喪失パスワードリカバリ処理の一環として送信される2通のメールの<strong>2番目</strong>に、あなたの<strong>現在のパスワード</strong>が送信されます。この画面を続ける前に、あなたの新しいパスワードが記載されたメールを受信したことを確認してください。';
 $string['newpassword_help'] = '新しいパスワードを入力、または現在のパスワードを使用する場合は空白にしてください。';
-$string['newpasswordtext'] = 'こんにちは {$a->firstname} さん
+$string['newpasswordtext'] = '{$a->firstname} さん
 
 「 {$a->sitename} 」のパスワードリセットおよび仮パスワードの作成が完了しました。
 
-あなたのログイン情報は下記のとおりです。
+あなたのログイン情報は以下のとおりです。
 ユーザ名: username: {$a->username}
 パスワード: password: {$a->newpassword}
 
@@ -1210,7 +1204,7 @@ $string['newpasswordtext'] = 'こんにちは {$a->firstname} さん
 
 {$a->link}
 
-ほとんどのメールプログラムでは、上記部分はクリックできるよう青色にリンク表示されています。動作しない場合は、コピー&ペーストを使ってウェブブラウザ上部のアドレス欄に、このアドレスを入力してください。
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
 「 {$a->sitename} 」の管理者よりご挨拶でした。
 {$a->signoff}';
@@ -1223,18 +1217,18 @@ $string['newsitemsnumber'] = 'ニュースアイテムの表示件数';
 $string['newsitemsnumber_help'] = 'この設定ではコースページの最新ニュースブロックに何件の最新項目を表示するか設定します。ゼロを設定した場合、最新ニュースブロックは表示されません。';
 $string['newuser'] = '新しいユーザ';
 $string['newusernewpasswordsubj'] = '新しいユーザアカウント';
-$string['newusernewpasswordtext'] = 'こんにちは {$a->firstname} さん
+$string['newusernewpasswordtext'] = '{$a->firstname} さん
 
-あなたの新しいアカウントが「 {$a->sitename} 」に作成され、新しい一時的なパスワードが発行されました。
+あなたの新しいアカウントが「 {$a->sitename} 」に作成されて新しい一時パスワードが発行されました。
 
-あなたの現在のログイン情報は下記のとおりです:
+あなたの現在のログイン情報は以下のとおりです:
 ユーザ名: {$a->username}
 パスワード: {$a->newpassword}
 (最初にログインしたときにパスワードを変更してください)
 
 {$a->sitename} で作業を始めるには {$a->link} にログインしてください。
 
-ほとんどのメールプログラムでは、上記部分はクリックできるよう青色にリンク表示されています。動作しない場合は、コピー&ペーストを使ってウェブブラウザ上部のアドレス欄に、このアドレスを入力してください。
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
 「 {$a->sitename} 」の管理者よりご挨拶でした。
 {$a->signoff}';
@@ -1272,7 +1266,7 @@ $string['nopotentialteachers'] = '潜在的な教師は登録されていませ�
 $string['norecentactivity'] = '最近の活動はありません。';
 $string['noreplybouncemessage'] = 'あなたはno-replyメールアドレスに返信しました。フォーラムの投稿に返信したい場合、メール返信する代わりにフォーラム {$a} で返信を投稿してください。
 
-あなたのメール本文は下記のとおりです:';
+あなたのメール本文は以下のとおりです:';
 $string['noreplybouncesubject'] = '{$a} -宛先不明メール';
 $string['noreplyname'] = 'このメールアドレス宛に返信しないでください';
 $string['noresetrecord'] = 'リセットリクエストのレコードがありません。新しいパスワードリセットリクエストを実行してください。';

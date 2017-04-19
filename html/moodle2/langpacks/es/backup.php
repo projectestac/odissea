@@ -118,6 +118,7 @@ $string['currentstage4'] = 'Confirmación y revisión';
 $string['currentstage8'] = 'Ejecutar copia de seguridad';
 $string['enterasearch'] = 'Introduzca un criterio de búsqueda';
 $string['error_block_for_module_not_found'] = 'Encontrada instancia de bloque huérfano (id: {$a->bid}) para el módulo del curso (id: {$a->mid}) Este bloque no se copiará';
+$string['errorcopyingbackupfile'] = 'Fallo al copiar el fichero de copia de seguridad al directorio temporal antes de restaurar.';
 $string['error_course_module_not_found'] = 'Encontrado módulo de curso huérfano (id: {$a}). Este modulo no se copiará';
 $string['errorfilenamemustbezip'] = 'El nombre que se introduzca debe ser un archivo ZIP y con la extensión MBZ';
 $string['errorfilenamerequired'] = 'Debe introducir un nombre de archivo válido para esta copia de seguridad';

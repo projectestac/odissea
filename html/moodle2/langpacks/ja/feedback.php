@@ -37,7 +37,7 @@ $string['anonymous_entries'] = '匿名エントリ ({$a})';
 $string['anonymous_user'] = '匿名ユーザ';
 $string['append_new_items'] = '新しいアイテムを追加する';
 $string['autonumbering'] = '問題の自動番号付け';
-$string['autonumbering_help'] = 'それぞれの質問に対して自動ナンバリングを有効または無効にします。';
+$string['autonumbering_help'] = 'それぞれの質問の自動ナンバリングを有効または無効にします。';
 $string['average'] = '平均';
 $string['bold'] = '太字';
 $string['calendarend'] = 'フィードバック {$a} 終了';
@@ -110,7 +110,7 @@ $string['drop_feedback'] = 'このコースから削除する';
 $string['edit_item'] = '質問を編集する';
 $string['edit_items'] = '質問を編集する';
 $string['email_notification'] = '送信通知を有効にする';
-$string['email_notification_help'] = 'この設定を有効にした場合、フィードバック送信に関して教師にメール通知されます。';
+$string['email_notification_help'] = 'この設定を有効にした場合、フィードバック送信に関して教師に通知されます。';
 $string['emailteachermail'] = '{$a->username} がフィードバック活動「 {$a->feedback} 」を完了しました。
 
 あなたはここで閲覧することができます:
@@ -142,7 +142,7 @@ $string['feedback:viewanalysepage'] = '回答送信後、分析ページを表�
 $string['feedback:viewreports'] = 'レポートを表示する';
 $string['file'] = 'ファイル';
 $string['filter_by_course'] = 'コースでフィルタする';
-$string['handling_error'] = 'フィードバック処理中にエラーが発生しました。';
+$string['handling_error'] = 'フィードバックモジュール処理中にエラーが発生しました。';
 $string['hide_no_select_option'] = '「未選択」オプションを隠す';
 $string['horizontal'] = '水平';
 $string['importfromthisfile'] = 'このファイルからインポートする';
@@ -159,8 +159,8 @@ $string['label'] = 'ラベル';
 $string['labelcontents'] = 'コンテンツ';
 $string['line_values'] = '評定';
 $string['mapcourse'] = 'コースにフィードバックをマップする';
-$string['mapcourse_help'] = 'デフォルトではあなたのMoodleメインページで作成したフィードバックフォームはサイト全体およびすべてのコースにフィードバックブロックを設置することで利用することができます。あなたはフィードバックをスティッキーブロックにすることで強制的に表示することもできます。また、特定のコースにマッピングすることでフィードバックフォームが表示されるコースを制限することもできます。';
-$string['mapcourseinfo'] = 'このフィードバックはフィードバックブロックを使用してサイト全体で利用することができます。フィードバックをコースにマップすることにより、このフィードバックを利用できるコースを制限することができます。コースを検索して、このフィードバックをマップしてください。';
+$string['mapcourse_help'] = 'デフォルトではあなたのホームページで作成したフィードバックフォームはサイト全体およびすべてのコースにフィードバックブロックを設置することで利用することができます。あなたはフィードバックをスティッキーブロックにすることで強制的に表示することもできます。また、特定のコースにマッピングすることでフィードバックフォームが表示されるコースを制限することもできます。';
+$string['mapcourseinfo'] = 'このフィードバックはフィードバックブロックを使用してサイト全体で利用することができます。フィードバックをコースにマップすることにより、このフィードバックを利用できるコースを制限することができます。コースを検索してこのフィードバックをマップしてください。';
 $string['mapcoursenone'] = 'マップされたコースはありません。このフィードバックはすべてのコースで利用できます。';
 $string['mapcourses'] = 'フィードバックをコースにマップする';
 $string['mapcourses_help'] = 'あなたの検索結果からコースを選択した後、コースにマップすることで選択したコースとこのフィードバックを関連付けることができます。Ctrlキーを押しながら複数のコースを選択することも、Shiftキーを押しながら一連のコースを選択することもできます。コースに関連付けたフィードバックはいつでも関連付けを解除することができます。';
@@ -173,9 +173,9 @@ $string['messageprovider:submission'] = 'フィードバック通知';
 $string['minimal'] = '最小';
 $string['mode'] = 'モード';
 $string['modulename'] = 'フィードバック';
-$string['modulename_help'] = 'フィードバック活動モジュールにおいて、教師は多肢選択、○/×またはテキスト入力を含む様々な質問タイプを使用して参加者からフィードバックを収集することのできる独自調査を作成することができます。
+$string['modulename_help'] = 'フィードバック活動モジュールにおいて教師は多肢選択、○/×またはテキスト入力を含む様々な質問タイプを使用して参加者からフィードバックを収集することのできる独自調査を作成することができます。
 
-必要であればフィードバック回等を匿名にすることができます。そして、結果を学生すべてに表示、または教師のみに閲覧制限することができます。サイトフロントページのフィードバックは非ログインユーザにより入力させることもできます。
+必要であればフィードバック回等を匿名にすることができます。そして、結果を学生すべてに表示または教師のみに閲覧制限することができます。サイトフロントページのフィードバックは非ログインユーザにより入力させることもできます。
 
 フィードバック活動は下記のように使用することができます:
 
@@ -255,11 +255,11 @@ $string['save_as_new_template'] = '新しいテンプレートとして保存す
 $string['save_entries'] = 'あなたの回答を送信する';
 $string['save_item'] = '質問を保存する';
 $string['saving_failed'] = '保存に失敗しました。';
-$string['saving_failed_because_missing_or_false_values'] = '値が入力されていないか、正しくないため、保存に失敗しました。';
+$string['saving_failed_because_missing_or_false_values'] = '値が入力されていないか正しくないため、保存に失敗しました。';
 $string['search:activity'] = 'フィードバック - 活動情報';
 $string['search_course'] = 'コースを検索する';
 $string['searchcourses'] = 'コースを検索する';
-$string['searchcourses_help'] = 'あなたがこのフィードバックに関連付けたいコースのコードまたは名称を使用して検索してください。';
+$string['searchcourses_help'] = 'あなたがこのフィードバックに関連付けたいコースのコードまたは名称を検索してください。';
 $string['selected_dump'] = '選択された$SESSION変数のインデックスは以下にダンプされます:';
 $string['send'] = '送信';
 $string['send_message'] = 'メッセージを送信する';
@@ -300,4 +300,4 @@ $string['use_this_template'] = 'このテンプレートを使用する';
 $string['using_templates'] = 'テンプレートを使用する';
 $string['vertical'] = '垂直';
 $string['viewcompleted'] = '完了済みフィードバック';
-$string['viewcompleted_help'] = 'あなたはコースまたは質問により検索することのできる完了済みフィードバックフォームを閲覧することができます。フィードバックの回答はExcelにエクスポートすることができます。';
+$string['viewcompleted_help'] = 'あなたはコースまたは質問により検索することのできる完了済みフィードバックフォームを表示することができます。フィードバックの回答はExcelにエクスポートすることができます。';

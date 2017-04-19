@@ -330,7 +330,7 @@ $string['coursecompletions'] = 'Ikastaro-osaketak';
 $string['coursecreators'] = 'Ikastaro-sortzailea';
 $string['coursecreatorsdescription'] = 'Ikastaro sortzaileek ikastaro berriak sor ditzakete.';
 $string['coursedeleted'] = '{$a} ikastaroa ezabatuta';
-$string['coursedetails'] = 'Ikastaroaren xehetasunak';
+$string['coursedetails'] = 'Ikastaro-xehetasunak';
 $string['coursedisplay'] = 'Ikastaroaren diseinua';
 $string['coursedisplay_help'] = 'Aukera honek ezartzen du ikastaro osoa orri bakarrean erakusten den ala hainbat orritan banatzen den.';
 $string['coursedisplay_multi'] = 'Erakutsi atal bat orriko';
@@ -1553,7 +1553,7 @@ $string['returntooriginaluser'] = 'Itzuli hona: {$a}';
 $string['revert'] = 'Lehengora itzuli';
 $string['role'] = 'Rola';
 $string['roleassignments'] = 'Rol-esleipenak';
-$string['rolemappings'] = 'Rolen mapak';
+$string['rolemappings'] = 'Rolen loturak';
 $string['rolerenaming'] = 'Rolei izena aldatu';
 $string['rolerenaming_help'] = '<p>
 Ikastaroan erabiltzen diren rolei izena aldatzeko aukera emango dizu ezarpen honek. Adibidez, "Irakaslea"ri "Laguntzailea" edo "Tutorea" ipini nahi izango diozu. Erakusten den izena aldatzen da bakarrik, azpiko rol-baimenei ez die eragingo.

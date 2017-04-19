@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['enabled'] = 'Υποβολή σχολίων';
 $string['pluginname'] = 'Υποβολή σχολίων';

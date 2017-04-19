@@ -78,7 +78,7 @@ $string['attemptheading'] = '提出 {$a->attemptnumber}: {$a->submissionsummary}
 $string['attempthistory'] = '前回の提出';
 $string['attemptnumber'] = '提出回数';
 $string['attemptreopenmethod'] = '提出再オープン';
-$string['attemptreopenmethod_help'] = '学生の提出をどのように再オープンするか決定します。利用可能なオプションは下記のとおりです:
+$string['attemptreopenmethod_help'] = '学生の提出をどのように再オープンするか決定します。利用可能なオプションは以下のとおりです:
 <ul>
 <li>なし - 学生の提出を再オープンすることはできません。</li>
 <li>手動 - 学生の提出は教師により再オープンすることができます。</li>

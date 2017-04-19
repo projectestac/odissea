@@ -27,3 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Competencias a elavuar';
 $string['lp:addinstance'] = 'Añadir un nuevo bloque de planes de aprendizaje';
+$string['lp:myaddinstance'] = 'Añadir un nuevo bloque de plan de aprendizaje al Área personal';
+$string['myplans'] = 'Mis planes';
+$string['noactiveplans'] = 'No hay planes activos hasta el momento.';
+$string['planstoreview'] = 'Planes para revisar';
+$string['pluginname'] = 'Planes de aprendizaje';
+$string['viewmore'] = 'Ver más...';
+$string['viewotherplans'] = 'Ver otros planes...';
