@@ -497,6 +497,7 @@ $string['deletechecktype'] = '您确定要删除{$a->type}？';
 $string['deletechecktypename'] = '您确定要删除{$a->type}“{$a->name}”吗？';
 $string['deletecheckwarning'] = '您打算删除这些文件';
 $string['deletecomment'] = '删除这条评论';
+$string['deletecommentbyon'] = '删除  {$a->user} 在  {$a->time} 发表的评论';
 $string['deletecompletely'] = '彻底删除';
 $string['deletecourse'] = '删除一个课程';
 $string['deletecoursecheck'] = '您真的确定要彻底删除该课程及其所有文件资料吗?';

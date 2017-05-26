@@ -359,7 +359,9 @@ class file_storage implements \H5PFileStorage {
      *
      * @param \H5peditorFile $file
      * @param int $contentid
-     * @param \stdClass $context Course Context ID
+     * @param \stdClass $contextid Course Context ID
+     *
+     * @return int
      */
     public function saveFile($file, $contentid, $contextid = null) {
         if ($contentid !== 0) {
@@ -367,6 +369,10 @@ class file_storage implements \H5PFileStorage {
             $cm = \get_coursemodule_from_instance('hvp', $contentid);
             $context = \context_module::instance($cm->id);
             $contextid = $context->id;
+        }
+        else if ($contextid === null) {
+            // Check for context id in params
+            $contextid = optional_param('contextId', null, PARAM_INT);
         }
 
         // Files not yet related to any activities are stored in a course context
@@ -566,8 +572,10 @@ class file_storage implements \H5PFileStorage {
      * Help make it easy to load content files.
      *
      * @param string $filearea
-     * @param int|stdClass $itemid
+     * @param int|object $itemid
      * @param string $file path + name
+     *
+     * @return \stored_file|bool
      */
     private function getFile($filearea, $itemid, $file) {
         global $COURSE;
@@ -625,5 +633,171 @@ class file_storage implements \H5PFileStorage {
         // Check if file exists.
         $fs = get_file_storage();
         return ($fs->get_file($contextid, 'mod_hvp', $filearea, 0, $filepath, $filename) !== false);
+    }
+
+    /**
+     * Check if server setup has write permission to
+     * the required folders
+     *
+     * @return bool True if server has the proper write access
+     */
+    public function hasWriteAccess() {
+        global $CFG;
+
+        if (!is_dir($CFG->dataroot)) {
+            trigger_error('Path is not a directory ' . $CFG->dataroot, E_USER_WARNING);
+            return FALSE;
+        }
+
+        if (!is_writable($CFG->dataroot)) {
+            trigger_error('Unable to write to ' . $CFG->dataroot . ' – check directory permissions –', E_USER_WARNING);
+            return FALSE;
+        }
+
+        return TRUE;
+    }
+
+    /**
+     * Copy a content from one directory to another. Defaults to cloning
+     * content from the current temporary upload folder to the editor path.
+     *
+     * @param string $source path to source directory
+     * @param string $contentId path of target directory. Defaults to editor path
+     *
+     * @return object|null Object containing h5p json and content json data
+     */
+    public function moveContentDirectory($source, $contentId = NULL) {
+        if ($source === NULL) {
+            return NULL;
+        }
+
+        // Default to 0 (editor)
+        if (!isset($contentId)) {
+            $contentId = 0;
+        }
+
+        // Find content context
+        if ($contentId > 0) {
+            // Grab cm context
+            $cm = \get_coursemodule_from_instance('hvp', $contentId);
+            $context = \context_module::instance($cm->id);
+            $contextId = $context->id;
+        }
+
+        // Get context from parameters
+        if (!isset($contextId)) {
+            $contextId = required_param('contextId', PARAM_INT);
+        }
+
+        // Get h5p and content json
+        $contentSource = $source . DIRECTORY_SEPARATOR . 'content';
+        $h5pJson = file_get_contents($source . DIRECTORY_SEPARATOR . 'h5p.json');
+        $contentJson = file_get_contents($contentSource . DIRECTORY_SEPARATOR . 'content.json');
+
+        // Move all temporary content files to editor
+        $contentFiles = array_diff(scandir($contentSource), array('.','..', 'content.json'));
+        foreach ($contentFiles as $file) {
+            if (is_dir("{$contentSource}/{$file}")) {
+                self::moveFileTree("{$contentSource}/{$file}", $contextId, $contentId);
+            }
+            else {
+                self::moveFile("{$contentSource}/{$file}", $contextId, $contentId);
+            }
+        }
+
+        return (object) array(
+            'h5pJson' => $h5pJson,
+            'contentJson' => $contentJson
+        );
+    }
+
+    /**
+     * Move a single file to editor
+     *
+     * @param string $source_file Path to source fil
+     * @param int $contextId Id of context
+     * @param int $contentId Id of content, 0 if editor
+     */
+    private static function moveFile($source_file, $contextId, $contentId) {
+        $fs = get_file_storage();
+
+        $path_parts = pathinfo($source_file);
+        $file_name  = $path_parts['basename'];
+        $file_path  = $path_parts['dirname'];
+        $folder_name = basename($file_path);
+
+        if ($contentId > 0) {
+            // Create file record for content
+            $record = array(
+                'contextid' => $contextId,
+                'component' => 'mod_hvp',
+                'filearea' => $contentId > 0 ? 'content' : 'editor',
+                'itemid' => $contentId,
+                'filepath' => '/' . $folder_name . '/',
+                'filename' => $file_name
+            );
+        }
+        else {
+            // Create file record for editor
+            $record = array(
+                'contextid' => $contextId,
+                'component' => 'mod_hvp',
+                'filearea' => 'editor',
+                'itemid' => 0,
+                'filepath' => '/' . $folder_name . '/',
+                'filename' => $file_name
+            );
+        }
+
+        $source_data = file_get_contents($source_file);
+
+        // Check if file already exists
+        $fileExists = $fs->file_exists($record['contextid'], 'mod_hvp',
+            $record['filearea'], $record['itemid'], $record['filepath'],
+            $record['filename']
+        );
+
+        if ($fileExists) {
+            // Delete it to make sure that it is replaced with correct content
+            $file = $fs->get_file($record['contextid'], 'mod_hvp',
+                $record['filearea'], $record['itemid'], $record['filepath'],
+                $record['filename']
+            );
+            if ($file) {
+                $file->delete();
+            }
+        }
+
+
+        $fs->create_file_from_string($record, $source_data);
+    }
+
+    /**
+     * Move a complete file tree to the editor
+     *
+     * @param string $source_file_tree Path of file tree that should be moved
+     * @param int $contextId Id of context
+     * @param int $contentId Id of content, 0 for editor
+     *
+     * @throws \Exception
+     */
+    private static function moveFileTree($source_file_tree, $contextId, $contentId) {
+        $dir = opendir($source_file_tree);
+        if ($dir === FALSE) {
+            trigger_error('Unable to open directory ' . $source_file_tree, E_USER_WARNING);
+            throw new \Exception('unabletocopy');
+        }
+
+        while (false !== ($file = readdir($dir))) {
+            if (($file != '.') && ($file != '..') && $file != '.git' && $file != '.gitignore') {
+                if (is_dir("{$source_file_tree}/{$file}")) {
+                    self::moveFileTree("{$source_file_tree}/{$file}", $contextId, $contentId);
+                }
+                else {
+                    self::moveFile("{$source_file_tree}/{$file}", $contextId, $contentId);
+                }
+            }
+        }
+        closedir($dir);
     }
 }

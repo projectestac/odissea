@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_SerializableImpl implements com_wiris_quizzes_api_QuestionInstance{
+class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_SerializableImpl implements com_wiris_quizzes_api_MultipleQuestionInstance{
 	public function __construct() {
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct();
@@ -8,7 +8,45 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$this->userData->randomSeed = Std::random(65536);
 		$this->variables = null;
 		$this->checks = null;
+		$this->subinstances = null;
 	}}
+	public function pushSubinstance($subquestion) {
+		$this->addSubinstance($subquestion->getStepNumber() - 1);
+		$insub = new com_wiris_quizzes_impl_SubQuestionInstance($subquestion->getStepNumber());
+		$type = $subquestion->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD);
+		if($type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR || $type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR || $type === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND) {
+			$insub->setHandwritingConstraints($subquestion);
+		}
+		$this->subinstances->push($insub);
+	}
+	public function addSubinstance($index) {
+		if($this->subinstances === null) {
+			$this->subinstances = new _hx_array(array());
+		}
+		$n = $this->subinstances->length;
+		while($n <= $index) {
+			$this->subinstances->push(new com_wiris_quizzes_impl_SubQuestionInstance($n));
+			$n++;
+		}
+	}
+	public function setStudentAnswerOfSubquestion($sub, $index, $answer) {
+		if($this->subinstances !== null) {
+			$this->addSubinstance($sub);
+			_hx_array_get($this->subinstances, $sub)->setStudentAnswer($index, $answer);
+		}
+	}
+	public function getStudentAnswerOfSubquestion($sub, $index) {
+		if($this->subinstances === null || $sub >= $this->subinstances->length) {
+			return null;
+		}
+		return _hx_array_get($this->subinstances, $sub)->getStudentAnswer($index);
+	}
+	public function getStudentAnswersLengthOfSubquestion($sub) {
+		if($this->subinstances === null || $sub >= $this->subinstances->length) {
+			return 0;
+		}
+		return _hx_array_get($this->subinstances, $sub)->getStudentAnswersLength();
+	}
 	public function concatenate($a, $e) {
 		$b = new _hx_array(array());
 		$i = null;
@@ -45,13 +83,11 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		}
 		$answers = $this->compoundChecks->keys();
 		while($answers->hasNext()) {
-			$answerString = $answers->next();
-			$answer = Std::parseInt($answerString);
-			$correctAnswers = $this->compoundChecks->get($answerString)->keys();
+			$answer = $answers->next();
+			$correctAnswers = $this->compoundChecks->get($answer)->keys();
 			while($correctAnswers->hasNext()) {
-				$correctAnswerString = $correctAnswers->next();
-				$correctAnswer = Std::parseInt($correctAnswerString);
-				$checks = $this->compoundChecks->get($answerString)->get($correctAnswerString);
+				$correctAnswer = $correctAnswers->next();
+				$checks = $this->compoundChecks->get($answer)->get($correctAnswer);
 				$i = null;
 				{
 					$_g1 = 0; $_g = $checks->length;
@@ -64,9 +100,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					}
 					unset($_g1,$_g);
 				}
-				unset($i,$correctAnswerString,$correctAnswer,$checks);
+				unset($i,$correctAnswer,$checks);
 			}
-			unset($correctAnswers,$answerString,$answer);
+			unset($correctAnswers,$answer);
 		}
 	}
 	public function setParameter($name, $value) {
@@ -129,6 +165,13 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		}
 		return true;
 	}
+	public function getAssertionChecksSubQuestion($sub, $correctAnswer, $studentAnswer) {
+		$a = new _hx_array(array());
+		if($this->subinstances !== null && $sub < $this->subinstances->length) {
+			$a = _hx_array_get($this->subinstances, $sub)->getAssertionChecks($correctAnswer, $studentAnswer);
+		}
+		return $a;
+	}
 	public function getAssertionChecks($correctAnswer, $studentAnswer) {
 		if($this->checks !== null) {
 			$answerChecks = $this->checks->get("" . _hx_string_rec($studentAnswer, ""));
@@ -145,7 +188,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 							$_g3 = 0; $_g2 = $ca->length;
 							while($_g3 < $_g2) {
 								$j1 = $_g3++;
-								if($ca[$j1] === $correctAnswer) {
+								if($ca[$j1] === "" . _hx_string_rec($correctAnswer, "")) {
 									$res->push($answerChecks[$i1]);
 								}
 								unset($j1);
@@ -216,20 +259,50 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	}
 	public function updateAnswer($qi) {
 		$i = null;
-		if($this->userData->answers === null) {
-			$this->userData->answers = new _hx_array(array());
+		if($qi->userData->answers !== null) {
+			if($this->userData->answers === null) {
+				$this->userData->answers = new _hx_array(array());
+			}
+			{
+				$_g1 = 0; $_g = $qi->userData->answers->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$a = $qi->userData->answers[$i1];
+					if($this->userData->answers->length > $i1) {
+						$this->userData->answers[$i1] = $a;
+					} else {
+						$this->userData->answers->push($a);
+					}
+					unset($i1,$a);
+				}
+			}
 		}
-		{
-			$_g1 = 0; $_g = $qi->userData->answers->length;
+		if($qi->subinstances !== null) {
+			$_g1 = 0; $_g = $qi->subinstances->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				$a = $qi->userData->answers[$i1];
-				if($this->userData->answers->length > $i1) {
-					$this->userData->answers[$i1] = $a;
-				} else {
-					$this->userData->answers->push($a);
+				$answers = _hx_array_get($qi->subinstances, $i1)->userData->answers;
+				if($answers !== null && $this->subinstances !== null && $i1 < $this->subinstances->length) {
+					if(_hx_array_get($this->subinstances, $i1)->userData->answers === null) {
+						_hx_array_get($this->subinstances, $i1)->userData->answers = new _hx_array(array());
+					}
+					$j = null;
+					{
+						$_g3 = 0; $_g2 = $answers->length;
+						while($_g3 < $_g2) {
+							$j1 = $_g3++;
+							if($j1 < _hx_array_get($this->subinstances, $i1)->userData->answers->length) {
+								_hx_array_get($this->subinstances, $i1)->userData->answers[$j1] = $answers[$j1];
+							} else {
+								_hx_array_get($this->subinstances, $i1)->userData->answers->push($answers[$j1]);
+							}
+							unset($j1);
+						}
+						unset($_g3,$_g2);
+					}
+					unset($j);
 				}
-				unset($i1,$a);
+				unset($i1,$answers);
 			}
 		}
 		$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, $qi->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION));
@@ -238,6 +311,20 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$ii = $qi;
 		$this->userData->answers = $ii->userData->answers;
 		$this->localData = $ii->localData;
+		if($ii->subinstances !== null) {
+			$k = null;
+			{
+				$_g1 = 0; $_g = $ii->subinstances->length;
+				while($_g1 < $_g) {
+					$k1 = $_g1++;
+					if($this->subinstances !== null && $k1 < $this->subinstances->length) {
+						_hx_array_get($this->subinstances, $k1)->userData->answers = _hx_array_get($ii->subinstances, $k1)->userData->answers;
+						_hx_array_get($this->subinstances, $k1)->localData = _hx_array_get($ii->subinstances, $k1)->localData;
+					}
+					unset($k1);
+				}
+			}
+		}
 	}
 	public function getStudentQuestionInstance() {
 		$qi = new com_wiris_quizzes_impl_QuestionInstanceImpl();
@@ -247,6 +334,22 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$qi->localData = $this->localData;
 		$qi->checks = $this->checks;
 		$qi->compoundChecks = $this->compoundChecks;
+		if($this->subinstances !== null) {
+			$i = null;
+			$qi->subinstances = new _hx_array(array());
+			{
+				$_g1 = 0; $_g = $this->subinstances->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$si = new com_wiris_quizzes_impl_SubQuestionInstance(_hx_array_get($this->subinstances, $i1)->subNumber);
+					$si->userData->answers = _hx_array_get($this->subinstances, $i1)->userData->answers;
+					$si->checks = _hx_array_get($this->subinstances, $i1)->checks;
+					$si->compoundChecks = _hx_array_get($this->subinstances, $i1)->compoundChecks;
+					$qi->subinstances->push($si);
+					unset($si,$i1);
+				}
+			}
+		}
 		return $qi;
 	}
 	public function getBooleanVariableValue($name) {
@@ -349,10 +452,10 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
 				$c = $a[$i1];
-				if(!$h->exists("" . _hx_string_rec($c->getAnswer(), ""))) {
-					$h->set("" . _hx_string_rec($c->getAnswer(), ""), new _hx_array(array()));
+				if(!$h->exists($c->getAnswer())) {
+					$h->set($c->getAnswer(), new _hx_array(array()));
 				}
-				$answerChecks = $h->get("" . _hx_string_rec($c->getAnswer(), ""));
+				$answerChecks = $h->get($c->getAnswer());
 				$answerChecks->push($c);
 				unset($i1,$c,$answerChecks);
 			}
@@ -396,7 +499,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			$_g1 = 0; $_g = $checks->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				if(_hx_array_get($checks, $i1)->getCorrectAnswer() === $correctAnswer) {
+				if(_hx_array_get($checks, $i1)->getCorrectAnswer() === "" . _hx_string_rec($correctAnswer, "")) {
 					$c = $checks[$i1];
 					if(StringTools::startsWith($c->assertion, "syntax_")) {
 						$result->insert($eval, $checks[$i1]);
@@ -452,7 +555,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			while($it->hasNext()) {
 				$key = $it->next();
 				try {
-					$m = _hx_mod(Std::parseInt($key), 1000);
+					$m = Std::parseInt(_hx_substr($key, _hx_index_of($key, "_c", null) + 2, null));
 					if($m > $n) {
 						$n = $m;
 					}
@@ -552,6 +655,13 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		}
 		return $d;
 	}
+	public function getCompoundSubAnswerGrade($sub, $correctAnswer, $studentAnswer, $index, $q) {
+		$grade = 0.0;
+		if($this->subinstances !== null && $sub < $this->subinstances->length) {
+			$grade = _hx_array_get($this->subinstances, $sub)->getCompoundAnswerGrade($correctAnswer, $studentAnswer, $index, $q);
+		}
+		return $grade;
+	}
 	public function getCompoundAnswerGrade($correctAnswer, $studentAnswer, $index, $q) {
 		$n = $this->getCompoundComponents();
 		if($index < 0 || $index >= $n) {
@@ -571,7 +681,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			$_g1 = 0; $_g = $checks->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
-				if(($correctAnswer === -1 || com_wiris_util_type_Arrays::containsInt(_hx_array_get($checks, $i1)->getCorrectAnswers(), $correctAnswer)) && ($studentAnswer === -1 || com_wiris_util_type_Arrays::containsInt(_hx_array_get($checks, $i1)->getAnswers(), $studentAnswer))) {
+				if(($correctAnswer === -1 || com_wiris_util_type_Arrays::containsArray(_hx_array_get($checks, $i1)->getCorrectAnswers(), "" . _hx_string_rec($correctAnswer, ""))) && ($studentAnswer === -1 || com_wiris_util_type_Arrays::containsArray(_hx_array_get($checks, $i1)->getAnswers(), "" . _hx_string_rec($studentAnswer, "")))) {
 					$grade = $grade * _hx_array_get($checks, $i1)->value;
 				}
 				unset($i1);
@@ -593,7 +703,14 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		return $correct;
 	}
 	public function getCompoundAnswerChecks($correctAnswer, $studentAnswer, $index) {
-		return $this->compoundChecks->get(_hx_string_rec(1000 + $studentAnswer * 1000 + $index, "") . "")->get(_hx_string_rec(1000 + $correctAnswer * 1000 + $index, "") . "");
+		return $this->compoundChecks->get(_hx_string_rec($studentAnswer, "") . "_c" . _hx_string_rec($index, ""))->get(_hx_string_rec($correctAnswer, "") . "_c" . _hx_string_rec($index, ""));
+	}
+	public function getSubAnswerGrade($sub, $correctAnswer, $studentAnswer, $q) {
+		$grade = 0.0;
+		if($this->subinstances !== null && $sub < $this->subinstances->length) {
+			$grade = _hx_array_get($this->subinstances, $sub)->getAnswerGrade($correctAnswer, $studentAnswer, $q);
+		}
+		return $grade;
 	}
 	public function getAnswerGrade($correctAnswer, $studentAnswer, $q) {
 		$grade = 0.0;
@@ -610,7 +727,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 				}
 			}
 		} else {
-			if($question !== null && $question->getAssertionIndex(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, $correctAnswer, $studentAnswer) !== -1) {
+			if($question !== null && $question->getAssertionIndex(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, "" . _hx_string_rec($correctAnswer, ""), "" . _hx_string_rec($studentAnswer, "")) !== -1) {
 				$checks = $this->checks->get(_hx_string_rec($studentAnswer, "") . "");
 				$grade = $this->prodChecks($checks, $correctAnswer, $studentAnswer);
 			} else {
@@ -619,6 +736,13 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			}
 		}
 		return $grade;
+	}
+	public function isSubAnswerCorrect($sub, $studentAnswer) {
+		$correct = true;
+		if($this->subinstances !== null && $sub < $this->subinstances->length) {
+			$correct = _hx_array_get($this->subinstances, $sub)->isAnswerCorrect($studentAnswer);
+		}
+		return $correct;
 	}
 	public function isAnswerCorrect($answer) {
 		$correct = true;
@@ -653,14 +777,14 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 				}
 			}
 			if($correctAnswers->length > 0) {
-				$correctAnswer = $correctAnswers[0];
+				$correctAnswer = Std::parseInt($correctAnswers[0]);
 				$maxgrade = $this->getAnswerGrade($correctAnswer, $studentAnswer, $q);
 				$j = null;
 				{
 					$_g1 = 1; $_g = $correctAnswers->length;
 					while($_g1 < $_g) {
 						$j1 = $_g1++;
-						$grade = $this->getAnswerGrade($correctAnswers[$j1], $studentAnswer, $q);
+						$grade = $this->getAnswerGrade(Std::parseInt($correctAnswers[$j1]), $studentAnswer, $q);
 						if($grade > $maxgrade) {
 							$maxgrade = $grade;
 							$correctAnswer = $j1;
@@ -683,7 +807,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					$i1 = $_g1++;
 					$c = $checks[$i1];
 					if(!(StringTools::startsWith($c->getAssertionName(), "syntax") && ($c->getAnswers()->length > 1 || $c->getCorrectAnswers()->length > 1))) {
-						if($c->getCorrectAnswer() === $correctAnswer) {
+						if(Std::parseInt($c->getCorrectAnswer()) === $correctAnswer) {
 							$correct = $correct && $c->value === 1.0;
 						}
 					}
@@ -741,7 +865,12 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	}
 	public function isCompoundAnswer($checks) {
 		if($checks !== null && $checks->length > 0) {
-			return _hx_array_get($checks, 0)->getCorrectAnswer() >= 1000;
+			$id = _hx_array_get($checks, 0)->getCorrectAnswer();
+			if(_hx_index_of($id, "c", null) > -1) {
+				return true;
+			}
+			$index = Std::parseInt($id);
+			return $index >= 1000;
 		}
 		return false;
 	}
@@ -762,26 +891,62 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					while($_g3 < $_g2) {
 						$j1 = $_g3++;
 						$pair = $pairs[$j1];
-						$correctAnswer = $correctAnswers[$pair[0]];
-						$userAnswer = $answers[$pair[1]];
-						if(!$this->compoundChecks->exists(_hx_string_rec($userAnswer, "") . "")) {
-							$this->compoundChecks->set(_hx_string_rec($userAnswer, "") . "", new Hash());
+						$correctAnswer = $this->updateCompoundId($correctAnswers[$pair[0]]);
+						$userAnswer = $this->updateCompoundId($answers[$pair[1]]);
+						if(!$this->compoundChecks->exists($userAnswer)) {
+							$this->compoundChecks->set($userAnswer, new Hash());
 						}
-						$answerChecks = $this->compoundChecks->get(_hx_string_rec($userAnswer, "") . "");
-						if(!$answerChecks->exists(_hx_string_rec($correctAnswer, "") . "")) {
-							$answerChecks->set(_hx_string_rec($correctAnswer, "") . "", new _hx_array(array()));
+						$answerChecks = $this->compoundChecks->get($userAnswer);
+						if(!$answerChecks->exists($correctAnswer)) {
+							$answerChecks->set($correctAnswer, new _hx_array(array()));
 						}
-						$pairchecks = $answerChecks->get(_hx_string_rec($correctAnswer, "") . "");
+						$pairchecks = $answerChecks->get($correctAnswer);
 						$pairchecks->push($c);
 						unset($userAnswer,$pairchecks,$pair,$j1,$correctAnswer,$answerChecks);
 					}
 					unset($_g3,$_g2);
 				}
-				$c->setAnswer(Math::floor(($c->getAnswer() - 1000) / 1000.0));
-				$c->setCorrectAnswer(Math::floor(($c->getCorrectAnswer() - 1000) / 1000.0));
-				unset($pairs,$j,$i1,$correctAnswers,$c,$answers);
+				$idAnswer = $c->getAnswer();
+				if(_hx_index_of($idAnswer, "_c", null) > 0) {
+					$c->setAnswer(_hx_substr($idAnswer, 0, _hx_index_of($idAnswer, "_c", null)));
+				} else {
+					$numAnswer = Std::parseInt($idAnswer);
+					if($numAnswer < 1000) {
+						$c->setAnswer($idAnswer);
+					} else {
+						$numAnswer = Math::floor(($numAnswer - 1000) / 1000.0);
+						$c->setAnswer("" . _hx_string_rec($numAnswer, ""));
+					}
+					unset($numAnswer);
+				}
+				$idCA = $c->getCorrectAnswer();
+				if(_hx_index_of($idCA, "_c", null) > 0) {
+					$c->setCorrectAnswer(_hx_substr($idCA, 0, _hx_index_of($idCA, "_c", null)));
+				} else {
+					$numCA = Std::parseInt($idCA);
+					if($numCA < 1000) {
+						$c->setCorrectAnswer($idCA);
+					} else {
+						$numCA = Math::floor(($numCA - 1000) / 1000.0);
+						$c->setCorrectAnswer("" . _hx_string_rec($numCA, ""));
+					}
+					unset($numCA);
+				}
+				unset($pairs,$j,$idCA,$idAnswer,$i1,$correctAnswers,$c,$answers);
 			}
 		}
+	}
+	public function updateCompoundId($id) {
+		if(_hx_index_of($id, "_c", null) > -1) {
+			return $id;
+		}
+		$num = Std::parseInt($id);
+		if($num < 1000) {
+			return $id;
+		}
+		$index = Math::floor(($num - 1000) / 1000.0);
+		$compoundIndex = _hx_mod($num, 1000);
+		return _hx_string_rec($index, "") . "_c" . _hx_string_rec($compoundIndex, "");
 	}
 	public function hasHandwritingConstraints() {
 		return $this->handConstraints !== null || $this->getLocalDataImpl(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS) !== null;
@@ -799,11 +964,11 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					$r = $qs->results[$i1];
 					$s = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getSerializer();
 					$tag = $s->getTagName($r);
+					$j = null;
 					if($tag === com_wiris_quizzes_impl_ResultGetVariables::$tagName) {
 						$variables = true;
 						$rgv = $r;
 						$resultVars = $rgv->variables;
-						$j = null;
 						{
 							$_g3 = 0; $_g2 = $resultVars->length;
 							while($_g3 < $_g2) {
@@ -817,28 +982,128 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 							unset($_g3,$_g2);
 						}
 						$this->variables = $this->variablesToHash($rgv->variables, $this->variables);
-						unset($rgv,$resultVars,$j);
+						unset($rgv,$resultVars);
 					} else {
 						if($tag === com_wiris_quizzes_impl_ResultGetCheckAssertions::$tagName) {
 							if(!$checks) {
 								$checks = true;
 								$this->checks = null;
+								if($this->subinstances !== null) {
+									$_g3 = 0; $_g2 = $this->subinstances->length;
+									while($_g3 < $_g2) {
+										$j1 = $_g3++;
+										_hx_array_get($this->subinstances, $j1)->checks = null;
+										unset($j1);
+									}
+									unset($_g3,$_g2);
+								}
 							}
 							$rgca = $r;
-							if($this->isCompoundAnswer($rgca->checks)) {
-								$this->collapseCompoundAnswerChecks($rgca->checks);
+							$subchecks = $this->separateChecksOfSteps($rgca->checks);
+							{
+								$_g3 = 0; $_g2 = $subchecks->length;
+								while($_g3 < $_g2) {
+									$j1 = $_g3++;
+									$resultChecks = $subchecks[$j1];
+									if($this->isCompoundAnswer($resultChecks)) {
+										if($j1 === 0) {
+											$this->collapseCompoundAnswerChecks($resultChecks);
+										} else {
+											_hx_array_get($this->subinstances, $j1 - 1)->collapseCompoundAnswerChecks($resultChecks);
+										}
+									}
+									if($j1 === 0) {
+										$this->checks = $this->checksToHash($resultChecks, $this->checks);
+									} else {
+										_hx_array_get($this->subinstances, $j1 - 1)->checks = $this->checksToHash($resultChecks, _hx_array_get($this->subinstances, $j1 - 1)->checks);
+									}
+									unset($resultChecks,$j1);
+								}
+								unset($_g3,$_g2);
 							}
-							$this->checks = $this->checksToHash($rgca->checks, $this->checks);
-							unset($rgca);
+							unset($subchecks,$rgca);
 						}
 					}
-					unset($tag,$s,$r,$i1);
+					unset($tag,$s,$r,$j,$i1);
 				}
 			}
 			if($variables && $this->hasHandwritingConstraints()) {
 				$this->getHandwritingConstraints()->addQuestionInstanceConstraints($this);
 			}
 		}
+	}
+	public function separateChecksOfSteps($checks) {
+		$subchecks = new _hx_array(array());
+		$j = null;
+		{
+			$_g1 = 0; $_g = $checks->length;
+			while($_g1 < $_g) {
+				$j1 = $_g1++;
+				$c = $checks[$j1];
+				$correctAnswers = $c->getCorrectAnswers();
+				$answers = $c->getAnswers();
+				$used = new _hx_array(array());
+				$k = null;
+				{
+					$_g3 = 0; $_g2 = $correctAnswers->length;
+					while($_g3 < $_g2) {
+						$k1 = $_g3++;
+						if(StringTools::startsWith($correctAnswers[$k1], "s")) {
+							$sub = Std::parseInt(_hx_substr($correctAnswers[$k1], 1, _hx_index_of($correctAnswers[$k1], "_", null) - 1)) + 1;
+							if(!com_wiris_util_type_Arrays::contains($used, $sub)) {
+								while($subchecks->length <= $sub) {
+									$subchecks->push(new _hx_array(array()));
+								}
+								_hx_array_get($subchecks, $sub)->push($c);
+								$used->push($sub);
+							}
+							$correctAnswers[$k1] = _hx_substr($correctAnswers[$k1], _hx_index_of($correctAnswers[$k1], "_", null) + 1, null);
+							unset($sub);
+						} else {
+							if(!com_wiris_util_type_Arrays::contains($used, 0)) {
+								if($subchecks->length < 1) {
+									$subchecks->push(new _hx_array(array()));
+								}
+								_hx_array_get($subchecks, 0)->push($c);
+								$used->push(0);
+							}
+						}
+						unset($k1);
+					}
+					unset($_g3,$_g2);
+				}
+				{
+					$_g3 = 0; $_g2 = $answers->length;
+					while($_g3 < $_g2) {
+						$k1 = $_g3++;
+						if(StringTools::startsWith($answers[$k1], "s")) {
+							$sub = Std::parseInt(_hx_substr($answers[$k1], 1, _hx_index_of($answers[$k1], "_", null) - 1)) + 1;
+							if(!com_wiris_util_type_Arrays::contains($used, $sub)) {
+								while($subchecks->length <= $sub) {
+									$subchecks->push(new _hx_array(array()));
+								}
+								_hx_array_get($subchecks, $sub)->push($c);
+								$used->push($sub);
+							}
+							$answers[$k1] = _hx_substr($answers[$k1], _hx_index_of($answers[$k1], "_", null) + 1, null);
+							unset($sub);
+						} else {
+							if(!com_wiris_util_type_Arrays::contains($used, 0)) {
+								if($subchecks->length < 1) {
+									$subchecks->push(new _hx_array(array()));
+								}
+								_hx_array_get($subchecks, 0)->push($c);
+								$used->push(0);
+							}
+						}
+						unset($k1);
+					}
+					unset($_g3,$_g2);
+				}
+				unset($used,$k,$j1,$correctAnswers,$c,$answers);
+			}
+		}
+		return $subchecks;
 	}
 	public function expandVariablesText($text) {
 		if($text === null) {
@@ -981,9 +1246,11 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$this->variables = $this->variablesToHash($s->serializeArrayName($this->hashToVariables($this->variables, null), "variables"), null);
 		$this->serializeHandConstraints();
 		$this->localData = $s->serializeArrayName($this->localData, "localData");
+		$this->subinstances = $s->serializeArrayName($this->subinstances, "subinstances");
 		$s->endTag();
 	}
 	public $handConstraints;
+	public $subinstances;
 	public $compoundChecks;
 	public $localData;
 	public $checks;

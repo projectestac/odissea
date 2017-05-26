@@ -82,8 +82,6 @@ $string['enableembed'] = 'Inkluder-knapp';
 $string['enablecopyright'] = 'Opphavsretts-knapp';
 $string['enableabout'] = 'Om H5P-knapp';
 
-$string['externalcommunication'] = 'Ekstern kommuniksjon';
-$string['externalcommunication_help'] = 'Bidra til utviklingen av H5P ved å bidra med anonym bruksdata. Ved å skru av denne innstillingen vil du hindre installasjonen i å hente de seneste H5P-oppdateringene. Du kan lese mer om <a {$a}>hvilke data som samles</a> på h5p.org.';
 $string['enablesavecontentstate'] = 'Lagre tilstanden til innholdet';
 $string['enablesavecontentstate_help'] = 'Automatisk lagring av hva brukeren har svart og hvor langt brukeren har kommet. Dette betyr brukeren kan fortsette der han avsluttet.';
 $string['contentstatefrequency'] = 'Frekvens for tilstandslagring';
@@ -94,18 +92,6 @@ $string['enabledlrscontenttypes_help'] = 'Gjør det mulig å bruke innholdstyper
 // Admin menu.
 $string['settings'] = 'H5P-innstillinger';
 $string['libraries'] = 'H5P-bibliotek';
-
-// Update libraries section.
-$string['updatelibraries'] = 'Oppdater alle bibliotek';
-$string['updatesavailable'] = 'Der finnes tilgjengelige oppdateringer for H5P-innholdstypene dine.';
-$string['whyupdatepart1'] = 'Du kan lese mer om hvorfor det er viktig å holde seg oppdatert og godene ved å gjøre det på <a {$a}>Why Update H5P</a>-siden.';
-$string['whyupdatepart2'] = 'Denne siden viser også en liste over de forskjellige endringene, hvor du kan lese om nye funksjoner som introduseres og problemer som er fikset.';
-$string['currentversion'] = 'Du har';
-$string['availableversion'] = 'Tilgjengelig oppdatering';
-$string['usebuttonbelow'] = 'Du kan bruke knappen under for å automatisk laste ned og oppdatere alle innholdstypene dine.';
-$string['downloadandupdate'] = 'Last ned & oppdater';
-$string['missingh5purl'] = 'Mangler URL for H5P-fil';
-$string['unabletodownloadh5p'] = 'Ute av stand til å laste ned H5P-fil';
 
 // Upload libraries section.
 $string['uploadlibraries'] = 'Last opp bilbliotek';
@@ -194,7 +180,6 @@ $string['hvp:viewresults'] = 'Vise resultater for H5P-innhold';
 $string['hvp:getcachedassets'] = 'Tilgang til bufret H5P-innholdsressurser';
 $string['hvp:getcontent'] = 'Tilgang til innholdet til H5P-fil i kurs';
 $string['hvp:getexport'] = 'Tilgang til eksportfil fra H5P i kurs';
-$string['hvp:updatesavailable'] = 'Få varsel når H5P-oppdateringer er tilgjengelige';
 
 // Capabilities error messages
 $string['nopermissiontoupgrade'] = 'Du har ikke tillatelse til å oppgradere bibliotek.';
@@ -264,7 +249,7 @@ $string['couldnotcopy'] = 'Klarte ikke å kopiere fila.';
 
 // Welcome messages
 $string['welcomeheader'] = 'Welcome to the world of H5P!';
-$string['welcomegettingstarted'] = 'To get started with H5P and Moodle take a look at our <a {$a->moodle_tutorial}>tutorial</a> and check out the <a {$a->example_content}>example content</a> at H5P.org for inspiration.<br>The most popuplar content types have been installed for your convenience!';
+$string['welcomegettingstarted'] = 'To get started with H5P and Moodle take a look at our <a {$a->moodle_tutorial}>tutorial</a> and check out the <a {$a->example_content}>example content</a> at H5P.org for inspiration.';
 $string['welcomecommunity'] = 'We hope you will enjoy H5P and get engaged in our growing community through our <a {$a->forums}>forums</a> and chat room <a {$a->gitter}>H5P at Gitter</a>';
 $string['welcomecontactus'] = 'If you have any feedback, don\'t hesitate to <a {$a}>contact us</a>. We take feedback very seriously and are dedicated to making H5P better every day!';
 $string['missingmbstring'] = 'PHP-utvidelsen mbstring mangler. H5P trenger denne for å kunne virke';

@@ -37,6 +37,7 @@ $string['categoryrole'] = 'Ρόλος κατηγορίας';
 $string['contains'] = 'περιέχει';
 $string['content'] = 'Περιεχόμενο';
 $string['contentandheadings'] = 'Περιεχόμενο και τίτλοι';
+$string['coursecategory'] = 'κατηγορία μαθήματος';
 $string['courserole'] = 'Ρόλος μαθήματος';
 $string['courserolelabel'] = '{$a->label} είναι {$a->rolename} στο {$a->coursename} από {$a->categoryname}';
 $string['courserolelabelerror'] = 'Σφάλμα {$a->label}: το μάθημα {$a->coursename} δεν υπάρχει';

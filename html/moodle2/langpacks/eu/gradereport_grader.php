@@ -36,5 +36,6 @@ $string['grader:view'] = 'Kalifikatzailearen txostena ikusi';
 $string['overriddengrade'] = 'Baliogabetutako kalifikazioa';
 $string['pluginname'] = 'Kalifikatzailea';
 $string['preferences'] = 'Kalifikatzailearen hobespenak';
+$string['summarygrader'] = 'Lehen zutabean ikasleen izenak izango dituen taula bat, eta aktibitate kalifikagarriak gainean ikastaro eta kategorietan multzokatuta dituena.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} kalifikazio';

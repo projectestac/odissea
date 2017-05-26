@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cohort:config'] = 'Παραμετροποίηση περιπτώσεων ομάδων χρηστών';
+$string['defaultgroupnametext'] = '{$a->name} ομάδα χρηστών {$a->increment}';
+$string['instanceexists'] = 'Η ομάδα χρηστών είναι ήδη συγχρονισμένη με τον επιλεγμένο ρόλο';
 $string['pluginname'] = 'Συγχρονισμός ομάδας χρηστών';
 $string['pluginname_desc'] = 'Το πρόσθετο εγγραφής σε ομάδα χρηστών συγχρονίζει τα μέλη της ομάδας χρηστών με τους συμμετέχοντες του μαθήματος.';

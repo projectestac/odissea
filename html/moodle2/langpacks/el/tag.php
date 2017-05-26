@@ -55,6 +55,7 @@ $string['officialtag'] = 'Επίσημη ετικέτα';
 $string['otags'] = 'Επίσημες ετικέτες';
 $string['othertags'] = 'Άλλες ετικέτες (χωρισμένες με κόμματα)';
 $string['owner'] = 'Ιδιοκτήτης';
+$string['prevpage'] = 'Επιστροφή';
 $string['ptags'] = 'Ετικέτες χρηστών (χωρισμένες με κόμματα)';
 $string['relatedblogs'] = 'Τελευταίες καταχωρήσεις ιστολογίου';
 $string['relatedtags'] = 'Σχετικές ετικέτες';

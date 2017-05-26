@@ -51,3 +51,4 @@ $string['showonlybackups'] = 'Mostra només els fitxers de còpia de seguretat';
 $string['hidesamehash'] = 'Amaga els fitxers amb el mateix <i>contenthash</i> (Mode expert)';
 $string['viewsimilarfiles'] = 'Mostra fitxers similars';
 $string['manage_backup_files'] = 'Si voleu alliberar espai podeu eliminar les còpies de seguretat dels cursos des d\'<a href="{$a}">aquest apartat</a>';
+$string['coursequotas:manage'] = 'Gestiona quota';

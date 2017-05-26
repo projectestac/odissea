@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once __DIR__ . '/../autoloader.php';
 require_once($CFG->libdir . '/filelib.php');
+require_once($CFG->libdir . '/adminlib.php');
 
 /**
  * Moodle's implementation of the H5P framework interface.
@@ -42,11 +43,11 @@ class framework implements \H5PFrameworkInterface {
      * Get type of hvp instance
      *
      * @param string $type Type of hvp instance to get
-     * @return \H5PContentValidator|\H5PCore|\H5PMoodle|\H5PStorage|\H5PValidator
+     * @return \H5PContentValidator|\H5PCore|\H5PStorage|\H5PValidator|\mod_hvp\framework|\H5peditor
      */
     public static function instance($type = null) {
         global $CFG;
-        static $interface, $core, $editor, $editorinterface;
+        static $interface, $core, $editor, $editorinterface, $editorajaxinterface;
 
         if (!isset($interface)) {
             $interface = new \mod_hvp\framework();
@@ -77,8 +78,13 @@ class framework implements \H5PFrameworkInterface {
                 if (empty($editorinterface)) {
                     $editorinterface = new \mod_hvp\editor_framework();
                 }
+
+                if (empty($editorajaxinterface)) {
+                    $editorajaxinterface = new editor_ajax();
+                }
+
                 if (empty($editor)) {
-                    $editor = new \H5peditor($core, $editorinterface);
+                    $editor = new \H5peditor($core, $editorinterface, $editorajaxinterface);
                 }
                 return $editor;
             case 'core':
@@ -110,57 +116,6 @@ class framework implements \H5PFrameworkInterface {
     }
 
     /**
-     * Make it easy to download and install H5P libraries.
-     *
-     * @param boolean $onlyupdate Prevent install of new libraries
-     * @return string|null Error or null if everything's OK.
-     */
-    public static function downloadH5pLibraries($onlyupdate = false) {
-        global $CFG;
-
-        $update_available = \get_config('mod_hvp', 'update_available');
-        $current_update = \get_config('mod_hvp', 'current_update');
-        if ($update_available === $current_update) {
-            // Prevent re-submission of forms/action
-            return null;
-        }
-
-        // URL for file to download
-        $download_url = \get_config('mod_hvp', 'update_available_path');
-        if (!$download_url) {
-            return get_string('missingh5purl', 'hvp');
-        }
-
-        // Generate local tmp file path
-        $local_folder = $CFG->tempdir . uniqid('/hvp-');
-        $local_file = $local_folder . '.h5p';
-
-        if (!\download_file_content($download_url, null, null, false, 300, 20, false, $local_file)) {
-            return get_string('unabletodownloadh5p', 'hvp');
-        }
-
-        // Add folder and file paths to H5P Core
-        $interface = \mod_hvp\framework::instance('interface');
-        $interface->getUploadedH5pFolderPath($local_folder);
-        $interface->getUploadedH5pPath($local_file);
-
-        // Validate package
-        $h5pValidator = \mod_hvp\framework::instance('validator');
-        if (!$h5pValidator->isValidPackage(true, $onlyupdate)) {
-            @unlink($local_file);
-            $messages = \mod_hvp\framework::messages('error');
-            return implode('<br/>', $messages);
-        }
-
-        // Install H5P file into Moodle
-        $storage = \mod_hvp\framework::instance('storage');
-        $storage->savePackage(null, null, true);
-        \set_config('current_update', $update_available, 'mod_hvp');
-
-        return null;
-    }
-
-    /**
      * Implements getPlatformInfo
      */
     public function getPlatformInfo() {
@@ -175,12 +130,25 @@ class framework implements \H5PFrameworkInterface {
 
     /**
      * Implements fetchExternalData
-     *
-     * @param string $url Url starting with http(s)://
-     * @return bool|null|\stdClass|string Data object if successful fetch
      */
-    public function fetchExternalData($url, $data = null) {
-        $response = download_file_content($url, null, $data);
+    public function fetchExternalData($url, $data = NULL, $blocking = TRUE, $stream = NULL) {
+        global $CFG;
+
+        if ($stream !== NULL) {
+            // Download file
+            @set_time_limit(0);
+
+            // Generate local tmp file path
+            $local_folder = $CFG->tempdir . uniqid('/hvp-');
+            $stream = $local_folder . '.h5p';
+
+            // Add folder and file paths to H5P Core
+            $interface = \mod_hvp\framework::instance('interface');
+            $interface->getUploadedH5pFolderPath($local_folder);
+            $interface->getUploadedH5pPath($stream);
+        }
+
+        $response = download_file_content($url, null, $data, false, 300, 20, false, $stream);
         return ($response === false ? null : $response);
     }
 
@@ -326,7 +294,32 @@ class framework implements \H5PFrameworkInterface {
                 'Could not copy file.' => 'couldnotcopy',
                 'The mbstring PHP extension is not loaded. H5P need this to function properly' => 'missingmbstring',
                 'The version of the H5P library %machineName used in this content is not valid. Content contains %contentLibrary, but it should be %semanticsLibrary.' => 'wrongversion',
-                'The H5P library %library used in the content is not valid' => 'invalidlibrary'
+                'The H5P library %library used in the content is not valid' => 'invalidlibrary',
+                'Your PHP version is outdated. H5P requires version 5.2 to function properly. Version 5.6 or later is recommended.' => 'oldphpversion',
+                'Your PHP max upload size is quite small. With your current setup, you may not upload files larger than %number MB. This might be a problem when trying to upload H5Ps, images and videos. Please consider to increase it to more than 5MB.' => 'maxuploadsizetoosmall',
+                'Your PHP max post size is quite small. With your current setup, you may not upload files larger than %number MB. This might be a problem when trying to upload H5Ps, images and videos. Please consider to increase it to more than 5MB' => 'maxpostsizetoosmall',
+                'Your server does not have SSL enabled. SSL should be enabled to ensure a secure connection with the H5P hub.' => 'sslnotenabled',
+                'H5P hub communication has been disabled because one or more H5P requirements failed.' => 'hubcommunicationdisabled',
+                'When you have revised your server setup you may re-enable H5P hub communication in H5P Settings.' => 'reviseserversetupandretry',
+                'A problem with the server write access was detected. Please make sure that your server can write to your data folder.' => 'nowriteaccess',
+                'Your PHP max upload size is bigger than your max post size. This is known to cause issues in some installations.' => 'uploadsizelargerthanpostsize',
+                'Library cache was successfully updated!' => 'ctcachesuccess',
+                'No content types were received from the H5P Hub. Please try again later.' => 'ctcachenolibraries',
+                "Couldn't communicate with the H5P Hub. Please try again later." => 'ctcacheconnectionfailed',
+                'The hub is disabled. You can re-enable it in the H5P settings.' => 'hubisdisabled',
+                'File not found on server. Check file upload settings.' => 'filenotfoundonserver',
+                'Invalid security token.' => 'invalidtoken',
+                'No content type was specified.' => 'nocontenttype',
+                'The chosen content type is invalid.' => 'invalidcontenttype',
+                'You do not have permission to install content types.' => 'installdenied',
+                'Validating h5p package failed.' => 'validatingh5pfailed',
+                'Failed to download the requested H5P.' => 'failedtodownloadh5p',
+                'A post message is required to access the given endpoint' => 'postmessagerequired',
+                'Could not get posted H5P.' => 'invalidh5ppost',
+                'Site could not be registered with the hub. Please contact your site administrator.' => 'sitecouldnotberegistered',
+                'The H5P Hub has been disabled until this problem can be resolved. You may still upload libraries through the "H5P Libraries" page.' => 'hubisdisableduploadlibraries',
+                'Your site was successfully registered with the H5P Hub.' => 'successfullyregisteredwithhub',
+                'You have been provided a unique key that identifies you with the Hub when receiving new updates. The key is available for viewing in the "H5P Settings" page.' => 'sitekeyregistered'
             ];
         }
 
@@ -340,6 +333,16 @@ class framework implements \H5PFrameworkInterface {
         global $CFG;
 
         return $CFG->dirroot . '/mod/hvp/files';
+    }
+
+    /**
+     * Implements getLibraryFileUrl
+     */
+    public function getLibraryFileUrl($libraryFolderName, $fileName) {
+      global $CFG;
+      $context = \context_system::instance();
+      $basepath = $CFG->httpswwwroot . '/';
+      return "{$basepath}pluginfile.php/{$context->id}/mod_hvp/libraries/{$libraryFolderName}/{$fileName}";
     }
 
     /**
@@ -367,10 +370,6 @@ class framework implements \H5PFrameworkInterface {
 
         if ($setPath !== null) {
             $path = $setPath;
-        }
-
-        if (!isset($path)) {
-            throw new \coding_exception('Using getUploadedH5pPath() before path is set');
         }
 
         return $path;
@@ -613,6 +612,9 @@ class framework implements \H5PFrameworkInterface {
         if (!isset($libraryData['fullscreen'])) {
             $libraryData['fullscreen'] = 0;
         }
+        if (!isset($libraryData['hasIcon'])) {
+            $libraryData['hasIcon'] = 0;
+        }
         // TODO: Can we move the above code to H5PCore? It's the same for multiple
         // implementations. Perhaps core can update the data objects before calling
         // this function?
@@ -632,6 +634,7 @@ class framework implements \H5PFrameworkInterface {
             'preloaded_css' => $preloadedCss,
             'drop_library_css' => $dropLibraryCss,
             'semantics' => $libraryData['semantics'],
+            'has_icon' => $libraryData['hasIcon'],
         );
 
         if ($new) {
@@ -875,11 +878,7 @@ class framework implements \H5PFrameworkInterface {
     public function alterLibrarySemantics(&$semantics, $name, $majorVersion, $minorVersion) {
         global $PAGE;
 
-        $contextId = optional_param('contextId', null, PARAM_INT);
-        if (isset($contextId)) {
-            $context = \context::instance_by_id($contextId);
-            $PAGE->set_context($context);
-        }
+        $PAGE->set_context(null);
 
         $renderer = $PAGE->get_renderer('mod_hvp');
         $renderer->hvp_alter_semantics($semantics, $name, $majorVersion, $minorVersion);
@@ -1097,7 +1096,8 @@ class framework implements \H5PFrameworkInterface {
             'fullscreen' => $library->fullscreen,
             'runnable' => $library->runnable,
             'semantics' => $library->semantics,
-            'restricted' => $library->restricted
+            'restricted' => $library->restricted,
+            'hasIcon' => $library->has_icon
         );
 
         $dependencies = $DB->get_records_sql(
@@ -1236,7 +1236,7 @@ class framework implements \H5PFrameworkInterface {
     /**
      * Implements afterExportCreated
      */
-    public function afterExportCreated() {
+    public function afterExportCreated($content, $filename) {
     }
 
     /**
@@ -1252,7 +1252,55 @@ class framework implements \H5PFrameworkInterface {
                 global $DB;
                 $context = \context_course::instance($DB->get_field('hvp', 'course', array('id' => $content_id)));
                 return has_capability('mod/hvp:getexport', $context);
+            case \H5PPermission::CREATE_RESTRICTED:
+                $context = \context_system::instance();
+                return has_capability('mod/hvp:userestrictedlibraries', $context);
+            case \H5PPermission::UPDATE_LIBRARIES:
+                $context = \context_system::instance();
+                return has_capability('mod/hvp:updatelibraries', $context);
+            case \H5PPermission::INSTALL_RECOMMENDED:
+                $context = \context_system::instance();
+                return has_capability('mod/hvp:installrecommendedh5plibraries', $context);
+
         }
         return FALSE;
+    }
+
+    /**
+     * Replaces existing content type cache with the one passed in
+     *
+     * @param object $contentTypeCache Json with an array called 'libraries'
+     *  containing the new content type cache that should replace the old one.
+     */
+    public function replaceContentTypeCache($contentTypeCache) {
+        global $DB;
+
+        // Replace existing cache
+        $DB->delete_records('hvp_libraries_hub_cache');
+        foreach ($contentTypeCache->contentTypes as $ct) {
+            $DB->insert_record('hvp_libraries_hub_cache', (object) array(
+                'machine_name'      => $ct->id,
+                'major_version'     => $ct->version->major,
+                'minor_version'     => $ct->version->minor,
+                'patch_version'     => $ct->version->patch,
+                'h5p_major_version' => $ct->coreApiVersionNeeded->major,
+                'h5p_minor_version' => $ct->coreApiVersionNeeded->minor,
+                'title'             => $ct->title,
+                'summary'           => $ct->summary,
+                'description'       => $ct->description,
+                'icon'              => $ct->icon,
+                'created_at'        => (new \DateTime($ct->createdAt))->getTimestamp(),
+                'updated_at'        => (new \DateTime($ct->updatedAt))->getTimestamp(),
+                'is_recommended'    => $ct->isRecommended === TRUE ? 1 : 0,
+                'popularity'        => $ct->popularity,
+                'screenshots'       => json_encode($ct->screenshots),
+                'license'           => json_encode(isset($ct->license) ? $ct->license : array()),
+                'example'           => $ct->example,
+                'tutorial'          => isset($ct->tutorial) ? $ct->tutorial : '',
+                'keywords'          => json_encode(isset($ct->keywords) ? $ct->keywords : array()),
+                'categories'        => json_encode(isset($ct->categories) ? $ct->categories : array()),
+                'owner'             => $ct->owner
+            ), FALSE, TRUE);
+        }
     }
 }

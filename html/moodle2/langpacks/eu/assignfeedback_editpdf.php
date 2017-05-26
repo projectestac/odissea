@@ -50,6 +50,7 @@ $string['editpdf_help'] = 'Ikasleen bidalketak zuzenean nabigatzailean jaso eta 
 $string['enabled'] = 'PDF oharra';
 $string['enabled_help'] = 'Gaituta, irakasleak oharrak dituen PDF fitxategia sortu ahal izango du zereginak markatzean. Honela, irakasleak aukera izango du iruzkinak marrazkiak eta zigiluak zuzenean ikasleen lanean gehitzeko, Oharra nabigatzailean egiten da eta ez da aparteko softwarerik behar.';
 $string['errorgenerateimage'] = 'Erroea ghostscript-a erabiliz irudia sortzean, errorearen informazioa: {$a}';
+$string['errorpdfpage'] = 'Errorea gertatu da orri hau sortzean.';
 $string['filter'] = 'Iragazi iruzkinak...';
 $string['generatefeedback'] = 'Sortu PDF feedbacka-a';
 $string['generatingpdf'] = 'PDF feedback-a sortzen...';

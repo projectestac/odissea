@@ -24,6 +24,8 @@
 
 namespace mod_hvp;
 
+use H5peditorFile;
+
 defined('MOODLE_INTERNAL') || die();
 
 require_once __DIR__ . '/../autoloader.php';
@@ -227,5 +229,82 @@ class editor_framework implements \H5peditorStorage {
       $embedType = 'editor';
       $renderer->hvp_alter_scripts($files['scripts'], $libraryList, $embedType);
       $renderer->hvp_alter_styles($files['styles'], $libraryList, $embedType);
+    }
+
+    /**
+     * Saves a file or moves it temporarily. This is often necessary in order to
+     * validate and store uploaded or fetched H5Ps.
+     *
+     * @param string $data Uri of data that should be saved as a temporary file
+     * @param boolean $move_file Can be set to TRUE to move the data instead of saving it
+     *
+     * @return bool|object Returns false if saving failed or an object with path
+     * of the directory and file that is temporarily saved
+     */
+    public static function saveFileTemporarily($data, $move_file = FALSE) {
+        global $CFG;
+
+        // Generate local tmp file path
+        $unique_h5p_id = uniqid('hvp-');
+        $file_name = $unique_h5p_id . '.h5p';
+        $directory = $CFG->tempdir . DIRECTORY_SEPARATOR . $unique_h5p_id;
+        $file_path = $directory . DIRECTORY_SEPARATOR . $file_name;
+
+        if (!is_dir($directory)) {
+            mkdir($directory, 0777, true);
+        }
+
+        // Move file or save data to new file so core can validate H5P
+        if ($move_file) {
+            move_uploaded_file($data, $file_path);
+        }
+        else {
+            file_put_contents($file_path, $data);
+        }
+
+        // Add folder and file paths to H5P Core
+        $interface = framework::instance('interface');
+        $interface->getUploadedH5pFolderPath($directory);
+        $interface->getUploadedH5pPath($directory . DIRECTORY_SEPARATOR . $file_name);
+
+        return (object) array(
+            'dir' => $directory,
+            'fileName' => $file_name
+        );
+    }
+
+    /**
+     * Marks a file for later cleanup, useful when files are not instantly cleaned
+     * up. E.g. for files that are uploaded through the editor.
+     *
+     * @param int $file Id of file that should be cleaned up
+     * @param int|null $content_id Content id of file
+     */
+    public static function markFileForCleanup($file, $content_id = null) {
+        global $DB;
+
+        // Let H5P Core clean up
+        if ($content_id) {
+            return;
+        }
+
+        // Track temporary files for later cleanup
+        $DB->insert_record_raw('hvp_tmpfiles', array(
+            'id' => $file
+        ), false, false, true);
+    }
+
+    /**
+     * Clean up temporary files
+     *
+     * @param string $filePath Path to file or directory
+     */
+    public static function removeTemporarilySavedFiles($filePath) {
+        if (is_dir($filePath)) {
+            \H5PCore::deleteFileTree($filePath);
+        }
+        else {
+            @unlink($filePath);
+        }
     }
 }

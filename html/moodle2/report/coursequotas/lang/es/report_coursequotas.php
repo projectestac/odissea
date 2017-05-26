@@ -51,3 +51,4 @@ $string['showonlybackups'] = 'Mostrar solo los archivos de cópia de seguridad';
 $string['hidesamehash'] = 'No mostrar los archivos con el mismo <i>contenthash</i> (Modo experto)';
 $string['viewsimilarfiles'] = 'Ver archivos similares';
 $string['manage_backup_files'] = 'Para liberar espacio, se pueden eliminar las copias de seguridad de los cursos desde <a href="{$a}">este apartado</a>';
+$string['coursequotas:manage'] = 'Gestionar cuota';

@@ -97,6 +97,7 @@ $string['publishtosite'] = 'Οποιονδήποτε στη σελίδα';
 $string['publishtoworld'] = 'Οποιονδήποτε στον κόσμο';
 $string['relatedblogentries'] = 'Σχετικές καταχωρήσεις σε ιστολόγια';
 $string['rssfeed'] = 'RSS feed Ιστολογίου';
+$string['searchterm'] = 'Αναζήτηση: {$a}';
 $string['settingsupdatederror'] = 'Σφάλμα κατά την ενημέρωση ρύθμισης ιστολογίου';
 $string['siteblog'] = 'Ιστολόγιο σελίδας: {$a}';
 $string['siteblogdisable'] = 'Το ιστολόγιο σελίδας είναι απενεργοποιημένο';

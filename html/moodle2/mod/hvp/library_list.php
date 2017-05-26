@@ -36,17 +36,6 @@ admin_externalpage_setup('h5plibraries');
 
 $PAGE->set_title("{$SITE->shortname}: " . get_string('libraries', 'hvp'));
 
-// Create form for automatically downloading and installing updates
-$update_available = \get_config('mod_hvp', 'update_available');
-$current_update = \get_config('mod_hvp', 'current_update');
-if ($update_available !== false && $current_update !== false && $current_update < $update_available) {
-    $updateform = new \mod_hvp\update_libraries_form();
-    if ($formdata = $updateform->get_data()) {
-        // Update successful, hide form.
-        $updateform = null;
-    }
-}
-
 // Create upload libraries form
 $uploadform = new \mod_hvp\upload_libraries_form();
 if ($formdata = $uploadform->get_data()) {
@@ -56,6 +45,20 @@ if ($formdata = $uploadform->get_data()) {
 }
 
 $core = \mod_hvp\framework::instance();
+
+$hubOn = $core->h5pF->getOption('hub_is_enabled', TRUE);
+if ($hubOn) {
+    // Create content type cache form
+    $ct_cache_form = new \mod_hvp\content_type_cache_form();
+
+    // On form submit
+    if ($ct_cache_form->get_data()) {
+        // Update cache and reload page
+        $core->updateContentTypeCache();
+        redirect($pageurl);
+    }
+}
+
 $numNotFiltered = $core->h5pF->getNumNotFiltered();
 $libraries = $core->h5pF->loadLibraries();
 
@@ -128,10 +131,10 @@ echo $OUTPUT->header();
 // Page Header
 echo '<h2>' . get_string('libraries', 'hvp') . '</h2>';
 
-if (isset($updateform)) {
-    // Update All Libraries
-    echo '<h3 class="h5p-admin-header">' . get_string('updatelibraries', 'hvp') . '</h3>';
-    $updateform->display();
+if ($hubOn) {
+    // Content type cache form
+    echo '<h3>' . get_string('contenttypecacheheader', 'hvp') . '</h3>';
+    $ct_cache_form->display();
 }
 
 // Upload Form

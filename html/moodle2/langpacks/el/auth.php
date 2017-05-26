@@ -46,6 +46,7 @@ $string['authinstructions'] = 'Εδώ μπορείτε να παρέχετε τ�
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
 $string['authloginviaemail'] = 'Επέτρεψε σύνδεση μέσω ηλεκτρονικού ταχυδρομείου';
 $string['auth_multiplehosts'] = 'Πολλαπλοί hosts ή διευθύνσεις μπορούν να προσδιοριστούν (πχ host1.com;host2.com;host3.com) ή (πχ xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
+$string['auth_notconfigured'] = 'Η μέθοδος αυθεντικοποίησης {$a} δεν έχει διαμορφωθεί.';
 $string['auth_outofnewemailupdateattempts'] = 'You have run out of allowed attempts to update your email address. Your update request has been cancelled.';
 $string['auth_passwordisexpired'] = 'Το συνθηματικό σας έχει λήξει. Θέλετε να αλλάξετε το συνθηματικό σας τώρα;';
 $string['auth_passwordwillexpire'] = 'Το συνθηματικό σας θα λήξει σε {$a} ημέρες. Θέλετε να αλλάξετε το συνθηματικό σας τώρα;';

@@ -4,11 +4,11 @@ class com_wiris_quizzes_impl_Answer extends com_wiris_quizzes_impl_MathContent {
 	public function __construct() {
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct();
-		$this->id = 0;
+		$this->id = "0";
 	}}
 	public function onSerialize($s) {
 		$s->beginTag(com_wiris_quizzes_impl_Answer::$tagName);
-		$this->id = $s->attributeInt("id", $this->id, 0);
+		$this->id = $s->attributeString("id", $this->id, "0");
 		parent::onSerializeInner($s);
 		$s->endTag();
 	}

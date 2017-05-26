@@ -57,14 +57,6 @@ $string['cancellabel'] = 'İptal';
 $string['confirmlabel'] = 'Onayla';
 $string['noh5ps'] = 'Bu kurs içn etkileşimsel içerik yok.';
 
-// Update message email for admin
-$string['messageprovider:updates'] = 'Mevcut H5P güncellemeleri için bildirim';
-$string['updatesavailabletitle'] = 'Yeni H5P güncellemeleri var.';
-$string['updatesavailablemsgpt1'] = 'Moodle sitenize yüklediğiniz H5P içerik tipleri için güncellemeler var.';
-$string['updatesavailablemsgpt2'] = 'Daha fazla yönerge için aşağıda bağlantısı verilen sayfaya gidin.';
-$string['updatesavailablemsgpt3'] = 'En son güncellemenin yayınlanma tarihi: {$a}';
-$string['updatesavailablemsgpt4'] = 'İşletmekte olduğunuz sürümün tarihi: {$a}';
-
 $string['lookforupdates'] = 'H5P güncellemelerine bak';
 $string['removetmpfiles'] = 'Eski H5P geçici dosyalarını kaldır';
 $string['removeoldlogentries'] = 'Eski H5P kütük girdilerini kaldır';
@@ -82,8 +74,6 @@ $string['enableembed'] = 'Katma tuşu';
 $string['enablecopyright'] = 'Telif hakkı tuşu';
 $string['enableabout'] = 'H5P bilgisi tuşu';
 
-$string['externalcommunication'] = 'Harici iletişim';
-$string['externalcommunication_help'] = 'Anonim kullanım bilgisi sağlayarak H5P gelişimine katkı sağlayın. Bu seçenek devre dışı kalırsa siteniz en yeni H5P güncellemeleri hakkında bilgileri alamaz. Bu konuda daha fazla bilgi h5p.org adresinde <a {$a}>hangi veriler</a> sayfasında.';
 $string['enablesavecontentstate'] = 'İçerik durumunu kaydet';
 $string['enablesavecontentstate_help'] = 'Her bir kullanıcı için mevcut etkileşimsel çerik durumunu kendiliğinden kaydet. Böylece kullanıcı bıraktığı yerden devam edebilir.';
 $string['contentstatefrequency'] = 'İçerik durumunu kaydetme sıklığı';
@@ -92,18 +82,6 @@ $string['contentstatefrequency_help'] = 'Saniye değeriyle, kullanıcının iler
 // Admin menu.
 $string['settings'] = 'H5P Ayarları';
 $string['libraries'] = 'H5P Kitaplıkları';
-
-// Update libraries section.
-$string['updatelibraries'] = 'Tüm Kitaplıkları İçeri Aktar';
-$string['updatesavailable'] = 'H5P içerik tipleriniz için güncellemeler var.';
-$string['whyupdatepart1'] = '<a {$a}>H5P neden güncellenmeli</a> sayfasında güncellemenin neden gerektiğini ve avantajlarını okuyabilirsiniz.';
-$string['whyupdatepart2'] = 'Sayfada ayrıca değişiklik kütükleri de yer almakta; burada yeni getirilen özelikleri ve yapılan düzeltmeleri görebilirsiniz.';
-$string['currentversion'] = 'Şu anki sürümünüz';
-$string['availableversion'] = 'Mevcut güncelleme';
-$string['usebuttonbelow'] = 'Aşağıdaki tuşu kullanarak içerik türlerinizin tamamının kendiliğinden indirilip yüklenmesini sağlayabilirsiniz.';
-$string['downloadandupdate'] = 'İndir ve Güncelle';
-$string['missingh5purl'] = 'H5P dosyası için eksik URL';
-$string['unabletodownloadh5p'] = 'H5P dosya indirilemedi';
 
 // Upload libraries section.
 $string['uploadlibraries'] = 'Kitaplıkları Yükle';
@@ -192,7 +170,6 @@ $string['hvp:viewresults'] = 'H5P içeriği için sonucu gör';
 $string['hvp:getcachedassets'] = 'Ön belleğe alınmış H5P içerik değerlerini al';
 $string['hvp:getcontent'] = 'Kurs içìndeki H5P dosyası içeriğini al/gör';
 $string['hvp:getexport'] = 'Kurs içindeki H5P içeriğinden dışa aktarma dosyası al';
-$string['hvp:updatesavailable'] = 'H5P güncellemeleri olduğunda bildirim al';
 
 // Capabilities error messages
 $string['nopermissiontoupgrade'] = 'Kitaplıkları yükseltme yetkiniz yok.';
@@ -263,6 +240,6 @@ $string['couldnotcopy'] = 'Dosya kopyalanamadı.';
 
 // Welcome messages
 $string['welcomeheader'] = 'H5P dünyasına hoşgeldiniz!';
-$string['welcomegettingstarted'] = 'H5P ve Moodle kullanımına bakmak için <a {$a->moodle_tutorial}>kullanım</a> turumuza bakabilir ve h5p.org üzerinde <a {$a->example_content}>örnek içerik</a>le bir fikir edinebilirsiniz.<br>En popüler içerik tipleri kullanmanız için yüklendi.';
+$string['welcomegettingstarted'] = 'H5P ve Moodle kullanımına bakmak için <a {$a->moodle_tutorial}>kullanım</a> turumuza bakabilir ve h5p.org üzerinde <a {$a->example_content}>örnek içerik</a> le bir fikir edinebilirsiniz.';
 $string['welcomecommunity'] = 'Umarız H5P kullanmaktan memnun kalır ve sürekli büyüyen topluluğumuza<a {$a->forums}>forumlarımız</a> ve <a {$a->gitter}>Gitter adresinde H5P</a> üzerindeki sohbet odamızla katılırsınız';
 $string['welcomecontactus'] = 'Herhangi bir geribildiriminiz varsa<a {$a}>bize iletin</a>. Geribildirimleri titizlikle ele alıyor ve her geçen gün H5P yazılımını geliştirmeye çabalıyoruz!';

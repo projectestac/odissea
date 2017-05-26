@@ -187,4 +187,5 @@ $string['viewmyentriesaboutmodule'] = 'この {$a} に関する私のエント�
 $string['viewsiteentries'] = 'すべてのエントリを表示する';
 $string['viewuserentries'] = '{$a} によるエントリすべてを表示する';
 $string['worldblogs'] = '世界中の誰でもエントリを読むことができる';
+$string['wrongexternalid'] = '外部ブログIDが正しくありません。';
 $string['wrongpostid'] = 'ブログ記事IDが正しくありません。';

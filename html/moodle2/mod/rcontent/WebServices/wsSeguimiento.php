@@ -42,11 +42,15 @@ if (isset($_REQUEST['wsdl']) || isset($_REQUEST['WSDL'])) {
                         'DetalleResultado' => 'DetalleResultado',
                         'RespuestaResultadoExtendido' => 'RespuestaResultadoExtendido',
                         'ResultadoDetalleExtendidoResponse' => 'ResultadoDetalleExtendidoResponse');
-    $server = new SoapServer("$CFG->wwwroot/mod/rcontent/WebServices/wsSeguimiento.php?wsdl");
+    try {
+        $server = new SoapServer("$CFG->wwwroot/mod/rcontent/WebServices/wsSeguimiento.php?wsdl");
 
-    $server->setClass("wsSeguimiento");
-    //$server->addFunction("ResultadoDetalleExtendido");
-    $server->addFunction(SOAP_FUNCTIONS_ALL);
+        $server->setClass("wsSeguimiento");
+        //$server->addFunction("ResultadoDetalleExtendido");
+        $server->addFunction(SOAP_FUNCTIONS_ALL);
 
-    $server->handle();
+        $server->handle();
+    } catch (Exception $e) {
+        log_to_file("wsSeguimiento: WSDL initialization - Exception = " . $e->getMessage());
+    }
 }

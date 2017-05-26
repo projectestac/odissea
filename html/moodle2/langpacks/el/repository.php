@@ -41,6 +41,7 @@ $string['areauserprofile'] = 'Προφίλ';
 $string['attachment'] = 'Συνημμένα';
 $string['author'] = 'Συγγραφέας';
 $string['back'] = '&lt; Επιστροφή';
+$string['backtodraftfiles'] = '&laquo; Επιστροφή στη διαχείριση προσχέδιων αρχείων';
 $string['cachecleared'] = 'Τα αρχεία στην προσωρινή μνήμη διαγράφονται';
 $string['cacheexpire'] = 'Λήξη προσωρινής μνήμης';
 $string['cannotinitplugin'] = 'Η κλήση plugin_init απέτυχε';

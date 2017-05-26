@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['autocreate'] = 'Sortu karpeta automatikoki';
 $string['path'] = 'Cache-bidea';
 $string['pluginname'] = 'Fitxategi-cachea';
+$string['singledirectory'] = 'Karpeta bakarreko biltegia';

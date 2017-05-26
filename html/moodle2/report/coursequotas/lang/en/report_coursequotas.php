@@ -51,5 +51,6 @@ $string['showonlybackups'] = 'Show only backup files';
 $string['hidesamehash'] = 'Hide files with the same <i>contenthash</i> (Expert mode)';
 $string['viewsimilarfiles'] = 'View similar files';
 $string['manage_backup_files'] = 'If you want to make free space, backups can be deleted from <a href="{$a}">this page</a>';
+$string['coursequotas:manage'] = 'Manage quota';
 
 

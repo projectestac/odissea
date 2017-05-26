@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actwebserviceshhdr'] = 'Ενεργά πρωτόκολλα διαδικτυακών υπηρεσιών';
 $string['allusers'] = 'Όλοι οι χρήστες';
+$string['authmethod'] = 'Μέθοδος αυθεντικοποίησης';
 $string['configwebserviceplugins'] = 'Για λόγους ασφαλείας, μόνο τα πρωτόκολλα που χρησιμοποιούνται πρέπει να είναι ενεργοποιημένα.';
 $string['createtoken'] = 'Δημιουργία οντότητας (token)';
 $string['editaservice'] = 'Επεξεργασία υπηρεσίας';

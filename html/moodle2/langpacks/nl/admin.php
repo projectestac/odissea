@@ -311,8 +311,8 @@ $string['configproxypassword'] = 'Wachtwoord nodig om door een proxy op het inte
 $string['configproxyport'] = 'Als deze server een proxyserver gebruikt, zet dan hier de gebruikte poort.';
 $string['configproxytype'] = 'Type web proxy (PHP5 en cURL extentie nodig voor SOCKS5 ondersteuning).';
 $string['configproxyuser'] = 'Gebruikersnaam nodig om door een proxy op het internet te komen, leeg indien geen wachtwoord (PHP cURL extentie nodig).';
-$string['configrecaptchaprivatekey'] = 'Variable (private sleutel), nodig om je Moodle server te laten communiceren met de recaptcha-server. Je kunt deze voor jouw site bekomen via<a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
-$string['configrecaptchapublickey'] = 'Variable (publieke sleutel), nodig om het reCAPTCHA-element te tonen op je registratiepagina. ReCAPTCHA-sleutels kun je bekomen via <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['configrecaptchaprivatekey'] = 'Tekenreeks (private sleutel),  nodig om je Moodle server te laten communiceren met de recaptcha-server. ReCAPTCHA-sleutels kun je bekomen via  <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['configrecaptchapublickey'] = 'Tekenreeks (publieke sleutel),  nodig om je Moodle server te laten communiceren met de recaptcha-server. ReCAPTCHA-sleutels kun je bekomen via  <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['configrequestcategoryselection'] = 'De selectie van een categorie toestaan bij het aanvragen van een cursus.';
 $string['configrequestedstudentname'] = 'Woord voor leerling, gebruikt in aangevraagde cursussen';
 $string['configrequestedstudentsname'] = 'Woord voor leerlingen, gebruikt in aangevraagde cursussen';
@@ -340,7 +340,7 @@ $string['configsitedefaultlicense'] = 'Standaard site licentie';
 $string['configsitedefaultlicensehelp'] = 'Standaarlicentie die gebruikt zal worden voor het tonen van inhoud op deze site.';
 $string['configsitemaxcategorydepth'] = 'Maximale categoriediepte';
 $string['configsitemaxcategorydepthhelp'] = 'Dit specificeert de maximale diepte van getoonde onderliggende categorieën of combolijsten. Diepere categorieën zullen verschijnen als links en gebruikers kunnen ze uitvergroten via AJAX.';
-$string['configslasharguments'] = '\'Slash arguments\' (die <em>PATH_INFO</em> gebruiken) zijn vereist om SCORM-pakketten en bronnen die uit meerdere bestanden bestaan correct te tonen. Als je webserver geen \'slash arguments\' ondersteunt en je kunt het niet instellen, dan kan deze instelling uitgeschakeld worden maar met als resultaat dat sommige dingen niet zullen werken.<br />Merk op: het gebruik van \'slash arguments\' is vereist in toekomstige Moodle-versies.';
+$string['configslasharguments'] = '\'Slash arguments\' (die gebruik maken van <em>PATH_INFO</em> zijn vereist om SCORM-pakketten en bronnen die uit meerdere bestanden bestaan correct te tonen. Als je webserver dit niet ondersteunt en je kunt dit niet configureren, dan kan deze instelling uitgeschakeld worden. Het zal er voor zorgen dat een aantal zaken niet goed werken.<br />Opmerking: het gebruik van \'slash arguments\' zal een vereiste worden in toekomstige Moodle-versies.';
 $string['configsmartpix'] = 'Met deze optie ingeschakeld worden icoontjes opgehaald door een PHP-script dat eerst het huidige thema doorzoekt, dan alle bovenliggende thema\'s en dan de Moodle/pix map. Hierdoor is het niet nodig de afbeeldingsbestanden te dupliceren over de verschillende thema\'s. Het heeft wel een kleine performantiekost.';
 $string['configstartwday'] = 'Begin van de week';
 $string['configstatsfirstrun'] = 'Hiermee stel je in hoever terug in de tijd dat de logs moeten herwerkt worden tijdens de <b>eerste keer</b> dat de crontaak de statistieken probeert te verwerken. Als je wel wat verkeer hebt en je server is een shared host, dan is het waarschijnlijk geen goed idee om te ver terug te gaan. Het erg zware proces zou wel eens lang kunnen lopen. (merk op voor deze instelling: 1 maand is 28 dagen. Op de grafieken en in de rapporten is een maand een kalendermaand.)';
@@ -616,6 +616,7 @@ $string['iplookupinfo'] = 'Standaard gebruikt Moodle de gratis  NetGeo (The Inte
 Het is dan ook aangeraden om een lokale kopie van de gratis GeoLite City database van MaxMind te installeren.<br />
 IP-adreslocatie wordt dan getoond op een eenvoudige kaart of op een kaart van Google Maps. Merk op dat je hiervoor een Google account nodig hebt en een gratis Google Maps API sleutel moet aanvragen om de interactieve kaarten in te schakelen.';
 $string['iplookupmaxmindnote'] = 'Dit product bevat GeoLite data gemaakt door  <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
+$string['ishttpswarning'] = 'Je site gebruikt geen HTTPS. Voor een betere beveiliging en voor een verbeterde integratie met andere systemen wordt sterk aangeraden om jouw site naar HTTPS om te schakelen.';
 $string['keeptagnamecase'] = 'Hoofdletters tag-namen behouden';
 $string['lang'] = 'Standaardtaal';
 $string['langcache'] = 'Cache taalmenu';
@@ -777,6 +778,7 @@ $string['numberofmissingstrings'] = 'Aantal ontbrekende woorden of zinnen: {$a}'
 $string['numberofstrings'] = 'Aantal woorden/zinnen: {$a->strings}<br />Ontbrekend: {$a->missing} ({$a->missingpercent}&nbsp;%)';
 $string['opcacherecommended'] = 'PHP opcode caching verbetert de performantie en vermindert de geheugenvereisten. De OPcache-extentie wordt aanbevolen en volledig ondersteund.';
 $string['opensslrecommended'] = 'Het installeren van de OpenSSL bibliotheek is sterk aangeraden -- het maakt Moodle Networking mogelijk.';
+$string['opensslrequired'] = 'De OpenSSL PHP-extentie wordt nu door Moodle vereist om sterkere cryptografische diensten te kunnen leveren.';
 $string['opentogoogle'] = 'Open voor Google';
 $string['optionalmaintenancemessage'] = 'Optionele onderhoudsboodschap';
 $string['order1'] = 'Eerste';
@@ -793,7 +795,7 @@ $string['pathtodot'] = 'Pad naar dot';
 $string['pathtodot_help'] = 'Pad naar dot. Waarschijnlijk iets als /usr/bin/dot. Om het mogelijk te maken grafische bestanden te maken van DOT-bestanden, heb je dot nodig en moet je hier opgeven waar het op je server te vinden is.';
 $string['pathtodu'] = 'Pad naar du';
 $string['pathtogs'] = 'Pad naar ghostscript';
-$string['pathtogs_help'] = 'Op de meeste Linux-servers mag dit blijven staan als \'/usr/bin/gs\'. Op een Windows-server zal het eerder iets zijn als \'c:gsbingswin32c.exe\' (zorg er voor dat er geen spaties voorkomen in het pad - kopiëer indien nodig de bestanden \'gswin32c.exe\' en \'gsdll32.dll\' naar een nieuwe map zonder spatie in het pad)';
+$string['pathtogs_help'] = 'Op de meeste Linux-servers mag dit blijven staan als \'/usr/bin/gs\'. Op een Windows-server zal het eerder iets zijn als \'c:\\gs\\bin\\gswin32c.exe\' (zorg er voor dat er geen spaties voorkomen in het pad - kopieer indien nodig de bestanden \'gswin32c.exe\' en \'gsdll32.dll\' naar een nieuwe map zonder spatie in het pad)';
 $string['pathtopgdump'] = 'Pad naar pg_dump';
 $string['pathtopgdumpdesc'] = 'Je moet dit enkel ingeven als je meer dan één pg_dump op je systeem hebt (bijvoorbeeld als je meer dan één versie van postgresql geïnstalleerd hebt)';
 $string['pathtopgdumpinvalid'] = 'Ongeldig pad naar pg_dump - ofwel verkeerd pad of niet uitvoerbaar';
@@ -910,7 +912,7 @@ $string['registermoodleorgli1'] = 'Je wordt toegevoegd aan een laag-volume maili
 $string['registermoodleorgli2'] = 'Statistieken over je site zullen aan {$a} van de wereldwijde Moodlegemeenschap toegevoegd worden.';
 $string['registerwithmoodleorg'] = 'Registreer je site';
 $string['registration'] = 'Registratie';
-$string['registration_help'] = 'Het is aan te raden om je site te registreren om veiligheidsmeldingen te ontvangen en voor toegang tot Moodle.net, ons platform om cursussen te delen.';
+$string['registration_help'] = 'Het is aan te raden om te registreren bij Moodle.org om meldingen over beveiligingsproblemen te ontvangen en voor toegang tot Moodle.net, ons platform om cursussen te delen.';
 $string['registrationwarning'] = 'Je site is nog niet geregistreerd.';
 $string['releasenoteslink'] = 'Bekijk de online <a target="_new" href="{$a}">Release Notes</a> voor informatie over deze versie van Moodle.';
 $string['rememberusername'] = 'Gebruikersnaam onthouden';

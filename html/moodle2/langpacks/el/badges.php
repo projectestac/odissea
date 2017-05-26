@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activatesuccess'] = 'Ενεργοποιηθήκε επιτυχώς η πρόσβαση στις κονκάρδες';
+$string['addbadgecriteria'] = 'Προσθήκη κριτηρίων βραβείου';
+$string['addcourse_help'] = 'Επιλέξτε όλα τα μαθήματα που πρέπει να προστεθούν σε αυτή την απαίτηση βραβείου. Κρατήστε πατημένο το πλήκτρο CTRL για να επιλέξετε πολλά στοιχεία.';
+$string['allmethodmanual'] = 'Όλοι οι επιλεγμένοι ρόλοι απονείμουν το βραβείο';
+$string['allowcoursebadges'] = 'Ενεργοποίηση βραβείων μαθήματος';
+$string['allowcoursebadges_desc'] = 'Να επιτρέπεται η δημιουργία και απονομή βραβείων στο πλαίσιο μαθήματος.';
+$string['backpackemail'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';
+$string['badgeprivacysetting'] = 'Ρυθμίσεις ιδιωτικότητας βραβείων';
 $string['bmessage'] = 'Μήνυμα';
 $string['boverview'] = 'Επισκόπηση';
 $string['criteria_1'] = 'Ολοκλήρωση δραστηριότητας';

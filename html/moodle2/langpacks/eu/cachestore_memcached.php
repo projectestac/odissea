@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clustered'] = 'Gaitu taldekatutako zerbitzariak';
 $string['clusteredheader'] = 'Bereizi zerbitzariak';
 $string['hash'] = 'Zifratze-metodoa';
 $string['hash_crc'] = 'CRC';
@@ -34,7 +35,10 @@ $string['hash_fnv1a_32'] = 'FNV1A_32';
 $string['hash_fnv1a_64'] = 'FNV1A_64';
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
+$string['hash_murmur'] = 'Murmur';
 $string['pluginname'] = 'Memcached';
+$string['prefix'] = 'Aurrizki-gakoa';
 $string['prefixinvalid'] = 'Aurrizki baliogabea. Bakarrik erabil ditzakezu ondokoak: a-z A-Z 0-9-_.';
 $string['servers'] = 'Zerbitzariak';
+$string['setservers'] = 'Ezarri zerbitzariak';
 $string['testservers'] = 'Proba-zerbitzariak';

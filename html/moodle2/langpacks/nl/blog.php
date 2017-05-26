@@ -187,4 +187,5 @@ $string['viewmyentriesaboutmodule'] = 'Bekijk mijn items over dit {$a}';
 $string['viewsiteentries'] = 'Bekijk de blogs van de site';
 $string['viewuserentries'] = 'Bekijk alle items door {$a}';
 $string['worldblogs'] = 'Blog-items die als Wereldtoegankelijk aangeduid zijn, kunnen door alle internetgebruikers gelezen worden';
+$string['wrongexternalid'] = 'Foute externe blog-ID';
 $string['wrongpostid'] = 'Fout blog post ID';

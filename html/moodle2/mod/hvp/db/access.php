@@ -136,10 +136,14 @@ $capabilities = array(
         )
     ),
 
-    'mod/hvp:updatesavailable' => array(
-        'captype' => 'read',
-        'contextlevel' => CONTEXT_SYSTEM,
+    'mod/hvp:installrecommendedh5plibraries' => array(
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_MODULE,
         'archetypes' => array(
+          'manager' => CAP_ALLOW,
+          'editingteacher' => CAP_ALLOW,
+          'teacher' => CAP_ALLOW
         )
     ),
+
 );

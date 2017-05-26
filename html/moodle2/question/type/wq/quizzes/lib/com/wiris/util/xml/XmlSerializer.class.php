@@ -285,6 +285,31 @@ class com_wiris_util_xml_XmlSerializer {
 		}
 		return $a;
 	}
+	public function stringToArrayString($s) {
+		if($s === null) {
+			return null;
+		}
+		return _hx_explode(",", $s);
+	}
+	public function stringArrayToString($a) {
+		if($a === null) {
+			return null;
+		}
+		$i = null;
+		$sb = new StringBuf();
+		{
+			$_g1 = 0; $_g = $a->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if($i1 !== 0) {
+					$sb->add(",");
+				}
+				$sb->add($a[$i1]);
+				unset($i1);
+			}
+		}
+		return $sb->b;
+	}
 	public function arrayToString($a) {
 		if($a === null) {
 			return null;
@@ -303,6 +328,9 @@ class com_wiris_util_xml_XmlSerializer {
 			}
 		}
 		return $sb->b;
+	}
+	public function attributeStringArray($name, $value, $def) {
+		return $this->stringToArrayString($this->attributeString($name, $this->stringArrayToString($value), $this->stringArrayToString($def)));
 	}
 	public function attributeIntArray($name, $value, $def) {
 		return $this->stringToArray($this->attributeString($name, $this->arrayToString($value), $this->arrayToString($def)));
@@ -423,6 +451,12 @@ class com_wiris_util_xml_XmlSerializer {
 		$this->rawxmls = new _hx_array(array());
 		$s->onSerialize($this);
 		$res = $this->element->toString();
+		if(StringTools::startsWith($res, "<__document")) {
+			$res = _hx_substr($res, _hx_index_of($res, ">", null) + 1, null);
+		}
+		if(StringTools::endsWith($res, "</__document>")) {
+			$res = _hx_substr($res, 0, strlen($res) - strlen("</__document>"));
+		}
 		$i = null;
 		{
 			$_g1 = 0; $_g = $this->rawxmls->length;

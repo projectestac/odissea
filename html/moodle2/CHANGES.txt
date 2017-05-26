@@ -3,6 +3,19 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 17.05.23
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.1.6 (Trello #1591)
+- mod/hvp: Updated to from 1.2 and fixed bug when downloading (Trello #1584)
+- Updated all related wiris plugins
+- mod/jclic: redesigned edit form parameters and replaced .jclic.zip references in some translations (Trello #1554)
+- Updated mod/hotpot
+- Removed progress block (Trello #1503)
+- Updated LangPacks
+- Updated report/coursequotas
+- Updated mod/rcontent
+
+
 Changes 17.04.24
 ---------------------------------------------------------------------------------------
 - Updated mod/hotpot

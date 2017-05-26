@@ -3,9 +3,11 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
-Changes in progress
+Changes in 3.0.2 - 2017051200 (2017/05/12)
 ---------------------------------------------------------------------------------------
 - Changed default report to detailed
+- Redesigned edit form parameters
+- Replaced .jclic.zip references in some translations
 
 Changes in 3.0.1 - 2016061300 (2016/09/28)
 ---------------------------------------------------------------------------------------

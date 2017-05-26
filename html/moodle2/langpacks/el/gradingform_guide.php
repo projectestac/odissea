@@ -30,6 +30,7 @@ $string['clicktoedit'] = 'Πατήστε για επεξεργασία';
 $string['comment'] = 'Σχόλιο';
 $string['comments'] = 'Συχνά χρησιμοποιούμενα σχόλια';
 $string['commentsdelete'] = 'Διαγραφή σχολίου';
+$string['commentsempty'] = 'Πατήστε για επεξεργασία σχολίου';
 $string['criterion'] = 'Όνομα κριτηρίου';
 $string['criteriondelete'] = 'Διαγραφή κριτηρίου';
 $string['criterionempty'] = 'Πατήστε για επεξεργασία κριτηρίου';

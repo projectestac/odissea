@@ -284,7 +284,14 @@ function hvp_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload
               return false;
             }
 
+            //XTEC ************ MODIFICAT - To fix bug when downloading files
+            //2017.05.11 @sarjona
+            $contentid = $matches[1];
+            //************ ORIGINAL
+            /*
             $contentid = $matches[0];
+             */
+            //************ FI
             $content = $h5pinterface->loadContent($contentid);
             $displayOptions = $h5pcore->getDisplayOptionsForView($content['disable'], $contentid);
 

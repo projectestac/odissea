@@ -61,6 +61,7 @@
         <FIELD NAME="semantics" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="The semantics definition in json format"/>
         <FIELD NAME="restricted" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Restricts the ability to create new content using this library"/>
         <FIELD NAME="tutorial_url" TYPE="char" LENGTH="1000" NOTNULL="false" SEQUENCE="false" COMMENT="URL to a tutorial for this library"/>
+        <FIELD NAME="has_icon" TYPE="int" LENGTH="1" UNSIGNED="true" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Whether or not this library contains an icon.svg"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
@@ -68,6 +69,35 @@
       <INDEXES>
         <INDEX NAME="meta" UNIQUE="false" FIELDS="machine_name, major_version, minor_version, patch_version, runnable"/>
       </INDEXES>
+    </TABLE>
+    <TABLE NAME="hvp_libraries_hub_cache" COMMENT="Caches content types from the H5P hub.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" COMMENT="Primary Key: The id of the library"/>
+        <FIELD NAME="machine_name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The library machine name"/>
+        <FIELD NAME="major_version" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="minor_version" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="patch_version" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="h5p_major_version" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false" COMMENT="The major version required of H5P core"/>
+        <FIELD NAME="h5p_minor_version" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false" COMMENT="The minor version required of H5P core"/>
+        <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The human readable name of this library"/>
+        <FIELD NAME="summary" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Short description of library"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Long description of library"/>
+        <FIELD NAME="icon" TYPE="char" LENGTH="511" NOTNULL="true" SEQUENCE="false" COMMENT="URL to icon"/>
+        <FIELD NAME="created_at" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="Time that the library was uploaded"/>
+        <FIELD NAME="updated_at" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="Time that the library has its latest update"/>
+        <FIELD NAME="is_recommended" TYPE="int" LENGTH="1" UNSIGNED="true" NOTNULL="true" SEQUENCE="false" COMMENT="Whether the library is recommended by the HUB moderators"/>
+        <FIELD NAME="popularity" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="How many times the library has been downloaded"/>
+        <FIELD NAME="screenshots" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Screenshot URLs json encoded"/>
+        <FIELD NAME="license" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Library license(s) json encoded"/>
+        <FIELD NAME="example" TYPE="char" LENGTH="511" NOTNULL="true" SEQUENCE="false" COMMENT="URL to example content for this library"/>
+        <FIELD NAME="tutorial" TYPE="char" LENGTH="511" NOTNULL="false" SEQUENCE="false" COMMENT="Tutorial URL"/>
+        <FIELD NAME="keywords" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Keywords for library json encoded"/>
+        <FIELD NAME="categories" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Categories for library json encoded"/>
+        <FIELD NAME="owner" TYPE="char" LENGTH="511" NOTNULL="false" SEQUENCE="false" COMMENT="Owner of the library"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
     </TABLE>
     <TABLE NAME="hvp_libraries_libraries" COMMENT="Library dependencies">
       <FIELDS>

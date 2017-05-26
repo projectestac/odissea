@@ -187,4 +187,5 @@ $string['viewmyentriesaboutmodule'] = 'Meine Beiträge zu {$a}';
 $string['viewsiteentries'] = 'Alle Beiträge';
 $string['viewuserentries'] = 'Alle Beiträge von {$a}';
 $string['worldblogs'] = 'Ohne Anmeldung weltweit für alle sichtbar';
+$string['wrongexternalid'] = 'Falsche externe Blog-ID';
 $string['wrongpostid'] = 'Falsche Blogeintrag-ID';

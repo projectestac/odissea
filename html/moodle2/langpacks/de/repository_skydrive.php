@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cachedef_foldername'] = 'Cache für Verzeichnisnamen';
 $string['clientid'] = 'Client ID';
 $string['configplugin'] = 'Einstellungen für Microsoft OneDrive';
-$string['oauthinfo'] = '<p>Zur Nutzung dieses Plugins muss Ihre Site bei <a href="https://account.live.com/developers/applications">Microsoft</a> registriert werden.<p> Als Teil des Registrierungsprozesses muss die folgende URL als \'Redirect domain\' eingetragen werden:</p><p>{$a->callbackurl}</p>
+$string['oauthinfo'] = '<p>Zur Nutzung dieses Plugins muss Ihre Seite bei <a href="https://account.live.com/developers/applications">Microsoft</a> registriert werden.<p> Als Teil des Registrierungsprozesses muss die folgende URL als \'Redirect domain\' eingetragen werden:</p><p>{$a->callbackurl}</p>
 Nach der Registrierung erhalten Sie eine Client-ID, die Sie hier eintragen müssen.</p>';
 $string['pluginname'] = 'Microsoft OneDrive';
 $string['secret'] = 'Kennwort';

@@ -645,6 +645,7 @@ $string['iplookup'] = 'IP-Adressen-Suche';
 $string['iplookupgeoplugin'] = 'Ortsdaten werden aktuell durch den Dienst <a href="http://www.geoplugin.com">geoPlugin</a> bereitgestellt. Bessere Ergebnisse erhalten Sie mit der Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite City von MaxMind.com</a>\'.';
 $string['iplookupinfo'] = 'Standardmäßig nutzt Moodle zur Lokalisierung von IP-Adressen die Datenbank NetGeo. Die Datenbank wird nicht gepflegt und liefert leider oft seltsame Daten. Die Installation der freien Datenbank \'MaxMind GeoLiteCity\' wird empfohlen. Die IP-Adressen werden auf einer einfachen Übersichtskarte lokalisiert. Mit einem Googlekonto und einen freien API Key könnten Sie auch interaktive Karten über Google Maps verwenden.';
 $string['iplookupmaxmindnote'] = 'Moodle benutzt zur Darstellung die Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite City von MaxMind.com</a>\'.';
+$string['ishttpswarning'] = 'Ihre Website ist nicht mit HTTPS abgesichert. Es wird dringend empfohlen, die Website auf HTTPS umzuwandeln, um die Sicherheit zu erhöhen und die Integration anderer Systeme zu verbessern.';
 $string['keeptagnamecase'] = 'Schreibweise der Schlagwörter beibehalten';
 $string['lang'] = 'Sprache';
 $string['langcache'] = 'Sprachmenü-Cache
@@ -789,7 +790,7 @@ $string['navsortmycoursessort_help'] = 'Diese Option legt fest, ob Kurse im Bere
 $string['neverdeleteruns'] = 'Durchläufe nicht löschen';
 $string['nobookmarksforuser'] = 'Sie haben keine Lesezeichen.';
 $string['nodatabase'] = 'Keine Datenbank';
-$string['nohttpsformobilewarning'] = 'Es wird empfohlen, HTTPS mit einem gültigen Zertifikat zu aktivieren. Moodle Mobile versucht vorrangig, eine gesicherte Verbindung zu verwenden.';
+$string['nohttpsformobilewarning'] = 'Es wird empfohlen, HTTPS mit einem gültigen Zertifikat zu aktivieren. Moodle Mobile versucht, eine gesicherte Verbindung zu verwenden.';
 $string['nomissingstrings'] = 'Keine fehlenden Texte';
 $string['nonewsettings'] = 'Bei der Aktualisierung wurden keine neuen Einstellungen hinzugefügt.';
 $string['nonexistentbookmark'] = 'Das gesuchte Lesezeichen gibt es nicht.';
@@ -804,6 +805,7 @@ $string['numberofmissingstrings'] = 'Anzahl der fehlenden Texte: {$a}';
 $string['numberofstrings'] = 'Gesamtzahl der Texte: {$a->strings}<br />Fehlende Texte: {$a->missing} ({$a->missingpercent}&nbsp;%)';
 $string['opcacherecommended'] = 'PHP Opcode Caching verbessert die Leistung und senkt den Speicherbedarf. Die PHP-Extension OPcache wird voll unterstützt.';
 $string['opensslrecommended'] = 'Die optionale Installation der OpenSSL Bibliothek wird dringend empfohlen. Dadurch wird die Moodle-Netzwerk-Funktionalität ermöglicht.';
+$string['opensslrequired'] = 'Die PHP Extension OpenSSL ist für Moodle notwendig, um stärkere Krypto-Dienste bereit zu stellen.';
 $string['opentogoogle'] = 'Offen für Google';
 $string['optionalmaintenancemessage'] = 'Wartungsinformationen';
 $string['order1'] = 'Erstens';

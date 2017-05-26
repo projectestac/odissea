@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configgrade0'] = 'Η πρεοεπιλεγμένη λέξη που περιγράφει την αρνητική αξιολόγηση μιας δήλωσης.';
 $string['configgrade1'] = 'Η προεπιλεγμένη λέξη που περιγράφει την θετική αξιολόγηση μιας δήλωσης.';
+$string['dimensioncomment'] = 'Σχόλιο';
+$string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
 $string['dimensiongrade'] = 'Βαθμός';
 $string['dimensionweight'] = 'Βάρος';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Κλειδί API';
+$string['backtosearch'] = 'Επιστροφή στην οθόνη αναζήτησης';
 $string['callbackurl'] = 'Τοποθεσία Callback';
 $string['configplugin'] = 'Ρυθμιση Flickr για το κοινό';
 $string['emailaddress'] = 'Δι/νση Ηλεκτρονικού Ταχυδρομείου';

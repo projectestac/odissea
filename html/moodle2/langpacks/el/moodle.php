@@ -364,6 +364,7 @@ $string['coursenotaccessible'] = 'Σε αυτό το μάθημα δεν επι�
 $string['courseoverview'] = 'Σύνοψη του μαθήματος';
 $string['courseoverviewfiles'] = 'Περίληψη αρχείων μαθήματος';
 $string['courseoverviewfilesext'] = 'Επεκτάσεις αρχείων σύνοψης μαθήματος';
+$string['courseoverviewfiles_help'] = 'Τα αρχεία σύνοψης μαθήματος, όπως εικόνες, εμφανίζονται στη λίστα των μαθημάτων μαζί με την σύνοψη.';
 $string['courseoverviewfileslimit'] = 'Όριο αρχείων σύνοψης μαθήματος';
 $string['courseoverviewgraph'] = 'Γράφημα επισκόπησης του μαθήματος';
 $string['courseprofiles'] = 'Προφίλ μαθήματος';
@@ -458,6 +459,10 @@ $string['day'] = 'ημέρα';
 $string['days'] = 'ημέρες';
 $string['decodinginternallinks'] = 'Αποκωδικοποίηση εσωτερικών συνδέσμων';
 $string['default'] = 'Προκαθορισμένο';
+$string['defaultcompetencescale'] = 'Προεπιλεγμένη κλίμακα δεξιότητας';
+$string['defaultcompetencescaledesc'] = 'Μια δυαδική κλίμακα αξιολόγησης που δεν παρέχει περαιτέρω πληροφορίες πέρα από το αν κάποιος έχει αποδεδειγμένη επαρκή γνώση ή όχι.';
+$string['defaultcompetencescalenotproficient'] = 'Όχι ακόμα επαρκής';
+$string['defaultcompetencescaleproficient'] = 'Επαρκής';
 $string['defaultcoursestudent'] = 'Σπουδαστής';
 $string['defaultcoursestudentdescription'] = 'Οι σπουδαστές έχουν λιγότερα δικαιώματα σε ένα μάθημα';
 $string['defaultcoursestudents'] = 'Σπουδαστές';
@@ -483,6 +488,7 @@ $string['deletechecktype'] = 'Είστε σίγουροι ότι θέλετε ν
 $string['deletechecktypename'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε το {$a->type} "{$a->name}";';
 $string['deletecheckwarning'] = 'Πρόκειται να διαγραφούν αυτά τα αρχεία';
 $string['deletecomment'] = 'Διαγραφή σχολίου';
+$string['deletecommentbyon'] = 'Διαγραφή σχολίου που αναρτήθηκε από {$a->user} στις {$a->time}';
 $string['deletecompletely'] = 'Απόλυτη διαγραφή';
 $string['deletecourse'] = 'Διαγραφή ενός μαθήματος';
 $string['deletecoursecheck'] = 'Είστε απολύτως βέβαιος/η ότι θέλετε να διαγράψετε εντελώς αυτό το μάθημα και όλα τα δεδομένα που περιέχει;';
@@ -511,6 +517,9 @@ $string['displayingusers'] = 'Προβολή χρηστών {$a->start} μέχρ
 $string['displayonpage'] = 'Προβολή στην σελίδα';
 $string['dndcourse'] = 'Μπορείτε να σύρετε αυτό το μάθημα για να αλλάξετε τη σειρά του η να το μετακινήσετε σε άλλη κατηγορία.';
 $string['dndenabled_inbox'] = 'Μπορείτε να κάνετε drag and drop αρχεία εδώ για να τα προσθέσετε.';
+$string['dndnotsupported'] = 'Η μεταφόρτωση με drag and drop δεν υποστηρίζεται';
+$string['dndnotsupported_help'] = 'Το πρόγραμμα περιήγησης σας δεν υποστηρίζει drag and drop μεταφόρτωση.<br /> Αυτή η λειτουργία είναι διαθέσιμη σε όλες τις πρόσφατες εκδόσεις του Chrome, Firefox και Safari, καθώς και στον Internet Explorer V10 και άνω.';
+$string['dndnotsupported_insentence'] = 'Η μεταφόρτωση με drag and drop δεν υποστηρίζεται';
 $string['dnduploadwithoutcontent'] = 'Αυτή η μεταφόρτωση δεν έχει κανένα περιεχόμενο';
 $string['dndworkingfile'] = 'Κάντε drag and drop αρχεία στις ενότητες του μαθήματος για να τα ανεβάσετε';
 $string['dndworkingfilelink'] = 'Κάντε drag and drop αρχεία ή συνδέσμους στις ενότητες του μαθήματος για να τα ανεβάσετε';
@@ -568,8 +577,12 @@ $string['editsummary'] = 'Επεξεργασία της σύνοψης';
 $string['editthisactivity'] = 'Επεξεργασία της δραστηριότητας';
 $string['editthiscategory'] = 'Επεξεργασία του τμήματος';
 $string['edittitle'] = 'Επεξεργασία τίτλου';
+$string['edittitleinstructions'] = 'Escape για να ακυρώσετε, Enter όταν τελειώσετε';
 $string['edituser'] = 'Επεξεργασία των λογαριασμών των χρηστών';
 $string['edulevel'] = 'Όλα τα γεγονότα';
+$string['edulevel_help'] = '* Διδασκαλία - ενέργειες που εκτελούνται από έναν διδάσκοντα, π.χ. ενημέρωση ενός πόρου<br/>
+* Συμμετοχή - ενέργειες που εκτελούνται από έναν μαθητή, π.χ. ανάρτηση σε μια ομάδα συζητήσεων<br/>
+* Άλλο - ενέργειες που εκτελούνται από ένα χρήστη με ρόλο διαφορετικό από διδάσκοντας ή μαθητής';
 $string['edulevelother'] = 'Άλλο';
 $string['edulevelparticipating'] = 'Συμμετοχή';
 $string['edulevelteacher'] = 'Διδασκαλία';
@@ -594,6 +607,13 @@ $string['emailconfirmsent'] = '<p>Ένα μήνυμα ηλεκτρονικού �
    <p>Αν συνεχίζετε να αντιμετωπίζετε δυσκολίες, επικοινωνήστε με το διαχειριστή του δικτυακού τόπου. </p>';
 $string['emaildigest'] = 'Τύπος σύνοψης email';
 $string['emaildigestcomplete'] = 'Ολοκληρωμένη (καθημερινό email με ολόκληρες τις ανακοινώσεις)';
+$string['emaildigest_help'] = 'Αυτή είναι η ρύθμιση καθημερινής σύνοψης που θα χρησιμοποιούν οι ομάδες συζητήσεων από προεπιλογή.
+<br/><br/>
+* Χωρίς σύνοψη - θα λαμβάνετε ένα μήνυμα ηλεκτρονικού ταχυδρομείου ανά ανάρτηση στην ομάδα συζητήσεων.<br/>
+* Σύνοψη - πλήρεις αναρτήσεις - θα λαμβάνετε μια σύνοψη μέσω ηλεκτρονικού ταχυδρομείου την ημέρα που θα περιέχει το πλήρες περιεχόμενο κάθε ανάρτησης στην ομάδα συζητήσεων.<br/>
+* Σύνοψη - θέματα μόνο - θα λαμβάνετε μια σύνοψη μέσω ηλεκτρονικού ταχυδρομείου την ημέρα που περιέχει μόνο το θέμα της κάθε ανάρτησης στην ομάδα συζητήσεων.
+<br/><br/>
+Μπορείτε επίσης να επιλέξετε μια διαφορετική ρύθμιση για κάθε ομάδα συζητήσεων, αν το επιθυμείτε.';
 $string['emaildigestoff'] = 'Χωρίς σύνοψη (μαναδικό email ανά post σε forum)';
 $string['emaildigestsubjects'] = 'Θέματα (καθημερινό email με θέματα μόνο)';
 $string['emaildisable'] = 'Η διεύθυνση email είναι απενεργοποιημένη';
@@ -830,6 +850,7 @@ http://www.gnu.org/copyleft/gpl.html';
 $string['gpllicense'] = 'GPL άδεια χρήσης';
 $string['grade'] = 'Βαθμός';
 $string['grades'] = 'Βαθμοί';
+$string['gravatarenabled'] = 'Το <a href="http://www.gravatar.com/">Gravatar</a> έχει ενεργοποιηθεί για αυτό τον ιστοχώρο. Αν ανεβάσετε μια φωτογραφία προφίλ το Moodle θα προσπαθήσει να φορτώσει μια εικόνα προφίλ για εσάς από το Gravatar.';
 $string['group'] = 'Ομάδα';
 $string['groupadd'] = 'Προσθέστε νέα ομάδα';
 $string['groupaddusers'] = 'Προσθήκη των επιλεγμένων στην ομάδα';
@@ -906,6 +927,7 @@ $string['icon'] = 'Εικονίδιο';
 $string['icqnumber'] = 'Αριθμός ICQ';
 $string['idnumber'] = 'Αριθμός ταυτότητας';
 $string['idnumbercourse'] = 'Κωδικός μαθήματος';
+$string['idnumbercoursecategory'] = 'Αριθμός αναγνωριστικού κατηγορίας';
 $string['idnumbercourse_help'] = '<p align="center"><strong>Αριθμός Ταυτότητας (I.D.)  Μαθήματος</strong></p>
 
 <p align="left">Ο αριθμός ταυτότητας ενός μαθήματος χρησιμοποιείται μόνο κατά
@@ -1104,6 +1126,7 @@ $string['modified'] = 'Τροποποιημένο';
 $string['moduleintro'] = 'Περιγραφή';
 $string['modulesetup'] = 'Ρύθμιση των πινάκων του αρθρώματος';
 $string['modulesuccess'] = '{$a} έχουν ρυθμιστεί σωστά';
+$string['modulesused'] = 'Αρθρώματα που χρησιμοποιήθηκαν';
 $string['month'] = 'Μήνα';
 $string['months'] = 'Μήνες';
 $string['moodledocs'] = 'Αρχεία βοήθειας';

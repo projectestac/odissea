@@ -49,6 +49,9 @@ $string['loadmoreusers'] = 'Igo erabiltzaile gehiago...';
 $string['pluginname'] = 'Kalifikazio-historia';
 $string['preferences'] = 'Kalifikazio-historiaren hobespenak';
 $string['revisedonly'] = 'Berrikusitako kalifikazioak bakarrik';
+$string['revisedonly_help'] = 'Erakutsi soilik berrikusi diren kalifikazioak.
+
+Honek esan nahi du kalifikazioan aldaketak izan dituzten erregistroak erakutsiko direla.';
 $string['selectedusers'] = 'Aukeratutako erabiltzaileak';
 $string['selectuser'] = 'Aukeratu erabiltzailea';
 $string['selectusers'] = 'Aukeratu erabiltzaileak';

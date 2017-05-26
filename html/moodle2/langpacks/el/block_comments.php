@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['comments:addinstance'] = 'Προσθήκη νέου μπλοκ σχόλια';
+$string['comments:myaddinstance'] = 'Προσθήκη νέου μπλοκ σχόλια στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Σχόλια';

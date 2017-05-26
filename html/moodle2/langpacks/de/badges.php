@@ -100,7 +100,7 @@ unter Verwendung Ihrer E-Mail-Adresse wurde von \'{$a->sitename}\' eine neue Ver
 
 {$a->link}
 
-In den meisten E-Mail-Programmen sollte der Link blau und anklickbar sein. Falls das nicht funktioniert, kopieren Sie die Adresse vollständig und fügen Sie sie in die Adresszeile Ihres Webbrowsers ein.
+In den meisten E-Mail-Programmen sollte dieser Link blau und anklickbar sein. Falls das nicht funktioniert, kopieren Sie die Adresse vollständig und fügen Sie sie in die Adresszeile Ihres Webbrowsers ein.
 
 Wenn Sie Hilfe benötigen, wenden Sie sich an den Administrator der Website, {$a->admin}';
 $string['backpackemailverifyemailsubject'] = '{$a}: E-Mail-Bestätigung für OpenBadges-Backpack';

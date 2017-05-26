@@ -5,11 +5,11 @@ class com_wiris_quizzes_impl_CorrectAnswer extends com_wiris_quizzes_impl_MathCo
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct();
 		$this->weight = 1.0;
-		$this->id = 0;
+		$this->id = "0";
 	}}
 	public function onSerialize($s) {
 		$s->beginTag(com_wiris_quizzes_impl_CorrectAnswer::$tagName);
-		$this->id = $s->attributeInt("id", $this->id, 0);
+		$this->id = $s->attributeString("id", $this->id, "0");
 		$this->weight = $s->attributeFloat("weight", $this->weight, 1.0);
 		parent::onSerializeInner($s);
 		$s->endTag();

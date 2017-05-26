@@ -82,19 +82,19 @@ $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer avail
 $string['filetype'] = 'Type';
 $string['filetype_help'] = 'This setting determines how the JClic activity is included in the course. There are up to 2 options:
 
-* Uploaded JClic - Enables a valid ".jclic.zip" package to be chosen by the file picker.
-* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" or ".jclic" file.';
+* Uploaded JClic - Enables a valid JClic package to be chosen by the file picker.
+* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid JClic file.';
 $string['filetypeexternal'] = 'External URL';
 $string['filetypelocal'] = 'Uploaded JClic';
-$string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic.zip" extension.';
-$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" or ".jclic" file.';
+$string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic" extension.';
+$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid JClic file.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'Jar base';
 $string['jclicjarbase_help'] = 'Web address where to locate all the JClic jar files';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'This setting enables a URL for the JClic package to be specified, rather than choosing a file via the file picker.';
 $string['jclicfile'] = 'JClic file';
-$string['jclicfile_help'] = 'The .jclic.zip file containing the JClic files.';
+$string['jclicfile_help'] = 'The .jclic file containing the JClic files.';
 $string['lap'] = 'Lap';
 $string['lap_help'] = 'Time between client-server transactions (in seconds)';
 $string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> is a project of the Catalan Ministry of Education.

@@ -203,6 +203,7 @@ $string['headerlisttemplate'] = 'Ορίζει την διεπαφή πλοήγη
 $string['headerrsstemplate'] = 'Ορίζει την εμφάνιση των καταχωρήσεων στα RSS feeds';
 $string['headersingletemplate'] = 'Ορίζει την διεπαφή πλοήγησης για μια καταχώρηση';
 $string['importsuccess'] = 'Οι ρυθμίσεις εφαρμόστηκαν με επιτυχία.';
+$string['includetime'] = 'Συμπερίληψη ώρας προσθήκης / τροποποίησης';
 $string['insufficiententries'] = 'περισσότερες καταχωρήσεις απαιτούνται για την εμφάνιση αυτής της βάσης δεδομένων';
 $string['intro'] = 'Εισαγωγή';
 $string['invalidaccess'] = 'Η πρόσβαση σε αυτήν τη σελίδα δεν είναι σωστή';

@@ -187,4 +187,5 @@ $string['viewmyentriesaboutmodule'] = 'View my entries about this {$a}';
 $string['viewsiteentries'] = 'View all entries';
 $string['viewuserentries'] = 'View all entries by {$a}';
 $string['worldblogs'] = 'The world can read entries set to be world-accessible';
+$string['wrongexternalid'] = 'Wrong external blog id';
 $string['wrongpostid'] = 'Wrong blog post id';

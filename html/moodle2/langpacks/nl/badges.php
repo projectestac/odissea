@@ -81,14 +81,36 @@ Je moet dit oplossen op een productie-site als je van plan bent om badges uit te
 De enige URL die nodig is voor verificatie is [your-site-url]/badges/assertion.php. Als je je firewall wijzigt zodat die URL toegankelijk is, dan zal badge verificatie werken.';
 $string['backpackbadges'] = 'Je hebt {$a->totalbadges} badge(s) van {$a->totalcollections} collecties.
 <a href="mybackpack.php">Wijzig backpack-instellingen</a>.';
+$string['backpackcannotsendverification'] = 'Kan e-mail voor verificatie niet versturen';
 $string['backpackconnection'] = 'Backpack connectie';
+$string['backpackconnectioncancelattempt'] = 'Verbind door een ander e-mailadres te gebruiken';
+$string['backpackconnectionconnect'] = 'Verbind met Backpack';
 $string['backpackconnection_help'] = 'Via deze pagina kun je een verbinding instellen met een externe "backpack provider". Door te verbinden met een backpack kun je externe badges tonen op deze site en kun je badges die hier verdiend zijn naar je backpack duwen.
 
 Op dit moment wordt enkel <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a> ondersteund. Je moet inschrijven op de backpack service voor je een backpackconnectie kunt opzetten op deze pagina.';
+$string['backpackconnectionresendemail'] = 'Stuur de e-mail voor verificatie opnieuw';
+$string['backpackconnectionunexpectedresult'] = 'Er was een probleem met het verbinden met Backpack. Probeer opnieuw.<br><br>Neem contact op met je systeembeheerder als dit probleem blijft bestaan.';
 $string['backpackdetails'] = 'Backpack instellingen';
 $string['backpackemail'] = 'E-mailadres';
 $string['backpackemail_help'] = 'E-mailadres dat met je backpack geassocieerd is.
 Als je verbindt worden alle badges die je op deze site verdient gekoppeld aan dit e-mailadres.';
+$string['backpackemailverificationpending'] = 'Wachten op verificatie';
+$string['backpackemailverifyemailbody'] = 'Hallo,
+
+Er is een nieuwe verbinding gevraagd naar jouw OpenBadges backpack door \'{$a->sitename}\' met jouw e-mailadres.
+
+Klik om deze vraag te bevestigen en de verbinding met jouw backpack te activeren op onderstaande link.
+
+{$a->link}
+
+In de meeste e-mailprogramma\'s zou dit moeten verschijnen als een blauwe link waarop je kunt klikken. Als dat niet werkt, kopieer en plak het adres dan in de adresbalk bovenaan je browser.
+
+Als je hulp nodig hebt, neem dan contact op met je site-beheerder,
+{$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges Backpack e-mailverificatie';
+$string['backpackemailverifypending'] = 'Er is een e-mail verstuurd naar <strong>{$a}</strong>. Klik op de verificatielink in de e-mail om je Backpack-verbinding te activeren.';
+$string['backpackemailverifysuccess'] = 'Bedankt voor het verifiëren van je e-mailadres. Je bent nu verbonden met jouw Backpack.';
+$string['backpackemailverifytokenmismatch'] = 'Het token in de link waarop je geklikt hebt, komt niet overeen met het opgeslagen token. Zorg ervoor dat je klikt op de link van de meest recente e-mail die je ontvangen hebt.';
 $string['backpackimport'] = 'Badge import instellingen';
 $string['backpackimport_help'] = 'Nadat de backpack-verbinding gelukt is, kunnen badges uit je backpack getoond worden op jouw badges-pagina en je profielpagina.
 

@@ -35,7 +35,7 @@ $string['addcriteria'] = 'クライテリアを追加する';
 $string['addcriteriatext'] = 'クライテリアの追加を開始するにはドロップダウンメニューよりオプションを選択してください。';
 $string['addtobackpack'] = 'バックパックを追加する';
 $string['adminonly'] = 'このページはサイト管理者のみに制限されています。';
-$string['after'] = '- 発効日以降';
+$string['after'] = '- 発効日以後';
 $string['aggregationmethod'] = '総計方法';
 $string['all'] = 'すべて';
 $string['allmethod'] = '選択したすべてのコンディションに合致する';
@@ -88,14 +88,14 @@ $string['backpackconnection_help'] = 'このページにおいてあなたは外
 
 現在、<a href="http://backpack.openbadges.org">Mozillaオープンバッジバックパック</a>のみサポートされています。あなたはこのページのバックパック接続を設定する前にバックパックサービスにサインアップする必要があります。';
 $string['backpackconnectionresendemail'] = '確認メールを再送する';
-$string['backpackconnectionunexpectedresult'] = 'バックパックの接続に問題が生じました。再度お試しください。<br /><br />問題が続く場合、あなたのシステム管理者にご連絡ください。';
+$string['backpackconnectionunexpectedresult'] = 'バックパックの接続に問題が生じました。再度お試しください。<br /><br />問題が続く場合、あなたの管理者にご連絡ください。';
 $string['backpackdetails'] = 'バックパック設定';
 $string['backpackemail'] = 'メールアドレス';
 $string['backpackemail_help'] = 'あなたのバックパックに関するメールアドレスです。あなたが接続している間、このサイトで取得したすべてのバッジはこのメールアドレスに関連付けられます。';
 $string['backpackemailverificationpending'] = '確認保留';
 $string['backpackemailverifyemailbody'] = 'あなたのオープンバッジバックパックへの新しい接続が「 {$a->sitename} 」からあなたのメールアドレスを使ってリクエストされました。
 
-あなたのバックパックへの接続を確認および有効化するには下記リンクをクリックしてください。
+あなたのバックパックへの接続を確認および有効化するには以下にアクセスしてください。
 
 {$a->link}
 

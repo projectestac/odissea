@@ -64,6 +64,10 @@ class qtype_truefalsewiris extends qtype_wq {
         global $DB;
         $correctanswer = $DB->get_record('qtype_wq', array('question' => $question->id), 'options')->options;
 
+        // Xml file needs to have only true or false string values, not True,False,tRuE...
+        foreach ($question->options->answers as $index => $answer) {
+            $answer->answer = strtolower($answer->answer);
+        }
         $expout = $format->write_answers($question->options->answers);
         $expout .= parent::export_to_xml($question, $format);
         $expout .= "    <wirisoverrideanswer>\n";

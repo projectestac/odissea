@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backtoediting'] = 'Επιστροφή στην επεξεργασία';
 $string['regradeoption1'] = 'Σημείωση για αναβαθμολόγηση';

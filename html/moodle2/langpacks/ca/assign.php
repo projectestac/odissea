@@ -141,6 +141,7 @@ $string['defaultteam'] = 'Grup per omissió';
 $string['deleteallsubmissions'] = 'Esborra totes les trameses';
 $string['description'] = 'Descripció';
 $string['downloadall'] = 'Descarrega totes les trameses';
+$string['downloadasfolders'] = 'Descarrega les trameses en carpetes';
 $string['downloadselectedsubmissions'] = 'Baixa les trameses seleccionades';
 $string['duedate'] = 'Data de venciment';
 $string['duedatecolon'] = 'Data de venciment: {$a}';

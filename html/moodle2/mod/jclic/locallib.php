@@ -819,7 +819,7 @@ function jclic_get_url($jclic, $context, $jclicfile=false){
                 }
             }
         } else {
-            // Get .jclic.zip file
+            // Get JClic file
             $files = $fs->get_area_files($context->id, 'mod_jclic', $jclic->get_filearea(), 0, 'sortorder DESC, id ASC', false);
             if (count($files) < 1) {
                 //resource_print_filenotfound($resource, $cm, $course);
@@ -1113,13 +1113,13 @@ function jclic_get_sessions_summary($jclicid, $userid) {
 }
 
 /**
-* Format time from milliseconds to string
+* Format time from seconds to string
 *
 * @return string Formated string [x' y''], where x are the minutes and y are the seconds.
-* @param int $time	The time (in ms)
+* @param int $time	The time (in seconds)
 */
 function jclic_time2str($time){
-    return round($time/60000,0)."' ".round(fmod($time,60000)/1000,0)."''";
+    return floor($time/60)."' ".round(fmod($time,60),0)."''";
 }
 
 /**

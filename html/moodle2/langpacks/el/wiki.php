@@ -25,12 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcomment'] = 'Προσθήκη σχολίου';
 $string['attachments'] = 'Αυτή η σελίδα περιέχει συνημμένα αρχεία';
+$string['backcomments'] = 'Επιστροφή στα σχόλια';
+$string['backhistory'] = 'Επιστροφή στο ιστορικό';
+$string['backoldversion'] = 'Επιστροφή στην παλαιότερη έκδοση';
+$string['backpage'] = 'Επιστροφή στη σελίδα';
+$string['backtomapmenu'] = 'Επιστροφή στο χάρτη μενού';
 $string['comments'] = 'Σχόλια';
 $string['commentscount'] = 'Σχόλια ({$a})';
+$string['createcomment'] = 'Δημιουργία σχολίου';
 $string['defaultformat'] = 'Προεπιλεγμένη μορφή';
 $string['defaultformat_help'] = 'Αυτή η ρύθμιση καθορίζει την προεπιλεγμένη μορφή που θα χρησιμοποιείται κατά την επεξεργασία των wiki σελίδων. * HTML - Ο επεξεργαστής HTML είναι διαθέσιμος * Creole - Μια συνηθισμένη γλώσσα σήμανσης για το wiki για την οποία μια μικρή μόνο γραμμή εργαλείων επεξεργασίας είναι διαθέσιμη * Nwiki - όπως η Mediawiki γλώσσα σήμανσης χρησιμοποιείται για την συνεισφορά στην Nwiki ενότητα';
+$string['deletecomment'] = 'Διαγραφή σχολίου';
+$string['deletecommentcheck'] = 'Διαγραφή σχολίου';
+$string['deletecommentcheckfull'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε το σχόλιο;';
 $string['diff'] = 'Διαφ';
+$string['editcomment'] = 'Επεξεργασία σχολίου';
+$string['editingcomment'] = 'Επεξεργασία σχολίου';
 $string['files'] = 'Αρχεία';
 $string['filtername'] = 'Αυτόματη σύνδεση σελίδων wiki';
 $string['firstpagetitle'] = 'Όνομα πρώτης σελίδας';
@@ -38,13 +50,17 @@ $string['firstpagetitle_help'] = 'Ο τίτλος από την πρώτη σε�
 $string['forceformat'] = 'Υποχρεωτιτική μορφή';
 $string['forceformat_help'] = 'Αν η μορφή είναι υποχρεωτική (σημειωμένο κουτάκι), δεν υπάρχει καμία επιλογή για να διαλέξετε μορφή κατά την επεξεργασία μιας σελίδας wiki.';
 $string['html'] = 'Μορφή HTML';
+$string['insertcomment'] = 'Εισαγωγή σχολίου';
 $string['invalidsection'] = 'Άκυρη ενότητα';
 $string['modulename'] = 'Wiki';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Πλοήγηση';
+$string['nocomments'] = 'Δεν υπάρχουν σχόλια';
 $string['pageindex'] = 'Περιεχόμενα σελίδας';
 $string['pluginname'] = 'Wiki';
+$string['return'] = 'Επιστροφή';
 $string['save'] = 'Αποθήκευση';
+$string['searchresult'] = 'Αποτελέσματα αναζήτησης:';
 $string['updatedpages'] = 'Ανανεωμένες σελίδες';
 $string['updatedwikipages'] = 'Ανανεωμένες σελίδες Wiki';
 $string['uploadname'] = 'Όνομα αρχείου';

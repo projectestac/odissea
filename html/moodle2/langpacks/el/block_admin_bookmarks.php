@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['admin_bookmarks:addinstance'] = 'Προσθήκη νέου μπλοκ σελιδοδείκτες διαχειριστή';
+$string['admin_bookmarks:myaddinstance'] = 'Προσθήκη νέου μπλοκ σελιδοδείκτες διαχειριστή στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Σελιδοδείκτες διαχειριστή';

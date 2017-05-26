@@ -93,6 +93,7 @@ $string['categoryedit'] = 'Επεξεργασία κατηγορίας';
 $string['categoryname'] = 'Όνομα κατηγορίας';
 $string['categorytotal'] = 'Σύνολο κατηγορίας';
 $string['categorytotalfull'] = '{$a->category} συνολικά';
+$string['categorytotalname'] = 'Συνολικό όνομα κατηγορίας';
 $string['changedefaults'] = 'Αλλαγή προεπιλογών';
 $string['changereportdefaults'] = 'Αλλαγή προεπιλογών αναφοράς';
 $string['chooseaction'] = 'Επιλέξτε μια ενέργεια ...';

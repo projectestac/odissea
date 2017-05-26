@@ -89,19 +89,19 @@ $string['expired'] = 'Lo sentimos, esta actividad se cerró en {$a} y ya no est�
 $string['filetype'] = 'Tipo';
 $string['filetype_help'] = 'Este parámetro determina cómo se incluye el paquete JClic en el curso. Hay 2 opciones:
 
-* Fichero JClic subido - Posibilita escoger un fichero ".jclic.zip" válido mediante el selector de archivos.
-* URL externo - Posibilita especificar el URL de un paquete JClic. NOTA: El URL debe empezar con https(s) o www y contener un fichero ".jclic.zip" o ".jclic" válido';
+* Fichero JClic subido - Posibilita escoger un fichero JClic válido mediante el selector de archivos.
+* URL externo - Posibilita especificar el URL de un paquete JClic. NOTA: El URL debe empezar con https(s) o www y contener un fichero JClic válido';
 $string['filetypeexternal'] = 'URL externo';
 $string['filetypelocal'] = 'Fichero JClic subido';
-$string['invalidjclicfile'] = 'Se ha especificado un fichero JClic no válido. El fichero debe tener la extensión ".jclic.zip".';
-$string['invalidurl'] = 'Se ha especificado un URL no válido. El URL debe empezar con http(s) y enlazar a un fichero ".jclic.zip" o ".jclic" válido.';
+$string['invalidjclicfile'] = 'Se ha especificado un fichero JClic no válido. El fichero debe tener la extensión ".jclic".';
+$string['invalidurl'] = 'Se ha especificado un URL no válido. El URL debe empezar con http(s) y enlazar a un fichero JClic válido.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'URL base de los ficheros JAR';
 $string['jclicjarbase_help'] = 'Dirección web donde localizar todos los ficheros jar de JClic.';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'Este parámetro habilita un URL para especificar el paquete JClic en lugar de seleccionarlo a través del selector de archivos.';
 $string['jclicfile'] = 'Fichero JClic';
-$string['jclicfile_help'] = 'El fichero ".jclic.zip" que contiene el paquete JClic.';
+$string['jclicfile_help'] = 'El fichero ".jclic" que contiene el paquete JClic.';
 $string['lap'] = 'Tiempo entre vueltas';
 $string['lap_help'] = 'Tiempo que se deja entre las transacciones cliente-servidor (expresado en segundos)';
 $string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> es un proyecto del Departament de Ensenyament de la

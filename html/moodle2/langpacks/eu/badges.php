@@ -86,17 +86,33 @@ Egiaztatzeko beharrezko den URL bakarra [zure-gunearen-urla]/badges/assertion.ph
 $string['backpackbadges'] = '{$a->totalbadges} domina duzu {$a->totalcollections} bildumatatik erakutsiak. <a href="mybackpack.php">Aldatu motxilaren ezarpenak</a>.';
 $string['backpackcannotsendverification'] = 'Ezin da bidali egiaztapenerako e-posta';
 $string['backpackconnection'] = 'Motxilarako konexioa';
-$string['backpackconnectionconnect'] = 'Konektatu motxilara';
+$string['backpackconnectioncancelattempt'] = 'Konektatu beste e-posta helbide bat erabilita';
+$string['backpackconnectionconnect'] = 'Konektatu  motxilara';
 $string['backpackconnection_help'] = 'Orri honek kanpoko motxila-hornitzaile baterako konexioa konfiguratzeko aukera ematen dizu. Motxila batera konektatzeak kanpoko dominak gune honetan erakusteko aukera ematen dizu eta bertan irabazitako dominak zeure motxilara igotzea.
 
 Une honetan, <a href="http://backpack.openbadges.org">OpenBadges Mozilla Motxila</a> baino ez da bateragarria. Izena eman behar da orri honetan motxilarako konexioa konfiguratzen saiatzen hasi aurretik motxila-zerbitzua izateko.';
 $string['backpackconnectionresendemail'] = 'Berriz bidali egiaztapenerako e-posta';
-$string['backpackconnectionunexpectedresult'] = 'Arazoa gertatu da motxilarekin konektatzean. Saiatu berriz. <br><br>Arazoa konpondu ezean, jar zaitez harremanetan sistemako kudeatzailearekin.';
+$string['backpackconnectionunexpectedresult'] = 'Arazoa gertatu da motxilarekin konektatzean. Mesedez saiatu berriz. <br><br>Arazoa konpondu ezean, jar zaitez harremanetan sistemako kudeatzailearekin.';
 $string['backpackdetails'] = 'Motxilaren ezarpenak';
 $string['backpackemail'] = 'E-posta helbidea';
 $string['backpackemail_help'] = 'Zure motxilarekin lotutako e-posta helbidea. Konektatuta zauden bitartean, gune honetan irabazitako dominak e-posta helbide honekin lotuko dira.';
 $string['backpackemailverificationpending'] = 'Egiaztapena falta da';
+$string['backpackemailverifyemailbody'] = 'Kaixo,
+
+Zure OpenBadges motxilara konexio berri baten eskaera egin da \'{$a->sitename}\' gunetik zure e-posta helbidea erabilita.
+
+Konfirmatu eta zure motxilako konexioa aktibatzeko mesedez jo hona:
+
+{$a->link}
+
+E-posta programa gehienetan goiko helbidea lotura urdin bat gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan. Ez bada horrela, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsasi.
+
+Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin:
+{$a->admin}';
 $string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges-en motxilarako e-posta bidezko egiaztapena';
+$string['backpackemailverifypending'] = 'e-posta helbidea konprobatzeko mezua bidali da <strong>{$a}</strong> helbidera. Klik egin bertan agertzen den estekan zure motxilako konexioa aktibatzeko.';
+$string['backpackemailverifysuccess'] = 'Eskerrik asko zure e-posta helbidea konprobatzeagatik. Orain zure motxilarekin konektatuta zaude.';
+$string['backpackemailverifytokenmismatch'] = 'Klik egin duzun estekaren token-a ez dator bat gordetako token-arekin. Ziurta ezazu jasotako azken e-posta mezuko estekan klik egin duzula.';
 $string['backpackimport'] = 'Domina inportatzeko ezarpenak';
 $string['backpackimport_help'] = 'Motxilarako konexio egokia ezarri ondoren, zure motxilako dominak zure dominen orrian eta zure profil-orrian ikusi ahal izango dira.
 

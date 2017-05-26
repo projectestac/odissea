@@ -205,6 +205,7 @@ $string['title'] = 'Aukera ezazu fitxategi bat...';
 $string['type'] = 'Mota';
 $string['typenotvisible'] = 'Mota ezin da ikusi';
 $string['unknownoriginal'] = 'Ezezaguna';
+$string['unzipped'] = 'Ondo deskonprimatu da';
 $string['upload'] = 'Igo fitxategi hau';
 $string['uploading'] = 'Igotzen...';
 $string['uploadsucc'] = 'Fitxategia ondo igo da';

@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowdeletes'] = 'Να επιτρέπονται διαγραφές';
+$string['allowrenames'] = 'Να επιτρέπονται μετονομασίες';
+$string['allowresets'] = 'Να επιτρέπονται επαναφορές';
 $string['coursefile'] = 'Αρχείο';
 $string['csvdelimiter'] = 'Διαχωριστικό CSV';
 $string['csvdelimiter_help'] = 'Διαχωριστικό αρχείου CSV.';

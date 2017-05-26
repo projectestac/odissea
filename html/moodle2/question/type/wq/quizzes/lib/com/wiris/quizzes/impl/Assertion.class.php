@@ -18,11 +18,24 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		}
 		return $b;
 	}
+	public function copyArrayString($a) {
+		$b = new _hx_array(array());
+		$i = null;
+		{
+			$_g1 = 0; $_g = $a->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$b[$i1] = $a[$i1];
+				unset($i1);
+			}
+		}
+		return $b;
+	}
 	public function copy() {
 		$a = new com_wiris_quizzes_impl_Assertion();
 		$a->name = $this->name;
-		$a->correctAnswer = $this->copyArrayInt($this->correctAnswer);
-		$a->answer = $this->copyArrayInt($this->answer);
+		$a->correctAnswer = $this->copyArrayString($this->correctAnswer);
+		$a->answer = $this->copyArrayString($this->answer);
 		if($this->parameters !== null) {
 			$a->parameters = new _hx_array(array());
 			$i = null;
@@ -52,6 +65,20 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		return com_wiris_quizzes_impl_Assertion::isSyntacticName($this->name);
 	}
 	public function inIntArray($e, $a) {
+		$i = null;
+		{
+			$_g1 = 0; $_g = $a->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if($e === $a[$i1]) {
+					return true;
+				}
+				unset($i1);
+			}
+		}
+		return false;
+	}
+	public function inStringArray($e, $a) {
 		$i = null;
 		{
 			$_g1 = 0; $_g = $a->length;
@@ -160,12 +187,12 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		if($this->answer !== null && $this->answer->length > 0) {
 			return $this->answer[0];
 		} else {
-			return -1;
+			return "-1";
 		}
 	}
 	public function addAnswer($a) {
 		$current = $this->getAnswers();
-		if(!$this->inIntArray($a, $current)) {
+		if(!$this->inStringArray($a, $current)) {
 			$newa = new _hx_array(array());
 			$i = null;
 			{
@@ -197,7 +224,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		if($this->correctAnswer !== null && $this->correctAnswer->length > 0) {
 			return $this->correctAnswer[0];
 		} else {
-			return -1;
+			return "-1";
 		}
 	}
 	public function removeCorrectAnswer($ca) {
@@ -210,7 +237,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 				$_g1 = 0; $_g = $current->length;
 				while($_g1 < $_g) {
 					$i1 = $_g1++;
-					if($current[$i1] !== $ca) {
+					if(!($current[$i1] === $ca)) {
 						$newca[$j] = $current[$i1];
 						$j++;
 					}
@@ -221,14 +248,14 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		}
 	}
 	public function hasAnswer($a) {
-		return $this->inIntArray($a, $this->getAnswers());
+		return $this->inStringArray($a, $this->getAnswers());
 	}
 	public function hasCorrectAnswer($ca) {
-		return $this->inIntArray($ca, $this->getCorrectAnswers());
+		return $this->inStringArray($ca, $this->getCorrectAnswers());
 	}
 	public function addCorrectAnswer($ca) {
 		$current = $this->getCorrectAnswers();
-		if(!$this->inIntArray($ca, $current)) {
+		if(!$this->inStringArray($ca, $current)) {
 			$newca = new _hx_array(array());
 			$i = null;
 			{
@@ -255,8 +282,8 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 	public function onSerialize($s) {
 		$s->beginTag(com_wiris_quizzes_impl_Assertion::$tagName);
 		$this->name = $s->attributeString("name", $this->name, null);
-		$this->correctAnswer = $s->attributeIntArray("correctAnswer", $this->correctAnswer, new _hx_array(array(0)));
-		$this->answer = $s->attributeIntArray("answer", $this->answer, new _hx_array(array(0)));
+		$this->correctAnswer = $s->attributeStringArray("correctAnswer", $this->correctAnswer, new _hx_array(array("0")));
+		$this->answer = $s->attributeStringArray("answer", $this->answer, new _hx_array(array("0")));
 		$this->parameters = $s->serializeArray($this->parameters, com_wiris_quizzes_impl_AssertionParam::$tagName);
 		$s->endTag();
 	}

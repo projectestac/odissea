@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['action'] = 'Acción';
 $string['addanotherhint'] = 'Engadir outra pista';
 $string['addcategory'] = 'Engadir categoría';
-$string['addmorechoiceblanks'] = 'En branco para {no} máis escollas';
+$string['addmorechoiceblanks'] = 'En branco para {no} escollas máis';
 $string['adminreport'] = 'Informe sobre posíbeis problemas na súa base de datos de preguntas.';
 $string['advancedsearchoptions'] = 'Opcións de busca';
 $string['alltries'] = 'Todos os intentos';

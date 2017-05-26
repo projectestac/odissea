@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Agerraldi estandarra';
+$string['taskcleanup'] = 'Garbitu agerraldien taula';

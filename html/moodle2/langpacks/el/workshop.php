@@ -33,6 +33,7 @@ $string['assessmentend'] = 'Καταληκτική ημερομηνία αξιο
 $string['assessmentsettings'] = 'Ρυθμίσεις αξιολόγησης';
 $string['assessmentstart'] = 'Ανοιχτό για αξιολόγηση από';
 $string['assessmentstartdatetime'] = 'Ανοιχτό για αξιολόγηση από {$a->daydatetime} ({$a->distanceday})';
+$string['backtoeditform'] = 'Επιστροφή στη φόρμα επεξεργασίας';
 $string['configexamplesmode'] = 'Προεπιλεγμένος τρόπος αξιολόγησης παραδειγμάτων στα εργαστήρια';
 $string['configgrade'] = 'Προεπιλεγμένος μέγιστος βαθμός για υποβολή στα εργαστήρια';
 $string['configgradedecimals'] = 'Προεπιλεγμένος αριθμός ψηφίων που πρέπει να εμφανίζονται μετά την υποδιαστολή κατά την εμφάνιση των βαθμών.';

@@ -67,16 +67,8 @@ class mod_jclic_mod_form extends moodleform_mod {
             $this->add_intro_editor();
         }
 
-        // -------------------------------------------------------------------------------
-        $mform->addElement('header', 'timing', get_string('timing', 'jclic'));
-
-        $mform->addElement('date_time_selector', 'timeavailable', get_string('availabledate', 'jclic'), array('optional'=>true));
-        $mform->addElement('date_time_selector', 'timedue', get_string('duedate', 'jclic'), array('optional'=>true));
-
         //-------------------------------------------------------------------------------
-        // Adding the rest of jclic settings, spreeading all them into this fieldset
-        $mform->addElement('header', 'contentheader', get_string('contentheader', 'jclic'));
-
+        // Adding the jclic file
         $mform->addElement('select', 'filetype', get_string('filetype', 'jclic'), jclic::get_file_types());
         $mform->addHelpButton('filetype', 'filetype', 'jclic');
         $mform->addElement('text', 'url', get_string('jclicurl', 'jclic'), array('size' => 60));
@@ -88,18 +80,12 @@ class mod_jclic_mod_form extends moodleform_mod {
         $mform->addHelpButton('jclicfile', 'urledit', 'jclic');
         $mform->disabledIf('jclicfile', 'filetype', 'noteq', JCLIC_FILE_TYPE_LOCAL);
 
-        $mform->addElement('text', 'exiturl', get_string('exiturl', 'jclic'), array('size'=>75));
-        $mform->addHelpButton('exiturl', 'exiturl', 'jclic');
-        //$mform->setHelpButton('exiturl', array('exiturl',get_string('exiturl', 'jclic'), 'jclic'), false, 'helpbutton');
-        $mform->setDefault('exiturl', '');
-        $mform->setType('exiturl', PARAM_RAW);
 
-        $options = jclic::get_languages();
-        $mform->addElement('select', 'lang', get_string('lang', 'jclic'), $options);
-        $mform->setDefault('lang', $CFG->lang);
+        // -------------------------------------------------------------------------------
+        $mform->addElement('header', 'timing', get_string('timing', 'jclic'));
 
-        $options = jclic::get_skins();
-        $mform->addElement('select', 'skin', get_string('skin', 'jclic'), $options);
+        $mform->addElement('date_time_selector', 'timeavailable', get_string('availabledate', 'jclic'), array('optional'=>true));
+        $mform->addElement('date_time_selector', 'timedue', get_string('duedate', 'jclic'), array('optional'=>true));
 
         //---GRADING-------------------------------------------------------------------------------
         $this->standard_grading_coursemodule_elements();
@@ -122,6 +108,18 @@ class mod_jclic_mod_form extends moodleform_mod {
 
         //---OPTIONS---------------------------------------------------------------------------
         $mform->addElement('header', 'optionsheader', get_string('appearance'));
+
+        $mform->addElement('text', 'exiturl', get_string('exiturl', 'jclic'), array('size'=>75));
+        $mform->addHelpButton('exiturl', 'exiturl', 'jclic');
+        $mform->setDefault('exiturl', '');
+        $mform->setType('exiturl', PARAM_RAW);
+
+        $options = jclic::get_languages();
+        $mform->addElement('select', 'lang', get_string('lang', 'jclic'), $options);
+        $mform->setDefault('lang', $CFG->lang);
+
+        $options = jclic::get_skins();
+        $mform->addElement('select', 'skin', get_string('skin', 'jclic'), $options);
 
         $mform->addElement('text', 'width', get_string('width', 'jclic'), array('size'=>'5'));
         $mform->setDefault('width', '800');

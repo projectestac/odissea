@@ -57,14 +57,6 @@ $string['cancellabel'] = 'Annuler';
 $string['confirmlabel'] = 'Confirmer';
 $string['noh5ps'] = 'Il n\'y a aucune ressource interactive disponible pour ce cours.';
 
-// Update message email for admin
-$string['messageprovider:updates'] = 'Notifications des mises à jour H5P disponibles';
-$string['updatesavailabletitle'] = 'De nouvelles mises à jour H5P sont disponibles';
-$string['updatesavailablemsgpt1'] = 'Des mises à jour de H5P sont disponibles pour certaines activités installées sur votre moodle.';
-$string['updatesavailablemsgpt2'] = 'Cliquez sur le lien ci-dessous pour plus d\'informations.';
-$string['updatesavailablemsgpt3'] = 'La dernière mise à jour a été installée le : {$a}';
-$string['updatesavailablemsgpt4'] = 'Vous utilisez la version issue de : {$a}';
-
 $string['lookforupdates'] = 'Rechercher des mises à jour H5P';
 $string['removetmpfiles'] = 'Supprimer les anciens fichiers temporaires H5P';
 $string['removeoldlogentries'] = 'Supprimer les anciennes entrées de logs H5P';
@@ -82,8 +74,6 @@ $string['enableembed'] = 'Bouton d\'intégration';
 $string['enablecopyright'] = 'Bouton de copyright';
 $string['enableabout'] = 'Bouton à propos de H5P';
 
-$string['externalcommunication'] = 'communication externe';
-$string['externalcommunication_help'] = 'Aidez au développement de H5P en fournissant des données de façon anonyme. Désactiver cette option empêchera votre site de détecter les nouvelles mise à jour H5P. <a {$a}>En savoir plus</a> sur les données collectées sur le site h5p.org.';
 $string['enablesavecontentstate'] = 'Sauvegarder l\'état du contenu actuel';
 $string['enablesavecontentstate_help'] = 'Sauvegarder automatiquement l\'état actuel du contenu interactif pour chaque utilisateur. Ceci signifie que l\'utilisateur pourra reprendre là où il en est resté la fois précédente.';
 $string['contentstatefrequency'] = 'Fréquence des sauvegardes d\'état de vos contenus';
@@ -92,18 +82,6 @@ $string['contentstatefrequency_help'] = 'Fréquence des sauvegardes automatiques
 // Admin menu.
 $string['settings'] = 'Paramètres H5P';
 $string['libraries'] = 'Bibliothèques H5P';
-
-// Update libraries section.
-$string['updatelibraries'] = 'Mettre à jour toutes les bibliothèques';
-$string['updatesavailable'] = 'Des mises à jour sont disponibles pour vos activités H5P.';
-$string['whyupdatepart1'] = 'Lisez pourquoi il est important de mettre à jour et les bénéfices que vous en tirez sur la page <a {$a}>Pourquoi mettre à jour H5P</a> .';
-$string['whyupdatepart2'] = 'Cette page liste également les changelogs qui mentionnent les nouvelles fonctionnalités ainsi que les bugs fixés.';
-$string['currentversion'] = 'Votre version actuelle est';
-$string['availableversion'] = 'Versions disponibles';
-$string['usebuttonbelow'] = 'Vous pouvez utiliser le bouton ci-dessous pour télécharger et mettre à jour automatiquement vos activités H5P.';
-$string['downloadandupdate'] = 'Télécharger et mettre à jour';
-$string['missingh5purl'] = 'Il manque l\'url du fichier H5P';
-$string['unabletodownloadh5p'] = 'Impossible de télécharger le fichier H5P';
 
 // Upload libraries section.
 $string['uploadlibraries'] = 'Uploader les bibliothèques';
@@ -192,7 +170,6 @@ $string['hvp:viewresults'] = 'Visualiser les résultats';
 $string['hvp:getcachedassets'] = 'Récupérer les assets mis en cache';
 $string['hvp:getcontent'] = 'Visualiser le contenu d\'un fichier H5P dans un cours';
 $string['hvp:getexport'] = 'Récupérer un fichier H5P dans un cours';
-$string['hvp:updatesavailable'] = 'Être notifié quand des mises à jour H5P sont disponibles';
 
 // Capabilities error messages
 $string['nopermissiontoupgrade'] = 'Vous n\'avez pas les droits pour mettre à jour les bibliothèques.';
@@ -263,6 +240,6 @@ $string['couldnotcopy'] = 'Impossible de copier le fichier.';
 
 // Welcome messages
 $string['welcomeheader'] = 'Bienvenue dans le monde H5P!';
-$string['welcomegettingstarted'] = 'Pour démarrer avec H5P et Moodle, consultez nos tutoriels <a {$a->moodle_tutorial}>tutorial</a> et testez <a {$a->example_content}>nos exemples</a> sur le site H5P.org pour vous en inspirer.<br>Pour vous simplifier la taĉhe, les modules les plus populaires ont déjà été installés!';
+$string['welcomegettingstarted'] = 'Pour démarrer avec H5P et Moodle, consultez nos tutoriels <a {$a->moodle_tutorial}>tutorial</a> et testez <a {$a->example_content}>nos exemples</a> sur le site H5P.org pour vous en inspirer.';
 $string['welcomecommunity'] = 'Nous espérons que vous allez apprécier H5P et rejoindre notre communauté en constante augmentation au travers de nos <a {$a->forums}>forums</a> et notre chat <a {$a->gitter}>H5P sur Gitter</a>';
 $string['welcomecontactus'] = 'Si vous avez des suggestions, n\'hésitez pas à <a {$a}>nous contacter</a>. Nous prenons toutes les suggestions très sérieuse en considération pour rendre H5P meilleur chaque jour !';

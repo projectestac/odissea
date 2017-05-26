@@ -30,6 +30,7 @@ $string['component'] = 'Osagaia';
 $string['corecomponent'] = 'Sistema';
 $string['default'] = 'Berezkoa';
 $string['disabled'] = 'Desgaituta';
+$string['plugindisabled'] = 'Plugina desgaitu da';
 $string['pluginname'] = 'Programatutako zereginen ezarpenak';
 $string['scheduledtasks'] = 'Programatutako zereginak';
 $string['taskdisabled'] = 'Ataza desgaituta';

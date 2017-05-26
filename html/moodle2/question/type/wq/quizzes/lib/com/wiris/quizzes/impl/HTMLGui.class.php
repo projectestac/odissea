@@ -429,7 +429,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 						}
 						unset($text);
 					} else {
-						if($index === $a->getCorrectAnswer()) {
+						if($index === Std::parseInt($a->getCorrectAnswer())) {
 							$text = $this->getAssertionString($a, 80);
 							if(StringTools::startsWith($a->name, "equivalent_")) {
 								if(!($text === $this->t->t(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC))) {

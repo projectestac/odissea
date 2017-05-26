@@ -35,6 +35,7 @@ class mod_hvp_mod_form extends moodleform_mod {
         // Name.
         $mform->addElement('text', 'name', get_string('name'));
         $mform->setType('name', PARAM_TEXT);
+        $mform->addRule('name', null, 'required', null, 'client');
         $mform->addRule('name', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
 
         // Intro.
@@ -109,11 +110,11 @@ class mod_hvp_mod_form extends moodleform_mod {
 
     public function data_preprocessing(&$defaultvalues) {
         global $DB;
+        $core = \mod_hvp\framework::instance();
 
         $content = null;
         if (!empty($defaultvalues['id'])) {
             // Load Content
-            $core = \mod_hvp\framework::instance();
             $content = $core->loadContent($defaultvalues['id']);
             if ($content === null) {
                 print_error('invalidhvp');
@@ -158,7 +159,7 @@ class mod_hvp_mod_form extends moodleform_mod {
         }
 
         // Determine default action
-        if ($content === null && $DB->get_field_sql("SELECT id FROM {hvp_libraries} WHERE runnable = 1", null, IGNORE_MULTIPLE) === false) {
+        if (!get_config('mod_hvp', 'hub_is_enabled') && $content === null && $DB->get_field_sql("SELECT id FROM {hvp_libraries} WHERE runnable = 1", null, IGNORE_MULTIPLE) === false) {
           $defaultvalues['h5paction'] = 'upload';
         }
 

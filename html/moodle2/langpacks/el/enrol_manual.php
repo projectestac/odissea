@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['browsecohorts'] = 'Πλοήγηση στις ομάδες χρηστών';
 $string['defaultperiod'] = 'Προεπιλεγμένη διάρκεια εγγραφής';
 $string['enrolledincourserole'] = 'Εγγραφή στο "{$a->course}" ως "{$a->role}"';
 $string['enrolusers'] = 'Εγγραφή χρηστών';

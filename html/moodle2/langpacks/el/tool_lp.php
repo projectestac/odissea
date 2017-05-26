@@ -26,8 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activities'] = 'Δραστηριότητες';
+$string['addcohorts'] = 'Προσθήκη ομάδας χρηστών';
+$string['addcohortstosync'] = 'Προσθήκη ομάδων χρηστών για συγχρονισμό';
+$string['assigncohorts'] = 'Ανάθεση ομάδων χρηστών';
+$string['category'] = 'Κατηγορία';
+$string['cohortssyncedtotemplate'] = 'Οι ομάδες χρηστών συγχρονίστηκαν με αυτό το πρότυπο εκπαιδευτικού πλάνου';
 $string['competencyoutcome_complete'] = 'σημείωση ως ολοκληρωμένο';
 $string['competencyoutcome_none'] = 'Κανένα';
+$string['search'] = 'Αναζήτηση...';
+$string['selectcohortstosync'] = 'Επιλογή ομάδων χρηστών για συγχρονισμό';
+$string['stopsyncingcohort'] = 'Τερματισμός συγχρονισμού ομάδας χρηστών';
+$string['templatecohortnotsyncedwhileduedateispassed'] = 'Οι ομάδες χρηστών δεν θα συγχρονιστούν, αν έχει περάσει η ημερομηνία λήξης του προτύπου.';
+$string['templatecohortnotsyncedwhilehidden'] = 'Οι ομάδες χρηστών δεν θα συγχρονιστούν όσο το πρότυπο είναι κρυμμένο.';
 $string['uponcoursemodulecompletion'] = 'Με την ολοκλήρωση δραστηριότητας:';
 $string['userevidencefiles'] = 'Αρχεία';
 $string['userevidencesummary'] = 'Σύνοψη';

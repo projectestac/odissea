@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['direct:view'] = 'Inportatu kalifikazioa CSVtik';
 $string['pluginname'] = 'Itsatsi kalkulu-orritik';
 $string['userdata'] = 'Datuak formulario honetara kopiatzeko laguntza';
+$string['userdata_help'] = 'Kalifikazioak kalkulu-orri batetik kopiatu eta itsats  daitezke kalifikazio-liburura. Kalkulu-orriak erabiltzailea identifikatuko duen zutabe bat izan beharko luke - erabiltzailea, ID zenbakia edo e-posta helbidea. Inportatu beharreko zutabe bakoitzak goiburua izan beharko luke.';

@@ -81,13 +81,35 @@ Se nel tuo sito di produzione vuoi rilasciare badge, allora devi risolvere il pr
 
 L\'unico URL necessario per la verifica è [your-site-url]/badges/assertion.php. Per la sola verifica dei badge è sufficiente l\'accesso a quell\'URL.';
 $string['backpackbadges'] = 'Hai  {$a->totalbadges} badge visualizzati provenienti da {$a->totalcollections} raccolte. <a href="mybackpack.php">Modifica impostazioni backpack</a>.';
+$string['backpackcannotsendverification'] = 'Non è stato possibile inviare l\'email di verifica';
 $string['backpackconnection'] = 'Connessione backpack';
+$string['backpackconnectioncancelattempt'] = 'Collegati utilizzando un indirizzo email diverso';
+$string['backpackconnectionconnect'] = 'Collegati al Backpack';
 $string['backpackconnection_help'] = 'E\' possibile impostare una connessione con backpack provider esterni. La connessione ad un backpack consente di visualizzare badge conseguiti su altri siti e di inviare al backpack i badge conseguiti in questo sito.
 
 Al momento è supportato solo <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Prima di impostare la connessione, devi sottoscrivere un servizio backpack.';
+$string['backpackconnectionresendemail'] = 'Invia nuovamente l\'email di verifica';
+$string['backpackconnectionunexpectedresult'] = 'Si è verificato un problema durante il collegamento al Backpack. Per favore riprova.<br><br>Se il problema dovesse persistere contatta il tuo amministratore di sistema.';
 $string['backpackdetails'] = 'Impostazioni backpack';
 $string['backpackemail'] = 'Indirizzo email';
 $string['backpackemail_help'] = 'Indirizzo email associato con il tuo backpack. Se la connessione backpack è attiva, i badge ricevuti saranno associati a questo indirizzo.';
+$string['backpackemailverificationpending'] = 'Verifica in attesa';
+$string['backpackemailverifyemailbody'] = 'Ciao,
+
+è stato richiesto un nuovo collegamento al tuo backpack OpenBadges da \'{$a->sitename}\' utilizzando il tuo indirizzo email.
+
+Per confermare e attivare il collegamento al tuo backpack, fare click sul seguente link:
+
+{$a->link}
+
+Nella maggioranza dei programmi di posta elettronica il link di solito appare colorato di blu ed è possibile fare click per utilizzarlo. Se il link non funziona, copialo ed incollalo nella barra degli indirizzi del browser.
+
+Se hai bisogno di aiuto, contatta l\'amministratore del sito:
+{$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: email di verifica per OpenBadges Backpack';
+$string['backpackemailverifypending'] = 'Un\'email di verifica è stata inviata a <strong>{$a}</strong>. Fai click sul link di verifica nell\'email per attivare il collegamento al tuo Backpack.';
+$string['backpackemailverifysuccess'] = 'Grazie per aver verificato il tuo indirizzo email. Ora sei collegato con il tuo Backpack.';
+$string['backpackemailverifytokenmismatch'] = 'Il token nel link su cui hai cliccato non corrisponde al token memorizzato. Verifica di aver cliccato il link nella email più recente che hai ricevuto.';
 $string['backpackimport'] = 'Impostazioni importazione badge';
 $string['backpackimport_help'] = 'Dopo aver stabilito la connessione backpack, i badge provenienti dal backpack compariranno nella sezione Badge e nel tuo profilo.
 

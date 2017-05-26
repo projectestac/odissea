@@ -28,7 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['user'] = 'Usuario';
 $string['welcomegettingstarted'] = 'Para empezar con H5P y Moodle échale un vistazo a nuestro <a {$a->moodle_tutorial}>tutorial</a> y revisa el <a {$a->example_content}>contenido de ejemplo</a> en H5P.org para que te sirva de guía.<br>¡Para su comodidad ya se han instalado los contenidos más populares!';
 $string['welcomeheader'] = '¡Bienvenido al mundo de H5P!';
-$string['whyupdatepart1'] = 'Puedes leer sobre por qué es importante actualizar y los beneficios de hacerlo en la página <a {$a}>Porqué actualizar H5P</a>';
-$string['whyupdatepart2'] = 'La página también lista los diferentes cambios, donde puedes leer sobre las nuevas características introducidas y los problemas que se han solucionado.';
 $string['year'] = 'Año';
 $string['years'] = 'Año(s)';

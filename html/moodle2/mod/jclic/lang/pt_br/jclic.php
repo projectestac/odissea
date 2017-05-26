@@ -79,19 +79,19 @@ $string['expired'] = 'Desculpe, esta atividade foi fechada em {$a} e não está 
 $string['filetype'] = 'Tipo';
 $string['filetype_help'] = 'Esta configuração determina como a atividade JClic é incluída no curso. Existem 2 opções disponíveis:
 
-* Upload de arquivo JClic - Habilita um pacote ".jclic.zip" válido para ser escolhido pelo file picker. 
-* URL Externa - Habilita uma URL a ser especificada. Nota: A URL deve começar com http(s) ou www, além de conter um arquivo "jclic.zip" válido.';
+* Upload de arquivo JClic - Habilita um pacote JClic válido para ser escolhido pelo file picker. 
+* URL Externa - Habilita uma URL a ser especificada. Nota: A URL deve começar com http(s) ou www, além de conter um arquivo JClic válido.';
 $string['filetypeexternal'] = 'URL externa';
 $string['filetypelocal'] = 'Upload de arquivo JClic';
-$string['invalidjclicfile'] = 'Foi informado um JClic inválido. O arquivo deve ter uma extensão ".jclic.zip".';
-$string['invalidurl'] = 'Foi informada uma URL inválida. A URL deve começar com http(s) ou www, além de conter um arquivo "jclic.zip" válido.';
+$string['invalidjclicfile'] = 'Foi informado um JClic inválido. O arquivo deve ter uma extensão ".jclic".';
+$string['invalidurl'] = 'Foi informada uma URL inválida. A URL deve começar com http(s) ou www, além de conter um arquivo JClic válido.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'Base Jar';
 $string['jclicjarbase_help'] = 'Endereço Web onde estão localizados todos os arquivos JClic jar';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'Esta configuração habilita a especifiação de uma URL para ser usada pelo pacote JClic, ao invés da escolha de um arquivo através do file picker.';
 $string['jclicfile'] = 'Arquivo JClic';
-$string['jclicfile_help'] = 'O arquivo ".jclic.zip" contendo os arquivos JClic.';
+$string['jclicfile_help'] = 'O arquivo ".jclic" contendo os arquivos JClic.';
 $string['lap'] = 'Volta';
 $string['lap_help'] = 'Tempo entre as transações cliente-servidor (em segundos)';
 $string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> é um projeto do Ministério da Educação da Catalunha. 

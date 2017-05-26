@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['comments'] = 'Σχόλια';
 $string['enabled'] = 'Ενεργοποιημένο';
 $string['morehelp'] = 'περισσότερη βοήθεια';

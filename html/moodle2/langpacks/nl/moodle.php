@@ -1289,7 +1289,7 @@ $string['noreplybouncemessage'] = 'Je hebt geantwoord op een niet-beantwoorden e
 Dit was de inhoud van je e-mail:';
 $string['noreplybouncesubject'] = '{$a} - geweigerde e-mail';
 $string['noreplyname'] = 'Deze e-mail niet beantwoorden';
-$string['noresetrecord'] = 'We hebben geen weet van deze aanvraag voor een nieuw wachtwoord. Vraag het wachtwoord opnieuw aan.';
+$string['noresetrecord'] = 'We kunnen deze aanvraag niet verwerken. Vraag het wachtwoord opnieuw aan.';
 $string['noresults'] = 'Geen resultaten';
 $string['normal'] = 'Normaal';
 $string['normalfilter'] = 'Gewoon zoeken';

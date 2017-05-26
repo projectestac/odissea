@@ -41,8 +41,8 @@ class com_wiris_quizzes_impl_AssertionCheckImpl extends com_wiris_util_xml_Seria
 	public function onSerialize($s) {
 		$s->beginTag(com_wiris_quizzes_impl_AssertionCheckImpl::$tagName);
 		$this->assertion = $s->attributeString("assertion", $this->assertion, null);
-		$this->answer = $s->attributeIntArray("answer", $this->answer, new _hx_array(array(0)));
-		$this->correctAnswer = $s->attributeIntArray("correctAnswer", $this->correctAnswer, new _hx_array(array(0)));
+		$this->answer = $s->attributeStringArray("answer", $this->answer, new _hx_array(array("0")));
+		$this->correctAnswer = $s->attributeStringArray("correctAnswer", $this->correctAnswer, new _hx_array(array("0")));
 		$this->value = $s->floatContent($this->value);
 		$s->endTag();
 	}

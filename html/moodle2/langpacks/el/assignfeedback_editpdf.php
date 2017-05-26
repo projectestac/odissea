@@ -32,6 +32,7 @@ $string['cannotopenpdf'] = 'Δεν μπορεί να ανοιχτεί το PDF. 
 $string['clear'] = 'Καθαρισμός';
 $string['colourpicker'] = 'Επιλογέας χρώματος';
 $string['comment'] = 'Σχόλια';
+$string['commentcolour'] = 'Χρώμα σχολίου';
 $string['couldnotsavepage'] = 'Δεν μπόρεσε να αποθηκευτεί η σελίδα {$a}';
 $string['currentstamp'] = 'Στάμπα';
 $string['deleteannotation'] = 'Διαγραφή σχολιασμού';

@@ -655,7 +655,7 @@ Per sbloccare il profilo puoi usare il seguente indirizzo:
 
 Nella maggioranza dei programmi di posta elettronica il link di solito appare colorato di blu ed è possibile fare click per utilizzarlo. Se il link non funziona, copialo ed incollalo nella barra degli indirizzi del browser.
 
-Se hai bisogni di aiuto, contatta l\'amministratore del sito: {$a->admin}';
+Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
 $string['lockoutemailsubject'] = 'Il tuo profilo utente su {$a} è stato bloccato';
 $string['lockouterrorunlock'] = 'Sono state fornite informazioni non valide per lo sblocco del profilo utente.';
 $string['lockoutthreshold'] = 'Soglia per il blocco del profilo utente';
@@ -1095,7 +1095,7 @@ $string['unsupporteddblargeprefix'] = 'Per avere un supporto completo UTF-8 sia 
 $string['unsupporteddbstorageengine'] = 'Lo storage engine utilizzato dal database non è più supportato.';
 $string['unsupporteddbtablerowformat'] = 'Il database utilizza il formato file Antelope. Si raccomanda di convertire le tabelle nel formato file Barracuda. Per dettagli su come convertire le tabelle InnoDB in formato Barracuda, è disponibile la documentazione: <a href="https://docs.moodle.org/en/cli">Administration via command line</a>';
 $string['unsupportedphpversion7'] = 'La versione 7 del PHP non è supportata.';
-$string['unsupportedphpversion71'] = 'La versione 7.1 del PHP non è supportata';
+$string['unsupportedphpversion71'] = 'PHP 7.1 non è supportato.';
 $string['unsuspenduser'] = 'Attiva account';
 $string['updateaccounts'] = 'Aggiornare registrazioni esistenti';
 $string['updateautocheck'] = 'Controllo automatico degli aggiornamenti';

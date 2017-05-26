@@ -29,7 +29,7 @@ $string['accept'] = 'Akzeptieren';
 $string['accepted'] = 'Akzeptiert';
 $string['accept_grades'] = 'Bewertungen aus dem Tool akzeptieren';
 $string['accept_grades_admin'] = 'Bewertungen aus dem Tool akzeptieren';
-$string['accept_grades_admin_help'] = 'Legen Sie fest, ob der Tool Provider Bewertungen der Instanzen des Tools hinzufügen, aktualisieren, lesen und löschen darf. Enige tool Provider ermöglichen, dass Bewertungen aus den Aktivitäten im Tool an Moodle berichtet werden. Dadurch erscheint das Tool noch besser integriert.';
+$string['accept_grades_admin_help'] = 'Legen Sie fest, ob der Tool Provider Bewertungen der Instanzen des Tools hinzufügen, aktualisieren, lesen und löschen darf. Einige Tool Provider ermöglichen, dass Bewertungen aus den Aktivitäten im Tool an Moodle berichtet werden. Dadurch erscheint das Tool noch besser integriert.';
 $string['accept_grades_help'] = 'Diese Option legt fest, ob der Tool-Provider Bewertungen hinzufügen, aktualisieren, lesen und löschen darf, die mit der Tool-Instanz zusammenhängen. Manche Tool-Provider ermöglichen die Übernahme von Bewertungen aus den Tool-Aktivitäten und schaffen so eine bessere Integration in Moodle.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
@@ -198,10 +198,11 @@ $string['lti:view'] = 'Aktivität Externes Tool aufrufen';
 $string['main_admin'] = 'Allgemeine Hilfe';
 $string['main_admin_help'] = 'Externe Tools ermöglichen es Moodle Nutzern nahtlos mit externen Lernanwendungen zu arbeiten und Daten auszutauschen. Durch ein spezielles Start-Protokoll erhält das externe Tool Zugriff auf bestimmte Daten des Nutzers. Dies können sein: Institutionsbezeichnung, Kurs-ID, Nutzer-ID, Nutzername oder E-Mail.
 
-Die Tools sind in drei unterschiedliche Typen klassifiziert:
-* ** Aktiv** - Dieser Tool Anbieter wurde durch einen Administrator geprüft und konfiguriert. Er kann in jedem Kurs genutzt werden. Wenn ein Anwenderschlüssel und ein Kennwort eingegegeben wird, wird eine geschützte Verbindung zwischen Moodle und dem Tool-Anbieter aufgebaut.
-* **Abwarten** - Dieser Tool Anbieter wurde im Rahmen eines Paketimports im System hinterlegt. Er ist noch nicht von einem Administrator konfiguriert worden. Trainer können dieses Tool verwenden wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen oder dies nicht erforderlich ist.
-* **Gesperrt** - Diese Tool sind vom Administrator nicht zur systemweiten Nutzung freigegeben worden. Trainer können die Tools dennoch nutzen wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen oder dies nicht erforderlich ist.';
+Die Tools auf dieser Seite sind in drei unterschiedliche Typen klassifiziert:
+
+* ** Aktiv** - Diese Tool Anbieter wurden durch einen Administrator geprüft und konfiguriert. Sie können in jedem Kurs genutzt werden. Wenn ein Anwenderschlüssel und ein Kennwort eingegegeben werden, wird eine geschützte Verbindung zwischen Moodle und dem Tool-Anbieter aufgebaut.
+* **Abwarten** - Diese Tool Anbieter wurden im Rahmen eines Paketimports im System hinterlegt. Sie sind noch nicht von einem Administrator konfiguriert worden. Trainer können diese Tools verwenden, wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen, oder dies nicht erforderlich ist.
+* **Gesperrt** - Diese Tool Anbieter sind vom Administrator nicht zur systemweiten Nutzung freigegeben worden. Trainer können die Tools dennoch nutzen, wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen, oder dies nicht erforderlich ist.';
 $string['manage_external_tools'] = 'Tools verwalten';
 $string['manage_tool_proxies'] = 'Registrierung von externen Tools verwalten';
 $string['manage_tools'] = 'Vorkonfigurierte Tools verwalten';
@@ -300,7 +301,7 @@ $string['return_to_course'] = 'Klicken Sie <a href="{$a->link}" target="_top">hi
 $string['saveallfeedback'] = 'Alle Feedbacks speichern';
 $string['search:activity'] = 'Externes Tool - Aktivitätsinformation';
 $string['secure_icon_url'] = 'Sichere Icon-URL';
-$string['secure_icon_url_help'] = 'Ähnlich wie Icon URL. Die Funktion wird genutzt bei verschlüsselter Datenübertragung, um zu verhindern, dass der Nutzer einen Warnhinwies erhält, falls ein Icon unverscchlüsselt aufgerufen wird.';
+$string['secure_icon_url_help'] = 'Ähnlich wie Icon URL. Die Funktion wird bei verschlüsselter Datenübertragung genutzt, um einen Warnhinweis zu verhindern, falls ein Icon unverschlüsselt aufgerufen wird.';
 $string['secure_launch_url'] = 'Sichere Start-URL';
 $string['secure_launch_url_help'] = 'Ähnlich wie Start URL. Wird verwendet, um höhere Sicherheitsanforderungen umzusetzen. Moodle verwendet die sichere Start URL anstelle der Standard URL, wenn das Moodle-System selber über SSL abgerufen wird oder wenn die Tool-Konfiguration auf \'immer über SSL starten\' gestellt ist.
 
@@ -323,7 +324,7 @@ $string['share_name_help'] = 'Diese Option legt fest, ob der vollständige Nutze
 Diese Einstellung kann in der Tool-Konfiguration überschrieben wreden.';
 $string['share_roster'] = 'Tool Zugriff auf Teilnehmerliste geben';
 $string['share_roster_admin'] = 'Tool kann auf Teilnehmerliste zugreifen.';
-$string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Teilnehmerliste des Kurses von welchem dieses Tool gestartet wird, zugreifen darf.';
+$string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer derjenigen Kurse zugreifen darf, in denen das Tool gestartet wurde.';
 $string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';

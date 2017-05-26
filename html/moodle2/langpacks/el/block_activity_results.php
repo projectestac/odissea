@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['bestgrade'] = 'Ο μεγαλύτερος βαθμός:';
 $string['bestgrades'] = 'Οι {$a} μεγαλύτεροι βαθμοί:';
 $string['config_format_percentage'] = 'Ποσοστά';
+$string['config_name_format'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['worstgrade'] = 'Ο χαμηλότερος βαθμός:';
 $string['worstgrades'] = 'Οι {$a} χαμηλότεροι βαθμοί:';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cachedef_items'] = '条件付利用評価のためにキャッシュされた評定項目';
 $string['cachedef_scores'] = '条件付利用評価のためにキャッシュされたユーザ評点';
-$string['description'] = '学生は指定された評点に達する必要があります。';
+$string['description'] = '学生は指定された評点に到達する必要があります。';
 $string['error_backwardrange'] = '評点範囲を指定する場合、最小評点は最大評点より小さくなる必要があります。';
 $string['error_invalidnumber'] = '評点範囲には有効なパーセンテージを指定する必要があります。';
 $string['error_selectgradeid'] = 'あなたは評定条件の評定項目を選択する必要があります。';

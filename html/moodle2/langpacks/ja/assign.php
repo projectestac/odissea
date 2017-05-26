@@ -44,7 +44,7 @@ $string['alwaysshowdescription'] = '常に説明を表示する';
 $string['alwaysshowdescription_help'] = 'この設定を無効にした場合、上記の課題説明は「開始日時」以降のみ学生に表示されます。';
 $string['applytoteam'] = 'グループ全体に評定およびフィードバックを提供する';
 $string['assign:addinstance'] = '新しい課題を追加する';
-$string['assign:editothersubmission'] = '別の学生提出を編集する';
+$string['assign:editothersubmission'] = '他の学生提出を編集する';
 $string['assign:exportownsubmission'] = '自分の提出をエクスポートする';
 $string['assignfeedback'] = 'フィードバックプラグイン';
 $string['assignfeedbackpluginname'] = 'フィードバックプラグイン';
@@ -82,7 +82,7 @@ $string['attemptreopenmethod_help'] = '学生の提出をどのように再オ�
 <ul>
 <li>なし - 学生の提出を再オープンすることはできません。</li>
 <li>手動 - 学生の提出は教師により再オープンすることができます。</li>
-<li>合格するまで自動 - この課題に設定された評定表内 (評定表セットアップセクション) の合格点に達するまで学生の提出は自動的に再オープンされます。</li>
+<li>合格するまで自動 - この課題に設定された評定表内 (評定表セットアップセクション) の合格点に到達するまで学生の提出は自動的に再オープンされます。</li>
 </ul>';
 $string['attemptreopenmethod_manual'] = '手動';
 $string['attemptreopenmethod_none'] = 'なし';
@@ -133,7 +133,7 @@ $string['currentgrade'] = '評定表内の現在の評定';
 $string['cutoffdate'] = '遮断日時';
 $string['cutoffdatecolon'] = '遮断日時: {$a}';
 $string['cutoffdatefromdatevalidation'] = '遮断日時は開始日時の後に設定する必要があります。';
-$string['cutoffdate_help'] = '設定した場合、この日時以降、延長なしでは提出を受け付けません。';
+$string['cutoffdate_help'] = '設定した場合、この日時以後、延長なしでは提出を受け付けません。';
 $string['cutoffdatevalidation'] = '遮断日時を終了日時の前に設定することはできません。';
 $string['defaultlayout'] = 'デフォルトレイアウトをリストアする';
 $string['defaultsettings'] = 'デフォルト課題設定';
@@ -147,10 +147,10 @@ $string['downloadasfolders_help'] = '提出課題が単一ファイルより多�
 $string['downloadselectedsubmissions'] = '選択した提出をダウンロードする';
 $string['duedate'] = '終了日時';
 $string['duedatecolon'] = '終了日時: {$a}';
-$string['duedate_help'] = 'これは課題の提出期限です。提出遅延が許可された場合、この日時以降に提出された課題は提出遅延としてマークされます。特定日時以降の提出を避けるには課題遮断日時を設定してください。';
+$string['duedate_help'] = 'これは課題の提出期限です。提出遅延が許可された場合、この日時以後に提出された課題は提出遅延としてマークされます。特定日時以降の提出を避けるには課題遮断日時を設定してください。';
 $string['duedateno'] = '提出期限なし';
 $string['duedatereached'] = 'この課題の提出期限を過ぎました。';
-$string['duedatevalidation'] = '終了日は開始日以降に設定する必要があります。';
+$string['duedatevalidation'] = '終了日は開始日以後に設定する必要があります。';
 $string['editaction'] = '操作 ...';
 $string['editattemptfeedback'] = '提出番号 {$a} の評点およびフィードバックを編集します。';
 $string['editingpreviousfeedbackwarning'] = 'あなたは前回の提出のフィードバックを編集しています。これは {$a->attemptnumber} / {$a->totalattempts} の提出です。';
@@ -310,7 +310,7 @@ $string['nomoresubmissionsaccepted'] = '延長を許可された参加者のみ�
 $string['noonlinesubmissions'] = 'この課題においてあなたがオンラインで提出するものはありません。';
 $string['nosavebutnext'] = '次へ';
 $string['nosubmission'] = 'この課題に関して提出されているものはありません。';
-$string['nosubmissionsacceptedafter'] = '次の日時以降、提出は許可されません';
+$string['nosubmissionsacceptedafter'] = '次の日時以後、提出は許可されません';
 $string['noteam'] = 'どのグループのメンバーでもない';
 $string['noteamgrader'] = 'どのグループのメンバーでもないため提出することはできません。';
 $string['notgraded'] = '未評定';

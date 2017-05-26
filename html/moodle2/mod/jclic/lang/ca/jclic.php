@@ -85,19 +85,19 @@ $string['expired'] = 'Ho sentim, aquesta activitat es va tancar el {$a} i ja no 
 $string['filetype'] = 'Tipus';
 $string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Tenim 2 opcions:
 
-* Fitxer JClic pujat - Permet escollir un fitxer ".jclic.zip" vàlid mitjançant el selector d\'arxius.
-* URL extern - Permet especificar el URL d\'un paquet JClic. Nota: El URL ha de començar amb http(s) o www i contenir un fitxer "jclic.zip" o ".jclic" vàlid.';
+* Fitxer JClic pujat - Permet escollir un fitxer JClic vàlid mitjançant el selector d\'arxius.
+* URL extern - Permet especificar el URL d\'un paquet JClic. Nota: El URL ha de començar amb http(s) o www i contenir un fitxer JClic vàlid.';
 $string['filetypeexternal'] = 'URL extern';
 $string['filetypelocal'] = 'Fitxer JClic pujat';
-$string['invalidjclicfile'] = 'S\'ha especificat un fitxer JClic no vàlid. El fitxer ha de tenir l\'extensió ".jclic.zip".';
-$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. El URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer ".jclic.zip" o ".jclic" vàlid.';
+$string['invalidjclicfile'] = 'S\'ha especificat un fitxer JClic no vàlid. El fitxer ha de tenir l\'extensió ".jclic".';
+$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. El URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer JClic vàlid.';
 $string['jclic'] = 'JClic';
 $string['jclicjarbase'] = 'URL base dels fitxers JAR';
 $string['jclicjarbase_help'] = 'Adreça web on localitzar tots els fitxers jar de JClic.';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'Aquest paràmetre permet especificar el URL del paquet JClic enlloc de seleccionar-ho mitjançant el selector d\'arxius.';
 $string['jclicfile'] = 'Fitxer JClic';
-$string['jclicfile_help'] = 'El fitxer ".jclic.zip" que conté el paquet JClic.';
+$string['jclicfile_help'] = 'El fitxer ".jclic" que conté el paquet JClic.';
 $string['lap'] = 'Temps entre voltes';
 $string['lap_help'] = 'Temps que es deixa entre les transaccions client-servidor (expressat en segons)';
 $string['modulename_help'] = 'El <a href="http://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya
@@ -116,7 +116,7 @@ $string['show_my_results'] = 'Mostra els meus resultats';
 $string['solveddone'] = 'Activitats encertades / fetes';
 $string['timing'] = 'Temporització';
 $string['urledit'] = 'Fitxer JClic';
-$string['urledit_help'] = 'El fitxer ".jclic.zip" que conté l\'activitat JClic.';
+$string['urledit_help'] = 'El fitxer ".jclic" que conté l\'activitat JClic.';
 
 $string['jclic:view'] = 'Visualitza JClic';
 $string['jclic:submit'] = 'Envia JClic';

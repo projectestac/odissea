@@ -53,7 +53,7 @@ class com_wiris_quizzes_impl_UserData extends com_wiris_util_xml_SerializableImp
 			throw new HException("Invalid compound index: " . _hx_string_rec($compoundindex, ""));
 		}
 		$a = $this->answers[$index];
-		$a->id = $index;
+		$a->id = "" . _hx_string_rec($index, "");
 		$compound = null;
 		if($a->content === null || strlen($a->content) === 0) {
 			$compound = new _hx_array(array());
@@ -76,7 +76,7 @@ class com_wiris_quizzes_impl_UserData extends com_wiris_util_xml_SerializableImp
 	public function setUserAnswer($index, $content) {
 		$this->ensureAnswerPlace($index);
 		$a = $this->answers[$index];
-		$a->id = $index;
+		$a->id = "" . _hx_string_rec($index, "");
 		$a->set($content);
 	}
 	public function newInstance() {

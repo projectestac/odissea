@@ -814,9 +814,9 @@ $string['forgotten'] = 'Hai dimenticato lo username o la password?';
 $string['forgottenduplicate'] = 'L\'indirizzo email è usato da più account, per favore inserisci lo username';
 $string['forgotteninvalidurl'] = 'URL per il reset della password non valido';
 $string['format'] = 'Formato';
-$string['format_help'] = 'Il formato del corso imposta la visualizzazione del copro centrale della home page del corso.
+$string['format_help'] = 'Il formato imposta la visualizzazione del corpo centrale della home page del corso.
 
-* Formato attività singola - sarà visualizzata una singola risorsa o attività (ad esemepio, un pacchetto SCORM o un Quiz)
+* Formato Attività singola - sarà visualizzata una singola risorsa o attività (ad esempio, un pacchetto SCORM o un Quiz)
 * Formato Relazionale - sarà visualizzato un forum
 * Formato Per argomenti -  Il corpo centrale della home page del corso sarà suddiviso in una sezione per ciascun argomento
 * Formato Settimanale - Il copro centrale della home page del corso sarà suddiviso in una sezione per ciascuna settimana. La data di inizio della prima settimana coinciderà con la data di inizio del corso.';

@@ -81,7 +81,8 @@ function hvp_get_core_settings() {
         'user' => array(
             'name' => $USER->firstname . ' ' . $USER->lastname,
             'mail' => $USER->email
-        )
+        ),
+        'hubIsEnabled' => get_config('mod_hvp', 'hub_is_enabled') ? TRUE : FALSE
     );
 
     return $settings;
@@ -131,7 +132,7 @@ function hvp_get_core_assets() {
  * @param int $id Content being edited. null for creating new content
  */
 function hvp_add_editor_assets($id = null) {
-    global $PAGE, $CFG, $COURSE;
+    global $PAGE, $CFG, $COURSE, $DB;
     $settings = \hvp_get_core_assets();
 
     // Use jQuery and styles from core.
@@ -188,7 +189,8 @@ function hvp_add_editor_assets($id = null) {
       'ajaxPath' => "{$url}ajax.php?contextId={$context->id}&token={$editorajaxtoken}&action=",
       'libraryUrl' => $url . 'editor/',
       'copyrightSemantics' => $contentvalidator->getCopyrightSemantics(),
-      'assets' => $assets
+      'assets' => $assets,
+      'apiVersion' => H5PCore::$coreApi
     );
 
     if ($id !== null) {

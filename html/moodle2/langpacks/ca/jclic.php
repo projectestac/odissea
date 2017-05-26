@@ -48,21 +48,23 @@ Per tal que aquesta redirecció funcioni cal que, a la pestanya seqüències, la
 $string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible';
 $string['filetype'] = 'Tipus';
 $string['filetypeexternal'] = 'URL extern';
-$string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Tenim 2 opcions:
+$string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Hi ha 2 opcions:
 
-* Fitxer JClic pujat - Permet escollir un fitxer ".jclic.zip" vàlid mitjançant el selector d\'arxius.
-* URL extern - Permet especificar l\'URL d\'un paquet JClic. Nota: L\'URL ha de començar amb http(s) o www i contenir un fitxer "jclic.zip" o ".jclic" vàlid.';
+* Fitxer JClic pujat. Permet escollir un fitxer JClic vàlid mitjançant el selector d\'arxius.
+* URL extern. Permet especificar l\'URL d\'un paquet JClic. Nota: L\'URL ha de començar amb http(s) o www i ha de contenir un fitxer JClic vàlid.';
 $string['filetypelocal'] = 'Fitxer JClic pujat';
 $string['height'] = 'Alçada';
-$string['invalidjclicfile'] = 'S\'ha especificat un fitxer JClic no vàlid. El fitxer ha de tenir l\'extensió ".jclic.zip".';
-$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer «.jclic.zip» vàlid.';
+$string['invalidjclicfile'] = 'S\'ha especificat un fitxer JClic no vàlid. El fitxer ha de tenir l\'extensió «.jclic».';
+$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer «.jclic» vàlid.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Afegeix una activitat JClic';
 $string['jclicfile'] = 'Fitxer JClic';
-$string['jclicfile_help'] = 'El fitxer ".jclic.zip" que conté el paquet JClic.';
+$string['jclicfile_help'] = 'El fitxer «.jclic» que conté el paquet JClic.';
 $string['jclic:grade'] = 'Avalua JClic';
 $string['jclicjarbase'] = 'URL base dels fitxers JAR';
 $string['jclicjarbase_help'] = 'Adreça web on localitzar tots els fitxers jar de JClic.';
+$string['jclicjs'] = 'URL del fitxer jclic.js';
+$string['jclicjs_help'] = 'URL on se cercarà el fitxer jclic.js necessari perquè funcioni el reproductor no-Java.';
 $string['jclic:submit'] = 'Envia JClic';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'Aquest paràmetre permet especificar el URL del paquet JClic enlloc de seleccionar-ho mitjançant el selector d\'arxius.';
@@ -105,5 +107,5 @@ $string['totaltime'] = 'Temps total';
 $string['unlimited'] = 'Il·limitat';
 $string['url'] = 'URL';
 $string['urledit'] = 'Fitxer JClic';
-$string['urledit_help'] = 'El fitxer ".jclic.zip" que conté l\'activitat JClic.';
+$string['urledit_help'] = 'El fitxer «.jclic» que conté l\'activitat JClic.';
 $string['width'] = 'Amplada';

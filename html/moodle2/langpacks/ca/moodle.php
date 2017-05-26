@@ -496,6 +496,7 @@ $string['deletechecktype'] = 'Confirmeu que voleu suprimir aquest {$a->type}?';
 $string['deletechecktypename'] = 'Confirmeu que voleu suprimir  {$a->type} «{$a->name}»?';
 $string['deletecheckwarning'] = 'Esteu a punt de suprimir aquests fitxers';
 $string['deletecomment'] = 'Elimina aquest comentari';
+$string['deletecommentbyon'] = 'Suprimeix el comentari publicat per {$a->user} a les {$a->time}';
 $string['deletecompletely'] = 'Suprimeix-los completament';
 $string['deletecourse'] = 'Suprimeix un curs';
 $string['deletecoursecheck'] = 'Esteu absolutament segur que voleu suprimir completament aquest curs i totes les dades que conté?';
@@ -655,20 +656,16 @@ En la majoria de programes de correu, la línia de dalt s\'hauria de veure com u
 Si necessiteu ajuda, contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
-$string['emailpasswordchangeinfodisabled'] = '{$a->firstname},
+$string['emailpasswordchangeinfodisabled'] = 'Hola {$a->firstname},
 
 Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte a «{$a->sitename}».
 
-Malauradament, el vostre compte d\'aquest lloc ha estat inhabilitat i no es pot reinicialitzar. Contacteu amb l\'administrador del lloc:
-
-{$a->admin}';
-$string['emailpasswordchangeinfofail'] = '{$a->firstname},
+Malauradament, el vostre compte d\'aquest lloc ha estat inhabilitat i la contrasenya no es pot canviar. Contacteu amb l\'administrador del lloc {$a->admin}.';
+$string['emailpasswordchangeinfofail'] = 'Hola {$a->firstname},
 
 Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte a «{$a->sitename}».
 
-Malauradament, en aquest lloc no es poden canviar les contrasenyes. Contacteu amb l\'administrador del lloc:
-
-{$a->admin}';
+Malauradament, en aquest lloc no es poden canviar les contrasenyes. Contacteu amb l\'administrador del lloc {$a->admin}.';
 $string['emailpasswordchangeinfosubject'] = '{$a}: informació de canvi de contrasenya';
 $string['emailpasswordconfirmation'] = '{$a->firstname},
 

@@ -101,6 +101,7 @@ $string['auth_ntlmsso_ie_fastpath'] = 'Set to yes to enable the NTLM SSO fast pa
 $string['auth_ntlmsso_ie_fastpath_key'] = 'MS IE fast path?';
 $string['auth_ntlmsso_subnet'] = 'If set, it will only attempt SSO with clients in this subnet. Format: xxx.xxx.xxx.xxx/bitmask';
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
+$string['auth_ntlmsso_type_key'] = 'Τύπος αυθεντικοποίησης';
 $string['noemail'] = 'Tried to send you an email but failed!';
 $string['ntlmsso_attempting'] = 'Attempting Single Sign On via NTLM...';
 $string['ntlmsso_failed'] = 'Auto-login failed, try the normal login page...';

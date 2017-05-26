@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Όλα τα συστατικά';
 $string['component'] = 'Συστατικό';
+$string['search'] = 'Αναζήτηση';

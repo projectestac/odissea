@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['cancellabel'] = 'Ακύρωση';
 $string['filenotimage'] = 'Το αρχείο δεν είναι εικόνα.';
 $string['librarylisttitle'] = 'Τίτλος';
+$string['search'] = 'Αναζήτηση';
 $string['title'] = 'Τίτλος';

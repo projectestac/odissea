@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '受験間の遅延に関する小テストアクセスルール';
 $string['youcannotwait'] = 'あなたが次の受験の開始を許可される前に、この問題は終了します。';
-$string['youmustwait'] = 'この小テストを再受験は、お待ちください。{$a} 以降、あなたは次の受験の開始を許可されます。';
+$string['youmustwait'] = 'この小テストの再受験はお待ちください。あなたは次の受験を {$a} 以後に開始することができます。';

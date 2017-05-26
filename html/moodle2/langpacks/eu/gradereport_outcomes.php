@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addoutcome'] = 'Gehitu ikas-emaitza';
 $string['courseoutcomes'] = 'Ikastaroaren ikas-emaitzak';
 $string['coursespecoutcome'] = 'Ikastaroaren ikas-emaitzak';
+$string['eventgradereportviewed'] = 'Ikas-emaitzen kalifikazioen txostena ikusi da';
 $string['outcomes:view'] = 'Ikusi ikas-emaitzen txostena';
 $string['pluginname'] = 'Ikas-emaitzen txostena';
 $string['usedgradeitem'] = 'Kalifikazio-elementuen kopurua';

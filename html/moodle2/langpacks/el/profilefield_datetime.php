@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['endyear'] = 'Έτος λήξης';
 $string['pluginname'] = 'Ημέρα/Ώρα';
+$string['startyear'] = 'Έτος έναρξης';
+$string['startyearafterend'] = 'Το έτος έναρξης δεν μπορεί να είναι μεταγενέστερο του έτους λήξης';
+$string['wanttime'] = 'Συμπερίληψη ώρας;';
